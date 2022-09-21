@@ -1,9 +1,6 @@
 package typings.pdfViewerReactjs
 
 import typings.react.mod.Component
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
-import typings.react.mod.Props
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,8 +10,8 @@ object mod {
   
   @JSImport("pdf-viewer-reactjs", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PDFViewerProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PDFViewerProps, js.Object, Any]
   @JSImport("pdf-viewer-reactjs", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -37,25 +34,25 @@ object mod {
     def canvasCss: js.UndefOr[String] = js.native
     inline def canvasCss_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canvasCss")(x.asInstanceOf[js.Any])
     
-    @JSImport("pdf-viewer-reactjs", "defaultProps.children")
-    @js.native
-    def children: js.UndefOr[ReactNode] = js.native
-    inline def children_=(x: js.UndefOr[ReactNode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-    
     @JSImport("pdf-viewer-reactjs", "defaultProps.css")
     @js.native
     def css: js.UndefOr[String] = js.native
     inline def css_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("css")(x.asInstanceOf[js.Any])
     
-    @JSImport("pdf-viewer-reactjs", "defaultProps.defaultScale")
-    @js.native
-    def defaultScale: js.UndefOr[Double] = js.native
-    inline def defaultScale_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultScale")(x.asInstanceOf[js.Any])
-    
     @JSImport("pdf-viewer-reactjs", "defaultProps.document")
     @js.native
     def document: js.UndefOr[typings.std.Document] = js.native
     inline def document_=(x: js.UndefOr[typings.std.Document]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("document")(x.asInstanceOf[js.Any])
+    
+    @JSImport("pdf-viewer-reactjs", "defaultProps.externalInput")
+    @js.native
+    def externalInput: js.UndefOr[Boolean] = js.native
+    inline def externalInput_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("externalInput")(x.asInstanceOf[js.Any])
+    
+    @JSImport("pdf-viewer-reactjs", "defaultProps.getMaxPageCount")
+    @js.native
+    def getMaxPageCount: js.UndefOr[MaxPageCount] = js.native
+    inline def getMaxPageCount_=(x: js.UndefOr[MaxPageCount]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMaxPageCount")(x.asInstanceOf[js.Any])
     
     @JSImport("pdf-viewer-reactjs", "defaultProps.hideNavbar")
     @js.native
@@ -71,11 +68,6 @@ object mod {
     @js.native
     def hideZoom: js.UndefOr[Boolean] = js.native
     inline def hideZoom_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideZoom")(x.asInstanceOf[js.Any])
-    
-    @JSImport("pdf-viewer-reactjs", "defaultProps.key")
-    @js.native
-    def key: js.UndefOr[Key] = js.native
-    inline def key_=(x: js.UndefOr[Key]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("key")(x.asInstanceOf[js.Any])
     
     @JSImport("pdf-viewer-reactjs", "defaultProps.loader")
     @js.native
@@ -99,8 +91,8 @@ object mod {
     
     @JSImport("pdf-viewer-reactjs", "defaultProps.navigation")
     @js.native
-    def navigation: js.UndefOr[js.Any] = js.native
-    inline def navigation_=(x: js.UndefOr[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigation")(x.asInstanceOf[js.Any])
+    def navigation: js.UndefOr[Any] = js.native
+    inline def navigation_=(x: js.UndefOr[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigation")(x.asInstanceOf[js.Any])
     
     @JSImport("pdf-viewer-reactjs", "defaultProps.onDocumentClick")
     @js.native
@@ -132,15 +124,15 @@ object mod {
     def page: js.UndefOr[Double] = js.native
     inline def page_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("page")(x.asInstanceOf[js.Any])
     
+    @JSImport("pdf-viewer-reactjs", "defaultProps.password")
+    @js.native
+    def password: js.UndefOr[String] = js.native
+    inline def password_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("password")(x.asInstanceOf[js.Any])
+    
     @JSImport("pdf-viewer-reactjs", "defaultProps.protectContent")
     @js.native
     def protectContent: js.UndefOr[Boolean] = js.native
     inline def protectContent_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("protectContent")(x.asInstanceOf[js.Any])
-    
-    @JSImport("pdf-viewer-reactjs", "defaultProps.ref")
-    @js.native
-    def ref: js.UndefOr[LegacyRef[PDFViewer]] = js.native
-    inline def ref_=(x: js.UndefOr[LegacyRef[PDFViewer]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ref")(x.asInstanceOf[js.Any])
     
     @JSImport("pdf-viewer-reactjs", "defaultProps.rotationAngle")
     @js.native
@@ -158,10 +150,20 @@ object mod {
     
     inline def scale_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scale")(x.asInstanceOf[js.Any])
     
+    @JSImport("pdf-viewer-reactjs", "defaultProps.showThumbnail")
+    @js.native
+    def showThumbnail: js.UndefOr[ShowThumbnail] = js.native
+    inline def showThumbnail_=(x: js.UndefOr[ShowThumbnail]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showThumbnail")(x.asInstanceOf[js.Any])
+    
     @JSImport("pdf-viewer-reactjs", "defaultProps.watermark")
     @js.native
     def watermark: js.UndefOr[Watermark] = js.native
     inline def watermark_=(x: js.UndefOr[Watermark]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("watermark")(x.asInstanceOf[js.Any])
+    
+    @JSImport("pdf-viewer-reactjs", "defaultProps.withCredentials")
+    @js.native
+    def withCredentials: js.UndefOr[Boolean] = js.native
+    inline def withCredentials_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withCredentials")(x.asInstanceOf[js.Any])
   }
   
   /* static member */
@@ -218,13 +220,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait PDFViewer
-    extends Component[PDFViewerProps, js.Object, js.Any]
+  type MaxPageCount = js.Function1[/* pageCount */ Double, Unit]
   
-  trait PDFViewerProps
-    extends StObject
-       with Props[PDFViewer] {
+  type PDFViewer = Component[PDFViewerProps, js.Object, Any]
+  
+  trait PDFViewerProps extends StObject {
     
     var alert: js.UndefOr[AlertHandler] = js.undefined
     
@@ -232,9 +232,11 @@ object mod {
     
     var css: js.UndefOr[String] = js.undefined
     
-    var defaultScale: js.UndefOr[Double] = js.undefined
-    
     var document: typings.std.Document
+    
+    var externalInput: js.UndefOr[Boolean] = js.undefined
+    
+    var getMaxPageCount: js.UndefOr[MaxPageCount] = js.undefined
     
     var hideNavbar: js.UndefOr[Boolean] = js.undefined
     
@@ -250,7 +252,7 @@ object mod {
     
     var navbarOnTop: js.UndefOr[Boolean] = js.undefined
     
-    var navigation: js.UndefOr[js.Any] = js.undefined
+    var navigation: js.UndefOr[Any] = js.undefined
     
     var onDocumentClick: js.UndefOr[DocClickHandler] = js.undefined
     
@@ -264,6 +266,8 @@ object mod {
     
     var page: js.UndefOr[Double] = js.undefined
     
+    var password: js.UndefOr[String] = js.undefined
+    
     var protectContent: js.UndefOr[Boolean] = js.undefined
     
     var rotationAngle: js.UndefOr[Double] = js.undefined
@@ -272,7 +276,11 @@ object mod {
     
     var scaleStep: js.UndefOr[Double] = js.undefined
     
+    var showThumbnail: js.UndefOr[ShowThumbnail] = js.undefined
+    
     var watermark: js.UndefOr[Watermark] = js.undefined
+    
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object PDFViewerProps {
     
@@ -295,11 +303,15 @@ object mod {
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      inline def setDefaultScale(value: Double): Self = StObject.set(x, "defaultScale", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultScaleUndefined: Self = StObject.set(x, "defaultScale", js.undefined)
-      
       inline def setDocument(value: typings.std.Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      
+      inline def setExternalInput(value: Boolean): Self = StObject.set(x, "externalInput", value.asInstanceOf[js.Any])
+      
+      inline def setExternalInputUndefined: Self = StObject.set(x, "externalInput", js.undefined)
+      
+      inline def setGetMaxPageCount(value: /* pageCount */ Double => Unit): Self = StObject.set(x, "getMaxPageCount", js.Any.fromFunction1(value))
+      
+      inline def setGetMaxPageCountUndefined: Self = StObject.set(x, "getMaxPageCount", js.undefined)
       
       inline def setHideNavbar(value: Boolean): Self = StObject.set(x, "hideNavbar", value.asInstanceOf[js.Any])
       
@@ -329,7 +341,7 @@ object mod {
       
       inline def setNavbarOnTopUndefined: Self = StObject.set(x, "navbarOnTop", js.undefined)
       
-      inline def setNavigation(value: js.Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
       inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
       
@@ -357,6 +369,10 @@ object mod {
       
       inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      
       inline def setProtectContent(value: Boolean): Self = StObject.set(x, "protectContent", value.asInstanceOf[js.Any])
       
       inline def setProtectContentUndefined: Self = StObject.set(x, "protectContent", js.undefined)
@@ -373,19 +389,78 @@ object mod {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
+      inline def setShowThumbnail(value: ShowThumbnail): Self = StObject.set(x, "showThumbnail", value.asInstanceOf[js.Any])
+      
+      inline def setShowThumbnailUndefined: Self = StObject.set(x, "showThumbnail", js.undefined)
+      
       inline def setWatermark(value: Watermark): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
       
       inline def setWatermarkUndefined: Self = StObject.set(x, "watermark", js.undefined)
+      
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   
   type RotationClickHandler = js.Function1[/* angle */ Double, Unit]
+  
+  trait ShowThumbnail extends StObject {
+    
+    var backgroundColor: js.UndefOr[String] = js.undefined
+    
+    var onTop: js.UndefOr[Boolean] = js.undefined
+    
+    var rotationAngle: js.UndefOr[Double] = js.undefined
+    
+    var scale: js.UndefOr[Double] = js.undefined
+    
+    var selectedThumbCss: js.UndefOr[String] = js.undefined
+    
+    var thumbCss: js.UndefOr[String] = js.undefined
+  }
+  object ShowThumbnail {
+    
+    inline def apply(): ShowThumbnail = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShowThumbnail]
+    }
+    
+    extension [Self <: ShowThumbnail](x: Self) {
+      
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      
+      inline def setOnTop(value: Boolean): Self = StObject.set(x, "onTop", value.asInstanceOf[js.Any])
+      
+      inline def setOnTopUndefined: Self = StObject.set(x, "onTop", js.undefined)
+      
+      inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+      
+      inline def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
+      
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      
+      inline def setSelectedThumbCss(value: String): Self = StObject.set(x, "selectedThumbCss", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedThumbCssUndefined: Self = StObject.set(x, "selectedThumbCss", js.undefined)
+      
+      inline def setThumbCss(value: String): Self = StObject.set(x, "thumbCss", value.asInstanceOf[js.Any])
+      
+      inline def setThumbCssUndefined: Self = StObject.set(x, "thumbCss", js.undefined)
+    }
+  }
   
   trait Watermark extends StObject {
     
     var color: js.UndefOr[String] = js.undefined
     
     var diagonal: js.UndefOr[Boolean] = js.undefined
+    
+    var font: js.UndefOr[String] = js.undefined
     
     var opacity: js.UndefOr[String] = js.undefined
     
@@ -409,6 +484,10 @@ object mod {
       inline def setDiagonal(value: Boolean): Self = StObject.set(x, "diagonal", value.asInstanceOf[js.Any])
       
       inline def setDiagonalUndefined: Self = StObject.set(x, "diagonal", js.undefined)
+      
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
       inline def setOpacity(value: String): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

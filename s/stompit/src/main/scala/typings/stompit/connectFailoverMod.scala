@@ -17,7 +17,7 @@ object connectFailoverMod {
   
   @JSImport("stompit/lib/ConnectFailover", JSImport.Namespace)
   @js.native
-  class ^ () extends ConnectFailover {
+  open class ^ () extends ConnectFailover {
     def this(servers: String) = this()
     def this(servers: js.Array[ConnectOptions]) = this()
     def this(servers: String, options: ConnectFailoverOptions) = this()
@@ -52,7 +52,7 @@ object connectFailoverMod {
     
     def connect(
       callback: js.Function4[
-          /* error */ Error | Null, 
+          /* error */ js.Error | Null, 
           /* client */ typings.stompit.clientMod.^, 
           /* reconnect */ js.Function0[Unit], 
           /* server */ Server, 
@@ -62,10 +62,7 @@ object connectFailoverMod {
     
     def getReconnectDelay(reconnects: Double): Double = js.native
     
-    @JSName("on")
-    def on_connect(event: connect, listener: js.Function1[/* server */ ConnectState, Unit]): this.type = js.native
-    @JSName("on")
-    def on_connecting(event: connecting, listener: js.Function1[/* server */ ConnectState, Unit]): this.type = js.native
+    def on(event: connect | connecting, listener: js.Function1[/* server */ ConnectState, Unit]): this.type = js.native
     @JSName("on")
     def on_error(event: error, listener: js.Function2[/* err */ ConnectError, /* server */ ConnectState, Unit]): this.type = js.native
   }
@@ -140,40 +137,39 @@ object connectFailoverMod {
     }
   }
   
-  // Internal class, which is not exported
+  @js.native
   trait ConnectState extends StObject {
     
-    var failedConnects: Double
-    
-    var serverProperties: Server
-  }
-  object ConnectState {
-    
-    inline def apply(failedConnects: Double, serverProperties: Server): ConnectState = {
-      val __obj = js.Dynamic.literal(failedConnects = failedConnects.asInstanceOf[js.Any], serverProperties = serverProperties.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ConnectState]
-    }
-    
-    extension [Self <: ConnectState](x: Self) {
-      
-      inline def setFailedConnects(value: Double): Self = StObject.set(x, "failedConnects", value.asInstanceOf[js.Any])
-      
-      inline def setServerProperties(value: Server): Self = StObject.set(x, "serverProperties", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  @js.native
-  trait Server extends StObject {
-    
     def blacklist(): Unit = js.native
-    def blacklist(error: Error): Unit = js.native
+    def blacklist(error: js.Error): Unit = js.native
     
-    var connectOptions: ConnectOptions = js.native
+    var failedConnects: Double = js.native
     
-    def getBlacklistError(): Error = js.native
+    def getBlacklistError(): js.Error = js.native
     
     def isBlacklisted(): Boolean = js.native
     
-    var remoteAddress: AddressInfo = js.native
+    var serverProperties: Server = js.native
+  }
+  
+  trait Server extends StObject {
+    
+    var connectOptions: ConnectOptions
+    
+    var remoteAddress: AddressInfo
+  }
+  object Server {
+    
+    inline def apply(connectOptions: ConnectOptions, remoteAddress: AddressInfo): Server = {
+      val __obj = js.Dynamic.literal(connectOptions = connectOptions.asInstanceOf[js.Any], remoteAddress = remoteAddress.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Server]
+    }
+    
+    extension [Self <: Server](x: Self) {
+      
+      inline def setConnectOptions(value: ConnectOptions): Self = StObject.set(x, "connectOptions", value.asInstanceOf[js.Any])
+      
+      inline def setRemoteAddress(value: AddressInfo): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
+    }
   }
 }

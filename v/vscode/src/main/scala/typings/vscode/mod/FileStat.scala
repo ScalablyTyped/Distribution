@@ -21,6 +21,13 @@ trait FileStat extends StObject {
   var mtime: Double
   
   /**
+    * The permissions of the file, e.g. whether the file is readonly.
+    *
+    * *Note:* This value might be a bitmask, e.g. `FilePermission.Readonly | FilePermission.Other`.
+    */
+  var permissions: js.UndefOr[FilePermission] = js.undefined
+  
+  /**
     * The size in bytes.
     *
     * *Note:* If the file changed, it is important to provide an updated `size`. Otherwise there
@@ -50,6 +57,10 @@ object FileStat {
     inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
     inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    
+    inline def setPermissions(value: FilePermission): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -37,11 +37,11 @@ object SketchMSData {
     
     inline def setPages(value: js.Array[SketchMSPageLayer]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    inline def setPagesVarargs(value: SketchMSPageLayer*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: SketchMSPageLayer*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setPreviews(value: js.Array[SketchMSPreview]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
     
-    inline def setPreviewsVarargs(value: SketchMSPreview*): Self = StObject.set(x, "previews", js.Array(value :_*))
+    inline def setPreviewsVarargs(value: SketchMSPreview*): Self = StObject.set(x, "previews", js.Array(value*))
     
     inline def setUser(value: SketchMSUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }

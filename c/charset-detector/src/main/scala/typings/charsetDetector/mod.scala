@@ -100,7 +100,7 @@ object mod {
       
       inline def setByteStats(value: js.Array[Double]): Self = StObject.set(x, "byteStats", value.asInstanceOf[js.Any])
       
-      inline def setByteStatsVarargs(value: Double*): Self = StObject.set(x, "byteStats", js.Array(value :_*))
+      inline def setByteStatsVarargs(value: Double*): Self = StObject.set(x, "byteStats", js.Array(value*))
       
       inline def setC1Bytes(value: Boolean): Self = StObject.set(x, "c1Bytes", value.asInstanceOf[js.Any])
     }

@@ -3,6 +3,7 @@ package typings.antDesignReactNative
 import typings.antDesignReactNative.anon.PartialLocale
 import typings.antDesignReactNative.anon.PartialTheme
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,15 @@ object providerMod {
   
   @JSImport("@ant-design/react-native/lib/provider", JSImport.Default)
   @js.native
-  class default () extends Provider
+  open class default () extends Provider
   
   @js.native
   trait Provider
-    extends Component[ProviderProps, js.Object, js.Any]
+    extends Component[ProviderProps, js.Object, Any]
   
   trait ProviderProps extends StObject {
+    
+    var children: ReactNode
     
     var locale: js.UndefOr[PartialLocale] = js.undefined
     
@@ -31,6 +34,10 @@ object providerMod {
     }
     
     extension [Self <: ProviderProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setLocale(value: PartialLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       

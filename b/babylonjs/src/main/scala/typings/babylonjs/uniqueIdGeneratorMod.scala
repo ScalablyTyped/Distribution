@@ -8,7 +8,7 @@ object uniqueIdGeneratorMod {
   
   @JSImport("babylonjs/Misc/uniqueIdGenerator", "UniqueIdGenerator")
   @js.native
-  class UniqueIdGenerator () extends StObject
+  open class UniqueIdGenerator () extends StObject
   /* static members */
   object UniqueIdGenerator {
     
@@ -18,7 +18,7 @@ object uniqueIdGeneratorMod {
     
     @JSImport("babylonjs/Misc/uniqueIdGenerator", "UniqueIdGenerator._UniqueIdCounter")
     @js.native
-    def _UniqueIdCounter: js.Any = js.native
-    inline def _UniqueIdCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdCounter")(x.asInstanceOf[js.Any])
+    def _UniqueIdCounter: Any = js.native
+    inline def _UniqueIdCounter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdCounter")(x.asInstanceOf[js.Any])
   }
 }

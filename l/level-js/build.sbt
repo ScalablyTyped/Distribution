@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "level-js"
-version := "4.0-dt-20190619Z-edf786"
-scalaVersion := "3.0.1"
+version := "4.0-dt-20211202Z-d7dee9"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "abstract-leveldown" % "5.0-dt-20180913Z-dcb85b",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "abstract-leveldown" % "7.2-dt-20220329Z-bbefd4",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

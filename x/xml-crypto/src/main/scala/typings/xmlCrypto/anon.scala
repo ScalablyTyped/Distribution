@@ -34,7 +34,7 @@ object anon {
   
   trait Attrs extends StObject {
     
-    var attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var attrs: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var existingPrefixes: js.UndefOr[StringDictionary[String]] = js.undefined
     
@@ -51,7 +51,7 @@ object anon {
     
     extension [Self <: Attrs](x: Self) {
       
-      inline def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
@@ -100,7 +100,7 @@ object anon {
       
       inline def setImplicitTransformsUndefined: Self = StObject.set(x, "implicitTransforms", js.undefined)
       
-      inline def setImplicitTransformsVarargs(value: String*): Self = StObject.set(x, "implicitTransforms", js.Array(value :_*))
+      inline def setImplicitTransformsVarargs(value: String*): Self = StObject.set(x, "implicitTransforms", js.Array(value*))
       
       inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
       

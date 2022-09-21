@@ -18,7 +18,7 @@ object browser {
     /** [Method] Used to open a new browser window
       * @param options Object The options to use when opening a new browser window.
       */
-    var open: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var open: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -33,7 +33,7 @@ object browser {
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      inline def setOpen(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }

@@ -56,7 +56,7 @@ object PutVoiceConnectorProxyRequest {
     
     inline def setPhoneNumberPoolCountries(value: CountryList): Self = StObject.set(x, "PhoneNumberPoolCountries", value.asInstanceOf[js.Any])
     
-    inline def setPhoneNumberPoolCountriesVarargs(value: Country*): Self = StObject.set(x, "PhoneNumberPoolCountries", js.Array(value :_*))
+    inline def setPhoneNumberPoolCountriesVarargs(value: Country*): Self = StObject.set(x, "PhoneNumberPoolCountries", js.Array(value*))
     
     inline def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }

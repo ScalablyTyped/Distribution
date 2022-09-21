@@ -8,5 +8,5 @@ object vaultListMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_VaultList", "_VaultList")
   @js.native
-  val VaultList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val VaultList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

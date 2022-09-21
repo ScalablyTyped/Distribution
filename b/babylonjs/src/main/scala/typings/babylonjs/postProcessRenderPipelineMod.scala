@@ -14,13 +14,13 @@ object postProcessRenderPipelineMod {
   
   @JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderPipeline", "PostProcessRenderPipeline")
   @js.native
-  class PostProcessRenderPipeline protected () extends StObject {
+  open class PostProcessRenderPipeline protected () extends StObject {
     /**
       * Initializes a PostProcessRenderPipeline
-      * @param engine engine to add the pipeline to
+      * @param _engine engine to add the pipeline to
       * @param name name of the pipeline
       */
-    def this(engine: Engine, name: String) = this()
+    def this(_engine: Engine, name: String) = this()
     
     /** @hidden */
     def _attachCameras(cameras: js.Array[Camera], unique: Boolean): Unit = js.native
@@ -47,15 +47,17 @@ object postProcessRenderPipelineMod {
     
     /* protected */ def _enableMSAAOnFirstPostProcess(sampleCount: Double): Boolean = js.native
     
+    /* private */ var _engine: Any = js.native
+    
     /** @hidden */
     var _name: String = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    /* private */ var _renderEffects: js.Any = js.native
+    /* private */ var _renderEffects: Any = js.native
     
-    /* private */ var _renderEffectsForIsolatedPass: js.Any = js.native
+    /* private */ var _renderEffectsForIsolatedPass: Any = js.native
     
     /** @hidden */
     def _reset(): Unit = js.native
@@ -76,8 +78,6 @@ object postProcessRenderPipelineMod {
       * Disposes of the pipeline
       */
     def dispose(): Unit = js.native
-    
-    /* private */ var engine: js.Any = js.native
     
     /**
       * Gets the class name

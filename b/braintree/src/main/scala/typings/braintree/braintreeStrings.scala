@@ -3,6 +3,10 @@ package typings.braintree
 import typings.braintree.mod.Commercial
 import typings.braintree.mod.CustomerLocation
 import typings.braintree.mod.Debit
+import typings.braintree.mod.DisbursementExceptionMessage
+import typings.braintree.mod.DisbursementFollowUpAction
+import typings.braintree.mod.DisbursementNotificationKind
+import typings.braintree.mod.DisbursementType
 import typings.braintree.mod.DisputeNotificationKind
 import typings.braintree.mod.DisputeStatus
 import typings.braintree.mod.DurbinRegulated
@@ -19,6 +23,7 @@ import typings.braintree.mod.SubscriptionSource
 import typings.braintree.mod.SubscriptionStatus
 import typings.braintree.mod.TransactionNotificationKind
 import typings.braintree.mod.TransactionProcessorResponseType
+import typings.braintree.mod.TransactionRequestSource
 import typings.braintree.mod.TransactionSource
 import typings.braintree.mod.TransactionStatus
 import typings.braintree.mod._WebhookNotificationKind
@@ -40,6 +45,10 @@ object braintreeStrings {
        with MerchantAccountStatus
        with SubscriptionStatus
   inline def Active: Active = "Active".asInstanceOf[Active]
+  
+  @js.native
+  sealed trait `American Express` extends StObject
+  inline def `American Express`: `American Express` = ("American Express").asInstanceOf[`American Express`]
   
   @js.native
   sealed trait AndroidPayCard
@@ -66,6 +75,14 @@ object braintreeStrings {
   inline def Canceled: Canceled = "Canceled".asInstanceOf[Canceled]
   
   @js.native
+  sealed trait `Carte Blanche` extends StObject
+  inline def `Carte Blanche`: `Carte Blanche` = ("Carte Blanche").asInstanceOf[`Carte Blanche`]
+  
+  @js.native
+  sealed trait `China UnionPay` extends StObject
+  inline def `China UnionPay`: `China UnionPay` = ("China UnionPay").asInstanceOf[`China UnionPay`]
+  
+  @js.native
   sealed trait ControlPanel
     extends StObject
        with TransactionSource
@@ -78,10 +95,22 @@ object braintreeStrings {
   inline def CreditCard: CreditCard = "CreditCard".asInstanceOf[CreditCard]
   
   @js.native
+  sealed trait `Diners Club` extends StObject
+  inline def `Diners Club`: `Diners Club` = ("Diners Club").asInstanceOf[`Diners Club`]
+  
+  @js.native
+  sealed trait Discover extends StObject
+  inline def Discover: Discover = "Discover".asInstanceOf[Discover]
+  
+  @js.native
   sealed trait Disputed
     extends StObject
        with DisputeStatus
   inline def Disputed: Disputed = "Disputed".asInstanceOf[Disputed]
+  
+  @js.native
+  sealed trait Elo extends StObject
+  inline def Elo: Elo = "Elo".asInstanceOf[Elo]
   
   @js.native
   sealed trait Expired
@@ -97,10 +126,26 @@ object braintreeStrings {
   inline def International: International = "International".asInstanceOf[International]
   
   @js.native
+  sealed trait JCB extends StObject
+  inline def JCB: JCB = "JCB".asInstanceOf[JCB]
+  
+  @js.native
+  sealed trait Laser extends StObject
+  inline def Laser: Laser = "Laser".asInstanceOf[Laser]
+  
+  @js.native
   sealed trait Lost
     extends StObject
        with DisputeStatus
   inline def Lost: Lost = "Lost".asInstanceOf[Lost]
+  
+  @js.native
+  sealed trait Maestro extends StObject
+  inline def Maestro: Maestro = "Maestro".asInstanceOf[Maestro]
+  
+  @js.native
+  sealed trait MasterCard extends StObject
+  inline def MasterCard: MasterCard = "MasterCard".asInstanceOf[MasterCard]
   
   @js.native
   sealed trait MasterpassCard
@@ -126,10 +171,10 @@ object braintreeStrings {
   inline def Open: Open = "Open".asInstanceOf[Open]
   
   @js.native
-  sealed trait PastDue
+  sealed trait `Past Due`
     extends StObject
        with SubscriptionStatus
-  inline def PastDue: PastDue = "PastDue".asInstanceOf[PastDue]
+  inline def `Past Due`: `Past Due` = ("Past Due").asInstanceOf[`Past Due`]
   
   @js.native
   sealed trait PayPalAccount
@@ -157,10 +202,22 @@ object braintreeStrings {
   inline def SamsungPayCard: SamsungPayCard = "SamsungPayCard".asInstanceOf[SamsungPayCard]
   
   @js.native
+  sealed trait Solo extends StObject
+  inline def Solo: Solo = "Solo".asInstanceOf[Solo]
+  
+  @js.native
   sealed trait Suspended
     extends StObject
        with MerchantAccountStatus
   inline def Suspended: Suspended = "Suspended".asInstanceOf[Suspended]
+  
+  @js.native
+  sealed trait Switch extends StObject
+  inline def Switch: Switch = "Switch".asInstanceOf[Switch]
+  
+  @js.native
+  sealed trait `UK Maestro` extends StObject
+  inline def `UK Maestro`: `UK Maestro` = ("UK Maestro").asInstanceOf[`UK Maestro`]
   
   @js.native
   sealed trait US
@@ -192,6 +249,10 @@ object braintreeStrings {
   inline def VenmoAccount: VenmoAccount = "VenmoAccount".asInstanceOf[VenmoAccount]
   
   @js.native
+  sealed trait Visa extends StObject
+  inline def Visa: Visa = "Visa".asInstanceOf[Visa]
+  
+  @js.native
   sealed trait VisaCheckoutCard
     extends StObject
        with PaymentMethodType
@@ -215,8 +276,18 @@ object braintreeStrings {
   inline def Yes: Yes = "Yes".asInstanceOf[Yes]
   
   @js.native
+  sealed trait account_not_authorized
+    extends StObject
+       with DisbursementExceptionMessage
+  inline def account_not_authorized: account_not_authorized = "account_not_authorized".asInstanceOf[account_not_authorized]
+  
+  @js.native
   sealed trait account_updater_daily_report extends StObject
   inline def account_updater_daily_report: account_updater_daily_report = "account_updater_daily_report".asInstanceOf[account_updater_daily_report]
+  
+  @js.native
+  sealed trait active_ extends StObject
+  inline def active_ : active_ = "active".asInstanceOf[active_]
   
   @js.native
   sealed trait android_pay_card
@@ -279,6 +350,16 @@ object braintreeStrings {
   inline def avs_and_cvv: avs_and_cvv = "avs_and_cvv".asInstanceOf[avs_and_cvv]
   
   @js.native
+  sealed trait bank extends StObject
+  inline def bank: bank = "bank".asInstanceOf[bank]
+  
+  @js.native
+  sealed trait bank_rejected
+    extends StObject
+       with DisbursementExceptionMessage
+  inline def bank_rejected: bank_rejected = "bank_rejected".asInstanceOf[bank_rejected]
+  
+  @js.native
   sealed trait check
     extends StObject
        with _WebhookNotificationKind
@@ -297,10 +378,22 @@ object braintreeStrings {
   inline def connected_merchant_status_transitioned: connected_merchant_status_transitioned = "connected_merchant_status_transitioned".asInstanceOf[connected_merchant_status_transitioned]
   
   @js.native
+  sealed trait contact_us
+    extends StObject
+       with DisbursementFollowUpAction
+  inline def contact_us: contact_us = "contact_us".asInstanceOf[contact_us]
+  
+  @js.native
   sealed trait control_panel
     extends StObject
        with SubscriptionSource
   inline def control_panel: control_panel = "control_panel".asInstanceOf[control_panel]
+  
+  @js.native
+  sealed trait credit
+    extends StObject
+       with DisbursementType
+  inline def credit: credit = "credit".asInstanceOf[credit]
   
   @js.native
   sealed trait credit_card
@@ -315,15 +408,21 @@ object braintreeStrings {
   inline def cvv: cvv = "cvv".asInstanceOf[cvv]
   
   @js.native
+  sealed trait debit
+    extends StObject
+       with DisbursementType
+  inline def debit: debit = "debit".asInstanceOf[debit]
+  
+  @js.native
   sealed trait disbursement
     extends StObject
-       with _WebhookNotificationKind
+       with DisbursementNotificationKind
   inline def disbursement: disbursement = "disbursement".asInstanceOf[disbursement]
   
   @js.native
   sealed trait disbursement_exception
     extends StObject
-       with _WebhookNotificationKind
+       with DisbursementNotificationKind
   inline def disbursement_exception: disbursement_exception = "disbursement_exception".asInstanceOf[disbursement_exception]
   
   @js.native
@@ -351,6 +450,10 @@ object braintreeStrings {
   inline def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   
   @js.native
+  sealed trait email extends StObject
+  inline def email: email = "email".asInstanceOf[email]
+  
+  @js.native
   sealed trait failed
     extends StObject
        with TransactionStatus
@@ -361,6 +464,10 @@ object braintreeStrings {
     extends StObject
        with GatewayRejectionReason
   inline def fraud: fraud = "fraud".asInstanceOf[fraud]
+  
+  @js.native
+  sealed trait full_information extends StObject
+  inline def full_information: full_information = "full_information".asInstanceOf[full_information]
   
   @js.native
   sealed trait gateway_rejected
@@ -399,6 +506,16 @@ object braintreeStrings {
   inline def hold_pending: hold_pending = "hold_pending".asInstanceOf[hold_pending]
   
   @js.native
+  sealed trait insufficient_funds
+    extends StObject
+       with DisbursementExceptionMessage
+  inline def insufficient_funds: insufficient_funds = "insufficient_funds".asInstanceOf[insufficient_funds]
+  
+  @js.native
+  sealed trait international_ extends StObject
+  inline def international_ : international_ = "international".asInstanceOf[international_]
+  
+  @js.native
   sealed trait local_payment_completed
     extends StObject
        with _WebhookNotificationKind
@@ -409,6 +526,22 @@ object braintreeStrings {
     extends StObject
        with PaymentInstrumentType
   inline def masterpass_card: masterpass_card = "masterpass_card".asInstanceOf[masterpass_card]
+  
+  @js.native
+  sealed trait mobile_phone extends StObject
+  inline def mobile_phone: mobile_phone = "mobile_phone".asInstanceOf[mobile_phone]
+  
+  @js.native
+  sealed trait moto
+    extends StObject
+       with TransactionRequestSource
+  inline def moto: moto = "moto".asInstanceOf[moto]
+  
+  @js.native
+  sealed trait none
+    extends StObject
+       with DisbursementFollowUpAction
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait oauth_access_revoked
@@ -445,6 +578,10 @@ object braintreeStrings {
   inline def paypal_account: paypal_account = "paypal_account".asInstanceOf[paypal_account]
   
   @js.native
+  sealed trait pending_ extends StObject
+  inline def pending_ : pending_ = "pending".asInstanceOf[pending_]
+  
+  @js.native
   sealed trait processor_declined
     extends StObject
        with TransactionStatus
@@ -460,7 +597,14 @@ object braintreeStrings {
   sealed trait recurring_
     extends StObject
        with SubscriptionSource
+       with TransactionRequestSource
   inline def recurring_ : recurring_ = "recurring".asInstanceOf[recurring_]
+  
+  @js.native
+  sealed trait recurring_first
+    extends StObject
+       with TransactionRequestSource
+  inline def recurring_first: recurring_first = "recurring_first".asInstanceOf[recurring_first]
   
   @js.native
   sealed trait refunded
@@ -487,6 +631,10 @@ object braintreeStrings {
   inline def risk_threshold: risk_threshold = "risk_threshold".asInstanceOf[risk_threshold]
   
   @js.native
+  sealed trait sale extends StObject
+  inline def sale: sale = "sale".asInstanceOf[sale]
+  
+  @js.native
   sealed trait samsung_pay_card
     extends StObject
        with PaymentInstrumentType
@@ -497,6 +645,12 @@ object braintreeStrings {
     extends StObject
        with TransactionStatus
   inline def settled: settled = "settled".asInstanceOf[settled]
+  
+  @js.native
+  sealed trait settlement_confirmed
+    extends StObject
+       with TransactionStatus
+  inline def settlement_confirmed: settlement_confirmed = "settlement_confirmed".asInstanceOf[settlement_confirmed]
   
   @js.native
   sealed trait settlement_declined
@@ -579,10 +733,18 @@ object braintreeStrings {
   inline def subscription_went_past_due: subscription_went_past_due = "subscription_went_past_due".asInstanceOf[subscription_went_past_due]
   
   @js.native
+  sealed trait suspended_ extends StObject
+  inline def suspended_ : suspended_ = "suspended".asInstanceOf[suspended_]
+  
+  @js.native
   sealed trait three_d_secure
     extends StObject
        with GatewayRejectionReason
   inline def three_d_secure: three_d_secure = "three_d_secure".asInstanceOf[three_d_secure]
+  
+  @js.native
+  sealed trait token extends StObject
+  inline def token: token = "token".asInstanceOf[token]
   
   @js.native
   sealed trait token_issuance
@@ -607,6 +769,22 @@ object braintreeStrings {
     extends StObject
        with TransactionNotificationKind
   inline def transaction_settlement_declined: transaction_settlement_declined = "transaction_settlement_declined".asInstanceOf[transaction_settlement_declined]
+  
+  @js.native
+  sealed trait unscheduled
+    extends StObject
+       with TransactionRequestSource
+  inline def unscheduled: unscheduled = "unscheduled".asInstanceOf[unscheduled]
+  
+  @js.native
+  sealed trait update_funding_information
+    extends StObject
+       with DisbursementFollowUpAction
+  inline def update_funding_information: update_funding_information = "update_funding_information".asInstanceOf[update_funding_information]
+  
+  @js.native
+  sealed trait us_ extends StObject
+  inline def us_ : us_ = "us".asInstanceOf[us_]
   
   @js.native
   sealed trait venmo_account

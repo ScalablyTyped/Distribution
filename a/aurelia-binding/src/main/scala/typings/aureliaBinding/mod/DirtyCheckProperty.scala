@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "DirtyCheckProperty")
 @js.native
-class DirtyCheckProperty ()
+open class DirtyCheckProperty ()
   extends StObject
      with InternalPropertyObserver

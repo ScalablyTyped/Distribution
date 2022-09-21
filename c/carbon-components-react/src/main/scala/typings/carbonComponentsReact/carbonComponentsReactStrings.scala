@@ -5,16 +5,25 @@ import typings.carbonComponentsReact.buttonButtonMod.ButtonKind
 import typings.carbonComponentsReact.buttonButtonMod.ButtonSize
 import typings.carbonComponentsReact.codeSnippetCodeSnippetMod._CodeSnippetType
 import typings.carbonComponentsReact.dataTableDataTableMod.DataTableTranslationKey
+import typings.carbonComponentsReact.dialogMod.ExcludedDialogPropKeys
+import typings.carbonComponentsReact.headerGlobalActionMod.ExcludedProps
 import typings.carbonComponentsReact.inlineLoadingInlineLoadingMod.InlineLoadingStatus
+import typings.carbonComponentsReact.listBoxListBoxSelectionMod.ListBoxSelectionTranslationKey
 import typings.carbonComponentsReact.listBoxMenuIconMod.ListBoxMenuIconTranslationKey
 import typings.carbonComponentsReact.listBoxPropTypesMod.ListBoxSize
 import typings.carbonComponentsReact.listBoxPropTypesMod.ListBoxType
-import typings.carbonComponentsReact.listBoxSelectionMod.ListBoxSelectionTranslationKey
+import typings.carbonComponentsReact.listBoxTriggerMod.ExcludedButtonPropKeys
 import typings.carbonComponentsReact.loadingLoadingMod.ExcludedAttributes
+import typings.carbonComponentsReact.menuOptionMod.ExcludedPropKeys
 import typings.carbonComponentsReact.modalWrapperModalWrapperMod.ExcludedModalProps
+import typings.carbonComponentsReact.nextMod.ExcludedContentPanelPropKeys
+import typings.carbonComponentsReact.nextMod.ExcludedContentTabPropKeys
+import typings.carbonComponentsReact.nextMod.ExcludedContentTabsPropsKeys
 import typings.carbonComponentsReact.notificationNotificationMod.ExcludedDetailDivAttributes
 import typings.carbonComponentsReact.notificationNotificationMod.NotificationKind
 import typings.carbonComponentsReact.notificationNotificationMod.NotificationType
+import typings.carbonComponentsReact.numberInputNumberInputMod.ExcludedInputPropKeys
+import typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputArrowDirection
 import typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputTranslationKey
 import typings.carbonComponentsReact.paginationNavPaginationNavMod.PaginationNavTranslationKey
 import typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressStepTranslationKey
@@ -23,13 +32,15 @@ import typings.carbonComponentsReact.sharedMod.FileStatus
 import typings.carbonComponentsReact.sharedMod.FileUploaderSize
 import typings.carbonComponentsReact.sideNavMod.SideNavTranslationKey
 import typings.carbonComponentsReact.sortingMod.DataTableSortState
-import typings.carbonComponentsReact.structuredListStructuredListMod.ExcludedListInputProps
+import typings.carbonComponentsReact.structuredListStructuredListMod.ExcludedListInputPropKeys
 import typings.carbonComponentsReact.tabTabMod.TabsProvidedPropKeys
 import typings.carbonComponentsReact.tableBatchActionsMod.TableBatchActionsTranslationKey
 import typings.carbonComponentsReact.tableMod.DataTableSize
+import typings.carbonComponentsReact.tableToolbarSearchMod.ExcludedInheritedProps
 import typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarTranslationKey
 import typings.carbonComponentsReact.tagTagMod.TagTypeName
-import typings.carbonComponentsReact.tileTileMod.SelectedTileExcludedAttributes
+import typings.carbonComponentsReact.textDirectionContextMod.TextDirection
+import typings.carbonComponentsReact.tooltipDefinitionTooltipDefinitionMod.ExcludedPropsKeys
 import typings.carbonComponentsReact.treeNodeMod.TreeViewProvidedProps
 import typings.carbonComponentsReact.typingsSharedMod.CarbonInputSize
 import typings.carbonComponentsReact.typingsSharedMod.CarbonSize
@@ -74,6 +85,12 @@ object carbonComponentsReactStrings {
     extends StObject
        with AspectRatioValue
   inline def `2x1`: `2x1` = "2x1".asInstanceOf[`2x1`]
+  
+  @js.native
+  sealed trait `2xl`
+    extends StObject
+       with ButtonSize
+  inline def `2xl`: `2xl` = "2xl".asInstanceOf[`2xl`]
   
   @js.native
   sealed trait `3x4`
@@ -147,6 +164,10 @@ object carbonComponentsReactStrings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
+  sealed trait align extends StObject
+  inline def align: align = "align".asInstanceOf[align]
+  
+  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   
@@ -176,6 +197,7 @@ object carbonComponentsReactStrings {
   sealed trait `aria-controls`
     extends StObject
        with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with ExcludedContentTabPropKeys
   inline def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
   
   @js.native
@@ -189,18 +211,21 @@ object carbonComponentsReactStrings {
   sealed trait `aria-disabled`
     extends StObject
        with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with ExcludedPropKeys
   inline def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
   
   @js.native
   sealed trait `aria-expanded`
     extends StObject
        with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
+       with ExcludedPropKeys
   inline def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
   
   @js.native
   sealed trait `aria-haspopup`
     extends StObject
        with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
+       with ExcludedPropKeys
   inline def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
   
   @js.native
@@ -217,7 +242,10 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.inlineCheckboxInlineCheckboxMod.ExcludedAttributes
        with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
        with typings.carbonComponentsReact.treeViewTreeViewMod.ExcludedAttributes
-       with typings.carbonComponentsReact.numberInputNumberInputMod.ExcludedAttributes
+       with ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with ExcludedContentTabsPropsKeys
+       with ExcludedInputPropKeys
   inline def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
   
   @js.native
@@ -226,6 +254,8 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
        with ExcludedAttributes
        with typings.carbonComponentsReact.treeViewTreeViewMod.ExcludedAttributes
+       with ExcludedContentPanelPropKeys
+       with ExcludedDialogPropKeys
   inline def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
   
   @js.native
@@ -233,6 +263,12 @@ object carbonComponentsReactStrings {
     extends StObject
        with ExcludedAttributes
   inline def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
+  
+  @js.native
+  sealed trait `aria-modal`
+    extends StObject
+       with ExcludedDialogPropKeys
+  inline def `aria-modal`: `aria-modal` = "aria-modal".asInstanceOf[`aria-modal`]
   
   @js.native
   sealed trait `aria-placeholder`
@@ -244,6 +280,7 @@ object carbonComponentsReactStrings {
   sealed trait `aria-selected`
     extends StObject
        with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with ExcludedContentTabPropKeys
   inline def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
   
   @js.native
@@ -269,6 +306,12 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait audio extends StObject
   inline def audio: audio = "audio".asInstanceOf[audio]
+  
+  @js.native
+  sealed trait auto
+    extends StObject
+       with TextDirection
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait automatic extends StObject
@@ -318,6 +361,14 @@ object carbonComponentsReactStrings {
        with Direction
        with VerticalDirection
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
+  sealed trait `bottom-left` extends StObject
+  inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  
+  @js.native
+  sealed trait `bottom-right` extends StObject
+  inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
   sealed trait br extends StObject
@@ -484,6 +535,10 @@ object carbonComponentsReactStrings {
   inline def carbonDottableDottoolbarDotsearchDotplaceholder: carbonDottableDottoolbarDotsearchDotplaceholder = "carbon.table.toolbar.search.placeholder".asInstanceOf[carbonDottableDottoolbarDotsearchDotplaceholder]
   
   @js.native
+  sealed trait caret extends StObject
+  inline def caret: caret = "caret".asInstanceOf[caret]
+  
+  @js.native
   sealed trait center
     extends StObject
        with TooltipAlignment
@@ -509,7 +564,10 @@ object carbonComponentsReactStrings {
     extends StObject
        with typings.carbonComponentsReact.inlineCheckboxInlineCheckboxMod.ExcludedAttributes
        with typings.carbonComponentsReact.datePickerInputDatePickerInputMod.ExcludedAttributes
+       with ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
        with ExcludedDetailDivAttributes
+       with ExcludedPropKeys
   inline def className: className = "className".asInstanceOf[className]
   
   @js.native
@@ -545,6 +603,10 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait colgroup extends StObject
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
+  
+  @js.native
+  sealed trait columns extends StObject
+  inline def columns: columns = "columns".asInstanceOf[columns]
   
   @js.native
   sealed trait compact
@@ -589,10 +651,26 @@ object carbonComponentsReactStrings {
   inline def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
+  sealed trait `danger--ghost`
+    extends StObject
+       with ButtonKind
+  inline def `danger--ghost`: `danger--ghost` = "danger--ghost".asInstanceOf[`danger--ghost`]
+  
+  @js.native
   sealed trait `danger--primary`
     extends StObject
        with ButtonKind
   inline def `danger--primary`: `danger--primary` = "danger--primary".asInstanceOf[`danger--primary`]
+  
+  @js.native
+  sealed trait `danger--tertiary`
+    extends StObject
+       with ButtonKind
+  inline def `danger--tertiary`: `danger--tertiary` = "danger--tertiary".asInstanceOf[`danger--tertiary`]
+  
+  @js.native
+  sealed trait dangerDescription extends StObject
+  inline def dangerDescription: dangerDescription = "dangerDescription".asInstanceOf[dangerDescription]
   
   @js.native
   sealed trait data extends StObject
@@ -681,6 +759,16 @@ object carbonComponentsReactStrings {
   inline def done: done = "done".asInstanceOf[done]
   
   @js.native
+  sealed trait down
+    extends StObject
+       with NumberInputArrowDirection
+  inline def down: down = "down".asInstanceOf[down]
+  
+  @js.native
+  sealed trait dropShadow extends StObject
+  inline def dropShadow: dropShadow = "dropShadow".asInstanceOf[dropShadow]
+  
+  @js.native
   sealed trait dt extends StObject
   inline def dt: dt = "dt".asInstanceOf[dt]
   
@@ -719,6 +807,10 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait enter extends StObject
   inline def enter: enter = "enter".asInstanceOf[enter]
+  
+  @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
   sealed trait error
@@ -953,7 +1045,9 @@ object carbonComponentsReactStrings {
   inline def handleTabKeyDown: handleTabKeyDown = "handleTabKeyDown".asInstanceOf[handleTabKeyDown]
   
   @js.native
-  sealed trait hasIconOnly extends StObject
+  sealed trait hasIconOnly
+    extends StObject
+       with ExcludedProps
   inline def hasIconOnly: hasIconOnly = "hasIconOnly".asInstanceOf[hasIconOnly]
   
   @js.native
@@ -969,10 +1063,20 @@ object carbonComponentsReactStrings {
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
+  sealed trait hidden
+    extends StObject
+       with ExcludedContentPanelPropKeys
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
   sealed trait `high-contrast`
     extends StObject
        with TagTypeName
   inline def `high-contrast`: `high-contrast` = "high-contrast".asInstanceOf[`high-contrast`]
+  
+  @js.native
+  sealed trait highContrast extends StObject
+  inline def highContrast: highContrast = "highContrast".asInstanceOf[highContrast]
   
   @js.native
   sealed trait horizontal extends StObject
@@ -997,7 +1101,9 @@ object carbonComponentsReactStrings {
   inline def i: i = "i".asInstanceOf[i]
   
   @js.native
-  sealed trait iconDescription extends StObject
+  sealed trait iconDescription
+    extends StObject
+       with ExcludedProps
   inline def iconDescription: iconDescription = "iconDescription".asInstanceOf[iconDescription]
   
   @js.native
@@ -1011,8 +1117,10 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
        with typings.carbonComponentsReact.datePickerInputDatePickerInputMod.ExcludedAttributes
        with typings.carbonComponentsReact.paginationPaginationMod.ExcludedAttributes
-       with typings.carbonComponentsReact.numberInputNumberInputMod.ExcludedAttributes
        with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
+       with ExcludedContentPanelPropKeys
+       with ExcludedContentTabPropKeys
+       with ExcludedInputPropKeys
   inline def id: id = "id".asInstanceOf[id]
   
   @js.native
@@ -1062,6 +1170,10 @@ object carbonComponentsReactStrings {
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
+  sealed trait initialFocusRef extends StObject
+  inline def initialFocusRef: initialFocusRef = "initialFocusRef".asInstanceOf[initialFocusRef]
+  
+  @js.native
   sealed trait `inline`
     extends StObject
        with ListBoxType
@@ -1078,6 +1190,20 @@ object carbonComponentsReactStrings {
   inline def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
+  sealed trait internalFocusRef
+    extends StObject
+       with ExcludedDialogPropKeys
+  inline def internalFocusRef: internalFocusRef = "internalFocusRef".asInstanceOf[internalFocusRef]
+  
+  @js.native
+  sealed trait isExpressive extends StObject
+  inline def isExpressive: isExpressive = "isExpressive".asInstanceOf[isExpressive]
+  
+  @js.native
+  sealed trait isSelected extends StObject
+  inline def isSelected: isSelected = "isSelected".asInstanceOf[isSelected]
+  
+  @js.native
   sealed trait kbd extends StObject
   inline def kbd: kbd = "kbd".asInstanceOf[kbd]
   
@@ -1090,11 +1216,25 @@ object carbonComponentsReactStrings {
   inline def label: label = "label".asInstanceOf[label]
   
   @js.native
+  sealed trait labelText
+    extends StObject
+       with ExcludedInheritedProps
+  inline def labelText: labelText = "labelText".asInstanceOf[labelText]
+  
+  @js.native
   sealed trait left
     extends StObject
        with Direction
        with HorizontalDirection
   inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait `left-bottom` extends StObject
+  inline def `left-bottom`: `left-bottom` = "left-bottom".asInstanceOf[`left-bottom`]
+  
+  @js.native
+  sealed trait `left-top` extends StObject
+  inline def `left-top`: `left-top` = "left-top".asInstanceOf[`left-top`]
   
   @js.native
   sealed trait legend extends StObject
@@ -1106,11 +1246,18 @@ object carbonComponentsReactStrings {
        with ButtonSize
        with CarbonInputSize
        with CarbonSize
+       with DataTableSize
+       with FileUploaderSize
+       with ListBoxSize
   inline def lg: lg = "lg".asInstanceOf[lg]
   
   @js.native
   sealed trait li extends StObject
   inline def li: li = "li".asInstanceOf[li]
+  
+  @js.native
+  sealed trait light extends StObject
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
   sealed trait line extends StObject
@@ -1137,6 +1284,12 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait ltr
+    extends StObject
+       with TextDirection
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait magenta
@@ -1173,7 +1326,12 @@ object carbonComponentsReactStrings {
   inline def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait md extends StObject
+  sealed trait md
+    extends StObject
+       with ButtonSize
+       with DataTableSize
+       with FileUploaderSize
+       with ListBoxSize
   inline def md: md = "md".asInstanceOf[md]
   
   @js.native
@@ -1274,6 +1432,9 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
        with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
        with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
+       with ExcludedInheritedProps
+       with typings.carbonComponentsReact.expandableSearchExpandableSearchMod.ExcludedPropKeys
+       with ExcludedPropsKeys
   inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   
   @js.native
@@ -1288,16 +1449,21 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.radioButtonRadioButtonMod.ExcludedAttributes
        with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
        with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
-       with SelectedTileExcludedAttributes
+       with ExcludedInputPropKeys
+       with ExcludedListInputPropKeys
   inline def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
   sealed trait onClick
     extends StObject
+       with typings.carbonComponentsReact.checkboxCheckboxMod.ExcludedAttributes
        with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
        with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
        with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
-       with SelectedTileExcludedAttributes
+       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with ExcludedContentTabPropKeys
+       with ExcludedInputPropKeys
+       with ExcludedPropKeys
   inline def onClick: onClick = "onClick".asInstanceOf[onClick]
   
   @js.native
@@ -1310,6 +1476,9 @@ object carbonComponentsReactStrings {
   sealed trait onFocus
     extends StObject
        with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
+       with ExcludedInheritedProps
+       with typings.carbonComponentsReact.expandableSearchExpandableSearchMod.ExcludedPropKeys
+       with ExcludedPropsKeys
   inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
   
   @js.native
@@ -1319,7 +1488,10 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.radioTileRadioTileMod.ExcludedAttributes
        with typings.carbonComponentsReact.listBoxListBoxMod.ExcludedAttributes
        with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
-       with SelectedTileExcludedAttributes
+       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with ExcludedContentTabsPropsKeys
+       with ExcludedDialogPropKeys
+       with ExcludedPropKeys
   inline def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
   
   @js.native
@@ -1334,6 +1506,18 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
        with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
   inline def onKeyUp: onKeyUp = "onKeyUp".asInstanceOf[onKeyUp]
+  
+  @js.native
+  sealed trait onMouseEnter
+    extends StObject
+       with ExcludedPropKeys
+  inline def onMouseEnter: onMouseEnter = "onMouseEnter".asInstanceOf[onMouseEnter]
+  
+  @js.native
+  sealed trait onMouseLeave
+    extends StObject
+       with ExcludedPropKeys
+  inline def onMouseLeave: onMouseLeave = "onMouseLeave".asInstanceOf[onMouseLeave]
   
   @js.native
   sealed trait onMouseOut
@@ -1409,6 +1593,12 @@ object carbonComponentsReactStrings {
   inline def other: other = "other".asInstanceOf[other]
   
   @js.native
+  sealed trait outline
+    extends StObject
+       with TagTypeName
+  inline def outline: outline = "outline".asInstanceOf[outline]
+  
+  @js.native
   sealed trait output extends StObject
   inline def output: output = "output".asInstanceOf[output]
   
@@ -1435,13 +1625,6 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
-  
-  @js.native
-  sealed trait placeholder
-    extends StObject
-       with typings.carbonComponentsReact.searchSearchMod.ExcludedAttributes
-       with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
-  inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   
   @js.native
   sealed trait polite extends StObject
@@ -1522,9 +1705,12 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.headerMenuItemMod.ExcludedAttributes
        with typings.carbonComponentsReact.listBoxListBoxMod.ExcludedAttributes
        with typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.ExcludedAttributes
-       with typings.carbonComponentsReact.numberInputNumberInputMod.ExcludedAttributes
        with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
        with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
+       with ExcludedInputPropKeys
+       with ExcludedPropKeys
+       with typings.carbonComponentsReact.expandableSearchExpandableSearchMod.ExcludedPropKeys
+       with ExcludedProps
        with TabsProvidedPropKeys
   inline def ref: ref = "ref".asInstanceOf[ref]
   
@@ -1556,6 +1742,14 @@ object carbonComponentsReactStrings {
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
+  sealed trait `right-bottom` extends StObject
+  inline def `right-bottom`: `right-bottom` = "right-bottom".asInstanceOf[`right-bottom`]
+  
+  @js.native
+  sealed trait `right-top` extends StObject
+  inline def `right-top`: `right-top` = "right-top".asInstanceOf[`right-top`]
+  
+  @js.native
   sealed trait role
     extends StObject
        with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
@@ -1563,6 +1757,10 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
        with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
        with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with ExcludedContentPanelPropKeys
+       with ExcludedContentTabPropKeys
+       with ExcludedContentTabsPropsKeys
+       with ExcludedDialogPropKeys
   inline def role: role = "role".asInstanceOf[role]
   
   @js.native
@@ -1572,6 +1770,12 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait rt extends StObject
   inline def rt: rt = "rt".asInstanceOf[rt]
+  
+  @js.native
+  sealed trait rtl
+    extends StObject
+       with TextDirection
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait ruby extends StObject
@@ -1639,10 +1843,11 @@ object carbonComponentsReactStrings {
     extends StObject
        with typings.carbonComponentsReact.searchSearchMod.ExcludedAttributes
        with typings.carbonComponentsReact.selectSelectMod.ExcludedAttributes
+       with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
        with typings.carbonComponentsReact.propsMod.ExcludedAttributes
        with typings.carbonComponentsReact.datePickerInputDatePickerInputMod.ExcludedAttributes
-       with typings.carbonComponentsReact.numberInputNumberInputMod.ExcludedAttributes
        with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
+       with ExcludedInputPropKeys
   inline def size: size = "size".asInstanceOf[size]
   
   @js.native
@@ -1655,6 +1860,8 @@ object carbonComponentsReactStrings {
        with ButtonSize
        with CarbonInputSize
        with CarbonSize
+       with DataTableSize
+       with FileUploaderSize
        with ListBoxSize
   inline def sm: sm = "sm".asInstanceOf[sm]
   
@@ -1740,7 +1947,13 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.headerMenuItemMod.ExcludedAttributes
        with typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.ExcludedAttributes
        with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
-       with ExcludedListInputProps
+       with ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with ExcludedContentPanelPropKeys
+       with ExcludedContentTabPropKeys
+       with ExcludedDialogPropKeys
+       with ExcludedListInputPropKeys
+       with ExcludedPropKeys
        with TabsProvidedPropKeys
        with TreeViewProvidedProps
   inline def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
@@ -1823,7 +2036,8 @@ object carbonComponentsReactStrings {
   sealed trait title
     extends StObject
        with typings.carbonComponentsReact.headerMenuButtonMod.ExcludedAttributes
-       with typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.ExcludedAttributes
+       with ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
        with ExcludedDetailDivAttributes
   inline def title: title = "title".asInstanceOf[title]
   
@@ -1838,7 +2052,9 @@ object carbonComponentsReactStrings {
   inline def tooltipAlignment: tooltipAlignment = "tooltipAlignment".asInstanceOf[tooltipAlignment]
   
   @js.native
-  sealed trait tooltipPosition extends StObject
+  sealed trait tooltipPosition
+    extends StObject
+       with ExcludedProps
   inline def tooltipPosition: tooltipPosition = "tooltipPosition".asInstanceOf[tooltipPosition]
   
   @js.native
@@ -1851,6 +2067,14 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait `top-after-reopen` extends StObject
   inline def `top-after-reopen`: `top-after-reopen` = "top-after-reopen".asInstanceOf[`top-after-reopen`]
+  
+  @js.native
+  sealed trait `top-left` extends StObject
+  inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  
+  @js.native
+  sealed trait `top-right` extends StObject
+  inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
   sealed trait tr extends StObject
@@ -1880,7 +2104,11 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
        with typings.carbonComponentsReact.radioButtonRadioButtonMod.ExcludedAttributes
        with typings.carbonComponentsReact.tooltipIconTooltipIconMod.ExcludedAttributes
-       with ExcludedListInputProps
+       with ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with ExcludedContentTabPropKeys
+       with ExcludedListInputPropKeys
+       with ExcludedProps
   inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
@@ -1890,6 +2118,12 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait ul extends StObject
   inline def ul: ul = "ul".asInstanceOf[ul]
+  
+  @js.native
+  sealed trait up
+    extends StObject
+       with NumberInputArrowDirection
+  inline def up: up = "up".asInstanceOf[up]
   
   @js.native
   sealed trait uploading
@@ -1906,6 +2140,10 @@ object carbonComponentsReactStrings {
   inline def use: use = "use".asInstanceOf[use]
   
   @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
+  
+  @js.native
   sealed trait value
     extends StObject
        with typings.carbonComponentsReact.searchSearchMod.ExcludedAttributes
@@ -1913,7 +2151,7 @@ object carbonComponentsReactStrings {
        with typings.carbonComponentsReact.propsMod.ExcludedAttributes
        with typings.carbonComponentsReact.radioButtonRadioButtonMod.ExcludedAttributes
        with typings.carbonComponentsReact.textAreaTextAreaMod.ExcludedAttributes
-       with ExcludedListInputProps
+       with ExcludedListInputPropKeys
   inline def value: value = "value".asInstanceOf[value]
   
   @js.native
@@ -1963,6 +2201,7 @@ object carbonComponentsReactStrings {
     extends StObject
        with ButtonSize
        with CarbonInputSize
+       with DataTableSize
        with ListBoxSize
   inline def xl: xl = "xl".asInstanceOf[xl]
   
@@ -1974,6 +2213,7 @@ object carbonComponentsReactStrings {
   sealed trait xs
     extends StObject
        with CarbonSize
+       with DataTableSize
   inline def xs: xs = "xs".asInstanceOf[xs]
   
   @js.native

@@ -1,6 +1,5 @@
 package typings.sirenParser
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -143,7 +142,11 @@ object fieldMod {
     var `class`: js.UndefOr[js.Array[String]] = js.native
     
     def hasClass(cls: String): Boolean = js.native
-    def hasClass(cls: RegExp): Boolean = js.native
+    def hasClass(cls: js.RegExp): Boolean = js.native
+    
+    var max: js.UndefOr[Double] = js.native
+    
+    var min: js.UndefOr[Double] = js.native
     
     var name: String = js.native
     
@@ -151,6 +154,6 @@ object fieldMod {
     
     var `type`: js.UndefOr[FieldType] = js.native
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[Any] = js.native
   }
 }

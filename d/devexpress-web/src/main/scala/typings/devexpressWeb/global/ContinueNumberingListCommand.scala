@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ContinueNumberingListCommand")
 @js.native
-class ContinueNumberingListCommand ()
+open class ContinueNumberingListCommand ()
   extends StObject
      with typings.devexpressWeb.ContinueNumberingListCommand {
   

@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("logger", "Logger")
   @js.native
-  class Logger () extends StObject {
+  open class Logger () extends StObject {
     def this(logFilePath: String) = this()
     
     def debug(args: String*): String | `false` = js.native

@@ -14,14 +14,17 @@ trait AsymmetricDecryptResponse extends StObject {
     * computing the CRC32C checksum of AsymmetricDecryptResponse.plaintext and comparing your results to this field. Discard the response in case of non-matching checksum values, and
     * perform a limited number of retries. A persistent mismatch may indicate an issue in your computation of the CRC32C checksum. Note: This field is defined as int64 for reasons of
     * compatibility across different languages. However, it is a non-negative integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support
-    * this type. NOTE: This field is in Beta.
+    * this type.
     */
   var plaintextCrc32c: js.UndefOr[String] = js.undefined
+  
+  /** The ProtectionLevel of the CryptoKeyVersion used in decryption. */
+  var protectionLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Integrity verification field. A flag indicating whether AsymmetricDecryptRequest.ciphertext_crc32c was received by KeyManagementService and used for the integrity verification of
     * the ciphertext. A false value of this field indicates either that AsymmetricDecryptRequest.ciphertext_crc32c was left unset or that it was not delivered to KeyManagementService. If
-    * you've set AsymmetricDecryptRequest.ciphertext_crc32c but this field is still false, discard the response and perform a limited number of retries. NOTE: This field is in Beta.
+    * you've set AsymmetricDecryptRequest.ciphertext_crc32c but this field is still false, discard the response and perform a limited number of retries.
     */
   var verifiedCiphertextCrc32c: js.UndefOr[Boolean] = js.undefined
 }
@@ -41,6 +44,10 @@ object AsymmetricDecryptResponse {
     inline def setPlaintextCrc32cUndefined: Self = StObject.set(x, "plaintextCrc32c", js.undefined)
     
     inline def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
+    
+    inline def setProtectionLevel(value: String): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
+    
+    inline def setProtectionLevelUndefined: Self = StObject.set(x, "protectionLevel", js.undefined)
     
     inline def setVerifiedCiphertextCrc32c(value: Boolean): Self = StObject.set(x, "verifiedCiphertextCrc32c", value.asInstanceOf[js.Any])
     

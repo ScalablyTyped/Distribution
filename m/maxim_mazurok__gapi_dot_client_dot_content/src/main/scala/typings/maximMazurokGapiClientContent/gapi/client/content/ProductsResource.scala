@@ -2,12 +2,14 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientContent.anon.CallbackFeedId
-import typings.maximMazurokGapiClientContent.anon.CallbackFields
+import typings.maximMazurokGapiClientContent.anon.CallbackFieldsKeyOauthtoken
 import typings.maximMazurokGapiClientContent.anon.FeedId
 import typings.maximMazurokGapiClientContent.anon.FeedIdFields
-import typings.maximMazurokGapiClientContent.anon.Key
-import typings.maximMazurokGapiClientContent.anon.KeyOauthtokenPrettyPrint
+import typings.maximMazurokGapiClientContent.anon.PageToken
 import typings.maximMazurokGapiClientContent.anon.PrettyPrintProductId
+import typings.maximMazurokGapiClientContent.anon.ProductIdQuotaUser
+import typings.maximMazurokGapiClientContent.anon.QuotaUserUpdateMask
+import typings.maximMazurokGapiClientContent.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,8 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProductsResource extends StObject {
   
   /** Retrieves, inserts, and deletes multiple products in a single request. */
-  def custombatch(request: KeyOauthtokenPrettyPrint): Request[ProductsCustomBatchResponse] = js.native
-  def custombatch(request: Key, body: ProductsCustomBatchRequest): Request[ProductsCustomBatchResponse] = js.native
+  def custombatch(request: CallbackFieldsKeyOauthtoken): Request[ProductsCustomBatchResponse] = js.native
+  def custombatch(request: UploadType, body: ProductsCustomBatchRequest): Request[ProductsCustomBatchResponse] = js.native
   
   /** Deletes a product from your Merchant Center account. */
   def delete(): Request[Unit] = js.native
@@ -36,5 +38,9 @@ trait ProductsResource extends StObject {
     * to be requested.
     */
   def list(): Request[ProductsListResponse] = js.native
-  def list(request: CallbackFields): Request[ProductsListResponse] = js.native
+  def list(request: PageToken): Request[ProductsListResponse] = js.native
+  
+  /** Updates an existing product in your Merchant Center account. Only updates attributes provided in the request. */
+  def update(request: ProductIdQuotaUser): Request[Product] = js.native
+  def update(request: QuotaUserUpdateMask, body: Product): Request[Product] = js.native
 }

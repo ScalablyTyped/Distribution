@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDataAxisPointTuple")
 @js.native
-class ASPxClientDashboardItemDataAxisPointTuple ()
+open class ASPxClientDashboardItemDataAxisPointTuple ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDataAxisPointTuple

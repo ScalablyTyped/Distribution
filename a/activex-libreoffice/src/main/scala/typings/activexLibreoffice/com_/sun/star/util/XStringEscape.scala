@@ -36,7 +36,7 @@ object XStringEscape {
   inline def apply(
     acquire: () => Unit,
     escapeString: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     unescapeString: String => String
   ): XStringEscape = {

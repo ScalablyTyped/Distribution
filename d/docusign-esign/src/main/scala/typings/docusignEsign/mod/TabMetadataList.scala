@@ -25,6 +25,6 @@ object TabMetadataList {
     
     inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     
-    inline def setTabsVarargs(value: TabMetadata*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: TabMetadata*): Self = StObject.set(x, "tabs", js.Array(value*))
   }
 }

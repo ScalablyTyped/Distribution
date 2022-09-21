@@ -4,21 +4,18 @@
 Typings are for version 0.0
 
 ## Library description:
-RSocket TCP server
+This package is published from the rsocket-js monorepo.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rsocket-tcp-server |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 3 |
-| # downloads        | 64488 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 9921.666666666666 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/rsocket/rsocket-js#readme)
-- [Bugs](https://github.com/rsocket/rsocket-js/issues)
-- [Repository](https://github.com/rsocket/rsocket-js)
 - [Npm](https://www.npmjs.com/package/rsocket-tcp-server)
     
 

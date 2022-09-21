@@ -20,7 +20,7 @@ object validationChainMod {
        with ContextHandler[ValidationChain]
        with ContextRunner {
     
-    def apply(req: Request, res: js.Any, next: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def apply(req: Request, res: Any, next: js.Function1[/* error */ js.UndefOr[Any], Unit]): Unit = js.native
     
     var builder: ContextBuilder = js.native
   }

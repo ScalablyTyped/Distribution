@@ -37,7 +37,7 @@ trait ManagedPrefixList extends StObject {
   var PrefixListName: js.UndefOr[String] = js.undefined
   
   /**
-    * The state of the prefix list.
+    * The current state of the prefix list.
     */
   var State: js.UndefOr[PrefixListState] = js.undefined
   
@@ -101,7 +101,7 @@ object ManagedPrefixList {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVersion(value: Long): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     

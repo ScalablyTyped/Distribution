@@ -147,6 +147,6 @@ object IUser {
     
     inline def setWork(value: js.Array[IWorkInfo]): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
     
-    inline def setWorkVarargs(value: IWorkInfo*): Self = StObject.set(x, "work", js.Array(value :_*))
+    inline def setWorkVarargs(value: IWorkInfo*): Self = StObject.set(x, "work", js.Array(value*))
   }
 }

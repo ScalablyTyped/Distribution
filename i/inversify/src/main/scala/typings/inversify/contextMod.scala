@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object contextMod {
   
-  @JSImport("inversify/dts/planning/context", "Context")
+  @JSImport("inversify/lib/planning/context", "Context")
   @js.native
-  class Context protected ()
+  open class Context protected ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.Context {
     def this(container: Container) = this()

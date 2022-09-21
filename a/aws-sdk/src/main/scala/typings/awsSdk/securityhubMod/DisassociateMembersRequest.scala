@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociateMembersRequest extends StObject {
   
   /**
-    * The account IDs of the member accounts to disassociate from the master account.
+    * The account IDs of the member accounts to disassociate from the administrator account.
     */
-  var AccountIds: js.UndefOr[AccountIdList] = js.undefined
+  var AccountIds: AccountIdList
 }
 object DisassociateMembersRequest {
   
-  inline def apply(): DisassociateMembersRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(AccountIds: AccountIdList): DisassociateMembersRequest = {
+    val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateMembersRequest]
   }
   
@@ -22,8 +22,6 @@ object DisassociateMembersRequest {
     
     inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
-    
-    inline def setAccountIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "AccountIds", js.Array(value*))
   }
 }

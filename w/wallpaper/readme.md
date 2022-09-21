@@ -1,7 +1,7 @@
 
 # Scala.js typings for wallpaper
 
-Typings are for version 4.4.1
+Typings are for version 6.1.1
 
 ## Library description:
 Manage the desktop wallpaper
@@ -11,9 +11,9 @@ Manage the desktop wallpaper
 | Full name          | wallpaper |
 | Keywords           | macos, linux, windows, wallpaper, desktop, background, image, picture, photo |
 | # releases         | 6 |
-| # dependents       | 172 |
-| # downloads        | 12382 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 4129.333333333333 |
+| # stars            | 892.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/wallpaper#readme)

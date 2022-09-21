@@ -10,10 +10,10 @@ Unabashedly-barebones memoization library with an aim toward speed
 | ------------------ | :-------------: |
 | Full name          | memize |
 | Keywords           | memoize, memoization, memoisation, cache |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 1045528 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 140652.33333333334 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/aduth/memize#readme)

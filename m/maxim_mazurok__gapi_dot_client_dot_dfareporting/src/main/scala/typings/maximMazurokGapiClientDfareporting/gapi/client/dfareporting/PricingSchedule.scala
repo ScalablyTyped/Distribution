@@ -56,7 +56,7 @@ object PricingSchedule {
     
     inline def setPricingPeriodsUndefined: Self = StObject.set(x, "pricingPeriods", js.undefined)
     
-    inline def setPricingPeriodsVarargs(value: PricingSchedulePricingPeriod*): Self = StObject.set(x, "pricingPeriods", js.Array(value :_*))
+    inline def setPricingPeriodsVarargs(value: PricingSchedulePricingPeriod*): Self = StObject.set(x, "pricingPeriods", js.Array(value*))
     
     inline def setPricingType(value: String): Self = StObject.set(x, "pricingType", value.asInstanceOf[js.Any])
     

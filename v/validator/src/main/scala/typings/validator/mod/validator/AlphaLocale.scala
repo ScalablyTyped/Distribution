@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.`da-DK`
   - typings.validator.validatorStrings.`de-DE`
   - typings.validator.validatorStrings.`el-GR`
+  - typings.validator.validatorStrings.`es-AR`
   - typings.validator.validatorStrings.`es-ES`
   - typings.validator.validatorStrings.`fr-FR`
   - typings.validator.validatorStrings.`it-IT`
@@ -124,6 +125,8 @@ object AlphaLocale {
   inline def `en-ZA`: typings.validator.validatorStrings.`en-ZA` = "en-ZA".asInstanceOf[typings.validator.validatorStrings.`en-ZA`]
   
   inline def `en-ZM`: typings.validator.validatorStrings.`en-ZM` = "en-ZM".asInstanceOf[typings.validator.validatorStrings.`en-ZM`]
+  
+  inline def `es-AR`: typings.validator.validatorStrings.`es-AR` = "es-AR".asInstanceOf[typings.validator.validatorStrings.`es-AR`]
   
   inline def `es-ES`: typings.validator.validatorStrings.`es-ES` = "es-ES".asInstanceOf[typings.validator.validatorStrings.`es-ES`]
   

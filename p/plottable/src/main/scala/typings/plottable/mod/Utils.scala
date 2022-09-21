@@ -2,8 +2,8 @@ package typings.plottable.mod
 
 import typings.d3Selection.mod.Selection_
 import typings.lodash.mod.MemoizedFunction
-import typings.plottable.anon.Left
 import typings.plottable.anon.MaximumExtents
+import typings.plottable.anon.PickSVGRectxywidthheight
 import typings.plottable.entityStoreMod.IPositionedEntity
 import typings.plottable.interfacesMod.Bounds
 import typings.plottable.interfacesMod.IAccessor
@@ -27,7 +27,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Partial
 import typings.std.Record
-import typings.std.SVGRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,14 +55,14 @@ object Utils {
   
   @JSImport("plottable", "Utils.Bucket")
   @js.native
-  class Bucket protected ()
+  open class Bucket protected ()
     extends typings.plottable.utilsMod.Bucket {
     def this(index: Double, xValue: Double, yValue: Double) = this()
   }
   
   @JSImport("plottable", "Utils.CallbackSet")
   @js.native
-  class CallbackSet[CB /* <: js.Function */] ()
+  open class CallbackSet[CB /* <: js.Function */] ()
     extends typings.plottable.utilsMod.CallbackSet[CB]
   
   object Color {
@@ -72,7 +71,7 @@ object Utils {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def colorTest(colorTester: SimpleSelection[js.Any], className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("colorTest")(colorTester.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def colorTest(colorTester: SimpleSelection[Any], className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("colorTest")(colorTester.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def contrast(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("contrast")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
@@ -96,48 +95,48 @@ object Utils {
     
     inline def contains(parent: Element, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def elementBBox(element: SimpleSelection[js.Any]): SVGRect = ^.asInstanceOf[js.Dynamic].applyDynamic("elementBBox")(element.asInstanceOf[js.Any]).asInstanceOf[SVGRect]
+    inline def elementBBox(element: SimpleSelection[Any]): PickSVGRectxywidthheight = ^.asInstanceOf[js.Dynamic].applyDynamic("elementBBox")(element.asInstanceOf[js.Any]).asInstanceOf[PickSVGRectxywidthheight]
     
-    inline def elementHeight(elementOrSelection: Selection_[Element, js.Any, js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementHeight")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def elementHeight(elementOrSelection: Selection_[Element, Any, Any, Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementHeight")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def elementHeight(elementOrSelection: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementHeight")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def elementWidth(elementOrSelection: Selection_[Element, js.Any, js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementWidth")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def elementWidth(elementOrSelection: Selection_[Element, Any, Any, Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementWidth")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def elementWidth(elementOrSelection: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementWidth")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def entityBounds(element: Element): IEntityBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("entityBounds")(element.asInstanceOf[js.Any]).asInstanceOf[IEntityBounds]
     
-    inline def expandRect(rect: ClientRect, amount: Double): Left = (^.asInstanceOf[js.Dynamic].applyDynamic("expandRect")(rect.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Left]
+    inline def expandRect(rect: ClientRect, amount: Double): ClientRect = (^.asInstanceOf[js.Dynamic].applyDynamic("expandRect")(rect.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[ClientRect]
     
     inline def getElementTransform(elem: Element): ICssTransformMatrix | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementTransform")(elem.asInstanceOf[js.Any]).asInstanceOf[ICssTransformMatrix | Null]
     
     inline def getHtmlElementAncestors(elem: Element): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHtmlElementAncestors")(elem.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
     
-    inline def getRotate(el: SimpleSelection[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRotate")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getRotate(el: SimpleSelection[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRotate")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def getScaleValues(el: SimpleSelection[js.Any]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScaleValues")(el.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+    inline def getScaleValues(el: SimpleSelection[Any]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScaleValues")(el.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
     
-    inline def getTranslateValues(el: SimpleSelection[js.Any]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslateValues")(el.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+    inline def getTranslateValues(el: SimpleSelection[Any]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslateValues")(el.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
     
-    inline def intersectsBBox(xValOrRange: Double, yValOrRange: Double, bbox: SVGRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def intersectsBBox(xValOrRange: Double, yValOrRange: Double, bbox: SVGRect, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def intersectsBBox(xValOrRange: Double, yValOrRange: Range, bbox: SVGRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def intersectsBBox(xValOrRange: Double, yValOrRange: Range, bbox: SVGRect, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def intersectsBBox(xValOrRange: Range, yValOrRange: Double, bbox: SVGRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def intersectsBBox(xValOrRange: Range, yValOrRange: Double, bbox: SVGRect, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def intersectsBBox(xValOrRange: Range, yValOrRange: Range, bbox: SVGRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def intersectsBBox(xValOrRange: Range, yValOrRange: Range, bbox: SVGRect, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersectsBBox(xValOrRange: Double, yValOrRange: Double, bbox: PickSVGRectxywidthheight): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersectsBBox(xValOrRange: Double, yValOrRange: Double, bbox: PickSVGRectxywidthheight, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersectsBBox(xValOrRange: Double, yValOrRange: Range, bbox: PickSVGRectxywidthheight): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersectsBBox(xValOrRange: Double, yValOrRange: Range, bbox: PickSVGRectxywidthheight, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersectsBBox(xValOrRange: Range, yValOrRange: Double, bbox: PickSVGRectxywidthheight): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersectsBBox(xValOrRange: Range, yValOrRange: Double, bbox: PickSVGRectxywidthheight, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersectsBBox(xValOrRange: Range, yValOrRange: Range, bbox: PickSVGRectxywidthheight): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def intersectsBBox(xValOrRange: Range, yValOrRange: Range, bbox: PickSVGRectxywidthheight, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def requestAnimationFramePolyfill(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimationFramePolyfill")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("plottable", "Utils.EntityStore")
   @js.native
-  class EntityStore[T /* <: IPositionedEntity */] ()
+  open class EntityStore[T /* <: IPositionedEntity */] ()
     extends typings.plottable.utilsMod.EntityStore[T]
   
   @JSImport("plottable", "Utils.Map")
   @js.native
-  class Map[K, V] ()
+  open class Map[K, V] ()
     extends typings.plottable.utilsMod.Map[K, V]
   
   object Math {
@@ -171,9 +170,9 @@ object Utils {
     
     inline def invertMatrix(a: ICssTransformMatrix): ICssTransformMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("invertMatrix")(a.asInstanceOf[js.Any]).asInstanceOf[ICssTransformMatrix]
     
-    inline def isNaN(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNaN(n: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isValidNumber(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValidNumber(n: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def max[C](array: js.Array[C], defaultValue: C): C = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(array.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[C]
     inline def max[T, C](
@@ -223,7 +222,7 @@ object Utils {
     
     @JSImport("plottable", "Utils.RTree.RTree")
     @js.native
-    class RTree[T] ()
+    open class RTree[T] ()
       extends typings.plottable.utilsMod.RTree.RTree[T] {
       def this(maxNodeChildren: Double) = this()
       def this(maxNodeChildren: Double, splitStrategy: IRTreeSplitStrategy) = this()
@@ -232,7 +231,7 @@ object Utils {
     
     @JSImport("plottable", "Utils.RTree.RTreeBounds")
     @js.native
-    class RTreeBounds protected ()
+    open class RTreeBounds protected ()
       extends typings.plottable.utilsMod.RTree.RTreeBounds {
       def this(xl: Double, yl: Double, xh: Double, yh: Double) = this()
     }
@@ -323,7 +322,7 @@ object Utils {
     
     @JSImport("plottable", "Utils.RTree.RTreeNode")
     @js.native
-    class RTreeNode[T] protected ()
+    open class RTreeNode[T] protected ()
       extends typings.plottable.utilsMod.RTree.RTreeNode[T] {
       def this(leaf: Boolean) = this()
     }
@@ -352,7 +351,7 @@ object Utils {
   
   @JSImport("plottable", "Utils.Set")
   @js.native
-  class Set[T] ()
+  open class Set[T] ()
     extends typings.plottable.utilsMod.Set[T]
   
   object Stacking {
@@ -380,28 +379,28 @@ object Utils {
     
     @JSImport("plottable", "Utils.Stacking.normalizeKey")
     @js.native
-    val normalizeKey: (js.Function1[/* key */ js.Any, String]) & MemoizedFunction = js.native
+    val normalizeKey: (js.Function1[/* key */ Any, String]) & MemoizedFunction = js.native
     
     inline def stack(
       datasets: js.Array[typings.plottable.datasetMod.Dataset],
-      keyAccessor: IAccessor[js.Any],
+      keyAccessor: IAccessor[Any],
       valueAccessor: IAccessor[Double]
     ): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
     inline def stack(
       datasets: js.Array[typings.plottable.datasetMod.Dataset],
-      keyAccessor: IAccessor[js.Any],
+      keyAccessor: IAccessor[Any],
       valueAccessor: IAccessor[Double],
       stackingOrder: IStackingOrder
     ): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any], stackingOrder.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
     
-    inline def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[js.Any], filter: IAccessor[Boolean]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtent")(stackingResult.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[Any], filter: IAccessor[Boolean]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtent")(stackingResult.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     inline def stackedExtents[D](stackingResult: GenericStackingResult[D]): MaximumExtents[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtents")(stackingResult.asInstanceOf[js.Any]).asInstanceOf[MaximumExtents[D]]
   }
   
   @JSImport("plottable", "Utils.Translator")
   @js.native
-  class Translator protected ()
+  open class Translator protected ()
     extends typings.plottable.utilsMod.Translator {
     def this(_rootElement: HTMLElement) = this()
   }
@@ -425,19 +424,19 @@ object Utils {
     val ^ : js.Any = js.native
     
     inline def debounce[T /* <: js.Function */](msec: Double, callback: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(msec.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def debounce[T /* <: js.Function */](msec: Double, callback: T, context: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(msec.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def debounce[T /* <: js.Function */](msec: Double, callback: T, context: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(msec.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
     
     inline def deprecated(callingMethod: String, version: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(callingMethod.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def deprecated(callingMethod: String, version: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(callingMethod.asInstanceOf[js.Any], version.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setTimeout(f: js.Function, time: Double, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(f.asInstanceOf[js.Any], time.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def setTimeout(f: js.Function, time: Double, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((List(f.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
     
     inline def warn(warning: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(warning.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  inline def assign[T /* <: Record[js.Any, js.Any] */](objs: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(objs.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def assign[T /* <: Record[Any, Any] */](objs: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(objs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
   
-  inline def coerceExternalD3[S /* <: Selection_[js.Any, js.Any, js.Any, js.Any] */](externalD3Selection: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceExternalD3")(externalD3Selection.asInstanceOf[js.Any]).asInstanceOf[S]
+  inline def coerceExternalD3[S /* <: Selection_[Any, Any, Any, Any] */](externalD3Selection: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceExternalD3")(externalD3Selection.asInstanceOf[js.Any]).asInstanceOf[S]
   
   inline def getTranslator(component: typings.plottable.componentMod.Component): typings.plottable.transformAwareTranslatorMod.Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslator")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.transformAwareTranslatorMod.Translator]
 }

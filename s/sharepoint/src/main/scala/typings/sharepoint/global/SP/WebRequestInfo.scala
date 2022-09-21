@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.WebRequestInfo")
 @js.native
-class WebRequestInfo ()
+open class WebRequestInfo ()
   extends StObject
      with typings.sharepoint.SP.WebRequestInfo {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -20,13 +20,13 @@ class WebRequestInfo ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_body(): String = js.native
   
   /* CompleteClass */
-  override def get_headers(): js.Any = js.native
+  override def get_headers(): Any = js.native
   
   /* CompleteClass */
   override def get_method(): String = js.native
@@ -41,7 +41,7 @@ class WebRequestInfo ()
   override def set_body(value: String): Unit = js.native
   
   /* CompleteClass */
-  override def set_headers(value: js.Any): Unit = js.native
+  override def set_headers(value: Any): Unit = js.native
   
   /* CompleteClass */
   override def set_method(value: String): Unit = js.native

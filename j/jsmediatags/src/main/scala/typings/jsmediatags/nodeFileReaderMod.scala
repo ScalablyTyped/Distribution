@@ -8,7 +8,7 @@ object nodeFileReaderMod {
   
   @JSImport("jsmediatags/build2/NodeFileReader", JSImport.Default)
   @js.native
-  class default protected () extends NodeFileReader {
+  open class default protected () extends NodeFileReader {
     def this(path: String) = this()
   }
   /* static members */
@@ -18,7 +18,7 @@ object nodeFileReaderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def canReadFile(file: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @js.native

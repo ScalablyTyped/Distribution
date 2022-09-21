@@ -25,12 +25,12 @@ object DateRangeValues {
     
     inline def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
     
-    inline def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
+    inline def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value*))
     
     inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

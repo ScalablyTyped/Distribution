@@ -10,10 +10,10 @@ HMAC-based (HOTP) and Time-based (TOTP) One-Time Password library
 | ------------------ | :-------------: |
 | Full name          | otplib |
 | Keywords           | totp, hotp, otp, authenticator, one time password, google authenticator, authentication, 2FA, 2 factor, node, browser |
-| # releases         | 13 |
-| # dependents       | 86 |
-| # downloads        | 2968246 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 808737.3333333334 |
+| # stars            | 1403.0 |
 
 ## Links
 - [Homepage](https://github.com/yeojz/otplib#readme)

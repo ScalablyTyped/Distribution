@@ -11,9 +11,9 @@ Drag and drop so simple it hurts
 | Full name          | react-dragula |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 662380 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 115065.33333333333 |
+| # stars            | 971.0 |
 
 ## Links
 - [Homepage](https://github.com/bevacqua/react-dragula)

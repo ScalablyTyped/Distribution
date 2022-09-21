@@ -38,7 +38,7 @@ trait KmlScreenOverlay extends StObject {
   def getVisible(): Boolean = js.native
   
   /** Optional property to store any additional metadata for this overlay. */
-  var metadata: js.Any = js.native
+  var metadata: Any = js.native
   
   /**
     * Updates the html element of this screen overlay.

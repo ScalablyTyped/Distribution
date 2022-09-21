@@ -16,7 +16,7 @@ object updateKeyDescriptionCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/UpdateKeyDescriptionCommand", "UpdateKeyDescriptionCommand")
   @js.native
-  class UpdateKeyDescriptionCommand protected ()
+  open class UpdateKeyDescriptionCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateKeyDescriptionCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateKeyDescriptionInput, UpdateKeyDescriptionOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[UpdateKeyDescriptionInput, UpdateKeyDescriptionOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateKeyDescriptionInput, UpdateKeyDescriptionOutput] = js.native
   }
 }

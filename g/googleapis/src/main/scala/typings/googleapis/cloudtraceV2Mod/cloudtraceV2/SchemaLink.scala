@@ -4,34 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A pointer from the current span to another span in the same trace or in a
-  * different trace. For example, this can be used in batching operations,
-  * where a single batch handler processes multiple requests from different
-  * traces or when the handler receives a request from a different project.
-  */
 trait SchemaLink extends StObject {
   
   /**
-    * A set of attributes on the link. You have have up to  32 attributes per
-    * link.
+    * A set of attributes on the link. Up to 32 attributes can be specified per link.
     */
   var attributes: js.UndefOr[SchemaAttributes] = js.undefined
   
   /**
-    * The [SPAN_ID] for a span within a trace.
+    * The `[SPAN_ID]` for a span within a trace.
     */
-  var spanId: js.UndefOr[String] = js.undefined
+  var spanId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The [TRACE_ID] for a trace within a project.
+    * The `[TRACE_ID]` for a trace within a project.
     */
-  var traceId: js.UndefOr[String] = js.undefined
+  var traceId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The relationship of the current span relative to the linked span.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLink {
   
@@ -48,13 +41,19 @@ object SchemaLink {
     
     inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
     
+    inline def setSpanIdNull: Self = StObject.set(x, "spanId", null)
+    
     inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
     inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
     
+    inline def setTraceIdNull: Self = StObject.set(x, "traceId", null)
+    
     inline def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

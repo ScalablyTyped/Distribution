@@ -1,6 +1,7 @@
 package typings.tabris.anon
 
 import typings.tabris.mod.ListenersKeysOf
+import typings.tabris.tabrisStrings.Asterisk
 import typings.tabris.tabrisStrings.default
 import typings.tabris.tabrisStrings.strict
 import typings.tabris.tabrisStrings.update
@@ -12,7 +13,7 @@ trait `29`[Target] extends StObject {
   
   var mode: js.UndefOr[default | strict] = js.undefined
   
-  var trigger: js.UndefOr[ListenersKeysOf[Target] | update | js.Symbol] = js.undefined
+  var trigger: js.UndefOr[ListenersKeysOf[Target] | update | Asterisk | js.Symbol] = js.undefined
 }
 object `29` {
   
@@ -27,7 +28,7 @@ object `29` {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setTrigger(value: ListenersKeysOf[Target] | update | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: ListenersKeysOf[Target] | update | Asterisk | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }

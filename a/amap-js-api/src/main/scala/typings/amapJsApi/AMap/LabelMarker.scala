@@ -141,7 +141,7 @@ object LabelMarker {
       
       inline def setClipOriginUndefined: Self = StObject.set(x, "clipOrigin", js.undefined)
       
-      inline def setClipOriginVarargs(value: Double*): Self = StObject.set(x, "clipOrigin", js.Array(value :_*))
+      inline def setClipOriginVarargs(value: Double*): Self = StObject.set(x, "clipOrigin", js.Array(value*))
       
       inline def setClipSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "clipSize", value.asInstanceOf[js.Any])
       
@@ -159,7 +159,7 @@ object LabelMarker {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DOMRectInit extends StObject {
   
+  /* standard dom */
   var height: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var width: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var x: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var y: js.UndefOr[Double] = js.undefined
 }
 object DOMRectInit {

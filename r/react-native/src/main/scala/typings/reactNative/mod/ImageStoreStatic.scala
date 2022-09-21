@@ -20,7 +20,7 @@ trait ImageStoreStatic extends StObject {
   def addImageFromBase64(
     base64ImageData: String,
     success: js.Function1[/* uri */ String, Unit],
-    failure: js.Function1[/* error */ js.Any, Unit]
+    failure: js.Function1[/* error */ Any, Unit]
   ): Unit
   
   /**
@@ -37,7 +37,7 @@ trait ImageStoreStatic extends StObject {
   def getBase64ForTag(
     uri: String,
     success: js.Function1[/* base64ImageData */ String, Unit],
-    failure: js.Function1[/* error */ js.Any, Unit]
+    failure: js.Function1[/* error */ Any, Unit]
   ): Unit
   
   /**
@@ -59,8 +59,8 @@ trait ImageStoreStatic extends StObject {
 object ImageStoreStatic {
   
   inline def apply(
-    addImageFromBase64: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit,
-    getBase64ForTag: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit,
+    addImageFromBase64: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ Any, Unit]) => Unit,
+    getBase64ForTag: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ Any, Unit]) => Unit,
     hasImageForTag: (String, js.Function1[/* hasImage */ Boolean, Unit]) => Unit,
     removeImageForTag: String => Unit
   ): ImageStoreStatic = {
@@ -70,12 +70,10 @@ object ImageStoreStatic {
   
   extension [Self <: ImageStoreStatic](x: Self) {
     
-    inline def setAddImageFromBase64(
-      value: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit
-    ): Self = StObject.set(x, "addImageFromBase64", js.Any.fromFunction3(value))
+    inline def setAddImageFromBase64(value: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ Any, Unit]) => Unit): Self = StObject.set(x, "addImageFromBase64", js.Any.fromFunction3(value))
     
     inline def setGetBase64ForTag(
-      value: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit
+      value: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ Any, Unit]) => Unit
     ): Self = StObject.set(x, "getBase64ForTag", js.Any.fromFunction3(value))
     
     inline def setHasImageForTag(value: (String, js.Function1[/* hasImage */ Boolean, Unit]) => Unit): Self = StObject.set(x, "hasImageForTag", js.Any.fromFunction2(value))

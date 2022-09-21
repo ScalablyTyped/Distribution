@@ -12,8 +12,7 @@ trait SchemaTargetingValue extends StObject {
   var creativeSizeValue: js.UndefOr[SchemaTargetingValueCreativeSize] = js.undefined
   
   /**
-    * The daypart targeting to include / exclude. Filled in when the key is
-    * GOOG_DAYPART_TARGETING.
+    * The daypart targeting to include / exclude. Filled in when the key is GOOG_DAYPART_TARGETING.
     */
   var dayPartTargetingValue: js.UndefOr[SchemaTargetingValueDayPartTargeting] = js.undefined
   
@@ -24,12 +23,14 @@ trait SchemaTargetingValue extends StObject {
   /**
     * The long value to exclude/include.
     */
-  var longValue: js.UndefOr[String] = js.undefined
+  var longValue: js.UndefOr[String | Null] = js.undefined
+  
+  var requestPlatformTargetingValue: js.UndefOr[SchemaTargetingValueRequestPlatformTargeting] = js.undefined
   
   /**
     * The string value to exclude/include.
     */
-  var stringValue: js.UndefOr[String] = js.undefined
+  var stringValue: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTargetingValue {
   
@@ -58,9 +59,17 @@ object SchemaTargetingValue {
     
     inline def setLongValue(value: String): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
     
+    inline def setLongValueNull: Self = StObject.set(x, "longValue", null)
+    
     inline def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
     
+    inline def setRequestPlatformTargetingValue(value: SchemaTargetingValueRequestPlatformTargeting): Self = StObject.set(x, "requestPlatformTargetingValue", value.asInstanceOf[js.Any])
+    
+    inline def setRequestPlatformTargetingValueUndefined: Self = StObject.set(x, "requestPlatformTargetingValue", js.undefined)
+    
     inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    
+    inline def setStringValueNull: Self = StObject.set(x, "stringValue", null)
     
     inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }

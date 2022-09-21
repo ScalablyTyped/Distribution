@@ -16,14 +16,14 @@ object mod {
   @JSImport("boom", JSImport.Namespace)
   @js.native
   /** Creates a new Boom object using the provided message and then calling boomify() to decorate the error with the Boom properties. */
-  class ^[Data] ()
+  open class ^[Data] ()
     extends StObject
        with Boom[Data] {
     def this(message: String) = this()
-    def this(message: Error) = this()
+    def this(message: js.Error) = this()
     def this(message: String, options: Options[Data]) = this()
+    def this(message: js.Error, options: Options[Data]) = this()
     def this(message: Unit, options: Options[Data]) = this()
-    def this(message: Error, options: Options[Data]) = this()
     
     /** https://github.com/hapijs/boom#createstatuscode-message-data and https://github.com/hapijs/boom/blob/v4.3.0/lib/index.js#L99 */
     /* CompleteClass */
@@ -37,9 +37,11 @@ object mod {
     /* CompleteClass */
     var isServer: Boolean = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -53,7 +55,7 @@ object mod {
     
     /** typeof - the constructor used to create the error (e.g. Boom.badRequest). */
     /* CompleteClass */
-    override def typeof(): js.Any = js.native
+    override def typeof(): Any = js.native
   }
   @JSImport("boom", JSImport.Namespace)
   @js.native
@@ -112,8 +114,8 @@ object mod {
     * @param options optional additional options
     * @see {@link https://github.com/hapijs/boom#boomifyerror-options}
     */
-  inline def boomify(error: Error): Boom[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(error.asInstanceOf[js.Any]).asInstanceOf[Boom[Null]]
-  inline def boomify(error: Error, options: Message): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
+  inline def boomify(error: js.Error): Boom[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(error.asInstanceOf[js.Any]).asInstanceOf[Boom[Null]]
+  inline def boomify(error: js.Error, options: Message): Boom[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boom[Null]]
   
   /**
     * Returns a 408 Request Time-out error
@@ -219,7 +221,7 @@ object mod {
     * Identifies whether an error is a Boom object. Same as calling instanceof Boom.
     * @param error the error object to identify.
     */
-  inline def isBoom(error: Error): /* is boom.boom.Boom<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(error.asInstanceOf[js.Any]).asInstanceOf[/* is boom.boom.Boom<any> */ Boolean]
+  inline def isBoom(error: js.Error): /* is boom.boom.Boom<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(error.asInstanceOf[js.Any]).asInstanceOf[/* is boom.boom.Boom<any> */ Boolean]
   
   /**
     * Returns a 411 Length Required error
@@ -484,7 +486,7 @@ object mod {
     def reformat(): String
     
     /** typeof - the constructor used to create the error (e.g. Boom.badRequest). */
-    def typeof(): js.Any
+    def typeof(): Any
   }
   object Boom {
     
@@ -496,7 +498,7 @@ object mod {
       name: String,
       output: Output,
       reformat: () => String,
-      typeof: () => js.Any
+      typeof: () => Any
     ): Boom[Data] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isBoom = isBoom.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], reformat = js.Any.fromFunction0(reformat), typeof = js.Any.fromFunction0(typeof))
       __obj.asInstanceOf[Boom[Data]]
@@ -518,14 +520,14 @@ object mod {
       
       inline def setReformat(value: () => String): Self = StObject.set(x, "reformat", js.Any.fromFunction0(value))
       
-      inline def setTypeof(value: () => js.Any): Self = StObject.set(x, "typeof", js.Any.fromFunction0(value))
+      inline def setTypeof(value: () => Any): Self = StObject.set(x, "typeof", js.Any.fromFunction0(value))
     }
   }
   
   trait Options[Data] extends StObject {
     
     /** ctor - constructor reference used to crop the exception call stack output. */
-    var ctor: js.UndefOr[js.Any] = js.undefined
+    var ctor: js.UndefOr[Any] = js.undefined
     
     /** data - additional error information (assigned to error.data). */
     var data: js.UndefOr[Data] = js.undefined
@@ -555,7 +557,7 @@ object mod {
     
     extension [Self <: Options[?], Data](x: Self & Options[Data]) {
       
-      inline def setCtor(value: js.Any): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
+      inline def setCtor(value: Any): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
       
       inline def setCtorUndefined: Self = StObject.set(x, "ctor", js.undefined)
       
@@ -623,7 +625,7 @@ object mod {
       * "Every key/value pair will be included ... in the response payload under the attributes key."
       * [see docs](https://github.com/hapijs/boom#boomunauthorizedmessage-scheme-attributes)
       */
-    var attributes: js.UndefOr[js.Any] = js.undefined
+    var attributes: js.UndefOr[Any] = js.undefined
     
     /** error - the HTTP status message (e.g. 'Bad Request', 'Internal Server Error') derived from statusCode. */
     var error: String
@@ -643,7 +645,7 @@ object mod {
     
     extension [Self <: Payload](x: Self) {
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       

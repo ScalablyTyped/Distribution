@@ -22,6 +22,6 @@ object PartitionValueList {
     
     inline def setValues(value: ValueStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: ValueString*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ValueString*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

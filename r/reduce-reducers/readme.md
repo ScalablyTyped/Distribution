@@ -10,10 +10,10 @@ Reduce multiple reducers into a single reducer
 | ------------------ | :-------------: |
 | Full name          | reduce-reducers |
 | Keywords           | reduce, reducers, redux |
-| # releases         | 6 |
-| # dependents       | 88 |
-| # downloads        | 17626958 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1623562.6666666667 |
+| # stars            | 783.0 |
 
 ## Links
 - [Homepage](https://github.com/redux-utilities/reduce-reducers#readme)

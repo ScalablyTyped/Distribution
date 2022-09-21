@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeUpdateRequest extends StObject {
   
   /**
+    * The name of the add-on. The name must match one of the names returned by  ListAddons . This parameter is required if the update is an add-on update.
+    */
+  var addonName: js.UndefOr[String] = js.undefined
+  
+  /**
     * The name of the Amazon EKS cluster associated with the update.
     */
   var name: String
   
   /**
-    * The name of the Amazon EKS node group associated with the update.
+    * The name of the Amazon EKS node group associated with the update. This parameter is required if the update is a node group update.
     */
   var nodegroupName: js.UndefOr[String] = js.undefined
   
@@ -29,6 +34,10 @@ object DescribeUpdateRequest {
   }
   
   extension [Self <: DescribeUpdateRequest](x: Self) {
+    
+    inline def setAddonName(value: String): Self = StObject.set(x, "addonName", value.asInstanceOf[js.Any])
+    
+    inline def setAddonNameUndefined: Self = StObject.set(x, "addonName", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

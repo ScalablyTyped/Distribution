@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BarcodeScanner extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statusupdated(
     `type`: statusupdated,
@@ -52,7 +52,7 @@ trait BarcodeScanner extends StObject {
     * Gets the symbologies supported by the claimed barcode scanner.
     * @return When the method completes successfully, it returns a list of values that represent the symbologies supported by the device.
     */
-  def getSupportedSymbologiesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getSupportedSymbologiesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Determines whether the profile is supported.
@@ -74,7 +74,7 @@ trait BarcodeScanner extends StObject {
   @JSName("onstatusupdated")
   var onstatusupdated_Original: TypedEventHandler[BarcodeScanner, BarcodeScannerStatusUpdatedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(
     `type`: statusupdated,

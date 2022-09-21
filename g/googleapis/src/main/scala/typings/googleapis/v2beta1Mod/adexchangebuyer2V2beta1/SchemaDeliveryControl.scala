@@ -4,23 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message contains details about how the deals will be paced.
-  */
 trait SchemaDeliveryControl extends StObject {
   
   /**
-    * Specified the creative blocking levels to be applied. @OutputOnly
+    * Output only. Specified the creative blocking levels to be applied.
     */
-  var creativeBlockingLevel: js.UndefOr[String] = js.undefined
+  var creativeBlockingLevel: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies how the impression delivery will be paced. @OutputOnly
+    * Output only. Specifies how the impression delivery will be paced.
     */
-  var deliveryRateType: js.UndefOr[String] = js.undefined
+  var deliveryRateType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies any frequency caps. @OutputOnly
+    * Output only. Specifies any frequency caps.
     */
   var frequencyCaps: js.UndefOr[js.Array[SchemaFrequencyCap]] = js.undefined
 }
@@ -35,9 +32,13 @@ object SchemaDeliveryControl {
     
     inline def setCreativeBlockingLevel(value: String): Self = StObject.set(x, "creativeBlockingLevel", value.asInstanceOf[js.Any])
     
+    inline def setCreativeBlockingLevelNull: Self = StObject.set(x, "creativeBlockingLevel", null)
+    
     inline def setCreativeBlockingLevelUndefined: Self = StObject.set(x, "creativeBlockingLevel", js.undefined)
     
     inline def setDeliveryRateType(value: String): Self = StObject.set(x, "deliveryRateType", value.asInstanceOf[js.Any])
+    
+    inline def setDeliveryRateTypeNull: Self = StObject.set(x, "deliveryRateType", null)
     
     inline def setDeliveryRateTypeUndefined: Self = StObject.set(x, "deliveryRateType", js.undefined)
     
@@ -45,6 +46,6 @@ object SchemaDeliveryControl {
     
     inline def setFrequencyCapsUndefined: Self = StObject.set(x, "frequencyCaps", js.undefined)
     
-    inline def setFrequencyCapsVarargs(value: SchemaFrequencyCap*): Self = StObject.set(x, "frequencyCaps", js.Array(value :_*))
+    inline def setFrequencyCapsVarargs(value: SchemaFrequencyCap*): Self = StObject.set(x, "frequencyCaps", js.Array(value*))
   }
 }

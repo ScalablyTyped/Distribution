@@ -8,14 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ProgressIndicatorBase")
 @js.native
-class ProgressIndicatorBase protected ()
+open class ProgressIndicatorBase protected ()
   extends typings.officeUiFabricReact.mod.ProgressIndicatorBase {
   def this(props: IProgressIndicatorProps) = this()
-  /**
-    * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
-    */
-  def this(props: IProgressIndicatorProps, context: js.Any) = this()
 }
 /* static members */
 object ProgressIndicatorBase {

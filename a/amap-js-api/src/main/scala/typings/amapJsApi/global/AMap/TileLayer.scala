@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 切片图层
   * @param options 图层选项
   */
-class TileLayer ()
+open class TileLayer ()
   extends StObject
      with typings.amapJsApi.AMap.TileLayer {
   def this(options: Options) = this()
@@ -24,7 +24,7 @@ object TileLayer {
     * 灵活切片图层
     * @param options 图层选项
     */
-  class Flexible ()
+  open class Flexible ()
     extends StObject
        with typings.amapJsApi.AMap.TileLayer {
     def this(options: typings.amapJsApi.AMap.TileLayer.Flexible.Options) = this()
@@ -35,7 +35,7 @@ object TileLayer {
     */
   @JSGlobal("AMap.TileLayer.RoadNet")
   @js.native
-  class RoadNet ()
+  open class RoadNet ()
     extends StObject
        with typings.amapJsApi.AMap.TileLayer
   
@@ -44,7 +44,7 @@ object TileLayer {
     */
   @JSGlobal("AMap.TileLayer.Satellite")
   @js.native
-  class Satellite ()
+  open class Satellite ()
     extends StObject
        with typings.amapJsApi.AMap.TileLayer
   
@@ -54,7 +54,7 @@ object TileLayer {
     * 实时交通图层
     * @param options 图层选项
     */
-  class Traffic ()
+  open class Traffic ()
     extends StObject
        with typings.amapJsApi.AMap.TileLayer {
     def this(options: typings.amapJsApi.AMap.TileLayer.Traffic.Options) = this()
@@ -62,7 +62,7 @@ object TileLayer {
   
   @JSGlobal("AMap.TileLayer.WMS")
   @js.native
-  class WMS protected ()
+  open class WMS protected ()
     extends StObject
        with typings.amapJsApi.AMap.TileLayer.WMS {
     /**
@@ -74,7 +74,7 @@ object TileLayer {
   
   @JSGlobal("AMap.TileLayer.WMTS")
   @js.native
-  class WMTS protected ()
+  open class WMTS protected ()
     extends StObject
        with typings.amapJsApi.AMap.TileLayer.WMTS {
     /**

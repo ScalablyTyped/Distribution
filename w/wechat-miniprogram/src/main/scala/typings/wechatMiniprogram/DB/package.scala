@@ -1,26 +1,29 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.wechatMiniprogram.IAPIParam
+import typings.wechatMiniprogram.wechatMiniprogramStrings.init
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DocumentId = java.lang.String | scala.Double
+type DocumentId = String | Double
 
-type ICountDocumentOptions = typings.wechatMiniprogram.DB.IDBAPIParam
+type ICountDocumentOptions = IDBAPIParam
 
-type IDBAPIParam = typings.wechatMiniprogram.IAPIParam[js.Any]
+type IDBAPIParam = IAPIParam[Any]
 
-type IGetDocumentOptions = typings.wechatMiniprogram.DB.IDBAPIParam
+type IGetDocumentOptions = IDBAPIParam
 
-type IQueryCondition = org.scalablytyped.runtime.StringDictionary[js.Any]
+type IQueryCondition = StringDictionary[Any]
 
-type IRemoveSingleDocumentOptions = typings.wechatMiniprogram.DB.IDBAPIParam
+type IRemoveSingleDocumentOptions = IDBAPIParam
 
-type IStringQueryCondition = java.lang.String
+type IStringQueryCondition = String
 
-type IStringUpdateCondition = java.lang.String
+type IStringUpdateCondition = String
 
-type IUpdateCondition = org.scalablytyped.runtime.StringDictionary[js.Any]
+type IUpdateCondition = StringDictionary[Any]
 
-type SnapshotType = typings.wechatMiniprogram.wechatMiniprogramStrings.init
+type SnapshotType = init

@@ -19,5 +19,7 @@ object binDownloadMod {
   inline def getBin(name: String, url: Null, checksum: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBin")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], checksum.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def getBin(name: String, url: Unit, checksum: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBin")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], checksum.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
+  inline def getBinFromCustomLoc(name: String, version: String, binariesLocUrl: String, checksum: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBinFromCustomLoc")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], binariesLocUrl.asInstanceOf[js.Any], checksum.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   inline def getBinFromUrl(name: String, version: String, checksum: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBinFromUrl")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], checksum.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

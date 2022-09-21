@@ -2,53 +2,72 @@ package typings.mnemonist
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
-import typings.std.Iterator
+import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mnemonist/inverted-index", JSImport.Namespace)
-@js.native
-object invertedIndexMod extends js.Object {
-  @js.native
-  trait InvertedIndex[D] extends Iterable[D] {
-    // Members
-    var dimension: Double = js.native
-    var size: Double = js.native
-    def add(document: D): this.type = js.native
-    // Methods
-    def clear(): Unit = js.native
-    def documents(): Iterator[D, _, js.UndefOr[scala.Nothing]] = js.native
-    def forEach(callback: js.Function3[/* document */ D, /* index */ Double, /* invertedIndex */ this.type, Unit]): Unit = js.native
-    def forEach(
-      callback: js.Function3[/* document */ D, /* index */ Double, /* invertedIndex */ this.type, Unit],
-      scope: js.Any
-    ): Unit = js.native
-    def get(query: js.Any): js.Array[D] = js.native
-    def inspect(): js.Any = js.native
-    def tokens(): Iterator[String, _, js.UndefOr[scala.Nothing]] = js.native
-  }
+object invertedIndexMod {
   
+  @JSImport("mnemonist/inverted-index", JSImport.Default)
   @js.native
   // Constructor
-  class default[D] () extends InvertedIndex[D] {
+  open class default[D] ()
+    extends StObject
+       with InvertedIndex[D] {
     def this(tokenizers: TokenizersTuple) = this()
     def this(tokenizer: Tokenizer) = this()
   }
-  
   /* static members */
-  @js.native
-  object default extends js.Object {
-    def from[I](iterable: StringDictionary[I]): InvertedIndex[I] = js.native
-    def from[I](iterable: StringDictionary[I], tokenizer: Tokenizer): InvertedIndex[I] = js.native
-    def from[I](iterable: StringDictionary[I], tokenizer: TokenizersTuple): InvertedIndex[I] = js.native
+  object default {
+    
+    @JSImport("mnemonist/inverted-index", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     // Statics
-    def from[I](iterable: Iterable[I]): InvertedIndex[I] = js.native
-    def from[I](iterable: Iterable[I], tokenizer: Tokenizer): InvertedIndex[I] = js.native
-    def from[I](iterable: Iterable[I], tokenizer: TokenizersTuple): InvertedIndex[I] = js.native
+    inline def from[I](iterable: js.Iterable[I]): InvertedIndex[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[InvertedIndex[I]]
+    inline def from[I](iterable: js.Iterable[I], tokenizer: Tokenizer): InvertedIndex[I] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], tokenizer.asInstanceOf[js.Any])).asInstanceOf[InvertedIndex[I]]
+    inline def from[I](iterable: js.Iterable[I], tokenizer: TokenizersTuple): InvertedIndex[I] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], tokenizer.asInstanceOf[js.Any])).asInstanceOf[InvertedIndex[I]]
+    inline def from[I](iterable: StringDictionary[I]): InvertedIndex[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[InvertedIndex[I]]
+    inline def from[I](iterable: StringDictionary[I], tokenizer: Tokenizer): InvertedIndex[I] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], tokenizer.asInstanceOf[js.Any])).asInstanceOf[InvertedIndex[I]]
+    inline def from[I](iterable: StringDictionary[I], tokenizer: TokenizersTuple): InvertedIndex[I] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], tokenizer.asInstanceOf[js.Any])).asInstanceOf[InvertedIndex[I]]
   }
   
-  type Tokenizer = js.Function1[/* key */ js.Any, js.Array[String]]
+  @js.native
+  trait InvertedIndex[D]
+    extends StObject
+       with Iterable[D] {
+    
+    def add(document: D): this.type = js.native
+    
+    // Methods
+    def clear(): Unit = js.native
+    
+    // Members
+    var dimension: Double = js.native
+    
+    def documents(): IterableIterator[D] = js.native
+    
+    def forEach(callback: js.Function3[/* document */ D, /* index */ Double, /* invertedIndex */ this.type, Unit]): Unit = js.native
+    def forEach(
+      callback: js.Function3[/* document */ D, /* index */ Double, /* invertedIndex */ this.type, Unit],
+      scope: Any
+    ): Unit = js.native
+    
+    def get(query: Any): js.Array[D] = js.native
+    
+    def inspect(): Any = js.native
+    
+    @JSName(js.Symbol.iterator)
+    var iterator_InvertedIndex: js.Function0[IterableIterator[D]] = js.native
+    
+    var size: Double = js.native
+    
+    def tokens(): IterableIterator[String] = js.native
+  }
+  
+  type Tokenizer = js.Function1[/* key */ Any, js.Array[String]]
+  
   type TokenizersTuple = js.Tuple2[Tokenizer, Tokenizer]
 }
-

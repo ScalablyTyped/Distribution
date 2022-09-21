@@ -8,7 +8,7 @@ trait BootstrapSchedulerAppointmentDragInfo extends StObject {
   
   val appointmentId: String
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
   
   val newInterval: BootstrapTimeInterval | Null
   
@@ -16,7 +16,7 @@ trait BootstrapSchedulerAppointmentDragInfo extends StObject {
 }
 object BootstrapSchedulerAppointmentDragInfo {
   
-  inline def apply(appointmentId: String, instance: js.Any): BootstrapSchedulerAppointmentDragInfo = {
+  inline def apply(appointmentId: String, instance: Any): BootstrapSchedulerAppointmentDragInfo = {
     val __obj = js.Dynamic.literal(appointmentId = appointmentId.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], newInterval = null, oldInterval = null)
     __obj.asInstanceOf[BootstrapSchedulerAppointmentDragInfo]
   }
@@ -25,7 +25,7 @@ object BootstrapSchedulerAppointmentDragInfo {
     
     inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     

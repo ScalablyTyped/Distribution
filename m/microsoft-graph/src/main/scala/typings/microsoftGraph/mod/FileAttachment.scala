@@ -9,7 +9,7 @@ trait FileAttachment
      with Attachment {
   
   // The base64-encoded contents of the file.
-  var contentBytes: js.UndefOr[NullableOption[Double]] = js.undefined
+  var contentBytes: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The ID of the attachment in the Exchange store.
   var contentId: js.UndefOr[NullableOption[String]] = js.undefined
@@ -26,7 +26,7 @@ object FileAttachment {
   
   extension [Self <: FileAttachment](x: Self) {
     
-    inline def setContentBytes(value: NullableOption[Double]): Self = StObject.set(x, "contentBytes", value.asInstanceOf[js.Any])
+    inline def setContentBytes(value: NullableOption[String]): Self = StObject.set(x, "contentBytes", value.asInstanceOf[js.Any])
     
     inline def setContentBytesNull: Self = StObject.set(x, "contentBytes", null)
     

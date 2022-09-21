@@ -5,7 +5,7 @@ import typings.consul.mod.Kv.DeleteOptions
 import typings.consul.mod.Kv.GetOptions
 import typings.consul.mod.Kv.KeysOptions
 import typings.consul.mod.Kv.SetOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ trait Kv extends StObject {
   /**
     * Delete
     */
-  def del[TData](key: String): Thenable[TData] = js.native
+  def del[TData](key: String): js.Promise[TData] = js.native
   /**
     * Delete
     */
@@ -26,21 +26,21 @@ trait Kv extends StObject {
   /**
     * Delete
     */
-  def del[TData](opts: DelOptions): Thenable[TData] = js.native
+  def del[TData](opts: DelOptions): js.Promise[TData] = js.native
   /**
     * Delete
     */
   def del[TData](opts: DelOptions, callback: Callback[TData]): Unit = js.native
   
-  def delete[TData](key: String): Thenable[TData] = js.native
+  def delete[TData](key: String): js.Promise[TData] = js.native
   def delete[TData](key: String, callback: Callback[TData]): Unit = js.native
-  def delete[TData](opts: DeleteOptions): Thenable[TData] = js.native
+  def delete[TData](opts: DeleteOptions): js.Promise[TData] = js.native
   def delete[TData](opts: DeleteOptions, callback: Callback[TData]): Unit = js.native
   
   /**
     * Get
     */
-  def get[TData](key: String): Thenable[TData] = js.native
+  def get[TData](key: String): js.Promise[TData] = js.native
   /**
     * Get
     */
@@ -48,7 +48,7 @@ trait Kv extends StObject {
   /**
     * Get
     */
-  def get[TData](opts: GetOptions): Thenable[TData] = js.native
+  def get[TData](opts: GetOptions): js.Promise[TData] = js.native
   /**
     * Get
     */
@@ -57,17 +57,17 @@ trait Kv extends StObject {
   /**
     * Keys
     */
-  def keys[TData](): Thenable[TData] = js.native
+  def keys[TData](): js.Promise[TData] = js.native
   /**
     * Keys
     */
   def keys[TData](callback: Callback[TData]): Unit = js.native
-  def keys[TData](key: String): Thenable[TData] = js.native
+  def keys[TData](key: String): js.Promise[TData] = js.native
   /**
     * Keys
     */
   def keys[TData](key: String, callback: Callback[TData]): Unit = js.native
-  def keys[TData](opts: KeysOptions): Thenable[TData] = js.native
+  def keys[TData](opts: KeysOptions): js.Promise[TData] = js.native
   /**
     * Keys
     */
@@ -76,7 +76,7 @@ trait Kv extends StObject {
   /**
     * Set
     */
-  def set[TData](key: String, value: String): Thenable[TData] = js.native
+  def set[TData](key: String, value: String): js.Promise[TData] = js.native
   /**
     * Set
     */
@@ -84,19 +84,19 @@ trait Kv extends StObject {
   /**
     * Set
     */
-  def set[TData](key: String, value: String, opts: SetOptions): Thenable[TData] = js.native
+  def set[TData](key: String, value: String, opts: SetOptions): js.Promise[TData] = js.native
   /**
     * Set
     */
   def set[TData](key: String, value: String, opts: SetOptions, callback: Callback[TData]): Unit = js.native
-  def set[TData](key: String, value: Buffer): Thenable[TData] = js.native
+  def set[TData](key: String, value: Buffer): js.Promise[TData] = js.native
   def set[TData](key: String, value: Buffer, callback: Callback[TData]): Unit = js.native
-  def set[TData](key: String, value: Buffer, opts: SetOptions): Thenable[TData] = js.native
+  def set[TData](key: String, value: Buffer, opts: SetOptions): js.Promise[TData] = js.native
   def set[TData](key: String, value: Buffer, opts: SetOptions, callback: Callback[TData]): Unit = js.native
   /**
     * Set
     */
-  def set[TData](opts: SetOptions): Thenable[TData] = js.native
+  def set[TData](opts: SetOptions): js.Promise[TData] = js.native
   /**
     * Set
     */

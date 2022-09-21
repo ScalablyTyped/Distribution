@@ -35,7 +35,7 @@ object ObjectOutputStream {
     getOutputStream: () => XOutputStream,
     getPredecessor: () => XConnectable,
     getSuccessor: () => XConnectable,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setOutputStream: XOutputStream => Unit,
     setPredecessor: XConnectable => Unit,

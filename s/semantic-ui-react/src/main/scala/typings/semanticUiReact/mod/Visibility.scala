@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Visibility")
 @js.native
-class Visibility protected ()
-  extends Component[VisibilityProps, ComponentState, js.Any] {
+open class Visibility protected () extends Component[VisibilityProps, ComponentState, Any] {
   def this(props: VisibilityProps) = this()
-  def this(props: VisibilityProps, context: js.Any) = this()
+  def this(props: VisibilityProps, context: Any) = this()
 }
 object Visibility {
   

@@ -10,12 +10,18 @@ trait DOLBYDIGITALCOMPMODELINE extends StObject {
   
   /**
     * line mode
+    *
+    * @version 1.0
+    *
     * @since 2.3
     */
   var DOLBY_DIGITAL_COMP_MODE_LINE: `0`
   
   /**
     * rf mode
+    *
+    * @version 1.0
+    *
     * @since 2.3
     */
   var DOLBY_DIGITAL_COMP_MODE_RF: `1`

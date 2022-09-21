@@ -10,10 +10,10 @@ Returns a single item from an array with relative weighting of odds.
 | ------------------ | :-------------: |
 | Full name          | pick-weight |
 | Keywords           | pick, item, weight, odds, random, randomly, randomize, chance, test, dice, mock |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1045 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 147.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/mock-end/pick-weight#readme)

@@ -31,6 +31,6 @@ object DeleteFlowLogsRequest {
     
     inline def setFlowLogIds(value: FlowLogIdList): Self = StObject.set(x, "FlowLogIds", value.asInstanceOf[js.Any])
     
-    inline def setFlowLogIdsVarargs(value: VpcFlowLogId*): Self = StObject.set(x, "FlowLogIds", js.Array(value :_*))
+    inline def setFlowLogIdsVarargs(value: VpcFlowLogId*): Self = StObject.set(x, "FlowLogIds", js.Array(value*))
   }
 }

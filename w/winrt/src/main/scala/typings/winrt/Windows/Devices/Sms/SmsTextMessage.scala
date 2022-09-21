@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Devices.Sms
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +19,7 @@ object SmsTextMessage {
     partCount: Double,
     partNumber: Double,
     partReferenceId: Double,
-    timestamp: Date,
+    timestamp: js.Date,
     to: String,
     toBinaryMessages: SmsDataFormat => IVectorView[ISmsBinaryMessage]
   ): SmsTextMessage = {

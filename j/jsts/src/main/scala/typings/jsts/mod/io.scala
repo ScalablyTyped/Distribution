@@ -10,9 +10,10 @@ object io {
   
   @JSImport("jsts", "io.GeoJSONReader")
   @js.native
-  class GeoJSONReader ()
+  open class GeoJSONReader ()
     extends StObject
        with typings.jsts.jsts.io.GeoJSONReader {
+    def this(geometryFactory: GeometryFactory) = this()
     
     /**
       * Converts a GeoJSON to its <code>Geometry</code> representation.
@@ -40,7 +41,7 @@ object io {
     * @see WKTReader
     * @constructor
     */
-  class GeoJSONWriter ()
+  open class GeoJSONWriter ()
     extends StObject
        with typings.jsts.jsts.io.GeoJSONWriter {
     
@@ -57,16 +58,16 @@ object io {
   
   @JSImport("jsts", "io.OL3Parser")
   @js.native
-  class OL3Parser ()
+  open class OL3Parser ()
     extends StObject
        with typings.jsts.jsts.io.OL3Parser {
     def this(geometryFactory: GeometryFactory) = this()
     
     /* CompleteClass */
-    override def read(geometry: js.Any): Geometry = js.native
+    override def read(geometry: Any): Geometry = js.native
     
     /* CompleteClass */
-    override def write(geometry: Geometry): js.Any = js.native
+    override def write(geometry: Geometry): Any = js.native
   }
   
   @JSImport("jsts", "io.WKTReader")
@@ -74,7 +75,7 @@ object io {
   /**
     * @constructor
     */
-  class WKTReader ()
+  open class WKTReader ()
     extends StObject
        with typings.jsts.jsts.io.WKTReader {
     def this(geometryFactory: GeometryFactory) = this()
@@ -100,9 +101,19 @@ object io {
   /**
     * @constructor
     */
-  class WKTWriter ()
+  open class WKTWriter ()
     extends StObject
        with typings.jsts.jsts.io.WKTWriter {
     def this(geometryFactory: GeometryFactory) = this()
+    
+    /**
+      * Converts a <code>Geometry</code> to its Well-known Text representation.
+      *
+      * @param {Geometry} geometry a <code>Geometry</code> to process.
+      * @return {string} a <Geometry Tagged Text> string (see the OpenGIS Simple
+      *         Features Specification).
+      */
+    /* CompleteClass */
+    override def write(geometry: Geometry): String = js.native
   }
 }

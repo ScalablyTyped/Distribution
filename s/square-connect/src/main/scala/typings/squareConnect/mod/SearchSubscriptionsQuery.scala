@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchSubscriptionsQuery")
 @js.native
-class SearchSubscriptionsQuery () extends StObject {
+open class SearchSubscriptionsQuery () extends StObject {
   
   /**
     * A list of filtering criteria.

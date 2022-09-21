@@ -17,7 +17,7 @@ object schedulerMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/scheduler", "default.Action")
     @js.native
-    class Action[T] ()
+    open class Action[T] ()
       extends typings.rotJs.actionMod.default[T]
     @JSImport("rot-js/lib/scheduler", "default.Action")
     @js.native
@@ -27,7 +27,7 @@ object schedulerMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/scheduler", "default.Simple")
     @js.native
-    class Simple[T] ()
+    open class Simple[T] ()
       extends typings.rotJs.simpleMod.default[T]
     @JSImport("rot-js/lib/scheduler", "default.Simple")
     @js.native
@@ -37,7 +37,7 @@ object schedulerMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/scheduler", "default.Speed")
     @js.native
-    class Speed[T /* <: SpeedActor */] ()
+    open class Speed[T /* <: SpeedActor */] ()
       extends typings.rotJs.speedMod.default[T]
     @JSImport("rot-js/lib/scheduler", "default.Speed")
     @js.native

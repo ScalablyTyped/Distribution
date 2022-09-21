@@ -43,6 +43,6 @@ object Templates_ {
     
     inline def setSecondaryTemplates(value: js.Array[Template]): Self = StObject.set(x, "secondaryTemplates", value.asInstanceOf[js.Any])
     
-    inline def setSecondaryTemplatesVarargs(value: Template*): Self = StObject.set(x, "secondaryTemplates", js.Array(value :_*))
+    inline def setSecondaryTemplatesVarargs(value: Template*): Self = StObject.set(x, "secondaryTemplates", js.Array(value*))
   }
 }

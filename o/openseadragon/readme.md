@@ -1,7 +1,7 @@
 
 # Scala.js typings for openseadragon
 
-Typings are for version 2.4
+Typings are for version 3.0
 
 ## Library description:
 Provides a smooth, zoomable user interface for HTML/Javascript.
@@ -11,14 +11,12 @@ Provides a smooth, zoomable user interface for HTML/Javascript.
 | Full name          | openseadragon |
 | Keywords           | image, zoom, pan, openseadragon, seadragon, deepzoom, dzi, iiif, osm, tms |
 | # releases         | 3 |
-| # dependents       | 51 |
-| # downloads        | 389874 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51979.0 |
+| # stars            | 2436.0 |
 
 ## Links
-- [Homepage](http://openseadragon.github.io/)
-- [Bugs](https://github.com/openseadragon/openseadragon/issues)
-- [Repository](https://github.com/openseadragon/openseadragon)
+- [Homepage](https://openseadragon.github.io/)
 - [Npm](https://www.npmjs.com/package/openseadragon)
     
 

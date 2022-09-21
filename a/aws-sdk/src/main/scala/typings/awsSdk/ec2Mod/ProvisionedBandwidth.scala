@@ -9,7 +9,7 @@ trait ProvisionedBandwidth extends StObject {
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
     */
-  var ProvisionTime: js.UndefOr[DateTime] = js.undefined
+  var ProvisionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
@@ -19,7 +19,7 @@ trait ProvisionedBandwidth extends StObject {
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
     */
-  var RequestTime: js.UndefOr[DateTime] = js.undefined
+  var RequestTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
@@ -40,7 +40,7 @@ object ProvisionedBandwidth {
   
   extension [Self <: ProvisionedBandwidth](x: Self) {
     
-    inline def setProvisionTime(value: DateTime): Self = StObject.set(x, "ProvisionTime", value.asInstanceOf[js.Any])
+    inline def setProvisionTime(value: js.Date): Self = StObject.set(x, "ProvisionTime", value.asInstanceOf[js.Any])
     
     inline def setProvisionTimeUndefined: Self = StObject.set(x, "ProvisionTime", js.undefined)
     
@@ -48,7 +48,7 @@ object ProvisionedBandwidth {
     
     inline def setProvisionedUndefined: Self = StObject.set(x, "Provisioned", js.undefined)
     
-    inline def setRequestTime(value: DateTime): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: js.Date): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
     
     inline def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
     

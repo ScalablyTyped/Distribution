@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDatasetRequest extends StObject {
   
   /**
-    * The name of the data set whose information is retrieved.
+    * The name of the dataset whose information is retrieved.
     */
   var datasetName: DatasetName
 }

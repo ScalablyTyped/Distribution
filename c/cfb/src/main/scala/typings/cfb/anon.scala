@@ -24,11 +24,11 @@ object anon {
       
       inline def setHeader(value: CFBBlob): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setHeaderVarargs(value: Double*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: Double*): Self = StObject.set(x, "header", js.Array(value*))
       
       inline def setSectors(value: js.Array[CFBBlob]): Self = StObject.set(x, "sectors", value.asInstanceOf[js.Any])
       
-      inline def setSectorsVarargs(value: CFBBlob*): Self = StObject.set(x, "sectors", js.Array(value :_*))
+      inline def setSectorsVarargs(value: CFBBlob*): Self = StObject.set(x, "sectors", js.Array(value*))
     }
   }
 }

@@ -14,7 +14,7 @@ trait Callbacks[Values] extends StObject {
   
   var onFinishFailed: js.UndefOr[js.Function1[/* errorInfo */ ValidateErrorEntity[Values], Unit]] = js.undefined
   
-  var onValuesChange: js.UndefOr[js.Function2[/* changedValues */ js.Any, /* values */ Values, Unit]] = js.undefined
+  var onValuesChange: js.UndefOr[js.Function2[/* changedValues */ Any, /* values */ Values, Unit]] = js.undefined
 }
 object Callbacks {
   
@@ -37,7 +37,7 @@ object Callbacks {
     
     inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
     
-    inline def setOnValuesChange(value: (/* changedValues */ js.Any, /* values */ Values) => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction2(value))
+    inline def setOnValuesChange(value: (/* changedValues */ Any, /* values */ Values) => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction2(value))
     
     inline def setOnValuesChangeUndefined: Self = StObject.set(x, "onValuesChange", js.undefined)
   }

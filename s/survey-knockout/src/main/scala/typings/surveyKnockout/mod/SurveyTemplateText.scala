@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "SurveyTemplateText")
 @js.native
-class SurveyTemplateText () extends StObject {
+open class SurveyTemplateText () extends StObject {
   
   def addText(newText: String, id: String, name: String): Unit = js.native
   
@@ -15,5 +15,6 @@ class SurveyTemplateText () extends StObject {
   def replaceText(replaceText: String, id: String): Unit = js.native
   def replaceText(replaceText: String, id: String, questionType: String): Unit = js.native
   
-  /* protected */ var text: String = js.native
+  /* protected */ def text: String = js.native
+  /* protected */ def text_=(`val`: String): Unit = js.native
 }

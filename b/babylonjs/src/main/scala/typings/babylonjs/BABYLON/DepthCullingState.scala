@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.WebGLRenderingContext
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,33 +8,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DepthCullingState extends StObject {
   
-  /* private */ var _cull: js.Any = js.native
+  /* protected */ var _cull: Nullable[Boolean] = js.native
   
-  /* private */ var _cullFace: js.Any = js.native
+  /* protected */ var _cullFace: Nullable[Double] = js.native
   
-  /* private */ var _depthFunc: js.Any = js.native
+  /* protected */ var _depthFunc: Nullable[Double] = js.native
   
-  /* private */ var _depthMask: js.Any = js.native
+  /* protected */ var _depthMask: Boolean = js.native
   
-  /* private */ var _depthTest: js.Any = js.native
+  /* protected */ var _depthTest: Boolean = js.native
   
-  /* private */ var _frontFace: js.Any = js.native
+  /* protected */ var _frontFace: Nullable[Double] = js.native
   
-  /* private */ var _isCullDirty: js.Any = js.native
+  /* protected */ var _isCullDirty: Boolean = js.native
   
-  /* private */ var _isCullFaceDirty: js.Any = js.native
+  /* protected */ var _isCullFaceDirty: Boolean = js.native
   
-  /* private */ var _isDepthFuncDirty: js.Any = js.native
+  /* protected */ var _isDepthFuncDirty: Boolean = js.native
   
-  /* private */ var _isDepthMaskDirty: js.Any = js.native
+  /* protected */ var _isDepthMaskDirty: Boolean = js.native
   
-  /* private */ var _isDepthTestDirty: js.Any = js.native
+  /* protected */ var _isDepthTestDirty: Boolean = js.native
   
-  /* private */ var _isFrontFaceDirty: js.Any = js.native
+  /* protected */ var _isFrontFaceDirty: Boolean = js.native
   
-  /* private */ var _isZOffsetDirty: js.Any = js.native
+  /* protected */ var _isZOffsetDirty: Boolean = js.native
   
-  /* private */ var _zOffset: js.Any = js.native
+  /* protected */ var _zOffset: Double = js.native
+  
+  /* protected */ var _zOffsetUnits: Double = js.native
   
   @JSName("apply")
   def apply(gl: WebGLRenderingContext): Unit = js.native
@@ -63,5 +65,9 @@ trait DepthCullingState extends StObject {
   def reset(): Unit = js.native
   
   def zOffset: Double = js.native
+  
+  def zOffsetUnits: Double = js.native
+  def zOffsetUnits_=(value: Double): Unit = js.native
+  
   def zOffset_=(value: Double): Unit = js.native
 }

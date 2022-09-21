@@ -7,11 +7,11 @@ import typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.Greatertha
 import typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.GreaterthansignEqualssign
 import typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.Lessthansign
 import typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.LessthansignEqualssign
-import typings.std.RegExp
 import typings.typescript.mod.Node
 import typings.typescript.mod.ScriptKind
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SyntaxKind
+import typings.typescript.mod.VisitResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +65,7 @@ object tsqueryTypesMod {
     def syntaxKindName(node: SyntaxKind): String = js.native
   }
   
-  type TSQueryAttributeOperator = js.Function3[/* obj */ js.Any, /* value */ js.Any, /* type */ TSQueryAttributeOperatorType, Boolean]
+  type TSQueryAttributeOperator = js.Function3[/* obj */ Any, /* value */ Any, /* type */ TSQueryAttributeOperatorType, Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.regexp
@@ -94,7 +94,7 @@ object tsqueryTypesMod {
   
   type TSQueryMatchers = StringDictionary[TSQueryMatcher]
   
-  type TSQueryNodeTransformer = js.Function1[/* node */ Node, js.UndefOr[Node | Null]]
+  type TSQueryNodeTransformer = js.Function1[/* node */ Node, VisitResult[Node]]
   
   trait TSQueryOptions extends StObject {
     
@@ -123,7 +123,7 @@ object tsqueryTypesMod {
     
     var text: String
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object TSQueryProperties {
     
@@ -142,7 +142,7 @@ object tsqueryTypesMod {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -151,7 +151,7 @@ object tsqueryTypesMod {
   trait TSQuerySelectorNode
     extends StObject
        with /* key */ StringDictionary[
-          TSQuerySelectorNode | js.Array[TSQuerySelectorNode] | RegExp | Boolean | Double | String
+          TSQuerySelectorNode | js.Array[TSQuerySelectorNode] | js.RegExp | Boolean | Double | String
         ] {
     
     var index: TSQuerySelectorNode
@@ -170,7 +170,7 @@ object tsqueryTypesMod {
     
     var `type`: TSQueryAttributeOperatorType
     
-    var value: TSQuerySelectorNode | RegExp | Double | String
+    var value: TSQuerySelectorNode | js.RegExp | Double | String
   }
   object TSQuerySelectorNode {
     
@@ -183,7 +183,7 @@ object tsqueryTypesMod {
       selectors: js.Array[TSQuerySelectorNode],
       subject: Boolean,
       `type`: TSQueryAttributeOperatorType,
-      value: TSQuerySelectorNode | RegExp | Double | String
+      value: TSQuerySelectorNode | js.RegExp | Double | String
     ): TSQuerySelectorNode = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -206,13 +206,13 @@ object tsqueryTypesMod {
       
       inline def setSelectors(value: js.Array[TSQuerySelectorNode]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      inline def setSelectorsVarargs(value: TSQuerySelectorNode*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+      inline def setSelectorsVarargs(value: TSQuerySelectorNode*): Self = StObject.set(x, "selectors", js.Array(value*))
       
       inline def setSubject(value: Boolean): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
       inline def setType(value: TSQueryAttributeOperatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: TSQuerySelectorNode | RegExp | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TSQuerySelectorNode | js.RegExp | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

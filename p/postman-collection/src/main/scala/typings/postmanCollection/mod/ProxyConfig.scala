@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.ProxyConfigDefinition because var conflicts: description, disabled, id, name. Inlined `match`, host, port, tunnel */ @JSImport("postman-collection", "ProxyConfig")
 @js.native
-class ProxyConfig () extends Property[ProxyConfigDefinition] {
+open class ProxyConfig () extends Property[ProxyConfigDefinition] {
   def this(options: ProxyConfigDefinition) = this()
   
   def getProtocols(): js.Array[String] = js.native
@@ -39,5 +39,5 @@ object ProxyConfig {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isProxyConfig(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isProxyConfig(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nodelib__fs_dot_scandir
 
-Typings are for version 2.1.3
+Typings are for version 2.1.5
 
 ## Library description:
 List files and directories inside the specified directory
@@ -10,10 +10,10 @@ List files and directories inside the specified directory
 | ------------------ | :-------------: |
 | Full name          | @nodelib/fs.scandir |
 | Keywords           | NodeLib, fs, FileSystem, file system, scandir, readdir, dirent |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 247468731 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8.650185433333333E7 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/nodelib/nodelib#readme)

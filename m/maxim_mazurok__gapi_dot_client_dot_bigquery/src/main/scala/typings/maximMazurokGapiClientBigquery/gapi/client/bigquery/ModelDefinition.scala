@@ -36,6 +36,6 @@ object ModelDefinition {
     
     inline def setTrainingRunsUndefined: Self = StObject.set(x, "trainingRuns", js.undefined)
     
-    inline def setTrainingRunsVarargs(value: BqmlTrainingRun*): Self = StObject.set(x, "trainingRuns", js.Array(value :_*))
+    inline def setTrainingRunsVarargs(value: BqmlTrainingRun*): Self = StObject.set(x, "trainingRuns", js.Array(value*))
   }
 }

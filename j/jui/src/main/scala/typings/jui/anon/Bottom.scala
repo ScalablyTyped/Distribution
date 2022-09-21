@@ -12,7 +12,7 @@ trait Bottom extends StObject {
     */
   var bottom: js.UndefOr[String | Double] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {Integer} [height=300]
@@ -62,7 +62,7 @@ trait Bottom extends StObject {
     */
   var top: js.UndefOr[String | Double] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {Integer} [width=400]
@@ -83,7 +83,7 @@ object Bottom {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
@@ -119,7 +119,7 @@ object Bottom {
     
     inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     

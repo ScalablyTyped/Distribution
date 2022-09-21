@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Storage.FileProperties
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
@@ -16,7 +15,7 @@ trait IImageProperties
   
   var cameraModel: String = js.native
   
-  var dateTaken: Date = js.native
+  var dateTaken: js.Date = js.native
   
   var height: Double = js.native
   

@@ -24,6 +24,6 @@ object NotificationReason {
     
     inline def setTargetIdentities(value: js.Array[IdentityRef]): Self = StObject.set(x, "targetIdentities", value.asInstanceOf[js.Any])
     
-    inline def setTargetIdentitiesVarargs(value: IdentityRef*): Self = StObject.set(x, "targetIdentities", js.Array(value :_*))
+    inline def setTargetIdentitiesVarargs(value: IdentityRef*): Self = StObject.set(x, "targetIdentities", js.Array(value*))
   }
 }

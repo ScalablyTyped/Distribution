@@ -17,5 +17,5 @@ trait MediaContentConstructor
 Instantiable0[MediaContent]
      with Instantiable1[/* properties */ MediaContentProperties, MediaContent] {
   
-  def fromJSON(json: js.Any): MediaContent = js.native
+  def fromJSON(json: Any): MediaContent = js.native
 }

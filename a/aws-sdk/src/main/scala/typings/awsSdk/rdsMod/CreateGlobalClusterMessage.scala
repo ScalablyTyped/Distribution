@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateGlobalClusterMessage extends StObject {
   
   /**
-    *  The name for your database of up to 64 alpha-numeric characters. If you do not provide a name, Amazon Aurora will not create a database in the global database cluster you are creating. 
+    * The name for your database of up to 64 alphanumeric characters. If you do not provide a name, Amazon Aurora will not create a database in the global database cluster you are creating.
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
-    *  The deletion protection setting for the new global database. The global database can't be deleted when deletion protection is enabled. 
+    * The deletion protection setting for the new global database. The global database can't be deleted when deletion protection is enabled.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -32,12 +32,12 @@ trait CreateGlobalClusterMessage extends StObject {
   var GlobalClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    *  The Amazon Resource Name (ARN) to use as the primary cluster of the global database. This parameter is optional. 
+    * The Amazon Resource Name (ARN) to use as the primary cluster of the global database. This parameter is optional.
     */
   var SourceDBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    *  The storage encryption setting for the new global database cluster. 
+    * The storage encryption setting for the new global database cluster.
     */
   var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
 }

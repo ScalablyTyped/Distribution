@@ -118,7 +118,7 @@ object BaseRNNLayerArgs {
     
     inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
+    inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value*))
     
     inline def setGoBackwards(value: Boolean): Self = StObject.set(x, "goBackwards", value.asInstanceOf[js.Any])
     

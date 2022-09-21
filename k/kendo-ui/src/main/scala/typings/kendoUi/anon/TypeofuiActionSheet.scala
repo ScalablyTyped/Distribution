@@ -6,8 +6,6 @@ import typings.kendoUi.kendo.mobile.ui.ActionSheet
 import typings.kendoUi.kendo.mobile.ui.ActionSheetOptions
 import typings.kendoUi.kendo.mobile.ui.BackButton
 import typings.kendoUi.kendo.mobile.ui.BackButtonOptions
-import typings.kendoUi.kendo.mobile.ui.Badge
-import typings.kendoUi.kendo.mobile.ui.BadgeOptions
 import typings.kendoUi.kendo.mobile.ui.Button
 import typings.kendoUi.kendo.mobile.ui.ButtonGroup
 import typings.kendoUi.kendo.mobile.ui.ButtonGroupOptions
@@ -56,19 +54,13 @@ trait TypeofuiActionSheet extends StObject {
     /* element */ Element, 
     /* options */ js.UndefOr[ActionSheetOptions], 
     typings.kendoUi.kendo.mobile.ui.ActionSheet
-  ]) & TypeofActionSheet
+  ]) & TypeofActionSheetExtend
   
   var BackButton: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[BackButtonOptions], 
     typings.kendoUi.kendo.mobile.ui.BackButton
   ]) & TypeofBackButton
-  
-  var Badge: (Instantiable2[
-    /* element */ Element, 
-    /* options */ js.UndefOr[BadgeOptions], 
-    typings.kendoUi.kendo.mobile.ui.Badge
-  ]) & TypeofBadge
   
   var Button: (Instantiable2[
     /* element */ Element, 
@@ -140,7 +132,7 @@ trait TypeofuiActionSheet extends StObject {
     /* element */ Element, 
     /* options */ js.UndefOr[PopOverOptions], 
     typings.kendoUi.kendo.mobile.ui.PopOver
-  ]) & TypeofPopOver
+  ]) & TypeofPopOver_
   
   var ScrollView: (Instantiable2[
     /* element */ Element, 
@@ -183,9 +175,8 @@ trait TypeofuiActionSheet extends StObject {
 object TypeofuiActionSheet {
   
   inline def apply(
-    ActionSheet: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]) & TypeofActionSheet,
+    ActionSheet: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]) & TypeofActionSheetExtend,
     BackButton: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BackButtonOptions], BackButton]) & TypeofBackButton,
-    Badge: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BadgeOptions], Badge]) & TypeofBadge,
     Button: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonOptions], Button]) & TypeofButtonExtend,
     ButtonGroup: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonGroupOptions], ButtonGroup]) & TypeofButtonGroupExtend,
     Collapsible: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[CollapsibleOptions], Collapsible]) & TypeofCollapsible,
@@ -197,7 +188,7 @@ object TypeofuiActionSheet {
     ModalView: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ModalViewOptions], ModalView]) & TypeofModalView,
     NavBar: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[NavBarOptions], NavBar]) & TypeofNavBar,
     Pane: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PaneOptions], Pane]) & TypeofPane,
-    PopOver: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PopOverOptions], PopOver]) & TypeofPopOver,
+    PopOver: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PopOverOptions], PopOver]) & TypeofPopOver_,
     ScrollView: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ScrollViewOptions], ScrollView]) & TypeofScrollViewExtend,
     Scroller: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ScrollerOptions], Scroller]) & TypeofScroller,
     SplitView: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[SplitViewOptions], SplitView]) & TypeofSplitView,
@@ -206,23 +197,19 @@ object TypeofuiActionSheet {
     View: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ViewOptions], View]) & TypeofView,
     Widget: Instantiable0[Widget]
   ): TypeofuiActionSheet = {
-    val __obj = js.Dynamic.literal(ActionSheet = ActionSheet.asInstanceOf[js.Any], BackButton = BackButton.asInstanceOf[js.Any], Badge = Badge.asInstanceOf[js.Any], Button = Button.asInstanceOf[js.Any], ButtonGroup = ButtonGroup.asInstanceOf[js.Any], Collapsible = Collapsible.asInstanceOf[js.Any], DetailButton = DetailButton.asInstanceOf[js.Any], Drawer = Drawer.asInstanceOf[js.Any], Layout = Layout.asInstanceOf[js.Any], ListView = ListView.asInstanceOf[js.Any], Loader = Loader.asInstanceOf[js.Any], ModalView = ModalView.asInstanceOf[js.Any], NavBar = NavBar.asInstanceOf[js.Any], Pane = Pane.asInstanceOf[js.Any], PopOver = PopOver.asInstanceOf[js.Any], ScrollView = ScrollView.asInstanceOf[js.Any], Scroller = Scroller.asInstanceOf[js.Any], SplitView = SplitView.asInstanceOf[js.Any], Switch = Switch.asInstanceOf[js.Any], TabStrip = TabStrip.asInstanceOf[js.Any], View = View.asInstanceOf[js.Any], Widget = Widget.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ActionSheet = ActionSheet.asInstanceOf[js.Any], BackButton = BackButton.asInstanceOf[js.Any], Button = Button.asInstanceOf[js.Any], ButtonGroup = ButtonGroup.asInstanceOf[js.Any], Collapsible = Collapsible.asInstanceOf[js.Any], DetailButton = DetailButton.asInstanceOf[js.Any], Drawer = Drawer.asInstanceOf[js.Any], Layout = Layout.asInstanceOf[js.Any], ListView = ListView.asInstanceOf[js.Any], Loader = Loader.asInstanceOf[js.Any], ModalView = ModalView.asInstanceOf[js.Any], NavBar = NavBar.asInstanceOf[js.Any], Pane = Pane.asInstanceOf[js.Any], PopOver = PopOver.asInstanceOf[js.Any], ScrollView = ScrollView.asInstanceOf[js.Any], Scroller = Scroller.asInstanceOf[js.Any], SplitView = SplitView.asInstanceOf[js.Any], Switch = Switch.asInstanceOf[js.Any], TabStrip = TabStrip.asInstanceOf[js.Any], View = View.asInstanceOf[js.Any], Widget = Widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofuiActionSheet]
   }
   
   extension [Self <: TypeofuiActionSheet](x: Self) {
     
     inline def setActionSheet(
-      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]) & TypeofActionSheet
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]) & TypeofActionSheetExtend
     ): Self = StObject.set(x, "ActionSheet", value.asInstanceOf[js.Any])
     
     inline def setBackButton(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BackButtonOptions], BackButton]) & TypeofBackButton
     ): Self = StObject.set(x, "BackButton", value.asInstanceOf[js.Any])
-    
-    inline def setBadge(
-      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BadgeOptions], Badge]) & TypeofBadge
-    ): Self = StObject.set(x, "Badge", value.asInstanceOf[js.Any])
     
     inline def setButton(
       value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonOptions], Button]) & TypeofButtonExtend
@@ -269,7 +256,7 @@ object TypeofuiActionSheet {
     ): Self = StObject.set(x, "Pane", value.asInstanceOf[js.Any])
     
     inline def setPopOver(
-      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PopOverOptions], PopOver]) & TypeofPopOver
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PopOverOptions], PopOver]) & TypeofPopOver_
     ): Self = StObject.set(x, "PopOver", value.asInstanceOf[js.Any])
     
     inline def setScrollView(

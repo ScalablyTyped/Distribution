@@ -14,7 +14,7 @@ trait DashboardVersion extends StObject {
   /**
     * The time that this dashboard version was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Numbers (ARNs) for the datasets that are associated with this version of the dashboard.
@@ -69,7 +69,7 @@ object DashboardVersion {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -77,7 +77,7 @@ object DashboardVersion {
     
     inline def setDataSetArnsUndefined: Self = StObject.set(x, "DataSetArns", js.undefined)
     
-    inline def setDataSetArnsVarargs(value: Arn*): Self = StObject.set(x, "DataSetArns", js.Array(value :_*))
+    inline def setDataSetArnsVarargs(value: Arn*): Self = StObject.set(x, "DataSetArns", js.Array(value*))
     
     inline def setDescription(value: VersionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -87,13 +87,13 @@ object DashboardVersion {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: DashboardError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: DashboardError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setSheets(value: SheetList): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
     inline def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
     
-    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value*))
     
     inline def setSourceEntityArn(value: Arn): Self = StObject.set(x, "SourceEntityArn", value.asInstanceOf[js.Any])
     

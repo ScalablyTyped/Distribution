@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Body")
 @js.native
-class Body () extends StObject {
+open class Body () extends StObject {
   
   /**
     * A `Number` specifying the angle of the body, in radians.
     *
     * @property angle
-    * @type number
+    * @type {number}
     * @default 0
     */
   var angle: Double = js.native
@@ -22,10 +22,10 @@ class Body () extends StObject {
     *
     * @readOnly
     * @property angularSpeed
-    * @type number
+    * @type {number}
     * @default 0
     */
-  var angularSpeed: Double = js.native
+  val angularSpeed: Double = js.native
   
   /**
     * A `Number` that _measures_ the current angular velocity of the body after the last `Body.update`. It is read-only.
@@ -33,16 +33,16 @@ class Body () extends StObject {
     *
     * @readOnly
     * @property angularVelocity
-    * @type number
+    * @type {number}
     * @default 0
     */
-  var angularVelocity: Double = js.native
+  val angularVelocity: Double = js.native
   
   /**
     * A `Number` that _measures_ the area of the body's convex hull, calculated at creation by `Body.create`.
     *
     * @property area
-    * @type string
+    * @type {number}
     * @default
     */
   var area: Double = js.native
@@ -53,7 +53,7 @@ class Body () extends StObject {
     * They are constantly updated by `Body.update` during the simulation.
     *
     * @property axes
-    * @type vector[]
+    * @type {Vector[]}
     */
   var axes: js.Array[Vector] = js.native
   
@@ -62,7 +62,7 @@ class Body () extends StObject {
     * It is automatically calculated from the given convex hull (`vertices` array) in `Body.create` and constantly updated by `Body.update` during simulation.
     *
     * @property bounds
-    * @type bounds
+    * @type {Bounds}
     */
   var bounds: Bounds = js.native
   
@@ -71,6 +71,7 @@ class Body () extends StObject {
     * May have a value of `null` if the body is no longer a circle (i.e. was scaled with a scaleX != scaleY).
     *
     * @property circleRadius
+    * @type {number  | undefined}
     * @default 0
     */
   var circleRadius: js.UndefOr[Double] = js.native
@@ -98,7 +99,7 @@ class Body () extends StObject {
     * are both true.
     *
     * @property collisionFilter
-    * @type object
+    * @type {ICollisionFilter}
     */
   var collisionFilter: ICollisionFilter = js.native
   
@@ -108,7 +109,7 @@ class Body () extends StObject {
     * This is generally preferable to simply setting mass and allows for more intuitive definition of materials (e.g. rock has a higher density than wood).
     *
     * @property density
-    * @type number
+    * @type {number}
     * @default 0.001
     */
   var density: Double = js.native
@@ -117,7 +118,7 @@ class Body () extends StObject {
     * A `Vector` that specifies the force to apply in the current step. It is zeroed after every `Body.update`. See also `Body.applyForce`.
     *
     * @property force
-    * @type vector
+    * @type {Vector}
     * @default { x: 0, y: 0 }
     */
   var force: Vector = js.native
@@ -135,7 +136,7 @@ class Body () extends StObject {
     *     Math.min(bodyA.friction, bodyB.friction)
     *
     * @property friction
-    * @type number
+    * @type {number}
     * @default 0.1
     */
   var friction: Double = js.native
@@ -147,7 +148,7 @@ class Body () extends StObject {
     * The effects of the value are non-linear.
     *
     * @property frictionAir
-    * @type number
+    * @type {number}
     * @default 0.01
     */
   var frictionAir: Double = js.native
@@ -159,7 +160,7 @@ class Body () extends StObject {
     * This value is multiplied with the `friction` property to make it easier to change `friction` and maintain an appropriate amount of static friction.
     *
     * @property frictionStatic
-    * @type number
+    * @type {number}
     * @default 0.5
     */
   var frictionStatic: Double = js.native
@@ -168,7 +169,7 @@ class Body () extends StObject {
     * An integer `Number` uniquely identifying number generated in `Body.create` by `Common.nextId`.
     *
     * @property id
-    * @type number
+    * @type {number}
     */
   var id: Double = js.native
   
@@ -178,7 +179,7 @@ class Body () extends StObject {
     * If you modify this value, you must also modify the `body.inverseInertia` property (`1 / inertia`).
     *
     * @property inertia
-    * @type number
+    * @type {number}
     */
   var inertia: Double = js.native
   
@@ -187,7 +188,7 @@ class Body () extends StObject {
     * If you modify this value, you must also modify the `body.inertia` property.
     *
     * @property inverseInertia
-    * @type number
+    * @type {number}
     */
   var inverseInertia: Double = js.native
   
@@ -196,7 +197,7 @@ class Body () extends StObject {
     * If you modify this value, you must also modify the `body.mass` property.
     *
     * @property inverseMass
-    * @type number
+    * @type {number}
     */
   var inverseMass: Double = js.native
   
@@ -204,7 +205,7 @@ class Body () extends StObject {
     * A flag that indicates whether a body is a sensor. Sensor triggers collision events, but doesn't react with colliding body physically.
     *
     * @property isSensor
-    * @type boolean
+    * @type {boolean}
     * @default false
     */
   var isSensor: Boolean = js.native
@@ -214,7 +215,7 @@ class Body () extends StObject {
     * If you need to set a body as sleeping, you should use `Sleeping.set` as this requires more than just setting this flag.
     *
     * @property isSleeping
-    * @type boolean
+    * @type {boolean}
     * @default false
     */
   var isSleeping: Boolean = js.native
@@ -224,7 +225,7 @@ class Body () extends StObject {
     * If you need to set a body as static after its creation, you should use `Body.setStatic` as this requires more than just setting this flag.
     *
     * @property isStatic
-    * @type boolean
+    * @type {boolean}
     * @default false
     */
   var isStatic: Boolean = js.native
@@ -233,7 +234,7 @@ class Body () extends StObject {
     * An arbitrary `String` name to help the user identify and manage bodies.
     *
     * @property label
-    * @type string
+    * @type {string}
     * @default "Body"
     */
   var label: String = js.native
@@ -243,7 +244,7 @@ class Body () extends StObject {
     * If you modify this value, you must also modify the `body.inverseMass` property (`1 / mass`).
     *
     * @property mass
-    * @type number
+    * @type {number}
     */
   var mass: Double = js.native
   
@@ -253,10 +254,10 @@ class Body () extends StObject {
     *
     * @readOnly
     * @property motion
-    * @type number
+    * @type {number}
     * @default 0
     */
-  var motion: Double = js.native
+  val motion: Double = js.native
   
   /**
     * A self reference if the body is _not_ a part of another body.
@@ -264,7 +265,7 @@ class Body () extends StObject {
     * See `body.parts`.
     *
     * @property parent
-    * @type body
+    * @type {Body}
     */
   var parent: Body = js.native
   
@@ -277,7 +278,7 @@ class Body () extends StObject {
     * Use `Body.setParts` when setting parts to ensure correct updates of all properties.
     *
     * @property parts
-    * @type body[]
+    * @type {Body[]}
     */
   var parts: js.Array[Body] = js.native
   
@@ -286,21 +287,22 @@ class Body () extends StObject {
     *
     * @property plugin
     */
-  var plugin: js.Any = js.native
+  var plugin: Any = js.native
   
   /**
     * A `Vector` that specifies the current world-space position of the body.
     *
     * @property position
-    * @type vector
-    * @default { x: 0, y:      */
+    * @type {Vector}
+    * @default { x: 0, y: 0 }
+    */
   var position: Vector = js.native
   
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
     *
     * @property render
-    * @type object
+    * @type {any}
     */
   var render: IBodyRenderOptions = js.native
   
@@ -313,7 +315,7 @@ class Body () extends StObject {
     *     Math.max(bodyA.restitution, bodyB.restitution)
     *
     * @property restitution
-    * @type number
+    * @type {number}
     * @default 0
     */
   var restitution: Double = js.native
@@ -322,7 +324,7 @@ class Body () extends StObject {
     * A `Number` that defines the number of updates in which this body must have near-zero velocity before it is set as sleeping by the `Matter.Sleeping` module (if sleeping is enabled by the engine).
     *
     * @property sleepThreshold
-    * @type number
+    * @type {number}
     * @default 60
     */
   var sleepThreshold: Double = js.native
@@ -333,7 +335,7 @@ class Body () extends StObject {
     * The default should generally suffice, although very large bodies may require larger values for stable stacking.
     *
     * @property slop
-    * @type number
+    * @type {number}
     * @default 0.05
     */
   var slop: Double = js.native
@@ -343,16 +345,16 @@ class Body () extends StObject {
     *
     * @readOnly
     * @property speed
-    * @type number
+    * @type {number}
     * @default 0
     */
-  var speed: Double = js.native
+  val speed: Double = js.native
   
   /**
     * A `Number` that allows per-body time scaling, e.g. a force-field where bodies inside are in slow-motion, while others are at full speed.
     *
     * @property timeScale
-    * @type number
+    * @type {number}
     * @default 1
     */
   var timeScale: Double = js.native
@@ -361,7 +363,7 @@ class Body () extends StObject {
     * A `Number` that specifies the torque (turning force) to apply in the current step. It is zeroed after every `Body.update`.
     *
     * @property torque
-    * @type number
+    * @type {number}
     * @default 0
     */
   var torque: Double = js.native
@@ -370,7 +372,7 @@ class Body () extends StObject {
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string}
     * @default "body"
     */
   var `type`: String = js.native
@@ -381,10 +383,10 @@ class Body () extends StObject {
     *
     * @readOnly
     * @property velocity
-    * @type vector
+    * @type {Vector}
     * @default { x: 0, y: 0 }
     */
-  var velocity: Vector = js.native
+  val velocity: Vector = js.native
   
   /**
     * An array of `Vector` objects that specify the convex hull of the rigid body.
@@ -399,7 +401,7 @@ class Body () extends StObject {
     * Concave hulls are not currently supported. The module `Matter.Vertices` contains useful methods for working with vertices.
     *
     * @property vertices
-    * @type vector[]
+    * @type {Vector[]}
     */
   var vertices: js.Array[Vector] = js.native
 }
@@ -413,9 +415,9 @@ object Body {
   /**
     * Applies a force to a body from a given world-space position, including resulting torque.
     * @method applyForce
-    * @param {body} body
-    * @param {vector} position
-    * @param {vector} force
+    * @param {Body} body
+    * @param {Vector} position
+    * @param {Vector} force
     */
   inline def applyForce(body: Body, position: Vector, force: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyForce")(body.asInstanceOf[js.Any], position.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -425,7 +427,7 @@ object Body {
     * See the properties section below for detailed information on what you can pass via the `options` object.
     * @method create
     * @param {} options
-    * @return {body} body
+    * @returns {Body} body
     */
   inline def create(options: IBodyDefinition): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Body]
   
@@ -433,7 +435,7 @@ object Body {
     * Returns the next unique category bitfield (starting after the initial default category `0x0001`).
     * There are 32 available. See `body.collisionFilter` for more information.
     * @method nextCategory
-    * @return {Number} Unique category bitfield
+    * @returns {Number} Unique category bitfield
     */
   inline def nextCategory(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextCategory")().asInstanceOf[Double]
   
@@ -442,15 +444,15 @@ object Body {
     * If `isNonColliding` is `true`, returns the next unique group index for which bodies will _not_ collide.
     * See `body.collisionFilter` for more information.
     * @method nextGroup
-    * @param {bool} [isNonColliding=false]
-    * @return {Number} Unique group index
+    * @param {boolean} [isNonColliding=false]
+    * @returns {Number} Unique group index
     */
   inline def nextGroup(isNonColliding: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextGroup")(isNonColliding.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Rotates a body by a given angle relative to its current angle, without imparting any angular velocity.
     * @method rotate
-    * @param {body} body
+    * @param {Body} body
     * @param {number} rotation
     */
   inline def rotate(body: Body, rotation: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(body.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -458,10 +460,10 @@ object Body {
   /**
     * Scales the body, including updating physical properties (mass, area, axes, inertia), from a world-space point (default is body centre).
     * @method scale
-    * @param {body} body
+    * @param {Body} body
     * @param {number} scaleX
     * @param {number} scaleY
-    * @param {vector} [point]
+    * @param {Vector} [point]
     */
   inline def scale(body: Body, scaleX: Double, scaleY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(body.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def scale(body: Body, scaleX: Double, scaleY: Double, point: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(body.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -470,17 +472,17 @@ object Body {
     * Given a property and a value (or map of), sets the property(s) on the body, using the appropriate setter functions if they exist.
     * Prefer to use the actual setter functions in performance critical situations.
     * @method set
-    * @param {body} body
+    * @param {Body} body
     * @param {} settings A property name (or map of properties and values) to set on the body.
     * @param {} value The value to set if `settings` is a single property name.
     */
-  inline def set(body: Body, settings: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def set(body: Body, settings: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(body: Body, settings: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(body: Body, settings: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the angle of the body instantly. Angular velocity, position, force etc. are unchanged.
     * @method setAngle
-    * @param {body} body
+    * @param {Body} body
     * @param {number} angle
     */
   inline def setAngle(body: Body, angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAngle")(body.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -488,7 +490,7 @@ object Body {
   /**
     * Sets the angular velocity of the body instantly. Position, angle, force etc. are unchanged. See also `Body.applyForce`.
     * @method setAngularVelocity
-    * @param {body} body
+    * @param {Body} body
     * @param {number} velocity
     */
   inline def setAngularVelocity(body: Body, velocity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAngularVelocity")(body.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -510,7 +512,7 @@ object Body {
   /**
     * Sets the density of the body. Mass is automatically updated to reflect the change.
     * @method setDensity
-    * @param {body} body
+    * @param {Body} body
     * @param {number} density
     */
   inline def setDensity(body: Body, density: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDensity")(body.asInstanceOf[js.Any], density.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -519,7 +521,7 @@ object Body {
     * Sets the moment of inertia (i.e. second moment of area) of the body of the body.
     * Inverse inertia is automatically updated to reflect the change. Mass is not changed.
     * @method setInertia
-    * @param {body} body
+    * @param {Body} body
     * @param {number} inertia
     */
   inline def setInertia(body: Body, interna: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInertia")(body.asInstanceOf[js.Any], interna.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -527,7 +529,7 @@ object Body {
   /**
     * Sets the mass of the body. Inverse mass and density are automatically updated to reflect the change.
     * @method setMass
-    * @param {body} body
+    * @param {Body} body
     * @param {number} mass
     */
   inline def setMass(body: Body, mass: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMass")(body.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -538,9 +540,9 @@ object Body {
     * By default the convex hull will be automatically computed and set on `body`, unless `autoHull` is set to `false.`
     * Note that this method will ensure that the first part in `body.parts` will always be the `body`.
     * @method setParts
-    * @param {body} body
+    * @param {Body} body
     * @param [body] parts
-    * @param {bool} [autoHull=true]
+    * @param {boolean} [autoHull=true]
     */
   inline def setParts(body: Body, parts: js.Array[Body]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParts")(body.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setParts(body: Body, parts: js.Array[Body], autoHull: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParts")(body.asInstanceOf[js.Any], parts.asInstanceOf[js.Any], autoHull.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -548,24 +550,24 @@ object Body {
   /**
     * Sets the position of the body instantly. Velocity, angle, force etc. are unchanged.
     * @method setPosition
-    * @param {body} body
-    * @param {vector} position
+    * @param {Body} body
+    * @param {Vector} position
     */
   inline def setPosition(body: Body, position: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(body.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the body as static, including isStatic flag and setting mass and inertia to Infinity.
     * @method setStatic
-    * @param {body} body
-    * @param {bool} isStatic
+    * @param {Body} body
+    * @param {boolean} isStatic
     */
   inline def setStatic(body: Body, isStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(body.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the linear velocity of the body instantly. Position, angle, force etc. are unchanged. See also `Body.applyForce`.
     * @method setVelocity
-    * @param {body} body
-    * @param {vector} velocity
+    * @param {Body} body
+    * @param {Vector} velocity
     */
   inline def setVelocity(body: Body, velocity: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVelocity")(body.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -578,23 +580,23 @@ object Body {
     * Vertices must form a convex hull, concave hulls are not supported.
     *
     * @method setVertices
-    * @param {body} body
-    * @param {vector[]} vertices
+    * @param {Body} body
+    * @param {Vector[]} vertices
     */
   inline def setVertices(body: Body, vertices: js.Array[Vector]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVertices")(body.asInstanceOf[js.Any], vertices.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Moves a body by a given vector relative to its current position, without imparting any velocity.
     * @method translate
-    * @param {body} body
-    * @param {vector} translation
+    * @param {Body} body
+    * @param {Vector} translation
     */
   inline def translate(body: Body, translation: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(body.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Performs a simulation step for the given `body`, including updating position and angle using Verlet integration.
     * @method update
-    * @param {body} body
+    * @param {Body} body
     * @param {number} deltaTime
     * @param {number} timeScale
     * @param {number} correction

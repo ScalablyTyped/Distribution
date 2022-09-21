@@ -33,11 +33,11 @@ object mod {
       
       inline def setCells(value: js.Array[Cell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      inline def setCellsVarargs(value: Cell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: Cell*): Self = StObject.set(x, "cells", js.Array(value*))
       
       inline def setPositions(value: js.Array[Point]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      inline def setPositionsVarargs(value: Point*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: Point*): Self = StObject.set(x, "positions", js.Array(value*))
     }
   }
 }

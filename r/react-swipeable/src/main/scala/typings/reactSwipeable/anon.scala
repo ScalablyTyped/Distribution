@@ -23,4 +23,21 @@ object anon {
       inline def setEvent(value: HandledEvents): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait Passive extends StObject {
+    
+    var passive: Boolean
+  }
+  object Passive {
+    
+    inline def apply(passive: Boolean): Passive = {
+      val __obj = js.Dynamic.literal(passive = passive.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Passive]
+    }
+    
+    extension [Self <: Passive](x: Self) {
+      
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+    }
+  }
 }

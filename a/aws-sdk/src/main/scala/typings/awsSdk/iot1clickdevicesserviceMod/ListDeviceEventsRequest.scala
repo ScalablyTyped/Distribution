@@ -16,7 +16,7 @@ trait ListDeviceEventsRequest extends StObject {
     2018-03-28T15:45:12.880Z
     
     */
-  var FromTimeStamp: timestampIso8601
+  var FromTimeStamp: js.Date
   
   /**
     * The maximum number of results to return per request. If not set, a default value of
@@ -34,11 +34,11 @@ trait ListDeviceEventsRequest extends StObject {
     2018-03-28T15:45:12.880Z
     
     */
-  var ToTimeStamp: timestampIso8601
+  var ToTimeStamp: js.Date
 }
 object ListDeviceEventsRequest {
   
-  inline def apply(DeviceId: string, FromTimeStamp: timestampIso8601, ToTimeStamp: timestampIso8601): ListDeviceEventsRequest = {
+  inline def apply(DeviceId: string, FromTimeStamp: js.Date, ToTimeStamp: js.Date): ListDeviceEventsRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], FromTimeStamp = FromTimeStamp.asInstanceOf[js.Any], ToTimeStamp = ToTimeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeviceEventsRequest]
   }
@@ -47,7 +47,7 @@ object ListDeviceEventsRequest {
     
     inline def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    inline def setFromTimeStamp(value: timestampIso8601): Self = StObject.set(x, "FromTimeStamp", value.asInstanceOf[js.Any])
+    inline def setFromTimeStamp(value: js.Date): Self = StObject.set(x, "FromTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -57,6 +57,6 @@ object ListDeviceEventsRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setToTimeStamp(value: timestampIso8601): Self = StObject.set(x, "ToTimeStamp", value.asInstanceOf[js.Any])
+    inline def setToTimeStamp(value: js.Date): Self = StObject.set(x, "ToTimeStamp", value.asInstanceOf[js.Any])
   }
 }

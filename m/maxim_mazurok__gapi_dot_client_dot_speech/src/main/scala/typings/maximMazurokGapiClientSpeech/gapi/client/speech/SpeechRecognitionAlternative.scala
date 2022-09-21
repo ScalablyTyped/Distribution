@@ -13,7 +13,10 @@ trait SpeechRecognitionAlternative extends StObject {
     */
   var confidence: js.UndefOr[Double] = js.undefined
   
-  /** Transcript text representing the words that the user spoke. */
+  /**
+    * Transcript text representing the words that the user spoke. In languages that use spaces to separate words, the transcript might have a leading space if it isn't the first result.
+    * You can concatenate each result to obtain the full transcript without using a separator.
+    */
   var transcript: js.UndefOr[String] = js.undefined
   
   /** A list of word-specific information for each recognized word. Note: When `enable_speaker_diarization` is true, you will see all the words from the beginning of the audio. */
@@ -40,6 +43,6 @@ object SpeechRecognitionAlternative {
     
     inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    inline def setWordsVarargs(value: WordInfo*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: WordInfo*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

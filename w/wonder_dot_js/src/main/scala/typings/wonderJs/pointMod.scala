@@ -8,7 +8,7 @@ object pointMod {
   
   @JSImport("wonder.js/dist/es2015/structure/Point", "Point")
   @js.native
-  class Point () extends StObject {
+  open class Point () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()

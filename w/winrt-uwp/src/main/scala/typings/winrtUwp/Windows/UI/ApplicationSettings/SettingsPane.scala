@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SettingsPane extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_commandsrequested(
     `type`: commandsrequested,
@@ -25,7 +25,7 @@ trait SettingsPane extends StObject {
   @JSName("oncommandsrequested")
   var oncommandsrequested_Original: TypedEventHandler[SettingsPane, SettingsPaneCommandsRequestedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_commandsrequested(
     `type`: commandsrequested,

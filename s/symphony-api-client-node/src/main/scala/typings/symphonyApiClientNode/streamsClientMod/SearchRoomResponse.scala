@@ -38,7 +38,7 @@ object SearchRoomResponse {
     
     inline def setFacetedMatchCount(value: js.Array[FacetedMatch]): Self = StObject.set(x, "facetedMatchCount", value.asInstanceOf[js.Any])
     
-    inline def setFacetedMatchCountVarargs(value: FacetedMatch*): Self = StObject.set(x, "facetedMatchCount", js.Array(value :_*))
+    inline def setFacetedMatchCountVarargs(value: FacetedMatch*): Self = StObject.set(x, "facetedMatchCount", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

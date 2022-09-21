@@ -29,7 +29,7 @@ object DescribeAddressesResult {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "Addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "Addresses", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

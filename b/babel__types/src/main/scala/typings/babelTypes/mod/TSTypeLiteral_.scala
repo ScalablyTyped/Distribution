@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSTypeLiteral_
   extends StObject
      with BaseNode
-     with TSType {
+     with TSType
+     with TypeScript {
   
   var members: js.Array[TSTypeElement]
   
@@ -28,7 +29,7 @@ object TSTypeLiteral_ {
     
     inline def setMembers(value: js.Array[TSTypeElement]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: TSTypeElement*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: TSTypeElement*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setType(value: TSTypeLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for spdx-correct
 
-Typings are for version 2.0
+Typings are for version 3.1
 
 ## Library description:
 correct invalid SPDX expressions
@@ -10,10 +10,10 @@ correct invalid SPDX expressions
 | ------------------ | :-------------: |
 | Full name          | spdx-correct |
 | Keywords           | SPDX, law, legal, license, metadata |
-| # releases         | 2 |
-| # dependents       | 145 |
-| # downloads        | 703005280 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8.614262533333333E7 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/jslicense/spdx-correct.js#readme)

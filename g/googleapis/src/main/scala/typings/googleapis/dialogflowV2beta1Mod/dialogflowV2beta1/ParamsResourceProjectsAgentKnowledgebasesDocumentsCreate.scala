@@ -1,9 +1,5 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,12 @@ trait ParamsResourceProjectsAgentKnowledgebasesDocumentsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Whether to import custom metadata from Google Cloud Storage. Only valid when the document source is Google Cloud Storage URI.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var importGcsCustomMetadata: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Required. The knoweldge base to create a document for. Format:
-    * `projects/<Project ID>/knowledgeBases/<Knowledge Base ID>`.
+    * Required. The knowledge base to create a document for. Format: `projects//locations//knowledgeBases/`.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -37,9 +32,9 @@ object ParamsResourceProjectsAgentKnowledgebasesDocumentsCreate {
   
   extension [Self <: ParamsResourceProjectsAgentKnowledgebasesDocumentsCreate](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setImportGcsCustomMetadata(value: Boolean): Self = StObject.set(x, "importGcsCustomMetadata", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setImportGcsCustomMetadataUndefined: Self = StObject.set(x, "importGcsCustomMetadata", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

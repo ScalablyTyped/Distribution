@@ -15,8 +15,8 @@ object modalMod {
   
   @JSImport("react-bootstrap/lib/Modal", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ModalProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ModalProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Modal", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -24,7 +24,7 @@ object modalMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.modalBodyMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Modal", "Body")
@@ -35,7 +35,7 @@ object modalMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Dialog")
   @js.native
-  class Dialog ()
+  open class Dialog ()
     extends typings.reactBootstrap.modalDialogMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Modal", "Dialog")
@@ -46,7 +46,7 @@ object modalMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Footer")
   @js.native
-  class Footer ()
+  open class Footer ()
     extends typings.reactBootstrap.modalFooterMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Modal", "Footer")
@@ -57,7 +57,7 @@ object modalMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Header")
   @js.native
-  class Header ()
+  open class Header ()
     extends typings.reactBootstrap.modalHeaderMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Modal", "Header")
@@ -68,7 +68,7 @@ object modalMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Modal", "Title")
   @js.native
-  class Title ()
+  open class Title ()
     extends typings.reactBootstrap.modalTitleMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Modal", "Title")
@@ -76,9 +76,7 @@ object modalMod {
   def Title: Instantiable0[typings.reactBootstrap.modalTitleMod.^] = js.native
   inline def Title_=(x: Instantiable0[typings.reactBootstrap.modalTitleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Modal
-    extends Component[ModalProps, js.Object, js.Any]
+  type Modal = Component[ModalProps, js.Object, Any]
   
   trait ModalProps
     extends StObject
@@ -92,7 +90,7 @@ object modalMod {
     
     var backdropClassName: js.UndefOr[String] = js.undefined
     
-    var backdropStyle: js.UndefOr[js.Any] = js.undefined
+    var backdropStyle: js.UndefOr[Any] = js.undefined
     
     var backdropTransitionTimeout: js.UndefOr[Double] = js.undefined
     
@@ -100,14 +98,14 @@ object modalMod {
     
     var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var container: js.UndefOr[js.Any] = js.undefined
+    var container: js.UndefOr[Any] = js.undefined
     
     // TODO: Add more specific type
     var containerClassName: js.UndefOr[String] = js.undefined
     
     var dialogClassName: js.UndefOr[String] = js.undefined
     
-    var dialogComponent: js.UndefOr[js.Any] = js.undefined
+    var dialogComponent: js.UndefOr[Any] = js.undefined
     
     // TODO: Add more specific type
     var dialogTransitionTimeout: js.UndefOr[Double] = js.undefined
@@ -116,19 +114,19 @@ object modalMod {
     
     var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var onBackdropClick: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+    var onBackdropClick: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
     
-    var onEscapeKeyDown: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+    var onEscapeKeyDown: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
     
     /**
       * @deprecated since Sept 25, 2017, use onEscapeKeyDown instead
       **/
-    var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+    var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
     
     // Required
     var onHide: js.Function
     
-    var onShow: js.UndefOr[js.Function1[/* node */ HTMLElement, js.Any]] = js.undefined
+    var onShow: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
     
     var restoreFocus: js.UndefOr[Boolean] = js.undefined
     
@@ -155,7 +153,7 @@ object modalMod {
       
       inline def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
       
-      inline def setBackdropStyle(value: js.Any): Self = StObject.set(x, "backdropStyle", value.asInstanceOf[js.Any])
+      inline def setBackdropStyle(value: Any): Self = StObject.set(x, "backdropStyle", value.asInstanceOf[js.Any])
       
       inline def setBackdropStyleUndefined: Self = StObject.set(x, "backdropStyle", js.undefined)
       
@@ -173,7 +171,7 @@ object modalMod {
       
       inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
@@ -185,7 +183,7 @@ object modalMod {
       
       inline def setDialogClassNameUndefined: Self = StObject.set(x, "dialogClassName", js.undefined)
       
-      inline def setDialogComponent(value: js.Any): Self = StObject.set(x, "dialogComponent", value.asInstanceOf[js.Any])
+      inline def setDialogComponent(value: Any): Self = StObject.set(x, "dialogComponent", value.asInstanceOf[js.Any])
       
       inline def setDialogComponentUndefined: Self = StObject.set(x, "dialogComponent", js.undefined)
       
@@ -201,21 +199,21 @@ object modalMod {
       
       inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      inline def setOnBackdropClick(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
+      inline def setOnBackdropClick(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
       
       inline def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
       
-      inline def setOnEscapeKeyDown(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
+      inline def setOnEscapeKeyDown(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
       
       inline def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
       
-      inline def setOnEscapeKeyUp(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onEscapeKeyUp", js.Any.fromFunction1(value))
+      inline def setOnEscapeKeyUp(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onEscapeKeyUp", js.Any.fromFunction1(value))
       
       inline def setOnEscapeKeyUpUndefined: Self = StObject.set(x, "onEscapeKeyUp", js.undefined)
       
       inline def setOnHide(value: js.Function): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
       
-      inline def setOnShow(value: /* node */ HTMLElement => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
       inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       

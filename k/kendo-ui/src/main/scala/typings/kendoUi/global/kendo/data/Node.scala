@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.Node")
 @js.native
-class Node ()
+open class Node ()
   extends StObject
      with typings.kendoUi.kendo.data.Node

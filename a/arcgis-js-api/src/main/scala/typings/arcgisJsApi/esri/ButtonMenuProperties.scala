@@ -9,6 +9,15 @@ trait ButtonMenuProperties
      with WidgetProperties {
   
   /**
+    * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#disabled)
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Adds a CSS class to the menu button's DOM node.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#iconClass)
@@ -23,7 +32,9 @@ trait ButtonMenuProperties
   var items: js.UndefOr[js.Array[ButtonMenuItemProperties]] = js.undefined
   
   /**
-    * Indicates if the menu content is visible.
+    * Indicates if the menu content is open and visible.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#open)
     */
@@ -45,6 +56,10 @@ object ButtonMenuProperties {
   
   extension [Self <: ButtonMenuProperties](x: Self) {
     
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
@@ -53,7 +68,7 @@ object ButtonMenuProperties {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

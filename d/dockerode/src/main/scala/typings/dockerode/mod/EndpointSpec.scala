@@ -27,6 +27,6 @@ object EndpointSpec {
     
     inline def setPortsUndefined: Self = StObject.set(x, "Ports", js.undefined)
     
-    inline def setPortsVarargs(value: PortConfig*): Self = StObject.set(x, "Ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: PortConfig*): Self = StObject.set(x, "Ports", js.Array(value*))
   }
 }

@@ -17,14 +17,14 @@ trait XAnyCompare
     * @param Any2 is the second compare value
     * @returns `-1` , if the first any is less than the second ( Any1 < Any2 )`0` , if the first any is equal to the second ( Any1 == Any2 )`+1` , if the first
     */
-  def compare(Any1: js.Any, Any2: js.Any): Double
+  def compare(Any1: Any, Any2: Any): Double
 }
 object XAnyCompare {
   
   inline def apply(
     acquire: () => Unit,
-    compare: (js.Any, js.Any) => Double,
-    queryInterface: `type` => js.Any,
+    compare: (Any, Any) => Double,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAnyCompare = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compare = js.Any.fromFunction2(compare), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -33,6 +33,6 @@ object XAnyCompare {
   
   extension [Self <: XAnyCompare](x: Self) {
     
-    inline def setCompare(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (Any, Any) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
   }
 }

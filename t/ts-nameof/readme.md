@@ -10,15 +10,12 @@ nameof in TypeScript
 | ------------------ | :-------------: |
 | Full name          | ts-nameof |
 | Keywords           | nameof, typescript, transformer, custom-transformer |
-| # releases         | 14 |
-| # dependents       | 12 |
-| # downloads        | 214879 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 26949.0 |
+| # stars            | 441.0 |
 
 ## Links
-- [Homepage](https://github.com/dsherret/ts-nameof#readme)
-- [Bugs](https://github.com/dsherret/ts-nameof/issues)
-- [Repository](https://github.com/dsherret/ts-nameof)
 - [Npm](https://www.npmjs.com/package/ts-nameof)
     
 

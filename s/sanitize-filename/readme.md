@@ -10,10 +10,10 @@ Sanitize a string for use as a filename
 | ------------------ | :-------------: |
 | Full name          | sanitize-filename |
 | Keywords           | file, name, filename, sanitize, validate, escape |
-| # releases         | 3 |
-| # dependents       | 678 |
-| # downloads        | 38935217 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5577027.0 |
+| # stars            | 282.0 |
 
 ## Links
 - [Homepage](https://github.com/parshap/node-sanitize-filename#readme)

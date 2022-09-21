@@ -35,6 +35,9 @@ trait Zone extends StObject {
   
   /** [Output Only] Status of the zone, either UP or DOWN. */
   var status: js.UndefOr[String] = js.undefined
+  
+  /** [Output Only] Reserved for future use. */
+  var supportsPzs: js.UndefOr[Boolean] = js.undefined
 }
 object Zone {
   
@@ -49,7 +52,7 @@ object Zone {
     
     inline def setAvailableCpuPlatformsUndefined: Self = StObject.set(x, "availableCpuPlatforms", js.undefined)
     
-    inline def setAvailableCpuPlatformsVarargs(value: String*): Self = StObject.set(x, "availableCpuPlatforms", js.Array(value :_*))
+    inline def setAvailableCpuPlatformsVarargs(value: String*): Self = StObject.set(x, "availableCpuPlatforms", js.Array(value*))
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
@@ -86,5 +89,9 @@ object Zone {
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setSupportsPzs(value: Boolean): Self = StObject.set(x, "supportsPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsPzsUndefined: Self = StObject.set(x, "supportsPzs", js.undefined)
   }
 }

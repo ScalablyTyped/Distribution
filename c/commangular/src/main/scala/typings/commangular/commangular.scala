@@ -1,7 +1,6 @@
 package typings.commangular
 
 import typings.angular.mod.IPromise
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -138,8 +137,8 @@ object commangular {
       * @param eventName Name of the even that will trigger a command sequence
       * @param data Data of any type that will be passed to the command.
       */
-    def dispatch(eventName: String): IPromise[js.Any] = js.native
-    def dispatch(eventName: String, data: js.Any): IPromise[js.Any] = js.native
+    def dispatch(eventName: String): IPromise[Any] = js.native
+    def dispatch(eventName: String, data: Any): IPromise[Any] = js.native
   }
   
   ///////////////////////////////////////////////////////////////////////////
@@ -243,18 +242,18 @@ object commangular {
       * This function is what gets called when the command executes.
       * It can take parameters in as injected by angular
       */
-    def execute(): js.Any
+    def execute(): Any
   }
   object ICommand {
     
-    inline def apply(execute: () => js.Any): ICommand = {
+    inline def apply(execute: () => Any): ICommand = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
       __obj.asInstanceOf[ICommand]
     }
     
     extension [Self <: ICommand](x: Self) {
       
-      inline def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     }
   }
   
@@ -269,7 +268,7 @@ object commangular {
     /**
       * Data that needs to be passed to the command
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
   }
   object ICommandCall {
     
@@ -282,7 +281,7 @@ object commangular {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
@@ -334,22 +333,22 @@ object commangular {
       * The data that was passed into the command
       * @param key The property name that is in the object that was passed
       */
-    def dataPassed(key: String): js.Any
+    def dataPassed(key: String): Any
     
     /**
       * The data that was returned by the command
       * @param key The result key that was defined in the command. If no result
       *         was defined use 'lastResult' as the key
       */
-    def resultKey(key: String): js.Any
+    def resultKey(key: String): Any
   }
   object ICommandInfo {
     
     inline def apply(
       canceled: () => Boolean,
       commandExecuted: () => Boolean,
-      dataPassed: String => js.Any,
-      resultKey: String => js.Any
+      dataPassed: String => Any,
+      resultKey: String => Any
     ): ICommandInfo = {
       val __obj = js.Dynamic.literal(canceled = js.Any.fromFunction0(canceled), commandExecuted = js.Any.fromFunction0(commandExecuted), dataPassed = js.Any.fromFunction1(dataPassed), resultKey = js.Any.fromFunction1(resultKey))
       __obj.asInstanceOf[ICommandInfo]
@@ -361,9 +360,9 @@ object commangular {
       
       inline def setCommandExecuted(value: () => Boolean): Self = StObject.set(x, "commandExecuted", js.Any.fromFunction0(value))
       
-      inline def setDataPassed(value: String => js.Any): Self = StObject.set(x, "dataPassed", js.Any.fromFunction1(value))
+      inline def setDataPassed(value: String => Any): Self = StObject.set(x, "dataPassed", js.Any.fromFunction1(value))
       
-      inline def setResultKey(value: String => js.Any): Self = StObject.set(x, "resultKey", js.Any.fromFunction1(value))
+      inline def setResultKey(value: String => Any): Self = StObject.set(x, "resultKey", js.Any.fromFunction1(value))
     }
   }
   
@@ -377,18 +376,18 @@ object commangular {
     /**
       * By defualt the result of the command will be found in this property
       */
-    var lastResult: js.Any
+    var lastResult: Any
   }
   object ICommandResult {
     
-    inline def apply(lastResult: js.Any): ICommandResult = {
+    inline def apply(lastResult: Any): ICommandResult = {
       val __obj = js.Dynamic.literal(lastResult = lastResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICommandResult]
     }
     
     extension [Self <: ICommandResult](x: Self) {
       
-      inline def setLastResult(value: js.Any): Self = StObject.set(x, "lastResult", value.asInstanceOf[js.Any])
+      inline def setLastResult(value: Any): Self = StObject.set(x, "lastResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,7 +399,7 @@ object commangular {
       * Is executed when the executed method ends with an error. Can receive the error throw by the execute method.
       * @param error The error that occured during execution
       */
-    def onError(error: Error): Unit
+    def onError(error: js.Error): Unit
     
     /**
       * Is executed after the execute method and the interception chain and can receive
@@ -408,20 +407,20 @@ object commangular {
       *
       * @param result Value/object returned by the execution.
       */
-    def onResult(result: js.Any): Unit
+    def onResult(result: Any): Unit
   }
   object IResultCommand {
     
-    inline def apply(execute: () => js.Any, onError: Error => Unit, onResult: js.Any => Unit): IResultCommand = {
+    inline def apply(execute: () => Any, onError: js.Error => Unit, onResult: Any => Unit): IResultCommand = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), onError = js.Any.fromFunction1(onError), onResult = js.Any.fromFunction1(onResult))
       __obj.asInstanceOf[IResultCommand]
     }
     
     extension [Self <: IResultCommand](x: Self) {
       
-      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      inline def setOnResult(value: js.Any => Unit): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
+      inline def setOnResult(value: Any => Unit): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
     }
   }
 }

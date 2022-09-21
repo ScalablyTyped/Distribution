@@ -11,10 +11,10 @@ object cyclomaticComplexityRuleMod {
   
   @JSImport("tslint/lib/rules/cyclomaticComplexityRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    /* private */ def threshold: js.Any = js.native
+    /* private */ def threshold: Any = js.native
   }
   /* static members */
   object Rule {

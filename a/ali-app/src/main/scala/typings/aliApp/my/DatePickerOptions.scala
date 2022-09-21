@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 选择日期 https://docs.alipay.com/mini/api/ui-date
 trait DatePickerOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 初始选择的日期时间，默认当前时间 */
   var currentDate: String

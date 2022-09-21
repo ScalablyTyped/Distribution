@@ -9,7 +9,7 @@ trait IosMobileAppConfiguration
      with ManagedDeviceMobileAppConfiguration {
   
   // mdm app configuration Base64 binary.
-  var encodedSettingXml: js.UndefOr[NullableOption[Double]] = js.undefined
+  var encodedSettingXml: js.UndefOr[NullableOption[String]] = js.undefined
   
   // app configuration setting items.
   var settings: js.UndefOr[NullableOption[js.Array[AppConfigurationSettingItem]]] = js.undefined
@@ -23,7 +23,7 @@ object IosMobileAppConfiguration {
   
   extension [Self <: IosMobileAppConfiguration](x: Self) {
     
-    inline def setEncodedSettingXml(value: NullableOption[Double]): Self = StObject.set(x, "encodedSettingXml", value.asInstanceOf[js.Any])
+    inline def setEncodedSettingXml(value: NullableOption[String]): Self = StObject.set(x, "encodedSettingXml", value.asInstanceOf[js.Any])
     
     inline def setEncodedSettingXmlNull: Self = StObject.set(x, "encodedSettingXml", null)
     
@@ -35,6 +35,6 @@ object IosMobileAppConfiguration {
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    inline def setSettingsVarargs(value: AppConfigurationSettingItem*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: AppConfigurationSettingItem*): Self = StObject.set(x, "settings", js.Array(value*))
   }
 }

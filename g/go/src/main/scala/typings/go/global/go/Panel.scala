@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs an empty Panel of the given .type.
   * @param {EnumValue=} type If not supplied, the default Panel type is Panel.Position.
   */
-class Panel ()
+open class Panel ()
   extends typings.go.mod.Panel {
   def this(`type`: typings.go.mod.EnumValue) = this()
 }

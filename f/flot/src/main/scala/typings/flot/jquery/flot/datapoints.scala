@@ -23,11 +23,11 @@ object datapoints {
     
     inline def setFormat(value: js.Array[datapointFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatVarargs(value: datapointFormat*): Self = StObject.set(x, "format", js.Array(value :_*))
+    inline def setFormatVarargs(value: datapointFormat*): Self = StObject.set(x, "format", js.Array(value*))
     
     inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setPointsize(value: Double): Self = StObject.set(x, "pointsize", value.asInstanceOf[js.Any])
   }

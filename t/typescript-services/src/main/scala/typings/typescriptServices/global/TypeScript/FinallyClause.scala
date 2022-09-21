@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.FinallyClause")
 @js.native
-class FinallyClause protected ()
+open class FinallyClause protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.FinallyClause {
   def this(block: typings.typescriptServices.TypeScript.Block) = this()
   
   /* private */ /* CompleteClass */
-  var _astID: js.Any = js.native
+  var _astID: Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _postComments: js.Any = js.native
+  var _postComments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _preComments: js.Any = js.native
+  var _preComments: Any = js.native
   
   /* CompleteClass */
   var _start: Double = js.native

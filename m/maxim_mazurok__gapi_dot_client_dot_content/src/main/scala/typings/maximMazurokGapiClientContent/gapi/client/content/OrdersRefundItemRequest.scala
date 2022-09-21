@@ -38,7 +38,7 @@ object OrdersRefundItemRequest {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: OrdersCustomBatchRequestEntryRefundItemItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: OrdersCustomBatchRequestEntryRefundItemItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     

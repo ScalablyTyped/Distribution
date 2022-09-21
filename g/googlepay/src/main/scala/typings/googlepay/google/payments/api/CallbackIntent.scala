@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Options:
   *
+  * - `OFFER`:
+  *   Callback occurs when offer info is changed.
+  *
   * - `SHIPPING_ADDRESS`:
   *   Callback occurs when shipping address is changed.
   *
@@ -43,6 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   [[IntermediatePaymentData.paymentMethodData|`IntermediatePaymentData.paymentMethodData`]]
   */
 /* Rewritten from type alias, can be one of: 
+  - typings.googlepay.googlepayStrings.OFFER
   - typings.googlepay.googlepayStrings.SHIPPING_ADDRESS
   - typings.googlepay.googlepayStrings.SHIPPING_OPTION
   - typings.googlepay.googlepayStrings.PAYMENT_AUTHORIZATION
@@ -50,6 +54,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait CallbackIntent extends StObject
 object CallbackIntent {
+  
+  inline def OFFER: typings.googlepay.googlepayStrings.OFFER = "OFFER".asInstanceOf[typings.googlepay.googlepayStrings.OFFER]
   
   inline def PAYMENT_AUTHORIZATION: typings.googlepay.googlepayStrings.PAYMENT_AUTHORIZATION = "PAYMENT_AUTHORIZATION".asInstanceOf[typings.googlepay.googlepayStrings.PAYMENT_AUTHORIZATION]
   

@@ -29,7 +29,7 @@ object XTableChartsSupplier {
     Charts: XTableCharts,
     acquire: () => Unit,
     getCharts: () => XTableCharts,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTableChartsSupplier = {
     val __obj = js.Dynamic.literal(Charts = Charts.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getCharts = js.Any.fromFunction0(getCharts), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

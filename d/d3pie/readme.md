@@ -10,10 +10,10 @@ A highly configurable, re-usable library built on d3.js for creating clear, attr
 | ------------------ | :-------------: |
 | Full name          | d3pie |
 | Keywords           | d3, piecharts, charts, graphs |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 108044 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5368.666666666667 |
+| # stars            | 372.0 |
 
 ## Links
 - [Homepage](http://d3pie.org)

@@ -17,5 +17,5 @@ trait LabelClassConstructor
 Instantiable0[LabelClass]
      with Instantiable1[/* properties */ LabelClassProperties, LabelClass] {
   
-  def fromJSON(json: js.Any): LabelClass = js.native
+  def fromJSON(json: Any): LabelClass = js.native
 }

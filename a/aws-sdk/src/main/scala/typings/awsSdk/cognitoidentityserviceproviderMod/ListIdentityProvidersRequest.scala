@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListIdentityProvidersRequest extends StObject {
   
   /**
-    * The maximum number of identity providers to return.
+    * The maximum number of IdPs to return.
     */
   var MaxResults: js.UndefOr[ListProvidersLimitType] = js.undefined
   

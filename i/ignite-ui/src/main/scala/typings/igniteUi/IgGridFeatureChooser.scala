@@ -11,11 +11,11 @@ trait IgGridFeatureChooser
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var dropDownWidth: js.UndefOr[js.Any] = js.undefined
+  var dropDownWidth: js.UndefOr[Any] = js.undefined
   
   var featureChooserDropDownOpened: js.UndefOr[FeatureChooserDropDownOpenedEvent] = js.undefined
   
@@ -39,7 +39,7 @@ trait IgGridFeatureChooser
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   var menuToggling: js.UndefOr[MenuTogglingEvent] = js.undefined
   
@@ -62,7 +62,7 @@ object IgGridFeatureChooser {
     
     inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
-    inline def setDropDownWidth(value: js.Any): Self = StObject.set(x, "dropDownWidth", value.asInstanceOf[js.Any])
+    inline def setDropDownWidth(value: Any): Self = StObject.set(x, "dropDownWidth", value.asInstanceOf[js.Any])
     
     inline def setDropDownWidthUndefined: Self = StObject.set(x, "dropDownWidth", js.undefined)
     
@@ -94,7 +94,7 @@ object IgGridFeatureChooser {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

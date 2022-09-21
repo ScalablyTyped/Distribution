@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `26` extends StObject {
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle
+    * The color of a node. It use global palette
+    * [option.color](https://echarts.apache.org/en/option.html#color)
+    * by default.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.itemStyle.color
     */
-  var itemStyle: js.UndefOr[TextStyle] = js.undefined
+  var color: js.UndefOr[String] = js.undefined
 }
 object `26` {
   
@@ -20,8 +25,8 @@ object `26` {
   
   extension [Self <: `26`](x: Self) {
     
-    inline def setItemStyle(value: TextStyle): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

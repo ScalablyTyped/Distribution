@@ -10,10 +10,10 @@ Fast deep equal
 | ------------------ | :-------------: |
 | Full name          | fast-deep-equal |
 | Keywords           | fast, equal, deep-equal |
-| # releases         | 9 |
-| # dependents       | 729 |
-| # downloads        | 1092284341 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5671699566666666E8 |
+| # stars            | 1536.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/fast-deep-equal#readme)

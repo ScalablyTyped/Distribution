@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTextBoxContentMarginsCommand")
 @js.native
-class ChangeTextBoxContentMarginsCommand ()
+open class ChangeTextBoxContentMarginsCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTextBoxContentMarginsCommand {
   

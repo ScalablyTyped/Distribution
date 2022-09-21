@@ -1,0 +1,30 @@
+package typings.antvG2plot.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Radius extends StObject {
+  
+  var radius: Double
+  
+  var x: Double
+  
+  var y: Double
+}
+object Radius {
+  
+  inline def apply(radius: Double, x: Double, y: Double): Radius = {
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Radius]
+  }
+  
+  extension [Self <: Radius](x: Self) {
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
+}

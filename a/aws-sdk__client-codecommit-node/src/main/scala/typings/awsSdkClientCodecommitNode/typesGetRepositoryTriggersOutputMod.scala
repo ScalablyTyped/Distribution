@@ -48,7 +48,7 @@ object typesGetRepositoryTriggersOutputMod {
       
       inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
       
-      inline def setTriggersVarargs(value: UnmarshalledRepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+      inline def setTriggersVarargs(value: UnmarshalledRepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value*))
     }
   }
 }

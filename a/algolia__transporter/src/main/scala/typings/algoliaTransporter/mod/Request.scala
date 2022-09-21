@@ -16,7 +16,7 @@ trait Request extends StObject {
   /**
     * The data to transfer to the server.
     */
-  val data: js.UndefOr[(Record[String, js.Any]) | (js.Array[Record[String, js.Any]])] = js.undefined
+  val data: js.UndefOr[(Record[String, Any]) | (js.Array[Record[String, Any]])] = js.undefined
   
   /**
     * The method of the request. `GET`, etc.
@@ -41,11 +41,11 @@ object Request {
     
     inline def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
-    inline def setData(value: (Record[String, js.Any]) | (js.Array[Record[String, js.Any]])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: (Record[String, Any]) | (js.Array[Record[String, Any]])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (Record[String, Any])*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setMethod(value: MethodType): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

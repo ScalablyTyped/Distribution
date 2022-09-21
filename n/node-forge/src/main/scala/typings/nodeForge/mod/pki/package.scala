@@ -1,128 +1,123 @@
 package typings.nodeForge.mod.pki
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.nodeForge.anon.ValidityCheckDate
+import typings.nodeForge.mod.Bytes
+import typings.nodeForge.mod.Hex
+import typings.nodeForge.mod.asn1.Asn1
+import typings.nodeForge.mod.jsbn.BigInteger
+import typings.nodeForge.mod.pki.^
+import typings.nodeForge.mod.pki.ed25519.Key
+import typings.nodeForge.mod.util.ByteStringBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def certificateFromAsn1(obj: typings.nodeForge.mod.asn1.Asn1): typings.nodeForge.mod.pki.Certificate = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
-inline def certificateFromAsn1(obj: typings.nodeForge.mod.asn1.Asn1, computeHash: scala.Boolean): typings.nodeForge.mod.pki.Certificate = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromAsn1")(obj.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
+inline def certificateFromAsn1(obj: Asn1): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[Certificate]
+inline def certificateFromAsn1(obj: Asn1, computeHash: Boolean): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromAsn1")(obj.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any])).asInstanceOf[Certificate]
 
-inline def certificateFromPem(pem: typings.nodeForge.mod.pki.PEM): typings.nodeForge.mod.pki.Certificate = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
-inline def certificateFromPem(pem: typings.nodeForge.mod.pki.PEM, computeHash: scala.Boolean): typings.nodeForge.mod.pki.Certificate = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
-inline def certificateFromPem(pem: typings.nodeForge.mod.pki.PEM, computeHash: scala.Boolean, strict: scala.Boolean): typings.nodeForge.mod.pki.Certificate = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
-inline def certificateFromPem(pem: typings.nodeForge.mod.pki.PEM, computeHash: scala.Unit, strict: scala.Boolean): typings.nodeForge.mod.pki.Certificate = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
+inline def certificateFromPem(pem: PEM): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[Certificate]
+inline def certificateFromPem(pem: PEM, computeHash: Boolean): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+inline def certificateFromPem(pem: PEM, computeHash: Boolean, strict: Boolean): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+inline def certificateFromPem(pem: PEM, computeHash: Unit, strict: Boolean): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Certificate]
 
-inline def certificateToAsn1(cert: typings.nodeForge.mod.pki.Certificate): typings.nodeForge.mod.asn1.Asn1 = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateToAsn1")(cert.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.asn1.Asn1]
+inline def certificateToAsn1(cert: Certificate): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateToAsn1")(cert.asInstanceOf[js.Any]).asInstanceOf[Asn1]
 
-inline def certificateToPem(cert: typings.nodeForge.mod.pki.Certificate): typings.nodeForge.mod.pki.PEM = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateToPem")(cert.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PEM]
-inline def certificateToPem(cert: typings.nodeForge.mod.pki.Certificate, maxline: scala.Double): typings.nodeForge.mod.pki.PEM = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificateToPem")(cert.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.PEM]
+inline def certificateToPem(cert: Certificate): PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateToPem")(cert.asInstanceOf[js.Any]).asInstanceOf[PEM]
+inline def certificateToPem(cert: Certificate, maxline: Double): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateToPem")(cert.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[PEM]
 
-inline def certificationRequestFromPem(pem: typings.nodeForge.mod.pki.PEM): typings.nodeForge.mod.pki.Certificate = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
-inline def certificationRequestFromPem(pem: typings.nodeForge.mod.pki.PEM, computeHash: scala.Boolean): typings.nodeForge.mod.pki.Certificate = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
-inline def certificationRequestFromPem(pem: typings.nodeForge.mod.pki.PEM, computeHash: scala.Boolean, strict: scala.Boolean): typings.nodeForge.mod.pki.Certificate = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
-inline def certificationRequestFromPem(pem: typings.nodeForge.mod.pki.PEM, computeHash: scala.Unit, strict: scala.Boolean): typings.nodeForge.mod.pki.Certificate = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.Certificate]
+inline def certificationRequestFromAsn1(obj: Asn1): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[Certificate]
+inline def certificationRequestFromAsn1(obj: Asn1, computeHash: Boolean): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromAsn1")(obj.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any])).asInstanceOf[Certificate]
 
-inline def certificationRequestToPem(cert: typings.nodeForge.mod.pki.Certificate): typings.nodeForge.mod.pki.PEM = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestToPem")(cert.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PEM]
-inline def certificationRequestToPem(cert: typings.nodeForge.mod.pki.Certificate, maxline: scala.Double): typings.nodeForge.mod.pki.PEM = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestToPem")(cert.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.PEM]
+inline def certificationRequestFromPem(pem: PEM): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[Certificate]
+inline def certificationRequestFromPem(pem: PEM, computeHash: Boolean): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+inline def certificationRequestFromPem(pem: PEM, computeHash: Boolean, strict: Boolean): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+inline def certificationRequestFromPem(pem: PEM, computeHash: Unit, strict: Boolean): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestFromPem")(pem.asInstanceOf[js.Any], computeHash.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Certificate]
 
-inline def createCaStore(): typings.nodeForge.mod.pki.CAStore = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("createCaStore")().asInstanceOf[typings.nodeForge.mod.pki.CAStore]
-inline def createCaStore(certs: js.Array[typings.nodeForge.mod.pki.Certificate | typings.nodeForge.mod.pki.PEM]): typings.nodeForge.mod.pki.CAStore = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("createCaStore")(certs.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.CAStore]
+inline def certificationRequestToAsn1(cert: Certificate): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestToAsn1")(cert.asInstanceOf[js.Any]).asInstanceOf[Asn1]
 
-inline def createCertificate(): typings.nodeForge.mod.pki.Certificate = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("createCertificate")().asInstanceOf[typings.nodeForge.mod.pki.Certificate]
+inline def certificationRequestToPem(cert: Certificate): PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestToPem")(cert.asInstanceOf[js.Any]).asInstanceOf[PEM]
+inline def certificationRequestToPem(cert: Certificate, maxline: Double): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("certificationRequestToPem")(cert.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[PEM]
 
-inline def createCertificationRequest(): typings.nodeForge.mod.pki.Certificate = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("createCertificationRequest")().asInstanceOf[typings.nodeForge.mod.pki.Certificate]
+inline def createCaStore(): CAStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaStore")().asInstanceOf[CAStore]
+inline def createCaStore(certs: js.Array[Certificate | PEM]): CAStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaStore")(certs.asInstanceOf[js.Any]).asInstanceOf[CAStore]
 
-inline def decryptPrivateKeyInfo(obj: typings.nodeForge.mod.asn1.Asn1, password: java.lang.String): typings.nodeForge.mod.asn1.Asn1 = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("decryptPrivateKeyInfo")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.asn1.Asn1]
+inline def createCertificate(): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("createCertificate")().asInstanceOf[Certificate]
 
-inline def decryptRsaPrivateKey(pem: typings.nodeForge.mod.pki.PEM): typings.nodeForge.mod.pki.rsa.PrivateKey = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("decryptRsaPrivateKey")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.PrivateKey]
-inline def decryptRsaPrivateKey(pem: typings.nodeForge.mod.pki.PEM, passphrase: java.lang.String): typings.nodeForge.mod.pki.rsa.PrivateKey = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("decryptRsaPrivateKey")(pem.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PrivateKey]
+inline def createCertificationRequest(): CertificateRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("createCertificationRequest")().asInstanceOf[CertificateRequest]
 
-inline def encryptPrivateKeyInfo(obj: typings.nodeForge.mod.asn1.Asn1, password: java.lang.String): typings.nodeForge.mod.asn1.Asn1 = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("encryptPrivateKeyInfo")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.asn1.Asn1]
-inline def encryptPrivateKeyInfo(
-  obj: typings.nodeForge.mod.asn1.Asn1,
-  password: java.lang.String,
-  options: typings.nodeForge.mod.pki.EncryptionOptions
-): typings.nodeForge.mod.asn1.Asn1 = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("encryptPrivateKeyInfo")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.asn1.Asn1]
+inline def decryptPrivateKeyInfo(obj: Asn1, password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptPrivateKeyInfo")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
 
-inline def encryptRsaPrivateKey(privateKey: typings.nodeForge.mod.pki.PrivateKey, password: java.lang.String): typings.nodeForge.mod.pki.PEM = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("encryptRsaPrivateKey")(privateKey.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.PEM]
-inline def encryptRsaPrivateKey(
-  privateKey: typings.nodeForge.mod.pki.PrivateKey,
-  password: java.lang.String,
-  options: typings.nodeForge.mod.pki.EncryptionOptions
-): typings.nodeForge.mod.pki.PEM = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("encryptRsaPrivateKey")(privateKey.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.PEM]
+inline def decryptRsaPrivateKey(pem: PEM): typings.nodeForge.mod.pki.rsa.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decryptRsaPrivateKey")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.PrivateKey]
+inline def decryptRsaPrivateKey(pem: PEM, passphrase: String): typings.nodeForge.mod.pki.rsa.PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptRsaPrivateKey")(pem.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PrivateKey]
 
-inline def encryptedPrivateKeyFromPem(pem: typings.nodeForge.mod.pki.PEM): typings.nodeForge.mod.asn1.Asn1 = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("encryptedPrivateKeyFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.asn1.Asn1]
+inline def encryptPrivateKeyInfo(obj: Asn1, password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptPrivateKeyInfo")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+inline def encryptPrivateKeyInfo(obj: Asn1, password: String, options: EncryptionOptions): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptPrivateKeyInfo")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
 
-inline def encryptedPrivateKeyToPem(obj: typings.nodeForge.mod.asn1.Asn1): typings.nodeForge.mod.pki.PEM = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("encryptedPrivateKeyToPem")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PEM]
+inline def encryptRsaPrivateKey(privateKey: PrivateKey, password: String): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptRsaPrivateKey")(privateKey.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[PEM]
+inline def encryptRsaPrivateKey(privateKey: PrivateKey, password: String, options: EncryptionOptions): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptRsaPrivateKey")(privateKey.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PEM]
 
-inline def getPublicKeyFingerprint(publicKey: typings.nodeForge.mod.pki.PublicKey): typings.nodeForge.mod.util.ByteStringBuffer = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.util.ByteStringBuffer]
-inline def getPublicKeyFingerprint(
-  publicKey: typings.nodeForge.mod.pki.PublicKey,
-  options: typings.nodeForge.mod.pki.BinaryFingerprintOptions
-): typings.nodeForge.mod.Bytes = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.Bytes]
-inline def getPublicKeyFingerprint(
-  publicKey: typings.nodeForge.mod.pki.PublicKey,
-  options: typings.nodeForge.mod.pki.ByteBufferFingerprintOptions
-): typings.nodeForge.mod.util.ByteStringBuffer = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.util.ByteStringBuffer]
-inline def getPublicKeyFingerprint(
-  publicKey: typings.nodeForge.mod.pki.PublicKey,
-  options: typings.nodeForge.mod.pki.HexFingerprintOptions
-): typings.nodeForge.mod.Hex = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.Hex]
+inline def encryptedPrivateKeyFromPem(pem: PEM): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("encryptedPrivateKeyFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[Asn1]
 
-inline def oids: typings.nodeForge.mod.pki.oids = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].selectDynamic("oids").asInstanceOf[typings.nodeForge.mod.pki.oids]
-type oids = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-inline def oids_=(x: typings.nodeForge.mod.pki.oids): scala.Unit = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].updateDynamic("oids")(x.asInstanceOf[js.Any])
+inline def encryptedPrivateKeyToPem(obj: Asn1): PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("encryptedPrivateKeyToPem")(obj.asInstanceOf[js.Any]).asInstanceOf[PEM]
 
-inline def pemToDer(pem: typings.nodeForge.mod.pki.PEM): typings.nodeForge.mod.util.ByteStringBuffer = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("pemToDer")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.util.ByteStringBuffer]
+inline def getPublicKeyFingerprint(publicKey: PublicKey): ByteStringBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any]).asInstanceOf[ByteStringBuffer]
+inline def getPublicKeyFingerprint(publicKey: PublicKey, options: BinaryFingerprintOptions): Bytes = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Bytes]
+inline def getPublicKeyFingerprint(publicKey: PublicKey, options: ByteBufferFingerprintOptions): ByteStringBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ByteStringBuffer]
+inline def getPublicKeyFingerprint(publicKey: PublicKey, options: HexFingerprintOptions): Hex = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Hex]
 
-inline def privateKeyFromAsn1(privateKey: typings.nodeForge.mod.asn1.Asn1): typings.nodeForge.mod.pki.PrivateKey = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyFromAsn1")(privateKey.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PrivateKey]
+inline def oids: typings.nodeForge.mod.pki.oids = ^.asInstanceOf[js.Dynamic].selectDynamic("oids").asInstanceOf[typings.nodeForge.mod.pki.oids]
+type oids = StringDictionary[String]
+inline def oids_=(x: typings.nodeForge.mod.pki.oids): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oids")(x.asInstanceOf[js.Any])
 
-inline def privateKeyFromPem(pem: typings.nodeForge.mod.pki.PEM): typings.nodeForge.mod.pki.rsa.PrivateKey = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.PrivateKey]
+inline def pemToDer(pem: PEM): ByteStringBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pemToDer")(pem.asInstanceOf[js.Any]).asInstanceOf[ByteStringBuffer]
 
-inline def privateKeyInfoToPem(key: typings.nodeForge.mod.asn1.Asn1): typings.nodeForge.mod.pki.PEM = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyInfoToPem")(key.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PEM]
-inline def privateKeyInfoToPem(key: typings.nodeForge.mod.asn1.Asn1, maxline: scala.Double): typings.nodeForge.mod.pki.PEM = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyInfoToPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.PEM]
+inline def privateKeyFromAsn1(privateKey: Asn1): PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyFromAsn1")(privateKey.asInstanceOf[js.Any]).asInstanceOf[PrivateKey]
 
-inline def privateKeyToAsn1(privateKey: typings.nodeForge.mod.pki.PrivateKey): typings.nodeForge.mod.asn1.Asn1 = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToAsn1")(privateKey.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.asn1.Asn1]
+inline def privateKeyFromPem(pem: PEM): typings.nodeForge.mod.pki.rsa.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.PrivateKey]
 
-inline def privateKeyToPem(key: typings.nodeForge.mod.pki.PrivateKey): typings.nodeForge.mod.pki.PEM = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPem")(key.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PEM]
-inline def privateKeyToPem(key: typings.nodeForge.mod.pki.PrivateKey, maxline: scala.Double): typings.nodeForge.mod.pki.PEM = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.PEM]
+inline def privateKeyInfoToPem(key: Asn1): PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyInfoToPem")(key.asInstanceOf[js.Any]).asInstanceOf[PEM]
+inline def privateKeyInfoToPem(key: Asn1, maxline: Double): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyInfoToPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[PEM]
 
-inline def publicKeyFromAsn1(publicKey: typings.nodeForge.mod.asn1.Asn1): typings.nodeForge.mod.pki.PublicKey = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromAsn1")(publicKey.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PublicKey]
+inline def privateKeyToAsn1(privateKey: PrivateKey): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToAsn1")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Asn1]
 
-inline def publicKeyFromPem(pem: typings.nodeForge.mod.pki.PEM): typings.nodeForge.mod.pki.rsa.PublicKey = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.PublicKey]
+inline def privateKeyToPem(key: PrivateKey): PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPem")(key.asInstanceOf[js.Any]).asInstanceOf[PEM]
+inline def privateKeyToPem(key: PrivateKey, maxline: Double): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[PEM]
 
-inline def publicKeyToAsn1(publicKey: typings.nodeForge.mod.pki.PublicKey): typings.nodeForge.mod.asn1.Asn1 = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToAsn1")(publicKey.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.asn1.Asn1]
+inline def publicKeyFromAsn1(publicKey: Asn1): PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromAsn1")(publicKey.asInstanceOf[js.Any]).asInstanceOf[PublicKey]
 
-inline def publicKeyToPem(key: typings.nodeForge.mod.pki.PublicKey): typings.nodeForge.mod.pki.PEM = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToPem")(key.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PEM]
-inline def publicKeyToPem(key: typings.nodeForge.mod.pki.PublicKey, maxline: scala.Double): typings.nodeForge.mod.pki.PEM = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.PEM]
+inline def publicKeyFromPem(pem: PEM): typings.nodeForge.mod.pki.rsa.PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromPem")(pem.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.PublicKey]
 
-inline def publicKeyToRSAPublicKey(publicKey: typings.nodeForge.mod.pki.PublicKey): js.Any = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToRSAPublicKey")(publicKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def publicKeyToAsn1(publicKey: PublicKey): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToAsn1")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Asn1]
 
-inline def publicKeyToRSAPublicKeyPem(key: typings.nodeForge.mod.pki.PublicKey): typings.nodeForge.mod.pki.PEM = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToRSAPublicKeyPem")(key.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.PEM]
-inline def publicKeyToRSAPublicKeyPem(key: typings.nodeForge.mod.pki.PublicKey, maxline: scala.Double): typings.nodeForge.mod.pki.PEM = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToRSAPublicKeyPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.PEM]
+inline def publicKeyToPem(key: PublicKey): PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToPem")(key.asInstanceOf[js.Any]).asInstanceOf[PEM]
+inline def publicKeyToPem(key: PublicKey, maxline: Double): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[PEM]
 
-inline def verifyCertificateChain(caStore: typings.nodeForge.mod.pki.CAStore, chain: js.Array[typings.nodeForge.mod.pki.Certificate]): scala.Boolean = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("verifyCertificateChain")(caStore.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def publicKeyToRSAPublicKey(publicKey: PublicKey): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToRSAPublicKey")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Any]
+
+inline def publicKeyToRSAPublicKeyPem(key: PublicKey): PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToRSAPublicKeyPem")(key.asInstanceOf[js.Any]).asInstanceOf[PEM]
+inline def publicKeyToRSAPublicKeyPem(key: PublicKey, maxline: Double): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToRSAPublicKeyPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[PEM]
+
+inline def verifyCertificateChain(caStore: CAStore, chain: js.Array[Certificate]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyCertificateChain")(caStore.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def verifyCertificateChain(
-  caStore: typings.nodeForge.mod.pki.CAStore,
-  chain: js.Array[typings.nodeForge.mod.pki.Certificate],
-  customVerifyCallback: js.Function3[
-  /* verified */ scala.Boolean | java.lang.String, 
-  /* depth */ scala.Double, 
-  /* chain */ js.Array[typings.nodeForge.mod.pki.Certificate], 
-  scala.Boolean
+  caStore: CAStore,
+  chain: js.Array[Certificate],
+  options: js.Function3[
+  /* verified */ Boolean | String, 
+  /* depth */ Double, 
+  /* certs */ js.Array[Certificate], 
+  Boolean
 ]
-): scala.Boolean = (typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("verifyCertificateChain")(caStore.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], customVerifyCallback.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyCertificateChain")(caStore.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def verifyCertificateChain(caStore: CAStore, chain: js.Array[Certificate], options: ValidityCheckDate): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyCertificateChain")(caStore.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def wrapRsaPrivateKey(privateKey: typings.nodeForge.mod.asn1.Asn1): typings.nodeForge.mod.asn1.Asn1 = typings.nodeForge.mod.pki.^.asInstanceOf[js.Dynamic].applyDynamic("wrapRsaPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.asn1.Asn1]
+inline def wrapRsaPrivateKey(privateKey: Asn1): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRsaPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Asn1]
 
-type PEM = java.lang.String
+type PEM = String
 
-type PrivateKey = typings.nodeForge.mod.pki.rsa.PrivateKey | typings.nodeForge.mod.pki.ed25519.Key
+type PrivateKey = typings.nodeForge.mod.pki.rsa.PrivateKey | Key
 
-type PublicKey = typings.nodeForge.mod.pki.rsa.PublicKey | typings.nodeForge.mod.pki.ed25519.Key
+type PublicKey = typings.nodeForge.mod.pki.rsa.PublicKey | Key
 
-type setRsaPublicKey = js.Function2[
-/* n */ typings.nodeForge.mod.jsbn.BigInteger, 
-/* e */ typings.nodeForge.mod.jsbn.BigInteger, 
-typings.nodeForge.mod.pki.rsa.PublicKey]
+type setRsaPublicKey = js.Function2[/* n */ BigInteger, /* e */ BigInteger, typings.nodeForge.mod.pki.rsa.PublicKey]

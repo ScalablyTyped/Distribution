@@ -20,9 +20,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel application that manages the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -33,45 +33,42 @@ trait Application
   /**
     * Recalculate all currently opened workbooks in Excel.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
-    * @param calculationType Specifies the calculation type to use. See Excel.CalculationType for details.
+    * @param calculationType Specifies the calculation type to use. See `Excel.CalculationType` for details.
     */
-  def calculate(calculationType: CalculationType): Unit = js.native
-  @JSName("calculate")
-  def calculate_Full(calculationType: Full): Unit = js.native
-  @JSName("calculate")
-  def calculate_FullRebuild(calculationType: FullRebuild): Unit = js.native
+  def calculate(calculationType: Recalculate | Full | FullRebuild): Unit = js.native
   /**
     * Recalculate all currently opened workbooks in Excel.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
-    * @param calculationType Specifies the calculation type to use. See Excel.CalculationType for details.
+    * @param calculationType Specifies the calculation type to use. See `Excel.CalculationType` for details.
     */
-  @JSName("calculate")
-  def calculate_Recalculate(calculationType: Recalculate): Unit = js.native
+  def calculate(calculationType: CalculationType): Unit = js.native
   
   /**
-    *
     * Returns the Excel calculation engine version used for the last full recalculation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val calculationEngineVersion: Double = js.native
   
   /**
+    * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
     *
-    * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
   var calculationMode: CalculationMode | Automatic | AutomaticExceptTables | Manual = js.native
   
   /**
+    * Returns the calculation state of the application. See `Excel.CalculationState` for details.
     *
-    * Returns the calculation state of the application. See Excel.CalculationState for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val calculationState: CalculationState | Done | Calculating | Pending = js.native
@@ -81,27 +78,27 @@ trait Application
   var context_Application: RequestContext = js.native
   
   /**
-    *
     * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   val cultureInfo: CultureInfo = js.native
   
   /**
+    * Gets the string used as the decimal separator for numeric values. This is based on the local Excel settings.
     *
-    * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   val decimalSeparator: String = js.native
   
   /**
-    *
-    * Returns the Iterative Calculation settings.
+    * Returns the iterative calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val iterativeCalculation: IterativeCalculation = js.native
@@ -119,14 +116,8 @@ trait Application
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Application): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.Application): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -134,8 +125,9 @@ trait Application
   def set(properties: ApplicationUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    * Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
+    * Suspends calculation until the next `context.sync()` is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   def suspendApiCalculationUntilNextSync(): Unit = js.native
@@ -145,14 +137,15 @@ trait Application
     
     **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def suspendScreenUpdatingUntilNextSync(): Unit = js.native
   
   /**
+    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
     *
-    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   val thousandsSeparator: String = js.native
@@ -164,10 +157,10 @@ trait Application
   def toJSON(): ApplicationData = js.native
   
   /**
-    *
     * Specifies if the system separators of Excel are enabled.
     System separators include the decimal separator and thousands separator.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   val useSystemSeparators: Boolean = js.native

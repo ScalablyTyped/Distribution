@@ -1,17 +1,17 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Layers
+import typings.babylonjs.dataBufferMod.DataBuffer
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.internalTextureMod.InternalTexture
-import typings.babylonjs.renderTargetCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
 import typings.babylonjs.thinEngineMod.ISceneLike
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.Blob
-import typings.std.Float32Array
 import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
 import typings.std.WebGLBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,81 +21,96 @@ object nullEngineMod {
   
   @JSImport("babylonjs/Engines/nullEngine", "NullEngine")
   @js.native
-  class NullEngine () extends Engine {
+  open class NullEngine () extends Engine {
     def this(options: NullEngineOptions) = this()
+    
+    /**
+      * @param channel
+      * @param texture
+      * @hidden
+      */
+    def _bindTexture(channel: Double, texture: InternalTexture): Unit = js.native
+    
+    /**
+      * @param isMulti
+      * @param isCube
+      * @param size
+      * @hidden
+      */
+    def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: Double): RenderTargetWrapper = js.native
+    def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: Layers): RenderTargetWrapper = js.native
     
     /* protected */ def _deleteBuffer(buffer: WebGLBuffer): Unit = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
     /**
       * Binds the frame buffer to the specified texture.
-      * @param texture The texture to render to or null for the default canvas
+      * @param rtWrapper The render target wrapper to render to
       * @param faceIndex The face of the texture to render to in case of cube texture
       * @param requiredWidth The width of the target to render to
       * @param requiredHeight The height of the target to render to
       * @param forceFullscreenViewport Forces the viewport to be the entire texture/screen if true
-      * @param lodLevel defines le lod level to bind to the frame buffer
       */
-    def bindFramebuffer(texture: InternalTexture): Unit = js.native
-    def bindFramebuffer(texture: InternalTexture, faceIndex: Double): Unit = js.native
-    def bindFramebuffer(texture: InternalTexture, faceIndex: Double, requiredWidth: Double): Unit = js.native
-    def bindFramebuffer(texture: InternalTexture, faceIndex: Double, requiredWidth: Double, requiredHeight: Double): Unit = js.native
+    def bindFramebuffer(rtWrapper: RenderTargetWrapper): Unit = js.native
+    def bindFramebuffer(rtWrapper: RenderTargetWrapper, faceIndex: Double): Unit = js.native
+    def bindFramebuffer(rtWrapper: RenderTargetWrapper, faceIndex: Double, requiredWidth: Double): Unit = js.native
+    def bindFramebuffer(rtWrapper: RenderTargetWrapper, faceIndex: Double, requiredWidth: Double, requiredHeight: Double): Unit = js.native
     def bindFramebuffer(
-      texture: InternalTexture,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: Double,
       requiredWidth: Double,
       requiredHeight: Double,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def bindFramebuffer(
-      texture: InternalTexture,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: Double,
       requiredWidth: Double,
       requiredHeight: Unit,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
-    def bindFramebuffer(texture: InternalTexture, faceIndex: Double, requiredWidth: Unit, requiredHeight: Double): Unit = js.native
+    def bindFramebuffer(rtWrapper: RenderTargetWrapper, faceIndex: Double, requiredWidth: Unit, requiredHeight: Double): Unit = js.native
     def bindFramebuffer(
-      texture: InternalTexture,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: Double,
       requiredWidth: Unit,
       requiredHeight: Double,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def bindFramebuffer(
-      texture: InternalTexture,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: Double,
       requiredWidth: Unit,
       requiredHeight: Unit,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
-    def bindFramebuffer(texture: InternalTexture, faceIndex: Unit, requiredWidth: Double): Unit = js.native
-    def bindFramebuffer(texture: InternalTexture, faceIndex: Unit, requiredWidth: Double, requiredHeight: Double): Unit = js.native
+    def bindFramebuffer(rtWrapper: RenderTargetWrapper, faceIndex: Unit, requiredWidth: Double): Unit = js.native
+    def bindFramebuffer(rtWrapper: RenderTargetWrapper, faceIndex: Unit, requiredWidth: Double, requiredHeight: Double): Unit = js.native
     def bindFramebuffer(
-      texture: InternalTexture,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: Unit,
       requiredWidth: Double,
       requiredHeight: Double,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def bindFramebuffer(
-      texture: InternalTexture,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: Unit,
       requiredWidth: Double,
       requiredHeight: Unit,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
-    def bindFramebuffer(texture: InternalTexture, faceIndex: Unit, requiredWidth: Unit, requiredHeight: Double): Unit = js.native
+    def bindFramebuffer(rtWrapper: RenderTargetWrapper, faceIndex: Unit, requiredWidth: Unit, requiredHeight: Double): Unit = js.native
     def bindFramebuffer(
-      texture: InternalTexture,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: Unit,
       requiredWidth: Unit,
       requiredHeight: Double,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def bindFramebuffer(
-      texture: InternalTexture,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: Unit,
       requiredWidth: Unit,
       requiredHeight: Unit,
@@ -103,13 +118,171 @@ object nullEngineMod {
     ): Unit = js.native
     
     /**
-      * Creates a new render target texture
-      * @param size defines the size of the texture
-      * @param options defines the options used to create the texture
-      * @returns a new render target texture stored in an InternalTexture
+      * Creates a dynamic vertex buffer
+      * @param vertices the data for the dynamic vertex buffer
+      * @returns the new WebGL dynamic buffer
       */
-    def createRenderTargetTexture(size: js.Any, options: Boolean): InternalTexture = js.native
-    def createRenderTargetTexture(size: js.Any, options: RenderTargetCreationOptions): InternalTexture = js.native
+    def createDynamicVertexBuffer(vertices: FloatArray): DataBuffer = js.native
+    
+    /**
+      * Creates a raw texture
+      * @param data defines the data to store in the texture
+      * @param width defines the width of the texture
+      * @param height defines the height of the texture
+      * @param format defines the format of the data
+      * @param generateMipMaps defines if the engine should generate the mip levels
+      * @param invertY defines if data must be stored with Y axis inverted
+      * @param samplingMode defines the required sampling mode (Texture.NEAREST_SAMPLINGMODE by default)
+      * @param compression defines the compression used (null by default)
+      * @param type defines the type fo the data (Engine.TEXTURETYPE_UNSIGNED_INT by default)
+      * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
+      * @param useSRGBBuffer defines if the texture must be loaded in a sRGB GPU buffer (if supported by the GPU).
+      * @returns the raw texture inside an InternalTexture
+      */
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Unit,
+      `type`: Double
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Unit,
+      `type`: Double,
+      creationFlags: Double
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Unit,
+      `type`: Double,
+      creationFlags: Double,
+      useSRGBBuffer: Boolean
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Unit,
+      `type`: Double,
+      creationFlags: Unit,
+      useSRGBBuffer: Boolean
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Unit,
+      `type`: Unit,
+      creationFlags: Double
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Unit,
+      `type`: Unit,
+      creationFlags: Double,
+      useSRGBBuffer: Boolean
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Unit,
+      `type`: Unit,
+      creationFlags: Unit,
+      useSRGBBuffer: Boolean
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String]
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      `type`: Unit,
+      creationFlags: Double
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      `type`: Unit,
+      creationFlags: Double,
+      useSRGBBuffer: Boolean
+    ): InternalTexture = js.native
+    def createRawTexture(
+      data: Nullable[js.typedarray.ArrayBufferView],
+      width: Double,
+      height: Double,
+      format: Double,
+      generateMipMaps: Boolean,
+      invertY: Boolean,
+      samplingMode: Double,
+      compression: Nullable[String],
+      `type`: Unit,
+      creationFlags: Unit,
+      useSRGBBuffer: Boolean
+    ): InternalTexture = js.native
     
     /**
       * Usually called from Texture.ts.
@@ -137,16 +310,25 @@ object nullEngineMod {
       invertY: Boolean,
       scene: Nullable[ISceneLike],
       samplingMode: js.UndefOr[Double],
-      onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
-      onError: js.UndefOr[Nullable[js.Function2[/* message */ String, /* exception */ js.Any, Unit]]],
+      onLoad: js.UndefOr[Nullable[js.Function1[/* texture */ InternalTexture, Unit]]],
+      onError: js.UndefOr[Nullable[js.Function2[/* message */ String, /* exception */ Any, Unit]]],
       buffer: js.UndefOr[
-          Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap]
+          Nullable[
+            String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
+          ]
         ],
       fallback: js.UndefOr[Nullable[InternalTexture]],
       format: js.UndefOr[Nullable[Double]],
       forcedExtension: js.UndefOr[Nullable[String]],
       mimeType: js.UndefOr[String]
     ): InternalTexture = js.native
+    
+    /**
+      * Creates a vertex buffer
+      * @param vertices the data for the vertex buffer
+      * @returns the new WebGL static buffer
+      */
+    def createVertexBuffer(vertices: FloatArray): DataBuffer = js.native
     
     /**
       * Set the value of an uniform to a boolean
@@ -162,7 +344,7 @@ object nullEngineMod {
       * @param array defines the array of float32 to store
       * @returns true if value was set
       */
-    def setFloatArray(uniform: WebGLUniformLocation, array: Float32Array): Boolean = js.native
+    def setFloatArray(uniform: WebGLUniformLocation, array: js.typedarray.Float32Array): Boolean = js.native
     
     /**
       * Set the value of an uniform to an array of float32 (stored as vec2)
@@ -170,7 +352,7 @@ object nullEngineMod {
       * @param array defines the array of float32 to store
       * @returns true if value was set
       */
-    def setFloatArray2(uniform: WebGLUniformLocation, array: Float32Array): Boolean = js.native
+    def setFloatArray2(uniform: WebGLUniformLocation, array: js.typedarray.Float32Array): Boolean = js.native
     
     /**
       * Set the value of an uniform to an array of float32 (stored as vec3)
@@ -178,7 +360,7 @@ object nullEngineMod {
       * @param array defines the array of float32 to store
       * @returns true if value was set
       */
-    def setFloatArray3(uniform: WebGLUniformLocation, array: Float32Array): Boolean = js.native
+    def setFloatArray3(uniform: WebGLUniformLocation, array: js.typedarray.Float32Array): Boolean = js.native
     
     /**
       * Set the value of an uniform to an array of float32 (stored as vec4)
@@ -186,7 +368,7 @@ object nullEngineMod {
       * @param array defines the array of float32 to store
       * @returns true if value was set
       */
-    def setFloatArray4(uniform: WebGLUniformLocation, array: Float32Array): Boolean = js.native
+    def setFloatArray4(uniform: WebGLUniformLocation, array: js.typedarray.Float32Array): Boolean = js.native
     
     /**
       * Update a dynamic index buffer
@@ -204,7 +386,6 @@ object nullEngineMod {
       * @param invertY defines if data must be stored with Y axis inverted
       * @param premulAlpha defines if alpha is stored as premultiplied
       * @param format defines the format of the data
-      * @param forceBindTexture if the texture should be forced to be bound eg. after a graphics context loss (Default: false)
       */
     def updateDynamicTexture(texture: Nullable[InternalTexture], canvas: HTMLCanvasElement, invertY: Boolean): Unit = js.native
     def updateDynamicTexture(
@@ -239,11 +420,62 @@ object nullEngineMod {
     def updateDynamicVertexBuffer(vertexBuffer: WebGLBuffer, vertices: FloatArray, byteOffset: Double): Unit = js.native
     def updateDynamicVertexBuffer(vertexBuffer: WebGLBuffer, vertices: FloatArray, byteOffset: Double, byteLength: Double): Unit = js.native
     def updateDynamicVertexBuffer(vertexBuffer: WebGLBuffer, vertices: FloatArray, byteOffset: Unit, byteLength: Double): Unit = js.native
+    
+    def updateRawTexture(
+      texture: Nullable[InternalTexture],
+      data: Nullable[js.typedarray.ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Unit,
+      `type`: Double
+    ): Unit = js.native
+    def updateRawTexture(
+      texture: Nullable[InternalTexture],
+      data: Nullable[js.typedarray.ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Unit,
+      `type`: Double,
+      useSRGBBuffer: Boolean
+    ): Unit = js.native
+    def updateRawTexture(
+      texture: Nullable[InternalTexture],
+      data: Nullable[js.typedarray.ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Unit,
+      `type`: Unit,
+      useSRGBBuffer: Boolean
+    ): Unit = js.native
+    def updateRawTexture(
+      texture: Nullable[InternalTexture],
+      data: Nullable[js.typedarray.ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Nullable[String]
+    ): Unit = js.native
+    def updateRawTexture(
+      texture: Nullable[InternalTexture],
+      data: Nullable[js.typedarray.ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Nullable[String],
+      `type`: Double
+    ): Unit = js.native
+    def updateRawTexture(
+      texture: Nullable[InternalTexture],
+      data: Nullable[js.typedarray.ArrayBufferView],
+      format: Double,
+      invertY: Boolean,
+      compression: Nullable[String],
+      `type`: Unit,
+      useSRGBBuffer: Boolean
+    ): Unit = js.native
   }
   
   @JSImport("babylonjs/Engines/nullEngine", "NullEngineOptions")
   @js.native
-  class NullEngineOptions () extends StObject {
+  open class NullEngineOptions () extends StObject {
     
     /**
       * If delta time between frames should be constant

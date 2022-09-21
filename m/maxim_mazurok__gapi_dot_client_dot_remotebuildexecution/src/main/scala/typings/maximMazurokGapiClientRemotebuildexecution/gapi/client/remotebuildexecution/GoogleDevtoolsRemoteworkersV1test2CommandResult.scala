@@ -25,7 +25,7 @@ trait GoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[Any]
     ]
   ] = js.undefined
   
@@ -65,7 +65,7 @@ object GoogleDevtoolsRemoteworkersV1test2CommandResult {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
@@ -74,8 +74,8 @@ object GoogleDevtoolsRemoteworkersV1test2CommandResult {
     inline def setMetadataVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[Any])*
+    ): Self = StObject.set(x, "metadata", js.Array(value*))
     
     inline def setOutputs(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     

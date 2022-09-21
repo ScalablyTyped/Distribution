@@ -32,6 +32,6 @@ object ScriptStatistics {
     
     inline def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
     
-    inline def setStackFramesVarargs(value: ScriptStackFrame*): Self = StObject.set(x, "stackFrames", js.Array(value :_*))
+    inline def setStackFramesVarargs(value: ScriptStackFrame*): Self = StObject.set(x, "stackFrames", js.Array(value*))
   }
 }

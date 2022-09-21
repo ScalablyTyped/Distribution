@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.QExponential")
 @js.native
-class QExponential ()
+open class QExponential ()
   extends typings.ranjs.mod.dist.QExponential {
   def this(q: Double) = this()
   def this(q: Double, lambda: Double) = this()

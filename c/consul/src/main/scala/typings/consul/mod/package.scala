@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 type Callback[TData] = js.Function3[
-/* err */ js.UndefOr[typings.std.Error], 
+/* err */ js.UndefOr[js.Error], 
 /* data */ js.UndefOr[TData], 
-/* res */ js.UndefOr[typings.consul.mod.Response], 
-js.Any]
+/* res */ js.UndefOr[Response], 
+Any]

@@ -1,7 +1,6 @@
 package typings.markdownMagic
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* error */ js.UndefOr[Error], /* output */ js.Array[ProcessedConfig], Unit]
+  type Callback = js.Function2[/* error */ js.UndefOr[js.Error], /* output */ js.Array[ProcessedConfig], Unit]
   
   trait Configuration extends StObject {
     
@@ -107,5 +106,5 @@ object mod {
   /**
     *  transform function
     */
-  type TransformFunction = js.Function2[/* content */ String, /* options */ js.Any, String]
+  type TransformFunction = js.Function2[/* content */ String, /* options */ Any, String]
 }

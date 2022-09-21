@@ -10,11 +10,13 @@ trait ValidatorRule extends StObject {
   var message: js.UndefOr[String | ReactElement] = js.undefined
   
   var validator: Validator
+  
+  var warningOnly: js.UndefOr[Boolean] = js.undefined
 }
 object ValidatorRule {
   
   inline def apply(
-    validator: (/* rule */ RuleObject, /* value */ StoreValue, /* callback */ js.Function1[/* error */ js.UndefOr[String], Unit]) => (js.Promise[Unit | js.Any]) | Unit
+    validator: (/* rule */ RuleObject, /* value */ StoreValue, /* callback */ js.Function1[/* error */ js.UndefOr[String], Unit]) => (js.Promise[Unit | Any]) | Unit
   ): ValidatorRule = {
     val __obj = js.Dynamic.literal(validator = js.Any.fromFunction3(validator))
     __obj.asInstanceOf[ValidatorRule]
@@ -27,7 +29,11 @@ object ValidatorRule {
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     inline def setValidator(
-      value: (/* rule */ RuleObject, /* value */ StoreValue, /* callback */ js.Function1[/* error */ js.UndefOr[String], Unit]) => (js.Promise[Unit | js.Any]) | Unit
+      value: (/* rule */ RuleObject, /* value */ StoreValue, /* callback */ js.Function1[/* error */ js.UndefOr[String], Unit]) => (js.Promise[Unit | Any]) | Unit
     ): Self = StObject.set(x, "validator", js.Any.fromFunction3(value))
+    
+    inline def setWarningOnly(value: Boolean): Self = StObject.set(x, "warningOnly", value.asInstanceOf[js.Any])
+    
+    inline def setWarningOnlyUndefined: Self = StObject.set(x, "warningOnly", js.undefined)
   }
 }

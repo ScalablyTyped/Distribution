@@ -32,10 +32,10 @@ trait IgTreeGridFilteringMethods extends StObject {
     * @param updateUI specifies whether the filter row should be also updated once the grid is filtered
     * @param addedFromAdvanced
     */
-  def filter(expressions: js.Array[js.Any]): Unit = js.native
-  def filter(expressions: js.Array[js.Any], updateUI: Boolean): Unit = js.native
-  def filter(expressions: js.Array[js.Any], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
-  def filter(expressions: js.Array[js.Any], updateUI: Unit, addedFromAdvanced: Boolean): Unit = js.native
+  def filter(expressions: js.Array[Any]): Unit = js.native
+  def filter(expressions: js.Array[Any], updateUI: Boolean): Unit = js.native
+  def filter(expressions: js.Array[Any], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
+  def filter(expressions: js.Array[Any], updateUI: Unit, addedFromAdvanced: Boolean): Unit = js.native
   
   /**
     * Returns the count of data records that match filtering conditions

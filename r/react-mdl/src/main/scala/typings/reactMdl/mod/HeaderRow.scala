@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "HeaderRow")
 @js.native
-class HeaderRow protected () extends _MDLComponent[HeaderRowProps] {
+open class HeaderRow protected () extends _MDLComponent[HeaderRowProps] {
   def this(props: HeaderRowProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HeaderRowProps, context: js.Any) = this()
+  def this(props: HeaderRowProps, context: Any) = this()
 }

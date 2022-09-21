@@ -1,14 +1,9 @@
 package typings.autolinker
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilderCfg
-import typings.autolinker.anon.Email
-import typings.autolinker.anon.Hashtag
 import typings.autolinker.autolinkerStrings.end
 import typings.autolinker.autolinkerStrings.middle
 import typings.autolinker.autolinkerStrings.smart
 import typings.autolinker.htmlTagMod.HtmlTag
-import typings.autolinker.htmlTagMod.HtmlTagCfg
 import typings.autolinker.matchMatchMod.Match
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +18,7 @@ object autolinkerMod {
     * @param {Object} [cfg] The configuration options for the Autolinker instance,
     *   specified in an Object (map).
     */
-  class default ()
+  open class default ()
     extends StObject
        with Autolinker {
     def this(cfg: AutolinkerConfig) = this()
@@ -45,7 +40,7 @@ object autolinkerMod {
       *   where [type] is either "instagram", "twitter" or "soundcloud"
       */
     /* private */ /* CompleteClass */
-    override val className: js.Any = js.native
+    override val className: Any = js.native
     
     /**
       * After we have found all matches, we need to remove matches that overlap
@@ -59,7 +54,7 @@ object autolinkerMod {
       * @return {Autolinker.match.Match[]}
       */
     /* private */ /* CompleteClass */
-    var compactMatches: js.Any = js.native
+    var compactMatches: Any = js.native
     
     /**
       * @cfg {Object} context
@@ -69,7 +64,7 @@ object autolinkerMod {
       * Defaults to this Autolinker instance.
       */
     /* private */ /* CompleteClass */
-    override val context: js.Any = js.native
+    override val context: Any = js.native
     
     /**
       * Creates the return string value for a given match in the input string.
@@ -84,7 +79,7 @@ object autolinkerMod {
       *   if the match is not to be replaced.
       */
     /* private */ /* CompleteClass */
-    var createMatchReturnVal: js.Any = js.native
+    var createMatchReturnVal: Any = js.native
     
     /**
       * @cfg {Boolean} [decodePercentEncoding=true]
@@ -96,7 +91,7 @@ object autolinkerMod {
       *  be displayed as `https://en.wikipedia.org/wiki/San_José`.
       */
     /* private */ /* CompleteClass */
-    override val decodePercentEncoding: js.Any = js.native
+    override val decodePercentEncoding: Any = js.native
     
     /**
       * @cfg {Boolean} [email=true]
@@ -105,17 +100,7 @@ object autolinkerMod {
       * should not be.
       */
     /* private */ /* CompleteClass */
-    override val email: js.Any = js.native
-    
-    /**
-      * Lazily instantiates and returns the {@link Autolinker.matcher.Matcher}
-      * instances for this Autolinker instance.
-      *
-      * @private
-      * @return {Autolinker.matcher.Matcher[]}
-      */
-    /* private */ /* CompleteClass */
-    var getMatchers: js.Any = js.native
+    override val email: Any = js.native
     
     /**
       * Returns the {@link #tagBuilder} instance for this Autolinker instance,
@@ -125,7 +110,7 @@ object autolinkerMod {
       * @return {Autolinker.AnchorTagBuilder}
       */
     /* private */ /* CompleteClass */
-    var getTagBuilder: js.Any = js.native
+    var getTagBuilder: Any = js.native
     
     /**
       * @cfg {Boolean/String} [hashtag=false]
@@ -140,7 +125,7 @@ object autolinkerMod {
       * Pass `false` to skip auto-linking of hashtags.
       */
     /* private */ /* CompleteClass */
-    override val hashtag: js.Any = js.native
+    override val hashtag: Any = js.native
     
     /**
       * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
@@ -164,18 +149,6 @@ object autolinkerMod {
     override def link(textOrHtml: String): String = js.native
     
     /**
-      * @private
-      * @property {Autolinker.matcher.Matcher[]} matchers
-      *
-      * The {@link Autolinker.matcher.Matcher} instances for this Autolinker
-      * instance.
-      *
-      * This is lazily created in {@link #getMatchers}.
-      */
-    /* private */ /* CompleteClass */
-    var matchers: js.Any = js.native
-    
-    /**
       * @cfg {String/Boolean} [mention=false]
       *
       * A string for the service name to have mentions (ex: "@myuser")
@@ -184,11 +157,12 @@ object autolinkerMod {
       * - 'twitter'
       * - 'instagram'
       * - 'soundcloud'
+      * - 'tiktok'
       *
       * Defaults to `false` to skip auto-linking of mentions.
       */
     /* private */ /* CompleteClass */
-    override val mention: js.Any = js.native
+    override val mention: Any = js.native
     
     /**
       * @cfg {Boolean} [newWindow=true]
@@ -196,46 +170,7 @@ object autolinkerMod {
       * `true` if the links should open in a new window, `false` otherwise.
       */
     /* private */ /* CompleteClass */
-    override val newWindow: js.Any = js.native
-    
-    /**
-      * Normalizes the {@link #stripPrefix} config into an Object with 2
-      * properties: `scheme`, and `www` - both Booleans.
-      *
-      * See {@link #stripPrefix} config for details.
-      *
-      * @private
-      * @param {Boolean/Object} stripPrefix
-      * @return {Object}
-      */
-    /* private */ /* CompleteClass */
-    var normalizeStripPrefixCfg: js.Any = js.native
-    
-    /**
-      * Normalizes the {@link #truncate} config into an Object with 2 properties:
-      * `length` (Number), and `location` (String).
-      *
-      * See {@link #truncate} config for details.
-      *
-      * @private
-      * @param {Number/Object} truncate
-      * @return {Object}
-      */
-    /* private */ /* CompleteClass */
-    var normalizeTruncateCfg: js.Any = js.native
-    
-    /**
-      * Normalizes the {@link #urls} config into an Object with 3 properties:
-      * `schemeMatches`, `wwwMatches`, and `tldMatches`, all Booleans.
-      *
-      * See {@link #urls} config for details.
-      *
-      * @private
-      * @param {Boolean/Object} urls
-      * @return {Object}
-      */
-    /* private */ /* CompleteClass */
-    var normalizeUrlsCfg: js.Any = js.native
+    override val newWindow: Any = js.native
     
     /**
       * Parses the input `textOrHtml` looking for URLs, email addresses, phone
@@ -293,7 +228,7 @@ object autolinkerMod {
       *   given input `text`.
       */
     /* private */ /* CompleteClass */
-    var parseText: js.Any = js.native
+    var parseText: Any = js.native
     
     /**
       * @cfg {Boolean} [phone=true]
@@ -302,7 +237,7 @@ object autolinkerMod {
       * `false` if they should not be.
       */
     /* private */ /* CompleteClass */
-    override val phone: js.Any = js.native
+    override val phone: Any = js.native
     
     /**
       * Removes matches for matchers that were turned off in the options. For
@@ -323,7 +258,7 @@ object autolinkerMod {
       * @return {Autolinker.match.Match[]} The mutated input `matches` array.
       */
     /* private */ /* CompleteClass */
-    var removeUnwantedMatches: js.Any = js.native
+    var removeUnwantedMatches: Any = js.native
     
     /**
       * @cfg {Function} replaceFn
@@ -343,7 +278,7 @@ object autolinkerMod {
       *   for details.
       */
     /* private */ /* CompleteClass */
-    override val replaceFn: js.Any = js.native
+    override val replaceFn: Any = js.native
     
     /**
       * @cfg {Boolean} [sanitizeHtml=false]
@@ -360,7 +295,7 @@ object autolinkerMod {
       * before running Autolinker.
       */
     /* private */ /* CompleteClass */
-    override val sanitizeHtml: js.Any = js.native
+    override val sanitizeHtml: Any = js.native
     
     /**
       * @cfg {Boolean/Object} [stripPrefix=true]
@@ -396,7 +331,7 @@ object autolinkerMod {
       *   strip the `'www'`.
       */
     /* private */ /* CompleteClass */
-    override val stripPrefix: js.Any = js.native
+    override val stripPrefix: Any = js.native
     
     /**
       * @cfg {Boolean} [stripTrailingSlash=true]
@@ -408,7 +343,7 @@ object autolinkerMod {
       *  `http://google.com`.
       */
     /* private */ /* CompleteClass */
-    override val stripTrailingSlash: js.Any = js.native
+    override val stripTrailingSlash: Any = js.native
     
     /**
       * @private
@@ -418,7 +353,7 @@ object autolinkerMod {
       * Note: this is lazily instantiated in the {@link #getTagBuilder} method.
       */
     /* private */ /* CompleteClass */
-    var tagBuilder: js.Any = js.native
+    var tagBuilder: Any = js.native
     
     /**
       * @cfg {Number/Object} [truncate=0]
@@ -468,7 +403,7 @@ object autolinkerMod {
       *   {@link Autolinker.truncate.TruncateSmart}.
       */
     /* private */ /* CompleteClass */
-    override val truncate: js.Any = js.native
+    override val truncate: Any = js.native
     
     /**
       * @cfg {Boolean/Object} [urls]
@@ -484,8 +419,8 @@ object autolinkerMod {
       *
       *     urls: {
       *         schemeMatches : true,
-      *         wwwMatches    : true,
-      *         tldMatches    : true
+      *         tldMatches    : true,
+      *         ipV4Matches   : true
       *     }
       *
       * As shown above, this option also accepts an Object form with 3 properties
@@ -495,26 +430,29 @@ object autolinkerMod {
       * @cfg {Boolean} [urls.schemeMatches] `true` to match URLs found prefixed
       *   with a scheme, i.e. `http://google.com`, or `other+scheme://google.com`,
       *   `false` to prevent these types of matches.
-      * @cfg {Boolean} [urls.wwwMatches] `true` to match urls found prefixed with
-      *   `'www.'`, i.e. `www.google.com`. `false` to prevent these types of
-      *   matches. Note that if the URL had a prefixed scheme, and
-      *   `schemeMatches` is true, it will still be linked.
       * @cfg {Boolean} [urls.tldMatches] `true` to match URLs with known top
-      *   level domains (.com, .net, etc.) that are not prefixed with a scheme or
-      *   `'www.'`. This option attempts to match anything that looks like a URL
-      *   in the given text. Ex: `google.com`, `asdf.org/?page=1`, etc. `false`
-      *   to prevent these types of matches.
+      *   level domains (.com, .net, etc.) that are not prefixed with a scheme
+      *   (such as 'http://'). This option attempts to match anything that looks
+      *   like a URL in the given text. Ex: `google.com`, `asdf.org/?page=1`, etc.
+      *   `false` to prevent these types of matches.
+      * @cfg {Boolean} [urls.ipV4Matches] `true` to match IPv4 addresses in text
+      *   that are not prefixed with a scheme (such as 'http://'). This option
+      *   attempts to match anything that looks like an IPv4 address in text. Ex:
+      *   `192.168.0.1`, `10.0.0.1/?page=1`, etc. `false` to prevent these types
+      *   of matches.
       */
     /* private */ /* CompleteClass */
-    override val urls: js.Any = js.native
+    override val urls: Any = js.native
     
     /**
       * The Autolinker version number exposed on the instance itself.
       *
       * Ex: 0.25.1
+      *
+      * @property {String} version
       */
     /* CompleteClass */
-    override val version: /* "3.14.2" */ String = js.native
+    override val version: /* "4.0.0" */ String = js.native
   }
   /* static members */
   object default {
@@ -522,25 +460,6 @@ object autolinkerMod {
     @JSImport("autolinker/dist/commonjs/autolinker", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the AnchorTagBuilder
-      * class is provided as a static on the Autolinker class.
-      */
-    @JSImport("autolinker/dist/commonjs/autolinker", "default.AnchorTagBuilder")
-    @js.native
-    val AnchorTagBuilder: Instantiable1[
-        /* cfg */ js.UndefOr[AnchorTagBuilderCfg], 
-        typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
-      ] = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the HtmlTag class is
-      * provided as a static on the Autolinker class.
-      */
-    @JSImport("autolinker/dist/commonjs/autolinker", "default.HtmlTag")
-    @js.native
-    val HtmlTag: Instantiable1[/* cfg */ js.UndefOr[HtmlTagCfg], typings.autolinker.htmlTagMod.HtmlTag] = js.native
     
     /**
       * Automatically links URLs, Email addresses, Phone Numbers, Twitter handles,
@@ -566,22 +485,6 @@ object autolinkerMod {
       */
     inline def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the Match classes are
-      * provided as statics on the Autolinker class.
-      */
-    @JSImport("autolinker/dist/commonjs/autolinker", "default.match")
-    @js.native
-    val `match`: Hashtag = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the Matcher classes are
-      * provided as statics on the Autolinker class.
-      */
-    @JSImport("autolinker/dist/commonjs/autolinker", "default.matcher")
-    @js.native
-    val matcher: Email = js.native
     
     /**
       * Parses the input `textOrHtml` looking for URLs, email addresses, phone
@@ -624,11 +527,11 @@ object autolinkerMod {
       *
       * The Autolinker version number in the form major.minor.patch
       *
-      * Ex: 0.25.1
+      * Ex: 3.15.0
       */
     @JSImport("autolinker/dist/commonjs/autolinker", "default.version")
     @js.native
-    val version: /* "3.14.2" */ String = js.native
+    val version: /* "4.0.0" */ String = js.native
   }
   
   trait Autolinker extends StObject {
@@ -649,7 +552,7 @@ object autolinkerMod {
       * - Mention links will have the CSS classes: "myLink myLink-mention myLink-[type]"
       *   where [type] is either "instagram", "twitter" or "soundcloud"
       */
-    /* private */ val className: js.Any
+    /* private */ val className: Any
     
     /**
       * After we have found all matches, we need to remove matches that overlap
@@ -662,7 +565,7 @@ object autolinkerMod {
       * @param {Autolinker.match.Match[]} matches
       * @return {Autolinker.match.Match[]}
       */
-    /* private */ var compactMatches: js.Any
+    /* private */ var compactMatches: Any
     
     /**
       * @cfg {Object} context
@@ -671,7 +574,7 @@ object autolinkerMod {
       *
       * Defaults to this Autolinker instance.
       */
-    /* private */ val context: js.Any
+    /* private */ val context: Any
     
     /**
       * Creates the return string value for a given match in the input string.
@@ -685,7 +588,7 @@ object autolinkerMod {
       *   This is usually the anchor tag string, but may be the `matchStr` itself
       *   if the match is not to be replaced.
       */
-    /* private */ var createMatchReturnVal: js.Any
+    /* private */ var createMatchReturnVal: Any
     
     /**
       * @cfg {Boolean} [decodePercentEncoding=true]
@@ -696,7 +599,7 @@ object autolinkerMod {
       *  Example when `true`: `https://en.wikipedia.org/wiki/San_Jos%C3%A9` will
       *  be displayed as `https://en.wikipedia.org/wiki/San_José`.
       */
-    /* private */ val decodePercentEncoding: js.Any
+    /* private */ val decodePercentEncoding: Any
     
     /**
       * @cfg {Boolean} [email=true]
@@ -704,16 +607,7 @@ object autolinkerMod {
       * `true` if email addresses should be automatically linked, `false` if they
       * should not be.
       */
-    /* private */ val email: js.Any
-    
-    /**
-      * Lazily instantiates and returns the {@link Autolinker.matcher.Matcher}
-      * instances for this Autolinker instance.
-      *
-      * @private
-      * @return {Autolinker.matcher.Matcher[]}
-      */
-    /* private */ var getMatchers: js.Any
+    /* private */ val email: Any
     
     /**
       * Returns the {@link #tagBuilder} instance for this Autolinker instance,
@@ -722,7 +616,7 @@ object autolinkerMod {
       * @private
       * @return {Autolinker.AnchorTagBuilder}
       */
-    /* private */ var getTagBuilder: js.Any
+    /* private */ var getTagBuilder: Any
     
     /**
       * @cfg {Boolean/String} [hashtag=false]
@@ -736,7 +630,7 @@ object autolinkerMod {
       *
       * Pass `false` to skip auto-linking of hashtags.
       */
-    /* private */ val hashtag: js.Any
+    /* private */ val hashtag: Any
     
     /**
       * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
@@ -759,17 +653,6 @@ object autolinkerMod {
     def link(textOrHtml: String): String
     
     /**
-      * @private
-      * @property {Autolinker.matcher.Matcher[]} matchers
-      *
-      * The {@link Autolinker.matcher.Matcher} instances for this Autolinker
-      * instance.
-      *
-      * This is lazily created in {@link #getMatchers}.
-      */
-    /* private */ var matchers: js.Any
-    
-    /**
       * @cfg {String/Boolean} [mention=false]
       *
       * A string for the service name to have mentions (ex: "@myuser")
@@ -778,53 +661,18 @@ object autolinkerMod {
       * - 'twitter'
       * - 'instagram'
       * - 'soundcloud'
+      * - 'tiktok'
       *
       * Defaults to `false` to skip auto-linking of mentions.
       */
-    /* private */ val mention: js.Any
+    /* private */ val mention: Any
     
     /**
       * @cfg {Boolean} [newWindow=true]
       *
       * `true` if the links should open in a new window, `false` otherwise.
       */
-    /* private */ val newWindow: js.Any
-    
-    /**
-      * Normalizes the {@link #stripPrefix} config into an Object with 2
-      * properties: `scheme`, and `www` - both Booleans.
-      *
-      * See {@link #stripPrefix} config for details.
-      *
-      * @private
-      * @param {Boolean/Object} stripPrefix
-      * @return {Object}
-      */
-    /* private */ var normalizeStripPrefixCfg: js.Any
-    
-    /**
-      * Normalizes the {@link #truncate} config into an Object with 2 properties:
-      * `length` (Number), and `location` (String).
-      *
-      * See {@link #truncate} config for details.
-      *
-      * @private
-      * @param {Number/Object} truncate
-      * @return {Object}
-      */
-    /* private */ var normalizeTruncateCfg: js.Any
-    
-    /**
-      * Normalizes the {@link #urls} config into an Object with 3 properties:
-      * `schemeMatches`, `wwwMatches`, and `tldMatches`, all Booleans.
-      *
-      * See {@link #urls} config for details.
-      *
-      * @private
-      * @param {Boolean/Object} urls
-      * @return {Object}
-      */
-    /* private */ var normalizeUrlsCfg: js.Any
+    /* private */ val newWindow: Any
     
     /**
       * Parses the input `textOrHtml` looking for URLs, email addresses, phone
@@ -880,7 +728,7 @@ object autolinkerMod {
       * @return {Autolinker.match.Match[]} The array of Matches found in the
       *   given input `text`.
       */
-    /* private */ var parseText: js.Any
+    /* private */ var parseText: Any
     
     /**
       * @cfg {Boolean} [phone=true]
@@ -888,7 +736,7 @@ object autolinkerMod {
       * `true` if Phone numbers ("(555)555-5555") should be automatically linked,
       * `false` if they should not be.
       */
-    /* private */ val phone: js.Any
+    /* private */ val phone: Any
     
     /**
       * Removes matches for matchers that were turned off in the options. For
@@ -908,7 +756,7 @@ object autolinkerMod {
       *   removals.
       * @return {Autolinker.match.Match[]} The mutated input `matches` array.
       */
-    /* private */ var removeUnwantedMatches: js.Any
+    /* private */ var removeUnwantedMatches: Any
     
     /**
       * @cfg {Function} replaceFn
@@ -927,7 +775,7 @@ object autolinkerMod {
       *   is currently processing. See {@link Autolinker.match.Match} subclasses
       *   for details.
       */
-    /* private */ val replaceFn: js.Any
+    /* private */ val replaceFn: Any
     
     /**
       * @cfg {Boolean} [sanitizeHtml=false]
@@ -943,7 +791,7 @@ object autolinkerMod {
       * tool like https://github.com/cure53/DOMPurify (or others) on the input string
       * before running Autolinker.
       */
-    /* private */ val sanitizeHtml: js.Any
+    /* private */ val sanitizeHtml: Any
     
     /**
       * @cfg {Boolean/Object} [stripPrefix=true]
@@ -978,7 +826,7 @@ object autolinkerMod {
       *   `'www.google.com'` will be displayed as `'google.com'`. `false` to not
       *   strip the `'www'`.
       */
-    /* private */ val stripPrefix: js.Any
+    /* private */ val stripPrefix: Any
     
     /**
       * @cfg {Boolean} [stripTrailingSlash=true]
@@ -989,7 +837,7 @@ object autolinkerMod {
       *  Example when `true`: `http://google.com/` will be displayed as
       *  `http://google.com`.
       */
-    /* private */ val stripTrailingSlash: js.Any
+    /* private */ val stripTrailingSlash: Any
     
     /**
       * @private
@@ -998,7 +846,7 @@ object autolinkerMod {
       * The AnchorTagBuilder instance used to build match replacement anchor tags.
       * Note: this is lazily instantiated in the {@link #getTagBuilder} method.
       */
-    /* private */ var tagBuilder: js.Any
+    /* private */ var tagBuilder: Any
     
     /**
       * @cfg {Number/Object} [truncate=0]
@@ -1047,7 +895,7 @@ object autolinkerMod {
       *   'yahoo.com/some..to/a/file'. For more details, see
       *   {@link Autolinker.truncate.TruncateSmart}.
       */
-    /* private */ val truncate: js.Any
+    /* private */ val truncate: Any
     
     /**
       * @cfg {Boolean/Object} [urls]
@@ -1063,8 +911,8 @@ object autolinkerMod {
       *
       *     urls: {
       *         schemeMatches : true,
-      *         wwwMatches    : true,
-      *         tldMatches    : true
+      *         tldMatches    : true,
+      *         ipV4Matches   : true
       *     }
       *
       * As shown above, this option also accepts an Object form with 3 properties
@@ -1074,118 +922,106 @@ object autolinkerMod {
       * @cfg {Boolean} [urls.schemeMatches] `true` to match URLs found prefixed
       *   with a scheme, i.e. `http://google.com`, or `other+scheme://google.com`,
       *   `false` to prevent these types of matches.
-      * @cfg {Boolean} [urls.wwwMatches] `true` to match urls found prefixed with
-      *   `'www.'`, i.e. `www.google.com`. `false` to prevent these types of
-      *   matches. Note that if the URL had a prefixed scheme, and
-      *   `schemeMatches` is true, it will still be linked.
       * @cfg {Boolean} [urls.tldMatches] `true` to match URLs with known top
-      *   level domains (.com, .net, etc.) that are not prefixed with a scheme or
-      *   `'www.'`. This option attempts to match anything that looks like a URL
-      *   in the given text. Ex: `google.com`, `asdf.org/?page=1`, etc. `false`
-      *   to prevent these types of matches.
+      *   level domains (.com, .net, etc.) that are not prefixed with a scheme
+      *   (such as 'http://'). This option attempts to match anything that looks
+      *   like a URL in the given text. Ex: `google.com`, `asdf.org/?page=1`, etc.
+      *   `false` to prevent these types of matches.
+      * @cfg {Boolean} [urls.ipV4Matches] `true` to match IPv4 addresses in text
+      *   that are not prefixed with a scheme (such as 'http://'). This option
+      *   attempts to match anything that looks like an IPv4 address in text. Ex:
+      *   `192.168.0.1`, `10.0.0.1/?page=1`, etc. `false` to prevent these types
+      *   of matches.
       */
-    /* private */ val urls: js.Any
+    /* private */ val urls: Any
     
     /**
       * The Autolinker version number exposed on the instance itself.
       *
       * Ex: 0.25.1
+      *
+      * @property {String} version
       */
-    val version: /* "3.14.2" */ String
+    val version: /* "4.0.0" */ String
   }
   object Autolinker {
     
     inline def apply(
-      className: js.Any,
-      compactMatches: js.Any,
-      context: js.Any,
-      createMatchReturnVal: js.Any,
-      decodePercentEncoding: js.Any,
-      email: js.Any,
-      getMatchers: js.Any,
-      getTagBuilder: js.Any,
-      hashtag: js.Any,
+      className: Any,
+      compactMatches: Any,
+      context: Any,
+      createMatchReturnVal: Any,
+      decodePercentEncoding: Any,
+      email: Any,
+      getTagBuilder: Any,
+      hashtag: Any,
       link: String => String,
-      matchers: js.Any,
-      mention: js.Any,
-      newWindow: js.Any,
-      normalizeStripPrefixCfg: js.Any,
-      normalizeTruncateCfg: js.Any,
-      normalizeUrlsCfg: js.Any,
+      mention: Any,
+      newWindow: Any,
       parse: String => js.Array[Match],
-      parseText: js.Any,
-      phone: js.Any,
-      removeUnwantedMatches: js.Any,
-      replaceFn: js.Any,
-      sanitizeHtml: js.Any,
-      stripPrefix: js.Any,
-      stripTrailingSlash: js.Any,
-      tagBuilder: js.Any,
-      truncate: js.Any,
-      urls: js.Any,
-      version: /* "3.14.2" */ String
+      parseText: Any,
+      phone: Any,
+      removeUnwantedMatches: Any,
+      replaceFn: Any,
+      sanitizeHtml: Any,
+      stripPrefix: Any,
+      stripTrailingSlash: Any,
+      tagBuilder: Any,
+      truncate: Any,
+      urls: Any,
+      version: /* "4.0.0" */ String
     ): Autolinker = {
-      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], compactMatches = compactMatches.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], createMatchReturnVal = createMatchReturnVal.asInstanceOf[js.Any], decodePercentEncoding = decodePercentEncoding.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], getMatchers = getMatchers.asInstanceOf[js.Any], getTagBuilder = getTagBuilder.asInstanceOf[js.Any], hashtag = hashtag.asInstanceOf[js.Any], link = js.Any.fromFunction1(link), matchers = matchers.asInstanceOf[js.Any], mention = mention.asInstanceOf[js.Any], newWindow = newWindow.asInstanceOf[js.Any], normalizeStripPrefixCfg = normalizeStripPrefixCfg.asInstanceOf[js.Any], normalizeTruncateCfg = normalizeTruncateCfg.asInstanceOf[js.Any], normalizeUrlsCfg = normalizeUrlsCfg.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parseText = parseText.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], removeUnwantedMatches = removeUnwantedMatches.asInstanceOf[js.Any], replaceFn = replaceFn.asInstanceOf[js.Any], sanitizeHtml = sanitizeHtml.asInstanceOf[js.Any], stripPrefix = stripPrefix.asInstanceOf[js.Any], stripTrailingSlash = stripTrailingSlash.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], compactMatches = compactMatches.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], createMatchReturnVal = createMatchReturnVal.asInstanceOf[js.Any], decodePercentEncoding = decodePercentEncoding.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], getTagBuilder = getTagBuilder.asInstanceOf[js.Any], hashtag = hashtag.asInstanceOf[js.Any], link = js.Any.fromFunction1(link), mention = mention.asInstanceOf[js.Any], newWindow = newWindow.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parseText = parseText.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], removeUnwantedMatches = removeUnwantedMatches.asInstanceOf[js.Any], replaceFn = replaceFn.asInstanceOf[js.Any], sanitizeHtml = sanitizeHtml.asInstanceOf[js.Any], stripPrefix = stripPrefix.asInstanceOf[js.Any], stripTrailingSlash = stripTrailingSlash.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Autolinker]
     }
     
     extension [Self <: Autolinker](x: Self) {
       
-      inline def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      inline def setCompactMatches(value: js.Any): Self = StObject.set(x, "compactMatches", value.asInstanceOf[js.Any])
+      inline def setCompactMatches(value: Any): Self = StObject.set(x, "compactMatches", value.asInstanceOf[js.Any])
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setCreateMatchReturnVal(value: js.Any): Self = StObject.set(x, "createMatchReturnVal", value.asInstanceOf[js.Any])
+      inline def setCreateMatchReturnVal(value: Any): Self = StObject.set(x, "createMatchReturnVal", value.asInstanceOf[js.Any])
       
-      inline def setDecodePercentEncoding(value: js.Any): Self = StObject.set(x, "decodePercentEncoding", value.asInstanceOf[js.Any])
+      inline def setDecodePercentEncoding(value: Any): Self = StObject.set(x, "decodePercentEncoding", value.asInstanceOf[js.Any])
       
-      inline def setEmail(value: js.Any): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Any): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      inline def setGetMatchers(value: js.Any): Self = StObject.set(x, "getMatchers", value.asInstanceOf[js.Any])
+      inline def setGetTagBuilder(value: Any): Self = StObject.set(x, "getTagBuilder", value.asInstanceOf[js.Any])
       
-      inline def setGetTagBuilder(value: js.Any): Self = StObject.set(x, "getTagBuilder", value.asInstanceOf[js.Any])
-      
-      inline def setHashtag(value: js.Any): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: Any): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
       inline def setLink(value: String => String): Self = StObject.set(x, "link", js.Any.fromFunction1(value))
       
-      inline def setMatchers(value: js.Any): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
+      inline def setMention(value: Any): Self = StObject.set(x, "mention", value.asInstanceOf[js.Any])
       
-      inline def setMention(value: js.Any): Self = StObject.set(x, "mention", value.asInstanceOf[js.Any])
-      
-      inline def setNewWindow(value: js.Any): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizeStripPrefixCfg(value: js.Any): Self = StObject.set(x, "normalizeStripPrefixCfg", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizeTruncateCfg(value: js.Any): Self = StObject.set(x, "normalizeTruncateCfg", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizeUrlsCfg(value: js.Any): Self = StObject.set(x, "normalizeUrlsCfg", value.asInstanceOf[js.Any])
+      inline def setNewWindow(value: Any): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
       
       inline def setParse(value: String => js.Array[Match]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      inline def setParseText(value: js.Any): Self = StObject.set(x, "parseText", value.asInstanceOf[js.Any])
+      inline def setParseText(value: Any): Self = StObject.set(x, "parseText", value.asInstanceOf[js.Any])
       
-      inline def setPhone(value: js.Any): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: Any): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      inline def setRemoveUnwantedMatches(value: js.Any): Self = StObject.set(x, "removeUnwantedMatches", value.asInstanceOf[js.Any])
+      inline def setRemoveUnwantedMatches(value: Any): Self = StObject.set(x, "removeUnwantedMatches", value.asInstanceOf[js.Any])
       
-      inline def setReplaceFn(value: js.Any): Self = StObject.set(x, "replaceFn", value.asInstanceOf[js.Any])
+      inline def setReplaceFn(value: Any): Self = StObject.set(x, "replaceFn", value.asInstanceOf[js.Any])
       
-      inline def setSanitizeHtml(value: js.Any): Self = StObject.set(x, "sanitizeHtml", value.asInstanceOf[js.Any])
+      inline def setSanitizeHtml(value: Any): Self = StObject.set(x, "sanitizeHtml", value.asInstanceOf[js.Any])
       
-      inline def setStripPrefix(value: js.Any): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
+      inline def setStripPrefix(value: Any): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
       
-      inline def setStripTrailingSlash(value: js.Any): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setStripTrailingSlash(value: Any): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
       
-      inline def setTagBuilder(value: js.Any): Self = StObject.set(x, "tagBuilder", value.asInstanceOf[js.Any])
+      inline def setTagBuilder(value: Any): Self = StObject.set(x, "tagBuilder", value.asInstanceOf[js.Any])
       
-      inline def setTruncate(value: js.Any): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: Any): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      inline def setUrls(value: js.Any): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+      inline def setUrls(value: Any): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      inline def setVersion(value: /* "3.14.2" */ String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: /* "4.0.0" */ String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1193,7 +1029,7 @@ object autolinkerMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var decodePercentEncoding: js.UndefOr[Boolean] = js.undefined
     
@@ -1232,7 +1068,7 @@ object autolinkerMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -1293,6 +1129,7 @@ object autolinkerMod {
     - typings.autolinker.autolinkerStrings.twitter
     - typings.autolinker.autolinkerStrings.facebook
     - typings.autolinker.autolinkerStrings.instagram
+    - typings.autolinker.autolinkerStrings.tiktok
   */
   trait HashtagConfig extends StObject
   object HashtagConfig {
@@ -1303,20 +1140,7 @@ object autolinkerMod {
     
     inline def instagram: typings.autolinker.autolinkerStrings.instagram = "instagram".asInstanceOf[typings.autolinker.autolinkerStrings.instagram]
     
-    inline def twitter: typings.autolinker.autolinkerStrings.twitter = "twitter".asInstanceOf[typings.autolinker.autolinkerStrings.twitter]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.autolinker.autolinkerStrings.twitter
-    - typings.autolinker.autolinkerStrings.facebook
-    - typings.autolinker.autolinkerStrings.instagram
-  */
-  trait HashtagServices extends StObject
-  object HashtagServices {
-    
-    inline def facebook: typings.autolinker.autolinkerStrings.facebook = "facebook".asInstanceOf[typings.autolinker.autolinkerStrings.facebook]
-    
-    inline def instagram: typings.autolinker.autolinkerStrings.instagram = "instagram".asInstanceOf[typings.autolinker.autolinkerStrings.instagram]
+    inline def tiktok: typings.autolinker.autolinkerStrings.tiktok = "tiktok".asInstanceOf[typings.autolinker.autolinkerStrings.tiktok]
     
     inline def twitter: typings.autolinker.autolinkerStrings.twitter = "twitter".asInstanceOf[typings.autolinker.autolinkerStrings.twitter]
   }
@@ -1326,6 +1150,7 @@ object autolinkerMod {
     - typings.autolinker.autolinkerStrings.twitter
     - typings.autolinker.autolinkerStrings.instagram
     - typings.autolinker.autolinkerStrings.soundcloud
+    - typings.autolinker.autolinkerStrings.tiktok
   */
   trait MentionConfig extends StObject
   object MentionConfig {
@@ -1336,20 +1161,7 @@ object autolinkerMod {
     
     inline def soundcloud: typings.autolinker.autolinkerStrings.soundcloud = "soundcloud".asInstanceOf[typings.autolinker.autolinkerStrings.soundcloud]
     
-    inline def twitter: typings.autolinker.autolinkerStrings.twitter = "twitter".asInstanceOf[typings.autolinker.autolinkerStrings.twitter]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.autolinker.autolinkerStrings.twitter
-    - typings.autolinker.autolinkerStrings.instagram
-    - typings.autolinker.autolinkerStrings.soundcloud
-  */
-  trait MentionServices extends StObject
-  object MentionServices {
-    
-    inline def instagram: typings.autolinker.autolinkerStrings.instagram = "instagram".asInstanceOf[typings.autolinker.autolinkerStrings.instagram]
-    
-    inline def soundcloud: typings.autolinker.autolinkerStrings.soundcloud = "soundcloud".asInstanceOf[typings.autolinker.autolinkerStrings.soundcloud]
+    inline def tiktok: typings.autolinker.autolinkerStrings.tiktok = "tiktok".asInstanceOf[typings.autolinker.autolinkerStrings.tiktok]
     
     inline def twitter: typings.autolinker.autolinkerStrings.twitter = "twitter".asInstanceOf[typings.autolinker.autolinkerStrings.twitter]
   }
@@ -1412,30 +1224,15 @@ object autolinkerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.autolinker.autolinkerStrings.scheme
-    - typings.autolinker.autolinkerStrings.www
-    - typings.autolinker.autolinkerStrings.tld
-  */
-  trait UrlMatchTypeOptions extends StObject
-  object UrlMatchTypeOptions {
-    
-    inline def scheme: typings.autolinker.autolinkerStrings.scheme = "scheme".asInstanceOf[typings.autolinker.autolinkerStrings.scheme]
-    
-    inline def tld: typings.autolinker.autolinkerStrings.tld = "tld".asInstanceOf[typings.autolinker.autolinkerStrings.tld]
-    
-    inline def www: typings.autolinker.autolinkerStrings.www = "www".asInstanceOf[typings.autolinker.autolinkerStrings.www]
-  }
-  
   type UrlsConfig = Boolean | UrlsConfigObj
   
   trait UrlsConfigObj extends StObject {
     
+    var ipV4Matches: js.UndefOr[Boolean] = js.undefined
+    
     var schemeMatches: js.UndefOr[Boolean] = js.undefined
     
     var tldMatches: js.UndefOr[Boolean] = js.undefined
-    
-    var wwwMatches: js.UndefOr[Boolean] = js.undefined
   }
   object UrlsConfigObj {
     
@@ -1446,6 +1243,10 @@ object autolinkerMod {
     
     extension [Self <: UrlsConfigObj](x: Self) {
       
+      inline def setIpV4Matches(value: Boolean): Self = StObject.set(x, "ipV4Matches", value.asInstanceOf[js.Any])
+      
+      inline def setIpV4MatchesUndefined: Self = StObject.set(x, "ipV4Matches", js.undefined)
+      
       inline def setSchemeMatches(value: Boolean): Self = StObject.set(x, "schemeMatches", value.asInstanceOf[js.Any])
       
       inline def setSchemeMatchesUndefined: Self = StObject.set(x, "schemeMatches", js.undefined)
@@ -1453,10 +1254,6 @@ object autolinkerMod {
       inline def setTldMatches(value: Boolean): Self = StObject.set(x, "tldMatches", value.asInstanceOf[js.Any])
       
       inline def setTldMatchesUndefined: Self = StObject.set(x, "tldMatches", js.undefined)
-      
-      inline def setWwwMatches(value: Boolean): Self = StObject.set(x, "wwwMatches", value.asInstanceOf[js.Any])
-      
-      inline def setWwwMatchesUndefined: Self = StObject.set(x, "wwwMatches", js.undefined)
     }
   }
 }

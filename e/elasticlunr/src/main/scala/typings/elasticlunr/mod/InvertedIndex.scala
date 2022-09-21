@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticlunr", "InvertedIndex")
 @js.native
-class InvertedIndex () extends StObject {
+open class InvertedIndex () extends StObject {
   
   def addToken(token: String, tokenInfo: TokenInfo): Unit = js.native
   def addToken(token: String, tokenInfo: TokenInfo, root: InvertedIndexNode): Unit = js.native

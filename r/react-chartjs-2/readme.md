@@ -1,19 +1,19 @@
 
 # Scala.js typings for react-chartjs-2
 
-Typings are for version 2.11.1
+Typings are for version 4.3.1
 
 ## Library description:
-react-chartjs-2
+React components for Chart.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-chartjs-2 |
-| Keywords           | chart, chart-js, chart.js, react-chartjs-2, react chart.js |
-| # releases         | 8 |
-| # dependents       | 229 |
-| # downloads        | 13869927 |
-| # stars            | 8 |
+| Keywords           | chart, chart-js, chart.js, react-chartjs-2, react chart.js, react-chart.js |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 2775199.0 |
+| # stars            | 5200.0 |
 
 ## Links
 - [Homepage](https://github.com/reactchartjs/react-chartjs-2)

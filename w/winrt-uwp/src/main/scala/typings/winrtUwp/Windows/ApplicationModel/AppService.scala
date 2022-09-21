@@ -142,7 +142,7 @@ object AppService {
   @js.native
   trait AppServiceConnection extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_requestreceived(
       `type`: requestreceived,
@@ -181,7 +181,7 @@ object AppService {
     /** Gets or sets the package family name for the package that contains the endpoint for the app service. */
     var packageFamilyName: String = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_requestreceived(
       `type`: requestreceived,

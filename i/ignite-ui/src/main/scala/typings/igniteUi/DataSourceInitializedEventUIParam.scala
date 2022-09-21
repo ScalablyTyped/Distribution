@@ -9,7 +9,7 @@ trait DataSourceInitializedEventUIParam extends StObject {
   /**
     * Gets a reference to the data source.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * See if an error has occured during initialization.
@@ -19,12 +19,12 @@ trait DataSourceInitializedEventUIParam extends StObject {
   /**
     * Gets a reference to the root of the data source metatadata root item.
     */
-  var metadataTreeRoot: js.UndefOr[js.Any] = js.undefined
+  var metadataTreeRoot: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the data selector.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object DataSourceInitializedEventUIParam {
   
@@ -35,7 +35,7 @@ object DataSourceInitializedEventUIParam {
   
   extension [Self <: DataSourceInitializedEventUIParam](x: Self) {
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -43,11 +43,11 @@ object DataSourceInitializedEventUIParam {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setMetadataTreeRoot(value: js.Any): Self = StObject.set(x, "metadataTreeRoot", value.asInstanceOf[js.Any])
+    inline def setMetadataTreeRoot(value: Any): Self = StObject.set(x, "metadataTreeRoot", value.asInstanceOf[js.Any])
     
     inline def setMetadataTreeRootUndefined: Self = StObject.set(x, "metadataTreeRoot", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

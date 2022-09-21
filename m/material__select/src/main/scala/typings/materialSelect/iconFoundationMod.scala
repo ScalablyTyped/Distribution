@@ -13,17 +13,21 @@ object iconFoundationMod {
   
   @JSImport("@material/select/icon/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCSelectIconFoundation {
+  open class default () extends MDCSelectIconFoundation {
     def this(adapter: PartialMDCSelectIconAdapt) = this()
   }
   
   @JSImport("@material/select/icon/foundation", "MDCSelectIconFoundation")
   @js.native
-  class MDCSelectIconFoundation () extends MDCFoundation[MDCSelectIconAdapter] {
+  open class MDCSelectIconFoundation () extends MDCFoundation[MDCSelectIconAdapter] {
     def this(adapter: PartialMDCSelectIconAdapt) = this()
     
     def handleInteraction(evt: KeyboardEvent): Unit = js.native
     def handleInteraction(evt: MouseEvent): Unit = js.native
+    
+    /* private */ val interactionHandler: Any = js.native
+    
+    /* private */ var savedTabIndex: Any = js.native
     
     def setAriaLabel(label: String): Unit = js.native
     

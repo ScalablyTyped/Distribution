@@ -57,7 +57,7 @@ trait IPresetDialog[T] extends StObject {
   def htmlContent(htmlContent: String): T = js.native
   
   def locals(): T = js.native
-  def locals(locals: StringDictionary[js.Any]): T = js.native
+  def locals(locals: StringDictionary[Any]): T = js.native
   
   def multiple(multiple: Boolean): T = js.native
   

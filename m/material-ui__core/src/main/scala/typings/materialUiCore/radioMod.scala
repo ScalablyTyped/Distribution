@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.radioRadioMod.RadioProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object radioMod extends Shortcut {
+object radioMod {
   
-  @JSImport("@material-ui/core/Radio", JSImport.Default)
+  @JSImport("@material-ui/core/Radio", JSImport.Namespace)
   @js.native
-  val default: ComponentType[RadioProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[RadioProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `radioMod.foo` */
-  override def _to: ComponentType[RadioProps] = default
+  inline def default(props: RadioProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

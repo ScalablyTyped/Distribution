@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("UInt64")
 @js.native
-class UInt64_ protected ()
+open class UInt64_ protected ()
   extends StObject
      with UInt64 {
   /**

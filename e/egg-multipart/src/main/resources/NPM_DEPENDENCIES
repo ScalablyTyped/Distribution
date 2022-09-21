@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "egg-multipart" : "2.10.3"
+      "egg-multipart" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "egg-multipart" : "2.10.3"
+      "egg-multipart" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

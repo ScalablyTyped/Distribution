@@ -28,7 +28,7 @@ object resources {
     */
   @JSImport("coinbase-commerce-node", "resources.Charge")
   @js.native
-  class Charge protected ()
+  open class Charge protected ()
     extends Resource[CreateCharge]
        with ChargeResource {
     /**
@@ -168,7 +168,7 @@ object resources {
     */
   @JSImport("coinbase-commerce-node", "resources.Checkout")
   @js.native
-  class Checkout protected ()
+  open class Checkout protected ()
     extends Resource[CreateCheckout]
        with CheckoutResource {
     /**
@@ -267,7 +267,7 @@ object resources {
     */
   @JSImport("coinbase-commerce-node", "resources.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends Resource[EventResource[ChargeResource | CheckoutResource]]
        with EventResource[ChargeResource | CheckoutResource] {
     /**

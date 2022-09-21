@@ -38,7 +38,7 @@ object GroupElement {
     getName: () => String,
     getParent: () => XInterface,
     getStateAsProperty: () => PropertyState,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setName: String => Unit,
     setParent: XInterface => Unit,

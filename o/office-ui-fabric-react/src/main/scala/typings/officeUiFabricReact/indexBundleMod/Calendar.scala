@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "Calendar")
 @js.native
-class Calendar protected ()
+open class Calendar protected ()
   extends typings.officeUiFabricReact.mod.Calendar {
   def this(props: ICalendarProps) = this()
 }

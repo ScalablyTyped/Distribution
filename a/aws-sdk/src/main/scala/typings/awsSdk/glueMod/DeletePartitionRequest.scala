@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePartitionRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the partition to be deleted resides. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the partition to be deleted resides. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -43,7 +43,7 @@ object DeletePartitionRequest {
     
     inline def setPartitionValues(value: ValueStringList): Self = StObject.set(x, "PartitionValues", value.asInstanceOf[js.Any])
     
-    inline def setPartitionValuesVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValues", js.Array(value :_*))
+    inline def setPartitionValuesVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValues", js.Array(value*))
     
     inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

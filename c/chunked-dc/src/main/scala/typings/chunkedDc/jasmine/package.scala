@@ -1,19 +1,20 @@
 package typings.chunkedDc.jasmine
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CustomEqualityTester = js.Function2[/* first */ js.Any, /* second */ js.Any, scala.Boolean]
+type CustomEqualityTester = js.Function2[/* first */ scala.Any, /* second */ scala.Any, Boolean]
 
-type CustomMatcherFactories = org.scalablytyped.runtime.StringDictionary[typings.chunkedDc.jasmine.CustomMatcherFactory]
+type CustomMatcherFactories = StringDictionary[CustomMatcherFactory]
 
 type CustomMatcherFactory = js.Function2[
-/* util */ typings.chunkedDc.jasmine.MatchersUtil, 
-/* customEqualityTesters */ js.Array[typings.chunkedDc.jasmine.CustomEqualityTester], 
-typings.chunkedDc.jasmine.CustomMatcher]
+/* util */ MatchersUtil, 
+/* customEqualityTesters */ js.Array[CustomEqualityTester], 
+CustomMatcher]
 
-type SpecFunction = js.Function1[/* spec */ js.UndefOr[typings.chunkedDc.jasmine.Spec], scala.Unit]
+type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], Unit]
 
-type StringPrettyPrinter = typings.chunkedDc.jasmine.PrettyPrinter
+type StringPrettyPrinter = PrettyPrinter

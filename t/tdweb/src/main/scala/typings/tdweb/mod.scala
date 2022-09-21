@@ -38,7 +38,7 @@ object mod {
     */
   @JSImport("tdweb", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TdClient {
     /**
@@ -203,7 +203,7 @@ object mod {
     /**
       * Callback for all incoming updates.
       */
-    var onUpdate: js.UndefOr[js.Function1[/* update */ TdObject, js.Any]] = js.undefined
+    var onUpdate: js.UndefOr[js.Function1[/* update */ TdObject, Any]] = js.undefined
     
     /**
       * For debug only. PaPass false to use TDLib without database and secret chats.
@@ -246,7 +246,7 @@ object mod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setOnUpdate(value: /* update */ TdObject => js.Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* update */ TdObject => Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
       inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       

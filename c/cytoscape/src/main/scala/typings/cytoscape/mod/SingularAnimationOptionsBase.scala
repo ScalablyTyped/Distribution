@@ -20,7 +20,7 @@ trait SingularAnimationOptionsBase extends StObject {
   var renderedPosition: Position
   
   /** An object containing name-value pairs of style properties to animate. */
-  var style: js.Any
+  var style: Any
 }
 object SingularAnimationOptionsBase {
   
@@ -29,7 +29,7 @@ object SingularAnimationOptionsBase {
     easing: TransitionTimingFunction,
     position: Position,
     renderedPosition: Position,
-    style: js.Any
+    style: Any
   ): SingularAnimationOptionsBase = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], renderedPosition = renderedPosition.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingularAnimationOptionsBase]
@@ -45,6 +45,6 @@ object SingularAnimationOptionsBase {
     
     inline def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

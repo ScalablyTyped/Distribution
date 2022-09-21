@@ -28,7 +28,7 @@ object XEncryptionProtectedSource {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEncryption: () => Unit,
     setEncryptionPassword: String => Unit

@@ -1,6 +1,5 @@
 package typings.storybookAddonKnobs
 
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.storybookAddonKnobs.anon.PartialButtonTypeProps
@@ -16,8 +15,8 @@ object buttonMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Button.ButtonTypeProps> & {  serialize :(): undefined,   deserialize :(): undefined} */
   object default {
     
-    inline def apply(props: PropsWithChildren[ButtonTypeProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[ButtonTypeProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ButtonTypeProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ButtonTypeProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Button", JSImport.Default)
     @js.native
@@ -25,8 +24,8 @@ object buttonMod {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Button", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Button", "default.defaultProps")
     @js.native
@@ -56,7 +55,7 @@ object buttonMod {
   
   type ButtonTypeKnob = KnobControlConfig[scala.Nothing]
   
-  type ButtonTypeOnClickProp = js.Function1[/* knob */ ButtonTypeKnob, js.Any]
+  type ButtonTypeOnClickProp = js.Function1[/* knob */ ButtonTypeKnob, Any]
   
   trait ButtonTypeProps
     extends StObject
@@ -69,7 +68,7 @@ object buttonMod {
   }
   object ButtonTypeProps {
     
-    inline def apply(knob: ButtonTypeKnob, onClick: /* knob */ ButtonTypeKnob => js.Any): ButtonTypeProps = {
+    inline def apply(knob: ButtonTypeKnob, onClick: /* knob */ ButtonTypeKnob => Any): ButtonTypeProps = {
       val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[ButtonTypeProps]
     }
@@ -78,7 +77,7 @@ object buttonMod {
       
       inline def setKnob(value: ButtonTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
       
-      inline def setOnClick(value: /* knob */ ButtonTypeKnob => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* knob */ ButtonTypeKnob => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
 }

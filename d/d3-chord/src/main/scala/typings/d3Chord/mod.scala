@@ -18,9 +18,15 @@ object mod {
   
   inline def chordTranspose(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordTranspose")().asInstanceOf[ChordLayout]
   
-  inline def ribbon(): RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup]]
+  inline def ribbon(): RibbonGenerator[Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[Any, Ribbon_, RibbonSubgroup]]
   
-  inline def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[js.Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Datum, SubgroupDatum]]
+  inline def ribbonArrow(): RibbonArrowGenerator[Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbonArrow")().asInstanceOf[RibbonArrowGenerator[Any, Ribbon_, RibbonSubgroup]]
+  
+  inline def ribbonArrow_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonArrowGenerator[Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbonArrow")().asInstanceOf[RibbonArrowGenerator[Any, Datum, SubgroupDatum]]
+  
+  inline def ribbonArrow_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonArrowGenerator[This, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbonArrow")().asInstanceOf[RibbonArrowGenerator[This, Datum, SubgroupDatum]]
+  
+  inline def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[Any, Datum, SubgroupDatum]]
   
   inline def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[This, Datum, SubgroupDatum]]
   
@@ -91,63 +97,43 @@ object mod {
     def padAngle(angle: Double): this.type = js.native
     
     /**
-      * Returns the current chord comparator, which defaults to null.
-      */
-    def sortChords(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
-    /**
-      * Sets the chord comparator to the specified function and returns this chord layout.
-      *
+      * Sets the chord comparator to the specified function or null and returns this chord layout.
       * If the chord comparator is non-null, it is used to sort the chords by their combined flow; this only affects the z-order of the chords.
       * See also d3.ascending and d3.descending.
-      *
-      * @param compare A comparator function, e.g. d3.ascending or d3.descending.
       */
+    def sortChords(): this.type = js.native
     def sortChords(compare: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
     /**
-      * Removes the current chord comparator and returns this chord layout.
-      *
-      * @param compare Use null to remove the current comparator function, if any.
+      * Returns the current chord comparator, which defaults to null.
       */
-    def sortChords(compare: Null): this.type = js.native
+    @JSName("sortChords")
+    def sortChords_Union(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
     
+    /**
+      * Sets the group comparator to the specified function or null and returns this chord layout.
+      * If the group comparator is non-null, it is used to sort the groups by their total outflow.
+      * See also d3.ascending and d3.descending.
+      */
+    def sortGroups(): this.type = js.native
+    def sortGroups(compare: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
     /**
       * Returns the current group comparator, which defaults to null.
       */
-    def sortGroups(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
-    /**
-      * Sets the group comparator to the specified function and returns this chord layout.
-      *
-      * If the group comparator is non-null, it is used to sort the groups by their total outflow. See also d3.ascending and d3.descending.
-      *
-      * @param compare A comparator function, e.g. d3.ascending or d3.descending.
-      */
-    def sortGroups(compare: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
-    /**
-      * Removes the current group comparator and returns this chord layout.
-      *
-      * @param compare Use null to remove the current comparator function, if any.
-      */
-    def sortGroups(compare: Null): this.type = js.native
+    @JSName("sortGroups")
+    def sortGroups_Union(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
     
+    /**
+      * Sets the subgroup comparator to the specified function or null and returns this chord layout.
+      * If the subgroup comparator is non-null, it is used to sort the subgroups corresponding to matrix[i][0 … n - 1] for a given group i by their total outflow.
+      * See also d3.ascending and d3.descending.
+      */
+    def sortSubgroups(): this.type = js.native
+    def sortSubgroups(compare: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
     /**
       * Returns the current subgroup comparator, which defaults to null.
       */
-    def sortSubgroups(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
-    /**
-      * Sets the subgroup comparator to the specified function and returns this chord layout.
-      *
-      * If the subgroup comparator is non-null, it is used to sort the subgroups corresponding to matrix[i][0 … n - 1]
-      * for a given group i by their total outflow. See also d3.ascending and d3.descending.
-      *
-      * @param compare A comparator function, e.g. d3.ascending or d3.descending.
-      */
-    def sortSubgroups(compare: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
-    /**
-      * Removes the current subgroup comparator and returns this chord layout.
-      *
-      * @param compare Use null to remove the current comparator function, if any.
-      */
-    def sortSubgroups(compare: Null): this.type = js.native
+    @JSName("sortSubgroups")
+    def sortSubgroups_Union(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
   }
   
   trait ChordSubgroup extends StObject {
@@ -231,6 +217,16 @@ object mod {
   }
   
   @js.native
+  trait RibbonArrowGenerator[This, RibbonDatum, RibbonSubgroupDatum]
+    extends StObject
+       with RibbonGenerator[This, RibbonDatum, RibbonSubgroupDatum] {
+    
+    def headRadius(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double] = js.native
+    def headRadius(radius: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double]): this.type = js.native
+    def headRadius(radius: Double): this.type = js.native
+  }
+  
+  @js.native
   trait RibbonGenerator[This, RibbonDatum, RibbonSubgroupDatum] extends StObject {
     
     /**
@@ -244,34 +240,27 @@ object mod {
       *
       * @param d The datum representing the chord for which the ribbon is to be generated.
       */
-    def apply(d: RibbonDatum, args: js.Any*): String | Null = js.native
+    def apply(d: RibbonDatum, args: Any*): String | Null = js.native
     
+    /**
+      * Sets the context and returns this ribbon generator.
+      * If the context is not null, then the generated ribbon is rendered to this context as a sequence of path method calls.
+      * Otherwise, a path data string representing the generated ribbon is returned.
+      * See also d3-path.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
     /**
       * Returns the current rendering context, which defaults to null.
       */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this ribbon generator.
-      *
-      * A path data string representing the generated ribbon will be returned when the generator is invoked with data. See also d3-path.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this ribbon generator.
-      *
-      * If the context is not null, then the generated ribbon is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
     
     /**
       * Returns the current end angle accessor, which defaults to a function returning the "endAngle" property (assumed to be a number in radians) of the source or
       * target object returned by the source or target accessor, respectively.
       */
-    def endAngle(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double] = js.native
+    def endAngle(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the end angle accessor to the specified function and returns this ribbon generator.
       *
@@ -280,9 +269,7 @@ object mod {
       * It is also passed any additional arguments that were passed into the generator, with the exception of the first element representing the chord datum itself.
       * The function returns the end angle in radians.
       */
-    def endAngle(
-      angle: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def endAngle(angle: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the end angle to a fixed number in radians and returns this ribbon generator.
       *
@@ -293,7 +280,7 @@ object mod {
     /**
       * Returns the current pad angle accessor, which defaults to a function returning 0.
       */
-    def padAngle(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double] = js.native
+    def padAngle(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the pad angle accessor to the specified function and returns this ribbon generator.
       *
@@ -302,9 +289,7 @@ object mod {
       * It is also passed any additional arguments that were passed into the generator, with the exception of the first element representing the chord datum itself.
       * The function returns the pad angle in radians.
       */
-    def padAngle(
-      angle: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def padAngle(angle: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the pad angle to a fixed number in radians and returns this ribbon generator.
       *
@@ -316,7 +301,7 @@ object mod {
       * Returns the current radius accessor, which defaults to a function returning the "radius" property (assumed to be a number) of the source or
       * target object returned by the source or target accessor, respectively.
       */
-    def radius(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double] = js.native
+    def radius(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the radius accessor to the specified function and returns this ribbon generator.
       *
@@ -325,9 +310,7 @@ object mod {
       * It is also passed any additional arguments that were passed into the generator, with the exception of the first element representing the chord datum itself.
       * The function returns the radius value.
       */
-    def radius(
-      radius: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def radius(radius: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the radius to a fixed number and returns this ribbon generator.
       *
@@ -338,7 +321,7 @@ object mod {
     /**
       * Returns the current source accessor, which defaults to a function returning the "source" property of the first argument passed into the accessor.
       */
-    def source(): js.ThisFunction2[/* this */ This, /* d */ RibbonDatum, /* repeated */ js.Any, RibbonSubgroupDatum] = js.native
+    def source(): js.ThisFunction2[/* this */ This, /* d */ RibbonDatum, /* repeated */ Any, RibbonSubgroupDatum] = js.native
     /**
       * Sets the source accessor to the specified function and returns this ribbon generator.
       *
@@ -346,14 +329,14 @@ object mod {
       * receives the same arguments that were passed into the ribbon generator.
       */
     def source(
-      source: js.ThisFunction2[/* this */ This, /* d */ RibbonDatum, /* repeated */ js.Any, RibbonSubgroupDatum]
+      source: js.ThisFunction2[/* this */ This, /* d */ RibbonDatum, /* repeated */ Any, RibbonSubgroupDatum]
     ): this.type = js.native
     
     /**
       * Returns the current source radius accessor, which defaults to a function returning the "radius" property (assumed to be a number) of the source or
       * target object returned by the source or target accessor, respectively.
       */
-    def sourceRadius(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double] = js.native
+    def sourceRadius(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the source radius accessor to the specified function and returns this ribbon generator.
       *
@@ -362,9 +345,7 @@ object mod {
       * It is also passed any additional arguments that were passed into the generator, with the exception of the first element representing the chord datum itself.
       * The function returns the source radius value.
       */
-    def sourceRadius(
-      radius: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def sourceRadius(radius: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the source radius to a fixed number and returns this ribbon generator.
       *
@@ -376,7 +357,7 @@ object mod {
       * Returns the current start angle accessor, which defaults to a function returning the "startAngle" property (assumed to be a number in radians) of the source or
       * target object returned by the source or target accessor, respectively.
       */
-    def startAngle(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double] = js.native
+    def startAngle(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the start angle accessor to the specified function and returns this ribbon generator.
       *
@@ -385,9 +366,7 @@ object mod {
       * It is also passed any additional arguments that were passed into the generator, with the exception of the first element representing the chord datum itself.
       * The function returns the start angle in radians.
       */
-    def startAngle(
-      angle: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def startAngle(angle: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the start angle to a fixed number in radians and returns this ribbon generator.
       *
@@ -398,7 +377,7 @@ object mod {
     /**
       * Returns the current target accessor, which defaults to a function returning the "target" property of the first argument passed into the accessor.
       */
-    def target(): js.ThisFunction2[/* this */ This, /* d */ RibbonDatum, /* repeated */ js.Any, RibbonSubgroupDatum] = js.native
+    def target(): js.ThisFunction2[/* this */ This, /* d */ RibbonDatum, /* repeated */ Any, RibbonSubgroupDatum] = js.native
     /**
       * Sets the target accessor to the specified function and returns this ribbon generator.
       *
@@ -406,14 +385,14 @@ object mod {
       * receives the same arguments that were passed into the ribbon generator.
       */
     def target(
-      target: js.ThisFunction2[/* this */ This, /* d */ RibbonDatum, /* repeated */ js.Any, RibbonSubgroupDatum]
+      target: js.ThisFunction2[/* this */ This, /* d */ RibbonDatum, /* repeated */ Any, RibbonSubgroupDatum]
     ): this.type = js.native
     
     /**
       * Returns the current target radius accessor, which defaults to a function returning the "radius" property (assumed to be a number) of the source or
       * target object returned by the source or target accessor, respectively.
       */
-    def targetRadius(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double] = js.native
+    def targetRadius(): js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the target radius accessor to the specified function and returns this ribbon generator.
       *
@@ -422,9 +401,7 @@ object mod {
       * It is also passed any additional arguments that were passed into the generator, with the exception of the first element representing the chord datum itself.
       * The function returns the target radius value.
       */
-    def targetRadius(
-      radius: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def targetRadius(radius: js.ThisFunction2[/* this */ This, /* d */ RibbonSubgroupDatum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the target radius to a fixed number and returns this ribbon generator.
       *

@@ -12,7 +12,7 @@ trait DescribeLocalGatewayVirtualInterfaceGroupsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more filters.    local-gateway-id - The ID of a local gateway.    local-gateway-virtual-interface-id - The ID of the virtual interface.    local-gateway-virtual-interface-group-id - The ID of the virtual interface group.  
+    * One or more filters.    local-gateway-id - The ID of a local gateway.    local-gateway-virtual-interface-group-id - The ID of the virtual interface group.    local-gateway-virtual-interface-id - The ID of the virtual interface.    owner-id - The ID of the Amazon Web Services account that owns the local gateway virtual interface group.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -48,13 +48,13 @@ object DescribeLocalGatewayVirtualInterfaceGroupsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setLocalGatewayVirtualInterfaceGroupIds(value: LocalGatewayVirtualInterfaceGroupIdSet): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroupIds", value.asInstanceOf[js.Any])
     
     inline def setLocalGatewayVirtualInterfaceGroupIdsUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroupIds", js.undefined)
     
-    inline def setLocalGatewayVirtualInterfaceGroupIdsVarargs(value: LocalGatewayVirtualInterfaceGroupId*): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroupIds", js.Array(value :_*))
+    inline def setLocalGatewayVirtualInterfaceGroupIdsVarargs(value: LocalGatewayVirtualInterfaceGroupId*): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroupIds", js.Array(value*))
     
     inline def setMaxResults(value: LocalGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

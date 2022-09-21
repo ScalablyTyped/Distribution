@@ -27,18 +27,18 @@ object anon {
   
   trait Subscribe extends StObject {
     
-    var subscribe: js.Any
+    var subscribe: Any
   }
   object Subscribe {
     
-    inline def apply(subscribe: js.Any): Subscribe = {
+    inline def apply(subscribe: Any): Subscribe = {
       val __obj = js.Dynamic.literal(subscribe = subscribe.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscribe]
     }
     
     extension [Self <: Subscribe](x: Self) {
       
-      inline def setSubscribe(value: js.Any): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
+      inline def setSubscribe(value: Any): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
     }
   }
 }

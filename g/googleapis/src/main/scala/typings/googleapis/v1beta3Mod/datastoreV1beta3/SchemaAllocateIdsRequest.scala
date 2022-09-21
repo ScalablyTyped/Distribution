@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for Datastore.AllocateIds.
-  */
 trait SchemaAllocateIdsRequest extends StObject {
   
   /**
-    * A list of keys with incomplete key paths for which to allocate IDs. No
-    * key may be reserved/read-only.
+    * Required. A list of keys with incomplete key paths for which to allocate IDs. No key may be reserved/read-only.
     */
   var keys: js.UndefOr[js.Array[SchemaKey]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaAllocateIdsRequest {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: SchemaKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: SchemaKey*): Self = StObject.set(x, "keys", js.Array(value*))
   }
 }

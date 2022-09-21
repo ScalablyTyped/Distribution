@@ -12,7 +12,9 @@ trait AttributeName extends StObject {
   
   var glslDatatype: js.UndefOr[String] = js.undefined
   
-  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.undefined
+  var perInstanceAttribute: js.UndefOr[Boolean] = js.undefined
+  
+  var renderState: js.UndefOr[Any] = js.undefined
   
   var vertexShaderSource: js.UndefOr[String] = js.undefined
 }
@@ -35,7 +37,11 @@ object AttributeName {
     
     inline def setGlslDatatypeUndefined: Self = StObject.set(x, "glslDatatype", js.undefined)
     
-    inline def setRenderState(value: typings.cesium.mod.RenderState): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
+    inline def setPerInstanceAttribute(value: Boolean): Self = StObject.set(x, "perInstanceAttribute", value.asInstanceOf[js.Any])
+    
+    inline def setPerInstanceAttributeUndefined: Self = StObject.set(x, "perInstanceAttribute", js.undefined)
+    
+    inline def setRenderState(value: Any): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
     
     inline def setRenderStateUndefined: Self = StObject.set(x, "renderState", js.undefined)
     

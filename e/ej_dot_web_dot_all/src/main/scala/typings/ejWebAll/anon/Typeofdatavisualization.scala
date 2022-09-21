@@ -104,7 +104,7 @@ trait Typeofdatavisualization extends StObject {
     typings.ejWebAll.ej.datavisualization.Sparkline
   ]) & TypeofSparklineFn
   
-  val Sunburst: js.Any
+  val Sunburst: Any
   
   val SunburstChart: (Instantiable2[
     /* element */ JQuery | Element, 
@@ -144,7 +144,7 @@ object Typeofdatavisualization {
       /* options */ js.UndefOr[typings.ejWebAll.ej.Sparkline.Model], 
       Sparkline
     ]) & TypeofSparklineFn,
-    Sunburst: js.Any,
+    Sunburst: Any,
     SunburstChart: (Instantiable2[
       /* element */ JQuery | Element, 
       /* options */ js.UndefOr[typings.ejWebAll.ej.SunburstChart.Model], 
@@ -215,7 +215,7 @@ object Typeofdatavisualization {
         ]) & TypeofSparklineFn
     ): Self = StObject.set(x, "Sparkline", value.asInstanceOf[js.Any])
     
-    inline def setSunburst(value: js.Any): Self = StObject.set(x, "Sunburst", value.asInstanceOf[js.Any])
+    inline def setSunburst(value: Any): Self = StObject.set(x, "Sunburst", value.asInstanceOf[js.Any])
     
     inline def setSunburstChart(
       value: (Instantiable2[

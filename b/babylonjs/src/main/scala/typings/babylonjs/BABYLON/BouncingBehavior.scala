@@ -9,19 +9,19 @@ trait BouncingBehavior
   extends StObject
      with Behavior[ArcRotateCamera] {
   
-  /* private */ var _animatables: js.Any = js.native
+  /* private */ var _animatables: Any = js.native
   
   /**
     * Applies an animation to the radius of the camera, extending by the radiusDelta.
     * @param radiusDelta The delta by which to animate to. Can be negative.
     */
-  /* private */ var _applyBoundRadiusAnimation: js.Any = js.native
+  /* private */ var _applyBoundRadiusAnimation: Any = js.native
   
-  /* private */ var _attachedCamera: js.Any = js.native
+  /* private */ var _attachedCamera: Any = js.native
   
-  /* private */ var _autoTransitionRange: js.Any = js.native
+  /* private */ var _autoTransitionRange: Any = js.native
   
-  /* private */ var _cachedWheelPrecision: js.Any = js.native
+  /* private */ var _cachedWheelPrecision: Any = js.native
   
   /**
     * Removes all animation locks. Allows new animations to be added to any of the camera properties.
@@ -31,17 +31,17 @@ trait BouncingBehavior
   /**
     * Checks if the camera radius is at the specified limit. Takes into account animation locks.
     * @param radiusLimit The limit to check against.
-    * @return Bool to indicate if at limit.
+    * @returns Bool to indicate if at limit.
     */
-  /* private */ var _isRadiusAtLimit: js.Any = js.native
+  /* private */ var _isRadiusAtLimit: Any = js.native
   
-  /* private */ var _onAfterCheckInputsObserver: js.Any = js.native
+  /* private */ var _onAfterCheckInputsObserver: Any = js.native
   
-  /* private */ var _onMeshTargetChangedObserver: js.Any = js.native
+  /* private */ var _onMeshTargetChangedObserver: Any = js.native
   
-  /* private */ var _radiusBounceTransition: js.Any = js.native
+  /* private */ var _radiusBounceTransition: Any = js.native
   
-  /* private */ var _radiusIsAnimating: js.Any = js.native
+  /* private */ var _radiusIsAnimating: Any = js.native
   
   /**
     * Gets a value indicating if the lowerRadiusTransitionRange and upperRadiusTransitionRange are defined automatically

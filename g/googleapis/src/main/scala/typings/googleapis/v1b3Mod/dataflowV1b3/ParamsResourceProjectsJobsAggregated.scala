@@ -1,9 +1,5 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,32 +9,22 @@ trait ParamsResourceProjectsJobsAggregated
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * The kind of filter to use.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The [regional endpoint]
-    * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-    * contains this job.
+    * The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains this job.
     */
   var location: js.UndefOr[String] = js.undefined
   
   /**
-    * If there are many jobs, limit response to at most this many. The actual
-    * number of jobs returned will be the lesser of max_responses and an
-    * unspecified server-defined limit.
+    * If there are many jobs, limit response to at most this many. The actual number of jobs returned will be the lesser of max_responses and an unspecified server-defined limit.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Set this to the 'next_page_token' field of a previous response to request
-    * additional results in a long list.
+    * Set this to the 'next_page_token' field of a previous response to request additional results in a long list.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -48,8 +34,7 @@ trait ParamsResourceProjectsJobsAggregated
   var projectId: js.UndefOr[String] = js.undefined
   
   /**
-    * Level of information requested in response. Default is
-    * `JOB_VIEW_SUMMARY`.
+    * Deprecated. ListJobs always returns summaries now. Use GetJob for other JobViews.
     */
   var view: js.UndefOr[String] = js.undefined
 }
@@ -61,10 +46,6 @@ object ParamsResourceProjectsJobsAggregated {
   }
   
   extension [Self <: ParamsResourceProjectsJobsAggregated](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

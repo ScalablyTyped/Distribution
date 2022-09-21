@@ -10,10 +10,10 @@ mini program cloud server sdk
 | ------------------ | :-------------: |
 | Full name          | wx-server-sdk |
 | Keywords           | - |
-| # releases         | 115 |
-| # dependents       | 15 |
-| # downloads        | 854830 |
-| # stars            | 0 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 50269.333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)

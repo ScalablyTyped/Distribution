@@ -11,7 +11,7 @@ object declareMod {
     /* was `typeof _Global.Buffer` */
     @JSGlobal("Buffer")
     @js.native
-    class Buffer ()
+    open class Buffer ()
       extends typings.fibjs.globalMod.Buffer
     
     /* was `typeof _Global.GC` */
@@ -20,7 +20,7 @@ object declareMod {
     /* was `typeof _Global.Int64` */
     @JSGlobal("Int64")
     @js.native
-    class Int64 ()
+    open class Int64 ()
       extends typings.fibjs.globalMod.Int64
     
     /* was `typeof _Global.Master` */
@@ -31,10 +31,10 @@ object declareMod {
     /* was `typeof _Global.argv` */
     @JSGlobal("argv")
     @js.native
-    val argv: js.Array[js.Any] = js.native
+    val argv: js.Array[Any] = js.native
     
     /* was `typeof _Global.clearHrInterval` */
-    inline def clearHrInterval(t: js.Any): Unit = js.Dynamic.global.applyDynamic("clearHrInterval")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearHrInterval(t: Any): Unit = js.Dynamic.global.applyDynamic("clearHrInterval")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* was `typeof _Global.__dirname` */
     @JSGlobal("__dirname")
@@ -63,23 +63,23 @@ object declareMod {
     /* was `typeof _Global.process` */
     @JSGlobal("process")
     @js.native
-    val process: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof processNS */ js.Any = js.native
+    val process: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof processNS */ Any = js.native
     
     /* was `typeof _Global.repl` */
     inline def repl(): Unit = js.Dynamic.global.applyDynamic("repl")().asInstanceOf[Unit]
-    inline def repl(cmds: js.Array[js.Any]): Unit = js.Dynamic.global.applyDynamic("repl")(cmds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def repl(cmds: js.Array[Any]): Unit = js.Dynamic.global.applyDynamic("repl")(cmds.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /* was `typeof _Global.repl` */
     inline def repl(out: ClassStream): Unit = js.Dynamic.global.applyDynamic("repl")(out.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def repl(out: ClassStream, cmds: js.Array[js.Any]): Unit = (js.Dynamic.global.applyDynamic("repl")(out.asInstanceOf[js.Any], cmds.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def repl(out: ClassStream, cmds: js.Array[Any]): Unit = (js.Dynamic.global.applyDynamic("repl")(out.asInstanceOf[js.Any], cmds.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* was `typeof _Global.require` */
-    inline def require(id: String): js.Any = js.Dynamic.global.applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def require(id: String): Any = js.Dynamic.global.applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /* was `typeof _Global.setHrInterval` */
-    inline def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = (js.Dynamic.global.applyDynamic("setHrInterval")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+    inline def setHrInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (js.Dynamic.global.applyDynamic("setHrInterval")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
   }
   
-  type GlobalExportsType = js.Any
+  type GlobalExportsType = Any
   
   trait ModuleType extends StObject {
     

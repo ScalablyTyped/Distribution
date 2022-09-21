@@ -10,10 +10,10 @@ object timelapseMod {
   
   @JSImport("material-ui/svg-icons/image/timelapse", JSImport.Default)
   @js.native
-  class default () extends ImageTimelapse
+  open class default () extends ImageTimelapse
   
   @JSImport("material-ui/svg-icons/image/timelapse", "ImageTimelapse")
   @js.native
-  class ImageTimelapse ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageTimelapse ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

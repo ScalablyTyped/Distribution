@@ -1,7 +1,8 @@
 package typings.deta
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.AsyncIterable
+import typings.deta.baseMod.default
+import typings.deta.libjsMod.DetaLib
+import typings.deta.libjsMod.DetaLibApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,79 +13,25 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Deta(projectKey: String): DetaInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any]).asInstanceOf[DetaInstance]
-  inline def Deta(projectKey: String, host: String): DetaInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[DetaInstance]
-  
+  @JSImport("deta", "App")
   @js.native
-  trait DetaBase extends StObject {
-    
-    def delete(key: String): js.Promise[Unit] = js.native
-    
-    def fetch(): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: Unit, limit: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: Unit, limit: Double, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: Unit, limit: Unit, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: DetaBaseQuery): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: DetaBaseQuery, limit: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: DetaBaseQuery, limit: Double, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    def fetch(query: DetaBaseQuery, limit: Unit, buffer: Double): js.Promise[AsyncIterable[js.Array[Serializable]]] = js.native
-    
-    def get(key: String): js.Promise[Serializable | Null] = js.native
-    
-    def insert[Data](data: Data, key: String): js.Promise[Data] = js.native
-    
-    def put[Data](data: Data): js.Promise[Data] = js.native
-    def put[Data](data: Data, key: String): js.Promise[Data] = js.native
-    
-    def putMany[Items](items: Items): js.Promise[Items] = js.native
-    
-    def update(updates: DetaBaseUpdates, key: String): js.Promise[Unit] = js.native
-    
-    var util: DetaBaseUtil = js.native
-  }
+  def App_ : DetaLibApp = js.native
   
-  trait DetaBaseQuery
-    extends StObject
-       with /* key */ StringDictionary[String | Double | Boolean | DetaBaseQuery]
-  object DetaBaseQuery {
-    
-    inline def apply(): DetaBaseQuery = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DetaBaseQuery]
-    }
-  }
+  inline def App__=(x: DetaLibApp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("App")(x.asInstanceOf[js.Any])
   
-  type DetaBaseUpdates = StringDictionary[Serializable | js.Object]
+  inline def Base(baseName: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("Base")(baseName.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def Base(baseName: String, host: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("Base")(baseName.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[default]
   
+  inline def Deta(): typings.deta.detaMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("Deta")().asInstanceOf[typings.deta.detaMod.default]
+  inline def Deta(projectKey: String): typings.deta.detaMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any]).asInstanceOf[typings.deta.detaMod.default]
+  inline def Deta(projectKey: String, authToken: String): typings.deta.detaMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[typings.deta.detaMod.default]
+  inline def Deta(projectKey: Unit, authToken: String): typings.deta.detaMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("Deta")(projectKey.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[typings.deta.detaMod.default]
+  
+  inline def Drive(driveName: String): typings.deta.driveMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("Drive")(driveName.asInstanceOf[js.Any]).asInstanceOf[typings.deta.driveMod.default]
+  inline def Drive(driveName: String, host: String): typings.deta.driveMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("Drive")(driveName.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.deta.driveMod.default]
+  
+  @JSImport("deta", "app")
   @js.native
-  trait DetaBaseUtil extends StObject {
-    
-    def append(value: Serializable): js.Object = js.native
-    
-    def increment(): js.Object = js.native
-    def increment(amount: Double): js.Object = js.native
-    
-    def prepend(value: Serializable): js.Object = js.native
-    
-    def trim(): js.Object = js.native
-  }
-  
-  trait DetaInstance extends StObject {
-    
-    def Base(db: String): DetaBase
-  }
-  object DetaInstance {
-    
-    inline def apply(Base: String => DetaBase): DetaInstance = {
-      val __obj = js.Dynamic.literal(Base = js.Any.fromFunction1(Base))
-      __obj.asInstanceOf[DetaInstance]
-    }
-    
-    extension [Self <: DetaInstance](x: Self) {
-      
-      inline def setBase(value: String => DetaBase): Self = StObject.set(x, "Base", js.Any.fromFunction1(value))
-    }
-  }
-  
-  type Serializable = StringDictionary[js.Any] | String | Double | Boolean | js.Array[js.Any]
+  def app: DetaLib = js.native
+  inline def app_=(x: DetaLib): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("app")(x.asInstanceOf[js.Any])
 }

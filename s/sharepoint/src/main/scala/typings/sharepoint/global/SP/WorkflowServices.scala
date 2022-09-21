@@ -9,7 +9,7 @@ object WorkflowServices {
   // TODO: comments, types
   @JSGlobal("SP.WorkflowServices.InteropService")
   @js.native
-  class InteropService protected ()
+  open class InteropService protected ()
     extends StObject
        with typings.sharepoint.SP.WorkflowServices.InteropService {
     def this(
@@ -30,7 +30,7 @@ object WorkflowServices {
   /** Represents a workflow definition and associated properties. */
   @JSGlobal("SP.WorkflowServices.WorkflowDefinition")
   @js.native
-  class WorkflowDefinition protected ()
+  open class WorkflowDefinition protected ()
     extends StObject
        with typings.sharepoint.SP.WorkflowServices.WorkflowDefinition {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext) = this()
@@ -39,28 +39,28 @@ object WorkflowServices {
   /** Manages workflow definitions and workflow activity authoring. */
   @JSGlobal("SP.WorkflowServices.WorkflowDeploymentService")
   @js.native
-  class WorkflowDeploymentService ()
+  open class WorkflowDeploymentService ()
     extends StObject
        with typings.sharepoint.SP.WorkflowServices.WorkflowDeploymentService
   
   /** Represents an instance of a workflow association that performs on a list item the process that is defined in a workflow template */
   @JSGlobal("SP.WorkflowServices.WorkflowInstance")
   @js.native
-  class WorkflowInstance ()
+  open class WorkflowInstance ()
     extends StObject
        with typings.sharepoint.SP.WorkflowServices.WorkflowInstance
   
   /** Reads the SharePoint workflow instances from the external workflow host and manages the instance execution. */
   @JSGlobal("SP.WorkflowServices.WorkflowInstanceService")
   @js.native
-  class WorkflowInstanceService ()
+  open class WorkflowInstanceService ()
     extends StObject
        with typings.sharepoint.SP.WorkflowServices.WorkflowInstanceService
   
   /** Describes the workflow host configuration states and provides service objects that interact with the workflow */
   @JSGlobal("SP.WorkflowServices.WorkflowServicesManager")
   @js.native
-  class WorkflowServicesManager protected ()
+  open class WorkflowServicesManager protected ()
     extends StObject
        with typings.sharepoint.SP.WorkflowServices.WorkflowServicesManager {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web) = this()
@@ -104,13 +104,13 @@ object WorkflowServices {
   /** Base class representing subscriptions for the external workflow host. */
   @JSGlobal("SP.WorkflowServices.WorkflowSubscription")
   @js.native
-  class WorkflowSubscription ()
+  open class WorkflowSubscription ()
     extends StObject
        with typings.sharepoint.SP.WorkflowServices.WorkflowSubscription
   
   @JSGlobal("SP.WorkflowServices.WorkflowSubscriptionService")
   @js.native
-  class WorkflowSubscriptionService protected ()
+  open class WorkflowSubscriptionService protected ()
     extends StObject
        with typings.sharepoint.SP.WorkflowServices.WorkflowSubscriptionService {
     def this(

@@ -6,22 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Alert extends StObject {
   
-  /** Unique identifier of this alert. This should be considered an opaque identifier; it is not safe to rely on it being in any particular format. */
-  var id: js.UndefOr[String] = js.undefined
-  
-  /** Whether this alert can be dismissed. */
-  var isDismissible: js.UndefOr[Boolean] = js.undefined
-  
-  /** Kind of resource this is, in this case adsense#alert. */
-  var kind: js.UndefOr[String] = js.undefined
-  
-  /** The localized alert message. */
+  /** Output only. The localized alert message. This may contain HTML markup, such as phrase elements or links. */
   var message: js.UndefOr[String] = js.undefined
   
-  /** Severity of this alert. Possible values: INFO, WARNING, SEVERE. */
+  /** Output only. Resource name of the alert. Format: accounts/{account}/alerts/{alert} */
+  var name: js.UndefOr[String] = js.undefined
+  
+  /** Output only. Severity of this alert. */
   var severity: js.UndefOr[String] = js.undefined
   
-  /** Type of this alert. Possible values: SELF_HOLD, MIGRATED_TO_BILLING3, ADDRESS_PIN_VERIFICATION, PHONE_PIN_VERIFICATION, CORPORATE_ENTITY, GRAYLISTED_PUBLISHER, API_HOLD. */
+  /** Output only. Type of alert. This identifies the broad type of this alert, and provides a stable machine-readable identifier that will not be translated. For example, "payment-hold". */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object Alert {
@@ -33,21 +27,13 @@ object Alert {
   
   extension [Self <: Alert](x: Self) {
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setIsDismissible(value: Boolean): Self = StObject.set(x, "isDismissible", value.asInstanceOf[js.Any])
-    
-    inline def setIsDismissibleUndefined: Self = StObject.set(x, "isDismissible", js.undefined)
-    
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     

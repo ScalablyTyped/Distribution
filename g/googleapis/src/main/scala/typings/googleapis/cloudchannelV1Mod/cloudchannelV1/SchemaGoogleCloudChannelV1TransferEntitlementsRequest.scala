@@ -1,0 +1,51 @@
+package typings.googleapis.cloudchannelV1Mod.cloudchannelV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleCloudChannelV1TransferEntitlementsRequest extends StObject {
+  
+  /**
+    * The super admin of the resold customer generates this token to authorize a reseller to access their Cloud Identity and purchase entitlements on their behalf. You can omit this token after authorization. See https://support.google.com/a/answer/7643790 for more details.
+    */
+  var authToken: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The new entitlements to create or transfer.
+    */
+  var entitlements: js.UndefOr[js.Array[SchemaGoogleCloudChannelV1Entitlement]] = js.undefined
+  
+  /**
+    * Optional. You can specify an optional unique request ID, and if you need to retry your request, the server will know to ignore the request if it's complete. For example, you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if it received the original operation with the same request ID. If it did, it will ignore the second request. The request ID must be a valid [UUID](https://tools.ietf.org/html/rfc4122) with the exception that zero UUID is not supported (`00000000-0000-0000-0000-000000000000`).
+    */
+  var requestId: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaGoogleCloudChannelV1TransferEntitlementsRequest {
+  
+  inline def apply(): SchemaGoogleCloudChannelV1TransferEntitlementsRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleCloudChannelV1TransferEntitlementsRequest]
+  }
+  
+  extension [Self <: SchemaGoogleCloudChannelV1TransferEntitlementsRequest](x: Self) {
+    
+    inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+    
+    inline def setAuthTokenNull: Self = StObject.set(x, "authToken", null)
+    
+    inline def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
+    
+    inline def setEntitlements(value: js.Array[SchemaGoogleCloudChannelV1Entitlement]): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
+    
+    inline def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
+    
+    inline def setEntitlementsVarargs(value: SchemaGoogleCloudChannelV1Entitlement*): Self = StObject.set(x, "entitlements", js.Array(value*))
+    
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setRequestIdNull: Self = StObject.set(x, "requestId", null)
+    
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+  }
+}

@@ -14,7 +14,7 @@ object todosMod {
   
   @JSImport("gitlab/dist/types/core/services/Todos", "Todos")
   @js.native
-  class Todos () extends BaseService {
+  open class Todos () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native

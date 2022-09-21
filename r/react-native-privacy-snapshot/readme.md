@@ -11,9 +11,9 @@ Obscure passwords and other sensitive personal information when a react-native a
 | Full name          | react-native-privacy-snapshot |
 | Keywords           | react-native, react-component, privacy, snapshot, secure |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 12572 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 155.0 |
+| # stars            | 174.0 |
 
 ## Links
 - [Homepage](https://github.com/kayla-tech/react-native-privacy-snapshot#readme)

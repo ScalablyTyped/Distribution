@@ -58,12 +58,6 @@ object turndownStrings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait applet
-    extends StObject
-       with TagName
-  inline def applet: applet = "applet".asInstanceOf[applet]
-  
-  @js.native
   sealed trait area
     extends StObject
        with TagName
@@ -102,12 +96,6 @@ object turndownStrings {
     extends StObject
        with TagName
   inline def base: base = "base".asInstanceOf[base]
-  
-  @js.native
-  sealed trait basefont
-    extends StObject
-       with TagName
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
   
   @js.native
   sealed trait bdi
@@ -228,12 +216,6 @@ object turndownStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir
-    extends StObject
-       with TagName
-  inline def dir: dir = "dir".asInstanceOf[dir]
-  
-  @js.native
   sealed trait div
     extends StObject
        with TagName
@@ -286,12 +268,6 @@ object turndownStrings {
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
-  sealed trait font
-    extends StObject
-       with TagName
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer
     extends StObject
        with TagName
@@ -302,18 +278,6 @@ object turndownStrings {
     extends StObject
        with TagName
   inline def form: form = "form".asInstanceOf[form]
-  
-  @js.native
-  sealed trait frame
-    extends StObject
-       with TagName
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset
-    extends StObject
-       with TagName
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait full extends StObject
@@ -472,12 +436,6 @@ object turndownStrings {
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait marquee
-    extends StObject
-       with TagName
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
-  
-  @js.native
   sealed trait menu
     extends StObject
        with TagName
@@ -542,12 +500,6 @@ object turndownStrings {
     extends StObject
        with TagName
   inline def p: p = "p".asInstanceOf[p]
-  
-  @js.native
-  sealed trait param
-    extends StObject
-       with TagName
-  inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait picture

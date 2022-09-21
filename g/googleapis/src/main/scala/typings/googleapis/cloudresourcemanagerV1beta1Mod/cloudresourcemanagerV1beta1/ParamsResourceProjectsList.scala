@@ -1,9 +1,5 @@
 package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,43 +9,17 @@ trait ParamsResourceProjectsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * An expression for filtering the results of the request.  Filter rules are
-    * case insensitive. The fields eligible for filtering are:  + `name` + `id`
-    * + <code>labels.<em>key</em></code> where *key* is the name of a label
-    * Some examples of using labels as filters:  |Filter|Description|
-    * |------|-----------| |name:how*|The project's name starts with "how".|
-    * |name:Howl|The project's name is `Howl` or `howl`.| |name:HOWL|Equivalent
-    * to above.| |NAME:howl|Equivalent to above.| |labels.color:*|The project
-    * has the label `color`.| |labels.color:red|The project's label `color` has
-    * the value `red`.| |labels.color:red&nbsp;labels.size:big|The project's
-    * label `color` has the value `red` and its label `size` has the value
-    * `big`.  If you specify a filter that has both `parent.type` and
-    * `parent.id`, then the `resourcemanager.projects.list` permission is
-    * checked on the parent. If the user has this permission, all projects
-    * under the parent will be returned after remaining filters have been
-    * applied. If the user lacks this permission, then all projects for which
-    * the user has the `resourcemanager.projects.get` permission will be
-    * returned after remaining filters have been applied. If no filter is
-    * specified, the call will return projects for which the user has
-    * `resourcemanager.projects.get` permissions.  Optional.
+    * An expression for filtering the results of the request. Filter rules are case insensitive. If multiple fields are included in a filter query, the query will return results that match any of the fields. Some eligible fields for filtering are: + `name` + `id` + `labels.` (where *key* is the name of a label) + `parent.type` + `parent.id` Some examples of using labels as filters: | Filter | Description | |------------------|-----------------------------------------------------| | name:how* | The project's name starts with "how". | | name:Howl | The project's name is `Howl` or `howl`. | | name:HOWL | Equivalent to above. | | NAME:howl | Equivalent to above. | | labels.color:* | The project has the label `color`. | | labels.color:red | The project's label `color` has the value `red`. | | labels.color:red labels.size:big | The project's label `color` has the value `red` or its label `size` has the value `big`. | If no filter is specified, the call will return projects for which the user has the `resourcemanager.projects.get` permission. NOTE: To perform a by-parent query (eg., what projects are directly in a Folder), the caller must have the `resourcemanager.projects.list` permission on the parent and the filter must contain both a `parent.type` and a `parent.id` restriction (example: "parent.type:folder parent.id:123"). In this case an alternate search index is used which provides more consistent results. Optional.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of Projects to return in the response. The server can
-    * return fewer Projects than requested. If unspecified, server picks an
-    * appropriate default.  Optional.
+    * The maximum number of Projects to return in the response. The server can return fewer Projects than requested. If unspecified, server picks an appropriate default. Optional.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A pagination token returned from a previous call to ListProjects that
-    * indicates from where listing should continue.  Optional.
+    * A pagination token returned from a previous call to ListProjects that indicates from where listing should continue. Optional.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -61,10 +31,6 @@ object ParamsResourceProjectsList {
   }
   
   extension [Self <: ParamsResourceProjectsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

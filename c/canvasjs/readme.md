@@ -10,10 +10,10 @@ CanvasJS charting library
 | ------------------ | :-------------: |
 | Full name          | canvasjs |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 115360 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14481.0 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/Tsur/canvasjs#readme)

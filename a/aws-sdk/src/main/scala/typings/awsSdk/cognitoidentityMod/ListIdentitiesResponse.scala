@@ -34,7 +34,7 @@ object ListIdentitiesResponse {
     
     inline def setIdentitiesUndefined: Self = StObject.set(x, "Identities", js.undefined)
     
-    inline def setIdentitiesVarargs(value: IdentityDescription*): Self = StObject.set(x, "Identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: IdentityDescription*): Self = StObject.set(x, "Identities", js.Array(value*))
     
     inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     

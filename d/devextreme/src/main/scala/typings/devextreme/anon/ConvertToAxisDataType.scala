@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConvertToAxisDataType extends StObject {
   
+  /**
+    * Specifies whether or not to validate values from a data source.
+    */
   var checkTypeForAllData: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether or not to convert the values from a data source into the data type of an axis.
+    */
   var convertToAxisDataType: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies how to sort series points.
+    */
   var sortingMethod: js.UndefOr[Boolean | (js.Function2[/* a */ Arg, /* b */ Arg, Double])] = js.undefined
 }
 object ConvertToAxisDataType {

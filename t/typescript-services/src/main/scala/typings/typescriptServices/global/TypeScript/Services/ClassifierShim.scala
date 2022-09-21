@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.ClassifierShim")
 @js.native
-class ClassifierShim protected ()
+open class ClassifierShim protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.ClassifierShim {
   def this(factory: IShimFactory, host: IClassifierHost) = this()
@@ -17,10 +17,10 @@ class ClassifierShim protected ()
   var classifier: typings.typescriptServices.TypeScript.Services.Classifier = js.native
   
   /* CompleteClass */
-  override def dispose(dummy: js.Any): Unit = js.native
+  override def dispose(dummy: Any): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var factory: js.Any = js.native
+  var factory: Any = js.native
   
   /* CompleteClass */
   override def getClassificationsForLine(text: String, lexState: typings.typescriptServices.TypeScript.Services.EndOfLineState): String = js.native

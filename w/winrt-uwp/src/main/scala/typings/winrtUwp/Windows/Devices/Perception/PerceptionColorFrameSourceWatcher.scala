@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PerceptionColorFrameSourceWatcher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_enumerationcompleted(
-    `type`: enumerationcompleted,
-    listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, js.Any]
-  ): Unit = js.native
+  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_sourceadded(
     `type`: sourceadded,
@@ -33,13 +30,13 @@ trait PerceptionColorFrameSourceWatcher extends StObject {
     listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, PerceptionColorFrameSourceRemovedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, js.Any]): Unit = js.native
+  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, Any]): Unit = js.native
   
   /** Subscribes to the EnumerationCompleted event. This event is fired after the initial enumeration of known color frame sources is complete. */
-  def onenumerationcompleted(ev: js.Any & WinRTEvent[PerceptionColorFrameSourceWatcher]): Unit = js.native
+  def onenumerationcompleted(ev: Any & WinRTEvent[PerceptionColorFrameSourceWatcher]): Unit = js.native
   /** Subscribes to the EnumerationCompleted event. This event is fired after the initial enumeration of known color frame sources is complete. */
   @JSName("onenumerationcompleted")
-  var onenumerationcompleted_Original: TypedEventHandler[PerceptionColorFrameSourceWatcher, js.Any] = js.native
+  var onenumerationcompleted_Original: TypedEventHandler[PerceptionColorFrameSourceWatcher, Any] = js.native
   
   /** Subscribes to the SourceAdded event. */
   def onsourceadded(ev: PerceptionColorFrameSourceAddedEventArgs & WinRTEvent[PerceptionColorFrameSourceWatcher]): Unit = js.native
@@ -54,17 +51,14 @@ trait PerceptionColorFrameSourceWatcher extends StObject {
   var onsourceremoved_Original: TypedEventHandler[PerceptionColorFrameSourceWatcher, PerceptionColorFrameSourceRemovedEventArgs] = js.native
   
   /** Subscribes to the Stopped event. This event is fired when the IPerceptionColorFrameSourceWatcher has stopped listening for changes to the list of color frame sources. */
-  def onstopped(ev: js.Any & WinRTEvent[PerceptionColorFrameSourceWatcher]): Unit = js.native
+  def onstopped(ev: Any & WinRTEvent[PerceptionColorFrameSourceWatcher]): Unit = js.native
   /** Subscribes to the Stopped event. This event is fired when the IPerceptionColorFrameSourceWatcher has stopped listening for changes to the list of color frame sources. */
   @JSName("onstopped")
-  var onstopped_Original: TypedEventHandler[PerceptionColorFrameSourceWatcher, js.Any] = js.native
+  var onstopped_Original: TypedEventHandler[PerceptionColorFrameSourceWatcher, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enumerationcompleted(
-    `type`: enumerationcompleted,
-    listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, js.Any]
-  ): Unit = js.native
+  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_sourceadded(
     `type`: sourceadded,
@@ -76,7 +70,7 @@ trait PerceptionColorFrameSourceWatcher extends StObject {
     listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, PerceptionColorFrameSourceRemovedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, js.Any]): Unit = js.native
+  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PerceptionColorFrameSourceWatcher, Any]): Unit = js.native
   
   /** When this method is called, the color frame source watcher enumerates any existing color frame sources it has not already enumerated by firing a SourceAdded event for each one. An EnumerationCompleted event is fired when this enumeration is complete. The color frame source then starts watching for new color frame sources. */
   def start(): Unit = js.native

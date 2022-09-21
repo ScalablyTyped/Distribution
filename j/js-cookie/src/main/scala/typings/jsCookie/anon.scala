@@ -8,28 +8,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Read[TConv /* <: js.Object */] extends StObject {
+  /* Inlined std.Required<js-cookie.js-cookie.Converter<string>> */
+  trait RequiredConverterstring extends StObject {
     
-    var read: js.UndefOr[CookieReadConverter] = js.undefined
+    def read(value: String, name: String): String
+    @JSName("read")
+    var read_Original: CookieReadConverter[String]
     
-    var write: js.UndefOr[CookieWriteConverter[TConv]] = js.undefined
+    def write(value: String, name: String): String
+    @JSName("write")
+    var write_Original: CookieWriteConverter[String]
   }
-  object Read {
+  object RequiredConverterstring {
     
-    inline def apply[TConv /* <: js.Object */](): Read[TConv] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Read[TConv]]
+    inline def apply(
+      read: (/* value */ String, /* name */ String) => String | String,
+      write: (/* value */ String | String, /* name */ String) => String
+    ): RequiredConverterstring = {
+      val __obj = js.Dynamic.literal(read = js.Any.fromFunction2(read), write = js.Any.fromFunction2(write))
+      __obj.asInstanceOf[RequiredConverterstring]
     }
     
-    extension [Self <: Read[?], TConv /* <: js.Object */](x: Self & Read[TConv]) {
+    extension [Self <: RequiredConverterstring](x: Self) {
       
-      inline def setRead(value: (/* value */ String, /* name */ String) => String): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+      inline def setRead(value: (/* value */ String, /* name */ String) => String | String): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
-      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
-      
-      inline def setWrite(value: (/* value */ String | TConv, /* name */ String) => String): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
-      
-      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWrite(value: (/* value */ String | String, /* name */ String) => String): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
     }
   }
 }

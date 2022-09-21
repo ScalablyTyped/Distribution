@@ -9,7 +9,7 @@ trait ColorboxSettings extends StObject {
   /**
     * This property isn't actually used as Colorbox assumes all hrefs should be treated as either ajax or photos, unless one of the other content types were specified.
     */
-  var ajax: js.UndefOr[js.Any] = js.undefined
+  var ajax: js.UndefOr[Any] = js.undefined
   
   /**
     * If false, will disable the left and right arrow keys from navigating between the items in a group.
@@ -19,12 +19,12 @@ trait ColorboxSettings extends StObject {
   /**
     * Accepts a pixel or percent value (50, "50px", "10%"). Controls Colorbox's vertical positioning instead of using the default position of being centered in the viewport.
     */
-  var bottom: js.UndefOr[js.Any] = js.undefined
+  var bottom: js.UndefOr[Any] = js.undefined
   
   /**
     * Adds a given class to colorbox and the overlay.
     */
-  var className: js.UndefOr[js.Any] = js.undefined
+  var className: js.UndefOr[Any] = js.undefined
   
   /**
     * Text or HTML for the close button. The 'esc' key will also close Colorbox.
@@ -44,7 +44,7 @@ trait ColorboxSettings extends StObject {
   /**
     * For submitting GET or POST values through an ajax request. The data property will act exactly like jQuery's .load() data argument, as Colorbox uses .load() for ajax handling.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * If false, will disable closing colorbox on 'esc' key press.
@@ -74,12 +74,12 @@ trait ColorboxSettings extends StObject {
   /**
     * This can be used as an alternative anchor URL or to associate a URL for non-anchor elements such as images or form buttons.
     */
-  var href: js.UndefOr[js.Any] = js.undefined
+  var href: js.UndefOr[Any] = js.undefined
   
   /**
     * For displaying a string of HTML or text: $.colorbox({html:"<p>Hello</p>"});
     */
-  var html: js.UndefOr[js.Any] = js.undefined
+  var html: js.UndefOr[Any] = js.undefined
   
   /**
     * If true, specifies that content should be displayed in an iFrame.
@@ -119,7 +119,7 @@ trait ColorboxSettings extends StObject {
   /**
     * Accepts a pixel or percent value (50, "50px", "10%"). Controls Colorbox's horizontal positioning instead of using the default position of being centered in the viewport.
     */
-  var left: js.UndefOr[js.Any] = js.undefined
+  var left: js.UndefOr[Any] = js.undefined
   
   /**
     * If false, will disable the ability to loop back to the beginning of the group when on the last element.
@@ -144,27 +144,27 @@ trait ColorboxSettings extends StObject {
   /**
     * Callback that fires at the start of the close process.
     */
-  var onCleanup: js.UndefOr[js.Any] = js.undefined
+  var onCleanup: js.UndefOr[Any] = js.undefined
   
   /**
     * Callback that fires once Colorbox is closed.
     */
-  var onClosed: js.UndefOr[js.Any] = js.undefined
+  var onClosed: js.UndefOr[Any] = js.undefined
   
   /**
     * Callback that fires right after loaded content is displayed.
     */
-  var onComplete: js.UndefOr[js.Any] = js.undefined
+  var onComplete: js.UndefOr[Any] = js.undefined
   
   /**
     * Callback that fires right before attempting to load the target content.
     */
-  var onLoad: js.UndefOr[js.Any] = js.undefined
+  var onLoad: js.UndefOr[Any] = js.undefined
   
   /**
     * Callback that fires right before Colorbox begins to open.
     */
-  var onOpen: js.UndefOr[js.Any] = js.undefined
+  var onOpen: js.UndefOr[Any] = js.undefined
   
   /**
     * The overlay opacity level. Range: 0 to 1.
@@ -199,7 +199,7 @@ trait ColorboxSettings extends StObject {
   /**
     * This can be used as an anchor rel alternative for Colorbox.
     */
-  var rel: js.UndefOr[js.Any] = js.undefined
+  var rel: js.UndefOr[Any] = js.undefined
   
   /**
     * Repositions Colorbox if the window's resize event is fired.
@@ -229,7 +229,7 @@ trait ColorboxSettings extends StObject {
   /**
     * Accepts a pixel or percent value (50, "50px", "10%"). Controls Colorbox's horizontal positioning instead of using the default position of being centered in the viewport.
     */
-  var right: js.UndefOr[js.Any] = js.undefined
+  var right: js.UndefOr[Any] = js.undefined
   
   /**
     * If true, and if maxWidth, maxHeight, innerWidth, innerHeight, width, or height have been defined, Colorbox will scale photos to fit within the those values.
@@ -274,12 +274,12 @@ trait ColorboxSettings extends StObject {
   /**
     * This can be used as an anchor title alternative for Colorbox.
     */
-  var title: js.UndefOr[js.Any] = js.undefined
+  var title: js.UndefOr[Any] = js.undefined
   
   /**
     * Accepts a pixel or percent value (50, "50px", "10%"). Controls Colorbox's vertical positioning instead of using the default position of being centered in the viewport.
     */
-  var top: js.UndefOr[js.Any] = js.undefined
+  var top: js.UndefOr[Any] = js.undefined
   
   /**
     * The transition type. Can be set to "elastic", "fade", or "none".
@@ -305,7 +305,7 @@ object ColorboxSettings {
   
   extension [Self <: ColorboxSettings](x: Self) {
     
-    inline def setAjax(value: js.Any): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
+    inline def setAjax(value: Any): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
     inline def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
     
@@ -313,11 +313,11 @@ object ColorboxSettings {
     
     inline def setArrowKeyUndefined: Self = StObject.set(x, "arrowKey", js.undefined)
     
-    inline def setBottom(value: js.Any): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Any): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
@@ -333,7 +333,7 @@ object ColorboxSettings {
     
     inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -357,11 +357,11 @@ object ColorboxSettings {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHref(value: js.Any): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: Any): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    inline def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
@@ -393,7 +393,7 @@ object ColorboxSettings {
     
     inline def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
     
-    inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
@@ -413,23 +413,23 @@ object ColorboxSettings {
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    inline def setOnCleanup(value: js.Any): Self = StObject.set(x, "onCleanup", value.asInstanceOf[js.Any])
+    inline def setOnCleanup(value: Any): Self = StObject.set(x, "onCleanup", value.asInstanceOf[js.Any])
     
     inline def setOnCleanupUndefined: Self = StObject.set(x, "onCleanup", js.undefined)
     
-    inline def setOnClosed(value: js.Any): Self = StObject.set(x, "onClosed", value.asInstanceOf[js.Any])
+    inline def setOnClosed(value: Any): Self = StObject.set(x, "onClosed", value.asInstanceOf[js.Any])
     
     inline def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
     
-    inline def setOnComplete(value: js.Any): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+    inline def setOnComplete(value: Any): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    inline def setOnLoad(value: js.Any): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+    inline def setOnLoad(value: Any): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    inline def setOnOpen(value: js.Any): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
+    inline def setOnOpen(value: Any): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
     
     inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
@@ -457,7 +457,7 @@ object ColorboxSettings {
     
     inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
-    inline def setRel(value: js.Any): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    inline def setRel(value: Any): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
     inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
@@ -481,7 +481,7 @@ object ColorboxSettings {
     
     inline def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
     
-    inline def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
@@ -517,11 +517,11 @@ object ColorboxSettings {
     
     inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
-    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTop(value: js.Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     

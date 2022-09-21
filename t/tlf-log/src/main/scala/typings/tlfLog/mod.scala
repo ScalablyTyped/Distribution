@@ -13,39 +13,39 @@ object mod {
   inline def addLevel(name: String, opts: NewLevelAfter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_addLevel")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addLevel(name: String, opts: NewLevelBefore): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_addLevel")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def debug(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def debug(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def debug_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def debug_(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug_")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   inline def deindent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_deindent")().asInstanceOf[Unit]
   
   inline def deprefix(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_deprefix")().asInstanceOf[Unit]
   
-  inline def error(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def error(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def error_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def error_(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error_")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def fatal(messages: js.Any*): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(messages.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def fatal(messages: Any*): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[scala.Nothing]
   
-  inline def fatal_(messages: js.Any*): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal_")(messages.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def fatal_(messages: Any*): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal_")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[scala.Nothing]
   
   inline def indent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_indent")().asInstanceOf[Unit]
   
-  inline def info(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def info(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def info_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def info_(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info_")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   inline def prefix(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_prefix")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def trace(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def trace(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def trace_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def trace_(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace_")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def warn(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warn(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def warn_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warn_(messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn_")(messages.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   trait NewLevel extends StObject {
     

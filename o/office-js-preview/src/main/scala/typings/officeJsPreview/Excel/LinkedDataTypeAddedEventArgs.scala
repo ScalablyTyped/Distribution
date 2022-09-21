@@ -8,36 +8,36 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * The argument that is passed to the event handler after a new linked data type is added to the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 trait LinkedDataTypeAddedEventArgs extends StObject {
   
   /**
+    * The unique ID of the new linked data type.
     *
-    * The unique id of the new linked data type.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var serviceId: Double
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */

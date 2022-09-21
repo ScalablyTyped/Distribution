@@ -8,7 +8,7 @@ object preciseShadowcastingMod {
   
   @JSImport("rot-js/lib/fov/precise-shadowcasting", JSImport.Default)
   @js.native
-  class default () extends PreciseShadowcasting
+  open class default () extends PreciseShadowcasting
   
   type Arc = js.Tuple2[Double, Double]
   

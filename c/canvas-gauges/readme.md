@@ -10,10 +10,10 @@ Minimalist HTML5 Canvas Gauges
 | ------------------ | :-------------: |
 | Full name          | canvas-gauges |
 | Keywords           | gauge, canvas, html5, javascript, radial-gauge, linear-gauge |
-| # releases         | 7 |
-| # dependents       | 9 |
-| # downloads        | 118279 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10188.0 |
+| # stars            | 1459.0 |
 
 ## Links
 - [Homepage](https://github.com/Mikhus/canvas-gauges#readme)

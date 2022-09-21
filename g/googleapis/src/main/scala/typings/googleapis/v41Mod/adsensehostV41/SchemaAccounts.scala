@@ -9,7 +9,7 @@ trait SchemaAccounts extends StObject {
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The accounts returned in this list response.
@@ -19,7 +19,7 @@ trait SchemaAccounts extends StObject {
   /**
     * Kind of list this is, in this case adsensehost#accounts.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccounts {
   
@@ -32,15 +32,19 @@ object SchemaAccounts {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setItems(value: js.Array[SchemaAccount]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaAccount*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaAccount*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

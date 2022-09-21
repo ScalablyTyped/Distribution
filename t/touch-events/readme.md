@@ -10,9 +10,9 @@ Touch events using PEP
 | Full name          | touch-events |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 745 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 56.333333333333336 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/Doodle3D/Touch-Events#readme)

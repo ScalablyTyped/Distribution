@@ -29,7 +29,7 @@ trait AddressList extends StObject {
   /* private */ @JSName("Outlook.AddressList_typekey")
   var OutlookDotAddressList_typekey: AddressList
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
   
@@ -51,7 +51,7 @@ object AddressList {
     IsReadOnly: Boolean,
     Name: String,
     OutlookDotAddressList_typekey: AddressList,
-    Parent: js.Any,
+    Parent: Any,
     PropertyAccessor: PropertyAccessor,
     ResolutionOrder: Double,
     Session: NameSpace
@@ -85,7 +85,7 @@ object AddressList {
     
     inline def setOutlookDotAddressList_typekey(value: AddressList): Self = StObject.set(x, "Outlook.AddressList_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPropertyAccessor(value: PropertyAccessor): Self = StObject.set(x, "PropertyAccessor", value.asInstanceOf[js.Any])
     

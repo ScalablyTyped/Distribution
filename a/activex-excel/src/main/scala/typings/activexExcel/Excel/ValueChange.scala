@@ -23,7 +23,7 @@ trait ValueChange extends StObject {
   
   val Order: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PivotCell: typings.activexExcel.Excel.PivotCell
   
@@ -44,7 +44,7 @@ object ValueChange {
     Delete: () => Unit,
     ExcelDotValueChange_typekey: ValueChange,
     Order: Double,
-    Parent: js.Any,
+    Parent: Any,
     PivotCell: PivotCell,
     Tuple: String,
     Value: Double,
@@ -73,7 +73,7 @@ object ValueChange {
     
     inline def setOrder(value: Double): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPivotCell(value: PivotCell): Self = StObject.set(x, "PivotCell", value.asInstanceOf[js.Any])
     

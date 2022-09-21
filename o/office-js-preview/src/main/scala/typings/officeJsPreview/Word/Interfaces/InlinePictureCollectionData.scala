@@ -22,6 +22,6 @@ object InlinePictureCollectionData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: InlinePictureData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InlinePictureData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

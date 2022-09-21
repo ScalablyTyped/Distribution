@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Loader.FileTypes
 import typings.phaser.Phaser.Loader.File
 import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Loader.MultiFile
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,8 +30,8 @@ object AudioSpriteFile {
     addToMultiFile: File => MultiFile,
     baseURL: String,
     complete: Boolean,
-    config: js.Any,
-    failed: integer,
+    config: Any,
+    failed: Double,
     files: js.Array[File],
     isReadyToProcess: () => Boolean,
     key: String,
@@ -40,7 +39,7 @@ object AudioSpriteFile {
     onFileComplete: File => Unit,
     onFileFailed: File => Unit,
     path: String,
-    pending: integer,
+    pending: Double,
     prefix: String,
     `type`: String
   ): AudioSpriteFile = {

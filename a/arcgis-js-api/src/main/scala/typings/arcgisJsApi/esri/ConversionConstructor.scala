@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ConversionConstructor
   extends StObject
-     with Instantiable0[Conversion]
+     with /**
+  * The Conversion class represents one of the [conversions](esri-widgets-CoordinateConversion.html#conversions) in the [Coordinate Conversion widget](esri-widgets-CoordinateConversion.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html)
+  */
+Instantiable0[Conversion]
      with Instantiable1[/* properties */ ConversionProperties, Conversion]

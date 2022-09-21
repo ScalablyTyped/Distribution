@@ -32,6 +32,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reflect
 import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
+import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.ImageryLayer
 import typings.arcgisJsApi.esri.ImageryLayerConstructor
 import typings.arcgisJsApi.esri.ImageryLayerProperties
@@ -53,11 +54,11 @@ object imageryLayerMod extends Shortcut {
   @JSImport("esri/layers/ImageryLayer", JSImport.Namespace)
   @js.native
   /**
-    * Represents an [image service resource](https://developers.arcgis.com/rest/services-reference/image-service.htm) as a layer.
+    * Represents a dynamic [image service resource](https://developers.arcgis.com/rest/services-reference/image-service.htm) as a layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ImageryLayer {
     def this(properties: ImageryLayerProperties) = this()
@@ -65,13 +66,27 @@ object imageryLayerMod extends Shortcut {
     /**
       * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
       *
+      * @default normal
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
       */
     /* CompleteClass */
     var blendMode: average | `color-burn` | `color-dodge` | color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor = js.native
     
     /**
+      * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+      *
+      * @default null
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+      */
+    /* CompleteClass */
+    var effect: Effect = js.native
+    
+    /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
+      *
+      * @default 0
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
       */
@@ -80,6 +95,8 @@ object imageryLayerMod extends Shortcut {
     
     /**
       * The minimum scale (most zoomed out) at which the layer is visible in the view.
+      *
+      * @default 0
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
       */
@@ -105,6 +122,8 @@ object imageryLayerMod extends Shortcut {
     /**
       * Refresh interval of the layer in minutes.
       *
+      * @default 0
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
       */
     /* CompleteClass */
@@ -112,6 +131,8 @@ object imageryLayerMod extends Shortcut {
     
     /**
       * The layer's time extent.
+      *
+      * @default null
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
       */
@@ -121,6 +142,8 @@ object imageryLayerMod extends Shortcut {
     /**
       * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
       *
+      * @default null
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
       */
     /* CompleteClass */
@@ -129,6 +152,8 @@ object imageryLayerMod extends Shortcut {
     /**
       * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
       *
+      * @default null
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
       */
     /* CompleteClass */
@@ -136,6 +161,8 @@ object imageryLayerMod extends Shortcut {
     
     /**
       * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+      *
+      * @default true
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
       */

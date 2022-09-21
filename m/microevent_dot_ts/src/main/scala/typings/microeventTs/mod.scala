@@ -9,5 +9,5 @@ object mod {
   
   @JSImport("microevent.ts", "Event")
   @js.native
-  class Event[EventPayload] () extends default[EventPayload]
+  open class Event[EventPayload] () extends default[EventPayload]
 }

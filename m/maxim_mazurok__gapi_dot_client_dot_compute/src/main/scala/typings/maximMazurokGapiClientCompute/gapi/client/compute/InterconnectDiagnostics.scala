@@ -31,13 +31,13 @@ object InterconnectDiagnostics {
     
     inline def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
     
-    inline def setArpCachesVarargs(value: InterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
+    inline def setArpCachesVarargs(value: InterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value*))
     
     inline def setLinks(value: js.Array[InterconnectDiagnosticsLinkStatus]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setLinksVarargs(value: InterconnectDiagnosticsLinkStatus*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: InterconnectDiagnosticsLinkStatus*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     

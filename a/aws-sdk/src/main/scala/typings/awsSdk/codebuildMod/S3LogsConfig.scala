@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait S3LogsConfig extends StObject {
   
+  var bucketOwnerAccess: js.UndefOr[BucketOwnerAccess] = js.undefined
+  
   /**
     *  Set to true if you do not want your S3 build log output encrypted. By default S3 build logs are encrypted. 
     */
@@ -29,6 +31,10 @@ object S3LogsConfig {
   }
   
   extension [Self <: S3LogsConfig](x: Self) {
+    
+    inline def setBucketOwnerAccess(value: BucketOwnerAccess): Self = StObject.set(x, "bucketOwnerAccess", value.asInstanceOf[js.Any])
+    
+    inline def setBucketOwnerAccessUndefined: Self = StObject.set(x, "bucketOwnerAccess", js.undefined)
     
     inline def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     

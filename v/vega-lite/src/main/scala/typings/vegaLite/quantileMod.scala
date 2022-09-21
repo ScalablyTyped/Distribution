@@ -10,11 +10,11 @@ object quantileMod {
   
   @JSImport("vega-lite/build/src/compile/data/quantile", "QuantileTransformNode")
   @js.native
-  class QuantileTransformNode protected () extends DataFlowNode {
+  open class QuantileTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: QuantileTransform) = this()
     
     def assemble(): typings.vegaTypings.transformMod.QuantileTransform = js.native
     
-    /* private */ var transform: js.Any = js.native
+    /* private */ var transform: Any = js.native
   }
 }

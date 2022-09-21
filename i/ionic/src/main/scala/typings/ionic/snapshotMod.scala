@@ -18,7 +18,7 @@ object snapshotMod {
   
   @JSImport("ionic/lib/snapshot", "SnapshotClient")
   @js.native
-  class SnapshotClient protected ()
+  open class SnapshotClient protected ()
     extends ResourceClient
        with ResourceClientLoad[Snapshot]
        with ResourceClientPaginate[Snapshot] {

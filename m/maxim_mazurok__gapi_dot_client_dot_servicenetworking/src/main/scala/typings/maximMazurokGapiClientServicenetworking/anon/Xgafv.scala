@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientServicenetworking.anon
 
-import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.AddRolesRequest
+import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.UpdateConsumerConfigRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,12 @@ trait Xgafv extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. This is in a form services/{service} where {service} is the name of the private access management service. For example 'service-peering.example.com'. */
+  /**
+    * Required. Parent resource identifying the connection for which the consumer config is being updated in the format:
+    * `services/{service}/projects/{project}/global/networks/{network}` {service} is the peering service that is managing connectivity for the service producer's organization. For
+    * Google services that support this functionality, this value is `servicenetworking.googleapis.com`. {project} is the number of the project that contains the service consumer's
+    * VPC network e.g. `12345`. {network} is the name of the service consumer's VPC network.
+    */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,7 +44,7 @@ trait Xgafv extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: AddRolesRequest
+  var resource: UpdateConsumerConfigRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +54,7 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(parent: String, resource: AddRolesRequest): Xgafv = {
+  inline def apply(parent: String, resource: UpdateConsumerConfigRequest): Xgafv = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
@@ -94,7 +99,7 @@ object Xgafv {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AddRolesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: UpdateConsumerConfigRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

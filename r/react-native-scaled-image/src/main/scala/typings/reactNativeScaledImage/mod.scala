@@ -13,10 +13,10 @@ object mod {
   
   @JSImport("react-native-scaled-image", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ScaledImageProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ScaledImageProps, js.Object, Any]
   
-  type ScaledImage = Component[ScaledImageProps, js.Object, js.Any]
+  type ScaledImage = Component[ScaledImageProps, js.Object, Any]
   
   trait ScaledImageProps extends StObject {
     
@@ -43,7 +43,7 @@ object mod {
       
       inline def setSource(value: ImageSourcePropType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value*))
       
       inline def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

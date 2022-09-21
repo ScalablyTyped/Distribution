@@ -6,16 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaInappproductsListResponse extends StObject {
   
+  /**
+    * All in-app products.
+    */
   var inappproduct: js.UndefOr[js.Array[SchemaInAppProduct]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidpublisher#inappproductsListResponse&quot;.
+    * The kind of this response ("androidpublisher#inappproductsListResponse").
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
+  /**
+    * Deprecated and unset.
+    */
   var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
+  /**
+    * Pagination token, to handle a number of products that is over one page.
+    */
   var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
 }
 object SchemaInappproductsListResponse {
@@ -31,9 +39,11 @@ object SchemaInappproductsListResponse {
     
     inline def setInappproductUndefined: Self = StObject.set(x, "inappproduct", js.undefined)
     
-    inline def setInappproductVarargs(value: SchemaInAppProduct*): Self = StObject.set(x, "inappproduct", js.Array(value :_*))
+    inline def setInappproductVarargs(value: SchemaInAppProduct*): Self = StObject.set(x, "inappproduct", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

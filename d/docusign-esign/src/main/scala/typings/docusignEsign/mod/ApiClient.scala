@@ -3,23 +3,23 @@ package typings.docusignEsign.mod
 import typings.docusignEsign.anon.BasePath
 import typings.docusignEsign.anon.BasePathDEMO
 import typings.docusignEsign.anon.CSV
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "ApiClient")
 @js.native
-class ApiClient protected () extends StObject {
+open class ApiClient () extends StObject {
   def this(opts: BasePath) = this()
   
   def addDefaultHeader(header: String, value: String): Unit = js.native
   
-  def applyAuthToRequest(request: js.Any, authNames: js.Array[String]): Unit = js.native
+  def applyAuthToRequest(request: Any, authNames: js.Array[String]): Unit = js.native
   
-  def buildCollectionParam(param: js.Array[js.Any], collectionFormat: js.Any): js.Array[String] = js.native
+  def buildCollectionParam(param: js.Array[Any], collectionFormat: Any): js.Array[String] = js.native
   
-  def buildUrl(path: String, pathParams: js.Any): String = js.native
+  def buildUrl(path: String, pathParams: Any): String = js.native
   
   def callApi(
     path: String,
@@ -32,8 +32,8 @@ class ApiClient protected () extends StObject {
     authNames: js.Array[String],
     contentTypes: js.Array[String],
     accepts: js.Array[String],
-    returnType: js.Any
-  ): js.Promise[js.Any] = js.native
+    returnType: Any
+  ): js.Promise[Any] = js.native
   def callApi(
     path: String,
     httpMethod: String,
@@ -45,14 +45,14 @@ class ApiClient protected () extends StObject {
     authNames: js.Array[String],
     contentTypes: js.Array[String],
     accepts: js.Array[String],
-    returnType: js.Any,
+    returnType: Any,
     callback: js.Function0[Unit]
-  ): js.Promise[js.Any] = js.native
+  ): js.Promise[Any] = js.native
   
-  def deserialize(response: js.Object, returnType: js.Any): js.Any = js.native
+  def deserialize(response: js.Object, returnType: Any): Any = js.native
   
-  def generateAccessToken(clientId: String, clientSecret: String, code: String): js.Promise[js.Any] = js.native
-  def generateAccessToken(clientId: String, clientSecret: String, code: String, callback: js.Function0[Unit]): js.Promise[js.Any] = js.native
+  def generateAccessToken(clientId: String, clientSecret: String, code: String): js.Promise[Any] = js.native
+  def generateAccessToken(clientId: String, clientSecret: String, code: String, callback: js.Function0[Unit]): js.Promise[Any] = js.native
   
   def getAuthorizationUri(
     clientId: String,
@@ -68,29 +68,29 @@ class ApiClient protected () extends StObject {
   
   def getOAuthBasePath(): String = js.native
   
-  def getUserInfo(accessToken: String): js.Promise[js.Any] = js.native
-  def getUserInfo(accessToken: String, callback: js.Function0[Unit]): js.Promise[js.Any] = js.native
+  def getUserInfo(accessToken: String): js.Promise[Any] = js.native
+  def getUserInfo(accessToken: String, callback: js.Function0[Unit]): js.Promise[Any] = js.native
   
   def hasNoInvalidScopes(scopes: js.Array[String]): Boolean = js.native
   
-  def isFileParam(param: js.Any): Boolean = js.native
+  def isFileParam(param: Any): Boolean = js.native
   
   def isJsonMime(contentType: String): Boolean = js.native
   
   def jsonPreferredMime(contentTypes: js.Array[String]): String = js.native
   
-  def normalizeParams(params: js.Any): js.Any = js.native
+  def normalizeParams(params: Any): Any = js.native
   
-  def paramToString(param: js.Any): String = js.native
+  def paramToString(param: Any): String = js.native
   
-  def requestJWTApplicationToken(clientId: String, scopes: js.Array[String], rsaPrivateKey: Buffer, expiresIn: Double): js.Promise[js.Any] = js.native
+  def requestJWTApplicationToken(clientId: String, scopes: js.Array[String], rsaPrivateKey: Buffer, expiresIn: Double): js.Promise[Any] = js.native
   def requestJWTApplicationToken(
     clientId: String,
     scopes: js.Array[String],
     rsaPrivateKey: Buffer,
     expiresIn: Double,
     callback: js.Function0[Unit]
-  ): js.Promise[js.Any] = js.native
+  ): js.Promise[Any] = js.native
   
   def requestJWTUserToken(
     clientId: String,
@@ -98,7 +98,7 @@ class ApiClient protected () extends StObject {
     scopes: js.Array[String],
     rsaPrivateKey: Buffer,
     expiresIn: Double
-  ): js.Promise[js.Any] = js.native
+  ): js.Promise[Any] = js.native
   def requestJWTUserToken(
     clientId: String,
     userId: String,
@@ -106,7 +106,7 @@ class ApiClient protected () extends StObject {
     rsaPrivateKey: Buffer,
     expiresIn: Double,
     callback: js.Function0[Unit]
-  ): js.Promise[js.Any] = js.native
+  ): js.Promise[Any] = js.native
   
   def setBasePath(basePath: String): Unit = js.native
   
@@ -150,9 +150,9 @@ object ApiClient {
     
     @JSImport("docusign-esign", "ApiClient.OAuth.OAuthToken")
     @js.native
-    class OAuthToken () extends StObject {
+    open class OAuthToken () extends StObject {
       
-      def constructFromObject(data: js.Any, obj: js.Any): js.Any = js.native
+      def constructFromObject(data: Any, obj: Any): Any = js.native
     }
     
     object ResponseType {
@@ -196,9 +196,9 @@ object ApiClient {
     
     @JSImport("docusign-esign", "ApiClient.OAuth.UserInfo")
     @js.native
-    class UserInfo () extends StObject {
+    open class UserInfo () extends StObject {
       
-      def constructFromObject(data: js.Any, obj: js.Any): js.Any = js.native
+      def constructFromObject(data: Any, obj: Any): Any = js.native
     }
   }
   
@@ -207,9 +207,9 @@ object ApiClient {
   def RestApi: BasePathDEMO = js.native
   inline def RestApi_=(x: BasePathDEMO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestApi")(x.asInstanceOf[js.Any])
   
-  inline def constructFromObject(data: js.Any, obj: js.Any, itemType: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("constructFromObject")(data.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], itemType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def constructFromObject(data: Any, obj: Any, itemType: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("constructFromObject")(data.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], itemType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def convertToType(data: js.Any, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToType")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def convertToType(data: Any, `type`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToType")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def parseDate(str: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
 }

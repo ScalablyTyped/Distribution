@@ -129,7 +129,7 @@ object eventTypesMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in string ]: unknown} */ trait WeakEvent extends StObject {
     
-    var content: Record[String, js.Any]
+    var content: Record[String, Any]
     
     var event_id: String
     
@@ -148,7 +148,7 @@ object eventTypesMod {
   object WeakEvent {
     
     inline def apply(
-      content: Record[String, js.Any],
+      content: Record[String, Any],
       event_id: String,
       origin_server_ts: Double,
       room_id: String,
@@ -162,7 +162,7 @@ object eventTypesMod {
     
     extension [Self <: WeakEvent](x: Self) {
       
-      inline def setContent(value: Record[String, js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Record[String, Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
       
@@ -181,6 +181,35 @@ object eventTypesMod {
       inline def setUnsigned(value: Age): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
       
       inline def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
+    }
+  }
+  
+  trait WeakStateEvent
+    extends StObject
+       with WeakEvent {
+    
+    @JSName("state_key")
+    var state_key_WeakStateEvent: String
+  }
+  object WeakStateEvent {
+    
+    inline def apply(
+      content: Record[String, Any],
+      event_id: String,
+      origin_server_ts: Double,
+      room_id: String,
+      sender: String,
+      state_key: String,
+      `type`: String
+    ): WeakStateEvent = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], event_id = event_id.asInstanceOf[js.Any], origin_server_ts = origin_server_ts.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], state_key = state_key.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WeakStateEvent]
+    }
+    
+    extension [Self <: WeakStateEvent](x: Self) {
+      
+      inline def setState_key(value: String): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -51,6 +51,11 @@ trait RequestPausedEvent extends StObject {
     * Response code if intercepted at response stage.
     */
   var responseStatusCode: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * Response status text if intercepted at response stage.
+    */
+  var responseStatusText: js.UndefOr[String] = js.undefined
 }
 object RequestPausedEvent {
   
@@ -81,10 +86,14 @@ object RequestPausedEvent {
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
     
     inline def setResponseStatusCode(value: integer): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
     
     inline def setResponseStatusCodeUndefined: Self = StObject.set(x, "responseStatusCode", js.undefined)
+    
+    inline def setResponseStatusText(value: String): Self = StObject.set(x, "responseStatusText", value.asInstanceOf[js.Any])
+    
+    inline def setResponseStatusTextUndefined: Self = StObject.set(x, "responseStatusText", js.undefined)
   }
 }

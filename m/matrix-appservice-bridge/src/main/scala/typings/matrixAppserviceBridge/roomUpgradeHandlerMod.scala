@@ -12,20 +12,20 @@ object roomUpgradeHandlerMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/room-upgrade-handler", "RoomUpgradeHandler")
   @js.native
-  class RoomUpgradeHandler protected () extends StObject {
+  open class RoomUpgradeHandler protected () extends StObject {
     /**
       * @param {RoomUpgradeHandler~Options} opts
       * @param {Bridge} bridge The parent bridge.
       */
     def this(opts: RoomUpgradeHandlerOpts, bridge: Bridge) = this()
     
-    /* private */ val bridge: js.Any = js.native
+    /* private */ val bridge: Any = js.native
     
-    /* private */ var joinNewRoom: js.Any = js.native
+    /* private */ var joinNewRoom: Any = js.native
     
-    /* private */ var migrateEntry: js.Any = js.native
+    /* private */ var migrateEntry: Any = js.native
     
-    /* private */ var migrateStoreEntries: js.Any = js.native
+    /* private */ var migrateStoreEntries: Any = js.native
     
     /**
       * Called when an invite event reaches the bridge. This function
@@ -38,7 +38,7 @@ object roomUpgradeHandlerMod {
       */
     def onInvite(ev: Roomid): js.Promise[Boolean] = js.native
     
-    /* private */ var onJoinedNewRoom: js.Any = js.native
+    /* private */ var onJoinedNewRoom: Any = js.native
     
     /**
       * Called when the bridge sees a "m.room.tombstone" event.
@@ -46,9 +46,9 @@ object roomUpgradeHandlerMod {
       */
     def onTombstone(ev: Sender): js.Promise[Boolean] = js.native
     
-    /* private */ val opts: js.Any = js.native
+    /* private */ val opts: Any = js.native
     
-    /* private */ var waitingForInvite: js.Any = js.native
+    /* private */ var waitingForInvite: Any = js.native
   }
   
   trait RoomUpgradeHandlerOpts extends StObject {
@@ -90,7 +90,7 @@ object roomUpgradeHandlerMod {
     var migrateStoreEntries: Boolean
     
     /**
-      * Invoked after a room has been upgraded and it's entries updated.
+      * Invoked after a room has been upgraded and its entries updated.
       *
       * @param oldRoomId The old roomId.
       * @param newRoomId The new roomId.

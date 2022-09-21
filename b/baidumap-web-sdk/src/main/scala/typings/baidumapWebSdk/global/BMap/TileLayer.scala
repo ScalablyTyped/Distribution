@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.TileLayer")
 @js.native
-class TileLayer ()
+open class TileLayer ()
   extends StObject
      with typings.baidumapWebSdk.BMap.TileLayer {
   def this(opts: TileLayerOptions) = this()

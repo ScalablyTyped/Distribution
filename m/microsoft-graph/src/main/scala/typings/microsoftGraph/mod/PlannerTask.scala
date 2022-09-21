@@ -40,8 +40,8 @@ trait PlannerTask
   
   /**
     * Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date
-    * and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would
-    * look like this: '2014-01-01T00:00:00Z'
+    * and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is
+    * 2014-01-01T00:00:00Z
     */
   var completedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -53,8 +53,7 @@ trait PlannerTask
   
   /**
     * Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using
-    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -63,7 +62,7 @@ trait PlannerTask
   
   /**
     * Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format
-    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var dueDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -85,6 +84,14 @@ trait PlannerTask
     */
   var previewType: js.UndefOr[NullableOption[PlannerPreviewType]] = js.undefined
   
+  /**
+    * Priority of the task. The valid range of values is between 0 and 10, with the increasing value being lower priority (0
+    * has the highest priority and 10 has the lowest priority). Currently, Planner interprets values 0 and 1 as 'urgent', 2,
+    * 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'. Additionally, Planner sets the value 1 for
+    * 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+    */
+  var priority: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.
   var progressTaskBoardFormat: js.UndefOr[NullableOption[PlannerProgressTaskBoardTaskFormat]] = js.undefined
   
@@ -93,7 +100,7 @@ trait PlannerTask
   
   /**
     * Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format
-    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -228,6 +235,12 @@ object PlannerTask {
     inline def setPreviewTypeNull: Self = StObject.set(x, "previewType", null)
     
     inline def setPreviewTypeUndefined: Self = StObject.set(x, "previewType", js.undefined)
+    
+    inline def setPriority(value: NullableOption[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityNull: Self = StObject.set(x, "priority", null)
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     inline def setProgressTaskBoardFormat(value: NullableOption[PlannerProgressTaskBoardTaskFormat]): Self = StObject.set(x, "progressTaskBoardFormat", value.asInstanceOf[js.Any])
     

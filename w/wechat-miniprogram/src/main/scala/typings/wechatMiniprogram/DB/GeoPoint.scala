@@ -13,11 +13,11 @@ trait GeoPoint
   
   var longitude: Double
   
-  def toJSON(): Record[String, js.Any]
+  def toJSON(): Record[String, Any]
 }
 object GeoPoint {
   
-  inline def apply(latitude: Double, longitude: Double, toJSON: () => Record[String, js.Any]): GeoPoint = {
+  inline def apply(latitude: Double, longitude: Double, toJSON: () => Record[String, Any]): GeoPoint = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[GeoPoint]
   }
@@ -28,6 +28,6 @@ object GeoPoint {
     
     inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    inline def setToJSON(value: () => Record[String, js.Any]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Record[String, Any]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

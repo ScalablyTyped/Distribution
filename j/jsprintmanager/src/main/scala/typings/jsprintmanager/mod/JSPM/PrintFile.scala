@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsprintmanager", "JSPM.PrintFile")
 @js.native
-class PrintFile protected () extends StObject {
-  def this(fileContent: js.Any, fileContentType: FileSourceType, fileName: String) = this()
-  def this(fileContent: js.Any, fileContentType: FileSourceType, fileName: String, copies: Double) = this()
+open class PrintFile protected () extends StObject {
+  def this(fileContent: Any, fileContentType: FileSourceType, fileName: String) = this()
+  def this(fileContent: Any, fileContentType: FileSourceType, fileName: String, copies: Double) = this()
   
-  /* private */ var _copies: js.Any = js.native
+  /* private */ var _copies: Any = js.native
   
-  /* protected */ def bool2str(value: js.Any): String = js.native
-  /* protected */ def bool2str(value: js.Any, true_val: String): String = js.native
-  /* protected */ def bool2str(value: js.Any, true_val: String, false_val: String): String = js.native
-  /* protected */ def bool2str(value: js.Any, true_val: Unit, false_val: String): String = js.native
+  /* protected */ def bool2str(value: Any): String = js.native
+  /* protected */ def bool2str(value: Any, true_val: String): String = js.native
+  /* protected */ def bool2str(value: Any, true_val: String, false_val: String): String = js.native
+  /* protected */ def bool2str(value: Any, true_val: Unit, false_val: String): String = js.native
   
   var copies: Double = js.native
   
-  /* private */ def escapeInvalidFileNameChars(): js.Any = js.native
+  /* private */ def escapeInvalidFileNameChars(): Any = js.native
   
-  var fileContent: js.Any = js.native
+  var fileContent: Any = js.native
   
   var fileContentType: FileSourceType = js.native
   

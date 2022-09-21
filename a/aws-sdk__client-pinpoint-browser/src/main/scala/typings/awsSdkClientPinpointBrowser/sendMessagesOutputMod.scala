@@ -8,5 +8,5 @@ object sendMessagesOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/SendMessagesOutput", "SendMessagesOutput")
   @js.native
-  val SendMessagesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SendMessagesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

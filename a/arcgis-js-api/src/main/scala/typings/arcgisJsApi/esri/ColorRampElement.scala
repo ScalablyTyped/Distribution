@@ -51,7 +51,7 @@ object ColorRampElement {
     
     inline def setInfos(value: js.Array[ColorRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    inline def setInfosVarargs(value: ColorRampStop*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: ColorRampStop*): Self = StObject.set(x, "infos", js.Array(value*))
     
     inline def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

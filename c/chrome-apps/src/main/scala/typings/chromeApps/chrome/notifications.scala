@@ -204,7 +204,7 @@ object notifications {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: ButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: ButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setContextMessage(value: String): Self = StObject.set(x, "contextMessage", value.asInstanceOf[js.Any])
       
@@ -228,7 +228,7 @@ object notifications {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: ItemOptions*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ItemOptions*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

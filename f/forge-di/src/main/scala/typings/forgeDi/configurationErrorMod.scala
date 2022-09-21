@@ -9,14 +9,16 @@ object configurationErrorMod {
   
   @JSImport("forge-di/dist/errors/ConfigurationError", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ConfigurationError {
     def this(name: String, message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

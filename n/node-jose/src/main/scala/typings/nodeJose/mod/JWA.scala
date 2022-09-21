@@ -1,6 +1,6 @@
 package typings.nodeJose.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +26,9 @@ object JWA {
   inline def derive(alg: String, key: Buffer, props: DeriveOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   inline def digest(alg: String, data: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  inline def digest(alg: String, data: String, props: js.Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def digest(alg: String, data: String, props: Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   inline def digest(alg: String, data: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  inline def digest(alg: String, data: Buffer, props: js.Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def digest(alg: String, data: Buffer, props: Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   inline def encrypt(alg: String, key: String, pdata: String): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
   inline def encrypt(alg: String, key: String, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]

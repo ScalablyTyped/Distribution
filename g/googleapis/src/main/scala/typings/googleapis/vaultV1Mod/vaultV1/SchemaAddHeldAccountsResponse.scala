@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for batch create held accounts.
-  */
 trait SchemaAddHeldAccountsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaAddHeldAccountsResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: SchemaAddHeldAccountResult*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaAddHeldAccountResult*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

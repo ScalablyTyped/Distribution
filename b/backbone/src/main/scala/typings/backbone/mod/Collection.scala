@@ -2,7 +2,7 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.jquery.JQueryXHR
-import typings.std.Iterator
+import typings.std.Record
 import typings.underscore.mod.Dictionary
 import typings.underscore.mod.List
 import typings.underscore.mod.ListIterator
@@ -13,19 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("backbone", "Collection")
 @js.native
-class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () extends StObject {
-  def this(models: js.Array[js.Object | TModel]) = this()
-  def this(models: js.Array[js.Object | TModel], options: js.Any) = this()
-  def this(models: Unit, options: js.Any) = this()
+open class Collection[TModel /* <: Model[Any, ModelSetOptions, Any] */] () extends StObject {
+  def this(models: js.Array[(Record[String, Any]) | TModel]) = this()
+  def this(models: js.Array[(Record[String, Any]) | TModel], options: Any) = this()
+  def this(models: Unit, options: Any) = this()
   
-  /* private */ def _isModel(obj: js.Any): /* is backbone.backbone.Model<any, backbone.backbone.ModelSetOptions, {}> */ Boolean = js.native
+  /* private */ def _isModel(obj: Any): /* is backbone.backbone.Model<any, backbone.backbone.ModelSetOptions, any> */ Boolean = js.native
   
-  /* private */ def _onModelEvent(event: String, model: TModel, collection: Collection[TModel], options: js.Any): Unit = js.native
+  /* private */ def _onModelEvent(event: String, model: TModel, collection: Collection[TModel], options: Any): Unit = js.native
   
-  /* private */ def _prepareModel(): js.Any = js.native
-  /* private */ def _prepareModel(attributes: js.Any): js.Any = js.native
-  /* private */ def _prepareModel(attributes: js.Any, options: js.Any): js.Any = js.native
-  /* private */ def _prepareModel(attributes: Unit, options: js.Any): js.Any = js.native
+  /* private */ def _prepareModel(): Any = js.native
+  /* private */ def _prepareModel(attributes: Any): Any = js.native
+  /* private */ def _prepareModel(attributes: Any, options: Any): Any = js.native
+  /* private */ def _prepareModel(attributes: Unit, options: Any): Any = js.native
   
   /* private */ def _removeReference(model: TModel): Unit = js.native
   
@@ -38,21 +38,21 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   
   // mixins from underscore
   def all(): Boolean = js.native
-  def all(iterator: Unit, context: js.Any): Boolean = js.native
+  def all(iterator: Unit, context: Any): Boolean = js.native
   def all(iterator: ListIterator[TModel, Boolean, List[TModel]]): Boolean = js.native
-  def all(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): Boolean = js.native
+  def all(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): Boolean = js.native
   
   def any(): Boolean = js.native
-  def any(iterator: Unit, context: js.Any): Boolean = js.native
+  def any(iterator: Unit, context: Any): Boolean = js.native
   def any(iterator: ListIterator[TModel, Boolean, List[TModel]]): Boolean = js.native
-  def any(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): Boolean = js.native
+  def any(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): Boolean = js.native
   
   def at(index: Double): TModel = js.native
   
-  def chain(): js.Any = js.native
+  def chain(): Any = js.native
   
   def collect[TResult](iterator: ListIterator[TModel, TResult, List[TModel]]): js.Array[TResult] = js.native
-  def collect[TResult](iterator: ListIterator[TModel, TResult, List[TModel]], context: js.Any): js.Array[TResult] = js.native
+  def collect[TResult](iterator: ListIterator[TModel, TResult, List[TModel]], context: Any): js.Array[TResult] = js.native
   
   /**
     * Specify a model attribute name (string) or function that will be used to sort the collection.
@@ -63,13 +63,13 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   
   def countBy(): Dictionary[Double] = js.native
   def countBy(iterator: String): Dictionary[Double] = js.native
-  def countBy(iterator: ListIterator[TModel, js.Any, List[TModel]]): Dictionary[Double] = js.native
+  def countBy(iterator: ListIterator[TModel, Any, List[TModel]]): Dictionary[Double] = js.native
   
-  def create(attributes: js.Any): TModel = js.native
-  def create(attributes: js.Any, options: ModelSaveOptions): TModel = js.native
+  def create(attributes: Any): TModel = js.native
+  def create(attributes: Any, options: ModelSaveOptions): TModel = js.native
   
   def detect(iterator: ListIterator[TModel, Boolean, List[TModel]]): TModel = js.native
-  def detect(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): TModel = js.native
+  def detect(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): TModel = js.native
   
   def difference(others: js.Array[TModel]): js.Array[TModel] = js.native
   
@@ -77,61 +77,61 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   def drop(n: Double): js.Array[TModel] = js.native
   
   def each(iterator: ListIterator[TModel, Unit, List[TModel]]): js.Array[TModel] = js.native
-  def each(iterator: ListIterator[TModel, Unit, List[TModel]], context: js.Any): js.Array[TModel] = js.native
+  def each(iterator: ListIterator[TModel, Unit, List[TModel]], context: Any): js.Array[TModel] = js.native
   
-  def entries(): Iterator[js.Tuple2[js.Any, TModel], js.Any, Unit] = js.native
+  def entries(): js.Iterator[js.Tuple2[Any, TModel]] = js.native
   
   def every(iterator: ListIterator[TModel, Boolean, List[TModel]]): Boolean = js.native
-  def every(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): Boolean = js.native
+  def every(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): Boolean = js.native
   
   def fetch(): JQueryXHR = js.native
   def fetch(options: CollectionFetchOptions): JQueryXHR = js.native
   
   def filter(iterator: ListIterator[TModel, Boolean, List[TModel]]): js.Array[TModel] = js.native
-  def filter(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): js.Array[TModel] = js.native
+  def filter(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): js.Array[TModel] = js.native
   
   def find(iterator: ListIterator[TModel, Boolean, List[TModel]]): TModel = js.native
-  def find(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): TModel = js.native
+  def find(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): TModel = js.native
   
   def findIndex(predicate: ListIterator[TModel, Boolean, List[TModel]]): Double = js.native
-  def findIndex(predicate: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): Double = js.native
+  def findIndex(predicate: ListIterator[TModel, Boolean, List[TModel]], context: Any): Double = js.native
   
   def findLastIndex(predicate: ListIterator[TModel, Boolean, List[TModel]]): Double = js.native
-  def findLastIndex(predicate: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): Double = js.native
+  def findLastIndex(predicate: ListIterator[TModel, Boolean, List[TModel]], context: Any): Double = js.native
   
-  def findWhere(properties: js.Any): TModel = js.native
+  def findWhere(properties: Any): TModel = js.native
   
   def first(): TModel = js.native
   def first(n: Double): js.Array[TModel] = js.native
   
   def foldl[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]]): TResult = js.native
   def foldl[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult): TResult = js.native
-  def foldl[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: js.Any): TResult = js.native
-  def foldl[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: js.Any): TResult = js.native
+  def foldl[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: Any): TResult = js.native
+  def foldl[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: Any): TResult = js.native
   
   def foldr[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]]): TResult = js.native
   def foldr[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult): TResult = js.native
-  def foldr[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: js.Any): TResult = js.native
-  def foldr[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: js.Any): TResult = js.native
+  def foldr[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: Any): TResult = js.native
+  def foldr[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: Any): TResult = js.native
   
   def forEach(iterator: ListIterator[TModel, Unit, List[TModel]]): js.Array[TModel] = js.native
-  def forEach(iterator: ListIterator[TModel, Unit, List[TModel]], context: js.Any): js.Array[TModel] = js.native
+  def forEach(iterator: ListIterator[TModel, Unit, List[TModel]], context: Any): js.Array[TModel] = js.native
   
   def get(id: String): TModel = js.native
   /**
     * Get a model from a collection, specified by an id, a cid, or by passing in a model.
-    **/
+    */
   def get(id: Double): TModel = js.native
-  def get(id: Model[js.Any, ModelSetOptions, js.Object]): TModel = js.native
+  def get(id: Model[Any, ModelSetOptions, Any]): TModel = js.native
   
   def groupBy(iterator: String): Dictionary[js.Array[TModel]] = js.native
-  def groupBy(iterator: String, context: js.Any): Dictionary[js.Array[TModel]] = js.native
-  def groupBy(iterator: ListIterator[TModel, js.Any, List[TModel]]): Dictionary[js.Array[TModel]] = js.native
-  def groupBy(iterator: ListIterator[TModel, js.Any, List[TModel]], context: js.Any): Dictionary[js.Array[TModel]] = js.native
+  def groupBy(iterator: String, context: Any): Dictionary[js.Array[TModel]] = js.native
+  def groupBy(iterator: ListIterator[TModel, Any, List[TModel]]): Dictionary[js.Array[TModel]] = js.native
+  def groupBy(iterator: ListIterator[TModel, Any, List[TModel]], context: Any): Dictionary[js.Array[TModel]] = js.native
   
   def has(key: String): Boolean = js.native
   def has(key: Double): Boolean = js.native
-  def has(key: Model[js.Any, ModelSetOptions, js.Object]): Boolean = js.native
+  def has(key: Model[Any, ModelSetOptions, Any]): Boolean = js.native
   
   def head(): TModel = js.native
   def head(n: Double): js.Array[TModel] = js.native
@@ -141,9 +141,9 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   def includes(value: TModel): Boolean = js.native
   
   def indexBy(iterator: String): Dictionary[TModel] = js.native
-  def indexBy(iterator: String, context: js.Any): Dictionary[TModel] = js.native
-  def indexBy(iterator: ListIterator[TModel, js.Any, List[TModel]]): Dictionary[TModel] = js.native
-  def indexBy(iterator: ListIterator[TModel, js.Any, List[TModel]], context: js.Any): Dictionary[TModel] = js.native
+  def indexBy(iterator: String, context: Any): Dictionary[TModel] = js.native
+  def indexBy(iterator: ListIterator[TModel, Any, List[TModel]]): Dictionary[TModel] = js.native
+  def indexBy(iterator: ListIterator[TModel, Any, List[TModel]], context: Any): Dictionary[TModel] = js.native
   
   def indexOf(value: TModel): Double = js.native
   def indexOf(value: TModel, isSorted: Boolean): Double = js.native
@@ -152,23 +152,23 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   def initial(n: Double): js.Array[TModel] = js.native
   
   def initialize(): Unit = js.native
-  def initialize(models: js.Array[js.Object | TModel]): Unit = js.native
-  def initialize(models: js.Array[js.Object | TModel], options: js.Any): Unit = js.native
-  def initialize(models: Unit, options: js.Any): Unit = js.native
+  def initialize(models: js.Array[(Record[String, Any]) | TModel]): Unit = js.native
+  def initialize(models: js.Array[(Record[String, Any]) | TModel], options: Any): Unit = js.native
+  def initialize(models: Unit, options: Any): Unit = js.native
   
   def inject[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]]): TResult = js.native
   def inject[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult): TResult = js.native
-  def inject[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: js.Any): TResult = js.native
-  def inject[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: js.Any): TResult = js.native
+  def inject[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: Any): TResult = js.native
+  def inject[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: Any): TResult = js.native
   
-  def invoke(methodName: String, args: js.Any*): js.Any = js.native
+  def invoke(methodName: String, args: Any*): Any = js.native
   
   def isEmpty(): Boolean = js.native
   
   @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[Iterator[TModel, js.Any, Unit]] = js.native
+  var iterator: js.Function0[js.Iterator[TModel]] = js.native
   
-  def keys(): Iterator[js.Any, js.Any, Unit] = js.native
+  def keys(): js.Iterator[Any] = js.native
   
   def last(): TModel = js.native
   def last(n: Double): js.Array[TModel] = js.native
@@ -179,27 +179,27 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   var length: Double = js.native
   
   def map[TResult](iterator: ListIterator[TModel, TResult, List[TModel]]): js.Array[TResult] = js.native
-  def map[TResult](iterator: ListIterator[TModel, TResult, List[TModel]], context: js.Any): js.Array[TResult] = js.native
+  def map[TResult](iterator: ListIterator[TModel, TResult, List[TModel]], context: Any): js.Array[TResult] = js.native
   
   def max(): TModel = js.native
-  def max(iterator: Unit, context: js.Any): TModel = js.native
-  def max(iterator: ListIterator[TModel, js.Any, List[TModel]]): TModel = js.native
-  def max(iterator: ListIterator[TModel, js.Any, List[TModel]], context: js.Any): TModel = js.native
+  def max(iterator: Unit, context: Any): TModel = js.native
+  def max(iterator: ListIterator[TModel, Any, List[TModel]]): TModel = js.native
+  def max(iterator: ListIterator[TModel, Any, List[TModel]], context: Any): TModel = js.native
   
   def min(): TModel = js.native
-  def min(iterator: Unit, context: js.Any): TModel = js.native
-  def min(iterator: ListIterator[TModel, js.Any, List[TModel]]): TModel = js.native
-  def min(iterator: ListIterator[TModel, js.Any, List[TModel]], context: js.Any): TModel = js.native
+  def min(iterator: Unit, context: Any): TModel = js.native
+  def min(iterator: ListIterator[TModel, Any, List[TModel]]): TModel = js.native
+  def min(iterator: ListIterator[TModel, Any, List[TModel]], context: Any): TModel = js.native
   
-  var model: Instantiable1[/* args (repeated) */ js.Any, TModel] = js.native
+  var model: Instantiable1[/* args (repeated) */ Any, TModel] = js.native
   
-  def modelId(attrs: js.Any): js.Any = js.native
+  def modelId(attrs: Any): Any = js.native
   
   var models: js.Array[TModel] = js.native
   
   def partition(iterator: ListIterator[TModel, Boolean, List[TModel]]): js.Array[js.Array[TModel]] = js.native
   
-  def pluck(attribute: String): js.Array[js.Any] = js.native
+  def pluck(attribute: String): js.Array[Any] = js.native
   
   def pop(): TModel = js.native
   def pop(options: Silenceable): TModel = js.native
@@ -211,25 +211,25 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
     * @see https://backbonejs.org/#Collection-preinitialize
     */
   def preinitialize(): Unit = js.native
-  def preinitialize(models: js.Array[js.Object | TModel]): Unit = js.native
-  def preinitialize(models: js.Array[js.Object | TModel], options: js.Any): Unit = js.native
-  def preinitialize(models: Unit, options: js.Any): Unit = js.native
+  def preinitialize(models: js.Array[(Record[String, Any]) | TModel]): Unit = js.native
+  def preinitialize(models: js.Array[(Record[String, Any]) | TModel], options: Any): Unit = js.native
+  def preinitialize(models: Unit, options: Any): Unit = js.native
   
   def push(model: TModel): TModel = js.native
   def push(model: TModel, options: AddOptions): TModel = js.native
   
   def reduce[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]]): TResult = js.native
   def reduce[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult): TResult = js.native
-  def reduce[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: js.Any): TResult = js.native
-  def reduce[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: js.Any): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: Any): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: Any): TResult = js.native
   
   def reduceRight[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]]): TResult = js.native
   def reduceRight[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult): TResult = js.native
-  def reduceRight[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: js.Any): TResult = js.native
-  def reduceRight[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: js.Any): TResult = js.native
+  def reduceRight[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: TResult, context: Any): TResult = js.native
+  def reduceRight[TResult](iterator: MemoIterator[TModel, TResult, List[TModel]], memo: Unit, context: Any): TResult = js.native
   
   def reject(iterator: ListIterator[TModel, Boolean, List[TModel]]): js.Array[TModel] = js.native
-  def reject(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): js.Array[TModel] = js.native
+  def reject(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): js.Array[TModel] = js.native
   
   def remove(model: TModel): TModel = js.native
   def remove(model: TModel, options: Silenceable): TModel = js.native
@@ -250,7 +250,7 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   def sample(n: Double): js.Array[TModel] = js.native
   
   def select(iterator: ListIterator[TModel, Boolean, List[TModel]]): js.Array[TModel] = js.native
-  def select(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): js.Array[TModel] = js.native
+  def select(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): js.Array[TModel] = js.native
   
   /**
     *
@@ -284,19 +284,19 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   def slice(min: Unit, max: Double): js.Array[TModel] = js.native
   
   def some(): Boolean = js.native
-  def some(iterator: Unit, context: js.Any): Boolean = js.native
+  def some(iterator: Unit, context: Any): Boolean = js.native
   def some(iterator: ListIterator[TModel, Boolean, List[TModel]]): Boolean = js.native
-  def some(iterator: ListIterator[TModel, Boolean, List[TModel]], context: js.Any): Boolean = js.native
+  def some(iterator: ListIterator[TModel, Boolean, List[TModel]], context: Any): Boolean = js.native
   
-  def sort(): Collection[TModel] = js.native
-  def sort(options: Silenceable): Collection[TModel] = js.native
+  def sort(): this.type = js.native
+  def sort(options: Silenceable): this.type = js.native
   
+  def sortBy(): js.Array[TModel] = js.native
   def sortBy(iterator: String): js.Array[TModel] = js.native
-  def sortBy(iterator: String, context: js.Any): js.Array[TModel] = js.native
-  def sortBy[TSort](): js.Array[TModel] = js.native
-  def sortBy[TSort](iterator: Unit, context: js.Any): js.Array[TModel] = js.native
-  def sortBy[TSort](iterator: ListIterator[TModel, TSort, List[TModel]]): js.Array[TModel] = js.native
-  def sortBy[TSort](iterator: ListIterator[TModel, TSort, List[TModel]], context: js.Any): js.Array[TModel] = js.native
+  def sortBy(iterator: String, context: Any): js.Array[TModel] = js.native
+  def sortBy(iterator: Unit, context: Any): js.Array[TModel] = js.native
+  def sortBy(iterator: ListIterator[TModel, Any, List[TModel]]): js.Array[TModel] = js.native
+  def sortBy(iterator: ListIterator[TModel, Any, List[TModel]], context: Any): js.Array[TModel] = js.native
   
   def tail(): js.Array[TModel] = js.native
   def tail(n: Double): js.Array[TModel] = js.native
@@ -312,11 +312,11 @@ class Collection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () e
   /**
     * Sets the url property (or function) on a collection to reference its location on the server.
     */
-  var url: String | js.Function0[String] = js.native
+  var url: Result[String] = js.native
   
-  def values(): Iterator[TModel, js.Any, Unit] = js.native
+  def values(): js.Iterator[TModel] = js.native
   
-  def where(properties: js.Any): js.Array[TModel] = js.native
+  def where(properties: Any): js.Array[TModel] = js.native
   
   def without(values: TModel*): js.Array[TModel] = js.native
 }
@@ -328,8 +328,8 @@ object Collection {
   
   /**
     * Do not use, prefer TypeScript's extend functionality.
-    **/
+    */
   /* static member */
-  inline def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(properties: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def extend(properties: Any, classProperties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

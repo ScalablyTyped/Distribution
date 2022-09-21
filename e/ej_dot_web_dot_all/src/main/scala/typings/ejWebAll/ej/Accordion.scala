@@ -39,7 +39,7 @@ trait Accordion
     * @param {any[]} index values to disable the panels
     * @returns {void}
     */
-  def disableItems(index: js.Array[js.Any]): Unit = js.native
+  def disableItems(index: js.Array[Any]): Unit = js.native
   
   /** Enable the accordion widget includes all the headers and content panels.
     * @returns {void}
@@ -50,7 +50,7 @@ trait Accordion
     * @param {any[]} index values to enable the panels
     * @returns {void}
     */
-  def enableItems(index: js.Array[js.Any]): Unit = js.native
+  def enableItems(index: js.Array[Any]): Unit = js.native
   
   /** To expand all the accordion widget items.
     * @returns {void}
@@ -122,7 +122,7 @@ object Accordion {
     
     /** returns current active header
       */
-    var activeHeader: js.UndefOr[js.Any] = js.undefined
+    var activeHeader: js.UndefOr[Any] = js.undefined
     
     /** returns active index
       */
@@ -153,7 +153,7 @@ object Accordion {
     
     extension [Self <: ActivateEventArgs](x: Self) {
       
-      inline def setActiveHeader(value: js.Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
+      inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
       inline def setActiveHeaderUndefined: Self = StObject.set(x, "activeHeader", js.undefined)
       
@@ -338,7 +338,7 @@ object Accordion {
     
     /** It specifies the data as an object, will be passed in the query string.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** It specifies the type of data that you're expecting back from the response.
       */
@@ -369,7 +369,7 @@ object Accordion {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
@@ -661,7 +661,7 @@ object Accordion {
     
     /** returns in active element
       */
-    var inActiveHeader: js.UndefOr[js.Any] = js.undefined
+    var inActiveHeader: js.UndefOr[Any] = js.undefined
     
     /** returns active index
       */
@@ -692,7 +692,7 @@ object Accordion {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setInActiveHeader(value: js.Any): Self = StObject.set(x, "inActiveHeader", value.asInstanceOf[js.Any])
+      inline def setInActiveHeader(value: Any): Self = StObject.set(x, "inActiveHeader", value.asInstanceOf[js.Any])
       
       inline def setInActiveHeaderUndefined: Self = StObject.set(x, "inActiveHeader", js.undefined)
       
@@ -844,7 +844,7 @@ object Accordion {
     /** It allows to define the characteristics of the Accordion control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Triggered after a Accordion item is inactive. Argument values are  inActiveHeader, inActiveIndex ,isInteraction and current model values.
       */
@@ -948,7 +948,7 @@ object Accordion {
       
       inline def setDisabledItemsUndefined: Self = StObject.set(x, "disabledItems", js.undefined)
       
-      inline def setDisabledItemsVarargs(value: Double*): Self = StObject.set(x, "disabledItems", js.Array(value :_*))
+      inline def setDisabledItemsVarargs(value: Double*): Self = StObject.set(x, "disabledItems", js.Array(value*))
       
       inline def setEnableAnimation(value: Boolean): Self = StObject.set(x, "enableAnimation", value.asInstanceOf[js.Any])
       
@@ -972,7 +972,7 @@ object Accordion {
       
       inline def setEnabledItemsUndefined: Self = StObject.set(x, "enabledItems", js.undefined)
       
-      inline def setEnabledItemsVarargs(value: Double*): Self = StObject.set(x, "enabledItems", js.Array(value :_*))
+      inline def setEnabledItemsVarargs(value: Double*): Self = StObject.set(x, "enabledItems", js.Array(value*))
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
@@ -996,7 +996,7 @@ object Accordion {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -1012,7 +1012,7 @@ object Accordion {
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      inline def setSelectedItemsVarargs(value: Double*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: Double*): Self = StObject.set(x, "selectedItems", js.Array(value*))
       
       inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
       

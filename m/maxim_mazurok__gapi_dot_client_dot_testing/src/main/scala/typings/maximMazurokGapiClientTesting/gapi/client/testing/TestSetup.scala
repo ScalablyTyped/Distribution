@@ -35,6 +35,7 @@ trait TestSetup extends StObject {
   var networkProfile: js.UndefOr[String] = js.undefined
   
   /**
+    * Deprecated: Systrace uses Python 2 which has been sunset 2020-01-01. Support of Systrace may stop at any time, at which point no Systrace file will be provided in the results.
     * Systrace configuration for the run. If set a systrace will be taken, starting on test start and lasting for the configured duration. The systrace file thus obtained is put in the
     * results bucket together with the other artifacts from the run.
     */
@@ -57,13 +58,13 @@ object TestSetup {
     
     inline def setAdditionalApksUndefined: Self = StObject.set(x, "additionalApks", js.undefined)
     
-    inline def setAdditionalApksVarargs(value: Apk*): Self = StObject.set(x, "additionalApks", js.Array(value :_*))
+    inline def setAdditionalApksVarargs(value: Apk*): Self = StObject.set(x, "additionalApks", js.Array(value*))
     
     inline def setDirectoriesToPull(value: js.Array[String]): Self = StObject.set(x, "directoriesToPull", value.asInstanceOf[js.Any])
     
     inline def setDirectoriesToPullUndefined: Self = StObject.set(x, "directoriesToPull", js.undefined)
     
-    inline def setDirectoriesToPullVarargs(value: String*): Self = StObject.set(x, "directoriesToPull", js.Array(value :_*))
+    inline def setDirectoriesToPullVarargs(value: String*): Self = StObject.set(x, "directoriesToPull", js.Array(value*))
     
     inline def setDontAutograntPermissions(value: Boolean): Self = StObject.set(x, "dontAutograntPermissions", value.asInstanceOf[js.Any])
     
@@ -73,13 +74,13 @@ object TestSetup {
     
     inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    inline def setEnvironmentVariablesVarargs(value: EnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
+    inline def setEnvironmentVariablesVarargs(value: EnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value*))
     
     inline def setFilesToPush(value: js.Array[DeviceFile]): Self = StObject.set(x, "filesToPush", value.asInstanceOf[js.Any])
     
     inline def setFilesToPushUndefined: Self = StObject.set(x, "filesToPush", js.undefined)
     
-    inline def setFilesToPushVarargs(value: DeviceFile*): Self = StObject.set(x, "filesToPush", js.Array(value :_*))
+    inline def setFilesToPushVarargs(value: DeviceFile*): Self = StObject.set(x, "filesToPush", js.Array(value*))
     
     inline def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     

@@ -261,7 +261,7 @@ object XFrame {
     initialize: XWindow => Unit,
     isActive: () => Boolean,
     isTop: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeFrameActionListener: XFrameActionListener => Unit,

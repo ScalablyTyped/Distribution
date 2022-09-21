@@ -9,10 +9,10 @@ trait SshPublicKey extends StObject {
   /**
     * Specifies the date that the public key was added to the user account.
     */
-  var DateImported: typings.awsSdk.transferMod.DateImported
+  var DateImported: js.Date
   
   /**
-    * Specifies the content of the SSH public key as specified by the PublicKeyId.
+    * Specifies the content of the SSH public key as specified by the PublicKeyId. Transfer Family accepts RSA, ECDSA, and ED25519 keys.
     */
   var SshPublicKeyBody: typings.awsSdk.transferMod.SshPublicKeyBody
   
@@ -23,14 +23,14 @@ trait SshPublicKey extends StObject {
 }
 object SshPublicKey {
   
-  inline def apply(DateImported: DateImported, SshPublicKeyBody: SshPublicKeyBody, SshPublicKeyId: SshPublicKeyId): SshPublicKey = {
+  inline def apply(DateImported: js.Date, SshPublicKeyBody: SshPublicKeyBody, SshPublicKeyId: SshPublicKeyId): SshPublicKey = {
     val __obj = js.Dynamic.literal(DateImported = DateImported.asInstanceOf[js.Any], SshPublicKeyBody = SshPublicKeyBody.asInstanceOf[js.Any], SshPublicKeyId = SshPublicKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SshPublicKey]
   }
   
   extension [Self <: SshPublicKey](x: Self) {
     
-    inline def setDateImported(value: DateImported): Self = StObject.set(x, "DateImported", value.asInstanceOf[js.Any])
+    inline def setDateImported(value: js.Date): Self = StObject.set(x, "DateImported", value.asInstanceOf[js.Any])
     
     inline def setSshPublicKeyBody(value: SshPublicKeyBody): Self = StObject.set(x, "SshPublicKeyBody", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ShaderCodeConditionNode")
 @js.native
-class ShaderCodeConditionNode ()
+open class ShaderCodeConditionNode ()
   extends StObject
      with typings.babylonjs.BABYLON.ShaderCodeConditionNode {
   

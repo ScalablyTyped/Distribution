@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BindingRewriteValidators extends StObject {
   
-  var bindingRewriteValidators: js.Any
+  var bindingRewriteValidators: Any
   
-  def parseObjectLiteral(objectLiteralString: String): js.Array[js.Any]
+  def parseObjectLiteral(objectLiteralString: String): js.Array[Any]
 }
 object BindingRewriteValidators {
   
-  inline def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[js.Any]): BindingRewriteValidators = {
+  inline def apply(bindingRewriteValidators: Any, parseObjectLiteral: String => js.Array[Any]): BindingRewriteValidators = {
     val __obj = js.Dynamic.literal(bindingRewriteValidators = bindingRewriteValidators.asInstanceOf[js.Any], parseObjectLiteral = js.Any.fromFunction1(parseObjectLiteral))
     __obj.asInstanceOf[BindingRewriteValidators]
   }
   
   extension [Self <: BindingRewriteValidators](x: Self) {
     
-    inline def setBindingRewriteValidators(value: js.Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
+    inline def setBindingRewriteValidators(value: Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
     
-    inline def setParseObjectLiteral(value: String => js.Array[js.Any]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
+    inline def setParseObjectLiteral(value: String => js.Array[Any]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
   }
 }

@@ -29,7 +29,7 @@ object GetTransitGatewayMulticastDomainAssociationsResult {
     
     inline def setMulticastDomainAssociationsUndefined: Self = StObject.set(x, "MulticastDomainAssociations", js.undefined)
     
-    inline def setMulticastDomainAssociationsVarargs(value: TransitGatewayMulticastDomainAssociation*): Self = StObject.set(x, "MulticastDomainAssociations", js.Array(value :_*))
+    inline def setMulticastDomainAssociationsVarargs(value: TransitGatewayMulticastDomainAssociation*): Self = StObject.set(x, "MulticastDomainAssociations", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

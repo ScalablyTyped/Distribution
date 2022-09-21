@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ActionCondition extends StObject {
   
-  var action: js.UndefOr[`10`] = js.undefined
+  var action: js.UndefOr[`15`] = js.undefined
   
   var condition: js.UndefOr[CreatedBefore] = js.undefined
 }
@@ -19,7 +19,7 @@ object ActionCondition {
   
   extension [Self <: ActionCondition](x: Self) {
     
-    inline def setAction(value: `10`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: `15`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     

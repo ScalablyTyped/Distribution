@@ -2,7 +2,7 @@ package typings.walkSync.anon
 
 import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
-import typings.std.Date
+import typings.node.fsMod.TimeLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofutimes extends StObject {
   
-  def apply(path: PathLike, atime: String, mtime: String, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, atime: String, mtime: Double, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, atime: String, mtime: Date, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, atime: Double, mtime: String, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, atime: Double, mtime: Double, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, atime: Double, mtime: Date, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, atime: Date, mtime: String, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, atime: Date, mtime: Double, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, atime: Date, mtime: Date, callback: NoParamCallback): Unit = js.native
+  def apply(path: PathLike, atime: TimeLike, mtime: TimeLike, callback: NoParamCallback): Unit = js.native
 }

@@ -1,7 +1,7 @@
 package typings.reachRect
 
-import typings.react.mod.Ref
-import typings.std.DOMRect
+import typings.reachRect.srcMod.PRect
+import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,26 +10,24 @@ object anon {
   
   trait Rect extends StObject {
     
-    var rect: DOMRect
+    var rect: PRect | Null
     
-    var ref: Ref[js.Any]
+    var ref: RefObject[Any]
   }
   object Rect {
     
-    inline def apply(rect: DOMRect): Rect = {
-      val __obj = js.Dynamic.literal(rect = rect.asInstanceOf[js.Any], ref = null)
+    inline def apply(ref: RefObject[Any]): Rect = {
+      val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], rect = null)
       __obj.asInstanceOf[Rect]
     }
     
     extension [Self <: Rect](x: Self) {
       
-      inline def setRect(value: DOMRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      inline def setRect(value: PRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRectNull: Self = StObject.set(x, "rect", null)
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRef(value: RefObject[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,6 +22,6 @@ object ProvisioningResult {
     
     inline def setProvisioningImportEvents(value: js.Array[String]): Self = StObject.set(x, "provisioningImportEvents", value.asInstanceOf[js.Any])
     
-    inline def setProvisioningImportEventsVarargs(value: String*): Self = StObject.set(x, "provisioningImportEvents", js.Array(value :_*))
+    inline def setProvisioningImportEventsVarargs(value: String*): Self = StObject.set(x, "provisioningImportEvents", js.Array(value*))
   }
 }

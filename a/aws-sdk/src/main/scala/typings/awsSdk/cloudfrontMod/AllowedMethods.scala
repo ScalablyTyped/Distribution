@@ -33,7 +33,7 @@ object AllowedMethods {
     
     inline def setItems(value: MethodsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Method*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Method*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }

@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("restify-errors", "NotFoundError")
 @js.native
-class NotFoundError () extends DefinedHttpError {
+open class NotFoundError () extends DefinedHttpError {
   // tslint:disable-next-line unified-signatures
-  def this(printf: String, args: js.Any*) = this()
+  def this(printf: String, args: Any*) = this()
   // tslint:disable-next-line unified-signatures
-  def this(options: RestifyHttpErrorOptions, printf: String, args: js.Any*) = this()
-  def this(options: RestifyHttpErrorOptions, printf: Unit, args: js.Any*) = this()
+  def this(options: RestifyHttpErrorOptions, printf: String, args: Any*) = this()
+  def this(options: RestifyHttpErrorOptions, printf: Unit, args: Any*) = this()
   // tslint:disable-next-line unified-signatures
-  def this(priorErr: js.Any, printf: String, args: js.Any*) = this()
-  def this(priorErr: js.Any, printf: Unit, args: js.Any*) = this()
-  def this(priorErr: js.Any, options: RestifyHttpErrorOptions, printf: String, args: js.Any*) = this()
-  def this(priorErr: js.Any, options: RestifyHttpErrorOptions, printf: Unit, args: js.Any*) = this()
+  def this(priorErr: Any, printf: String, args: Any*) = this()
+  def this(priorErr: Any, printf: Unit, args: Any*) = this()
+  def this(priorErr: Any, options: RestifyHttpErrorOptions, printf: String, args: Any*) = this()
+  def this(priorErr: Any, options: RestifyHttpErrorOptions, printf: Unit, args: Any*) = this()
 }

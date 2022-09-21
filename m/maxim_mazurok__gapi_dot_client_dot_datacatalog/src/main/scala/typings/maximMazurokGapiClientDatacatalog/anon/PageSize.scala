@@ -28,16 +28,13 @@ trait PageSize extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of items to return. Default is 10. Max limit is 1000. Throws an invalid argument for `page_size > 1000`. */
+  /** The maximum number of items to return. Default is 10. Maximum limit is 1000. Throws an invalid argument if `page_size` is more than 1000. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** Token that specifies which page is requested. If empty, the first page is returned. */
+  /** Pagination token that specifies the next page to return. If empty, the first page is returned. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The name of the entry group that contains the entries, which can be provided in URL format. Example: *
-    * projects/{project_id}/locations/{location}/entryGroups/{entry_group_id}
-    */
+  /** Required. The name of the entry group that contains the entries to list. Can be provided in URL format. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -47,8 +44,8 @@ trait PageSize extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /**
-    * The fields to return for each Entry. If not set or empty, all fields are returned. For example, setting read_mask to contain only one path "name" will cause ListEntries to
-    * return a list of Entries with only "name" field.
+    * The fields to return for each entry. If empty or omitted, all fields are returned. For example, to return a list of entries with only the `name` field, set `read_mask` to only
+    * one path with the `name` value.
     */
   var readMask: js.UndefOr[String] = js.undefined
   

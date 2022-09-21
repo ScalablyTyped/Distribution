@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Email.EmailMessage")
 @js.native
 /** Creates an instance of the EmailMessage class. */
-class EmailMessage ()
+open class EmailMessage ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessage {
   
@@ -145,7 +144,7 @@ class EmailMessage ()
   
   /** Gets or sets the time an email was sent. */
   /* CompleteClass */
-  var sentTime: Date = js.native
+  var sentTime: js.Date = js.native
   
   /**
     * Sets the value of the specified body stream in an email message.

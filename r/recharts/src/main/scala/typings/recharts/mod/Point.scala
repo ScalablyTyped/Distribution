@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Point extends StObject {
   
-  var value: Double | js.Array[js.Any]
+  var value: Double | js.Array[Any]
   
   var x: Double
   
@@ -14,16 +14,16 @@ trait Point extends StObject {
 }
 object Point {
   
-  inline def apply(value: Double | js.Array[js.Any], x: Double, y: Double): Point = {
+  inline def apply(value: Double | js.Array[Any], x: Double, y: Double): Point = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
   
   extension [Self <: Point](x: Self) {
     
-    inline def setValue(value: Double | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

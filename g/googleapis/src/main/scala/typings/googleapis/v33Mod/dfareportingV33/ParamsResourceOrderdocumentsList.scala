@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +12,6 @@ trait ParamsResourceOrderdocumentsList
     * Select only order documents that have been approved by at least one user.
     */
   var approved: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only order documents with these IDs.
@@ -53,13 +44,7 @@ trait ParamsResourceOrderdocumentsList
   var projectId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for order documents by name or ID. Wildcards (*) are
-    * allowed. For example, "orderdocument*2015" will return order documents
-    * with names like "orderdocument June 2015", "orderdocument April 2015", or
-    * simply "orderdocument 2015". Most of the searches also add wildcards
-    * implicitly at the start and the end of the search string. For example, a
-    * search string of "orderdocument" will match order documents with name "my
-    * orderdocument", "orderdocument 2015", or simply "orderdocument".
+    * Allows searching for order documents by name or ID. Wildcards (*) are allowed. For example, "orderdocument*2015" will return order documents with names like "orderdocument June 2015", "orderdocument April 2015", or simply "orderdocument 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "orderdocument" will match order documents with name "my orderdocument", "orderdocument 2015", or simply "orderdocument".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -91,15 +76,11 @@ object ParamsResourceOrderdocumentsList {
     
     inline def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -109,7 +90,7 @@ object ParamsResourceOrderdocumentsList {
     
     inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    inline def setOrderIdVarargs(value: String*): Self = StObject.set(x, "orderId", js.Array(value :_*))
+    inline def setOrderIdVarargs(value: String*): Self = StObject.set(x, "orderId", js.Array(value*))
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
@@ -131,7 +112,7 @@ object ParamsResourceOrderdocumentsList {
     
     inline def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     
-    inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value :_*))
+    inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value*))
     
     inline def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     

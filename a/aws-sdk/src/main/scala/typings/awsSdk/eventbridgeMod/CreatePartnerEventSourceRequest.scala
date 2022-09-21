@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePartnerEventSourceRequest extends StObject {
   
   /**
-    * The AWS account ID that is permitted to create a matching partner event bus for this partner event source.
+    * The Amazon Web Services account ID that is permitted to create a matching partner event bus for this partner event source.
     */
   var Account: AccountId
   
   /**
-    * The name of the partner event source. This name must be unique and must be in the format  partner_name/event_namespace/event_name . The AWS account that wants to use this partner event source must create a partner event bus with a name that matches the name of the partner event source.
+    * The name of the partner event source. This name must be unique and must be in the format  partner_name/event_namespace/event_name . The Amazon Web Services account that wants to use this partner event source must create a partner event bus with a name that matches the name of the partner event source.
     */
   var Name: EventSourceName
 }

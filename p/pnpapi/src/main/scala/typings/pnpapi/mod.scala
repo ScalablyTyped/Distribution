@@ -53,13 +53,13 @@ object mod {
     
     @JSImport("pnpapi", "topLevel.name")
     @js.native
-    def name: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
-    inline def name_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    def name: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
+    inline def name_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
     
     @JSImport("pnpapi", "topLevel.reference")
     @js.native
-    def reference: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
-    inline def reference_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reference")(x.asInstanceOf[js.Any])
+    def reference: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
+    inline def reference_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reference")(x.asInstanceOf[js.Any])
   }
   
   trait PackageInformation extends StObject {

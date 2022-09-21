@@ -11,7 +11,7 @@ object geometry {
   
   @JSGlobal("ymaps.geometry.LineString")
   @js.native
-  class LineString ()
+  open class LineString ()
     extends typings.yandexMaps.mod.geometry.LineString {
     def this(coordinates: js.Array[js.Array[Double]]) = this()
     def this(coordinates: js.Array[js.Array[Double]], options: CoordRendering) = this()
@@ -32,26 +32,22 @@ object geometry {
   
   @JSGlobal("ymaps.geometry.Point")
   @js.native
-  class Point ()
+  open class Point ()
     extends typings.yandexMaps.mod.geometry.Point {
     def this(coordinates: js.Array[Double]) = this()
   }
   
   @JSGlobal("ymaps.geometry.Polygon")
   @js.native
-  class Polygon ()
+  open class Polygon ()
     extends typings.yandexMaps.mod.geometry.Polygon {
     def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
-    def this(coordinates: Unit, fillRule: evenOdd) = this()
-    def this(coordinates: Unit, fillRule: nonZero) = this()
+    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
+    def this(coordinates: Unit, fillRule: evenOdd | nonZero) = this()
+    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero, options: js.Object) = this()
     def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: Unit, options: js.Object) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd, options: js.Object) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero, options: js.Object) = this()
+    def this(coordinates: Unit, fillRule: evenOdd | nonZero, options: js.Object) = this()
     def this(coordinates: Unit, fillRule: Unit, options: js.Object) = this()
-    def this(coordinates: Unit, fillRule: evenOdd, options: js.Object) = this()
-    def this(coordinates: Unit, fillRule: nonZero, options: js.Object) = this()
   }
   object Polygon {
     
@@ -70,7 +66,7 @@ object geometry {
     
     @JSGlobal("ymaps.geometry.base.LineString")
     @js.native
-    class LineString ()
+    open class LineString ()
       extends typings.yandexMaps.mod.geometry.base.LineString
     object LineString {
       
@@ -87,18 +83,16 @@ object geometry {
     
     @JSGlobal("ymaps.geometry.base.Point")
     @js.native
-    class Point ()
+    open class Point ()
       extends typings.yandexMaps.mod.geometry.base.Point
     
     @JSGlobal("ymaps.geometry.base.Polygon")
     @js.native
-    class Polygon ()
+    open class Polygon ()
       extends typings.yandexMaps.mod.geometry.base.Polygon {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
-      def this(coordinates: Unit, fillRule: evenOdd) = this()
-      def this(coordinates: Unit, fillRule: nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
+      def this(coordinates: Unit, fillRule: evenOdd | nonZero) = this()
     }
     object Polygon {
       
@@ -118,7 +112,7 @@ object geometry {
     
     @JSGlobal("ymaps.geometry.pixel.Circle")
     @js.native
-    class Circle protected ()
+    open class Circle protected ()
       extends typings.yandexMaps.mod.geometry.pixel.Circle {
       def this(coordinates: js.Array[Double], radius: Double) = this()
       def this(coordinates: Null, radius: Double) = this()
@@ -128,7 +122,7 @@ object geometry {
     
     @JSGlobal("ymaps.geometry.pixel.LineString")
     @js.native
-    class LineString protected ()
+    open class LineString protected ()
       extends typings.yandexMaps.mod.geometry.pixel.LineString {
       def this(coordinates: js.Array[js.Array[Double]]) = this()
       def this(coordinates: js.Array[js.Array[Double]], metaData: js.Object) = this()
@@ -136,7 +130,7 @@ object geometry {
     
     @JSGlobal("ymaps.geometry.pixel.MultiLineString")
     @js.native
-    class MultiLineString protected ()
+    open class MultiLineString protected ()
       extends typings.yandexMaps.mod.geometry.pixel.MultiLineString {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], metaData: js.Object) = this()
@@ -144,25 +138,19 @@ object geometry {
     
     @JSGlobal("ymaps.geometry.pixel.MultiPolygon")
     @js.native
-    class MultiPolygon protected ()
+    open class MultiPolygon protected ()
       extends typings.yandexMaps.mod.geometry.pixel.MultiPolygon {
-      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: evenOdd) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: evenOdd | nonZero) = this()
       def this(
         coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]],
-        fillRule: evenOdd,
-        metaData: js.Object
-      ) = this()
-      def this(
-        coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]],
-        fillRule: nonZero,
+        fillRule: evenOdd | nonZero,
         metaData: js.Object
       ) = this()
     }
     
     @JSGlobal("ymaps.geometry.pixel.Point")
     @js.native
-    class Point ()
+    open class Point ()
       extends typings.yandexMaps.mod.geometry.pixel.Point {
       def this(position: js.Array[Double]) = this()
       def this(position: js.Array[Double], metaData: js.Object) = this()
@@ -171,17 +159,19 @@ object geometry {
     
     @JSGlobal("ymaps.geometry.pixel.Polygon")
     @js.native
-    class Polygon protected ()
+    open class Polygon protected ()
       extends typings.yandexMaps.mod.geometry.pixel.Polygon {
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd, metaData: js.Object) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero, metaData: js.Object) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
+      def this(
+        coordinates: js.Array[js.Array[js.Array[Double]]],
+        fillRule: evenOdd | nonZero,
+        metaData: js.Object
+      ) = this()
     }
     
     @JSGlobal("ymaps.geometry.pixel.Rectangle")
     @js.native
-    class Rectangle ()
+    open class Rectangle ()
       extends typings.yandexMaps.mod.geometry.pixel.Rectangle {
       def this(coordinates: js.Array[js.Array[Double]]) = this()
       def this(coordinates: js.Array[js.Array[Double]], metaData: js.Object) = this()

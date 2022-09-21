@@ -61,7 +61,7 @@ object treeModelMod {
   object NormalizedModel {
     
     inline def apply(
-      metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any,
+      metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ Any,
       operations: NormalizedOperationMap,
       shapes: ShapeMap
     ): NormalizedModel = {
@@ -92,7 +92,7 @@ object treeModelMod {
     
     inline def apply(
       errors: js.Array[StructureMember],
-      http: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait */ js.Any,
+      http: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait */ Any,
       input: StructureMember,
       name: String,
       output: StructureMember
@@ -105,7 +105,7 @@ object treeModelMod {
       
       inline def setErrors(value: js.Array[StructureMember]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: StructureMember*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: StructureMember*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setInput(value: StructureMember): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -120,7 +120,7 @@ object treeModelMod {
        with Documented
        with Named {
     
-    var metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
+    var metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ Any
     
     var operations: TreeModelOperationMap
     
@@ -130,7 +130,7 @@ object treeModelMod {
     
     inline def apply(
       documentation: String,
-      metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any,
+      metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ Any,
       name: String,
       operations: TreeModelOperationMap,
       shapes: TreeModelShapeMap
@@ -142,7 +142,7 @@ object treeModelMod {
     extension [Self <: TreeModel](x: Self) {
       
       inline def setMetadata(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ Any
       ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setOperations(value: TreeModelOperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
@@ -178,8 +178,8 @@ object treeModelMod {
        with Documented
        with Named
        with Map[
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
         ] {
     
     var key: TreeModelMember = js.native
@@ -213,7 +213,7 @@ object treeModelMod {
        with Named {
     
     var authtype: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ Any
       ] = js.undefined
     
     var errors: js.Array[TreeModelOperationMember]
@@ -238,14 +238,14 @@ object treeModelMod {
     extension [Self <: TreeModelOperation](x: Self) {
       
       inline def setAuthtype(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ Any
       ): Self = StObject.set(x, "authtype", value.asInstanceOf[js.Any])
       
       inline def setAuthtypeUndefined: Self = StObject.set(x, "authtype", js.undefined)
       
       inline def setErrors(value: js.Array[TreeModelOperationMember]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: TreeModelOperationMember*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: TreeModelOperationMember*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setInput(value: TreeModelOperationMember): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -276,7 +276,7 @@ object treeModelMod {
   }
   
   type TreeModelShape = NamedAndDocumented[
-    Blob | Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Float */ js.Any) | TreeModelString | TreeModelList | TreeModelMap | TreeModelStructure
+    Blob | Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Float */ Any) | TreeModelString | TreeModelList | TreeModelMap | TreeModelStructure
   ]
   
   type TreeModelShapeMap = StringDictionary[TreeModelShape]

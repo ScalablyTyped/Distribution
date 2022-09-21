@@ -15,7 +15,7 @@ object ErrorResponse {
   inline def apply(
     error: String,
     readyState: ReadyState,
-    response: js.Any,
+    response: Any,
     responseHeaders: String,
     responseText: String,
     status: Double,

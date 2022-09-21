@@ -16,7 +16,7 @@ object mod {
   
   inline def html(options: Options, callback: Callback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type Callback = js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
+  type Callback = js.Function2[/* error */ Any, /* result */ Any, Unit]
   
   trait Options extends StObject {
     
@@ -56,7 +56,7 @@ object mod {
       *
       * Callback is standard node error first, second argument is transformed value.
       */
-    var linkTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, js.Any]] = js.undefined
+    var linkTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, Any]] = js.undefined
     
     /**
       * When true, inline stylesheet links unless they have an exclusion attribute (see inlineAttribute option).
@@ -85,7 +85,7 @@ object mod {
       *
       * For example, the tests cases in this package are in test/cases/ so their relative paths start by referring to that folder,
       * but the root of this project and where npm test runs from is 2 folders up, so relativeTo is set to test/cases/ in test/spec.js.
-      * Likewise, with href="content.css" and a relativeTo of http://github.com/ the resource retrieved would be http://github.com/content.css.
+      * Likewise, with href="content.css" and a relativeTo of https://github.com/ the resource retrieved would be https://github.com/content.css.
       *
       * @default ""
       */
@@ -111,7 +111,7 @@ object mod {
       *
       * Callback is standard node error first, second argument is transformed value.
       */
-    var scriptTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, js.Any]] = js.undefined
+    var scriptTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, Any]] = js.undefined
     
     /**
       * When true, inline scripts unless they have an exclusion attribute (see inlineAttribute option).
@@ -165,7 +165,7 @@ object mod {
       
       inline def setInlineAttributeUndefined: Self = StObject.set(x, "inlineAttribute", js.undefined)
       
-      inline def setLinkTransform(value: (/* content */ String, /* done */ Callback) => js.Any): Self = StObject.set(x, "linkTransform", js.Any.fromFunction2(value))
+      inline def setLinkTransform(value: (/* content */ String, /* done */ Callback) => Any): Self = StObject.set(x, "linkTransform", js.Any.fromFunction2(value))
       
       inline def setLinkTransformUndefined: Self = StObject.set(x, "linkTransform", js.undefined)
       
@@ -185,7 +185,7 @@ object mod {
       
       inline def setRequestTransformUndefined: Self = StObject.set(x, "requestTransform", js.undefined)
       
-      inline def setScriptTransform(value: (/* content */ String, /* done */ Callback) => js.Any): Self = StObject.set(x, "scriptTransform", js.Any.fromFunction2(value))
+      inline def setScriptTransform(value: (/* content */ String, /* done */ Callback) => Any): Self = StObject.set(x, "scriptTransform", js.Any.fromFunction2(value))
       
       inline def setScriptTransformUndefined: Self = StObject.set(x, "scriptTransform", js.undefined)
       

@@ -9,22 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 **/
 trait HandlebarsTemplatable extends StObject {
   
-  def template(context: js.Any): String
-  def template(context: js.Any, options: typings.handlebars.Handlebars.RuntimeOptions): String
+  def template(context: Any): String
+  def template(context: Any, options: typings.handlebars.Handlebars.RuntimeOptions): String
   @JSName("template")
-  var template_Original: HandlebarsTemplateDelegate[js.Any]
+  var template_Original: HandlebarsTemplateDelegate[Any]
 }
 object HandlebarsTemplatable {
   
-  inline def apply(
-    template: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String
-  ): HandlebarsTemplatable = {
+  inline def apply(template: (Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): HandlebarsTemplatable = {
     val __obj = js.Dynamic.literal(template = js.Any.fromFunction2(template))
     __obj.asInstanceOf[HandlebarsTemplatable]
   }
   
   extension [Self <: HandlebarsTemplatable](x: Self) {
     
-    inline def setTemplate(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    inline def setTemplate(value: (Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
   }
 }

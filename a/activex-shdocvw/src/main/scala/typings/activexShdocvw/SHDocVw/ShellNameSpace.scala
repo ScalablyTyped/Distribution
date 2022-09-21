@@ -23,7 +23,7 @@ trait ShellNameSpace extends StObject {
   var EnumOptions: Double
   
   /** expands item specified depth */
-  def Expand(var_0: js.Any, iDepth: Double): Unit
+  def Expand(var_0: Any, iDepth: Double): Unit
   
   /** method Export */
   def Export(): Unit
@@ -54,16 +54,16 @@ trait ShellNameSpace extends StObject {
   def ResetSort(): Unit
   
   /** get the root item */
-  var Root: js.Any
+  var Root: Any
   
   /* private */ @JSName("SHDocVw.ShellNameSpace_typekey")
   var SHDocVwDotShellNameSpace_typekey: ShellNameSpace
   
   /** get the selected item */
-  var SelectedItem: js.Any
+  var SelectedItem: Any
   
   /** collection of selected items */
-  def SelectedItems(): js.Any
+  def SelectedItems(): Any
   
   /** old, use put_Root() instead */
   def SetRoot(bstrFullPath: String): Unit
@@ -91,7 +91,7 @@ object ShellNameSpace {
     DeleteSubscriptionForSelection: () => Boolean,
     Depth: Double,
     EnumOptions: Double,
-    Expand: (js.Any, Double) => Unit,
+    Expand: (Any, Double) => Unit,
     Export: () => Unit,
     Flags: Double,
     Import: () => Unit,
@@ -102,10 +102,10 @@ object ShellNameSpace {
     MoveSelectionUp: () => Unit,
     NewFolder: () => Unit,
     ResetSort: () => Unit,
-    Root: js.Any,
+    Root: Any,
     SHDocVwDotShellNameSpace_typekey: ShellNameSpace,
-    SelectedItem: js.Any,
-    SelectedItems: () => js.Any,
+    SelectedItem: Any,
+    SelectedItems: () => Any,
     SetRoot: String => Unit,
     SetViewType: Double => Unit,
     SubscriptionsEnabled: Boolean,
@@ -132,7 +132,7 @@ object ShellNameSpace {
     
     inline def setEnumOptions(value: Double): Self = StObject.set(x, "EnumOptions", value.asInstanceOf[js.Any])
     
-    inline def setExpand(value: (js.Any, Double) => Unit): Self = StObject.set(x, "Expand", js.Any.fromFunction2(value))
+    inline def setExpand(value: (Any, Double) => Unit): Self = StObject.set(x, "Expand", js.Any.fromFunction2(value))
     
     inline def setExport(value: () => Unit): Self = StObject.set(x, "Export", js.Any.fromFunction0(value))
     
@@ -154,13 +154,13 @@ object ShellNameSpace {
     
     inline def setResetSort(value: () => Unit): Self = StObject.set(x, "ResetSort", js.Any.fromFunction0(value))
     
-    inline def setRoot(value: js.Any): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Any): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
     inline def setSHDocVwDotShellNameSpace_typekey(value: ShellNameSpace): Self = StObject.set(x, "SHDocVw.ShellNameSpace_typekey", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItem(value: js.Any): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: Any): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItems(value: () => js.Any): Self = StObject.set(x, "SelectedItems", js.Any.fromFunction0(value))
+    inline def setSelectedItems(value: () => Any): Self = StObject.set(x, "SelectedItems", js.Any.fromFunction0(value))
     
     inline def setSetRoot(value: String => Unit): Self = StObject.set(x, "SetRoot", js.Any.fromFunction1(value))
     

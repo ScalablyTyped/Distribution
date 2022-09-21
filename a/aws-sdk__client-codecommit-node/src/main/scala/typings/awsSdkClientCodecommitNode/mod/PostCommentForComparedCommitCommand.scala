@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "PostCommentForComparedCommitCommand")
 @js.native
-class PostCommentForComparedCommitCommand protected ()
+open class PostCommentForComparedCommitCommand protected ()
   extends typings.awsSdkClientCodecommitNode.postCommentForComparedCommitCommandMod.PostCommentForComparedCommitCommand {
   def this(input: PostCommentForComparedCommitInput) = this()
 }

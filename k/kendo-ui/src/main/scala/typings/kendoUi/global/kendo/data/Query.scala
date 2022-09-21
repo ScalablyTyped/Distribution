@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.Query")
 @js.native
-class Query protected ()
+open class Query protected ()
   extends StObject
      with typings.kendoUi.kendo.data.Query {
-  def this(data: js.Array[js.Any]) = this()
+  def this(data: js.Array[Any]) = this()
 }
 object Query {
   
@@ -20,5 +20,5 @@ object Query {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def process(data: js.Array[js.Any], options: DataSourceTransportReadOptionsData): QueryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[QueryResult]
+  inline def process(data: js.Array[Any], options: DataSourceTransportReadOptionsData): QueryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[QueryResult]
 }

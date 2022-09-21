@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IConsensusNotifyBlockValid extends StObject {
   
   /** ConsensusNotifyBlockValid blockId */
-  var blockId: js.UndefOr[Uint8Array | Null] = js.undefined
+  var blockId: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object IConsensusNotifyBlockValid {
   
@@ -19,7 +18,7 @@ object IConsensusNotifyBlockValid {
   
   extension [Self <: IConsensusNotifyBlockValid](x: Self) {
     
-    inline def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
+    inline def setBlockId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
     inline def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     

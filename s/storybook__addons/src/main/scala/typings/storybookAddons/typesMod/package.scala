@@ -1,80 +1,72 @@
 package typings.storybookAddons.typesMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Partial
+import typings.storybookAddons.typesMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def isSupportedType(`type`: typings.storybookAddons.typesMod.Types_): scala.Boolean = typings.storybookAddons.typesMod.^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isSupportedType(`type`: Types_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-type ArgTypes = org.scalablytyped.runtime.StringDictionary[typings.storybookAddons.typesMod.ArgType]
-
-type Args = org.scalablytyped.runtime.StringDictionary[js.Any]
-
-type ArgsStoryFn[ReturnType] = js.Function2[
-/* a */ js.UndefOr[typings.storybookAddons.typesMod.Args], 
-/* p */ js.UndefOr[typings.storybookAddons.typesMod.StoryContext], 
-ReturnType]
+type ArgsStoryFn[ReturnType] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgsStoryFnForFramework<ReturnTypeFramework<ReturnType>> */ Any
 
 type BaseDecorators[StoryFnReturnType] = js.Array[
 js.Function2[
   /* story */ js.Function0[StoryFnReturnType], 
-  /* context */ typings.storybookAddons.typesMod.StoryContext, 
+  /* context */ StoryContext, 
   StoryFnReturnType
 ]]
 
-type ClientApiAddons[StoryFnReturnType] = org.scalablytyped.runtime.StringDictionary[typings.storybookAddons.typesMod.ClientApiAddon[StoryFnReturnType]]
+type BaseStory[Args, StoryFnReturnType] = (BaseStoryFn[Args, StoryFnReturnType]) | (BaseStoryObject[Args, StoryFnReturnType])
 
-type Comparator[T] = js.Function2[/* a */ T, /* b */ T, scala.Boolean | scala.Double]
+type BaseStoryFn[Args, StoryFnReturnType] = (js.Function2[/* args */ Args, /* context */ StoryContext, StoryFnReturnType]) & (BaseStoryObject[Args, StoryFnReturnType])
 
-type DecorateStoryFunction[StoryFnReturnType] = js.Function2[
-/* storyFn */ typings.storybookAddons.typesMod.StoryFn[StoryFnReturnType], 
-/* decorators */ js.Array[typings.storybookAddons.typesMod.DecoratorFunction[StoryFnReturnType]], 
-typings.storybookAddons.typesMod.StoryFn[StoryFnReturnType]]
+type ClientApiAddons[StoryFnReturnType] = StringDictionary[ClientApiAddon[StoryFnReturnType]]
 
-type DecoratorFunction[StoryFnReturnType] = js.Function2[
-/* fn */ typings.storybookAddons.typesMod.StoryFn[StoryFnReturnType], 
-/* c */ typings.storybookAddons.typesMod.StoryContext, 
-typings.std.ReturnType[typings.storybookAddons.typesMod.StoryFn[StoryFnReturnType]]]
+type Comparator[T] = js.Function2[/* a */ T, /* b */ T, Boolean | Double]
 
-type LegacyStoryFn[ReturnType] = js.Function1[/* p */ js.UndefOr[typings.storybookAddons.typesMod.StoryContext], ReturnType]
+type DecoratorFunction[StoryFnReturnType] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DecoratorFunctionForFramework<ReturnTypeFramework<StoryFnReturnType>> */ Any
 
-type LoadFn = js.Function0[js.Any]
+type LegacyStoryFn[ReturnType] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LegacyStoryFnForFramework<ReturnTypeFramework<ReturnType>> */ Any
 
-type Loadable = typings.storybookAddons.typesMod.RequireContext | js.Array[typings.storybookAddons.typesMod.RequireContext] | typings.storybookAddons.typesMod.LoadFn
+type LoadFn = js.Function0[Any]
 
-type LoaderFunction = js.Function1[
-/* c */ typings.storybookAddons.typesMod.StoryContext, 
-js.Promise[typings.std.Record[java.lang.String, js.Any]]]
+type Loadable = RequireContext | js.Array[RequireContext] | LoadFn
 
-type MakeDecoratorResult = js.Function1[/* args */ js.Any, js.Any]
+type LoaderFunction = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LoaderFunctionForFramework<ReturnTypeFramework<unknown>> */ Any
 
-type RequireContext = js.Any
+type MakeDecoratorResult = js.Function1[/* args */ Any, Any]
 
-type StoryFn[ReturnType] = typings.storybookAddons.typesMod.LegacyStoryFn[ReturnType] | typings.storybookAddons.typesMod.ArgsStoryFn[ReturnType]
+type PartialStoryFn[ReturnType] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialStoryFnForFramework<ReturnTypeFramework<ReturnType>> */ Any
 
-type StoryGetter = js.Function1[/* context */ typings.storybookAddons.typesMod.StoryContext, js.Any]
+type RequireContext = Any
 
-type StoryId = java.lang.String
+type StoryContext = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContextForFramework<AnyFramework> */ Any
 
-type StoryKind = java.lang.String
+type StoryContextUpdate = Partial[StoryContext]
 
-type StoryName = java.lang.String
+type StoryFn[ReturnType] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryFnForFramework<ReturnTypeFramework<ReturnType>> */ Any
 
-type StorySortComparator = typings.storybookAddons.typesMod.Comparator[
+type StorySortComparator = Comparator[
 js.Tuple4[
-  typings.storybookAddons.typesMod.StoryId, 
-  js.Any, 
-  typings.storybookAddons.typesMod.Parameters, 
-  typings.storybookAddons.typesMod.Parameters
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any, 
+  Any, 
+  Parameters, 
+  Parameters
 ]]
 
-type StorySortParameter = typings.storybookAddons.typesMod.StorySortComparator | typings.storybookAddons.typesMod.StorySortObjectParameter
+type StorySortComparatorV7 = Comparator[StoryIndexEntry]
+
+type StorySortParameter = StorySortComparator | StorySortObjectParameter
+
+type StorySortParameterV7 = StorySortComparatorV7 | StorySortObjectParameter
 
 type StoryWrapper = js.Function3[
-/* getStory */ typings.storybookAddons.typesMod.StoryGetter, 
-/* context */ typings.storybookAddons.typesMod.StoryContext, 
-/* settings */ typings.storybookAddons.typesMod.WrapperSettings, 
-js.Any]
+/* storyFn */ LegacyStoryFn[Any], 
+/* context */ StoryContext, 
+/* settings */ WrapperSettings, 
+Any]
 
-type Types_ = typings.storybookAddons.typesMod.types | java.lang.String
+type Types_ = types | String

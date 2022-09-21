@@ -10,7 +10,7 @@ object scbrokerMod {
   
   @JSImport("sc-broker-cluster/scbroker", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends typings.scBroker.scbrokerMod.^ {
     def this(options: Run) = this()
   }

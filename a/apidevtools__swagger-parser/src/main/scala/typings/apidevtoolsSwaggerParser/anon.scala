@@ -5,9 +5,7 @@ import typings.apidevtoolsSwaggerParser.apidevtoolsSwaggerParserStrings.ignore
 import typings.apidevtoolsSwaggerParser.mod.FileInfo
 import typings.apidevtoolsSwaggerParser.mod.HTTPResolverOptions
 import typings.apidevtoolsSwaggerParser.mod.ParserOptions
-import typings.node.Buffer
-import typings.std.Error
-import typings.std.RegExp
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,7 +121,7 @@ object anon {
       * A regular expression can be used to match files by their full path. A string (or array of strings) can be used to match files by their file extension. Or a function can be used to perform more complex matching logic. See the custom parser docs for details.
       */
     var canParse: js.UndefOr[
-        Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
+        Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
       ] = js.undefined
     
     var encoding: js.UndefOr[String] = js.undefined
@@ -148,13 +146,15 @@ object anon {
       
       inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
       
-      inline def setCanParse(value: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])): Self = StObject.set(x, "canParse", value.asInstanceOf[js.Any])
+      inline def setCanParse(
+        value: Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
+      ): Self = StObject.set(x, "canParse", value.asInstanceOf[js.Any])
       
       inline def setCanParseFunction1(value: /* file */ FileInfo => Boolean): Self = StObject.set(x, "canParse", js.Any.fromFunction1(value))
       
       inline def setCanParseUndefined: Self = StObject.set(x, "canParse", js.undefined)
       
-      inline def setCanParseVarargs(value: String*): Self = StObject.set(x, "canParse", js.Array(value :_*))
+      inline def setCanParseVarargs(value: String*): Self = StObject.set(x, "canParse", js.Array(value*))
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -170,7 +170,7 @@ object anon {
   trait PartialResolverOptions extends StObject {
     
     var canRead: js.UndefOr[
-        Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
+        Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
       ] = js.undefined
     
     var order: js.UndefOr[Double] = js.undefined
@@ -178,7 +178,7 @@ object anon {
     var read: js.UndefOr[
         js.Function2[
           /* file */ FileInfo, 
-          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]], 
+          /* callback */ js.UndefOr[js.Function2[/* error */ js.Error | Null, /* data */ String | Null, Any]], 
           String | Buffer | (js.Promise[String | Buffer])
         ]
       ] = js.undefined
@@ -192,20 +192,22 @@ object anon {
     
     extension [Self <: PartialResolverOptions](x: Self) {
       
-      inline def setCanRead(value: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
+      inline def setCanRead(
+        value: Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
+      ): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
       
       inline def setCanReadFunction1(value: /* file */ FileInfo => Boolean): Self = StObject.set(x, "canRead", js.Any.fromFunction1(value))
       
       inline def setCanReadUndefined: Self = StObject.set(x, "canRead", js.undefined)
       
-      inline def setCanReadVarargs(value: String*): Self = StObject.set(x, "canRead", js.Array(value :_*))
+      inline def setCanReadVarargs(value: String*): Self = StObject.set(x, "canRead", js.Array(value*))
       
       inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
       inline def setRead(
-        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]]) => String | Buffer | (js.Promise[String | Buffer])
+        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ js.Error | Null, /* data */ String | Null, Any]]) => String | Buffer | (js.Promise[String | Buffer])
       ): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
       inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)

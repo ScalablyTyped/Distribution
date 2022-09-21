@@ -33,6 +33,6 @@ object RunPipelineActivityResponse {
     
     inline def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
     
-    inline def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
+    inline def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value*))
   }
 }

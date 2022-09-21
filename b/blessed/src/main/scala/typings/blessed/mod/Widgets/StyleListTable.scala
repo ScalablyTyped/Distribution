@@ -11,12 +11,12 @@ trait StyleListTable
   /**
     * Cell style.
     */
-  var cell: js.UndefOr[js.Any] = js.undefined
+  var cell: js.UndefOr[Any] = js.undefined
   
   /**
     * Header style.
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
 }
 object StyleListTable {
   
@@ -27,11 +27,11 @@ object StyleListTable {
   
   extension [Self <: StyleListTable](x: Self) {
     
-    inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }

@@ -24,7 +24,7 @@ trait ReservedInstances extends StObject {
   /**
     * The time when the Reserved Instance expires.
     */
-  var End: js.UndefOr[DateTime] = js.undefined
+  var End: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The purchase price of the Reserved Instance.
@@ -79,7 +79,7 @@ trait ReservedInstances extends StObject {
   /**
     * The date and time the Reserved Instance started.
     */
-  var Start: js.UndefOr[DateTime] = js.undefined
+  var Start: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the Reserved Instance purchase.
@@ -117,7 +117,7 @@ object ReservedInstances {
     
     inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    inline def setEnd(value: DateTime): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Date): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
@@ -153,7 +153,7 @@ object ReservedInstances {
     
     inline def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
     
-    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
+    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value*))
     
     inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
@@ -163,7 +163,7 @@ object ReservedInstances {
     
     inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
     
-    inline def setStart(value: DateTime): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
     
@@ -175,7 +175,7 @@ object ReservedInstances {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUsagePrice(value: Float): Self = StObject.set(x, "UsagePrice", value.asInstanceOf[js.Any])
     

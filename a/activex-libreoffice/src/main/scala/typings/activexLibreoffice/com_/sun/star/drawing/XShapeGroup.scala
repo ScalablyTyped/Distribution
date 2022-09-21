@@ -42,7 +42,7 @@ object XShapeGroup {
     getShapeType: () => String,
     getSize: () => Size,
     leaveGroup: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPosition: Point => Unit,
     setSize: Size => Unit

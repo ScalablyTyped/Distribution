@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StatelessRuleGroup extends StObject {
   
   /**
-    * The priority of the rule group. AWS Network Firewall evaluates the stateless rule groups in a firewall policy starting from the lowest priority setting. 
+    * The priority of the rule group. Network Firewall evaluates the stateless rule groups in a firewall policy starting from the lowest priority setting. 
     */
   var Priority: js.UndefOr[StatelessRuleGroupPriority] = js.undefined
   

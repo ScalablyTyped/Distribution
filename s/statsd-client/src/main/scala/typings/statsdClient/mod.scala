@@ -3,10 +3,8 @@ package typings.statsdClient
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.statsdClient.anon.GetExpressMiddleware
-import typings.std.Date
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +13,7 @@ object mod {
   
   @JSImport("statsd-client", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with StatsdClient {
     def this(options: HttpOptions) = this()
@@ -102,9 +100,15 @@ object mod {
     var onResponseEnd: js.UndefOr[
         js.Function4[
           /* client */ StatsdClient, 
-          /* startTime */ Date, 
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
+          /* startTime */ js.Date, 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* res */ Response_[Any, Record[String, Any]], 
           Unit
         ]
       ] = js.undefined
@@ -129,7 +133,13 @@ object mod {
       inline def setNotFoundRouteNameUndefined: Self = StObject.set(x, "notFoundRouteName", js.undefined)
       
       inline def setOnResponseEnd(
-        value: (/* client */ StatsdClient, /* startTime */ Date, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Unit
+        value: (/* client */ StatsdClient, /* startTime */ js.Date, /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => Unit
       ): Self = StObject.set(x, "onResponseEnd", js.Any.fromFunction4(value))
       
       inline def setOnResponseEndUndefined: Self = StObject.set(x, "onResponseEnd", js.undefined)
@@ -195,6 +205,9 @@ object mod {
     def decrement(metric: String, delta: Double, tags: Tags): this.type = js.native
     def decrement(metric: String, delta: Unit, tags: Tags): this.type = js.native
     
+    def distribution(name: String, value: Double): this.type = js.native
+    def distribution(name: String, value: Double, tags: Tags): this.type = js.native
+    
     def formatTags(): String = js.native
     def formatTags(tags: Tags): String = js.native
     
@@ -221,10 +234,10 @@ object mod {
     def set(name: String, value: Double): this.type = js.native
     def set(name: String, value: Double, tags: Tags): this.type = js.native
     
+    def timing(name: String, startOrDuration: js.Date): this.type = js.native
+    def timing(name: String, startOrDuration: js.Date, tags: Tags): this.type = js.native
     def timing(name: String, startOrDuration: Double): this.type = js.native
     def timing(name: String, startOrDuration: Double, tags: Tags): this.type = js.native
-    def timing(name: String, startOrDuration: Date): this.type = js.native
-    def timing(name: String, startOrDuration: Date, tags: Tags): this.type = js.native
   }
   
   type Tags = StringDictionary[String | Double]
@@ -301,6 +314,30 @@ object mod {
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    }
+  }
+  
+  trait WrappedCallbackOptions extends StObject {
+    
+    /**
+      * Object of string key/value pairs which will be appended on
+      * to all StatsD payloads (excluding raw payloads)
+      * (default {})
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
+  }
+  object WrappedCallbackOptions {
+    
+    inline def apply(): WrappedCallbackOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WrappedCallbackOptions]
+    }
+    
+    extension [Self <: WrappedCallbackOptions](x: Self) {
+      
+      inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

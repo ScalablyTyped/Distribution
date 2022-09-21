@@ -12,7 +12,7 @@ trait INxVariableListItem extends StObject {
   /**
     * Data.
     */
-  var qData: js.Any
+  var qData: Any
   
   /**
     * Definition of the variable. It can be a value or an expression.
@@ -70,7 +70,7 @@ trait INxVariableListItem extends StObject {
 object INxVariableListItem {
   
   inline def apply(
-    qData: js.Any,
+    qData: Any,
     qDefinition: String,
     qDescription: String,
     qInfo: INxInfo,
@@ -83,7 +83,7 @@ object INxVariableListItem {
   
   extension [Self <: INxVariableListItem](x: Self) {
     
-    inline def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
     inline def setQDefinition(value: String): Self = StObject.set(x, "qDefinition", value.asInstanceOf[js.Any])
     

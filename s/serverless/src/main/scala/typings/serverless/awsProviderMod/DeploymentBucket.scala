@@ -14,6 +14,8 @@ trait DeploymentBucket extends StObject {
   
   var serverSideEncryption: js.UndefOr[String] = js.undefined
   
+  var skipPolicySetup: js.UndefOr[Boolean] = js.undefined
+  
   var sseCustomerAlgorithim: js.UndefOr[String] = js.undefined
   
   var sseCustomerKey: js.UndefOr[String] = js.undefined
@@ -48,6 +50,10 @@ object DeploymentBucket {
     inline def setServerSideEncryption(value: String): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
     
     inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+    
+    inline def setSkipPolicySetup(value: Boolean): Self = StObject.set(x, "skipPolicySetup", value.asInstanceOf[js.Any])
+    
+    inline def setSkipPolicySetupUndefined: Self = StObject.set(x, "skipPolicySetup", js.undefined)
     
     inline def setSseCustomerAlgorithim(value: String): Self = StObject.set(x, "sseCustomerAlgorithim", value.asInstanceOf[js.Any])
     

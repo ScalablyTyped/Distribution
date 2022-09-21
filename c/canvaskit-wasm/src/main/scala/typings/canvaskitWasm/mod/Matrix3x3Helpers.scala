@@ -17,7 +17,7 @@ trait Matrix3x3Helpers extends StObject {
     * Returns the inverse of the given 3x3 matrix or null if it is not invertible.
     * @param m
     */
-  def invert(m: Matrix3x3): js.Array[Double] | Null = js.native
+  def invert(m: js.typedarray.Float32Array): js.Array[Double] | Null = js.native
   
   def mapPoints(m: js.Array[Double], points: js.Array[Double]): js.Array[Double] = js.native
   /**
@@ -25,13 +25,13 @@ trait Matrix3x3Helpers extends StObject {
     * @param m
     * @param points - the flattened points to map; the results are computed in place on this array.
     */
-  def mapPoints(m: Matrix3x3, points: js.Array[Double]): js.Array[Double] = js.native
+  def mapPoints(m: js.typedarray.Float32Array, points: js.Array[Double]): js.Array[Double] = js.native
   
   /**
     * Multiplies the provided 3x3 matrices together from left to right.
     * @param matrices
     */
-  def multiply(matrices: (Matrix3x3 | js.Array[Double])*): js.Array[Double] = js.native
+  def multiply(matrices: (js.typedarray.Float32Array | js.Array[Double])*): js.Array[Double] = js.native
   
   /**
     * Returns a new 3x3 matrix representing a rotation by n radians.

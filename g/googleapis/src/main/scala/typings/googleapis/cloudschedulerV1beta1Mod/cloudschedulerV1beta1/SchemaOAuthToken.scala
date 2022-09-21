@@ -4,28 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains information needed for generating an [OAuth
-  * token](https://developers.google.com/identity/protocols/OAuth2). This type
-  * of authorization should be used when sending requests to a GCP endpoint.
-  */
 trait SchemaOAuthToken extends StObject {
   
   /**
-    * OAuth scope to be used for generating OAuth access token. If not
-    * specified, &quot;https://www.googleapis.com/auth/cloud-platform&quot;
-    * will be used.
+    * OAuth scope to be used for generating OAuth access token. If not specified, "https://www.googleapis.com/auth/cloud-platform" will be used.
     */
-  var scope: js.UndefOr[String] = js.undefined
+  var scope: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Service account
-    * email](https://cloud.google.com/iam/docs/service-accounts) to be used for
-    * generating OAuth token. The service account must be within the same
-    * project as the job. The caller must have iam.serviceAccounts.actAs
-    * permission for the service account.
+    * [Service account email](https://cloud.google.com/iam/docs/service-accounts) to be used for generating OAuth token. The service account must be within the same project as the job. The caller must have iam.serviceAccounts.actAs permission for the service account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.undefined
+  var serviceAccountEmail: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOAuthToken {
   
@@ -38,9 +27,13 @@ object SchemaOAuthToken {
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
+    inline def setScopeNull: Self = StObject.set(x, "scope", null)
+    
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountEmailNull: Self = StObject.set(x, "serviceAccountEmail", null)
     
     inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
   }

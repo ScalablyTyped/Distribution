@@ -33,6 +33,6 @@ object DescribeHostReservationOfferingsResult {
     
     inline def setOfferingSetUndefined: Self = StObject.set(x, "OfferingSet", js.undefined)
     
-    inline def setOfferingSetVarargs(value: HostOffering*): Self = StObject.set(x, "OfferingSet", js.Array(value :_*))
+    inline def setOfferingSetVarargs(value: HostOffering*): Self = StObject.set(x, "OfferingSet", js.Array(value*))
   }
 }

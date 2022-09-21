@@ -23,6 +23,6 @@ object DependsOn {
     
     inline def setMap(value: js.Array[DependencyBinding]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    inline def setMapVarargs(value: DependencyBinding*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: DependencyBinding*): Self = StObject.set(x, "map", js.Array(value*))
   }
 }

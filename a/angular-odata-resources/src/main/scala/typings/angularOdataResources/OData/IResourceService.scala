@@ -14,46 +14,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IResourceService extends StObject {
   
-  def apply(url: String): IResourceClass[IResource[js.Any]] = js.native
-  def apply(url: String, paramDefaults: js.Any): IResourceClass[IResource[js.Any]] = js.native
+  def apply(url: String): IResourceClass[IResource[Any]] = js.native
+  def apply(url: String, paramDefaults: Any): IResourceClass[IResource[Any]] = js.native
   def apply(
     url: String,
-    paramDefaults: js.Any,
+    paramDefaults: Any,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
     where deleteDescriptor : IActionDescriptor */
-  actions: js.Any
-  ): IResourceClass[IResource[js.Any]] = js.native
+  actions: Any
+  ): IResourceClass[IResource[Any]] = js.native
   def apply(
     url: String,
-    paramDefaults: js.Any,
+    paramDefaults: Any,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
     where deleteDescriptor : IActionDescriptor */
-  actions: js.Any,
+  actions: Any,
     options: IResourceOptions
-  ): IResourceClass[IResource[js.Any]] = js.native
+  ): IResourceClass[IResource[Any]] = js.native
   def apply(
     url: String,
-    paramDefaults: js.Any,
+    paramDefaults: Any,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
     where deleteDescriptor : IActionDescriptor */
   actions: Unit,
     options: IResourceOptions
-  ): IResourceClass[IResource[js.Any]] = js.native
+  ): IResourceClass[IResource[Any]] = js.native
   def apply(
     url: String,
     paramDefaults: Unit,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
     where deleteDescriptor : IActionDescriptor */
-  actions: js.Any
-  ): IResourceClass[IResource[js.Any]] = js.native
+  actions: Any
+  ): IResourceClass[IResource[Any]] = js.native
   def apply(
     url: String,
     paramDefaults: Unit,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
     where deleteDescriptor : IActionDescriptor */
-  actions: js.Any,
+  actions: Any,
     options: IResourceOptions
-  ): IResourceClass[IResource[js.Any]] = js.native
+  ): IResourceClass[IResource[Any]] = js.native
   def apply(
     url: String,
     paramDefaults: Unit,
@@ -61,5 +61,5 @@ trait IResourceService extends StObject {
     where deleteDescriptor : IActionDescriptor */
   actions: Unit,
     options: IResourceOptions
-  ): IResourceClass[IResource[js.Any]] = js.native
+  ): IResourceClass[IResource[Any]] = js.native
 }

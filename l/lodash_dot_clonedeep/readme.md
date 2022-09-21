@@ -10,10 +10,10 @@ The lodash method `_.cloneDeep` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.clonedeep |
 | Keywords           | lodash-modularized, clonedeep |
-| # releases         | 0 |
-| # dependents       | 1770 |
-| # downloads        | 292410426 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2614941333333336E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

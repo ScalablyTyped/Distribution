@@ -11,9 +11,9 @@ Node adapter for RequireJS, for loading AMD modules. Includes RequireJS optimize
 | Full name          | requirejs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 790 |
-| # downloads        | 29841375 |
-| # stars            | 71 |
+| # dependents       | 0.0 |
+| # downloads        | 2751808.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://github.com/jrburke/r.js)

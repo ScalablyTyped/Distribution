@@ -1,7 +1,7 @@
 package typings.request.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.AgentOptions
 import typings.node.httpMod.IncomingMessage
@@ -15,7 +15,7 @@ trait CoreOptions extends StObject {
   
   var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.undefined
   
-  var agentClass: js.UndefOr[js.Any] = js.undefined
+  var agentClass: js.UndefOr[Any] = js.undefined
   
   var agentOptions: js.UndefOr[AgentOptions | typings.node.httpsMod.AgentOptions] = js.undefined
   
@@ -25,7 +25,7 @@ trait CoreOptions extends StObject {
   
   var baseUrl: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[js.Any] = js.undefined
+  var body: js.UndefOr[Any] = js.undefined
   
   var ca: js.UndefOr[String | Buffer | (js.Array[Buffer | String])] = js.undefined
   
@@ -43,11 +43,11 @@ trait CoreOptions extends StObject {
   
   var followRedirect: js.UndefOr[Boolean | (js.Function1[/* response */ IncomingMessage, Boolean])] = js.undefined
   
-  var forever: js.UndefOr[js.Any] = js.undefined
+  var forever: js.UndefOr[Any] = js.undefined
   
-  var form: js.UndefOr[StringDictionary[js.Any] | String] = js.undefined
+  var form: js.UndefOr[StringDictionary[Any] | String] = js.undefined
   
-  var formData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var formData: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var gzip: js.UndefOr[Boolean] = js.undefined
   
@@ -61,11 +61,11 @@ trait CoreOptions extends StObject {
   
   var jar: js.UndefOr[CookieJar | Boolean] = js.undefined
   
-  var json: js.UndefOr[js.Any] = js.undefined
+  var json: js.UndefOr[Any] = js.undefined
   
-  var jsonReplacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
+  var jsonReplacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
   
-  var jsonReviver: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
+  var jsonReviver: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
   
   var key: js.UndefOr[Buffer] = js.undefined
   
@@ -89,13 +89,13 @@ trait CoreOptions extends StObject {
   
   var preambleCRLF: js.UndefOr[Boolean] = js.undefined
   
-  var proxy: js.UndefOr[js.Any] = js.undefined
+  var proxy: js.UndefOr[Any] = js.undefined
   
-  var qs: js.UndefOr[js.Any] = js.undefined
+  var qs: js.UndefOr[Any] = js.undefined
   
-  var qsParseOptions: js.UndefOr[js.Any] = js.undefined
+  var qsParseOptions: js.UndefOr[Any] = js.undefined
   
-  var qsStringifyOptions: js.UndefOr[js.Any] = js.undefined
+  var qsStringifyOptions: js.UndefOr[Any] = js.undefined
   
   var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   
@@ -124,7 +124,7 @@ object CoreOptions {
     
     inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    inline def setAgentClass(value: js.Any): Self = StObject.set(x, "agentClass", value.asInstanceOf[js.Any])
+    inline def setAgentClass(value: Any): Self = StObject.set(x, "agentClass", value.asInstanceOf[js.Any])
     
     inline def setAgentClassUndefined: Self = StObject.set(x, "agentClass", js.undefined)
     
@@ -146,7 +146,7 @@ object CoreOptions {
     
     inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -154,9 +154,9 @@ object CoreOptions {
     
     inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
-    inline def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+    inline def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value*))
     
-    inline def setCallback(value: (/* error */ js.Any, /* response */ Response, /* body */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+    inline def setCallback(value: (/* error */ Any, /* response */ Response, /* body */ Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -188,13 +188,13 @@ object CoreOptions {
     
     inline def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
     
-    inline def setForever(value: js.Any): Self = StObject.set(x, "forever", value.asInstanceOf[js.Any])
+    inline def setForever(value: Any): Self = StObject.set(x, "forever", value.asInstanceOf[js.Any])
     
     inline def setForeverUndefined: Self = StObject.set(x, "forever", js.undefined)
     
-    inline def setForm(value: StringDictionary[js.Any] | String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: StringDictionary[Any] | String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormData(value: StringDictionary[js.Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: StringDictionary[Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
@@ -224,13 +224,13 @@ object CoreOptions {
     
     inline def setJarUndefined: Self = StObject.set(x, "jar", js.undefined)
     
-    inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    inline def setJsonReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "jsonReplacer", js.Any.fromFunction2(value))
+    inline def setJsonReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "jsonReplacer", js.Any.fromFunction2(value))
     
     inline def setJsonReplacerUndefined: Self = StObject.set(x, "jsonReplacer", js.undefined)
     
-    inline def setJsonReviver(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "jsonReviver", js.Any.fromFunction2(value))
+    inline def setJsonReviver(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "jsonReviver", js.Any.fromFunction2(value))
     
     inline def setJsonReviverUndefined: Self = StObject.set(x, "jsonReviver", js.undefined)
     
@@ -256,7 +256,7 @@ object CoreOptions {
     
     inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
-    inline def setMultipartVarargs(value: RequestPart*): Self = StObject.set(x, "multipart", js.Array(value :_*))
+    inline def setMultipartVarargs(value: RequestPart*): Self = StObject.set(x, "multipart", js.Array(value*))
     
     inline def setOauth(value: OAuthOptions): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
     
@@ -282,17 +282,17 @@ object CoreOptions {
     
     inline def setPreambleCRLFUndefined: Self = StObject.set(x, "preambleCRLF", js.undefined)
     
-    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setQs(value: js.Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+    inline def setQs(value: Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
     
-    inline def setQsParseOptions(value: js.Any): Self = StObject.set(x, "qsParseOptions", value.asInstanceOf[js.Any])
+    inline def setQsParseOptions(value: Any): Self = StObject.set(x, "qsParseOptions", value.asInstanceOf[js.Any])
     
     inline def setQsParseOptionsUndefined: Self = StObject.set(x, "qsParseOptions", js.undefined)
     
-    inline def setQsStringifyOptions(value: js.Any): Self = StObject.set(x, "qsStringifyOptions", value.asInstanceOf[js.Any])
+    inline def setQsStringifyOptions(value: Any): Self = StObject.set(x, "qsStringifyOptions", value.asInstanceOf[js.Any])
     
     inline def setQsStringifyOptionsUndefined: Self = StObject.set(x, "qsStringifyOptions", js.undefined)
     

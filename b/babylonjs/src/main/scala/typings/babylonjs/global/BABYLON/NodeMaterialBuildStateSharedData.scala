@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Immutable
 import typings.babylonjs.anon.EmitVertex
 import typings.babylonjs.anon.NeedAlphaBlending
 import org.scalablytyped.runtime.StObject
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BABYLON.NodeMaterialBuildStateSharedData")
 @js.native
 /** Creates a new shared data */
-class NodeMaterialBuildStateSharedData ()
+open class NodeMaterialBuildStateSharedData ()
   extends StObject
      with typings.babylonjs.BABYLON.NodeMaterialBuildStateSharedData {
   
@@ -82,6 +83,18 @@ class NodeMaterialBuildStateSharedData ()
   override def emitErrors(): Unit = js.native
   
   /**
+    * Bindable blocks (Blocks that need to set data to the effect) that will always be called (by bindForSubMesh), contrary to bindableBlocks that won't be called if _mustRebind() returns false
+    */
+  /* CompleteClass */
+  var forcedBindableBlocks: js.Array[typings.babylonjs.BABYLON.NodeMaterialBlock] = js.native
+  
+  /**
+    * List of the fragment output nodes
+    */
+  /* CompleteClass */
+  var fragmentOutputNodes: Immutable[js.Array[typings.babylonjs.BABYLON.NodeMaterialBlock]] = js.native
+  
+  /**
     * Gets the compilation hints emitted at compilation time
     */
   /* CompleteClass */
@@ -114,7 +127,7 @@ class NodeMaterialBuildStateSharedData ()
     */
   /* CompleteClass */
   var textureBlocks: js.Array[
-    typings.babylonjs.BABYLON.TextureBlock | typings.babylonjs.BABYLON.ReflectionTextureBaseBlock | typings.babylonjs.BABYLON.RefractionBlock | typings.babylonjs.BABYLON.CurrentScreenBlock | typings.babylonjs.BABYLON.ParticleTextureBlock
+    typings.babylonjs.BABYLON.ImageSourceBlock | typings.babylonjs.BABYLON.TextureBlock | typings.babylonjs.BABYLON.ReflectionTextureBaseBlock | typings.babylonjs.BABYLON.RefractionBlock | typings.babylonjs.BABYLON.CurrentScreenBlock | typings.babylonjs.BABYLON.ParticleTextureBlock
   ] = js.native
   
   /** List of emitted variables */

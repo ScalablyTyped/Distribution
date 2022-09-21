@@ -8,7 +8,7 @@ trait DeviceEnrollmentLimitConfiguration
   extends StObject
      with DeviceEnrollmentConfiguration {
   
-  // Not yet documented
+  // The maximum number of devices that a user can enroll
   var limit: js.UndefOr[Double] = js.undefined
 }
 object DeviceEnrollmentLimitConfiguration {

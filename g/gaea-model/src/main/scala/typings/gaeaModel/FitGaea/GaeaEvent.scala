@@ -21,10 +21,10 @@ object GaeaEvent {
     
     inline def setEffects(value: js.Array[EventAction]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    inline def setEffectsVarargs(value: EventAction*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: EventAction*): Self = StObject.set(x, "effects", js.Array(value*))
     
     inline def setTriggers(value: js.Array[EventTriggerCondition]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
-    inline def setTriggersVarargs(value: EventTriggerCondition*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: EventTriggerCondition*): Self = StObject.set(x, "triggers", js.Array(value*))
   }
 }

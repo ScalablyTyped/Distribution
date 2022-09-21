@@ -1,6 +1,5 @@
 package typings.cookieclicker.Game
 
-import typings.cookieclicker.cookieclickerStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,16 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TieredUpgradeClass[Tier /* <: String | Double */]
   extends StObject
-     with Upgrade {
+     with GenericTieredUpgrade[Tier] {
   
   var buildingTie1: GameObject = js.native
   
   @JSName("buildingTie")
   var buildingTie_TieredUpgradeClass: GameObject = js.native
-  
-  @JSName("pool")
-  var pool_TieredUpgradeClass: _empty = js.native
-  
-  @JSName("tier")
-  var tier_TieredUpgradeClass: Tier = js.native
 }

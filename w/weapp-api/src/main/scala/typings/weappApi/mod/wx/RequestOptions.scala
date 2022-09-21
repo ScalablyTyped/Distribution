@@ -10,7 +10,7 @@ trait RequestOptions extends StObject {
   var complete: js.UndefOr[ResponseCallback] = js.undefined
   
   /** 请求的参数 */
-  var data: js.UndefOr[String | js.Any] = js.undefined
+  var data: js.UndefOr[String | Any] = js.undefined
   
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[ResponseCallback] = js.undefined
@@ -36,15 +36,15 @@ object RequestOptions {
   
   extension [Self <: RequestOptions](x: Self) {
     
-    inline def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     

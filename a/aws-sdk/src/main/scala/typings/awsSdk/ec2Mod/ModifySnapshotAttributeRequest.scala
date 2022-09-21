@@ -66,7 +66,7 @@ object ModifySnapshotAttributeRequest {
     
     inline def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
     
-    inline def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
+    inline def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value*))
     
     inline def setOperationType(value: OperationType): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
     
@@ -78,6 +78,6 @@ object ModifySnapshotAttributeRequest {
     
     inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value*))
   }
 }

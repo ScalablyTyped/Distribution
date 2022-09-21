@@ -1,6 +1,6 @@
 package typings.babelWalk.anon
 
-import typings.babelWalk.babelWalkStrings.Conditional
+import typings.babelWalk.babelWalkStrings.CatchClause
 import typings.babelWalk.mod.NodeType
 import typings.babelWalk.mod.SimpleFunction
 import org.scalablytyped.runtime.StObject
@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `207`[TState] extends StObject {
   
-  var enter: js.UndefOr[SimpleFunction[Conditional, TState]] = js.undefined
+  var enter: js.UndefOr[SimpleFunction[CatchClause, TState]] = js.undefined
   
-  var exit: js.UndefOr[SimpleFunction[Conditional, TState]] = js.undefined
+  var exit: js.UndefOr[SimpleFunction[CatchClause, TState]] = js.undefined
 }
 object `207` {
   
@@ -22,11 +22,11 @@ object `207` {
   
   extension [Self <: `207`[?], TState](x: Self & `207`[TState]) {
     
-    inline def setEnter(value: (/* node */ NodeType[Conditional], TState) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
+    inline def setEnter(value: (/* node */ NodeType[CatchClause], TState) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
     
     inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    inline def setExit(value: (/* node */ NodeType[Conditional], TState) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction2(value))
+    inline def setExit(value: (/* node */ NodeType[CatchClause], TState) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction2(value))
     
     inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
   }

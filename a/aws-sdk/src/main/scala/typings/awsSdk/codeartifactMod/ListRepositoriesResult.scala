@@ -12,7 +12,7 @@ trait ListRepositoriesResult extends StObject {
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    *  The returned list of  RepositorySummary  objects. 
+    *  The returned list of RepositorySummary objects. 
     */
   var repositories: js.UndefOr[RepositorySummaryList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListRepositoriesResult {
     
     inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
-    inline def setRepositoriesVarargs(value: RepositorySummary*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+    inline def setRepositoriesVarargs(value: RepositorySummary*): Self = StObject.set(x, "repositories", js.Array(value*))
   }
 }

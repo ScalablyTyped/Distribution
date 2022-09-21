@@ -1,7 +1,6 @@
 package typings.vueLs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.vue.pluginMod.PluginObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod extends Shortcut {
   
   @JSImport("vue-ls", JSImport.Default)
   @js.native
-  val default: PluginObject[Options] = js.native
+  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginObject<Options> */ Any = js.native
   
   @js.native
   sealed trait Types extends StObject
@@ -42,13 +41,13 @@ object mod extends Shortcut {
   
   @JSImport("vue-ls", "WebStorage")
   @js.native
-  class WebStorage protected () extends StObject {
+  open class WebStorage protected () extends StObject {
     def this(storage: Types) = this()
     
     def clear(): Unit = js.native
     
-    def get(name: String): js.Any = js.native
-    def get(name: String, `def`: js.Any): js.Any = js.native
+    def get(name: String): Any = js.native
+    def get(name: String, `def`: Any): Any = js.native
     
     def key(index: Double): String | Null = js.native
     
@@ -60,8 +59,8 @@ object mod extends Shortcut {
     
     def remove(name: String): Unit = js.native
     
-    def set(name: String, value: js.Any): Unit = js.native
-    def set(name: String, value: js.Any, expire: Double): Unit = js.native
+    def set(name: String, value: Any): Unit = js.native
+    def set(name: String, value: Any, expire: Double): Unit = js.native
     
     def setOptions(): Unit = js.native
     def setOptions(options: Options): Unit = js.native
@@ -98,10 +97,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = PluginObject[Options]
+  type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginObject<Options> */ Any
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: PluginObject[Options] = default
+  override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginObject<Options> */ Any = default
   
   object vueTypesVueAugmentingMod {
     

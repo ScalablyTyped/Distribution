@@ -13,12 +13,12 @@ trait INotebookMetadata
   
   var language_info: js.UndefOr[ILanguageInfoMetadata] = js.undefined
   
-  var orig_nbformat: Double
+  var orig_nbformat: js.UndefOr[Double] = js.undefined
 }
 object INotebookMetadata {
   
-  inline def apply(orig_nbformat: Double): INotebookMetadata = {
-    val __obj = js.Dynamic.literal(orig_nbformat = orig_nbformat.asInstanceOf[js.Any])
+  inline def apply(): INotebookMetadata = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INotebookMetadata]
   }
   
@@ -33,5 +33,7 @@ object INotebookMetadata {
     inline def setLanguage_infoUndefined: Self = StObject.set(x, "language_info", js.undefined)
     
     inline def setOrig_nbformat(value: Double): Self = StObject.set(x, "orig_nbformat", value.asInstanceOf[js.Any])
+    
+    inline def setOrig_nbformatUndefined: Self = StObject.set(x, "orig_nbformat", js.undefined)
   }
 }

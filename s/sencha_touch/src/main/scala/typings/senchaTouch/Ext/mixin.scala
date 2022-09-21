@@ -16,16 +16,16 @@ object mixin {
     /** [Method] This method adds a filter
       * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
       */
-    var addFilter: js.UndefOr[js.Function1[/* filter */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var addFilter: js.UndefOr[js.Function1[/* filter */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] This method adds all the filters in a passed array
       * @param filters Array An array with filters. A filter can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
       * @returns Object
       */
-    var addFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], js.Any]] = js.undefined
+    var addFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], Any]] = js.undefined
     
     /** [Property] (Object) */
-    var currentSortFn: js.UndefOr[js.Any] = js.undefined
+    var currentSortFn: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var dirtyFilterFn: js.UndefOr[Boolean] = js.undefined
@@ -48,7 +48,7 @@ object mixin {
     /** [Method] Returns an up to date sort function
       * @returns Function sortFn The sort function.
       */
-    var getFilterFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getFilterFn: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of filterRoot
       * @returns String
@@ -65,9 +65,7 @@ object mixin {
       * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
       * @returns Object
       */
-    var insertFilter: js.UndefOr[
-        js.Function2[/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any], js.Any]
-      ] = js.undefined
+    var insertFilter: js.UndefOr[js.Function2[/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method] This method inserts all the filters in the passed array at the given index
       * @param index Number The index at which to insert the filters.
@@ -102,15 +100,15 @@ object mixin {
     
     extension [Self <: IFilterable](x: Self) {
       
-      inline def setAddFilter(value: /* filter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction1(value))
+      inline def setAddFilter(value: /* filter */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction1(value))
       
       inline def setAddFilterUndefined: Self = StObject.set(x, "addFilter", js.undefined)
       
-      inline def setAddFilters(value: /* filters */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "addFilters", js.Any.fromFunction1(value))
+      inline def setAddFilters(value: /* filters */ js.UndefOr[Array] => Any): Self = StObject.set(x, "addFilters", js.Any.fromFunction1(value))
       
       inline def setAddFiltersUndefined: Self = StObject.set(x, "addFilters", js.undefined)
       
-      inline def setCurrentSortFn(value: js.Any): Self = StObject.set(x, "currentSortFn", value.asInstanceOf[js.Any])
+      inline def setCurrentSortFn(value: Any): Self = StObject.set(x, "currentSortFn", value.asInstanceOf[js.Any])
       
       inline def setCurrentSortFnUndefined: Self = StObject.set(x, "currentSortFn", js.undefined)
       
@@ -134,7 +132,7 @@ object mixin {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setGetFilterFn(value: () => js.Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
+      inline def setGetFilterFn(value: () => Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
       
       inline def setGetFilterFnUndefined: Self = StObject.set(x, "getFilterFn", js.undefined)
       
@@ -146,7 +144,7 @@ object mixin {
       
       inline def setGetFiltersUndefined: Self = StObject.set(x, "getFilters", js.undefined)
       
-      inline def setInsertFilter(value: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "insertFilter", js.Any.fromFunction2(value))
+      inline def setInsertFilter(value: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "insertFilter", js.Any.fromFunction2(value))
       
       inline def setInsertFilterUndefined: Self = StObject.set(x, "insertFilter", js.undefined)
       
@@ -175,7 +173,7 @@ object mixin {
     /** [Method] Retrieves the id of this component
       * @returns any id
       */
-    var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getId: js.UndefOr[js.Function0[Any]] = js.undefined
   }
   object IIdentifiable {
     
@@ -186,7 +184,7 @@ object mixin {
     
     extension [Self <: IIdentifiable](x: Self) {
       
-      inline def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
       inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
     }
@@ -206,10 +204,10 @@ object mixin {
       */
     var addAfterListener: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -222,10 +220,10 @@ object mixin {
       */
     var addBeforeListener: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -233,7 +231,7 @@ object mixin {
     /** [Method] Adds the specified events to the list of events which this Observable may fire
       * @param eventNames Object/String... Either an object with event names as properties with a value of true or the first event name string if multiple event names are being passed as separate parameters.
       */
-    var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Appends an event handler to this object
       * @param eventName String/String[]/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -244,10 +242,10 @@ object mixin {
       */
     var addListener: js.UndefOr[
         js.Function5[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* order */ js.UndefOr[java.lang.String], 
           Unit
         ]
@@ -262,17 +260,17 @@ object mixin {
       */
     var addManagedListener: js.UndefOr[
         js.Function5[
-          /* object */ js.UndefOr[js.Any], 
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* object */ js.UndefOr[Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var bubbleEvents: js.UndefOr[js.Any] = js.undefined
+    var bubbleEvents: js.UndefOr[Any] = js.undefined
     
     /** [Method] Removes all listeners for this object  */
     var clearListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -280,7 +278,7 @@ object mixin {
     /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
       * @param events String/String[] The event name to bubble, or an Array of event names.
       */
-    var enableBubble: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var enableBubble: js.UndefOr[js.Function1[/* events */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Fires the specified event with the passed parameters and execute a function action at the end if there are no liste
       * @param eventName String The name of the event to fire.
@@ -293,9 +291,9 @@ object mixin {
         js.Function4[
           /* eventName */ js.UndefOr[java.lang.String], 
           /* args */ js.UndefOr[Array], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          js.Any
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          Any
         ]
       ] = js.undefined
     
@@ -304,17 +302,17 @@ object mixin {
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean Returns false if any of the handlers return false.
       */
-    var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, Boolean]] = js.undefined
+    var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ Any, Boolean]] = js.undefined
     
     /** [Method] Returns the value of bubbleEvents
       * @returns String/String[]
       */
-    var getBubbleEvents: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getBubbleEvents: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of listeners
       * @returns Object
       */
-    var getListeners: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getListeners: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Checks to see if this object has any listeners for a specified event
       * @param eventName String The name of the event to check for
@@ -323,7 +321,7 @@ object mixin {
     var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Config Option] (Object) */
-    var listeners: js.UndefOr[js.Any] = js.undefined
+    var listeners: js.UndefOr[Any] = js.undefined
     
     /** [Method] Alias for addManagedListener
       * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -334,11 +332,11 @@ object mixin {
       */
     var mon: js.UndefOr[
         js.Function5[
-          /* object */ js.UndefOr[js.Any], 
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* object */ js.UndefOr[Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -351,10 +349,10 @@ object mixin {
       */
     var mun: js.UndefOr[
         js.Function4[
-          /* object */ js.UndefOr[js.Any], 
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* object */ js.UndefOr[Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -368,10 +366,10 @@ object mixin {
       */
     var on: js.UndefOr[
         js.Function5[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* order */ js.UndefOr[java.lang.String], 
           Unit
         ]
@@ -385,10 +383,10 @@ object mixin {
       */
     var onAfter: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -401,10 +399,10 @@ object mixin {
       */
     var onBefore: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -415,7 +413,7 @@ object mixin {
       * @returns Ext.mixin.Observable this
       */
     var relayEvents: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], this.type]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], this.type]
       ] = js.undefined
     
     /** [Method] Removes a before event handler
@@ -426,10 +424,10 @@ object mixin {
       */
     var removeAfterListener: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -442,10 +440,10 @@ object mixin {
       */
     var removeBeforeListener: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -459,10 +457,10 @@ object mixin {
       */
     var removeListener: js.UndefOr[
         js.Function5[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* order */ js.UndefOr[java.lang.String], 
           Unit
         ]
@@ -476,10 +474,10 @@ object mixin {
       */
     var removeManagedListener: js.UndefOr[
         js.Function4[
-          /* object */ js.UndefOr[js.Any], 
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* object */ js.UndefOr[Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -492,12 +490,12 @@ object mixin {
     /** [Method] Sets the value of bubbleEvents
       * @param bubbleEvents String/String[] The new value.
       */
-    var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of listeners
       * @param listeners Object The new value.
       */
-    var setListeners: js.UndefOr[js.Function1[/* listeners */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setListeners: js.UndefOr[js.Function1[/* listeners */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Suspends the firing of all events  */
     var suspendEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -511,10 +509,10 @@ object mixin {
       */
     var un: js.UndefOr[
         js.Function5[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* order */ js.UndefOr[java.lang.String], 
           Unit
         ]
@@ -528,10 +526,10 @@ object mixin {
       */
     var unAfter: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -544,10 +542,10 @@ object mixin {
       */
     var unBefore: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -562,34 +560,34 @@ object mixin {
     extension [Self <: IObservable](x: Self) {
       
       inline def setAddAfterListener(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "addAfterListener", js.Any.fromFunction4(value))
       
       inline def setAddAfterListenerUndefined: Self = StObject.set(x, "addAfterListener", js.undefined)
       
       inline def setAddBeforeListener(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "addBeforeListener", js.Any.fromFunction4(value))
       
       inline def setAddBeforeListenerUndefined: Self = StObject.set(x, "addBeforeListener", js.undefined)
       
-      inline def setAddEvents(value: /* eventNames */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
+      inline def setAddEvents(value: /* eventNames */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
       
       inline def setAddEventsUndefined: Self = StObject.set(x, "addEvents", js.undefined)
       
       inline def setAddListener(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any], /* order */ js.UndefOr[java.lang.String]) => Unit
       ): Self = StObject.set(x, "addListener", js.Any.fromFunction5(value))
       
       inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
       
       inline def setAddManagedListener(
-        value: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* object */ js.UndefOr[Any], /* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "addManagedListener", js.Any.fromFunction5(value))
       
       inline def setAddManagedListenerUndefined: Self = StObject.set(x, "addManagedListener", js.undefined)
       
-      inline def setBubbleEvents(value: js.Any): Self = StObject.set(x, "bubbleEvents", value.asInstanceOf[js.Any])
+      inline def setBubbleEvents(value: Any): Self = StObject.set(x, "bubbleEvents", value.asInstanceOf[js.Any])
       
       inline def setBubbleEventsUndefined: Self = StObject.set(x, "bubbleEvents", js.undefined)
       
@@ -597,25 +595,25 @@ object mixin {
       
       inline def setClearListenersUndefined: Self = StObject.set(x, "clearListeners", js.undefined)
       
-      inline def setEnableBubble(value: /* events */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
+      inline def setEnableBubble(value: /* events */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
       
       inline def setEnableBubbleUndefined: Self = StObject.set(x, "enableBubble", js.undefined)
       
       inline def setFireAction(
-        value: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
+        value: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "fireAction", js.Any.fromFunction4(value))
       
       inline def setFireActionUndefined: Self = StObject.set(x, "fireAction", js.undefined)
       
-      inline def setFireEvent(value: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
+      inline def setFireEvent(value: (/* eventName */ java.lang.String, /* repeated */ Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
       
       inline def setFireEventUndefined: Self = StObject.set(x, "fireEvent", js.undefined)
       
-      inline def setGetBubbleEvents(value: () => js.Any): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
+      inline def setGetBubbleEvents(value: () => Any): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
       
       inline def setGetBubbleEventsUndefined: Self = StObject.set(x, "getBubbleEvents", js.undefined)
       
-      inline def setGetListeners(value: () => js.Any): Self = StObject.set(x, "getListeners", js.Any.fromFunction0(value))
+      inline def setGetListeners(value: () => Any): Self = StObject.set(x, "getListeners", js.Any.fromFunction0(value))
       
       inline def setGetListenersUndefined: Self = StObject.set(x, "getListeners", js.undefined)
       
@@ -623,64 +621,64 @@ object mixin {
       
       inline def setHasListenerUndefined: Self = StObject.set(x, "hasListener", js.undefined)
       
-      inline def setListeners(value: js.Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
       inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
       inline def setMon(
-        value: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* object */ js.UndefOr[Any], /* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "mon", js.Any.fromFunction5(value))
       
       inline def setMonUndefined: Self = StObject.set(x, "mon", js.undefined)
       
       inline def setMun(
-        value: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* object */ js.UndefOr[Any], /* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "mun", js.Any.fromFunction4(value))
       
       inline def setMunUndefined: Self = StObject.set(x, "mun", js.undefined)
       
       inline def setOn(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any], /* order */ js.UndefOr[java.lang.String]) => Unit
       ): Self = StObject.set(x, "on", js.Any.fromFunction5(value))
       
       inline def setOnAfter(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onAfter", js.Any.fromFunction4(value))
       
       inline def setOnAfterUndefined: Self = StObject.set(x, "onAfter", js.undefined)
       
       inline def setOnBefore(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onBefore", js.Any.fromFunction4(value))
       
       inline def setOnBeforeUndefined: Self = StObject.set(x, "onBefore", js.undefined)
       
       inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
       inline def setRemoveAfterListener(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "removeAfterListener", js.Any.fromFunction4(value))
       
       inline def setRemoveAfterListenerUndefined: Self = StObject.set(x, "removeAfterListener", js.undefined)
       
       inline def setRemoveBeforeListener(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "removeBeforeListener", js.Any.fromFunction4(value))
       
       inline def setRemoveBeforeListenerUndefined: Self = StObject.set(x, "removeBeforeListener", js.undefined)
       
       inline def setRemoveListener(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any], /* order */ js.UndefOr[java.lang.String]) => Unit
       ): Self = StObject.set(x, "removeListener", js.Any.fromFunction5(value))
       
       inline def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
       
       inline def setRemoveManagedListener(
-        value: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* object */ js.UndefOr[Any], /* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "removeManagedListener", js.Any.fromFunction4(value))
       
       inline def setRemoveManagedListenerUndefined: Self = StObject.set(x, "removeManagedListener", js.undefined)
@@ -689,11 +687,11 @@ object mixin {
       
       inline def setResumeEventsUndefined: Self = StObject.set(x, "resumeEvents", js.undefined)
       
-      inline def setSetBubbleEvents(value: /* bubbleEvents */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBubbleEvents", js.Any.fromFunction1(value))
+      inline def setSetBubbleEvents(value: /* bubbleEvents */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBubbleEvents", js.Any.fromFunction1(value))
       
       inline def setSetBubbleEventsUndefined: Self = StObject.set(x, "setBubbleEvents", js.undefined)
       
-      inline def setSetListeners(value: /* listeners */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setListeners", js.Any.fromFunction1(value))
+      inline def setSetListeners(value: /* listeners */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setListeners", js.Any.fromFunction1(value))
       
       inline def setSetListenersUndefined: Self = StObject.set(x, "setListeners", js.undefined)
       
@@ -702,17 +700,17 @@ object mixin {
       inline def setSuspendEventsUndefined: Self = StObject.set(x, "suspendEvents", js.undefined)
       
       inline def setUn(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any], /* order */ js.UndefOr[java.lang.String]) => Unit
       ): Self = StObject.set(x, "un", js.Any.fromFunction5(value))
       
       inline def setUnAfter(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "unAfter", js.Any.fromFunction4(value))
       
       inline def setUnAfterUndefined: Self = StObject.set(x, "unAfter", js.undefined)
       
       inline def setUnBefore(
-        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "unBefore", js.Any.fromFunction4(value))
       
       inline def setUnBeforeUndefined: Self = StObject.set(x, "unBefore", js.undefined)
@@ -901,13 +899,13 @@ object mixin {
       * @param suppressEvent Boolean If true the deselect event will not be fired.
       */
     var deselect: js.UndefOr[
-        js.Function2[/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* records */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Method] Deselects all records
       * @param supress Object
       */
-    var deselectAll: js.UndefOr[js.Function1[/* supress */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var deselectAll: js.UndefOr[js.Function1[/* supress */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var deselectOnContainerClick: js.UndefOr[Boolean] = js.undefined
@@ -920,7 +918,7 @@ object mixin {
       * @param suppressEvent Boolean Set to false to not fire a deselect event.
       */
     var doDeselect: js.UndefOr[
-        js.Function2[/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* records */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Method] Selects a record instance by record instance or index
@@ -930,7 +928,7 @@ object mixin {
       */
     var doSelect: js.UndefOr[
         js.Function3[
-          /* records */ js.UndefOr[js.Any], 
+          /* records */ js.UndefOr[Any], 
           /* keepExisting */ js.UndefOr[Boolean], 
           /* suppressEvent */ js.UndefOr[Boolean], 
           Unit
@@ -996,7 +994,7 @@ object mixin {
       * @param record Ext.data.Model/Number The record or index of the record to check.
       * @returns Boolean
       */
-    var isSelected: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var isSelected: js.UndefOr[js.Function1[/* record */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var locked: js.UndefOr[Boolean] = js.undefined
@@ -1011,7 +1009,7 @@ object mixin {
       */
     var select: js.UndefOr[
         js.Function3[
-          /* records */ js.UndefOr[js.Any], 
+          /* records */ js.UndefOr[Any], 
           /* keepExisting */ js.UndefOr[Boolean], 
           /* suppressEvent */ js.UndefOr[Boolean], 
           Unit
@@ -1085,9 +1083,9 @@ object mixin {
       
       inline def setClearSelectionsUndefined: Self = StObject.set(x, "clearSelections", js.undefined)
       
-      inline def setDeselect(value: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
+      inline def setDeselect(value: (/* records */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
       
-      inline def setDeselectAll(value: /* supress */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
+      inline def setDeselectAll(value: /* supress */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
       
       inline def setDeselectAllUndefined: Self = StObject.set(x, "deselectAll", js.undefined)
       
@@ -1101,12 +1099,12 @@ object mixin {
       
       inline def setDisableSelectionUndefined: Self = StObject.set(x, "disableSelection", js.undefined)
       
-      inline def setDoDeselect(value: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doDeselect", js.Any.fromFunction2(value))
+      inline def setDoDeselect(value: (/* records */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doDeselect", js.Any.fromFunction2(value))
       
       inline def setDoDeselectUndefined: Self = StObject.set(x, "doDeselect", js.undefined)
       
       inline def setDoSelect(
-        value: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
+        value: (/* records */ js.UndefOr[Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
       ): Self = StObject.set(x, "doSelect", js.Any.fromFunction3(value))
       
       inline def setDoSelectUndefined: Self = StObject.set(x, "doSelect", js.undefined)
@@ -1155,7 +1153,7 @@ object mixin {
       
       inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
       
-      inline def setIsSelected(value: /* record */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
+      inline def setIsSelected(value: /* record */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
       
       inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
@@ -1168,7 +1166,7 @@ object mixin {
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       inline def setSelect(
-        value: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
+        value: (/* records */ js.UndefOr[Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
       ): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
       
       inline def setSelectAll(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction1(value))
@@ -1219,7 +1217,7 @@ object mixin {
       */
     var addSorter: js.UndefOr[
         js.Function2[
-          /* sorter */ js.UndefOr[js.Any], 
+          /* sorter */ js.UndefOr[Any], 
           /* defaultDirection */ js.UndefOr[java.lang.String], 
           Unit
         ]
@@ -1238,7 +1236,7 @@ object mixin {
       ] = js.undefined
     
     /** [Property] (Object) */
-    var currentSortFn: js.UndefOr[js.Any] = js.undefined
+    var currentSortFn: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
@@ -1251,9 +1249,7 @@ object mixin {
       * @param item Mixed The item that you want to insert into the items array.
       * @returns Number The index for the given item in the given array based on the current sorters.
       */
-    var findInsertionIndex: js.UndefOr[
-        js.Function2[/* items */ js.UndefOr[Array], /* item */ js.UndefOr[js.Any], Double]
-      ] = js.undefined
+    var findInsertionIndex: js.UndefOr[js.Function2[/* items */ js.UndefOr[Array], /* item */ js.UndefOr[Any], Double]] = js.undefined
     
     /** [Method] Returns the value of defaultSortDirection
       * @returns String
@@ -1263,7 +1259,7 @@ object mixin {
     /** [Method] Returns an up to date sort function
       * @returns Function The sort function.
       */
-    var getSortFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getSortFn: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of sortRoot
       * @returns String
@@ -1283,7 +1279,7 @@ object mixin {
     var insertSorter: js.UndefOr[
         js.Function3[
           /* index */ js.UndefOr[Double], 
-          /* sorter */ js.UndefOr[js.Any], 
+          /* sorter */ js.UndefOr[Any], 
           /* defaultDirection */ js.UndefOr[java.lang.String], 
           Unit
         ]
@@ -1306,7 +1302,7 @@ object mixin {
     /** [Method] This method removes a sorter
       * @param sorter Ext.util.Sorter/String/Function/Object Can be an instance of Ext.util.Sorter, a string indicating a property name, an object representing an Ext.util.Sorter configuration, or a sort function.
       */
-    var removeSorter: js.UndefOr[js.Function1[/* sorter */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var removeSorter: js.UndefOr[js.Function1[/* sorter */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] This method removes all the sorters in a passed array
       * @param sorters Array Each value in the array can be a string (property name), function (sorterFn) or Sorter instance.
@@ -1352,9 +1348,7 @@ object mixin {
     
     extension [Self <: ISortable](x: Self) {
       
-      inline def setAddSorter(
-        value: (/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit
-      ): Self = StObject.set(x, "addSorter", js.Any.fromFunction2(value))
+      inline def setAddSorter(value: (/* sorter */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "addSorter", js.Any.fromFunction2(value))
       
       inline def setAddSorterUndefined: Self = StObject.set(x, "addSorter", js.undefined)
       
@@ -1364,7 +1358,7 @@ object mixin {
       
       inline def setAddSortersUndefined: Self = StObject.set(x, "addSorters", js.undefined)
       
-      inline def setCurrentSortFn(value: js.Any): Self = StObject.set(x, "currentSortFn", value.asInstanceOf[js.Any])
+      inline def setCurrentSortFn(value: Any): Self = StObject.set(x, "currentSortFn", value.asInstanceOf[js.Any])
       
       inline def setCurrentSortFnUndefined: Self = StObject.set(x, "currentSortFn", js.undefined)
       
@@ -1376,7 +1370,7 @@ object mixin {
       
       inline def setDirtySortFnUndefined: Self = StObject.set(x, "dirtySortFn", js.undefined)
       
-      inline def setFindInsertionIndex(value: (/* items */ js.UndefOr[Array], /* item */ js.UndefOr[js.Any]) => Double): Self = StObject.set(x, "findInsertionIndex", js.Any.fromFunction2(value))
+      inline def setFindInsertionIndex(value: (/* items */ js.UndefOr[Array], /* item */ js.UndefOr[Any]) => Double): Self = StObject.set(x, "findInsertionIndex", js.Any.fromFunction2(value))
       
       inline def setFindInsertionIndexUndefined: Self = StObject.set(x, "findInsertionIndex", js.undefined)
       
@@ -1384,7 +1378,7 @@ object mixin {
       
       inline def setGetDefaultSortDirectionUndefined: Self = StObject.set(x, "getDefaultSortDirection", js.undefined)
       
-      inline def setGetSortFn(value: () => js.Any): Self = StObject.set(x, "getSortFn", js.Any.fromFunction0(value))
+      inline def setGetSortFn(value: () => Any): Self = StObject.set(x, "getSortFn", js.Any.fromFunction0(value))
       
       inline def setGetSortFnUndefined: Self = StObject.set(x, "getSortFn", js.undefined)
       
@@ -1397,7 +1391,7 @@ object mixin {
       inline def setGetSortersUndefined: Self = StObject.set(x, "getSorters", js.undefined)
       
       inline def setInsertSorter(
-        value: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit
+        value: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit
       ): Self = StObject.set(x, "insertSorter", js.Any.fromFunction3(value))
       
       inline def setInsertSorterUndefined: Self = StObject.set(x, "insertSorter", js.undefined)
@@ -1408,7 +1402,7 @@ object mixin {
       
       inline def setInsertSortersUndefined: Self = StObject.set(x, "insertSorters", js.undefined)
       
-      inline def setRemoveSorter(value: /* sorter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeSorter", js.Any.fromFunction1(value))
+      inline def setRemoveSorter(value: /* sorter */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "removeSorter", js.Any.fromFunction1(value))
       
       inline def setRemoveSorterUndefined: Self = StObject.set(x, "removeSorter", js.undefined)
       

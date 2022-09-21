@@ -16,7 +16,7 @@ trait SmsDevice extends StObject {
   /** Returns the phone number associated with the SMS device. The phone number can be used to associate incoming messages with the account and possibly an external storage mechanism such as an account inbox. */
   var accountPhoneNumber: String = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_smsdevicestatuschanged(`type`: smsdevicestatuschanged, listener: SmsDeviceStatusChangedEventHandler): Unit = js.native
   @JSName("addEventListener")
@@ -50,7 +50,7 @@ trait SmsDevice extends StObject {
   @JSName("onsmsmessagereceived")
   var onsmsmessagereceived_Original: SmsMessageReceivedEventHandler = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_smsdevicestatuschanged(`type`: smsdevicestatuschanged, listener: SmsDeviceStatusChangedEventHandler): Unit = js.native
   @JSName("removeEventListener")
@@ -61,5 +61,5 @@ trait SmsDevice extends StObject {
     * @param message A reference to an ISmsMessage object. The message can be in text or binary format.
     * @return The message operation object.
     */
-  def sendMessageAsync(message: ISmsMessage): IPromiseWithOperation[js.Any, SendSmsMessageOperation] = js.native
+  def sendMessageAsync(message: ISmsMessage): IPromiseWithOperation[Any, SendSmsMessageOperation] = js.native
 }

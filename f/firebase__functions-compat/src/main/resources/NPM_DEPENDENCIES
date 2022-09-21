@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/functions-compat" : "0.2.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/functions-compat" : "0.2.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

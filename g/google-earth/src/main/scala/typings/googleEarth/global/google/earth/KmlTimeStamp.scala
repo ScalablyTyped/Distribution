@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlTimeStamp")
 @js.native
-class KmlTimeStamp ()
+open class KmlTimeStamp ()
   extends StObject
      with typings.googleEarth.google.earth.KmlTimeStamp {
   

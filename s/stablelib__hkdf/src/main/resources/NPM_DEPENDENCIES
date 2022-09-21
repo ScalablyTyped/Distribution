@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stablelib/hkdf" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stablelib/hkdf" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

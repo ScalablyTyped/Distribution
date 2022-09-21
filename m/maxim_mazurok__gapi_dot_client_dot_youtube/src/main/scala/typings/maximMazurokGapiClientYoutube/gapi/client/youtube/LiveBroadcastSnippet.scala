@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LiveBroadcastSnippet extends StObject {
   
-  /** The date and time that the broadcast actually ended. This information is only available once the broadcast's state is complete. The value is specified in ISO 8601 format. */
+  /** The date and time that the broadcast actually ended. This information is only available once the broadcast's state is complete. */
   var actualEndTime: js.UndefOr[String] = js.undefined
   
-  /** The date and time that the broadcast actually started. This information is only available once the broadcast's state is live. The value is specified in ISO 8601 format. */
+  /** The date and time that the broadcast actually started. This information is only available once the broadcast's state is live. */
   var actualStartTime: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube uses to uniquely identify the channel that is publishing the broadcast. */
@@ -24,13 +24,13 @@ trait LiveBroadcastSnippet extends StObject {
   /** The id of the live chat for this broadcast. */
   var liveChatId: js.UndefOr[String] = js.undefined
   
-  /** The date and time that the broadcast was added to YouTube's live broadcast schedule. The value is specified in ISO 8601 format. */
+  /** The date and time that the broadcast was added to YouTube's live broadcast schedule. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
-  /** The date and time that the broadcast is scheduled to end. The value is specified in ISO 8601 format. */
+  /** The date and time that the broadcast is scheduled to end. */
   var scheduledEndTime: js.UndefOr[String] = js.undefined
   
-  /** The date and time that the broadcast is scheduled to start. The value is specified in ISO 8601 format. */
+  /** The date and time that the broadcast is scheduled to start. */
   var scheduledStartTime: js.UndefOr[String] = js.undefined
   
   /**

@@ -17,11 +17,11 @@ trait OLEFormat extends StObject {
   
   var FollowColors: PpFollowColors = js.native
   
-  val Object: js.Any = js.native
+  val Object: Any = js.native
   
   val ObjectVerbs: typings.activexPowerpoint.PowerPoint.ObjectVerbs = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.OLEFormat_typekey")
   var PowerPointDotOLEFormat_typekey: OLEFormat = js.native

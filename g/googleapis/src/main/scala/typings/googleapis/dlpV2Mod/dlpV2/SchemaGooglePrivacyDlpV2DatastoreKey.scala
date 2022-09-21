@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Record key for a finding in Cloud Datastore.
-  */
 trait SchemaGooglePrivacyDlpV2DatastoreKey extends StObject {
   
   /**

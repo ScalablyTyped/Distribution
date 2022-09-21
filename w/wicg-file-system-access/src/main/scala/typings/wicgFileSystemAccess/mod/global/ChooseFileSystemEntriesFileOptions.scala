@@ -23,7 +23,7 @@ object ChooseFileSystemEntriesFileOptions {
     
     inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
     
-    inline def setAcceptsVarargs(value: ChooseFileSystemEntriesOptionsAccepts*): Self = StObject.set(x, "accepts", js.Array(value :_*))
+    inline def setAcceptsVarargs(value: ChooseFileSystemEntriesOptionsAccepts*): Self = StObject.set(x, "accepts", js.Array(value*))
     
     inline def setExcludeAcceptAllOption(value: Boolean): Self = StObject.set(x, "excludeAcceptAllOption", value.asInstanceOf[js.Any])
     

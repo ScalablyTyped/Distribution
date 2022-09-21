@@ -25,7 +25,7 @@ object ListImageVersionsResponse {
     
     inline def setImageVersionsUndefined: Self = StObject.set(x, "imageVersions", js.undefined)
     
-    inline def setImageVersionsVarargs(value: ImageVersion*): Self = StObject.set(x, "imageVersions", js.Array(value :_*))
+    inline def setImageVersionsVarargs(value: ImageVersion*): Self = StObject.set(x, "imageVersions", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

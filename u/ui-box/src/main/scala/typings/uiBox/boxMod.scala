@@ -13,5 +13,5 @@ object boxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[E /* <: ElementType[js.Any] */](props: BoxProps[E]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[E /* <: ElementType[Any] */](props: BoxProps[E]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

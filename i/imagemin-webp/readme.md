@@ -1,7 +1,7 @@
 
 # Scala.js typings for imagemin-webp
 
-Typings are for version 5.1
+Typings are for version 7.0
 
 ## Library description:
 WebP imagemin plugin
@@ -10,10 +10,10 @@ WebP imagemin plugin
 | ------------------ | :-------------: |
 | Full name          | imagemin-webp |
 | Keywords           | compress, cwebp, image, imageminplugin, img, jpg, minify, optimize, png, tif, webp |
-| # releases         | 4 |
-| # dependents       | 114 |
-| # downloads        | 21668752 |
-| # stars            | 14 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1454393.3333333333 |
+| # stars            | 401.0 |
 
 ## Links
 - [Homepage](https://github.com/imagemin/imagemin-webp#readme)

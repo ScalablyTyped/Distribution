@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "password-validator" : "5.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "password-validator" : "5.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

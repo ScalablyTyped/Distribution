@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/scanner/
+/// https://docs.nova.app/api-reference/scanner/
 trait Scanner extends StObject {
   
   val atEnd: Boolean

@@ -11,7 +11,7 @@ object lassoContextMod {
   
   @JSImport("lasso/lib/LassoContext", JSImport.Default)
   @js.native
-  class default () extends LassoContext
+  open class default () extends LassoContext
   
   @js.native
   trait LassoContext extends EventEmitter {
@@ -20,23 +20,23 @@ object lassoContextMod {
     
     var basePath: js.UndefOr[String] = js.native
     
-    var cache: js.Any = js.native
+    var cache: Any = js.native
     
-    var config: js.Any = js.native
+    var config: Any = js.native
     
     var contentType: js.UndefOr[String] = js.native
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[Any] = js.native
     
     var dependencyRegistry: DependencyRegistry = js.native
     
-    var flags: js.Array[js.Any] = js.native
+    var flags: js.Array[Any] = js.native
     
     var lasso: typings.lasso.lassoMod.default = js.native
     
-    var options: js.Any = js.native
+    var options: Any = js.native
     
-    def writer(impl: js.Any): Writer = js.native
+    def writer(impl: Any): Writer = js.native
     @JSName("writer")
     var writer_Original: typings.lasso.writersMod.Writer = js.native
   }

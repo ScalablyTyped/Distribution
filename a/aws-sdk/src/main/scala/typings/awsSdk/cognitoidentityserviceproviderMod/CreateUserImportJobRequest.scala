@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateUserImportJobRequest extends StObject {
   
   /**
-    * The role ARN for the Amazon CloudWatch Logging role for the user import job.
+    * The role ARN for the Amazon CloudWatch Logs Logging role for the user import job.
     */
   var CloudWatchLogsRoleArn: ArnType
   

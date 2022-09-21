@@ -1,7 +1,7 @@
 
 # Scala.js typings for tokenizr
 
-Typings are for version 1.5
+Typings are for version 1.6.7
 
 ## Library description:
 String Tokenization Library for JavaScript
@@ -10,10 +10,10 @@ String Tokenization Library for JavaScript
 | ------------------ | :-------------: |
 | Full name          | tokenizr |
 | Keywords           | string, token, scanner, lexer |
-| # releases         | 12 |
-| # dependents       | 14 |
-| # downloads        | 1744385 |
-| # stars            | 1 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 198821.33333333334 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/rse/tokenizr)
@@ -24,7 +24,7 @@ String Tokenization Library for JavaScript
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

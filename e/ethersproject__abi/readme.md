@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__abi
 
-Typings are for version 5.0.0-beta.153
+Typings are for version 5.7.0
 
 ## Library description:
 Utilities and Classes for parsing, formatting and managing Ethereum ABIs.
@@ -10,10 +10,10 @@ Utilities and Classes for parsing, formatting and managing Ethereum ABIs.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/abi |
 | Keywords           | Ethereum, ethers |
-| # releases         | 53 |
-| # dependents       | 49 |
-| # downloads        | 3268884 |
-| # stars            | 0 |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 4657858.333333333 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

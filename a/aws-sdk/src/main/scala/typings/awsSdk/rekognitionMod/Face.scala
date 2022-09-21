@@ -30,6 +30,11 @@ trait Face extends StObject {
     * Unique identifier that Amazon Rekognition assigns to the input image.
     */
   var ImageId: js.UndefOr[typings.awsSdk.rekognitionMod.ImageId] = js.undefined
+  
+  /**
+    *  The version of the face detect and storage model that was used when indexing the face vector. 
+    */
+  var IndexFacesModelVersion: js.UndefOr[typings.awsSdk.rekognitionMod.IndexFacesModelVersion] = js.undefined
 }
 object Face {
   
@@ -59,5 +64,9 @@ object Face {
     inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    
+    inline def setIndexFacesModelVersion(value: IndexFacesModelVersion): Self = StObject.set(x, "IndexFacesModelVersion", value.asInstanceOf[js.Any])
+    
+    inline def setIndexFacesModelVersionUndefined: Self = StObject.set(x, "IndexFacesModelVersion", js.undefined)
   }
 }

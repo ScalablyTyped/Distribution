@@ -22,7 +22,7 @@ object views {
       Document: XDocumentView,
       acquire: () => Unit,
       getDocument: () => XDocumentView,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XAbstractView = {
       val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDocument = js.Any.fromFunction0(getDocument), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -51,7 +51,7 @@ object views {
       DefaultView: XAbstractView,
       acquire: () => Unit,
       getDefaultView: () => XAbstractView,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XDocumentView = {
       val __obj = js.Dynamic.literal(DefaultView = DefaultView.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDefaultView = js.Any.fromFunction0(getDefaultView), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

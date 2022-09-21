@@ -1,7 +1,6 @@
 package typings.browserSync.mod
 
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,9 @@ trait BrowserSyncStatic
     * depending on your use-case.
     */
   def apply(): BrowserSyncInstance = js.native
-  def apply(config: Unit, callback: js.Function2[/* err */ Error, /* bs */ BrowserSyncInstance, js.Any]): BrowserSyncInstance = js.native
+  def apply(config: Unit, callback: js.Function2[/* err */ js.Error, /* bs */ BrowserSyncInstance, Any]): BrowserSyncInstance = js.native
   def apply(config: Options): BrowserSyncInstance = js.native
-  def apply(config: Options, callback: js.Function2[/* err */ Error, /* bs */ BrowserSyncInstance, js.Any]): BrowserSyncInstance = js.native
+  def apply(config: Options, callback: js.Function2[/* err */ js.Error, /* bs */ BrowserSyncInstance, Any]): BrowserSyncInstance = js.native
   
   /**
     * Create a Browsersync instance

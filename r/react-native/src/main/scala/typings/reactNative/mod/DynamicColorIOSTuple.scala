@@ -8,6 +8,10 @@ trait DynamicColorIOSTuple extends StObject {
   
   var dark: ColorValue
   
+  var highContrastDark: js.UndefOr[ColorValue] = js.undefined
+  
+  var highContrastLight: js.UndefOr[ColorValue] = js.undefined
+  
   var light: ColorValue
 }
 object DynamicColorIOSTuple {
@@ -20,6 +24,14 @@ object DynamicColorIOSTuple {
   extension [Self <: DynamicColorIOSTuple](x: Self) {
     
     inline def setDark(value: ColorValue): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    
+    inline def setHighContrastDark(value: ColorValue): Self = StObject.set(x, "highContrastDark", value.asInstanceOf[js.Any])
+    
+    inline def setHighContrastDarkUndefined: Self = StObject.set(x, "highContrastDark", js.undefined)
+    
+    inline def setHighContrastLight(value: ColorValue): Self = StObject.set(x, "highContrastLight", value.asInstanceOf[js.Any])
+    
+    inline def setHighContrastLightUndefined: Self = StObject.set(x, "highContrastLight", js.undefined)
     
     inline def setLight(value: ColorValue): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
   }

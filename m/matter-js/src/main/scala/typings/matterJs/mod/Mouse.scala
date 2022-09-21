@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Mouse")
 @js.native
-class Mouse () extends StObject {
+open class Mouse () extends StObject {
   
   var absolute: IMousePoint = js.native
   

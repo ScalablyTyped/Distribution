@@ -25,6 +25,6 @@ trait FirebaseTokenGenerator extends StObject {
     *                f) "iat" -- (Number) (internal-only, for testing) Set the issued at time for the generated token
     * @return {String} The authentication token
     */
-  def createToken(data: js.Any): String = js.native
-  def createToken(data: js.Any, options: TokenOptions): String = js.native
+  def createToken(data: Any): String = js.native
+  def createToken(data: Any, options: TokenOptions): String = js.native
 }

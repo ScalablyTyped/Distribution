@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFileManagerHighlightItemTemplateEventArgs")
 @js.native
-class ASPxClientFileManagerHighlightItemTemplateEventArgs protected ()
+open class ASPxClientFileManagerHighlightItemTemplateEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFileManagerHighlightItemTemplateEventArgs {
   /**
@@ -19,7 +19,7 @@ class ASPxClientFileManagerHighlightItemTemplateEventArgs protected ()
     * @param templateElement An object that is an element containing the template.
     * @param highlightCssClassName A string that is the name of the cascading style sheet (CSS) class associated with an item in highlighted state.
     */
-  def this(filterValue: String, itemName: String, templateElement: js.Any, highlightCssClassName: String) = this()
+  def this(filterValue: String, itemName: String, templateElement: Any, highlightCssClassName: String) = this()
   
   /**
     * Gets a string that is a filter value specified by the filter box.

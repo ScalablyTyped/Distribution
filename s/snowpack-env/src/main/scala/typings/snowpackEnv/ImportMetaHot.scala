@@ -16,7 +16,7 @@ trait ImportMetaHot extends StObject {
   def accept(dependencies: js.Array[String], callback: js.Function1[/* update */ Deps, Unit]): Unit = js.native
   
   /** See https://github.com/pikapkg/esm-hmr#importmetahotdata */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /** Mark this module as HMR incompatible, always reload the page. */
   def decline(): Unit = js.native

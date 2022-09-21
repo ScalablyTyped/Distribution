@@ -58,7 +58,7 @@ object XLoadListener {
     acquire: () => Unit,
     disposing: EventObject => Unit,
     loaded: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reloaded: EventObject => Unit,
     reloading: EventObject => Unit,

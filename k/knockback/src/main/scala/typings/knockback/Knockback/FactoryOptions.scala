@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FactoryOptions extends StObject {
   
-  var factories: js.Any
+  var factories: Any
 }
 object FactoryOptions {
   
-  inline def apply(factories: js.Any): FactoryOptions = {
+  inline def apply(factories: Any): FactoryOptions = {
     val __obj = js.Dynamic.literal(factories = factories.asInstanceOf[js.Any])
     __obj.asInstanceOf[FactoryOptions]
   }
   
   extension [Self <: FactoryOptions](x: Self) {
     
-    inline def setFactories(value: js.Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
+    inline def setFactories(value: Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
   }
 }

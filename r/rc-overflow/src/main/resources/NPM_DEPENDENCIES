@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rc-overflow" : "1.2.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rc-overflow" : "1.2.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,42 +1,34 @@
 package typings.firebaseFirestore.indexeddbSchemaMod
 
 import typings.firebaseFirestore.encodedResourcePathMod.EncodedResourcePath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbCollectionParent")
-@js.native
-class DbCollectionParent protected () extends js.Object {
-  def this(
-    /**
-    * The collectionId (e.g. 'messages')
-    */
-  collectionId: String,
-    /**
-    * The path to the parent (either a document location or an empty path for
-    * a root-level collection).
-    */
-  parent: EncodedResourcePath
-  ) = this()
+trait DbCollectionParent extends StObject {
+  
   /**
     * The collectionId (e.g. 'messages')
     */
-  var collectionId: String = js.native
+  var collectionId: String
+  
   /**
     * The path to the parent (either a document location or an empty path for
     * a root-level collection).
     */
-  var parent: EncodedResourcePath = js.native
+  var parent: EncodedResourcePath
 }
-
-/* static members */
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbCollectionParent")
-@js.native
-object DbCollectionParent extends js.Object {
-  /** Keys are automatically assigned via the collectionId, parent properties. */
-  var keyPath: js.Array[String] = js.native
-  /** Name of the IndexedDb object store. */
-  var store: String = js.native
+object DbCollectionParent {
+  
+  inline def apply(collectionId: String, parent: EncodedResourcePath): DbCollectionParent = {
+    val __obj = js.Dynamic.literal(collectionId = collectionId.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DbCollectionParent]
+  }
+  
+  extension [Self <: DbCollectionParent](x: Self) {
+    
+    inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: EncodedResourcePath): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+  }
 }
-

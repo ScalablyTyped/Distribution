@@ -40,7 +40,7 @@ trait Text
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
   
-  def getAttributes(offset: Integer): js.Any = js.native
+  def getAttributes(offset: Integer): Any = js.native
   
   def getBackgroundColor(): String = js.native
   def getBackgroundColor(offset: Integer): String = js.native
@@ -80,7 +80,7 @@ trait Text
   
   def replaceText(searchPattern: String, replacement: String): Element = js.native
   
-  def setAttributes(startOffset: Integer, endOffsetInclusive: Integer, attributes: js.Any): Text = js.native
+  def setAttributes(startOffset: Integer, endOffsetInclusive: Integer, attributes: Any): Text = js.native
   
   def setBackgroundColor(color: String): Text = js.native
   def setBackgroundColor(startOffset: Integer, endOffsetInclusive: Integer, color: String): Text = js.native

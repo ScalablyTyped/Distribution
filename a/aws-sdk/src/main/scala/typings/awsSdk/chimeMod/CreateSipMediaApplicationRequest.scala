@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateSipMediaApplicationRequest extends StObject {
   
   /**
-    * AWS Region assigned to the SIP media application.
+    * The AWS Region assigned to the SIP media application.
     */
   var AwsRegion: String
   
@@ -19,12 +19,12 @@ trait CreateSipMediaApplicationRequest extends StObject {
   /**
     * The SIP media application name.
     */
-  var Name: js.UndefOr[SipMediaApplicationName] = js.undefined
+  var Name: SipMediaApplicationName
 }
 object CreateSipMediaApplicationRequest {
   
-  inline def apply(AwsRegion: String, Endpoints: SipMediaApplicationEndpointList): CreateSipMediaApplicationRequest = {
-    val __obj = js.Dynamic.literal(AwsRegion = AwsRegion.asInstanceOf[js.Any], Endpoints = Endpoints.asInstanceOf[js.Any])
+  inline def apply(AwsRegion: String, Endpoints: SipMediaApplicationEndpointList, Name: SipMediaApplicationName): CreateSipMediaApplicationRequest = {
+    val __obj = js.Dynamic.literal(AwsRegion = AwsRegion.asInstanceOf[js.Any], Endpoints = Endpoints.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSipMediaApplicationRequest]
   }
   
@@ -34,10 +34,8 @@ object CreateSipMediaApplicationRequest {
     
     inline def setEndpoints(value: SipMediaApplicationEndpointList): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
-    inline def setEndpointsVarargs(value: SipMediaApplicationEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: SipMediaApplicationEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value*))
     
     inline def setName(value: SipMediaApplicationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

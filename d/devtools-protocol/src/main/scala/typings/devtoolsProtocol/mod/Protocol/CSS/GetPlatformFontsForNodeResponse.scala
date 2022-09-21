@@ -22,6 +22,6 @@ object GetPlatformFontsForNodeResponse {
     
     inline def setFonts(value: js.Array[PlatformFontUsage]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    inline def setFontsVarargs(value: PlatformFontUsage*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: PlatformFontUsage*): Self = StObject.set(x, "fonts", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`greater-than`
 import typings.arcgisJsApi.arcgisJsApiStrings.`less-than`
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-between`
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-equal`
-import typings.arcgisJsApi.arcgisJsApiStrings.between
+import typings.arcgisJsApi.arcgisJsApiStrings.between_
 import typings.arcgisJsApi.arcgisJsApiStrings.equal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,10 +33,12 @@ trait HistogramRangeSliderViewModelProperties
   /**
     * Determines the SQL where clause generated in [generateWhereClause()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#generateWhereClause) for filtering purposes.
     *
+    * @default equal
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#rangeType)
     */
   var rangeType: js.UndefOr[
-    equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
+    equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between_ | `not-between`
   ] = js.undefined
   
   /**
@@ -63,10 +65,10 @@ object HistogramRangeSliderViewModelProperties {
     
     inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
-    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value*))
     
     inline def setRangeType(
-      value: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
+      value: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between_ | `not-between`
     ): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
     
     inline def setRangeTypeUndefined: Self = StObject.set(x, "rangeType", js.undefined)

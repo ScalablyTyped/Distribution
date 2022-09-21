@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertSectionBreakEvenPageCommand")
 @js.native
-class InsertSectionBreakEvenPageCommand ()
+open class InsertSectionBreakEvenPageCommand ()
   extends StObject
      with typings.devexpressWeb.InsertSectionBreakEvenPageCommand {
   

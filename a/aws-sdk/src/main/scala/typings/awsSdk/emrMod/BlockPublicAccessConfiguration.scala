@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BlockPublicAccessConfiguration extends StObject {
   
   /**
-    * Indicates whether EMR block public access is enabled (true) or disabled (false). By default, the value is false for accounts that have created EMR clusters before July 2019. For accounts created after this, the default is true.
+    * Indicates whether Amazon EMR block public access is enabled (true) or disabled (false). By default, the value is false for accounts that have created EMR clusters before July 2019. For accounts created after this, the default is true.
     */
   var BlockPublicSecurityGroupRules: Boolean
   
@@ -31,6 +31,6 @@ object BlockPublicAccessConfiguration {
     
     inline def setPermittedPublicSecurityGroupRuleRangesUndefined: Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.undefined)
     
-    inline def setPermittedPublicSecurityGroupRuleRangesVarargs(value: PortRange*): Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.Array(value :_*))
+    inline def setPermittedPublicSecurityGroupRuleRangesVarargs(value: PortRange*): Self = StObject.set(x, "PermittedPublicSecurityGroupRuleRanges", js.Array(value*))
   }
 }

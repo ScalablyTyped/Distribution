@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   These options only have any effect when passed at the beginning of
   *   a client request.
   */
-class Metadata () extends StObject {
+open class Metadata () extends StObject {
   def this(options: MetadataOptions) = this()
   
   /**

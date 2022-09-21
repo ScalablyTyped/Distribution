@@ -10,10 +10,10 @@ object deleteForeverMod {
   
   @JSImport("material-ui/svg-icons/action/delete-forever", JSImport.Default)
   @js.native
-  class default () extends ActionDeleteForever
+  open class default () extends ActionDeleteForever
   
   @JSImport("material-ui/svg-icons/action/delete-forever", "ActionDeleteForever")
   @js.native
-  class ActionDeleteForever ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionDeleteForever ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

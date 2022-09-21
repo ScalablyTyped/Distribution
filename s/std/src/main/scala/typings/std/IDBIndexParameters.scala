@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDBIndexParameters extends StObject {
   
+  /* standard dom */
   var multiEntry: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var unique: js.UndefOr[scala.Boolean] = js.undefined
 }
 object IDBIndexParameters {

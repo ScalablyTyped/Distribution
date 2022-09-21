@@ -10,5 +10,5 @@ trait NonNullChain
      with NonNullExpression
      with OptionalChain {
   
-  var _optionalChainBrand: js.Any = js.native
+  var _optionalChainBrand: Any = js.native
 }

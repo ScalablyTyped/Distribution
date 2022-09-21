@@ -12,7 +12,7 @@ trait AdminGetUserRequest extends StObject {
   var UserPoolId: UserPoolIdType
   
   /**
-    * The user name of the user you wish to retrieve.
+    * The user name of the user you want to retrieve.
     */
   var Username: UsernameType
 }

@@ -34,7 +34,7 @@ object ConstructorAbi {
     
     inline def setInputs(value: js.Array[DataItem]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setInputsVarargs(value: DataItem*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: DataItem*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
     

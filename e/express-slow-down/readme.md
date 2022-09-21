@@ -10,10 +10,10 @@ Basic IP rate-limiting middleware for Express that slows down responses rather t
 | ------------------ | :-------------: |
 | Full name          | express-slow-down |
 | Keywords           | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
-| # releases         | 5 |
-| # dependents       | 14 |
-| # downloads        | 643124 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 68932.66666666667 |
+| # stars            | 186.0 |
 
 ## Links
 - [Homepage](https://github.com/nfriedly/express-slow-down)

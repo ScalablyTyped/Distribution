@@ -12,15 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofAnimation
   extends StObject
      with Instantiable1[/* func */ AnimationFn, Animation]
-     with Instantiable2[/* func */ AnimationFn, /* layers */ js.Any, Animation] {
+     with Instantiable2[/* func */ AnimationFn, /* layers */ Any, Animation] {
   
-  def _addAnimation(anim: js.Any): Unit = js.native
+  def _addAnimation(anim: Any): Unit = js.native
   
   def _animationLoop(): Unit = js.native
   
   def _handleAnimation(): Unit = js.native
   
-  def _removeAnimation(anim: js.Any): Unit = js.native
+  def _removeAnimation(anim: Any): Unit = js.native
   
   def _runFrames(): Unit = js.native
   
@@ -28,5 +28,5 @@ trait TypeofAnimation
   
   var animRunning: Boolean = js.native
   
-  var animations: js.Array[js.Any] = js.native
+  var animations: js.Array[Any] = js.native
 }

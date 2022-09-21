@@ -10,7 +10,7 @@ trait IgLayoutManagerItem
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Column index of the item in the grid

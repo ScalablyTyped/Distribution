@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * API executable entry point configuration.
-  */
 trait SchemaGoogleAppsScriptTypeExecutionApiConfig extends StObject {
   
   /**
     * Who has permission to run the API executable.
     */
-  var access: js.UndefOr[String] = js.undefined
+  var access: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleAppsScriptTypeExecutionApiConfig {
   
@@ -24,6 +21,8 @@ object SchemaGoogleAppsScriptTypeExecutionApiConfig {
   extension [Self <: SchemaGoogleAppsScriptTypeExecutionApiConfig](x: Self) {
     
     inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    
+    inline def setAccessNull: Self = StObject.set(x, "access", null)
     
     inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
   }

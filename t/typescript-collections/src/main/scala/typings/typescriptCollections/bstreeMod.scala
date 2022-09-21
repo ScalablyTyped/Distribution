@@ -8,7 +8,7 @@ object bstreeMod {
   
   @JSImport("typescript-collections/dist/lib/BSTree", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends typings.typescriptCollections.bstreekvMod.default[T, T]
   
   type BSTree[T] = typings.typescriptCollections.bstreekvMod.default[T, T]

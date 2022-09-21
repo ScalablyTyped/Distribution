@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
   *
+  * @remarks
   * [Api set: ExcelApi 1.11]
   */
 @js.native
@@ -24,9 +24,9 @@ trait CultureInfo
   var context_CultureInfo: RequestContext = js.native
   
   /**
-    *
     * Defines the culturally appropriate format of displaying date and time. This is based on current system culture settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   val datetimeFormat: DatetimeFormatInfo = js.native
@@ -43,17 +43,17 @@ trait CultureInfo
   def load(propertyNames: js.Array[String]): CultureInfo = js.native
   
   /**
-    *
     * Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   val name: String = js.native
   
   /**
-    *
     * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   val numberFormat: NumberFormatInfo = js.native

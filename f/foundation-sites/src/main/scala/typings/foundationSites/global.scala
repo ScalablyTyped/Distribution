@@ -13,8 +13,13 @@ import typings.foundationSites.FoundationSites.IInterchangeOptions
 import typings.foundationSites.FoundationSites.IMagellanOptions
 import typings.foundationSites.FoundationSites.IOffCanvasOptions
 import typings.foundationSites.FoundationSites.IOrbitOptions
+import typings.foundationSites.FoundationSites.IPositionableOptions
+import typings.foundationSites.FoundationSites.IResponsiveAccordionTabsOptions
+import typings.foundationSites.FoundationSites.IResponsiveMenuOptions
+import typings.foundationSites.FoundationSites.IResponsiveToggleOptions
 import typings.foundationSites.FoundationSites.IRevealOptions
 import typings.foundationSites.FoundationSites.ISliderOptions
+import typings.foundationSites.FoundationSites.ISmoothScrollOptions
 import typings.foundationSites.FoundationSites.IStickyOptions
 import typings.foundationSites.FoundationSites.ITabsOptions
 import typings.foundationSites.FoundationSites.ITogglerOptions
@@ -34,116 +39,71 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Abide")
     @js.native
-    class Abide protected ()
+    open class Abide protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Abide {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: IAbideOptions) = this()
-      
-      /* CompleteClass */
-      override def addErrorClasses(element: JQuery): Unit = js.native
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
-      
-      /* CompleteClass */
-      override def findFormError(element: JQuery): JQuery = js.native
-      
-      /* CompleteClass */
-      override def findLabel(element: JQuery): Boolean = js.native
-      
-      /* CompleteClass */
-      override def matchValidation(element: JQuery, validators: String, required: Boolean): Boolean = js.native
-      
-      /* CompleteClass */
-      override def removeErrorClasses(element: JQuery): Unit = js.native
-      
-      /* CompleteClass */
-      override def removeRadioErrorClasses(groupName: String): Unit = js.native
-      
-      /* CompleteClass */
-      override def requiredChecked(element: JQuery): Boolean = js.native
-      
-      /* CompleteClass */
-      override def resetForm(): Unit = js.native
-      
-      /* CompleteClass */
-      override def validateForm(): Boolean = js.native
-      
-      /* CompleteClass */
-      override def validateInput(element: JQuery): Boolean = js.native
-      
-      /* CompleteClass */
-      override def validateRadio(groupName: String): Boolean = js.native
-      
-      /* CompleteClass */
-      override def validateText(element: JQuery, pattern: String): Boolean = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Accordion")
     @js.native
-    class Accordion protected ()
+    open class Accordion protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Accordion {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: IAccordionOptions) = this()
       
       /* CompleteClass */
-      override def destroy(): Unit = js.native
+      override def down(target: JQuery, firstTime: Boolean): Unit = js.native
       
       /* CompleteClass */
-      override def down($target: JQuery, firstTime: Boolean): Unit = js.native
+      override def toggle(target: JQuery): Unit = js.native
       
       /* CompleteClass */
-      override def toggle($target: JQuery): Unit = js.native
-      
-      /* CompleteClass */
-      override def up($target: JQuery): Unit = js.native
+      override def up(target: JQuery): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.AccordionMenu")
     @js.native
-    class AccordionMenu protected ()
+    open class AccordionMenu protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.AccordionMenu {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: IAccordionMenuOptions) = this()
       
       /* CompleteClass */
-      override def destroy(): Unit = js.native
-      
-      /* CompleteClass */
-      override def down($target: JQuery, firstTime: Boolean): Unit = js.native
+      override def down(target: JQuery, firstTime: Boolean): Unit = js.native
       
       /* CompleteClass */
       override def hideAll(): Unit = js.native
       
       /* CompleteClass */
-      override def toggle($target: JQuery): Unit = js.native
+      override def showAll(): Unit = js.native
       
       /* CompleteClass */
-      override def up($target: JQuery): Unit = js.native
+      override def toggle(target: JQuery): Unit = js.native
+      
+      /* CompleteClass */
+      override def up(target: JQuery): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Drilldown")
     @js.native
-    class Drilldown protected ()
+    open class Drilldown protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Drilldown {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: IDrilldownOptions) = this()
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Dropdown")
     @js.native
-    class Dropdown protected ()
+    open class Dropdown protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Dropdown {
       def this(element: JQuery) = this()
@@ -151,12 +111,6 @@ object global {
       
       /* CompleteClass */
       override def close(): Unit = js.native
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
-      
-      /* CompleteClass */
-      override def getPositionClass(): String = js.native
       
       /* CompleteClass */
       override def open(): Unit = js.native
@@ -168,52 +122,43 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.DropdownMenu")
     @js.native
-    class DropdownMenu protected ()
+    open class DropdownMenu protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.DropdownMenu {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: IDropdownMenuOptions) = this()
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Equalizer")
     @js.native
-    class Equalizer protected ()
+    open class Equalizer protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Equalizer {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: IEqualizerOptions) = this()
       
       /* CompleteClass */
-      override def applyHeight(heights: js.Array[js.Any]): Unit = js.native
+      override def applyHeight(heights: js.Array[Any]): Unit = js.native
       
       /* CompleteClass */
-      override def applyHeightByRow(groups: js.Array[js.Any]): Unit = js.native
+      override def applyHeightByRow(groups: js.Array[Any]): Unit = js.native
       
       /* CompleteClass */
-      override def destroy(): Unit = js.native
+      override def getHeights(cb: js.Function): js.Array[Any] = js.native
       
       /* CompleteClass */
-      override def getHeights(cb: js.Function): js.Array[js.Any] = js.native
-      
-      /* CompleteClass */
-      override def getHeightsByRow(cb: js.Function): js.Array[js.Any] = js.native
+      override def getHeightsByRow(cb: js.Function): js.Array[Any] = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Interchange")
     @js.native
-    class Interchange protected ()
+    open class Interchange protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Interchange {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: IInterchangeOptions) = this()
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
       
       /* CompleteClass */
       override def replace(path: String): Unit = js.native
@@ -222,7 +167,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Magellan")
     @js.native
-    class Magellan protected ()
+    open class Magellan protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Magellan {
       def this(element: JQuery) = this()
@@ -230,9 +175,6 @@ object global {
       
       /* CompleteClass */
       override def calcPoints(): Unit = js.native
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
       
       /* CompleteClass */
       override def reflow(): Unit = js.native
@@ -244,7 +186,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.OffCanvas")
     @js.native
-    class OffCanvas protected ()
+    open class OffCanvas protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.OffCanvas {
       def this(element: JQuery) = this()
@@ -254,7 +196,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Orbit")
     @js.native
-    class Orbit protected ()
+    open class Orbit protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Orbit {
       def this(element: JQuery) = this()
@@ -262,9 +204,64 @@ object global {
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Foundation.Positionable")
+    @js.native
+    open class Positionable protected ()
+      extends StObject
+         with typings.foundationSites.FoundationSites.Positionable {
+      def this(element: JQuery) = this()
+      def this(element: JQuery, options: IPositionableOptions) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Foundation.ResponsiveAccordionTabs")
+    @js.native
+    open class ResponsiveAccordionTabs protected ()
+      extends StObject
+         with typings.foundationSites.FoundationSites.ResponsiveAccordionTabs {
+      def this(element: JQuery) = this()
+      def this(element: JQuery, options: IResponsiveAccordionTabsOptions) = this()
+      
+      /* CompleteClass */
+      override def close(_target: Any, args: Any*): Any = js.native
+      
+      /* CompleteClass */
+      override def open(_target: Any, args: Any*): Any = js.native
+      
+      /* CompleteClass */
+      var storezfData: Any = js.native
+      
+      /* CompleteClass */
+      override def toggle(_target: Any, args: Any*): Any = js.native
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Foundation.ResponsiveMenu")
+    @js.native
+    open class ResponsiveMenu protected ()
+      extends StObject
+         with typings.foundationSites.FoundationSites.ResponsiveMenu {
+      def this(element: JQuery) = this()
+      def this(element: JQuery, options: IResponsiveMenuOptions) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Foundation.ResponsiveToggle")
+    @js.native
+    open class ResponsiveToggle protected ()
+      extends StObject
+         with typings.foundationSites.FoundationSites.ResponsiveToggle {
+      def this(element: JQuery) = this()
+      def this(element: JQuery, options: IResponsiveToggleOptions) = this()
+      
+      /* CompleteClass */
+      override def toggleMenu(): Unit = js.native
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Reveal")
     @js.native
-    class Reveal protected ()
+    open class Reveal protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Reveal {
       def this(element: JQuery) = this()
@@ -272,9 +269,6 @@ object global {
       
       /* CompleteClass */
       override def close(): Unit = js.native
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
       
       /* CompleteClass */
       override def open(): Unit = js.native
@@ -286,33 +280,40 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Slider")
     @js.native
-    class Slider protected ()
+    open class Slider protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Slider {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: ISliderOptions) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Foundation.SmoothScroll")
+    @js.native
+    open class SmoothScroll protected ()
+      extends StObject
+         with typings.foundationSites.FoundationSites.SmoothScroll {
+      def this(element: JQuery) = this()
+      def this(element: JQuery, options: ISmoothScrollOptions) = this()
       
       /* CompleteClass */
-      override def destroy(): Unit = js.native
+      override def scrollToLoc(loc: String, options: Any, callback: js.Function): Boolean = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Sticky")
     @js.native
-    class Sticky protected ()
+    open class Sticky protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Sticky {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: IStickyOptions) = this()
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Tabs")
     @js.native
-    class Tabs protected ()
+    open class Tabs protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Tabs {
       def this(element: JQuery) = this()
@@ -322,14 +323,11 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Toggler")
     @js.native
-    class Toggler protected ()
+    open class Toggler protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Toggler {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: ITogglerOptions) = this()
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
       
       /* CompleteClass */
       override def toggle(): Unit = js.native
@@ -338,14 +336,11 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Foundation.Tooltip")
     @js.native
-    class Tooltip protected ()
+    open class Tooltip protected ()
       extends StObject
          with typings.foundationSites.FoundationSites.Tooltip {
       def this(element: JQuery) = this()
       def this(element: JQuery, options: ITooltipOptions) = this()
-      
-      /* CompleteClass */
-      override def destroy(): Unit = js.native
       
       /* CompleteClass */
       override def hide(): Unit = js.native

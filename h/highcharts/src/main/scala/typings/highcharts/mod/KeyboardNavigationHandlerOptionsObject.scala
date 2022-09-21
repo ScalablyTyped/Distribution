@@ -46,7 +46,7 @@ object KeyboardNavigationHandlerOptionsObject {
     
     inline def setKeyCodeMap(value: js.Array[js.Tuple2[js.Array[Double], js.Function]]): Self = StObject.set(x, "keyCodeMap", value.asInstanceOf[js.Any])
     
-    inline def setKeyCodeMapVarargs(value: (js.Tuple2[js.Array[Double], js.Function])*): Self = StObject.set(x, "keyCodeMap", js.Array(value :_*))
+    inline def setKeyCodeMapVarargs(value: (js.Tuple2[js.Array[Double], js.Function])*): Self = StObject.set(x, "keyCodeMap", js.Array(value*))
     
     inline def setTerminate(value: js.Function): Self = StObject.set(x, "terminate", value.asInstanceOf[js.Any])
     

@@ -2,8 +2,6 @@ package typings.poi.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.connectHistoryApiFallback.mod.Options
-import typings.express.mod.Application_
-import typings.node.httpsMod.ServerOptions
 import typings.poi.anon.PartialOptionsentrystring
 import typings.poi.mod.Config.Assets
 import typings.poi.mod.Config.Babel
@@ -33,10 +31,18 @@ import typings.poi.poiStrings.node
 import typings.poi.poiStrings.umd
 import typings.poi.poiStrings.web
 import typings.poi.poiStrings.webworker
+import typings.std.Headers
+import typings.std.Request
+import typings.std.Response
+import typings.webpack.mod.Configuration
+import typings.webpack.mod.EntryObject
+import typings.webpack.mod.EntryStatic
+import typings.webpackDevServer.mod.DevMiddlewareContext
+import typings.webpackDevServer.mod.NextFunction
 import typings.webpackDevServer.mod.ProxyConfigArray
 import typings.webpackDevServer.mod.ProxyConfigArrayItem
 import typings.webpackDevServer.mod.ProxyConfigMap
-import typings.webpackDevServer.mod.WebpackDevServer
+import typings.webpackDevServer.mod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,7 +133,7 @@ object Config {
       
       inline def setTranspileModulesUndefined: Self = StObject.set(x, "transpileModules", js.undefined)
       
-      inline def setTranspileModulesVarargs(value: String*): Self = StObject.set(x, "transpileModules", js.Array(value :_*))
+      inline def setTranspileModulesVarargs(value: String*): Self = StObject.set(x, "transpileModules", js.Array(value*))
     }
     
     type NamedImportsOptions = StringDictionary[StringDictionary[String]]
@@ -151,9 +157,7 @@ object Config {
     
     inline def setConfigureWebpack(value: ConfigureWebpack): Self = StObject.set(x, "configureWebpack", value.asInstanceOf[js.Any])
     
-    inline def setConfigureWebpackFunction2(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackConfig */ /* config */ js.Any, /* opts */ Opts) => Unit | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackConfig */ js.Any)
-    ): Self = StObject.set(x, "configureWebpack", js.Any.fromFunction2(value))
+    inline def setConfigureWebpackFunction2(value: (/* config */ Configuration, /* opts */ Opts) => Unit | Configuration): Self = StObject.set(x, "configureWebpack", js.Any.fromFunction2(value))
     
     inline def setConfigureWebpackUndefined: Self = StObject.set(x, "configureWebpack", js.undefined)
     
@@ -171,7 +175,11 @@ object Config {
     
     inline def setEntry(value: Entry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
+    inline def setEntryFunction0(value: () => String | EntryObject | js.Array[String] | js.Promise[EntryStatic]): Self = StObject.set(x, "entry", js.Any.fromFunction0(value))
+    
     inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+    
+    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value*))
     
     inline def setEnvs(value: Envs): Self = StObject.set(x, "envs", value.asInstanceOf[js.Any])
     
@@ -189,18 +197,14 @@ object Config {
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: (String | PluginOption)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: (String | PluginOption)*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPublicFolder(value: PublicFolder): Self = StObject.set(x, "publicFolder", value.asInstanceOf[js.Any])
     
     inline def setPublicFolderUndefined: Self = StObject.set(x, "publicFolder", js.undefined)
   }
   
-  type ConfigureWebpack = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackConfig */ js.Any) | (js.Function2[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackConfig */ /* config */ js.Any, 
-    /* opts */ Opts, 
-    Unit | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackConfig */ js.Any)
-  ])
+  type ConfigureWebpack = Configuration | (js.Function2[/* config */ Configuration, /* opts */ Opts, Unit | Configuration])
   
   type Constants = StringDictionary[String]
   
@@ -236,15 +240,15 @@ object Config {
     
     trait LoaderOptions extends StObject {
       
-      var css: js.UndefOr[js.Any] = js.undefined
+      var css: js.UndefOr[Any] = js.undefined
       
-      var less: js.UndefOr[js.Any] = js.undefined
+      var less: js.UndefOr[Any] = js.undefined
       
-      var postcss: js.UndefOr[js.Any] = js.undefined
+      var postcss: js.UndefOr[Any] = js.undefined
       
-      var sass: js.UndefOr[js.Any] = js.undefined
+      var sass: js.UndefOr[Any] = js.undefined
       
-      var stylus: js.UndefOr[js.Any] = js.undefined
+      var stylus: js.UndefOr[Any] = js.undefined
     }
     object LoaderOptions {
       
@@ -255,23 +259,23 @@ object Config {
       
       extension [Self <: LoaderOptions](x: Self) {
         
-        inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+        inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
         inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
         
-        inline def setLess(value: js.Any): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
+        inline def setLess(value: Any): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
         
         inline def setLessUndefined: Self = StObject.set(x, "less", js.undefined)
         
-        inline def setPostcss(value: js.Any): Self = StObject.set(x, "postcss", value.asInstanceOf[js.Any])
+        inline def setPostcss(value: Any): Self = StObject.set(x, "postcss", value.asInstanceOf[js.Any])
         
         inline def setPostcssUndefined: Self = StObject.set(x, "postcss", js.undefined)
         
-        inline def setSass(value: js.Any): Self = StObject.set(x, "sass", value.asInstanceOf[js.Any])
+        inline def setSass(value: Any): Self = StObject.set(x, "sass", value.asInstanceOf[js.Any])
         
         inline def setSassUndefined: Self = StObject.set(x, "sass", js.undefined)
         
-        inline def setStylus(value: js.Any): Self = StObject.set(x, "stylus", value.asInstanceOf[js.Any])
+        inline def setStylus(value: Any): Self = StObject.set(x, "stylus", value.asInstanceOf[js.Any])
         
         inline def setStylusUndefined: Self = StObject.set(x, "stylus", js.undefined)
       }
@@ -281,24 +285,21 @@ object Config {
   trait DevServer extends StObject {
     
     var after: js.UndefOr[
-        js.Function3[
-          /* app */ Application_, 
-          /* server */ WebpackDevServer, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
-          Unit
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: webpack-dev-server.webpack-dev-server.Configuration['after'] */ js.Any
       ] = js.undefined
     
     var before: js.UndefOr[
-        js.Function3[
-          /* app */ Application_, 
-          /* server */ WebpackDevServer, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
-          Unit
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: webpack-dev-server.webpack-dev-server.Configuration['before'] */ js.Any
       ] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+    var headers: js.UndefOr[
+        Headers | (js.Function3[
+          /* req */ Request, 
+          /* res */ Response, 
+          /* context */ DevMiddlewareContext[Request, Response], 
+          Headers
+        ])
+      ] = js.undefined
     
     var historyApiFallback: js.UndefOr[Boolean | Options] = js.undefined
     
@@ -316,7 +317,7 @@ object Config {
     
     var port: js.UndefOr[String | Double] = js.undefined
     
-    var proxy: js.UndefOr[String | ProxyConfigMap | ProxyConfigArray] = js.undefined
+    var proxy: js.UndefOr[String | ProxyConfigArrayItem | ProxyConfigMap | ProxyConfigArray] = js.undefined
   }
   object DevServer {
     
@@ -328,18 +329,29 @@ object Config {
     extension [Self <: DevServer](x: Self) {
       
       inline def setAfter(
-        value: (/* app */ Application_, /* server */ WebpackDevServer, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any) => Unit
-      ): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
+        value: /* import warning: importer.ImportType#apply Failed type conversion: webpack-dev-server.webpack-dev-server.Configuration['after'] */ js.Any
+      ): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
       inline def setBefore(
-        value: (/* app */ Application_, /* server */ WebpackDevServer, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any) => Unit
-      ): Self = StObject.set(x, "before", js.Any.fromFunction3(value))
+        value: /* import warning: importer.ImportType#apply Failed type conversion: webpack-dev-server.webpack-dev-server.Configuration['before'] */ js.Any
+      ): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(
+        value: Headers | (js.Function3[
+              /* req */ Request, 
+              /* res */ Response, 
+              /* context */ DevMiddlewareContext[Request, Response], 
+              Headers
+            ])
+      ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersFunction3(
+        value: (/* req */ Request, /* res */ Response, /* context */ DevMiddlewareContext[Request, Response]) => Headers
+      ): Self = StObject.set(x, "headers", js.Any.fromFunction3(value))
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -357,7 +369,7 @@ object Config {
       
       inline def setHotEntriesUndefined: Self = StObject.set(x, "hotEntries", js.undefined)
       
-      inline def setHotEntriesVarargs(value: String*): Self = StObject.set(x, "hotEntries", js.Array(value :_*))
+      inline def setHotEntriesVarargs(value: String*): Self = StObject.set(x, "hotEntries", js.Array(value*))
       
       inline def setHotOnly(value: Boolean): Self = StObject.set(x, "hotOnly", value.asInstanceOf[js.Any])
       
@@ -377,15 +389,24 @@ object Config {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setProxy(value: String | ProxyConfigMap | ProxyConfigArray): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String | ProxyConfigArrayItem | ProxyConfigMap | ProxyConfigArray): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      inline def setProxyVarargs(value: ProxyConfigArrayItem*): Self = StObject.set(x, "proxy", js.Array(value :_*))
+      inline def setProxyVarargs(
+        value: (ProxyConfigArrayItem | (js.Function3[
+              /* req */ js.UndefOr[Request], 
+              /* res */ js.UndefOr[Response], 
+              /* next */ js.UndefOr[NextFunction], 
+              ProxyConfigArrayItem
+            ]))*
+      ): Self = StObject.set(x, "proxy", js.Array(value*))
     }
   }
   
-  type Entry = /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackConfig * / any['entry'] */ js.Any
+  type Entry = js.UndefOr[
+    String | (js.Function0[String | EntryObject | js.Array[String] | js.Promise[EntryStatic]]) | EntryObject | js.Array[String]
+  ]
   
   type Envs = StringDictionary[String]
   
@@ -547,7 +568,7 @@ object Config {
   
   trait PluginOption extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     var resolve: String
   }
@@ -560,7 +581,7 @@ object Config {
     
     extension [Self <: PluginOption](x: Self) {
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       

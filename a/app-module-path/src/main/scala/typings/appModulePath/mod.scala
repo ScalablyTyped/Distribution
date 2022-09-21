@@ -11,7 +11,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def addPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addPath(path: String, parent: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPath")(path.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addPath(path: String, parent: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPath")(path.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def enableForDir(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableForDir")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

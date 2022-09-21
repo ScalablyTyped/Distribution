@@ -29,7 +29,7 @@ object HsmConfigurationMessage {
     
     inline def setHsmConfigurationsUndefined: Self = StObject.set(x, "HsmConfigurations", js.undefined)
     
-    inline def setHsmConfigurationsVarargs(value: HsmConfiguration*): Self = StObject.set(x, "HsmConfigurations", js.Array(value :_*))
+    inline def setHsmConfigurationsVarargs(value: HsmConfiguration*): Self = StObject.set(x, "HsmConfigurations", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

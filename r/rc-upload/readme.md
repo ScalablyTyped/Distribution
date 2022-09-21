@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-upload
 
-Typings are for version 3.3.1
+Typings are for version 4.3.4
 
 ## Library description:
 upload ui component for react
@@ -10,10 +10,10 @@ upload ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-upload |
 | Keywords           | react, react-component, react-upload, upload |
-| # releases         | 37 |
-| # dependents       | 275 |
-| # downloads        | 21601642 |
-| # stars            | 3 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 3259139.6666666665 |
+| # stars            | 693.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/upload)

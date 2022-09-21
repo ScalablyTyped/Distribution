@@ -42,6 +42,6 @@ object GetRelationalDatabaseLogEventsResult {
     
     inline def setResourceLogEventsUndefined: Self = StObject.set(x, "resourceLogEvents", js.undefined)
     
-    inline def setResourceLogEventsVarargs(value: LogEvent*): Self = StObject.set(x, "resourceLogEvents", js.Array(value :_*))
+    inline def setResourceLogEventsVarargs(value: LogEvent*): Self = StObject.set(x, "resourceLogEvents", js.Array(value*))
   }
 }

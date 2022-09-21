@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "Image")
 @js.native
-class Image protected ()
+open class Image protected ()
   extends typings.actionsOnGoogle.responseMod.Image {
   /**
     * @param options Image options

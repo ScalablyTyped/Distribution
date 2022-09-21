@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "LeCunNormal")
 @js.native
-class LeCunNormal () extends VarianceScaling {
+open class LeCunNormal () extends VarianceScaling {
   def this(args: SeedOnlyInitializerArgs) = this()
 }
 /* static members */

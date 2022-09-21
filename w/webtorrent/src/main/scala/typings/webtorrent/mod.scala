@@ -4,18 +4,19 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.bittorrentProtocol.mod.Wire
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.std.Blob
-import typings.std.Date
-import typings.std.Error
 import typings.std.File
 import typings.std.FileList
 import typings.std.HTMLElement
 import typings.std.HTMLMediaElement
+import typings.std.ReadableStream
 import typings.webtorrent.anon.Autoplay
 import typings.webtorrent.anon.End
 import typings.webtorrent.anon.Files
@@ -38,7 +39,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("webtorrent", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Instance {
     def this(config: Options) = this()
@@ -53,36 +54,36 @@ object mod extends Shortcut {
        with EventEmitter {
     
     def add(torrent: String): Torrent = js.native
-    def add(torrent: String, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def add(torrent: String, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: String, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def add(torrent: String, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def add(torrent: String, opts: TorrentOptions): Torrent = js.native
-    def add(torrent: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def add(torrent: Buffer): Torrent = js.native
-    def add(torrent: Buffer, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def add(torrent: Buffer, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: Buffer, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def add(torrent: Buffer, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def add(torrent: Buffer, opts: TorrentOptions): Torrent = js.native
-    def add(torrent: Buffer, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: Buffer, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def add(torrent: typings.parseTorrent.mod.Instance): Torrent = js.native
-    def add(torrent: typings.parseTorrent.mod.Instance, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: typings.parseTorrent.mod.Instance, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def add(
       torrent: typings.parseTorrent.mod.Instance,
       opts: Unit,
-      cb: js.Function1[/* torrent */ Torrent, js.Any]
+      cb: js.Function1[/* torrent */ Torrent, Any]
     ): Torrent = js.native
     def add(torrent: typings.parseTorrent.mod.Instance, opts: TorrentOptions): Torrent = js.native
     def add(
       torrent: typings.parseTorrent.mod.Instance,
       opts: TorrentOptions,
-      cb: js.Function1[/* torrent */ Torrent, js.Any]
+      cb: js.Function1[/* torrent */ Torrent, Any]
     ): Torrent = js.native
     def add(torrent: File): Torrent = js.native
-    def add(torrent: File, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def add(torrent: File, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: File, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def add(torrent: File, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def add(torrent: File, opts: TorrentOptions): Torrent = js.native
-    def add(torrent: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def add(torrent: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     
     def destroy(): Unit = js.native
-    def destroy(callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
+    def destroy(callback: js.Function1[/* err */ js.Error | String, Unit]): Unit = js.native
     
     val downloadSpeed: Double = js.native
     
@@ -91,7 +92,7 @@ object mod extends Shortcut {
     def get(torrentId: Torrent): Torrent | Unit = js.native
     
     @JSName("on")
-    def on_error(event: error, callback: js.Function1[/* err */ Error | String, Unit]): this.type = js.native
+    def on_error(event: error, callback: js.Function1[/* err */ js.Error | String, Unit]): this.type = js.native
     @JSName("on")
     def on_torrent(event: torrent, callback: js.Function1[/* torrent */ Torrent, Unit]): this.type = js.native
     
@@ -100,71 +101,71 @@ object mod extends Shortcut {
     val ratio: Double = js.native
     
     def remove(torrentId: String): Unit = js.native
-    def remove(torrentId: String, opts: Unit, callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
+    def remove(torrentId: String, opts: Unit, callback: js.Function1[/* err */ js.Error | String, Unit]): Unit = js.native
     def remove(torrentId: String, opts: TorrentDestroyOptions): Unit = js.native
     def remove(
       torrentId: String,
       opts: TorrentDestroyOptions,
-      callback: js.Function1[/* err */ Error | String, Unit]
+      callback: js.Function1[/* err */ js.Error | String, Unit]
     ): Unit = js.native
     def remove(torrentId: Buffer): Unit = js.native
-    def remove(torrentId: Buffer, opts: Unit, callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
+    def remove(torrentId: Buffer, opts: Unit, callback: js.Function1[/* err */ js.Error | String, Unit]): Unit = js.native
     def remove(torrentId: Buffer, opts: TorrentDestroyOptions): Unit = js.native
     def remove(
       torrentId: Buffer,
       opts: TorrentDestroyOptions,
-      callback: js.Function1[/* err */ Error | String, Unit]
+      callback: js.Function1[/* err */ js.Error | String, Unit]
     ): Unit = js.native
     def remove(torrentId: Torrent): Unit = js.native
-    def remove(torrentId: Torrent, opts: Unit, callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
+    def remove(torrentId: Torrent, opts: Unit, callback: js.Function1[/* err */ js.Error | String, Unit]): Unit = js.native
     def remove(torrentId: Torrent, opts: TorrentDestroyOptions): Unit = js.native
     def remove(
       torrentId: Torrent,
       opts: TorrentDestroyOptions,
-      callback: js.Function1[/* err */ Error | String, Unit]
+      callback: js.Function1[/* err */ js.Error | String, Unit]
     ): Unit = js.native
     
     def seed(input: String): Torrent = js.native
-    def seed(input: String, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: String, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: String, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: String, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: String, opts: TorrentOptions): Torrent = js.native
-    def seed(input: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: js.Array[Buffer | File | ReadableStream | String]): Torrent = js.native
+    def seed(input: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: js.Array[Buffer | File | ReadableStream[Any] | String]): Torrent = js.native
     def seed(
-      input: js.Array[Buffer | File | ReadableStream | String],
-      cb: js.Function1[/* torrent */ Torrent, js.Any]
+      input: js.Array[Buffer | File | ReadableStream[Any] | String],
+      cb: js.Function1[/* torrent */ Torrent, Any]
     ): Torrent = js.native
     def seed(
-      input: js.Array[Buffer | File | ReadableStream | String],
+      input: js.Array[Buffer | File | ReadableStream[Any] | String],
       opts: Unit,
-      cb: js.Function1[/* torrent */ Torrent, js.Any]
+      cb: js.Function1[/* torrent */ Torrent, Any]
     ): Torrent = js.native
-    def seed(input: js.Array[Buffer | File | ReadableStream | String], opts: TorrentOptions): Torrent = js.native
+    def seed(input: js.Array[Buffer | File | ReadableStream[Any] | String], opts: TorrentOptions): Torrent = js.native
     def seed(
-      input: js.Array[Buffer | File | ReadableStream | String],
+      input: js.Array[Buffer | File | ReadableStream[Any] | String],
       opts: TorrentOptions,
-      cb: js.Function1[/* torrent */ Torrent, js.Any]
+      cb: js.Function1[/* torrent */ Torrent, Any]
     ): Torrent = js.native
     def seed(input: Buffer): Torrent = js.native
-    def seed(input: Buffer, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: Buffer, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: Buffer, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: Buffer, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: Buffer, opts: TorrentOptions): Torrent = js.native
-    def seed(input: Buffer, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: ReadableStream): Torrent = js.native
-    def seed(input: ReadableStream, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: ReadableStream, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: ReadableStream, opts: TorrentOptions): Torrent = js.native
-    def seed(input: ReadableStream, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: Buffer, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: File): Torrent = js.native
     def seed(input: FileList): Torrent = js.native
-    def seed(input: FileList, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: FileList, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: FileList, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: FileList, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: FileList, opts: TorrentOptions): Torrent = js.native
-    def seed(input: FileList, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: File, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
-    def seed(input: File, opts: Unit, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: FileList, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: File, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: File, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: File, opts: TorrentOptions): Torrent = js.native
-    def seed(input: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, js.Any]): Torrent = js.native
+    def seed(input: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: ReadableStream[Any]): Torrent = js.native
+    def seed(input: ReadableStream[Any], cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: ReadableStream[Any], opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: ReadableStream[Any], opts: TorrentOptions): Torrent = js.native
+    def seed(input: ReadableStream[Any], opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     
     val torrents: js.Array[Torrent] = js.native
     
@@ -238,21 +239,35 @@ object mod extends Shortcut {
     
     val announce: js.Array[String] = js.native
     
+    val `announce-list`: js.Array[js.Array[String]] = js.native
+    
     val comment: String = js.native
     
-    def createServer(): Server = js.native
-    def createServer(opts: RequestOptions): Server = js.native
+    def createServer(): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def createServer(opts: RequestOptions): Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
     
-    val created: Date = js.native
+    val created: js.Date = js.native
     
     val createdBy: String = js.native
     
     def deselect(start: Double, end: Double, priority: Double): Unit = js.native
     
     def destroy(): Unit = js.native
-    def destroy(opts: Unit, cb: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
+    def destroy(opts: Unit, cb: js.Function1[/* err */ js.Error | String, Unit]): Unit = js.native
     def destroy(opts: TorrentDestroyOptions): Unit = js.native
-    def destroy(opts: TorrentDestroyOptions, cb: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
+    def destroy(opts: TorrentDestroyOptions, cb: js.Function1[/* err */ js.Error | String, Unit]): Unit = js.native
     
     val done: Boolean = js.native
     
@@ -276,23 +291,15 @@ object mod extends Shortcut {
     
     val numPeers: Double = js.native
     
+    def on(
+      event: typings.webtorrent.webtorrentStrings.infoHash | metadata | typings.webtorrent.webtorrentStrings.ready | typings.webtorrent.webtorrentStrings.done,
+      callback: js.Function0[Unit]
+    ): this.type = js.native
+    def on(
+      event: download | error | upload | warning,
+      callback: js.Function1[(/* bytes */ Double) | js.Error | String, Unit]
+    ): this.type = js.native
     def on(event: noPeers, callback: js.Function1[/* announceType */ tracker | dht, Unit]): this.type = js.native
-    @JSName("on")
-    def on_done(event: typings.webtorrent.webtorrentStrings.done, callback: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_download(event: download, callback: js.Function1[/* bytes */ Double, Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, callback: js.Function1[/* err */ Error | String, Unit]): this.type = js.native
-    @JSName("on")
-    def on_infoHash(event: typings.webtorrent.webtorrentStrings.infoHash, callback: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_metadata(event: metadata, callback: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_ready(event: typings.webtorrent.webtorrentStrings.ready, callback: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_upload(event: upload, callback: js.Function1[/* bytes */ Double, Unit]): this.type = js.native
-    @JSName("on")
-    def on_warning(event: warning, callback: js.Function1[/* err */ Error | String, Unit]): this.type = js.native
     @JSName("on")
     def on_wire(event: wire, callback: js.Function2[/* wire */ Wire, /* addr */ js.UndefOr[String], Unit]): this.type = js.native
     
@@ -362,51 +369,51 @@ object mod extends Shortcut {
     def appendTo(rootElement: String): Unit = js.native
     def appendTo(
       rootElement: String,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def appendTo(
       rootElement: String,
       opts: Unit,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def appendTo(rootElement: String, opts: Autoplay): Unit = js.native
     def appendTo(
       rootElement: String,
       opts: Autoplay,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def appendTo(rootElement: HTMLElement): Unit = js.native
     def appendTo(
       rootElement: HTMLElement,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def appendTo(
       rootElement: HTMLElement,
       opts: Unit,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def appendTo(rootElement: HTMLElement, opts: Autoplay): Unit = js.native
     def appendTo(
       rootElement: HTMLElement,
       opts: Autoplay,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     
-    def createReadStream(): ReadableStream = js.native
-    def createReadStream(opts: End): ReadableStream = js.native
+    def createReadStream(): ReadableStream[Any] = js.native
+    def createReadStream(opts: End): ReadableStream[Any] = js.native
     
     def deselect(): Unit = js.native
     
     val downloaded: Double = js.native
     
-    def getBlob(callback: js.Function2[/* err */ js.UndefOr[String | Error], /* blob */ js.UndefOr[Blob], Unit]): Unit = js.native
+    def getBlob(callback: js.Function2[/* err */ js.UndefOr[String | js.Error], /* blob */ js.UndefOr[Blob], Unit]): Unit = js.native
     
     def getBlobURL(
-      callback: js.Function2[/* err */ js.UndefOr[String | Error], /* blobURL */ js.UndefOr[String], Unit]
+      callback: js.Function2[/* err */ js.UndefOr[String | js.Error], /* blobURL */ js.UndefOr[String], Unit]
     ): Unit = js.native
     
     def getBuffer(
-      callback: js.Function2[/* err */ js.UndefOr[String | Error], /* buffer */ js.UndefOr[Buffer], Unit]
+      callback: js.Function2[/* err */ js.UndefOr[String | js.Error], /* buffer */ js.UndefOr[Buffer], Unit]
     ): Unit = js.native
     
     val length: Double = js.native
@@ -420,34 +427,34 @@ object mod extends Shortcut {
     def renderTo(rootElement: String): Unit = js.native
     def renderTo(
       rootElement: String,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def renderTo(
       rootElement: String,
       opts: Unit,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def renderTo(rootElement: String, opts: Autoplay): Unit = js.native
     def renderTo(
       rootElement: String,
       opts: Autoplay,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def renderTo(rootElement: HTMLMediaElement): Unit = js.native
     def renderTo(
       rootElement: HTMLMediaElement,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def renderTo(
       rootElement: HTMLMediaElement,
       opts: Unit,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     def renderTo(rootElement: HTMLMediaElement, opts: Autoplay): Unit = js.native
     def renderTo(
       rootElement: HTMLMediaElement,
       opts: Autoplay,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     
     def select(): Unit = js.native
@@ -455,7 +462,11 @@ object mod extends Shortcut {
   
   trait TorrentOptions extends StObject {
     
-    var announce: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var announce: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var announceList: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
+    
+    var destroyStoreOnDestroy: js.UndefOr[Boolean] = js.undefined
     
     var getAnnounceOpts: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -463,9 +474,19 @@ object mod extends Shortcut {
     
     var path: js.UndefOr[String] = js.undefined
     
+    var preloadedStore: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var `private`: js.UndefOr[Boolean] = js.undefined
     
-    var store: js.UndefOr[js.Function2[/* chunkLength */ Double, /* storeOpts */ Files, js.Any]] = js.undefined
+    var skipVerify: js.UndefOr[Boolean] = js.undefined
+    
+    var store: js.UndefOr[js.Function2[/* chunkLength */ Double, /* storeOpts */ Files, Any]] = js.undefined
+    
+    var storeCacheSlots: js.UndefOr[Double] = js.undefined
+    
+    var strategy: js.UndefOr[String] = js.undefined
+    
+    var urlList: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TorrentOptions {
     
@@ -476,11 +497,21 @@ object mod extends Shortcut {
     
     extension [Self <: TorrentOptions](x: Self) {
       
-      inline def setAnnounce(value: js.Array[js.Any]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
+      inline def setAnnounce(value: js.Array[String]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
+      
+      inline def setAnnounceList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "announceList", value.asInstanceOf[js.Any])
+      
+      inline def setAnnounceListUndefined: Self = StObject.set(x, "announceList", js.undefined)
+      
+      inline def setAnnounceListVarargs(value: js.Array[String]*): Self = StObject.set(x, "announceList", js.Array(value*))
       
       inline def setAnnounceUndefined: Self = StObject.set(x, "announce", js.undefined)
       
-      inline def setAnnounceVarargs(value: js.Any*): Self = StObject.set(x, "announce", js.Array(value :_*))
+      inline def setAnnounceVarargs(value: String*): Self = StObject.set(x, "announce", js.Array(value*))
+      
+      inline def setDestroyStoreOnDestroy(value: Boolean): Self = StObject.set(x, "destroyStoreOnDestroy", value.asInstanceOf[js.Any])
+      
+      inline def setDestroyStoreOnDestroyUndefined: Self = StObject.set(x, "destroyStoreOnDestroy", js.undefined)
       
       inline def setGetAnnounceOpts(value: () => Unit): Self = StObject.set(x, "getAnnounceOpts", js.Any.fromFunction0(value))
       
@@ -494,13 +525,35 @@ object mod extends Shortcut {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
+      inline def setPreloadedStore(value: () => Unit): Self = StObject.set(x, "preloadedStore", js.Any.fromFunction0(value))
+      
+      inline def setPreloadedStoreUndefined: Self = StObject.set(x, "preloadedStore", js.undefined)
+      
       inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
       inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      inline def setStore(value: (/* chunkLength */ Double, /* storeOpts */ Files) => js.Any): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
+      inline def setSkipVerify(value: Boolean): Self = StObject.set(x, "skipVerify", value.asInstanceOf[js.Any])
+      
+      inline def setSkipVerifyUndefined: Self = StObject.set(x, "skipVerify", js.undefined)
+      
+      inline def setStore(value: (/* chunkLength */ Double, /* storeOpts */ Files) => Any): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
+      
+      inline def setStoreCacheSlots(value: Double): Self = StObject.set(x, "storeCacheSlots", value.asInstanceOf[js.Any])
+      
+      inline def setStoreCacheSlotsUndefined: Self = StObject.set(x, "storeCacheSlots", js.undefined)
       
       inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      
+      inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      
+      inline def setUrlList(value: js.Array[String]): Self = StObject.set(x, "urlList", value.asInstanceOf[js.Any])
+      
+      inline def setUrlListUndefined: Self = StObject.set(x, "urlList", js.undefined)
+      
+      inline def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value*))
     }
   }
   

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("matter", "Bodies")
 @js.native
-class Bodies ()
+open class Bodies ()
   extends StObject
      with typings.phaser.MatterJS.Bodies
 object Bodies {

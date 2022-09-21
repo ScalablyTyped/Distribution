@@ -10,11 +10,9 @@ object Appearance {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addChangeListener(listener: AppearanceListener): EventSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[EventSubscription]
+  inline def addChangeListener(listener: AppearanceListener): NativeEventSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[NativeEventSubscription]
   
   inline def getColorScheme(): ColorSchemeName = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorScheme")().asInstanceOf[ColorSchemeName]
-  
-  inline def removeChangeListener(listener: AppearanceListener): EventSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChangeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[EventSubscription]
   
   type AppearanceListener = js.Function1[/* preferences */ AppearancePreferences, Unit]
   

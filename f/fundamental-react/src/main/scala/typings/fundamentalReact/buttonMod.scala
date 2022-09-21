@@ -7,7 +7,6 @@ import typings.fundamentalReact.fundamentalReactStrings.button_
 import typings.fundamentalReact.fundamentalReactStrings.reset
 import typings.fundamentalReact.fundamentalReactStrings.submit
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.RefObject
 import typings.react.mod.ValidationMap
@@ -22,8 +21,8 @@ object buttonMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Button/Button.ButtonProps> & {  displayName :'Button'} */
   object default {
     
-    inline def apply(props: PropsWithChildren[ButtonProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[ButtonProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ButtonProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/Button/Button", JSImport.Default)
     @js.native
@@ -31,8 +30,8 @@ object buttonMod {
     
     @JSImport("fundamental-react/lib/Button/Button", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Button/Button", "default.defaultProps")
     @js.native

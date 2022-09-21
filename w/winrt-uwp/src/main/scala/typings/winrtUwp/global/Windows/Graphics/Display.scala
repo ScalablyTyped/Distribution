@@ -3,6 +3,8 @@ package typings.winrtUwp.global.Windows.Graphics
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
+import typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayColorSpace
+import typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayPixelEncoding
 import typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations
 import typings.winrtUwp.Windows.Graphics.Display.DisplayPropertiesEventHandler
 import typings.winrtUwp.Windows.Graphics.Display.ResolutionScale
@@ -19,6 +21,129 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Contains components to determine aspects of a physical display. */
 object Display {
   
+  /** Gets info about a display and configures their settings to support the display of your content. */
+  object Core {
+    
+    @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayColorSpace")
+    @js.native
+    object HdmiDisplayColorSpace extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayColorSpace & Double] = js.native
+      
+      /* 2 */ val bt2020: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayColorSpace.bt2020 & Double = js.native
+      
+      /* 3 */ val bt709: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayColorSpace.bt709 & Double = js.native
+      
+      /* 1 */ val rgbFull: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayColorSpace.rgbFull & Double = js.native
+      
+      /* 0 */ val rgbLimited: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayColorSpace.rgbLimited & Double = js.native
+    }
+    
+    @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayHdrOption")
+    @js.native
+    object HdmiDisplayHdrOption extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayHdrOption & Double] = js.native
+      
+      /* 3 */ val dolbyVisionLowLatency: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayHdrOption.dolbyVisionLowLatency & Double = js.native
+      
+      /* 2 */ val eotf2084: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayHdrOption.eotf2084 & Double = js.native
+      
+      /* 1 */ val eotfSdr: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayHdrOption.eotfSdr & Double = js.native
+      
+      /* 0 */ val none: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayHdrOption.none & Double = js.native
+    }
+    
+    @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayInformation")
+    @js.native
+    abstract class HdmiDisplayInformation ()
+      extends StObject
+         with typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayInformation
+    object HdmiDisplayInformation {
+      
+      @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayInformation")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /** Gets the HdmiDisplayInformation object which is the display info of a video content that is currently sent to a display, like a TV or monitor. */
+      /* static member */
+      inline def getForCurrentView(): typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayInformation]
+    }
+    
+    @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayMode")
+    @js.native
+    abstract class HdmiDisplayMode ()
+      extends StObject
+         with typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayMode {
+      
+      /** Gets the number of bits per pixel. It specifies the number of bits used in a pixel. */
+      /* CompleteClass */
+      var bitsPerPixel: Double = js.native
+      
+      /** Gets the color space. */
+      /* CompleteClass */
+      var colorSpace: HdmiDisplayColorSpace = js.native
+      
+      /** Indicates whether 10 bit display metadata is supported on the device. */
+      /* CompleteClass */
+      var is2086MetadataSupported: Boolean = js.native
+      
+      /** Indicates whether the low-latency profile for Dolby Vision is supported on the device. */
+      /* CompleteClass */
+      var isDolbyVisionLowLatencySupported: Boolean = js.native
+      
+      /** Checks to see whether the current display mode is equal to a specific display mode. */
+      /* CompleteClass */
+      override def isEqual(hdmiDisplayMode: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayMode): Boolean = js.native
+      
+      /** Gets the value that indicates whether standard dynamic range (SDR) luminance levels are supported by the device. */
+      /* CompleteClass */
+      var isSdrLuminanceSupported: Boolean = js.native
+      
+      /** Gets the value that indicates whether the SMPTE (Society of Motion Picture and Television Engineers) ST 2084 electo-optical transfer function (EOTF) is supported. */
+      /* CompleteClass */
+      var isSmpte2084Supported: Boolean = js.native
+      
+      /** Gets the type of pixel encoding the device uses for rendering display content. */
+      /* CompleteClass */
+      var pixelEncoding: HdmiDisplayPixelEncoding = js.native
+      
+      /** Gets the device's refresh rate, in Hertz (Hz). */
+      /* CompleteClass */
+      var refreshRate: Double = js.native
+      
+      /** Gets the device's resolution height in raw pixels. */
+      /* CompleteClass */
+      var resolutionHeightInRawPixels: Double = js.native
+      
+      /** Gets the device's resolution width in raw pixels. */
+      /* CompleteClass */
+      var resolutionWidthInRawPixels: Double = js.native
+      
+      /** Gets the value that indicates whether stereoscorpic 3D is enabled on the device. */
+      /* CompleteClass */
+      var stereoEnabled: Boolean = js.native
+    }
+    
+    @JSGlobal("Windows.Graphics.Display.Core.HdmiDisplayPixelEncoding")
+    @js.native
+    object HdmiDisplayPixelEncoding extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayPixelEncoding & Double] = js.native
+      
+      /* 0 */ val rgb444: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayPixelEncoding.rgb444 & Double = js.native
+      
+      /* 3 */ val ycc420: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayPixelEncoding.ycc420 & Double = js.native
+      
+      /* 2 */ val ycc422: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayPixelEncoding.ycc422 & Double = js.native
+      
+      /* 1 */ val ycc444: typings.winrtUwp.Windows.Graphics.Display.Core.HdmiDisplayPixelEncoding.ycc444 & Double = js.native
+    }
+  }
+  
   /** Monitors and controls physical display information. The class provides events to allow clients to monitor for changes in the display. */
   @JSGlobal("Windows.Graphics.Display.DisplayInformation")
   @js.native
@@ -32,12 +157,12 @@ object Display {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def addEventListener_displaycontentsinvalidated(
       `type`: displaycontentsinvalidated,
-      listener: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, js.Any]
+      listener: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets and sets the preferred orientation of the app. */
@@ -58,16 +183,16 @@ object Display {
     /* static member */
     @JSGlobal("Windows.Graphics.Display.DisplayInformation.ondisplaycontentsinvalidated")
     @js.native
-    def ondisplaycontentsinvalidated: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, js.Any] = js.native
-    inline def ondisplaycontentsinvalidated_=(x: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondisplaycontentsinvalidated")(x.asInstanceOf[js.Any])
+    def ondisplaycontentsinvalidated: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, Any] = js.native
+    inline def ondisplaycontentsinvalidated_=(x: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondisplaycontentsinvalidated")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def removeEventListener_displaycontentsinvalidated(
       `type`: displaycontentsinvalidated,
-      listener: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, js.Any]
+      listener: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
@@ -103,7 +228,7 @@ object Display {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def addEventListener_colorprofilechanged(`type`: colorprofilechanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -191,7 +316,7 @@ object Display {
     inline def onstereoenabledchanged_=(x: DisplayPropertiesEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstereoenabledchanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def removeEventListener_colorprofilechanged(`type`: colorprofilechanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]

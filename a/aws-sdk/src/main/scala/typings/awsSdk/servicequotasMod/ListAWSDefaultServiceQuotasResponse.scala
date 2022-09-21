@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAWSDefaultServiceQuotasResponse extends StObject {
   
   /**
-    * (Optional) Use this parameter in a request if you receive a NextToken response in a previous request that indicates that there's more output available. In a subsequent call, set it to the value of the previous call's NextToken response to indicate where the output should continue from.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
   var NextToken: js.UndefOr[typings.awsSdk.servicequotasMod.NextToken] = js.undefined
   
   /**
-    * A list of the quotas in the account with the AWS default values. 
+    * Information about the quotas.
     */
   var Quotas: js.UndefOr[ServiceQuotaListDefinition] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListAWSDefaultServiceQuotasResponse {
     
     inline def setQuotasUndefined: Self = StObject.set(x, "Quotas", js.undefined)
     
-    inline def setQuotasVarargs(value: ServiceQuota*): Self = StObject.set(x, "Quotas", js.Array(value :_*))
+    inline def setQuotasVarargs(value: ServiceQuota*): Self = StObject.set(x, "Quotas", js.Array(value*))
   }
 }

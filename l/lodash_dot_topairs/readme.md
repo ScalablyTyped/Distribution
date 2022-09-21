@@ -10,10 +10,10 @@ The lodash method `_.toPairs` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.topairs |
 | Keywords           | lodash-modularized, topairs |
-| # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 7139341 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 550794.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

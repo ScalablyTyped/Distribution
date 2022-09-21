@@ -25,18 +25,18 @@ object SHP {
     
     inline def setGBP(value: js.Array[String]): Self = StObject.set(x, "GBP", value.asInstanceOf[js.Any])
     
-    inline def setGBPVarargs(value: String*): Self = StObject.set(x, "GBP", js.Array(value :_*))
+    inline def setGBPVarargs(value: String*): Self = StObject.set(x, "GBP", js.Array(value*))
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setSHP(value: js.Array[String]): Self = StObject.set(x, "SHP", value.asInstanceOf[js.Any])
     
-    inline def setSHPVarargs(value: String*): Self = StObject.set(x, "SHP", js.Array(value :_*))
+    inline def setSHPVarargs(value: String*): Self = StObject.set(x, "SHP", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object formatUnderlinedMod {
   
   @JSImport("material-ui/svg-icons/editor/format-underlined", JSImport.Default)
   @js.native
-  class default () extends EditorFormatUnderlined
+  open class default () extends EditorFormatUnderlined
   
   @JSImport("material-ui/svg-icons/editor/format-underlined", "EditorFormatUnderlined")
   @js.native
-  class EditorFormatUnderlined ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatUnderlined ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

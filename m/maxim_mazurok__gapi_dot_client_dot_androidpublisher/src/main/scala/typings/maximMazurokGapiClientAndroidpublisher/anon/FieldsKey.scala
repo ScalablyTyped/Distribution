@@ -16,6 +16,9 @@ trait FieldsKey extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /** Required. Immutable. The ID of the base plan to which this offer is an extension. */
+  var basePlanId: String
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
@@ -28,17 +31,27 @@ trait FieldsKey extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Package name of the app. */
+  /** Required. Immutable. Unique ID of this subscription offer. Must be unique within the base plan. */
+  var offerId: String
+  
+  /** Required. Immutable. The package name of the app the parent subscription belongs to. */
   var packageName: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
+  /** Required. Immutable. The ID of the parent subscription this offer belongs to. */
+  var productId: String
+  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Unique identifier for a review. */
-  var reviewId: String
+  /** Required. A string representing version of the available regions being used for the specified resource. The current version is 2022/01. */
+  @JSName("regionsVersion.version")
+  var regionsVersionDotversion: js.UndefOr[String] = js.undefined
+  
+  /** Required. The list of fields to be updated. */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -48,8 +61,8 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(packageName: String, reviewId: String): FieldsKey = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], reviewId = reviewId.asInstanceOf[js.Any])
+  inline def apply(basePlanId: String, offerId: String, packageName: String, productId: String): FieldsKey = {
+    val __obj = js.Dynamic.literal(basePlanId = basePlanId.asInstanceOf[js.Any], offerId = offerId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
   
@@ -67,6 +80,8 @@ object FieldsKey {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
+    inline def setBasePlanId(value: String): Self = StObject.set(x, "basePlanId", value.asInstanceOf[js.Any])
+    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -83,17 +98,27 @@ object FieldsKey {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
+    
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setReviewId(value: String): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
+    inline def setRegionsVersionDotversion(value: String): Self = StObject.set(x, "regionsVersion.version", value.asInstanceOf[js.Any])
+    
+    inline def setRegionsVersionDotversionUndefined: Self = StObject.set(x, "regionsVersion.version", js.undefined)
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

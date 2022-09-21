@@ -11,11 +11,11 @@ trait TreeMapOptions extends StObject {
   
   var colorField: js.UndefOr[String] = js.undefined
   
-  var colors: js.UndefOr[js.Any] = js.undefined
+  var colors: js.UndefOr[Any] = js.undefined
   
   var dataBound: js.UndefOr[js.Function1[/* e */ TreeMapDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | HierarchicalDataSource] = js.undefined
   
   var itemCreated: js.UndefOr[js.Function1[/* e */ TreeMapItemCreatedEvent, Unit]] = js.undefined
   
@@ -48,7 +48,7 @@ object TreeMapOptions {
     
     inline def setColorFieldUndefined: Self = StObject.set(x, "colorField", js.undefined)
     
-    inline def setColors(value: js.Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
@@ -56,7 +56,7 @@ object TreeMapOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

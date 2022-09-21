@@ -14,10 +14,10 @@ object outputMod {
   
   @JSImport("gulp-typescript/release/output", "Output")
   @js.native
-  class Output protected () extends StObject {
+  open class Output protected () extends StObject {
     def this(_project: ProjectInfo, streamFull: Readable, streamJs: Readable, streamDts: Readable) = this()
     
-    /* private */ var applySourceMap: js.Any = js.native
+    /* private */ var applySourceMap: Any = js.native
     
     def diagnostic(info: Diagnostic): Unit = js.native
     
@@ -25,13 +25,13 @@ object outputMod {
     
     def finish(result: CompilationResult): Unit = js.native
     
-    /* private */ var getError: js.Any = js.native
+    /* private */ var getError: Any = js.native
     
-    /* private */ var mightFinish: js.Any = js.native
+    /* private */ var mightFinish: Any = js.native
     
-    /* private */ var pendingIO: js.Any = js.native
+    /* private */ var pendingIO: Any = js.native
     
-    /* private */ var pipeRejection: js.Any = js.native
+    /* private */ var pipeRejection: Any = js.native
     
     var project: ProjectInfo = js.native
     
@@ -52,7 +52,7 @@ object outputMod {
       original: File
     ): Unit = js.native
     
-    /* private */ var writeDtsAsync: js.Any = js.native
+    /* private */ var writeDtsAsync: Any = js.native
     
     def writeJs(
       base: String,
@@ -63,6 +63,6 @@ object outputMod {
       original: File
     ): Unit = js.native
     
-    /* private */ var writeJsAsync: js.Any = js.native
+    /* private */ var writeJsAsync: Any = js.native
   }
 }

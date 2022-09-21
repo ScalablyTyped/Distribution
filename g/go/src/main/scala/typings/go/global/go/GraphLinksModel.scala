@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {Array<Object>=} nodedataarray an optional Array containing JavaScript objects to be represented by Nodes.
   * @param {Array<Object>=} linkdataarray an optional Array containing JavaScript objects to be represented by Links.
   */
-class GraphLinksModel ()
+open class GraphLinksModel ()
   extends typings.go.mod.GraphLinksModel {
   def this(nodedataarray: js.Array[js.Object]) = this()
   def this(nodedataarray: js.Array[js.Object], linkdataarray: js.Array[js.Object]) = this()

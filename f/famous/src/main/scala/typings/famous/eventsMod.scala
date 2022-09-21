@@ -8,13 +8,13 @@ object eventsMod {
   
   @JSImport("famous/dom-renderers/events", "EventMap")
   @js.native
-  class EventMap () extends StObject
+  open class EventMap () extends StObject
   
   @JSImport("famous/dom-renderers/events", "MouseEvent")
   @js.native
-  class MouseEvent () extends StObject
+  open class MouseEvent () extends StObject
   
   @JSImport("famous/dom-renderers/events", "TouchEvent")
   @js.native
-  class TouchEvent () extends StObject
+  open class TouchEvent () extends StObject
 }

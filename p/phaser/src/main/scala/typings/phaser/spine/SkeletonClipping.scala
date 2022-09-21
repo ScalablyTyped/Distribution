@@ -17,13 +17,13 @@ trait SkeletonClipping extends StObject {
     output: js.Array[Double]
   ): Boolean
   
-  /* private */ var clipAttachment: js.Any
+  /* private */ var clipAttachment: Any
   
   def clipEnd(): Unit
   
   def clipEndWithSlot(slot: Slot): Unit
   
-  /* private */ var clipOutput: js.Any
+  /* private */ var clipOutput: Any
   
   def clipStart(slot: Slot, clip: ClippingAttachment): Double
   
@@ -42,33 +42,33 @@ trait SkeletonClipping extends StObject {
   
   var clippedVertices: js.Array[Double]
   
-  /* private */ var clippingPolygon: js.Any
+  /* private */ var clippingPolygon: Any
   
-  /* private */ var clippingPolygons: js.Any
+  /* private */ var clippingPolygons: Any
   
   def isClipping(): Boolean
   
-  /* private */ var scratch: js.Any
+  /* private */ var scratch: Any
   
-  /* private */ var triangulator: js.Any
+  /* private */ var triangulator: Any
 }
 object SkeletonClipping {
   
   inline def apply(
     clip: (Double, Double, Double, Double, Double, Double, js.Array[Double], js.Array[Double]) => Boolean,
-    clipAttachment: js.Any,
+    clipAttachment: Any,
     clipEnd: () => Unit,
     clipEndWithSlot: Slot => Unit,
-    clipOutput: js.Any,
+    clipOutput: Any,
     clipStart: (Slot, ClippingAttachment) => Double,
     clipTriangles: (ArrayLike[Double], Double, ArrayLike[Double], Double, ArrayLike[Double], Color, Color, Boolean) => Unit,
     clippedTriangles: js.Array[Double],
     clippedVertices: js.Array[Double],
-    clippingPolygon: js.Any,
-    clippingPolygons: js.Any,
+    clippingPolygon: Any,
+    clippingPolygons: Any,
     isClipping: () => Boolean,
-    scratch: js.Any,
-    triangulator: js.Any
+    scratch: Any,
+    triangulator: Any
   ): SkeletonClipping = {
     val __obj = js.Dynamic.literal(clip = js.Any.fromFunction8(clip), clipAttachment = clipAttachment.asInstanceOf[js.Any], clipEnd = js.Any.fromFunction0(clipEnd), clipEndWithSlot = js.Any.fromFunction1(clipEndWithSlot), clipOutput = clipOutput.asInstanceOf[js.Any], clipStart = js.Any.fromFunction2(clipStart), clipTriangles = js.Any.fromFunction8(clipTriangles), clippedTriangles = clippedTriangles.asInstanceOf[js.Any], clippedVertices = clippedVertices.asInstanceOf[js.Any], clippingPolygon = clippingPolygon.asInstanceOf[js.Any], clippingPolygons = clippingPolygons.asInstanceOf[js.Any], isClipping = js.Any.fromFunction0(isClipping), scratch = scratch.asInstanceOf[js.Any], triangulator = triangulator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkeletonClipping]
@@ -80,13 +80,13 @@ object SkeletonClipping {
       value: (Double, Double, Double, Double, Double, Double, js.Array[Double], js.Array[Double]) => Boolean
     ): Self = StObject.set(x, "clip", js.Any.fromFunction8(value))
     
-    inline def setClipAttachment(value: js.Any): Self = StObject.set(x, "clipAttachment", value.asInstanceOf[js.Any])
+    inline def setClipAttachment(value: Any): Self = StObject.set(x, "clipAttachment", value.asInstanceOf[js.Any])
     
     inline def setClipEnd(value: () => Unit): Self = StObject.set(x, "clipEnd", js.Any.fromFunction0(value))
     
     inline def setClipEndWithSlot(value: Slot => Unit): Self = StObject.set(x, "clipEndWithSlot", js.Any.fromFunction1(value))
     
-    inline def setClipOutput(value: js.Any): Self = StObject.set(x, "clipOutput", value.asInstanceOf[js.Any])
+    inline def setClipOutput(value: Any): Self = StObject.set(x, "clipOutput", value.asInstanceOf[js.Any])
     
     inline def setClipStart(value: (Slot, ClippingAttachment) => Double): Self = StObject.set(x, "clipStart", js.Any.fromFunction2(value))
     
@@ -96,20 +96,20 @@ object SkeletonClipping {
     
     inline def setClippedTriangles(value: js.Array[Double]): Self = StObject.set(x, "clippedTriangles", value.asInstanceOf[js.Any])
     
-    inline def setClippedTrianglesVarargs(value: Double*): Self = StObject.set(x, "clippedTriangles", js.Array(value :_*))
+    inline def setClippedTrianglesVarargs(value: Double*): Self = StObject.set(x, "clippedTriangles", js.Array(value*))
     
     inline def setClippedVertices(value: js.Array[Double]): Self = StObject.set(x, "clippedVertices", value.asInstanceOf[js.Any])
     
-    inline def setClippedVerticesVarargs(value: Double*): Self = StObject.set(x, "clippedVertices", js.Array(value :_*))
+    inline def setClippedVerticesVarargs(value: Double*): Self = StObject.set(x, "clippedVertices", js.Array(value*))
     
-    inline def setClippingPolygon(value: js.Any): Self = StObject.set(x, "clippingPolygon", value.asInstanceOf[js.Any])
+    inline def setClippingPolygon(value: Any): Self = StObject.set(x, "clippingPolygon", value.asInstanceOf[js.Any])
     
-    inline def setClippingPolygons(value: js.Any): Self = StObject.set(x, "clippingPolygons", value.asInstanceOf[js.Any])
+    inline def setClippingPolygons(value: Any): Self = StObject.set(x, "clippingPolygons", value.asInstanceOf[js.Any])
     
     inline def setIsClipping(value: () => Boolean): Self = StObject.set(x, "isClipping", js.Any.fromFunction0(value))
     
-    inline def setScratch(value: js.Any): Self = StObject.set(x, "scratch", value.asInstanceOf[js.Any])
+    inline def setScratch(value: Any): Self = StObject.set(x, "scratch", value.asInstanceOf[js.Any])
     
-    inline def setTriangulator(value: js.Any): Self = StObject.set(x, "triangulator", value.asInstanceOf[js.Any])
+    inline def setTriangulator(value: Any): Self = StObject.set(x, "triangulator", value.asInstanceOf[js.Any])
   }
 }

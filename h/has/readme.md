@@ -10,10 +10,10 @@ Object.prototype.hasOwnProperty.call shortcut
 | ------------------ | :-------------: |
 | Full name          | has |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 314 |
-| # downloads        | 762661668 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.25855139E8 |
+| # stars            | 54.0 |
 
 ## Links
 - [Homepage](https://github.com/tarruda/has)

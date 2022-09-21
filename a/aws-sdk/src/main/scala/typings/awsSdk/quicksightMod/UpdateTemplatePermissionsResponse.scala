@@ -12,7 +12,7 @@ trait UpdateTemplatePermissionsResponse extends StObject {
   var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -44,7 +44,7 @@ object UpdateTemplatePermissionsResponse {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

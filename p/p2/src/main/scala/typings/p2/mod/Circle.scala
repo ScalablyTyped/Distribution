@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Circle")
 @js.native
-class Circle () extends Shape {
+open class Circle () extends Shape {
   def this(options: CircleOptions) = this()
   
   var radius: Double = js.native

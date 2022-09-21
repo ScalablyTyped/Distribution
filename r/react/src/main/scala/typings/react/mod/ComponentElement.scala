@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComponentElement[P, T /* <: Component[P, ComponentState, js.Any] */]
+trait ComponentElement[P, T /* <: Component[P, ComponentState, Any] */]
   extends StObject
      with ReactElement {
   
@@ -12,13 +12,13 @@ trait ComponentElement[P, T /* <: Component[P, ComponentState, js.Any] */]
 }
 object ComponentElement {
   
-  inline def apply[P, T /* <: Component[P, ComponentState, js.Any] */](props: js.Any, `type`: js.Any): ComponentElement[P, T] = {
+  inline def apply[P, T /* <: Component[P, ComponentState, Any] */](props: Any, `type`: Any): ComponentElement[P, T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentElement[P, T]]
   }
   
-  extension [Self <: ComponentElement[?, ?], P, T /* <: Component[P, ComponentState, js.Any] */](x: Self & (ComponentElement[P, T])) {
+  extension [Self <: ComponentElement[?, ?], P, T /* <: Component[P, ComponentState, Any] */](x: Self & (ComponentElement[P, T])) {
     
     inline def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

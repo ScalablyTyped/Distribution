@@ -107,7 +107,7 @@ object CreateApplicationRequest {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    inline def setLabelsVarargs(value: string*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: string*): Self = StObject.set(x, "Labels", js.Array(value*))
     
     inline def setLicenseBody(value: string): Self = StObject.set(x, "LicenseBody", value.asInstanceOf[js.Any])
     

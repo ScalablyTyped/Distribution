@@ -24,6 +24,6 @@ object DescribeEventCategoriesResponse {
     
     inline def setEventCategoryGroupListUndefined: Self = StObject.set(x, "EventCategoryGroupList", js.undefined)
     
-    inline def setEventCategoryGroupListVarargs(value: EventCategoryGroup*): Self = StObject.set(x, "EventCategoryGroupList", js.Array(value :_*))
+    inline def setEventCategoryGroupListVarargs(value: EventCategoryGroup*): Self = StObject.set(x, "EventCategoryGroupList", js.Array(value*))
   }
 }

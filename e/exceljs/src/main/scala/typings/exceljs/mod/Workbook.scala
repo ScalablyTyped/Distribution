@@ -1,14 +1,13 @@
 package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialAddWorksheetOption
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("exceljs", "Workbook")
 @js.native
-class Workbook () extends StObject {
+open class Workbook () extends StObject {
   
   /**
   	 * Add Image to Workbook and return the id
@@ -28,9 +27,13 @@ class Workbook () extends StObject {
   	 */
   var calcProperties: CalculationProperties = js.native
   
+  var category: String = js.native
+  
   def clearThemes(): Unit = js.native
   
-  var created: Date = js.native
+  var company: String = js.native
+  
+  var created: js.Date = js.native
   
   var creator: String = js.native
   
@@ -40,6 +43,8 @@ class Workbook () extends StObject {
   val csv: Csv = js.native
   
   val definedNames: DefinedNames = js.native
+  
+  var description: String = js.native
   
   /**
   	 * Iterate over all sheets.
@@ -56,13 +61,17 @@ class Workbook () extends StObject {
   	 */
   def getWorksheet(indexOrName: Double): Worksheet = js.native
   
+  var keywords: String = js.native
+  
   var lastModifiedBy: String = js.native
   
-  var lastPrinted: Date = js.native
+  var lastPrinted: js.Date = js.native
+  
+  var manager: String = js.native
   
   var model: WorkbookModel = js.native
   
-  var modified: Date = js.native
+  var modified: js.Date = js.native
   
   val nextId: Double = js.native
   
@@ -72,6 +81,10 @@ class Workbook () extends StObject {
   def removeWorksheet(indexOrName: Double): Unit = js.native
   
   def removeWorksheetEx(worksheet: Worksheet): Unit = js.native
+  
+  var subject: String = js.native
+  
+  var title: String = js.native
   
   /**
   	 * The Workbook views controls how many separate windows Excel will open when viewing the workbook.

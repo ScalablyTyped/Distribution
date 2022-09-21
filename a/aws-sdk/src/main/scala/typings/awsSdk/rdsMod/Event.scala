@@ -9,7 +9,7 @@ trait Event extends StObject {
   /**
     * Specifies the date and time of the event.
     */
-  var Date: js.UndefOr[TStamp] = js.undefined
+  var Date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies the category for the event.
@@ -45,7 +45,7 @@ object Event {
   
   extension [Self <: Event](x: Self) {
     
-    inline def setDate(value: TStamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
@@ -53,7 +53,7 @@ object Event {
     
     inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

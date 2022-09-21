@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxDevice Class */
 @JSGlobal("FAXCOMEXLib.FaxDevice")
 @js.native
-/* private */ class FaxDevice ()
+/* private */ open class FaxDevice ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxDevice {
   
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /** Get the device level extention property */
   /* CompleteClass */
-  override def GetExtensionProperty(bstrGUID: String): SafeArray[js.Any] = js.native
+  override def GetExtensionProperty(bstrGUID: String): SafeArray[Any] = js.native
   
   /** Unique device ID */
   /* CompleteClass */
@@ -83,7 +83,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /** Set the device level extention property */
   /* CompleteClass */
-  override def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[js.Any]): Unit = js.native
+  override def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[Any]): Unit = js.native
   
   /** Device's Transmitting Station ID */
   /* CompleteClass */

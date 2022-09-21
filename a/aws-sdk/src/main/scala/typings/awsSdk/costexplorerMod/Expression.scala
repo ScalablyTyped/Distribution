@@ -12,7 +12,7 @@ trait Expression extends StObject {
   var And: js.UndefOr[Expressions] = js.undefined
   
   /**
-    * The filter based on CostCategory values.
+    * The filter that's based on CostCategory values.
     */
   var CostCategories: js.UndefOr[CostCategoryValues] = js.undefined
   
@@ -49,7 +49,7 @@ object Expression {
     
     inline def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
     
-    inline def setAndVarargs(value: Expression*): Self = StObject.set(x, "And", js.Array(value :_*))
+    inline def setAndVarargs(value: Expression*): Self = StObject.set(x, "And", js.Array(value*))
     
     inline def setCostCategories(value: CostCategoryValues): Self = StObject.set(x, "CostCategories", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object Expression {
     
     inline def setOrUndefined: Self = StObject.set(x, "Or", js.undefined)
     
-    inline def setOrVarargs(value: Expression*): Self = StObject.set(x, "Or", js.Array(value :_*))
+    inline def setOrVarargs(value: Expression*): Self = StObject.set(x, "Or", js.Array(value*))
     
     inline def setTags(value: TagValues): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

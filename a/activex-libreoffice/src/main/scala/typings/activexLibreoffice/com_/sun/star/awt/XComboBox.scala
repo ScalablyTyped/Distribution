@@ -73,7 +73,7 @@ object XComboBox {
     getItem: Double => String,
     getItemCount: () => Double,
     getItems: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActionListener: XActionListener => Unit,
     removeItemListener: XItemListener => Unit,

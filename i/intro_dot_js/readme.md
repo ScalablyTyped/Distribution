@@ -1,19 +1,19 @@
 
 # Scala.js typings for intro_dot_js
 
-Typings are for version 2.4
+Typings are for version 5.1
 
 ## Library description:
-Lightweight, user-friendly onboarding tour library
+User Onboarding and Product Walkthrough Library
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | intro.js |
-| Keywords           | onboarding, tour, introjs, intro, guide, walkthrough |
-| # releases         | 5 |
-| # dependents       | 34 |
-| # downloads        | 1611939 |
-| # stars            | 11 |
+| Keywords           | onboarding, tour, introjs, intro, guide, walkthrough, user-onboarding |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 325519.0 |
+| # stars            | 21360.0 |
 
 ## Links
 - [Homepage](https://introjs.com)

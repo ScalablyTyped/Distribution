@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object chevronLeftMod extends Shortcut {
   
-  @JSImport("@carbon/icons-react/lib/chevron--left", JSImport.Default)
+  @JSImport("@carbon/icons-react/lib/ChevronLeft", JSImport.Default)
   @js.native
   val default: CarbonIconType = js.native
   

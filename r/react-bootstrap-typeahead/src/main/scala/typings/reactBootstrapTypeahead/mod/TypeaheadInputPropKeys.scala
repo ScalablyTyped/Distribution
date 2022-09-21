@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.bsSize
   - typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.disabled
   - typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.inputProps
   - typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey
@@ -20,8 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait TypeaheadInputPropKeys extends StObject
 object TypeaheadInputPropKeys {
-  
-  inline def bsSize: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.bsSize = "bsSize".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.bsSize]
   
   inline def disabled: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.disabled = "disabled".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.disabled]
   

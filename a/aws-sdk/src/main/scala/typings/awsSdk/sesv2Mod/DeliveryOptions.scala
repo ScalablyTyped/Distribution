@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeliveryOptions extends StObject {
   
   /**
-    * The name of the dedicated IP pool that you want to associate with the configuration set.
+    * The name of the dedicated IP pool to associate with the configuration set.
     */
   var SendingPoolName: js.UndefOr[PoolName] = js.undefined
   

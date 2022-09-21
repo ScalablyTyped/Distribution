@@ -10,7 +10,7 @@ object frontFacingBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/frontFacingBlock", "FrontFacingBlock")
   @js.native
-  class FrontFacingBlock protected () extends NodeMaterialBlock {
+  open class FrontFacingBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new FrontFacingBlock
       * @param name defines the block name

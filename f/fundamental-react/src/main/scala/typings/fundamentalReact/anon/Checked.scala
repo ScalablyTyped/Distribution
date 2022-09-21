@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Checked extends StObject {
   
-  var checked: js.UndefOr[js.Any] = js.undefined
+  var checked: js.UndefOr[Any] = js.undefined
   
-  var unchecked: js.UndefOr[js.Any] = js.undefined
+  var unchecked: js.UndefOr[Any] = js.undefined
 }
 object Checked {
   
@@ -19,11 +19,11 @@ object Checked {
   
   extension [Self <: Checked](x: Self) {
     
-    inline def setChecked(value: js.Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    inline def setUnchecked(value: js.Any): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
+    inline def setUnchecked(value: Any): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
     
     inline def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
   }

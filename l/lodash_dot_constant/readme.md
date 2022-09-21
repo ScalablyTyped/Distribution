@@ -10,10 +10,10 @@ The modern build of lodash’s `_.constant` as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.constant |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 1734274 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 188847.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

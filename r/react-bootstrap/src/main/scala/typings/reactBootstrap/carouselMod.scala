@@ -14,8 +14,8 @@ object carouselMod {
   
   @JSImport("react-bootstrap/lib/Carousel", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[CarouselProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[CarouselProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Carousel", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -23,7 +23,7 @@ object carouselMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Carousel", "Caption")
   @js.native
-  class Caption ()
+  open class Caption ()
     extends typings.reactBootstrap.carouselCaptionMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Carousel", "Caption")
@@ -34,7 +34,7 @@ object carouselMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Carousel", "Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.reactBootstrap.carouselItemMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Carousel", "Item")
@@ -42,9 +42,7 @@ object carouselMod {
   def Item: Instantiable0[typings.reactBootstrap.carouselItemMod.^] = js.native
   inline def Item_=(x: Instantiable0[typings.reactBootstrap.carouselItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Carousel
-    extends Component[CarouselProps, js.Object, js.Any]
+  type Carousel = Component[CarouselProps, js.Object, Any]
   
-  type CarouselProps = (Omit[HTMLProps[Carousel], wrap]) & ActiveIndex
+  type CarouselProps = (Omit[HTMLProps[Any], wrap]) & ActiveIndex
 }

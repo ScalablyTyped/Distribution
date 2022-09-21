@@ -1,7 +1,8 @@
 package typings.rcTree
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.FC
+import typings.react.mod.MemoExoticComponent
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ object indentMod extends Shortcut {
   
   @JSImport("rc-tree/es/Indent", JSImport.Default)
   @js.native
-  val default: FC[IndentProps] = js.native
+  val default: MemoExoticComponent[js.Function1[/* hasPrefixClsLevelIsStartIsEnd */ IndentProps, Element]] = js.native
   
   trait IndentProps extends StObject {
     
@@ -33,11 +34,11 @@ object indentMod extends Shortcut {
       
       inline def setIsEnd(value: js.Array[Boolean]): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
       
-      inline def setIsEndVarargs(value: Boolean*): Self = StObject.set(x, "isEnd", js.Array(value :_*))
+      inline def setIsEndVarargs(value: Boolean*): Self = StObject.set(x, "isEnd", js.Array(value*))
       
       inline def setIsStart(value: js.Array[Boolean]): Self = StObject.set(x, "isStart", value.asInstanceOf[js.Any])
       
-      inline def setIsStartVarargs(value: Boolean*): Self = StObject.set(x, "isStart", js.Array(value :_*))
+      inline def setIsStartVarargs(value: Boolean*): Self = StObject.set(x, "isStart", js.Array(value*))
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -45,8 +46,8 @@ object indentMod extends Shortcut {
     }
   }
   
-  type _To = FC[IndentProps]
+  type _To = MemoExoticComponent[js.Function1[/* hasPrefixClsLevelIsStartIsEnd */ IndentProps, Element]]
   
   /* This means you don't have to write `default`, but can instead just say `indentMod.foo` */
-  override def _to: FC[IndentProps] = default
+  override def _to: MemoExoticComponent[js.Function1[/* hasPrefixClsLevelIsStartIsEnd */ IndentProps, Element]] = default
 }

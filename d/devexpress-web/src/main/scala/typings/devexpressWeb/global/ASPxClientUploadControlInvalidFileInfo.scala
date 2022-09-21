@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientUploadControlInvalidFileInfo")
 @js.native
-class ASPxClientUploadControlInvalidFileInfo ()
+open class ASPxClientUploadControlInvalidFileInfo ()
   extends StObject
      with typings.devexpressWeb.ASPxClientUploadControlInvalidFileInfo {
   

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("prism-react-renderer", JSImport.Default)
 @js.native
-class default () extends Highlight
+open class default () extends Highlight

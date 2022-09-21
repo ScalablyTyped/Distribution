@@ -1,7 +1,7 @@
 
 # Scala.js typings for inversify-express-utils
 
-Typings are for version 6.3.2
+Typings are for version 6.4.3
 
 ## Library description:
 Some utilities for the development of express applications with Inversify
@@ -10,10 +10,10 @@ Some utilities for the development of express applications with Inversify
 | ------------------ | :-------------: |
 | Full name          | inversify-express-utils |
 | Keywords           | InversifyJS, express |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 959085 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 137472.33333333334 |
+| # stars            | 513.0 |
 
 ## Links
 - [Homepage](https://github.com/inversify/inversify-express-utils#readme)

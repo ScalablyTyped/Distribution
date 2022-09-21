@@ -11,11 +11,11 @@ trait BaseElevationLayer
      with Layer {
   
   /**
-    * Adds a promise to the layer's [loadable](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#loadable) chain.
+    * Adds a promise to the layer's [loadable](https://developers.arcgis.com/javascript/latest/programming-patterns/#loadable) chain.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#addResolvingPromise)
     */
-  def addResolvingPromise(promiseToLoad: js.Promise[js.Any]): js.Promise[js.Any] = js.native
+  def addResolvingPromise(promiseToLoad: js.Promise[Any]): js.Promise[Any] = js.native
   
   /**
     * Creates an elevation sampler for the given [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) by querying the service layer for elevation data and caching it so values may be sampled quickly afterwards.
@@ -55,6 +55,8 @@ trait BaseElevationLayer
   
   /**
     * The spatial reference of the layer.
+    *
+    * @default {@link module:esri/geometry/SpatialReference#WebMercator SpatialReference.WebMercator}
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#spatialReference)
     */

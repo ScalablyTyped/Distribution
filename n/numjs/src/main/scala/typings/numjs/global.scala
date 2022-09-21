@@ -1,20 +1,12 @@
 package typings.numjs
 
+import typings.ndarray.mod.Data
 import typings.ndarray.mod.DataType
 import typings.numjs.mod.NdArray
 import typings.numjs.mod.NdArrayData
 import typings.numjs.mod.NdType
 import typings.numjs.mod.NjArray
 import typings.numjs.mod.NjParam
-import typings.std.Error
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +38,7 @@ object global {
     inline def arctan[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arctan")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
     
     inline def array[T](arr: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(arr.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
-    inline def array[T](arr: NjArray[T], dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(arr.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+    inline def array[T](arr: NjArray[T], dtype: DataType[Data[Any]]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(arr.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     
     inline def broadcast[T, U](shape1: js.Array[T], shape2: js.Array[U]): js.Array[T | U] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(shape1.asInstanceOf[js.Any], shape2.asInstanceOf[js.Any])).asInstanceOf[js.Array[T | U]]
     
@@ -55,7 +47,7 @@ object global {
     inline def clip[T](x: NjParam[T], min: Double, max: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("clip")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     inline def clip[T](x: NjParam[T], min: Unit, max: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("clip")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     
-    inline def concatenate[T](arrays: NjArray[T]*): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(arrays.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+    inline def concatenate[T](arrays: NjArray[T]*): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(arrays.asInstanceOf[Seq[js.Any]]*).asInstanceOf[NdArray[T]]
     
     inline def convolve[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convolve")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     
@@ -80,14 +72,14 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def ConfigError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ConfigError")().asInstanceOf[Error]
-      inline def ConfigError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ConfigError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+      inline def ConfigError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ConfigError")().asInstanceOf[js.Error]
+      inline def ConfigError(message: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ConfigError")(message.asInstanceOf[js.Any]).asInstanceOf[js.Error]
       
-      inline def NotImplementedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NotImplementedError")().asInstanceOf[Error]
-      inline def NotImplementedError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NotImplementedError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+      inline def NotImplementedError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NotImplementedError")().asInstanceOf[js.Error]
+      inline def NotImplementedError(message: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NotImplementedError")(message.asInstanceOf[js.Any]).asInstanceOf[js.Error]
       
-      inline def ValueError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueError")().asInstanceOf[Error]
-      inline def ValueError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+      inline def ValueError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueError")().asInstanceOf[js.Error]
+      inline def ValueError(message: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueError")(message.asInstanceOf[js.Any]).asInstanceOf[js.Error]
     }
     
     inline def exp[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
@@ -98,14 +90,14 @@ object global {
     
     inline def flatten[T](array: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
     
-    inline def float32[T](arr: NjArray[T]): NjArray[Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("float32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Float32Array]]
+    inline def float32[T](arr: NjArray[T]): NjArray[js.typedarray.Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("float32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[js.typedarray.Float32Array]]
     
-    inline def float64[T](arr: NjArray[T]): NjArray[Float64Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("float64")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Float64Array]]
+    inline def float64[T](arr: NjArray[T]): NjArray[js.typedarray.Float64Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("float64")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[js.typedarray.Float64Array]]
     
-    inline def getRawData[T](array: NdArrayData[T]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawData")(array.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def getRawData[T](array: NdArrayData[T]): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawData")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def identity[T](n: T): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(n.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
-    inline def identity[T](n: T, dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("identity")(n.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+    inline def identity[T](n: T, dtype: DataType[Data[Any]]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("identity")(n.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     
     inline def ifft[T](x: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifft")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
     
@@ -170,28 +162,28 @@ object global {
       
       inline def flip[T, O](img: NdArray[T]): NdArray[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[O]]
       
-      inline def read(input: String): NdArray[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[NdArray[Uint8Array]]
+      inline def read(input: String): NdArray[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[NdArray[js.typedarray.Uint8Array]]
       
-      inline def resize[T](img: NdArray[T], height: Double, width: Double): NdArray[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(img.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[NdArray[Uint8Array]]
+      inline def resize[T](img: NdArray[T], height: Double, width: Double): NdArray[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(img.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[NdArray[js.typedarray.Uint8Array]]
       
-      inline def rgb2gray[T](img: NdArray[T]): NdArray[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Uint8Array]]
+      inline def rgb2gray[T](img: NdArray[T]): NdArray[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[js.typedarray.Uint8Array]]
       
-      inline def sat[T](img: NdArray[T]): NdArray[Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("sat")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Uint32Array]]
+      inline def sat[T](img: NdArray[T]): NdArray[js.typedarray.Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("sat")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[js.typedarray.Uint32Array]]
       
       inline def save[T](img: NdArray[T], dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(img.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def scharr[T](img: NdArray[T]): NdArray[Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("scharr")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Float32Array]]
+      inline def scharr[T](img: NdArray[T]): NdArray[js.typedarray.Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("scharr")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[js.typedarray.Float32Array]]
       
-      inline def sobel[T](img: NdArray[T]): NdArray[Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("sobel")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Float32Array]]
+      inline def sobel[T](img: NdArray[T]): NdArray[js.typedarray.Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("sobel")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[js.typedarray.Float32Array]]
       
-      inline def ssat[T](img: NdArray[T]): NdArray[Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("ssat")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Uint32Array]]
+      inline def ssat[T](img: NdArray[T]): NdArray[js.typedarray.Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("ssat")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[js.typedarray.Uint32Array]]
     }
     
-    inline def int16[T](arr: NjArray[T]): NjArray[Int16Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int16")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Int16Array]]
+    inline def int16[T](arr: NjArray[T]): NjArray[js.typedarray.Int16Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int16")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[js.typedarray.Int16Array]]
     
-    inline def int32[T](arr: NjArray[T]): NjArray[Int32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Int32Array]]
+    inline def int32[T](arr: NjArray[T]): NjArray[js.typedarray.Int32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[js.typedarray.Int32Array]]
     
-    inline def int8[T](arr: NjArray[T]): NjArray[Int8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int8")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Int8Array]]
+    inline def int8[T](arr: NjArray[T]): NjArray[js.typedarray.Int8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int8")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[js.typedarray.Int8Array]]
     
     inline def max[T](x: NjParam[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any]).asInstanceOf[T]
     
@@ -199,14 +191,17 @@ object global {
     
     inline def min[T](x: NjParam[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
     
+    inline def mod[T](x: NjParam[T]): js.Array[NdArray[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[NdArray[Double]]]
+    inline def mod[T](x: NjParam[T], copy: Boolean): js.Array[NdArray[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], copy.asInstanceOf[js.Any])).asInstanceOf[js.Array[NdArray[Double]]]
+    
     inline def multiply[T](a: NjArray[T], b: NjParam[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     
     inline def negative[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("negative")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
     
     inline def ones[T](shape: Double): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
-    inline def ones[T](shape: Double, dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+    inline def ones[T](shape: Double, dtype: DataType[Data[Any]]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     inline def ones[T](shape: NdArrayData[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
-    inline def ones[T](shape: NdArrayData[T], dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+    inline def ones[T](shape: NdArrayData[T], dtype: DataType[Data[Any]]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     
     inline def power[T](x1: NjParam[T], x2: NjParam[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("power")(x1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     
@@ -218,7 +213,7 @@ object global {
     
     inline def round[T](x: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
     
-    inline def setRawData[T](array: NdArrayData[T], data: NdArrayData[T]): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("setRawData")(array.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def setRawData[T](array: NdArrayData[T], data: NdArrayData[T]): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("setRawData")(array.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def sigmoid[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sigmoid")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
     inline def sigmoid[T](x: NjParam[T], t: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sigmoid")(x.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
@@ -245,15 +240,15 @@ object global {
     inline def transpose[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
     inline def transpose[T](x: NjParam[T], axes: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], axes.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     
-    inline def uint16[T](arr: NjArray[T]): NjArray[Uint16Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint16")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Uint16Array]]
+    inline def uint16[T](arr: NjArray[T]): NjArray[js.typedarray.Uint16Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint16")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[js.typedarray.Uint16Array]]
     
-    inline def uint32[T](arr: NjArray[T]): NjArray[Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Uint32Array]]
+    inline def uint32[T](arr: NjArray[T]): NjArray[js.typedarray.Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[js.typedarray.Uint32Array]]
     
-    inline def uint8[T](arr: NjArray[T]): NjArray[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint8")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Uint8Array]]
+    inline def uint8[T](arr: NjArray[T]): NjArray[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint8")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[js.typedarray.Uint8Array]]
     
     inline def zeros[T](shape: Double): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
-    inline def zeros[T](shape: Double, dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+    inline def zeros[T](shape: Double, dtype: DataType[Data[Any]]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
     inline def zeros[T](shape: NdArrayData[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
-    inline def zeros[T](shape: NdArrayData[T], dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+    inline def zeros[T](shape: NdArrayData[T], dtype: DataType[Data[Any]]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   }
 }

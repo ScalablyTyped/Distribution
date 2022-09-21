@@ -6,18 +6,16 @@ import typings.hapiHapi.anon.Req
 import typings.hapiHapi.mod.Util.Dictionary
 import typings.hapiHapi.mod.Util.HTTP_METHODS_PARTIAL
 import typings.hapiHapi.mod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
-import typings.hapiPodium.mod.Podium
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Request
-  extends StObject
-     with Podium {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Podium * / any */ @js.native
+trait Request extends StObject {
   
   /**
     * Returns `true` when the request is active and processing should continue and `false` when the
@@ -140,7 +138,7 @@ trait Request
   /**
     * An object where each key is a path parameter name with matching value as described in [Path parameters](https://github.com/hapijs/hapi/blob/master/API.md#path-parameters).
     */
-  val params: Dictionary[js.Any] = js.native
+  val params: Dictionary[Any] = js.native
   
   /**
     * An array containing all the path params values in the order they appeared in the path.
@@ -167,12 +165,12 @@ trait Request
     * An object where each key is the name assigned by a route pre-handler methods function. The values are the raw values provided to the continuation function as argument. For the wrapped response
     * object, use responses.
     */
-  val pre: Dictionary[js.Any] = js.native
+  val pre: Dictionary[Any] = js.native
   
   /**
     * Same as pre but represented as the response object created by the pre method.
     */
-  val preResponses: Dictionary[js.Any] = js.native
+  val preResponses: Dictionary[Any] = js.native
   
   /**
     * By default the object outputted from node's URL parse() method.
@@ -192,7 +190,7 @@ trait Request
     * override with a different response.
     * In case of an aborted request the status code will be set to `disconnectStatusCode`.
     */
-  var response: ResponseObject | Boom[js.Any] = js.native
+  var response: ResponseObject | Boom[Any] = js.native
   
   /**
     * The request route information object and method
@@ -233,7 +231,7 @@ trait Request
   /**
     * An object containing parsed HTTP state information (cookies) where each key is the cookie name and value is the matching cookie content after processing using any registered cookie definition.
     */
-  val state: Dictionary[js.Any] = js.native
+  val state: Dictionary[Any] = js.native
   
   /**
     * The parsed request URI.

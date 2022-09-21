@@ -10,17 +10,17 @@ trait IMemoryProxy
      with IClient {
   
   /** [Config Option] (Object) */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of data
     * @returns Object
     */
-  var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Sets the value of data
     * @param data Object The new value.
     */
-  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IMemoryProxy {
   
@@ -31,15 +31,15 @@ object IMemoryProxy {
   
   extension [Self <: IMemoryProxy](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
-    inline def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
     inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
   }

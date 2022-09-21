@@ -10,10 +10,10 @@ The core framework provided by the JUI for implementing such a grid and chart.
 | ------------------ | :-------------: |
 | Full name          | jui-core |
 | Keywords           | HTML5, NodeJS, CSS, JS, JavaScript, SVG, Chart, Framework, Web Development, free, MIT |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 668 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 56.666666666666664 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/juijs/jui-core)

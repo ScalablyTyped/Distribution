@@ -1,6 +1,5 @@
 package typings.typescript.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,9 @@ trait SolutionBuilderHostBase[T /* <: BuilderProgram */]
   
   def deleteFile(fileName: java.lang.String): Unit = js.native
   
-  def getModifiedTime(fileName: java.lang.String): js.UndefOr[Date] = js.native
+  var getCustomTransformers: js.UndefOr[js.Function1[/* project */ java.lang.String, js.UndefOr[CustomTransformers]]] = js.native
+  
+  def getModifiedTime(fileName: java.lang.String): js.UndefOr[js.Date] = js.native
   
   var getParsedCommandLine: js.UndefOr[js.Function1[/* fileName */ java.lang.String, js.UndefOr[ParsedCommandLine]]] = js.native
   
@@ -28,7 +29,7 @@ trait SolutionBuilderHostBase[T /* <: BuilderProgram */]
   @JSName("reportSolutionBuilderStatus")
   var reportSolutionBuilderStatus_Original: DiagnosticReporter = js.native
   
-  def setModifiedTime(fileName: java.lang.String, date: Date): Unit = js.native
+  def setModifiedTime(fileName: java.lang.String, date: js.Date): Unit = js.native
   
   /**
     * Should provide create directory and writeFile if done of invalidatedProjects is not invoked with

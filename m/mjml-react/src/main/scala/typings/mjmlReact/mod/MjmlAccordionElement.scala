@@ -7,16 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlAccordionElement")
 @js.native
-class MjmlAccordionElement protected ()
-  extends Component[
-      RequiredChildrenProps & MjmlAccordionElementProps & ClassNameProps, 
-      js.Object, 
-      js.Any
-    ] {
-  def this(props: RequiredChildrenProps & MjmlAccordionElementProps & ClassNameProps) = this()
+open class MjmlAccordionElement protected ()
+  extends Component[MjmlAccordionElementProps & ClassNameProps, js.Object, Any] {
+  def this(props: MjmlAccordionElementProps & ClassNameProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RequiredChildrenProps & MjmlAccordionElementProps & ClassNameProps, context: js.Any) = this()
+  def this(props: MjmlAccordionElementProps & ClassNameProps, context: Any) = this()
 }

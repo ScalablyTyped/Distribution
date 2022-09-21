@@ -13,7 +13,7 @@ object proxy {
        with IServer {
     
     /** [Property] (Object) */
-    var actionMethods: js.UndefOr[js.Any] = js.undefined
+    var actionMethods: js.UndefOr[Any] = js.undefined
     
     /** [Method] Performs Ajax request
       * @param operation Ext.data.Operation
@@ -25,16 +25,16 @@ object proxy {
     var doRequest_IAjax: js.UndefOr[
         js.Function3[
           /* operation */ js.UndefOr[IOperation], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          js.Any
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          Any
         ]
       ] = js.undefined
     
     /** [Method] Returns the value of headers
       * @returns Object
       */
-    var getHeaders: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getHeaders: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the HTTP method name for a given request
       * @param request Ext.data.Request The request object.
@@ -63,7 +63,7 @@ object proxy {
     var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Object) */
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var password: js.UndefOr[String] = js.undefined
@@ -71,7 +71,7 @@ object proxy {
     /** [Method] Sets the value of headers
       * @param headers Object The new value.
       */
-    var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of password
       * @param password String The new value.
@@ -111,17 +111,17 @@ object proxy {
     
     extension [Self <: IAjax](x: Self) {
       
-      inline def setActionMethods(value: js.Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
+      inline def setActionMethods(value: Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
       
       inline def setActionMethodsUndefined: Self = StObject.set(x, "actionMethods", js.undefined)
       
       inline def setDoRequest(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
       
       inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
       
-      inline def setGetHeaders(value: () => js.Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+      inline def setGetHeaders(value: () => Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
       
       inline def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
       
@@ -145,7 +145,7 @@ object proxy {
       
       inline def setGetWithCredentialsUndefined: Self = StObject.set(x, "getWithCredentials", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -153,7 +153,7 @@ object proxy {
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      inline def setSetHeaders(value: /* headers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+      inline def setSetHeaders(value: /* headers */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
       
       inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
       
@@ -220,7 +220,7 @@ object proxy {
     var buildUrl_IDirect: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (Function/String) */
-    var directFn: js.UndefOr[js.Any] = js.undefined
+    var directFn: js.UndefOr[Any] = js.undefined
     
     /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
       * @param operation Object
@@ -230,9 +230,9 @@ object proxy {
     @JSName("doRequest")
     var doRequest_IDirect: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -240,12 +240,12 @@ object proxy {
     /** [Method] Returns the value of directFn
       * @returns Function/String
       */
-    var getDirectFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getDirectFn: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of paramOrder
       * @returns String/String[]
       */
-    var getParamOrder: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getParamOrder: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of paramsAsHash
       * @returns Boolean
@@ -253,7 +253,7 @@ object proxy {
     var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var paramOrder: js.UndefOr[js.Any] = js.undefined
+    var paramOrder: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var paramsAsHash: js.UndefOr[Boolean] = js.undefined
@@ -261,12 +261,12 @@ object proxy {
     /** [Method] Sets the value of directFn
       * @param directFn Function/String The new value.
       */
-    var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of paramOrder
       * @param paramOrder String/String[] The new value.
       */
-    var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of paramsAsHash
       * @param paramsAsHash Boolean The new value.
@@ -286,21 +286,21 @@ object proxy {
       
       inline def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
       
-      inline def setDirectFn(value: js.Any): Self = StObject.set(x, "directFn", value.asInstanceOf[js.Any])
+      inline def setDirectFn(value: Any): Self = StObject.set(x, "directFn", value.asInstanceOf[js.Any])
       
       inline def setDirectFnUndefined: Self = StObject.set(x, "directFn", js.undefined)
       
       inline def setDoRequest(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
       
       inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
       
-      inline def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
+      inline def setGetDirectFn(value: () => Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
       
       inline def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
       
-      inline def setGetParamOrder(value: () => js.Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
+      inline def setGetParamOrder(value: () => Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
       
       inline def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)
       
@@ -308,7 +308,7 @@ object proxy {
       
       inline def setGetParamsAsHashUndefined: Self = StObject.set(x, "getParamsAsHash", js.undefined)
       
-      inline def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
+      inline def setParamOrder(value: Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
       
       inline def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
       
@@ -316,11 +316,11 @@ object proxy {
       
       inline def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
       
-      inline def setSetDirectFn(value: /* directFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1(value))
+      inline def setSetDirectFn(value: /* directFn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1(value))
       
       inline def setSetDirectFnUndefined: Self = StObject.set(x, "setDirectFn", js.undefined)
       
-      inline def setSetParamOrder(value: /* paramOrder */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParamOrder", js.Any.fromFunction1(value))
+      inline def setSetParamOrder(value: /* paramOrder */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setParamOrder", js.Any.fromFunction1(value))
       
       inline def setSetParamOrderUndefined: Self = StObject.set(x, "setParamOrder", js.undefined)
       
@@ -353,9 +353,9 @@ object proxy {
     var doRequest_IJsonP: js.UndefOr[
         js.Function3[
           /* operation */ js.UndefOr[IOperation], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          js.Any
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          Any
         ]
       ] = js.undefined
     
@@ -424,7 +424,7 @@ object proxy {
       inline def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
       
       inline def setDoRequest(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
       
       inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
@@ -474,17 +474,17 @@ object proxy {
        with IClient {
     
     /** [Config Option] (Object) */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getData: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IMemory {
     
@@ -495,15 +495,15 @@ object proxy {
     
     extension [Self <: IMemory](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
-      inline def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+      inline def setSetData(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
       
       inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
     }
@@ -517,7 +517,7 @@ object proxy {
       * @param options Object Object containing one or more properties supported by the batch method:
       * @returns Ext.data.Batch The newly created Batch
       */
-    var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.undefined
+    var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IBatch]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var batchActions: js.UndefOr[Boolean] = js.undefined
@@ -533,8 +533,8 @@ object proxy {
     var create: js.UndefOr[
         js.Function3[
           /* operation */ js.UndefOr[IOperation], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -548,8 +548,8 @@ object proxy {
     var destroy_IProxy: js.UndefOr[
         js.Function3[
           /* operation */ js.UndefOr[IOperation], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -567,20 +567,20 @@ object proxy {
     /** [Method] Returns the value of model
       * @returns String/Ext.data.Model
       */
-    var getModel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getModel: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of reader
       * @returns Object/String/Ext.data.reader.Reader
       */
-    var getReader: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getReader: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of writer
       * @returns Object/String/Ext.data.writer.Writer
       */
-    var getWriter: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getWriter: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (String/Ext.data.Model) */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** [Method] Performs the given read operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -590,14 +590,14 @@ object proxy {
     var read: js.UndefOr[
         js.Function3[
           /* operation */ js.UndefOr[IOperation], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
     
     /** [Config Option] (Object/String/Ext.data.reader.Reader) */
-    var reader: js.UndefOr[js.Any] = js.undefined
+    var reader: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of batchActions
       * @param batchActions Boolean The new value.
@@ -612,17 +612,17 @@ object proxy {
     /** [Method] Sets the value of model
       * @param model String/Ext.data.Model The new value.
       */
-    var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of reader
       * @param reader Object/String/Ext.data.reader.Reader The new value.
       */
-    var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of writer
       * @param writer Object/String/Ext.data.writer.Writer The new value.
       */
-    var setWriter: js.UndefOr[js.Function1[/* writer */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setWriter: js.UndefOr[js.Function1[/* writer */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Performs the given update operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -632,14 +632,14 @@ object proxy {
     var update: js.UndefOr[
         js.Function3[
           /* operation */ js.UndefOr[IOperation], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
     
     /** [Config Option] (Object/String/Ext.data.writer.Writer) */
-    var writer: js.UndefOr[js.Any] = js.undefined
+    var writer: js.UndefOr[Any] = js.undefined
   }
   object IProxy {
     
@@ -650,7 +650,7 @@ object proxy {
     
     extension [Self <: typings.senchaTouch.Ext.data.proxy.IProxy](x: Self) {
       
-      inline def setBatch(value: /* options */ js.UndefOr[js.Any] => IBatch): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
+      inline def setBatch(value: /* options */ js.UndefOr[Any] => IBatch): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
       
       inline def setBatchActions(value: Boolean): Self = StObject.set(x, "batchActions", value.asInstanceOf[js.Any])
       
@@ -663,13 +663,13 @@ object proxy {
       inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
       
       inline def setCreate(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
       inline def setDestroy(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
@@ -682,29 +682,29 @@ object proxy {
       
       inline def setGetBatchOrderUndefined: Self = StObject.set(x, "getBatchOrder", js.undefined)
       
-      inline def setGetModel(value: () => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+      inline def setGetModel(value: () => Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
       
       inline def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
       
-      inline def setGetReader(value: () => js.Any): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
+      inline def setGetReader(value: () => Any): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
       
       inline def setGetReaderUndefined: Self = StObject.set(x, "getReader", js.undefined)
       
-      inline def setGetWriter(value: () => js.Any): Self = StObject.set(x, "getWriter", js.Any.fromFunction0(value))
+      inline def setGetWriter(value: () => Any): Self = StObject.set(x, "getWriter", js.Any.fromFunction0(value))
       
       inline def setGetWriterUndefined: Self = StObject.set(x, "getWriter", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
       inline def setRead(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
       
       inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      inline def setReader(value: js.Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+      inline def setReader(value: Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
       
       inline def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
       
@@ -716,25 +716,25 @@ object proxy {
       
       inline def setSetBatchOrderUndefined: Self = StObject.set(x, "setBatchOrder", js.undefined)
       
-      inline def setSetModel(value: /* model */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
+      inline def setSetModel(value: /* model */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
       
       inline def setSetModelUndefined: Self = StObject.set(x, "setModel", js.undefined)
       
-      inline def setSetReader(value: /* reader */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReader", js.Any.fromFunction1(value))
+      inline def setSetReader(value: /* reader */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setReader", js.Any.fromFunction1(value))
       
       inline def setSetReaderUndefined: Self = StObject.set(x, "setReader", js.undefined)
       
-      inline def setSetWriter(value: /* writer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setWriter", js.Any.fromFunction1(value))
+      inline def setSetWriter(value: /* writer */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setWriter", js.Any.fromFunction1(value))
       
       inline def setSetWriterUndefined: Self = StObject.set(x, "setWriter", js.undefined)
       
       inline def setUpdate(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       
-      inline def setWriter(value: js.Any): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
+      inline def setWriter(value: Any): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
       
       inline def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
     }
@@ -753,7 +753,7 @@ object proxy {
     /** [Method] Returns the value of actionMethods
       * @returns Object
       */
-    var getActionMethods: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getActionMethods: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of appendId
       * @returns Boolean
@@ -768,7 +768,7 @@ object proxy {
     /** [Method] Sets the value of actionMethods
       * @param actionMethods Object The new value.
       */
-    var setActionMethods: js.UndefOr[js.Function1[/* actionMethods */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setActionMethods: js.UndefOr[js.Function1[/* actionMethods */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of appendId
       * @param appendId Boolean The new value.
@@ -797,7 +797,7 @@ object proxy {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setGetActionMethods(value: () => js.Any): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
+      inline def setGetActionMethods(value: () => Any): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
       
       inline def setGetActionMethodsUndefined: Self = StObject.set(x, "getActionMethods", js.undefined)
       
@@ -809,7 +809,7 @@ object proxy {
       
       inline def setGetFormatUndefined: Self = StObject.set(x, "getFormat", js.undefined)
       
-      inline def setSetActionMethods(value: /* actionMethods */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActionMethods", js.Any.fromFunction1(value))
+      inline def setSetActionMethods(value: /* actionMethods */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setActionMethods", js.Any.fromFunction1(value))
       
       inline def setSetActionMethodsUndefined: Self = StObject.set(x, "setActionMethods", js.undefined)
       
@@ -836,7 +836,7 @@ object proxy {
       ] = js.undefined
     
     /** [Config Option] (Object) */
-    var api: js.UndefOr[js.Any] = js.undefined
+    var api: js.UndefOr[Any] = js.undefined
     
     /** [Method] Creates and returns an Ext data Request object based on the options passed by the Store that this Proxy is attached to
       * @param operation Ext.data.Operation The Operation object to execute
@@ -868,8 +868,8 @@ object proxy {
     var doRequest: js.UndefOr[
         js.Function3[
           /* operation */ js.UndefOr[IOperation], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -890,7 +890,7 @@ object proxy {
     var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], String]] = js.undefined
     
     /** [Config Option] (Object) */
-    var extraParams: js.UndefOr[js.Any] = js.undefined
+    var extraParams: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var filterParam: js.UndefOr[String] = js.undefined
@@ -898,7 +898,7 @@ object proxy {
     /** [Method] Returns the value of api
       * @returns Object
       */
-    var getApi: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getApi: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of cacheString
       * @returns String
@@ -918,7 +918,7 @@ object proxy {
     /** [Method] Returns the value of extraParams
       * @returns Object
       */
-    var getExtraParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getExtraParams: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of filterParam
       * @returns String
@@ -990,9 +990,9 @@ object proxy {
           /* success */ js.UndefOr[Boolean], 
           /* operation */ js.UndefOr[IOperation], 
           /* request */ js.UndefOr[IRequest], 
-          /* response */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* response */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1004,7 +1004,7 @@ object proxy {
     /** [Method] Sets the value of api
       * @param api Object The new value.
       */
-    var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of cacheString
       * @param cacheString String The new value.
@@ -1025,14 +1025,12 @@ object proxy {
       * @param name String The key for the new value
       * @param value Object The value
       */
-    var setExtraParam: js.UndefOr[
-        js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var setExtraParam: js.UndefOr[js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of extraParams
       * @param extraParams Object The new value.
       */
-    var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of filterParam
       * @param filterParam String The new value.
@@ -1116,7 +1114,7 @@ object proxy {
       
       inline def setAfterRequestUndefined: Self = StObject.set(x, "afterRequest", js.undefined)
       
-      inline def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
       inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
       
@@ -1141,7 +1139,7 @@ object proxy {
       inline def setDirectionParamUndefined: Self = StObject.set(x, "directionParam", js.undefined)
       
       inline def setDoRequest(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
       
       inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
@@ -1158,7 +1156,7 @@ object proxy {
       
       inline def setEncodeSortersUndefined: Self = StObject.set(x, "encodeSorters", js.undefined)
       
-      inline def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
+      inline def setExtraParams(value: Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
       
       inline def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
       
@@ -1166,7 +1164,7 @@ object proxy {
       
       inline def setFilterParamUndefined: Self = StObject.set(x, "filterParam", js.undefined)
       
-      inline def setGetApi(value: () => js.Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
+      inline def setGetApi(value: () => Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
       
       inline def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
       
@@ -1182,7 +1180,7 @@ object proxy {
       
       inline def setGetEnablePagingParamsUndefined: Self = StObject.set(x, "getEnablePagingParams", js.undefined)
       
-      inline def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
+      inline def setGetExtraParams(value: () => Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
       
       inline def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
       
@@ -1239,7 +1237,7 @@ object proxy {
       inline def setPageParamUndefined: Self = StObject.set(x, "pageParam", js.undefined)
       
       inline def setProcessResponse(
-        value: (/* success */ js.UndefOr[Boolean], /* operation */ js.UndefOr[IOperation], /* request */ js.UndefOr[IRequest], /* response */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* success */ js.UndefOr[Boolean], /* operation */ js.UndefOr[IOperation], /* request */ js.UndefOr[IRequest], /* response */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "processResponse", js.Any.fromFunction6(value))
       
       inline def setProcessResponseUndefined: Self = StObject.set(x, "processResponse", js.undefined)
@@ -1248,7 +1246,7 @@ object proxy {
       
       inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      inline def setSetApi(value: /* api */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
+      inline def setSetApi(value: /* api */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
       
       inline def setSetApiUndefined: Self = StObject.set(x, "setApi", js.undefined)
       
@@ -1264,11 +1262,11 @@ object proxy {
       
       inline def setSetEnablePagingParamsUndefined: Self = StObject.set(x, "setEnablePagingParams", js.undefined)
       
-      inline def setSetExtraParam(value: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setExtraParam", js.Any.fromFunction2(value))
+      inline def setSetExtraParam(value: (/* name */ js.UndefOr[String], /* value */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setExtraParam", js.Any.fromFunction2(value))
       
       inline def setSetExtraParamUndefined: Self = StObject.set(x, "setExtraParam", js.undefined)
       
-      inline def setSetExtraParams(value: /* extraParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
+      inline def setSetExtraParams(value: /* extraParams */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
       
       inline def setSetExtraParamsUndefined: Self = StObject.set(x, "setExtraParams", js.undefined)
       
@@ -1352,9 +1350,9 @@ object proxy {
     @JSName("create")
     var create_ISql: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1370,9 +1368,9 @@ object proxy {
     @JSName("destroy")
     var destroy_ISql: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1396,7 +1394,7 @@ object proxy {
       * @param record Object The record that we are writing to the server.
       * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
       */
-    var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method] Returns the value of table
       * @returns String
@@ -1421,9 +1419,9 @@ object proxy {
     @JSName("read")
     var read_ISql: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1469,9 +1467,9 @@ object proxy {
     @JSName("update")
     var update_ISql: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1486,7 +1484,7 @@ object proxy {
     extension [Self <: ISql](x: Self) {
       
       inline def setCreate(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
@@ -1496,7 +1494,7 @@ object proxy {
       inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
       inline def setDestroy(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
@@ -1513,7 +1511,7 @@ object proxy {
       
       inline def setGetDefaultDateFormatUndefined: Self = StObject.set(x, "getDefaultDateFormat", js.undefined)
       
-      inline def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
+      inline def setGetRecordData(value: /* record */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
       
       inline def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
       
@@ -1530,7 +1528,7 @@ object proxy {
       inline def setGetUniqueIdStrategyUndefined: Self = StObject.set(x, "getUniqueIdStrategy", js.undefined)
       
       inline def setRead(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
       
       inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
@@ -1564,7 +1562,7 @@ object proxy {
       inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
       inline def setUpdate(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
@@ -1576,7 +1574,7 @@ object proxy {
        with IClient {
     
     /** [Property] (Object) */
-    var cache: js.UndefOr[js.Any] = js.undefined
+    var cache: js.UndefOr[Any] = js.undefined
     
     /** [Method] inherit docs
       * @param operation Object
@@ -1586,9 +1584,9 @@ object proxy {
     @JSName("create")
     var create_IWebStorage: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1601,9 +1599,9 @@ object proxy {
     @JSName("destroy")
     var destroy_IWebStorage: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1638,9 +1636,9 @@ object proxy {
     @JSName("read")
     var read_IWebStorage: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1674,9 +1672,9 @@ object proxy {
     @JSName("update")
     var update_IWebStorage: js.UndefOr[
         js.Function3[
-          /* operation */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* operation */ js.UndefOr[Any], 
+          /* callback */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1690,18 +1688,18 @@ object proxy {
     
     extension [Self <: IWebStorage](x: Self) {
       
-      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
       inline def setCreate(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
       inline def setDestroy(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
@@ -1727,7 +1725,7 @@ object proxy {
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setRead(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
       
       inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
@@ -1749,7 +1747,7 @@ object proxy {
       inline def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
       
       inline def setUpdate(
-        value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

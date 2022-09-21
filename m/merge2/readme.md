@@ -10,10 +10,10 @@ Merge multiple streams into one stream in sequence or parallel.
 | ------------------ | :-------------: |
 | Full name          | merge2 |
 | Keywords           | merge2, multiple, sequence, parallel, merge, stream, merge stream, sync |
-| # releases         | 6 |
-| # dependents       | 328 |
-| # downloads        | 357068465 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.140164866666667E7 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/teambition/merge2)

@@ -37,7 +37,7 @@ object PartialFrame {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,6 @@ object PartialFrame {
     
     inline def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
     
-    inline def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value :_*))
+    inline def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value*))
   }
 }

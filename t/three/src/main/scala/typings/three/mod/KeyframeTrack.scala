@@ -1,25 +1,26 @@
 package typings.three.mod
 
+import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "KeyframeTrack")
 @js.native
-class KeyframeTrack protected ()
-  extends typings.three.keyframeTrackMod.KeyframeTrack {
+open class KeyframeTrack protected ()
+  extends typings.three.threeMod.KeyframeTrack {
   /**
-  	 * @param name
-  	 * @param times
-  	 * @param values
-  	 * @param [interpolation=THREE.InterpolateLinear]
-  	 */
-  def this(name: String, times: js.Array[js.Any], values: js.Array[js.Any]) = this()
+    * @param name
+    * @param times
+    * @param values
+    * @param [interpolation=THREE.InterpolateLinear]
+    */
+  def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any]) = this()
   def this(
     name: String,
-    times: js.Array[js.Any],
-    values: js.Array[js.Any],
-    interpolation: typings.three.constantsMod.InterpolationModes
+    times: ArrayLike[Any],
+    values: ArrayLike[Any],
+    interpolation: typings.three.srcConstantsMod.InterpolationModes
   ) = this()
 }
 /* static members */
@@ -29,5 +30,5 @@ object KeyframeTrack {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

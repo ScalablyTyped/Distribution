@@ -12,7 +12,7 @@ trait DescribeInternetGatewaysRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more filters.    attachment.state - The current state of the attachment between the gateway and the VPC (available). Present only if a VPC is attached.    attachment.vpc-id - The ID of an attached VPC.    internet-gateway-id - The ID of the Internet gateway.    owner-id - The ID of the AWS account that owns the internet gateway.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
+    * One or more filters.    attachment.state - The current state of the attachment between the gateway and the VPC (available). Present only if a VPC is attached.    attachment.vpc-id - The ID of an attached VPC.    internet-gateway-id - The ID of the Internet gateway.    owner-id - The ID of the Amazon Web Services account that owns the internet gateway.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -48,13 +48,13 @@ object DescribeInternetGatewaysRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setInternetGatewayIds(value: InternetGatewayIdList): Self = StObject.set(x, "InternetGatewayIds", value.asInstanceOf[js.Any])
     
     inline def setInternetGatewayIdsUndefined: Self = StObject.set(x, "InternetGatewayIds", js.undefined)
     
-    inline def setInternetGatewayIdsVarargs(value: InternetGatewayId*): Self = StObject.set(x, "InternetGatewayIds", js.Array(value :_*))
+    inline def setInternetGatewayIdsVarargs(value: InternetGatewayId*): Self = StObject.set(x, "InternetGatewayIds", js.Array(value*))
     
     inline def setMaxResults(value: DescribeInternetGatewaysMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

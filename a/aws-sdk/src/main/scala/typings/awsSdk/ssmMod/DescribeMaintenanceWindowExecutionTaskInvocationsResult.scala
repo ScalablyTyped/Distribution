@@ -33,6 +33,6 @@ object DescribeMaintenanceWindowExecutionTaskInvocationsResult {
     
     inline def setWindowExecutionTaskInvocationIdentitiesUndefined: Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.undefined)
     
-    inline def setWindowExecutionTaskInvocationIdentitiesVarargs(value: MaintenanceWindowExecutionTaskInvocationIdentity*): Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.Array(value :_*))
+    inline def setWindowExecutionTaskInvocationIdentitiesVarargs(value: MaintenanceWindowExecutionTaskInvocationIdentity*): Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.Array(value*))
   }
 }

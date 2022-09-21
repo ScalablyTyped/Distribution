@@ -64,7 +64,7 @@ trait String extends StObject {
     eachFn: js.Function3[/* match */ java.lang.String, /* i */ Double, /* arr */ Array[java.lang.String], Unit]
   ): Array[T] = js.native
   
-  def format(args: js.Any*): java.lang.String = js.native
+  def format(args: Any*): java.lang.String = js.native
   
   def from(): java.lang.String = js.native
   def from(index: Double): java.lang.String = js.native
@@ -173,8 +173,8 @@ trait String extends StObject {
   def removeTags(tag: Unit, replace: java.lang.String): java.lang.String = js.native
   def removeTags(tag: Unit, replace: replaceFn): java.lang.String = js.native
   
-  def replaceAll(f: java.lang.String, args: js.Any*): java.lang.String = js.native
-  def replaceAll(f: RegExp, args: js.Any*): java.lang.String = js.native
+  def replaceAll(f: java.lang.String, args: Any*): java.lang.String = js.native
+  def replaceAll(f: RegExp, args: Any*): java.lang.String = js.native
   
   def reverse(): java.lang.String = js.native
   

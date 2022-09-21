@@ -21,10 +21,10 @@ trait IColumn
   @JSName("afterComponentLayout")
   var afterComponentLayout_IColumn: js.UndefOr[
     js.Function4[
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
-      /* oldWidth */ js.UndefOr[js.Any], 
-      /* oldHeight */ js.UndefOr[js.Any], 
+      /* width */ js.UndefOr[Any], 
+      /* height */ js.UndefOr[Any], 
+      /* oldWidth */ js.UndefOr[Any], 
+      /* oldHeight */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -35,7 +35,7 @@ trait IColumn
   /** [Method] Sizes this Column to fit the max content width
     * @param The Ext.grid.column.Column/Number header (or index of header) to auto size.
     */
-  var autoSize: js.UndefOr[js.Function1[/* The */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var autoSize: js.UndefOr[js.Function1[/* The */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Object[]) */
   var columns: js.UndefOr[Array] = js.undefined
@@ -47,16 +47,16 @@ trait IColumn
   var defaultRenderer: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var editRenderer: js.UndefOr[js.Any] = js.undefined
+  var editRenderer: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object/String) */
-  var editor: js.UndefOr[js.Any] = js.undefined
+  var editor: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var emptyCellText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object/String) */
-  var field: js.UndefOr[js.Any] = js.undefined
+  var field: js.UndefOr[Any] = js.undefined
   
   /** [Method] Retrieves the editing field for editing associated with this header
     * @param record Object The Model instance being edited.
@@ -64,7 +64,7 @@ trait IColumn
     * @returns any field
     */
   var getEditor: js.UndefOr[
-    js.Function2[/* record */ js.UndefOr[js.Any], /* defaultField */ js.UndefOr[js.Any], js.Any]
+    js.Function2[/* record */ js.UndefOr[Any], /* defaultField */ js.UndefOr[Any], Any]
   ] = js.undefined
   
   /** [Method] Returns the index of this column only if this column is a base level Column
@@ -93,7 +93,7 @@ trait IColumn
     * @returns Ext.Component this
     */
   @JSName("hide")
-  var hide_IColumn: js.UndefOr[js.Function1[/* fromOwner */ js.UndefOr[js.Any], IComponent]] = js.undefined
+  var hide_IColumn: js.UndefOr[js.Function1[/* fromOwner */ js.UndefOr[Any], IComponent]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var hideable: js.UndefOr[Boolean] = js.undefined
@@ -102,7 +102,7 @@ trait IColumn
     * @returns Object Object with keys and values that are going to be applied to the renderTpl
     */
   @JSName("initRenderData")
-  var initRenderData_IColumn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var initRenderData_IColumn: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Property] (Boolean) */
   var isColumn: js.UndefOr[Boolean] = js.undefined
@@ -129,19 +129,19 @@ trait IColumn
   var menuText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Function/String) */
-  var renderer: js.UndefOr[js.Any] = js.undefined
+  var renderer: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   @JSName("resizable")
   var resizable_IColumn: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the form field to be used for editing
     * @param field Object An object representing a field to be created. If no xtype is specified a 'textfield' is assumed.
     */
-  var setEditor: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setEditor: js.UndefOr[js.Function1[/* field */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the header text for this Column
     * @param text String The header to display on this Column.
@@ -155,7 +155,7 @@ trait IColumn
     */
   @JSName("show")
   var show_IColumn: js.UndefOr[
-    js.Function2[/* fromOwner */ js.UndefOr[js.Any], /* fromChild */ js.UndefOr[js.Any], IComponent]
+    js.Function2[/* fromOwner */ js.UndefOr[Any], /* fromChild */ js.UndefOr[Any], IComponent]
   ] = js.undefined
   
   /** [Config Option] (String) */
@@ -186,7 +186,7 @@ object IColumn {
   extension [Self <: IColumn](x: Self) {
     
     inline def setAfterComponentLayout(
-      value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* oldWidth */ js.UndefOr[js.Any], /* oldHeight */ js.UndefOr[js.Any]) => Unit
+      value: (/* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any], /* oldWidth */ js.UndefOr[Any], /* oldHeight */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "afterComponentLayout", js.Any.fromFunction4(value))
     
     inline def setAfterComponentLayoutUndefined: Self = StObject.set(x, "afterComponentLayout", js.undefined)
@@ -195,7 +195,7 @@ object IColumn {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAutoSize(value: /* The */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "autoSize", js.Any.fromFunction1(value))
+    inline def setAutoSize(value: /* The */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "autoSize", js.Any.fromFunction1(value))
     
     inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
     
@@ -211,11 +211,11 @@ object IColumn {
     
     inline def setDefaultRendererUndefined: Self = StObject.set(x, "defaultRenderer", js.undefined)
     
-    inline def setEditRenderer(value: js.Any): Self = StObject.set(x, "editRenderer", value.asInstanceOf[js.Any])
+    inline def setEditRenderer(value: Any): Self = StObject.set(x, "editRenderer", value.asInstanceOf[js.Any])
     
     inline def setEditRendererUndefined: Self = StObject.set(x, "editRenderer", js.undefined)
     
-    inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
@@ -223,11 +223,11 @@ object IColumn {
     
     inline def setEmptyCellTextUndefined: Self = StObject.set(x, "emptyCellText", js.undefined)
     
-    inline def setField(value: js.Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setGetEditor(value: (/* record */ js.UndefOr[js.Any], /* defaultField */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getEditor", js.Any.fromFunction2(value))
+    inline def setGetEditor(value: (/* record */ js.UndefOr[Any], /* defaultField */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "getEditor", js.Any.fromFunction2(value))
     
     inline def setGetEditorUndefined: Self = StObject.set(x, "getEditor", js.undefined)
     
@@ -251,7 +251,7 @@ object IColumn {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setHide(value: /* fromOwner */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: /* fromOwner */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
@@ -259,7 +259,7 @@ object IColumn {
     
     inline def setHideableUndefined: Self = StObject.set(x, "hideable", js.undefined)
     
-    inline def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
+    inline def setInitRenderData(value: () => Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     inline def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
     
@@ -295,7 +295,7 @@ object IColumn {
     
     inline def setMenuTextUndefined: Self = StObject.set(x, "menuText", js.undefined)
     
-    inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
@@ -303,11 +303,11 @@ object IColumn {
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def setSetEditor(value: /* field */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEditor", js.Any.fromFunction1(value))
+    inline def setSetEditor(value: /* field */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setEditor", js.Any.fromFunction1(value))
     
     inline def setSetEditorUndefined: Self = StObject.set(x, "setEditor", js.undefined)
     
@@ -315,7 +315,7 @@ object IColumn {
     
     inline def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
     
-    inline def setShow(value: (/* fromOwner */ js.UndefOr[js.Any], /* fromChild */ js.UndefOr[js.Any]) => IComponent): Self = StObject.set(x, "show", js.Any.fromFunction2(value))
+    inline def setShow(value: (/* fromOwner */ js.UndefOr[Any], /* fromChild */ js.UndefOr[Any]) => IComponent): Self = StObject.set(x, "show", js.Any.fromFunction2(value))
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     

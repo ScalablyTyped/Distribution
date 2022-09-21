@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the results from `Range.removeDuplicates`.
   *
-  * Represents the results from the removeDuplicates method on range
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait RemoveDuplicatesResultLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait RemoveDuplicatesResultLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Number of duplicated rows removed by the operation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var removed: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Number of remaining unique rows present in the resulting range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var uniqueRemaining: js.UndefOr[Boolean] = js.undefined

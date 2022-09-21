@@ -29,7 +29,7 @@ object ListActiveViolationsResponse {
     
     inline def setActiveViolationsUndefined: Self = StObject.set(x, "activeViolations", js.undefined)
     
-    inline def setActiveViolationsVarargs(value: ActiveViolation*): Self = StObject.set(x, "activeViolations", js.Array(value :_*))
+    inline def setActiveViolationsVarargs(value: ActiveViolation*): Self = StObject.set(x, "activeViolations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

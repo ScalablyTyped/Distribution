@@ -12,6 +12,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDListElement
 import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
+import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -31,11 +32,13 @@ import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
 import typings.std.HTMLMetaElement
+import typings.std.HTMLMeterElement
 import typings.std.HTMLModElement
 import typings.std.HTMLOListElement
 import typings.std.HTMLObjectElement
 import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
+import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
 import typings.std.HTMLParamElement
 import typings.std.HTMLPreElement
@@ -55,6 +58,7 @@ import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
 import typings.std.HTMLTextAreaElement
+import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
@@ -83,7 +87,7 @@ object ReactDOM {
     bdi: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     bdo: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     big: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
-    blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement],
+    blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement],
     body: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement],
     br: DetailedHTMLFactory[HTMLAttributes[HTMLBRElement], HTMLBRElement],
     button: DetailedHTMLFactory[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement],
@@ -99,9 +103,9 @@ object ReactDOM {
     datalist: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement],
     dd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     defs: SVGFactory,
-    del: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement],
+    del: DetailedHTMLFactory[DelHTMLAttributes[HTMLModElement], HTMLModElement],
     desc: SVGFactory,
-    details: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLElement], HTMLElement],
+    details: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement],
     dfn: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     dialog: DetailedHTMLFactory[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement],
     div: DetailedHTMLFactory[HTMLAttributes[HTMLDivElement], HTMLDivElement],
@@ -177,14 +181,14 @@ object ReactDOM {
     menuitem: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     meta: DetailedHTMLFactory[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement],
     metadata: SVGFactory,
-    meter: DetailedHTMLFactory[MeterHTMLAttributes[HTMLElement], HTMLElement],
+    meter: DetailedHTMLFactory[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement],
     nav: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     noscript: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     `object`: DetailedHTMLFactory[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement],
     ol: DetailedHTMLFactory[OlHTMLAttributes[HTMLOListElement], HTMLOListElement],
     optgroup: DetailedHTMLFactory[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement],
     option: DetailedHTMLFactory[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement],
-    output: DetailedHTMLFactory[OutputHTMLAttributes[HTMLElement], HTMLElement],
+    output: DetailedHTMLFactory[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement],
     p: DetailedHTMLFactory[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement],
     param: DetailedHTMLFactory[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement],
     path: SVGFactory,
@@ -228,7 +232,7 @@ object ReactDOM {
     tfoot: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
     th: DetailedHTMLFactory[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement],
     thead: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
-    time: DetailedHTMLFactory[TimeHTMLAttributes[HTMLElement], HTMLElement],
+    time: DetailedHTMLFactory[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement],
     title: DetailedHTMLFactory[HTMLAttributes[HTMLTitleElement], HTMLTitleElement],
     tr: DetailedHTMLFactory[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement],
     track: DetailedHTMLFactory[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement],

@@ -4,237 +4,1036 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1beta1", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Fhirstores$Fhir")
 @js.native
-class ResourceProjectsLocationsDatasetsFhirstoresFhir protected () extends StObject {
+open class ResourceProjectsLocationsDatasetsFhirstoresFhir protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  var Observation: ResourceProjectsLocationsDatasetsFhirstoresFhirObservation = js.native
-  
-  var Patient: ResourceProjectsLocationsDatasetsFhirstoresFhirPatient = js.native
-  
-  var _history: ResourceProjectsLocationsDatasetsFhirstoresFhirHistory = js.native
-  
-  /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir._search
-    * @desc Searches resources in the given FHIR store.  # Search Parameters
-    * The server's capability statement, retrieved through
-    * GetCapabilityStatement, indicates which search parameters are supported
-    * on each FHIR resource.  # Search Modifiers  Modifier   | Supported
-    * ----------- | --------- `:missing`  | Yes `:exact`    | Yes `:contains` |
-    * Yes `:text`     | Yes `:in`       | Yes `:not-in`   | Yes `:above`    |
-    * Yes `:below`    | Yes `:[type]`   | Yes `:not`      | Yes `:recurse`  |
-    * No
-    * @alias healthcare.projects.locations.datasets.fhirStores.fhir._search
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent Name of the FHIR store to retrieve resources from.
-    * @param {().SearchResourcesRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
-  def _search(): GaxiosPromise[SchemaHttpBody] = js.native
-  def _search(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def _search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def _search(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch): GaxiosPromise[SchemaHttpBody] = js.native
-  def _search(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch,
+  def ConceptMapSearchTranslate(): GaxiosPromise[SchemaHttpBody] = js.native
+  def ConceptMapSearchTranslate(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def ConceptMapSearchTranslate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def ConceptMapSearchTranslate(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmapsearchtranslate): GaxiosPromise[SchemaHttpBody] = js.native
+  def ConceptMapSearchTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmapsearchtranslate,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  def _search(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+  def ConceptMapSearchTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmapsearchtranslate,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
-  def _search(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def _search(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch,
+  def ConceptMapSearchTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmapsearchtranslate,
+    options: MethodOptions
+  ): GaxiosPromise[SchemaHttpBody] = js.native
+  def ConceptMapSearchTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmapsearchtranslate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  
   /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.conditionalDeleteResource
-    * @desc Deletes FHIR resources matching a search query.  Note: unless
-    * resource versioning is disabled by setting the
-    * disable_resource_versioning flag on the FHIR store, the deleted resources
-    * will be moved to a history repository that can still be retrieved through
-    * GetResourceVersion and related methods, unless they are removed by the
-    * DeleteResourceVersions method.
-    * @alias
-    * healthcare.projects.locations.datasets.fhirStores.fhir.conditionalDeleteResource
-    * @memberOf! ()
+    * Translates a code from one value set to another by searching for appropriate concept maps. Implements the FHIR standard $translate operation ([DSTU2](https://www.hl7.org/fhir/DSTU2/operation-conceptmap-translate.html), [STU3](https://www.hl7.org/fhir/STU3/operation-conceptmap-translate.html), [R4](https://www.hl7.org/fhir/R4/operation-conceptmap-translate.html)). On success, the response body contains a JSON-encoded representation of a FHIR Parameters resource, which includes the translation result. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent The name of the FHIR store this resource belongs to.
-    * @param {string} params.type The type of the resource to update.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     (await healthcare.projects.locations.datasets.fhirStores.fhir.ConceptMap) -
+    *     search -
+    *     translate({
+    *       // The code to translate.
+    *       code: 'placeholder-value',
+    *       // The version of the concept map to use. If unset, the most current version is used.
+    *       conceptMapVersion: 'placeholder-value',
+    *       // The name for the FHIR store containing the concept map(s) to use for the translation.
+    *       parent:
+    *         'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *       // The source value set of the concept map to be used. If unset, target is used to search for concept maps.
+    *       source: 'placeholder-value',
+    *       // The system for the code to be translated.
+    *       system: 'placeholder-value',
+    *       // The target value set of the concept map to be used. If unset, source is used to search for concept maps.
+    *       target: 'placeholder-value',
+    *       // The canonical url of the concept map to use. If unset, the source and target is used to search for concept maps.
+    *       url: 'placeholder-value',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def conditionalDeleteResource(): GaxiosPromise[SchemaEmpty] = js.native
-  def conditionalDeleteResource(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def conditionalDeleteResource(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
-  def conditionalDeleteResource(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldeleteresource): GaxiosPromise[SchemaEmpty] = js.native
-  def conditionalDeleteResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldeleteresource,
+  def ConceptMapSearchTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmapsearchtranslate,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def ConceptMapSearchTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmapsearchtranslate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def ConceptMapTranslate(): GaxiosPromise[SchemaHttpBody] = js.native
+  def ConceptMapTranslate(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def ConceptMapTranslate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def ConceptMapTranslate(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmaptranslate): GaxiosPromise[SchemaHttpBody] = js.native
+  def ConceptMapTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmaptranslate,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def ConceptMapTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmaptranslate,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def ConceptMapTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmaptranslate,
+    options: MethodOptions
+  ): GaxiosPromise[SchemaHttpBody] = js.native
+  def ConceptMapTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmaptranslate,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Translates a code from one value set to another using a concept map. You can provide your own concept maps to translate any code system to another code system. Implements the FHIR standard $translate operation ([DSTU2](https://www.hl7.org/fhir/DSTU2/operation-conceptmap-translate.html), [STU3](https://www.hl7.org/fhir/STU3/operation-conceptmap-translate.html), [R4](https://www.hl7.org/fhir/R4/operation-conceptmap-translate.html)). On success, the response body contains a JSON-encoded representation of a FHIR Parameters resource, which includes the translation result. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     (await healthcare.projects.locations.datasets.fhirStores.fhir.ConceptMap) -
+    *     translate({
+    *       // The code to translate.
+    *       code: 'placeholder-value',
+    *       // The version of the concept map to use. If unset, the most current version is used.
+    *       conceptMapVersion: 'placeholder-value',
+    *       // The URL for the concept map to use for the translation.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/ConceptMap/[^/]+',
+    *       // The system for the code to be translated.
+    *       system: 'placeholder-value',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def ConceptMapTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmaptranslate,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def ConceptMapTranslate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConceptmaptranslate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def ObservationLastn(): GaxiosPromise[SchemaHttpBody] = js.native
+  def ObservationLastn(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def ObservationLastn(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def ObservationLastn(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirObservationlastn): GaxiosPromise[SchemaHttpBody] = js.native
+  def ObservationLastn(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirObservationlastn,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def ObservationLastn(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirObservationlastn,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def ObservationLastn(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirObservationlastn,
+    options: MethodOptions
+  ): GaxiosPromise[SchemaHttpBody] = js.native
+  def ObservationLastn(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirObservationlastn,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Retrieves the N most recent `Observation` resources for a subject matching search criteria specified as query parameters, grouped by `Observation.code`, sorted from most recent to oldest. Implements the FHIR extended operation Observation-lastn ([STU3](https://hl7.org/implement/standards/fhir/STU3/observation-operations.html#lastn), [R4](https://hl7.org/implement/standards/fhir/R4/observation-operations.html#lastn)). DSTU2 doesn't define the Observation-lastn method, but the server supports it the same way it supports STU3. Search terms are provided as query parameters following the same pattern as the search method. The following search parameters must be provided: - `subject` or `patient` to specify a subject for the Observation. - `code`, `category` or any of the composite parameters that include `code`. Any other valid Observation search parameters can also be provided. This operation accepts an additional query parameter `max`, which specifies N, the maximum number of Observations to return from each group, with a default of 1. Searches with over 1000 results are rejected. Results are counted before grouping and limiting the results with `max`. To stay within the limit, constrain these searches using Observation search parameters such as `_lastUpdated` or `date`. On success, the response body contains a JSON-encoded representation of a `Bundle` resource of type `searchset`, containing the results of the operation. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     (await healthcare.projects.locations.datasets.fhirStores.fhir.Observation) -
+    *     lastn({
+    *       // Name of the FHIR store to retrieve resources from.
+    *       parent:
+    *         'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def ObservationLastn(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirObservationlastn,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def ObservationLastn(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirObservationlastn,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def PatientEverything(): GaxiosPromise[SchemaHttpBody] = js.native
+  def PatientEverything(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def PatientEverything(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def PatientEverything(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatienteverything): GaxiosPromise[SchemaHttpBody] = js.native
+  def PatientEverything(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatienteverything,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def PatientEverything(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatienteverything,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def PatientEverything(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatienteverything,
+    options: MethodOptions
+  ): GaxiosPromise[SchemaHttpBody] = js.native
+  def PatientEverything(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatienteverything,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Retrieves a Patient resource and resources related to that patient. Implements the FHIR extended operation Patient-everything ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/patient-operations.html#everything), [STU3](https://hl7.org/implement/standards/fhir/STU3/patient-operations.html#everything), [R4](https://hl7.org/implement/standards/fhir/R4/patient-operations.html#everything)). On success, the response body contains a JSON-encoded representation of a `Bundle` resource of type `searchset`, containing the results of the operation. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. The resources in scope for the response are: * The patient resource itself. * All the resources directly referenced by the patient resource. * Resources directly referencing the patient resource that meet the inclusion criteria. The inclusion criteria are based on the membership rules in the patient compartment definition ([DSTU2](https://hl7.org/fhir/DSTU2/compartment-patient.html), [STU3](http://www.hl7.org/fhir/stu3/compartmentdefinition-patient.html), [R4](https://hl7.org/fhir/R4/compartmentdefinition-patient.html)), which details the eligible resource types and referencing search parameters. For samples that show how to call `Patient-everything`, see [Getting all patient compartment resources](/healthcare/docs/how-tos/fhir-resources#getting_all_patient_compartment_resources).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     (await healthcare.projects.locations.datasets.fhirStores.fhir.Patient) -
+    *     everything({
+    *       // The response includes records prior to the end date. The date uses the format YYYY-MM-DD. If no end date is provided, all records subsequent to the start date are in scope.
+    *       end: 'placeholder-value',
+    *       // Name of the `Patient` resource for which the information is required.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/Patient/[^/]+',
+    *       // The response includes records subsequent to the start date. The date uses the format YYYY-MM-DD. If no start date is provided, all records prior to the end date are in scope.
+    *       start: 'placeholder-value',
+    *       // Maximum number of resources in a page. If not specified, 100 is used. May not be larger than 1000.
+    *       _count: 'placeholder-value',
+    *       // Used to retrieve the next or previous page of results when using pagination. Set `_page_token` to the value of _page_token set in next or previous page links' url. Next and previous page are returned in the response bundle's links field, where `link.relation` is "previous" or "next". Omit `_page_token` if no previous request has been made.
+    *       _page_token: 'placeholder-value',
+    *       // If provided, only resources updated after this time are returned. The time uses the format YYYY-MM-DDThh:mm:ss.sss+zz:zz. For example, `2015-02-07T13:28:17.239+02:00` or `2017-01-01T00:00:00Z`. The time must be specified to the second and include a time zone.
+    *       _since: 'placeholder-value',
+    *       // String of comma-delimited FHIR resource types. If provided, only resources of the specified resource type(s) are returned.
+    *       _type: 'placeholder-value',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def PatientEverything(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatienteverything,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def PatientEverything(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatienteverything,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def ResourcePurge(): GaxiosPromise[SchemaEmpty] = js.native
+  def ResourcePurge(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def ResourcePurge(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def ResourcePurge(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcepurge): GaxiosPromise[SchemaEmpty] = js.native
+  def ResourcePurge(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcepurge,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  def conditionalDeleteResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldeleteresource,
-    options: BodyResponseCallback[SchemaEmpty],
+  def ResourcePurge(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcepurge,
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
+  ): Unit = js.native
+  def ResourcePurge(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcepurge, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def ResourcePurge(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcepurge,
+    options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  def conditionalDeleteResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldeleteresource,
+  /**
+    * Deletes all the historical versions of a resource (excluding the current version) from the FHIR store. To remove all versions of a resource, first delete the current version and then call this method. This is not a FHIR standard operation. For samples that show how to call `Resource-purge`, see [Deleting historical versions of a FHIR resource](/healthcare/docs/how-tos/fhir-resources#deleting_historical_versions_of_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     (await healthcare.projects.locations.datasets.fhirStores.fhir.Resource) -
+    *     purge({
+    *       // The name of the resource to purge.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/[^/]+/[^/]+',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def ResourcePurge(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcepurge,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def ResourcePurge(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcepurge,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def ResourceValidate(): GaxiosPromise[SchemaHttpBody] = js.native
+  def ResourceValidate(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def ResourceValidate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def ResourceValidate(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcevalidate): GaxiosPromise[SchemaHttpBody] = js.native
+  def ResourceValidate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcevalidate,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def ResourceValidate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcevalidate,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def ResourceValidate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcevalidate,
+    options: MethodOptions
+  ): GaxiosPromise[SchemaHttpBody] = js.native
+  def ResourceValidate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcevalidate,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Validates an input FHIR resource's conformance to its profiles and the profiles configured on the FHIR store. Implements the FHIR extended operation $validate ([DSTU2](http://hl7.org/implement/standards/fhir/DSTU2/resource-operations.html#validate), [STU3](http://hl7.org/implement/standards/fhir/STU3/resource-operations.html#validate), or [R4](http://hl7.org/implement/standards/fhir/R4/resource-operation-validate.html)). The request body must contain a JSON-encoded FHIR resource, and the request headers must contain `Content-Type: application/fhir+json`. The `Parameters` input syntax is not supported. The `profile` query parameter can be used to request that the resource only be validated against a specific profile. If a profile with the given URL cannot be found in the FHIR store then an error is returned. Errors generated by validation contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     (await healthcare.projects.locations.datasets.fhirStores.fhir.Resource) -
+    *     validate({
+    *       // The name of the FHIR store that holds the profiles being used for validation.
+    *       parent:
+    *         'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *       // The canonical URL of a profile that this resource should be validated against. For example, to validate a Patient resource against the US Core Patient profile this parameter would be `http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient`. A StructureDefinition with this canonical URL must exist in the FHIR store.
+    *       profile: 'placeholder-value',
+    *       // The FHIR resource type of the resource being validated. For a complete list, see the FHIR Resource Index ([DSTU2](http://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html), [STU3](http://hl7.org/implement/standards/fhir/STU3/resourcelist.html), or [R4](http://hl7.org/implement/standards/fhir/R4/resourcelist.html)). Must match the resource type in the provided content.
+    *       type: '[^/]+',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "contentType": "my_contentType",
+    *         //   "data": "my_data",
+    *         //   "extensions": []
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def ResourceValidate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcevalidate,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def ResourceValidate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirResourcevalidate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def capabilities(): GaxiosPromise[SchemaHttpBody] = js.native
+  def capabilities(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def capabilities(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def capabilities(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCapabilities): GaxiosPromise[SchemaHttpBody] = js.native
+  def capabilities(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCapabilities,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def capabilities(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCapabilities,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def capabilities(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCapabilities, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def capabilities(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCapabilities,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Gets the FHIR capability statement ([STU3](https://hl7.org/implement/standards/fhir/STU3/capabilitystatement.html), [R4](https://hl7.org/implement/standards/fhir/R4/capabilitystatement.html)), or the [conformance statement](https://hl7.org/implement/standards/fhir/DSTU2/conformance.html) in the DSTU2 case for the store, which contains a description of functionality supported by the server. Implements the FHIR standard capabilities interaction ([STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#capabilities), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#capabilities)), or the [conformance interaction](https://hl7.org/implement/standards/fhir/DSTU2/http.html#conformance) in the DSTU2 case. On success, the response body contains a JSON-encoded representation of a `CapabilityStatement` resource.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.capabilities({
+    *       // Name of the FHIR store to retrieve the capabilities for.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def capabilities(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCapabilities,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def capabilities(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCapabilities,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def conditionalDelete(): GaxiosPromise[SchemaEmpty] = js.native
+  def conditionalDelete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def conditionalDelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def conditionalDelete(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldelete): GaxiosPromise[SchemaEmpty] = js.native
+  def conditionalDelete(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldelete,
+    callback: BodyResponseCallback[SchemaEmpty]
+  ): Unit = js.native
+  def conditionalDelete(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldelete,
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
+  ): Unit = js.native
+  def conditionalDelete(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldelete,
     options: MethodOptions
   ): GaxiosPromise[SchemaEmpty] = js.native
-  def conditionalDeleteResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldeleteresource,
+  def conditionalDelete(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldelete,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.conditionalPatchResource
-    * @desc Updates parts of a resource if the resource exists based on the
-    * search criteria specified via query parameters.
-    * @alias
-    * healthcare.projects.locations.datasets.fhirStores.fhir.conditionalPatchResource
-    * @memberOf! ()
+    * Deletes FHIR resources that match a search query. Implements the FHIR standard conditional delete interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#2.1.0.12.1), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#2.21.0.13.1), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#3.1.0.7.1)). If multiple resources match, all matching resources are deleted. Search terms are provided as query parameters following the same pattern as the search method. Not all FHIR resources that match the search query might be deleted because, by default, a maximum of 100 FHIR resources can be deleted. The number of FHIR resources that can be deleted depends on the page size of the returned resources, which you can control using the `_count` query parameter. Even when using `_count`, you can delete a maximum 1,000 FHIR resources per each call of `conditionalDelete`. Note: Unless resource versioning is disabled by setting the disable_resource_versioning flag on the FHIR store, the deleted resources are moved to a history repository that can still be retrieved through vread and related methods, unless they are removed by the purge method. This method requires the`healthcare.fhirStores.searchResources` and `healthcare.fhirResources.delete` permissions on the parent FHIR store. For samples that show how to call `conditionalDelete`, see [Conditionally deleting a FHIR resource](/healthcare/docs/how-tos/fhir-resources#conditionally_deleting_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent The name of the FHIR store this resource belongs to.
-    * @param {string} params.type The type of the resource to update.
-    * @param {().HttpBody} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.conditionalDelete(
+    *       {
+    *         // The name of the FHIR store this resource belongs to.
+    *         parent:
+    *           'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *         // The FHIR resource type to delete, such as Patient or Observation. For a complete list, see the FHIR Resource Index ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html), [STU3](https://hl7.org/implement/standards/fhir/STU3/resourcelist.html), [R4](https://hl7.org/implement/standards/fhir/R4/resourcelist.html)).
+    *         type: '[^/]+',
+    *       }
+    *     );
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def conditionalPatchResource(): GaxiosPromise[SchemaHttpBody] = js.native
-  def conditionalPatchResource(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def conditionalPatchResource(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def conditionalPatchResource(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatchresource): GaxiosPromise[SchemaHttpBody] = js.native
-  def conditionalPatchResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatchresource,
+  def conditionalDelete(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldelete,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def conditionalDelete(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionaldelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def conditionalPatch(): GaxiosPromise[SchemaHttpBody] = js.native
+  def conditionalPatch(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def conditionalPatch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def conditionalPatch(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatch): GaxiosPromise[SchemaHttpBody] = js.native
+  def conditionalPatch(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatch,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  def conditionalPatchResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatchresource,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+  def conditionalPatch(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatch,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
-  def conditionalPatchResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatchresource,
+  def conditionalPatch(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatch,
     options: MethodOptions
   ): GaxiosPromise[SchemaHttpBody] = js.native
-  def conditionalPatchResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatchresource,
+  def conditionalPatch(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatch,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  
   /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.conditionalUpdateResource
-    * @desc Updates the entire resource if the resource exists based on the
-    * search criteria specified via query parameters.
-    * @alias
-    * healthcare.projects.locations.datasets.fhirStores.fhir.conditionalUpdateResource
-    * @memberOf! ()
+    * If a resource is found based on the search criteria specified in the query parameters, updates part of that resource by applying the operations specified in a [JSON Patch](http://jsonpatch.com/) document. Implements the FHIR standard conditional patch interaction ([STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#patch), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#patch)). DSTU2 doesn't define a conditional patch method, but the server supports it in the same way it supports STU3. Search terms are provided as query parameters following the same pattern as the search method. If the search criteria identify more than one match, the request returns a `412 Precondition Failed` error. The request body must contain a JSON Patch document, and the request headers must contain `Content-Type: application/json-patch+json`. On success, the response body contains a JSON-encoded representation of the updated resource, including the server-assigned version ID. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. This method requires the`healthcare.fhirStores.searchResources` permission on the parent FHIR store and the `healthcare.fhirResources.patch` permission on the requested FHIR store resource. For samples that show how to call `conditionalPatch`, see [Conditionally patching a FHIR resource](/healthcare/docs/how-tos/fhir-resources#conditionally_patching_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent The name of the FHIR store this resource belongs to.
-    * @param {string} params.type The type of the resource to update.
-    * @param {().HttpBody} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.conditionalPatch(
+    *       {
+    *         // The name of the FHIR store this resource belongs to.
+    *         parent:
+    *           'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *         // The FHIR resource type to update, such as Patient or Observation. For a complete list, see the FHIR Resource Index ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html), [STU3](https://hl7.org/implement/standards/fhir/STU3/resourcelist.html), [R4](https://hl7.org/implement/standards/fhir/R4/resourcelist.html)).
+    *         type: '[^/]+',
+    *
+    *         // Request body metadata
+    *         requestBody: {
+    *           // request body parameters
+    *           // {
+    *           //   "contentType": "my_contentType",
+    *           //   "data": "my_data",
+    *           //   "extensions": []
+    *           // }
+    *         },
+    *       }
+    *     );
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def conditionalUpdateResource(): GaxiosPromise[SchemaHttpBody] = js.native
-  def conditionalUpdateResource(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def conditionalUpdateResource(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def conditionalUpdateResource(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdateresource): GaxiosPromise[SchemaHttpBody] = js.native
-  def conditionalUpdateResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdateresource,
+  def conditionalPatch(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatch,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def conditionalPatch(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalpatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def conditionalUpdate(): GaxiosPromise[SchemaHttpBody] = js.native
+  def conditionalUpdate(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def conditionalUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def conditionalUpdate(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdate): GaxiosPromise[SchemaHttpBody] = js.native
+  def conditionalUpdate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdate,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  def conditionalUpdateResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdateresource,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+  def conditionalUpdate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdate,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
-  def conditionalUpdateResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdateresource,
+  def conditionalUpdate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdate,
     options: MethodOptions
   ): GaxiosPromise[SchemaHttpBody] = js.native
-  def conditionalUpdateResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdateresource,
+  def conditionalUpdate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * If a resource is found based on the search criteria specified in the query parameters, updates the entire contents of that resource. Implements the FHIR standard conditional update interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#2.1.0.10.2), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#cond-update), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#cond-update)). Search terms are provided as query parameters following the same pattern as the search method. If the search criteria identify more than one match, the request returns a `412 Precondition Failed` error. If the search criteria identify zero matches, and the supplied resource body contains an `id`, and the FHIR store has enable_update_create set, creates the resource with the client-specified ID. It is strongly advised not to include or encode any sensitive data such as patient identifiers in client-specified resource IDs. Those IDs are part of the FHIR resource path recorded in Cloud Audit Logs and Pub/Sub notifications. Those IDs can also be contained in reference fields within other resources. If the search criteria identify zero matches, and the supplied resource body does not contain an `id`, the resource is created with a server-assigned ID as per the create method. The request body must contain a JSON-encoded FHIR resource, and the request headers must contain `Content-Type: application/fhir+json`. On success, the response body contains a JSON-encoded representation of the updated resource, including the server-assigned version ID. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. This method requires the`healthcare.fhirStores.searchResources` and `healthcare.fhirResources.update` permissions on the parent FHIR store. For samples that show how to call `conditionalUpdate`, see [Conditionally updating a FHIR resource](/healthcare/docs/how-tos/fhir-resources#conditionally_updating_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.conditionalUpdate(
+    *       {
+    *         // The name of the FHIR store this resource belongs to.
+    *         parent:
+    *           'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *         // The FHIR resource type to update, such as Patient or Observation. For a complete list, see the FHIR Resource Index ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html), [STU3](https://hl7.org/implement/standards/fhir/STU3/resourcelist.html), [R4](https://hl7.org/implement/standards/fhir/R4/resourcelist.html)). Must match the resource type in the provided content.
+    *         type: '[^/]+',
+    *
+    *         // Request body metadata
+    *         requestBody: {
+    *           // request body parameters
+    *           // {
+    *           //   "contentType": "my_contentType",
+    *           //   "data": "my_data",
+    *           //   "extensions": []
+    *           // }
+    *         },
+    *       }
+    *     );
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def conditionalUpdate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdate,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def conditionalUpdate(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirConditionalupdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.createResource
-    * @desc Creates a FHIR resource.
-    * @alias
-    * healthcare.projects.locations.datasets.fhirStores.fhir.createResource
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent The name of the FHIR store this resource belongs to.
-    * @param {string} params.type The type of the resource to create.
-    * @param {().HttpBody} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
-  def createResource(): GaxiosPromise[SchemaHttpBody] = js.native
-  def createResource(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def createResource(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def createResource(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreateresource): GaxiosPromise[SchemaHttpBody] = js.native
-  def createResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreateresource,
+  def create(): GaxiosPromise[SchemaHttpBody] = js.native
+  def create(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def create(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreate): GaxiosPromise[SchemaHttpBody] = js.native
+  def create(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreate,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  def createResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreateresource,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+  def create(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreate,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
-  def createResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreateresource,
-    options: MethodOptions
-  ): GaxiosPromise[SchemaHttpBody] = js.native
-  def createResource(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreateresource,
+  def create(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreate, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def create(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  
   /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.delete
-    * @desc Deletes a FHIR resource.  Note: unless resource versioning is
-    * disabled by setting the disable_resource_versioning flag on the FHIR
-    * store, the deleted resources will be moved to a history repository that
-    * can still be retrieved through GetResourceVersion and related methods,
-    * unless they are removed by the DeleteResourceVersions method.
-    * @alias healthcare.projects.locations.datasets.fhirStores.fhir.delete
-    * @memberOf! ()
+    * Creates a FHIR resource. Implements the FHIR standard create interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#create), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#create), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#create)), which creates a new resource with a server-assigned resource ID. Also supports the FHIR standard conditional create interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#ccreate), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#ccreate), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#ccreate)), specified by supplying an `If-None-Exist` header containing a FHIR search query. If no resources match this search query, the server processes the create operation as normal. The request body must contain a JSON-encoded FHIR resource, and the request headers must contain `Content-Type: application/fhir+json`. On success, the response body contains a JSON-encoded representation of the resource as it was created on the server, including the server-assigned resource ID and version ID. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. For samples that show how to call `create`, see [Creating a FHIR resource](/healthcare/docs/how-tos/fhir-resources#creating_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the resource to delete.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.create({
+    *       // The name of the FHIR store this resource belongs to.
+    *       parent:
+    *         'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *       // The FHIR resource type to create, such as Patient or Observation. For a complete list, see the FHIR Resource Index ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html), [STU3](https://hl7.org/implement/standards/fhir/STU3/resourcelist.html), [R4](https://hl7.org/implement/standards/fhir/R4/resourcelist.html)). Must match the resource type in the provided content.
+    *       type: '[^/]+',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "contentType": "my_contentType",
+    *         //   "data": "my_data",
+    *         //   "extensions": []
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaHttpBody] = js.native
   def delete(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
@@ -245,8 +1044,8 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhir protected () extends StObj
   ): Unit = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDelete,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDelete, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def delete(
@@ -254,128 +1053,246 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhir protected () extends StObj
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  
   /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.delete$purge
-    * @desc Deletes all the historical versions of a resource (excluding
-    * current version) from the FHIR store. To remove all versions of a
-    * resource, first delete the current version and call this method.
-    * @alias
-    * healthcare.projects.locations.datasets.fhirStores.fhir.delete$purge
-    * @memberOf! ()
+    * Deletes a FHIR resource. Implements the FHIR standard delete interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#delete), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#delete), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#delete)). Note: Unless resource versioning is disabled by setting the disable_resource_versioning flag on the FHIR store, the deleted resources are moved to a history repository that can still be retrieved through vread and related methods, unless they are removed by the purge method. For samples that show how to call `delete`, see [Deleting a FHIR resource](/healthcare/docs/how-tos/fhir-resources#deleting_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the resource to purge.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
-  @JSName("delete$purge")
-  def delete$purge(): GaxiosPromise[SchemaEmpty] = js.native
-  @JSName("delete$purge")
-  def delete$purge(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  @JSName("delete$purge")
-  def delete$purge(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
-  @JSName("delete$purge")
-  def delete$purge(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDeletepurge): GaxiosPromise[SchemaEmpty] = js.native
-  @JSName("delete$purge")
-  def delete$purge(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDeletepurge,
-    callback: BodyResponseCallback[SchemaEmpty]
-  ): Unit = js.native
-  @JSName("delete$purge")
-  def delete$purge(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDeletepurge,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
-  ): Unit = js.native
-  @JSName("delete$purge")
-  def delete$purge(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDeletepurge, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
-  @JSName("delete$purge")
-  def delete$purge(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDeletepurge,
-    options: MethodOptions,
-    callback: BodyResponseCallback[SchemaEmpty]
-  ): Unit = js.native
-  
-  /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.get
-    * @desc Gets a FHIR resource.
-    * @alias healthcare.projects.locations.datasets.fhirStores.fhir.get
-    * @memberOf! ()
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the resource to retrieve.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.delete({
+    *       // The name of the resource to delete.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/[^/]+/[^/]+',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def get(): GaxiosPromise[SchemaHttpBody] = js.native
-  def get(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def get(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGet): GaxiosPromise[SchemaHttpBody] = js.native
-  def get(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGet,
-    callback: BodyResponseCallback[SchemaHttpBody]
-  ): Unit = js.native
-  def get(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGet,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
-  ): Unit = js.native
-  def get(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGet, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def get(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGet,
-    options: MethodOptions,
-    callback: BodyResponseCallback[SchemaHttpBody]
+  def delete(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
-  /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.getMetadata
-    * @desc Gets the FHIR capability statement for the store, which contains a
-    * description of functionality supported by the server.
-    * @alias healthcare.projects.locations.datasets.fhirStores.fhir.getMetadata
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Name of the FHIR store to retrieve the capabilities for.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
-  def getMetadata(): GaxiosPromise[SchemaHttpBody] = js.native
-  def getMetadata(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def getMetadata(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def getMetadata(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGetmetadata): GaxiosPromise[SchemaHttpBody] = js.native
-  def getMetadata(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGetmetadata,
+  def executeBundle(): GaxiosPromise[SchemaHttpBody] = js.native
+  def executeBundle(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def executeBundle(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def executeBundle(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirExecutebundle): GaxiosPromise[SchemaHttpBody] = js.native
+  def executeBundle(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirExecutebundle,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  def getMetadata(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGetmetadata,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+  def executeBundle(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirExecutebundle,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
-  def getMetadata(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGetmetadata, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def getMetadata(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirGetmetadata,
+  def executeBundle(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirExecutebundle, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def executeBundle(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirExecutebundle,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  
   /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.patch
-    * @desc Updates part of an existing resource.
-    * @alias healthcare.projects.locations.datasets.fhirStores.fhir.patch
-    * @memberOf! ()
+    * Executes all the requests in the given Bundle. Implements the FHIR standard batch/transaction interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#transaction), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#transaction), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#transaction)). Supports all interactions within a bundle, except search. This method accepts Bundles of type `batch` and `transaction`, processing them according to the batch processing rules ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#2.1.0.16.1), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#2.21.0.17.1), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#brules)) and transaction processing rules ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#2.1.0.16.2), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#2.21.0.17.2), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#trules)). The request body must contain a JSON-encoded FHIR `Bundle` resource, and the request headers must contain `Content-Type: application/fhir+json`. For a batch bundle or a successful transaction, the response body contains a JSON-encoded representation of a `Bundle` resource of type `batch-response` or `transaction-response` containing one entry for each entry in the request, with the outcome of processing the entry. In the case of an error for a transaction bundle, the response body contains a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. This method checks permissions for each request in the bundle. The `executeBundle` permission is required to call this method, but you must also grant sufficient permissions to execute the individual requests in the bundle. For example, if the bundle contains a request to create a FHIR resource, the caller must also have been granted the `healthcare.fhirResources.create` permission. You can use audit logs to view the permissions for `executeBundle` and each request in the bundle. For more information, see [Viewing Cloud Audit logs](https://cloud.google.com/healthcare-api/docs/how-tos/audit-logging). For samples that show how to call `executeBundle`, see [Managing FHIR resources using FHIR bundles](/healthcare/docs/how-tos/fhir-bundles).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the resource to update.
-    * @param {().HttpBody} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.executeBundle({
+    *       // Name of the FHIR store in which this bundle will be executed.
+    *       parent:
+    *         'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "contentType": "my_contentType",
+    *         //   "data": "my_data",
+    *         //   "extensions": []
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def executeBundle(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirExecutebundle,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def executeBundle(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirExecutebundle,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def history(): GaxiosPromise[SchemaHttpBody] = js.native
+  def history(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def history(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def history(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistory): GaxiosPromise[SchemaHttpBody] = js.native
+  def history(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistory,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def history(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistory,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def history(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistory, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def history(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistory,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Lists all the versions of a resource (including the current version and deleted versions) from the FHIR store. Implements the per-resource form of the FHIR standard history interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#history), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#history), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#history)). On success, the response body contains a JSON-encoded representation of a `Bundle` resource of type `history`, containing the version history sorted from most recent to oldest versions. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. For samples that show how to call `history`, see [Listing FHIR resource versions](/healthcare/docs/how-tos/fhir-resources#listing_fhir_resource_versions).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.history({
+    *       // The name of the resource to retrieve.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/[^/]+/[^/]+',
+    *       // Only include resource versions that were current at some point during the time period specified in the date time value. The date parameter format is yyyy-mm-ddThh:mm:ss[Z|(+|-)hh:mm] Clients may specify any of the following: * An entire year: `_at=2019` * An entire month: `_at=2019-01` * A specific day: `_at=2019-01-20` * A specific second: `_at=2018-12-31T23:59:58Z`
+    *       _at: 'placeholder-value',
+    *       // The maximum number of search results on a page. If not specified, 100 is used. May not be larger than 1000.
+    *       _count: 'placeholder-value',
+    *       // Used to retrieve the first, previous, next, or last page of resource versions when using pagination. Value should be set to the value of `_page_token` set in next or previous page links' URLs. Next and previous page are returned in the response bundle's links field, where `link.relation` is "previous" or "next". Omit `_page_token` if no previous request has been made.
+    *       _page_token: 'placeholder-value',
+    *       // Only include resource versions that were created at or after the given instant in time. The instant in time uses the format YYYY-MM-DDThh:mm:ss.sss+zz:zz (for example 2015-02-07T13:28:17.239+02:00 or 2017-01-01T00:00:00Z). The time must be specified to the second and include a time zone.
+    *       _since: 'placeholder-value',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def history(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistory, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def history(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistory,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaHttpBody] = js.native
   def patch(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
@@ -386,8 +1303,8 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhir protected () extends StObj
   ): Unit = js.native
   def patch(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatch,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
   def patch(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatch, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def patch(
@@ -395,66 +1312,338 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhir protected () extends StObj
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  
   /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.searchResources
-    * @desc Searches resources in the given FHIR store.  # Search Parameters
-    * The server's capability statement, retrieved through
-    * GetCapabilityStatement, indicates which search parameters are supported
-    * on each FHIR resource.  # Search Modifiers  Modifier   | Supported
-    * ----------- | --------- `:missing`  | Yes `:exact`    | Yes `:contains` |
-    * Yes `:text`     | Yes `:in`       | Yes `:not-in`   | Yes `:above`    |
-    * Yes `:below`    | Yes `:[type]`   | Yes `:not`      | Yes `:recurse`  |
-    * No
-    * @alias
-    * healthcare.projects.locations.datasets.fhirStores.fhir.searchResources
-    * @memberOf! ()
+    * Updates part of an existing resource by applying the operations specified in a [JSON Patch](http://jsonpatch.com/) document. Implements the FHIR standard patch interaction ([STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#patch), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#patch)). DSTU2 doesn't define a patch method, but the server supports it in the same way it supports STU3. The request body must contain a JSON Patch document, and the request headers must contain `Content-Type: application/json-patch+json`. On success, the response body contains a JSON-encoded representation of the updated resource, including the server-assigned version ID. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. For samples that show how to call `patch`, see [Patching a FHIR resource](/healthcare/docs/how-tos/fhir-resources#patching_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent Name of the FHIR store to retrieve resources from.
-    * @param {string} params.resourceType The type of the resource to search.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.patch({
+    *       // The name of the resource to update.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/[^/]+/[^/]+',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "contentType": "my_contentType",
+    *         //   "data": "my_data",
+    *         //   "extensions": []
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def searchResources(): GaxiosPromise[SchemaHttpBody] = js.native
-  def searchResources(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def searchResources(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
-  def searchResources(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources): GaxiosPromise[SchemaHttpBody] = js.native
-  def searchResources(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources,
+  def patch(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def read(): GaxiosPromise[SchemaHttpBody] = js.native
+  def read(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def read(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def read(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirRead): GaxiosPromise[SchemaHttpBody] = js.native
+  def read(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirRead,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  def searchResources(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+  def read(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirRead,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
-  def searchResources(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources,
-    options: MethodOptions
-  ): GaxiosPromise[SchemaHttpBody] = js.native
-  def searchResources(
-    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchresources,
+  def read(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirRead, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def read(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirRead,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
   ): Unit = js.native
-  
   /**
-    * healthcare.projects.locations.datasets.fhirStores.fhir.update
-    * @desc Updates the entire resource or creates a new resource with a client
-    * specified ID if the resource does not exist and the FHIR store has
-    * enable_update_create set.
-    * @alias healthcare.projects.locations.datasets.fhirStores.fhir.update
-    * @memberOf! ()
+    * Gets the contents of a FHIR resource. Implements the FHIR standard read interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#read), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#read), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#read)). Also supports the FHIR standard conditional read interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#cread), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#cread), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#cread)) specified by supplying an `If-Modified-Since` header with a date/time value or an `If-None-Match` header with an ETag value. On success, the response body contains a JSON-encoded representation of the resource. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. For samples that show how to call `read`, see [Getting a FHIR resource](/healthcare/docs/how-tos/fhir-resources#getting_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the resource to update.
-    * @param {().HttpBody} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await healthcare.projects.locations.datasets.fhirStores.fhir.read(
+    *     {
+    *       // The name of the resource to retrieve.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/[^/]+/[^/]+',
+    *     }
+    *   );
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def read(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirRead, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def read(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirRead,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def search(): GaxiosPromise[SchemaHttpBody] = js.native
+  def search(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def search(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch): GaxiosPromise[SchemaHttpBody] = js.native
+  def search(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def search(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def search(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def search(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Searches for resources in the given FHIR store according to criteria specified as query parameters. Implements the FHIR standard search interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#search), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#search), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#search)) using the search semantics described in the FHIR Search specification ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/search.html), [STU3](https://hl7.org/implement/standards/fhir/STU3/search.html), [R4](https://hl7.org/implement/standards/fhir/R4/search.html)). Supports four methods of search defined by the specification: * `GET [base]?[parameters]` to search across all resources. * `GET [base]/[type]?[parameters]` to search resources of a specified type. * `POST [base]/_search?[parameters]` as an alternate form having the same semantics as the `GET` method across all resources. * `POST [base]/[type]/_search?[parameters]` as an alternate form having the same semantics as the `GET` method for the specified type. The `GET` and `POST` methods do not support compartment searches. The `POST` method does not support `application/x-www-form-urlencoded` search parameters. On success, the response body contains a JSON-encoded representation of a `Bundle` resource of type `searchset`, containing the results of the search. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. The server's capability statement, retrieved through capabilities, indicates what search parameters are supported on each FHIR resource. A list of all search parameters defined by the specification can be found in the FHIR Search Parameter Registry ([STU3](https://hl7.org/implement/standards/fhir/STU3/searchparameter-registry.html), [R4](https://hl7.org/implement/standards/fhir/R4/searchparameter-registry.html)). FHIR search parameters for DSTU2 can be found on each resource's definition page. Supported search modifiers: `:missing`, `:exact`, `:contains`, `:text`, `:in`, `:not-in`, `:above`, `:below`, `:[type]`, `:not`, and `:recurse`. Supported search result parameters: `_sort`, `_count`, `_include`, `_revinclude`, `_summary=text`, `_summary=data`, and `_elements`. The maximum number of search results returned defaults to 100, which can be overridden by the `_count` parameter up to a maximum limit of 1000. If there are additional results, the returned `Bundle` contains a link of `relation` "next", which has a `_page_token` parameter for an opaque pagination token that can be used to retrieve the next page. Resources with a total size larger than 5MB or a field count larger than 50,000 might not be fully searchable as the server might trim its generated search index in those cases. Note: FHIR resources are indexed asynchronously, so there might be a slight delay between the time a resource is created or changes and when the change is reflected in search results. For samples and detailed information, see [Searching for FHIR resources](/healthcare/docs/how-tos/fhir-search) and [Advanced FHIR search features](/healthcare/docs/how-tos/fhir-advanced-search).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.search({
+    *       // Name of the FHIR store to retrieve resources from.
+    *       parent:
+    *         'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "resourceType": "my_resourceType"
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def search(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def search(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def searchType(): GaxiosPromise[SchemaHttpBody] = js.native
+  def searchType(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def searchType(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def searchType(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchtype): GaxiosPromise[SchemaHttpBody] = js.native
+  def searchType(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchtype,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def searchType(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchtype,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def searchType(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchtype, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def searchType(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchtype,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Searches for resources in the given FHIR store according to criteria specified as query parameters. Implements the FHIR standard search interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#search), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#search), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#search)) using the search semantics described in the FHIR Search specification ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/search.html), [STU3](https://hl7.org/implement/standards/fhir/STU3/search.html), [R4](https://hl7.org/implement/standards/fhir/R4/search.html)). Supports four methods of search defined by the specification: * `GET [base]?[parameters]` to search across all resources. * `GET [base]/[type]?[parameters]` to search resources of a specified type. * `POST [base]/_search?[parameters]` as an alternate form having the same semantics as the `GET` method across all resources. * `POST [base]/[type]/_search?[parameters]` as an alternate form having the same semantics as the `GET` method for the specified type. The `GET` and `POST` methods do not support compartment searches. The `POST` method does not support `application/x-www-form-urlencoded` search parameters. On success, the response body contains a JSON-encoded representation of a `Bundle` resource of type `searchset`, containing the results of the search. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. The server's capability statement, retrieved through capabilities, indicates what search parameters are supported on each FHIR resource. A list of all search parameters defined by the specification can be found in the FHIR Search Parameter Registry ([STU3](https://hl7.org/implement/standards/fhir/STU3/searchparameter-registry.html), [R4](https://hl7.org/implement/standards/fhir/R4/searchparameter-registry.html)). FHIR search parameters for DSTU2 can be found on each resource's definition page. Supported search modifiers: `:missing`, `:exact`, `:contains`, `:text`, `:in`, `:not-in`, `:above`, `:below`, `:[type]`, `:not`, and `:recurse`. Supported search result parameters: `_sort`, `_count`, `_include`, `_revinclude`, `_summary=text`, `_summary=data`, and `_elements`. The maximum number of search results returned defaults to 100, which can be overridden by the `_count` parameter up to a maximum limit of 1000. If there are additional results, the returned `Bundle` contains a link of `relation` "next", which has a `_page_token` parameter for an opaque pagination token that can be used to retrieve the next page. Resources with a total size larger than 5MB or a field count larger than 50,000 might not be fully searchable as the server might trim its generated search index in those cases. Note: FHIR resources are indexed asynchronously, so there might be a slight delay between the time a resource is created or changes and when the change is reflected in search results. For samples and detailed information, see [Searching for FHIR resources](/healthcare/docs/how-tos/fhir-search) and [Advanced FHIR search features](/healthcare/docs/how-tos/fhir-advanced-search).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     (await healthcare.projects.locations.datasets.fhirStores.fhir.search) -
+    *     type({
+    *       // Name of the FHIR store to retrieve resources from.
+    *       parent:
+    *         'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore',
+    *       // The FHIR resource type to search, such as Patient or Observation. For a complete list, see the FHIR Resource Index ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html), [STU3](https://hl7.org/implement/standards/fhir/STU3/resourcelist.html), [R4](https://hl7.org/implement/standards/fhir/R4/resourcelist.html)).
+    *       resourceType: 'placeholder-value',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "resourceType": "my_resourceType"
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def searchType(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchtype,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def searchType(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirSearchtype,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaHttpBody] = js.native
   def update(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
@@ -465,13 +1654,161 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhir protected () extends StObj
   ): Unit = js.native
   def update(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirUpdate,
-    options: BodyResponseCallback[SchemaHttpBody],
-    callback: BodyResponseCallback[SchemaHttpBody]
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
   ): Unit = js.native
   def update(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirUpdate, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def update(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Updates the entire contents of a resource. Implements the FHIR standard update interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#update), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#update), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#update)). If the specified resource does not exist and the FHIR store has enable_update_create set, creates the resource with the client-specified ID. It is strongly advised not to include or encode any sensitive data such as patient identifiers in client-specified resource IDs. Those IDs are part of the FHIR resource path recorded in Cloud Audit Logs and Pub/Sub notifications. Those IDs can also be contained in reference fields within other resources. The request body must contain a JSON-encoded FHIR resource, and the request headers must contain `Content-Type: application/fhir+json`. The resource must contain an `id` element having an identical value to the ID in the REST path of the request. On success, the response body contains a JSON-encoded representation of the updated resource, including the server-assigned version ID. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. For samples that show how to call `update`, see [Updating a FHIR resource](/healthcare/docs/how-tos/fhir-resources#updating_a_fhir_resource).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.update({
+    *       // The name of the resource to update.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/[^/]+/[^/]+',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "contentType": "my_contentType",
+    *         //   "data": "my_data",
+    *         //   "extensions": []
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def vread(): GaxiosPromise[SchemaHttpBody] = js.native
+  def vread(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def vread(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def vread(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirVread): GaxiosPromise[SchemaHttpBody] = js.native
+  def vread(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirVread,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  def vread(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirVread,
+    options: BodyResponseCallback[Readable | SchemaHttpBody],
+    callback: BodyResponseCallback[Readable | SchemaHttpBody]
+  ): Unit = js.native
+  def vread(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirVread, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def vread(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirVread,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaHttpBody]
+  ): Unit = js.native
+  /**
+    * Gets the contents of a version (current or historical) of a FHIR resource by version ID. Implements the FHIR standard vread interaction ([DSTU2](https://hl7.org/implement/standards/fhir/DSTU2/http.html#vread), [STU3](https://hl7.org/implement/standards/fhir/STU3/http.html#vread), [R4](https://hl7.org/implement/standards/fhir/R4/http.html#vread)). On success, the response body contains a JSON-encoded representation of the resource. Errors generated by the FHIR store contain a JSON-encoded `OperationOutcome` resource describing the reason for the error. If the request cannot be mapped to a valid API method on a FHIR store, a generic GCP error might be returned instead. For samples that show how to call `vread`, see [Retrieving a FHIR resource version](/healthcare/docs/how-tos/fhir-resources#retrieving_a_fhir_resource_version).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/healthcare.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const healthcare = google.healthcare('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await healthcare.projects.locations.datasets.fhirStores.fhir.vread({
+    *       // The name of the resource version to retrieve.
+    *       name: 'projects/my-project/locations/my-location/datasets/my-dataset/fhirStores/my-fhirStore/fhir/[^/]+/[^/]+/_history/[^/]+',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "contentType": "my_contentType",
+    *   //   "data": "my_data",
+    *   //   "extensions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def vread(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirVread, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def vread(
+    params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirVread,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

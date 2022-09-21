@@ -11,9 +11,9 @@ Use ffprobe to get info from media files and return as JSON
 | Full name          | ffprobe |
 | Keywords           | json, ffmpeg, ffprobe, media, video, audio, image, images |
 | # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 228700 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 69205.0 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/eugeneware/ffprobe#readme)

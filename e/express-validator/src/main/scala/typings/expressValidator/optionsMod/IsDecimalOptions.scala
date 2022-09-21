@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IsDecimalOptions extends StObject {
   
+  var blacklisted_chars: js.UndefOr[String] = js.undefined
+  
   var decimal_digits: js.UndefOr[String] = js.undefined
   
   var force_decimal: js.UndefOr[Boolean] = js.undefined
@@ -20,6 +22,10 @@ object IsDecimalOptions {
   }
   
   extension [Self <: IsDecimalOptions](x: Self) {
+    
+    inline def setBlacklisted_chars(value: String): Self = StObject.set(x, "blacklisted_chars", value.asInstanceOf[js.Any])
+    
+    inline def setBlacklisted_charsUndefined: Self = StObject.set(x, "blacklisted_chars", js.undefined)
     
     inline def setDecimal_digits(value: String): Self = StObject.set(x, "decimal_digits", value.asInstanceOf[js.Any])
     

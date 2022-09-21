@@ -8,5 +8,5 @@ object updateGlobalTableMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/UpdateGlobalTable", "UpdateGlobalTable")
   @js.native
-  val UpdateGlobalTable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UpdateGlobalTable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

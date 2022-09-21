@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object adminAccessSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/AdminAccessSmall", JSImport.Default)
   @js.native
-  val default: SFC[AdminAccessSmallProps] = js.native
+  val default: FC[AdminAccessSmallProps] = js.native
   
   trait AdminAccessSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object AdminAccessSmallProps {
     
@@ -29,14 +29,14 @@ object adminAccessSmallMod extends Shortcut {
     
     extension [Self <: AdminAccessSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[AdminAccessSmallProps]
+  type _To = FC[AdminAccessSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `adminAccessSmallMod.foo` */
-  override def _to: SFC[AdminAccessSmallProps] = default
+  override def _to: FC[AdminAccessSmallProps] = default
 }

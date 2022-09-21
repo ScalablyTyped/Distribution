@@ -17,7 +17,7 @@ trait UpdateReportGroupInput extends StObject {
   var exportConfig: js.UndefOr[ReportExportConfig] = js.undefined
   
   /**
-    *  An updated list of tag key and value pairs associated with this report group.  These tags are available for use by AWS services that support AWS CodeBuild report group tags.
+    *  An updated list of tag key and value pairs associated with this report group.  These tags are available for use by Amazon Web Services services that support CodeBuild report group tags.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -40,6 +40,6 @@ object UpdateReportGroupInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

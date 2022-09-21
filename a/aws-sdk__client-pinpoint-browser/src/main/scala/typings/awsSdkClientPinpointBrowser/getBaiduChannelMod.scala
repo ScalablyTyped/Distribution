@@ -8,5 +8,5 @@ object getBaiduChannelMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetBaiduChannel", "GetBaiduChannel")
   @js.native
-  val GetBaiduChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetBaiduChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("canvas-gauges", "Animation")
   @js.native
-  class Animation ()
+  open class Animation ()
     extends StObject
        with typings.canvasGauges.CanvasGauges.Animation {
     def this(rule: String) = this()
@@ -73,9 +73,9 @@ object mod {
     
     inline def ensureValue(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureValue")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def fromElement(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def fromElement(element: HTMLElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def initialize(`type`: String, options: typings.canvasGauges.CanvasGauges.GenericOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def initialize(`type`: String, options: typings.canvasGauges.CanvasGauges.GenericOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("canvas-gauges", "BaseGauge.version")
     @js.native
@@ -84,7 +84,7 @@ object mod {
   
   @JSImport("canvas-gauges", "DomObserver")
   @js.native
-  class DomObserver protected ()
+  open class DomObserver protected ()
     extends StObject
        with typings.canvasGauges.CanvasGauges.DomObserver {
     def this(options: typings.canvasGauges.CanvasGauges.GenericOptions, element: String, `type`: String) = this()
@@ -96,9 +96,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def domReady(handler: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("domReady")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def domReady(handler: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("domReady")(handler.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def parse(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def parse(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def toAttributeName(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAttributeName")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -111,7 +111,7 @@ object mod {
   
   @JSImport("canvas-gauges", "LinearGauge")
   @js.native
-  class LinearGauge protected ()
+  open class LinearGauge protected ()
     extends StObject
        with typings.canvasGauges.CanvasGauges.LinearGauge {
     def this(options: LinearGaugeOptions) = this()
@@ -119,7 +119,7 @@ object mod {
   
   @JSImport("canvas-gauges", "RadialGauge")
   @js.native
-  class RadialGauge protected ()
+  open class RadialGauge protected ()
     extends StObject
        with typings.canvasGauges.CanvasGauges.RadialGauge {
     def this(options: RadialGaugeOptions) = this()
@@ -127,7 +127,7 @@ object mod {
   
   @JSImport("canvas-gauges", "SmartCanvas")
   @js.native
-  class SmartCanvas protected ()
+  open class SmartCanvas protected ()
     extends StObject
        with typings.canvasGauges.CanvasGauges.SmartCanvas {
     def this(element: HTMLCanvasElement) = this()
@@ -145,7 +145,7 @@ object mod {
     var contextClone: CanvasRenderingContext2D = js.native
     
     /* CompleteClass */
-    override def destroy(): js.Any = js.native
+    override def destroy(): Any = js.native
     
     /* CompleteClass */
     var drawHeight: Double = js.native
@@ -169,13 +169,13 @@ object mod {
     var height: Double = js.native
     
     /* CompleteClass */
-    override def init(): js.Any = js.native
+    override def init(): Any = js.native
     
     /* CompleteClass */
     var minSide: Double = js.native
     
     /* CompleteClass */
-    override def onRedraw(): js.Any = js.native
+    override def onRedraw(): Any = js.native
     
     /* CompleteClass */
     var pixelRatio: Double = js.native
@@ -198,6 +198,6 @@ object mod {
     def collection: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas] = js.native
     inline def collection_=(x: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collection")(x.asInstanceOf[js.Any])
     
-    inline def redraw(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("redraw")().asInstanceOf[js.Any]
+    inline def redraw(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("redraw")().asInstanceOf[Any]
   }
 }

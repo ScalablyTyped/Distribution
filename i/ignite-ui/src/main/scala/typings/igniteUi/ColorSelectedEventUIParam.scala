@@ -9,7 +9,7 @@ trait ColorSelectedEventUIParam extends StObject {
   /**
     * Used to get a reference to the color object.
     */
-  var color: js.UndefOr[js.Any] = js.undefined
+  var color: js.UndefOr[Any] = js.undefined
 }
 object ColorSelectedEventUIParam {
   
@@ -20,7 +20,7 @@ object ColorSelectedEventUIParam {
   
   extension [Self <: ColorSelectedEventUIParam](x: Self) {
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }

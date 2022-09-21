@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsrender
 
-Typings are for version 1.0.8
+Typings are for version v1.0.11
 
 ## Library description:
 Best-of-breed templating in browser or on Node.js (with Express 4, Hapi and Browserify integration)
@@ -10,10 +10,10 @@ Best-of-breed templating in browser or on Node.js (with Express 4, Hapi and Brow
 | ------------------ | :-------------: |
 | Full name          | jsrender |
 | Keywords           | jsrender, node, express, hapi, browserify, templates, template, jquery-plugin, ecosystem:jquery |
-| # releases         | 9 |
-| # dependents       | 29 |
-| # downloads        | 698007 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 62211.666666666664 |
+| # stars            | 2653.0 |
 
 ## Links
 - [Homepage](http://www.jsviews.com/#jsrender)

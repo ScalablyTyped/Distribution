@@ -1,5 +1,6 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.Target
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,11 +10,19 @@ object checkboxDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/checkbox/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends BasicCheckboxExample {
-    def this(props: js.Any, context: js.Any) = this()
+  open class default protected () extends BasicCheckboxExample {
+    def this(props: Any, context: Any) = this()
   }
   
   @js.native
-  trait BasicCheckboxExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicCheckboxExample extends Component[Any, Any, Any] {
+    
+    def onChange(e: Target): Unit = js.native
+    
+    def onChange2(e: Target): Unit = js.native
+    
+    def toggleChecked(): Unit = js.native
+    
+    def toggleDisable(): Unit = js.native
+  }
 }

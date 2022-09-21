@@ -4,16 +4,16 @@
 Typings are for version 4.0
 
 ## Library description:
-Excel-like grid component built with React, with editors, keyboard navigation, copy & paste, and the like
+Feature-rich and customizable data grid React component
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-data-grid |
-| Keywords           | react, react-data-grid, data-grid |
-| # releases         | 69 |
-| # dependents       | 95 |
-| # downloads        | 2530101 |
-| # stars            | 12 |
+| Keywords           | react, data grid |
+| # releases         | 47 |
+| # dependents       | 0.0 |
+| # downloads        | 335856.0 |
+| # stars            | 5574.0 |
 
 ## Links
 - [Homepage](https://github.com/adazzle/react-data-grid#readme)

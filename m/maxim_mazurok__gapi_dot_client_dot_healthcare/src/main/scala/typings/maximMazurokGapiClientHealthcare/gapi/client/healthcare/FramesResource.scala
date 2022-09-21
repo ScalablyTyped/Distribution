@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientHealthcare.anon.Accesstoken
+import typings.maximMazurokGapiClientHealthcare.anon.DicomWebPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait FramesResource extends StObject {
     * [Retrieving DICOM data](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieving_dicom_data).
     */
   def retrieveFrames(): Request[HttpBody] = js.native
-  def retrieveFrames(request: Accesstoken): Request[HttpBody] = js.native
+  def retrieveFrames(request: DicomWebPath): Request[HttpBody] = js.native
   
   /**
     * RetrieveRenderedFrames returns instances associated with the given study, series, SOP Instance UID and frame numbers in an acceptable Rendered Media Type. See [RetrieveTransaction]
@@ -25,5 +25,5 @@ trait FramesResource extends StObject {
     * RetrieveRenderedFrames, see [Retrieving consumer image formats](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieving_consumer_image_formats).
     */
   def retrieveRendered(): Request[HttpBody] = js.native
-  def retrieveRendered(request: Accesstoken): Request[HttpBody] = js.native
+  def retrieveRendered(request: DicomWebPath): Request[HttpBody] = js.native
 }

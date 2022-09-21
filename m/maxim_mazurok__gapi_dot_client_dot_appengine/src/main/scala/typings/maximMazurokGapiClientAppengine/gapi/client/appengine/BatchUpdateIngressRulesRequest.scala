@@ -22,6 +22,6 @@ object BatchUpdateIngressRulesRequest {
     
     inline def setIngressRulesUndefined: Self = StObject.set(x, "ingressRules", js.undefined)
     
-    inline def setIngressRulesVarargs(value: FirewallRule*): Self = StObject.set(x, "ingressRules", js.Array(value :_*))
+    inline def setIngressRulesVarargs(value: FirewallRule*): Self = StObject.set(x, "ingressRules", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRHitTest")
 @js.native
-class WebXRHitTest protected ()
+open class WebXRHitTest protected ()
   extends typings.babylonjs.xRIndexMod.WebXRHitTest {
   /**
     * Creates a new instance of the hit test feature

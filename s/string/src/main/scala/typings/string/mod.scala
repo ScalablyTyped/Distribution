@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(o: js.Any): StringJS = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[StringJS]
+  inline def apply(o: Any): StringJS = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[StringJS]
   
   @JSImport("string", JSImport.Namespace)
   @js.native
@@ -121,7 +121,7 @@ object mod {
     
     var s: String = js.native
     
-    def setValue(string: js.Any): StringJS = js.native
+    def setValue(string: Any): StringJS = js.native
     
     def slugify(): StringJS = js.native
     

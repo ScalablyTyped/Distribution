@@ -29,7 +29,7 @@ object DescribeFlowExecutionRecordsResponse {
     
     inline def setFlowExecutionsUndefined: Self = StObject.set(x, "flowExecutions", js.undefined)
     
-    inline def setFlowExecutionsVarargs(value: ExecutionRecord*): Self = StObject.set(x, "flowExecutions", js.Array(value :_*))
+    inline def setFlowExecutionsVarargs(value: ExecutionRecord*): Self = StObject.set(x, "flowExecutions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

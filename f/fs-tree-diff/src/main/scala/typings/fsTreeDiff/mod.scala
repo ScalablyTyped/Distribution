@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("fs-tree-diff", JSImport.Namespace)
   @js.native
-  class ^[T /* <: BaseEntry */] ()
+  open class ^[T /* <: BaseEntry */] ()
     extends StObject
        with FSTree[T] {
     def this(options: Entries[T]) = this()
@@ -56,7 +56,7 @@ object mod {
     
     def forEach(
       fn: js.Function3[/* entry */ T, /* index */ Double, /* collection */ js.Array[T], Unit],
-      context: js.Any
+      context: Any
     ): Unit = js.native
     
     val size: Double = js.native
@@ -104,7 +104,7 @@ object mod {
       
       inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      inline def setEntriesVarargs(value: BaseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: BaseEntry*): Self = StObject.set(x, "entries", js.Array(value*))
       
       inline def setSortAndExpand(value: Boolean): Self = StObject.set(x, "sortAndExpand", value.asInstanceOf[js.Any])
       

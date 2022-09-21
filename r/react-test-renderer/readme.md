@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-test-renderer
 
-Typings are for version 17.0
+Typings are for version 18.0
 
 ## Library description:
 React package for snapshot testing.
@@ -10,10 +10,10 @@ React package for snapshot testing.
 | ------------------ | :-------------: |
 | Full name          | react-test-renderer |
 | Keywords           | react, react-native, react-testing |
-| # releases         | 136 |
-| # dependents       | 871 |
-| # downloads        | 174328633 |
-| # stars            | 25 |
+| # releases         | 753 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0626055333333332E7 |
+| # stars            | 195015.0 |
 
 ## Links
 - [Homepage](https://reactjs.org/)

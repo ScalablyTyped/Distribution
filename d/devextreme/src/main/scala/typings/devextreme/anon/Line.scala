@@ -1,17 +1,25 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.straight
-import typings.devextreme.devextremeStrings.waved
+import typings.devextreme.mod.DevExpress.common.charts.ScaleBreakLineStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Line extends StObject {
   
+  /**
+    * Specifies the scale breaks&apos; color.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[straight | waved] = js.undefined
+  /**
+    * Specifies the scale breaks&apos; line style.
+    */
+  var line: js.UndefOr[ScaleBreakLineStyle] = js.undefined
   
+  /**
+    * Specifies the scale breaks&apos; width in pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object Line {
@@ -27,7 +35,7 @@ object Line {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setLine(value: straight | waved): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ScaleBreakLineStyle): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     

@@ -28,7 +28,7 @@ object ListEventsResponse {
     
     inline def setErrorEventsUndefined: Self = StObject.set(x, "errorEvents", js.undefined)
     
-    inline def setErrorEventsVarargs(value: ErrorEvent*): Self = StObject.set(x, "errorEvents", js.Array(value :_*))
+    inline def setErrorEventsVarargs(value: ErrorEvent*): Self = StObject.set(x, "errorEvents", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

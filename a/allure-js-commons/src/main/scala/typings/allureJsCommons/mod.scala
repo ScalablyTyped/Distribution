@@ -1,6 +1,5 @@
 package typings.allureJsCommons
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,28 +8,28 @@ object mod {
   
   @JSImport("allure-js-commons", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Allure
   
   @JSImport("allure-js-commons", "Attachment")
   @js.native
-  class Attachment protected () extends StObject {
-    def this(title: String, source: js.Any, size: Double, mime: String) = this()
+  open class Attachment protected () extends StObject {
+    def this(title: String, source: Any, size: Double, mime: String) = this()
     
     def addAttachment(attachment: Attachment): Unit = js.native
     
     def addStep(step: Step): Unit = js.native
     
-    def end(status: Status, error: Error): Unit = js.native
-    def end(status: Status, error: Error, timestamp: Double): Unit = js.native
+    def end(status: Status, error: js.Error): Unit = js.native
+    def end(status: Status, error: js.Error, timestamp: Double): Unit = js.native
     
     def toXML(): String = js.native
   }
   
   @JSImport("allure-js-commons", "Description")
   @js.native
-  class Description protected () extends StObject {
+  open class Description protected () extends StObject {
     def this(value: String, `type`: TYPE) = this()
     
     def toXML(): String = js.native
@@ -38,7 +37,7 @@ object mod {
   
   @JSImport("allure-js-commons", "Step")
   @js.native
-  class Step protected () extends StObject {
+  open class Step protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, timestamp: Double) = this()
     
@@ -46,15 +45,15 @@ object mod {
     
     def addStep(step: Step): Unit = js.native
     
-    def end(status: Status, error: Error): Unit = js.native
-    def end(status: Status, error: Error, timestamp: Double): Unit = js.native
+    def end(status: Status, error: js.Error): Unit = js.native
+    def end(status: Status, error: js.Error, timestamp: Double): Unit = js.native
     
     def toXML(): String = js.native
   }
   
   @JSImport("allure-js-commons", "Suite")
   @js.native
-  class Suite protected () extends StObject {
+  open class Suite protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, timestamp: Double) = this()
     
@@ -100,7 +99,7 @@ object mod {
   
   @JSImport("allure-js-commons", "Test")
   @js.native
-  class Test protected () extends StObject {
+  open class Test protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, timestamp: Double) = this()
     
@@ -108,12 +107,12 @@ object mod {
     
     def addLabel(name: String, value: String): Unit = js.native
     
-    def addParameter(kind: js.Any, name: String, value: String): Unit = js.native
+    def addParameter(kind: Any, name: String, value: String): Unit = js.native
     
     def addStep(step: Step): Unit = js.native
     
-    def end(status: Status, error: Error): Unit = js.native
-    def end(status: Status, error: Error, timestamp: Double): Unit = js.native
+    def end(status: Status, error: js.Error): Unit = js.native
+    def end(status: Status, error: js.Error, timestamp: Double): Unit = js.native
     
     def setDescription(description: String, `type`: TYPE): Unit = js.native
     
@@ -123,7 +122,7 @@ object mod {
   @js.native
   trait Allure extends StObject {
     
-    def addAttachment(attachmentName: String, buffer: js.Any, `type`: String): Unit = js.native
+    def addAttachment(attachmentName: String, buffer: Any, `type`: String): Unit = js.native
     
     def endCase(status: Status): Unit = js.native
     def endCase(status: Status, err: js.Object): Unit = js.native

@@ -17,7 +17,7 @@ trait UseGlobalFiltersOptions[D /* <: js.Object */] extends StObject {
     (js.Function3[
       /* rows */ js.Array[Row[D]], 
       /* columnIds */ js.Array[IdType[D]], 
-      /* filterValue */ js.Any, 
+      /* filterValue */ Any, 
       js.Array[Row[D]]
     ]) | String
   ] = js.undefined
@@ -49,13 +49,13 @@ object UseGlobalFiltersOptions {
       value: (js.Function3[
           /* rows */ js.Array[Row[D]], 
           /* columnIds */ js.Array[IdType[D]], 
-          /* filterValue */ js.Any, 
+          /* filterValue */ Any, 
           js.Array[Row[D]]
         ]) | String
     ): Self = StObject.set(x, "globalFilter", value.asInstanceOf[js.Any])
     
     inline def setGlobalFilterFunction3(
-      value: (/* rows */ js.Array[Row[D]], /* columnIds */ js.Array[IdType[D]], /* filterValue */ js.Any) => js.Array[Row[D]]
+      value: (/* rows */ js.Array[Row[D]], /* columnIds */ js.Array[IdType[D]], /* filterValue */ Any) => js.Array[Row[D]]
     ): Self = StObject.set(x, "globalFilter", js.Any.fromFunction3(value))
     
     inline def setGlobalFilterUndefined: Self = StObject.set(x, "globalFilter", js.undefined)

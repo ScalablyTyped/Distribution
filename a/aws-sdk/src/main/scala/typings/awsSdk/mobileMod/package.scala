@@ -1,43 +1,45 @@
 package typings.awsSdk.mobileMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AttributeKey = java.lang.String
+type AttributeKey = String
 
-type AttributeValue = java.lang.String
+type AttributeValue = String
 
-type Attributes = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mobileMod.AttributeValue]
+type Attributes = StringDictionary[AttributeValue]
 
 type Boolean = scala.Boolean
 
-type BundleDescription = java.lang.String
+type BundleDescription = String
 
-type BundleId = java.lang.String
+type BundleId = String
 
-type BundleList = js.Array[typings.awsSdk.mobileMod.BundleDetails]
+type BundleList = js.Array[BundleDetails]
 
-type BundleTitle = java.lang.String
+type BundleTitle = String
 
-type BundleVersion = java.lang.String
+type BundleVersion = String
 
-type ConsoleUrl = java.lang.String
+type ConsoleUrl = String
 
-type Contents = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.mobileMod.Blob | java.lang.String
+type Contents = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type Date = typings.std.Date
+type Date = js.Date
 
-type DownloadUrl = java.lang.String
+type DownloadUrl = String
 
-type Feature = java.lang.String
+type Feature = String
 
-type IconUrl = java.lang.String
+type IconUrl = String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OSX
@@ -49,15 +51,15 @@ type NextToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.JAVASCRIPT
   - java.lang.String
 */
-type Platform = typings.awsSdk.mobileMod._Platform | java.lang.String
+type Platform = _Platform | String
 
-type Platforms = js.Array[typings.awsSdk.mobileMod.Platform]
+type Platforms = js.Array[Platform]
 
-type ProjectId = java.lang.String
+type ProjectId = String
 
-type ProjectName = java.lang.String
+type ProjectName = String
 
-type ProjectRegion = java.lang.String
+type ProjectRegion = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NORMAL
@@ -65,25 +67,25 @@ type ProjectRegion = java.lang.String
   - typings.awsSdk.awsSdkStrings.IMPORTING
   - java.lang.String
 */
-type ProjectState = typings.awsSdk.mobileMod._ProjectState | java.lang.String
+type ProjectState = _ProjectState | String
 
-type ProjectSummaries = js.Array[typings.awsSdk.mobileMod.ProjectSummary]
+type ProjectSummaries = js.Array[ProjectSummary]
 
-type ResourceArn = java.lang.String
+type ResourceArn = String
 
-type ResourceName = java.lang.String
+type ResourceName = String
 
-type ResourceType = java.lang.String
+type ResourceType = String
 
-type Resources = js.Array[typings.awsSdk.mobileMod.Resource]
+type Resources = js.Array[Resource]
 
-type ShareUrl = java.lang.String
+type ShareUrl = String
 
-type SnapshotId = java.lang.String
+type SnapshotId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-07-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.mobileMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

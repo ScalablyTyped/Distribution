@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "TouchZoomRotateHandler")
 @js.native
-class TouchZoomRotateHandler protected () extends StObject {
+open class TouchZoomRotateHandler protected () extends StObject {
   def this(map: Map) = this()
   
   def disable(): Unit = js.native
@@ -14,6 +14,7 @@ class TouchZoomRotateHandler protected () extends StObject {
   def disableRotation(): Unit = js.native
   
   def enable(): Unit = js.native
+  def enable(options: InteractiveOptions): Unit = js.native
   
   def enableRotation(): Unit = js.native
   

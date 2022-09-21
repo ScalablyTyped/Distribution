@@ -5,50 +5,47 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for role resource in Directory API.
-  */
 trait SchemaRole extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Returns true if the role is a super admin role.
+    * Returns `true` if the role is a super admin role.
     */
-  var isSuperAdminRole: js.UndefOr[Boolean] = js.undefined
+  var isSuperAdminRole: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Returns true if this is a pre-defined system role.
+    * Returns `true` if this is a pre-defined system role.
     */
-  var isSystemRole: js.UndefOr[Boolean] = js.undefined
+  var isSystemRole: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The type of the API resource. This is always admin#directory#role.
+    * The type of the API resource. This is always `admin#directory#role`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A short description of the role.
     */
-  var roleDescription: js.UndefOr[String] = js.undefined
+  var roleDescription: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of the role.
     */
-  var roleId: js.UndefOr[String] = js.undefined
+  var roleId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Name of the role.
     */
-  var roleName: js.UndefOr[String] = js.undefined
+  var roleName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The set of privileges that are granted to this role.
     */
-  var rolePrivileges: js.UndefOr[js.Array[PrivilegeName]] = js.undefined
+  var rolePrivileges: js.UndefOr[js.Array[PrivilegeName] | Null] = js.undefined
 }
 object SchemaRole {
   
@@ -61,36 +58,52 @@ object SchemaRole {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setIsSuperAdminRole(value: Boolean): Self = StObject.set(x, "isSuperAdminRole", value.asInstanceOf[js.Any])
+    
+    inline def setIsSuperAdminRoleNull: Self = StObject.set(x, "isSuperAdminRole", null)
     
     inline def setIsSuperAdminRoleUndefined: Self = StObject.set(x, "isSuperAdminRole", js.undefined)
     
     inline def setIsSystemRole(value: Boolean): Self = StObject.set(x, "isSystemRole", value.asInstanceOf[js.Any])
     
+    inline def setIsSystemRoleNull: Self = StObject.set(x, "isSystemRole", null)
+    
     inline def setIsSystemRoleUndefined: Self = StObject.set(x, "isSystemRole", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setRoleDescription(value: String): Self = StObject.set(x, "roleDescription", value.asInstanceOf[js.Any])
     
+    inline def setRoleDescriptionNull: Self = StObject.set(x, "roleDescription", null)
+    
     inline def setRoleDescriptionUndefined: Self = StObject.set(x, "roleDescription", js.undefined)
     
     inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
+    
+    inline def setRoleIdNull: Self = StObject.set(x, "roleId", null)
     
     inline def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
     inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
+    inline def setRoleNameNull: Self = StObject.set(x, "roleName", null)
+    
     inline def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
     inline def setRolePrivileges(value: js.Array[PrivilegeName]): Self = StObject.set(x, "rolePrivileges", value.asInstanceOf[js.Any])
     
+    inline def setRolePrivilegesNull: Self = StObject.set(x, "rolePrivileges", null)
+    
     inline def setRolePrivilegesUndefined: Self = StObject.set(x, "rolePrivileges", js.undefined)
     
-    inline def setRolePrivilegesVarargs(value: PrivilegeName*): Self = StObject.set(x, "rolePrivileges", js.Array(value :_*))
+    inline def setRolePrivilegesVarargs(value: PrivilegeName*): Self = StObject.set(x, "rolePrivileges", js.Array(value*))
   }
 }

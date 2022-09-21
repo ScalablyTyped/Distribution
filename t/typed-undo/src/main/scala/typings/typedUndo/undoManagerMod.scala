@@ -14,7 +14,7 @@ object undoManagerMod {
     *
     * @param limit The maximum amount of editables to remember
     */
-  class UndoManager () extends StObject {
+  open class UndoManager () extends StObject {
     def this(limit: Double) = this()
     
     /**
@@ -24,7 +24,7 @@ object undoManagerMod {
       */
     def add(edit: UndoableEdit): Unit = js.native
     
-    /* private */ var applyLimit: js.Any = js.native
+    /* private */ var applyLimit: Any = js.native
     
     /**
       * @returns true if there is anything to be redone (only significant edits count)
@@ -41,7 +41,7 @@ object undoManagerMod {
       */
     def clear(): Unit = js.native
     
-    /* private */ var edits: js.Any = js.native
+    /* private */ var edits: Any = js.native
     
     /**
       * Get the maximum amount of editables to remember
@@ -53,11 +53,11 @@ object undoManagerMod {
       */
     def isModified(): Boolean = js.native
     
-    /* private */ var limit: js.Any = js.native
+    /* private */ var limit: Any = js.native
     
-    /* private */ var listener: js.Any = js.native
+    /* private */ var listener: Any = js.native
     
-    /* private */ var position: js.Any = js.native
+    /* private */ var position: Any = js.native
     
     /**
       * Redo the next significant edit.
@@ -95,7 +95,7 @@ object undoManagerMod {
       * @return False if no significant edit can be redone.
       * Otherwise the new position.
       */
-    /* private */ var testRedo: js.Any = js.native
+    /* private */ var testRedo: Any = js.native
     
     /**
       * Test to see the new position after an undo would happen.
@@ -104,7 +104,7 @@ object undoManagerMod {
       * @return False if no significant edit can be undone.
       * Otherwise the new position.
       */
-    /* private */ var testUndo: js.Any = js.native
+    /* private */ var testUndo: Any = js.native
     
     /**
       * Undo the last significant edit.
@@ -114,6 +114,6 @@ object undoManagerMod {
       */
     def undo(): Unit = js.native
     
-    /* private */ var unmodifiedPosition: js.Any = js.native
+    /* private */ var unmodifiedPosition: Any = js.native
   }
 }

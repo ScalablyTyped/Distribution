@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "UpdateEndpointCommand")
 @js.native
-class UpdateEndpointCommand protected ()
+open class UpdateEndpointCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.updateEndpointCommandMod.UpdateEndpointCommand {
   def this(input: UpdateEndpointInput) = this()
 }

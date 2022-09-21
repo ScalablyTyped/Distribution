@@ -43,13 +43,13 @@ object mod {
       
       inline def setAbbreviationsUndefined: Self = StObject.set(x, "abbreviations", js.undefined)
       
-      inline def setAbbreviationsVarargs(value: String*): Self = StObject.set(x, "abbreviations", js.Array(value :_*))
+      inline def setAbbreviationsVarargs(value: String*): Self = StObject.set(x, "abbreviations", js.Array(value*))
       
       inline def setAllowed_tags(value: `false` | js.Array[String]): Self = StObject.set(x, "allowed_tags", value.asInstanceOf[js.Any])
       
       inline def setAllowed_tagsUndefined: Self = StObject.set(x, "allowed_tags", js.undefined)
       
-      inline def setAllowed_tagsVarargs(value: String*): Self = StObject.set(x, "allowed_tags", js.Array(value :_*))
+      inline def setAllowed_tagsVarargs(value: String*): Self = StObject.set(x, "allowed_tags", js.Array(value*))
       
       inline def setHtml_boundaries(value: Boolean): Self = StObject.set(x, "html_boundaries", value.asInstanceOf[js.Any])
       
@@ -59,7 +59,7 @@ object mod {
       
       inline def setHtml_boundaries_tagsUndefined: Self = StObject.set(x, "html_boundaries_tags", js.undefined)
       
-      inline def setHtml_boundaries_tagsVarargs(value: String*): Self = StObject.set(x, "html_boundaries_tags", js.Array(value :_*))
+      inline def setHtml_boundaries_tagsVarargs(value: String*): Self = StObject.set(x, "html_boundaries_tags", js.Array(value*))
       
       inline def setNewline_boundaries(value: Boolean): Self = StObject.set(x, "newline_boundaries", value.asInstanceOf[js.Any])
       

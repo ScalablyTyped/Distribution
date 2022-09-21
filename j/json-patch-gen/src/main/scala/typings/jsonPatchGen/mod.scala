@@ -21,11 +21,11 @@ object mod {
     
     var path: String
     
-    var value: js.Any
+    var value: Any
   }
   object JsonPatch {
     
-    inline def apply(op: PatchOperation, path: String, value: js.Any): JsonPatch = {
+    inline def apply(op: PatchOperation, path: String, value: Any): JsonPatch = {
       val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonPatch]
     }
@@ -36,7 +36,7 @@ object mod {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

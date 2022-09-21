@@ -9,24 +9,24 @@ trait QueueInfo extends StObject {
   /**
     * The ID of the ongoing ingestion. The queued ingestion is waiting for the ongoing ingestion to complete.
     */
-  var QueuedIngestion: java.lang.String
+  var QueuedIngestion: String
   
   /**
     * The ID of the queued ingestion.
     */
-  var WaitingOnIngestion: java.lang.String
+  var WaitingOnIngestion: String
 }
 object QueueInfo {
   
-  inline def apply(QueuedIngestion: java.lang.String, WaitingOnIngestion: java.lang.String): QueueInfo = {
+  inline def apply(QueuedIngestion: String, WaitingOnIngestion: String): QueueInfo = {
     val __obj = js.Dynamic.literal(QueuedIngestion = QueuedIngestion.asInstanceOf[js.Any], WaitingOnIngestion = WaitingOnIngestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueInfo]
   }
   
   extension [Self <: QueueInfo](x: Self) {
     
-    inline def setQueuedIngestion(value: java.lang.String): Self = StObject.set(x, "QueuedIngestion", value.asInstanceOf[js.Any])
+    inline def setQueuedIngestion(value: String): Self = StObject.set(x, "QueuedIngestion", value.asInstanceOf[js.Any])
     
-    inline def setWaitingOnIngestion(value: java.lang.String): Self = StObject.set(x, "WaitingOnIngestion", value.asInstanceOf[js.Any])
+    inline def setWaitingOnIngestion(value: String): Self = StObject.set(x, "WaitingOnIngestion", value.asInstanceOf[js.Any])
   }
 }

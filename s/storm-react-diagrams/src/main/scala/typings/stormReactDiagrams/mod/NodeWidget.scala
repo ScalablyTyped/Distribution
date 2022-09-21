@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "NodeWidget")
 @js.native
-class NodeWidget protected ()
+open class NodeWidget protected ()
   extends typings.stormReactDiagrams.nodeWidgetMod.NodeWidget {
   def this(props: NodeProps) = this()
 }

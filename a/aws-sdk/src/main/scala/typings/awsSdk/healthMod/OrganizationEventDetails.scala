@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrganizationEventDetails extends StObject {
   
   /**
-    * The 12-digit AWS account numbers that contains the affected entities.
+    * The 12-digit Amazon Web Services account numbers that contains the affected entities.
     */
   var awsAccountId: js.UndefOr[accountId] = js.undefined
   

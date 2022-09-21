@@ -19,12 +19,12 @@ trait RegionDescription extends StObject {
   /**
     * The date and time that the Region description was last updated.
     */
-  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.undefined
+  var LastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies when the Region replication began.
     */
-  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.undefined
+  var LaunchTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the Region. For example, us-east-1.
@@ -32,7 +32,7 @@ trait RegionDescription extends StObject {
   var RegionName: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionName] = js.undefined
   
   /**
-    * Specifies if the Region is the primary Region or an additional Region.
+    * Specifies whether the Region is the primary Region or an additional Region.
     */
   var RegionType: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionType] = js.undefined
   
@@ -44,7 +44,7 @@ trait RegionDescription extends StObject {
   /**
     * The date and time that the Region status was last updated.
     */
-  var StatusLastUpdatedDateTime: js.UndefOr[StateLastUpdatedDateTime] = js.undefined
+  var StatusLastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   var VpcSettings: js.UndefOr[DirectoryVpcSettings] = js.undefined
 }
@@ -65,11 +65,11 @@ object RegionDescription {
     
     inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
     
-    inline def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
+    inline def setLaunchTime(value: js.Date): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
     
     inline def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
     
@@ -83,7 +83,7 @@ object RegionDescription {
     
     inline def setStatus(value: DirectoryStage): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setStatusLastUpdatedDateTime(value: StateLastUpdatedDateTime): Self = StObject.set(x, "StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setStatusLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setStatusLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StatusLastUpdatedDateTime", js.undefined)
     

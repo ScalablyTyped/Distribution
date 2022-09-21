@@ -13,10 +13,10 @@ object toggleMod {
   
   @JSImport("@catho/quantum/Toggle", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ToggleProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ToggleProps, js.Object, Any]
   
-  type Toggle = Component[ToggleProps, js.Object, js.Any]
+  type Toggle = Component[ToggleProps, js.Object, Any]
   
   trait ToggleProps extends StObject {
     

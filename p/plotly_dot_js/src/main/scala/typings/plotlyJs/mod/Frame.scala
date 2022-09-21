@@ -63,7 +63,7 @@ object Frame {
     
     inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
@@ -73,6 +73,6 @@ object Frame {
     
     inline def setTraces(value: js.Array[Double]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
     
-    inline def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value :_*))
+    inline def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value*))
   }
 }

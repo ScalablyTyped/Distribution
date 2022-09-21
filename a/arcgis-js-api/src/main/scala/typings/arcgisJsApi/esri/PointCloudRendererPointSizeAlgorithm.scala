@@ -15,6 +15,8 @@ trait PointCloudRendererPointSizeAlgorithm
   /**
     * Specifies the scale factor that is applied to the size estimated by the density.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
     */
   var scaleFactor: js.UndefOr[Double] = js.undefined

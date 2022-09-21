@@ -10,19 +10,19 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Media")
   @js.native
-  class Media protected ()
+  open class Media protected ()
     extends StObject
        with typings.cordovaPluginMedia.Media {
     def this(src: String, mediaSuccess: js.Function0[Unit]) = this()
     def this(
       src: String,
       mediaSuccess: js.Function0[Unit],
-      mediaError: js.Function1[/* error */ MediaError, js.Any]
+      mediaError: js.Function1[/* error */ MediaError, Any]
     ) = this()
     def this(
       src: String,
       mediaSuccess: js.Function0[Unit],
-      mediaError: js.Function1[/* error */ MediaError, js.Any],
+      mediaError: js.Function1[/* error */ MediaError, Any],
       mediaStatus: js.Function1[/* status */ Double, Unit]
     ) = this()
     def this(

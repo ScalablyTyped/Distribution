@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Effect")
 @js.native
-/* private */ class Effect ()
+/* private */ open class Effect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Effect {
   
@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Paragraph: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.Effect_typekey")

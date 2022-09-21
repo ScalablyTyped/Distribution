@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Media.Protection.ProtectionCapabilities")
 @js.native
-abstract class ProtectionCapabilities ()
+open class ProtectionCapabilities ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.ProtectionCapabilities {
   
   /* CompleteClass */
-  var isTypeSupported: js.Any = js.native
+  var isTypeSupported: Any = js.native
 }

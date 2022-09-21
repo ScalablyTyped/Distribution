@@ -10,10 +10,10 @@ Accesses the gyroscope and accelerometer data from the web browser and combines 
 | ------------------ | :-------------: |
 | Full name          | gyronorm |
 | Keywords           | devicemotion, deviceorientation |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 12761 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 791.6666666666666 |
+| # stars            | 624.0 |
 
 ## Links
 - [Homepage](https://github.com/dorukeker/gyronorm.js)

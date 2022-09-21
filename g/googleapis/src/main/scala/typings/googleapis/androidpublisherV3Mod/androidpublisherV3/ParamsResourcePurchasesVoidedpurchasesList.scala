@@ -1,9 +1,5 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,50 +9,39 @@ trait ParamsResourcePurchasesVoidedpurchasesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The time, in milliseconds since the Epoch, of the newest voided in-app
-    * product purchase that you want to see in the response. The value of this
-    * parameter cannot be greater than the current time and is ignored if a
-    * pagination token is set. Default value is current time. Note: This filter
-    * is applied on the time at which the record is seen as voided by our
-    * systems and not the actual voided time returned in the response.
+    * The time, in milliseconds since the Epoch, of the newest voided purchase that you want to see in the response. The value of this parameter cannot be greater than the current time and is ignored if a pagination token is set. Default value is current time. Note: This filter is applied on the time at which the record is seen as voided by our systems and not the actual voided time returned in the response.
     */
   var endTime: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Defines how many results the list operation should return. The default number depends on the resource collection.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * The package name of the application for which voided purchases need to be
-    * returned (for example, 'com.some.thing').
+    * The package name of the application for which voided purchases need to be returned (for example, 'com.some.thing').
     */
   var packageName: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Defines the index of the first element to return. This can only be used if indexed paging is enabled.
     */
   var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    * The time, in milliseconds since the Epoch, of the oldest voided in-app
-    * product purchase that you want to see in the response. The value of this
-    * parameter cannot be older than 30 days and is ignored if a pagination
-    * token is set. Default value is current time minus 30 days. Note: This
-    * filter is applied on the time at which the record is seen as voided by
-    * our systems and not the actual voided time returned in the response.
+    * The time, in milliseconds since the Epoch, of the oldest voided purchase that you want to see in the response. The value of this parameter cannot be older than 30 days and is ignored if a pagination token is set. Default value is current time minus 30 days. Note: This filter is applied on the time at which the record is seen as voided by our systems and not the actual voided time returned in the response.
     */
   var startTime: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Defines the token of the page to return, usually taken from TokenPagination. This can only be used if token paging is enabled.
     */
   var token: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The type of voided purchases that you want to see in the response. Possible values are: 0. Only voided in-app product purchases will be returned in the response. This is the default value. 1. Both voided in-app purchases and voided subscription purchases will be returned in the response. Note: Before requesting to receive voided subscription purchases, you must switch to use orderId in the response which uniquely identifies one-time purchases and subscriptions. Otherwise, you will receive multiple subscription orders with the same PurchaseToken, because subscription renewal orders share the same PurchaseToken.
+    */
+  var `type`: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourcePurchasesVoidedpurchasesList {
   
@@ -66,10 +51,6 @@ object ParamsResourcePurchasesVoidedpurchasesList {
   }
   
   extension [Self <: ParamsResourcePurchasesVoidedpurchasesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
@@ -94,5 +75,9 @@ object ParamsResourcePurchasesVoidedpurchasesList {
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

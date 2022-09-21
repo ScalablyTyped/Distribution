@@ -1,19 +1,33 @@
 package typings.reactMdForm.typesMod
 
+import typings.reactMdForm.reactMdFormStrings.blur
+import typings.reactMdForm.reactMdFormStrings.change
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SliderStepOptions
   extends StObject
-     with SliderRangeOptions {
+     with SliderValueOptions {
   
   /**
-    * A positive number representing the value to "jump" while incrementing or
-    * decrementing the slider's value. This should normally stay as the default
-    * value of `1`, but can also be decimal values if needed.
+    * An optional amount to jump by when using the `PageUp` or `PageDown` keys.
+    * When this is omitted, it will try to default to 10% of the full range to
+    * the nearest step
     */
-  var step: js.UndefOr[Double] = js.undefined
+  var jump: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Determines when the `value` should be updated from the `useSlider` and
+    * `useRangeSlider` hooks. When this is set to `"change"`, the `value` will
+    * update immediately as the user interacts with the slider. When this is set
+    * to `"blur"`, the `value` will only be updated once the user has tabbed away
+    * from the slider or completed the drag via mouse/touch.
+    *
+    * It is recommended to set this to `"blur"` when the value does not need to
+    * be used immediately.
+    */
+  var updateOn: js.UndefOr[change | blur] = js.undefined
 }
 object SliderStepOptions {
   
@@ -24,8 +38,12 @@ object SliderStepOptions {
   
   extension [Self <: SliderStepOptions](x: Self) {
     
-    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setJump(value: Double): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
     
-    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
+    
+    inline def setUpdateOn(value: change | blur): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
   }
 }

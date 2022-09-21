@@ -8,6 +8,7 @@ trait UserScopeTeamsAppInstallation
   extends StObject
      with TeamsAppInstallation {
   
+  // The chat between the user and Teams app.
   var chat: js.UndefOr[NullableOption[Chat]] = js.undefined
 }
 object UserScopeTeamsAppInstallation {

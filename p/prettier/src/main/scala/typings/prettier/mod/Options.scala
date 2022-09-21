@@ -1,5 +1,6 @@
 package typings.prettier.mod
 
+import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.`as-needed`
 import typings.prettier.prettierStrings.all
 import typings.prettier.prettierStrings.always
@@ -24,11 +25,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<prettier.prettier.RequiredOptions> */
 trait Options extends StObject {
   
+  var __embeddedInHtml: js.UndefOr[Boolean] = js.undefined
+  
   var arrowParens: js.UndefOr[avoid | always] = js.undefined
   
-  var bracketSpacing: js.UndefOr[Boolean] = js.undefined
+  var bracketSameLine: js.UndefOr[Boolean] = js.undefined
   
-  var embeddedInHtml: js.UndefOr[Boolean] = js.undefined
+  var bracketSpacing: js.UndefOr[Boolean] = js.undefined
   
   var embeddedLanguageFormatting: js.UndefOr[auto | off] = js.undefined
   
@@ -48,7 +51,9 @@ trait Options extends StObject {
   
   var parser: js.UndefOr[(LiteralUnion[BuiltInParserName, String]) | CustomParser] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[String | Plugin[js.Any]]] = js.undefined
+  var pluginSearchDirs: js.UndefOr[js.Array[String] | `false`] = js.undefined
+  
+  var plugins: js.UndefOr[js.Array[String | Plugin[Any]]] = js.undefined
   
   var printWidth: js.UndefOr[Double] = js.undefined
   
@@ -63,6 +68,8 @@ trait Options extends StObject {
   var requirePragma: js.UndefOr[Boolean] = js.undefined
   
   var semi: js.UndefOr[Boolean] = js.undefined
+  
+  var singleAttributePerLine: js.UndefOr[Boolean] = js.undefined
   
   var singleQuote: js.UndefOr[Boolean] = js.undefined
   
@@ -87,13 +94,13 @@ object Options {
     
     inline def setArrowParensUndefined: Self = StObject.set(x, "arrowParens", js.undefined)
     
+    inline def setBracketSameLine(value: Boolean): Self = StObject.set(x, "bracketSameLine", value.asInstanceOf[js.Any])
+    
+    inline def setBracketSameLineUndefined: Self = StObject.set(x, "bracketSameLine", js.undefined)
+    
     inline def setBracketSpacing(value: Boolean): Self = StObject.set(x, "bracketSpacing", value.asInstanceOf[js.Any])
     
     inline def setBracketSpacingUndefined: Self = StObject.set(x, "bracketSpacing", js.undefined)
-    
-    inline def setEmbeddedInHtml(value: Boolean): Self = StObject.set(x, "embeddedInHtml", value.asInstanceOf[js.Any])
-    
-    inline def setEmbeddedInHtmlUndefined: Self = StObject.set(x, "embeddedInHtml", js.undefined)
     
     inline def setEmbeddedLanguageFormatting(value: auto | off): Self = StObject.set(x, "embeddedLanguageFormatting", value.asInstanceOf[js.Any])
     
@@ -133,11 +140,17 @@ object Options {
     
     inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
-    inline def setPlugins(value: js.Array[String | Plugin[js.Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPluginSearchDirs(value: js.Array[String] | `false`): Self = StObject.set(x, "pluginSearchDirs", value.asInstanceOf[js.Any])
+    
+    inline def setPluginSearchDirsUndefined: Self = StObject.set(x, "pluginSearchDirs", js.undefined)
+    
+    inline def setPluginSearchDirsVarargs(value: String*): Self = StObject.set(x, "pluginSearchDirs", js.Array(value*))
+    
+    inline def setPlugins(value: js.Array[String | Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: (String | Plugin[js.Any])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: (String | Plugin[Any])*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPrintWidth(value: Double): Self = StObject.set(x, "printWidth", value.asInstanceOf[js.Any])
     
@@ -167,6 +180,10 @@ object Options {
     
     inline def setSemiUndefined: Self = StObject.set(x, "semi", js.undefined)
     
+    inline def setSingleAttributePerLine(value: Boolean): Self = StObject.set(x, "singleAttributePerLine", value.asInstanceOf[js.Any])
+    
+    inline def setSingleAttributePerLineUndefined: Self = StObject.set(x, "singleAttributePerLine", js.undefined)
+    
     inline def setSingleQuote(value: Boolean): Self = StObject.set(x, "singleQuote", value.asInstanceOf[js.Any])
     
     inline def setSingleQuoteUndefined: Self = StObject.set(x, "singleQuote", js.undefined)
@@ -186,5 +203,9 @@ object Options {
     inline def setVueIndentScriptAndStyle(value: Boolean): Self = StObject.set(x, "vueIndentScriptAndStyle", value.asInstanceOf[js.Any])
     
     inline def setVueIndentScriptAndStyleUndefined: Self = StObject.set(x, "vueIndentScriptAndStyle", js.undefined)
+    
+    inline def set__embeddedInHtml(value: Boolean): Self = StObject.set(x, "__embeddedInHtml", value.asInstanceOf[js.Any])
+    
+    inline def set__embeddedInHtmlUndefined: Self = StObject.set(x, "__embeddedInHtml", js.undefined)
   }
 }

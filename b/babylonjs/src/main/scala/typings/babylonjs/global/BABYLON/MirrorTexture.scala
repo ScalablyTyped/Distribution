@@ -1,15 +1,15 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import typings.babylonjs.anon.Height
 import typings.babylonjs.anon.Ratio
-import typings.babylonjs.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.MirrorTexture")
 @js.native
-class MirrorTexture protected ()
+open class MirrorTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.MirrorTexture {
   /**
@@ -27,365 +27,14 @@ class MirrorTexture protected ()
     * @param samplingMode
     * @param generateDepthBuffer
     */
-  def this(name: String, size: Double, scene: typings.babylonjs.BABYLON.Scene) = this()
-  def this(name: String, size: Ratio, scene: typings.babylonjs.BABYLON.Scene) = this()
-  def this(name: String, size: Width, scene: typings.babylonjs.BABYLON.Scene) = this()
-  def this(name: String, size: Double, scene: typings.babylonjs.BABYLON.Scene, generateMipMaps: Boolean) = this()
-  def this(name: String, size: Ratio, scene: typings.babylonjs.BABYLON.Scene, generateMipMaps: Boolean) = this()
-  def this(name: String, size: Width, scene: typings.babylonjs.BABYLON.Scene, generateMipMaps: Boolean) = this()
   def this(
     name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Double,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Ratio,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Double,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Boolean,
-    `type`: Unit,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Double,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Double,
-    generateDepthBuffer: Boolean
-  ) = this()
-  def this(
-    name: String,
-    size: Width,
-    scene: typings.babylonjs.BABYLON.Scene,
-    generateMipMaps: Unit,
-    `type`: Unit,
-    samplingMode: Unit,
-    generateDepthBuffer: Boolean
+    size: Double | Height | Ratio,
+    scene: js.UndefOr[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: js.UndefOr[Boolean],
+    `type`: js.UndefOr[Double],
+    samplingMode: js.UndefOr[Double],
+    generateDepthBuffer: js.UndefOr[Boolean]
   ) = this()
   
   /**
@@ -393,4 +42,10 @@ class MirrorTexture protected ()
     */
   /* CompleteClass */
   var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
+  
+  /**
+    * Entry point to access the wrapper on a texture.
+    */
+  /* CompleteClass */
+  var renderTarget: Nullable[typings.babylonjs.BABYLON.RenderTargetWrapper] = js.native
 }

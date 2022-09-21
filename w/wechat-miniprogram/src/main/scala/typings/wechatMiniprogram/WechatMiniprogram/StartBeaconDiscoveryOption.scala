@@ -48,6 +48,6 @@ object StartBeaconDiscoveryOption {
     
     inline def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
-    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value*))
   }
 }

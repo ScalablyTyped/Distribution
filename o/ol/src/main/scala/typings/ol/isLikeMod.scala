@@ -8,7 +8,7 @@ object isLikeMod {
   
   @JSImport("ol/format/filter/IsLike", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ol.comparisonMod.default {
     def this(propertyName: String, pattern: String) = this()
     def this(propertyName: String, pattern: String, opt_wildCard: String) = this()

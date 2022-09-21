@@ -10,10 +10,10 @@ JSON Schema validation and specifications
 | ------------------ | :-------------: |
 | Full name          | json-schema |
 | Keywords           | json, schema |
-| # releases         | 4 |
-| # dependents       | 303 |
-| # downloads        | 799776470 |
-| # stars            | 10 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9.2366728E7 |
+| # stars            | 492.0 |
 
 ## Links
 - [Homepage](https://github.com/kriszyp/json-schema#readme)

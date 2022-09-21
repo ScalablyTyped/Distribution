@@ -2,6 +2,7 @@ package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Curves.Path
 import typings.phaser.Phaser.Display.BaseShader
+import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
@@ -14,8 +15,8 @@ import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterConfig
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
+import typings.phaser.SpineContainer
 import typings.phaser.SpineGameObject
-import typings.phaser.integer
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -60,8 +61,8 @@ trait GameObjectFactory extends StObject {
     x: js.UndefOr[Double],
     y: js.UndefOr[Double],
     radius: js.UndefOr[Double],
-    startAngle: js.UndefOr[integer],
-    endAngle: js.UndefOr[integer],
+    startAngle: js.UndefOr[Double],
+    endAngle: js.UndefOr[Double],
     anticlockwise: js.UndefOr[Boolean],
     fillColor: js.UndefOr[Double],
     fillAlpha: js.UndefOr[Double]
@@ -101,15 +102,15 @@ trait GameObjectFactory extends StObject {
   def bitmapText(x: Double, y: Double, font: String): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: String): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: String, size: Double): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: String, size: Double, align: integer): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: String, size: Unit, align: integer): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: String, size: Double, align: Double): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: String, size: Unit, align: Double): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: js.Array[String]): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double, align: integer): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Unit, align: integer): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Double, align: Double): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: js.Array[String], size: Unit, align: Double): BitmapText = js.native
   def bitmapText(x: Double, y: Double, font: String, text: Unit, size: Double): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: Unit, size: Double, align: integer): BitmapText = js.native
-  def bitmapText(x: Double, y: Double, font: String, text: Unit, size: Unit, align: integer): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: Unit, size: Double, align: Double): BitmapText = js.native
+  def bitmapText(x: Double, y: Double, font: String, text: Unit, size: Unit, align: Double): BitmapText = js.native
   
   /**
     * Creates a new Blitter Game Object and adds it to the Scene.
@@ -122,7 +123,7 @@ trait GameObjectFactory extends StObject {
     */
   def blitter(x: Double, y: Double, key: String): Blitter = js.native
   def blitter(x: Double, y: Double, key: String, frame: String): Blitter = js.native
-  def blitter(x: Double, y: Double, key: String, frame: integer): Blitter = js.native
+  def blitter(x: Double, y: Double, key: String, frame: Double): Blitter = js.native
   
   /**
     * Creates a new Circle Shape Game Object and adds it to the Scene.
@@ -341,19 +342,19 @@ trait GameObjectFactory extends StObject {
   def dom(x: Double, y: Double, element: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: String, style: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: String, style: String, innerText: String): DOMElement = js.native
-  def dom(x: Double, y: Double, element: String, style: js.Any): DOMElement = js.native
-  def dom(x: Double, y: Double, element: String, style: js.Any, innerText: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: String, style: Any): DOMElement = js.native
+  def dom(x: Double, y: Double, element: String, style: Any, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: String, style: Unit, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: Unit, style: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: Unit, style: String, innerText: String): DOMElement = js.native
-  def dom(x: Double, y: Double, element: Unit, style: js.Any): DOMElement = js.native
-  def dom(x: Double, y: Double, element: Unit, style: js.Any, innerText: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: Unit, style: Any): DOMElement = js.native
+  def dom(x: Double, y: Double, element: Unit, style: Any, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: Unit, style: Unit, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: String, innerText: String): DOMElement = js.native
-  def dom(x: Double, y: Double, element: HTMLElement, style: js.Any): DOMElement = js.native
-  def dom(x: Double, y: Double, element: HTMLElement, style: js.Any, innerText: String): DOMElement = js.native
+  def dom(x: Double, y: Double, element: HTMLElement, style: Any): DOMElement = js.native
+  def dom(x: Double, y: Double, element: HTMLElement, style: Any, innerText: String): DOMElement = js.native
   def dom(x: Double, y: Double, element: HTMLElement, style: Unit, innerText: String): DOMElement = js.native
   
   /**
@@ -436,6 +437,11 @@ trait GameObjectFactory extends StObject {
   ): Ellipse = js.native
   
   /**
+    * A reference to the Scene Event Emitter.
+    */
+  /* protected */ var events: EventEmitter = js.native
+  
+  /**
     * Adds an existing Game Object to this Scene.
     * 
     * If the Game Object renders, it will be added to the Display List.
@@ -443,7 +449,8 @@ trait GameObjectFactory extends StObject {
     * @param child The child to be added to this Scene.
     */
   def existing(child: GameObject): GameObject = js.native
-  def existing(child: Group): GameObject = js.native
+  def existing(child: Group): Group = js.native
+  def existing(child: Layer): Layer = js.native
   
   /**
     * Creates a new Extern Game Object and adds it to the Scene.
@@ -464,10 +471,10 @@ trait GameObjectFactory extends StObject {
     */
   def follower(path: Path, x: Double, y: Double, texture: String): PathFollower = js.native
   def follower(path: Path, x: Double, y: Double, texture: String, frame: String): PathFollower = js.native
-  def follower(path: Path, x: Double, y: Double, texture: String, frame: integer): PathFollower = js.native
+  def follower(path: Path, x: Double, y: Double, texture: String, frame: Double): PathFollower = js.native
   def follower(path: Path, x: Double, y: Double, texture: Texture): PathFollower = js.native
   def follower(path: Path, x: Double, y: Double, texture: Texture, frame: String): PathFollower = js.native
-  def follower(path: Path, x: Double, y: Double, texture: Texture, frame: integer): PathFollower = js.native
+  def follower(path: Path, x: Double, y: Double, texture: Texture, frame: Double): PathFollower = js.native
   
   /**
     * Creates a new Graphics Game Object and adds it to the Scene.
@@ -549,10 +556,10 @@ trait GameObjectFactory extends StObject {
     */
   def image(x: Double, y: Double, texture: String): Image = js.native
   def image(x: Double, y: Double, texture: String, frame: String): Image = js.native
-  def image(x: Double, y: Double, texture: String, frame: integer): Image = js.native
+  def image(x: Double, y: Double, texture: String, frame: Double): Image = js.native
   def image(x: Double, y: Double, texture: Texture): Image = js.native
   def image(x: Double, y: Double, texture: Texture, frame: String): Image = js.native
-  def image(x: Double, y: Double, texture: Texture, frame: integer): Image = js.native
+  def image(x: Double, y: Double, texture: Texture, frame: Double): Image = js.native
   
   /**
     * Creates a new IsoBox Shape Game Object and adds it to the Scene.
@@ -630,6 +637,16 @@ trait GameObjectFactory extends StObject {
   ): IsoTriangle = js.native
   
   /**
+    * Creates a new Layer Game Object and adds it to the Scene.
+    * 
+    * Note: This method will only be available if the Layer Game Object has been built into Phaser.
+    * @param children An optional array of Game Objects to add to this Layer.
+    */
+  def layer(): Layer = js.native
+  def layer(children: js.Array[GameObject]): Layer = js.native
+  def layer(children: GameObject): Layer = js.native
+  
+  /**
     * Creates a new Line Shape Game Object and adds it to the Scene.
     * 
     * Note: This method will only be available if the Line Game Object has been built into Phaser.
@@ -672,70 +689,28 @@ trait GameObjectFactory extends StObject {
     * Note: This method will only be available if the Mesh Game Object and WebGL support have been built into Phaser.
     * @param x The horizontal position of this Game Object in the world.
     * @param y The vertical position of this Game Object in the world.
-    * @param vertices An array containing the vertices data for this Mesh.
-    * @param uv An array containing the uv data for this Mesh.
-    * @param colors An array containing the color data for this Mesh.
-    * @param alphas An array containing the alpha data for this Mesh.
     * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager.
     * @param frame An optional frame from the Texture this Game Object is rendering with.
+    * @param vertices The vertices array. Either `xy` pairs, or `xyz` if the `containsZ` parameter is `true`.
+    * @param uvs The UVs pairs array.
+    * @param indicies Optional vertex indicies array. If you don't have one, pass `null` or an empty array.
+    * @param containsZ Does the vertices data include a `z` component? Default false.
+    * @param normals Optional vertex normals array. If you don't have one, pass `null` or an empty array.
+    * @param colors An array of colors, one per vertex, or a single color value applied to all vertices. Default 0xffffff.
+    * @param alphas An array of alpha values, one per vertex, or a single alpha value applied to all vertices. Default 1.
     */
   def mesh(
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: String
-  ): Mesh = js.native
-  def mesh(
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: String,
-    frame: String
-  ): Mesh = js.native
-  def mesh(
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: String,
-    frame: integer
-  ): Mesh = js.native
-  def mesh(
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: Texture
-  ): Mesh = js.native
-  def mesh(
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: Texture,
-    frame: String
-  ): Mesh = js.native
-  def mesh(
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: Texture,
-    frame: integer
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    texture: js.UndefOr[String | Texture],
+    frame: js.UndefOr[String | Double],
+    vertices: js.UndefOr[js.Array[Double]],
+    uvs: js.UndefOr[js.Array[Double]],
+    indicies: js.UndefOr[js.Array[Double]],
+    containsZ: js.UndefOr[Boolean],
+    normals: js.UndefOr[js.Array[Double]],
+    colors: js.UndefOr[Double | js.Array[Double]],
+    alphas: js.UndefOr[Double | js.Array[Double]]
   ): Mesh = js.native
   
   /**
@@ -753,11 +728,11 @@ trait GameObjectFactory extends StObject {
   def particles(texture: String, frame: js.Object): ParticleEmitterManager = js.native
   def particles(texture: String, frame: js.Object, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: String, frame: js.Object, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
+  def particles(texture: String, frame: Double): ParticleEmitterManager = js.native
+  def particles(texture: String, frame: Double, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
+  def particles(texture: String, frame: Double, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: String, frame: Unit, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: String, frame: Unit, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: integer): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: integer, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: integer, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: Texture): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: String): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: String, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
@@ -765,11 +740,11 @@ trait GameObjectFactory extends StObject {
   def particles(texture: Texture, frame: js.Object): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: js.Object, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: js.Object, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
+  def particles(texture: Texture, frame: Double): ParticleEmitterManager = js.native
+  def particles(texture: Texture, frame: Double, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
+  def particles(texture: Texture, frame: Double, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: Unit, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
   def particles(texture: Texture, frame: Unit, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: integer): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: integer, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: integer, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
   
   /**
     * Creates a new Path Object.
@@ -777,6 +752,58 @@ trait GameObjectFactory extends StObject {
     * @param y The vertical position of this Path.
     */
   def path(x: Double, y: Double): Path = js.native
+  
+  /**
+    * Creates a new Point Light Game Object and adds it to the Scene.
+    * 
+    * Note: This method will only be available if the Point Light Game Object has been built into Phaser.
+    * 
+    * The Point Light Game Object provides a way to add a point light effect into your game,
+    * without the expensive shader processing requirements of the traditional Light Game Object.
+    * 
+    * The difference is that the Point Light renders using a custom shader, designed to give the
+    * impression of a point light source, of variable radius, intensity and color, in your game.
+    * However, unlike the Light Game Object, it does not impact any other Game Objects, or use their
+    * normal maps for calcuations. This makes them extremely fast to render compared to Lights
+    * and perfect for special effects, such as flickering torches or muzzle flashes.
+    * 
+    * For maximum performance you should batch Point Light Game Objects together. This means
+    * ensuring they follow each other consecutively on the display list. Ideally, use a Layer
+    * Game Object and then add just Point Lights to it, so that it can batch together the rendering
+    * of the lights. You don't _have_ to do this, and if you've only a handful of Point Lights in
+    * your game then it's perfectly safe to mix them into the dislay list as normal. However, if
+    * you're using a large number of them, please consider how they are mixed into the display list.
+    * 
+    * The renderer will automatically cull Point Lights. Those with a radius that does not intersect
+    * with the Camera will be skipped in the rendering list. This happens automatically and the
+    * culled state is refreshed every frame, for every camera.
+    * 
+    * The origin of a Point Light is always 0.5 and it cannot be changed.
+    * 
+    * Point Lights are a WebGL only feature and do not have a Canvas counterpart.
+    * @param x The horizontal position of this Point Light in the world.
+    * @param y The vertical position of this Point Light in the world.
+    * @param color The color of the Point Light, given as a hex value. Default 0xffffff.
+    * @param radius The radius of the Point Light. Default 128.
+    * @param intensity The intensity, or colr blend, of the Point Light. Default 1.
+    * @param attenuation The attenuation  of the Point Light. This is the reduction of light from the center point. Default 0.1.
+    */
+  def pointlight(x: Double, y: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Double, radius: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Double, radius: Double, intensity: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Double, radius: Double, intensity: Double, attenuation: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Double, radius: Double, intensity: Unit, attenuation: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Double, radius: Unit, intensity: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Double, radius: Unit, intensity: Double, attenuation: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Double, radius: Unit, intensity: Unit, attenuation: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Unit, radius: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Unit, radius: Double, intensity: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Unit, radius: Double, intensity: Double, attenuation: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Unit, radius: Double, intensity: Unit, attenuation: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Unit, radius: Unit, intensity: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Unit, radius: Unit, intensity: Double, attenuation: Double): PointLight = js.native
+  def pointlight(x: Double, y: Double, color: Unit, radius: Unit, intensity: Unit, attenuation: Double): PointLight = js.native
   
   /**
     * Creates a new Polygon Shape Game Object and adds it to the Scene.
@@ -809,51 +836,35 @@ trait GameObjectFactory extends StObject {
   def polygon(): Polygon = js.native
   def polygon(x: Double): Polygon = js.native
   def polygon(x: Double, y: Double): Polygon = js.native
-  def polygon(x: Double, y: Double, points: js.Any): Polygon = js.native
-  def polygon(x: Double, y: Double, points: js.Any, fillColor: Double): Polygon = js.native
-  def polygon(x: Double, y: Double, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
-  def polygon(x: Double, y: Double, points: js.Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Double, points: Any): Polygon = js.native
+  def polygon(x: Double, y: Double, points: Any, fillColor: Double): Polygon = js.native
+  def polygon(x: Double, y: Double, points: Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Double, points: Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
   def polygon(x: Double, y: Double, points: Unit, fillColor: Double): Polygon = js.native
   def polygon(x: Double, y: Double, points: Unit, fillColor: Double, fillAlpha: Double): Polygon = js.native
   def polygon(x: Double, y: Double, points: Unit, fillColor: Unit, fillAlpha: Double): Polygon = js.native
-  def polygon(x: Double, y: Unit, points: js.Any): Polygon = js.native
-  def polygon(x: Double, y: Unit, points: js.Any, fillColor: Double): Polygon = js.native
-  def polygon(x: Double, y: Unit, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
-  def polygon(x: Double, y: Unit, points: js.Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: Any): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: Any, fillColor: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Double, y: Unit, points: Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
   def polygon(x: Double, y: Unit, points: Unit, fillColor: Double): Polygon = js.native
   def polygon(x: Double, y: Unit, points: Unit, fillColor: Double, fillAlpha: Double): Polygon = js.native
   def polygon(x: Double, y: Unit, points: Unit, fillColor: Unit, fillAlpha: Double): Polygon = js.native
   def polygon(x: Unit, y: Double): Polygon = js.native
-  def polygon(x: Unit, y: Double, points: js.Any): Polygon = js.native
-  def polygon(x: Unit, y: Double, points: js.Any, fillColor: Double): Polygon = js.native
-  def polygon(x: Unit, y: Double, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
-  def polygon(x: Unit, y: Double, points: js.Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: Any): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: Any, fillColor: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Double, points: Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
   def polygon(x: Unit, y: Double, points: Unit, fillColor: Double): Polygon = js.native
   def polygon(x: Unit, y: Double, points: Unit, fillColor: Double, fillAlpha: Double): Polygon = js.native
   def polygon(x: Unit, y: Double, points: Unit, fillColor: Unit, fillAlpha: Double): Polygon = js.native
-  def polygon(x: Unit, y: Unit, points: js.Any): Polygon = js.native
-  def polygon(x: Unit, y: Unit, points: js.Any, fillColor: Double): Polygon = js.native
-  def polygon(x: Unit, y: Unit, points: js.Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
-  def polygon(x: Unit, y: Unit, points: js.Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: Any): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: Any, fillColor: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: Any, fillColor: Double, fillAlpha: Double): Polygon = js.native
+  def polygon(x: Unit, y: Unit, points: Any, fillColor: Unit, fillAlpha: Double): Polygon = js.native
   def polygon(x: Unit, y: Unit, points: Unit, fillColor: Double): Polygon = js.native
   def polygon(x: Unit, y: Unit, points: Unit, fillColor: Double, fillAlpha: Double): Polygon = js.native
   def polygon(x: Unit, y: Unit, points: Unit, fillColor: Unit, fillAlpha: Double): Polygon = js.native
-  
-  /**
-    * Creates a new Quad Game Object and adds it to the Scene.
-    * 
-    * Note: This method will only be available if the Quad Game Object and WebGL support have been built into Phaser.
-    * @param x The horizontal position of this Game Object in the world.
-    * @param y The vertical position of this Game Object in the world.
-    * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager.
-    * @param frame An optional frame from the Texture this Game Object is rendering with.
-    */
-  def quad(x: Double, y: Double, texture: String): Quad = js.native
-  def quad(x: Double, y: Double, texture: String, frame: String): Quad = js.native
-  def quad(x: Double, y: Double, texture: String, frame: integer): Quad = js.native
-  def quad(x: Double, y: Double, texture: Texture): Quad = js.native
-  def quad(x: Double, y: Double, texture: Texture, frame: String): Quad = js.native
-  def quad(x: Double, y: Double, texture: Texture, frame: integer): Quad = js.native
   
   /**
     * Creates a new Rectangle Shape Game Object and adds it to the Scene.
@@ -898,9 +909,9 @@ trait GameObjectFactory extends StObject {
     * @param height The height of the Render Texture. Default 32.
     */
   def renderTexture(x: Double, y: Double): RenderTexture = js.native
-  def renderTexture(x: Double, y: Double, width: Unit, height: integer): RenderTexture = js.native
-  def renderTexture(x: Double, y: Double, width: integer): RenderTexture = js.native
-  def renderTexture(x: Double, y: Double, width: integer, height: integer): RenderTexture = js.native
+  def renderTexture(x: Double, y: Double, width: Double): RenderTexture = js.native
+  def renderTexture(x: Double, y: Double, width: Double, height: Double): RenderTexture = js.native
+  def renderTexture(x: Double, y: Double, width: Unit, height: Double): RenderTexture = js.native
   
   /**
     * Creates a new Rope Game Object and adds it to the Scene.
@@ -919,7 +930,7 @@ trait GameObjectFactory extends StObject {
     x: Double,
     y: Double,
     texture: String | Texture,
-    frame: js.UndefOr[String | integer],
+    frame: js.UndefOr[String | Double],
     points: js.UndefOr[js.Array[Vector2Like]],
     horizontal: js.UndefOr[Boolean],
     colors: js.UndefOr[js.Array[Double]],
@@ -955,12 +966,16 @@ trait GameObjectFactory extends StObject {
   
   def spine(x: Double, y: Double): SpineGameObject = js.native
   def spine(x: Double, y: Double, key: String): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: String, aimationName: String): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: String, aimationName: String, loop: Boolean): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: String, aimationName: Unit, loop: Boolean): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: Unit, aimationName: String): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: Unit, aimationName: String, loop: Boolean): SpineGameObject = js.native
-  def spine(x: Double, y: Double, key: Unit, aimationName: Unit, loop: Boolean): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: String, animationName: String): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: String, animationName: String, loop: Boolean): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: String, animationName: Unit, loop: Boolean): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: Unit, animationName: String): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: Unit, animationName: String, loop: Boolean): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: Unit, animationName: Unit, loop: Boolean): SpineGameObject = js.native
+  
+  def spineContainer(x: Double, y: Double): SpineContainer = js.native
+  def spineContainer(x: Double, y: Double, children: js.Array[SpineGameObject]): SpineContainer = js.native
+  def spineContainer(x: Double, y: Double, children: SpineGameObject): SpineContainer = js.native
   
   /**
     * Creates a new Sprite Game Object and adds it to the Scene.
@@ -973,10 +988,10 @@ trait GameObjectFactory extends StObject {
     */
   def sprite(x: Double, y: Double, texture: String): Sprite = js.native
   def sprite(x: Double, y: Double, texture: String, frame: String): Sprite = js.native
-  def sprite(x: Double, y: Double, texture: String, frame: integer): Sprite = js.native
+  def sprite(x: Double, y: Double, texture: String, frame: Double): Sprite = js.native
   def sprite(x: Double, y: Double, texture: Texture): Sprite = js.native
   def sprite(x: Double, y: Double, texture: Texture, frame: String): Sprite = js.native
-  def sprite(x: Double, y: Double, texture: Texture, frame: integer): Sprite = js.native
+  def sprite(x: Double, y: Double, texture: Texture, frame: Double): Sprite = js.native
   
   /**
     * Creates a new Star Shape Game Object and adds it to the Scene.
@@ -1053,9 +1068,14 @@ trait GameObjectFactory extends StObject {
     * @param style The Text style configuration object.
     */
   def text(x: Double, y: Double, text: String): Text = js.native
-  def text(x: Double, y: Double, text: String, style: js.Object): Text = js.native
+  def text(x: Double, y: Double, text: String, style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle): Text = js.native
   def text(x: Double, y: Double, text: js.Array[String]): Text = js.native
-  def text(x: Double, y: Double, text: js.Array[String], style: js.Object): Text = js.native
+  def text(
+    x: Double,
+    y: Double,
+    text: js.Array[String],
+    style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle
+  ): Text = js.native
   
   /**
     * Creates a new TileSprite Game Object and adds it to the Scene.
@@ -1068,12 +1088,12 @@ trait GameObjectFactory extends StObject {
     * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager.
     * @param frame An optional frame from the Texture this Game Object is rendering with.
     */
-  def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: String): TileSprite = js.native
-  def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: String, frame: String): TileSprite = js.native
-  def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: String, frame: integer): TileSprite = js.native
-  def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: Texture): TileSprite = js.native
-  def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: Texture, frame: String): TileSprite = js.native
-  def tileSprite(x: Double, y: Double, width: integer, height: integer, texture: Texture, frame: integer): TileSprite = js.native
+  def tileSprite(x: Double, y: Double, width: Double, height: Double, texture: String): TileSprite = js.native
+  def tileSprite(x: Double, y: Double, width: Double, height: Double, texture: String, frame: String): TileSprite = js.native
+  def tileSprite(x: Double, y: Double, width: Double, height: Double, texture: String, frame: Double): TileSprite = js.native
+  def tileSprite(x: Double, y: Double, width: Double, height: Double, texture: Texture): TileSprite = js.native
+  def tileSprite(x: Double, y: Double, width: Double, height: Double, texture: Texture, frame: String): TileSprite = js.native
+  def tileSprite(x: Double, y: Double, width: Double, height: Double, texture: Texture, frame: Double): TileSprite = js.native
   
   /**
     * Creates a Tilemap from the given key or data, or creates a blank Tilemap if no key/data provided.
@@ -1100,11 +1120,11 @@ trait GameObjectFactory extends StObject {
     */
   def tilemap(
     key: js.UndefOr[String],
-    tileWidth: js.UndefOr[integer],
-    tileHeight: js.UndefOr[integer],
-    width: js.UndefOr[integer],
-    height: js.UndefOr[integer],
-    data: js.UndefOr[js.Array[js.Array[integer]]],
+    tileWidth: js.UndefOr[Double],
+    tileHeight: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    data: js.UndefOr[js.Array[js.Array[Double]]],
     insertNull: js.UndefOr[Boolean]
   ): Tilemap = js.native
   

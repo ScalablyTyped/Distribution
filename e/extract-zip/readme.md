@@ -1,7 +1,7 @@
 
 # Scala.js typings for extract-zip
 
-Typings are for version 1.6
+Typings are for version 2.0.1
 
 ## Library description:
 unzip a zip file into a directory using 100% javascript
@@ -10,10 +10,10 @@ unzip a zip file into a directory using 100% javascript
 | ------------------ | :-------------: |
 | Full name          | extract-zip |
 | Keywords           | unzip, zip, extract |
-| # releases         | 5 |
-| # dependents       | 539 |
-| # downloads        | 179046039 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2120323333333336E7 |
+| # stars            | 341.0 |
 
 ## Links
 - [Homepage](https://github.com/maxogden/extract-zip#readme)
@@ -24,7 +24,7 @@ unzip a zip file into a directory using 100% javascript
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

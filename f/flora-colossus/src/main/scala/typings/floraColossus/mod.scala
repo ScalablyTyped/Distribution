@@ -35,7 +35,7 @@ object mod {
   
   @JSImport("flora-colossus", "Walker")
   @js.native
-  class Walker protected ()
+  open class Walker protected ()
     extends typings.floraColossus.walkerMod.Walker {
     def this(modulePath: String) = this()
   }

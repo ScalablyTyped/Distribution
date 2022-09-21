@@ -9,7 +9,7 @@ trait SchemaOrdersCustomBatchResponseEntry extends StObject {
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.undefined
+  var batchId: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A list of errors defined if and only if the request failed.
@@ -17,21 +17,17 @@ trait SchemaOrdersCustomBatchResponseEntry extends StObject {
   var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
-    * The status of the execution. Only defined if   - the request was
-    * successful; and  - the method is not get, getByMerchantOrderId, or one of
-    * the test methods.
+    * The status of the execution. Only defined if 1. the request was successful; and 2. the method is not `get`, `getByMerchantOrderId`, or one of the test methods. Acceptable values are: - "`duplicate`" - "`executed`"
     */
-  var executionStatus: js.UndefOr[String] = js.undefined
+  var executionStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#ordersCustomBatchResponseEntry&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#ordersCustomBatchResponseEntry`"
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The retrieved order. Only defined if the method is get and if the request
-    * was successful.
+    * The retrieved order. Only defined if the method is `get` and if the request was successful.
     */
   var order: js.UndefOr[SchemaOrder] = js.undefined
 }
@@ -46,6 +42,8 @@ object SchemaOrdersCustomBatchResponseEntry {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
+    inline def setBatchIdNull: Self = StObject.set(x, "batchId", null)
+    
     inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
@@ -54,9 +52,13 @@ object SchemaOrdersCustomBatchResponseEntry {
     
     inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
+    inline def setExecutionStatusNull: Self = StObject.set(x, "executionStatus", null)
+    
     inline def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

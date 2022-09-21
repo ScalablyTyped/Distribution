@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bytesize-icons", "Bookmark")
 @js.native
-class Bookmark protected () extends BytesizeIconComponent {
+open class Bookmark protected () extends BytesizeIconComponent {
   def this(props: BytesizeIconsProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BytesizeIconsProps, context: js.Any) = this()
+  def this(props: BytesizeIconsProps, context: Any) = this()
 }

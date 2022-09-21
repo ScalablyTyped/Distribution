@@ -5,7 +5,7 @@ import typings.maximMazurokGapiClientDfareporting.anon.AccesstokenAltCallbackFie
 import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.AltCallbackFieldsId
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
-import typings.maximMazurokGapiClientDfareporting.anon.Compatibilities
+import typings.maximMazurokGapiClientDfareporting.anon.CampaignIds
 import typings.maximMazurokGapiClientDfareporting.anon.PlacementIds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +28,7 @@ trait PlacementsResource extends StObject {
   
   /** Retrieves a list of placements, possibly filtered. This method supports paging. */
   def list(): Request[PlacementsListResponse] = js.native
-  def list(request: Compatibilities): Request[PlacementsListResponse] = js.native
+  def list(request: CampaignIds): Request[PlacementsListResponse] = js.native
   
   /** Updates an existing placement. This method supports patch semantics. */
   def patch(request: AltCallbackFieldsId): Request[Placement] = js.native

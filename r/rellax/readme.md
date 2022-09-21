@@ -10,10 +10,10 @@ Lightweight, vanilla javascript parallax library
 | ------------------ | :-------------: |
 | Full name          | rellax |
 | Keywords           | parallax |
-| # releases         | 11 |
-| # dependents       | 15 |
-| # downloads        | 452622 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 77466.66666666667 |
+| # stars            | 6501.0 |
 
 ## Links
 - [Homepage](https://dixonandmoe.com/rellax/)

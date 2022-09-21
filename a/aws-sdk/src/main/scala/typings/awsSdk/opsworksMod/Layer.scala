@@ -170,7 +170,7 @@ object Layer {
     
     inline def setCustomSecurityGroupIdsUndefined: Self = StObject.set(x, "CustomSecurityGroupIds", js.undefined)
     
-    inline def setCustomSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "CustomSecurityGroupIds", js.Array(value :_*))
+    inline def setCustomSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "CustomSecurityGroupIds", js.Array(value*))
     
     inline def setDefaultRecipes(value: Recipes): Self = StObject.set(x, "DefaultRecipes", value.asInstanceOf[js.Any])
     
@@ -180,7 +180,7 @@ object Layer {
     
     inline def setDefaultSecurityGroupNamesUndefined: Self = StObject.set(x, "DefaultSecurityGroupNames", js.undefined)
     
-    inline def setDefaultSecurityGroupNamesVarargs(value: String*): Self = StObject.set(x, "DefaultSecurityGroupNames", js.Array(value :_*))
+    inline def setDefaultSecurityGroupNamesVarargs(value: String*): Self = StObject.set(x, "DefaultSecurityGroupNames", js.Array(value*))
     
     inline def setEnableAutoHealing(value: Boolean): Self = StObject.set(x, "EnableAutoHealing", value.asInstanceOf[js.Any])
     
@@ -206,7 +206,7 @@ object Layer {
     
     inline def setPackagesUndefined: Self = StObject.set(x, "Packages", js.undefined)
     
-    inline def setPackagesVarargs(value: String*): Self = StObject.set(x, "Packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: String*): Self = StObject.set(x, "Packages", js.Array(value*))
     
     inline def setShortname(value: String): Self = StObject.set(x, "Shortname", value.asInstanceOf[js.Any])
     
@@ -228,6 +228,6 @@ object Layer {
     
     inline def setVolumeConfigurationsUndefined: Self = StObject.set(x, "VolumeConfigurations", js.undefined)
     
-    inline def setVolumeConfigurationsVarargs(value: VolumeConfiguration*): Self = StObject.set(x, "VolumeConfigurations", js.Array(value :_*))
+    inline def setVolumeConfigurationsVarargs(value: VolumeConfiguration*): Self = StObject.set(x, "VolumeConfigurations", js.Array(value*))
   }
 }

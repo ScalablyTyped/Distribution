@@ -8,11 +8,11 @@ trait Cwd extends StObject {
   
   var cwd: js.UndefOr[js.Object] = js.undefined
   
-  var destination: js.UndefOr[js.Any] = js.undefined
+  var destination: js.UndefOr[Any] = js.undefined
   
   var env: js.UndefOr[js.Object] = js.undefined
   
-  var stdio: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+  var stdio: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   var waitForClose: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object Cwd {
     
     inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    inline def setDestination(value: js.Any): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Any): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
@@ -37,11 +37,11 @@ object Cwd {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setStdio(value: js.Array[js.Any] | String): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+    inline def setStdio(value: js.Array[Any] | String): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
     inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
-    inline def setStdioVarargs(value: js.Any*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+    inline def setStdioVarargs(value: Any*): Self = StObject.set(x, "stdio", js.Array(value*))
     
     inline def setWaitForClose(value: String): Self = StObject.set(x, "waitForClose", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Webpack block for UglifyJS
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/uglify |
 | Keywords           | webpack, webpack-blocks, uglify, uglifyjs |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 106429 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7400.666666666667 |
+| # stars            | 2983.0 |
 
 ## Links
 - [Homepage](https://github.com/andywer/webpack-blocks#readme)

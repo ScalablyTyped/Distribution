@@ -161,7 +161,7 @@ object ClientEntry {
     
     inline def setClientServergroups(value: js.Array[String]): Self = StObject.set(x, "clientServergroups", value.asInstanceOf[js.Any])
     
-    inline def setClientServergroupsVarargs(value: String*): Self = StObject.set(x, "clientServergroups", js.Array(value :_*))
+    inline def setClientServergroupsVarargs(value: String*): Self = StObject.set(x, "clientServergroups", js.Array(value*))
     
     inline def setClientTalkPower(value: Double): Self = StObject.set(x, "clientTalkPower", value.asInstanceOf[js.Any])
     

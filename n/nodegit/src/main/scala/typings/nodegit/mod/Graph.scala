@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Graph")
 @js.native
-class Graph ()
+open class Graph ()
   extends typings.nodegit.graphMod.Graph
 /* static members */
 object Graph {

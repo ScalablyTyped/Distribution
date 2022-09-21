@@ -10,10 +10,10 @@ Git Implemented in JavaScript
 | ------------------ | :-------------: |
 | Full name          | js-git |
 | Keywords           | git, js-git |
-| # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 8848275 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3966558.3333333335 |
+| # stars            | 3778.0 |
 
 ## Links
 - [Homepage](https://github.com/creationix/js-git#readme)

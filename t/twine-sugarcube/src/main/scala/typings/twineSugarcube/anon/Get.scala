@@ -46,6 +46,6 @@ trait Get extends StObject {
     */
   def save(): Unit = js.native
   def save(title: String): Unit = js.native
-  def save(title: String, metadata: js.Any): Unit = js.native
-  def save(title: Unit, metadata: js.Any): Unit = js.native
+  def save(title: String, metadata: Any): Unit = js.native
+  def save(title: Unit, metadata: Any): Unit = js.native
 }

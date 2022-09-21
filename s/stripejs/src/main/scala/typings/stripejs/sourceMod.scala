@@ -232,7 +232,7 @@ object sourceMod {
     * A matching name to the type with extra information about the payment method
     * @see type
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * A positive integer in the smallest currency unit (that is, 100 cents for $1.00,
@@ -446,7 +446,7 @@ object sourceMod {
       */
     var statement_descriptor: js.UndefOr[String] = js.undefined
     
-    var three_d_secure_2_eap: js.UndefOr[js.Any] = js.undefined
+    var three_d_secure_2_eap: js.UndefOr[Any] = js.undefined
     
     /**
       * When passed, token properties will override source parameters
@@ -509,7 +509,7 @@ object sourceMod {
       
       inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
       
-      inline def setThree_d_secure_2_eap(value: js.Any): Self = StObject.set(x, "three_d_secure_2_eap", value.asInstanceOf[js.Any])
+      inline def setThree_d_secure_2_eap(value: Any): Self = StObject.set(x, "three_d_secure_2_eap", value.asInstanceOf[js.Any])
       
       inline def setThree_d_secure_2_eapUndefined: Self = StObject.set(x, "three_d_secure_2_eap", js.undefined)
       

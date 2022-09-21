@@ -1,22 +1,26 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientDialogflow.anon.Accesstoken
+import typings.maximMazurokGapiClientDialogflow.anon.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait LocationsResource extends StObject {
   
-  var operations: OperationsResource
-}
-object LocationsResource {
+  var agents: AgentsResource = js.native
   
-  inline def apply(operations: OperationsResource): LocationsResource = {
-    val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LocationsResource]
-  }
+  /** Gets information about a location. */
+  def get(): Request[GoogleCloudLocationLocation] = js.native
+  def get(request: Accesstoken): Request[GoogleCloudLocationLocation] = js.native
   
-  extension [Self <: LocationsResource](x: Self) {
-    
-    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
-  }
+  /** Lists information about the supported locations for this service. */
+  def list(): Request[GoogleCloudLocationListLocationsResponse] = js.native
+  def list(request: Filter): Request[GoogleCloudLocationListLocationsResponse] = js.native
+  
+  var operations: OperationsResource = js.native
+  
+  var securitySettings: SecuritySettingsResource = js.native
 }

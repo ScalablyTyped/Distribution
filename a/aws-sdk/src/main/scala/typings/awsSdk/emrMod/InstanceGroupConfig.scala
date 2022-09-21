@@ -12,7 +12,7 @@ trait InstanceGroupConfig extends StObject {
   var AutoScalingPolicy: js.UndefOr[typings.awsSdk.emrMod.AutoScalingPolicy] = js.undefined
   
   /**
-    * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
+    * If specified, indicates that the instance group uses Spot Instances. This is the maximum price you are willing to pay for Spot Instances. Specify OnDemandPrice to set the amount equal to the On-Demand price, or specify an amount in USD.
     */
   var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
@@ -20,6 +20,11 @@ trait InstanceGroupConfig extends StObject {
     *  Amazon EMR releases 4.x or later.  The list of configurations supplied for an EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
     */
   var Configurations: js.UndefOr[ConfigurationList] = js.undefined
+  
+  /**
+    * The custom AMI ID to use for the provisioned instance group.
+    */
+  var CustomAmiId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * EBS configurations that will be attached to each EC2 instance in the instance group.
@@ -72,7 +77,11 @@ object InstanceGroupConfig {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value*))
+    
+    inline def setCustomAmiId(value: XmlStringMaxLen256): Self = StObject.set(x, "CustomAmiId", value.asInstanceOf[js.Any])
+    
+    inline def setCustomAmiIdUndefined: Self = StObject.set(x, "CustomAmiId", js.undefined)
     
     inline def setEbsConfiguration(value: EbsConfiguration): Self = StObject.set(x, "EbsConfiguration", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnvironmentLifecycle extends StObject {
   
   /**
-    * If the environment failed to delete, the Amazon Resource Name (ARN) of the related AWS resource.
+    * If the environment failed to delete, the Amazon Resource Name (ARN) of the related Amazon Web Services resource.
     */
   var failureResource: js.UndefOr[String] = js.undefined
   

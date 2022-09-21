@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WEBGLCompressedTextureS3tcSrgb extends StObject {
   
+  /* standard dom */
   val COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT: GLenum
   
+  /* standard dom */
   val COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT: GLenum
   
+  /* standard dom */
   val COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT: GLenum
   
+  /* standard dom */
   val COMPRESSED_SRGB_S3TC_DXT1_EXT: GLenum
 }
 object WEBGLCompressedTextureS3tcSrgb {

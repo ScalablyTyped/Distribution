@@ -2,22 +2,23 @@ package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialReportData
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CSV
-import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTIONS
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.report.Column
-import typings.mangopay2NodejsSdk.mod.report.Filters
-import typings.mangopay2NodejsSdk.mod.report.ReportData
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionNature
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTION
+import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WALLET
+import typings.mangopay2NodejsSdk.reportMod.report.Column
+import typings.mangopay2NodejsSdk.reportMod.report.Filters
+import typings.mangopay2NodejsSdk.reportMod.report.ReportData
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionNature
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.Report")
 @js.native
-class Report ()
+open class Report ()
   extends EntityBase[ReportData]
      with Filters
      with ReportData {
@@ -72,7 +73,7 @@ class Report ()
     * An object of various filters for the report
     */
   /* CompleteClass */
-  var Filters: typings.mangopay2NodejsSdk.mod.report.Filters = js.native
+  var Filters: typings.mangopay2NodejsSdk.reportMod.report.Filters = js.native
   
   /* CompleteClass */
   var Id: String = js.native
@@ -147,7 +148,7 @@ class Report ()
     * The type of report
     */
   /* CompleteClass */
-  var ReportType: TRANSACTIONS = js.native
+  var ReportType: TRANSACTION | WALLET = js.native
   
   /**
     * The result code
@@ -162,7 +163,7 @@ class Report ()
   var ResultMessage: String = js.native
   
   /**
-    * The column to sort against and direction seperate by a `:`
+    * The column to sort against and direction separated by a `:`
     */
   /* CompleteClass */
   var Sort: String = js.native

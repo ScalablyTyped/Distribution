@@ -14,16 +14,17 @@ import typings.hapiHapi.hapiHapiStrings.utf16le
 import typings.hapiHapi.hapiHapiStrings.utf8
 import typings.hapiHapi.mod.Json.StringifyReplacer
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
+import typings.hapiHapi.mod.Lifecycle._ReturnValueTypes
 import typings.hapiHapi.mod.Util.Dictionary
-import typings.hapiPodium.mod.Podium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Podium * / any */ @js.native
 trait ResponseObject
   extends StObject
-     with Podium {
+     with _ReturnValueTypes {
   
   /**
     * @default {}.
@@ -41,11 +42,14 @@ trait ResponseObject
   def bytes(length: Double): ResponseObject = js.native
   
   /**
-    * Sets the 'Content-Type' HTTP header 'charset' property where:
+    * Controls the 'Content-Type' HTTP header 'charset' property of the response.
+    *  * When invoked without any parameter, will prevent hapijs from applying its default charset normalization to 'utf-8'
+    *  * When 'charset' parameter is provided, will set the 'Content-Type' HTTP header 'charset' property where:
     * @param charset - the charset property value.
     * @return Return value: the current response object.
     * [See docs](https://hapijs.com/api/17.0.1#-responsecharsetcharset)
     */
+  def charset(): ResponseObject = js.native
   def charset(charset: String): ResponseObject = js.native
   
   /**
@@ -78,22 +82,7 @@ trait ResponseObject
     * @return Return value: the current response object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseencodingencoding)
     */
-  @JSName("encoding")
-  def encoding_ascii(encoding: ascii): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_base64(encoding: base64): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_binary(encoding: binary): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_hex(encoding: hex): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_latin1(encoding: latin1): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_ucs2(encoding: ucs2): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_utf16le(encoding: utf16le): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_utf8(encoding: utf8): ResponseObject = js.native
+  def encoding(encoding: ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex): ResponseObject = js.native
   
   /**
     * Sets the representation entity tag where:

@@ -13,7 +13,7 @@ object containerMod {
   
   @JSImport("ansi-fragments/build/fragments/Container", "Container")
   @js.native
-  class Container_ protected ()
+  open class Container_ protected ()
     extends StObject
        with IFragment {
     def this(children: js.Array[String | IFragment]) = this()
@@ -21,8 +21,8 @@ object containerMod {
     /* CompleteClass */
     override def build(): String = js.native
     
-    /* private */ val children: js.Any = js.native
+    /* private */ val children: Any = js.native
   }
   
-  inline def container(children: (String | IFragment)*): Container_ = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(children.asInstanceOf[js.Any]).asInstanceOf[Container_]
+  inline def container(children: (String | IFragment)*): Container_ = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(children.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Container_]
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object setlocaleMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(category: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(category.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(category: js.Any, locale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(category.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(category: Unit, locale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(category.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(category: Any): Any = ^.asInstanceOf[js.Dynamic].apply(category.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(category: Any, locale: Any): Any = (^.asInstanceOf[js.Dynamic].apply(category.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(category: Unit, locale: Any): Any = (^.asInstanceOf[js.Dynamic].apply(category.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/setlocale", JSImport.Namespace)
   @js.native

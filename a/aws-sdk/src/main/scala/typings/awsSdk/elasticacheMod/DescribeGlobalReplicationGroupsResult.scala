@@ -29,7 +29,7 @@ object DescribeGlobalReplicationGroupsResult {
     
     inline def setGlobalReplicationGroupsUndefined: Self = StObject.set(x, "GlobalReplicationGroups", js.undefined)
     
-    inline def setGlobalReplicationGroupsVarargs(value: GlobalReplicationGroup*): Self = StObject.set(x, "GlobalReplicationGroups", js.Array(value :_*))
+    inline def setGlobalReplicationGroupsVarargs(value: GlobalReplicationGroup*): Self = StObject.set(x, "GlobalReplicationGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

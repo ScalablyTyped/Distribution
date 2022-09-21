@@ -11,9 +11,9 @@ A naive XML parser and builder based on libxmljs
 | Full name          | simple-xml |
 | Keywords           | xml, parser, builder, libxml |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 987 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 45.333333333333336 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/AirAsiaExpedia/node-simple-xml#readme)

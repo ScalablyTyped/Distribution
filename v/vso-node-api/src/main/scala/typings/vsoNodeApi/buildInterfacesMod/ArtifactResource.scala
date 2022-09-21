@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ArtifactResource extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Type-specific data about the artifact.
@@ -37,7 +37,7 @@ trait ArtifactResource extends StObject {
 object ArtifactResource {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     data: String,
     downloadUrl: String,
     properties: StringDictionary[String],
@@ -61,6 +61,6 @@ object ArtifactResource {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

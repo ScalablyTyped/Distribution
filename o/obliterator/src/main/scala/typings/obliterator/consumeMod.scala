@@ -1,14 +1,15 @@
 package typings.obliterator
 
-import typings.std.Iterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obliterator/consume", JSImport.Namespace)
-@js.native
-object consumeMod extends js.Object {
-  def default[T](iterator: Iterator[T, _, js.UndefOr[scala.Nothing]]): Unit = js.native
-  def default[T](iterator: Iterator[T, _, js.UndefOr[scala.Nothing]], steps: Double): Unit = js.native
+object consumeMod {
+  
+  @JSImport("obliterator/consume", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](iterator: js.Iterator[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default[T](iterator: js.Iterator[T], steps: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterator.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

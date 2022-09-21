@@ -25,7 +25,7 @@ object NonSdkApiUsageViolation {
     
     inline def setApiSignaturesUndefined: Self = StObject.set(x, "apiSignatures", js.undefined)
     
-    inline def setApiSignaturesVarargs(value: String*): Self = StObject.set(x, "apiSignatures", js.Array(value :_*))
+    inline def setApiSignaturesVarargs(value: String*): Self = StObject.set(x, "apiSignatures", js.Array(value*))
     
     inline def setUniqueApis(value: Double): Self = StObject.set(x, "uniqueApis", value.asInstanceOf[js.Any])
     

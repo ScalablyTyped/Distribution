@@ -8,19 +8,19 @@ object implementationMod {
   
   // tslint:disable-next-line: ban-types
   inline def apply(fn: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-  inline def apply(fn: js.Function1[/* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  inline def apply(fn: js.Function1[/* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  inline def apply[T1](
+    fn: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], Unit]
+  ): js.Function1[/* arg1 */ T1, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ T1, js.Promise[Unit]]]
   // tslint:disable-next-line: ban-types
   inline def apply[TCustom /* <: js.Function */](
-    fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.CustomPromisify<TCustom> */ js.Any
+    fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.CustomPromisify<TCustom> */ Any
   ): TCustom = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[TCustom]
-  inline def apply[T1](
-    fn: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
-  ): js.Function1[/* arg1 */ T1, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ T1, js.Promise[Unit]]]
   inline def apply[T1, T2](
     fn: js.Function3[
       /* arg1 */ T1, 
       /* arg2 */ T2, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
       Unit
     ]
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[Unit]]]
@@ -29,7 +29,7 @@ object implementationMod {
       /* arg1 */ T1, 
       /* arg2 */ T2, 
       /* arg3 */ T3, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
       Unit
     ]
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Promise[Unit]]]
@@ -39,7 +39,7 @@ object implementationMod {
       /* arg2 */ T2, 
       /* arg3 */ T3, 
       /* arg4 */ T4, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
       Unit
     ]
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Promise[Unit]]]
@@ -50,7 +50,7 @@ object implementationMod {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
       Unit
     ]
   ): js.Function5[
@@ -75,7 +75,7 @@ object implementationMod {
   
   @JSImport("util.promisify/implementation", "custom")
   @js.native
-  val custom: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof util.promisify.custom */ js.Any = js.native
+  val custom: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof util.promisify.custom */ Any = js.native
   
   /**
     * @deprecated

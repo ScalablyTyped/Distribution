@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalRangeFillUpdateData extends StObject {
   
   /**
+    * HTML color code representing the color of the fill, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the color of the fill, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var color: js.UndefOr[String] = js.undefined

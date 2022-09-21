@@ -12,13 +12,13 @@ object ApplicationSettings {
   
   @JSGlobal("Windows.UI.ApplicationSettings.SettingsCommand")
   @js.native
-  class SettingsCommand protected ()
+  open class SettingsCommand protected ()
     extends StObject
        with typings.winrt.Windows.UI.ApplicationSettings.SettingsCommand {
-    def this(settingsCommandId: js.Any, label: String, handler: UICommandInvokedHandler) = this()
+    def this(settingsCommandId: Any, label: String, handler: UICommandInvokedHandler) = this()
     
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /* CompleteClass */
     override def invoked(command: IUICommand): Unit = js.native
@@ -44,12 +44,12 @@ object ApplicationSettings {
   
   @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
   @js.native
-  class SettingsPane ()
+  open class SettingsPane ()
     extends StObject
        with typings.winrt.Windows.UI.ApplicationSettings.SettingsPane {
     
     /* CompleteClass */
-    var oncommandsrequested: js.Any = js.native
+    var oncommandsrequested: Any = js.native
   }
   /* static members */
   object SettingsPane {
@@ -70,7 +70,7 @@ object ApplicationSettings {
   
   @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest")
   @js.native
-  class SettingsPaneCommandsRequest ()
+  open class SettingsPaneCommandsRequest ()
     extends StObject
        with typings.winrt.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest {
     
@@ -80,7 +80,7 @@ object ApplicationSettings {
   
   @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs")
   @js.native
-  class SettingsPaneCommandsRequestedEventArgs ()
+  open class SettingsPaneCommandsRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs {
     

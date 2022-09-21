@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait InformationRightsManagementSettings
   
   def get_documentAccessExpireDays(): Double = js.native
   
-  def get_documentLibraryProtectionExpireDate(): Date = js.native
+  def get_documentLibraryProtectionExpireDate(): js.Date = js.native
   
   def get_enableDocumentAccessExpire(): Boolean = js.native
   
@@ -50,7 +49,7 @@ trait InformationRightsManagementSettings
   
   def set_documentAccessExpireDays(value: Double): Unit = js.native
   
-  def set_documentLibraryProtectionExpireDate(value: Date): Unit = js.native
+  def set_documentLibraryProtectionExpireDate(value: js.Date): Unit = js.native
   
   def set_enableDocumentAccessExpire(value: Boolean): Unit = js.native
   

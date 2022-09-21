@@ -14,9 +14,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * This object represents the font attributes (font style, color, etc.) for an object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -25,9 +25,9 @@ trait ConditionalRangeFont
      with ClientObject {
   
   /**
-    *
     * Specifies if the font is bold.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var bold: Boolean = js.native
@@ -35,14 +35,15 @@ trait ConditionalRangeFont
   /**
     * Resets the font formats.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   def clear(): Unit = js.native
   
   /**
-    *
     * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var color: String = js.native
@@ -52,9 +53,9 @@ trait ConditionalRangeFont
   var context_ConditionalRangeFont: RequestContext = js.native
   
   /**
-    *
     * Specifies if the font is italic.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var italic: Boolean = js.native
@@ -72,14 +73,8 @@ trait ConditionalRangeFont
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalRangeFont): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ConditionalRangeFont): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -87,9 +82,9 @@ trait ConditionalRangeFont
   def set(properties: ConditionalRangeFontUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    *
     * Specifies the strikethrough status of the font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var strikethrough: Boolean = js.native
@@ -101,9 +96,9 @@ trait ConditionalRangeFont
   def toJSON(): ConditionalRangeFontData = js.native
   
   /**
+    * The type of underline applied to the font. See `Excel.ConditionalRangeFontUnderlineStyle` for details.
     *
-    * The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var underline: ConditionalRangeFontUnderlineStyle | None | Single | Double = js.native

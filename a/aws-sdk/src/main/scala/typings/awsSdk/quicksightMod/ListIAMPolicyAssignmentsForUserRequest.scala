@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListIAMPolicyAssignmentsForUserRequest extends StObject {
   
   /**
-    * The ID of the AWS account that contains the assignments.
+    * The ID of the Amazon Web Services account that contains the assignments.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

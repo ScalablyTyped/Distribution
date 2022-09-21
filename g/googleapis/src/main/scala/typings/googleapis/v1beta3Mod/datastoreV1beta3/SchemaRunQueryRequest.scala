@@ -4,20 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for Datastore.RunQuery.
-  */
 trait SchemaRunQueryRequest extends StObject {
   
   /**
-    * The GQL query to run.
+    * The GQL query to run. This query must be a non-aggregation query.
     */
   var gqlQuery: js.UndefOr[SchemaGqlQuery] = js.undefined
   
   /**
-    * Entities are partitioned into subsets, identified by a partition ID.
-    * Queries are scoped to a single partition. This partition ID is normalized
-    * with the standard default context partition ID.
+    * Entities are partitioned into subsets, identified by a partition ID. Queries are scoped to a single partition. This partition ID is normalized with the standard default context partition ID.
     */
   var partitionId: js.UndefOr[SchemaPartitionId] = js.undefined
   

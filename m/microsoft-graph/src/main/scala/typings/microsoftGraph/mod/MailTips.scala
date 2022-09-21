@@ -129,7 +129,7 @@ object MailTips {
     
     inline def setRecipientSuggestionsUndefined: Self = StObject.set(x, "recipientSuggestions", js.undefined)
     
-    inline def setRecipientSuggestionsVarargs(value: Recipient*): Self = StObject.set(x, "recipientSuggestions", js.Array(value :_*))
+    inline def setRecipientSuggestionsVarargs(value: Recipient*): Self = StObject.set(x, "recipientSuggestions", js.Array(value*))
     
     inline def setTotalMemberCount(value: NullableOption[Double]): Self = StObject.set(x, "totalMemberCount", value.asInstanceOf[js.Any])
     

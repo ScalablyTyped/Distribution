@@ -5,8 +5,8 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.syncFileSystem.FileStatusChangedDetail
 import typings.chromeApps.chrome.syncFileSystem.FileStatusInfo
 import typings.filesystem.FileEntry
-import typings.filesystem.FileSystem
 import typings.std.Exclude
+import typings.std.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

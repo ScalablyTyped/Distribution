@@ -32,7 +32,7 @@ object anon {
       
       inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
       
-      inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value*))
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -49,6 +49,25 @@ object anon {
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    }
+  }
+  
+  trait Name extends StObject {
+    
+    var name: js.UndefOr[String] = js.undefined
+  }
+  object Name {
+    
+    inline def apply(): Name = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Name]
+    }
+    
+    extension [Self <: Name](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

@@ -16,7 +16,7 @@ object putBucketVersioningCommandMod {
   
   @JSImport("@aws-sdk/client-s3-browser/commands/PutBucketVersioningCommand", "PutBucketVersioningCommand")
   @js.native
-  class PutBucketVersioningCommand protected ()
+  open class PutBucketVersioningCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -33,17 +33,17 @@ object putBucketVersioningCommandMod {
     /* CompleteClass */
     override val middlewareStack: MiddlewareStack[PutBucketVersioningInput, PutBucketVersioningOutput] = js.native
     
-    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
+    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ Any = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketVersioningInput, PutBucketVersioningOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: S3ResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[PutBucketVersioningInput, PutBucketVersioningOutput] = js.native
   }
 }

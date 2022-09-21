@@ -31,6 +31,6 @@ object GetFindingsReportAccountSummaryResponse {
     
     inline def setReportSummaries(value: FindingsReportSummaries): Self = StObject.set(x, "reportSummaries", value.asInstanceOf[js.Any])
     
-    inline def setReportSummariesVarargs(value: FindingsReportSummary*): Self = StObject.set(x, "reportSummaries", js.Array(value :_*))
+    inline def setReportSummariesVarargs(value: FindingsReportSummary*): Self = StObject.set(x, "reportSummaries", js.Array(value*))
   }
 }

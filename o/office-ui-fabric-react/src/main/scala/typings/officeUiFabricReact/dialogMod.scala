@@ -16,7 +16,7 @@ object dialogMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogBase")
   @js.native
-  class DialogBase protected ()
+  open class DialogBase protected ()
     extends typings.officeUiFabricReact.dialogBaseMod.DialogBase {
     def this(props: IDialogProps) = this()
   }
@@ -39,7 +39,7 @@ object dialogMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogContentBase")
   @js.native
-  class DialogContentBase protected ()
+  open class DialogContentBase protected ()
     extends typings.officeUiFabricReact.dialogContentBaseMod.DialogContentBase {
     def this(props: IDialogContentProps) = this()
   }
@@ -62,7 +62,7 @@ object dialogMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogFooterBase")
   @js.native
-  class DialogFooterBase protected ()
+  open class DialogFooterBase protected ()
     extends typings.officeUiFabricReact.dialogFooterBaseMod.DialogFooterBase {
     def this(props: IDialogFooterProps) = this()
   }

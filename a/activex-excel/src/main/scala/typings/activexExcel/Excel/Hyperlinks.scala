@@ -38,7 +38,7 @@ trait Hyperlinks extends StObject {
   def Item(Index: String): Hyperlink = js.native
   def Item(Index: Double): Hyperlink = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Hyperlink = js.native
+  def _Default(Index: Any): Hyperlink = js.native
 }

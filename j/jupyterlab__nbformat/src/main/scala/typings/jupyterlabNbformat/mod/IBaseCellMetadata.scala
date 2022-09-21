@@ -33,7 +33,7 @@ trait IBaseCellMetadata
     * This is not strictly part of the nbformat spec, but it is added by
     * the contents manager.
     *
-    * See https://jupyter-notebook.readthedocs.io/en/latest/security.html.
+    * See https://jupyter-server.readthedocs.io/en/latest/operators/security.html.
     */
   var trusted: Boolean
 }
@@ -52,7 +52,7 @@ object IBaseCellMetadata {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
   }

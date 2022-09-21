@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SpriteSceneComponent")
 @js.native
-class SpriteSceneComponent protected ()
+open class SpriteSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SpriteSceneComponent {
   /**
@@ -16,20 +16,20 @@ class SpriteSceneComponent protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /* private */ /* CompleteClass */
-  var _pickSpriteButKeepRay: js.Any = js.native
+  var _pickSpriteButKeepRay: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _pointerDown: js.Any = js.native
+  var _pointerDown: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _pointerMove: js.Any = js.native
+  var _pointerMove: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _pointerUp: js.Any = js.native
+  var _pointerUp: Any = js.native
   
   /** @hidden */
   /* private */ /* CompleteClass */
-  var _spritePredicate: js.Any = js.native
+  var _spritePredicate: Any = js.native
   
   /**
     * Disposes the component and the associated ressources.

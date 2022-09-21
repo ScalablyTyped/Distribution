@@ -31,7 +31,7 @@ trait JQuery extends StObject {
     * @param methodName
     * @param arg
     */
-  def slick(methodName: String, arg: js.Any*): js.Any = js.native
+  def slick(methodName: String, arg: Any*): Any = js.native
   def slick(options: JQuerySlickOptions): JQuery = js.native
   /**
     * Get Slick Object
@@ -75,7 +75,7 @@ trait JQuery extends StObject {
     * @param func
     */
   @JSName("slick")
-  def slick_slickFilter(methodName: slickFilter, func: js.Function2[/* index */ Double, /* element */ Element, js.Any]): JQuery = js.native
+  def slick_slickFilter(methodName: slickFilter, func: js.Function2[/* index */ Double, /* element */ Element, Any]): JQuery = js.native
   /**
     * Filters slides using jQuery .filter()
     * @param methodName The name of the method
@@ -89,17 +89,17 @@ trait JQuery extends StObject {
     * @param option The option name
     */
   @JSName("slick")
-  def slick_slickGetOption(methodName: slickGetOption, option: js.Any): JQuerySlickOptions = js.native
+  def slick_slickGetOption(methodName: slickGetOption, option: Any): JQuerySlickOptions = js.native
   /**
     * Navigates to a slide by index
     * @param methodName The name of the method
     * @param slide
-    * @param animate
+    * @param dontAnimate
     */
   @JSName("slick")
   def slick_slickGoTo(methodName: slickGoTo, slide: Double): JQuery = js.native
   @JSName("slick")
-  def slick_slickGoTo(methodName: slickGoTo, slide: Double, animate: Boolean): JQuery = js.native
+  def slick_slickGoTo(methodName: slickGoTo, slide: Double, dontAnimate: Boolean): JQuery = js.native
   /**
     * Navigates to the next slide
     * @param methodName The name of the method

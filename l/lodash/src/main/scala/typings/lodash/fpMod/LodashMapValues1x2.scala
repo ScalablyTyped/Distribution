@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashMapValues1x2[T] extends StObject {
   
-  def apply(iteratee: String): Dictionary[js.Any] = js.native
+  def apply(iteratee: String): Dictionary[Any] = js.native
   def apply(iteratee: js.Object): Dictionary[Boolean] = js.native
   def apply[TResult](callback: js.Function1[/* value */ T, TResult]): Dictionary[TResult] = js.native
   def apply[TKey /* <: /* keyof T */ String */](iteratee: TKey): Dictionary[

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangePageSizeCommand")
 @js.native
-class ChangePageSizeCommand ()
+open class ChangePageSizeCommand ()
   extends StObject
      with typings.devexpressWeb.ChangePageSizeCommand

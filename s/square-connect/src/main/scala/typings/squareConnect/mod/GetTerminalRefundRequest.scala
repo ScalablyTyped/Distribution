@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "GetTerminalRefundRequest")
 @js.native
-class GetTerminalRefundRequest () extends StObject
+open class GetTerminalRefundRequest () extends StObject

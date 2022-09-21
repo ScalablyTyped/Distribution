@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AngularFireSimpleObject
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   @JSName("$id")
   var $id: String
@@ -16,11 +16,11 @@ trait AngularFireSimpleObject
   var $priority: Double
   
   @JSName("$value")
-  var $value: js.Any
+  var $value: Any
 }
 object AngularFireSimpleObject {
   
-  inline def apply($id: String, $priority: Double, $value: js.Any): AngularFireSimpleObject = {
+  inline def apply($id: String, $priority: Double, $value: Any): AngularFireSimpleObject = {
     val __obj = js.Dynamic.literal($id = $id.asInstanceOf[js.Any], $priority = $priority.asInstanceOf[js.Any], $value = $value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngularFireSimpleObject]
   }
@@ -31,6 +31,6 @@ object AngularFireSimpleObject {
     
     inline def set$priority(value: Double): Self = StObject.set(x, "$priority", value.asInstanceOf[js.Any])
     
-    inline def set$value(value: js.Any): Self = StObject.set(x, "$value", value.asInstanceOf[js.Any])
+    inline def set$value(value: Any): Self = StObject.set(x, "$value", value.asInstanceOf[js.Any])
   }
 }

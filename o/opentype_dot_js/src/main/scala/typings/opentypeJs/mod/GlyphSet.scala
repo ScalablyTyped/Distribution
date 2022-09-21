@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("opentype.js", "GlyphSet")
 @js.native
-class GlyphSet protected () extends StObject {
+open class GlyphSet protected () extends StObject {
   def this(font: Font, glyphs: js.Array[js.Function0[Glyph] | Glyph]) = this()
   
-  /* private */ var font: js.Any = js.native
+  /* private */ var font: Any = js.native
   
   def get(index: Double): Glyph = js.native
   
-  /* private */ var glyphs: js.Any = js.native
+  /* private */ var glyphs: Any = js.native
   
   var length: Double = js.native
   

@@ -8,5 +8,5 @@ object progressMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_Progress", "_Progress")
   @js.native
-  val Progress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Progress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

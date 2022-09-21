@@ -13,18 +13,18 @@ trait gridOptions extends StObject {
   var axisMargin: js.UndefOr[Double] = js.undefined
   
   // color
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var backgroundColor: js.UndefOr[Any] = js.undefined
   
   // number or width object
-  var borderColor: js.UndefOr[js.Any] = js.undefined
+  var borderColor: js.UndefOr[Any] = js.undefined
   
   //array of markings or (fn: axes -> array of markings)
-  var borderWidth: js.UndefOr[js.Any] = js.undefined
+  var borderWidth: js.UndefOr[Any] = js.undefined
   
   // or null
   var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[js.Any] = js.undefined
+  var color: js.UndefOr[Any] = js.undefined
   
   var hoverable: js.UndefOr[Boolean] = js.undefined
   
@@ -32,11 +32,11 @@ trait gridOptions extends StObject {
   var labelMargin: js.UndefOr[Double] = js.undefined
   
   //color/gradient or null
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[Any] = js.undefined
   
-  var markings: js.UndefOr[js.Any] = js.undefined
+  var markings: js.UndefOr[Any] = js.undefined
   
-  var markingsColor: js.UndefOr[js.Any] = js.undefined
+  var markingsColor: js.UndefOr[Any] = js.undefined
   
   var markingsLineWidth: js.UndefOr[Double] = js.undefined
   
@@ -47,7 +47,7 @@ trait gridOptions extends StObject {
   
   var show: js.UndefOr[Boolean] = js.undefined
   
-  var tickColor: js.UndefOr[js.Any] = js.undefined
+  var tickColor: js.UndefOr[Any] = js.undefined
 }
 object gridOptions {
   
@@ -70,15 +70,15 @@ object gridOptions {
     
     inline def setAxisMarginUndefined: Self = StObject.set(x, "axisMargin", js.undefined)
     
-    inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBorderColor(value: js.Any): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Any): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def setBorderWidth(value: js.Any): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Any): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
@@ -86,7 +86,7 @@ object gridOptions {
     
     inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -98,13 +98,13 @@ object gridOptions {
     
     inline def setLabelMarginUndefined: Self = StObject.set(x, "labelMargin", js.undefined)
     
-    inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMarkings(value: js.Any): Self = StObject.set(x, "markings", value.asInstanceOf[js.Any])
+    inline def setMarkings(value: Any): Self = StObject.set(x, "markings", value.asInstanceOf[js.Any])
     
-    inline def setMarkingsColor(value: js.Any): Self = StObject.set(x, "markingsColor", value.asInstanceOf[js.Any])
+    inline def setMarkingsColor(value: Any): Self = StObject.set(x, "markingsColor", value.asInstanceOf[js.Any])
     
     inline def setMarkingsColorUndefined: Self = StObject.set(x, "markingsColor", js.undefined)
     
@@ -126,7 +126,7 @@ object gridOptions {
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    inline def setTickColor(value: js.Any): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
+    inline def setTickColor(value: Any): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
     
     inline def setTickColorUndefined: Self = StObject.set(x, "tickColor", js.undefined)
   }

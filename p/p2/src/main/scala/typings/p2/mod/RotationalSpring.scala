@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "RotationalSpring")
 @js.native
-class RotationalSpring protected () extends Spring {
+open class RotationalSpring protected () extends Spring {
   def this(bodyA: Body, bodyB: Body) = this()
   def this(bodyA: Body, bodyB: Body, options: RotationalSpringOptions) = this()
   

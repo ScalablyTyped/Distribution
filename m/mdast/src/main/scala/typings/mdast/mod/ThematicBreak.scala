@@ -1,6 +1,7 @@
 package typings.mdast.mod
 
 import typings.mdast.mdastStrings.thematicBreak
+import typings.unist.mod.Data
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ThematicBreak
   extends StObject
-     with Node
-     with BlockContent {
+     with Node[Data] {
   
   @JSName("type")
   var type_ThematicBreak: thematicBreak

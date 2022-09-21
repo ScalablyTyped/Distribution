@@ -7,33 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BoneIKController extends StObject {
   
-  /* private */ var _adjustRoll: js.Any = js.native
+  /* private */ var _adjustRoll: Any = js.native
   
-  /* private */ var _bendAxis: js.Any = js.native
+  /* private */ var _bendAxis: Any = js.native
   
-  /* private */ var _bone1: js.Any = js.native
+  /* private */ var _bone1: Any = js.native
   
-  /* private */ var _bone1Length: js.Any = js.native
+  /* private */ var _bone1Length: Any = js.native
   
-  /* private */ var _bone1Mat: js.Any = js.native
+  /* private */ var _bone1Mat: Any = js.native
   
-  /* private */ var _bone1Quat: js.Any = js.native
+  /* private */ var _bone1Quat: Any = js.native
   
-  /* private */ var _bone2: js.Any = js.native
+  /* private */ var _bone2: Any = js.native
   
-  /* private */ var _bone2Ang: js.Any = js.native
+  /* private */ var _bone2Ang: Any = js.native
   
-  /* private */ var _bone2Length: js.Any = js.native
+  /* private */ var _bone2Length: Any = js.native
   
-  /* private */ var _maxAngle: js.Any = js.native
+  /* private */ var _maxAngle: Any = js.native
   
-  /* private */ var _maxReach: js.Any = js.native
+  /* private */ var _maxReach: Any = js.native
   
-  /* private */ var _rightHandedSystem: js.Any = js.native
+  /* private */ var _rightHandedSystem: Any = js.native
   
-  /* private */ var _setMaxAngle: js.Any = js.native
+  /* private */ var _setMaxAngle: Any = js.native
   
-  /* private */ var _slerping: js.Any = js.native
+  /* private */ var _slerping: Any = js.native
+  
+  /* private */ var _updateLinkedTransformRotation: Any = js.native
   
   /**
     * Gets or sets maximum allowed angle
@@ -42,9 +44,10 @@ trait BoneIKController extends StObject {
   def maxAngle_=(value: Double): Unit = js.native
   
   /**
-    * Gets or sets the mesh associated with the controller
+    * Gets or sets the TransformNode associated with the controller
+    * Name kept as mesh for back compatibility
     */
-  var mesh: AbstractMesh = js.native
+  var mesh: TransformNode = js.native
   
   /**
     * Gets or sets the pole angle
@@ -62,7 +65,7 @@ trait BoneIKController extends StObject {
   var poleTargetLocalOffset: Vector3 = js.native
   
   /** Gets or sets the mesh used as pole */
-  var poleTargetMesh: AbstractMesh = js.native
+  var poleTargetMesh: TransformNode = js.native
   
   /**
     * Gets or sets the pole target position
@@ -75,9 +78,10 @@ trait BoneIKController extends StObject {
   var slerpAmount: Double = js.native
   
   /**
-    * Gets or sets the target mesh
+    * Gets or sets the target TransformNode
+    * Name kept as mesh for back compatibility
     */
-  var targetMesh: AbstractMesh = js.native
+  var targetMesh: TransformNode = js.native
   
   /**
     * Gets or sets the target position

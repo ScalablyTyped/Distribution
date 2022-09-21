@@ -54,7 +54,7 @@ object GetSegmentDetectionResponse {
     
     inline def setAudioMetadataUndefined: Self = StObject.set(x, "AudioMetadata", js.undefined)
     
-    inline def setAudioMetadataVarargs(value: AudioMetadata*): Self = StObject.set(x, "AudioMetadata", js.Array(value :_*))
+    inline def setAudioMetadataVarargs(value: AudioMetadata*): Self = StObject.set(x, "AudioMetadata", js.Array(value*))
     
     inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
@@ -68,13 +68,13 @@ object GetSegmentDetectionResponse {
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: SegmentDetection*): Self = StObject.set(x, "Segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SegmentDetection*): Self = StObject.set(x, "Segments", js.Array(value*))
     
     inline def setSelectedSegmentTypes(value: SegmentTypesInfo): Self = StObject.set(x, "SelectedSegmentTypes", value.asInstanceOf[js.Any])
     
     inline def setSelectedSegmentTypesUndefined: Self = StObject.set(x, "SelectedSegmentTypes", js.undefined)
     
-    inline def setSelectedSegmentTypesVarargs(value: SegmentTypeInfo*): Self = StObject.set(x, "SelectedSegmentTypes", js.Array(value :_*))
+    inline def setSelectedSegmentTypesVarargs(value: SegmentTypeInfo*): Self = StObject.set(x, "SelectedSegmentTypes", js.Array(value*))
     
     inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
@@ -84,6 +84,6 @@ object GetSegmentDetectionResponse {
     
     inline def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
     
-    inline def setVideoMetadataVarargs(value: VideoMetadata*): Self = StObject.set(x, "VideoMetadata", js.Array(value :_*))
+    inline def setVideoMetadataVarargs(value: VideoMetadata*): Self = StObject.set(x, "VideoMetadata", js.Array(value*))
   }
 }

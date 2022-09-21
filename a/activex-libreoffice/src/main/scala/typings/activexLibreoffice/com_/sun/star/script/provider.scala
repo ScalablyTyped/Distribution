@@ -164,14 +164,14 @@ object provider {
       getName: () => String,
       getScript: String => XScript,
       getType: () => Double,
-      getValue: String => js.Any,
+      getValue: String => Any,
       hasChildNodes: () => Boolean,
       hasMethod: String => Boolean,
       hasProperty: String => Boolean,
-      invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
-      queryInterface: `type` => js.Any,
+      invoke: (String, SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
-      setValue: (String, js.Any) => Unit
+      setValue: (String, Any) => Unit
     ): ScriptProvider = {
       val __obj = js.Dynamic.literal(ChildNodes = ChildNodes.asInstanceOf[js.Any], Introspection = Introspection.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getChildNodes = js.Any.fromFunction0(getChildNodes), getIntrospection = js.Any.fromFunction0(getIntrospection), getName = js.Any.fromFunction0(getName), getScript = js.Any.fromFunction1(getScript), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction1(getValue), hasChildNodes = js.Any.fromFunction0(hasChildNodes), hasMethod = js.Any.fromFunction1(hasMethod), hasProperty = js.Any.fromFunction1(hasProperty), invoke = js.Any.fromFunction4(invoke), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValue = js.Any.fromFunction2(setValue))
       __obj.asInstanceOf[ScriptProvider]
@@ -212,7 +212,7 @@ object provider {
       getRootStorageURI: () => String,
       getScriptURI: String => String,
       getStorageURI: String => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): ScriptURIHelper = {
       val __obj = js.Dynamic.literal(RootStorageURI = RootStorageURI.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), create = js.Any.fromFunction2(create), getRootStorageURI = js.Any.fromFunction0(getRootStorageURI), getScriptURI = js.Any.fromFunction1(getScriptURI), getStorageURI = js.Any.fromFunction1(getStorageURI), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -239,17 +239,17 @@ object provider {
       * @throws com::sun::star::reflection::InvocationTargetException if and error occurs while attempting to invoke a script the information is captured. If the
       */
     def invoke(
-      aParams: SeqEquiv[js.Any],
+      aParams: SeqEquiv[Any],
       aOutParamIndex: js.Array[SeqEquiv[Double]],
-      aOutParam: js.Array[SeqEquiv[js.Any]]
-    ): js.Any
+      aOutParam: js.Array[SeqEquiv[Any]]
+    ): Any
   }
   object XScript {
     
     inline def apply(
       acquire: () => Unit,
-      invoke: (SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
-      queryInterface: `type` => js.Any,
+      invoke: (SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XScript = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), invoke = js.Any.fromFunction3(invoke), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -258,7 +258,7 @@ object provider {
     
     extension [Self <: XScript](x: Self) {
       
-      inline def setInvoke(value: (SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
+      inline def setInvoke(value: (SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
     }
   }
   
@@ -272,19 +272,19 @@ object provider {
     
     /**
       * Obtain the component context which the script can use to create other uno components
-      * @returns {@link com.sun.star.uno.XComponentContext} interface
+      * @returns interface
       */
     val ComponentContext: XComponentContext
     
     /**
       * Obtain the desktop reference on which the script can operate
-      * @returns {@link com.sun.star.frame.XDesktop} interface
+      * @returns interface
       */
     val Desktop: XDesktop
     
     /**
       * Obtain the document reference on which the script can operate
-      * @returns {@link com.sun.star.frame.XModel} interface
+      * @returns interface
       */
     val Document: XModel
     
@@ -303,19 +303,19 @@ object provider {
     
     /**
       * Obtain the component context which the script can use to create other uno components
-      * @returns {@link com.sun.star.uno.XComponentContext} interface
+      * @returns interface
       */
     def getComponentContext(): XComponentContext
     
     /**
       * Obtain the desktop reference on which the script can operate
-      * @returns {@link com.sun.star.frame.XDesktop} interface
+      * @returns interface
       */
     def getDesktop(): XDesktop
     
     /**
       * Obtain the document reference on which the script can operate
-      * @returns {@link com.sun.star.frame.XModel} interface
+      * @returns interface
       */
     def getDocument(): XModel
     
@@ -344,7 +344,7 @@ object provider {
       getDesktop: () => XDesktop,
       getDocument: () => XModel,
       getInvocationContext: () => XScriptInvocationContext,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XScriptContext = {
       val __obj = js.Dynamic.literal(ComponentContext = ComponentContext.asInstanceOf[js.Any], Desktop = Desktop.asInstanceOf[js.Any], Document = Document.asInstanceOf[js.Any], InvocationContext = InvocationContext.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getComponentContext = js.Any.fromFunction0(getComponentContext), getDesktop = js.Any.fromFunction0(getDesktop), getDocument = js.Any.fromFunction0(getDocument), getInvocationContext = js.Any.fromFunction0(getInvocationContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -389,7 +389,7 @@ object provider {
     inline def apply(
       acquire: () => Unit,
       getScript: String => XScript,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XScriptProvider = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getScript = js.Any.fromFunction1(getScript), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -413,14 +413,14 @@ object provider {
       * @returns an object implementing {@link com.sun.star.script.provider.XScriptProvider}
       * @throws com::sun::star::lang::IllegalArgumentException if illegal or unknown context is passed
       */
-    def createScriptProvider(Context: js.Any): XScriptProvider
+    def createScriptProvider(Context: Any): XScriptProvider
   }
   object XScriptProviderFactory {
     
     inline def apply(
       acquire: () => Unit,
-      createScriptProvider: js.Any => XScriptProvider,
-      queryInterface: `type` => js.Any,
+      createScriptProvider: Any => XScriptProvider,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XScriptProviderFactory = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createScriptProvider = js.Any.fromFunction1(createScriptProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -429,7 +429,7 @@ object provider {
     
     extension [Self <: XScriptProviderFactory](x: Self) {
       
-      inline def setCreateScriptProvider(value: js.Any => XScriptProvider): Self = StObject.set(x, "createScriptProvider", js.Any.fromFunction1(value))
+      inline def setCreateScriptProvider(value: Any => XScriptProvider): Self = StObject.set(x, "createScriptProvider", js.Any.fromFunction1(value))
     }
   }
   
@@ -456,7 +456,7 @@ object provider {
       ScriptProvider: XScriptProvider,
       acquire: () => Unit,
       getScriptProvider: () => XScriptProvider,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XScriptProviderSupplier = {
       val __obj = js.Dynamic.literal(ScriptProvider = ScriptProvider.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getScriptProvider = js.Any.fromFunction0(getScriptProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -512,7 +512,7 @@ object provider {
       getRootStorageURI: () => String,
       getScriptURI: String => String,
       getStorageURI: String => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XScriptURIHelper = {
       val __obj = js.Dynamic.literal(RootStorageURI = RootStorageURI.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getRootStorageURI = js.Any.fromFunction0(getRootStorageURI), getScriptURI = js.Any.fromFunction1(getScriptURI), getStorageURI = js.Any.fromFunction1(getStorageURI), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

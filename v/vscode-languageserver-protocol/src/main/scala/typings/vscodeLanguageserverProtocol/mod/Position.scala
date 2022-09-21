@@ -15,10 +15,13 @@ object Position {
     * @param line The position's line.
     * @param character The position's character.
     */
-  inline def create(line: Double, character: Double): typings.vscodeLanguageserverTypes.mod.Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Position]
+  inline def create(
+    line: typings.vscodeLanguageserverTypes.mod.uinteger,
+    character: typings.vscodeLanguageserverTypes.mod.uinteger
+  ): typings.vscodeLanguageserverTypes.mod.Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Position]
   
   /**
-    * Checks whether the given liternal conforms to the [Position](#Position) interface.
+    * Checks whether the given literal conforms to the [Position](#Position) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
 }

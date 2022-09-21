@@ -95,7 +95,7 @@ object QuotaUser {
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRangeVarargs(value: String*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: String*): Self = StObject.set(x, "range", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

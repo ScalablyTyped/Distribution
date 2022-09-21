@@ -2,7 +2,7 @@ package typings.ethereumjsVm
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bnJs.mod.^
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object eeiMod {
   
   @JSImport("ethereumjs-vm/dist/evm/eei", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with EEI {
     def this(
@@ -36,7 +36,7 @@ object eeiMod {
     
     var _gasLeft: ^ = js.native
     
-    /* private */ var _getReturnCode: js.Any = js.native
+    /* private */ var _getReturnCode: Any = js.native
     
     var _lastReturned: Buffer = js.native
     
@@ -284,7 +284,7 @@ object eeiMod {
     
     var address: Buffer
     
-    var block: js.Any
+    var block: Any
     
     var blockchain: typings.ethereumjsBlockchain.mod.default
     
@@ -312,7 +312,7 @@ object eeiMod {
     
     inline def apply(
       address: Buffer,
-      block: js.Any,
+      block: Any,
       blockchain: typings.ethereumjsBlockchain.mod.default,
       callData: Buffer,
       callValue: ^,
@@ -333,7 +333,7 @@ object eeiMod {
       
       inline def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
       inline def setBlockchain(value: typings.ethereumjsBlockchain.mod.default): Self = StObject.set(x, "blockchain", value.asInstanceOf[js.Any])
       
@@ -361,7 +361,7 @@ object eeiMod {
   
   trait RunResult extends StObject {
     
-    var logs: js.Any
+    var logs: Any
     
     var returnValue: js.UndefOr[Buffer] = js.undefined
     
@@ -372,14 +372,14 @@ object eeiMod {
   }
   object RunResult {
     
-    inline def apply(logs: js.Any, selfdestruct: StringDictionary[Buffer]): RunResult = {
+    inline def apply(logs: Any, selfdestruct: StringDictionary[Buffer]): RunResult = {
       val __obj = js.Dynamic.literal(logs = logs.asInstanceOf[js.Any], selfdestruct = selfdestruct.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunResult]
     }
     
     extension [Self <: RunResult](x: Self) {
       
-      inline def setLogs(value: js.Any): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: Any): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
       inline def setReturnValue(value: Buffer): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
       

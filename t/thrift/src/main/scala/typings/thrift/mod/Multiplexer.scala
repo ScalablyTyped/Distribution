@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "Multiplexer")
 @js.native
-class Multiplexer () extends StObject {
+open class Multiplexer () extends StObject {
   
   def createClient[TClient](serviceName: String, client: TClientConstructor[TClient], connection: Connection): TClient = js.native
 }

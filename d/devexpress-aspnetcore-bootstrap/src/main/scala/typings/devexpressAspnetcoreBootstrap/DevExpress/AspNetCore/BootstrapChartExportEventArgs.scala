@@ -10,7 +10,7 @@ trait BootstrapChartExportEventArgs
   
   var cancel: Boolean
   
-  val data: js.Any
+  val data: Any
   
   val fileName: String
   
@@ -20,9 +20,9 @@ object BootstrapChartExportEventArgs {
   
   inline def apply(
     cancel: Boolean,
-    component: js.Any,
-    data: js.Any,
-    element: js.Any,
+    component: Any,
+    data: Any,
+    element: Any,
     fileName: String,
     format: String,
     sender: Control
@@ -35,7 +35,7 @@ object BootstrapChartExportEventArgs {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

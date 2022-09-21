@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set({ ... })". */
+/** An interface for updating data on the HyperlinkCollection object, for use in `hyperlinkCollection.set({ ... })`. */
 trait HyperlinkCollectionUpdateData extends StObject {
   
   var items: js.UndefOr[js.Array[HyperlinkData]] = js.undefined
@@ -22,6 +22,6 @@ object HyperlinkCollectionUpdateData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: HyperlinkData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: HyperlinkData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

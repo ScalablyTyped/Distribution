@@ -37,7 +37,7 @@ object USBAlternateInterface {
     
     inline def setEndpoints(value: js.Array[USBEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    inline def setEndpointsVarargs(value: USBEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: USBEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
     
     inline def setInterfaceClass(value: Double): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,7 @@ object SymbolTableElement {
     
     inline def setInfos(value: js.Array[SymbolTableElementType]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    inline def setInfosVarargs(value: SymbolTableElementType*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: SymbolTableElementType*): Self = StObject.set(x, "infos", js.Array(value*))
     
     inline def setLegendType(value: String): Self = StObject.set(x, "legendType", value.asInstanceOf[js.Any])
     

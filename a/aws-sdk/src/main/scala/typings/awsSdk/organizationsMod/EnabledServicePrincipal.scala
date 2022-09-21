@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnabledServicePrincipal extends StObject {
   
   /**
-    * The date that the service principal was enabled for integration with AWS Organizations.
+    * The date that the service principal was enabled for integration with Organizations.
     */
-  var DateEnabled: js.UndefOr[Timestamp] = js.undefined
+  var DateEnabled: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the service principal. This is typically in the form of a URL, such as:  servicename.amazonaws.com.
@@ -25,7 +25,7 @@ object EnabledServicePrincipal {
   
   extension [Self <: EnabledServicePrincipal](x: Self) {
     
-    inline def setDateEnabled(value: Timestamp): Self = StObject.set(x, "DateEnabled", value.asInstanceOf[js.Any])
+    inline def setDateEnabled(value: js.Date): Self = StObject.set(x, "DateEnabled", value.asInstanceOf[js.Any])
     
     inline def setDateEnabledUndefined: Self = StObject.set(x, "DateEnabled", js.undefined)
     

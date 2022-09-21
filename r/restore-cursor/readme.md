@@ -1,7 +1,7 @@
 
 # Scala.js typings for restore-cursor
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Gracefully restore the CLI cursor on exit
@@ -10,10 +10,10 @@ Gracefully restore the CLI cursor on exit
 | ------------------ | :-------------: |
 | Full name          | restore-cursor |
 | Keywords           | exit, quit, process, graceful, shutdown, sigterm, sigint, terminate, kill, stop, cli, cursor, ansi, show, term, terminal, console, tty, shell, command-line |
-| # releases         | 3 |
-| # dependents       | 88 |
-| # downloads        | 841757697 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2397113633333333E8 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/restore-cursor#readme)

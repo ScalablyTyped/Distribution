@@ -36,7 +36,7 @@ object mod {
   inline def objCtor(options: Through2MapOptions): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("objCtor")(options.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
   inline def objCtor(options: Through2MapOptions, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("objCtor")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
   
-  type MapCallback = js.Function2[/* chunk */ js.Any, /* index */ Double, Unit]
+  type MapCallback = js.Function2[/* chunk */ Any, /* index */ Double, Unit]
   
   trait Through2MapOptions
     extends StObject

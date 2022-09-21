@@ -20,7 +20,7 @@ trait AllJoynBusAttachment extends StObject {
   /** This property returns an AllJoynAboutData object containing the descriptive data that the platform may advertise on behalf of the app. */
   var aboutData: AllJoynAboutData = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_authenticationcomplete(
     `type`: authenticationcomplete,
@@ -85,7 +85,7 @@ trait AllJoynBusAttachment extends StObject {
     */
   def pingAsync(uniqueName: String): IPromiseWithIAsyncOperation[Double] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_authenticationcomplete(
     `type`: authenticationcomplete,

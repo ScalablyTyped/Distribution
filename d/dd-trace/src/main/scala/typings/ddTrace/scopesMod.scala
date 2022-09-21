@@ -4,6 +4,7 @@ import typings.ddTrace.ddTraceStrings.async_hooks
 import typings.ddTrace.ddTraceStrings.async_local_storage
 import typings.ddTrace.ddTraceStrings.async_resource
 import typings.ddTrace.ddTraceStrings.noop
+import typings.ddTrace.ddTraceStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,4 +34,9 @@ object scopesMod {
   @js.native
   def NOOP: noop = js.native
   inline def NOOP_=(x: noop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOOP")(x.asInstanceOf[js.Any])
+  
+  @JSImport("dd-trace/ext/scopes", "SYNC")
+  @js.native
+  def SYNC: sync = js.native
+  inline def SYNC_=(x: sync): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNC")(x.asInstanceOf[js.Any])
 }

@@ -8,7 +8,7 @@ trait GanttColumnResizeEvent
   extends StObject
      with GanttEvent {
   
-  var column: js.UndefOr[js.Any] = js.undefined
+  var column: js.UndefOr[Any] = js.undefined
   
   var newWidth: js.UndefOr[Double] = js.undefined
   
@@ -23,7 +23,7 @@ object GanttColumnResizeEvent {
   
   extension [Self <: GanttColumnResizeEvent](x: Self) {
     
-    inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     

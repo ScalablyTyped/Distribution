@@ -9,7 +9,7 @@ object downloaderMod {
   
   @JSImport("webdriver-manager/built/lib/files/downloader", "Downloader")
   @js.native
-  class Downloader () extends StObject
+  open class Downloader () extends StObject
   /* static members */
   object Downloader {
     

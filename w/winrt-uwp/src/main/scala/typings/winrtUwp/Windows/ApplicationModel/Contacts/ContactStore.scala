@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ContactStore extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_contactchanged(`type`: contactchanged, listener: TypedEventHandler[ContactStore, ContactChangedEventArgs]): Unit = js.native
   
@@ -42,7 +42,7 @@ trait ContactStore extends StObject {
     * Asynchronously returns the list of ContactList objects.
     * @return The list of ContactList objects.
     */
-  def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findContactListsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Retrieves the list of all contacts in the contact store.
@@ -94,7 +94,7 @@ trait ContactStore extends StObject {
   @JSName("oncontactchanged")
   var oncontactchanged_Original: TypedEventHandler[ContactStore, ContactChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_contactchanged(`type`: contactchanged, listener: TypedEventHandler[ContactStore, ContactChangedEventArgs]): Unit = js.native
 }

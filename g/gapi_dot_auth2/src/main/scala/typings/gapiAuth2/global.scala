@@ -25,30 +25,36 @@ object global {
         */
       @JSGlobal("gapi.auth2.GoogleAuth")
       @js.native
-      class GoogleAuth ()
+      open class GoogleAuth ()
         extends StObject
            with typings.gapiAuth2.gapi.auth2.GoogleAuth
       
+      @JSGlobal("gapi.auth2.GoogleAuthBase")
+      @js.native
+      open class GoogleAuthBase ()
+        extends StObject
+           with typings.gapiAuth2.gapi.auth2.GoogleAuthBase
+      
       @JSGlobal("gapi.auth2.SigninOptionsBuilder")
       @js.native
-      class SigninOptionsBuilder ()
+      open class SigninOptionsBuilder ()
         extends StObject
            with typings.gapiAuth2.gapi.auth2.SigninOptionsBuilder {
         
         /* CompleteClass */
-        override def setAppPackageName(name: String): js.Any = js.native
+        override def setAppPackageName(name: String): Any = js.native
         
         /* CompleteClass */
-        override def setFetchBasicProfile(fetch: Boolean): js.Any = js.native
+        override def setFetchBasicProfile(fetch: Boolean): Any = js.native
         
         /* CompleteClass */
-        override def setLoginHint(hint: String): js.Any = js.native
+        override def setLoginHint(hint: String): Any = js.native
         
         /* CompleteClass */
-        override def setPrompt(prompt: String): js.Any = js.native
+        override def setPrompt(prompt: String): Any = js.native
         
         /* CompleteClass */
-        override def setScope(scope: String): js.Any = js.native
+        override def setScope(scope: String): Any = js.native
       }
       
       /**
@@ -75,7 +81,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def render(id: js.Any, options: Apppackagename): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def render(id: Any, options: Apppackagename): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

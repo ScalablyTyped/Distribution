@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.Dimension")
 @js.native
-class Dimension ()
+open class Dimension ()
   extends StObject
      with typings.igniteUi.Infragistics.Dimension {
   

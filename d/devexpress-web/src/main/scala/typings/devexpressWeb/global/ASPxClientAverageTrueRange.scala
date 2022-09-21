@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAverageTrueRange")
 @js.native
-class ASPxClientAverageTrueRange ()
+open class ASPxClientAverageTrueRange ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAverageTrueRange {
   

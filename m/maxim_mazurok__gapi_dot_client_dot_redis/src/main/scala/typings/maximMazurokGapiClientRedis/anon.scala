@@ -4,6 +4,7 @@ import typings.maximMazurokGapiClientRedis.gapi.client.redis.ExportInstanceReque
 import typings.maximMazurokGapiClientRedis.gapi.client.redis.FailoverInstanceRequest
 import typings.maximMazurokGapiClientRedis.gapi.client.redis.ImportInstanceRequest
 import typings.maximMazurokGapiClientRedis.gapi.client.redis.Instance
+import typings.maximMazurokGapiClientRedis.gapi.client.redis.RescheduleMaintenanceRequest
 import typings.maximMazurokGapiClientRedis.gapi.client.redis.UpgradeInstanceRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -443,7 +444,10 @@ object anon {
     /** Selector specifying which fields to include in a partial response. */
     var fields: js.UndefOr[String] = js.undefined
     
-    /** The standard list filter. */
+    /**
+      * A filter to narrow down results to a preferred subset. The filtering language accepts strings like `"displayName=tokyo"`, and is documented in more detail in
+      * [AIP-160](https://google.aip.dev/160).
+      */
     var filter: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -455,10 +459,10 @@ object anon {
     /** OAuth 2.0 token for the current user. */
     var oauth_token: js.UndefOr[String] = js.undefined
     
-    /** The standard list page size. */
+    /** The maximum number of results to return. If not set, the service selects a default. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
-    /** The standard list page token. */
+    /** A page token received from the `next_page_token` field in the response. Send that page token to receive the subsequent page. */
     var pageToken: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
@@ -899,7 +903,7 @@ object anon {
     
     /**
       * Required. Mask of fields to update. At least one path must be supplied in this field. The elements of the repeated paths field may only include these fields from Instance: *
-      * `displayName` * `labels` * `memorySizeGb` * `redisConfig`
+      * `displayName` * `labels` * `memorySizeGb` * `redisConfig` * `replica_count`
       */
     var updateMask: js.UndefOr[String] = js.undefined
     
@@ -1011,7 +1015,7 @@ object anon {
     
     /**
       * Required. Mask of fields to update. At least one path must be supplied in this field. The elements of the repeated paths field may only include these fields from Instance: *
-      * `displayName` * `labels` * `memorySizeGb` * `redisConfig`
+      * `displayName` * `labels` * `memorySizeGb` * `redisConfig` * `replica_count`
       */
     var updateMask: js.UndefOr[String] = js.undefined
     
@@ -1116,7 +1120,7 @@ object anon {
     var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: UpgradeInstanceRequest
+    var resource: RescheduleMaintenanceRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
     var uploadType: js.UndefOr[String] = js.undefined
@@ -1126,12 +1130,113 @@ object anon {
   }
   object Resource {
     
-    inline def apply(name: String, resource: UpgradeInstanceRequest): Resource = {
+    inline def apply(name: String, resource: RescheduleMaintenanceRequest): Resource = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resource]
     }
     
     extension [Self <: Resource](x: Self) {
+      
+      inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+      
+      inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+      
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      
+      inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+      
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+      
+      inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+      
+      inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      
+      inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+      
+      inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+      
+      inline def setResource(value: RescheduleMaintenanceRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+      
+      inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+      
+      inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+      
+      inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    }
+  }
+  
+  trait UploadType extends StObject {
+    
+    /** V1 error format. */
+    @JSName("$.xgafv")
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
+    
+    /** OAuth access token. */
+    var access_token: js.UndefOr[String] = js.undefined
+    
+    /** Data format for response. */
+    var alt: js.UndefOr[String] = js.undefined
+    
+    /** JSONP */
+    var callback: js.UndefOr[String] = js.undefined
+    
+    /** Selector specifying which fields to include in a partial response. */
+    var fields: js.UndefOr[String] = js.undefined
+    
+    /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /** Required. Redis instance resource name using the form: `projects/{project_id}/locations/{location_id}/instances/{instance_id}` where `location_id` refers to a GCP region. */
+    var name: String
+    
+    /** OAuth 2.0 token for the current user. */
+    var oauth_token: js.UndefOr[String] = js.undefined
+    
+    /** Returns response with indentations and line breaks. */
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
+    
+    /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
+    var quotaUser: js.UndefOr[String] = js.undefined
+    
+    /** Request body */
+    var resource: UpgradeInstanceRequest
+    
+    /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+    var uploadType: js.UndefOr[String] = js.undefined
+    
+    /** Upload protocol for media (e.g. "raw", "multipart"). */
+    var upload_protocol: js.UndefOr[String] = js.undefined
+  }
+  object UploadType {
+    
+    inline def apply(name: String, resource: UpgradeInstanceRequest): UploadType = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UploadType]
+    }
+    
+    extension [Self <: UploadType](x: Self) {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       

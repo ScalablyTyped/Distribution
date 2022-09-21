@@ -5,81 +5,72 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Cloud SQL instance resource.
-  */
 trait SchemaDatabaseInstance extends StObject {
   
   /**
-    * FIRST_GEN: First Generation instance. MySQL only. SECOND_GEN: Second
-    * Generation instance or PostgreSQL instance. EXTERNAL: A database server
-    * that is not managed by Google. This property is read-only; use the tier
-    * property in the settings object to determine the database type and Second
-    * or First Generation.
+    * List all maintenance versions applicable on the instance
     */
-  var backendType: js.UndefOr[String] = js.undefined
+  var availableMaintenanceVersions: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * The backend type. `SECOND_GEN`: Cloud SQL database instance. `EXTERNAL`: A database server that is not managed by Google. This property is read-only; use the `tier` property in the `settings` object to determine the database type.
+    */
+  var backendType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Connection name of the Cloud SQL instance used in connection strings.
     */
-  var connectionName: js.UndefOr[String] = js.undefined
+  var connectionName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The current disk usage of the instance in bytes. This property has been
-    * deprecated. Users should use the
-    * &quot;cloudsql.googleapis.com/database/disk/bytes_used&quot; metric in
-    * Cloud Monitoring API instead. Please see this announcement for details.
+    * Output only. The time when the instance was created in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example `2012-11-15T16:19:00.094Z`.
     */
-  var currentDiskSize: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The database engine type and version. The databaseVersion field can not
-    * be changed after instance creation. MySQL Second Generation instances:
-    * MYSQL_5_7 (default) or MYSQL_5_6. PostgreSQL instances: POSTGRES_9_6
-    * (default) or POSTGRES_11 Beta. MySQL First Generation instances:
-    * MYSQL_5_6 (default) or MYSQL_5_5
+    * The current disk usage of the instance in bytes. This property has been deprecated. Use the "cloudsql.googleapis.com/database/disk/bytes_used" metric in Cloud Monitoring API instead. Please see [this announcement](https://groups.google.com/d/msg/google-cloud-sql-announce/I_7-F9EBhT0/BtvFtdFeAgAJ) for details.
     */
-  var databaseVersion: js.UndefOr[String] = js.undefined
+  var currentDiskSize: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Disk encryption configuration specific to an instance. Applies only to
-    * Second Generation instances.
+    * Output only. Stores the current database version running on the instance including minor version such as `MYSQL_8_0_18`.
+    */
+  var databaseInstalledVersion: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The database engine type and version. The `databaseVersion` field cannot be changed after instance creation.
+    */
+  var databaseVersion: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Disk encryption configuration specific to an instance.
     */
   var diskEncryptionConfiguration: js.UndefOr[SchemaDiskEncryptionConfiguration] = js.undefined
   
   /**
-    * Disk encryption status specific to an instance. Applies only to Second
-    * Generation instances.
+    * Disk encryption status specific to an instance.
     */
   var diskEncryptionStatus: js.UndefOr[SchemaDiskEncryptionStatus] = js.undefined
   
   /**
-    * This field is deprecated and will be removed from a future version of the
-    * API. Use the settings.settingsVersion field instead.
+    * This field is deprecated and will be removed from a future version of the API. Use the `settings.settingsVersion` field instead.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name and status of the failover replica. This property is applicable
-    * only to Second Generation instances.
+    * The name and status of the failover replica.
     */
-  var failoverReplica: js.UndefOr[Available] = js.undefined
+  var failoverReplica: js.UndefOr[Available | Null] = js.undefined
   
   /**
-    * The Compute Engine zone that the instance is currently serving from. This
-    * value could be different from the zone that was specified when the
-    * instance was created if the instance has failed over to its secondary
-    * zone.
+    * The Compute Engine zone that the instance is currently serving from. This value could be different from the zone that was specified when the instance was created if the instance has failed over to its secondary zone. WARNING: Changing this might restart the instance.
     */
-  var gceZone: js.UndefOr[String] = js.undefined
+  var gceZone: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The instance type. This can be one of the following. CLOUD_SQL_INSTANCE:
-    * A Cloud SQL instance that is not replicating from a master.
-    * ON_PREMISES_INSTANCE: An instance running on the customer&#39;s premises.
-    * READ_REPLICA_INSTANCE: A Cloud SQL instance configured as a read-replica.
+    * The instance type.
     */
-  var instanceType: js.UndefOr[String] = js.undefined
+  var instanceType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The assigned IP addresses for the instance.
@@ -87,31 +78,34 @@ trait SchemaDatabaseInstance extends StObject {
   var ipAddresses: js.UndefOr[js.Array[SchemaIpMapping]] = js.undefined
   
   /**
-    * The IPv6 address assigned to the instance. This property is applicable
-    * only to First Generation instances.
+    * The IPv6 address assigned to the instance. (Deprecated) This property was applicable only to First Generation instances.
     */
-  var ipv6Address: js.UndefOr[String] = js.undefined
+  var ipv6Address: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * This is always sql#instance.
+    * This is always `sql#instance`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name of the instance which will act as master in the replication
-    * setup.
+    * The current software version on the instance.
     */
-  var masterInstanceName: js.UndefOr[String] = js.undefined
+  var maintenanceVersion: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The name of the instance which will act as primary in the replication setup.
+    */
+  var masterInstanceName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The maximum disk size of the instance in bytes.
     */
-  var maxDiskSize: js.UndefOr[String] = js.undefined
+  var maxDiskSize: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Name of the Cloud SQL instance. This does not include the project ID.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Configuration specific to on-premises instances.
@@ -119,19 +113,19 @@ trait SchemaDatabaseInstance extends StObject {
   var onPremisesConfiguration: js.UndefOr[SchemaOnPremisesConfiguration] = js.undefined
   
   /**
-    * The project ID of the project containing the Cloud SQL instance. The
-    * Google apps domain is prefixed if applicable.
+    * This field represents the report generated by the proactive database wellness job for OutOfDisk issues. * Writers: * the proactive database wellness job for OOD. * Readers: * the proactive database wellness job
     */
-  var project: js.UndefOr[String] = js.undefined
+  var outOfDiskReport: js.UndefOr[SchemaSqlOutOfDiskReport] = js.undefined
   
   /**
-    * The geographical region. Can be us-central (FIRST_GEN instances only),
-    * us-central1 (SECOND_GEN instances only), asia-east1 or europe-west1.
-    * Defaults to us-central or us-central1 depending on the instance type
-    * (First Generation or Second Generation). The region can not be changed
-    * after instance creation.
+    * The project ID of the project containing the Cloud SQL instance. The Google apps domain is prefixed if applicable.
     */
-  var region: js.UndefOr[String] = js.undefined
+  var project: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The geographical region. Can be: * `us-central` (`FIRST_GEN` instances only) * `us-central1` (`SECOND_GEN` instances only) * `asia-east1` or `europe-west1`. Defaults to `us-central` or `us-central1` depending on the instance type. The region cannot be changed after instance creation.
+    */
+  var region: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Configuration specific to failover replicas and read replicas.
@@ -141,12 +135,32 @@ trait SchemaDatabaseInstance extends StObject {
   /**
     * The replicas of the instance.
     */
-  var replicaNames: js.UndefOr[js.Array[String]] = js.undefined
+  var replicaNames: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Initial root password. Use only on creation. You must set root passwords before you can connect to PostgreSQL instances.
+    */
+  var rootPassword: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The status indicating if instance satisfiesPzs. Reserved for future use.
+    */
+  var satisfiesPzs: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * The start time of any upcoming scheduled maintenance for this instance.
+    */
+  var scheduledMaintenance: js.UndefOr[SchemaSqlScheduledMaintenance] = js.undefined
+  
+  /**
+    * The Compute Engine zone that the failover instance is currently serving from for a regional instance. This value could be different from the zone that was specified when the instance was created if the instance has failed over to its secondary/failover zone.
+    */
+  var secondaryGceZone: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The URI of this resource.
     */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String | Null] = js.undefined
   
   /**
     * SSL configuration.
@@ -154,10 +168,9 @@ trait SchemaDatabaseInstance extends StObject {
   var serverCaCert: js.UndefOr[SchemaSslCert] = js.undefined
   
   /**
-    * The service account email address assigned to the instance. This property
-    * is applicable only to Second Generation instances.
+    * The service account email address assigned to the instance. \This property is read-only.
     */
-  var serviceAccountEmailAddress: js.UndefOr[String] = js.undefined
+  var serviceAccountEmailAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The user settings.
@@ -165,19 +178,14 @@ trait SchemaDatabaseInstance extends StObject {
   var settings: js.UndefOr[SchemaSettings] = js.undefined
   
   /**
-    * The current serving state of the Cloud SQL instance. This can be one of
-    * the following. RUNNABLE: The instance is running, or is ready to run when
-    * accessed. SUSPENDED: The instance is not available, for example due to
-    * problems with billing. PENDING_CREATE: The instance is being created.
-    * MAINTENANCE: The instance is down for maintenance. FAILED: The instance
-    * creation failed. UNKNOWN_STATE: The state of the instance is unknown.
+    * The current serving state of the Cloud SQL instance.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If the instance state is SUSPENDED, the reason for the suspension.
     */
-  var suspensionReason: js.UndefOr[js.Array[String]] = js.undefined
+  var suspensionReason: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaDatabaseInstance {
   
@@ -188,19 +196,47 @@ object SchemaDatabaseInstance {
   
   extension [Self <: SchemaDatabaseInstance](x: Self) {
     
+    inline def setAvailableMaintenanceVersions(value: js.Array[String]): Self = StObject.set(x, "availableMaintenanceVersions", value.asInstanceOf[js.Any])
+    
+    inline def setAvailableMaintenanceVersionsNull: Self = StObject.set(x, "availableMaintenanceVersions", null)
+    
+    inline def setAvailableMaintenanceVersionsUndefined: Self = StObject.set(x, "availableMaintenanceVersions", js.undefined)
+    
+    inline def setAvailableMaintenanceVersionsVarargs(value: String*): Self = StObject.set(x, "availableMaintenanceVersions", js.Array(value*))
+    
     inline def setBackendType(value: String): Self = StObject.set(x, "backendType", value.asInstanceOf[js.Any])
+    
+    inline def setBackendTypeNull: Self = StObject.set(x, "backendType", null)
     
     inline def setBackendTypeUndefined: Self = StObject.set(x, "backendType", js.undefined)
     
     inline def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
+    inline def setConnectionNameNull: Self = StObject.set(x, "connectionName", null)
+    
     inline def setConnectionNameUndefined: Self = StObject.set(x, "connectionName", js.undefined)
+    
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setCurrentDiskSize(value: String): Self = StObject.set(x, "currentDiskSize", value.asInstanceOf[js.Any])
     
+    inline def setCurrentDiskSizeNull: Self = StObject.set(x, "currentDiskSize", null)
+    
     inline def setCurrentDiskSizeUndefined: Self = StObject.set(x, "currentDiskSize", js.undefined)
     
+    inline def setDatabaseInstalledVersion(value: String): Self = StObject.set(x, "databaseInstalledVersion", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseInstalledVersionNull: Self = StObject.set(x, "databaseInstalledVersion", null)
+    
+    inline def setDatabaseInstalledVersionUndefined: Self = StObject.set(x, "databaseInstalledVersion", js.undefined)
+    
     inline def setDatabaseVersion(value: String): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseVersionNull: Self = StObject.set(x, "databaseVersion", null)
     
     inline def setDatabaseVersionUndefined: Self = StObject.set(x, "databaseVersion", js.undefined)
     
@@ -214,17 +250,25 @@ object SchemaDatabaseInstance {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setFailoverReplica(value: Available): Self = StObject.set(x, "failoverReplica", value.asInstanceOf[js.Any])
+    
+    inline def setFailoverReplicaNull: Self = StObject.set(x, "failoverReplica", null)
     
     inline def setFailoverReplicaUndefined: Self = StObject.set(x, "failoverReplica", js.undefined)
     
     inline def setGceZone(value: String): Self = StObject.set(x, "gceZone", value.asInstanceOf[js.Any])
     
+    inline def setGceZoneNull: Self = StObject.set(x, "gceZone", null)
+    
     inline def setGceZoneUndefined: Self = StObject.set(x, "gceZone", js.undefined)
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceTypeNull: Self = StObject.set(x, "instanceType", null)
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
@@ -232,25 +276,41 @@ object SchemaDatabaseInstance {
     
     inline def setIpAddressesUndefined: Self = StObject.set(x, "ipAddresses", js.undefined)
     
-    inline def setIpAddressesVarargs(value: SchemaIpMapping*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: SchemaIpMapping*): Self = StObject.set(x, "ipAddresses", js.Array(value*))
     
     inline def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6AddressNull: Self = StObject.set(x, "ipv6Address", null)
     
     inline def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
+    inline def setMaintenanceVersion(value: String): Self = StObject.set(x, "maintenanceVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceVersionNull: Self = StObject.set(x, "maintenanceVersion", null)
+    
+    inline def setMaintenanceVersionUndefined: Self = StObject.set(x, "maintenanceVersion", js.undefined)
+    
     inline def setMasterInstanceName(value: String): Self = StObject.set(x, "masterInstanceName", value.asInstanceOf[js.Any])
+    
+    inline def setMasterInstanceNameNull: Self = StObject.set(x, "masterInstanceName", null)
     
     inline def setMasterInstanceNameUndefined: Self = StObject.set(x, "masterInstanceName", js.undefined)
     
     inline def setMaxDiskSize(value: String): Self = StObject.set(x, "maxDiskSize", value.asInstanceOf[js.Any])
     
+    inline def setMaxDiskSizeNull: Self = StObject.set(x, "maxDiskSize", null)
+    
     inline def setMaxDiskSizeUndefined: Self = StObject.set(x, "maxDiskSize", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -258,11 +318,19 @@ object SchemaDatabaseInstance {
     
     inline def setOnPremisesConfigurationUndefined: Self = StObject.set(x, "onPremisesConfiguration", js.undefined)
     
+    inline def setOutOfDiskReport(value: SchemaSqlOutOfDiskReport): Self = StObject.set(x, "outOfDiskReport", value.asInstanceOf[js.Any])
+    
+    inline def setOutOfDiskReportUndefined: Self = StObject.set(x, "outOfDiskReport", js.undefined)
+    
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    
+    inline def setProjectNull: Self = StObject.set(x, "project", null)
     
     inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionNull: Self = StObject.set(x, "region", null)
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
@@ -272,11 +340,37 @@ object SchemaDatabaseInstance {
     
     inline def setReplicaNames(value: js.Array[String]): Self = StObject.set(x, "replicaNames", value.asInstanceOf[js.Any])
     
+    inline def setReplicaNamesNull: Self = StObject.set(x, "replicaNames", null)
+    
     inline def setReplicaNamesUndefined: Self = StObject.set(x, "replicaNames", js.undefined)
     
-    inline def setReplicaNamesVarargs(value: String*): Self = StObject.set(x, "replicaNames", js.Array(value :_*))
+    inline def setReplicaNamesVarargs(value: String*): Self = StObject.set(x, "replicaNames", js.Array(value*))
+    
+    inline def setRootPassword(value: String): Self = StObject.set(x, "rootPassword", value.asInstanceOf[js.Any])
+    
+    inline def setRootPasswordNull: Self = StObject.set(x, "rootPassword", null)
+    
+    inline def setRootPasswordUndefined: Self = StObject.set(x, "rootPassword", js.undefined)
+    
+    inline def setSatisfiesPzs(value: Boolean): Self = StObject.set(x, "satisfiesPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSatisfiesPzsNull: Self = StObject.set(x, "satisfiesPzs", null)
+    
+    inline def setSatisfiesPzsUndefined: Self = StObject.set(x, "satisfiesPzs", js.undefined)
+    
+    inline def setScheduledMaintenance(value: SchemaSqlScheduledMaintenance): Self = StObject.set(x, "scheduledMaintenance", value.asInstanceOf[js.Any])
+    
+    inline def setScheduledMaintenanceUndefined: Self = StObject.set(x, "scheduledMaintenance", js.undefined)
+    
+    inline def setSecondaryGceZone(value: String): Self = StObject.set(x, "secondaryGceZone", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryGceZoneNull: Self = StObject.set(x, "secondaryGceZone", null)
+    
+    inline def setSecondaryGceZoneUndefined: Self = StObject.set(x, "secondaryGceZone", js.undefined)
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    
+    inline def setSelfLinkNull: Self = StObject.set(x, "selfLink", null)
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
@@ -286,6 +380,8 @@ object SchemaDatabaseInstance {
     
     inline def setServiceAccountEmailAddress(value: String): Self = StObject.set(x, "serviceAccountEmailAddress", value.asInstanceOf[js.Any])
     
+    inline def setServiceAccountEmailAddressNull: Self = StObject.set(x, "serviceAccountEmailAddress", null)
+    
     inline def setServiceAccountEmailAddressUndefined: Self = StObject.set(x, "serviceAccountEmailAddress", js.undefined)
     
     inline def setSettings(value: SchemaSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
@@ -294,12 +390,16 @@ object SchemaDatabaseInstance {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setSuspensionReason(value: js.Array[String]): Self = StObject.set(x, "suspensionReason", value.asInstanceOf[js.Any])
     
+    inline def setSuspensionReasonNull: Self = StObject.set(x, "suspensionReason", null)
+    
     inline def setSuspensionReasonUndefined: Self = StObject.set(x, "suspensionReason", js.undefined)
     
-    inline def setSuspensionReasonVarargs(value: String*): Self = StObject.set(x, "suspensionReason", js.Array(value :_*))
+    inline def setSuspensionReasonVarargs(value: String*): Self = StObject.set(x, "suspensionReason", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  userId :number | undefined} & gitlab.gitlab/dist/types/core/infrastructure.BaseRequestOptions */
 trait userIdnumberundefinedBase
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var sudo: js.UndefOr[String | Double] = js.undefined
   

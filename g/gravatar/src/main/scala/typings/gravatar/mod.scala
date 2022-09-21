@@ -34,7 +34,7 @@ object mod {
     
     var format: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.undefined
+    var protocol: js.UndefOr[Protocol] = js.undefined
     
     var r: js.UndefOr[String] = js.undefined
     
@@ -77,7 +77,7 @@ object mod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
@@ -97,5 +97,23 @@ object mod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.gravatar.gravatarBooleans.`false`
+    - typings.gravatar.gravatarBooleans.`true`
+    - typings.gravatar.gravatarStrings.http
+    - typings.gravatar.gravatarStrings.https
+  */
+  trait Protocol extends StObject
+  object Protocol {
+    
+    inline def `false`: typings.gravatar.gravatarBooleans.`false` = false.asInstanceOf[typings.gravatar.gravatarBooleans.`false`]
+    
+    inline def http: typings.gravatar.gravatarStrings.http = "http".asInstanceOf[typings.gravatar.gravatarStrings.http]
+    
+    inline def https: typings.gravatar.gravatarStrings.https = "https".asInstanceOf[typings.gravatar.gravatarStrings.https]
+    
+    inline def `true`: typings.gravatar.gravatarBooleans.`true` = true.asInstanceOf[typings.gravatar.gravatarBooleans.`true`]
   }
 }

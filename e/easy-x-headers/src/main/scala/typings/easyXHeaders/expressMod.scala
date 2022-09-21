@@ -4,9 +4,6 @@ import typings.easyXHeaders.anon.Dotfiles
 import typings.easyXHeaders.httpMod.Server
 import typings.easyXHeaders.httpMod.ServerRequest
 import typings.easyXHeaders.httpMod.ServerResponse
-import typings.std.Date
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +25,7 @@ object expressMod {
     def apply(): Router = js.native
     @JSImport("express", "Router")
     @js.native
-    def apply(options: js.Any): Router = js.native
+    def apply(options: Any): Router = js.native
   }
   
   @JSImport("express", "static")
@@ -42,7 +39,7 @@ object expressMod {
        with typings.easyXHeaders.Express.Application {
     
     /* InferMemberOverrides */
-    override def apply(arg1: /* req */ Request, arg2: /* res */ Response, arg3: /* next */ js.Function): js.Any = js.native
+    override def apply(arg1: /* req */ Request, arg2: /* res */ Response, arg3: /* next */ js.Function): Any = js.native
     
     def configure(env0: String, env1: String, env2: String, env3: String, env4: String, fn: js.Function): Application = js.native
     def configure(env0: String, env1: String, env2: String, env3: String, fn: js.Function): Application = js.native
@@ -168,7 +165,7 @@ object expressMod {
       */
     def engine(ext: String, fn: js.Function): Application = js.native
     
-    def get(name: String): js.Any = js.native
+    def get(name: String): Any = js.native
     
     /**
       * Initialize the server.
@@ -179,8 +176,8 @@ object expressMod {
       */
     def init(): Unit = js.native
     
-    def listen(handle: js.Any): Server = js.native
-    def listen(handle: js.Any, listeningListener: js.Function): Server = js.native
+    def listen(handle: Any): Server = js.native
+    def listen(handle: Any, listeningListener: js.Function): Server = js.native
     def listen(path: String): Server = js.native
     def listen(path: String, callback: js.Function): Server = js.native
     def listen(port: Double): Server = js.native
@@ -207,9 +204,9 @@ object expressMod {
     def listen(port: Double, hostname: String, backlog: Double, callback: js.Function): Server = js.native
     def listen(port: Double, hostname: String, callback: js.Function): Server = js.native
     
-    var locals: js.Any = js.native
+    var locals: Any = js.native
     
-    var map: js.Any = js.native
+    var map: Any = js.native
     
     /**
       * Return the app's absolute pathname
@@ -239,12 +236,16 @@ object expressMod {
       * @param fn
       */
     def render(name: String): Unit = js.native
-    def render(name: String, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+    def render(name: String, callback: js.Function2[/* err */ js.Error, /* html */ String, Unit]): Unit = js.native
     def render(name: String, options: js.Object): Unit = js.native
-    def render(name: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
-    def render(name: String, options: Unit, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+    def render(
+      name: String,
+      options: js.Object,
+      callback: js.Function2[/* err */ js.Error, /* html */ String, Unit]
+    ): Unit = js.native
+    def render(name: String, options: Unit, callback: js.Function2[/* err */ js.Error, /* html */ String, Unit]): Unit = js.native
     
-    var resource: js.Any = js.native
+    var resource: Any = js.native
     
     var router: String = js.native
     
@@ -256,7 +257,7 @@ object expressMod {
       * is used. Your application or framework may also remove routes by
       * simply by removing them from this object.
       */
-    var routes: js.Any = js.native
+    var routes: Any = js.native
     
     /**
       * Assign `setting` to `val`, or return `setting`'s value.
@@ -273,16 +274,16 @@ object expressMod {
       * @param setting
       * @param val
       */
-    def set(setting: String, `val`: js.Any): Application = js.native
+    def set(setting: String, `val`: Any): Application = js.native
     
-    var settings: js.Any = js.native
+    var settings: Any = js.native
   }
   
   trait CookieOptions extends StObject {
     
     var domain: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     var httpOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -307,7 +308,7 @@ object expressMod {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
@@ -333,16 +334,16 @@ object expressMod {
     }
   }
   
-  type Errback = js.Function1[/* err */ Error, Unit]
+  type Errback = js.Function1[/* err */ js.Error, Unit]
   
-  type ErrorRequestHandler = js.Function4[/* err */ js.Any, /* req */ Request, /* res */ Response, /* next */ js.Function, js.Any]
+  type ErrorRequestHandler = js.Function4[/* err */ Any, /* req */ Request, /* res */ Response, /* next */ js.Function, Any]
   
   @js.native
   trait Express extends Application {
     
     def apply(): Application = js.native
     
-    var application: js.Any = js.native
+    var application: Any = js.native
     
     /**
       * Create an express application.
@@ -386,7 +387,7 @@ object expressMod {
     
     def put(handler: RequestHandler*): IRoute
     
-    var stack: js.Any
+    var stack: Any
   }
   object IRoute {
     
@@ -399,7 +400,7 @@ object expressMod {
       path: String,
       post: /* repeated */ RequestHandler => IRoute,
       put: /* repeated */ RequestHandler => IRoute,
-      stack: js.Any
+      stack: Any
     ): IRoute = {
       val __obj = js.Dynamic.literal(all = js.Any.fromFunction1(all), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), options = js.Any.fromFunction1(options), patch = js.Any.fromFunction1(patch), path = path.asInstanceOf[js.Any], post = js.Any.fromFunction1(post), put = js.Any.fromFunction1(put), stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRoute]
@@ -423,7 +424,7 @@ object expressMod {
       
       inline def setPut(value: /* repeated */ RequestHandler => IRoute): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
       
-      inline def setStack(value: js.Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -445,7 +446,7 @@ object expressMod {
       * @param path
       * @param fn
       */
-    def all(name: RegExp, handlers: RequestHandler*): T = js.native
+    def all(name: js.RegExp, handlers: RequestHandler*): T = js.native
     /**
       * Special-cased "all" method, applying the given route `path`,
       * middleware, and callback to _every_ HTTP method.
@@ -457,22 +458,22 @@ object expressMod {
     var all_Original: IRouterMatcher[T] = js.native
     
     def delete(name: String, handlers: RequestHandler*): T = js.native
-    def delete(name: RegExp, handlers: RequestHandler*): T = js.native
+    def delete(name: js.RegExp, handlers: RequestHandler*): T = js.native
     @JSName("delete")
     var delete_Original: IRouterMatcher[T] = js.native
     
     def get(name: String, handlers: RequestHandler*): T = js.native
-    def get(name: RegExp, handlers: RequestHandler*): T = js.native
+    def get(name: js.RegExp, handlers: RequestHandler*): T = js.native
     @JSName("get")
     var get_Original: IRouterMatcher[T] = js.native
     
     def options(name: String, handlers: RequestHandler*): T = js.native
-    def options(name: RegExp, handlers: RequestHandler*): T = js.native
+    def options(name: js.RegExp, handlers: RequestHandler*): T = js.native
     @JSName("options")
     var options_Original: IRouterMatcher[T] = js.native
     
     // Alternatively, you can pass only a callback, in which case you have the opportunity to alter the app.param() API
-    def param(callback: js.Function2[/* name */ String, /* matcher */ RegExp, RequestParamHandler]): T = js.native
+    def param(callback: js.Function2[/* name */ String, /* matcher */ js.RegExp, RequestParamHandler]): T = js.native
     /**
       * Map the given param placeholder `name`(s) to the given callback(s).
       *
@@ -503,21 +504,21 @@ object expressMod {
       * @param fn
       */
     def param(name: String, handler: RequestParamHandler): T = js.native
-    def param(name: String, mapper: js.Function1[/* param */ js.Any, js.Any]): T = js.native
-    def param(name: String, matcher: RegExp): T = js.native
+    def param(name: String, mapper: js.Function1[/* param */ Any, Any]): T = js.native
+    def param(name: String, matcher: js.RegExp): T = js.native
     
     def patch(name: String, handlers: RequestHandler*): T = js.native
-    def patch(name: RegExp, handlers: RequestHandler*): T = js.native
+    def patch(name: js.RegExp, handlers: RequestHandler*): T = js.native
     @JSName("patch")
     var patch_Original: IRouterMatcher[T] = js.native
     
     def post(name: String, handlers: RequestHandler*): T = js.native
-    def post(name: RegExp, handlers: RequestHandler*): T = js.native
+    def post(name: js.RegExp, handlers: RequestHandler*): T = js.native
     @JSName("post")
     var post_Original: IRouterMatcher[T] = js.native
     
     def put(name: String, handlers: RequestHandler*): T = js.native
-    def put(name: RegExp, handlers: RequestHandler*): T = js.native
+    def put(name: js.RegExp, handlers: RequestHandler*): T = js.native
     @JSName("put")
     var put_Original: IRouterMatcher[T] = js.native
     
@@ -533,7 +534,7 @@ object expressMod {
   trait IRouterMatcher[T] extends StObject {
     
     def apply(name: String, handlers: RequestHandler*): T = js.native
-    def apply(name: RegExp, handlers: RequestHandler*): T = js.native
+    def apply(name: js.RegExp, handlers: RequestHandler*): T = js.native
   }
   
   trait MediaType extends StObject {
@@ -586,7 +587,7 @@ object expressMod {
       *     Accept-Charset: iso-8859-5;q=.2, unicode-1-1;q=0.8
       *     ['unicode-1-1', 'iso-8859-5']
       */
-    var acceptedCharsets: js.Array[js.Any] = js.native
+    var acceptedCharsets: js.Array[Any] = js.native
     
     /**
       * Return an array of Accepted languages
@@ -597,7 +598,7 @@ object expressMod {
       *     Accept-Language: en;q=.5, en-us
       *     ['en-us', 'en']
       */
-    var acceptedLanguages: js.Array[js.Any] = js.native
+    var acceptedLanguages: js.Array[Any] = js.native
     
     /**
       * Check if the given `type(s)` is acceptable, returning
@@ -655,10 +656,10 @@ object expressMod {
       */
     def acceptsLanguage(lang: String): Boolean = js.native
     
-    var authenticatedUser: js.Any = js.native
+    var authenticatedUser: Any = js.native
     
     //body: { username: string; password: string; remember: boolean; title: string; };
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     /**
       * Clear cookie `name`.
@@ -667,10 +668,10 @@ object expressMod {
       * @param options
       */
     def clearCookie(name: String): Response = js.native
-    def clearCookie(name: String, options: js.Any): Response = js.native
+    def clearCookie(name: String, options: Any): Response = js.native
     
     //cookies: { string; remember: boolean; };
-    var cookies: js.Any = js.native
+    var cookies: Any = js.native
     
     /**
       * Check if the request is fresh, aka
@@ -773,9 +774,9 @@ object expressMod {
       * @param defaultValue
       */
     def param(name: String): String = js.native
-    def param(name: String, defaultValue: js.Any): String = js.native
+    def param(name: String, defaultValue: Any): String = js.native
     
-    var params: js.Any = js.native
+    var params: Any = js.native
     
     /**
       * Short-hand for `url.parse(req.url).pathname`.
@@ -792,7 +793,7 @@ object expressMod {
       */
     var protocol: String = js.native
     
-    var query: js.Any = js.native
+    var query: Any = js.native
     
     /**
       * Parse Range header field,
@@ -811,9 +812,9 @@ object expressMod {
       *
       * @param size
       */
-    def range(size: Double): js.Array[js.Any] = js.native
+    def range(size: Double): js.Array[Any] = js.native
     
-    var route: js.Any = js.native
+    var route: Any = js.native
     
     /**
       * Short-hand for:
@@ -822,7 +823,7 @@ object expressMod {
       */
     var secure: Boolean = js.native
     
-    var signedCookies: js.Any = js.native
+    var signedCookies: Any = js.native
     
     /**
       * Check if the request is stale, aka
@@ -844,7 +845,7 @@ object expressMod {
       */
     var subdomains: js.Array[String] = js.native
     
-    var user: js.Any = js.native
+    var user: Any = js.native
     
     /**
       * Check if the request was an _XMLHttpRequest_.
@@ -852,15 +853,9 @@ object expressMod {
     var xhr: Boolean = js.native
   }
   
-  type RequestHandler = js.Function3[/* req */ Request, /* res */ Response, /* next */ js.Function, js.Any]
+  type RequestHandler = js.Function3[/* req */ Request, /* res */ Response, /* next */ js.Function, Any]
   
-  type RequestParamHandler = js.Function4[
-    /* req */ Request, 
-    /* res */ Response, 
-    /* next */ js.Function, 
-    /* param */ js.Any, 
-    js.Any
-  ]
+  type RequestParamHandler = js.Function4[/* req */ Request, /* res */ Response, /* next */ js.Function, /* param */ Any, Any]
   
   @js.native
   trait Response
@@ -884,7 +879,7 @@ object expressMod {
       * @param options
       */
     def clearCookie(name: String): Response = js.native
-    def clearCookie(name: String, options: js.Any): Response = js.native
+    def clearCookie(name: String, options: Any): Response = js.native
     
     /**
       * Set _Content-Type_ response header with `type` through `mime.lookup()`
@@ -920,8 +915,8 @@ object expressMod {
       *    res.cookie('rememberme', '1', { maxAge: 900000, httpOnly: true })
       */
     def cookie(name: String, `val`: String, options: CookieOptions): Response = js.native
-    def cookie(name: String, `val`: js.Any): Response = js.native
-    def cookie(name: String, `val`: js.Any, options: CookieOptions): Response = js.native
+    def cookie(name: String, `val`: Any): Response = js.native
+    def cookie(name: String, `val`: Any, options: CookieOptions): Response = js.native
     
     /**
       * Transfer the file at the given `path` as an attachment.
@@ -992,7 +987,7 @@ object expressMod {
       *
       * @param obj
       */
-    def format(obj: js.Any): Response = js.native
+    def format(obj: Any): Response = js.native
     
     /**
       * Get value for header `field`.
@@ -1003,7 +998,7 @@ object expressMod {
     
     def header(field: String): Response = js.native
     def header(field: String, value: String): Response = js.native
-    def header(field: js.Any): Response = js.native
+    def header(field: Any): Response = js.native
     
     // Property indicating if HTTP headers has been sent for the response.
     var headersSent: Boolean = js.native
@@ -1018,7 +1013,7 @@ object expressMod {
       *     res.json(500, 'oh noes!');
       *     res.json(404, 'I dont have that');
       */
-    def json(body: js.Any): Response = js.native
+    def json(body: Any): Response = js.native
     /**
       * Send JSON response.
       *
@@ -1030,7 +1025,7 @@ object expressMod {
       *     res.json(404, 'I dont have that');
       */
     def json(status: Double): Response = js.native
-    def json(status: Double, body: js.Any): Response = js.native
+    def json(status: Double, body: Any): Response = js.native
     /**
       * Send JSON response.
       *
@@ -1054,7 +1049,7 @@ object expressMod {
       *     res.jsonp(500, 'oh noes!');
       *     res.jsonp(404, 'I dont have that');
       */
-    def jsonp(body: js.Any): Response = js.native
+    def jsonp(body: Any): Response = js.native
     /**
       * Send JSON response with JSONP callback support.
       *
@@ -1066,7 +1061,7 @@ object expressMod {
       *     res.jsonp(404, 'I dont have that');
       */
     def jsonp(status: Double): Response = js.native
-    def jsonp(status: Double, body: js.Any): Response = js.native
+    def jsonp(status: Double, body: Any): Response = js.native
     /**
       * Send JSON response with JSONP callback support.
       *
@@ -1092,9 +1087,9 @@ object expressMod {
       *
       * @param links
       */
-    def links(links: js.Any): Response = js.native
+    def links(links: Any): Response = js.native
     
-    var locals: js.Any = js.native
+    var locals: Any = js.native
     
     /**
       * Set the location header to `url`.
@@ -1157,10 +1152,14 @@ object expressMod {
       *  - `filename`  filename of the view being rendered
       */
     def render(view: String): Unit = js.native
-    def render(view: String, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+    def render(view: String, callback: js.Function2[/* err */ js.Error, /* html */ String, Unit]): Unit = js.native
     def render(view: String, options: js.Object): Unit = js.native
-    def render(view: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
-    def render(view: String, options: Unit, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+    def render(
+      view: String,
+      options: js.Object,
+      callback: js.Function2[/* err */ js.Error, /* html */ String, Unit]
+    ): Unit = js.native
+    def render(view: String, options: Unit, callback: js.Function2[/* err */ js.Error, /* html */ String, Unit]): Unit = js.native
     
     /**
       * Send a response.
@@ -1173,7 +1172,7 @@ object expressMod {
       *     res.send(404, 'Sorry, cant find that');
       *     res.send(404);
       */
-    def send(body: js.Any): Response = js.native
+    def send(body: Any): Response = js.native
     /**
       * Send a response.
       *
@@ -1186,7 +1185,7 @@ object expressMod {
       *     res.send(404);
       */
     def send(status: Double): Response = js.native
-    def send(status: Double, body: js.Any): Response = js.native
+    def send(status: Double, body: Any): Response = js.native
     
     /**
       * Transfer the file at the given `path`.
@@ -1230,8 +1229,8 @@ object expressMod {
       */
     def sendFile(path: String): Unit = js.native
     def sendFile(path: String, fn: Errback): Unit = js.native
-    def sendFile(path: String, options: js.Any): Unit = js.native
-    def sendFile(path: String, options: js.Any, fn: Errback): Unit = js.native
+    def sendFile(path: String, options: Any): Unit = js.native
+    def sendFile(path: String, options: Any, fn: Errback): Unit = js.native
     
     /**
       * Set the response HTTP status code to `statusCode` and send its string representation as the response body.
@@ -1273,11 +1272,11 @@ object expressMod {
     /**
       * @deprecated Use sendFile instead.
       */
-    def sendfile(path: String, options: js.Any): Unit = js.native
+    def sendfile(path: String, options: Any): Unit = js.native
     /**
       * @deprecated Use sendFile instead.
       */
-    def sendfile(path: String, options: js.Any, fn: Errback): Unit = js.native
+    def sendfile(path: String, options: Any, fn: Errback): Unit = js.native
     
     def set(field: String): Response = js.native
     def set(field: String, value: String): Response = js.native
@@ -1293,7 +1292,7 @@ object expressMod {
       *
       * Aliased as `res.header()`.
       */
-    def set(field: js.Any): Response = js.native
+    def set(field: Any): Response = js.native
     
     /**
       * Set status `code`.
@@ -1322,8 +1321,8 @@ object expressMod {
   @js.native
   trait Send extends StObject {
     
-    def apply(body: js.Any): Response = js.native
+    def apply(body: Any): Response = js.native
     def apply(status: Double): Response = js.native
-    def apply(status: Double, body: js.Any): Response = js.native
+    def apply(status: Double, body: Any): Response = js.native
   }
 }

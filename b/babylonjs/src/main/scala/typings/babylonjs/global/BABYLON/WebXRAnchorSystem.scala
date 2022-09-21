@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRAnchorSystem")
 @js.native
-class WebXRAnchorSystem protected ()
+open class WebXRAnchorSystem protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRAnchorSystem {
   /**
@@ -35,7 +35,7 @@ object WebXRAnchorSystem {
     */
   @JSGlobal("BABYLON.WebXRAnchorSystem.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-anchor-system" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -44,5 +44,5 @@ object WebXRAnchorSystem {
     */
   @JSGlobal("BABYLON.WebXRAnchorSystem.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 1 */ Double = js.native
 }

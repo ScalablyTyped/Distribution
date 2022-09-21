@@ -60,18 +60,18 @@ object XEnumerableMap {
     ValueType: `type`,
     acquire: () => Unit,
     clear: () => Unit,
-    containsKey: js.Any => Boolean,
-    containsValue: js.Any => Boolean,
+    containsKey: Any => Boolean,
+    containsValue: Any => Boolean,
     createElementEnumeration: Boolean => XEnumeration,
     createKeyEnumeration: Boolean => XEnumeration,
     createValueEnumeration: Boolean => XEnumeration,
-    get: js.Any => js.Any,
+    get: Any => Any,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    put: (js.Any, js.Any) => js.Any,
-    queryInterface: `type` => js.Any,
+    put: (Any, Any) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    remove: js.Any => js.Any
+    remove: Any => Any
   ): XEnumerableMap = {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), containsKey = js.Any.fromFunction1(containsKey), containsValue = js.Any.fromFunction1(containsValue), createElementEnumeration = js.Any.fromFunction1(createElementEnumeration), createKeyEnumeration = js.Any.fromFunction1(createKeyEnumeration), createValueEnumeration = js.Any.fromFunction1(createValueEnumeration), get = js.Any.fromFunction1(get), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), put = js.Any.fromFunction2(put), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[XEnumerableMap]

@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.FlexBasis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FlexBasisProps[TLength] extends StObject {
   
-  val flexBasis: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val flexBasis: js.UndefOr[ResponsiveValue[FlexBasis[TLength]]] = js.undefined
 }
 object FlexBasisProps {
   
@@ -21,16 +18,10 @@ object FlexBasisProps {
   
   extension [Self <: FlexBasisProps[?], TLength](x: Self & FlexBasisProps[TLength]) {
     
-    inline def setFlexBasis(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
+    inline def setFlexBasis(value: ResponsiveValue[FlexBasis[TLength]]): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
     inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
-    inline def setFlexBasisVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "flexBasis", js.Array(value :_*))
+    inline def setFlexBasisVarargs(value: FlexBasis[TLength]*): Self = StObject.set(x, "flexBasis", js.Array(value*))
   }
 }

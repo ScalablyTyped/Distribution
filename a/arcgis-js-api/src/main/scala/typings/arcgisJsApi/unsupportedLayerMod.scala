@@ -17,7 +17,12 @@ object unsupportedLayerMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/UnsupportedLayer", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Represents an unsupported layer instance.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnsupportedLayer.html)
+    */
+  open class Class ()
     extends StObject
        with UnsupportedLayer {
     def this(properties: UnsupportedLayerProperties) = this()

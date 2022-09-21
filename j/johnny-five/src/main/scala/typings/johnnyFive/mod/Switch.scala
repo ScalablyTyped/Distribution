@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Switch")
 @js.native
-class Switch protected () extends StObject {
+open class Switch protected () extends StObject {
   def this(option: String) = this()
   def this(option: Double) = this()
   def this(option: SwitchOption) = this()

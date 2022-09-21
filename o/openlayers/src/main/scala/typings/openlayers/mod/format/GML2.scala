@@ -23,6 +23,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Optional configuration object.
   * @api
   */
-class GML2 () extends GMLBase {
+open class GML2 () extends GMLBase {
   def this(opt_options: GMLOptions) = this()
 }

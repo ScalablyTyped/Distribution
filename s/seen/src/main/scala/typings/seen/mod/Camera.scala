@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Camera")
 @js.native
-class Camera () extends Transformable {
+open class Camera () extends Transformable {
   def this(transform: Matrix) = this()
   
   var defaults: Projection = js.native

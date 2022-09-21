@@ -23,7 +23,7 @@ object MapTypeControlOptions {
     
     inline def setMapTypesUndefined: Self = StObject.set(x, "mapTypes", js.undefined)
     
-    inline def setMapTypesVarargs(value: MapType*): Self = StObject.set(x, "mapTypes", js.Array(value :_*))
+    inline def setMapTypesVarargs(value: MapType*): Self = StObject.set(x, "mapTypes", js.Array(value*))
     
     inline def setType(value: MapTypeControlType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

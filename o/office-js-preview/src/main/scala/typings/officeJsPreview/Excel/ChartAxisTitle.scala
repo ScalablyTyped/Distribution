@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the title of a chart axis.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -26,9 +26,9 @@ trait ChartAxisTitle
   var context_ChartAxisTitle: RequestContext = js.native
   
   /**
+    * Specifies the formatting of the chart axis title.
     *
-    * Specifies the formatting of chart axis title.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartAxisTitleFormat = js.native
@@ -46,14 +46,8 @@ trait ChartAxisTitle
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartAxisTitle): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartAxisTitle): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -63,24 +57,25 @@ trait ChartAxisTitle
   /**
     * A string value that represents the formula of chart axis title using A1-style notation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
-    * @param formula a string that present the formula to set
+    * @param formula A string that represents the formula to set.
     */
   def setFormula(formula: String): Unit = js.native
   
   /**
-    *
     * Specifies the axis title.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var text: String = js.native
   
   /**
-    *
     * Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var textOrientation: Double = js.native
@@ -92,9 +87,9 @@ trait ChartAxisTitle
   def toJSON(): ChartAxisTitleData = js.native
   
   /**
-    *
     * Specifies if the axis title is visibile.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: Boolean = js.native

@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsNode
 
 import typings.tensorflowTfjs.mod.CustomCallback
+import typings.tensorflowTfjs.mod.LayersModel
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.batch
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.epoch
 import org.scalablytyped.runtime.StObject
@@ -18,51 +19,57 @@ object callbacksMod {
   /**
     * Construtor of LoggingCallback.
     */
-  class ProgbarLogger () extends CustomCallback {
+  open class ProgbarLogger () extends CustomCallback {
     
-    /* private */ val RENDER_THROTTLE_MS: js.Any = js.native
+    /* private */ val RENDER_THROTTLE_MS: Any = js.native
     
-    /* private */ var batchesInLatestEpoch: js.Any = js.native
+    /* private */ var batchesInLatestEpoch: Any = js.native
     
-    /* private */ var currentEpochBegin: js.Any = js.native
+    /* private */ var currentEpochBegin: Any = js.native
     
-    /* private */ var epochDurationMillis: js.Any = js.native
+    /* private */ var epochDurationMillis: Any = js.native
     
-    /* private */ var formatLogsAsMetricsContent: js.Any = js.native
+    /* private */ var formatLogsAsMetricsContent: Any = js.native
     
-    /* private */ var isFieldRelevant: js.Any = js.native
+    /* private */ var isFieldRelevant: Any = js.native
     
-    /* private */ var numTrainBatchesPerEpoch: js.Any = js.native
+    /* private */ var numTrainBatchesPerEpoch: Any = js.native
     
-    /* private */ var progressBar: js.Any = js.native
+    /* private */ var progressBar: Any = js.native
     
-    /* private */ var terminalWidth: js.Any = js.native
+    /* private */ var terminalWidth: Any = js.native
     
-    /* private */ var usPerStep: js.Any = js.native
+    /* private */ var usPerStep: Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-node/dist/callbacks", "TensorBoardCallback")
   @js.native
-  class TensorBoardCallback () extends CustomCallback {
+  open class TensorBoardCallback () extends CustomCallback {
     def this(logdir: String) = this()
     def this(logdir: String, args: TensorBoardCallbackArgs) = this()
     def this(logdir: Unit, args: TensorBoardCallbackArgs) = this()
     
-    /* private */ val args: js.Any = js.native
+    /* private */ val args: Any = js.native
     
-    /* private */ var batchesSeen: js.Any = js.native
+    /* private */ var batchesSeen: Any = js.native
     
-    /* private */ var ensureTrainWriterCreated: js.Any = js.native
+    /* private */ var ensureTrainWriterCreated: Any = js.native
     
-    /* private */ var ensureValWriterCreated: js.Any = js.native
+    /* private */ var ensureValWriterCreated: Any = js.native
     
-    /* private */ var logMetrics: js.Any = js.native
+    /* private */ var logMetrics: Any = js.native
+    
+    /* private */ var logWeights: Any = js.native
     
     val logdir: String = js.native
     
-    /* private */ var trainWriter: js.Any = js.native
+    /* private */ var model: Any = js.native
     
-    /* private */ var valWriter: js.Any = js.native
+    def setModel(model: LayersModel): Unit = js.native
+    
+    /* private */ var trainWriter: Any = js.native
+    
+    /* private */ var valWriter: Any = js.native
   }
   
   inline def getDisplayDecimalPlaces(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayDecimalPlaces")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -77,8 +84,8 @@ object callbacksMod {
     
     @JSImport("@tensorflow/tfjs-node/dist/callbacks", "progressBarHelper.ProgressBar")
     @js.native
-    def ProgressBar: js.Any = js.native
-    inline def ProgressBar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgressBar")(x.asInstanceOf[js.Any])
+    def ProgressBar: Any = js.native
+    inline def ProgressBar_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgressBar")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-node/dist/callbacks", "progressBarHelper.log")
     @js.native
@@ -92,6 +99,18 @@ object callbacksMod {
   inline def tensorBoard(logdir: Unit, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
   
   trait TensorBoardCallbackArgs extends StObject {
+    
+    /**
+      * The frequency (in epochs) at which to compute activation and weight
+      * histograms for the layers of the model.
+      *
+      * If set to 0, histograms won't be computed.
+      *
+      * Validation data (or split) must be specified for histogram visualizations.
+      *
+      * Default: 0.
+      */
+    var histogramFreq: js.UndefOr[Double] = js.undefined
     
     /**
       * The frequency at which loss and metric values are written to logs.
@@ -116,6 +135,10 @@ object callbacksMod {
     }
     
     extension [Self <: TensorBoardCallbackArgs](x: Self) {
+      
+      inline def setHistogramFreq(value: Double): Self = StObject.set(x, "histogramFreq", value.asInstanceOf[js.Any])
+      
+      inline def setHistogramFreqUndefined: Self = StObject.set(x, "histogramFreq", js.undefined)
       
       inline def setUpdateFreq(value: batch | epoch): Self = StObject.set(x, "updateFreq", value.asInstanceOf[js.Any])
       

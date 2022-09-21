@@ -1,19 +1,19 @@
 
 # Scala.js typings for emotion__styled-base
 
-Typings are for version 10.0.31
+Typings are for version 10.3.0
 
 ## Library description:
-base styled API for emotion
+Deprecated package which became `@emotion/styled/base`
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @emotion/styled-base |
-| Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 37 |
-| # downloads        | 87916718 |
-| # stars            | 0 |
+| Keywords           | styles, emotion, react, css, css-in-js |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4503320333333334E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion#readme)

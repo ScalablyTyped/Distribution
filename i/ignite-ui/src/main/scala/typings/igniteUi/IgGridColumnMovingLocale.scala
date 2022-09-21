@@ -10,7 +10,7 @@ trait IgGridColumnMovingLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies caption for the move first dropdown button.

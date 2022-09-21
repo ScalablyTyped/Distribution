@@ -8,5 +8,5 @@ object updateKeyDescriptionInputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/UpdateKeyDescriptionInput", "UpdateKeyDescriptionInput")
   @js.native
-  val UpdateKeyDescriptionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateKeyDescriptionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.ComponentMgr")
 @js.native
-class ComponentMgr ()
+open class ComponentMgr ()
   extends StObject
      with typings.senchaTouch.Ext.ComponentMgr
 /* static members */
@@ -22,22 +22,22 @@ object ComponentMgr {
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-  inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+  inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-  inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+  inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-  inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+  inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Creates a new Component from the specified config object using the config object s xtype to determine the class to in
     * @param component Object A configuration object for the Component you wish to create.
@@ -45,9 +45,9 @@ object ComponentMgr {
     * @returns Ext.Component The newly instantiated Component.
     */
   inline def create(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IComponent]
-  inline def create(component: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(component.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def create(component: js.Any, defaultType: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(component.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def create(component: Unit, defaultType: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(component.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def create(component: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(component.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def create(component: Any, defaultType: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(component.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def create(component: Unit, defaultType: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(component.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method]  */
   inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
@@ -56,22 +56,22 @@ object ComponentMgr {
     * @param id String The id of the item.
     * @returns Object The item, or undefined if not found.
     */
-  inline def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
-  inline def get(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Any]
+  inline def get(id: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Returns the initial configuration passed to constructor
     * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
     * @returns Object/Mixed
     */
-  inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-  inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+  inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Initialize configuration for this class
     * @param instanceConfig Object
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
-  inline def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
-  inline def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def initConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[Any]
+  inline def initConfig(instanceConfig: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Checks if an item type is registered
     * @param component String The mnemonic string by which the class may be looked up.
@@ -84,7 +84,7 @@ object ComponentMgr {
     * @param component Object The item to register.
     */
   inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
-  inline def register(component: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def register(component: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.ComponentMgr.self")
@@ -101,5 +101,5 @@ object ComponentMgr {
     * @param component Object The item to unregister.
     */
   inline def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
-  inline def unregister(component: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unregister(component: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a shape group inside a worksheet. To get the corresponding `Shape` object, use `ShapeGroup.shape`.
   *
-  * Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ShapeGroupLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait ShapeGroupLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the shape identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns the `Shape` object associated with the group.
     *
-    * Returns the Shape object associated with the group.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined

@@ -61,7 +61,7 @@ trait WorkItemField
 object WorkItemField {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     description: String,
     isIdentity: Boolean,
     isPicklist: Boolean,
@@ -97,7 +97,7 @@ object WorkItemField {
     
     inline def setSupportedOperations(value: js.Array[WorkItemFieldOperation]): Self = StObject.set(x, "supportedOperations", value.asInstanceOf[js.Any])
     
-    inline def setSupportedOperationsVarargs(value: WorkItemFieldOperation*): Self = StObject.set(x, "supportedOperations", js.Array(value :_*))
+    inline def setSupportedOperationsVarargs(value: WorkItemFieldOperation*): Self = StObject.set(x, "supportedOperations", js.Array(value*))
     
     inline def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ trait IQueryFileOptions extends StObject {
   
   var noWarnings: js.UndefOr[Boolean] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
 }
 object IQueryFileOptions {
   
@@ -42,7 +42,7 @@ object IQueryFileOptions {
     
     inline def setNoWarningsUndefined: Self = StObject.set(x, "noWarnings", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }

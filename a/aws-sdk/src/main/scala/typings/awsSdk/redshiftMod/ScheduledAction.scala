@@ -9,7 +9,7 @@ trait ScheduledAction extends StObject {
   /**
     * The end time in UTC when the schedule is no longer active. After this time, the scheduled action does not trigger. 
     */
-  var EndTime: js.UndefOr[TStamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The IAM role to assume to run the scheduled action. This IAM role must have permission to run the Amazon Redshift API operation in the scheduled action. This IAM role must allow the Amazon Redshift scheduler (Principal scheduler.redshift.amazonaws.com) to assume permissions on your behalf. For more information about the IAM role to use with the Amazon Redshift scheduler, see Using Identity-Based Policies for Amazon Redshift in the Amazon Redshift Cluster Management Guide. 
@@ -39,7 +39,7 @@ trait ScheduledAction extends StObject {
   /**
     * The start time in UTC when the schedule is active. Before this time, the scheduled action does not trigger. 
     */
-  var StartTime: js.UndefOr[TStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the scheduled action. For example, DISABLED. 
@@ -60,7 +60,7 @@ object ScheduledAction {
   
   extension [Self <: ScheduledAction](x: Self) {
     
-    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -72,7 +72,7 @@ object ScheduledAction {
     
     inline def setNextInvocationsUndefined: Self = StObject.set(x, "NextInvocations", js.undefined)
     
-    inline def setNextInvocationsVarargs(value: TStamp*): Self = StObject.set(x, "NextInvocations", js.Array(value :_*))
+    inline def setNextInvocationsVarargs(value: js.Date*): Self = StObject.set(x, "NextInvocations", js.Array(value*))
     
     inline def setSchedule(value: String): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
@@ -86,7 +86,7 @@ object ScheduledAction {
     
     inline def setScheduledActionNameUndefined: Self = StObject.set(x, "ScheduledActionName", js.undefined)
     
-    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

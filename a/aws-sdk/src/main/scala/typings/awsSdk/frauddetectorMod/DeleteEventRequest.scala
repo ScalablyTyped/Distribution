@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteEventRequest extends StObject {
   
   /**
+    * Specifies whether or not to delete any predictions associated with the event.
+    */
+  var deleteAuditHistory: js.UndefOr[DeleteAuditHistory] = js.undefined
+  
+  /**
     * The ID of the event to delete.
     */
   var eventId: identifier
@@ -24,6 +29,10 @@ object DeleteEventRequest {
   }
   
   extension [Self <: DeleteEventRequest](x: Self) {
+    
+    inline def setDeleteAuditHistory(value: DeleteAuditHistory): Self = StObject.set(x, "deleteAuditHistory", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteAuditHistoryUndefined: Self = StObject.set(x, "deleteAuditHistory", js.undefined)
     
     inline def setEventId(value: identifier): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

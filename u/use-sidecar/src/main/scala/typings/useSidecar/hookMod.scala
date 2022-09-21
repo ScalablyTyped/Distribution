@@ -1,7 +1,6 @@
 package typings.useSidecar
 
 import typings.react.mod.ComponentType
-import typings.std.Error
 import typings.useSidecar.typesMod.Importer
 import typings.useSidecar.typesMod.SideMedium
 import org.scalablytyped.runtime.StObject
@@ -14,6 +13,6 @@ object hookMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useSidecar[T](importer: Importer[T]): js.Tuple2[ComponentType[T] | Null, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSidecar")(importer.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[ComponentType[T] | Null, Error | Null]]
-  inline def useSidecar[T](importer: Importer[T], effect: SideMedium[js.Any]): js.Tuple2[ComponentType[T] | Null, Error | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSidecar")(importer.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ComponentType[T] | Null, Error | Null]]
+  inline def useSidecar[T](importer: Importer[T]): js.Tuple2[ComponentType[T] | Null, js.Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSidecar")(importer.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[ComponentType[T] | Null, js.Error | Null]]
+  inline def useSidecar[T](importer: Importer[T], effect: SideMedium[Any]): js.Tuple2[ComponentType[T] | Null, js.Error | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSidecar")(importer.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ComponentType[T] | Null, js.Error | Null]]
 }

@@ -19,6 +19,8 @@ object actionSheetStyleMod {
     
     var btn: ViewStyle
     
+    var btnText: TextStyle
+    
     var cancelBtn: ViewStyle
     
     var cancelBtnMask: ViewStyle
@@ -43,6 +45,7 @@ object actionSheetStyleMod {
     
     inline def apply(
       btn: ViewStyle,
+      btnText: TextStyle,
       cancelBtn: ViewStyle,
       cancelBtnMask: ViewStyle,
       container: ViewStyle,
@@ -54,13 +57,15 @@ object actionSheetStyleMod {
       titleText: TextStyle,
       wrap: ViewStyle
     ): ActionSheetStyle = {
-      val __obj = js.Dynamic.literal(btn = btn.asInstanceOf[js.Any], cancelBtn = cancelBtn.asInstanceOf[js.Any], cancelBtnMask = cancelBtnMask.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], destructiveBtn = destructiveBtn.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(btn = btn.asInstanceOf[js.Any], btnText = btnText.asInstanceOf[js.Any], cancelBtn = cancelBtn.asInstanceOf[js.Any], cancelBtnMask = cancelBtnMask.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], destructiveBtn = destructiveBtn.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionSheetStyle]
     }
     
     extension [Self <: ActionSheetStyle](x: Self) {
       
       inline def setBtn(value: ViewStyle): Self = StObject.set(x, "btn", value.asInstanceOf[js.Any])
+      
+      inline def setBtnText(value: TextStyle): Self = StObject.set(x, "btnText", value.asInstanceOf[js.Any])
       
       inline def setCancelBtn(value: ViewStyle): Self = StObject.set(x, "cancelBtn", value.asInstanceOf[js.Any])
       

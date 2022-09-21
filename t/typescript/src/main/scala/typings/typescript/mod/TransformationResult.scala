@@ -59,7 +59,7 @@ object TransformationResult {
     
     inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    inline def setDiagnosticsVarargs(value: DiagnosticWithLocation*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: DiagnosticWithLocation*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
@@ -73,6 +73,6 @@ object TransformationResult {
     
     inline def setTransformed(value: js.Array[T]): Self = StObject.set(x, "transformed", value.asInstanceOf[js.Any])
     
-    inline def setTransformedVarargs(value: T*): Self = StObject.set(x, "transformed", js.Array(value :_*))
+    inline def setTransformedVarargs(value: T*): Self = StObject.set(x, "transformed", js.Array(value*))
   }
 }

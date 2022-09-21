@@ -15,32 +15,45 @@ object featureloaderMod {
   inline def loadFeaturesXhr(
     url: String,
     format: default,
-    success: js.Function0[Unit],
-    failure: js.ThisFunction0[
-      /* this */ typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default], 
+    extent: Extent,
+    resolution: Double,
+    projection: typings.ol.projectionMod.default,
+    success: js.Function2[
+      /* p0 */ js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]], 
+      /* p1 */ typings.ol.projectionMod.default, 
       Unit
-    ]
-  ): FeatureLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeaturesXhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader]
+    ],
+    failure: js.Function0[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeaturesXhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def loadFeaturesXhr(
     url: FeatureUrlFunction,
     format: default,
-    success: js.Function0[Unit],
-    failure: js.ThisFunction0[
-      /* this */ typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default], 
+    extent: Extent,
+    resolution: Double,
+    projection: typings.ol.projectionMod.default,
+    success: js.Function2[
+      /* p0 */ js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]], 
+      /* p1 */ typings.ol.projectionMod.default, 
       Unit
-    ]
-  ): FeatureLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeaturesXhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader]
+    ],
+    failure: js.Function0[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeaturesXhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setWithCredentials(xhrWithCredentials: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWithCredentials")(xhrWithCredentials.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def xhr(url: String, format: default): FeatureLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("xhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader]
   inline def xhr(url: FeatureUrlFunction, format: default): FeatureLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("xhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader]
   
-  type FeatureLoader = js.ThisFunction3[
+  type FeatureLoader = js.ThisFunction5[
     /* this */ typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] | typings.ol.olVectorTileMod.default, 
     /* p0 */ Extent, 
     /* p1 */ Double, 
     /* p2 */ typings.ol.projectionMod.default, 
+    /* p3 */ js.Function1[
+      /* p0 */ js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]], 
+      Unit
+    ], 
+    /* p4 */ js.Function0[Unit], 
     Unit
   ]
   

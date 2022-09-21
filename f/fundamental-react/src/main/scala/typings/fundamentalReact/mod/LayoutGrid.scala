@@ -3,7 +3,6 @@ package typings.fundamentalReact.mod
 import typings.fundamentalReact.anon.PartialLayoutGridProps
 import typings.fundamentalReact.anon.WeakValidationMapLayoutGr
 import typings.fundamentalReact.layoutGridMod.LayoutGridProps
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -13,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/LayoutGrid/LayoutGrid.LayoutGridProps> & {  displayName :'LayoutGridProps'} */
 object LayoutGrid {
   
-  inline def apply(props: PropsWithChildren[LayoutGridProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def apply(props: PropsWithChildren[LayoutGridProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def apply(props: LayoutGridProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def apply(props: LayoutGridProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
   @JSImport("fundamental-react", "LayoutGrid")
   @js.native
@@ -22,8 +21,8 @@ object LayoutGrid {
   
   @JSImport("fundamental-react", "LayoutGrid.contextTypes")
   @js.native
-  def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+  inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("fundamental-react", "LayoutGrid.defaultProps")
   @js.native

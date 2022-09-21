@@ -15,7 +15,7 @@ object VirtualDOM {
   @js.native
   trait EventHandler extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   type PatchFn[T /* <: Element */] = js.Function3[
@@ -85,13 +85,13 @@ object VirtualDOM {
     
     var count: Double
     
-    var descendantHooks: js.Array[js.Any]
+    var descendantHooks: js.Array[Any]
     
     var hasThunks: Boolean
     
     var hasWidgets: Boolean
     
-    var hooks: js.Array[js.Any]
+    var hooks: js.Array[Any]
     
     var key: js.UndefOr[String] = js.undefined
     
@@ -110,10 +110,10 @@ object VirtualDOM {
     inline def apply(
       children: js.Array[VTree],
       count: Double,
-      descendantHooks: js.Array[js.Any],
+      descendantHooks: js.Array[Any],
       hasThunks: Boolean,
       hasWidgets: Boolean,
-      hooks: js.Array[js.Any],
+      hooks: js.Array[Any],
       properties: VProperties,
       tagName: String,
       `type`: String,
@@ -128,21 +128,21 @@ object VirtualDOM {
       
       inline def setChildren(value: js.Array[VTree]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: VTree*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: VTree*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      inline def setDescendantHooks(value: js.Array[js.Any]): Self = StObject.set(x, "descendantHooks", value.asInstanceOf[js.Any])
+      inline def setDescendantHooks(value: js.Array[Any]): Self = StObject.set(x, "descendantHooks", value.asInstanceOf[js.Any])
       
-      inline def setDescendantHooksVarargs(value: js.Any*): Self = StObject.set(x, "descendantHooks", js.Array(value :_*))
+      inline def setDescendantHooksVarargs(value: Any*): Self = StObject.set(x, "descendantHooks", js.Array(value*))
       
       inline def setHasThunks(value: Boolean): Self = StObject.set(x, "hasThunks", value.asInstanceOf[js.Any])
       
       inline def setHasWidgets(value: Boolean): Self = StObject.set(x, "hasWidgets", value.asInstanceOf[js.Any])
       
-      inline def setHooks(value: js.Array[js.Any]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      inline def setHooks(value: js.Array[Any]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
-      inline def setHooksVarargs(value: js.Any*): Self = StObject.set(x, "hooks", js.Array(value :_*))
+      inline def setHooksVarargs(value: Any*): Self = StObject.set(x, "hooks", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -200,7 +200,7 @@ object VirtualDOM {
   // }
   trait VPatch extends StObject {
     
-    var patch: js.Any
+    var patch: Any
     
     /**
       type is set to 'VirtualPatch' on the prototype, but overridden in the
@@ -214,7 +214,7 @@ object VirtualDOM {
   }
   object VPatch {
     
-    inline def apply(patch: js.Any, `type`: Double, vNode: VNode, version: String): VPatch = {
+    inline def apply(patch: Any, `type`: Double, vNode: VNode, version: String): VPatch = {
       val __obj = js.Dynamic.literal(patch = patch.asInstanceOf[js.Any], vNode = vNode.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VPatch]
@@ -222,7 +222,7 @@ object VirtualDOM {
     
     extension [Self <: VPatch](x: Self) {
       
-      inline def setPatch(value: js.Any): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: Any): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
       inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -258,7 +258,7 @@ object VirtualDOM {
     on the indexer type.
     */
   /* index */ StringDictionary[
-          js.Any | String | Boolean | Double | VHook | EventHandler | (StringDictionary[String | Boolean | Double])
+          Any | String | Boolean | Double | VHook | EventHandler | (StringDictionary[String | Boolean | Double])
         ] {
     
     var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -269,7 +269,7 @@ object VirtualDOM {
       infer that {'fontSize': string; 'fontWeight': string;} is actually quite
       assignable to the type { [index: string]: string; }
       */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object VProperties {
     
@@ -284,7 +284,7 @@ object VirtualDOM {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -341,10 +341,10 @@ object VirtualDOM {
     inline def VNode(
       children: js.Array[VTree],
       count: Double,
-      descendantHooks: js.Array[js.Any],
+      descendantHooks: js.Array[Any],
       hasThunks: Boolean,
       hasWidgets: Boolean,
-      hooks: js.Array[js.Any],
+      hooks: js.Array[Any],
       properties: VProperties,
       tagName: String,
       `type`: String,

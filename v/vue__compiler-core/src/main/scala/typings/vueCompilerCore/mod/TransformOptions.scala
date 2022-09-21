@@ -6,13 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransformOptions extends StObject {
-  
-  /**
-    * Optional binding metadata analyzed from script - used to optimize
-    * binding access when `prefixIdentifiers` is enabled.
-    */
-  var bindingMetadata: js.UndefOr[BindingMetadata] = js.undefined
+trait TransformOptions
+  extends StObject
+     with SharedTransformCodegenOptions
+     with ErrorHandlingOptions
+     with CompilerCompatOptions {
   
   /**
     * Cache v-on handlers to avoid creating new inline functions on each render,
@@ -64,32 +62,21 @@ trait TransformOptions extends StObject {
     */
   var nodeTransforms: js.UndefOr[js.Array[NodeTransform]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ CompilerError, Unit]] = js.undefined
-  
-  /**
-    * Transform expressions like {{ foo }} to `_ctx.foo`.
-    * If this option is false, the generated code will be wrapped in a
-    * `with (this) { ... }` block.
-    * - This is force-enabled in module mode, since modules are by default strict
-    * and cannot use `with`
-    * @default mode === 'module'
-    */
-  var prefixIdentifiers: js.UndefOr[Boolean] = js.undefined
-  
   /**
     * SFC scoped styles ID
     */
   var scopeId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Generate SSR-optimized render functions instead.
-    * The resulting function must be attached to the component via the
-    * `ssrRender` option instead of `render`.
+    * Indicates this SFC template has used :slotted in its styles
+    * Defaults to `true` for backwards compatibility - SFC tooling should set it
+    * to `false` if no `:slotted` usage is detected in `<style>`
     */
-  var ssr: js.UndefOr[Boolean] = js.undefined
+  var slotted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * SFC `<style vars>` injection string
+    * Should already be an object expression, e.g. `{ 'xxxx-color': color }`
     * needed to render inline CSS variables on component root
     */
   var ssrCssVars: js.UndefOr[String] = js.undefined
@@ -110,10 +97,6 @@ object TransformOptions {
   
   extension [Self <: TransformOptions](x: Self) {
     
-    inline def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
-    
-    inline def setBindingMetadataUndefined: Self = StObject.set(x, "bindingMetadata", js.undefined)
-    
     inline def setCacheHandlers(value: Boolean): Self = StObject.set(x, "cacheHandlers", value.asInstanceOf[js.Any])
     
     inline def setCacheHandlersUndefined: Self = StObject.set(x, "cacheHandlers", js.undefined)
@@ -126,7 +109,7 @@ object TransformOptions {
     
     inline def setExpressionPluginsUndefined: Self = StObject.set(x, "expressionPlugins", js.undefined)
     
-    inline def setExpressionPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "expressionPlugins", js.Array(value :_*))
+    inline def setExpressionPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "expressionPlugins", js.Array(value*))
     
     inline def setHoistStatic(value: Boolean): Self = StObject.set(x, "hoistStatic", value.asInstanceOf[js.Any])
     
@@ -144,15 +127,7 @@ object TransformOptions {
     
     inline def setNodeTransformsUndefined: Self = StObject.set(x, "nodeTransforms", js.undefined)
     
-    inline def setNodeTransformsVarargs(value: NodeTransform*): Self = StObject.set(x, "nodeTransforms", js.Array(value :_*))
-    
-    inline def setOnError(value: /* error */ CompilerError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
-    
-    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
-    
-    inline def setPrefixIdentifiers(value: Boolean): Self = StObject.set(x, "prefixIdentifiers", value.asInstanceOf[js.Any])
-    
-    inline def setPrefixIdentifiersUndefined: Self = StObject.set(x, "prefixIdentifiers", js.undefined)
+    inline def setNodeTransformsVarargs(value: NodeTransform*): Self = StObject.set(x, "nodeTransforms", js.Array(value*))
     
     inline def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
     
@@ -160,13 +135,13 @@ object TransformOptions {
     
     inline def setScopeIdUndefined: Self = StObject.set(x, "scopeId", js.undefined)
     
-    inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+    inline def setSlotted(value: Boolean): Self = StObject.set(x, "slotted", value.asInstanceOf[js.Any])
+    
+    inline def setSlottedUndefined: Self = StObject.set(x, "slotted", js.undefined)
     
     inline def setSsrCssVars(value: String): Self = StObject.set(x, "ssrCssVars", value.asInstanceOf[js.Any])
     
     inline def setSsrCssVarsUndefined: Self = StObject.set(x, "ssrCssVars", js.undefined)
-    
-    inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
     
     inline def setTransformHoist(
       value: (/* children */ js.Array[TemplateChildNode], /* context */ TransformContext, /* parent */ ParentNode2) => Unit

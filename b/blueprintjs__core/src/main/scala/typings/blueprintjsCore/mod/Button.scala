@@ -1,7 +1,9 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.abstractButtonMod.IButtonProps
+import typings.blueprintjsCore.abstractButtonMod.ButtonProps
+import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.ButtonHTMLAttributes
+import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,10 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core", "Button")
 @js.native
-class Button protected ()
+open class Button protected ()
   extends typings.blueprintjsCore.componentsMod.Button {
-  def this(props: IButtonProps & ButtonHTMLAttributes[HTMLButtonElement]) = this()
-  def this(props: IButtonProps & ButtonHTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+  def this(props: ButtonProps[HTMLButtonElement] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement])) = this()
+  def this(
+    props: ButtonProps[HTMLButtonElement] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement]),
+    context: Any
+  ) = this()
 }
 /* static members */
 object Button {

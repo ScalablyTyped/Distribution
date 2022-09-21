@@ -4,61 +4,61 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "section.toJSON()". */
+/** An interface describing the data returned by calling `section.toJSON()`. */
 trait SectionData extends StObject {
   
   /**
-    *
     * The client url of the section. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var clientUrl: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the ID of the section. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * True if this section is encrypted with a password. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.2]
     */
   var isEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * True if this section is locked. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.2]
     */
   var isLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the name of the section. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The collection of pages in the section. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var pages: js.UndefOr[js.Array[PageData]] = js.undefined
   
   /**
-    *
     * The web url of the page. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var webUrl: js.UndefOr[String] = js.undefined
@@ -96,7 +96,7 @@ object SectionData {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: PageData*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: PageData*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Web.Syndication
 
-import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
@@ -32,7 +31,7 @@ trait ISyndicationItem
   
   var itemUri: Uri
   
-  var lastUpdatedTime: Date
+  var lastUpdatedTime: js.Date
   
   var links: IVector[SyndicationLink]
   
@@ -40,7 +39,7 @@ trait ISyndicationItem
   
   def loadFromXml(itemDocument: XmlDocument): Unit
   
-  var publishedDate: Date
+  var publishedDate: js.Date
   
   var rights: ISyndicationText
   
@@ -68,14 +67,14 @@ object ISyndicationItem {
     id: String,
     itemUri: Uri,
     language: String,
-    lastUpdatedTime: Date,
+    lastUpdatedTime: js.Date,
     links: IVector[SyndicationLink],
     load: String => Unit,
     loadFromXml: XmlDocument => Unit,
     nodeName: String,
     nodeNamespace: String,
     nodeValue: String,
-    publishedDate: Date,
+    publishedDate: js.Date,
     rights: ISyndicationText,
     source: SyndicationFeed,
     summary: ISyndicationText,
@@ -107,7 +106,7 @@ object ISyndicationItem {
     
     inline def setItemUri(value: Uri): Self = StObject.set(x, "itemUri", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedTime(value: Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLinks(value: IVector[SyndicationLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
@@ -115,7 +114,7 @@ object ISyndicationItem {
     
     inline def setLoadFromXml(value: XmlDocument => Unit): Self = StObject.set(x, "loadFromXml", js.Any.fromFunction1(value))
     
-    inline def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: js.Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
     inline def setRights(value: ISyndicationText): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ object typesMod {
   
   trait Network extends StObject {
     
-    var _defaultProvider: js.UndefOr[js.Function2[/* providers */ js.Any, /* options */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var _defaultProvider: js.UndefOr[js.Function2[/* providers */ Any, /* options */ js.UndefOr[Any], Any]] = js.undefined
     
     var chainId: Double
     
@@ -33,7 +33,7 @@ object typesMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def set_defaultProvider(value: (/* providers */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "_defaultProvider", js.Any.fromFunction2(value))
+      inline def set_defaultProvider(value: (/* providers */ Any, /* options */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "_defaultProvider", js.Any.fromFunction2(value))
       
       inline def set_defaultProviderUndefined: Self = StObject.set(x, "_defaultProvider", js.undefined)
     }

@@ -38,7 +38,7 @@ object PhysicalConnectionRequirements {
     
     inline def setSecurityGroupIdListUndefined: Self = StObject.set(x, "SecurityGroupIdList", js.undefined)
     
-    inline def setSecurityGroupIdListVarargs(value: NameString*): Self = StObject.set(x, "SecurityGroupIdList", js.Array(value :_*))
+    inline def setSecurityGroupIdListVarargs(value: NameString*): Self = StObject.set(x, "SecurityGroupIdList", js.Array(value*))
     
     inline def setSubnetId(value: NameString): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     

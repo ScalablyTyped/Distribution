@@ -8,9 +8,9 @@ trait ListBoxReorderEvent
   extends StObject
      with ListBoxEvent {
   
-  var dataItems: js.UndefOr[js.Any] = js.undefined
+  var dataItems: js.UndefOr[Any] = js.undefined
   
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[Any] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
 }
@@ -23,11 +23,11 @@ object ListBoxReorderEvent {
   
   extension [Self <: ListBoxReorderEvent](x: Self) {
     
-    inline def setDataItems(value: js.Any): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
+    inline def setDataItems(value: Any): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
     
     inline def setDataItemsUndefined: Self = StObject.set(x, "dataItems", js.undefined)
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     

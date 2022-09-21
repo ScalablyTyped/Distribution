@@ -96,15 +96,13 @@ trait IGeolocation
   var timeout: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Date) */
-  var timestamp: js.UndefOr[js.Any] = js.undefined
+  var timestamp: js.UndefOr[Any] = js.undefined
   
   /** [Method] Executes a onetime location update operation raising either a locationupdate or locationerror event
     * @param callback Function A callback method to be called when the location retrieval has been completed. Will be called on both success and failure. The method will be passed one parameter, Ext.util.Geolocation (this reference), set to null on failure. geo.updateLocation(function (geo) {  alert('Latitude: ' + (geo !== null ? geo.latitude : 'failed')); });
     * @param scope Object The scope (this reference) in which the handler function is executed. If omitted, defaults to the object which fired the event.
     */
-  var updateLocation: js.UndefOr[
-    js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var updateLocation: js.UndefOr[js.Function2[/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IGeolocation {
   
@@ -203,11 +201,11 @@ object IGeolocation {
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    inline def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    inline def setUpdateLocation(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateLocation", js.Any.fromFunction2(value))
+    inline def setUpdateLocation(value: (/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateLocation", js.Any.fromFunction2(value))
     
     inline def setUpdateLocationUndefined: Self = StObject.set(x, "updateLocation", js.undefined)
   }

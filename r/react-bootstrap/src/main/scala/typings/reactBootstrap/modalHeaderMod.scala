@@ -10,12 +10,10 @@ object modalHeaderMod {
   
   @JSImport("react-bootstrap/lib/ModalHeader", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ModalHeaderProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ModalHeaderProps, js.Object, Any]
   
-  @js.native
-  trait ModalHeader
-    extends Component[ModalHeaderProps, js.Object, js.Any]
+  type ModalHeader = Component[ModalHeaderProps, js.Object, Any]
   
   trait ModalHeaderProps
     extends StObject

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "inkStrokeCollection.toJSON()". */
+/** An interface describing the data returned by calling `inkStrokeCollection.toJSON()`. */
 trait InkStrokeCollectionData extends StObject {
   
   var items: js.UndefOr[js.Array[InkStrokeData]] = js.undefined
@@ -22,6 +22,6 @@ object InkStrokeCollectionData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: InkStrokeData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InkStrokeData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

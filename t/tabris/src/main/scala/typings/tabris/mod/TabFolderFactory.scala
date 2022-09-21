@@ -10,5 +10,5 @@ trait TabFolderFactory
   extends Factory[
       TabFolderConstructor, 
       InstanceType[TabFolderConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[TabFolderConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

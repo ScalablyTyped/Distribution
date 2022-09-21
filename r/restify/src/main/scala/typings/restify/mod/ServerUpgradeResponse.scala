@@ -10,7 +10,7 @@ trait ServerUpgradeResponse extends StObject {
   /**
     * Attempt to upgrade.
     */
-  def claimUpgrade(): js.Any = js.native
+  def claimUpgrade(): Any = js.native
   
   /**
     * Ends the response
@@ -21,13 +21,13 @@ trait ServerUpgradeResponse extends StObject {
     * Sends the response.
     * @param body - the response to send out
     */
-  def send(body: js.Any): Boolean = js.native
+  def send(body: Any): Boolean = js.native
   /**
     * Sends the response.
     * @param code - the http status code
     * @param body - the response to send out
     */
-  def send(code: Double, body: js.Any): js.Any = js.native
+  def send(code: Double, body: Any): Any = js.native
   
   /**
     * Set the status code of the response.

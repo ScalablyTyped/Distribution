@@ -14,10 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Dimmer")
 @js.native
-class Dimmer protected ()
-  extends Component[DimmerProps, ComponentState, js.Any] {
+open class Dimmer protected () extends Component[DimmerProps, ComponentState, Any] {
   def this(props: DimmerProps) = this()
-  def this(props: DimmerProps, context: js.Any) = this()
+  def this(props: DimmerProps, context: Any) = this()
 }
 object Dimmer extends Shortcut {
   
@@ -28,16 +27,15 @@ object Dimmer extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Dimmer.Dimmable")
   @js.native
-  class Dimmable protected ()
-    extends Component[DimmerDimmableProps, ComponentState, js.Any] {
+  open class Dimmable protected () extends Component[DimmerDimmableProps, ComponentState, Any] {
     def this(props: DimmerDimmableProps) = this()
-    def this(props: DimmerDimmableProps, context: js.Any) = this()
+    def this(props: DimmerDimmableProps, context: Any) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Dimmer.Inner")
   @js.native
-  class Inner () extends default
+  open class Inner () extends default
   
   type _To = DimmerComponent
   

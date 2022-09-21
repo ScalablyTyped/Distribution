@@ -11,19 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.StateResultsProvided<any>> */
 trait PartialStateResultsProvid extends StObject {
   
-  var allSearchResults: js.UndefOr[AllSearchResults[js.Any]] = js.undefined
+  var allSearchResults: js.UndefOr[AllSearchResults[Any]] = js.undefined
   
   var error: js.UndefOr[AlgoliaError] = js.undefined
   
-  var isSearchStalled: js.UndefOr[js.Any] = js.undefined
+  var isSearchStalled: js.UndefOr[Any] = js.undefined
   
-  var searchResults: js.UndefOr[SearchResults[js.Any]] = js.undefined
+  var searchResults: js.UndefOr[SearchResults[Any]] = js.undefined
   
   var searchState: js.UndefOr[SearchState] = js.undefined
   
   var searching: js.UndefOr[Boolean] = js.undefined
   
-  var searchingForFacetValues: js.UndefOr[js.Any] = js.undefined
+  var searchingForFacetValues: js.UndefOr[Any] = js.undefined
 }
 object PartialStateResultsProvid {
   
@@ -34,7 +34,7 @@ object PartialStateResultsProvid {
   
   extension [Self <: PartialStateResultsProvid](x: Self) {
     
-    inline def setAllSearchResults(value: AllSearchResults[js.Any]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])
+    inline def setAllSearchResults(value: AllSearchResults[Any]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])
     
     inline def setAllSearchResultsUndefined: Self = StObject.set(x, "allSearchResults", js.undefined)
     
@@ -42,11 +42,11 @@ object PartialStateResultsProvid {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setIsSearchStalled(value: js.Any): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
+    inline def setIsSearchStalled(value: Any): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
     
     inline def setIsSearchStalledUndefined: Self = StObject.set(x, "isSearchStalled", js.undefined)
     
-    inline def setSearchResults(value: SearchResults[js.Any]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
+    inline def setSearchResults(value: SearchResults[Any]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
     
     inline def setSearchResultsUndefined: Self = StObject.set(x, "searchResults", js.undefined)
     
@@ -56,7 +56,7 @@ object PartialStateResultsProvid {
     
     inline def setSearching(value: Boolean): Self = StObject.set(x, "searching", value.asInstanceOf[js.Any])
     
-    inline def setSearchingForFacetValues(value: js.Any): Self = StObject.set(x, "searchingForFacetValues", value.asInstanceOf[js.Any])
+    inline def setSearchingForFacetValues(value: Any): Self = StObject.set(x, "searchingForFacetValues", value.asInstanceOf[js.Any])
     
     inline def setSearchingForFacetValuesUndefined: Self = StObject.set(x, "searchingForFacetValues", js.undefined)
     

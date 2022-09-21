@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object dropDownArrowMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/DropDownArrow", JSImport.Default)
   @js.native
-  val default: SFC[DropDownArrowProps] = js.native
+  val default: FC[DropDownArrowProps] = js.native
   
   trait DropDownArrowProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object DropDownArrowProps {
     
@@ -29,14 +29,14 @@ object dropDownArrowMod extends Shortcut {
     
     extension [Self <: DropDownArrowProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[DropDownArrowProps]
+  type _To = FC[DropDownArrowProps]
   
   /* This means you don't have to write `default`, but can instead just say `dropDownArrowMod.foo` */
-  override def _to: SFC[DropDownArrowProps] = default
+  override def _to: FC[DropDownArrowProps] = default
 }

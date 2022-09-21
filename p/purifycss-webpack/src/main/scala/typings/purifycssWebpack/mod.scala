@@ -1,6 +1,7 @@
 package typings.purifycssWebpack
 
 import typings.purifycssWebpack.anon.Info
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("purifycss-webpack", JSImport.Namespace)
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("purifycss-webpack", JSImport.Namespace)
   @js.native
-  class ^ () extends StObject {
+  open class ^ () extends StObject {
     def this(options: PurifyOptions) = this()
   }
   
@@ -45,13 +46,13 @@ object mod {
       
       inline def setModuleExtensionsUndefined: Self = StObject.set(x, "moduleExtensions", js.undefined)
       
-      inline def setModuleExtensionsVarargs(value: String*): Self = StObject.set(x, "moduleExtensions", js.Array(value :_*))
+      inline def setModuleExtensionsVarargs(value: String*): Self = StObject.set(x, "moduleExtensions", js.Array(value*))
       
       inline def setPaths(value: js.Object | js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
       
       inline def setPurifyOptions(value: Info): Self = StObject.set(x, "purifyOptions", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,7 @@ object mod {
       
       inline def setStyleExtensionsUndefined: Self = StObject.set(x, "styleExtensions", js.undefined)
       
-      inline def setStyleExtensionsVarargs(value: String*): Self = StObject.set(x, "styleExtensions", js.Array(value :_*))
+      inline def setStyleExtensionsVarargs(value: String*): Self = StObject.set(x, "styleExtensions", js.Array(value*))
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
@@ -69,5 +70,5 @@ object mod {
     }
   }
   
-  type PurifyPlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
+  type PurifyPlugin = Plugin
 }

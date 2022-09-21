@@ -10,14 +10,14 @@ trait AdditionalUserInfo extends StObject {
   
   var profile: js.Object | Null
   
-  var providerId: String
+  var providerId: String | Null
   
   var username: js.UndefOr[String | Null] = js.undefined
 }
 object AdditionalUserInfo {
   
-  inline def apply(isNewUser: Boolean, providerId: String): AdditionalUserInfo = {
-    val __obj = js.Dynamic.literal(isNewUser = isNewUser.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any], profile = null)
+  inline def apply(isNewUser: Boolean): AdditionalUserInfo = {
+    val __obj = js.Dynamic.literal(isNewUser = isNewUser.asInstanceOf[js.Any], profile = null, providerId = null)
     __obj.asInstanceOf[AdditionalUserInfo]
   }
   
@@ -30,6 +30,8 @@ object AdditionalUserInfo {
     inline def setProfileNull: Self = StObject.set(x, "profile", null)
     
     inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    
+    inline def setProviderIdNull: Self = StObject.set(x, "providerId", null)
     
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     

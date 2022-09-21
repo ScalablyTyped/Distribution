@@ -58,7 +58,7 @@ object UpdatePortfolioInput {
     
     inline def setAddTagsUndefined: Self = StObject.set(x, "AddTags", js.undefined)
     
-    inline def setAddTagsVarargs(value: Tag*): Self = StObject.set(x, "AddTags", js.Array(value :_*))
+    inline def setAddTagsVarargs(value: Tag*): Self = StObject.set(x, "AddTags", js.Array(value*))
     
     inline def setDescription(value: PortfolioDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -78,6 +78,6 @@ object UpdatePortfolioInput {
     
     inline def setRemoveTagsUndefined: Self = StObject.set(x, "RemoveTags", js.undefined)
     
-    inline def setRemoveTagsVarargs(value: TagKey*): Self = StObject.set(x, "RemoveTags", js.Array(value :_*))
+    inline def setRemoveTagsVarargs(value: TagKey*): Self = StObject.set(x, "RemoveTags", js.Array(value*))
   }
 }

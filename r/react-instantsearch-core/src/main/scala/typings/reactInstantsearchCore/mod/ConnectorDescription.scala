@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConnectorDescription[TProvided, TExposed] extends StObject {
   
+  @JSName("$$type")
+  var DollarDollartype: js.UndefOr[String] = js.undefined
+  
   /**
     * This method is called when a widget is about to unmount in order to clean the searchState.
     * It takes in the current props of the higher-order component and the searchState of all widgets and expect a new searchState in return.
@@ -17,14 +20,14 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var cleanUp: js.UndefOr[
     js.ThisFunction2[
-      /* this */ Component[TExposed, js.Object, js.Any], 
+      /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
       /* props */ TExposed, 
       /* searchState */ SearchState, 
       SearchState
     ]
   ] = js.undefined
   
-  var defaultProps: js.UndefOr[js.Any] = js.undefined
+  var defaultProps: js.UndefOr[Any] = js.undefined
   
   var displayName: String
   
@@ -39,11 +42,11 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var getMetadata: js.UndefOr[
     js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, js.Any], 
+      /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
       /* props */ TExposed, 
       /* searchState */ SearchState, 
-      /* repeated */ js.Any, 
-      js.Any
+      /* repeated */ Any, 
+      Any
     ]
   ] = js.undefined
   
@@ -59,9 +62,9 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
   def getProvidedProps(
     props: TExposed,
     searchState: SearchState,
-    searchResults: ConnectorSearchResults[js.Any],
-    metadata: js.Any,
-    resultsFacetValues: js.Any
+    searchResults: ConnectorSearchResults[Any],
+    metadata: Any,
+    resultsFacetValues: Any
   ): TProvided
   
   /**
@@ -73,7 +76,7 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var getSearchParameters: js.UndefOr[
     js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, js.Any], 
+      /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
       /* searchParameters */ SearchParameters, 
       /* props */ TExposed, 
       /* searchState */ SearchState, 
@@ -81,7 +84,7 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     ]
   ] = js.undefined
   
-  var propTypes: js.UndefOr[js.Any] = js.undefined
+  var propTypes: js.UndefOr[Any] = js.undefined
   
   /**
     * This method defines exactly how the refine prop of widgets affects the search state.
@@ -90,10 +93,10 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var refine: js.UndefOr[
     js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, js.Any], 
+      /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
       /* props */ TExposed, 
       /* searchState */ SearchState, 
-      /* repeated */ js.Any, 
+      /* repeated */ Any, 
       SearchState
     ]
   ] = js.undefined
@@ -106,10 +109,10 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
     */
   var searchForFacetValues: js.UndefOr[
     js.ThisFunction2[
-      /* this */ Component[TExposed, js.Object, js.Any], 
+      /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
       /* searchState */ SearchState, 
-      /* nextRefinement */ js.UndefOr[js.Any], 
-      js.Any
+      /* nextRefinement */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
 }
@@ -117,7 +120,7 @@ object ConnectorDescription {
   
   inline def apply[TProvided, TExposed](
     displayName: String,
-    getProvidedProps: (TExposed, SearchState, ConnectorSearchResults[js.Any], js.Any, js.Any) => TProvided
+    getProvidedProps: (TExposed, SearchState, ConnectorSearchResults[Any], Any, Any) => TProvided
   ): ConnectorDescription[TProvided, TExposed] = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], getProvidedProps = js.Any.fromFunction5(getProvidedProps))
     __obj.asInstanceOf[ConnectorDescription[TProvided, TExposed]]
@@ -127,7 +130,7 @@ object ConnectorDescription {
     
     inline def setCleanUp(
       value: js.ThisFunction2[
-          /* this */ Component[TExposed, js.Object, js.Any], 
+          /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
           /* props */ TExposed, 
           /* searchState */ SearchState, 
           SearchState
@@ -136,29 +139,33 @@ object ConnectorDescription {
     
     inline def setCleanUpUndefined: Self = StObject.set(x, "cleanUp", js.undefined)
     
-    inline def setDefaultProps(value: js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
+    inline def setDollarDollartype(value: String): Self = StObject.set(x, "$$type", value.asInstanceOf[js.Any])
+    
+    inline def setDollarDollartypeUndefined: Self = StObject.set(x, "$$type", js.undefined)
+    
     inline def setGetMetadata(
       value: js.ThisFunction3[
-          /* this */ Component[TExposed, js.Object, js.Any], 
+          /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
           /* props */ TExposed, 
           /* searchState */ SearchState, 
-          /* repeated */ js.Any, 
-          js.Any
+          /* repeated */ Any, 
+          Any
         ]
     ): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
     inline def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
     
-    inline def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[js.Any], js.Any, js.Any) => TProvided): Self = StObject.set(x, "getProvidedProps", js.Any.fromFunction5(value))
+    inline def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[Any], Any, Any) => TProvided): Self = StObject.set(x, "getProvidedProps", js.Any.fromFunction5(value))
     
     inline def setGetSearchParameters(
       value: js.ThisFunction3[
-          /* this */ Component[TExposed, js.Object, js.Any], 
+          /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
           /* searchParameters */ SearchParameters, 
           /* props */ TExposed, 
           /* searchState */ SearchState, 
@@ -168,16 +175,16 @@ object ConnectorDescription {
     
     inline def setGetSearchParametersUndefined: Self = StObject.set(x, "getSearchParameters", js.undefined)
     
-    inline def setPropTypes(value: js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+    inline def setPropTypes(value: Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
     inline def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
     
     inline def setRefine(
       value: js.ThisFunction3[
-          /* this */ Component[TExposed, js.Object, js.Any], 
+          /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
           /* props */ TExposed, 
           /* searchState */ SearchState, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           SearchState
         ]
     ): Self = StObject.set(x, "refine", value.asInstanceOf[js.Any])
@@ -186,10 +193,10 @@ object ConnectorDescription {
     
     inline def setSearchForFacetValues(
       value: js.ThisFunction2[
-          /* this */ Component[TExposed, js.Object, js.Any], 
+          /* this */ (Component[TExposed, js.Object, Any]) & ConnectedWidget, 
           /* searchState */ SearchState, 
-          /* nextRefinement */ js.UndefOr[js.Any], 
-          js.Any
+          /* nextRefinement */ js.UndefOr[Any], 
+          Any
         ]
     ): Self = StObject.set(x, "searchForFacetValues", value.asInstanceOf[js.Any])
     

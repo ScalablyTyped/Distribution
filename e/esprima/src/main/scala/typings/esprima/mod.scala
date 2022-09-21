@@ -426,22 +426,14 @@ object mod {
   }
   
   inline def parseModule(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
-  inline def parseModule(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parseModule(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
   inline def parseModule(input: String, config: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Program]
-  inline def parseModule(
-    input: String,
-    config: ParseOptions,
-    delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]
-  ): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parseModule(input: String, config: ParseOptions, delegate: js.Function2[/* node */ Node, /* meta */ Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
   
   inline def parseScript(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
-  inline def parseScript(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parseScript(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
   inline def parseScript(input: String, config: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Program]
-  inline def parseScript(
-    input: String,
-    config: ParseOptions,
-    delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]
-  ): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parseScript(input: String, config: ParseOptions, delegate: js.Function2[/* node */ Node, /* meta */ Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
   
   inline def tokenize(input: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
   inline def tokenize(input: String, config: TokenizeOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
@@ -519,7 +511,7 @@ object mod {
       
       inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
       
-      inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value*))
     }
   }
   

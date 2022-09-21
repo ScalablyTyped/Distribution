@@ -31,6 +31,6 @@ object ListWorkforcesResponse {
     
     inline def setWorkforces(value: Workforces): Self = StObject.set(x, "Workforces", value.asInstanceOf[js.Any])
     
-    inline def setWorkforcesVarargs(value: Workforce*): Self = StObject.set(x, "Workforces", js.Array(value :_*))
+    inline def setWorkforcesVarargs(value: Workforce*): Self = StObject.set(x, "Workforces", js.Array(value*))
   }
 }

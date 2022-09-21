@@ -8,7 +8,6 @@ import typings.cucumberMessages.cucumberMessagesStrings.docString
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new PickleStepArgument.
   * @param [properties] Properties to set
   */
-class PickleStepArgument ()
+open class PickleStepArgument ()
   extends StObject
      with IPickleStepArgument {
   def this(properties: IPickleStepArgument) = this()
@@ -32,7 +31,7 @@ class PickleStepArgument ()
     * Converts this PickleStepArgument to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object PickleStepArgument {
   
@@ -47,7 +46,7 @@ object PickleStepArgument {
     * Constructs a new PickleDocString.
     * @param [properties] Properties to set
     */
-  class PickleDocString ()
+  open class PickleDocString ()
     extends StObject
        with IPickleDocString {
     def this(properties: IPickleDocString) = this()
@@ -64,7 +63,7 @@ object PickleStepArgument {
       * Converts this PickleDocString to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object PickleDocString {
     
@@ -81,6 +80,8 @@ object PickleStepArgument {
     inline def create(): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleDocString]
     inline def create(properties: IPickleDocString): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
     
+    inline def decode(reader: js.typedarray.Uint8Array): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleDocString]
     /**
       * Decodes a PickleDocString message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -92,9 +93,8 @@ object PickleStepArgument {
     /* static member */
     inline def decode(reader: Reader): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
     inline def decode(reader: Reader, length: Double): PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleDocString]
-    inline def decode(reader: Uint8Array): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
-    inline def decode(reader: Uint8Array, length: Double): PickleDocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleDocString]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
     /**
       * Decodes a PickleDocString message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -104,7 +104,6 @@ object PickleStepArgument {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
-    inline def decodeDelimited(reader: Uint8Array): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
     
     /**
       * Encodes the specified PickleDocString message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleDocString.verify|verify} messages.
@@ -132,7 +131,7 @@ object PickleStepArgument {
       * @returns PickleDocString
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
+    inline def fromObject(`object`: StringDictionary[Any]): PickleDocString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleDocString]
     
     /**
       * Creates a plain object from a PickleDocString message. Also converts values to other types if specified.
@@ -141,8 +140,8 @@ object PickleStepArgument {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: PickleDocString): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: PickleDocString, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: PickleDocString): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: PickleDocString, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a PickleDocString message.
@@ -150,7 +149,7 @@ object PickleStepArgument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a PickleTable. */
@@ -160,7 +159,7 @@ object PickleStepArgument {
     * Constructs a new PickleTable.
     * @param [properties] Properties to set
     */
-  class PickleTable ()
+  open class PickleTable ()
     extends StObject
        with IPickleTable {
     def this(properties: IPickleTable) = this()
@@ -173,7 +172,7 @@ object PickleStepArgument {
       * Converts this PickleTable to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object PickleTable {
     
@@ -188,7 +187,7 @@ object PickleStepArgument {
       * Constructs a new PickleTableRow.
       * @param [properties] Properties to set
       */
-    class PickleTableRow ()
+    open class PickleTableRow ()
       extends StObject
          with IPickleTableRow {
       def this(properties: IPickleTableRow) = this()
@@ -201,7 +200,7 @@ object PickleStepArgument {
         * Converts this PickleTableRow to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object PickleTableRow {
       
@@ -216,7 +215,7 @@ object PickleStepArgument {
         * Constructs a new PickleTableCell.
         * @param [properties] Properties to set
         */
-      class PickleTableCell ()
+      open class PickleTableCell ()
         extends StObject
            with IPickleTableCell {
         def this(properties: IPickleTableCell) = this()
@@ -225,7 +224,7 @@ object PickleStepArgument {
           * Converts this PickleTableCell to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
         
         /** PickleTableCell value. */
         @JSName("value")
@@ -246,6 +245,8 @@ object PickleStepArgument {
         inline def create(): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleTableCell]
         inline def create(properties: IPickleTableCell): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
         
+        inline def decode(reader: js.typedarray.Uint8Array): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableCell]
         /**
           * Decodes a PickleTableCell message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -257,9 +258,8 @@ object PickleStepArgument {
         /* static member */
         inline def decode(reader: Reader): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
         inline def decode(reader: Reader, length: Double): PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableCell]
-        inline def decode(reader: Uint8Array): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
-        inline def decode(reader: Uint8Array, length: Double): PickleTableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableCell]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
         /**
           * Decodes a PickleTableCell message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -269,7 +269,6 @@ object PickleStepArgument {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
-        inline def decodeDelimited(reader: Uint8Array): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
         
         /**
           * Encodes the specified PickleTableCell message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.PickleTableCell.verify|verify} messages.
@@ -297,7 +296,7 @@ object PickleStepArgument {
           * @returns PickleTableCell
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
+        inline def fromObject(`object`: StringDictionary[Any]): PickleTableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTableCell]
         
         /**
           * Creates a plain object from a PickleTableCell message. Also converts values to other types if specified.
@@ -306,8 +305,8 @@ object PickleStepArgument {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: PickleTableCell): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: PickleTableCell, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: PickleTableCell): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: PickleTableCell, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a PickleTableCell message.
@@ -315,7 +314,7 @@ object PickleStepArgument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -327,6 +326,8 @@ object PickleStepArgument {
       inline def create(): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleTableRow]
       inline def create(properties: IPickleTableRow): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
       
+      inline def decode(reader: js.typedarray.Uint8Array): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableRow]
       /**
         * Decodes a PickleTableRow message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -338,9 +339,8 @@ object PickleStepArgument {
       /* static member */
       inline def decode(reader: Reader): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
       inline def decode(reader: Reader, length: Double): PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableRow]
-      inline def decode(reader: Uint8Array): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
-      inline def decode(reader: Uint8Array, length: Double): PickleTableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTableRow]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
       /**
         * Decodes a PickleTableRow message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -350,7 +350,6 @@ object PickleStepArgument {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
-      inline def decodeDelimited(reader: Uint8Array): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
       
       /**
         * Encodes the specified PickleTableRow message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.PickleTableRow.verify|verify} messages.
@@ -378,7 +377,7 @@ object PickleStepArgument {
         * @returns PickleTableRow
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
+      inline def fromObject(`object`: StringDictionary[Any]): PickleTableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTableRow]
       
       /**
         * Creates a plain object from a PickleTableRow message. Also converts values to other types if specified.
@@ -387,8 +386,8 @@ object PickleStepArgument {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: PickleTableRow): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: PickleTableRow, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: PickleTableRow): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: PickleTableRow, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a PickleTableRow message.
@@ -396,7 +395,7 @@ object PickleStepArgument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a PickleTableCell. */
       trait IPickleTableCell extends StObject {
@@ -431,6 +430,8 @@ object PickleStepArgument {
     inline def create(): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleTable]
     inline def create(properties: IPickleTable): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
     
+    inline def decode(reader: js.typedarray.Uint8Array): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTable]
     /**
       * Decodes a PickleTable message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -442,9 +443,8 @@ object PickleStepArgument {
     /* static member */
     inline def decode(reader: Reader): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
     inline def decode(reader: Reader, length: Double): PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTable]
-    inline def decode(reader: Uint8Array): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
-    inline def decode(reader: Uint8Array, length: Double): PickleTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleTable]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
     /**
       * Decodes a PickleTable message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -454,7 +454,6 @@ object PickleStepArgument {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
-    inline def decodeDelimited(reader: Uint8Array): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
     
     /**
       * Encodes the specified PickleTable message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.PickleTable.verify|verify} messages.
@@ -482,7 +481,7 @@ object PickleStepArgument {
       * @returns PickleTable
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
+    inline def fromObject(`object`: StringDictionary[Any]): PickleTable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleTable]
     
     /**
       * Creates a plain object from a PickleTable message. Also converts values to other types if specified.
@@ -491,8 +490,8 @@ object PickleStepArgument {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: PickleTable): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: PickleTable, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: PickleTable): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: PickleTable, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a PickleTable message.
@@ -500,7 +499,7 @@ object PickleStepArgument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a PickleTableRow. */
     trait IPickleTableRow extends StObject {
@@ -523,7 +522,7 @@ object PickleStepArgument {
         
         inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
         
-        inline def setCellsVarargs(value: IPickleTableCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+        inline def setCellsVarargs(value: IPickleTableCell*): Self = StObject.set(x, "cells", js.Array(value*))
       }
     }
   }
@@ -537,6 +536,8 @@ object PickleStepArgument {
   inline def create(): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PickleStepArgument]
   inline def create(properties: IPickleStepArgument): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
   
+  inline def decode(reader: js.typedarray.Uint8Array): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleStepArgument]
   /**
     * Decodes a PickleStepArgument message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -548,9 +549,8 @@ object PickleStepArgument {
   /* static member */
   inline def decode(reader: Reader): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
   inline def decode(reader: Reader, length: Double): PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleStepArgument]
-  inline def decode(reader: Uint8Array): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
-  inline def decode(reader: Uint8Array, length: Double): PickleStepArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PickleStepArgument]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
   /**
     * Decodes a PickleStepArgument message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -560,7 +560,6 @@ object PickleStepArgument {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
-  inline def decodeDelimited(reader: Uint8Array): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
   
   /**
     * Encodes the specified PickleStepArgument message. Does not implicitly {@link io.cucumber.messages.PickleStepArgument.verify|verify} messages.
@@ -588,7 +587,7 @@ object PickleStepArgument {
     * @returns PickleStepArgument
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
+  inline def fromObject(`object`: StringDictionary[Any]): PickleStepArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PickleStepArgument]
   
   /**
     * Creates a plain object from a PickleStepArgument message. Also converts values to other types if specified.
@@ -597,8 +596,8 @@ object PickleStepArgument {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: PickleStepArgument): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: PickleStepArgument, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: PickleStepArgument): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: PickleStepArgument, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a PickleStepArgument message.
@@ -606,7 +605,7 @@ object PickleStepArgument {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a PickleDocString. */
   trait IPickleDocString extends StObject {
@@ -661,7 +660,7 @@ object PickleStepArgument {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setRowsVarargs(value: IPickleTableRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: IPickleTableRow*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
 }

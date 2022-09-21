@@ -1,5 +1,10 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.Available_
+import typings.awsSdk.awsSdkStrings.PUBLISHED_TIME
+import typings.node.bufferMod.global.Buffer
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +12,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AccountId = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOW
+  - typings.awsSdk.awsSdkStrings.BLOCK
+  - java.lang.String
+*/
+type AllowPublish = _AllowPublish | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOW
+  - typings.awsSdk.awsSdkStrings.BLOCK
+  - java.lang.String
+*/
+type AllowUpstream = _AllowUpstream | java.lang.String
+
 type Arn = java.lang.String
 
-type Asset = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.codeartifactMod.Blob | java.lang.String | typings.node.streamMod.Readable
+type Asset = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String | Readable
 
-type AssetHashes = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codeartifactMod.HashValue]
+type AssetHashes = StringDictionary[HashValue]
 
 type AssetName = java.lang.String
 
-type AssetSummaryList = js.Array[typings.awsSdk.codeartifactMod.AssetSummary]
+type AssetSummaryList = js.Array[AssetSummary]
 
-type AuthorizationTokenDurationSeconds = scala.Double
+type AuthorizationTokenDurationSeconds = Double
 
-type BooleanOptional = scala.Boolean
+type BooleanOptional = Boolean
 
 type Description = java.lang.String
 
@@ -30,15 +49,15 @@ type DomainName = java.lang.String
   - typings.awsSdk.awsSdkStrings.Deleted_
   - java.lang.String
 */
-type DomainStatus = typings.awsSdk.codeartifactMod._DomainStatus | java.lang.String
+type DomainStatus = _DomainStatus | java.lang.String
 
-type DomainSummaryList = js.Array[typings.awsSdk.codeartifactMod.DomainSummary]
+type DomainSummaryList = js.Array[DomainSummary]
 
 type ErrorMessage = java.lang.String
 
 type ExternalConnectionName = java.lang.String
 
-type ExternalConnectionStatus = typings.awsSdk.awsSdkStrings.Available_ | java.lang.String
+type ExternalConnectionStatus = Available_ | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MD5
@@ -47,45 +66,46 @@ type ExternalConnectionStatus = typings.awsSdk.awsSdkStrings.Available_ | java.l
   - typings.awsSdk.awsSdkStrings.`SHA-512`
   - java.lang.String
 */
-type HashAlgorithm = typings.awsSdk.codeartifactMod._HashAlgorithm | java.lang.String
+type HashAlgorithm = _HashAlgorithm | java.lang.String
 
 type HashValue = java.lang.String
 
-type Integer = scala.Double
+type Integer = Double
 
-type LicenseInfoList = js.Array[typings.awsSdk.codeartifactMod.LicenseInfo]
+type LicenseInfoList = js.Array[LicenseInfo]
 
-type ListDomainsMaxResults = scala.Double
+type ListDomainsMaxResults = Double
 
-type ListPackageVersionAssetsMaxResults = scala.Double
+type ListPackageVersionAssetsMaxResults = Double
 
-type ListPackageVersionsMaxResults = scala.Double
+type ListPackageVersionsMaxResults = Double
 
-type ListPackagesMaxResults = scala.Double
+type ListPackagesMaxResults = Double
 
-type ListRepositoriesInDomainMaxResults = scala.Double
+type ListRepositoriesInDomainMaxResults = Double
 
-type ListRepositoriesMaxResults = scala.Double
+type ListRepositoriesMaxResults = Double
 
-type Long = scala.Double
+type Long = Double
 
-type LongOptional = scala.Double
+type LongOptional = Double
 
-type PackageDependencyList = js.Array[typings.awsSdk.codeartifactMod.PackageDependency]
+type PackageDependencyList = js.Array[PackageDependency]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.npm
+  - typings.awsSdk.awsSdkStrings.npm_
   - typings.awsSdk.awsSdkStrings.pypi
   - typings.awsSdk.awsSdkStrings.maven
+  - typings.awsSdk.awsSdkStrings.nuget_
   - java.lang.String
 */
-type PackageFormat = typings.awsSdk.codeartifactMod._PackageFormat | java.lang.String
+type PackageFormat = _PackageFormat | java.lang.String
 
 type PackageName = java.lang.String
 
 type PackageNamespace = java.lang.String
 
-type PackageSummaryList = js.Array[typings.awsSdk.codeartifactMod.PackageSummary]
+type PackageSummaryList = js.Array[PackageSummary]
 
 type PackageVersion = java.lang.String
 
@@ -98,17 +118,25 @@ type PackageVersion = java.lang.String
   - typings.awsSdk.awsSdkStrings.SKIPPED
   - java.lang.String
 */
-type PackageVersionErrorCode = typings.awsSdk.codeartifactMod._PackageVersionErrorCode | java.lang.String
+type PackageVersionErrorCode = _PackageVersionErrorCode | java.lang.String
 
-type PackageVersionErrorMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codeartifactMod.PackageVersionError]
+type PackageVersionErrorMap = StringDictionary[PackageVersionError]
 
-type PackageVersionList = js.Array[typings.awsSdk.codeartifactMod.PackageVersion]
+type PackageVersionList = js.Array[PackageVersion]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INTERNAL
+  - typings.awsSdk.awsSdkStrings.EXTERNAL
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - java.lang.String
+*/
+type PackageVersionOriginType = _PackageVersionOriginType | java.lang.String
 
 type PackageVersionRevision = java.lang.String
 
-type PackageVersionRevisionMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codeartifactMod.PackageVersionRevision]
+type PackageVersionRevisionMap = StringDictionary[PackageVersionRevision]
 
-type PackageVersionSortType = typings.awsSdk.awsSdkStrings.PUBLISHED_TIME | java.lang.String
+type PackageVersionSortType = PUBLISHED_TIME | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Published_
@@ -119,9 +147,9 @@ type PackageVersionSortType = typings.awsSdk.awsSdkStrings.PUBLISHED_TIME | java
   - typings.awsSdk.awsSdkStrings.Deleted_
   - java.lang.String
 */
-type PackageVersionStatus = typings.awsSdk.codeartifactMod._PackageVersionStatus | java.lang.String
+type PackageVersionStatus = _PackageVersionStatus | java.lang.String
 
-type PackageVersionSummaryList = js.Array[typings.awsSdk.codeartifactMod.PackageVersionSummary]
+type PackageVersionSummaryList = js.Array[PackageVersionSummary]
 
 type PaginationToken = java.lang.String
 
@@ -129,35 +157,35 @@ type PolicyDocument = java.lang.String
 
 type PolicyRevision = java.lang.String
 
-type RepositoryExternalConnectionInfoList = js.Array[typings.awsSdk.codeartifactMod.RepositoryExternalConnectionInfo]
+type RepositoryExternalConnectionInfoList = js.Array[RepositoryExternalConnectionInfo]
 
 type RepositoryName = java.lang.String
 
-type RepositorySummaryList = js.Array[typings.awsSdk.codeartifactMod.RepositorySummary]
+type RepositorySummaryList = js.Array[RepositorySummary]
 
 type String = java.lang.String
 
 type String255 = java.lang.String
 
-type SuccessfulPackageVersionInfoMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codeartifactMod.SuccessfulPackageVersionInfo]
+type SuccessfulPackageVersionInfoMap = StringDictionary[SuccessfulPackageVersionInfo]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.codeartifactMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.codeartifactMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type UpstreamRepositoryInfoList = js.Array[typings.awsSdk.codeartifactMod.UpstreamRepositoryInfo]
+type UpstreamRepositoryInfoList = js.Array[UpstreamRepositoryInfo]
 
-type UpstreamRepositoryList = js.Array[typings.awsSdk.codeartifactMod.UpstreamRepository]
+type UpstreamRepositoryList = js.Array[UpstreamRepository]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-09-22`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.codeartifactMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

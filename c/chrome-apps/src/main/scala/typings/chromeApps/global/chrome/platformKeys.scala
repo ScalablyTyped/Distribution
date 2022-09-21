@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.platformKeys.VerificationDetails
 import typings.chromeApps.chrome.platformKeys.VerificationResult
 import typings.chromeApps.chromeAppsStrings.ecdsaSign
 import typings.chromeApps.chromeAppsStrings.rsaSign
-import typings.std.ArrayBuffer
 import typings.std.CryptoKey
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
@@ -78,7 +77,7 @@ object platformKeys {
     * @see[CryptoKey docs]{@link http://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey}
     */
   inline def getKeyPair(
-    certificate: ArrayBuffer,
+    certificate: js.typedarray.ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeyPair")(certificate.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

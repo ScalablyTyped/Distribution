@@ -43,7 +43,7 @@ object Application {
     
     inline def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

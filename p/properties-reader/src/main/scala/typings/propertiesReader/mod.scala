@@ -79,7 +79,7 @@ object mod {
     
     def getAllProperties(): StringDictionary[Value] = js.native
     
-    def getByRoot(root: js.Any): StringDictionary[Value] = js.native
+    def getByRoot(root: Any): StringDictionary[Value] = js.native
     
     def getRaw(propertyName: String): String | Null = js.native
     
@@ -90,7 +90,7 @@ object mod {
     def read(properties: String): Reader = js.native
     
     def save(destFile: String): js.Promise[String] = js.native
-    def save(destFile: String, onComplete: js.Function2[/* err */ js.Any, /* data */ String, Unit]): js.Promise[String] = js.native
+    def save(destFile: String, onComplete: js.Function2[/* err */ Any, /* data */ String, Unit]): js.Promise[String] = js.native
     
     def set(propertyName: String, value: Value): Reader = js.native
   }

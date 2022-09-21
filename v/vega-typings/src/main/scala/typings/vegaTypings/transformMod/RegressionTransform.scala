@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RegressionTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -51,7 +51,7 @@ object RegressionTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setMethod(value: RegressionMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

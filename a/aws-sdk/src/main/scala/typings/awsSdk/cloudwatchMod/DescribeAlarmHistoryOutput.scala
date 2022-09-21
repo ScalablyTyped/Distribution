@@ -29,7 +29,7 @@ object DescribeAlarmHistoryOutput {
     
     inline def setAlarmHistoryItemsUndefined: Self = StObject.set(x, "AlarmHistoryItems", js.undefined)
     
-    inline def setAlarmHistoryItemsVarargs(value: AlarmHistoryItem*): Self = StObject.set(x, "AlarmHistoryItems", js.Array(value :_*))
+    inline def setAlarmHistoryItemsVarargs(value: AlarmHistoryItem*): Self = StObject.set(x, "AlarmHistoryItems", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BucketPolicyOnly extends StObject {
   
-  var bucketPolicyOnly: js.UndefOr[Enabled] = js.undefined
+  var bucketPolicyOnly: js.UndefOr[LockedTime] = js.undefined
+  
+  var publicAccessPrevention: js.UndefOr[String] = js.undefined
+  
+  var uniformBucketLevelAccess: js.UndefOr[LockedTime] = js.undefined
 }
 object BucketPolicyOnly {
   
@@ -17,8 +21,16 @@ object BucketPolicyOnly {
   
   extension [Self <: BucketPolicyOnly](x: Self) {
     
-    inline def setBucketPolicyOnly(value: Enabled): Self = StObject.set(x, "bucketPolicyOnly", value.asInstanceOf[js.Any])
+    inline def setBucketPolicyOnly(value: LockedTime): Self = StObject.set(x, "bucketPolicyOnly", value.asInstanceOf[js.Any])
     
     inline def setBucketPolicyOnlyUndefined: Self = StObject.set(x, "bucketPolicyOnly", js.undefined)
+    
+    inline def setPublicAccessPrevention(value: String): Self = StObject.set(x, "publicAccessPrevention", value.asInstanceOf[js.Any])
+    
+    inline def setPublicAccessPreventionUndefined: Self = StObject.set(x, "publicAccessPrevention", js.undefined)
+    
+    inline def setUniformBucketLevelAccess(value: LockedTime): Self = StObject.set(x, "uniformBucketLevelAccess", value.asInstanceOf[js.Any])
+    
+    inline def setUniformBucketLevelAccessUndefined: Self = StObject.set(x, "uniformBucketLevelAccess", js.undefined)
   }
 }

@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMarkdownString extends StObject {
   
+  val baseUri: js.UndefOr[UriComponents] = js.undefined
+  
   val isTrusted: js.UndefOr[Boolean] = js.undefined
+  
+  val supportHtml: js.UndefOr[Boolean] = js.undefined
   
   val supportThemeIcons: js.UndefOr[Boolean] = js.undefined
   
@@ -24,9 +28,17 @@ object IMarkdownString {
   
   extension [Self <: IMarkdownString](x: Self) {
     
+    inline def setBaseUri(value: UriComponents): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
+    
+    inline def setBaseUriUndefined: Self = StObject.set(x, "baseUri", js.undefined)
+    
     inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
     inline def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
+    
+    inline def setSupportHtml(value: Boolean): Self = StObject.set(x, "supportHtml", value.asInstanceOf[js.Any])
+    
+    inline def setSupportHtmlUndefined: Self = StObject.set(x, "supportHtml", js.undefined)
     
     inline def setSupportThemeIcons(value: Boolean): Self = StObject.set(x, "supportThemeIcons", value.asInstanceOf[js.Any])
     

@@ -34,18 +34,18 @@ object ProtectiveEquipmentSummary {
     
     inline def setPersonsIndeterminateUndefined: Self = StObject.set(x, "PersonsIndeterminate", js.undefined)
     
-    inline def setPersonsIndeterminateVarargs(value: UInteger*): Self = StObject.set(x, "PersonsIndeterminate", js.Array(value :_*))
+    inline def setPersonsIndeterminateVarargs(value: UInteger*): Self = StObject.set(x, "PersonsIndeterminate", js.Array(value*))
     
     inline def setPersonsWithRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsWithRequiredEquipment", value.asInstanceOf[js.Any])
     
     inline def setPersonsWithRequiredEquipmentUndefined: Self = StObject.set(x, "PersonsWithRequiredEquipment", js.undefined)
     
-    inline def setPersonsWithRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithRequiredEquipment", js.Array(value :_*))
+    inline def setPersonsWithRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithRequiredEquipment", js.Array(value*))
     
     inline def setPersonsWithoutRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", value.asInstanceOf[js.Any])
     
     inline def setPersonsWithoutRequiredEquipmentUndefined: Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.undefined)
     
-    inline def setPersonsWithoutRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.Array(value :_*))
+    inline def setPersonsWithoutRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.Array(value*))
   }
 }

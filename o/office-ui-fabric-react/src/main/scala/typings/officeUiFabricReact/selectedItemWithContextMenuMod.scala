@@ -15,13 +15,12 @@ object selectedItemWithContextMenuMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/Items/SelectedItemWithContextMenu", "SelectedItemWithContextMenu")
   @js.native
-  class SelectedItemWithContextMenu protected ()
-    extends Component[ISelectedItemWithContextMenuProps, IPeoplePickerItemState, js.Any] {
+  open class SelectedItemWithContextMenu protected () extends Component[ISelectedItemWithContextMenuProps, IPeoplePickerItemState, Any] {
     def this(props: ISelectedItemWithContextMenuProps) = this()
     
-    /* private */ var _onClick: js.Any = js.native
+    /* private */ var _onClick: Any = js.native
     
-    /* private */ var _onCloseContextualMenu: js.Any = js.native
+    /* private */ var _onCloseContextualMenu: Any = js.native
     
     /* protected */ var itemElement: RefObject[HTMLDivElement] = js.native
   }
@@ -45,7 +44,7 @@ object selectedItemWithContextMenuMod {
   
   trait ISelectedItemWithContextMenuProps
     extends StObject
-       with IBaseProps[js.Any] {
+       with IBaseProps[Any] {
     
     var beginEditing: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, Unit]] = js.undefined
     
@@ -72,7 +71,7 @@ object selectedItemWithContextMenuMod {
       
       inline def setMenuItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
-      inline def setMenuItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
+      inline def setMenuItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value*))
       
       inline def setRenderedItem(value: Element): Self = StObject.set(x, "renderedItem", value.asInstanceOf[js.Any])
     }

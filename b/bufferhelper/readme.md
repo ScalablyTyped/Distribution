@@ -10,10 +10,10 @@ Concat buffer correctly.
 | ------------------ | :-------------: |
 | Full name          | bufferhelper |
 | Keywords           | Buffer |
-| # releases         | 0 |
-| # dependents       | 107 |
-| # downloads        | 595310 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60430.666666666664 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/JacksonTian/bufferhelper)

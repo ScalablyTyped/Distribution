@@ -32,7 +32,7 @@ trait IXMLDOMElement extends StObject {
   def cloneNode(deep: Boolean): IXMLDOMNode
   
   /** the data type of the node */
-  var dataType: js.Any
+  var dataType: Any
   
   /** pointer to the definition of the node in the DTD or schema */
   val definition: IXMLDOMNode
@@ -41,7 +41,7 @@ trait IXMLDOMElement extends StObject {
   val firstChild: IXMLDOMNode
   
   /** look up the string value of an attribute by name */
-  def getAttribute(name: String): js.Any
+  def getAttribute(name: String): Any
   
   /** look up the attribute node by name */
   def getAttributeNode(name: String): IXMLDOMAttribute
@@ -52,7 +52,7 @@ trait IXMLDOMElement extends StObject {
   def hasChildNodes(): Boolean
   
   /** insert a child node */
-  def insertBefore(newChild: IXMLDOMNode, refChild: js.Any): IXMLDOMNode
+  def insertBefore(newChild: IXMLDOMNode, refChild: Any): IXMLDOMNode
   
   /** last child of the node */
   val lastChild: IXMLDOMNode
@@ -73,10 +73,10 @@ trait IXMLDOMElement extends StObject {
   val nodeTypeString: String
   
   /** get the strongly typed value of the node */
-  var nodeTypedValue: js.Any
+  var nodeTypedValue: Any
   
   /** value stored in the node */
-  var nodeValue: js.Any
+  var nodeValue: Any
   
   /** collapse all adjacent text nodes in sub-tree */
   def normalize(): Unit
@@ -115,7 +115,7 @@ trait IXMLDOMElement extends StObject {
   def selectSingleNode(queryString: String): IXMLDOMNode
   
   /** set the string value of an attribute by name */
-  def setAttribute(name: String, value: js.Any): Unit
+  def setAttribute(name: String, value: Any): Unit
   
   /** set the specified attribute on the element */
   def setAttributeNode(DOMAttribute: IXMLDOMAttribute): IXMLDOMAttribute
@@ -133,7 +133,7 @@ trait IXMLDOMElement extends StObject {
   def transformNode(stylesheet: IXMLDOMNode): String
   
   /** apply the stylesheet to the subtree, returning the result through a document or a stream */
-  def transformNodeToObject(stylesheet: IXMLDOMNode, outputObject: js.Any): Unit
+  def transformNodeToObject(stylesheet: IXMLDOMNode, outputObject: Any): Unit
   
   /** return the XML source for the node and each of its descendants */
   val xml: String
@@ -147,22 +147,22 @@ object IXMLDOMElement {
     baseName: String,
     childNodes: IXMLDOMNodeList,
     cloneNode: Boolean => IXMLDOMNode,
-    dataType: js.Any,
+    dataType: Any,
     definition: IXMLDOMNode,
     firstChild: IXMLDOMNode,
-    getAttribute: String => js.Any,
+    getAttribute: String => Any,
     getAttributeNode: String => IXMLDOMAttribute,
     getElementsByTagName: String => IXMLDOMNodeList,
     hasChildNodes: () => Boolean,
-    insertBefore: (IXMLDOMNode, js.Any) => IXMLDOMNode,
+    insertBefore: (IXMLDOMNode, Any) => IXMLDOMNode,
     lastChild: IXMLDOMNode,
     namespaceURI: String,
     nextSibling: IXMLDOMNode,
     nodeName: String,
     nodeType: DOMNodeType,
     nodeTypeString: String,
-    nodeTypedValue: js.Any,
-    nodeValue: js.Any,
+    nodeTypedValue: Any,
+    nodeValue: Any,
     normalize: () => Unit,
     ownerDocument: IXMLDOMDocument,
     parentNode: IXMLDOMNode,
@@ -175,13 +175,13 @@ object IXMLDOMElement {
     replaceChild: (IXMLDOMNode, IXMLDOMNode) => IXMLDOMNode,
     selectNodes: String => IXMLDOMNodeList,
     selectSingleNode: String => IXMLDOMNode,
-    setAttribute: (String, js.Any) => Unit,
+    setAttribute: (String, Any) => Unit,
     setAttributeNode: IXMLDOMAttribute => IXMLDOMAttribute,
     specified: Boolean,
     tagName: String,
     text: String,
     transformNode: IXMLDOMNode => String,
-    transformNodeToObject: (IXMLDOMNode, js.Any) => Unit,
+    transformNodeToObject: (IXMLDOMNode, Any) => Unit,
     xml: String
   ): IXMLDOMElement = {
     val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), attributes = attributes.asInstanceOf[js.Any], baseName = baseName.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction1(cloneNode), dataType = dataType.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], getAttribute = js.Any.fromFunction1(getAttribute), getAttributeNode = js.Any.fromFunction1(getAttributeNode), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), hasChildNodes = js.Any.fromFunction0(hasChildNodes), insertBefore = js.Any.fromFunction2(insertBefore), lastChild = lastChild.asInstanceOf[js.Any], namespaceURI = namespaceURI.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeTypeString = nodeTypeString.asInstanceOf[js.Any], nodeTypedValue = nodeTypedValue.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), ownerDocument = ownerDocument.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any], removeAttribute = js.Any.fromFunction1(removeAttribute), removeAttributeNode = js.Any.fromFunction1(removeAttributeNode), removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), selectNodes = js.Any.fromFunction1(selectNodes), selectSingleNode = js.Any.fromFunction1(selectSingleNode), setAttribute = js.Any.fromFunction2(setAttribute), setAttributeNode = js.Any.fromFunction1(setAttributeNode), specified = specified.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], transformNode = js.Any.fromFunction1(transformNode), transformNodeToObject = js.Any.fromFunction2(transformNodeToObject), xml = xml.asInstanceOf[js.Any])
@@ -201,13 +201,13 @@ object IXMLDOMElement {
     
     inline def setCloneNode(value: Boolean => IXMLDOMNode): Self = StObject.set(x, "cloneNode", js.Any.fromFunction1(value))
     
-    inline def setDataType(value: js.Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     inline def setDefinition(value: IXMLDOMNode): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     inline def setFirstChild(value: IXMLDOMNode): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
     
-    inline def setGetAttribute(value: String => js.Any): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+    inline def setGetAttribute(value: String => Any): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
     inline def setGetAttributeNode(value: String => IXMLDOMAttribute): Self = StObject.set(x, "getAttributeNode", js.Any.fromFunction1(value))
     
@@ -215,7 +215,7 @@ object IXMLDOMElement {
     
     inline def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
     
-    inline def setInsertBefore(value: (IXMLDOMNode, js.Any) => IXMLDOMNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
+    inline def setInsertBefore(value: (IXMLDOMNode, Any) => IXMLDOMNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
     inline def setLastChild(value: IXMLDOMNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
@@ -231,9 +231,9 @@ object IXMLDOMElement {
     
     inline def setNodeTypeString(value: String): Self = StObject.set(x, "nodeTypeString", value.asInstanceOf[js.Any])
     
-    inline def setNodeTypedValue(value: js.Any): Self = StObject.set(x, "nodeTypedValue", value.asInstanceOf[js.Any])
+    inline def setNodeTypedValue(value: Any): Self = StObject.set(x, "nodeTypedValue", value.asInstanceOf[js.Any])
     
-    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
@@ -259,7 +259,7 @@ object IXMLDOMElement {
     
     inline def setSelectSingleNode(value: String => IXMLDOMNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
     
-    inline def setSetAttribute(value: (String, js.Any) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
+    inline def setSetAttribute(value: (String, Any) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
     
     inline def setSetAttributeNode(value: IXMLDOMAttribute => IXMLDOMAttribute): Self = StObject.set(x, "setAttributeNode", js.Any.fromFunction1(value))
     
@@ -271,7 +271,7 @@ object IXMLDOMElement {
     
     inline def setTransformNode(value: IXMLDOMNode => String): Self = StObject.set(x, "transformNode", js.Any.fromFunction1(value))
     
-    inline def setTransformNodeToObject(value: (IXMLDOMNode, js.Any) => Unit): Self = StObject.set(x, "transformNodeToObject", js.Any.fromFunction2(value))
+    inline def setTransformNodeToObject(value: (IXMLDOMNode, Any) => Unit): Self = StObject.set(x, "transformNodeToObject", js.Any.fromFunction2(value))
     
     inline def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
   }

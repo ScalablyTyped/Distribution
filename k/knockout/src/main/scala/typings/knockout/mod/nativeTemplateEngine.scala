@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("knockout", "nativeTemplateEngine")
 @js.native
-class nativeTemplateEngine () extends templateEngine
+open class nativeTemplateEngine () extends templateEngine

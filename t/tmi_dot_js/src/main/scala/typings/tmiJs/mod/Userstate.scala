@@ -48,13 +48,15 @@ object Userstate {
     __obj.asInstanceOf[typings.tmiJs.mod.SubGiftUpgradeUserstate]
   }
   
-  inline def SubGiftUserstate(): typings.tmiJs.mod.SubGiftUserstate = {
+  inline def SubGiftUserstate(`msg-param-origin-id`: String): typings.tmiJs.mod.SubGiftUserstate = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("msg-param-origin-id")(`msg-param-origin-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tmiJs.mod.SubGiftUserstate]
   }
   
-  inline def SubMysteryGiftUserstate(): typings.tmiJs.mod.SubMysteryGiftUserstate = {
+  inline def SubMysteryGiftUserstate(`msg-param-origin-id`: String): typings.tmiJs.mod.SubMysteryGiftUserstate = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("msg-param-origin-id")(`msg-param-origin-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tmiJs.mod.SubMysteryGiftUserstate]
   }
   

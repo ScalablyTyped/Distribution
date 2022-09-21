@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QuotaPeriod extends StObject {
   
   /**
-    * The time unit of a period.
+    * The time unit.
     */
   var PeriodUnit: js.UndefOr[typings.awsSdk.servicequotasMod.PeriodUnit] = js.undefined
   
   /**
-    * The value of a period.
+    * The value.
     */
   var PeriodValue: js.UndefOr[typings.awsSdk.servicequotasMod.PeriodValue] = js.undefined
 }

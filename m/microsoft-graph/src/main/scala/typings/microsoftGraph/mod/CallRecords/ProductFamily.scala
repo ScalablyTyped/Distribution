@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod.CallRecords
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,10 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.teams
   - typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness
   - typings.microsoftGraph.microsoftGraphStrings.lync
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+  - typings.microsoftGraph.microsoftGraphStrings.azureCommunicationServices
 */
 trait ProductFamily extends StObject
 object ProductFamily {
+  
+  inline def azureCommunicationServices: typings.microsoftGraph.microsoftGraphStrings.azureCommunicationServices = "azureCommunicationServices".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.azureCommunicationServices]
   
   inline def lync: typings.microsoftGraph.microsoftGraphStrings.lync = "lync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lync]
   
@@ -23,5 +27,5 @@ object ProductFamily {
   
   inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

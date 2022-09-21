@@ -16,7 +16,7 @@ object anon {
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  async :false | undefined,   fn :mocha-sugar-free.mocha-sugar-free.TestCase | undefined} */
   trait Optionsasyncfalseundefine
     extends StObject
-       with /* option */ StringDictionary[js.Any] {
+       with /* option */ StringDictionary[Any] {
     
     /**
       * Whether the context should contain a `done` callback.
@@ -130,7 +130,7 @@ object anon {
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  async :true,   fn :mocha-sugar-free.mocha-sugar-free.TestCaseWithDone | undefined} */
   trait OptionsasynctruefnTestCas
     extends StObject
-       with /* option */ StringDictionary[js.Any] {
+       with /* option */ StringDictionary[Any] {
     
     /**
       * Whether the context should contain a `done` callback.
@@ -246,7 +246,7 @@ object anon {
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  fn :mocha-sugar-free.mocha-sugar-free.HookFunc | undefined} */
   trait OptionsfnHookFuncundefine
     extends StObject
-       with /* option */ StringDictionary[js.Any] {
+       with /* option */ StringDictionary[Any] {
     
     /**
       * Whether the context should contain a `done` callback.
@@ -359,7 +359,7 @@ object anon {
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  fn :mocha-sugar-free.mocha-sugar-free.SuiteFunc | undefined} */
   trait OptionsfnSuiteFuncundefin
     extends StObject
-       with /* option */ StringDictionary[js.Any] {
+       with /* option */ StringDictionary[Any] {
     
     /**
       * Whether the context should contain a `done` callback.
@@ -472,7 +472,7 @@ object anon {
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  title :string,   fn :mocha-sugar-free.mocha-sugar-free.SuiteFunc | undefined} */
   trait OptionstitlestringfnSuite
     extends StObject
-       with /* option */ StringDictionary[js.Any] {
+       with /* option */ StringDictionary[Any] {
     
     /**
       * Whether the context should contain a `done` callback.

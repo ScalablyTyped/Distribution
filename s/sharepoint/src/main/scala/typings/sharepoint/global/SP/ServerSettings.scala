@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ServerSettings")
 @js.native
-class ServerSettings ()
+open class ServerSettings ()
   extends StObject
      with typings.sharepoint.SP.ServerSettings
 object ServerSettings {

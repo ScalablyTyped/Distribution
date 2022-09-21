@@ -23,13 +23,13 @@ trait ITypeOptions extends StObject {
   var apiCheckFunction: js.UndefOr[String] = js.undefined
   
   //'throw' or 'warn
-  var apiCheckInstance: js.UndefOr[js.Any] = js.undefined
+  var apiCheckInstance: js.UndefOr[Any] = js.undefined
   
   var apiCheckOptions: js.UndefOr[js.Object] = js.undefined
   
-  var controller: js.UndefOr[js.Function | String | js.Array[js.Any]] = js.undefined
+  var controller: js.UndefOr[js.Function | String | js.Array[Any]] = js.undefined
   
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var defaultOptions: js.UndefOr[IFieldConfigurationObject | js.Function] = js.undefined
   
@@ -64,7 +64,7 @@ object ITypeOptions {
     
     inline def setApiCheckFunctionUndefined: Self = StObject.set(x, "apiCheckFunction", js.undefined)
     
-    inline def setApiCheckInstance(value: js.Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
+    inline def setApiCheckInstance(value: Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
     
     inline def setApiCheckInstanceUndefined: Self = StObject.set(x, "apiCheckInstance", js.undefined)
     
@@ -74,13 +74,13 @@ object ITypeOptions {
     
     inline def setApiCheckUndefined: Self = StObject.set(x, "apiCheck", js.undefined)
     
-    inline def setController(value: js.Function | String | js.Array[js.Any]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: js.Function | String | js.Array[Any]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: Any*): Self = StObject.set(x, "controller", js.Array(value*))
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -120,6 +120,6 @@ object ITypeOptions {
     
     inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     
-    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
+    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value*))
   }
 }

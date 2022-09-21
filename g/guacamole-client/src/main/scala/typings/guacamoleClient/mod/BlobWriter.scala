@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "BlobWriter")
 @js.native
-class BlobWriter protected ()
+open class BlobWriter protected ()
   extends typings.guacamoleClient.blobWriterMod.BlobWriter {
   /**
     * @param stream The stream that data will be written to.

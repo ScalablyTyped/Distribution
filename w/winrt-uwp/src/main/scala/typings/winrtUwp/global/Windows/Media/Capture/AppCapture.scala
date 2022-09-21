@@ -12,23 +12,23 @@ abstract class AppCapture ()
   
   /* unmapped type */
   /* CompleteClass */
-  var addEventListener: js.Any = js.native
+  var addEventListener: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var isCapturingAudio: js.Any = js.native
+  var isCapturingAudio: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var isCapturingVideo: js.Any = js.native
+  var isCapturingVideo: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var oncapturingchanged: js.Any = js.native
+  var oncapturingchanged: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var removeEventListener: js.Any = js.native
+  var removeEventListener: Any = js.native
 }
 object AppCapture {
   
@@ -39,6 +39,6 @@ object AppCapture {
   /* static member */
   @JSGlobal("Windows.Media.Capture.AppCapture.getForCurrentView")
   @js.native
-  def getForCurrentView: js.Any = js.native
-  inline def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
+  def getForCurrentView: Any = js.native
+  inline def getForCurrentView_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
 }

@@ -8,5 +8,5 @@ object scanMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/Scan", "Scan")
   @js.native
-  val Scan: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val Scan: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

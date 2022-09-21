@@ -24,49 +24,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StyleUpdateData extends StObject {
   
   /**
-    *
     * Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * A collection of four border objects that represent the style of the four borders.
     *
-    * A Border collection of four Border objects that represent the style of the four borders.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var borders: js.UndefOr[RangeBorderCollectionUpdateData] = js.undefined
   
   /**
+    * The fill of the style.
     *
-    * The Fill of the style.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var fill: js.UndefOr[RangeFillUpdateData] = js.undefined
   
   /**
+    * A `Font` object that represents the font of the style.
     *
-    * A Font object that represents the font of the style.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var font: js.UndefOr[RangeFontUpdateData] = js.undefined
   
   /**
-    *
     * Specifies if the formula will be hidden when the worksheet is protected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var formulaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the horizontal alignment for the style. See `Excel.HorizontalAlignment` for details.
     *
-    * Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var horizontalAlignment: js.UndefOr[
@@ -74,121 +74,121 @@ trait StyleUpdateData extends StObject {
   ] = js.undefined
   
   /**
+    * Specifies if the style includes the auto indent, horizontal alignment, vertical alignment, wrap text, indent level, and text orientation properties.
     *
-    * Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the style includes the color, color index, line style, and weight border properties.
     *
-    * Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeBorder: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the style includes the background, bold, color, color index, font style, italic, name, size, strikethrough, subscript, superscript, and underline font properties.
     *
-    * Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeFont: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the style includes the number format property.
     *
-    * Specifies if the style includes the NumberFormat property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeNumber: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the style includes the color, color index, invert if negative, pattern, pattern color, and pattern color index interior properties.
     *
-    * Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includePatterns: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the style includes the formula hidden and locked protection properties.
     *
-    * Specifies if the style includes the FormulaHidden and Locked protection properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var includeProtection: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * An integer from 0 to 250 that indicates the indent level for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var indentLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies if the object is locked when the worksheet is protected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var locked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The format code of the number format for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var numberFormat: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The localized format code of the number format for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var numberFormatLocal: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The reading order for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
   
   /**
-    *
     * Specifies if text automatically shrinks to fit in the available column width.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The text orientation for the style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the vertical alignment for the style. See `Excel.VerticalAlignment` for details.
     *
-    * Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
   
   /**
-    *
     * Specifies if Excel wraps the text in the object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var wrapText: js.UndefOr[Boolean] = js.undefined

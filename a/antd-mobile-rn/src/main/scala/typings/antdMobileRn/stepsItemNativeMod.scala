@@ -9,11 +9,10 @@ object stepsItemNativeMod {
   
   @JSImport("antd-mobile-rn/lib/steps/StepsItem.native", JSImport.Default)
   @js.native
-  class default () extends StepsItem
+  open class default () extends StepsItem
   
   @js.native
-  trait StepsItem
-    extends Component[StepsItemProps, js.Any, js.Any]
+  trait StepsItem extends Component[StepsItemProps, Any, Any]
   
   trait StepsItemProps extends StObject {
     
@@ -35,7 +34,7 @@ object stepsItemNativeMod {
     
     var status: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -86,7 +85,7 @@ object stepsItemNativeMod {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

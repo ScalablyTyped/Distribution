@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CallExpression
   extends StObject
      with Node2
-     with InferCodegenNodeType[js.Any]
+     with InferCodegenNodeType[Any]
      with JSChildNode
      with PropsExpression {
   
@@ -45,7 +45,7 @@ object CallExpression {
     
     inline def setArgumentsVarargs(
       value: (String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode])*
-    ): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    ): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setCallee(value: String | js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     

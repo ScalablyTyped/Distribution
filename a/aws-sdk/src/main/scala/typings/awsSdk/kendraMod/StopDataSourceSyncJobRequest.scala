@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StopDataSourceSyncJobRequest extends StObject {
   
   /**
-    * The identifier of the data source for which to stop the synchronization jobs.
+    * The identifier of the data source connector for which to stop the synchronization jobs.
     */
   var Id: DataSourceId
   
   /**
-    * The identifier of the index that contains the data source.
+    * The identifier of the index used with the data source connector.
     */
   var IndexId: typings.awsSdk.kendraMod.IndexId
 }

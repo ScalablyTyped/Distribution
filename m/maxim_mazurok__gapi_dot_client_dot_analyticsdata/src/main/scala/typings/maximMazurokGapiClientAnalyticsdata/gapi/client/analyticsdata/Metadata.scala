@@ -28,13 +28,13 @@ object Metadata {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: DimensionMetadata*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: DimensionMetadata*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setMetrics(value: js.Array[MetricMetadata]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: MetricMetadata*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricMetadata*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

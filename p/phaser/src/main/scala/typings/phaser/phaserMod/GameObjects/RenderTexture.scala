@@ -1,7 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.RenderTexture")
 @js.native
-class RenderTexture protected ()
+open class RenderTexture protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.RenderTexture {
   /**
@@ -30,23 +29,18 @@ class RenderTexture protected ()
     * @param y The vertical position of this Game Object in the world. Default 0.
     * @param width The width of the Render Texture. Default 32.
     * @param height The height of the Render Texture. Default 32.
+    * @param key The texture key to make the RenderTexture from.
+    * @param frame The frame to make the RenderTexture from.
     */
-  def this(scene: Scene) = this()
-  def this(scene: Scene, x: Double) = this()
-  def this(scene: Scene, x: Double, y: Double) = this()
-  def this(scene: Scene, x: Unit, y: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, width: integer) = this()
-  def this(scene: Scene, x: Double, y: Unit, width: integer) = this()
-  def this(scene: Scene, x: Unit, y: Double, width: integer) = this()
-  def this(scene: Scene, x: Unit, y: Unit, width: integer) = this()
-  def this(scene: Scene, x: Double, y: Double, width: Unit, height: integer) = this()
-  def this(scene: Scene, x: Double, y: Double, width: integer, height: integer) = this()
-  def this(scene: Scene, x: Double, y: Unit, width: Unit, height: integer) = this()
-  def this(scene: Scene, x: Double, y: Unit, width: integer, height: integer) = this()
-  def this(scene: Scene, x: Unit, y: Double, width: Unit, height: integer) = this()
-  def this(scene: Scene, x: Unit, y: Double, width: integer, height: integer) = this()
-  def this(scene: Scene, x: Unit, y: Unit, width: Unit, height: integer) = this()
-  def this(scene: Scene, x: Unit, y: Unit, width: integer, height: integer) = this()
+  def this(
+    scene: Scene,
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    key: js.UndefOr[String],
+    frame: js.UndefOr[String]
+  ) = this()
   
   /**
     * The depth of this Game Object within the Scene.
@@ -131,7 +125,7 @@ class RenderTexture protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

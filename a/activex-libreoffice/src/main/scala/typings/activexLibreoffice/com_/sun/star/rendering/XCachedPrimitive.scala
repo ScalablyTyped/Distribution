@@ -30,7 +30,7 @@ object XCachedPrimitive {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     redraw: ViewState => Double,
     release: () => Unit
   ): XCachedPrimitive = {

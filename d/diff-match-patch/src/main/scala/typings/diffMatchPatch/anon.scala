@@ -29,7 +29,7 @@ object anon {
       
       inline def setLineArray(value: js.Array[String]): Self = StObject.set(x, "lineArray", value.asInstanceOf[js.Any])
       
-      inline def setLineArrayVarargs(value: String*): Self = StObject.set(x, "lineArray", js.Array(value :_*))
+      inline def setLineArrayVarargs(value: String*): Self = StObject.set(x, "lineArray", js.Array(value*))
     }
   }
 }

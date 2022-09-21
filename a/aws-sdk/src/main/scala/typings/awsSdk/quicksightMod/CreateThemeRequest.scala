@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateThemeRequest extends StObject {
   
   /**
-    * The ID of the AWS account where you want to store the new theme. 
+    * The ID of the Amazon Web Services account where you want to store the new theme. 
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The ID of the theme that a custom theme will inherit from. All themes inherit from one of the starting themes defined by Amazon QuickSight. For a list of the starting themes, use ListThemes or choose Themes from within a QuickSight analysis. 
+    * The ID of the theme that a custom theme will inherit from. All themes inherit from one of the starting themes defined by Amazon QuickSight. For a list of the starting themes, use ListThemes or choose Themes from within an analysis. 
     */
   var BaseThemeId: RestrictiveResourceId
   
@@ -37,7 +37,7 @@ trait CreateThemeRequest extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * An ID for the theme that you want to create. The theme ID is unique per AWS Region in each AWS account.
+    * An ID for the theme that you want to create. The theme ID is unique per Amazon Web Services Region in each Amazon Web Services account.
     */
   var ThemeId: RestrictiveResourceId
   
@@ -73,13 +73,13 @@ object CreateThemeRequest {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     

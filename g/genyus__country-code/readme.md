@@ -10,10 +10,10 @@ Country Data utility Library, ISO Codes etc...
 | ------------------ | :-------------: |
 | Full name          | @genyus/country-code |
 | Keywords           | country, country-code, iso |
-| # releases         | 14 |
-| # dependents       | 0 |
-| # downloads        | 921 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 579.6666666666666 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/lwhiteley/cc#readme)

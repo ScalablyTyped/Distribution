@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lyricist", JSImport.Namespace)
 @js.native
-class ^ protected ()
+open class ^ protected ()
   extends StObject
      with Lyricist {
   def this(accessToken: String) = this()

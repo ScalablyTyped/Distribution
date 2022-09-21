@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewExportFormat")
 @js.native
-class ASPxClientGridViewExportFormat ()
+open class ASPxClientGridViewExportFormat ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridExportFormat

@@ -21,4 +21,8 @@ object typeZooStrings {
   @js.native
   sealed trait Pick4 extends StObject
   inline def Pick4: Pick4 = "Pick4".asInstanceOf[Pick4]
+  
+  @js.native
+  sealed trait Public extends StObject
+  inline def Public: Public = "Public".asInstanceOf[Public]
 }

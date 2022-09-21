@@ -1,6 +1,6 @@
 package typings.serialport
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.serialport.serialportStrings.ascii
 import typings.serialport.serialportStrings.base64
 import typings.serialport.serialportStrings.binary
@@ -8,7 +8,6 @@ import typings.serialport.serialportStrings.hex
 import typings.serialport.serialportStrings.ucs2
 import typings.serialport.serialportStrings.utf16le
 import typings.serialport.serialportStrings.utf8
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ object anon {
       
       inline def setDelimiter(value: String | Buffer | js.Array[Double]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      inline def setDelimiterVarargs(value: Double*): Self = StObject.set(x, "delimiter", js.Array(value :_*))
+      inline def setDelimiterVarargs(value: Double*): Self = StObject.set(x, "delimiter", js.Array(value*))
     }
   }
   
@@ -76,7 +75,7 @@ object anon {
       
       inline def setDelimiter(value: String | Buffer | js.Array[Double]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      inline def setDelimiterVarargs(value: Double*): Self = StObject.set(x, "delimiter", js.Array(value :_*))
+      inline def setDelimiterVarargs(value: Double*): Self = StObject.set(x, "delimiter", js.Array(value*))
       
       inline def setIncludeDelimiter(value: Boolean): Self = StObject.set(x, "includeDelimiter", value.asInstanceOf[js.Any])
       
@@ -103,7 +102,7 @@ object anon {
       
       inline def setDelimiter(value: String | Buffer | js.Array[Double]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      inline def setDelimiterVarargs(value: Double*): Self = StObject.set(x, "delimiter", js.Array(value :_*))
+      inline def setDelimiterVarargs(value: Double*): Self = StObject.set(x, "delimiter", js.Array(value*))
       
       inline def setEncoding(value: ascii | utf8 | utf16le | ucs2 | base64 | binary | hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -134,18 +133,18 @@ object anon {
   
   trait Regex extends StObject {
     
-    var regex: RegExp
+    var regex: js.RegExp
   }
   object Regex {
     
-    inline def apply(regex: RegExp): Regex = {
+    inline def apply(regex: js.RegExp): Regex = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Regex]
     }
     
     extension [Self <: Regex](x: Self) {
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
   

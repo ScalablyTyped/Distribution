@@ -18,7 +18,7 @@ trait ReplyFormData extends StObject {
     * When the reply display call completes, the function passed in the callback parameter is called with a single parameter,
     * `asyncResult`, which is an `Office.AsyncResult` object.
     */
-  var callback: js.UndefOr[js.Function1[/* asyncResult */ AsyncResult[js.Any], Unit]] = js.undefined
+  var callback: js.UndefOr[js.Function1[/* asyncResult */ AsyncResult[Any], Unit]] = js.undefined
   
   /**
     * A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
@@ -27,7 +27,7 @@ trait ReplyFormData extends StObject {
   
   /**
     * An object literal that contains the following property.
-    * `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * `asyncContext`: Developers can provide any object they wish to access in the callback function.
     */
   var options: js.UndefOr[AsyncContextOptions] = js.undefined
 }
@@ -44,9 +44,9 @@ object ReplyFormData {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: ReplyFormAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: ReplyFormAttachment*): Self = StObject.set(x, "attachments", js.Array(value*))
     
-    inline def setCallback(value: /* asyncResult */ AsyncResult[js.Any] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* asyncResult */ AsyncResult[Any] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

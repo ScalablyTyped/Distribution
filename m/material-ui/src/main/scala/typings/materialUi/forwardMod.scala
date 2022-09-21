@@ -10,10 +10,10 @@ object forwardMod {
   
   @JSImport("material-ui/svg-icons/content/forward", JSImport.Default)
   @js.native
-  class default () extends ContentForward
+  open class default () extends ContentForward
   
   @JSImport("material-ui/svg-icons/content/forward", "ContentForward")
   @js.native
-  class ContentForward ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentForward ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

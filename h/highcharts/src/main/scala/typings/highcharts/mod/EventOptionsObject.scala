@@ -12,16 +12,24 @@ trait EventOptionsObject extends StObject {
     * added.
     */
   var order: Double
+  
+  /**
+    * Whether an event should be passive or not. When set to `true`, the
+    * function specified by listener will never call `preventDefault()`.
+    */
+  var passive: Boolean
 }
 object EventOptionsObject {
   
-  inline def apply(order: Double): EventOptionsObject = {
-    val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
+  inline def apply(order: Double, passive: Boolean): EventOptionsObject = {
+    val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any], passive = passive.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventOptionsObject]
   }
   
   extension [Self <: EventOptionsObject](x: Self) {
     
     inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
   }
 }

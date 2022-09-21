@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("cleave.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Cleave {
     def this(selector: String, options: CleaveOptions) = this()
@@ -29,6 +29,9 @@ object mod {
     override def getRawValue(): String = js.native
     
     /* CompleteClass */
+    var properties: Properties = js.native
+    
+    /* CompleteClass */
     override def setPhoneRegionCode(regionCode: String): Unit = js.native
     
     /* CompleteClass */
@@ -45,6 +48,8 @@ object mod {
     
     def getRawValue(): String
     
+    var properties: Properties
+    
     def setPhoneRegionCode(regionCode: String): Unit
     
     def setRawValue(value: String): Unit
@@ -56,10 +61,11 @@ object mod {
       getFormattedValue: () => String,
       getISOFormatDate: () => String,
       getRawValue: () => String,
+      properties: Properties,
       setPhoneRegionCode: String => Unit,
       setRawValue: String => Unit
     ): Cleave = {
-      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getFormattedValue = js.Any.fromFunction0(getFormattedValue), getISOFormatDate = js.Any.fromFunction0(getISOFormatDate), getRawValue = js.Any.fromFunction0(getRawValue), setPhoneRegionCode = js.Any.fromFunction1(setPhoneRegionCode), setRawValue = js.Any.fromFunction1(setRawValue))
+      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getFormattedValue = js.Any.fromFunction0(getFormattedValue), getISOFormatDate = js.Any.fromFunction0(getISOFormatDate), getRawValue = js.Any.fromFunction0(getRawValue), properties = properties.asInstanceOf[js.Any], setPhoneRegionCode = js.Any.fromFunction1(setPhoneRegionCode), setRawValue = js.Any.fromFunction1(setRawValue))
       __obj.asInstanceOf[Cleave]
     }
     
@@ -73,9 +79,30 @@ object mod {
       
       inline def setGetRawValue(value: () => String): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
       
+      inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      
       inline def setSetPhoneRegionCode(value: String => Unit): Self = StObject.set(x, "setPhoneRegionCode", js.Any.fromFunction1(value))
       
       inline def setSetRawValue(value: String => Unit): Self = StObject.set(x, "setRawValue", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait Properties
+    extends StObject
+       with CleaveOptions {
+    
+    var result: String
+  }
+  object Properties {
+    
+    inline def apply(result: String): Properties = {
+      val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Properties]
+    }
+    
+    extension [Self <: Properties](x: Self) {
+      
+      inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
 }

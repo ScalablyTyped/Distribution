@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_dlp
 
-Typings are for version 2.0.20201113
+Typings are for version 2.0.20220806
 
 ## Library description:
 TypeScript typings for Cloud Data Loss Prevention (DLP) API v2
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Data Loss Prevention (DLP) API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.dlp |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 1 |
-| # downloads        | 1328 |
-| # stars            | 0 |
+| # releases         | 84 |
+| # dependents       | 0.0 |
+| # downloads        | 1001.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

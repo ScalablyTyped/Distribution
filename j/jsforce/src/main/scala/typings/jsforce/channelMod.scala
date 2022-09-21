@@ -9,7 +9,7 @@ object channelMod {
   
   @JSImport("jsforce/channel", "Channel")
   @js.native
-  class Channel protected () extends StObject {
+  open class Channel protected () extends StObject {
     def this(streaming: Streaming, name: String) = this()
   }
 }

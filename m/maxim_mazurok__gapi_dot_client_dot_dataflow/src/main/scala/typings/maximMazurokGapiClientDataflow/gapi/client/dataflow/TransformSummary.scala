@@ -37,7 +37,7 @@ object TransformSummary {
     
     inline def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
     
-    inline def setDisplayDataVarargs(value: DisplayData*): Self = StObject.set(x, "displayData", js.Array(value :_*))
+    inline def setDisplayDataVarargs(value: DisplayData*): Self = StObject.set(x, "displayData", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object TransformSummary {
     
     inline def setInputCollectionNameUndefined: Self = StObject.set(x, "inputCollectionName", js.undefined)
     
-    inline def setInputCollectionNameVarargs(value: String*): Self = StObject.set(x, "inputCollectionName", js.Array(value :_*))
+    inline def setInputCollectionNameVarargs(value: String*): Self = StObject.set(x, "inputCollectionName", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -61,6 +61,6 @@ object TransformSummary {
     
     inline def setOutputCollectionNameUndefined: Self = StObject.set(x, "outputCollectionName", js.undefined)
     
-    inline def setOutputCollectionNameVarargs(value: String*): Self = StObject.set(x, "outputCollectionName", js.Array(value :_*))
+    inline def setOutputCollectionNameVarargs(value: String*): Self = StObject.set(x, "outputCollectionName", js.Array(value*))
   }
 }

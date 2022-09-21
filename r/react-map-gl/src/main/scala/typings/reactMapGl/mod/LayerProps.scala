@@ -18,7 +18,7 @@ trait LayerProps extends StObject {
   
   var beforeId: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var filter: js.UndefOr[js.Array[Any]] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -51,11 +51,11 @@ object LayerProps {
     
     inline def setBeforeIdUndefined: Self = StObject.set(x, "beforeId", js.undefined)
     
-    inline def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Array[Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Any*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

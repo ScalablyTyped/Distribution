@@ -39,13 +39,13 @@ object SegmentGroup {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: SegmentDimensions*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SegmentDimensions*): Self = StObject.set(x, "Dimensions", js.Array(value*))
     
     inline def setSourceSegments(value: ListOfSegmentReference): Self = StObject.set(x, "SourceSegments", value.asInstanceOf[js.Any])
     
     inline def setSourceSegmentsUndefined: Self = StObject.set(x, "SourceSegments", js.undefined)
     
-    inline def setSourceSegmentsVarargs(value: SegmentReference*): Self = StObject.set(x, "SourceSegments", js.Array(value :_*))
+    inline def setSourceSegmentsVarargs(value: SegmentReference*): Self = StObject.set(x, "SourceSegments", js.Array(value*))
     
     inline def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ trait OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A caption for the hierarchy.
@@ -57,7 +57,7 @@ object OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie {
     
     inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    inline def setLevelsVarargs(value: OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchieLevel*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchieLevel*): Self = StObject.set(x, "levels", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

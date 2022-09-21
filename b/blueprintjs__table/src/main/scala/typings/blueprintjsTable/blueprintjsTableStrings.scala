@@ -8,8 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object blueprintjsTableStrings {
   
   @js.native
+  sealed trait column extends StObject
+  inline def column: column = "column".asInstanceOf[column]
+  
+  @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
+  sealed trait row extends StObject
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
   sealed trait scrollLeft

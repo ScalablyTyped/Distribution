@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection of conditions.
-  */
 trait SchemaGooglePrivacyDlpV2Conditions extends StObject {
   
+  /**
+    * A collection of conditions.
+    */
   var conditions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Condition]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Conditions {
@@ -24,6 +24,6 @@ object SchemaGooglePrivacyDlpV2Conditions {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: SchemaGooglePrivacyDlpV2Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: SchemaGooglePrivacyDlpV2Condition*): Self = StObject.set(x, "conditions", js.Array(value*))
   }
 }

@@ -11,12 +11,12 @@ object testingMockObserverMod {
   
   @JSImport("wonder-frp/dist/es2015/testing/MockObserver", "MockObserver")
   @js.native
-  class MockObserver protected () extends Observer {
+  open class MockObserver protected () extends Observer {
     def this(scheduler: TestScheduler) = this()
     
-    /* private */ var _messages: js.Any = js.native
+    /* private */ var _messages: Any = js.native
     
-    /* private */ var _scheduler: js.Any = js.native
+    /* private */ var _scheduler: Any = js.native
     
     var messages: js.Array[Record] = js.native
   }

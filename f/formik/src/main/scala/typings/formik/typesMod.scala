@@ -17,6 +17,7 @@ import typings.react.mod.SelectHTMLAttributes
 import typings.react.mod.SetStateAction
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TextareaHTMLAttributes
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLFormElement
 import typings.std.HTMLInputElement
@@ -33,7 +34,8 @@ object typesMod {
   trait FieldHelperProps[Value] extends StObject {
     
     /** Set the field's error value */
-    def setError(value: Value): Unit = js.native
+    def setError(): Unit = js.native
+    def setError(value: String): Unit = js.native
     
     /** Set the field's touched value */
     def setTouched(value: Boolean): Unit = js.native
@@ -140,7 +142,7 @@ object typesMod {
     }
   }
   
-  type FieldValidator = js.Function1[/* value */ js.Any, String | Unit | (js.Promise[String | Unit])]
+  type FieldValidator = js.Function1[/* value */ Any, String | Unit | (js.Promise[String | Unit])]
   
   trait FormikComputedProps[Values] extends StObject {
     
@@ -151,7 +153,7 @@ object typesMod {
     val initialErrors: FormikErrors[Values]
     
     /** The initial status of the form */
-    val initialStatus: js.UndefOr[js.Any] = js.undefined
+    val initialStatus: js.UndefOr[Any] = js.undefined
     
     /** The initial visited fields of the form */
     val initialTouched: FormikTouched[Values]
@@ -181,7 +183,7 @@ object typesMod {
       
       inline def setInitialErrors(value: FormikErrors[Values]): Self = StObject.set(x, "initialErrors", value.asInstanceOf[js.Any])
       
-      inline def setInitialStatus(value: js.Any): Self = StObject.set(x, "initialStatus", value.asInstanceOf[js.Any])
+      inline def setInitialStatus(value: Any): Self = StObject.set(x, "initialStatus", value.asInstanceOf[js.Any])
       
       inline def setInitialStatusUndefined: Self = StObject.set(x, "initialStatus", js.undefined)
       
@@ -213,7 +215,7 @@ object typesMod {
     /**
       * Initial status
       */
-    var initialStatus: js.UndefOr[js.Any] = js.undefined
+    var initialStatus: js.UndefOr[Any] = js.undefined
     
     /** Initial object map of field names to whether the field has been touched */
     var initialTouched: js.UndefOr[FormikTouched[Values]] = js.undefined
@@ -236,7 +238,7 @@ object typesMod {
     /**
       * Submission handler
       */
-    def onSubmit(values: Values, formikHelpers: FormikHelpers[Values]): Unit | js.Promise[js.Any]
+    def onSubmit(values: Values, formikHelpers: FormikHelpers[Values]): Unit | js.Promise[Any]
     
     /**
       * Render prop (works like React router's <Route render={props =>} />)
@@ -255,11 +257,11 @@ object typesMod {
     /**
       * A Yup Schema or a function that returns a Yup schema
       */
-    var validationSchema: js.UndefOr[js.Any | js.Function0[js.Any]] = js.undefined
+    var validationSchema: js.UndefOr[Any | js.Function0[Any]] = js.undefined
   }
   object FormikConfig {
     
-    inline def apply[Values](initialValues: Values, onSubmit: (Values, FormikHelpers[Values]) => Unit | js.Promise[js.Any]): FormikConfig[Values] = {
+    inline def apply[Values](initialValues: Values, onSubmit: (Values, FormikHelpers[Values]) => Unit | js.Promise[Any]): FormikConfig[Values] = {
       val __obj = js.Dynamic.literal(initialValues = initialValues.asInstanceOf[js.Any], onSubmit = js.Any.fromFunction2(onSubmit))
       __obj.asInstanceOf[FormikConfig[Values]]
     }
@@ -280,7 +282,7 @@ object typesMod {
       
       inline def setInitialErrorsUndefined: Self = StObject.set(x, "initialErrors", js.undefined)
       
-      inline def setInitialStatus(value: js.Any): Self = StObject.set(x, "initialStatus", value.asInstanceOf[js.Any])
+      inline def setInitialStatus(value: Any): Self = StObject.set(x, "initialStatus", value.asInstanceOf[js.Any])
       
       inline def setInitialStatusUndefined: Self = StObject.set(x, "initialStatus", js.undefined)
       
@@ -302,7 +304,7 @@ object typesMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      inline def setOnSubmit(value: (Values, FormikHelpers[Values]) => Unit | js.Promise[js.Any]): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
+      inline def setOnSubmit(value: (Values, FormikHelpers[Values]) => Unit | js.Promise[Any]): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
       
       inline def setRender(value: /* props */ FormikProps[Values] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
@@ -312,9 +314,9 @@ object typesMod {
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      inline def setValidationSchema(value: js.Any | js.Function0[js.Any]): Self = StObject.set(x, "validationSchema", value.asInstanceOf[js.Any])
+      inline def setValidationSchema(value: Any | js.Function0[Any]): Self = StObject.set(x, "validationSchema", value.asInstanceOf[js.Any])
       
-      inline def setValidationSchemaFunction0(value: () => js.Any): Self = StObject.set(x, "validationSchema", js.Any.fromFunction0(value))
+      inline def setValidationSchemaFunction0(value: () => Any): Self = StObject.set(x, "validationSchema", js.Any.fromFunction0(value))
       
       inline def setValidationSchemaUndefined: Self = StObject.set(x, "validationSchema", js.undefined)
     }
@@ -337,17 +339,17 @@ object typesMod {
     
     def getFieldMeta[Value](name: String): FieldMetaProps[Value] = js.native
     
-    def getFieldProps[Value](props: js.Any): FieldInputProps[Value] = js.native
+    def getFieldProps[Value](props: Any): FieldInputProps[Value] = js.native
     
-    def handleBlur(e: FocusEvent[js.Any]): Unit = js.native
-    def handleBlur[T](fieldOrEvent: T): Unit | (js.Function1[/* e */ js.Any, Unit]) = js.native
+    def handleBlur(e: FocusEvent[Any, Element]): Unit = js.native
+    def handleBlur[T](fieldOrEvent: T): Unit | (js.Function1[/* e */ Any, Unit]) = js.native
     
-    def handleChange(e: ChangeEvent[js.Any]): Unit = js.native
-    def handleChange[T](field: T): (js.Function1[/* e */ String | ChangeEvent[js.Any], Unit]) | Unit = js.native
+    def handleChange(e: ChangeEvent[Any]): Unit = js.native
+    def handleChange[T](field: T): (js.Function1[/* e */ String | ChangeEvent[Any], Unit]) | Unit = js.native
     
     /** Reset form event handler  */
     def handleReset(): Unit = js.native
-    def handleReset(e: SyntheticEvent[js.Any, Event]): Unit = js.native
+    def handleReset(e: SyntheticEvent[Any, Event]): Unit = js.native
     
     /** Form submit handler */
     def handleSubmit(): Unit = js.native
@@ -357,7 +359,7 @@ object typesMod {
     val initialErrors: FormikErrors[Values] = js.native
     
     /** The initial status of the form */
-    val initialStatus: js.UndefOr[js.Any] = js.native
+    val initialStatus: js.UndefOr[Any] = js.native
     
     /** The initial visited fields of the form */
     val initialTouched: FormikTouched[Values] = js.native
@@ -387,6 +389,7 @@ object typesMod {
     def setErrors(errors: FormikErrors[Values]): Unit = js.native
     
     /** Set error message of a form field directly */
+    def setFieldError(field: String): Unit = js.native
     def setFieldError(field: String, message: String): Unit = js.native
     
     /** Set whether field has been touched directly */
@@ -396,8 +399,8 @@ object typesMod {
     def setFieldTouched(field: String, isTouched: Unit, shouldValidate: Boolean): Unit = js.native
     
     /** Set value of form field directly */
-    def setFieldValue(field: String, value: js.Any): Unit = js.native
-    def setFieldValue(field: String, value: js.Any, shouldValidate: Boolean): Unit = js.native
+    def setFieldValue(field: String, value: Any): Unit = js.native
+    def setFieldValue(field: String, value: Any, shouldValidate: Boolean): Unit = js.native
     
     def setFormikState(f: js.Function1[/* prevState */ FormikState[Values], FormikState[Values]]): Unit = js.native
     def setFormikState(f: js.Function1[/* prevState */ FormikState[Values], FormikState[Values]], cb: js.Function0[Unit]): Unit = js.native
@@ -407,7 +410,7 @@ object typesMod {
     
     /** Manually set top level status. */
     def setStatus(): Unit = js.native
-    def setStatus(status: js.Any): Unit = js.native
+    def setStatus(status: Any): Unit = js.native
     
     /** Manually set isSubmitting */
     def setSubmitting(isSubmitting: Boolean): Unit = js.native
@@ -421,13 +424,13 @@ object typesMod {
     def setValues(values: SetStateAction[Values], shouldValidate: Boolean): Unit = js.native
     
     /** Top level status state, in case you need it */
-    var status: js.UndefOr[js.Any] = js.native
+    var status: js.UndefOr[Any] = js.native
     
     /** Number of times user tried to submit the form */
     var submitCount: Double = js.native
     
     /** Submit the form imperatively */
-    def submitForm(): js.Promise[js.Any] = js.native
+    def submitForm(): js.Promise[Any] = js.native
     
     /** map of field names to whether the field has been touched */
     var touched: FormikTouched[Values] = js.native
@@ -443,7 +446,7 @@ object typesMod {
     
     /** Validate form values */
     def validateForm(): js.Promise[FormikErrors[Values]] = js.native
-    def validateForm(values: js.Any): js.Promise[FormikErrors[Values]] = js.native
+    def validateForm(values: Any): js.Promise[FormikErrors[Values]] = js.native
     
     /** Tells Formik to validate the form on each input's onBlur event */
     var validateOnBlur: js.UndefOr[Boolean] = js.native
@@ -454,15 +457,15 @@ object typesMod {
     /** Tells Formik to validate upon mount */
     var validateOnMount: js.UndefOr[Boolean] = js.native
     
-    var validationSchema: js.UndefOr[js.Any | js.Function0[js.Any]] = js.native
+    var validationSchema: js.UndefOr[Any | js.Function0[Any]] = js.native
     
     /** Form values */
     var values: Values = js.native
   }
   
   type FormikErrors[Values] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Values ]:? Values[K] extends std.Array<any>? Values[K][number] extends object? std.Array</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias formik.formik/dist/types.FormikErrors<Values[K][number]> * / object> | string | std.Array<string> : string | std.Array<string> : Values[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias formik.formik/dist/types.FormikErrors<Values[K]> * / object : string}
-    */ typings.formik.formikStrings.FormikErrors & TopLevel[js.Any]
+  {[ K in keyof Values ]:? Values[K] extends std.Array<any>? Values[K][number] extends object? std.Array<formik.formik/dist/types.FormikErrors<Values[K][number]>> | string | std.Array<string> : string | std.Array<string> : Values[K] extends object? formik.formik/dist/types.FormikErrors<Values[K]> : string}
+    */ typings.formik.formikStrings.FormikErrors & TopLevel[Any]
   
   @js.native
   trait FormikHandlers extends StObject {
@@ -471,17 +474,17 @@ object typesMod {
     
     def getFieldMeta[Value](name: String): FieldMetaProps[Value] = js.native
     
-    def getFieldProps[Value](props: js.Any): FieldInputProps[Value] = js.native
+    def getFieldProps[Value](props: Any): FieldInputProps[Value] = js.native
     
-    def handleBlur(e: FocusEvent[js.Any]): Unit = js.native
-    def handleBlur[T](fieldOrEvent: T): Unit | (js.Function1[/* e */ js.Any, Unit]) = js.native
+    def handleBlur(e: FocusEvent[Any, Element]): Unit = js.native
+    def handleBlur[T](fieldOrEvent: T): Unit | (js.Function1[/* e */ Any, Unit]) = js.native
     
-    def handleChange(e: ChangeEvent[js.Any]): Unit = js.native
-    def handleChange[T](field: T): (js.Function1[/* e */ String | ChangeEvent[js.Any], Unit]) | Unit = js.native
+    def handleChange(e: ChangeEvent[Any]): Unit = js.native
+    def handleChange[T](field: T): (js.Function1[/* e */ String | ChangeEvent[Any], Unit]) | Unit = js.native
     
     /** Reset form event handler  */
     def handleReset(): Unit = js.native
-    def handleReset(e: SyntheticEvent[js.Any, Event]): Unit = js.native
+    def handleReset(e: SyntheticEvent[Any, Event]): Unit = js.native
     
     /** Form submit handler */
     def handleSubmit(): Unit = js.native
@@ -499,6 +502,7 @@ object typesMod {
     def setErrors(errors: FormikErrors[Values]): Unit = js.native
     
     /** Set error message of a form field directly */
+    def setFieldError(field: String): Unit = js.native
     def setFieldError(field: String, message: String): Unit = js.native
     
     /** Set whether field has been touched directly */
@@ -508,8 +512,8 @@ object typesMod {
     def setFieldTouched(field: String, isTouched: Unit, shouldValidate: Boolean): Unit = js.native
     
     /** Set value of form field directly */
-    def setFieldValue(field: String, value: js.Any): Unit = js.native
-    def setFieldValue(field: String, value: js.Any, shouldValidate: Boolean): Unit = js.native
+    def setFieldValue(field: String, value: Any): Unit = js.native
+    def setFieldValue(field: String, value: Any, shouldValidate: Boolean): Unit = js.native
     
     def setFormikState(f: js.Function1[/* prevState */ FormikState[Values], FormikState[Values]]): Unit = js.native
     def setFormikState(f: js.Function1[/* prevState */ FormikState[Values], FormikState[Values]], cb: js.Function0[Unit]): Unit = js.native
@@ -519,7 +523,7 @@ object typesMod {
     
     /** Manually set top level status. */
     def setStatus(): Unit = js.native
-    def setStatus(status: js.Any): Unit = js.native
+    def setStatus(status: Any): Unit = js.native
     
     /** Manually set isSubmitting */
     def setSubmitting(isSubmitting: Boolean): Unit = js.native
@@ -540,7 +544,7 @@ object typesMod {
     
     /** Validate form values */
     def validateForm(): js.Promise[FormikErrors[Values]] = js.native
-    def validateForm(values: js.Any): js.Promise[FormikErrors[Values]] = js.native
+    def validateForm(values: Any): js.Promise[FormikErrors[Values]] = js.native
   }
   
   @js.native
@@ -636,7 +640,7 @@ object typesMod {
     var isValidating: Boolean
     
     /** Top level status state, in case you need it */
-    var status: js.UndefOr[js.Any] = js.undefined
+    var status: js.UndefOr[Any] = js.undefined
     
     /** Number of times user tried to submit the form */
     var submitCount: Double
@@ -669,7 +673,7 @@ object typesMod {
       
       inline def setIsValidating(value: Boolean): Self = StObject.set(x, "isValidating", value.asInstanceOf[js.Any])
       
-      inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
@@ -682,10 +686,10 @@ object typesMod {
   }
   
   type FormikTouched[Values] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Values ]:? Values[K] extends std.Array<any>? Values[K][number] extends object? std.Array</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias formik.formik/dist/types.FormikTouched<Values[K][number]> * / object> : boolean : Values[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias formik.formik/dist/types.FormikTouched<Values[K]> * / object : boolean}
-    */ typings.formik.formikStrings.FormikTouched & TopLevel[js.Any]
+  {[ K in keyof Values ]:? Values[K] extends std.Array<any>? Values[K][number] extends object? std.Array<formik.formik/dist/types.FormikTouched<Values[K][number]>> : boolean : Values[K] extends object? formik.formik/dist/types.FormikTouched<Values[K]> : boolean}
+    */ typings.formik.formikStrings.FormikTouched & TopLevel[Any]
   
-  type FormikValues = StringDictionary[js.Any]
+  type FormikValues = StringDictionary[Any]
   
   type GenericFieldHTMLAttributes = DetailedHTMLProps[
     InputHTMLAttributes[HTMLInputElement] | SelectHTMLAttributes[HTMLSelectElement] | TextareaHTMLAttributes[HTMLTextAreaElement], 

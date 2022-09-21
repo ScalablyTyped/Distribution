@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("muicss/react", "Radio")
 @js.native
-class Radio () extends default
+open class Radio () extends default

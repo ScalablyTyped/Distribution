@@ -1,6 +1,8 @@
 package typings.devextreme.mod.DevExpress.data
 
 import typings.devextreme.anon.Type
+import typings.devextreme.anon.XmlaStoreOptionstypexmla
+import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.Field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,55 +10,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PivotGridDataSourceOptions extends StObject {
   
   /**
-    * [descr:PivotGridDataSource.Options.fields]
+    * Configures pivot grid fields.
     */
-  var fields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.undefined
+  var fields: js.UndefOr[js.Array[Field]] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.filter]
+    * Specifies data filtering conditions. Cannot be used with an XmlaStore.
     */
-  var filter: js.UndefOr[String | js.Array[js.Any] | js.Function] = js.undefined
+  var filter: js.UndefOr[String | js.Array[Any] | js.Function] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.onChanged]
+    * A function that is executed after data is successfully loaded.
     */
   var onChanged: js.UndefOr[js.Function] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.onFieldsPrepared]
+    * A function that is executed when all fields are loaded from the store and they are ready to be displayed in the PivotGrid.
     */
-  var onFieldsPrepared: js.UndefOr[js.Function1[/* fields */ js.Array[PivotGridDataSourceField], js.Any]] = js.undefined
+  var onFieldsPrepared: js.UndefOr[js.Function1[/* fields */ js.Array[Field], Unit]] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.onLoadError]
+    * A function that is executed when data loading fails.
     */
-  var onLoadError: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
+  var onLoadError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.onLoadingChanged]
+    * A function that is executed when the data loading status changes.
     */
-  var onLoadingChanged: js.UndefOr[js.Function1[/* isLoading */ Boolean, js.Any]] = js.undefined
+  var onLoadingChanged: js.UndefOr[js.Function1[/* isLoading */ Boolean, Unit]] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.paginate]
+    * Specifies whether the PivotGridDataSource should load data in portions. Can be used only with an XmlaStore.
     */
   var paginate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.remoteOperations]
+    * Specifies whether the data processing operations (filtering, grouping, summary calculation) should be performed on the server.
     */
   var remoteOperations: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.retrieveFields]
+    * Specifies whether to auto-generate pivot grid fields from the store&apos;s data.
     */
   var retrieveFields: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:PivotGridDataSource.Options.store]
+    * Configures the DataSource&apos;s underlying store.
     */
   var store: js.UndefOr[
-    Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[Type] | Type
+    (typings.devextreme.mod.DevExpress.data.utils.Store[Any, Any]) | (typings.devextreme.mod.DevExpress.data.utils.StoreOptions[Any, Any]) | XmlaStore | XmlaStoreOptionstypexmla | js.Array[Type] | Type
   ] = js.undefined
 }
 object PivotGridDataSourceOptions {
@@ -68,31 +70,31 @@ object PivotGridDataSourceOptions {
   
   extension [Self <: PivotGridDataSourceOptions](x: Self) {
     
-    inline def setFields(value: js.Array[PivotGridDataSourceField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: PivotGridDataSourceField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
-    inline def setFilter(value: String | js.Array[js.Any] | js.Function): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String | js.Array[Any] | js.Function): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Any*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setOnChanged(value: js.Function): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
     
     inline def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
     
-    inline def setOnFieldsPrepared(value: /* fields */ js.Array[PivotGridDataSourceField] => js.Any): Self = StObject.set(x, "onFieldsPrepared", js.Any.fromFunction1(value))
+    inline def setOnFieldsPrepared(value: /* fields */ js.Array[Field] => Unit): Self = StObject.set(x, "onFieldsPrepared", js.Any.fromFunction1(value))
     
     inline def setOnFieldsPreparedUndefined: Self = StObject.set(x, "onFieldsPrepared", js.undefined)
     
-    inline def setOnLoadError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+    inline def setOnLoadError(value: /* error */ Any => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
     
     inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
     
-    inline def setOnLoadingChanged(value: /* isLoading */ Boolean => js.Any): Self = StObject.set(x, "onLoadingChanged", js.Any.fromFunction1(value))
+    inline def setOnLoadingChanged(value: /* isLoading */ Boolean => Unit): Self = StObject.set(x, "onLoadingChanged", js.Any.fromFunction1(value))
     
     inline def setOnLoadingChangedUndefined: Self = StObject.set(x, "onLoadingChanged", js.undefined)
     
@@ -108,10 +110,12 @@ object PivotGridDataSourceOptions {
     
     inline def setRetrieveFieldsUndefined: Self = StObject.set(x, "retrieveFields", js.undefined)
     
-    inline def setStore(value: Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[Type] | Type): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(
+      value: (typings.devextreme.mod.DevExpress.data.utils.Store[Any, Any]) | (typings.devextreme.mod.DevExpress.data.utils.StoreOptions[Any, Any]) | XmlaStore | XmlaStoreOptionstypexmla | js.Array[Type] | Type
+    ): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    inline def setStoreVarargs(value: Type*): Self = StObject.set(x, "store", js.Array(value :_*))
+    inline def setStoreVarargs(value: Type*): Self = StObject.set(x, "store", js.Array(value*))
   }
 }

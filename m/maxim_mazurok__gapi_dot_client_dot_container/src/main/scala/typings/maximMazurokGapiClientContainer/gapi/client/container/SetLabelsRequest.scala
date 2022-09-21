@@ -17,12 +17,12 @@ trait SetLabelsRequest extends StObject {
     */
   var labelFingerprint: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, cluster id) of the cluster to set labels. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
+  /** The name (project, location, cluster name) of the cluster to set labels. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and replaced
-    * by the name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated
+    * and replaced by the name field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ trait SetLabelsRequest extends StObject {
   var resourceLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.SetLabelsRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.SetLabelsRequest & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -67,7 +67,7 @@ object SetLabelsRequest {
     inline def setResourceLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.SetLabelsRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.SetLabelsRequest & TopLevel[Any]
     ): Self = StObject.set(x, "resourceLabels", value.asInstanceOf[js.Any])
     
     inline def setResourceLabelsUndefined: Self = StObject.set(x, "resourceLabels", js.undefined)

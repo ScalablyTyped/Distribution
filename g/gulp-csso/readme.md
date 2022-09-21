@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-csso
 
-Typings are for version v1.0.0
+Typings are for version v4.0.0
 
 ## Library description:
 Minify CSS with CSSO.
@@ -10,10 +10,10 @@ Minify CSS with CSSO.
 | ------------------ | :-------------: |
 | Full name          | gulp-csso |
 | Keywords           | gulpplugin, minify, css |
-| # releases         | 3 |
-| # dependents       | 146 |
-| # downloads        | 1634238 |
-| # stars            | 73 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 152703.33333333334 |
+| # stars            | 242.0 |
 
 ## Links
 - [Homepage](https://github.com/ben-eb/gulp-csso)

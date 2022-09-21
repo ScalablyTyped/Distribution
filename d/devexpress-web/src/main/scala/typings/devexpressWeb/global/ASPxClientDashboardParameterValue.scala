@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardParameterValue")
 @js.native
-class ASPxClientDashboardParameterValue ()
+open class ASPxClientDashboardParameterValue ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardParameterValue {
   
@@ -23,5 +23,5 @@ class ASPxClientDashboardParameterValue ()
     * Returns a parameter value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
 }

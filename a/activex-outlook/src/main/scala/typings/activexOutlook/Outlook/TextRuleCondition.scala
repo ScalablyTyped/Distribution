@@ -17,11 +17,11 @@ trait TextRuleCondition extends StObject {
   /* private */ @JSName("Outlook.TextRuleCondition_typekey")
   var OutlookDotTextRuleCondition_typekey: TextRuleCondition
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
-  var Text: js.Any
+  var Text: Any
 }
 object TextRuleCondition {
   
@@ -31,9 +31,9 @@ object TextRuleCondition {
     ConditionType: OlRuleConditionType,
     Enabled: Boolean,
     OutlookDotTextRuleCondition_typekey: TextRuleCondition,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
-    Text: js.Any
+    Text: Any
   ): TextRuleCondition = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.updateDynamic("Outlook.TextRuleCondition_typekey")(OutlookDotTextRuleCondition_typekey.asInstanceOf[js.Any])
@@ -52,10 +52,10 @@ object TextRuleCondition {
     
     inline def setOutlookDotTextRuleCondition_typekey(value: TextRuleCondition): Self = StObject.set(x, "Outlook.TextRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: Any): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

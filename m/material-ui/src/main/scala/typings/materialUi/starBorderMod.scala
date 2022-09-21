@@ -10,10 +10,10 @@ object starBorderMod {
   
   @JSImport("material-ui/svg-icons/toggle/star-border", JSImport.Default)
   @js.native
-  class default () extends ToggleStarBorder
+  open class default () extends ToggleStarBorder
   
   @JSImport("material-ui/svg-icons/toggle/star-border", "ToggleStarBorder")
   @js.native
-  class ToggleStarBorder ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ToggleStarBorder ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

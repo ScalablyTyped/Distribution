@@ -25,12 +25,12 @@ object ChannelSectionContentDetails {
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setPlaylists(value: js.Array[String]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
     
     inline def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
     
-    inline def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value :_*))
+    inline def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value*))
   }
 }

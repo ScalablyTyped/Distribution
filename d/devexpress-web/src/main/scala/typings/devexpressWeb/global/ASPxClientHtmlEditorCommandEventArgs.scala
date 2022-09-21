@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorCommandEventArgs")
 @js.native
-class ASPxClientHtmlEditorCommandEventArgs protected ()
+open class ASPxClientHtmlEditorCommandEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorCommandEventArgs {
   /**
@@ -17,7 +17,7 @@ class ASPxClientHtmlEditorCommandEventArgs protected ()
     * @param commandName A string value that identifies the executed command. Initializes the ASPxClientHtmlEditorCommandEventArgs.commandName property.
     * @param parameter An object that can contain a command specific infomation needed for handling of the command execution. Initializes the ASPxClientHtmlEditorCommandEventArgs.parameter property.
     */
-  def this(commandName: String, parameter: js.Any) = this()
+  def this(commandName: String, parameter: Any) = this()
   
   /**
     * Gets the name of the processed command.
@@ -29,5 +29,5 @@ class ASPxClientHtmlEditorCommandEventArgs protected ()
     * Gets an optional parameter that complements the processed command.
     */
   /* CompleteClass */
-  var parameter: js.Any = js.native
+  var parameter: Any = js.native
 }

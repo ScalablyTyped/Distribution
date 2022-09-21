@@ -11,9 +11,9 @@ OpenCL bindings for Node.js
 | Full name          | webcl |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 88 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 14.666666666666666 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/fifield/node-webcl#readme)

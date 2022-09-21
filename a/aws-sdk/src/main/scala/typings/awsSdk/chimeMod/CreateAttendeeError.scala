@@ -17,7 +17,7 @@ trait CreateAttendeeError extends StObject {
   var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Chime SDK external user ID. An idempotency token. Links the attendee to an identity managed by a builder application. If you create an attendee with the same external user id, the service returns the existing record.
+    * The Amazon Chime SDK external user ID. An idempotency token. Links the attendee to an identity managed by a builder application.
     */
   var ExternalUserId: js.UndefOr[ExternalUserIdType] = js.undefined
 }

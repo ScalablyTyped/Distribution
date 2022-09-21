@@ -10,7 +10,7 @@ trait Encoding extends StObject {
   
   var encoding: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[js.Any] = js.undefined
+  var env: js.UndefOr[Any] = js.undefined
 }
 object Encoding {
   
@@ -29,7 +29,7 @@ object Encoding {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
   }

@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-text-truncate", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TextTruncateProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TextTruncateProps, js.Object, Any]
   
-  type TextTruncate = Component[TextTruncateProps, js.Object, js.Any]
+  type TextTruncate = Component[TextTruncateProps, js.Object, Any]
   
   trait TextTruncateProps extends StObject {
     

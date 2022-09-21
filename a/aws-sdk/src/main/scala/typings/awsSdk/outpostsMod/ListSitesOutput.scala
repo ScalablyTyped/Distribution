@@ -27,6 +27,6 @@ object ListSitesOutput {
     
     inline def setSitesUndefined: Self = StObject.set(x, "Sites", js.undefined)
     
-    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "Sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "Sites", js.Array(value*))
   }
 }

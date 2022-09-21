@@ -42,6 +42,6 @@ object ListThingRegistrationTaskReportsResponse {
     
     inline def setResourceLinksUndefined: Self = StObject.set(x, "resourceLinks", js.undefined)
     
-    inline def setResourceLinksVarargs(value: S3FileUrl*): Self = StObject.set(x, "resourceLinks", js.Array(value :_*))
+    inline def setResourceLinksVarargs(value: S3FileUrl*): Self = StObject.set(x, "resourceLinks", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ object getCampaignVersionsMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetCampaignVersions", "GetCampaignVersions")
   @js.native
-  val GetCampaignVersions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetCampaignVersions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

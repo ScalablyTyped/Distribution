@@ -27,7 +27,7 @@ object UpdatePipelineRequest {
     
     inline def setPipelineActivities(value: PipelineActivities): Self = StObject.set(x, "pipelineActivities", value.asInstanceOf[js.Any])
     
-    inline def setPipelineActivitiesVarargs(value: PipelineActivity*): Self = StObject.set(x, "pipelineActivities", js.Array(value :_*))
+    inline def setPipelineActivitiesVarargs(value: PipelineActivity*): Self = StObject.set(x, "pipelineActivities", js.Array(value*))
     
     inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
   }

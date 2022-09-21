@@ -17,5 +17,5 @@ trait PointCloudStretchRendererConstructor
 Instantiable0[PointCloudStretchRenderer]
      with Instantiable1[/* properties */ PointCloudStretchRendererProperties, PointCloudStretchRenderer] {
   
-  def fromJSON(json: js.Any): PointCloudStretchRenderer = js.native
+  def fromJSON(json: Any): PointCloudStretchRenderer = js.native
 }

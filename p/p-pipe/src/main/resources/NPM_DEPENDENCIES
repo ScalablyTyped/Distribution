@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-pipe" : "3.1.0"
+      "p-pipe" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-pipe" : "3.1.0"
+      "p-pipe" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

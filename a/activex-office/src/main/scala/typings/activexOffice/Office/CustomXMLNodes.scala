@@ -9,7 +9,7 @@ trait CustomXMLNodes extends StObject {
   
   def apply(Index: Double): CustomXMLNode = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -17,5 +17,5 @@ trait CustomXMLNodes extends StObject {
   
   def Item(Index: Double): CustomXMLNode = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

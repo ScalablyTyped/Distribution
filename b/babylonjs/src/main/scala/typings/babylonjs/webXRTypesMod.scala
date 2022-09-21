@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.typesMod.Nullable
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,7 +102,7 @@ object webXRTypesMod {
     var canvasContext: WebGLRenderingContext
     
     /**
-      * Initializes the xr layer for the session
+      * Initializes a XRWebGLLayer to be used as the session's baseLayer.
       * @param xrSession xr session
       * @returns a promise that will resolve once the XR Layer has been created
       */

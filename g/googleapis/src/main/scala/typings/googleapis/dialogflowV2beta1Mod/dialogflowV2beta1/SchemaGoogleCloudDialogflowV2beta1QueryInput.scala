@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the query input. It can contain either:  1.  An audio config
-  * which     instructs the speech recognizer how to process the speech audio.
-  * 2.  A conversational query in the form of text,.  3.  An event that
-  * specifies which intent to trigger.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1QueryInput extends StObject {
   
   /**
     * Instructs the speech recognizer how to process the speech audio.
     */
   var audioConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1InputAudioConfig] = js.undefined
+  
+  /**
+    * The DTMF digits used to invoke intent and fill in parameter value.
+    */
+  var dtmf: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1TelephonyDtmfEvents] = js.undefined
   
   /**
     * The event to be processed.
@@ -39,6 +38,10 @@ object SchemaGoogleCloudDialogflowV2beta1QueryInput {
     inline def setAudioConfig(value: SchemaGoogleCloudDialogflowV2beta1InputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     
     inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
+    
+    inline def setDtmf(value: SchemaGoogleCloudDialogflowV2beta1TelephonyDtmfEvents): Self = StObject.set(x, "dtmf", value.asInstanceOf[js.Any])
+    
+    inline def setDtmfUndefined: Self = StObject.set(x, "dtmf", js.undefined)
     
     inline def setEvent(value: SchemaGoogleCloudDialogflowV2beta1EventInput): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

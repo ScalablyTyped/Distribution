@@ -19,11 +19,11 @@ trait ASPxClientListEditCustomHighlightingEventArgs
   /**
     * Specifies rules according to which the editor highlights the filtered items.
     */
-  var highlighting: js.Any
+  var highlighting: Any
 }
 object ASPxClientListEditCustomHighlightingEventArgs {
   
-  inline def apply(filter: String, highlighting: js.Any): ASPxClientListEditCustomHighlightingEventArgs = {
+  inline def apply(filter: String, highlighting: Any): ASPxClientListEditCustomHighlightingEventArgs = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], highlighting = highlighting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientListEditCustomHighlightingEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientListEditCustomHighlightingEventArgs {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setHighlighting(value: js.Any): Self = StObject.set(x, "highlighting", value.asInstanceOf[js.Any])
+    inline def setHighlighting(value: Any): Self = StObject.set(x, "highlighting", value.asInstanceOf[js.Any])
   }
 }

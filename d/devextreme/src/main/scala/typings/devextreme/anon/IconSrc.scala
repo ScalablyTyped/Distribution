@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IconSrc extends StObject {
   
+  /**
+    * A URL pointing to the custom icon to be used for the marker.
+    */
   var iconSrc: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[js.Any | String | js.Array[Double]] = js.undefined
+  /**
+    * Specifies the marker location.
+    */
+  var location: js.UndefOr[Any | String | js.Array[Double]] = js.undefined
   
+  /**
+    * A callback function performed when the marker is clicked.
+    */
   var onClick: js.UndefOr[js.Function] = js.undefined
   
+  /**
+    * A tooltip to be used for the marker.
+    */
   var tooltip: js.UndefOr[String | IsShown] = js.undefined
 }
 object IconSrc {
@@ -27,11 +39,11 @@ object IconSrc {
     
     inline def setIconSrcUndefined: Self = StObject.set(x, "iconSrc", js.undefined)
     
-    inline def setLocation(value: js.Any | String | js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Any | String | js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     

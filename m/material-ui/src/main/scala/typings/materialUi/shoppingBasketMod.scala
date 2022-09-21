@@ -10,10 +10,10 @@ object shoppingBasketMod {
   
   @JSImport("material-ui/svg-icons/action/shopping-basket", JSImport.Default)
   @js.native
-  class default () extends ActionShoppingBasket
+  open class default () extends ActionShoppingBasket
   
   @JSImport("material-ui/svg-icons/action/shopping-basket", "ActionShoppingBasket")
   @js.native
-  class ActionShoppingBasket ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionShoppingBasket ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

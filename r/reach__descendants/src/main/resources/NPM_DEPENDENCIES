@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@reach/descendants" : "0.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@reach/descendants" : "0.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

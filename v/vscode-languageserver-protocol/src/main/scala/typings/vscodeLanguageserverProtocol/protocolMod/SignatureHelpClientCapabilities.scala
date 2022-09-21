@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.anon.DocumentationFormat
+import typings.vscodeLanguageserverProtocol.anon.ActiveParameterSupport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait SignatureHelpClientCapabilities extends StObject {
     * The client supports the following `SignatureInformation`
     * specific properties.
     */
-  var signatureInformation: js.UndefOr[DocumentationFormat] = js.undefined
+  var signatureInformation: js.UndefOr[ActiveParameterSupport] = js.undefined
 }
 object SignatureHelpClientCapabilities {
   
@@ -45,7 +45,7 @@ object SignatureHelpClientCapabilities {
     
     inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
-    inline def setSignatureInformation(value: DocumentationFormat): Self = StObject.set(x, "signatureInformation", value.asInstanceOf[js.Any])
+    inline def setSignatureInformation(value: ActiveParameterSupport): Self = StObject.set(x, "signatureInformation", value.asInstanceOf[js.Any])
     
     inline def setSignatureInformationUndefined: Self = StObject.set(x, "signatureInformation", js.undefined)
   }

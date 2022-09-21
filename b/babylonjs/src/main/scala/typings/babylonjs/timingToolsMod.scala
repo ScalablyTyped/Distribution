@@ -8,7 +8,7 @@ object timingToolsMod {
   
   @JSImport("babylonjs/Misc/timingTools", "TimingTools")
   @js.native
-  class TimingTools () extends StObject
+  open class TimingTools () extends StObject
   /* static members */
   object TimingTools {
     

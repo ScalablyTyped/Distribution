@@ -2,10 +2,9 @@ package typings.vueServerRenderer
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Readable
-import typings.std.Error
-import typings.vue.vnodeMod.VNode
-import typings.vue.vnodeMod.VNodeDirective
-import typings.vue.vueMod.Vue
+import typings.vueRuntimeCore.mod.RendererElement
+import typings.vueRuntimeCore.mod.RendererNode
+import typings.vueRuntimeCore.mod.VNode
 import typings.vueServerRenderer.vueServerRendererStrings.once
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -93,18 +92,35 @@ object mod {
     def set(key: String, `val`: String): Unit = js.native
   }
   
-  type RenderCallback = js.Function2[/* err */ Error | Null, /* html */ String, Unit]
+  type RenderCallback = js.Function2[/* err */ js.Error | Null, /* html */ String, Unit]
   
   @js.native
   trait Renderer extends StObject {
     
-    def renderToStream(vm: Vue): Readable = js.native
-    def renderToStream(vm: Vue, context: js.Object): Readable = js.native
+    def renderToStream(
+      vm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+    ): Readable = js.native
+    def renderToStream(
+      vm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any,
+      context: js.Object
+    ): Readable = js.native
     
-    def renderToString(vm: Vue): js.Promise[String] = js.native
-    def renderToString(vm: Vue, callback: RenderCallback): Unit = js.native
-    def renderToString(vm: Vue, context: js.Object): js.Promise[String] = js.native
-    def renderToString(vm: Vue, context: js.Object, callback: RenderCallback): Unit = js.native
+    def renderToString(
+      vm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+    ): js.Promise[String] = js.native
+    def renderToString(
+      vm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any,
+      callback: RenderCallback
+    ): Unit = js.native
+    def renderToString(
+      vm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any,
+      context: js.Object
+    ): js.Promise[String] = js.native
+    def renderToString(
+      vm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any,
+      context: js.Object,
+      callback: RenderCallback
+    ): Unit = js.native
   }
   
   trait RendererOptions extends StObject {
@@ -112,7 +128,13 @@ object mod {
     var cache: js.UndefOr[RenderCache] = js.undefined
     
     var directives: js.UndefOr[
-        StringDictionary[js.Function2[/* vnode */ VNode, /* dir */ VNodeDirective, Unit]]
+        StringDictionary[
+          js.Function2[
+            /* vnode */ VNode[RendererNode, RendererElement, StringDictionary[Any]], 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VNodeDirective */ /* dir */ Any, 
+            Unit
+          ]
+        ]
       ] = js.undefined
     
     var inject: js.UndefOr[Boolean] = js.undefined
@@ -136,7 +158,15 @@ object mod {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setDirectives(value: StringDictionary[js.Function2[/* vnode */ VNode, /* dir */ VNodeDirective, Unit]]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+      inline def setDirectives(
+        value: StringDictionary[
+              js.Function2[
+                /* vnode */ VNode[RendererNode, RendererElement, StringDictionary[Any]], 
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VNodeDirective */ /* dir */ Any, 
+                Unit
+              ]
+            ]
+      ): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
       inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
       

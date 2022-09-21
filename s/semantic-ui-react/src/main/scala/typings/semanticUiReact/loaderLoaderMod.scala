@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticSIZES
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.semanticUiReactStrings.centered
@@ -15,12 +15,12 @@ object loaderLoaderMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Loader/Loader", JSImport.Default)
   @js.native
-  val default: StatelessComponent[LoaderProps] = js.native
+  val default: FC[LoaderProps] = js.native
   
   trait LoaderProps
     extends StObject
        with StrictLoaderProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object LoaderProps {
     
     inline def apply(): LoaderProps = {
@@ -35,7 +35,7 @@ object loaderLoaderMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -74,7 +74,7 @@ object loaderLoaderMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -112,8 +112,8 @@ object loaderLoaderMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[LoaderProps]
+  type _To = FC[LoaderProps]
   
   /* This means you don't have to write `default`, but can instead just say `loaderLoaderMod.foo` */
-  override def _to: StatelessComponent[LoaderProps] = default
+  override def _to: FC[LoaderProps] = default
 }

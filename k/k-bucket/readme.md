@@ -10,10 +10,10 @@ Kademlia DHT K-bucket implementation as a binary tree
 | ------------------ | :-------------: |
 | Full name          | k-bucket |
 | Keywords           | k-bucket, kademlia, dht |
-| # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 714079 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 85962.33333333333 |
+| # stars            | 147.0 |
 
 ## Links
 - [Homepage](https://github.com/tristanls/k-bucket#readme)

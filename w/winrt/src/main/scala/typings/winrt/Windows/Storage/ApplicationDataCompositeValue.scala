@@ -15,12 +15,12 @@ object ApplicationDataCompositeValue {
   
   inline def apply(
     clear: () => Unit,
-    first: () => IIterator[IKeyValuePair[String, js.Any]],
-    getView: () => IMapView[String, js.Any],
+    first: () => IIterator[IKeyValuePair[String, Any]],
+    getView: () => IMapView[String, Any],
     hasKey: String => Boolean,
-    insert: (String, js.Any) => Boolean,
-    lookup: String => js.Any,
-    onmapchanged: js.Any,
+    insert: (String, Any) => Boolean,
+    lookup: String => Any,
+    onmapchanged: Any,
     remove: String => Unit,
     size: Double
   ): ApplicationDataCompositeValue = {

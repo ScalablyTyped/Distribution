@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Export sink for cloud storage files.
-  */
 trait SchemaCloudStorageSink extends StObject {
   
   /**
-    * Output only. The exported files on cloud storage.
+    * Output only. The exported files in Cloud Storage.
     */
   var files: js.UndefOr[js.Array[SchemaCloudStorageFile]] = js.undefined
 }
@@ -27,6 +24,6 @@ object SchemaCloudStorageSink {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: SchemaCloudStorageFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: SchemaCloudStorageFile*): Self = StObject.set(x, "files", js.Array(value*))
   }
 }

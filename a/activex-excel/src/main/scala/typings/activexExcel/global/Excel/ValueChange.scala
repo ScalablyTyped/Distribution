@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ValueChange")
 @js.native
-/* private */ class ValueChange ()
+/* private */ open class ValueChange ()
   extends StObject
      with typings.activexExcel.Excel.ValueChange {
   
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Order: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PivotCell: typings.activexExcel.Excel.PivotCell = js.native

@@ -10,15 +10,12 @@ Smooth scrolling to an element via selector or node reference
 | ------------------ | :-------------: |
 | Full name          | scroll-to-element |
 | Keywords           | animate, scroll, tween, smooth |
-| # releases         | 2 |
-| # dependents       | 34 |
-| # downloads        | 2086231 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 345101.3333333333 |
+| # stars            | 108.0 |
 
 ## Links
-- [Homepage](https://github.com/willhoag/scroll-to-element#readme)
-- [Bugs](https://github.com/willhoag/scroll-to-element/issues)
-- [Repository](https://github.com/willhoag/scroll-to-element)
 - [Npm](https://www.npmjs.com/package/scroll-to-element)
     
 

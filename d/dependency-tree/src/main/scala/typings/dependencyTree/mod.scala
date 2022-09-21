@@ -1,36 +1,39 @@
 package typings.dependencyTree
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(options: Options): DependencyObj = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[DependencyObj]
+  inline def apply(options: Options): Tree = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Tree]
   
   @JSImport("dependency-tree", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getDependencies(config: Config): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_getDependencies")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
   inline def toList(options: Options): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toList")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  trait DependencyObj
+  trait Config
     extends StObject
-       with /* k */ StringDictionary[DependencyObj]
-  object DependencyObj {
+       with Options
+  object Config {
     
-    inline def apply(): DependencyObj = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DependencyObj]
+    inline def apply(directory: String, filename: String): Config = {
+      val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Config]
     }
   }
   
   trait Options extends StObject {
     
-    var detective: js.UndefOr[js.Any] = js.undefined
+    var detectiveConfig: js.UndefOr[Any] = js.undefined
     
-    var directory: js.UndefOr[String] = js.undefined
+    var directory: String
     
     var filename: String
     
@@ -38,34 +41,34 @@ object mod {
     
     var isListForm: js.UndefOr[Boolean] = js.undefined
     
-    var nodeModulesConfig: js.UndefOr[js.Any] = js.undefined
+    var noTypeDefinitions: js.UndefOr[Boolean] = js.undefined
+    
+    var nodeModulesConfig: js.UndefOr[Any] = js.undefined
     
     var nonExistent: js.UndefOr[js.Array[String]] = js.undefined
     
     var requireConfig: js.UndefOr[String] = js.undefined
     
-    var tsConfig: js.UndefOr[String] = js.undefined
+    var tsConfig: js.UndefOr[String | (Record[String, Any])] = js.undefined
     
-    var visited: js.UndefOr[DependencyObj] = js.undefined
+    var visited: js.UndefOr[Tree] = js.undefined
     
     var webpackConfig: js.UndefOr[String] = js.undefined
   }
   object Options {
     
-    inline def apply(filename: String): Options = {
-      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    inline def apply(directory: String, filename: String): Options = {
+      val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
     extension [Self <: Options](x: Self) {
       
-      inline def setDetective(value: js.Any): Self = StObject.set(x, "detective", value.asInstanceOf[js.Any])
+      inline def setDetectiveConfig(value: Any): Self = StObject.set(x, "detectiveConfig", value.asInstanceOf[js.Any])
       
-      inline def setDetectiveUndefined: Self = StObject.set(x, "detective", js.undefined)
+      inline def setDetectiveConfigUndefined: Self = StObject.set(x, "detectiveConfig", js.undefined)
       
       inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
-      
-      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -77,7 +80,11 @@ object mod {
       
       inline def setIsListFormUndefined: Self = StObject.set(x, "isListForm", js.undefined)
       
-      inline def setNodeModulesConfig(value: js.Any): Self = StObject.set(x, "nodeModulesConfig", value.asInstanceOf[js.Any])
+      inline def setNoTypeDefinitions(value: Boolean): Self = StObject.set(x, "noTypeDefinitions", value.asInstanceOf[js.Any])
+      
+      inline def setNoTypeDefinitionsUndefined: Self = StObject.set(x, "noTypeDefinitions", js.undefined)
+      
+      inline def setNodeModulesConfig(value: Any): Self = StObject.set(x, "nodeModulesConfig", value.asInstanceOf[js.Any])
       
       inline def setNodeModulesConfigUndefined: Self = StObject.set(x, "nodeModulesConfig", js.undefined)
       
@@ -85,23 +92,36 @@ object mod {
       
       inline def setNonExistentUndefined: Self = StObject.set(x, "nonExistent", js.undefined)
       
-      inline def setNonExistentVarargs(value: String*): Self = StObject.set(x, "nonExistent", js.Array(value :_*))
+      inline def setNonExistentVarargs(value: String*): Self = StObject.set(x, "nonExistent", js.Array(value*))
       
       inline def setRequireConfig(value: String): Self = StObject.set(x, "requireConfig", value.asInstanceOf[js.Any])
       
       inline def setRequireConfigUndefined: Self = StObject.set(x, "requireConfig", js.undefined)
       
-      inline def setTsConfig(value: String): Self = StObject.set(x, "tsConfig", value.asInstanceOf[js.Any])
+      inline def setTsConfig(value: String | (Record[String, Any])): Self = StObject.set(x, "tsConfig", value.asInstanceOf[js.Any])
       
       inline def setTsConfigUndefined: Self = StObject.set(x, "tsConfig", js.undefined)
       
-      inline def setVisited(value: DependencyObj): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: Tree): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
       inline def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
       
       inline def setWebpackConfig(value: String): Self = StObject.set(x, "webpackConfig", value.asInstanceOf[js.Any])
       
       inline def setWebpackConfigUndefined: Self = StObject.set(x, "webpackConfig", js.undefined)
+    }
+  }
+  
+  type Tree = TreeInnerNode | String
+  
+  trait TreeInnerNode
+    extends StObject
+       with /* parent */ StringDictionary[TreeInnerNode | String]
+  object TreeInnerNode {
+    
+    inline def apply(): TreeInnerNode = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TreeInnerNode]
     }
   }
 }

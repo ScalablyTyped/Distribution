@@ -10,12 +10,10 @@ object helpBlockMod {
   
   @JSImport("react-bootstrap/lib/HelpBlock", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[HelpBlockProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[HelpBlockProps, js.Object, Any]
   
-  @js.native
-  trait HelpBlock
-    extends Component[HelpBlockProps, js.Object, js.Any]
+  type HelpBlock = Component[HelpBlockProps, js.Object, Any]
   
   trait HelpBlockProps
     extends StObject

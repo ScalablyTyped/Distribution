@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Network extends StObject {
   
   /**
+    * The Amazon Resource Name (ARN) of the network. For more information about ARNs and their format, see Amazon Resource Names (ARNs) in the AWS General Reference.
+    */
+  var Arn: js.UndefOr[ArnString] = js.undefined
+  
+  /**
     * The date and time that the network was created.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Attributes of the blockchain framework for the network.
@@ -47,6 +52,11 @@ trait Network extends StObject {
   var Status: js.UndefOr[NetworkStatus] = js.undefined
   
   /**
+    * Tags assigned to the network. Each tag consists of a key and optional value. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Ethereum Developer Guide, or Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide.
+    */
+  var Tags: js.UndefOr[OutputTagMap] = js.undefined
+  
+  /**
     * The voting rules for the network to decide if a proposal is accepted.
     */
   var VotingPolicy: js.UndefOr[typings.awsSdk.managedblockchainMod.VotingPolicy] = js.undefined
@@ -65,7 +75,11 @@ object Network {
   
   extension [Self <: Network](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setArn(value: ArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -96,6 +110,10 @@ object Network {
     inline def setStatus(value: NetworkStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setTags(value: OutputTagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     inline def setVotingPolicy(value: VotingPolicy): Self = StObject.set(x, "VotingPolicy", value.asInstanceOf[js.Any])
     

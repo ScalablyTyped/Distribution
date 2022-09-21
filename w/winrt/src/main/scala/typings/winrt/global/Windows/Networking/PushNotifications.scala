@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Networking
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType
 import typings.winrt.Windows.UI.Notifications.BadgeNotification
@@ -14,7 +13,7 @@ object PushNotifications {
   
   @JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannel")
   @js.native
-  class PushNotificationChannel ()
+  open class PushNotificationChannel ()
     extends StObject
        with typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel {
     
@@ -22,10 +21,10 @@ object PushNotifications {
     override def close(): Unit = js.native
     
     /* CompleteClass */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
     
     /* CompleteClass */
-    var onpushnotificationreceived: js.Any = js.native
+    var onpushnotificationreceived: Any = js.native
     
     /* CompleteClass */
     var uri: String = js.native
@@ -33,7 +32,7 @@ object PushNotifications {
   
   @JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannelManager")
   @js.native
-  class PushNotificationChannelManager ()
+  open class PushNotificationChannelManager ()
     extends StObject
        with typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannelManager
   /* static members */
@@ -51,7 +50,7 @@ object PushNotifications {
   
   @JSGlobal("Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs")
   @js.native
-  class PushNotificationReceivedEventArgs ()
+  open class PushNotificationReceivedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs {
     
@@ -92,7 +91,7 @@ object PushNotifications {
   
   @JSGlobal("Windows.Networking.PushNotifications.RawNotification")
   @js.native
-  class RawNotification ()
+  open class RawNotification ()
     extends StObject
        with typings.winrt.Windows.Networking.PushNotifications.RawNotification {
     

@@ -1,7 +1,6 @@
 package typings.heremaps.H.service
 
 import typings.heremaps.H.service.PlacesService.EntryPoint
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait PlacesService
   def around(
     aroundParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): JsonpRequestHandle = js.native
   
   /**
@@ -37,7 +36,7 @@ trait PlacesService
   def categories(
     categoriesParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): JsonpRequestHandle = js.native
   
   /**
@@ -50,7 +49,7 @@ trait PlacesService
   def explore(
     exploreParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): JsonpRequestHandle = js.native
   
   /**
@@ -64,12 +63,12 @@ trait PlacesService
   def follow(
     hyperlink: String,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): JsonpRequestHandle = js.native
   def follow(
     hyperlink: String,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit],
+    onError: js.Function1[/* error */ js.Error, Unit],
     opt_additionalParameters: js.Object
   ): JsonpRequestHandle = js.native
   
@@ -83,7 +82,7 @@ trait PlacesService
   def here(
     hereParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): JsonpRequestHandle = js.native
   
   /**
@@ -99,7 +98,7 @@ trait PlacesService
     entryPoint: EntryPoint,
     entryPointParams: js.Object,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): JsonpRequestHandle = js.native
   
   /**
@@ -112,7 +111,7 @@ trait PlacesService
   def search(
     searchParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): JsonpRequestHandle = js.native
   
   /**
@@ -125,7 +124,7 @@ trait PlacesService
   def suggest(
     suggestParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): JsonpRequestHandle = js.native
 }
 object PlacesService {

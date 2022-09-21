@@ -34,13 +34,13 @@ object transactionsMod {
     
     @JSImport("sip.js/lib/core/transactions", "ClientTransaction.makeId")
     @js.native
-    def makeId: js.Any = js.native
-    inline def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
+    def makeId: Any = js.native
+    inline def makeId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("sip.js/lib/core/transactions", "InviteClientTransaction")
   @js.native
-  class InviteClientTransaction protected ()
+  open class InviteClientTransaction protected ()
     extends typings.sipJs.inviteClientTransactionMod.InviteClientTransaction {
     /**
       * Constructor.
@@ -58,7 +58,7 @@ object transactionsMod {
   
   @JSImport("sip.js/lib/core/transactions", "InviteServerTransaction")
   @js.native
-  class InviteServerTransaction protected ()
+  open class InviteServerTransaction protected ()
     extends typings.sipJs.inviteServerTransactionMod.InviteServerTransaction {
     /**
       * Constructor.
@@ -75,7 +75,7 @@ object transactionsMod {
   
   @JSImport("sip.js/lib/core/transactions", "NonInviteClientTransaction")
   @js.native
-  class NonInviteClientTransaction protected ()
+  open class NonInviteClientTransaction protected ()
     extends typings.sipJs.nonInviteClientTransactionMod.NonInviteClientTransaction {
     /**
       * Constructor
@@ -93,7 +93,7 @@ object transactionsMod {
   
   @JSImport("sip.js/lib/core/transactions", "NonInviteServerTransaction")
   @js.native
-  class NonInviteServerTransaction protected ()
+  open class NonInviteServerTransaction protected ()
     extends typings.sipJs.nonInviteServerTransactionMod.NonInviteServerTransaction {
     /**
       * Constructor.

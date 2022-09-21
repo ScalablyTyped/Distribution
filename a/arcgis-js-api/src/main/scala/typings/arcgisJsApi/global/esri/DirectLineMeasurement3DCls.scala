@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html)
   */
-class DirectLineMeasurement3DCls ()
+open class DirectLineMeasurement3DCls ()
   extends StObject
      with typings.arcgisJsApi.esri.DirectLineMeasurement3D {
   def this(properties: DirectLineMeasurement3DProperties) = this()

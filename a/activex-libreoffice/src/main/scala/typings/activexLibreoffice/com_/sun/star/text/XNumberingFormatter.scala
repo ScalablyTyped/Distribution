@@ -28,7 +28,7 @@ object XNumberingFormatter {
   inline def apply(
     acquire: () => Unit,
     makeNumberingString: (SeqEquiv[PropertyValue], Locale) => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XNumberingFormatter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), makeNumberingString = js.Any.fromFunction2(makeNumberingString), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

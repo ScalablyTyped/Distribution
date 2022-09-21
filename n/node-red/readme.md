@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-red
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Low-code programming for event-driven applications
@@ -10,10 +10,10 @@ Low-code programming for event-driven applications
 | ------------------ | :-------------: |
 | Full name          | node-red |
 | Keywords           | editor, messaging, iot, flow |
-| # releases         | 39 |
-| # dependents       | 80 |
-| # downloads        | 975077 |
-| # stars            | 55 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 85831.0 |
+| # stars            | 15051.0 |
 
 ## Links
 - [Homepage](http://nodered.org)

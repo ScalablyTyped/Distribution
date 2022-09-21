@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchGetPartitionRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the partitions in question reside. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the partitions in question reside. If none is supplied, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -43,7 +43,7 @@ object BatchGetPartitionRequest {
     
     inline def setPartitionsToGet(value: BatchGetPartitionValueList): Self = StObject.set(x, "PartitionsToGet", value.asInstanceOf[js.Any])
     
-    inline def setPartitionsToGetVarargs(value: PartitionValueList*): Self = StObject.set(x, "PartitionsToGet", js.Array(value :_*))
+    inline def setPartitionsToGetVarargs(value: PartitionValueList*): Self = StObject.set(x, "PartitionsToGet", js.Array(value*))
     
     inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

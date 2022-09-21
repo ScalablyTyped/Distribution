@@ -14,10 +14,10 @@ object bignumberMod {
   
   @JSImport("@ethersproject/bignumber/lib/bignumber", "BigNumber")
   @js.native
-  class BigNumber protected ()
+  open class BigNumber protected ()
     extends StObject
        with Hexable {
-    def this(constructorGuard: js.Any, hex: String) = this()
+    def this(constructorGuard: Any, hex: String) = this()
     
     val _hex: String = js.native
     
@@ -61,11 +61,13 @@ object bignumberMod {
     
     def sub(other: BigNumberish): BigNumber = js.native
     
+    def toBigInt(): js.BigInt = js.native
+    
     /* CompleteClass */
     override def toHexString(): String = js.native
     
-    def toJSON(): js.Any = js.native
-    def toJSON(key: String): js.Any = js.native
+    def toJSON(): Any = js.native
+    def toJSON(key: String): Any = js.native
     
     def toNumber(): Double = js.native
     
@@ -80,16 +82,16 @@ object bignumberMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from(value: js.Any): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+    inline def from(value: Any): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
     
-    inline def isBigNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean]
+    inline def isBigNumber(value: Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean]
   }
   
   inline def base16To36(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_base16To36")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def base36To16(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_base36To16")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def isBigNumberish(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumberish")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean]
+  inline def isBigNumberish(value: Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumberish")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean]
   
-  type BigNumberish = BigNumber | Bytes | String | Double
+  type BigNumberish = BigNumber | Bytes | js.BigInt | String | Double
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FontFormattingSettings")
 @js.native
-class FontFormattingSettings ()
+open class FontFormattingSettings ()
   extends StObject
      with typings.devexpressWeb.FontFormattingSettings {
   

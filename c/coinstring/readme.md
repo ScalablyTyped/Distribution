@@ -10,10 +10,10 @@ Create and parse crypto currency addresses and wallet import formats.
 | ------------------ | :-------------: |
 | Full name          | coinstring |
 | Keywords           | cryptography, crypto, bitcoin, litecoin, dogecoin, currency, cryptocurrency, address, wif, base58, bip32 |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 1297450 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104634.0 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/cryptocoinjs/coinstring)

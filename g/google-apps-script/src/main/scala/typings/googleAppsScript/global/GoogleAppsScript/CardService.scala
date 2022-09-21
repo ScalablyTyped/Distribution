@@ -7,6 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CardService {
   
   /**
+    * An enum that represents the border types that can be applied to widgets.
+    */
+  @JSGlobal("GoogleAppsScript.Card_Service.BorderType")
+  @js.native
+  object BorderType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.BorderType & Double] = js.native
+    
+    /* 0 */ val NO_BORDER: typings.googleAppsScript.GoogleAppsScript.CardService.BorderType.NO_BORDER & Double = js.native
+    
+    /* 1 */ val STROKE: typings.googleAppsScript.GoogleAppsScript.CardService.BorderType.STROKE & Double = js.native
+  }
+  
+  /**
     * An enum value that specifies whether the composed email is a standalone or reply draft.
     */
   @JSGlobal("GoogleAppsScript.Card_Service.ComposedEmailType")
@@ -36,6 +51,55 @@ object CardService {
     /* 1 */ val MUTABLE_HTML: typings.googleAppsScript.GoogleAppsScript.CardService.ContentType.MUTABLE_HTML & Double = js.native
     
     /* 0 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.CardService.ContentType.TEXT & Double = js.native
+  }
+  
+  /**
+    * An enum that defines the display style of card.
+    */
+  @JSGlobal("GoogleAppsScript.Card_Service.DisplayStyle")
+  @js.native
+  object DisplayStyle extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.DisplayStyle & Double] = js.native
+    
+    /* 0 */ val PEEK: typings.googleAppsScript.GoogleAppsScript.CardService.DisplayStyle.PEEK & Double = js.native
+    
+    /* 1 */ val REPLACE: typings.googleAppsScript.GoogleAppsScript.CardService.DisplayStyle.REPLACE & Double = js.native
+  }
+  
+  /**
+    * An enum that defines the image and text style of a GridItem.
+    */
+  @JSGlobal("GoogleAppsScript.Card_Service.GridItemLayout")
+  @js.native
+  object GridItemLayout extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.GridItemLayout & Double] = js.native
+    
+    /* 1 */ val TEXT_ABOVE: typings.googleAppsScript.GoogleAppsScript.CardService.GridItemLayout.TEXT_ABOVE & Double = js.native
+    
+    /* 0 */ val TEXT_BELOW: typings.googleAppsScript.GoogleAppsScript.CardService.GridItemLayout.TEXT_BELOW & Double = js.native
+  }
+  
+  /**
+    * An enum that specifies the horizontal alignment of a widget.
+    */
+  @JSGlobal("GoogleAppsScript.Card_Service.HorizontalAlignment")
+  @js.native
+  object HorizontalAlignment extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[
+        typings.googleAppsScript.GoogleAppsScript.CardService.HorizontalAlignment & Double
+      ] = js.native
+    
+    /* 1 */ val CENTER: typings.googleAppsScript.GoogleAppsScript.CardService.HorizontalAlignment.CENTER & Double = js.native
+    
+    /* 2 */ val END: typings.googleAppsScript.GoogleAppsScript.CardService.HorizontalAlignment.END & Double = js.native
+    
+    /* 0 */ val START: typings.googleAppsScript.GoogleAppsScript.CardService.HorizontalAlignment.START & Double = js.native
   }
   
   /**
@@ -109,6 +173,26 @@ object CardService {
     /* 29 */ val VIDEO_CAMERA: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.VIDEO_CAMERA & Double = js.native
     
     /* 30 */ val VIDEO_PLAY: typings.googleAppsScript.GoogleAppsScript.CardService.Icon.VIDEO_PLAY & Double = js.native
+  }
+  
+  /**
+    * An enum that represents the crop styles applied to image components.
+    * If you want to apply a crop style to an IconImage, you can only use SQUARE or CIRCLE.
+    */
+  @JSGlobal("GoogleAppsScript.Card_Service.ImageCropType")
+  @js.native
+  object ImageCropType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.CardService.ImageCropType & Double] = js.native
+    
+    /* 1 */ val CIRCLE: typings.googleAppsScript.GoogleAppsScript.CardService.ImageCropType.CIRCLE & Double = js.native
+    
+    /* 3 */ val RECTANGLE_4_3: typings.googleAppsScript.GoogleAppsScript.CardService.ImageCropType.RECTANGLE_4_3 & Double = js.native
+    
+    /* 2 */ val RECTANGLE_CUSTOM: typings.googleAppsScript.GoogleAppsScript.CardService.ImageCropType.RECTANGLE_CUSTOM & Double = js.native
+    
+    /* 0 */ val SQUARE: typings.googleAppsScript.GoogleAppsScript.CardService.ImageCropType.SQUARE & Double = js.native
   }
   
   /**

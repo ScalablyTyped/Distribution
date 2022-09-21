@@ -28,13 +28,13 @@ object anon {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: FilterCriterion*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: FilterCriterion*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setInclude(value: FilterCriteria): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: FilterCriterion*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: FilterCriterion*): Self = StObject.set(x, "include", js.Array(value*))
     }
   }
 }

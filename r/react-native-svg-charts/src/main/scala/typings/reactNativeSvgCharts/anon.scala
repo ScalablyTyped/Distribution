@@ -1,36 +1,35 @@
 package typings.reactNativeSvgCharts
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.ReactNode
+import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNativeSvg.mod.AlignmentBaseline
-import typings.reactNativeSvg.mod.BaselineShift
-import typings.reactNativeSvg.mod.ColumnMajorTransformMatrix
-import typings.reactNativeSvg.mod.FillRule
-import typings.reactNativeSvg.mod.FontObject
-import typings.reactNativeSvg.mod.FontStretch
-import typings.reactNativeSvg.mod.FontStyle
-import typings.reactNativeSvg.mod.FontVariant
-import typings.reactNativeSvg.mod.FontVariantLigatures
-import typings.reactNativeSvg.mod.FontWeight
-import typings.reactNativeSvg.mod.LengthAdjust
-import typings.reactNativeSvg.mod.Linecap
-import typings.reactNativeSvg.mod.Linejoin
-import typings.reactNativeSvg.mod.NumberArray
-import typings.reactNativeSvg.mod.NumberProp
-import typings.reactNativeSvg.mod.TextAnchor
-import typings.reactNativeSvg.mod.TextDecoration
-import typings.reactNativeSvg.mod.TransformObject
+import typings.reactNative.mod.LayoutChangeEvent
+import typings.reactNativeSvg.typesMod.AlignmentBaseline
+import typings.reactNativeSvg.typesMod.BaselineShift
+import typings.reactNativeSvg.typesMod.ColumnMajorTransformMatrix
+import typings.reactNativeSvg.typesMod.FillRule
+import typings.reactNativeSvg.typesMod.FontObject
+import typings.reactNativeSvg.typesMod.FontStretch
+import typings.reactNativeSvg.typesMod.FontStyle
+import typings.reactNativeSvg.typesMod.FontVariant
+import typings.reactNativeSvg.typesMod.FontVariantLigatures
+import typings.reactNativeSvg.typesMod.FontWeight
+import typings.reactNativeSvg.typesMod.LengthAdjust
+import typings.reactNativeSvg.typesMod.Linecap
+import typings.reactNativeSvg.typesMod.Linejoin
+import typings.reactNativeSvg.typesMod.NumberArray
+import typings.reactNativeSvg.typesMod.NumberProp
+import typings.reactNativeSvg.typesMod.TextAnchor
+import typings.reactNativeSvg.typesMod.TextDecoration
+import typings.reactNativeSvg.typesMod.TransformObject
+import typings.reactNativeSvg.typesMod.VectorEffect
 import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.HORIZONTAL
 import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.VERTICAL
 import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.`box-none`
 import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.`box-only`
-import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.`non-scaling-stroke`
 import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.auto
-import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.default
-import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.inherit
-import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.nonScalingStroke
 import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.none
-import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -235,7 +234,7 @@ object anon {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
+    var fill: js.UndefOr[ColorValue] = js.undefined
     
     var fillOpacity: js.UndefOr[NumberProp] = js.undefined
     
@@ -252,6 +251,8 @@ object anon {
     var markerStart: js.UndefOr[String] = js.undefined
     
     var mask: js.UndefOr[String] = js.undefined
+    
+    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
     
     var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
@@ -309,7 +310,7 @@ object anon {
     
     var skewY: js.UndefOr[NumberProp] = js.undefined
     
-    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
+    var stroke: js.UndefOr[ColorValue] = js.undefined
     
     var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
     
@@ -333,7 +334,7 @@ object anon {
     
     var translateY: js.UndefOr[NumberProp] = js.undefined
     
-    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.undefined
+    var vectorEffect: js.UndefOr[VectorEffect] = js.undefined
     
     var x: js.UndefOr[NumberArray] = js.undefined
     
@@ -380,7 +381,7 @@ object anon {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setFill(value: typings.reactNativeSvg.mod.Color): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: ColorValue): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillOpacity(value: NumberProp): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
@@ -391,8 +392,6 @@ object anon {
       inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
-      
-      inline def setFillVarargs(value: Double*): Self = StObject.set(x, "fill", js.Array(value :_*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -417,6 +416,10 @@ object anon {
       inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
+      
+      inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
       
       inline def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
       
@@ -490,7 +493,7 @@ object anon {
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value :_*))
+      inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value*))
       
       inline def setOriginX(value: NumberProp): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
       
@@ -512,7 +515,7 @@ object anon {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value :_*))
+      inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value*))
       
       inline def setScaleX(value: NumberProp): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
@@ -526,7 +529,7 @@ object anon {
       
       inline def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
       
-      inline def setSkewVarargs(value: NumberProp*): Self = StObject.set(x, "skew", js.Array(value :_*))
+      inline def setSkewVarargs(value: NumberProp*): Self = StObject.set(x, "skew", js.Array(value*))
       
       inline def setSkewX(value: NumberProp): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
       
@@ -536,13 +539,13 @@ object anon {
       
       inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
       
-      inline def setStroke(value: typings.reactNativeSvg.mod.Color): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: ColorValue): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
       inline def setStrokeDasharray(value: js.Array[NumberProp] | NumberProp): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
       
       inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
       
-      inline def setStrokeDasharrayVarargs(value: NumberProp*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
+      inline def setStrokeDasharrayVarargs(value: NumberProp*): Self = StObject.set(x, "strokeDasharray", js.Array(value*))
       
       inline def setStrokeDashoffset(value: NumberProp): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
       
@@ -566,8 +569,6 @@ object anon {
       
       inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      inline def setStrokeVarargs(value: Double*): Self = StObject.set(x, "stroke", js.Array(value :_*))
-      
       inline def setStrokeWidth(value: NumberProp): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
       inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
@@ -580,7 +581,7 @@ object anon {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value :_*))
+      inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value*))
       
       inline def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
       
@@ -590,7 +591,7 @@ object anon {
       
       inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
       
-      inline def setVectorEffect(value: none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
+      inline def setVectorEffect(value: VectorEffect): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
       
       inline def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
       
@@ -606,7 +607,7 @@ object anon {
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setXVarargs(value: NumberProp*): Self = StObject.set(x, "x", js.Array(value :_*))
+      inline def setXVarargs(value: NumberProp*): Self = StObject.set(x, "x", js.Array(value*))
       
       inline def setY(value: NumberArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
@@ -620,7 +621,7 @@ object anon {
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      inline def setYVarargs(value: NumberProp*): Self = StObject.set(x, "y", js.Array(value :_*))
+      inline def setYVarargs(value: NumberProp*): Self = StObject.set(x, "y", js.Array(value*))
     }
   }
   
@@ -641,7 +642,7 @@ object anon {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
+    var fill: js.UndefOr[ColorValue] = js.undefined
     
     var fillOpacity: js.UndefOr[NumberProp] = js.undefined
     
@@ -658,6 +659,8 @@ object anon {
     var markerStart: js.UndefOr[String] = js.undefined
     
     var mask: js.UndefOr[String] = js.undefined
+    
+    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
     
     var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
@@ -715,7 +718,7 @@ object anon {
     
     var skewY: js.UndefOr[NumberProp] = js.undefined
     
-    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
+    var stroke: js.UndefOr[ColorValue] = js.undefined
     
     var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
     
@@ -739,7 +742,7 @@ object anon {
     
     var translateY: js.UndefOr[NumberProp] = js.undefined
     
-    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.undefined
+    var vectorEffect: js.UndefOr[VectorEffect] = js.undefined
     
     var x: js.UndefOr[NumberArray] = js.undefined
     
@@ -782,7 +785,7 @@ object anon {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setFill(value: typings.reactNativeSvg.mod.Color): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: ColorValue): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillOpacity(value: NumberProp): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
@@ -793,8 +796,6 @@ object anon {
       inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
-      
-      inline def setFillVarargs(value: Double*): Self = StObject.set(x, "fill", js.Array(value :_*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -819,6 +820,10 @@ object anon {
       inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
+      
+      inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
       
       inline def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
       
@@ -892,7 +897,7 @@ object anon {
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value :_*))
+      inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value*))
       
       inline def setOriginX(value: NumberProp): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
       
@@ -914,7 +919,7 @@ object anon {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value :_*))
+      inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value*))
       
       inline def setScaleX(value: NumberProp): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
@@ -928,7 +933,7 @@ object anon {
       
       inline def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
       
-      inline def setSkewVarargs(value: NumberProp*): Self = StObject.set(x, "skew", js.Array(value :_*))
+      inline def setSkewVarargs(value: NumberProp*): Self = StObject.set(x, "skew", js.Array(value*))
       
       inline def setSkewX(value: NumberProp): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
       
@@ -938,13 +943,13 @@ object anon {
       
       inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
       
-      inline def setStroke(value: typings.reactNativeSvg.mod.Color): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: ColorValue): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
       inline def setStrokeDasharray(value: js.Array[NumberProp] | NumberProp): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
       
       inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
       
-      inline def setStrokeDasharrayVarargs(value: NumberProp*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
+      inline def setStrokeDasharrayVarargs(value: NumberProp*): Self = StObject.set(x, "strokeDasharray", js.Array(value*))
       
       inline def setStrokeDashoffset(value: NumberProp): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
       
@@ -968,8 +973,6 @@ object anon {
       
       inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      inline def setStrokeVarargs(value: Double*): Self = StObject.set(x, "stroke", js.Array(value :_*))
-      
       inline def setStrokeWidth(value: NumberProp): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
       inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
@@ -982,7 +985,7 @@ object anon {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value :_*))
+      inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value*))
       
       inline def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
       
@@ -992,7 +995,7 @@ object anon {
       
       inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
       
-      inline def setVectorEffect(value: none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
+      inline def setVectorEffect(value: VectorEffect): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
       
       inline def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
       
@@ -1000,13 +1003,13 @@ object anon {
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setXVarargs(value: NumberProp*): Self = StObject.set(x, "x", js.Array(value :_*))
+      inline def setXVarargs(value: NumberProp*): Self = StObject.set(x, "x", js.Array(value*))
       
       inline def setY(value: NumberArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      inline def setYVarargs(value: NumberProp*): Self = StObject.set(x, "y", js.Array(value :_*))
+      inline def setYVarargs(value: NumberProp*): Self = StObject.set(x, "y", js.Array(value*))
     }
   }
   
@@ -1016,6 +1019,8 @@ object anon {
     var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.undefined
     
     var baselineShift: js.UndefOr[BaselineShift] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var clipPath: js.UndefOr[String] = js.undefined
     
@@ -1033,7 +1038,7 @@ object anon {
     
     var dy: js.UndefOr[NumberArray] = js.undefined
     
-    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
+    var fill: js.UndefOr[ColorValue] = js.undefined
     
     var fillOpacity: js.UndefOr[NumberProp] = js.undefined
     
@@ -1041,7 +1046,7 @@ object anon {
     
     var font: js.UndefOr[FontObject] = js.undefined
     
-    var fontData: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
+    var fontData: js.UndefOr[Null | StringDictionary[Any]] = js.undefined
     
     var fontFamily: js.UndefOr[String] = js.undefined
     
@@ -1080,6 +1085,8 @@ object anon {
     var markerStart: js.UndefOr[String] = js.undefined
     
     var mask: js.UndefOr[String] = js.undefined
+    
+    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
     
     var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
@@ -1139,7 +1146,7 @@ object anon {
     
     var skewY: js.UndefOr[NumberProp] = js.undefined
     
-    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
+    var stroke: js.UndefOr[ColorValue] = js.undefined
     
     var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
     
@@ -1169,7 +1176,7 @@ object anon {
     
     var translateY: js.UndefOr[NumberProp] = js.undefined
     
-    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.undefined
+    var vectorEffect: js.UndefOr[VectorEffect] = js.undefined
     
     var verticalAlign: js.UndefOr[NumberProp] = js.undefined
     
@@ -1196,7 +1203,11 @@ object anon {
       
       inline def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
       
-      inline def setBaselineShiftVarargs(value: NumberProp*): Self = StObject.set(x, "baselineShift", js.Array(value :_*))
+      inline def setBaselineShiftVarargs(value: NumberProp*): Self = StObject.set(x, "baselineShift", js.Array(value*))
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       
@@ -1226,15 +1237,15 @@ object anon {
       
       inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      inline def setDxVarargs(value: NumberProp*): Self = StObject.set(x, "dx", js.Array(value :_*))
+      inline def setDxVarargs(value: NumberProp*): Self = StObject.set(x, "dx", js.Array(value*))
       
       inline def setDy(value: NumberArray): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
       inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
-      inline def setDyVarargs(value: NumberProp*): Self = StObject.set(x, "dy", js.Array(value :_*))
+      inline def setDyVarargs(value: NumberProp*): Self = StObject.set(x, "dy", js.Array(value*))
       
-      inline def setFill(value: typings.reactNativeSvg.mod.Color): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: ColorValue): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillOpacity(value: NumberProp): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
@@ -1246,11 +1257,9 @@ object anon {
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setFillVarargs(value: Double*): Self = StObject.set(x, "fill", js.Array(value :_*))
-      
       inline def setFont(value: FontObject): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      inline def setFontData(value: StringDictionary[js.Any]): Self = StObject.set(x, "fontData", value.asInstanceOf[js.Any])
+      inline def setFontData(value: StringDictionary[Any]): Self = StObject.set(x, "fontData", value.asInstanceOf[js.Any])
       
       inline def setFontDataNull: Self = StObject.set(x, "fontData", null)
       
@@ -1334,6 +1343,10 @@ object anon {
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
+      inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
+      
+      inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
+      
       inline def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
       
       inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
@@ -1406,7 +1419,7 @@ object anon {
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value :_*))
+      inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value*))
       
       inline def setOriginX(value: NumberProp): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
       
@@ -1424,7 +1437,7 @@ object anon {
       
       inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      inline def setRotateVarargs(value: NumberProp*): Self = StObject.set(x, "rotate", js.Array(value :_*))
+      inline def setRotateVarargs(value: NumberProp*): Self = StObject.set(x, "rotate", js.Array(value*))
       
       inline def setRotation(value: NumberProp): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
@@ -1434,7 +1447,7 @@ object anon {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value :_*))
+      inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value*))
       
       inline def setScaleX(value: NumberProp): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
@@ -1448,7 +1461,7 @@ object anon {
       
       inline def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
       
-      inline def setSkewVarargs(value: NumberProp*): Self = StObject.set(x, "skew", js.Array(value :_*))
+      inline def setSkewVarargs(value: NumberProp*): Self = StObject.set(x, "skew", js.Array(value*))
       
       inline def setSkewX(value: NumberProp): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
       
@@ -1458,13 +1471,13 @@ object anon {
       
       inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
       
-      inline def setStroke(value: typings.reactNativeSvg.mod.Color): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: ColorValue): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
       inline def setStrokeDasharray(value: js.Array[NumberProp] | NumberProp): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
       
       inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
       
-      inline def setStrokeDasharrayVarargs(value: NumberProp*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
+      inline def setStrokeDasharrayVarargs(value: NumberProp*): Self = StObject.set(x, "strokeDasharray", js.Array(value*))
       
       inline def setStrokeDashoffset(value: NumberProp): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
       
@@ -1487,8 +1500,6 @@ object anon {
       inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
       
       inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
-      
-      inline def setStrokeVarargs(value: Double*): Self = StObject.set(x, "stroke", js.Array(value :_*))
       
       inline def setStrokeWidth(value: NumberProp): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
@@ -1514,7 +1525,7 @@ object anon {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value :_*))
+      inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value*))
       
       inline def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
       
@@ -1524,7 +1535,7 @@ object anon {
       
       inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
       
-      inline def setVectorEffect(value: none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
+      inline def setVectorEffect(value: VectorEffect): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
       
       inline def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
       
@@ -1540,13 +1551,13 @@ object anon {
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setXVarargs(value: NumberProp*): Self = StObject.set(x, "x", js.Array(value :_*))
+      inline def setXVarargs(value: NumberProp*): Self = StObject.set(x, "x", js.Array(value*))
       
       inline def setY(value: NumberArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      inline def setYVarargs(value: NumberProp*): Self = StObject.set(x, "y", js.Array(value :_*))
+      inline def setYVarargs(value: NumberProp*): Self = StObject.set(x, "y", js.Array(value*))
     }
   }
   

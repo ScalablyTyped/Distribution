@@ -34,7 +34,7 @@ object GetAccountAuthorizationDetailsRequest {
     
     inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    inline def setFilterVarargs(value: EntityType*): Self = StObject.set(x, "Filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: EntityType*): Self = StObject.set(x, "Filter", js.Array(value*))
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

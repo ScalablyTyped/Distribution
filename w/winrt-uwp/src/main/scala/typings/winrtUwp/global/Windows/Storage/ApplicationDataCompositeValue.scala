@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Storage.ApplicationDataCompositeValue")
 @js.native
 /** Creates and initializes a new, initially empty, instance of the object. */
-class ApplicationDataCompositeValue ()
+open class ApplicationDataCompositeValue ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.ApplicationDataCompositeValue

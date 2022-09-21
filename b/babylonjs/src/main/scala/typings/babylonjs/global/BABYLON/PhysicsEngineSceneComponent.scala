@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhysicsEngineSceneComponent")
 @js.native
-class PhysicsEngineSceneComponent protected ()
+open class PhysicsEngineSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsEngineSceneComponent {
   /**

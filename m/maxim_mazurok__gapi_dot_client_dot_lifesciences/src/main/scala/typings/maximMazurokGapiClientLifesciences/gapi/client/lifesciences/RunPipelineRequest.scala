@@ -14,11 +14,17 @@ trait RunPipelineRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest & TopLevel[Any]
   ] = js.undefined
   
   /** Required. The description of the pipeline to run. */
   var pipeline: js.UndefOr[Pipeline] = js.undefined
+  
+  /**
+    * The name of an existing Pub/Sub topic. The server will publish messages to this topic whenever the status of the operation changes. The Life Sciences Service Agent account must have
+    * publisher permissions to the specified topic or notifications will not be sent.
+    */
+  var pubSubTopic: js.UndefOr[String] = js.undefined
 }
 object RunPipelineRequest {
   
@@ -32,7 +38,7 @@ object RunPipelineRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -40,5 +46,9 @@ object RunPipelineRequest {
     inline def setPipeline(value: Pipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
     inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    
+    inline def setPubSubTopic(value: String): Self = StObject.set(x, "pubSubTopic", value.asInstanceOf[js.Any])
+    
+    inline def setPubSubTopicUndefined: Self = StObject.set(x, "pubSubTopic", js.undefined)
   }
 }

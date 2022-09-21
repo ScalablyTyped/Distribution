@@ -10,7 +10,7 @@ trait IndexCreationQuery
   
   def fulltext(): IndexCreationQuery
   
-  def on(columns: ((Column[js.Any, js.Any]) | OrderByValueNode)*): IndexCreationQuery
+  def on(columns: ((Column[Any, Any]) | OrderByValueNode)*): IndexCreationQuery
   
   def spatial(): IndexCreationQuery
   
@@ -24,7 +24,7 @@ object IndexCreationQuery {
   
   inline def apply(
     fulltext: () => IndexCreationQuery,
-    on: /* repeated */ (Column[js.Any, js.Any]) | OrderByValueNode => IndexCreationQuery,
+    on: /* repeated */ (Column[Any, Any]) | OrderByValueNode => IndexCreationQuery,
     spatial: () => IndexCreationQuery,
     toQuery: () => QueryLike,
     unique: () => IndexCreationQuery,
@@ -40,7 +40,7 @@ object IndexCreationQuery {
     
     inline def setFulltext(value: () => IndexCreationQuery): Self = StObject.set(x, "fulltext", js.Any.fromFunction0(value))
     
-    inline def setOn(value: /* repeated */ (Column[js.Any, js.Any]) | OrderByValueNode => IndexCreationQuery): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+    inline def setOn(value: /* repeated */ (Column[Any, Any]) | OrderByValueNode => IndexCreationQuery): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
     
     inline def setSpatial(value: () => IndexCreationQuery): Self = StObject.set(x, "spatial", js.Any.fromFunction0(value))
     

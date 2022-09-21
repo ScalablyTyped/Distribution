@@ -98,7 +98,7 @@ object global {
     * @param {botvs.ChartOptions} options
     * @return {botvs.RChart}
     */
-  inline def Chart(options: ChartOptions*): RChart = js.Dynamic.global.applyDynamic("Chart")(options.asInstanceOf[js.Any]).asInstanceOf[RChart]
+  inline def Chart(options: ChartOptions*): RChart = js.Dynamic.global.applyDynamic("Chart")(options.asInstanceOf[Seq[js.Any]]*).asInstanceOf[RChart]
   
   /**
     * 原始的Socket访问, 支持tcp, udp, tls, unix 协议
@@ -164,7 +164,6 @@ object global {
     */
   inline def GetPid(): Double = js.Dynamic.global.applyDynamic("GetPid")().asInstanceOf[Double]
   
-  inline def HMAC(Algo: md5, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * 支持 md5/sha256/sha512/sha1 的HMAC加密计算, 只支持实盘
     *
@@ -178,19 +177,8 @@ object global {
     * @param {string} password
     * @return {string}
     */
-  inline def HMAC(Algo: md5, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: md5, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha1, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha1, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha1, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha256, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha256, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha256, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha512, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha512, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def HMAC(Algo: sha512, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: md5 | sha256 | sha512 | sha1, OutputAlgo: hex | base64 | raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def Hash(Algo: md5, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * 支持 md5/sha256/sha512/sha1 的哈希计算, 只支持实盘
     *
@@ -203,17 +191,7 @@ object global {
     * @param {string} Data
     * @return {string}
     */
-  inline def Hash(Algo: md5, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: md5, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha1, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha1, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha1, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha256, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha256, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha256, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha512, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha512, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def Hash(Algo: sha512, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: md5 | sha256 | sha512 | sha1, OutputAlgo: hex | base64 | raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * 网络URL访问
@@ -287,7 +265,7 @@ object global {
     *
     * @param {*[]} arg
     */
-  inline def Log(arg: js.Any*): Unit = js.Dynamic.global.applyDynamic("Log")(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Log(arg: Any*): Unit = js.Dynamic.global.applyDynamic("Log")(arg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /**
     * 记录盈利值,这个为总盈利的值,参数类型为浮点数
@@ -295,7 +273,7 @@ object global {
     * @param {number} Profit
     * @param {*[]} args
     */
-  inline def LogProfit(Profit: Double, args: js.Any*): Unit = (js.Dynamic.global.applyDynamic("LogProfit")(Profit.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def LogProfit(Profit: Double, args: Any*): Unit = js.Dynamic.global.applyDynamic("LogProfit")(List(Profit.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   /**
     * 清空所有收益日志, 可以带一个数字参数, 指定保留的条数
@@ -348,7 +326,7 @@ object global {
     *
     * @param {string} Msg
     */
-  inline def LogStatus(args: js.Any*): Unit = js.Dynamic.global.applyDynamic("LogStatus")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def LogStatus(args: Any*): Unit = js.Dynamic.global.applyDynamic("LogStatus")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /**
     * 发送邮件函数
@@ -675,7 +653,7 @@ object global {
     * @param args
     * @return {T}
     */
-  inline def _C[T](func: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = (js.Dynamic.global.applyDynamic("_C")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def _C[T](func: js.Function1[/* repeated */ Any, T], args: Any*): T = js.Dynamic.global.applyDynamic("_C")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   /**
     * 返回指定时间戳(ms)字符串, 不传任何参数就返回当前时间,
@@ -4137,11 +4115,11 @@ object global {
         
         inline def setAsks(value: js.Array[MarketOrder]): Self = StObject.set(x, "Asks", value.asInstanceOf[js.Any])
         
-        inline def setAsksVarargs(value: MarketOrder*): Self = StObject.set(x, "Asks", js.Array(value :_*))
+        inline def setAsksVarargs(value: MarketOrder*): Self = StObject.set(x, "Asks", js.Array(value*))
         
         inline def setBids(value: js.Array[MarketOrder]): Self = StObject.set(x, "Bids", value.asInstanceOf[js.Any])
         
-        inline def setBidsVarargs(value: MarketOrder*): Self = StObject.set(x, "Bids", js.Array(value :_*))
+        inline def setBidsVarargs(value: MarketOrder*): Self = StObject.set(x, "Bids", js.Array(value*))
         
         inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
       }
@@ -4162,7 +4140,7 @@ object global {
         * @param {*[]} args
         * @return {string} - 订单ID
         */
-      def Buy(Price: Double, Amount: Double, args: js.Any*): String = js.native
+      def Buy(Price: Double, Amount: Double, args: Any*): String = js.native
       
       /**
         * 根据订单号取消一个订单, 返回true或者false
@@ -4348,13 +4326,13 @@ object global {
         */
       def Go[T](
         Method: /* keyof botvs.botvs.<global>.botvs.Exchange */ GetName | GetLabel | GetUSDCNY | GetRate | SetRate | SetPrecision | GetCurrency | GetBaseCurrency | GetTicker | GetDepth | GetTrades | GetRecords | GetAccount | Buy | Sell | GetOrders | GetOrder | CancelOrder | Log | GetMinStock | GetMinPrice | GetFee | GetRawJSON | typings.botvs.botvsStrings.Go | IO | GetPosition | SetMarginLevel | SetDirection | SetContractType,
-        Args: js.Any*
+        Args: Any*
       ): AsyncJob[T] = js.native
       
-      def IO[T](Api: String): T = js.native
-      def IO[T](Api: String, ApiName: String): T = js.native
-      def IO[T](Api: String, ApiName: String, Args: String): T = js.native
-      def IO[T](Api: String, ApiName: Unit, Args: String): T = js.native
+      def IO[T](Api: api | usd | cny | currency): T = js.native
+      def IO[T](Api: api | usd | cny | currency, ApiName: String): T = js.native
+      def IO[T](Api: api | usd | cny | currency, ApiName: String, Args: String): T = js.native
+      def IO[T](Api: api | usd | cny | currency, ApiName: Unit, Args: String): T = js.native
       /**
         * 调用交易所其它功能接口
         *
@@ -4406,38 +4384,10 @@ object global {
         * @param {string} Args
         * @return {T}
         */
-      @JSName("IO")
-      def IO_api[T](Api: api): T = js.native
-      @JSName("IO")
-      def IO_api[T](Api: api, ApiName: String): T = js.native
-      @JSName("IO")
-      def IO_api[T](Api: api, ApiName: String, Args: String): T = js.native
-      @JSName("IO")
-      def IO_api[T](Api: api, ApiName: Unit, Args: String): T = js.native
-      @JSName("IO")
-      def IO_cny[T](Api: cny): T = js.native
-      @JSName("IO")
-      def IO_cny[T](Api: cny, ApiName: String): T = js.native
-      @JSName("IO")
-      def IO_cny[T](Api: cny, ApiName: String, Args: String): T = js.native
-      @JSName("IO")
-      def IO_cny[T](Api: cny, ApiName: Unit, Args: String): T = js.native
-      @JSName("IO")
-      def IO_currency[T](Api: currency): T = js.native
-      @JSName("IO")
-      def IO_currency[T](Api: currency, ApiName: String): T = js.native
-      @JSName("IO")
-      def IO_currency[T](Api: currency, ApiName: String, Args: String): T = js.native
-      @JSName("IO")
-      def IO_currency[T](Api: currency, ApiName: Unit, Args: String): T = js.native
-      @JSName("IO")
-      def IO_usd[T](Api: usd): T = js.native
-      @JSName("IO")
-      def IO_usd[T](Api: usd, ApiName: String): T = js.native
-      @JSName("IO")
-      def IO_usd[T](Api: usd, ApiName: String, Args: String): T = js.native
-      @JSName("IO")
-      def IO_usd[T](Api: usd, ApiName: Unit, Args: String): T = js.native
+      def IO[T](Api: String): T = js.native
+      def IO[T](Api: String, ApiName: String): T = js.native
+      def IO[T](Api: String, ApiName: String, Args: String): T = js.native
+      def IO[T](Api: String, ApiName: Unit, Args: String): T = js.native
       
       /**
         * 不下单, 只记录交易信息, logType可为LOG_TYPE_BUY/LOG_TYPE_SELL/LOG_TYPE_CANCEL
@@ -4514,18 +4464,7 @@ object global {
         * @param {"buy" | "closebuy" | "sell" | "closesell" | "closebuy_today" | "closesell_today"} Direction
         * @constructor
         */
-      @JSName("SetDirection")
-      def SetDirection_buy(Direction: buy_): Unit = js.native
-      @JSName("SetDirection")
-      def SetDirection_closebuy(Direction: closebuy): Unit = js.native
-      @JSName("SetDirection")
-      def SetDirection_closebuytoday(Direction: closebuy_today): Unit = js.native
-      @JSName("SetDirection")
-      def SetDirection_closesell(Direction: closesell): Unit = js.native
-      @JSName("SetDirection")
-      def SetDirection_closeselltoday(Direction: closesell_today): Unit = js.native
-      @JSName("SetDirection")
-      def SetDirection_sell(Direction: sell_): Unit = js.native
+      def SetDirection(Direction: buy_ | closebuy | sell_ | closesell | closebuy_today | closesell_today): Unit = js.native
       
       /**
         * 设置杆杠大小
@@ -4781,11 +4720,11 @@ object global {
       
       def add(): Unit = js.native
       def add(series: Double): Unit = js.native
-      def add(series: Double, data: js.Any): Unit = js.native
-      def add(series: Double, data: js.Any, index: Double): Unit = js.native
+      def add(series: Double, data: Any): Unit = js.native
+      def add(series: Double, data: Any, index: Double): Unit = js.native
       def add(series: Double, data: Unit, index: Double): Unit = js.native
-      def add(series: Unit, data: js.Any): Unit = js.native
-      def add(series: Unit, data: js.Any, index: Double): Unit = js.native
+      def add(series: Unit, data: Any): Unit = js.native
+      def add(series: Unit, data: Any, index: Double): Unit = js.native
       def add(series: Unit, data: Unit, index: Double): Unit = js.native
       
       def reset(): Unit = js.native

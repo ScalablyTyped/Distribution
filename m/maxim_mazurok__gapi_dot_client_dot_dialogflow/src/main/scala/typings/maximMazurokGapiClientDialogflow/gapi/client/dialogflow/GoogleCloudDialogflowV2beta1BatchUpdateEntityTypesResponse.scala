@@ -22,6 +22,6 @@ object GoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse {
     
     inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    inline def setEntityTypesVarargs(value: GoogleCloudDialogflowV2beta1EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: GoogleCloudDialogflowV2beta1EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value*))
   }
 }

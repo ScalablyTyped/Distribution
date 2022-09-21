@@ -1,10 +1,9 @@
 package typings.websocket.mod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
-import typings.std.Error
 import typings.websocket.websocketStrings.close
 import typings.websocket.websocketStrings.drain
 import typings.websocket.websocketStrings.error
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("websocket", "connection")
 @js.native
-class connection protected () extends EventEmitter {
+open class connection protected () extends EventEmitter {
   def this(
     socket: Socket,
     extensions: js.Array[IExtension],
@@ -32,24 +31,19 @@ class connection protected () extends EventEmitter {
   
   var _pingListenerCount: Double = js.native
   
+  def addListener(event: drain | pause | resume, cb: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_close(event: close, cb: js.Function2[/* code */ Double, /* desc */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_drain(event: drain, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def addListener_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_frame(event: typings.websocket.websocketStrings.frame, cb: js.Function1[/* frame */ frame, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_message(event: message, cb: js.Function1[/* data */ IMessage, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_pause(event: pause, cb: js.Function0[Unit]): this.type = js.native
+  def addListener_message(event: message, cb: js.Function1[/* data */ Message, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_ping(event: ping, cb: js.Function2[/* cancel */ js.Function0[Unit], /* binaryPayload */ Buffer, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_pong(event: pong, cb: js.Function1[/* binaryPayload */ Buffer, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_resume(event: resume, cb: js.Function0[Unit]): this.type = js.native
   
   var assembleFragments: Double = js.native
   
@@ -112,7 +106,7 @@ class connection protected () extends EventEmitter {
   var extensions: js.Array[IExtension] = js.native
   
   def fragmentAndSend(frame: frame): Unit = js.native
-  def fragmentAndSend(frame: frame, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def fragmentAndSend(frame: frame, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   var fragmentationSize: Double = js.native
   
@@ -134,7 +128,7 @@ class connection protected () extends EventEmitter {
   
   def handleSocketEnd(): Unit = js.native
   
-  def handleSocketError(error: Error): Unit = js.native
+  def handleSocketError(error: js.Error): Unit = js.native
   
   def handleSocketPause(): Unit = js.native
   
@@ -148,25 +142,20 @@ class connection protected () extends EventEmitter {
   
   var maxReceivedMessageSize: Double = js.native
   
+  def on(event: drain | pause | resume, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_close(event: close, cb: js.Function2[/* code */ Double, /* desc */ String, Unit]): this.type = js.native
   @JSName("on")
-  def on_drain(event: drain, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def on_error(event: error, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("on")
   def on_frame(event: typings.websocket.websocketStrings.frame, cb: js.Function1[/* frame */ frame, Unit]): this.type = js.native
   // Events
   @JSName("on")
-  def on_message(event: message, cb: js.Function1[/* data */ IMessage, Unit]): this.type = js.native
-  @JSName("on")
-  def on_pause(event: pause, cb: js.Function0[Unit]): this.type = js.native
+  def on_message(event: message, cb: js.Function1[/* data */ Message, Unit]): this.type = js.native
   @JSName("on")
   def on_ping(event: ping, cb: js.Function2[/* cancel */ js.Function0[Unit], /* binaryPayload */ Buffer, Unit]): this.type = js.native
   @JSName("on")
   def on_pong(event: pong, cb: js.Function1[/* binaryPayload */ Buffer, Unit]): this.type = js.native
-  @JSName("on")
-  def on_resume(event: resume, cb: js.Function0[Unit]): this.type = js.native
   
   var outputBufferFull: Boolean = js.native
   
@@ -210,9 +199,9 @@ class connection protected () extends EventEmitter {
   
   /** Auto-detect the data type and send UTF-8 or Binary message */
   def send(data: Buffer): Unit = js.native
-  def send(data: Buffer, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def send(data: Buffer, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   def send(data: IStringified): Unit = js.native
-  def send(data: IStringified, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def send(data: IStringified, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   
   /**
     * Immediately sends the specified Node Buffer object as a Binary WebSocket message
@@ -220,16 +209,16 @@ class connection protected () extends EventEmitter {
     * sent as multiple fragments if it exceeds config.fragmentationThreshold bytes.
     */
   def sendBytes(buffer: Buffer): Unit = js.native
-  def sendBytes(buffer: Buffer, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def sendBytes(buffer: Buffer, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   
   def sendCloseFrame(): Unit = js.native
   def sendCloseFrame(reasonCode: Double): Unit = js.native
   def sendCloseFrame(reasonCode: Double, reasonText: String): Unit = js.native
-  def sendCloseFrame(reasonCode: Double, reasonText: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  def sendCloseFrame(reasonCode: Double, reasonText: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def sendCloseFrame(reasonCode: Double, reasonText: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+  def sendCloseFrame(reasonCode: Double, reasonText: Unit, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   def sendCloseFrame(reasonCode: Unit, reasonText: String): Unit = js.native
-  def sendCloseFrame(reasonCode: Unit, reasonText: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  def sendCloseFrame(reasonCode: Unit, reasonText: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def sendCloseFrame(reasonCode: Unit, reasonText: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+  def sendCloseFrame(reasonCode: Unit, reasonText: Unit, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   
   /**
     * Serializes a `frame` object into binary data and immediately sends it to
@@ -237,7 +226,7 @@ class connection protected () extends EventEmitter {
     * your own `frame`. You should probably use sendUTF or sendBytes instead.
     */
   def sendFrame(frame: frame): Unit = js.native
-  def sendFrame(frame: frame, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def sendFrame(frame: frame, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   
   /**
     * Immediately sends the specified string as a UTF-8 WebSocket message to the remote
@@ -245,7 +234,7 @@ class connection protected () extends EventEmitter {
     * multiple fragments if it exceeds `config.fragmentationThreshold` bytes.
     */
   def sendUTF(data: IStringified): Unit = js.native
-  def sendUTF(data: IStringified, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def sendUTF(data: IStringified, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   
   def setCloseTimer(): Unit = js.native
   

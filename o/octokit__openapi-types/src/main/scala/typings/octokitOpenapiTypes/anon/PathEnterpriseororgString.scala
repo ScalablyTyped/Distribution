@@ -1,0 +1,26 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait PathEnterpriseororgString extends StObject {
+  
+  var path: EnterpriseororgString
+  
+  var query: Dateend
+}
+object PathEnterpriseororgString {
+  
+  inline def apply(path: EnterpriseororgString, query: Dateend): PathEnterpriseororgString = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PathEnterpriseororgString]
+  }
+  
+  extension [Self <: PathEnterpriseororgString](x: Self) {
+    
+    inline def setPath(value: EnterpriseororgString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setQuery(value: Dateend): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+  }
+}

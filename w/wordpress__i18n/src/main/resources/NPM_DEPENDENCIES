@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/i18n" : "3.16.0"
+      "@wordpress/i18n" : "4.17.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/i18n" : "3.16.0"
+      "@wordpress/i18n" : "4.17.0"
     }
   ],
   "compile-devDependencies" : [

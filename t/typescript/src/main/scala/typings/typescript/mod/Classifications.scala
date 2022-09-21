@@ -23,6 +23,6 @@ object Classifications {
     
     inline def setSpans(value: js.Array[Double]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
-    inline def setSpansVarargs(value: Double*): Self = StObject.set(x, "spans", js.Array(value :_*))
+    inline def setSpansVarargs(value: Double*): Self = StObject.set(x, "spans", js.Array(value*))
   }
 }

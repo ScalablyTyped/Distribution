@@ -35,7 +35,7 @@ object AppendCellsRequest {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     

@@ -9,11 +9,11 @@ trait Current extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var current: js.UndefOr[js.Any] = js.undefined
+  var current: js.UndefOr[Any] = js.undefined
   
-  var next: js.UndefOr[js.Any] = js.undefined
+  var next: js.UndefOr[Any] = js.undefined
   
-  var previous: js.UndefOr[js.Any] = js.undefined
+  var previous: js.UndefOr[Any] = js.undefined
 }
 object Current {
   
@@ -28,15 +28,15 @@ object Current {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
-    inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    inline def setPrevious(value: js.Any): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: Any): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
   }

@@ -1,22 +1,16 @@
 package typings.matrixAppserviceBridge
 
-import typings.matrixAppserviceBridge.requestMod.Request
-import typings.matrixAppserviceBridge.requestMod.RequestOpts
+import typings.matrixAppserviceBridge.requestsRequestMod.Request
+import typings.matrixAppserviceBridge.requestsRequestMod.RequestOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestFactoryMod {
   
-  @JSImport("matrix-appservice-bridge/lib/components/request-factory", "RequestFactory")
+  @JSImport("matrix-appservice-bridge/lib/components/requests/request-factory", "RequestFactory")
   @js.native
-  class RequestFactory () extends StObject {
-    
-    /* private */ var _rejects: js.Any = js.native
-    
-    /* private */ var _resolves: js.Any = js.native
-    
-    /* private */ var _timeouts: js.Any = js.native
+  open class RequestFactory () extends StObject {
     
     /**
       * Add a function which will be invoked for every request that is rejected.
@@ -47,11 +41,23 @@ object requestFactoryMod {
       * @param opts The options to pass to the Request constructor, if any.
       * @return A new request object
       */
-    def newRequest[T](): Request[T | Null] = js.native
-    def newRequest[T](opts: RequestOpts[T]): Request[T | Null] = js.native
+    def newRequest(): Request[Any] = js.native
+    def newRequest(opts: RequestOpts[Any]): Request[Any] = js.native
+    
+    /* private */ var rejects: Any = js.native
+    
+    /* private */ var resolves: Any = js.native
+    
+    /* private */ var timeouts: Any = js.native
+    
+    /**
+      * Hook in an existing request
+      * @param req The request
+      */
+    def withRequest[T](req: Request[T]): Unit = js.native
   }
   
-  type HandlerFunction = js.Function2[/* req */ Request[js.Any], /* value */ js.Any, js.Promise[js.Any] | js.Any]
+  type HandlerFunction = js.Function2[/* req */ Request[Any], /* value */ Any, js.Promise[Any] | Any]
   
-  type TimeoutFunction = js.Function1[/* req */ Request[js.Any], Unit]
+  type TimeoutFunction = js.Function1[/* req */ Request[Any], Unit]
 }

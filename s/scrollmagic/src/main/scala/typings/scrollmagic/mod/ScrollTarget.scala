@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ScrollTarget extends StObject {
   
-  def apply(newScrollPos: Double, args: js.Any*): Unit | Double | ElementOrSelector | js.Object = js.native
+  def apply(newScrollPos: Double, args: Any*): Unit | Double | ElementOrSelector | js.Object = js.native
 }

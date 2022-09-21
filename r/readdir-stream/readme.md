@@ -11,14 +11,11 @@ Recursively read a directory and stream stats objects.
 | Full name          | readdir-stream |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 621 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 13.666666666666666 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/logicalparadox/readdir-stream#readme)
-- [Bugs](https://github.com/logicalparadox/readdir-stream/issues)
-- [Repository](https://github.com/logicalparadox/readdir-stream)
 - [Npm](https://www.npmjs.com/package/readdir-stream)
     
 

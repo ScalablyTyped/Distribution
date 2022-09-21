@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceContentcategoriesList
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only content categories with these IDs.
@@ -38,13 +29,7 @@ trait ParamsResourceContentcategoriesList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for objects by name or ID. Wildcards (*) are allowed.
-    * For example, "contentcategory*2015" will return objects with names like
-    * "contentcategory June 2015", "contentcategory April 2015", or simply
-    * "contentcategory 2015". Most of the searches also add wildcards
-    * implicitly at the start and the end of the search string. For example, a
-    * search string of "contentcategory" will match objects with name "my
-    * contentcategory", "contentcategory 2015", or simply "contentcategory".
+    * Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "contentcategory*2015" will return objects with names like "contentcategory June 2015", "contentcategory April 2015", or simply "contentcategory 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "contentcategory" will match objects with name "my contentcategory", "contentcategory 2015", or simply "contentcategory".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -67,15 +52,11 @@ object ParamsResourceContentcategoriesList {
   
   extension [Self <: ParamsResourceContentcategoriesList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

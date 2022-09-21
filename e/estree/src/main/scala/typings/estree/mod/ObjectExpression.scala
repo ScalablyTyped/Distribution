@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ObjectExpression
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   var properties: js.Array[Property | SpreadElement]
   
@@ -26,7 +25,7 @@ object ObjectExpression {
     
     inline def setProperties(value: js.Array[Property | SpreadElement]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: (Property | SpreadElement)*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: (Property | SpreadElement)*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setType(value: typings.estree.estreeStrings.ObjectExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

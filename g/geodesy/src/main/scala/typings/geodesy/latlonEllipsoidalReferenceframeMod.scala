@@ -13,7 +13,7 @@ object latlonEllipsoidalReferenceframeMod {
   
   @JSImport("geodesy/latlon-ellipsoidal-referenceframe", JSImport.Default)
   @js.native
-  class default protected () extends LatLonEllipsoidalReferenceFrame {
+  open class default protected () extends LatLonEllipsoidalReferenceFrame {
     def this(lat: Double, lon: Double) = this()
     def this(lat: Double, lon: Double, height: Double) = this()
     def this(lat: Double, lon: Double, height: Double, referenceFrame: ReferenceFrame) = this()
@@ -82,7 +82,7 @@ object latlonEllipsoidalReferenceframeMod {
   
   @JSImport("geodesy/latlon-ellipsoidal-referenceframe", "Cartesian")
   @js.native
-  class Cartesian protected () extends CartesianReferenceFrame {
+  open class Cartesian protected () extends CartesianReferenceFrame {
     def this(x: Double, y: Double, z: Double) = this()
     def this(x: Double, y: Double, z: Double, referenceFrame: ReferenceFrame) = this()
     def this(x: Double, y: Double, z: Double, referenceFrame: Unit, epoch: Double) = this()
@@ -92,7 +92,7 @@ object latlonEllipsoidalReferenceframeMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/latlon-ellipsoidal-referenceframe", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.latlonEllipsoidalMod.Dms
   object Dms {
     

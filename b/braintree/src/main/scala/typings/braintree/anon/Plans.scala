@@ -20,6 +20,6 @@ object Plans {
     
     inline def setPlans(value: js.Array[Plan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    inline def setPlansVarargs(value: Plan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: Plan*): Self = StObject.set(x, "plans", js.Array(value*))
   }
 }

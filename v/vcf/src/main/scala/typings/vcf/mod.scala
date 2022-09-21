@@ -1,7 +1,7 @@
 package typings.vcf
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.vcf.vcfStrings.CarriagereturnLinefeed
 import typings.vcf.vcfStrings.Dotvcf
 import typings.vcf.vcfStrings.`2Dot1`
@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("vcf", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with vCard
   @JSImport("vcf", JSImport.Namespace)
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("vcf", "Property")
   @js.native
-  class Property protected () extends StObject {
+  open class Property protected () extends StObject {
     def this(field: String, value: String) = this()
     def this(field: String, value: String, params: StringDictionary[String | js.Array[String]]) = this()
     
@@ -97,7 +97,7 @@ object mod {
   inline def parse(value: Buffer): js.Array[vCard] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[vCard]]
   
   /* static member */
-  inline def parseLines(lines: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLines")(lines.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parseLines(lines: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLines")(lines.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
   @JSImport("vcf", "versions")

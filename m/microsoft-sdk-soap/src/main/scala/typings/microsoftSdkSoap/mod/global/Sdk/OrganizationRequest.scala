@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.OrganizationRequest")
 @js.native
-class OrganizationRequest () extends StObject {
+open class OrganizationRequest () extends StObject {
   
   /**
     * Gets the request XML.

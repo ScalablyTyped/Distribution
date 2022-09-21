@@ -10,11 +10,11 @@ object domWrapperMod {
   
   @JSImport("rc-motion/es/DomWrapper", JSImport.Default)
   @js.native
-  class default () extends DomWrapper
+  open class default () extends DomWrapper
   
   @js.native
   trait DomWrapper
-    extends Component[DomWrapperProps, js.Object, js.Any]
+    extends Component[DomWrapperProps, js.Object, Any]
   
   trait DomWrapperProps extends StObject {
     

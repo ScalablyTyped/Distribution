@@ -8,5 +8,5 @@ object filterRuleMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_FilterRule", "_FilterRule")
   @js.native
-  val FilterRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val FilterRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

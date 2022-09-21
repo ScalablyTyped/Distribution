@@ -124,7 +124,7 @@ object Key {
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    inline def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

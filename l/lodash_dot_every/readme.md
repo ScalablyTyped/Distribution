@@ -10,10 +10,10 @@ The lodash method `_.every` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.every |
 | Keywords           | lodash-modularized, every |
-| # releases         | 0 |
-| # dependents       | 122 |
-| # downloads        | 22440791 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2001559.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

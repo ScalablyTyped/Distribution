@@ -23,6 +23,6 @@ object Notifications {
     
     inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
-    inline def setNotificationsVarargs(value: CalendarNotification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: CalendarNotification*): Self = StObject.set(x, "notifications", js.Array(value*))
   }
 }

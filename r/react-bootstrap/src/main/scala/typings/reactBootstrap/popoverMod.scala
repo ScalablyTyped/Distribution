@@ -11,12 +11,10 @@ object popoverMod {
   
   @JSImport("react-bootstrap/lib/Popover", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PopoverProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PopoverProps, js.Object, Any]
   
-  @js.native
-  trait Popover
-    extends Component[PopoverProps, js.Object, js.Any]
+  type Popover = Component[PopoverProps, js.Object, Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover>[P]} */ trait PopoverProps extends StObject {

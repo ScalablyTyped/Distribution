@@ -14,11 +14,11 @@ object rsockettcpserverMod {
   
   @JSImport("rsocket-tcp-server/RSocketTCPServer", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RSocketTCPServer {
     def this(options: ServerOptions) = this()
-    def this(options: ServerOptions, encoders: Encoders[js.Any]) = this()
+    def this(options: ServerOptions, encoders: Encoders[Any]) = this()
     
     /* CompleteClass */
     override def start(): Flowable[DuplexConnection] = js.native

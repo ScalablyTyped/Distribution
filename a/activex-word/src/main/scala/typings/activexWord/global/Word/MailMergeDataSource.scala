@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.MailMergeDataSource")
 @js.native
-/* private */ class MailMergeDataSource ()
+/* private */ open class MailMergeDataSource ()
   extends StObject
      with typings.activexWord.Word.MailMergeDataSource

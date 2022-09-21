@@ -1,7 +1,7 @@
 
 # Scala.js typings for natural
 
-Typings are for version 2.1
+Typings are for version 5.1
 
 ## Library description:
 General natural language (tokenizing, stemming (English, Russian, Spanish), part-of-speech tagging, sentiment analysis, classification, inflection, phonetics, tfidf, WordNet, jaro-winkler, Levenshtein distance, Dice's Coefficient) facilities for node.
@@ -10,10 +10,10 @@ General natural language (tokenizing, stemming (English, Russian, Spanish), part
 | ------------------ | :-------------: |
 | Full name          | natural |
 | Keywords           | natural language processing, artifical intelligence, statistics, Porter stemmer, Lancaster stemmer, tokenizer, bigram, trigram, quadgram, ngram, stemmer, bayes, classifier, phonetic, metaphone, inflector, Wordnet, tf-idf, logistic regression, doublemetaphone, double, jaro-winkler distance, levenshtein distance, string distance, part-of-speech tagger, Eric Brill, Brill tagger, sentiment analysis, maximum entropy modelling |
-| # releases         | 22 |
-| # dependents       | 320 |
-| # downloads        | 4800314 |
-| # stars            | 115 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 371844.3333333333 |
+| # stars            | 9846.0 |
 
 ## Links
 - [Homepage](https://github.com/NaturalNode/natural)

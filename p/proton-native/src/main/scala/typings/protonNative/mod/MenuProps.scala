@@ -1,10 +1,13 @@
 package typings.protonNative.mod
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MenuProps extends StObject {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * The name of the menu.
@@ -19,6 +22,10 @@ object MenuProps {
   }
   
   extension [Self <: MenuProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

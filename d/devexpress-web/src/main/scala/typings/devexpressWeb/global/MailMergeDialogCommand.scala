@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MailMergeDialogCommand")
 @js.native
-class MailMergeDialogCommand ()
+open class MailMergeDialogCommand ()
   extends StObject
      with typings.devexpressWeb.MailMergeDialogCommand {
   

@@ -89,13 +89,13 @@ object PostTextResponse {
     
     inline def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
-    inline def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
+    inline def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value*))
     
     inline def setAlternativeIntents(value: IntentList): Self = StObject.set(x, "alternativeIntents", value.asInstanceOf[js.Any])
     
     inline def setAlternativeIntentsUndefined: Self = StObject.set(x, "alternativeIntents", js.undefined)
     
-    inline def setAlternativeIntentsVarargs(value: PredictedIntent*): Self = StObject.set(x, "alternativeIntents", js.Array(value :_*))
+    inline def setAlternativeIntentsVarargs(value: PredictedIntent*): Self = StObject.set(x, "alternativeIntents", js.Array(value*))
     
     inline def setBotVersion(value: BotVersion): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
     

@@ -17,5 +17,5 @@ trait PolygonSymbol3DConstructor
 Instantiable0[PolygonSymbol3D]
      with Instantiable1[/* properties */ PolygonSymbol3DProperties, PolygonSymbol3D] {
   
-  def fromJSON(json: js.Any): PolygonSymbol3D = js.native
+  def fromJSON(json: Any): PolygonSymbol3D = js.native
 }

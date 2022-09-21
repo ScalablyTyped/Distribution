@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class KML () extends XMLFeature {
+open class KML () extends XMLFeature {
   def this(opt_options: KMLOptions) = this()
   
   def readFeature(source: String): typings.openlayers.mod.Feature = js.native

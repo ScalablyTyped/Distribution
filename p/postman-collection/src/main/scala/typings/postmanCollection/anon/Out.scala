@@ -12,15 +12,15 @@ trait Out extends StObject {
 }
 object Out {
   
-  inline def apply(in: js.Any => js.Any, out: js.Any => js.Any): Out = {
+  inline def apply(in: scala.Any => scala.Any, out: scala.Any => scala.Any): Out = {
     val __obj = js.Dynamic.literal(in = js.Any.fromFunction1(in), out = js.Any.fromFunction1(out))
     __obj.asInstanceOf[Out]
   }
   
   extension [Self <: Out](x: Self) {
     
-    inline def setIn(value: js.Any => js.Any): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: scala.Any => scala.Any): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    inline def setOut(value: js.Any => js.Any): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
+    inline def setOut(value: scala.Any => scala.Any): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
   }
 }

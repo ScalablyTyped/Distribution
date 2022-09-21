@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait Timeline
   /**
     * The time the timeline was last changed.
     */
-  var lastChangedOn: Date
+  var lastChangedOn: js.Date
   
   var records: js.Array[TimelineRecord]
 }
@@ -27,7 +26,7 @@ object Timeline {
     changeId: Double,
     id: String,
     lastChangedBy: String,
-    lastChangedOn: Date,
+    lastChangedOn: js.Date,
     records: js.Array[TimelineRecord],
     url: String
   ): Timeline = {
@@ -39,10 +38,10 @@ object Timeline {
     
     inline def setLastChangedBy(value: String): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastChangedOn(value: Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
+    inline def setLastChangedOn(value: js.Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
     
     inline def setRecords(value: js.Array[TimelineRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    inline def setRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "records", js.Array(value*))
   }
 }

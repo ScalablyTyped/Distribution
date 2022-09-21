@@ -25,8 +25,8 @@ object ExpressionNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.CompoundExpressionNode]
   }
   
-  inline def SimpleExpressionNode(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): typings.vueCompilerCore.mod.SimpleExpressionNode = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isConstant = isConstant.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+  inline def SimpleExpressionNode(constType: ConstantTypes, content: String, isStatic: Boolean, loc: SourceLocation): typings.vueCompilerCore.mod.SimpleExpressionNode = {
+    val __obj = js.Dynamic.literal(constType = constType.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(4)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SimpleExpressionNode]
   }

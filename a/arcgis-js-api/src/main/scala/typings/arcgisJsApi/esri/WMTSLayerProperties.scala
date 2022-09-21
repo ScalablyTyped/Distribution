@@ -33,17 +33,19 @@ trait WMTSLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#customLayerParameters)
     */
-  var customLayerParameters: js.UndefOr[js.Any] = js.undefined
+  var customLayerParameters: js.UndefOr[Any] = js.undefined
   
   /**
     * Use this to append custom parameters to all WMTS requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#customParameters)
     */
-  var customParameters: js.UndefOr[js.Any] = js.undefined
+  var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
     * The service mode for the WMTS layer.
+    *
+    * @default RESTful
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#serviceMode)
     */
@@ -87,11 +89,11 @@ object WMTSLayerProperties {
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    inline def setCustomLayerParameters(value: js.Any): Self = StObject.set(x, "customLayerParameters", value.asInstanceOf[js.Any])
+    inline def setCustomLayerParameters(value: Any): Self = StObject.set(x, "customLayerParameters", value.asInstanceOf[js.Any])
     
     inline def setCustomLayerParametersUndefined: Self = StObject.set(x, "customLayerParameters", js.undefined)
     
-    inline def setCustomParameters(value: js.Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
+    inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     
     inline def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
     
@@ -103,7 +105,7 @@ object WMTSLayerProperties {
     
     inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
-    inline def setSublayersVarargs(value: WMTSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
+    inline def setSublayersVarargs(value: WMTSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

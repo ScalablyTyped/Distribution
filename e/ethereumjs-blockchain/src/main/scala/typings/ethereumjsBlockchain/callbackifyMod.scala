@@ -10,5 +10,5 @@ object callbackifyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def callbackify(original: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(original.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callbackify(original: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(original.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

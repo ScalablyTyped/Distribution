@@ -17,7 +17,7 @@ trait Repository extends StObject {
   var format: js.UndefOr[String] = js.undefined
   
   /**
-    * The Cloud KMS resource name of the customer managed encryption key that’s used to encrypt the contents of the Repository. Has the form:
+    * The Cloud KMS resource name of the customer managed encryption key that's used to encrypt the contents of the Repository. Has the form:
     * `projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key`. This value may not be changed after the Repository has been created.
     */
   var kmsKeyName: js.UndefOr[String] = js.undefined
@@ -29,11 +29,17 @@ trait Repository extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientArtifactregistry.maximMazurokGapiClientArtifactregistryStrings.Repository & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientArtifactregistry.maximMazurokGapiClientArtifactregistryStrings.Repository & TopLevel[Any]
   ] = js.undefined
+  
+  /** Maven repository config contains repository level configuration for the repositories of maven type. */
+  var mavenConfig: js.UndefOr[MavenRepositoryConfig] = js.undefined
   
   /** The name of the repository, for example: "projects/p1/locations/us-central1/repositories/repo1". */
   var name: js.UndefOr[String] = js.undefined
+  
+  /** Output only. The size, in bytes, of all artifact storage in this repository. Repositories that are generally available or in public preview use this to calculate storage costs. */
+  var sizeBytes: js.UndefOr[String] = js.undefined
   
   /** The time when the repository was last updated. */
   var updateTime: js.UndefOr[String] = js.undefined
@@ -66,14 +72,22 @@ object Repository {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientArtifactregistry.maximMazurokGapiClientArtifactregistryStrings.Repository & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientArtifactregistry.maximMazurokGapiClientArtifactregistryStrings.Repository & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
+    inline def setMavenConfig(value: MavenRepositoryConfig): Self = StObject.set(x, "mavenConfig", value.asInstanceOf[js.Any])
+    
+    inline def setMavenConfigUndefined: Self = StObject.set(x, "mavenConfig", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

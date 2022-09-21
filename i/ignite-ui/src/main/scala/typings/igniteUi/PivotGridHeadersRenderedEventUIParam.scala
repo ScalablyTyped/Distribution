@@ -10,12 +10,12 @@ trait PivotGridHeadersRenderedEventUIParam extends StObject {
   /**
     * Gets a reference to the igGrid widget, which holds the headers.
     */
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the pivot grid.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the headers table DOM element.
@@ -31,11 +31,11 @@ object PivotGridHeadersRenderedEventUIParam {
   
   extension [Self <: PivotGridHeadersRenderedEventUIParam](x: Self) {
     
-    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

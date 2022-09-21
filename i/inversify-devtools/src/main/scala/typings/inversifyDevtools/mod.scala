@@ -17,7 +17,7 @@ object mod {
     extends js.Function {
     
     def apply(
-      kernel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify inversify.interfaces.Kernel */ js.Any
+      kernel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify inversify.interfaces.Kernel */ Any
     ): Unit = js.native
   }
 }

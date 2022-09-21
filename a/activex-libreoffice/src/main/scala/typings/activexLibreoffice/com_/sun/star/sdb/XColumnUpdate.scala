@@ -100,14 +100,14 @@ trait XColumnUpdate
     * @param scale the scale
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateNumericObject(x: js.Any, scale: Double): Unit
+  def updateNumericObject(x: Any, scale: Double): Unit
   
   /**
     * updates a column with an Object value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateObject(x: js.Any): Unit
+  def updateObject(x: Any): Unit
   
   /**
     * updates a column with a short value.
@@ -141,7 +141,7 @@ object XColumnUpdate {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     updateBinaryStream: (XInputStream, Double) => Unit,
     updateBoolean: Boolean => Unit,
@@ -154,8 +154,8 @@ object XColumnUpdate {
     updateInt: Double => Unit,
     updateLong: Double => Unit,
     updateNull: () => Unit,
-    updateNumericObject: (js.Any, Double) => Unit,
-    updateObject: js.Any => Unit,
+    updateNumericObject: (Any, Double) => Unit,
+    updateObject: Any => Unit,
     updateShort: Double => Unit,
     updateString: String => Unit,
     updateTime: Time => Unit,
@@ -189,9 +189,9 @@ object XColumnUpdate {
     
     inline def setUpdateNull(value: () => Unit): Self = StObject.set(x, "updateNull", js.Any.fromFunction0(value))
     
-    inline def setUpdateNumericObject(value: (js.Any, Double) => Unit): Self = StObject.set(x, "updateNumericObject", js.Any.fromFunction2(value))
+    inline def setUpdateNumericObject(value: (Any, Double) => Unit): Self = StObject.set(x, "updateNumericObject", js.Any.fromFunction2(value))
     
-    inline def setUpdateObject(value: js.Any => Unit): Self = StObject.set(x, "updateObject", js.Any.fromFunction1(value))
+    inline def setUpdateObject(value: Any => Unit): Self = StObject.set(x, "updateObject", js.Any.fromFunction1(value))
     
     inline def setUpdateShort(value: Double => Unit): Self = StObject.set(x, "updateShort", js.Any.fromFunction1(value))
     

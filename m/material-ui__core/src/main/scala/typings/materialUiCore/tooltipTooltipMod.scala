@@ -1,7 +1,8 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.PartialClassNameMapToolti
+import typings.materialUiCore.anon.PartialPopperProps
+import typings.materialUiCore.anon.TransitionPropschildrenRe
 import typings.materialUiCore.materialUiCoreStrings.`additions removals`
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`bottom-end`
@@ -64,10 +65,12 @@ import typings.materialUiCore.materialUiCoreStrings.tree
 import typings.materialUiCore.materialUiCoreStrings.url
 import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
+import typings.materialUiCore.popperPopperMod.PopperProps
 import typings.materialUiCore.transitionMod.TransitionProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
@@ -94,7 +97,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -104,22 +106,29 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object tooltipTooltipMod extends Shortcut {
+object tooltipTooltipMod {
   
-  @JSImport("@material-ui/core/Tooltip/Tooltip", JSImport.Default)
+  @JSImport("@material-ui/core/Tooltip/Tooltip", JSImport.Namespace)
   @js.native
-  val default: ComponentType[TooltipProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(props: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiCore.materialUiCoreStrings.popper
     - typings.materialUiCore.materialUiCoreStrings.popperInteractive
+    - typings.materialUiCore.materialUiCoreStrings.popperArrow
     - typings.materialUiCore.materialUiCoreStrings.tooltip
+    - typings.materialUiCore.materialUiCoreStrings.tooltipArrow
+    - typings.materialUiCore.materialUiCoreStrings.arrow
     - typings.materialUiCore.materialUiCoreStrings.touch
     - typings.materialUiCore.materialUiCoreStrings.tooltipPlacementLeft
     - typings.materialUiCore.materialUiCoreStrings.tooltipPlacementRight
@@ -129,11 +138,17 @@ object tooltipTooltipMod extends Shortcut {
   trait TooltipClassKey extends StObject
   object TooltipClassKey {
     
+    inline def arrow: typings.materialUiCore.materialUiCoreStrings.arrow = "arrow".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.arrow]
+    
     inline def popper: typings.materialUiCore.materialUiCoreStrings.popper = "popper".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.popper]
+    
+    inline def popperArrow: typings.materialUiCore.materialUiCoreStrings.popperArrow = "popperArrow".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.popperArrow]
     
     inline def popperInteractive: typings.materialUiCore.materialUiCoreStrings.popperInteractive = "popperInteractive".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.popperInteractive]
     
     inline def tooltip: typings.materialUiCore.materialUiCoreStrings.tooltip = "tooltip".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.tooltip]
+    
+    inline def tooltipArrow: typings.materialUiCore.materialUiCoreStrings.tooltipArrow = "tooltipArrow".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.tooltipArrow]
     
     inline def tooltipPlacementBottom: typings.materialUiCore.materialUiCoreStrings.tooltipPlacementBottom = "tooltipPlacementBottom".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.tooltipPlacementBottom]
     
@@ -149,10 +164,25 @@ object tooltipTooltipMod extends Shortcut {
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/Tooltip/Tooltip.TooltipClassKey, 'title'> */
   trait TooltipProps extends StObject {
     
-    var PopperProps: js.UndefOr[js.Object] = js.undefined
+    /**
+      * The component used for the popper.
+      */
+    var PopperComponent: js.UndefOr[ComponentType[PopperProps]] = js.undefined
     
-    var TransitionComponent: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
+    /**
+      * Props applied to the [`Popper`](/api/popper/) element.
+      */
+    var PopperProps: js.UndefOr[PartialPopperProps] = js.undefined
     
+    /**
+      * The component used for the transition.
+      * [Follow this guide](/components/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
+      */
+    var TransitionComponent: js.UndefOr[ComponentType[TransitionPropschildrenRe]] = js.undefined
+    
+    /**
+      * Props applied to the [`Transition`](http://reactcommunity.org/react-transition-group/transition#Transition-props) element.
+      */
     var TransitionProps: js.UndefOr[typings.materialUiCore.transitionMod.TransitionProps] = js.undefined
     
     var about: js.UndefOr[String] = js.undefined
@@ -161,11 +191,11 @@ object tooltipTooltipMod extends Shortcut {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -183,21 +213,21 @@ object tooltipTooltipMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -211,11 +241,11 @@ object tooltipTooltipMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -227,13 +257,13 @@ object tooltipTooltipMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -243,7 +273,7 @@ object tooltipTooltipMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -257,16 +287,27 @@ object tooltipTooltipMod extends Shortcut {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * If `true`, adds an arrow to the tooltip.
+      */
+    var arrow: js.UndefOr[Boolean] = js.undefined
+    
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Tooltip reference element.
+      */
     var children: ReactElement
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Override or extend the styles applied to the component.
+      */
     var classes: js.UndefOr[PartialClassNameMapToolti] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
@@ -285,28 +326,57 @@ object tooltipTooltipMod extends Shortcut {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * Do not respond to focus events.
+      */
     var disableFocusListener: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Do not respond to hover events.
+      */
     var disableHoverListener: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Do not respond to long press touch events.
+      */
     var disableTouchListener: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * The number of milliseconds to wait before showing the tooltip.
+      * This prop won't impact the enter touch delay (`enterTouchDelay`).
+      */
     var enterDelay: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The number of milliseconds to wait before showing the tooltip when one was already recently opened.
+      */
+    var enterNextDelay: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The number of milliseconds a user must touch the element before showing the tooltip.
+      */
     var enterTouchDelay: js.UndefOr[Double] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * This prop is used to help implement the accessibility logic.
+      * If you don't provide this prop. It falls back to a randomly generated id.
+      */
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Makes a tooltip interactive, i.e. will not close when the user
+      * hovers over the tooltip before the `leaveDelay` is expired.
+      */
     var interactive: js.UndefOr[Boolean] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -323,8 +393,15 @@ object tooltipTooltipMod extends Shortcut {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * The number of milliseconds to wait before hiding the tooltip.
+      * This prop won't impact the leave touch delay (`leaveTouchDelay`).
+      */
     var leaveDelay: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The number of milliseconds after the user stops touching an element before hiding the tooltip.
+      */
     var leaveTouchDelay: js.UndefOr[Double] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -349,6 +426,11 @@ object tooltipTooltipMod extends Shortcut {
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback fired when the component requests to be closed.
+      *
+      * @param {object} event The event source of the callback.
+      */
     var onClose: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -425,6 +507,11 @@ object tooltipTooltipMod extends Shortcut {
     
     var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback fired when the component requests to be open.
+      *
+      * @param {object} event The event source of the callback.
+      */
     var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
     
     var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
@@ -489,10 +576,16 @@ object tooltipTooltipMod extends Shortcut {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * If `true`, the tooltip is shown.
+      */
     var open: js.UndefOr[Boolean] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
+    /**
+      * Tooltip placement.
+      */
     var placement: js.UndefOr[
         `bottom-end` | `bottom-start` | bottom | `left-end` | `left-start` | left | `right-end` | `right-start` | right | `top-end` | `top-start` | top
       ] = js.undefined
@@ -503,11 +596,13 @@ object tooltipTooltipMod extends Shortcut {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -523,7 +618,10 @@ object tooltipTooltipMod extends Shortcut {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: ReactNode
+    /**
+      * Tooltip title. Zero-length titles string are never displayed.
+      */
+    var title: NonNullable[ReactNode]
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
@@ -535,8 +633,8 @@ object tooltipTooltipMod extends Shortcut {
   }
   object TooltipProps {
     
-    inline def apply(children: ReactElement): TooltipProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(children: ReactElement, title: NonNullable[ReactNode]): TooltipProps = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipProps]
     }
     
@@ -554,7 +652,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -562,7 +660,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -598,7 +696,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -610,7 +708,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -618,7 +716,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -626,7 +724,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -654,15 +752,15 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -686,7 +784,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -696,7 +794,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -716,7 +814,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -743,6 +841,10 @@ object tooltipTooltipMod extends Shortcut {
       inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
+      
+      inline def setArrow(value: Boolean): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      
+      inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
       
       inline def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
       
@@ -794,7 +896,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -820,6 +922,10 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
       
+      inline def setEnterNextDelay(value: Double): Self = StObject.set(x, "enterNextDelay", value.asInstanceOf[js.Any])
+      
+      inline def setEnterNextDelayUndefined: Self = StObject.set(x, "enterNextDelay", js.undefined)
+      
       inline def setEnterTouchDelay(value: Double): Self = StObject.set(x, "enterTouchDelay", value.asInstanceOf[js.Any])
       
       inline def setEnterTouchDelayUndefined: Self = StObject.set(x, "enterTouchDelay", js.undefined)
@@ -832,13 +938,13 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
@@ -912,7 +1018,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1016,7 +1122,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1226,7 +1332,11 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      inline def setPopperProps(value: js.Object): Self = StObject.set(x, "PopperProps", value.asInstanceOf[js.Any])
+      inline def setPopperComponent(value: ComponentType[PopperProps]): Self = StObject.set(x, "PopperComponent", value.asInstanceOf[js.Any])
+      
+      inline def setPopperComponentUndefined: Self = StObject.set(x, "PopperComponent", js.undefined)
+      
+      inline def setPopperProps(value: PartialPopperProps): Self = StObject.set(x, "PopperProps", value.asInstanceOf[js.Any])
       
       inline def setPopperPropsUndefined: Self = StObject.set(x, "PopperProps", js.undefined)
       
@@ -1242,6 +1352,14 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1250,7 +1368,7 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1282,11 +1400,9 @@ object tooltipTooltipMod extends Shortcut {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: NonNullable[ReactNode]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-      
-      inline def setTransitionComponent(value: ComponentType[TransitionProps]): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
+      inline def setTransitionComponent(value: ComponentType[TransitionPropschildrenRe]): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
       
       inline def setTransitionComponentUndefined: Self = StObject.set(x, "TransitionComponent", js.undefined)
       
@@ -1311,9 +1427,4 @@ object tooltipTooltipMod extends Shortcut {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type _To = ComponentType[TooltipProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `tooltipTooltipMod.foo` */
-  override def _to: ComponentType[TooltipProps] = default
 }

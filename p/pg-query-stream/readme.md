@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-query-stream
 
-Typings are for version 1.0
+Typings are for version 4.2.4
 
 ## Library description:
 Postgres query result returned as readable stream
@@ -10,10 +10,10 @@ Postgres query result returned as readable stream
 | ------------------ | :-------------: |
 | Full name          | pg-query-stream |
 | Keywords           | postgres, query-stream, pg, query, stream |
-| # releases         | 28 |
-| # dependents       | 116 |
-| # downloads        | 2951626 |
-| # stars            | 2 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 658024.3333333334 |
+| # stars            | 10598.0 |
 
 ## Links
 - [Homepage](https://github.com/brianc/node-postgres#readme)
@@ -24,7 +24,7 @@ Postgres query result returned as readable stream
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

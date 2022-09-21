@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("cssstyle", "CSSStyleDeclaration")
   @js.native
-  class CSSStyleDeclaration ()
+  open class CSSStyleDeclaration ()
     extends StObject
        with /* index */ NumberDictionary[String] {
     def this(onChangeCallback: js.Function1[/* text */ String, Unit]) = this()

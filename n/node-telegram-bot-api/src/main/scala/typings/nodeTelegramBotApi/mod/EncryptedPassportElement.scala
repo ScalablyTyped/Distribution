@@ -48,7 +48,7 @@ object EncryptedPassportElement {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: PassportFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: PassportFile*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setFront_side(value: PassportFile): Self = StObject.set(x, "front_side", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object EncryptedPassportElement {
     
     inline def setTranslationUndefined: Self = StObject.set(x, "translation", js.undefined)
     
-    inline def setTranslationVarargs(value: PassportFile*): Self = StObject.set(x, "translation", js.Array(value :_*))
+    inline def setTranslationVarargs(value: PassportFile*): Self = StObject.set(x, "translation", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

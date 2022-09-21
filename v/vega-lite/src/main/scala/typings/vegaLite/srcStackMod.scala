@@ -2,7 +2,6 @@ package typings.vegaLite
 
 import typings.std.Set
 import typings.vegaLite.anon.ChannelFieldDef
-import typings.vegaLite.anon.DisallowNonLinearStack
 import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.encodingMod.Encoding
 import typings.vegaLite.exprMod.ExprRef
@@ -25,7 +24,9 @@ import typings.vegaLite.vegaLiteStrings.theta
 import typings.vegaLite.vegaLiteStrings.tick
 import typings.vegaLite.vegaLiteStrings.trail
 import typings.vegaLite.vegaLiteStrings.x
+import typings.vegaLite.vegaLiteStrings.xOffset
 import typings.vegaLite.vegaLiteStrings.y
+import typings.vegaLite.vegaLiteStrings.yOffset
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,9 +53,7 @@ object srcStackMod {
   inline def isStackOffset(s: String): /* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStackOffset")(s.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean]
   
   inline def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String]): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
-  inline def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
   inline def stack(m: Mark, encoding: Encoding[String]): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
-  inline def stack(m: Mark, encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
   
   /* keyof vega-lite.anon.Center */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.zero
@@ -69,10 +68,10 @@ object srcStackMod {
     var fieldChannel: x | y | theta | radius
     
     /** Dimension axis of the stack. */
-    var groupbyChannel: js.UndefOr[x | y | theta | radius] = js.undefined
+    var groupbyChannels: js.Array[x | y | theta | radius | xOffset | yOffset]
     
     /** Field for groupbyChannel. */
-    var groupbyField: js.UndefOr[FieldName] = js.undefined
+    var groupbyFields: Set[FieldName]
     
     /**
       * Whether this stack will produce impute transform
@@ -91,11 +90,13 @@ object srcStackMod {
     
     inline def apply(
       fieldChannel: x | y | theta | radius,
+      groupbyChannels: js.Array[x | y | theta | radius | xOffset | yOffset],
+      groupbyFields: Set[FieldName],
       impute: Boolean,
       offset: StackOffset,
       stackBy: js.Array[ChannelFieldDef]
     ): StackProperties = {
-      val __obj = js.Dynamic.literal(fieldChannel = fieldChannel.asInstanceOf[js.Any], impute = impute.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], stackBy = stackBy.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fieldChannel = fieldChannel.asInstanceOf[js.Any], groupbyChannels = groupbyChannels.asInstanceOf[js.Any], groupbyFields = groupbyFields.asInstanceOf[js.Any], impute = impute.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], stackBy = stackBy.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackProperties]
     }
     
@@ -103,13 +104,11 @@ object srcStackMod {
       
       inline def setFieldChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "fieldChannel", value.asInstanceOf[js.Any])
       
-      inline def setGroupbyChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "groupbyChannel", value.asInstanceOf[js.Any])
+      inline def setGroupbyChannels(value: js.Array[typings.vegaLite.vegaLiteStrings.x | y | theta | radius | xOffset | yOffset]): Self = StObject.set(x, "groupbyChannels", value.asInstanceOf[js.Any])
       
-      inline def setGroupbyChannelUndefined: Self = StObject.set(x, "groupbyChannel", js.undefined)
+      inline def setGroupbyChannelsVarargs(value: (typings.vegaLite.vegaLiteStrings.x | y | theta | radius | xOffset | yOffset)*): Self = StObject.set(x, "groupbyChannels", js.Array(value*))
       
-      inline def setGroupbyField(value: FieldName): Self = StObject.set(x, "groupbyField", value.asInstanceOf[js.Any])
-      
-      inline def setGroupbyFieldUndefined: Self = StObject.set(x, "groupbyField", js.undefined)
+      inline def setGroupbyFields(value: Set[FieldName]): Self = StObject.set(x, "groupbyFields", value.asInstanceOf[js.Any])
       
       inline def setImpute(value: Boolean): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
       
@@ -117,7 +116,7 @@ object srcStackMod {
       
       inline def setStackBy(value: js.Array[ChannelFieldDef]): Self = StObject.set(x, "stackBy", value.asInstanceOf[js.Any])
       
-      inline def setStackByVarargs(value: ChannelFieldDef*): Self = StObject.set(x, "stackBy", js.Array(value :_*))
+      inline def setStackByVarargs(value: ChannelFieldDef*): Self = StObject.set(x, "stackBy", js.Array(value*))
     }
   }
 }

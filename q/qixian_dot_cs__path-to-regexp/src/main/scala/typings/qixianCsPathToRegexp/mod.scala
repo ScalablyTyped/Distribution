@@ -1,6 +1,5 @@
 package typings.qixianCsPathToRegexp
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,21 +19,21 @@ object mod {
   inline def parse(str: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
   inline def parse(str: String, options: ParseOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
-  inline def pathToRegexp(path: Path): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  inline def pathToRegexp(path: Path, keys: js.Array[Key]): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  inline def pathToRegexp(path: Path, keys: js.Array[Key], options: TokensToRegexpOptions & ParseOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  inline def pathToRegexp(path: Path, keys: Unit, options: TokensToRegexpOptions & ParseOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def pathToRegexp(path: Path): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def pathToRegexp(path: Path, keys: js.Array[Key]): js.RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
+  inline def pathToRegexp(path: Path, keys: js.Array[Key], options: TokensToRegexpOptions & ParseOptions): js.RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
+  inline def pathToRegexp(path: Path, keys: Unit, options: TokensToRegexpOptions & ParseOptions): js.RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
   
-  inline def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key]): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
-  inline def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key], options: RegexpToFunctionOptions): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
+  inline def regexpToFunction[P /* <: js.Object */](re: js.RegExp, keys: js.Array[Key]): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
+  inline def regexpToFunction[P /* <: js.Object */](re: js.RegExp, keys: js.Array[Key], options: RegexpToFunctionOptions): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
   
   inline def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token]): PathFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToFunction")(tokens.asInstanceOf[js.Any]).asInstanceOf[PathFunction[P]]
   inline def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token], options: TokensToFunctionOptions): PathFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToFunction")(tokens.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PathFunction[P]]
   
-  inline def tokensToRegexp(tokens: js.Array[Token]): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  inline def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key]): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  inline def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key], options: TokensToRegexpOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  inline def tokensToRegexp(tokens: js.Array[Token], keys: Unit, options: TokensToRegexpOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def tokensToRegexp(tokens: js.Array[Token]): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key]): js.RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
+  inline def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key], options: TokensToRegexpOptions): js.RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
+  inline def tokensToRegexp(tokens: js.Array[Token], keys: Unit, options: TokensToRegexpOptions): js.RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
   
   trait Key extends StObject {
     
@@ -135,7 +134,7 @@ object mod {
     }
   }
   
-  type Path = String | RegExp | (js.Array[String | RegExp])
+  type Path = String | js.RegExp | (js.Array[String | js.RegExp])
   
   type PathFunction[P /* <: js.Object */] = js.Function1[/* data */ js.UndefOr[P], String]
   

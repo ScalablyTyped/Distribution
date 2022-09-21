@@ -42,7 +42,7 @@ object fileFlagMod {
   
   @JSImport("browserfs/dist/node/core/file_flag", "FileFlag")
   @js.native
-  class FileFlag protected () extends StObject {
+  open class FileFlag protected () extends StObject {
     /**
       * This should never be called directly.
       * @param modeStr The string representing the mode
@@ -50,7 +50,7 @@ object fileFlagMod {
       */
     def this(flagStr: String) = this()
     
-    /* private */ var flagStr: js.Any = js.native
+    /* private */ var flagStr: Any = js.native
     
     /**
       * Get the underlying flag string for this flag.
@@ -108,8 +108,8 @@ object fileFlagMod {
     
     @JSImport("browserfs/dist/node/core/file_flag", "FileFlag.flagCache")
     @js.native
-    def flagCache: js.Any = js.native
-    inline def flagCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flagCache")(x.asInstanceOf[js.Any])
+    def flagCache: Any = js.native
+    inline def flagCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flagCache")(x.asInstanceOf[js.Any])
     
     /**
       * Get an object representing the given file flag.
@@ -121,7 +121,7 @@ object fileFlagMod {
     
     @JSImport("browserfs/dist/node/core/file_flag", "FileFlag.validFlagStrs")
     @js.native
-    def validFlagStrs: js.Any = js.native
-    inline def validFlagStrs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validFlagStrs")(x.asInstanceOf[js.Any])
+    def validFlagStrs: Any = js.native
+    inline def validFlagStrs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validFlagStrs")(x.asInstanceOf[js.Any])
   }
 }

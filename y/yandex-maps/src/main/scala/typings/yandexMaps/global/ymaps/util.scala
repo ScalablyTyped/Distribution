@@ -9,21 +9,21 @@ object util {
   
   @JSGlobal("ymaps.util.Storage")
   @js.native
-  class Storage ()
+  open class Storage ()
     extends typings.yandexMaps.mod.util.Storage
   
   object cursor {
     
     @JSGlobal("ymaps.util.cursor.Accessor")
     @js.native
-    class Accessor protected ()
+    open class Accessor protected ()
       extends typings.yandexMaps.mod.util.cursor.Accessor {
       def this(key: String) = this()
     }
     
     @JSGlobal("ymaps.util.cursor.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends typings.yandexMaps.mod.util.cursor.Manager {
       def this(element: HTMLElement) = this()
     }

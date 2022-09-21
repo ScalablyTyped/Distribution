@@ -24,6 +24,6 @@ object DescribeAppsResult {
     
     inline def setAppsUndefined: Self = StObject.set(x, "Apps", js.undefined)
     
-    inline def setAppsVarargs(value: App*): Self = StObject.set(x, "Apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: App*): Self = StObject.set(x, "Apps", js.Array(value*))
   }
 }

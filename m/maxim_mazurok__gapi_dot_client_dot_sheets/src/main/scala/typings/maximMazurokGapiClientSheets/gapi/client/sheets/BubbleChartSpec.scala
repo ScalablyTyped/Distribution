@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BubbleChartSpec extends StObject {
   
-  /** The bubble border color. */
+  /** The bubble border color. Deprecated: Use bubble_border_color_style. */
   var bubbleBorderColor: js.UndefOr[Color] = js.undefined
   
   /** The bubble border color. If bubble_border_color is also set, this field takes precedence. */
@@ -25,12 +25,12 @@ trait BubbleChartSpec extends StObject {
   var bubbleOpacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * The data contianing the bubble sizes. Bubble sizes are used to draw the bubbles at different sizes relative to each other. If specified, group_ids must also be specified. This field
+    * The data containing the bubble sizes. Bubble sizes are used to draw the bubbles at different sizes relative to each other. If specified, group_ids must also be specified. This field
     * is optional.
     */
   var bubbleSizes: js.UndefOr[ChartData] = js.undefined
   
-  /** The format of the text inside the bubbles. Strikethrough and underline are not supported. */
+  /** The format of the text inside the bubbles. Strikethrough, underline, and link are not supported. */
   var bubbleTextStyle: js.UndefOr[TextFormat] = js.undefined
   
   /** The data containing the bubble x-values. These values locate the bubbles in the chart horizontally. */
@@ -45,7 +45,7 @@ trait BubbleChartSpec extends StObject {
   /** Where the legend of the chart should be drawn. */
   var legendPosition: js.UndefOr[String] = js.undefined
   
-  /** The data contianing the bubble y-values. These values locate the bubbles in the chart vertically. */
+  /** The data containing the bubble y-values. These values locate the bubbles in the chart vertically. */
   var series: js.UndefOr[ChartData] = js.undefined
 }
 object BubbleChartSpec {

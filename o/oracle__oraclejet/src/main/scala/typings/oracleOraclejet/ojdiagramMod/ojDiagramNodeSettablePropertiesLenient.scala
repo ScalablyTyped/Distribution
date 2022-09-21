@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojdiagram.ojDiagramNodeSettableProperties> */
 trait ojDiagramNodeSettablePropertiesLenient
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -49,7 +49,7 @@ object ojDiagramNodeSettablePropertiesLenient {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setDescendantsConnectivity(value: connected | disjoint | unknown): Self = StObject.set(x, "descendantsConnectivity", value.asInstanceOf[js.Any])
     

@@ -8,11 +8,15 @@ trait LangNavigationPopupOptions extends StObject {
   
   var addButton: js.UndefOr[String] = js.undefined
   
-  var arrowLine: js.UndefOr[String] = js.undefined
+  var algorithm: js.UndefOr[String] = js.undefined
+  
+  var arrowInfinityLine: js.UndefOr[String] = js.undefined
   
   var arrowRay: js.UndefOr[String] = js.undefined
   
   var arrowSegment: js.UndefOr[String] = js.undefined
+  
+  var average: js.UndefOr[String] = js.undefined
   
   var background: js.UndefOr[String] = js.undefined
   
@@ -26,7 +30,11 @@ trait LangNavigationPopupOptions extends StObject {
   
   var borderWidth: js.UndefOr[String] = js.undefined
   
+  var bottomBand: js.UndefOr[String] = js.undefined
+  
   var circle: js.UndefOr[String] = js.undefined
+  
+  var clearFilter: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
   
@@ -40,13 +48,25 @@ trait LangNavigationPopupOptions extends StObject {
   
   var crosshairY: js.UndefOr[String] = js.undefined
   
+  var decimals: js.UndefOr[String] = js.undefined
+  
+  var deviation: js.UndefOr[String] = js.undefined
+  
   var editButton: js.UndefOr[String] = js.undefined
   
   var elliott3: js.UndefOr[String] = js.undefined
   
   var elliott5: js.UndefOr[String] = js.undefined
   
+  var ellipse: js.UndefOr[String] = js.undefined
+  
+  var factor: js.UndefOr[String] = js.undefined
+  
+  var fastAvgPeriod: js.UndefOr[String] = js.undefined
+  
   var fibonacci: js.UndefOr[String] = js.undefined
+  
+  var fibonacciTimeZones: js.UndefOr[String] = js.undefined
   
   var fill: js.UndefOr[String] = js.undefined
   
@@ -58,9 +78,22 @@ trait LangNavigationPopupOptions extends StObject {
   
   var height: js.UndefOr[String] = js.undefined
   
+  var highIndex: js.UndefOr[String] = js.undefined
+  
   var horizontalLine: js.UndefOr[String] = js.undefined
   
+  var increment: js.UndefOr[String] = js.undefined
+  
+  var index: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highstock) Configure the aliases for indicator names.
+    */
+  var indicatorAliases: js.UndefOr[LangNavigationPopupIndicatorAliasesOptions] = js.undefined
+  
   var infinityLine: js.UndefOr[String] = js.undefined
+  
+  var initialAccelerationFactor: js.UndefOr[String] = js.undefined
   
   var innerBackground: js.UndefOr[String] = js.undefined
   
@@ -74,6 +107,12 @@ trait LangNavigationPopupOptions extends StObject {
   
   var lines: js.UndefOr[String] = js.undefined
   
+  var longPeriod: js.UndefOr[String] = js.undefined
+  
+  var lowIndex: js.UndefOr[String] = js.undefined
+  
+  var maxAccelerationFactor: js.UndefOr[String] = js.undefined
+  
   var measure: js.UndefOr[String] = js.undefined
   
   var measureX: js.UndefOr[String] = js.undefined
@@ -82,7 +121,13 @@ trait LangNavigationPopupOptions extends StObject {
   
   var measureY: js.UndefOr[String] = js.undefined
   
+  var multiplier: js.UndefOr[String] = js.undefined
+  
+  var multiplierATR: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
+  var noFilterMatch: js.UndefOr[String] = js.undefined
   
   var outerBackground: js.UndefOr[String] = js.undefined
   
@@ -90,7 +135,19 @@ trait LangNavigationPopupOptions extends StObject {
   
   var parallelChannel: js.UndefOr[String] = js.undefined
   
+  var period: js.UndefOr[String] = js.undefined
+  
+  var periodATR: js.UndefOr[String] = js.undefined
+  
+  var periodSenkouSpanB: js.UndefOr[String] = js.undefined
+  
+  var periodTenkan: js.UndefOr[String] = js.undefined
+  
+  var periods: js.UndefOr[String] = js.undefined
+  
   var pitchfork: js.UndefOr[String] = js.undefined
+  
+  var ranges: js.UndefOr[String] = js.undefined
   
   var ray: js.UndefOr[String] = js.undefined
   
@@ -100,6 +157,8 @@ trait LangNavigationPopupOptions extends StObject {
   
   var saveButton: js.UndefOr[String] = js.undefined
   
+  var searchIndicators: js.UndefOr[String] = js.undefined
+  
   var segment: js.UndefOr[String] = js.undefined
   
   var series: js.UndefOr[String] = js.undefined
@@ -108,7 +167,15 @@ trait LangNavigationPopupOptions extends StObject {
   
   var shapes: js.UndefOr[String] = js.undefined
   
+  var shortPeriod: js.UndefOr[String] = js.undefined
+  
+  var signalPeriod: js.UndefOr[String] = js.undefined
+  
   var simpleShapes: js.UndefOr[String] = js.undefined
+  
+  var slowAvgPeriod: js.UndefOr[String] = js.undefined
+  
+  var standardDeviation: js.UndefOr[String] = js.undefined
   
   var stroke: js.UndefOr[String] = js.undefined
   
@@ -116,7 +183,11 @@ trait LangNavigationPopupOptions extends StObject {
   
   var style: js.UndefOr[String] = js.undefined
   
+  var timeCycles: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
+  var topBand: js.UndefOr[String] = js.undefined
   
   var tunnel: js.UndefOr[String] = js.undefined
   
@@ -131,6 +202,8 @@ trait LangNavigationPopupOptions extends StObject {
   var verticalLine: js.UndefOr[String] = js.undefined
   
   var volume: js.UndefOr[String] = js.undefined
+  
+  var xAxisUnit: js.UndefOr[String] = js.undefined
 }
 object LangNavigationPopupOptions {
   
@@ -145,9 +218,13 @@ object LangNavigationPopupOptions {
     
     inline def setAddButtonUndefined: Self = StObject.set(x, "addButton", js.undefined)
     
-    inline def setArrowLine(value: String): Self = StObject.set(x, "arrowLine", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    inline def setArrowLineUndefined: Self = StObject.set(x, "arrowLine", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    
+    inline def setArrowInfinityLine(value: String): Self = StObject.set(x, "arrowInfinityLine", value.asInstanceOf[js.Any])
+    
+    inline def setArrowInfinityLineUndefined: Self = StObject.set(x, "arrowInfinityLine", js.undefined)
     
     inline def setArrowRay(value: String): Self = StObject.set(x, "arrowRay", value.asInstanceOf[js.Any])
     
@@ -156,6 +233,10 @@ object LangNavigationPopupOptions {
     inline def setArrowSegment(value: String): Self = StObject.set(x, "arrowSegment", value.asInstanceOf[js.Any])
     
     inline def setArrowSegmentUndefined: Self = StObject.set(x, "arrowSegment", js.undefined)
+    
+    inline def setAverage(value: String): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+    
+    inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -181,9 +262,17 @@ object LangNavigationPopupOptions {
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
+    inline def setBottomBand(value: String): Self = StObject.set(x, "bottomBand", value.asInstanceOf[js.Any])
+    
+    inline def setBottomBandUndefined: Self = StObject.set(x, "bottomBand", js.undefined)
+    
     inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    
+    inline def setClearFilter(value: String): Self = StObject.set(x, "clearFilter", value.asInstanceOf[js.Any])
+    
+    inline def setClearFilterUndefined: Self = StObject.set(x, "clearFilter", js.undefined)
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
@@ -209,6 +298,14 @@ object LangNavigationPopupOptions {
     
     inline def setCrosshairYUndefined: Self = StObject.set(x, "crosshairY", js.undefined)
     
+    inline def setDecimals(value: String): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    
+    inline def setDeviation(value: String): Self = StObject.set(x, "deviation", value.asInstanceOf[js.Any])
+    
+    inline def setDeviationUndefined: Self = StObject.set(x, "deviation", js.undefined)
+    
     inline def setEditButton(value: String): Self = StObject.set(x, "editButton", value.asInstanceOf[js.Any])
     
     inline def setEditButtonUndefined: Self = StObject.set(x, "editButton", js.undefined)
@@ -221,7 +318,23 @@ object LangNavigationPopupOptions {
     
     inline def setElliott5Undefined: Self = StObject.set(x, "elliott5", js.undefined)
     
+    inline def setEllipse(value: String): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+    
+    inline def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
+    
+    inline def setFactor(value: String): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    
+    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+    
+    inline def setFastAvgPeriod(value: String): Self = StObject.set(x, "fastAvgPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setFastAvgPeriodUndefined: Self = StObject.set(x, "fastAvgPeriod", js.undefined)
+    
     inline def setFibonacci(value: String): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZones(value: String): Self = StObject.set(x, "fibonacciTimeZones", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZonesUndefined: Self = StObject.set(x, "fibonacciTimeZones", js.undefined)
     
     inline def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
     
@@ -245,13 +358,33 @@ object LangNavigationPopupOptions {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
+    inline def setHighIndex(value: String): Self = StObject.set(x, "highIndex", value.asInstanceOf[js.Any])
+    
+    inline def setHighIndexUndefined: Self = StObject.set(x, "highIndex", js.undefined)
+    
     inline def setHorizontalLine(value: String): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
     
     inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
     
+    inline def setIncrement(value: String): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    
+    inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setIndicatorAliases(value: LangNavigationPopupIndicatorAliasesOptions): Self = StObject.set(x, "indicatorAliases", value.asInstanceOf[js.Any])
+    
+    inline def setIndicatorAliasesUndefined: Self = StObject.set(x, "indicatorAliases", js.undefined)
+    
     inline def setInfinityLine(value: String): Self = StObject.set(x, "infinityLine", value.asInstanceOf[js.Any])
     
     inline def setInfinityLineUndefined: Self = StObject.set(x, "infinityLine", js.undefined)
+    
+    inline def setInitialAccelerationFactor(value: String): Self = StObject.set(x, "initialAccelerationFactor", value.asInstanceOf[js.Any])
+    
+    inline def setInitialAccelerationFactorUndefined: Self = StObject.set(x, "initialAccelerationFactor", js.undefined)
     
     inline def setInnerBackground(value: String): Self = StObject.set(x, "innerBackground", value.asInstanceOf[js.Any])
     
@@ -277,6 +410,18 @@ object LangNavigationPopupOptions {
     
     inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
+    inline def setLongPeriod(value: String): Self = StObject.set(x, "longPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setLongPeriodUndefined: Self = StObject.set(x, "longPeriod", js.undefined)
+    
+    inline def setLowIndex(value: String): Self = StObject.set(x, "lowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setLowIndexUndefined: Self = StObject.set(x, "lowIndex", js.undefined)
+    
+    inline def setMaxAccelerationFactor(value: String): Self = StObject.set(x, "maxAccelerationFactor", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAccelerationFactorUndefined: Self = StObject.set(x, "maxAccelerationFactor", js.undefined)
+    
     inline def setMeasure(value: String): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
     inline def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
@@ -293,9 +438,21 @@ object LangNavigationPopupOptions {
     
     inline def setMeasureYUndefined: Self = StObject.set(x, "measureY", js.undefined)
     
+    inline def setMultiplier(value: String): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
+    
+    inline def setMultiplierATR(value: String): Self = StObject.set(x, "multiplierATR", value.asInstanceOf[js.Any])
+    
+    inline def setMultiplierATRUndefined: Self = StObject.set(x, "multiplierATR", js.undefined)
+    
+    inline def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNoFilterMatch(value: String): Self = StObject.set(x, "noFilterMatch", value.asInstanceOf[js.Any])
+    
+    inline def setNoFilterMatchUndefined: Self = StObject.set(x, "noFilterMatch", js.undefined)
     
     inline def setOuterBackground(value: String): Self = StObject.set(x, "outerBackground", value.asInstanceOf[js.Any])
     
@@ -309,9 +466,33 @@ object LangNavigationPopupOptions {
     
     inline def setParallelChannelUndefined: Self = StObject.set(x, "parallelChannel", js.undefined)
     
+    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodATR(value: String): Self = StObject.set(x, "periodATR", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodATRUndefined: Self = StObject.set(x, "periodATR", js.undefined)
+    
+    inline def setPeriodSenkouSpanB(value: String): Self = StObject.set(x, "periodSenkouSpanB", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodSenkouSpanBUndefined: Self = StObject.set(x, "periodSenkouSpanB", js.undefined)
+    
+    inline def setPeriodTenkan(value: String): Self = StObject.set(x, "periodTenkan", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodTenkanUndefined: Self = StObject.set(x, "periodTenkan", js.undefined)
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    
+    inline def setPeriods(value: String): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
+    
     inline def setPitchfork(value: String): Self = StObject.set(x, "pitchfork", value.asInstanceOf[js.Any])
     
     inline def setPitchforkUndefined: Self = StObject.set(x, "pitchfork", js.undefined)
+    
+    inline def setRanges(value: String): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     inline def setRay(value: String): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
     
@@ -329,6 +510,10 @@ object LangNavigationPopupOptions {
     
     inline def setSaveButtonUndefined: Self = StObject.set(x, "saveButton", js.undefined)
     
+    inline def setSearchIndicators(value: String): Self = StObject.set(x, "searchIndicators", value.asInstanceOf[js.Any])
+    
+    inline def setSearchIndicatorsUndefined: Self = StObject.set(x, "searchIndicators", js.undefined)
+    
     inline def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
     inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
@@ -345,9 +530,25 @@ object LangNavigationPopupOptions {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
+    inline def setShortPeriod(value: String): Self = StObject.set(x, "shortPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setShortPeriodUndefined: Self = StObject.set(x, "shortPeriod", js.undefined)
+    
+    inline def setSignalPeriod(value: String): Self = StObject.set(x, "signalPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setSignalPeriodUndefined: Self = StObject.set(x, "signalPeriod", js.undefined)
+    
     inline def setSimpleShapes(value: String): Self = StObject.set(x, "simpleShapes", value.asInstanceOf[js.Any])
     
     inline def setSimpleShapesUndefined: Self = StObject.set(x, "simpleShapes", js.undefined)
+    
+    inline def setSlowAvgPeriod(value: String): Self = StObject.set(x, "slowAvgPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setSlowAvgPeriodUndefined: Self = StObject.set(x, "slowAvgPeriod", js.undefined)
+    
+    inline def setStandardDeviation(value: String): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
+    
+    inline def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
     
     inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
@@ -361,9 +562,17 @@ object LangNavigationPopupOptions {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
+    inline def setTimeCycles(value: String): Self = StObject.set(x, "timeCycles", value.asInstanceOf[js.Any])
+    
+    inline def setTimeCyclesUndefined: Self = StObject.set(x, "timeCycles", js.undefined)
+    
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTopBand(value: String): Self = StObject.set(x, "topBand", value.asInstanceOf[js.Any])
+    
+    inline def setTopBandUndefined: Self = StObject.set(x, "topBand", js.undefined)
     
     inline def setTunnel(value: String): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     
@@ -392,5 +601,9 @@ object LangNavigationPopupOptions {
     inline def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+    
+    inline def setXAxisUnit(value: String): Self = StObject.set(x, "xAxisUnit", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisUnitUndefined: Self = StObject.set(x, "xAxisUnit", js.undefined)
   }
 }

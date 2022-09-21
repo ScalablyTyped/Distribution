@@ -1,6 +1,5 @@
 package typings.htmlParser
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,11 +21,11 @@ object mod {
   inline def sanitize(htmlString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(htmlString.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def sanitize(htmlString: String, removalCallbacks: RemovalCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(htmlString.asInstanceOf[js.Any], removalCallbacks.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type Callback = js.Function1[/* arg */ js.Any, js.Any]
+  type Callback = js.Function1[/* arg */ Any, Any]
   
   trait CallbacksOption extends StObject {
     
-    var attribute: js.UndefOr[js.Function2[/* name */ String, /* value */ js.Any, Unit]] = js.undefined
+    var attribute: js.UndefOr[js.Function2[/* name */ String, /* value */ Any, Unit]] = js.undefined
     
     var cdata: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
     
@@ -55,7 +54,7 @@ object mod {
     
     extension [Self <: CallbacksOption](x: Self) {
       
-      inline def setAttribute(value: (/* name */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction2(value))
+      inline def setAttribute(value: (/* name */ String, /* value */ Any) => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction2(value))
       
       inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
@@ -95,9 +94,9 @@ object mod {
   
   trait RegExpOptions extends StObject {
     
-    var attribute: js.UndefOr[RegExp] = js.undefined
+    var attribute: js.UndefOr[js.RegExp] = js.undefined
     
-    var name: js.UndefOr[RegExp] = js.undefined
+    var name: js.UndefOr[js.RegExp] = js.undefined
   }
   object RegExpOptions {
     
@@ -108,11 +107,11 @@ object mod {
     
     extension [Self <: RegExpOptions](x: Self) {
       
-      inline def setAttribute(value: RegExp): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: js.RegExp): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
       inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      inline def setName(value: RegExp): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: js.RegExp): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
@@ -120,23 +119,18 @@ object mod {
   
   trait RemovalCallback extends StObject {
     
-    var attributes: Callback | js.Array[String]
+    var attributes: js.UndefOr[Callback | js.Array[String]] = js.undefined
     
-    var comments: Callback | Boolean
+    var comments: js.UndefOr[Callback | Boolean] = js.undefined
     
-    var docTypes: Callback | Boolean
+    var docTypes: js.UndefOr[Callback | Boolean] = js.undefined
     
-    var elements: Callback | js.Array[String]
+    var elements: js.UndefOr[Callback | js.Array[String]] = js.undefined
   }
   object RemovalCallback {
     
-    inline def apply(
-      attributes: Callback | js.Array[String],
-      comments: Callback | Boolean,
-      docTypes: Callback | Boolean,
-      elements: Callback | js.Array[String]
-    ): RemovalCallback = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], docTypes = docTypes.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any])
+    inline def apply(): RemovalCallback = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemovalCallback]
     }
     
@@ -144,23 +138,31 @@ object mod {
       
       inline def setAttributes(value: Callback | js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesFunction1(value: /* arg */ js.Any => js.Any): Self = StObject.set(x, "attributes", js.Any.fromFunction1(value))
+      inline def setAttributesFunction1(value: /* arg */ Any => Any): Self = StObject.set(x, "attributes", js.Any.fromFunction1(value))
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setComments(value: Callback | Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      inline def setCommentsFunction1(value: /* arg */ js.Any => js.Any): Self = StObject.set(x, "comments", js.Any.fromFunction1(value))
+      inline def setCommentsFunction1(value: /* arg */ Any => Any): Self = StObject.set(x, "comments", js.Any.fromFunction1(value))
+      
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
       inline def setDocTypes(value: Callback | Boolean): Self = StObject.set(x, "docTypes", value.asInstanceOf[js.Any])
       
-      inline def setDocTypesFunction1(value: /* arg */ js.Any => js.Any): Self = StObject.set(x, "docTypes", js.Any.fromFunction1(value))
+      inline def setDocTypesFunction1(value: /* arg */ Any => Any): Self = StObject.set(x, "docTypes", js.Any.fromFunction1(value))
+      
+      inline def setDocTypesUndefined: Self = StObject.set(x, "docTypes", js.undefined)
       
       inline def setElements(value: Callback | js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      inline def setElementsFunction1(value: /* arg */ js.Any => js.Any): Self = StObject.set(x, "elements", js.Any.fromFunction1(value))
+      inline def setElementsFunction1(value: /* arg */ Any => Any): Self = StObject.set(x, "elements", js.Any.fromFunction1(value))
       
-      inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+      
+      inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value*))
     }
   }
   

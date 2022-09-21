@@ -1,20 +1,21 @@
 package typings.devtoolsProtocol.mod.Protocol.Runtime
 
+import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ExecutionContextId = typings.devtoolsProtocol.mod.Protocol.integer
+type ExecutionContextId = integer
 
-type RemoteObjectId = java.lang.String
+type RemoteObjectId = String
 
-type ScriptId = java.lang.String
+type ScriptId = String
 
-type TimeDelta = scala.Double
+type TimeDelta = Double
 
-type Timestamp = scala.Double
+type Timestamp = Double
 
-type UniqueDebuggerId = java.lang.String
+type UniqueDebuggerId = String
 
-type UnserializableValue = java.lang.String
+type UnserializableValue = String

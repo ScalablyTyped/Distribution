@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BigNumber = js.Any
+type BigNumber = Any
 
-type Byte = scala.Double
+type Byte = Double
 
-type Char = java.lang.String
+type Char = String
 
-type Integer = scala.Double
+type Integer = Double
 
-type JdbcSQLXML = js.Any
+type JdbcSQLXML = Any

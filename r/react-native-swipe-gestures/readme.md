@@ -10,10 +10,10 @@ Typings are for version 1.0.5
 | ------------------ | :-------------: |
 | Full name          | react-native-swipe-gestures |
 | Keywords           | react-native, swipe, gesture |
-| # releases         | 3 |
-| # dependents       | 41 |
-| # downloads        | 4443277 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 795520.0 |
+| # stars            | 555.0 |
 
 ## Links
 - [Homepage](https://github.com/glepur/react-native-swipe-gestures#readme)

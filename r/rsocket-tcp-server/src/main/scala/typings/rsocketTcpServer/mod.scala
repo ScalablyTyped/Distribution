@@ -10,9 +10,9 @@ object mod {
   
   @JSImport("rsocket-tcp-server", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.rsocketTcpServer.rsockettcpserverMod.default {
     def this(options: ServerOptions) = this()
-    def this(options: ServerOptions, encoders: Encoders[js.Any]) = this()
+    def this(options: ServerOptions, encoders: Encoders[Any]) = this()
   }
 }

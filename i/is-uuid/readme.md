@@ -10,15 +10,12 @@ UUID check for Node and the browser
 | ------------------ | :-------------: |
 | Full name          | is-uuid |
 | Keywords           | UUID, v1, v2, v3, v4, v5, nil, regex |
-| # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 1247615 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 176959.66666666666 |
+| # stars            | 27.0 |
 
 ## Links
-- [Homepage](https://github.com/afram/is-uuid#readme)
-- [Bugs](https://github.com/afram/is-uuid/issues)
-- [Repository](https://github.com/afram/is-uuid)
 - [Npm](https://www.npmjs.com/package/is-uuid)
     
 

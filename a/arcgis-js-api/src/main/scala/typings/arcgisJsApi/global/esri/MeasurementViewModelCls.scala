@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.MeasurementViewModel")
 @js.native
-class MeasurementViewModelCls ()
+/**
+  * Provides the logic for the [Measurement](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement-MeasurementViewModel.html)
+  */
+open class MeasurementViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.MeasurementViewModel {
   def this(properties: MeasurementViewModelProperties) = this()

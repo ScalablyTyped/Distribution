@@ -19,7 +19,7 @@ trait Search extends StObject {
   /* private */ @JSName("Outlook.Search_typekey")
   var OutlookDotSearch_typekey: Search
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Results: typings.activexOutlook.Outlook.Results
   
@@ -44,7 +44,7 @@ object Search {
     GetTable: () => Table,
     IsSynchronous: Boolean,
     OutlookDotSearch_typekey: Search,
-    Parent: js.Any,
+    Parent: Any,
     Results: Results,
     Save: String => Folder,
     Scope: String,
@@ -72,7 +72,7 @@ object Search {
     
     inline def setOutlookDotSearch_typekey(value: Search): Self = StObject.set(x, "Outlook.Search_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setResults(value: Results): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     

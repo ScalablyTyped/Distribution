@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a buyer of inventory. Each buyer is identified by a unique
-  * Authorized Buyers account ID.
-  */
 trait SchemaBuyer extends StObject {
   
   /**
     * Authorized Buyers account ID of the buyer.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBuyer {
   
@@ -25,6 +21,8 @@ object SchemaBuyer {
   extension [Self <: SchemaBuyer](x: Self) {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
   }

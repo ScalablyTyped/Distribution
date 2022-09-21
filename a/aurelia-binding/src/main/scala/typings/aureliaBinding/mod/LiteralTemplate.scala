@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "LiteralTemplate")
 @js.native
-class LiteralTemplate protected () extends Expression {
+open class LiteralTemplate protected () extends Expression {
   def this(cooked: js.Array[String]) = this()
   def this(cooked: js.Array[String], expressions: js.Array[Expression]) = this()
   def this(cooked: js.Array[String], expressions: js.Array[Expression], raw: js.Array[String]) = this()

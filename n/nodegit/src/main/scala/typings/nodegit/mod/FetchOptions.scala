@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "FetchOptions")
 @js.native
-class FetchOptions ()
+open class FetchOptions ()
   extends typings.nodegit.fetchOptionsMod.FetchOptions

@@ -1,9 +1,5 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +9,7 @@ trait ParamsResourceProjectsNotificationchannelsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The project on which to execute the request. The format is:
-    * projects/[PROJECT_ID] Note that this names the container into which the
-    * channel will be written. This does not name the newly created channel.
-    * The resulting channel's name will have a normalized version of this field
-    * as a prefix, but will add /notificationChannels/[CHANNEL_ID] to identify
-    * the channel.
+    * Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER] This names the container into which the channel will be written, this does not name the newly created channel. The resulting channel's name will have a normalized version of this field as a prefix, but will add /notificationChannels/[CHANNEL_ID] to identify the channel.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -40,10 +26,6 @@ object ParamsResourceProjectsNotificationchannelsCreate {
   }
   
   extension [Self <: ParamsResourceProjectsNotificationchannelsCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

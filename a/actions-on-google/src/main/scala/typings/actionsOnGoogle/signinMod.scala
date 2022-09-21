@@ -18,7 +18,7 @@ object signinMod {
     *     "To check your account balance".
     * @public
     */
-  class SignIn () extends SoloHelper[actionsDotintentDotSIGN_IN, GoogleActionsV2SignInValueSpec] {
+  open class SignIn () extends SoloHelper[actionsDotintentDotSIGN_IN, GoogleActionsV2SignInValueSpec] {
     def this(context: String) = this()
   }
   

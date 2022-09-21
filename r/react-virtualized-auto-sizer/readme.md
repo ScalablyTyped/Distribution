@@ -10,10 +10,10 @@ Standalone version of the AutoSizer component from react-virtualized
 | ------------------ | :-------------: |
 | Full name          | react-virtualized-auto-sizer |
 | Keywords           | react, reactjs, virtual, window, windowed, list, scrolling, infinite, virtualized, table, grid, spreadsheet |
-| # releases         | 3 |
-| # dependents       | 116 |
-| # downloads        | 14605111 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2753787.0 |
+| # stars            | 419.0 |
 
 ## Links
 - [Homepage](https://github.com/bvaughn/react-virtualized-auto-sizer/)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecipientList extends StObject {
   
   /** Recipient list attribute object */
-  var attributes: js.Any
+  var attributes: Any
   
   /** Detailed description of the recipient list */
   var description: String
@@ -23,20 +23,14 @@ trait RecipientList extends StObject {
 }
 object RecipientList {
   
-  inline def apply(
-    attributes: js.Any,
-    description: String,
-    id: String,
-    name: String,
-    total_accepted_recipients: Double
-  ): RecipientList = {
+  inline def apply(attributes: Any, description: String, id: String, name: String, total_accepted_recipients: Double): RecipientList = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], total_accepted_recipients = total_accepted_recipients.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientList]
   }
   
   extension [Self <: RecipientList](x: Self) {
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

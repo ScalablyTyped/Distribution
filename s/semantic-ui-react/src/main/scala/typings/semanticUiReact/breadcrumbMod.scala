@@ -15,10 +15,9 @@ object breadcrumbMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/collections/Breadcrumb", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[BreadcrumbProps, ComponentState, js.Any] {
+  open class default protected () extends Component[BreadcrumbProps, ComponentState, Any] {
     def this(props: BreadcrumbProps) = this()
-    def this(props: BreadcrumbProps, context: js.Any) = this()
+    def this(props: BreadcrumbProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -29,10 +28,9 @@ object breadcrumbMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/collections/Breadcrumb", "default.Section")
     @js.native
-    class Section protected ()
-      extends Component[BreadcrumbSectionProps, ComponentState, js.Any] {
+    open class Section protected () extends Component[BreadcrumbSectionProps, ComponentState, Any] {
       def this(props: BreadcrumbSectionProps) = this()
-      def this(props: BreadcrumbSectionProps, context: js.Any) = this()
+      def this(props: BreadcrumbSectionProps, context: Any) = this()
     }
     
     type _To = BreadcrumbComponent

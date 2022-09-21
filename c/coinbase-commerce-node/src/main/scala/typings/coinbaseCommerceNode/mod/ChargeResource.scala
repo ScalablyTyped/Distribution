@@ -140,7 +140,7 @@ object ChargeResource {
     
     inline def setPayments(value: js.Array[Block]): Self = StObject.set(x, "payments", value.asInstanceOf[js.Any])
     
-    inline def setPaymentsVarargs(value: Block*): Self = StObject.set(x, "payments", js.Array(value :_*))
+    inline def setPaymentsVarargs(value: Block*): Self = StObject.set(x, "payments", js.Array(value*))
     
     inline def setPricing(value: Pricing): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
     
@@ -148,6 +148,6 @@ object ChargeResource {
     
     inline def setTimeline(value: js.Array[Context]): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     
-    inline def setTimelineVarargs(value: Context*): Self = StObject.set(x, "timeline", js.Array(value :_*))
+    inline def setTimelineVarargs(value: Context*): Self = StObject.set(x, "timeline", js.Array(value*))
   }
 }

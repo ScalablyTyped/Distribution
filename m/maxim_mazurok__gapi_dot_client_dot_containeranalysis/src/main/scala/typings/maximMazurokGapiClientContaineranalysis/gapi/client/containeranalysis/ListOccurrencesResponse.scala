@@ -29,6 +29,6 @@ object ListOccurrencesResponse {
     
     inline def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
     
-    inline def setOccurrencesVarargs(value: Occurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
+    inline def setOccurrencesVarargs(value: Occurrence*): Self = StObject.set(x, "occurrences", js.Array(value*))
   }
 }

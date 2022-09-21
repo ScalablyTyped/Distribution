@@ -1,24 +1,24 @@
 
 # Scala.js typings for dom-serializer
 
-Typings are for version 0.2.2
+Typings are for version 2.0.0
 
 ## Library description:
-render dom nodes to string
+render domhandler DOM nodes to a string
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | dom-serializer |
 | Keywords           | html, xml, render |
 | # releases         | 9 |
-| # dependents       | 91 |
-| # downloads        | 645999434 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.18946514E8 |
+| # stars            | 70.0 |
 
 ## Links
-- [Homepage](https://github.com/cheeriojs/dom-renderer#readme)
-- [Bugs](https://github.com/cheeriojs/dom-renderer/issues)
-- [Repository](https://github.com/cheeriojs/dom-renderer)
+- [Homepage](https://github.com/cheeriojs/dom-serializer#readme)
+- [Bugs](https://github.com/cheeriojs/dom-serializer/issues)
+- [Repository](https://github.com/cheeriojs/dom-serializer)
 - [Npm](https://www.npmjs.com/package/dom-serializer)
     
 

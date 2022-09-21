@@ -45,7 +45,7 @@ object SegmentDimensionFilter {
     
     inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value*))
     
     inline def setMaxComparisonValue(value: String): Self = StObject.set(x, "maxComparisonValue", value.asInstanceOf[js.Any])
     

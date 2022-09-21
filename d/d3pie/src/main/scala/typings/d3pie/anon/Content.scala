@@ -29,7 +29,7 @@ object Content {
     
     inline def setContent(value: js.Array[Label]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentVarargs(value: Label*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: Label*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setSmallSegmentGrouping(value: Color): Self = StObject.set(x, "smallSegmentGrouping", value.asInstanceOf[js.Any])
     

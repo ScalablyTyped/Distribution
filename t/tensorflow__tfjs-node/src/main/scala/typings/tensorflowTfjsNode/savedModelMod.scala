@@ -20,12 +20,12 @@ object savedModelMod {
   
   @JSImport("@tensorflow/tfjs-node/dist/saved_model", "TFSavedModel")
   @js.native
-  class TFSavedModel protected ()
+  open class TFSavedModel protected ()
     extends StObject
        with InferenceModel {
     def this(sessionId: Double, jsid: Double, signature: SignatureDefEntry, backend: NodeJSKernelBackend) = this()
     
-    /* private */ var backend: js.Any = js.native
+    /* private */ var backend: Any = js.native
     
     /**
       * Delete the SavedModel from nodeBackend and delete corresponding session in
@@ -35,13 +35,13 @@ object savedModelMod {
       */
     def dispose(): Unit = js.native
     
-    /* private */ var disposed: js.Any = js.native
+    /* private */ var disposed: Any = js.native
     
-    /* private */ var jsid: js.Any = js.native
+    /* private */ var jsid: Any = js.native
     
     val outputNodeNames: StringDictionary[String] = js.native
     
-    /* private */ var outputNodeNames_ : js.Any = js.native
+    /* private */ var outputNodeNames_ : Any = js.native
     
     def predict(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     /**
@@ -71,12 +71,12 @@ object savedModelMod {
     def predict(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     def predict(inputs: NamedTensorMap): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     
-    /* private */ var sessionId: js.Any = js.native
+    /* private */ var sessionId: Any = js.native
     
-    /* private */ var signature: js.Any = js.native
+    /* private */ var signature: Any = js.native
   }
   
-  inline def getEnumKeyFromValue(`object`: js.Any, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getEnumKeyFromValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getEnumKeyFromValue(`object`: Any, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getEnumKeyFromValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetaGraphsFromSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MetaGraph]]]
   
@@ -89,5 +89,5 @@ object savedModelMod {
   inline def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
   inline def loadSavedModel(path: String, tags: Unit, signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
   
-  inline def readSavedModelProto(path: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readSavedModelProto")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def readSavedModelProto(path: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readSavedModelProto")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

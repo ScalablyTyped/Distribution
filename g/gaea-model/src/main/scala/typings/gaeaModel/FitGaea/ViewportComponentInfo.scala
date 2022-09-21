@@ -35,7 +35,7 @@ object ViewportComponentInfo {
     
     inline def setLayoutChildsUndefined: Self = StObject.set(x, "layoutChilds", js.undefined)
     
-    inline def setLayoutChildsVarargs(value: String*): Self = StObject.set(x, "layoutChilds", js.Array(value :_*))
+    inline def setLayoutChildsVarargs(value: String*): Self = StObject.set(x, "layoutChilds", js.Array(value*))
     
     inline def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
     

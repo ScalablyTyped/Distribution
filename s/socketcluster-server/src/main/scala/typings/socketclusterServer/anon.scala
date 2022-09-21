@@ -1,6 +1,7 @@
 package typings.socketclusterServer
 
-import typings.ws.mod.^
+import typings.socketclusterServer.serversocketMod.^
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ object anon {
       
       inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
     }
   }
   
@@ -90,15 +91,15 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.Any
+    var data: Any
     
-    var target: ^
+    var target: WebSocket
     
     var `type`: String
   }
   object Data {
     
-    inline def apply(data: js.Any, target: ^, `type`: String): Data = {
+    inline def apply(data: Any, target: WebSocket, `type`: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
@@ -106,9 +107,9 @@ object anon {
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: ^): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -116,18 +117,18 @@ object anon {
   
   trait Error extends StObject {
     
-    var error: typings.std.Error
+    var error: js.Error
   }
   object Error {
     
-    inline def apply(error: typings.std.Error): Error = {
+    inline def apply(error: js.Error): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,6 +166,23 @@ object anon {
     }
   }
   
+  trait Server extends StObject {
+    
+    var Server: typings.ws.mod.Server[WebSocket]
+  }
+  object Server {
+    
+    inline def apply(Server: typings.ws.mod.Server[WebSocket]): Server = {
+      val __obj = js.Dynamic.literal(Server = Server.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Server]
+    }
+    
+    extension [Self <: Server](x: Self) {
+      
+      inline def setServer(value: typings.ws.mod.Server[WebSocket]): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait SignedAuthToken extends StObject {
     
     var signedAuthToken: String
@@ -184,35 +202,35 @@ object anon {
   
   trait Socket extends StObject {
     
-    var socket: typings.socketclusterServer.serversocketMod.^
+    var socket: ^
   }
   object Socket {
     
-    inline def apply(socket: typings.socketclusterServer.serversocketMod.^): Socket = {
+    inline def apply(socket: ^): Socket = {
       val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[Socket]
     }
     
     extension [Self <: Socket](x: Self) {
       
-      inline def setSocket(value: typings.socketclusterServer.serversocketMod.^): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: ^): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   
   trait Warning extends StObject {
     
-    var warning: typings.std.Error
+    var warning: js.Error
   }
   object Warning {
     
-    inline def apply(warning: typings.std.Error): Warning = {
+    inline def apply(warning: js.Error): Warning = {
       val __obj = js.Dynamic.literal(warning = warning.asInstanceOf[js.Any])
       __obj.asInstanceOf[Warning]
     }
     
     extension [Self <: Warning](x: Self) {
       
-      inline def setWarning(value: typings.std.Error): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: js.Error): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
 }

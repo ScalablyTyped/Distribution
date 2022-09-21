@@ -16,7 +16,7 @@ abstract class ComponentRef[C] () extends StObject {
   /**
     * The type of this component (as created by a `ComponentFactory` class).
     */
-  def componentType: Type[js.Any] = js.native
+  def componentType: Type[Any] = js.native
   
   /**
     * Destroys the component instance and all of the data structures associated with it.
@@ -42,7 +42,7 @@ abstract class ComponentRef[C] () extends StObject {
   /**
     * The host or anchor [element](guide/glossary#element) for this component instance.
     */
-  def location: ElementRef[js.Any] = js.native
+  def location: ElementRef[Any] = js.native
   
   /**
     * A lifecycle hook that provides additional developer-defined cleanup
@@ -51,4 +51,14 @@ abstract class ComponentRef[C] () extends StObject {
     * associated with this component. Called when the `destroy()` method is invoked.
     */
   def onDestroy(callback: js.Function): Unit = js.native
+  
+  /**
+    * Updates a specified input name to a new value. Using this method will properly mark for check
+    * component using the `OnPush` change detection strategy. It will also assure that the
+    * `OnChanges` lifecycle hook runs when a dynamically created component is change-detected.
+    *
+    * @param name The name of an input.
+    * @param value The new value of an input.
+    */
+  def setInput(name: String, value: Any): Unit = js.native
 }

@@ -54,13 +54,13 @@ object mod {
       
       inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
     }
   }
 }

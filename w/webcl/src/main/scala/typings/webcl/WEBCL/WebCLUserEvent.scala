@@ -14,7 +14,7 @@ trait WebCLUserEvent
 object WebCLUserEvent {
   
   inline def apply(
-    getInfo: EventInfo => js.Any,
+    getInfo: EventInfo => Any,
     getProfilingInfo: ProfilingInfo => Double,
     release: () => Unit,
     setCallback: (CommandExecutionStatus, WebCLCallback) => Unit,

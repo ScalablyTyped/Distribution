@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
   *
+  * @remarks
   * [Api set: ExcelApi 1.3]
   */
 @js.native
@@ -27,6 +27,7 @@ trait PivotTableCollection
   /**
     * Add a PivotTable based on the specified source data and insert it at the top-left cell of the destination range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
     * @param name The name of the new PivotTable.
@@ -45,6 +46,7 @@ trait PivotTableCollection
   /**
     * Gets the number of pivot tables in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -52,6 +54,7 @@ trait PivotTableCollection
   /**
     * Gets a PivotTable by name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     *
     * @param name Name of the PivotTable to be retrieved.
@@ -59,8 +62,10 @@ trait PivotTableCollection
   def getItem(name: String): PivotTable = js.native
   
   /**
-    * Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
+    * Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
     * @param name Name of the PivotTable to be retrieved.
@@ -84,6 +89,7 @@ trait PivotTableCollection
   /**
     * Refreshes all the pivot tables in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   def refreshAll(): Unit = js.native

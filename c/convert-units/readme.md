@@ -10,10 +10,10 @@ Convert between quantities in different units
 | ------------------ | :-------------: |
 | Full name          | convert-units |
 | Keywords           | metric, imperial, convert, ratio, fraction |
-| # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 1210003 |
-| # stars            | 10 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 412020.0 |
+| # stars            | 623.0 |
 
 ## Links
 - [Homepage](https://github.com/ben-ng/convert-units#readme)

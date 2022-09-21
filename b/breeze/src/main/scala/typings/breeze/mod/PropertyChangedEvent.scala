@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("breeze", "PropertyChangedEvent")
 @js.native
-class PropertyChangedEvent ()
+open class PropertyChangedEvent ()
   extends StObject
      with typings.breeze.breeze.PropertyChangedEvent

@@ -12,7 +12,7 @@ trait IColumnProperties extends StObject {
   
   var auto_increment: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   var length: js.UndefOr[Double | Null] = js.undefined
   
@@ -39,7 +39,7 @@ object IColumnProperties {
     
     inline def setAuto_incrementUndefined: Self = StObject.set(x, "auto_increment", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     

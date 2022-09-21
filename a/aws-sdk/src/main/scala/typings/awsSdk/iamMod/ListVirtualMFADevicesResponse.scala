@@ -40,6 +40,6 @@ object ListVirtualMFADevicesResponse {
     
     inline def setVirtualMFADevices(value: virtualMFADeviceListType): Self = StObject.set(x, "VirtualMFADevices", value.asInstanceOf[js.Any])
     
-    inline def setVirtualMFADevicesVarargs(value: VirtualMFADevice*): Self = StObject.set(x, "VirtualMFADevices", js.Array(value :_*))
+    inline def setVirtualMFADevicesVarargs(value: VirtualMFADevice*): Self = StObject.set(x, "VirtualMFADevices", js.Array(value*))
   }
 }

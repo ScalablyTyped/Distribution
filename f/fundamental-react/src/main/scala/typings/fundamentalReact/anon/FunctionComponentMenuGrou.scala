@@ -2,7 +2,6 @@ package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactStrings.MenuDotGroup
 import typings.fundamentalReact.menuMod.MenuGroupProps
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -13,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponentMenuGrou extends StObject {
   
-  def apply(props: PropsWithChildren[MenuGroupProps]): ReactElement | Null = js.native
-  def apply(props: PropsWithChildren[MenuGroupProps], context: js.Any): ReactElement | Null = js.native
+  def apply(props: MenuGroupProps): ReactElement | Null = js.native
+  def apply(props: MenuGroupProps, context: Any): ReactElement | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
   var defaultProps: js.UndefOr[PartialMenuGroupProps] = js.native
   

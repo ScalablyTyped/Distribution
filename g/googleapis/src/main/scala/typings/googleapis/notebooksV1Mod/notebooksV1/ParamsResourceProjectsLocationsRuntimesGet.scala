@@ -1,0 +1,29 @@
+package typings.googleapis.notebooksV1Mod.notebooksV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParamsResourceProjectsLocationsRuntimesGet
+  extends StObject
+     with StandardParameters {
+  
+  /**
+    * Required. Format: `projects/{project_id\}/locations/{location\}/runtimes/{runtime_id\}`
+    */
+  var name: js.UndefOr[String] = js.undefined
+}
+object ParamsResourceProjectsLocationsRuntimesGet {
+  
+  inline def apply(): ParamsResourceProjectsLocationsRuntimesGet = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ParamsResourceProjectsLocationsRuntimesGet]
+  }
+  
+  extension [Self <: ParamsResourceProjectsLocationsRuntimesGet](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
+}

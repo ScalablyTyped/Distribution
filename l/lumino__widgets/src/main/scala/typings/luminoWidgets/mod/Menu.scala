@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@lumino/widgets", "Menu")
 @js.native
-class Menu protected ()
+open class Menu protected ()
   extends typings.luminoWidgets.menuMod.Menu {
   /**
     * Construct a new menu.
@@ -26,10 +26,7 @@ object Menu {
     */
   @JSImport("@lumino/widgets", "Menu.Renderer")
   @js.native
-  /**
-    * Construct a new renderer.
-    */
-  class Renderer ()
+  open class Renderer ()
     extends typings.luminoWidgets.menuMod.Menu.Renderer
   
   /**

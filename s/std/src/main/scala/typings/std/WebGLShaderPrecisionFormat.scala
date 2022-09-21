@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Part of the WebGL API and represents the information returned by calling the WebGLRenderingContext.getShaderPrecisionFormat() method. */
 trait WebGLShaderPrecisionFormat extends StObject {
   
+  /* standard dom */
   val precision: GLint
   
+  /* standard dom */
   val rangeMax: GLint
   
+  /* standard dom */
   val rangeMin: GLint
 }
 object WebGLShaderPrecisionFormat {

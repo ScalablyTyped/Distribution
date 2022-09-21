@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("scrollbooster", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ScrollBooster {
     def this(options: ScrollBoosterOptions) = this()

@@ -27,18 +27,18 @@ object Add {
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    inline def setAddVarargs(value: AddOnAddRequest*): Self = StObject.set(x, "add", js.Array(value :_*))
+    inline def setAddVarargs(value: AddOnAddRequest*): Self = StObject.set(x, "add", js.Array(value*))
     
     inline def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
+    inline def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value*))
     
     inline def setUpdate(value: js.Array[AddOnUpdateRequest]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    inline def setUpdateVarargs(value: AddOnUpdateRequest*): Self = StObject.set(x, "update", js.Array(value :_*))
+    inline def setUpdateVarargs(value: AddOnUpdateRequest*): Self = StObject.set(x, "update", js.Array(value*))
   }
 }

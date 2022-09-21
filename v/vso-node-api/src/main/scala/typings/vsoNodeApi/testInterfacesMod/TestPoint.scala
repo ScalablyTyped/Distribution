@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +33,7 @@ trait TestPoint extends StObject {
   
   var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   var outcome: String
   
@@ -50,7 +49,7 @@ trait TestPoint extends StObject {
   
   var url: String
   
-  var workItemProperties: js.Array[js.Any]
+  var workItemProperties: js.Array[Any]
 }
 object TestPoint {
   
@@ -68,7 +67,7 @@ object TestPoint {
     lastRunBuildNumber: String,
     lastTestRun: ShallowReference,
     lastUpdatedBy: IdentityRef,
-    lastUpdatedDate: Date,
+    lastUpdatedDate: js.Date,
     outcome: String,
     revision: Double,
     state: String,
@@ -76,7 +75,7 @@ object TestPoint {
     testCase: WorkItemReference,
     testPlan: ShallowReference,
     url: String,
-    workItemProperties: js.Array[js.Any]
+    workItemProperties: js.Array[Any]
   ): TestPoint = {
     val __obj = js.Dynamic.literal(assignedTo = assignedTo.asInstanceOf[js.Any], automated = automated.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], failureType = failureType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastResolutionStateId = lastResolutionStateId.asInstanceOf[js.Any], lastResult = lastResult.asInstanceOf[js.Any], lastResultDetails = lastResultDetails.asInstanceOf[js.Any], lastResultState = lastResultState.asInstanceOf[js.Any], lastRunBuildNumber = lastRunBuildNumber.asInstanceOf[js.Any], lastTestRun = lastTestRun.asInstanceOf[js.Any], lastUpdatedBy = lastUpdatedBy.asInstanceOf[js.Any], lastUpdatedDate = lastUpdatedDate.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any], testCase = testCase.asInstanceOf[js.Any], testPlan = testPlan.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], workItemProperties = workItemProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestPoint]
@@ -110,7 +109,7 @@ object TestPoint {
     
     inline def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
@@ -126,8 +125,8 @@ object TestPoint {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemProperties(value: js.Array[js.Any]): Self = StObject.set(x, "workItemProperties", value.asInstanceOf[js.Any])
+    inline def setWorkItemProperties(value: js.Array[Any]): Self = StObject.set(x, "workItemProperties", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemPropertiesVarargs(value: js.Any*): Self = StObject.set(x, "workItemProperties", js.Array(value :_*))
+    inline def setWorkItemPropertiesVarargs(value: Any*): Self = StObject.set(x, "workItemProperties", js.Array(value*))
   }
 }

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionImagePicker")
 @js.native
-class QuestionImagePicker protected () extends QuestionImagePickerModel {
+open class QuestionImagePicker protected () extends QuestionImagePickerModel {
   def this(name: String) = this()
+  
+  var _implementor: QuestionImagePickerImplementor = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait State extends StObject {
   
-  var state: js.UndefOr[PartialStateNavigationSta] = js.undefined
+  var state: js.UndefOr[ReadonlyPartialOmitReadon] = js.undefined
 }
 object State {
   
@@ -17,7 +17,7 @@ object State {
   
   extension [Self <: State](x: Self) {
     
-    inline def setState(value: PartialStateNavigationSta): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ReadonlyPartialOmitReadon): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

@@ -27,6 +27,11 @@ trait ConnectionInfoSummary extends StObject {
   var errorNumber: Double
   
   /**
+    * Indicates whether the server version is supported by ADS. The default value is true. If the value is false, ADS will show a warning message.
+    */
+  var isSupportedVersion: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * any diagnostic messages return from the service host.
     */
   var messages: String
@@ -40,6 +45,11 @@ trait ConnectionInfoSummary extends StObject {
     * Information about the connected server.
     */
   var serverInfo: ServerInfo
+  
+  /**
+    * The messages that will be appended to the Azure Data Studio's warning message about unsupported versions.
+    */
+  var unsupportedVersionMessage: js.UndefOr[String] = js.undefined
 }
 object ConnectionInfoSummary {
   
@@ -66,10 +76,18 @@ object ConnectionInfoSummary {
     
     inline def setErrorNumber(value: Double): Self = StObject.set(x, "errorNumber", value.asInstanceOf[js.Any])
     
+    inline def setIsSupportedVersion(value: Boolean): Self = StObject.set(x, "isSupportedVersion", value.asInstanceOf[js.Any])
+    
+    inline def setIsSupportedVersionUndefined: Self = StObject.set(x, "isSupportedVersion", js.undefined)
+    
     inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
     inline def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
+    
+    inline def setUnsupportedVersionMessage(value: String): Self = StObject.set(x, "unsupportedVersionMessage", value.asInstanceOf[js.Any])
+    
+    inline def setUnsupportedVersionMessageUndefined: Self = StObject.set(x, "unsupportedVersionMessage", js.undefined)
   }
 }

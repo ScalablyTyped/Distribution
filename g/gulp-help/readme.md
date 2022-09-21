@@ -1,6 +1,7 @@
 
 # Scala.js typings for gulp-help
 
+Typings are for version 1.6
 
 ## Library description:
 Adds a default help task to gulp and provides the ability to add custom help messages to your gulp tasks
@@ -9,10 +10,10 @@ Adds a default help task to gulp and provides the ability to add custom help mes
 | ------------------ | :-------------: |
 | Full name          | gulp-help |
 | Keywords           | gulp, help, tasks, list, gulpfriendly |
-| # releases         | 0 |
-| # dependents       | 95 |
-| # downloads        | 2304654 |
-| # stars            | 24 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 90469.0 |
+| # stars            | 127.0 |
 
 ## Links
 - [Homepage](https://github.com/chmontgomery/gulp-help#readme)

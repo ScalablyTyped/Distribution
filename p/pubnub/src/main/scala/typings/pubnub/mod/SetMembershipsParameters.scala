@@ -25,7 +25,7 @@ object SetMembershipsParameters {
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: (String | SetCustom[Custom])*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: (String | SetCustom[Custom])*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     

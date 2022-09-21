@@ -7,25 +7,24 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.transactionPbMod.TransactionArgument.ArgType
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionArgument")
 @js.native
-class TransactionArgument () extends Message {
+open class TransactionArgument () extends Message {
   
-  def getData(): Uint8Array | String = js.native
+  def getData(): js.typedarray.Uint8Array | String = js.native
   
   def getData_asB64(): String = js.native
   
-  def getData_asU8(): Uint8Array = js.native
+  def getData_asU8(): js.typedarray.Uint8Array = js.native
   
   def getType(): ArgType = js.native
   
   def setData(value: String): Unit = js.native
-  def setData(value: Uint8Array): Unit = js.native
+  def setData(value: js.typedarray.Uint8Array): Unit = js.native
   
   def setType(value: ArgType): Unit = js.native
 }
@@ -70,7 +69,7 @@ object TransactionArgument {
     /* 0 */ val U64: typings.libraCore.transactionPbMod.TransactionArgument.ArgType.U64 & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): TransactionArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionArgument]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): TransactionArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionArgument]
   
   inline def deserializeBinaryFromReader(message: TransactionArgument, reader: BinaryReader): TransactionArgument = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionArgument]
   
@@ -91,13 +90,13 @@ object TransactionArgument {
   
   trait AsObject extends StObject {
     
-    var data: Uint8Array | String
+    var data: js.typedarray.Uint8Array | String
     
     var `type`: ArgType
   }
   object AsObject {
     
-    inline def apply(data: Uint8Array | String, `type`: ArgType): AsObject = {
+    inline def apply(data: js.typedarray.Uint8Array | String, `type`: ArgType): AsObject = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
@@ -105,7 +104,7 @@ object TransactionArgument {
     
     extension [Self <: AsObject](x: Self) {
       
-      inline def setData(value: Uint8Array | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setType(value: ArgType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

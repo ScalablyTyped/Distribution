@@ -21,8 +21,7 @@ import typings.jimpCore.jimpCoreNumbers.`32`
 import typings.jimpCore.jimpCoreNumbers.`3`
 import typings.jimpCore.jimpCoreNumbers.`4`
 import typings.jimpCore.jimpCoreNumbers.`8`
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -82,11 +81,11 @@ object jimpMod {
     
     def distanceFromHash(hash: String): Double = js.native
     
-    def getBase64(mime: String, cb: GenericCallback[String, js.Any, this.type]): this.type = js.native
+    def getBase64(mime: String, cb: GenericCallback[String, Any, this.type]): this.type = js.native
     
     def getBase64Async(mime: String): js.Promise[String] = js.native
     
-    def getBuffer(mime: String, cb: GenericCallback[Buffer, js.Any, js.Any]): this.type = js.native
+    def getBuffer(mime: String, cb: GenericCallback[Buffer, Any, Any]): this.type = js.native
     
     def getBufferAsync(mime: String): js.Promise[Buffer] = js.native
     
@@ -97,15 +96,15 @@ object jimpMod {
     def getMIME(): String = js.native
     
     def getPixelColor(x: Double, y: Double): Double = js.native
-    def getPixelColor(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
+    def getPixelColor(x: Double, y: Double, cb: GenericCallback[Double, Any, this.type]): Double = js.native
     
     def getPixelColour(x: Double, y: Double): Double = js.native
-    def getPixelColour(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
+    def getPixelColour(x: Double, y: Double, cb: GenericCallback[Double, Any, this.type]): Double = js.native
     
     def getPixelIndex(x: Double, y: Double): Double = js.native
-    def getPixelIndex(x: Double, y: Double, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
+    def getPixelIndex(x: Double, y: Double, cb: GenericCallback[Double, Any, this.type]): Double = js.native
     def getPixelIndex(x: Double, y: Double, edgeHandling: String): Double = js.native
-    def getPixelIndex(x: Double, y: Double, edgeHandling: String, cb: GenericCallback[Double, js.Any, this.type]): Double = js.native
+    def getPixelIndex(x: Double, y: Double, edgeHandling: String, cb: GenericCallback[Double, Any, this.type]): Double = js.native
     
     def getWidth(): Double = js.native
     
@@ -113,15 +112,15 @@ object jimpMod {
     
     def hash(): String = js.native
     def hash(base: Double): String = js.native
-    def hash(base: Double, cb: GenericCallback[String, js.Any, this.type]): String = js.native
-    def hash(base: Null, cb: GenericCallback[String, js.Any, this.type]): String = js.native
-    def hash(base: Unit, cb: GenericCallback[String, js.Any, this.type]): String = js.native
-    def hash(cb: GenericCallback[String, js.Any, this.type]): String = js.native
+    def hash(base: Double, cb: GenericCallback[String, Any, this.type]): String = js.native
+    def hash(base: Null, cb: GenericCallback[String, Any, this.type]): String = js.native
+    def hash(base: Unit, cb: GenericCallback[String, Any, this.type]): String = js.native
+    def hash(cb: GenericCallback[String, Any, this.type]): String = js.native
     
     def inspect(): String = js.native
     
     // Methods
-    def on[T /* <: ListenableName */](event: T, cb: js.Function1[/* data */ ListenerData[T], js.Any]): js.Any = js.native
+    def on[T /* <: ListenableName */](event: T, cb: js.Function1[/* data */ ListenerData[T], Any]): Any = js.native
     
     def parseBitmap(data: Buffer): Unit = js.native
     def parseBitmap(data: Buffer, path: String): Unit = js.native
@@ -137,14 +136,14 @@ object jimpMod {
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any]
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, Any]
     ): this.type = js.native
     def scan(
       x: Double,
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any],
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, Any],
       cb: ImageCallback[this.type]
     ): this.type = js.native
     
@@ -155,14 +154,14 @@ object jimpMod {
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any]
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, Any]
     ): this.type = js.native
     def scanQuiet(
       x: Double,
       y: Double,
       w: Double,
       h: Double,
-      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, js.Any],
+      f: js.ThisFunction3[/* this */ this.type, /* x */ Double, /* y */ Double, /* idx */ Double, Any],
       cb: ImageCallback[this.type]
     ): this.type = js.native
     
@@ -184,7 +183,7 @@ object jimpMod {
        with // Constructors
   // For custom constructors when using Jimp.appendConstructorOption
   Instantiable1[
-          (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ Jimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
+          (/* args (repeated) */ Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ Jimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
           /* import warning: importer.ImportType#apply Failed type conversion: @jimp/core.@jimp/core/types/jimp.JimpConstructors['prototype'] */ js.Any
         ]
        with Instantiable2[
@@ -264,15 +263,15 @@ object jimpMod {
       * it's not possible RN:
       * https://github.com/microsoft/TypeScript/issues/26113
       */
-    def appendConstructorOption[Args /* <: js.Array[js.Any] */, J /* <: Jimp */](
+    def appendConstructorOption[Args /* <: js.Array[Any] */, J /* <: Jimp */](
       name: String,
-      test: js.Function1[/* repeated */ js.Any, Boolean],
+      test: js.Function1[/* repeated */ Any, Boolean],
       run: js.ThisFunction3[
           /* this */ J, 
-          /* resolve */ js.Function1[/* jimp */ js.UndefOr[J], js.Any], 
-          /* reject */ js.Function1[/* reason */ Error, js.Any], 
-          /* repeated */ js.Any, 
-          js.Any
+          /* resolve */ js.Function1[/* jimp */ js.UndefOr[J], Any], 
+          /* reject */ js.Function1[/* reason */ js.Error, Any], 
+          /* repeated */ Any, 
+          Any
         ]
     ): Unit = js.native
     
@@ -312,7 +311,7 @@ object jimpMod {
     def distance(img1: Jimp, img2: Jimp): Double = js.native
     
     def intToRGBA(i: Double): RGBA = js.native
-    def intToRGBA(i: Double, cb: GenericCallback[RGBA, js.Any, js.Any]): RGBA = js.native
+    def intToRGBA(i: Double, cb: GenericCallback[RGBA, Any, Any]): RGBA = js.native
     
     def limit255(n: Double): Double = js.native
     
@@ -404,7 +403,7 @@ object jimpMod {
       a: Double,
       cb: GenericCallback[
           Double, 
-          js.Any, 
+          Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: this['prototype'] */ js.Any
         ]
     ): Double = js.native

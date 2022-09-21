@@ -12,15 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChangesResource extends StObject {
   
-  /** Atomically update the ResourceRecordSet collection. */
+  /** Atomically updates the ResourceRecordSet collection. */
   def create(request: Accesstoken): Request[Change] = js.native
   def create(request: Alt, body: Change): Request[Change] = js.native
   
-  /** Fetch the representation of an existing Change. */
+  /** Fetches the representation of an existing Change. */
   def get(): Request[Change] = js.native
   def get(request: Callback): Request[Change] = js.native
   
-  /** Enumerate Changes to a ResourceRecordSet collection. */
+  /** Enumerates Changes to a ResourceRecordSet collection. */
   def list(): Request[ChangesListResponse] = js.native
   def list(request: Fields): Request[ChangesListResponse] = js.native
 }

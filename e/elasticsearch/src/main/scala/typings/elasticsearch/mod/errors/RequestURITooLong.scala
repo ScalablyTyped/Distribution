@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.RequestURITooLong")
 @js.native
-class RequestURITooLong () extends Abstract
+open class RequestURITooLong () extends Abstract

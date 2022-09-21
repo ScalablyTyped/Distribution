@@ -30,7 +30,7 @@ object X3DDefaultSetter {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     set3DSettingsToDefault: () => Unit,
     setDefaultIllumination: () => Unit,

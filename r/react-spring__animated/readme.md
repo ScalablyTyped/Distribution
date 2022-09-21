@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-spring__animated
 
-Typings are for version 9.0.0-rc.3
+Typings are for version 9.5.4
 
 ## Library description:
 Animated component props for React
@@ -11,12 +11,14 @@ Animated component props for React
 | Full name          | @react-spring/animated |
 | Keywords           | animated, animation, hooks, motion, react, react-native, spring, typescript, velocity |
 | # releases         | 51 |
-| # dependents       | 10 |
-| # downloads        | 1631680 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3425763.6666666665 |
+| # stars            | 24014.0 |
 
 ## Links
-- [Bugs](https://github.com/react-spring/react-spring/issues)
+- [Homepage](https://github.com/pmndrs/react-spring#readme)
+- [Bugs](https://github.com/pmndrs/react-spring/issues)
+- [Repository](https://github.com/pmndrs/react-spring)
 - [Npm](https://www.npmjs.com/package/%40react-spring%2Fanimated)
     
 

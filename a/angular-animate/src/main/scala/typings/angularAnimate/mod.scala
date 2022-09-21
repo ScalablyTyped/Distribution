@@ -5,7 +5,6 @@ import typings.angular.JQuery
 import typings.angular.mod.IPromise
 import typings.angular.mod.global.Function
 import typings.angularAnimate.mod.angularAugmentingMod.animate.IAnimateFactory
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object mod extends Shortcut {
     trait IModule extends StObject {
       
       def animation(name: String, animationFactory: IAnimateFactory): IModule = js.native
-      def animation(name: String, inlineAnnotatedFunction: js.Array[js.Any]): IModule = js.native
+      def animation(name: String, inlineAnnotatedFunction: js.Array[Any]): IModule = js.native
       def animation(`object`: js.Object): IModule = js.native
     }
     
@@ -45,7 +44,7 @@ object mod extends Shortcut {
                   /* addedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -56,7 +55,7 @@ object mod extends Shortcut {
                   /* toStyles */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -66,7 +65,7 @@ object mod extends Shortcut {
                   /* addedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -76,7 +75,7 @@ object mod extends Shortcut {
                   /* removedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -87,7 +86,7 @@ object mod extends Shortcut {
                   /* removedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -96,7 +95,7 @@ object mod extends Shortcut {
                   /* element */ JQuery, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -105,7 +104,7 @@ object mod extends Shortcut {
                   /* element */ JQuery, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -114,7 +113,7 @@ object mod extends Shortcut {
                   /* element */ JQuery, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -123,7 +122,7 @@ object mod extends Shortcut {
                   /* element */ JQuery, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -133,7 +132,7 @@ object mod extends Shortcut {
                   /* removedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -144,7 +143,7 @@ object mod extends Shortcut {
                   /* removedClasses */ String, 
                   /* doneFunction */ Function, 
                   /* options */ IAnimationOptions, 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
       }
@@ -158,67 +157,59 @@ object mod extends Shortcut {
         extension [Self <: IAnimateCallbackObject](x: Self) {
           
           inline def setAddClass(
-            value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+            value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any
           ): Self = StObject.set(x, "addClass", js.Any.fromFunction4(value))
           
           inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
           
           inline def setAnimate(
-            value: (/* element */ JQuery, /* fromStyles */ String, /* toStyles */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+            value: (/* element */ JQuery, /* fromStyles */ String, /* toStyles */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any
           ): Self = StObject.set(x, "animate", js.Any.fromFunction5(value))
           
           inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
           
           inline def setBeforeAddClass(
-            value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+            value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any
           ): Self = StObject.set(x, "beforeAddClass", js.Any.fromFunction4(value))
           
           inline def setBeforeAddClassUndefined: Self = StObject.set(x, "beforeAddClass", js.undefined)
           
           inline def setBeforeRemoveClass(
-            value: (/* element */ JQuery, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+            value: (/* element */ JQuery, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any
           ): Self = StObject.set(x, "beforeRemoveClass", js.Any.fromFunction4(value))
           
           inline def setBeforeRemoveClassUndefined: Self = StObject.set(x, "beforeRemoveClass", js.undefined)
           
           inline def setBeforeSetClass(
-            value: (/* element */ JQuery, /* addedClasses */ String, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+            value: (/* element */ JQuery, /* addedClasses */ String, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any
           ): Self = StObject.set(x, "beforeSetClass", js.Any.fromFunction5(value))
           
           inline def setBeforeSetClassUndefined: Self = StObject.set(x, "beforeSetClass", js.undefined)
           
-          inline def setEnter(
-            value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
-          ): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
+          inline def setEnter(value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
           
           inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
           
-          inline def setEventFn(
-            value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
-          ): Self = StObject.set(x, "eventFn", js.Any.fromFunction3(value))
+          inline def setEventFn(value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any): Self = StObject.set(x, "eventFn", js.Any.fromFunction3(value))
           
           inline def setEventFnUndefined: Self = StObject.set(x, "eventFn", js.undefined)
           
-          inline def setLeave(
-            value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
-          ): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
+          inline def setLeave(value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any): Self = StObject.set(x, "leave", js.Any.fromFunction3(value))
           
           inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
           
-          inline def setMove(
-            value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
-          ): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
+          inline def setMove(value: (/* element */ JQuery, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
           
           inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
           
           inline def setRemoveClass(
-            value: (/* element */ JQuery, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+            value: (/* element */ JQuery, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any
           ): Self = StObject.set(x, "removeClass", js.Any.fromFunction4(value))
           
           inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
           
           inline def setSetClass(
-            value: (/* element */ JQuery, /* addedClasses */ String, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => js.Any
+            value: (/* element */ JQuery, /* addedClasses */ String, /* removedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any
           ): Self = StObject.set(x, "setClass", js.Any.fromFunction5(value))
           
           inline def setSetClassUndefined: Self = StObject.set(x, "setClass", js.undefined)
@@ -273,7 +264,7 @@ object mod extends Shortcut {
         */
       type IAnimateCssService = js.Function2[/* element */ JQuery, /* animateCssOptions */ IAnimationOptions, IAnimateCssRunner]
       
-      type IAnimateFactory = js.Function1[/* repeated */ js.Any, IAnimateCallbackObject]
+      type IAnimateFactory = js.Function1[/* repeated */ Any, IAnimateCallbackObject]
       
       /**
         * AnimateProvider
@@ -288,8 +279,8 @@ object mod extends Shortcut {
           * @param expression The className expression which will be checked against all animations.
           * @returns The current CSS className expression value. If null then there is no expression value.
           */
-        def classNameFilter(): RegExp = js.native
-        def classNameFilter(expression: RegExp): RegExp = js.native
+        def classNameFilter(): js.RegExp = js.native
+        def classNameFilter(expression: js.RegExp): js.RegExp = js.native
         
         /**
           * Registers a new injectable animation factory function.
@@ -329,10 +320,10 @@ object mod extends Shortcut {
           * @param options an optional collection of styles that will be picked up by the CSS transition/animation
           * @returns the animation callback promise
           */
-        def animate(element: JQuery, from: js.Any, to: js.Any): IAnimationPromise = js.native
-        def animate(element: JQuery, from: js.Any, to: js.Any, className: String): IAnimationPromise = js.native
-        def animate(element: JQuery, from: js.Any, to: js.Any, className: String, options: IAnimationOptions): IAnimationPromise = js.native
-        def animate(element: JQuery, from: js.Any, to: js.Any, className: Unit, options: IAnimationOptions): IAnimationPromise = js.native
+        def animate(element: JQuery, from: Any, to: Any): IAnimationPromise = js.native
+        def animate(element: JQuery, from: Any, to: Any, className: String): IAnimationPromise = js.native
+        def animate(element: JQuery, from: Any, to: Any, className: String, options: IAnimationOptions): IAnimationPromise = js.native
+        def animate(element: JQuery, from: Any, to: Any, className: Unit, options: IAnimationOptions): IAnimationPromise = js.native
         
         /**
           * Cancels the provided animation.
@@ -399,13 +390,13 @@ object mod extends Shortcut {
         def off(
           event: String,
           container: Unit,
-          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], js.Any]
+          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], Any]
         ): Unit = js.native
         def off(event: String, container: JQuery): Unit = js.native
         def off(
           event: String,
           container: JQuery,
-          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], js.Any]
+          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], Any]
         ): Unit = js.native
         
         /**
@@ -418,7 +409,7 @@ object mod extends Shortcut {
         def on(
           event: String,
           container: JQuery,
-          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], js.Any]
+          callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], Any]
         ): Unit = js.native
         
         /**

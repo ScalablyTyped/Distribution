@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.EntityStateSymbol")
 @js.native
-class EntityStateSymbol ()
+open class EntityStateSymbol ()
   extends StObject
      with typings.breeze.breeze.EntityStateSymbol {
   

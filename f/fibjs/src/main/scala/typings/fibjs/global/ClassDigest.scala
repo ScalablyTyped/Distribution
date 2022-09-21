@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_Digest")
 @js.native
-class ClassDigest ()
+open class ClassDigest ()
   extends StObject
      with typings.fibjs.ClassDigest

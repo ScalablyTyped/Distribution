@@ -9,11 +9,11 @@ trait RequestEnum extends StObject {
   
   var requestEnum: String
   
-  var result: Record[String, js.Any]
+  var result: Record[String, Any]
 }
 object RequestEnum {
   
-  inline def apply(requestEnum: String, result: Record[String, js.Any]): RequestEnum = {
+  inline def apply(requestEnum: String, result: Record[String, Any]): RequestEnum = {
     val __obj = js.Dynamic.literal(requestEnum = requestEnum.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestEnum]
   }
@@ -22,6 +22,6 @@ object RequestEnum {
     
     inline def setRequestEnum(value: String): Self = StObject.set(x, "requestEnum", value.asInstanceOf[js.Any])
     
-    inline def setResult(value: Record[String, js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Record[String, Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

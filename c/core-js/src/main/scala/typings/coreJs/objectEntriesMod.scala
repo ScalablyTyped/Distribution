@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object objectEntriesMod {
   
   /* was `typeof core.Object.entries` */
-  inline def apply(`object`: js.Any): Array[js.Any] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
+  inline def apply(`object`: Any): Array[Any] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[Array[Any]]
   
   @JSImport("core-js/fn/object/entries", JSImport.Namespace)
   @js.native

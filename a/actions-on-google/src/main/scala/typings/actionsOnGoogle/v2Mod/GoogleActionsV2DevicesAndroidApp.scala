@@ -34,6 +34,6 @@ object GoogleActionsV2DevicesAndroidApp {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: GoogleActionsV2DevicesAndroidAppVersionFilter*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: GoogleActionsV2DevicesAndroidAppVersionFilter*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

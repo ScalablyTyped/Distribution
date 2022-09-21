@@ -43,7 +43,7 @@ object AllowDirectories {
     
     inline def setFiletypeUndefined: Self = StObject.set(x, "filetype", js.undefined)
     
-    inline def setFiletypeVarargs(value: String*): Self = StObject.set(x, "filetype", js.Array(value :_*))
+    inline def setFiletypeVarargs(value: String*): Self = StObject.set(x, "filetype", js.Array(value*))
     
     inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     

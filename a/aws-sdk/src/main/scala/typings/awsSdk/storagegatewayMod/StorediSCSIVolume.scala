@@ -9,7 +9,7 @@ trait StorediSCSIVolume extends StObject {
   /**
     * The date the volume was created. Volumes created prior to March 28, 2017 don’t have this timestamp.
     */
-  var CreatedDate: js.UndefOr[typings.awsSdk.storagegatewayMod.CreatedDate] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.undefined
   
@@ -87,7 +87,7 @@ object StorediSCSIVolume {
   
   extension [Self <: StorediSCSIVolume](x: Self) {
     
-    inline def setCreatedDate(value: CreatedDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     

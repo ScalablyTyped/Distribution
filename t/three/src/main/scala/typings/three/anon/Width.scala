@@ -8,16 +8,12 @@ trait Width extends StObject {
   
   var height: Double
   
-  var heightSegments: Double
-  
   var width: Double
-  
-  var widthSegments: Double
 }
 object Width {
   
-  inline def apply(height: Double, heightSegments: Double, width: Double, widthSegments: Double): Width = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], heightSegments = heightSegments.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], widthSegments = widthSegments.asInstanceOf[js.Any])
+  inline def apply(height: Double, width: Double): Width = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Width]
   }
   
@@ -25,10 +21,6 @@ object Width {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
-    
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
   }
 }

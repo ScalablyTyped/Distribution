@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PubSubJS {
   
   @js.native
-  trait Base
+  trait Base[T, M]
     extends StObject
        with CountSubscriptions
        with ClearAllSubscriptions
        with GetSubscriptions
-       with Publish
-       with Subscribe
-       with Unsubscribe {
+       with Publish[T, M]
+       with Subscribe[T, M]
+       with Unsubscribe[T] {
     
     var name: String = js.native
     
@@ -25,88 +25,87 @@ object PubSubJS {
   trait ClearAllSubscriptions extends StObject {
     
     def clearAllSubscriptions(): Unit = js.native
-    def clearAllSubscriptions(token: js.Any): Unit = js.native
+    def clearAllSubscriptions(token: Token): Unit = js.native
   }
   
   trait CountSubscriptions extends StObject {
     
-    def countSubscriptions(token: js.Any): Double
+    def countSubscriptions(token: Token): Double
   }
   object CountSubscriptions {
     
-    inline def apply(countSubscriptions: js.Any => Double): CountSubscriptions = {
+    inline def apply(countSubscriptions: Token => Double): CountSubscriptions = {
       val __obj = js.Dynamic.literal(countSubscriptions = js.Any.fromFunction1(countSubscriptions))
       __obj.asInstanceOf[CountSubscriptions]
     }
     
     extension [Self <: CountSubscriptions](x: Self) {
       
-      inline def setCountSubscriptions(value: js.Any => Double): Self = StObject.set(x, "countSubscriptions", js.Any.fromFunction1(value))
+      inline def setCountSubscriptions(value: Token => Double): Self = StObject.set(x, "countSubscriptions", js.Any.fromFunction1(value))
     }
   }
   
   trait GetSubscriptions extends StObject {
     
-    def getSubscriptions(token: js.Any): js.Array[js.Any]
+    def getSubscriptions(token: Token): js.Array[Message]
   }
   object GetSubscriptions {
     
-    inline def apply(getSubscriptions: js.Any => js.Array[js.Any]): GetSubscriptions = {
+    inline def apply(getSubscriptions: Token => js.Array[Message]): GetSubscriptions = {
       val __obj = js.Dynamic.literal(getSubscriptions = js.Any.fromFunction1(getSubscriptions))
       __obj.asInstanceOf[GetSubscriptions]
     }
     
     extension [Self <: GetSubscriptions](x: Self) {
       
-      inline def setGetSubscriptions(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getSubscriptions", js.Any.fromFunction1(value))
+      inline def setGetSubscriptions(value: Token => js.Array[Message]): Self = StObject.set(x, "getSubscriptions", js.Any.fromFunction1(value))
     }
   }
   
+  type Message = String | js.Symbol
+  
   @js.native
-  trait Publish extends StObject {
+  trait Publish[T, M] extends StObject {
     
-    def publish(message: String): Boolean = js.native
-    def publish(message: String, data: js.Any): Boolean = js.native
+    def publish(message: M): Boolean = js.native
+    def publish(message: M, data: T): Boolean = js.native
     
-    def publishSync(message: String): Boolean = js.native
-    def publishSync(message: String, data: js.Any): Boolean = js.native
+    def publishSync(message: M): Boolean = js.native
+    def publishSync(message: M, data: T): Boolean = js.native
   }
   
-  trait Subscribe extends StObject {
+  trait Subscribe[T, M] extends StObject {
     
-    def subscribe(message: String, func: js.Function): String
+    def subscribe(message: M, func: SubscriptionListener[T]): Token
     
-    def subscribeOnce(message: String, func: js.Function): js.Any
+    def subscribeOnce(message: M, func: SubscriptionListener[T]): Base[T, M]
   }
   object Subscribe {
     
-    inline def apply(subscribe: (String, js.Function) => String, subscribeOnce: (String, js.Function) => js.Any): Subscribe = {
+    inline def apply[T, M](
+      subscribe: (M, SubscriptionListener[T]) => Token,
+      subscribeOnce: (M, SubscriptionListener[T]) => Base[T, M]
+    ): Subscribe[T, M] = {
       val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe), subscribeOnce = js.Any.fromFunction2(subscribeOnce))
-      __obj.asInstanceOf[Subscribe]
+      __obj.asInstanceOf[Subscribe[T, M]]
     }
     
-    extension [Self <: Subscribe](x: Self) {
+    extension [Self <: Subscribe[?, ?], T, M](x: Self & (Subscribe[T, M])) {
       
-      inline def setSubscribe(value: (String, js.Function) => String): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+      inline def setSubscribe(value: (M, SubscriptionListener[T]) => Token): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
       
-      inline def setSubscribeOnce(value: (String, js.Function) => js.Any): Self = StObject.set(x, "subscribeOnce", js.Any.fromFunction2(value))
+      inline def setSubscribeOnce(value: (M, SubscriptionListener[T]) => Base[T, M]): Self = StObject.set(x, "subscribeOnce", js.Any.fromFunction2(value))
     }
   }
   
-  trait Unsubscribe extends StObject {
+  type SubscriptionListener[T] = js.Function2[/* message */ String, /* data */ js.UndefOr[T], Unit]
+  
+  type Token = String
+  
+  @js.native
+  trait Unsubscribe[T] extends StObject {
     
-    def unsubscribe(tokenOrFunction: js.Any): js.Any
-  }
-  object Unsubscribe {
-    
-    inline def apply(unsubscribe: js.Any => js.Any): Unsubscribe = {
-      val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction1(unsubscribe))
-      __obj.asInstanceOf[Unsubscribe]
-    }
-    
-    extension [Self <: Unsubscribe](x: Self) {
-      
-      inline def setUnsubscribe(value: js.Any => js.Any): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
-    }
+    def unsubscribe(tokenOrFunction: SubscriptionListener[T]): Token | Boolean = js.native
+    def unsubscribe(tokenOrFunction: Token): Token | Boolean = js.native
   }
 }

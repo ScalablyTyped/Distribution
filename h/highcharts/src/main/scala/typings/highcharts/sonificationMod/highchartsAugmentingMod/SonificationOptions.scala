@@ -81,8 +81,8 @@ trait SonificationOptions extends StObject {
     * function receives the point as argument, and should return a numeric
     * value. The points with the lowest numeric values are then played
     * first, and the time between points will be proportional to the
-    * distance between the numeric values. This option can not be
-    * overridden per series.
+    * distance between the numeric values. This option cannot be overridden
+    * per series.
     */
   var pointPlayTime: String | js.Function
   
@@ -122,13 +122,13 @@ object SonificationOptions {
     
     inline def setEarconsUndefined: Self = StObject.set(x, "earcons", js.undefined)
     
-    inline def setEarconsVarargs(value: EarconConfiguration*): Self = StObject.set(x, "earcons", js.Array(value :_*))
+    inline def setEarconsVarargs(value: EarconConfiguration*): Self = StObject.set(x, "earcons", js.Array(value*))
     
     inline def setInstruments(value: js.Array[PointInstrumentObject]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
     inline def setInstrumentsUndefined: Self = StObject.set(x, "instruments", js.undefined)
     
-    inline def setInstrumentsVarargs(value: PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value :_*))
+    inline def setInstrumentsVarargs(value: PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value*))
     
     inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
@@ -144,7 +144,7 @@ object SonificationOptions {
     
     inline def setOrder(value: String | (js.Array[String | Earcon | (js.Array[String | Earcon])])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    inline def setOrderVarargs(value: (String | Earcon | (js.Array[String | Earcon]))*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: (String | Earcon | (js.Array[String | Earcon]))*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setPointPlayTime(value: String | js.Function): Self = StObject.set(x, "pointPlayTime", value.asInstanceOf[js.Any])
     
@@ -152,6 +152,6 @@ object SonificationOptions {
     
     inline def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
     
-    inline def setSeriesOptionsVarargs(value: js.Object*): Self = StObject.set(x, "seriesOptions", js.Array(value :_*))
+    inline def setSeriesOptionsVarargs(value: js.Object*): Self = StObject.set(x, "seriesOptions", js.Array(value*))
   }
 }

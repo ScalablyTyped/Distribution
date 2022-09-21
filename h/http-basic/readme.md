@@ -10,10 +10,10 @@ Very low level wrapper arround http.request/https.request
 | ------------------ | :-------------: |
 | Full name          | http-basic |
 | Keywords           | http, https, request, fetch, gzip, deflate, redirect, cache, etag, cache-control |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 12829136 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1858542.3333333333 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/http-basic#readme)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImputeTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var field: FieldRef
   
@@ -16,13 +16,13 @@ trait ImputeTransform
   
   var key: FieldRef
   
-  var keyvals: js.UndefOr[js.Array[js.Any] | SignalRef] = js.undefined
+  var keyvals: js.UndefOr[js.Array[Any] | SignalRef] = js.undefined
   
   var method: js.UndefOr[ImputeMethod | SignalRef] = js.undefined
   
   var `type`: impute
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object ImputeTransform {
   
@@ -40,15 +40,15 @@ object ImputeTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setKey(value: FieldRef): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKeyvals(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
+    inline def setKeyvals(value: js.Array[Any] | SignalRef): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
     
     inline def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)
     
-    inline def setKeyvalsVarargs(value: js.Any*): Self = StObject.set(x, "keyvals", js.Array(value :_*))
+    inline def setKeyvalsVarargs(value: Any*): Self = StObject.set(x, "keyvals", js.Array(value*))
     
     inline def setMethod(value: ImputeMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object ImputeTransform {
     
     inline def setType(value: impute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

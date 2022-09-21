@@ -29,7 +29,7 @@ object ListCommandsResult {
     
     inline def setCommandsUndefined: Self = StObject.set(x, "Commands", js.undefined)
     
-    inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "Commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "Commands", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

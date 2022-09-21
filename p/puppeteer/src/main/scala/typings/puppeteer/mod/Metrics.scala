@@ -6,63 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Metrics extends StObject {
   
-  /** Number of documents in the page. */
-  var Documents: Double
+  var Documents: js.UndefOr[Double] = js.undefined
   
-  /** Number of frames in the page. */
-  var Frames: Double
+  var Frames: js.UndefOr[Double] = js.undefined
   
-  /** Number of events in the page. */
-  var JSEventListeners: Double
+  var JSEventListeners: js.UndefOr[Double] = js.undefined
   
-  /** Total JavaScript heap size. */
-  var JSHeapTotalSize: Double
+  var JSHeapTotalSize: js.UndefOr[Double] = js.undefined
   
-  /** Used JavaScript heap size. */
-  var JSHeapUsedSize: Double
+  var JSHeapUsedSize: js.UndefOr[Double] = js.undefined
   
-  /** Total number of full or partial page layout. */
-  var LayoutCount: Double
+  var LayoutCount: js.UndefOr[Double] = js.undefined
   
-  /** Combined durations of all page layouts. */
-  var LayoutDuration: Double
+  var LayoutDuration: js.UndefOr[Double] = js.undefined
   
-  /** Number of DOM nodes in the page. */
-  var Nodes: Double
+  var Nodes: js.UndefOr[Double] = js.undefined
   
-  /** Total number of page style recalculations. */
-  var RecalcStyleCount: Double
+  var RecalcStyleCount: js.UndefOr[Double] = js.undefined
   
-  /** Combined duration of all page style recalculations. */
-  var RecalcStyleDuration: Double
+  var RecalcStyleDuration: js.UndefOr[Double] = js.undefined
   
-  /** Combined duration of JavaScript execution. */
-  var ScriptDuration: Double
+  var ScriptDuration: js.UndefOr[Double] = js.undefined
   
-  /** Combined duration of all tasks performed by the browser. */
-  var TaskDuration: Double
+  var TaskDuration: js.UndefOr[Double] = js.undefined
   
-  /** The timestamp when the metrics sample was taken. */
-  var Timestamp: Double
+  var Timestamp: js.UndefOr[Double] = js.undefined
 }
 object Metrics {
   
-  inline def apply(
-    Documents: Double,
-    Frames: Double,
-    JSEventListeners: Double,
-    JSHeapTotalSize: Double,
-    JSHeapUsedSize: Double,
-    LayoutCount: Double,
-    LayoutDuration: Double,
-    Nodes: Double,
-    RecalcStyleCount: Double,
-    RecalcStyleDuration: Double,
-    ScriptDuration: Double,
-    TaskDuration: Double,
-    Timestamp: Double
-  ): Metrics = {
-    val __obj = js.Dynamic.literal(Documents = Documents.asInstanceOf[js.Any], Frames = Frames.asInstanceOf[js.Any], JSEventListeners = JSEventListeners.asInstanceOf[js.Any], JSHeapTotalSize = JSHeapTotalSize.asInstanceOf[js.Any], JSHeapUsedSize = JSHeapUsedSize.asInstanceOf[js.Any], LayoutCount = LayoutCount.asInstanceOf[js.Any], LayoutDuration = LayoutDuration.asInstanceOf[js.Any], Nodes = Nodes.asInstanceOf[js.Any], RecalcStyleCount = RecalcStyleCount.asInstanceOf[js.Any], RecalcStyleDuration = RecalcStyleDuration.asInstanceOf[js.Any], ScriptDuration = ScriptDuration.asInstanceOf[js.Any], TaskDuration = TaskDuration.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
+  inline def apply(): Metrics = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metrics]
   }
   
@@ -70,28 +43,54 @@ object Metrics {
     
     inline def setDocuments(value: Double): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
+    inline def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
+    
     inline def setFrames(value: Double): Self = StObject.set(x, "Frames", value.asInstanceOf[js.Any])
+    
+    inline def setFramesUndefined: Self = StObject.set(x, "Frames", js.undefined)
     
     inline def setJSEventListeners(value: Double): Self = StObject.set(x, "JSEventListeners", value.asInstanceOf[js.Any])
     
+    inline def setJSEventListenersUndefined: Self = StObject.set(x, "JSEventListeners", js.undefined)
+    
     inline def setJSHeapTotalSize(value: Double): Self = StObject.set(x, "JSHeapTotalSize", value.asInstanceOf[js.Any])
+    
+    inline def setJSHeapTotalSizeUndefined: Self = StObject.set(x, "JSHeapTotalSize", js.undefined)
     
     inline def setJSHeapUsedSize(value: Double): Self = StObject.set(x, "JSHeapUsedSize", value.asInstanceOf[js.Any])
     
+    inline def setJSHeapUsedSizeUndefined: Self = StObject.set(x, "JSHeapUsedSize", js.undefined)
+    
     inline def setLayoutCount(value: Double): Self = StObject.set(x, "LayoutCount", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutCountUndefined: Self = StObject.set(x, "LayoutCount", js.undefined)
     
     inline def setLayoutDuration(value: Double): Self = StObject.set(x, "LayoutDuration", value.asInstanceOf[js.Any])
     
+    inline def setLayoutDurationUndefined: Self = StObject.set(x, "LayoutDuration", js.undefined)
+    
     inline def setNodes(value: Double): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
+    
+    inline def setNodesUndefined: Self = StObject.set(x, "Nodes", js.undefined)
     
     inline def setRecalcStyleCount(value: Double): Self = StObject.set(x, "RecalcStyleCount", value.asInstanceOf[js.Any])
     
+    inline def setRecalcStyleCountUndefined: Self = StObject.set(x, "RecalcStyleCount", js.undefined)
+    
     inline def setRecalcStyleDuration(value: Double): Self = StObject.set(x, "RecalcStyleDuration", value.asInstanceOf[js.Any])
+    
+    inline def setRecalcStyleDurationUndefined: Self = StObject.set(x, "RecalcStyleDuration", js.undefined)
     
     inline def setScriptDuration(value: Double): Self = StObject.set(x, "ScriptDuration", value.asInstanceOf[js.Any])
     
+    inline def setScriptDurationUndefined: Self = StObject.set(x, "ScriptDuration", js.undefined)
+    
     inline def setTaskDuration(value: Double): Self = StObject.set(x, "TaskDuration", value.asInstanceOf[js.Any])
     
+    inline def setTaskDurationUndefined: Self = StObject.set(x, "TaskDuration", js.undefined)
+    
     inline def setTimestamp(value: Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

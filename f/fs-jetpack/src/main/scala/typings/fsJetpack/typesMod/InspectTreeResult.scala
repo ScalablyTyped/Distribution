@@ -33,7 +33,7 @@ object InspectTreeResult {
     
     inline def setChildren(value: js.Array[InspectTreeResult]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: InspectTreeResult*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: InspectTreeResult*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
   }

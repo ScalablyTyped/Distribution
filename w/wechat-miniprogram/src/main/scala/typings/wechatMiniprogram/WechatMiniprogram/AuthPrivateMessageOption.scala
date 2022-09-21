@@ -13,15 +13,15 @@ trait AuthPrivateMessageOption extends StObject {
   var fail: js.UndefOr[AuthPrivateMessageFailCallback] = js.undefined
   
   /** shareTicket。可以从 wx.onShow 中获取。详情 [shareTicket](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share.html) */
-  var shareTicket: js.UndefOr[String] = js.undefined
+  var shareTicket: String
   
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[AuthPrivateMessageSuccessCallback] = js.undefined
 }
 object AuthPrivateMessageOption {
   
-  inline def apply(): AuthPrivateMessageOption = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(shareTicket: String): AuthPrivateMessageOption = {
+    val __obj = js.Dynamic.literal(shareTicket = shareTicket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthPrivateMessageOption]
   }
   
@@ -36,8 +36,6 @@ object AuthPrivateMessageOption {
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
-    
-    inline def setShareTicketUndefined: Self = StObject.set(x, "shareTicket", js.undefined)
     
     inline def setSuccess(value: /* result */ AuthPrivateMessageSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

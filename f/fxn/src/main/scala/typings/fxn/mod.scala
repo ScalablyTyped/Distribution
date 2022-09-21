@@ -1,7 +1,7 @@
 package typings.fxn
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +65,7 @@ object mod {
     
     def options(): Unit = js.native
     
-    /* protected */ var params: js.Any = js.native
+    /* protected */ var params: Any = js.native
     
     def post(): Unit = js.native
     

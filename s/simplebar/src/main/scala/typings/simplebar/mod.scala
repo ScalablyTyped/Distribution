@@ -5,7 +5,6 @@ import typings.simplebar.simplebarStrings.ltr
 import typings.simplebar.simplebarStrings.rtl
 import typings.simplebar.simplebarStrings.x
 import typings.simplebar.simplebarStrings.y
-import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,20 +14,26 @@ object mod {
   
   @JSImport("simplebar", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SimpleBar {
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, options: Options) = this()
     
     /* CompleteClass */
-    override def getContentElement(): Element = js.native
+    var el: HTMLElement = js.native
     
     /* CompleteClass */
-    override def getScrollElement(): Element = js.native
+    override def getContentElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def getScrollElement(): HTMLElement = js.native
     
     /* CompleteClass */
     override def recalculate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def unMount(): Unit = js.native
   }
   @JSImport("simplebar", JSImport.Namespace)
   @js.native
@@ -236,26 +241,40 @@ object mod {
   
   trait SimpleBar extends StObject {
     
-    def getContentElement(): Element
+    var el: HTMLElement
     
-    def getScrollElement(): Element
+    def getContentElement(): HTMLElement
+    
+    def getScrollElement(): HTMLElement
     
     def recalculate(): Unit
+    
+    def unMount(): Unit
   }
   object SimpleBar {
     
-    inline def apply(getContentElement: () => Element, getScrollElement: () => Element, recalculate: () => Unit): SimpleBar = {
-      val __obj = js.Dynamic.literal(getContentElement = js.Any.fromFunction0(getContentElement), getScrollElement = js.Any.fromFunction0(getScrollElement), recalculate = js.Any.fromFunction0(recalculate))
+    inline def apply(
+      el: HTMLElement,
+      getContentElement: () => HTMLElement,
+      getScrollElement: () => HTMLElement,
+      recalculate: () => Unit,
+      unMount: () => Unit
+    ): SimpleBar = {
+      val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], getContentElement = js.Any.fromFunction0(getContentElement), getScrollElement = js.Any.fromFunction0(getScrollElement), recalculate = js.Any.fromFunction0(recalculate), unMount = js.Any.fromFunction0(unMount))
       __obj.asInstanceOf[SimpleBar]
     }
     
     extension [Self <: SimpleBar](x: Self) {
       
-      inline def setGetContentElement(value: () => Element): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
+      inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      inline def setGetScrollElement(value: () => Element): Self = StObject.set(x, "getScrollElement", js.Any.fromFunction0(value))
+      inline def setGetContentElement(value: () => HTMLElement): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
+      
+      inline def setGetScrollElement(value: () => HTMLElement): Self = StObject.set(x, "getScrollElement", js.Any.fromFunction0(value))
       
       inline def setRecalculate(value: () => Unit): Self = StObject.set(x, "recalculate", js.Any.fromFunction0(value))
+      
+      inline def setUnMount(value: () => Unit): Self = StObject.set(x, "unMount", js.Any.fromFunction0(value))
     }
   }
 }

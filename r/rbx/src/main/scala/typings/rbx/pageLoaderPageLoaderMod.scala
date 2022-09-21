@@ -67,7 +67,7 @@ object pageLoaderPageLoaderMod {
   
   @JSImport("rbx/elements/page-loader/page-loader", "PageLoader")
   @js.native
-  val PageLoader: ForwardRefAsExoticComponent[PageLoaderProps, ElementType[js.Any]] = js.native
+  val PageLoader: ForwardRefAsExoticComponent[PageLoaderProps, ElementType[Any]] = js.native
   
   trait PageLoaderModifierProps extends StObject {
     

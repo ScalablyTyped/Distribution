@@ -6,7 +6,6 @@ import typings.hapiHapi.hapiHapiStrings.gunzip
 import typings.hapiHapi.mod.Lifecycle.FailAction
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.hapiHapi.mod.Util.Dictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,7 +130,7 @@ object RouteOptionsPayload {
     
     inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
-    inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
+    inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value*))
     
     inline def setCompression(value: Dictionary[PayloadCompressionDecoderSettings]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
@@ -144,7 +143,7 @@ object RouteOptionsPayload {
     inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     inline def setFailActionFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)

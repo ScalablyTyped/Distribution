@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "FullscreenControl")
 @js.native
-class FullscreenControl () extends Control {
+open class FullscreenControl () extends Control {
   def this(options: FullscreenControlOptions) = this()
 }

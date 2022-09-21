@@ -14,7 +14,7 @@ object zipMod {
   
   @JSImport("@lumino/algorithm/types/zip", "ZipIterator")
   @js.native
-  class ZipIterator[T] protected ()
+  open class ZipIterator[T] protected ()
     extends StObject
        with IIterator[js.Array[T]] {
     /**
@@ -24,7 +24,7 @@ object zipMod {
       */
     def this(source: js.Array[IIterator[T]]) = this()
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -59,5 +59,5 @@ object zipMod {
     override def next(): js.UndefOr[js.Array[T]] = js.native
   }
   
-  inline def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Array[T]]]
+  inline def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IIterator[js.Array[T]]]
 }

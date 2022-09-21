@@ -23,7 +23,7 @@ trait VRCameraMetrics extends StObject {
   var chromaAbCorrection: js.Array[Double] = js.native
   
   /**
-    * Define if the current vr camera should compensate the distortion of the lense or not.
+    * Define if the current vr camera should compensate the distortion of the lens or not.
     */
   var compensateDistortion: Boolean = js.native
   

@@ -70,7 +70,7 @@ object IStreamingRecognitionResult {
     
     inline def setSpeechWordInfoUndefined: Self = StObject.set(x, "speechWordInfo", js.undefined)
     
-    inline def setSpeechWordInfoVarargs(value: ISpeechWordInfo*): Self = StObject.set(x, "speechWordInfo", js.Array(value :_*))
+    inline def setSpeechWordInfoVarargs(value: ISpeechWordInfo*): Self = StObject.set(x, "speechWordInfo", js.Array(value*))
     
     inline def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     

@@ -34,10 +34,10 @@ object TestPointsQuery {
     
     inline def setPointsFilter(value: PointsFilter): Self = StObject.set(x, "pointsFilter", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: TestPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: TestPoint*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setWitFields(value: js.Array[String]): Self = StObject.set(x, "witFields", value.asInstanceOf[js.Any])
     
-    inline def setWitFieldsVarargs(value: String*): Self = StObject.set(x, "witFields", js.Array(value :_*))
+    inline def setWitFieldsVarargs(value: String*): Self = StObject.set(x, "witFields", js.Array(value*))
   }
 }

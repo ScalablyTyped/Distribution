@@ -10,15 +10,12 @@ Spinner component for Ink
 | ------------------ | :-------------: |
 | Full name          | ink-spinner |
 | Keywords           | ink, progress, spinner, loader, loading, component, jsx, react |
-| # releases         | 7 |
-| # dependents       | 140 |
-| # downloads        | 14786322 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 974396.3333333334 |
+| # stars            | 132.0 |
 
 ## Links
-- [Homepage](https://github.com/vadimdemedes/ink-spinner#readme)
-- [Bugs](https://github.com/vadimdemedes/ink-spinner/issues)
-- [Repository](https://github.com/vadimdemedes/ink-spinner)
 - [Npm](https://www.npmjs.com/package/ink-spinner)
     
 

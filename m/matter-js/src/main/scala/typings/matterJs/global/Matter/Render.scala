@@ -1,13 +1,14 @@
 package typings.matterJs.global.Matter
 
 import typings.matterJs.mod.IRenderDefinition
+import typings.matterJs.mod.IRenderLookAtObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Matter.Render")
 @js.native
-class Render ()
+open class Render ()
   extends typings.matterJs.mod.Render
 /* static members */
 object Render {
@@ -21,10 +22,50 @@ object Render {
     * All properties have default values, and many are pre-calculated automatically based on other properties.
     * See the properties section below for detailed information on what you can pass via the `options` object.
     * @method create
-    * @param {object} [options]
-    * @return {render} A new renderer
+    * @param {any} [options]
+    * @returns {render} A new renderer
     */
   inline def create(options: IRenderDefinition): typings.matterJs.mod.Render = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.matterJs.mod.Render]
+  
+  inline def lookAt(render: typings.matterJs.mod.Render, objects: js.Array[IRenderLookAtObject]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookAt")(render.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookAt(
+    render: typings.matterJs.mod.Render,
+    objects: js.Array[IRenderLookAtObject],
+    padding: Unit,
+    center: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookAt")(render.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookAt(
+    render: typings.matterJs.mod.Render,
+    objects: js.Array[IRenderLookAtObject],
+    padding: typings.matterJs.mod.Vector
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookAt")(render.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookAt(
+    render: typings.matterJs.mod.Render,
+    objects: js.Array[IRenderLookAtObject],
+    padding: typings.matterJs.mod.Vector,
+    center: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookAt")(render.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * Positions and sizes the viewport around the given object bounds.
+    * @method lookAt
+    * @param {Render} render
+    * @param {IRenderLookAtObject | IRenderLookAtObject[]} objects
+    * @param {Vector} padding
+    * @param {boolean} center
+    */
+  inline def lookAt(render: typings.matterJs.mod.Render, objects: IRenderLookAtObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookAt")(render.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookAt(render: typings.matterJs.mod.Render, objects: IRenderLookAtObject, padding: Unit, center: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookAt")(render.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookAt(
+    render: typings.matterJs.mod.Render,
+    objects: IRenderLookAtObject,
+    padding: typings.matterJs.mod.Vector
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookAt")(render.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookAt(
+    render: typings.matterJs.mod.Render,
+    objects: IRenderLookAtObject,
+    padding: typings.matterJs.mod.Vector,
+    center: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookAt")(render.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Continuously updates the render canvas on the `requestAnimationFrame` event.

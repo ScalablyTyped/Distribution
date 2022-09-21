@@ -8,5 +8,5 @@ object tagListMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_TagList", "_TagList")
   @js.native
-  val TagList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val TagList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

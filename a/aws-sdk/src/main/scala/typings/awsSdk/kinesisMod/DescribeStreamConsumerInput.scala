@@ -17,7 +17,7 @@ trait DescribeStreamConsumerInput extends StObject {
   var ConsumerName: js.UndefOr[typings.awsSdk.kinesisMod.ConsumerName] = js.undefined
   
   /**
-    * The ARN of the Kinesis data stream that the consumer is registered with. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The ARN of the Kinesis data stream that the consumer is registered with. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var StreamARN: js.UndefOr[typings.awsSdk.kinesisMod.StreamARN] = js.undefined
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFABActionItem")
 @js.native
-class ASPxClientFABActionItem ()
+open class ASPxClientFABActionItem ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFABActionItemBase {
   

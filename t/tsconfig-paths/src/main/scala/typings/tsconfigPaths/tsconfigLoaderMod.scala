@@ -28,7 +28,7 @@ object tsconfigLoaderMod {
   inline def tsConfigLoader(hasGetEnvCwdLoadSync: TsConfigLoaderParams): TsConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("tsConfigLoader")(hasGetEnvCwdLoadSync.asInstanceOf[js.Any]).asInstanceOf[TsConfigLoaderResult]
   
   inline def walkForTsConfig(directory: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("walkForTsConfig")(directory.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  inline def walkForTsConfig(directory: String, existsSync: js.Function1[/* path */ String, Boolean]): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkForTsConfig")(directory.asInstanceOf[js.Any], existsSync.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def walkForTsConfig(directory: String, readdirSync: js.Function1[/* path */ String, js.Array[String]]): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkForTsConfig")(directory.asInstanceOf[js.Any], readdirSync.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   trait TsConfigLoaderParams extends StObject {
     
@@ -37,7 +37,12 @@ object tsconfigLoaderMod {
     def getEnv(key: String): js.UndefOr[String]
     
     var loadSync: js.UndefOr[
-        js.Function2[/* cwd */ String, /* filename */ js.UndefOr[String], TsConfigLoaderResult]
+        js.Function3[
+          /* cwd */ String, 
+          /* filename */ js.UndefOr[String], 
+          /* baseUrl */ js.UndefOr[String], 
+          TsConfigLoaderResult
+        ]
       ] = js.undefined
   }
   object TsConfigLoaderParams {
@@ -53,7 +58,9 @@ object tsconfigLoaderMod {
       
       inline def setGetEnv(value: String => js.UndefOr[String]): Self = StObject.set(x, "getEnv", js.Any.fromFunction1(value))
       
-      inline def setLoadSync(value: (/* cwd */ String, /* filename */ js.UndefOr[String]) => TsConfigLoaderResult): Self = StObject.set(x, "loadSync", js.Any.fromFunction2(value))
+      inline def setLoadSync(
+        value: (/* cwd */ String, /* filename */ js.UndefOr[String], /* baseUrl */ js.UndefOr[String]) => TsConfigLoaderResult
+      ): Self = StObject.set(x, "loadSync", js.Any.fromFunction3(value))
       
       inline def setLoadSyncUndefined: Self = StObject.set(x, "loadSync", js.undefined)
     }

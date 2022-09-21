@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Stash")
 @js.native
-class Stash ()
+open class Stash ()
   extends typings.nodegit.stashMod.Stash
 /* static members */
 object Stash {

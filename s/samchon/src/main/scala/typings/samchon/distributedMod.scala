@@ -11,7 +11,7 @@ object distributedMod {
   
   @JSImport("samchon/templates/distributed", "DSInvokeHistory")
   @js.native
-  class DSInvokeHistory protected ()
+  open class DSInvokeHistory protected ()
     extends typings.samchon.dsinvokehistoryMod.DSInvokeHistory {
     /**
       * Construct from a DistributedSystem.

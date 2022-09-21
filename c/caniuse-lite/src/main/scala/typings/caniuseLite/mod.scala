@@ -49,7 +49,7 @@ object mod {
     /**
       * Version matrix. See [caniuse](https://caniuse.com)
       */
-    var versions: js.Array[js.Any]
+    var versions: js.Array[Any]
   }
   object Agent {
     
@@ -58,7 +58,7 @@ object mod {
       prefix: String,
       release_date: StringDictionary[js.UndefOr[Double]],
       usage_global: UsageByVersion,
-      versions: js.Array[js.Any]
+      versions: js.Array[Any]
     ): Agent = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], usage_global = usage_global.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Agent]
@@ -78,9 +78,9 @@ object mod {
       
       inline def setUsage_global(value: UsageByVersion): Self = StObject.set(x, "usage_global", value.asInstanceOf[js.Any])
       
-      inline def setVersions(value: js.Array[js.Any]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      inline def setVersions(value: js.Array[Any]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
       
-      inline def setVersionsVarargs(value: js.Any*): Self = StObject.set(x, "versions", js.Array(value :_*))
+      inline def setVersionsVarargs(value: Any*): Self = StObject.set(x, "versions", js.Array(value*))
     }
   }
   
@@ -133,9 +133,9 @@ object mod {
     }
   }
   
-  type PackedFeature = StringDictionary[js.Any]
+  type PackedFeature = StringDictionary[Any]
   
-  type PackedRegion = StringDictionary[js.Any]
+  type PackedRegion = StringDictionary[Any]
   
   /* Inlined std.Readonly<{[agentID: string] : caniuse-lite.caniuse-lite.SupportStatusByVersion}> */
   trait StatsByAgentID extends StObject

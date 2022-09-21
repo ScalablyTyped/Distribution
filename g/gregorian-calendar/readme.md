@@ -10,10 +10,10 @@ date time utils ported from java
 | ------------------ | :-------------: |
 | Full name          | gregorian-calendar |
 | Keywords           | date, time |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 69208 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7590.666666666667 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/yiminghe/gregorian-calendar#readme)

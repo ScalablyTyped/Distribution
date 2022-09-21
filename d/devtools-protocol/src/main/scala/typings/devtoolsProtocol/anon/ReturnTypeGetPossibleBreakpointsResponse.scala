@@ -23,7 +23,7 @@ object ReturnTypeGetPossibleBreakpointsResponse {
     
     inline def setParamsType(value: js.Array[GetPossibleBreakpointsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetPossibleBreakpointsRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetPossibleBreakpointsRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetPossibleBreakpointsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

@@ -232,7 +232,7 @@ object Experiment {
     
     inline def setVariationsUndefined: Self = StObject.set(x, "variations", js.undefined)
     
-    inline def setVariationsVarargs(value: Name*): Self = StObject.set(x, "variations", js.Array(value :_*))
+    inline def setVariationsVarargs(value: Name*): Self = StObject.set(x, "variations", js.Array(value*))
     
     inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     

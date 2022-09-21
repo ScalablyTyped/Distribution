@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TextFrame2")
 @js.native
-/* private */ class TextFrame2 ()
+/* private */ open class TextFrame2 ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TextFrame2 {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var AutoSize: MsoAutoSize = js.native
@@ -61,7 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Orientation: MsoTextOrientation = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PathFormat: MsoPathFormat = js.native

@@ -35,7 +35,7 @@ object QueryAutocompleteResponse {
     
     inline def setPredictions(value: js.Array[QueryAutocompleteResult]): Self = StObject.set(x, "predictions", value.asInstanceOf[js.Any])
     
-    inline def setPredictionsVarargs(value: QueryAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value :_*))
+    inline def setPredictionsVarargs(value: QueryAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value*))
     
     inline def setStatus(value: QueryAutocompleteResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

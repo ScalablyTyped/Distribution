@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.PlayTo
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
@@ -18,7 +17,7 @@ trait SourceChangeRequestedEventArgs extends StObject {
   var author: String
   
   /** Gets the date that the content in the media stream was published. */
-  var date: Date
+  var date: js.Date
   
   /** Gets the description of the content in the media stream. */
   var description: String
@@ -27,7 +26,7 @@ trait SourceChangeRequestedEventArgs extends StObject {
   var genre: String
   
   /** Gets custom property names and values for the content in the media stream. */
-  var properties: IMapView[String, js.Any]
+  var properties: IMapView[String, Any]
   
   /** Gets the rating for the content in the media stream. */
   var rating: Double
@@ -46,10 +45,10 @@ object SourceChangeRequestedEventArgs {
   inline def apply(
     album: String,
     author: String,
-    date: Date,
+    date: js.Date,
     description: String,
     genre: String,
-    properties: IMapView[String, js.Any],
+    properties: IMapView[String, Any],
     rating: Double,
     stream: IRandomAccessStreamWithContentType,
     thumbnail: IRandomAccessStreamReference,
@@ -65,13 +64,13 @@ object SourceChangeRequestedEventArgs {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     

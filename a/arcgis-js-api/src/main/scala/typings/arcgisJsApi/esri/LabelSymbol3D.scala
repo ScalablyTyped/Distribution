@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LabelSymbol3D
   extends StObject
      with Symbol3D
-     with typings.arcgisJsApi.esri.symbols.Symbol2D3D
-     with Symbol2D3D
      with typings.arcgisJsApi.esri.symbols.Symbol3D
      with symbolsSymbol3D {
   
@@ -20,6 +18,14 @@ trait LabelSymbol3D
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#callout)
     */
   var callout: Callout3D = js.native
+  
+  /**
+    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#symbolLayers)
+    */
+  @JSName("symbolLayers")
+  var symbolLayers_LabelSymbol3D: Collection[TextSymbol3DLayer] = js.native
   
   /**
     * The symbol type.

@@ -6,12 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "KeyedRead")
 @js.native
-class KeyedRead protected ()
-  extends typings.angularCompiler.compilerMod.KeyedRead {
-  def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    obj: typings.angularCompiler.astMod.AST,
-    key: typings.angularCompiler.astMod.AST
-  ) = this()
+open class KeyedRead protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, receiver: AST, key: AST) = this()
+  
+  var key: AST = js.native
+  
+  var receiver: AST = js.native
 }

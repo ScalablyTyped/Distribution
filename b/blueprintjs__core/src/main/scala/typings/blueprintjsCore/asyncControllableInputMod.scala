@@ -1,10 +1,10 @@
 package typings.blueprintjsCore
 
 import typings.blueprintjsCore.anon.PartialIAsyncControllable
+import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.react.mod.ClassAttributes
 import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.LegacyRef
-import typings.react.mod.PureComponent
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,20 +14,18 @@ object asyncControllableInputMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/asyncControllableInput", "AsyncControllableInput")
   @js.native
-  class AsyncControllableInput protected ()
-    extends PureComponent[IAsyncControllableInputProps, IAsyncControllableInputState, js.Any] {
+  open class AsyncControllableInput protected ()
+    extends AbstractPureComponent2[IAsyncControllableInputProps, IAsyncControllableInputState, js.Object] {
     def this(props: IAsyncControllableInputProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: IAsyncControllableInputProps, context: js.Any) = this()
+    def this(props: IAsyncControllableInputProps, context: Any) = this()
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var cancelPendingCompositionEnd: Any = js.native
     
-    /* private */ var handleCompositionEnd: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
-    /* private */ var handleCompositionStart: js.Any = js.native
+    /* private */ var handleCompositionEnd: Any = js.native
+    
+    /* private */ var handleCompositionStart: Any = js.native
   }
   /* static members */
   object AsyncControllableInput {
@@ -35,6 +33,15 @@ object asyncControllableInputMod {
     @JSImport("@blueprintjs/core/lib/esm/components/forms/asyncControllableInput", "AsyncControllableInput")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * The amount of time (in milliseconds) which the input will wait after a compositionEnd event before
+      * unlocking its state value for external updates via props. See `handleCompositionEnd` for more details.
+      */
+    @JSImport("@blueprintjs/core/lib/esm/components/forms/asyncControllableInput", "AsyncControllableInput.COMPOSITION_END_DELAY")
+    @js.native
+    def COMPOSITION_END_DELAY: Double = js.native
+    inline def COMPOSITION_END_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPOSITION_END_DELAY")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/asyncControllableInput", "AsyncControllableInput.displayName")
     @js.native
@@ -74,12 +81,14 @@ object asyncControllableInputMod {
     
     /**
       * Whether there is a pending update we are expecting from a parent component.
+      *
       * @default false
       */
     var hasPendingUpdate: Boolean
     
     /**
       * Whether we are in the middle of a composition event.
+      *
       * @default false
       */
     var isComposing: Boolean
@@ -92,6 +101,7 @@ object asyncControllableInputMod {
     /**
       * The source of truth for the input value. This is not updated during IME composition.
       * It may be updated by a parent component.
+      *
       * @default ""
       */
     var value: InputValue
@@ -113,13 +123,13 @@ object asyncControllableInputMod {
       
       inline def setNextValueUndefined: Self = StObject.set(x, "nextValue", js.undefined)
       
-      inline def setNextValueVarargs(value: String*): Self = StObject.set(x, "nextValue", js.Array(value :_*))
+      inline def setNextValueVarargs(value: String*): Self = StObject.set(x, "nextValue", js.Array(value*))
       
       inline def setValue(value: InputValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   

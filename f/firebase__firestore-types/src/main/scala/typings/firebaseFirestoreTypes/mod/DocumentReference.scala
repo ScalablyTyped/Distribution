@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "DocumentReference")
 @js.native
-/* private */ class DocumentReference[T] () extends StObject {
+/* private */ open class DocumentReference[T] () extends StObject {
   
   def collection(collectionPath: String): CollectionReference[DocumentData] = js.native
   
@@ -67,8 +67,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def set(data: Partial[T], options: SetOptions): js.Promise[Unit] = js.native
   
   def update(data: UpdateData): js.Promise[Unit] = js.native
-  def update(field: String, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[Unit] = js.native
-  def update(field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[Unit] = js.native
+  def update(field: String, value: Any, moreFieldsAndValues: Any*): js.Promise[Unit] = js.native
+  def update(field: FieldPath, value: Any, moreFieldsAndValues: Any*): js.Promise[Unit] = js.native
   
+  def withConverter(converter: Null): DocumentReference[DocumentData] = js.native
   def withConverter[U](converter: FirestoreDataConverter[U]): DocumentReference[U] = js.native
 }

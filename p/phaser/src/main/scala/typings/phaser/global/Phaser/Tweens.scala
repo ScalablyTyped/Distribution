@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Types.Tweens.TimelineBuilderConfig
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
 import typings.phaser.Phaser.Types.Tweens.TweenConfigDefaults
 import typings.phaser.Phaser.Types.Tweens.TweenDataConfig
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +21,8 @@ object Tweens {
     */
   @JSGlobal("Phaser.Tweens.ACTIVE")
   @js.native
-  def ACTIVE: integer = js.native
-  inline def ACTIVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+  def ACTIVE: Double = js.native
+  inline def ACTIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
   
   object Builders {
     
@@ -37,7 +36,7 @@ object Tweens {
       * @param key The key to look for in the `source` object.
       * @param defaultValue The default value to return if the `key` doesn't exist or if no `source` object is provided.
       */
-    inline def GetBoolean(source: js.Object, key: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBoolean")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def GetBoolean(source: js.Object, key: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBoolean")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * This internal function is used to return the correct ease function for a Tween.
@@ -58,7 +57,7 @@ object Tweens {
       * @param key The property to get from the source.
       * @param defaultValue A default value to return should the source not have the property set.
       */
-    inline def GetNewValue(source: js.Any, key: String, defaultValue: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNewValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def GetNewValue(source: Any, key: String, defaultValue: Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNewValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
       * Internal function used by the Tween Builder to return an array of properties
@@ -75,7 +74,7 @@ object Tweens {
       * The targets will be looked for in a `targets` property. If it's a function, its return value will be used as the result.
       * @param config The configuration object to use.
       */
-    inline def GetTargets(config: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTargets")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def GetTargets(config: js.Object): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTargets")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
     /**
       * Internal function used by the Timeline Builder.
@@ -107,7 +106,7 @@ object Tweens {
       * @param key The name of the property to modify.
       * @param propertyValue The ending value of the property, as described above.
       */
-    inline def GetValueOp(key: String, propertyValue: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("GetValueOp")(key.asInstanceOf[js.Any], propertyValue.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def GetValueOp(key: String, propertyValue: Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("GetValueOp")(key.asInstanceOf[js.Any], propertyValue.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     inline def NumberTweenBuilder(
       parent: typings.phaser.Phaser.Tweens.Timeline,
@@ -202,32 +201,32 @@ object Tweens {
     */
   @JSGlobal("Phaser.Tweens.COMPLETE")
   @js.native
-  def COMPLETE: integer = js.native
-  inline def COMPLETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPLETE")(x.asInstanceOf[js.Any])
+  def COMPLETE: Double = js.native
+  inline def COMPLETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPLETE")(x.asInstanceOf[js.Any])
   
   /**
     * Tween state.
     */
   @JSGlobal("Phaser.Tweens.COMPLETE_DELAY")
   @js.native
-  def COMPLETE_DELAY: integer = js.native
-  inline def COMPLETE_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPLETE_DELAY")(x.asInstanceOf[js.Any])
+  def COMPLETE_DELAY: Double = js.native
+  inline def COMPLETE_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPLETE_DELAY")(x.asInstanceOf[js.Any])
   
   /**
     * TweenData state.
     */
   @JSGlobal("Phaser.Tweens.CREATED")
   @js.native
-  def CREATED: integer = js.native
-  inline def CREATED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATED")(x.asInstanceOf[js.Any])
+  def CREATED: Double = js.native
+  inline def CREATED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATED")(x.asInstanceOf[js.Any])
   
   /**
     * TweenData state.
     */
   @JSGlobal("Phaser.Tweens.DELAY")
   @js.native
-  def DELAY: integer = js.native
-  inline def DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELAY")(x.asInstanceOf[js.Any])
+  def DELAY: Double = js.native
+  inline def DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELAY")(x.asInstanceOf[js.Any])
   
   object Events {
     
@@ -251,7 +250,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TIMELINE_COMPLETE")
     @js.native
-    val TIMELINE_COMPLETE: js.Any = js.native
+    val TIMELINE_COMPLETE: Any = js.native
     
     /**
       * The Timeline Loop Event.
@@ -274,7 +273,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TIMELINE_LOOP")
     @js.native
-    val TIMELINE_LOOP: js.Any = js.native
+    val TIMELINE_LOOP: Any = js.native
     
     /**
       * The Timeline Pause Event.
@@ -297,7 +296,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TIMELINE_PAUSE")
     @js.native
-    val TIMELINE_PAUSE: js.Any = js.native
+    val TIMELINE_PAUSE: Any = js.native
     
     /**
       * The Timeline Resume Event.
@@ -320,7 +319,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TIMELINE_RESUME")
     @js.native
-    val TIMELINE_RESUME: js.Any = js.native
+    val TIMELINE_RESUME: Any = js.native
     
     /**
       * The Timeline Start Event.
@@ -342,7 +341,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TIMELINE_START")
     @js.native
-    val TIMELINE_START: js.Any = js.native
+    val TIMELINE_START: Any = js.native
     
     /**
       * The Timeline Update Event.
@@ -365,7 +364,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TIMELINE_UPDATE")
     @js.native
-    val TIMELINE_UPDATE: js.Any = js.native
+    val TIMELINE_UPDATE: Any = js.native
     
     /**
       * The Tween Active Event.
@@ -390,7 +389,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TWEEN_ACTIVE")
     @js.native
-    val TWEEN_ACTIVE: js.Any = js.native
+    val TWEEN_ACTIVE: Any = js.native
     
     /**
       * The Tween Complete Event.
@@ -416,7 +415,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TWEEN_COMPLETE")
     @js.native
-    val TWEEN_COMPLETE: js.Any = js.native
+    val TWEEN_COMPLETE: Any = js.native
     
     /**
       * The Tween Loop Event.
@@ -445,7 +444,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TWEEN_LOOP")
     @js.native
-    val TWEEN_LOOP: js.Any = js.native
+    val TWEEN_LOOP: Any = js.native
     
     /**
       * The Tween Repeat Event.
@@ -474,7 +473,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TWEEN_REPEAT")
     @js.native
-    val TWEEN_REPEAT: js.Any = js.native
+    val TWEEN_REPEAT: Any = js.native
     
     /**
       * The Tween Start Event.
@@ -499,7 +498,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TWEEN_START")
     @js.native
-    val TWEEN_START: js.Any = js.native
+    val TWEEN_START: Any = js.native
     
     /**
       * The Tween Stop Event.
@@ -520,7 +519,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TWEEN_STOP")
     @js.native
-    val TWEEN_STOP: js.Any = js.native
+    val TWEEN_STOP: Any = js.native
     
     /**
       * The Tween Update Event.
@@ -545,7 +544,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TWEEN_UPDATE")
     @js.native
-    val TWEEN_UPDATE: js.Any = js.native
+    val TWEEN_UPDATE: Any = js.native
     
     /**
       * The Tween Yoyo Event.
@@ -575,7 +574,7 @@ object Tweens {
       */
     @JSGlobal("Phaser.Tweens.Events.TWEEN_YOYO")
     @js.native
-    val TWEEN_YOYO: js.Any = js.native
+    val TWEEN_YOYO: Any = js.native
   }
   
   /**
@@ -583,96 +582,96 @@ object Tweens {
     */
   @JSGlobal("Phaser.Tweens.HOLD_DELAY")
   @js.native
-  def HOLD_DELAY: integer = js.native
-  inline def HOLD_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOLD_DELAY")(x.asInstanceOf[js.Any])
+  def HOLD_DELAY: Double = js.native
+  inline def HOLD_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOLD_DELAY")(x.asInstanceOf[js.Any])
   
   /**
     * TweenData state.
     */
   @JSGlobal("Phaser.Tweens.INIT")
   @js.native
-  def INIT: integer = js.native
-  inline def INIT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INIT")(x.asInstanceOf[js.Any])
+  def INIT: Double = js.native
+  inline def INIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INIT")(x.asInstanceOf[js.Any])
   
   /**
     * Tween state.
     */
   @JSGlobal("Phaser.Tweens.LOOP_DELAY")
   @js.native
-  def LOOP_DELAY: integer = js.native
-  inline def LOOP_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOOP_DELAY")(x.asInstanceOf[js.Any])
+  def LOOP_DELAY: Double = js.native
+  inline def LOOP_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOOP_DELAY")(x.asInstanceOf[js.Any])
   
   /**
     * TweenData state.
     */
   @JSGlobal("Phaser.Tweens.OFFSET_DELAY")
   @js.native
-  def OFFSET_DELAY: integer = js.native
-  inline def OFFSET_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFSET_DELAY")(x.asInstanceOf[js.Any])
+  def OFFSET_DELAY: Double = js.native
+  inline def OFFSET_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFSET_DELAY")(x.asInstanceOf[js.Any])
   
   /**
     * Tween state.
     */
   @JSGlobal("Phaser.Tweens.PAUSED")
   @js.native
-  def PAUSED: integer = js.native
-  inline def PAUSED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
+  def PAUSED: Double = js.native
+  inline def PAUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
   
   /**
     * Tween state.
     */
   @JSGlobal("Phaser.Tweens.PENDING_ADD")
   @js.native
-  def PENDING_ADD: integer = js.native
-  inline def PENDING_ADD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_ADD")(x.asInstanceOf[js.Any])
+  def PENDING_ADD: Double = js.native
+  inline def PENDING_ADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_ADD")(x.asInstanceOf[js.Any])
   
   /**
     * Tween state.
     */
   @JSGlobal("Phaser.Tweens.PENDING_REMOVE")
   @js.native
-  def PENDING_REMOVE: integer = js.native
-  inline def PENDING_REMOVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_REMOVE")(x.asInstanceOf[js.Any])
+  def PENDING_REMOVE: Double = js.native
+  inline def PENDING_REMOVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_REMOVE")(x.asInstanceOf[js.Any])
   
   /**
     * TweenData state.
     */
   @JSGlobal("Phaser.Tweens.PENDING_RENDER")
   @js.native
-  def PENDING_RENDER: integer = js.native
-  inline def PENDING_RENDER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_RENDER")(x.asInstanceOf[js.Any])
+  def PENDING_RENDER: Double = js.native
+  inline def PENDING_RENDER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_RENDER")(x.asInstanceOf[js.Any])
   
   /**
     * TweenData state.
     */
   @JSGlobal("Phaser.Tweens.PLAYING_BACKWARD")
   @js.native
-  def PLAYING_BACKWARD: integer = js.native
-  inline def PLAYING_BACKWARD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING_BACKWARD")(x.asInstanceOf[js.Any])
+  def PLAYING_BACKWARD: Double = js.native
+  inline def PLAYING_BACKWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING_BACKWARD")(x.asInstanceOf[js.Any])
   
   /**
     * TweenData state.
     */
   @JSGlobal("Phaser.Tweens.PLAYING_FORWARD")
   @js.native
-  def PLAYING_FORWARD: integer = js.native
-  inline def PLAYING_FORWARD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING_FORWARD")(x.asInstanceOf[js.Any])
+  def PLAYING_FORWARD: Double = js.native
+  inline def PLAYING_FORWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING_FORWARD")(x.asInstanceOf[js.Any])
   
   /**
     * Tween state.
     */
   @JSGlobal("Phaser.Tweens.REMOVED")
   @js.native
-  def REMOVED: integer = js.native
-  inline def REMOVED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVED")(x.asInstanceOf[js.Any])
+  def REMOVED: Double = js.native
+  inline def REMOVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVED")(x.asInstanceOf[js.Any])
   
   /**
     * TweenData state.
     */
   @JSGlobal("Phaser.Tweens.REPEAT_DELAY")
   @js.native
-  def REPEAT_DELAY: integer = js.native
-  inline def REPEAT_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REPEAT_DELAY")(x.asInstanceOf[js.Any])
+  def REPEAT_DELAY: Double = js.native
+  inline def REPEAT_DELAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REPEAT_DELAY")(x.asInstanceOf[js.Any])
   
   /**
     * A Timeline combines multiple Tweens into one. Its overall behavior is otherwise similar to a single Tween.
@@ -682,7 +681,7 @@ object Tweens {
     */
   @JSGlobal("Phaser.Tweens.Timeline")
   @js.native
-  class Timeline protected ()
+  open class Timeline protected ()
     extends StObject
        with typings.phaser.Phaser.Tweens.Timeline {
     /**
@@ -699,13 +698,13 @@ object Tweens {
     */
   @JSGlobal("Phaser.Tweens.Tween")
   @js.native
-  class Tween protected ()
+  open class Tween protected ()
     extends StObject
        with typings.phaser.Phaser.Tweens.Tween {
     def this(
       parent: typings.phaser.Phaser.Tweens.Timeline,
       data: js.Array[TweenDataConfig],
-      targets: js.Array[js.Any]
+      targets: js.Array[Any]
     ) = this()
     /**
       * 
@@ -716,7 +715,7 @@ object Tweens {
     def this(
       parent: typings.phaser.Phaser.Tweens.TweenManager,
       data: js.Array[TweenDataConfig],
-      targets: js.Array[js.Any]
+      targets: js.Array[Any]
     ) = this()
   }
   
@@ -743,8 +742,8 @@ object Tweens {
     * @param flipY Should toggleFlipY be called when yoyo or repeat happens?
     */
   inline def TweenData(
-    target: js.Any,
-    index: integer,
+    target: Any,
+    index: Double,
     key: String,
     getEnd: js.Function,
     getStart: js.Function,
@@ -765,7 +764,7 @@ object Tweens {
     */
   @JSGlobal("Phaser.Tweens.TweenManager")
   @js.native
-  class TweenManager protected ()
+  open class TweenManager protected ()
     extends StObject
        with typings.phaser.Phaser.Tweens.TweenManager {
     /**

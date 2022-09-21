@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.ValidationError")
 @js.native
-class ValidationError protected ()
+open class ValidationError protected ()
   extends StObject
      with typings.breeze.breeze.ValidationError {
-  def this(validator: typings.breeze.breeze.Validator, context: js.Any, errorMessage: String, key: String) = this()
+  def this(validator: typings.breeze.breeze.Validator, context: Any, errorMessage: String, key: String) = this()
   
   /* CompleteClass */
-  var context: js.Any = js.native
+  var context: Any = js.native
   
   /* CompleteClass */
   var errorMessage: String = js.native

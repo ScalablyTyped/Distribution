@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetSampledRequestsResponse extends StObject {
   
   /**
-    * The total number of requests from which GetSampledRequests got a sample of MaxItems requests. If PopulationSize is less than MaxItems, the sample includes every request that your AWS resource received during the specified time range.
+    * The total number of requests from which GetSampledRequests got a sample of MaxItems requests. If PopulationSize is less than MaxItems, the sample includes every request that your Amazon Web Services resource received during the specified time range.
     */
   var PopulationSize: js.UndefOr[typings.awsSdk.wafv2Mod.PopulationSize] = js.undefined
   
@@ -17,7 +17,7 @@ trait GetSampledRequestsResponse extends StObject {
   var SampledRequests: js.UndefOr[SampledHTTPRequests] = js.undefined
   
   /**
-    * Usually, TimeWindow is the time range that you specified in the GetSampledRequests request. However, if your AWS resource received more than 5,000 requests during the time range that you specified in the request, GetSampledRequests returns the time range for the first 5,000 requests. Times are in Coordinated Universal Time (UTC) format.
+    * Usually, TimeWindow is the time range that you specified in the GetSampledRequests request. However, if your Amazon Web Services resource received more than 5,000 requests during the time range that you specified in the request, GetSampledRequests returns the time range for the first 5,000 requests. Times are in Coordinated Universal Time (UTC) format.
     */
   var TimeWindow: js.UndefOr[typings.awsSdk.wafv2Mod.TimeWindow] = js.undefined
 }
@@ -38,7 +38,7 @@ object GetSampledRequestsResponse {
     
     inline def setSampledRequestsUndefined: Self = StObject.set(x, "SampledRequests", js.undefined)
     
-    inline def setSampledRequestsVarargs(value: SampledHTTPRequest*): Self = StObject.set(x, "SampledRequests", js.Array(value :_*))
+    inline def setSampledRequestsVarargs(value: SampledHTTPRequest*): Self = StObject.set(x, "SampledRequests", js.Array(value*))
     
     inline def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
     

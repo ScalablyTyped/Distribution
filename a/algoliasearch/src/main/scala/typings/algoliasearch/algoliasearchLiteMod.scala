@@ -2,17 +2,18 @@ package typings.algoliasearch
 
 import typings.algoliaClientCommon.mod.ClientTransporterOptions
 import typings.algoliaClientSearch.mod.FindAnswersOptions
+import typings.algoliaClientSearch.mod.FindAnswersResponse
 import typings.algoliaClientSearch.mod.MultipleQueriesOptions
 import typings.algoliaClientSearch.mod.MultipleQueriesQuery
 import typings.algoliaClientSearch.mod.MultipleQueriesResponse
 import typings.algoliaClientSearch.mod.SearchOptions
 import typings.algoliaClientSearch.mod.SearchResponse
+import typings.algoliaTransporter.mod.Request
 import typings.algoliaTransporter.mod.RequestOptions
 import typings.algoliasearch.algoliasearchStrings.apiKey
 import typings.algoliasearch.algoliasearchStrings.appId
 import typings.algoliasearch.anon.IndexName
 import typings.algoliasearch.anon.ReadonlyPromiseArraySearc
-import typings.algoliasearch.anon.ReadonlyPromiseFindAnswer
 import typings.algoliasearch.anon.ReadonlyPromiseSearchForF
 import typings.algoliasearch.anon.WithoutCredentialsSearchC
 import typings.std.Omit
@@ -66,6 +67,9 @@ object algoliasearchLiteMod {
     extends StObject
        with typings.algoliaClientSearch.mod.SearchClient {
     
+    def customRequest[TResponse](request: Request): js.Promise[TResponse] = js.native
+    def customRequest[TResponse](request: Request, requestOptions: RequestOptions): js.Promise[TResponse] = js.native
+    
     def initIndex(indexName: String): SearchIndex = js.native
     
     def search[TObject](queries: js.Array[MultipleQueriesQuery]): js.Promise[MultipleQueriesResponse[TObject]] = js.native
@@ -80,12 +84,12 @@ object algoliasearchLiteMod {
     extends StObject
        with typings.algoliaClientSearch.mod.SearchIndex {
     
-    def findAnswers(query: String, queryLanguages: js.Array[String]): ReadonlyPromiseFindAnswer = js.native
-    def findAnswers(
+    def findAnswers[TObject](query: String, queryLanguages: js.Array[String]): js.Promise[FindAnswersResponse[TObject]] = js.native
+    def findAnswers[TObject](
       query: String,
       queryLanguages: js.Array[String],
       requestOptions: RequestOptions & FindAnswersOptions
-    ): ReadonlyPromiseFindAnswer = js.native
+    ): js.Promise[FindAnswersResponse[TObject]] = js.native
     
     def search[TObject](query: String): js.Promise[SearchResponse[TObject]] = js.native
     def search[TObject](query: String, requestOptions: RequestOptions & SearchOptions): js.Promise[SearchResponse[TObject]] = js.native

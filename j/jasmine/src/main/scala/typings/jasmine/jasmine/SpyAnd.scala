@@ -1,6 +1,5 @@
 package typings.jasmine.jasmine
 
-import typings.std.Error
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,5 +35,5 @@ trait SpyAnd[Fn /* <: Func */] extends StObject {
   
   /** By chaining the spy with and.throwError, all calls to the spy will throw the specified value. */
   def throwError(msg: String): Spy[Func] = js.native
-  def throwError(msg: Error): Spy[Func] = js.native
+  def throwError(msg: js.Error): Spy[Func] = js.native
 }

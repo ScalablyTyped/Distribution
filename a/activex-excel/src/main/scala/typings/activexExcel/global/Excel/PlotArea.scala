@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PlotArea")
 @js.native
-/* private */ class PlotArea ()
+/* private */ open class PlotArea ()
   extends StObject
      with typings.activexExcel.Excel.PlotArea {
   
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Border: typings.activexExcel.Excel.Border = js.native
   
   /* CompleteClass */
-  override def ClearFormats(): js.Any = js.native
+  override def ClearFormats(): Any = js.native
   
   /* CompleteClass */
   override val Creator: XlCreator = js.native
@@ -59,13 +59,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Position: XlChartElementPosition = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
   
   /* CompleteClass */
   var Top: Double = js.native

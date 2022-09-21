@@ -25,7 +25,7 @@ object BatchResponse {
     
     inline def setResponses(value: js.Array[Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    inline def setResponsesVarargs(value: Response*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: Response*): Self = StObject.set(x, "responses", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

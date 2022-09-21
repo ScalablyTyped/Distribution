@@ -10,10 +10,10 @@ Document ready listener for modern browsers
 | ------------------ | :-------------: |
 | Full name          | document-ready |
 | Keywords           | document, ready, callback |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 105089 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6833.666666666667 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/bendrucker/document-ready#readme)

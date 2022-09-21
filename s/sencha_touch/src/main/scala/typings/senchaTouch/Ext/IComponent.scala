@@ -27,25 +27,25 @@ trait IComponent
   var baseCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var border: js.UndefOr[js.Any] = js.undefined
+  var border: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var bottom: js.UndefOr[js.Any] = js.undefined
+  var bottom: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var centered: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var cls: js.UndefOr[js.Any] = js.undefined
+  var cls: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var componentCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Ext.Element/HTMLElement/String) */
-  var contentEl: js.UndefOr[js.Any] = js.undefined
+  var contentEl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /** [Method] Disables this Component */
   var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -66,10 +66,10 @@ trait IComponent
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Mixed) */
-  var enterAnimation: js.UndefOr[js.Any] = js.undefined
+  var enterAnimation: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Mixed) */
-  var exitAnimation: js.UndefOr[js.Any] = js.undefined
+  var exitAnimation: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var flex: js.UndefOr[Double] = js.undefined
@@ -88,7 +88,7 @@ trait IComponent
     * @param alignment Object
     */
   var getAlignmentInfo: js.UndefOr[
-    js.Function2[/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* component */ js.UndefOr[Any], /* alignment */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Returns the value of baseCls
@@ -99,12 +99,12 @@ trait IComponent
   /** [Method] Returns the value of border
     * @returns Number/String
     */
-  var getBorder: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getBorder: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of bottom
     * @returns any
     */
-  var getBottom: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getBottom: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of centered
     * @returns Boolean
@@ -114,17 +114,17 @@ trait IComponent
   /** [Method] Returns the value of cls
     * @returns any
     */
-  var getCls: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getCls: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of contentEl
     * @returns Ext.Element/HTMLElement/String
     */
-  var getContentEl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getContentEl: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of data
     * @returns Object
     */
-  var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of disabled
     * @returns Boolean
@@ -149,12 +149,12 @@ trait IComponent
   /** [Method] Returns the value of enterAnimation
     * @returns String/Mixed
     */
-  var getEnterAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getEnterAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of exitAnimation
     * @returns String/Mixed
     */
-  var getExitAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getExitAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of flex
     * @returns Number
@@ -169,7 +169,7 @@ trait IComponent
   /** [Method] Returns the value of height
     * @returns Number/String
     */
-  var getHeight: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHeight: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of hidden
     * @returns Boolean
@@ -184,12 +184,12 @@ trait IComponent
   /** [Method] Returns the value of hideAnimation
     * @returns String/Mixed
     */
-  var getHideAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHideAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of html
     * @returns String/Ext.Element/HTMLElement
     */
-  var getHtml: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHtml: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of itemId
     * @returns String
@@ -199,37 +199,37 @@ trait IComponent
   /** [Method] Returns the value of left
     * @returns Number/String
     */
-  var getLeft: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLeft: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of margin
     * @returns Number/String
     */
-  var getMargin: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getMargin: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of maxHeight
     * @returns Number/String
     */
-  var getMaxHeight: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getMaxHeight: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of maxWidth
     * @returns Number/String
     */
-  var getMaxWidth: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getMaxWidth: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of minHeight
     * @returns Number/String
     */
-  var getMinHeight: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getMinHeight: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of minWidth
     * @returns Number/String
     */
-  var getMinWidth: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getMinWidth: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of padding
     * @returns Number/String
     */
-  var getPadding: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getPadding: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the parent of this component if it has one
     * @returns Ext.Component The parent of this component.
@@ -239,7 +239,7 @@ trait IComponent
   /** [Method] Returns the value of plugins
     * @returns Object/Array
     */
-  var getPlugins: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getPlugins: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of record
     * @returns Ext.data.Model
@@ -254,22 +254,22 @@ trait IComponent
   /** [Method] Returns the value of right
     * @returns Number/String
     */
-  var getRight: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getRight: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of showAnimation
     * @returns String/Mixed
     */
-  var getShowAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getShowAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the height and width of the Component
     * @returns Object The current height and width of the Component.
     */
-  var getSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSize: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of style
     * @returns String/Object
     */
-  var getStyle: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getStyle: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of styleHtmlCls
     * @returns String
@@ -284,12 +284,12 @@ trait IComponent
   /** [Method] Returns the value of top
     * @returns Number/String
     */
-  var getTop: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getTop: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of tpl
     * @returns String/String[]/Ext.Template/Ext.XTemplate[]
     */
-  var getTpl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getTpl: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of tplWriteMode
     * @returns String
@@ -304,7 +304,7 @@ trait IComponent
   /** [Method] Returns the value of width
     * @returns Number/String
     */
-  var getWidth: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getWidth: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns this Component s xtype hierarchy as a slash delimited string
     * @returns String The xtype hierarchy string.
@@ -322,7 +322,7 @@ trait IComponent
   var hasParent: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var height: js.UndefOr[js.Any] = js.undefined
+  var height: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var hidden: js.UndefOr[Boolean] = js.undefined
@@ -334,16 +334,16 @@ trait IComponent
     * @param animation Object/Boolean You can specify an animation here or a bool to use the hideAnimation config.
     * @returns Ext.Component
     */
-  var hide: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var hide: js.UndefOr[js.Function1[/* animation */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Config Option] (String/Mixed) */
-  var hideAnimation: js.UndefOr[js.Any] = js.undefined
+  var hideAnimation: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var hideOnMaskTap: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/Ext.Element/HTMLElement) */
-  var html: js.UndefOr[js.Any] = js.undefined
+  var html: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -377,22 +377,22 @@ trait IComponent
   var layoutOnOrientationChange: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var left: js.UndefOr[js.Any] = js.undefined
+  var left: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var maxHeight: js.UndefOr[js.Any] = js.undefined
+  var maxHeight: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var maxWidth: js.UndefOr[js.Any] = js.undefined
+  var maxWidth: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var minHeight: js.UndefOr[js.Any] = js.undefined
+  var minHeight: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var minWidth: js.UndefOr[js.Any] = js.undefined
+  var minWidth: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var modal: js.UndefOr[Boolean] = js.undefined
@@ -401,10 +401,10 @@ trait IComponent
   var monitorOrientation: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object/Array) */
-  var plugins: js.UndefOr[js.Any] = js.undefined
+  var plugins: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Ext.data.Model) */
   var record: js.UndefOr[IModel] = js.undefined
@@ -446,10 +446,10 @@ trait IComponent
   var resetFloating: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var right: js.UndefOr[js.Any] = js.undefined
+  var right: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean/String/Object) */
-  var scroll: js.UndefOr[js.Any] = js.undefined
+  var scroll: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of baseCls
     * @param baseCls String The new value.
@@ -459,12 +459,12 @@ trait IComponent
   /** [Method] Sets the value of border
     * @param border Number/String The new value.
     */
-  var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of bottom
     * @param bottom Number/String The new value.
     */
-  var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of centered
     * @param centered Boolean The new value.
@@ -474,17 +474,17 @@ trait IComponent
   /** [Method] Sets the value of cls
     * @param cls String/String[] The new value.
     */
-  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of contentEl
     * @param contentEl Ext.Element/HTMLElement/String The new value.
     */
-  var setContentEl: js.UndefOr[js.Function1[/* contentEl */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setContentEl: js.UndefOr[js.Function1[/* contentEl */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of data
     * @param data Object The new value.
     */
-  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of disabled
     * @param disabled Boolean The new value.
@@ -504,17 +504,17 @@ trait IComponent
   /** [Method] Sets the value of draggable
     * @param draggable Object The new value.
     */
-  var setDraggable: js.UndefOr[js.Function1[/* draggable */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDraggable: js.UndefOr[js.Function1[/* draggable */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of enterAnimation
     * @param enterAnimation String/Mixed The new value.
     */
-  var setEnterAnimation: js.UndefOr[js.Function1[/* enterAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setEnterAnimation: js.UndefOr[js.Function1[/* enterAnimation */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of exitAnimation
     * @param exitAnimation String/Mixed The new value.
     */
-  var setExitAnimation: js.UndefOr[js.Function1[/* exitAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setExitAnimation: js.UndefOr[js.Function1[/* exitAnimation */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of flex
     * @param flex Number The new value.
@@ -534,7 +534,7 @@ trait IComponent
   /** [Method] Sets the value of height
     * @param height Number/String The new value.
     */
-  var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of hidden
     * @param hidden Boolean The new value.
@@ -549,12 +549,12 @@ trait IComponent
   /** [Method] Sets the value of hideAnimation
     * @param hideAnimation String/Mixed The new value.
     */
-  var setHideAnimation: js.UndefOr[js.Function1[/* hideAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHideAnimation: js.UndefOr[js.Function1[/* hideAnimation */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of html
     * @param html String/Ext.Element/HTMLElement The new value.
     */
-  var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of itemId
     * @param itemId String The new value.
@@ -564,42 +564,42 @@ trait IComponent
   /** [Method] Sets the value of left
     * @param left Number/String The new value.
     */
-  var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of margin
     * @param margin Number/String The new value.
     */
-  var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of maxHeight
     * @param maxHeight Number/String The new value.
     */
-  var setMaxHeight: js.UndefOr[js.Function1[/* maxHeight */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMaxHeight: js.UndefOr[js.Function1[/* maxHeight */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of maxWidth
     * @param maxWidth Number/String The new value.
     */
-  var setMaxWidth: js.UndefOr[js.Function1[/* maxWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMaxWidth: js.UndefOr[js.Function1[/* maxWidth */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of minHeight
     * @param minHeight Number/String The new value.
     */
-  var setMinHeight: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMinHeight: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of minWidth
     * @param minWidth Number/String The new value.
     */
-  var setMinWidth: js.UndefOr[js.Function1[/* minWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMinWidth: js.UndefOr[js.Function1[/* minWidth */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of padding
     * @param padding Number/String The new value.
     */
-  var setPadding: js.UndefOr[js.Function1[/* padding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPadding: js.UndefOr[js.Function1[/* padding */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of plugins
     * @param plugins Object/Array The new value.
     */
-  var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of record
     * @param record Ext.data.Model The new value.
@@ -614,7 +614,7 @@ trait IComponent
   /** [Method] Sets the value of right
     * @param right Number/String The new value.
     */
-  var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method has moved to Ext Container  */
   var setScrollable: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -622,7 +622,7 @@ trait IComponent
   /** [Method] Sets the value of showAnimation
     * @param showAnimation String/Mixed The new value.
     */
-  var setShowAnimation: js.UndefOr[js.Function1[/* showAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setShowAnimation: js.UndefOr[js.Function1[/* showAnimation */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the size of the Component
     * @param width Number The new width for the Component.
@@ -635,7 +635,7 @@ trait IComponent
   /** [Method] Sets the value of style
     * @param style String/Object The new value.
     */
-  var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of styleHtmlCls
     * @param styleHtmlCls String The new value.
@@ -650,12 +650,12 @@ trait IComponent
   /** [Method] Sets the value of top
     * @param top Number/String The new value.
     */
-  var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of tpl
     * @param tpl String/String[]/Ext.Template/Ext.XTemplate[] The new value.
     */
-  var setTpl: js.UndefOr[js.Function1[/* tpl */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTpl: js.UndefOr[js.Function1[/* tpl */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of tplWriteMode
     * @param tplWriteMode String The new value.
@@ -670,7 +670,7 @@ trait IComponent
   /** [Method] Sets the value of width
     * @param width Number/String The new value.
     */
-  var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of zIndex
     * @param zIndex Number The new value.
@@ -681,10 +681,10 @@ trait IComponent
     * @param animation Object/Boolean You can specify an animation here or a bool to use the showAnimation config.
     * @returns Ext.Component
     */
-  var show: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var show: js.UndefOr[js.Function1[/* animation */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Config Option] (String/Mixed) */
-  var showAnimation: js.UndefOr[js.Any] = js.undefined
+  var showAnimation: js.UndefOr[Any] = js.undefined
   
   /** [Method] Shows this component by another component
     * @param component Ext.Component The target component to show this component by.
@@ -702,7 +702,7 @@ trait IComponent
   var stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var styleHtmlCls: js.UndefOr[java.lang.String] = js.undefined
@@ -711,10 +711,10 @@ trait IComponent
   var styleHtmlContent: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var top: js.UndefOr[js.Any] = js.undefined
+  var top: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/String[]/Ext.Template/Ext.XTemplate[]) */
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var tplWriteMode: js.UndefOr[java.lang.String] = js.undefined
@@ -736,11 +736,11 @@ trait IComponent
     * @param oldHtmlCls Object
     */
   var updateStyleHtmlCls: js.UndefOr[
-    js.Function2[/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* newHtmlCls */ js.UndefOr[Any], /* oldHtmlCls */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String[]) */
   var xtype: js.UndefOr[java.lang.String] = js.undefined
@@ -767,11 +767,11 @@ object IComponent {
     
     inline def setBaseClsUndefined: Self = StObject.set(x, "baseCls", js.undefined)
     
-    inline def setBorder(value: js.Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setBottom(value: js.Any): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Any): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
@@ -779,7 +779,7 @@ object IComponent {
     
     inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
-    inline def setCls(value: js.Any): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
+    inline def setCls(value: Any): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     
     inline def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
     
@@ -787,11 +787,11 @@ object IComponent {
     
     inline def setComponentClsUndefined: Self = StObject.set(x, "componentCls", js.undefined)
     
-    inline def setContentEl(value: js.Any): Self = StObject.set(x, "contentEl", value.asInstanceOf[js.Any])
+    inline def setContentEl(value: Any): Self = StObject.set(x, "contentEl", value.asInstanceOf[js.Any])
     
     inline def setContentElUndefined: Self = StObject.set(x, "contentEl", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -819,11 +819,11 @@ object IComponent {
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    inline def setEnterAnimation(value: js.Any): Self = StObject.set(x, "enterAnimation", value.asInstanceOf[js.Any])
+    inline def setEnterAnimation(value: Any): Self = StObject.set(x, "enterAnimation", value.asInstanceOf[js.Any])
     
     inline def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
     
-    inline def setExitAnimation(value: js.Any): Self = StObject.set(x, "exitAnimation", value.asInstanceOf[js.Any])
+    inline def setExitAnimation(value: Any): Self = StObject.set(x, "exitAnimation", value.asInstanceOf[js.Any])
     
     inline def setExitAnimationUndefined: Self = StObject.set(x, "exitAnimation", js.undefined)
     
@@ -843,7 +843,7 @@ object IComponent {
     
     inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
-    inline def setGetAlignmentInfo(value: (/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "getAlignmentInfo", js.Any.fromFunction2(value))
+    inline def setGetAlignmentInfo(value: (/* component */ js.UndefOr[Any], /* alignment */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "getAlignmentInfo", js.Any.fromFunction2(value))
     
     inline def setGetAlignmentInfoUndefined: Self = StObject.set(x, "getAlignmentInfo", js.undefined)
     
@@ -851,11 +851,11 @@ object IComponent {
     
     inline def setGetBaseClsUndefined: Self = StObject.set(x, "getBaseCls", js.undefined)
     
-    inline def setGetBorder(value: () => js.Any): Self = StObject.set(x, "getBorder", js.Any.fromFunction0(value))
+    inline def setGetBorder(value: () => Any): Self = StObject.set(x, "getBorder", js.Any.fromFunction0(value))
     
     inline def setGetBorderUndefined: Self = StObject.set(x, "getBorder", js.undefined)
     
-    inline def setGetBottom(value: () => js.Any): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
+    inline def setGetBottom(value: () => Any): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
     
     inline def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
     
@@ -863,15 +863,15 @@ object IComponent {
     
     inline def setGetCenteredUndefined: Self = StObject.set(x, "getCentered", js.undefined)
     
-    inline def setGetCls(value: () => js.Any): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
+    inline def setGetCls(value: () => Any): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
     inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
-    inline def setGetContentEl(value: () => js.Any): Self = StObject.set(x, "getContentEl", js.Any.fromFunction0(value))
+    inline def setGetContentEl(value: () => Any): Self = StObject.set(x, "getContentEl", js.Any.fromFunction0(value))
     
     inline def setGetContentElUndefined: Self = StObject.set(x, "getContentEl", js.undefined)
     
-    inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
@@ -891,11 +891,11 @@ object IComponent {
     
     inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
-    inline def setGetEnterAnimation(value: () => js.Any): Self = StObject.set(x, "getEnterAnimation", js.Any.fromFunction0(value))
+    inline def setGetEnterAnimation(value: () => Any): Self = StObject.set(x, "getEnterAnimation", js.Any.fromFunction0(value))
     
     inline def setGetEnterAnimationUndefined: Self = StObject.set(x, "getEnterAnimation", js.undefined)
     
-    inline def setGetExitAnimation(value: () => js.Any): Self = StObject.set(x, "getExitAnimation", js.Any.fromFunction0(value))
+    inline def setGetExitAnimation(value: () => Any): Self = StObject.set(x, "getExitAnimation", js.Any.fromFunction0(value))
     
     inline def setGetExitAnimationUndefined: Self = StObject.set(x, "getExitAnimation", js.undefined)
     
@@ -907,7 +907,7 @@ object IComponent {
     
     inline def setGetFloatingClsUndefined: Self = StObject.set(x, "getFloatingCls", js.undefined)
     
-    inline def setGetHeight(value: () => js.Any): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => Any): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
     inline def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
     
@@ -919,11 +919,11 @@ object IComponent {
     
     inline def setGetHiddenUndefined: Self = StObject.set(x, "getHidden", js.undefined)
     
-    inline def setGetHideAnimation(value: () => js.Any): Self = StObject.set(x, "getHideAnimation", js.Any.fromFunction0(value))
+    inline def setGetHideAnimation(value: () => Any): Self = StObject.set(x, "getHideAnimation", js.Any.fromFunction0(value))
     
     inline def setGetHideAnimationUndefined: Self = StObject.set(x, "getHideAnimation", js.undefined)
     
-    inline def setGetHtml(value: () => js.Any): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
+    inline def setGetHtml(value: () => Any): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
     
     inline def setGetHtmlUndefined: Self = StObject.set(x, "getHtml", js.undefined)
     
@@ -931,31 +931,31 @@ object IComponent {
     
     inline def setGetItemIdUndefined: Self = StObject.set(x, "getItemId", js.undefined)
     
-    inline def setGetLeft(value: () => js.Any): Self = StObject.set(x, "getLeft", js.Any.fromFunction0(value))
+    inline def setGetLeft(value: () => Any): Self = StObject.set(x, "getLeft", js.Any.fromFunction0(value))
     
     inline def setGetLeftUndefined: Self = StObject.set(x, "getLeft", js.undefined)
     
-    inline def setGetMargin(value: () => js.Any): Self = StObject.set(x, "getMargin", js.Any.fromFunction0(value))
+    inline def setGetMargin(value: () => Any): Self = StObject.set(x, "getMargin", js.Any.fromFunction0(value))
     
     inline def setGetMarginUndefined: Self = StObject.set(x, "getMargin", js.undefined)
     
-    inline def setGetMaxHeight(value: () => js.Any): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
+    inline def setGetMaxHeight(value: () => Any): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
     
     inline def setGetMaxHeightUndefined: Self = StObject.set(x, "getMaxHeight", js.undefined)
     
-    inline def setGetMaxWidth(value: () => js.Any): Self = StObject.set(x, "getMaxWidth", js.Any.fromFunction0(value))
+    inline def setGetMaxWidth(value: () => Any): Self = StObject.set(x, "getMaxWidth", js.Any.fromFunction0(value))
     
     inline def setGetMaxWidthUndefined: Self = StObject.set(x, "getMaxWidth", js.undefined)
     
-    inline def setGetMinHeight(value: () => js.Any): Self = StObject.set(x, "getMinHeight", js.Any.fromFunction0(value))
+    inline def setGetMinHeight(value: () => Any): Self = StObject.set(x, "getMinHeight", js.Any.fromFunction0(value))
     
     inline def setGetMinHeightUndefined: Self = StObject.set(x, "getMinHeight", js.undefined)
     
-    inline def setGetMinWidth(value: () => js.Any): Self = StObject.set(x, "getMinWidth", js.Any.fromFunction0(value))
+    inline def setGetMinWidth(value: () => Any): Self = StObject.set(x, "getMinWidth", js.Any.fromFunction0(value))
     
     inline def setGetMinWidthUndefined: Self = StObject.set(x, "getMinWidth", js.undefined)
     
-    inline def setGetPadding(value: () => js.Any): Self = StObject.set(x, "getPadding", js.Any.fromFunction0(value))
+    inline def setGetPadding(value: () => Any): Self = StObject.set(x, "getPadding", js.Any.fromFunction0(value))
     
     inline def setGetPaddingUndefined: Self = StObject.set(x, "getPadding", js.undefined)
     
@@ -963,7 +963,7 @@ object IComponent {
     
     inline def setGetParentUndefined: Self = StObject.set(x, "getParent", js.undefined)
     
-    inline def setGetPlugins(value: () => js.Any): Self = StObject.set(x, "getPlugins", js.Any.fromFunction0(value))
+    inline def setGetPlugins(value: () => Any): Self = StObject.set(x, "getPlugins", js.Any.fromFunction0(value))
     
     inline def setGetPluginsUndefined: Self = StObject.set(x, "getPlugins", js.undefined)
     
@@ -975,19 +975,19 @@ object IComponent {
     
     inline def setGetRenderToUndefined: Self = StObject.set(x, "getRenderTo", js.undefined)
     
-    inline def setGetRight(value: () => js.Any): Self = StObject.set(x, "getRight", js.Any.fromFunction0(value))
+    inline def setGetRight(value: () => Any): Self = StObject.set(x, "getRight", js.Any.fromFunction0(value))
     
     inline def setGetRightUndefined: Self = StObject.set(x, "getRight", js.undefined)
     
-    inline def setGetShowAnimation(value: () => js.Any): Self = StObject.set(x, "getShowAnimation", js.Any.fromFunction0(value))
+    inline def setGetShowAnimation(value: () => Any): Self = StObject.set(x, "getShowAnimation", js.Any.fromFunction0(value))
     
     inline def setGetShowAnimationUndefined: Self = StObject.set(x, "getShowAnimation", js.undefined)
     
-    inline def setGetSize(value: () => js.Any): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => Any): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     inline def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
     
-    inline def setGetStyle(value: () => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+    inline def setGetStyle(value: () => Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
     
     inline def setGetStyleHtmlCls(value: () => java.lang.String): Self = StObject.set(x, "getStyleHtmlCls", js.Any.fromFunction0(value))
     
@@ -999,11 +999,11 @@ object IComponent {
     
     inline def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
     
-    inline def setGetTop(value: () => js.Any): Self = StObject.set(x, "getTop", js.Any.fromFunction0(value))
+    inline def setGetTop(value: () => Any): Self = StObject.set(x, "getTop", js.Any.fromFunction0(value))
     
     inline def setGetTopUndefined: Self = StObject.set(x, "getTop", js.undefined)
     
-    inline def setGetTpl(value: () => js.Any): Self = StObject.set(x, "getTpl", js.Any.fromFunction0(value))
+    inline def setGetTpl(value: () => Any): Self = StObject.set(x, "getTpl", js.Any.fromFunction0(value))
     
     inline def setGetTplUndefined: Self = StObject.set(x, "getTpl", js.undefined)
     
@@ -1015,7 +1015,7 @@ object IComponent {
     
     inline def setGetUiUndefined: Self = StObject.set(x, "getUi", js.undefined)
     
-    inline def setGetWidth(value: () => js.Any): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Any): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
     inline def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
     
@@ -1031,7 +1031,7 @@ object IComponent {
     
     inline def setHasParentUndefined: Self = StObject.set(x, "hasParent", js.undefined)
     
-    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -1043,9 +1043,9 @@ object IComponent {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    inline def setHide(value: /* animation */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: /* animation */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
-    inline def setHideAnimation(value: js.Any): Self = StObject.set(x, "hideAnimation", value.asInstanceOf[js.Any])
+    inline def setHideAnimation(value: Any): Self = StObject.set(x, "hideAnimation", value.asInstanceOf[js.Any])
     
     inline def setHideAnimationUndefined: Self = StObject.set(x, "hideAnimation", js.undefined)
     
@@ -1055,7 +1055,7 @@ object IComponent {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
@@ -1087,27 +1087,27 @@ object IComponent {
     
     inline def setLayoutOnOrientationChangeUndefined: Self = StObject.set(x, "layoutOnOrientationChange", js.undefined)
     
-    inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMaxHeight(value: js.Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    inline def setMaxWidth(value: js.Any): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Any): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setMinHeight(value: js.Any): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: Any): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    inline def setMinWidth(value: js.Any): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Any): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
@@ -1119,11 +1119,11 @@ object IComponent {
     
     inline def setMonitorOrientationUndefined: Self = StObject.set(x, "monitorOrientation", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
@@ -1151,11 +1151,11 @@ object IComponent {
     
     inline def setResetFloatingUndefined: Self = StObject.set(x, "resetFloating", js.undefined)
     
-    inline def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    inline def setScroll(value: js.Any): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: Any): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
@@ -1163,11 +1163,11 @@ object IComponent {
     
     inline def setSetBaseClsUndefined: Self = StObject.set(x, "setBaseCls", js.undefined)
     
-    inline def setSetBorder(value: /* border */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBorder", js.Any.fromFunction1(value))
+    inline def setSetBorder(value: /* border */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBorder", js.Any.fromFunction1(value))
     
     inline def setSetBorderUndefined: Self = StObject.set(x, "setBorder", js.undefined)
     
-    inline def setSetBottom(value: /* bottom */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
+    inline def setSetBottom(value: /* bottom */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
     
     inline def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
     
@@ -1175,15 +1175,15 @@ object IComponent {
     
     inline def setSetCenteredUndefined: Self = StObject.set(x, "setCentered", js.undefined)
     
-    inline def setSetCls(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
+    inline def setSetCls(value: /* cls */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
     inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
-    inline def setSetContentEl(value: /* contentEl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContentEl", js.Any.fromFunction1(value))
+    inline def setSetContentEl(value: /* contentEl */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setContentEl", js.Any.fromFunction1(value))
     
     inline def setSetContentElUndefined: Self = StObject.set(x, "setContentEl", js.undefined)
     
-    inline def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
     inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
     
@@ -1199,15 +1199,15 @@ object IComponent {
     
     inline def setSetDockedUndefined: Self = StObject.set(x, "setDocked", js.undefined)
     
-    inline def setSetDraggable(value: /* draggable */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDraggable", js.Any.fromFunction1(value))
+    inline def setSetDraggable(value: /* draggable */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDraggable", js.Any.fromFunction1(value))
     
     inline def setSetDraggableUndefined: Self = StObject.set(x, "setDraggable", js.undefined)
     
-    inline def setSetEnterAnimation(value: /* enterAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEnterAnimation", js.Any.fromFunction1(value))
+    inline def setSetEnterAnimation(value: /* enterAnimation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setEnterAnimation", js.Any.fromFunction1(value))
     
     inline def setSetEnterAnimationUndefined: Self = StObject.set(x, "setEnterAnimation", js.undefined)
     
-    inline def setSetExitAnimation(value: /* exitAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setExitAnimation", js.Any.fromFunction1(value))
+    inline def setSetExitAnimation(value: /* exitAnimation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setExitAnimation", js.Any.fromFunction1(value))
     
     inline def setSetExitAnimationUndefined: Self = StObject.set(x, "setExitAnimation", js.undefined)
     
@@ -1223,7 +1223,7 @@ object IComponent {
     
     inline def setSetFloatingUndefined: Self = StObject.set(x, "setFloating", js.undefined)
     
-    inline def setSetHeight(value: /* height */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    inline def setSetHeight(value: /* height */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
     inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
@@ -1235,11 +1235,11 @@ object IComponent {
     
     inline def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
     
-    inline def setSetHideAnimation(value: /* hideAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHideAnimation", js.Any.fromFunction1(value))
+    inline def setSetHideAnimation(value: /* hideAnimation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHideAnimation", js.Any.fromFunction1(value))
     
     inline def setSetHideAnimationUndefined: Self = StObject.set(x, "setHideAnimation", js.undefined)
     
-    inline def setSetHtml(value: /* html */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHtml", js.Any.fromFunction1(value))
+    inline def setSetHtml(value: /* html */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHtml", js.Any.fromFunction1(value))
     
     inline def setSetHtmlUndefined: Self = StObject.set(x, "setHtml", js.undefined)
     
@@ -1247,35 +1247,35 @@ object IComponent {
     
     inline def setSetItemIdUndefined: Self = StObject.set(x, "setItemId", js.undefined)
     
-    inline def setSetLeft(value: /* left */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
+    inline def setSetLeft(value: /* left */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
     
     inline def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
     
-    inline def setSetMargin(value: /* margin */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMargin", js.Any.fromFunction1(value))
+    inline def setSetMargin(value: /* margin */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMargin", js.Any.fromFunction1(value))
     
     inline def setSetMarginUndefined: Self = StObject.set(x, "setMargin", js.undefined)
     
-    inline def setSetMaxHeight(value: /* maxHeight */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
+    inline def setSetMaxHeight(value: /* maxHeight */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
     
     inline def setSetMaxHeightUndefined: Self = StObject.set(x, "setMaxHeight", js.undefined)
     
-    inline def setSetMaxWidth(value: /* maxWidth */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
+    inline def setSetMaxWidth(value: /* maxWidth */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
     
     inline def setSetMaxWidthUndefined: Self = StObject.set(x, "setMaxWidth", js.undefined)
     
-    inline def setSetMinHeight(value: /* minHeight */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
+    inline def setSetMinHeight(value: /* minHeight */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
     
     inline def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
     
-    inline def setSetMinWidth(value: /* minWidth */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
+    inline def setSetMinWidth(value: /* minWidth */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
     
     inline def setSetMinWidthUndefined: Self = StObject.set(x, "setMinWidth", js.undefined)
     
-    inline def setSetPadding(value: /* padding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
+    inline def setSetPadding(value: /* padding */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
     
     inline def setSetPaddingUndefined: Self = StObject.set(x, "setPadding", js.undefined)
     
-    inline def setSetPlugins(value: /* plugins */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPlugins", js.Any.fromFunction1(value))
+    inline def setSetPlugins(value: /* plugins */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPlugins", js.Any.fromFunction1(value))
     
     inline def setSetPluginsUndefined: Self = StObject.set(x, "setPlugins", js.undefined)
     
@@ -1287,7 +1287,7 @@ object IComponent {
     
     inline def setSetRenderToUndefined: Self = StObject.set(x, "setRenderTo", js.undefined)
     
-    inline def setSetRight(value: /* right */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
+    inline def setSetRight(value: /* right */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
     
     inline def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
     
@@ -1295,7 +1295,7 @@ object IComponent {
     
     inline def setSetScrollableUndefined: Self = StObject.set(x, "setScrollable", js.undefined)
     
-    inline def setSetShowAnimation(value: /* showAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setShowAnimation", js.Any.fromFunction1(value))
+    inline def setSetShowAnimation(value: /* showAnimation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setShowAnimation", js.Any.fromFunction1(value))
     
     inline def setSetShowAnimationUndefined: Self = StObject.set(x, "setShowAnimation", js.undefined)
     
@@ -1303,7 +1303,7 @@ object IComponent {
     
     inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
     
-    inline def setSetStyle(value: /* style */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
+    inline def setSetStyle(value: /* style */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
     
     inline def setSetStyleHtmlCls(value: /* styleHtmlCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setStyleHtmlCls", js.Any.fromFunction1(value))
     
@@ -1315,11 +1315,11 @@ object IComponent {
     
     inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
     
-    inline def setSetTop(value: /* top */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
+    inline def setSetTop(value: /* top */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
     
     inline def setSetTopUndefined: Self = StObject.set(x, "setTop", js.undefined)
     
-    inline def setSetTpl(value: /* tpl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTpl", js.Any.fromFunction1(value))
+    inline def setSetTpl(value: /* tpl */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTpl", js.Any.fromFunction1(value))
     
     inline def setSetTplUndefined: Self = StObject.set(x, "setTpl", js.undefined)
     
@@ -1331,7 +1331,7 @@ object IComponent {
     
     inline def setSetUiUndefined: Self = StObject.set(x, "setUi", js.undefined)
     
-    inline def setSetWidth(value: /* width */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: /* width */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     
     inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
     
@@ -1339,9 +1339,9 @@ object IComponent {
     
     inline def setSetZIndexUndefined: Self = StObject.set(x, "setZIndex", js.undefined)
     
-    inline def setShow(value: /* animation */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: /* animation */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
-    inline def setShowAnimation(value: js.Any): Self = StObject.set(x, "showAnimation", value.asInstanceOf[js.Any])
+    inline def setShowAnimation(value: Any): Self = StObject.set(x, "showAnimation", value.asInstanceOf[js.Any])
     
     inline def setShowAnimationUndefined: Self = StObject.set(x, "showAnimation", js.undefined)
     
@@ -1357,7 +1357,7 @@ object IComponent {
     
     inline def setStopMaskTapEventUndefined: Self = StObject.set(x, "stopMaskTapEvent", js.undefined)
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleHtmlCls(value: java.lang.String): Self = StObject.set(x, "styleHtmlCls", value.asInstanceOf[js.Any])
     
@@ -1369,11 +1369,11 @@ object IComponent {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTop(value: js.Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     
@@ -1391,13 +1391,13 @@ object IComponent {
     
     inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
-    inline def setUpdateStyleHtmlCls(value: (/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateStyleHtmlCls", js.Any.fromFunction2(value))
+    inline def setUpdateStyleHtmlCls(value: (/* newHtmlCls */ js.UndefOr[Any], /* oldHtmlCls */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateStyleHtmlCls", js.Any.fromFunction2(value))
     
     inline def setUpdateStyleHtmlClsUndefined: Self = StObject.set(x, "updateStyleHtmlCls", js.undefined)
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     

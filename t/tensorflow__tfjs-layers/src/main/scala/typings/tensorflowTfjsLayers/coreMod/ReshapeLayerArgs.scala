@@ -24,6 +24,6 @@ object ReshapeLayerArgs {
     
     inline def setTargetShape(value: Shape): Self = StObject.set(x, "targetShape", value.asInstanceOf[js.Any])
     
-    inline def setTargetShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "targetShape", js.Array(value :_*))
+    inline def setTargetShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "targetShape", js.Array(value*))
   }
 }

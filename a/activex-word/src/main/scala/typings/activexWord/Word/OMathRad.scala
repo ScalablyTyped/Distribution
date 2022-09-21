@@ -16,7 +16,7 @@ trait OMathRad extends StObject {
   
   var HideDeg: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OMathRad_typekey")
   var WordDotOMathRad_typekey: OMathRad
@@ -29,7 +29,7 @@ object OMathRad {
     Deg: OMath,
     E: OMath,
     HideDeg: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     WordDotOMathRad_typekey: OMathRad
   ): OMathRad = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Deg = Deg.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], HideDeg = HideDeg.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object OMathRad {
     
     inline def setHideDeg(value: Boolean): Self = StObject.set(x, "HideDeg", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOMathRad_typekey(value: OMathRad): Self = StObject.set(x, "Word.OMathRad_typekey", value.asInstanceOf[js.Any])
   }

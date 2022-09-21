@@ -1,47 +1,54 @@
 package typings.peculiarJsonSchema
 
-import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/json-schema/build/types/validations", JSImport.Namespace)
-@js.native
-object validationsMod extends js.Object {
+object validationsMod {
+  
+  @JSImport("@peculiar/json-schema/build/types/validations", "EnumerationValidation")
   @js.native
-  class EnumerationValidation protected ()
+  open class EnumerationValidation protected ()
     extends typings.peculiarJsonSchema.enumerationMod.EnumerationValidation {
     def this(enumeration: js.Array[String]) = this()
   }
   
+  @JSImport("@peculiar/json-schema/build/types/validations", "ExclusiveValidation")
   @js.native
-  class ExclusiveValidation ()
+  open class ExclusiveValidation ()
     extends typings.peculiarJsonSchema.exclusiveMod.ExclusiveValidation {
     def this(min: Double) = this()
     def this(min: Double, max: Double) = this()
+    def this(min: Unit, max: Double) = this()
   }
   
+  @JSImport("@peculiar/json-schema/build/types/validations", "InclusiveValidation")
   @js.native
-  class InclusiveValidation ()
+  open class InclusiveValidation ()
     extends typings.peculiarJsonSchema.inclusiveMod.InclusiveValidation {
     def this(min: Double) = this()
     def this(min: Double, max: Double) = this()
+    def this(min: Unit, max: Double) = this()
   }
   
+  @JSImport("@peculiar/json-schema/build/types/validations", "LengthValidation")
   @js.native
-  class LengthValidation ()
+  open class LengthValidation ()
     extends typings.peculiarJsonSchema.lengthMod.LengthValidation {
     def this(length: Double) = this()
     def this(length: Double, minLength: Double) = this()
+    def this(length: Unit, minLength: Double) = this()
     def this(length: Double, minLength: Double, maxLength: Double) = this()
+    def this(length: Double, minLength: Unit, maxLength: Double) = this()
+    def this(length: Unit, minLength: Double, maxLength: Double) = this()
+    def this(length: Unit, minLength: Unit, maxLength: Double) = this()
   }
   
+  @JSImport("@peculiar/json-schema/build/types/validations", "PatternValidation")
   @js.native
-  class PatternValidation protected ()
+  open class PatternValidation protected ()
     extends typings.peculiarJsonSchema.patternMod.PatternValidation {
     def this(pattern: String) = this()
-    def this(pattern: RegExp) = this()
+    def this(pattern: js.RegExp) = this()
   }
-  
 }
-

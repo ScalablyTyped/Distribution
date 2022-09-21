@@ -70,11 +70,36 @@ object anon {
       
       inline def setContents(value: js.Array[TagNode | CommentNode | TextNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      inline def setContentsVarargs(value: (TagNode | CommentNode | TextNode)*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: (TagNode | CommentNode | TextNode)*): Self = StObject.set(x, "contents", js.Array(value*))
       
       inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setName(value: star | underscore | tick | tilde): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Key extends StObject {
+    
+    var key: String
+    
+    var location: LocationRange
+    
+    var value: String
+  }
+  object Key {
+    
+    inline def apply(key: String, location: LocationRange, value: String): Key = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Key]
+    }
+    
+    extension [Self <: Key](x: Self) {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,8 +145,8 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.OrderedListNode, 'start' | 'contents' | 'name' | 'indent'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
-  trait PickOrderedListNodestartc extends StObject {
+  /* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.OrderedListNode, 'contents' | 'name' | 'indent' | 'start'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
+  trait PickOrderedListNodeconten extends StObject {
     
     var contents: js.Array[OrderedListItemNode]
     
@@ -133,18 +158,18 @@ object anon {
     
     var start: Double
   }
-  object PickOrderedListNodestartc {
+  object PickOrderedListNodeconten {
     
-    inline def apply(contents: js.Array[OrderedListItemNode], indent: Double, location: LocationRange, start: Double): PickOrderedListNodestartc = {
+    inline def apply(contents: js.Array[OrderedListItemNode], indent: Double, location: LocationRange, start: Double): PickOrderedListNodeconten = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ol", start = start.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PickOrderedListNodestartc]
+      __obj.asInstanceOf[PickOrderedListNodeconten]
     }
     
-    extension [Self <: PickOrderedListNodestartc](x: Self) {
+    extension [Self <: PickOrderedListNodeconten](x: Self) {
       
       inline def setContents(value: js.Array[OrderedListItemNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      inline def setContentsVarargs(value: OrderedListItemNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: OrderedListItemNode*): Self = StObject.set(x, "contents", js.Array(value*))
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -156,8 +181,8 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.PipeNode, 'optional' | 'contents' | 'name' | 'nonTerminal' | 'params'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
-  trait PickPipeNodeoptionalconte extends StObject {
+  /* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.PipeNode, 'contents' | 'name' | 'nonTerminal' | 'params' | 'optional'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
+  trait PickPipeNodecontentsnamen extends StObject {
     
     var contents: Null
     
@@ -171,14 +196,14 @@ object anon {
     
     var params: String
   }
-  object PickPipeNodeoptionalconte {
+  object PickPipeNodecontentsnamen {
     
-    inline def apply(contents: Null, location: LocationRange, nonTerminal: String, optional: Boolean, params: String): PickPipeNodeoptionalconte = {
+    inline def apply(contents: Null, location: LocationRange, nonTerminal: String, optional: Boolean, params: String): PickPipeNodecontentsnamen = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "pipe", nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PickPipeNodeoptionalconte]
+      __obj.asInstanceOf[PickPipeNodecontentsnamen]
     }
     
-    extension [Self <: PickPipeNodeoptionalconte](x: Self) {
+    extension [Self <: PickPipeNodecontentsnamen](x: Self) {
       
       inline def setContents(value: Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -216,7 +241,7 @@ object anon {
       
       inline def setContents(value: js.Array[UnorderedListItemNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      inline def setContentsVarargs(value: UnorderedListItemNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: UnorderedListItemNode*): Self = StObject.set(x, "contents", js.Array(value*))
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       

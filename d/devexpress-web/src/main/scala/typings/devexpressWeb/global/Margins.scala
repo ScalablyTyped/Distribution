@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Margins")
 @js.native
-class Margins ()
+open class Margins ()
   extends StObject
      with typings.devexpressWeb.Margins {
   

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactCalendarTimeline.reactCalendarTimelineStrings.hour
   - typings.reactCalendarTimeline.reactCalendarTimelineStrings.day
   - typings.reactCalendarTimeline.reactCalendarTimelineStrings.week
+  - typings.reactCalendarTimeline.reactCalendarTimelineStrings.isoWeek
   - typings.reactCalendarTimeline.reactCalendarTimelineStrings.month
   - typings.reactCalendarTimeline.reactCalendarTimelineStrings.year
 */
@@ -19,6 +20,8 @@ object Unit {
   inline def day: typings.reactCalendarTimeline.reactCalendarTimelineStrings.day = "day".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.day]
   
   inline def hour: typings.reactCalendarTimeline.reactCalendarTimelineStrings.hour = "hour".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.hour]
+  
+  inline def isoWeek: typings.reactCalendarTimeline.reactCalendarTimelineStrings.isoWeek = "isoWeek".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.isoWeek]
   
   inline def minute: typings.reactCalendarTimeline.reactCalendarTimelineStrings.minute = "minute".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.minute]
   

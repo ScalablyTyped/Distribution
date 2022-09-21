@@ -22,6 +22,12 @@ trait CSSProperty extends StObject {
   var important: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Parsed longhand components of this property if it is a shorthand.
+    * This field will be empty if the given property is not a shorthand.
+    */
+  var longhandProperties: js.UndefOr[js.Array[CSSProperty]] = js.undefined
+  
+  /**
     * The property name.
     */
   var name: String
@@ -66,6 +72,12 @@ object CSSProperty {
     inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     
     inline def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
+    
+    inline def setLonghandProperties(value: js.Array[CSSProperty]): Self = StObject.set(x, "longhandProperties", value.asInstanceOf[js.Any])
+    
+    inline def setLonghandPropertiesUndefined: Self = StObject.set(x, "longhandProperties", js.undefined)
+    
+    inline def setLonghandPropertiesVarargs(value: CSSProperty*): Self = StObject.set(x, "longhandProperties", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

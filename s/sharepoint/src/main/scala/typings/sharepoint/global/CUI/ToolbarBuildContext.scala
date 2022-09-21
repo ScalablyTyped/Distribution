@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.ToolbarBuildContext")
 @js.native
-class ToolbarBuildContext ()
+open class ToolbarBuildContext ()
   extends StObject
      with typings.sharepoint.CUI.BuildContext

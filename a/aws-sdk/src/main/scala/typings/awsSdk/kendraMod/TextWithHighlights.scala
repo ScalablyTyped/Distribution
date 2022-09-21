@@ -29,7 +29,7 @@ object TextWithHighlights {
     
     inline def setHighlightsUndefined: Self = StObject.set(x, "Highlights", js.undefined)
     
-    inline def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "Highlights", js.Array(value :_*))
+    inline def setHighlightsVarargs(value: Highlight*): Self = StObject.set(x, "Highlights", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

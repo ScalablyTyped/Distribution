@@ -4,7 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReactPortal
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.react.mod._ReactNode because Already inherited */ trait ReactPortal
   extends StObject
      with ReactElement {
   
@@ -12,7 +13,7 @@ trait ReactPortal
 }
 object ReactPortal {
   
-  inline def apply(props: js.Any, `type`: js.Any): ReactPortal = {
+  inline def apply(props: Any, `type`: Any): ReactPortal = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactPortal]

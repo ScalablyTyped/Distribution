@@ -11,19 +11,19 @@ trait IEventCollision[T]
   /**
     * The collision pair
     */
-  var pairs: js.Array[IPair]
+  var pairs: js.Array[Pair]
 }
 object IEventCollision {
   
-  inline def apply[T](name: String, pairs: js.Array[IPair], source: T, timestamp: Double): IEventCollision[T] = {
+  inline def apply[T](name: String, pairs: js.Array[Pair], source: T, timestamp: Double): IEventCollision[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pairs = pairs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventCollision[T]]
   }
   
   extension [Self <: IEventCollision[?], T](x: Self & IEventCollision[T]) {
     
-    inline def setPairs(value: js.Array[IPair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
+    inline def setPairs(value: js.Array[Pair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
-    inline def setPairsVarargs(value: IPair*): Self = StObject.set(x, "pairs", js.Array(value :_*))
+    inline def setPairsVarargs(value: Pair*): Self = StObject.set(x, "pairs", js.Array(value*))
   }
 }

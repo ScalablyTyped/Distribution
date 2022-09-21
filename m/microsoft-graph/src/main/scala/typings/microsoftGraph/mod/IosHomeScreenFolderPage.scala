@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IosHomeScreenFolderPage extends StObject {
   
-  // A list of apps to appear on a page within a folder. This collection can contain a maximum of 500 elements.
+  /**
+    * A list of apps and web clips to appear on a page within a folder. This collection can contain a maximum of 500
+    * elements.
+    */
   var apps: js.UndefOr[js.Array[IosHomeScreenApp]] = js.undefined
   
   // Name of the folder page
@@ -25,7 +28,7 @@ object IosHomeScreenFolderPage {
     
     inline def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
     
-    inline def setAppsVarargs(value: IosHomeScreenApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: IosHomeScreenApp*): Self = StObject.set(x, "apps", js.Array(value*))
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -11,25 +11,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents how to filter a date when filtering on values.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait FilterDatetime extends StObject {
   
   /**
-    *
     * The date in ISO8601 format used to filter data.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var date: String
   
   /**
+    * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
     *
-    * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var specificity: FilterDatetimeSpecificity | Year | Month | Day | Hour | Minute | Second

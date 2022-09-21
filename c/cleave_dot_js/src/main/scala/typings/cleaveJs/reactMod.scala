@@ -14,10 +14,9 @@ object reactMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cleave.js/react", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends Component[Props, ComponentState, js.Any] {
+  open class ^ protected () extends Component[Props, ComponentState, Any] {
     def this(props: Props) = this()
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   @JSImport("cleave.js/react", JSImport.Namespace)
   @js.native

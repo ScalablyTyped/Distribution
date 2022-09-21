@@ -13,41 +13,17 @@ object commandDefinitionMod {
   
   @JSImport("webdriver-js-extender/built/lib/command_definition", "CommandDefinition")
   @js.native
-  class CommandDefinition[T] protected () extends StObject {
-    def this(name: String, params: js.Array[String], method: DELETE, path: String) = this()
-    def this(name: String, params: js.Array[String], method: GET, path: String) = this()
-    def this(name: String, params: js.Array[String], method: POST, path: String) = this()
-    def this(name: String, params: js.Array[String], method: PUT, path: String) = this()
+  open class CommandDefinition[T] protected () extends StObject {
+    def this(name: String, params: js.Array[String], method: GET | POST | DELETE | PUT, path: String) = this()
     def this(
       name: String,
       params: js.Array[String],
-      method: DELETE,
+      method: GET | POST | DELETE | PUT,
       path: String,
-      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
-    ) = this()
-    def this(
-      name: String,
-      params: js.Array[String],
-      method: GET,
-      path: String,
-      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
-    ) = this()
-    def this(
-      name: String,
-      params: js.Array[String],
-      method: POST,
-      path: String,
-      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
-    ) = this()
-    def this(
-      name: String,
-      params: js.Array[String],
-      method: PUT,
-      path: String,
-      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
+      preprocessParams: js.Function1[/* repeated */ Any, js.Array[Any]]
     ) = this()
     
-    def compile[T](extender: Extender, silentFailure: Boolean): js.Function1[/* repeated */ js.Any, js.Promise[T]] = js.native
+    def compile[T](extender: Extender, silentFailure: Boolean): js.Function1[/* repeated */ Any, js.Promise[T]] = js.native
     
     var method: GET | POST | DELETE | PUT = js.native
     
@@ -57,6 +33,6 @@ object commandDefinitionMod {
     
     var path: String = js.native
     
-    /* private */ var preprocessParams: js.Any = js.native
+    /* private */ var preprocessParams: Any = js.native
   }
 }

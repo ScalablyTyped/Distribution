@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "TopDownVehicle")
 @js.native
-class TopDownVehicle protected () extends StObject {
+open class TopDownVehicle protected () extends StObject {
   def this(chasisBody: Body) = this()
   def this(chasisBody: Body, options: TopDownVehicleOptions) = this()
   

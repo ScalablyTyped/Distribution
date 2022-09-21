@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def MFExtApplicationPlatformWeb: js.Any = js.Dynamic.global.selectDynamic("MFExtApplicationPlatformWeb").asInstanceOf[js.Any]
+inline def MFExtApplicationPlatformWeb: Any = js.Dynamic.global.selectDynamic("MFExtApplicationPlatformWeb").asInstanceOf[Any]

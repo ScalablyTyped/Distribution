@@ -10,10 +10,10 @@ Small shim providing `new Proxy(target, handler)`
 | ------------------ | :-------------: |
 | Full name          | harmony-proxy |
 | Keywords           | harmony, proxy, trap, es6 |
-| # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 142227 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2553.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/Swatinem/proxy#readme)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGLinearGradientElement")
 @js.native
-/* private */ class SVGLinearGradientElement ()
+/* private */ open class SVGLinearGradientElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGLinearGradientElement {
   

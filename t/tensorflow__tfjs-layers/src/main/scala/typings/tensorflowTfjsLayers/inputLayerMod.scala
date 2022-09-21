@@ -18,7 +18,7 @@ object inputLayerMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/input_layer", "InputLayer")
   @js.native
-  class InputLayer protected () extends Layer {
+  open class InputLayer protected () extends Layer {
     def this(args: InputLayerArgs) = this()
     
     var sparse: Boolean = js.native
@@ -75,7 +75,7 @@ object inputLayerMod {
       
       inline def setBatchShapeUndefined: Self = StObject.set(x, "batchShape", js.undefined)
       
-      inline def setBatchShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchShape", js.Array(value :_*))
+      inline def setBatchShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchShape", js.Array(value*))
       
       inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
@@ -89,7 +89,7 @@ object inputLayerMod {
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value*))
       
       inline def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
       
@@ -132,7 +132,7 @@ object inputLayerMod {
       
       inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value*))
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -146,7 +146,7 @@ object inputLayerMod {
       
       inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

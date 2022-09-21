@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiQuery")
 @js.native
-class KiiQuery ()
+open class KiiQuery ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiQuery {
   

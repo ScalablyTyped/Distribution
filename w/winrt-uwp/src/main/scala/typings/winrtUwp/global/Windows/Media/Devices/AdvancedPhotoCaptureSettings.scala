@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Devices.AdvancedPhotoCaptureSettings")
 @js.native
 /** Initializes a new instance of the AdvancedPhotoCaptureSettings class. */
-class AdvancedPhotoCaptureSettings ()
+open class AdvancedPhotoCaptureSettings ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.AdvancedPhotoCaptureSettings {
   

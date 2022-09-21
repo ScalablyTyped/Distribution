@@ -23,6 +23,6 @@ object ConditionalFormattingOptions {
     
     inline def setRules(value: js.Array[ConditionalFormattingRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: ConditionalFormattingRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ConditionalFormattingRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

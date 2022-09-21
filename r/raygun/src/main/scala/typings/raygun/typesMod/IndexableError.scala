@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IndexableError
   extends StObject
      with Error
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
 object IndexableError {
   
   inline def apply(message: String, name: String): IndexableError = {

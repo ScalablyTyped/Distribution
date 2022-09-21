@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.EasyScore")
 @js.native
-class EasyScore ()
+open class EasyScore ()
   extends StObject
      with typings.vexflow.Vex.Flow.EasyScore {
   def this(options: js.Object) = this()

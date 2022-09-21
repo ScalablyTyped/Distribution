@@ -16,7 +16,7 @@ trait OrderMethods extends StObject {
     */
   def apply(): js.Array[js.Array[String | Double]] = js.native
   def apply(order: js.Array[(js.Array[String | Double]) | Double | String]): Api = js.native
-  def apply(order: js.Array[String | Double], args: js.Any*): Api = js.native
+  def apply(order: js.Array[String | Double], args: Any*): Api = js.native
   
   /**
     * Get the fixed ordering that is applied to the table. If there is more than one table in the API's context,

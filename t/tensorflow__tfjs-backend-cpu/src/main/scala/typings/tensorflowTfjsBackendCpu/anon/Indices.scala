@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsBackendCpu.anon
 
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,14 +24,14 @@ object Indices {
     
     inline def setIndices(value: BackendValues): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    inline def setIndicesVarargs(value: Uint8Array*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "indices", js.Array(value*))
     
     inline def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
     
-    inline def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
+    inline def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value*))
     
     inline def setOutputValues(value: BackendValues): Self = StObject.set(x, "outputValues", value.asInstanceOf[js.Any])
     
-    inline def setOutputValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "outputValues", js.Array(value :_*))
+    inline def setOutputValuesVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "outputValues", js.Array(value*))
   }
 }

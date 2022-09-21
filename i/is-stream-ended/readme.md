@@ -10,15 +10,12 @@ Check if a stream has ended
 | ------------------ | :-------------: |
 | Full name          | is-stream-ended |
 | Keywords           | stream, end, ended, consumed, complete |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 84248936 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8783700.0 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/stephenplusplus/is-stream-ended#readme)
-- [Bugs](https://github.com/stephenplusplus/is-stream-ended/issues)
-- [Repository](https://github.com/stephenplusplus/is-stream-ended)
 - [Npm](https://www.npmjs.com/package/is-stream-ended)
     
 

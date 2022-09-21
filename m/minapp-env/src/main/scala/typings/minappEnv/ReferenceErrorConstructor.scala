@@ -2,7 +2,6 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.std.ReferenceError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ReferenceErrorConstructor
   extends StObject
-     with Instantiable0[ReferenceError]
-     with Instantiable1[/* message */ java.lang.String, ReferenceError] {
+     with Instantiable0[js.ReferenceError]
+     with Instantiable1[/* message */ java.lang.String, js.ReferenceError] {
   
-  def apply(): ReferenceError = js.native
-  def apply(message: java.lang.String): ReferenceError = js.native
+  def apply(): js.ReferenceError = js.native
+  def apply(message: java.lang.String): js.ReferenceError = js.native
 }

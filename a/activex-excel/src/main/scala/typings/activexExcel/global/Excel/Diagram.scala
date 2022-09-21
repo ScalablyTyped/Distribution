@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Diagram")
 @js.native
-/* private */ class Diagram ()
+/* private */ open class Diagram ()
   extends StObject
      with typings.activexExcel.Excel.Diagram {
   
@@ -37,13 +37,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def FitText(): Unit = js.native
   
   /* CompleteClass */
-  override def Nodes(Index: js.Any): typings.activexExcel.Excel.DiagramNode = js.native
+  override def Nodes(Index: Any): typings.activexExcel.Excel.DiagramNode = js.native
   /* CompleteClass */
   @JSName("Nodes")
   override val Nodes_Original: DiagramNodes = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Reverse: MsoTriState = js.native

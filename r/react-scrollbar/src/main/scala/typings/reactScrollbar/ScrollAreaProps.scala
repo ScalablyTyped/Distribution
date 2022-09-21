@@ -1,15 +1,16 @@
 package typings.reactScrollbar
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import typings.reactScrollbar.anon.ContainerHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollAreaProps
-  extends StObject
-     with Props[ScrollArea] {
+trait ScrollAreaProps extends StObject {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -17,7 +18,7 @@ trait ScrollAreaProps
   
   var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var contentWindow: js.UndefOr[js.Any] = js.undefined
+  var contentWindow: js.UndefOr[Any] = js.undefined
   
   var focusableTabIndex: js.UndefOr[Double] = js.undefined
   
@@ -31,7 +32,9 @@ trait ScrollAreaProps
   
   var onScroll: js.UndefOr[js.Function1[/* value */ ContainerHeight, Unit]] = js.undefined
   
-  var ownerDocument: js.UndefOr[js.Any] = js.undefined
+  var ownerDocument: js.UndefOr[Any] = js.undefined
+  
+  var ref: js.UndefOr[LegacyRef[ScrollArea]] = js.undefined
   
   var smoothScrolling: js.UndefOr[Boolean] = js.undefined
   
@@ -58,6 +61,10 @@ object ScrollAreaProps {
   
   extension [Self <: ScrollAreaProps](x: Self) {
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -70,7 +77,7 @@ object ScrollAreaProps {
     
     inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
-    inline def setContentWindow(value: js.Any): Self = StObject.set(x, "contentWindow", value.asInstanceOf[js.Any])
+    inline def setContentWindow(value: Any): Self = StObject.set(x, "contentWindow", value.asInstanceOf[js.Any])
     
     inline def setContentWindowUndefined: Self = StObject.set(x, "contentWindow", js.undefined)
     
@@ -98,9 +105,17 @@ object ScrollAreaProps {
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOwnerDocument(value: js.Any): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
+    inline def setOwnerDocument(value: Any): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
     
     inline def setOwnerDocumentUndefined: Self = StObject.set(x, "ownerDocument", js.undefined)
+    
+    inline def setRef(value: LegacyRef[ScrollArea]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ ScrollArea | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     inline def setSmoothScrolling(value: Boolean): Self = StObject.set(x, "smoothScrolling", value.asInstanceOf[js.Any])
     

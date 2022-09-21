@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetObjectListItem
   extends StObject
-     with GetObjectViewItem {
+     with GetObjectViewItem[Object] {
   
   /** The same as @link{value} */
   var doc: Object

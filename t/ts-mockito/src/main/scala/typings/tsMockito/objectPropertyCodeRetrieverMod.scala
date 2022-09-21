@@ -8,8 +8,8 @@ object objectPropertyCodeRetrieverMod {
   
   @JSImport("ts-mockito/lib/utils/ObjectPropertyCodeRetriever", "ObjectPropertyCodeRetriever")
   @js.native
-  class ObjectPropertyCodeRetriever () extends StObject {
+  open class ObjectPropertyCodeRetriever () extends StObject {
     
-    def get(`object`: js.Any, propertyName: String): String = js.native
+    def get(`object`: Any, propertyName: String): String = js.native
   }
 }

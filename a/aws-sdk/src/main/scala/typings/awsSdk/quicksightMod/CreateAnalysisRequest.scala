@@ -12,12 +12,12 @@ trait CreateAnalysisRequest extends StObject {
   var AnalysisId: RestrictiveResourceId
   
   /**
-    * The ID of the AWS account where you are creating an analysis.
+    * The ID of the Amazon Web Services account where you are creating an analysis.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * A descriptive name for the analysis that you're creating. This name displays for the analysis in the QuickSight console. 
+    * A descriptive name for the analysis that you're creating. This name displays for the analysis in the Amazon QuickSight console. 
     */
   var Name: AnalysisName
   
@@ -27,7 +27,7 @@ trait CreateAnalysisRequest extends StObject {
   var Parameters: js.UndefOr[typings.awsSdk.quicksightMod.Parameters] = js.undefined
   
   /**
-    * A structure that describes the principals and the resource-level permissions on an analysis. You can use the Permissions structure to grant permissions by providing a list of AWS Identity and Access Management (IAM) action information for each principal listed by Amazon Resource Name (ARN).  To specify no permissions, omit Permissions.
+    * A structure that describes the principals and the resource-level permissions on an analysis. You can use the Permissions structure to grant permissions by providing a list of Identity and Access Management (IAM) action information for each principal listed by Amazon Resource Name (ARN).  To specify no permissions, omit Permissions.
     */
   var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
@@ -42,7 +42,7 @@ trait CreateAnalysisRequest extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The ARN for the theme to apply to the analysis that you're creating. To see the theme in the QuickSight console, make sure that you have access to it.
+    * The ARN for the theme to apply to the analysis that you're creating. To see the theme in the Amazon QuickSight console, make sure that you have access to it.
     */
   var ThemeArn: js.UndefOr[Arn] = js.undefined
 }
@@ -74,7 +74,7 @@ object CreateAnalysisRequest {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value*))
     
     inline def setSourceEntity(value: AnalysisSourceEntity): Self = StObject.set(x, "SourceEntity", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object CreateAnalysisRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
     

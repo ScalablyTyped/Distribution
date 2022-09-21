@@ -8,9 +8,9 @@ trait DiagramChangeEvent
   extends StObject
      with DiagramEvent {
   
-  var added: js.UndefOr[js.Any] = js.undefined
+  var added: js.UndefOr[Any] = js.undefined
   
-  var removed: js.UndefOr[js.Any] = js.undefined
+  var removed: js.UndefOr[Any] = js.undefined
 }
 object DiagramChangeEvent {
   
@@ -21,11 +21,11 @@ object DiagramChangeEvent {
   
   extension [Self <: DiagramChangeEvent](x: Self) {
     
-    inline def setAdded(value: js.Any): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: Any): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
     inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
     
-    inline def setRemoved(value: js.Any): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Any): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
   }

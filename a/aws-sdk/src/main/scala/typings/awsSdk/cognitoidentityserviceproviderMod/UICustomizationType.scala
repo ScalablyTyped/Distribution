@@ -24,7 +24,7 @@ trait UICustomizationType extends StObject {
   /**
     * The creation date for the UI customization.
     */
-  var CreationDate: js.UndefOr[DateType] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The logo image for the UI customization.
@@ -34,7 +34,7 @@ trait UICustomizationType extends StObject {
   /**
     * The last-modified date for the UI customization.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The user pool ID for the user pool.
@@ -62,7 +62,7 @@ object UICustomizationType {
     
     inline def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -70,7 +70,7 @@ object UICustomizationType {
     
     inline def setImageUrlUndefined: Self = StObject.set(x, "ImageUrl", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

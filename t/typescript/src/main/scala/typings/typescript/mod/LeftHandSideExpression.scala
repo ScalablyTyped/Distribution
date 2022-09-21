@@ -9,5 +9,5 @@ trait LeftHandSideExpression
   extends StObject
      with UpdateExpression {
   
-  var _leftHandSideExpressionBrand: js.Any = js.native
+  var _leftHandSideExpressionBrand: Any = js.native
 }

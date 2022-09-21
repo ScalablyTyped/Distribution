@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Errors extends StObject {
   
-  def apply(Item: js.Any): Error = js.native
+  def apply(Item: Any): Error = js.native
   
   val Count: Double = js.native
   
-  def Item(Item: js.Any): Error = js.native
+  def Item(Item: Any): Error = js.native
   
   def Refresh(): Unit = js.native
 }

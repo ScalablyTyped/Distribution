@@ -35,7 +35,7 @@ object anon {
       
       inline def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value*))
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       

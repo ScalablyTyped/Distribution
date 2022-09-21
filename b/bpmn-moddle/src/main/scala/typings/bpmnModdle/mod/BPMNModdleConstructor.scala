@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BPMNModdleConstructor
   extends StObject
      with Instantiable0[BPMNModdle]
-     with Instantiable1[/* packages */ js.Any, BPMNModdle]
-     with Instantiable2[(/* packages */ js.Any) | (/* packages */ Unit), /* options */ Option, BPMNModdle]
+     with Instantiable1[/* packages */ Any, BPMNModdle]
+     with Instantiable2[(/* packages */ Any) | (/* packages */ Unit), /* options */ Option, BPMNModdle]

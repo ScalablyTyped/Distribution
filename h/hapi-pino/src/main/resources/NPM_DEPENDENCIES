@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hapi-pino" : "11.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hapi-pino" : "11.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

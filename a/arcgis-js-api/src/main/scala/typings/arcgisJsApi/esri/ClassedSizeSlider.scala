@@ -34,8 +34,8 @@ trait ClassedSizeSlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#updateClassBreakInfos)
     */
-  def updateClassBreakInfos(rendererResult: sizeClassBreaksRendererResult): Unit = js.native
-  def updateClassBreakInfos(rendererResult: sizeClassBreaksRendererResult, histogramResult: HistogramResult): Unit = js.native
+  def updateClassBreakInfos(rendererResult: sizeClassBreaksRendererResult): scala.Unit = js.native
+  def updateClassBreakInfos(rendererResult: sizeClassBreaksRendererResult, histogramResult: HistogramResult): scala.Unit = js.native
   
   /**
     * The view model for the ClassedSizeSlider widget.

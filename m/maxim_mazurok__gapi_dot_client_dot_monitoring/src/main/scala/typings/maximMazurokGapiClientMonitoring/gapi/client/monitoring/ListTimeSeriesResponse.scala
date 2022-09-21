@@ -37,7 +37,7 @@ object ListTimeSeriesResponse {
     
     inline def setExecutionErrorsUndefined: Self = StObject.set(x, "executionErrors", js.undefined)
     
-    inline def setExecutionErrorsVarargs(value: Status*): Self = StObject.set(x, "executionErrors", js.Array(value :_*))
+    inline def setExecutionErrorsVarargs(value: Status*): Self = StObject.set(x, "executionErrors", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object ListTimeSeriesResponse {
     
     inline def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
     
-    inline def setTimeSeriesVarargs(value: TimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value :_*))
+    inline def setTimeSeriesVarargs(value: TimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value*))
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

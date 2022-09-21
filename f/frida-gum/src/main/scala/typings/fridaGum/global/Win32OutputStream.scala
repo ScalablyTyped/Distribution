@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Win32OutputStream")
 @js.native
-class Win32OutputStream protected ()
+open class Win32OutputStream protected ()
   extends StObject
      with typings.fridaGum.OutputStream {
   /**

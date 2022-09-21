@@ -9,7 +9,7 @@ trait PictureEffects extends StObject {
   
   def apply(Index: Double): PictureEffect = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

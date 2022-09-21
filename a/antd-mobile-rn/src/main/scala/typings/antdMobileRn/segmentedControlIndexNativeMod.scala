@@ -10,7 +10,7 @@ object segmentedControlIndexNativeMod {
   /* was `typeof SegmentedIOS` */
   @JSImport("antd-mobile-rn/lib/segmented-control/index.native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antdMobileRn.segmentedIosMod.default
   /* static members */
   object default {

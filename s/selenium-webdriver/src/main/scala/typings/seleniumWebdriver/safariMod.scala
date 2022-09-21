@@ -17,11 +17,11 @@ object safariMod {
   
   @JSImport("selenium-webdriver/safari", "CommandExecutor")
   @js.native
-  class CommandExecutor () extends StObject
+  open class CommandExecutor () extends StObject
   
   @JSImport("selenium-webdriver/safari", "Driver")
   @js.native
-  class Driver protected () extends WebDriver {
+  open class Driver protected () extends WebDriver {
     def this(session: js.Promise[Session], executor: Executor) = this()
     // region Constructors
     /**
@@ -58,10 +58,10 @@ object safariMod {
     * @param {(Capabilities|Map<string, ?>|Object)=} other Another set of
     *     capabilities to initialize this instance from.
     */
-  class Options () extends Capabilities {
+  open class Options () extends Capabilities {
     def this(other: js.Object) = this()
     def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
-    def this(other: Map[String, js.Any]) = this()
+    def this(other: Map[String, Any]) = this()
     
     /**
       * Instruct the SafariDriver to use the Safari Technology Preview if true.
@@ -75,13 +75,13 @@ object safariMod {
   
   @JSImport("selenium-webdriver/safari", "Server")
   @js.native
-  class Server () extends StObject
+  open class Server () extends StObject
   
-  inline def cleanSession(desiredCapabilities: Capabilities): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanSession")(desiredCapabilities.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def cleanSession(desiredCapabilities: Capabilities): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanSession")(desiredCapabilities.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
-  inline def createConnectFile(serverUrl: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectFile")(serverUrl.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createConnectFile(serverUrl: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectFile")(serverUrl.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def findSafariDriver(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findSafariDriver")().asInstanceOf[js.Any]
+  inline def findSafariDriver(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findSafariDriver")().asInstanceOf[Any]
   
   inline def getRandomString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomString")().asInstanceOf[String]
 }

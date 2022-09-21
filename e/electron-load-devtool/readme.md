@@ -10,10 +10,10 @@ Easily load dev-tool for electron
 | ------------------ | :-------------: |
 | Full name          | electron-load-devtool |
 | Keywords           | electron, chrome, extention |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 20411 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 327.0 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/akameco/electron-load-devtool#readme)

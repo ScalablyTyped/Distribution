@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait ArrayPopPromise
-  extends js.Promise[js.Any] {
+  extends js.Promise[Any] {
   
   /** The value removed for the target array. */
-  var result: js.Any = js.native
+  var result: Any = js.native
 }

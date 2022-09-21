@@ -22,6 +22,8 @@ trait SceneViewTakeScreenshotOptions
   /**
     * The format of the resulting encoded data url.
     *
+    * @default png
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     */
   var format: js.UndefOr[jpg | png] = js.undefined
@@ -42,6 +44,8 @@ trait SceneViewTakeScreenshotOptions
   
   /**
     * The quality (0 to 100) of the encoded image when format is `jpg`.
+    *
+    * @default 98
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     */

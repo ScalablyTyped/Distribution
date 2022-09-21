@@ -8,7 +8,8 @@ trait BigQueryDestination extends StObject {
   
   /**
     * Required. The BigQuery dataset in format "projects/projectId/datasets/datasetId", to which the snapshot result should be exported. If this dataset does not exist, the export call
-    * returns an INVALID_ARGUMENT error.
+    * returns an INVALID_ARGUMENT error. Setting the `contentType` for `exportAssets` determines the [schema](/asset-inventory/docs/exporting-to-bigquery#bigquery-schema) of the BigQuery
+    * table. Setting `separateTablesPerAssetType` to `TRUE` also influences the schema.
     */
   var dataset: js.UndefOr[String] = js.undefined
   
@@ -19,7 +20,7 @@ trait BigQueryDestination extends StObject {
   var force: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [partition_spec] determines whether to export to partitioned table(s) and how to partition the data. If [partition_spec] is unset or [partition_spec.partion_key] is unset or
+    * [partition_spec] determines whether to export to partitioned table(s) and how to partition the data. If [partition_spec] is unset or [partition_spec.partition_key] is unset or
     * `PARTITION_KEY_UNSPECIFIED`, the snapshot results will be exported to non-partitioned table(s). [force] will decide whether to overwrite existing table(s). If [partition_spec] is
     * specified. First, the snapshot results will be written to partitioned table(s) with two additional timestamp columns, readTime and requestTime, one of which will be the partition
     * key. Secondly, in the case when any destination table already exists, it will first try to update existing table's schema as necessary by appending additional columns. Then, if

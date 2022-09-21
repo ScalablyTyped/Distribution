@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsRdsDbOptionGroupMembership extends StObject {
   
   /**
-    * 
+    * The name of the option group.
     */
   var OptionGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The status of the option group membership.
     */
   var Status: js.UndefOr[NonEmptyString] = js.undefined
 }

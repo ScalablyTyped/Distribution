@@ -22,6 +22,6 @@ object ComputedStyle {
     
     inline def setProperties(value: js.Array[NameValue]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: NameValue*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: NameValue*): Self = StObject.set(x, "properties", js.Array(value*))
   }
 }

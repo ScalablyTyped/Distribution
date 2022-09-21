@@ -42,6 +42,6 @@ object GetReplicationRunsResponse {
     
     inline def setReplicationRunListUndefined: Self = StObject.set(x, "replicationRunList", js.undefined)
     
-    inline def setReplicationRunListVarargs(value: ReplicationRun*): Self = StObject.set(x, "replicationRunList", js.Array(value :_*))
+    inline def setReplicationRunListVarargs(value: ReplicationRun*): Self = StObject.set(x, "replicationRunList", js.Array(value*))
   }
 }

@@ -1,7 +1,6 @@
 package typings.akuminaCore.mod.Digispace
 
 import typings.jquery.JQueryDeferred
-import typings.std.Date
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("akumina-core", "Digispace.Utilities")
 @js.native
-class Utilities () extends StObject
+open class Utilities () extends StObject
 object Utilities {
   
   @JSImport("akumina-core", "Digispace.Utilities")
@@ -25,11 +24,17 @@ object Utilities {
   inline def AllPermissionsNA(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AllPermissionsNA")().asInstanceOf[Unit]
   inline def AllPermissionsNA(isPagePropertisPopUp: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AllPermissionsNA")(isPagePropertisPopUp.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  /* static member */
+  inline def ArePersonasDefined(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ArePersonasDefined")().asInstanceOf[Boolean]
+  
   /**
     * Called to show confirmation pop up while exiting edit page mode.
     */
   /* static member */
-  inline def AttemptReset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AttemptReset")().asInstanceOf[Unit]
+  inline def AttemptReset(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AttemptReset")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /* static member */
+  inline def AzureADEnabledOrAppManagerLoggedIn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("AzureADEnabledOrAppManagerLoggedIn")().asInstanceOf[Boolean]
   
   /**
     * Check if iser is logged into appmanager and set the flag accordingly
@@ -42,12 +47,15 @@ object Utilities {
     *  @param dataType Required retrun type "bool", "boolean", "json"
     */
   /* static member */
-  inline def ConvertValue(value: js.Any, dataType: String): Boolean | JSON = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertValue")(value.asInstanceOf[js.Any], dataType.asInstanceOf[js.Any])).asInstanceOf[Boolean | JSON]
+  inline def ConvertValue(value: Any, dataType: String): Boolean | JSON = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertValue")(value.asInstanceOf[js.Any], dataType.asInstanceOf[js.Any])).asInstanceOf[Boolean | JSON]
+  
+  /* static member */
+  inline def CreatePageLink(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePageLink")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Added */
   @JSImport("akumina-core", "Digispace.Utilities.DateTimeManager")
   @js.native
-  class DateTimeManager () extends StObject
+  open class DateTimeManager () extends StObject
   object DateTimeManager {
     
     @JSImport("akumina-core", "Digispace.Utilities.DateTimeManager")
@@ -55,10 +63,10 @@ object Utilities {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def LocalToUtc(data: js.Any): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("LocalToUtc")(data.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def LocalToUtc(data: Any): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("LocalToUtc")(data.asInstanceOf[js.Any]).asInstanceOf[js.Date]
     
     /* static member */
-    inline def UtcToLocal(Date: Date, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UtcToLocal")(Date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def UtcToLocal(Date: js.Date, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UtcToLocal")(Date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /**
@@ -66,7 +74,10 @@ object Utilities {
     * @param array Array to be filter
     */
   /* static member */
-  inline def DeDupArray(array: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DeDupArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def DeDupArray(array: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DeDupArray")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  /* static member */
+  inline def ExitEditModeAndRefreshPage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ExitEditModeAndRefreshPage")().asInstanceOf[Unit]
   
   /**
     * @param result
@@ -74,7 +85,7 @@ object Utilities {
     * @returns Returns value of key ListID or SiteTitle(in case of isCurrent true)
     */
   /* static member */
-  inline def FindSearchResultCategory(result: js.Array[js.Any], isCurrent: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FindSearchResultCategory")(result.asInstanceOf[js.Any], isCurrent.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def FindSearchResultCategory(result: js.Array[Any], isCurrent: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FindSearchResultCategory")(result.asInstanceOf[js.Any], isCurrent.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /** Convert date string to jsformat date string
     *  Acceptable formats "mm/dd/yy", "dd/mm/yy", "dd-mm-yy", "mm/dd/yyyy", "dd/mm/yyyy", "dd-mm-yyyy"
@@ -87,7 +98,7 @@ object Utilities {
   
   /** Returns an object with pageId property */
   /* static member */
-  inline def GetCurrentPageId(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCurrentPageId")().asInstanceOf[js.Any]
+  inline def GetCurrentPageId(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCurrentPageId")().asInstanceOf[Any]
   
   /* static member */
   inline def GetDashboardGridByInstance(instanceId: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDashboardGridByInstance")(instanceId.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
@@ -101,7 +112,7 @@ object Utilities {
     }
     */
   /* static member */
-  inline def GetDateFormatForSiteLocaleId(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDateFormatForSiteLocaleId")().asInstanceOf[JQueryDeferred[js.Any]]
+  inline def GetDateFormatForSiteLocaleId(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDateFormatForSiteLocaleId")().asInstanceOf[JQueryDeferred[Any]]
   
   /* Added */
   /**
@@ -109,7 +120,7 @@ object Utilities {
     * @param id UserId
     */
   /* static member */
-  inline def GetEmployeeDetailUrl(id: String): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEmployeeDetailUrl")(id.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
+  inline def GetEmployeeDetailUrl(id: String): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEmployeeDetailUrl")(id.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Any]]
   
   /**
     * Get new GUID
@@ -124,12 +135,6 @@ object Utilities {
   inline def GetLinkParameter(itemUrl: String, paramToRetrieve: String, defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLinkParameter")(itemUrl.asInstanceOf[js.Any], paramToRetrieve.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
-    * relative path for manager script
-    */
-  /* static member */
-  inline def GetManagerUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetManagerUrl")().asInstanceOf[String]
-  
-  /**
     * Returns Page Grid for workspace widget Instancce Id's
     * @param instanceId Widget Instance ID
     */
@@ -137,26 +142,30 @@ object Utilities {
   inline def GetPageGridByInstance(instanceId: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPageGridByInstance")(instanceId.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /* static member */
-  inline def GetPropertyValue(requestIn: js.Any, key: String, defaultValue: String, dataType: String): Boolean | JSON = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPropertyValue")(requestIn.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], dataType.asInstanceOf[js.Any])).asInstanceOf[Boolean | JSON]
+  inline def GetPropertyValue(requestIn: Any, key: String, defaultValue: String, dataType: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPropertyValue")(requestIn.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], dataType.asInstanceOf[js.Any])).asInstanceOf[Any]
   
+  // Boolean, string, number, JSON object
   /** Retrive search parameter value from results */
   /* static member */
-  inline def GetSearchParameter(itemResults: js.Array[js.Any], paramToRetrieve: String, defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSearchParameter")(itemResults.asInstanceOf[js.Any], paramToRetrieve.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def GetSearchParameter(itemResults: js.Array[Any], paramToRetrieve: String, defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSearchParameter")(itemResults.asInstanceOf[js.Any], paramToRetrieve.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * @returns element of sharepoint bar
     */
   /* static member */
-  inline def GetSharepointBarElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSharepointBarElement")().asInstanceOf[js.Any]
+  inline def GetSharepointBarElement(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSharepointBarElement")().asInstanceOf[Any]
+  
+  /* static member */
+  inline def GetStickyNoteMessage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetStickyNoteMessage")().asInstanceOf[String]
   
   /**
     * @returns object with URL parameters
     */
   /* static member */
-  inline def GetUrlParameters(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetUrlParameters")().asInstanceOf[js.Any]
+  inline def GetUrlParameters(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetUrlParameters")().asInstanceOf[Any]
   
   /* static member */
-  inline def HandleSharepointBar(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HandleSharepointBar")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def HandleSharepointBar(args: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HandleSharepointBar")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Hide sharepoint bar
@@ -166,14 +175,26 @@ object Utilities {
   inline def HideSharepointBar(setCookie: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HideSharepointBar")(setCookie.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  inline def IsAppManagerLaguageCompatible(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAppManagerLaguageCompatible")().asInstanceOf[JQueryDeferred[js.Any]]
+  inline def IsAppManagerLaguageCompatible(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAppManagerLaguageCompatible")().asInstanceOf[JQueryDeferred[Any]]
+  
+  /* static member */
+  inline def IsLoggedinToAppManager(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLoggedinToAppManager")().asInstanceOf[Unit]
+  
+  /* static member */
+  inline def IsSignInAccount(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSignInAccount")().asInstanceOf[Boolean]
   
   /** Convert object keys to lowercase
     *  @param data JSON String of Array of objects
     *  @returns Array of JSON objects with all keys in lowercase
     */
   /* static member */
-  inline def JsonArrayKeyToLower(data: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonArrayKeyToLower")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def JsonArrayKeyToLower(data: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonArrayKeyToLower")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  
+  /* static member */
+  inline def LoginToAppmanagerHtml(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoginToAppmanagerHtml")().asInstanceOf[Unit]
+  
+  /* static member */
+  inline def OnSpaLinkClick(pageRoute: String, openInNewWindow: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OnSpaLinkClick")(pageRoute.asInstanceOf[js.Any], openInNewWindow.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Open interchange in new tab
@@ -182,10 +203,10 @@ object Utilities {
   inline def OpenInterchange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("OpenInterchange")().asInstanceOf[Unit]
   
   /* static member */
-  inline def PageBindCloseWidgets(args: js.Any, grid: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PageBindCloseWidgets")(args.asInstanceOf[js.Any], grid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PageBindCloseWidgets(args: Any, grid: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PageBindCloseWidgets")(args.asInstanceOf[js.Any], grid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def PageResizeWidgets(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PageResizeWidgets")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def PageResizeWidgets(args: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PageResizeWidgets")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Open link in new window/tab.
@@ -209,8 +230,8 @@ object Utilities {
     * @param actioncallback Method to be called when user click ok
     */
   /* static member */
-  inline def ShowAlertPopup(message: String, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ShowAlertPopup")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ShowAlertPopup(message: String, options: js.Any, actioncallback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ShowAlertPopup")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], actioncallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ShowAlertPopup(message: String, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ShowAlertPopup")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ShowAlertPopup(message: String, options: Any, actioncallback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ShowAlertPopup")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], actioncallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Show sharepoint bar

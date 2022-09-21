@@ -39,7 +39,7 @@ object CheckBox {
     
     /** returns the event model values
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the status whether the element is checked or not.
       */
@@ -66,7 +66,7 @@ object CheckBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -96,7 +96,7 @@ object CheckBox {
     
     /** returns the event arguments
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the status whether the element is checked or not.
       */
@@ -127,7 +127,7 @@ object CheckBox {
       
       inline def setCheckStateUndefined: Self = StObject.set(x, "checkState", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -276,7 +276,7 @@ object CheckBox {
     /** It allows to define the characteristics of the CheckBox control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specified value to be added an id attribute of the CheckBox.
       * @Default {null}
@@ -310,12 +310,12 @@ object CheckBox {
     /** Set the jQuery validation error message in CheckBox.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.undefined
+    var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Set the jQuery validation rules in CheckBox.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value attribute of the CheckBox.
       * @Default {null}
@@ -347,7 +347,7 @@ object CheckBox {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      inline def setCheckedVarargs(value: String*): Self = StObject.set(x, "checked", js.Array(value :_*))
+      inline def setCheckedVarargs(value: String*): Self = StObject.set(x, "checked", js.Array(value*))
       
       inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -377,7 +377,7 @@ object CheckBox {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -405,11 +405,11 @@ object CheckBox {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
       inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       

@@ -1,243 +1,227 @@
 package typings.iobroker.mod.global.ioBroker
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.iobroker.anon.Data
+import typings.iobroker.anon.IdString
+import typings.iobroker.anon.KinkeyofStateStateK
+import typings.iobroker.anon.KinkeyofStateStateKAck
+import typings.iobroker.anon.Rows
+import typings.iobroker.anon.RowsArray
+import typings.iobroker.anon.Stateidstringundefined
+import typings.iobroker.anon.Type
+import typings.iobroker.anon.Value
+import typings.iobroker.iobrokerStrings.read
+import typings.iobroker.mod.AtLeastOne
+import typings.iobroker.objectsMod.global.ioBroker.AnyObject
+import typings.iobroker.objectsMod.global.ioBroker.BaseObject
+import typings.iobroker.objectsMod.global.ioBroker.Object
+import typings.iobroker.objectsMod.global.ioBroker.ObjectIdToObjectType
+import typings.iobroker.objectsMod.global.ioBroker.ObjectType
+import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
+import typings.node.bufferMod.global.Buffer
+import typings.std.Exclude
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /** Infers the return type from a callback-style API and and leaves null and undefined in */
-type CallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = typings.iobroker.mod.global.ioBroker.SecondParameterOf[T]
+type CallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ Any, Any] */] = SecondParameterOf[T]
 
-type ChownFileCallback = js.Function3[
-/* err */ js.UndefOr[typings.node.NodeJS.ErrnoException | scala.Null], 
-/* entries */ js.UndefOr[js.Array[typings.iobroker.mod.global.ioBroker.ChownFileResult]], 
-/* id */ js.UndefOr[java.lang.String], 
-scala.Unit]
+type ChownFileCallback = js.Function2[
+/* err */ js.UndefOr[
+  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
+], 
+/* processed */ js.UndefOr[js.Array[ChownFileResult]], 
+Unit]
 
 type ChownObjectCallback = js.Function2[
-/* err */ js.UndefOr[typings.node.NodeJS.ErrnoException | scala.Null], 
-/* list */ js.UndefOr[js.Array[typings.iobroker.objectsMod.global.ioBroker.Object]], 
-scala.Unit]
+/* err */ js.UndefOr[
+  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
+], 
+/* list */ js.UndefOr[js.Array[Object]], 
+Unit]
 
-type DeleteStateCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* id */ js.UndefOr[java.lang.String], 
-scala.Unit]
+type DeleteStateCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* id */ js.UndefOr[String], Unit]
 
-type EmptyCallback = js.Function0[scala.Unit]
+type EmptyCallback = js.Function0[Unit]
 
-type Enum = js.Any
+type Enum = Any
 
 // TODO: define this https://github.com/ioBroker/ioBroker.js-controller/blob/master/lib/states/statesInMemServer.js#L873
-type EnumList = java.lang.String | js.Array[java.lang.String]
+type EnumList = String | js.Array[String]
 
 /** Special variant of ErrorCallback for methods where Node.js returns an ErrnoException */
-type ErrnoCallback = js.Function1[/* err */ js.UndefOr[typings.node.NodeJS.ErrnoException | scala.Null], scala.Unit]
+type ErrnoCallback = js.Function1[
+/* err */ js.UndefOr[
+  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
+], 
+Unit]
 
-type ErrorCallback = js.Function1[/* err */ js.UndefOr[typings.std.Error | scala.Null], scala.Unit]
+type ErrorCallback = js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
 
-type ErrorHandler = js.Function1[/* err */ typings.std.Error, scala.Boolean]
+type ErrorHandler = js.Function1[/* err */ js.Error, Boolean]
 
 type ExtendObjectCallback = js.Function3[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* result */ js.UndefOr[typings.iobroker.anon.Value], 
-/* id */ js.UndefOr[java.lang.String], 
-scala.Unit]
+/* err */ js.UndefOr[js.Error | Null], 
+/* result */ js.UndefOr[Value], 
+/* id */ js.UndefOr[String], 
+Unit]
 
 type FindObjectCallback = js.Function3[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* id */ js.UndefOr[java.lang.String], 
-/* name */ js.UndefOr[java.lang.String], 
-scala.Unit]
+/* err */ js.UndefOr[js.Error | Null], 
+/* id */ js.UndefOr[String], 
+/* name */ js.UndefOr[StringOrTranslated], 
+Unit]
 
 // TODO: Redefine callbacks as subclass of GenericCallback
-type GenericCallback[T] = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* result */ js.UndefOr[T], 
-scala.Unit]
+type GenericCallback[T] = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ js.UndefOr[T], Unit]
 
-type GetBinaryStateCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* state */ js.UndefOr[typings.node.Buffer], 
-scala.Unit]
+type GetBinaryStateCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* state */ js.UndefOr[Buffer], Unit]
 
-type GetBinaryStatePromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.CallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.GetBinaryStateCallback]]
+type GetBinaryStatePromise = js.Promise[CallbackReturnTypeOf[GetBinaryStateCallback]]
 
-type GetConfigKeysCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* list */ js.UndefOr[js.Array[java.lang.String]], 
-scala.Unit]
+type GetConfigKeysCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* list */ js.UndefOr[js.Array[String]], Unit]
 
 type GetEnumCallback = js.Function3[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* enums */ js.UndefOr[typings.std.Record[java.lang.String, typings.iobroker.mod.global.ioBroker.Enum]], 
-/* requestedEnum */ js.UndefOr[java.lang.String], 
-scala.Unit]
+/* err */ js.UndefOr[js.Error | Null], 
+/* enums */ js.UndefOr[Record[String, Enum]], 
+/* requestedEnum */ js.UndefOr[String], 
+Unit]
 
 type GetEnumsCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* result */ js.UndefOr[
-  org.scalablytyped.runtime.StringDictionary[typings.std.Record[java.lang.String, typings.iobroker.mod.global.ioBroker.Enum]]
-], 
-scala.Unit]
+/* err */ js.UndefOr[js.Error | Null], 
+/* result */ js.UndefOr[StringDictionary[Record[String, Enum]]], 
+Unit]
 
-type GetEnumsPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.NonNullCallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.GetEnumsCallback]]
+type GetEnumsPromise = js.Promise[NonNullCallbackReturnTypeOf[GetEnumsCallback]]
 
 type GetHistoryCallback = js.Function4[
-/* err */ typings.std.Error | scala.Null, 
-/* result */ js.UndefOr[typings.iobroker.mod.global.ioBroker.GetHistoryResult], 
-/* step */ js.UndefOr[scala.Double], 
-/* sessionId */ js.UndefOr[java.lang.String], 
-scala.Unit]
+/* err */ js.Error | Null, 
+/* result */ js.UndefOr[GetHistoryResult], 
+/* step */ js.UndefOr[Double], 
+/* sessionId */ js.UndefOr[String], 
+Unit]
 
-type GetHistoryResult = js.Array[typings.iobroker.anon.Stateidstringundefined]
+type GetHistoryResult = js.Array[Stateidstringundefined]
 
-type GetObjectCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* obj */ js.UndefOr[typings.iobroker.objectsMod.global.ioBroker.Object | scala.Null], 
-scala.Unit]
+type GetObjectCallback[T /* <: String */] = js.Function2[
+/* err */ js.UndefOr[js.Error | Null], 
+/* obj */ js.UndefOr[(ObjectIdToObjectType[T, read]) | Null], 
+Unit]
 
-type GetObjectListCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* result */ js.UndefOr[typings.iobroker.anon.RowsArray], 
-scala.Unit]
+type GetObjectListCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ js.UndefOr[RowsArray], Unit]
 
 /** Parameters for adapter.getObjectList */
-type GetObjectListParams = typings.iobroker.mod.global.ioBroker.GetObjectViewParams
+type GetObjectListParams = GetObjectViewParams
 
-type GetObjectListPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.NonNullCallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.GetObjectListCallback]]
+type GetObjectListPromise = js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]]
 
-type GetObjectPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.CallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.GetObjectCallback]]
+type GetObjectPromise[T /* <: String */] = js.Promise[CallbackReturnTypeOf[GetObjectCallback[T]]]
 
-type GetObjectViewCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* result */ js.UndefOr[typings.iobroker.anon.Rows], 
-scala.Unit]
+type GetObjectViewCallback[T] = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ js.UndefOr[Rows[T]], Unit]
 
-type GetObjectViewPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.NonNullCallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.GetObjectViewCallback]]
+type GetObjectViewPromise[T] = js.Promise[NonNullCallbackReturnTypeOf[GetObjectViewCallback[T]]]
 
 type GetObjectsCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* objects */ js.UndefOr[
-  typings.std.Record[java.lang.String, typings.iobroker.objectsMod.global.ioBroker.Object]
-], 
-scala.Unit]
+/* err */ js.UndefOr[js.Error | Null], 
+/* objects */ js.UndefOr[Record[String, Object]], 
+Unit]
 
 // This is a version used by GetDevices/GetChannelsOf/GetStatesOf
-type GetObjectsCallback3[T /* <: typings.iobroker.objectsMod.global.ioBroker.BaseObject */] = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* result */ js.UndefOr[js.Array[T]], 
-scala.Unit]
+type GetObjectsCallback3[T /* <: BaseObject */] = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ js.UndefOr[js.Array[T]], Unit]
 
-type GetObjectsPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.NonNullCallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.GetObjectsCallback]]
+type GetObjectsCallbackTyped[T /* <: ObjectType */] = js.Function2[
+/* err */ js.UndefOr[js.Error | Null], 
+/* objects */ js.UndefOr[Record[String, AnyObject & Type[T]]], 
+Unit]
 
-type GetSessionCallback = js.Function1[/* session */ typings.iobroker.mod.global.ioBroker.Session, scala.Unit]
+type GetObjectsPromise = js.Promise[NonNullCallbackReturnTypeOf[GetObjectsCallback]]
 
-type GetStateCallback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* state */ js.UndefOr[typings.iobroker.mod.global.ioBroker.State | scala.Null], 
-scala.Unit]
+type GetObjectsPromiseTyped[T /* <: ObjectType */] = js.Promise[NonNullCallbackReturnTypeOf[GetObjectsCallbackTyped[T]]]
 
-type GetStatePromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.CallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.GetStateCallback]]
+type GetSessionCallback = js.Function1[/* session */ Session, Unit]
 
-type GetStatesCallback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* states */ js.UndefOr[typings.std.Record[java.lang.String, typings.iobroker.mod.global.ioBroker.State]], 
-scala.Unit]
+type GetStateCallback = js.Function2[/* err */ js.Error | Null, /* state */ js.UndefOr[State | Null], Unit]
 
-type GetStatesPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.CallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.GetStatesCallback]]
+type GetStatePromise = js.Promise[CallbackReturnTypeOf[GetStateCallback]]
 
-type Log = js.Any
+type GetStatesCallback = js.Function2[/* err */ js.Error | Null, /* states */ js.UndefOr[Record[String, State]], Unit]
 
-type MessageCallback = js.Function1[
-/* response */ js.UndefOr[typings.iobroker.mod.global.ioBroker.Message], 
-scala.Unit]
+type GetStatesPromise = js.Promise[NonNullCallbackReturnTypeOf[GetStatesCallback]]
 
-type MessageHandler = js.Function1[
-/* obj */ typings.iobroker.mod.global.ioBroker.Message, 
-scala.Unit | js.Promise[scala.Unit]]
+type Log = Any
 
-type MessagePayload = java.lang.String | (typings.std.Record[java.lang.String, js.Any])
+type MessageCallback = js.Function1[/* response */ js.UndefOr[Message], Unit]
+
+type MessageHandler = js.Function1[/* obj */ Message, Unit | js.Promise[Unit]]
+
+type MessagePayload = String | (Record[String, Any])
 
 /** Infers the return type from a callback-style API and strips out null and undefined */
-type NonNullCallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = typings.std.Exclude[typings.iobroker.mod.global.ioBroker.SecondParameterOf[T], js.UndefOr[scala.Null]]
+type NonNullCallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ Any, Any] */] = Exclude[SecondParameterOf[T], js.UndefOr[Null]]
 
-type ObjectChangeHandler = js.Function2[
-/* id */ java.lang.String, 
-/* obj */ js.UndefOr[typings.iobroker.objectsMod.global.ioBroker.Object | scala.Null], 
-scala.Unit | js.Promise[scala.Unit]]
+type ObjectChangeHandler = js.Function2[/* id */ String, /* obj */ js.UndefOr[Object | Null], Unit | js.Promise[Unit]]
 
 // TODO: implement this
-type Plugin = typings.std.Record[java.lang.String, js.Any]
+type Plugin = Record[String, Any]
 
 type ReadDirCallback = js.Function2[
-/* err */ js.UndefOr[typings.node.NodeJS.ErrnoException | scala.Null], 
-/* entries */ js.UndefOr[js.Array[typings.iobroker.mod.global.ioBroker.ReadDirResult]], 
-scala.Unit]
+/* err */ js.UndefOr[
+  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
+], 
+/* entries */ js.UndefOr[js.Array[ReadDirResult]], 
+Unit]
 
-type ReadDirPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.NonNullCallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.ReadDirCallback]]
+type ReadDirPromise = js.Promise[NonNullCallbackReturnTypeOf[ReadDirCallback]]
 
 type ReadFileCallback = js.Function3[
-/* err */ js.UndefOr[typings.node.NodeJS.ErrnoException | scala.Null], 
-/* file */ js.UndefOr[typings.node.Buffer | java.lang.String], 
-/* mimeType */ js.UndefOr[java.lang.String], 
-scala.Unit]
+/* err */ js.UndefOr[
+  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
+], 
+/* data */ js.UndefOr[Buffer | String], 
+/* mimeType */ js.UndefOr[String], 
+Unit]
 
-type ReadFilePromise = js.Promise[typings.iobroker.anon.File]
+type ReadFilePromise = js.Promise[Data]
 
 // end interface Adapter
-type ReadyHandler = js.Function0[scala.Unit | js.Promise[scala.Unit]]
+type ReadyHandler = js.Function0[Unit | js.Promise[Unit]]
 
 type RmCallback = js.Function2[
-/* err */ js.UndefOr[typings.node.NodeJS.ErrnoException | scala.Null], 
-/* entries */ js.UndefOr[js.Array[typings.iobroker.mod.global.ioBroker.RmResult]], 
-scala.Unit]
+/* err */ js.UndefOr[
+  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
+], 
+/* entries */ js.UndefOr[js.Array[RmResult]], 
+Unit]
 
-type SecondParameterOf[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = js.Any
+type SecondParameterOf[T /* <: js.Function1[/* repeated */ Any, Any] */] = Any
 
-type Session = js.Any
+type Session = Any
 
-type SetObjectCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* obj */ js.UndefOr[typings.iobroker.anon.IdString], 
-scala.Unit]
+type SetObjectCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* obj */ js.UndefOr[IdString], Unit]
 
-type SetObjectPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.NonNullCallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.SetObjectCallback]]
+type SetObjectPromise = js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]]
 
-type SetStateCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* id */ js.UndefOr[java.lang.String], 
-scala.Unit]
+type SetStateCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* id */ js.UndefOr[String], Unit]
 
 type SetStateChangedCallback = js.Function3[
-/* err */ typings.std.Error | scala.Null, 
-/* id */ js.UndefOr[java.lang.String], 
-/* notChanged */ js.UndefOr[scala.Boolean], 
-scala.Unit]
+/* err */ js.Error | Null, 
+/* id */ js.UndefOr[String], 
+/* notChanged */ js.UndefOr[Boolean], 
+Unit]
 
-type SetStateChangedPromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.NonNullCallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.SetStateChangedCallback]]
+type SetStateChangedPromise = js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]]
 
-type SetStatePromise = js.Promise[
-typings.iobroker.mod.global.ioBroker.NonNullCallbackReturnTypeOf[typings.iobroker.mod.global.ioBroker.SetStateCallback]]
+type SetStatePromise = js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]]
 
-type StateChangeHandler = js.Function2[
-/* id */ java.lang.String, 
-/* obj */ js.UndefOr[typings.iobroker.mod.global.ioBroker.State | scala.Null], 
-scala.Unit | js.Promise[scala.Unit]]
+type SettableState = AtLeastOne[State, KinkeyofStateStateK, KinkeyofStateStateKAck]
 
-type UnloadHandler = js.Function1[
-/* callback */ typings.iobroker.mod.global.ioBroker.EmptyCallback, 
-scala.Unit | js.Promise[scala.Unit]]
+type StateChangeHandler = js.Function2[/* id */ String, /* obj */ js.UndefOr[State | Null], Unit | js.Promise[Unit]]
 
-type UserGroup = js.Any
+type StateValue = String | Double | Boolean | Null
+
+type UnloadHandler = (js.Function1[/* callback */ EmptyCallback, Unit]) | js.Function0[js.Promise[Unit]]
+
+type UserGroup = Any

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "DeleteBucketTaggingCommand")
 @js.native
-class DeleteBucketTaggingCommand protected ()
+open class DeleteBucketTaggingCommand protected ()
   extends typings.awsSdkClientS3Browser.deleteBucketTaggingCommandMod.DeleteBucketTaggingCommand {
   def this(input: DeleteBucketTaggingInput) = this()
 }

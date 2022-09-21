@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "GLSLDataSender")
 @js.native
-class GLSLDataSender protected ()
+open class GLSLDataSender protected ()
   extends typings.wonderJs.glsldatasenderMod.GLSLDataSender {
   def this(program: typings.wonderJs.programMod.Program) = this()
 }

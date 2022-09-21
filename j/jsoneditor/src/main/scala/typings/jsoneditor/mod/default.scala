@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsoneditor", JSImport.Default)
 @js.native
-class default protected ()
+open class default protected ()
   extends StObject
      with JSONEditor {
   /**
@@ -21,8 +21,8 @@ class default protected ()
     */
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, options: JSONEditorOptions) = this()
-  def this(container: HTMLElement, options: Unit, json: js.Any) = this()
-  def this(container: HTMLElement, options: JSONEditorOptions, json: js.Any) = this()
+  def this(container: HTMLElement, options: Unit, json: Any) = this()
+  def this(container: HTMLElement, options: JSONEditorOptions, json: Any) = this()
 }
 /* static members */
 object default {
@@ -52,8 +52,8 @@ object default {
     */
   @JSImport("jsoneditor", "default.VanillaPicker")
   @js.native
-  def VanillaPicker: js.Any = js.native
-  inline def VanillaPicker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VanillaPicker")(x.asInstanceOf[js.Any])
+  def VanillaPicker: Any = js.native
+  inline def VanillaPicker_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VanillaPicker")(x.asInstanceOf[js.Any])
   
   /**
     * Access to the bundled Ace editor, via the brace library. Ace is used in code mode. Same as `var ace = require('brace');`.

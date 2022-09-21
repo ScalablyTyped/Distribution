@@ -16,7 +16,7 @@ trait ReferenceOptions
     *
     * @example `(value) => value + 5`
     */
-  var adjust: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var adjust: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
   
   /**
     * If set to a number, sets the reference relative starting point.
@@ -40,7 +40,7 @@ trait ReferenceOptions
     * If the resolved value is not in the map, it is returned as-is.
     * Cannot be used with `adjust`.
     */
-  var map: js.UndefOr[js.Array[js.Tuple2[js.Any, js.Any]]] = js.undefined
+  var map: js.UndefOr[js.Array[js.Tuple2[Any, Any]]] = js.undefined
   
   /**
     * overrides default prefix characters.
@@ -62,7 +62,7 @@ object ReferenceOptions {
   
   extension [Self <: ReferenceOptions](x: Self) {
     
-    inline def setAdjust(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "adjust", js.Any.fromFunction1(value))
+    inline def setAdjust(value: /* value */ Any => Any): Self = StObject.set(x, "adjust", js.Any.fromFunction1(value))
     
     inline def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
     
@@ -78,11 +78,11 @@ object ReferenceOptions {
     
     inline def setIterablesUndefined: Self = StObject.set(x, "iterables", js.undefined)
     
-    inline def setMap(value: js.Array[js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Array[js.Tuple2[Any, Any]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setMapVarargs(value: (js.Tuple2[js.Any, js.Any])*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: (js.Tuple2[Any, Any])*): Self = StObject.set(x, "map", js.Array(value*))
     
     inline def setPrefix(value: Global): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

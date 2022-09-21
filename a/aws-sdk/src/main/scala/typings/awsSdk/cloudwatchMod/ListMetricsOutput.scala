@@ -29,7 +29,7 @@ object ListMetricsOutput {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "Metrics", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

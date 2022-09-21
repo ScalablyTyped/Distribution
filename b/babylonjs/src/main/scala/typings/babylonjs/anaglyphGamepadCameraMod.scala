@@ -11,7 +11,7 @@ object anaglyphGamepadCameraMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/anaglyphGamepadCamera", "AnaglyphGamepadCamera")
   @js.native
-  class AnaglyphGamepadCamera protected () extends GamepadCamera {
+  open class AnaglyphGamepadCamera protected () extends GamepadCamera {
     /**
       * Creates a new AnaglyphGamepadCamera
       * @param name defines camera name
@@ -19,6 +19,9 @@ object anaglyphGamepadCameraMod {
       * @param interaxialDistance defines distance between each color axis
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double) = this()
     def this(name: String, position: Vector3, interaxialDistance: Double, scene: Scene) = this()
+    
+    /* protected */ var _setRigMode: Any = js.native
   }
 }

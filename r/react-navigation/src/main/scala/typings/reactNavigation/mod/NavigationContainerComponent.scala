@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NavigationContainerComponent
   extends Component[
-      (NavigationContainerProps[js.Object, js.Object, js.Any]) & (NavigationNavigatorProps[js.Any, js.Object, js.Any]), 
+      (NavigationContainerProps[js.Object, js.Object, Any]) & (NavigationNavigatorProps[Any, js.Object, Any]), 
       js.Object, 
-      js.Any
+      Any
     ] {
   
   var dispatch: NavigationDispatch = js.native

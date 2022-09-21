@@ -12,7 +12,7 @@ trait JsonBodyParserOptions extends StObject {
   
   var overrideParams: js.UndefOr[Boolean] = js.undefined
   
-  var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]] = js.undefined
+  var reviver: js.UndefOr[js.Function2[/* key */ Any, /* value */ Any, Any]] = js.undefined
 }
 object JsonBodyParserOptions {
   
@@ -35,7 +35,7 @@ object JsonBodyParserOptions {
     
     inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
     
-    inline def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+    inline def setReviver(value: (/* key */ Any, /* value */ Any) => Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
     
     inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
   }

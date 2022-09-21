@@ -9,7 +9,7 @@ trait IosHomeScreenFolder
      with IosHomeScreenItem {
   
   /**
-    * Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500
+    * Pages of Home Screen Layout Icons which must be applications or web clips. This collection can contain a maximum of 500
     * elements.
     */
   var pages: js.UndefOr[js.Array[IosHomeScreenFolderPage]] = js.undefined
@@ -27,6 +27,6 @@ object IosHomeScreenFolder {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: IosHomeScreenFolderPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: IosHomeScreenFolderPage*): Self = StObject.set(x, "pages", js.Array(value*))
   }
 }

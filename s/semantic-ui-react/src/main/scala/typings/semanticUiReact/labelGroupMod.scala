@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticSIZES
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
@@ -15,12 +15,12 @@ object labelGroupMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Label/LabelGroup", JSImport.Default)
   @js.native
-  val default: StatelessComponent[LabelGroupProps] = js.native
+  val default: FC[LabelGroupProps] = js.native
   
   trait LabelGroupProps
     extends StObject
        with StrictLabelGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object LabelGroupProps {
     
     inline def apply(): LabelGroupProps = {
@@ -32,7 +32,7 @@ object labelGroupMod extends Shortcut {
   trait StrictLabelGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -64,7 +64,7 @@ object labelGroupMod extends Shortcut {
     
     extension [Self <: StrictLabelGroupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -98,8 +98,8 @@ object labelGroupMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[LabelGroupProps]
+  type _To = FC[LabelGroupProps]
   
   /* This means you don't have to write `default`, but can instead just say `labelGroupMod.foo` */
-  override def _to: StatelessComponent[LabelGroupProps] = default
+  override def _to: FC[LabelGroupProps] = default
 }

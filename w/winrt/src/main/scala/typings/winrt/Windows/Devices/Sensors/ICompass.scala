@@ -10,7 +10,7 @@ trait ICompass extends StObject {
   
   var minimumReportInterval: Double
   
-  var onreadingchanged: js.Any
+  var onreadingchanged: Any
   
   var reportInterval: Double
 }
@@ -19,7 +19,7 @@ object ICompass {
   inline def apply(
     getCurrentReading: () => CompassReading,
     minimumReportInterval: Double,
-    onreadingchanged: js.Any,
+    onreadingchanged: Any,
     reportInterval: Double
   ): ICompass = {
     val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])
@@ -32,7 +32,7 @@ object ICompass {
     
     inline def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
     
-    inline def setOnreadingchanged(value: js.Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
+    inline def setOnreadingchanged(value: Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
     
     inline def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
   }

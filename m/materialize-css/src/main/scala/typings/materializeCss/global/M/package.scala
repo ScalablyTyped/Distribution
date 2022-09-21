@@ -1,5 +1,10 @@
 package typings.materializeCss.global.M
 
+import typings.materializeCss.JQuery
+import typings.materializeCss.M.Toast
+import typings.materializeCss.anon.PartialToastOptions
+import typings.materializeCss.global.M.^
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Automatically initialize components.
   */
-inline def AutoInit(): scala.Unit = typings.materializeCss.global.M.^.asInstanceOf[js.Dynamic].applyDynamic("AutoInit")().asInstanceOf[scala.Unit]
-inline def AutoInit(context: typings.std.Element): scala.Unit = typings.materializeCss.global.M.^.asInstanceOf[js.Dynamic].applyDynamic("AutoInit")(context.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def AutoInit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AutoInit")().asInstanceOf[Unit]
+inline def AutoInit(context: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AutoInit")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def textareaAutoResize(
-  textarea: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Cash */ js.Any
-): scala.Unit = typings.materializeCss.global.M.^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def textareaAutoResize(textarea: typings.materializeCss.JQuery): scala.Unit = typings.materializeCss.global.M.^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def textareaAutoResize(textarea: typings.std.Element): scala.Unit = typings.materializeCss.global.M.^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+  textarea: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Cash */ Any
+): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def textareaAutoResize(textarea: JQuery): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def textareaAutoResize(textarea: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 /**
   * Create a toast
   */
-inline def toast(options: typings.materializeCss.anon.PartialToastOptions): typings.materializeCss.M.Toast = typings.materializeCss.global.M.^.asInstanceOf[js.Dynamic].applyDynamic("toast")(options.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Toast]
+inline def toast(options: PartialToastOptions): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(options.asInstanceOf[js.Any]).asInstanceOf[Toast]
 
-inline def updateTextFields(): scala.Unit = typings.materializeCss.global.M.^.asInstanceOf[js.Dynamic].applyDynamic("updateTextFields")().asInstanceOf[scala.Unit]
+inline def updateTextFields(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTextFields")().asInstanceOf[Unit]

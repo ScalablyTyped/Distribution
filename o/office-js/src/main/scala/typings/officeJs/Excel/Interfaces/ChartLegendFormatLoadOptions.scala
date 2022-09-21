@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties of a chart legend.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartLegendFormatLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait ChartLegendFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the border format, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderLoadOptions] = js.undefined
   
   /**
+    * Represents the font attributes such as font name, font size, and color of a chart legend.
     *
-    * Represents the font attributes such as font name, font size, color, etc. of a chart legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontLoadOptions] = js.undefined

@@ -8,5 +8,5 @@ object putBucketAccelerateConfigurationInputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/PutBucketAccelerateConfigurationInput", "PutBucketAccelerateConfigurationInput")
   @js.native
-  val PutBucketAccelerateConfigurationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketAccelerateConfigurationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

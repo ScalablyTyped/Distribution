@@ -37,6 +37,11 @@ trait CreateInstancesRequest extends StObject {
   var instanceNames: StringList
   
   /**
+    * The IP address type for the instance. The possible values are ipv4 for IPv4 only, and dualstack for IPv4 and IPv6. The default value is dualstack.
+    */
+  var ipAddressType: js.UndefOr[IpAddressType] = js.undefined
+  
+  /**
     * The name of your key pair.
     */
   var keyPairName: js.UndefOr[ResourceName] = js.undefined
@@ -47,7 +52,7 @@ trait CreateInstancesRequest extends StObject {
   var tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * A launch script you can create that configures a server with additional user data. For example, you might want to run apt-get -y update.  Depending on the machine image you choose, the command to get software on your instance varies. Amazon Linux and CentOS use yum, Debian and Ubuntu use apt-get, and FreeBSD uses pkg. For a complete list, see the Dev Guide. 
+    * A launch script you can create that configures a server with additional user data. For example, you might want to run apt-get -y update.  Depending on the machine image you choose, the command to get software on your instance varies. Amazon Linux and CentOS use yum, Debian and Ubuntu use apt-get, and FreeBSD uses pkg. For a complete list, see the Amazon Lightsail Developer Guide. 
     */
   var userData: js.UndefOr[String] = js.undefined
 }
@@ -69,7 +74,7 @@ object CreateInstancesRequest {
     
     inline def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
-    inline def setAddOnsVarargs(value: AddOnRequest*): Self = StObject.set(x, "addOns", js.Array(value :_*))
+    inline def setAddOnsVarargs(value: AddOnRequest*): Self = StObject.set(x, "addOns", js.Array(value*))
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
@@ -83,7 +88,11 @@ object CreateInstancesRequest {
     
     inline def setInstanceNames(value: StringList): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     
-    inline def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
+    inline def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value*))
+    
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
     
     inline def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
     
@@ -93,7 +102,7 @@ object CreateInstancesRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     

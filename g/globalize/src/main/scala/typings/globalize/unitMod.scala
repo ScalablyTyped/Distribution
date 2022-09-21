@@ -20,7 +20,7 @@ object unitMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/unit", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Shared {
     /**
@@ -80,7 +80,7 @@ object unitMod extends Shortcut {
         * numberFormatter: [Function] a number formatter function. Defaults to Globalize .numberFormatter() for the current locale using the default options.
         */
       var numberFormatter: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ Any
           ] = js.undefined
     }
     object UnitFormatterOptions {
@@ -97,7 +97,7 @@ object unitMod extends Shortcut {
         inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
         
         inline def setNumberFormatter(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ Any
         ): Self = StObject.set(x, "numberFormatter", value.asInstanceOf[js.Any])
         
         inline def setNumberFormatterUndefined: Self = StObject.set(x, "numberFormatter", js.undefined)

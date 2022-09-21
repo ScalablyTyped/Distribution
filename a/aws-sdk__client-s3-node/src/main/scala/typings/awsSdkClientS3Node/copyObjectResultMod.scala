@@ -8,5 +8,5 @@ object copyObjectResultMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_CopyObjectResult", "_CopyObjectResult")
   @js.native
-  val CopyObjectResult: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CopyObjectResult: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

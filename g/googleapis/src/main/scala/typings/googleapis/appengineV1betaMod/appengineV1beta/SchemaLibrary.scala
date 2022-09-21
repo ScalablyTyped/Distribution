@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Third-party Python runtime library that is required by the application.
-  */
 trait SchemaLibrary extends StObject {
   
   /**
-    * Name of the library. Example: &quot;django&quot;.
+    * Name of the library. Example: "django".
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Version of the library to select, or &quot;latest&quot;.
+    * Version of the library to select, or "latest".
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLibrary {
   
@@ -30,9 +27,13 @@ object SchemaLibrary {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }

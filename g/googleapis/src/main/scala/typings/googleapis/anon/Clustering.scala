@@ -2,6 +2,7 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaClustering
+import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaRangePartitioning
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaTableReference
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaTimePartitioning
 import org.scalablytyped.runtime.StObject
@@ -23,6 +24,8 @@ trait Clustering extends StObject {
   var kind: js.UndefOr[String] = js.undefined
   
   var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  
+  var rangePartitioning: js.UndefOr[SchemaRangePartitioning] = js.undefined
   
   var tableReference: js.UndefOr[SchemaTableReference] = js.undefined
   
@@ -68,6 +71,10 @@ object Clustering {
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setRangePartitioning(value: SchemaRangePartitioning): Self = StObject.set(x, "rangePartitioning", value.asInstanceOf[js.Any])
+    
+    inline def setRangePartitioningUndefined: Self = StObject.set(x, "rangePartitioning", js.undefined)
     
     inline def setTableReference(value: SchemaTableReference): Self = StObject.set(x, "tableReference", value.asInstanceOf[js.Any])
     

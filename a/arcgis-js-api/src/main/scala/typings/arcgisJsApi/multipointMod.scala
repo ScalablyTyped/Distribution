@@ -17,18 +17,23 @@ object multipointMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry/Multipoint", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * An ordered collection of points.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html)
+    */
+  open class Class ()
     extends StObject
        with Multipoint {
     def this(properties: MultipointProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   type _To = js.Object & MultipointConstructor

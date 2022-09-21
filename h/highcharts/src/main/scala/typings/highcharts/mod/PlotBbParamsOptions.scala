@@ -19,11 +19,6 @@ trait PlotBbParamsOptions extends StObject {
     * calculations.
     */
   var period: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) Standard deviation for top and bottom bands.
-    */
-  var standardDeviation: js.UndefOr[Double] = js.undefined
 }
 object PlotBbParamsOptions {
   
@@ -41,9 +36,5 @@ object PlotBbParamsOptions {
     inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
-    
-    inline def setStandardDeviation(value: Double): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
-    
-    inline def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
   }
 }

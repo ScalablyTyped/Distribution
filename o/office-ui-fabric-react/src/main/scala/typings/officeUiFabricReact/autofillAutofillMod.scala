@@ -13,21 +13,21 @@ object autofillAutofillMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Autofill/Autofill", "Autofill")
   @js.native
-  class Autofill protected ()
-    extends Component[IAutofillProps, IAutofillState, js.Any]
+  open class Autofill protected ()
+    extends Component[IAutofillProps, IAutofillState, Any]
        with IAutofill {
     def this(props: IAutofillProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MAutofill(nextProps: IAutofillProps): Unit = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _autoFillEnabled: js.Any = js.native
+    /* private */ var _autoFillEnabled: Any = js.native
     
-    /* private */ var _doesTextStartWith: js.Any = js.native
+    /* private */ var _doesTextStartWith: Any = js.native
     
-    /* private */ var _getCurrentInputValue: js.Any = js.native
+    /* private */ var _getCurrentInputValue: Any = js.native
     
     /**
       * Returns a string that should be used as the display value.
@@ -36,27 +36,27 @@ object autofillAutofillMod {
       * @param inputValue - the value that the input currently has.
       * @param suggestedDisplayValue - the possible full value
       */
-    /* private */ var _getDisplayValue: js.Any = js.native
+    /* private */ var _getDisplayValue: Any = js.native
     
-    /* private */ var _inputElement: js.Any = js.native
+    /* private */ var _inputElement: Any = js.native
     
-    /* private */ var _isComposing: js.Any = js.native
+    /* private */ var _isComposing: Any = js.native
     
-    /* private */ var _notifyInputChange: js.Any = js.native
+    /* private */ var _notifyInputChange: Any = js.native
     
-    /* private */ var _onChanged: js.Any = js.native
+    /* private */ var _onChanged: Any = js.native
     
-    /* private */ var _onClick: js.Any = js.native
+    /* private */ var _onClick: Any = js.native
     
-    /* private */ var _onCompositionEnd: js.Any = js.native
+    /* private */ var _onCompositionEnd: Any = js.native
     
-    /* private */ var _onCompositionStart: js.Any = js.native
+    /* private */ var _onCompositionStart: Any = js.native
     
-    /* private */ var _onCompositionUpdate: js.Any = js.native
+    /* private */ var _onCompositionUpdate: Any = js.native
     
-    /* private */ var _onInputChanged: js.Any = js.native
+    /* private */ var _onInputChanged: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
     /**
       * Attempts to enable autofill. Whether or not autofill is enabled depends on the input value,
@@ -69,15 +69,15 @@ object autofillAutofillMod {
       * @param isComposing - if true then the text is actively being composed and it has not completed.
       * @param isComposed - if the text is a composed text value.
       */
-    /* private */ var _tryEnableAutofill: js.Any = js.native
+    /* private */ var _tryEnableAutofill: Any = js.native
     
     /**
       * Updates the current input value as well as getting a new display value.
       * @param newValue - The new value from the input
       */
-    /* private */ var _updateValue: js.Any = js.native
+    /* private */ var _updateValue: Any = js.native
     
-    /* private */ var _value: js.Any = js.native
+    /* private */ var _value: Any = js.native
     
     /**
       * Clear all text in the input. Sets value to '';
@@ -151,7 +151,7 @@ object autofillAutofillMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Autofill/Autofill", "BaseAutoFill")
   @js.native
-  class BaseAutoFill protected () extends Autofill {
+  open class BaseAutoFill protected () extends Autofill {
     def this(props: IAutofillProps) = this()
   }
   

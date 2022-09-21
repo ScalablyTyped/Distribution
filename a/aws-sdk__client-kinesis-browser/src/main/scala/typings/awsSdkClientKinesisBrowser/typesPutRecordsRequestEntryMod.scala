@@ -1,8 +1,5 @@
 package typings.awsSdkClientKinesisBrowser
 
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +11,7 @@ object typesPutRecordsRequestEntryMod {
     /**
       * <p>The data blob to put into the record, which is base64-encoded when the blob is serialized. When the data blob (the payload before base64-encoding) is added to the partition key size, the total size must not exceed the maximum record size (1 MB).</p>
       */
-    var Data: ArrayBuffer | ArrayBufferView | String
+    var Data: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String
     
     /**
       * <p>The hash value used to determine explicitly the shard that the data record is assigned to by overriding the partition key hash.</p>
@@ -28,14 +25,14 @@ object typesPutRecordsRequestEntryMod {
   }
   object PutRecordsRequestEntry {
     
-    inline def apply(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String): PutRecordsRequestEntry = {
+    inline def apply(Data: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String, PartitionKey: String): PutRecordsRequestEntry = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRecordsRequestEntry]
     }
     
     extension [Self <: PutRecordsRequestEntry](x: Self) {
       
-      inline def setData(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setExplicitHashKey(value: String): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
       
@@ -53,18 +50,18 @@ object typesPutRecordsRequestEntryMod {
       * <p>The data blob to put into the record, which is base64-encoded when the blob is serialized. When the data blob (the payload before base64-encoding) is added to the partition key size, the total size must not exceed the maximum record size (1 MB).</p>
       */
     @JSName("Data")
-    var Data_UnmarshalledPutRecordsRequestEntry: Uint8Array
+    var Data_UnmarshalledPutRecordsRequestEntry: js.typedarray.Uint8Array
   }
   object UnmarshalledPutRecordsRequestEntry {
     
-    inline def apply(Data: Uint8Array, PartitionKey: String): UnmarshalledPutRecordsRequestEntry = {
+    inline def apply(Data: js.typedarray.Uint8Array, PartitionKey: String): UnmarshalledPutRecordsRequestEntry = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledPutRecordsRequestEntry]
     }
     
     extension [Self <: UnmarshalledPutRecordsRequestEntry](x: Self) {
       
-      inline def setData(value: Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     }
   }
 }

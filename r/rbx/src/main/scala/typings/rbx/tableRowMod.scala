@@ -53,7 +53,7 @@ object tableRowMod {
   
   @JSImport("rbx/elements/table/table-row", "TableRow")
   @js.native
-  val TableRow: ForwardRefAsExoticComponent[TableRowProps, ElementType[js.Any]] = js.native
+  val TableRow: ForwardRefAsExoticComponent[TableRowProps, ElementType[Any]] = js.native
   
   trait TableRowHelperProps extends StObject {
     

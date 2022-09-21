@@ -29,7 +29,7 @@ object DescribeImportSnapshotTasksResult {
     
     inline def setImportSnapshotTasksUndefined: Self = StObject.set(x, "ImportSnapshotTasks", js.undefined)
     
-    inline def setImportSnapshotTasksVarargs(value: ImportSnapshotTask*): Self = StObject.set(x, "ImportSnapshotTasks", js.Array(value :_*))
+    inline def setImportSnapshotTasksVarargs(value: ImportSnapshotTask*): Self = StObject.set(x, "ImportSnapshotTasks", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

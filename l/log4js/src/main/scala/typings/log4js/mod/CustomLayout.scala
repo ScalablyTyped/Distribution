@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomLayout
   extends StObject
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
      with Layout {
   
   var `type`: String

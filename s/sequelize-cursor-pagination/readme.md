@@ -4,16 +4,16 @@
 Typings are for version 1.2
 
 ## Library description:
-Sequelize model decorator which provides cursor based pagination queries
+Cursor-based pagination queries for Sequelize models
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sequelize-cursor-pagination |
-| Keywords           | sequelize, pagination |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 43170 |
-| # stars            | 0 |
+| Keywords           | sequelize, pagination, cursor-based pagination |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 11610.666666666666 |
+| # stars            | 76.0 |
 
 ## Links
 - [Homepage](https://github.com/Kaltsoon/sequelize-cursor-pagination#readme)

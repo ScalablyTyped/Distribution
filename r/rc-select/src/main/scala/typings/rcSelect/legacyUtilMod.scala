@@ -1,6 +1,6 @@
 package typings.rcSelect
 
-import typings.rcSelect.interfaceMod.OptionsType
+import typings.rcSelect.selectMod.BaseOptionType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +12,6 @@ object legacyUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def convertChildrenToData(nodes: ReactNode): OptionsType = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any]).asInstanceOf[OptionsType]
-  inline def convertChildrenToData(nodes: ReactNode, optionOnly: Boolean): OptionsType = (^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any], optionOnly.asInstanceOf[js.Any])).asInstanceOf[OptionsType]
+  inline def convertChildrenToData[OptionType /* <: BaseOptionType */](nodes: ReactNode): js.Array[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[OptionType]]
+  inline def convertChildrenToData[OptionType /* <: BaseOptionType */](nodes: ReactNode, optionOnly: Boolean): js.Array[OptionType] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any], optionOnly.asInstanceOf[js.Any])).asInstanceOf[js.Array[OptionType]]
 }

@@ -33,6 +33,6 @@ object ListUpdatesResponse {
     
     inline def setUpdateIdsUndefined: Self = StObject.set(x, "updateIds", js.undefined)
     
-    inline def setUpdateIdsVarargs(value: String*): Self = StObject.set(x, "updateIds", js.Array(value :_*))
+    inline def setUpdateIdsVarargs(value: String*): Self = StObject.set(x, "updateIds", js.Array(value*))
   }
 }

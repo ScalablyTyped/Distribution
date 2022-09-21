@@ -59,7 +59,7 @@ object ReplaceAllShapesWithImageRequest {
     
     inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
     
-    inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+    inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value*))
     
     inline def setReplaceMethod(value: String): Self = StObject.set(x, "replaceMethod", value.asInstanceOf[js.Any])
     

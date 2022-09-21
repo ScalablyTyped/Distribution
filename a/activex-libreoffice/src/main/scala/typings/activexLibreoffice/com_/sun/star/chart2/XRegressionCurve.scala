@@ -29,7 +29,7 @@ object XRegressionCurve {
     acquire: () => Unit,
     getCalculator: () => XRegressionCurveCalculator,
     getEquationProperties: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setEquationProperties: XPropertySet => Unit
   ): XRegressionCurve = {

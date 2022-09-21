@@ -34,7 +34,7 @@ trait ServiceUpdate extends StObject {
   /**
     * The date after which the service update is no longer available
     */
-  var ServiceUpdateEndDate: js.UndefOr[TStamp] = js.undefined
+  var ServiceUpdateEndDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique ID of the service update
@@ -44,12 +44,12 @@ trait ServiceUpdate extends StObject {
   /**
     * The recommendend date to apply the service update in order to ensure compliance. For information on compliance, see Self-Service Security Updates for Compliance.
     */
-  var ServiceUpdateRecommendedApplyByDate: js.UndefOr[TStamp] = js.undefined
+  var ServiceUpdateRecommendedApplyByDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date when the service update is initially available
     */
-  var ServiceUpdateReleaseDate: js.UndefOr[TStamp] = js.undefined
+  var ServiceUpdateReleaseDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The severity of the service update
@@ -95,7 +95,7 @@ object ServiceUpdate {
     
     inline def setServiceUpdateDescriptionUndefined: Self = StObject.set(x, "ServiceUpdateDescription", js.undefined)
     
-    inline def setServiceUpdateEndDate(value: TStamp): Self = StObject.set(x, "ServiceUpdateEndDate", value.asInstanceOf[js.Any])
+    inline def setServiceUpdateEndDate(value: js.Date): Self = StObject.set(x, "ServiceUpdateEndDate", value.asInstanceOf[js.Any])
     
     inline def setServiceUpdateEndDateUndefined: Self = StObject.set(x, "ServiceUpdateEndDate", js.undefined)
     
@@ -103,11 +103,11 @@ object ServiceUpdate {
     
     inline def setServiceUpdateNameUndefined: Self = StObject.set(x, "ServiceUpdateName", js.undefined)
     
-    inline def setServiceUpdateRecommendedApplyByDate(value: TStamp): Self = StObject.set(x, "ServiceUpdateRecommendedApplyByDate", value.asInstanceOf[js.Any])
+    inline def setServiceUpdateRecommendedApplyByDate(value: js.Date): Self = StObject.set(x, "ServiceUpdateRecommendedApplyByDate", value.asInstanceOf[js.Any])
     
     inline def setServiceUpdateRecommendedApplyByDateUndefined: Self = StObject.set(x, "ServiceUpdateRecommendedApplyByDate", js.undefined)
     
-    inline def setServiceUpdateReleaseDate(value: TStamp): Self = StObject.set(x, "ServiceUpdateReleaseDate", value.asInstanceOf[js.Any])
+    inline def setServiceUpdateReleaseDate(value: js.Date): Self = StObject.set(x, "ServiceUpdateReleaseDate", value.asInstanceOf[js.Any])
     
     inline def setServiceUpdateReleaseDateUndefined: Self = StObject.set(x, "ServiceUpdateReleaseDate", js.undefined)
     

@@ -9,7 +9,7 @@ object mouseWheelZoomMod {
   
   @JSImport("ol/interaction/MouseWheelZoom", JSImport.Default)
   @js.native
-  class default () extends MouseWheelZoom {
+  open class default () extends MouseWheelZoom {
     def this(opt_options: Options) = this()
   }
   

@@ -10,7 +10,7 @@ object pickerNativeMod {
   
   @JSImport("rmc-picker/lib/Picker.native", JSImport.Default)
   @js.native
-  class default () extends Picker
+  open class default () extends Picker
   object default {
     
     @JSImport("rmc-picker/lib/Picker.native", JSImport.Default)
@@ -29,18 +29,18 @@ object pickerNativeMod {
       
       @JSImport("rmc-picker/lib/Picker.native", "default.defaultProps.children")
       @js.native
-      def children: js.Array[js.Any] = js.native
-      inline def children_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      def children: js.Array[Any] = js.native
+      inline def children_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait Picker
-    extends Component[IPickerProps, js.Object, js.Any] {
+    extends Component[IPickerProps, js.Object, Any] {
     
-    def getValue(): js.Any = js.native
+    def getValue(): Any = js.native
     
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MPicker(nextProps: js.Any): Boolean = js.native
+    def shouldComponentUpdate_MPicker(nextProps: Any): Boolean = js.native
   }
 }

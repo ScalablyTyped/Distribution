@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_vectortile
 
-Typings are for version 1.0.20201121
+Typings are for version 1.0.20211015
 
 ## Library description:
 TypeScript typings for Semantic Tile API v1
@@ -10,10 +10,10 @@ TypeScript typings for Semantic Tile API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.vectortile |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 1 |
-| # downloads        | 3147 |
-| # stars            | 0 |
+| # releases         | 165 |
+| # dependents       | 0.0 |
+| # downloads        | 629.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

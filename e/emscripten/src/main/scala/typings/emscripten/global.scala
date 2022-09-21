@@ -4,15 +4,12 @@ import typings.emscripten.Emscripten.CCallOpts
 import typings.emscripten.Emscripten.CType
 import typings.emscripten.Emscripten.FileSystemType
 import typings.emscripten.Emscripten.JSType
-import typings.emscripten.Emscripten.TypeCompatibleWithC
 import typings.emscripten.FS.FSNode
 import typings.emscripten.FS.FSStream
 import typings.emscripten.FS.Lookup
 import typings.emscripten.anon.Encoding
 import typings.emscripten.anon.Flags
 import typings.emscripten.anon.`0`
-import typings.std.ArrayBufferView
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +62,7 @@ object global {
     inline def createDataFile(
       parent: String,
       name: String,
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       canRead: Boolean,
       canWrite: Boolean,
       canOwn: Boolean
@@ -73,7 +70,7 @@ object global {
     inline def createDataFile(
       parent: FSNode,
       name: String,
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       canRead: Boolean,
       canWrite: Boolean,
       canOwn: Boolean
@@ -406,8 +403,8 @@ object global {
     
     @JSGlobal("FS.genericErrors")
     @js.native
-    def genericErrors: js.Any = js.native
-    inline def genericErrors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("genericErrors")(x.asInstanceOf[js.Any])
+    def genericErrors: Any = js.native
+    inline def genericErrors_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("genericErrors")(x.asInstanceOf[js.Any])
     
     inline def getPath(node: FSNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(node.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -418,22 +415,18 @@ object global {
     
     inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     inline def init(input: js.Function0[Double | Null]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def init(input: js.Function0[Double | Null], output: js.Function1[/* c */ Double, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def init(input: js.Function0[Double | Null], output: js.Function1[/* c */ Double, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def init(
       input: js.Function0[Double | Null],
-      output: js.Function1[/* c */ Double, js.Any],
-      error: js.Function1[/* c */ Double, js.Any]
+      output: js.Function1[/* c */ Double, Any],
+      error: js.Function1[/* c */ Double, Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def init(input: js.Function0[Double | Null], output: Null, error: js.Function1[/* c */ Double, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def init(input: Null, output: js.Function1[/* c */ Double, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def init(
-      input: Null,
-      output: js.Function1[/* c */ Double, js.Any],
-      error: js.Function1[/* c */ Double, js.Any]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def init(input: Null, output: Null, error: js.Function1[/* c */ Double, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def init(input: js.Function0[Double | Null], output: Null, error: js.Function1[/* c */ Double, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def init(input: Null, output: js.Function1[/* c */ Double, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def init(input: Null, output: js.Function1[/* c */ Double, Any], error: js.Function1[/* c */ Double, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def init(input: Null, output: Null, error: js.Function1[/* c */ Double, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def ioctl(stream: FSStream, cmd: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ioctl")(stream.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def ioctl(stream: FSStream, cmd: Any, arg: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ioctl")(stream.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def isBlkdev(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlkdev")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
@@ -456,14 +449,14 @@ object global {
     
     inline def lchown(path: String, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def llseek(stream: FSStream, offset: Double, whence: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("llseek")(stream.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], whence.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def llseek(stream: FSStream, offset: Double, whence: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("llseek")(stream.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], whence.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     //
     // paths
     //
-    inline def lookupPath(path: String, opts: js.Any): Lookup = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPath")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Lookup]
+    inline def lookupPath(path: String, opts: Any): Lookup = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPath")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Lookup]
     
-    inline def lstat(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def lstat(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     //
     // devices
@@ -474,25 +467,25 @@ object global {
     
     inline def minor(dev: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minor")(dev.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def mkdev(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def mkdev(path: String, mode: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def mkdev(path: String, mode: Double, dev: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def mkdev(path: String, mode: Unit, dev: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def mkdev(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def mkdev(path: String, mode: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def mkdev(path: String, mode: Double, dev: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def mkdev(path: String, mode: Unit, dev: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdev")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def mkdir(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def mkdir(path: String, mode: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def mkdir(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def mkdir(path: String, mode: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def mmap(
       stream: FSStream,
-      buffer: ArrayBufferView,
+      buffer: js.typedarray.ArrayBufferView,
       offset: Double,
       length: Double,
       position: Double,
       prot: Double,
       flags: Double
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mmap")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], prot.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mmap")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], prot.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def mount(`type`: FileSystemType, opts: js.Any, mountpoint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(`type`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], mountpoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def mount(`type`: FileSystemType, opts: Any, mountpoint: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(`type`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], mountpoint.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def open(path: String, flags: String): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[FSStream]
     inline def open(path: String, flags: String, mode: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[FSStream]
@@ -503,46 +496,52 @@ object global {
     inline def open(path: String, flags: String, mode: Unit, fd_start: Double, fd_end: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fd_start.asInstanceOf[js.Any], fd_end.asInstanceOf[js.Any])).asInstanceOf[FSStream]
     inline def open(path: String, flags: String, mode: Unit, fd_start: Unit, fd_end: Double): FSStream = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fd_start.asInstanceOf[js.Any], fd_end.asInstanceOf[js.Any])).asInstanceOf[FSStream]
     
-    inline def read(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def read(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def read(stream: FSStream, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def read(
+      stream: FSStream,
+      buffer: js.typedarray.ArrayBufferView,
+      offset: Double,
+      length: Double,
+      position: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def readFile(path: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    inline def readFile(path: String, opts: Encoding): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def readFile(path: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def readFile(path: String, opts: Encoding): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     inline def readFile(path: String, opts: Flags): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def readFile(path: String, opts: `0`): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def readFile(path: String, opts: `0`): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
-    inline def readdir(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def readdir(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def readlink(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def registerDevice(dev: Double, ops: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDevice")(dev.asInstanceOf[js.Any], ops.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerDevice(dev: Double, ops: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDevice")(dev.asInstanceOf[js.Any], ops.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def rename(old_path: String, new_path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(old_path.asInstanceOf[js.Any], new_path.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def rmdir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def stat(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def stat(path: String, dontFollow: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], dontFollow.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def stat(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def stat(path: String, dontFollow: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], dontFollow.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def symlink(oldpath: String, newpath: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(oldpath.asInstanceOf[js.Any], newpath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def symlink(oldpath: String, newpath: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(oldpath.asInstanceOf[js.Any], newpath.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def syncfs(callback: js.Function1[/* e */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def syncfs(callback: js.Function1[/* e */ js.Any, js.Any], populate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(callback.asInstanceOf[js.Any], populate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def syncfs(callback: js.Function1[/* e */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def syncfs(callback: js.Function1[/* e */ Any, Any], populate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(callback.asInstanceOf[js.Any], populate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     //
     // core
     //
-    inline def syncfs(populate: Boolean, callback: js.Function1[/* e */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(populate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def syncfs(populate: Boolean, callback: js.Function1[/* e */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncfs")(populate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("FS.tracking")
     @js.native
-    def tracking: js.Any = js.native
+    def tracking: Any = js.native
     
     @JSGlobal("FS.trackingDelegate")
     @js.native
-    def trackingDelegate: js.Any = js.native
-    inline def trackingDelegate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trackingDelegate")(x.asInstanceOf[js.Any])
+    def trackingDelegate: Any = js.native
+    inline def trackingDelegate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trackingDelegate")(x.asInstanceOf[js.Any])
     
-    inline def tracking_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tracking")(x.asInstanceOf[js.Any])
+    inline def tracking_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tracking")(x.asInstanceOf[js.Any])
     
     inline def truncate(path: String, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -552,11 +551,17 @@ object global {
     
     inline def utime(path: String, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utime")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def write(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def write(stream: FSStream, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def write(stream: FSStream, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def write(
       stream: FSStream,
-      buffer: ArrayBufferView,
+      buffer: js.typedarray.ArrayBufferView,
+      offset: Double,
+      length: Double,
+      position: Double
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def write(
+      stream: FSStream,
+      buffer: js.typedarray.ArrayBufferView,
       offset: Double,
       length: Double,
       position: Double,
@@ -564,7 +569,7 @@ object global {
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(stream.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], canOwn.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def write(
       stream: FSStream,
-      buffer: ArrayBufferView,
+      buffer: js.typedarray.ArrayBufferView,
       offset: Double,
       length: Double,
       position: Unit,
@@ -573,8 +578,8 @@ object global {
     
     inline def writeFile(path: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def writeFile(path: String, data: String, opts: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def writeFile(path: String, data: ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def writeFile(path: String, data: ArrayBufferView, opts: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeFile(path: String, data: js.typedarray.ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeFile(path: String, data: js.typedarray.ArrayBufferView, opts: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("IDBFS")
@@ -599,36 +604,31 @@ object global {
   inline def UTF8ToString(ptr: Double): String = js.Dynamic.global.applyDynamic("UTF8ToString")(ptr.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def UTF8ToString(ptr: Double, maxBytesToRead: Double): String = (js.Dynamic.global.applyDynamic("UTF8ToString")(ptr.asInstanceOf[js.Any], maxBytesToRead.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def addFunction(func: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.Dynamic.global.applyDynamic("addFunction")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def addFunction(func: js.Function1[/* repeated */ js.Any, js.Any], signature: String): Double = (js.Dynamic.global.applyDynamic("addFunction")(func.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def addFunction(func: js.Function1[/* repeated */ Any, Any]): Double = js.Dynamic.global.applyDynamic("addFunction")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def addFunction(func: js.Function1[/* repeated */ Any, Any], signature: String): Double = (js.Dynamic.global.applyDynamic("addFunction")(func.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def addRunDependency(id: js.Any): Unit = js.Dynamic.global.applyDynamic("addRunDependency")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addRunDependency(id: Any): Unit = js.Dynamic.global.applyDynamic("addRunDependency")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def allocate(slab: js.Array[Double], types: js.Array[CType], allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def allocate(slab: js.Array[Double], types: js.Array[CType], allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def allocate(slab: js.Array[Double], types: CType, allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def allocate(slab: js.Array[Double], types: CType, allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def allocate(slab: js.typedarray.ArrayBufferView, types: js.Array[CType], allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def allocate(slab: js.typedarray.ArrayBufferView, types: js.Array[CType], allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def allocate(slab: js.typedarray.ArrayBufferView, types: CType, allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def allocate(slab: js.typedarray.ArrayBufferView, types: CType, allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def allocate(slab: Double, types: js.Array[CType], allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def allocate(slab: Double, types: js.Array[CType], allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def allocate(slab: Double, types: CType, allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def allocate(slab: Double, types: CType, allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def allocate(slab: ArrayBufferView, types: js.Array[CType], allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def allocate(slab: ArrayBufferView, types: js.Array[CType], allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def allocate(slab: ArrayBufferView, types: CType, allocator: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def allocate(slab: ArrayBufferView, types: CType, allocator: Double, ptr: Double): Double = (js.Dynamic.global.applyDynamic("allocate")(slab.asInstanceOf[js.Any], types.asInstanceOf[js.Any], allocator.asInstanceOf[js.Any], ptr.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def allocateUTF8(str: String): Double = js.Dynamic.global.applyDynamic("allocateUTF8")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def allocateUTF8OnStack(str: String): Double = js.Dynamic.global.applyDynamic("allocateUTF8OnStack")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def ccall(ident: String, returnType: Null, argTypes: js.Array[JSType], args: js.Array[TypeCompatibleWithC]): js.Any = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def ccall(
-    ident: String,
-    returnType: Null,
-    argTypes: js.Array[JSType],
-    args: js.Array[TypeCompatibleWithC],
-    opts: CCallOpts
-  ): js.Any = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def ccall[I /* <: js.Array[Any | JSType | Null] */, R /* <: JSType | Null */](ident: String, returnType: R, argTypes: I, args: ArgsToType[I]): ReturnToType[R] = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ReturnToType[R]]
+  inline def ccall[I /* <: js.Array[Any | JSType | Null] */, R /* <: JSType | Null */](ident: String, returnType: R, argTypes: I, args: ArgsToType[I], opts: CCallOpts): ReturnToType[R] = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReturnToType[R]]
+  
   // Below runtime function/variable declarations are exportable by
   // -s EXTRA_EXPORTED_RUNTIME_METHODS. You can extend or merge
   // EmscriptenModule interface to add runtime functions.
@@ -642,19 +642,8 @@ object global {
   // }
   //
   // See: https://emscripten.org/docs/getting_started/FAQ.html#why-do-i-get-typeerror-module-something-is-not-a-function
-  inline def ccall(ident: String, returnType: JSType, argTypes: js.Array[JSType], args: js.Array[TypeCompatibleWithC]): js.Any = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def ccall(
-    ident: String,
-    returnType: JSType,
-    argTypes: js.Array[JSType],
-    args: js.Array[TypeCompatibleWithC],
-    opts: CCallOpts
-  ): js.Any = (js.Dynamic.global.applyDynamic("ccall")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def cwrap(ident: String, returnType: Null, argTypes: js.Array[JSType]): js.Function1[/* repeated */ js.Any, js.Any] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
-  inline def cwrap(ident: String, returnType: Null, argTypes: js.Array[JSType], opts: CCallOpts): js.Function1[/* repeated */ js.Any, js.Any] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
-  inline def cwrap(ident: String, returnType: JSType, argTypes: js.Array[JSType]): js.Function1[/* repeated */ js.Any, js.Any] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
-  inline def cwrap(ident: String, returnType: JSType, argTypes: js.Array[JSType], opts: CCallOpts): js.Function1[/* repeated */ js.Any, js.Any] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  inline def cwrap[I /* <: js.Array[Any | JSType | Null] */, R /* <: JSType | Null */](ident: String, returnType: R, argTypes: I): js.Function1[/* arg */ ArgsToType[I], ReturnToType[R]] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg */ ArgsToType[I], ReturnToType[R]]]
+  inline def cwrap[I /* <: js.Array[Any | JSType | Null] */, R /* <: JSType | Null */](ident: String, returnType: R, argTypes: I, opts: CCallOpts): js.Function1[/* arg */ ArgsToType[I], ReturnToType[R]] = (js.Dynamic.global.applyDynamic("cwrap")(ident.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg */ ArgsToType[I], ReturnToType[R]]]
   
   inline def getValue(ptr: Double, `type`: CType): Double = (js.Dynamic.global.applyDynamic("getValue")(ptr.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def getValue(ptr: Double, `type`: CType, noSafe: Boolean): Double = (js.Dynamic.global.applyDynamic("getValue")(ptr.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], noSafe.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -674,10 +663,10 @@ object global {
   
   inline def removeFunction(funcPtr: Double): Unit = js.Dynamic.global.applyDynamic("removeFunction")(funcPtr.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def removeRunDependency(id: js.Any): Unit = js.Dynamic.global.applyDynamic("removeRunDependency")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeRunDependency(id: Any): Unit = js.Dynamic.global.applyDynamic("removeRunDependency")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setValue(ptr: Double, value: js.Any, `type`: CType): Unit = (js.Dynamic.global.applyDynamic("setValue")(ptr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setValue(ptr: Double, value: js.Any, `type`: CType, noSafe: Boolean): Unit = (js.Dynamic.global.applyDynamic("setValue")(ptr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], noSafe.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setValue(ptr: Double, value: Any, `type`: CType): Unit = (js.Dynamic.global.applyDynamic("setValue")(ptr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setValue(ptr: Double, value: Any, `type`: CType, noSafe: Boolean): Unit = (js.Dynamic.global.applyDynamic("setValue")(ptr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], noSafe.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def stackAlloc(size: Double): Double = js.Dynamic.global.applyDynamic("stackAlloc")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   

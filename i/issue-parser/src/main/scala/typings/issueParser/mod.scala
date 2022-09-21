@@ -124,37 +124,37 @@ object mod {
       
       inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      inline def setDelimitersVarargs(value: String*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: String*): Self = StObject.set(x, "delimiters", js.Array(value*))
       
       inline def setHosts(value: String | js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
       inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
       
-      inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value*))
       
       inline def setIssuePrefixes(value: String | js.Array[String]): Self = StObject.set(x, "issuePrefixes", value.asInstanceOf[js.Any])
       
       inline def setIssuePrefixesUndefined: Self = StObject.set(x, "issuePrefixes", js.undefined)
       
-      inline def setIssuePrefixesVarargs(value: String*): Self = StObject.set(x, "issuePrefixes", js.Array(value :_*))
+      inline def setIssuePrefixesVarargs(value: String*): Self = StObject.set(x, "issuePrefixes", js.Array(value*))
       
       inline def setIssueURLSegments(value: String | js.Array[String]): Self = StObject.set(x, "issueURLSegments", value.asInstanceOf[js.Any])
       
       inline def setIssueURLSegmentsUndefined: Self = StObject.set(x, "issueURLSegments", js.undefined)
       
-      inline def setIssueURLSegmentsVarargs(value: String*): Self = StObject.set(x, "issueURLSegments", js.Array(value :_*))
+      inline def setIssueURLSegmentsVarargs(value: String*): Self = StObject.set(x, "issueURLSegments", js.Array(value*))
       
       inline def setMentionsPrefixes(value: String | js.Array[String]): Self = StObject.set(x, "mentionsPrefixes", value.asInstanceOf[js.Any])
       
       inline def setMentionsPrefixesUndefined: Self = StObject.set(x, "mentionsPrefixes", js.undefined)
       
-      inline def setMentionsPrefixesVarargs(value: String*): Self = StObject.set(x, "mentionsPrefixes", js.Array(value :_*))
+      inline def setMentionsPrefixesVarargs(value: String*): Self = StObject.set(x, "mentionsPrefixes", js.Array(value*))
       
       inline def setOverrides(value: String | js.Array[String]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      inline def setOverridesVarargs(value: String*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+      inline def setOverridesVarargs(value: String*): Self = StObject.set(x, "overrides", js.Array(value*))
     }
   }
   
@@ -221,15 +221,15 @@ object mod {
       
       inline def setAllRefs(value: js.Array[Reference | Action]): Self = StObject.set(x, "allRefs", value.asInstanceOf[js.Any])
       
-      inline def setAllRefsVarargs(value: (Reference | Action)*): Self = StObject.set(x, "allRefs", js.Array(value :_*))
+      inline def setAllRefsVarargs(value: (Reference | Action)*): Self = StObject.set(x, "allRefs", js.Array(value*))
       
       inline def setMentions(value: js.Array[Mention]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
       
-      inline def setMentionsVarargs(value: Mention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+      inline def setMentionsVarargs(value: Mention*): Self = StObject.set(x, "mentions", js.Array(value*))
       
       inline def setRefs(value: js.Array[Reference]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
-      inline def setRefsVarargs(value: Reference*): Self = StObject.set(x, "refs", js.Array(value :_*))
+      inline def setRefsVarargs(value: Reference*): Self = StObject.set(x, "refs", js.Array(value*))
     }
   }
 }

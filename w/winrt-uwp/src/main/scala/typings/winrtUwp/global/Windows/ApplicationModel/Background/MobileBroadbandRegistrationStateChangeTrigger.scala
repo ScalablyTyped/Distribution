@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.MobileBroadbandRegistrationStateChangeTrigger")
 @js.native
 /** Creates a MobileBroadbandRegistrationStateChangeTrigger object. */
-class MobileBroadbandRegistrationStateChangeTrigger ()
+open class MobileBroadbandRegistrationStateChangeTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.MobileBroadbandRegistrationStateChangeTrigger

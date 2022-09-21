@@ -15,7 +15,7 @@ object global {
       * 公交路线查询
       * @param options 选项
       */
-    class LineSearch ()
+    open class LineSearch ()
       extends StObject
          with typings.amapJsApiLineSearch.AMap.LineSearch {
       def this(options: Options) = this()

@@ -14,11 +14,11 @@ object axisMod {
   
   @JSImport("@antv/component/lib/axis", "Circle")
   @js.native
-  class Circle ()
+  open class Circle ()
     extends typings.antvComponent.circleMod.default
   
   @JSImport("@antv/component/lib/axis", "Line")
   @js.native
-  class Line ()
+  open class Line ()
     extends typings.antvComponent.axisLineMod.default
 }

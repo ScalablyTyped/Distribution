@@ -29,12 +29,12 @@ object EndpointConfiguration {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: EndpointType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: EndpointType*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setVpcEndpointIds(value: ListOfString): Self = StObject.set(x, "vpcEndpointIds", value.asInstanceOf[js.Any])
     
     inline def setVpcEndpointIdsUndefined: Self = StObject.set(x, "vpcEndpointIds", js.undefined)
     
-    inline def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value :_*))
+    inline def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value*))
   }
 }

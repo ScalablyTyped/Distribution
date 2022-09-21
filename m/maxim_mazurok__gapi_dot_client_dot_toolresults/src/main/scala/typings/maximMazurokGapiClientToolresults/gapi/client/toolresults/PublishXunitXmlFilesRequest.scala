@@ -22,6 +22,6 @@ object PublishXunitXmlFilesRequest {
     
     inline def setXunitXmlFilesUndefined: Self = StObject.set(x, "xunitXmlFiles", js.undefined)
     
-    inline def setXunitXmlFilesVarargs(value: FileReference*): Self = StObject.set(x, "xunitXmlFiles", js.Array(value :_*))
+    inline def setXunitXmlFilesVarargs(value: FileReference*): Self = StObject.set(x, "xunitXmlFiles", js.Array(value*))
   }
 }

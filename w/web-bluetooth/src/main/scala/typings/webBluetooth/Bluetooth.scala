@@ -19,23 +19,20 @@ trait Bluetooth
   @JSName("addEventListener")
   def addEventListener_advertisementreceived(
     `type`: advertisementreceived,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisementEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisingEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_advertisementreceived(
     `type`: advertisementreceived,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisementEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisingEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_availabilitychanged(
-    `type`: availabilitychanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
+  def addEventListener_availabilitychanged(`type`: availabilitychanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_availabilitychanged(
     `type`: availabilitychanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -43,7 +40,7 @@ trait Bluetooth
   
   def getDevices(): js.Promise[js.Array[BluetoothDevice]] = js.native
   
-  def onavailabilitychanged(ev: Event): js.Any = js.native
+  def onavailabilitychanged(ev: Event): Any = js.native
   
   val referringDevice: js.UndefOr[BluetoothDevice] = js.native
   
@@ -51,5 +48,5 @@ trait Bluetooth
   def requestDevice(options: RequestDeviceOptions): js.Promise[BluetoothDevice] = js.native
   
   def requestLEScan(): js.Promise[BluetoothLEScan] = js.native
-  def requestLEScan(options: RequestLEScanOptions): js.Promise[BluetoothLEScan] = js.native
+  def requestLEScan(options: BluetoothLEScanOptions): js.Promise[BluetoothLEScan] = js.native
 }

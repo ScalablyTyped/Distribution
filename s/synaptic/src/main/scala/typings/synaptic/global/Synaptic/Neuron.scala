@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Neurons are the basic unit of the neural network. They can be connected together, or used to gate connections between other neurons.
   */
-class Neuron ()
+open class Neuron ()
   extends typings.synaptic.mod.Neuron
 /* static members */
 object Neuron {
@@ -22,7 +22,7 @@ object Neuron {
   
   @JSGlobal("Synaptic.Neuron.Connection")
   @js.native
-  class Connection_ protected ()
+  open class Connection_ protected ()
     extends typings.synaptic.mod.Neuron.Connection_ {
     def this(from: Double, to: Double) = this()
     def this(from: Double, to: Double, weight: Double) = this()
@@ -40,7 +40,7 @@ object Neuron {
   /* was `typeof Connection` */
   @JSGlobal("Synaptic.Neuron.connection")
   @js.native
-  class connection protected ()
+  open class connection protected ()
     extends typings.synaptic.mod.Neuron.connection {
     def this(from: Double, to: Double) = this()
     def this(from: Double, to: Double, weight: Double) = this()

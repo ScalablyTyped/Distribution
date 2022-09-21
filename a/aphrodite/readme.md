@@ -10,15 +10,12 @@ Framework-agnostic CSS-in-JS with support for server-side rendering, browser pre
 | ------------------ | :-------------: |
 | Full name          | aphrodite |
 | Keywords           | css, react, inline-styles |
-| # releases         | 4 |
-| # dependents       | 237 |
-| # downloads        | 10062317 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 469952.3333333333 |
+| # stars            | 5292.0 |
 
 ## Links
-- [Homepage](https://github.com/Khan/aphrodite)
-- [Bugs](https://github.com/Khan/aphrodite/issues)
-- [Repository](https://github.com/Khan/aphrodite)
 - [Npm](https://www.npmjs.com/package/aphrodite)
     
 

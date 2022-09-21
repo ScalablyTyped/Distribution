@@ -10,10 +10,10 @@ Toast notifications for React.js
 | ------------------ | :-------------: |
 | Full name          | react-notify-toast |
 | Keywords           | react, toast, notification, component, notify |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 262317 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 22308.333333333332 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/jesusoterogomez/react-notify-toast#readme)

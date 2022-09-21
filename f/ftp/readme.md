@@ -10,10 +10,10 @@ An FTP client module for node.js
 | ------------------ | :-------------: |
 | Full name          | ftp |
 | Keywords           | ftp, client, transfer |
-| # releases         | 0 |
-| # dependents       | 355 |
-| # downloads        | 97049955 |
-| # stars            | 44 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7529663333333332E7 |
+| # stars            | 1068.0 |
 
 ## Links
 - [Homepage](https://github.com/mscdex/node-ftp)

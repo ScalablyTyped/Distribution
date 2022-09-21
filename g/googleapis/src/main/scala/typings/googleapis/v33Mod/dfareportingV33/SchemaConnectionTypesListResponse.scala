@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Connection Type List Response
-  */
 trait SchemaConnectionTypesListResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaConnectionTypesListResponse extends StObject {
   var connectionTypes: js.UndefOr[js.Array[SchemaConnectionType]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#connectionTypesListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#connectionTypesListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaConnectionTypesListResponse {
   
@@ -33,9 +29,11 @@ object SchemaConnectionTypesListResponse {
     
     inline def setConnectionTypesUndefined: Self = StObject.set(x, "connectionTypes", js.undefined)
     
-    inline def setConnectionTypesVarargs(value: SchemaConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value :_*))
+    inline def setConnectionTypesVarargs(value: SchemaConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

@@ -1,74 +1,104 @@
 package typings.estreeWalker
 
-import typings.estree.mod.BaseNode
+import typings.estreeWalker.anon.Remove
 import typings.estreeWalker.walkerMod.WalkerBase
-import typings.estreeWalker.walkerMod.WalkerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncMod {
   
-  @JSImport("estree-walker/types/sync", "SyncWalkerClass")
+  @JSImport("estree-walker/types/sync", "SyncWalker")
   @js.native
-  class SyncWalkerClass protected () extends WalkerBase {
-    def this(walker: SyncWalker) = this()
+  open class SyncWalker protected () extends WalkerBase {
+    /**
+      *
+      * @param {SyncHandler} enter
+      * @param {SyncHandler} leave
+      */
+    def this(
+      enter: js.ThisFunction4[
+            /* this */ Remove, 
+            /* node */ typings.estree.mod.BaseNode, 
+            /* parent */ typings.estree.mod.BaseNode, 
+            /* key */ String, 
+            /* index */ Double, 
+            Unit
+          ],
+      leave: js.ThisFunction4[
+            /* this */ Remove, 
+            /* node */ typings.estree.mod.BaseNode, 
+            /* parent */ typings.estree.mod.BaseNode, 
+            /* key */ String, 
+            /* index */ Double, 
+            Unit
+          ]
+    ) = this()
     
-    /* protected */ var enter: js.UndefOr[WalkerHandler] = js.native
+    /** @type {SyncHandler} */
+    def enter(node: typings.estree.mod.BaseNode, parent: typings.estree.mod.BaseNode, key: String, index: Double): Unit = js.native
+    /** @type {SyncHandler} */
+    @JSName("enter")
+    var enter_Original: SyncHandler = js.native
     
-    /* protected */ var leave: js.UndefOr[WalkerHandler] = js.native
+    /** @type {SyncHandler} */
+    def leave(node: typings.estree.mod.BaseNode, parent: typings.estree.mod.BaseNode, key: String, index: Double): Unit = js.native
+    /** @type {SyncHandler} */
+    @JSName("leave")
+    var leave_Original: SyncHandler = js.native
     
-    def visit(node: BaseNode, parent: BaseNode, enter: WalkerHandler, leave: WalkerHandler): BaseNode = js.native
-    def visit(node: BaseNode, parent: BaseNode, enter: WalkerHandler, leave: WalkerHandler, prop: String): BaseNode = js.native
+    /**
+      *
+      * @param {BaseNode} node
+      * @param {BaseNode} parent
+      * @param {string} [prop]
+      * @param {number} [index]
+      * @returns {BaseNode}
+      */
+    def visit(node: typings.estree.mod.BaseNode, parent: typings.estree.mod.BaseNode): typings.estree.mod.BaseNode = js.native
+    def visit(node: typings.estree.mod.BaseNode, parent: typings.estree.mod.BaseNode, prop: String): typings.estree.mod.BaseNode = js.native
     def visit(
-      node: BaseNode,
-      parent: BaseNode,
-      enter: WalkerHandler,
-      leave: WalkerHandler,
+      node: typings.estree.mod.BaseNode,
+      parent: typings.estree.mod.BaseNode,
       prop: String,
       index: Double
-    ): BaseNode = js.native
-    def visit(
-      node: BaseNode,
-      parent: BaseNode,
-      enter: WalkerHandler,
-      leave: WalkerHandler,
-      prop: Unit,
-      index: Double
-    ): BaseNode = js.native
+    ): typings.estree.mod.BaseNode = js.native
+    def visit(node: typings.estree.mod.BaseNode, parent: typings.estree.mod.BaseNode, prop: Unit, index: Double): typings.estree.mod.BaseNode = js.native
   }
   
-  trait SyncWalker extends StObject {
-    
-    var enter: js.UndefOr[WalkerHandler] = js.undefined
-    
-    var leave: js.UndefOr[WalkerHandler] = js.undefined
-  }
-  object SyncWalker {
-    
-    inline def apply(): SyncWalker = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SyncWalker]
-    }
-    
-    extension [Self <: SyncWalker](x: Self) {
-      
-      inline def setEnter(value: WalkerHandler): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
-      
-      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
-      
-      inline def setLeave(value: WalkerHandler): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
-      
-      inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
-    }
-  }
+  type BaseNode = typings.estree.mod.BaseNode
   
-  type WalkerHandler = js.ThisFunction4[
-    /* this */ WalkerContext, 
-    /* node */ BaseNode, 
-    /* parent */ BaseNode, 
+  type SyncHandler = js.ThisFunction4[
+    /* this */ Remove, 
+    /* node */ typings.estree.mod.BaseNode, 
+    /* parent */ typings.estree.mod.BaseNode, 
     /* key */ String, 
     /* index */ Double, 
     Unit
   ]
+  
+  trait WalkerContext extends StObject {
+    
+    def remove(): Unit
+    
+    def replace(node: typings.estree.mod.BaseNode): Unit
+    
+    def skip(): Unit
+  }
+  object WalkerContext {
+    
+    inline def apply(remove: () => Unit, replace: typings.estree.mod.BaseNode => Unit, skip: () => Unit): WalkerContext = {
+      val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove), replace = js.Any.fromFunction1(replace), skip = js.Any.fromFunction0(skip))
+      __obj.asInstanceOf[WalkerContext]
+    }
+    
+    extension [Self <: WalkerContext](x: Self) {
+      
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      
+      inline def setReplace(value: typings.estree.mod.BaseNode => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+      
+      inline def setSkip(value: () => Unit): Self = StObject.set(x, "skip", js.Any.fromFunction0(value))
+    }
+  }
 }

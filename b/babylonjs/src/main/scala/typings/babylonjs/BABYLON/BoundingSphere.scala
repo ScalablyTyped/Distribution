@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BoundingSphere extends StObject {
   
-  /** @hidden */
+  /**
+    * @param worldMatrix
+    * @hidden
+    */
   def _update(worldMatrix: DeepImmutable[Matrix]): Unit = js.native
   
-  /* private */ var _worldMatrix: js.Any = js.native
+  /* private */ var _worldMatrix: Any = js.native
   
   /**
     * Gets the center of the bounding sphere in local space

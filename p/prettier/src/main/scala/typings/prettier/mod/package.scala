@@ -1,50 +1,79 @@
 package typings.prettier.mod
 
+import typings.prettier.anon.Length
+import typings.prettier.anon._empty
+import typings.prettier.mod.^
+import typings.prettier.mod.doc.builders.Doc
+import typings.std.Exclude
+import typings.std.Pick
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def check(source: java.lang.String): scala.Boolean = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("check")(source.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-inline def check(source: java.lang.String, options: typings.prettier.mod.Options): scala.Boolean = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("check")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def check(source: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def check(source: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def clearConfigCache(): scala.Unit = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearConfigCache")().asInstanceOf[scala.Unit]
+inline def clearConfigCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearConfigCache")().asInstanceOf[Unit]
 
-inline def format(source: java.lang.String): java.lang.String = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(source.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def format(source: java.lang.String, options: typings.prettier.mod.Options): java.lang.String = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def format(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def format(source: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def formatWithCursor(source: java.lang.String, options: typings.prettier.mod.CursorOptions): typings.prettier.mod.CursorResult = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatWithCursor")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.prettier.mod.CursorResult]
+inline def formatWithCursor(source: String, options: CursorOptions): CursorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("formatWithCursor")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CursorResult]
 
-inline def getSupportInfo(): typings.prettier.mod.SupportInfo = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSupportInfo")().asInstanceOf[typings.prettier.mod.SupportInfo]
+inline def getSupportInfo(): SupportInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportInfo")().asInstanceOf[SupportInfo]
 
-inline def version: java.lang.String = typings.prettier.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-type AST = js.Any
+type AST = Any
 
-type BuiltInParser = js.Function2[
-/* text */ java.lang.String, 
-/* options */ js.UndefOr[js.Any], 
-typings.prettier.mod.AST]
+// The type of elements that make up the given array T.
+type ArrayElement[T] = Any
 
-type CustomParser = js.Function3[
-/* text */ java.lang.String, 
-/* parsers */ typings.prettier.mod.BuiltInParsers, 
-/* options */ typings.prettier.mod.Options, 
-typings.prettier.mod.AST]
+// A union of the properties of the given object that are arrays.
+type ArrayProperties[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: std.NonNullable<T[K]> extends std.Array<any>? K : never}[keyof T] */ js.Any
 
-type Doc_ = typings.prettier.mod.doc.builders.Doc
+type BuiltInParser = js.Function2[/* text */ String, /* options */ js.UndefOr[Any], AST]
 
-type LiteralUnion[T /* <: U */, U] = T | ((typings.std.Pick[U, scala.Nothing]) & typings.prettier.anon._empty)
+type CallCallback[T, U] = js.Function3[/* path */ AstPath[T], /* index */ Double, /* value */ Any, U]
+
+type CallProperties[T] = (/* keyof T */ String) | IndexProperties[T]
+
+type CustomParser = js.Function3[/* text */ String, /* parsers */ BuiltInParsers, /* options */ Options, AST]
+
+type Doc_ = Doc
+
+type EachCallback[T] = js.Function3[/* path */ AstPath[ArrayElement[T]], /* index */ Double, /* value */ Any, Unit]
+
+type FastPath[T] = AstPath[T]
+
+// A union of the properties of the given array T that can be used to index it.
+// If the array is a tuple, then that's going to be the explicit indices of the
+// array, otherwise it's going to just be number.
+type IndexProperties[T /* <: Length */] = Double | (Exclude[
+/* import warning: importer.ImportType#apply Failed type conversion: std.Partial<T>['length'] */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: T['length'] */ js.Any])
+
+// Effectively performing T[P], except that it's telling TypeScript that it's
+// safe to do this for tuples, arrays, or objects.
+type IndexValue[T, P] = /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
+
+type IterProperties[T] = ArrayProperties[T] | IndexProperties[T]
+
+type LiteralUnion[T /* <: U */, U] = T | ((Pick[U, scala.Nothing]) & _empty)
+
+type MapCallback[T, U] = js.Function3[/* path */ AstPath[ArrayElement[T]], /* index */ Double, /* value */ Any, U]
 
 /* Rewritten from type alias, can be one of: 
   - typings.prettier.mod.IntSupportOption
   - typings.prettier.mod.IntArraySupportOption
   - typings.prettier.mod.BooleanSupportOption
   - typings.prettier.mod.BooleanArraySupportOption
-  - typings.prettier.mod.ChoiceSupportOption[js.Any]
+  - typings.prettier.mod.ChoiceSupportOption[scala.Any]
   - typings.prettier.mod.PathSupportOption
   - typings.prettier.mod.PathArraySupportOption
 */
-type SupportOption = typings.prettier.mod._SupportOption | typings.prettier.mod.ChoiceSupportOption[js.Any]
+type SupportOption = _SupportOption | ChoiceSupportOption[Any]
 
-type SupportOptions = typings.std.Record[java.lang.String, typings.prettier.mod.SupportOption]
+type SupportOptions = Record[String, SupportOption]

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.System.LauncherOptions")
 @js.native
 /** Creates and initializes a new instance of the launcher options object. */
-class LauncherOptions ()
+open class LauncherOptions ()
   extends StObject
      with typings.winrtUwp.Windows.System.LauncherOptions {
   

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the menu bar.
   */
-class MenuBar ()
+open class MenuBar ()
   extends typings.luminoWidgets.menubarMod.MenuBar {
   def this(options: IOptions) = this()
 }
@@ -26,10 +26,7 @@ object MenuBar {
     */
   @JSImport("@lumino/widgets", "MenuBar.Renderer")
   @js.native
-  /**
-    * Construct a new renderer.
-    */
-  class Renderer ()
+  open class Renderer ()
     extends typings.luminoWidgets.menubarMod.MenuBar.Renderer
   
   /**

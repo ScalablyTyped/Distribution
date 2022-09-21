@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassRouting ()
+open class ClassRouting ()
   extends StObject
      with typings.fibjs.ClassRouting {
   def this(map: js.Object) = this()

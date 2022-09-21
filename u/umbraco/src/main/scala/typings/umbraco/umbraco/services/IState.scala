@@ -23,7 +23,7 @@ trait IState extends StObject {
     * editorState.current can not be overwritten, you should only read values from it
     * since modifying individual properties should be handled by the property editors
     */
-  def getCurrent(): js.Any
+  def getCurrent(): Any
   
   /**
     * @ngdoc function
@@ -53,14 +53,14 @@ trait IState extends StObject {
 }
 object IState {
   
-  inline def apply(getCurrent: () => js.Any, reset: () => Unit, set: js.Object => Unit): IState = {
+  inline def apply(getCurrent: () => Any, reset: () => Unit, set: js.Object => Unit): IState = {
     val __obj = js.Dynamic.literal(getCurrent = js.Any.fromFunction0(getCurrent), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction1(set))
     __obj.asInstanceOf[IState]
   }
   
   extension [Self <: IState](x: Self) {
     
-    inline def setGetCurrent(value: () => js.Any): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
+    inline def setGetCurrent(value: () => Any): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

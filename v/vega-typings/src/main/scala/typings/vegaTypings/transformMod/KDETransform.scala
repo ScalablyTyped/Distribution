@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KDETransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -71,7 +71,7 @@ object KDETransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setMaxsteps(value: Double | SignalRef): Self = StObject.set(x, "maxsteps", value.asInstanceOf[js.Any])
     

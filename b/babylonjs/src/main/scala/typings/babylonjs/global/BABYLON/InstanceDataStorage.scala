@@ -1,7 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSGlobal("BABYLON._InstanceDataStorage")
 @js.native
-class InstanceDataStorage ()
+open class InstanceDataStorage ()
   extends StObject
      with typings.babylonjs.BABYLON.InstanceDataStorage {
   
   /* CompleteClass */
   var batchCache: typings.babylonjs.BABYLON.InstancesBatch = js.native
+  
+  /* CompleteClass */
+  var batchCacheReplacementModeInFrozenMode: typings.babylonjs.BABYLON.InstancesBatch = js.native
   
   /* CompleteClass */
   var hardwareInstancedRendering: Boolean = js.native
@@ -28,7 +30,13 @@ class InstanceDataStorage ()
   var instancesBufferSize: Double = js.native
   
   /* CompleteClass */
-  var instancesData: Float32Array = js.native
+  var instancesData: js.typedarray.Float32Array = js.native
+  
+  /* CompleteClass */
+  var instancesPreviousBuffer: Nullable[typings.babylonjs.BABYLON.Buffer] = js.native
+  
+  /* CompleteClass */
+  var instancesPreviousData: js.typedarray.Float32Array = js.native
   
   /* CompleteClass */
   var isFrozen: Boolean = js.native
@@ -37,10 +45,16 @@ class InstanceDataStorage ()
   var manualUpdate: Boolean = js.native
   
   /* CompleteClass */
+  var masterMeshPreviousWorldMatrix: Nullable[typings.babylonjs.BABYLON.Matrix] = js.native
+  
+  /* CompleteClass */
   var overridenInstanceCount: Double = js.native
   
   /* CompleteClass */
   var previousBatch: Nullable[typings.babylonjs.BABYLON.InstancesBatch] = js.native
+  
+  /* CompleteClass */
+  var previousManualUpdate: Boolean = js.native
   
   /* CompleteClass */
   var previousRenderId: Double = js.native
@@ -49,5 +63,5 @@ class InstanceDataStorage ()
   var sideOrientation: Double = js.native
   
   /* CompleteClass */
-  var visibleInstances: js.Any = js.native
+  var visibleInstances: Any = js.native
 }

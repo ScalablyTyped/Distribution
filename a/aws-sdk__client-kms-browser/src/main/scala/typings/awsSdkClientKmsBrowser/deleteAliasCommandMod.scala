@@ -16,7 +16,7 @@ object deleteAliasCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/DeleteAliasCommand", "DeleteAliasCommand")
   @js.native
-  class DeleteAliasCommand protected ()
+  open class DeleteAliasCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteAliasCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteAliasInput, DeleteAliasOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[DeleteAliasInput, DeleteAliasOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteAliasInput, DeleteAliasOutput] = js.native
   }
 }

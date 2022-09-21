@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChartObject extends StObject {
   
-  val chartObject: js.Any
+  val chartObject: Any
   
-  val drawObject: js.Any
+  val drawObject: Any
 }
 object ChartObject {
   
-  inline def apply(chartObject: js.Any, drawObject: js.Any): ChartObject = {
+  inline def apply(chartObject: Any, drawObject: Any): ChartObject = {
     val __obj = js.Dynamic.literal(chartObject = chartObject.asInstanceOf[js.Any], drawObject = drawObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartObject]
   }
   
   extension [Self <: ChartObject](x: Self) {
     
-    inline def setChartObject(value: js.Any): Self = StObject.set(x, "chartObject", value.asInstanceOf[js.Any])
+    inline def setChartObject(value: Any): Self = StObject.set(x, "chartObject", value.asInstanceOf[js.Any])
     
-    inline def setDrawObject(value: js.Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
+    inline def setDrawObject(value: Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
   }
 }

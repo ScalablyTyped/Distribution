@@ -17,6 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassLock ()
+open class ClassLock ()
   extends StObject
      with typings.fibjs.ClassLock

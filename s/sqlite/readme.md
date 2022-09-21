@@ -1,7 +1,7 @@
 
 # Scala.js typings for sqlite
 
-Typings are for version 4.0.17
+Typings are for version 4.1.2
 
 ## Library description:
 SQLite client for Node.js applications with SQL-based migrations API written in Typescript
@@ -10,10 +10,10 @@ SQLite client for Node.js applications with SQL-based migrations API written in 
 | ------------------ | :-------------: |
 | Full name          | sqlite |
 | Keywords           | sqlite, db, database, sql, migrate, migration, migrations, migrator, seed, seeds, seeder, node, node5, babel, es6, async, promise, promises, api |
-| # releases         | 31 |
-| # dependents       | 184 |
-| # downloads        | 1492632 |
-| # stars            | 24 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 176680.66666666666 |
+| # stars            | 770.0 |
 
 ## Links
 - [Homepage](https://github.com/kriasoft/node-sqlite#readme)

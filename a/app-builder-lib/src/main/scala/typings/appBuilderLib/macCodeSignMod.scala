@@ -13,7 +13,7 @@ object macCodeSignMod {
   
   @JSImport("app-builder-lib/out/codeSign/macCodeSign", "Identity")
   @js.native
-  class Identity protected () extends StObject {
+  open class Identity protected () extends StObject {
     def this(name: String, hash: String) = this()
     
     val hash: String = js.native
@@ -41,74 +41,74 @@ object macCodeSignMod {
   inline def isSignAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignAllowed")().asInstanceOf[Boolean]
   inline def isSignAllowed(isPrintWarn: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignAllowed")(isPrintWarn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def removeKeychain(keychainFile: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeKeychain")(keychainFile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def removeKeychain(keychainFile: String, printWarn: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeKeychain")(keychainFile.asInstanceOf[js.Any], printWarn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def removeKeychain(keychainFile: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeKeychain")(keychainFile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def removeKeychain(keychainFile: String, printWarn: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeKeychain")(keychainFile.asInstanceOf[js.Any], printWarn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: String,
     keychainFile: String,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: String,
     keychainFile: Null,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: String,
     keychainFile: Unit,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: Null,
     keychainFile: String,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: Null,
     keychainFile: Null,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: Null,
     keychainFile: Unit,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: Unit,
     keychainFile: String,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: Unit,
     keychainFile: Null,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reportError(
     isMas: Boolean,
-    certificateType: CertType,
+    certificateTypes: js.Array[CertType],
     qualifier: Unit,
     keychainFile: Unit,
     isForceCodeSigning: Boolean
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(isMas.asInstanceOf[js.Any], certificateTypes.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], keychainFile.asInstanceOf[js.Any], isForceCodeSigning.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def sign(path: String, name: String, keychain: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(path.asInstanceOf[js.Any], name.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def sign(path: String, name: String, keychain: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(path.asInstanceOf[js.Any], name.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.appBuilderLib.appBuilderLibStrings.`Developer ID Application`
@@ -116,6 +116,8 @@ object macCodeSignMod {
     - typings.appBuilderLib.appBuilderLibStrings.`3rd Party Mac Developer Application`
     - typings.appBuilderLib.appBuilderLibStrings.`3rd Party Mac Developer Installer`
     - typings.appBuilderLib.appBuilderLibStrings.`Mac Developer`
+    - typings.appBuilderLib.appBuilderLibStrings.`Apple Development`
+    - typings.appBuilderLib.appBuilderLibStrings.`Apple Distribution`
   */
   trait CertType extends StObject
   object CertType {
@@ -123,6 +125,10 @@ object macCodeSignMod {
     inline def `3rd Party Mac Developer Application`: typings.appBuilderLib.appBuilderLibStrings.`3rd Party Mac Developer Application` = ("3rd Party Mac Developer Application").asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.`3rd Party Mac Developer Application`]
     
     inline def `3rd Party Mac Developer Installer`: typings.appBuilderLib.appBuilderLibStrings.`3rd Party Mac Developer Installer` = ("3rd Party Mac Developer Installer").asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.`3rd Party Mac Developer Installer`]
+    
+    inline def `Apple Development`: typings.appBuilderLib.appBuilderLibStrings.`Apple Development` = ("Apple Development").asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.`Apple Development`]
+    
+    inline def `Apple Distribution`: typings.appBuilderLib.appBuilderLibStrings.`Apple Distribution` = ("Apple Distribution").asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.`Apple Distribution`]
     
     inline def `Developer ID Application`: typings.appBuilderLib.appBuilderLibStrings.`Developer ID Application` = ("Developer ID Application").asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.`Developer ID Application`]
     

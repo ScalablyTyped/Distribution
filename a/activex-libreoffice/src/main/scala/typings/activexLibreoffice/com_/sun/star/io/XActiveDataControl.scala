@@ -50,7 +50,7 @@ object XActiveDataControl {
   inline def apply(
     acquire: () => Unit,
     addListener: XStreamListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeListener: XStreamListener => Unit,
     start: () => Unit,

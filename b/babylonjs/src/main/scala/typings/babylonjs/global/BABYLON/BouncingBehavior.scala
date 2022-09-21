@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.BouncingBehavior")
 @js.native
-class BouncingBehavior ()
+open class BouncingBehavior ()
   extends StObject
      with typings.babylonjs.BABYLON.BouncingBehavior {
   

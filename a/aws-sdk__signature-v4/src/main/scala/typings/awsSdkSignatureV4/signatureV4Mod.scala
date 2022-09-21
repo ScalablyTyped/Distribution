@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object signatureV4Mod {
   
-  @JSImport("@aws-sdk/signature-v4/dist/cjs/SignatureV4", "SignatureV4")
+  @JSImport("@aws-sdk/signature-v4/dist-types/SignatureV4", "SignatureV4")
   @js.native
-  class SignatureV4 protected ()
+  open class SignatureV4 protected ()
     extends StObject
        with RequestPresigner
        with RequestSigner
@@ -25,25 +25,25 @@ object signatureV4Mod {
        with EventSigner {
     def this(hasApplyChecksumCredentialsRegionServiceSha256UriEscapePath: SignatureV4Init & SignatureV4CryptoInit) = this()
     
-    /* private */ val applyChecksum: js.Any = js.native
+    /* private */ val applyChecksum: Any = js.native
     
-    /* private */ var createCanonicalRequest: js.Any = js.native
+    /* private */ var createCanonicalRequest: Any = js.native
     
-    /* private */ var createStringToSign: js.Any = js.native
+    /* private */ var createStringToSign: Any = js.native
     
-    /* private */ val credentialProvider: js.Any = js.native
+    /* private */ val credentialProvider: Any = js.native
     
-    /* private */ var getCanonicalPath: js.Any = js.native
+    /* private */ var getCanonicalPath: Any = js.native
     
-    /* private */ var getSignature: js.Any = js.native
+    /* private */ var getSignature: Any = js.native
     
-    /* private */ var getSigningKey: js.Any = js.native
+    /* private */ var getSigningKey: Any = js.native
     
-    /* private */ val regionProvider: js.Any = js.native
+    /* private */ val regionProvider: Any = js.native
     
-    /* private */ val service: js.Any = js.native
+    /* private */ val service: Any = js.native
     
-    /* private */ val sha256: js.Any = js.native
+    /* private */ val sha256: Any = js.native
     
     /**
       * Sign the individual event of the event stream.
@@ -51,13 +51,15 @@ object signatureV4Mod {
     /* CompleteClass */
     override def sign(event: FormattedEvent, options: EventSigningArguments): js.Promise[String] = js.native
     
-    /* private */ var signEvent: js.Any = js.native
+    /* private */ var signEvent: Any = js.native
     
-    /* private */ var signRequest: js.Any = js.native
+    /* private */ var signRequest: Any = js.native
     
-    /* private */ var signString: js.Any = js.native
+    /* private */ var signString: Any = js.native
     
-    /* private */ val uriEscapePath: js.Any = js.native
+    /* private */ val uriEscapePath: Any = js.native
+    
+    /* private */ var validateResolvedCredentials: Any = js.native
   }
   
   trait SignatureV4CryptoInit extends StObject {

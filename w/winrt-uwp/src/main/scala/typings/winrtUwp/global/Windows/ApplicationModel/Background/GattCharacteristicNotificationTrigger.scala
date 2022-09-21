@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a trigger that launches a background task when an incoming change notification is received for a Bluetooth LE GATT characteristic. */
 @JSGlobal("Windows.ApplicationModel.Background.GattCharacteristicNotificationTrigger")
 @js.native
-class GattCharacteristicNotificationTrigger protected ()
+open class GattCharacteristicNotificationTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.GattCharacteristicNotificationTrigger {
   /**

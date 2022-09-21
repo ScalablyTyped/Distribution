@@ -17,7 +17,7 @@ trait Matrix4x4Helpers extends StObject {
     * Returns the inverse of the given 4x4 matrix or null if it is not invertible.
     * @param matrix
     */
-  def invert(matrix: Matrix4x4): js.Array[Double] | Null = js.native
+  def invert(matrix: js.typedarray.Float32Array): js.Array[Double] | Null = js.native
   
   /**
     * Return a new 4x4 matrix representing a camera at eyeVec, pointed at centerVec.
@@ -31,14 +31,14 @@ trait Matrix4x4Helpers extends StObject {
     * Multiplies the provided 4x4 matrices together from left to right.
     * @param matrices
     */
-  def multiply(matrices: (Matrix4x4 | js.Array[Double])*): js.Array[Double] = js.native
+  def multiply(matrices: (js.typedarray.Float32Array | js.Array[Double])*): js.Array[Double] = js.native
   
   def mustInvert(matrix: js.Array[Double]): js.Array[Double] = js.native
   /**
     * Returns the inverse of the given 4x4 matrix or throws if it is not invertible.
     * @param matrix
     */
-  def mustInvert(matrix: Matrix4x4): js.Array[Double] = js.native
+  def mustInvert(matrix: js.typedarray.Float32Array): js.Array[Double] = js.native
   
   /**
     * Returns a new 4x4 matrix representing a perspective.
@@ -55,7 +55,7 @@ trait Matrix4x4Helpers extends StObject {
     * @param row
     * @param col
     */
-  def rc(matrix: Matrix4x4, row: Double, col: Double): Double = js.native
+  def rc(matrix: js.typedarray.Float32Array, row: Double, col: Double): Double = js.native
   
   /**
     * Returns a new 4x4 matrix representing a rotation around the provided vector.
@@ -102,5 +102,5 @@ trait Matrix4x4Helpers extends StObject {
     * Returns a new 4x4 matrix that is the transpose of this 4x4 matrix.
     * @param matrix
     */
-  def transpose(matrix: Matrix4x4): js.Array[Double] = js.native
+  def transpose(matrix: js.typedarray.Float32Array): js.Array[Double] = js.native
 }

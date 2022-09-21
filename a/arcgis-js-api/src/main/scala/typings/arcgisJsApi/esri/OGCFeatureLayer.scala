@@ -1,10 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`ogc-feature`
 import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OGCFeatureLayer
   extends StObject
      with Layer
-     with ScaleRangeLayer
+     with APIKeyMixin
+     with BlendLayer
+     with CustomParametersMixin
+     with OrderedLayer
+     with PortalLayer
      with RefreshableLayer
-     with BlendLayer {
+     with ScaleRangeLayer
+     with FeatureEffectLayer {
   
   /**
     * The unique identifier of the collection on the server.
@@ -54,7 +61,7 @@ trait OGCFeatureLayer
   var displayField: String = js.native
   
   /**
-    * Specifies how graphics are placed on the vertical axis (z).
+    * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#elevationInfo)
     */
@@ -105,6 +112,8 @@ trait OGCFeatureLayer
   /**
     * Indicates whether to display labels for this layer.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#labelsVisible)
     */
   var labelsVisible: Boolean = js.native
@@ -112,26 +121,28 @@ trait OGCFeatureLayer
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
   
   /**
-    * The url query string in the format request json content from the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#mediaType)
-    */
-  var mediaType: String = js.native
-  
-  /**
     * The OGCFeatureLayer requires that each feature be uniquely identified with an object id.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#objectIdField)
     */
   var objectIdField: String = js.native
   
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: OGCFeatureLayerRefreshEventHandler): IHandle = js.native
+  
   /**
     * Indicates whether to display popups when features in the layer are clicked.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#popupEnabled)
     */
@@ -152,7 +163,16 @@ trait OGCFeatureLayer
   var renderer: Renderer = js.native
   
   /**
-    * The spatial reference of the layer.
+    * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#screenSizePerspectiveEnabled)
+    */
+  var screenSizePerspectiveEnabled: Boolean = js.native
+  
+  /**
+    * The spatial reference the source data is stored in.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#spatialReference)
     */

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ICanvasRenderingContext2D")
 @js.native
-/* private */ class ICanvasRenderingContext2D ()
+/* private */ open class ICanvasRenderingContext2D ()
   extends StObject
      with typings.activexMshtml.MSHTML.ICanvasRenderingContext2D {
   
@@ -39,29 +39,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def closePath(): Unit = js.native
   
   /* CompleteClass */
-  override def createImageData(a1: js.Any, a2: js.Any): typings.activexMshtml.MSHTML.ICanvasImageData = js.native
+  override def createImageData(a1: Any, a2: Any): typings.activexMshtml.MSHTML.ICanvasImageData = js.native
   
   /* CompleteClass */
   override def createLinearGradient(x0: Double, y0: Double, x1: Double, y1: Double): typings.activexMshtml.MSHTML.ICanvasGradient = js.native
   
   /* CompleteClass */
-  override def createPattern(Image: js.Any, repetition: js.Any): typings.activexMshtml.MSHTML.ICanvasPattern = js.native
+  override def createPattern(Image: Any, repetition: Any): typings.activexMshtml.MSHTML.ICanvasPattern = js.native
   
   /* CompleteClass */
   override def createRadialGradient(x0: Double, y0: Double, r0: Double, x1: Double, y1: Double, r1: Double): typings.activexMshtml.MSHTML.ICanvasGradient = js.native
   
   /* CompleteClass */
-  override def drawImage(
-    pSrc: js.Any,
-    a1: js.Any,
-    a2: js.Any,
-    a3: js.Any,
-    a4: js.Any,
-    a5: js.Any,
-    a6: js.Any,
-    a7: js.Any,
-    a8: js.Any
-  ): Unit = js.native
+  override def drawImage(pSrc: Any, a1: Any, a2: Any, a3: Any, a4: Any, a5: Any, a6: Any, a7: Any, a8: Any): Unit = js.native
   
   /* CompleteClass */
   override def fill(): Unit = js.native
@@ -70,10 +60,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   
   /* CompleteClass */
-  var fillStyle: js.Any = js.native
+  var fillStyle: Any = js.native
   
   /* CompleteClass */
-  override def fillText(text: String, x: Double, y: Double, maxWidth: js.Any): Unit = js.native
+  override def fillText(text: String, x: Double, y: Double, maxWidth: Any): Unit = js.native
   
   /* CompleteClass */
   var font: String = js.native
@@ -116,10 +106,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     imagedata: typings.activexMshtml.MSHTML.ICanvasImageData,
     dx: Double,
     dy: Double,
-    dirtyX: js.Any,
-    dirtyY: js.Any,
-    dirtyWidth: js.Any,
-    dirtyHeight: js.Any
+    dirtyX: Any,
+    dirtyY: Any,
+    dirtyWidth: Any,
+    dirtyHeight: Any
   ): Unit = js.native
   
   /* CompleteClass */
@@ -162,10 +152,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   
   /* CompleteClass */
-  var strokeStyle: js.Any = js.native
+  var strokeStyle: Any = js.native
   
   /* CompleteClass */
-  override def strokeText(text: String, x: Double, y: Double, maxWidth: js.Any): Unit = js.native
+  override def strokeText(text: String, x: Double, y: Double, maxWidth: Any): Unit = js.native
   
   /* CompleteClass */
   var textAlign: String = js.native

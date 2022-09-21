@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mock-aws-s3", "HttpRequest")
 @js.native
-class HttpRequest protected ()
+open class HttpRequest protected ()
   extends typings.awsSdk.mod.HttpRequest {
   /**
     * Constructs HttpRequest object with provided endpoint and region

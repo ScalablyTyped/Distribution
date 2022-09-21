@@ -14,7 +14,7 @@ trait EntityRecognizerProperties extends StObject {
   /**
     * The time that the recognizer creation completed.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that identifies the entity recognizer.
@@ -37,9 +37,19 @@ trait EntityRecognizerProperties extends StObject {
   var Message: js.UndefOr[AnyLengthString] = js.undefined
   
   /**
+    * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt trained custom models. The ModelKmsKeyId can be either of the following formats:    KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+    */
+  var ModelKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
+  
+  /**
     *  Provides information about an entity recognizer.
     */
   var RecognizerMetadata: js.UndefOr[EntityRecognizerMetadata] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the source model. This model was imported from a different AWS account to create the entity recognizer model in your AWS account.
+    */
+  var SourceModelArn: js.UndefOr[EntityRecognizerArn] = js.undefined
   
   /**
     * Provides the status of the entity recognizer.
@@ -49,17 +59,22 @@ trait EntityRecognizerProperties extends StObject {
   /**
     * The time that the recognizer was submitted for processing.
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+  var SubmitTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time that training of the entity recognizer was completed.
     */
-  var TrainingEndTime: js.UndefOr[Timestamp] = js.undefined
+  var TrainingEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time that training of the entity recognizer started.
     */
-  var TrainingStartTime: js.UndefOr[Timestamp] = js.undefined
+  var TrainingStartTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The version name you assigned to the entity recognizer.
+    */
+  var VersionName: js.UndefOr[typings.awsSdk.comprehendMod.VersionName] = js.undefined
   
   /**
     * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
@@ -84,7 +99,7 @@ object EntityRecognizerProperties {
     
     inline def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -104,25 +119,37 @@ object EntityRecognizerProperties {
     
     inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
+    inline def setModelKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "ModelKmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setModelKmsKeyIdUndefined: Self = StObject.set(x, "ModelKmsKeyId", js.undefined)
+    
     inline def setRecognizerMetadata(value: EntityRecognizerMetadata): Self = StObject.set(x, "RecognizerMetadata", value.asInstanceOf[js.Any])
     
     inline def setRecognizerMetadataUndefined: Self = StObject.set(x, "RecognizerMetadata", js.undefined)
+    
+    inline def setSourceModelArn(value: EntityRecognizerArn): Self = StObject.set(x, "SourceModelArn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceModelArnUndefined: Self = StObject.set(x, "SourceModelArn", js.undefined)
     
     inline def setStatus(value: ModelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: js.Date): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
     inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
     
-    inline def setTrainingEndTime(value: Timestamp): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
+    inline def setTrainingEndTime(value: js.Date): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
     
     inline def setTrainingEndTimeUndefined: Self = StObject.set(x, "TrainingEndTime", js.undefined)
     
-    inline def setTrainingStartTime(value: Timestamp): Self = StObject.set(x, "TrainingStartTime", value.asInstanceOf[js.Any])
+    inline def setTrainingStartTime(value: js.Date): Self = StObject.set(x, "TrainingStartTime", value.asInstanceOf[js.Any])
     
     inline def setTrainingStartTimeUndefined: Self = StObject.set(x, "TrainingStartTime", js.undefined)
+    
+    inline def setVersionName(value: VersionName): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNameUndefined: Self = StObject.set(x, "VersionName", js.undefined)
     
     inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     

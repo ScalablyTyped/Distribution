@@ -11,16 +11,19 @@ trait TextStreamBase extends StObject {
     * It is not necessary to close standard streams; they close automatically when the process ends. If
     * you close a standard stream, be aware that any other pointers to that standard stream become invalid.
     */
+  /* standard scripthost */
   def Close(): Unit
   
   /**
     * The column number of the current character position in an input stream.
     */
+  /* standard scripthost */
   var Column: Double
   
   /**
     * The current line number in an input stream.
     */
+  /* standard scripthost */
   var Line: Double
 }
 object TextStreamBase {

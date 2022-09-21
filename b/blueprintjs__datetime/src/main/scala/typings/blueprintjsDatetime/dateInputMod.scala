@@ -1,16 +1,16 @@
 package typings.blueprintjsDatetime
 
-import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
+import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsDatetime.anon.PartialIDateInputProps
+import typings.blueprintjsDatetime.anon.PartialDateInputProps
 import typings.blueprintjsDatetime.anon.PartialIPopoverProps
 import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
-import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
-import typings.blueprintjsDatetime.shortcutsMod.IDatePickerShortcut
+import typings.blueprintjsDatetime.datePickerCoreMod.DatePickerBaseProps
+import typings.blueprintjsDatetime.shortcutsMod.DatePickerShortcut
 import typings.react.mod.global.JSX.Element
-import typings.std.Date
+import typings.std.HTMLDivElement
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,61 +19,58 @@ object dateInputMod {
   
   @JSImport("@blueprintjs/datetime/lib/esm/dateInput", "DateInput")
   @js.native
-  class DateInput protected ()
-    extends AbstractPureComponent2[IDateInputProps, IDateInputState, js.Object] {
-    def this(props: IDateInputProps) = this()
-    def this(props: IDateInputProps, context: js.Any) = this()
+  open class DateInput protected ()
+    extends AbstractPureComponent2[DateInputProps, IDateInputState, js.Object] {
+    def this(props: DateInputProps) = this()
+    def this(props: DateInputProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MDateInput(prevProps: IDateInputProps, prevState: IDateInputState): Unit = js.native
+    def componentDidUpdate_MDateInput(prevProps: DateInputProps, prevState: IDateInputState): Unit = js.native
     
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MDateInput(): Unit = js.native
+    /* private */ var formatDate: Any = js.native
     
-    /* private */ var formatDate: js.Any = js.native
+    /* private */ var getKeyboardFocusableElements: Any = js.native
     
-    /* private */ var getLastTabbableElement: js.Any = js.native
+    /* private */ var getRelatedTarget: Any = js.native
     
-    /* private */ var handleClosePopover: js.Any = js.native
+    /* private */ var handleClosePopover: Any = js.native
     
-    /* private */ var handleDateChange: js.Any = js.native
+    /* private */ var handleDateChange: Any = js.native
     
-    /* private */ var handleInputBlur: js.Any = js.native
+    /* private */ var handleEndFocusBoundaryFocusIn: Any = js.native
     
-    /* private */ var handleInputChange: js.Any = js.native
+    /* private */ var handleInputBlur: Any = js.native
     
-    /* private */ var handleInputClick: js.Any = js.native
+    /* private */ var handleInputChange: Any = js.native
     
-    /* private */ var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputClick: Any = js.native
     
-    /* private */ var handleInputKeyDown: js.Any = js.native
+    /* private */ var handleInputFocus: Any = js.native
     
-    /* private */ var handlePopoverBlur: js.Any = js.native
+    /* private */ var handleInputKeyDown: Any = js.native
     
-    /* private */ var handleShortcutChange: js.Any = js.native
+    /* private */ var handleInputRef: Any = js.native
     
-    /* private */ var hasMonthChanged: js.Any = js.native
+    /* private */ var handlePopoverContentRef: Any = js.native
     
-    /* private */ var hasTimeChanged: js.Any = js.native
+    /* private */ var handleShortcutChange: Any = js.native
     
-    /* private */ var inputEl: js.Any = js.native
+    /* private */ var handleStartFocusBoundaryFocusIn: Any = js.native
     
-    /* private */ var isDateInRange: js.Any = js.native
+    /* private */ var hasMonthChanged: Any = js.native
     
-    /* private */ var lastTabbableElement: js.Any = js.native
+    /* private */ var hasTimeChanged: Any = js.native
     
-    /* private */ var parseDate: js.Any = js.native
+    var inputElement: HTMLInputElement | Null = js.native
     
-    /* private */ var popoverContentEl: js.Any = js.native
+    /* private */ var isDateInRange: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var parseDate: Any = js.native
     
-    /* private */ var registerPopoverBlurHandler: js.Any = js.native
+    var popoverContentElement: HTMLDivElement | Null = js.native
     
     /** safe wrapper around invoking input props event handler (prop defaults to undefined) */
-    /* private */ var safeInvokeInputProp: js.Any = js.native
-    
-    /* private */ var unregisterPopoverBlurHandler: js.Any = js.native
+    /* private */ var safeInvokeInputProp: Any = js.native
   }
   /* static members */
   object DateInput {
@@ -84,8 +81,8 @@ object dateInputMod {
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateInput", "DateInput.defaultProps")
     @js.native
-    def defaultProps: PartialIDateInputProps = js.native
-    inline def defaultProps_=(x: PartialIDateInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialDateInputProps = js.native
+    inline def defaultProps_=(x: PartialDateInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateInput", "DateInput.displayName")
     @js.native
@@ -93,16 +90,19 @@ object dateInputMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  type DateInputProps = IDateInputProps
+  
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.blueprintjsDatetime.dateFormatMod.IDateFormatProps because var conflicts: locale. Inlined invalidDateMessage, outOfRangeMessage, placeholder, formatDate, formatDate, parseDate, parseDate */ @js.native
   trait IDateInputProps
     extends StObject
-       with IDatePickerBaseProps
+       with DatePickerBaseProps
        with IProps {
     
     /**
       * Allows the user to clear the selection by clicking the currently selected day.
       * Passed to `DatePicker` component.
+      *
       * @default true
       */
     var canClearSelection: js.UndefOr[Boolean] = js.native
@@ -110,12 +110,14 @@ object dateInputMod {
     /**
       * Text for the reset button in the date picker action bar.
       * Passed to `DatePicker` component.
+      *
       * @default "Clear"
       */
     var clearButtonText: js.UndefOr[String] = js.native
     
     /**
       * Whether the calendar popover should close when a date is selected.
+      *
       * @default true
       */
     var closeOnSelection: js.UndefOr[Boolean] = js.native
@@ -123,10 +125,11 @@ object dateInputMod {
     /**
       * The default date to be used in the component when uncontrolled.
       */
-    var defaultValue: js.UndefOr[Date] = js.native
+    var defaultValue: js.UndefOr[js.Date] = js.native
     
     /**
       * Whether the date input is non-interactive.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.native
@@ -141,39 +144,45 @@ object dateInputMod {
       * Optional `locale` argument comes directly from the prop on this component:
       * if the prop is defined, then the argument will be too.
       */
-    def formatDate(date: Date): String = js.native
-    def formatDate(date: Date, locale: String): String = js.native
+    def formatDate(date: js.Date): String = js.native
+    def formatDate(date: js.Date, locale: String): String = js.native
     
     /**
       * Props to pass to the [input group](#core/components/text-inputs.input-group).
       * `disabled` and `value` will be ignored in favor of the top-level props on this component.
-      * `type` is fixed to "text" and `ref` is not supported; use `inputRef` instead.
+      * `type` is fixed to "text".
       */
-    var inputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.native
+    var inputProps: js.UndefOr[InputGroupProps2] = js.native
     
     /**
       * The error message to display when the date selected is invalid.
+      *
       * @default "Invalid date"
       */
     var invalidDateMessage: js.UndefOr[String] = js.native
     
     /**
-      * Called when the user selects a new valid date through the `DatePicker` or by typing
-      * in the input. The second argument is true if the user clicked on a date in the
-      * calendar, changed the input value, or cleared the selection; it will be false if the date
-      * was changed by choosing a new month or year.
+      * Called when the user selects a new valid date through the DatePicker or by typing
+      * in the input.
+      *
+      * @param newDate Date or `null` (if the date is invalid or text input has been cleared)
+      * @param isUserChange `true` if the user clicked on a date in the calendar, changed the input value,
+      *     or cleared the selection; `false` if the date was changed by changing the month or year.
       */
-    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[
+        js.Function2[/* selectedDate */ js.Date | Null, /* isUserChange */ Boolean, Unit]
+      ] = js.native
     
     /**
       * Called when the user finishes typing in a new date and the date causes an error state.
       * If the date is invalid, `new Date(undefined)` will be returned. If the date is out of range,
       * the out of range date will be returned (`onChange` is not called in this case).
       */
-    var onError: js.UndefOr[js.Function1[/* errorDate */ Date, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* errorDate */ js.Date, Unit]] = js.native
     
     /**
       * The error message to display when the date selected is out of range.
+      *
       * @default "Out of range"
       */
     var outOfRangeMessage: js.UndefOr[String] = js.native
@@ -184,8 +193,8 @@ object dateInputMod {
       * Return `null` to represent the absence of a date.
       * Optional `locale` argument comes directly from the prop on this component.
       */
-    def parseDate(str: String): Date | `false` | Null = js.native
-    def parseDate(str: String, locale: String): Date | `false` | Null = js.native
+    def parseDate(str: String): js.Date | `false` | Null = js.native
+    def parseDate(str: String, locale: String): js.Date | `false` | Null = js.native
     
     /**
       * Placeholder text to display in empty input fields.
@@ -209,12 +218,14 @@ object dateInputMod {
       * If `true`, preset shortcuts will be displayed.
       * If `false`, no shortcuts will be displayed.
       * If an array is provided, the custom shortcuts will be displayed.
+      *
       * @default false
       */
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.native
+    var shortcuts: js.UndefOr[Boolean | js.Array[DatePickerShortcut]] = js.native
     
     /**
       * Whether the bottom bar displaying "Today" and "Clear" buttons should be shown below the calendar.
+      *
       * @default false
       */
     var showActionsBar: js.UndefOr[Boolean] = js.native
@@ -222,6 +233,7 @@ object dateInputMod {
     /**
       * Text for the today button in the date picker action bar.
       * Passed to `DatePicker` component.
+      *
       * @default "Today"
       */
     var todayButtonText: js.UndefOr[String] = js.native
@@ -231,7 +243,7 @@ object dateInputMod {
       * To display no date in the input field, pass `null` to the value prop. To display an invalid date error
       * in the input field, pass `new Date(undefined)` to the value prop.
       */
-    var value: js.UndefOr[Date | Null] = js.native
+    var value: js.UndefOr[js.Date | Null] = js.native
   }
   
   trait IDateInputState extends StObject {
@@ -242,13 +254,13 @@ object dateInputMod {
     
     var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var value: Date
+    var value: js.Date
     
     var valueString: String
   }
   object IDateInputState {
     
-    inline def apply(isInputFocused: Boolean, isOpen: Boolean, value: Date, valueString: String): IDateInputState = {
+    inline def apply(isInputFocused: Boolean, isOpen: Boolean, value: js.Date, valueString: String): IDateInputState = {
       val __obj = js.Dynamic.literal(isInputFocused = isInputFocused.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueString = valueString.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDateInputState]
     }
@@ -263,7 +275,7 @@ object dateInputMod {
       
       inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     }

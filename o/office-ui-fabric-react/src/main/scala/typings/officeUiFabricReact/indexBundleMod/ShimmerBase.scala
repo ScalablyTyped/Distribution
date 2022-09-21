@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ShimmerBase")
 @js.native
-class ShimmerBase protected ()
+open class ShimmerBase protected ()
   extends typings.officeUiFabricReact.mod.ShimmerBase {
   def this(props: IShimmerProps) = this()
 }

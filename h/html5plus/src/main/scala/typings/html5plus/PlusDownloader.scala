@@ -88,8 +88,8 @@ trait PlusDownloader extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   def enumerate(): Unit = js.native
-  def enumerate(enumCB: js.Function1[/* result */ js.Array[js.Any], Unit]): Unit = js.native
-  def enumerate(enumCB: js.Function1[/* result */ js.Array[js.Any], Unit], state: PlusDownloaderDownloadState): Unit = js.native
+  def enumerate(enumCB: js.Function1[/* result */ js.Array[Any], Unit]): Unit = js.native
+  def enumerate(enumCB: js.Function1[/* result */ js.Array[Any], Unit], state: PlusDownloaderDownloadState): Unit = js.native
   def enumerate(enumCB: Unit, state: PlusDownloaderDownloadState): Unit = js.native
   
   /**

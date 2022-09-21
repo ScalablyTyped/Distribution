@@ -38,6 +38,7 @@ import typings.babelCore.babelCoreStrings.Slash
 import typings.babelCore.babelCoreStrings.StringLiteral
 import typings.babelCore.babelCoreStrings.Tilde
 import typings.babelCore.babelCoreStrings.Verticalline
+import typings.babelCore.babelCoreStrings.VerticallineGreaterthansign
 import typings.babelCore.babelCoreStrings.VerticallineVerticalline
 import typings.babelCore.babelCoreStrings.`--`
 import typings.babelCore.babelCoreStrings.`-_`
@@ -82,15 +83,15 @@ import typings.babelTraverse.mod.Hub
 import typings.babelTraverse.mod.Scope
 import typings.babelTraverse.mod.TraverseOptions
 import typings.babelTraverse.mod.Visitor
-import typings.babelTypes.anon.ChildrenReadonlyArray
+import typings.babelTypes.anon.Body
+import typings.babelTypes.anon.BuildUndefinedNode
+import typings.babelTypes.anon.Children
 import typings.babelTypes.anon.Computed
 import typings.babelTypes.anon.Cooked
-import typings.babelTypes.anon.PickMemberExpressionobjecObject
+import typings.babelTypes.anon.PickMemberExpressionobjec
 import typings.babelTypes.anon.PreserveComments
-import typings.babelTypes.anon.Push
 import typings.babelTypes.anon.ToString
 import typings.babelTypes.anon.Type
-import typings.babelTypes.anon.`0`
 import typings.babelTypes.mod.AnyTypeAnnotation_
 import typings.babelTypes.mod.ArgumentPlaceholder_
 import typings.babelTypes.mod.ArrayExpression_
@@ -111,6 +112,7 @@ import typings.babelTypes.mod.BreakStatement_
 import typings.babelTypes.mod.CallExpression_
 import typings.babelTypes.mod.CatchClause_
 import typings.babelTypes.mod.Class
+import typings.babelTypes.mod.ClassAccessorProperty_
 import typings.babelTypes.mod.ClassBody_
 import typings.babelTypes.mod.ClassDeclaration_
 import typings.babelTypes.mod.ClassExpression_
@@ -184,6 +186,7 @@ import typings.babelTypes.mod.ImportDefaultSpecifier_
 import typings.babelTypes.mod.ImportNamespaceSpecifier_
 import typings.babelTypes.mod.ImportSpecifier_
 import typings.babelTypes.mod.Import_
+import typings.babelTypes.mod.IndexedAccessType_
 import typings.babelTypes.mod.InferredPredicate_
 import typings.babelTypes.mod.InterfaceDeclaration_
 import typings.babelTypes.mod.InterfaceExtends_
@@ -212,6 +215,7 @@ import typings.babelTypes.mod.MemberExpression_
 import typings.babelTypes.mod.MetaProperty_
 import typings.babelTypes.mod.Method
 import typings.babelTypes.mod.MixedTypeAnnotation_
+import typings.babelTypes.mod.ModuleExpression_
 import typings.babelTypes.mod.ModuleSpecifier
 import typings.babelTypes.mod.NewExpression_
 import typings.babelTypes.mod.Node
@@ -234,6 +238,7 @@ import typings.babelTypes.mod.ObjectTypeProperty_
 import typings.babelTypes.mod.ObjectTypeSpreadProperty_
 import typings.babelTypes.mod.OpaqueType_
 import typings.babelTypes.mod.OptionalCallExpression_
+import typings.babelTypes.mod.OptionalIndexedAccessType_
 import typings.babelTypes.mod.OptionalMemberExpression_
 import typings.babelTypes.mod.ParenthesizedExpression_
 import typings.babelTypes.mod.Pattern
@@ -284,6 +289,7 @@ import typings.babelTypes.mod.TSImportType_
 import typings.babelTypes.mod.TSIndexSignature_
 import typings.babelTypes.mod.TSIndexedAccessType_
 import typings.babelTypes.mod.TSInferType_
+import typings.babelTypes.mod.TSInstantiationExpression_
 import typings.babelTypes.mod.TSInterfaceBody_
 import typings.babelTypes.mod.TSInterfaceDeclaration_
 import typings.babelTypes.mod.TSIntersectionType_
@@ -333,6 +339,7 @@ import typings.babelTypes.mod.TemplateLiteral_
 import typings.babelTypes.mod.ThisExpression_
 import typings.babelTypes.mod.ThisTypeAnnotation_
 import typings.babelTypes.mod.ThrowStatement_
+import typings.babelTypes.mod.TopicReference_
 import typings.babelTypes.mod.TraversalHandler
 import typings.babelTypes.mod.TraversalHandlers
 import typings.babelTypes.mod.TryStatement_
@@ -359,7 +366,6 @@ import typings.babelTypes.mod.YieldExpression_
 import typings.std.Extract
 import typings.std.Partial
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -378,7 +384,7 @@ object global {
     
     @JSGlobal("babel.NodePath")
     @js.native
-    class NodePath[T] protected ()
+    open class NodePath[T] protected ()
       extends typings.babelCore.mod.NodePath[T] {
       def this(hub: Hub, parent: Node) = this()
     }
@@ -411,6 +417,9 @@ object global {
     
     inline def loadPartialConfig(): ReadonlyPartialConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPartialConfig")().asInstanceOf[ReadonlyPartialConfig | Null]
     inline def loadPartialConfig(options: TransformOptions): ReadonlyPartialConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPartialConfig")(options.asInstanceOf[js.Any]).asInstanceOf[ReadonlyPartialConfig | Null]
+    
+    inline def loadPartialConfigAsync(): js.Promise[ReadonlyPartialConfig | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPartialConfigAsync")().asInstanceOf[js.Promise[ReadonlyPartialConfig | Null]]
+    inline def loadPartialConfigAsync(options: TransformOptions): js.Promise[ReadonlyPartialConfig | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPartialConfigAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadonlyPartialConfig | Null]]
     
     inline def parse(code: String): ParseResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any]).asInstanceOf[ParseResult | Null]
     inline def parse(code: String, callback: FileParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -482,7 +491,7 @@ object global {
         parent: js.UndefOr[Node | js.Array[Node] | Null],
         opts: js.UndefOr[TraverseOptions[Node]],
         scope: js.UndefOr[Scope],
-        state: js.UndefOr[js.Any],
+        state: js.UndefOr[Any],
         parentPath: js.UndefOr[typings.babelTraverse.mod.NodePath[Node]]
       ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -558,10 +567,10 @@ object global {
       @js.native
       def explode: FnCall = js.native
       inline def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
-        */ typings.babelCore.babelCoreStrings.explode & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
-        */ typings.babelCore.babelCoreStrings.explode & TopLevel[js.Any]]
+      {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
+        */ typings.babelCore.babelCoreStrings.explode & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
+        */ typings.babelCore.babelCoreStrings.explode & TopLevel[Any]]
       inline def explode_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("explode")(x.asInstanceOf[js.Any])
       
       @JSGlobal("babel.traverse.verify")
@@ -589,37 +598,32 @@ object global {
       
       inline def anyTypeAnnotation(): AnyTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("anyTypeAnnotation")().asInstanceOf[AnyTypeAnnotation_]
       
-      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjecObject */](member: T, append: Expression): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[T]
-      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjecObject */](member: T, append: Expression, computed: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[T]
-      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjecObject */](member: T, append: Identifier_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[T]
-      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjecObject */](member: T, append: Identifier_, computed: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[T]
-      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjecObject */](member: T, append: PrivateName_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[T]
-      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjecObject */](member: T, append: PrivateName_, computed: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: Expression): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: Expression, computed: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: Identifier_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: Identifier_, computed: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: PrivateName_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def appendToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, append: PrivateName_, computed: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("appendToMemberExpression")(member.asInstanceOf[js.Any], append.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[T]
       
       inline def argumentPlaceholder(): ArgumentPlaceholder_ = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentPlaceholder")().asInstanceOf[ArgumentPlaceholder_]
       
       inline def arrayExpression(): ArrayExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayExpression")().asInstanceOf[ArrayExpression_]
       inline def arrayExpression(elements: js.Array[Null | Expression | SpreadElement_]): ArrayExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayExpression")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayExpression_]
       
-      inline def arrayPattern(elements: js.Array[Null | PatternLike]): ArrayPattern_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayPattern")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayPattern_]
+      inline def arrayPattern(elements: js.Array[Null | PatternLike | LVal]): ArrayPattern_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayPattern")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayPattern_]
       
       inline def arrayTypeAnnotation(elementType: FlowType): ArrayTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayTypeAnnotation")(elementType.asInstanceOf[js.Any]).asInstanceOf[ArrayTypeAnnotation_]
       
-      inline def arrowFunctionExpression(
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): ArrowFunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("arrowFunctionExpression")(params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunctionExpression_]
-      inline def arrowFunctionExpression(
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_,
-        async: Boolean
-      ): ArrowFunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("arrowFunctionExpression")(params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[ArrowFunctionExpression_]
-      inline def arrowFunctionExpression(params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_], body: Expression): ArrowFunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("arrowFunctionExpression")(params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunctionExpression_]
-      inline def arrowFunctionExpression(
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: Expression,
-        async: Boolean
-      ): ArrowFunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("arrowFunctionExpression")(params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[ArrowFunctionExpression_]
+      inline def arrowFunctionExpression(params: js.Array[Identifier_ | Pattern | RestElement_], body: BlockStatement_): ArrowFunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("arrowFunctionExpression")(params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunctionExpression_]
+      inline def arrowFunctionExpression(params: js.Array[Identifier_ | Pattern | RestElement_], body: BlockStatement_, async: Boolean): ArrowFunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("arrowFunctionExpression")(params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[ArrowFunctionExpression_]
+      inline def arrowFunctionExpression(params: js.Array[Identifier_ | Pattern | RestElement_], body: Expression): ArrowFunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("arrowFunctionExpression")(params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunctionExpression_]
+      inline def arrowFunctionExpression(params: js.Array[Identifier_ | Pattern | RestElement_], body: Expression, async: Boolean): ArrowFunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("arrowFunctionExpression")(params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[ArrowFunctionExpression_]
+      
+      inline def assertAccessor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertAccessor")().asInstanceOf[Unit]
+      inline def assertAccessor(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertAccessor")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertAccessor(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertAccessor")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertAccessor(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertAccessor")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertAccessor(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertAccessor")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def assertAnyTypeAnnotation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertAnyTypeAnnotation")().asInstanceOf[Unit]
       inline def assertAnyTypeAnnotation(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertAnyTypeAnnotation")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -758,6 +762,12 @@ object global {
       inline def assertClass(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertClass")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertClass(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertClass")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertClass(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertClass")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def assertClassAccessorProperty(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertClassAccessorProperty")().asInstanceOf[Unit]
+      inline def assertClassAccessorProperty(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertClassAccessorProperty")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertClassAccessorProperty(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertClassAccessorProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertClassAccessorProperty(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertClassAccessorProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertClassAccessorProperty(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertClassAccessorProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def assertClassBody(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertClassBody")().asInstanceOf[Unit]
       inline def assertClassBody(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertClassBody")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1251,6 +1261,12 @@ object global {
       inline def assertImportSpecifier(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertImportSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertImportSpecifier(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertImportSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
+      inline def assertIndexedAccessType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertIndexedAccessType")().asInstanceOf[Unit]
+      inline def assertIndexedAccessType(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertIndexedAccessType")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertIndexedAccessType(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertIndexedAccessType(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertIndexedAccessType(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       inline def assertInferredPredicate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertInferredPredicate")().asInstanceOf[Unit]
       inline def assertInferredPredicate(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertInferredPredicate")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
       inline def assertInferredPredicate(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertInferredPredicate")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1431,6 +1447,12 @@ object global {
       inline def assertMethod(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertMethod")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertMethod(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertMethod")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
+      inline def assertMiscellaneous(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertMiscellaneous")().asInstanceOf[Unit]
+      inline def assertMiscellaneous(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertMiscellaneous")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertMiscellaneous(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertMiscellaneous")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertMiscellaneous(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertMiscellaneous")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertMiscellaneous(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertMiscellaneous")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       inline def assertMixedTypeAnnotation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertMixedTypeAnnotation")().asInstanceOf[Unit]
       inline def assertMixedTypeAnnotation(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertMixedTypeAnnotation")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
       inline def assertMixedTypeAnnotation(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertMixedTypeAnnotation")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1442,6 +1464,12 @@ object global {
       inline def assertModuleDeclaration(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertModuleDeclaration(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertModuleDeclaration(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def assertModuleExpression(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleExpression")().asInstanceOf[Unit]
+      inline def assertModuleExpression(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertModuleExpression(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertModuleExpression(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertModuleExpression(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def assertModuleSpecifier(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleSpecifier")().asInstanceOf[Unit]
       inline def assertModuleSpecifier(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertModuleSpecifier")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1455,7 +1483,7 @@ object global {
       inline def assertNewExpression(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertNewExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertNewExpression(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertNewExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def assertNode(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNode")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertNode(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNode")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def assertNoop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNoop")().asInstanceOf[Unit]
       inline def assertNoop(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNoop")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1582,6 +1610,12 @@ object global {
       inline def assertOptionalCallExpression(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalCallExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertOptionalCallExpression(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalCallExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertOptionalCallExpression(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalCallExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def assertOptionalIndexedAccessType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalIndexedAccessType")().asInstanceOf[Unit]
+      inline def assertOptionalIndexedAccessType(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalIndexedAccessType")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertOptionalIndexedAccessType(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertOptionalIndexedAccessType(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertOptionalIndexedAccessType(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def assertOptionalMemberExpression(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalMemberExpression")().asInstanceOf[Unit]
       inline def assertOptionalMemberExpression(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertOptionalMemberExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1726,6 +1760,12 @@ object global {
       inline def assertSpreadProperty(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertSpreadProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertSpreadProperty(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertSpreadProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertSpreadProperty(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertSpreadProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def assertStandardized(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertStandardized")().asInstanceOf[Unit]
+      inline def assertStandardized(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertStandardized")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertStandardized(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertStandardized")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertStandardized(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertStandardized")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertStandardized(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertStandardized")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def assertStatement(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertStatement")().asInstanceOf[Unit]
       inline def assertStatement(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertStatement")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1924,6 +1964,12 @@ object global {
       inline def assertTSInferType(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInferType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertTSInferType(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInferType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertTSInferType(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInferType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def assertTSInstantiationExpression(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInstantiationExpression")().asInstanceOf[Unit]
+      inline def assertTSInstantiationExpression(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInstantiationExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertTSInstantiationExpression(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInstantiationExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertTSInstantiationExpression(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInstantiationExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertTSInstantiationExpression(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInstantiationExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def assertTSInterfaceBody(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInterfaceBody")().asInstanceOf[Unit]
       inline def assertTSInterfaceBody(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTSInterfaceBody")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -2225,6 +2271,12 @@ object global {
       inline def assertThrowStatement(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertThrowStatement")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertThrowStatement(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertThrowStatement")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
+      inline def assertTopicReference(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTopicReference")().asInstanceOf[Unit]
+      inline def assertTopicReference(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTopicReference")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertTopicReference(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTopicReference")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertTopicReference(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTopicReference")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertTopicReference(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTopicReference")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       inline def assertTryStatement(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTryStatement")().asInstanceOf[Unit]
       inline def assertTryStatement(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTryStatement")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
       inline def assertTryStatement(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTryStatement")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2278,6 +2330,12 @@ object global {
       inline def assertTypeParameterInstantiation(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeParameterInstantiation")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertTypeParameterInstantiation(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeParameterInstantiation")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def assertTypeParameterInstantiation(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeParameterInstantiation")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def assertTypeScript(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScript")().asInstanceOf[Unit]
+      inline def assertTypeScript(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScript")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def assertTypeScript(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScript")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertTypeScript(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScript")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def assertTypeScript(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeScript")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def assertTypeofTypeAnnotation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeofTypeAnnotation")().asInstanceOf[Unit]
       inline def assertTypeofTypeAnnotation(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypeofTypeAnnotation")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -2375,57 +2433,24 @@ object global {
       inline def assignmentPattern(left: Identifier_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
       inline def assignmentPattern(left: MemberExpression_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
       inline def assignmentPattern(left: ObjectPattern_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
+      inline def assignmentPattern(left: TSAsExpression_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
+      inline def assignmentPattern(left: TSNonNullExpression_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
+      inline def assignmentPattern(left: TSTypeAssertion_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
       
       inline def awaitExpression(argument: Expression): AwaitExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("awaitExpression")(argument.asInstanceOf[js.Any]).asInstanceOf[AwaitExpression_]
       
       inline def bigIntLiteral(value: String): BigIntLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bigIntLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[BigIntLiteral_]
       
-      inline def binaryExpression(operator: Ampersand, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Ampersand, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: AsteriskAsterisk, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: AsteriskAsterisk, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Asterisk, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Asterisk, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: EqualssignEqualssignEqualssign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: EqualssignEqualssignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: EqualssignEqualssign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: EqualssignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: ExclamationmarkEqualssignEqualssign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: ExclamationmarkEqualssignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: ExclamationmarkEqualssign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: ExclamationmarkEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: GreaterthansignEqualssign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: GreaterthansignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: GreaterthansignGreaterthansignGreaterthansign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: GreaterthansignGreaterthansignGreaterthansign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: GreaterthansignGreaterthansign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: GreaterthansignGreaterthansign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Greaterthansign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Greaterthansign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: LessthansignEqualssign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: LessthansignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: LessthansignLessthansign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: LessthansignLessthansign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Lessthansign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Lessthansign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Percentsign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Percentsign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Plussign, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Plussign, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Slash, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Slash, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Verticalline, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: Verticalline, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: typings.babelCore.babelCoreStrings.^, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: typings.babelCore.babelCoreStrings.^, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: `-_`, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression(operator: `-_`, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      
-      inline def binaryExpression_in(operator: in, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression_in(operator: in, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      
-      inline def binaryExpression_instanceof(operator: instanceof, left: Expression, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
-      inline def binaryExpression_instanceof(operator: instanceof, left: PrivateName_, right: Expression): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
+      inline def binaryExpression(
+        operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelCore.babelCoreStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign | VerticallineGreaterthansign,
+        left: Expression,
+        right: Expression
+      ): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
+      inline def binaryExpression(
+        operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelCore.babelCoreStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign | VerticallineGreaterthansign,
+        left: PrivateName_,
+        right: Expression
+      ): BinaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression_]
       
       inline def bindExpression(`object`: Expression, callee: Expression): BindExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("bindExpression")(`object`.asInstanceOf[js.Any], callee.asInstanceOf[js.Any])).asInstanceOf[BindExpression_]
       
@@ -2441,7 +2466,7 @@ object global {
       inline def breakStatement(): BreakStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("breakStatement")().asInstanceOf[BreakStatement_]
       inline def breakStatement(label: Identifier_): BreakStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("breakStatement")(label.asInstanceOf[js.Any]).asInstanceOf[BreakStatement_]
       
-      inline def buildChildren(node: ChildrenReadonlyArray): js.Array[
+      inline def buildChildren(node: Children): js.Array[
             JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
           ] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildChildren")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[
             JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
@@ -2467,6 +2492,10 @@ object global {
         _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
       ): CallExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("callExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[CallExpression_]
       inline def callExpression(
+        callee: Super_,
+        _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
+      ): CallExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("callExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[CallExpression_]
+      inline def callExpression(
         callee: V8IntrinsicIdentifier_,
         _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
       ): CallExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("callExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[CallExpression_]
@@ -2477,9 +2506,18 @@ object global {
       inline def catchClause(param: Identifier_, body: BlockStatement_): CatchClause_ = (^.asInstanceOf[js.Dynamic].applyDynamic("catchClause")(param.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[CatchClause_]
       inline def catchClause(param: ObjectPattern_, body: BlockStatement_): CatchClause_ = (^.asInstanceOf[js.Dynamic].applyDynamic("catchClause")(param.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[CatchClause_]
       
+      inline def classAccessorProperty(
+        key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression | PrivateName_,
+        value: js.UndefOr[Expression | Null],
+        typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null],
+        decorators: js.UndefOr[js.Array[Decorator_] | Null],
+        computed: js.UndefOr[Boolean],
+        _static: js.UndefOr[Boolean]
+      ): ClassAccessorProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classAccessorProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassAccessorProperty_]
+      
       inline def classBody(
         body: js.Array[
-              ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | TSDeclareMethod_ | TSIndexSignature_
+              ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod_ | TSIndexSignature_ | StaticBlock_
             ]
       ): ClassBody_ = ^.asInstanceOf[js.Dynamic].applyDynamic("classBody")(body.asInstanceOf[js.Any]).asInstanceOf[ClassBody_]
       
@@ -2514,7 +2552,7 @@ object global {
       
       inline def classMethod(
         kind: js.UndefOr[get | set | method | constructor],
-        key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
+        key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
         params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
         body: BlockStatement_,
         computed: js.UndefOr[Boolean],
@@ -2524,6 +2562,19 @@ object global {
       ): ClassMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[ClassMethod_]
       
       inline def classPrivateMethod(
+        kind: get | set | method,
+        key: PrivateName_,
+        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        body: BlockStatement_
+      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
+      inline def classPrivateMethod(
+        kind: get | set | method,
+        key: PrivateName_,
+        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        body: BlockStatement_,
+        _static: Boolean
+      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
+      inline def classPrivateMethod(
         kind: Unit,
         key: PrivateName_,
         params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
@@ -2537,74 +2588,23 @@ object global {
         _static: Boolean
       ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
       
-      inline def classPrivateMethod_constructor(
-        kind: constructor,
-        key: PrivateName_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
-      inline def classPrivateMethod_constructor(
-        kind: constructor,
-        key: PrivateName_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_,
-        _static: Boolean
-      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
-      
-      inline def classPrivateMethod_get(
-        kind: get,
-        key: PrivateName_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
-      inline def classPrivateMethod_get(
-        kind: get,
-        key: PrivateName_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_,
-        _static: Boolean
-      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
-      
-      inline def classPrivateMethod_method(
-        kind: method,
-        key: PrivateName_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
-      inline def classPrivateMethod_method(
-        kind: method,
-        key: PrivateName_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_,
-        _static: Boolean
-      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
-      
-      inline def classPrivateMethod_set(
-        kind: set,
-        key: PrivateName_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
-      inline def classPrivateMethod_set(
-        kind: set,
-        key: PrivateName_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_,
-        _static: Boolean
-      ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
-      
-      inline def classPrivateProperty(key: PrivateName_, value: Null, decorators: js.Array[Decorator_], _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
-      inline def classPrivateProperty(key: PrivateName_, value: Null, decorators: Null, _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
-      inline def classPrivateProperty(key: PrivateName_, value: Null, decorators: Unit, _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
-      inline def classPrivateProperty(key: PrivateName_, value: Unit, decorators: js.Array[Decorator_], _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
-      inline def classPrivateProperty(key: PrivateName_, value: Unit, decorators: Null, _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
-      inline def classPrivateProperty(key: PrivateName_, value: Unit, decorators: Unit, _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
-      inline def classPrivateProperty(key: PrivateName_, value: Expression, decorators: js.Array[Decorator_], _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
-      inline def classPrivateProperty(key: PrivateName_, value: Expression, decorators: Null, _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
-      inline def classPrivateProperty(key: PrivateName_, value: Expression, decorators: Unit, _static: js.Any): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_): ClassPrivateProperty_ = ^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any]).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Null, decorators: js.Array[Decorator_]): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Null, decorators: js.Array[Decorator_], _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Null, decorators: Null, _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Null, decorators: Unit, _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Unit, decorators: js.Array[Decorator_]): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Unit, decorators: js.Array[Decorator_], _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Unit, decorators: Null, _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Unit, decorators: Unit, _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Expression): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Expression, decorators: js.Array[Decorator_]): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Expression, decorators: js.Array[Decorator_], _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Expression, decorators: Null, _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
+      inline def classPrivateProperty(key: PrivateName_, value: Expression, decorators: Unit, _static: Boolean): ClassPrivateProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateProperty_]
       
       inline def classProperty(
-        key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
+        key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
         value: js.UndefOr[Expression | Null],
         typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null],
         decorators: js.UndefOr[js.Array[Decorator_] | Null],
@@ -2634,19 +2634,7 @@ object global {
       
       inline def createFlowUnionType_T_FlowType_T[T /* <: FlowType */](types: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createFlowUnionType")(types.asInstanceOf[js.Any]).asInstanceOf[T]
       
-      inline def createTypeAnnotationBasedOnTypeof_boolean(`type`: boolean): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
-      
-      inline def createTypeAnnotationBasedOnTypeof_function(`type`: function): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
-      
-      inline def createTypeAnnotationBasedOnTypeof_number(`type`: number): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
-      
-      inline def createTypeAnnotationBasedOnTypeof_object(`type`: `object`): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
-      
-      inline def createTypeAnnotationBasedOnTypeof_string(`type`: string): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
-      
-      inline def createTypeAnnotationBasedOnTypeof_symbol(`type`: symbol): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
-      
-      inline def createTypeAnnotationBasedOnTypeof_undefined(`type`: undefined): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
+      inline def createTypeAnnotationBasedOnTypeof(`type`: string | number | undefined | boolean | function | `object` | symbol): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
       
       inline def createUnionTypeAnnotation(types: js.Array[FlowType]): UnionTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnionTypeAnnotation")(types.asInstanceOf[js.Any]).asInstanceOf[UnionTypeAnnotation_]
       
@@ -2758,15 +2746,11 @@ object global {
       ): DeclareInterface_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareInterface")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[DeclareInterface_]
       
       inline def declareModule(id: Identifier_, body: BlockStatement_): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
+      inline def declareModule(id: Identifier_, body: BlockStatement_, kind: CommonJS | ES): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
       inline def declareModule(id: StringLiteral_, body: BlockStatement_): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
+      inline def declareModule(id: StringLiteral_, body: BlockStatement_, kind: CommonJS | ES): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
       
       inline def declareModuleExports(typeAnnotation: TypeAnnotation_): DeclareModuleExports_ = ^.asInstanceOf[js.Dynamic].applyDynamic("declareModuleExports")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[DeclareModuleExports_]
-      
-      inline def declareModule_CommonJS(id: Identifier_, body: BlockStatement_, kind: CommonJS): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
-      inline def declareModule_CommonJS(id: StringLiteral_, body: BlockStatement_, kind: CommonJS): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
-      
-      inline def declareModule_ES(id: Identifier_, body: BlockStatement_, kind: ES): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
-      inline def declareModule_ES(id: StringLiteral_, body: BlockStatement_, kind: ES): DeclareModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareModule")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DeclareModule_]
       
       inline def declareOpaqueType(id: Identifier_): DeclareOpaqueType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("declareOpaqueType")(id.asInstanceOf[js.Any]).asInstanceOf[DeclareOpaqueType_]
       inline def declareOpaqueType(id: Identifier_, typeParameters: Null, supertype: FlowType): DeclareOpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("declareOpaqueType")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], supertype.asInstanceOf[js.Any])).asInstanceOf[DeclareOpaqueType_]
@@ -2789,6 +2773,7 @@ object global {
       inline def directiveLiteral(value: String): DirectiveLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("directiveLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[DirectiveLiteral_]
       
       inline def doExpression(body: BlockStatement_): DoExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("doExpression")(body.asInstanceOf[js.Any]).asInstanceOf[DoExpression_]
+      inline def doExpression(body: BlockStatement_, async: Boolean): DoExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("doExpression")(body.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[DoExpression_]
       
       inline def doWhileStatement(test: Expression, body: Statement): DoWhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("doWhileStatement")(test.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[DoWhileStatement_]
       
@@ -2796,8 +2781,8 @@ object global {
       
       inline def emptyTypeAnnotation(): EmptyTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyTypeAnnotation")().asInstanceOf[EmptyTypeAnnotation_]
       
-      inline def ensureBlock(node: Extract[Node, `0`]): BlockStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureBlock")(node.asInstanceOf[js.Any]).asInstanceOf[BlockStatement_]
-      inline def ensureBlock[K /* <: /* keyof std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.0> */ String */](node: Extract[Node, Record[K, BlockStatement_ | Statement | Expression]], key: K): BlockStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureBlock")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[BlockStatement_]
+      inline def ensureBlock(node: Extract[Node, Body]): BlockStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureBlock")(node.asInstanceOf[js.Any]).asInstanceOf[BlockStatement_]
+      inline def ensureBlock[K /* <: /* keyof std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Body> */ String */](node: Extract[Node, Record[K, BlockStatement_ | Statement | Expression]], key: K): BlockStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureBlock")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[BlockStatement_]
       
       inline def enumBooleanBody(members: js.Array[EnumBooleanMember_]): EnumBooleanBody_ = ^.asInstanceOf[js.Dynamic].applyDynamic("enumBooleanBody")(members.asInstanceOf[js.Any]).asInstanceOf[EnumBooleanBody_]
       
@@ -2873,9 +2858,9 @@ object global {
       
       inline def file(program: Program_): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(program.asInstanceOf[js.Any]).asInstanceOf[File_]
       inline def file(program: Program_, comments: js.Array[CommentBlock | CommentLine]): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(program.asInstanceOf[js.Any], comments.asInstanceOf[js.Any])).asInstanceOf[File_]
-      inline def file(program: Program_, comments: js.Array[CommentBlock | CommentLine], tokens: js.Array[js.Any]): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(program.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[File_]
-      inline def file(program: Program_, comments: Null, tokens: js.Array[js.Any]): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(program.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[File_]
-      inline def file(program: Program_, comments: Unit, tokens: js.Array[js.Any]): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(program.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[File_]
+      inline def file(program: Program_, comments: js.Array[CommentBlock | CommentLine], tokens: js.Array[Any]): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(program.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[File_]
+      inline def file(program: Program_, comments: Null, tokens: js.Array[Any]): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(program.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[File_]
+      inline def file(program: Program_, comments: Unit, tokens: js.Array[Any]): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(program.asInstanceOf[js.Any], comments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[File_]
       
       inline def forInStatement(left: LVal, right: Expression, body: Statement): ForInStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("forInStatement")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ForInStatement_]
       inline def forInStatement(left: VariableDeclaration_, right: Expression, body: Statement): ForInStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("forInStatement")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ForInStatement_]
@@ -2922,153 +2907,129 @@ object global {
       inline def forStatement(init: VariableDeclaration_, test: Expression, update: Unit, body: Statement): ForStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("forStatement")(init.asInstanceOf[js.Any], test.asInstanceOf[js.Any], update.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ForStatement_]
       inline def forStatement(init: VariableDeclaration_, test: Expression, update: Expression, body: Statement): ForStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("forStatement")(init.asInstanceOf[js.Any], test.asInstanceOf[js.Any], update.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ForStatement_]
       
+      inline def functionDeclaration(id: Null, params: js.Array[Identifier_ | Pattern | RestElement_], body: BlockStatement_): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
-      inline def functionDeclaration(
-        id: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean,
         async: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Unit,
         async: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
+      inline def functionDeclaration(id: Unit, params: js.Array[Identifier_ | Pattern | RestElement_], body: BlockStatement_): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
-      inline def functionDeclaration(
-        id: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean,
         async: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Unit,
         async: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
+      inline def functionDeclaration(id: Identifier_, params: js.Array[Identifier_ | Pattern | RestElement_], body: BlockStatement_): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Identifier_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
-      inline def functionDeclaration(
-        id: Identifier_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Identifier_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean,
         async: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       inline def functionDeclaration(
         id: Identifier_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Unit,
         async: Boolean
       ): FunctionDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionDeclaration")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration_]
       
+      inline def functionExpression(id: Null, params: js.Array[Identifier_ | Pattern | RestElement_], body: BlockStatement_): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
-      inline def functionExpression(
-        id: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean
       ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean,
         async: Boolean
       ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Unit,
         async: Boolean
       ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
+      inline def functionExpression(id: Unit, params: js.Array[Identifier_ | Pattern | RestElement_], body: BlockStatement_): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
-      inline def functionExpression(
-        id: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean
       ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean,
         async: Boolean
       ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Unit,
         async: Boolean
       ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
+      inline def functionExpression(id: Identifier_, params: js.Array[Identifier_ | Pattern | RestElement_], body: BlockStatement_): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Identifier_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-        body: BlockStatement_
-      ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
-      inline def functionExpression(
-        id: Identifier_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean
       ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Identifier_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Boolean,
         async: Boolean
       ): FunctionExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("functionExpression")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], generator.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression_]
       inline def functionExpression(
         id: Identifier_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         generator: Unit,
         async: Boolean
@@ -3158,6 +3119,8 @@ object global {
       inline def importSpecifier(local: Identifier_, imported: Identifier_): ImportSpecifier_ = (^.asInstanceOf[js.Dynamic].applyDynamic("importSpecifier")(local.asInstanceOf[js.Any], imported.asInstanceOf[js.Any])).asInstanceOf[ImportSpecifier_]
       inline def importSpecifier(local: Identifier_, imported: StringLiteral_): ImportSpecifier_ = (^.asInstanceOf[js.Dynamic].applyDynamic("importSpecifier")(local.asInstanceOf[js.Any], imported.asInstanceOf[js.Any])).asInstanceOf[ImportSpecifier_]
       
+      inline def indexedAccessType(objectType: FlowType, indexType: FlowType): IndexedAccessType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("indexedAccessType")(objectType.asInstanceOf[js.Any], indexType.asInstanceOf[js.Any])).asInstanceOf[IndexedAccessType_]
+      
       inline def inferredPredicate(): InferredPredicate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("inferredPredicate")().asInstanceOf[InferredPredicate_]
       
       inline def inheritInnerComments(node: Node, parent: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inheritInnerComments")(node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -3224,11 +3187,17 @@ object global {
       inline def is(`type`: String, n: Unit, required: Partial[Node]): /* is @babel/types.@babel/types.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Node */ Boolean]
       inline def is(`type`: String, n: Node): /* is @babel/types.@babel/types.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Node */ Boolean]
       inline def is(`type`: String, n: Node, required: Partial[Node]): /* is @babel/types.@babel/types.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Node */ Boolean]
-      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean]
-      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */](`type`: T, n: Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[/* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean]
-      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */, P /* <: Extract[Node, Type[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */, P /* <: Extract[Node, Type[T]] */](`type`: T, n: Unit, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */, P /* <: Extract[Node, Type[T]] */](`type`: T, n: Node, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean]
+      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any */](`type`: T, n: Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[/* is std.Extract<@babel/types.@babel/types.Node, @babel/types.anon.Type<T>> */ Boolean]
+      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any */, P /* <: Extract[Node, Type[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any */, P /* <: Extract[Node, Type[T]] */](`type`: T, n: Unit, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+      inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any */, P /* <: Extract[Node, Type[T]] */](`type`: T, n: Node, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+      
+      inline def isAccessor(): /* is @babel/types.@babel/types.Accessor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")().asInstanceOf[/* is @babel/types.@babel/types.Accessor */ Boolean]
+      inline def isAccessor(node: js.Object): /* is @babel/types.@babel/types.Accessor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Accessor */ Boolean]
+      inline def isAccessor(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Accessor */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Accessor */ Boolean]
+      inline def isAccessor(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Accessor */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Accessor */ Boolean]
+      inline def isAccessor(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.Accessor */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Accessor */ Boolean]
       
       inline def isAnyTypeAnnotation(): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyTypeAnnotation")().asInstanceOf[/* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean]
       inline def isAnyTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyTypeAnnotation")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean]
@@ -3372,6 +3341,12 @@ object global {
       inline def isClass(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Class */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClass")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Class */ Boolean]
       inline def isClass(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Class */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClass")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Class */ Boolean]
       inline def isClass(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.Class */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClass")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Class */ Boolean]
+      
+      inline def isClassAccessorProperty(): /* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassAccessorProperty")().asInstanceOf[/* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean]
+      inline def isClassAccessorProperty(node: js.Object): /* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassAccessorProperty")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean]
+      inline def isClassAccessorProperty(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClassAccessorProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean]
+      inline def isClassAccessorProperty(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClassAccessorProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean]
+      inline def isClassAccessorProperty(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClassAccessorProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ClassAccessorProperty */ Boolean]
       
       inline def isClassBody(): /* is @babel/types.@babel/types.ClassBody */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassBody")().asInstanceOf[/* is @babel/types.@babel/types.ClassBody */ Boolean]
       inline def isClassBody(node: js.Object): /* is @babel/types.@babel/types.ClassBody */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassBody")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ClassBody */ Boolean]
@@ -3866,6 +3841,12 @@ object global {
       inline def isImportSpecifier(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ImportSpecifier */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isImportSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ImportSpecifier */ Boolean]
       inline def isImportSpecifier(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ImportSpecifier */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isImportSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ImportSpecifier */ Boolean]
       
+      inline def isIndexedAccessType(): /* is @babel/types.@babel/types.IndexedAccessType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessType")().asInstanceOf[/* is @babel/types.@babel/types.IndexedAccessType */ Boolean]
+      inline def isIndexedAccessType(node: js.Object): /* is @babel/types.@babel/types.IndexedAccessType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessType")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.IndexedAccessType */ Boolean]
+      inline def isIndexedAccessType(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.IndexedAccessType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.IndexedAccessType */ Boolean]
+      inline def isIndexedAccessType(node: Null, opts: js.Object): /* is @babel/types.@babel/types.IndexedAccessType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.IndexedAccessType */ Boolean]
+      inline def isIndexedAccessType(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.IndexedAccessType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.IndexedAccessType */ Boolean]
+      
       inline def isInferredPredicate(): /* is @babel/types.@babel/types.InferredPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInferredPredicate")().asInstanceOf[/* is @babel/types.@babel/types.InferredPredicate */ Boolean]
       inline def isInferredPredicate(node: js.Object): /* is @babel/types.@babel/types.InferredPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInferredPredicate")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.InferredPredicate */ Boolean]
       inline def isInferredPredicate(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.InferredPredicate */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInferredPredicate")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.InferredPredicate */ Boolean]
@@ -4048,6 +4029,12 @@ object global {
       inline def isMethod(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Method */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMethod")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Method */ Boolean]
       inline def isMethod(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.Method */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMethod")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Method */ Boolean]
       
+      inline def isMiscellaneous(): /* is @babel/types.@babel/types.Miscellaneous */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMiscellaneous")().asInstanceOf[/* is @babel/types.@babel/types.Miscellaneous */ Boolean]
+      inline def isMiscellaneous(node: js.Object): /* is @babel/types.@babel/types.Miscellaneous */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMiscellaneous")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Miscellaneous */ Boolean]
+      inline def isMiscellaneous(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Miscellaneous */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMiscellaneous")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Miscellaneous */ Boolean]
+      inline def isMiscellaneous(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Miscellaneous */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMiscellaneous")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Miscellaneous */ Boolean]
+      inline def isMiscellaneous(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.Miscellaneous */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMiscellaneous")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Miscellaneous */ Boolean]
+      
       inline def isMixedTypeAnnotation(): /* is @babel/types.@babel/types.MixedTypeAnnotation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMixedTypeAnnotation")().asInstanceOf[/* is @babel/types.@babel/types.MixedTypeAnnotation */ Boolean]
       inline def isMixedTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.MixedTypeAnnotation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMixedTypeAnnotation")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.MixedTypeAnnotation */ Boolean]
       inline def isMixedTypeAnnotation(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.MixedTypeAnnotation */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMixedTypeAnnotation")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.MixedTypeAnnotation */ Boolean]
@@ -4059,6 +4046,12 @@ object global {
       inline def isModuleDeclaration(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ModuleDeclaration */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ModuleDeclaration */ Boolean]
       inline def isModuleDeclaration(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ModuleDeclaration */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ModuleDeclaration */ Boolean]
       inline def isModuleDeclaration(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ModuleDeclaration */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ModuleDeclaration */ Boolean]
+      
+      inline def isModuleExpression(): /* is @babel/types.@babel/types.ModuleExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleExpression")().asInstanceOf[/* is @babel/types.@babel/types.ModuleExpression */ Boolean]
+      inline def isModuleExpression(node: js.Object): /* is @babel/types.@babel/types.ModuleExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ModuleExpression */ Boolean]
+      inline def isModuleExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ModuleExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ModuleExpression */ Boolean]
+      inline def isModuleExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ModuleExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ModuleExpression */ Boolean]
+      inline def isModuleExpression(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ModuleExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ModuleExpression */ Boolean]
       
       inline def isModuleSpecifier(): /* is @babel/types.@babel/types.ModuleSpecifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleSpecifier")().asInstanceOf[/* is @babel/types.@babel/types.ModuleSpecifier */ Boolean]
       inline def isModuleSpecifier(node: js.Object): /* is @babel/types.@babel/types.ModuleSpecifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleSpecifier")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ModuleSpecifier */ Boolean]
@@ -4075,8 +4068,9 @@ object global {
       inline def isNode(): /* is @babel/types.@babel/types.Node */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")().asInstanceOf[/* is @babel/types.@babel/types.Node */ Boolean]
       inline def isNode(node: js.Object): /* is @babel/types.@babel/types.Node */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Node */ Boolean]
       
-      inline def isNodesEquivalent(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodesEquivalent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      inline def isNodesEquivalent[T /* <: Partial[Node] */](a: T, b: js.Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodesEquivalent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+      inline def isNodesEquivalent(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodesEquivalent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      
+      inline def isNodesEquivalent_T_PartialNode[T /* <: Partial[Node] */](a: T, b: Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodesEquivalent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
       
       inline def isNoop(): /* is @babel/types.@babel/types.Noop */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoop")().asInstanceOf[/* is @babel/types.@babel/types.Noop */ Boolean]
       inline def isNoop(node: js.Object): /* is @babel/types.@babel/types.Noop */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoop")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Noop */ Boolean]
@@ -4204,6 +4198,12 @@ object global {
       inline def isOptionalCallExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types.OptionalCallExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalCallExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.OptionalCallExpression */ Boolean]
       inline def isOptionalCallExpression(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.OptionalCallExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalCallExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.OptionalCallExpression */ Boolean]
       
+      inline def isOptionalIndexedAccessType(): /* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalIndexedAccessType")().asInstanceOf[/* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean]
+      inline def isOptionalIndexedAccessType(node: js.Object): /* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalIndexedAccessType")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean]
+      inline def isOptionalIndexedAccessType(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean]
+      inline def isOptionalIndexedAccessType(node: Null, opts: js.Object): /* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean]
+      inline def isOptionalIndexedAccessType(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalIndexedAccessType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.OptionalIndexedAccessType */ Boolean]
+      
       inline def isOptionalMemberExpression(): /* is @babel/types.@babel/types.OptionalMemberExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalMemberExpression")().asInstanceOf[/* is @babel/types.@babel/types.OptionalMemberExpression */ Boolean]
       inline def isOptionalMemberExpression(node: js.Object): /* is @babel/types.@babel/types.OptionalMemberExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalMemberExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.OptionalMemberExpression */ Boolean]
       inline def isOptionalMemberExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.OptionalMemberExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalMemberExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.OptionalMemberExpression */ Boolean]
@@ -4253,8 +4253,8 @@ object global {
       inline def isPlaceholder(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPlaceholder")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Placeholder */ Boolean]
       
       inline def isPlaceholderType(
-        placeholderType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any,
-        targetType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any
+        placeholderType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any,
+        targetType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any
       ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPlaceholderType")(placeholderType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       inline def isPrivate(): /* is @babel/types.@babel/types.Private */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")().asInstanceOf[/* is @babel/types.@babel/types.Private */ Boolean]
@@ -4359,6 +4359,12 @@ object global {
       inline def isSpreadProperty(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.SpreadElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSpreadProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.SpreadElement */ Boolean]
       inline def isSpreadProperty(node: Null, opts: js.Object): /* is @babel/types.@babel/types.SpreadElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSpreadProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.SpreadElement */ Boolean]
       inline def isSpreadProperty(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.SpreadElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSpreadProperty")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.SpreadElement */ Boolean]
+      
+      inline def isStandardized(): /* is @babel/types.@babel/types.Standardized */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStandardized")().asInstanceOf[/* is @babel/types.@babel/types.Standardized */ Boolean]
+      inline def isStandardized(node: js.Object): /* is @babel/types.@babel/types.Standardized */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStandardized")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Standardized */ Boolean]
+      inline def isStandardized(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Standardized */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStandardized")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Standardized */ Boolean]
+      inline def isStandardized(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Standardized */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStandardized")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Standardized */ Boolean]
+      inline def isStandardized(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.Standardized */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStandardized")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.Standardized */ Boolean]
       
       inline def isStatement(): /* is @babel/types.@babel/types.Statement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatement")().asInstanceOf[/* is @babel/types.@babel/types.Statement */ Boolean]
       inline def isStatement(node: js.Object): /* is @babel/types.@babel/types.Statement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Statement */ Boolean]
@@ -4557,6 +4563,12 @@ object global {
       inline def isTSInferType(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TSInferType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTSInferType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TSInferType */ Boolean]
       inline def isTSInferType(node: Null, opts: js.Object): /* is @babel/types.@babel/types.TSInferType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTSInferType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TSInferType */ Boolean]
       inline def isTSInferType(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.TSInferType */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTSInferType")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TSInferType */ Boolean]
+      
+      inline def isTSInstantiationExpression(): /* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTSInstantiationExpression")().asInstanceOf[/* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean]
+      inline def isTSInstantiationExpression(node: js.Object): /* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTSInstantiationExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean]
+      inline def isTSInstantiationExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTSInstantiationExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean]
+      inline def isTSInstantiationExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTSInstantiationExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean]
+      inline def isTSInstantiationExpression(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTSInstantiationExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TSInstantiationExpression */ Boolean]
       
       inline def isTSInterfaceBody(): /* is @babel/types.@babel/types.TSInterfaceBody */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTSInterfaceBody")().asInstanceOf[/* is @babel/types.@babel/types.TSInterfaceBody */ Boolean]
       inline def isTSInterfaceBody(node: js.Object): /* is @babel/types.@babel/types.TSInterfaceBody */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTSInterfaceBody")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.TSInterfaceBody */ Boolean]
@@ -4858,6 +4870,12 @@ object global {
       inline def isThrowStatement(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ThrowStatement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThrowStatement")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ThrowStatement */ Boolean]
       inline def isThrowStatement(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ThrowStatement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThrowStatement")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ThrowStatement */ Boolean]
       
+      inline def isTopicReference(): /* is @babel/types.@babel/types.TopicReference */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTopicReference")().asInstanceOf[/* is @babel/types.@babel/types.TopicReference */ Boolean]
+      inline def isTopicReference(node: js.Object): /* is @babel/types.@babel/types.TopicReference */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTopicReference")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.TopicReference */ Boolean]
+      inline def isTopicReference(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TopicReference */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTopicReference")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TopicReference */ Boolean]
+      inline def isTopicReference(node: Null, opts: js.Object): /* is @babel/types.@babel/types.TopicReference */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTopicReference")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TopicReference */ Boolean]
+      inline def isTopicReference(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.TopicReference */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTopicReference")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TopicReference */ Boolean]
+      
       inline def isTryStatement(): /* is @babel/types.@babel/types.TryStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTryStatement")().asInstanceOf[/* is @babel/types.@babel/types.TryStatement */ Boolean]
       inline def isTryStatement(node: js.Object): /* is @babel/types.@babel/types.TryStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTryStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.TryStatement */ Boolean]
       inline def isTryStatement(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TryStatement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTryStatement")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TryStatement */ Boolean]
@@ -4879,7 +4897,7 @@ object global {
       inline def isType(nodetype: String, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodetype.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       inline def isType(nodetype: Null, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodetype.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       inline def isType(nodetype: Unit, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodetype.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      inline def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any */](nodetype: String, targetType: T): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodetype.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+      inline def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any */](nodetype: String, targetType: T): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodetype.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
       
       inline def isTypeAlias(): /* is @babel/types.@babel/types.TypeAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAlias")().asInstanceOf[/* is @babel/types.@babel/types.TypeAlias */ Boolean]
       inline def isTypeAlias(node: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAlias")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.TypeAlias */ Boolean]
@@ -4916,6 +4934,12 @@ object global {
       inline def isTypeParameterInstantiation(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TypeParameterInstantiation */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeParameterInstantiation")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TypeParameterInstantiation */ Boolean]
       inline def isTypeParameterInstantiation(node: Null, opts: js.Object): /* is @babel/types.@babel/types.TypeParameterInstantiation */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeParameterInstantiation")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TypeParameterInstantiation */ Boolean]
       inline def isTypeParameterInstantiation(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.TypeParameterInstantiation */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeParameterInstantiation")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TypeParameterInstantiation */ Boolean]
+      
+      inline def isTypeScript(): /* is @babel/types.@babel/types.TypeScript */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeScript")().asInstanceOf[/* is @babel/types.@babel/types.TypeScript */ Boolean]
+      inline def isTypeScript(node: js.Object): /* is @babel/types.@babel/types.TypeScript */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeScript")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.TypeScript */ Boolean]
+      inline def isTypeScript(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TypeScript */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeScript")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TypeScript */ Boolean]
+      inline def isTypeScript(node: Null, opts: js.Object): /* is @babel/types.@babel/types.TypeScript */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeScript")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TypeScript */ Boolean]
+      inline def isTypeScript(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.TypeScript */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeScript")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.TypeScript */ Boolean]
       
       inline def isTypeofTypeAnnotation(): /* is @babel/types.@babel/types.TypeofTypeAnnotation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeofTypeAnnotation")().asInstanceOf[/* is @babel/types.@babel/types.TypeofTypeAnnotation */ Boolean]
       inline def isTypeofTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.TypeofTypeAnnotation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeofTypeAnnotation")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.TypeofTypeAnnotation */ Boolean]
@@ -5129,9 +5153,11 @@ object global {
       
       inline def labeledStatement(label: Identifier_, body: Statement): LabeledStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("labeledStatement")(label.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[LabeledStatement_]
       
-      inline def logicalExpression(operator: AmpersandAmpersand, left: Expression, right: Expression): LogicalExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[LogicalExpression_]
-      inline def logicalExpression(operator: QuestionmarkQuestionmark, left: Expression, right: Expression): LogicalExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[LogicalExpression_]
-      inline def logicalExpression(operator: VerticallineVerticalline, left: Expression, right: Expression): LogicalExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[LogicalExpression_]
+      inline def logicalExpression(
+        operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
+        left: Expression,
+        right: Expression
+      ): LogicalExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpression")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[LogicalExpression_]
       
       inline def matchesPattern(node: Null, `match`: String): /* is @babel/types.@babel/types.MemberExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesPattern")(node.asInstanceOf[js.Any], `match`.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.MemberExpression */ Boolean]
       inline def matchesPattern(node: Null, `match`: String, allowPartial: Boolean): /* is @babel/types.@babel/types.MemberExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesPattern")(node.asInstanceOf[js.Any], `match`.asInstanceOf[js.Any], allowPartial.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.MemberExpression */ Boolean]
@@ -5148,31 +5174,41 @@ object global {
       
       inline def memberExpression(`object`: Expression, property: Expression): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
       inline def memberExpression(`object`: Expression, property: Expression, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Expression, property: Expression, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Expression, property: Expression, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
       inline def memberExpression(`object`: Expression, property: Identifier_): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
       inline def memberExpression(`object`: Expression, property: Identifier_, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Expression, property: Identifier_, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Expression, property: Identifier_, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
       inline def memberExpression(`object`: Expression, property: PrivateName_): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
       inline def memberExpression(`object`: Expression, property: PrivateName_, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      
-      inline def memberExpression_false(`object`: Expression, property: Expression, computed: Boolean, optional: `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_false(`object`: Expression, property: Expression, computed: Unit, optional: `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_false(`object`: Expression, property: Identifier_, computed: Boolean, optional: `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_false(`object`: Expression, property: Identifier_, computed: Unit, optional: `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_false(`object`: Expression, property: PrivateName_, computed: Boolean, optional: `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_false(`object`: Expression, property: PrivateName_, computed: Unit, optional: `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      
-      inline def memberExpression_true(`object`: Expression, property: Expression, computed: Boolean, optional: `true`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_true(`object`: Expression, property: Expression, computed: Unit, optional: `true`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_true(`object`: Expression, property: Identifier_, computed: Boolean, optional: `true`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_true(`object`: Expression, property: Identifier_, computed: Unit, optional: `true`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_true(`object`: Expression, property: PrivateName_, computed: Boolean, optional: `true`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
-      inline def memberExpression_true(`object`: Expression, property: PrivateName_, computed: Unit, optional: `true`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Expression, property: PrivateName_, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Expression, property: PrivateName_, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: Expression): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: Expression, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: Expression, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: Expression, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: Identifier_): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: Identifier_, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: Identifier_, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: Identifier_, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: PrivateName_): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: PrivateName_, computed: Boolean): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: PrivateName_, computed: Boolean, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
+      inline def memberExpression(`object`: Super_, property: PrivateName_, computed: Unit, optional: `true` | `false`): MemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("memberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[MemberExpression_]
       
       inline def metaProperty(meta: Identifier_, property: Identifier_): MetaProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("metaProperty")(meta.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MetaProperty_]
       
       inline def mixedTypeAnnotation(): MixedTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mixedTypeAnnotation")().asInstanceOf[MixedTypeAnnotation_]
       
+      inline def moduleExpression(body: Program_): ModuleExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("moduleExpression")(body.asInstanceOf[js.Any]).asInstanceOf[ModuleExpression_]
+      
       inline def newExpression(
         callee: Expression,
+        _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
+      ): NewExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("newExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[NewExpression_]
+      inline def newExpression(
+        callee: Super_,
         _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
       ): NewExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("newExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[NewExpression_]
       inline def newExpression(
@@ -5198,8 +5234,8 @@ object global {
       
       inline def objectMethod(
         kind: js.UndefOr[method | get | set],
-        key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_,
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         body: BlockStatement_,
         computed: js.UndefOr[Boolean],
         generator: js.UndefOr[Boolean],
@@ -5209,19 +5245,107 @@ object global {
       inline def objectPattern(properties: js.Array[RestElement_ | ObjectProperty_]): ObjectPattern_ = ^.asInstanceOf[js.Dynamic].applyDynamic("objectPattern")(properties.asInstanceOf[js.Any]).asInstanceOf[ObjectPattern_]
       
       inline def objectProperty(
-        key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+        key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_,
         value: Expression | PatternLike,
         computed: js.UndefOr[Boolean],
         shorthand: js.UndefOr[Boolean],
         decorators: js.UndefOr[js.Array[Decorator_] | Null]
       ): ObjectProperty_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], shorthand.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[ObjectProperty_]
       
+      inline def objectTypeAnnotation(properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]): ObjectTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any]).asInstanceOf[ObjectTypeAnnotation_]
       inline def objectTypeAnnotation(
         properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
-        indexers: js.UndefOr[js.Array[ObjectTypeIndexer_] | Null],
-        callProperties: js.UndefOr[js.Array[ObjectTypeCallProperty_] | Null],
-        internalSlots: js.UndefOr[js.Array[ObjectTypeInternalSlot_] | Null],
-        exact: js.UndefOr[Boolean]
+        indexers: js.Array[ObjectTypeIndexer_]
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: js.Array[ObjectTypeIndexer_],
+        callProperties: js.Array[ObjectTypeCallProperty_]
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: js.Array[ObjectTypeIndexer_],
+        callProperties: js.Array[ObjectTypeCallProperty_],
+        internalSlots: js.Array[ObjectTypeInternalSlot_]
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: js.Array[ObjectTypeIndexer_],
+        callProperties: js.Array[ObjectTypeCallProperty_],
+        internalSlots: js.Array[ObjectTypeInternalSlot_],
+        exact: Boolean
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any], exact.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: js.Array[ObjectTypeIndexer_],
+        callProperties: js.Array[ObjectTypeCallProperty_],
+        internalSlots: Unit,
+        exact: Boolean
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any], exact.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: js.Array[ObjectTypeIndexer_],
+        callProperties: Unit,
+        internalSlots: js.Array[ObjectTypeInternalSlot_]
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: js.Array[ObjectTypeIndexer_],
+        callProperties: Unit,
+        internalSlots: js.Array[ObjectTypeInternalSlot_],
+        exact: Boolean
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any], exact.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: js.Array[ObjectTypeIndexer_],
+        callProperties: Unit,
+        internalSlots: Unit,
+        exact: Boolean
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any], exact.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: Unit,
+        callProperties: js.Array[ObjectTypeCallProperty_]
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: Unit,
+        callProperties: js.Array[ObjectTypeCallProperty_],
+        internalSlots: js.Array[ObjectTypeInternalSlot_]
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: Unit,
+        callProperties: js.Array[ObjectTypeCallProperty_],
+        internalSlots: js.Array[ObjectTypeInternalSlot_],
+        exact: Boolean
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any], exact.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: Unit,
+        callProperties: js.Array[ObjectTypeCallProperty_],
+        internalSlots: Unit,
+        exact: Boolean
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any], exact.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: Unit,
+        callProperties: Unit,
+        internalSlots: js.Array[ObjectTypeInternalSlot_]
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: Unit,
+        callProperties: Unit,
+        internalSlots: js.Array[ObjectTypeInternalSlot_],
+        exact: Boolean
+      ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any], exact.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
+      inline def objectTypeAnnotation(
+        properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
+        indexers: Unit,
+        callProperties: Unit,
+        internalSlots: Unit,
+        exact: Boolean
       ): ObjectTypeAnnotation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeAnnotation")(properties.asInstanceOf[js.Any], indexers.asInstanceOf[js.Any], callProperties.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any], exact.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeAnnotation_]
       
       inline def objectTypeCallProperty(value: FlowType): ObjectTypeCallProperty_ = ^.asInstanceOf[js.Dynamic].applyDynamic("objectTypeCallProperty")(value.asInstanceOf[js.Any]).asInstanceOf[ObjectTypeCallProperty_]
@@ -5259,9 +5383,11 @@ object global {
       
       inline def optionalCallExpression(
         callee: Expression,
-        _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_],
+        _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
         optional: Boolean
       ): OptionalCallExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalCallExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[OptionalCallExpression_]
+      
+      inline def optionalIndexedAccessType(objectType: FlowType, indexType: FlowType): OptionalIndexedAccessType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalIndexedAccessType")(objectType.asInstanceOf[js.Any], indexType.asInstanceOf[js.Any])).asInstanceOf[OptionalIndexedAccessType_]
       
       inline def optionalMemberExpression(`object`: Expression, property: Expression, computed: Boolean, optional: Boolean): OptionalMemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[OptionalMemberExpression_]
       inline def optionalMemberExpression(`object`: Expression, property: Expression, computed: Unit, optional: Boolean): OptionalMemberExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], computed.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[OptionalMemberExpression_]
@@ -5276,65 +5402,39 @@ object global {
       
       inline def pipelineTopicExpression(expression: Expression): PipelineTopicExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pipelineTopicExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[PipelineTopicExpression_]
       
-      inline def placeholder_BlockStatement(expectedNode: BlockStatement, name: Identifier_): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
+      inline def placeholder(
+        expectedNode: Identifier | StringLiteral | typings.babelCore.babelCoreStrings.Expression | typings.babelCore.babelCoreStrings.Statement | typings.babelCore.babelCoreStrings.Declaration | BlockStatement | ClassBody | typings.babelCore.babelCoreStrings.Pattern,
+        name: Identifier_
+      ): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
       
-      inline def placeholder_ClassBody(expectedNode: ClassBody, name: Identifier_): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
-      
-      inline def placeholder_Declaration(expectedNode: typings.babelCore.babelCoreStrings.Declaration, name: Identifier_): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
-      
-      inline def placeholder_Expression(expectedNode: typings.babelCore.babelCoreStrings.Expression, name: Identifier_): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
-      
-      inline def placeholder_Identifier(expectedNode: Identifier, name: Identifier_): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
-      
-      inline def placeholder_Pattern(expectedNode: typings.babelCore.babelCoreStrings.Pattern, name: Identifier_): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
-      
-      inline def placeholder_Statement(expectedNode: typings.babelCore.babelCoreStrings.Statement, name: Identifier_): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
-      
-      inline def placeholder_StringLiteral(expectedNode: StringLiteral, name: Identifier_): Placeholder_ = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholder")(expectedNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Placeholder_]
-      
-      inline def prependToMemberExpression[T /* <: PickMemberExpressionobjecObject */](member: T, prepend: Expression): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prependToMemberExpression")(member.asInstanceOf[js.Any], prepend.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def prependToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, prepend: Expression): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prependToMemberExpression")(member.asInstanceOf[js.Any], prepend.asInstanceOf[js.Any])).asInstanceOf[T]
+      inline def prependToMemberExpression[T /* <: PickMemberExpressionobjec */](member: T, prepend: Super_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prependToMemberExpression")(member.asInstanceOf[js.Any], prepend.asInstanceOf[js.Any])).asInstanceOf[T]
       
       inline def privateName(id: Identifier_): PrivateName_ = ^.asInstanceOf[js.Dynamic].applyDynamic("privateName")(id.asInstanceOf[js.Any]).asInstanceOf[PrivateName_]
       
       inline def program(body: js.Array[Statement]): Program_ = ^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any]).asInstanceOf[Program_]
       inline def program(body: js.Array[Statement], directives: js.Array[Directive_]): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any])).asInstanceOf[Program_]
+      inline def program(body: js.Array[Statement], directives: js.Array[Directive_], sourceType: script | module): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
+      inline def program(
+        body: js.Array[Statement],
+        directives: js.Array[Directive_],
+        sourceType: script | module,
+        interpreter: InterpreterDirective_
+      ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
       inline def program(
         body: js.Array[Statement],
         directives: js.Array[Directive_],
         sourceType: Unit,
         interpreter: InterpreterDirective_
       ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
+      inline def program(body: js.Array[Statement], directives: Unit, sourceType: script | module): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
+      inline def program(
+        body: js.Array[Statement],
+        directives: Unit,
+        sourceType: script | module,
+        interpreter: InterpreterDirective_
+      ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
       inline def program(body: js.Array[Statement], directives: Unit, sourceType: Unit, interpreter: InterpreterDirective_): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
-      
-      inline def program_module(body: js.Array[Statement], directives: js.Array[Directive_], sourceType: module): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
-      inline def program_module(
-        body: js.Array[Statement],
-        directives: js.Array[Directive_],
-        sourceType: module,
-        interpreter: InterpreterDirective_
-      ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
-      inline def program_module(body: js.Array[Statement], directives: Unit, sourceType: module): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
-      inline def program_module(
-        body: js.Array[Statement],
-        directives: Unit,
-        sourceType: module,
-        interpreter: InterpreterDirective_
-      ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
-      
-      inline def program_script(body: js.Array[Statement], directives: js.Array[Directive_], sourceType: script): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
-      inline def program_script(
-        body: js.Array[Statement],
-        directives: js.Array[Directive_],
-        sourceType: script,
-        interpreter: InterpreterDirective_
-      ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
-      inline def program_script(body: js.Array[Statement], directives: Unit, sourceType: script): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any])).asInstanceOf[Program_]
-      inline def program_script(
-        body: js.Array[Statement],
-        directives: Unit,
-        sourceType: script,
-        interpreter: InterpreterDirective_
-      ): Program_ = (^.asInstanceOf[js.Dynamic].applyDynamic("program")(body.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], sourceType.asInstanceOf[js.Any], interpreter.asInstanceOf[js.Any])).asInstanceOf[Program_]
       
       inline def qualifiedTypeIdentifier(id: Identifier_, qualification: Identifier_): QualifiedTypeIdentifier_ = (^.asInstanceOf[js.Dynamic].applyDynamic("qualifiedTypeIdentifier")(id.asInstanceOf[js.Any], qualification.asInstanceOf[js.Any])).asInstanceOf[QualifiedTypeIdentifier_]
       inline def qualifiedTypeIdentifier(id: Identifier_, qualification: QualifiedTypeIdentifier_): QualifiedTypeIdentifier_ = (^.asInstanceOf[js.Dynamic].applyDynamic("qualifiedTypeIdentifier")(id.asInstanceOf[js.Any], qualification.asInstanceOf[js.Any])).asInstanceOf[QualifiedTypeIdentifier_]
@@ -5424,7 +5524,7 @@ object global {
       inline def toKeyAlias(node: Property): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKeyAlias")(node.asInstanceOf[js.Any]).asInstanceOf[String]
       inline def toKeyAlias(node: Property, key: Node): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toKeyAlias")(node.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      inline def toSequenceExpression(nodes: js.Array[Node], scope: Push): js.UndefOr[SequenceExpression_] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSequenceExpression")(nodes.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SequenceExpression_]]
+      inline def toSequenceExpression(nodes: js.Array[Node], scope: BuildUndefinedNode): js.UndefOr[SequenceExpression_] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSequenceExpression")(nodes.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SequenceExpression_]]
       
       inline def toStatement(node: AssignmentExpression_): Statement = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[Statement]
       inline def toStatement(node: AssignmentExpression_, ignore: Boolean): Statement = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[Statement]
@@ -5448,6 +5548,8 @@ object global {
       inline def toStatement_true(node: Class, ignore: `true`): js.UndefOr[ClassDeclaration_] = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ClassDeclaration_]]
       inline def toStatement_true(node: Function, ignore: `true`): js.UndefOr[FunctionDeclaration_] = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[FunctionDeclaration_]]
       inline def toStatement_true(node: Statement, ignore: `true`): js.UndefOr[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Statement]]
+      
+      inline def topicReference(): TopicReference_ = ^.asInstanceOf[js.Dynamic].applyDynamic("topicReference")().asInstanceOf[TopicReference_]
       
       inline def traverse[T](n: Node, h: TraversalHandler[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(n.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def traverse[T](n: Node, h: TraversalHandlers[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(n.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -5532,214 +5634,178 @@ object global {
         typeAnnotation: TSTypeAnnotation_
       ): TSConstructorType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType_]
       
+      inline def tsDeclareFunction(id: Null, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Null,
-        typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
+      inline def tsDeclareFunction(id: Null, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Null,
-        typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
+      inline def tsDeclareFunction(id: Null, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Null,
-        typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+        params: js.Array[Identifier_ | Pattern | RestElement_]
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Null,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
+      inline def tsDeclareFunction(id: Unit, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Unit,
-        typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
+      inline def tsDeclareFunction(id: Unit, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Unit,
-        typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
+      inline def tsDeclareFunction(id: Unit, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Unit,
-        typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+        params: js.Array[Identifier_ | Pattern | RestElement_]
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Unit,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
+      inline def tsDeclareFunction(id: Identifier_, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Identifier_,
-        typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: Null,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
+      inline def tsDeclareFunction(id: Identifier_, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Identifier_,
-        typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: Unit,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
+      inline def tsDeclareFunction(id: Identifier_, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-      ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
-      inline def tsDeclareFunction(
-        id: Identifier_,
-        typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: Noop_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+        params: js.Array[Identifier_ | Pattern | RestElement_]
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: Noop_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       inline def tsDeclareFunction(
         id: Identifier_,
         typeParameters: TSTypeParameterDeclaration_,
-        params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+        params: js.Array[Identifier_ | Pattern | RestElement_],
         returnType: TSTypeAnnotation_
       ): TSDeclareFunction_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction_]
       
       inline def tsDeclareMethod(
         decorators: js.UndefOr[js.Array[Decorator_] | Null],
-        key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
+        key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
         typeParameters: js.UndefOr[TSTypeParameterDeclaration_ | Noop_ | Null],
         params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
         returnType: js.UndefOr[TSTypeAnnotation_ | Noop_ | Null]
@@ -5794,6 +5860,9 @@ object global {
       
       inline def tsInferType(typeParameter: TSTypeParameter_): TSInferType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInferType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSInferType_]
       
+      inline def tsInstantiationExpression(expression: Expression): TSInstantiationExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInstantiationExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSInstantiationExpression_]
+      inline def tsInstantiationExpression(expression: Expression, typeParameters: TSTypeParameterInstantiation_): TSInstantiationExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInstantiationExpression")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSInstantiationExpression_]
+      
       inline def tsInterfaceBody(body: js.Array[TSTypeElement]): TSInterfaceBody_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceBody")(body.asInstanceOf[js.Any]).asInstanceOf[TSInterfaceBody_]
       
       inline def tsInterfaceDeclaration(
@@ -5839,6 +5908,8 @@ object global {
       inline def tsLiteralType(literal: BooleanLiteral_): TSLiteralType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType_]
       inline def tsLiteralType(literal: NumericLiteral_): TSLiteralType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType_]
       inline def tsLiteralType(literal: StringLiteral_): TSLiteralType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType_]
+      inline def tsLiteralType(literal: TemplateLiteral_): TSLiteralType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType_]
+      inline def tsLiteralType(literal: UnaryExpression_): TSLiteralType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType_]
       
       inline def tsMappedType(typeParameter: TSTypeParameter_): TSMappedType_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSMappedType_]
       inline def tsMappedType(typeParameter: TSTypeParameter_, typeAnnotation: Null, nameType: TSType): TSMappedType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType_]
@@ -5957,7 +6028,9 @@ object global {
       inline def tsTypePredicate(parameterName: TSThisType_, typeAnnotation: TSTypeAnnotation_, asserts: Boolean): TSTypePredicate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate_]
       
       inline def tsTypeQuery(exprName: TSEntityName): TSTypeQuery_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery_]
+      inline def tsTypeQuery(exprName: TSEntityName, typeParameters: TSTypeParameterInstantiation_): TSTypeQuery_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery_]
       inline def tsTypeQuery(exprName: TSImportType_): TSTypeQuery_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery_]
+      inline def tsTypeQuery(exprName: TSImportType_, typeParameters: TSTypeParameterInstantiation_): TSTypeQuery_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery_]
       
       inline def tsTypeReference(typeName: TSEntityName): TSTypeReference_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeReference")(typeName.asInstanceOf[js.Any]).asInstanceOf[TSTypeReference_]
       inline def tsTypeReference(typeName: TSEntityName, typeParameters: TSTypeParameterInstantiation_): TSTypeReference_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeReference")(typeName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeReference_]
@@ -6004,37 +6077,24 @@ object global {
       
       inline def typeofTypeAnnotation(argument: FlowType): TypeofTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("typeofTypeAnnotation")(argument.asInstanceOf[js.Any]).asInstanceOf[TypeofTypeAnnotation_]
       
-      inline def unaryExpression(operator: Exclamationmark, argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression(operator: Exclamationmark, argument: Expression, prefix: Boolean): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression(operator: Plussign, argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression(operator: Plussign, argument: Expression, prefix: Boolean): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression(operator: Tilde, argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression(operator: Tilde, argument: Expression, prefix: Boolean): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression(operator: `-_`, argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression(operator: `-_`, argument: Expression, prefix: Boolean): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      
-      inline def unaryExpression_delete(operator: delete, argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression_delete(operator: delete, argument: Expression, prefix: Boolean): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      
-      inline def unaryExpression_throw(operator: `throw`, argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression_throw(operator: `throw`, argument: Expression, prefix: Boolean): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      
-      inline def unaryExpression_typeof(operator: typeof, argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression_typeof(operator: typeof, argument: Expression, prefix: Boolean): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      
-      inline def unaryExpression_void(operator: void, argument: Expression): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
-      inline def unaryExpression_void(operator: void, argument: Expression, prefix: Boolean): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
+      inline def unaryExpression(
+        operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
+        argument: Expression
+      ): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
+      inline def unaryExpression(
+        operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
+        argument: Expression,
+        prefix: Boolean
+      ): UnaryExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UnaryExpression_]
       
       inline def unionTypeAnnotation(types: js.Array[FlowType]): UnionTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("unionTypeAnnotation")(types.asInstanceOf[js.Any]).asInstanceOf[UnionTypeAnnotation_]
       
-      inline def updateExpression(operator: PlussignPlussign, argument: Expression): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
-      inline def updateExpression(operator: PlussignPlussign, argument: Expression, prefix: Boolean): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
-      inline def updateExpression(operator: `--`, argument: Expression): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
-      inline def updateExpression(operator: `--`, argument: Expression, prefix: Boolean): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
+      inline def updateExpression(operator: PlussignPlussign | `--`, argument: Expression): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
+      inline def updateExpression(operator: PlussignPlussign | `--`, argument: Expression, prefix: Boolean): UpdateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpression")(operator.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[UpdateExpression_]
       
       inline def v8IntrinsicIdentifier(name: String): V8IntrinsicIdentifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("v8IntrinsicIdentifier")(name.asInstanceOf[js.Any]).asInstanceOf[V8IntrinsicIdentifier_]
       
-      inline def validate(n: Node, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(n.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def validate(n: Node, key: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(n.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def validate[T /* <: Node */, K /* <: /* keyof T */ String */](
         n: Null,
         key: K,
@@ -6053,33 +6113,27 @@ object global {
       
       inline def valueToNode(): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")().asInstanceOf[Expression]
       inline def valueToNode(value: String): StringLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[StringLiteral_]
-      inline def valueToNode(value: js.Array[js.UndefOr[Boolean | Null | String | Double | RegExp | js.Object]]): ArrayExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[ArrayExpression_]
+      inline def valueToNode(value: js.Array[js.UndefOr[Boolean | Null | String | Double | js.RegExp | js.Object]]): ArrayExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[ArrayExpression_]
       inline def valueToNode(value: js.Object): ObjectExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[ObjectExpression_]
+      inline def valueToNode(value: js.RegExp): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[Expression]
       inline def valueToNode(value: Boolean): BooleanLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[BooleanLiteral_]
       inline def valueToNode(value: Double): NumericLiteral_ | BinaryExpression_ | UnaryExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[NumericLiteral_ | BinaryExpression_ | UnaryExpression_]
       inline def valueToNode(value: Null): NullLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[NullLiteral_]
       inline def valueToNode(value: Unit): Identifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[Identifier_]
-      inline def valueToNode(value: RegExp): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[Expression]
       
       inline def valueToNode_Expression(value: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[Expression]
       inline def valueToNode_Expression(value: js.Object): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[Expression]
       inline def valueToNode_Expression(value: Boolean): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[Expression]
       inline def valueToNode_Expression(value: Double): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[Expression]
       
-      inline def valueToNode_RegExpLiteral_(value: RegExp): RegExpLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[RegExpLiteral_]
+      inline def valueToNode_RegExpLiteral_(value: js.RegExp): RegExpLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[RegExpLiteral_]
       
-      inline def variableDeclaration_const(kind: const, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
-      
-      inline def variableDeclaration_let(kind: let, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
-      
-      inline def variableDeclaration_var(kind: `var`, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
+      inline def variableDeclaration(kind: `var` | let | const, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
       
       inline def variableDeclarator(id: LVal): VariableDeclarator_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclarator")(id.asInstanceOf[js.Any]).asInstanceOf[VariableDeclarator_]
       inline def variableDeclarator(id: LVal, init: Expression): VariableDeclarator_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclarator")(id.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[VariableDeclarator_]
       
-      inline def variance_minus(kind: minus): Variance_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(kind.asInstanceOf[js.Any]).asInstanceOf[Variance_]
-      
-      inline def variance_plus(kind: plus): Variance_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(kind.asInstanceOf[js.Any]).asInstanceOf[Variance_]
+      inline def variance(kind: minus | plus): Variance_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(kind.asInstanceOf[js.Any]).asInstanceOf[Variance_]
       
       inline def voidTypeAnnotation(): VoidTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("voidTypeAnnotation")().asInstanceOf[VoidTypeAnnotation_]
       

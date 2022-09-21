@@ -27,10 +27,10 @@ trait ColumnProps extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   /** Optional additional data passed to this column's :cellDataGetter */
-  var columnData: js.UndefOr[js.Any] = js.undefined
+  var columnData: js.UndefOr[Any] = js.undefined
   
   /** Uniquely identifies the row-data attribute correspnding to this cell */
-  var dataKey: js.Any
+  var dataKey: Any
   
   /** Default sort order when clicked for the first time. Valid options include "ASC" and "DESC". Defaults to "ASC" */
   var defaultSortDirection: js.UndefOr[SortDirectionType] = js.undefined
@@ -76,7 +76,7 @@ trait ColumnProps extends StObject {
 }
 object ColumnProps {
   
-  inline def apply(dataKey: js.Any, width: Double): ColumnProps = {
+  inline def apply(dataKey: Any, width: Double): ColumnProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnProps]
   }
@@ -87,7 +87,7 @@ object ColumnProps {
     
     inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
     
-    inline def setCellDataGetter(value: /* params */ TableCellDataGetterParams => js.Any): Self = StObject.set(x, "cellDataGetter", js.Any.fromFunction1(value))
+    inline def setCellDataGetter(value: /* params */ TableCellDataGetterParams => Any): Self = StObject.set(x, "cellDataGetter", js.Any.fromFunction1(value))
     
     inline def setCellDataGetterUndefined: Self = StObject.set(x, "cellDataGetter", js.undefined)
     
@@ -99,11 +99,11 @@ object ColumnProps {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setColumnData(value: js.Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
+    inline def setColumnData(value: Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     inline def setColumnDataUndefined: Self = StObject.set(x, "columnData", js.undefined)
     
-    inline def setDataKey(value: js.Any): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
+    inline def setDataKey(value: Any): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     inline def setDefaultSortDirection(value: SortDirectionType): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     

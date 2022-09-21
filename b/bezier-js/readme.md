@@ -1,6 +1,7 @@
 
 # Scala.js typings for bezier-js
 
+Typings are for version 4.1
 
 ## Library description:
 A javascript library for working with Bezier curves
@@ -9,10 +10,10 @@ A javascript library for working with Bezier curves
 | ------------------ | :-------------: |
 | Full name          | bezier-js |
 | Keywords           | bezier, curves |
-| # releases         | 24 |
-| # dependents       | 32 |
-| # downloads        | 821154 |
-| # stars            | 2 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 133287.66666666666 |
+| # stars            | 1403.0 |
 
 ## Links
 - [Homepage](https://github.com/Pomax/bezierjs)

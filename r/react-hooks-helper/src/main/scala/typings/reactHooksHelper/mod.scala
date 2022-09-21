@@ -82,17 +82,34 @@ object mod {
     Unit
   ]
   
+  trait Step extends StObject {
+    
+    var id: String
+  }
+  object Step {
+    
+    inline def apply(id: String): Step = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Step]
+    }
+    
+    extension [Self <: Step](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait UseStepParams extends StObject {
     
     var autoAdvanceDuration: js.UndefOr[Double] = js.undefined
     
     var initialStep: js.UndefOr[Double] = js.undefined
     
-    var steps: js.Array[String] | Double
+    var steps: js.Array[Step] | Double
   }
   object UseStepParams {
     
-    inline def apply(steps: js.Array[String] | Double): UseStepParams = {
+    inline def apply(steps: js.Array[Step] | Double): UseStepParams = {
       val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseStepParams]
     }
@@ -107,9 +124,9 @@ object mod {
       
       inline def setInitialStepUndefined: Self = StObject.set(x, "initialStep", js.undefined)
       
-      inline def setSteps(value: js.Array[String] | Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[Step] | Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
     }
   }
   
@@ -123,7 +140,7 @@ object mod {
     
     var navigation: NavigationProps
     
-    var step: Double
+    var step: Step | Double
   }
   object UseStepResponse {
     
@@ -132,7 +149,7 @@ object mod {
       index: Double,
       isPaused: Boolean,
       navigation: NavigationProps,
-      step: Double
+      step: Step | Double
     ): UseStepResponse = {
       val __obj = js.Dynamic.literal(autoAdvanceDuration = autoAdvanceDuration.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseStepResponse]
@@ -148,7 +165,7 @@ object mod {
       
       inline def setNavigation(value: NavigationProps): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Step | Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
 }

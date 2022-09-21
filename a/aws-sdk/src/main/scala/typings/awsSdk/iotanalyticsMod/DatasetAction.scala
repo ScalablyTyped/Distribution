@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatasetAction extends StObject {
   
   /**
-    * The name of the data set action by which data set contents are automatically created.
+    * The name of the dataset action by which dataset contents are automatically created.
     */
   var actionName: js.UndefOr[DatasetActionName] = js.undefined
   
@@ -17,7 +17,7 @@ trait DatasetAction extends StObject {
   var containerAction: js.UndefOr[ContainerDatasetAction] = js.undefined
   
   /**
-    * An SqlQueryDatasetAction object that uses an SQL query to automatically create data set contents.
+    * An SqlQueryDatasetAction object that uses an SQL query to automatically create dataset contents.
     */
   var queryAction: js.UndefOr[SqlQueryDatasetAction] = js.undefined
 }

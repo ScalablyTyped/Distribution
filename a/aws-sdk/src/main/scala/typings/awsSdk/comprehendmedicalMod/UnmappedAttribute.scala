@@ -12,7 +12,7 @@ trait UnmappedAttribute extends StObject {
   var Attribute: js.UndefOr[typings.awsSdk.comprehendmedicalMod.Attribute] = js.undefined
   
   /**
-    *  The type of the attribute, could be one of the following values: "MEDICATION", "MEDICAL_CONDITION", "ANATOMY", "TEST_AND_TREATMENT_PROCEDURE" or "PROTECTED_HEALTH_INFORMATION". 
+    *  The type of the unmapped attribute, could be one of the following values: "MEDICATION", "MEDICAL_CONDITION", "ANATOMY", "TEST_AND_TREATMENT_PROCEDURE" or "PROTECTED_HEALTH_INFORMATION". 
     */
   var Type: js.UndefOr[EntityType] = js.undefined
 }

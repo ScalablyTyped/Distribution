@@ -7,33 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GamepadManager extends StObject {
   
-  /* private */ var _addNewGamepad: js.Any = js.native
+  /* private */ var _addNewGamepad: Any = js.native
   
-  /* private */ var _babylonGamepads: js.Any = js.native
+  /* private */ var _babylonGamepads: Any = js.native
   
   /** @hidden */
   def _checkGamepadsStatus(): Unit = js.native
   
-  /* private */ var _gamepadEventSupported: js.Any = js.native
+  /* private */ var _gamepadEventSupported: Any = js.native
   
-  /* private */ var _gamepadSupport: js.Any = js.native
+  /* private */ var _gamepadSupport: Any = js.native
   
   /** @hidden */
   var _isMonitoring: Boolean = js.native
   
-  /* private */ var _onGamepadConnectedEvent: js.Any = js.native
+  /* private */ var _loggedErrors: Any = js.native
   
-  /* private */ var _onGamepadDisconnectedEvent: js.Any = js.native
+  /* private */ var _onGamepadConnectedEvent: Any = js.native
   
-  /* private */ var _oneGamepadConnected: js.Any = js.native
+  /* private */ var _onGamepadDisconnectedEvent: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _oneGamepadConnected: Any = js.native
   
-  /* private */ var _startMonitoringGamepads: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _stopMonitoringGamepads: js.Any = js.native
+  /* private */ var _startMonitoringGamepads: Any = js.native
   
-  /* private */ var _updateGamepadObjects: js.Any = js.native
+  /* private */ var _stopMonitoringGamepads: Any = js.native
+  
+  /* private */ var _updateGamepadObjects: Any = js.native
   
   /**
     * Disposes the gamepad manager

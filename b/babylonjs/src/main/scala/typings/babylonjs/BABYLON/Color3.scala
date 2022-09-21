@@ -125,9 +125,9 @@ trait Color3 extends StObject {
   var r: Double = js.native
   
   /**
-    * Multiplies in place each rgb value by scale
-    * @param scale defines the scaling factor
-    * @returns the updated Color3
+    * Creates a new Color3 with the current Color3 values multiplied by scale
+    * @param scale defines the scaling factor to apply
+    * @returns a new Color3 object
     */
   def scale(scale: Double): Color3 = js.native
   
@@ -138,6 +138,13 @@ trait Color3 extends StObject {
     * @returns the unmodified current Color3
     */
   def scaleAndAddToRef(scale: Double, result: Color3): Color3 = js.native
+  
+  /**
+    * Multiplies the Color3 values by the float "scale"
+    * @param scale defines the scaling factor to apply
+    * @returns the current updated Color3
+    */
+  def scaleInPlace(scale: Double): Color3 = js.native
   
   /**
     * Multiplies the rgb values by scale and stores the result into "result"

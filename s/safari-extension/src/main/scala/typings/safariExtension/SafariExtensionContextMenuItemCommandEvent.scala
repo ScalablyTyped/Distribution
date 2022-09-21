@@ -25,7 +25,7 @@ trait SafariExtensionContextMenuItemCommandEvent
   /**
     * The user info object for this context menu event.
     */
-  var userInfo: js.Any
+  var userInfo: Any
 }
 object SafariExtensionContextMenuItemCommandEvent {
   
@@ -41,7 +41,7 @@ object SafariExtensionContextMenuItemCommandEvent {
     target: SafariExtensionContextMenuItem,
     timestamp: Double,
     `type`: String,
-    userInfo: js.Any
+    userInfo: Any
   ): SafariExtensionContextMenuItemCommandEvent = {
     val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -54,6 +54,6 @@ object SafariExtensionContextMenuItemCommandEvent {
     
     inline def setTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

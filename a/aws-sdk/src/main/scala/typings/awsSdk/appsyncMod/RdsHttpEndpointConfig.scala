@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RdsHttpEndpointConfig extends StObject {
   
   /**
-    * AWS Region for RDS HTTP endpoint.
+    * Amazon Web Services Region for Amazon RDS HTTP endpoint.
     */
   var awsRegion: js.UndefOr[String] = js.undefined
   
   /**
-    * AWS secret store ARN for database credentials.
+    * Amazon Web Services secret store Amazon Resource Name (ARN) for database credentials.
     */
   var awsSecretStoreArn: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait RdsHttpEndpointConfig extends StObject {
   var databaseName: js.UndefOr[String] = js.undefined
   
   /**
-    * Amazon RDS cluster ARN.
+    * Amazon RDS cluster Amazon Resource Name (ARN).
     */
   var dbClusterIdentifier: js.UndefOr[String] = js.undefined
   

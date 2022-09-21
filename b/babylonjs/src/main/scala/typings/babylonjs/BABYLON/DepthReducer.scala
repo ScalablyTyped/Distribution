@@ -9,9 +9,9 @@ trait DepthReducer
   extends StObject
      with MinMaxReducer {
   
-  /* private */ var _depthRenderer: js.Any = js.native
+  /* private */ var _depthRenderer: Any = js.native
   
-  /* private */ var _depthRendererId: js.Any = js.native
+  /* private */ var _depthRendererId: Any = js.native
   
   /**
     * Gets the depth renderer used for the computation.

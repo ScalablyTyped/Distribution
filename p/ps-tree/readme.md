@@ -10,10 +10,10 @@ Get all children of a pid
 | ------------------ | :-------------: |
 | Full name          | ps-tree |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 189 |
-| # downloads        | 46179894 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7727124.333333333 |
+| # stars            | 136.0 |
 
 ## Links
 - [Homepage](http://github.com/indexzero/ps-tree#readme)

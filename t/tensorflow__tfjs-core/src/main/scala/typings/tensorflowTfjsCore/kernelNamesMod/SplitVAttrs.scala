@@ -23,6 +23,6 @@ object SplitVAttrs {
     
     inline def setNumOrSizeSplits(value: js.Array[Double] | Double): Self = StObject.set(x, "numOrSizeSplits", value.asInstanceOf[js.Any])
     
-    inline def setNumOrSizeSplitsVarargs(value: Double*): Self = StObject.set(x, "numOrSizeSplits", js.Array(value :_*))
+    inline def setNumOrSizeSplitsVarargs(value: Double*): Self = StObject.set(x, "numOrSizeSplits", js.Array(value*))
   }
 }

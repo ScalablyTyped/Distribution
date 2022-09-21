@@ -29,7 +29,7 @@ object PutTargetsResponse {
     
     inline def setFailedEntriesUndefined: Self = StObject.set(x, "FailedEntries", js.undefined)
     
-    inline def setFailedEntriesVarargs(value: PutTargetsResultEntry*): Self = StObject.set(x, "FailedEntries", js.Array(value :_*))
+    inline def setFailedEntriesVarargs(value: PutTargetsResultEntry*): Self = StObject.set(x, "FailedEntries", js.Array(value*))
     
     inline def setFailedEntryCount(value: Integer): Self = StObject.set(x, "FailedEntryCount", value.asInstanceOf[js.Any])
     

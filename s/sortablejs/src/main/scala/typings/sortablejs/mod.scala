@@ -90,7 +90,7 @@ object mod {
   
   @JSImport("sortablejs", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Sortable {
     /**
@@ -106,23 +106,23 @@ object mod {
   
   @JSImport("sortablejs", "AutoScroll")
   @js.native
-  class AutoScroll () extends AutoScrollPlugin
+  open class AutoScroll () extends AutoScrollPlugin
   
   @JSImport("sortablejs", "MultiDrag")
   @js.native
-  class MultiDrag () extends MultiDragPlugin
+  open class MultiDrag () extends MultiDragPlugin
   
   @JSImport("sortablejs", "OnSpill")
   @js.native
-  class OnSpill () extends OnSpillPlugin
+  open class OnSpill () extends OnSpillPlugin
   
   @JSImport("sortablejs", "Plugin")
   @js.native
-  class Plugin () extends SortablePlugin
+  open class Plugin () extends SortablePlugin
   
   @JSImport("sortablejs", "Swap")
   @js.native
-  class Swap () extends SwapPlugin
+  open class Swap () extends SwapPlugin
   
   /* static member */
   @JSImport("sortablejs", "active")
@@ -174,7 +174,7 @@ object mod {
     * Sortable.mount(new MultiDrag(), new AutoScroll())
     */
   /* static member */
-  inline def mount(sortablePlugins: SortablePlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(sortablePlugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mount(sortablePlugins: SortablePlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(sortablePlugins.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /* static member */
   @JSImport("sortablejs", "utils")
@@ -357,7 +357,7 @@ object mod {
       
       inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
       
-      inline def setPullVarargs(value: String*): Self = StObject.set(x, "pull", js.Array(value :_*))
+      inline def setPullVarargs(value: String*): Self = StObject.set(x, "pull", js.Array(value*))
       
       inline def setPut(
         value: PutResult | (js.Function4[
@@ -375,7 +375,7 @@ object mod {
       
       inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
       
-      inline def setPutVarargs(value: String*): Self = StObject.set(x, "put", js.Array(value :_*))
+      inline def setPutVarargs(value: String*): Self = StObject.set(x, "put", js.Array(value*))
       
       inline def setRevertClone(value: Boolean): Self = StObject.set(x, "revertClone", value.asInstanceOf[js.Any])
       
@@ -870,8 +870,10 @@ object mod {
     /**
       * Sorts the elements according to the array.
       * @param order an array of strings to sort.
+      * @param useAnimation default: false.
       */
     def sort(order: js.Array[String]): Unit = js.native
+    def sort(order: js.Array[String], useAnimation: Boolean): Unit = js.native
     
     /**
       * Serializes the sortable's item data-id's (dataIdAttr option) into an array of string.
@@ -896,6 +898,11 @@ object mod {
       * dragged element
       */
     var item: HTMLElement = js.native
+    
+    /**
+      * dragged elements
+      */
+    var items: js.Array[HTMLElement] = js.native
     
     /**
       * New index within parent, only counting draggable elements
@@ -1416,18 +1423,24 @@ object mod {
       * @param element an HTMLElement.
       * @param prop a property key.
       */
-    def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388 */ js.Any */](element: HTMLElement, prop: K): /* import warning: importer.ImportType#apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any = js.native
+    def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ Any */](element: HTMLElement, prop: K): /* import warning: importer.ImportType#apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any = js.native
     /**
       * Set one CSS property.
       * @param element an HTMLElement.
       * @param prop a property key.
       * @param value a property value.
       */
-    def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388 */ js.Any */](
+    def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ Any */](
       element: HTMLElement,
       prop: K,
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any
     ): Unit = js.native
+    
+    /**
+      * Deselects the provided multi-drag item
+      * @param element The element to be deselected
+      */
+    def deselect(element: HTMLElement): Unit = js.native
     
     /**
       * Get elements by tag name.
@@ -1464,6 +1477,12 @@ object mod {
       * @param fn
       */
     def on(element: HTMLElement, event: String, fn: EventListenerOrEventListenerObject): Unit = js.native
+    
+    /**
+      * Selects the provided multi-drag item
+      * @param element The element to be selected
+      */
+    def select(element: HTMLElement): Unit = js.native
     
     /**
       * Add or remove one classes from each element

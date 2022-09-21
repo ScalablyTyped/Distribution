@@ -9,12 +9,12 @@ object inlineBlockMod {
   
   @JSImport("@sqltools/formatter/lib/core/InlineBlock", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with InlineBlock {
     
     /* CompleteClass */
-    override def beginIfPossible(tokens: js.Any, index: js.Any): Unit = js.native
+    override def beginIfPossible(tokens: Any, index: Any): Unit = js.native
     
     /* CompleteClass */
     override def end(): Unit = js.native
@@ -26,15 +26,15 @@ object inlineBlockMod {
     override def isForbiddenToken(hasTypeValue: Type): Boolean = js.native
     
     /* CompleteClass */
-    override def isInlineBlock(tokens: js.Any, index: js.Any): Boolean = js.native
+    override def isInlineBlock(tokens: Any, index: Any): Boolean = js.native
     
     /* private */ /* CompleteClass */
-    var level: js.Any = js.native
+    var level: Any = js.native
   }
   
   trait InlineBlock extends StObject {
     
-    def beginIfPossible(tokens: js.Any, index: js.Any): Unit
+    def beginIfPossible(tokens: Any, index: Any): Unit
     
     def end(): Unit
     
@@ -42,19 +42,19 @@ object inlineBlockMod {
     
     def isForbiddenToken(hasTypeValue: Type): Boolean
     
-    def isInlineBlock(tokens: js.Any, index: js.Any): Boolean
+    def isInlineBlock(tokens: Any, index: Any): Boolean
     
-    /* private */ var level: js.Any
+    /* private */ var level: Any
   }
   object InlineBlock {
     
     inline def apply(
-      beginIfPossible: (js.Any, js.Any) => Unit,
+      beginIfPossible: (Any, Any) => Unit,
       end: () => Unit,
       isActive: () => Boolean,
       isForbiddenToken: Type => Boolean,
-      isInlineBlock: (js.Any, js.Any) => Boolean,
-      level: js.Any
+      isInlineBlock: (Any, Any) => Boolean,
+      level: Any
     ): InlineBlock = {
       val __obj = js.Dynamic.literal(beginIfPossible = js.Any.fromFunction2(beginIfPossible), end = js.Any.fromFunction0(end), isActive = js.Any.fromFunction0(isActive), isForbiddenToken = js.Any.fromFunction1(isForbiddenToken), isInlineBlock = js.Any.fromFunction2(isInlineBlock), level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[InlineBlock]
@@ -62,7 +62,7 @@ object inlineBlockMod {
     
     extension [Self <: InlineBlock](x: Self) {
       
-      inline def setBeginIfPossible(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "beginIfPossible", js.Any.fromFunction2(value))
+      inline def setBeginIfPossible(value: (Any, Any) => Unit): Self = StObject.set(x, "beginIfPossible", js.Any.fromFunction2(value))
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -70,9 +70,9 @@ object inlineBlockMod {
       
       inline def setIsForbiddenToken(value: Type => Boolean): Self = StObject.set(x, "isForbiddenToken", js.Any.fromFunction1(value))
       
-      inline def setIsInlineBlock(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "isInlineBlock", js.Any.fromFunction2(value))
+      inline def setIsInlineBlock(value: (Any, Any) => Boolean): Self = StObject.set(x, "isInlineBlock", js.Any.fromFunction2(value))
       
-      inline def setLevel(value: js.Any): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Any): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
   }
 }

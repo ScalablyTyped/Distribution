@@ -17,7 +17,7 @@ object dgramMod {
   
   @JSImport("dgram", "Socket")
   @js.native
-  class Socket ()
+  open class Socket ()
     extends StObject
        with ClassDgramSocket
   

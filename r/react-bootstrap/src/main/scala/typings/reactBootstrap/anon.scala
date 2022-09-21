@@ -121,7 +121,7 @@ object anon {
   
   trait BsClass extends StObject {
     
-    var bsClass: js.UndefOr[js.Any] = js.undefined
+    var bsClass: js.UndefOr[Any] = js.undefined
   }
   object BsClass {
     
@@ -132,7 +132,7 @@ object anon {
     
     extension [Self <: BsClass](x: Self) {
       
-      inline def setBsClass(value: js.Any): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: Any): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
       inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
     }

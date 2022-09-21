@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON request template for setting/revoking admin status of a user in
-  * Directory API.
-  */
 trait SchemaUserMakeAdmin extends StObject {
   
   /**
-    * Boolean indicating new admin status of the user
+    * Indicates the administrator status of the user.
     */
-  var status: js.UndefOr[Boolean] = js.undefined
+  var status: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaUserMakeAdmin {
   
@@ -25,6 +21,8 @@ object SchemaUserMakeAdmin {
   extension [Self <: SchemaUserMakeAdmin](x: Self) {
     
     inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

@@ -10,12 +10,10 @@ object controlLabelMod {
   
   @JSImport("react-bootstrap/lib/ControlLabel", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ControlLabelProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ControlLabelProps, js.Object, Any]
   
-  @js.native
-  trait ControlLabel
-    extends Component[ControlLabelProps, js.Object, js.Any]
+  type ControlLabel = Component[ControlLabelProps, js.Object, Any]
   
   trait ControlLabelProps
     extends StObject

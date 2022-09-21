@@ -36,7 +36,7 @@ object XResultSetMetaDataSupplier {
     MetaData: XResultSetMetaData,
     acquire: () => Unit,
     getMetaData: () => XResultSetMetaData,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XResultSetMetaDataSupplier = {
     val __obj = js.Dynamic.literal(MetaData = MetaData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getMetaData = js.Any.fromFunction0(getMetaData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-vega" : "7.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-vega" : "7.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -41,7 +41,7 @@ trait PivotClient
   /** Returns the formed JSON records to render the control.
     * @returns {any[]}
     */
-  def getJSONRecords(): js.Array[js.Any] = js.native
+  def getJSONRecords(): js.Array[Any] = js.native
   
   /** Returns the OLAP report string that is maintained along with the axis elements information.
     * @returns {string}
@@ -174,11 +174,11 @@ object PivotClient {
     
     /** returns the custom object bounds with PivotClient control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotClient control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -193,11 +193,11 @@ object PivotClient {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -207,11 +207,11 @@ object PivotClient {
     
     /** returns the Chart label information.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the model object bound with PivotClient control.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the current action of PivotClient control.
       */
@@ -226,11 +226,11 @@ object PivotClient {
     
     extension [Self <: AxesLabelRenderingEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -277,11 +277,11 @@ object PivotClient {
     
     /** returns the custom object bounds with PivotClient control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotClient control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -296,11 +296,11 @@ object PivotClient {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -310,15 +310,15 @@ object PivotClient {
     
     /** returns the custom object bound with PivotClient control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotGrid control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the JSON details of the respective on cell.
       */
-    var selectedData: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedData: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object CellClickEventArgs {
     
@@ -329,19 +329,19 @@ object PivotClient {
     
     extension [Self <: CellClickEventArgs](x: Self) {
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setSelectedData(value: js.Array[js.Any]): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: js.Array[Any]): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
-      inline def setSelectedDataVarargs(value: js.Any*): Self = StObject.set(x, "selectedData", js.Array(value :_*))
+      inline def setSelectedDataVarargs(value: Any*): Self = StObject.set(x, "selectedData", js.Array(value*))
     }
   }
   
@@ -353,11 +353,11 @@ object PivotClient {
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object ChartLoadEventArgs {
     
@@ -372,11 +372,11 @@ object PivotClient {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -402,7 +402,7 @@ object PivotClient {
     /** Provides the raw data source for the pivot client.
       * @Default {null}
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Allows you to filter the members (by its name and values) through the advanced filtering (e.g., Microsoft Excel) option in the client-mode.
       * @Default {false}
@@ -460,13 +460,13 @@ object PivotClient {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
       
       inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -478,7 +478,7 @@ object PivotClient {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setPagerOptions(value: DataSourcePagerOptions): Self = StObject.set(x, "pagerOptions", value.asInstanceOf[js.Any])
       
@@ -496,7 +496,7 @@ object PivotClient {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setRowsVarargs(value: DataSourceRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: DataSourceRow*): Self = StObject.set(x, "rows", js.Array(value*))
       
       inline def setSourceInfo(value: String): Self = StObject.set(x, "sourceInfo", value.asInstanceOf[js.Any])
       
@@ -506,7 +506,7 @@ object PivotClient {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: DataSourceValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: DataSourceValue*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -524,7 +524,7 @@ object PivotClient {
     /** Contains the list of members need to be drilled down by default in the field.
       * @Default {[]}
       */
-    var drilledItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var drilledItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Allows you to set the display caption for an item.
       */
@@ -575,17 +575,17 @@ object PivotClient {
       
       inline def setAdvancedFilterUndefined: Self = StObject.set(x, "advancedFilter", js.undefined)
       
-      inline def setAdvancedFilterVarargs(value: DataSourceColumnsAdvancedFilter*): Self = StObject.set(x, "advancedFilter", js.Array(value :_*))
+      inline def setAdvancedFilterVarargs(value: DataSourceColumnsAdvancedFilter*): Self = StObject.set(x, "advancedFilter", js.Array(value*))
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDrilledItems(value: js.Array[js.Any]): Self = StObject.set(x, "drilledItems", value.asInstanceOf[js.Any])
+      inline def setDrilledItems(value: js.Array[Any]): Self = StObject.set(x, "drilledItems", value.asInstanceOf[js.Any])
       
       inline def setDrilledItemsUndefined: Self = StObject.set(x, "drilledItems", js.undefined)
       
-      inline def setDrilledItemsVarargs(value: js.Any*): Self = StObject.set(x, "drilledItems", js.Array(value :_*))
+      inline def setDrilledItemsVarargs(value: Any*): Self = StObject.set(x, "drilledItems", js.Array(value*))
       
       inline def setFieldCaption(value: String): Self = StObject.set(x, "fieldCaption", value.asInstanceOf[js.Any])
       
@@ -647,7 +647,7 @@ object PivotClient {
     
     /** Allows you to hold the filter operand values in the advanced filtering.
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceColumnsAdvancedFilter {
     
@@ -678,11 +678,11 @@ object PivotClient {
       
       inline def setValueFilterOperatorUndefined: Self = StObject.set(x, "valueFilterOperator", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -696,7 +696,7 @@ object PivotClient {
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceColumnsFilterItems {
     
@@ -711,11 +711,11 @@ object PivotClient {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -767,7 +767,7 @@ object PivotClient {
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceFiltersFilterItems {
     
@@ -782,11 +782,11 @@ object PivotClient {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -853,7 +853,7 @@ object PivotClient {
     /** Contains the list of members need to be drilled down by default in the field.
       * @Default {[]}
       */
-    var drilledItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var drilledItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Allows you to set the display caption for an item.
       */
@@ -904,17 +904,17 @@ object PivotClient {
       
       inline def setAdvancedFilterUndefined: Self = StObject.set(x, "advancedFilter", js.undefined)
       
-      inline def setAdvancedFilterVarargs(value: DataSourceRowsAdvancedFilter*): Self = StObject.set(x, "advancedFilter", js.Array(value :_*))
+      inline def setAdvancedFilterVarargs(value: DataSourceRowsAdvancedFilter*): Self = StObject.set(x, "advancedFilter", js.Array(value*))
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDrilledItems(value: js.Array[js.Any]): Self = StObject.set(x, "drilledItems", value.asInstanceOf[js.Any])
+      inline def setDrilledItems(value: js.Array[Any]): Self = StObject.set(x, "drilledItems", value.asInstanceOf[js.Any])
       
       inline def setDrilledItemsUndefined: Self = StObject.set(x, "drilledItems", js.undefined)
       
-      inline def setDrilledItemsVarargs(value: js.Any*): Self = StObject.set(x, "drilledItems", js.Array(value :_*))
+      inline def setDrilledItemsVarargs(value: Any*): Self = StObject.set(x, "drilledItems", js.Array(value*))
       
       inline def setFieldCaption(value: String): Self = StObject.set(x, "fieldCaption", value.asInstanceOf[js.Any])
       
@@ -976,7 +976,7 @@ object PivotClient {
     
     /** Allows you to hold the filter operand values in the advanced filtering.
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceRowsAdvancedFilter {
     
@@ -1007,11 +1007,11 @@ object PivotClient {
       
       inline def setValueFilterOperatorUndefined: Self = StObject.set(x, "valueFilterOperator", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -1025,7 +1025,7 @@ object PivotClient {
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceRowsFilterItems {
     
@@ -1040,11 +1040,11 @@ object PivotClient {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -1139,7 +1139,7 @@ object PivotClient {
       
       inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
       
-      inline def setMeasuresVarargs(value: DataSourceValuesMeasure*): Self = StObject.set(x, "measures", js.Array(value :_*))
+      inline def setMeasuresVarargs(value: DataSourceValuesMeasure*): Self = StObject.set(x, "measures", js.Array(value*))
       
       inline def setSummaryType(value: SummaryType | String): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
       
@@ -1230,11 +1230,11 @@ object PivotClient {
     
     /** return the JSON records of the generated cells on drill-through operation.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotClient.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object DrillThroughEventArgs {
     
@@ -1245,11 +1245,11 @@ object PivotClient {
     
     extension [Self <: DrillThroughEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -1259,11 +1259,11 @@ object PivotClient {
     
     /** returns the object which holds the necessary parameters required for fetching the report names stored in database.
       */
-    var fetchReportSetting: js.UndefOr[js.Any] = js.undefined
+    var fetchReportSetting: js.UndefOr[Any] = js.undefined
     
     /** returns the current instance of PivotClient control.
       */
-    var targetControl: js.UndefOr[js.Any] = js.undefined
+    var targetControl: js.UndefOr[Any] = js.undefined
   }
   object FetchReportEventArgs {
     
@@ -1274,11 +1274,11 @@ object PivotClient {
     
     extension [Self <: FetchReportEventArgs](x: Self) {
       
-      inline def setFetchReportSetting(value: js.Any): Self = StObject.set(x, "fetchReportSetting", value.asInstanceOf[js.Any])
+      inline def setFetchReportSetting(value: Any): Self = StObject.set(x, "fetchReportSetting", value.asInstanceOf[js.Any])
       
       inline def setFetchReportSettingUndefined: Self = StObject.set(x, "fetchReportSetting", js.undefined)
       
-      inline def setTargetControl(value: js.Any): Self = StObject.set(x, "targetControl", value.asInstanceOf[js.Any])
+      inline def setTargetControl(value: Any): Self = StObject.set(x, "targetControl", value.asInstanceOf[js.Any])
       
       inline def setTargetControlUndefined: Self = StObject.set(x, "targetControl", js.undefined)
     }
@@ -1288,11 +1288,11 @@ object PivotClient {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotClient component.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -1303,11 +1303,11 @@ object PivotClient {
     
     extension [Self <: LoadEventArgs](x: Self) {
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -1317,11 +1317,11 @@ object PivotClient {
     
     /** returns the object which holds the necessary parameters required for loading a report collection from database.
       */
-    var loadReportSetting: js.UndefOr[js.Any] = js.undefined
+    var loadReportSetting: js.UndefOr[Any] = js.undefined
     
     /** returns the current instance of PivotClient control.
       */
-    var targetControl: js.UndefOr[js.Any] = js.undefined
+    var targetControl: js.UndefOr[Any] = js.undefined
   }
   object LoadReportEventArgs {
     
@@ -1332,11 +1332,11 @@ object PivotClient {
     
     extension [Self <: LoadReportEventArgs](x: Self) {
       
-      inline def setLoadReportSetting(value: js.Any): Self = StObject.set(x, "loadReportSetting", value.asInstanceOf[js.Any])
+      inline def setLoadReportSetting(value: Any): Self = StObject.set(x, "loadReportSetting", value.asInstanceOf[js.Any])
       
       inline def setLoadReportSettingUndefined: Self = StObject.set(x, "loadReportSetting", js.undefined)
       
-      inline def setTargetControl(value: js.Any): Self = StObject.set(x, "targetControl", value.asInstanceOf[js.Any])
+      inline def setTargetControl(value: Any): Self = StObject.set(x, "targetControl", value.asInstanceOf[js.Any])
       
       inline def setTargetControlUndefined: Self = StObject.set(x, "targetControl", js.undefined)
     }
@@ -1396,7 +1396,7 @@ object PivotClient {
     /** An object is utilized to pass the additional information between the client-end and the service-end when the control functions are present in the server-mode.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** Initializes the data source for the pivot client widget, when it functions completely on the client-side.
       * @Default {{}}
@@ -1582,7 +1582,7 @@ object PivotClient {
     /** Options to customize the size of the pivot client control.
       * @Default {Example:}
       */
-    var size: js.UndefOr[js.Any] = js.undefined
+    var size: js.UndefOr[Any] = js.undefined
     
     /** Sets the title for the pivot client widget.
       */
@@ -1663,7 +1663,7 @@ object PivotClient {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
@@ -1819,7 +1819,7 @@ object PivotClient {
       
       inline def setShowUniqueNameOnPivotButtonUndefined: Self = StObject.set(x, "showUniqueNameOnPivotButton", js.undefined)
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -1853,11 +1853,11 @@ object PivotClient {
     
     /** returns the clicked Chart series points information.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the model object bound with PivotClient control.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the current action of PivotClient control.
       */
@@ -1872,11 +1872,11 @@ object PivotClient {
     
     extension [Self <: PointRegionClickEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1890,11 +1890,11 @@ object PivotClient {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotClient component.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -1905,11 +1905,11 @@ object PivotClient {
     
     extension [Self <: RenderCompleteEventArgs](x: Self) {
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -1919,11 +1919,11 @@ object PivotClient {
     
     /** returns the custom object bound with the control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotClient control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the error message with error code.
       */
@@ -1938,11 +1938,11 @@ object PivotClient {
     
     extension [Self <: RenderFailureEventArgs](x: Self) {
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -1956,7 +1956,7 @@ object PivotClient {
     
     /** returns the object of PivotClient control at that instant.
       */
-    var args: js.UndefOr[js.Any] = js.undefined
+    var args: js.UndefOr[Any] = js.undefined
   }
   object RenderSuccessEventArgs {
     
@@ -1967,7 +1967,7 @@ object PivotClient {
     
     extension [Self <: RenderSuccessEventArgs](x: Self) {
       
-      inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     }
@@ -1977,11 +1977,11 @@ object PivotClient {
     
     /** returns the object which holds the necessary parameters required for saving the report collection.
       */
-    var saveReportSetting: js.UndefOr[js.Any] = js.undefined
+    var saveReportSetting: js.UndefOr[Any] = js.undefined
     
     /** returns the current instance of PivotClient control.
       */
-    var targetControl: js.UndefOr[js.Any] = js.undefined
+    var targetControl: js.UndefOr[Any] = js.undefined
   }
   object SaveReportEventArgs {
     
@@ -1992,11 +1992,11 @@ object PivotClient {
     
     extension [Self <: SaveReportEventArgs](x: Self) {
       
-      inline def setSaveReportSetting(value: js.Any): Self = StObject.set(x, "saveReportSetting", value.asInstanceOf[js.Any])
+      inline def setSaveReportSetting(value: Any): Self = StObject.set(x, "saveReportSetting", value.asInstanceOf[js.Any])
       
       inline def setSaveReportSettingUndefined: Self = StObject.set(x, "saveReportSetting", js.undefined)
       
-      inline def setTargetControl(value: js.Any): Self = StObject.set(x, "targetControl", value.asInstanceOf[js.Any])
+      inline def setTargetControl(value: Any): Self = StObject.set(x, "targetControl", value.asInstanceOf[js.Any])
       
       inline def setTargetControlUndefined: Self = StObject.set(x, "targetControl", js.undefined)
     }
@@ -2408,11 +2408,11 @@ object PivotClient {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object TreeMapLoadEventArgs {
     
@@ -2427,11 +2427,11 @@ object PivotClient {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -2441,19 +2441,19 @@ object PivotClient {
     
     /** returns the clicked cell information.
       */
-    var args: js.UndefOr[js.Any] = js.undefined
+    var args: js.UndefOr[Any] = js.undefined
     
     /** returns the custom object bounds with PivotClient control.
       */
-    var customerObject: js.UndefOr[js.Any] = js.undefined
+    var customerObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotGrid control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the model object bound with PivotClient control.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the current action of PivotClient control.
       */
@@ -2468,19 +2468,19 @@ object PivotClient {
     
     extension [Self <: ValueCellHyperlinkClickEventArgs](x: Self) {
       
-      inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setCustomerObject(value: js.Any): Self = StObject.set(x, "customerObject", value.asInstanceOf[js.Any])
+      inline def setCustomerObject(value: Any): Self = StObject.set(x, "customerObject", value.asInstanceOf[js.Any])
       
       inline def setCustomerObjectUndefined: Self = StObject.set(x, "customerObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

@@ -5,18 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new instance of a Picker object.
-  * @property width - Width of the pick buffer in pixels (read-only).
-  * @property height - Height of the pick buffer in pixels (read-only).
-  * @property renderTarget - The render target used by the picker internally (read-only).
-  * @param app - The application managing this picker instance.
-  * @param width - The width of the pick buffer in pixels.
-  * @param height - The height of the pick buffer in pixels.
+  * Picker object used to select mesh instances from screen coordinates.
+  *
+  * @property {number} width Width of the pick buffer in pixels (read-only).
+  * @property {number} height Height of the pick buffer in pixels (read-only).
+  * @property {RenderTarget} renderTarget The render target used by the picker internally
+  * (read-only).
   */
 @JSGlobal("pc.Picker")
 @js.native
-class Picker protected ()
-  extends StObject
-     with typings.playcanvas.pc.Picker {
-  def this(app: typings.playcanvas.pc.Application, width: Double, height: Double) = this()
+open class Picker protected ()
+  extends typings.playcanvas.mod.Picker {
+  /**
+    * Create a new Picker instance.
+    *
+    * @param {AppBase} app - The application managing this picker instance.
+    * @param {number} width - The width of the pick buffer in pixels.
+    * @param {number} height - The height of the pick buffer in pixels.
+    */
+  def this(app: typings.playcanvas.mod.AppBase, width: Double, height: Double) = this()
 }

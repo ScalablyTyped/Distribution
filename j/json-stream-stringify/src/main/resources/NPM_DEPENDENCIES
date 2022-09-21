@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "json-stream-stringify" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "json-stream-stringify" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

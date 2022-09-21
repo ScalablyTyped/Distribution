@@ -1,6 +1,6 @@
 package typings.storybookAddonKnobs
 
-import typings.std.Date
+import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyKey
 import typings.storybookAddonKnobs.arrayMod.ArrayTypeKnobValue
 import typings.storybookAddonKnobs.buttonMod.ButtonTypeOnClickProp
@@ -19,39 +19,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@storybook/addon-knobs", JSImport.Namespace)
+  @JSImport("@storybook/addon-knobs/dist", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-knobs", "ADDON_ID")
+  @JSImport("@storybook/addon-knobs/dist", "ADDON_ID")
   @js.native
   val ADDON_ID: /* "storybookjs/knobs" */ String = js.native
   
-  @JSImport("@storybook/addon-knobs", "CHANGE")
+  @JSImport("@storybook/addon-knobs/dist", "CHANGE")
   @js.native
   val CHANGE: String = js.native
   
-  @JSImport("@storybook/addon-knobs", "CLICK")
+  @JSImport("@storybook/addon-knobs/dist", "CLICK")
   @js.native
   val CLICK: String = js.native
   
-  @JSImport("@storybook/addon-knobs", "PANEL_ID")
+  @JSImport("@storybook/addon-knobs/dist", "PANEL_ID")
   @js.native
   val PANEL_ID: String = js.native
   
-  @JSImport("@storybook/addon-knobs", "PARAM_KEY")
+  @JSImport("@storybook/addon-knobs/dist", "PARAM_KEY")
   @js.native
   val PARAM_KEY: /* "knobs" */ String = js.native
   
-  @JSImport("@storybook/addon-knobs", "RESET")
+  @JSImport("@storybook/addon-knobs/dist", "RESET")
   @js.native
   val RESET: String = js.native
   
-  @JSImport("@storybook/addon-knobs", "SET")
+  @JSImport("@storybook/addon-knobs/dist", "SET")
   @js.native
   val SET: String = js.native
   
-  @JSImport("@storybook/addon-knobs", "SET_OPTIONS")
+  @JSImport("@storybook/addon-knobs/dist", "SET_OPTIONS")
   @js.native
   val SET_OPTIONS: String = js.native
   
@@ -70,9 +70,9 @@ object mod {
   inline def color(name: String, value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def date(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def date(name: String, value: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def date(name: String, value: js.Date, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def date(name: String, value: Unit, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def date(name: String, value: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def date(name: String, value: Date, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def files(name: String, accept: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def files(name: String, accept: String, value: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
@@ -129,6 +129,12 @@ object mod {
   inline def select(name: String, options: SelectTypeOptionsProp[Double], value: Double, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def select(name: String, options: SelectTypeOptionsProp[Null], value: Null, groupId: String): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Null]
   inline def select(name: String, options: SelectTypeOptionsProp[Unit], value: Unit, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def select[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: unknown}
+    */ typings.storybookAddonKnobs.storybookAddonKnobsStrings.select & TopLevel[Any] */](name: String, options: SelectTypeOptionsProp[T], value: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def select[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: unknown}
+    */ typings.storybookAddonKnobs.storybookAddonKnobsStrings.select & TopLevel[Any] */](name: String, options: SelectTypeOptionsProp[T], value: T, groupId: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def select_Unit(name: String, options: SelectTypeOptionsProp[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -136,6 +142,6 @@ object mod {
   inline def text(name: String, value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def withKnobs(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withKnobs")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withKnobs")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

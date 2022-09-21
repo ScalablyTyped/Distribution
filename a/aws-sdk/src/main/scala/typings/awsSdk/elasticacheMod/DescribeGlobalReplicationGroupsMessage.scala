@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeGlobalReplicationGroupsMessage extends StObject {
   
   /**
-    * The name of the Global Datastore
+    * The name of the Global datastore
     */
   var GlobalReplicationGroupId: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait DescribeGlobalReplicationGroupsMessage extends StObject {
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Returns the list of members that comprise the Global Datastore.
+    * Returns the list of members that comprise the Global datastore.
     */
   var ShowMemberInfo: js.UndefOr[BooleanOptional] = js.undefined
 }

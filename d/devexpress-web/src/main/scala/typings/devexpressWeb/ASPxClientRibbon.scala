@@ -51,7 +51,7 @@ trait ASPxClientRibbon
     * Returns a value of item with the specified name. An Object that is the value of the item with the specified name.
     * @param name A string value specifying the name of the item.
     */
-  def GetItemValueByName(name: String): js.Any
+  def GetItemValueByName(name: String): Any
   
   /**
     * Gets a value specifying whether the ribbon is minimized.
@@ -115,7 +115,7 @@ trait ASPxClientRibbon
     * @param name A string value specifying the name of the item.
     * @param value An object that is the new item value.
     */
-  def SetItemValueByName(name: String, value: js.Any): Unit
+  def SetItemValueByName(name: String, value: Any): Unit
   
   /**
     * Specifies whether the ribbon is minimized.
@@ -141,10 +141,10 @@ object ASPxClientRibbon {
     GetEnabled: () => Boolean,
     GetHeight: () => Double,
     GetItemByName: String => ASPxClientRibbonItem,
-    GetItemValueByName: String => js.Any,
-    GetMainElement: () => js.Any,
+    GetItemValueByName: String => Any,
+    GetMainElement: () => Any,
     GetMinimized: () => Boolean,
-    GetParentControl: () => js.Any,
+    GetParentControl: () => Any,
     GetTab: Double => ASPxClientRibbonTab,
     GetTabByName: String => ASPxClientRibbonTab,
     GetTabCount: () => Double,
@@ -161,7 +161,7 @@ object ASPxClientRibbon {
     SetContextTabCategoryVisible: (String, Boolean) => Unit,
     SetEnabled: Boolean => Unit,
     SetHeight: Double => Unit,
-    SetItemValueByName: (String, js.Any) => Unit,
+    SetItemValueByName: (String, Any) => Unit,
     SetMinimized: Boolean => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
@@ -188,7 +188,7 @@ object ASPxClientRibbon {
     
     inline def setGetItemByName(value: String => ASPxClientRibbonItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
-    inline def setGetItemValueByName(value: String => js.Any): Self = StObject.set(x, "GetItemValueByName", js.Any.fromFunction1(value))
+    inline def setGetItemValueByName(value: String => Any): Self = StObject.set(x, "GetItemValueByName", js.Any.fromFunction1(value))
     
     inline def setGetMinimized(value: () => Boolean): Self = StObject.set(x, "GetMinimized", js.Any.fromFunction0(value))
     
@@ -210,7 +210,7 @@ object ASPxClientRibbon {
     
     inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
-    inline def setSetItemValueByName(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetItemValueByName", js.Any.fromFunction2(value))
+    inline def setSetItemValueByName(value: (String, Any) => Unit): Self = StObject.set(x, "SetItemValueByName", js.Any.fromFunction2(value))
     
     inline def setSetMinimized(value: Boolean => Unit): Self = StObject.set(x, "SetMinimized", js.Any.fromFunction1(value))
     

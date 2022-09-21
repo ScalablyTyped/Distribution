@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.ArrayBounds")
 @js.native
-class ArrayBounds protected ()
+open class ArrayBounds protected ()
   extends StObject
      with typings.amapJsApi.AMap.ArrayBounds {
   def this(bounds: js.Array[LocationValue]) = this()

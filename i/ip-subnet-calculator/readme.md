@@ -10,10 +10,10 @@ Calculate optimal subnet masks for standard and non-standard IP ranges
 | ------------------ | :-------------: |
 | Full name          | ip-subnet-calculator |
 | Keywords           | ip, subnet, network, netmask, calculator, mask |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 155390 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24284.666666666668 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/franksrevenge/IPSubnetCalculator)

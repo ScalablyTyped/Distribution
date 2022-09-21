@@ -5,6 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Operation = java.lang.String
+type Operation = String
 
-type Persistence = java.lang.String
+type Persistence = String

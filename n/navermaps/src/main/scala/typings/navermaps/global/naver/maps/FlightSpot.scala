@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.FlightSpot")
 @js.native
-class FlightSpot ()
+open class FlightSpot ()
   extends StObject
      with typings.navermaps.naver.maps.FlightSpot

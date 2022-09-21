@@ -9,8 +9,8 @@ trait AccessUrls extends StObject {
   /** The URL where this CertificateAuthority's CA certificate is published. This will only be set for CAs that have been activated. */
   var caCertificateAccessUrl: js.UndefOr[String] = js.undefined
   
-  /** The URL where this CertificateAuthority's CRLs are published. This will only be set for CAs that have been activated. */
-  var crlAccessUrl: js.UndefOr[String] = js.undefined
+  /** The URLs where this CertificateAuthority's CRLs are published. This will only be set for CAs that have been activated. */
+  var crlAccessUrls: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AccessUrls {
   
@@ -25,8 +25,10 @@ object AccessUrls {
     
     inline def setCaCertificateAccessUrlUndefined: Self = StObject.set(x, "caCertificateAccessUrl", js.undefined)
     
-    inline def setCrlAccessUrl(value: String): Self = StObject.set(x, "crlAccessUrl", value.asInstanceOf[js.Any])
+    inline def setCrlAccessUrls(value: js.Array[String]): Self = StObject.set(x, "crlAccessUrls", value.asInstanceOf[js.Any])
     
-    inline def setCrlAccessUrlUndefined: Self = StObject.set(x, "crlAccessUrl", js.undefined)
+    inline def setCrlAccessUrlsUndefined: Self = StObject.set(x, "crlAccessUrls", js.undefined)
+    
+    inline def setCrlAccessUrlsVarargs(value: String*): Self = StObject.set(x, "crlAccessUrls", js.Array(value*))
   }
 }

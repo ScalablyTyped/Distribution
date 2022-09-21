@@ -10,10 +10,10 @@ Query JavaScript objects with JSONPath expressions. Robust / safe JSONPath engin
 | ------------------ | :-------------: |
 | Full name          | jsonpath |
 | Keywords           | JSONPath, jsonpath, json-path, object, traversal, json, path, data structures |
-| # releases         | 4 |
-| # dependents       | 521 |
-| # downloads        | 19969251 |
-| # stars            | 25 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2831027.6666666665 |
+| # stars            | 1055.0 |
 
 ## Links
 - [Homepage](https://github.com/dchester/jsonpath#readme)

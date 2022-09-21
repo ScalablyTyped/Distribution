@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientXElement")
 @js.native
-class ClientXElement ()
+open class ClientXElement ()
   extends StObject
      with typings.sharepoint.SP.ClientXElement {
   

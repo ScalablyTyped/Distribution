@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rword" : "3.1.2"
+      "rword" : "3.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "rword" : "3.1.2"
+      "rword" : "3.2.1"
     }
   ],
   "compile-devDependencies" : [

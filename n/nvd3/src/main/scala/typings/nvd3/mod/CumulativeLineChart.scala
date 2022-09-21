@@ -12,27 +12,27 @@ trait CumulativeLineChart
   extends StObject
      with LineChart {
   
-  def average(): js.Function1[/* d */ js.Any, Double] = js.native
-  def average(func: js.Function1[/* d */ js.Any, Double]): this.type = js.native
+  def average(): js.Function1[/* d */ Any, Double] = js.native
+  def average(func: js.Function1[/* d */ Any, Double]): this.type = js.native
   
   def controls(
     selection: Selection_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   def controls(
     transition: Transition_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   @JSName("controls")
   var controls_Original: Legend = js.native
   

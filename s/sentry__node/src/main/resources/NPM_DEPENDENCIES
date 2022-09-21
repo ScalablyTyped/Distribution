@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sentry/node" : "7.13.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sentry/node" : "7.13.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

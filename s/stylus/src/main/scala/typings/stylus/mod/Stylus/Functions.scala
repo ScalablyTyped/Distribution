@@ -192,7 +192,7 @@ trait Functions extends StObject {
     *   }
     * }
     */
-  def json(path: String, local: Boolean, namePrefix: String): js.Any = js.native
+  def json(path: String, local: Boolean, namePrefix: String): Any = js.native
   
   /**
     * Inspect the given `expr`.
@@ -400,7 +400,7 @@ trait Functions extends StObject {
     * Use the given `plugin`.
     */
   def use(plugin: String): scala.Unit = js.native
-  def use(plugin: String, options: js.Any): scala.Unit = js.native
+  def use(plugin: String, options: Any): scala.Unit = js.native
   
   /**
     * Warn with the given `msg` prefixed by "Warning: ".

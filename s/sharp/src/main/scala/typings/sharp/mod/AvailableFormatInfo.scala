@@ -1,5 +1,6 @@
 package typings.sharp.mod
 
+import typings.sharp.anon.Alias
 import typings.sharp.anon.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +12,11 @@ trait AvailableFormatInfo extends StObject {
   
   var input: Buffer
   
-  var output: Buffer
+  var output: Alias
 }
 object AvailableFormatInfo {
   
-  inline def apply(id: String, input: Buffer, output: Buffer): AvailableFormatInfo = {
+  inline def apply(id: String, input: Buffer, output: Alias): AvailableFormatInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailableFormatInfo]
   }
@@ -26,6 +27,6 @@ object AvailableFormatInfo {
     
     inline def setInput(value: Buffer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setOutput(value: Buffer): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Alias): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }

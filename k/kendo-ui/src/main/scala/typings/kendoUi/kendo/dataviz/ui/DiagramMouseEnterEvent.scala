@@ -8,7 +8,7 @@ trait DiagramMouseEnterEvent
   extends StObject
      with DiagramEvent {
   
-  var item: js.UndefOr[js.Any] = js.undefined
+  var item: js.UndefOr[Any] = js.undefined
 }
 object DiagramMouseEnterEvent {
   
@@ -19,7 +19,7 @@ object DiagramMouseEnterEvent {
   
   extension [Self <: DiagramMouseEnterEvent](x: Self) {
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }

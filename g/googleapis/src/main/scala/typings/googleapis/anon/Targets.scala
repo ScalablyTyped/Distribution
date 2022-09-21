@@ -27,6 +27,6 @@ object Targets {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
   }
 }

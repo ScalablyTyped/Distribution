@@ -2,7 +2,7 @@ package typings.vueServerRenderer
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.std.Plugin
+import typings.webpack.mod.DefinePlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +12,10 @@ object pluginMod {
   @js.native
   trait WebpackPlugin
     extends StObject
-       with Instantiable0[Plugin]
-       with Instantiable1[/* options */ WebpackPluginOptions, Plugin]
+       with // NOTE NOT SURE ABOUT THIS
+  // TODO DOUBLE CHECK HERE
+  Instantiable0[DefinePlugin]
+       with Instantiable1[/* options */ WebpackPluginOptions, DefinePlugin]
   
   trait WebpackPluginOptions extends StObject {
     

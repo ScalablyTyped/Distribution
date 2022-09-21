@@ -1,7 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
-import typings.babylonjs.anon.DoNotInstantiate
+import typings.babylonjs.anon.`2`
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.mathAxisMod.Space
@@ -21,25 +21,25 @@ object transformNodeMod {
   
   @JSImport("babylonjs/Meshes/transformNode", "TransformNode")
   @js.native
-  class TransformNode protected () extends Node {
+  open class TransformNode protected () extends Node {
     def this(name: String) = this()
     def this(name: String, scene: Nullable[Scene]) = this()
     def this(name: String, scene: Unit, isPure: Boolean) = this()
     def this(name: String, scene: Nullable[Scene], isPure: Boolean) = this()
     
-    /* private */ var _absolutePosition: js.Any = js.native
+    /* private */ var _absolutePosition: Any = js.native
     
-    /* private */ var _absoluteRotationQuaternion: js.Any = js.native
+    /* private */ var _absoluteRotationQuaternion: Any = js.native
     
-    /* private */ var _absoluteScaling: js.Any = js.native
+    /* private */ var _absoluteScaling: Any = js.native
     
     /* protected */ def _afterComputeWorldMatrix(): Unit = js.native
     
-    /* private */ var _billboardMode: js.Any = js.native
+    /* private */ var _billboardMode: Any = js.native
     
-    /* private */ var _forward: js.Any = js.native
+    /* private */ var _currentParentWhenAttachingToBone: Any = js.native
     
-    /* private */ var _forwardInverted: js.Any = js.native
+    /* private */ var _forward: Any = js.native
     
     /**
       * @hidden
@@ -49,53 +49,52 @@ object transformNodeMod {
     /** @hidden */
     var _indexInSceneTransformNodesArray: Double = js.native
     
-    /* private */ var _infiniteDistance: js.Any = js.native
+    /* private */ var _infiniteDistance: Any = js.native
     
-    /* private */ var _isAbsoluteSynced: js.Any = js.native
-    
-    /* protected */ var _isDirty: Boolean = js.native
+    /* private */ var _isAbsoluteSynced: Any = js.native
     
     /* protected */ var _isWorldMatrixFrozen: Boolean = js.native
     
     /** @hidden */
     var _localMatrix: Matrix = js.native
     
-    /* private */ var _nonUniformScaling: js.Any = js.native
+    /* private */ var _nonUniformScaling: Any = js.native
     
-    /* private */ var _pivotMatrix: js.Any = js.native
+    /* private */ var _pivotMatrix: Any = js.native
     
-    /* private */ var _pivotMatrixInverse: js.Any = js.native
+    /* private */ var _pivotMatrixInverse: Any = js.native
     
     /** @hidden */
     var _poseMatrix: Nullable[Matrix] = js.native
     
-    /* private */ var _position: js.Any = js.native
+    /* private */ var _position: Any = js.native
     
     /** @hidden */
     var _postMultiplyPivotMatrix: Boolean = js.native
     
-    /* private */ var _preserveParentRotationForBillboard: js.Any = js.native
+    /* private */ var _preserveParentRotationForBillboard: Any = js.native
     
-    /* private */ var _right: js.Any = js.native
+    /* private */ var _right: Any = js.native
     
-    /* private */ var _rightInverted: js.Any = js.native
+    /* private */ var _rotation: Any = js.native
     
-    /* private */ var _rotation: js.Any = js.native
-    
-    /* private */ var _rotationQuaternion: js.Any = js.native
+    /* private */ var _rotationQuaternion: Any = js.native
     
     /* protected */ var _scaling: Vector3 = js.native
     
-    /* private */ var _syncAbsoluteScalingAndRotation: js.Any = js.native
+    /* private */ var _syncAbsoluteScalingAndRotation: Any = js.native
     
-    /* private */ var _transformToBoneReferal: js.Any = js.native
+    /* private */ var _transformToBoneReferal: Any = js.native
     
-    /* private */ var _up: js.Any = js.native
+    /* private */ var _up: Any = js.native
     
-    /** @hidden */
+    /**
+      * @param value
+      * @hidden
+      */
     def _updateNonUniformScalingState(value: Boolean): Boolean = js.native
     
-    /* private */ var _usePivotMatrix: js.Any = js.native
+    /* private */ var _usePivotMatrix: Any = js.native
     
     /**
       * Returns the current mesh absolute position.
@@ -169,9 +168,11 @@ object transformNodeMod {
     
     /**
       * Detach the transform node if its associated with a bone
+      * @param resetToPreviousParent Indicates if the parent that was in effect when attachToBone was called should be set back or if we should set parent to null instead (defaults to the latter)
       * @returns this object
       */
     def detachFromBone(): TransformNode = js.native
+    def detachFromBone(resetToPreviousParent: Boolean): TransformNode = js.native
     
     /**
       * The forward direction of that transform in world space.
@@ -181,10 +182,13 @@ object transformNodeMod {
     /**
       * Prevents the World matrix to be computed any longer
       * @param newWorldMatrix defines an optional matrix to use as world matrix
+      * @param decompose defines whether to decompose the given newWorldMatrix or directly assign
       * @returns the TransformNode.
       */
     def freezeWorldMatrix(): TransformNode = js.native
+    def freezeWorldMatrix(newWorldMatrix: Unit, decompose: Boolean): TransformNode = js.native
     def freezeWorldMatrix(newWorldMatrix: Nullable[Matrix]): TransformNode = js.native
+    def freezeWorldMatrix(newWorldMatrix: Nullable[Matrix], decompose: Boolean): TransformNode = js.native
     
     /**
       * Returns a new Vector3 set with the mesh pivot point World coordinates.
@@ -200,7 +204,7 @@ object transformNodeMod {
     def getAbsolutePivotPointToRef(result: Vector3): TransformNode = js.native
     
     /**
-      * Retuns the mesh absolute position in the World.
+      * Returns the mesh absolute position in the World.
       * @returns a Vector3.
       */
     def getAbsolutePosition(): Vector3 = js.native
@@ -227,7 +231,7 @@ object transformNodeMod {
     /**
       * Sets the Vector3 "result" as the rotated Vector3 "localAxis" in the same rotation than the mesh.
       * localAxis is expressed in the mesh local space.
-      * result is computed in the Wordl space from the mesh World matrix.
+      * result is computed in the World space from the mesh World matrix.
       * @param localAxis axis to rotate
       * @param result the resulting transformnode
       * @returns this TransformNode.
@@ -298,8 +302,9 @@ object transformNodeMod {
       * Instantiate (when possible) or clone that node with its hierarchy
       * @param newParent defines the new parent to use for the instance (or clone)
       * @param options defines options to configure how copy is done
+      * @param options.doNotInstantiate defines if the model must be instantiated or just cloned
       * @param onNewNodeCreated defines an option callback to call when a clone or an instance is created
-      * @returns an instance (or a clone) of the current node with its hiearchy
+      * @returns an instance (or a clone) of the current node with its hierarchy
       */
     def instantiateHierarchy(): Nullable[TransformNode] = js.native
     def instantiateHierarchy(
@@ -307,10 +312,10 @@ object transformNodeMod {
       options: Unit,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
-    def instantiateHierarchy(newParent: Unit, options: DoNotInstantiate): Nullable[TransformNode] = js.native
+    def instantiateHierarchy(newParent: Unit, options: `2`): Nullable[TransformNode] = js.native
     def instantiateHierarchy(
       newParent: Unit,
-      options: DoNotInstantiate,
+      options: `2`,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
     def instantiateHierarchy(newParent: Nullable[TransformNode]): Nullable[TransformNode] = js.native
@@ -319,12 +324,18 @@ object transformNodeMod {
       options: Unit,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
-    def instantiateHierarchy(newParent: Nullable[TransformNode], options: DoNotInstantiate): Nullable[TransformNode] = js.native
+    def instantiateHierarchy(newParent: Nullable[TransformNode], options: `2`): Nullable[TransformNode] = js.native
     def instantiateHierarchy(
       newParent: Nullable[TransformNode],
-      options: DoNotInstantiate,
+      options: `2`,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
+    
+    /**
+      * return true if a pivot has been set
+      * @returns true if a pivot matrix is used
+      */
+    def isUsingPivotMatrix(): Boolean = js.native
     
     /**
       * True if the World matrix has been frozen.
@@ -344,7 +355,7 @@ object transformNodeMod {
       * @param yawCor optional yaw (y-axis) correction in radians
       * @param pitchCor optional pitch (x-axis) correction in radians
       * @param rollCor optional roll (z-axis) correction in radians
-      * @param space the choosen space of the target
+      * @param space the chosen space of the target
       * @returns the TransformNode.
       */
     def lookAt(targetPoint: Vector3): TransformNode = js.native
@@ -363,13 +374,6 @@ object transformNodeMod {
     def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Unit, rollCor: Double): TransformNode = js.native
     def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Unit, rollCor: Double, space: Space): TransformNode = js.native
     def lookAt(targetPoint: Vector3, yawCor: Unit, pitchCor: Unit, rollCor: Unit, space: Space): TransformNode = js.native
-    
-    /**
-      * Flag the transform node as dirty (Forcing it to update everything)
-      * @param property if set to "rotation" the objects rotationQuaternion will be set to null
-      * @returns this transform node
-      */
-    def markAsDirty(property: String): TransformNode = js.native
     
     /**
       * True if the scaling property of this object is non uniform eg. (1,2,1)
@@ -492,7 +496,7 @@ object transformNodeMod {
     def rotation_=(newRotation: Vector3): Unit = js.native
     
     /**
-      * Gets or sets the scaling property : a Vector3 defining the node scaling along each local axis X, Y, Z (default is (0.0, 0.0, 0.0)).
+      * Gets or sets the scaling property : a Vector3 defining the node scaling along each local axis X, Y, Z (default is (1.0, 1.0, 1.0)).
       */
     def scaling: Vector3 = js.native
     
@@ -508,8 +512,8 @@ object transformNodeMod {
       * @param currentSerializationObject defines the object to serialize in
       * @returns the serialized object
       */
-    def serialize(): js.Any = js.native
-    def serialize(currentSerializationObject: js.Any): js.Any = js.native
+    def serialize(): Any = js.native
+    def serialize(currentSerializationObject: Any): Any = js.native
     
     /**
       * Sets the mesh absolute position in the World from a Vector3 or an Array(3).
@@ -537,12 +541,16 @@ object transformNodeMod {
     
     /**
       * Defines the passed node as the parent of the current node.
-      * The node will remain exactly where it is and its position / rotation will be updated accordingly
+      * The node will remain exactly where it is and its position / rotation will be updated accordingly.
+      * Note that if the mesh has a pivot matrix / point defined it will be applied after the parent was updated.
+      * In that case the node will not remain in the same space as it is, as the pivot will be applied.
       * @see https://doc.babylonjs.com/how_to/parenting
       * @param node the node ot set as the parent
+      * @param preserveScalingSign if true, keep scaling sign of child. Otherwise, scaling sign might change.
       * @returns this TransformNode.
       */
     def setParent(node: Nullable[Node]): TransformNode = js.native
+    def setParent(node: Nullable[Node], preserveScalingSign: Boolean): TransformNode = js.native
     
     /**
       * Sets a new pivot matrix to the current node
@@ -670,35 +678,35 @@ object transformNodeMod {
     /**
       * Returns a new TransformNode object parsed from the source provided.
       * @param parsedTransformNode is the source.
-      * @param scene the scne the object belongs to
+      * @param scene the scene the object belongs to
       * @param rootUrl is a string, it's the root URL to prefix the `delayLoadingFile` property with
       * @returns a new TransformNode object parsed from the source provided.
       */
-    inline def Parse(parsedTransformNode: js.Any, scene: Scene, rootUrl: String): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTransformNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    inline def Parse(parsedTransformNode: Any, scene: Scene, rootUrl: String): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTransformNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+    
+    @JSImport("babylonjs/Meshes/transformNode", "TransformNode._LookAtVectorCache")
+    @js.native
+    def _LookAtVectorCache: Any = js.native
+    inline def _LookAtVectorCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LookAtVectorCache")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Meshes/transformNode", "TransformNode._RotationAxisCache")
+    @js.native
+    def _RotationAxisCache: Any = js.native
+    inline def _RotationAxisCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RotationAxisCache")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Meshes/transformNode", "TransformNode._TmpRotation")
     @js.native
-    def _TmpRotation: js.Any = js.native
-    inline def _TmpRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpRotation")(x.asInstanceOf[js.Any])
+    def _TmpRotation: Any = js.native
+    inline def _TmpRotation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpRotation")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Meshes/transformNode", "TransformNode._TmpScaling")
     @js.native
-    def _TmpScaling: js.Any = js.native
-    inline def _TmpScaling_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpScaling")(x.asInstanceOf[js.Any])
+    def _TmpScaling: Any = js.native
+    inline def _TmpScaling_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpScaling")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Meshes/transformNode", "TransformNode._TmpTranslation")
     @js.native
-    def _TmpTranslation: js.Any = js.native
-    inline def _TmpTranslation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpTranslation")(x.asInstanceOf[js.Any])
-    
-    @JSImport("babylonjs/Meshes/transformNode", "TransformNode._lookAtVectorCache")
-    @js.native
-    def _lookAtVectorCache: js.Any = js.native
-    inline def _lookAtVectorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_lookAtVectorCache")(x.asInstanceOf[js.Any])
-    
-    @JSImport("babylonjs/Meshes/transformNode", "TransformNode._rotationAxisCache")
-    @js.native
-    def _rotationAxisCache: js.Any = js.native
-    inline def _rotationAxisCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_rotationAxisCache")(x.asInstanceOf[js.Any])
+    def _TmpTranslation: Any = js.native
+    inline def _TmpTranslation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpTranslation")(x.asInstanceOf[js.Any])
   }
 }

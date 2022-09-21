@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientMonitoring.anon
 
-import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.CreateTimeSeriesRequest
+import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.VerifyNotificationChannelRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait AltCallback extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The project on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER] */
+  /** Required. The notification channel to verify. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait AltCallback extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CreateTimeSeriesRequest
+  var resource: VerifyNotificationChannelRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(name: String, resource: CreateTimeSeriesRequest): AltCallback = {
+  inline def apply(name: String, resource: VerifyNotificationChannelRequest): AltCallback = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
@@ -94,7 +94,7 @@ object AltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CreateTimeSeriesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: VerifyNotificationChannelRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ object XPipe {
     closeInput: () => Unit,
     closeOutput: () => Unit,
     flush: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readBytes: (js.Array[SeqEquiv[Double]], Double) => Double,
     readSomeBytes: (js.Array[SeqEquiv[Double]], Double) => Double,
     release: () => Unit,

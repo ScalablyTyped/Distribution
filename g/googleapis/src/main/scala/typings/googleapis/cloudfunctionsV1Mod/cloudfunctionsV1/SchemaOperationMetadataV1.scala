@@ -5,37 +5,47 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata describing an Operation
-  */
 trait SchemaOperationMetadataV1 extends StObject {
+  
+  /**
+    * The Cloud Build ID of the function created or updated by an API call. This field is only populated for Create and Update operations.
+    */
+  var buildId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The Cloud Build Name of the function deployment. This field is only populated for Create and Update operations. `projects//locations//builds/`.
+    */
+  var buildName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The original request that started the operation.
     */
-  var request: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var request: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   /**
-    * Target of the operation - for example
-    * projects/project-1/locations/region-1/functions/function-1
+    * An identifier for Firebase function sources. Disclaimer: This field is only supported for Firebase function deployments.
     */
-  var target: js.UndefOr[String] = js.undefined
+  var sourceToken: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Target of the operation - for example `projects/project-1/locations/region-1/functions/function-1`
+    */
+  var target: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Type of operation.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The last update timestamp of the operation.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Version id of the function created or updated by an API call. This field
-    * is only populated for Create and Update operations.
+    * Version id of the function created or updated by an API call. This field is only populated for Create and Update operations.
     */
-  var versionId: js.UndefOr[String] = js.undefined
+  var versionId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOperationMetadataV1 {
   
@@ -46,23 +56,51 @@ object SchemaOperationMetadataV1 {
   
   extension [Self <: SchemaOperationMetadataV1](x: Self) {
     
-    inline def setRequest(value: StringDictionary[js.Any]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+    
+    inline def setBuildIdNull: Self = StObject.set(x, "buildId", null)
+    
+    inline def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
+    
+    inline def setBuildName(value: String): Self = StObject.set(x, "buildName", value.asInstanceOf[js.Any])
+    
+    inline def setBuildNameNull: Self = StObject.set(x, "buildName", null)
+    
+    inline def setBuildNameUndefined: Self = StObject.set(x, "buildName", js.undefined)
+    
+    inline def setRequest(value: StringDictionary[Any]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRequestNull: Self = StObject.set(x, "request", null)
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
+    inline def setSourceToken(value: String): Self = StObject.set(x, "sourceToken", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTokenNull: Self = StObject.set(x, "sourceToken", null)
+    
+    inline def setSourceTokenUndefined: Self = StObject.set(x, "sourceToken", js.undefined)
+    
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
+    
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    
+    inline def setVersionIdNull: Self = StObject.set(x, "versionId", null)
     
     inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }

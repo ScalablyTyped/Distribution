@@ -29,7 +29,7 @@ trait SubnetworkLogConfig extends StObject {
   
   /**
     * Can only be specified if VPC flow logs for this subnetwork is enabled. Configures whether all, none or a subset of metadata fields should be added to the reported VPC flow logs.
-    * Default is INCLUDE_ALL_METADATA.
+    * Default is EXCLUDE_ALL_METADATA.
     */
   var metadata: js.UndefOr[String] = js.undefined
   
@@ -67,7 +67,7 @@ object SubnetworkLogConfig {
     
     inline def setMetadataFieldsUndefined: Self = StObject.set(x, "metadataFields", js.undefined)
     
-    inline def setMetadataFieldsVarargs(value: String*): Self = StObject.set(x, "metadataFields", js.Array(value :_*))
+    inline def setMetadataFieldsVarargs(value: String*): Self = StObject.set(x, "metadataFields", js.Array(value*))
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }

@@ -39,6 +39,6 @@ object Timezone {
     
     inline def setUtc(value: js.Array[String]): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
     
-    inline def setUtcVarargs(value: String*): Self = StObject.set(x, "utc", js.Array(value :_*))
+    inline def setUtcVarargs(value: String*): Self = StObject.set(x, "utc", js.Array(value*))
   }
 }

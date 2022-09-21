@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Slider")
 @js.native
-class Slider protected ()
+open class Slider protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Slider {
   def this(element: Element) = this()

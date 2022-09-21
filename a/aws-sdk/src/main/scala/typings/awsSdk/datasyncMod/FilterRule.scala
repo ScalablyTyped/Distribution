@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterRule extends StObject {
   
   /**
-    * The type of filter rule to apply. AWS DataSync only supports the SIMPLE_PATTERN rule type.
+    * The type of filter rule to apply. DataSync only supports the SIMPLE_PATTERN rule type.
     */
   var FilterType: js.UndefOr[typings.awsSdk.datasyncMod.FilterType] = js.undefined
   

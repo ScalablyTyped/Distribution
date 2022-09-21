@@ -1,7 +1,6 @@
 package typings.wolfy87Eventemitter
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.wolfy87Eventemitter.anon.Listener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("wolfy87-eventemitter", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter
   
@@ -45,7 +44,7 @@ object mod {
         * If the function returns true then it will be removed after calling.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def addListener(event: RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def addListener(event: js.RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Adds listeners in bulk using the manipulateListeners method.
@@ -74,7 +73,7 @@ object mod {
         * @param {Function[]} [listeners] An optional array of listener functions to add.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def addListeners(event: RegExp, listeners: js.Array[js.Function]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def addListeners(event: js.RegExp, listeners: js.Array[js.Function]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       /**
         * Adds listeners in bulk using the manipulateListeners method.
         * If you pass an object as the second argument you can add to multiple events at once.
@@ -109,7 +108,7 @@ object mod {
         * If the function returns true then it will be removed after calling.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def addOnceListener(event: RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def addOnceListener(event: js.RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Defines an event name.
@@ -144,7 +143,7 @@ object mod {
         * @param {... any[]} args Optional additional arguments to be passed to each listener.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def emit(event: String, args: js.Any*): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def emit(event: String, args: Any*): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       /**
         * Subtly different from emitEvent in that it will pass its arguments on to the listeners,
         * as opposed to taking a single array of arguments to pass on.
@@ -154,7 +153,7 @@ object mod {
         * @param {... any[]} args Optional additional arguments to be passed to each listener.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def emit(event: RegExp, args: js.Any*): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def emit(event: js.RegExp, args: Any*): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Emits an event of your choice.
@@ -168,7 +167,7 @@ object mod {
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
       def emitEvent(event: String): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
-      def emitEvent(event: String, args: js.Array[js.Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def emitEvent(event: String, args: js.Array[Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       /**
         * Emits to all events that match the regular expression passed
         * When emitted, every listener attached to the event(s) will be executed.
@@ -180,8 +179,8 @@ object mod {
         * @param {Array} [args] Optional array of arguments to be passed to each listener.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def emitEvent(event: RegExp): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
-      def emitEvent(event: RegExp, args: js.Array[js.Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def emitEvent(event: js.RegExp): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def emitEvent(event: js.RegExp, args: js.Array[Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Takes a list of listener objects and flattens it into a list of listener functions.
@@ -214,7 +213,7 @@ object mod {
         * @param {string|RegExp} event Name of the event to return the listeners from.
         * @return {Function[]|Object} All listener functions for the event.
         */
-      def getListeners(event: RegExp): StringDictionary[js.Function] = js.native
+      def getListeners(event: js.RegExp): StringDictionary[js.Function] = js.native
       
       /**
         * Fetches the requested listeners via getListeners but will always return the results inside an object.
@@ -231,7 +230,7 @@ object mod {
         * @param event {string|RegExp} Name of the event to return the listeners from.
         * @return {Object} All listener functions for an event in object
         */
-      def getListenersAsObject(event: RegExp): StringDictionary[js.Function] = js.native
+      def getListenersAsObject(event: js.RegExp): StringDictionary[js.Function] = js.native
       
       /**
         * Edits listeners in bulk. The addListeners and removeListeners methods both use this to do their job.
@@ -264,7 +263,7 @@ object mod {
         * @param {Function[]} [listeners] An optional array of listener functions to add/remove.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def manipulateListeners(remove: Boolean, event: RegExp, listeners: js.Array[js.Function]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def manipulateListeners(remove: Boolean, event: js.RegExp, listeners: js.Array[js.Function]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       /**
         * Edits listeners in bulk. The addListeners and removeListeners methods both use this to do their job.
         * You should really use those instead, this is a little lower level.
@@ -299,7 +298,7 @@ object mod {
         * @param {Function} listener Method to remove from the event.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def off(event: RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def off(event: js.RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Adds a listener function to the specified event.
@@ -324,7 +323,7 @@ object mod {
         * If the function returns true then it will be removed after calling.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def on(event: RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def on(event: js.RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Semi-alias of addListener. It will add a listener that will be
@@ -345,7 +344,7 @@ object mod {
         * If the function returns true then it will be removed after calling.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def once(event: RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def once(event: js.RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Alias of removeEvent.
@@ -354,7 +353,7 @@ object mod {
         */
       def removeAllListeners(): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       def removeAllListeners(event: String): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
-      def removeAllListeners(event: RegExp): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def removeAllListeners(event: js.RegExp): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Removes all listeners from a specified event.
@@ -368,7 +367,7 @@ object mod {
         */
       def removeEvent(): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       def removeEvent(event: String): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
-      def removeEvent(event: RegExp): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def removeEvent(event: js.RegExp): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Removes a listener function from the specified event.
@@ -387,7 +386,7 @@ object mod {
         * @param {Function} listener Method to remove from the event.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def removeListener(event: RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def removeListener(event: js.RegExp, listener: js.Function): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Removes listeners in bulk using the manipulateListeners method.
@@ -414,7 +413,7 @@ object mod {
         * @param {Function[]} [listeners] An optional array of listener functions to remove.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def removeListeners(event: RegExp, listeners: js.Array[js.Function]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def removeListeners(event: js.RegExp, listeners: js.Array[js.Function]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       /**
         * Removes listeners in bulk using the manipulateListeners method.
         * If you pass an object as the second argument you can remove from multiple events at once.
@@ -437,7 +436,7 @@ object mod {
         * @param {any} value The new value to check for when executing listeners.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def setOnceReturnValue(value: js.Any): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def setOnceReturnValue(value: Any): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Emits an event of your choice.
@@ -450,7 +449,7 @@ object mod {
         * @param {Array} [args] Optional array of arguments to be passed to each listener.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def trigger(event: String, args: js.Array[js.Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def trigger(event: String, args: js.Array[Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       /**
         * Emits to all events that match the regular expression passed
         * When emitted, every listener attached to the event(s) will be executed.
@@ -462,12 +461,12 @@ object mod {
         * @param {Array} [args] Optional array of arguments to be passed to each listener.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def trigger(event: RegExp, args: js.Array[js.Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def trigger(event: js.RegExp, args: js.Array[Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
     }
     
     /**
       * Hash Object for manipulating multiple events.
       */
-    type MultipleEvents = StringDictionary[js.Any]
+    type MultipleEvents = StringDictionary[Any]
   }
 }

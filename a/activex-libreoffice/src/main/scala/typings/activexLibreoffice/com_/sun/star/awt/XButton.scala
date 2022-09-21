@@ -31,7 +31,7 @@ object XButton {
   inline def apply(
     acquire: () => Unit,
     addActionListener: XActionListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActionListener: XActionListener => Unit,
     setActionCommand: String => Unit,

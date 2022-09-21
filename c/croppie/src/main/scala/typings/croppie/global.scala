@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("Croppie")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.croppie.mod.^ {
       def this(container: HTMLElement) = this()
       def this(container: HTMLElement, options: CroppieOptions) = this()

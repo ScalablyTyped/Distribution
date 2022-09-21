@@ -8,5 +8,5 @@ object getBucketVersioningInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketVersioningInput", "GetBucketVersioningInput")
   @js.native
-  val GetBucketVersioningInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketVersioningInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

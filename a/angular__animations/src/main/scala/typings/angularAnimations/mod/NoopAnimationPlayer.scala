@@ -6,28 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/animations", "NoopAnimationPlayer")
 @js.native
-class NoopAnimationPlayer ()
+open class NoopAnimationPlayer ()
   extends StObject
      with AnimationPlayer {
   def this(duration: Double) = this()
   def this(duration: Double, delay: Double) = this()
   def this(duration: Unit, delay: Double) = this()
   
-  /* private */ var _destroyed: js.Any = js.native
+  /* private */ var _destroyed: Any = js.native
   
-  /* private */ var _finished: js.Any = js.native
+  /* private */ var _finished: Any = js.native
   
-  /* private */ var _onDestroyFns: js.Any = js.native
+  /* private */ var _onDestroyFns: Any = js.native
   
-  /* private */ var _onDoneFns: js.Any = js.native
+  /* private */ var _onDoneFns: Any = js.native
   
-  /* private */ var _onFinish: js.Any = js.native
+  /* private */ var _onFinish: Any = js.native
   
-  /* private */ var _onStart: js.Any = js.native
+  /* private */ var _onStart: Any = js.native
   
-  /* private */ var _onStartFns: js.Any = js.native
+  /* private */ var _onStartFns: Any = js.native
   
-  /* private */ var _started: js.Any = js.native
+  /* private */ var _originalOnDoneFns: Any = js.native
+  
+  /* private */ var _originalOnStartFns: Any = js.native
+  
+  /* private */ var _position: Any = js.native
+  
+  /* private */ var _started: Any = js.native
   
   /**
     * Destroys the animation, after invoking the `beforeDestroy()` callback.
@@ -122,7 +128,7 @@ class NoopAnimationPlayer ()
     * @param position A 0-based offset into the duration, in milliseconds.
     */
   /* CompleteClass */
-  override def setPosition(position: js.Any): Unit = js.native
+  override def setPosition(position: Any): Unit = js.native
   def setPosition(position: Double): Unit = js.native
   
   /**

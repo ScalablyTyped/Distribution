@@ -52,7 +52,7 @@ trait Delegate extends StObject {
   def on(
     eventType: String,
     handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit],
-    eventData: js.Any
+    eventData: Any
   ): Unit = js.native
   def on(
     eventType: String,
@@ -63,7 +63,7 @@ trait Delegate extends StObject {
     eventType: String,
     selector: String,
     handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit],
-    eventData: js.Any
+    eventData: Any
   ): Unit = js.native
   def on(
     eventType: String,
@@ -74,7 +74,7 @@ trait Delegate extends StObject {
     eventType: String,
     selector: js.Function1[/* element */ Element, Boolean],
     handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit],
-    eventData: js.Any
+    eventData: Any
   ): Unit = js.native
   
   def root(): Unit = js.native

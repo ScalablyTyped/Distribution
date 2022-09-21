@@ -199,19 +199,49 @@ object mod {
     - typings.reactNativeAudio.reactNativeAudioStrings.amr_wb
     - typings.reactNativeAudio.reactNativeAudioStrings.he_aac
     - typings.reactNativeAudio.reactNativeAudioStrings.vorbis
+    - typings.reactNativeAudio.reactNativeAudioStrings.lpcm
+    - typings.reactNativeAudio.reactNativeAudioStrings.ima4
+    - typings.reactNativeAudio.reactNativeAudioStrings.MAC3
+    - typings.reactNativeAudio.reactNativeAudioStrings.MAC6
+    - typings.reactNativeAudio.reactNativeAudioStrings.ulaw
+    - typings.reactNativeAudio.reactNativeAudioStrings.alaw
+    - typings.reactNativeAudio.reactNativeAudioStrings.mp1
+    - typings.reactNativeAudio.reactNativeAudioStrings.mp2
+    - typings.reactNativeAudio.reactNativeAudioStrings.alac
+    - typings.reactNativeAudio.reactNativeAudioStrings.amr
   */
   trait AudioEncodingType extends StObject
   object AudioEncodingType {
     
+    inline def MAC3: typings.reactNativeAudio.reactNativeAudioStrings.MAC3 = "MAC3".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.MAC3]
+    
+    inline def MAC6: typings.reactNativeAudio.reactNativeAudioStrings.MAC6 = "MAC6".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.MAC6]
+    
     inline def aac: typings.reactNativeAudio.reactNativeAudioStrings.aac = "aac".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.aac]
     
     inline def aac_eld: typings.reactNativeAudio.reactNativeAudioStrings.aac_eld = "aac_eld".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.aac_eld]
+    
+    inline def alac: typings.reactNativeAudio.reactNativeAudioStrings.alac = "alac".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.alac]
+    
+    inline def alaw: typings.reactNativeAudio.reactNativeAudioStrings.alaw = "alaw".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.alaw]
+    
+    inline def amr: typings.reactNativeAudio.reactNativeAudioStrings.amr = "amr".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.amr]
     
     inline def amr_nb: typings.reactNativeAudio.reactNativeAudioStrings.amr_nb = "amr_nb".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.amr_nb]
     
     inline def amr_wb: typings.reactNativeAudio.reactNativeAudioStrings.amr_wb = "amr_wb".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.amr_wb]
     
     inline def he_aac: typings.reactNativeAudio.reactNativeAudioStrings.he_aac = "he_aac".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.he_aac]
+    
+    inline def ima4: typings.reactNativeAudio.reactNativeAudioStrings.ima4 = "ima4".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.ima4]
+    
+    inline def lpcm: typings.reactNativeAudio.reactNativeAudioStrings.lpcm = "lpcm".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.lpcm]
+    
+    inline def mp1: typings.reactNativeAudio.reactNativeAudioStrings.mp1 = "mp1".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.mp1]
+    
+    inline def mp2: typings.reactNativeAudio.reactNativeAudioStrings.mp2 = "mp2".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.mp2]
+    
+    inline def ulaw: typings.reactNativeAudio.reactNativeAudioStrings.ulaw = "ulaw".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.ulaw]
     
     inline def vorbis: typings.reactNativeAudio.reactNativeAudioStrings.vorbis = "vorbis".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.vorbis]
   }

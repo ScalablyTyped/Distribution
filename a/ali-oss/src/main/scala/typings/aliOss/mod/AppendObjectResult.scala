@@ -8,11 +8,12 @@ trait AppendObjectResult extends StObject {
   
   var name: String
   
+  /** the next position */
   var nextAppendPosition: String
   
-  // the url of oss
   var res: NormalSuccessResponse
   
+  /** the url of oss */
   var url: String
 }
 object AppendObjectResult {

@@ -79,6 +79,7 @@ object TSType {
   inline def TSConstructorType_(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.mod.TSConstructorType_ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
     __obj.updateDynamic("type")("TSConstructorType")
+    __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.TSConstructorType_]
   }
   
@@ -124,7 +125,9 @@ object TSType {
     __obj.asInstanceOf[typings.babelTypes.mod.TSIntrinsicKeyword_]
   }
   
-  inline def TSLiteralType_(literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_): typings.babelTypes.mod.TSLiteralType_ = {
+  inline def TSLiteralType_(
+    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_ | TemplateLiteral_ | UnaryExpression_
+  ): typings.babelTypes.mod.TSLiteralType_ = {
     val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSLiteralType")
     __obj.asInstanceOf[typings.babelTypes.mod.TSLiteralType_]
@@ -221,7 +224,7 @@ object TSType {
   }
   
   inline def TSTypeQuery_(exprName: TSEntityName | TSImportType_): typings.babelTypes.mod.TSTypeQuery_ = {
-    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("TSTypeQuery")
     __obj.asInstanceOf[typings.babelTypes.mod.TSTypeQuery_]
   }

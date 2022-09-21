@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BusinessDayConfig extends StObject {
   
-  /** Regular business days. May not be empty. */
+  /** Regular business days, such as '"monday"'. May not be empty. */
   var businessDays: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BusinessDayConfig {
@@ -22,6 +22,6 @@ object BusinessDayConfig {
     
     inline def setBusinessDaysUndefined: Self = StObject.set(x, "businessDays", js.undefined)
     
-    inline def setBusinessDaysVarargs(value: String*): Self = StObject.set(x, "businessDays", js.Array(value :_*))
+    inline def setBusinessDaysVarargs(value: String*): Self = StObject.set(x, "businessDays", js.Array(value*))
   }
 }

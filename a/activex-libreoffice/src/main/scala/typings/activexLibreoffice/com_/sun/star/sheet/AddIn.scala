@@ -74,7 +74,7 @@ object AddIn {
     getProgrammaticCategoryName: String => String,
     getProgrammaticFuntionName: String => String,
     getServiceName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLocale: Locale => Unit
   ): AddIn = {

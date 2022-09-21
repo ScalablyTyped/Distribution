@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "Evented")
 @js.native
-class Evented () extends StObject {
+open class Evented () extends StObject {
   
   // https://github.com/mapbox/mapbox-gl-js/issues/6522
   def fire(`type`: String): this.type = js.native
-  def fire(`type`: String, properties: StringDictionary[js.Any]): this.type = js.native
+  def fire(`type`: String, properties: StringDictionary[Any]): this.type = js.native
   
   def off(): this.type = js.native
   def off(`type`: String): this.type = js.native
-  def off(`type`: String, listener: js.Function): this.type = js.native
-  def off(`type`: js.Any): this.type = js.native
-  def off(`type`: js.Any, listener: js.Function): this.type = js.native
-  def off(`type`: Unit, listener: js.Function): this.type = js.native
+  def off(`type`: String, listener: EventedListener): this.type = js.native
+  def off(`type`: Any): this.type = js.native
+  def off(`type`: Any, listener: EventedListener): this.type = js.native
+  def off(`type`: Unit, listener: EventedListener): this.type = js.native
   
-  def on(`type`: String, listener: js.Function): this.type = js.native
+  def on(`type`: String, listener: EventedListener): this.type = js.native
   
-  def once(`type`: String, listener: js.Function): this.type = js.native
+  def once(`type`: String, listener: EventedListener): this.type = js.native
 }

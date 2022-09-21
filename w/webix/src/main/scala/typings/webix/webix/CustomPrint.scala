@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomPrint extends StObject {
   
   @JSName("$customPrint")
-  def $customPrint(args: js.Any*): js.Any
+  def $customPrint(args: Any*): Any
   @JSName("$customPrint")
   var $customPrint_Original: WebixCallback
 }

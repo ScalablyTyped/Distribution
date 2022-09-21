@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResolverRulePolicyResponse extends StObject {
   
   /**
-    * Information about the Resolver rule policy that you specified in a GetResolverRulePolicy request.
+    * The Resolver rule policy for the rule that you specified in a GetResolverRulePolicy request.
     */
   var ResolverRulePolicy: js.UndefOr[typings.awsSdk.route53resolverMod.ResolverRulePolicy] = js.undefined
 }

@@ -6,38 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object transferMod {
   
+  @js.native
   trait RequestHandler[RequestType, ResponseType, HandlerOptions] extends StObject {
     
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
     
-    def handle(request: RequestType, handlerOptions: HandlerOptions): js.Promise[RequestHandlerOutput[ResponseType]]
+    def handle(request: RequestType): js.Promise[RequestHandlerOutput[ResponseType]] = js.native
+    def handle(request: RequestType, handlerOptions: HandlerOptions): js.Promise[RequestHandlerOutput[ResponseType]] = js.native
     
     /**
       * metadata contains information of a handler. For example
       * 'h2' refers this handler is for handling HTTP/2 requests,
       * whereas 'h1' refers handling HTTP1 requests
       */
-    var metadata: js.UndefOr[RequestHandlerMetadata] = js.undefined
-  }
-  object RequestHandler {
-    
-    inline def apply[RequestType, ResponseType, HandlerOptions](handle: (RequestType, HandlerOptions) => js.Promise[RequestHandlerOutput[ResponseType]]): RequestHandler[RequestType, ResponseType, HandlerOptions] = {
-      val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
-      __obj.asInstanceOf[RequestHandler[RequestType, ResponseType, HandlerOptions]]
-    }
-    
-    extension [Self <: RequestHandler[?, ?, ?], RequestType, ResponseType, HandlerOptions](x: Self & (RequestHandler[RequestType, ResponseType, HandlerOptions])) {
-      
-      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-      
-      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
-      
-      inline def setHandle(value: (RequestType, HandlerOptions) => js.Promise[RequestHandlerOutput[ResponseType]]): Self = StObject.set(x, "handle", js.Any.fromFunction2(value))
-      
-      inline def setMetadata(value: RequestHandlerMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-      
-      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
-    }
+    var metadata: js.UndefOr[RequestHandlerMetadata] = js.native
   }
   
   trait RequestHandlerMetadata extends StObject {

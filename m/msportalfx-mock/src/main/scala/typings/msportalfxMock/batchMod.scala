@@ -1,6 +1,6 @@
 package typings.msportalfxMock
 
-import typings.msportalfxMock.mod.Router
+import typings.express.mod.Router
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

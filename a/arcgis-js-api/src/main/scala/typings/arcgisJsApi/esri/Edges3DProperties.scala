@@ -9,6 +9,8 @@ trait Edges3DProperties extends StObject {
   /**
     * The color of the edges.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-Edges3D.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
@@ -16,12 +18,16 @@ trait Edges3DProperties extends StObject {
   /**
     * A size in points by which to extend edges beyond their original end points.
     *
+    * @default "0"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-Edges3D.html#extensionLength)
     */
   var extensionLength: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The size of the edges in points.
+    *
+    * @default 1px
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-Edges3D.html#size)
     */
@@ -40,7 +46,7 @@ object Edges3DProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setExtensionLength(value: Double | String): Self = StObject.set(x, "extensionLength", value.asInstanceOf[js.Any])
     

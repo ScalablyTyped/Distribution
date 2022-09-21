@@ -87,7 +87,7 @@ trait Shape extends StObject {
   
   val DiagramNode: typings.activexExcel.Excel.DiagramNode = js.native
   
-  val DrawingObject: js.Any = js.native
+  val DrawingObject: Any = js.native
   
   def Duplicate(): Shape = js.native
   
@@ -150,7 +150,7 @@ trait Shape extends StObject {
   
   var OnAction: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentGroup: Shape = js.native
   

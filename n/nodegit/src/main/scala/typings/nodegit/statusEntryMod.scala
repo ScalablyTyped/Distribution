@@ -9,7 +9,7 @@ object statusEntryMod {
   
   @JSImport("nodegit/status-entry", "StatusEntry")
   @js.native
-  class StatusEntry () extends StObject {
+  open class StatusEntry () extends StObject {
     
     def headToIndex(): DiffDelta = js.native
     

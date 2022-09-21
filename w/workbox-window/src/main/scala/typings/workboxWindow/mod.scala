@@ -14,11 +14,11 @@ object mod {
   
   @JSImport("workbox-window", "Workbox")
   @js.native
-  class Workbox protected ()
+  open class Workbox protected ()
     extends typings.workboxWindow.workboxMod.Workbox {
     def this(scriptURL: String) = this()
     def this(scriptURL: String, registerOptions: RegistrationOptions) = this()
   }
   
-  inline def messageSW(sw: ServiceWorker, data: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("messageSW")(sw.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def messageSW(sw: ServiceWorker, data: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("messageSW")(sw.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 }

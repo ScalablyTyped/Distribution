@@ -36,14 +36,14 @@ object autoInit {
   def register: js.Function3[
     /* componentName */ String, 
     /* Constructor */ MDCAttachable, 
-    /* warn */ js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]], 
+    /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
     Unit
   ] = js.native
   inline def register_=(
     x: js.Function3[
       /* componentName */ String, 
       /* Constructor */ MDCAttachable, 
-      /* warn */ js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]], 
+      /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
       Unit
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("register")(x.asInstanceOf[js.Any])

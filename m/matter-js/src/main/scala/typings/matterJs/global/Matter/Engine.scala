@@ -1,14 +1,13 @@
 package typings.matterJs.global.Matter
 
 import typings.matterJs.mod.IEngineDefinition
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Matter.Engine")
 @js.native
-class Engine ()
+open class Engine ()
   extends typings.matterJs.mod.Engine
 /* static members */
 object Engine {
@@ -18,7 +17,7 @@ object Engine {
   val ^ : js.Any = js.native
   
   /**
-    * Clears the engine including the world, pairs and broadphase.
+    * Clears the engine pairs and detector.
     * @method clear
     * @param {engine} engine
     */
@@ -29,26 +28,11 @@ object Engine {
     * All properties have default values, and many are pre-calculated automatically based on other properties.
     * See the properties section below for detailed information on what you can pass via the `options` object.
     * @method create
-    * @param {HTMLElement} element
-    * @param {object} [options]
-    * @return {engine} engine
-    * @deprecated
-    */
-  /**
-    * Creates a new engine. The options parameter is an object that specifies any properties you wish to override the defaults.
-    * All properties have default values, and many are pre-calculated automatically based on other properties.
-    * See the properties section below for detailed information on what you can pass via the `options` object.
-    * @method create
-    * @param {object} [options]
-    * @return {engine} engine
-    * @deprecated
+    * @param {IEngineDefinition} [options]
+    * @returns {Engine} engine
     */
   inline def create(): typings.matterJs.mod.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.matterJs.mod.Engine]
-  inline def create(element: Unit, options: IEngineDefinition): typings.matterJs.mod.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Engine]
-  inline def create(element: IEngineDefinition): typings.matterJs.mod.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.matterJs.mod.Engine]
-  inline def create(element: IEngineDefinition, options: IEngineDefinition): typings.matterJs.mod.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Engine]
-  inline def create(element: HTMLElement): typings.matterJs.mod.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.matterJs.mod.Engine]
-  inline def create(element: HTMLElement, options: IEngineDefinition): typings.matterJs.mod.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Engine]
+  inline def create(options: IEngineDefinition): typings.matterJs.mod.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.matterJs.mod.Engine]
   
   /**
     * Merges two engines by keeping the configuration of `engineA` but replacing the world with the one from `engineB`.
@@ -59,7 +43,8 @@ object Engine {
   inline def merge(engineA: typings.matterJs.mod.Engine, engineB: typings.matterJs.mod.Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(engineA.asInstanceOf[js.Any], engineB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * An alias for `Runner.run`, see `Matter.Runner` for more information.
+    * A deprecated alias for `Runner.run`, use `Matter.Runner.run(engine)` instead and see `Matter.Runner` for more information.
+    * @deprecated use Matter.Runner.run(engine) instead
     * @method run
     * @param {engine} engine
     */

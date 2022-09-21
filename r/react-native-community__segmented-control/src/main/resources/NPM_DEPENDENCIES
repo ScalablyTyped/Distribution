@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-community/segmented-control" : "2.2.1"
+      "@react-native-community/segmented-control" : "2.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-community/segmented-control" : "2.2.1"
+      "@react-native-community/segmented-control" : "2.2.2"
     }
   ],
   "compile-devDependencies" : [

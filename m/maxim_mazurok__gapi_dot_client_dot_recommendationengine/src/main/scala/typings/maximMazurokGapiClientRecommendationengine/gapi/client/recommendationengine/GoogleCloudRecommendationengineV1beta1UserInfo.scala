@@ -25,12 +25,16 @@ trait GoogleCloudRecommendationengineV1beta1UserInfo extends StObject {
     */
   var userAgent: js.UndefOr[String] = js.undefined
   
-  /** Optional. Unique identifier for logged-in user with a length limit of 128 bytes. Required only for logged-in users. */
+  /**
+    * Optional. Unique identifier for logged-in user with a length limit of 128 bytes. Required only for logged-in users. Don't set for anonymous users. Don't set the field to the same
+    * fixed ID for different users. This mixes the event history of those users together, which results in degraded model quality.
+    */
   var userId: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. A unique identifier for tracking visitors with a length limit of 128 bytes. For example, this could be implemented with a http cookie, which should be able to uniquely
-    * identify a visitor on a single device. This unique identifier should not change if the visitor log in/out of the website. Maximum length 128 bytes. Cannot be empty.
+    * Required. A unique identifier for tracking visitors with a length limit of 128 bytes. For example, this could be implemented with an HTTP cookie, which should be able to uniquely
+    * identify a visitor on a single device. This unique identifier should not change if the visitor logs in or out of the website. Maximum length 128 bytes. Cannot be empty. Don't set
+    * the field to the same fixed ID for different users. This mixes the event history of those users together, which results in degraded model quality.
     */
   var visitorId: js.UndefOr[String] = js.undefined
 }

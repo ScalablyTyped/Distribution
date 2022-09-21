@@ -10,13 +10,13 @@ trait CPAttribute extends StObject {
   
   var Name: ValuesOf[CADESCOM_ATTRIBUTE]
   
-  var Value: js.Any
+  var Value: Any
   
   var ValueEncoding: ValuesOf[CAPICOM_ENCODING_TYPE]
 }
 object CPAttribute {
   
-  inline def apply(Name: ValuesOf[CADESCOM_ATTRIBUTE], Value: js.Any, ValueEncoding: ValuesOf[CAPICOM_ENCODING_TYPE]): CPAttribute = {
+  inline def apply(Name: ValuesOf[CADESCOM_ATTRIBUTE], Value: Any, ValueEncoding: ValuesOf[CAPICOM_ENCODING_TYPE]): CPAttribute = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], ValueEncoding = ValueEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPAttribute]
   }
@@ -25,7 +25,7 @@ object CPAttribute {
     
     inline def setName(value: ValuesOf[CADESCOM_ATTRIBUTE]): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setValueEncoding(value: ValuesOf[CAPICOM_ENCODING_TYPE]): Self = StObject.set(x, "ValueEncoding", value.asInstanceOf[js.Any])
   }

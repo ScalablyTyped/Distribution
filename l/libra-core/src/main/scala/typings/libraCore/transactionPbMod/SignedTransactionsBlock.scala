@@ -6,14 +6,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "SignedTransactionsBlock")
 @js.native
-class SignedTransactionsBlock () extends Message {
+open class SignedTransactionsBlock () extends Message {
   
   def addTransactions(): SignedTransaction = js.native
   def addTransactions(value: Unit, index: Double): SignedTransaction = js.native
@@ -24,25 +23,25 @@ class SignedTransactionsBlock () extends Message {
   
   def getTransactionsList(): js.Array[SignedTransaction] = js.native
   
-  def getValidatorPublicKey(): Uint8Array | String = js.native
+  def getValidatorPublicKey(): js.typedarray.Uint8Array | String = js.native
   
   def getValidatorPublicKey_asB64(): String = js.native
   
-  def getValidatorPublicKey_asU8(): Uint8Array = js.native
+  def getValidatorPublicKey_asU8(): js.typedarray.Uint8Array = js.native
   
-  def getValidatorSignature(): Uint8Array | String = js.native
+  def getValidatorSignature(): js.typedarray.Uint8Array | String = js.native
   
   def getValidatorSignature_asB64(): String = js.native
   
-  def getValidatorSignature_asU8(): Uint8Array = js.native
+  def getValidatorSignature_asU8(): js.typedarray.Uint8Array = js.native
   
   def setTransactionsList(value: js.Array[SignedTransaction]): Unit = js.native
   
   def setValidatorPublicKey(value: String): Unit = js.native
-  def setValidatorPublicKey(value: Uint8Array): Unit = js.native
+  def setValidatorPublicKey(value: js.typedarray.Uint8Array): Unit = js.native
   
   def setValidatorSignature(value: String): Unit = js.native
-  def setValidatorSignature(value: Uint8Array): Unit = js.native
+  def setValidatorSignature(value: js.typedarray.Uint8Array): Unit = js.native
 }
 /* static members */
 object SignedTransactionsBlock {
@@ -51,7 +50,7 @@ object SignedTransactionsBlock {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): SignedTransactionsBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SignedTransactionsBlock]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): SignedTransactionsBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SignedTransactionsBlock]
   
   inline def deserializeBinaryFromReader(message: SignedTransactionsBlock, reader: BinaryReader): SignedTransactionsBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SignedTransactionsBlock]
   
@@ -74,16 +73,16 @@ object SignedTransactionsBlock {
     
     var transactionsList: js.Array[typings.libraCore.transactionPbMod.SignedTransaction.AsObject]
     
-    var validatorPublicKey: Uint8Array | String
+    var validatorPublicKey: js.typedarray.Uint8Array | String
     
-    var validatorSignature: Uint8Array | String
+    var validatorSignature: js.typedarray.Uint8Array | String
   }
   object AsObject {
     
     inline def apply(
       transactionsList: js.Array[typings.libraCore.transactionPbMod.SignedTransaction.AsObject],
-      validatorPublicKey: Uint8Array | String,
-      validatorSignature: Uint8Array | String
+      validatorPublicKey: js.typedarray.Uint8Array | String,
+      validatorSignature: js.typedarray.Uint8Array | String
     ): AsObject = {
       val __obj = js.Dynamic.literal(transactionsList = transactionsList.asInstanceOf[js.Any], validatorPublicKey = validatorPublicKey.asInstanceOf[js.Any], validatorSignature = validatorSignature.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
@@ -93,11 +92,11 @@ object SignedTransactionsBlock {
       
       inline def setTransactionsList(value: js.Array[typings.libraCore.transactionPbMod.SignedTransaction.AsObject]): Self = StObject.set(x, "transactionsList", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsListVarargs(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject*): Self = StObject.set(x, "transactionsList", js.Array(value :_*))
+      inline def setTransactionsListVarargs(value: typings.libraCore.transactionPbMod.SignedTransaction.AsObject*): Self = StObject.set(x, "transactionsList", js.Array(value*))
       
-      inline def setValidatorPublicKey(value: Uint8Array | String): Self = StObject.set(x, "validatorPublicKey", value.asInstanceOf[js.Any])
+      inline def setValidatorPublicKey(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "validatorPublicKey", value.asInstanceOf[js.Any])
       
-      inline def setValidatorSignature(value: Uint8Array | String): Self = StObject.set(x, "validatorSignature", value.asInstanceOf[js.Any])
+      inline def setValidatorSignature(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "validatorSignature", value.asInstanceOf[js.Any])
     }
   }
 }

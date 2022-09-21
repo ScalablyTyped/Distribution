@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ListEmployeesRequest")
 @js.native
-class ListEmployeesRequest () extends StObject {
+open class ListEmployeesRequest () extends StObject {
   
   /**
     * The token required to retrieve the specified page of results.

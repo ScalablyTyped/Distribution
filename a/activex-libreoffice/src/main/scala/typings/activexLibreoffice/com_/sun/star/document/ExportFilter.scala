@@ -31,8 +31,8 @@ object ExportFilter {
     cancel: () => Unit,
     filter: SeqEquiv[PropertyValue] => Boolean,
     getName: () => String,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setName: String => Unit,
     setSourceDocument: XComponent => Unit

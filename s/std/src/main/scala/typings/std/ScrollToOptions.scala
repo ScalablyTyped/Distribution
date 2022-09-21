@@ -8,8 +8,10 @@ trait ScrollToOptions
   extends StObject
      with ScrollOptions {
   
+  /* standard dom */
   var left: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var top: js.UndefOr[Double] = js.undefined
 }
 object ScrollToOptions {

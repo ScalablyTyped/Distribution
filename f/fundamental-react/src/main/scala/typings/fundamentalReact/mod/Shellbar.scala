@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "Shellbar")
 @js.native
-class Shellbar () extends default
+open class Shellbar () extends default
 object Shellbar {
   
   @JSImport("fundamental-react", "Shellbar")

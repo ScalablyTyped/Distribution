@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "kagekiri" : "1.4.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "kagekiri" : "1.4.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

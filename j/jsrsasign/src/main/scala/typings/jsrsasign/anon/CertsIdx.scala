@@ -8,11 +8,11 @@ trait CertsIdx extends StObject {
   
   var certsIdx: Double
   
-  var signerInfos: js.Array[js.Any]
+  var signerInfos: js.Array[Any]
 }
 object CertsIdx {
   
-  inline def apply(certsIdx: Double, signerInfos: js.Array[js.Any]): CertsIdx = {
+  inline def apply(certsIdx: Double, signerInfos: js.Array[Any]): CertsIdx = {
     val __obj = js.Dynamic.literal(certsIdx = certsIdx.asInstanceOf[js.Any], signerInfos = signerInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertsIdx]
   }
@@ -21,8 +21,8 @@ object CertsIdx {
     
     inline def setCertsIdx(value: Double): Self = StObject.set(x, "certsIdx", value.asInstanceOf[js.Any])
     
-    inline def setSignerInfos(value: js.Array[js.Any]): Self = StObject.set(x, "signerInfos", value.asInstanceOf[js.Any])
+    inline def setSignerInfos(value: js.Array[Any]): Self = StObject.set(x, "signerInfos", value.asInstanceOf[js.Any])
     
-    inline def setSignerInfosVarargs(value: js.Any*): Self = StObject.set(x, "signerInfos", js.Array(value :_*))
+    inline def setSignerInfosVarargs(value: Any*): Self = StObject.set(x, "signerInfos", js.Array(value*))
   }
 }

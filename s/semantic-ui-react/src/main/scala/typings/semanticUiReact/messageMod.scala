@@ -14,10 +14,9 @@ object messageMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/collections/Message", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[MessageProps, ComponentState, js.Any] {
+  open class default protected () extends Component[MessageProps, ComponentState, Any] {
     def this(props: MessageProps) = this()
-    def this(props: MessageProps, context: js.Any) = this()
+    def this(props: MessageProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/collections/Message", JSImport.Default)
   @js.native

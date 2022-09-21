@@ -13,7 +13,7 @@ trait CallbackFieldsFilter extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the DV360 advertiser that has access to the fetched custom lists. */
+  /** The ID of the advertiser that has access to the inventory source. */
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
@@ -26,9 +26,11 @@ trait CallbackFieldsFilter extends StObject {
   var fields: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows filtering by custom list fields. Supported syntax: * Filter expressions for custom lists currently can only contain at most one restriction. * A restriction has the form
-    * of `{field} {operator} {value}`. * The operator must be `CONTAINS (:)`. * Supported fields: - `displayName` Examples: * All custom lists for which the display name contains
-    * "Google": `displayName : "Google"`. The length of this field should be no more than 500 characters.
+    * Allows filtering by inventory source properties. Supported syntax: * Filter expressions are made up of one or more restrictions. * Restrictions can be combined by `AND` or `OR`
+    * logical operators. A sequence of restrictions implicitly uses `AND`. * A restriction has the form of `{field} {operator} {value}`. * The operator must be `EQUALS (=)`. *
+    * Supported fields: - `status.entityStatus` - `commitment` - `deliveryMethod` - `rateDetails.rateType` - `exchange` Examples: * All active inventory sources:
+    * `status.entityStatus="ENTITY_STATUS_ACTIVE"` * Inventory sources belonging to Google Ad Manager or Rubicon exchanges: `exchange="EXCHANGE_GOOGLE_AD_MANAGER" OR
+    * exchange="EXCHANGE_RUBICON"` The length of this field should be no more than 500 characters.
     */
   var filter: js.UndefOr[String] = js.undefined
   
@@ -39,19 +41,22 @@ trait CallbackFieldsFilter extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Field by which to sort the list. Acceptable values are: * `customListId` (default) * `displayName` The default sorting order is ascending. To specify descending order for a
-    * field, a suffix "desc" should be added to the field name. Example: `displayName desc`.
+    * Field by which to sort the list. Acceptable values are: * `displayName` (default) The default sorting order is ascending. To specify descending order for a field, a suffix
+    * "desc" should be added to the field name. For example, `displayName desc`.
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
-  /** Requested page size. Must be between `1` and `100`. If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value is specified. */
+  /** Requested page size. Must be between `1` and `100`. If unspecified will default to `100`. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A token identifying a page of results the server should return. Typically, this is the value of next_page_token returned from the previous call to `ListCustomLists` method. If
-    * not specified, the first page of results will be returned.
+    * A token identifying a page of results the server should return. Typically, this is the value of next_page_token returned from the previous call to `ListInventorySources` method.
+    * If not specified, the first page of results will be returned.
     */
   var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** The ID of the partner that has access to the inventory source. */
+  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -121,6 +126,10 @@ object CallbackFieldsFilter {
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

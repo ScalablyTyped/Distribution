@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * layout : indicates the corresponding layout that triggered the event
     * (useful if running multiple layouts simultaneously)
     */
-  var layout: js.Any
+  var layout: Any
 }
 object EventObject {
   
@@ -31,7 +31,7 @@ object EventObject {
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
     isPropagationStopped: () => Boolean,
-    layout: js.Any,
+    layout: Any,
     namespace: String,
     originalEvent: MouseEvent,
     position: Position,
@@ -39,7 +39,7 @@ object EventObject {
     renderedPosition: Position,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
-    target: js.Any,
+    target: Any,
     timeStamp: Double,
     `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
   ): EventObject = {
@@ -50,6 +50,6 @@ object EventObject {
   
   extension [Self <: EventObject](x: Self) {
     
-    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

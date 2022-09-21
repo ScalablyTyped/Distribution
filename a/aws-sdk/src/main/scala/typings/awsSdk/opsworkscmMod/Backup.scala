@@ -24,7 +24,7 @@ trait Backup extends StObject {
   /**
     *  The time stamp when the backup was created in the database. Example: 2016-07-29T13:38:47.520Z 
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  A user-provided description for a manual backup. This field is empty for automated backups. 
@@ -147,7 +147,7 @@ object Backup {
     
     inline def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -203,7 +203,7 @@ object Backup {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
@@ -225,7 +225,7 @@ object Backup {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setToolsVersion(value: String): Self = StObject.set(x, "ToolsVersion", value.asInstanceOf[js.Any])
     

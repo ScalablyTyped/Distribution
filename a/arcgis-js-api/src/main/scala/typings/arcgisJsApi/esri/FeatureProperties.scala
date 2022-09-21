@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +13,8 @@ trait FeatureProperties
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#defaultPopupTemplateEnabled)
     */
   var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
@@ -18,12 +22,25 @@ trait FeatureProperties
   /**
     * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#graphic)
     */
   var graphic: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
+    * Indicates the heading level to use for the [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#title) of the feature widget.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
+  
+  /**
     * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#map)
     */
@@ -31,6 +48,8 @@ trait FeatureProperties
   
   /**
     * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#spatialReference)
     */
@@ -41,7 +60,7 @@ trait FeatureProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * The view model for this widget.
@@ -74,6 +93,10 @@ object FeatureProperties {
     
     inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
     
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
+    
     inline def setMap(value: MapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
@@ -82,7 +105,7 @@ object FeatureProperties {
     
     inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: FeatureViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element that hosts the SemanticZoom.
   * @param options An object that contains one or more property/value pairs to apply to the new control. This object can contain these properties: initiallyZoomedOut Boolean, zoomFactor 0.2–0.85.
   **/
-class SemanticZoom ()
+open class SemanticZoom ()
   extends StObject
      with typings.winjs.WinJS.UI.SemanticZoom {
   def this(element: HTMLElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
 }
 object SemanticZoom {
   

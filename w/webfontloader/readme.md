@@ -10,10 +10,10 @@ Web Font Loader gives you added control when using linked fonts via @font-face.
 | ------------------ | :-------------: |
 | Full name          | webfontloader |
 | Keywords           | web, fonts, webfonts, font, loader, @font-face |
-| # releases         | 1 |
-| # dependents       | 336 |
-| # downloads        | 10066115 |
-| # stars            | 21 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1911812.0 |
+| # stars            | 8940.0 |
 
 ## Links
 - [Homepage](https://github.com/typekit/webfontloader)

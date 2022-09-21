@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.RibbonBuilder")
 @js.native
-class RibbonBuilder ()
+open class RibbonBuilder ()
   extends StObject
      with typings.sharepoint.CUI.Builder {
   

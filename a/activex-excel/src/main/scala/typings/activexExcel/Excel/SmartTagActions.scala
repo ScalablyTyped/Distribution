@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SmartTagActions extends StObject {
   
-  def apply(Index: js.Any): SmartTagAction = js.native
+  def apply(Index: Any): SmartTagAction = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -15,9 +15,9 @@ trait SmartTagActions extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Item(Index: js.Any): SmartTagAction = js.native
+  def Item(Index: Any): SmartTagAction = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): SmartTagAction = js.native
+  def _Default(Index: Any): SmartTagAction = js.native
 }

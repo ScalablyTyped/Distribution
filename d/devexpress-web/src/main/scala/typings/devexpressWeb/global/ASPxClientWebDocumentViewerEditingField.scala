@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientWebDocumentViewerEditingField")
 @js.native
-class ASPxClientWebDocumentViewerEditingField ()
+open class ASPxClientWebDocumentViewerEditingField ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebDocumentViewerEditingField {
   
   /* CompleteClass */
-  var editValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any = js.native
+  var editValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any = js.native
   
   /* CompleteClass */
   override def editorName(): String = js.native
@@ -26,5 +26,5 @@ class ASPxClientWebDocumentViewerEditingField ()
   override def pageIndex(): Double = js.native
   
   /* CompleteClass */
-  var readOnly: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var readOnly: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
 }

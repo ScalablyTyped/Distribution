@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_poly
 
-Typings are for version 1.0.20201006
+Typings are for version 1.0.20210817
 
 ## Library description:
 TypeScript typings for Poly API v1
@@ -10,10 +10,10 @@ TypeScript typings for Poly API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.poly |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 317 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 503.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

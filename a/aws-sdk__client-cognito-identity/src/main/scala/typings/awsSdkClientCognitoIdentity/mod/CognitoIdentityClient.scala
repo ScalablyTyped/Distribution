@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-cognito-identity", "CognitoIdentityClient")
 @js.native
-class CognitoIdentityClient protected ()
+open class CognitoIdentityClient protected ()
   extends typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.CognitoIdentityClient {
   def this(configuration: CognitoIdentityClientConfig) = this()
 }

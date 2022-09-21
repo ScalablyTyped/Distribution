@@ -33,6 +33,6 @@ object GetRelationalDatabaseEventsResult {
     
     inline def setRelationalDatabaseEventsUndefined: Self = StObject.set(x, "relationalDatabaseEvents", js.undefined)
     
-    inline def setRelationalDatabaseEventsVarargs(value: RelationalDatabaseEvent*): Self = StObject.set(x, "relationalDatabaseEvents", js.Array(value :_*))
+    inline def setRelationalDatabaseEventsVarargs(value: RelationalDatabaseEvent*): Self = StObject.set(x, "relationalDatabaseEvents", js.Array(value*))
   }
 }

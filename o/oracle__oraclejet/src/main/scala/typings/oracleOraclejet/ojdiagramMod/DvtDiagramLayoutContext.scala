@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DvtDiagramLayoutContext extends StObject {
   
-  def getCommonContainer(nodeId1: js.Any, nodeId2: js.Any): js.Any
+  def getCommonContainer(nodeId1: Any, nodeId2: Any): Any
   
   def getComponentSize(): H
   
@@ -15,13 +15,13 @@ trait DvtDiagramLayoutContext extends StObject {
   
   def getEventData(): js.Object
   
-  def getLinkById(id: js.Any): DvtDiagramLayoutContextLink
+  def getLinkById(id: Any): DvtDiagramLayoutContextLink
   
   def getLinkByIndex(index: Double): DvtDiagramLayoutContextLink
   
   def getLinkCount(): Double
   
-  def getNodeById(id: js.Any): DvtDiagramLayoutContextNode
+  def getNodeById(id: Any): DvtDiagramLayoutContextNode
   
   def getNodeByIndex(index: Double): DvtDiagramLayoutContextNode
   
@@ -36,14 +36,14 @@ trait DvtDiagramLayoutContext extends StObject {
 object DvtDiagramLayoutContext {
   
   inline def apply(
-    getCommonContainer: (js.Any, js.Any) => js.Any,
+    getCommonContainer: (Any, Any) => Any,
     getComponentSize: () => H,
     getCurrentViewport: () => H,
     getEventData: () => js.Object,
-    getLinkById: js.Any => DvtDiagramLayoutContextLink,
+    getLinkById: Any => DvtDiagramLayoutContextLink,
     getLinkByIndex: Double => DvtDiagramLayoutContextLink,
     getLinkCount: () => Double,
-    getNodeById: js.Any => DvtDiagramLayoutContextNode,
+    getNodeById: Any => DvtDiagramLayoutContextNode,
     getNodeByIndex: Double => DvtDiagramLayoutContextNode,
     getNodeCount: () => Double,
     getViewport: () => H,
@@ -56,7 +56,7 @@ object DvtDiagramLayoutContext {
   
   extension [Self <: DvtDiagramLayoutContext](x: Self) {
     
-    inline def setGetCommonContainer(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getCommonContainer", js.Any.fromFunction2(value))
+    inline def setGetCommonContainer(value: (Any, Any) => Any): Self = StObject.set(x, "getCommonContainer", js.Any.fromFunction2(value))
     
     inline def setGetComponentSize(value: () => H): Self = StObject.set(x, "getComponentSize", js.Any.fromFunction0(value))
     
@@ -64,13 +64,13 @@ object DvtDiagramLayoutContext {
     
     inline def setGetEventData(value: () => js.Object): Self = StObject.set(x, "getEventData", js.Any.fromFunction0(value))
     
-    inline def setGetLinkById(value: js.Any => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkById", js.Any.fromFunction1(value))
+    inline def setGetLinkById(value: Any => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkById", js.Any.fromFunction1(value))
     
     inline def setGetLinkByIndex(value: Double => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkByIndex", js.Any.fromFunction1(value))
     
     inline def setGetLinkCount(value: () => Double): Self = StObject.set(x, "getLinkCount", js.Any.fromFunction0(value))
     
-    inline def setGetNodeById(value: js.Any => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
+    inline def setGetNodeById(value: Any => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
     
     inline def setGetNodeByIndex(value: Double => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeByIndex", js.Any.fromFunction1(value))
     

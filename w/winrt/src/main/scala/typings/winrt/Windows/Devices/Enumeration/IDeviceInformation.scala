@@ -22,7 +22,7 @@ trait IDeviceInformation extends StObject {
   
   var name: String
   
-  var properties: IMapView[String, js.Any]
+  var properties: IMapView[String, Any]
   
   def update(updateInfo: DeviceInformationUpdate): Unit
 }
@@ -36,7 +36,7 @@ object IDeviceInformation {
     isDefault: Boolean,
     isEnabled: Boolean,
     name: String,
-    properties: IMapView[String, js.Any],
+    properties: IMapView[String, Any],
     update: DeviceInformationUpdate => Unit
   ): IDeviceInformation = {
     val __obj = js.Dynamic.literal(enclosureLocation = enclosureLocation.asInstanceOf[js.Any], getGlyphThumbnailAsync = js.Any.fromFunction0(getGlyphThumbnailAsync), getThumbnailAsync = js.Any.fromFunction0(getThumbnailAsync), id = id.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
@@ -59,7 +59,7 @@ object IDeviceInformation {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setUpdate(value: DeviceInformationUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }

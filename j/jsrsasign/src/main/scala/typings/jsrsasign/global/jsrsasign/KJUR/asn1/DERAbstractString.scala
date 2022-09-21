@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERAbstractString")
 @js.native
-class DERAbstractString ()
+open class DERAbstractString ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERAbstractString {
   def this(params: HexParam) = this()
   def this(params: StringParam) = this()

@@ -10,13 +10,13 @@ object pickerViewDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/picker-view/demo/basic", JSImport.Default)
   @js.native
-  class default () extends PickerViewExample
+  open class default () extends PickerViewExample
   
   @js.native
   trait PickerViewExample
-    extends Component[js.Object, js.Object, js.Any] {
+    extends Component[js.Object, js.Object, Any] {
     
-    def onChange(value: js.Any): Unit = js.native
+    def onChange(value: Any): Unit = js.native
     
     @JSName("state")
     var state_PickerViewExample: ValueUndefined = js.native

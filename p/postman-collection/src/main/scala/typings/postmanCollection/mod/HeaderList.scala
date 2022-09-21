@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "HeaderList")
 @js.native
-class HeaderList protected () extends PropertyList[Header] {
-  def this(parent: js.Any, headers: js.Array[Header]) = this()
+open class HeaderList protected () extends PropertyList[Header] {
+  def this(parent: Any, headers: js.Array[Header]) = this()
   
   def contentSize(): Double = js.native
 }
@@ -18,5 +18,5 @@ object HeaderList {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isHeaderList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHeaderList(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

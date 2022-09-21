@@ -12,6 +12,7 @@ import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLCollection
 import typings.std.HTMLElement
+import typings.std.IterableIterator
 import typings.std.Node
 import typings.std.NodeList
 import typings.std.Record
@@ -28,7 +29,7 @@ object mod extends Shortcut {
   
   @JSImport("cash-dom", "Cash")
   @js.native
-  class Cash ()
+  open class Cash ()
     extends StObject
        with /* index */ NumberDictionary[js.UndefOr[EleLoose]]
        with _Selector {
@@ -69,10 +70,10 @@ object mod extends Shortcut {
     def css(prop: String, value: Double): this.type = js.native
     def css(props: Record[String, Double | String]): this.type = js.native
     
-    def data(): js.UndefOr[Record[String, js.Any]] = js.native
-    def data(datas: Record[String, js.Any]): this.type = js.native
-    def data(name: String): js.Any = js.native
-    def data(name: String, value: js.Any): this.type = js.native
+    def data(): js.UndefOr[Record[String, Any]] = js.native
+    def data(datas: Record[String, Any]): this.type = js.native
+    def data(name: String): Any = js.native
+    def data(name: String, value: Any): this.type = js.native
     
     def detach(): this.type = js.native
     def detach(comparator: Comparator): this.type = js.native
@@ -83,7 +84,7 @@ object mod extends Shortcut {
     
     def eq(index: Double): Cash = js.native
     
-    def extend(plugins: Record[js.Any, js.Any]): this.type = js.native
+    def extend(plugins: Record[Any, Any]): this.type = js.native
     
     def filter(): Cash = js.native
     def filter(comparator: Comparator): Cash = js.native
@@ -130,6 +131,9 @@ object mod extends Shortcut {
     def is(): Boolean = js.native
     def is(comparator: Comparator): Boolean = js.native
     
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[EleLoose]] = js.native
+    
     def last(): Cash = js.native
     
     var length: Double = js.native
@@ -167,33 +171,33 @@ object mod extends Shortcut {
     def offsetParent(): Cash = js.native
     
     def on(events: String, callback: EventCallback): this.type = js.native
-    def on(events: String, data: js.Any, callback: EventCallback): this.type = js.native
+    def on(events: String, data: Any, callback: EventCallback): this.type = js.native
     def on(events: String, selector: String, callback: EventCallback): this.type = js.native
-    def on(events: String, selector: String, data: js.Any, callback: EventCallback): this.type = js.native
-    def on(events: String, selector: String, data: js.Any, callback: EventCallback, _one: Boolean): this.type = js.native
-    def on(events: String, selector: Null, data: js.Any, callback: EventCallback): this.type = js.native
-    def on(events: String, selector: Null, data: js.Any, callback: EventCallback, _one: Boolean): this.type = js.native
-    def on(events: String, selector: Unit, data: js.Any, callback: EventCallback): this.type = js.native
-    def on(events: String, selector: Unit, data: js.Any, callback: EventCallback, _one: Boolean): this.type = js.native
+    def on(events: String, selector: String, data: Any, callback: EventCallback): this.type = js.native
+    def on(events: String, selector: String, data: Any, callback: EventCallback, _one: Boolean): this.type = js.native
+    def on(events: String, selector: Null, data: Any, callback: EventCallback): this.type = js.native
+    def on(events: String, selector: Null, data: Any, callback: EventCallback, _one: Boolean): this.type = js.native
+    def on(events: String, selector: Unit, data: Any, callback: EventCallback): this.type = js.native
+    def on(events: String, selector: Unit, data: Any, callback: EventCallback, _one: Boolean): this.type = js.native
     def on(events: Record[String, EventCallback]): this.type = js.native
-    def on(events: Record[String, EventCallback], data: js.Any): this.type = js.native
+    def on(events: Record[String, EventCallback], data: Any): this.type = js.native
     def on(events: Record[String, EventCallback], selector: String): this.type = js.native
-    def on(events: Record[String, EventCallback], selector: String, data: js.Any): this.type = js.native
-    def on(events: Record[String, EventCallback], selector: Null, data: js.Any): this.type = js.native
-    def on(events: Record[String, EventCallback], selector: Unit, data: js.Any): this.type = js.native
+    def on(events: Record[String, EventCallback], selector: String, data: Any): this.type = js.native
+    def on(events: Record[String, EventCallback], selector: Null, data: Any): this.type = js.native
+    def on(events: Record[String, EventCallback], selector: Unit, data: Any): this.type = js.native
     
     def one(events: String, callback: EventCallback): this.type = js.native
-    def one(events: String, data: js.Any, callback: EventCallback): this.type = js.native
+    def one(events: String, data: Any, callback: EventCallback): this.type = js.native
     def one(events: String, selector: String, callback: EventCallback): this.type = js.native
-    def one(events: String, selector: String, data: js.Any, callback: EventCallback): this.type = js.native
-    def one(events: String, selector: Null, data: js.Any, callback: EventCallback): this.type = js.native
-    def one(events: String, selector: Unit, data: js.Any, callback: EventCallback): this.type = js.native
+    def one(events: String, selector: String, data: Any, callback: EventCallback): this.type = js.native
+    def one(events: String, selector: Null, data: Any, callback: EventCallback): this.type = js.native
+    def one(events: String, selector: Unit, data: Any, callback: EventCallback): this.type = js.native
     def one(events: Record[String, EventCallback]): this.type = js.native
-    def one(events: Record[String, EventCallback], data: js.Any): this.type = js.native
+    def one(events: Record[String, EventCallback], data: Any): this.type = js.native
     def one(events: Record[String, EventCallback], selector: String): this.type = js.native
-    def one(events: Record[String, EventCallback], selector: String, data: js.Any): this.type = js.native
-    def one(events: Record[String, EventCallback], selector: Null, data: js.Any): this.type = js.native
-    def one(events: Record[String, EventCallback], selector: Unit, data: js.Any): this.type = js.native
+    def one(events: Record[String, EventCallback], selector: String, data: Any): this.type = js.native
+    def one(events: Record[String, EventCallback], selector: Null, data: Any): this.type = js.native
+    def one(events: Record[String, EventCallback], selector: Unit, data: Any): this.type = js.native
     
     def outerHeight(): Double = js.native
     def outerHeight(includeMargins: Boolean): Double = js.native
@@ -237,9 +241,9 @@ object mod extends Shortcut {
     def prevUntil(until: Comparator): Cash = js.native
     def prevUntil(until: Comparator, comparator: Comparator): Cash = js.native
     
-    def prop(prop: String): js.Any = js.native
-    def prop(prop: String, value: js.Any): this.type = js.native
-    def prop(props: Record[String, js.Any]): this.type = js.native
+    def prop(prop: String): Any = js.native
+    def prop(prop: String, value: Any): this.type = js.native
+    def prop(props: Record[String, Any]): this.type = js.native
     
     def ready(callback: js.Function): this.type = js.native
     
@@ -283,9 +287,9 @@ object mod extends Shortcut {
     def toggleClass(classes: String, force: Boolean): this.type = js.native
     
     def trigger(event: String): this.type = js.native
-    def trigger(event: String, data: js.Any): this.type = js.native
+    def trigger(event: String, data: Any): this.type = js.native
     def trigger(event: Event): this.type = js.native
-    def trigger(event: Event, data: js.Any): this.type = js.native
+    def trigger(event: Event, data: Any): this.type = js.native
     
     def unwrap(): this.type = js.native
     
@@ -313,25 +317,25 @@ object mod extends Shortcut {
     def each[T](arr: ArrayLike[T], callback: EachArrayCallback[T]): Unit = js.native
     def each[T](obj: PlainObject[T], callback: EachObjectCallback[T]): Unit = js.native
     
-    def extend(): js.Any = js.native
-    def extend(target: js.Any): (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) & CashStatic = js.native
-    def extend(target: js.Any, sources: js.Any*): js.Any = js.native
+    def extend(): Any = js.native
+    def extend(target: Any): (js.Function2[/* selector */ js.UndefOr[Selector], /* context */ js.UndefOr[Context | Cash], Cash]) & CashStatic = js.native
+    def extend(target: Any, sources: Any*): Any = js.native
     @JSName("extend")
-    def extend_true(deep: `true`, target: js.Any, sources: js.Any*): js.Any = js.native
+    def extend_true(deep: `true`, target: Any, sources: Any*): Any = js.native
     
     var fn: Cash = js.native
     
     var guid: Double = js.native
     
-    def isArray(x: js.Any): /* is std.Array<any> */ Boolean = js.native
+    def isArray(x: Any): /* is std.Array<any> */ Boolean = js.native
     
-    def isFunction(x: js.Any): /* is std.Function */ Boolean = js.native
+    def isFunction(x: Any): /* is std.Function */ Boolean = js.native
     
-    def isNumeric(x: js.Any): Boolean = js.native
+    def isNumeric(x: Any): Boolean = js.native
     
-    def isPlainObject(x: js.Any): /* is cash-dom.cash-dom.PlainObject<any> */ Boolean = js.native
+    def isPlainObject(x: Any): /* is cash-dom.cash-dom.PlainObject<any> */ Boolean = js.native
     
-    def isWindow(x: js.Any): /* is std.Window */ Boolean = js.native
+    def isWindow(x: Any): /* is std.Window */ Boolean = js.native
     
     def parseHTML(html: String): js.Array[EleLoose] = js.native
     
@@ -342,9 +346,9 @@ object mod extends Shortcut {
   
   type Context = Document | HTMLElement | Element
   
-  type EachArrayCallback[T] = js.ThisFunction2[/* this */ T, /* index */ Double, /* ele */ T, js.Any]
+  type EachArrayCallback[T] = js.ThisFunction2[/* this */ T, /* index */ Double, /* ele */ T, Any]
   
-  type EachObjectCallback[T] = js.ThisFunction2[/* this */ T, /* key */ String, /* value */ T, js.Any]
+  type EachObjectCallback[T] = js.ThisFunction2[/* this */ T, /* key */ String, /* value */ T, Any]
   
   type Ele = Window | Document | HTMLElement | Element | Node
   
@@ -354,11 +358,11 @@ object mod extends Shortcut {
        with HTMLElement {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -370,8 +374,6 @@ object mod extends Shortcut {
   
   trait Event extends StObject {
     
-    var ___cd: js.UndefOr[Boolean] = js.undefined
-    
     var ___iblur: js.UndefOr[Boolean] = js.undefined
     
     var ___ifocus: js.UndefOr[Boolean] = js.undefined
@@ -380,7 +382,7 @@ object mod extends Shortcut {
     
     var ___td: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.Any
+    var data: Any
     
     var namespace: String
     
@@ -388,14 +390,14 @@ object mod extends Shortcut {
   }
   object Event {
     
-    inline def apply(data: js.Any, namespace: String): Event = {
+    inline def apply(data: Any, namespace: String): Event = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
     extension [Self <: Event](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -404,10 +406,6 @@ object mod extends Shortcut {
       inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
       
       inline def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
-      
-      inline def set___cd(value: Boolean): Self = StObject.set(x, "___cd", value.asInstanceOf[js.Any])
-      
-      inline def set___cdUndefined: Self = StObject.set(x, "___cd", js.undefined)
       
       inline def set___iblur(value: Boolean): Self = StObject.set(x, "___iblur", value.asInstanceOf[js.Any])
       
@@ -430,8 +428,8 @@ object mod extends Shortcut {
   @js.native
   trait EventCallback extends StObject {
     
-    def apply(event: js.Any): js.Any = js.native
-    def apply(event: js.Any, data: js.Any): js.Any = js.native
+    def apply(event: Any): Any = js.native
+    def apply(event: Any, data: Any): Any = js.native
     
     var guid: js.UndefOr[Double] = js.native
   }

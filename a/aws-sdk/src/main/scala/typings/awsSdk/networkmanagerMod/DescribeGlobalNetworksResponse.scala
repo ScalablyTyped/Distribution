@@ -14,7 +14,7 @@ trait DescribeGlobalNetworksResponse extends StObject {
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.networkmanagerMod.NextToken] = js.undefined
 }
 object DescribeGlobalNetworksResponse {
   
@@ -29,9 +29,9 @@ object DescribeGlobalNetworksResponse {
     
     inline def setGlobalNetworksUndefined: Self = StObject.set(x, "GlobalNetworks", js.undefined)
     
-    inline def setGlobalNetworksVarargs(value: GlobalNetwork*): Self = StObject.set(x, "GlobalNetworks", js.Array(value :_*))
+    inline def setGlobalNetworksVarargs(value: GlobalNetwork*): Self = StObject.set(x, "GlobalNetworks", js.Array(value*))
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }

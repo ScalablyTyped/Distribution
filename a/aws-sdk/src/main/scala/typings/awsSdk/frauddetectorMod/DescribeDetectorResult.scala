@@ -47,7 +47,7 @@ object DescribeDetectorResult {
     
     inline def setDetectorVersionSummariesUndefined: Self = StObject.set(x, "detectorVersionSummaries", js.undefined)
     
-    inline def setDetectorVersionSummariesVarargs(value: DetectorVersionSummary*): Self = StObject.set(x, "detectorVersionSummaries", js.Array(value :_*))
+    inline def setDetectorVersionSummariesVarargs(value: DetectorVersionSummary*): Self = StObject.set(x, "detectorVersionSummaries", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

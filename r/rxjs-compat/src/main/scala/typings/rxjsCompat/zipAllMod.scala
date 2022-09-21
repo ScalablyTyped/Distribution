@@ -10,9 +10,9 @@ object zipAllMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def zipAll[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")().asInstanceOf[js.Any]
-  inline def zipAll[R](project: js.Function1[/* repeated */ js.Any, R]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(project.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def zipAll[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")().asInstanceOf[Any]
+  inline def zipAll[R](project: js.Function1[/* repeated */ Any, R]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(project.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def zipAll_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")().asInstanceOf[js.Any]
-  inline def zipAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(project.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def zipAll_TR[T, R](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")().asInstanceOf[Any]
+  inline def zipAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(project.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ASN1Subject extends StObject {
   
   /**
-    * Fully qualified domain name (FQDN) associated with the certificate subject.
+    * For CA and end-entity certificates in a private PKI, the common name (CN) can be any string within the length limit.  Note: In publicly trusted certificates, the common name must be a fully qualified domain name (FQDN) associated with the certificate subject.
     */
   var CommonName: js.UndefOr[String64] = js.undefined
   
@@ -15,6 +15,11 @@ trait ASN1Subject extends StObject {
     * Two-digit code that specifies the country in which the certificate subject located.
     */
   var Country: js.UndefOr[CountryCodeString] = js.undefined
+  
+  /**
+    *  Contains a sequence of one or more X.500 relative distinguished names (RDNs), each of which consists of an object identifier (OID) and a value. For more information, see NIST’s definition of Object Identifier (OID).  Custom attributes cannot be used in combination with standard attributes. 
+    */
+  var CustomAttributes: js.UndefOr[CustomAttributeList] = js.undefined
   
   /**
     * Disambiguating information for the certificate subject.
@@ -32,7 +37,7 @@ trait ASN1Subject extends StObject {
   var GivenName: js.UndefOr[String16] = js.undefined
   
   /**
-    * Concatenation that typically contains the first letter of the GivenName, the first letter of the middle name if one exists, and the first letter of the SurName.
+    * Concatenation that typically contains the first letter of the GivenName, the first letter of the middle name if one exists, and the first letter of the Surname.
     */
   var Initials: js.UndefOr[String5] = js.undefined
   
@@ -92,6 +97,12 @@ object ASN1Subject {
     inline def setCountry(value: CountryCodeString): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
+    
+    inline def setCustomAttributes(value: CustomAttributeList): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setCustomAttributesUndefined: Self = StObject.set(x, "CustomAttributes", js.undefined)
+    
+    inline def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "CustomAttributes", js.Array(value*))
     
     inline def setDistinguishedNameQualifier(value: ASN1PrintableString64): Self = StObject.set(x, "DistinguishedNameQualifier", value.asInstanceOf[js.Any])
     

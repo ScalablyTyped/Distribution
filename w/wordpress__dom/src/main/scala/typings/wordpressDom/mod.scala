@@ -3,12 +3,10 @@ package typings.wordpressDom
 import typings.std.DOMRect
 import typings.std.Element
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -17,15 +15,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -38,7 +32,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -49,7 +42,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -61,10 +53,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -82,14 +73,12 @@ import typings.wordpressDom.wordpressDomStrings.`var`
 import typings.wordpressDom.wordpressDomStrings.a
 import typings.wordpressDom.wordpressDomStrings.abbr
 import typings.wordpressDom.wordpressDomStrings.address
-import typings.wordpressDom.wordpressDomStrings.applet
 import typings.wordpressDom.wordpressDomStrings.area
 import typings.wordpressDom.wordpressDomStrings.article
 import typings.wordpressDom.wordpressDomStrings.aside
 import typings.wordpressDom.wordpressDomStrings.audio
 import typings.wordpressDom.wordpressDomStrings.b
 import typings.wordpressDom.wordpressDomStrings.base
-import typings.wordpressDom.wordpressDomStrings.basefont
 import typings.wordpressDom.wordpressDomStrings.bdi
 import typings.wordpressDom.wordpressDomStrings.bdo
 import typings.wordpressDom.wordpressDomStrings.blockquote
@@ -109,7 +98,6 @@ import typings.wordpressDom.wordpressDomStrings.del
 import typings.wordpressDom.wordpressDomStrings.details
 import typings.wordpressDom.wordpressDomStrings.dfn
 import typings.wordpressDom.wordpressDomStrings.dialog
-import typings.wordpressDom.wordpressDomStrings.dir
 import typings.wordpressDom.wordpressDomStrings.div
 import typings.wordpressDom.wordpressDomStrings.dl
 import typings.wordpressDom.wordpressDomStrings.dt
@@ -118,11 +106,8 @@ import typings.wordpressDom.wordpressDomStrings.embed
 import typings.wordpressDom.wordpressDomStrings.fieldset
 import typings.wordpressDom.wordpressDomStrings.figcaption
 import typings.wordpressDom.wordpressDomStrings.figure
-import typings.wordpressDom.wordpressDomStrings.font
 import typings.wordpressDom.wordpressDomStrings.footer
 import typings.wordpressDom.wordpressDomStrings.form
-import typings.wordpressDom.wordpressDomStrings.frame
-import typings.wordpressDom.wordpressDomStrings.frameset
 import typings.wordpressDom.wordpressDomStrings.h1
 import typings.wordpressDom.wordpressDomStrings.h2
 import typings.wordpressDom.wordpressDomStrings.h3
@@ -147,7 +132,6 @@ import typings.wordpressDom.wordpressDomStrings.link
 import typings.wordpressDom.wordpressDomStrings.main
 import typings.wordpressDom.wordpressDomStrings.map
 import typings.wordpressDom.wordpressDomStrings.mark
-import typings.wordpressDom.wordpressDomStrings.marquee
 import typings.wordpressDom.wordpressDomStrings.menu
 import typings.wordpressDom.wordpressDomStrings.meta
 import typings.wordpressDom.wordpressDomStrings.meter
@@ -158,7 +142,6 @@ import typings.wordpressDom.wordpressDomStrings.optgroup
 import typings.wordpressDom.wordpressDomStrings.option
 import typings.wordpressDom.wordpressDomStrings.output
 import typings.wordpressDom.wordpressDomStrings.p
-import typings.wordpressDom.wordpressDomStrings.param
 import typings.wordpressDom.wordpressDomStrings.picture
 import typings.wordpressDom.wordpressDomStrings.pre
 import typings.wordpressDom.wordpressDomStrings.progress
@@ -265,8 +248,6 @@ object mod {
   
   inline def replaceTag_address(node: Node, tagName: address): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  inline def replaceTag_applet(node: Node, tagName: applet): HTMLAppletElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLAppletElement]
-  
   inline def replaceTag_area(node: Node, tagName: area): HTMLAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLAreaElement]
   
   inline def replaceTag_article(node: Node, tagName: article): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
@@ -278,8 +259,6 @@ object mod {
   inline def replaceTag_b(node: Node, tagName: b): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   inline def replaceTag_base(node: Node, tagName: base): HTMLBaseElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseElement]
-  
-  inline def replaceTag_basefont(node: Node, tagName: basefont): HTMLBaseFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseFontElement]
   
   inline def replaceTag_bdi(node: Node, tagName: bdi): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
@@ -319,8 +298,6 @@ object mod {
   
   inline def replaceTag_dialog(node: Node, tagName: dialog): HTMLDialogElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLDialogElement]
   
-  inline def replaceTag_dir(node: Node, tagName: dir): HTMLDirectoryElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLDirectoryElement]
-  
   inline def replaceTag_div(node: Node, tagName: div): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
   
   inline def replaceTag_dl(node: Node, tagName: dl): HTMLDListElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLDListElement]
@@ -337,15 +314,9 @@ object mod {
   
   inline def replaceTag_figure(node: Node, tagName: figure): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  inline def replaceTag_font(node: Node, tagName: font): HTMLFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLFontElement]
-  
   inline def replaceTag_footer(node: Node, tagName: footer): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   inline def replaceTag_form(node: Node, tagName: form): HTMLFormElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLFormElement]
-  
-  inline def replaceTag_frame(node: Node, tagName: frame): HTMLFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameElement]
-  
-  inline def replaceTag_frameset(node: Node, tagName: frameset): HTMLFrameSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameSetElement]
   
   inline def replaceTag_h1(node: Node, tagName: h1): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
   
@@ -395,8 +366,6 @@ object mod {
   
   inline def replaceTag_mark(node: Node, tagName: mark): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  inline def replaceTag_marquee(node: Node, tagName: marquee): HTMLMarqueeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLMarqueeElement]
-  
   inline def replaceTag_menu(node: Node, tagName: menu): HTMLMenuElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLMenuElement]
   
   inline def replaceTag_meta(node: Node, tagName: meta): HTMLMetaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLMetaElement]
@@ -418,8 +387,6 @@ object mod {
   inline def replaceTag_output(node: Node, tagName: output): HTMLOutputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLOutputElement]
   
   inline def replaceTag_p(node: Node, tagName: p): HTMLParagraphElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLParagraphElement]
-  
-  inline def replaceTag_param(node: Node, tagName: param): HTMLParamElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLParamElement]
   
   inline def replaceTag_picture(node: Node, tagName: picture): HTMLPictureElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLPictureElement]
   
@@ -467,7 +434,7 @@ object mod {
   
   inline def replaceTag_tbody(node: Node, tagName: tbody): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
   
-  inline def replaceTag_td(node: Node, tagName: td): HTMLTableDataCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLTableDataCellElement]
+  inline def replaceTag_td(node: Node, tagName: td): HTMLTableCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCellElement]
   
   inline def replaceTag_template(node: Node, tagName: template): HTMLTemplateElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLTemplateElement]
   
@@ -475,7 +442,7 @@ object mod {
   
   inline def replaceTag_tfoot(node: Node, tagName: tfoot): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
   
-  inline def replaceTag_th(node: Node, tagName: th): HTMLTableHeaderCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLTableHeaderCellElement]
+  inline def replaceTag_th(node: Node, tagName: th): HTMLTableCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCellElement]
   
   inline def replaceTag_thead(node: Node, tagName: thead): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceTag")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
   

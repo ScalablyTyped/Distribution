@@ -11,7 +11,7 @@ trait SmartArt extends StObject {
   @JSName("AllNodes")
   val AllNodes_Original: SmartArtNodes
   
-  val Application: js.Any
+  val Application: Any
   
   var Color: SmartArtColor
   
@@ -27,7 +27,7 @@ trait SmartArt extends StObject {
   /* private */ @JSName("Office.SmartArt_typekey")
   var OfficeDotSmartArt_typekey: SmartArt
   
-  val Parent: js.Any
+  val Parent: Any
   
   var QuickStyle: SmartArtQuickStyle
   
@@ -39,13 +39,13 @@ object SmartArt {
   
   inline def apply(
     AllNodes: SmartArtNodes,
-    Application: js.Any,
+    Application: Any,
     Color: SmartArtColor,
     Creator: Double,
     Layout: SmartArtLayout,
     Nodes: SmartArtNodes,
     OfficeDotSmartArt_typekey: SmartArt,
-    Parent: js.Any,
+    Parent: Any,
     QuickStyle: SmartArtQuickStyle,
     Reset: () => Unit,
     Reverse: MsoTriState
@@ -59,7 +59,7 @@ object SmartArt {
     
     inline def setAllNodes(value: SmartArtNodes): Self = StObject.set(x, "AllNodes", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setColor(value: SmartArtColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object SmartArt {
     
     inline def setOfficeDotSmartArt_typekey(value: SmartArt): Self = StObject.set(x, "Office.SmartArt_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setQuickStyle(value: SmartArtQuickStyle): Self = StObject.set(x, "QuickStyle", value.asInstanceOf[js.Any])
     

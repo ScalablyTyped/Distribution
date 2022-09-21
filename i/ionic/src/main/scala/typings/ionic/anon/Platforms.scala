@@ -9,11 +9,11 @@ trait Platforms extends StObject {
   
   var platforms: js.Array[String]
   
-  var plugins: StringDictionary[js.Any]
+  var plugins: StringDictionary[Any]
 }
 object Platforms {
   
-  inline def apply(platforms: js.Array[String], plugins: StringDictionary[js.Any]): Platforms = {
+  inline def apply(platforms: js.Array[String], plugins: StringDictionary[Any]): Platforms = {
     val __obj = js.Dynamic.literal(platforms = platforms.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Platforms]
   }
@@ -22,8 +22,8 @@ object Platforms {
     
     inline def setPlatforms(value: js.Array[String]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
-    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value*))
     
-    inline def setPlugins(value: StringDictionary[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: StringDictionary[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
   }
 }

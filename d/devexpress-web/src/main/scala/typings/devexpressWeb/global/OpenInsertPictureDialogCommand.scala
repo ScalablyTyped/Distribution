@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenInsertPictureDialogCommand")
 @js.native
-class OpenInsertPictureDialogCommand ()
+open class OpenInsertPictureDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenInsertPictureDialogCommand {
   

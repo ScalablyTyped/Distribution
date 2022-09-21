@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.FileDialog")
 @js.native
-/* private */ class FileDialog ()
+/* private */ open class FileDialog ()
   extends StObject
      with typings.activexOffice.Office.FileDialog {
   
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var AllowMultiSelect: Boolean = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var ButtonName: String = js.native
@@ -55,7 +55,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotFileDialog_typekey: typings.activexOffice.Office.FileDialog = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def SelectedItems(Index: Double): String = js.native

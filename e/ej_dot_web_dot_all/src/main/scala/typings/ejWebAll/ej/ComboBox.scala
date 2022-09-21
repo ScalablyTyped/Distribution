@@ -30,7 +30,7 @@ trait ComboBox
   /** Gets the data object that matches the given value.
     * @returns {any}
     */
-  def getDataByValue(): js.Any = js.native
+  def getDataByValue(): Any = js.native
   
   /** Gets all the list items bound on this component.
     * @returns {Element[]}
@@ -85,7 +85,7 @@ object ComboBox {
     
     /** returns the ComboBox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -104,7 +104,7 @@ object ComboBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -122,11 +122,11 @@ object ComboBox {
     
     /** Returns the query for data retrieval from the Database
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -145,11 +145,11 @@ object ComboBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -167,11 +167,11 @@ object ComboBox {
     
     /** Returns the error message
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** returns the Autocomplete model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -190,11 +190,11 @@ object ComboBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -208,7 +208,7 @@ object ComboBox {
     
     /** Li element of the selected item.
       */
-    var Item: js.UndefOr[js.Any] = js.undefined
+    var Item: js.UndefOr[Any] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
@@ -216,7 +216,7 @@ object ComboBox {
     
     /** Event argument.
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** value of the interaction
       */
@@ -247,7 +247,7 @@ object ComboBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
@@ -255,7 +255,7 @@ object ComboBox {
       
       inline def setIsInteractedUndefined: Self = StObject.set(x, "isInteracted", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
@@ -277,7 +277,7 @@ object ComboBox {
     
     /** Element of the combobox popup list
       */
-    var popup: js.UndefOr[js.Any] = js.undefined
+    var popup: js.UndefOr[Any] = js.undefined
   }
   object CloseEventArgs {
     
@@ -288,7 +288,7 @@ object ComboBox {
     
     extension [Self <: CloseEventArgs](x: Self) {
       
-      inline def setPopup(value: js.Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+      inline def setPopup(value: Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
       inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     }
@@ -433,7 +433,7 @@ object ComboBox {
     
     /** Function used to update the filtering value.
       */
-    var updateData: js.UndefOr[js.Any] = js.undefined
+    var updateData: js.UndefOr[Any] = js.undefined
   }
   object FilteringEventArgs {
     
@@ -456,7 +456,7 @@ object ComboBox {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setUpdateData(value: js.Any): Self = StObject.set(x, "updateData", value.asInstanceOf[js.Any])
+      inline def setUpdateData(value: Any): Self = StObject.set(x, "updateData", value.asInstanceOf[js.Any])
       
       inline def setUpdateDataUndefined: Self = StObject.set(x, "updateData", js.undefined)
     }
@@ -558,7 +558,7 @@ object ComboBox {
     /** Accepts the list items either through local or remote service and binds it to the component. It can be an array of JSON objects or an instance of DataManager.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** When set to true, enables RTL mode of the component that displays the content in the right-to-left direction.
       * @Default {false}
@@ -600,7 +600,7 @@ object ComboBox {
     /** Allows additional HTML attributes such as title, name, etc., and accepts n number of attributes in a key-value pair format.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets the index of the selected item in the component.
       * @Default {null}
@@ -737,11 +737,11 @@ object ComboBox {
       
       inline def setCustomValueSpecifierUndefined: Self = StObject.set(x, "customValueSpecifier", js.undefined)
       
-      inline def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any | js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setEnableRtl(value: Boolean): Self = StObject.set(x, "enableRtl", value.asInstanceOf[js.Any])
       
@@ -775,7 +775,7 @@ object ComboBox {
       
       inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -849,7 +849,7 @@ object ComboBox {
     
     /** Element of the combobox popup list
       */
-    var popup: js.UndefOr[js.Any] = js.undefined
+    var popup: js.UndefOr[Any] = js.undefined
   }
   object OpenEventArgs {
     
@@ -860,7 +860,7 @@ object ComboBox {
     
     extension [Self <: OpenEventArgs](x: Self) {
       
-      inline def setPopup(value: js.Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+      inline def setPopup(value: Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
       inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     }
@@ -870,7 +870,7 @@ object ComboBox {
     
     /** Li element of the selected item.
       */
-    var Item: js.UndefOr[js.Any] = js.undefined
+    var Item: js.UndefOr[Any] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
@@ -878,7 +878,7 @@ object ComboBox {
     
     /** Event argument.
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** value of the interaction
       */
@@ -917,7 +917,7 @@ object ComboBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
@@ -925,7 +925,7 @@ object ComboBox {
       
       inline def setIsInteractedUndefined: Self = StObject.set(x, "isInteracted", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
       inline def setItemData(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       

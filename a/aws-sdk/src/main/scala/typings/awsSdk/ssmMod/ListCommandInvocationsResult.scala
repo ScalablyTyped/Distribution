@@ -29,7 +29,7 @@ object ListCommandInvocationsResult {
     
     inline def setCommandInvocationsUndefined: Self = StObject.set(x, "CommandInvocations", js.undefined)
     
-    inline def setCommandInvocationsVarargs(value: CommandInvocation*): Self = StObject.set(x, "CommandInvocations", js.Array(value :_*))
+    inline def setCommandInvocationsVarargs(value: CommandInvocation*): Self = StObject.set(x, "CommandInvocations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

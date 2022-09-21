@@ -14,7 +14,7 @@ trait DescribeLocationSmbResponse extends StObject {
   /**
     * The time that the SMB location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the Windows domain that the SMB server belongs to.
@@ -27,7 +27,7 @@ trait DescribeLocationSmbResponse extends StObject {
   var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
-    * The URL of the source SBM location that was described.
+    * The URL of the source SMB location that was described.
     */
   var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
   
@@ -54,9 +54,9 @@ object DescribeLocationSmbResponse {
     
     inline def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
-    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
+    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value*))
     
-    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

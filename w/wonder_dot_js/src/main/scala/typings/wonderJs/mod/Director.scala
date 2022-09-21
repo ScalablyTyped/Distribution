@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Director")
 @js.native
-class Director ()
+open class Director ()
   extends typings.wonderJs.directorMod.Director
 /* static members */
 object Director {
@@ -15,5 +15,5 @@ object Director {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

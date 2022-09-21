@@ -23,6 +23,6 @@ object SetRequestInterceptionRequest {
     
     inline def setPatterns(value: js.Array[RequestPattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    inline def setPatternsVarargs(value: RequestPattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: RequestPattern*): Self = StObject.set(x, "patterns", js.Array(value*))
   }
 }

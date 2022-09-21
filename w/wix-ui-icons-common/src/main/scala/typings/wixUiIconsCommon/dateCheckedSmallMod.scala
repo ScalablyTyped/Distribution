@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object dateCheckedSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/DateCheckedSmall", JSImport.Default)
   @js.native
-  val default: SFC[DateCheckedSmallProps] = js.native
+  val default: FC[DateCheckedSmallProps] = js.native
   
   trait DateCheckedSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object DateCheckedSmallProps {
     
@@ -29,14 +29,14 @@ object dateCheckedSmallMod extends Shortcut {
     
     extension [Self <: DateCheckedSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[DateCheckedSmallProps]
+  type _To = FC[DateCheckedSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `dateCheckedSmallMod.foo` */
-  override def _to: SFC[DateCheckedSmallProps] = default
+  override def _to: FC[DateCheckedSmallProps] = default
 }

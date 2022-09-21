@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object assertMod {
   
-  @JSImport("puppeteer-core/lib/cjs/puppeteer/common/assert", JSImport.Namespace)
+  @JSImport("puppeteer-core/lib/cjs/puppeteer/util/assert", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assert(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def assert(value: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(value: Any): /* asserts value */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value */ Boolean]
+  inline def assert(value: Any, message: String): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
 }

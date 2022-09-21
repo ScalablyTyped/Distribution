@@ -8,19 +8,19 @@ object PageState {
   
   @JSGlobal("SP.Ribbon.PageState.Handlers")
   @js.native
-  class Handlers ()
+  open class Handlers ()
     extends StObject
        with typings.sharepoint.SP.Ribbon.PageState.Handlers
   
   @JSGlobal("SP.Ribbon.PageState.PageStateCommands")
   @js.native
-  class PageStateCommands ()
+  open class PageStateCommands ()
     extends StObject
        with typings.sharepoint.SP.Ribbon.PageState.PageStateCommands
   
   @JSGlobal("SP.Ribbon.PageState.PageStateHandler")
   @js.native
-  class PageStateHandler ()
+  open class PageStateHandler ()
     extends StObject
        with typings.sharepoint.SP.Ribbon.PageState.PageStateHandler {
     
@@ -37,7 +37,7 @@ object PageState {
     override def getId(): String = js.native
     
     /* CompleteClass */
-    override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+    override def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean = js.native
     
     /* CompleteClass */
     override def init(): Unit = js.native
@@ -54,13 +54,13 @@ object PageState {
   
   @JSGlobal("SP.Ribbon.PageState.PageStateStrings")
   @js.native
-  class PageStateStrings ()
+  open class PageStateStrings ()
     extends StObject
        with typings.sharepoint.SP.Ribbon.PageState.PageStateStrings
   
   @JSGlobal("SP.Ribbon.PageState.StateChangeDialogHandler")
   @js.native
-  class StateChangeDialogHandler ()
+  open class StateChangeDialogHandler ()
     extends StObject
        with typings.sharepoint.SP.Ribbon.PageState.StateChangeDialogHandler
 }

@@ -22,7 +22,7 @@ trait ExecutionRequest extends StObject {
     * The parameters to be passed to the function being executed. The object type for each parameter should match the expected type in Apps Script. Parameters cannot be Apps
     * Script-specific object types (such as a `Document` or a `Calendar`); they can only be primitive types such as `string`, `number`, `array`, `object`, or `boolean`. Optional.
     */
-  var parameters: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var parameters: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * *Deprecated*. For use with Android add-ons only. An ID that represents the user's current session in the Android app for Google Docs or Sheets, included as extra data in the
@@ -49,11 +49,11 @@ object ExecutionRequest {
     
     inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Any*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setSessionState(value: String): Self = StObject.set(x, "sessionState", value.asInstanceOf[js.Any])
     

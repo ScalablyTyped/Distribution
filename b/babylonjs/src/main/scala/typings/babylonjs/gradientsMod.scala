@@ -10,7 +10,7 @@ object gradientsMod {
   
   @JSImport("babylonjs/Misc/gradients", "Color3Gradient")
   @js.native
-  class Color3Gradient protected ()
+  open class Color3Gradient protected ()
     extends StObject
        with IValueGradient {
     /**
@@ -43,7 +43,7 @@ object gradientsMod {
   
   @JSImport("babylonjs/Misc/gradients", "ColorGradient")
   @js.native
-  class ColorGradient protected ()
+  open class ColorGradient protected ()
     extends StObject
        with IValueGradient {
     /**
@@ -103,7 +103,7 @@ object gradientsMod {
   
   @JSImport("babylonjs/Misc/gradients", "FactorGradient")
   @js.native
-  class FactorGradient protected ()
+  open class FactorGradient protected ()
     extends StObject
        with IValueGradient {
     /**
@@ -163,7 +163,7 @@ object gradientsMod {
   
   @JSImport("babylonjs/Misc/gradients", "GradientHelper")
   @js.native
-  class GradientHelper () extends StObject
+  open class GradientHelper () extends StObject
   /* static members */
   object GradientHelper {
     

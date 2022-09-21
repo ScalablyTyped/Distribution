@@ -10,6 +10,8 @@ trait StringNumber
   extends StObject
      with Modifier {
   
+  var radius: Double = js.native
+  
   def setDashed(dashed: Boolean): StringNumber = js.native
   
   def setLastNote(note: StemmableNote): StringNumber = js.native

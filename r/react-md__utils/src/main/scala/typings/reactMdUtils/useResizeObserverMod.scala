@@ -2,7 +2,6 @@ package typings.reactMdUtils
 
 import typings.react.mod.Ref
 import typings.reactMdUtils.useEnsuredRefMod.EnsuredRefs
-import typings.reactMdUtils.useResizeObserverV1Mod.UseResizeObserverV1Options
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,6 @@ object useResizeObserverMod {
   
   inline def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E]): EnsuredRefs[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any]).asInstanceOf[EnsuredRefs[E]]
   inline def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E], options: UseResizeObserverOptions[E]): EnsuredRefs[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EnsuredRefs[E]]
-  inline def useResizeObserver[E /* <: HTMLElement */](options: UseResizeObserverV1Options[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type OnResizeObserverChange[E /* <: HTMLElement */] = js.Function1[/* resizeData */ ResizeObserverElementData[E], Unit]
   

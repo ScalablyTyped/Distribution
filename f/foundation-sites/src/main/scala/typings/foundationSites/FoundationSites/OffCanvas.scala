@@ -13,8 +13,6 @@ trait OffCanvas extends StObject {
   def close(): Unit = js.native
   def close(cb: js.Function): Unit = js.native
   
-  def destroy(): Unit = js.native
-  
   def open(event: Event, trigger: JQuery): Unit = js.native
   
   def reveal(isRevealed: Boolean): Unit = js.native

@@ -14,9 +14,9 @@ import typings.reactSortablePane.anon.PageX
 import typings.reactSortablePane.paneMod.PaneProps
 import typings.reactSortablePane.reactSortablePaneStrings.horizontal
 import typings.reactSortablePane.reactSortablePaneStrings.vertical
-import typings.resizeObserverPolyfill.mod.global.ResizeObserver
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.ResizeObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,14 +25,14 @@ object mod {
   
   @JSImport("react-sortable-pane", "Pane")
   @js.native
-  class Pane protected ()
+  open class Pane protected ()
     extends typings.reactSortablePane.paneMod.Pane {
     def this(props: PaneProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PaneProps, context: js.Any) = this()
+    def this(props: PaneProps, context: Any) = this()
   }
   /* static members */
   object Pane {
@@ -49,8 +49,7 @@ object mod {
   
   @JSImport("react-sortable-pane", "SortablePane")
   @js.native
-  class SortablePane protected ()
-    extends Component[SortablePaneProps, State, js.Any] {
+  open class SortablePane protected () extends Component[SortablePaneProps, State, Any] {
     def this(props: SortablePaneProps) = this()
     
     def addPane(): Unit = js.native
@@ -116,25 +115,25 @@ object mod {
     def handleResizeStart(
       i: Double,
       e: MouseEvent[HTMLElement, NativeMouseEvent],
-      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any
+      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ Any
     ): Unit = js.native
     def handleResizeStart(
       i: Double,
       e: TouchEvent[HTMLElement],
-      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any
+      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ Any
     ): Unit = js.native
     
     def handleResizeStop(
       i: Double,
       e: typings.std.MouseEvent,
-      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any,
+      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ Any,
       elementRef: HTMLElement,
       delta: PaneSize
     ): Unit = js.native
     def handleResizeStop(
       i: Double,
       e: typings.std.TouchEvent,
-      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any,
+      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ Any,
       elementRef: HTMLElement,
       delta: PaneSize
     ): Unit = js.native
@@ -148,14 +147,14 @@ object mod {
     def onResize(
       i: Double,
       e: typings.std.MouseEvent,
-      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any,
+      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ Any,
       elementRef: HTMLElement,
       delta: PaneSize
     ): Unit = js.native
     def onResize(
       i: Double,
       e: typings.std.TouchEvent,
-      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ js.Any,
+      dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizableDirection */ Any,
       elementRef: HTMLElement,
       delta: PaneSize
     ): Unit = js.native
@@ -410,7 +409,7 @@ object mod {
       
       inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -420,7 +419,7 @@ object mod {
       
       inline def setDefaultOrderUndefined: Self = StObject.set(x, "defaultOrder", js.undefined)
       
-      inline def setDefaultOrderVarargs(value: String*): Self = StObject.set(x, "defaultOrder", js.Array(value :_*))
+      inline def setDefaultOrderVarargs(value: String*): Self = StObject.set(x, "defaultOrder", js.Array(value*))
       
       inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -480,7 +479,7 @@ object mod {
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value*))
       
       inline def setSpringConfig(value: SpringHelperConfig): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
       
@@ -534,7 +533,7 @@ object mod {
       
       inline def setPanes(value: js.Array[PaneProperty]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
       
-      inline def setPanesVarargs(value: PaneProperty*): Self = StObject.set(x, "panes", js.Array(value :_*))
+      inline def setPanesVarargs(value: PaneProperty*): Self = StObject.set(x, "panes", js.Array(value*))
     }
   }
   

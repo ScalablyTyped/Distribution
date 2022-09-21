@@ -10,7 +10,7 @@ trait ListCreationInformation
   
   def get_customSchemaXml(): String
   
-  def get_dataSourceProperties(): js.Any
+  def get_dataSourceProperties(): Any
   
   def get_description(): String
   
@@ -28,7 +28,7 @@ trait ListCreationInformation
   
   def set_customSchemaXml(value: String): Unit
   
-  def set_dataSourceProperties(value: js.Any): Unit
+  def set_dataSourceProperties(value: Any): Unit
   
   def set_description(value: String): Unit
   
@@ -47,11 +47,11 @@ trait ListCreationInformation
 object ListCreationInformation {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_customSchemaXml: () => String,
-    get_dataSourceProperties: () => js.Any,
+    get_dataSourceProperties: () => Any,
     get_description: () => String,
     get_documentTemplateType: () => Double,
     get_quickLaunchOption: () => QuickLaunchOptions,
@@ -61,7 +61,7 @@ object ListCreationInformation {
     get_typeId: () => String,
     get_url: () => String,
     set_customSchemaXml: String => Unit,
-    set_dataSourceProperties: js.Any => Unit,
+    set_dataSourceProperties: Any => Unit,
     set_description: String => Unit,
     set_documentTemplateType: Double => Unit,
     set_quickLaunchOption: QuickLaunchOptions => Unit,
@@ -79,7 +79,7 @@ object ListCreationInformation {
     
     inline def setGet_customSchemaXml(value: () => String): Self = StObject.set(x, "get_customSchemaXml", js.Any.fromFunction0(value))
     
-    inline def setGet_dataSourceProperties(value: () => js.Any): Self = StObject.set(x, "get_dataSourceProperties", js.Any.fromFunction0(value))
+    inline def setGet_dataSourceProperties(value: () => Any): Self = StObject.set(x, "get_dataSourceProperties", js.Any.fromFunction0(value))
     
     inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
@@ -97,7 +97,7 @@ object ListCreationInformation {
     
     inline def setSet_customSchemaXml(value: String => Unit): Self = StObject.set(x, "set_customSchemaXml", js.Any.fromFunction1(value))
     
-    inline def setSet_dataSourceProperties(value: js.Any => Unit): Self = StObject.set(x, "set_dataSourceProperties", js.Any.fromFunction1(value))
+    inline def setSet_dataSourceProperties(value: Any => Unit): Self = StObject.set(x, "set_dataSourceProperties", js.Any.fromFunction1(value))
     
     inline def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     

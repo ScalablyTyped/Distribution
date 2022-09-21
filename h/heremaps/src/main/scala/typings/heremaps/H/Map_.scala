@@ -136,7 +136,7 @@ trait Map_
     * @param callback {function}
     * @returns {?H.map.Object} - the encountered top most map object or null if no object found
     */
-  def getObjectAt(x: Double, y: Double, callback: js.Function1[/* obj */ Object, js.Any]): Object = js.native
+  def getObjectAt(x: Double, y: Double, callback: js.Function1[/* obj */ Object, Any]): Object = js.native
   
   /**
     * This method retrieves the list of all objects which have been added to the map.
@@ -492,7 +492,7 @@ object Map_ {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       

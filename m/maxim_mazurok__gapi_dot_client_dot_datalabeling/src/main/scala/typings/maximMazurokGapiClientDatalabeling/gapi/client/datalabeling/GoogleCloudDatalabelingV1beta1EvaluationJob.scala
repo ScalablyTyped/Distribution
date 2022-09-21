@@ -68,7 +68,7 @@ object GoogleCloudDatalabelingV1beta1EvaluationJob {
     
     inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
     
-    inline def setAttemptsVarargs(value: GoogleCloudDatalabelingV1beta1Attempt*): Self = StObject.set(x, "attempts", js.Array(value :_*))
+    inline def setAttemptsVarargs(value: GoogleCloudDatalabelingV1beta1Attempt*): Self = StObject.set(x, "attempts", js.Array(value*))
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

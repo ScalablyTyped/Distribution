@@ -14,11 +14,11 @@ object motionMod {
   
   @JSImport("rc-motion/es/util/motion", "animationEndName")
   @js.native
-  val animationEndName: js.Any = js.native
+  val animationEndName: Any = js.native
   
-  inline def getTransitionName(transitionName: MotionName, transitionType: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionName")(transitionName.asInstanceOf[js.Any], transitionType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getTransitionName(transitionName: MotionName, transitionType: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionName")(transitionName.asInstanceOf[js.Any], transitionType.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getVendorPrefixedEventName(eventName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorPrefixedEventName")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getVendorPrefixedEventName(eventName: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorPrefixedEventName")(eventName.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def getVendorPrefixes(domSupport: Boolean, win: js.Object): Animationend = (^.asInstanceOf[js.Dynamic].applyDynamic("getVendorPrefixes")(domSupport.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[Animationend]
   
@@ -28,5 +28,5 @@ object motionMod {
   
   @JSImport("rc-motion/es/util/motion", "transitionEndName")
   @js.native
-  val transitionEndName: js.Any = js.native
+  val transitionEndName: Any = js.native
 }

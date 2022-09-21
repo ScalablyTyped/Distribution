@@ -47,12 +47,12 @@ object DescribeRegionsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setRegionNames(value: RegionNameStringList): Self = StObject.set(x, "RegionNames", value.asInstanceOf[js.Any])
     
     inline def setRegionNamesUndefined: Self = StObject.set(x, "RegionNames", js.undefined)
     
-    inline def setRegionNamesVarargs(value: String*): Self = StObject.set(x, "RegionNames", js.Array(value :_*))
+    inline def setRegionNamesVarargs(value: String*): Self = StObject.set(x, "RegionNames", js.Array(value*))
   }
 }

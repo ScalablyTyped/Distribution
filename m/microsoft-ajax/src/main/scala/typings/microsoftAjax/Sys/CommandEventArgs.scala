@@ -16,7 +16,7 @@ trait CommandEventArgs
   /**
     * Gets a value that represents the command argument.
     */
-  def get_commandArgument(): js.Any
+  def get_commandArgument(): Any
   
   //#endregion
   //#region Properties
@@ -28,15 +28,15 @@ trait CommandEventArgs
   /**
     * Gets a value that represents the command source.
     */
-  def get_commandSource(): js.Any
+  def get_commandSource(): Any
 }
 object CommandEventArgs {
   
   inline def apply(
     Empty: EventArgs,
-    get_commandArgument: () => js.Any,
+    get_commandArgument: () => Any,
     get_commandName: () => String,
-    get_commandSource: () => js.Any
+    get_commandSource: () => Any
   ): CommandEventArgs = {
     val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_commandArgument = js.Any.fromFunction0(get_commandArgument), get_commandName = js.Any.fromFunction0(get_commandName), get_commandSource = js.Any.fromFunction0(get_commandSource))
     __obj.asInstanceOf[CommandEventArgs]
@@ -44,10 +44,10 @@ object CommandEventArgs {
   
   extension [Self <: CommandEventArgs](x: Self) {
     
-    inline def setGet_commandArgument(value: () => js.Any): Self = StObject.set(x, "get_commandArgument", js.Any.fromFunction0(value))
+    inline def setGet_commandArgument(value: () => Any): Self = StObject.set(x, "get_commandArgument", js.Any.fromFunction0(value))
     
     inline def setGet_commandName(value: () => String): Self = StObject.set(x, "get_commandName", js.Any.fromFunction0(value))
     
-    inline def setGet_commandSource(value: () => js.Any): Self = StObject.set(x, "get_commandSource", js.Any.fromFunction0(value))
+    inline def setGet_commandSource(value: () => Any): Self = StObject.set(x, "get_commandSource", js.Any.fromFunction0(value))
   }
 }

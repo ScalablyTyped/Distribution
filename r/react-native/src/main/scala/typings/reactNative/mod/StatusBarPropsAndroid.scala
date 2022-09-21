@@ -17,6 +17,8 @@ trait StatusBarPropsAndroid extends StObject {
     * If the status bar is translucent. When translucent is set to true,
     * the app will draw under the status bar. This is useful when using a
     * semi transparent status bar color.
+    *
+    * @platform android
     */
   var translucent: js.UndefOr[Boolean] = js.undefined
 }

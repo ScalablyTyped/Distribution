@@ -29,7 +29,7 @@ object ListEntitiesResponse {
     
     inline def setEntitySummaryListUndefined: Self = StObject.set(x, "EntitySummaryList", js.undefined)
     
-    inline def setEntitySummaryListVarargs(value: EntitySummary*): Self = StObject.set(x, "EntitySummaryList", js.Array(value :_*))
+    inline def setEntitySummaryListVarargs(value: EntitySummary*): Self = StObject.set(x, "EntitySummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

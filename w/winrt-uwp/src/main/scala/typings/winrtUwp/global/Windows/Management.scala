@@ -182,7 +182,7 @@ object Management {
     @JSGlobal("Windows.Management.Deployment.PackageVolume")
     @js.native
     /** Initializes a new instance of the PackageVolume class. */
-    class PackageVolume ()
+    open class PackageVolume ()
       extends StObject
          with typings.winrtUwp.Windows.Management.Deployment.PackageVolume
     
@@ -202,8 +202,8 @@ object Management {
         /* static member */
         @JSGlobal("Windows.Management.Deployment.Preview.ClassicAppManager.findInstalledApp")
         @js.native
-        def findInstalledApp: js.Any = js.native
-        inline def findInstalledApp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findInstalledApp")(x.asInstanceOf[js.Any])
+        def findInstalledApp: Any = js.native
+        inline def findInstalledApp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findInstalledApp")(x.asInstanceOf[js.Any])
       }
       
       @JSGlobal("Windows.Management.Deployment.Preview.InstalledClassicAppInfo")
@@ -213,11 +213,11 @@ object Management {
            with typings.winrtUwp.Windows.Management.Deployment.Preview.InstalledClassicAppInfo {
         
         /* CompleteClass */
-        var displayName: js.Any = js.native
+        var displayName: Any = js.native
         
         /* unmapped type */
         /* CompleteClass */
-        var displayVersion: js.Any = js.native
+        var displayVersion: Any = js.native
       }
     }
     
@@ -245,7 +245,7 @@ object Management {
       
       /* unmapped type */
       /* CompleteClass */
-      var startSingleAppMode: js.Any = js.native
+      var startSingleAppMode: Any = js.native
     }
     object CurrentAppOrchestration {
       
@@ -256,8 +256,8 @@ object Management {
       /* static member */
       @JSGlobal("Windows.Management.Orchestration.CurrentAppOrchestration.getForCurrentView")
       @js.native
-      def getForCurrentView: js.Any = js.native
-      inline def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
+      def getForCurrentView: Any = js.native
+      inline def getForCurrentView_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Windows.Management.Orchestration.SingleAppModeContext")
@@ -267,7 +267,7 @@ object Management {
          with typings.winrtUwp.Windows.Management.Orchestration.SingleAppModeContext {
       
       /* CompleteClass */
-      var close: js.Any = js.native
+      var close: Any = js.native
     }
   }
   

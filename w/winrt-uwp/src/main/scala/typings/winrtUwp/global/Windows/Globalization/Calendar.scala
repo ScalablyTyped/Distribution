@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Globalization.Calendar")
 @js.native
 /** Creates a Calendar object and initializes it to the current date and time. */
-class Calendar ()
+open class Calendar ()
   extends StObject
      with typings.winrtUwp.Windows.Globalization.Calendar {
   /**

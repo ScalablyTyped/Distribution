@@ -1,7 +1,6 @@
 package typings.reactFns
 
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.SFC
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ object mailtoMod {
   
   @JSImport("react-fns/dist/Mailto", "Mailto")
   @js.native
-  val Mailto: SFC[MailtoProps] = js.native
+  val Mailto: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<MailtoProps> */ Any = js.native
   
   trait MailtoProps
     extends StObject
@@ -40,7 +39,7 @@ object mailtoMod {
       
       inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
       
-      inline def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value :_*))
+      inline def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value*))
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -50,7 +49,7 @@ object mailtoMod {
       
       inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
       
-      inline def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value :_*))
+      inline def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value*))
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

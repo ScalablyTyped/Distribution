@@ -11,7 +11,7 @@ object rectMod {
   
   @JSImport("rot-js/lib/display/rect", JSImport.Default)
   @js.native
-  class default () extends Rect
+  open class default () extends Rect
   /* static members */
   object default {
     

@@ -16,21 +16,21 @@ object AppleTVJS {
       * This attribute must be set to a function that accepts an “options” argument.
       * For example App.onError = function (options) {}.
       * */
-    def onError(options: js.Any): Unit = js.native
+    def onError(options: Any): Unit = js.native
     
     /**
       * The onExit attribute is used to complete any actions that need to be cleaned
       * up when the app has been exited. This attribute must be set to a function that
       * accepts an “options” argument. For example App.onExit = function (options) {}.
       * */
-    def onExit(options: js.Any): Unit = js.native
+    def onExit(options: Any): Unit = js.native
     
     /**
       * The onLaunch attribute is used to start any required actions when the app
       * launches. This attribute must be set to a function that accepts an “options”
       * argument. For example App.onLaunch = function (options) {}.
       * */
-    def onLaunch(options: js.Any): Unit = js.native
+    def onLaunch(options: Any): Unit = js.native
     
     /**
       * This function reloads the initial JavaScript file without quitting the app.
@@ -41,9 +41,9 @@ object AppleTVJS {
       * For example App.onError = function (options) {}.
       * */
     def reload(): Unit = js.native
-    def reload(options: js.Any): Unit = js.native
-    def reload(options: js.Any, reloadData: js.Any): Unit = js.native
-    def reload(options: Unit, reloadData: js.Any): Unit = js.native
+    def reload(options: Any): Unit = js.native
+    def reload(options: Any, reloadData: Any): Unit = js.native
+    def reload(options: Unit, reloadData: Any): Unit = js.native
   }
   
   trait Device extends StObject {
@@ -102,7 +102,7 @@ object AppleTVJS {
        with Element {
     
     /** Gets a feature for a given element. */
-    def getFeature(feature: String): js.Any = js.native
+    def getFeature(feature: String): Any = js.native
   }
   
   trait Highlight extends StObject {
@@ -162,7 +162,7 @@ object AppleTVJS {
       
       inline def setHightlights(value: js.Array[Highlight]): Self = StObject.set(x, "hightlights", value.asInstanceOf[js.Any])
       
-      inline def setHightlightsVarargs(value: Highlight*): Self = StObject.set(x, "hightlights", js.Array(value :_*))
+      inline def setHightlightsVarargs(value: Highlight*): Self = StObject.set(x, "hightlights", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -260,7 +260,7 @@ object AppleTVJS {
     /** A callback function used to load the security key for an item. */
     def loadKey(
       url: String,
-      requestData: js.Any,
+      requestData: Any,
       callback: js.Function3[/* key */ String, /* renewalDate */ String, /* error */ String, Unit]
     ): Unit
     
@@ -300,7 +300,7 @@ object AppleTVJS {
       isExplicit: Boolean,
       loadAssetID: (String, js.Function2[/* assetID */ String, /* error */ String, Unit]) => Unit,
       loadCertificate: (String, js.Function2[/* certificate */ String, /* error */ String, Unit]) => Unit,
-      loadKey: (String, js.Any, js.Function3[/* key */ String, /* renewalDate */ String, /* error */ String, Unit]) => Unit,
+      loadKey: (String, Any, js.Function3[/* key */ String, /* renewalDate */ String, /* error */ String, Unit]) => Unit,
       resumeTime: Double,
       subtitle: String,
       title: String,
@@ -324,11 +324,11 @@ object AppleTVJS {
       
       inline def setHighlightGroups(value: js.Array[HighlightGroup]): Self = StObject.set(x, "highlightGroups", value.asInstanceOf[js.Any])
       
-      inline def setHighlightGroupsVarargs(value: HighlightGroup*): Self = StObject.set(x, "highlightGroups", js.Array(value :_*))
+      inline def setHighlightGroupsVarargs(value: HighlightGroup*): Self = StObject.set(x, "highlightGroups", js.Array(value*))
       
       inline def setInterstitials(value: js.Array[Interstitial]): Self = StObject.set(x, "interstitials", value.asInstanceOf[js.Any])
       
-      inline def setInterstitialsVarargs(value: Interstitial*): Self = StObject.set(x, "interstitials", js.Array(value :_*))
+      inline def setInterstitialsVarargs(value: Interstitial*): Self = StObject.set(x, "interstitials", js.Array(value*))
       
       inline def setIsExplicit(value: Boolean): Self = StObject.set(x, "isExplicit", value.asInstanceOf[js.Any])
       
@@ -337,7 +337,7 @@ object AppleTVJS {
       inline def setLoadCertificate(value: (String, js.Function2[/* certificate */ String, /* error */ String, Unit]) => Unit): Self = StObject.set(x, "loadCertificate", js.Any.fromFunction2(value))
       
       inline def setLoadKey(
-        value: (String, js.Any, js.Function3[/* key */ String, /* renewalDate */ String, /* error */ String, Unit]) => Unit
+        value: (String, Any, js.Function3[/* key */ String, /* renewalDate */ String, /* error */ String, Unit]) => Unit
       ): Self = StObject.set(x, "loadKey", js.Any.fromFunction3(value))
       
       inline def setResumeTime(value: Double): Self = StObject.set(x, "resumeTime", value.asInstanceOf[js.Any])
@@ -511,7 +511,7 @@ object AppleTVJS {
       * An integer value — The seek will be performed to the stated value and not the initial requested value.
       * */
     def requestSeekToTime(): Unit = js.native
-    def requestSeekToTime(result: js.Any): Unit = js.native
+    def requestSeekToTime(result: Any): Unit = js.native
     
     /** Sets the playback point to a specified time. */
     def seekToTime(time: Double): Unit = js.native
@@ -705,11 +705,11 @@ object AppleTVJS {
       * NSURLErrorFailingURLStringErrorKey
       * NSURLErrorFailingURLPeerTrustErrorKey
       * */
-    var userInfo: js.Any
+    var userInfo: Any
   }
   object TVError {
     
-    inline def apply(code: String, description: String, domain: String, userInfo: js.Any): TVError = {
+    inline def apply(code: String, description: String, domain: String, userInfo: Any): TVError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[TVError]
     }
@@ -722,7 +722,7 @@ object AppleTVJS {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      inline def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+      inline def setUserInfo(value: Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     }
   }
 }

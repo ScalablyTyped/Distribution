@@ -24,6 +24,6 @@ object GetLogGroupFieldsResponse {
     
     inline def setLogGroupFieldsUndefined: Self = StObject.set(x, "logGroupFields", js.undefined)
     
-    inline def setLogGroupFieldsVarargs(value: LogGroupField*): Self = StObject.set(x, "logGroupFields", js.Array(value :_*))
+    inline def setLogGroupFieldsVarargs(value: LogGroupField*): Self = StObject.set(x, "logGroupFields", js.Array(value*))
   }
 }

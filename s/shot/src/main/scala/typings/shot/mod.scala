@@ -1,7 +1,8 @@
 package typings.shot
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
@@ -19,7 +20,7 @@ object mod {
   
   inline def inject(dispatchFunc: Listener, options: RequestOptions): js.Promise[ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseObject]]
   
-  inline def isInjection(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInjection(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type Headers = StringDictionary[String | js.Array[String]]
   
@@ -113,7 +114,7 @@ object mod {
     var statusMessage: String
     
     /** an object containing the response trailers. */
-    var trailers: StringDictionary[js.Any]
+    var trailers: StringDictionary[Any]
   }
   object ResponseObject {
     
@@ -124,7 +125,7 @@ object mod {
       rawPayload: Buffer,
       statusCode: Double,
       statusMessage: String,
-      trailers: StringDictionary[js.Any]
+      trailers: StringDictionary[Any]
     ): ResponseObject = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], rawPayload = rawPayload.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], trailers = trailers.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseObject]
@@ -144,11 +145,11 @@ object mod {
       
       inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
       
-      inline def setTrailers(value: StringDictionary[js.Any]): Self = StObject.set(x, "trailers", value.asInstanceOf[js.Any])
+      inline def setTrailers(value: StringDictionary[Any]): Self = StObject.set(x, "trailers", value.asInstanceOf[js.Any])
     }
   }
   
   type SimulatedRequestObject = Readable
   
-  type SimulatedResponseObject = ServerResponse
+  type SimulatedResponseObject = ServerResponse[IncomingMessage]
 }

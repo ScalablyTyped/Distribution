@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.QueryFactory")
 @js.native
-class QueryFactory ()
+open class QueryFactory ()
   extends StObject
      with typings.phaser.MatterJS.QueryFactory

@@ -21,6 +21,6 @@ object CandleStickData {
     
     inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    inline def setDataSetsVarargs(value: CandleStickDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: CandleStickDataset*): Self = StObject.set(x, "dataSets", js.Array(value*))
   }
 }

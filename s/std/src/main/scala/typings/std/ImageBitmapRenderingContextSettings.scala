@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImageBitmapRenderingContextSettings extends StObject {
   
+  /* standard dom */
   var alpha: js.UndefOr[scala.Boolean] = js.undefined
 }
 object ImageBitmapRenderingContextSettings {

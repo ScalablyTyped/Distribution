@@ -9,7 +9,7 @@ object listenerMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Listener", "Listener")
   @js.native
-  class Listener[A] protected () extends StObject {
+  open class Listener[A] protected () extends StObject {
     def this(h: js.Function1[/* a */ A, Unit], target: Vertex) = this()
     
     def h(a: A): Unit = js.native

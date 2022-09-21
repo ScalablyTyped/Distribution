@@ -1,5 +1,6 @@
 package typings.reactLatexNext
 
+import typings.reactLatexNext.renderLatexMod.Macros
 import typings.reactLatexNext.typesMod.Delimiter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,6 +14,8 @@ object anon {
     var children: js.UndefOr[String] = js.undefined
     
     var delimiters: js.UndefOr[js.Array[Delimiter]] = js.undefined
+    
+    var macros: js.UndefOr[Macros] = js.undefined
     
     var strict: js.UndefOr[Boolean] = js.undefined
   }
@@ -33,7 +36,11 @@ object anon {
       
       inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value*))
+      
+      inline def setMacros(value: Macros): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
+      
+      inline def setMacrosUndefined: Self = StObject.set(x, "macros", js.undefined)
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

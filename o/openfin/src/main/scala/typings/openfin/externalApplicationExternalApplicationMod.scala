@@ -12,11 +12,11 @@ object externalApplicationExternalApplicationMod {
   
   @JSImport("openfin/_v2/api/external-application/external-application", JSImport.Default)
   @js.native
-  class default () extends ExternalApplicationModule
+  open class default () extends ExternalApplicationModule
   
   @JSImport("openfin/_v2/api/external-application/external-application", "ExternalApplication")
   @js.native
-  class ExternalApplication protected () extends EmitterBase[ExternalApplicationEvents] {
+  open class ExternalApplication protected () extends EmitterBase[ExternalApplicationEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
     
     /**

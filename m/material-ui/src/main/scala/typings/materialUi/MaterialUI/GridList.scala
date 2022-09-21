@@ -20,11 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GridList {
   
-  type GridList = Component[GridListProps, js.Object, js.Any]
+  type GridList = Component[GridListProps, js.Object, Any]
   
   trait GridListProps extends StObject {
     
     var cellHeight: js.UndefOr[Double | auto] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var cols: js.UndefOr[Double] = js.undefined
     
@@ -45,6 +47,10 @@ object GridList {
       
       inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
@@ -59,7 +65,7 @@ object GridList {
     }
   }
   
-  type GridTile = Component[GridTileProps, js.Object, js.Any]
+  type GridTile = Component[GridTileProps, js.Object, Any]
   
   trait GridTileProps extends StObject {
     
@@ -67,9 +73,11 @@ object GridList {
     
     var actionPosition: js.UndefOr[left | right] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var cols: js.UndefOr[Double] = js.undefined
     
-    var containerElement: js.UndefOr[String | ReactElement | (ComponentClass[js.Any, ComponentState])] = js.undefined
+    var containerElement: js.UndefOr[String | ReactElement | (ComponentClass[Any, ComponentState])] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
@@ -106,11 +114,15 @@ object GridList {
       
       inline def setActionPositionUndefined: Self = StObject.set(x, "actionPosition", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      inline def setContainerElement(value: String | ReactElement | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
+      inline def setContainerElement(value: String | ReactElement | (ComponentClass[Any, ComponentState])): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
       
       inline def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)
       

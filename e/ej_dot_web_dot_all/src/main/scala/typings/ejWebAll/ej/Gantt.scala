@@ -15,7 +15,7 @@ trait Gantt
     * @param {string} Defines in which position the row wants to add
     * @returns {void}
     */
-  def addRecord(data: js.Any, rowPosition: String): Unit = js.native
+  def addRecord(data: Any, rowPosition: String): Unit = js.native
   
   /** To cancel the edited state of an item in Gantt
     * @returns {void}
@@ -160,13 +160,13 @@ trait Gantt
     * @param {boolean} Defines that we need to preserve the previously selected cells of not
     * @returns {void}
     */
-  def selectCells(Indexes: js.Array[js.Any], preservePreviousSelectedCell: Boolean): Unit = js.native
+  def selectCells(Indexes: js.Array[Any], preservePreviousSelectedCell: Boolean): Unit = js.native
   
   /** To select multiple rows dynamically.
     * @param {any[]} array of row indexes to select
     * @returns {void}
     */
-  def selectMultipleRows(rowIndexes: js.Array[js.Any]): Unit = js.native
+  def selectMultipleRows(rowIndexes: js.Array[Any]): Unit = js.native
   
   /** Method to set scroll top value for Gantt control.
     * @param {number} Pass a value to set top position of vertical scroll bar.
@@ -219,13 +219,13 @@ trait Gantt
     * @param {any} object with modified field value
     * @returns {void}
     */
-  def updateRecordByIndex(index: Double, data: js.Any): Unit = js.native
+  def updateRecordByIndex(index: Double, data: Any): Unit = js.native
   
   /** To update the value of Gantt record by using it's task id value.
     * @param {any} object with modified field values and current task id value
     * @returns {void}
     */
-  def updateRecordByTaskId(data: js.Any): Unit = js.native
+  def updateRecordByTaskId(data: Any): Unit = js.native
   
   /** To update the schedule start date and schedule end date of project.
     * @param {string} New schedule start date of project
@@ -711,7 +711,7 @@ object Gantt {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns selected record index
       */
@@ -758,7 +758,7 @@ object Gantt {
       
       inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -800,7 +800,7 @@ object Gantt {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns selected record index
       */
@@ -843,7 +843,7 @@ object Gantt {
       
       inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -907,7 +907,7 @@ object Gantt {
     
     /** Returns the Element of editing cell.
       */
-    var cellElement: js.UndefOr[js.Any] = js.undefined
+    var cellElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the column Index of cell belongs.
       */
@@ -915,11 +915,11 @@ object Gantt {
     
     /** Returns the data of current cell record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the row element of editing cell.
       */
-    var rowElement: js.UndefOr[js.Any] = js.undefined
+    var rowElement: js.UndefOr[Any] = js.undefined
   }
   object BeginEditEventArgs {
     
@@ -934,7 +934,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCellElement(value: js.Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
+      inline def setCellElement(value: Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
       inline def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
       
@@ -942,11 +942,11 @@ object Gantt {
       
       inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setRowElement(value: js.Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
+      inline def setRowElement(value: Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
       
       inline def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
     }
@@ -964,31 +964,31 @@ object Gantt {
     
     /** Returns the selecting record object
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Gantt object Model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected cell index
       */
-    var previousCellIndex: js.UndefOr[js.Any] = js.undefined
+    var previousCellIndex: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected row data
       */
-    var previousData: js.UndefOr[js.Any] = js.undefined
+    var previousData: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected row index
       */
-    var previousRowIndex: js.UndefOr[js.Any] = js.undefined
+    var previousRowIndex: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected cell element
       */
-    var previousTargetCell: js.UndefOr[js.Any] = js.undefined
+    var previousTargetCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected row element
       */
-    var previousTargetRow: js.UndefOr[js.Any] = js.undefined
+    var previousTargetRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index on the selection
       */
@@ -996,11 +996,11 @@ object Gantt {
     
     /** Returns the selecting cell element
       */
-    var targetCell: js.UndefOr[js.Any] = js.undefined
+    var targetCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the selecting row element
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
   }
   object CellSelectedEventArgs {
     
@@ -1019,31 +1019,31 @@ object Gantt {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousCellIndex(value: js.Any): Self = StObject.set(x, "previousCellIndex", value.asInstanceOf[js.Any])
+      inline def setPreviousCellIndex(value: Any): Self = StObject.set(x, "previousCellIndex", value.asInstanceOf[js.Any])
       
       inline def setPreviousCellIndexUndefined: Self = StObject.set(x, "previousCellIndex", js.undefined)
       
-      inline def setPreviousData(value: js.Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
+      inline def setPreviousData(value: Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
       
       inline def setPreviousDataUndefined: Self = StObject.set(x, "previousData", js.undefined)
       
-      inline def setPreviousRowIndex(value: js.Any): Self = StObject.set(x, "previousRowIndex", value.asInstanceOf[js.Any])
+      inline def setPreviousRowIndex(value: Any): Self = StObject.set(x, "previousRowIndex", value.asInstanceOf[js.Any])
       
       inline def setPreviousRowIndexUndefined: Self = StObject.set(x, "previousRowIndex", js.undefined)
       
-      inline def setPreviousTargetCell(value: js.Any): Self = StObject.set(x, "previousTargetCell", value.asInstanceOf[js.Any])
+      inline def setPreviousTargetCell(value: Any): Self = StObject.set(x, "previousTargetCell", value.asInstanceOf[js.Any])
       
       inline def setPreviousTargetCellUndefined: Self = StObject.set(x, "previousTargetCell", js.undefined)
       
-      inline def setPreviousTargetRow(value: js.Any): Self = StObject.set(x, "previousTargetRow", value.asInstanceOf[js.Any])
+      inline def setPreviousTargetRow(value: Any): Self = StObject.set(x, "previousTargetRow", value.asInstanceOf[js.Any])
       
       inline def setPreviousTargetRowUndefined: Self = StObject.set(x, "previousTargetRow", js.undefined)
       
@@ -1051,11 +1051,11 @@ object Gantt {
       
       inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
       
-      inline def setTargetCell(value: js.Any): Self = StObject.set(x, "targetCell", value.asInstanceOf[js.Any])
+      inline def setTargetCell(value: Any): Self = StObject.set(x, "targetCell", value.asInstanceOf[js.Any])
       
       inline def setTargetCellUndefined: Self = StObject.set(x, "targetCell", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowUndefined: Self = StObject.set(x, "targetRow", js.undefined)
     }
@@ -1073,11 +1073,11 @@ object Gantt {
     
     /** Returns the selecting record object
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Gantt object Model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index on the selection
       */
@@ -1085,11 +1085,11 @@ object Gantt {
     
     /** Returns the selecting cell element
       */
-    var targetCell: js.UndefOr[js.Any] = js.undefined
+    var targetCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the selecting row element
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
   }
   object CellSelectingEventArgs {
     
@@ -1108,11 +1108,11 @@ object Gantt {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1120,11 +1120,11 @@ object Gantt {
       
       inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
       
-      inline def setTargetCell(value: js.Any): Self = StObject.set(x, "targetCell", value.asInstanceOf[js.Any])
+      inline def setTargetCell(value: Any): Self = StObject.set(x, "targetCell", value.asInstanceOf[js.Any])
       
       inline def setTargetCellUndefined: Self = StObject.set(x, "targetCell", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowUndefined: Self = StObject.set(x, "targetRow", js.undefined)
     }
@@ -1138,7 +1138,7 @@ object Gantt {
     
     /** Returns the data of collapsed record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
@@ -1165,7 +1165,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1191,7 +1191,7 @@ object Gantt {
     
     /** Returns the data of edited cell record..
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
@@ -1214,7 +1214,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1236,11 +1236,11 @@ object Gantt {
     
     /** Returns the default context menu items to which we add custom items.
       */
-    var contextMenuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var contextMenuItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -1263,13 +1263,13 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContextMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
+      inline def setContextMenuItems(value: js.Array[Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
       
       inline def setContextMenuItemsUndefined: Self = StObject.set(x, "contextMenuItems", js.undefined)
       
-      inline def setContextMenuItemsVarargs(value: js.Any*): Self = StObject.set(x, "contextMenuItems", js.Array(value :_*))
+      inline def setContextMenuItemsVarargs(value: Any*): Self = StObject.set(x, "contextMenuItems", js.Array(value*))
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1291,7 +1291,7 @@ object Gantt {
     
     /** Returns the Gantt model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1310,7 +1310,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1330,7 +1330,7 @@ object Gantt {
     /** Specifies the data source fields to be displayed in the drag tooltip.
       * @Default {[]}
       */
-    var tooltipItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var tooltipItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the custom template for drag tooltip.
       * @Default {null}
@@ -1350,11 +1350,11 @@ object Gantt {
       
       inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
       
-      inline def setTooltipItems(value: js.Array[js.Any]): Self = StObject.set(x, "tooltipItems", value.asInstanceOf[js.Any])
+      inline def setTooltipItems(value: js.Array[Any]): Self = StObject.set(x, "tooltipItems", value.asInstanceOf[js.Any])
       
       inline def setTooltipItemsUndefined: Self = StObject.set(x, "tooltipItems", js.undefined)
       
-      inline def setTooltipItemsVarargs(value: js.Any*): Self = StObject.set(x, "tooltipItems", js.Array(value :_*))
+      inline def setTooltipItemsVarargs(value: Any*): Self = StObject.set(x, "tooltipItems", js.Array(value*))
       
       inline def setTooltipTemplate(value: String): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
       
@@ -1538,7 +1538,7 @@ object Gantt {
     
     /** Returns the Element of editing cell.
       */
-    var cellElement: js.UndefOr[js.Any] = js.undefined
+    var cellElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the column name of edited cell belongs.
       */
@@ -1546,15 +1546,15 @@ object Gantt {
     
     /** Returns the column object of edited cell belongs.
       */
-    var columnObject: js.UndefOr[js.Any] = js.undefined
+    var columnObject: js.UndefOr[Any] = js.undefined
     
     /** Returns the data of edited cell record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the row element of editing cell.
       */
-    var rowElement: js.UndefOr[js.Any] = js.undefined
+    var rowElement: js.UndefOr[Any] = js.undefined
   }
   object EndEditEventArgs {
     
@@ -1569,7 +1569,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCellElement(value: js.Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
+      inline def setCellElement(value: Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
       inline def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
       
@@ -1577,15 +1577,15 @@ object Gantt {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setColumnObject(value: js.Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
+      inline def setColumnObject(value: Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
       
       inline def setColumnObjectUndefined: Self = StObject.set(x, "columnObject", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setRowElement(value: js.Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
+      inline def setRowElement(value: Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
       
       inline def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
     }
@@ -1599,7 +1599,7 @@ object Gantt {
     
     /** Returns the data of expanded record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
@@ -1626,7 +1626,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1652,7 +1652,7 @@ object Gantt {
     
     /** Returns the data of edited cell record..
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
@@ -1660,7 +1660,7 @@ object Gantt {
     
     /** Returns the row index of record.
       */
-    var recordIndex: js.UndefOr[js.Any] = js.undefined
+    var recordIndex: js.UndefOr[Any] = js.undefined
   }
   object ExpandingEventArgs {
     
@@ -1675,7 +1675,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1683,7 +1683,7 @@ object Gantt {
       
       inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      inline def setRecordIndex(value: js.Any): Self = StObject.set(x, "recordIndex", value.asInstanceOf[js.Any])
+      inline def setRecordIndex(value: Any): Self = StObject.set(x, "recordIndex", value.asInstanceOf[js.Any])
       
       inline def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
     }
@@ -1709,7 +1709,7 @@ object Gantt {
       
       inline def setFilteredColumnsUndefined: Self = StObject.set(x, "filteredColumns", js.undefined)
       
-      inline def setFilteredColumnsVarargs(value: FilterSettingsFilteredColumn*): Self = StObject.set(x, "filteredColumns", js.Array(value :_*))
+      inline def setFilteredColumnsVarargs(value: FilterSettingsFilteredColumn*): Self = StObject.set(x, "filteredColumns", js.Array(value*))
     }
   }
   
@@ -1803,7 +1803,7 @@ object Gantt {
     
     /** Returns the Gantt model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1822,7 +1822,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1937,7 +1937,7 @@ object Gantt {
     /** To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
       * @Default {[]}
       */
-    var columnDialogFields: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var columnDialogFields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the background of connector lines in Gantt
       */
@@ -1963,7 +1963,7 @@ object Gantt {
     /** Collection of data or hierarchical data to represent in Gantt
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid .
       * @Default {MM/dd/yyyy}
@@ -1973,7 +1973,7 @@ object Gantt {
     /** Specifies the customized working time for tasks in Gantt
       * @Default {[{ from: 08:00 AM, to: 12:00 PM , background:   }, { from: 01:00 PM, to: 05:00 PM , background:  }]}
       */
-    var dayWorkingTime: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dayWorkingTime: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Option for customizing the drag tooltip while reordering the rows.
       */
@@ -2088,7 +2088,7 @@ object Gantt {
     /** Specifies the data collection for grouping the resources in resource allocation view in Gantt.
       * @Default {[]}
       */
-    var groupCollection: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var groupCollection: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Default Value
       */
@@ -2206,7 +2206,7 @@ object Gantt {
     /** It receives query to retrieve data from the table (query is same as SQL).
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Triggered while rendering each cell in the TreeGrid
       */
@@ -2249,7 +2249,7 @@ object Gantt {
     /** Collection of data regarding resources involved in entire project
       * @Default {[]}
       */
-    var resources: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var resources: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the data source field name to be displayed as right task label
       */
@@ -2499,7 +2499,7 @@ object Gantt {
     /** Gets or sets the working days of a week in a project.
       * @Default {[Monday,Tuesday,Wednesday,Thursday,Friday]}
       */
-    var workWeek: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var workWeek: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the working time schedule of day
       * @Default {ej.Gantt.workingTimeScale.TimeScale8Hours}
@@ -2527,7 +2527,7 @@ object Gantt {
       
       inline def setAddDialogFieldsUndefined: Self = StObject.set(x, "addDialogFields", js.undefined)
       
-      inline def setAddDialogFieldsVarargs(value: AddDialogField*): Self = StObject.set(x, "addDialogFields", js.Array(value :_*))
+      inline def setAddDialogFieldsVarargs(value: AddDialogField*): Self = StObject.set(x, "addDialogFields", js.Array(value*))
       
       inline def setAllowColumnResize(value: Boolean): Self = StObject.set(x, "allowColumnResize", value.asInstanceOf[js.Any])
       
@@ -2605,11 +2605,11 @@ object Gantt {
       
       inline def setCollapsingUndefined: Self = StObject.set(x, "collapsing", js.undefined)
       
-      inline def setColumnDialogFields(value: js.Array[js.Any]): Self = StObject.set(x, "columnDialogFields", value.asInstanceOf[js.Any])
+      inline def setColumnDialogFields(value: js.Array[Any]): Self = StObject.set(x, "columnDialogFields", value.asInstanceOf[js.Any])
       
       inline def setColumnDialogFieldsUndefined: Self = StObject.set(x, "columnDialogFields", js.undefined)
       
-      inline def setColumnDialogFieldsVarargs(value: js.Any*): Self = StObject.set(x, "columnDialogFields", js.Array(value :_*))
+      inline def setColumnDialogFieldsVarargs(value: Any*): Self = StObject.set(x, "columnDialogFields", js.Array(value*))
       
       inline def setConnectorLineBackground(value: String): Self = StObject.set(x, "connectorLineBackground", value.asInstanceOf[js.Any])
       
@@ -2631,21 +2631,21 @@ object Gantt {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
       inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      inline def setDayWorkingTime(value: js.Array[js.Any]): Self = StObject.set(x, "dayWorkingTime", value.asInstanceOf[js.Any])
+      inline def setDayWorkingTime(value: js.Array[Any]): Self = StObject.set(x, "dayWorkingTime", value.asInstanceOf[js.Any])
       
       inline def setDayWorkingTimeUndefined: Self = StObject.set(x, "dayWorkingTime", js.undefined)
       
-      inline def setDayWorkingTimeVarargs(value: js.Any*): Self = StObject.set(x, "dayWorkingTime", js.Array(value :_*))
+      inline def setDayWorkingTimeVarargs(value: Any*): Self = StObject.set(x, "dayWorkingTime", js.Array(value*))
       
       inline def setDragTooltip(value: DragTooltip): Self = StObject.set(x, "dragTooltip", value.asInstanceOf[js.Any])
       
@@ -2667,7 +2667,7 @@ object Gantt {
       
       inline def setEditDialogFieldsUndefined: Self = StObject.set(x, "editDialogFields", js.undefined)
       
-      inline def setEditDialogFieldsVarargs(value: EditDialogField*): Self = StObject.set(x, "editDialogFields", js.Array(value :_*))
+      inline def setEditDialogFieldsVarargs(value: EditDialogField*): Self = StObject.set(x, "editDialogFields", js.Array(value*))
       
       inline def setEditSettings(value: EditSettings): Self = StObject.set(x, "editSettings", value.asInstanceOf[js.Any])
       
@@ -2745,11 +2745,11 @@ object Gantt {
       
       inline def setFilterSettingsUndefined: Self = StObject.set(x, "filterSettings", js.undefined)
       
-      inline def setGroupCollection(value: js.Array[js.Any]): Self = StObject.set(x, "groupCollection", value.asInstanceOf[js.Any])
+      inline def setGroupCollection(value: js.Array[Any]): Self = StObject.set(x, "groupCollection", value.asInstanceOf[js.Any])
       
       inline def setGroupCollectionUndefined: Self = StObject.set(x, "groupCollection", js.undefined)
       
-      inline def setGroupCollectionVarargs(value: js.Any*): Self = StObject.set(x, "groupCollection", js.Array(value :_*))
+      inline def setGroupCollectionVarargs(value: Any*): Self = StObject.set(x, "groupCollection", js.Array(value*))
       
       inline def setGroupIdMapping(value: String): Self = StObject.set(x, "groupIdMapping", value.asInstanceOf[js.Any])
       
@@ -2771,7 +2771,7 @@ object Gantt {
       
       inline def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
       
-      inline def setHolidaysVarargs(value: Holiday*): Self = StObject.set(x, "holidays", js.Array(value :_*))
+      inline def setHolidaysVarargs(value: Holiday*): Self = StObject.set(x, "holidays", js.Array(value*))
       
       inline def setIncludeWeekend(value: Boolean): Self = StObject.set(x, "includeWeekend", value.asInstanceOf[js.Any])
       
@@ -2857,7 +2857,7 @@ object Gantt {
       
       inline def setProgressbarTooltipTemplateUndefined: Self = StObject.set(x, "progressbarTooltipTemplate", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryCellInfo(value: /* e */ QueryCellInfoEventArgs => Unit): Self = StObject.set(x, "queryCellInfo", js.Any.fromFunction1(value))
       
@@ -2897,11 +2897,11 @@ object Gantt {
       
       inline def setResourceUnitMappingUndefined: Self = StObject.set(x, "resourceUnitMapping", js.undefined)
       
-      inline def setResources(value: js.Array[js.Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: js.Array[Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      inline def setResourcesVarargs(value: js.Any*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Any*): Self = StObject.set(x, "resources", js.Array(value*))
       
       inline def setRightTaskLabelMapping(value: String): Self = StObject.set(x, "rightTaskLabelMapping", value.asInstanceOf[js.Any])
       
@@ -2959,7 +2959,7 @@ object Gantt {
       
       inline def setSelectedCellIndexesUndefined: Self = StObject.set(x, "selectedCellIndexes", js.undefined)
       
-      inline def setSelectedCellIndexesVarargs(value: SelectedCellIndex*): Self = StObject.set(x, "selectedCellIndexes", js.Array(value :_*))
+      inline def setSelectedCellIndexesVarargs(value: SelectedCellIndex*): Self = StObject.set(x, "selectedCellIndexes", js.Array(value*))
       
       inline def setSelectedRowIndex(value: Double): Self = StObject.set(x, "selectedRowIndex", value.asInstanceOf[js.Any])
       
@@ -3029,7 +3029,7 @@ object Gantt {
       
       inline def setStripLinesUndefined: Self = StObject.set(x, "stripLines", js.undefined)
       
-      inline def setStripLinesVarargs(value: StripLine*): Self = StObject.set(x, "stripLines", js.Array(value :_*))
+      inline def setStripLinesVarargs(value: StripLine*): Self = StObject.set(x, "stripLines", js.Array(value*))
       
       inline def setTaskCollectionMapping(value: String): Self = StObject.set(x, "taskCollectionMapping", value.asInstanceOf[js.Any])
       
@@ -3127,11 +3127,11 @@ object Gantt {
       
       inline def setWorkUnitUndefined: Self = StObject.set(x, "workUnit", js.undefined)
       
-      inline def setWorkWeek(value: js.Array[js.Any]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
+      inline def setWorkWeek(value: js.Array[Any]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
       
       inline def setWorkWeekUndefined: Self = StObject.set(x, "workWeek", js.undefined)
       
-      inline def setWorkWeekVarargs(value: js.Any*): Self = StObject.set(x, "workWeek", js.Array(value :_*))
+      inline def setWorkWeekVarargs(value: Any*): Self = StObject.set(x, "workWeek", js.Array(value*))
       
       inline def setWorkingTimeScale(value: workingTimeScale | String): Self = StObject.set(x, "workingTimeScale", value.asInstanceOf[js.Any])
       
@@ -3147,7 +3147,7 @@ object Gantt {
     
     /** Returns the selecting cell element.
       */
-    var cellElement: js.UndefOr[js.Any] = js.undefined
+    var cellElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the value of cell.
       */
@@ -3155,11 +3155,11 @@ object Gantt {
     
     /** Returns the column of cell belongs.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the data of current cell record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
   }
   object QueryCellInfoEventArgs {
     
@@ -3174,7 +3174,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCellElement(value: js.Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
+      inline def setCellElement(value: Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
       inline def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
       
@@ -3182,11 +3182,11 @@ object Gantt {
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
@@ -3204,7 +3204,7 @@ object Gantt {
     
     /** Returns the data of the record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the milestone background of current item.
       */
@@ -3263,7 +3263,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -3317,11 +3317,11 @@ object Gantt {
     
     /** Returns the data of rendering row record..
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the row element of rendering row.
       */
-    var rowElement: js.UndefOr[js.Any] = js.undefined
+    var rowElement: js.UndefOr[Any] = js.undefined
   }
   object RowDataBoundEventArgs {
     
@@ -3336,11 +3336,11 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setRowElement(value: js.Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
+      inline def setRowElement(value: Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
       
       inline def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
     }
@@ -3358,7 +3358,7 @@ object Gantt {
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.undefined
+    var draggedRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
@@ -3370,7 +3370,7 @@ object Gantt {
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -3382,7 +3382,7 @@ object Gantt {
     
     /** Returns the row on which we are dragging.
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index on which we are dragging.
       */
@@ -3409,7 +3409,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedRow(value: js.Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
+      inline def setDraggedRow(value: Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
       
       inline def setDraggedRowIndex(value: Double): Self = StObject.set(x, "draggedRowIndex", value.asInstanceOf[js.Any])
       
@@ -3421,7 +3421,7 @@ object Gantt {
       
       inline def setDropPositionUndefined: Self = StObject.set(x, "dropPosition", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3433,7 +3433,7 @@ object Gantt {
       
       inline def setRoundOffDurationUndefined: Self = StObject.set(x, "roundOffDuration", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowIndex(value: Double): Self = StObject.set(x, "targetRowIndex", value.asInstanceOf[js.Any])
       
@@ -3455,7 +3455,7 @@ object Gantt {
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.undefined
+    var draggedRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
@@ -3463,7 +3463,7 @@ object Gantt {
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -3486,7 +3486,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedRow(value: js.Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
+      inline def setDraggedRow(value: Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
       
       inline def setDraggedRowIndex(value: Boolean): Self = StObject.set(x, "draggedRowIndex", value.asInstanceOf[js.Any])
       
@@ -3494,7 +3494,7 @@ object Gantt {
       
       inline def setDraggedRowUndefined: Self = StObject.set(x, "draggedRow", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3516,7 +3516,7 @@ object Gantt {
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.undefined
+    var draggedRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
@@ -3524,7 +3524,7 @@ object Gantt {
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -3532,7 +3532,7 @@ object Gantt {
     
     /** Returns the row which we are dropped to row.
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we are dropped to row.
       */
@@ -3555,7 +3555,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedRow(value: js.Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
+      inline def setDraggedRow(value: Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
       
       inline def setDraggedRowIndex(value: Double): Self = StObject.set(x, "draggedRowIndex", value.asInstanceOf[js.Any])
       
@@ -3563,7 +3563,7 @@ object Gantt {
       
       inline def setDraggedRowUndefined: Self = StObject.set(x, "draggedRow", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3571,7 +3571,7 @@ object Gantt {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowIndex(value: Double): Self = StObject.set(x, "targetRowIndex", value.asInstanceOf[js.Any])
       
@@ -3593,7 +3593,7 @@ object Gantt {
     
     /** Returns the data of selected record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of selecting row record.
       */
@@ -3601,7 +3601,7 @@ object Gantt {
     
     /** Returns the selecting row element.
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
   }
   object RowSelectedEventArgs {
     
@@ -3616,7 +3616,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -3624,7 +3624,7 @@ object Gantt {
       
       inline def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowUndefined: Self = StObject.set(x, "targetRow", js.undefined)
     }
@@ -3638,19 +3638,19 @@ object Gantt {
     
     /** Returns the data selecting record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected row chart element.
       */
-    var previousChartRow: js.UndefOr[js.Any] = js.undefined
+    var previousChartRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected data.
       */
-    var previousData: js.UndefOr[js.Any] = js.undefined
+    var previousData: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected row grid element.
       */
-    var previousGridRow: js.UndefOr[js.Any] = js.undefined
+    var previousGridRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected row index.
       */
@@ -3662,11 +3662,11 @@ object Gantt {
     
     /** Returns the selecting row chart element.
       */
-    var targetChartRow: js.UndefOr[js.Any] = js.undefined
+    var targetChartRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the selecting row grid element.
       */
-    var targetGridRow: js.UndefOr[js.Any] = js.undefined
+    var targetGridRow: js.UndefOr[Any] = js.undefined
   }
   object RowSelectingEventArgs {
     
@@ -3681,19 +3681,19 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setPreviousChartRow(value: js.Any): Self = StObject.set(x, "previousChartRow", value.asInstanceOf[js.Any])
+      inline def setPreviousChartRow(value: Any): Self = StObject.set(x, "previousChartRow", value.asInstanceOf[js.Any])
       
       inline def setPreviousChartRowUndefined: Self = StObject.set(x, "previousChartRow", js.undefined)
       
-      inline def setPreviousData(value: js.Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
+      inline def setPreviousData(value: Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
       
       inline def setPreviousDataUndefined: Self = StObject.set(x, "previousData", js.undefined)
       
-      inline def setPreviousGridRow(value: js.Any): Self = StObject.set(x, "previousGridRow", value.asInstanceOf[js.Any])
+      inline def setPreviousGridRow(value: Any): Self = StObject.set(x, "previousGridRow", value.asInstanceOf[js.Any])
       
       inline def setPreviousGridRowUndefined: Self = StObject.set(x, "previousGridRow", js.undefined)
       
@@ -3705,11 +3705,11 @@ object Gantt {
       
       inline def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
       
-      inline def setTargetChartRow(value: js.Any): Self = StObject.set(x, "targetChartRow", value.asInstanceOf[js.Any])
+      inline def setTargetChartRow(value: Any): Self = StObject.set(x, "targetChartRow", value.asInstanceOf[js.Any])
       
       inline def setTargetChartRowUndefined: Self = StObject.set(x, "targetChartRow", js.undefined)
       
-      inline def setTargetGridRow(value: js.Any): Self = StObject.set(x, "targetGridRow", value.asInstanceOf[js.Any])
+      inline def setTargetGridRow(value: Any): Self = StObject.set(x, "targetGridRow", value.asInstanceOf[js.Any])
       
       inline def setTargetGridRowUndefined: Self = StObject.set(x, "targetGridRow", js.undefined)
     }
@@ -3916,7 +3916,7 @@ object Gantt {
       
       inline def setSortedColumnsUndefined: Self = StObject.set(x, "sortedColumns", js.undefined)
       
-      inline def setSortedColumnsVarargs(value: SortSettingsSortedColumn*): Self = StObject.set(x, "sortedColumns", js.Array(value :_*))
+      inline def setSortedColumnsVarargs(value: SortSettingsSortedColumn*): Self = StObject.set(x, "sortedColumns", js.Array(value*))
     }
   }
   
@@ -4096,7 +4096,7 @@ object Gantt {
     
     /** Returns currently clicked row data
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the current item index.
       */
@@ -4104,15 +4104,15 @@ object Gantt {
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the target element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the clicked row element
       */
-    var taskbarElement: js.UndefOr[js.Any] = js.undefined
+    var taskbarElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4127,7 +4127,7 @@ object Gantt {
     
     extension [Self <: TaskbarClickEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -4135,15 +4135,15 @@ object Gantt {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTaskbarElement(value: js.Any): Self = StObject.set(x, "taskbarElement", value.asInstanceOf[js.Any])
+      inline def setTaskbarElement(value: Any): Self = StObject.set(x, "taskbarElement", value.asInstanceOf[js.Any])
       
       inline def setTaskbarElementUndefined: Self = StObject.set(x, "taskbarElement", js.undefined)
       
@@ -4161,7 +4161,7 @@ object Gantt {
     
     /** Returns the data of edited record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns 'true' if taskbar is dragged.
       */
@@ -4169,7 +4169,7 @@ object Gantt {
     
     /** Returns the field values of record being edited.
       */
-    var editingFields: js.UndefOr[js.Any] = js.undefined
+    var editingFields: js.UndefOr[Any] = js.undefined
     
     /** Returns 'true' if taskbar is left resized.
       */
@@ -4177,11 +4177,11 @@ object Gantt {
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous data value of edited record.
       */
-    var previousData: js.UndefOr[js.Any] = js.undefined
+    var previousData: js.UndefOr[Any] = js.undefined
     
     /** Returns 'true' if taskbar is progress resized.
       */
@@ -4204,7 +4204,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -4212,7 +4212,7 @@ object Gantt {
       
       inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
       
-      inline def setEditingFields(value: js.Any): Self = StObject.set(x, "editingFields", value.asInstanceOf[js.Any])
+      inline def setEditingFields(value: Any): Self = StObject.set(x, "editingFields", value.asInstanceOf[js.Any])
       
       inline def setEditingFieldsUndefined: Self = StObject.set(x, "editingFields", js.undefined)
       
@@ -4220,11 +4220,11 @@ object Gantt {
       
       inline def setLeftResizingUndefined: Self = StObject.set(x, "leftResizing", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousData(value: js.Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
+      inline def setPreviousData(value: Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
       
       inline def setPreviousDataUndefined: Self = StObject.set(x, "previousData", js.undefined)
       
@@ -4246,11 +4246,11 @@ object Gantt {
     
     /** Returns the field values of record being edited.
       */
-    var editingFields: js.UndefOr[js.Any] = js.undefined
+    var editingFields: js.UndefOr[Any] = js.undefined
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns duration value will be round-off or not.
       */
@@ -4258,7 +4258,7 @@ object Gantt {
     
     /** Returns the row object being edited.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4277,11 +4277,11 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEditingFields(value: js.Any): Self = StObject.set(x, "editingFields", value.asInstanceOf[js.Any])
+      inline def setEditingFields(value: Any): Self = StObject.set(x, "editingFields", value.asInstanceOf[js.Any])
       
       inline def setEditingFieldsUndefined: Self = StObject.set(x, "editingFields", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4289,7 +4289,7 @@ object Gantt {
       
       inline def setRoundOffDurationUndefined: Self = StObject.set(x, "roundOffDuration", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -4307,7 +4307,7 @@ object Gantt {
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the toolbar item on which mouse click has been performed
       */
@@ -4315,7 +4315,7 @@ object Gantt {
     
     /** Returns the Gantt model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4334,7 +4334,7 @@ object Gantt {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
@@ -4342,7 +4342,7 @@ object Gantt {
       
       inline def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4381,7 +4381,7 @@ object Gantt {
       
       inline def setCustomToolbarItemsUndefined: Self = StObject.set(x, "customToolbarItems", js.undefined)
       
-      inline def setCustomToolbarItemsVarargs(value: ToolbarSettingsCustomToolbarItem*): Self = StObject.set(x, "customToolbarItems", js.Array(value :_*))
+      inline def setCustomToolbarItemsVarargs(value: ToolbarSettingsCustomToolbarItem*): Self = StObject.set(x, "customToolbarItems", js.Array(value*))
       
       inline def setShowToolbar(value: Boolean): Self = StObject.set(x, "showToolbar", value.asInstanceOf[js.Any])
       
@@ -4391,7 +4391,7 @@ object Gantt {
       
       inline def setToolbarItemsUndefined: Self = StObject.set(x, "toolbarItems", js.undefined)
       
-      inline def setToolbarItemsVarargs(value: (ToolbarItems | String)*): Self = StObject.set(x, "toolbarItems", js.Array(value :_*))
+      inline def setToolbarItemsVarargs(value: (ToolbarItems | String)*): Self = StObject.set(x, "toolbarItems", js.Array(value*))
     }
   }
   

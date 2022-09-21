@@ -10,10 +10,10 @@ generate random IDs and avoid collisions
 | ------------------ | :-------------: |
 | Full name          | hat |
 | Keywords           | id, uid, uuid, random, hat, rack, unique |
-| # releases         | 0 |
-| # dependents       | 254 |
-| # downloads        | 12022316 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1014191.6666666666 |
+| # stars            | 384.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-hat#readme)

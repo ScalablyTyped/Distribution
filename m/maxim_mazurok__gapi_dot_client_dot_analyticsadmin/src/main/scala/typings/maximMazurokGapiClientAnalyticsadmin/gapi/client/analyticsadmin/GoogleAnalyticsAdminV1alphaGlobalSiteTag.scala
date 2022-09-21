@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleAnalyticsAdminV1alphaGlobalSiteTag extends StObject {
   
+  /**
+    * Output only. Resource name for this GlobalSiteTag resource. Format: properties/{property_id}/dataStreams/{stream_id}/globalSiteTag Example:
+    * "properties/123/dataStreams/456/globalSiteTag"
+    */
+  var name: js.UndefOr[String] = js.undefined
+  
   /** Immutable. JavaScript code snippet to be pasted as the first item into the head tag of every webpage to measure. */
   var snippet: js.UndefOr[String] = js.undefined
 }
@@ -17,6 +23,10 @@ object GoogleAnalyticsAdminV1alphaGlobalSiteTag {
   }
   
   extension [Self <: GoogleAnalyticsAdminV1alphaGlobalSiteTag](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     

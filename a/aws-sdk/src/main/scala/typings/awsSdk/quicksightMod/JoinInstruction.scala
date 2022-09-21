@@ -7,22 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JoinInstruction extends StObject {
   
   /**
-    * Left operand.
+    * Join key properties of the left operand.
+    */
+  var LeftJoinKeyProperties: js.UndefOr[JoinKeyProperties] = js.undefined
+  
+  /**
+    * The operand on the left side of a join.
     */
   var LeftOperand: LogicalTableId
   
   /**
-    * On Clause.
+    * The join instructions provided in the ON clause of a join.
     */
   var OnClause: typings.awsSdk.quicksightMod.OnClause
   
   /**
-    * Right operand.
+    * Join key properties of the right operand.
+    */
+  var RightJoinKeyProperties: js.UndefOr[JoinKeyProperties] = js.undefined
+  
+  /**
+    * The operand on the right side of a join.
     */
   var RightOperand: LogicalTableId
   
   /**
-    * Type.
+    * The type of join that it is.
     */
   var Type: JoinType
 }
@@ -35,9 +45,17 @@ object JoinInstruction {
   
   extension [Self <: JoinInstruction](x: Self) {
     
+    inline def setLeftJoinKeyProperties(value: JoinKeyProperties): Self = StObject.set(x, "LeftJoinKeyProperties", value.asInstanceOf[js.Any])
+    
+    inline def setLeftJoinKeyPropertiesUndefined: Self = StObject.set(x, "LeftJoinKeyProperties", js.undefined)
+    
     inline def setLeftOperand(value: LogicalTableId): Self = StObject.set(x, "LeftOperand", value.asInstanceOf[js.Any])
     
     inline def setOnClause(value: OnClause): Self = StObject.set(x, "OnClause", value.asInstanceOf[js.Any])
+    
+    inline def setRightJoinKeyProperties(value: JoinKeyProperties): Self = StObject.set(x, "RightJoinKeyProperties", value.asInstanceOf[js.Any])
+    
+    inline def setRightJoinKeyPropertiesUndefined: Self = StObject.set(x, "RightJoinKeyProperties", js.undefined)
     
     inline def setRightOperand(value: LogicalTableId): Self = StObject.set(x, "RightOperand", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "WebXRBackgroundRemover")
 @js.native
-class WebXRBackgroundRemover protected ()
+open class WebXRBackgroundRemover protected ()
   extends typings.babylonjs.legacyMod.WebXRBackgroundRemover {
   /**
     * constructs a new background remover module

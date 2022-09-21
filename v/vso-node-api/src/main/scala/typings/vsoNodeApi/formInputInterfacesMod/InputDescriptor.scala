@@ -90,7 +90,7 @@ object InputDescriptor {
     
     inline def setDependencyInputIds(value: js.Array[String]): Self = StObject.set(x, "dependencyInputIds", value.asInstanceOf[js.Any])
     
-    inline def setDependencyInputIdsVarargs(value: String*): Self = StObject.set(x, "dependencyInputIds", js.Array(value :_*))
+    inline def setDependencyInputIdsVarargs(value: String*): Self = StObject.set(x, "dependencyInputIds", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

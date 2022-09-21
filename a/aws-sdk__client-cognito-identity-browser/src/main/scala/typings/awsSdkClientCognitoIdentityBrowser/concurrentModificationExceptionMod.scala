@@ -8,5 +8,5 @@ object concurrentModificationExceptionMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/ConcurrentModificationException", "ConcurrentModificationException")
   @js.native
-  val ConcurrentModificationException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ConcurrentModificationException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

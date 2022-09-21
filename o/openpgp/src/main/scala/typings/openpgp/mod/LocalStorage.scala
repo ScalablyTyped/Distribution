@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This object is used for storing and retrieving configuration from HTML5 local storage.
   */
-class LocalStorage () extends StObject {
+open class LocalStorage () extends StObject {
   
   /**
     * Reads the config out of the HTML5 local storage

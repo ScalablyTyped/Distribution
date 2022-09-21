@@ -68,7 +68,7 @@ object IMarker {
     
     inline def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
-    inline def setRelatedInformationVarargs(value: IRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value :_*))
+    inline def setRelatedInformationVarargs(value: IRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value*))
     
     inline def setResource(value: Uri): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
@@ -86,6 +86,6 @@ object IMarker {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: MarkerTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: MarkerTag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

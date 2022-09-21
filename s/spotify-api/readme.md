@@ -10,9 +10,9 @@ API for the new "Spotify Web API"
 | Full name          | spotify-api |
 | Keywords           | spotify, web, api, rest |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 581 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 103.33333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/spotify-api)

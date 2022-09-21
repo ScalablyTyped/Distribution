@@ -9,7 +9,7 @@ object shaderDefineArithmeticOperatorMod {
   
   @JSImport("babylonjs/Engines/Processors/Expressions/Operators/shaderDefineArithmeticOperator", "ShaderDefineArithmeticOperator")
   @js.native
-  class ShaderDefineArithmeticOperator protected () extends ShaderDefineExpression {
+  open class ShaderDefineArithmeticOperator protected () extends ShaderDefineExpression {
     def this(define: String, operand: String, testValue: String) = this()
     
     var define: String = js.native

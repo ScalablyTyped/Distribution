@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "BaseBrush")
 @js.native
-class BaseBrush () extends StObject {
+open class BaseBrush () extends StObject {
   
   /**
     * Color of a brush
@@ -14,11 +14,9 @@ class BaseBrush () extends StObject {
   var color: String = js.native
   
   /**
-    * Sets shadow of an object
-    * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
+    * Discard points that are less than `decimate` pixel distant from each other
     */
-  def setShadow(options: String): BaseBrush = js.native
-  def setShadow(options: js.Any): BaseBrush = js.native
+  var decimate: Double = js.native
   
   /**
     * Shadow object representing shadow of this shape.
@@ -30,7 +28,7 @@ class BaseBrush () extends StObject {
   /**
     * Stroke Dash Array.
     */
-  var strokeDashArray: js.Array[js.Any] = js.native
+  var strokeDashArray: js.Array[Any] = js.native
   
   /**
     * Line endings style of a brush (one of "butt", "round", "square")

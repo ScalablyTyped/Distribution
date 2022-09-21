@@ -19,7 +19,7 @@ trait FeedIdFields extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** The Content API Supplemental Feed ID. */
+  /** The Content API Supplemental Feed ID. If present then product insertion applies to the data in a supplemental feed. */
   var feedId: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */

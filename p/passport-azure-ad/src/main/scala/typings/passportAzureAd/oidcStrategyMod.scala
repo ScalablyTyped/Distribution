@@ -1,8 +1,6 @@
 package typings.passportAzureAd
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passport.mod.Strategy
 import typings.passportAzureAd.anon.FamilyName
 import typings.passportAzureAd.anon.Iv
@@ -16,6 +14,7 @@ import typings.passportAzureAd.passportAzureAdStrings.code
 import typings.passportAzureAd.passportAzureAdStrings.form_post
 import typings.passportAzureAd.passportAzureAdStrings.id_token
 import typings.passportAzureAd.passportAzureAdStrings.query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,13 +23,22 @@ object oidcStrategyMod {
   
   @JSImport("passport-azure-ad/oidc-strategy", "OIDCStrategy")
   @js.native
-  class OIDCStrategy protected ()
+  open class OIDCStrategy protected ()
     extends StObject
        with Strategy {
     def this(options: IOIDCStrategyOptionWithRequest, verify: VerifyOIDCFunctionWithReq) = this()
     def this(options: IOIDCStrategyOptionWithoutRequest, verify: VerifyOIDCFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
     
     @JSName("name")
     var name_OIDCStrategy: String = js.native
@@ -93,7 +101,7 @@ object oidcStrategyMod {
       
       inline def setCookieEncryptionKeysUndefined: Self = StObject.set(x, "cookieEncryptionKeys", js.undefined)
       
-      inline def setCookieEncryptionKeysVarargs(value: Iv*): Self = StObject.set(x, "cookieEncryptionKeys", js.Array(value :_*))
+      inline def setCookieEncryptionKeysVarargs(value: Iv*): Self = StObject.set(x, "cookieEncryptionKeys", js.Array(value*))
       
       inline def setCookieSameSite(value: Boolean): Self = StObject.set(x, "cookieSameSite", value.asInstanceOf[js.Any])
       
@@ -121,7 +129,7 @@ object oidcStrategyMod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
       
@@ -185,13 +193,13 @@ object oidcStrategyMod {
   
   trait IProfile extends StObject {
     
-    var _json: js.UndefOr[js.Any] = js.undefined
+    var _json: js.UndefOr[Any] = js.undefined
     
     var _raw: js.UndefOr[String] = js.undefined
     
     var displayName: js.UndefOr[String] = js.undefined
     
-    var emails: js.UndefOr[js.Any] = js.undefined
+    var emails: js.UndefOr[Any] = js.undefined
     
     var name: js.UndefOr[FamilyName] = js.undefined
     
@@ -214,7 +222,7 @@ object oidcStrategyMod {
       
       inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      inline def setEmails(value: js.Any): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+      inline def setEmails(value: Any): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
       
       inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
       
@@ -234,7 +242,7 @@ object oidcStrategyMod {
       
       inline def setUpnUndefined: Self = StObject.set(x, "upn", js.undefined)
       
-      inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
       
       inline def set_jsonUndefined: Self = StObject.set(x, "_json", js.undefined)
       
@@ -264,41 +272,65 @@ object oidcStrategyMod {
     /* profile */ IProfile, 
     /* access_token */ String, 
     /* refresh_token */ String, 
-    /* params */ js.Any, 
+    /* params */ Any, 
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function8[
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 
-    /* jwtClaims */ js.Any, 
+    /* jwtClaims */ Any, 
     /* access_token */ String, 
     /* refresh_token */ String, 
-    /* params */ js.Any, 
+    /* params */ Any, 
     /* done */ VerifyCallback, 
     Unit
   ])
   
   type VerifyOIDCFunctionWithReq = (js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* profile */ IProfile, 
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function4[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* iss */ String, 
     /* sub */ String, 
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function5[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function7[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 
@@ -307,24 +339,36 @@ object oidcStrategyMod {
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function8[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 
     /* access_token */ String, 
     /* refresh_token */ String, 
-    /* params */ js.Any, 
+    /* params */ Any, 
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function9[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 
-    /* jwtClaims */ js.Any, 
+    /* jwtClaims */ Any, 
     /* access_token */ String, 
     /* refresh_token */ String, 
-    /* params */ js.Any, 
+    /* params */ Any, 
     /* done */ VerifyCallback, 
     Unit
   ])

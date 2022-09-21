@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.SignatureBaseKlVp")
 @js.native
-class SignatureBaseKlVp[T /* <: typings.ndnJs.signatureMod.Signature */] ()
+open class SignatureBaseKlVp[T /* <: typings.ndnJs.signatureMod.Signature */] ()
   extends typings.ndnJs.mod.SignatureBaseKlVp[T]

@@ -10,7 +10,7 @@ object waveBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/waveBlock", "WaveBlock")
   @js.native
-  class WaveBlock protected () extends NodeMaterialBlock {
+  open class WaveBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new WaveBlock
       * @param name defines the block name

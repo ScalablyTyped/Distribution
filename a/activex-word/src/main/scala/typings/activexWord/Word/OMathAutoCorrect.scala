@@ -14,7 +14,7 @@ trait OMathAutoCorrect extends StObject {
   
   val Functions: OMathRecognizedFunctions
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReplaceText: Boolean
   
@@ -30,7 +30,7 @@ object OMathAutoCorrect {
     Creator: Double,
     Entries: OMathAutoCorrectEntries,
     Functions: OMathRecognizedFunctions,
-    Parent: js.Any,
+    Parent: Any,
     ReplaceText: Boolean,
     UseOutsideOMath: Boolean,
     WordDotOMathAutoCorrect_typekey: OMathAutoCorrect
@@ -50,7 +50,7 @@ object OMathAutoCorrect {
     
     inline def setFunctions(value: OMathRecognizedFunctions): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReplaceText(value: Boolean): Self = StObject.set(x, "ReplaceText", value.asInstanceOf[js.Any])
     

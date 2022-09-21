@@ -6,7 +6,6 @@ import typings.meyda.anon.Specific
 import typings.std.ArrayLike
 import typings.std.AudioContext
 import typings.std.AudioNode
-import typings.std.Float32Array
 import typings.std.ScriptProcessorNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ object mod {
   
   @JSImport("meyda", "MeydaAnalyzer")
   @js.native
-  class MeydaAnalyzer () extends StObject {
+  open class MeydaAnalyzer () extends StObject {
     
     def get(): PartialMeydaFeaturesObjec | Null = js.native
     def get(features: js.Array[MeydaAudioFeature]): PartialMeydaFeaturesObjec | Null = js.native
@@ -62,7 +61,7 @@ object mod {
   
   @JSImport("meyda", "featureExtractors")
   @js.native
-  val featureExtractors: js.Any = js.native
+  val featureExtractors: Any = js.native
   
   @JSImport("meyda", "melBands")
   @js.native
@@ -140,7 +139,7 @@ object mod {
       
       inline def setFeatureExtractorsUndefined: Self = StObject.set(x, "featureExtractors", js.undefined)
       
-      inline def setFeatureExtractorsVarargs(value: MeydaAudioFeature*): Self = StObject.set(x, "featureExtractors", js.Array(value :_*))
+      inline def setFeatureExtractorsVarargs(value: MeydaAudioFeature*): Self = StObject.set(x, "featureExtractors", js.Array(value*))
       
       inline def setHopSize(value: Double): Self = StObject.set(x, "hopSize", value.asInstanceOf[js.Any])
       
@@ -242,7 +241,7 @@ object mod {
   
   trait MeydaFeaturesObject extends StObject {
     
-    var amplitudeSpectrum: Float32Array
+    var amplitudeSpectrum: js.typedarray.Float32Array
     
     var buffer: js.Array[Double]
     
@@ -260,7 +259,7 @@ object mod {
     
     var perceptualSpread: Double
     
-    var powerSpectrum: Float32Array
+    var powerSpectrum: js.typedarray.Float32Array
     
     var rms: Double
     
@@ -283,7 +282,7 @@ object mod {
   object MeydaFeaturesObject {
     
     inline def apply(
-      amplitudeSpectrum: Float32Array,
+      amplitudeSpectrum: js.typedarray.Float32Array,
       buffer: js.Array[Double],
       chroma: js.Array[Double],
       complexSpectrum: Imag,
@@ -292,7 +291,7 @@ object mod {
       mfcc: js.Array[Double],
       perceptualSharpness: Double,
       perceptualSpread: Double,
-      powerSpectrum: Float32Array,
+      powerSpectrum: js.typedarray.Float32Array,
       rms: Double,
       spectralCentroid: Double,
       spectralFlatness: Double,
@@ -309,15 +308,15 @@ object mod {
     
     extension [Self <: MeydaFeaturesObject](x: Self) {
       
-      inline def setAmplitudeSpectrum(value: Float32Array): Self = StObject.set(x, "amplitudeSpectrum", value.asInstanceOf[js.Any])
+      inline def setAmplitudeSpectrum(value: js.typedarray.Float32Array): Self = StObject.set(x, "amplitudeSpectrum", value.asInstanceOf[js.Any])
       
       inline def setBuffer(value: js.Array[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      inline def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value :_*))
+      inline def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value*))
       
       inline def setChroma(value: js.Array[Double]): Self = StObject.set(x, "chroma", value.asInstanceOf[js.Any])
       
-      inline def setChromaVarargs(value: Double*): Self = StObject.set(x, "chroma", js.Array(value :_*))
+      inline def setChromaVarargs(value: Double*): Self = StObject.set(x, "chroma", js.Array(value*))
       
       inline def setComplexSpectrum(value: Imag): Self = StObject.set(x, "complexSpectrum", value.asInstanceOf[js.Any])
       
@@ -327,13 +326,13 @@ object mod {
       
       inline def setMfcc(value: js.Array[Double]): Self = StObject.set(x, "mfcc", value.asInstanceOf[js.Any])
       
-      inline def setMfccVarargs(value: Double*): Self = StObject.set(x, "mfcc", js.Array(value :_*))
+      inline def setMfccVarargs(value: Double*): Self = StObject.set(x, "mfcc", js.Array(value*))
       
       inline def setPerceptualSharpness(value: Double): Self = StObject.set(x, "perceptualSharpness", value.asInstanceOf[js.Any])
       
       inline def setPerceptualSpread(value: Double): Self = StObject.set(x, "perceptualSpread", value.asInstanceOf[js.Any])
       
-      inline def setPowerSpectrum(value: Float32Array): Self = StObject.set(x, "powerSpectrum", value.asInstanceOf[js.Any])
+      inline def setPowerSpectrum(value: js.typedarray.Float32Array): Self = StObject.set(x, "powerSpectrum", value.asInstanceOf[js.Any])
       
       inline def setRms(value: Double): Self = StObject.set(x, "rms", value.asInstanceOf[js.Any])
       

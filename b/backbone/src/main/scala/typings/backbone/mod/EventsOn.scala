@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventsOn[BaseT] extends StObject {
   
   def apply[T /* <: BaseT */](eventMap: EventMap): T = js.native
-  def apply[T /* <: BaseT */](eventMap: EventMap, context: js.Any): T = js.native
+  def apply[T /* <: BaseT */](eventMap: EventMap, context: Any): T = js.native
   def apply[T /* <: BaseT */](eventName: String, callback: EventHandler): T = js.native
-  def apply[T /* <: BaseT */](eventName: String, callback: EventHandler, context: js.Any): T = js.native
+  def apply[T /* <: BaseT */](eventName: String, callback: EventHandler, context: Any): T = js.native
 }

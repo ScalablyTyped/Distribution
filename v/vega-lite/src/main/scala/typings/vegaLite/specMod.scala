@@ -1,9 +1,8 @@
 package typings.vegaLite
 
 import typings.vegaLite.channeldefMod.Field
-import typings.vegaLite.channeldefMod.FieldName
+import typings.vegaLite.encodingMod.Encoding
 import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.parameterMod.Parameter
 import typings.vegaLite.repeatMod.RepeatSpec
 import typings.vegaLite.specBaseMod.BaseSpec
 import typings.vegaLite.specConcatMod.GenericConcatSpec
@@ -14,22 +13,22 @@ import typings.vegaLite.specFacetMod.FacetMapping
 import typings.vegaLite.specFacetMod.GenericFacetSpec
 import typings.vegaLite.specLayerMod.GenericLayerSpec
 import typings.vegaLite.specLayerMod.LayerSpec
-import typings.vegaLite.specLayerMod.NormalizedLayerSpec
-import typings.vegaLite.specUnitMod.FacetedUnitSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
-import typings.vegaLite.specUnitMod.NormalizedUnitSpec
+import typings.vegaLite.specUnitMod.TopLevelUnitSpec
 import typings.vegaLite.specUnitMod.UnitSpec
 import typings.vegaLite.specUnitMod.UnitSpecWithFrame
 import typings.vegaLite.srcConfigMod.Config
 import typings.vegaLite.srcDataMod.Data
-import typings.vegaLite.srcMarkMod.AnyMark
 import typings.vegaLite.srcResolveMod.Resolve
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.titleMod.TitleParams
 import typings.vegaLite.toplevelMod.AutoSizeParams
 import typings.vegaLite.toplevelMod.AutosizeType
 import typings.vegaLite.toplevelMod.Datasets
 import typings.vegaLite.toplevelMod.Padding
 import typings.vegaLite.toplevelMod.TopLevel
+import typings.vegaLite.toplevelMod.TopLevelParameter
 import typings.vegaLite.transformMod.Transform
 import typings.vegaLite.utilMod.Dict
 import typings.vegaLite.vegaLiteStrings.flush
@@ -63,23 +62,21 @@ object specMod {
   
   inline def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean]
   
-  type GenericSpec[U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, R /* <: RepeatSpec */, F /* <: Field */] = U | L | R | (GenericFacetSpec[U, L, F]) | (GenericConcatSpec[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-lite.vega-lite/build/src/spec.GenericSpec<U, L, R, F> */ js.Object
-  ]) | (GenericVConcatSpec[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-lite.vega-lite/build/src/spec.GenericSpec<U, L, R, F> */ js.Object
-  ]) | (GenericHConcatSpec[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias vega-lite.vega-lite/build/src/spec.GenericSpec<U, L, R, F> */ js.Object
-  ])
+  type GenericSpec[U /* <: GenericUnitSpec[Encoding[F], Any, SelectionParameter[SelectionType]] */, L /* <: GenericLayerSpec[U] */, R /* <: RepeatSpec */, F /* <: Field */] = U | L | R | (GenericFacetSpec[U, L, F]) | GenericConcatSpec[Any] | GenericVConcatSpec[Any] | GenericHConcatSpec[Any]
   
-  type NormalizedSpec = GenericSpec[NormalizedUnitSpec, NormalizedLayerSpec, scala.Nothing, FieldName]
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped vega-lite.vega-lite/build/src/spec/unit.FacetedUnitSpec<vega-lite.vega-lite/build/src/channeldef.Field, vega-lite.vega-lite/build/src/selection.SelectionParameter<vega-lite.vega-lite/build/src/selection.SelectionType>> | vega-lite.vega-lite/build/src/spec/layer.LayerSpec<vega-lite.vega-lite/build/src/channeldef.Field> | vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec | vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<vega-lite.vega-lite/build/src/spec/unit.FacetedUnitSpec<vega-lite.vega-lite/build/src/channeldef.Field, vega-lite.vega-lite/build/src/selection.SelectionParameter<vega-lite.vega-lite/build/src/selection.SelectionType>>, vega-lite.vega-lite/build/src/spec/layer.LayerSpec<vega-lite.vega-lite/build/src/channeldef.Field>, vega-lite.vega-lite/build/src/channeldef.Field> | vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> | vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> | vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ trait NonNormalizedSpec extends StObject
   
-  /* Inlined vega-lite.vega-lite/build/src/spec/toplevel.TopLevel<vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<vega-lite.vega-lite/build/src/spec/unit.UnitSpecWithFrame, vega-lite.vega-lite/build/src/spec/layer.LayerSpec, vega-lite.vega-lite/build/src/channeldef.Field>> & vega-lite.vega-lite/build/src/spec/base.DataMixins */
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped vega-lite.vega-lite/build/src/spec/unit.NormalizedUnitSpec | vega-lite.vega-lite/build/src/spec/layer.NormalizedLayerSpec | never | vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<vega-lite.vega-lite/build/src/spec/unit.NormalizedUnitSpec, vega-lite.vega-lite/build/src/spec/layer.NormalizedLayerSpec, vega-lite.vega-lite/build/src/channeldef.FieldName> | vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> | vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> | vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ trait NormalizedSpec extends StObject
+  
+  /* Inlined vega-lite.vega-lite/build/src/spec/toplevel.TopLevel<vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<vega-lite.vega-lite/build/src/spec/unit.UnitSpecWithFrame<vega-lite.vega-lite/build/src/channeldef.Field>, vega-lite.vega-lite/build/src/spec/layer.LayerSpec<vega-lite.vega-lite/build/src/channeldef.Field>, vega-lite.vega-lite/build/src/channeldef.Field>> & vega-lite.vega-lite/build/src/spec/base.DataMixins */
   trait TopLevelFacetSpec
     extends StObject
        with _TopLevelSpec {
     
     /**
-      * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v4.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
+      * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v5.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
       * @format uri
       */
     @JSName("$schema")
@@ -194,9 +191,9 @@ object specMod {
     var padding: js.UndefOr[Padding | ExprRef | SignalRef] = js.undefined
     
     /**
-      * Dynamic variables that parameterize a visualization.
+      * Dynamic variables or selections that parameterize a visualization.
       */
-    var params: js.UndefOr[js.Array[Parameter]] = js.undefined
+    var params: js.UndefOr[js.Array[TopLevelParameter]] = js.undefined
     
     /**
       * Scale, axis, and legend resolutions for view composition specifications.
@@ -215,7 +212,7 @@ object specMod {
     /**
       * A specification of the view that gets faceted.
       */
-    var spec: LayerSpec | UnitSpecWithFrame
+    var spec: LayerSpec[Field] | UnitSpecWithFrame[Field]
     
     /**
       * Title for the plot.
@@ -231,14 +228,14 @@ object specMod {
       * Optional metadata that will be passed to Vega.
       * This object is completely ignored by Vega and Vega-Lite and can be used for custom metadata.
       */
-    var usermeta: js.UndefOr[Dict[js.Any]] = js.undefined
+    var usermeta: js.UndefOr[Dict[Any]] = js.undefined
   }
   object TopLevelFacetSpec {
     
     inline def apply(
       data: (js.UndefOr[Data | Null]) & Data,
       facet: (FacetFieldDef[Field, ExprRef | SignalRef]) | (FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]]),
-      spec: LayerSpec | UnitSpecWithFrame
+      spec: LayerSpec[Field] | UnitSpecWithFrame[Field]
     ): TopLevelFacetSpec = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], facet = facet.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopLevelFacetSpec]
@@ -300,11 +297,11 @@ object specMod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setParams(value: js.Array[Parameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[TopLevelParameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: Parameter*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: TopLevelParameter*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
@@ -314,36 +311,36 @@ object specMod {
       
       inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       
-      inline def setSpec(value: LayerSpec | UnitSpecWithFrame): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: LayerSpec[Field] | UnitSpecWithFrame[Field]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
       inline def setTitle(value: Text | (TitleParams[ExprRef | SignalRef])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
       
       inline def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value*))
       
-      inline def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+      inline def setUsermeta(value: Dict[Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
       
       inline def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)
     }
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vegaLite.specUnitMod.TopLevelUnitSpec
+    - typings.vegaLite.specUnitMod.TopLevelUnitSpec[typings.vegaLite.channeldefMod.Field]
     - typings.vegaLite.specMod.TopLevelFacetSpec
-    - typings.vegaLite.anon.TopLevelLayerSpec
+    - typings.vegaLite.anon.TopLevelLayerSpecField
     - typings.vegaLite.toplevelMod.TopLevel[typings.vegaLite.repeatMod.RepeatSpec]
     - typings.vegaLite.anon.TopLevelGenericConcatSpec
     - typings.vegaLite.anon.TopLevelGenericVConcatSpe
     - typings.vegaLite.anon.TopLevelGenericHConcatSpe
   */
-  type TopLevelSpec = _TopLevelSpec | TopLevel[RepeatSpec]
+  type TopLevelSpec = _TopLevelSpec | TopLevelUnitSpec[Field] | TopLevel[RepeatSpec]
   
   trait _TopLevelSpec extends StObject
   object _TopLevelSpec {
@@ -351,35 +348,30 @@ object specMod {
     inline def TopLevelFacetSpec(
       data: (js.UndefOr[Data | Null]) & Data,
       facet: (FacetFieldDef[Field, ExprRef | SignalRef]) | (FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]]),
-      spec: LayerSpec | UnitSpecWithFrame
+      spec: LayerSpec[Field] | UnitSpecWithFrame[Field]
     ): typings.vegaLite.specMod.TopLevelFacetSpec = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], facet = facet.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.specMod.TopLevelFacetSpec]
     }
     
-    inline def TopLevelGenericConcatSpec(concat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericConcatSpec = {
+    inline def TopLevelGenericConcatSpec(concat: js.Array[NonNormalizedSpec]): typings.vegaLite.anon.TopLevelGenericConcatSpec = {
       val __obj = js.Dynamic.literal(concat = concat.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.TopLevelGenericConcatSpec]
     }
     
-    inline def TopLevelGenericHConcatSpe(hconcat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericHConcatSpe = {
+    inline def TopLevelGenericHConcatSpe(hconcat: js.Array[NonNormalizedSpec]): typings.vegaLite.anon.TopLevelGenericHConcatSpe = {
       val __obj = js.Dynamic.literal(hconcat = hconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.TopLevelGenericHConcatSpe]
     }
     
-    inline def TopLevelGenericVConcatSpe(vconcat: js.Array[GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, Field]]): typings.vegaLite.anon.TopLevelGenericVConcatSpe = {
+    inline def TopLevelGenericVConcatSpe(vconcat: js.Array[NonNormalizedSpec]): typings.vegaLite.anon.TopLevelGenericVConcatSpe = {
       val __obj = js.Dynamic.literal(vconcat = vconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.TopLevelGenericVConcatSpe]
     }
     
-    inline def TopLevelLayerSpec(layer: js.Array[LayerSpec | UnitSpec]): typings.vegaLite.anon.TopLevelLayerSpec = {
+    inline def TopLevelLayerSpecField(layer: js.Array[LayerSpec[Field] | UnitSpec[Field]]): typings.vegaLite.anon.TopLevelLayerSpecField = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.vegaLite.anon.TopLevelLayerSpec]
-    }
-    
-    inline def TopLevelUnitSpec(data: (js.UndefOr[Data | Null]) & Data, mark: AnyMark): typings.vegaLite.specUnitMod.TopLevelUnitSpec = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.vegaLite.specUnitMod.TopLevelUnitSpec]
+      __obj.asInstanceOf[typings.vegaLite.anon.TopLevelLayerSpecField]
     }
   }
 }

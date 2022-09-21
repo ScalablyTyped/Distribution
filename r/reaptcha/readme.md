@@ -1,7 +1,7 @@
 
 # Scala.js typings for reaptcha
 
-Typings are for version 1.7.2
+Typings are for version 1.12.1
 
 ## Library description:
 Google reCAPTCHA for React
@@ -11,14 +11,11 @@ Google reCAPTCHA for React
 | Full name          | reaptcha |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 572035 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 95400.33333333333 |
+| # stars            | 367.0 |
 
 ## Links
-- [Homepage](https://github.com/sarneeh/reaptcha#readme)
-- [Bugs](https://github.com/sarneeh/reaptcha/issues)
-- [Repository](https://github.com/sarneeh/reaptcha)
 - [Npm](https://www.npmjs.com/package/reaptcha)
     
 

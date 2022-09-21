@@ -76,6 +76,17 @@ trait CardParameters extends StObject {
   var allowedCardNetworks: js.Array[CardNetwork]
   
   /**
+    * Set to `true` to request assuranceDetails.
+    *
+    * If omitted, defaults to `false`.
+    *
+    * You may set if you need object provides information about the validation performed on the returned payment data.
+    *
+    * @default false
+    */
+  var assuranceDetailsRequired: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Optional billing address parameters.
     *
     * If omitted, the default values specified in
@@ -125,11 +136,15 @@ object CardParameters {
     
     inline def setAllowedAuthMethods(value: js.Array[CardAuthMethod]): Self = StObject.set(x, "allowedAuthMethods", value.asInstanceOf[js.Any])
     
-    inline def setAllowedAuthMethodsVarargs(value: CardAuthMethod*): Self = StObject.set(x, "allowedAuthMethods", js.Array(value :_*))
+    inline def setAllowedAuthMethodsVarargs(value: CardAuthMethod*): Self = StObject.set(x, "allowedAuthMethods", js.Array(value*))
     
     inline def setAllowedCardNetworks(value: js.Array[CardNetwork]): Self = StObject.set(x, "allowedCardNetworks", value.asInstanceOf[js.Any])
     
-    inline def setAllowedCardNetworksVarargs(value: CardNetwork*): Self = StObject.set(x, "allowedCardNetworks", js.Array(value :_*))
+    inline def setAllowedCardNetworksVarargs(value: CardNetwork*): Self = StObject.set(x, "allowedCardNetworks", js.Array(value*))
+    
+    inline def setAssuranceDetailsRequired(value: Boolean): Self = StObject.set(x, "assuranceDetailsRequired", value.asInstanceOf[js.Any])
+    
+    inline def setAssuranceDetailsRequiredUndefined: Self = StObject.set(x, "assuranceDetailsRequired", js.undefined)
     
     inline def setBillingAddressParameters(value: BillingAddressParameters): Self = StObject.set(x, "billingAddressParameters", value.asInstanceOf[js.Any])
     
@@ -143,6 +158,6 @@ object CardParameters {
     
     inline def setCardNetworkParametersUndefined: Self = StObject.set(x, "cardNetworkParameters", js.undefined)
     
-    inline def setCardNetworkParametersVarargs(value: CardNetworkParameters*): Self = StObject.set(x, "cardNetworkParameters", js.Array(value :_*))
+    inline def setCardNetworkParametersVarargs(value: CardNetworkParameters*): Self = StObject.set(x, "cardNetworkParameters", js.Array(value*))
   }
 }

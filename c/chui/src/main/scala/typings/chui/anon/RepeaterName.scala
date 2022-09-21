@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RepeaterName extends StObject {
   
-  var repeaterName: js.UndefOr[js.Any] = js.undefined
+  var repeaterName: js.UndefOr[Any] = js.undefined
 }
 object RepeaterName {
   
@@ -17,7 +17,7 @@ object RepeaterName {
   
   extension [Self <: RepeaterName](x: Self) {
     
-    inline def setRepeaterName(value: js.Any): Self = StObject.set(x, "repeaterName", value.asInstanceOf[js.Any])
+    inline def setRepeaterName(value: Any): Self = StObject.set(x, "repeaterName", value.asInstanceOf[js.Any])
     
     inline def setRepeaterNameUndefined: Self = StObject.set(x, "repeaterName", js.undefined)
   }

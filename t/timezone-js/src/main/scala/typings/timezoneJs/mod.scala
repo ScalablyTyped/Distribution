@@ -1,6 +1,5 @@
 package typings.timezoneJs
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("timezone-js", "Date")
   @js.native
-  class Date () extends StObject {
+  open class Date () extends StObject {
     // Note due to naming conflict I have not found a way to introduce the constructor
     // that takes a regular Date object. Instead, I defined it to take an Object.
     def this(date: js.Object) = this()
@@ -137,7 +136,7 @@ object mod {
     def toISOString(): String = js.native
     
     def toJSON(): String = js.native
-    def toJSON(key: js.Any): String = js.native
+    def toJSON(key: Any): String = js.native
     
     def toLocaleDateString(): String = js.native
     
@@ -152,7 +151,7 @@ object mod {
   
   @JSImport("timezone-js", "TimezoneJsLoadingSchemes")
   @js.native
-  class TimezoneJsLoadingSchemes () extends StObject {
+  open class TimezoneJsLoadingSchemes () extends StObject {
     
     var LAZY_LOAD: Double = js.native
     
@@ -171,8 +170,8 @@ object mod {
     
     def getAllZones(): js.Array[String] = js.native
     
-    def init(): js.Any = js.native
-    def init(opts: TimezoneJsOptions): js.Any = js.native
+    def init(): Any = js.native
+    def init(opts: TimezoneJsOptions): Any = js.native
     
     def loadZoneDataFromObject(obj: js.Object): Unit = js.native
     
@@ -180,7 +179,7 @@ object mod {
     
     var loadingSchemes: TimezoneJsLoadingSchemes = js.native
     
-    def transport(opts: TimezoneJsOptions): js.Any = js.native
+    def transport(opts: TimezoneJsOptions): Any = js.native
     
     var zoneFileBasePath: String = js.native
   }
@@ -189,7 +188,7 @@ object mod {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var error: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     var success: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.undefined
     
@@ -208,7 +207,7 @@ object mod {
       
       inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      inline def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       

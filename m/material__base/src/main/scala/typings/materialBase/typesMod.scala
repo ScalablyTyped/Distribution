@@ -1,11 +1,17 @@
 package typings.materialBase
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
+  
+  @js.native
+  trait Constructor[T]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ Any, T]
   
   type CustomEventListener[E /* <: Event */] = js.Function1[/* evt */ E, Unit]
   
@@ -16,20 +22,22 @@ object typesMod {
     - typings.materialBase.materialBaseStrings.animationiteration
     - typings.materialBase.materialBaseStrings.animationstart
     - typings.materialBase.materialBaseStrings.auxclick
+    - typings.materialBase.materialBaseStrings.beforeinput
     - typings.materialBase.materialBaseStrings.blur
-    - typings.materialBase.materialBaseStrings.cancel
     - typings.materialBase.materialBaseStrings.canplay
     - typings.materialBase.materialBaseStrings.canplaythrough
     - typings.materialBase.materialBaseStrings.change
     - typings.materialBase.materialBaseStrings.click
     - typings.materialBase.materialBaseStrings.close
+    - typings.materialBase.materialBaseStrings.compositionend
+    - typings.materialBase.materialBaseStrings.compositionstart
+    - typings.materialBase.materialBaseStrings.compositionupdate
     - typings.materialBase.materialBaseStrings.contextmenu
     - typings.materialBase.materialBaseStrings.cuechange
     - typings.materialBase.materialBaseStrings.dblclick
     - typings.materialBase.materialBaseStrings.drag
     - typings.materialBase.materialBaseStrings.dragend
     - typings.materialBase.materialBaseStrings.dragenter
-    - typings.materialBase.materialBaseStrings.dragexit
     - typings.materialBase.materialBaseStrings.dragleave
     - typings.materialBase.materialBaseStrings.dragover
     - typings.materialBase.materialBaseStrings.dragstart
@@ -41,6 +49,7 @@ object typesMod {
     - typings.materialBase.materialBaseStrings.focus
     - typings.materialBase.materialBaseStrings.focusin
     - typings.materialBase.materialBaseStrings.focusout
+    - typings.materialBase.materialBaseStrings.formdata
     - typings.materialBase.materialBaseStrings.gotpointercapture
     - typings.materialBase.materialBaseStrings.input
     - typings.materialBase.materialBaseStrings.invalid
@@ -81,6 +90,7 @@ object typesMod {
     - typings.materialBase.materialBaseStrings.select
     - typings.materialBase.materialBaseStrings.selectionchange
     - typings.materialBase.materialBaseStrings.selectstart
+    - typings.materialBase.materialBaseStrings.slotchange
     - typings.materialBase.materialBaseStrings.stalled
     - typings.materialBase.materialBaseStrings.submit
     - typings.materialBase.materialBaseStrings.suspend
@@ -96,6 +106,10 @@ object typesMod {
     - typings.materialBase.materialBaseStrings.transitionstart
     - typings.materialBase.materialBaseStrings.volumechange
     - typings.materialBase.materialBaseStrings.waiting
+    - typings.materialBase.materialBaseStrings.webkitanimationend
+    - typings.materialBase.materialBaseStrings.webkitanimationiteration
+    - typings.materialBase.materialBaseStrings.webkitanimationstart
+    - typings.materialBase.materialBaseStrings.webkittransitionend
     - typings.materialBase.materialBaseStrings.wheel
   */
   trait EventType extends StObject
@@ -104,4 +118,19 @@ object typesMod {
     /* import warning: importer.ImportType#apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* evt */ js.Any, 
     Unit
   ]
+  
+  type SpecificWindowEventListener[K /* <: WindowEventType */] = js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.WindowEventMap[K] */ /* evt */ js.Any, 
+    Unit
+  ]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.materialBase.materialBaseStrings.DOMContentLoaded
+    - typings.materialBase.materialBaseStrings.devicemotion
+    - typings.materialBase.materialBaseStrings.deviceorientation
+    - typings.materialBase.materialBaseStrings.gamepadconnected
+    - typings.materialBase.materialBaseStrings.gamepaddisconnected
+    - typings.materialBase.materialBaseStrings.orientationchange
+  */
+  trait WindowEventType extends StObject
 }

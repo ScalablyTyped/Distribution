@@ -13,19 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(sinon: SinonStatic): js.Any = ^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(sinon: SinonStatic, config: Configuration): js.Any = (^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(sinon: SinonStatic): Any = ^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(sinon: SinonStatic, config: Configuration): Any = (^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("sinon-test", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def configureTest(sinon: SinonStatic): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configureTest")(sinon.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def configureTest(sinon: SinonStatic, config: Configuration): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("configureTest")(sinon.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def configureTest(sinon: SinonStatic): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configureTest")(sinon.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def configureTest(sinon: SinonStatic, config: Configuration): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("configureTest")(sinon.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait Configuration extends StObject {
     
-    var injectInto: js.UndefOr[js.Any] = js.undefined
+    var injectInto: js.UndefOr[Any] = js.undefined
     
     var injectIntoThis: js.UndefOr[Boolean] = js.undefined
     
@@ -44,7 +44,7 @@ object mod {
     
     extension [Self <: Configuration](x: Self) {
       
-      inline def setInjectInto(value: js.Any): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
+      inline def setInjectInto(value: Any): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
       
       inline def setInjectIntoThis(value: Boolean): Self = StObject.set(x, "injectIntoThis", value.asInstanceOf[js.Any])
       
@@ -56,7 +56,7 @@ object mod {
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setPropertiesVarargs(value: (spy | stub | mock | clock | server | requests)*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: (spy | stub | mock | clock | server | requests)*): Self = StObject.set(x, "properties", js.Array(value*))
       
       inline def setUseFakeServer(value: Boolean): Self = StObject.set(x, "useFakeServer", value.asInstanceOf[js.Any])
       

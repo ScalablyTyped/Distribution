@@ -29,11 +29,11 @@ trait ListAuditMitigationActionsExecutionsRequest extends StObject {
   /**
     * Specify this filter to limit results to actions for a specific audit mitigation actions task.
     */
-  var taskId: AuditMitigationActionsTaskId
+  var taskId: MitigationActionsTaskId
 }
 object ListAuditMitigationActionsExecutionsRequest {
   
-  inline def apply(findingId: FindingId, taskId: AuditMitigationActionsTaskId): ListAuditMitigationActionsExecutionsRequest = {
+  inline def apply(findingId: FindingId, taskId: MitigationActionsTaskId): ListAuditMitigationActionsExecutionsRequest = {
     val __obj = js.Dynamic.literal(findingId = findingId.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuditMitigationActionsExecutionsRequest]
   }
@@ -54,6 +54,6 @@ object ListAuditMitigationActionsExecutionsRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: MitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

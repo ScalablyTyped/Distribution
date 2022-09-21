@@ -114,6 +114,9 @@ trait Request extends StObject {
   /** Updates the properties of a Shape. */
   var updateShapeProperties: js.UndefOr[UpdateShapePropertiesRequest] = js.undefined
   
+  /** Updates the properties of a Slide */
+  var updateSlideProperties: js.UndefOr[UpdateSlidePropertiesRequest] = js.undefined
+  
   /** Updates the position of a set of slides in the presentation. */
   var updateSlidesPosition: js.UndefOr[UpdateSlidesPositionRequest] = js.undefined
   
@@ -287,6 +290,10 @@ object Request {
     inline def setUpdateShapeProperties(value: UpdateShapePropertiesRequest): Self = StObject.set(x, "updateShapeProperties", value.asInstanceOf[js.Any])
     
     inline def setUpdateShapePropertiesUndefined: Self = StObject.set(x, "updateShapeProperties", js.undefined)
+    
+    inline def setUpdateSlideProperties(value: UpdateSlidePropertiesRequest): Self = StObject.set(x, "updateSlideProperties", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateSlidePropertiesUndefined: Self = StObject.set(x, "updateSlideProperties", js.undefined)
     
     inline def setUpdateSlidesPosition(value: UpdateSlidesPositionRequest): Self = StObject.set(x, "updateSlidesPosition", value.asInstanceOf[js.Any])
     

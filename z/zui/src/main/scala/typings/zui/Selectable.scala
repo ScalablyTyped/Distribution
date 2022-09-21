@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Selectable extends StObject {
   
-  def select(): js.Any = js.native
-  def select(elementOrId: String): js.Any = js.native
-  def select(elementOrId: js.Object): js.Any = js.native
-  def select(elementOrId: JQuery): js.Any = js.native
+  def select(): Any = js.native
+  def select(elementOrId: String): Any = js.native
+  def select(elementOrId: js.Object): Any = js.native
+  def select(elementOrId: JQuery): Any = js.native
   
-  def toggle(): js.Any = js.native
-  def toggle(elementOrId: String): js.Any = js.native
-  def toggle(elementOrId: js.Object): js.Any = js.native
-  def toggle(elementOrId: JQuery): js.Any = js.native
+  def toggle(): Any = js.native
+  def toggle(elementOrId: String): Any = js.native
+  def toggle(elementOrId: js.Object): Any = js.native
+  def toggle(elementOrId: JQuery): Any = js.native
   
-  def unselect(): js.Any = js.native
-  def unselect(elementOrId: String): js.Any = js.native
-  def unselect(elementOrId: js.Object): js.Any = js.native
-  def unselect(elementOrId: JQuery): js.Any = js.native
+  def unselect(): Any = js.native
+  def unselect(elementOrId: String): Any = js.native
+  def unselect(elementOrId: js.Object): Any = js.native
+  def unselect(elementOrId: JQuery): Any = js.native
 }

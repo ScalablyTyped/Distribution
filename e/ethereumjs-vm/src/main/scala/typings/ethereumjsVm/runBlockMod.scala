@@ -3,7 +3,7 @@ package typings.ethereumjsVm
 import typings.ethereumjsVm.ethereumjsVmNumbers.`0`
 import typings.ethereumjsVm.ethereumjsVmNumbers.`1`
 import typings.ethereumjsVm.runTxMod.RunTxResult
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object runBlockMod {
     /**
       * The [`Block`](https://github.com/ethereumjs/ethereumjs-block) to process
       */
-    var block: js.Any
+    var block: Any
     
     /**
       * Whether to generate the stateRoot. If false `runBlock` will check the
@@ -51,14 +51,14 @@ object runBlockMod {
   }
   object RunBlockOpts {
     
-    inline def apply(block: js.Any): RunBlockOpts = {
+    inline def apply(block: Any): RunBlockOpts = {
       val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunBlockOpts]
     }
     
     extension [Self <: RunBlockOpts](x: Self) {
       
-      inline def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
       inline def setGenerate(value: Boolean): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
       
@@ -105,11 +105,11 @@ object runBlockMod {
       
       inline def setReceipts(value: js.Array[TxReceipt]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
       
-      inline def setReceiptsVarargs(value: TxReceipt*): Self = StObject.set(x, "receipts", js.Array(value :_*))
+      inline def setReceiptsVarargs(value: TxReceipt*): Self = StObject.set(x, "receipts", js.Array(value*))
       
       inline def setResults(value: js.Array[RunTxResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: RunTxResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: RunTxResult*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
@@ -128,7 +128,7 @@ object runBlockMod {
     /**
       * Logs emitted
       */
-    var logs: js.Array[js.Any]
+    var logs: js.Array[Any]
     
     /**
       * Status of transaction, `1` if successful, `0` if an exception occured
@@ -137,7 +137,7 @@ object runBlockMod {
   }
   object TxReceipt {
     
-    inline def apply(bitvector: Buffer, gasUsed: Buffer, logs: js.Array[js.Any], status: `0` | `1`): TxReceipt = {
+    inline def apply(bitvector: Buffer, gasUsed: Buffer, logs: js.Array[Any], status: `0` | `1`): TxReceipt = {
       val __obj = js.Dynamic.literal(bitvector = bitvector.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[TxReceipt]
     }
@@ -148,9 +148,9 @@ object runBlockMod {
       
       inline def setGasUsed(value: Buffer): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
-      inline def setLogs(value: js.Array[js.Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: js.Array[Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      inline def setLogsVarargs(value: js.Any*): Self = StObject.set(x, "logs", js.Array(value :_*))
+      inline def setLogsVarargs(value: Any*): Self = StObject.set(x, "logs", js.Array(value*))
       
       inline def setStatus(value: `0` | `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

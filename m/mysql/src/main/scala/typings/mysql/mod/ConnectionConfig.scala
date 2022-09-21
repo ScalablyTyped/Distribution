@@ -75,7 +75,7 @@ trait ConnectionConfig
   /**
     * A custom query format function
     */
-  var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, String]] = js.undefined
+  var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ Any, String]] = js.undefined
   
   /**
     * The path to a unix domain socket to connect to. When used host and port are ignored
@@ -152,19 +152,19 @@ object ConnectionConfig {
     
     inline def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
     
-    inline def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
+    inline def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value*))
     
     inline def setDebug(value: Boolean | (js.Array[String | Types])): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDebugVarargs(value: (String | Types)*): Self = StObject.set(x, "debug", js.Array(value :_*))
+    inline def setDebugVarargs(value: (String | Types)*): Self = StObject.set(x, "debug", js.Array(value*))
     
     inline def setFlags(value: String | js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
@@ -186,7 +186,7 @@ object ConnectionConfig {
     
     inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    inline def setQueryFormat(value: (/* query */ String, /* values */ js.Any) => String): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
+    inline def setQueryFormat(value: (/* query */ String, /* values */ Any) => String): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
     
     inline def setQueryFormatUndefined: Self = StObject.set(x, "queryFormat", js.undefined)
     
@@ -216,7 +216,7 @@ object ConnectionConfig {
     
     inline def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
     
-    inline def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+    inline def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
     
     inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
   }

@@ -9,13 +9,13 @@ trait ReachabilityDetails extends StObject {
   /** The details of a failure or a cancellation of reachability analysis. */
   var error: js.UndefOr[Status] = js.undefined
   
-  /** The overall reachability result of the test. */
+  /** The overall result of the test's configuration analysis. */
   var result: js.UndefOr[String] = js.undefined
   
   /** Result may contain a list of traces if a test has multiple possible paths in the network, such as when destination endpoint is a load balancer with multiple backends. */
   var traces: js.UndefOr[js.Array[Trace]] = js.undefined
   
-  /** The time the reachability state was verified. */
+  /** The time of the configuration analysis. */
   var verifyTime: js.UndefOr[String] = js.undefined
 }
 object ReachabilityDetails {
@@ -39,7 +39,7 @@ object ReachabilityDetails {
     
     inline def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
     
-    inline def setTracesVarargs(value: Trace*): Self = StObject.set(x, "traces", js.Array(value :_*))
+    inline def setTracesVarargs(value: Trace*): Self = StObject.set(x, "traces", js.Array(value*))
     
     inline def setVerifyTime(value: String): Self = StObject.set(x, "verifyTime", value.asInstanceOf[js.Any])
     

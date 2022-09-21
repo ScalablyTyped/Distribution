@@ -12,32 +12,32 @@ object commandBarBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/CommandBar/CommandBar.base", "CommandBarBase")
   @js.native
-  class CommandBarBase protected ()
-    extends Component[ICommandBarProps, js.Object, js.Any]
+  open class CommandBarBase protected ()
+    extends Component[ICommandBarProps, js.Object, Any]
        with ICommandBar {
     def this(props: ICommandBarProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _commandButton: js.Any = js.native
+    /* private */ var _commandButton: Any = js.native
     
-    /* private */ var _computeCacheKey: js.Any = js.native
+    /* private */ var _computeCacheKey: Any = js.native
     
-    /* private */ var _onButtonClick: js.Any = js.native
+    /* private */ var _onButtonClick: Any = js.native
     
-    /* private */ var _onGrowData: js.Any = js.native
+    /* private */ var _onGrowData: Any = js.native
     
-    /* private */ var _onReduceData: js.Any = js.native
+    /* private */ var _onReduceData: Any = js.native
     
-    /* private */ var _onRenderData: js.Any = js.native
+    /* private */ var _onRenderData: Any = js.native
     
-    /* private */ var _onRenderItem: js.Any = js.native
+    /* private */ var _onRenderItem: Any = js.native
     
-    /* private */ var _onRenderOverflowButton: js.Any = js.native
+    /* private */ var _onRenderOverflowButton: Any = js.native
     
-    /* private */ var _overflowSet: js.Any = js.native
+    /* private */ var _overflowSet: Any = js.native
     
-    /* private */ var _resizeGroup: js.Any = js.native
+    /* private */ var _resizeGroup: Any = js.native
     
     /**
       * Sets focus to the active command in the list.
@@ -111,17 +111,17 @@ object commandBarBaseMod {
       
       inline def setFarItemsUndefined: Self = StObject.set(x, "farItems", js.undefined)
       
-      inline def setFarItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "farItems", js.Array(value :_*))
+      inline def setFarItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "farItems", js.Array(value*))
       
       inline def setMinimumOverflowItems(value: Double): Self = StObject.set(x, "minimumOverflowItems", value.asInstanceOf[js.Any])
       
       inline def setOverflowItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "overflowItems", value.asInstanceOf[js.Any])
       
-      inline def setOverflowItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value :_*))
+      inline def setOverflowItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value*))
       
       inline def setPrimaryItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "primaryItems", value.asInstanceOf[js.Any])
       
-      inline def setPrimaryItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "primaryItems", js.Array(value :_*))
+      inline def setPrimaryItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "primaryItems", js.Array(value*))
     }
   }
 }

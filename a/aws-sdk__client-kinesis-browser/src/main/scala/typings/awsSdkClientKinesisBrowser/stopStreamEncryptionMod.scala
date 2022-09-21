@@ -8,5 +8,5 @@ object stopStreamEncryptionMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/StopStreamEncryption", "StopStreamEncryption")
   @js.native
-  val StopStreamEncryption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val StopStreamEncryption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

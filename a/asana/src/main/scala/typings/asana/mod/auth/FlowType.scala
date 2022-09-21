@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FlowType
   extends StObject
-     with Instantiable1[/* options */ js.Any, Flow]
+     with Instantiable1[/* options */ Any, Flow]

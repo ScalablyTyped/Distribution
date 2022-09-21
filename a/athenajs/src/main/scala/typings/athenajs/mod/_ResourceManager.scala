@@ -14,10 +14,10 @@ trait _ResourceManager extends StObject {
   
   def getCanvasFromImage(image: HTMLImageElement): HTMLCanvasElement = js.native
   
-  def getResourceById(id: String): js.Any = js.native
-  def getResourceById(id: String, group: String): js.Any = js.native
-  def getResourceById(id: String, group: String, fullObject: Boolean): js.Any = js.native
-  def getResourceById(id: String, group: Unit, fullObject: Boolean): js.Any = js.native
+  def getResourceById(id: String): Any = js.native
+  def getResourceById(id: String, group: String): Any = js.native
+  def getResourceById(id: String, group: String, fullObject: Boolean): Any = js.native
+  def getResourceById(id: String, group: Unit, fullObject: Boolean): Any = js.native
   
   def loadAudio(res: Res): Promise = js.native
   def loadAudio(res: Res, group: String): Promise = js.native
@@ -30,8 +30,8 @@ trait _ResourceManager extends StObject {
   def loadResources(group: String, progressCb: Callback): Unit = js.native
   def loadResources(group: String, progressCb: Callback, errorCb: Callback): Unit = js.native
   
-  def newResourceFromPool(id: String): js.Any = js.native
+  def newResourceFromPool(id: String): Any = js.native
   
-  def registerScript(id: String, elt: js.Any): Unit = js.native
-  def registerScript(id: String, elt: js.Any, poolSize: Double): Unit = js.native
+  def registerScript(id: String, elt: Any): Unit = js.native
+  def registerScript(id: String, elt: Any, poolSize: Double): Unit = js.native
 }

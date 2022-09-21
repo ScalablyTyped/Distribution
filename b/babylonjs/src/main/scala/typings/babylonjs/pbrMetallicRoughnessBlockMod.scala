@@ -12,38 +12,38 @@ object pbrMetallicRoughnessBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/pbrMetallicRoughnessBlock", "PBRMetallicRoughnessBlock")
   @js.native
-  class PBRMetallicRoughnessBlock protected () extends NodeMaterialBlock {
+  open class PBRMetallicRoughnessBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new ReflectionBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
     
-    /* private */ var _environmentBRDFTexture: js.Any = js.native
+    /* private */ var _environmentBRDFTexture: Any = js.native
     
-    /* private */ var _environmentBrdfSamplerName: js.Any = js.native
+    /* private */ var _environmentBrdfSamplerName: Any = js.native
     
-    /* private */ var _getAlbedoOpacityCode: js.Any = js.native
+    /* private */ var _getAlbedoOpacityCode: Any = js.native
     
-    /* private */ var _getAmbientOcclusionCode: js.Any = js.native
+    /* private */ var _getAmbientOcclusionCode: Any = js.native
     
-    /* private */ var _getReflectivityCode: js.Any = js.native
+    /* private */ var _getReflectivityCode: Any = js.native
     
-    /* private */ var _injectVertexCode: js.Any = js.native
+    /* private */ var _injectVertexCode: Any = js.native
     
-    /* private */ var _invertNormalName: js.Any = js.native
+    /* private */ var _invertNormalName: Any = js.native
     
-    /* private */ var _lightId: js.Any = js.native
+    /* private */ var _lightId: Any = js.native
     
-    /* private */ var _metallicF0Factor: js.Any = js.native
+    /* private */ var _metallicF0Factor: Any = js.native
     
-    /* private */ var _metallicReflectanceColor: js.Any = js.native
+    /* private */ var _metallicReflectanceColor: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _vMetallicReflectanceFactorsName: js.Any = js.native
+    /* private */ var _vMetallicReflectanceFactorsName: Any = js.native
     
-    /* private */ var _vNormalWName: js.Any = js.native
+    /* private */ var _vNormalWName: Any = js.native
     
     /**
       * Gets the alpha output component
@@ -98,7 +98,7 @@ object pbrMetallicRoughnessBlockMod {
     /**
       * Gets the indirect clear coat output component
       */
-    def clearcoatIndirect: NodeMaterialConnectionPoint = js.native
+    def clearcoatInd: NodeMaterialConnectionPoint = js.native
     
     /**
       * As the default viewing range might not be enough (if the ambient is really small for instance)
@@ -128,7 +128,7 @@ object pbrMetallicRoughnessBlockMod {
     /**
       * Gets the indirect diffuse output component
       */
-    def diffuseIndirect: NodeMaterialConnectionPoint = js.native
+    def diffuseInd: NodeMaterialConnectionPoint = js.native
     
     /**
       * Intensity of the direct lights e.g. the four lights available in your scene.
@@ -145,7 +145,7 @@ object pbrMetallicRoughnessBlockMod {
     
     /**
       * Intensity of the environment e.g. how much the environment will light the object
-      * either through harmonics for rough material or through the refelction for shiny ones.
+      * either through harmonics for rough material or through the reflection for shiny ones.
       */
     var environmentIntensity: Double = js.native
     
@@ -158,6 +158,11 @@ object pbrMetallicRoughnessBlockMod {
       * Gets the index of refraction input component
       */
     def indexOfRefraction: NodeMaterialConnectionPoint = js.native
+    
+    /**
+      * Gets the iridescence object parameters
+      */
+    def iridescence: NodeMaterialConnectionPoint = js.native
     
     /**
       * Gets or sets the light associated with this block
@@ -233,7 +238,7 @@ object pbrMetallicRoughnessBlockMod {
     /**
       * Gets the indirect sheen output component
       */
-    def sheenIndirect: NodeMaterialConnectionPoint = js.native
+    def sheenInd: NodeMaterialConnectionPoint = js.native
     
     /**
       * Gets the specular output component
@@ -243,7 +248,7 @@ object pbrMetallicRoughnessBlockMod {
     /**
       * Gets the indirect specular output component
       */
-    def specularIndirect: NodeMaterialConnectionPoint = js.native
+    def specularInd: NodeMaterialConnectionPoint = js.native
     
     /**
       * This is a special control allowing the reduction of the specular highlights coming from the
@@ -290,13 +295,13 @@ object pbrMetallicRoughnessBlockMod {
     
     /**
       * Specifies that the material will keeps the reflection highlights over a transparent surface (only the most luminous ones).
-      * A car glass is a good exemple of that. When the street lights reflects on it you can not see what is behind.
+      * A car glass is a good example of that. When the street lights reflects on it you can not see what is behind.
       */
     var useRadianceOverAlpha: Boolean = js.native
     
     /**
       * Specifies that the material will keeps the specular highlights over a transparent surface (only the most luminous ones).
-      * A car glass is a good exemple of that. When sun reflects on it you can not see what is behind.
+      * A car glass is a good example of that. When sun reflects on it you can not see what is behind.
       */
     var useSpecularOverAlpha: Boolean = js.native
     

@@ -1,6 +1,5 @@
 package typings.fmWebsync.fm.websync
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,8 +24,8 @@ object streamFailureArgs {
     client: client,
     clientId: String,
     error: String,
-    meta: js.Any,
-    timestamp: Date,
+    meta: Any,
+    timestamp: js.Date,
     willReconnect: Boolean
   ): streamFailureArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], willReconnect = willReconnect.asInstanceOf[js.Any])

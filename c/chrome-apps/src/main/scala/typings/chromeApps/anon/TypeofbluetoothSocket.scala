@@ -9,7 +9,6 @@ import typings.chromeApps.chrome.bluetoothSocket.OnReceiveEvent
 import typings.chromeApps.chrome.bluetoothSocket.SocketInfo
 import typings.chromeApps.chrome.bluetoothSocket.SocketProperties
 import typings.chromeApps.chrome.integer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -151,8 +150,12 @@ trait TypeofbluetoothSocket extends StObject {
     * @param data The data to send.
     * @param [callback] Called with the number of bytes sent.
     */
-  def send(socketId: integer, data: ArrayBuffer): Unit = js.native
-  def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* bytesSent */ integer, Unit]): Unit = js.native
+  def send(socketId: integer, data: js.typedarray.ArrayBuffer): Unit = js.native
+  def send(
+    socketId: integer,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function1[/* bytesSent */ integer, Unit]
+  ): Unit = js.native
   
   /**
     * Enables or disables a connected socket from

@@ -12,7 +12,9 @@ trait ComponentDatatype extends StObject {
   
   var normalize: js.UndefOr[Boolean] = js.undefined
   
-  var values: js.UndefOr[js.Array[Double]] = js.undefined
+  var values: js.UndefOr[
+    js.Array[Double] | js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
+  ] = js.undefined
 }
 object ComponentDatatype {
   
@@ -35,10 +37,12 @@ object ComponentDatatype {
     
     inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(
+      value: js.Array[Double] | js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
+    ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

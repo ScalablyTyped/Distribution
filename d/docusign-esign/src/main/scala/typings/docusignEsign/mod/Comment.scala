@@ -142,7 +142,7 @@ object Comment {
     
     inline def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
-    inline def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+    inline def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value*))
     
     inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
@@ -212,6 +212,6 @@ object Comment {
     
     inline def setVisibleToUndefined: Self = StObject.set(x, "visibleTo", js.undefined)
     
-    inline def setVisibleToVarargs(value: String*): Self = StObject.set(x, "visibleTo", js.Array(value :_*))
+    inline def setVisibleToVarargs(value: String*): Self = StObject.set(x, "visibleTo", js.Array(value*))
   }
 }

@@ -26,7 +26,7 @@ trait Lock
     * This element provides information sufficient for either directly contacting a principal (such as a telephone number or email URI), or for discovering
     * the principal (such as the URL of a homepage) who owns the lock.
     */
-  var Owner: js.Any
+  var Owner: Any
   
   /**
     * a timeout value for the lock.
@@ -41,7 +41,7 @@ object Lock {
   inline def apply(
     Depth: LockDepth,
     LockTokens: SafeArray[String],
-    Owner: js.Any,
+    Owner: Any,
     Scope: LockScope,
     Timeout: Double,
     Type: LockType
@@ -56,7 +56,7 @@ object Lock {
     
     inline def setLockTokens(value: SafeArray[String]): Self = StObject.set(x, "LockTokens", value.asInstanceOf[js.Any])
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
   }

@@ -10,15 +10,12 @@ jQuery plugin for communicating with a web service using SOAP. This script uses 
 | ------------------ | :-------------: |
 | Full name          | jquery.soap |
 | Keywords           | jquery, soap, ajax, wss, jquery-plugin, ecosystem:jquery |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 6673 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 665.6666666666666 |
+| # stars            | 357.0 |
 
 ## Links
-- [Homepage](https://github.com/doedje/jquery.soap#readme)
-- [Bugs](https://github.com/doedje/jquery.soap)
-- [Repository](https://github.com/doedje/jquery.soap)
 - [Npm](https://www.npmjs.com/package/jquery.soap)
     
 

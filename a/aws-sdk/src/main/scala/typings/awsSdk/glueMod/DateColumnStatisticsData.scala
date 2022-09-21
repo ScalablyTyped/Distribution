@@ -9,12 +9,12 @@ trait DateColumnStatisticsData extends StObject {
   /**
     * The highest value in the column.
     */
-  var MaximumValue: js.UndefOr[Timestamp] = js.undefined
+  var MaximumValue: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The lowest value in the column.
     */
-  var MinimumValue: js.UndefOr[Timestamp] = js.undefined
+  var MinimumValue: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of distinct values in a column.
@@ -35,11 +35,11 @@ object DateColumnStatisticsData {
   
   extension [Self <: DateColumnStatisticsData](x: Self) {
     
-    inline def setMaximumValue(value: Timestamp): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: js.Date): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
     
     inline def setMaximumValueUndefined: Self = StObject.set(x, "MaximumValue", js.undefined)
     
-    inline def setMinimumValue(value: Timestamp): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: js.Date): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
     
     inline def setMinimumValueUndefined: Self = StObject.set(x, "MinimumValue", js.undefined)
     

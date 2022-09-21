@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeConfigRulesResponse extends StObject {
   
   /**
-    * The details about your AWS Config rules.
+    * The details about your Config rules.
     */
   var ConfigRules: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRules] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeConfigRulesResponse {
     
     inline def setConfigRulesUndefined: Self = StObject.set(x, "ConfigRules", js.undefined)
     
-    inline def setConfigRulesVarargs(value: ConfigRule*): Self = StObject.set(x, "ConfigRules", js.Array(value :_*))
+    inline def setConfigRulesVarargs(value: ConfigRule*): Self = StObject.set(x, "ConfigRules", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -14,21 +14,23 @@ trait SliceViewModel
      with Accessor {
   
   /**
-    * Clears the current slice.
+    * The slice analysis object being created or modified by the view model.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#analysis)
+    */
+  val analysis: SliceAnalysis = js.native
+  
+  /**
+    * Clears the [shape](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#shape) of the slice, effectively removing it from the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#clear)
     */
-  def clear(): Unit = js.native
-  
-  /**
-    * Clears the current slice.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#clearSlice)
-    */
-  def clearSlice(): Unit = js.native
+  def clear(): scala.Unit = js.native
   
   /**
     * Indicates whether the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) and layers that are draped on the ground surface are excluded from the slice.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludeGroundSurface)
     */
@@ -42,13 +44,6 @@ trait SliceViewModel
   var excludedLayers: Collection[Layer | BuildingComponentSublayer] = js.native
   
   /**
-    * Starts a new slice.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#newSlice)
-    */
-  def newSlice(): Unit = js.native
-  
-  /**
     * The shape used to slice elements in a 3D scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#shape)
@@ -56,14 +51,16 @@ trait SliceViewModel
   var shape: SlicePlane = js.native
   
   /**
-    * Starts a new slice.
+    * Starts the interactive placement of a new slice, clearing the previous [shape](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#shape).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#start)
     */
-  def start(): Unit = js.native
+  def start(): scala.Unit = js.native
   
   /**
     * The view model's state.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#state)
     */
@@ -71,6 +68,8 @@ trait SliceViewModel
   
   /**
     * Enable tilting the slice shape.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#tiltEnabled)
     */

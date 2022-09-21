@@ -36,6 +36,12 @@ object storybookApiStrings {
   inline def alt: alt = "alt".asInstanceOf[alt]
   
   @js.native
+  sealed trait argTypes
+    extends StObject
+       with Item
+  inline def argTypes: argTypes = "argTypes".asInstanceOf[argTypes]
+  
+  @js.native
   sealed trait args
     extends StObject
        with Item
@@ -70,6 +76,10 @@ object storybookApiStrings {
   inline def collapseAll: collapseAll = "collapseAll".asInstanceOf[collapseAll]
   
   @js.native
+  sealed trait component extends StObject
+  inline def component: component = "component".asInstanceOf[component]
+  
+  @js.native
   sealed trait control extends StObject
   inline def control: control = "control".asInstanceOf[control]
   
@@ -86,6 +96,10 @@ object storybookApiStrings {
   @js.native
   sealed trait development extends StObject
   inline def development: development = "development".asInstanceOf[development]
+  
+  @js.native
+  sealed trait docs extends StObject
+  inline def docs: docs = "docs".asInstanceOf[docs]
   
   @js.native
   sealed trait escape
@@ -128,6 +142,10 @@ object storybookApiStrings {
   inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
   @js.native
+  sealed trait group extends StObject
+  inline def group: group = "group".asInstanceOf[group]
+  
+  @js.native
   sealed trait id
     extends StObject
        with Item
@@ -139,6 +157,12 @@ object storybookApiStrings {
        with _ViewMode
        with typings.storybookApi.addonsMod._ViewMode
   inline def info: info = "info".asInstanceOf[info]
+  
+  @js.native
+  sealed trait initialArgs
+    extends StObject
+       with Item
+  inline def initialArgs: initialArgs = "initialArgs".asInstanceOf[initialArgs]
   
   @js.native
   sealed trait isComponent
@@ -223,6 +247,12 @@ object storybookApiStrings {
   inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
+  sealed trait prepared
+    extends StObject
+       with Item
+  inline def prepared: prepared = "prepared".asInstanceOf[prepared]
+  
+  @js.native
   sealed trait prevComponent
     extends StObject
        with Action
@@ -245,10 +275,20 @@ object storybookApiStrings {
   inline def refId: refId = "refId".asInstanceOf[refId]
   
   @js.native
+  sealed trait renderLabel
+    extends StObject
+       with Item
+  inline def renderLabel: renderLabel = "renderLabel".asInstanceOf[renderLabel]
+  
+  @js.native
   sealed trait right
     extends StObject
        with PanelPositions
   inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait root extends StObject
+  inline def root: root = "root".asInstanceOf[root]
   
   @js.native
   sealed trait search
@@ -284,6 +324,12 @@ object storybookApiStrings {
   inline def sidebar: sidebar = "sidebar".asInstanceOf[sidebar]
   
   @js.native
+  sealed trait startCollapsed
+    extends StObject
+       with Item
+  inline def startCollapsed: startCollapsed = "startCollapsed".asInstanceOf[startCollapsed]
+  
+  @js.native
   sealed trait story
     extends StObject
        with _ViewMode
@@ -307,6 +353,12 @@ object storybookApiStrings {
     extends StObject
        with Action
   inline def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
+  
+  @js.native
+  sealed trait `type`
+    extends StObject
+       with Item
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
   sealed trait unknown extends StObject

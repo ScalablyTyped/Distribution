@@ -9,10 +9,10 @@ A jQuery plugin to make your form controls look how you want them to. Now with H
 | ------------------ | :-------------: |
 | Full name          | jquery.uniform |
 | Keywords           | uniform, uniformjs, uniform-js, uniform.js, jquery.uniform, jquery-uniform |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 164210 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11718.333333333334 |
+| # stars            | 2210.0 |
 
 ## Links
 - [Homepage](https://github.com/AudithSoftworks/Uniform#readme)

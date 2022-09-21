@@ -1,7 +1,7 @@
 
 # Scala.js typings for ical
 
-Typings are for version 0.6
+Typings are for version 0.8
 
 ## Library description:
 A tolerant, minimal icalendar parser
@@ -10,10 +10,10 @@ A tolerant, minimal icalendar parser
 | ------------------ | :-------------: |
 | Full name          | ical |
 | Keywords           | ical, ics, calendar |
-| # releases         | 4 |
-| # dependents       | 41 |
-| # downloads        | 245945 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 41433.333333333336 |
+| # stars            | 266.0 |
 
 ## Links
 - [Homepage](https://github.com/peterbraden/ical.js)

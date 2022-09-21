@@ -9,7 +9,7 @@ trait OrderreportsListDisbursementsResponse extends StObject {
   /** The list of disbursements. */
   var disbursements: js.UndefOr[js.Array[OrderReportDisbursement]] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#orderreportsListDisbursementsResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#orderreportsListDisbursementsResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The token for the retrieval of the next page of disbursements. */
@@ -28,7 +28,7 @@ object OrderreportsListDisbursementsResponse {
     
     inline def setDisbursementsUndefined: Self = StObject.set(x, "disbursements", js.undefined)
     
-    inline def setDisbursementsVarargs(value: OrderReportDisbursement*): Self = StObject.set(x, "disbursements", js.Array(value :_*))
+    inline def setDisbursementsVarargs(value: OrderReportDisbursement*): Self = StObject.set(x, "disbursements", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

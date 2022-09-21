@@ -10,10 +10,10 @@ object attributesMod {
   
   @JSImport("atlassian-crowd-client/lib/models/attributes", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Attributes {
-    def this(attributePairs: StringDictionary[js.Any]) = this()
+    def this(attributePairs: StringDictionary[Any]) = this()
   }
   @JSImport("atlassian-crowd-client/lib/models/attributes", JSImport.Namespace)
   @js.native
@@ -21,14 +21,14 @@ object attributesMod {
   
   /* static member */
   inline def fromCrowd(attributesArr: js.Array[Name]): Attributes = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any]).asInstanceOf[Attributes]
-  inline def fromCrowd(attributesArr: js.Array[Name], parse: js.Function1[/* json */ String, js.Any]): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  inline def fromCrowd(attributesArr: js.Array[Name], parse: js.Function1[/* json */ String, Any]): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[Attributes]
   
   @js.native
   trait Attributes extends StObject {
     
-    val attributes: StringDictionary[js.Any] = js.native
+    val attributes: StringDictionary[Any] = js.native
     
-    def toCrowd(): js.Any = js.native
-    def toCrowd(stringify: js.Function1[/* attr */ js.Any, String]): js.Any = js.native
+    def toCrowd(): Any = js.native
+    def toCrowd(stringify: js.Function1[/* attr */ Any, String]): Any = js.native
   }
 }

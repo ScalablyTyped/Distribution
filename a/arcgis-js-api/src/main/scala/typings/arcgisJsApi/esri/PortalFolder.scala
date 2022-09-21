@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait PortalFolder
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalFolder.html#created)
     */
-  var created: Date = js.native
+  var created: js.Date = js.native
   
   /**
     * The unique id of the folder.

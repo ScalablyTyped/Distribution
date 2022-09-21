@@ -10,10 +10,10 @@ object printMod {
   
   @JSImport("material-ui/svg-icons/action/print", JSImport.Default)
   @js.native
-  class default () extends ActionPrint
+  open class default () extends ActionPrint
   
   @JSImport("material-ui/svg-icons/action/print", "ActionPrint")
   @js.native
-  class ActionPrint ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPrint ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

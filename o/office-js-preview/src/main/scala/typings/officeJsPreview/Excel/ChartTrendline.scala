@@ -17,9 +17,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * This object represents the attributes for a chart trendline object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -28,9 +28,9 @@ trait ChartTrendline
      with ClientObject {
   
   /**
-    *
     * Represents the number of periods that the trendline extends backward.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var backwardPeriod: Double = js.native
@@ -42,38 +42,39 @@ trait ChartTrendline
   /**
     * Delete the trendline object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def delete(): Unit = js.native
   
   /**
-    *
     * Represents the formatting of a chart trendline.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   val format: ChartTrendlineFormat = js.native
   
   /**
-    *
     * Represents the number of periods that the trendline extends forward.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var forwardPeriod: Double = js.native
   
   /**
-    *
     * Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic values). The returned value is always a number.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var intercept: js.Any = js.native
+  var intercept: Any = js.native
   
   /**
-    *
     * Represents the label of a chart trendline.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val label: ChartTrendlineLabel = js.native
@@ -90,39 +91,33 @@ trait ChartTrendline
   def load(propertyNames: js.Array[String]): ChartTrendline = js.native
   
   /**
+    * Represents the period of a chart trendline. Only applicable to trendlines with the type `MovingAverage`.
     *
-    * Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var movingAveragePeriod: Double = js.native
   
   /**
+    * Represents the name of the trendline. Can be set to a string value, a `null` value represents automatic values. The returned value is always a string
     *
-    * Represents the name of the trendline. Can be set to a string value, or can be set to null value represents automatic values. The returned value is always a string
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var name: String = js.native
   
   /**
+    * Represents the order of a chart trendline. Only applicable to trendlines with the type `Polynomial`.
     *
-    * Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var polynomialOrder: Double = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartTrendline): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartTrendline): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -130,17 +125,17 @@ trait ChartTrendline
   def set(properties: ChartTrendlineUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    *
     * True if the equation for the trendline is displayed on the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showEquation: Boolean = js.native
   
   /**
+    * True if the r-squared value for the trendline is displayed on the chart.
     *
-    * True if the R-squared for the trendline is displayed on the chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showRSquared: Boolean = js.native
@@ -152,9 +147,9 @@ trait ChartTrendline
   def toJSON(): ChartTrendlineData = js.native
   
   /**
-    *
     * Represents the type of a chart trendline.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: ChartTrendlineType | Linear | Exponential | Logarithmic | MovingAverage | Polynomial | Power = js.native

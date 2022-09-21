@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "CancellationTokenSource")
 @js.native
-class CancellationTokenSource () extends StObject {
+open class CancellationTokenSource () extends StObject {
   def this(parent: CancellationToken) = this()
   
   def cancel(): Unit = js.native

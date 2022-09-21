@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.PagingInfo")
 @js.native
-class PagingInfo () extends StObject {
+open class PagingInfo () extends StObject {
   
   /**
     * Gets the number of entity instances returned per page.

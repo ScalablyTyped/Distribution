@@ -12,9 +12,9 @@ trait CodeLensProvider[T /* <: CodeLens */] extends StObject {
   var onDidChangeCodeLenses: js.UndefOr[Event[Unit]] = js.undefined
   
   /**
-    * Compute a list of [lenses](#CodeLens). This call should return as fast as possible and if
+    * Compute a list of {@link CodeLens lenses}. This call should return as fast as possible and if
     * computing the commands is expensive implementors should only return code lens objects with the
-    * range set and implement [resolve](#CodeLensProvider.resolveCodeLens).
+    * range set and implement {@link CodeLensProvider.resolveCodeLens resolve}.
     *
     * @param document The document in which the command was invoked.
     * @param token A cancellation token.
@@ -25,7 +25,7 @@ trait CodeLensProvider[T /* <: CodeLens */] extends StObject {
   
   /**
     * This function will be called for each visible code lens, usually when scrolling and after
-    * calls to [compute](#CodeLensProvider.provideCodeLenses)-lenses.
+    * calls to {@link CodeLensProvider.provideCodeLenses compute}-lenses.
     *
     * @param codeLens Code lens that must be resolved.
     * @param token A cancellation token.
@@ -43,7 +43,7 @@ object CodeLensProvider {
   extension [Self <: CodeLensProvider[?], T /* <: CodeLens */](x: Self & CodeLensProvider[T]) {
     
     inline def setOnDidChangeCodeLenses(
-      value: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      value: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onDidChangeCodeLenses", js.Any.fromFunction3(value))
     
     inline def setOnDidChangeCodeLensesUndefined: Self = StObject.set(x, "onDidChangeCodeLenses", js.undefined)

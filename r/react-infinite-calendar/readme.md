@@ -3,24 +3,6 @@
 
 Typings are for version 2.3
 
-## Library description:
-Infinite scrolling date-picker built with React, with localization, themes, keyboard support, and more.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | react-infinite-calendar |
-| Keywords           | react, reactjs, react-component, infinite, calendar, endless, date, date-picker, month, day, year, scrolling, virtual, picker, material, flat |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 820663 |
-| # stars            | 5 |
-
-## Links
-- [Homepage](https://github.com/clauderic/react-infinite-calendar)
-- [Bugs](https://github.com/clauderic/react-infinite-calendar/issues)
-- [Repository](https://github.com/clauderic/react-infinite-calendar)
-- [Npm](https://www.npmjs.com/package/react-infinite-calendar)
-    
 
 
 ## Note

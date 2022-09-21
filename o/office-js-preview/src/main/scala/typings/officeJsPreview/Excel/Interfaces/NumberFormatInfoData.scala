@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormatInfoData extends StObject {
   
   /**
-    *
     * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var numberDecimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var numberGroupSeparator: js.UndefOr[String] = js.undefined

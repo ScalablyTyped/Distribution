@@ -6,22 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * The lightmapper is used to bake scene lights into textures.
-  * @param device - The grahpics device used by the lightmapper.
-  * @param root - The root entity of the scene.
-  * @param scene - The scene to lightmap.
-  * @param renderer - The renderer.
-  * @param assets - Registry of assets to lightmap.
   */
 @JSGlobal("pc.Lightmapper")
 @js.native
-class Lightmapper protected ()
-  extends StObject
-     with typings.playcanvas.pc.Lightmapper {
+open class Lightmapper protected ()
+  extends typings.playcanvas.mod.Lightmapper {
+  /**
+    * Create a new Lightmapper instance.
+    *
+    * @param {GraphicsDevice} device - The graphics device used by the lightmapper.
+    * @param {Entity} root - The root entity of the scene.
+    * @param {Scene} scene - The scene to lightmap.
+    * @param {ForwardRenderer} renderer - The renderer.
+    * @param {AssetRegistry} assets - Registry of assets to lightmap.
+    * @hideconstructor
+    */
   def this(
-    device: typings.playcanvas.pc.GraphicsDevice,
-    root: typings.playcanvas.pc.Entity,
-    scene: typings.playcanvas.pc.Scene,
-    renderer: typings.playcanvas.pc.ForwardRenderer,
-    assets: typings.playcanvas.pc.AssetRegistry
+    device: typings.playcanvas.mod.GraphicsDevice,
+    root: typings.playcanvas.mod.Entity,
+    scene: typings.playcanvas.mod.Scene_,
+    renderer: typings.playcanvas.mod.ForwardRenderer,
+    assets: typings.playcanvas.mod.AssetRegistry
   ) = this()
 }

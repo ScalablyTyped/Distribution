@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLogSubscriptionsResult extends StObject {
   
   /**
-    * A list of active LogSubscription objects for calling the AWS account.
+    * A list of active LogSubscription objects for calling the Amazon Web Services account.
     */
   var LogSubscriptions: js.UndefOr[typings.awsSdk.directoryserviceMod.LogSubscriptions] = js.undefined
   
@@ -29,7 +29,7 @@ object ListLogSubscriptionsResult {
     
     inline def setLogSubscriptionsUndefined: Self = StObject.set(x, "LogSubscriptions", js.undefined)
     
-    inline def setLogSubscriptionsVarargs(value: LogSubscription*): Self = StObject.set(x, "LogSubscriptions", js.Array(value :_*))
+    inline def setLogSubscriptionsVarargs(value: LogSubscription*): Self = StObject.set(x, "LogSubscriptions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

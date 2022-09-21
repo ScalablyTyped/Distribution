@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__cache
 
-Typings are for version 10.0.29
+Typings are for version 11.10.3
 
 ## Library description:
 emotion's cache
@@ -10,15 +10,15 @@ emotion's cache
 | ------------------ | :-------------: |
 | Full name          | @emotion/cache |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 82 |
-| # downloads        | 145849830 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 3.4924334666666664E7 |
+| # stars            | 15328.0 |
 
 ## Links
-- [Homepage](https://github.com/emotion-js/emotion#readme)
+- [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
-- [Repository](https://github.com/emotion-js/emotion)
+- [Repository](https://github.com/emotion-js/emotion/tree/main)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Fcache)
     
 

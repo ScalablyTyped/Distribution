@@ -17,5 +17,5 @@ trait PictureFillSymbolConstructor
 Instantiable0[PictureFillSymbol]
      with Instantiable1[/* properties */ PictureFillSymbolProperties, PictureFillSymbol] {
   
-  def fromJSON(json: js.Any): PictureFillSymbol = js.native
+  def fromJSON(json: Any): PictureFillSymbol = js.native
 }

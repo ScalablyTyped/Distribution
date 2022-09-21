@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "SurveyTriggerRunExpression")
 @js.native
-class SurveyTriggerRunExpression () extends SurveyTrigger {
+open class SurveyTriggerRunExpression () extends SurveyTrigger {
   
-  var runExpression: String = js.native
+  def runExpression: String = js.native
+  def runExpression_=(`val`: String): Unit = js.native
   
-  var setToName: String = js.native
+  def setToName: String = js.native
+  def setToName_=(`val`: String): Unit = js.native
 }

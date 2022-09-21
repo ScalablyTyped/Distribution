@@ -1,9 +1,5 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceLayersVolumeannotationsList
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The content version for the requested volume.
@@ -38,8 +29,7 @@ trait ParamsResourceLayersVolumeannotationsList
   var layerId: js.UndefOr[String] = js.undefined
   
   /**
-    * The locale information for the data. ISO-639-1 language and ISO-3166-1
-    * country code. Ex: 'en_US'.
+    * The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'.
     */
   var locale: js.UndefOr[String] = js.undefined
   
@@ -54,8 +44,7 @@ trait ParamsResourceLayersVolumeannotationsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Set to true to return deleted annotations. updatedMin must be in the
-    * request to use this. Defaults to false.
+    * Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false.
     */
   var showDeleted: js.UndefOr[Boolean] = js.undefined
   
@@ -75,14 +64,12 @@ trait ParamsResourceLayersVolumeannotationsList
   var startPosition: js.UndefOr[String] = js.undefined
   
   /**
-    * RFC 3339 timestamp to restrict to items updated prior to this timestamp
-    * (exclusive).
+    * RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).
     */
   var updatedMax: js.UndefOr[String] = js.undefined
   
   /**
-    * RFC 3339 timestamp to restrict to items updated since this timestamp
-    * (inclusive).
+    * RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).
     */
   var updatedMin: js.UndefOr[String] = js.undefined
   
@@ -104,10 +91,6 @@ object ParamsResourceLayersVolumeannotationsList {
   }
   
   extension [Self <: ParamsResourceLayersVolumeannotationsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     

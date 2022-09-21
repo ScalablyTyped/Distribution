@@ -1,7 +1,7 @@
 package typings.standardVersion
 
 import typings.conventionalChangelogConfigSpec.`210SchemaJsonMod`.Config
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.standardVersion.mod.Options.Scripts
 import typings.standardVersion.mod.Options.Skip
 import typings.std.URL
@@ -184,7 +184,7 @@ object mod {
       
       inline def setBumpFilesUndefined: Self = StObject.set(x, "bumpFiles", js.undefined)
       
-      inline def setBumpFilesVarargs(value: String*): Self = StObject.set(x, "bumpFiles", js.Array(value :_*))
+      inline def setBumpFilesVarargs(value: String*): Self = StObject.set(x, "bumpFiles", js.Array(value*))
       
       inline def setChangelogHeader(value: String): Self = StObject.set(x, "changelogHeader", value.asInstanceOf[js.Any])
       
@@ -222,7 +222,7 @@ object mod {
       
       inline def setPackageFilesUndefined: Self = StObject.set(x, "packageFiles", js.undefined)
       
-      inline def setPackageFilesVarargs(value: String*): Self = StObject.set(x, "packageFiles", js.Array(value :_*))
+      inline def setPackageFilesVarargs(value: String*): Self = StObject.set(x, "packageFiles", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

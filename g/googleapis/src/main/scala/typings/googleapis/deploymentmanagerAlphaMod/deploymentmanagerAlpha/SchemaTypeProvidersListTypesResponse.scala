@@ -9,7 +9,7 @@ trait SchemaTypeProvidersListTypesResponse extends StObject {
   /**
     * A token used to continue a truncated list request.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. A list of resource type info.
@@ -27,12 +27,14 @@ object SchemaTypeProvidersListTypesResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTypes(value: js.Array[SchemaTypeInfo]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: SchemaTypeInfo*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: SchemaTypeInfo*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

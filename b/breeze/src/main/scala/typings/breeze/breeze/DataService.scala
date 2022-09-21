@@ -14,7 +14,11 @@ trait DataService extends StObject {
   
   var jsonResultsAdapter: JsonResultsAdapter
   
+  def qualifyUrl(suffix: String): String
+  
   var serviceName: String
+  
+  var uriBuilder: UriBuilder
   
   var uriBuilderName: String
   
@@ -29,12 +33,14 @@ object DataService {
     adapterName: String,
     hasServerMetadata: Boolean,
     jsonResultsAdapter: JsonResultsAdapter,
+    qualifyUrl: String => String,
     serviceName: String,
+    uriBuilder: UriBuilder,
     uriBuilderName: String,
     useJsonp: Boolean,
     `using`: DataServiceOptions => DataService
   ): DataService = {
-    val __obj = js.Dynamic.literal(adapterInstance = adapterInstance.asInstanceOf[js.Any], adapterName = adapterName.asInstanceOf[js.Any], hasServerMetadata = hasServerMetadata.asInstanceOf[js.Any], jsonResultsAdapter = jsonResultsAdapter.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], uriBuilderName = uriBuilderName.asInstanceOf[js.Any], useJsonp = useJsonp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adapterInstance = adapterInstance.asInstanceOf[js.Any], adapterName = adapterName.asInstanceOf[js.Any], hasServerMetadata = hasServerMetadata.asInstanceOf[js.Any], jsonResultsAdapter = jsonResultsAdapter.asInstanceOf[js.Any], qualifyUrl = js.Any.fromFunction1(qualifyUrl), serviceName = serviceName.asInstanceOf[js.Any], uriBuilder = uriBuilder.asInstanceOf[js.Any], uriBuilderName = uriBuilderName.asInstanceOf[js.Any], useJsonp = useJsonp.asInstanceOf[js.Any])
     __obj.updateDynamic("using")(js.Any.fromFunction1(`using`))
     __obj.asInstanceOf[DataService]
   }
@@ -49,7 +55,11 @@ object DataService {
     
     inline def setJsonResultsAdapter(value: JsonResultsAdapter): Self = StObject.set(x, "jsonResultsAdapter", value.asInstanceOf[js.Any])
     
+    inline def setQualifyUrl(value: String => String): Self = StObject.set(x, "qualifyUrl", js.Any.fromFunction1(value))
+    
     inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    
+    inline def setUriBuilder(value: UriBuilder): Self = StObject.set(x, "uriBuilder", value.asInstanceOf[js.Any])
     
     inline def setUriBuilderName(value: String): Self = StObject.set(x, "uriBuilderName", value.asInstanceOf[js.Any])
     

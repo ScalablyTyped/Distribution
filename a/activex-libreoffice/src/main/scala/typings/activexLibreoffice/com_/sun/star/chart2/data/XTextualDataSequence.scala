@@ -24,7 +24,7 @@ object XTextualDataSequence {
     TextualData: SafeArray[String],
     acquire: () => Unit,
     getTextualData: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextualDataSequence = {
     val __obj = js.Dynamic.literal(TextualData = TextualData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getTextualData = js.Any.fromFunction0(getTextualData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

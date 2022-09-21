@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.WiFi.WiFiAccessStatus
 import typings.winrtUwp.Windows.Devices.WiFi.WiFiConnectionStatus
 import typings.winrtUwp.Windows.Devices.WiFi.WiFiNetworkKind
@@ -53,7 +52,7 @@ object WiFi {
       * @return An asynchronous enumeration operation. On successful completion, returns a list of available Wi-Fi adapters.
       */
     /* static member */
-    inline def findAllAdaptersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAdaptersAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAdaptersAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAdaptersAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * A static method that initiates an asynchronous operation to get a WiFiAdapter object.
@@ -193,7 +192,7 @@ object WiFi {
     
     /** Contains the result of a network scan operation. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Describes PHY types supported by standard 802.11. */
@@ -238,6 +237,6 @@ object WiFi {
   
   @JSGlobal("Windows.Devices.WiFi.irect")
   @js.native
-  def irect: js.Any = js.native
-  inline def irect_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("irect")(x.asInstanceOf[js.Any])
+  def irect: Any = js.native
+  inline def irect_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("irect")(x.asInstanceOf[js.Any])
 }

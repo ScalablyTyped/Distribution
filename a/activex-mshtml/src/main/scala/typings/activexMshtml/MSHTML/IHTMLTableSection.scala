@@ -12,20 +12,20 @@ trait IHTMLTableSection extends StObject {
   
   var align: String = js.native
   
-  var bgColor: js.Any = js.native
+  var bgColor: Any = js.native
   
   /** @param index [index=-1] */
   def deleteRow(): Unit = js.native
   def deleteRow(index: Double): Unit = js.native
   
   /** @param index [index=-1] */
-  def insertRow(): js.Any = js.native
-  def insertRow(index: Double): js.Any = js.native
+  def insertRow(): Any = js.native
+  def insertRow(index: Double): Any = js.native
   
-  def rows(): js.Any = js.native
-  def rows(name: js.Any): js.Any = js.native
-  def rows(name: js.Any, index: js.Any): js.Any = js.native
-  def rows(name: Unit, index: js.Any): js.Any = js.native
+  def rows(): Any = js.native
+  def rows(name: Any): Any = js.native
+  def rows(name: Any, index: Any): Any = js.native
+  def rows(name: Unit, index: Any): Any = js.native
   @JSName("rows")
   val rows_Original: IHTMLElementCollection = js.native
   

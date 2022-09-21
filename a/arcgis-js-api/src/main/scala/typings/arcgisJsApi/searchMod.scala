@@ -17,7 +17,12 @@ object searchMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/webdoc/applicationProperties/Search", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Represents the search parameters set within the web scene or the web map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Search.html)
+    */
+  open class Class ()
     extends StObject
        with Search {
     def this(properties: SearchProperties) = this()

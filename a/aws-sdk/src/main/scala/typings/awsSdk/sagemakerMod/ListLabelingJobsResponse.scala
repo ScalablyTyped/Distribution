@@ -12,7 +12,7 @@ trait ListLabelingJobsResponse extends StObject {
   var LabelingJobSummaryList: js.UndefOr[typings.awsSdk.sagemakerMod.LabelingJobSummaryList] = js.undefined
   
   /**
-    * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of labeling jobs, use it in the subsequent request.
+    * If the response is truncated, SageMaker returns this token. To retrieve the next set of labeling jobs, use it in the subsequent request.
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListLabelingJobsResponse {
     
     inline def setLabelingJobSummaryListUndefined: Self = StObject.set(x, "LabelingJobSummaryList", js.undefined)
     
-    inline def setLabelingJobSummaryListVarargs(value: LabelingJobSummary*): Self = StObject.set(x, "LabelingJobSummaryList", js.Array(value :_*))
+    inline def setLabelingJobSummaryListVarargs(value: LabelingJobSummary*): Self = StObject.set(x, "LabelingJobSummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -19,12 +19,10 @@ object mod {
   
   @JSImport("react-collapsible", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CollapsibleProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CollapsibleProps, js.Object, Any]
   
-  @js.native
-  trait Collapsible
-    extends Component[CollapsibleProps, js.Object, js.Any]
+  type Collapsible = Component[CollapsibleProps, js.Object, Any]
   
   trait CollapsibleProps
     extends StObject
@@ -37,6 +35,8 @@ object mod {
     var containerElementProps: js.UndefOr[js.Object] = js.undefined
     
     var contentContainerTagName: js.UndefOr[String] = js.undefined
+    
+    var contentElementId: js.UndefOr[String] = js.undefined
     
     var contentHiddenWhenClosed: js.UndefOr[Boolean] = js.undefined
     
@@ -80,7 +80,7 @@ object mod {
     
     var triggerOpenedClassName: js.UndefOr[String] = js.undefined
     
-    var triggerSibling: js.UndefOr[ReactElement] = js.undefined
+    var triggerSibling: js.UndefOr[String | ReactElement] = js.undefined
     
     var triggerStyle: js.UndefOr[Null | CSSProperties] = js.undefined
     
@@ -112,6 +112,10 @@ object mod {
       inline def setContentContainerTagName(value: String): Self = StObject.set(x, "contentContainerTagName", value.asInstanceOf[js.Any])
       
       inline def setContentContainerTagNameUndefined: Self = StObject.set(x, "contentContainerTagName", js.undefined)
+      
+      inline def setContentElementId(value: String): Self = StObject.set(x, "contentElementId", value.asInstanceOf[js.Any])
+      
+      inline def setContentElementIdUndefined: Self = StObject.set(x, "contentElementId", js.undefined)
       
       inline def setContentHiddenWhenClosed(value: Boolean): Self = StObject.set(x, "contentHiddenWhenClosed", value.asInstanceOf[js.Any])
       
@@ -197,7 +201,7 @@ object mod {
       
       inline def setTriggerOpenedClassNameUndefined: Self = StObject.set(x, "triggerOpenedClassName", js.undefined)
       
-      inline def setTriggerSibling(value: ReactElement): Self = StObject.set(x, "triggerSibling", value.asInstanceOf[js.Any])
+      inline def setTriggerSibling(value: String | ReactElement): Self = StObject.set(x, "triggerSibling", value.asInstanceOf[js.Any])
       
       inline def setTriggerSiblingUndefined: Self = StObject.set(x, "triggerSibling", js.undefined)
       

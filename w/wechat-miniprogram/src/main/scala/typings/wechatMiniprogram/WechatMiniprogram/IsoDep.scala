@@ -21,7 +21,7 @@ trait IsoDep extends StObject {
     *
     * 最低基础库： `2.11.2` */
   def connect(): Unit = js.native
-  def connect(option: ConnectOption): Unit = js.native
+  def connect(option: NdefConnectOption): Unit = js.native
   
   /** [IsoDep.getHistoricalBytes(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/IsoDep.getHistoricalBytes.html)
     *
@@ -38,6 +38,14 @@ trait IsoDep extends StObject {
     * 最低基础库： `2.11.2` */
   def getMaxTransceiveLength(): Unit = js.native
   def getMaxTransceiveLength(option: GetMaxTransceiveLengthOption): Unit = js.native
+  
+  /** [IsoDep.isConnected(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/IsoDep.isConnected.html)
+    *
+    * 检查是否已连接
+    *
+    * 最低基础库： `2.11.2` */
+  def isConnected(): Unit = js.native
+  def isConnected(option: IsConnectedOption): Unit = js.native
   
   /** [IsoDep.setTimeout(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/IsoDep.setTimeout.html)
     *

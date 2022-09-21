@@ -15,6 +15,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("localized-countries", "languages")
+  @js.native
+  val languages: js.Array[String] = js.native
+  
   trait LocalizedCountries extends StObject {
     
     def array(): js.Array[Code]

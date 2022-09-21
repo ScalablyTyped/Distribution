@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CachePolicyConfig extends StObject {
   
   /**
-    * A comment to describe the cache policy.
+    * A comment to describe the cache policy. The comment cannot be longer than 128 characters.
     */
   var Comment: js.UndefOr[String] = js.undefined
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__rect
 
-Typings are for version 0.2
+Typings are for version 0.17.0
 
 ## Library description:
 Measure React elements position in the DOM
@@ -10,10 +10,10 @@ Measure React elements position in the DOM
 | ------------------ | :-------------: |
 | Full name          | @reach/rect |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 36 |
-| # downloads        | 8933912 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 1359941.3333333333 |
+| # stars            | 5390.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Measure React elements position in the DOM
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

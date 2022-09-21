@@ -54,7 +54,7 @@ object navbarMenuMod {
   
   @JSImport("rbx/components/navbar/navbar-menu", "NavbarMenu")
   @js.native
-  val NavbarMenu: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val NavbarMenu: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait NavbarMenuProps extends StObject {

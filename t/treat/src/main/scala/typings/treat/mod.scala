@@ -1,62 +1,40 @@
 package typings.treat
 
-import typings.treat.builderMod.MakeStyleTree
-import typings.treat.builderMod.StyleMapParam
-import typings.treat.typesMod.ClassRef
-import typings.treat.typesMod.GlobalStyle
-import typings.treat.typesMod.Style
-import typings.treat.typesMod.StylesMap
+import typings.treat.themeMod.ThemeOrAny
+import typings.treat.typesMod.Adapter
 import typings.treat.typesMod.ThemeRef
-import typings.treat.typesMod.ThemedStyle
-import typings.treat.typesMod.TreatModuleObject
-import typings.treat.typesMod.TreatModuleValue
+import typings.treat.typesMod.TreatTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("treat", JSImport.Namespace)
+  @JSImport("treat/adapter/dist/treat-adapter.cjs", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createTheme(
-    tokens: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-  ): ThemeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[ThemeRef]
-  inline def createTheme(
-    tokens: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any,
-    localDebugName: String
-  ): ThemeRef = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[ThemeRef]
+  @JSImport("treat/adapter/dist/treat-adapter.cjs", "addLocalCss")
+  @js.native
+  val addLocalCss: js.Function1[/* css */ js.Object, Unit] = js.native
   
-  inline def globalStyle(
-    selector: String,
-    style: ThemedStyle[
-      GlobalStyle, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("globalStyle")(selector.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("treat/adapter/dist/treat-adapter.cjs", "addTheme")
+  @js.native
+  val addTheme: js.Function1[/* theme */ TreatTheme[ThemeOrAny], Unit] = js.native
   
-  inline def resolveClassName(themeRef: String, classRef: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveClassName")(themeRef.asInstanceOf[js.Any], classRef.asInstanceOf[js.Any])).asInstanceOf[String]
+  @JSImport("treat/adapter/dist/treat-adapter.cjs", "addThemedCss")
+  @js.native
+  val addThemedCss: js.Function2[/* themeRef */ ThemeRef, /* css */ js.Object, Unit] = js.native
   
-  inline def resolveStyles(themeRef: String, styles: js.Array[TreatModuleValue]): js.Array[TreatModuleValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStyles")(themeRef.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[js.Array[TreatModuleValue]]
-  inline def resolveStyles(themeRef: String, styles: TreatModuleObject): TreatModuleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStyles")(themeRef.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[TreatModuleObject]
+  @JSImport("treat/adapter/dist/treat-adapter.cjs", "getIdentName")
+  @js.native
+  val getIdentName: js.Function3[/* local */ String, /* scopeId */ Double, /* theme */ js.UndefOr[ThemeOrAny], String] = js.native
   
-  inline def style(
-    style: ThemedStyle[
-      Style, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-    ]
-  ): ClassRef = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(style.asInstanceOf[js.Any]).asInstanceOf[ClassRef]
-  inline def style(
-    style: ThemedStyle[
-      Style, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-    ],
-    localDebugName: String
-  ): ClassRef = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(style.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[ClassRef]
+  inline def getNextScope(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextScope")().asInstanceOf[Double]
   
-  inline def styleMap[StyleName /* <: String | Double */](stylesheet: StyleMapParam[StyleName]): StylesMap[StyleName] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleMap")(stylesheet.asInstanceOf[js.Any]).asInstanceOf[StylesMap[StyleName]]
-  inline def styleMap[StyleName /* <: String | Double */](stylesheet: StyleMapParam[StyleName], localDebugName: String): StylesMap[StyleName] = (^.asInstanceOf[js.Dynamic].applyDynamic("styleMap")(stylesheet.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[StylesMap[StyleName]]
+  @JSImport("treat/adapter/dist/treat-adapter.cjs", "getThemes")
+  @js.native
+  val getThemes: js.Function0[js.Array[TreatTheme[ThemeOrAny]]] = js.native
   
-  inline def styleTree[ReturnType](makeStyleTree: MakeStyleTree[ReturnType]): ReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("styleTree")(makeStyleTree.asInstanceOf[js.Any]).asInstanceOf[ReturnType]
+  inline def setAdapter(newAdapter: Adapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAdapter")(newAdapter.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

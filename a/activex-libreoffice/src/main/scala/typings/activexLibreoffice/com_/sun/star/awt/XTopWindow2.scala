@@ -35,7 +35,7 @@ object XTopWindow2 {
     IsMinimized: Boolean,
     acquire: () => Unit,
     addTopWindowListener: XTopWindowListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTopWindowListener: XTopWindowListener => Unit,
     setMenuBar: XMenuBar => Unit,

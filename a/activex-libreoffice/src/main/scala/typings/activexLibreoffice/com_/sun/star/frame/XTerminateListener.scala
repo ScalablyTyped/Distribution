@@ -39,7 +39,7 @@ object XTerminateListener {
     acquire: () => Unit,
     disposing: EventObject => Unit,
     notifyTermination: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryTermination: EventObject => Unit,
     release: () => Unit
   ): XTerminateListener = {

@@ -7,17 +7,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiprocessAppender
-  extends StObject
-     with Appender {
+trait MultiprocessAppender extends StObject {
   
-  // (only needed if mode == master)- the name of the appender to send the log events to
+  // (only needed if mode == master) the name of the appender to send the log events to
   var appender: js.UndefOr[String] = js.undefined
   
-  // (defaults to localhost) - the host/IP address to listen on, or send to
+  // (defaults to localhost) the host/IP address to listen on, or send to
   var loggerHost: js.UndefOr[String] = js.undefined
   
-  // (defaults to 5000) - the port to listen on, or send to
+  // (defaults to 5000) the port to listen on, or send to
   var loggerPort: js.UndefOr[Double] = js.undefined
   
   // controls whether the appender listens for log events sent over the network, or is responsible for serialising events and sending them to a server.

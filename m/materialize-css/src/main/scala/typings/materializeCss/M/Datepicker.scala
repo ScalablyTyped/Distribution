@@ -1,6 +1,5 @@
 package typings.materializeCss.M
 
-import typings.std.Date
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ trait Datepicker extends StObject {
   /**
     * The selected Date.
     */
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   /**
     * DONE button instance (undocumented!).
@@ -35,7 +34,7 @@ trait Datepicker extends StObject {
     * Change date view to a specific date on the datepicker
     * @param date Date to show on the datepicker.
     */
-  def gotoDate(date: Date): Unit = js.native
+  def gotoDate(date: js.Date): Unit = js.native
   
   /**
     * If the picker is open.
@@ -55,9 +54,9 @@ trait Datepicker extends StObject {
   def setDate(): Unit = js.native
   def setDate(date: String): Unit = js.native
   def setDate(date: String, preventOnSelect: Boolean): Unit = js.native
+  def setDate(date: js.Date): Unit = js.native
+  def setDate(date: js.Date, preventOnSelect: Boolean): Unit = js.native
   def setDate(date: Unit, preventOnSelect: Boolean): Unit = js.native
-  def setDate(date: Date): Unit = js.native
-  def setDate(date: Date, preventOnSelect: Boolean): Unit = js.native
   
   def setInputValue(): Unit = js.native
 }

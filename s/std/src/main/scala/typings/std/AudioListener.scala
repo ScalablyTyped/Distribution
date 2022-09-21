@@ -7,28 +7,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The position and orientation of the unique person listening to the audio scene, and is used in audio spatialization. All PannerNodes spatialize in relation to the AudioListener stored in the BaseAudioContext.listener attribute. */
 trait AudioListener extends StObject {
   
+  /* standard dom */
   val forwardX: AudioParam
   
+  /* standard dom */
   val forwardY: AudioParam
   
+  /* standard dom */
   val forwardZ: AudioParam
   
+  /* standard dom */
   val positionX: AudioParam
   
+  /* standard dom */
   val positionY: AudioParam
   
+  /* standard dom */
   val positionZ: AudioParam
   
   /** @deprecated */
+  /* standard dom */
   def setOrientation(x: Double, y: Double, z: Double, xUp: Double, yUp: Double, zUp: Double): Unit
   
   /** @deprecated */
+  /* standard dom */
   def setPosition(x: Double, y: Double, z: Double): Unit
   
+  /* standard dom */
   val upX: AudioParam
   
+  /* standard dom */
   val upY: AudioParam
   
+  /* standard dom */
   val upZ: AudioParam
 }
 object AudioListener {

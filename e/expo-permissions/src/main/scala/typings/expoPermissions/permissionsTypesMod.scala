@@ -1,6 +1,8 @@
 package typings.expoPermissions
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.expoModulesCore.permissionsInterfaceMod.PermissionExpiration
+import typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus
 import typings.expoPermissions.expoPermissionsStrings.all
 import typings.expoPermissions.expoPermissionsStrings.always
 import typings.expoPermissions.expoPermissionsStrings.coarse
@@ -8,8 +10,6 @@ import typings.expoPermissions.expoPermissionsStrings.fine
 import typings.expoPermissions.expoPermissionsStrings.limited
 import typings.expoPermissions.expoPermissionsStrings.none
 import typings.expoPermissions.expoPermissionsStrings.whenInUse
-import typings.unimodulesPermissionsInterface.mod.PermissionExpiration
-import typings.unimodulesPermissionsInterface.mod.PermissionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,13 +21,13 @@ object permissionsTypesMod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus & String] = js.native
     
-    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED & String = js.native
+    /* "denied" */ val DENIED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
     
-    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED & String = js.native
+    /* "granted" */ val GRANTED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
     
-    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED & String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
   trait PermissionDetailsLocationAndroid extends StObject {
@@ -49,8 +49,11 @@ object permissionsTypesMod {
   
   trait PermissionInfo
     extends StObject
-       with typings.unimodulesPermissionsInterface.mod.PermissionResponse {
+       with typings.expoModulesCore.permissionsInterfaceMod.PermissionResponse {
     
+    /**
+      * iOS only - Permission.MEDIA_LIBRARY/MEDIA_LIBRARY_WRITE_ONLY
+      */
     var accessPrivileges: js.UndefOr[all | limited | none] = js.undefined
     
     var android: js.UndefOr[PermissionDetailsLocationAndroid] = js.undefined
@@ -84,7 +87,7 @@ object permissionsTypesMod {
   
   trait PermissionResponse
     extends StObject
-       with typings.unimodulesPermissionsInterface.mod.PermissionResponse {
+       with typings.expoModulesCore.permissionsInterfaceMod.PermissionResponse {
     
     var permissions: PermissionMap
   }
@@ -110,8 +113,12 @@ object permissionsTypesMod {
   /* Rewritten from type alias, can be one of: 
     - typings.expoPermissions.expoPermissionsStrings.camera
     - typings.expoPermissions.expoPermissionsStrings.cameraRoll
+    - typings.expoPermissions.expoPermissionsStrings.mediaLibrary
+    - typings.expoPermissions.expoPermissionsStrings.mediaLibraryWriteOnly
     - typings.expoPermissions.expoPermissionsStrings.audioRecording
     - typings.expoPermissions.expoPermissionsStrings.location
+    - typings.expoPermissions.expoPermissionsStrings.locationForeground
+    - typings.expoPermissions.expoPermissionsStrings.locationBackground
     - typings.expoPermissions.expoPermissionsStrings.userFacingNotifications
     - typings.expoPermissions.expoPermissionsStrings.notifications
     - typings.expoPermissions.expoPermissionsStrings.contacts
@@ -134,6 +141,14 @@ object permissionsTypesMod {
     inline def contacts: typings.expoPermissions.expoPermissionsStrings.contacts = "contacts".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.contacts]
     
     inline def location: typings.expoPermissions.expoPermissionsStrings.location = "location".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.location]
+    
+    inline def locationBackground: typings.expoPermissions.expoPermissionsStrings.locationBackground = "locationBackground".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.locationBackground]
+    
+    inline def locationForeground: typings.expoPermissions.expoPermissionsStrings.locationForeground = "locationForeground".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.locationForeground]
+    
+    inline def mediaLibrary: typings.expoPermissions.expoPermissionsStrings.mediaLibrary = "mediaLibrary".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.mediaLibrary]
+    
+    inline def mediaLibraryWriteOnly: typings.expoPermissions.expoPermissionsStrings.mediaLibraryWriteOnly = "mediaLibraryWriteOnly".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.mediaLibraryWriteOnly]
     
     inline def motion: typings.expoPermissions.expoPermissionsStrings.motion = "motion".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.motion]
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Windows")
 @js.native
-/* private */ class Windows ()
+/* private */ open class Windows ()
   extends StObject
      with typings.activexWord.Word.Windows

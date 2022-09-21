@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetPlaybackKeyPairResponse extends StObject {
   
+  /**
+    * 
+    */
   var keyPair: js.UndefOr[PlaybackKeyPair] = js.undefined
 }
 object GetPlaybackKeyPairResponse {

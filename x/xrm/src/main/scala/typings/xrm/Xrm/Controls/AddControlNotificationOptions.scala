@@ -40,11 +40,11 @@ object AddControlNotificationOptions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: ControlNotificationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ControlNotificationAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setNotificationLevel(value: NotificationLevel): Self = StObject.set(x, "notificationLevel", value.asInstanceOf[js.Any])
     

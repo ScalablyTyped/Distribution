@@ -36,7 +36,7 @@ object XChangeBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addChangeListener: XChangeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChangeListener: XChangeListener => Unit
   ): XChangeBroadcaster = {

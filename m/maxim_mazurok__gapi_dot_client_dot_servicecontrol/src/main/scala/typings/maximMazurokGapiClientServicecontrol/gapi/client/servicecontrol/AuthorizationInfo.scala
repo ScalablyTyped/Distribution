@@ -12,7 +12,10 @@ trait AuthorizationInfo extends StObject {
   /** The required IAM permission. */
   var permission: js.UndefOr[String] = js.undefined
   
-  /** The resource being accessed, as a REST-style string. For example: bigquery.googleapis.com/projects/PROJECTID/datasets/DATASETID */
+  /**
+    * The resource being accessed, as a REST-style or cloud resource string. For example: bigquery.googleapis.com/projects/PROJECTID/datasets/DATASETID or
+    * projects/PROJECTID/datasets/DATASETID
+    */
   var resource: js.UndefOr[String] = js.undefined
   
   /**

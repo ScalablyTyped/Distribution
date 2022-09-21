@@ -12,7 +12,7 @@ trait SalesforceChatterFeedConfiguration extends StObject {
   var DocumentDataFieldName: DataSourceFieldName
   
   /**
-    * The name of the column in the Salesforce FeedItem table that contains the title of the document. This is typically the Title collumn.
+    * The name of the column in the Salesforce FeedItem table that contains the title of the document. This is typically the Title column.
     */
   var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.undefined
   
@@ -45,12 +45,12 @@ object SalesforceChatterFeedConfiguration {
     
     inline def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
-    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
+    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value*))
     
     inline def setIncludeFilterTypes(value: SalesforceChatterFeedIncludeFilterTypes): Self = StObject.set(x, "IncludeFilterTypes", value.asInstanceOf[js.Any])
     
     inline def setIncludeFilterTypesUndefined: Self = StObject.set(x, "IncludeFilterTypes", js.undefined)
     
-    inline def setIncludeFilterTypesVarargs(value: SalesforceChatterFeedIncludeFilterType*): Self = StObject.set(x, "IncludeFilterTypes", js.Array(value :_*))
+    inline def setIncludeFilterTypesVarargs(value: SalesforceChatterFeedIncludeFilterType*): Self = StObject.set(x, "IncludeFilterTypes", js.Array(value*))
   }
 }

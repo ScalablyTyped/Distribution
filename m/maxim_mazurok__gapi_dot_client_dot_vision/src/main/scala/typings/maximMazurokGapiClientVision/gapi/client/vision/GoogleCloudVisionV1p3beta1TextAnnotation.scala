@@ -25,7 +25,7 @@ object GoogleCloudVisionV1p3beta1TextAnnotation {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: GoogleCloudVisionV1p3beta1Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: GoogleCloudVisionV1p3beta1Page*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

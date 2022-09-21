@@ -13,5 +13,5 @@ trait Pages extends StObject {
   
   def Item(Index: Double): Page = js.native
   
-  def _Default(Index: js.Any): Page = js.native
+  def _Default(Index: Any): Page = js.native
 }

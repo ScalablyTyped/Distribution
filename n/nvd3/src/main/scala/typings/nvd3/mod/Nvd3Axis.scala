@@ -53,18 +53,18 @@ trait Nvd3Axis extends StObject {
   def rotateYLabels(): Double = js.native
   def rotateYLabels(range: Double): this.type = js.native
   
-  def scale(): js.Any = js.native
-  def scale(scale: js.Any): this.type = js.native
+  def scale(): Any = js.native
+  def scale(scale: Any): this.type = js.native
   
   def showMaxMin(value: Boolean): this.type = js.native
   
   def staggerLabels(): Boolean = js.native
   def staggerLabels(value: Boolean): this.type = js.native
   
-  def tickFormat(): js.Function1[/* d */ js.Any, String] = js.native
+  def tickFormat(): js.Function1[/* d */ Any, String] = js.native
   def tickFormat(format: String): this.type = js.native
-  def tickFormat(format: js.Function1[/* t */ js.Any, String]): this.type = js.native
-  def tickFormat(format: js.Function2[/* d */ js.Any, /* i */ js.Any, String]): this.type = js.native
+  def tickFormat(format: js.Function1[/* t */ Any, String]): this.type = js.native
+  def tickFormat(format: js.Function2[/* d */ Any, /* i */ Any, String]): this.type = js.native
   
   def tickPadding(): Double = js.native
   def tickPadding(padding: Double): this.type = js.native
@@ -73,11 +73,11 @@ trait Nvd3Axis extends StObject {
   def tickSize(inner: Double, outer: Double): this.type = js.native
   def tickSize(size: Double): this.type = js.native
   
-  def tickValues(): js.Array[js.Any] = js.native
-  def tickValues(values: js.Array[js.Any]): this.type = js.native
+  def tickValues(): js.Array[Any] = js.native
+  def tickValues(values: js.Array[Any]): this.type = js.native
   
-  def ticks(): js.Array[js.Any] = js.native
-  def ticks(args: js.Any*): this.type = js.native
+  def ticks(): js.Array[Any] = js.native
+  def ticks(args: Any*): this.type = js.native
   
   /* The width the graph or component created inside the SVG should be made*/
   def width(): Double = js.native

@@ -17,7 +17,7 @@ trait Map[K, V] extends StObject {
   def entries(): IterableIterator[js.Tuple2[K, V]] = js.native
   
   def forEach(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ Map[K, V], Unit]): Unit = js.native
-  def forEach(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ Map[K, V], Unit], thisArg: js.Any): Unit = js.native
+  def forEach(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ Map[K, V], Unit], thisArg: Any): Unit = js.native
   
   def get(key: K): js.UndefOr[V] = js.native
   

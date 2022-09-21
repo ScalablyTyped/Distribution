@@ -14,7 +14,7 @@ trait ScrollToOptions extends StObject {
   /**
     * The OVERALL length of the animation.
     */
-  var duration: js.UndefOr[js.Any] = js.undefined
+  var duration: js.UndefOr[Any] = js.undefined
   
   /**
     * The easing method for the animation.
@@ -30,7 +30,7 @@ trait ScrollToOptions extends StObject {
     * Add/deduct from the end position. 
     * One number for both axes or { top:x, left:y }.
     */
-  var offset: js.UndefOr[js.Any] = js.undefined
+  var offset: js.UndefOr[Any] = js.undefined
   
   /**
     * Function to be called after the scrolling ends. 
@@ -46,7 +46,7 @@ trait ScrollToOptions extends StObject {
     * Add/deduct the height/width multiplied by 'over'.
     * Can be { top:x, left:y } when using both axes.
     */
-  var over: js.UndefOr[js.Any] = js.undefined
+  var over: js.UndefOr[Any] = js.undefined
   
   /**
     * If true, and both axis are given.
@@ -67,7 +67,7 @@ object ScrollToOptions {
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
@@ -79,7 +79,7 @@ object ScrollToOptions {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
@@ -91,7 +91,7 @@ object ScrollToOptions {
     
     inline def setOnAfterUndefined: Self = StObject.set(x, "onAfter", js.undefined)
     
-    inline def setOver(value: js.Any): Self = StObject.set(x, "over", value.asInstanceOf[js.Any])
+    inline def setOver(value: Any): Self = StObject.set(x, "over", value.asInstanceOf[js.Any])
     
     inline def setOverUndefined: Self = StObject.set(x, "over", js.undefined)
     

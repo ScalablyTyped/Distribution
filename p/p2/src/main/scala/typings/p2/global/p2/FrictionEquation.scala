@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.FrictionEquation")
 @js.native
-class FrictionEquation protected ()
+open class FrictionEquation protected ()
   extends typings.p2.mod.FrictionEquation {
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body, slipForce: Double) = this()
 }

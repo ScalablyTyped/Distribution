@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@oracle/oraclejet/ojvalidation-base", "RequiredValidator")
 @js.native
-class RequiredValidator ()
+open class RequiredValidator ()
   extends StObject
      with Validator[js.Object | String | Double] {
   def this(options: ValidatorOptions) = this()

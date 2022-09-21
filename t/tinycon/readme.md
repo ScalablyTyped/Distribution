@@ -11,9 +11,9 @@ Add notification bubbles in the favicon
 | Full name          | tinycon |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 258219 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 25947.333333333332 |
+| # stars            | 5092.0 |
 
 ## Links
 - [Homepage](https://github.com/tommoor/tinycon#readme)

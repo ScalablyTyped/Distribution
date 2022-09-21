@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.chai.Chai.ChaiPlugin
 import typings.chai.Chai.NumericComparison
 import typings.chaiFs.mod.global.Chai.Assertion
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,46 +48,46 @@ object mod extends Shortcut {
         def basename(path: String, name: String, msg: String): Unit = js.native
         
         // directory().with.contents([...])
-        def contents(array: js.Array[js.Any]): Unit = js.native
-        def contents(array: js.Array[js.Any], msg: String): Unit = js.native
+        def contents(array: js.Array[Any]): Unit = js.native
+        def contents(array: js.Array[Any], msg: String): Unit = js.native
         
         // Directory
         def directory(): Unit = js.native
         def directory(msg: String): Unit = js.native
         
-        def directoryContent(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directoryContent(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directoryContent(path: String, array: js.Array[Any]): Unit = js.native
+        def directoryContent(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def directoryDeepContent(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directoryDeepContent(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directoryDeepContent(path: String, array: js.Array[Any]): Unit = js.native
+        def directoryDeepContent(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
         def directoryDeepEqual(path: String, otherPath: String): Unit = js.native
         def directoryDeepEqual(path: String, otherPath: String, msg: String): Unit = js.native
         
-        def directoryDeepFiles(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directoryDeepFiles(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directoryDeepFiles(path: String, array: js.Array[Any]): Unit = js.native
+        def directoryDeepFiles(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def directoryDeepSubDirs(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directoryDeepSubDirs(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directoryDeepSubDirs(path: String, array: js.Array[Any]): Unit = js.native
+        def directoryDeepSubDirs(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
         // directory().and.equal(otherPath)
         def directoryEqual(path: String, otherPath: String): Unit = js.native
         def directoryEqual(path: String, otherPath: String, msg: String): Unit = js.native
         
-        def directoryFiles(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directoryFiles(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directoryFiles(path: String, array: js.Array[Any]): Unit = js.native
+        def directoryFiles(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def directoryInclude(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directoryInclude(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directoryInclude(path: String, array: js.Array[Any]): Unit = js.native
+        def directoryInclude(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def directoryIncludeFiles(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directoryIncludeFiles(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directoryIncludeFiles(path: String, array: js.Array[Any]): Unit = js.native
+        def directoryIncludeFiles(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def directoryIncludeSubDirs(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directoryIncludeSubDirs(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directoryIncludeSubDirs(path: String, array: js.Array[Any]): Unit = js.native
+        def directoryIncludeSubDirs(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def directorySubDirs(path: String, array: js.Array[js.Any]): Unit = js.native
-        def directorySubDirs(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def directorySubDirs(path: String, array: js.Array[Any]): Unit = js.native
+        def directorySubDirs(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
         // Dirname
         def dirname(path: String): Unit = js.native
@@ -105,20 +104,20 @@ object mod extends Shortcut {
         def file(msg: String): Unit = js.native
         
         // file().with.content(str)
-        def fileContent(path: String, data: js.Any): Unit = js.native
-        def fileContent(path: String, data: js.Any, msg: String): Unit = js.native
+        def fileContent(path: String, data: Any): Unit = js.native
+        def fileContent(path: String, data: Any, msg: String): Unit = js.native
         
         // file().with.contents.that.match(/xyz/)
-        def fileContentMatch(path: String, regExp: RegExp): Unit = js.native
-        def fileContentMatch(path: String, regExp: RegExp, msg: String): Unit = js.native
+        def fileContentMatch(path: String, regExp: js.RegExp): Unit = js.native
+        def fileContentMatch(path: String, regExp: js.RegExp, msg: String): Unit = js.native
         
         // file().and.equal(otherPath)
         def fileEqual(path: String, otherPath: String): Unit = js.native
         def fileEqual(path: String, otherPath: String, msg: String): Unit = js.native
         
         // directory().with.files([...])
-        def files(array: js.Array[js.Any]): Unit = js.native
-        def files(array: js.Array[js.Any], msg: String): Unit = js.native
+        def files(array: js.Array[Any]): Unit = js.native
+        def files(array: js.Array[Any], msg: String): Unit = js.native
         
         def isDirectory(path: String): Unit = js.native
         def isDirectory(path: String, msg: String): Unit = js.native
@@ -139,44 +138,44 @@ object mod extends Shortcut {
         def jsonFile(path: String, msg: String): Unit = js.native
         
         // file().using.json.schema(obj)
-        def jsonSchemaFile(path: String, schema: js.Any): Unit = js.native
-        def jsonSchemaFile(path: String, schema: js.Any, msg: String): Unit = js.native
+        def jsonSchemaFile(path: String, schema: Any): Unit = js.native
+        def jsonSchemaFile(path: String, schema: Any, msg: String): Unit = js.native
         
         def notBasename(path: String, name: String): Unit = js.native
         def notBasename(path: String, name: String, msg: String): Unit = js.native
         
-        def notDirectoryContent(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectoryContent(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectoryContent(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectoryContent(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def notDirectoryDeepContent(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectoryDeepContent(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectoryDeepContent(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectoryDeepContent(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
         def notDirectoryDeepEqual(path: String, otherPath: String): Unit = js.native
         def notDirectoryDeepEqual(path: String, otherPath: String, msg: String): Unit = js.native
         
-        def notDirectoryDeepFiles(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectoryDeepFiles(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectoryDeepFiles(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectoryDeepFiles(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def notDirectoryDeepSubDirs(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectoryDeepSubDirs(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectoryDeepSubDirs(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectoryDeepSubDirs(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
         def notDirectoryEqual(path: String, otherPath: String): Unit = js.native
         def notDirectoryEqual(path: String, otherPath: String, msg: String): Unit = js.native
         
-        def notDirectoryFiles(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectoryFiles(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectoryFiles(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectoryFiles(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def notDirectoryInclude(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectoryInclude(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectoryInclude(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectoryInclude(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def notDirectoryIncludeFiles(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectoryIncludeFiles(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectoryIncludeFiles(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectoryIncludeFiles(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def notDirectoryIncludeSubDirs(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectoryIncludeSubDirs(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectoryIncludeSubDirs(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectoryIncludeSubDirs(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
-        def notDirectorySubDirs(path: String, array: js.Array[js.Any]): Unit = js.native
-        def notDirectorySubDirs(path: String, array: js.Array[js.Any], msg: String): Unit = js.native
+        def notDirectorySubDirs(path: String, array: js.Array[Any]): Unit = js.native
+        def notDirectorySubDirs(path: String, array: js.Array[Any], msg: String): Unit = js.native
         
         def notDirname(path: String, name: String): Unit = js.native
         def notDirname(path: String, name: String, msg: String): Unit = js.native
@@ -184,11 +183,11 @@ object mod extends Shortcut {
         def notExtname(path: String, name: String): Unit = js.native
         def notExtname(path: String, name: String, msg: String): Unit = js.native
         
-        def notFileContent(path: String, data: js.Any): Unit = js.native
-        def notFileContent(path: String, data: js.Any, msg: String): Unit = js.native
+        def notFileContent(path: String, data: Any): Unit = js.native
+        def notFileContent(path: String, data: Any, msg: String): Unit = js.native
         
-        def notFileContentMatch(path: String, regExp: RegExp): Unit = js.native
-        def notFileContentMatch(path: String, regExp: RegExp, msg: String): Unit = js.native
+        def notFileContentMatch(path: String, regExp: js.RegExp): Unit = js.native
+        def notFileContentMatch(path: String, regExp: js.RegExp, msg: String): Unit = js.native
         
         def notFileEqual(path: String, otherPath: String): Unit = js.native
         def notFileEqual(path: String, otherPath: String, msg: String): Unit = js.native
@@ -208,8 +207,8 @@ object mod extends Shortcut {
         def notJsonFile(path: String): Unit = js.native
         def notJsonFile(path: String, msg: String): Unit = js.native
         
-        def notJsonSchemaFile(path: String, schema: js.Any): Unit = js.native
-        def notJsonSchemaFile(path: String, schema: js.Any, msg: String): Unit = js.native
+        def notJsonSchemaFile(path: String, schema: Any): Unit = js.native
+        def notJsonSchemaFile(path: String, schema: Any, msg: String): Unit = js.native
         
         def notPathExists(path: String): Unit = js.native
         def notPathExists(path: String, msg: String): Unit = js.native
@@ -224,8 +223,8 @@ object mod extends Shortcut {
         def schema(obj: js.Object): Unit = js.native
         
         // directory().with.subDirs([...])
-        def subDirs(array: js.Array[js.Any]): Unit = js.native
-        def subDirs(array: js.Array[js.Any], msg: String): Unit = js.native
+        def subDirs(array: js.Array[Any]): Unit = js.native
+        def subDirs(array: js.Array[Any], msg: String): Unit = js.native
       }
       
       @js.native
@@ -246,46 +245,46 @@ object mod extends Shortcut {
         def basename(path: Unit, name: Unit, msg: String): Assertion = js.native
         
         // file().with.content(str)
-        def content(data: js.Any): Assertion = js.native
-        def content(data: js.Any, msg: String): Assertion = js.native
+        def content(data: Any): Assertion = js.native
+        def content(data: Any, msg: String): Assertion = js.native
         
         // directory().with.contents([...])
-        def contents(array: js.Array[js.Any]): Assertion = js.native
-        def contents(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def contents(array: js.Array[Any]): Assertion = js.native
+        def contents(array: js.Array[Any], msg: String): Assertion = js.native
         
-        def directoryContent(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directoryContent(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directoryContent(path: String, array: js.Array[Any]): Assertion = js.native
+        def directoryContent(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def directoryDeepContent(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directoryDeepContent(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directoryDeepContent(path: String, array: js.Array[Any]): Assertion = js.native
+        def directoryDeepContent(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
         def directoryDeepEqual(path: String, otherPath: String): Assertion = js.native
         def directoryDeepEqual(path: String, otherPath: String, msg: String): Assertion = js.native
         
-        def directoryDeepFiles(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directoryDeepFiles(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directoryDeepFiles(path: String, array: js.Array[Any]): Assertion = js.native
+        def directoryDeepFiles(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def directoryDeepSubDirs(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directoryDeepSubDirs(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directoryDeepSubDirs(path: String, array: js.Array[Any]): Assertion = js.native
+        def directoryDeepSubDirs(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
         // directory().and.equal(otherPath)
         def directoryEqual(path: String, otherPath: String): Assertion = js.native
         def directoryEqual(path: String, otherPath: String, msg: String): Assertion = js.native
         
-        def directoryFiles(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directoryFiles(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directoryFiles(path: String, array: js.Array[Any]): Assertion = js.native
+        def directoryFiles(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def directoryInclude(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directoryInclude(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directoryInclude(path: String, array: js.Array[Any]): Assertion = js.native
+        def directoryInclude(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def directoryIncludeFiles(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directoryIncludeFiles(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directoryIncludeFiles(path: String, array: js.Array[Any]): Assertion = js.native
+        def directoryIncludeFiles(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def directoryIncludeSubDirs(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directoryIncludeSubDirs(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directoryIncludeSubDirs(path: String, array: js.Array[Any]): Assertion = js.native
+        def directoryIncludeSubDirs(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def directorySubDirs(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def directorySubDirs(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def directorySubDirs(path: String, array: js.Array[Any]): Assertion = js.native
+        def directorySubDirs(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
         // Dirname
         def dirname(name: String): Assertion = js.native
@@ -297,20 +296,20 @@ object mod extends Shortcut {
         def extname(path: String, name: String, msg: String): Assertion = js.native
         def extname(path: String, name: Unit, msg: String): Assertion = js.native
         
-        def fileContent(path: String, data: js.Any): Assertion = js.native
-        def fileContent(path: String, data: js.Any, msg: String): Assertion = js.native
+        def fileContent(path: String, data: Any): Assertion = js.native
+        def fileContent(path: String, data: Any, msg: String): Assertion = js.native
         
         // file().with.contents.that.match(/xyz/)
-        def fileContentMatch(path: String, regExp: RegExp): Assertion = js.native
-        def fileContentMatch(path: String, regExp: RegExp, msg: String): Assertion = js.native
+        def fileContentMatch(path: String, regExp: js.RegExp): Assertion = js.native
+        def fileContentMatch(path: String, regExp: js.RegExp, msg: String): Assertion = js.native
         
         // file().and.equal(otherPath)
         def fileEqual(path: String, otherPath: String): Assertion = js.native
         def fileEqual(path: String, otherPath: String, msg: String): Assertion = js.native
         
         // directory().with.files([...])
-        def files(array: js.Array[js.Any]): Assertion = js.native
-        def files(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def files(array: js.Array[Any]): Assertion = js.native
+        def files(array: js.Array[Any], msg: String): Assertion = js.native
         
         // Directory
         def isDirectory(path: String): Assertion = js.native
@@ -333,44 +332,44 @@ object mod extends Shortcut {
         def jsonFile(path: String, msg: String): Assertion = js.native
         
         // file().using.json.schema(obj)
-        def jsonSchemaFile(path: String, schema: js.Any): Assertion = js.native
-        def jsonSchemaFile(path: String, schema: js.Any, msg: String): Assertion = js.native
+        def jsonSchemaFile(path: String, schema: Any): Assertion = js.native
+        def jsonSchemaFile(path: String, schema: Any, msg: String): Assertion = js.native
         
         def notBasename(path: String, name: String): Assertion = js.native
         def notBasename(path: String, name: String, msg: String): Assertion = js.native
         
-        def notDirectoryContent(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectoryContent(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectoryContent(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectoryContent(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def notDirectoryDeepContent(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectoryDeepContent(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectoryDeepContent(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectoryDeepContent(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
         def notDirectoryDeepEqual(path: String, otherPath: String): Assertion = js.native
         def notDirectoryDeepEqual(path: String, otherPath: String, msg: String): Assertion = js.native
         
-        def notDirectoryDeepFiles(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectoryDeepFiles(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectoryDeepFiles(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectoryDeepFiles(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def notDirectoryDeepSubDirs(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectoryDeepSubDirs(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectoryDeepSubDirs(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectoryDeepSubDirs(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
         def notDirectoryEqual(path: String, otherPath: String): Assertion = js.native
         def notDirectoryEqual(path: String, otherPath: String, msg: String): Assertion = js.native
         
-        def notDirectoryFiles(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectoryFiles(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectoryFiles(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectoryFiles(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def notDirectoryInclude(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectoryInclude(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectoryInclude(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectoryInclude(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def notDirectoryIncludeFiles(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectoryIncludeFiles(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectoryIncludeFiles(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectoryIncludeFiles(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def notDirectoryIncludeSubDirs(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectoryIncludeSubDirs(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectoryIncludeSubDirs(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectoryIncludeSubDirs(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
-        def notDirectorySubDirs(path: String, array: js.Array[js.Any]): Assertion = js.native
-        def notDirectorySubDirs(path: String, array: js.Array[js.Any], msg: String): Assertion = js.native
+        def notDirectorySubDirs(path: String, array: js.Array[Any]): Assertion = js.native
+        def notDirectorySubDirs(path: String, array: js.Array[Any], msg: String): Assertion = js.native
         
         def notDirname(path: String, name: String): Assertion = js.native
         def notDirname(path: String, name: String, msg: String): Assertion = js.native
@@ -378,11 +377,11 @@ object mod extends Shortcut {
         def notExtname(path: String, name: String): Assertion = js.native
         def notExtname(path: String, name: String, msg: String): Assertion = js.native
         
-        def notFileContent(path: String, data: js.Any): Assertion = js.native
-        def notFileContent(path: String, data: js.Any, msg: String): Assertion = js.native
+        def notFileContent(path: String, data: Any): Assertion = js.native
+        def notFileContent(path: String, data: Any, msg: String): Assertion = js.native
         
-        def notFileContentMatch(path: String, regExp: RegExp): Assertion = js.native
-        def notFileContentMatch(path: String, regExp: RegExp, msg: String): Assertion = js.native
+        def notFileContentMatch(path: String, regExp: js.RegExp): Assertion = js.native
+        def notFileContentMatch(path: String, regExp: js.RegExp, msg: String): Assertion = js.native
         
         def notFileEqual(path: String, otherPath: String): Assertion = js.native
         def notFileEqual(path: String, otherPath: String, msg: String): Assertion = js.native
@@ -402,8 +401,8 @@ object mod extends Shortcut {
         def notJsonFile(path: String): Assertion = js.native
         def notJsonFile(path: String, msg: String): Assertion = js.native
         
-        def notJsonSchemaFile(path: String, schema: js.Any): Assertion = js.native
-        def notJsonSchemaFile(path: String, schema: js.Any, msg: String): Assertion = js.native
+        def notJsonSchemaFile(path: String, schema: Any): Assertion = js.native
+        def notJsonSchemaFile(path: String, schema: Any, msg: String): Assertion = js.native
         
         def notPathExists(path: String): Assertion = js.native
         def notPathExists(path: String, msg: String): Assertion = js.native
@@ -415,34 +414,34 @@ object mod extends Shortcut {
         def schema(obj: js.Object): Assertion = js.native
         
         // directory().with.subDirs([...])
-        def subDirs(array: js.Array[js.Any]): Assertion = js.native
-        def subDirs(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def subDirs(array: js.Array[Any]): Assertion = js.native
+        def subDirs(array: js.Array[Any], msg: String): Assertion = js.native
       }
       
       @js.native
       trait Deep extends StObject {
         
-        def contents(array: js.Array[js.Any]): Assertion = js.native
-        def contents(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def contents(array: js.Array[Any]): Assertion = js.native
+        def contents(array: js.Array[Any], msg: String): Assertion = js.native
         
-        def files(array: js.Array[js.Any]): Assertion = js.native
-        def files(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def files(array: js.Array[Any]): Assertion = js.native
+        def files(array: js.Array[Any], msg: String): Assertion = js.native
         
-        def subDirs(array: js.Array[js.Any]): Assertion = js.native
-        def subDirs(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def subDirs(array: js.Array[Any]): Assertion = js.native
+        def subDirs(array: js.Array[Any], msg: String): Assertion = js.native
       }
       
       @js.native
       trait Include extends StObject {
         
-        def contents(array: js.Array[js.Any]): Assertion = js.native
-        def contents(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def contents(array: js.Array[Any]): Assertion = js.native
+        def contents(array: js.Array[Any], msg: String): Assertion = js.native
         
-        def files(array: js.Array[js.Any]): Assertion = js.native
-        def files(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def files(array: js.Array[Any]): Assertion = js.native
+        def files(array: js.Array[Any], msg: String): Assertion = js.native
         
-        def subDirs(array: js.Array[js.Any]): Assertion = js.native
-        def subDirs(array: js.Array[js.Any], msg: String): Assertion = js.native
+        def subDirs(array: js.Array[Any]): Assertion = js.native
+        def subDirs(array: js.Array[Any], msg: String): Assertion = js.native
       }
       
       trait LanguageChains extends StObject {

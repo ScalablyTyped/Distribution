@@ -1,6 +1,7 @@
 package typings.cloudeventsSdk
 
 import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ object validationErrorMod {
     */
   @JSImport("cloudevents-sdk/lib/bindings/http/validation/validation_error", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ValidationError {
     /**
@@ -27,19 +28,28 @@ object validationErrorMod {
       * @param {string[]|ErrorObject[]} [errors] any additional errors related to validation
       */
     def this(message: String) = this()
-    def this(message: String, errors: js.Array[typings.ajv.mod.ErrorObject | String]) = this()
+    def this(
+      message: String,
+      errors: js.Array[
+            (typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any]) | String
+          ]
+    ) = this()
     
     /* CompleteClass */
-    var errors: js.Array[typings.ajv.mod.ErrorObject | String] = js.native
+    var errors: js.Array[
+        (typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any]) | String
+      ] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  type ErrorObject = typings.ajv.mod.ErrorObject
+  type ErrorObject = typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any]
   
   /**
     * @ignore
@@ -53,20 +63,32 @@ object validationErrorMod {
     extends StObject
        with Error {
     
-    var errors: js.Array[typings.ajv.mod.ErrorObject | String]
+    var errors: js.Array[
+        (typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any]) | String
+      ]
   }
   object ValidationError {
     
-    inline def apply(errors: js.Array[typings.ajv.mod.ErrorObject | String], message: String, name: String): ValidationError = {
+    inline def apply(
+      errors: js.Array[
+          (typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any]) | String
+        ],
+      message: String,
+      name: String
+    ): ValidationError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationError]
     }
     
     extension [Self <: ValidationError](x: Self) {
       
-      inline def setErrors(value: js.Array[typings.ajv.mod.ErrorObject | String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(
+        value: js.Array[
+              (typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any]) | String
+            ]
+      ): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: (typings.ajv.mod.ErrorObject | String)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ((typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any]) | String)*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
 }

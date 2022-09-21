@@ -1,38 +1,10 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.stdStrings.MSGestureChange
-import typings.std.stdStrings.MSGestureDoubleTap
-import typings.std.stdStrings.MSGestureEnd
-import typings.std.stdStrings.MSGestureHold
-import typings.std.stdStrings.MSGestureStart
-import typings.std.stdStrings.MSGestureTap
-import typings.std.stdStrings.MSInertiaStart
-import typings.std.stdStrings.MSPointerCancel
-import typings.std.stdStrings.MSPointerDown
-import typings.std.stdStrings.MSPointerEnter
-import typings.std.stdStrings.MSPointerLeave
-import typings.std.stdStrings.MSPointerMove
-import typings.std.stdStrings.MSPointerOut
-import typings.std.stdStrings.MSPointerOver
-import typings.std.stdStrings.MSPointerUp
-import typings.std.stdStrings.compassneedscalibration
-import typings.std.stdStrings.devicelight
+import typings.std.stdStrings.DOMContentLoaded
 import typings.std.stdStrings.devicemotion
 import typings.std.stdStrings.deviceorientation
-import typings.std.stdStrings.deviceorientationabsolute
-import typings.std.stdStrings.mousewheel
 import typings.std.stdStrings.orientationchange
-import typings.std.stdStrings.readystatechange
-import typings.std.stdStrings.vrdisplayactivate
-import typings.std.stdStrings.vrdisplayblur
-import typings.std.stdStrings.vrdisplayconnect
-import typings.std.stdStrings.vrdisplaydeactivate
-import typings.std.stdStrings.vrdisplaydisconnect
-import typings.std.stdStrings.vrdisplayfocus
-import typings.std.stdStrings.vrdisplaypointerrestricted
-import typings.std.stdStrings.vrdisplaypointerunrestricted
-import typings.std.stdStrings.vrdisplaypresentchange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,705 +20,276 @@ trait Window
      with WindowLocalStorage
      with WindowOrWorkerGlobalScope
      with WindowSessionStorage
-     with /* index */ NumberDictionary[Window] {
+     with /* standard dom */
+/* index */ NumberDictionary[Window] {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_MSGestureChange(`type`: MSGestureChange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureChange(
-    `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+  def addEventListener_DOMContentLoaded(
+    `type`: DOMContentLoaded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureChange(
-    `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureDoubleTap(
-    `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureDoubleTap(
-    `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureDoubleTap(
-    `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureEnd(
-    `type`: MSGestureEnd,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureEnd(
-    `type`: MSGestureEnd,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureHold(`type`: MSGestureHold, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureHold(
-    `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureHold(
-    `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureStart(`type`: MSGestureStart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureStart(
-    `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureStart(
-    `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureTap(
-    `type`: MSGestureTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureTap(
-    `type`: MSGestureTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSInertiaStart(`type`: MSInertiaStart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSInertiaStart(
-    `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSInertiaStart(
-    `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerCancel(`type`: MSPointerCancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerCancel(
-    `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerCancel(
-    `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerDown(`type`: MSPointerDown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerDown(
-    `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerDown(
-    `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerEnter(`type`: MSPointerEnter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerEnter(
-    `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerEnter(
-    `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerLeave(`type`: MSPointerLeave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerLeave(
-    `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerLeave(
-    `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerMove(`type`: MSPointerMove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerMove(
-    `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerMove(
-    `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerOut(
-    `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerOut(
-    `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerOver(`type`: MSPointerOver, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerOver(
-    `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerOver(
-    `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerUp(
-    `type`: MSPointerUp,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerUp(
-    `type`: MSPointerUp,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_compassneedscalibration(
-    `type`: compassneedscalibration,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_compassneedscalibration(
-    `type`: compassneedscalibration,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_compassneedscalibration(
-    `type`: compassneedscalibration,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_devicelight(
-    `type`: devicelight,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_devicelight(
-    `type`: devicelight,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_devicelight(
-    `type`: devicelight,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, js.Any],
+  def addEventListener_DOMContentLoaded(
+    `type`: DOMContentLoaded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_devicemotion(
     `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_devicemotion(
     `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_devicemotion(
     `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deviceorientation(
     `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deviceorientation(
     `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deviceorientation(
     `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_deviceorientationabsolute(
-    `type`: deviceorientationabsolute,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_deviceorientationabsolute(
-    `type`: deviceorientationabsolute,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_deviceorientationabsolute(
-    `type`: deviceorientationabsolute,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_mousewheel(`type`: mousewheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_mousewheel(
-    `type`: mousewheel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_mousewheel(
-    `type`: mousewheel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
+  def addEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_orientationchange(
     `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_orientationchange(
     `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayactivate(
-    `type`: vrdisplayactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayactivate(
-    `type`: vrdisplayactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayactivate(
-    `type`: vrdisplayactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayblur(`type`: vrdisplayblur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayblur(
-    `type`: vrdisplayblur,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayblur(
-    `type`: vrdisplayblur,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayconnect(`type`: vrdisplayconnect, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayconnect(
-    `type`: vrdisplayconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayconnect(
-    `type`: vrdisplayconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaydeactivate(
-    `type`: vrdisplaydeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaydeactivate(
-    `type`: vrdisplaydeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaydeactivate(
-    `type`: vrdisplaydeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaydisconnect(
-    `type`: vrdisplaydisconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaydisconnect(
-    `type`: vrdisplaydisconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaydisconnect(
-    `type`: vrdisplaydisconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayfocus(`type`: vrdisplayfocus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayfocus(
-    `type`: vrdisplayfocus,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplayfocus(
-    `type`: vrdisplayfocus,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypointerrestricted(
-    `type`: vrdisplaypointerrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypointerrestricted(
-    `type`: vrdisplaypointerrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypointerrestricted(
-    `type`: vrdisplaypointerrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypointerunrestricted(
-    `type`: vrdisplaypointerunrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypointerunrestricted(
-    `type`: vrdisplaypointerunrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypointerunrestricted(
-    `type`: vrdisplaypointerunrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypresentchange(
-    `type`: vrdisplaypresentchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypresentchange(
-    `type`: vrdisplaypresentchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_vrdisplaypresentchange(
-    `type`: vrdisplaypresentchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   def alert(): Unit = js.native
-  def alert(message: js.Any): Unit = js.native
+  def alert(message: Any): Unit = js.native
   
-  val applicationCache: ApplicationCache = js.native
-  
+  /* standard dom */
   def blur(): Unit = js.native
   
+  /* standard dom */
+  def cancelIdleCallback(handle: Double): Unit = js.native
+  
   /** @deprecated */
+  /* standard dom */
   def captureEvents(): Unit = js.native
   
+  /** @deprecated This is a legacy alias of `navigator`. */
+  /* standard dom */
   val clientInformation: Navigator = js.native
   
+  /** Closes the window. */
+  /* standard dom */
   def close(): Unit = js.native
   
+  /** Returns true if the window has been closed, false otherwise. */
+  /* standard dom */
   val closed: scala.Boolean = js.native
   
+  /* standard dom */
   def confirm(): scala.Boolean = js.native
   def confirm(message: java.lang.String): scala.Boolean = js.native
   
-  var customElements: CustomElementRegistry = js.native
+  /** Defines a new custom element, mapping the given name to the given constructor as an autonomous custom element. */
+  /* standard dom */
+  val customElements: CustomElementRegistry = js.native
   
-  var defaultStatus: java.lang.String = js.native
-  
-  def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): Unit = js.native
-  
+  /* standard dom */
   val devicePixelRatio: Double = js.native
   
-  val doNotTrack: java.lang.String = js.native
-  
+  /* standard dom */
   val document: Document = js.native
   
   /** @deprecated */
+  /* standard dom */
   val event: js.UndefOr[Event] = js.native
   
   /** @deprecated */
+  /* standard dom */
   val external: External = js.native
   
+  /** Moves the focus to the window's browsing context, if any. */
+  /* standard dom */
   def focus(): Unit = js.native
   
-  val frameElement: Element = js.native
+  /* standard dom */
+  val frameElement: Element | Null = js.native
   
-  val frames: Window = js.native
+  /* standard dom */
+  val frames: WindowProxy = js.native
   
+  /* standard dom */
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
   
-  def getMatchedCSSRules(elt: Element): CSSRuleList = js.native
-  def getMatchedCSSRules(elt: Element, pseudoElt: java.lang.String): CSSRuleList = js.native
-  
+  /* standard dom */
   def getSelection(): Selection | Null = js.native
   
+  /* standard dom */
   val history: History = js.native
   
+  /* standard dom */
   val innerHeight: Double = js.native
   
+  /* standard dom */
   val innerWidth: Double = js.native
   
+  /* standard dom */
   val length: Double = js.native
   
-  var location: Location = js.native
+  /* standard dom */
+  def location: Location = js.native
+  /* standard dom */
+  def location_=(href: java.lang.String | Location): Unit = js.native
   
+  /** Returns true if the location bar is visible; otherwise, returns false. */
+  /* standard dom */
   val locationbar: BarProp = js.native
   
+  /* standard dom */
   def matchMedia(query: java.lang.String): MediaQueryList = js.native
   
+  /** Returns true if the menu bar is visible; otherwise, returns false. */
+  /* standard dom */
   val menubar: BarProp = js.native
   
+  /* standard dom */
   def moveBy(x: Double, y: Double): Unit = js.native
   
+  /* standard dom */
   def moveTo(x: Double, y: Double): Unit = js.native
   
-  val msContentScript: ExtensionScriptApis = js.native
-  
-  def msWriteProfilerMark(profilerMarkName: java.lang.String): Unit = js.native
-  
+  /* standard dom */
   var name: java.lang.String = js.native
   
+  /* standard dom */
   val navigator: Navigator = js.native
   
-  var offscreenBuffering: java.lang.String | scala.Boolean = js.native
+  /** Available only in secure contexts. */
+  /* standard dom */
+  var ondevicemotion: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any]) | Null = js.native
   
-  var oncompassneedscalibration: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var ondevicelight: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, js.Any]) | Null = js.native
-  
-  var ondevicemotion: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, js.Any]) | Null = js.native
-  
-  var ondeviceorientation: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any]) | Null = js.native
-  
-  var ondeviceorientationabsolute: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any]) | Null = js.native
-  
-  var onmousewheel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmsgesturechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmsgesturedoubletap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmsgestureend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmsgesturehold: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmsgesturestart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmsgesturetap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmsinertiastart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmspointercancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmspointerdown: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmspointerenter: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmspointerleave: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmspointermove: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmspointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmspointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onmspointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /** Available only in secure contexts. */
+  /* standard dom */
+  var ondeviceorientation: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any]) | Null = js.native
   
   /** @deprecated */
-  var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], js.Any]) | Null = js.native
+  /* standard dom */
+  def open(): WindowProxy | Null = js.native
+  def open(url: java.lang.String): WindowProxy | Null = js.native
+  def open(url: java.lang.String, target: java.lang.String): WindowProxy | Null = js.native
+  def open(url: java.lang.String, target: java.lang.String, features: java.lang.String): WindowProxy | Null = js.native
+  def open(url: java.lang.String, target: Unit, features: java.lang.String): WindowProxy | Null = js.native
+  def open(url: Unit, target: java.lang.String): WindowProxy | Null = js.native
+  def open(url: Unit, target: java.lang.String, features: java.lang.String): WindowProxy | Null = js.native
+  def open(url: Unit, target: Unit, features: java.lang.String): WindowProxy | Null = js.native
+  def open(url: URL): WindowProxy | Null = js.native
+  def open(url: URL, target: java.lang.String): WindowProxy | Null = js.native
+  def open(url: URL, target: java.lang.String, features: java.lang.String): WindowProxy | Null = js.native
+  def open(url: URL, target: Unit, features: java.lang.String): WindowProxy | Null = js.native
   
-  var onvrdisplayactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onvrdisplayblur: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onvrdisplayconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onvrdisplaydeactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onvrdisplaydisconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onvrdisplayfocus: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onvrdisplaypointerrestricted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onvrdisplaypointerunrestricted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  def open(): Window | Null = js.native
-  def open(url: java.lang.String): Window | Null = js.native
-  def open(url: java.lang.String, target: java.lang.String): Window | Null = js.native
-  def open(url: java.lang.String, target: java.lang.String, features: java.lang.String): Window | Null = js.native
-  def open(
-    url: java.lang.String,
-    target: java.lang.String,
-    features: java.lang.String,
-    replace: scala.Boolean
-  ): Window | Null = js.native
-  def open(url: java.lang.String, target: java.lang.String, features: Unit, replace: scala.Boolean): Window | Null = js.native
-  def open(url: java.lang.String, target: Unit, features: java.lang.String): Window | Null = js.native
-  def open(url: java.lang.String, target: Unit, features: java.lang.String, replace: scala.Boolean): Window | Null = js.native
-  def open(url: java.lang.String, target: Unit, features: Unit, replace: scala.Boolean): Window | Null = js.native
-  def open(url: Unit, target: java.lang.String): Window | Null = js.native
-  def open(url: Unit, target: java.lang.String, features: java.lang.String): Window | Null = js.native
-  def open(url: Unit, target: java.lang.String, features: java.lang.String, replace: scala.Boolean): Window | Null = js.native
-  def open(url: Unit, target: java.lang.String, features: Unit, replace: scala.Boolean): Window | Null = js.native
-  def open(url: Unit, target: Unit, features: java.lang.String): Window | Null = js.native
-  def open(url: Unit, target: Unit, features: java.lang.String, replace: scala.Boolean): Window | Null = js.native
-  def open(url: Unit, target: Unit, features: Unit, replace: scala.Boolean): Window | Null = js.native
-  
-  var opener: js.Any = js.native
+  /* standard dom */
+  var opener: Any = js.native
   
   /** @deprecated */
-  val orientation: java.lang.String | Double = js.native
+  /* standard dom */
+  val orientation: Double = js.native
   
+  /* standard dom */
   val outerHeight: Double = js.native
   
+  /* standard dom */
   val outerWidth: Double = js.native
   
+  /** @deprecated This is a legacy alias of `scrollX`. */
+  /* standard dom */
   val pageXOffset: Double = js.native
   
+  /** @deprecated This is a legacy alias of `scrollY`. */
+  /* standard dom */
   val pageYOffset: Double = js.native
   
-  val parent: Window = js.native
+  /**
+    * Refers to either the parent WindowProxy, or itself.
+    *
+    * It can rarely be null e.g. for contentWindow of an iframe that is already removed from the parent.
+    */
+  /* standard dom */
+  val parent: WindowProxy = js.native
   
+  /** Returns true if the personal bar is visible; otherwise, returns false. */
+  /* standard dom */
   val personalbar: BarProp = js.native
   
-  def postMessage(message: js.Any, targetOrigin: java.lang.String): Unit = js.native
-  def postMessage(message: js.Any, targetOrigin: java.lang.String, transfer: js.Array[Transferable]): Unit = js.native
+  /* standard dom */
+  def postMessage(message: Any): Unit = js.native
+  def postMessage(message: Any, options: WindowPostMessageOptions): Unit = js.native
+  /**
+    * Posts a message to the given window. Messages can be structured objects, e.g. nested objects and arrays, can contain JavaScript values (strings, numbers, Date objects, etc), and can contain certain data objects such as File Blob, FileList, and ArrayBuffer objects.
+    *
+    * Objects listed in the transfer member of options are transferred, not just cloned, meaning that they are no longer usable on the sending side.
+    *
+    * A target origin can be specified using the targetOrigin member of options. If not provided, it defaults to "/". This default restricts the message to same-origin targets only.
+    *
+    * If the origin of the target window doesn't match the given target origin, the message is discarded, to avoid information leakage. To send the message to the target regardless of origin, set the target origin to "*".
+    *
+    * Throws a "DataCloneError" DOMException if transfer array contains duplicate objects or if message could not be cloned.
+    */
+  /* standard dom */
+  def postMessage(message: Any, targetOrigin: java.lang.String): Unit = js.native
+  def postMessage(message: Any, targetOrigin: java.lang.String, transfer: js.Array[Transferable]): Unit = js.native
   
+  /* standard dom */
   def print(): Unit = js.native
   
+  /* standard dom */
   def prompt(): java.lang.String | Null = js.native
   def prompt(message: java.lang.String): java.lang.String | Null = js.native
   def prompt(message: java.lang.String, _default: java.lang.String): java.lang.String | Null = js.native
   def prompt(message: Unit, _default: java.lang.String): java.lang.String | Null = js.native
   
   /** @deprecated */
+  /* standard dom */
   def releaseEvents(): Unit = js.native
   
   /* InferMemberOverrides */
@@ -759,554 +302,151 @@ trait Window
     callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
+  /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureChange(`type`: MSGestureChange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureChange(
-    `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+  def removeEventListener_DOMContentLoaded(
+    `type`: DOMContentLoaded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureChange(
-    `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureDoubleTap(
-    `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureDoubleTap(
-    `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureDoubleTap(
-    `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureEnd(
-    `type`: MSGestureEnd,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureEnd(
-    `type`: MSGestureEnd,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureHold(`type`: MSGestureHold, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureHold(
-    `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureHold(
-    `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureStart(`type`: MSGestureStart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureStart(
-    `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureStart(
-    `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureTap(
-    `type`: MSGestureTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSGestureTap(
-    `type`: MSGestureTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSInertiaStart(`type`: MSInertiaStart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSInertiaStart(
-    `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSInertiaStart(
-    `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerCancel(`type`: MSPointerCancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerCancel(
-    `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerCancel(
-    `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerDown(`type`: MSPointerDown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerDown(
-    `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerDown(
-    `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerEnter(`type`: MSPointerEnter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerEnter(
-    `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerEnter(
-    `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerLeave(`type`: MSPointerLeave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerLeave(
-    `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerLeave(
-    `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerMove(`type`: MSPointerMove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerMove(
-    `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerMove(
-    `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerOut(
-    `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerOut(
-    `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerOver(`type`: MSPointerOver, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerOver(
-    `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerOver(
-    `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerUp(
-    `type`: MSPointerUp,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSPointerUp(
-    `type`: MSPointerUp,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_compassneedscalibration(
-    `type`: compassneedscalibration,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_compassneedscalibration(
-    `type`: compassneedscalibration,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_compassneedscalibration(
-    `type`: compassneedscalibration,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_devicelight(
-    `type`: devicelight,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_devicelight(
-    `type`: devicelight,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_devicelight(
-    `type`: devicelight,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, js.Any],
+  def removeEventListener_DOMContentLoaded(
+    `type`: DOMContentLoaded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicemotion(
     `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicemotion(
     `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicemotion(
     `type`: devicemotion,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deviceorientation(
     `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deviceorientation(
     `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deviceorientation(
     `type`: deviceorientation,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_deviceorientationabsolute(
-    `type`: deviceorientationabsolute,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_deviceorientationabsolute(
-    `type`: deviceorientationabsolute,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_deviceorientationabsolute(
-    `type`: deviceorientationabsolute,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_mousewheel(`type`: mousewheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_mousewheel(
-    `type`: mousewheel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_mousewheel(
-    `type`: mousewheel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
+  def removeEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_orientationchange(
     `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_orientationchange(
     `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayactivate(
-    `type`: vrdisplayactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayactivate(
-    `type`: vrdisplayactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayactivate(
-    `type`: vrdisplayactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayblur(`type`: vrdisplayblur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayblur(
-    `type`: vrdisplayblur,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayblur(
-    `type`: vrdisplayblur,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayconnect(`type`: vrdisplayconnect, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayconnect(
-    `type`: vrdisplayconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayconnect(
-    `type`: vrdisplayconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaydeactivate(
-    `type`: vrdisplaydeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaydeactivate(
-    `type`: vrdisplaydeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaydeactivate(
-    `type`: vrdisplaydeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaydisconnect(
-    `type`: vrdisplaydisconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaydisconnect(
-    `type`: vrdisplaydisconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaydisconnect(
-    `type`: vrdisplaydisconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayfocus(`type`: vrdisplayfocus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayfocus(
-    `type`: vrdisplayfocus,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplayfocus(
-    `type`: vrdisplayfocus,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypointerrestricted(
-    `type`: vrdisplaypointerrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypointerrestricted(
-    `type`: vrdisplaypointerrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypointerrestricted(
-    `type`: vrdisplaypointerrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypointerunrestricted(
-    `type`: vrdisplaypointerunrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypointerunrestricted(
-    `type`: vrdisplaypointerunrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypointerunrestricted(
-    `type`: vrdisplaypointerunrestricted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypresentchange(
-    `type`: vrdisplaypresentchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypresentchange(
-    `type`: vrdisplaypresentchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_vrdisplaypresentchange(
-    `type`: vrdisplaypresentchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
+  def requestIdleCallback(callback: IdleRequestCallback): Double = js.native
+  def requestIdleCallback(callback: IdleRequestCallback, options: IdleRequestOptions): Double = js.native
+  
+  /* standard dom */
   def resizeBy(x: Double, y: Double): Unit = js.native
   
+  /* standard dom */
   def resizeTo(width: Double, height: Double): Unit = js.native
   
+  /* standard dom */
   val screen: Screen = js.native
   
+  /* standard dom */
   val screenLeft: Double = js.native
   
+  /* standard dom */
   val screenTop: Double = js.native
   
+  /* standard dom */
   val screenX: Double = js.native
   
+  /* standard dom */
   val screenY: Double = js.native
   
+  /* standard dom */
   def scroll(): Unit = js.native
   def scroll(options: ScrollToOptions): Unit = js.native
+  /* standard dom */
   def scroll(x: Double, y: Double): Unit = js.native
   
+  /* standard dom */
   def scrollBy(): Unit = js.native
   def scrollBy(options: ScrollToOptions): Unit = js.native
+  /* standard dom */
   def scrollBy(x: Double, y: Double): Unit = js.native
   
+  /* standard dom */
   def scrollTo(): Unit = js.native
   def scrollTo(options: ScrollToOptions): Unit = js.native
+  /* standard dom */
   def scrollTo(x: Double, y: Double): Unit = js.native
   
+  /* standard dom */
   val scrollX: Double = js.native
   
+  /* standard dom */
   val scrollY: Double = js.native
   
+  /** Returns true if the scrollbars are visible; otherwise, returns false. */
+  /* standard dom */
   val scrollbars: BarProp = js.native
   
-  val self: Window & (/* globalThis */ js.Any) = js.native
+  /* standard dom */
+  val self: Window & (/* globalThis */ Any) = js.native
   
+  /* standard dom */
   val speechSynthesis: SpeechSynthesis = js.native
   
+  /** @deprecated */
+  /* standard dom */
   var status: java.lang.String = js.native
   
+  /** Returns true if the status bar is visible; otherwise, returns false. */
+  /* standard dom */
   val statusbar: BarProp = js.native
   
+  /** Cancels the document load. */
+  /* standard dom */
   def stop(): Unit = js.native
   
-  val styleMedia: StyleMedia = js.native
-  
+  /** Returns true if the toolbar is visible; otherwise, returns false. */
+  /* standard dom */
   val toolbar: BarProp = js.native
   
-  val top: Window = js.native
+  /* standard dom */
+  val top: WindowProxy | Null = js.native
   
-  val visualViewport: VisualViewport = js.native
+  /* standard dom */
+  val visualViewport: VisualViewport | Null = js.native
   
-  def webkitCancelAnimationFrame(handle: Double): Unit = js.native
-  
-  def webkitConvertPointFromNodeToPage(node: Node, pt: WebKitPoint): WebKitPoint = js.native
-  
-  def webkitConvertPointFromPageToNode(node: Node, pt: WebKitPoint): WebKitPoint = js.native
-  
-  def webkitRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
-  
-  val window: Window & (/* globalThis */ js.Any) = js.native
+  /* standard dom */
+  val window: Window & (/* globalThis */ Any) = js.native
 }

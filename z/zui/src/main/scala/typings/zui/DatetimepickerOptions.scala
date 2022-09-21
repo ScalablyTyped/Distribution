@@ -1,6 +1,5 @@
 package typings.zui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +14,13 @@ trait DatetimepickerOptions extends StObject {
   
   var daysOfWeekDisabled: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var defaultDate: js.UndefOr[Date | String | js.Any] = js.undefined
+  var defaultDate: js.UndefOr[js.Date | String | Any] = js.undefined
   
   var direction: js.UndefOr[String] = js.undefined
   
-  var disabledDates: js.UndefOr[js.Array[Date | String | js.Object]] = js.undefined
+  var disabledDates: js.UndefOr[js.Array[js.Date | String | js.Object]] = js.undefined
   
-  var enabledDates: js.UndefOr[js.Array[Date | String | js.Object]] = js.undefined
+  var enabledDates: js.UndefOr[js.Array[js.Date | String | js.Object]] = js.undefined
   
   var forceParse: js.UndefOr[Double | Boolean] = js.undefined
   
@@ -37,11 +36,11 @@ trait DatetimepickerOptions extends StObject {
   
   var locale: js.UndefOr[String] = js.undefined
   
-  var maxDate: js.UndefOr[Date | String | js.Any] = js.undefined
+  var maxDate: js.UndefOr[js.Date | String | Any] = js.undefined
   
   var maxView: js.UndefOr[Double] = js.undefined
   
-  var minDate: js.UndefOr[Date | String | js.Any] = js.undefined
+  var minDate: js.UndefOr[js.Date | String | Any] = js.undefined
   
   var minView: js.UndefOr[Double] = js.undefined
   
@@ -106,9 +105,9 @@ object DatetimepickerOptions {
     
     inline def setDaysOfWeekDisabledUndefined: Self = StObject.set(x, "daysOfWeekDisabled", js.undefined)
     
-    inline def setDaysOfWeekDisabledVarargs(value: Double*): Self = StObject.set(x, "daysOfWeekDisabled", js.Array(value :_*))
+    inline def setDaysOfWeekDisabledVarargs(value: Double*): Self = StObject.set(x, "daysOfWeekDisabled", js.Array(value*))
     
-    inline def setDefaultDate(value: Date | String | js.Any): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+    inline def setDefaultDate(value: js.Date | String | Any): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
     
     inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
     
@@ -116,17 +115,17 @@ object DatetimepickerOptions {
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setDisabledDates(value: js.Array[Date | String | js.Object]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
+    inline def setDisabledDates(value: js.Array[js.Date | String | js.Object]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
     
     inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
     
-    inline def setDisabledDatesVarargs(value: (Date | String | js.Object)*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
+    inline def setDisabledDatesVarargs(value: (js.Date | String | js.Object)*): Self = StObject.set(x, "disabledDates", js.Array(value*))
     
-    inline def setEnabledDates(value: js.Array[Date | String | js.Object]): Self = StObject.set(x, "enabledDates", value.asInstanceOf[js.Any])
+    inline def setEnabledDates(value: js.Array[js.Date | String | js.Object]): Self = StObject.set(x, "enabledDates", value.asInstanceOf[js.Any])
     
     inline def setEnabledDatesUndefined: Self = StObject.set(x, "enabledDates", js.undefined)
     
-    inline def setEnabledDatesVarargs(value: (Date | String | js.Object)*): Self = StObject.set(x, "enabledDates", js.Array(value :_*))
+    inline def setEnabledDatesVarargs(value: (js.Date | String | js.Object)*): Self = StObject.set(x, "enabledDates", js.Array(value*))
     
     inline def setForceParse(value: Double | Boolean): Self = StObject.set(x, "forceParse", value.asInstanceOf[js.Any])
     
@@ -156,7 +155,7 @@ object DatetimepickerOptions {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setMaxDate(value: Date | String | js.Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: js.Date | String | Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
@@ -164,7 +163,7 @@ object DatetimepickerOptions {
     
     inline def setMaxViewUndefined: Self = StObject.set(x, "maxView", js.undefined)
     
-    inline def setMinDate(value: Date | String | js.Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: js.Date | String | Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     

@@ -10,10 +10,10 @@ Time support added to pikaday
 | ------------------ | :-------------: |
 | Full name          | pikaday-time |
 | Keywords           | datepicker, calendar, date, time, datetime |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 105795 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8815.333333333334 |
+| # stars            | 153.0 |
 
 ## Links
 - [Homepage](https://github.com/owenmead/Pikaday#readme)

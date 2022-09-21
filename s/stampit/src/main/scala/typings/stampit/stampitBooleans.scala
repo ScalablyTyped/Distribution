@@ -10,12 +10,12 @@ object stampitBooleans {
   @js.native
   sealed trait `false`
     extends StObject
-       with IsADescriptor[js.Any]
+       with IsADescriptor[Any]
   inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true`
     extends StObject
-       with IsADescriptor[js.Any]
+       with IsADescriptor[Any]
   inline def `true`: `true` = true.asInstanceOf[`true`]
 }

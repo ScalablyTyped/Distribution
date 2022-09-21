@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__dragdrop
 
-Typings are for version 1.6.4
+Typings are for version 1.14.1
 
 ## Library description:
 Lumino Drag and Drop
@@ -10,10 +10,10 @@ Lumino Drag and Drop
 | ------------------ | :-------------: |
 | Full name          | @lumino/dragdrop |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 29 |
-| # downloads        | 1166377 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 283023.6666666667 |
+| # stars            | 370.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

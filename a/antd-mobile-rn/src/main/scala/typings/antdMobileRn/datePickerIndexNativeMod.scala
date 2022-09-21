@@ -13,7 +13,7 @@ object datePickerIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/date-picker/index.native", JSImport.Default)
   @js.native
-  class default () extends DatePicker
+  open class default () extends DatePicker
   /* static members */
   object default {
     
@@ -33,8 +33,7 @@ object datePickerIndexNativeMod {
   }
   
   @js.native
-  trait DatePicker
-    extends Component[DatePickerNativeProps, js.Any, js.Any]
+  trait DatePicker extends Component[DatePickerNativeProps, Any, Any]
   
   trait DatePickerNativeProps
     extends StObject

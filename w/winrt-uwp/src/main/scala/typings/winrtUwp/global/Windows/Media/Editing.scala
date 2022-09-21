@@ -213,7 +213,7 @@ object Editing {
   @JSGlobal("Windows.Media.Editing.MediaComposition")
   @js.native
   /** Initializes a new instance of the MediaComposition class. */
-  class MediaComposition ()
+  open class MediaComposition ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Editing.MediaComposition
   object MediaComposition {
@@ -234,7 +234,7 @@ object Editing {
   /** Represents an overlay that can be used in a media composition. */
   @JSGlobal("Windows.Media.Editing.MediaOverlay")
   @js.native
-  class MediaOverlay protected ()
+  open class MediaOverlay protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Editing.MediaOverlay {
     /**
@@ -275,7 +275,7 @@ object Editing {
   @JSGlobal("Windows.Media.Editing.MediaOverlayLayer")
   @js.native
   /** Initializes a new instance of the MediaOverlayLayer class. */
-  class MediaOverlayLayer ()
+  open class MediaOverlayLayer ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Editing.MediaOverlayLayer {
     /**

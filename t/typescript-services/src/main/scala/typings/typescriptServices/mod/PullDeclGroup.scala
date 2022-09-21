@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullDeclGroup")
 @js.native
-class PullDeclGroup protected ()
+open class PullDeclGroup protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullDeclGroup {
   def this(name: String) = this()
   
   /* private */ /* CompleteClass */
-  var _decls: js.Any = js.native
+  var _decls: Any = js.native
   
   /* CompleteClass */
   override def addDecl(decl: typings.typescriptServices.TypeScript.PullDecl): Unit = js.native

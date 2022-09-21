@@ -1,136 +1,122 @@
 package typings.nukaCarousel
 
-import typings.nukaCarousel.mod.CSSProperties
+import typings.nukaCarousel.nukaCarouselStrings.`next-cloned`
+import typings.nukaCarousel.nukaCarouselStrings.`prev-cloned`
+import typings.nukaCarousel.nukaCarouselStrings.assertive
+import typings.nukaCarousel.nukaCarouselStrings.fade
+import typings.nukaCarousel.nukaCarouselStrings.off
+import typings.nukaCarousel.nukaCarouselStrings.polite
+import typings.nukaCarousel.nukaCarouselStrings.zoom
+import typings.nukaCarousel.typesMod.Alignment
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait ContainerClassName extends StObject {
+  @js.native
+  trait AdaptiveHeight extends StObject {
     
-    var containerClassName: js.UndefOr[String] = js.undefined
+    var adaptiveHeight: Boolean = js.native
     
-    var nextButtonClassName: js.UndefOr[String] = js.undefined
+    var animation: js.UndefOr[zoom | fade] = js.native
     
-    var nextButtonStyle: js.UndefOr[CSSProperties] = js.undefined
+    var cellAlign: Alignment = js.native
     
-    var nextButtonText: js.UndefOr[String] = js.undefined
+    var cellSpacing: Double = js.native
     
-    var pagingDotsClassName: js.UndefOr[String] = js.undefined
+    var children: ReactNode | js.Array[ReactNode] = js.native
     
-    var pagingDotsContainerClassName: js.UndefOr[String] = js.undefined
+    var count: Double = js.native
     
-    var pagingDotsStyle: js.UndefOr[CSSProperties] = js.undefined
+    var currentSlide: Double = js.native
     
-    var prevButtonClassName: js.UndefOr[String] = js.undefined
+    var index: Double = js.native
     
-    var prevButtonStyle: js.UndefOr[CSSProperties] = js.undefined
+    var initializedAdaptiveHeight: Boolean = js.native
     
-    var prevButtonText: js.UndefOr[String] = js.undefined
+    var isCurrentSlide: Boolean = js.native
+    
+    /**
+      * Called with `height` when slide becomes visible and `null` when it becomes
+      * hidden.
+      */
+    def onVisibleSlideHeightChange(index: Double): Any = js.native
+    def onVisibleSlideHeightChange(index: Double, height: Double): Any = js.native
+    
+    var slidesToShow: Double = js.native
+    
+    var speed: Double = js.native
+    
+    var typeOfSlide: js.UndefOr[`prev-cloned` | `next-cloned`] = js.native
+    
+    var wrapAround: Boolean = js.native
+    
+    var zoomScale: js.UndefOr[Double] = js.native
   }
-  object ContainerClassName {
+  
+  trait AriaLive extends StObject {
     
-    inline def apply(): ContainerClassName = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ContainerClassName]
+    var ariaLive: js.UndefOr[off | assertive | polite] = js.undefined
+    
+    var message: String
+  }
+  object AriaLive {
+    
+    inline def apply(message: String): AriaLive = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AriaLive]
     }
     
-    extension [Self <: ContainerClassName](x: Self) {
+    extension [Self <: AriaLive](x: Self) {
       
-      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setAriaLive(value: off | assertive | polite): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
       
-      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setAriaLiveUndefined: Self = StObject.set(x, "ariaLive", js.undefined)
       
-      inline def setNextButtonClassName(value: String): Self = StObject.set(x, "nextButtonClassName", value.asInstanceOf[js.Any])
-      
-      inline def setNextButtonClassNameUndefined: Self = StObject.set(x, "nextButtonClassName", js.undefined)
-      
-      inline def setNextButtonStyle(value: CSSProperties): Self = StObject.set(x, "nextButtonStyle", value.asInstanceOf[js.Any])
-      
-      inline def setNextButtonStyleUndefined: Self = StObject.set(x, "nextButtonStyle", js.undefined)
-      
-      inline def setNextButtonText(value: String): Self = StObject.set(x, "nextButtonText", value.asInstanceOf[js.Any])
-      
-      inline def setNextButtonTextUndefined: Self = StObject.set(x, "nextButtonText", js.undefined)
-      
-      inline def setPagingDotsClassName(value: String): Self = StObject.set(x, "pagingDotsClassName", value.asInstanceOf[js.Any])
-      
-      inline def setPagingDotsClassNameUndefined: Self = StObject.set(x, "pagingDotsClassName", js.undefined)
-      
-      inline def setPagingDotsContainerClassName(value: String): Self = StObject.set(x, "pagingDotsContainerClassName", value.asInstanceOf[js.Any])
-      
-      inline def setPagingDotsContainerClassNameUndefined: Self = StObject.set(x, "pagingDotsContainerClassName", js.undefined)
-      
-      inline def setPagingDotsStyle(value: CSSProperties): Self = StObject.set(x, "pagingDotsStyle", value.asInstanceOf[js.Any])
-      
-      inline def setPagingDotsStyleUndefined: Self = StObject.set(x, "pagingDotsStyle", js.undefined)
-      
-      inline def setPrevButtonClassName(value: String): Self = StObject.set(x, "prevButtonClassName", value.asInstanceOf[js.Any])
-      
-      inline def setPrevButtonClassNameUndefined: Self = StObject.set(x, "prevButtonClassName", js.undefined)
-      
-      inline def setPrevButtonStyle(value: CSSProperties): Self = StObject.set(x, "prevButtonStyle", value.asInstanceOf[js.Any])
-      
-      inline def setPrevButtonStyleUndefined: Self = StObject.set(x, "prevButtonStyle", js.undefined)
-      
-      inline def setPrevButtonText(value: String): Self = StObject.set(x, "prevButtonText", value.asInstanceOf[js.Any])
-      
-      inline def setPrevButtonTextUndefined: Self = StObject.set(x, "prevButtonText", js.undefined)
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined {[ slideAction in nuka-carousel.nuka-carousel.CarouselSlideActions ]:? std.Array<number>} */
-  trait slideActioninCarouselSlid extends StObject {
+  trait Count extends StObject {
     
-    var firstSlide: js.UndefOr[js.Array[Double]] = js.undefined
+    var count: Double
     
-    var lastSlide: js.UndefOr[js.Array[Double]] = js.undefined
-    
-    var nextSlide: js.UndefOr[js.Array[Double]] = js.undefined
-    
-    var pause: js.UndefOr[js.Array[Double]] = js.undefined
-    
-    var previousSlide: js.UndefOr[js.Array[Double]] = js.undefined
+    var currentSlide: Double
   }
-  object slideActioninCarouselSlid {
+  object Count {
     
-    inline def apply(): slideActioninCarouselSlid = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[slideActioninCarouselSlid]
+    inline def apply(count: Double, currentSlide: Double): Count = {
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: slideActioninCarouselSlid](x: Self) {
+    extension [Self <: Count](x: Self) {
       
-      inline def setFirstSlide(value: js.Array[Double]): Self = StObject.set(x, "firstSlide", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      inline def setFirstSlideUndefined: Self = StObject.set(x, "firstSlide", js.undefined)
-      
-      inline def setFirstSlideVarargs(value: Double*): Self = StObject.set(x, "firstSlide", js.Array(value :_*))
-      
-      inline def setLastSlide(value: js.Array[Double]): Self = StObject.set(x, "lastSlide", value.asInstanceOf[js.Any])
-      
-      inline def setLastSlideUndefined: Self = StObject.set(x, "lastSlide", js.undefined)
-      
-      inline def setLastSlideVarargs(value: Double*): Self = StObject.set(x, "lastSlide", js.Array(value :_*))
-      
-      inline def setNextSlide(value: js.Array[Double]): Self = StObject.set(x, "nextSlide", value.asInstanceOf[js.Any])
-      
-      inline def setNextSlideUndefined: Self = StObject.set(x, "nextSlide", js.undefined)
-      
-      inline def setNextSlideVarargs(value: Double*): Self = StObject.set(x, "nextSlide", js.Array(value :_*))
-      
-      inline def setPause(value: js.Array[Double]): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
-      
-      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
-      
-      inline def setPauseVarargs(value: Double*): Self = StObject.set(x, "pause", js.Array(value :_*))
-      
-      inline def setPreviousSlide(value: js.Array[Double]): Self = StObject.set(x, "previousSlide", value.asInstanceOf[js.Any])
-      
-      inline def setPreviousSlideUndefined: Self = StObject.set(x, "previousSlide", js.undefined)
-      
-      inline def setPreviousSlideVarargs(value: Double*): Self = StObject.set(x, "previousSlide", js.Array(value :_*))
+      inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait FrameHeight extends StObject {
+    
+    /** CSS height of the frame container */
+    var frameHeight: String = js.native
+    
+    /**
+      * Callback that can be passed to Slides to allow them to update the
+      * `visibleHeights` variable.
+      */
+    def handleVisibleSlideHeightChange(slideIndex: Double): Any = js.native
+    def handleVisibleSlideHeightChange(slideIndex: Double, height: Double): Any = js.native
+    
+    /**
+      * Whether we'd measured the initial slide heights and are ready for the
+      * frame to control the children's height, rather than the other way around.
+      */
+    var initializedAdaptiveHeight: Boolean = js.native
   }
 }

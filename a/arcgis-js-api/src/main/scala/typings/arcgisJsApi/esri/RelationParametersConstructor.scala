@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RelationParametersConstructor
   extends StObject
-     with Instantiable0[RelationParameters]
+     with /**
+  * Sets the relation and other parameters for the [geometryService.relation()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#relation) operation.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html)
+  */
+Instantiable0[RelationParameters]
      with Instantiable1[/* properties */ RelationParametersProperties, RelationParameters] {
   
-  def fromJSON(json: js.Any): RelationParameters = js.native
+  def fromJSON(json: Any): RelationParameters = js.native
 }

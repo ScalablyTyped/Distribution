@@ -15,7 +15,6 @@ import typings.momentTimezone.anon.Links
 import typings.momentTimezone.mod.momentAugmentingMod.MomentTimezone
 import typings.momentTimezone.momentTimezoneBooleans.`false`
 import typings.momentTimezone.momentTimezoneBooleans.`true`
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -146,11 +145,11 @@ object mod {
   inline def invalid(): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Moment]
   inline def invalid(flags: MomentParsingFlagsOpt): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(flags.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  inline def isDate(m: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(m.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+  inline def isDate(m: Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(m.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
   
-  inline def isDuration(d: js.Any): /* is moment.moment.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Duration */ Boolean]
+  inline def isDuration(d: Any): /* is moment.moment.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Duration */ Boolean]
   
-  inline def isMoment(m: js.Any): /* is moment.moment.Moment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(m.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Moment */ Boolean]
+  inline def isMoment(m: Any): /* is moment.moment.Moment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(m.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Moment */ Boolean]
   
   inline def lang(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")().asInstanceOf[String]
   inline def lang(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -171,10 +170,10 @@ object mod {
   
   inline def locales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("locales")().asInstanceOf[js.Array[String]]
   
-  inline def max(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  inline def max(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Moment]
   inline def max(moments: js.Array[Moment]): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  inline def min(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  inline def min(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Moment]
   inline def min(moments: js.Array[Moment]): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
   /* augmented module */
@@ -221,11 +220,11 @@ object mod {
       ): typings.moment.momentMod.Moment = js.native
       def apply(date: String, format: typings.moment.momentMod.MomentFormatSpecification, timezone: String): typings.moment.momentMod.Moment = js.native
       def apply(date: String, timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(date: js.Any, timezone: String): typings.moment.momentMod.Moment = js.native
       def apply(date: js.Array[Double], timezone: String): typings.moment.momentMod.Moment = js.native
+      def apply(date: js.Date, timezone: String): typings.moment.momentMod.Moment = js.native
+      def apply(date: Any, timezone: String): typings.moment.momentMod.Moment = js.native
       def apply(date: Double, timezone: String): typings.moment.momentMod.Moment = js.native
       def apply(date: typings.moment.momentMod.Moment, timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(date: Date, timezone: String): typings.moment.momentMod.Moment = js.native
       def apply(timezone: String): typings.moment.momentMod.Moment = js.native
       
       def add(packedZoneString: String): Unit = js.native
@@ -300,7 +299,7 @@ object mod {
         
         inline def setAbbrs(value: js.Array[String]): Self = StObject.set(x, "abbrs", value.asInstanceOf[js.Any])
         
-        inline def setAbbrsVarargs(value: String*): Self = StObject.set(x, "abbrs", js.Array(value :_*))
+        inline def setAbbrsVarargs(value: String*): Self = StObject.set(x, "abbrs", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -308,7 +307,7 @@ object mod {
         
         inline def setOffsets(value: js.Array[Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
         
-        inline def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value :_*))
+        inline def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value*))
         
         inline def setParse(value: Double => Double): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
         
@@ -316,7 +315,7 @@ object mod {
         
         inline def setUntils(value: js.Array[Double]): Self = StObject.set(x, "untils", value.asInstanceOf[js.Any])
         
-        inline def setUntilsVarargs(value: Double*): Self = StObject.set(x, "untils", js.Array(value :_*))
+        inline def setUntilsVarargs(value: Double*): Self = StObject.set(x, "untils", js.Array(value*))
         
         inline def setUtcOffset(value: Double => Double): Self = StObject.set(x, "utcOffset", js.Any.fromFunction1(value))
       }

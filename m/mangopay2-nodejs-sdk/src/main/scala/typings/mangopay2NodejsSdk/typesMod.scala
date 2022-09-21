@@ -40,7 +40,15 @@ object typesMod {
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_paypal-web_create`
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_get
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_createrefunds
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_applepay-direct_create`
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_googlepay-direct_create`
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration_get
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration_put
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_create_recurring_card_direct
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_payconiq-web_create`
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_bankwire_create
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_bankwire_get
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_get
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.refunds_get
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.refunds_get_for_repudiation
@@ -125,9 +133,14 @@ object typesMod {
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_create
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_update
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_get
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declarations_get
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_create
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_update
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_get
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.transactions_get_for_mandate
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.transactions_get_for_card
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.transactions_get_for_bank_account
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.idempotency_response_get
   */
   trait ApiMethod extends StObject
   object ApiMethod {
@@ -218,6 +231,8 @@ object typesMod {
     
     inline def hooks_save: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.hooks_save = "hooks_save".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.hooks_save]
     
+    inline def idempotency_response_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.idempotency_response_get = "idempotency_response_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.idempotency_response_get]
+    
     inline def kyc_documents_all: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.kyc_documents_all = "kyc_documents_all".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.kyc_documents_all]
     
     inline def kyc_documents_create: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.kyc_documents_create = "kyc_documents_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.kyc_documents_create]
@@ -244,11 +259,15 @@ object typesMod {
     
     inline def mandates_get_for_user: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.mandates_get_for_user = "mandates_get_for_user".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.mandates_get_for_user]
     
+    inline def `payins_applepay-direct_create`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_applepay-direct_create` = "payins_applepay-direct_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_applepay-direct_create`]
+    
     inline def `payins_bankwire-direct_create`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_bankwire-direct_create` = "payins_bankwire-direct_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_bankwire-direct_create`]
     
     inline def `payins_card-direct_create`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_card-direct_create` = "payins_card-direct_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_card-direct_create`]
     
     inline def `payins_card-web_create`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_card-web_create` = "payins_card-web_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_card-web_create`]
+    
+    inline def payins_create_recurring_card_direct: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_create_recurring_card_direct = "payins_create_recurring_card_direct".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_create_recurring_card_direct]
     
     inline def payins_createrefunds: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_createrefunds = "payins_createrefunds".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_createrefunds]
     
@@ -258,11 +277,23 @@ object typesMod {
     
     inline def payins_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_get = "payins_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_get]
     
+    inline def `payins_googlepay-direct_create`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_googlepay-direct_create` = "payins_googlepay-direct_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_googlepay-direct_create`]
+    
+    inline def `payins_payconiq-web_create`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_payconiq-web_create` = "payins_payconiq-web_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_payconiq-web_create`]
+    
     inline def `payins_paypal-web_create`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_paypal-web_create` = "payins_paypal-web_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_paypal-web_create`]
     
     inline def `payins_preauthorized-direct_create`: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_preauthorized-direct_create` = "payins_preauthorized-direct_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.`payins_preauthorized-direct_create`]
     
+    inline def payins_recurring_registration: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration = "payins_recurring_registration".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration]
+    
+    inline def payins_recurring_registration_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration_get = "payins_recurring_registration_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration_get]
+    
+    inline def payins_recurring_registration_put: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration_put = "payins_recurring_registration_put".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payins_recurring_registration_put]
+    
     inline def payouts_bankwire_create: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_bankwire_create = "payouts_bankwire_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_bankwire_create]
+    
+    inline def payouts_bankwire_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_bankwire_get = "payouts_bankwire_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_bankwire_get]
     
     inline def payouts_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_get = "payouts_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.payouts_get]
     
@@ -306,11 +337,19 @@ object typesMod {
     
     inline def transfers_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.transfers_get = "transfers_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.transfers_get]
     
+    inline def ubo_create: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_create = "ubo_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_create]
+    
     inline def ubo_declaration_create: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_create = "ubo_declaration_create".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_create]
     
     inline def ubo_declaration_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_get = "ubo_declaration_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_get]
     
     inline def ubo_declaration_update: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_update = "ubo_declaration_update".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declaration_update]
+    
+    inline def ubo_declarations_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declarations_get = "ubo_declarations_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_declarations_get]
+    
+    inline def ubo_get: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_get = "ubo_get".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_get]
+    
+    inline def ubo_update: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_update = "ubo_update".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ubo_update]
     
     inline def users_all: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.users_all = "users_all".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.users_all]
     
@@ -414,12 +453,14 @@ object typesMod {
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CN
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CO
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CR
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CS
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CU
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CV
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CW
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CX
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CY
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CZ
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DA
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DE
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DJ
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DK
@@ -433,6 +474,8 @@ object typesMod {
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ER
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ES
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ET
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EN
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EL
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FI
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FJ
     - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FK
@@ -717,6 +760,8 @@ object typesMod {
     
     inline def CR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CR = "CR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CR]
     
+    inline def CS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CS = "CS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CS]
+    
     inline def CU: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CU = "CU".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CU]
     
     inline def CV: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CV = "CV".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CV]
@@ -728,6 +773,8 @@ object typesMod {
     inline def CY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CY = "CY".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CY]
     
     inline def CZ: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CZ = "CZ".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CZ]
+    
+    inline def DA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DA = "DA".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DA]
     
     inline def DE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DE = "DE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DE]
     
@@ -748,6 +795,10 @@ object typesMod {
     inline def EG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EG = "EG".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EG]
     
     inline def EH: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EH = "EH".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EH]
+    
+    inline def EL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EL = "EL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EL]
+    
+    inline def EN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EN = "EN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EN]
     
     inline def ER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ER = "ER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ER]
     
@@ -1609,8 +1660,8 @@ object typesMod {
   }
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<T[P]> * / object}
-    */ typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DeepPartial & TopLevel[js.Any]
+  {[ P in keyof T ]:? mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/types.DeepPartial<T[P]>}
+    */ typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DeepPartial & TopLevel[T]
   
   type MakeKeysNullable[T1, T2 /* <: /* keyof T1 */ String */] = (Omit[T1, T2]) & typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MakeKeysNullable & TopLevel[T1]
   
@@ -1625,6 +1676,23 @@ object typesMod {
   type PickPartial[T, Par /* <: /* keyof T */ String */] = Pick[Partial[T], Par]
   
   type PickPartialRequired[T, Par /* <: /* keyof T */ String */, Req /* <: /* keyof T */ String */] = (Pick[Partial[T], Par]) & (Pick[Required[T], Req])
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FORCE
+    - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NO_CHOICE
+  */
+  trait SecureMode extends StObject
+  object SecureMode {
+    
+    inline def DEFAULT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEFAULT]
+    
+    inline def FORCE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FORCE = "FORCE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FORCE]
+    
+    inline def NO_CHOICE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NO_CHOICE = "NO_CHOICE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NO_CHOICE]
+  }
+  
+  type Timestamp = Double
   
   type ValueOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }

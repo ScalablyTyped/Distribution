@@ -27,7 +27,7 @@ object IndicesDeleteAliasParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
@@ -35,7 +35,7 @@ object IndicesDeleteAliasParams {
     
     inline def setName(value: NameList): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
     
     inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,7 @@ object navbarDropdownMod {
   
   @JSImport("rbx/components/navbar/navbar-dropdown", "NavbarDropdown")
   @js.native
-  val NavbarDropdown: ForwardRefAsExoticComponent[NavbarDropdownProps, ElementType[js.Any]] = js.native
+  val NavbarDropdown: ForwardRefAsExoticComponent[NavbarDropdownProps, ElementType[Any]] = js.native
   
   trait NavbarDropdownModifierProps extends StObject {
     

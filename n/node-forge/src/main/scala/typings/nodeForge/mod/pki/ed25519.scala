@@ -1,12 +1,13 @@
 package typings.nodeForge.mod.pki
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeForge.anon.PrivateKeyBinaryBuffer
+import typings.nodeForge.anon.PrivateKeyBytes
 import typings.nodeForge.anon.Seed
+import typings.nodeForge.mod.asn1.Asn1
 import typings.nodeForge.mod.util.ByteBuffer
 import typings.nodeForge.nodeForgeStrings.binary
 import typings.nodeForge.nodeForgeStrings.utf8
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,6 +45,10 @@ object ed25519 {
   inline def generateKeyPair(): typings.nodeForge.anon.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[typings.nodeForge.anon.PrivateKey]
   inline def generateKeyPair(options: Seed): typings.nodeForge.anon.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.anon.PrivateKey]
   
+  inline def privateKeyFromAsn1(obj: Asn1): PrivateKeyBytes = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyFromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[PrivateKeyBytes]
+  
+  inline def publicKeyFromAsn1(obj: Asn1): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
+  
   inline def publicKeyFromPrivateKey(options: PrivateKeyBinaryBuffer): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromPrivateKey")(options.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
   
   inline def sign(options: ToNativeBufferParameters & PrivateKeyBinaryBuffer): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
@@ -55,7 +60,7 @@ object ed25519 {
   
   type Key = NativeBuffer
   
-  type NativeBuffer = Buffer | Uint8Array
+  type NativeBuffer = Buffer | js.typedarray.Uint8Array
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeForge.anon.Message

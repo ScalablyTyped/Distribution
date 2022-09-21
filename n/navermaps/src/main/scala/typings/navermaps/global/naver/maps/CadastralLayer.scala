@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.CadastralLayer")
 @js.native
-class CadastralLayer ()
+open class CadastralLayer ()
   extends StObject
      with typings.navermaps.naver.maps.CadastralLayer {
   def this(option: CadastralLayerOptions) = this()

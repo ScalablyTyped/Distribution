@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getDefaultExampleMod {
   
-  @JSImport("vue-inbrowser-compiler-utils/lib/getDefaultExample", JSImport.Namespace)
+  @JSImport("vue-inbrowser-compiler-utils/lib/types/getDefaultExample", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -17,21 +17,21 @@ object browserFilesMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", "BrowserDownloads")
   @js.native
-  class BrowserDownloads_ ()
+  open class BrowserDownloads_ ()
     extends StObject
        with IOHandler {
     def this(fileNamePrefix: String) = this()
     
-    /* private */ val jsonAnchor: js.Any = js.native
+    /* private */ val modelJsonAnchor: Any = js.native
     
-    /* private */ val modelTopologyFileName: js.Any = js.native
+    /* private */ val modelJsonFileName: Any = js.native
     
     @JSName("save")
     def save_MBrowserDownloads_(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
     
-    /* private */ val weightDataAnchor: js.Any = js.native
+    /* private */ val weightDataAnchor: Any = js.native
     
-    /* private */ val weightDataFileName: js.Any = js.native
+    /* private */ val weightDataFileName: Any = js.native
   }
   /* static members */
   object BrowserDownloads_ {

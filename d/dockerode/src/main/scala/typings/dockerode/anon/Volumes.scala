@@ -22,10 +22,10 @@ object Volumes {
     
     inline def setVolumes(value: js.Array[VolumeInspectInfo]): Self = StObject.set(x, "Volumes", value.asInstanceOf[js.Any])
     
-    inline def setVolumesVarargs(value: VolumeInspectInfo*): Self = StObject.set(x, "Volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: VolumeInspectInfo*): Self = StObject.set(x, "Volumes", js.Array(value*))
     
     inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
     
-    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "Warnings", js.Array(value*))
   }
 }

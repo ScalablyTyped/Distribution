@@ -12,7 +12,7 @@ object routeMod {
   
   @JSImport("workbox-routing/Route", "Route")
   @js.native
-  class Route[MatchReturn] protected () extends StObject {
+  open class Route[MatchReturn] protected () extends StObject {
     def this(`match`: RouteMatchCallback[MatchReturn], handler: RouteHandler) = this()
     def this(`match`: RouteMatchCallback[MatchReturn], handler: RouteHandler, method: HTTPMethod) = this()
     

@@ -54,7 +54,7 @@ object ContactMaterial {
     
     inline def setMaterials(value: js.Array[Material]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
-    inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value :_*))
+    inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value*))
     
     inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
   }

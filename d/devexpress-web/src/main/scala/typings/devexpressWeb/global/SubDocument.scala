@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SubDocument")
 @js.native
-class SubDocument ()
+open class SubDocument ()
   extends StObject
      with typings.devexpressWeb.SubDocument

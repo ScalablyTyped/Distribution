@@ -48,7 +48,7 @@ object XDropTargetDropContext {
     acceptDrop: Double => Unit,
     acquire: () => Unit,
     dropComplete: Boolean => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     rejectDrop: () => Unit,
     release: () => Unit
   ): XDropTargetDropContext = {

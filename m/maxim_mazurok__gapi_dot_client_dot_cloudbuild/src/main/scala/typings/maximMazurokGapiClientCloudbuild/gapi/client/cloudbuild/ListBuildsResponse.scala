@@ -25,7 +25,7 @@ object ListBuildsResponse {
     
     inline def setBuildsUndefined: Self = StObject.set(x, "builds", js.undefined)
     
-    inline def setBuildsVarargs(value: Build*): Self = StObject.set(x, "builds", js.Array(value :_*))
+    inline def setBuildsVarargs(value: Build*): Self = StObject.set(x, "builds", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

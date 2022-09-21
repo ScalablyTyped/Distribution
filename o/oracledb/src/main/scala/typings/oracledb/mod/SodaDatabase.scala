@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -72,8 +72,8 @@ trait SodaDatabase extends StObject {
   def createDocument(content: String, options: SodaDocumentOptions): SodaDocument = js.native
   def createDocument(content: Buffer): SodaDocument = js.native
   def createDocument(content: Buffer, options: SodaDocumentOptions): SodaDocument = js.native
-  def createDocument(content: Record[String, js.Any]): SodaDocument = js.native
-  def createDocument(content: Record[String, js.Any], options: SodaDocumentOptions): SodaDocument = js.native
+  def createDocument(content: Record[String, Any]): SodaDocument = js.native
+  def createDocument(content: Record[String, Any], options: SodaDocumentOptions): SodaDocument = js.native
   
   /**
     * Gets an array of collection names in alphabetical order.

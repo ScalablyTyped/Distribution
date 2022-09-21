@@ -1,19 +1,19 @@
 
 # Scala.js typings for konva
 
-Typings are for version 7.1.9
+Typings are for version 8.3.12
 
 ## Library description:
-<p align="center">   <img src="https://raw.githubusercontent.com/konvajs/konvajs.github.io/master/apple-touch-icon-180x180.png" alt="Konva logo" height="180" /> </p>
+<p align="center">   <img src="https://konvajs.org/android-chrome-192x192.png" alt="Konva logo" height="180" /> </p>
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | konva |
 | Keywords           | canvas, animations, graphic, html5 |
-| # releases         | 83 |
-| # dependents       | 185 |
-| # downloads        | 2762356 |
-| # stars            | 1 |
+| # releases         | 47 |
+| # dependents       | 0.0 |
+| # downloads        | 709850.6666666666 |
+| # stars            | 7973.0 |
 
 ## Links
 - [Homepage](http://konvajs.org/)

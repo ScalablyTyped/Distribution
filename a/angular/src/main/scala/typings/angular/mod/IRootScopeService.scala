@@ -12,18 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IRootScopeService extends StObject {
   
   @JSName("$apply")
-  def $apply(): js.Any = js.native
+  def $apply(): Any = js.native
   @JSName("$apply")
-  def $apply(exp: String): js.Any = js.native
+  def $apply(exp: String): Any = js.native
   @JSName("$apply")
-  def $apply(exp: js.Function1[/* scope */ IScope, js.Any]): js.Any = js.native
+  def $apply(exp: js.Function1[/* scope */ IScope, Any]): Any = js.native
   
   @JSName("$applyAsync")
-  def $applyAsync(): js.Any = js.native
+  def $applyAsync(): Any = js.native
   @JSName("$applyAsync")
-  def $applyAsync(exp: String): js.Any = js.native
+  def $applyAsync(exp: String): Any = js.native
   @JSName("$applyAsync")
-  def $applyAsync(exp: js.Function1[/* scope */ IScope, js.Any]): js.Any = js.native
+  def $applyAsync(exp: js.Function1[/* scope */ IScope, Any]): Any = js.native
   
   /**
     * Dispatches an event name downwards to all child scopes (and their children) notifying the registered $rootScope.Scope listeners.
@@ -36,7 +36,7 @@ trait IRootScopeService extends StObject {
     * @param args Optional one or more arguments which will be passed onto the event listeners.
     */
   @JSName("$broadcast")
-  def $broadcast(name: String, args: js.Any*): IAngularEvent = js.native
+  def $broadcast(name: String, args: Any*): IAngularEvent = js.native
   
   @JSName("$destroy")
   def $destroy(): Unit = js.native
@@ -55,18 +55,18 @@ trait IRootScopeService extends StObject {
     * @param args Optional one or more arguments which will be passed onto the event listeners.
     */
   @JSName("$emit")
-  def $emit(name: String, args: js.Any*): IAngularEvent = js.native
+  def $emit(name: String, args: Any*): IAngularEvent = js.native
   
   @JSName("$eval")
-  def $eval(): js.Any = js.native
+  def $eval(): Any = js.native
   @JSName("$eval")
-  def $eval(expression: String): js.Any = js.native
+  def $eval(expression: String): Any = js.native
   @JSName("$eval")
-  def $eval(expression: String, locals: js.Object): js.Any = js.native
+  def $eval(expression: String, locals: js.Object): Any = js.native
   @JSName("$eval")
-  def $eval(expression: js.Function1[/* scope */ IScope, js.Any]): js.Any = js.native
+  def $eval(expression: js.Function1[/* scope */ IScope, Any]): Any = js.native
   @JSName("$eval")
-  def $eval(expression: js.Function1[/* scope */ IScope, js.Any], locals: js.Object): js.Any = js.native
+  def $eval(expression: js.Function1[/* scope */ IScope, Any], locals: js.Object): Any = js.native
   
   @JSName("$evalAsync")
   def $evalAsync(): Unit = js.native
@@ -124,7 +124,7 @@ trait IRootScopeService extends StObject {
     * @param listener Function to call when the event is emitted.
     */
   @JSName("$on")
-  def $on(name: String, listener: js.Function2[/* event */ IAngularEvent, /* repeated */ js.Any, js.Any]): js.Function0[Unit] = js.native
+  def $on(name: String, listener: js.Function2[/* event */ IAngularEvent, /* repeated */ Any, Any]): js.Function0[Unit] = js.native
   
   @JSName("$parent")
   var $parent: IScope = js.native
@@ -190,55 +190,51 @@ trait IRootScopeService extends StObject {
   @JSName("$watch")
   def $watch(watchExpression: String, listener: Unit, objectEquality: Boolean): js.Function0[Unit] = js.native
   @JSName("$watch")
-  def $watch(watchExpression: js.Function1[/* scope */ IScope, js.Any]): js.Function0[Unit] = js.native
+  def $watch(watchExpression: js.Function1[/* scope */ IScope, Any]): js.Function0[Unit] = js.native
   @JSName("$watch")
-  def $watch(watchExpression: js.Function1[/* scope */ IScope, js.Any], listener: String): js.Function0[Unit] = js.native
+  def $watch(watchExpression: js.Function1[/* scope */ IScope, Any], listener: String): js.Function0[Unit] = js.native
   @JSName("$watch")
-  def $watch(
-    watchExpression: js.Function1[/* scope */ IScope, js.Any],
-    listener: String,
-    objectEquality: Boolean
-  ): js.Function0[Unit] = js.native
+  def $watch(watchExpression: js.Function1[/* scope */ IScope, Any], listener: String, objectEquality: Boolean): js.Function0[Unit] = js.native
   @JSName("$watch")
-  def $watch(watchExpression: js.Function1[/* scope */ IScope, js.Any], listener: Unit, objectEquality: Boolean): js.Function0[Unit] = js.native
+  def $watch(watchExpression: js.Function1[/* scope */ IScope, Any], listener: Unit, objectEquality: Boolean): js.Function0[Unit] = js.native
   @JSName("$watch")
   def $watch[T](
     watchExpression: String,
-    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, js.Any]
+    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, Any]
   ): js.Function0[Unit] = js.native
   @JSName("$watch")
   def $watch[T](
     watchExpression: String,
-    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, js.Any],
+    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, Any],
     objectEquality: Boolean
   ): js.Function0[Unit] = js.native
   @JSName("$watch")
   def $watch[T](
     watchExpression: js.Function1[/* scope */ IScope, T],
-    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, js.Any]
+    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, Any]
   ): js.Function0[Unit] = js.native
   @JSName("$watch")
   def $watch[T](
     watchExpression: js.Function1[/* scope */ IScope, T],
-    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, js.Any],
+    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, Any],
     objectEquality: Boolean
   ): js.Function0[Unit] = js.native
   
   @JSName("$watchCollection")
   def $watchCollection[T](
     watchExpression: String,
-    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, js.Any]
+    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, Any]
   ): js.Function0[Unit] = js.native
   @JSName("$watchCollection")
   def $watchCollection[T](
     watchExpression: js.Function1[/* scope */ IScope, T],
-    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, js.Any]
+    listener: js.Function3[/* newValue */ T, /* oldValue */ T, /* scope */ IScope, Any]
   ): js.Function0[Unit] = js.native
   
   @JSName("$watchGroup")
   def $watchGroup(
-    watchExpressions: js.Array[js.Any | (js.Function1[/* scope */ IScope, js.Any])],
-    listener: js.Function3[/* newValue */ js.Any, /* oldValue */ js.Any, /* scope */ IScope, js.Any]
+    watchExpressions: js.Array[Any | (js.Function1[/* scope */ IScope, Any])],
+    listener: js.Function3[/* newValue */ Any, /* oldValue */ Any, /* scope */ IScope, Any]
   ): js.Function0[Unit] = js.native
   
   @JSName("$watch")
@@ -252,8 +248,8 @@ trait IRootScopeService extends StObject {
   
   // Hidden members
   @JSName("$$isolateBindings")
-  var DollarDollarisolateBindings: js.Any = js.native
+  var DollarDollarisolateBindings: Any = js.native
   
   @JSName("$$phase")
-  var DollarDollarphase: js.Any = js.native
+  var DollarDollarphase: Any = js.native
 }

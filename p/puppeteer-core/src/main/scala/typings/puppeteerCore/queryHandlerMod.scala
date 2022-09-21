@@ -1,13 +1,11 @@
 package typings.puppeteerCore
 
 import typings.puppeteerCore.anon.QueryHandler
-import typings.puppeteerCore.domworldMod.DOMWorld
-import typings.puppeteerCore.domworldMod.WaitForSelectorOptions
-import typings.puppeteerCore.jshandleMod.ElementHandle
-import typings.puppeteerCore.jshandleMod.JSHandle
-import typings.std.Document
-import typings.std.Element
-import typings.std.NodeListOf
+import typings.puppeteerCore.elementHandleMod.ElementHandle
+import typings.puppeteerCore.frameMod.Frame
+import typings.puppeteerCore.injectedInjectedMod.PuppeteerUtil
+import typings.puppeteerCore.isolatedWorldMod.WaitForSelectorOptions
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,17 +28,15 @@ object queryHandlerMod {
   
   trait CustomQueryHandler extends StObject {
     
-    var queryAll: js.UndefOr[
-        js.Function2[
-          /* element */ Element | Document, 
-          /* selector */ String, 
-          js.Array[Element] | NodeListOf[Element]
-        ]
-      ] = js.undefined
+    /**
+      * @returns Some {@link Node}s matching the given `selector` from {@link node}.
+      */
+    var queryAll: js.UndefOr[js.Function2[/* node */ Node, /* selector */ String, js.Array[Node]]] = js.undefined
     
-    var queryOne: js.UndefOr[
-        js.Function2[/* element */ Element | Document, /* selector */ String, Element | Null]
-      ] = js.undefined
+    /**
+      * @returns A {@link Node} matching the given `selector` from {@link node}.
+      */
+    var queryOne: js.UndefOr[js.Function2[/* node */ Node, /* selector */ String, Node | Null]] = js.undefined
   }
   object CustomQueryHandler {
     
@@ -51,13 +47,11 @@ object queryHandlerMod {
     
     extension [Self <: CustomQueryHandler](x: Self) {
       
-      inline def setQueryAll(
-        value: (/* element */ Element | Document, /* selector */ String) => js.Array[Element] | NodeListOf[Element]
-      ): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
+      inline def setQueryAll(value: (/* node */ Node, /* selector */ String) => js.Array[Node]): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
       
       inline def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
       
-      inline def setQueryOne(value: (/* element */ Element | Document, /* selector */ String) => Element | Null): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
+      inline def setQueryOne(value: (/* node */ Node, /* selector */ String) => Node | Null): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
       
       inline def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
     }
@@ -65,33 +59,23 @@ object queryHandlerMod {
   
   trait InternalQueryHandler extends StObject {
     
+    /**
+      * @returns Some {@link Node}s matching the given `selector` from {@link node}.
+      */
     var queryAll: js.UndefOr[
-        js.Function2[
-          /* element */ ElementHandle[Element], 
-          /* selector */ String, 
-          js.Promise[js.Array[ElementHandle[Element]]]
-        ]
-      ] = js.undefined
-    
-    var queryAllArray: js.UndefOr[
-        js.Function2[/* element */ ElementHandle[Element], /* selector */ String, js.Promise[JSHandle]]
-      ] = js.undefined
-    
-    var queryOne: js.UndefOr[
-        js.Function2[
-          /* element */ ElementHandle[Element], 
-          /* selector */ String, 
-          js.Promise[ElementHandle[Element] | Null]
-        ]
-      ] = js.undefined
-    
-    var waitFor: js.UndefOr[
         js.Function3[
-          /* domWorld */ DOMWorld, 
+          /* node */ Node, 
           /* selector */ String, 
-          /* options */ WaitForSelectorOptions, 
-          js.Promise[ElementHandle[Element] | Null]
+          /* PuppeteerUtil */ PuppeteerUtil, 
+          js.Array[Node]
         ]
+      ] = js.undefined
+    
+    /**
+      * @returns A {@link Node} matching the given `selector` from {@link node}.
+      */
+    var queryOne: js.UndefOr[
+        js.Function3[/* node */ Node, /* selector */ String, /* PuppeteerUtil */ PuppeteerUtil, Node | Null]
       ] = js.undefined
   }
   object InternalQueryHandler {
@@ -104,23 +88,81 @@ object queryHandlerMod {
     extension [Self <: InternalQueryHandler](x: Self) {
       
       inline def setQueryAll(
-        value: (/* element */ ElementHandle[Element], /* selector */ String) => js.Promise[js.Array[ElementHandle[Element]]]
+        value: (/* node */ Node, /* selector */ String, /* PuppeteerUtil */ PuppeteerUtil) => js.Array[Node]
+      ): Self = StObject.set(x, "queryAll", js.Any.fromFunction3(value))
+      
+      inline def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
+      
+      inline def setQueryOne(value: (/* node */ Node, /* selector */ String, /* PuppeteerUtil */ PuppeteerUtil) => Node | Null): Self = StObject.set(x, "queryOne", js.Any.fromFunction3(value))
+      
+      inline def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
+    }
+  }
+  
+  trait PuppeteerQueryHandler extends StObject {
+    
+    /**
+      * Queries for multiple nodes given a selector and {@link ElementHandle}.
+      *
+      * Akin to {@link Window.prototype.querySelectorAll}.
+      */
+    var queryAll: js.UndefOr[
+        js.Function2[
+          /* element */ ElementHandle[Node], 
+          /* selector */ String, 
+          js.Promise[js.Array[ElementHandle[Node]]]
+        ]
+      ] = js.undefined
+    
+    /**
+      * Queries for a single node given a selector and {@link ElementHandle}.
+      *
+      * Akin to {@link Window.prototype.querySelector}.
+      */
+    var queryOne: js.UndefOr[
+        js.Function2[
+          /* element */ ElementHandle[Node], 
+          /* selector */ String, 
+          js.Promise[ElementHandle[Node] | Null]
+        ]
+      ] = js.undefined
+    
+    /**
+      * Waits until a single node appears for a given selector and
+      * {@link ElementHandle}.
+      */
+    var waitFor: js.UndefOr[
+        js.Function3[
+          /* elementOrFrame */ ElementHandle[Node] | Frame, 
+          /* selector */ String, 
+          /* options */ WaitForSelectorOptions, 
+          js.Promise[ElementHandle[Node] | Null]
+        ]
+      ] = js.undefined
+  }
+  object PuppeteerQueryHandler {
+    
+    inline def apply(): PuppeteerQueryHandler = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PuppeteerQueryHandler]
+    }
+    
+    extension [Self <: PuppeteerQueryHandler](x: Self) {
+      
+      inline def setQueryAll(
+        value: (/* element */ ElementHandle[Node], /* selector */ String) => js.Promise[js.Array[ElementHandle[Node]]]
       ): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
-      
-      inline def setQueryAllArray(value: (/* element */ ElementHandle[Element], /* selector */ String) => js.Promise[JSHandle]): Self = StObject.set(x, "queryAllArray", js.Any.fromFunction2(value))
-      
-      inline def setQueryAllArrayUndefined: Self = StObject.set(x, "queryAllArray", js.undefined)
       
       inline def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
       
       inline def setQueryOne(
-        value: (/* element */ ElementHandle[Element], /* selector */ String) => js.Promise[ElementHandle[Element] | Null]
+        value: (/* element */ ElementHandle[Node], /* selector */ String) => js.Promise[ElementHandle[Node] | Null]
       ): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
       
       inline def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
       
       inline def setWaitFor(
-        value: (/* domWorld */ DOMWorld, /* selector */ String, /* options */ WaitForSelectorOptions) => js.Promise[ElementHandle[Element] | Null]
+        value: (/* elementOrFrame */ ElementHandle[Node] | Frame, /* selector */ String, /* options */ WaitForSelectorOptions) => js.Promise[ElementHandle[Node] | Null]
       ): Self = StObject.set(x, "waitFor", js.Any.fromFunction3(value))
       
       inline def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)

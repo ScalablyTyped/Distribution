@@ -15,13 +15,13 @@ object platformNodeMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "PlatformNode")
   @js.native
-  class PlatformNode ()
+  open class PlatformNode ()
     extends StObject
        with Platform {
     
-    /* private */ var textEncoder: js.Any = js.native
+    /* private */ var textEncoder: Any = js.native
     
-    var util: js.Any = js.native
+    var util: Any = js.native
   }
   
   object getNodeFetch {
@@ -30,7 +30,7 @@ object platformNodeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def importFetch(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("importFetch")().asInstanceOf[js.Any]
+    inline def importFetch(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("importFetch")().asInstanceOf[Any]
   }
   
   inline def getSystemFetch(): FetchFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemFetch")().asInstanceOf[FetchFn]

@@ -9,7 +9,7 @@ object overviewMapMod {
   
   @JSImport("ol/control/OverviewMap", JSImport.Default)
   @js.native
-  class default () extends OverviewMap {
+  open class default () extends OverviewMap {
     def this(opt_options: Options) = this()
   }
   
@@ -74,7 +74,7 @@ object overviewMapMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setRender(value: /* p0 */ typings.ol.mapEventMod.default => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def raty(): JQuery = js.native
-  def raty(method: String, parameter: js.Any): js.Any = js.native
+  def raty(method: String, parameter: Any): Any = js.native
   def raty(options: JQueryRatyOptions): JQuery = js.native
   @JSName("raty")
   def raty_cancel(method: cancel, on: Boolean): Unit = js.native

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "orchestrator"
-version := "0.3-dt-20201002Z-5e5e05"
-scalaVersion := "3.0.1"
+version := "0.3-dt-20211202Z-5b2227"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20201002Z-a93b2a",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-11b132",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

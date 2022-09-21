@@ -1,9 +1,5 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceSpreadsheetsValuesAppend
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Determines if the update response should include the values of the cells
-    * that were appended. By default, responses do not include the updated
-    * values.
+    * Determines if the update response should include the values of the cells that were appended. By default, responses do not include the updated values.
     */
   var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
   
@@ -30,8 +19,7 @@ trait ParamsResourceSpreadsheetsValuesAppend
   var insertDataOption: js.UndefOr[String] = js.undefined
   
   /**
-    * The A1 notation of a range to search for a logical table of data. Values
-    * will be appended after the last row of the table.
+    * The [A1 notation](/sheets/api/guides/concepts#cell) of a range to search for a logical table of data. Values are appended after the last row of the table.
     */
   var range: js.UndefOr[String] = js.undefined
   
@@ -41,16 +29,12 @@ trait ParamsResourceSpreadsheetsValuesAppend
   var requestBody: js.UndefOr[SchemaValueRange] = js.undefined
   
   /**
-    * Determines how dates, times, and durations in the response should be
-    * rendered. This is ignored if response_value_render_option is
-    * FORMATTED_VALUE. The default dateTime render option is
-    * [DateTimeRenderOption.SERIAL_NUMBER].
+    * Determines how dates, times, and durations in the response should be rendered. This is ignored if response_value_render_option is FORMATTED_VALUE. The default dateTime render option is SERIAL_NUMBER.
     */
   var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
   
   /**
-    * Determines how values in the response should be rendered. The default
-    * render option is ValueRenderOption.FORMATTED_VALUE.
+    * Determines how values in the response should be rendered. The default render option is FORMATTED_VALUE.
     */
   var responseValueRenderOption: js.UndefOr[String] = js.undefined
   
@@ -72,10 +56,6 @@ object ParamsResourceSpreadsheetsValuesAppend {
   }
   
   extension [Self <: ParamsResourceSpreadsheetsValuesAppend](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setIncludeValuesInResponse(value: Boolean): Self = StObject.set(x, "includeValuesInResponse", value.asInstanceOf[js.Any])
     

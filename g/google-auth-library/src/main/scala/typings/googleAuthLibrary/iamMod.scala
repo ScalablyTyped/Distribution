@@ -9,7 +9,7 @@ object iamMod {
   
   @JSImport("google-auth-library/build/src/auth/iam", "IAMAuth")
   @js.native
-  class IAMAuth protected () extends StObject {
+  open class IAMAuth protected () extends StObject {
     /**
       * IAM credentials.
       *

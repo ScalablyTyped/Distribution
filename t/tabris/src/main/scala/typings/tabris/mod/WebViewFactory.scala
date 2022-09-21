@@ -10,5 +10,5 @@ trait WebViewFactory
   extends Factory[
       WebViewConstructor, 
       InstanceType[WebViewConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[WebViewConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

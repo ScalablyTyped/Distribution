@@ -4,17 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A `Tree` contains all the Directory protos in a single directory Merkle
-  * tree, compressed into one message.
-  */
 trait SchemaBuildBazelRemoteExecutionV2Tree extends StObject {
   
   /**
-    * All the child directories: the directories referred to by the root and,
-    * recursively, all its children. In order to reconstruct the directory
-    * tree, the client must take the digests of each of the child directories
-    * and then build up a tree starting from the `root`.
+    * All the child directories: the directories referred to by the root and, recursively, all its children. In order to reconstruct the directory tree, the client must take the digests of each of the child directories and then build up a tree starting from the `root`.
     */
   var children: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2Directory]] = js.undefined
   
@@ -36,7 +29,7 @@ object SchemaBuildBazelRemoteExecutionV2Tree {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setRoot(value: SchemaBuildBazelRemoteExecutionV2Directory): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

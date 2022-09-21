@@ -10,7 +10,7 @@ trait IgGridColumn
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the colSpan of the cell in a Multi-Row Layout configuration. colSpan 0 is not supported and will be changed to 1 by the grid. [Here you can find more about the Multi-Row Layout feature](http://www.igniteui.com/help/iggrid-multirowlayout)
@@ -91,7 +91,7 @@ trait IgGridColumn
     * Array of child column definitions. If the column has the property group than the grid has multi column headers.
     *
     */
-  var group: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var group: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Options used to configure collapsible column [groups](ui.iggrid#options:columns.group).
@@ -173,7 +173,7 @@ trait IgGridColumn
     * Array of values which will be populated in the column cells at initialization, if the column is [unbound](ui.iggrid#options:columns.unbound).
     *
     */
-  var unboundValues: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var unboundValues: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Width of the column in pixels or percentage. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).If width is not defined and [defaultColumnWidth](ui.iggrid#options:defaultColumnWidth) is set, it is assumed for all columns.
@@ -226,7 +226,7 @@ object IgGridColumn {
     
     inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    inline def setGroup(value: js.Array[js.Any]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: js.Array[Any]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setGroupOptions(value: IgGridColumnGroupOptions): Self = StObject.set(x, "groupOptions", value.asInstanceOf[js.Any])
     
@@ -234,7 +234,7 @@ object IgGridColumn {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setGroupVarargs(value: js.Any*): Self = StObject.set(x, "group", js.Array(value :_*))
+    inline def setGroupVarargs(value: Any*): Self = StObject.set(x, "group", js.Array(value*))
     
     inline def setHeaderCssClass(value: String): Self = StObject.set(x, "headerCssClass", value.asInstanceOf[js.Any])
     
@@ -276,11 +276,11 @@ object IgGridColumn {
     
     inline def setUnboundUndefined: Self = StObject.set(x, "unbound", js.undefined)
     
-    inline def setUnboundValues(value: js.Array[js.Any]): Self = StObject.set(x, "unboundValues", value.asInstanceOf[js.Any])
+    inline def setUnboundValues(value: js.Array[Any]): Self = StObject.set(x, "unboundValues", value.asInstanceOf[js.Any])
     
     inline def setUnboundValuesUndefined: Self = StObject.set(x, "unboundValues", js.undefined)
     
-    inline def setUnboundValuesVarargs(value: js.Any*): Self = StObject.set(x, "unboundValues", js.Array(value :_*))
+    inline def setUnboundValuesVarargs(value: Any*): Self = StObject.set(x, "unboundValues", js.Array(value*))
     
     inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

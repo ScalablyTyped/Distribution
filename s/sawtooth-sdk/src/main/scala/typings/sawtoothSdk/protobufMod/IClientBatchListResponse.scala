@@ -34,7 +34,7 @@ object IClientBatchListResponse {
     
     inline def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
     
-    inline def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value :_*))
+    inline def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value*))
     
     inline def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     

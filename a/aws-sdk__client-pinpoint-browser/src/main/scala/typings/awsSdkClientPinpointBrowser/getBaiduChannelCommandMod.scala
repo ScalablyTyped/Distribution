@@ -16,7 +16,7 @@ object getBaiduChannelCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetBaiduChannelCommand", "GetBaiduChannelCommand")
   @js.native
-  class GetBaiduChannelCommand protected ()
+  open class GetBaiduChannelCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getBaiduChannelCommandMod {
     override val middlewareStack: MiddlewareStack[GetBaiduChannelInput, GetBaiduChannelOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[GetBaiduChannelInput, GetBaiduChannelOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetBaiduChannelInput, GetBaiduChannelOutput] = js.native
   }
 }

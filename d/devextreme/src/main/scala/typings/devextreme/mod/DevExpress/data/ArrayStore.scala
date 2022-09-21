@@ -5,17 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayStore
+trait ArrayStore[TItem, TKey]
   extends StObject
-     with Store {
+     with Store[TItem, TKey]
+     with typings.devextreme.mod.DevExpress.data.utils.Store[TItem, TKey] {
   
   /**
-    * [descr:ArrayStore.clear()]
+    * Clears all the ArrayStore&apos;s associated data.
     */
   def clear(): Unit = js.native
   
   /**
-    * [descr:ArrayStore.createQuery()]
+    * Creates a Query for the underlying array.
     */
-  def createQuery(): js.Any = js.native
+  def createQuery(): Query = js.native
+}
+object ArrayStore {
+  
+  type Options[TItem, TKey] = ArrayStoreOptions[TItem, TKey]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-collapse
 
-Typings are for version 3.0.1
+Typings are for version 3.4.2
 
 ## Library description:
 rc-collapse ui component for react
@@ -10,10 +10,10 @@ rc-collapse ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-collapse |
 | Keywords           | react, react-component, react-rc-collapse, rc-collapse, collapse, accordion |
-| # releases         | 17 |
-| # dependents       | 291 |
-| # downloads        | 21004322 |
-| # stars            | 1 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 3708131.3333333335 |
+| # stars            | 302.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/collapse)

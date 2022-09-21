@@ -35,7 +35,7 @@ object MarkableOutputStream {
     jumpToFurthest: () => Unit,
     jumpToMark: Double => Unit,
     offsetToMark: Double => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setOutputStream: XOutputStream => Unit,
     setPredecessor: XConnectable => Unit,

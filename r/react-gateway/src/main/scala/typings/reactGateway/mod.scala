@@ -9,20 +9,20 @@ object mod {
   
   @JSImport("react-gateway", "Gateway")
   @js.native
-  class Gateway () extends ^
+  open class Gateway () extends ^
   
   @JSImport("react-gateway", "GatewayDest")
   @js.native
-  class GatewayDest ()
+  open class GatewayDest ()
     extends typings.reactGateway.gatewayDestMod.^
   
   @JSImport("react-gateway", "GatewayProvider")
   @js.native
-  class GatewayProvider ()
+  open class GatewayProvider ()
     extends typings.reactGateway.gatewayProviderMod.^
   
   @JSImport("react-gateway", "GatewayRegistry")
   @js.native
-  class GatewayRegistry ()
+  open class GatewayRegistry ()
     extends typings.reactGateway.gatewayRegistryMod.^
 }

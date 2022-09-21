@@ -17,7 +17,7 @@ trait CmafGroupSettings extends StObject {
   var BaseUrl: js.UndefOr[string] = js.undefined
   
   /**
-    * When set to ENABLED, sets #EXT-X-ALLOW-CACHE:no tag, which prevents client from saving media segments for later replay.
+    * Disable this setting only when your workflow requires the #EXT-X-ALLOW-CACHE:no tag. Otherwise, keep the default value Enabled (ENABLED) and control caching in your video distribution set up. For example, use the Cache-Control http header.
     */
   var ClientCache: js.UndefOr[CmafClientCache] = js.undefined
   
@@ -42,9 +42,19 @@ trait CmafGroupSettings extends StObject {
   var Encryption: js.UndefOr[CmafEncryptionSettings] = js.undefined
   
   /**
-    * Length of fragments to generate (in seconds). Fragment length must be compatible with GOP size and Framerate. Note that fragments will end on the next keyframe after this number of seconds, so actual fragment length may be longer. When Emit Single File is checked, the fragmentation is internal to a single output file and it does not cause the creation of many output files as in other output types.
+    * Specify the length, in whole seconds, of the mp4 fragments. When you don't specify a value, MediaConvert defaults to 2. Related setting: Use Fragment length control (FragmentLengthControl) to specify whether the encoder enforces this value strictly.
     */
   var FragmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined
+  
+  /**
+    * Specify whether MediaConvert generates images for trick play. Keep the default value, None (NONE), to not generate any images. Choose Thumbnail (THUMBNAIL) to generate tiled thumbnails. Choose Thumbnail and full frame (THUMBNAIL_AND_FULLFRAME) to generate tiled thumbnails and full-resolution images of single frames. When you enable Write HLS manifest (WriteHlsManifest), MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. When you enable Write DASH manifest (WriteDashManifest), MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md
+    */
+  var ImageBasedTrickPlay: js.UndefOr[CmafImageBasedTrickPlay] = js.undefined
+  
+  /**
+    * Tile and thumbnail settings applicable when imageBasedTrickPlay is ADVANCED
+    */
+  var ImageBasedTrickPlaySettings: js.UndefOr[CmafImageBasedTrickPlaySettings] = js.undefined
   
   /**
     * When set to GZIP, compresses HLS playlist.
@@ -72,19 +82,34 @@ trait CmafGroupSettings extends StObject {
   var MpdProfile: js.UndefOr[CmafMpdProfile] = js.undefined
   
   /**
+    * Use this setting only when your output video stream has B-frames, which causes the initial presentation time stamp (PTS) to be offset from the initial decode time stamp (DTS). Specify how MediaConvert handles PTS when writing time stamps in output DASH manifests. Choose Match initial PTS (MATCH_INITIAL_PTS) when you want MediaConvert to use the initial PTS as the first time stamp in the manifest. Choose Zero-based (ZERO_BASED) to have MediaConvert ignore the initial PTS in the video stream and instead write the initial time stamp as zero in the manifest. For outputs that don't have B-frames, the time stamps in your DASH manifests start at zero regardless of your choice here.
+    */
+  var PtsOffsetHandlingForBFrames: js.UndefOr[CmafPtsOffsetHandlingForBFrames] = js.undefined
+  
+  /**
     * When set to SINGLE_FILE, a single output file is generated, which is internally segmented using the Fragment Length and Segment Length. When set to SEGMENTED_FILES, separate segment files will be created.
     */
   var SegmentControl: js.UndefOr[CmafSegmentControl] = js.undefined
   
   /**
-    * Use this setting to specify the length, in seconds, of each individual CMAF segment. This value applies to the whole package; that is, to every output in the output group. Note that segments end on the first keyframe after this number of seconds, so the actual segment length might be slightly longer. If you set Segment control (CmafSegmentControl) to single file, the service puts the content of each output in a single file that has metadata that marks these segments. If you set it to segmented files, the service creates multiple files for each output, each with the content of one segment.
+    * Specify the length, in whole seconds, of each segment. When you don't specify a value, MediaConvert defaults to 10. Related settings: Use Segment length control (SegmentLengthControl) to specify whether the encoder enforces this value strictly. Use Segment control (CmafSegmentControl) to specify whether MediaConvert creates separate segment files or one content file that has metadata to mark the segment boundaries.
     */
   var SegmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined
+  
+  /**
+    * Specify how you want MediaConvert to determine the segment length. Choose Exact (EXACT) to have the encoder use the exact length that you specify with the setting Segment length (SegmentLength). This might result in extra I-frames. Choose Multiple of GOP (GOP_MULTIPLE) to have the encoder round up the segment lengths to match the next GOP boundary.
+    */
+  var SegmentLengthControl: js.UndefOr[CmafSegmentLengthControl] = js.undefined
   
   /**
     * Include or exclude RESOLUTION attribute for video in EXT-X-STREAM-INF tag of variant manifest.
     */
   var StreamInfResolution: js.UndefOr[CmafStreamInfResolution] = js.undefined
+  
+  /**
+    * When set to LEGACY, the segment target duration is always rounded up to the nearest integer value above its current value in seconds. When set to SPEC\\_COMPLIANT, the segment target duration is rounded up to the nearest integer value if fraction seconds are greater than or equal to 0.5 (>= 0.5) and rounded down if less than 0.5 (< 0.5). You may need to use LEGACY if your client needs to ensure that the target duration is always longer than the actual duration of the segment. Some older players may experience interrupted playback when the actual duration of a track in a segment is longer than the target duration.
+    */
+  var TargetDurationCompatibilityMode: js.UndefOr[CmafTargetDurationCompatibilityMode] = js.undefined
   
   /**
     * When set to ENABLED, a DASH MPD manifest will be generated for this output.
@@ -114,7 +139,7 @@ object CmafGroupSettings {
     
     inline def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
     
-    inline def setAdditionalManifestsVarargs(value: CmafAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
+    inline def setAdditionalManifestsVarargs(value: CmafAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value*))
     
     inline def setBaseUrl(value: string): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
     
@@ -144,6 +169,14 @@ object CmafGroupSettings {
     
     inline def setFragmentLengthUndefined: Self = StObject.set(x, "FragmentLength", js.undefined)
     
+    inline def setImageBasedTrickPlay(value: CmafImageBasedTrickPlay): Self = StObject.set(x, "ImageBasedTrickPlay", value.asInstanceOf[js.Any])
+    
+    inline def setImageBasedTrickPlaySettings(value: CmafImageBasedTrickPlaySettings): Self = StObject.set(x, "ImageBasedTrickPlaySettings", value.asInstanceOf[js.Any])
+    
+    inline def setImageBasedTrickPlaySettingsUndefined: Self = StObject.set(x, "ImageBasedTrickPlaySettings", js.undefined)
+    
+    inline def setImageBasedTrickPlayUndefined: Self = StObject.set(x, "ImageBasedTrickPlay", js.undefined)
+    
     inline def setManifestCompression(value: CmafManifestCompression): Self = StObject.set(x, "ManifestCompression", value.asInstanceOf[js.Any])
     
     inline def setManifestCompressionUndefined: Self = StObject.set(x, "ManifestCompression", js.undefined)
@@ -164,17 +197,29 @@ object CmafGroupSettings {
     
     inline def setMpdProfileUndefined: Self = StObject.set(x, "MpdProfile", js.undefined)
     
+    inline def setPtsOffsetHandlingForBFrames(value: CmafPtsOffsetHandlingForBFrames): Self = StObject.set(x, "PtsOffsetHandlingForBFrames", value.asInstanceOf[js.Any])
+    
+    inline def setPtsOffsetHandlingForBFramesUndefined: Self = StObject.set(x, "PtsOffsetHandlingForBFrames", js.undefined)
+    
     inline def setSegmentControl(value: CmafSegmentControl): Self = StObject.set(x, "SegmentControl", value.asInstanceOf[js.Any])
     
     inline def setSegmentControlUndefined: Self = StObject.set(x, "SegmentControl", js.undefined)
     
     inline def setSegmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentLength", value.asInstanceOf[js.Any])
     
+    inline def setSegmentLengthControl(value: CmafSegmentLengthControl): Self = StObject.set(x, "SegmentLengthControl", value.asInstanceOf[js.Any])
+    
+    inline def setSegmentLengthControlUndefined: Self = StObject.set(x, "SegmentLengthControl", js.undefined)
+    
     inline def setSegmentLengthUndefined: Self = StObject.set(x, "SegmentLength", js.undefined)
     
     inline def setStreamInfResolution(value: CmafStreamInfResolution): Self = StObject.set(x, "StreamInfResolution", value.asInstanceOf[js.Any])
     
     inline def setStreamInfResolutionUndefined: Self = StObject.set(x, "StreamInfResolution", js.undefined)
+    
+    inline def setTargetDurationCompatibilityMode(value: CmafTargetDurationCompatibilityMode): Self = StObject.set(x, "TargetDurationCompatibilityMode", value.asInstanceOf[js.Any])
+    
+    inline def setTargetDurationCompatibilityModeUndefined: Self = StObject.set(x, "TargetDurationCompatibilityMode", js.undefined)
     
     inline def setWriteDashManifest(value: CmafWriteDASHManifest): Self = StObject.set(x, "WriteDashManifest", value.asInstanceOf[js.Any])
     

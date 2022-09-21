@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.BulkEditPartnerAssignedTargetingOptionsRequest
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.InventorySourceGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +13,9 @@ trait PartnerIdPrettyPrintQuotaUser extends StObject {
   
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
+  
+  /** The ID of the advertiser that owns the inventory source group. The parent partner will not have access to this group. */
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -29,8 +32,11 @@ trait PartnerIdPrettyPrintQuotaUser extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the partner. */
-  var partnerId: String
+  /**
+    * The ID of the partner that owns the inventory source group. Only this partner will have write access to this group. Only advertisers to which this group is explicitly shared
+    * will have read access to this group.
+    */
+  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -39,7 +45,7 @@ trait PartnerIdPrettyPrintQuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: BulkEditPartnerAssignedTargetingOptionsRequest
+  var resource: InventorySourceGroup
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +55,8 @@ trait PartnerIdPrettyPrintQuotaUser extends StObject {
 }
 object PartnerIdPrettyPrintQuotaUser {
   
-  inline def apply(partnerId: String, resource: BulkEditPartnerAssignedTargetingOptionsRequest): PartnerIdPrettyPrintQuotaUser = {
-    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(resource: InventorySourceGroup): PartnerIdPrettyPrintQuotaUser = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartnerIdPrettyPrintQuotaUser]
   }
   
@@ -63,6 +69,10 @@ object PartnerIdPrettyPrintQuotaUser {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -86,6 +96,8 @@ object PartnerIdPrettyPrintQuotaUser {
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -94,7 +106,7 @@ object PartnerIdPrettyPrintQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: BulkEditPartnerAssignedTargetingOptionsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: InventorySourceGroup): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

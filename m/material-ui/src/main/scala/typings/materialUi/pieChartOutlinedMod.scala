@@ -10,10 +10,10 @@ object pieChartOutlinedMod {
   
   @JSImport("material-ui/svg-icons/editor/pie-chart-outlined", JSImport.Default)
   @js.native
-  class default () extends EditorPieChartOutlined
+  open class default () extends EditorPieChartOutlined
   
   @JSImport("material-ui/svg-icons/editor/pie-chart-outlined", "EditorPieChartOutlined")
   @js.native
-  class EditorPieChartOutlined ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorPieChartOutlined ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

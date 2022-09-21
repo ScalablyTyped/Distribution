@@ -22,6 +22,6 @@ object SystemApksListResponse {
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
+    inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

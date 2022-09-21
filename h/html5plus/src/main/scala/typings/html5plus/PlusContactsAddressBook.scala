@@ -33,12 +33,12 @@ trait PlusContactsAddressBook extends StObject {
   def find(
     contactFields: js.Array[String],
     successCB: js.Function1[/* result */ PlusContactsContact, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def find(
     contactFields: js.Array[String],
     successCB: js.Function1[/* result */ PlusContactsContact, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     findOptions: PlusContactsContactFindOption
   ): Unit = js.native
   def find(
@@ -47,11 +47,11 @@ trait PlusContactsAddressBook extends StObject {
     errorCB: Unit,
     findOptions: PlusContactsContactFindOption
   ): Unit = js.native
-  def find(contactFields: js.Array[String], successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def find(contactFields: js.Array[String], successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def find(
     contactFields: js.Array[String],
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     findOptions: PlusContactsContactFindOption
   ): Unit = js.native
   def find(
@@ -64,12 +64,12 @@ trait PlusContactsAddressBook extends StObject {
   def find(
     contactFields: Unit,
     successCB: js.Function1[/* result */ PlusContactsContact, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def find(
     contactFields: Unit,
     successCB: js.Function1[/* result */ PlusContactsContact, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     findOptions: PlusContactsContactFindOption
   ): Unit = js.native
   def find(
@@ -78,11 +78,11 @@ trait PlusContactsAddressBook extends StObject {
     errorCB: Unit,
     findOptions: PlusContactsContactFindOption
   ): Unit = js.native
-  def find(contactFields: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def find(contactFields: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def find(
     contactFields: Unit,
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     findOptions: PlusContactsContactFindOption
   ): Unit = js.native
   def find(contactFields: Unit, successCB: Unit, errorCB: Unit, findOptions: PlusContactsContactFindOption): Unit = js.native

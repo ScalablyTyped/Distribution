@@ -9,7 +9,10 @@ trait TargetResource extends StObject {
   // Indicates the visible name defined for the resource. Typically specified when the resource is created.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // When type is set to Group, this indicates the group type.
+  /**
+    * When type is set to Group, this indicates the group type. Possible values are: unifiedGroups, azureAD, and
+    * unknownFutureValue
+    */
   var groupType: js.UndefOr[NullableOption[GroupType]] = js.undefined
   
   // Indicates the unique ID of the resource.
@@ -57,7 +60,7 @@ object TargetResource {
     
     inline def setModifiedPropertiesUndefined: Self = StObject.set(x, "modifiedProperties", js.undefined)
     
-    inline def setModifiedPropertiesVarargs(value: ModifiedProperty*): Self = StObject.set(x, "modifiedProperties", js.Array(value :_*))
+    inline def setModifiedPropertiesVarargs(value: ModifiedProperty*): Self = StObject.set(x, "modifiedProperties", js.Array(value*))
     
     inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

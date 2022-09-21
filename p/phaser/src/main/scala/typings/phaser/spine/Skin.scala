@@ -61,17 +61,17 @@ object Skin {
     
     inline def setAttachments(value: js.Array[Map[Attachment]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    inline def setAttachmentsVarargs(value: Map[Attachment]*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Map[Attachment]*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    inline def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value*))
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     inline def setConstraints(value: js.Array[ConstraintData]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
-    inline def setConstraintsVarargs(value: ConstraintData*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: ConstraintData*): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setCopySkin(value: Skin => Unit): Self = StObject.set(x, "copySkin", js.Any.fromFunction1(value))
     

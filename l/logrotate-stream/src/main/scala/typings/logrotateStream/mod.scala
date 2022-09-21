@@ -37,11 +37,11 @@ object mod {
     /**
       * The max file size of a log before rotation occurs. Supports 1024, 1k, 1m, 1g
       */
-    var size: String
+    var size: String | Double
   }
   object Options {
     
-    inline def apply(file: String, keep: Double, size: String): Options = {
+    inline def apply(file: String, keep: Double, size: String | Double): Options = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], keep = keep.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -56,7 +56,7 @@ object mod {
       
       inline def setKeep(value: Double): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

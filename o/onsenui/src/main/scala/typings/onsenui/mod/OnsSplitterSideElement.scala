@@ -14,11 +14,16 @@ trait OnsSplitterSideElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
+  /**
+    * @description Specify the animation's duration, timing and delay with an object literal. E.g. `{duration: 0.2, delay: 1, timing: 'ease-in'}`.
+    **/
+  var animationOptions: js.Object = js.native
   
   /**
     * @description Close menu in collapse mode.
@@ -36,12 +41,12 @@ trait OnsSplitterSideElement
   
   /**
     * @description Show the page specified in pageUrl in the right section
-    * @param {*} page Page URL. Can be either an HTML document or an <ons-template>.
+    * @param {*} page Page URL. Can be either an HTML document or an <template>.
     * @param {Object} [option]
     * @return Resolves to the new page element
     */
-  def load(page: js.Any): js.Promise[HTMLElement] = js.native
-  def load(page: js.Any, options: SplitterSideOptions): js.Promise[HTMLElement] = js.native
+  def load(page: Any): js.Promise[HTMLElement] = js.native
+  def load(page: Any, options: SplitterSideOptions): js.Promise[HTMLElement] = js.native
   
   /**
     * @description Current mode. Possible values are "split", "collapse", "closed", "open" or "changing".
@@ -67,7 +72,7 @@ trait OnsSplitterSideElement
     */
   var page: String = js.native
   
-  var pageLoader: js.Any = js.native
+  var pageLoader: Any = js.native
   
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -75,6 +80,11 @@ trait OnsSplitterSideElement
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+  
+  /**
+    * @description true if the splitter side element is swipeable.
+    **/
+  var swipeable: Boolean = js.native
   
   /**
     * @description Opens if it's closed. Closes if it's open.

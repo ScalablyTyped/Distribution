@@ -10,10 +10,10 @@ HTML assertions for Chai.
 | ------------------ | :-------------: |
 | Full name          | chai-html |
 | Keywords           | chai, html, test, assert, assertion |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 598386 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 18591.666666666668 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/i-like-robots/chai-html)

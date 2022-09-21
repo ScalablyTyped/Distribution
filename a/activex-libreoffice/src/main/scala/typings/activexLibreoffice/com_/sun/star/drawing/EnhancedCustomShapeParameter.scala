@@ -10,11 +10,11 @@ trait EnhancedCustomShapeParameter extends StObject {
   var Type: Double
   
   /** the any can be of type long or double */
-  var Value: js.Any
+  var Value: Any
 }
 object EnhancedCustomShapeParameter {
   
-  inline def apply(Type: Double, Value: js.Any): EnhancedCustomShapeParameter = {
+  inline def apply(Type: Double, Value: Any): EnhancedCustomShapeParameter = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedCustomShapeParameter]
   }
@@ -23,6 +23,6 @@ object EnhancedCustomShapeParameter {
     
     inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

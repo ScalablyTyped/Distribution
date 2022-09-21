@@ -11,6 +11,8 @@ object stackframeMod {
     
     var abs_path: js.UndefOr[String] = js.undefined
     
+    var addr_mode: js.UndefOr[String] = js.undefined
+    
     var colno: js.UndefOr[Double] = js.undefined
     
     var context_line: js.UndefOr[String] = js.undefined
@@ -20,6 +22,8 @@ object stackframeMod {
     var function: js.UndefOr[String] = js.undefined
     
     var in_app: js.UndefOr[Boolean] = js.undefined
+    
+    var instruction_addr: js.UndefOr[String] = js.undefined
     
     var lineno: js.UndefOr[Double] = js.undefined
     
@@ -31,7 +35,7 @@ object stackframeMod {
     
     var pre_context: js.UndefOr[js.Array[String]] = js.undefined
     
-    var vars: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var vars: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object StackFrame {
     
@@ -45,6 +49,10 @@ object stackframeMod {
       inline def setAbs_path(value: String): Self = StObject.set(x, "abs_path", value.asInstanceOf[js.Any])
       
       inline def setAbs_pathUndefined: Self = StObject.set(x, "abs_path", js.undefined)
+      
+      inline def setAddr_mode(value: String): Self = StObject.set(x, "addr_mode", value.asInstanceOf[js.Any])
+      
+      inline def setAddr_modeUndefined: Self = StObject.set(x, "addr_mode", js.undefined)
       
       inline def setColno(value: Double): Self = StObject.set(x, "colno", value.asInstanceOf[js.Any])
       
@@ -66,6 +74,10 @@ object stackframeMod {
       
       inline def setIn_appUndefined: Self = StObject.set(x, "in_app", js.undefined)
       
+      inline def setInstruction_addr(value: String): Self = StObject.set(x, "instruction_addr", value.asInstanceOf[js.Any])
+      
+      inline def setInstruction_addrUndefined: Self = StObject.set(x, "instruction_addr", js.undefined)
+      
       inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
       
       inline def setLinenoUndefined: Self = StObject.set(x, "lineno", js.undefined)
@@ -82,15 +94,15 @@ object stackframeMod {
       
       inline def setPost_contextUndefined: Self = StObject.set(x, "post_context", js.undefined)
       
-      inline def setPost_contextVarargs(value: String*): Self = StObject.set(x, "post_context", js.Array(value :_*))
+      inline def setPost_contextVarargs(value: String*): Self = StObject.set(x, "post_context", js.Array(value*))
       
       inline def setPre_context(value: js.Array[String]): Self = StObject.set(x, "pre_context", value.asInstanceOf[js.Any])
       
       inline def setPre_contextUndefined: Self = StObject.set(x, "pre_context", js.undefined)
       
-      inline def setPre_contextVarargs(value: String*): Self = StObject.set(x, "pre_context", js.Array(value :_*))
+      inline def setPre_contextVarargs(value: String*): Self = StObject.set(x, "pre_context", js.Array(value*))
       
-      inline def setVars(value: StringDictionary[js.Any]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: StringDictionary[Any]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
       
       inline def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
     }

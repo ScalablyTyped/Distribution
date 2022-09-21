@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "TexturePackerFrame")
 @js.native
-class TexturePackerFrame protected ()
+open class TexturePackerFrame protected ()
   extends typings.babylonjs.texturesIndexMod.TexturePackerFrame {
   /**
     * Initializes a texture package frame.

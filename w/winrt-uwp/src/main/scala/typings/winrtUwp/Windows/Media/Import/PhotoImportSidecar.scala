@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Import
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhotoImportSidecar extends StObject {
   
   /** Gets the date of the sidecar or sibling file. */
-  var date: Date
+  var date: js.Date
   
   /** Gets the name of the sidecar or sibling file. */
   var name: String
@@ -19,14 +18,14 @@ trait PhotoImportSidecar extends StObject {
 }
 object PhotoImportSidecar {
   
-  inline def apply(date: Date, name: String, sizeInBytes: Double): PhotoImportSidecar = {
+  inline def apply(date: js.Date, name: String, sizeInBytes: Double): PhotoImportSidecar = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sizeInBytes = sizeInBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoImportSidecar]
   }
   
   extension [Self <: PhotoImportSidecar](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

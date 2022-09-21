@@ -22,7 +22,7 @@ object mod {
   // function getImages(images: any[] | null): any[];
   // function cleanBgImg(img: any): any;
   inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  inline def apply(images: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(images: Any): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("retinajs", JSImport.Namespace)
   @js.native

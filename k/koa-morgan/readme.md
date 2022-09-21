@@ -10,10 +10,10 @@ HTTP request logger middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-morgan |
 | Keywords           | logger, morgan |
-| # releases         | 0 |
-| # dependents       | 87 |
-| # downloads        | 1522125 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 365106.6666666667 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/koa-modules/morgan#readme)

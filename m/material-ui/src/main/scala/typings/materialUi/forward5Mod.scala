@@ -10,10 +10,10 @@ object forward5Mod {
   
   @JSImport("material-ui/svg-icons/av/forward-5", JSImport.Default)
   @js.native
-  class default () extends AvForward5
+  open class default () extends AvForward5
   
   @JSImport("material-ui/svg-icons/av/forward-5", "AvForward5")
   @js.native
-  class AvForward5 ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvForward5 ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

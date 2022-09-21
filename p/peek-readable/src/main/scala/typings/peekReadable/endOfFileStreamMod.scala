@@ -9,13 +9,15 @@ object endOfFileStreamMod {
   
   @JSImport("peek-readable/lib/EndOfFileStream", "EndOfStreamError")
   @js.native
-  class EndOfStreamError ()
+  open class EndOfStreamError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

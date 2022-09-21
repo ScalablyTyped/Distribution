@@ -1,6 +1,7 @@
 
 # Scala.js typings for estree
 
+Typings are for version 1.0
 
 
 

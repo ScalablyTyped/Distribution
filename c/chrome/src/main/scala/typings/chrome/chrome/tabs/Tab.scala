@@ -38,6 +38,12 @@ trait Tab extends StObject {
   var favIconUrl: js.UndefOr[String] = js.undefined
   
   /**
+    * The ID of the group that the tab belongs to.
+    * @since Chrome 88
+    */
+  var groupId: Double
+  
+  /**
     * Optional. The height of the tab in pixels.
     * @since Chrome 31.
     */
@@ -133,6 +139,7 @@ object Tab {
     active: Boolean,
     autoDiscardable: Boolean,
     discarded: Boolean,
+    groupId: Double,
     highlighted: Boolean,
     incognito: Boolean,
     index: Double,
@@ -140,7 +147,7 @@ object Tab {
     selected: Boolean,
     windowId: Double
   ): Tab = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], autoDiscardable = autoDiscardable.asInstanceOf[js.Any], discarded = discarded.asInstanceOf[js.Any], highlighted = highlighted.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], pinned = pinned.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], autoDiscardable = autoDiscardable.asInstanceOf[js.Any], discarded = discarded.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], highlighted = highlighted.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], pinned = pinned.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tab]
   }
   
@@ -159,6 +166,8 @@ object Tab {
     inline def setFavIconUrl(value: String): Self = StObject.set(x, "favIconUrl", value.asInstanceOf[js.Any])
     
     inline def setFavIconUrlUndefined: Self = StObject.set(x, "favIconUrl", js.undefined)
+    
+    inline def setGroupId(value: Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

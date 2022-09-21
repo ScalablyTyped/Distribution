@@ -9,9 +9,11 @@ trait ScreenSizeBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _varName: js.Any = js.native
+  /* private */ var _varName: Any = js.native
+  
+  def bind(effect: Effect): Unit = js.native
   
   /* protected */ def writeOutputs(state: NodeMaterialBuildState, varName: String): String = js.native
   

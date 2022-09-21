@@ -19,17 +19,17 @@ trait XAction
     * @returns result
     * @throws com::sun::star::uno::Exception any UNO exception may be thrown
     */
-  def run(): js.Any
+  def run(): Any
 }
 object XAction {
   
-  inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, run: () => js.Any): XAction = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit, run: () => Any): XAction = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), run = js.Any.fromFunction0(run))
     __obj.asInstanceOf[XAction]
   }
   
   extension [Self <: XAction](x: Self) {
     
-    inline def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
   }
 }

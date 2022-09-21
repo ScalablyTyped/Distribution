@@ -11,7 +11,7 @@ object pointLightShadowMod {
   
   @JSImport("three/src/lights/PointLightShadow", "PointLightShadow")
   @js.native
-  class PointLightShadow protected () extends LightShadow {
+  open class PointLightShadow protected () extends LightShadow {
     def this(camera: Camera) = this()
     
     @JSName("camera")

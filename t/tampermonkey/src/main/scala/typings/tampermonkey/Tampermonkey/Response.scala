@@ -18,7 +18,7 @@ object Response {
     context: TContext,
     finalUrl: String,
     readyState: ReadyState,
-    response: js.Any,
+    response: Any,
     responseHeaders: String,
     responseText: String,
     status: Double,

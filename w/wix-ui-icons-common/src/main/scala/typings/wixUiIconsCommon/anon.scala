@@ -26,7 +26,7 @@ object anon {
       
       inline def setFilteredIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "filteredIconsMetadata", value.asInstanceOf[js.Any])
       
-      inline def setFilteredIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "filteredIconsMetadata", js.Array(value :_*))
+      inline def setFilteredIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "filteredIconsMetadata", js.Array(value*))
     }
   }
 }

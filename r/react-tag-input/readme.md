@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tag-input
 
-Typings are for version 6.1
+Typings are for version 6.6
 
 ## Library description:
 React tags is a fantastically simple tagging component for your React projects
@@ -9,16 +9,16 @@ React tags is a fantastically simple tagging component for your React projects
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-tag-input |
-| Keywords           | react, drag-drop, tags, tag input, react-component, autosuggest |
-| # releases         | 14 |
-| # dependents       | 19 |
-| # downloads        | 1135849 |
-| # stars            | 9 |
+| Keywords           | react, drag-drop, tags, tag input, react-component, autosuggest, editable |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 105930.33333333333 |
+| # stars            | 1296.0 |
 
 ## Links
-- [Homepage](https://github.com/prakhar1989/react-tags#readme)
-- [Bugs](https://github.com/prakhar1989/react-tags/issues)
-- [Repository](https://github.com/prakhar1989/react-tags)
+- [Homepage](https://github.com/react-tags/react-tags#readme)
+- [Bugs](https://github.com/react-tags/react-tags/issues)
+- [Repository](https://github.com/react-tags/react-tags)
 - [Npm](https://www.npmjs.com/package/react-tag-input)
     
 

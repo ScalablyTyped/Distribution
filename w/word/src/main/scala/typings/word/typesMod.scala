@@ -25,7 +25,7 @@ object typesMod {
       
       inline def setP(value: js.Array[WJSPara]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      inline def setPVarargs(value: WJSPara*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: WJSPara*): Self = StObject.set(x, "p", js.Array(value*))
     }
   }
   
@@ -45,7 +45,7 @@ object typesMod {
       
       inline def setElts(value: js.Array[WJSParaElement]): Self = StObject.set(x, "elts", value.asInstanceOf[js.Any])
       
-      inline def setEltsVarargs(value: WJSParaElement*): Self = StObject.set(x, "elts", js.Array(value :_*))
+      inline def setEltsVarargs(value: WJSParaElement*): Self = StObject.set(x, "elts", js.Array(value*))
     }
   }
   
@@ -87,7 +87,7 @@ object typesMod {
       
       inline def setR(value: js.Array[WJSTableRow]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      inline def setRVarargs(value: WJSTableRow*): Self = StObject.set(x, "r", js.Array(value :_*))
+      inline def setRVarargs(value: WJSTableRow*): Self = StObject.set(x, "r", js.Array(value*))
       
       inline def setT(value: t): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
@@ -111,7 +111,7 @@ object typesMod {
       
       inline def setP(value: js.Array[WJSPara]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      inline def setPVarargs(value: WJSPara*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: WJSPara*): Self = StObject.set(x, "p", js.Array(value*))
       
       inline def setT(value: c): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
@@ -135,7 +135,7 @@ object typesMod {
       
       inline def setC(value: js.Array[WJSTableCell]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
-      inline def setCVarargs(value: WJSTableCell*): Self = StObject.set(x, "c", js.Array(value :_*))
+      inline def setCVarargs(value: WJSTableCell*): Self = StObject.set(x, "c", js.Array(value*))
       
       inline def setT(value: r): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }

@@ -1,6 +1,5 @@
 package typings.smartwizard
 
-import typings.jquery.JQueryAjaxSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +8,46 @@ object JQuerySmartwizard {
   
   trait AnchorSettings extends StObject {
     
+    /**
+      * Enable/Disable anchor navigation
+      *
+      * @default true
+      */
     var anchorClickable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Activates all anchors clickable all times
+      *
+      * @default false
+      */
     var enableAllAnchors: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Enable/Disable the done steps navigation
+      *
+      * @default true
+      */
     var enableAnchorOnDoneStep: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When a step selected by url hash, all previous steps are marked done
+      *
+      * @default true
+      */
     var markAllPreviousStepsAsDone: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Add done state on navigation
+      *
+      * @default true
+      */
     var markDoneStep: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * While navigate back done step after active step will be cleared
+      *
+      * @default false
+      */
     var removeDoneStepOnNavigateBack: js.UndefOr[Boolean] = js.undefined
   }
   object AnchorSettings {
@@ -56,20 +85,70 @@ object JQuerySmartwizard {
     }
   }
   
-  trait Lang extends StObject {
+  trait KeyboardSettings extends StObject {
+    
+    /**
+      * Left key code
+      *
+      * @default [37]
+      */
+    var keyLeft: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    /**
+      * Enable/Disable keyboard navigation(left and right keys are used if enabled)
+      *
+      * @default true
+      */
+    var keyNavigation: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Right key code
+      *
+      * @default [39]
+      */
+    var keyRight: js.UndefOr[js.Array[Double]] = js.undefined
+  }
+  object KeyboardSettings {
+    
+    inline def apply(): KeyboardSettings = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[KeyboardSettings]
+    }
+    
+    extension [Self <: KeyboardSettings](x: Self) {
+      
+      inline def setKeyLeft(value: js.Array[Double]): Self = StObject.set(x, "keyLeft", value.asInstanceOf[js.Any])
+      
+      inline def setKeyLeftUndefined: Self = StObject.set(x, "keyLeft", js.undefined)
+      
+      inline def setKeyLeftVarargs(value: Double*): Self = StObject.set(x, "keyLeft", js.Array(value*))
+      
+      inline def setKeyNavigation(value: Boolean): Self = StObject.set(x, "keyNavigation", value.asInstanceOf[js.Any])
+      
+      inline def setKeyNavigationUndefined: Self = StObject.set(x, "keyNavigation", js.undefined)
+      
+      inline def setKeyRight(value: js.Array[Double]): Self = StObject.set(x, "keyRight", value.asInstanceOf[js.Any])
+      
+      inline def setKeyRightUndefined: Self = StObject.set(x, "keyRight", js.undefined)
+      
+      inline def setKeyRightVarargs(value: Double*): Self = StObject.set(x, "keyRight", js.Array(value*))
+    }
+  }
+  
+  trait LangSettings extends StObject {
     
     var next: js.UndefOr[String] = js.undefined
     
     var previous: js.UndefOr[String] = js.undefined
   }
-  object Lang {
+  object LangSettings {
     
-    inline def apply(): Lang = {
+    inline def apply(): LangSettings = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Lang]
+      __obj.asInstanceOf[LangSettings]
     }
     
-    extension [Self <: Lang](x: Self) {
+    extension [Self <: LangSettings](x: Self) {
       
       inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -83,43 +162,95 @@ object JQuerySmartwizard {
   
   trait SmartWizardOptions extends StObject {
     
-    var ajaxSettings: js.UndefOr[JQueryAjaxSettings] = js.undefined
-    
     var anchorSettings: js.UndefOr[AnchorSettings] = js.undefined
     
+    /**
+      * Automatically adjust content height
+      *
+      * @default true
+      */
     var autoAdjustHeight: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Enable the back button support
+      *
+      * @default true
+      */
     var backButtonSupport: js.UndefOr[Boolean] = js.undefined
     
-    var contentCache: js.UndefOr[Boolean] = js.undefined
-    
-    var contentURL: js.UndefOr[Null | String] = js.undefined
-    
+    /**
+      * Allows to cycle the navigation of steps
+      *
+      * @default false
+      */
     var cycleSteps: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Enable/disable Dark Mode if the theme supports. true/false
+      *
+      * @default false
+      */
+    var darkMode: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Array Steps disabled
+      *
+      * @default []
+      */
     var disabledSteps: js.UndefOr[js.Array[Double]] = js.undefined
     
+    /**
+      * Enable selection of the step based on url hash
+      *
+      * @default true
+      */
+    var enableURLhash: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Highlight step with errors
+      *
+      * @default []
+      */
     var errorSteps: js.UndefOr[js.Array[Double]] = js.undefined
     
+    /**
+      * Hidden steps
+      *
+      * @default []
+      */
     var hiddenSteps: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var keyNavigation: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Nav menu justification. true/false
+      *
+      * @default true
+      */
+    var justified: js.UndefOr[Boolean] = js.undefined
     
-    var lang: js.UndefOr[Lang] = js.undefined
+    var keyboardSettings: js.UndefOr[KeyboardSettings] = js.undefined
     
+    /**
+      * Language variables for button
+      */
+    var lang: js.UndefOr[LangSettings] = js.undefined
+    
+    /**
+      * Initial selected step, 0 = first step
+      *
+      * @default 0
+      */
     var selected: js.UndefOr[Double] = js.undefined
     
-    var showStepURLhash: js.UndefOr[Boolean] = js.undefined
-    
+    /**
+      * theme for the wizard, related css need to include for other than default theme
+      *
+      * @default 'default'
+      */
     var theme: js.UndefOr[String] = js.undefined
     
     var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
     
-    var transitionEffect: js.UndefOr[TransitionEffect] = js.undefined
-    
-    var transitionSpeed: js.UndefOr[String | Double] = js.undefined
-    
-    var useURLhash: js.UndefOr[Boolean] = js.undefined
+    var transition: js.UndefOr[TransitionSettings] = js.undefined
   }
   object SmartWizardOptions {
     
@@ -129,10 +260,6 @@ object JQuerySmartwizard {
     }
     
     extension [Self <: SmartWizardOptions](x: Self) {
-      
-      inline def setAjaxSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
-      
-      inline def setAjaxSettingsUndefined: Self = StObject.set(x, "ajaxSettings", js.undefined)
       
       inline def setAnchorSettings(value: AnchorSettings): Self = StObject.set(x, "anchorSettings", value.asInstanceOf[js.Any])
       
@@ -146,53 +273,51 @@ object JQuerySmartwizard {
       
       inline def setBackButtonSupportUndefined: Self = StObject.set(x, "backButtonSupport", js.undefined)
       
-      inline def setContentCache(value: Boolean): Self = StObject.set(x, "contentCache", value.asInstanceOf[js.Any])
-      
-      inline def setContentCacheUndefined: Self = StObject.set(x, "contentCache", js.undefined)
-      
-      inline def setContentURL(value: String): Self = StObject.set(x, "contentURL", value.asInstanceOf[js.Any])
-      
-      inline def setContentURLNull: Self = StObject.set(x, "contentURL", null)
-      
-      inline def setContentURLUndefined: Self = StObject.set(x, "contentURL", js.undefined)
-      
       inline def setCycleSteps(value: Boolean): Self = StObject.set(x, "cycleSteps", value.asInstanceOf[js.Any])
       
       inline def setCycleStepsUndefined: Self = StObject.set(x, "cycleSteps", js.undefined)
+      
+      inline def setDarkMode(value: Boolean): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
+      
+      inline def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
       
       inline def setDisabledSteps(value: js.Array[Double]): Self = StObject.set(x, "disabledSteps", value.asInstanceOf[js.Any])
       
       inline def setDisabledStepsUndefined: Self = StObject.set(x, "disabledSteps", js.undefined)
       
-      inline def setDisabledStepsVarargs(value: Double*): Self = StObject.set(x, "disabledSteps", js.Array(value :_*))
+      inline def setDisabledStepsVarargs(value: Double*): Self = StObject.set(x, "disabledSteps", js.Array(value*))
+      
+      inline def setEnableURLhash(value: Boolean): Self = StObject.set(x, "enableURLhash", value.asInstanceOf[js.Any])
+      
+      inline def setEnableURLhashUndefined: Self = StObject.set(x, "enableURLhash", js.undefined)
       
       inline def setErrorSteps(value: js.Array[Double]): Self = StObject.set(x, "errorSteps", value.asInstanceOf[js.Any])
       
       inline def setErrorStepsUndefined: Self = StObject.set(x, "errorSteps", js.undefined)
       
-      inline def setErrorStepsVarargs(value: Double*): Self = StObject.set(x, "errorSteps", js.Array(value :_*))
+      inline def setErrorStepsVarargs(value: Double*): Self = StObject.set(x, "errorSteps", js.Array(value*))
       
       inline def setHiddenSteps(value: js.Array[Double]): Self = StObject.set(x, "hiddenSteps", value.asInstanceOf[js.Any])
       
       inline def setHiddenStepsUndefined: Self = StObject.set(x, "hiddenSteps", js.undefined)
       
-      inline def setHiddenStepsVarargs(value: Double*): Self = StObject.set(x, "hiddenSteps", js.Array(value :_*))
+      inline def setHiddenStepsVarargs(value: Double*): Self = StObject.set(x, "hiddenSteps", js.Array(value*))
       
-      inline def setKeyNavigation(value: Boolean): Self = StObject.set(x, "keyNavigation", value.asInstanceOf[js.Any])
+      inline def setJustified(value: Boolean): Self = StObject.set(x, "justified", value.asInstanceOf[js.Any])
       
-      inline def setKeyNavigationUndefined: Self = StObject.set(x, "keyNavigation", js.undefined)
+      inline def setJustifiedUndefined: Self = StObject.set(x, "justified", js.undefined)
       
-      inline def setLang(value: Lang): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setKeyboardSettings(value: KeyboardSettings): Self = StObject.set(x, "keyboardSettings", value.asInstanceOf[js.Any])
+      
+      inline def setKeyboardSettingsUndefined: Self = StObject.set(x, "keyboardSettings", js.undefined)
+      
+      inline def setLang(value: LangSettings): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
       inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
-      
-      inline def setShowStepURLhash(value: Boolean): Self = StObject.set(x, "showStepURLhash", value.asInstanceOf[js.Any])
-      
-      inline def setShowStepURLhashUndefined: Self = StObject.set(x, "showStepURLhash", js.undefined)
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -202,26 +327,21 @@ object JQuerySmartwizard {
       
       inline def setToolbarSettingsUndefined: Self = StObject.set(x, "toolbarSettings", js.undefined)
       
-      inline def setTransitionEffect(value: TransitionEffect): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
+      inline def setTransition(value: TransitionSettings): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      inline def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
-      
-      inline def setTransitionSpeed(value: String | Double): Self = StObject.set(x, "transitionSpeed", value.asInstanceOf[js.Any])
-      
-      inline def setTransitionSpeedUndefined: Self = StObject.set(x, "transitionSpeed", js.undefined)
-      
-      inline def setUseURLhash(value: Boolean): Self = StObject.set(x, "useURLhash", value.asInstanceOf[js.Any])
-      
-      inline def setUseURLhashUndefined: Self = StObject.set(x, "useURLhash", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
   
   /* Rewritten from type alias, can be one of: 
     - typings.smartwizard.smartwizardStrings.left
     - typings.smartwizard.smartwizardStrings.right
+    - typings.smartwizard.smartwizardStrings.center
   */
   trait ToolbarButtonPosition extends StObject
   object ToolbarButtonPosition {
+    
+    inline def center: typings.smartwizard.smartwizardStrings.center = "center".asInstanceOf[typings.smartwizard.smartwizardStrings.center]
     
     inline def left: typings.smartwizard.smartwizardStrings.left = "left".asInstanceOf[typings.smartwizard.smartwizardStrings.left]
     
@@ -248,14 +368,37 @@ object JQuerySmartwizard {
   
   trait ToolbarSettings extends StObject {
     
+    /**
+      * show/hide a Next button
+      *
+      * @default true
+      */
     var showNextButton: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * show/hide a Previous button
+      *
+      * @default true
+      */
     var showPreviousButton: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      *
+      * @default 'right'
+      */
     var toolbarButtonPosition: js.UndefOr[ToolbarButtonPosition] = js.undefined
     
+    /**
+      * Extra buttons to show on toolbar, array of jQuery input/buttons elements
+      *
+      * @default []
+      */
     var toolbarExtraButtons: js.UndefOr[js.Array[JQuery]] = js.undefined
     
+    /**
+      *
+      * @default 'bottom'
+      */
     var toolbarPosition: js.UndefOr[ToolbarPosition] = js.undefined
   }
   object ToolbarSettings {
@@ -283,7 +426,7 @@ object JQuerySmartwizard {
       
       inline def setToolbarExtraButtonsUndefined: Self = StObject.set(x, "toolbarExtraButtons", js.undefined)
       
-      inline def setToolbarExtraButtonsVarargs(value: JQuery*): Self = StObject.set(x, "toolbarExtraButtons", js.Array(value :_*))
+      inline def setToolbarExtraButtonsVarargs(value: JQuery*): Self = StObject.set(x, "toolbarExtraButtons", js.Array(value*))
       
       inline def setToolbarPosition(value: ToolbarPosition): Self = StObject.set(x, "toolbarPosition", value.asInstanceOf[js.Any])
       
@@ -293,16 +436,68 @@ object JQuerySmartwizard {
   
   /* Rewritten from type alias, can be one of: 
     - typings.smartwizard.smartwizardStrings.none
-    - typings.smartwizard.smartwizardStrings.slide
     - typings.smartwizard.smartwizardStrings.fade
+    - typings.smartwizard.smartwizardStrings.`slide-horizontal`
+    - typings.smartwizard.smartwizardStrings.`slide-vertical`
+    - typings.smartwizard.smartwizardStrings.`slide-swing`
   */
-  trait TransitionEffect extends StObject
-  object TransitionEffect {
+  trait TransitionAnimation extends StObject
+  object TransitionAnimation {
     
     inline def fade: typings.smartwizard.smartwizardStrings.fade = "fade".asInstanceOf[typings.smartwizard.smartwizardStrings.fade]
     
     inline def none: typings.smartwizard.smartwizardStrings.none = "none".asInstanceOf[typings.smartwizard.smartwizardStrings.none]
     
-    inline def slide: typings.smartwizard.smartwizardStrings.slide = "slide".asInstanceOf[typings.smartwizard.smartwizardStrings.slide]
+    inline def `slide-horizontal`: typings.smartwizard.smartwizardStrings.`slide-horizontal` = "slide-horizontal".asInstanceOf[typings.smartwizard.smartwizardStrings.`slide-horizontal`]
+    
+    inline def `slide-swing`: typings.smartwizard.smartwizardStrings.`slide-swing` = "slide-swing".asInstanceOf[typings.smartwizard.smartwizardStrings.`slide-swing`]
+    
+    inline def `slide-vertical`: typings.smartwizard.smartwizardStrings.`slide-vertical` = "slide-vertical".asInstanceOf[typings.smartwizard.smartwizardStrings.`slide-vertical`]
+  }
+  
+  trait TransitionSettings extends StObject {
+    
+    /**
+      * Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
+      *
+      * @default 'none'
+      */
+    var animation: js.UndefOr[TransitionAnimation] = js.undefined
+    
+    /**
+      * Transition animation easing. Not supported without a jQuery easing plugin
+      *
+      * @default ''
+      */
+    var easing: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Transion animation speed
+      *
+      * @default '400'
+      */
+    var speed: js.UndefOr[String] = js.undefined
+  }
+  object TransitionSettings {
+    
+    inline def apply(): TransitionSettings = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TransitionSettings]
+    }
+    
+    extension [Self <: TransitionSettings](x: Self) {
+      
+      inline def setAnimation(value: TransitionAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      
+      inline def setSpeed(value: String): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    }
   }
 }

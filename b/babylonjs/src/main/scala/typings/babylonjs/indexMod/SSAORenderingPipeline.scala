@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SSAORenderingPipeline")
 @js.native
-class SSAORenderingPipeline protected ()
+open class SSAORenderingPipeline protected ()
   extends typings.babylonjs.postProcessesIndexMod.SSAORenderingPipeline {
   /**
     * @constructor
@@ -15,11 +15,11 @@ class SSAORenderingPipeline protected ()
     * @param ratio - The size of the postprocesses. Can be a number shared between passes or an object for more precision: { ssaoRatio: 0.5, combineRatio: 1.0 }
     * @param cameras - The array of cameras that the rendering pipeline will be attached to
     */
-  def this(name: String, scene: typings.babylonjs.sceneMod.Scene, ratio: js.Any) = this()
+  def this(name: String, scene: typings.babylonjs.sceneMod.Scene, ratio: Any) = this()
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    ratio: js.Any,
+    ratio: Any,
     cameras: js.Array[typings.babylonjs.cameraMod.Camera]
   ) = this()
 }

@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("DataView")
 @js.native
-class DataView protected ()
+open class DataView protected ()
   extends StObject
      with typings.std.DataView {
+  /* standard es5 */
   def this(buffer: ArrayBufferLike) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, byteLength: Double) = this()

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON response template to list Domains in Directory API.
-  */
 trait SchemaDomains2 extends StObject {
   
   /**
@@ -17,12 +14,12 @@ trait SchemaDomains2 extends StObject {
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDomains2 {
   
@@ -37,13 +34,17 @@ object SchemaDomains2 {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    inline def setDomainsVarargs(value: SchemaDomains*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: SchemaDomains*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

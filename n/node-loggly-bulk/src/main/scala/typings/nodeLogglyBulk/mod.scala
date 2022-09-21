@@ -17,7 +17,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("node-loggly-bulk", "Loggly")
   @js.native
-  class Loggly protected ()
+  open class Loggly protected ()
     extends StObject
        with LogglyInstance {
     def this(options: LogglyBulkOptions) = this()
@@ -28,8 +28,8 @@ object mod {
   
   inline def createClient(options: LogglyBulkOptions): LogglyInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[LogglyInstance]
   
-  inline def serialize(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def serialize(obj: js.Any, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(obj: Any, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("node-loggly-bulk", "version")
   @js.native
@@ -50,7 +50,7 @@ object mod {
     
     var networkErrorsOnConsole: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.undefined
+    var proxy: js.UndefOr[Any] = js.undefined
     
     var useTagHeader: js.UndefOr[Boolean] = js.undefined
     
@@ -77,7 +77,7 @@ object mod {
       
       inline def setNetworkErrorsOnConsoleUndefined: Self = StObject.set(x, "networkErrorsOnConsole", js.undefined)
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       

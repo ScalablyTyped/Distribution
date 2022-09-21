@@ -22,7 +22,7 @@ object heatmapSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with HeatmapSlider {
     def this(properties: HeatmapSliderProperties) = this()

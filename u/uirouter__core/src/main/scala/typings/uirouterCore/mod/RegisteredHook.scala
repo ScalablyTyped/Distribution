@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "RegisteredHook")
 @js.native
-class RegisteredHook protected ()
+open class RegisteredHook protected ()
   extends typings.uirouterCore.transitionMod.RegisteredHook {
   def this(
     tranSvc: typings.uirouterCore.transitionServiceMod.TransitionService,

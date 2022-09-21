@@ -15,8 +15,6 @@ trait MaxPool3DAttrs extends StObject {
   
   var dataFormat: NDHWC | NCDHW
   
-  var dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double] = js.undefined
-  
   var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.undefined
   
   var filterSize: (js.Tuple3[Double, Double, Double]) | Double
@@ -40,10 +38,6 @@ object MaxPool3DAttrs {
   extension [Self <: MaxPool3DAttrs](x: Self) {
     
     inline def setDataFormat(value: NDHWC | NCDHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
-    
-    inline def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
-    
-    inline def setDilationsUndefined: Self = StObject.set(x, "dilations", js.undefined)
     
     inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     

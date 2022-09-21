@@ -29,7 +29,7 @@ object ListEndpointsByPlatformApplicationResponse {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: Endpoint_ *): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint_ *): Self = StObject.set(x, "Endpoints", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

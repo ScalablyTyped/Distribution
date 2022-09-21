@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Rect")
 @js.native
-class Rect () extends Shape {
+open class Rect () extends Shape {
   def this(options: RectOptions) = this()
   
   def copy(options: RectOptions): Rect = js.native

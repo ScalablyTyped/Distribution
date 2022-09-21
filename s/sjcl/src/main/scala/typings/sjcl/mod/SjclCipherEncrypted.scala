@@ -23,12 +23,12 @@ object SjclCipherEncrypted {
     
     inline def setCt(value: BitArray_): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
     
-    inline def setCtVarargs(value: Double*): Self = StObject.set(x, "ct", js.Array(value :_*))
+    inline def setCtVarargs(value: Double*): Self = StObject.set(x, "ct", js.Array(value*))
     
     inline def setKemtag(value: BitArray_): Self = StObject.set(x, "kemtag", value.asInstanceOf[js.Any])
     
     inline def setKemtagUndefined: Self = StObject.set(x, "kemtag", js.undefined)
     
-    inline def setKemtagVarargs(value: Double*): Self = StObject.set(x, "kemtag", js.Array(value :_*))
+    inline def setKemtagVarargs(value: Double*): Self = StObject.set(x, "kemtag", js.Array(value*))
   }
 }

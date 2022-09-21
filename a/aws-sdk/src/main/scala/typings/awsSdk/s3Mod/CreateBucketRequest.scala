@@ -37,7 +37,7 @@ trait CreateBucketRequest extends StObject {
   var GrantReadACP: js.UndefOr[typings.awsSdk.s3Mod.GrantReadACP] = js.undefined
   
   /**
-    * Allows grantee to create, overwrite, and delete any object in the bucket.
+    * Allows grantee to create new objects in the bucket. For the bucket and object owners of existing objects, also allows deletions and overwrites of those objects.
     */
   var GrantWrite: js.UndefOr[typings.awsSdk.s3Mod.GrantWrite] = js.undefined
   
@@ -50,6 +50,8 @@ trait CreateBucketRequest extends StObject {
     * Specifies whether you want S3 Object Lock to be enabled for the new bucket.
     */
   var ObjectLockEnabledForBucket: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockEnabledForBucket] = js.undefined
+  
+  var ObjectOwnership: js.UndefOr[typings.awsSdk.s3Mod.ObjectOwnership] = js.undefined
 }
 object CreateBucketRequest {
   
@@ -93,5 +95,9 @@ object CreateBucketRequest {
     inline def setObjectLockEnabledForBucket(value: ObjectLockEnabledForBucket): Self = StObject.set(x, "ObjectLockEnabledForBucket", value.asInstanceOf[js.Any])
     
     inline def setObjectLockEnabledForBucketUndefined: Self = StObject.set(x, "ObjectLockEnabledForBucket", js.undefined)
+    
+    inline def setObjectOwnership(value: ObjectOwnership): Self = StObject.set(x, "ObjectOwnership", value.asInstanceOf[js.Any])
+    
+    inline def setObjectOwnershipUndefined: Self = StObject.set(x, "ObjectOwnership", js.undefined)
   }
 }

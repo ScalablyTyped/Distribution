@@ -64,7 +64,7 @@ object LegendOptions {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
+    inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value*))
     
     inline def setInset(value: Anchor): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     

@@ -5,6 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ErrorHandler = typings.reactNativeFirebase.mod.RNFirebase.Handler[typings.reactNativeFirebase.mod.RNFirebase.RnError]
+type ErrorHandler = Handler[RnError]
 
-type Handler[T] = js.Function1[/* value */ T, scala.Unit]
+type Handler[T] = js.Function1[/* value */ T, Unit]

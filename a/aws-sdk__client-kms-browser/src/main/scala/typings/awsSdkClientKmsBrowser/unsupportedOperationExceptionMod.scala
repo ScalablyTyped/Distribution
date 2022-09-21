@@ -8,5 +8,5 @@ object unsupportedOperationExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/UnsupportedOperationException", "UnsupportedOperationException")
   @js.native
-  val UnsupportedOperationException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UnsupportedOperationException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -79,55 +79,55 @@ object mod {
       
       inline def setBlue(value: js.Array[String]): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      inline def setBlueVarargs(value: String*): Self = StObject.set(x, "blue", js.Array(value :_*))
+      inline def setBlueVarargs(value: String*): Self = StObject.set(x, "blue", js.Array(value*))
       
       inline def setCyan(value: js.Array[String]): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
       
-      inline def setCyanVarargs(value: String*): Self = StObject.set(x, "cyan", js.Array(value :_*))
+      inline def setCyanVarargs(value: String*): Self = StObject.set(x, "cyan", js.Array(value*))
       
       inline def setFuschia(value: js.Array[String]): Self = StObject.set(x, "fuschia", value.asInstanceOf[js.Any])
       
-      inline def setFuschiaVarargs(value: String*): Self = StObject.set(x, "fuschia", js.Array(value :_*))
+      inline def setFuschiaVarargs(value: String*): Self = StObject.set(x, "fuschia", js.Array(value*))
       
       inline def setGray(value: js.Array[String]): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
       
-      inline def setGrayVarargs(value: String*): Self = StObject.set(x, "gray", js.Array(value :_*))
+      inline def setGrayVarargs(value: String*): Self = StObject.set(x, "gray", js.Array(value*))
       
       inline def setGreen(value: js.Array[String]): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      inline def setGreenVarargs(value: String*): Self = StObject.set(x, "green", js.Array(value :_*))
+      inline def setGreenVarargs(value: String*): Self = StObject.set(x, "green", js.Array(value*))
       
       inline def setIndigo(value: js.Array[String]): Self = StObject.set(x, "indigo", value.asInstanceOf[js.Any])
       
-      inline def setIndigoVarargs(value: String*): Self = StObject.set(x, "indigo", js.Array(value :_*))
+      inline def setIndigoVarargs(value: String*): Self = StObject.set(x, "indigo", js.Array(value*))
       
       inline def setLime(value: js.Array[String]): Self = StObject.set(x, "lime", value.asInstanceOf[js.Any])
       
-      inline def setLimeVarargs(value: String*): Self = StObject.set(x, "lime", js.Array(value :_*))
+      inline def setLimeVarargs(value: String*): Self = StObject.set(x, "lime", js.Array(value*))
       
       inline def setOrange(value: js.Array[String]): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
       
-      inline def setOrangeVarargs(value: String*): Self = StObject.set(x, "orange", js.Array(value :_*))
+      inline def setOrangeVarargs(value: String*): Self = StObject.set(x, "orange", js.Array(value*))
       
       inline def setPink(value: js.Array[String]): Self = StObject.set(x, "pink", value.asInstanceOf[js.Any])
       
-      inline def setPinkVarargs(value: String*): Self = StObject.set(x, "pink", js.Array(value :_*))
+      inline def setPinkVarargs(value: String*): Self = StObject.set(x, "pink", js.Array(value*))
       
       inline def setRed(value: js.Array[String]): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
-      inline def setRedVarargs(value: String*): Self = StObject.set(x, "red", js.Array(value :_*))
+      inline def setRedVarargs(value: String*): Self = StObject.set(x, "red", js.Array(value*))
       
       inline def setTeal(value: js.Array[String]): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
       
-      inline def setTealVarargs(value: String*): Self = StObject.set(x, "teal", js.Array(value :_*))
+      inline def setTealVarargs(value: String*): Self = StObject.set(x, "teal", js.Array(value*))
       
       inline def setViolet(value: js.Array[String]): Self = StObject.set(x, "violet", value.asInstanceOf[js.Any])
       
-      inline def setVioletVarargs(value: String*): Self = StObject.set(x, "violet", js.Array(value :_*))
+      inline def setVioletVarargs(value: String*): Self = StObject.set(x, "violet", js.Array(value*))
       
       inline def setYellow(value: js.Array[String]): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
       
-      inline def setYellowVarargs(value: String*): Self = StObject.set(x, "yellow", js.Array(value :_*))
+      inline def setYellowVarargs(value: String*): Self = StObject.set(x, "yellow", js.Array(value*))
     }
   }
 }

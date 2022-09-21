@@ -1,5 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
+import typings.jsrsasign.anon.Tlv
 import typings.jsrsasign.jsrsasign.BigInteger
 import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("jsrsasign", "KJUR.asn1.DEREnumerated")
 @js.native
-class DEREnumerated ()
+open class DEREnumerated ()
   extends StObject
      with typings.jsrsasign.jsrsasign.KJUR.asn1.DEREnumerated {
   def this(params: Double) = this()
@@ -74,6 +75,10 @@ class DEREnumerated ()
   /** flag whether internal data was changed */
   /* CompleteClass */
   var isModified: String = js.native
+  
+  /** JSON object parameter for ASN.1 encode */
+  /* CompleteClass */
+  var params: Tlv | Null = js.native
   
   /**
     * set value by Tom Wu's BigInteger object

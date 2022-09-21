@@ -38,7 +38,7 @@ object anon {
       
       inline def setPointPoolUndefined: Self = StObject.set(x, "pointPool", js.undefined)
       
-      inline def setPointPoolVarargs(value: KeyPairPoint*): Self = StObject.set(x, "pointPool", js.Array(value :_*))
+      inline def setPointPoolVarargs(value: KeyPairPoint*): Self = StObject.set(x, "pointPool", js.Array(value*))
       
       inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       

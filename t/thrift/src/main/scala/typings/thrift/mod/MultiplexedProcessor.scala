@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "MultiplexedProcessor")
 @js.native
-class MultiplexedProcessor () extends StObject {
-  def this(stream: js.Any) = this()
-  def this(stream: js.Any, options: js.Any) = this()
-  def this(stream: Unit, options: js.Any) = this()
+open class MultiplexedProcessor () extends StObject {
+  def this(stream: Any) = this()
+  def this(stream: Any, options: Any) = this()
+  def this(stream: Unit, options: Any) = this()
   
   def process(input: TProtocol, output: TProtocol): Unit = js.native
 }

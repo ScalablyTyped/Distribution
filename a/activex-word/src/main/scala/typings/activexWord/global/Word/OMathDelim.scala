@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathDelim")
 @js.native
-/* private */ class OMathDelim ()
+/* private */ open class OMathDelim ()
   extends StObject
      with typings.activexWord.Word.OMathDelim {
   
@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var NoRightChar: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var SepChar: Double = js.native

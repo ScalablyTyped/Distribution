@@ -34,7 +34,7 @@ trait Object
     * Instance variables on this object. Supports both access and assignment.
     */
   @JSName("$ivars")
-  var $ivars: StringDictionary[js.Any] = js.native
+  var $ivars: StringDictionary[Any] = js.native
   
   /**
     * Whether this is an instance, class, or meta-class.

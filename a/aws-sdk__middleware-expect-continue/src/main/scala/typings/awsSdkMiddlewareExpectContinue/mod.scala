@@ -13,13 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addExpectContinueMiddleware(options: PreviouslyResolved): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addExpectContinueMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def addExpectContinueMiddleware(options: PreviouslyResolved): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addExpectContinueMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
   
   @JSImport("@aws-sdk/middleware-expect-continue", "addExpectContinueMiddlewareOptions")
   @js.native
   val addExpectContinueMiddlewareOptions: BuildHandlerOptions = js.native
   
-  inline def getAddExpectContinuePlugin(options: PreviouslyResolved): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddExpectContinuePlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getAddExpectContinuePlugin(options: PreviouslyResolved): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddExpectContinuePlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   
   trait PreviouslyResolved extends StObject {
     

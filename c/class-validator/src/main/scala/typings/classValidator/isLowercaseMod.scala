@@ -19,5 +19,5 @@ object isLowercaseMod {
   inline def IsLowercase_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLowercase")().asInstanceOf[PropertyDecorator]
   inline def IsLowercase_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLowercase")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isLowercase(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowercase")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLowercase(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowercase")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

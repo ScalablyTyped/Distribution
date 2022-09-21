@@ -8,7 +8,7 @@ trait SourceUnit
   extends StObject
      with AST {
   
-  /* private */ var _fileName: js.Any
+  /* private */ var _fileName: Any
   
   var endOfFileTokenLeadingComments: js.Array[Comment]
   
@@ -19,11 +19,11 @@ trait SourceUnit
 object SourceUnit {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _fileName: js.Any,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _fileName: Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     end: () => Double,
@@ -51,12 +51,12 @@ object SourceUnit {
     
     inline def setEndOfFileTokenLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "endOfFileTokenLeadingComments", value.asInstanceOf[js.Any])
     
-    inline def setEndOfFileTokenLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "endOfFileTokenLeadingComments", js.Array(value :_*))
+    inline def setEndOfFileTokenLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "endOfFileTokenLeadingComments", js.Array(value*))
     
     inline def setModuleElements(value: ISyntaxList2): Self = StObject.set(x, "moduleElements", value.asInstanceOf[js.Any])
     
     inline def setStructuralEquals(value: (SourceUnit, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
   }
 }

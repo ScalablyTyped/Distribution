@@ -111,7 +111,7 @@ object StartIndex {
     
     inline def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
     
-    inline def setProcessingStateVarargs(value: String*): Self = StObject.set(x, "processingState", js.Array(value :_*))
+    inline def setProcessingStateVarargs(value: String*): Self = StObject.set(x, "processingState", js.Array(value*))
     
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
@@ -137,6 +137,6 @@ object StartIndex {
     
     inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
     
-    inline def setVolumeIdVarargs(value: String*): Self = StObject.set(x, "volumeId", js.Array(value :_*))
+    inline def setVolumeIdVarargs(value: String*): Self = StObject.set(x, "volumeId", js.Array(value*))
   }
 }

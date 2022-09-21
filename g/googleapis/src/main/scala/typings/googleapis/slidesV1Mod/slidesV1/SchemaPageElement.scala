@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A visual element rendered on a page.
-  */
 trait SchemaPageElement extends StObject {
   
   /**
-    * The description of the page element. Combined with title to display alt
-    * text.
+    * The description of the page element. Combined with title to display alt text. The field is not supported for Group elements.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A collection of page elements joined as a single unit.
@@ -31,11 +27,9 @@ trait SchemaPageElement extends StObject {
   var line: js.UndefOr[SchemaLine] = js.undefined
   
   /**
-    * The object ID for this page element. Object IDs used by
-    * google.apps.slides.v1.Page and google.apps.slides.v1.PageElement share
-    * the same namespace.
+    * The object ID for this page element. Object IDs used by google.apps.slides.v1.Page and google.apps.slides.v1.PageElement share the same namespace.
     */
-  var objectId: js.UndefOr[String] = js.undefined
+  var objectId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A generic shape.
@@ -43,8 +37,7 @@ trait SchemaPageElement extends StObject {
   var shape: js.UndefOr[SchemaShape] = js.undefined
   
   /**
-    * A linked chart embedded from Google Sheets. Unlinked charts are
-    * represented as images.
+    * A linked chart embedded from Google Sheets. Unlinked charts are represented as images.
     */
   var sheetsChart: js.UndefOr[SchemaSheetsChart] = js.undefined
   
@@ -59,19 +52,12 @@ trait SchemaPageElement extends StObject {
   var table: js.UndefOr[SchemaTable] = js.undefined
   
   /**
-    * The title of the page element. Combined with description to display alt
-    * text.
+    * The title of the page element. Combined with description to display alt text. The field is not supported for Group elements.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The transform of the page element.  The visual appearance of the page
-    * element is determined by its absolute transform. To compute the absolute
-    * transform, preconcatenate a page element&#39;s transform with the
-    * transforms of all of its parent groups. If the page element is not in a
-    * group, its absolute transform is the same as the value in this field. The
-    * initial transform for the newly created Group is always the identity
-    * transform.
+    * The transform of the page element. The visual appearance of the page element is determined by its absolute transform. To compute the absolute transform, preconcatenate a page element's transform with the transforms of all of its parent groups. If the page element is not in a group, its absolute transform is the same as the value in this field. The initial transform for the newly created Group is always the identity transform.
     */
   var transform: js.UndefOr[SchemaAffineTransform] = js.undefined
   
@@ -96,6 +82,8 @@ object SchemaPageElement {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setElementGroup(value: SchemaGroup): Self = StObject.set(x, "elementGroup", value.asInstanceOf[js.Any])
@@ -111,6 +99,8 @@ object SchemaPageElement {
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    
+    inline def setObjectIdNull: Self = StObject.set(x, "objectId", null)
     
     inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
@@ -131,6 +121,8 @@ object SchemaPageElement {
     inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     

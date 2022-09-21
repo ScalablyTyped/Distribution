@@ -52,7 +52,7 @@ object transformRegressionMod {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value :_*))
+      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value*))
       
       inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
       
@@ -64,7 +64,7 @@ object transformRegressionMod {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setMethod(value: linear | exponential | logarithmic | power | polynomial): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

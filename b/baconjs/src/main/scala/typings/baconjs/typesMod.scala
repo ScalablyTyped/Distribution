@@ -11,7 +11,7 @@ object typesMod {
   
   @JSImport("baconjs/types/types", "nullSink")
   @js.native
-  val nullSink: Sink[js.Any] = js.native
+  val nullSink: Sink[Any] = js.native
   
   @JSImport("baconjs/types/types", "nullVoidSink")
   @js.native

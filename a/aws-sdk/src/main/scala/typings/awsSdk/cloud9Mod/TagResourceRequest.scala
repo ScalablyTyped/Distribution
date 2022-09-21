@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagResourceRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Cloud9 development environment to add tags to.
+    * The Amazon Resource Name (ARN) of the Cloud9 development environment to add tags to.
     */
   var ResourceARN: EnvironmentArn
   
   /**
-    * The list of tags to add to the given AWS Cloud9 development environment.
+    * The list of tags to add to the given Cloud9 development environment.
     */
   var Tags: TagList
 }
@@ -29,6 +29,6 @@ object TagResourceRequest {
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

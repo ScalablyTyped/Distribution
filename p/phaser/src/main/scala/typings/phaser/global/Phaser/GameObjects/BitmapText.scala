@@ -3,7 +3,6 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.BitmapFontData
-import typings.phaser.integer
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Phaser.GameObjects.BitmapText")
 @js.native
-class BitmapText protected ()
+open class BitmapText protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.BitmapText {
   /**
@@ -51,8 +50,8 @@ class BitmapText protected ()
   def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String], size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: integer) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Unit, align: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Unit, align: Double) = this()
   def this(
     scene: Scene,
     x: Double,
@@ -60,7 +59,7 @@ class BitmapText protected ()
     font: String,
     text: js.Array[String],
     size: Double,
-    align: integer
+    align: Double
   ) = this()
   def this(
     scene: Scene,
@@ -69,10 +68,10 @@ class BitmapText protected ()
     font: String,
     text: js.Array[String],
     size: Unit,
-    align: integer
+    align: Double
   ) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double, align: integer) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Unit, align: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double, align: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Unit, align: Double) = this()
   
   /**
     * The depth of this Game Object within the Scene.
@@ -101,7 +100,7 @@ class BitmapText protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the visibility of this Game Object.
@@ -132,8 +131,8 @@ object BitmapText {
   /* static member */
   @JSGlobal("Phaser.GameObjects.BitmapText.ALIGN_CENTER")
   @js.native
-  def ALIGN_CENTER: integer = js.native
-  inline def ALIGN_CENTER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_CENTER")(x.asInstanceOf[js.Any])
+  def ALIGN_CENTER: Double = js.native
+  inline def ALIGN_CENTER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_CENTER")(x.asInstanceOf[js.Any])
   
   /**
     * Left align the text characters in a multi-line BitmapText object.
@@ -141,8 +140,8 @@ object BitmapText {
   /* static member */
   @JSGlobal("Phaser.GameObjects.BitmapText.ALIGN_LEFT")
   @js.native
-  def ALIGN_LEFT: integer = js.native
-  inline def ALIGN_LEFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_LEFT")(x.asInstanceOf[js.Any])
+  def ALIGN_LEFT: Double = js.native
+  inline def ALIGN_LEFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_LEFT")(x.asInstanceOf[js.Any])
   
   /**
     * Right align the text characters in a multi-line BitmapText object.
@@ -150,8 +149,8 @@ object BitmapText {
   /* static member */
   @JSGlobal("Phaser.GameObjects.BitmapText.ALIGN_RIGHT")
   @js.native
-  def ALIGN_RIGHT: integer = js.native
-  inline def ALIGN_RIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_RIGHT")(x.asInstanceOf[js.Any])
+  def ALIGN_RIGHT: Double = js.native
+  inline def ALIGN_RIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_RIGHT")(x.asInstanceOf[js.Any])
   
   /**
     * Parse an XML Bitmap Font from an Atlas.
@@ -173,16 +172,7 @@ object BitmapText {
     textureKey: String,
     frameKey: String,
     xmlKey: String,
-    xSpacing: Unit,
-    ySpacing: integer
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def ParseFromAtlas(
-    scene: Scene,
-    fontName: String,
-    textureKey: String,
-    frameKey: String,
-    xmlKey: String,
-    xSpacing: integer
+    xSpacing: Double
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def ParseFromAtlas(
     scene: Scene,
@@ -190,24 +180,29 @@ object BitmapText {
     textureKey: String,
     frameKey: String,
     xmlKey: String,
-    xSpacing: integer,
-    ySpacing: integer
+    xSpacing: Double,
+    ySpacing: Double
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ParseFromAtlas(
+    scene: Scene,
+    fontName: String,
+    textureKey: String,
+    frameKey: String,
+    xmlKey: String,
+    xSpacing: Unit,
+    ySpacing: Double
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Parse an XML font to Bitmap Font data for the Bitmap Font cache.
     * @param xml The XML Document to parse the font from.
+    * @param frame The texture frame to take into account when creating the uv data.
     * @param xSpacing The x-axis spacing to add between each letter. Default 0.
     * @param ySpacing The y-axis spacing to add to the line height. Default 0.
-    * @param frame The texture frame to take into account while parsing.
     */
   /* static member */
-  inline def ParseXMLBitmapFont(xml: XMLDocument): BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any]).asInstanceOf[BitmapFontData]
-  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: Unit, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: integer, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: Unit, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
-  inline def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, frame: Frame, xSpacing: Double): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, frame: Frame, xSpacing: Double, ySpacing: Double): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  inline def ParseXMLBitmapFont(xml: XMLDocument, frame: Frame, xSpacing: Unit, ySpacing: Double): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
 }

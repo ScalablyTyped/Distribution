@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionExpression
   extends StObject
      with BaseFunction
-     with Expression
      with Function {
   
   @JSName("body")

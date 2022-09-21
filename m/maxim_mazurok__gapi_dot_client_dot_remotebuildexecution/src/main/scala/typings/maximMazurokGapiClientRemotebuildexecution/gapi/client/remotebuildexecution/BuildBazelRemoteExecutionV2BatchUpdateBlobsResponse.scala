@@ -22,6 +22,6 @@ object BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

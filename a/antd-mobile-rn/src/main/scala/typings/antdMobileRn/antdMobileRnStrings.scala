@@ -67,6 +67,22 @@ object antdMobileRnStrings {
   inline def between: between = "between".asInstanceOf[between]
   
   @js.native
+  sealed trait `birthdate-day` extends StObject
+  inline def `birthdate-day`: `birthdate-day` = "birthdate-day".asInstanceOf[`birthdate-day`]
+  
+  @js.native
+  sealed trait `birthdate-full` extends StObject
+  inline def `birthdate-full`: `birthdate-full` = "birthdate-full".asInstanceOf[`birthdate-full`]
+  
+  @js.native
+  sealed trait `birthdate-month` extends StObject
+  inline def `birthdate-month`: `birthdate-month` = "birthdate-month".asInstanceOf[`birthdate-month`]
+  
+  @js.native
+  sealed trait `birthdate-year` extends StObject
+  inline def `birthdate-year`: `birthdate-year` = "birthdate-year".asInstanceOf[`birthdate-year`]
+  
+  @js.native
   sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -89,6 +105,10 @@ object antdMobileRnStrings {
   @js.native
   sealed trait `cc-exp` extends StObject
   inline def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
+  
+  @js.native
+  sealed trait `cc-exp-day` extends StObject
+  inline def `cc-exp-day`: `cc-exp-day` = "cc-exp-day".asInstanceOf[`cc-exp-day`]
   
   @js.native
   sealed trait `cc-exp-month` extends StObject
@@ -179,6 +199,10 @@ object antdMobileRnStrings {
   inline def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
   
   @js.native
+  sealed trait gender extends StObject
+  inline def gender: gender = "gender".asInstanceOf[gender]
+  
+  @js.native
   sealed trait ghost extends StObject
   inline def ghost: ghost = "ghost".asInstanceOf[ghost]
   
@@ -251,6 +275,30 @@ object antdMobileRnStrings {
   inline def name: name = "name".asInstanceOf[name]
   
   @js.native
+  sealed trait `name-family` extends StObject
+  inline def `name-family`: `name-family` = "name-family".asInstanceOf[`name-family`]
+  
+  @js.native
+  sealed trait `name-given` extends StObject
+  inline def `name-given`: `name-given` = "name-given".asInstanceOf[`name-given`]
+  
+  @js.native
+  sealed trait `name-middle` extends StObject
+  inline def `name-middle`: `name-middle` = "name-middle".asInstanceOf[`name-middle`]
+  
+  @js.native
+  sealed trait `name-middle-initial` extends StObject
+  inline def `name-middle-initial`: `name-middle-initial` = "name-middle-initial".asInstanceOf[`name-middle-initial`]
+  
+  @js.native
+  sealed trait `name-prefix` extends StObject
+  inline def `name-prefix`: `name-prefix` = "name-prefix".asInstanceOf[`name-prefix`]
+  
+  @js.native
+  sealed trait `name-suffix` extends StObject
+  inline def `name-suffix`: `name-suffix` = "name-suffix".asInstanceOf[`name-suffix`]
+  
+  @js.native
   sealed trait namePrefix extends StObject
   inline def namePrefix: namePrefix = "namePrefix".asInstanceOf[namePrefix]
   
@@ -315,6 +363,10 @@ object antdMobileRnStrings {
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
+  sealed trait `password-new` extends StObject
+  inline def `password-new`: `password-new` = "password-new".asInstanceOf[`password-new`]
+  
+  @js.native
   sealed trait phone extends StObject
   inline def phone: phone = "phone".asInstanceOf[phone]
   
@@ -327,6 +379,30 @@ object antdMobileRnStrings {
   inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
+  sealed trait `postal-address` extends StObject
+  inline def `postal-address`: `postal-address` = "postal-address".asInstanceOf[`postal-address`]
+  
+  @js.native
+  sealed trait `postal-address-country` extends StObject
+  inline def `postal-address-country`: `postal-address-country` = "postal-address-country".asInstanceOf[`postal-address-country`]
+  
+  @js.native
+  sealed trait `postal-address-extended` extends StObject
+  inline def `postal-address-extended`: `postal-address-extended` = "postal-address-extended".asInstanceOf[`postal-address-extended`]
+  
+  @js.native
+  sealed trait `postal-address-extended-postal-code` extends StObject
+  inline def `postal-address-extended-postal-code`: `postal-address-extended-postal-code` = "postal-address-extended-postal-code".asInstanceOf[`postal-address-extended-postal-code`]
+  
+  @js.native
+  sealed trait `postal-address-locality` extends StObject
+  inline def `postal-address-locality`: `postal-address-locality` = "postal-address-locality".asInstanceOf[`postal-address-locality`]
+  
+  @js.native
+  sealed trait `postal-address-region` extends StObject
+  inline def `postal-address-region`: `postal-address-region` = "postal-address-region".asInstanceOf[`postal-address-region`]
+  
+  @js.native
   sealed trait `postal-code` extends StObject
   inline def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
   
@@ -337,14 +413,6 @@ object antdMobileRnStrings {
   @js.native
   sealed trait primary extends StObject
   inline def primary: primary = "primary".asInstanceOf[primary]
-  
-  @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  
-  @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
   sealed trait right extends StObject
@@ -379,6 +447,10 @@ object antdMobileRnStrings {
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
+  sealed trait `sms-otp` extends StObject
+  inline def `sms-otp`: `sms-otp` = "sms-otp".asInstanceOf[`sms-otp`]
+  
+  @js.native
   sealed trait start extends StObject
   inline def start: start = "start".asInstanceOf[start]
   
@@ -407,6 +479,18 @@ object antdMobileRnStrings {
   inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
+  sealed trait `tel-country-code` extends StObject
+  inline def `tel-country-code`: `tel-country-code` = "tel-country-code".asInstanceOf[`tel-country-code`]
+  
+  @js.native
+  sealed trait `tel-device` extends StObject
+  inline def `tel-device`: `tel-device` = "tel-device".asInstanceOf[`tel-device`]
+  
+  @js.native
+  sealed trait `tel-national` extends StObject
+  inline def `tel-national`: `tel-national` = "tel-national".asInstanceOf[`tel-national`]
+  
+  @js.native
   sealed trait telephoneNumber extends StObject
   inline def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   
@@ -433,6 +517,10 @@ object antdMobileRnStrings {
   @js.native
   sealed trait username extends StObject
   inline def username: username = "username".asInstanceOf[username]
+  
+  @js.native
+  sealed trait `username-new` extends StObject
+  inline def `username-new`: `username-new` = "username-new".asInstanceOf[`username-new`]
   
   @js.native
   sealed trait vertical extends StObject

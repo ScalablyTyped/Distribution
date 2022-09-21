@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-addons-perf
 
-Typings are for version 0.14
+Typings are for version 15.4
 
 ## Library description:
 This package provides the React Perf add-on.
@@ -11,14 +11,11 @@ This package provides the React Perf add-on.
 | Full name          | react-addons-perf |
 | Keywords           | react, react-addon |
 | # releases         | 0 |
-| # dependents       | 63 |
-| # downloads        | 2385479 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 65559.66666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/facebook/react#readme)
-- [Bugs](https://github.com/facebook/react/issues)
-- [Repository](https://github.com/facebook/react)
 - [Npm](https://www.npmjs.com/package/react-addons-perf)
     
 

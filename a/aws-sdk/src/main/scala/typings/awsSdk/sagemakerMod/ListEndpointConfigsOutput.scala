@@ -12,7 +12,7 @@ trait ListEndpointConfigsOutput extends StObject {
   var EndpointConfigs: EndpointConfigSummaryList
   
   /**
-    *  If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of endpoint configurations, use it in the subsequent request 
+    *  If the response is truncated, SageMaker returns this token. To retrieve the next set of endpoint configurations, use it in the subsequent request 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -27,7 +27,7 @@ object ListEndpointConfigsOutput {
     
     inline def setEndpointConfigs(value: EndpointConfigSummaryList): Self = StObject.set(x, "EndpointConfigs", value.asInstanceOf[js.Any])
     
-    inline def setEndpointConfigsVarargs(value: EndpointConfigSummary*): Self = StObject.set(x, "EndpointConfigs", js.Array(value :_*))
+    inline def setEndpointConfigsVarargs(value: EndpointConfigSummary*): Self = StObject.set(x, "EndpointConfigs", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

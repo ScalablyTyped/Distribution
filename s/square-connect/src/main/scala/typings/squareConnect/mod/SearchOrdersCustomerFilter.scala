@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchOrdersCustomerFilter")
 @js.native
-class SearchOrdersCustomerFilter () extends StObject {
+open class SearchOrdersCustomerFilter () extends StObject {
   
   /**
     * List of customer IDs to filter by. Max: 10 customer IDs.

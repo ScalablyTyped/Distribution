@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON._IAnimationState")
 @js.native
-class IAnimationState ()
+open class IAnimationState ()
   extends StObject
      with typings.babylonjs.BABYLON.IAnimationState {
   

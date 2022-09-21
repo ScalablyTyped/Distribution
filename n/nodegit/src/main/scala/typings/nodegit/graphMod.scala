@@ -10,7 +10,7 @@ object graphMod {
   
   @JSImport("nodegit/graph", "Graph")
   @js.native
-  class Graph () extends StObject
+  open class Graph () extends StObject
   /* static members */
   object Graph {
     

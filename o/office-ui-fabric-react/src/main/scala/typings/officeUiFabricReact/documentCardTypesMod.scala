@@ -96,6 +96,15 @@ object documentCardTypesMod {
     var onClick_IDocumentCardProps: js.UndefOr[js.Function1[/* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
     
     /**
+      * Aria role assigned to the documentCard (Eg. button, link).
+      * Use this to override the default assignment.
+      * @defaultvalue When `onClick` is provided, default role will be 'button'.
+      * When `onClickHref` is provided, default role will be 'link'.
+      */
+    @JSName("role")
+    var role_IDocumentCardProps: js.UndefOr[String] = js.undefined
+    
+    /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
     var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardStyleProps, IDocumentCardStyles]] = js.undefined
@@ -135,6 +144,10 @@ object documentCardTypesMod {
       inline def setOnClickTargetUndefined: Self = StObject.set(x, "onClickTarget", js.undefined)
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setStyles(value: IStyleFunctionOrObject[IDocumentCardStyleProps, IDocumentCardStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

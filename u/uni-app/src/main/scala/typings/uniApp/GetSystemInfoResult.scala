@@ -44,7 +44,7 @@ trait GetSystemInfoResult extends StObject {
   /**
     * 上一次缓存的位置信息
     */
-  var cacheLocation: js.UndefOr[js.Any] = js.undefined
+  var cacheLocation: js.UndefOr[Any] = js.undefined
   
   /**
     * 允许微信使用摄像头的开关
@@ -229,7 +229,7 @@ object GetSystemInfoResult {
     
     inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
-    inline def setCacheLocation(value: js.Any): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
+    inline def setCacheLocation(value: Any): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
     
     inline def setCacheLocationUndefined: Self = StObject.set(x, "cacheLocation", js.undefined)
     

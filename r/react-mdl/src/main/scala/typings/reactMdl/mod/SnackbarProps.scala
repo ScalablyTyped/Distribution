@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SnackbarProps
   extends StObject
-     with HTMLProps[js.Any] {
+     with HTMLProps[Any] {
   
   var active: Boolean
   
   var onActionClick: js.UndefOr[MouseEventHandler[Snackbar]] = js.undefined
   
-  def onTimeout(): js.Any
+  def onTimeout(): Any
   
   var timeout: js.UndefOr[Double] = js.undefined
 }
 object SnackbarProps {
   
-  inline def apply(active: Boolean, onTimeout: () => js.Any): SnackbarProps = {
+  inline def apply(active: Boolean, onTimeout: () => Any): SnackbarProps = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], onTimeout = js.Any.fromFunction0(onTimeout))
     __obj.asInstanceOf[SnackbarProps]
   }
@@ -35,7 +35,7 @@ object SnackbarProps {
     
     inline def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
     
-    inline def setOnTimeout(value: () => js.Any): Self = StObject.set(x, "onTimeout", js.Any.fromFunction0(value))
+    inline def setOnTimeout(value: () => Any): Self = StObject.set(x, "onTimeout", js.Any.fromFunction0(value))
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

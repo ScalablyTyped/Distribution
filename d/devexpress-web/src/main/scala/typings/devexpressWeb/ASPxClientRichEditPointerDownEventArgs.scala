@@ -19,11 +19,11 @@ trait ASPxClientRichEditPointerDownEventArgs
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object ASPxClientRichEditPointerDownEventArgs {
   
-  inline def apply(handled: Boolean, htmlEvent: js.Any): ASPxClientRichEditPointerDownEventArgs = {
+  inline def apply(handled: Boolean, htmlEvent: Any): ASPxClientRichEditPointerDownEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditPointerDownEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientRichEditPointerDownEventArgs {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

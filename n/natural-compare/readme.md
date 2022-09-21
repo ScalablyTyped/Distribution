@@ -10,10 +10,10 @@ Compare strings containing a mix of letters and numbers in the way a human being
 | ------------------ | :-------------: |
 | Full name          | natural-compare |
 | Keywords           | string, natural, order, sort, natsort, natcmp, compare, alphanum, litejs |
-| # releases         | 0 |
-| # dependents       | 113 |
-| # downloads        | 539618656 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.035507266666667E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/litejs/natural-compare-lite#readme)

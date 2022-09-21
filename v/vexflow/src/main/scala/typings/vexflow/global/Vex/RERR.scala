@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.RERR")
 @js.native
-class RERR protected ()
+open class RERR protected ()
   extends StObject
      with typings.vexflow.Vex.RERR {
   def this(code: String, message: String) = this()

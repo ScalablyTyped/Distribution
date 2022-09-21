@@ -8,9 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webix", "ui.daterange")
 @js.native
-class daterange ()
+open class daterange ()
   extends StObject
      with typings.webix.webix.ui.baseview {
+  
+  @JSName("$prepareValue")
+  def $prepareValue(args: Any*): Any = js.native
+  @JSName("$prepareValue")
+  var $prepareValue_Original: WebixCallback = js.native
   
   @JSName("$skin")
   var $skin_Original_daterange: WebixCallback = js.native
@@ -21,27 +26,27 @@ class daterange ()
   def attachEvent(`type`: daterangeEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: daterangeEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_daterange: daterangeConfig = js.native
   
   def detachEvent(id: String): Unit = js.native
   
-  def getValue(): js.Any = js.native
+  def getValue(): Any = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def setValue(range: js.Any): Unit = js.native
+  def setValue(range: Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

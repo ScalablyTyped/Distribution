@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "EmitOutput")
 @js.native
-class EmitOutput ()
+open class EmitOutput ()
   extends StObject
      with typings.typescriptServices.TypeScript.EmitOutput {
   def this(emitOutputResult: typings.typescriptServices.TypeScript.EmitOutputResult) = this()

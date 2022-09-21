@@ -13,18 +13,27 @@ object LocationGeofencingRegionState extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LocationGeofencingRegionState & Double] = js.native
   
+  /**
+    * Indicates that the device is inside the region.
+    */
   @js.native
   sealed trait Inside
     extends StObject
        with LocationGeofencingRegionState
   /* 1 */ val Inside: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Inside & Double = js.native
   
+  /**
+    * Inverse of inside state.
+    */
   @js.native
   sealed trait Outside
     extends StObject
        with LocationGeofencingRegionState
   /* 2 */ val Outside: typings.expoLocation.locationTypesMod.LocationGeofencingRegionState.Outside & Double = js.native
   
+  /**
+    * Indicates that the device position related to the region is unknown.
+    */
   @js.native
   sealed trait Unknown
     extends StObject

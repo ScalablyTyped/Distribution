@@ -5,7 +5,6 @@ import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.NetworkError
 import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,9 @@ object basemanagerMod {
        with IManager {
     def this(options: IOptions) = this()
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /**
       * A signal emitted when there is a connection failure.
@@ -32,7 +31,7 @@ object basemanagerMod {
       * A signal emitted when there is a connection failure.
       */
     @JSName("connectionFailure")
-    var connectionFailure_BaseManager: ISignal[this.type, Error] = js.native
+    var connectionFailure_BaseManager: ISignal[this.type, js.Error] = js.native
     
     /**
       * Dispose of the resources held by the object.

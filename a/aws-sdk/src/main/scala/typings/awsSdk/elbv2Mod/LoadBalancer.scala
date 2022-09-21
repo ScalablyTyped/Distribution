@@ -19,7 +19,7 @@ trait LoadBalancer extends StObject {
   /**
     * The date and time the load balancer was created.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.elbv2Mod.CreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * [Application Load Balancers on Outposts] The ID of the customer-owned address pool.
@@ -84,13 +84,13 @@ object LoadBalancer {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setCanonicalHostedZoneId(value: CanonicalHostedZoneId): Self = StObject.set(x, "CanonicalHostedZoneId", value.asInstanceOf[js.Any])
     
     inline def setCanonicalHostedZoneIdUndefined: Self = StObject.set(x, "CanonicalHostedZoneId", js.undefined)
     
-    inline def setCreatedTime(value: CreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -122,7 +122,7 @@ object LoadBalancer {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setState(value: LoadBalancerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

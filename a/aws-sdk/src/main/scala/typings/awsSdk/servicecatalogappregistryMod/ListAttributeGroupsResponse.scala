@@ -29,7 +29,7 @@ object ListAttributeGroupsResponse {
     
     inline def setAttributeGroupsUndefined: Self = StObject.set(x, "attributeGroups", js.undefined)
     
-    inline def setAttributeGroupsVarargs(value: AttributeGroupSummary*): Self = StObject.set(x, "attributeGroups", js.Array(value :_*))
+    inline def setAttributeGroupsVarargs(value: AttributeGroupSummary*): Self = StObject.set(x, "attributeGroups", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

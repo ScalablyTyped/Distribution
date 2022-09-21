@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoiceConnectorGroup extends StObject {
   
   /**
-    * The Amazon Chime Voice Connector group creation timestamp, in ISO 8601 format.
+    * The Amazon Chime Voice Connector group creation time stamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the Amazon Chime Voice Connector group.
@@ -17,9 +17,14 @@ trait VoiceConnectorGroup extends StObject {
   var Name: js.UndefOr[VoiceConnectorGroupName] = js.undefined
   
   /**
-    * The updated Amazon Chime Voice Connector group timestamp, in ISO 8601 format.
+    * The updated Amazon Chime Voice Connector group time stamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var UpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The ARN of the specified Amazon Chime Voice Connector group.
+    */
+  var VoiceConnectorGroupArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Amazon Chime Voice Connector group ID.
@@ -40,7 +45,7 @@ object VoiceConnectorGroup {
   
   extension [Self <: VoiceConnectorGroup](x: Self) {
     
-    inline def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -48,9 +53,13 @@ object VoiceConnectorGroup {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
+    
+    inline def setVoiceConnectorGroupArn(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorGroupArn", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceConnectorGroupArnUndefined: Self = StObject.set(x, "VoiceConnectorGroupArn", js.undefined)
     
     inline def setVoiceConnectorGroupId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorGroupId", value.asInstanceOf[js.Any])
     
@@ -60,6 +69,6 @@ object VoiceConnectorGroup {
     
     inline def setVoiceConnectorItemsUndefined: Self = StObject.set(x, "VoiceConnectorItems", js.undefined)
     
-    inline def setVoiceConnectorItemsVarargs(value: VoiceConnectorItem*): Self = StObject.set(x, "VoiceConnectorItems", js.Array(value :_*))
+    inline def setVoiceConnectorItemsVarargs(value: VoiceConnectorItem*): Self = StObject.set(x, "VoiceConnectorItems", js.Array(value*))
   }
 }

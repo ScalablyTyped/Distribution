@@ -6,47 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Find the closest `package.json` file.
-  	@returns The filepath, or `null` if it couldn't be found.
-  	@example
-  	```
-  	// /
-  	// └── Users
-  	//     └── sindresorhus
-  	//         └── foo
-  	//             ├── package.json
-  	//             └── bar
-  	//                 ├── baz
-  	//                 └── example.js
-  	// example.js
-  	import pkgUp = require('pkg-up');
-  	(async () => {
-  		console.log(await pkgUp());
-  		//=> '/Users/sindresorhus/foo/package.json'
-  	})();
-  	```
-  	*/
-  inline def apply(): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String | Null]]
-  inline def apply(options: Options): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
-  
   @JSImport("pkg-up", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Synchronously find the closest `package.json` file.
-  	@returns The filepath, or `null` if it couldn't be found.
-  	*/
-  inline def sync(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String | Null]
-  inline def sync(options: Options): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def pkgUp(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pkgUp")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def pkgUp(options: Options): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pkgUp")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  
+  inline def pkgUpSync(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("pkgUpSync")().asInstanceOf[js.UndefOr[String]]
+  inline def pkgUpSync(options: Options): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("pkgUpSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   trait Options extends StObject {
     
     /**
-    		Directory to start from.
-    		@default process.cwd()
-    		*/
+    	The directory to start from.
+    	@default process.cwd()
+    	*/
     val cwd: js.UndefOr[String] = js.undefined
   }
   object Options {

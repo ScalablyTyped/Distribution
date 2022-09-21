@@ -39,7 +39,7 @@ object Policy {
     
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    inline def setBindingsVarargs(value: Condition*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: Condition*): Self = StObject.set(x, "bindings", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

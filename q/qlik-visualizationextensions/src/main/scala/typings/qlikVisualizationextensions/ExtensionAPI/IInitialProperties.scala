@@ -11,10 +11,10 @@ trait IInitialProperties extends StObject {
   
   var percent: js.UndefOr[Boolean] = js.undefined
   
-  var qHyperCubeDef: js.UndefOr[js.Any] = js.undefined
+  var qHyperCubeDef: js.UndefOr[Any] = js.undefined
   
   // IHyperCubeDef;
-  var qListObjectDef: js.UndefOr[js.Any] = js.undefined
+  var qListObjectDef: js.UndefOr[Any] = js.undefined
   
   var selectionMode: js.UndefOr[SelectionModeType] = js.undefined
   
@@ -37,11 +37,11 @@ object IInitialProperties {
     
     inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
-    inline def setQHyperCubeDef(value: js.Any): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
+    inline def setQHyperCubeDef(value: Any): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
     
     inline def setQHyperCubeDefUndefined: Self = StObject.set(x, "qHyperCubeDef", js.undefined)
     
-    inline def setQListObjectDef(value: js.Any): Self = StObject.set(x, "qListObjectDef", value.asInstanceOf[js.Any])
+    inline def setQListObjectDef(value: Any): Self = StObject.set(x, "qListObjectDef", value.asInstanceOf[js.Any])
     
     inline def setQListObjectDefUndefined: Self = StObject.set(x, "qListObjectDef", js.undefined)
     

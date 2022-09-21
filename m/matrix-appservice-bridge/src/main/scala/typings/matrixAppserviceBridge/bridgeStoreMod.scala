@@ -10,8 +10,8 @@ object bridgeStoreMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/bridge-store", "BridgeStore")
   @js.native
-  class BridgeStore protected () extends StObject {
-    def this(db: ^[js.Any]) = this()
+  open class BridgeStore protected () extends StObject {
+    def this(db: ^[Any]) = this()
     
     /**
       * Convenience method to convert a document to something.
@@ -22,17 +22,17 @@ object bridgeStoreMod {
       */
     def convertTo[T, O](func: js.Function1[/* input */ T, O]): js.Function1[/* doc */ T, O] = js.native
     
-    val db: ^[js.Any] = js.native
+    val db: ^[Any] = js.native
     
-    /* private */ var dbFind: js.Any = js.native
+    /* private */ var dbFind: Any = js.native
     
-    /* private */ var dbFindOne: js.Any = js.native
+    /* private */ var dbFindOne: Any = js.native
     
-    /* private */ var dbInsert: js.Any = js.native
+    /* private */ var dbInsert: Any = js.native
     
-    /* private */ var dbRemove: js.Any = js.native
+    /* private */ var dbRemove: Any = js.native
     
-    /* private */ var dbUpdate: js.Any = js.native
+    /* private */ var dbUpdate: Any = js.native
     
     /**
       * DELETE multiple documents.
@@ -42,12 +42,12 @@ object bridgeStoreMod {
     /**
       * INSERT a multiple documents.
       */
-    def insert(objects: js.Any): js.Promise[js.Array[js.Any]] = js.native
+    def insert(objects: Any): js.Promise[js.Array[Any]] = js.native
     
     /**
       * INSERT IF NOT EXISTS a single document
       */
-    def insertIfNotExists(query: Query, insertObj: Record[String, js.Any]): js.Promise[Unit] = js.native
+    def insertIfNotExists(query: Query, insertObj: Record[String, Any]): js.Promise[Unit] = js.native
     
     /**
       * SELECT a number of documents.
@@ -77,13 +77,13 @@ object bridgeStoreMod {
       * UPDATE a single document. If the document already exists, this will NOT update
       * it.
       */
-    def update(query: Query, updateVals: Record[String, js.Any]): js.Promise[Double] = js.native
+    def update(query: Query, updateVals: Record[String, Any]): js.Promise[Unit] = js.native
     
     /**
       * UPSERT a single document
       */
-    def upsert[T](query: Query, updateVals: T): js.Promise[Double] = js.native
+    def upsert[T](query: Query, updateVals: T): js.Promise[Unit] = js.native
   }
   
-  type Query = Record[String, js.Any]
+  type Query = Record[String, Any]
 }

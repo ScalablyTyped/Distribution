@@ -2,14 +2,17 @@ package typings.firebaseFirestore
 
 import typings.std.Document
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/browser/dom", JSImport.Namespace)
-@js.native
-object domMod extends js.Object {
-  def getDocument(): Document | Null = js.native
-  def getWindow(): Window | Null = js.native
+object domMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/platform/browser/dom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getDocument(): Document | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")().asInstanceOf[Document | Null]
+  
+  inline def getWindow(): Window | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")().asInstanceOf[Window | Null]
 }
-

@@ -9,14 +9,23 @@ trait StreamLayerViewProperties
      with LayerViewProperties {
   
   /**
-    * The effect applied to the layer view.
+    * The effect applied to the layerView.
+    *
+    * @deprecated since version 4.22. Use [featureEffect](#featureEffect) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#effect)
     */
   var effect: js.UndefOr[FeatureEffectProperties] = js.undefined
   
   /**
-    * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#timeExtent) filter.
+    * The featureEffect can be used to draw attention features of interest.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#featureEffect)
+    */
+  var featureEffect: js.UndefOr[FeatureEffectProperties] = js.undefined
+  
+  /**
+    * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#timeExtent) filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#filter)
     */
@@ -34,6 +43,10 @@ object StreamLayerViewProperties {
     inline def setEffect(value: FeatureEffectProperties): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+    
+    inline def setFeatureEffect(value: FeatureEffectProperties): Self = StObject.set(x, "featureEffect", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureEffectUndefined: Self = StObject.set(x, "featureEffect", js.undefined)
     
     inline def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

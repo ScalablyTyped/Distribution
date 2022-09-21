@@ -15,7 +15,7 @@ object helpersMod {
   
   type Intersection[T /* <: js.Object */, U /* <: js.Object */] = Pick[T, Extract[/* keyof T */ String, /* keyof U */ String]]
   
-  type KnownKeys[T] = js.Any
+  type KnownKeys[T] = Any
   
   type OptionalKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? {} extends std.Pick<T, K>? K : never}[keyof T] */ js.Any
   

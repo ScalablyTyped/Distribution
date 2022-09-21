@@ -1,7 +1,7 @@
 package typings.googleapis.anon
 
-import typings.googleapis.gamesV1Mod.gamesV1.Games
-import typings.googleapis.gamesV1Mod.gamesV1.Options
+import typings.googleapis.customsearchV1Mod.customsearchV1.Customsearch
+import typings.googleapis.customsearchV1Mod.customsearchV1.Options
 import typings.googleapis.googleapisStrings.v1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn74 extends StObject {
   
-  def apply(options: Options): Games = js.native
-  def apply(version: v1): Games = js.native
+  def apply(options: Options): Customsearch = js.native
+  def apply(version: v1): Customsearch = js.native
 }

@@ -90,7 +90,7 @@ object devtools {
     
     /* devtools.network functions */
     /** Returns HAR log that contains all known network requests. */
-    inline def getHAR(): js.Promise[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHAR")().asInstanceOf[js.Promise[StringDictionary[js.Any]]]
+    inline def getHAR(): js.Promise[StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHAR")().asInstanceOf[js.Promise[StringDictionary[Any]]]
     
     /**
       * Fired when the inspected window navigates to a new page.

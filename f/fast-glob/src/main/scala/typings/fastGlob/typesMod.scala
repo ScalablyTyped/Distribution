@@ -3,7 +3,6 @@ package typings.fastGlob
 import typings.nodelibFsWalk.settingsMod.Options
 import typings.nodelibFsWalk.typesMod.Errno
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object typesMod {
   
   type EntryTransformerFunction = js.Function1[/* entry */ Entry, EntryItem]
   
-  type ErrnoException = typings.node.NodeJS.ErrnoException
+  type ErrnoException = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
   
   type ErrorFilterFunction = typings.nodelibFsWalk.settingsMod.ErrorFilterFunction
   
@@ -89,7 +88,7 @@ object typesMod {
   
   type Pattern = String
   
-  type PatternRe = RegExp
+  type PatternRe = js.RegExp
   
   type PatternsGroup = Record[String, js.Array[Pattern]]
   

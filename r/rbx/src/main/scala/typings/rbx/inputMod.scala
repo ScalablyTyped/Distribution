@@ -86,7 +86,7 @@ object inputMod {
   
   @JSImport("rbx/elements/form/input", "Input")
   @js.native
-  val Input: ForwardRefAsExoticComponent[InputProps, ElementType[js.Any]] = js.native
+  val Input: ForwardRefAsExoticComponent[InputProps, ElementType[Any]] = js.native
   
   trait InputModifierProps extends StObject {
     

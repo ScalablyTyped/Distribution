@@ -9,7 +9,7 @@ trait AsyncTypeaheadProps[T /* <: TypeaheadModel */]
   extends StObject
      with TypeaheadProps[T] {
   
-  /*     Delay, in milliseconds, before performing search. */
+  /* Delay, in milliseconds, before performing search. */
   var delay: js.UndefOr[Double] = js.undefined
   
   /* Whether or not a request is currently pending. Necessary for the component to know when new results are available. */

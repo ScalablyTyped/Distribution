@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "PointToPointConstraint")
 @js.native
-class PointToPointConstraint protected ()
+open class PointToPointConstraint protected ()
   extends StObject
      with typings.cannon.CANNON.Constraint {
   def this(
@@ -39,7 +39,7 @@ class PointToPointConstraint protected ()
   override def enable(): Unit = js.native
   
   /* CompleteClass */
-  var equations: js.Array[js.Any] = js.native
+  var equations: js.Array[Any] = js.native
   
   /* CompleteClass */
   var id: Double = js.native

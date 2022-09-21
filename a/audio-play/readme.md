@@ -1,7 +1,7 @@
 
 # Scala.js typings for audio-play
 
-Typings are for version 2.2
+Typings are for version 2.3
 
 ## Library description:
 Play audio buffer in node or browser
@@ -10,15 +10,12 @@ Play audio buffer in node or browser
 | ------------------ | :-------------: |
 | Full name          | audio-play |
 | Keywords           | player, audio, audiojs, web-audio-api, sound |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 22340 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 798.6666666666666 |
+| # stars            | 60.0 |
 
 ## Links
-- [Homepage](https://github.com/audiojs/audio-play#readme)
-- [Bugs](https://github.com/audiojs/audio-play/issues)
-- [Repository](https://github.com/audiojs/audio-play)
 - [Npm](https://www.npmjs.com/package/audio-play)
     
 

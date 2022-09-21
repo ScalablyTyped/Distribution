@@ -13,5 +13,5 @@ trait AbstractRestService
      with IConfigurable
 object AbstractRestService {
   
-  type Options = js.Any
+  type Options = Any
 }

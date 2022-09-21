@@ -18,16 +18,21 @@ trait OnsPullHookElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @description A boolean value that specifies whether the element is disabled or not.
     */
   var disabled: Boolean = js.native
+  
+  /**
+    * @description If this property is set the content of the page will not move when pulling.
+    */
+  var fixedContent: Boolean = js.native
   
   /**
     * @description The height of the pull hook in pixels. The default value is `64px`.

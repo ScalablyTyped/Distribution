@@ -2,14 +2,15 @@ package typings.reactSvg
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.ReactType
+import typings.react.mod.SVGProps
 import typings.reactSvg.reactSvgStrings.div
 import typings.reactSvg.reactSvgStrings.span
-import typings.std.Error
+import typings.reactSvg.reactSvgStrings.svg
 import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
-import typings.std.SVGElement
+import typings.std.SVGSVGElement
 import typings.tanemSvgInjector.typesMod.BeforeEach
 import typings.tanemSvgInjector.typesMod.Errback
 import typings.tanemSvgInjector.typesMod.EvalScripts
@@ -21,7 +22,7 @@ object typesMod {
   
   trait BaseProps
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var afterInjection: js.UndefOr[Errback] = js.undefined
     
@@ -29,9 +30,11 @@ object typesMod {
     
     var evalScripts: js.UndefOr[EvalScripts] = js.undefined
     
-    var fallback: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var fallback: js.UndefOr[ElementType[Any]] = js.undefined
     
-    var loading: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var httpRequestWithCredentials: js.UndefOr[Boolean] = js.undefined
+    
+    var loading: js.UndefOr[ElementType[Any]] = js.undefined
     
     var renumerateIRIElements: js.UndefOr[Boolean] = js.undefined
     
@@ -39,7 +42,7 @@ object typesMod {
     
     var useRequestCache: js.UndefOr[Boolean] = js.undefined
     
-    var wrapper: js.UndefOr[div | span] = js.undefined
+    var wrapper: js.UndefOr[div | span | svg] = js.undefined
   }
   object BaseProps {
     
@@ -50,11 +53,11 @@ object typesMod {
     
     extension [Self <: BaseProps](x: Self) {
       
-      inline def setAfterInjection(value: (/* error */ Error | Null, /* svg */ js.UndefOr[SVGElement]) => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction2(value))
+      inline def setAfterInjection(value: (/* error */ js.Error | Null, /* svg */ js.UndefOr[SVGSVGElement]) => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction2(value))
       
       inline def setAfterInjectionUndefined: Self = StObject.set(x, "afterInjection", js.undefined)
       
-      inline def setBeforeInjection(value: /* svg */ SVGElement => Unit): Self = StObject.set(x, "beforeInjection", js.Any.fromFunction1(value))
+      inline def setBeforeInjection(value: /* svg */ SVGSVGElement => Unit): Self = StObject.set(x, "beforeInjection", js.Any.fromFunction1(value))
       
       inline def setBeforeInjectionUndefined: Self = StObject.set(x, "beforeInjection", js.undefined)
       
@@ -62,11 +65,15 @@ object typesMod {
       
       inline def setEvalScriptsUndefined: Self = StObject.set(x, "evalScripts", js.undefined)
       
-      inline def setFallback(value: ReactType[js.Any]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: ElementType[Any]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      inline def setLoading(value: ReactType[js.Any]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setHttpRequestWithCredentials(value: Boolean): Self = StObject.set(x, "httpRequestWithCredentials", value.asInstanceOf[js.Any])
+      
+      inline def setHttpRequestWithCredentialsUndefined: Self = StObject.set(x, "httpRequestWithCredentials", js.undefined)
+      
+      inline def setLoading(value: ElementType[Any]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
@@ -80,13 +87,17 @@ object typesMod {
       
       inline def setUseRequestCacheUndefined: Self = StObject.set(x, "useRequestCache", js.undefined)
       
-      inline def setWrapper(value: div | span): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: div | span | svg): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
       inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
   
-  type Props = BaseProps & (DetailedHTMLProps[HTMLAttributes[WrapperType], WrapperType])
+  type HTMLWrapperType = HTMLSpanElement | HTMLDivElement
+  
+  type Props = BaseProps & (DetailedHTMLProps[HTMLAttributes[HTMLWrapperType], HTMLWrapperType]) & SVGProps[SVGWrapperType]
+  
+  type SVGWrapperType = SVGSVGElement
   
   trait State extends StObject {
     
@@ -109,5 +120,5 @@ object typesMod {
     }
   }
   
-  type WrapperType = HTMLSpanElement | HTMLDivElement
+  type WrapperType = HTMLWrapperType | SVGWrapperType
 }

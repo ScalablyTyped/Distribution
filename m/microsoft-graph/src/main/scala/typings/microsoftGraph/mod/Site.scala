@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.mod.TermStore.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,9 @@ trait Site
   
   var error: js.UndefOr[NullableOption[PublicError]] = js.undefined
   
-  // Used to address any item contained in this site. This collection cannot be enumerated.
+  var externalColumns: js.UndefOr[NullableOption[js.Array[ColumnDefinition]]] = js.undefined
+  
+  // Used to address any item contained in this site. This collection can't be enumerated.
   var items: js.UndefOr[NullableOption[js.Array[BaseItem]]] = js.undefined
   
   // The collection of lists under this site.
@@ -36,6 +39,12 @@ trait Site
   
   // Calls the OneNote service for notebook related operations.
   var onenote: js.UndefOr[NullableOption[Onenote]] = js.undefined
+  
+  // The collection of long-running operations on the site.
+  var operations: js.UndefOr[NullableOption[js.Array[RichLongRunningOperation]]] = js.undefined
+  
+  // The permissions associated with the site. Nullable.
+  var permissions: js.UndefOr[NullableOption[js.Array[Permission]]] = js.undefined
   
   // If present, indicates that this is the root site in the site collection. Read-only.
   var root: js.UndefOr[NullableOption[Root]] = js.undefined
@@ -48,6 +57,12 @@ trait Site
   
   // The collection of the sub-sites under this site.
   var sites: js.UndefOr[NullableOption[js.Array[Site]]] = js.undefined
+  
+  // The default termStore under this site.
+  var termStore: js.UndefOr[NullableOption[Store]] = js.undefined
+  
+  // The collection of termStores under this site.
+  var termStores: js.UndefOr[NullableOption[js.Array[Store]]] = js.undefined
 }
 object Site {
   
@@ -70,7 +85,7 @@ object Site {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: ColumnDefinition*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ColumnDefinition*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setContentTypes(value: NullableOption[js.Array[ContentType]]): Self = StObject.set(x, "contentTypes", value.asInstanceOf[js.Any])
     
@@ -78,7 +93,7 @@ object Site {
     
     inline def setContentTypesUndefined: Self = StObject.set(x, "contentTypes", js.undefined)
     
-    inline def setContentTypesVarargs(value: ContentType*): Self = StObject.set(x, "contentTypes", js.Array(value :_*))
+    inline def setContentTypesVarargs(value: ContentType*): Self = StObject.set(x, "contentTypes", js.Array(value*))
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -98,7 +113,7 @@ object Site {
     
     inline def setDrivesUndefined: Self = StObject.set(x, "drives", js.undefined)
     
-    inline def setDrivesVarargs(value: Drive*): Self = StObject.set(x, "drives", js.Array(value :_*))
+    inline def setDrivesVarargs(value: Drive*): Self = StObject.set(x, "drives", js.Array(value*))
     
     inline def setError(value: NullableOption[PublicError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
@@ -106,13 +121,21 @@ object Site {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
+    inline def setExternalColumns(value: NullableOption[js.Array[ColumnDefinition]]): Self = StObject.set(x, "externalColumns", value.asInstanceOf[js.Any])
+    
+    inline def setExternalColumnsNull: Self = StObject.set(x, "externalColumns", null)
+    
+    inline def setExternalColumnsUndefined: Self = StObject.set(x, "externalColumns", js.undefined)
+    
+    inline def setExternalColumnsVarargs(value: ColumnDefinition*): Self = StObject.set(x, "externalColumns", js.Array(value*))
+    
     inline def setItems(value: NullableOption[js.Array[BaseItem]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsNull: Self = StObject.set(x, "items", null)
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: BaseItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: BaseItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLists(value: NullableOption[js.Array[List]]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
@@ -120,13 +143,29 @@ object Site {
     
     inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
-    inline def setListsVarargs(value: List*): Self = StObject.set(x, "lists", js.Array(value :_*))
+    inline def setListsVarargs(value: List*): Self = StObject.set(x, "lists", js.Array(value*))
     
     inline def setOnenote(value: NullableOption[Onenote]): Self = StObject.set(x, "onenote", value.asInstanceOf[js.Any])
     
     inline def setOnenoteNull: Self = StObject.set(x, "onenote", null)
     
     inline def setOnenoteUndefined: Self = StObject.set(x, "onenote", js.undefined)
+    
+    inline def setOperations(value: NullableOption[js.Array[RichLongRunningOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    
+    inline def setOperationsNull: Self = StObject.set(x, "operations", null)
+    
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    
+    inline def setOperationsVarargs(value: RichLongRunningOperation*): Self = StObject.set(x, "operations", js.Array(value*))
+    
+    inline def setPermissions(value: NullableOption[js.Array[Permission]]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionsNull: Self = StObject.set(x, "permissions", null)
+    
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    
+    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setRoot(value: NullableOption[Root]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
@@ -152,6 +191,20 @@ object Site {
     
     inline def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
     
-    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value*))
+    
+    inline def setTermStore(value: NullableOption[Store]): Self = StObject.set(x, "termStore", value.asInstanceOf[js.Any])
+    
+    inline def setTermStoreNull: Self = StObject.set(x, "termStore", null)
+    
+    inline def setTermStoreUndefined: Self = StObject.set(x, "termStore", js.undefined)
+    
+    inline def setTermStores(value: NullableOption[js.Array[Store]]): Self = StObject.set(x, "termStores", value.asInstanceOf[js.Any])
+    
+    inline def setTermStoresNull: Self = StObject.set(x, "termStores", null)
+    
+    inline def setTermStoresUndefined: Self = StObject.set(x, "termStores", js.undefined)
+    
+    inline def setTermStoresVarargs(value: Store*): Self = StObject.set(x, "termStores", js.Array(value*))
   }
 }

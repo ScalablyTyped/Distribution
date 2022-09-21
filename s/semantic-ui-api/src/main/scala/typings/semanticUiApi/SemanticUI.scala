@@ -10,76 +10,6 @@ import typings.semanticUiApi.SemanticUI.Api.ErrorSettings
 import typings.semanticUiApi.SemanticUI.Api.MetadataSettings
 import typings.semanticUiApi.SemanticUI.Api.RegExpSettings
 import typings.semanticUiApi.SemanticUI.Api.SelectorSettings
-import typings.semanticUiApi.anon.PartialPickImplkeyofImpl
-import typings.semanticUiApi.anon.PartialPickImplkeyofImplAction
-import typings.semanticUiApi.anon.PartialPickImplkeyofImplBeforeSend
-import typings.semanticUiApi.anon.PartialPickImplkeyofImplDisabled
-import typings.semanticUiApi.anon.PartialPickImplkeyofImplError
-import typings.semanticUiApi.anon.PartialPickImplkeyofImplOptional
-import typings.semanticUiApi.anon.PickImplJSONParse
-import typings.semanticUiApi.anon.PickImplaction
-import typings.semanticUiApi.anon.PickImplactionAction
-import typings.semanticUiApi.anon.PickImplapi
-import typings.semanticUiApi.anon.PickImplbeforeSend
-import typings.semanticUiApi.anon.PickImplbeforeSendBeforeSend
-import typings.semanticUiApi.anon.PickImplbeforeXHR
-import typings.semanticUiApi.anon.PickImplcache
-import typings.semanticUiApi.anon.PickImplclassName
-import typings.semanticUiApi.anon.PickImpldata
-import typings.semanticUiApi.anon.PickImpldataType
-import typings.semanticUiApi.anon.PickImpldebug
-import typings.semanticUiApi.anon.PickImpldefaultData
-import typings.semanticUiApi.anon.PickImpldisabled
-import typings.semanticUiApi.anon.PickImplencodeParameters
-import typings.semanticUiApi.anon.PickImplerror
-import typings.semanticUiApi.anon.PickImplerrorDuration
-import typings.semanticUiApi.anon.PickImplerrorError
-import typings.semanticUiApi.anon.PickImplexitConditions
-import typings.semanticUiApi.anon.PickImplform
-import typings.semanticUiApi.anon.PickImplhideError
-import typings.semanticUiApi.anon.PickImplinterruptRequests
-import typings.semanticUiApi.anon.PickImpllegacyParameters
-import typings.semanticUiApi.anon.PickImplloading
-import typings.semanticUiApi.anon.PickImplloadingDuration
-import typings.semanticUiApi.anon.PickImplmetadata
-import typings.semanticUiApi.anon.PickImplmethod
-import typings.semanticUiApi.anon.PickImplmissingAction
-import typings.semanticUiApi.anon.PickImplmissingSerialize
-import typings.semanticUiApi.anon.PickImplmissingURL
-import typings.semanticUiApi.anon.PickImplmockResponse
-import typings.semanticUiApi.anon.PickImplmockResponseAsync
-import typings.semanticUiApi.anon.PickImplname
-import typings.semanticUiApi.anon.PickImplnamespace
-import typings.semanticUiApi.anon.PickImplnoReturnedValue
-import typings.semanticUiApi.anon.PickImplon
-import typings.semanticUiApi.anon.PickImplonAbort
-import typings.semanticUiApi.anon.PickImplonComplete
-import typings.semanticUiApi.anon.PickImplonError
-import typings.semanticUiApi.anon.PickImplonFailure
-import typings.semanticUiApi.anon.PickImplonRequest
-import typings.semanticUiApi.anon.PickImplonResponse
-import typings.semanticUiApi.anon.PickImplonSuccess
-import typings.semanticUiApi.anon.PickImploptional
-import typings.semanticUiApi.anon.PickImplparseError
-import typings.semanticUiApi.anon.PickImplperformance
-import typings.semanticUiApi.anon.PickImplregExp
-import typings.semanticUiApi.anon.PickImplrequired
-import typings.semanticUiApi.anon.PickImplrequiredParameter
-import typings.semanticUiApi.anon.PickImplresponse
-import typings.semanticUiApi.anon.PickImplresponseAsync
-import typings.semanticUiApi.anon.PickImplselector
-import typings.semanticUiApi.anon.PickImplserializeForm
-import typings.semanticUiApi.anon.PickImplsilent
-import typings.semanticUiApi.anon.PickImplstateContext
-import typings.semanticUiApi.anon.PickImplstatusMessage
-import typings.semanticUiApi.anon.PickImplsuccessTest
-import typings.semanticUiApi.anon.PickImplthrottle
-import typings.semanticUiApi.anon.PickImplthrottleFirstRequ
-import typings.semanticUiApi.anon.PickImpltimeout
-import typings.semanticUiApi.anon.PickImplurl
-import typings.semanticUiApi.anon.PickImplurlData
-import typings.semanticUiApi.anon.PickImplurlUrl
-import typings.semanticUiApi.anon.PickImplverbose
 import typings.semanticUiApi.semanticUiApiBooleans.`false`
 import typings.semanticUiApi.semanticUiApiBooleans.`true`
 import typings.semanticUiApi.semanticUiApiStrings.`add url data`
@@ -101,70 +31,25 @@ import typings.semanticUiApi.semanticUiApiStrings.`was failure`
 import typings.semanticUiApi.semanticUiApiStrings.`was successful`
 import typings.semanticUiApi.semanticUiApiStrings.`write cached response`
 import typings.semanticUiApi.semanticUiApiStrings.abort
-import typings.semanticUiApi.semanticUiApiStrings.action
-import typings.semanticUiApi.semanticUiApiStrings.api
 import typings.semanticUiApi.semanticUiApiStrings.auto
-import typings.semanticUiApi.semanticUiApiStrings.beforeSend
-import typings.semanticUiApi.semanticUiApiStrings.beforeXHR
-import typings.semanticUiApi.semanticUiApiStrings.cache
-import typings.semanticUiApi.semanticUiApiStrings.className
-import typings.semanticUiApi.semanticUiApiStrings.data
-import typings.semanticUiApi.semanticUiApiStrings.dataType
-import typings.semanticUiApi.semanticUiApiStrings.debug
-import typings.semanticUiApi.semanticUiApiStrings.defaultData
 import typings.semanticUiApi.semanticUiApiStrings.delete
 import typings.semanticUiApi.semanticUiApiStrings.destroy
-import typings.semanticUiApi.semanticUiApiStrings.encodeParameters
-import typings.semanticUiApi.semanticUiApiStrings.error
-import typings.semanticUiApi.semanticUiApiStrings.errorDuration
 import typings.semanticUiApi.semanticUiApiStrings.get
 import typings.semanticUiApi.semanticUiApiStrings.head
-import typings.semanticUiApi.semanticUiApiStrings.hideError
 import typings.semanticUiApi.semanticUiApiStrings.html
-import typings.semanticUiApi.semanticUiApiStrings.interruptRequests
 import typings.semanticUiApi.semanticUiApiStrings.json
 import typings.semanticUiApi.semanticUiApiStrings.jsonp
-import typings.semanticUiApi.semanticUiApiStrings.loadingDuration
 import typings.semanticUiApi.semanticUiApiStrings.local
-import typings.semanticUiApi.semanticUiApiStrings.metadata
-import typings.semanticUiApi.semanticUiApiStrings.method
-import typings.semanticUiApi.semanticUiApiStrings.mockResponse
-import typings.semanticUiApi.semanticUiApiStrings.mockResponseAsync
-import typings.semanticUiApi.semanticUiApiStrings.name
-import typings.semanticUiApi.semanticUiApiStrings.namespace
-import typings.semanticUiApi.semanticUiApiStrings.on
-import typings.semanticUiApi.semanticUiApiStrings.onAbort
-import typings.semanticUiApi.semanticUiApiStrings.onComplete
-import typings.semanticUiApi.semanticUiApiStrings.onError
-import typings.semanticUiApi.semanticUiApiStrings.onFailure
-import typings.semanticUiApi.semanticUiApiStrings.onRequest
-import typings.semanticUiApi.semanticUiApiStrings.onResponse
-import typings.semanticUiApi.semanticUiApiStrings.onSuccess
 import typings.semanticUiApi.semanticUiApiStrings.options
 import typings.semanticUiApi.semanticUiApiStrings.patch
-import typings.semanticUiApi.semanticUiApiStrings.performance
 import typings.semanticUiApi.semanticUiApiStrings.post
 import typings.semanticUiApi.semanticUiApiStrings.put
 import typings.semanticUiApi.semanticUiApiStrings.query
-import typings.semanticUiApi.semanticUiApiStrings.regExp
 import typings.semanticUiApi.semanticUiApiStrings.reset
-import typings.semanticUiApi.semanticUiApiStrings.response
-import typings.semanticUiApi.semanticUiApiStrings.responseAsync
 import typings.semanticUiApi.semanticUiApiStrings.script
-import typings.semanticUiApi.semanticUiApiStrings.selector
-import typings.semanticUiApi.semanticUiApiStrings.serializeForm
 import typings.semanticUiApi.semanticUiApiStrings.setting
-import typings.semanticUiApi.semanticUiApiStrings.silent
-import typings.semanticUiApi.semanticUiApiStrings.stateContext
-import typings.semanticUiApi.semanticUiApiStrings.successTest
 import typings.semanticUiApi.semanticUiApiStrings.text
-import typings.semanticUiApi.semanticUiApiStrings.throttle
-import typings.semanticUiApi.semanticUiApiStrings.throttleFirstRequest
-import typings.semanticUiApi.semanticUiApiStrings.url
-import typings.semanticUiApi.semanticUiApiStrings.urlData
-import typings.semanticUiApi.semanticUiApiStrings.verbose
 import typings.semanticUiApi.semanticUiApiStrings.xml
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -178,7 +63,7 @@ object SemanticUI {
     /**
       * Adds data to existing templated url and returns full url string
       */
-    def apply(behavior: `add url data`, url: String, data: js.Any): String = js.native
+    def apply(behavior: `add url data`, url: String, data: Any): String = js.native
     /**
       * Creates new cache, removing all locally cached URLs
       */
@@ -190,11 +75,11 @@ object SemanticUI {
     /**
       * Gets promise for current API request
       */
-    def apply(behavior: `get request`): JQueryDeferred[js.Any] | `false` = js.native
+    def apply(behavior: `get request`): JQueryDeferred[Any] | `false` = js.native
     /**
       * Returns encodeURIComponent value only if value passed is not already encoded
       */
-    def apply(behavior: `get url encoded value`, value: js.Any): String = js.native
+    def apply(behavior: `get url encoded value`, value: Any): String = js.native
     /**
       * Returns whether element is disabled
       */
@@ -210,7 +95,7 @@ object SemanticUI {
     /**
       * Reads a locally cached response for a URL
       */
-    def apply(behavior: `read cached response`, url: String): js.Any = js.native
+    def apply(behavior: `read cached response`, url: String): Any = js.native
     /**
       * Removes error state to element
       */
@@ -246,7 +131,7 @@ object SemanticUI {
     /**
       * Writes a cached response for a URL
       */
-    def apply(behavior: `write cached response`, url: String, response: js.Any): JQuery = js.native
+    def apply(behavior: `write cached response`, url: String, response: Any): JQuery = js.native
     /**
       * Aborts current API request
       */
@@ -263,170 +148,14 @@ object SemanticUI {
       * Removes loading and error state from element
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: action, value: String): JQuery = js.native
-    def apply(behavior: setting, name: action, value: Unit): String | `false` = js.native
-    def apply(behavior: setting, name: action, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: api, value: StringDictionary[String]): JQuery = js.native
-    def apply(behavior: setting, name: api, value: Unit): StringDictionary[String] = js.native
-    def apply(behavior: setting, name: beforeSend, value: js.Function1[/* settings */ ApiSettings, js.Any]): JQuery = js.native
-    def apply(behavior: setting, name: beforeSend, value: Unit): js.Function1[/* settings */ ApiSettings, js.Any] = js.native
-    def apply(behavior: setting, name: beforeXHR, value: js.Function1[/* xhrObject */ jqXHR[js.Any], js.Any]): JQuery = js.native
-    def apply(behavior: setting, name: beforeXHR, value: Unit): js.Function1[/* xhrObject */ jqXHR[js.Any], js.Any] = js.native
-    def apply(behavior: setting, name: cache, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: cache, value: Unit): local | Boolean = js.native
-    def apply(behavior: setting, name: cache, value: local): JQuery = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: dataType, value: Unit): xml | json | jsonp | script | html | text = js.native
-    def apply(behavior: setting, name: dataType, value: html): JQuery = js.native
-    def apply(behavior: setting, name: dataType, value: json): JQuery = js.native
-    def apply(behavior: setting, name: dataType, value: jsonp): JQuery = js.native
-    def apply(behavior: setting, name: dataType, value: script): JQuery = js.native
-    def apply(behavior: setting, name: dataType, value: text): JQuery = js.native
-    def apply(behavior: setting, name: dataType, value: xml): JQuery = js.native
-    def apply(
-      behavior: setting,
-      name: data,
-      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any
-    ): JQuery = js.native
-    def apply(behavior: setting, name: data, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: defaultData, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: defaultData, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: encodeParameters, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: encodeParameters, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: errorDuration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: errorDuration, value: Unit): `true` | Double = js.native
-    def apply(behavior: setting, name: errorDuration, value: `true`): JQuery = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: hideError, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: hideError, value: Unit): auto | Boolean = js.native
-    def apply(behavior: setting, name: hideError, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: interruptRequests, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: interruptRequests, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: loadingDuration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: loadingDuration, value: Unit): Double = js.native
-    def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
-    def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-    def apply(behavior: setting, name: method, value: Unit): post | get | put | delete | head | options | patch = js.native
-    def apply(behavior: setting, name: method, value: delete): JQuery = js.native
-    def apply(behavior: setting, name: method, value: get): JQuery = js.native
-    def apply(behavior: setting, name: method, value: head): JQuery = js.native
-    def apply(behavior: setting, name: method, value: options): JQuery = js.native
-    def apply(behavior: setting, name: method, value: patch): JQuery = js.native
-    def apply(behavior: setting, name: method, value: post): JQuery = js.native
-    def apply(behavior: setting, name: method, value: put): JQuery = js.native
-    def apply(
-      behavior: setting,
-      name: mockResponseAsync,
-      value: js.Function2[
-          /* settings */ ApiSettings, 
-          /* callback */ js.Function1[/* response */ js.Any, Unit], 
-          Unit
-        ]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: mockResponseAsync, value: Unit): (js.Function2[
-        /* settings */ ApiSettings, 
-        /* callback */ js.Function1[/* response */ js.Any, Unit], 
-        Unit
-      ]) | `false` = js.native
-    def apply(behavior: setting, name: mockResponseAsync, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: mockResponse, value: js.Any): JQuery = js.native
-    def apply(behavior: setting, name: mockResponse, value: Unit): js.Any | `false` = js.native
-    def apply(behavior: setting, name: mockResponse, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(
-      behavior: setting,
-      name: onAbort,
-      value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onAbort, value: Unit): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onComplete,
-      value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onComplete, value: Unit): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onError,
-      value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onError, value: Unit): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onFailure,
-      value: js.Function2[/* response */ js.Any, /* element */ JQuery, Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onFailure, value: Unit): js.Function2[/* response */ js.Any, /* element */ JQuery, Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onRequest,
-      value: js.Function2[/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any], Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onRequest, value: Unit): js.Function2[/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any], Unit] = js.native
-    def apply(behavior: setting, name: onResponse, value: js.Function1[/* response */ js.Any, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onResponse, value: Unit): js.Function1[/* response */ js.Any, Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onSuccess,
-      value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onSuccess, value: Unit): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any], Unit] = js.native
-    def apply(behavior: setting, name: on, value: String): JQuery = js.native
-    def apply(behavior: setting, name: on, value: Unit): String = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: regExp, value: Unit): RegExpSettings = js.native
-    def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-    def apply(
-      behavior: setting,
-      name: responseAsync,
-      value: js.Function2[
-          /* settings */ ApiSettings, 
-          /* callback */ js.Function1[/* response */ js.Any, Unit], 
-          Unit
-        ]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: responseAsync, value: Unit): (js.Function2[
-        /* settings */ ApiSettings, 
-        /* callback */ js.Function1[/* response */ js.Any, Unit], 
-        Unit
-      ]) | `false` = js.native
-    def apply(behavior: setting, name: responseAsync, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: response, value: js.Any): JQuery = js.native
-    def apply(behavior: setting, name: response, value: Unit): js.Any | `false` = js.native
-    def apply(behavior: setting, name: response, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
-    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: serializeForm, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: serializeForm, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: stateContext, value: String): JQuery = js.native
-    def apply(behavior: setting, name: stateContext, value: Unit): String | JQuery = js.native
-    def apply(behavior: setting, name: stateContext, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: successTest, value: js.Function1[/* response */ js.Any, Boolean]): JQuery = js.native
-    def apply(behavior: setting, name: successTest, value: Unit): js.Function1[/* response */ js.Any, Boolean] = js.native
-    def apply(behavior: setting, name: throttleFirstRequest, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: throttleFirstRequest, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: throttle, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: throttle, value: Unit): Double = js.native
-    def apply(behavior: setting, name: urlData, value: js.Any): JQuery = js.native
-    def apply(behavior: setting, name: urlData, value: Unit): js.Any | `false` = js.native
-    def apply(behavior: setting, name: urlData, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: url, value: String): JQuery = js.native
-    def apply(behavior: setting, name: url, value: Unit): String | `false` = js.native
-    def apply(behavior: setting, name: url, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: ApiSettings): JQuery = js.native
     def apply(settings: ApiSettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-api.SemanticUI.ApiSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-api.SemanticUI.ApiSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl[K] */ js.Any = js.native
     
     var settings: ApiSettings = js.native
   }
@@ -461,7 +190,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplloading | PickImplerrorError) & PartialPickImplkeyofImplError
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiApi.anon.PickImplloadingPartialPic
+        - typings.semanticUiApi.anon.PickImplerrorPartialPickIError
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplerrorPartialPickIError(error: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplerrorPartialPickIError = {
+          val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplerrorPartialPickIError]
+        }
+        
+        inline def PickImplloadingPartialPic(loading: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplloadingPartialPic = {
+          val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplloadingPartialPic]
+        }
+      }
     }
     type ClassNameSettings = Param
     
@@ -585,7 +330,89 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplbeforeSendBeforeSend | PickImplerrorError | PickImplexitConditions | PickImplJSONParse | PickImpllegacyParameters | PickImplmissingAction | PickImplmissingSerialize | PickImplmissingURL | PickImplnoReturnedValue | PickImplparseError | PickImplrequiredParameter | PickImplstatusMessage | PickImpltimeout) & PartialPickImplkeyofImplBeforeSend
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiApi.anon.PickImplbeforeSendPartialBeforeSend
+        - typings.semanticUiApi.anon.PickImplerrorPartialPickIBeforeSend
+        - typings.semanticUiApi.anon.PickImplexitConditionsPar
+        - typings.semanticUiApi.anon.PickImplJSONParsePartialP
+        - typings.semanticUiApi.anon.PickImpllegacyParametersP
+        - typings.semanticUiApi.anon.PickImplmissingActionPart
+        - typings.semanticUiApi.anon.PickImplmissingSerializeP
+        - typings.semanticUiApi.anon.PickImplmissingURLPartial
+        - typings.semanticUiApi.anon.PickImplnoReturnedValuePa
+        - typings.semanticUiApi.anon.PickImplparseErrorPartial
+        - typings.semanticUiApi.anon.PickImplrequiredParameter
+        - typings.semanticUiApi.anon.PickImplstatusMessagePart
+        - typings.semanticUiApi.anon.PickImpltimeoutPartialPic
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplJSONParsePartialP(JSONParse: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplJSONParsePartialP = {
+          val __obj = js.Dynamic.literal(JSONParse = JSONParse.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplJSONParsePartialP]
+        }
+        
+        inline def PickImplbeforeSendPartialBeforeSend(beforeSend: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplbeforeSendPartialBeforeSend = {
+          val __obj = js.Dynamic.literal(beforeSend = beforeSend.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplbeforeSendPartialBeforeSend]
+        }
+        
+        inline def PickImplerrorPartialPickIBeforeSend(error: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplerrorPartialPickIBeforeSend = {
+          val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplerrorPartialPickIBeforeSend]
+        }
+        
+        inline def PickImplexitConditionsPar(exitConditions: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplexitConditionsPar = {
+          val __obj = js.Dynamic.literal(exitConditions = exitConditions.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplexitConditionsPar]
+        }
+        
+        inline def PickImpllegacyParametersP(legacyParameters: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImpllegacyParametersP = {
+          val __obj = js.Dynamic.literal(legacyParameters = legacyParameters.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImpllegacyParametersP]
+        }
+        
+        inline def PickImplmissingActionPart(missingAction: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplmissingActionPart = {
+          val __obj = js.Dynamic.literal(missingAction = missingAction.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplmissingActionPart]
+        }
+        
+        inline def PickImplmissingSerializeP(missingSerialize: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplmissingSerializeP = {
+          val __obj = js.Dynamic.literal(missingSerialize = missingSerialize.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplmissingSerializeP]
+        }
+        
+        inline def PickImplmissingURLPartial(missingURL: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplmissingURLPartial = {
+          val __obj = js.Dynamic.literal(missingURL = missingURL.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplmissingURLPartial]
+        }
+        
+        inline def PickImplnoReturnedValuePa(noReturnedValue: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplnoReturnedValuePa = {
+          val __obj = js.Dynamic.literal(noReturnedValue = noReturnedValue.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplnoReturnedValuePa]
+        }
+        
+        inline def PickImplparseErrorPartial(parseError: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplparseErrorPartial = {
+          val __obj = js.Dynamic.literal(parseError = parseError.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplparseErrorPartial]
+        }
+        
+        inline def PickImplrequiredParameter(requiredParameter: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplrequiredParameter = {
+          val __obj = js.Dynamic.literal(requiredParameter = requiredParameter.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplrequiredParameter]
+        }
+        
+        inline def PickImplstatusMessagePart(statusMessage: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplstatusMessagePart = {
+          val __obj = js.Dynamic.literal(statusMessage = statusMessage.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplstatusMessagePart]
+        }
+        
+        inline def PickImpltimeoutPartialPic(timeout: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImpltimeoutPartialPic = {
+          val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImpltimeoutPartialPic]
+        }
+      }
     }
     type ErrorSettings = typings.semanticUiApi.SemanticUI.Api.ErrorSettings.Param
     
@@ -618,7 +445,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactionAction | PickImplurlUrl) & PartialPickImplkeyofImplAction
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiApi.anon.PickImplactionPartialPickAction
+        - typings.semanticUiApi.anon.PickImplurlPartialPickImpAction
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplactionPartialPickAction(action: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplactionPartialPickAction = {
+          val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplactionPartialPickAction]
+        }
+        
+        inline def PickImplurlPartialPickImpAction(url: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplurlPartialPickImpAction = {
+          val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplurlPartialPickImpAction]
+        }
+      }
     }
     type MetadataSettings = typings.semanticUiApi.SemanticUI.Api.MetadataSettings.Param
     
@@ -629,29 +472,45 @@ object SemanticUI {
         /**
           * @default /\{\/\$*[A-z0-9]+\}/g
           */
-        var optional: RegExp
+        var optional: js.RegExp
         
         /**
           * @default /\{\$*[A-z0-9]+\}/g
           */
-        var required: RegExp
+        var required: js.RegExp
       }
       object Impl {
         
-        inline def apply(optional: RegExp, required: RegExp): Impl = {
+        inline def apply(optional: js.RegExp, required: js.RegExp): Impl = {
           val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
         extension [Self <: Impl](x: Self) {
           
-          inline def setOptional(value: RegExp): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+          inline def setOptional(value: js.RegExp): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
           
-          inline def setRequired(value: RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+          inline def setRequired(value: js.RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
         }
       }
       
-      type Param = (PickImplrequired | PickImploptional) & PartialPickImplkeyofImplOptional
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiApi.anon.PickImplrequiredPartialPi
+        - typings.semanticUiApi.anon.PickImploptionalPartialPi
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImploptionalPartialPi(optional: js.RegExp & js.UndefOr[js.RegExp]): typings.semanticUiApi.anon.PickImploptionalPartialPi = {
+          val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImploptionalPartialPi]
+        }
+        
+        inline def PickImplrequiredPartialPi(required: js.RegExp & js.UndefOr[js.RegExp]): typings.semanticUiApi.anon.PickImplrequiredPartialPi = {
+          val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplrequiredPartialPi]
+        }
+      }
     }
     type RegExpSettings = typings.semanticUiApi.SemanticUI.Api.RegExpSettings.Param
     
@@ -684,7 +543,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImpldisabled | PickImplform) & PartialPickImplkeyofImplDisabled
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiApi.anon.PickImpldisabledPartialPi
+        - typings.semanticUiApi.anon.PickImplformPartialPickIm
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImpldisabledPartialPi(disabled: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImpldisabledPartialPi = {
+          val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImpldisabledPartialPi]
+        }
+        
+        inline def PickImplformPartialPickIm(form: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplformPartialPickIm = {
+          val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplformPartialPickIm]
+        }
+      }
     }
     type SelectorSettings = typings.semanticUiApi.SemanticUI.Api.SelectorSettings.Param
   }
@@ -707,12 +582,12 @@ object SemanticUI {
       /**
         * Allows modifying settings before request, or cancelling request
         */
-      def beforeSend(settings: ApiSettings): js.Any
+      def beforeSend(settings: ApiSettings): Any
       
       /**
         * Allows modifying XHR object for request
         */
-      def beforeXHR(xhrObject: jqXHR[js.Any]): js.Any
+      def beforeXHR(xhrObject: jqXHR[Any]): Any
       
       /**
         * Can be set to 'local' to cache successful returned AJAX responses when using a JSON API.
@@ -731,7 +606,7 @@ object SemanticUI {
       /**
         * POST/GET Data to Send with Request
         */
-      var data: js.Any
+      var data: Any
       
       /**
         * Expected data type of response
@@ -803,14 +678,14 @@ object SemanticUI {
       /**
         * @see response
         */
-      var mockResponse: js.Any | `false`
+      var mockResponse: Any | `false`
       
       /**
         * @see responseAsync
         */
       var mockResponseAsync: (js.Function2[
             /* settings */ ApiSettings, 
-            /* callback */ js.Function1[/* response */ js.Any, Unit], 
+            /* callback */ js.Function1[/* response */ Any, Unit], 
             Unit
           ]) | `false`
       
@@ -840,37 +715,37 @@ object SemanticUI {
       /**
         * Callback on abort caused by user clicking a link or manually cancelling request.
         */
-      def onAbort(errorMessage: String, element: JQuery, xhr: jqXHR[js.Any]): Unit
+      def onAbort(errorMessage: String, element: JQuery, xhr: jqXHR[Any]): Unit
       
       /**
         * Callback on request complete regardless of conditions
         */
-      def onComplete(response: js.Any, element: JQuery, xhr: jqXHR[js.Any]): Unit
+      def onComplete(response: Any, element: JQuery, xhr: jqXHR[Any]): Unit
       
       /**
         * Callback on server error from returned status code, or XHR failure.
         */
-      def onError(errorMessage: String, element: JQuery, xhr: jqXHR[js.Any]): Unit
+      def onError(errorMessage: String, element: JQuery, xhr: jqXHR[Any]): Unit
       
       /**
         * Callback on failed response, or JSON response that fails successTest
         */
-      def onFailure(response: js.Any, element: JQuery): Unit
+      def onFailure(response: Any, element: JQuery): Unit
       
       /**
         * Callback that occurs when request is made. Receives both the API success promise and the XHR request promise.
         */
-      def onRequest(promise: Deferred[js.Any, js.Any, js.Any], xhr: jqXHR[js.Any]): Unit
+      def onRequest(promise: Deferred[Any, Any, Any], xhr: jqXHR[Any]): Unit
       
       /**
         * Allows modifying the server's response before parsed by other callbacks to determine API event success
         */
-      def onResponse(response: js.Any): Unit
+      def onResponse(response: Any): Unit
       
       /**
         * Callback after successful response, JSON response must pass successTest
         */
-      def onSuccess(response: js.Any, element: JQuery, xhr: jqXHR[js.Any]): Unit
+      def onSuccess(response: Any, element: JQuery, xhr: jqXHR[Any]): Unit
       
       /**
         * Show console.table output with performance metrics
@@ -887,7 +762,7 @@ object SemanticUI {
       /**
         * Can be set to a Javascript object which will be returned automatically instead of requesting JSON from server
         */
-      var response: js.Any | `false`
+      var response: Any | `false`
       
       /**
         * When specified, this function can be used to retrieve content from a server and return it asynchronously instead of a standard AJAX call.
@@ -897,7 +772,7 @@ object SemanticUI {
         */
       var responseAsync: (js.Function2[
             /* settings */ ApiSettings, 
-            /* callback */ js.Function1[/* response */ js.Any, Unit], 
+            /* callback */ js.Function1[/* response */ Any, Unit], 
             Unit
           ]) | `false`
       
@@ -928,7 +803,7 @@ object SemanticUI {
         *
         * @see {@link http://semantic-ui.com/behaviors/api.html#determining-json-success}
         */
-      def successTest(response: js.Any): Boolean
+      def successTest(response: Any): Boolean
       
       /**
         * How long to wait when a request is made before triggering request, useful for rate limiting oninput
@@ -952,7 +827,7 @@ object SemanticUI {
       /**
         * Variables to use for replacement
         */
-      var urlData: js.Any | `false`
+      var urlData: Any | `false`
       
       /**
         * Debug output includes all internal behaviors
@@ -964,11 +839,11 @@ object SemanticUI {
       inline def apply(
         action: String | `false`,
         api: StringDictionary[String],
-        beforeSend: ApiSettings => js.Any,
-        beforeXHR: jqXHR[js.Any] => js.Any,
+        beforeSend: ApiSettings => Any,
+        beforeXHR: jqXHR[Any] => Any,
         cache: local | Boolean,
         className: ClassNameSettings,
-        data: js.Any,
+        data: Any,
         dataType: xml | json | jsonp | script | html | text,
         debug: Boolean,
         defaultData: Boolean,
@@ -980,39 +855,39 @@ object SemanticUI {
         loadingDuration: Double,
         metadata: MetadataSettings,
         method: post | get | put | delete | head | options | patch,
-        mockResponse: js.Any | `false`,
+        mockResponse: Any | `false`,
         mockResponseAsync: (js.Function2[
               /* settings */ ApiSettings, 
-              /* callback */ js.Function1[/* response */ js.Any, Unit], 
+              /* callback */ js.Function1[/* response */ Any, Unit], 
               Unit
             ]) | `false`,
         name: String,
         namespace: String,
         on: String,
-        onAbort: (String, JQuery, jqXHR[js.Any]) => Unit,
-        onComplete: (js.Any, JQuery, jqXHR[js.Any]) => Unit,
-        onError: (String, JQuery, jqXHR[js.Any]) => Unit,
-        onFailure: (js.Any, JQuery) => Unit,
-        onRequest: (Deferred[js.Any, js.Any, js.Any], jqXHR[js.Any]) => Unit,
-        onResponse: js.Any => Unit,
-        onSuccess: (js.Any, JQuery, jqXHR[js.Any]) => Unit,
+        onAbort: (String, JQuery, jqXHR[Any]) => Unit,
+        onComplete: (Any, JQuery, jqXHR[Any]) => Unit,
+        onError: (String, JQuery, jqXHR[Any]) => Unit,
+        onFailure: (Any, JQuery) => Unit,
+        onRequest: (Deferred[Any, Any, Any], jqXHR[Any]) => Unit,
+        onResponse: Any => Unit,
+        onSuccess: (Any, JQuery, jqXHR[Any]) => Unit,
         performance: Boolean,
         regExp: RegExpSettings,
-        response: js.Any | `false`,
+        response: Any | `false`,
         responseAsync: (js.Function2[
               /* settings */ ApiSettings, 
-              /* callback */ js.Function1[/* response */ js.Any, Unit], 
+              /* callback */ js.Function1[/* response */ Any, Unit], 
               Unit
             ]) | `false`,
         selector: SelectorSettings,
         serializeForm: Boolean,
         silent: Boolean,
         stateContext: String | JQuery,
-        successTest: js.Any => Boolean,
+        successTest: Any => Boolean,
         throttle: Double,
         throttleFirstRequest: Boolean,
         url: String | `false`,
-        urlData: js.Any | `false`,
+        urlData: Any | `false`,
         verbose: Boolean
       ): Impl = {
         val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], beforeSend = js.Any.fromFunction1(beforeSend), beforeXHR = js.Any.fromFunction1(beforeXHR), cache = cache.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], defaultData = defaultData.asInstanceOf[js.Any], encodeParameters = encodeParameters.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], errorDuration = errorDuration.asInstanceOf[js.Any], hideError = hideError.asInstanceOf[js.Any], interruptRequests = interruptRequests.asInstanceOf[js.Any], loadingDuration = loadingDuration.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], mockResponse = mockResponse.asInstanceOf[js.Any], mockResponseAsync = mockResponseAsync.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onAbort = js.Any.fromFunction3(onAbort), onComplete = js.Any.fromFunction3(onComplete), onError = js.Any.fromFunction3(onError), onFailure = js.Any.fromFunction2(onFailure), onRequest = js.Any.fromFunction2(onRequest), onResponse = js.Any.fromFunction1(onResponse), onSuccess = js.Any.fromFunction3(onSuccess), performance = performance.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseAsync = responseAsync.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], serializeForm = serializeForm.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], stateContext = stateContext.asInstanceOf[js.Any], successTest = js.Any.fromFunction1(successTest), throttle = throttle.asInstanceOf[js.Any], throttleFirstRequest = throttleFirstRequest.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlData = urlData.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
@@ -1025,15 +900,15 @@ object SemanticUI {
         
         inline def setApi(value: StringDictionary[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
         
-        inline def setBeforeSend(value: ApiSettings => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+        inline def setBeforeSend(value: ApiSettings => Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
         
-        inline def setBeforeXHR(value: jqXHR[js.Any] => js.Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
+        inline def setBeforeXHR(value: jqXHR[Any] => Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
         
         inline def setCache(value: local | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
         
         inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setDataType(value: xml | json | jsonp | script | html | text): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
         
@@ -1057,19 +932,17 @@ object SemanticUI {
         
         inline def setMethod(value: post | get | put | delete | head | options | patch): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        inline def setMockResponse(value: js.Any | `false`): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
+        inline def setMockResponse(value: Any | `false`): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
         
         inline def setMockResponseAsync(
           value: (js.Function2[
                   /* settings */ ApiSettings, 
-                  /* callback */ js.Function1[/* response */ js.Any, Unit], 
+                  /* callback */ js.Function1[/* response */ Any, Unit], 
                   Unit
                 ]) | `false`
         ): Self = StObject.set(x, "mockResponseAsync", value.asInstanceOf[js.Any])
         
-        inline def setMockResponseAsyncFunction2(
-          value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ js.Any, Unit]) => Unit
-        ): Self = StObject.set(x, "mockResponseAsync", js.Any.fromFunction2(value))
+        inline def setMockResponseAsyncFunction2(value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ Any, Unit]) => Unit): Self = StObject.set(x, "mockResponseAsync", js.Any.fromFunction2(value))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -1077,37 +950,35 @@ object SemanticUI {
         
         inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
         
-        inline def setOnAbort(value: (String, JQuery, jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
+        inline def setOnAbort(value: (String, JQuery, jqXHR[Any]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
         
-        inline def setOnComplete(value: (js.Any, JQuery, jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
+        inline def setOnComplete(value: (Any, JQuery, jqXHR[Any]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
         
-        inline def setOnError(value: (String, JQuery, jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+        inline def setOnError(value: (String, JQuery, jqXHR[Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
         
-        inline def setOnFailure(value: (js.Any, JQuery) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
+        inline def setOnFailure(value: (Any, JQuery) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
         
-        inline def setOnRequest(value: (Deferred[js.Any, js.Any, js.Any], jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
+        inline def setOnRequest(value: (Deferred[Any, Any, Any], jqXHR[Any]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
         
-        inline def setOnResponse(value: js.Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
+        inline def setOnResponse(value: Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
         
-        inline def setOnSuccess(value: (js.Any, JQuery, jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
+        inline def setOnSuccess(value: (Any, JQuery, jqXHR[Any]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
         
         inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
         
         inline def setRegExp(value: RegExpSettings): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
         
-        inline def setResponse(value: js.Any | `false`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Any | `false`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
         
         inline def setResponseAsync(
           value: (js.Function2[
                   /* settings */ ApiSettings, 
-                  /* callback */ js.Function1[/* response */ js.Any, Unit], 
+                  /* callback */ js.Function1[/* response */ Any, Unit], 
                   Unit
                 ]) | `false`
         ): Self = StObject.set(x, "responseAsync", value.asInstanceOf[js.Any])
         
-        inline def setResponseAsyncFunction2(
-          value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ js.Any, Unit]) => Unit
-        ): Self = StObject.set(x, "responseAsync", js.Any.fromFunction2(value))
+        inline def setResponseAsyncFunction2(value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ Any, Unit]) => Unit): Self = StObject.set(x, "responseAsync", js.Any.fromFunction2(value))
         
         inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
@@ -1117,7 +988,7 @@ object SemanticUI {
         
         inline def setStateContext(value: String | JQuery): Self = StObject.set(x, "stateContext", value.asInstanceOf[js.Any])
         
-        inline def setSuccessTest(value: js.Any => Boolean): Self = StObject.set(x, "successTest", js.Any.fromFunction1(value))
+        inline def setSuccessTest(value: Any => Boolean): Self = StObject.set(x, "successTest", js.Any.fromFunction1(value))
         
         inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
         
@@ -1125,13 +996,337 @@ object SemanticUI {
         
         inline def setUrl(value: String | `false`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        inline def setUrlData(value: js.Any | `false`): Self = StObject.set(x, "urlData", value.asInstanceOf[js.Any])
+        inline def setUrlData(value: Any | `false`): Self = StObject.set(x, "urlData", value.asInstanceOf[js.Any])
         
         inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       }
     }
     
-    type Param = (PickImplapi | PickImplon | PickImplcache | PickImplstateContext | PickImplencodeParameters | PickImpldefaultData | PickImplserializeForm | PickImplthrottle | PickImplthrottleFirstRequ | PickImplinterruptRequests | PickImplloadingDuration | PickImplhideError | PickImplerrorDuration | PickImplaction | PickImplurl | PickImplurlData | PickImplresponse | PickImplresponseAsync | PickImplmockResponse | PickImplmockResponseAsync | PickImplmethod | PickImpldataType | PickImpldata | PickImplbeforeSend | PickImplbeforeXHR | PickImplonRequest | PickImplonResponse | PickImplsuccessTest | PickImplonSuccess | PickImplonComplete | PickImplonFailure | PickImplonError | PickImplonAbort | PickImplregExp | PickImplselector | PickImplclassName | PickImplmetadata | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiApi.anon.PickImplapiPartialPickImp
+      - typings.semanticUiApi.anon.PickImplonPartialPickImpl
+      - typings.semanticUiApi.anon.PickImplcachePartialPickI
+      - typings.semanticUiApi.anon.PickImplstateContextParti
+      - typings.semanticUiApi.anon.PickImplencodeParametersP
+      - typings.semanticUiApi.anon.PickImpldefaultDataPartia
+      - typings.semanticUiApi.anon.PickImplserializeFormPart
+      - typings.semanticUiApi.anon.PickImplthrottlePartialPi
+      - typings.semanticUiApi.anon.PickImplthrottleFirstRequ
+      - typings.semanticUiApi.anon.PickImplinterruptRequests
+      - typings.semanticUiApi.anon.PickImplloadingDurationPa
+      - typings.semanticUiApi.anon.PickImplhideErrorPartialP
+      - typings.semanticUiApi.anon.PickImplerrorDurationPart
+      - typings.semanticUiApi.anon.PickImplactionPartialPick
+      - typings.semanticUiApi.anon.PickImplurlPartialPickImp
+      - typings.semanticUiApi.anon.PickImplurlDataPartialPic
+      - typings.semanticUiApi.anon.PickImplresponsePartialPi
+      - typings.semanticUiApi.anon.PickImplresponseAsyncPart
+      - typings.semanticUiApi.anon.PickImplmockResponseParti
+      - typings.semanticUiApi.anon.PickImplmockResponseAsync
+      - typings.semanticUiApi.anon.PickImplmethodPartialPick
+      - typings.semanticUiApi.anon.PickImpldataTypePartialPi
+      - typings.semanticUiApi.anon.PickImpldataPartialPickIm
+      - typings.semanticUiApi.anon.PickImplbeforeSendPartial
+      - typings.semanticUiApi.anon.PickImplbeforeXHRPartialP
+      - typings.semanticUiApi.anon.PickImplonRequestPartialP
+      - typings.semanticUiApi.anon.PickImplonResponsePartial
+      - typings.semanticUiApi.anon.PickImplsuccessTestPartia
+      - typings.semanticUiApi.anon.PickImplonSuccessPartialP
+      - typings.semanticUiApi.anon.PickImplonCompletePartial
+      - typings.semanticUiApi.anon.PickImplonFailurePartialP
+      - typings.semanticUiApi.anon.PickImplonErrorPartialPic
+      - typings.semanticUiApi.anon.PickImplonAbortPartialPic
+      - typings.semanticUiApi.anon.PickImplregExpPartialPick
+      - typings.semanticUiApi.anon.PickImplselectorPartialPi
+      - typings.semanticUiApi.anon.PickImplclassNamePartialP
+      - typings.semanticUiApi.anon.PickImplmetadataPartialPi
+      - typings.semanticUiApi.anon.PickImplerrorPartialPickI
+      - typings.semanticUiApi.anon.PickImplnamespacePartialP
+      - typings.semanticUiApi.anon.PickImplnamePartialPickIm
+      - typings.semanticUiApi.anon.PickImplsilentPartialPick
+      - typings.semanticUiApi.anon.PickImpldebugPartialPickI
+      - typings.semanticUiApi.anon.PickImplperformancePartia
+      - typings.semanticUiApi.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplactionPartialPick(action: (String | `false`) & (js.UndefOr[String | `false`])): typings.semanticUiApi.anon.PickImplactionPartialPick = {
+        val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplactionPartialPick]
+      }
+      
+      inline def PickImplapiPartialPickImp(api: StringDictionary[String] & js.UndefOr[StringDictionary[String]]): typings.semanticUiApi.anon.PickImplapiPartialPickImp = {
+        val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplapiPartialPickImp]
+      }
+      
+      inline def PickImplbeforeSendPartial(
+        beforeSend: (js.Function1[/* settings */ ApiSettings, Any]) & (js.UndefOr[js.Function1[/* settings */ ApiSettings, Any]])
+      ): typings.semanticUiApi.anon.PickImplbeforeSendPartial = {
+        val __obj = js.Dynamic.literal(beforeSend = beforeSend.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplbeforeSendPartial]
+      }
+      
+      inline def PickImplbeforeXHRPartialP(
+        beforeXHR: (js.Function1[/* xhrObject */ jqXHR[Any], Any]) & (js.UndefOr[js.Function1[/* xhrObject */ jqXHR[Any], Any]])
+      ): typings.semanticUiApi.anon.PickImplbeforeXHRPartialP = {
+        val __obj = js.Dynamic.literal(beforeXHR = beforeXHR.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplbeforeXHRPartialP]
+      }
+      
+      inline def PickImplcachePartialPickI(cache: (local | Boolean) & (js.UndefOr[local | Boolean])): typings.semanticUiApi.anon.PickImplcachePartialPickI = {
+        val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplcachePartialPickI]
+      }
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiApi.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImpldataPartialPickIm(data: Any & js.UndefOr[Any]): typings.semanticUiApi.anon.PickImpldataPartialPickIm = {
+        val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImpldataPartialPickIm]
+      }
+      
+      inline def PickImpldataTypePartialPi(
+        dataType: (xml | json | jsonp | script | html | text) & (js.UndefOr[xml | json | jsonp | script | html | text])
+      ): typings.semanticUiApi.anon.PickImpldataTypePartialPi = {
+        val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImpldataTypePartialPi]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImpldefaultDataPartia(defaultData: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImpldefaultDataPartia = {
+        val __obj = js.Dynamic.literal(defaultData = defaultData.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImpldefaultDataPartia]
+      }
+      
+      inline def PickImplencodeParametersP(encodeParameters: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImplencodeParametersP = {
+        val __obj = js.Dynamic.literal(encodeParameters = encodeParameters.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplencodeParametersP]
+      }
+      
+      inline def PickImplerrorDurationPart(errorDuration: (`true` | Double) & (js.UndefOr[`true` | Double])): typings.semanticUiApi.anon.PickImplerrorDurationPart = {
+        val __obj = js.Dynamic.literal(errorDuration = errorDuration.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplerrorDurationPart]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiApi.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplhideErrorPartialP(hideError: (auto | Boolean) & (js.UndefOr[auto | Boolean])): typings.semanticUiApi.anon.PickImplhideErrorPartialP = {
+        val __obj = js.Dynamic.literal(hideError = hideError.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplhideErrorPartialP]
+      }
+      
+      inline def PickImplinterruptRequests(interruptRequests: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImplinterruptRequests = {
+        val __obj = js.Dynamic.literal(interruptRequests = interruptRequests.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplinterruptRequests]
+      }
+      
+      inline def PickImplloadingDurationPa(loadingDuration: Double & js.UndefOr[Double]): typings.semanticUiApi.anon.PickImplloadingDurationPa = {
+        val __obj = js.Dynamic.literal(loadingDuration = loadingDuration.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplloadingDurationPa]
+      }
+      
+      inline def PickImplmetadataPartialPi(metadata: MetadataSettings & js.UndefOr[MetadataSettings]): typings.semanticUiApi.anon.PickImplmetadataPartialPi = {
+        val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplmetadataPartialPi]
+      }
+      
+      inline def PickImplmethodPartialPick(
+        method: (post | get | put | delete | head | options | patch) & (js.UndefOr[post | get | put | delete | head | options | patch])
+      ): typings.semanticUiApi.anon.PickImplmethodPartialPick = {
+        val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplmethodPartialPick]
+      }
+      
+      inline def PickImplmockResponseAsync(
+        mockResponseAsync: ((js.Function2[
+              /* settings */ ApiSettings, 
+              /* callback */ js.Function1[/* response */ Any, Unit], 
+              Unit
+            ]) | `false`) & (js.UndefOr[
+              (js.Function2[
+                /* settings */ ApiSettings, 
+                /* callback */ js.Function1[/* response */ Any, Unit], 
+                Unit
+              ]) | `false`
+            ])
+      ): typings.semanticUiApi.anon.PickImplmockResponseAsync = {
+        val __obj = js.Dynamic.literal(mockResponseAsync = mockResponseAsync.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplmockResponseAsync]
+      }
+      
+      inline def PickImplmockResponseParti(mockResponse: (Any | `false`) & (js.UndefOr[Any | `false`])): typings.semanticUiApi.anon.PickImplmockResponseParti = {
+        val __obj = js.Dynamic.literal(mockResponse = mockResponse.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplmockResponseParti]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplonAbortPartialPic(
+        onAbort: (js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
+              js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
+            ])
+      ): typings.semanticUiApi.anon.PickImplonAbortPartialPic = {
+        val __obj = js.Dynamic.literal(onAbort = onAbort.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplonAbortPartialPic]
+      }
+      
+      inline def PickImplonCompletePartial(
+        onComplete: (js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
+              js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
+            ])
+      ): typings.semanticUiApi.anon.PickImplonCompletePartial = {
+        val __obj = js.Dynamic.literal(onComplete = onComplete.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplonCompletePartial]
+      }
+      
+      inline def PickImplonErrorPartialPic(
+        onError: (js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
+              js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
+            ])
+      ): typings.semanticUiApi.anon.PickImplonErrorPartialPic = {
+        val __obj = js.Dynamic.literal(onError = onError.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplonErrorPartialPic]
+      }
+      
+      inline def PickImplonFailurePartialP(
+        onFailure: (js.Function2[/* response */ Any, /* element */ JQuery, Unit]) & (js.UndefOr[js.Function2[/* response */ Any, /* element */ JQuery, Unit]])
+      ): typings.semanticUiApi.anon.PickImplonFailurePartialP = {
+        val __obj = js.Dynamic.literal(onFailure = onFailure.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplonFailurePartialP]
+      }
+      
+      inline def PickImplonPartialPickImpl(on: String & js.UndefOr[String]): typings.semanticUiApi.anon.PickImplonPartialPickImpl = {
+        val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplonPartialPickImpl]
+      }
+      
+      inline def PickImplonRequestPartialP(
+        onRequest: (js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]])
+      ): typings.semanticUiApi.anon.PickImplonRequestPartialP = {
+        val __obj = js.Dynamic.literal(onRequest = onRequest.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplonRequestPartialP]
+      }
+      
+      inline def PickImplonResponsePartial(
+        onResponse: (js.Function1[/* response */ Any, Unit]) & (js.UndefOr[js.Function1[/* response */ Any, Unit]])
+      ): typings.semanticUiApi.anon.PickImplonResponsePartial = {
+        val __obj = js.Dynamic.literal(onResponse = onResponse.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplonResponsePartial]
+      }
+      
+      inline def PickImplonSuccessPartialP(
+        onSuccess: (js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
+              js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
+            ])
+      ): typings.semanticUiApi.anon.PickImplonSuccessPartialP = {
+        val __obj = js.Dynamic.literal(onSuccess = onSuccess.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplonSuccessPartialP]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplregExpPartialPick(regExp: RegExpSettings & js.UndefOr[RegExpSettings]): typings.semanticUiApi.anon.PickImplregExpPartialPick = {
+        val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplregExpPartialPick]
+      }
+      
+      inline def PickImplresponseAsyncPart(
+        responseAsync: ((js.Function2[
+              /* settings */ ApiSettings, 
+              /* callback */ js.Function1[/* response */ Any, Unit], 
+              Unit
+            ]) | `false`) & (js.UndefOr[
+              (js.Function2[
+                /* settings */ ApiSettings, 
+                /* callback */ js.Function1[/* response */ Any, Unit], 
+                Unit
+              ]) | `false`
+            ])
+      ): typings.semanticUiApi.anon.PickImplresponseAsyncPart = {
+        val __obj = js.Dynamic.literal(responseAsync = responseAsync.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplresponseAsyncPart]
+      }
+      
+      inline def PickImplresponsePartialPi(response: (Any | `false`) & (js.UndefOr[Any | `false`])): typings.semanticUiApi.anon.PickImplresponsePartialPi = {
+        val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplresponsePartialPi]
+      }
+      
+      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiApi.anon.PickImplselectorPartialPi = {
+        val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplselectorPartialPi]
+      }
+      
+      inline def PickImplserializeFormPart(serializeForm: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImplserializeFormPart = {
+        val __obj = js.Dynamic.literal(serializeForm = serializeForm.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplserializeFormPart]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImplstateContextParti(stateContext: (String | JQuery) & (js.UndefOr[String | JQuery])): typings.semanticUiApi.anon.PickImplstateContextParti = {
+        val __obj = js.Dynamic.literal(stateContext = stateContext.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplstateContextParti]
+      }
+      
+      inline def PickImplsuccessTestPartia(
+        successTest: (js.Function1[/* response */ Any, Boolean]) & (js.UndefOr[js.Function1[/* response */ Any, Boolean]])
+      ): typings.semanticUiApi.anon.PickImplsuccessTestPartia = {
+        val __obj = js.Dynamic.literal(successTest = successTest.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplsuccessTestPartia]
+      }
+      
+      inline def PickImplthrottleFirstRequ(throttleFirstRequest: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImplthrottleFirstRequ = {
+        val __obj = js.Dynamic.literal(throttleFirstRequest = throttleFirstRequest.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplthrottleFirstRequ]
+      }
+      
+      inline def PickImplthrottlePartialPi(throttle: Double & js.UndefOr[Double]): typings.semanticUiApi.anon.PickImplthrottlePartialPi = {
+        val __obj = js.Dynamic.literal(throttle = throttle.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplthrottlePartialPi]
+      }
+      
+      inline def PickImplurlDataPartialPic(urlData: (Any | `false`) & (js.UndefOr[Any | `false`])): typings.semanticUiApi.anon.PickImplurlDataPartialPic = {
+        val __obj = js.Dynamic.literal(urlData = urlData.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplurlDataPartialPic]
+      }
+      
+      inline def PickImplurlPartialPickImp(url: (String | `false`) & (js.UndefOr[String | `false`])): typings.semanticUiApi.anon.PickImplurlPartialPickImp = {
+        val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplurlPartialPickImp]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiApi.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiApi.anon.PickImplverbosePartialPic]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/behaviors/api.html#/settings}

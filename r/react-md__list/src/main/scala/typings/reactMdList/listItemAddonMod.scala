@@ -8,56 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listItemAddonMod {
   
-  object ListItemAddon {
-    
-    inline def apply(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps: ListItemAddonProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon.propTypes.addon")
-      @js.native
-      def addon: js.Any = js.native
-      
-      @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon.propTypes.addonAfter")
-      @js.native
-      def addonAfter: js.Any = js.native
-      inline def addonAfter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addonAfter")(x.asInstanceOf[js.Any])
-      
-      inline def addon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addon")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon.propTypes.className")
-      @js.native
-      def className: js.Any = js.native
-      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon.propTypes.forceAddonWrap")
-      @js.native
-      def forceAddonWrap: js.Any = js.native
-      inline def forceAddonWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAddonWrap")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon.propTypes.position")
-      @js.native
-      def position: js.Any = js.native
-      inline def position_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("position")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon.propTypes.type")
-      @js.native
-      val `type`: js.Any = js.native
-    }
-  }
+  @JSImport("@react-md/list/types/ListItemAddon", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def ListItemAddon(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps: ListItemAddonProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemAddon")(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdList.reactMdListStrings.top
@@ -98,6 +53,8 @@ object listItemAddonMod {
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
+    
+    var flexReverse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the addon should be forced into a `<span>` with the class names
@@ -158,6 +115,10 @@ object listItemAddonMod {
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setFlexReverse(value: Boolean): Self = StObject.set(x, "flexReverse", value.asInstanceOf[js.Any])
+      
+      inline def setFlexReverseUndefined: Self = StObject.set(x, "flexReverse", js.undefined)
       
       inline def setForceAddonWrap(value: Boolean): Self = StObject.set(x, "forceAddonWrap", value.asInstanceOf[js.Any])
       

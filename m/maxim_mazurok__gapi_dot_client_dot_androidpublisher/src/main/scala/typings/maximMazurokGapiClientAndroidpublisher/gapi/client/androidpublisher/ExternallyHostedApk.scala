@@ -68,7 +68,7 @@ object ExternallyHostedApk {
     
     inline def setCertificateBase64sUndefined: Self = StObject.set(x, "certificateBase64s", js.undefined)
     
-    inline def setCertificateBase64sVarargs(value: String*): Self = StObject.set(x, "certificateBase64s", js.Array(value :_*))
+    inline def setCertificateBase64sVarargs(value: String*): Self = StObject.set(x, "certificateBase64s", js.Array(value*))
     
     inline def setExternallyHostedUrl(value: String): Self = StObject.set(x, "externallyHostedUrl", value.asInstanceOf[js.Any])
     
@@ -102,7 +102,7 @@ object ExternallyHostedApk {
     
     inline def setNativeCodesUndefined: Self = StObject.set(x, "nativeCodes", js.undefined)
     
-    inline def setNativeCodesVarargs(value: String*): Self = StObject.set(x, "nativeCodes", js.Array(value :_*))
+    inline def setNativeCodesVarargs(value: String*): Self = StObject.set(x, "nativeCodes", js.Array(value*))
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
@@ -112,13 +112,13 @@ object ExternallyHostedApk {
     
     inline def setUsesFeaturesUndefined: Self = StObject.set(x, "usesFeatures", js.undefined)
     
-    inline def setUsesFeaturesVarargs(value: String*): Self = StObject.set(x, "usesFeatures", js.Array(value :_*))
+    inline def setUsesFeaturesVarargs(value: String*): Self = StObject.set(x, "usesFeatures", js.Array(value*))
     
     inline def setUsesPermissions(value: js.Array[UsesPermission]): Self = StObject.set(x, "usesPermissions", value.asInstanceOf[js.Any])
     
     inline def setUsesPermissionsUndefined: Self = StObject.set(x, "usesPermissions", js.undefined)
     
-    inline def setUsesPermissionsVarargs(value: UsesPermission*): Self = StObject.set(x, "usesPermissions", js.Array(value :_*))
+    inline def setUsesPermissionsVarargs(value: UsesPermission*): Self = StObject.set(x, "usesPermissions", js.Array(value*))
     
     inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     

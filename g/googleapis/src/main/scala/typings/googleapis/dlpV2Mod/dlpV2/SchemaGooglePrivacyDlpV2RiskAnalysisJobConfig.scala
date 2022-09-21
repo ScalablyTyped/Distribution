@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration for a risk analysis job. See
-  * https://cloud.google.com/dlp/docs/concepts-risk-analysis to learn more.
-  */
 trait SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig extends StObject {
   
   /**
-    * Actions to execute at the completion of the job. Are executed in the
-    * order provided.
+    * Actions to execute at the completion of the job. Are executed in the order provided.
     */
   var actions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Action]] = js.undefined
   
@@ -39,7 +34,7 @@ object SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setPrivacyMetric(value: SchemaGooglePrivacyDlpV2PrivacyMetric): Self = StObject.set(x, "privacyMetric", value.asInstanceOf[js.Any])
     

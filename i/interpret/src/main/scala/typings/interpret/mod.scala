@@ -3,7 +3,6 @@ package typings.interpret
 import org.scalablytyped.runtime.StringDictionary
 import typings.interpret.anon.Dictkey
 import typings.interpret.anon.Extensions
-import typings.node.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,8 +47,10 @@ object mod {
   @js.native
   trait Hook extends StObject {
     
-    def apply(m: Extensions): js.Any = js.native
-    def apply(m: NodeModule): js.Any = js.native
+    def apply(
+      m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
+    ): Any = js.native
+    def apply(m: Extensions): Any = js.native
     
     def install(): Unit = js.native
     def install(m: Dictkey): Unit = js.native

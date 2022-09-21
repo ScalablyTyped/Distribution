@@ -43,14 +43,6 @@ object ddTraceStrings {
   inline def `aws-sdk`: `aws-sdk` = "aws-sdk".asInstanceOf[`aws-sdk`]
   
   @js.native
-  sealed trait bluebird extends StObject
-  inline def bluebird: bluebird = "bluebird".asInstanceOf[bluebird]
-  
-  @js.native
-  sealed trait browser extends StObject
-  inline def browser: browser = "browser".asInstanceOf[browser]
-  
-  @js.native
   sealed trait bunyan extends StObject
   inline def bunyan: bunyan = "bunyan".asInstanceOf[bunyan]
   
@@ -75,6 +67,18 @@ object ddTraceStrings {
   inline def couchbase: couchbase = "couchbase".asInstanceOf[couchbase]
   
   @js.native
+  sealed trait cucumber extends StObject
+  inline def cucumber: cucumber = "cucumber".asInstanceOf[cucumber]
+  
+  @js.native
+  sealed trait cypress extends StObject
+  inline def cypress: cypress = "cypress".asInstanceOf[cypress]
+  
+  @js.native
+  sealed trait datadog extends StObject
+  inline def datadog: datadog = "datadog".asInstanceOf[datadog]
+  
+  @js.native
   sealed trait debug extends StObject
   inline def debug: debug = "debug".asInstanceOf[debug]
   
@@ -97,10 +101,6 @@ object ddTraceStrings {
   @js.native
   sealed trait fastify extends StObject
   inline def fastify: fastify = "fastify".asInstanceOf[fastify]
-  
-  @js.native
-  sealed trait fs extends StObject
-  inline def fs: fs = "fs".asInstanceOf[fs]
   
   @js.native
   sealed trait `generic-pool` extends StObject
@@ -131,6 +131,10 @@ object ddTraceStrings {
   inline def http2: http2 = "http2".asInstanceOf[http2]
   
   @js.native
+  sealed trait httpDotclient_ip extends StObject
+  inline def httpDotclient_ip: httpDotclient_ip = "http.client_ip".asInstanceOf[httpDotclient_ip]
+  
+  @js.native
   sealed trait httpDotmethod extends StObject
   inline def httpDotmethod: httpDotmethod = "http.method".asInstanceOf[httpDotmethod]
   
@@ -155,8 +159,20 @@ object ddTraceStrings {
   inline def httpDoturl: httpDoturl = "http.url".asInstanceOf[httpDoturl]
   
   @js.native
+  sealed trait httpDotuseragent extends StObject
+  inline def httpDotuseragent: httpDotuseragent = "http.useragent".asInstanceOf[httpDotuseragent]
+  
+  @js.native
   sealed trait ioredis extends StObject
   inline def ioredis: ioredis = "ioredis".asInstanceOf[ioredis]
+  
+  @js.native
+  sealed trait jest extends StObject
+  inline def jest: jest = "jest".asInstanceOf[jest]
+  
+  @js.native
+  sealed trait kafkajs extends StObject
+  inline def kafkajs: kafkajs = "kafkajs".asInstanceOf[kafkajs]
   
   @js.native
   sealed trait knex extends StObject
@@ -165,10 +181,6 @@ object ddTraceStrings {
   @js.native
   sealed trait koa extends StObject
   inline def koa: koa = "koa".asInstanceOf[koa]
-  
-  @js.native
-  sealed trait `limitd-client` extends StObject
-  inline def `limitd-client`: `limitd-client` = "limitd-client".asInstanceOf[`limitd-client`]
   
   @js.native
   sealed trait log extends StObject
@@ -191,6 +203,14 @@ object ddTraceStrings {
   inline def `microgateway-core`: `microgateway-core` = "microgateway-core".asInstanceOf[`microgateway-core`]
   
   @js.native
+  sealed trait mocha extends StObject
+  inline def mocha: mocha = "mocha".asInstanceOf[mocha]
+  
+  @js.native
+  sealed trait moleculer extends StObject
+  inline def moleculer: moleculer = "moleculer".asInstanceOf[moleculer]
+  
+  @js.native
   sealed trait `mongodb-core` extends StObject
   inline def `mongodb-core`: `mongodb-core` = "mongodb-core".asInstanceOf[`mongodb-core`]
   
@@ -211,8 +231,16 @@ object ddTraceStrings {
   inline def net: net = "net".asInstanceOf[net]
   
   @js.native
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
+  
+  @js.native
   sealed trait noop extends StObject
   inline def noop: noop = "noop".asInstanceOf[noop]
+  
+  @js.native
+  sealed trait oracledb extends StObject
+  inline def oracledb: oracledb = "oracledb".asInstanceOf[oracledb]
   
   @js.native
   sealed trait paperplane extends StObject
@@ -229,18 +257,6 @@ object ddTraceStrings {
   @js.native
   sealed trait producer extends StObject
   inline def producer: producer = "producer".asInstanceOf[producer]
-  
-  @js.native
-  sealed trait promise extends StObject
-  inline def promise: promise = "promise".asInstanceOf[promise]
-  
-  @js.native
-  sealed trait `promise-js` extends StObject
-  inline def `promise-js`: `promise-js` = "promise-js".asInstanceOf[`promise-js`]
-  
-  @js.native
-  sealed trait q extends StObject
-  inline def q: q = "q".asInstanceOf[q]
   
   @js.native
   sealed trait redis extends StObject
@@ -275,6 +291,10 @@ object ddTraceStrings {
   inline def serviceDotname: serviceDotname = "service.name".asInstanceOf[serviceDotname]
   
   @js.native
+  sealed trait sharedb extends StObject
+  inline def sharedb: sharedb = "sharedb".asInstanceOf[sharedb]
+  
+  @js.native
   sealed trait spanDotkind extends StObject
   inline def spanDotkind: spanDotkind = "span.kind".asInstanceOf[spanDotkind]
   
@@ -283,16 +303,16 @@ object ddTraceStrings {
   inline def spanDottype: spanDottype = "span.type".asInstanceOf[spanDottype]
   
   @js.native
+  sealed trait sync extends StObject
+  inline def sync: sync = "sync".asInstanceOf[sync]
+  
+  @js.native
   sealed trait tedious extends StObject
   inline def tedious: tedious = "tedious".asInstanceOf[tedious]
   
   @js.native
   sealed trait web extends StObject
   inline def web: web = "web".asInstanceOf[web]
-  
-  @js.native
-  sealed trait when extends StObject
-  inline def when: when = "when".asInstanceOf[when]
   
   @js.native
   sealed trait winston extends StObject

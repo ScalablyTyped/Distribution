@@ -11,5 +11,5 @@ object omitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def omit(`object`: StringDictionary[js.Any], keysToOmit: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(`object`.asInstanceOf[js.Any], keysToOmit.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def omit(`object`: StringDictionary[Any], keysToOmit: js.Array[String]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(`object`.asInstanceOf[js.Any], keysToOmit.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
 }

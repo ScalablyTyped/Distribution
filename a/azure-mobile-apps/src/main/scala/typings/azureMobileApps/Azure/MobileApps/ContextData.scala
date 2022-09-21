@@ -10,5 +10,5 @@ trait ContextData extends StObject {
   
   def apply(table: TableDefinition): Table = js.native
   
-  def execute(q: SqlQueryDefinition): Thenable[js.Any] = js.native
+  def execute(q: SqlQueryDefinition): Thenable[Any] = js.native
 }

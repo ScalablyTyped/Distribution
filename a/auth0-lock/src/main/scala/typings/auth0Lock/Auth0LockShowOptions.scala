@@ -23,7 +23,7 @@ trait Auth0LockShowOptions extends StObject {
   
   var initialScreen: js.UndefOr[login | signUp | forgotPassword] = js.undefined
   
-  var languageDictionary: js.UndefOr[js.Any] = js.undefined
+  var languageDictionary: js.UndefOr[Any] = js.undefined
   
   var rememberLastLogin: js.UndefOr[Boolean] = js.undefined
 }
@@ -52,7 +52,7 @@ object Auth0LockShowOptions {
     
     inline def setAllowedConnectionsUndefined: Self = StObject.set(x, "allowedConnections", js.undefined)
     
-    inline def setAllowedConnectionsVarargs(value: String*): Self = StObject.set(x, "allowedConnections", js.Array(value :_*))
+    inline def setAllowedConnectionsVarargs(value: String*): Self = StObject.set(x, "allowedConnections", js.Array(value*))
     
     inline def setAuth(value: Auth0LockAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object Auth0LockShowOptions {
     
     inline def setInitialScreenUndefined: Self = StObject.set(x, "initialScreen", js.undefined)
     
-    inline def setLanguageDictionary(value: js.Any): Self = StObject.set(x, "languageDictionary", value.asInstanceOf[js.Any])
+    inline def setLanguageDictionary(value: Any): Self = StObject.set(x, "languageDictionary", value.asInstanceOf[js.Any])
     
     inline def setLanguageDictionaryUndefined: Self = StObject.set(x, "languageDictionary", js.undefined)
     

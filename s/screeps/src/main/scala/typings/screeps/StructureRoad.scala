@@ -12,7 +12,7 @@ trait StructureRoad
   extends StObject
      with Structure[STRUCTURE_ROAD]
      with AnyStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The amount of game ticks when this road will lose some hit points.

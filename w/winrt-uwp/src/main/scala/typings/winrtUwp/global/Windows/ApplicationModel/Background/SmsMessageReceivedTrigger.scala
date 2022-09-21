@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a trigger that is raised when an SMS message has arrived. */
 @JSGlobal("Windows.ApplicationModel.Background.SmsMessageReceivedTrigger")
 @js.native
-class SmsMessageReceivedTrigger protected ()
+open class SmsMessageReceivedTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.SmsMessageReceivedTrigger {
   /**

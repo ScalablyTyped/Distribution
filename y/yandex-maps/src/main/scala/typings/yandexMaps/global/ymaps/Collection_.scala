@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Collection")
 @js.native
-class Collection_[T] ()
+open class Collection_[T] ()
   extends typings.yandexMaps.mod.Collection_[T] {
   def this(options: js.Object) = this()
 }

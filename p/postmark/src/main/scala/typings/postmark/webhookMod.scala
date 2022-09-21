@@ -10,7 +10,7 @@ object webhookMod {
   
   @JSImport("postmark/dist/client/models/webhooks/Webhook", "CreateWebhookRequest")
   @js.native
-  class CreateWebhookRequest () extends UpdateWebhookRequest {
+  open class CreateWebhookRequest () extends UpdateWebhookRequest {
     def this(url: String) = this()
     def this(url: String, triggers: WebhookRequestTriggers) = this()
     def this(url: Unit, triggers: WebhookRequestTriggers) = this()
@@ -26,11 +26,89 @@ object webhookMod {
     def this(url: Unit, triggers: Unit, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
     def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: Unit, httpHeaders: js.Array[Header]) = this()
     def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: HttpAuth, httpHeaders: js.Array[Header]) = this()
+    def this(url: String, triggers: Unit, httpAuth: Unit, httpHeaders: js.Array[Header], messageStream: String) = this()
+    def this(url: String, triggers: Unit, httpAuth: Unit, httpHeaders: Unit, messageStream: String) = this()
+    def this(
+      url: String,
+      triggers: Unit,
+      httpAuth: HttpAuth,
+      httpHeaders: js.Array[Header],
+      messageStream: String
+    ) = this()
+    def this(url: String, triggers: Unit, httpAuth: HttpAuth, httpHeaders: Unit, messageStream: String) = this()
+    def this(
+      url: String,
+      triggers: WebhookRequestTriggers,
+      httpAuth: Unit,
+      httpHeaders: js.Array[Header],
+      messageStream: String
+    ) = this()
+    def this(
+      url: String,
+      triggers: WebhookRequestTriggers,
+      httpAuth: Unit,
+      httpHeaders: Unit,
+      messageStream: String
+    ) = this()
+    def this(
+      url: String,
+      triggers: WebhookRequestTriggers,
+      httpAuth: HttpAuth,
+      httpHeaders: js.Array[Header],
+      messageStream: String
+    ) = this()
+    def this(
+      url: String,
+      triggers: WebhookRequestTriggers,
+      httpAuth: HttpAuth,
+      httpHeaders: Unit,
+      messageStream: String
+    ) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: Unit, httpHeaders: js.Array[Header], messageStream: String) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: Unit, httpHeaders: Unit, messageStream: String) = this()
+    def this(
+      url: Unit,
+      triggers: Unit,
+      httpAuth: HttpAuth,
+      httpHeaders: js.Array[Header],
+      messageStream: String
+    ) = this()
+    def this(url: Unit, triggers: Unit, httpAuth: HttpAuth, httpHeaders: Unit, messageStream: String) = this()
+    def this(
+      url: Unit,
+      triggers: WebhookRequestTriggers,
+      httpAuth: Unit,
+      httpHeaders: js.Array[Header],
+      messageStream: String
+    ) = this()
+    def this(
+      url: Unit,
+      triggers: WebhookRequestTriggers,
+      httpAuth: Unit,
+      httpHeaders: Unit,
+      messageStream: String
+    ) = this()
+    def this(
+      url: Unit,
+      triggers: WebhookRequestTriggers,
+      httpAuth: HttpAuth,
+      httpHeaders: js.Array[Header],
+      messageStream: String
+    ) = this()
+    def this(
+      url: Unit,
+      triggers: WebhookRequestTriggers,
+      httpAuth: HttpAuth,
+      httpHeaders: Unit,
+      messageStream: String
+    ) = this()
+    
+    var MessageStream: js.UndefOr[String] = js.native
   }
   
   @JSImport("postmark/dist/client/models/webhooks/Webhook", "UpdateWebhookRequest")
   @js.native
-  class UpdateWebhookRequest () extends StObject {
+  open class UpdateWebhookRequest () extends StObject {
     def this(url: String) = this()
     def this(url: String, triggers: WebhookRequestTriggers) = this()
     def this(url: Unit, triggers: WebhookRequestTriggers) = this()
@@ -171,7 +249,7 @@ object webhookMod {
       
       inline def setHttpHeadersUndefined: Self = StObject.set(x, "HttpHeaders", js.undefined)
       
-      inline def setHttpHeadersVarargs(value: Header*): Self = StObject.set(x, "HttpHeaders", js.Array(value :_*))
+      inline def setHttpHeadersVarargs(value: Header*): Self = StObject.set(x, "HttpHeaders", js.Array(value*))
       
       inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
@@ -194,6 +272,8 @@ object webhookMod {
     var Open: js.UndefOr[OpenWebhookTrigger] = js.undefined
     
     var SpamComplaint: js.UndefOr[SpamWebhookTrigger] = js.undefined
+    
+    var SubscriptionChange: js.UndefOr[WebhookTrigger] = js.undefined
   }
   object WebhookRequestTriggers {
     
@@ -223,6 +303,10 @@ object webhookMod {
       inline def setSpamComplaint(value: SpamWebhookTrigger): Self = StObject.set(x, "SpamComplaint", value.asInstanceOf[js.Any])
       
       inline def setSpamComplaintUndefined: Self = StObject.set(x, "SpamComplaint", js.undefined)
+      
+      inline def setSubscriptionChange(value: WebhookTrigger): Self = StObject.set(x, "SubscriptionChange", value.asInstanceOf[js.Any])
+      
+      inline def setSubscriptionChangeUndefined: Self = StObject.set(x, "SubscriptionChange", js.undefined)
     }
   }
   

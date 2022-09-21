@@ -10,5 +10,5 @@ trait LiteralExpression
      with LiteralLikeNode
      with PrimaryExpression {
   
-  var _literalExpressionBrand: js.Any = js.native
+  var _literalExpressionBrand: Any = js.native
 }

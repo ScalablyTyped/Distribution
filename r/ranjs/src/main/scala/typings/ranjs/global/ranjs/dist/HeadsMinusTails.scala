@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.HeadsMinusTails")
 @js.native
-class HeadsMinusTails ()
+open class HeadsMinusTails ()
   extends typings.ranjs.mod.dist.HeadsMinusTails {
   def this(n: Double) = this()
 }

@@ -9,10 +9,10 @@ A complete and fast template engine fully compatible with twig and similar to ji
 | ------------------ | :-------------: |
 | Full name          | atpl |
 | Keywords           | template, engine, inheritance, twig, jinja, django, swig, consolidate, express |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 9114 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6321.333333333333 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/soywiz/atpl.js)

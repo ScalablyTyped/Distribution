@@ -14,7 +14,7 @@ trait IBatch
     * @param operation Object The Operation object
     * @returns Ext.data.Batch this
     */
-  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var autoStart: js.UndefOr[Boolean] = js.undefined
@@ -60,7 +60,7 @@ trait IBatch
     * @param index Object
     * @returns Ext.data.Batch this
     */
-  var start: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var start: js.UndefOr[js.Function1[/* index */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Property] (Number) */
   var total: js.UndefOr[Double] = js.undefined
@@ -74,7 +74,7 @@ object IBatch {
   
   extension [Self <: IBatch](x: Self) {
     
-    inline def setAdd(value: /* operation */ js.UndefOr[js.Any] => IBatch): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* operation */ js.UndefOr[Any] => IBatch): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
@@ -122,7 +122,7 @@ object IBatch {
     
     inline def setRunOperationUndefined: Self = StObject.set(x, "runOperation", js.undefined)
     
-    inline def setStart(value: /* index */ js.UndefOr[js.Any] => IBatch): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* index */ js.UndefOr[Any] => IBatch): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

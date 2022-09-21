@@ -32,6 +32,11 @@ trait EbsInstanceBlockDeviceSpecification extends StObject {
   var snapshotId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    *  For GP3 volumes only – The throughput in MiB/s that the volume supports. 
+    */
+  var throughput: js.UndefOr[EbsVolumeThroughput] = js.undefined
+  
+  /**
     * Use to override the device's volume size.
     */
   var volumeSize: js.UndefOr[EbsVolumeSizeInteger] = js.undefined
@@ -69,6 +74,10 @@ object EbsInstanceBlockDeviceSpecification {
     inline def setSnapshotId(value: NonEmptyString): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
     inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+    
+    inline def setThroughput(value: EbsVolumeThroughput): Self = StObject.set(x, "throughput", value.asInstanceOf[js.Any])
+    
+    inline def setThroughputUndefined: Self = StObject.set(x, "throughput", js.undefined)
     
     inline def setVolumeSize(value: EbsVolumeSizeInteger): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
     

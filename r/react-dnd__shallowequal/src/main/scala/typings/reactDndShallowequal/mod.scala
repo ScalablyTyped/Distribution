@@ -20,7 +20,7 @@ object mod {
     objA: T,
     objB: T,
     compare: js.Function3[/* a */ T, /* b */ T, /* key */ js.UndefOr[String], Boolean | Unit],
-    compareContext: js.Any
+    compareContext: Any
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], compareContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def shallowEqual[T](objA: T, objB: T, compare: Unit, compareContext: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], compareContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shallowEqual[T](objA: T, objB: T, compare: Unit, compareContext: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], compareContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

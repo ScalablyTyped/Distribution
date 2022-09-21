@@ -7,38 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyCredential extends StObject {
   
   // Custom key identifier
-  var customKeyIdentifier: js.UndefOr[NullableOption[Double]] = js.undefined
+  var customKeyIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Friendly name for the key. Optional.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The date and time at which the credential expires.The Timestamp type represents date and time information using ISO
-    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * The date and time at which the credential expires. The DateTimeOffset type represents date and time information using
+    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
   var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The certificate's raw data in byte array converted to Base64 string; for example,
-    * [System.Convert]::ToBase64String($Cert.GetRawCertData()).
+    * The certificate's raw data in byte array converted to Base64 string. Returned only on $select for a single object, that
+    * is, GET applications/{applicationId}?$select=keyCredentials or GET
+    * servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
     */
-  var key: js.UndefOr[NullableOption[Double]] = js.undefined
+  var key: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier (GUID) for the key.
   var keyId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The date and time at which the credential becomes valid.The Timestamp type represents date and time information using
-    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
   var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The type of key credential; for example, 'Symmetric'.
+  // The type of key credential; for example, Symmetric, AsymmetricX509Cert.
   var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // A string that describes the purpose for which the key can be used; for example, 'Verify'.
+  // A string that describes the purpose for which the key can be used; for example, Verify.
   var usage: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object KeyCredential {
@@ -50,7 +49,7 @@ object KeyCredential {
   
   extension [Self <: KeyCredential](x: Self) {
     
-    inline def setCustomKeyIdentifier(value: NullableOption[Double]): Self = StObject.set(x, "customKeyIdentifier", value.asInstanceOf[js.Any])
+    inline def setCustomKeyIdentifier(value: NullableOption[String]): Self = StObject.set(x, "customKeyIdentifier", value.asInstanceOf[js.Any])
     
     inline def setCustomKeyIdentifierNull: Self = StObject.set(x, "customKeyIdentifier", null)
     
@@ -68,7 +67,7 @@ object KeyCredential {
     
     inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    inline def setKey(value: NullableOption[Double]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: NullableOption[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyId(value: NullableOption[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     

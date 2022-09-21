@@ -1,7 +1,7 @@
 
 # Scala.js typings for log-symbols
 
-Typings are for version 4.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Colored symbols for various log levels. Example: `✔︎ Success`
@@ -10,10 +10,10 @@ Colored symbols for various log levels. Example: `✔︎ Success`
 | ------------------ | :-------------: |
 | Full name          | log-symbols |
 | Keywords           | unicode, cli, cmd, command-line, characters, symbol, symbols, figure, figures, fallback, windows, log, logging, terminal, stdout |
-| # releases         | 3 |
-| # dependents       | 2229 |
-| # downloads        | 622490942 |
-| # stars            | 34 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.07873863E8 |
+| # stars            | 658.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/log-symbols#readme)

@@ -14,7 +14,7 @@ trait ListAuditFindingsRequest extends StObject {
   /**
     * A filter to limit results to those found before the specified time. You must specify either the startTime and endTime or the taskId, but not both.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Boolean flag indicating whether only the suppressed findings or the unsuppressed findings should be listed. If this parameter isn't provided, the response will list both suppressed and unsuppressed findings. 
@@ -39,7 +39,7 @@ trait ListAuditFindingsRequest extends StObject {
   /**
     * A filter to limit results to those found after the specified time. You must specify either the startTime and endTime or the taskId, but not both.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter to limit results to the audit with the specified ID. You must specify either the taskId or the startTime and endTime, but not both.
@@ -59,7 +59,7 @@ object ListAuditFindingsRequest {
     
     inline def setCheckNameUndefined: Self = StObject.set(x, "checkName", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -79,7 +79,7 @@ object ListAuditFindingsRequest {
     
     inline def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

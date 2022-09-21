@@ -10,13 +10,13 @@ trait KnockoutPageGenerator extends StObject {
 }
 object KnockoutPageGenerator {
   
-  inline def apply(generate: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): KnockoutPageGenerator = {
+  inline def apply(generate: KnockoutPagedObservableArray[Any] => js.Array[Double]): KnockoutPageGenerator = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate))
     __obj.asInstanceOf[KnockoutPageGenerator]
   }
   
   extension [Self <: KnockoutPageGenerator](x: Self) {
     
-    inline def setGenerate(value: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+    inline def setGenerate(value: KnockoutPagedObservableArray[Any] => js.Array[Double]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
   }
 }

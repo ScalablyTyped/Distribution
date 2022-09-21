@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ColorPickerGridCellBase")
 @js.native
-class ColorPickerGridCellBase protected ()
+open class ColorPickerGridCellBase protected ()
   extends typings.officeUiFabricReact.mod.ColorPickerGridCellBase {
   def this(props: IColorPickerGridCellProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IColorPickerGridCellProps, context: js.Any) = this()
+  def this(props: IColorPickerGridCellProps, context: Any) = this()
 }
 /* static members */
 object ColorPickerGridCellBase {

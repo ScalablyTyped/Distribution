@@ -8,7 +8,7 @@ object amXYChartMod {
   
   @JSImport("amcharts/AmXYChart", JSImport.Default)
   @js.native
-  class default () extends AmXYChart
+  open class default () extends AmXYChart
   
   @js.native
   trait AmXYChart

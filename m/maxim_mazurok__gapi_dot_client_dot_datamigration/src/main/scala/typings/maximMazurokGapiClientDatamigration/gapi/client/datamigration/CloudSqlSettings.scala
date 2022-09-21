@@ -19,6 +19,12 @@ trait CloudSqlSettings extends StObject {
     */
   var autoStorageIncrease: js.UndefOr[Boolean] = js.undefined
   
+  /** The KMS key name used for the csql instance. */
+  var cmekKeyName: js.UndefOr[String] = js.undefined
+  
+  /** The Cloud SQL default instance level collation. */
+  var collation: js.UndefOr[String] = js.undefined
+  
   /** The storage capacity available to the database, in GB. The minimum (and default) size is 10GB. */
   var dataDiskSizeGb: js.UndefOr[String] = js.undefined
   
@@ -29,10 +35,10 @@ trait CloudSqlSettings extends StObject {
   var databaseFlags: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[Any]
   ] = js.undefined
   
-  /** The database engine type and version (such as `MYSQL_5_7` / `POSTGRES_9_6`). */
+  /** The database engine type and version. */
   var databaseVersion: js.UndefOr[String] = js.undefined
   
   /** The settings for IP Management. This allows to enable or disable the instance IP and manage which external networks can connect to the instance. The IPv4 address cannot be disabled. */
@@ -63,7 +69,7 @@ trait CloudSqlSettings extends StObject {
   var userLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[Any]
   ] = js.undefined
   
   /** The Google Cloud Platform zone where your Cloud SQL datdabse instance is located. */
@@ -86,6 +92,14 @@ object CloudSqlSettings {
     
     inline def setAutoStorageIncreaseUndefined: Self = StObject.set(x, "autoStorageIncrease", js.undefined)
     
+    inline def setCmekKeyName(value: String): Self = StObject.set(x, "cmekKeyName", value.asInstanceOf[js.Any])
+    
+    inline def setCmekKeyNameUndefined: Self = StObject.set(x, "cmekKeyName", js.undefined)
+    
+    inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+    
+    inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+    
     inline def setDataDiskSizeGb(value: String): Self = StObject.set(x, "dataDiskSizeGb", value.asInstanceOf[js.Any])
     
     inline def setDataDiskSizeGbUndefined: Self = StObject.set(x, "dataDiskSizeGb", js.undefined)
@@ -97,7 +111,7 @@ object CloudSqlSettings {
     inline def setDatabaseFlags(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[Any]
     ): Self = StObject.set(x, "databaseFlags", value.asInstanceOf[js.Any])
     
     inline def setDatabaseFlagsUndefined: Self = StObject.set(x, "databaseFlags", js.undefined)
@@ -133,7 +147,7 @@ object CloudSqlSettings {
     inline def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

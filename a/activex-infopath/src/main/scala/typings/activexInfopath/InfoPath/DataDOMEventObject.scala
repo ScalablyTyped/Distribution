@@ -15,9 +15,9 @@ trait DataDOMEventObject extends StObject {
   
   val MatchExpression: String = js.native
   
-  val NewValue: js.Any = js.native
+  val NewValue: Any = js.native
   
-  val OldValue: js.Any = js.native
+  val OldValue: Any = js.native
   
   val Operation: String = js.native
   
@@ -28,22 +28,22 @@ trait DataDOMEventObject extends StObject {
     * @param number [lErrorCode=0]
     * @param string [bstrType='modeless']
     */
-  def ReportError(varNode: js.Any, bstrShortErrorMessage: String, fSiteIndependent: Boolean): ErrorObject = js.native
+  def ReportError(varNode: Any, bstrShortErrorMessage: String, fSiteIndependent: Boolean): ErrorObject = js.native
   def ReportError(
-    varNode: js.Any,
+    varNode: Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: String
   ): ErrorObject = js.native
   def ReportError(
-    varNode: js.Any,
+    varNode: Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: String,
     lErrorCode: Double
   ): ErrorObject = js.native
   def ReportError(
-    varNode: js.Any,
+    varNode: Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: String,
@@ -51,7 +51,7 @@ trait DataDOMEventObject extends StObject {
     bstrType: String
   ): ErrorObject = js.native
   def ReportError(
-    varNode: js.Any,
+    varNode: Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: String,
@@ -59,14 +59,14 @@ trait DataDOMEventObject extends StObject {
     bstrType: String
   ): ErrorObject = js.native
   def ReportError(
-    varNode: js.Any,
+    varNode: Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: Unit,
     lErrorCode: Double
   ): ErrorObject = js.native
   def ReportError(
-    varNode: js.Any,
+    varNode: Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: Unit,
@@ -74,7 +74,7 @@ trait DataDOMEventObject extends StObject {
     bstrType: String
   ): ErrorObject = js.native
   def ReportError(
-    varNode: js.Any,
+    varNode: Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: Unit,

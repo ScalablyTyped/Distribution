@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Proximity")
 @js.native
-class Proximity protected () extends StObject {
+open class Proximity protected () extends StObject {
   def this(option: Double) = this()
   def this(option: ProximityOption) = this()
   

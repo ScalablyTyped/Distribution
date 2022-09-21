@@ -9,17 +9,17 @@ trait Module extends StObject {
   /**
     * 导出内容
     */
-  var exports: js.Any
+  var exports: Any
 }
 object Module {
   
-  inline def apply(exports: js.Any): Module = {
+  inline def apply(exports: Any): Module = {
     val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }
   
   extension [Self <: Module](x: Self) {
     
-    inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
   }
 }

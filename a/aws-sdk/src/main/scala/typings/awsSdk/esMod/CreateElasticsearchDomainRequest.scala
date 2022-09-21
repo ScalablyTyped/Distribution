@@ -22,6 +22,11 @@ trait CreateElasticsearchDomainRequest extends StObject {
   var AdvancedSecurityOptions: js.UndefOr[AdvancedSecurityOptionsInput] = js.undefined
   
   /**
+    * Specifies Auto-Tune options.
+    */
+  var AutoTuneOptions: js.UndefOr[AutoTuneOptionsInput] = js.undefined
+  
+  /**
     * Options to specify the Cognito user and identity pools for Kibana authentication. For more information, see Amazon Cognito Authentication for Kibana.
     */
   var CognitoOptions: js.UndefOr[typings.awsSdk.esMod.CognitoOptions] = js.undefined
@@ -72,6 +77,11 @@ trait CreateElasticsearchDomainRequest extends StObject {
   var SnapshotOptions: js.UndefOr[typings.awsSdk.esMod.SnapshotOptions] = js.undefined
   
   /**
+    * A list of Tag added during domain creation.
+    */
+  var TagList: js.UndefOr[typings.awsSdk.esMod.TagList] = js.undefined
+  
+  /**
     * Options to specify the subnets and security groups for VPC endpoint. For more information, see Creating a VPC in VPC Endpoints for Amazon Elasticsearch Service Domains
     */
   var VPCOptions: js.UndefOr[typings.awsSdk.esMod.VPCOptions] = js.undefined
@@ -96,6 +106,10 @@ object CreateElasticsearchDomainRequest {
     inline def setAdvancedSecurityOptions(value: AdvancedSecurityOptionsInput): Self = StObject.set(x, "AdvancedSecurityOptions", value.asInstanceOf[js.Any])
     
     inline def setAdvancedSecurityOptionsUndefined: Self = StObject.set(x, "AdvancedSecurityOptions", js.undefined)
+    
+    inline def setAutoTuneOptions(value: AutoTuneOptionsInput): Self = StObject.set(x, "AutoTuneOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAutoTuneOptionsUndefined: Self = StObject.set(x, "AutoTuneOptions", js.undefined)
     
     inline def setCognitoOptions(value: CognitoOptions): Self = StObject.set(x, "CognitoOptions", value.asInstanceOf[js.Any])
     
@@ -134,6 +148,12 @@ object CreateElasticsearchDomainRequest {
     inline def setSnapshotOptions(value: SnapshotOptions): Self = StObject.set(x, "SnapshotOptions", value.asInstanceOf[js.Any])
     
     inline def setSnapshotOptionsUndefined: Self = StObject.set(x, "SnapshotOptions", js.undefined)
+    
+    inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
+    
+    inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
+    
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
     
     inline def setVPCOptions(value: VPCOptions): Self = StObject.set(x, "VPCOptions", value.asInstanceOf[js.Any])
     

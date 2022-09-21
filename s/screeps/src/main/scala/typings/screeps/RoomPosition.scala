@@ -2,7 +2,6 @@ package typings.screeps
 
 import typings.screeps.anon.Algorithm
 import typings.screeps.anon.Filter
-import typings.screeps.anon.FindPathOptsPartialFilter
 import typings.screeps.anon.LookAtResultLookConstant
 import typings.screeps.anon.Pos
 import typings.screeps.anon.`14`
@@ -88,20 +87,29 @@ trait RoomPosition extends StObject {
     */
   def findClosestByPath[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T]): T | Null = js.native
   def findClosestByPath[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: FindPathOpts & Filter[T]): T | Null = js.native
+  def findClosestByPath[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES): S | Null = js.native
+  def findClosestByPath[S /* <: AnyStructure */](
+    `type`: FIND_HOSTILE_STRUCTURES,
+    opts: FindPathOpts & (Partial[FilterOptions[FIND_STRUCTURES, S]]) & Algorithm
+  ): S | Null = js.native
+  def findClosestByPath[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES): S | Null = js.native
+  def findClosestByPath[S /* <: AnyStructure */](
+    `type`: FIND_MY_STRUCTURES,
+    opts: FindPathOpts & (Partial[FilterOptions[FIND_STRUCTURES, S]]) & Algorithm
+  ): S | Null = js.native
+  def findClosestByPath[S /* <: AnyStructure */](`type`: FIND_STRUCTURES): S | Null = js.native
+  def findClosestByPath[S /* <: AnyStructure */](
+    `type`: FIND_STRUCTURES,
+    opts: FindPathOpts & (Partial[FilterOptions[FIND_STRUCTURES, S]]) & Algorithm
+  ): S | Null = js.native
   /**
     * Find the object with the shortest path from the given position. Uses A* search algorithm and Dijkstra's algorithm.
     * @param type Any of the FIND_* constants.
     * @param opts An object containing pathfinding options (see Room.findPath), or one of the following: filter, algorithm
     * @returns An instance of a RoomObject.
     */
-  def findClosestByPath[K /* <: FindConstant */](`type`: K): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
-  def findClosestByPath[K /* <: FindConstant */](`type`: K, opts: FindPathOpts & Partial[FilterOptions[K]] & Algorithm): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): T | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FindPathOptsPartialFilter): T | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES): T | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES, opts: FindPathOptsPartialFilter): T | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES): T | Null = js.native
-  def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES, opts: FindPathOptsPartialFilter): T | Null = js.native
+  def findClosestByPath[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K): S | Null = js.native
+  def findClosestByPath[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K, opts: FindPathOpts & (Partial[FilterOptions[K, S]]) & Algorithm): S | Null = js.native
   
   /**
     * Find the object with the shortest linear distance from the given position.
@@ -110,19 +118,19 @@ trait RoomPosition extends StObject {
     */
   def findClosestByRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T]): T | Null = js.native
   def findClosestByRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: `14`): T | Null = js.native
+  def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES): S | Null = js.native
+  def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): S | Null = js.native
+  def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES): S | Null = js.native
+  def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): S | Null = js.native
+  def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_STRUCTURES): S | Null = js.native
+  def findClosestByRange[S /* <: AnyStructure */](`type`: FIND_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): S | Null = js.native
   /**
     * Find the object with the shortest linear distance from the given position.
     * @param type Any of the FIND_* constants.
     * @param opts An object containing pathfinding options (see Room.findPath), or one of the following: filter, algorithm
     */
-  def findClosestByRange[K /* <: FindConstant */](`type`: K): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
-  def findClosestByRange[K /* <: FindConstant */](`type`: K, opts: FilterOptions[K]): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
-  def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): T | Null = js.native
-  def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): T | Null = js.native
-  def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES): T | Null = js.native
-  def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): T | Null = js.native
-  def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES): T | Null = js.native
-  def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): T | Null = js.native
+  def findClosestByRange[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K): S | Null = js.native
+  def findClosestByRange[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K, opts: FilterOptions[K, S]): S | Null = js.native
   
   /**
     * Find all objects in the specified linear range.
@@ -132,24 +140,20 @@ trait RoomPosition extends StObject {
     */
   def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double): js.Array[T] = js.native
   def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double, opts: `15`): js.Array[T] = js.native
+  def findInRange[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES, range: Double): js.Array[S] = js.native
+  def findInRange[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES, range: Double, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
+  def findInRange[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES, range: Double): js.Array[S] = js.native
+  def findInRange[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES, range: Double, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
+  def findInRange[S /* <: AnyStructure */](`type`: FIND_STRUCTURES, range: Double): js.Array[S] = js.native
+  def findInRange[S /* <: AnyStructure */](`type`: FIND_STRUCTURES, range: Double, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
   /**
     * Find all objects in the specified linear range.
     * @param type Any of the FIND_* constants.
     * @param range The range distance.
     * @param opts See Room.find.
     */
-  def findInRange[K /* <: FindConstant */](`type`: K, range: Double): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
-  ] = js.native
-  def findInRange[K /* <: FindConstant */](`type`: K, range: Double, opts: FilterOptions[K]): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
-  ] = js.native
-  def findInRange[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, range: Double): js.Array[T] = js.native
-  def findInRange[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, range: Double, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
-  def findInRange[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES, range: Double): js.Array[T] = js.native
-  def findInRange[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES, range: Double, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
-  def findInRange[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES, range: Double): js.Array[T] = js.native
-  def findInRange[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES, range: Double, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
+  def findInRange[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K, range: Double): js.Array[S] = js.native
+  def findInRange[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K, range: Double, opts: FilterOptions[K, S]): js.Array[S] = js.native
   
   def findPathTo(target: HasRoomPosition): js.Array[PathStep] = js.native
   def findPathTo(target: HasRoomPosition, opts: FindPathOpts): js.Array[PathStep] = js.native
@@ -258,7 +262,7 @@ trait RoomPosition extends StObject {
   @JSName("lookFor")
   def lookFor_energy(`type`: energy): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookFor")
-  def lookFor_exit(`type`: exit): js.Array[js.Any] = js.native
+  def lookFor_exit(`type`: exit): js.Array[Any] = js.native
   @JSName("lookFor")
   def lookFor_flag(`type`: flag): js.Array[Flag] = js.native
   @JSName("lookFor")

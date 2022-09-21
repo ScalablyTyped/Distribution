@@ -19,5 +19,5 @@ trait AccessObjects extends StObject {
   def Item(var_0: String): AccessObject = js.native
   def Item(var_0: Double): AccessObject = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

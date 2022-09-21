@@ -8,7 +8,7 @@ object shortestpathsMod {
   
   @JSImport("webcola/dist/src/shortestpaths", "Calculator")
   @js.native
-  class Calculator[Link] protected () extends StObject {
+  open class Calculator[Link] protected () extends StObject {
     def this(
       n: Double,
       es: js.Array[Link],
@@ -29,12 +29,12 @@ object shortestpathsMod {
       prevCost: js.Function3[/* u */ Double, /* v */ Double, /* w */ Double, Double]
     ): js.Array[Double] = js.native
     
-    /* private */ var dijkstraNeighbours: js.Any = js.native
+    /* private */ var dijkstraNeighbours: Any = js.native
     
     var es: js.Array[Link] = js.native
     
     var n: Double = js.native
     
-    /* private */ var neighbours: js.Any = js.native
+    /* private */ var neighbours: Any = js.native
   }
 }

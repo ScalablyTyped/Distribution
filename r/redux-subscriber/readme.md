@@ -11,9 +11,9 @@ Subscribe to changes in any part of redux state
 | Full name          | redux-subscriber |
 | Keywords           | redux, store, state, subscribe, subscriber, watch, watcher, observe, observer, react |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 189103 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24578.333333333332 |
+| # stars            | 212.0 |
 
 ## Links
 - [Homepage](https://github.com/ivantsov/redux-subscriber#readme)

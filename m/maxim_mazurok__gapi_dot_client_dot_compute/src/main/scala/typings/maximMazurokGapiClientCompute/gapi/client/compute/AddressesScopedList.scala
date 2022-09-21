@@ -26,7 +26,7 @@ object AddressesScopedList {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

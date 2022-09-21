@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_ml
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220728
 
 ## Library description:
 TypeScript typings for AI Platform Training & Prediction API v1
@@ -10,10 +10,10 @@ TypeScript typings for AI Platform Training & Prediction API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.ml |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 1473 |
-| # stars            | 0 |
+| # releases         | 61 |
+| # dependents       | 0.0 |
+| # downloads        | 841.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

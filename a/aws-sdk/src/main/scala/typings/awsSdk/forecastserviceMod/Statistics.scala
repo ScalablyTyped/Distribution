@@ -12,24 +12,44 @@ trait Statistics extends StObject {
   var Avg: js.UndefOr[Double] = js.undefined
   
   /**
-    * The number of values in the field.
+    * The number of values in the field. If the response value is -1, refer to CountLong.
     */
   var Count: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The number of distinct values in the field.
+    * The number of distinct values in the field. If the response value is -1, refer to CountDistinctLong.
     */
   var CountDistinct: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The number of NAN (not a number) values in the field.
+    * The number of distinct values in the field. CountDistinctLong is used instead of CountDistinct if the value is greater than 2,147,483,647.
+    */
+  var CountDistinctLong: js.UndefOr[Long] = js.undefined
+  
+  /**
+    * The number of values in the field. CountLong is used instead of Count if the value is greater than 2,147,483,647.
+    */
+  var CountLong: js.UndefOr[Long] = js.undefined
+  
+  /**
+    * The number of NAN (not a number) values in the field. If the response value is -1, refer to CountNanLong.
     */
   var CountNan: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The number of null values in the field.
+    * The number of NAN (not a number) values in the field. CountNanLong is used instead of CountNan if the value is greater than 2,147,483,647.
+    */
+  var CountNanLong: js.UndefOr[Long] = js.undefined
+  
+  /**
+    * The number of null values in the field. If the response value is -1, refer to CountNullLong.
     */
   var CountNull: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * The number of null values in the field. CountNullLong is used instead of CountNull if the value is greater than 2,147,483,647.
+    */
+  var CountNullLong: js.UndefOr[Long] = js.undefined
   
   /**
     * For a numeric field, the maximum value in the field.
@@ -63,13 +83,29 @@ object Statistics {
     
     inline def setCountDistinct(value: Integer): Self = StObject.set(x, "CountDistinct", value.asInstanceOf[js.Any])
     
+    inline def setCountDistinctLong(value: Long): Self = StObject.set(x, "CountDistinctLong", value.asInstanceOf[js.Any])
+    
+    inline def setCountDistinctLongUndefined: Self = StObject.set(x, "CountDistinctLong", js.undefined)
+    
     inline def setCountDistinctUndefined: Self = StObject.set(x, "CountDistinct", js.undefined)
     
+    inline def setCountLong(value: Long): Self = StObject.set(x, "CountLong", value.asInstanceOf[js.Any])
+    
+    inline def setCountLongUndefined: Self = StObject.set(x, "CountLong", js.undefined)
+    
     inline def setCountNan(value: Integer): Self = StObject.set(x, "CountNan", value.asInstanceOf[js.Any])
+    
+    inline def setCountNanLong(value: Long): Self = StObject.set(x, "CountNanLong", value.asInstanceOf[js.Any])
+    
+    inline def setCountNanLongUndefined: Self = StObject.set(x, "CountNanLong", js.undefined)
     
     inline def setCountNanUndefined: Self = StObject.set(x, "CountNan", js.undefined)
     
     inline def setCountNull(value: Integer): Self = StObject.set(x, "CountNull", value.asInstanceOf[js.Any])
+    
+    inline def setCountNullLong(value: Long): Self = StObject.set(x, "CountNullLong", value.asInstanceOf[js.Any])
+    
+    inline def setCountNullLongUndefined: Self = StObject.set(x, "CountNullLong", js.undefined)
     
     inline def setCountNullUndefined: Self = StObject.set(x, "CountNull", js.undefined)
     

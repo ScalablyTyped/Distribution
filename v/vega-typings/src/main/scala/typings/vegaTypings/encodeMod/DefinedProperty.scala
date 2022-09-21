@@ -22,6 +22,6 @@ object DefinedProperty {
     
     inline def setDefinedUndefined: Self = StObject.set(x, "defined", js.undefined)
     
-    inline def setDefinedVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "defined", js.Array(value :_*))
+    inline def setDefinedVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "defined", js.Array(value*))
   }
 }

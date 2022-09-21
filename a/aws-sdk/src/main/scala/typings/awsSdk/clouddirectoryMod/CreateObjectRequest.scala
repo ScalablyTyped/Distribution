@@ -50,7 +50,7 @@ object CreateObjectRequest {
     
     inline def setObjectAttributeListUndefined: Self = StObject.set(x, "ObjectAttributeList", js.undefined)
     
-    inline def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
+    inline def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value*))
     
     inline def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
     
@@ -58,6 +58,6 @@ object CreateObjectRequest {
     
     inline def setSchemaFacets(value: SchemaFacetList): Self = StObject.set(x, "SchemaFacets", value.asInstanceOf[js.Any])
     
-    inline def setSchemaFacetsVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacets", js.Array(value :_*))
+    inline def setSchemaFacetsVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacets", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ An easy to use and customizable pagination component for material ui.
 | ------------------ | :-------------: |
 | Full name          | material-ui-pagination |
 | Keywords           | pagination, material-ui |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 30961 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2208.3333333333335 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/lo-tp/material-ui-pagination#readme)

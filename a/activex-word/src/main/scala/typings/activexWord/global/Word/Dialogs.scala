@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Dialogs")
 @js.native
-/* private */ class Dialogs ()
+/* private */ open class Dialogs ()
   extends StObject
      with typings.activexWord.Word.Dialogs {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Index: WdWordDialog): typings.activexWord.Word.Dialog = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.Dialogs_typekey")

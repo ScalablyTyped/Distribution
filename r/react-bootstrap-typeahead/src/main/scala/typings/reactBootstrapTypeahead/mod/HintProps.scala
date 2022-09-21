@@ -9,10 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HintProps extends StObject {
   
+  /* Hint expects a single child: your input component. */
   var children: ReactNode
   
   var className: js.UndefOr[String] = js.undefined
   
+  /* Callback function that determines whether the hint should be selected. */
   var shouldSelect: js.UndefOr[ShouldSelect] = js.undefined
 }
 object HintProps {

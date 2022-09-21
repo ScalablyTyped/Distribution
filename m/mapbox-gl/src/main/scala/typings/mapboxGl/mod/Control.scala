@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "Control")
 @js.native
-class Control ()
+open class Control ()
   extends Evented
      with IControl {
   

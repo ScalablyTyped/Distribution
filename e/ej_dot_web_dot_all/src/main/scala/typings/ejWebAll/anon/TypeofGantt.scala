@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofGantt extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: Gantt
 }
 object TypeofGantt {
   
-  inline def apply(Locale: js.Any, fn: Gantt): TypeofGantt = {
+  inline def apply(Locale: Any, fn: Gantt): TypeofGantt = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofGantt]
   }
@@ -24,6 +24,6 @@ object TypeofGantt {
     
     inline def setFn(value: Gantt): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

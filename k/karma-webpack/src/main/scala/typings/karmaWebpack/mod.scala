@@ -1,9 +1,7 @@
 package typings.karmaWebpack
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.webpackDevMiddleware.mod.Options
-import typings.webpackDevMiddleware.mod.Reporter
-import typings.webpackDevMiddleware.mod.ReporterOptions
+import typings.webpack.mod.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,25 +11,20 @@ object mod {
   
   trait ConfigOptions extends StObject {
     
-    var webpack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Configuration */ js.Any
+    var webpack: Configuration
     
     var webpackMiddleware: KarmaWebpackMiddlewareOptions
   }
   object ConfigOptions {
     
-    inline def apply(
-      webpack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Configuration */ js.Any,
-      webpackMiddleware: KarmaWebpackMiddlewareOptions
-    ): ConfigOptions = {
+    inline def apply(webpack: Configuration, webpackMiddleware: KarmaWebpackMiddlewareOptions): ConfigOptions = {
       val __obj = js.Dynamic.literal(webpack = webpack.asInstanceOf[js.Any], webpackMiddleware = webpackMiddleware.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigOptions]
     }
     
     extension [Self <: ConfigOptions](x: Self) {
       
-      inline def setWebpack(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Configuration */ js.Any
-      ): Self = StObject.set(x, "webpack", value.asInstanceOf[js.Any])
+      inline def setWebpack(value: Configuration): Self = StObject.set(x, "webpack", value.asInstanceOf[js.Any])
       
       inline def setWebpackMiddleware(value: KarmaWebpackMiddlewareOptions): Self = StObject.set(x, "webpackMiddleware", value.asInstanceOf[js.Any])
     }
@@ -60,18 +53,20 @@ object mod {
     
     var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var reporter: js.UndefOr[Reporter | Null] = js.undefined
+    var reporter: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Reporter */ Any) | Null
+      ] = js.undefined
     
     var serverSideRender: js.UndefOr[Boolean] = js.undefined
     
     var stats: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.Stats */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.Stats */ Any
       ] = js.undefined
     
     var warn: js.UndefOr[Logger] = js.undefined
     
     var watchOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.WatchOptions */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.WatchOptions */ Any
       ] = js.undefined
   }
   object KarmaWebpackMiddlewareOptions {
@@ -119,7 +114,9 @@ object mod {
       
       inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      inline def setReporter(value: (/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit): Self = StObject.set(x, "reporter", js.Any.fromFunction2(value))
+      inline def setReporter(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Reporter */ Any
+      ): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
       inline def setReporterNull: Self = StObject.set(x, "reporter", null)
       
@@ -130,7 +127,7 @@ object mod {
       inline def setServerSideRenderUndefined: Self = StObject.set(x, "serverSideRender", js.undefined)
       
       inline def setStats(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.Stats */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.Stats */ Any
       ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
       inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
@@ -140,7 +137,7 @@ object mod {
       inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
       inline def setWatchOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.WatchOptions */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.WatchOptions */ Any
       ): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
       
       inline def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
@@ -150,7 +147,7 @@ object mod {
   @js.native
   trait Logger extends StObject {
     
-    def apply(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def apply(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def apply(message: Any, optionalParams: Any*): Unit = js.native
+    def apply(message: Unit, optionalParams: Any*): Unit = js.native
   }
 }

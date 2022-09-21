@@ -1,6 +1,6 @@
 package typings.progress
 
-import typings.node.NodeJS.WritableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
     */
   @JSImport("progress", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ProgressBar {
     def this(format: String, options: ProgressBarOptions) = this()
@@ -67,7 +67,9 @@ object mod {
       * progress bar's `fmt` field.
       */
     def render(): Unit = js.native
-    def render(tokens: js.Any): Unit = js.native
+    def render(tokens: Any): Unit = js.native
+    def render(tokens: Any, force: Boolean): Unit = js.native
+    def render(tokens: Unit, force: Boolean): Unit = js.native
     
     /**
       * Terminates a progress bar.
@@ -79,9 +81,9 @@ object mod {
       */
     def tick(): Unit = js.native
     def tick(count: Double): Unit = js.native
-    def tick(count: Double, tokens: js.Any): Unit = js.native
-    def tick(count: Unit, tokens: js.Any): Unit = js.native
-    def tick(tokens: js.Any): Unit = js.native
+    def tick(count: Double, tokens: Any): Unit = js.native
+    def tick(count: Unit, tokens: Any): Unit = js.native
+    def tick(tokens: Any): Unit = js.native
     
     /**
       * Total number of ticks to complete.
@@ -101,7 +103,7 @@ object mod {
       *   overall completion to.
       */
     def update(ratio: Double): Unit = js.native
-    def update(ratio: Double, tokens: js.Any): Unit = js.native
+    def update(ratio: Double, tokens: Any): Unit = js.native
   }
   
   /**
@@ -147,7 +149,7 @@ object mod {
     /**
       * The output stream defaulting to stderr.
       */
-    var stream: js.UndefOr[WritableStream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     /**
       * Total number of ticks to complete.
@@ -196,7 +198,7 @@ object mod {
       
       inline def setRenderThrottleUndefined: Self = StObject.set(x, "renderThrottle", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       

@@ -29,6 +29,6 @@ object ListTargetingOptionsResponse {
     
     inline def setTargetingOptionsUndefined: Self = StObject.set(x, "targetingOptions", js.undefined)
     
-    inline def setTargetingOptionsVarargs(value: TargetingOption*): Self = StObject.set(x, "targetingOptions", js.Array(value :_*))
+    inline def setTargetingOptionsVarargs(value: TargetingOption*): Self = StObject.set(x, "targetingOptions", js.Array(value*))
   }
 }

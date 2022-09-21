@@ -17,10 +17,10 @@ object oauth2Mod {
   @js.native
   trait OAuth2Client extends StObject {
     
-    def exchangeGrantToken(code: String, redirect_uri: String): js.Any = js.native
-    def exchangeGrantToken(code: String, redirect_uri: String, options: Granttype): js.Any = js.native
+    def exchangeGrantToken(code: String, redirect_uri: String): Any = js.native
+    def exchangeGrantToken(code: String, redirect_uri: String, options: Granttype): Any = js.native
     
-    def fetchActiveUser(access_token: String): js.Any = js.native
+    def fetchActiveUser(access_token: String): Any = js.native
     
     def getAuthUrl(redirect_uri: String): String = js.native
     def getAuthUrl(redirect_uri: String, options: Responsetype): String = js.native

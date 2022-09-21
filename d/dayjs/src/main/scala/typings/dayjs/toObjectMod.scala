@@ -10,7 +10,7 @@ object toObjectMod extends Shortcut {
   
   @JSImport("dayjs/esm/plugin/toObject", JSImport.Namespace)
   @js.native
-  val ^ : PluginFunc[js.Any] = js.native
+  val ^ : PluginFunc[Any] = js.native
   
   trait DayjsObject extends StObject {
     
@@ -61,10 +61,10 @@ object toObjectMod extends Shortcut {
     }
   }
   
-  type _To = PluginFunc[js.Any]
+  type _To = PluginFunc[Any]
   
   /* This means you don't have to write `^`, but can instead just say `toObjectMod.foo` */
-  override def _to: PluginFunc[js.Any] = ^
+  override def _to: PluginFunc[Any] = ^
   
   /* augmented module */
   object dayjsEsmAugmentingMod {

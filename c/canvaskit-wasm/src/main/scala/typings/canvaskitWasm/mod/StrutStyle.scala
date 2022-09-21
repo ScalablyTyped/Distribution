@@ -14,6 +14,8 @@ trait StrutStyle extends StObject {
   
   var forceStrutHeight: js.UndefOr[Boolean] = js.undefined
   
+  var halfLeading: js.UndefOr[Boolean] = js.undefined
+  
   var heightMultiplier: js.UndefOr[Double] = js.undefined
   
   var leading: js.UndefOr[Double] = js.undefined
@@ -33,7 +35,7 @@ object StrutStyle {
     
     inline def setFontFamiliesUndefined: Self = StObject.set(x, "fontFamilies", js.undefined)
     
-    inline def setFontFamiliesVarargs(value: String*): Self = StObject.set(x, "fontFamilies", js.Array(value :_*))
+    inline def setFontFamiliesVarargs(value: String*): Self = StObject.set(x, "fontFamilies", js.Array(value*))
     
     inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
@@ -46,6 +48,10 @@ object StrutStyle {
     inline def setForceStrutHeight(value: Boolean): Self = StObject.set(x, "forceStrutHeight", value.asInstanceOf[js.Any])
     
     inline def setForceStrutHeightUndefined: Self = StObject.set(x, "forceStrutHeight", js.undefined)
+    
+    inline def setHalfLeading(value: Boolean): Self = StObject.set(x, "halfLeading", value.asInstanceOf[js.Any])
+    
+    inline def setHalfLeadingUndefined: Self = StObject.set(x, "halfLeading", js.undefined)
     
     inline def setHeightMultiplier(value: Double): Self = StObject.set(x, "heightMultiplier", value.asInstanceOf[js.Any])
     

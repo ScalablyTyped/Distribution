@@ -17,5 +17,5 @@ trait PointSymbol3DConstructor
 Instantiable0[PointSymbol3D]
      with Instantiable1[/* properties */ PointSymbol3DProperties, PointSymbol3D] {
   
-  def fromJSON(json: js.Any): PointSymbol3D = js.native
+  def fromJSON(json: Any): PointSymbol3D = js.native
 }

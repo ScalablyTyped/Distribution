@@ -4,8 +4,6 @@ import typings.awsSdkClientDynamodbBrowser.typesKeySchemaElementMod.KeySchemaEle
 import typings.awsSdkClientDynamodbBrowser.typesKeySchemaElementMod.UnmarshalledKeySchemaElement
 import typings.awsSdkClientDynamodbBrowser.typesProvisionedThroughputMod.ProvisionedThroughput
 import typings.awsSdkClientDynamodbBrowser.typesProvisionedThroughputMod.UnmarshalledProvisionedThroughput
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +20,7 @@ object typesSourceTableDetailsMod {
     /**
       * <p>Schema of the table. </p>
       */
-    var KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]
+    var KeySchema: js.Array[KeySchemaElement] | js.Iterable[KeySchemaElement]
     
     /**
       * <p>Read IOPs and Write IOPS on the table when the backup was created.</p>
@@ -37,7 +35,7 @@ object typesSourceTableDetailsMod {
     /**
       * <p>Time when the source table was created. </p>
       */
-    var TableCreationDateTime: Date | String | Double
+    var TableCreationDateTime: js.Date | String | Double
     
     /**
       * <p>Unique identifier for the table for which the backup was created. </p>
@@ -57,9 +55,9 @@ object typesSourceTableDetailsMod {
   object SourceTableDetails {
     
     inline def apply(
-      KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement],
+      KeySchema: js.Array[KeySchemaElement] | js.Iterable[KeySchemaElement],
       ProvisionedThroughput: ProvisionedThroughput,
-      TableCreationDateTime: Date | String | Double,
+      TableCreationDateTime: js.Date | String | Double,
       TableId: String,
       TableName: String
     ): SourceTableDetails = {
@@ -73,9 +71,9 @@ object typesSourceTableDetailsMod {
       
       inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
-      inline def setKeySchema(value: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: js.Array[KeySchemaElement] | js.Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
@@ -83,7 +81,7 @@ object typesSourceTableDetailsMod {
       
       inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
       
-      inline def setTableCreationDateTime(value: Date | String | Double): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setTableCreationDateTime(value: js.Date | String | Double): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
       
       inline def setTableId(value: String): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
       
@@ -115,14 +113,14 @@ object typesSourceTableDetailsMod {
       * <p>Time when the source table was created. </p>
       */
     @JSName("TableCreationDateTime")
-    var TableCreationDateTime_UnmarshalledSourceTableDetails: Date
+    var TableCreationDateTime_UnmarshalledSourceTableDetails: js.Date
   }
   object UnmarshalledSourceTableDetails {
     
     inline def apply(
       KeySchema: js.Array[UnmarshalledKeySchemaElement],
       ProvisionedThroughput: UnmarshalledProvisionedThroughput,
-      TableCreationDateTime: Date,
+      TableCreationDateTime: js.Date,
       TableId: String,
       TableName: String
     ): UnmarshalledSourceTableDetails = {
@@ -134,11 +132,11 @@ object typesSourceTableDetailsMod {
       
       inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProvisionedThroughput(value: UnmarshalledProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      inline def setTableCreationDateTime(value: Date): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setTableCreationDateTime(value: js.Date): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
     }
   }
 }

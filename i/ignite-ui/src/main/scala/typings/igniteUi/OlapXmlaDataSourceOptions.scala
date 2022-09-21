@@ -10,7 +10,7 @@ trait OlapXmlaDataSourceOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * The catalog name.
@@ -31,7 +31,7 @@ trait OlapXmlaDataSourceOptions
     * Additional properties sent with every discover request.
     *             The object is treated as a key/value store where each property name is used as the key and the property value as the value.
     */
-  var discoverProperties: js.UndefOr[js.Any] = js.undefined
+  var discoverProperties: js.UndefOr[Any] = js.undefined
   
   /**
     * Enables/disables caching of the XMLA result object.
@@ -42,7 +42,7 @@ trait OlapXmlaDataSourceOptions
     * Additional properties sent with every execute request.
     *             The object is treated as a key/value store where each property name is used as the key and the property value as the value.
     */
-  var executeProperties: js.UndefOr[js.Any] = js.undefined
+  var executeProperties: js.UndefOr[Any] = js.undefined
   
   /**
     * A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source.
@@ -105,7 +105,7 @@ object OlapXmlaDataSourceOptions {
     
     inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
     
-    inline def setDiscoverProperties(value: js.Any): Self = StObject.set(x, "discoverProperties", value.asInstanceOf[js.Any])
+    inline def setDiscoverProperties(value: Any): Self = StObject.set(x, "discoverProperties", value.asInstanceOf[js.Any])
     
     inline def setDiscoverPropertiesUndefined: Self = StObject.set(x, "discoverProperties", js.undefined)
     
@@ -113,7 +113,7 @@ object OlapXmlaDataSourceOptions {
     
     inline def setEnableResultCacheUndefined: Self = StObject.set(x, "enableResultCache", js.undefined)
     
-    inline def setExecuteProperties(value: js.Any): Self = StObject.set(x, "executeProperties", value.asInstanceOf[js.Any])
+    inline def setExecuteProperties(value: Any): Self = StObject.set(x, "executeProperties", value.asInstanceOf[js.Any])
     
     inline def setExecutePropertiesUndefined: Self = StObject.set(x, "executeProperties", js.undefined)
     

@@ -24,7 +24,7 @@ trait Route extends StObject {
   /**
     * The whole geometry of the route value depending on overview parameter, format depending on the geometries parameter. See RouteStep's geometry property for a parameter documentation.
     */
-  var geometry: js.UndefOr[js.Any] = js.undefined
+  var geometry: js.UndefOr[Any] = js.undefined
   
   /**
     * The legs between the given waypoints, an array of RouteLeg objects.
@@ -54,13 +54,13 @@ object Route {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     inline def setLegs(value: js.Array[RouteLeg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
-    inline def setLegsVarargs(value: RouteLeg*): Self = StObject.set(x, "legs", js.Array(value :_*))
+    inline def setLegsVarargs(value: RouteLeg*): Self = StObject.set(x, "legs", js.Array(value*))
     
     inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     

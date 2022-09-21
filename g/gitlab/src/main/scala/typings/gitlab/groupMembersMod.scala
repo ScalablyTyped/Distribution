@@ -10,7 +10,7 @@ object groupMembersMod {
   
   @JSImport("gitlab/dist/types/core/services/GroupMembers", "GroupMembers")
   @js.native
-  class GroupMembers protected () extends ResourceMembers {
+  open class GroupMembers protected () extends ResourceMembers {
     def this(options: BaseServiceOptions) = this()
   }
 }

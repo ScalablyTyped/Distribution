@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "RayHelper")
 @js.native
-class RayHelper protected ()
+open class RayHelper protected ()
   extends typings.babylonjs.debugIndexMod.RayHelper {
   /**
     * Instantiate a new ray helper.

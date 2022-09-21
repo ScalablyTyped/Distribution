@@ -39,7 +39,7 @@ trait ServerReplicationParameters extends StObject {
   /**
     * The seed time for creating a replication job for the server.
     */
-  var seedTime: js.UndefOr[Timestamp] = js.undefined
+  var seedTime: js.UndefOr[js.Date] = js.undefined
 }
 object ServerReplicationParameters {
   
@@ -74,7 +74,7 @@ object ServerReplicationParameters {
     
     inline def setRunOnceUndefined: Self = StObject.set(x, "runOnce", js.undefined)
     
-    inline def setSeedTime(value: Timestamp): Self = StObject.set(x, "seedTime", value.asInstanceOf[js.Any])
+    inline def setSeedTime(value: js.Date): Self = StObject.set(x, "seedTime", value.asInstanceOf[js.Any])
     
     inline def setSeedTimeUndefined: Self = StObject.set(x, "seedTime", js.undefined)
   }

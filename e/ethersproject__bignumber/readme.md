@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__bignumber
 
-Typings are for version 5.0.10
+Typings are for version 5.7.0
 
 ## Library description:
 BigNumber library used in ethers.js.
@@ -10,10 +10,10 @@ BigNumber library used in ethers.js.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/bignumber |
 | Keywords           | Ethereum, bignumber, bn |
-| # releases         | 38 |
-| # dependents       | 95 |
-| # downloads        | 2982169 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 3777340.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

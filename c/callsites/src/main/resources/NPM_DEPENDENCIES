@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "callsites" : "3.1.0"
+      "callsites" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "callsites" : "3.1.0"
+      "callsites" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

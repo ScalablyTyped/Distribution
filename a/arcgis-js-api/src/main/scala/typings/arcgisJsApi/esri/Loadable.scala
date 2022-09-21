@@ -17,7 +17,7 @@ trait Loadable extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#cancelLoad)
     */
-  def cancelLoad(): Unit = js.native
+  def cancelLoad(): scala.Unit = js.native
   
   /**
     * `isFulfilled()` may be used to verify if creating an instance of the class is fulfilled (either resolved or rejected).
@@ -45,11 +45,13 @@ trait Loadable extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#load)
     */
-  def load(): js.Promise[js.Any] = js.native
-  def load(signal: AbortSignal): js.Promise[js.Any] = js.native
+  def load(): js.Promise[Any] = js.native
+  def load(signal: AbortSignal): js.Promise[Any] = js.native
   
   /**
     * The Error object returned if an error occurred while loading.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#loadError)
     */
@@ -57,6 +59,8 @@ trait Loadable extends StObject {
   
   /**
     * Represents the status of a [load](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#load) operation.
+    *
+    * @default not-loaded
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#loadStatus)
     */
@@ -67,15 +71,15 @@ trait Loadable extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#loadWarnings)
     */
-  val loadWarnings: js.Array[js.Any] = js.native
+  val loadWarnings: js.Array[Any] = js.native
   
   /**
     * `when()` may be leveraged once an instance of the class is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Loadable.html#when)
     */
-  def when(): js.Promise[js.Any] = js.native
-  def when(callback: js.Function): js.Promise[js.Any] = js.native
-  def when(callback: js.Function, errback: js.Function): js.Promise[js.Any] = js.native
-  def when(callback: Unit, errback: js.Function): js.Promise[js.Any] = js.native
+  def when(): js.Promise[Any] = js.native
+  def when(callback: js.Function): js.Promise[Any] = js.native
+  def when(callback: js.Function, errback: js.Function): js.Promise[Any] = js.native
+  def when(callback: scala.Unit, errback: js.Function): js.Promise[Any] = js.native
 }

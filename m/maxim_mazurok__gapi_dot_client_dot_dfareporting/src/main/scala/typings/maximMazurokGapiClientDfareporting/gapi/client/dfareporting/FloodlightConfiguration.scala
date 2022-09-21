@@ -137,12 +137,12 @@ object FloodlightConfiguration {
     
     inline def setThirdPartyAuthenticationTokensUndefined: Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.undefined)
     
-    inline def setThirdPartyAuthenticationTokensVarargs(value: ThirdPartyAuthenticationToken*): Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.Array(value :_*))
+    inline def setThirdPartyAuthenticationTokensVarargs(value: ThirdPartyAuthenticationToken*): Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.Array(value*))
     
     inline def setUserDefinedVariableConfigurations(value: js.Array[UserDefinedVariableConfiguration]): Self = StObject.set(x, "userDefinedVariableConfigurations", value.asInstanceOf[js.Any])
     
     inline def setUserDefinedVariableConfigurationsUndefined: Self = StObject.set(x, "userDefinedVariableConfigurations", js.undefined)
     
-    inline def setUserDefinedVariableConfigurationsVarargs(value: UserDefinedVariableConfiguration*): Self = StObject.set(x, "userDefinedVariableConfigurations", js.Array(value :_*))
+    inline def setUserDefinedVariableConfigurationsVarargs(value: UserDefinedVariableConfiguration*): Self = StObject.set(x, "userDefinedVariableConfigurations", js.Array(value*))
   }
 }

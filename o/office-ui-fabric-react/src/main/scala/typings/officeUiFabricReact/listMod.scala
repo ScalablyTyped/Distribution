@@ -15,7 +15,7 @@ object listMod {
   
   @JSImport("office-ui-fabric-react/lib/components/List", "List")
   @js.native
-  class List[T] protected ()
+  open class List[T] protected ()
     extends typings.officeUiFabricReact.listListMod.List[T] {
     def this(props: IListProps[T]) = this()
   }

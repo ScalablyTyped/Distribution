@@ -22,6 +22,6 @@ object CreateColumnsOperation {
     
     inline def setColumns(value: CalculatedColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: CalculatedColumn*): Self = StObject.set(x, "Columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: CalculatedColumn*): Self = StObject.set(x, "Columns", js.Array(value*))
   }
 }

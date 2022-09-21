@@ -31,6 +31,6 @@ object ListThreatIntelSetsResponse {
     
     inline def setThreatIntelSetIds(value: ThreatIntelSetIds): Self = StObject.set(x, "ThreatIntelSetIds", value.asInstanceOf[js.Any])
     
-    inline def setThreatIntelSetIdsVarargs(value: String*): Self = StObject.set(x, "ThreatIntelSetIds", js.Array(value :_*))
+    inline def setThreatIntelSetIdsVarargs(value: String*): Self = StObject.set(x, "ThreatIntelSetIds", js.Array(value*))
   }
 }

@@ -3,6 +3,7 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,8 @@ object rowMod extends Shortcut {
   trait RowProps extends StObject {
     
     var bordered: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var colon: Boolean
     
@@ -40,6 +43,10 @@ object rowMod extends Shortcut {
       
       inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -48,7 +55,7 @@ object rowMod extends Shortcut {
       
       inline def setRow(value: js.Array[ReactElement]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowVarargs(value: ReactElement*): Self = StObject.set(x, "row", js.Array(value :_*))
+      inline def setRowVarargs(value: ReactElement*): Self = StObject.set(x, "row", js.Array(value*))
       
       inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }

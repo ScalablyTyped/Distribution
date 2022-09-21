@@ -1,14 +1,16 @@
 package typings.chromeApps.chrome.fileSystemProvider
 
+import typings.chromeApps.chrome.fileSystemProvider.internal.FilePathRequestedEventOptions
+import typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ConfigureRequestedEventOptions = typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptions
+type ConfigureRequestedEventOptions = RequestedEventOptions
 
-type CreateFileRequestedEventOptions = typings.chromeApps.chrome.fileSystemProvider.internal.FilePathRequestedEventOptions
+type CreateFileRequestedEventOptions = FilePathRequestedEventOptions
 
-type MoveEntryRequestedEventOptions = typings.chromeApps.chrome.fileSystemProvider.CopyEntryRequestedEventOptions
+type MoveEntryRequestedEventOptions = CopyEntryRequestedEventOptions
 
-type UnmountRequestedEventOptions = typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptions
+type UnmountRequestedEventOptions = RequestedEventOptions

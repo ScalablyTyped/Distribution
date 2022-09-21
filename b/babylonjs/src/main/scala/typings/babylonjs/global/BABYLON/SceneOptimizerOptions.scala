@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new list of options used by SceneOptimizer
   * @param targetFrameRate defines the target frame rate to reach (60 by default)
-  * @param trackerDuration defines the interval between two checkes (2000ms by default)
+  * @param trackerDuration defines the interval between two checks (2000ms by default)
   */
-class SceneOptimizerOptions ()
+open class SceneOptimizerOptions ()
   extends StObject
      with typings.babylonjs.BABYLON.SceneOptimizerOptions {
   def this(/**
@@ -24,7 +24,7 @@ class SceneOptimizerOptions ()
     */
   targetFrameRate: Double,
     /**
-    * Defines the interval between two checkes (2000ms by default)
+    * Defines the interval between two checks (2000ms by default)
     */
   trackerDuration: Double
   ) = this()
@@ -34,7 +34,7 @@ class SceneOptimizerOptions ()
     */
   targetFrameRate: Unit,
     /**
-    * Defines the interval between two checkes (2000ms by default)
+    * Defines the interval between two checks (2000ms by default)
     */
   trackerDuration: Double
   ) = this()

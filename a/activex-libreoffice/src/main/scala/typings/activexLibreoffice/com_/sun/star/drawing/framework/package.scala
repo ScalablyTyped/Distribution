@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XToolBarController
   * @see XToolBarFactory
   */
-type XToolBar = typings.activexLibreoffice.com_.sun.star.drawing.framework.XResource
+type XToolBar = XResource
 
 /**
   * A view in the drawing framework is any object that paints into a pane.
@@ -23,4 +23,4 @@ type XToolBar = typings.activexLibreoffice.com_.sun.star.drawing.framework.XReso
   *
   * The URL prefix of views is `private:resource/view`
   */
-type XView = typings.activexLibreoffice.com_.sun.star.drawing.framework.XResource
+type XView = XResource

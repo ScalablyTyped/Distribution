@@ -16,7 +16,7 @@ object createStreamCommandMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/commands/CreateStreamCommand", "CreateStreamCommand")
   @js.native
-  class CreateStreamCommand protected ()
+  open class CreateStreamCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object createStreamCommandMod {
     override val middlewareStack: MiddlewareStack[CreateStreamInput, CreateStreamOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[CreateStreamInput, CreateStreamOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KinesisResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[CreateStreamInput, CreateStreamOutput] = js.native
   }
 }

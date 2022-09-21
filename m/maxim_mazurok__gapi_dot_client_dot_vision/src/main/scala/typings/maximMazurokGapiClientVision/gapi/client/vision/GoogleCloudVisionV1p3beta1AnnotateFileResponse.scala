@@ -39,7 +39,7 @@ object GoogleCloudVisionV1p3beta1AnnotateFileResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: GoogleCloudVisionV1p3beta1AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: GoogleCloudVisionV1p3beta1AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value*))
     
     inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     

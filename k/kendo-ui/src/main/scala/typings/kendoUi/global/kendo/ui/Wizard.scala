@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Wizard")
 @js.native
-class Wizard protected ()
+open class Wizard protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Wizard {
   def this(element: Element) = this()

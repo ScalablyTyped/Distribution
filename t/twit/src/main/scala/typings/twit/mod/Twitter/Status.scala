@@ -2,6 +2,7 @@ package typings.twit.mod.Twitter
 
 import typings.geojson.mod.Point
 import typings.twit.anon.Id
+import typings.twit.anon.Media
 import typings.twit.twitStrings.low
 import typings.twit.twitStrings.medium
 import typings.twit.twitStrings.none
@@ -24,6 +25,8 @@ trait Status extends StObject {
   var display_text_range: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
   var entities: Entities
+  
+  var extended_entities: js.UndefOr[Media] = js.undefined
   
   var favorite_count: js.UndefOr[Double] = js.undefined
   
@@ -113,7 +116,7 @@ object Status {
     
     inline def setContributorsUndefined: Self = StObject.set(x, "contributors", js.undefined)
     
-    inline def setContributorsVarargs(value: Contributors*): Self = StObject.set(x, "contributors", js.Array(value :_*))
+    inline def setContributorsVarargs(value: Contributors*): Self = StObject.set(x, "contributors", js.Array(value*))
     
     inline def setCoordinates(value: Point): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
@@ -130,6 +133,10 @@ object Status {
     inline def setDisplay_text_rangeUndefined: Self = StObject.set(x, "display_text_range", js.undefined)
     
     inline def setEntities(value: Entities): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    
+    inline def setExtended_entities(value: Media): Self = StObject.set(x, "extended_entities", value.asInstanceOf[js.Any])
+    
+    inline def setExtended_entitiesUndefined: Self = StObject.set(x, "extended_entities", js.undefined)
     
     inline def setFavorite_count(value: Double): Self = StObject.set(x, "favorite_count", value.asInstanceOf[js.Any])
     
@@ -179,7 +186,7 @@ object Status {
     
     inline def setMatching_rulesUndefined: Self = StObject.set(x, "matching_rules", js.undefined)
     
-    inline def setMatching_rulesVarargs(value: MatchingRules*): Self = StObject.set(x, "matching_rules", js.Array(value :_*))
+    inline def setMatching_rulesVarargs(value: MatchingRules*): Self = StObject.set(x, "matching_rules", js.Array(value*))
     
     inline def setPlace(value: Place): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
     
@@ -233,7 +240,7 @@ object Status {
     
     inline def setWithheld_in_countriesUndefined: Self = StObject.set(x, "withheld_in_countries", js.undefined)
     
-    inline def setWithheld_in_countriesVarargs(value: String*): Self = StObject.set(x, "withheld_in_countries", js.Array(value :_*))
+    inline def setWithheld_in_countriesVarargs(value: String*): Self = StObject.set(x, "withheld_in_countries", js.Array(value*))
     
     inline def setWithheld_scope(value: String): Self = StObject.set(x, "withheld_scope", value.asInstanceOf[js.Any])
     

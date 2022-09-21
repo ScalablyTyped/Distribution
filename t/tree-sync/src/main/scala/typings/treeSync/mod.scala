@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("tree-sync", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TreeSync {
     /**
@@ -81,13 +81,13 @@ object mod {
       
       inline def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
       
-      inline def setGlobsVarargs(value: String*): Self = StObject.set(x, "globs", js.Array(value :_*))
+      inline def setGlobsVarargs(value: String*): Self = StObject.set(x, "globs", js.Array(value*))
       
       inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
     }
   }
   

@@ -29,7 +29,7 @@ object DescribeRdsDbInstancesRequest {
     
     inline def setRdsDbInstanceArnsUndefined: Self = StObject.set(x, "RdsDbInstanceArns", js.undefined)
     
-    inline def setRdsDbInstanceArnsVarargs(value: String*): Self = StObject.set(x, "RdsDbInstanceArns", js.Array(value :_*))
+    inline def setRdsDbInstanceArnsVarargs(value: String*): Self = StObject.set(x, "RdsDbInstanceArns", js.Array(value*))
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }

@@ -10,10 +10,10 @@ Functional Extensions for modern Javascript
 | ------------------ | :-------------: |
 | Full name          | fxjs |
 | Keywords           | functional, fp, fxjs |
-| # releases         | 35 |
-| # dependents       | 7 |
-| # downloads        | 8798 |
-| # stars            | 2 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 1928.0 |
+| # stars            | 339.0 |
 
 ## Links
 - [Homepage](https://github.com/marpple/FxJS#readme)

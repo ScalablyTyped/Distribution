@@ -1,9 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+
+type ArnString = java.lang.String
 
 type AvailabilityZoneString = java.lang.String
 
@@ -16,17 +19,24 @@ type DescriptionString = java.lang.String
   - typings.awsSdk.awsSdkStrings.STANDARD
   - java.lang.String
 */
-type Edition = typings.awsSdk.managedblockchainMod._Edition | java.lang.String
+type Edition = _Edition | java.lang.String
 
-type Enabled = scala.Boolean
+type Enabled = Boolean
 
-type Framework = typings.awsSdk.awsSdkStrings.HYPERLEDGER_FABRIC | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HYPERLEDGER_FABRIC
+  - typings.awsSdk.awsSdkStrings.ETHEREUM
+  - java.lang.String
+*/
+type Framework = _Framework | java.lang.String
 
 type FrameworkVersionString = java.lang.String
 
+type InputTagMap = StringDictionary[TagValue]
+
 type InstanceTypeString = java.lang.String
 
-type InvitationList = js.Array[typings.awsSdk.managedblockchainMod.Invitation]
+type InvitationList = js.Array[Invitation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -36,13 +46,13 @@ type InvitationList = js.Array[typings.awsSdk.managedblockchainMod.Invitation]
   - typings.awsSdk.awsSdkStrings.EXPIRED
   - java.lang.String
 */
-type InvitationStatus = typings.awsSdk.managedblockchainMod._InvitationStatus | java.lang.String
+type InvitationStatus = _InvitationStatus | java.lang.String
 
-type InviteActionList = js.Array[typings.awsSdk.managedblockchainMod.InviteAction]
+type InviteActionList = js.Array[InviteAction]
 
-type IsOwned = scala.Boolean
+type IsOwned = Boolean
 
-type MemberListMaxResults = scala.Double
+type MemberListMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -51,15 +61,16 @@ type MemberListMaxResults = scala.Double
   - typings.awsSdk.awsSdkStrings.UPDATING
   - typings.awsSdk.awsSdkStrings.DELETING
   - typings.awsSdk.awsSdkStrings.DELETED
+  - typings.awsSdk.awsSdkStrings.INACCESSIBLE_ENCRYPTION_KEY
   - java.lang.String
 */
-type MemberStatus = typings.awsSdk.managedblockchainMod._MemberStatus | java.lang.String
+type MemberStatus = _MemberStatus | java.lang.String
 
-type MemberSummaryList = js.Array[typings.awsSdk.managedblockchainMod.MemberSummary]
+type MemberSummaryList = js.Array[MemberSummary]
 
 type NameString = java.lang.String
 
-type NetworkListMaxResults = scala.Double
+type NetworkListMaxResults = Double
 
 type NetworkMemberNameString = java.lang.String
 
@@ -71,25 +82,29 @@ type NetworkMemberNameString = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type NetworkStatus = typings.awsSdk.managedblockchainMod._NetworkStatus | java.lang.String
+type NetworkStatus = _NetworkStatus | java.lang.String
 
-type NetworkSummaryList = js.Array[typings.awsSdk.managedblockchainMod.NetworkSummary]
+type NetworkSummaryList = js.Array[NetworkSummary]
 
-type NodeListMaxResults = scala.Double
+type NodeListMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
   - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.UNHEALTHY
   - typings.awsSdk.awsSdkStrings.CREATE_FAILED
   - typings.awsSdk.awsSdkStrings.UPDATING
   - typings.awsSdk.awsSdkStrings.DELETING
   - typings.awsSdk.awsSdkStrings.DELETED
   - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.INACCESSIBLE_ENCRYPTION_KEY
   - java.lang.String
 */
-type NodeStatus = typings.awsSdk.managedblockchainMod._NodeStatus | java.lang.String
+type NodeStatus = _NodeStatus | java.lang.String
 
-type NodeSummaryList = js.Array[typings.awsSdk.managedblockchainMod.NodeSummary]
+type NodeSummaryList = js.Array[NodeSummary]
+
+type OutputTagMap = StringDictionary[TagValue]
 
 type PaginationToken = java.lang.String
 
@@ -97,9 +112,9 @@ type PasswordString = java.lang.String
 
 type PrincipalString = java.lang.String
 
-type ProposalDurationInt = scala.Double
+type ProposalDurationInt = Double
 
-type ProposalListMaxResults = scala.Double
+type ProposalListMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -109,13 +124,13 @@ type ProposalListMaxResults = scala.Double
   - typings.awsSdk.awsSdkStrings.ACTION_FAILED
   - java.lang.String
 */
-type ProposalStatus = typings.awsSdk.managedblockchainMod._ProposalStatus | java.lang.String
+type ProposalStatus = _ProposalStatus | java.lang.String
 
-type ProposalSummaryList = js.Array[typings.awsSdk.managedblockchainMod.ProposalSummary]
+type ProposalSummaryList = js.Array[ProposalSummary]
 
-type ProposalVoteList = js.Array[typings.awsSdk.managedblockchainMod.VoteSummary]
+type ProposalVoteList = js.Array[VoteSummary]
 
-type RemoveActionList = js.Array[typings.awsSdk.managedblockchainMod.RemoveAction]
+type RemoveActionList = js.Array[RemoveAction]
 
 type ResourceIdString = java.lang.String
 
@@ -124,35 +139,41 @@ type ResourceIdString = java.lang.String
   - typings.awsSdk.awsSdkStrings.CouchDB
   - java.lang.String
 */
-type StateDBType = typings.awsSdk.managedblockchainMod._StateDBType | java.lang.String
+type StateDBType = _StateDBType | java.lang.String
 
 type String = java.lang.String
+
+type TagKey = java.lang.String
+
+type TagKeyList = js.Array[TagKey]
+
+type TagValue = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GREATER_THAN
   - typings.awsSdk.awsSdkStrings.GREATER_THAN_OR_EQUAL_TO
   - java.lang.String
 */
-type ThresholdComparator = typings.awsSdk.managedblockchainMod._ThresholdComparator | java.lang.String
+type ThresholdComparator = _ThresholdComparator | java.lang.String
 
-type ThresholdPercentageInt = scala.Double
+type ThresholdPercentageInt = Double
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type UsernameString = java.lang.String
 
-type VoteCount = scala.Double
+type VoteCount = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.YES
   - typings.awsSdk.awsSdkStrings.NO
   - java.lang.String
 */
-type VoteValue = typings.awsSdk.managedblockchainMod._VoteValue | java.lang.String
+type VoteValue = _VoteValue | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-09-24`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.managedblockchainMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

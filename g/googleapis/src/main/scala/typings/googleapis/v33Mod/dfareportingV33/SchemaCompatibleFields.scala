@@ -4,43 +4,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a response to the queryCompatibleFields method.
-  */
 trait SchemaCompatibleFields extends StObject {
   
   /**
-    * Contains items that are compatible to be selected for a report of type
-    * &quot;CROSS_DIMENSION_REACH&quot;.
+    * Contains items that are compatible to be selected for a report of type "CROSS_DIMENSION_REACH".
     */
   var crossDimensionReachReportCompatibleFields: js.UndefOr[SchemaCrossDimensionReachReportCompatibleFields] = js.undefined
   
   /**
-    * Contains items that are compatible to be selected for a report of type
-    * &quot;FLOODLIGHT&quot;.
+    * Contains items that are compatible to be selected for a report of type "FLOODLIGHT".
     */
   var floodlightReportCompatibleFields: js.UndefOr[SchemaFloodlightReportCompatibleFields] = js.undefined
   
   /**
     * The kind of resource this is, in this case dfareporting#compatibleFields.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Contains items that are compatible to be selected for a report of type
-    * &quot;PATH_TO_CONVERSION&quot;.
+    * Contains items that are compatible to be selected for a report of type "PATH_TO_CONVERSION".
     */
   var pathToConversionReportCompatibleFields: js.UndefOr[SchemaPathToConversionReportCompatibleFields] = js.undefined
   
   /**
-    * Contains items that are compatible to be selected for a report of type
-    * &quot;REACH&quot;.
+    * Contains items that are compatible to be selected for a report of type "REACH".
     */
   var reachReportCompatibleFields: js.UndefOr[SchemaReachReportCompatibleFields] = js.undefined
   
   /**
-    * Contains items that are compatible to be selected for a report of type
-    * &quot;STANDARD&quot;.
+    * Contains items that are compatible to be selected for a report of type "STANDARD".
     */
   var reportCompatibleFields: js.UndefOr[SchemaReportCompatibleFields] = js.undefined
 }
@@ -62,6 +54,8 @@ object SchemaCompatibleFields {
     inline def setFloodlightReportCompatibleFieldsUndefined: Self = StObject.set(x, "floodlightReportCompatibleFields", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

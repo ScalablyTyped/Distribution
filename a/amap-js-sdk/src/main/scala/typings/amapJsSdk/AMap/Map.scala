@@ -10,9 +10,9 @@ trait Map
   extends StObject
      with EventBindable {
   
-  def add(overlayers: js.Array[js.Any]): Unit = js.native
+  def add(overlayers: js.Array[Any]): Unit = js.native
   
-  def addControl(obj: js.Any): Unit = js.native
+  def addControl(obj: Any): Unit = js.native
   
   def clearInfoWindow(): Unit = js.native
   
@@ -52,7 +52,7 @@ trait Map
   
   def getSize(): Size = js.native
   
-  def getStatus(): js.Any = js.native
+  def getStatus(): Any = js.native
   
   def getZoom(): Double = js.native
   
@@ -71,9 +71,9 @@ trait Map
   def plugin(name: String, callback: js.Function0[Unit]): Unit = js.native
   def plugin(name: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
   
-  def remove(overlayers: js.Array[js.Any]): Unit = js.native
+  def remove(overlayers: js.Array[Any]): Unit = js.native
   
-  def removeControl(obj: js.Any): Unit = js.native
+  def removeControl(obj: Any): Unit = js.native
   
   def setBounds(bound: Bounds): Unit = js.native
   
@@ -88,7 +88,7 @@ trait Map
   def setFeatures(features: js.Array[String]): Unit = js.native
   
   def setFitView(): Unit = js.native
-  def setFitView(overlayList: js.Array[js.Any]): Unit = js.native
+  def setFitView(overlayList: js.Array[Any]): Unit = js.native
   
   def setLang(lang: String): Unit = js.native
   
@@ -100,7 +100,7 @@ trait Map
   
   def setRotation(rotation: Double): Unit = js.native
   
-  def setStatus(status: js.Any): Unit = js.native
+  def setStatus(status: Any): Unit = js.native
   
   def setZoom(level: Double): Unit = js.native
   

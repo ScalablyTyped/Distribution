@@ -24,7 +24,7 @@ abstract class WebUILockScreenActivatedEventArgs ()
   
   /** Gets information about the app activation operation. */
   /* CompleteClass */
-  var info: js.Any = js.native
+  var info: Any = js.native
   
   /** Gets and activation kind for the app activation operation. */
   /* CompleteClass */

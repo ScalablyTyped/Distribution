@@ -7,15 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "ProjectionPicker")
 @js.native
-class ProjectionPicker protected () extends StObject {
+open class ProjectionPicker protected () extends StObject {
   def this(container: String, scene: Scene) = this()
   def this(container: Element, scene: Scene) = this()
   
+  /**
+    * Gets the parent container.
+    */
   var container: Element = js.native
   
+  /**
+    * Destroys the widget.  Should be called if permanently
+    * removing the widget from layout.
+    */
   def destroy(): Unit = js.native
   
+  /**
+    * @returns true if the object has been destroyed, false otherwise.
+    */
   def isDestroyed(): Boolean = js.native
   
+  /**
+    * Gets the view model.
+    */
   var viewModel: ProjectionPickerViewModel = js.native
 }

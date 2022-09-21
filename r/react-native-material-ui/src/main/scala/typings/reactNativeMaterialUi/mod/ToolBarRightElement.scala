@@ -25,7 +25,7 @@ object ToolBarRightElement {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: (Element | String)*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (Element | String)*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setMenu(value: Labels): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     

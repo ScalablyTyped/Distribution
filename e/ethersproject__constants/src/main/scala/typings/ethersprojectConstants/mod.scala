@@ -19,9 +19,17 @@ object mod {
   @js.native
   val HashZero: /* "0x0000000000000000000000000000000000000000000000000000000000000000" */ String = js.native
   
+  @JSImport("@ethersproject/constants", "MaxInt256")
+  @js.native
+  val MaxInt256: BigNumber = js.native
+  
   @JSImport("@ethersproject/constants", "MaxUint256")
   @js.native
   val MaxUint256: BigNumber = js.native
+  
+  @JSImport("@ethersproject/constants", "MinInt256")
+  @js.native
+  val MinInt256: BigNumber = js.native
   
   @JSImport("@ethersproject/constants", "NegativeOne")
   @js.native

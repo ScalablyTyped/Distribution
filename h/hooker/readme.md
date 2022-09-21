@@ -10,10 +10,10 @@ Monkey-patch (hook) functions for debugging and stuff.
 | ------------------ | :-------------: |
 | Full name          | hooker |
 | Keywords           | patch, hook, function, debug, aop |
-| # releases         | 0 |
-| # dependents       | 63 |
-| # downloads        | 28951812 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2805066.6666666665 |
+| # stars            | 232.0 |
 
 ## Links
 - [Homepage](http://github.com/cowboy/javascript-hooker)

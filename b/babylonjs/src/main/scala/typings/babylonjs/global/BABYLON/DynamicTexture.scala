@@ -7,11 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DynamicTexture")
 @js.native
-class DynamicTexture protected ()
+open class DynamicTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DynamicTexture {
-  def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean) = this()
-  def this(name: String, options: js.Any, scene: Unit, generateMipMaps: Boolean) = this()
   /**
     * Creates a DynamicTexture
     * @param name defines the name of the texture
@@ -22,35 +20,34 @@ class DynamicTexture protected ()
     * @param format defines the texture format to use (default is Engine.TEXTUREFORMAT_RGBA)
     * @param invertY defines if the texture needs to be inverted on the y axis during loading
     */
-  def this(name: String, options: js.Any, scene: typings.babylonjs.BABYLON.Scene, generateMipMaps: Boolean) = this()
-  def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean, samplingMode: Double) = this()
-  def this(name: String, options: js.Any, scene: Unit, generateMipMaps: Boolean, samplingMode: Double) = this()
+  def this(name: String, options: Any) = this()
+  def this(name: String, options: Any, scene: Nullable[typings.babylonjs.BABYLON.Scene]) = this()
+  def this(name: String, options: Any, scene: Unit, generateMipMaps: Boolean) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: typings.babylonjs.BABYLON.Scene,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: Boolean
+  ) = this()
+  def this(name: String, options: Any, scene: Unit, generateMipMaps: Boolean, samplingMode: Double) = this()
+  def this(name: String, options: Any, scene: Unit, generateMipMaps: Unit, samplingMode: Double) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     generateMipMaps: Boolean,
     samplingMode: Double
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: Null,
-    generateMipMaps: Boolean,
-    samplingMode: Double,
-    format: Double
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: Unit,
+    samplingMode: Double
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: Null,
-    generateMipMaps: Boolean,
-    samplingMode: Unit,
-    format: Double
-  ) = this()
-  def this(
-    name: String,
-    options: js.Any,
+    options: Any,
     scene: Unit,
     generateMipMaps: Boolean,
     samplingMode: Double,
@@ -58,7 +55,7 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
+    options: Any,
     scene: Unit,
     generateMipMaps: Boolean,
     samplingMode: Unit,
@@ -66,59 +63,48 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: typings.babylonjs.BABYLON.Scene,
+    options: Any,
+    scene: Unit,
+    generateMipMaps: Unit,
+    samplingMode: Double,
+    format: Double
+  ) = this()
+  def this(name: String, options: Any, scene: Unit, generateMipMaps: Unit, samplingMode: Unit, format: Double) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     generateMipMaps: Boolean,
     samplingMode: Double,
     format: Double
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: typings.babylonjs.BABYLON.Scene,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     generateMipMaps: Boolean,
     samplingMode: Unit,
     format: Double
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: Null,
-    generateMipMaps: Boolean,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: Unit,
     samplingMode: Double,
-    format: Double,
-    invertY: Boolean
+    format: Double
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: Null,
-    generateMipMaps: Boolean,
-    samplingMode: Double,
-    format: Unit,
-    invertY: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: js.Any,
-    scene: Null,
-    generateMipMaps: Boolean,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: Unit,
     samplingMode: Unit,
-    format: Double,
-    invertY: Boolean
+    format: Double
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: Null,
-    generateMipMaps: Boolean,
-    samplingMode: Unit,
-    format: Unit,
-    invertY: Boolean
-  ) = this()
-  def this(
-    name: String,
-    options: js.Any,
+    options: Any,
     scene: Unit,
     generateMipMaps: Boolean,
     samplingMode: Double,
@@ -127,7 +113,7 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
+    options: Any,
     scene: Unit,
     generateMipMaps: Boolean,
     samplingMode: Double,
@@ -136,7 +122,7 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
+    options: Any,
     scene: Unit,
     generateMipMaps: Boolean,
     samplingMode: Unit,
@@ -145,7 +131,7 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
+    options: Any,
     scene: Unit,
     generateMipMaps: Boolean,
     samplingMode: Unit,
@@ -154,8 +140,44 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: typings.babylonjs.BABYLON.Scene,
+    options: Any,
+    scene: Unit,
+    generateMipMaps: Unit,
+    samplingMode: Double,
+    format: Double,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Unit,
+    generateMipMaps: Unit,
+    samplingMode: Double,
+    format: Unit,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Unit,
+    generateMipMaps: Unit,
+    samplingMode: Unit,
+    format: Double,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Unit,
+    generateMipMaps: Unit,
+    samplingMode: Unit,
+    format: Unit,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     generateMipMaps: Boolean,
     samplingMode: Double,
     format: Double,
@@ -163,8 +185,8 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: typings.babylonjs.BABYLON.Scene,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     generateMipMaps: Boolean,
     samplingMode: Double,
     format: Unit,
@@ -172,8 +194,8 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: typings.babylonjs.BABYLON.Scene,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     generateMipMaps: Boolean,
     samplingMode: Unit,
     format: Double,
@@ -181,9 +203,45 @@ class DynamicTexture protected ()
   ) = this()
   def this(
     name: String,
-    options: js.Any,
-    scene: typings.babylonjs.BABYLON.Scene,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
     generateMipMaps: Boolean,
+    samplingMode: Unit,
+    format: Unit,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: Unit,
+    samplingMode: Double,
+    format: Double,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: Unit,
+    samplingMode: Double,
+    format: Unit,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: Unit,
+    samplingMode: Unit,
+    format: Double,
+    invertY: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    generateMipMaps: Unit,
     samplingMode: Unit,
     format: Unit,
     invertY: Boolean
@@ -194,4 +252,16 @@ class DynamicTexture protected ()
     */
   /* CompleteClass */
   var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
+}
+/* static members */
+object DynamicTexture {
+  
+  @JSGlobal("BABYLON.DynamicTexture")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("BABYLON.DynamicTexture._IsCanvasElement")
+  @js.native
+  def _IsCanvasElement: Any = js.native
+  inline def _IsCanvasElement_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsCanvasElement")(x.asInstanceOf[js.Any])
 }

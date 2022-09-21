@@ -10,10 +10,10 @@ object cardTextMod {
   
   @JSImport("material-ui/Card/CardText", JSImport.Default)
   @js.native
-  class default () extends CardText
+  open class default () extends CardText
   
   @JSImport("material-ui/Card/CardText", "CardText")
   @js.native
-  class CardText ()
-    extends Component[CardTextProps, js.Object, js.Any]
+  open class CardText ()
+    extends Component[CardTextProps, js.Object, Any]
 }

@@ -11,7 +11,7 @@ object valueMod {
   
   @JSImport("@wordpress/customize-browser/Value", "Value")
   @js.native
-  class Value[T] protected () extends Class {
+  open class Value[T] protected () extends Class {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

@@ -8,5 +8,5 @@ object phoneNumberValidateOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/PhoneNumberValidateOutput", "PhoneNumberValidateOutput")
   @js.native
-  val PhoneNumberValidateOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PhoneNumberValidateOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -8,7 +8,7 @@ trait TreeListColumnUnlockEvent
   extends StObject
      with TreeListEvent {
   
-  var column: js.UndefOr[js.Any] = js.undefined
+  var column: js.UndefOr[Any] = js.undefined
 }
 object TreeListColumnUnlockEvent {
   
@@ -19,7 +19,7 @@ object TreeListColumnUnlockEvent {
   
   extension [Self <: TreeListColumnUnlockEvent](x: Self) {
     
-    inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
   }

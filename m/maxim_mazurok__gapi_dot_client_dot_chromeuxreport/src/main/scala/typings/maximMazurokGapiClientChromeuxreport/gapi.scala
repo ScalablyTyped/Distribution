@@ -20,10 +20,10 @@ object gapi {
         var density: js.UndefOr[Double] = js.undefined
         
         /** End is the end of the data bin. If end is not populated, then the bin has no end and is valid from start to +inf. */
-        var end: js.UndefOr[js.Any] = js.undefined
+        var end: js.UndefOr[Any] = js.undefined
         
         /** Start is the beginning of the data bin. */
-        var start: js.UndefOr[js.Any] = js.undefined
+        var start: js.UndefOr[Any] = js.undefined
       }
       object Bin {
         
@@ -38,11 +38,11 @@ object gapi {
           
           inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
           
-          inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+          inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
           
           inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
           
-          inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+          inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
           
           inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         }
@@ -120,7 +120,7 @@ object gapi {
           
           inline def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
           
-          inline def setHistogramVarargs(value: Bin*): Self = StObject.set(x, "histogram", js.Array(value :_*))
+          inline def setHistogramVarargs(value: Bin*): Self = StObject.set(x, "histogram", js.Array(value*))
           
           inline def setPercentiles(value: Percentiles): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
           
@@ -131,7 +131,7 @@ object gapi {
       trait Percentiles extends StObject {
         
         /** 75% of users experienced the given metric at or below this value. */
-        var p75: js.UndefOr[js.Any] = js.undefined
+        var p75: js.UndefOr[Any] = js.undefined
       }
       object Percentiles {
         
@@ -142,7 +142,7 @@ object gapi {
         
         extension [Self <: Percentiles](x: Self) {
           
-          inline def setP75(value: js.Any): Self = StObject.set(x, "p75", value.asInstanceOf[js.Any])
+          inline def setP75(value: Any): Self = StObject.set(x, "p75", value.asInstanceOf[js.Any])
           
           inline def setP75Undefined: Self = StObject.set(x, "p75", js.undefined)
         }
@@ -165,7 +165,7 @@ object gapi {
         
         /**
           * The metrics that should be included in the response. If none are specified then any metrics found will be returned. Allowed values: ["first_contentful_paint", "first_input_delay",
-          * "largest_contentful_paint", "cumulative_layout_shift"]
+          * "largest_contentful_paint", "cumulative_layout_shift", "experimental_time_to_first_byte", "experimental_interaction_to_next_paint"]
           */
         var metrics: js.UndefOr[js.Array[String]] = js.undefined
         
@@ -196,7 +196,7 @@ object gapi {
           
           inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
           
-          inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+          inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
           
           inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
           
@@ -247,7 +247,7 @@ object gapi {
         var metrics: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric}
-          */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[Any]
               ] = js.undefined
       }
       object Record {
@@ -266,7 +266,7 @@ object gapi {
           inline def setMetrics(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric}
-            */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[Any]
           ): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
           
           inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)

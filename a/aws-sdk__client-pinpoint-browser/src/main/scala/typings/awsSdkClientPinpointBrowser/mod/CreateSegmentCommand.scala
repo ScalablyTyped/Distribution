@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "CreateSegmentCommand")
 @js.native
-class CreateSegmentCommand protected ()
+open class CreateSegmentCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.createSegmentCommandMod.CreateSegmentCommand {
   def this(input: CreateSegmentInput) = this()
 }

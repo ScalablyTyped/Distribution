@@ -73,7 +73,7 @@ object CIMVectorMarker {
     
     inline def setMarkerGraphicsUndefined: Self = StObject.set(x, "markerGraphics", js.undefined)
     
-    inline def setMarkerGraphicsVarargs(value: CIMMarkerGraphic*): Self = StObject.set(x, "markerGraphics", js.Array(value :_*))
+    inline def setMarkerGraphicsVarargs(value: CIMMarkerGraphic*): Self = StObject.set(x, "markerGraphics", js.Array(value*))
     
     inline def setRespectFrame(value: Boolean): Self = StObject.set(x, "respectFrame", value.asInstanceOf[js.Any])
     

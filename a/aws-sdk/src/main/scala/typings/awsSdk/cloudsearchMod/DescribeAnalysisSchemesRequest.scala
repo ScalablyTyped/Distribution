@@ -34,7 +34,7 @@ object DescribeAnalysisSchemesRequest {
     
     inline def setAnalysisSchemeNamesUndefined: Self = StObject.set(x, "AnalysisSchemeNames", js.undefined)
     
-    inline def setAnalysisSchemeNamesVarargs(value: StandardName*): Self = StObject.set(x, "AnalysisSchemeNames", js.Array(value :_*))
+    inline def setAnalysisSchemeNamesVarargs(value: StandardName*): Self = StObject.set(x, "AnalysisSchemeNames", js.Array(value*))
     
     inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     

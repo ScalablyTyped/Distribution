@@ -19,7 +19,7 @@ object popoverMod {
   
   @JSImport("@ant-design/react-native/lib/popover", JSImport.Default)
   @js.native
-  class default () extends Popover
+  open class default () extends Popover
   /* static members */
   object default {
     
@@ -40,14 +40,14 @@ object popoverMod {
   
   @JSImport("@ant-design/react-native/lib/popover", "PopoverItem")
   @js.native
-  class PopoverItem protected ()
-    extends PureComponent[PopoverItemProps, js.Object, js.Any] {
+  open class PopoverItem protected ()
+    extends PureComponent[PopoverItemProps, js.Object, Any] {
     def this(props: PopoverItemProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PopoverItemProps, context: js.Any) = this()
+    def this(props: PopoverItemProps, context: Any) = this()
   }
   /* static members */
   object PopoverItem {
@@ -63,27 +63,26 @@ object popoverMod {
   }
   
   @js.native
-  trait Popover
-    extends PureComponent[PopoverProps, js.Any, js.Any] {
+  trait Popover extends PureComponent[PopoverProps, Any, Any] {
     
-    def onSelect(value: js.Any, closePopover: js.Any): Unit = js.native
+    def onSelect(value: Any, closePopover: Any): Unit = js.native
     
-    def renderOverlay(closePopover: js.Any): js.UndefOr[js.Object | Null] = js.native
+    def renderOverlay(closePopover: Any): ReactNode = js.native
   }
   
   trait PopoverItemProps
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var value: js.Any
+    var value: Any
   }
   object PopoverItemProps {
     
-    inline def apply(value: js.Any): PopoverItemProps = {
+    inline def apply(value: Any): PopoverItemProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopoverItemProps]
     }
@@ -100,13 +99,15 @@ object popoverMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   trait PopoverProps
     extends StObject
        with WithThemeStyles[PopoverStyle] {
+    
+    var children: ReactNode
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -116,7 +117,7 @@ object popoverMod {
     
     var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function2[/* node */ js.Any, /* index */ js.UndefOr[Double], Unit]] = js.undefined
+    var onSelect: js.UndefOr[js.Function2[/* node */ Any, /* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     var overlay: ReactNode
     
@@ -139,6 +140,10 @@ object popoverMod {
     
     extension [Self <: PopoverProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
@@ -155,7 +160,7 @@ object popoverMod {
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      inline def setOnSelect(value: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (/* node */ Any, /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       

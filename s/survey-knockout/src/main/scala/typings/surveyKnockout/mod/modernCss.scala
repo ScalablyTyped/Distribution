@@ -1,28 +1,32 @@
 package typings.surveyKnockout.mod
 
+import typings.surveyKnockout.anon.ActionsCell
 import typings.surveyKnockout.anon.Body
-import typings.surveyKnockout.anon.ButtonPrev
-import typings.surveyKnockout.anon.Cell
+import typings.surveyKnockout.anon.ButtonPrevDisabled
 import typings.surveyKnockout.anon.CellTextDisabled
-import typings.surveyKnockout.anon.ClearButtonControls
+import typings.surveyKnockout.anon.CheckboxItemChecked
+import typings.surveyKnockout.anon.ChoiceCell
+import typings.surveyKnockout.anon.CleanButtonIconId
 import typings.surveyKnockout.anon.Complete
 import typings.surveyKnockout.anon.ContentLeft
+import typings.surveyKnockout.anon.ControlLabel
+import typings.surveyKnockout.anon.ControlValue
 import typings.surveyKnockout.anon.Description
-import typings.surveyKnockout.anon.DetailCell
-import typings.surveyKnockout.anon.Disabled
-import typings.surveyKnockout.anon.DisabledLabel
 import typings.surveyKnockout.anon.Error
 import typings.surveyKnockout.anon.FileInput
+import typings.surveyKnockout.anon.FilterStringInput
 import typings.surveyKnockout.anon.Footer
 import typings.surveyKnockout.anon.Icon
 import typings.surveyKnockout.anon.Image
 import typings.surveyKnockout.anon.ItemDisabled
-import typings.surveyKnockout.anon.ItemHover
-import typings.surveyKnockout.anon.ItemInline
+import typings.surveyKnockout.anon.ItemSelectAll
+import typings.surveyKnockout.anon.ItemSvgIconId
+import typings.surveyKnockout.anon.ItemTitle
 import typings.surveyKnockout.anon.OnError
-import typings.surveyKnockout.anon.Row
-import typings.surveyKnockout.anon.SelectWrapper
+import typings.surveyKnockout.anon.Other
+import typings.surveyKnockout.anon.Placeholder
 import typings.surveyKnockout.anon.Small
+import typings.surveyKnockout.anon.ThemeMark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,13 +50,18 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.boolean")
   @js.native
-  def boolean: DisabledLabel = js.native
-  inline def boolean_=(x: DisabledLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boolean")(x.asInstanceOf[js.Any])
+  def boolean: CheckboxItemChecked = js.native
+  inline def boolean_=(x: CheckboxItemChecked): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boolean")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.buttongroup")
+  @js.native
+  def buttongroup: ItemDisabled = js.native
+  inline def buttongroup_=(x: ItemDisabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttongroup")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.checkbox")
   @js.native
-  def checkbox: ItemDisabled = js.native
-  inline def checkbox_=(x: ItemDisabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox")(x.asInstanceOf[js.Any])
+  def checkbox: ItemSelectAll = js.native
+  inline def checkbox_=(x: ItemSelectAll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.comment")
   @js.native
@@ -76,8 +85,8 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.dropdown")
   @js.native
-  def dropdown: SelectWrapper = js.native
-  inline def dropdown_=(x: SelectWrapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
+  def dropdown: ControlValue = js.native
+  inline def dropdown_=(x: ControlValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.error")
   @js.native
@@ -103,6 +112,11 @@ object modernCss {
   @js.native
   def header: String = js.native
   
+  @JSImport("survey-knockout", "modernCss.headerClose")
+  @js.native
+  def headerClose: String = js.native
+  inline def headerClose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerClose")(x.asInstanceOf[js.Any])
+  
   @JSImport("survey-knockout", "modernCss.headerText")
   @js.native
   def headerText: String = js.native
@@ -117,8 +131,8 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.imagepicker")
   @js.native
-  def imagepicker: ItemInline = js.native
-  inline def imagepicker_=(x: ItemInline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagepicker")(x.asInstanceOf[js.Any])
+  def imagepicker: Other = js.native
+  inline def imagepicker_=(x: Other): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagepicker")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.logo")
   @js.native
@@ -138,18 +152,18 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.matrixdropdown")
   @js.native
-  def matrixdropdown: Cell = js.native
-  inline def matrixdropdown_=(x: Cell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdropdown")(x.asInstanceOf[js.Any])
+  def matrixdropdown: ActionsCell = js.native
+  inline def matrixdropdown_=(x: ActionsCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdropdown")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.matrixdynamic")
   @js.native
-  def matrixdynamic: DetailCell = js.native
-  inline def matrixdynamic_=(x: DetailCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdynamic")(x.asInstanceOf[js.Any])
+  def matrixdynamic: ChoiceCell = js.native
+  inline def matrixdynamic_=(x: ChoiceCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdynamic")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.multipletext")
   @js.native
-  def multipletext: Row = js.native
-  inline def multipletext_=(x: Row): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multipletext")(x.asInstanceOf[js.Any])
+  def multipletext: ItemTitle = js.native
+  inline def multipletext_=(x: ItemTitle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multipletext")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.navigation")
   @js.native
@@ -185,8 +199,8 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.paneldynamic")
   @js.native
-  def paneldynamic: ButtonPrev = js.native
-  inline def paneldynamic_=(x: ButtonPrev): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paneldynamic")(x.asInstanceOf[js.Any])
+  def paneldynamic: ButtonPrevDisabled = js.native
+  inline def paneldynamic_=(x: ButtonPrevDisabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paneldynamic")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.progress")
   @js.native
@@ -196,6 +210,68 @@ object modernCss {
   @js.native
   def progressBar: String = js.native
   inline def progressBar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressBar")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsContainer")
+  @js.native
+  def progressButtonsContainer: String = js.native
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsContainerCenter")
+  @js.native
+  def progressButtonsContainerCenter: String = js.native
+  inline def progressButtonsContainerCenter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsContainerCenter")(x.asInstanceOf[js.Any])
+  
+  inline def progressButtonsContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsContainer")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsImageButtonHidden")
+  @js.native
+  def progressButtonsImageButtonHidden: String = js.native
+  inline def progressButtonsImageButtonHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsImageButtonHidden")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsImageButtonLeft")
+  @js.native
+  def progressButtonsImageButtonLeft: String = js.native
+  inline def progressButtonsImageButtonLeft_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsImageButtonLeft")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsImageButtonRight")
+  @js.native
+  def progressButtonsImageButtonRight: String = js.native
+  inline def progressButtonsImageButtonRight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsImageButtonRight")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsList")
+  @js.native
+  def progressButtonsList: String = js.native
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsListContainer")
+  @js.native
+  def progressButtonsListContainer: String = js.native
+  inline def progressButtonsListContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsListContainer")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsListElementCurrent")
+  @js.native
+  def progressButtonsListElementCurrent: String = js.native
+  inline def progressButtonsListElementCurrent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsListElementCurrent")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsListElementNonClickable")
+  @js.native
+  def progressButtonsListElementNonClickable: String = js.native
+  inline def progressButtonsListElementNonClickable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsListElementNonClickable")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsListElementPassed")
+  @js.native
+  def progressButtonsListElementPassed: String = js.native
+  inline def progressButtonsListElementPassed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsListElementPassed")(x.asInstanceOf[js.Any])
+  
+  inline def progressButtonsList_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsList")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsPageDescription")
+  @js.native
+  def progressButtonsPageDescription: String = js.native
+  inline def progressButtonsPageDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsPageDescription")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.progressButtonsPageTitle")
+  @js.native
+  def progressButtonsPageTitle: String = js.native
+  inline def progressButtonsPageTitle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressButtonsPageTitle")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.progressText")
   @js.native
@@ -217,13 +293,18 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.radiogroup")
   @js.native
-  def radiogroup: ItemHover = js.native
-  inline def radiogroup_=(x: ItemHover): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiogroup")(x.asInstanceOf[js.Any])
+  def radiogroup: ItemSvgIconId = js.native
+  inline def radiogroup_=(x: ItemSvgIconId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiogroup")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.ranking")
+  @js.native
+  def ranking: ControlLabel = js.native
+  inline def ranking_=(x: ControlLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ranking")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.rating")
   @js.native
-  def rating: Disabled = js.native
-  inline def rating_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rating")(x.asInstanceOf[js.Any])
+  def rating: FilterStringInput = js.native
+  inline def rating_=(x: FilterStringInput): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rating")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.root")
   @js.native
@@ -242,18 +323,33 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.signaturepad")
   @js.native
-  def signaturepad: ClearButtonControls = js.native
-  inline def signaturepad_=(x: ClearButtonControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("signaturepad")(x.asInstanceOf[js.Any])
+  def signaturepad: Placeholder = js.native
+  inline def signaturepad_=(x: Placeholder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("signaturepad")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.tagbox")
+  @js.native
+  def tagbox: CleanButtonIconId = js.native
+  inline def tagbox_=(x: CleanButtonIconId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.text")
   @js.native
   def text: OnError = js.native
   inline def text_=(x: OnError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
   
+  @JSImport("survey-knockout", "modernCss.timerRoot")
+  @js.native
+  def timerRoot: String = js.native
+  inline def timerRoot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timerRoot")(x.asInstanceOf[js.Any])
+  
   @JSImport("survey-knockout", "modernCss.title")
   @js.native
   def title: String = js.native
   inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "modernCss.variables")
+  @js.native
+  def variables: ThemeMark = js.native
+  inline def variables_=(x: ThemeMark): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("variables")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.window")
   @js.native

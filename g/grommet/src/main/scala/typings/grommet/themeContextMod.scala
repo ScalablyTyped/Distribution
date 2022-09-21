@@ -1,6 +1,6 @@
 package typings.grommet
 
-import typings.grommet.anon.ValueThemeValue
+import typings.grommet.anon.Children
 import typings.react.mod.Consumer
 import typings.react.mod.Context
 import typings.react.mod.FC
@@ -19,18 +19,18 @@ object themeContextMod {
     extends StObject
        with Context[ThemeValue] {
     
-    var Extend: FC[ValueThemeValue]
+    var Extend: FC[Children]
   }
   object ThemeContextI {
     
-    inline def apply(Consumer: Consumer[ThemeValue], Extend: FC[ValueThemeValue], Provider: Provider[ThemeValue]): ThemeContextI = {
+    inline def apply(Consumer: Consumer[ThemeValue], Extend: FC[Children], Provider: Provider[ThemeValue]): ThemeContextI = {
       val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Extend = Extend.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThemeContextI]
     }
     
     extension [Self <: ThemeContextI](x: Self) {
       
-      inline def setExtend(value: FC[ValueThemeValue]): Self = StObject.set(x, "Extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: FC[Children]): Self = StObject.set(x, "Extend", value.asInstanceOf[js.Any])
     }
   }
   

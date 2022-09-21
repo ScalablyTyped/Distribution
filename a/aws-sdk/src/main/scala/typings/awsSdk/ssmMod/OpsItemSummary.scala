@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpsItemSummary extends StObject {
   
   /**
+    * The time a runbook workflow ended. Currently reported only for the OpsItem type /aws/changerequest.
+    */
+  var ActualEndTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The time a runbook workflow started. Currently reported only for the OpsItem type /aws/changerequest.
+    */
+  var ActualStartTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * A list of OpsItems by category.
     */
   var Category: js.UndefOr[OpsItemCategory] = js.undefined
@@ -19,7 +29,7 @@ trait OpsItemSummary extends StObject {
   /**
     * The date and time the OpsItem was created.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM entity that created the OpsItem.
@@ -29,7 +39,7 @@ trait OpsItemSummary extends StObject {
   /**
     * The date and time the OpsItem was last updated.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Operational data is custom data that provides useful reference details about the OpsItem. 
@@ -42,6 +52,21 @@ trait OpsItemSummary extends StObject {
   var OpsItemId: js.UndefOr[typings.awsSdk.ssmMod.OpsItemId] = js.undefined
   
   /**
+    * The type of OpsItem. Currently, the only valid values are /aws/changerequest and /aws/issue.
+    */
+  var OpsItemType: js.UndefOr[typings.awsSdk.ssmMod.OpsItemType] = js.undefined
+  
+  /**
+    * The time specified in a change request for a runbook workflow to end. Currently supported only for the OpsItem type /aws/changerequest.
+    */
+  var PlannedEndTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The time specified in a change request for a runbook workflow to start. Currently supported only for the OpsItem type /aws/changerequest.
+    */
+  var PlannedStartTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The importance of this OpsItem in relation to other OpsItems in the system.
     */
   var Priority: js.UndefOr[OpsItemPriority] = js.undefined
@@ -52,7 +77,7 @@ trait OpsItemSummary extends StObject {
   var Severity: js.UndefOr[OpsItemSeverity] = js.undefined
   
   /**
-    * The impacted AWS resource.
+    * The impacted Amazon Web Services resource.
     */
   var Source: js.UndefOr[OpsItemSource] = js.undefined
   
@@ -75,6 +100,14 @@ object OpsItemSummary {
   
   extension [Self <: OpsItemSummary](x: Self) {
     
+    inline def setActualEndTime(value: js.Date): Self = StObject.set(x, "ActualEndTime", value.asInstanceOf[js.Any])
+    
+    inline def setActualEndTimeUndefined: Self = StObject.set(x, "ActualEndTime", js.undefined)
+    
+    inline def setActualStartTime(value: js.Date): Self = StObject.set(x, "ActualStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setActualStartTimeUndefined: Self = StObject.set(x, "ActualStartTime", js.undefined)
+    
     inline def setCategory(value: OpsItemCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
@@ -83,7 +116,7 @@ object OpsItemSummary {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -91,7 +124,7 @@ object OpsItemSummary {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedTime(value: DateTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
@@ -102,6 +135,18 @@ object OpsItemSummary {
     inline def setOpsItemId(value: OpsItemId): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
     
     inline def setOpsItemIdUndefined: Self = StObject.set(x, "OpsItemId", js.undefined)
+    
+    inline def setOpsItemType(value: OpsItemType): Self = StObject.set(x, "OpsItemType", value.asInstanceOf[js.Any])
+    
+    inline def setOpsItemTypeUndefined: Self = StObject.set(x, "OpsItemType", js.undefined)
+    
+    inline def setPlannedEndTime(value: js.Date): Self = StObject.set(x, "PlannedEndTime", value.asInstanceOf[js.Any])
+    
+    inline def setPlannedEndTimeUndefined: Self = StObject.set(x, "PlannedEndTime", js.undefined)
+    
+    inline def setPlannedStartTime(value: js.Date): Self = StObject.set(x, "PlannedStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setPlannedStartTimeUndefined: Self = StObject.set(x, "PlannedStartTime", js.undefined)
     
     inline def setPriority(value: OpsItemPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

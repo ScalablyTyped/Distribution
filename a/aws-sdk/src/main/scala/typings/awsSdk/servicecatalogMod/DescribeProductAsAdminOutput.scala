@@ -44,7 +44,7 @@ object DescribeProductAsAdminOutput {
     
     inline def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
     
-    inline def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value :_*))
+    inline def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value*))
     
     inline def setProductViewDetail(value: ProductViewDetail): Self = StObject.set(x, "ProductViewDetail", value.asInstanceOf[js.Any])
     
@@ -54,18 +54,18 @@ object DescribeProductAsAdminOutput {
     
     inline def setProvisioningArtifactSummariesUndefined: Self = StObject.set(x, "ProvisioningArtifactSummaries", js.undefined)
     
-    inline def setProvisioningArtifactSummariesVarargs(value: ProvisioningArtifactSummary*): Self = StObject.set(x, "ProvisioningArtifactSummaries", js.Array(value :_*))
+    inline def setProvisioningArtifactSummariesVarargs(value: ProvisioningArtifactSummary*): Self = StObject.set(x, "ProvisioningArtifactSummaries", js.Array(value*))
     
     inline def setTagOptions(value: TagOptionDetails): Self = StObject.set(x, "TagOptions", value.asInstanceOf[js.Any])
     
     inline def setTagOptionsUndefined: Self = StObject.set(x, "TagOptions", js.undefined)
     
-    inline def setTagOptionsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptions", js.Array(value :_*))
+    inline def setTagOptionsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptions", js.Array(value*))
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

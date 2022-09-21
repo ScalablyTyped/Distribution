@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__to-milliseconds
 
-Typings are for version 1.2.0
+Typings are for version 2.0.0
 
 ## Library description:
 Convert an object of time properties to milliseconds: `{seconds: 2}` → `2000`
@@ -10,10 +10,10 @@ Convert an object of time properties to milliseconds: `{seconds: 2}` → `2000`
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/to-milliseconds |
 | Keywords           | parse, object, properties, to, into, time, ms, milliseconds, microseconds, nanoseconds, duration, period, range, interval |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 62751 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 10295.666666666666 |
+| # stars            | 145.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/to-milliseconds#readme)

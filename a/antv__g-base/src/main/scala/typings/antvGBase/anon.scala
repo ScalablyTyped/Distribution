@@ -116,20 +116,20 @@ object anon {
   
   trait Matrix extends StObject {
     
-    var matrix: js.Any
+    var matrix: Any
     
     var opacity: Double
   }
   object Matrix {
     
-    inline def apply(matrix: js.Any, opacity: Double): Matrix = {
+    inline def apply(matrix: Any, opacity: Double): Matrix = {
       val __obj = js.Dynamic.literal(matrix = matrix.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
       __obj.asInstanceOf[Matrix]
     }
     
     extension [Self <: Matrix](x: Self) {
       
-      inline def setMatrix(value: js.Any): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: Any): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     }

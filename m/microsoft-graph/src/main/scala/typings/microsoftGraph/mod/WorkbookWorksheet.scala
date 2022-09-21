@@ -47,7 +47,7 @@ object WorkbookWorksheet {
     
     inline def setChartsUndefined: Self = StObject.set(x, "charts", js.undefined)
     
-    inline def setChartsVarargs(value: WorkbookChart*): Self = StObject.set(x, "charts", js.Array(value :_*))
+    inline def setChartsVarargs(value: WorkbookChart*): Self = StObject.set(x, "charts", js.Array(value*))
     
     inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object WorkbookWorksheet {
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    inline def setNamesVarargs(value: WorkbookNamedItem*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: WorkbookNamedItem*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setPivotTables(value: NullableOption[js.Array[WorkbookPivotTable]]): Self = StObject.set(x, "pivotTables", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object WorkbookWorksheet {
     
     inline def setPivotTablesUndefined: Self = StObject.set(x, "pivotTables", js.undefined)
     
-    inline def setPivotTablesVarargs(value: WorkbookPivotTable*): Self = StObject.set(x, "pivotTables", js.Array(value :_*))
+    inline def setPivotTablesVarargs(value: WorkbookPivotTable*): Self = StObject.set(x, "pivotTables", js.Array(value*))
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object WorkbookWorksheet {
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    inline def setTablesVarargs(value: WorkbookTable*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: WorkbookTable*): Self = StObject.set(x, "tables", js.Array(value*))
     
     inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ A plugin for superagent that prefixes absolute URLs.
 | Full name          | superagent-prefix |
 | Keywords           | prefix, superagent |
 | # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 320817 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40233.333333333336 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/mattahorton/superagent-prefix)

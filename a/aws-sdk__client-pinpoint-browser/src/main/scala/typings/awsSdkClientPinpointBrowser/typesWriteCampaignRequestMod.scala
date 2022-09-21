@@ -10,7 +10,6 @@ import typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule
 import typings.awsSdkClientPinpointBrowser.typesScheduleMod.UnmarshalledSchedule
 import typings.awsSdkClientPinpointBrowser.typesWriteTreatmentResourceMod.UnmarshalledWriteTreatmentResource
 import typings.awsSdkClientPinpointBrowser.typesWriteTreatmentResourceMod.WriteTreatmentResource
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +63,7 @@ object typesWriteCampaignRequestMod {
       
       inline def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
       
-      inline def setAdditionalTreatmentsVarargs(value: UnmarshalledWriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
+      inline def setAdditionalTreatmentsVarargs(value: UnmarshalledWriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value*))
       
       inline def setHook(value: UnmarshalledCampaignHook): Self = StObject.set(x, "Hook", value.asInstanceOf[js.Any])
       
@@ -89,7 +88,7 @@ object typesWriteCampaignRequestMod {
     /**
       * Treatments that are defined in addition to the default treatment.
       */
-    var AdditionalTreatments: js.UndefOr[js.Array[WriteTreatmentResource] | Iterable[WriteTreatmentResource]] = js.undefined
+    var AdditionalTreatments: js.UndefOr[js.Array[WriteTreatmentResource] | js.Iterable[WriteTreatmentResource]] = js.undefined
     
     /**
       * A description of the campaign.
@@ -162,11 +161,11 @@ object typesWriteCampaignRequestMod {
     
     extension [Self <: WriteCampaignRequest](x: Self) {
       
-      inline def setAdditionalTreatments(value: js.Array[WriteTreatmentResource] | Iterable[WriteTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
+      inline def setAdditionalTreatments(value: js.Array[WriteTreatmentResource] | js.Iterable[WriteTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
       
       inline def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
       
-      inline def setAdditionalTreatmentsVarargs(value: WriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
+      inline def setAdditionalTreatmentsVarargs(value: WriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       

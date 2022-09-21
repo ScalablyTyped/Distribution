@@ -8,11 +8,50 @@ object mod {
   
   @JSImport("eventsource", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with EventSource {
     def this(url: String) = this()
     def this(url: String, eventSourceInitDict: EventSourceInitDict) = this()
+    
+    /* CompleteClass */
+    override val CLOSED: Double = js.native
+    
+    /* CompleteClass */
+    override val CONNECTING: Double = js.native
+    
+    /* CompleteClass */
+    override val OPEN: Double = js.native
+    
+    /* CompleteClass */
+    override def addEventListener(`type`: String, listener: js.Function1[/* evt */ MessageEvent[Any], Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /* CompleteClass */
+    override def dispatchEvent(evt: Event): Boolean = js.native
+    
+    /* CompleteClass */
+    override def onerror(evt: MessageEvent[Any]): Any = js.native
+    
+    /* CompleteClass */
+    override def onmessage(evt: MessageEvent[Any]): Any = js.native
+    
+    /* CompleteClass */
+    override def onopen(evt: MessageEvent[Any]): Any = js.native
+    
+    /* CompleteClass */
+    override val readyState: Double = js.native
+    
+    /* CompleteClass */
+    override def removeEventListener(`type`: String, listener: js.Function1[/* evt */ MessageEvent[Any], Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override val url: String = js.native
+    
+    /* CompleteClass */
+    override val withCredentials: Boolean = js.native
   }
   
   /* static member */
@@ -58,35 +97,83 @@ object mod {
     /* 1 */ val OPEN: typings.eventsource.mod.ReadyState.OPEN & Double = js.native
   }
   
-  @js.native
   trait EventSource extends StObject {
     
-    val CLOSED: Double = js.native
+    val CLOSED: Double
     
-    val CONNECTING: Double = js.native
+    val CONNECTING: Double
     
-    val OPEN: Double = js.native
+    val OPEN: Double
     
-    def addEventListener(`type`: String, listener: EventListener): Unit = js.native
+    def addEventListener(`type`: String, listener: js.Function1[/* evt */ MessageEvent[Any], Unit]): Unit
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def dispatchEvent(evt: Event): Boolean = js.native
+    def dispatchEvent(evt: Event): Boolean
     
-    def onerror(evt: MessageEvent[js.Any]): js.Any = js.native
+    def onerror(evt: MessageEvent[Any]): Any
     
-    def onmessage(evt: MessageEvent[js.Any]): js.Any = js.native
+    def onmessage(evt: MessageEvent[Any]): Any
     
-    def onopen(evt: MessageEvent[js.Any]): js.Any = js.native
+    def onopen(evt: MessageEvent[Any]): Any
     
-    val readyState: Double = js.native
+    val readyState: Double
     
-    def removeEventListener(`type`: String): Unit = js.native
-    def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
+    def removeEventListener(`type`: String, listener: js.Function1[/* evt */ MessageEvent[Any], Unit]): Unit
     
-    val url: String = js.native
+    val url: String
     
-    val withCredentials: Boolean = js.native
+    val withCredentials: Boolean
+  }
+  object EventSource {
+    
+    inline def apply(
+      CLOSED: Double,
+      CONNECTING: Double,
+      OPEN: Double,
+      addEventListener: (String, js.Function1[/* evt */ MessageEvent[Any], Unit]) => Unit,
+      close: () => Unit,
+      dispatchEvent: Event => Boolean,
+      onerror: MessageEvent[Any] => Any,
+      onmessage: MessageEvent[Any] => Any,
+      onopen: MessageEvent[Any] => Any,
+      readyState: Double,
+      removeEventListener: (String, js.Function1[/* evt */ MessageEvent[Any], Unit]) => Unit,
+      url: String,
+      withCredentials: Boolean
+    ): EventSource = {
+      val __obj = js.Dynamic.literal(CLOSED = CLOSED.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), close = js.Any.fromFunction0(close), dispatchEvent = js.Any.fromFunction1(dispatchEvent), onerror = js.Any.fromFunction1(onerror), onmessage = js.Any.fromFunction1(onmessage), onopen = js.Any.fromFunction1(onopen), readyState = readyState.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), url = url.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EventSource]
+    }
+    
+    extension [Self <: EventSource](x: Self) {
+      
+      inline def setAddEventListener(value: (String, js.Function1[/* evt */ MessageEvent[Any], Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      
+      inline def setCLOSED(value: Double): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
+      
+      inline def setCONNECTING(value: Double): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
+      
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      
+      inline def setDispatchEvent(value: Event => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+      
+      inline def setOPEN(value: Double): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
+      
+      inline def setOnerror(value: MessageEvent[Any] => Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+      
+      inline def setOnmessage(value: MessageEvent[Any] => Any): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+      
+      inline def setOnopen(value: MessageEvent[Any] => Any): Self = StObject.set(x, "onopen", js.Any.fromFunction1(value))
+      
+      inline def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveEventListener(value: (String, js.Function1[/* evt */ MessageEvent[Any], Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    }
   }
   
   trait EventSourceInitDict extends StObject {

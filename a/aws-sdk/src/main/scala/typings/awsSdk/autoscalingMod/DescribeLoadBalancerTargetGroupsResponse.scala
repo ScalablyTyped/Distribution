@@ -29,7 +29,7 @@ object DescribeLoadBalancerTargetGroupsResponse {
     
     inline def setLoadBalancerTargetGroupsUndefined: Self = StObject.set(x, "LoadBalancerTargetGroups", js.undefined)
     
-    inline def setLoadBalancerTargetGroupsVarargs(value: LoadBalancerTargetGroupState*): Self = StObject.set(x, "LoadBalancerTargetGroups", js.Array(value :_*))
+    inline def setLoadBalancerTargetGroupsVarargs(value: LoadBalancerTargetGroupState*): Self = StObject.set(x, "LoadBalancerTargetGroups", js.Array(value*))
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

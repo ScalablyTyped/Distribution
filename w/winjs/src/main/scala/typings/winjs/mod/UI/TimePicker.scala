@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element associated with the TimePicker control.
   * @param options The set of options to be applied initially to the TimePicker control. The options are the following: clock.
   **/
-class TimePicker ()
+open class TimePicker ()
   extends StObject
      with typings.winjs.WinJS.UI.TimePicker {
   def this(element: HTMLElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
 }
 object TimePicker {
   
@@ -34,8 +34,8 @@ object TimePicker {
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
   /* static member */
-  inline def getInformation(clock: js.Any, minuteIncrement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any], timerPatterns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getInformation(clock: Any, minuteIncrement: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getInformation(clock: Any, minuteIncrement: Any, timerPatterns: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any], timerPatterns.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Indicates that the object is compatibile with declarative processing.

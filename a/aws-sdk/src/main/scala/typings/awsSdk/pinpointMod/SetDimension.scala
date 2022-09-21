@@ -31,6 +31,6 @@ object SetDimension {
     
     inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: string*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: string*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

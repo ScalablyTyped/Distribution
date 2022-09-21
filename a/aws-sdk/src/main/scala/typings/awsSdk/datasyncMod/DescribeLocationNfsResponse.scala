@@ -9,7 +9,7 @@ trait DescribeLocationNfsResponse extends StObject {
   /**
     * The time that the NFS location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the NFS location that was described.
@@ -37,7 +37,7 @@ object DescribeLocationNfsResponse {
   
   extension [Self <: DescribeLocationNfsResponse](x: Self) {
     
-    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

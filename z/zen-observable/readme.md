@@ -10,10 +10,10 @@ An Implementation of ES Observables
 | ------------------ | :-------------: |
 | Full name          | zen-observable |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 202 |
-| # downloads        | 117376072 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9750271333333332E7 |
+| # stars            | 816.0 |
 
 ## Links
 - [Homepage](https://github.com/zenparsing/zen-observable)

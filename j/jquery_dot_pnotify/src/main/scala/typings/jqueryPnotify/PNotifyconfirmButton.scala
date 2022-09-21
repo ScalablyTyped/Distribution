@@ -8,7 +8,7 @@ trait PNotifyconfirmButton extends StObject {
   
   var addClass: js.UndefOr[String] = js.undefined
   
-  def click(notice: PNotify, value: js.Any): Unit
+  def click(notice: PNotify, value: Any): Unit
   
   /**
     *  Whether to trigger this button when the user hits enter in a single line prompt.
@@ -19,7 +19,7 @@ trait PNotifyconfirmButton extends StObject {
 }
 object PNotifyconfirmButton {
   
-  inline def apply(click: (PNotify, js.Any) => Unit): PNotifyconfirmButton = {
+  inline def apply(click: (PNotify, Any) => Unit): PNotifyconfirmButton = {
     val __obj = js.Dynamic.literal(click = js.Any.fromFunction2(click))
     __obj.asInstanceOf[PNotifyconfirmButton]
   }
@@ -30,7 +30,7 @@ object PNotifyconfirmButton {
     
     inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
     
-    inline def setClick(value: (PNotify, js.Any) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
+    inline def setClick(value: (PNotify, Any) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     
     inline def setPromptTrigger(value: Boolean): Self = StObject.set(x, "promptTrigger", value.asInstanceOf[js.Any])
     

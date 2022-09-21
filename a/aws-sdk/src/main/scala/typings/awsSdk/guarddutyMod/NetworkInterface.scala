@@ -69,7 +69,7 @@ object NetworkInterface {
     
     inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
     
-    inline def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+    inline def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value*))
     
     inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object NetworkInterface {
     
     inline def setPrivateIpAddressesUndefined: Self = StObject.set(x, "PrivateIpAddresses", js.undefined)
     
-    inline def setPrivateIpAddressesVarargs(value: PrivateIpAddressDetails*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value :_*))
+    inline def setPrivateIpAddressesVarargs(value: PrivateIpAddressDetails*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value*))
     
     inline def setPublicDnsName(value: String): Self = StObject.set(x, "PublicDnsName", value.asInstanceOf[js.Any])
     
@@ -101,7 +101,7 @@ object NetworkInterface {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     

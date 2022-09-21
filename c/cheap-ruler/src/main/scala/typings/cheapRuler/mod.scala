@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("cheap-ruler", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with CheapRuler {
     def this(lat: Double) = this()
@@ -53,6 +53,9 @@ object mod {
     
     /* CompleteClass */
     override def pointOnLine(line: Line, p: Point): Index = js.native
+    
+    /* CompleteClass */
+    override def pointToSegmentDistance(p: Point, a: Point, b: Point): Double = js.native
   }
   /* static members */
   object default {
@@ -99,6 +102,8 @@ object mod {
     def offset(p: Point, dx: Double, dy: Double): Point
     
     def pointOnLine(line: Line, p: Point): Index
+    
+    def pointToSegmentDistance(p: Point, a: Point, b: Point): Double
   }
   object CheapRuler {
     
@@ -115,9 +120,10 @@ object mod {
       lineSlice: (Point, Point, Line) => Line,
       lineSliceAlong: (Double, Double, Line) => Line,
       offset: (Point, Double, Double) => Point,
-      pointOnLine: (Line, Point) => Index
+      pointOnLine: (Line, Point) => Index,
+      pointToSegmentDistance: (Point, Point, Point) => Double
     ): CheapRuler = {
-      val __obj = js.Dynamic.literal(along = js.Any.fromFunction2(along), area = js.Any.fromFunction1(area), bearing = js.Any.fromFunction2(bearing), bufferBBox = js.Any.fromFunction2(bufferBBox), bufferPoint = js.Any.fromFunction2(bufferPoint), destination = js.Any.fromFunction3(destination), distance = js.Any.fromFunction2(distance), insideBBox = js.Any.fromFunction2(insideBBox), lineDistance = js.Any.fromFunction1(lineDistance), lineSlice = js.Any.fromFunction3(lineSlice), lineSliceAlong = js.Any.fromFunction3(lineSliceAlong), offset = js.Any.fromFunction3(offset), pointOnLine = js.Any.fromFunction2(pointOnLine))
+      val __obj = js.Dynamic.literal(along = js.Any.fromFunction2(along), area = js.Any.fromFunction1(area), bearing = js.Any.fromFunction2(bearing), bufferBBox = js.Any.fromFunction2(bufferBBox), bufferPoint = js.Any.fromFunction2(bufferPoint), destination = js.Any.fromFunction3(destination), distance = js.Any.fromFunction2(distance), insideBBox = js.Any.fromFunction2(insideBBox), lineDistance = js.Any.fromFunction1(lineDistance), lineSlice = js.Any.fromFunction3(lineSlice), lineSliceAlong = js.Any.fromFunction3(lineSliceAlong), offset = js.Any.fromFunction3(offset), pointOnLine = js.Any.fromFunction2(pointOnLine), pointToSegmentDistance = js.Any.fromFunction3(pointToSegmentDistance))
       __obj.asInstanceOf[CheapRuler]
     }
     
@@ -148,6 +154,8 @@ object mod {
       inline def setOffset(value: (Point, Double, Double) => Point): Self = StObject.set(x, "offset", js.Any.fromFunction3(value))
       
       inline def setPointOnLine(value: (Line, Point) => Index): Self = StObject.set(x, "pointOnLine", js.Any.fromFunction2(value))
+      
+      inline def setPointToSegmentDistance(value: (Point, Point, Point) => Double): Self = StObject.set(x, "pointToSegmentDistance", js.Any.fromFunction3(value))
     }
   }
   

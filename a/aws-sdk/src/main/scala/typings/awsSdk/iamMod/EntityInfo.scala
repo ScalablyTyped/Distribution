@@ -19,7 +19,7 @@ trait EntityInfo extends StObject {
   var Name: userNameType
   
   /**
-    * The path to the entity (user or role). For more information about paths, see IAM Identifiers in the IAM User Guide. 
+    * The path to the entity (user or role). For more information about paths, see IAM identifiers in the IAM User Guide. 
     */
   var Path: js.UndefOr[pathType] = js.undefined
   

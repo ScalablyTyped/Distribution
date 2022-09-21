@@ -23,9 +23,9 @@ trait NightwatchDesiredCapabilities extends StObject {
   var browserConnectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of the browser being used; should be one of {android|chrome|firefox|htmlunit|internet explorer|iPhone|iPad|opera|safari}.
+    * The name of the browser being used; examples: {chrome|firefox|safari|edge|internet explorer|android|iPhone|iPad|opera|brave}.
     */
-  var browserName: js.UndefOr[String] = js.undefined
+  var browserName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * This is a list of all the Chrome-specific desired capabilities.
@@ -129,6 +129,8 @@ object NightwatchDesiredCapabilities {
     inline def setBrowserConnectionEnabledUndefined: Self = StObject.set(x, "browserConnectionEnabled", js.undefined)
     
     inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserNameNull: Self = StObject.set(x, "browserName", null)
     
     inline def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
     

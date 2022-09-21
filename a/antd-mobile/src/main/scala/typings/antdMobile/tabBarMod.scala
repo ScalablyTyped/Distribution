@@ -1,132 +1,51 @@
 package typings.antdMobile
 
-import typings.antdMobile.tabBarPropsTypeMod.TabBarItemProps
-import typings.antdMobile.tabBarPropsTypeMod.TabBarProps
-import typings.react.mod.Component
-import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
+import typings.antdMobile.anon.PartialTabBarProps
+import typings.antdMobile.anon.WeakValidationMapTabBarPr
+import typings.antdMobile.tabBarTabBarMod.TabBarItemProps
+import typings.antdMobile.tabBarTabBarMod.TabBarProps
+import typings.react.mod.FC
+import typings.react.mod.ReactElement
+import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarMod {
   
-  @JSImport("antd-mobile/lib/tab-bar", JSImport.Default)
-  @js.native
-  class default () extends AntTabBar
+  /* Inlined react.react.FC<antd-mobile.antd-mobile/es/components/tab-bar/tab-bar.TabBarProps> & {  Item :react.react.FC<antd-mobile.antd-mobile/es/components/tab-bar/tab-bar.TabBarItemProps>} */
   object default {
     
-    @JSImport("antd-mobile/lib/tab-bar", JSImport.Default)
+    inline def apply(props: TabBarProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: TabBarProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
+    @JSImport("antd-mobile/es/components/tab-bar", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("antd-mobile/lib/tab-bar", "default.Item")
+    @JSImport("antd-mobile/es/components/tab-bar", "default.Item")
     @js.native
-    class Item ()
-      extends typings.antdMobile.tabBarMod.Item
-    /* static member */
-    /* was `typeof Item` */
-    object Item {
-      
-      @JSImport("antd-mobile/lib/tab-bar", "default.Item")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("antd-mobile/lib/tab-bar", "default.Item.defaultProps")
-      @js.native
-      def defaultProps: TabBarItemProps = js.native
-      inline def defaultProps_=(x: TabBarItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-    }
+    def Item: FC[TabBarItemProps] = js.native
+    inline def Item_=(x: FC[TabBarItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
-    /* static member */
-    @JSImport("antd-mobile/lib/tab-bar", "default.defaultProps")
+    @JSImport("antd-mobile/es/components/tab-bar", "default.contextTypes")
     @js.native
-    def defaultProps: AntTabbarProps = js.native
-    inline def defaultProps_=(x: AntTabbarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("antd-mobile/lib/tab-bar", "Item")
-  @js.native
-  class Item protected ()
-    extends Component[TabBarItemProps, js.Any, js.Any] {
-    def this(props: TabBarItemProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: TabBarItemProps, context: js.Any) = this()
-  }
-  /* static members */
-  object Item {
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd-mobile/lib/tab-bar", "Item")
+    @JSImport("antd-mobile/es/components/tab-bar", "default.defaultProps")
     @js.native
-    val ^ : js.Any = js.native
+    def defaultProps: js.UndefOr[PartialTabBarProps] = js.native
+    inline def defaultProps_=(x: js.UndefOr[PartialTabBarProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd-mobile/lib/tab-bar", "Item.defaultProps")
+    @JSImport("antd-mobile/es/components/tab-bar", "default.displayName")
     @js.native
-    def defaultProps: TabBarItemProps = js.native
-    inline def defaultProps_=(x: TabBarItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
-  
-  @js.native
-  trait AntTabBar
-    extends Component[AntTabbarProps, js.Any, js.Any] {
+    def displayName: js.UndefOr[String] = js.native
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    def getTabs(): js.Array[TabBarItemProps] = js.native
-    
-    def renderTabBar(): Element = js.native
-  }
-  
-  trait AntTabbarProps
-    extends StObject
-       with TabBarProps {
-    
-    var className: js.UndefOr[String] = js.undefined
-    
-    var hidden: js.UndefOr[Boolean] = js.undefined
-    
-    var noRenderContent: js.UndefOr[Boolean] = js.undefined
-    
-    var placeholder: js.UndefOr[ReactNode] = js.undefined
-    
-    var prefixCls: js.UndefOr[String] = js.undefined
-    
-    var prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined
-  }
-  object AntTabbarProps {
-    
-    inline def apply(): AntTabbarProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AntTabbarProps]
-    }
-    
-    extension [Self <: AntTabbarProps](x: Self) {
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
-      
-      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
-      
-      inline def setNoRenderContent(value: Boolean): Self = StObject.set(x, "noRenderContent", value.asInstanceOf[js.Any])
-      
-      inline def setNoRenderContentUndefined: Self = StObject.set(x, "noRenderContent", js.undefined)
-      
-      inline def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
-      
-      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
-      
-      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setPrerenderingSiblingsNumber(value: Double): Self = StObject.set(x, "prerenderingSiblingsNumber", value.asInstanceOf[js.Any])
-      
-      inline def setPrerenderingSiblingsNumberUndefined: Self = StObject.set(x, "prerenderingSiblingsNumber", js.undefined)
-    }
+    @JSImport("antd-mobile/es/components/tab-bar", "default.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapTabBarPr] = js.native
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapTabBarPr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

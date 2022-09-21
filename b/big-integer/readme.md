@@ -1,7 +1,7 @@
 
 # Scala.js typings for big-integer
 
-Typings are for version 1.6.48
+Typings are for version 1.6.51
 
 ## Library description:
 An arbitrary length integer library for Javascript
@@ -10,10 +10,10 @@ An arbitrary length integer library for Javascript
 | ------------------ | :-------------: |
 | Full name          | big-integer |
 | Keywords           | math, big, bignum, bigint, biginteger, integer, arbitrary, precision, arithmetic |
-| # releases         | 8 |
-| # dependents       | 529 |
-| # downloads        | 78080614 |
-| # stars            | 18 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0654767333333332E7 |
+| # stars            | 1024.0 |
 
 ## Links
 - [Homepage](https://github.com/peterolson/BigInteger.js#readme)

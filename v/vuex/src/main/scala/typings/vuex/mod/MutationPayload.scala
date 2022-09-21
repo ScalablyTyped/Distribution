@@ -8,11 +8,11 @@ trait MutationPayload
   extends StObject
      with Payload {
   
-  var payload: js.Any
+  var payload: Any
 }
 object MutationPayload {
   
-  inline def apply(payload: js.Any, `type`: String): MutationPayload = {
+  inline def apply(payload: Any, `type`: String): MutationPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationPayload]
@@ -20,6 +20,6 @@ object MutationPayload {
   
   extension [Self <: MutationPayload](x: Self) {
     
-    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

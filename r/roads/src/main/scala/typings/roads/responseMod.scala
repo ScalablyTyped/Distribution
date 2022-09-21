@@ -3,7 +3,8 @@ package typings.roads
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,53 +17,59 @@ object responseMod {
   
   @JSImport("roads/types/core/response", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Response {
     /**
       * Creates a new Response object.
       *
-      * @param {string} body - Your response body
+      * @param {string | Buffer} body - Your response body
       * @param {number} [status] - Your response status
       * @param {object} [headers] - Your response headers
       */
     def this(body: String) = this()
+    def this(body: Buffer) = this()
     def this(body: String, status: Double) = this()
-    def this(body: String, status: Double, headers: js.Object) = this()
-    def this(body: String, status: Unit, headers: js.Object) = this()
+    def this(body: Buffer, status: Double) = this()
+    def this(body: String, status: Double, headers: OutgoingHeaders) = this()
+    def this(body: String, status: Unit, headers: OutgoingHeaders) = this()
+    def this(body: Buffer, status: Double, headers: OutgoingHeaders) = this()
+    def this(body: Buffer, status: Unit, headers: OutgoingHeaders) = this()
     
     /* CompleteClass */
-    var body: String = js.native
+    var body: String | Buffer = js.native
     
     /* CompleteClass */
-    var headers: StringDictionary[js.Any] = js.native
+    var headers: OutgoingHeaders = js.native
     
     /* CompleteClass */
     var status: Double = js.native
   }
   
-  inline def wrap(promise: js.Promise[js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def wrap(promise: js.Promise[Response | String]): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  
+  type OutgoingHeaders = Record[String, js.UndefOr[String | js.Array[String]]]
   
   trait Response extends StObject {
     
-    var body: String
+    var body: String | Buffer
     
-    var headers: StringDictionary[js.Any]
+    var headers: OutgoingHeaders
     
     var status: Double
   }
   object Response {
     
-    inline def apply(body: String, headers: StringDictionary[js.Any], status: Double): Response = {
+    inline def apply(body: String | Buffer, headers: OutgoingHeaders, status: Double): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
     extension [Self <: Response](x: Self) {
       
-      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: OutgoingHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -76,7 +83,7 @@ object responseMod {
        with Instantiable3[
           /* body */ String, 
           (/* status */ Double) | (/* status */ Unit), 
-          /* headers */ js.Object, 
+          /* headers */ OutgoingHeaders, 
           Response
         ]
 }

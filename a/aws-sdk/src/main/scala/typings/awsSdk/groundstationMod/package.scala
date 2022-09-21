@@ -1,5 +1,7 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.dBW
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.RADIAN
   - java.lang.String
 */
-type AngleUnits = typings.awsSdk.groundstationMod._AngleUnits | java.lang.String
+type AngleUnits = _AngleUnits | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GHz
@@ -18,9 +20,11 @@ type AngleUnits = typings.awsSdk.groundstationMod._AngleUnits | java.lang.String
   - typings.awsSdk.awsSdkStrings.kHz
   - java.lang.String
 */
-type BandwidthUnits = typings.awsSdk.groundstationMod._BandwidthUnits | java.lang.String
+type BandwidthUnits = _BandwidthUnits | java.lang.String
 
 type Boolean = scala.Boolean
+
+type BucketArn = java.lang.String
 
 type ConfigArn = java.lang.String
 
@@ -31,13 +35,14 @@ type ConfigArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.`dataflow-endpoint`
   - typings.awsSdk.awsSdkStrings.tracking
   - typings.awsSdk.awsSdkStrings.`uplink-echo`
+  - typings.awsSdk.awsSdkStrings.`s3-recording`
   - java.lang.String
 */
-type ConfigCapabilityType = typings.awsSdk.groundstationMod._ConfigCapabilityType | java.lang.String
+type ConfigCapabilityType = _ConfigCapabilityType | java.lang.String
 
-type ConfigList = js.Array[typings.awsSdk.groundstationMod.ConfigListItem]
+type ConfigList = js.Array[ConfigListItem]
 
-type ContactList = js.Array[typings.awsSdk.groundstationMod.ContactData]
+type ContactList = js.Array[ContactData]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
@@ -55,7 +60,7 @@ type ContactList = js.Array[typings.awsSdk.groundstationMod.ContactData]
   - typings.awsSdk.awsSdkStrings.SCHEDULING
   - java.lang.String
 */
-type ContactStatus = typings.awsSdk.groundstationMod._ContactStatus | java.lang.String
+type ContactStatus = _ContactStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PREFERRED
@@ -63,27 +68,27 @@ type ContactStatus = typings.awsSdk.groundstationMod._ContactStatus | java.lang.
   - typings.awsSdk.awsSdkStrings.REQUIRED
   - java.lang.String
 */
-type Criticality = typings.awsSdk.groundstationMod._Criticality | java.lang.String
+type Criticality = _Criticality | java.lang.String
 
-type DataflowEdge = js.Array[typings.awsSdk.groundstationMod.ConfigArn]
+type DataflowEdge = js.Array[ConfigArn]
 
-type DataflowEdgeList = js.Array[typings.awsSdk.groundstationMod.DataflowEdge]
+type DataflowEdgeList = js.Array[DataflowEdge]
 
 type DataflowEndpointGroupArn = java.lang.String
 
-type DataflowEndpointGroupList = js.Array[typings.awsSdk.groundstationMod.DataflowEndpointListItem]
+type DataflowEndpointGroupList = js.Array[DataflowEndpointListItem]
 
-type DataflowEndpointmtuInteger = scala.Double
+type DataflowEndpointMtuInteger = scala.Double
 
-type DataflowList = js.Array[typings.awsSdk.groundstationMod.DataflowDetail]
+type DataflowList = js.Array[DataflowDetail]
 
 type Double = scala.Double
 
 type DurationInSeconds = scala.Double
 
-type EirpUnits = typings.awsSdk.awsSdkStrings.dBW | java.lang.String
+type EirpUnits = dBW | java.lang.String
 
-type EndpointDetailsList = js.Array[typings.awsSdk.groundstationMod.EndpointDetails]
+type EndpointDetailsList = js.Array[EndpointDetails]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.created__
@@ -93,7 +98,7 @@ type EndpointDetailsList = js.Array[typings.awsSdk.groundstationMod.EndpointDeta
   - typings.awsSdk.awsSdkStrings.failed__
   - java.lang.String
 */
-type EndpointStatus = typings.awsSdk.groundstationMod._EndpointStatus | java.lang.String
+type EndpointStatus = _EndpointStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GHz
@@ -101,11 +106,11 @@ type EndpointStatus = typings.awsSdk.groundstationMod._EndpointStatus | java.lan
   - typings.awsSdk.awsSdkStrings.kHz
   - java.lang.String
 */
-type FrequencyUnits = typings.awsSdk.groundstationMod._FrequencyUnits | java.lang.String
+type FrequencyUnits = _FrequencyUnits | java.lang.String
 
-type GroundStationIdList = js.Array[typings.awsSdk.groundstationMod.String]
+type GroundStationIdList = js.Array[String]
 
-type GroundStationList = js.Array[typings.awsSdk.groundstationMod.GroundStationData]
+type GroundStationList = js.Array[GroundStationData]
 
 type Integer = scala.Double
 
@@ -113,7 +118,7 @@ type JsonString = java.lang.String
 
 type MissionProfileArn = java.lang.String
 
-type MissionProfileList = js.Array[typings.awsSdk.groundstationMod.MissionProfileListItem]
+type MissionProfileList = js.Array[MissionProfileListItem]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LEFT_HAND
@@ -121,27 +126,29 @@ type MissionProfileList = js.Array[typings.awsSdk.groundstationMod.MissionProfil
   - typings.awsSdk.awsSdkStrings.RIGHT_HAND
   - java.lang.String
 */
-type Polarization = typings.awsSdk.groundstationMod._Polarization | java.lang.String
+type Polarization = _Polarization | java.lang.String
 
 type RoleArn = java.lang.String
 
+type S3KeyPrefix = java.lang.String
+
 type SafeName = java.lang.String
 
-type SatelliteList = js.Array[typings.awsSdk.groundstationMod.SatelliteListItem]
+type SatelliteList = js.Array[SatelliteListItem]
 
-type SecurityGroupIdList = js.Array[typings.awsSdk.groundstationMod.String]
+type SecurityGroupIdList = js.Array[String]
 
-type StatusList = js.Array[typings.awsSdk.groundstationMod.ContactStatus]
+type StatusList = js.Array[ContactStatus]
 
 type String = java.lang.String
 
-type SubnetList = js.Array[typings.awsSdk.groundstationMod.String]
+type SubnetList = js.Array[String]
 
-type TagKeys = js.Array[typings.awsSdk.groundstationMod.String]
+type TagKeys = js.Array[String]
 
-type TagsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.groundstationMod.String]
+type TagsMap = StringDictionary[String]
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type Uuid = java.lang.String
 
@@ -150,7 +157,7 @@ type Uuid = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.groundstationMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String
 
 type noradSatelliteID = scala.Double
 

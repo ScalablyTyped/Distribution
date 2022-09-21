@@ -9,7 +9,7 @@ object notmodifiedMod {
   
   @JSImport("get-uri/dist/notmodified", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with NotModifiedError {
     def this(message: String) = this()
@@ -17,9 +17,11 @@ object notmodifiedMod {
     /* CompleteClass */
     var code: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

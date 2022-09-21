@@ -1,7 +1,7 @@
 
 # Scala.js typings for w3c-keyname
 
-Typings are for version 2.2.4
+Typings are for version 2.2.6
 
 ## Library description:
 Get a KeyboardEvent.key-style string from an event
@@ -10,10 +10,10 @@ Get a KeyboardEvent.key-style string from an event
 | ------------------ | :-------------: |
 | Full name          | w3c-keyname |
 | Keywords           | browser, key, event, key code |
-| # releases         | 7 |
-| # dependents       | 16 |
-| # downloads        | 7109662 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2474659.3333333335 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/marijnh/w3c-keyname#readme)

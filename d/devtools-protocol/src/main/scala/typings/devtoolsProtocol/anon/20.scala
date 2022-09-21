@@ -22,7 +22,7 @@ object `20` {
     
     inline def setParamsType(value: js.Array[SetCustomObjectFormatterEnabledRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SetCustomObjectFormatterEnabledRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetCustomObjectFormatterEnabledRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

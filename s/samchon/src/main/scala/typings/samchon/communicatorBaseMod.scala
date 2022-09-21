@@ -3,7 +3,6 @@ package typings.samchon
 import typings.samchon.icommunicatorMod.ICommunicator
 import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object communicatorBaseMod {
     /**
       * @hidden
       */
-    /* protected */ def _Handle_binary(binary: Uint8Array): Unit = js.native
+    /* protected */ def _Handle_binary(binary: js.typedarray.Uint8Array): Unit = js.native
     
     /**
       * @hidden
@@ -43,12 +42,12 @@ object communicatorBaseMod {
     /**
       * @hidden
       */
-    /* private */ var binary_invoke_ : js.Any = js.native
+    /* private */ var binary_invoke_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var binary_parameters_ : js.Any = js.native
+    /* private */ var binary_parameters_ : Any = js.native
     
     /**
       * Close connection.
@@ -107,6 +106,6 @@ object communicatorBaseMod {
     /**
       * @hidden
       */
-    /* private */ var unhandled_invokes_ : js.Any = js.native
+    /* private */ var unhandled_invokes_ : Any = js.native
   }
 }

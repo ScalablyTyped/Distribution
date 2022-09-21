@@ -11,7 +11,7 @@ trait SchemaGoogleCloudMlV1Location extends StObject {
     */
   var capabilities: js.UndefOr[js.Array[SchemaGoogleCloudMlV1Capability]] = js.undefined
   
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudMlV1Location {
   
@@ -26,9 +26,11 @@ object SchemaGoogleCloudMlV1Location {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: SchemaGoogleCloudMlV1Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: SchemaGoogleCloudMlV1Capability*): Self = StObject.set(x, "capabilities", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

@@ -1,6 +1,5 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait FlexItemLayout extends StObject {
   /**
     * Matches the CSS style key and its available values.
     */
-  var CSSStyles: js.UndefOr[StringDictionary[String]] = js.undefined
+  var CSSStyles: js.UndefOr[CssStyles] = js.undefined
   
   /**
     * Matches the flex CSS property and its available values.
@@ -32,7 +31,7 @@ object FlexItemLayout {
   
   extension [Self <: FlexItemLayout](x: Self) {
     
-    inline def setCSSStyles(value: StringDictionary[String]): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
+    inline def setCSSStyles(value: CssStyles): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
     
     inline def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
     

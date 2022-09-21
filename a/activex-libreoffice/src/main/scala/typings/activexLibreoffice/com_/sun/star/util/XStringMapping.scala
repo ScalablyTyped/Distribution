@@ -20,7 +20,7 @@ object XStringMapping {
   inline def apply(
     acquire: () => Unit,
     mapStrings: js.Array[SeqEquiv[String]] => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStringMapping = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), mapStrings = js.Any.fromFunction1(mapStrings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

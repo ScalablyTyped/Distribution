@@ -3,14 +3,14 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`lock-raster`
 import typings.arcgisJsApi.arcgisJsApiStrings.attribute
 import typings.arcgisJsApi.arcgisJsApiStrings.blend
-import typings.arcgisJsApi.arcgisJsApiStrings.center
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
 import typings.arcgisJsApi.arcgisJsApiStrings.first
 import typings.arcgisJsApi.arcgisJsApiStrings.last
 import typings.arcgisJsApi.arcgisJsApiStrings.max
 import typings.arcgisJsApi.arcgisJsApiStrings.mean
 import typings.arcgisJsApi.arcgisJsApiStrings.min
 import typings.arcgisJsApi.arcgisJsApiStrings.nadir
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.northwest
 import typings.arcgisJsApi.arcgisJsApiStrings.seamline
 import typings.arcgisJsApi.arcgisJsApiStrings.sum
@@ -23,6 +23,8 @@ trait MosaicRuleProperties extends StObject {
   
   /**
     * Indicates whether the sort should be ascending.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#ascending)
     */
@@ -38,6 +40,8 @@ trait MosaicRuleProperties extends StObject {
   /**
     * An array of raster Ids.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#lockRasterIds)
     */
   var lockRasterIds: js.UndefOr[js.Array[Double]] = js.undefined
@@ -48,7 +52,7 @@ trait MosaicRuleProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method)
     */
   var method: js.UndefOr[
-    none | center | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline
+    none_ | center_ | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline
   ] = js.undefined
   
   /**
@@ -75,6 +79,8 @@ trait MosaicRuleProperties extends StObject {
   /**
     * The name of the attribute field that is used with a constant sortValue to define the mosaicking order when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortField)
     */
   var sortField: js.UndefOr[String] = js.undefined
@@ -82,9 +88,11 @@ trait MosaicRuleProperties extends StObject {
   /**
     * A constant value defining a reference or base value for the sort field when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortValue)
     */
-  var sortValue: js.UndefOr[String] = js.undefined
+  var sortValue: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Defines the viewpoint location on which the ordering is defined based on the distance from the viewpoint and the nadir of rasters.
@@ -121,9 +129,9 @@ object MosaicRuleProperties {
     
     inline def setLockRasterIdsUndefined: Self = StObject.set(x, "lockRasterIds", js.undefined)
     
-    inline def setLockRasterIdsVarargs(value: Double*): Self = StObject.set(x, "lockRasterIds", js.Array(value :_*))
+    inline def setLockRasterIdsVarargs(value: Double*): Self = StObject.set(x, "lockRasterIds", js.Array(value*))
     
-    inline def setMethod(value: none | center | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: none_ | center_ | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
@@ -131,13 +139,13 @@ object MosaicRuleProperties {
     
     inline def setMultidimensionalDefinitionUndefined: Self = StObject.set(x, "multidimensionalDefinition", js.undefined)
     
-    inline def setMultidimensionalDefinitionVarargs(value: DimensionalDefinitionProperties*): Self = StObject.set(x, "multidimensionalDefinition", js.Array(value :_*))
+    inline def setMultidimensionalDefinitionVarargs(value: DimensionalDefinitionProperties*): Self = StObject.set(x, "multidimensionalDefinition", js.Array(value*))
     
     inline def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    inline def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value*))
     
     inline def setOperation(value: first | last | min | max | mean | blend | sum): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
@@ -147,7 +155,7 @@ object MosaicRuleProperties {
     
     inline def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
-    inline def setSortValue(value: String): Self = StObject.set(x, "sortValue", value.asInstanceOf[js.Any])
+    inline def setSortValue(value: String | Double): Self = StObject.set(x, "sortValue", value.asInstanceOf[js.Any])
     
     inline def setSortValueUndefined: Self = StObject.set(x, "sortValue", js.undefined)
     

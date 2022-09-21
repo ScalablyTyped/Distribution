@@ -43,7 +43,7 @@ object GoogleCloudDatalabelingV1beta1Dataset {
     
     inline def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
     
-    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
+    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value*))
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object GoogleCloudDatalabelingV1beta1Dataset {
     
     inline def setInputConfigsUndefined: Self = StObject.set(x, "inputConfigs", js.undefined)
     
-    inline def setInputConfigsVarargs(value: GoogleCloudDatalabelingV1beta1InputConfig*): Self = StObject.set(x, "inputConfigs", js.Array(value :_*))
+    inline def setInputConfigsVarargs(value: GoogleCloudDatalabelingV1beta1InputConfig*): Self = StObject.set(x, "inputConfigs", js.Array(value*))
     
     inline def setLastMigrateTime(value: String): Self = StObject.set(x, "lastMigrateTime", value.asInstanceOf[js.Any])
     

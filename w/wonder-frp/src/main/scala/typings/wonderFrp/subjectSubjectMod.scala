@@ -12,25 +12,25 @@ object subjectSubjectMod {
   
   @JSImport("wonder-frp/dist/es2015/subject/Subject", "Subject")
   @js.native
-  class Subject ()
+  open class Subject ()
     extends StObject
        with IObserver {
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /* CompleteClass */
-    override def completed(): js.Any = js.native
+    override def completed(): Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
     
     /* CompleteClass */
-    override def error(error: js.Any): js.Any = js.native
+    override def error(error: Any): Any = js.native
     
     /* CompleteClass */
-    override def next(value: js.Any): js.Any = js.native
+    override def next(value: Any): Any = js.native
     
     def remove(observer: Observer): Unit = js.native
     

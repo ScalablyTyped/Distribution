@@ -26,7 +26,7 @@ object widgetMod {
   inline def create(
     element: HTMLElement,
     settings: WidgetSettings,
-    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
+    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], bindingContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def mapKind(kind: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mapKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -44,9 +44,9 @@ object widgetMod {
     
     var kind: String
     
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
-    var view: js.UndefOr[js.Any] = js.undefined
+    var view: js.UndefOr[Any] = js.undefined
   }
   object WidgetSettings {
     
@@ -59,11 +59,11 @@ object widgetMod {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }

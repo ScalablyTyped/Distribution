@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "ArrowKeyStepper")
 @js.native
-class ArrowKeyStepper protected ()
+open class ArrowKeyStepper protected ()
   extends typings.reactVirtualized.esArrowKeyStepperMod.ArrowKeyStepper {
   def this(props: ArrowKeyStepperProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ArrowKeyStepperProps, context: js.Any) = this()
+  def this(props: ArrowKeyStepperProps, context: Any) = this()
 }
 /* static members */
 object ArrowKeyStepper {

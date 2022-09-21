@@ -23,6 +23,6 @@ object Interface {
     
     inline def setTypes(value: js.Array[PluginInterfaceType]): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: PluginInterfaceType*): Self = StObject.set(x, "Types", js.Array(value :_*))
+    inline def setTypesVarargs(value: PluginInterfaceType*): Self = StObject.set(x, "Types", js.Array(value*))
   }
 }

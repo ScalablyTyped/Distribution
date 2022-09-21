@@ -1,5 +1,6 @@
 package typings.xss
 
+import typings.xss.anon.IsClosing
 import typings.xss.anon.OnIgnoreTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +17,7 @@ object mod {
   
   @JSImport("xss", "FilterXSS")
   @js.native
-  class FilterXSS_ () extends StObject {
+  open class FilterXSS_ () extends StObject {
     def this(options: IFilterXSSOptions) = this()
     
     def process(html: String): String = js.native
@@ -93,6 +94,8 @@ object mod {
         
         var allowCommentTag: js.UndefOr[Boolean] = js.undefined
         
+        var allowList: js.UndefOr[typings.xss.mod.global.XSS.IWhiteList] = js.undefined
+        
         var css: js.UndefOr[js.Object | Boolean] = js.undefined
         
         var escapeHtml: js.UndefOr[typings.xss.mod.global.XSS.EscapeHandler] = js.undefined
@@ -128,6 +131,10 @@ object mod {
           
           inline def setAllowCommentTagUndefined: Self = StObject.set(x, "allowCommentTag", js.undefined)
           
+          inline def setAllowList(value: typings.xss.mod.global.XSS.IWhiteList): Self = StObject.set(x, "allowList", value.asInstanceOf[js.Any])
+          
+          inline def setAllowListUndefined: Self = StObject.set(x, "allowList", js.undefined)
+          
           inline def setCss(value: js.Object | Boolean): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
           
           inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
@@ -136,7 +143,7 @@ object mod {
           
           inline def setEscapeHtmlUndefined: Self = StObject.set(x, "escapeHtml", js.undefined)
           
-          inline def setOnIgnoreTag(value: (/* tag */ String, /* html */ String, /* options */ js.Object) => String | Unit): Self = StObject.set(x, "onIgnoreTag", js.Any.fromFunction3(value))
+          inline def setOnIgnoreTag(value: (/* tag */ String, /* html */ String, /* options */ IsClosing) => String | Unit): Self = StObject.set(x, "onIgnoreTag", js.Any.fromFunction3(value))
           
           inline def setOnIgnoreTagAttr(
             value: (/* tag */ String, /* name */ String, /* value */ String, /* isWhiteAttr */ Boolean) => String | Unit
@@ -146,7 +153,7 @@ object mod {
           
           inline def setOnIgnoreTagUndefined: Self = StObject.set(x, "onIgnoreTag", js.undefined)
           
-          inline def setOnTag(value: (/* tag */ String, /* html */ String, /* options */ js.Object) => String | Unit): Self = StObject.set(x, "onTag", js.Any.fromFunction3(value))
+          inline def setOnTag(value: (/* tag */ String, /* html */ String, /* options */ IsClosing) => String | Unit): Self = StObject.set(x, "onTag", js.Any.fromFunction3(value))
           
           inline def setOnTagAttr(
             value: (/* tag */ String, /* name */ String, /* value */ String, /* isWhiteAttr */ Boolean) => String | Unit
@@ -172,7 +179,7 @@ object mod {
           
           inline def setStripIgnoreTagBodyUndefined: Self = StObject.set(x, "stripIgnoreTagBody", js.undefined)
           
-          inline def setStripIgnoreTagBodyVarargs(value: String*): Self = StObject.set(x, "stripIgnoreTagBody", js.Array(value :_*))
+          inline def setStripIgnoreTagBodyVarargs(value: String*): Self = StObject.set(x, "stripIgnoreTagBody", js.Array(value*))
           
           inline def setStripIgnoreTagUndefined: Self = StObject.set(x, "stripIgnoreTag", js.undefined)
           
@@ -182,7 +189,8 @@ object mod {
         }
       }
       
-      trait IWhiteList extends StObject {
+      /* import warning: RemoveDifficultInheritance.summarizeChanges 
+      - Dropped {[ P in string ]: std.Array<string> | undefined} */ trait IWhiteList extends StObject {
         
         var a: js.UndefOr[js.Array[String]] = js.undefined
         
@@ -236,6 +244,10 @@ object mod {
         
         var em: js.UndefOr[js.Array[String]] = js.undefined
         
+        var figcaption: js.UndefOr[js.Array[String]] = js.undefined
+        
+        var figure: js.UndefOr[js.Array[String]] = js.undefined
+        
         var font: js.UndefOr[js.Array[String]] = js.undefined
         
         var footer: js.UndefOr[js.Array[String]] = js.undefined
@@ -282,9 +294,13 @@ object mod {
         
         var span: js.UndefOr[js.Array[String]] = js.undefined
         
+        var strike: js.UndefOr[js.Array[String]] = js.undefined
+        
         var strong: js.UndefOr[js.Array[String]] = js.undefined
         
         var sub: js.UndefOr[js.Array[String]] = js.undefined
+        
+        var summary: js.UndefOr[js.Array[String]] = js.undefined
         
         var sup: js.UndefOr[js.Array[String]] = js.undefined
         
@@ -323,379 +339,403 @@ object mod {
           
           inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
           
-          inline def setAVarargs(value: String*): Self = StObject.set(x, "a", js.Array(value :_*))
+          inline def setAVarargs(value: String*): Self = StObject.set(x, "a", js.Array(value*))
           
           inline def setAbbr(value: js.Array[String]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
           
           inline def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
           
-          inline def setAbbrVarargs(value: String*): Self = StObject.set(x, "abbr", js.Array(value :_*))
+          inline def setAbbrVarargs(value: String*): Self = StObject.set(x, "abbr", js.Array(value*))
           
           inline def setAddress(value: js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
           
           inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
           
-          inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
+          inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value*))
           
           inline def setArea(value: js.Array[String]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
           
           inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
           
-          inline def setAreaVarargs(value: String*): Self = StObject.set(x, "area", js.Array(value :_*))
+          inline def setAreaVarargs(value: String*): Self = StObject.set(x, "area", js.Array(value*))
           
           inline def setArticle(value: js.Array[String]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
           
           inline def setArticleUndefined: Self = StObject.set(x, "article", js.undefined)
           
-          inline def setArticleVarargs(value: String*): Self = StObject.set(x, "article", js.Array(value :_*))
+          inline def setArticleVarargs(value: String*): Self = StObject.set(x, "article", js.Array(value*))
           
           inline def setAside(value: js.Array[String]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
           
           inline def setAsideUndefined: Self = StObject.set(x, "aside", js.undefined)
           
-          inline def setAsideVarargs(value: String*): Self = StObject.set(x, "aside", js.Array(value :_*))
+          inline def setAsideVarargs(value: String*): Self = StObject.set(x, "aside", js.Array(value*))
           
           inline def setAudio(value: js.Array[String]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
           
           inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
           
-          inline def setAudioVarargs(value: String*): Self = StObject.set(x, "audio", js.Array(value :_*))
+          inline def setAudioVarargs(value: String*): Self = StObject.set(x, "audio", js.Array(value*))
           
           inline def setB(value: js.Array[String]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
           
           inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
           
-          inline def setBVarargs(value: String*): Self = StObject.set(x, "b", js.Array(value :_*))
+          inline def setBVarargs(value: String*): Self = StObject.set(x, "b", js.Array(value*))
           
           inline def setBdi(value: js.Array[String]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
           
           inline def setBdiUndefined: Self = StObject.set(x, "bdi", js.undefined)
           
-          inline def setBdiVarargs(value: String*): Self = StObject.set(x, "bdi", js.Array(value :_*))
+          inline def setBdiVarargs(value: String*): Self = StObject.set(x, "bdi", js.Array(value*))
           
           inline def setBdo(value: js.Array[String]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
           
           inline def setBdoUndefined: Self = StObject.set(x, "bdo", js.undefined)
           
-          inline def setBdoVarargs(value: String*): Self = StObject.set(x, "bdo", js.Array(value :_*))
+          inline def setBdoVarargs(value: String*): Self = StObject.set(x, "bdo", js.Array(value*))
           
           inline def setBig(value: js.Array[String]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
           
           inline def setBigUndefined: Self = StObject.set(x, "big", js.undefined)
           
-          inline def setBigVarargs(value: String*): Self = StObject.set(x, "big", js.Array(value :_*))
+          inline def setBigVarargs(value: String*): Self = StObject.set(x, "big", js.Array(value*))
           
           inline def setBlockquote(value: js.Array[String]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
           
           inline def setBlockquoteUndefined: Self = StObject.set(x, "blockquote", js.undefined)
           
-          inline def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value :_*))
+          inline def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value*))
           
           inline def setBr(value: js.Array[String]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
           
           inline def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
           
-          inline def setBrVarargs(value: String*): Self = StObject.set(x, "br", js.Array(value :_*))
+          inline def setBrVarargs(value: String*): Self = StObject.set(x, "br", js.Array(value*))
           
           inline def setCaption(value: js.Array[String]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
           
           inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
           
-          inline def setCaptionVarargs(value: String*): Self = StObject.set(x, "caption", js.Array(value :_*))
+          inline def setCaptionVarargs(value: String*): Self = StObject.set(x, "caption", js.Array(value*))
           
           inline def setCenter(value: js.Array[String]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
           
           inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
           
-          inline def setCenterVarargs(value: String*): Self = StObject.set(x, "center", js.Array(value :_*))
+          inline def setCenterVarargs(value: String*): Self = StObject.set(x, "center", js.Array(value*))
           
           inline def setCite(value: js.Array[String]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
           
           inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
           
-          inline def setCiteVarargs(value: String*): Self = StObject.set(x, "cite", js.Array(value :_*))
+          inline def setCiteVarargs(value: String*): Self = StObject.set(x, "cite", js.Array(value*))
           
           inline def setCode(value: js.Array[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
           
           inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
           
-          inline def setCodeVarargs(value: String*): Self = StObject.set(x, "code", js.Array(value :_*))
+          inline def setCodeVarargs(value: String*): Self = StObject.set(x, "code", js.Array(value*))
           
           inline def setCol(value: js.Array[String]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
           
           inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
           
-          inline def setColVarargs(value: String*): Self = StObject.set(x, "col", js.Array(value :_*))
+          inline def setColVarargs(value: String*): Self = StObject.set(x, "col", js.Array(value*))
           
           inline def setColgroup(value: js.Array[String]): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
           
           inline def setColgroupUndefined: Self = StObject.set(x, "colgroup", js.undefined)
           
-          inline def setColgroupVarargs(value: String*): Self = StObject.set(x, "colgroup", js.Array(value :_*))
+          inline def setColgroupVarargs(value: String*): Self = StObject.set(x, "colgroup", js.Array(value*))
           
           inline def setDd(value: js.Array[String]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
           
           inline def setDdUndefined: Self = StObject.set(x, "dd", js.undefined)
           
-          inline def setDdVarargs(value: String*): Self = StObject.set(x, "dd", js.Array(value :_*))
+          inline def setDdVarargs(value: String*): Self = StObject.set(x, "dd", js.Array(value*))
           
           inline def setDel(value: js.Array[String]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
           
           inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
           
-          inline def setDelVarargs(value: String*): Self = StObject.set(x, "del", js.Array(value :_*))
+          inline def setDelVarargs(value: String*): Self = StObject.set(x, "del", js.Array(value*))
           
           inline def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
           inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
           
-          inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
+          inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value*))
           
           inline def setDiv(value: js.Array[String]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
           
           inline def setDivUndefined: Self = StObject.set(x, "div", js.undefined)
           
-          inline def setDivVarargs(value: String*): Self = StObject.set(x, "div", js.Array(value :_*))
+          inline def setDivVarargs(value: String*): Self = StObject.set(x, "div", js.Array(value*))
           
           inline def setDl(value: js.Array[String]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
           
           inline def setDlUndefined: Self = StObject.set(x, "dl", js.undefined)
           
-          inline def setDlVarargs(value: String*): Self = StObject.set(x, "dl", js.Array(value :_*))
+          inline def setDlVarargs(value: String*): Self = StObject.set(x, "dl", js.Array(value*))
           
           inline def setDt(value: js.Array[String]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
           
           inline def setDtUndefined: Self = StObject.set(x, "dt", js.undefined)
           
-          inline def setDtVarargs(value: String*): Self = StObject.set(x, "dt", js.Array(value :_*))
+          inline def setDtVarargs(value: String*): Self = StObject.set(x, "dt", js.Array(value*))
           
           inline def setEm(value: js.Array[String]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
           
           inline def setEmUndefined: Self = StObject.set(x, "em", js.undefined)
           
-          inline def setEmVarargs(value: String*): Self = StObject.set(x, "em", js.Array(value :_*))
+          inline def setEmVarargs(value: String*): Self = StObject.set(x, "em", js.Array(value*))
+          
+          inline def setFigcaption(value: js.Array[String]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
+          
+          inline def setFigcaptionUndefined: Self = StObject.set(x, "figcaption", js.undefined)
+          
+          inline def setFigcaptionVarargs(value: String*): Self = StObject.set(x, "figcaption", js.Array(value*))
+          
+          inline def setFigure(value: js.Array[String]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
+          
+          inline def setFigureUndefined: Self = StObject.set(x, "figure", js.undefined)
+          
+          inline def setFigureVarargs(value: String*): Self = StObject.set(x, "figure", js.Array(value*))
           
           inline def setFont(value: js.Array[String]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
           
           inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
           
-          inline def setFontVarargs(value: String*): Self = StObject.set(x, "font", js.Array(value :_*))
+          inline def setFontVarargs(value: String*): Self = StObject.set(x, "font", js.Array(value*))
           
           inline def setFooter(value: js.Array[String]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
           
           inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
           
-          inline def setFooterVarargs(value: String*): Self = StObject.set(x, "footer", js.Array(value :_*))
+          inline def setFooterVarargs(value: String*): Self = StObject.set(x, "footer", js.Array(value*))
           
           inline def setH1(value: js.Array[String]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
           
           inline def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
           
-          inline def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value :_*))
+          inline def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value*))
           
           inline def setH2(value: js.Array[String]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
           
           inline def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
           
-          inline def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value :_*))
+          inline def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value*))
           
           inline def setH3(value: js.Array[String]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
           
           inline def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
           
-          inline def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value :_*))
+          inline def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value*))
           
           inline def setH4(value: js.Array[String]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
           
           inline def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
           
-          inline def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value :_*))
+          inline def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value*))
           
           inline def setH5(value: js.Array[String]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
           
           inline def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
           
-          inline def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value :_*))
+          inline def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value*))
           
           inline def setH6(value: js.Array[String]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
           
           inline def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
           
-          inline def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value :_*))
+          inline def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value*))
           
           inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
           
           inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
           
-          inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+          inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value*))
           
           inline def setHr(value: js.Array[String]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
           
           inline def setHrUndefined: Self = StObject.set(x, "hr", js.undefined)
           
-          inline def setHrVarargs(value: String*): Self = StObject.set(x, "hr", js.Array(value :_*))
+          inline def setHrVarargs(value: String*): Self = StObject.set(x, "hr", js.Array(value*))
           
           inline def setI(value: js.Array[String]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
           
           inline def setIUndefined: Self = StObject.set(x, "i", js.undefined)
           
-          inline def setIVarargs(value: String*): Self = StObject.set(x, "i", js.Array(value :_*))
+          inline def setIVarargs(value: String*): Self = StObject.set(x, "i", js.Array(value*))
           
           inline def setImg(value: js.Array[String]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
           
           inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
           
-          inline def setImgVarargs(value: String*): Self = StObject.set(x, "img", js.Array(value :_*))
+          inline def setImgVarargs(value: String*): Self = StObject.set(x, "img", js.Array(value*))
           
           inline def setIns(value: js.Array[String]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
           
           inline def setInsUndefined: Self = StObject.set(x, "ins", js.undefined)
           
-          inline def setInsVarargs(value: String*): Self = StObject.set(x, "ins", js.Array(value :_*))
+          inline def setInsVarargs(value: String*): Self = StObject.set(x, "ins", js.Array(value*))
           
           inline def setLi(value: js.Array[String]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
           
           inline def setLiUndefined: Self = StObject.set(x, "li", js.undefined)
           
-          inline def setLiVarargs(value: String*): Self = StObject.set(x, "li", js.Array(value :_*))
+          inline def setLiVarargs(value: String*): Self = StObject.set(x, "li", js.Array(value*))
           
           inline def setMark(value: js.Array[String]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
           
           inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
           
-          inline def setMarkVarargs(value: String*): Self = StObject.set(x, "mark", js.Array(value :_*))
+          inline def setMarkVarargs(value: String*): Self = StObject.set(x, "mark", js.Array(value*))
           
           inline def setNav(value: js.Array[String]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
           
           inline def setNavUndefined: Self = StObject.set(x, "nav", js.undefined)
           
-          inline def setNavVarargs(value: String*): Self = StObject.set(x, "nav", js.Array(value :_*))
+          inline def setNavVarargs(value: String*): Self = StObject.set(x, "nav", js.Array(value*))
           
           inline def setOl(value: js.Array[String]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
           
           inline def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
           
-          inline def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value :_*))
+          inline def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value*))
           
           inline def setP(value: js.Array[String]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
           
           inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
           
-          inline def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value :_*))
+          inline def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value*))
           
           inline def setPre(value: js.Array[String]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
           
           inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
           
-          inline def setPreVarargs(value: String*): Self = StObject.set(x, "pre", js.Array(value :_*))
+          inline def setPreVarargs(value: String*): Self = StObject.set(x, "pre", js.Array(value*))
           
           inline def setS(value: js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
           
           inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
           
-          inline def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
+          inline def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value*))
           
           inline def setSection(value: js.Array[String]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
           
           inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
           
-          inline def setSectionVarargs(value: String*): Self = StObject.set(x, "section", js.Array(value :_*))
+          inline def setSectionVarargs(value: String*): Self = StObject.set(x, "section", js.Array(value*))
           
           inline def setSmall(value: js.Array[String]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
           
           inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
           
-          inline def setSmallVarargs(value: String*): Self = StObject.set(x, "small", js.Array(value :_*))
+          inline def setSmallVarargs(value: String*): Self = StObject.set(x, "small", js.Array(value*))
           
           inline def setSpan(value: js.Array[String]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
           
           inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
           
-          inline def setSpanVarargs(value: String*): Self = StObject.set(x, "span", js.Array(value :_*))
+          inline def setSpanVarargs(value: String*): Self = StObject.set(x, "span", js.Array(value*))
+          
+          inline def setStrike(value: js.Array[String]): Self = StObject.set(x, "strike", value.asInstanceOf[js.Any])
+          
+          inline def setStrikeUndefined: Self = StObject.set(x, "strike", js.undefined)
+          
+          inline def setStrikeVarargs(value: String*): Self = StObject.set(x, "strike", js.Array(value*))
           
           inline def setStrong(value: js.Array[String]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
           
           inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
           
-          inline def setStrongVarargs(value: String*): Self = StObject.set(x, "strong", js.Array(value :_*))
+          inline def setStrongVarargs(value: String*): Self = StObject.set(x, "strong", js.Array(value*))
           
           inline def setSub(value: js.Array[String]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
           
           inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
           
-          inline def setSubVarargs(value: String*): Self = StObject.set(x, "sub", js.Array(value :_*))
+          inline def setSubVarargs(value: String*): Self = StObject.set(x, "sub", js.Array(value*))
+          
+          inline def setSummary(value: js.Array[String]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+          
+          inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+          
+          inline def setSummaryVarargs(value: String*): Self = StObject.set(x, "summary", js.Array(value*))
           
           inline def setSup(value: js.Array[String]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
           
           inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
           
-          inline def setSupVarargs(value: String*): Self = StObject.set(x, "sup", js.Array(value :_*))
+          inline def setSupVarargs(value: String*): Self = StObject.set(x, "sup", js.Array(value*))
           
           inline def setTable(value: js.Array[String]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
           
           inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
           
-          inline def setTableVarargs(value: String*): Self = StObject.set(x, "table", js.Array(value :_*))
+          inline def setTableVarargs(value: String*): Self = StObject.set(x, "table", js.Array(value*))
           
           inline def setTbody(value: js.Array[String]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
           
           inline def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
           
-          inline def setTbodyVarargs(value: String*): Self = StObject.set(x, "tbody", js.Array(value :_*))
+          inline def setTbodyVarargs(value: String*): Self = StObject.set(x, "tbody", js.Array(value*))
           
           inline def setTd(value: js.Array[String]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
           
           inline def setTdUndefined: Self = StObject.set(x, "td", js.undefined)
           
-          inline def setTdVarargs(value: String*): Self = StObject.set(x, "td", js.Array(value :_*))
+          inline def setTdVarargs(value: String*): Self = StObject.set(x, "td", js.Array(value*))
           
           inline def setTfoot(value: js.Array[String]): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
           
           inline def setTfootUndefined: Self = StObject.set(x, "tfoot", js.undefined)
           
-          inline def setTfootVarargs(value: String*): Self = StObject.set(x, "tfoot", js.Array(value :_*))
+          inline def setTfootVarargs(value: String*): Self = StObject.set(x, "tfoot", js.Array(value*))
           
           inline def setTh(value: js.Array[String]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
           
           inline def setThUndefined: Self = StObject.set(x, "th", js.undefined)
           
-          inline def setThVarargs(value: String*): Self = StObject.set(x, "th", js.Array(value :_*))
+          inline def setThVarargs(value: String*): Self = StObject.set(x, "th", js.Array(value*))
           
           inline def setThead(value: js.Array[String]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
           
           inline def setTheadUndefined: Self = StObject.set(x, "thead", js.undefined)
           
-          inline def setTheadVarargs(value: String*): Self = StObject.set(x, "thead", js.Array(value :_*))
+          inline def setTheadVarargs(value: String*): Self = StObject.set(x, "thead", js.Array(value*))
           
           inline def setTr(value: js.Array[String]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
           
           inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
           
-          inline def setTrVarargs(value: String*): Self = StObject.set(x, "tr", js.Array(value :_*))
+          inline def setTrVarargs(value: String*): Self = StObject.set(x, "tr", js.Array(value*))
           
           inline def setTt(value: js.Array[String]): Self = StObject.set(x, "tt", value.asInstanceOf[js.Any])
           
           inline def setTtUndefined: Self = StObject.set(x, "tt", js.undefined)
           
-          inline def setTtVarargs(value: String*): Self = StObject.set(x, "tt", js.Array(value :_*))
+          inline def setTtVarargs(value: String*): Self = StObject.set(x, "tt", js.Array(value*))
           
           inline def setU(value: js.Array[String]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
           
           inline def setUUndefined: Self = StObject.set(x, "u", js.undefined)
           
-          inline def setUVarargs(value: String*): Self = StObject.set(x, "u", js.Array(value :_*))
+          inline def setUVarargs(value: String*): Self = StObject.set(x, "u", js.Array(value*))
           
           inline def setUl(value: js.Array[String]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
           
           inline def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
           
-          inline def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value :_*))
+          inline def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value*))
           
           inline def setVideo(value: js.Array[String]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
           
           inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
           
-          inline def setVideoVarargs(value: String*): Self = StObject.set(x, "video", js.Array(value :_*))
+          inline def setVideoVarargs(value: String*): Self = StObject.set(x, "video", js.Array(value*))
         }
       }
       
@@ -707,7 +747,7 @@ object mod {
             String | Unit
           ]
       
-      type OnTagHandler = js.Function3[/* tag */ String, /* html */ String, /* options */ js.Object, String | Unit]
+      type OnTagHandler = js.Function3[/* tag */ String, /* html */ String, /* options */ IsClosing, String | Unit]
       
       type SafeAttrValueHandler = js.Function4[
             /* tag */ String, 

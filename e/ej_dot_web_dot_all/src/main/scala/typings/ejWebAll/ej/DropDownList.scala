@@ -9,13 +9,13 @@ trait DropDownList
   extends StObject
      with Widget_ {
   
+  def addItem(data: js.Array[Any]): Unit = js.native
   /** Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those
     * items.Grouping and sorting will not be supported when we add items through this method.
     * @param {any|any[]}  this parameter should have field attributes with respect to mapped field attributes and it's corresponding values to fields
     * @returns {void}
     */
-  def addItem(data: js.Any): Unit = js.native
-  def addItem(data: js.Array[js.Any]): Unit = js.native
+  def addItem(data: Any): Unit = js.native
   
   /** This method is used to select all the items in the DropDownList.
     * @returns {void}
@@ -39,7 +39,7 @@ trait DropDownList
     * @returns {void}
     */
   def disableItemsByIndices(index: String): Unit = js.native
-  def disableItemsByIndices(index: js.Array[js.Any]): Unit = js.native
+  def disableItemsByIndices(index: js.Array[Any]): Unit = js.native
   def disableItemsByIndices(index: Double): Unit = js.native
   
   /** This property enables the DropDownList control.
@@ -52,26 +52,26 @@ trait DropDownList
     * @returns {void}
     */
   def enableItemsByIndices(index: String): Unit = js.native
-  def enableItemsByIndices(index: js.Array[js.Any]): Unit = js.native
+  def enableItemsByIndices(index: js.Array[Any]): Unit = js.native
   def enableItemsByIndices(index: Double): Unit = js.native
   
   /** This method retrieves the items using given value.
     * @param {string|number|any}  Return the whole object of data based on given value
     * @returns {any[]}
     */
-  def getItemDataByValue(value: String): js.Array[js.Any] = js.native
-  def getItemDataByValue(value: js.Any): js.Array[js.Any] = js.native
-  def getItemDataByValue(value: Double): js.Array[js.Any] = js.native
+  def getItemDataByValue(value: String): js.Array[Any] = js.native
+  def getItemDataByValue(value: Any): js.Array[Any] = js.native
+  def getItemDataByValue(value: Double): js.Array[Any] = js.native
   
   /** This method is used to retrieve the items that are bound with the DropDownList.
     * @returns {any}
     */
-  def getListData(): js.Any = js.native
+  def getListData(): Any = js.native
   
   /** This method is used to get the selected items in the DropDownList.
     * @returns {any[]}
     */
-  def getSelectedItem(): js.Array[js.Any] = js.native
+  def getSelectedItem(): js.Array[Any] = js.native
   
   /** This method is used to retrieve the items value that are selected in the DropDownList.
     * @returns {string}
@@ -91,7 +91,7 @@ trait DropDownList
     * @returns {void}
     */
   def selectItemByText(index: String): Unit = js.native
-  def selectItemByText(index: js.Array[js.Any]): Unit = js.native
+  def selectItemByText(index: js.Array[Any]): Unit = js.native
   def selectItemByText(index: Double): Unit = js.native
   
   /** This method is used to select an item in the DropDownList by using the given value.
@@ -99,7 +99,7 @@ trait DropDownList
     * @returns {void}
     */
   def selectItemByValue(index: String): Unit = js.native
-  def selectItemByValue(index: js.Array[js.Any]): Unit = js.native
+  def selectItemByValue(index: js.Array[Any]): Unit = js.native
   def selectItemByValue(index: Double): Unit = js.native
   
   /** This method is used to select the list of items in the DropDownList through the Index of the items.
@@ -107,7 +107,7 @@ trait DropDownList
     * @returns {void}
     */
   def selectItemsByIndices(index: String): Unit = js.native
-  def selectItemsByIndices(index: js.Array[js.Any]): Unit = js.native
+  def selectItemsByIndices(index: js.Array[Any]): Unit = js.native
   def selectItemsByIndices(index: Double): Unit = js.native
   
   /** This method shows the DropDownList control with the suggestion popup.
@@ -125,7 +125,7 @@ trait DropDownList
     * @returns {void}
     */
   def unselectItemByText(index: String): Unit = js.native
-  def unselectItemByText(index: js.Array[js.Any]): Unit = js.native
+  def unselectItemByText(index: js.Array[Any]): Unit = js.native
   def unselectItemByText(index: Double): Unit = js.native
   
   /** This method is used to unselect an item in the DropDownList by using the given value.
@@ -133,7 +133,7 @@ trait DropDownList
     * @returns {void}
     */
   def unselectItemByValue(index: String): Unit = js.native
-  def unselectItemByValue(index: js.Array[js.Any]): Unit = js.native
+  def unselectItemByValue(index: js.Array[Any]): Unit = js.native
   def unselectItemByValue(index: Double): Unit = js.native
   
   /** This method is used to unselect the list of items in the DropDownList through Index of the items.
@@ -141,7 +141,7 @@ trait DropDownList
     * @returns {void}
     */
   def unselectItemsByIndices(index: String): Unit = js.native
-  def unselectItemsByIndices(index: js.Array[js.Any]): Unit = js.native
+  def unselectItemsByIndices(index: js.Array[Any]): Unit = js.native
   def unselectItemsByIndices(index: Double): Unit = js.native
 }
 object DropDownList {
@@ -154,7 +154,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -173,7 +173,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -195,19 +195,19 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var result: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -215,7 +215,7 @@ object DropDownList {
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -234,29 +234,29 @@ object DropDownList {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -270,15 +270,15 @@ object DropDownList {
     
     /** Returns the error message
       */
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -297,15 +297,15 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -327,19 +327,19 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var result: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -347,7 +347,7 @@ object DropDownList {
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object ActionSuccessEventArgs {
     
@@ -366,29 +366,29 @@ object DropDownList {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -402,7 +402,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the selected text
       */
@@ -429,7 +429,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -455,7 +455,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the selected text
       */
@@ -482,7 +482,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -508,7 +508,7 @@ object DropDownList {
     
     /** Returns the cascading dropdown model.
       */
-    var cascadeModel: js.UndefOr[js.Any] = js.undefined
+    var cascadeModel: js.UndefOr[Any] = js.undefined
     
     /** returns the current selected value in first dropdown.
       */
@@ -516,7 +516,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the default filter action for second dropdown data should happen or not.
       */
@@ -539,7 +539,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCascadeModel(value: js.Any): Self = StObject.set(x, "cascadeModel", value.asInstanceOf[js.Any])
+      inline def setCascadeModel(value: Any): Self = StObject.set(x, "cascadeModel", value.asInstanceOf[js.Any])
       
       inline def setCascadeModelUndefined: Self = StObject.set(x, "cascadeModel", js.undefined)
       
@@ -547,7 +547,7 @@ object DropDownList {
       
       inline def setCascadeValueUndefined: Self = StObject.set(x, "cascadeValue", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -577,7 +577,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected item text.
       */
@@ -616,7 +616,7 @@ object DropDownList {
       
       inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -654,7 +654,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected item text.
       */
@@ -693,7 +693,7 @@ object DropDownList {
       
       inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -723,7 +723,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -742,7 +742,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -760,11 +760,11 @@ object DropDownList {
     
     /** returns the data that is bound to DropDownList
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -783,11 +783,11 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -805,7 +805,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -824,7 +824,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -842,7 +842,7 @@ object DropDownList {
     
     /** Defines the HTML attributes such as ID, class, and styles for the item.
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Defines the ID for the tag.
       */
@@ -889,7 +889,7 @@ object DropDownList {
       
       inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -935,7 +935,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -954,7 +954,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -972,7 +972,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -991,7 +991,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1073,7 +1073,7 @@ object DropDownList {
       * instance of the ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled with the dropdown. When you enter the delimiter value, the texts after the delimiter are
       * considered as a separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,) or semi-colon (;) or
@@ -1167,7 +1167,7 @@ object DropDownList {
     /** It sets the given HTML attributes for the DropDownList control such as ID, name, disabled, etc.
       * @Default {null}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Data can be fetched in the DropDownList control by using the DataSource, specifying the number of items.
       * @Default {5}
@@ -1244,7 +1244,7 @@ object DropDownList {
     /** Specifies the query to retrieve the data from the DataSource.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies that the DropDownList textbox values should be read-only.
       * @Default {false}
@@ -1267,7 +1267,7 @@ object DropDownList {
     /** Specifies the selectedItems for the DropDownList.
       * @Default {[]}
       */
-    var selectedIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Selects multiple items in the DropDownList with the help of the checkbox control. To achieve this, enable the showCheckbox option to true.
       * @Default {false}
@@ -1307,12 +1307,12 @@ object DropDownList {
     /** Sets the jQuery validation error message in the DropDownList
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.undefined
+    var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation rules in the Dropdownlist.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value (text content) for the DropDownList control.
       * @Default {null}
@@ -1405,7 +1405,7 @@ object DropDownList {
       
       inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -1477,7 +1477,7 @@ object DropDownList {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -1541,7 +1541,7 @@ object DropDownList {
       
       inline def setPopupWidthUndefined: Self = StObject.set(x, "popupWidth", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -1561,11 +1561,11 @@ object DropDownList {
       
       inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
       
-      inline def setSelectedIndices(value: js.Array[js.Any]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+      inline def setSelectedIndices(value: js.Array[Any]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
       
       inline def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
       
-      inline def setSelectedIndicesVarargs(value: js.Any*): Self = StObject.set(x, "selectedIndices", js.Array(value :_*))
+      inline def setSelectedIndicesVarargs(value: Any*): Self = StObject.set(x, "selectedIndices", js.Array(value*))
       
       inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
       
@@ -1595,11 +1595,11 @@ object DropDownList {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
       inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
@@ -1629,7 +1629,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the selected text
       */
@@ -1656,7 +1656,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1682,11 +1682,11 @@ object DropDownList {
     
     /** Returns the data from the resizable plugin.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -1705,11 +1705,11 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1727,11 +1727,11 @@ object DropDownList {
     
     /** Returns the data from the resizable plugin.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -1750,11 +1750,11 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1772,11 +1772,11 @@ object DropDownList {
     
     /** Returns the data from the resizable plugin.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -1795,11 +1795,11 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1817,7 +1817,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the selected text
       */
@@ -1844,7 +1844,7 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1870,11 +1870,11 @@ object DropDownList {
     
     /** Returns the data bound to the DropDownList.
       */
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the search string typed in search box.
       */
@@ -1901,11 +1901,11 @@ object DropDownList {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1939,7 +1939,7 @@ object DropDownList {
     
     /** returns the DropDownList model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected item text.
       */
@@ -1978,7 +1978,7 @@ object DropDownList {
       
       inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

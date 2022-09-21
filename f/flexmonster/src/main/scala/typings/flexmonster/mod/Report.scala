@@ -38,7 +38,7 @@ object Report {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: ConditionalFormat*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: ConditionalFormat*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object Report {
     
     inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
-    inline def setFormatsVarargs(value: Format*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: Format*): Self = StObject.set(x, "formats", js.Array(value*))
     
     inline def setLocalization(value: js.Object | String): Self = StObject.set(x, "localization", value.asInstanceOf[js.Any])
     

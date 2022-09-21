@@ -32,7 +32,7 @@ trait sizeContinuousRendererResult
   var defaultValuesUsed: Boolean
   
   /**
-    * The renderer object configured to best match the given basemap and the spread of the data.
+    * The renderer object configured to best match the background of the view and the spread of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
@@ -53,7 +53,7 @@ trait sizeContinuousRendererResult
   var statistics: SummaryStatisticsResult
   
   /**
-    * Size visual variables configured based on the statistics of the data and the given basemap and scheme.
+    * Size visual variables configured based on the statistics of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
@@ -93,6 +93,6 @@ object sizeContinuousRendererResult {
     
     inline def setVisualVariables(value: js.Array[SizeVariable]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
-    inline def setVisualVariablesVarargs(value: SizeVariable*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: SizeVariable*): Self = StObject.set(x, "visualVariables", js.Array(value*))
   }
 }

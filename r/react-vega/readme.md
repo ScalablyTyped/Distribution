@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-vega
 
-Typings are for version 6.0
+Typings are for version 7.6.0
 
 ## Library description:
 Convert Vega spec into React class conveniently
@@ -10,10 +10,10 @@ Convert Vega spec into React class conveniently
 | ------------------ | :-------------: |
 | Full name          | react-vega |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 12 |
-| # downloads        | 739072 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 122858.0 |
+| # stars            | 337.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/react-vega#readme)
@@ -24,7 +24,7 @@ Convert Vega spec into React class conveniently
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

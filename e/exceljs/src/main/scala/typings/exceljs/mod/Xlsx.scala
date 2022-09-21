@@ -13,7 +13,7 @@ trait Xlsx extends StObject {
   	 * load from an array buffer
   	 * @param buffer
   	 */
-  def load(buffer: Buffer): js.Promise[Workbook] = js.native
+  def load(buffer: js.typedarray.ArrayBuffer): js.Promise[Workbook] = js.native
   
   /**
   	 * read from a stream
@@ -35,8 +35,8 @@ trait Xlsx extends StObject {
   /**
   	 * write to a buffer
   	 */
-  def writeBuffer(): js.Promise[Buffer] = js.native
-  def writeBuffer(options: PartialXlsxWriteOptions): js.Promise[Buffer] = js.native
+  def writeBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  def writeBuffer(options: PartialXlsxWriteOptions): js.Promise[js.typedarray.ArrayBuffer] = js.native
   
   /**
   	 * write to a file

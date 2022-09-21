@@ -42,7 +42,7 @@ object anon {
       
       inline def setEffects(value: js.Array[blur | sepia | saturate]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
-      inline def setEffectsVarargs(value: (blur | sepia | saturate)*): Self = StObject.set(x, "effects", js.Array(value :_*))
+      inline def setEffectsVarargs(value: (blur | sepia | saturate)*): Self = StObject.set(x, "effects", js.Array(value*))
     }
   }
   

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Representation of a single script deployment.
-  */
 trait SchemaDeployment extends StObject {
   
   /**
@@ -17,17 +14,17 @@ trait SchemaDeployment extends StObject {
   /**
     * The deployment ID for this deployment.
     */
-  var deploymentId: js.UndefOr[String] = js.undefined
+  var deploymentId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The deployment&#39;s entry points.
+    * The deployment's entry points.
     */
   var entryPoints: js.UndefOr[js.Array[SchemaEntryPoint]] = js.undefined
   
   /**
     * Last modified date time stamp.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDeployment {
   
@@ -44,15 +41,19 @@ object SchemaDeployment {
     
     inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
+    inline def setDeploymentIdNull: Self = StObject.set(x, "deploymentId", null)
+    
     inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
     inline def setEntryPoints(value: js.Array[SchemaEntryPoint]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     
     inline def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
     
-    inline def setEntryPointsVarargs(value: SchemaEntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value :_*))
+    inline def setEntryPointsVarargs(value: SchemaEntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value*))
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }

@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** An error which occurred while handling media in an HTML media element based on HTMLMediaElement, such as <audio> or <video>. */
 trait MediaError extends StObject {
   
+  /* standard dom */
   val MEDIA_ERR_ABORTED: Double
   
+  /* standard dom */
   val MEDIA_ERR_DECODE: Double
   
+  /* standard dom */
   val MEDIA_ERR_NETWORK: Double
   
+  /* standard dom */
   val MEDIA_ERR_SRC_NOT_SUPPORTED: Double
   
+  /* standard dom */
   val code: Double
   
+  /* standard dom */
   val message: java.lang.String
 }
 object MediaError {

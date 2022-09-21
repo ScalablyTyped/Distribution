@@ -9,7 +9,7 @@ trait IFieldGroup extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var elementAttributes: js.UndefOr[String] = js.undefined
   
@@ -23,7 +23,7 @@ trait IFieldGroup extends StObject {
   
   var key: js.UndefOr[String | Double] = js.undefined
   
-  var model: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
+  var model: js.UndefOr[String | StringDictionary[Any]] = js.undefined
   
   var options: js.UndefOr[IFormOptionsAPI] = js.undefined
   
@@ -44,7 +44,7 @@ object IFieldGroup {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -56,7 +56,7 @@ object IFieldGroup {
     
     inline def setFieldGroupUndefined: Self = StObject.set(x, "fieldGroup", js.undefined)
     
-    inline def setFieldGroupVarargs(value: (IFieldConfigurationObject | IFieldGroup)*): Self = StObject.set(x, "fieldGroup", js.Array(value :_*))
+    inline def setFieldGroupVarargs(value: (IFieldConfigurationObject | IFieldGroup)*): Self = StObject.set(x, "fieldGroup", js.Array(value*))
     
     inline def setForm(value: js.Object): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object IFieldGroup {
     
     inline def setHideExpression(value: String | IExpressionFunction): Self = StObject.set(x, "hideExpression", value.asInstanceOf[js.Any])
     
-    inline def setHideExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "hideExpression", js.Any.fromFunction3(value))
+    inline def setHideExpressionFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "hideExpression", js.Any.fromFunction3(value))
     
     inline def setHideExpressionUndefined: Self = StObject.set(x, "hideExpression", js.undefined)
     
@@ -76,7 +76,7 @@ object IFieldGroup {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setModel(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | StringDictionary[Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
@@ -92,6 +92,6 @@ object IFieldGroup {
     
     inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     
-    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
+    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value*))
   }
 }

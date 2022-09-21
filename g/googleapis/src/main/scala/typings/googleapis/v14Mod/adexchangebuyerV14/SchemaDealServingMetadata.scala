@@ -7,15 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaDealServingMetadata extends StObject {
   
   /**
-    * True if alcohol ads are allowed for this deal (read-only). This field is
-    * only populated when querying for finalized orders using the method
-    * GetFinalizedOrderDeals
+    * True if alcohol ads are allowed for this deal (read-only). This field is only populated when querying for finalized orders using the method GetFinalizedOrderDeals
     */
-  var alcoholAdsAllowed: js.UndefOr[Boolean] = js.undefined
+  var alcoholAdsAllowed: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Tracks which parties (if any) have paused a deal. (readonly, except via
-    * PauseResumeOrderDeals action)
+    * Tracks which parties (if any) have paused a deal. (readonly, except via PauseResumeOrderDeals action)
     */
   var dealPauseStatus: js.UndefOr[SchemaDealServingMetadataDealPauseStatus] = js.undefined
 }
@@ -29,6 +26,8 @@ object SchemaDealServingMetadata {
   extension [Self <: SchemaDealServingMetadata](x: Self) {
     
     inline def setAlcoholAdsAllowed(value: Boolean): Self = StObject.set(x, "alcoholAdsAllowed", value.asInstanceOf[js.Any])
+    
+    inline def setAlcoholAdsAllowedNull: Self = StObject.set(x, "alcoholAdsAllowed", null)
     
     inline def setAlcoholAdsAllowedUndefined: Self = StObject.set(x, "alcoholAdsAllowed", js.undefined)
     

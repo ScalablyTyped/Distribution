@@ -11,7 +11,7 @@ trait SetStateParameters extends StObject {
   
   var channels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var state: js.UndefOr[js.Any] = js.undefined
+  var state: js.UndefOr[Any] = js.undefined
 }
 object SetStateParameters {
   
@@ -26,15 +26,15 @@ object SetStateParameters {
     
     inline def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
     
-    inline def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value :_*))
+    inline def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value*))
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

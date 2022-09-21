@@ -24,11 +24,11 @@ trait ModelVersion extends StObject {
   /**
     * The model version number.
     */
-  var modelVersionNumber: nonEmptyString
+  var modelVersionNumber: floatVersionString
 }
 object ModelVersion {
   
-  inline def apply(modelId: modelIdentifier, modelType: ModelTypeEnum, modelVersionNumber: nonEmptyString): ModelVersion = {
+  inline def apply(modelId: modelIdentifier, modelType: ModelTypeEnum, modelVersionNumber: floatVersionString): ModelVersion = {
     val __obj = js.Dynamic.literal(modelId = modelId.asInstanceOf[js.Any], modelType = modelType.asInstanceOf[js.Any], modelVersionNumber = modelVersionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelVersion]
   }
@@ -43,6 +43,6 @@ object ModelVersion {
     
     inline def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
-    inline def setModelVersionNumber(value: nonEmptyString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
+    inline def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
   }
 }

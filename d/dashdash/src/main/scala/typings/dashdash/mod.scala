@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("dashdash", "Parser")
   @js.native
-  class Parser protected () extends StObject {
+  open class Parser protected () extends StObject {
     def this(config: ParserConfiguration) = this()
     
     /** Don't allow unknown flags. @default true */
@@ -62,11 +62,11 @@ object mod {
     
     var name: String
     
-    var value: js.Any
+    var value: Any
   }
   object Arg {
     
-    inline def apply(from: String, name: String, value: js.Any): Arg = {
+    inline def apply(from: String, name: String, value: Any): Arg = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arg]
     }
@@ -77,7 +77,7 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,7 +119,7 @@ object mod {
       
       inline def setArgtypesUndefined: Self = StObject.set(x, "argtypes", js.undefined)
       
-      inline def setArgtypesVarargs(value: String*): Self = StObject.set(x, "argtypes", js.Array(value :_*))
+      inline def setArgtypesVarargs(value: String*): Self = StObject.set(x, "argtypes", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -127,7 +127,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: (Option | Group)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (Option | Group)*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSpecExtra(value: String): Self = StObject.set(x, "specExtra", value.asInstanceOf[js.Any])
       
@@ -177,7 +177,7 @@ object mod {
       
       inline def setArgtypesUndefined: Self = StObject.set(x, "argtypes", js.undefined)
       
-      inline def setArgtypesVarargs(value: String*): Self = StObject.set(x, "argtypes", js.Array(value :_*))
+      inline def setArgtypesVarargs(value: String*): Self = StObject.set(x, "argtypes", js.Array(value*))
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -189,7 +189,7 @@ object mod {
       
       inline def setOptions(value: js.Array[Option | Group]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: (Option | Group)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (Option | Group)*): Self = StObject.set(x, "options", js.Array(value*))
     }
   }
   
@@ -417,7 +417,7 @@ object mod {
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value*))
       
       inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
@@ -444,7 +444,7 @@ object mod {
     /**
       * Default value for options of this type, if no default is specified in the option type usage.
       */
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     /**
       * Set to true if this is an 'arrayOf' type
@@ -454,7 +454,7 @@ object mod {
     
     var arrayFlatten: js.UndefOr[Boolean] = js.undefined
     
-    var completionType: js.UndefOr[js.Any] = js.undefined
+    var completionType: js.UndefOr[Any] = js.undefined
     
     /**
       * Required iff `takesArg === true`. The string to show in generated help for options of this type.
@@ -467,7 +467,7 @@ object mod {
       * parser that takes a string argument and returns an instance of the
       * appropriate type, or throws an error if the arg is invalid.
       */
-    def parseArg(option: Option, optstr: String, arg: String): js.Any
+    def parseArg(option: Option, optstr: String, arg: String): Any
     
     /**
       * Whether this type of option takes an
@@ -478,7 +478,7 @@ object mod {
   }
   object OptionType {
     
-    inline def apply(name: String, parseArg: (Option, String, String) => js.Any, takesArg: Boolean): OptionType = {
+    inline def apply(name: String, parseArg: (Option, String, String) => Any, takesArg: Boolean): OptionType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parseArg = js.Any.fromFunction3(parseArg), takesArg = takesArg.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionType]
     }
@@ -493,11 +493,11 @@ object mod {
       
       inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
       
-      inline def setCompletionType(value: js.Any): Self = StObject.set(x, "completionType", value.asInstanceOf[js.Any])
+      inline def setCompletionType(value: Any): Self = StObject.set(x, "completionType", value.asInstanceOf[js.Any])
       
       inline def setCompletionTypeUndefined: Self = StObject.set(x, "completionType", js.undefined)
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -507,7 +507,7 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setParseArg(value: (Option, String, String) => js.Any): Self = StObject.set(x, "parseArg", js.Any.fromFunction3(value))
+      inline def setParseArg(value: (Option, String, String) => Any): Self = StObject.set(x, "parseArg", js.Any.fromFunction3(value))
       
       inline def setTakesArg(value: Boolean): Self = StObject.set(x, "takesArg", value.asInstanceOf[js.Any])
     }
@@ -535,7 +535,7 @@ object mod {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     }
   }
   
@@ -611,7 +611,7 @@ object mod {
       
       inline def setOptions(value: js.Array[Option | Group]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: (Option | Group)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (Option | Group)*): Self = StObject.set(x, "options", js.Array(value*))
     }
   }
   
@@ -625,7 +625,7 @@ object mod {
     /**
       * The env to use for 'env' entries in the option specs. Defaults to `process.env`.
       */
-    var env: js.UndefOr[js.Any] = js.undefined
+    var env: js.UndefOr[Any] = js.undefined
     
     // NodeJS.ProcessEnv;
     var options: js.UndefOr[js.Array[Option | Group]] = js.undefined
@@ -648,9 +648,9 @@ object mod {
       
       inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value*))
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
@@ -658,7 +658,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: (Option | Group)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (Option | Group)*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSlice(value: Double): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
       
@@ -668,7 +668,7 @@ object mod {
   
   trait Results
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var _args: js.Array[String]
     
@@ -685,11 +685,11 @@ object mod {
       
       inline def set_args(value: js.Array[String]): Self = StObject.set(x, "_args", value.asInstanceOf[js.Any])
       
-      inline def set_argsVarargs(value: String*): Self = StObject.set(x, "_args", js.Array(value :_*))
+      inline def set_argsVarargs(value: String*): Self = StObject.set(x, "_args", js.Array(value*))
       
       inline def set_order(value: js.Array[Arg]): Self = StObject.set(x, "_order", value.asInstanceOf[js.Any])
       
-      inline def set_orderVarargs(value: Arg*): Self = StObject.set(x, "_order", js.Array(value :_*))
+      inline def set_orderVarargs(value: Arg*): Self = StObject.set(x, "_order", js.Array(value*))
     }
   }
 }

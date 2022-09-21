@@ -23,6 +23,6 @@ object GitQueryBranchStatsCriteria {
     
     inline def setTargetCommits(value: js.Array[GitVersionDescriptor]): Self = StObject.set(x, "targetCommits", value.asInstanceOf[js.Any])
     
-    inline def setTargetCommitsVarargs(value: GitVersionDescriptor*): Self = StObject.set(x, "targetCommits", js.Array(value :_*))
+    inline def setTargetCommitsVarargs(value: GitVersionDescriptor*): Self = StObject.set(x, "targetCommits", js.Array(value*))
   }
 }

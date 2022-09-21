@@ -10,15 +10,15 @@ trait BootboxService extends StObject {
   
   def addLocale(name: String, values: BootboxLocaleValues): Unit
   
-  def alert(msg: String): js.Promise[js.Any]
+  def alert(msg: String): js.Promise[Any]
   
-  def confirm(msg: String): js.Promise[js.Any]
+  def confirm(msg: String): js.Promise[Any]
   
   def customDialog(options: NgBootboxDialog): Unit
   
   def hideAll(): Unit
   
-  def prompt(msg: String): js.Promise[js.Any]
+  def prompt(msg: String): js.Promise[Any]
   
   def removeLocale(name: String): Unit
   
@@ -30,11 +30,11 @@ object BootboxService {
   
   inline def apply(
     addLocale: (String, BootboxLocaleValues) => Unit,
-    alert: String => js.Promise[js.Any],
-    confirm: String => js.Promise[js.Any],
+    alert: String => js.Promise[Any],
+    confirm: String => js.Promise[Any],
     customDialog: NgBootboxDialog => Unit,
     hideAll: () => Unit,
-    prompt: String => js.Promise[js.Any],
+    prompt: String => js.Promise[Any],
     removeLocale: String => Unit,
     setDefaults: BootboxDefaultOptions => Unit,
     setLocale: String => Unit
@@ -47,15 +47,15 @@ object BootboxService {
     
     inline def setAddLocale(value: (String, BootboxLocaleValues) => Unit): Self = StObject.set(x, "addLocale", js.Any.fromFunction2(value))
     
-    inline def setAlert(value: String => js.Promise[js.Any]): Self = StObject.set(x, "alert", js.Any.fromFunction1(value))
+    inline def setAlert(value: String => js.Promise[Any]): Self = StObject.set(x, "alert", js.Any.fromFunction1(value))
     
-    inline def setConfirm(value: String => js.Promise[js.Any]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+    inline def setConfirm(value: String => js.Promise[Any]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
     
     inline def setCustomDialog(value: NgBootboxDialog => Unit): Self = StObject.set(x, "customDialog", js.Any.fromFunction1(value))
     
     inline def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
-    inline def setPrompt(value: String => js.Promise[js.Any]): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
+    inline def setPrompt(value: String => js.Promise[Any]): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
     
     inline def setRemoveLocale(value: String => Unit): Self = StObject.set(x, "removeLocale", js.Any.fromFunction1(value))
     

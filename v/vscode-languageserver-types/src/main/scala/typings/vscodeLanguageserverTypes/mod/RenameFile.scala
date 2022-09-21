@@ -42,9 +42,16 @@ object RenameFile {
   val ^ : js.Any = js.native
   
   inline def create(oldUri: DocumentUri, newUri: DocumentUri): RenameFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oldUri.asInstanceOf[js.Any], newUri.asInstanceOf[js.Any])).asInstanceOf[RenameFile]
+  inline def create(oldUri: DocumentUri, newUri: DocumentUri, options: Unit, annotation: ChangeAnnotationIdentifier): RenameFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oldUri.asInstanceOf[js.Any], newUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], annotation.asInstanceOf[js.Any])).asInstanceOf[RenameFile]
   inline def create(oldUri: DocumentUri, newUri: DocumentUri, options: RenameFileOptions): RenameFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oldUri.asInstanceOf[js.Any], newUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenameFile]
+  inline def create(
+    oldUri: DocumentUri,
+    newUri: DocumentUri,
+    options: RenameFileOptions,
+    annotation: ChangeAnnotationIdentifier
+  ): RenameFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oldUri.asInstanceOf[js.Any], newUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], annotation.asInstanceOf[js.Any])).asInstanceOf[RenameFile]
   
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean]
   
   extension [Self <: RenameFile](x: Self) {
     

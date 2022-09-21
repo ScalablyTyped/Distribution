@@ -10,8 +10,8 @@ trait PaginationChanged extends StObject {
   
   /**
     * This event fires when the pageSize or currentPage changes
-    * @param {ng.IScope} scope The grid scope
-    * @param {paginationChangedHandler} handler Callback
+    * @param scope The grid scope
+    * @param handler Callback
     */
   def paginationChanged(scope: IScope, handler: paginationChangedHandler): Unit
 }

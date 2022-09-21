@@ -9,7 +9,7 @@ trait DescribeHumanTaskUiResponse extends StObject {
   /**
     * The timestamp when the human task user interface was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The Amazon Resource Name (ARN) of the human task user interface (worker task template).
@@ -31,7 +31,7 @@ trait DescribeHumanTaskUiResponse extends StObject {
 object DescribeHumanTaskUiResponse {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     HumanTaskUiArn: HumanTaskUiArn,
     HumanTaskUiName: HumanTaskUiName,
     UiTemplate: UiTemplateInfo
@@ -42,7 +42,7 @@ object DescribeHumanTaskUiResponse {
   
   extension [Self <: DescribeHumanTaskUiResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     

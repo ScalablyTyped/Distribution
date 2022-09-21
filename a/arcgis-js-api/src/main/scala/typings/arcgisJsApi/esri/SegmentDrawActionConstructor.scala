@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SegmentDrawActionConstructor
   extends StObject
-     with Instantiable0[SegmentDrawAction]
+     with /**
+  * This class uses different [events](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#events-summary) to generate a set of vertices to create a geometry with [drag mode](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#mode) or with two clicks.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html)
+  */
+Instantiable0[SegmentDrawAction]
      with Instantiable1[/* properties */ SegmentDrawActionProperties, SegmentDrawAction]

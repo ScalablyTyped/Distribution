@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "GPUDetector")
 @js.native
-class GPUDetector ()
+open class GPUDetector ()
   extends typings.wonderJs.gpudetectorMod.GPUDetector
 /* static members */
 object GPUDetector {
@@ -15,5 +15,5 @@ object GPUDetector {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

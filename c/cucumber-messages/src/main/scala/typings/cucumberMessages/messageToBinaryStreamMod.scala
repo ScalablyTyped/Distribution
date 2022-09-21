@@ -10,7 +10,7 @@ object messageToBinaryStreamMod {
   
   @JSImport("cucumber-messages/dist/src/MessageToBinaryStream", JSImport.Default)
   @js.native
-  class default[T] () extends MessageToBinaryStream[T]
+  open class default[T] () extends MessageToBinaryStream[T]
   
   @js.native
   trait MessageToBinaryStream[T] extends Transform {

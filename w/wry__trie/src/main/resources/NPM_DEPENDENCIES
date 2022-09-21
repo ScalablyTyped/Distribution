@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wry/trie" : "0.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wry/trie" : "0.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

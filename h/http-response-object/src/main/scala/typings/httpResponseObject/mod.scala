@@ -12,7 +12,7 @@ object mod {
     */
   @JSImport("http-response-object", JSImport.Namespace)
   @js.native
-  class ^[TBody] protected ()
+  open class ^[TBody] protected ()
     extends StObject
        with Response[TBody] {
     def this(statusCode: Double, headers: IncomingHttpHeaders, body: TBody, url: String) = this()

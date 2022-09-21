@@ -11,7 +11,7 @@ object receiverStructured1Mod {
   
   @JSImport("cloudevents-sdk/lib/bindings/http/v1/receiver_structured_1", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Receiver {
     
@@ -19,13 +19,13 @@ object receiverStructured1Mod {
     var Spec: Instantiable0[typings.cloudeventsSdk.spec1Mod.^] = js.native
     
     /* CompleteClass */
-    var allowedContentTypes: js.Array[js.Any] = js.native
+    var allowedContentTypes: js.Array[Any] = js.native
     
     /* CompleteClass */
-    var parserByMime: NumberDictionary[js.Any] = js.native
+    var parserByMime: NumberDictionary[Any] = js.native
     
     /* CompleteClass */
-    var parserMap: Map[js.Any, js.Any] = js.native
+    var parserMap: Map[Any, Any] = js.native
     
     /* CompleteClass */
     var spec: typings.cloudeventsSdk.spec1Mod.^ = js.native
@@ -35,11 +35,11 @@ object receiverStructured1Mod {
     
     var Spec: Instantiable0[typings.cloudeventsSdk.spec1Mod.^]
     
-    var allowedContentTypes: js.Array[js.Any]
+    var allowedContentTypes: js.Array[Any]
     
-    var parserByMime: NumberDictionary[js.Any]
+    var parserByMime: NumberDictionary[Any]
     
-    var parserMap: Map[js.Any, js.Any]
+    var parserMap: Map[Any, Any]
     
     var spec: typings.cloudeventsSdk.spec1Mod.^
   }
@@ -47,9 +47,9 @@ object receiverStructured1Mod {
     
     inline def apply(
       Spec: Instantiable0[typings.cloudeventsSdk.spec1Mod.^],
-      allowedContentTypes: js.Array[js.Any],
-      parserByMime: NumberDictionary[js.Any],
-      parserMap: Map[js.Any, js.Any],
+      allowedContentTypes: js.Array[Any],
+      parserByMime: NumberDictionary[Any],
+      parserMap: Map[Any, Any],
       spec: typings.cloudeventsSdk.spec1Mod.^
     ): Receiver = {
       val __obj = js.Dynamic.literal(Spec = Spec.asInstanceOf[js.Any], allowedContentTypes = allowedContentTypes.asInstanceOf[js.Any], parserByMime = parserByMime.asInstanceOf[js.Any], parserMap = parserMap.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
@@ -58,13 +58,13 @@ object receiverStructured1Mod {
     
     extension [Self <: Receiver](x: Self) {
       
-      inline def setAllowedContentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "allowedContentTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedContentTypes(value: js.Array[Any]): Self = StObject.set(x, "allowedContentTypes", value.asInstanceOf[js.Any])
       
-      inline def setAllowedContentTypesVarargs(value: js.Any*): Self = StObject.set(x, "allowedContentTypes", js.Array(value :_*))
+      inline def setAllowedContentTypesVarargs(value: Any*): Self = StObject.set(x, "allowedContentTypes", js.Array(value*))
       
-      inline def setParserByMime(value: NumberDictionary[js.Any]): Self = StObject.set(x, "parserByMime", value.asInstanceOf[js.Any])
+      inline def setParserByMime(value: NumberDictionary[Any]): Self = StObject.set(x, "parserByMime", value.asInstanceOf[js.Any])
       
-      inline def setParserMap(value: Map[js.Any, js.Any]): Self = StObject.set(x, "parserMap", value.asInstanceOf[js.Any])
+      inline def setParserMap(value: Map[Any, Any]): Self = StObject.set(x, "parserMap", value.asInstanceOf[js.Any])
       
       inline def setSpec(value: Instantiable0[typings.cloudeventsSdk.spec1Mod.^]): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
     }

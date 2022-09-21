@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a service configuration with its name and id.
-  */
 trait SchemaConfigRef extends StObject {
   
   /**
-    * Resource name of a service config. It must have the following format:
-    * &quot;services/{service name}/configs/{config id}&quot;.
+    * Resource name of a service config. It must have the following format: "services/{service name\}/configs/{config id\}".
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaConfigRef {
   
@@ -25,6 +21,8 @@ object SchemaConfigRef {
   extension [Self <: SchemaConfigRef](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

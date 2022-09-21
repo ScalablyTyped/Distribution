@@ -21,7 +21,7 @@ trait nlobjServerResponse
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * return an Array of all headers returned.
@@ -44,7 +44,7 @@ Instantiable0[js.Any] {
     * @since 2008.1
     * @return
     */
-  def getBody(): js.Any = js.native
+  def getBody(): Any = js.native
   
   /**
     * return the response code returned.

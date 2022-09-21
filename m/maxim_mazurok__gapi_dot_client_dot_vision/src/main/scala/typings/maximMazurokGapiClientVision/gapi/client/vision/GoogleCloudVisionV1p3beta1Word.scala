@@ -47,6 +47,6 @@ object GoogleCloudVisionV1p3beta1Word {
     
     inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     
-    inline def setSymbolsVarargs(value: GoogleCloudVisionV1p3beta1Symbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+    inline def setSymbolsVarargs(value: GoogleCloudVisionV1p3beta1Symbol*): Self = StObject.set(x, "symbols", js.Array(value*))
   }
 }

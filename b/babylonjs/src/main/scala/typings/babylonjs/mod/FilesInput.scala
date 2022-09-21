@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "FilesInput")
 @js.native
-class FilesInput protected ()
+open class FilesInput protected ()
   extends typings.babylonjs.legacyMod.FilesInput {
   /**
     * Creates a new FilesInput

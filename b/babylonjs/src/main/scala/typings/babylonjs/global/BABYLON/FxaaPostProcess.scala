@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.FxaaPostProcess")
 @js.native
-class FxaaPostProcess protected ()
+open class FxaaPostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.FxaaPostProcess {
   def this(
@@ -28,9 +28,15 @@ object FxaaPostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String

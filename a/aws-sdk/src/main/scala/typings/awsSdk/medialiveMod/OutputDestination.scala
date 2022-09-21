@@ -43,7 +43,7 @@ object OutputDestination {
     
     inline def setMediaPackageSettingsUndefined: Self = StObject.set(x, "MediaPackageSettings", js.undefined)
     
-    inline def setMediaPackageSettingsVarargs(value: MediaPackageOutputDestinationSettings*): Self = StObject.set(x, "MediaPackageSettings", js.Array(value :_*))
+    inline def setMediaPackageSettingsVarargs(value: MediaPackageOutputDestinationSettings*): Self = StObject.set(x, "MediaPackageSettings", js.Array(value*))
     
     inline def setMultiplexSettings(value: MultiplexProgramChannelDestinationSettings): Self = StObject.set(x, "MultiplexSettings", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object OutputDestination {
     
     inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
-    inline def setSettingsVarargs(value: OutputDestinationSettings*): Self = StObject.set(x, "Settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: OutputDestinationSettings*): Self = StObject.set(x, "Settings", js.Array(value*))
   }
 }

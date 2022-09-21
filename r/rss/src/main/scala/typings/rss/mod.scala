@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.rss.mod.NodeRSS.FeedOptions
 import typings.rss.mod.NodeRSS.RSS
 import typings.rss.mod.NodeRSS.RSSFactory
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rss", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RSS {
     /**
@@ -95,7 +94,7 @@ object mod extends Shortcut {
       /**
         * Put additional elements in the feed (node-xml syntax).
         */
-      var custom_elements: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var custom_elements: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Put additional namespaces in element
@@ -148,7 +147,7 @@ object mod extends Shortcut {
         * Accepts Date object or string with any format
         * JS Date can parse.
         */
-      var pubDate: js.UndefOr[Date | String] = js.undefined
+      var pubDate: js.UndefOr[js.Date | String] = js.undefined
       
       /**
         * URL to the site that the feed is for.
@@ -184,17 +183,17 @@ object mod extends Shortcut {
         
         inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
         
-        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
         
         inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
         
         inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
         
-        inline def setCustom_elements(value: js.Array[js.Any]): Self = StObject.set(x, "custom_elements", value.asInstanceOf[js.Any])
+        inline def setCustom_elements(value: js.Array[Any]): Self = StObject.set(x, "custom_elements", value.asInstanceOf[js.Any])
         
         inline def setCustom_elementsUndefined: Self = StObject.set(x, "custom_elements", js.undefined)
         
-        inline def setCustom_elementsVarargs(value: js.Any*): Self = StObject.set(x, "custom_elements", js.Array(value :_*))
+        inline def setCustom_elementsVarargs(value: Any*): Self = StObject.set(x, "custom_elements", js.Array(value*))
         
         inline def setCustom_namespaces(value: js.Object): Self = StObject.set(x, "custom_namespaces", value.asInstanceOf[js.Any])
         
@@ -230,7 +229,7 @@ object mod extends Shortcut {
         
         inline def setManagingEditorUndefined: Self = StObject.set(x, "managingEditor", js.undefined)
         
-        inline def setPubDate(value: Date | String): Self = StObject.set(x, "pubDate", value.asInstanceOf[js.Any])
+        inline def setPubDate(value: js.Date | String): Self = StObject.set(x, "pubDate", value.asInstanceOf[js.Any])
         
         inline def setPubDateUndefined: Self = StObject.set(x, "pubDate", js.undefined)
         
@@ -266,7 +265,7 @@ object mod extends Shortcut {
       /**
         * Put additional elements in the item (node-xml syntax).
         */
-      var custom_elements: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var custom_elements: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * The date and time of when the item was created. Feed
@@ -276,7 +275,7 @@ object mod extends Shortcut {
         * Accepts Date object or string with any format
         * JS Date can parse.
         */
-      var date: Date | String
+      var date: js.Date | String
       
       /**
         * Content for the item. Can contain HTML but link and image
@@ -320,7 +319,7 @@ object mod extends Shortcut {
     }
     object ItemOptions {
       
-      inline def apply(date: Date | String, description: String, title: String, url: String): ItemOptions = {
+      inline def apply(date: js.Date | String, description: String, title: String, url: String): ItemOptions = {
         val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[ItemOptions]
       }
@@ -335,15 +334,15 @@ object mod extends Shortcut {
         
         inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
         
-        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
         
-        inline def setCustom_elements(value: js.Array[js.Any]): Self = StObject.set(x, "custom_elements", value.asInstanceOf[js.Any])
+        inline def setCustom_elements(value: js.Array[Any]): Self = StObject.set(x, "custom_elements", value.asInstanceOf[js.Any])
         
         inline def setCustom_elementsUndefined: Self = StObject.set(x, "custom_elements", js.undefined)
         
-        inline def setCustom_elementsVarargs(value: js.Any*): Self = StObject.set(x, "custom_elements", js.Array(value :_*))
+        inline def setCustom_elementsVarargs(value: Any*): Self = StObject.set(x, "custom_elements", js.Array(value*))
         
-        inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+        inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         

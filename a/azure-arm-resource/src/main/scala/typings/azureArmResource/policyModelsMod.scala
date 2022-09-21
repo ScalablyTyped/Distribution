@@ -10,12 +10,12 @@ object policyModelsMod {
   
   @JSImport("azure-arm-resource/lib/policy/models", "BaseResource")
   @js.native
-  class BaseResource ()
+  open class BaseResource ()
     extends typings.msRestAzure.mod.BaseResource
   
   @JSImport("azure-arm-resource/lib/policy/models", "CloudError")
   @js.native
-  class CloudError protected ()
+  open class CloudError protected ()
     extends typings.msRestAzure.mod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
@@ -132,7 +132,7 @@ object policyModelsMod {
     /**
       * The policy assignment metadata.
       */
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[Any] = js.native
     
     /**
       * The name of the policy assignment.
@@ -147,7 +147,7 @@ object policyModelsMod {
     /**
       * Required if a parameter is used in policy rule.
       */
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[Any] = js.native
     
     /**
       * The ID of the policy definition or policy set definition being assigned.
@@ -203,7 +203,7 @@ object policyModelsMod {
     /**
       * The policy definition metadata.
       */
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[Any] = js.native
     
     /**
       * The policy definition mode. Possible values are NotSpecified, Indexed, and All. Possible
@@ -219,12 +219,12 @@ object policyModelsMod {
     /**
       * Required if a parameter is used in policy rule.
       */
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[Any] = js.native
     
     /**
       * The policy rule.
       */
-    var policyRule: js.UndefOr[js.Any] = js.native
+    var policyRule: js.UndefOr[Any] = js.native
     
     /**
       * The type of policy definition. Possible values are NotSpecified, BuiltIn, and Custom. Possible
@@ -254,7 +254,7 @@ object policyModelsMod {
     /**
       * Required if a parameter is used in policy rule.
       */
-    var parameters: js.UndefOr[js.Any] = js.undefined
+    var parameters: js.UndefOr[Any] = js.undefined
     
     /**
       * The ID of the policy definition or policy set definition.
@@ -270,7 +270,7 @@ object policyModelsMod {
     
     extension [Self <: PolicyDefinitionReference](x: Self) {
       
-      inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
@@ -302,7 +302,7 @@ object policyModelsMod {
     /**
       * The policy set definition metadata.
       */
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[Any] = js.native
     
     /**
       * The name of the policy set definition.
@@ -312,7 +312,7 @@ object policyModelsMod {
     /**
       * The policy set definition parameters that can be used in policy definition references.
       */
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[Any] = js.native
     
     /**
       * An array of policy definition references.

@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientSecuritycenter.anon
 
+import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.RunAssetDiscoveryRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +20,6 @@ trait Oauthtoken extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. Unique identifier provided by the client within the parent scope. It must be between 1 and 128 characters, and contains alphanumeric characters, underscores or hyphens
-    * only.
-    */
-  var configId: js.UndefOr[String] = js.undefined
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -34,7 +29,7 @@ trait Oauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the new notification config's parent. Its format is "organizations/[organization_id]". */
+  /** Required. Name of the organization to run asset discovery for. Its format is "organizations/[organization_id]". */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,6 +37,9 @@ trait Oauthtoken extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: RunAssetDiscoveryRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +49,8 @@ trait Oauthtoken extends StObject {
 }
 object Oauthtoken {
   
-  inline def apply(parent: String): Oauthtoken = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: RunAssetDiscoveryRequest): Oauthtoken = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Oauthtoken]
   }
   
@@ -73,10 +71,6 @@ object Oauthtoken {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
-    
-    inline def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -99,6 +93,8 @@ object Oauthtoken {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: RunAssetDiscoveryRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

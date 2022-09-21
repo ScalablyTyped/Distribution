@@ -10,7 +10,7 @@ trait Image extends StObject {
   var height: Double = js.native
   
   def onerror(): Unit = js.native
-  def onerror(e: js.Any): Unit = js.native
+  def onerror(e: Any): Unit = js.native
   
   def onload(): Unit = js.native
   

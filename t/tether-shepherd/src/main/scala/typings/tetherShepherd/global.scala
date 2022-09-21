@@ -19,7 +19,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Shepherd.Tour")
     @js.native
-    class Tour ()
+    open class Tour ()
       extends StObject
          with IShepherdTour {
       def this(options: IShepherdTourOptions) = this()
@@ -28,7 +28,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Shepherd.activeTour")
     @js.native
-    class activeTour ()
+    open class activeTour ()
       extends StObject
          with IShepherdTour {
       def this(options: IShepherdTourOptions) = this()

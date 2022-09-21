@@ -10,7 +10,7 @@ trait IgSchedulerDayViewSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the number of days are visible at a time in the day view. 1 to 7 days are supported.

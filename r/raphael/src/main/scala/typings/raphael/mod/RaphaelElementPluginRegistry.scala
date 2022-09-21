@@ -150,8 +150,8 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
   
   var data: RaphaelElementPluginMethod[
     TTechnology, 
-    Parameters[js.Function1[/* key */ String, js.Any]], 
-    ReturnType[js.Function1[/* key */ String, js.Any]]
+    Parameters[js.Function1[/* key */ String, Any]], 
+    ReturnType[js.Function1[/* key */ String, Any]]
   ]
   
   var dblclick: RaphaelElementPluginMethod[
@@ -288,6 +288,12 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
+  ]
+  
+  var isPointInside: RaphaelElementPluginMethod[
+    TTechnology, 
+    Parameters[js.Function2[/* x */ Double, /* y */ Double, Boolean]], 
+    ReturnType[js.Function2[/* x */ Double, /* y */ Double, Boolean]]
   ]
   
   var matrix: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]]
@@ -656,15 +662,15 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
     TTechnology, 
     Parameters[
       js.Function2[
-        /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
-        /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+        /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
+        /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
         this.type
       ]
     ], 
     ReturnType[
       js.Function2[
-        /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
-        /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+        /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
+        /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
         this.type
       ]
     ]
@@ -918,8 +924,8 @@ object RaphaelElementPluginRegistry {
     ],
     data: RaphaelElementPluginMethod[
       TTechnology, 
-      Parameters[js.Function1[/* key */ String, js.Any]], 
-      ReturnType[js.Function1[/* key */ String, js.Any]]
+      Parameters[js.Function1[/* key */ String, Any]], 
+      ReturnType[js.Function1[/* key */ String, Any]]
     ],
     dblclick: RaphaelElementPluginMethod[
       TTechnology, 
@@ -1065,6 +1071,11 @@ object RaphaelElementPluginRegistry {
           RaphaelElementPluginRegistry[TTechnology]
         ]
       ]
+    ],
+    isPointInside: RaphaelElementPluginMethod[
+      TTechnology, 
+      Parameters[js.Function2[/* x */ Double, /* y */ Double, Boolean]], 
+      ReturnType[js.Function2[/* x */ Double, /* y */ Double, Boolean]]
     ],
     matrix: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]],
     mousedown: RaphaelElementPluginMethod[
@@ -1477,15 +1488,15 @@ object RaphaelElementPluginRegistry {
       TTechnology, 
       Parameters[
         js.Function2[
-          /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
-          /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+          /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
+          /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
           RaphaelElementPluginRegistry[TTechnology]
         ]
       ], 
       ReturnType[
         js.Function2[
-          /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
-          /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+          /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
+          /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
           RaphaelElementPluginRegistry[TTechnology]
         ]
       ]
@@ -1680,7 +1691,7 @@ object RaphaelElementPluginRegistry {
       ]
     ]
   ): RaphaelElementPluginRegistry[TTechnology] = {
-    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateWith = animateWith.asInstanceOf[js.Any], attr = attr.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], getBBox = getBBox.asInstanceOf[js.Any], glow = glow.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], insertAfter = insertAfter.asInstanceOf[js.Any], insertBefore = insertBefore.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], onDragOver = onDragOver.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], removeData = removeData.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setTime = setTime.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], toBack = toBack.asInstanceOf[js.Any], toFront = toFront.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any], unclick = unclick.asInstanceOf[js.Any], undblclick = undblclick.asInstanceOf[js.Any], undrag = undrag.asInstanceOf[js.Any], unhover = unhover.asInstanceOf[js.Any], unmousedown = unmousedown.asInstanceOf[js.Any], unmousemove = unmousemove.asInstanceOf[js.Any], unmouseout = unmouseout.asInstanceOf[js.Any], unmouseover = unmouseover.asInstanceOf[js.Any], unmouseup = unmouseup.asInstanceOf[js.Any], untouchcancel = untouchcancel.asInstanceOf[js.Any], untouchend = untouchend.asInstanceOf[js.Any], untouchmove = untouchmove.asInstanceOf[js.Any], untouchstart = untouchstart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateWith = animateWith.asInstanceOf[js.Any], attr = attr.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], getBBox = getBBox.asInstanceOf[js.Any], glow = glow.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], insertAfter = insertAfter.asInstanceOf[js.Any], insertBefore = insertBefore.asInstanceOf[js.Any], isPointInside = isPointInside.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], onDragOver = onDragOver.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], removeData = removeData.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setTime = setTime.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], toBack = toBack.asInstanceOf[js.Any], toFront = toFront.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any], unclick = unclick.asInstanceOf[js.Any], undblclick = undblclick.asInstanceOf[js.Any], undrag = undrag.asInstanceOf[js.Any], unhover = unhover.asInstanceOf[js.Any], unmousedown = unmousedown.asInstanceOf[js.Any], unmousemove = unmousemove.asInstanceOf[js.Any], unmouseout = unmouseout.asInstanceOf[js.Any], unmouseover = unmouseover.asInstanceOf[js.Any], unmouseup = unmouseup.asInstanceOf[js.Any], untouchcancel = untouchcancel.asInstanceOf[js.Any], untouchend = untouchend.asInstanceOf[js.Any], untouchmove = untouchmove.asInstanceOf[js.Any], untouchstart = untouchstart.asInstanceOf[js.Any])
     __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelElementPluginRegistry[TTechnology]]
@@ -1805,8 +1816,8 @@ object RaphaelElementPluginRegistry {
     inline def setData(
       value: RaphaelElementPluginMethod[
           TTechnology, 
-          Parameters[js.Function1[/* key */ String, js.Any]], 
-          ReturnType[js.Function1[/* key */ String, js.Any]]
+          Parameters[js.Function1[/* key */ String, Any]], 
+          ReturnType[js.Function1[/* key */ String, Any]]
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
@@ -1979,6 +1990,14 @@ object RaphaelElementPluginRegistry {
           ]
         ]
     ): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+    
+    inline def setIsPointInside(
+      value: RaphaelElementPluginMethod[
+          TTechnology, 
+          Parameters[js.Function2[/* x */ Double, /* y */ Double, Boolean]], 
+          ReturnType[js.Function2[/* x */ Double, /* y */ Double, Boolean]]
+        ]
+    ): Self = StObject.set(x, "isPointInside", value.asInstanceOf[js.Any])
     
     inline def setMatrix(
       value: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]]
@@ -2535,15 +2554,15 @@ object RaphaelElementPluginRegistry {
           TTechnology, 
           Parameters[
             js.Function2[
-              /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
-              /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+              /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
+              /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
               RaphaelElementPluginRegistry[TTechnology]
             ]
           ], 
           ReturnType[
             js.Function2[
-              /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
-              /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+              /* onHoverInHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
+              /* onHoverOutHandler */ RaphaelBasicEventHandler[Any, MouseEvent], 
               RaphaelElementPluginRegistry[TTechnology]
             ]
           ]

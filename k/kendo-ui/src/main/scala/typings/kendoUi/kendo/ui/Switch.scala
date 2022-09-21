@@ -18,7 +18,9 @@ trait Switch
   @JSName("options")
   var options_Switch: SwitchOptions = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def readonly(readonly: Boolean): Unit = js.native
+  
+  def setOptions(options: Any): Unit = js.native
   
   def toggle(): Unit = js.native
   

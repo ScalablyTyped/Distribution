@@ -29,7 +29,7 @@ trait StartBluetoothDevicesDiscoveryOptions extends StObject {
   /**
     * 蓝牙设备主 service 的 uuid 列表
     */
-  var services: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var services: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 成功则返回本机蓝牙适配器状态
@@ -61,11 +61,11 @@ object StartBluetoothDevicesDiscoveryOptions {
     
     inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    inline def setServices(value: js.Array[js.Any]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[Any]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: js.Any*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Any*): Self = StObject.set(x, "services", js.Array(value*))
     
     inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     

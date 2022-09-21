@@ -1,5 +1,6 @@
 package typings.rax.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.rax.anon.ReadonlychildrenRaxNodeun
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -9,15 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Base component for plain JS classes
 @JSImport("rax", "Component")
 @js.native
-class Component[P, S, SS] protected ()
+open class Component[P, S, SS] protected ()
   extends StObject
      with ComponentLifecycle[P, S, SS] {
   def this(props: P) = this()
+  
+  var context: Any = js.native
   
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native
   
   val props: P & ReadonlychildrenRaxNodeun = js.native
+  
+  var refs: StringDictionary[RaxInstance] = js.native
   
   def render(): RaxNode = js.native
   

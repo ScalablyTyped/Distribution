@@ -11,18 +11,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def adlib(template: js.Any, settings: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("adlib")(template.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def adlib(template: js.Any, settings: js.Any, transforms: TransformsList): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("adlib")(template.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], transforms.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def adlib(template: Any, settings: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("adlib")(template.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def adlib(template: Any, settings: Any, transforms: TransformsList): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("adlib")(template.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], transforms.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def listDependencies(template: js.Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDependencies")(template.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def listDependencies(template: Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDependencies")(template.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  type TransformFunction = js.Function4[
-    /* key */ String, 
-    /* value */ js.Any, 
-    /* settings */ js.Any, 
-    /* param */ js.UndefOr[js.Any], 
-    js.Any
-  ]
+  type TransformFunction = js.Function4[/* key */ String, /* value */ Any, /* settings */ Any, /* param */ js.UndefOr[Any], Any]
   
   type TransformsList = StringDictionary[TransformFunction]
 }

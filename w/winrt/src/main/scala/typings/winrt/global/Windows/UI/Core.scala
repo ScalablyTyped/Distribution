@@ -36,7 +36,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.AcceleratorKeyEventArgs")
   @js.native
-  class AcceleratorKeyEventArgs ()
+  open class AcceleratorKeyEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.AcceleratorKeyEventArgs {
     
@@ -57,7 +57,7 @@ object Core {
     
     @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationDescription")
     @js.native
-    class AnimationDescription protected ()
+    open class AnimationDescription protected ()
       extends StObject
          with typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationDescription {
       def this(effect: AnimationEffect, target: AnimationEffectTarget) = this()
@@ -208,7 +208,7 @@ object Core {
     
     @JSGlobal("Windows.UI.Core.AnimationMetrics.OpacityAnimation")
     @js.native
-    class OpacityAnimation ()
+    open class OpacityAnimation ()
       extends StObject
          with typings.winrt.Windows.UI.Core.AnimationMetrics.OpacityAnimation {
       
@@ -236,7 +236,7 @@ object Core {
     
     @JSGlobal("Windows.UI.Core.AnimationMetrics.PropertyAnimation")
     @js.native
-    class PropertyAnimation ()
+    open class PropertyAnimation ()
       extends StObject
          with typings.winrt.Windows.UI.Core.AnimationMetrics.PropertyAnimation {
       
@@ -272,7 +272,7 @@ object Core {
     
     @JSGlobal("Windows.UI.Core.AnimationMetrics.ScaleAnimation")
     @js.native
-    class ScaleAnimation ()
+    open class ScaleAnimation ()
       extends StObject
          with typings.winrt.Windows.UI.Core.AnimationMetrics.ScaleAnimation {
       
@@ -309,7 +309,7 @@ object Core {
     
     @JSGlobal("Windows.UI.Core.AnimationMetrics.TranslationAnimation")
     @js.native
-    class TranslationAnimation ()
+    open class TranslationAnimation ()
       extends StObject
          with typings.winrt.Windows.UI.Core.AnimationMetrics.TranslationAnimation {
       
@@ -332,12 +332,12 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.AutomationProviderRequestedEventArgs")
   @js.native
-  class AutomationProviderRequestedEventArgs ()
+  open class AutomationProviderRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.AutomationProviderRequestedEventArgs {
     
     /* CompleteClass */
-    var automationProvider: js.Any = js.native
+    var automationProvider: Any = js.native
     
     /* CompleteClass */
     var handled: Boolean = js.native
@@ -345,7 +345,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CharacterReceivedEventArgs")
   @js.native
-  class CharacterReceivedEventArgs ()
+  open class CharacterReceivedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CharacterReceivedEventArgs {
     
@@ -387,17 +387,17 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CoreAcceleratorKeys")
   @js.native
-  class CoreAcceleratorKeys ()
+  open class CoreAcceleratorKeys ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreAcceleratorKeys {
     
     /* CompleteClass */
-    var onacceleratorkeyactivated: js.Any = js.native
+    var onacceleratorkeyactivated: Any = js.native
   }
   
   @JSGlobal("Windows.UI.Core.CoreCursor")
   @js.native
-  class CoreCursor protected ()
+  open class CoreCursor protected ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreCursor {
     def this(`type`: CoreCursorType, id: Double) = this()
@@ -448,7 +448,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CoreDispatcher")
   @js.native
-  class CoreDispatcher ()
+  open class CoreDispatcher ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreDispatcher {
     
@@ -456,7 +456,7 @@ object Core {
     var hasThreadAccess: Boolean = js.native
     
     /* CompleteClass */
-    var onacceleratorkeyactivated: js.Any = js.native
+    var onacceleratorkeyactivated: Any = js.native
     
     /* CompleteClass */
     override def processEvents(options: CoreProcessEventsOption): Unit = js.native
@@ -526,7 +526,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CoreWindow")
   @js.native
-  class CoreWindow ()
+  open class CoreWindow ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreWindow {
     
@@ -534,7 +534,7 @@ object Core {
     override def activate(): Unit = js.native
     
     /* CompleteClass */
-    var automationHostProvider: js.Any = js.native
+    var automationHostProvider: Any = js.native
     
     /* CompleteClass */
     var bounds: Rect = js.native
@@ -561,55 +561,55 @@ object Core {
     var isInputEnabled: Boolean = js.native
     
     /* CompleteClass */
-    var onactivated: js.Any = js.native
+    var onactivated: Any = js.native
     
     /* CompleteClass */
-    var onautomationproviderrequested: js.Any = js.native
+    var onautomationproviderrequested: Any = js.native
     
     /* CompleteClass */
-    var oncharacterreceived: js.Any = js.native
+    var oncharacterreceived: Any = js.native
     
     /* CompleteClass */
-    var onclosed: js.Any = js.native
+    var onclosed: Any = js.native
     
     /* CompleteClass */
-    var oninputenabled: js.Any = js.native
+    var oninputenabled: Any = js.native
     
     /* CompleteClass */
-    var onkeydown: js.Any = js.native
+    var onkeydown: Any = js.native
     
     /* CompleteClass */
-    var onkeyup: js.Any = js.native
+    var onkeyup: Any = js.native
     
     /* CompleteClass */
-    var onpointercapturelost: js.Any = js.native
+    var onpointercapturelost: Any = js.native
     
     /* CompleteClass */
-    var onpointerentered: js.Any = js.native
+    var onpointerentered: Any = js.native
     
     /* CompleteClass */
-    var onpointerexited: js.Any = js.native
+    var onpointerexited: Any = js.native
     
     /* CompleteClass */
-    var onpointermoved: js.Any = js.native
+    var onpointermoved: Any = js.native
     
     /* CompleteClass */
-    var onpointerpressed: js.Any = js.native
+    var onpointerpressed: Any = js.native
     
     /* CompleteClass */
-    var onpointerreleased: js.Any = js.native
+    var onpointerreleased: Any = js.native
     
     /* CompleteClass */
-    var onpointerwheelchanged: js.Any = js.native
+    var onpointerwheelchanged: Any = js.native
     
     /* CompleteClass */
-    var onsizechanged: js.Any = js.native
+    var onsizechanged: Any = js.native
     
     /* CompleteClass */
-    var ontouchhittesting: js.Any = js.native
+    var ontouchhittesting: Any = js.native
     
     /* CompleteClass */
-    var onvisibilitychanged: js.Any = js.native
+    var onvisibilitychanged: Any = js.native
     
     /* CompleteClass */
     var pointerCursor: typings.winrt.Windows.UI.Core.CoreCursor = js.native
@@ -652,7 +652,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CoreWindowDialog")
   @js.native
-  class CoreWindowDialog ()
+  open class CoreWindowDialog ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreWindowDialog {
     def this(title: String) = this()
@@ -682,7 +682,7 @@ object Core {
     var minSize: Size = js.native
     
     /* CompleteClass */
-    var onshowing: js.Any = js.native
+    var onshowing: Any = js.native
     
     /* CompleteClass */
     override def showAsync(): IAsyncOperation[IUICommand] = js.native
@@ -693,7 +693,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CoreWindowEventArgs")
   @js.native
-  class CoreWindowEventArgs ()
+  open class CoreWindowEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreWindowEventArgs {
     
@@ -715,7 +715,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CoreWindowFlyout")
   @js.native
-  class CoreWindowFlyout protected ()
+  open class CoreWindowFlyout protected ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreWindowFlyout {
     def this(position: Point) = this()
@@ -743,7 +743,7 @@ object Core {
     var minSize: Size = js.native
     
     /* CompleteClass */
-    var onshowing: js.Any = js.native
+    var onshowing: Any = js.native
     
     /* CompleteClass */
     override def showAsync(): IAsyncOperation[IUICommand] = js.native
@@ -754,7 +754,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CoreWindowPopupShowingEventArgs")
   @js.native
-  class CoreWindowPopupShowingEventArgs ()
+  open class CoreWindowPopupShowingEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreWindowPopupShowingEventArgs {
     
@@ -764,7 +764,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.CoreWindowResizeManager")
   @js.native
-  class CoreWindowResizeManager ()
+  open class CoreWindowResizeManager ()
     extends StObject
        with typings.winrt.Windows.UI.Core.CoreWindowResizeManager {
     
@@ -783,7 +783,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.IdleDispatchedHandlerArgs")
   @js.native
-  class IdleDispatchedHandlerArgs ()
+  open class IdleDispatchedHandlerArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.IdleDispatchedHandlerArgs {
     
@@ -793,7 +793,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.InputEnabledEventArgs")
   @js.native
-  class InputEnabledEventArgs ()
+  open class InputEnabledEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.InputEnabledEventArgs {
     
@@ -806,7 +806,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.KeyEventArgs")
   @js.native
-  class KeyEventArgs ()
+  open class KeyEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.KeyEventArgs {
     
@@ -822,7 +822,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.PointerEventArgs")
   @js.native
-  class PointerEventArgs ()
+  open class PointerEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.PointerEventArgs {
     
@@ -841,7 +841,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.TouchHitTestingEventArgs")
   @js.native
-  class TouchHitTestingEventArgs ()
+  open class TouchHitTestingEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.TouchHitTestingEventArgs {
     
@@ -851,7 +851,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.VisibilityChangedEventArgs")
   @js.native
-  class VisibilityChangedEventArgs ()
+  open class VisibilityChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.VisibilityChangedEventArgs {
     
@@ -864,7 +864,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.WindowActivatedEventArgs")
   @js.native
-  class WindowActivatedEventArgs ()
+  open class WindowActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.WindowActivatedEventArgs {
     
@@ -877,7 +877,7 @@ object Core {
   
   @JSGlobal("Windows.UI.Core.WindowSizeChangedEventArgs")
   @js.native
-  class WindowSizeChangedEventArgs ()
+  open class WindowSizeChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.Core.WindowSizeChangedEventArgs {
     

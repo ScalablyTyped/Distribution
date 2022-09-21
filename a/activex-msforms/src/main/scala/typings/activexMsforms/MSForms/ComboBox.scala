@@ -36,9 +36,9 @@ trait ComboBox extends StObject {
   
   def Clear(): Unit = js.native
   
-  def Column(): SafeArray[js.Any] = js.native
-  def Column(pvargColumn: Double): js.Any = js.native
-  def Column(pvargColumn: Double, pvargIndex: Double): js.Any = js.native
+  def Column(): SafeArray[Any] = js.native
+  def Column(pvargColumn: Double): Any = js.native
+  def Column(pvargColumn: Double, pvargIndex: Double): Any = js.native
   
   var ColumnCount: Double = js.native
   
@@ -92,13 +92,13 @@ trait ComboBox extends StObject {
   
   val LineCount: Double = js.native
   
-  def List(): SafeArray[js.Any] = js.native
-  def List(pvargIndex: Double): js.Any = js.native
-  def List(pvargIndex: Double, pvargColumn: Double): js.Any = js.native
+  def List(): SafeArray[Any] = js.native
+  def List(pvargIndex: Double): Any = js.native
+  def List(pvargIndex: Double, pvargColumn: Double): Any = js.native
   
   val ListCount: Double = js.native
   
-  var ListCursor: js.Any = js.native
+  var ListCursor: Any = js.native
   
   var ListIndex: Double = js.native
   
@@ -155,7 +155,7 @@ trait ComboBox extends StObject {
   
   val Valid: Boolean = js.native
   
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
   val _Font_Reserved: NewFont = js.native
 }

@@ -14,12 +14,12 @@ trait BackupSummary extends StObject {
   /**
     * Time at which the backup was created.
     */
-  var BackupCreationDateTime: js.UndefOr[typings.awsSdk.dynamodbMod.BackupCreationDateTime] = js.undefined
+  var BackupCreationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Time at which the automatic on-demand backup created by DynamoDB will expire. This SYSTEM on-demand backup expires automatically 35 days after its creation.
     */
-  var BackupExpiryDateTime: js.UndefOr[Date] = js.undefined
+  var BackupExpiryDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Name of the specified backup.
@@ -37,7 +37,7 @@ trait BackupSummary extends StObject {
   var BackupStatus: js.UndefOr[typings.awsSdk.dynamodbMod.BackupStatus] = js.undefined
   
   /**
-    * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
+    * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from Backup service.  
     */
   var BackupType: js.UndefOr[typings.awsSdk.dynamodbMod.BackupType] = js.undefined
   
@@ -69,11 +69,11 @@ object BackupSummary {
     
     inline def setBackupArnUndefined: Self = StObject.set(x, "BackupArn", js.undefined)
     
-    inline def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
+    inline def setBackupCreationDateTime(value: js.Date): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
     
     inline def setBackupCreationDateTimeUndefined: Self = StObject.set(x, "BackupCreationDateTime", js.undefined)
     
-    inline def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
+    inline def setBackupExpiryDateTime(value: js.Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
     
     inline def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
     

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IsInstanceUpgradeableResponse extends StObject {
   
+  /** The new image self link this instance will be upgraded to if calling the upgrade endpoint. This field will only be populated if field upgradeable is true. */
+  var upgradeImage: js.UndefOr[String] = js.undefined
+  
   /** Additional information about upgrade. */
   var upgradeInfo: js.UndefOr[String] = js.undefined
   
@@ -23,6 +26,10 @@ object IsInstanceUpgradeableResponse {
   }
   
   extension [Self <: IsInstanceUpgradeableResponse](x: Self) {
+    
+    inline def setUpgradeImage(value: String): Self = StObject.set(x, "upgradeImage", value.asInstanceOf[js.Any])
+    
+    inline def setUpgradeImageUndefined: Self = StObject.set(x, "upgradeImage", js.undefined)
     
     inline def setUpgradeInfo(value: String): Self = StObject.set(x, "upgradeInfo", value.asInstanceOf[js.Any])
     

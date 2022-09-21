@@ -6,21 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PropOptions extends StObject {
   
-  /** @deprecated: "attr" has been deprecated, please use "attribute" instead. */
-  var attr: js.UndefOr[String] = js.undefined
-  
   /**
     * The name of the associated DOM attribute.
     * Stencil uses different heuristics to determine the default name of the attribute,
     * but using this property, you can override the default behaviour.
     */
   var attribute: js.UndefOr[String | Null] = js.undefined
-  
-  /** @deprecated "connect" has been deprecated, please use ES modules and/or dynamic imports instead. */
-  var connect: js.UndefOr[String] = js.undefined
-  
-  /** @deprecated "context" has been deprecated. */
-  var context: js.UndefOr[String] = js.undefined
   
   /**
     * A Prop is _by default_ immutable from inside the component logic.
@@ -35,9 +26,6 @@ trait PropOptions extends StObject {
     * In this case you can set the `reflect` option to `true`, since it defaults to `false`:
     */
   var reflect: js.UndefOr[Boolean] = js.undefined
-  
-  /** @deprecated "reflectToAttr" has been deprecated, please use "reflect" instead. */
-  var reflectToAttr: js.UndefOr[Boolean] = js.undefined
 }
 object PropOptions {
   
@@ -48,33 +36,17 @@ object PropOptions {
   
   extension [Self <: PropOptions](x: Self) {
     
-    inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
-    
-    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
-    
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     inline def setAttributeNull: Self = StObject.set(x, "attribute", null)
     
     inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    inline def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
-    
-    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
-    
-    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-    
-    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-    
     inline def setMutable(value: Boolean): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
     
     inline def setMutableUndefined: Self = StObject.set(x, "mutable", js.undefined)
     
     inline def setReflect(value: Boolean): Self = StObject.set(x, "reflect", value.asInstanceOf[js.Any])
-    
-    inline def setReflectToAttr(value: Boolean): Self = StObject.set(x, "reflectToAttr", value.asInstanceOf[js.Any])
-    
-    inline def setReflectToAttrUndefined: Self = StObject.set(x, "reflectToAttr", js.undefined)
     
     inline def setReflectUndefined: Self = StObject.set(x, "reflect", js.undefined)
   }

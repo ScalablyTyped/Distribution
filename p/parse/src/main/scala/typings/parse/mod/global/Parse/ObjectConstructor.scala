@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectConstructor
   extends StObject
-     with ObjectStatic
+     with ObjectStatic[Object[Attributes]]
      with Instantiable0[Object[Attributes]]
      with Instantiable1[/* className */ String, Object[Attributes]]
      with Instantiable2[
@@ -22,6 +22,6 @@ trait ObjectConstructor
      with Instantiable3[
       (/* className */ String) | (/* className */ Unit), 
       (/* attributes */ Attributes) | (/* attributes */ Unit), 
-      /* options */ js.Any, 
+      /* options */ Any, 
       Object[Attributes]
     ]

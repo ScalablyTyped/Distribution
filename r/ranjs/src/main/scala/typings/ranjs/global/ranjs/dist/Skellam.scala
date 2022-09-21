@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Skellam")
 @js.native
-class Skellam ()
+open class Skellam ()
   extends typings.ranjs.mod.dist.Skellam {
   def this(mu1: Double) = this()
   def this(mu1: Double, mu2: Double) = this()

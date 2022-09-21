@@ -1,7 +1,7 @@
 
 # Scala.js typings for tarn
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 Simple and robust resource pool for node.js
@@ -10,15 +10,12 @@ Simple and robust resource pool for node.js
 | ------------------ | :-------------: |
 | Full name          | tarn |
 | Keywords           | pool, pooling, throttle |
-| # releases         | 5 |
-| # dependents       | 30 |
-| # downloads        | 23402705 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4798648.666666667 |
+| # stars            | 350.0 |
 
 ## Links
-- [Homepage](https://github.com/vincit/tarn.js#readme)
-- [Bugs](https://github.com/vincit/tarn.js/issues)
-- [Repository](https://github.com/vincit/tarn.js)
 - [Npm](https://www.npmjs.com/package/tarn)
     
 

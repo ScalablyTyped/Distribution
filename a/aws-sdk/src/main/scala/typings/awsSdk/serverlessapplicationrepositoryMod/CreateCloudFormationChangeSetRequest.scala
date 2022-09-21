@@ -118,7 +118,7 @@ object CreateCloudFormationChangeSetRequest {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: string*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: string*): Self = StObject.set(x, "Capabilities", js.Array(value*))
     
     inline def setChangeSetName(value: string): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
@@ -136,19 +136,19 @@ object CreateCloudFormationChangeSetRequest {
     
     inline def setNotificationArnsUndefined: Self = StObject.set(x, "NotificationArns", js.undefined)
     
-    inline def setNotificationArnsVarargs(value: string*): Self = StObject.set(x, "NotificationArns", js.Array(value :_*))
+    inline def setNotificationArnsVarargs(value: string*): Self = StObject.set(x, "NotificationArns", js.Array(value*))
     
     inline def setParameterOverrides(value: listOfParameterValue): Self = StObject.set(x, "ParameterOverrides", value.asInstanceOf[js.Any])
     
     inline def setParameterOverridesUndefined: Self = StObject.set(x, "ParameterOverrides", js.undefined)
     
-    inline def setParameterOverridesVarargs(value: ParameterValue*): Self = StObject.set(x, "ParameterOverrides", js.Array(value :_*))
+    inline def setParameterOverridesVarargs(value: ParameterValue*): Self = StObject.set(x, "ParameterOverrides", js.Array(value*))
     
     inline def setResourceTypes(value: listOfString): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     inline def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
-    inline def setResourceTypesVarargs(value: string*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: string*): Self = StObject.set(x, "ResourceTypes", js.Array(value*))
     
     inline def setRollbackConfiguration(value: RollbackConfiguration): Self = StObject.set(x, "RollbackConfiguration", value.asInstanceOf[js.Any])
     
@@ -164,7 +164,7 @@ object CreateCloudFormationChangeSetRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTemplateId(value: string): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     

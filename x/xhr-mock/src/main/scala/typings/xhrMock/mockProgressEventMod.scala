@@ -10,7 +10,7 @@ object mockProgressEventMod {
   
   @JSImport("xhr-mock/lib/MockProgressEvent", JSImport.Default)
   @js.native
-  class default protected () extends MockProgressEvent {
+  open class default protected () extends MockProgressEvent {
     def this(`type`: String) = this()
     def this(`type`: String, eventInitDict: ProgressEventInit) = this()
   }
@@ -34,6 +34,7 @@ object mockProgressEventMod {
     
     val loaded: Double = js.native
     
+    /* standard dom */
     @JSName("target")
     val target_ProgressEvent: EventTarget | Null = js.native
     

@@ -15,7 +15,7 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension extends StObj
   /**
     * Any extra fields exchanged between merchant and google.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Fulfillment info for the order.
@@ -61,9 +61,9 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseError*): Self = StObject.set(x, "errors", js.Array(value*))
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     

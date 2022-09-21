@@ -17,7 +17,7 @@ trait Pseudoterminal extends StObject {
   
   /**
     * Implement to handle incoming keystrokes in the terminal or when an extension calls
-    * [Terminal.sendText](#Terminal.sendText). `data` contains the keystrokes/text serialized into
+    * {@link Terminal.sendText}. `data` contains the keystrokes/text serialized into
     * their corresponding VT sequence representation.
     *
     * @param data The incoming data.
@@ -38,7 +38,29 @@ trait Pseudoterminal extends StObject {
   var handleInput: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.native
   
   /**
+    * An event that when fired allows changing the name of the terminal.
+    *
+    * Events fired before {@link Pseudoterminal.open} is called will be be ignored.
+    *
+    * **Example:** Change the terminal name to "My new terminal".
+    * ```typescript
+    * const writeEmitter = new vscode.EventEmitter<string>();
+    * const changeNameEmitter = new vscode.EventEmitter<string>();
+    * const pty: vscode.Pseudoterminal = {
+    *   onDidWrite: writeEmitter.event,
+    *   onDidChangeName: changeNameEmitter.event,
+    *   open: () => changeNameEmitter.fire('My new terminal'),
+    *   close: () => {}
+    * };
+    * vscode.window.createTerminal({ name: 'My terminal', pty });
+    * ```
+    */
+  var onDidChangeName: js.UndefOr[Event[String]] = js.native
+  
+  /**
     * An event that when fired will signal that the pty is closed and dispose of the terminal.
+    *
+    * Events fired before {@link Pseudoterminal.open} is called will be be ignored.
     *
     * A number can be used to provide an exit code for the terminal. Exit codes must be
     * positive and a non-zero exit codes signals failure which shows a notification for a
@@ -67,11 +89,13 @@ trait Pseudoterminal extends StObject {
   var onDidClose: js.UndefOr[Event[Unit | Double]] = js.native
   
   /**
-    * An event that when fired allows overriding the [dimensions](#Pseudoterminal.setDimensions) of the
+    * An event that when fired allows overriding the {@link Pseudoterminal.setDimensions dimensions} of the
     * terminal. Note that when set, the overridden dimensions will only take effect when they
     * are lower than the actual dimensions of the terminal (ie. there will never be a scroll
     * bar). Set to `undefined` for the terminal to go back to the regular dimensions (fit to
     * the size of the panel).
+    *
+    * Events fired before {@link Pseudoterminal.open} is called will be be ignored.
     *
     * **Example:** Override the dimensions of a terminal to 20 columns and 10 rows
     * ```typescript
@@ -94,12 +118,14 @@ trait Pseudoterminal extends StObject {
   
   /**
     * An event that when fired will write data to the terminal. Unlike
-    * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying child
+    * {@link Terminal.sendText} which sends text to the underlying child
     * pseudo-device (the child), this will write the text to parent pseudo-device (the
     * _terminal_ itself).
     *
     * Note writing `\n` will just move the cursor down 1 row, you need to write `\r` as well
     * to move the cursor to the left-most cell.
+    *
+    * Events fired before {@link Pseudoterminal.open} is called will be be ignored.
     *
     * **Example:** Write red text to the terminal
     * ```typescript
@@ -117,22 +143,20 @@ trait Pseudoterminal extends StObject {
     * writeEmitter.fire('\x1b[10;20H*');
     * ```
     */
-  def onDidWrite(listener: js.Function1[/* e */ String, js.Any]): Disposable = js.native
-  def onDidWrite(listener: js.Function1[/* e */ String, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidWrite(
-    listener: js.Function1[/* e */ String, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onDidWrite(listener: js.Function1[/* e */ String, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidWrite(listener: js.Function1[/* e */ String, Any]): Disposable = js.native
+  def onDidWrite(listener: js.Function1[/* e */ String, Any], thisArgs: Any): Disposable = js.native
+  def onDidWrite(listener: js.Function1[/* e */ String, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidWrite(listener: js.Function1[/* e */ String, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * An event that when fired will write data to the terminal. Unlike
-    * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying child
+    * {@link Terminal.sendText} which sends text to the underlying child
     * pseudo-device (the child), this will write the text to parent pseudo-device (the
     * _terminal_ itself).
     *
     * Note writing `\n` will just move the cursor down 1 row, you need to write `\r` as well
     * to move the cursor to the left-most cell.
+    *
+    * Events fired before {@link Pseudoterminal.open} is called will be be ignored.
     *
     * **Example:** Write red text to the terminal
     * ```typescript
@@ -166,10 +190,10 @@ trait Pseudoterminal extends StObject {
     * Implement to handle when the number of rows and columns that fit into the terminal panel
     * changes, for example when font size changes or when the panel is resized. The initial
     * state of a terminal's dimensions should be treated as `undefined` until this is triggered
-    * as the size of a terminal isn't know until it shows up in the user interface.
+    * as the size of a terminal isn't known until it shows up in the user interface.
     *
     * When dimensions are overridden by
-    * [onDidOverrideDimensions](#Pseudoterminal.onDidOverrideDimensions), `setDimensions` will
+    * {@link Pseudoterminal.onDidOverrideDimensions onDidOverrideDimensions}, `setDimensions` will
     * continue to be called with the regular panel dimensions, allowing the extension continue
     * to react dimension changes.
     *

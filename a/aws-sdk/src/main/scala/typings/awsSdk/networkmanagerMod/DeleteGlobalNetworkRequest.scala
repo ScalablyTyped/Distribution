@@ -9,17 +9,17 @@ trait DeleteGlobalNetworkRequest extends StObject {
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String
+  var GlobalNetworkId: typings.awsSdk.networkmanagerMod.GlobalNetworkId
 }
 object DeleteGlobalNetworkRequest {
   
-  inline def apply(GlobalNetworkId: String): DeleteGlobalNetworkRequest = {
+  inline def apply(GlobalNetworkId: GlobalNetworkId): DeleteGlobalNetworkRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGlobalNetworkRequest]
   }
   
   extension [Self <: DeleteGlobalNetworkRequest](x: Self) {
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
   }
 }

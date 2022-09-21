@@ -31,7 +31,7 @@ object Delta {
     
     inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }

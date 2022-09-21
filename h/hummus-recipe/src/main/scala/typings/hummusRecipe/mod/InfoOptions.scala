@@ -33,7 +33,7 @@ object InfoOptions {
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

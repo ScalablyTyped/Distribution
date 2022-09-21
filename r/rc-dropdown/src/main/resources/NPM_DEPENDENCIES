@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-dropdown" : "3.2.0"
+      "rc-dropdown" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-dropdown" : "3.2.0"
+      "rc-dropdown" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

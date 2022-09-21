@@ -34,7 +34,7 @@ object fabricTypesMod {
     /**
       * Overrides the root element type, defaults to `div`.
       */
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
     
@@ -72,7 +72,7 @@ object fabricTypesMod {
       
       inline def setApplyThemeUndefined: Self = StObject.set(x, "applyTheme", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

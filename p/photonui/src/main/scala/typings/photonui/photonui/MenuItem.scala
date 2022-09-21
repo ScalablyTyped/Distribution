@@ -17,5 +17,5 @@ trait MenuItem
   
   var text: String = js.native
   
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

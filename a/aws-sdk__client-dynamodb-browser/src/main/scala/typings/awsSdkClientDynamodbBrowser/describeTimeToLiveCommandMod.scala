@@ -16,7 +16,7 @@ object describeTimeToLiveCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/commands/DescribeTimeToLiveCommand", "DescribeTimeToLiveCommand")
   @js.native
-  class DescribeTimeToLiveCommand protected ()
+  open class DescribeTimeToLiveCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object describeTimeToLiveCommandMod {
     override val middlewareStack: MiddlewareStack[DescribeTimeToLiveInput, DescribeTimeToLiveOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DescribeTimeToLiveInput, DescribeTimeToLiveOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DescribeTimeToLiveInput, DescribeTimeToLiveOutput] = js.native
   }
 }

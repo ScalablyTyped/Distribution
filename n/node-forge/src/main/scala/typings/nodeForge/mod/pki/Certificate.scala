@@ -12,20 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Certificate extends StObject {
   
-  var extensions: js.Array[js.Any] = js.native
-  
-  /**
-    * Gets an issuer or subject attribute from its name, type, or short name.
-    *
-    * @param options a short name string or an object with:
-    *          shortName the short name for the attribute.
-    *          name the name for the attribute.
-    *          type the type for the attribute.
-    *
-    * @return the attribute.
-    */
-  def getAttribute(opts: String): Attribute | Null = js.native
-  def getAttribute(opts: GetAttributeOpts): Attribute | Null = js.native
+  var extensions: js.Array[Any] = js.native
   
   /**
     * Gets an extension by its name or id.
@@ -40,9 +27,31 @@ trait Certificate extends StObject {
   def getExtension(options: Id): js.UndefOr[js.Object] = js.native
   def getExtension(options: Name): js.UndefOr[js.Object] = js.native
   
+  /**
+    * Returns true if this certificate's issuer matches the passed
+    * certificate's subject. Note that no signature check is performed.
+    *
+    * @param parent the certificate to check.
+    *
+    * @return true if this certificate's issuer matches the passed certificate's
+    *         subject.
+    */
+  def isIssuer(parent: Certificate): Boolean = js.native
+  
+  /**
+    * Returns true if this certificate's subject matches the issuer of the
+    * given certificate). Note that not signature check is performed.
+    *
+    * @param child the certificate to check.
+    *
+    * @return true if this certificate's subject matches the passed
+    *         certificate's issuer.
+    */
+  def issued(child: Certificate): Boolean = js.native
+  
   var issuer: AddField = js.native
   
-  var md: js.Any = js.native
+  var md: Any = js.native
   
   var privateKey: PrivateKey = js.native
   
@@ -55,7 +64,7 @@ trait Certificate extends StObject {
     *
     * @param exts the array of extensions to use.
     */
-  def setExtensions(exts: js.Array[js.Any]): Unit = js.native
+  def setExtensions(exts: js.Array[Any]): Unit = js.native
   
   /**
     * Sets the issuer of this certificate.
@@ -75,7 +84,7 @@ trait Certificate extends StObject {
   def setSubject(attrs: js.Array[CertificateField]): Unit = js.native
   def setSubject(attrs: js.Array[CertificateField], uniqueId: String): Unit = js.native
   
-  var siginfo: js.Any = js.native
+  var siginfo: Any = js.native
   
   /**
     * Signs this certificate using the given private key.
@@ -86,7 +95,7 @@ trait Certificate extends StObject {
   def sign(key: PrivateKey): Unit = js.native
   def sign(key: PrivateKey, md: MessageDigest): Unit = js.native
   
-  var signature: js.Any = js.native
+  var signature: Any = js.native
   
   var subject: AddField = js.native
   

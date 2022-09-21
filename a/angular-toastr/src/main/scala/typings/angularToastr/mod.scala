@@ -40,7 +40,7 @@ object mod {
         
         var isOpened: Boolean
         
-        var open: IPromise[js.Any]
+        var open: IPromise[Any]
         
         var scope: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope
         
@@ -52,7 +52,7 @@ object mod {
           el: IAugmentedJQuery,
           iconClass: String,
           isOpened: Boolean,
-          open: IPromise[js.Any],
+          open: IPromise[Any],
           scope: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope,
           toastId: Double
         ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = {
@@ -68,7 +68,7 @@ object mod {
           
           inline def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
           
-          inline def setOpen(value: IPromise[js.Any]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+          inline def setOpen(value: IPromise[Any]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
           
           inline def setScope(value: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
           
@@ -86,7 +86,7 @@ object mod {
         
         var extendedTimeOut: js.UndefOr[Double] = js.undefined
         
-        var extraData: js.UndefOr[js.Any] = js.undefined
+        var extraData: js.UndefOr[Any] = js.undefined
         
         var messageClass: js.UndefOr[String] = js.undefined
         
@@ -143,7 +143,7 @@ object mod {
           
           inline def setExtendedTimeOutUndefined: Self = StObject.set(x, "extendedTimeOut", js.undefined)
           
-          inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+          inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
           
           inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
           

@@ -1,6 +1,5 @@
 package typings.materialUi.MaterialUI
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,33 +119,33 @@ object propTypes {
   
   trait utils extends StObject {
     
-    def addDays(date: Date, days: Double): Date
+    def addDays(date: js.Date, days: Double): js.Date
     
-    def addMonths(date: Date, months: Double): Date
+    def addMonths(date: js.Date, months: Double): js.Date
     
-    def addYears(date: Date, years: Double): Date
+    def addYears(date: js.Date, years: Double): js.Date
     
-    def getFirstDayOfMonth(date: Date): Date
+    def getFirstDayOfMonth(date: js.Date): js.Date
     
-    def getWeekArray(date: Date, firstDayOfWeek: Double): js.Array[js.Array[Date | Null]]
+    def getWeekArray(date: js.Date, firstDayOfWeek: Double): js.Array[js.Array[js.Date | Null]]
     
-    def getYear(date: Date): Double
+    def getYear(date: js.Date): Double
     
-    def monthDiff(date1: Date, date2: Date): Double
+    def monthDiff(date1: js.Date, date2: js.Date): Double
     
-    def setYear(date: Date, year: Double): Date
+    def setYear(date: js.Date, year: Double): js.Date
   }
   object utils {
     
     inline def apply(
-      addDays: (Date, Double) => Date,
-      addMonths: (Date, Double) => Date,
-      addYears: (Date, Double) => Date,
-      getFirstDayOfMonth: Date => Date,
-      getWeekArray: (Date, Double) => js.Array[js.Array[Date | Null]],
-      getYear: Date => Double,
-      monthDiff: (Date, Date) => Double,
-      setYear: (Date, Double) => Date
+      addDays: (js.Date, Double) => js.Date,
+      addMonths: (js.Date, Double) => js.Date,
+      addYears: (js.Date, Double) => js.Date,
+      getFirstDayOfMonth: js.Date => js.Date,
+      getWeekArray: (js.Date, Double) => js.Array[js.Array[js.Date | Null]],
+      getYear: js.Date => Double,
+      monthDiff: (js.Date, js.Date) => Double,
+      setYear: (js.Date, Double) => js.Date
     ): utils = {
       val __obj = js.Dynamic.literal(addDays = js.Any.fromFunction2(addDays), addMonths = js.Any.fromFunction2(addMonths), addYears = js.Any.fromFunction2(addYears), getFirstDayOfMonth = js.Any.fromFunction1(getFirstDayOfMonth), getWeekArray = js.Any.fromFunction2(getWeekArray), getYear = js.Any.fromFunction1(getYear), monthDiff = js.Any.fromFunction2(monthDiff), setYear = js.Any.fromFunction2(setYear))
       __obj.asInstanceOf[utils]
@@ -154,21 +153,21 @@ object propTypes {
     
     extension [Self <: utils](x: Self) {
       
-      inline def setAddDays(value: (Date, Double) => Date): Self = StObject.set(x, "addDays", js.Any.fromFunction2(value))
+      inline def setAddDays(value: (js.Date, Double) => js.Date): Self = StObject.set(x, "addDays", js.Any.fromFunction2(value))
       
-      inline def setAddMonths(value: (Date, Double) => Date): Self = StObject.set(x, "addMonths", js.Any.fromFunction2(value))
+      inline def setAddMonths(value: (js.Date, Double) => js.Date): Self = StObject.set(x, "addMonths", js.Any.fromFunction2(value))
       
-      inline def setAddYears(value: (Date, Double) => Date): Self = StObject.set(x, "addYears", js.Any.fromFunction2(value))
+      inline def setAddYears(value: (js.Date, Double) => js.Date): Self = StObject.set(x, "addYears", js.Any.fromFunction2(value))
       
-      inline def setGetFirstDayOfMonth(value: Date => Date): Self = StObject.set(x, "getFirstDayOfMonth", js.Any.fromFunction1(value))
+      inline def setGetFirstDayOfMonth(value: js.Date => js.Date): Self = StObject.set(x, "getFirstDayOfMonth", js.Any.fromFunction1(value))
       
-      inline def setGetWeekArray(value: (Date, Double) => js.Array[js.Array[Date | Null]]): Self = StObject.set(x, "getWeekArray", js.Any.fromFunction2(value))
+      inline def setGetWeekArray(value: (js.Date, Double) => js.Array[js.Array[js.Date | Null]]): Self = StObject.set(x, "getWeekArray", js.Any.fromFunction2(value))
       
-      inline def setGetYear(value: Date => Double): Self = StObject.set(x, "getYear", js.Any.fromFunction1(value))
+      inline def setGetYear(value: js.Date => Double): Self = StObject.set(x, "getYear", js.Any.fromFunction1(value))
       
-      inline def setMonthDiff(value: (Date, Date) => Double): Self = StObject.set(x, "monthDiff", js.Any.fromFunction2(value))
+      inline def setMonthDiff(value: (js.Date, js.Date) => Double): Self = StObject.set(x, "monthDiff", js.Any.fromFunction2(value))
       
-      inline def setSetYear(value: (Date, Double) => Date): Self = StObject.set(x, "setYear", js.Any.fromFunction2(value))
+      inline def setSetYear(value: (js.Date, Double) => js.Date): Self = StObject.set(x, "setYear", js.Any.fromFunction2(value))
     }
   }
   

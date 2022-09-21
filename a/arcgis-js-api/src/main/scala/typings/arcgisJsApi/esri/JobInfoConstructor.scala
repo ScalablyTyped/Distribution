@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JobInfoConstructor
   extends StObject
-     with Instantiable0[JobInfo]
+     with /**
+  * Represents information pertaining to the execution of an asynchronous [geoprocessor](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor.html) request on the server.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html)
+  */
+Instantiable0[JobInfo]
      with Instantiable1[/* properties */ JobInfoProperties, JobInfo] {
   
-  def fromJSON(json: js.Any): JobInfo = js.native
+  def fromJSON(json: Any): JobInfo = js.native
 }

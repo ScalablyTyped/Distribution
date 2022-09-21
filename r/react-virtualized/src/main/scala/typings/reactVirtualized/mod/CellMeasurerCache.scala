@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "CellMeasurerCache")
 @js.native
-class CellMeasurerCache ()
+open class CellMeasurerCache ()
   extends typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache {
   def this(params: CellMeasurerCacheParams) = this()
 }

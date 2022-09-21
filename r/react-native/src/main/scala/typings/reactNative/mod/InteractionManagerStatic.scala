@@ -22,8 +22,8 @@ trait InteractionManagerStatic extends StObject {
     * @param context - Optional context object to use when invoking the
     *   listener
     */
-  def addListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, js.Any]): EmitterSubscription = js.native
-  def addListener(eventType: String, listener: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): EmitterSubscription = js.native
+  def addListener(eventType: String, listener: js.Function1[/* repeated */ Any, Any]): EmitterSubscription = js.native
+  def addListener(eventType: String, listener: js.Function1[/* repeated */ Any, Any], context: Any): EmitterSubscription = js.native
   
   /**
     * Notify manager that an interaction has completed.
@@ -40,7 +40,7 @@ trait InteractionManagerStatic extends StObject {
     * Returns a cancellable
     */
   def runAfterInteractions(): Cancel = js.native
-  def runAfterInteractions(task: js.Function0[js.Any]): Cancel = js.native
+  def runAfterInteractions(task: js.Function0[Any]): Cancel = js.native
   def runAfterInteractions(task: PromiseTask): Cancel = js.native
   def runAfterInteractions(task: SimpleTask): Cancel = js.native
   

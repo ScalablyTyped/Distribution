@@ -15,7 +15,7 @@ object BgiFrame {
     
     def getIframe(element: HTMLElement): HTMLElement
     
-    def prop(n: js.Any): String
+    def prop(n: Any): String
     
     var s: ISettings
   }
@@ -25,7 +25,7 @@ object BgiFrame {
       createIframe: () => HTMLElement,
       fire: HTMLElement => Unit,
       getIframe: HTMLElement => HTMLElement,
-      prop: js.Any => String,
+      prop: Any => String,
       s: ISettings
     ): IBgiframe = {
       val __obj = js.Dynamic.literal(createIframe = js.Any.fromFunction0(createIframe), fire = js.Any.fromFunction1(fire), getIframe = js.Any.fromFunction1(getIframe), prop = js.Any.fromFunction1(prop), s = s.asInstanceOf[js.Any])
@@ -40,7 +40,7 @@ object BgiFrame {
       
       inline def setGetIframe(value: HTMLElement => HTMLElement): Self = StObject.set(x, "getIframe", js.Any.fromFunction1(value))
       
-      inline def setProp(value: js.Any => String): Self = StObject.set(x, "prop", js.Any.fromFunction1(value))
+      inline def setProp(value: Any => String): Self = StObject.set(x, "prop", js.Any.fromFunction1(value))
       
       inline def setS(value: ISettings): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }

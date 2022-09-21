@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.XMLChildNodeSuggestions")
 @js.native
-/* private */ class XMLChildNodeSuggestions ()
+/* private */ open class XMLChildNodeSuggestions ()
   extends StObject
      with typings.activexWord.Word.XMLChildNodeSuggestions {
   
@@ -20,10 +20,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexWord.Word.XMLChildNodeSuggestion = js.native
+  override def Item(Index: Any): typings.activexWord.Word.XMLChildNodeSuggestion = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.XMLChildNodeSuggestions_typekey")

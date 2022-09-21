@@ -44,14 +44,14 @@ trait MapsforgeEmbeddedPlugin extends StObject {
     * @param success Success callback. Gets the key of created marker. That key is the one you have to use if you want to delete it.
     * @param error Error callback
     */
-  def addMarker(arg: js.Array[js.Any]): Unit = js.native
-  def addMarker(arg: js.Array[js.Any], success: js.Function1[/* key */ Double, Unit]): Unit = js.native
+  def addMarker(arg: js.Array[Any]): Unit = js.native
+  def addMarker(arg: js.Array[Any], success: js.Function1[/* key */ Double, Unit]): Unit = js.native
   def addMarker(
-    arg: js.Array[js.Any],
+    arg: js.Array[Any],
     success: js.Function1[/* key */ Double, Unit],
     error: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
-  def addMarker(arg: js.Array[js.Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def addMarker(arg: js.Array[Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     *
@@ -63,14 +63,14 @@ trait MapsforgeEmbeddedPlugin extends StObject {
     * @param success Success callback. Gets the key of created polyline.
     * @param error Error callback
     */
-  def addPolyline(arg: js.Array[js.Any]): Unit = js.native
-  def addPolyline(arg: js.Array[js.Any], success: js.Function1[/* key */ Double, Unit]): Unit = js.native
+  def addPolyline(arg: js.Array[Any]): Unit = js.native
+  def addPolyline(arg: js.Array[Any], success: js.Function1[/* key */ Double, Unit]): Unit = js.native
   def addPolyline(
-    arg: js.Array[js.Any],
+    arg: js.Array[Any],
     success: js.Function1[/* key */ Double, Unit],
     error: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
-  def addPolyline(arg: js.Array[js.Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def addPolyline(arg: js.Array[Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Deletes the layer(markers or polylines) with the specified key from the map.
@@ -100,14 +100,10 @@ trait MapsforgeEmbeddedPlugin extends StObject {
     * @param success Success callback.
     * @param error Error callback
     */
-  def initialize(args: js.Array[js.Any]): Unit = js.native
-  def initialize(args: js.Array[js.Any], success: js.Function0[Unit]): Unit = js.native
-  def initialize(
-    args: js.Array[js.Any],
-    success: js.Function0[Unit],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
-  def initialize(args: js.Array[js.Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def initialize(args: js.Array[Any]): Unit = js.native
+  def initialize(args: js.Array[Any], success: js.Function0[Unit]): Unit = js.native
+  def initialize(args: js.Array[Any], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def initialize(args: js.Array[Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Stops and cleans the resources that have been used.
@@ -184,14 +180,10 @@ trait MapsforgeEmbeddedPlugin extends StObject {
     * @param success Success callback.
     * @param error Error callback
     */
-  def setOfflineTileLayer(args: js.Array[js.Any]): Unit = js.native
-  def setOfflineTileLayer(args: js.Array[js.Any], success: js.Function0[Unit]): Unit = js.native
-  def setOfflineTileLayer(
-    args: js.Array[js.Any],
-    success: js.Function0[Unit],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
-  def setOfflineTileLayer(args: js.Array[js.Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setOfflineTileLayer(args: js.Array[Any]): Unit = js.native
+  def setOfflineTileLayer(args: js.Array[Any], success: js.Function0[Unit]): Unit = js.native
+  def setOfflineTileLayer(args: js.Array[Any], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setOfflineTileLayer(args: js.Array[Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     *
@@ -199,14 +191,10 @@ trait MapsforgeEmbeddedPlugin extends StObject {
     * @param success Success callback.
     * @param error Error callback
     */
-  def setOnlineTileLayer(args: js.Array[js.Any]): Unit = js.native
-  def setOnlineTileLayer(args: js.Array[js.Any], success: js.Function0[Unit]): Unit = js.native
-  def setOnlineTileLayer(
-    args: js.Array[js.Any],
-    success: js.Function0[Unit],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
-  def setOnlineTileLayer(args: js.Array[js.Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setOnlineTileLayer(args: js.Array[Any]): Unit = js.native
+  def setOnlineTileLayer(args: js.Array[Any], success: js.Function0[Unit]): Unit = js.native
+  def setOnlineTileLayer(args: js.Array[Any], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setOnlineTileLayer(args: js.Array[Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Sets the zoom to the specified value (if it is between the zoom limits).

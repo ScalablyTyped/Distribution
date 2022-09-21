@@ -2,6 +2,7 @@ package typings.octokitRequestError
 
 import typings.octokitRequestError.octokitRequestErrorStrings.HttpError
 import typings.octokitRequestError.typesMod.RequestErrorOptions
+import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestOptionsMod.RequestOptions
 import typings.octokitTypes.responseHeadersMod.ResponseHeaders
 import typings.std.Error
@@ -13,7 +14,7 @@ object mod {
   
   @JSImport("@octokit/request-error", "RequestError")
   @js.native
-  class RequestError protected ()
+  open class RequestError protected ()
     extends StObject
        with Error {
     def this(message: String, statusCode: Double, options: RequestErrorOptions) = this()
@@ -27,12 +28,16 @@ object mod {
     
     /**
       * error response headers
+      *
+      * @deprecated `error.headers` is deprecated in favor of `error.response.headers`
       */
     var headers: ResponseHeaders = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
@@ -42,6 +47,11 @@ object mod {
       * Request options that lead to the error.
       */
     var request: RequestOptions = js.native
+    
+    /**
+      * Response object if a response was received
+      */
+    var response: js.UndefOr[OctokitResponse[Any, Double]] = js.native
     
     /**
       * http status code

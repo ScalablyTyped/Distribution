@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CloseTunnelRequest extends StObject {
   
   /**
-    * When set to true, AWS IoT Secure Tunneling deletes the tunnel data immediately.
+    * When set to true, IoT Secure Tunneling deletes the tunnel data immediately.
     */
   var delete: js.UndefOr[DeleteFlag] = js.undefined
   

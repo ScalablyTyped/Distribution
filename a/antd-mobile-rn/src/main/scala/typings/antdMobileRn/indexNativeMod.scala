@@ -15,7 +15,7 @@ object indexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/accordion/index.native", JSImport.Default)
   @js.native
-  class default () extends Accordion
+  open class default () extends Accordion
   object default {
     
     @JSImport("antd-mobile-rn/lib/accordion/index.native", JSImport.Default)
@@ -25,8 +25,8 @@ object indexNativeMod {
     /* static member */
     @JSImport("antd-mobile-rn/lib/accordion/index.native", "default.Panel")
     @js.native
-    def Panel: js.Any = js.native
-    inline def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
+    def Panel: Any = js.native
+    inline def Panel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -37,14 +37,13 @@ object indexNativeMod {
       
       @JSImport("antd-mobile-rn/lib/accordion/index.native", "default.defaultProps.styles")
       @js.native
-      def styles: js.Any = js.native
-      inline def styles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
+      def styles: Any = js.native
+      inline def styles_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait Accordion
-    extends Component[AccordionNativeProps, js.Any, js.Any] {
+  trait Accordion extends Component[AccordionNativeProps, Any, Any] {
     
     def onChange(idx: Double): Unit = js.native
     
@@ -113,20 +112,20 @@ object indexNativeMod {
   
   trait AccordionPanelProps extends StObject {
     
-    var header: js.Any
+    var header: Any
     
     var key: js.UndefOr[String] = js.undefined
   }
   object AccordionPanelProps {
     
-    inline def apply(header: js.Any): AccordionPanelProps = {
+    inline def apply(header: Any): AccordionPanelProps = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccordionPanelProps]
     }
     
     extension [Self <: AccordionPanelProps](x: Self) {
       
-      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

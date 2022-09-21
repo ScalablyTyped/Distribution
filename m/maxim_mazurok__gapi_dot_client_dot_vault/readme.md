@@ -1,19 +1,19 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_vault
 
-Typings are for version 1.0.20201030
+Typings are for version 1.0.20220728
 
 ## Library description:
-TypeScript typings for G Suite Vault API v1
+TypeScript typings for Google Vault API v1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.vault |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 1118 |
-| # stars            | 0 |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 832.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

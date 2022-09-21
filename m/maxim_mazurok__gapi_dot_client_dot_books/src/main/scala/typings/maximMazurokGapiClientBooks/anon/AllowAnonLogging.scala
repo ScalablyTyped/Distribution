@@ -106,7 +106,7 @@ object AllowAnonLogging {
     
     inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
-    inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
+    inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value*))
     
     inline def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
     
@@ -120,7 +120,7 @@ object AllowAnonLogging {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setComicsContent(value: Boolean): Self = StObject.set(x, "comicsContent", value.asInstanceOf[js.Any])
     
@@ -146,7 +146,7 @@ object AllowAnonLogging {
     
     inline def setIndustryIdentifiersUndefined: Self = StObject.set(x, "industryIdentifiers", js.undefined)
     
-    inline def setIndustryIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "industryIdentifiers", js.Array(value :_*))
+    inline def setIndustryIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "industryIdentifiers", js.Array(value*))
     
     inline def setInfoLink(value: String): Self = StObject.set(x, "infoLink", value.asInstanceOf[js.Any])
     

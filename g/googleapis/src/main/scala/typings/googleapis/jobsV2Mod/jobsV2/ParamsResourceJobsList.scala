@@ -1,9 +1,5 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,36 +9,22 @@ trait ParamsResourceJobsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Required.  The filter string specifies the jobs to be enumerated.
-    * Supported operator: =, AND  The fields eligible for filtering are:  *
-    * `companyName` (Required) * `requisitionId` (Optional)  Sample Query:  *
-    * companyName = "companies/123" * companyName = "companies/123" AND
-    * requisitionId = "req-1"
+    * Required. The filter string specifies the jobs to be enumerated. Supported operator: =, AND The fields eligible for filtering are: * `companyName` (Required) * `requisitionId` (Optional) Sample Query: * companyName = "companies/123" * companyName = "companies/123" AND requisitionId = "req-1"
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional.  If set to `true`, only Job.name, Job.requisition_id and
-    * Job.language_code will be returned.  A typical use case is to synchronize
-    * job repositories.  Defaults to false.
+    * Optional. If set to `true`, only Job.name, Job.requisition_id and Job.language_code will be returned. A typical use case is to synchronize job repositories. Defaults to false.
     */
   var idsOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Optional.  The maximum number of jobs to be returned per page of results.
-    * If ids_only is set to true, the maximum allowed page size is 1000.
-    * Otherwise, the maximum allowed page size is 100.  Default is 100 if empty
-    * or a number < 1 is specified.
+    * Optional. The maximum number of jobs to be returned per page of results. If ids_only is set to true, the maximum allowed page size is 1000. Otherwise, the maximum allowed page size is 100. Default is 100 if empty or a number < 1 is specified.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional.  The starting point of a query result.
+    * Optional. The starting point of a query result.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -54,10 +36,6 @@ object ParamsResourceJobsList {
   }
   
   extension [Self <: ParamsResourceJobsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

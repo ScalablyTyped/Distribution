@@ -1,5 +1,9 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.CalendarContainer
+import typings.carbonComponents.anon.PartialDatePickerOptions
+import typings.std.FocusEvent
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,40 +13,11 @@ object datePickerMod {
   
   @JSImport("carbon-components/components/date-picker/date-picker", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with DatePicker {
-    def this(element: js.Any, options: js.Any) = this()
-    
-    /* CompleteClass */
-    override def _addInputLogic(input: js.Any, index: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def _formatDate(date: js.Any): js.Any = js.native
-    
-    /* CompleteClass */
-    override def _handleBlur(event: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def _handleFocus(): Unit = js.native
-    
-    /* CompleteClass */
-    override def _initDatePicker(`type`: js.Any): js.Any = js.native
-    
-    /* CompleteClass */
-    override def _leftArrowHTML(): String = js.native
-    
-    /* CompleteClass */
-    override def _rightArrowHTML(): String = js.native
-    
-    /* CompleteClass */
-    override def _updateClassNames(hasCalendarContainerSelectedDates: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def _updateInputFields(selectedDates: js.Any, `type`: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def release(): js.Any = js.native
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialDatePickerOptions) = this()
   }
   object default {
     
@@ -53,72 +28,144 @@ object datePickerMod {
     /* static member */
     @JSImport("carbon-components/components/date-picker/date-picker", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait DatePicker extends StObject {
+  - Dropped any */ @js.native
+  trait DatePicker extends StObject {
     
-    def _addInputLogic(input: js.Any, index: js.Any): Unit
+    def _addInputLogic(input: HTMLElement, index: Double): Unit = js.native
     
-    def _formatDate(date: js.Any): js.Any
+    def _formatDate(date: js.Date): String = js.native
     
-    def _handleBlur(event: js.Any): Unit
+    def _handleBlur(event: FocusEvent): Unit = js.native
     
-    def _handleFocus(): Unit
+    def _handleFocus(): Unit = js.native
     
-    def _initDatePicker(`type`: js.Any): js.Any
+    def _initDatePicker(): Any = js.native
+    def _initDatePicker(`type`: String): Any = js.native
     
-    def _leftArrowHTML(): String
+    def _leftArrowHTML(): String = js.native
     
-    def _rightArrowHTML(): String
+    // returns a Flatpickr calendar instance
+    def _rightArrowHTML(): String = js.native
     
-    def _updateClassNames(hasCalendarContainerSelectedDates: js.Any): Unit
+    def _updateClassNames(hasCalendarContainerSelectedDates: CalendarContainer): Unit = js.native
     
-    def _updateInputFields(selectedDates: js.Any, `type`: js.Any): Unit
+    def _updateInputFields(selectedDates: js.Array[js.Date]): Unit = js.native
+    def _updateInputFields(selectedDates: js.Array[js.Date], `type`: String): Unit = js.native
     
-    def release(): js.Any
+    def release(): Any = js.native
   }
-  object DatePicker {
+  
+  trait DatePickerOptions extends StObject {
+    
+    var attribType: String
+    
+    var classCalendarContainer: String
+    
+    var classDay: String
+    
+    var classDays: String
+    
+    var classFlatpickrCurrentMonth: String
+    
+    var classFocused: String
+    
+    var classMonth: String
+    
+    var classVisuallyHidden: String
+    
+    var classWeekday: String
+    
+    var classWeekdays: String
+    
+    var dateFormat: String
+    
+    var selectorDatePickerIcon: String
+    
+    var selectorDatePickerInput: String
+    
+    var selectorDatePickerInputFrom: String
+    
+    var selectorDatePickerInputTo: String
+    
+    var selectorFlatpickrCurrentMonth: String
+    
+    var selectorFlatpickrMonthYearContainer: String
+    
+    var selectorFlatpickrYearContainer: String
+    
+    var selectorInit: String
+  }
+  object DatePickerOptions {
     
     inline def apply(
-      _addInputLogic: (js.Any, js.Any) => Unit,
-      _formatDate: js.Any => js.Any,
-      _handleBlur: js.Any => Unit,
-      _handleFocus: () => Unit,
-      _initDatePicker: js.Any => js.Any,
-      _leftArrowHTML: () => String,
-      _rightArrowHTML: () => String,
-      _updateClassNames: js.Any => Unit,
-      _updateInputFields: (js.Any, js.Any) => Unit,
-      release: () => js.Any
-    ): DatePicker = {
-      val __obj = js.Dynamic.literal(_addInputLogic = js.Any.fromFunction2(_addInputLogic), _formatDate = js.Any.fromFunction1(_formatDate), _handleBlur = js.Any.fromFunction1(_handleBlur), _handleFocus = js.Any.fromFunction0(_handleFocus), _initDatePicker = js.Any.fromFunction1(_initDatePicker), _leftArrowHTML = js.Any.fromFunction0(_leftArrowHTML), _rightArrowHTML = js.Any.fromFunction0(_rightArrowHTML), _updateClassNames = js.Any.fromFunction1(_updateClassNames), _updateInputFields = js.Any.fromFunction2(_updateInputFields), release = js.Any.fromFunction0(release))
-      __obj.asInstanceOf[DatePicker]
+      attribType: String,
+      classCalendarContainer: String,
+      classDay: String,
+      classDays: String,
+      classFlatpickrCurrentMonth: String,
+      classFocused: String,
+      classMonth: String,
+      classVisuallyHidden: String,
+      classWeekday: String,
+      classWeekdays: String,
+      dateFormat: String,
+      selectorDatePickerIcon: String,
+      selectorDatePickerInput: String,
+      selectorDatePickerInputFrom: String,
+      selectorDatePickerInputTo: String,
+      selectorFlatpickrCurrentMonth: String,
+      selectorFlatpickrMonthYearContainer: String,
+      selectorFlatpickrYearContainer: String,
+      selectorInit: String
+    ): DatePickerOptions = {
+      val __obj = js.Dynamic.literal(attribType = attribType.asInstanceOf[js.Any], classCalendarContainer = classCalendarContainer.asInstanceOf[js.Any], classDay = classDay.asInstanceOf[js.Any], classDays = classDays.asInstanceOf[js.Any], classFlatpickrCurrentMonth = classFlatpickrCurrentMonth.asInstanceOf[js.Any], classFocused = classFocused.asInstanceOf[js.Any], classMonth = classMonth.asInstanceOf[js.Any], classVisuallyHidden = classVisuallyHidden.asInstanceOf[js.Any], classWeekday = classWeekday.asInstanceOf[js.Any], classWeekdays = classWeekdays.asInstanceOf[js.Any], dateFormat = dateFormat.asInstanceOf[js.Any], selectorDatePickerIcon = selectorDatePickerIcon.asInstanceOf[js.Any], selectorDatePickerInput = selectorDatePickerInput.asInstanceOf[js.Any], selectorDatePickerInputFrom = selectorDatePickerInputFrom.asInstanceOf[js.Any], selectorDatePickerInputTo = selectorDatePickerInputTo.asInstanceOf[js.Any], selectorFlatpickrCurrentMonth = selectorFlatpickrCurrentMonth.asInstanceOf[js.Any], selectorFlatpickrMonthYearContainer = selectorFlatpickrMonthYearContainer.asInstanceOf[js.Any], selectorFlatpickrYearContainer = selectorFlatpickrYearContainer.asInstanceOf[js.Any], selectorInit = selectorInit.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DatePickerOptions]
     }
     
-    extension [Self <: DatePicker](x: Self) {
+    extension [Self <: DatePickerOptions](x: Self) {
       
-      inline def setRelease(value: () => js.Any): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+      inline def setAttribType(value: String): Self = StObject.set(x, "attribType", value.asInstanceOf[js.Any])
       
-      inline def set_addInputLogic(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_addInputLogic", js.Any.fromFunction2(value))
+      inline def setClassCalendarContainer(value: String): Self = StObject.set(x, "classCalendarContainer", value.asInstanceOf[js.Any])
       
-      inline def set_formatDate(value: js.Any => js.Any): Self = StObject.set(x, "_formatDate", js.Any.fromFunction1(value))
+      inline def setClassDay(value: String): Self = StObject.set(x, "classDay", value.asInstanceOf[js.Any])
       
-      inline def set_handleBlur(value: js.Any => Unit): Self = StObject.set(x, "_handleBlur", js.Any.fromFunction1(value))
+      inline def setClassDays(value: String): Self = StObject.set(x, "classDays", value.asInstanceOf[js.Any])
       
-      inline def set_handleFocus(value: () => Unit): Self = StObject.set(x, "_handleFocus", js.Any.fromFunction0(value))
+      inline def setClassFlatpickrCurrentMonth(value: String): Self = StObject.set(x, "classFlatpickrCurrentMonth", value.asInstanceOf[js.Any])
       
-      inline def set_initDatePicker(value: js.Any => js.Any): Self = StObject.set(x, "_initDatePicker", js.Any.fromFunction1(value))
+      inline def setClassFocused(value: String): Self = StObject.set(x, "classFocused", value.asInstanceOf[js.Any])
       
-      inline def set_leftArrowHTML(value: () => String): Self = StObject.set(x, "_leftArrowHTML", js.Any.fromFunction0(value))
+      inline def setClassMonth(value: String): Self = StObject.set(x, "classMonth", value.asInstanceOf[js.Any])
       
-      inline def set_rightArrowHTML(value: () => String): Self = StObject.set(x, "_rightArrowHTML", js.Any.fromFunction0(value))
+      inline def setClassVisuallyHidden(value: String): Self = StObject.set(x, "classVisuallyHidden", value.asInstanceOf[js.Any])
       
-      inline def set_updateClassNames(value: js.Any => Unit): Self = StObject.set(x, "_updateClassNames", js.Any.fromFunction1(value))
+      inline def setClassWeekday(value: String): Self = StObject.set(x, "classWeekday", value.asInstanceOf[js.Any])
       
-      inline def set_updateInputFields(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_updateInputFields", js.Any.fromFunction2(value))
+      inline def setClassWeekdays(value: String): Self = StObject.set(x, "classWeekdays", value.asInstanceOf[js.Any])
+      
+      inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorDatePickerIcon(value: String): Self = StObject.set(x, "selectorDatePickerIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorDatePickerInput(value: String): Self = StObject.set(x, "selectorDatePickerInput", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorDatePickerInputFrom(value: String): Self = StObject.set(x, "selectorDatePickerInputFrom", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorDatePickerInputTo(value: String): Self = StObject.set(x, "selectorDatePickerInputTo", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorFlatpickrCurrentMonth(value: String): Self = StObject.set(x, "selectorFlatpickrCurrentMonth", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorFlatpickrMonthYearContainer(value: String): Self = StObject.set(x, "selectorFlatpickrMonthYearContainer", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorFlatpickrYearContainer(value: String): Self = StObject.set(x, "selectorFlatpickrYearContainer", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
     }
   }
 }

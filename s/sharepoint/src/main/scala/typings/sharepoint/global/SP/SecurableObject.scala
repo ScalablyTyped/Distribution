@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.SecurableObject")
 @js.native
-class SecurableObject ()
+open class SecurableObject ()
   extends StObject
      with typings.sharepoint.SP.SecurableObject

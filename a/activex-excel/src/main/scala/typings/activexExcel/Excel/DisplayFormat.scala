@@ -29,9 +29,9 @@ trait DisplayFormat extends StObject {
   
   val FormulaHidden: Boolean | Null = js.native
   
-  val HorizontalAlignment: js.Any = js.native
+  val HorizontalAlignment: Any = js.native
   
-  val IndentLevel: js.Any = js.native
+  val IndentLevel: Any = js.native
   
   val Interior: typings.activexExcel.Excel.Interior = js.native
   
@@ -43,9 +43,9 @@ trait DisplayFormat extends StObject {
   
   val NumberFormatLocal: String | Null = js.native
   
-  val Orientation: js.Any = js.native
+  val Orientation: Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ReadingOrder: Double = js.native
   
@@ -53,7 +53,7 @@ trait DisplayFormat extends StObject {
   
   val Style: typings.activexExcel.Excel.Style = js.native
   
-  val VerticalAlignment: js.Any = js.native
+  val VerticalAlignment: Any = js.native
   
   val WrapText: Boolean = js.native
 }

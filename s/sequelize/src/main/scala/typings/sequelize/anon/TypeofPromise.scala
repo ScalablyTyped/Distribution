@@ -2,7 +2,7 @@ package typings.sequelize.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.bluebird.anon.Cancellation
+import typings.bluebird.anon.AsyncHooks
 import typings.bluebird.mod.Bluebird
 import typings.bluebird.mod.ConcurrencyOption
 import typings.bluebird.mod.CoroutineOptions
@@ -11,12 +11,11 @@ import typings.bluebird.mod.FromNodeOptions
 import typings.bluebird.mod.Inspection
 import typings.bluebird.mod.IterateFunction
 import typings.bluebird.mod.PromisifyAllOptions
+import typings.bluebird.mod.PromisifyAll_
 import typings.bluebird.mod.PromisifyOptions
 import typings.bluebird.mod.Resolvable
 import typings.bluebird.mod.ResolvableProps
 import typings.bluebird.mod.Resolver
-import typings.std.Error
-import typings.std.Iterable
 import typings.std.IterableIterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -64,10 +63,10 @@ trait TypeofPromise extends StObject {
   var Promise: Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
-        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
+        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any]], 
         Unit
       ], 
-      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+      /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
       /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
       Unit
     ], 
@@ -83,7 +82,7 @@ trait TypeofPromise extends StObject {
   def all[T1](values: js.Array[Resolvable[T1]]): Bluebird[js.Array[T1]] = js.native
   // array with values
   /* static member */
-  def all[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[js.Array[R]] = js.native
+  def all[R](values: Resolvable[js.Iterable[Resolvable[R]]]): Bluebird[js.Array[R]] = js.native
   /* static member */
   def all[T1, T2](values: js.Tuple2[Resolvable[T1], Resolvable[T2]]): Bluebird[js.Tuple2[T1, T2]] = js.native
   /* static member */
@@ -103,7 +102,7 @@ trait TypeofPromise extends StObject {
   /* static member */
   def allSettled[T1](values: js.Array[Resolvable[T1]]): Bluebird[js.Array[Inspection[T1]]] = js.native
   /* static member */
-  def allSettled[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[js.Array[Inspection[R]]] = js.native
+  def allSettled[R](values: Resolvable[js.Iterable[Resolvable[R]]]): Bluebird[js.Array[Inspection[R]]] = js.native
   /* static member */
   def allSettled[T1, T2](values: js.Tuple2[Resolvable[T1], Resolvable[T2]]): Bluebird[js.Tuple2[Inspection[T1], Inspection[T2]]] = js.native
   /* static member */
@@ -120,7 +119,7 @@ trait TypeofPromise extends StObject {
     * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
     */
   /* static member */
-  def any[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[R] = js.native
+  def any[R](values: Resolvable[js.Iterable[Resolvable[R]]]): Bluebird[R] = js.native
   
   /* static member */
   def attempt[R](fn: js.Function0[Resolvable[R]]): Bluebird[R] = js.native
@@ -129,7 +128,7 @@ trait TypeofPromise extends StObject {
     * Sugar for `Promise.resolve(undefined).bind(thisArg);`. See `.bind()`.
     */
   /* static member */
-  def bind(thisArg: js.Any): Bluebird[Unit] = js.native
+  def bind(thisArg: Any): Bluebird[Unit] = js.native
   
   /**
     * Cast the given `value` to a trusted promise.
@@ -146,7 +145,7 @@ trait TypeofPromise extends StObject {
     *  enables long stack traces and warnings.
     */
   /* static member */
-  def config(options: Cancellation): Unit = js.native
+  def config(options: AsyncHooks): Unit = js.native
   
   /**
     * Returns a function that can use `yield` to run asynchronous code synchronously.
@@ -157,37 +156,37 @@ trait TypeofPromise extends StObject {
   // TODO: After https://github.com/Microsoft/TypeScript/issues/2983 is implemented, we can use
   // the return type propagation of generators to automatically infer the return type T.
   /* static member */
-  def coroutine[T](generatorFunction: js.Function0[IterableIterator[js.Any]]): js.Function0[Bluebird[T]] = js.native
-  def coroutine[T](generatorFunction: js.Function0[IterableIterator[js.Any]], options: CoroutineOptions): js.Function0[Bluebird[T]] = js.native
+  def coroutine[T](generatorFunction: js.Function0[IterableIterator[Any]]): js.Function0[Bluebird[T]] = js.native
+  def coroutine[T](generatorFunction: js.Function0[IterableIterator[Any]], options: CoroutineOptions): js.Function0[Bluebird[T]] = js.native
   /* static member */
-  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[js.Any]]): js.Function1[/* a1 */ A1, Bluebird[T]] = js.native
-  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[js.Any]], options: CoroutineOptions): js.Function1[/* a1 */ A1, Bluebird[T]] = js.native
+  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[Any]]): js.Function1[/* a1 */ A1, Bluebird[T]] = js.native
+  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[Any]], options: CoroutineOptions): js.Function1[/* a1 */ A1, Bluebird[T]] = js.native
   /* static member */
-  def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = js.native
+  def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = js.native
   def coroutine[T, A1, A2](
-    generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]],
+    generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[Any]],
     options: CoroutineOptions
   ): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = js.native
   /* static member */
-  def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = js.native
+  def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3](
-    generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]],
+    generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[Any]],
     options: CoroutineOptions
   ): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = js.native
   /* static member */
   def coroutine[T, A1, A2, A3, A4](
-    generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[js.Any]]
+    generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[Any]]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4](
-    generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[js.Any]],
+    generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[Any]],
     options: CoroutineOptions
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, Bluebird[T]] = js.native
   /* static member */
   def coroutine[T, A1, A2, A3, A4, A5](
-    generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[js.Any]]
+    generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[Any]]
   ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4, A5](
-    generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[js.Any]],
+    generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[Any]],
     options: CoroutineOptions
   ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, Bluebird[T]] = js.native
   /* static member */
@@ -199,7 +198,7 @@ trait TypeofPromise extends StObject {
       /* a4 */ A4, 
       /* a5 */ A5, 
       /* a6 */ A6, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ]
   ): js.Function6[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, /* a6 */ A6, Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4, A5, A6](
@@ -210,7 +209,7 @@ trait TypeofPromise extends StObject {
       /* a4 */ A4, 
       /* a5 */ A5, 
       /* a6 */ A6, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ],
     options: CoroutineOptions
   ): js.Function6[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, /* a6 */ A6, Bluebird[T]] = js.native
@@ -224,7 +223,7 @@ trait TypeofPromise extends StObject {
       /* a5 */ A5, 
       /* a6 */ A6, 
       /* a7 */ A7, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ]
   ): js.Function7[
     /* a1 */ A1, 
@@ -245,7 +244,7 @@ trait TypeofPromise extends StObject {
       /* a5 */ A5, 
       /* a6 */ A6, 
       /* a7 */ A7, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ],
     options: CoroutineOptions
   ): js.Function7[
@@ -269,7 +268,7 @@ trait TypeofPromise extends StObject {
       /* a6 */ A6, 
       /* a7 */ A7, 
       /* a8 */ A8, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ]
   ): js.Function8[
     /* a1 */ A1, 
@@ -292,7 +291,7 @@ trait TypeofPromise extends StObject {
       /* a6 */ A6, 
       /* a7 */ A7, 
       /* a8 */ A8, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ],
     options: CoroutineOptions
   ): js.Function8[
@@ -335,7 +334,7 @@ trait TypeofPromise extends StObject {
     * If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
     */
   /* static member */
-  def each[R](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, js.Any]): Bluebird[js.Array[R]] = js.native
+  def each[R](values: Resolvable[js.Iterable[Resolvable[R]]], iterator: IterateFunction[R, Any]): Bluebird[js.Array[R]] = js.native
   
   /**
     * Filter an array, or a promise of an array,
@@ -348,25 +347,19 @@ trait TypeofPromise extends StObject {
     * *The original array is not modified.
     */
   /* static member */
-  def filter[R](values: Resolvable[Iterable[Resolvable[R]]], filterer: IterateFunction[R, Boolean]): Bluebird[js.Array[R]] = js.native
+  def filter[R](values: Resolvable[js.Iterable[Resolvable[R]]], filterer: IterateFunction[R, Boolean]): Bluebird[js.Array[R]] = js.native
   def filter[R](
-    values: Resolvable[Iterable[Resolvable[R]]],
+    values: Resolvable[js.Iterable[Resolvable[R]]],
     filterer: IterateFunction[R, Boolean],
     option: ConcurrencyOption
   ): Bluebird[js.Array[R]] = js.native
   
   /* static member */
   def fromCallback[T](
-    resolver: js.Function1[
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
-      Unit
-    ]
+    resolver: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], Unit]
   ): Bluebird[T] = js.native
   def fromCallback[T](
-    resolver: js.Function1[
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
-      Unit
-    ],
+    resolver: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], Unit],
     options: FromNodeOptions
   ): Bluebird[T] = js.native
   
@@ -375,16 +368,10 @@ trait TypeofPromise extends StObject {
     */
   /* static member */
   def fromNode[T](
-    resolver: js.Function1[
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
-      Unit
-    ]
+    resolver: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], Unit]
   ): Bluebird[T] = js.native
   def fromNode[T](
-    resolver: js.Function1[
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
-      Unit
-    ],
+    resolver: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], Unit],
     options: FromNodeOptions
   ): Bluebird[T] = js.native
   
@@ -396,10 +383,10 @@ trait TypeofPromise extends StObject {
   def getNewLibraryCopy(): Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
-        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
+        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any]], 
         Unit
       ], 
-      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+      /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
       /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
       Unit
     ], 
@@ -410,7 +397,7 @@ trait TypeofPromise extends StObject {
     * See if `value` is a trusted Promise.
     */
   /* static member */
-  def is(value: js.Any): Boolean = js.native
+  def is(value: Any): Boolean = js.native
   
   // variadic array
   /** @deprecated use .all instead */
@@ -479,9 +466,9 @@ trait TypeofPromise extends StObject {
     * *The original array is not modified.*
     */
   /* static member */
-  def map[R, U](values: Resolvable[Iterable[Resolvable[R]]], mapper: IterateFunction[R, U]): Bluebird[js.Array[U]] = js.native
+  def map[R, U](values: Resolvable[js.Iterable[Resolvable[R]]], mapper: IterateFunction[R, U]): Bluebird[js.Array[U]] = js.native
   def map[R, U](
-    values: Resolvable[Iterable[Resolvable[R]]],
+    values: Resolvable[js.Iterable[Resolvable[R]]],
     mapper: IterateFunction[R, U],
     options: ConcurrencyOption
   ): Bluebird[js.Array[U]] = js.native
@@ -497,7 +484,7 @@ trait TypeofPromise extends StObject {
     * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
     */
   /* static member */
-  def mapSeries[R, U](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, U]): Bluebird[js.Array[U]] = js.native
+  def mapSeries[R, U](values: Resolvable[js.Iterable[Resolvable[R]]], iterator: IterateFunction[R, U]): Bluebird[js.Array[U]] = js.native
   
   /**
     * Returns a new function that wraps the given function `fn`.
@@ -507,7 +494,7 @@ trait TypeofPromise extends StObject {
   /* static member */
   def method[R](fn: js.Function0[Resolvable[R]]): js.Function0[Bluebird[R]] = js.native
   /* static member */
-  def method[R](fn: js.Function1[/* repeated */ js.Any, Resolvable[R]]): js.Function1[/* repeated */ js.Any, Bluebird[R]] = js.native
+  def method[R](fn: js.Function1[/* repeated */ Any, Resolvable[R]]): js.Function1[/* repeated */ Any, Bluebird[R]] = js.native
   /* static member */
   def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, Resolvable[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]] = js.native
   /* static member */
@@ -531,10 +518,10 @@ trait TypeofPromise extends StObject {
   def noConflict(): Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
-        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
+        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any]], 
         Unit
       ], 
-      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+      /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
       /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
       Unit
     ], 
@@ -557,24 +544,24 @@ trait TypeofPromise extends StObject {
     * Passing no value or a non-function will have the effect of removing any kind of handling for possibly unhandled rejections.
     */
   /* static member */
-  def onPossiblyUnhandledRejection(handler: js.Function1[/* reason */ js.Any, js.Any]): Unit = js.native
-  def onPossiblyUnhandledRejection(handler: js.Function2[/* error */ Error, /* promise */ Bluebird[js.Any], Unit]): Unit = js.native
+  def onPossiblyUnhandledRejection(handler: js.Function1[/* reason */ Any, Any]): Unit = js.native
+  def onPossiblyUnhandledRejection(handler: js.Function2[/* error */ js.Error, /* promise */ Bluebird[Any], Unit]): Unit = js.native
   
   /* static member */
-  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Bluebird[js.Any]] = js.native
-  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit], options: PromisifyOptions): js.Function1[/* repeated */ js.Any, Bluebird[js.Any]] = js.native
+  def promisify(nodeFunction: js.Function1[/* repeated */ Any, Unit]): js.Function1[/* repeated */ Any, Bluebird[Any]] = js.native
+  def promisify(nodeFunction: js.Function1[/* repeated */ Any, Unit], options: PromisifyOptions): js.Function1[/* repeated */ Any, Bluebird[Any]] = js.native
   /* static member */
   def promisify[T, A1](
     func: js.Function2[
       /* arg1 */ A1, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): js.Function1[/* arg1 */ A1, Bluebird[T]] = js.native
   def promisify[T, A1](
     func: js.Function2[
       /* arg1 */ A1, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ],
     options: PromisifyOptions
@@ -584,7 +571,7 @@ trait TypeofPromise extends StObject {
     func: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[T]] = js.native
@@ -592,7 +579,7 @@ trait TypeofPromise extends StObject {
     func: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ],
     options: PromisifyOptions
@@ -603,7 +590,7 @@ trait TypeofPromise extends StObject {
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[T]] = js.native
@@ -612,7 +599,7 @@ trait TypeofPromise extends StObject {
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ],
     options: PromisifyOptions
@@ -624,7 +611,7 @@ trait TypeofPromise extends StObject {
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[T]] = js.native
@@ -634,7 +621,7 @@ trait TypeofPromise extends StObject {
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ],
     options: PromisifyOptions
@@ -647,7 +634,7 @@ trait TypeofPromise extends StObject {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[T]] = js.native
@@ -658,7 +645,7 @@ trait TypeofPromise extends StObject {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
+      /* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ],
     options: PromisifyOptions
@@ -674,8 +661,8 @@ trait TypeofPromise extends StObject {
     */
   // TODO how to model promisifyAll?
   /* static member */
-  def promisifyAll[T /* <: js.Object */](target: T): T = js.native
-  def promisifyAll[T /* <: js.Object */](target: T, options: PromisifyAllOptions[T]): T = js.native
+  def promisifyAll[T /* <: js.Object */](target: T): PromisifyAll_[T] = js.native
+  def promisifyAll[T /* <: js.Object */](target: T, options: PromisifyAllOptions[T]): PromisifyAll_[T] = js.native
   
   /**
     * Returns a function that will wrap the given `nodeFunction`.
@@ -691,17 +678,11 @@ trait TypeofPromise extends StObject {
   /* static member */
   @JSName("promisify")
   def promisify_T_Function0[T](
-    func: js.Function1[
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
-      Unit
-    ]
+    func: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], Unit]
   ): js.Function0[Bluebird[T]] = js.native
   @JSName("promisify")
   def promisify_T_Function0[T](
-    func: js.Function1[
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
-      Unit
-    ],
+    func: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ js.UndefOr[T], Unit], Unit],
     options: PromisifyOptions
   ): js.Function0[Bluebird[T]] = js.native
   
@@ -734,7 +715,7 @@ trait TypeofPromise extends StObject {
     * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
     */
   /* static member */
-  def race[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[R] = js.native
+  def race[R](values: Resolvable[js.Iterable[Resolvable[R]]]): Bluebird[R] = js.native
   
   /**
     * Reduce an array, or a promise of an array,
@@ -751,7 +732,7 @@ trait TypeofPromise extends StObject {
     */
   /* static member */
   def reduce[R, U](
-    values: Resolvable[Iterable[Resolvable[R]]],
+    values: Resolvable[js.Iterable[Resolvable[R]]],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
@@ -761,7 +742,7 @@ trait TypeofPromise extends StObject {
     ]
   ): Bluebird[U] = js.native
   def reduce[R, U](
-    values: Resolvable[Iterable[Resolvable[R]]],
+    values: Resolvable[js.Iterable[Resolvable[R]]],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
@@ -776,7 +757,7 @@ trait TypeofPromise extends StObject {
     * Create a promise that is rejected with the given `reason`.
     */
   /* static member */
-  def reject(reason: js.Any): Bluebird[scala.Nothing] = js.native
+  def reject(reason: Any): Bluebird[scala.Nothing] = js.native
   
   /**
     * Create a promise that is resolved with the given `value`. If `value` is a thenable or promise, the returned promise will assume its state.
@@ -792,7 +773,7 @@ trait TypeofPromise extends StObject {
     * @param scheduler Should be a function that asynchronously schedules
     *                  the calling of the passed in function
     */
-  def setScheduler(scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, Unit], Unit]): Unit = js.native
+  def setScheduler(scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ Any, Unit], Unit]): Unit = js.native
   
   /**
     * Initiate a competitive race between multiple promises or values (values will become immediately fulfilled promises).
@@ -805,7 +786,7 @@ trait TypeofPromise extends StObject {
     * *The original array is not modified.*
     */
   /* static member */
-  def some[R](values: Resolvable[Iterable[Resolvable[R]]], count: Double): Bluebird[js.Array[R]] = js.native
+  def some[R](values: Resolvable[js.Iterable[Resolvable[R]]], count: Double): Bluebird[js.Array[R]] = js.native
   
   /**
     * Start the chain of promises with `Promise.try`. Any synchronous exceptions will be turned into rejections on the returned promise.

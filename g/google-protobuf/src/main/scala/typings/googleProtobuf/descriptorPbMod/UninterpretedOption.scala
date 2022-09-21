@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption")
 @js.native
-class UninterpretedOption () extends Message {
+open class UninterpretedOption () extends Message {
   
   def addName(): NamePart = js.native
   def addName(value: Unit, index: Double): NamePart = js.native
@@ -47,11 +46,11 @@ class UninterpretedOption () extends Message {
   
   def getPositiveIntValue(): js.UndefOr[Double] = js.native
   
-  def getStringValue(): Uint8Array | String = js.native
+  def getStringValue(): js.typedarray.Uint8Array | String = js.native
   
   def getStringValue_asB64(): String = js.native
   
-  def getStringValue_asU8(): Uint8Array = js.native
+  def getStringValue_asU8(): js.typedarray.Uint8Array = js.native
   
   def hasAggregateValue(): Boolean = js.native
   
@@ -78,7 +77,7 @@ class UninterpretedOption () extends Message {
   def setPositiveIntValue(value: Double): UninterpretedOption = js.native
   
   def setStringValue(value: String): UninterpretedOption = js.native
-  def setStringValue(value: Uint8Array): UninterpretedOption = js.native
+  def setStringValue(value: js.typedarray.Uint8Array): UninterpretedOption = js.native
 }
 /* static members */
 object UninterpretedOption {
@@ -89,7 +88,7 @@ object UninterpretedOption {
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.NamePart")
   @js.native
-  class NamePart () extends Message {
+  open class NamePart () extends Message {
     
     def clearIsExtension(): NamePart = js.native
     
@@ -114,7 +113,7 @@ object UninterpretedOption {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[NamePart]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[NamePart]
     
     inline def deserializeBinaryFromReader(message: NamePart, reader: BinaryReader): NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[NamePart]
     
@@ -159,7 +158,7 @@ object UninterpretedOption {
     }
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
   
   inline def deserializeBinaryFromReader(message: UninterpretedOption, reader: BinaryReader): UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[UninterpretedOption]
   
@@ -192,13 +191,13 @@ object UninterpretedOption {
     
     var positiveIntValue: js.UndefOr[Double] = js.undefined
     
-    var stringValue: Uint8Array | String
+    var stringValue: js.typedarray.Uint8Array | String
   }
   object AsObject {
     
     inline def apply(
       nameList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject],
-      stringValue: Uint8Array | String
+      stringValue: js.typedarray.Uint8Array | String
     ): AsObject = {
       val __obj = js.Dynamic.literal(nameList = nameList.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
@@ -220,7 +219,7 @@ object UninterpretedOption {
       
       inline def setNameList(value: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject]): Self = StObject.set(x, "nameList", value.asInstanceOf[js.Any])
       
-      inline def setNameListVarargs(value: typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject*): Self = StObject.set(x, "nameList", js.Array(value :_*))
+      inline def setNameListVarargs(value: typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject*): Self = StObject.set(x, "nameList", js.Array(value*))
       
       inline def setNegativeIntValue(value: Double): Self = StObject.set(x, "negativeIntValue", value.asInstanceOf[js.Any])
       
@@ -230,7 +229,7 @@ object UninterpretedOption {
       
       inline def setPositiveIntValueUndefined: Self = StObject.set(x, "positiveIntValue", js.undefined)
       
-      inline def setStringValue(value: Uint8Array | String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+      inline def setStringValue(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     }
   }
 }

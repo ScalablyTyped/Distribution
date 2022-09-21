@@ -8,5 +8,5 @@ object getKeyPolicyMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/GetKeyPolicy", "GetKeyPolicy")
   @js.native
-  val GetKeyPolicy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetKeyPolicy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

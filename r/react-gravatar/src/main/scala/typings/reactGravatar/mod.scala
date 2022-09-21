@@ -13,7 +13,7 @@ object mod {
     */
   @JSImport("react-gravatar", JSImport.Namespace)
   @js.native
-  class ^ () extends Gravatar
+  open class ^ () extends Gravatar
   
   /* static member */
   @JSImport("react-gravatar", "defaultProps")
@@ -28,6 +28,7 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.reactGravatar.reactGravatarStrings.`404`
     - typings.reactGravatar.reactGravatarStrings.mm
+    - typings.reactGravatar.reactGravatarStrings.mp
     - typings.reactGravatar.reactGravatarStrings.identicon
     - typings.reactGravatar.reactGravatarStrings.monsterid
     - typings.reactGravatar.reactGravatarStrings.wavatar
@@ -47,6 +48,8 @@ object mod {
     
     inline def monsterid: typings.reactGravatar.reactGravatarStrings.monsterid = "monsterid".asInstanceOf[typings.reactGravatar.reactGravatarStrings.monsterid]
     
+    inline def mp: typings.reactGravatar.reactGravatarStrings.mp = "mp".asInstanceOf[typings.reactGravatar.reactGravatarStrings.mp]
+    
     inline def retro: typings.reactGravatar.reactGravatarStrings.retro = "retro".asInstanceOf[typings.reactGravatar.reactGravatarStrings.retro]
     
     inline def wavatar: typings.reactGravatar.reactGravatarStrings.wavatar = "wavatar".asInstanceOf[typings.reactGravatar.reactGravatarStrings.wavatar]
@@ -57,7 +60,7 @@ object mod {
     */
   @js.native
   trait Gravatar
-    extends Component[Props, js.Object, js.Any]
+    extends Component[Props, js.Object, Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in keyof react.react.DetailedHTMLProps<react.react.ImgHTMLAttributes<std.HTMLImageElement>, std.HTMLImageElement> ]:? react.react.DetailedHTMLProps<react.react.ImgHTMLAttributes<std.HTMLImageElement>, std.HTMLImageElement>[P]} */ trait Props extends StObject {

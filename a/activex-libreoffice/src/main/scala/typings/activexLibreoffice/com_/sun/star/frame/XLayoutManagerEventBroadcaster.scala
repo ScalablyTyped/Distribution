@@ -32,7 +32,7 @@ object XLayoutManagerEventBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addLayoutManagerEventListener: XLayoutManagerListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeLayoutManagerEventListener: XLayoutManagerListener => Unit
   ): XLayoutManagerEventBroadcaster = {

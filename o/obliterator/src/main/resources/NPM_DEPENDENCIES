@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "obliterator" : "1.6.1"
+      "obliterator" : "2.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "obliterator" : "1.6.1"
+      "obliterator" : "2.0.4"
     }
   ],
   "compile-devDependencies" : [

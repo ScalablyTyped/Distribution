@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for creating an operation
-  */
 trait SchemaCreateOperationRequest extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaCreateOperationRequest extends StObject {
   /**
     * The ID to use for this operation.
     */
-  var operationId: js.UndefOr[String] = js.undefined
+  var operationId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreateOperationRequest {
   
@@ -31,6 +28,8 @@ object SchemaCreateOperationRequest {
     inline def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    
+    inline def setOperationIdNull: Self = StObject.set(x, "operationId", null)
     
     inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     

@@ -9,12 +9,12 @@ trait AuditMitigationActionsTaskMetadata extends StObject {
   /**
     * The time at which the audit mitigation actions task was started.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique identifier for the task.
     */
-  var taskId: js.UndefOr[AuditMitigationActionsTaskId] = js.undefined
+  var taskId: js.UndefOr[MitigationActionsTaskId] = js.undefined
   
   /**
     * The current state of the audit mitigation actions task.
@@ -30,11 +30,11 @@ object AuditMitigationActionsTaskMetadata {
   
   extension [Self <: AuditMitigationActionsTaskMetadata](x: Self) {
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: MitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     

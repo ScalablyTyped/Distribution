@@ -10,10 +10,10 @@ object accountCircleMod {
   
   @JSImport("material-ui/svg-icons/action/account-circle", JSImport.Default)
   @js.native
-  class default () extends ActionAccountCircle
+  open class default () extends ActionAccountCircle
   
   @JSImport("material-ui/svg-icons/action/account-circle", "ActionAccountCircle")
   @js.native
-  class ActionAccountCircle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAccountCircle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

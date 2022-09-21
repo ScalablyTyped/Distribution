@@ -10,7 +10,7 @@ object negateBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/negateBlock", "NegateBlock")
   @js.native
-  class NegateBlock protected () extends NodeMaterialBlock {
+  open class NegateBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new NegateBlock
       * @param name defines the block name

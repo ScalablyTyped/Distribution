@@ -29,6 +29,6 @@ object StreamingComputationRanges {
     
     inline def setRangeAssignmentsUndefined: Self = StObject.set(x, "rangeAssignments", js.undefined)
     
-    inline def setRangeAssignmentsVarargs(value: KeyRangeDataDiskAssignment*): Self = StObject.set(x, "rangeAssignments", js.Array(value :_*))
+    inline def setRangeAssignmentsVarargs(value: KeyRangeDataDiskAssignment*): Self = StObject.set(x, "rangeAssignments", js.Array(value*))
   }
 }

@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.LegendLayer")
 @js.native
-class LegendLayerCls ()
+/**
+  * Define layer properties for the legend layers associated with a [PrintTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html)
+  */
+open class LegendLayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.LegendLayer {
   def this(properties: LegendLayerProperties) = this()

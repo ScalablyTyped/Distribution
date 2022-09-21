@@ -13,7 +13,7 @@ object priorityQueueMod {
   
   @JSImport("p-queue/dist/priority-queue", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with PriorityQueue
   
@@ -22,11 +22,11 @@ object priorityQueueMod {
     extends StObject
        with Queue[RunFunction, PriorityQueueOptions] {
     
-    /* private */ val _queue: js.Any = js.native
-    
     def enqueue(run: RunFunction, options: PartialPriorityQueueOptio): Unit = js.native
     
     def filter(options: ReadonlyPartialPriorityQu): js.Array[RunFunction] = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     @JSName("size")
     def size_MPriorityQueue: Double = js.native
@@ -34,22 +34,12 @@ object priorityQueueMod {
   
   trait PriorityQueueOptions
     extends StObject
-       with QueueAddOptions {
-    
-    var priority: js.UndefOr[Double] = js.undefined
-  }
+       with QueueAddOptions
   object PriorityQueueOptions {
     
     inline def apply(): PriorityQueueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PriorityQueueOptions]
-    }
-    
-    extension [Self <: PriorityQueueOptions](x: Self) {
-      
-      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
-      
-      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
 }

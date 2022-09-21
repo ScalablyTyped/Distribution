@@ -17,7 +17,7 @@ trait GetAnomaliesRequest extends StObject {
   var Feedback: js.UndefOr[AnomalyFeedbackType] = js.undefined
   
   /**
-    *  The number of entries a paginated response contains. 
+    * The number of entries a paginated response contains. 
     */
   var MaxResults: js.UndefOr[PageSize] = js.undefined
   
@@ -27,7 +27,7 @@ trait GetAnomaliesRequest extends StObject {
   var MonitorArn: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The token to retrieve the next set of results. AWS provides the token when the response from a previous call has more results than the maximum page size. 
+    * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size. 
     */
   var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   

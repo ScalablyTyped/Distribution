@@ -4,31 +4,47 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Set of primitive values supported by the system. Note that for the purposes
-  * of inspection or transformation, the number of bytes considered to comprise
-  * a &#39;Value&#39; is based on its representation as a UTF-8 encoded string.
-  * For example, if &#39;integer_value&#39; is set to 123456789, the number of
-  * bytes would be counted as 9, even though an int64 only holds up to 8 bytes
-  * of data.
-  */
 trait SchemaGooglePrivacyDlpV2Value extends StObject {
   
-  var booleanValue: js.UndefOr[Boolean] = js.undefined
+  /**
+    * boolean
+    */
+  var booleanValue: js.UndefOr[Boolean | Null] = js.undefined
   
+  /**
+    * date
+    */
   var dateValue: js.UndefOr[SchemaGoogleTypeDate] = js.undefined
   
-  var dayOfWeekValue: js.UndefOr[String] = js.undefined
+  /**
+    * day of week
+    */
+  var dayOfWeekValue: js.UndefOr[String | Null] = js.undefined
   
-  var floatValue: js.UndefOr[Double] = js.undefined
+  /**
+    * float
+    */
+  var floatValue: js.UndefOr[Double | Null] = js.undefined
   
-  var integerValue: js.UndefOr[String] = js.undefined
+  /**
+    * integer
+    */
+  var integerValue: js.UndefOr[String | Null] = js.undefined
   
-  var stringValue: js.UndefOr[String] = js.undefined
+  /**
+    * string
+    */
+  var stringValue: js.UndefOr[String | Null] = js.undefined
   
+  /**
+    * time of day
+    */
   var timeValue: js.UndefOr[SchemaGoogleTypeTimeOfDay] = js.undefined
   
-  var timestampValue: js.UndefOr[String] = js.undefined
+  /**
+    * timestamp
+    */
+  var timestampValue: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Value {
   
@@ -41,6 +57,8 @@ object SchemaGooglePrivacyDlpV2Value {
     
     inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
+    inline def setBooleanValueNull: Self = StObject.set(x, "booleanValue", null)
+    
     inline def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
     inline def setDateValue(value: SchemaGoogleTypeDate): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
@@ -49,17 +67,25 @@ object SchemaGooglePrivacyDlpV2Value {
     
     inline def setDayOfWeekValue(value: String): Self = StObject.set(x, "dayOfWeekValue", value.asInstanceOf[js.Any])
     
+    inline def setDayOfWeekValueNull: Self = StObject.set(x, "dayOfWeekValue", null)
+    
     inline def setDayOfWeekValueUndefined: Self = StObject.set(x, "dayOfWeekValue", js.undefined)
     
     inline def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
+    
+    inline def setFloatValueNull: Self = StObject.set(x, "floatValue", null)
     
     inline def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
     
     inline def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
+    inline def setIntegerValueNull: Self = StObject.set(x, "integerValue", null)
+    
     inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
     inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    
+    inline def setStringValueNull: Self = StObject.set(x, "stringValue", null)
     
     inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
@@ -68,6 +94,8 @@ object SchemaGooglePrivacyDlpV2Value {
     inline def setTimeValueUndefined: Self = StObject.set(x, "timeValue", js.undefined)
     
     inline def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampValueNull: Self = StObject.set(x, "timestampValue", null)
     
     inline def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }

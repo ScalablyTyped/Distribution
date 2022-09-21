@@ -24,24 +24,24 @@ object mod extends Shortcut {
   
   trait ValidateCustomResponse extends StObject {
     
-    var response: js.Any
+    var response: Any
   }
   object ValidateCustomResponse {
     
-    inline def apply(response: js.Any): ValidateCustomResponse = {
+    inline def apply(response: Any): ValidateCustomResponse = {
       val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidateCustomResponse]
     }
     
     extension [Self <: ValidateCustomResponse](x: Self) {
       
-      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
   trait ValidateResponse extends StObject {
     
-    var credentials: js.UndefOr[js.Any] = js.undefined
+    var credentials: js.UndefOr[Any] = js.undefined
     
     var isValid: Boolean
   }
@@ -54,7 +54,7 @@ object mod extends Shortcut {
     
     extension [Self <: ValidateResponse](x: Self) {
       
-      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       

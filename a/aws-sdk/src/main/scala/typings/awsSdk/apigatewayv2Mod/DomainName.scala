@@ -50,7 +50,7 @@ object DomainName {
     
     inline def setDomainNameConfigurationsUndefined: Self = StObject.set(x, "DomainNameConfigurations", js.undefined)
     
-    inline def setDomainNameConfigurationsVarargs(value: DomainNameConfiguration*): Self = StObject.set(x, "DomainNameConfigurations", js.Array(value :_*))
+    inline def setDomainNameConfigurationsVarargs(value: DomainNameConfiguration*): Self = StObject.set(x, "DomainNameConfigurations", js.Array(value*))
     
     inline def setMutualTlsAuthentication(value: MutualTlsAuthentication): Self = StObject.set(x, "MutualTlsAuthentication", value.asInstanceOf[js.Any])
     

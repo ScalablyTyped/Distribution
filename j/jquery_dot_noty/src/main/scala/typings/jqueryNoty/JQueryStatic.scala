@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JQueryStatic extends StObject {
   
-  def noty(notyOptions: NotyOptions): js.Any
+  def noty(notyOptions: NotyOptions): Any
   @JSName("noty")
   var noty_Original: NotyStatic
 }

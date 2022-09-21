@@ -14,18 +14,18 @@ trait Localization extends StObject {
     * can return before the fn has been completed, so you should consider fn to be running asynchronously (you can
     * use callbacks to synchronize with other actions, if needed).
     */
-  def Try(spec: js.Any): Unit = js.native
+  def Try(spec: Any): Unit = js.native
   
   /*The function (described in detail above) that returns the translated string for a given id, substituting the
     * given arguments as needed.
     */
   @JSName("_")
-  def _underscore(id: Double, message: String, args: js.Any*): Unit = js.native
+  def _underscore(id: Double, message: String, args: Any*): Unit = js.native
   
   /*Defines (or adds to) the translation data for the given locale and domain. The def is the definition to be
     * merged with the current translation data (if it exists) or to be used as the complete definition (if not).
     */
-  def addTranslation(locale: String, domain: String, `def`: js.Any): Unit = js.native
+  def addTranslation(locale: String, domain: String, `def`: Any): Unit = js.native
   
   /*The URL for the localization data files. This can be overridden for individual languages or domains
     * (see below). The default is [MathJax]/localization.
@@ -63,12 +63,12 @@ trait Localization extends StObject {
     * (http://unicode.org/cldr/charts/supplemental/language_plural_rules.html) for more information. This calls the
     * locale’s plural() method, if there is one, otherwise it defaults to the English version.
     */
-  def plural(value: js.Any): Double = js.native
+  def plural(value: Any): Double = js.native
   
   /*Sets the CSS for the given div to reflect the needs of the locale. In particular, it sets the font-family,
     * if needed, and the direction (for right-to-left languages).
     */
-  def setCSS(div: js.Any): js.Any = js.native
+  def setCSS(div: Any): Any = js.native
   
   /*Sets the selected locale to the given one*/
   def setLocale(locale: String): Unit = js.native
@@ -79,5 +79,5 @@ trait Localization extends StObject {
     * load when needed. After the file is loaded, they will contain the translation data as well. This is described
     * in more detail below.
     */
-  var strings: js.Any = js.native
+  var strings: Any = js.native
 }

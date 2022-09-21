@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PredicateFactory
   extends StObject
-     with Instantiable1[/* propertyOrValueOrPredicate */ js.Any, Predicate]
-     with Instantiable2[/* propertyOrValueOrPredicate */ js.Any, /* valueOrOperator */ js.Any, Predicate]
+     with Instantiable1[/* propertyOrValueOrPredicate */ Any, Predicate]
+     with Instantiable2[/* propertyOrValueOrPredicate */ Any, /* valueOrOperator */ Any, Predicate]
      with Instantiable3[
-      /* propertyOrValueOrPredicate */ js.Any, 
-      (/* valueOrOperator */ js.Any) | (/* valueOrOperator */ Unit), 
-      /* value */ js.Any, 
+      /* propertyOrValueOrPredicate */ Any, 
+      (/* valueOrOperator */ Any) | (/* valueOrOperator */ Unit), 
+      /* value */ Any, 
       Predicate
     ] {
   
-  def and(andStatements: js.Any): IExecutable = js.native
+  def and(andStatements: Any): IExecutable = js.native
   
-  def create(propertyOrPredicate: js.Any): IExecutable = js.native
-  def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = js.native
-  def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = js.native
-  def create(propertyOrPredicate: js.Any, operatorOrValue: Unit, value: js.Any): IExecutable = js.native
+  def create(propertyOrPredicate: Any): IExecutable = js.native
+  def create(propertyOrPredicate: Any, operatorOrValue: Any): IExecutable = js.native
+  def create(propertyOrPredicate: Any, operatorOrValue: Any, value: Any): IExecutable = js.native
+  def create(propertyOrPredicate: Any, operatorOrValue: Unit, value: Any): IExecutable = js.native
   
-  def or(orStatements: js.Array[js.Any]): IExecutable = js.native
+  def or(orStatements: js.Array[Any]): IExecutable = js.native
 }

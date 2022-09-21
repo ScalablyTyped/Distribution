@@ -35,6 +35,6 @@ object Recolor {
     
     inline def setRecolorStopsUndefined: Self = StObject.set(x, "recolorStops", js.undefined)
     
-    inline def setRecolorStopsVarargs(value: ColorStop*): Self = StObject.set(x, "recolorStops", js.Array(value :_*))
+    inline def setRecolorStopsVarargs(value: ColorStop*): Self = StObject.set(x, "recolorStops", js.Array(value*))
   }
 }

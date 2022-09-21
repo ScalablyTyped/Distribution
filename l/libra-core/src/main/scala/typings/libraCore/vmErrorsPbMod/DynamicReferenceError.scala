@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "DynamicReferenceError")
 @js.native
-class DynamicReferenceError () extends Message {
+open class DynamicReferenceError () extends Message {
   
   def getErrorCode(): DynamicReferenceErrorType = js.native
   
@@ -67,7 +66,7 @@ object DynamicReferenceError {
     /* 0 */ val UNKNOWNDYNAMICREFERENCEERROR: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.UNKNOWNDYNAMICREFERENCEERROR & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): DynamicReferenceError = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[DynamicReferenceError]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): DynamicReferenceError = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[DynamicReferenceError]
   
   inline def deserializeBinaryFromReader(message: DynamicReferenceError, reader: BinaryReader): DynamicReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[DynamicReferenceError]
   

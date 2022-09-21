@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Email.EmailMeetingInfo")
 @js.native
 /** Initializes a new instance of the EmailMeetingInfo class. */
-class EmailMeetingInfo ()
+open class EmailMeetingInfo ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailMeetingInfo {
   
@@ -20,7 +19,7 @@ class EmailMeetingInfo ()
   
   /** Gets or sets the start time for a meeting. */
   /* CompleteClass */
-  var appointmentOriginalStartTime: Date = js.native
+  var appointmentOriginalStartTime: js.Date = js.native
   
   /** Gets or sets the server identifier for the appointment associated with an email message. */
   /* CompleteClass */
@@ -52,7 +51,7 @@ class EmailMeetingInfo ()
   
   /** Gets or sets the proposed start time for the proposed meeting change. */
   /* CompleteClass */
-  var proposedStartTime: Date = js.native
+  var proposedStartTime: js.Date = js.native
   
   /** Gets or sets the recurrence parameters. */
   /* CompleteClass */
@@ -60,7 +59,7 @@ class EmailMeetingInfo ()
   
   /** Gets or sets the first instance of the recurrence pattern. */
   /* CompleteClass */
-  var recurrenceStartTime: Date = js.native
+  var recurrenceStartTime: js.Date = js.native
   
   /** Gets or sets the change number on the server that identifies the meeting email change number. */
   /* CompleteClass */
@@ -68,5 +67,5 @@ class EmailMeetingInfo ()
   
   /** Gets or sets the start time for the meeting. */
   /* CompleteClass */
-  var startTime: Date = js.native
+  var startTime: js.Date = js.native
 }

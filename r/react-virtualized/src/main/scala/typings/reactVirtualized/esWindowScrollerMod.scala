@@ -16,20 +16,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esWindowScrollerMod {
   
+  @JSImport("react-virtualized/dist/es/WindowScroller", JSImport.Default)
+  @js.native
+  open class default protected () extends WindowScroller {
+    def this(props: WindowScrollerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: WindowScrollerProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/WindowScroller", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/WindowScroller", "default.defaultProps")
+    @js.native
+    def defaultProps: OnResize = js.native
+    inline def defaultProps_=(x: OnResize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("react-virtualized/dist/es/WindowScroller", "IS_SCROLLING_TIMEOUT")
   @js.native
   val IS_SCROLLING_TIMEOUT: /* 150 */ Double = js.native
   
   @JSImport("react-virtualized/dist/es/WindowScroller", "WindowScroller")
   @js.native
-  class WindowScroller protected ()
-    extends PureComponent[WindowScrollerProps, WindowScrollerState, js.Any] {
+  open class WindowScroller protected () extends PureComponent[WindowScrollerProps, WindowScrollerState, Any] {
     def this(props: WindowScrollerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WindowScrollerProps, context: js.Any) = this()
+    def this(props: WindowScrollerProps, context: Any) = this()
     
     def updatePosition(): Unit = js.native
     def updatePosition(scrollElement: HTMLElement): Unit = js.native
@@ -75,7 +97,7 @@ object esWindowScrollerMod {
     * Check the following link if you want to know more
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Function responsible for rendering children.
@@ -91,7 +113,7 @@ object esWindowScrollerMod {
     var onScroll: js.UndefOr[js.Function1[/* params */ ScrollLeft, Unit]] = js.undefined
     
     /** Element to attach scroll event listeners. Defaults to window. */
-    var scrollElement: js.UndefOr[(Window & (/* globalThis */ js.Any)) | Element] = js.undefined
+    var scrollElement: js.UndefOr[(Window & (/* globalThis */ Any)) | Element] = js.undefined
     
     /**
       * Wait this amount of time after the last scroll event before resetting child `pointer-events`.
@@ -123,7 +145,7 @@ object esWindowScrollerMod {
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setScrollElement(value: (Window & (/* globalThis */ js.Any)) | Element): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
+      inline def setScrollElement(value: (Window & (/* globalThis */ Any)) | Element): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
       
       inline def setScrollElementUndefined: Self = StObject.set(x, "scrollElement", js.undefined)
       

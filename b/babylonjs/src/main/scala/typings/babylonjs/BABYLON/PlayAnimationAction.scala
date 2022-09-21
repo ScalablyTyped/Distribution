@@ -9,7 +9,7 @@ trait PlayAnimationAction
   extends StObject
      with Action {
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
   
   /**
     * Where the animation should start (animation frame)

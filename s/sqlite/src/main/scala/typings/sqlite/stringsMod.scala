@@ -13,5 +13,5 @@ object stringsMod {
   val ^ : js.Any = js.native
   
   inline def toSqlParams(sql: SqlType): SqlObj = ^.asInstanceOf[js.Dynamic].applyDynamic("toSqlParams")(sql.asInstanceOf[js.Any]).asInstanceOf[SqlObj]
-  inline def toSqlParams(sql: SqlType, params: js.Array[js.Any]): SqlObj = (^.asInstanceOf[js.Dynamic].applyDynamic("toSqlParams")(sql.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SqlObj]
+  inline def toSqlParams(sql: SqlType, params: js.Array[Any]): SqlObj = (^.asInstanceOf[js.Dynamic].applyDynamic("toSqlParams")(sql.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[SqlObj]
 }

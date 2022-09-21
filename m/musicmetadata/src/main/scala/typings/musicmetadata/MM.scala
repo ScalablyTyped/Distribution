@@ -1,6 +1,6 @@
 package typings.musicmetadata
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,11 +53,11 @@ object MM {
       
       inline def setAlbumartist(value: js.Array[String]): Self = StObject.set(x, "albumartist", value.asInstanceOf[js.Any])
       
-      inline def setAlbumartistVarargs(value: String*): Self = StObject.set(x, "albumartist", js.Array(value :_*))
+      inline def setAlbumartistVarargs(value: String*): Self = StObject.set(x, "albumartist", js.Array(value*))
       
       inline def setArtist(value: js.Array[String]): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
       
-      inline def setArtistVarargs(value: String*): Self = StObject.set(x, "artist", js.Array(value :_*))
+      inline def setArtistVarargs(value: String*): Self = StObject.set(x, "artist", js.Array(value*))
       
       inline def setDisk(value: NoOf): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
       
@@ -65,11 +65,11 @@ object MM {
       
       inline def setGenre(value: js.Array[String]): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
       
-      inline def setGenreVarargs(value: String*): Self = StObject.set(x, "genre", js.Array(value :_*))
+      inline def setGenreVarargs(value: String*): Self = StObject.set(x, "genre", js.Array(value*))
       
       inline def setPicture(value: js.Array[Picture]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
-      inline def setPictureVarargs(value: Picture*): Self = StObject.set(x, "picture", js.Array(value :_*))
+      inline def setPictureVarargs(value: Picture*): Self = StObject.set(x, "picture", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

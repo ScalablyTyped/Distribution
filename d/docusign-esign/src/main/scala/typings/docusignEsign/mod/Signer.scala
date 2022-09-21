@@ -642,7 +642,7 @@ object Signer {
     
     inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    inline def setCustomFieldsVarargs(value: String*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: String*): Self = StObject.set(x, "customFields", js.Array(value*))
     
     inline def setDeclinedDateTime(value: String): Self = StObject.set(x, "declinedDateTime", value.asInstanceOf[js.Any])
     
@@ -686,7 +686,7 @@ object Signer {
     
     inline def setDocumentVisibilityVarargs(
       value: (/* This object configures a recipient's read/write access to a document. */ DocumentVisibility)*
-    ): Self = StObject.set(x, "documentVisibility", js.Array(value :_*))
+    ): Self = StObject.set(x, "documentVisibility", js.Array(value*))
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
@@ -714,7 +714,7 @@ object Signer {
     
     inline def setExcludedDocumentsUndefined: Self = StObject.set(x, "excludedDocuments", js.undefined)
     
-    inline def setExcludedDocumentsVarargs(value: String*): Self = StObject.set(x, "excludedDocuments", js.Array(value :_*))
+    inline def setExcludedDocumentsVarargs(value: String*): Self = StObject.set(x, "excludedDocuments", js.Array(value*))
     
     inline def setFaxNumber(value: String): Self = StObject.set(x, "faxNumber", value.asInstanceOf[js.Any])
     
@@ -820,7 +820,7 @@ object Signer {
     
     inline def setRecipientAttachmentsUndefined: Self = StObject.set(x, "recipientAttachments", js.undefined)
     
-    inline def setRecipientAttachmentsVarargs(value: RecipientAttachment*): Self = StObject.set(x, "recipientAttachments", js.Array(value :_*))
+    inline def setRecipientAttachmentsVarargs(value: RecipientAttachment*): Self = StObject.set(x, "recipientAttachments", js.Array(value*))
     
     inline def setRecipientAuthenticationStatus(
       value: /* A complex element that contains information about a user's authentication status. */ AuthenticationStatus
@@ -832,7 +832,7 @@ object Signer {
     
     inline def setRecipientFeatureMetadataUndefined: Self = StObject.set(x, "recipientFeatureMetadata", js.undefined)
     
-    inline def setRecipientFeatureMetadataVarargs(value: FeatureAvailableMetadata*): Self = StObject.set(x, "recipientFeatureMetadata", js.Array(value :_*))
+    inline def setRecipientFeatureMetadataVarargs(value: FeatureAvailableMetadata*): Self = StObject.set(x, "recipientFeatureMetadata", js.Array(value*))
     
     inline def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
@@ -846,7 +846,7 @@ object Signer {
     
     inline def setRecipientSignatureProvidersUndefined: Self = StObject.set(x, "recipientSignatureProviders", js.undefined)
     
-    inline def setRecipientSignatureProvidersVarargs(value: RecipientSignatureProvider*): Self = StObject.set(x, "recipientSignatureProviders", js.Array(value :_*))
+    inline def setRecipientSignatureProvidersVarargs(value: RecipientSignatureProvider*): Self = StObject.set(x, "recipientSignatureProviders", js.Array(value*))
     
     inline def setRecipientSuppliesTabs(value: String): Self = StObject.set(x, "recipientSuppliesTabs", value.asInstanceOf[js.Any])
     
@@ -928,7 +928,7 @@ object Signer {
     
     inline def setSigningGroupUsersUndefined: Self = StObject.set(x, "signingGroupUsers", js.undefined)
     
-    inline def setSigningGroupUsersVarargs(value: UserInfo*): Self = StObject.set(x, "signingGroupUsers", js.Array(value :_*))
+    inline def setSigningGroupUsersVarargs(value: UserInfo*): Self = StObject.set(x, "signingGroupUsers", js.Array(value*))
     
     inline def setSmsAuthentication(value: RecipientSMSAuthentication): Self = StObject.set(x, "smsAuthentication", value.asInstanceOf[js.Any])
     
@@ -938,7 +938,7 @@ object Signer {
     
     inline def setSocialAuthenticationsUndefined: Self = StObject.set(x, "socialAuthentications", js.undefined)
     
-    inline def setSocialAuthenticationsVarargs(value: SocialAuthentication*): Self = StObject.set(x, "socialAuthentications", js.Array(value :_*))
+    inline def setSocialAuthenticationsVarargs(value: SocialAuthentication*): Self = StObject.set(x, "socialAuthentications", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

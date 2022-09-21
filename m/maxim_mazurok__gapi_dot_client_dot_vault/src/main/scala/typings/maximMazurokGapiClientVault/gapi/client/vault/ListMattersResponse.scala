@@ -25,7 +25,7 @@ object ListMattersResponse {
     
     inline def setMattersUndefined: Self = StObject.set(x, "matters", js.undefined)
     
-    inline def setMattersVarargs(value: Matter*): Self = StObject.set(x, "matters", js.Array(value :_*))
+    inline def setMattersVarargs(value: Matter*): Self = StObject.set(x, "matters", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -75,5 +75,5 @@ object componentsInjectIntlMod {
   
   type WrappedComponentProps[IntlPropName /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in IntlPropName ]: react-intl.react-intl/src/types.IntlShape}
-    */ typings.reactIntl.reactIntlStrings.WrappedComponentProps & TopLevel[js.Any]
+    */ typings.reactIntl.reactIntlStrings.WrappedComponentProps & TopLevel[Any]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__source-map
 
-Typings are for version 24.9.0
+Typings are for version 29.0.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/source-map |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 2 |
-| # downloads        | 436380733 |
-| # stars            | 0 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 7.509077666666667E7 |
+| # stars            | 39951.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

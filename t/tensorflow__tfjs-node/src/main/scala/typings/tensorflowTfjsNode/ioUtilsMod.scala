@@ -1,7 +1,6 @@
 package typings.tensorflowTfjsNode
 
-import typings.node.Buffer
-import typings.std.ArrayBuffer
+import typings.node.bufferMod.global.Buffer
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsNode.anon.DateSaved
 import org.scalablytyped.runtime.StObject
@@ -16,8 +15,8 @@ object ioUtilsMod {
   
   inline def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): DateSaved = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[DateSaved]
   
-  inline def toArrayBuffer(buf: js.Array[Buffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
-  inline def toArrayBuffer(buf: Buffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def toArrayBuffer(buf: js.Array[Buffer]): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
+  inline def toArrayBuffer(buf: Buffer): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
   
-  inline def toBuffer(ab: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ab.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def toBuffer(ab: js.typedarray.ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ab.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

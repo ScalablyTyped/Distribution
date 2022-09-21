@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAccountLimitsOutput extends StObject {
   
   /**
-    * An account limit structure that contain a list of AWS CloudFormation account limits and their values.
+    * An account limit structure that contain a list of CloudFormation account limits and their values.
     */
   var AccountLimits: js.UndefOr[AccountLimitList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeAccountLimitsOutput {
     
     inline def setAccountLimitsUndefined: Self = StObject.set(x, "AccountLimits", js.undefined)
     
-    inline def setAccountLimitsVarargs(value: AccountLimit*): Self = StObject.set(x, "AccountLimits", js.Array(value :_*))
+    inline def setAccountLimitsVarargs(value: AccountLimit*): Self = StObject.set(x, "AccountLimits", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

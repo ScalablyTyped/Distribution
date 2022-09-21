@@ -64,7 +64,7 @@ object BCCEmailArchive_ {
     
     inline def setBccEmailArchiveHistoryVarargs(
       value: (/* Contains details about the history of the BCC email archive configuration. */ BccEmailArchiveHistory)*
-    ): Self = StObject.set(x, "bccEmailArchiveHistory", js.Array(value :_*))
+    ): Self = StObject.set(x, "bccEmailArchiveHistory", js.Array(value*))
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

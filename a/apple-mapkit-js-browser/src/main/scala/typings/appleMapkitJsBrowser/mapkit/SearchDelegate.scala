@@ -1,6 +1,5 @@
 package typings.appleMapkitJsBrowser.mapkit
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait SearchDelegate extends StObject {
   /**
     * Invoked when an autocomplete request fails.
     */
-  var autocompleteDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+  var autocompleteDidError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
   
   /**
     * Upon successful completion of a search request, this method returns a data
@@ -32,7 +31,7 @@ trait SearchDelegate extends StObject {
   /**
     * Called when the search request fails.
     */
-  var searchDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+  var searchDidError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
 }
 object SearchDelegate {
   
@@ -47,7 +46,7 @@ object SearchDelegate {
     
     inline def setAutocompleteDidCompleteUndefined: Self = StObject.set(x, "autocompleteDidComplete", js.undefined)
     
-    inline def setAutocompleteDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "autocompleteDidError", js.Any.fromFunction1(value))
+    inline def setAutocompleteDidError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "autocompleteDidError", js.Any.fromFunction1(value))
     
     inline def setAutocompleteDidErrorUndefined: Self = StObject.set(x, "autocompleteDidError", js.undefined)
     
@@ -55,7 +54,7 @@ object SearchDelegate {
     
     inline def setSearchDidCompleteUndefined: Self = StObject.set(x, "searchDidComplete", js.undefined)
     
-    inline def setSearchDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
+    inline def setSearchDidError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
     
     inline def setSearchDidErrorUndefined: Self = StObject.set(x, "searchDidError", js.undefined)
   }

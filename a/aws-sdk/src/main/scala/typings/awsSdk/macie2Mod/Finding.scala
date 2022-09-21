@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Finding extends StObject {
   
   /**
-    * The unique identifier for the AWS account that the finding applies to. This is typically the account that owns the affected resource.
+    * The unique identifier for the Amazon Web Services account that the finding applies to. This is typically the account that owns the affected resource.
     */
   var accountId: js.UndefOr[string] = js.undefined
   
   /**
-    * Specifies whether the finding is archived.
+    * Specifies whether the finding is archived (suppressed).
     */
   var archived: js.UndefOr[boolean] = js.undefined
   
@@ -34,7 +34,7 @@ trait Finding extends StObject {
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the finding was created.
     */
-  var createdAt: js.UndefOr[timestampIso8601] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the finding.
@@ -47,7 +47,7 @@ trait Finding extends StObject {
   var id: js.UndefOr[string] = js.undefined
   
   /**
-    * The AWS partition that Amazon Macie created the finding in.
+    * The Amazon Web Services partition that Amazon Macie created the finding in.
     */
   var partition: js.UndefOr[string] = js.undefined
   
@@ -57,7 +57,7 @@ trait Finding extends StObject {
   var policyDetails: js.UndefOr[PolicyDetails] = js.undefined
   
   /**
-    * The AWS Region that Amazon Macie created the finding in.
+    * The Amazon Web Services Region that Amazon Macie created the finding in.
     */
   var region: js.UndefOr[string] = js.undefined
   
@@ -94,7 +94,7 @@ trait Finding extends StObject {
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the finding was last updated. For sensitive data findings, this value is the same as the value for the createdAt property. All sensitive data findings are considered new (unique) because they derive from individual classification jobs.
     */
-  var updatedAt: js.UndefOr[timestampIso8601] = js.undefined
+  var updatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object Finding {
   
@@ -125,7 +125,7 @@ object Finding {
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    inline def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -173,7 +173,7 @@ object Finding {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUpdatedAt(value: timestampIso8601): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }

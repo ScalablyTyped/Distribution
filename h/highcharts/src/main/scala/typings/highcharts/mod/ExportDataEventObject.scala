@@ -22,6 +22,6 @@ object ExportDataEventObject {
     
     inline def setDataRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "dataRows", value.asInstanceOf[js.Any])
     
-    inline def setDataRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "dataRows", js.Array(value :_*))
+    inline def setDataRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "dataRows", js.Array(value*))
   }
 }

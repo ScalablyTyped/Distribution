@@ -11,8 +11,7 @@ import typings.browserfs.fileSystemMod.BFSThreeArgCallback
 import typings.browserfs.fileSystemMod.BaseFileSystem
 import typings.browserfs.fileSystemMod.SynchronousFileSystem
 import typings.browserfs.preloadFileMod.default
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object keyValueFilesystemMod {
   
   @JSImport("browserfs/dist/node/generic/key_value_filesystem", "AsyncKeyValueFile")
   @js.native
-  class AsyncKeyValueFile protected ()
+  open class AsyncKeyValueFile protected ()
     extends default[AsyncKeyValueFileSystem]
        with File {
     def this(
@@ -154,10 +153,10 @@ object keyValueFilesystemMod {
     override def truncateSync(len: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimes(atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(atime: js.Date, mtime: js.Date): Unit = js.native
     
     /**
       * Write buffer to the file.
@@ -201,7 +200,7 @@ object keyValueFilesystemMod {
   
   @JSImport("browserfs/dist/node/generic/key_value_filesystem", "AsyncKeyValueFileSystem")
   @js.native
-  class AsyncKeyValueFileSystem () extends BaseFileSystem {
+  open class AsyncKeyValueFileSystem () extends BaseFileSystem {
     
     /**
       * Helper function for findINode.
@@ -210,7 +209,7 @@ object keyValueFilesystemMod {
       *   the parent.
       * @param cb Passed an error or the ID of the file's inode in the file system.
       */
-    /* private */ def _findINode(tx: js.Any, parent: js.Any, filename: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def _findINode(tx: Any, parent: Any, filename: Any, cb: Any): Any = js.native
     
     def _sync(p: String, data: Buffer, stats: typings.browserfs.nodeFsStatsMod.default, cb: BFSOneArgCallback): Unit = js.native
     
@@ -219,7 +218,7 @@ object keyValueFilesystemMod {
       * the exceedingly unlikely chance that we try to reuse a random GUID.
       * @param cb Passed an error or the GUID that the data was stored under.
       */
-    /* private */ def addNewNode(tx: js.Any, data: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def addNewNode(tx: Any, data: Any, cb: Any): Any = js.native
     
     /**
       * Commits a new file (well, a FILE or a DIRECTORY) to the file system with
@@ -231,7 +230,7 @@ object keyValueFilesystemMod {
       * @param data The data to store at the file's data node.
       * @param cb Passed an error or the Inode for the new file.
       */
-    /* private */ def commitNewFile(tx: js.Any, p: js.Any, `type`: js.Any, mode: js.Any, data: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def commitNewFile(tx: Any, p: Any, `type`: Any, mode: Any, data: Any, cb: Any): Any = js.native
     
     /**
       * Delete all contents stored in the file system.
@@ -244,19 +243,19 @@ object keyValueFilesystemMod {
       * @param cb Passed an error or the Inode of the path p.
       * @todo memoize/cache
       */
-    /* private */ def findINode(tx: js.Any, p: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def findINode(tx: Any, p: Any, cb: Any): Any = js.native
     
     /**
       * Given a path to a directory, retrieves the corresponding INode and
       * directory listing.
       */
-    /* private */ def findINodeAndDirListing(tx: js.Any, p: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def findINodeAndDirListing(tx: Any, p: Any, cb: Any): Any = js.native
     
     /**
       * Given the Inode of a directory, retrieves the corresponding directory
       * listing.
       */
-    /* private */ def getDirListing(tx: js.Any, p: js.Any, inode: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def getDirListing(tx: Any, p: Any, inode: Any, cb: Any): Any = js.native
     
     /**
       * Given the ID of a node, retrieves the corresponding Inode.
@@ -265,7 +264,7 @@ object keyValueFilesystemMod {
       * @param id The ID to look up.
       * @param cb Passed an error or the inode under the given id.
       */
-    /* private */ def getINode(tx: js.Any, p: js.Any, id: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def getINode(tx: Any, p: Any, id: Any, cb: Any): Any = js.native
     
     def getName(): String = js.native
     
@@ -280,7 +279,7 @@ object keyValueFilesystemMod {
     /**
       * Checks if the root directory exists. Creates it if it doesn't.
       */
-    /* private */ def makeRootDirectory(cb: js.Any): js.Any = js.native
+    /* private */ def makeRootDirectory(cb: Any): Any = js.native
     
     /**
       * Remove all traces of the given path from the file system.
@@ -288,7 +287,7 @@ object keyValueFilesystemMod {
       * @param isDir Does the path belong to a directory, or a file?
       * @todo Update mtime.
       */
-    /* private */ def removeEntry(p: js.Any, isDir: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def removeEntry(p: Any, isDir: Any, cb: Any): Any = js.native
     
     /* protected */ var store: AsyncKeyValueStore = js.native
     
@@ -310,7 +309,7 @@ object keyValueFilesystemMod {
   
   @JSImport("browserfs/dist/node/generic/key_value_filesystem", "SimpleSyncRWTransaction")
   @js.native
-  class SimpleSyncRWTransaction protected ()
+  open class SimpleSyncRWTransaction protected ()
     extends StObject
        with SyncKeyValueRWTransaction {
     def this(store: SimpleSyncStore) = this()
@@ -347,18 +346,18 @@ object keyValueFilesystemMod {
       * Marks the given key as modified, and stashes its value if it has not been
       * stashed already.
       */
-    /* private */ def markModified(key: js.Any): js.Any = js.native
+    /* private */ def markModified(key: Any): Any = js.native
     
     /**
       * List of keys modified in this transaction, if any.
       */
-    /* private */ var modifiedKeys: js.Any = js.native
+    /* private */ var modifiedKeys: Any = js.native
     
     /**
       * Stores data in the keys we modify prior to modifying them.
       * Allows us to roll back commits.
       */
-    /* private */ var originalData: js.Any = js.native
+    /* private */ var originalData: Any = js.native
     
     /**
       * Adds the data to the store under the given key.
@@ -377,14 +376,14 @@ object keyValueFilesystemMod {
       * prevent needless `get` requests if the program modifies the data later
       * on during the transaction.
       */
-    /* private */ def stashOldValue(key: js.Any, value: js.Any): js.Any = js.native
+    /* private */ def stashOldValue(key: Any, value: Any): Any = js.native
     
-    /* private */ var store: js.Any = js.native
+    /* private */ var store: Any = js.native
   }
   
   @JSImport("browserfs/dist/node/generic/key_value_filesystem", "SyncKeyValueFile")
   @js.native
-  class SyncKeyValueFile protected ()
+  open class SyncKeyValueFile protected ()
     extends default[SyncKeyValueFileSystem]
        with File {
     def this(
@@ -517,10 +516,10 @@ object keyValueFilesystemMod {
     override def truncateSync(len: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimes(atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(atime: js.Date, mtime: js.Date): Unit = js.native
     
     /**
       * Write buffer to the file.
@@ -564,7 +563,7 @@ object keyValueFilesystemMod {
   
   @JSImport("browserfs/dist/node/generic/key_value_filesystem", "SyncKeyValueFileSystem")
   @js.native
-  class SyncKeyValueFileSystem protected () extends SynchronousFileSystem {
+  open class SyncKeyValueFileSystem protected () extends SynchronousFileSystem {
     def this(options: SyncKeyValueFileSystemOptions) = this()
     
     /**
@@ -574,7 +573,7 @@ object keyValueFilesystemMod {
       *   the parent.
       * @return string The ID of the file's inode in the file system.
       */
-    /* private */ def _findINode(tx: js.Any, parent: js.Any, filename: js.Any): js.Any = js.native
+    /* private */ def _findINode(tx: Any, parent: Any, filename: Any): Any = js.native
     
     def _syncSync(p: String, data: Buffer, stats: typings.browserfs.nodeFsStatsMod.default): Unit = js.native
     
@@ -583,7 +582,7 @@ object keyValueFilesystemMod {
       * the exceedingly unlikely chance that we try to reuse a random GUID.
       * @return The GUID that the data was stored under.
       */
-    /* private */ def addNewNode(tx: js.Any, data: js.Any): js.Any = js.native
+    /* private */ def addNewNode(tx: Any, data: Any): Any = js.native
     
     /**
       * Commits a new file (well, a FILE or a DIRECTORY) to the file system with
@@ -595,7 +594,7 @@ object keyValueFilesystemMod {
       * @param data The data to store at the file's data node.
       * @return The Inode for the new file.
       */
-    /* private */ def commitNewFile(tx: js.Any, p: js.Any, `type`: js.Any, mode: js.Any, data: js.Any): js.Any = js.native
+    /* private */ def commitNewFile(tx: Any, p: Any, `type`: Any, mode: Any, data: Any): Any = js.native
     
     /**
       * Delete all contents stored in the file system.
@@ -608,13 +607,13 @@ object keyValueFilesystemMod {
       * @return The Inode of the path p.
       * @todo memoize/cache
       */
-    /* private */ def findINode(tx: js.Any, p: js.Any): js.Any = js.native
+    /* private */ def findINode(tx: Any, p: Any): Any = js.native
     
     /**
       * Given the Inode of a directory, retrieves the corresponding directory
       * listing.
       */
-    /* private */ def getDirListing(tx: js.Any, p: js.Any, inode: js.Any): js.Any = js.native
+    /* private */ def getDirListing(tx: Any, p: Any, inode: Any): Any = js.native
     
     /**
       * Given the ID of a node, retrieves the corresponding Inode.
@@ -622,7 +621,7 @@ object keyValueFilesystemMod {
       * @param p The corresponding path to the file (used for error messages).
       * @param id The ID to look up.
       */
-    /* private */ def getINode(tx: js.Any, p: js.Any, id: js.Any): js.Any = js.native
+    /* private */ def getINode(tx: Any, p: Any, id: Any): Any = js.native
     
     def getName(): String = js.native
     
@@ -631,7 +630,7 @@ object keyValueFilesystemMod {
     /**
       * Checks if the root directory exists. Creates it if it doesn't.
       */
-    /* private */ def makeRootDirectory(): js.Any = js.native
+    /* private */ def makeRootDirectory(): Any = js.native
     
     def openFileSync(p: String, flag: FileFlag): File = js.native
     
@@ -641,9 +640,9 @@ object keyValueFilesystemMod {
       * @param isDir Does the path belong to a directory, or a file?
       * @todo Update mtime.
       */
-    /* private */ def removeEntry(p: js.Any, isDir: js.Any): js.Any = js.native
+    /* private */ def removeEntry(p: Any, isDir: Any): Any = js.native
     
-    /* private */ var store: js.Any = js.native
+    /* private */ var store: Any = js.native
     
     def supportsProps(): Boolean = js.native
     

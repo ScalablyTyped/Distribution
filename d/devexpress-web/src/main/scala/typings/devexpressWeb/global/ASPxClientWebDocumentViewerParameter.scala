@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientWebDocumentViewerParameter")
 @js.native
-class ASPxClientWebDocumentViewerParameter ()
+open class ASPxClientWebDocumentViewerParameter ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebDocumentViewerParameter {
   
@@ -17,8 +17,8 @@ class ASPxClientWebDocumentViewerParameter ()
   var isMultiValue: Boolean = js.native
   
   /* CompleteClass */
-  var `type`: js.Any = js.native
+  var `type`: Any = js.native
   
   /* CompleteClass */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

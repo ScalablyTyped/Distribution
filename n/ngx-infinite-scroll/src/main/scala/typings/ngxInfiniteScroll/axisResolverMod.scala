@@ -6,27 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object axisResolverMod {
   
-  @JSImport("ngx-infinite-scroll/src/services/axis-resolver", "AxisResolver")
+  @JSImport("ngx-infinite-scroll/lib/services/axis-resolver", "AxisResolver")
   @js.native
-  class AxisResolver () extends StObject {
+  open class AxisResolver () extends StObject {
     def this(vertical: Boolean) = this()
     
-    def clientHeightKey(): js.Any = js.native
+    def clientHeightKey(): Any = js.native
     
-    def offsetHeightKey(): js.Any = js.native
+    def offsetHeightKey(): Any = js.native
     
-    def offsetTopKey(): js.Any = js.native
+    def offsetTopKey(): Any = js.native
     
-    def pageYOffsetKey(): js.Any = js.native
+    def pageYOffsetKey(): Any = js.native
     
-    /* private */ var propsMap: js.Any = js.native
+    /* private */ var propsMap: Any = js.native
     
-    def scrollHeightKey(): js.Any = js.native
+    def scrollHeightKey(): Any = js.native
     
-    def scrollTopKey(): js.Any = js.native
+    def scrollTopKey(): Any = js.native
     
-    def topKey(): js.Any = js.native
+    def topKey(): Any = js.native
     
-    /* private */ var vertical: js.Any = js.native
+    /* private */ var vertical: Any = js.native
   }
 }

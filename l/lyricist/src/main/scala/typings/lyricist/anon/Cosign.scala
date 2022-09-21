@@ -10,7 +10,7 @@ trait Cosign extends StObject {
   
   var pyong: Boolean
   
-  var vote: js.UndefOr[js.Any] = js.undefined
+  var vote: js.UndefOr[Any] = js.undefined
 }
 object Cosign {
   
@@ -25,7 +25,7 @@ object Cosign {
     
     inline def setPyong(value: Boolean): Self = StObject.set(x, "pyong", value.asInstanceOf[js.Any])
     
-    inline def setVote(value: js.Any): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
+    inline def setVote(value: Any): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
     
     inline def setVoteUndefined: Self = StObject.set(x, "vote", js.undefined)
   }

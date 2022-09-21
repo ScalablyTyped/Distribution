@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UntagResourceRequest extends StObject {
   
   /**
-    * [Required] The ARN of a resource that can be tagged.
+    * The ARN of a resource that can be tagged.
     */
   var resourceArn: String
   
   /**
-    * [Required] The Tag keys to delete.
+    * The Tag keys to delete.
     */
   var tagKeys: ListOfString
 }
@@ -29,6 +29,6 @@ object UntagResourceRequest {
     
     inline def setTagKeys(value: ListOfString): Self = StObject.set(x, "tagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value*))
   }
 }

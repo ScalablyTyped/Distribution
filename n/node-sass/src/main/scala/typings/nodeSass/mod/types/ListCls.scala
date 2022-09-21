@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("node-sass", "types.List")
 @js.native
-class ListCls protected ()
+open class ListCls protected ()
   extends StObject
      with List {
   def this(length: Double) = this()

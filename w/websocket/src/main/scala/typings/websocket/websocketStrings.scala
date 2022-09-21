@@ -15,6 +15,10 @@ object websocketStrings {
   inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
+  sealed trait binary extends StObject
+  inline def binary: binary = "binary".asInstanceOf[binary]
+  
+  @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
   
@@ -77,6 +81,10 @@ object websocketStrings {
   @js.native
   sealed trait resume extends StObject
   inline def resume: resume = "resume".asInstanceOf[resume]
+  
+  @js.native
+  sealed trait utf8 extends StObject
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
   
   @js.native
   sealed trait write extends StObject

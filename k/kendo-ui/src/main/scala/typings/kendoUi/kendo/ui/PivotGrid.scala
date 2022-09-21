@@ -14,11 +14,11 @@ trait PivotGrid
   extends StObject
      with Widget {
   
-  def cellInfo(columnIndex: Double, rowIndex: Double): js.Any = js.native
+  def cellInfo(columnIndex: Double, rowIndex: Double): Any = js.native
   
-  def cellInfoByElement(cell: String): js.Any = js.native
-  def cellInfoByElement(cell: JQuery): js.Any = js.native
-  def cellInfoByElement(cell: Element): js.Any = js.native
+  def cellInfoByElement(cell: String): Any = js.native
+  def cellInfoByElement(cell: JQuery): Any = js.native
+  def cellInfoByElement(cell: Element): Any = js.native
   
   var dataSource: DataSource = js.native
   
@@ -29,7 +29,7 @@ trait PivotGrid
   
   def saveAsExcel(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[js.Any] = js.native
+  def saveAsPDF(): JQueryPromise[Any] = js.native
   
   def setDataSource(dataSource: PivotDataSource): Unit = js.native
   

@@ -12,7 +12,7 @@ trait DescribeChangeSetOutput extends StObject {
   var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.undefined
   
   /**
-    * The ARN of the change set.
+    * The Amazon Resource Name (ARN) of the change set.
     */
   var ChangeSetId: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetId] = js.undefined
   
@@ -22,14 +22,14 @@ trait DescribeChangeSetOutput extends StObject {
   var ChangeSetName: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetName] = js.undefined
   
   /**
-    * A list of Change structures that describes the resources AWS CloudFormation changes if you execute the change set.
+    * A list of Change structures that describes the resources CloudFormation changes if you execute the change set.
     */
   var Changes: js.UndefOr[typings.awsSdk.cloudformationMod.Changes] = js.undefined
   
   /**
     * The start time when the change set was created, in UTC.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.cloudformationMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about the change set.
@@ -37,7 +37,7 @@ trait DescribeChangeSetOutput extends StObject {
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
-    * If the change set execution status is AVAILABLE, you can execute the change set. If you can’t execute the change set, the status indicates why. For example, a change set might be in an UNAVAILABLE state because AWS CloudFormation is still creating it or in an OBSOLETE state because the stack was already updated.
+    * If the change set execution status is AVAILABLE, you can execute the change set. If you can't execute the change set, the status indicates why. For example, a change set might be in an UNAVAILABLE state because CloudFormation is still creating it or in an OBSOLETE state because the stack was already updated.
     */
   var ExecutionStatus: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionStatus] = js.undefined
   
@@ -67,7 +67,7 @@ trait DescribeChangeSetOutput extends StObject {
   var ParentChangeSetId: js.UndefOr[ChangeSetId] = js.undefined
   
   /**
-    * The rollback triggers for AWS CloudFormation to monitor during stack creation and updating operations, and for the specified monitoring period afterwards.
+    * The rollback triggers for CloudFormation to monitor during stack creation and updating operations, and for the specified monitoring period afterwards.
     */
   var RollbackConfiguration: js.UndefOr[typings.awsSdk.cloudformationMod.RollbackConfiguration] = js.undefined
   
@@ -77,12 +77,12 @@ trait DescribeChangeSetOutput extends StObject {
   var RootChangeSetId: js.UndefOr[ChangeSetId] = js.undefined
   
   /**
-    * The ARN of the stack that is associated with the change set.
+    * The Amazon Resource Name (ARN) of the stack that's associated with the change set.
     */
   var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.undefined
   
   /**
-    * The name of the stack that is associated with the change set.
+    * The name of the stack that's associated with the change set.
     */
   var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.undefined
   
@@ -92,7 +92,7 @@ trait DescribeChangeSetOutput extends StObject {
   var Status: js.UndefOr[ChangeSetStatus] = js.undefined
   
   /**
-    * A description of the change set's status. For example, if your attempt to create a change set failed, AWS CloudFormation shows the error message.
+    * A description of the change set's status. For example, if your attempt to create a change set failed, CloudFormation shows the error message.
     */
   var StatusReason: js.UndefOr[ChangeSetStatusReason] = js.undefined
   
@@ -114,7 +114,7 @@ object DescribeChangeSetOutput {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value*))
     
     inline def setChangeSetId(value: ChangeSetId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
@@ -128,9 +128,9 @@ object DescribeChangeSetOutput {
     
     inline def setChangesUndefined: Self = StObject.set(x, "Changes", js.undefined)
     
-    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "Changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "Changes", js.Array(value*))
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -154,13 +154,13 @@ object DescribeChangeSetOutput {
     
     inline def setNotificationARNsUndefined: Self = StObject.set(x, "NotificationARNs", js.undefined)
     
-    inline def setNotificationARNsVarargs(value: NotificationARN*): Self = StObject.set(x, "NotificationARNs", js.Array(value :_*))
+    inline def setNotificationARNsVarargs(value: NotificationARN*): Self = StObject.set(x, "NotificationARNs", js.Array(value*))
     
     inline def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
     
     inline def setParentChangeSetId(value: ChangeSetId): Self = StObject.set(x, "ParentChangeSetId", value.asInstanceOf[js.Any])
     
@@ -194,6 +194,6 @@ object DescribeChangeSetOutput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

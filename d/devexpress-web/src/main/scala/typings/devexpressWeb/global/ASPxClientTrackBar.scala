@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTrackBar")
 @js.native
-class ASPxClientTrackBar ()
+open class ASPxClientTrackBar ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTrackBar {
   
@@ -61,10 +61,10 @@ class ASPxClientTrackBar ()
   override def GetHeight(): Double = js.native
   
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
   /* CompleteClass */
-  override def GetInputElement(): js.Any = js.native
+  override def GetInputElement(): Any = js.native
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
@@ -83,7 +83,7 @@ class ASPxClientTrackBar ()
     * @param value An object that specifies the item's value.
     */
   /* CompleteClass */
-  override def GetItemIndexByValue(value: js.Any): Double = js.native
+  override def GetItemIndexByValue(value: Any): Double = js.native
   
   /**
     * Returns a track bar item text. A String value specifying the track bar item text.
@@ -104,19 +104,19 @@ class ASPxClientTrackBar ()
     * @param index An integer value that specifies the required item's index.
     */
   /* CompleteClass */
-  override def GetItemValue(index: Double): js.Any = js.native
+  override def GetItemValue(index: Double): Any = js.native
   
   /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets a drag handle position.
@@ -146,7 +146,7 @@ class ASPxClientTrackBar ()
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -191,7 +191,7 @@ class ASPxClientTrackBar ()
   var PositionChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientTrackBar]] = js.native
   
   /**
-    * Fires on the client side before a track bar position is changed and allows you to cancel the action.
+    * Occurs on the client before a user changes track bar position.
     */
   /* CompleteClass */
   var PositionChanging: typings.devexpressWeb.ASPxClientEvent[
@@ -280,7 +280,7 @@ class ASPxClientTrackBar ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.
@@ -349,5 +349,5 @@ object ASPxClientTrackBar {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientTrackBar = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientTrackBar]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientTrackBar = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientTrackBar]
 }

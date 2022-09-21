@@ -2,9 +2,9 @@ package typings.nodegit
 
 import typings.nodegit.anon.EventEmitterstartvoid
 import typings.nodegit.diffMod.Diff
+import typings.nodegit.diffOptionsMod.DiffOptions
 import typings.nodegit.nodegitNumbers.`0`
 import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.objectMod.Object
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeBuilderMod.Treebuilder
@@ -18,7 +18,7 @@ object treeMod {
   
   @JSImport("nodegit/tree", "Tree")
   @js.native
-  class Tree () extends StObject {
+  open class Tree () extends StObject {
     
     def _entryByIndex(idx: Double): TreeEntry = js.native
     
@@ -40,10 +40,14 @@ object treeMod {
     /**
       * Diff two trees with options
       */
+    def diffWithOptions(): js.Promise[Diff] = js.native
+    def diffWithOptions(tree: Null, options: Unit, callback: js.Function): js.Promise[Diff] = js.native
+    def diffWithOptions(tree: Null, options: DiffOptions): js.Promise[Diff] = js.native
+    def diffWithOptions(tree: Null, options: DiffOptions, callback: js.Function): js.Promise[Diff] = js.native
     def diffWithOptions(tree: Tree): js.Promise[Diff] = js.native
     def diffWithOptions(tree: Tree, options: Unit, callback: js.Function): js.Promise[Diff] = js.native
-    def diffWithOptions(tree: Tree, options: Object): js.Promise[Diff] = js.native
-    def diffWithOptions(tree: Tree, options: Object, callback: js.Function): js.Promise[Diff] = js.native
+    def diffWithOptions(tree: Tree, options: DiffOptions): js.Promise[Diff] = js.native
+    def diffWithOptions(tree: Tree, options: DiffOptions, callback: js.Function): js.Promise[Diff] = js.native
     
     def dup(): js.Promise[Tree] = js.native
     

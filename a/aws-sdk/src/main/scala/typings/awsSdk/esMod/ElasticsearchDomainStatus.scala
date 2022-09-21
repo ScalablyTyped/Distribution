@@ -27,6 +27,16 @@ trait ElasticsearchDomainStatus extends StObject {
   var AdvancedSecurityOptions: js.UndefOr[typings.awsSdk.esMod.AdvancedSecurityOptions] = js.undefined
   
   /**
+    * The current status of the Elasticsearch domain's Auto-Tune options.
+    */
+  var AutoTuneOptions: js.UndefOr[AutoTuneOptionsOutput] = js.undefined
+  
+  /**
+    * Specifies change details of the domain configuration change.
+    */
+  var ChangeProgressDetails: js.UndefOr[typings.awsSdk.esMod.ChangeProgressDetails] = js.undefined
+  
+  /**
     * The CognitoOptions for the specified domain. For more information, see Amazon Cognito Authentication for Kibana.
     */
   var CognitoOptions: js.UndefOr[typings.awsSdk.esMod.CognitoOptions] = js.undefined
@@ -145,6 +155,14 @@ object ElasticsearchDomainStatus {
     inline def setAdvancedSecurityOptions(value: AdvancedSecurityOptions): Self = StObject.set(x, "AdvancedSecurityOptions", value.asInstanceOf[js.Any])
     
     inline def setAdvancedSecurityOptionsUndefined: Self = StObject.set(x, "AdvancedSecurityOptions", js.undefined)
+    
+    inline def setAutoTuneOptions(value: AutoTuneOptionsOutput): Self = StObject.set(x, "AutoTuneOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAutoTuneOptionsUndefined: Self = StObject.set(x, "AutoTuneOptions", js.undefined)
+    
+    inline def setChangeProgressDetails(value: ChangeProgressDetails): Self = StObject.set(x, "ChangeProgressDetails", value.asInstanceOf[js.Any])
+    
+    inline def setChangeProgressDetailsUndefined: Self = StObject.set(x, "ChangeProgressDetails", js.undefined)
     
     inline def setCognitoOptions(value: CognitoOptions): Self = StObject.set(x, "CognitoOptions", value.asInstanceOf[js.Any])
     

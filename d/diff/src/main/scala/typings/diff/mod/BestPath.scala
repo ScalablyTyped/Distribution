@@ -21,7 +21,7 @@ object BestPath {
     
     inline def setComponenets(value: js.Array[Change]): Self = StObject.set(x, "componenets", value.asInstanceOf[js.Any])
     
-    inline def setComponenetsVarargs(value: Change*): Self = StObject.set(x, "componenets", js.Array(value :_*))
+    inline def setComponenetsVarargs(value: Change*): Self = StObject.set(x, "componenets", js.Array(value*))
     
     inline def setNewPos(value: Double): Self = StObject.set(x, "newPos", value.asInstanceOf[js.Any])
   }

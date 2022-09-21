@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ChartAxisType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisType")
@@ -15,13 +16,18 @@ object ChartAxisType extends StObject {
   
   /**
     * Axis displays categories.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait category
     extends StObject
        with ChartAxisType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
   sealed trait invalid
     extends StObject
@@ -29,7 +35,8 @@ object ChartAxisType extends StObject {
   
   /**
     * Axis displays data series.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait series
@@ -38,7 +45,8 @@ object ChartAxisType extends StObject {
   
   /**
     * Axis displays values.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait value

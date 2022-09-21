@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "control.FullscreenControl")
 @js.native
-class FullscreenControl () extends Button {
+open class FullscreenControl () extends Button {
   def this(parameters: IFullscreenControlParameters) = this()
   
   def enterFullscreen(): Unit = js.native

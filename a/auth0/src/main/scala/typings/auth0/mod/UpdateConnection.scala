@@ -18,9 +18,9 @@ trait UpdateConnection extends StObject {
     */
   var is_domain_connection: js.UndefOr[Boolean] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
   
   /**
     * Defines the realms for which the connection will be used
@@ -42,17 +42,17 @@ object UpdateConnection {
     
     inline def setEnabled_clientsUndefined: Self = StObject.set(x, "enabled_clients", js.undefined)
     
-    inline def setEnabled_clientsVarargs(value: String*): Self = StObject.set(x, "enabled_clients", js.Array(value :_*))
+    inline def setEnabled_clientsVarargs(value: String*): Self = StObject.set(x, "enabled_clients", js.Array(value*))
     
     inline def setIs_domain_connection(value: Boolean): Self = StObject.set(x, "is_domain_connection", value.asInstanceOf[js.Any])
     
     inline def setIs_domain_connectionUndefined: Self = StObject.set(x, "is_domain_connection", js.undefined)
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
@@ -60,6 +60,6 @@ object UpdateConnection {
     
     inline def setRealmsUndefined: Self = StObject.set(x, "realms", js.undefined)
     
-    inline def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value :_*))
+    inline def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value*))
   }
 }

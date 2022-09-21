@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object pinterestSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/PinterestSmall", JSImport.Default)
   @js.native
-  val default: SFC[PinterestSmallProps] = js.native
+  val default: FC[PinterestSmallProps] = js.native
   
   trait PinterestSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object PinterestSmallProps {
     
@@ -29,14 +29,14 @@ object pinterestSmallMod extends Shortcut {
     
     extension [Self <: PinterestSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[PinterestSmallProps]
+  type _To = FC[PinterestSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `pinterestSmallMod.foo` */
-  override def _to: SFC[PinterestSmallProps] = default
+  override def _to: FC[PinterestSmallProps] = default
 }

@@ -9,7 +9,7 @@ trait Bic extends StObject {
   
   var bic: js.Array[Code]
   
-  var fun: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var fun: js.UndefOr[Record[String, Any]] = js.undefined
 }
 object Bic {
   
@@ -22,9 +22,9 @@ object Bic {
     
     inline def setBic(value: js.Array[Code]): Self = StObject.set(x, "bic", value.asInstanceOf[js.Any])
     
-    inline def setBicVarargs(value: Code*): Self = StObject.set(x, "bic", js.Array(value :_*))
+    inline def setBicVarargs(value: Code*): Self = StObject.set(x, "bic", js.Array(value*))
     
-    inline def setFun(value: Record[String, js.Any]): Self = StObject.set(x, "fun", value.asInstanceOf[js.Any])
+    inline def setFun(value: Record[String, Any]): Self = StObject.set(x, "fun", value.asInstanceOf[js.Any])
     
     inline def setFunUndefined: Self = StObject.set(x, "fun", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode-jsonrpc", "Emitter")
 @js.native
-class Emitter[T] ()
+open class Emitter[T] ()
   extends typings.vscodeJsonrpc.eventsMod.Emitter[T] {
   def this(_options: EmitterOptions) = this()
 }
@@ -20,6 +20,6 @@ object Emitter {
   
   @JSImport("vscode-jsonrpc", "Emitter._noop")
   @js.native
-  def _noop: js.Any = js.native
-  inline def _noop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
+  def _noop: Any = js.native
+  inline def _noop_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
 }

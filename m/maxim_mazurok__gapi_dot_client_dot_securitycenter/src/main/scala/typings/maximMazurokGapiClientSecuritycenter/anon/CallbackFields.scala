@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSecuritycenter.anon
 
-import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.OrganizationSettings
+import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.GoogleCloudSecuritycenterV1MuteConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +27,8 @@ trait CallbackFields extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * The relative resource name of the settings. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example:
-    * "organizations/{organization_id}/organizationSettings".
+    * This field will be ignored if provided on config creation. Format "organizations/{organization}/muteConfigs/{mute_config}" "folders/{folder}/muteConfigs/{mute_config}"
+    * "projects/{project}/muteConfigs/{mute_config}"
     */
   var name: String
   
@@ -42,9 +42,9 @@ trait CallbackFields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrganizationSettings
+  var resource: GoogleCloudSecuritycenterV1MuteConfig
   
-  /** The FieldMask to use when updating the settings resource. If empty all mutable fields will be updated. */
+  /** The list of fields to be updated. If empty all mutable fields will be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -55,7 +55,7 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(name: String, resource: OrganizationSettings): CallbackFields = {
+  inline def apply(name: String, resource: GoogleCloudSecuritycenterV1MuteConfig): CallbackFields = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
@@ -100,7 +100,7 @@ object CallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrganizationSettings): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudSecuritycenterV1MuteConfig): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

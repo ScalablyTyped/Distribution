@@ -29,12 +29,12 @@ object BatchGetResourceConfigResponse {
     
     inline def setBaseConfigurationItemsUndefined: Self = StObject.set(x, "baseConfigurationItems", js.undefined)
     
-    inline def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = StObject.set(x, "baseConfigurationItems", js.Array(value :_*))
+    inline def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = StObject.set(x, "baseConfigurationItems", js.Array(value*))
     
     inline def setUnprocessedResourceKeys(value: ResourceKeys): Self = StObject.set(x, "unprocessedResourceKeys", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedResourceKeysUndefined: Self = StObject.set(x, "unprocessedResourceKeys", js.undefined)
     
-    inline def setUnprocessedResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "unprocessedResourceKeys", js.Array(value :_*))
+    inline def setUnprocessedResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "unprocessedResourceKeys", js.Array(value*))
   }
 }

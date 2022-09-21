@@ -76,13 +76,13 @@ object RemoteMethodOptions {
     
     inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
     
-    inline def setAcceptsVarargs(value: RemoteMethodArgument*): Self = StObject.set(x, "accepts", js.Array(value :_*))
+    inline def setAcceptsVarargs(value: RemoteMethodArgument*): Self = StObject.set(x, "accepts", js.Array(value*))
     
     inline def setDescription(value: String | js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+    inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
     
     inline def setHttp(value: RemoteHttpOptions): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object RemoteMethodOptions {
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value*))
     
     inline def setReturns(value: RemoteMethodArgument): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Menu")
 @js.native
-class Menu protected () extends Drawable {
+open class Menu protected () extends Drawable {
   def this(id: String, options: MenuOptions) = this()
   
   def getSelectedItemIndex(): Double = js.native

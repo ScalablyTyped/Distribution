@@ -24,31 +24,31 @@ object ajaxChain {
       * Ajax call 'url' property value specified in original jQuery $.ajax method configuration
       * object ('ajaxSettings') (optional).
       */
-    var appendToUrl: js.UndefOr[js.Function1[/* response */ js.Any, String]] = js.undefined
+    var appendToUrl: js.UndefOr[js.Function1[/* response */ Any, String]] = js.undefined
     
     /**
       * Returning a truthy value allows to prevent the related Ajax call from being executed,
       * passing the former as a parameter to any registered handler(s); useful to create
       * caching mechanisms (optional).
       */
-    var hasCache: js.UndefOr[js.Function1[/* response */ js.Any, js.Any]] = js.undefined
+    var hasCache: js.UndefOr[js.Function1[/* response */ Any, Any]] = js.undefined
     
     /**
       * Returning a truthy value determines any registered fail callback(s) to be called immediately,
       * passing the former as an argument to the latter; the queue is then rejected (optional).
       */
-    var hasErrors: js.UndefOr[js.Function1[/* response */ js.Any, js.Any]] = js.undefined
+    var hasErrors: js.UndefOr[js.Function1[/* response */ Any, Any]] = js.undefined
     
     /**
       * Returning a truthy value prevents the queue from further progressing to the succeeding
       * Ajax calls; the queue is then resolved (optional).
       */
-    var hasHaltingCapabilities: js.UndefOr[js.Function1[/* response */ js.Any, Boolean]] = js.undefined
+    var hasHaltingCapabilities: js.UndefOr[js.Function1[/* response */ Any, Boolean]] = js.undefined
     
     /**
       * Returning a truthy value prevents the queue from being halted in case of Ajax error (optional).
       */
-    var isSkippable: js.UndefOr[js.Function1[/* response */ js.Any, Boolean]] = js.undefined
+    var isSkippable: js.UndefOr[js.Function1[/* response */ Any, Boolean]] = js.undefined
     
     /**
       * Configuration object label (optional).
@@ -60,7 +60,7 @@ object ajaxChain {
       * 'data' property value specified in the original jQuery $.ajax method configuration
       * object ('ajaxSettings') (optional).
       */
-    var transform: js.UndefOr[js.Function1[/* response */ js.Any, String | js.Object | js.Array[js.Object]]] = js.undefined
+    var transform: js.UndefOr[js.Function1[/* response */ Any, String | js.Object | js.Array[js.Object]]] = js.undefined
   }
   object AjaxChainConfiguration {
     
@@ -73,23 +73,23 @@ object ajaxChain {
       
       inline def setAjaxSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
       
-      inline def setAppendToUrl(value: /* response */ js.Any => String): Self = StObject.set(x, "appendToUrl", js.Any.fromFunction1(value))
+      inline def setAppendToUrl(value: /* response */ Any => String): Self = StObject.set(x, "appendToUrl", js.Any.fromFunction1(value))
       
       inline def setAppendToUrlUndefined: Self = StObject.set(x, "appendToUrl", js.undefined)
       
-      inline def setHasCache(value: /* response */ js.Any => js.Any): Self = StObject.set(x, "hasCache", js.Any.fromFunction1(value))
+      inline def setHasCache(value: /* response */ Any => Any): Self = StObject.set(x, "hasCache", js.Any.fromFunction1(value))
       
       inline def setHasCacheUndefined: Self = StObject.set(x, "hasCache", js.undefined)
       
-      inline def setHasErrors(value: /* response */ js.Any => js.Any): Self = StObject.set(x, "hasErrors", js.Any.fromFunction1(value))
+      inline def setHasErrors(value: /* response */ Any => Any): Self = StObject.set(x, "hasErrors", js.Any.fromFunction1(value))
       
       inline def setHasErrorsUndefined: Self = StObject.set(x, "hasErrors", js.undefined)
       
-      inline def setHasHaltingCapabilities(value: /* response */ js.Any => Boolean): Self = StObject.set(x, "hasHaltingCapabilities", js.Any.fromFunction1(value))
+      inline def setHasHaltingCapabilities(value: /* response */ Any => Boolean): Self = StObject.set(x, "hasHaltingCapabilities", js.Any.fromFunction1(value))
       
       inline def setHasHaltingCapabilitiesUndefined: Self = StObject.set(x, "hasHaltingCapabilities", js.undefined)
       
-      inline def setIsSkippable(value: /* response */ js.Any => Boolean): Self = StObject.set(x, "isSkippable", js.Any.fromFunction1(value))
+      inline def setIsSkippable(value: /* response */ Any => Boolean): Self = StObject.set(x, "isSkippable", js.Any.fromFunction1(value))
       
       inline def setIsSkippableUndefined: Self = StObject.set(x, "isSkippable", js.undefined)
       
@@ -97,7 +97,7 @@ object ajaxChain {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setTransform(value: /* response */ js.Any => String | js.Object | js.Array[js.Object]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* response */ Any => String | js.Object | js.Array[js.Object]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
@@ -109,7 +109,7 @@ object ajaxChain {
   @js.native
   trait JQueryAjaxChain
     extends StObject
-       with PromiseBase[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any] {
+       with PromiseBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] {
     
     /**
       * Clears the currently queued configuration objects.

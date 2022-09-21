@@ -39,7 +39,7 @@ object MailcheckModule {
       
       inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
       
-      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value*))
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -55,7 +55,7 @@ object MailcheckModule {
       
       inline def setSecondLevelDomainsUndefined: Self = StObject.set(x, "secondLevelDomains", js.undefined)
       
-      inline def setSecondLevelDomainsVarargs(value: String*): Self = StObject.set(x, "secondLevelDomains", js.Array(value :_*))
+      inline def setSecondLevelDomainsVarargs(value: String*): Self = StObject.set(x, "secondLevelDomains", js.Array(value*))
       
       inline def setSuggested(value: ISuggested | IJQuerySuggested): Self = StObject.set(x, "suggested", value.asInstanceOf[js.Any])
       
@@ -67,7 +67,7 @@ object MailcheckModule {
       
       inline def setTopLevelDomainsUndefined: Self = StObject.set(x, "topLevelDomains", js.undefined)
       
-      inline def setTopLevelDomainsVarargs(value: String*): Self = StObject.set(x, "topLevelDomains", js.Array(value :_*))
+      inline def setTopLevelDomainsVarargs(value: String*): Self = StObject.set(x, "topLevelDomains", js.Array(value*))
     }
   }
   
@@ -174,7 +174,7 @@ object MailcheckModule {
       
       inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
       
-      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value*))
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -182,13 +182,13 @@ object MailcheckModule {
       
       inline def setSecondLevelDomainsUndefined: Self = StObject.set(x, "secondLevelDomains", js.undefined)
       
-      inline def setSecondLevelDomainsVarargs(value: String*): Self = StObject.set(x, "secondLevelDomains", js.Array(value :_*))
+      inline def setSecondLevelDomainsVarargs(value: String*): Self = StObject.set(x, "secondLevelDomains", js.Array(value*))
       
       inline def setTopLevelDomains(value: js.Array[String]): Self = StObject.set(x, "topLevelDomains", value.asInstanceOf[js.Any])
       
       inline def setTopLevelDomainsUndefined: Self = StObject.set(x, "topLevelDomains", js.undefined)
       
-      inline def setTopLevelDomainsVarargs(value: String*): Self = StObject.set(x, "topLevelDomains", js.Array(value :_*))
+      inline def setTopLevelDomainsVarargs(value: String*): Self = StObject.set(x, "topLevelDomains", js.Array(value*))
     }
   }
   

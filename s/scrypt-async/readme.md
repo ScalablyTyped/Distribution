@@ -11,9 +11,9 @@ Fast "async" scrypt implementation in JavaScript.
 | Full name          | scrypt-async |
 | Keywords           | crypto, cryptography, scrypt, password |
 | # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 293009 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 109063.66666666667 |
+| # stars            | 137.0 |
 
 ## Links
 - [Homepage](https://github.com/dchest/scrypt-async-js)

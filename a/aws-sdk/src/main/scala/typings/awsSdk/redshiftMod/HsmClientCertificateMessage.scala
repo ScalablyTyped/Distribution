@@ -29,7 +29,7 @@ object HsmClientCertificateMessage {
     
     inline def setHsmClientCertificatesUndefined: Self = StObject.set(x, "HsmClientCertificates", js.undefined)
     
-    inline def setHsmClientCertificatesVarargs(value: HsmClientCertificate*): Self = StObject.set(x, "HsmClientCertificates", js.Array(value :_*))
+    inline def setHsmClientCertificatesVarargs(value: HsmClientCertificate*): Self = StObject.set(x, "HsmClientCertificates", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

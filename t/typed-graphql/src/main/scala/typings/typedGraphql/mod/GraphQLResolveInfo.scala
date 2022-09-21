@@ -19,11 +19,11 @@ trait GraphQLResolveInfo extends StObject {
   
   var returnType: GraphQLOutputType
   
-  var rootValue: js.Any
+  var rootValue: Any
   
   var schema: GraphQLSchema
   
-  var variableValues: StringDictionary[js.Any]
+  var variableValues: StringDictionary[Any]
 }
 object GraphQLResolveInfo {
   
@@ -34,9 +34,9 @@ object GraphQLResolveInfo {
     operation: OperationDefinition,
     parentType: GraphQLCompositeType,
     returnType: GraphQLOutputType,
-    rootValue: js.Any,
+    rootValue: Any,
     schema: GraphQLSchema,
-    variableValues: StringDictionary[js.Any]
+    variableValues: StringDictionary[Any]
   ): GraphQLResolveInfo = {
     val __obj = js.Dynamic.literal(fieldASTs = fieldASTs.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], rootValue = rootValue.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], variableValues = variableValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLResolveInfo]
@@ -46,7 +46,7 @@ object GraphQLResolveInfo {
     
     inline def setFieldASTs(value: js.Array[Field]): Self = StObject.set(x, "fieldASTs", value.asInstanceOf[js.Any])
     
-    inline def setFieldASTsVarargs(value: Field*): Self = StObject.set(x, "fieldASTs", js.Array(value :_*))
+    inline def setFieldASTsVarargs(value: Field*): Self = StObject.set(x, "fieldASTs", js.Array(value*))
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
@@ -58,10 +58,10 @@ object GraphQLResolveInfo {
     
     inline def setReturnType(value: GraphQLOutputType): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
-    inline def setRootValue(value: js.Any): Self = StObject.set(x, "rootValue", value.asInstanceOf[js.Any])
+    inline def setRootValue(value: Any): Self = StObject.set(x, "rootValue", value.asInstanceOf[js.Any])
     
     inline def setSchema(value: GraphQLSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    inline def setVariableValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "variableValues", value.asInstanceOf[js.Any])
+    inline def setVariableValues(value: StringDictionary[Any]): Self = StObject.set(x, "variableValues", value.asInstanceOf[js.Any])
   }
 }

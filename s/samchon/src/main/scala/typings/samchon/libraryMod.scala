@@ -8,7 +8,7 @@ object libraryMod {
   
   @JSImport("samchon/library", "CartesianProduct")
   @js.native
-  class CartesianProduct protected ()
+  open class CartesianProduct protected ()
     extends typings.samchon.cartesianProductMod.CartesianProduct {
     /**
       * Initializer Constructor.
@@ -20,7 +20,7 @@ object libraryMod {
   
   @JSImport("samchon/library", "Factorial")
   @js.native
-  class Factorial protected ()
+  open class Factorial protected ()
     extends typings.samchon.factorialMod.Factorial {
     /**
       * Construct from factorial size N.
@@ -32,7 +32,7 @@ object libraryMod {
   
   @JSImport("samchon/library", "Permutation")
   @js.native
-  class Permutation protected ()
+  open class Permutation protected ()
     extends typings.samchon.permutationMod.Permutation {
     /**
       * Construct from size of N and R.
@@ -45,7 +45,7 @@ object libraryMod {
   
   @JSImport("samchon/library", "RepeatedPermutation")
   @js.native
-  class RepeatedPermutation protected ()
+  open class RepeatedPermutation protected ()
     extends typings.samchon.repeatedPermutationMod.RepeatedPermutation {
     /**
       * Construct from size of N and R.
@@ -58,7 +58,7 @@ object libraryMod {
   
   @JSImport("samchon/library", "StringUtil")
   @js.native
-  class StringUtil ()
+  open class StringUtil ()
     extends typings.samchon.stringUtilMod.StringUtil
   /* static members */
   object StringUtil {
@@ -72,24 +72,24 @@ object libraryMod {
       */
     @JSImport("samchon/library", "StringUtil.SPACE_ARRAY")
     @js.native
-    def SPACE_ARRAY: js.Any = js.native
-    inline def SPACE_ARRAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_ARRAY")(x.asInstanceOf[js.Any])
+    def SPACE_ARRAY: Any = js.native
+    inline def SPACE_ARRAY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_ARRAY")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
     @JSImport("samchon/library", "StringUtil._Fetch_substitute_index")
     @js.native
-    def _Fetch_substitute_index: js.Any = js.native
-    inline def _Fetch_substitute_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fetch_substitute_index")(x.asInstanceOf[js.Any])
+    def _Fetch_substitute_index: Any = js.native
+    inline def _Fetch_substitute_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fetch_substitute_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
     @JSImport("samchon/library", "StringUtil._Substitute_sql_string")
     @js.native
-    def _Substitute_sql_string: js.Any = js.native
-    inline def _Substitute_sql_string_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Substitute_sql_string")(x.asInstanceOf[js.Any])
+    def _Substitute_sql_string: Any = js.native
+    inline def _Substitute_sql_string_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Substitute_sql_string")(x.asInstanceOf[js.Any])
     
     /**
       * Generate a substring.
@@ -149,7 +149,7 @@ object libraryMod {
       *
       * @return Updated string where designated characters was removed from the beginning
       */
-    inline def ltrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def ltrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Number to formatted string with &quot;,&quot; sign.
@@ -206,8 +206,8 @@ object libraryMod {
       */
     inline def replaceAll(
       str: String,
-      pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ js.Any)*
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(str.asInstanceOf[js.Any], pairs.asInstanceOf[js.Any])).asInstanceOf[String]
+      pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ Any)*
+    ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(List(str.asInstanceOf[js.Any]).`++`(pairs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the end of the specified string.
@@ -217,7 +217,7 @@ object libraryMod {
       *
       * @return Updated string where designated characters was removed from the end.
       */
-    inline def rtrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def rtrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified string.
@@ -231,7 +231,7 @@ object libraryMod {
       *
       * @return New string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    inline def substitute(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def substitute(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified SQL-string.
@@ -245,7 +245,7 @@ object libraryMod {
       *
       * @return New SQL-string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    inline def substituteSQL(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def substituteSQL(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the beginning and end of the specified string.
@@ -255,7 +255,7 @@ object libraryMod {
       *
       * @return Updated string where designated characters was removed from the beginning and end.
       */
-    inline def trim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def trim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   }
   
   @JSImport("samchon/library", "URLVariables")
@@ -263,7 +263,7 @@ object libraryMod {
   /**
     * Default Constructor.
     */
-  class URLVariables ()
+  open class URLVariables ()
     extends typings.samchon.urlvariablesMod.URLVariables {
     /**
       * Construct from a URL-encoded string.
@@ -288,7 +288,7 @@ object libraryMod {
   
   @JSImport("samchon/library", "XML")
   @js.native
-  class XML ()
+  open class XML ()
     extends typings.samchon.xmlMod.XML {
     def this(str: String) = this()
     def this(xml: typings.sxml.xmlMod.XML) = this()
@@ -305,16 +305,16 @@ object libraryMod {
       */
     @JSImport("samchon/library", "XML._Compute_min_index")
     @js.native
-    def _Compute_min_index: js.Any = js.native
-    inline def _Compute_min_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
+    def _Compute_min_index: Any = js.native
+    inline def _Compute_min_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
     @JSImport("samchon/library", "XML._Repeat")
     @js.native
-    def _Repeat: js.Any = js.native
-    inline def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
+    def _Repeat: Any = js.native
+    inline def _Repeat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
     
     inline def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -330,6 +330,6 @@ object libraryMod {
   
   @JSImport("samchon/library", "XMLList")
   @js.native
-  class XMLList ()
+  open class XMLList ()
     extends typings.samchon.xmlMod.XMLList
 }

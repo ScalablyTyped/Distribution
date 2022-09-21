@@ -9,7 +9,7 @@ trait LicenseConfigurationUsage extends StObject {
   /**
     * Time when the license configuration was initially associated with the resource.
     */
-  var AssociationTime: js.UndefOr[DateTime] = js.undefined
+  var AssociationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Number of licenses consumed by the resource.
@@ -45,7 +45,7 @@ object LicenseConfigurationUsage {
   
   extension [Self <: LicenseConfigurationUsage](x: Self) {
     
-    inline def setAssociationTime(value: DateTime): Self = StObject.set(x, "AssociationTime", value.asInstanceOf[js.Any])
+    inline def setAssociationTime(value: js.Date): Self = StObject.set(x, "AssociationTime", value.asInstanceOf[js.Any])
     
     inline def setAssociationTimeUndefined: Self = StObject.set(x, "AssociationTime", js.undefined)
     

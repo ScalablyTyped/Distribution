@@ -9,10 +9,10 @@ Typings are for version 9.0.5
 | ------------------ | :-------------: |
 | Full name          | next-server |
 | Keywords           | - |
-| # releases         | 185 |
-| # dependents       | 10 |
-| # downloads        | 2458965 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104505.33333333333 |
+| # stars            | 92508.0 |
 
 ## Links
 - [Homepage](https://github.com/zeit/next.js#readme)

@@ -16,14 +16,14 @@ trait AttachmentsViewModel
      with Accessor {
   
   /**
-    * The current [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html) being edited.
+    * The current [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html) being edited.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#activeAttachmentInfo)
     */
   var activeAttachmentInfo: AttachmentInfo = js.native
   
   /**
-    * A collection of [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html) defined on a feature.
+    * A collection of [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html) defined on a feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#attachmentInfos)
     */
@@ -46,12 +46,16 @@ trait AttachmentsViewModel
   /**
     * The current mode performed by the user.
     *
+    * @default "view"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#mode)
     */
   var mode: view | add | edit = js.native
   
   /**
     * The current state of the widget.
+    *
+    * @default "ready"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#state)
     */

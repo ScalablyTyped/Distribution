@@ -1,46 +1,22 @@
 package typings.sipJs
 
-import typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage
-import typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessage
+import typings.sipJs.coreMod.IncomingRequestMessage
+import typings.sipJs.methodsAckMod.IncomingAckRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ackMod {
   
-  trait IncomingAckRequest extends StObject {
+  @JSImport("sip.js/lib/api/ack", "Ack")
+  @js.native
+  open class Ack protected () extends StObject {
+    /** @internal */
+    def this(incomingAckRequest: IncomingAckRequest) = this()
     
-    /** The incoming message. */
-    val message: IncomingRequestMessage
-  }
-  object IncomingAckRequest {
+    /* private */ var incomingAckRequest: Any = js.native
     
-    inline def apply(message: IncomingRequestMessage): IncomingAckRequest = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IncomingAckRequest]
-    }
-    
-    extension [Self <: IncomingAckRequest](x: Self) {
-      
-      inline def setMessage(value: IncomingRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait OutgoingAckRequest extends StObject {
-    
-    /** The outgoing message. */
-    val message: OutgoingRequestMessage
-  }
-  object OutgoingAckRequest {
-    
-    inline def apply(message: OutgoingRequestMessage): OutgoingAckRequest = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OutgoingAckRequest]
-    }
-    
-    extension [Self <: OutgoingAckRequest](x: Self) {
-      
-      inline def setMessage(value: OutgoingRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    }
+    /** Incoming ACK request message. */
+    def request: IncomingRequestMessage = js.native
   }
 }

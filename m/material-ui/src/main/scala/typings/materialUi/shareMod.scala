@@ -10,10 +10,10 @@ object shareMod {
   
   @JSImport("material-ui/svg-icons/social/share", JSImport.Default)
   @js.native
-  class default () extends SocialShare
+  open class default () extends SocialShare
   
   @JSImport("material-ui/svg-icons/social/share", "SocialShare")
   @js.native
-  class SocialShare ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialShare ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

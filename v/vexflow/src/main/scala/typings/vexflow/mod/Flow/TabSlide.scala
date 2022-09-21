@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.TabSlide")
 @js.native
-class TabSlide protected ()
+open class TabSlide protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.TabSlide {
   def this(notes: Firstindices) = this()

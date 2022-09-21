@@ -8,14 +8,19 @@ trait ErrorEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var colno: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.undefined
+  /* standard dom */
+  var error: js.UndefOr[Any] = js.undefined
   
+  /* standard dom */
   var filename: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var lineno: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 object ErrorEventInit {
@@ -31,7 +36,7 @@ object ErrorEventInit {
     
     inline def setColnoUndefined: Self = StObject.set(x, "colno", js.undefined)
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

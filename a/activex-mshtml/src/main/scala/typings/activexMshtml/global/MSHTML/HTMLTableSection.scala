@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLTableSection")
 @js.native
-/* private */ class HTMLTableSection ()
+/* private */ open class HTMLTableSection ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLTableSection

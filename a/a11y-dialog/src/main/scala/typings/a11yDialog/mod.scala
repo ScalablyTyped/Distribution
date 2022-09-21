@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("a11y-dialog", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with A11yDialog {
     def this(node: Element) = this()
@@ -44,6 +44,8 @@ object mod {
       
       def show(): typings.a11yDialog.mod.A11yDialog.A11yDialog = js.native
       def show(event: Event): typings.a11yDialog.mod.A11yDialog.A11yDialog = js.native
+      
+      var shown: Boolean = js.native
     }
     
     type EventHandler = js.Function2[/* node */ Element, /* event */ js.UndefOr[Event], Unit]

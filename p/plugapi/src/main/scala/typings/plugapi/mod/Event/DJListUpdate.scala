@@ -22,7 +22,7 @@ object DJListUpdate {
     
     inline def setDjs(value: js.Array[DJ]): Self = StObject.set(x, "djs", value.asInstanceOf[js.Any])
     
-    inline def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value :_*))
+    inline def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value*))
     
     inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
   }

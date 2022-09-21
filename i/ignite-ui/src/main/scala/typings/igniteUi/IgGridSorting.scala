@@ -11,7 +11,7 @@ trait IgGridSorting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling.
@@ -333,7 +333,7 @@ object IgGridSorting {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridSortingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridSortingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setColumnSorted(value: (/* event */ Event, /* ui */ ColumnSortedEventUIParam) => Unit): Self = StObject.set(x, "columnSorted", js.Any.fromFunction2(value))
     

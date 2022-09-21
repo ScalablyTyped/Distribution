@@ -10,10 +10,10 @@ object confirmationNumberMod {
   
   @JSImport("material-ui/svg-icons/notification/confirmation-number", JSImport.Default)
   @js.native
-  class default () extends NotificationConfirmationNumber
+  open class default () extends NotificationConfirmationNumber
   
   @JSImport("material-ui/svg-icons/notification/confirmation-number", "NotificationConfirmationNumber")
   @js.native
-  class NotificationConfirmationNumber ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationConfirmationNumber ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

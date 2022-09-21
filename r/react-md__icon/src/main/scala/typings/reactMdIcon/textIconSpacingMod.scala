@@ -8,74 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object textIconSpacingMod {
   
-  object TextIconSpacing {
-    
-    inline def apply(
-      hasClassNamePropIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
-    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNamePropIconChildrenStackedIconAfterForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.aboveClassName")
-      @js.native
-      def aboveClassName: js.Any = js.native
-      inline def aboveClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aboveClassName")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.afterClassName")
-      @js.native
-      def afterClassName: js.Any = js.native
-      inline def afterClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterClassName")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.beforeClassName")
-      @js.native
-      def beforeClassName: js.Any = js.native
-      inline def beforeClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeClassName")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.belowClassName")
-      @js.native
-      def belowClassName: js.Any = js.native
-      inline def belowClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("belowClassName")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.className")
-      @js.native
-      def className: js.Any = js.native
-      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.forceIconWrap")
-      @js.native
-      def forceIconWrap: js.Any = js.native
-      inline def forceIconWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceIconWrap")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.icon")
-      @js.native
-      def icon: js.Any = js.native
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.iconAfter")
-      @js.native
-      def iconAfter: js.Any = js.native
-      inline def iconAfter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconAfter")(x.asInstanceOf[js.Any])
-      
-      inline def icon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/icon/types/TextIconSpacing", "TextIconSpacing.propTypes.stacked")
-      @js.native
-      def stacked: js.Any = js.native
-      inline def stacked_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stacked")(x.asInstanceOf[js.Any])
-    }
-  }
+  @JSImport("@react-md/icon/types/TextIconSpacing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def TextIconSpacing(
+    hasClassNamePropIconChildrenStackedIconAfterFlexReverseForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
+  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextIconSpacing")(hasClassNamePropIconChildrenStackedIconAfterFlexReverseForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait TextIconSpacingProps extends StObject {
     
@@ -111,12 +50,20 @@ object textIconSpacingMod {
     var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
-      * An optional className to apply to the surroudning `<span>` when the
+      * An optional className to apply to the surrounding `<span>` when the
       * `forceIconWrap` prop is enabled or the icon is not a valid React Element.
       * If the `forceIconWrap` prop is not enabled, it will be cloned into the icon
       * instead.
       */
     var className: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Boolean if the icon and content are in a `column-reverse` or `row-reverse`
+      * `flex-direction`. This will swap the different classnames as needed.
+      *
+      * @remarks \@since 2.5.0
+      */
+    var flexReverse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the icon should be forced into a `<span>` with the class names
@@ -143,8 +90,8 @@ object textIconSpacingMod {
     
     /**
       * Boolean if the icon and text should be stacked instead of inline. Note:
-      * You'll normally want to update the container element to have `display:
-      * flex` and `flex-direction: column` for this to work.
+      * You'll normally want to update the container element to have
+      * `display: flex` and `flex-direction: column` for this to work.
       */
     var stacked: js.UndefOr[Boolean] = js.undefined
   }
@@ -180,6 +127,10 @@ object textIconSpacingMod {
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setFlexReverse(value: Boolean): Self = StObject.set(x, "flexReverse", value.asInstanceOf[js.Any])
+      
+      inline def setFlexReverseUndefined: Self = StObject.set(x, "flexReverse", js.undefined)
       
       inline def setForceIconWrap(value: Boolean): Self = StObject.set(x, "forceIconWrap", value.asInstanceOf[js.Any])
       

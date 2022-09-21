@@ -16,7 +16,7 @@ object completepurchaseMod {
     * @param options The raw {@link GoogleActionsTransactionsV3CompletePurchaseValueSpec}
     * @public
     */
-  class CompletePurchase () extends SoloHelper[
+  open class CompletePurchase () extends SoloHelper[
           actionsDotintentDotCOMPLETE_PURCHASE, 
           GoogleActionsTransactionsV3CompletePurchaseValueSpec
         ] {

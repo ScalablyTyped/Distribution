@@ -15,7 +15,7 @@ object roomBridgeStoreMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/room-bridge-store", "RoomBridgeStore")
   @js.native
-  class RoomBridgeStore protected () extends BridgeStore {
+  open class RoomBridgeStore protected () extends BridgeStore {
     /**
       * Construct a store suitable for room bridging information. Data is stored
       * as {@link RoomBridgeStoreEntry}s which have the following
@@ -41,7 +41,7 @@ object roomBridgeStoreMod {
       * @param db The connected NEDB database instance
       * @param opts Options for this store.
       */
-    def this(db: ^[js.Any]) = this()
+    def this(db: ^[Any]) = this()
     
     /**
       * A batched version of `getLinkedRemoteRooms`.
@@ -62,7 +62,7 @@ object roomBridgeStoreMod {
       *     some_key: "some_val"
       * });
       */
-    def getEntriesByLinkData(data: Record[String, js.Any]): js.Promise[js.Array[RoomBridgeStoreEntry]] = js.native
+    def getEntriesByLinkData(data: Record[String, Any]): js.Promise[js.Array[RoomBridgeStoreEntry]] = js.native
     
     /**
       * Get a list of entries based on the matrix_id of each entry.
@@ -87,7 +87,7 @@ object roomBridgeStoreMod {
       *     some_key: "some_val"
       * });
       */
-    def getEntriesByMatrixRoomData(data: Record[String, js.Any]): js.Promise[js.Array[RoomBridgeStoreEntry]] = js.native
+    def getEntriesByMatrixRoomData(data: Record[String, Any]): js.Promise[js.Array[RoomBridgeStoreEntry]] = js.native
     
     /**
       * Get a list of entries based on the remote_id of each entry.
@@ -105,7 +105,7 @@ object roomBridgeStoreMod {
       *     some_key: "some_val"
       * });
       */
-    def getEntriesByRemoteRoomData(data: Record[String, js.Any]): js.Promise[js.Array[RoomBridgeStoreEntry]] = js.native
+    def getEntriesByRemoteRoomData(data: Record[String, Any]): js.Promise[js.Array[RoomBridgeStoreEntry]] = js.native
     
     /**
       * Get an existing entry based on the provided entry ID.
@@ -146,10 +146,10 @@ object roomBridgeStoreMod {
       * @param linkId The id value to set. If not given, a unique ID will be
       * created from the matrix_id and remote_id.
       */
-    def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom): js.Promise[Double] = js.native
-    def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: Unit, linkId: String): js.Promise[Double] = js.native
-    def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: Record[String, js.Any]): js.Promise[Double] = js.native
-    def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: Record[String, js.Any], linkId: String): js.Promise[Double] = js.native
+    def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom): js.Promise[Unit] = js.native
+    def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: Unit, linkId: String): js.Promise[Unit] = js.native
+    def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: Record[String, Any]): js.Promise[Unit] = js.native
+    def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: Record[String, Any], linkId: String): js.Promise[Unit] = js.native
     
     /**
       * Remove entries based on the link's data value.
@@ -160,7 +160,7 @@ object roomBridgeStoreMod {
       *     a_key: "a_val"
       * });
       */
-    def removeEntriesByLinkData(data: Record[String, js.Any]): js.Promise[Double] = js.native
+    def removeEntriesByLinkData(data: Record[String, Any]): js.Promise[Double] = js.native
     
     /**
       * Remove entries based on matrix room data.
@@ -172,7 +172,7 @@ object roomBridgeStoreMod {
       *     a_key: "a_val"
       * });
       */
-    def removeEntriesByMatrixRoomData(data: Record[String, js.Any]): js.Promise[Double] = js.native
+    def removeEntriesByMatrixRoomData(data: Record[String, Any]): js.Promise[Double] = js.native
     
     /**
       * Remove entries with this matrix room id.
@@ -194,7 +194,7 @@ object roomBridgeStoreMod {
       *     a_key: "a_val"
       * });
       */
-    def removeEntriesByRemoteRoomData(data: Record[String, js.Any]): js.Promise[Double] = js.native
+    def removeEntriesByRemoteRoomData(data: Record[String, Any]): js.Promise[Double] = js.native
     
     /**
       * Remove entries with this remote room id.
@@ -222,13 +222,13 @@ object roomBridgeStoreMod {
       * @param matrixRoom
       * @see RoomBridgeStore#getMatrixRoom
       */
-    def setMatrixRoom(matrixRoom: MatrixRoom): js.Promise[Double] = js.native
+    def setMatrixRoom(matrixRoom: MatrixRoom): js.Promise[Unit] = js.native
     
     /**
       * Insert an entry, clobbering based on the ID of the entry.
       * @param entry
       */
-    def upsertEntry(entry: RoomBridgeStoreEntry): js.Promise[Double] = js.native
+    def upsertEntry(entry: RoomBridgeStoreEntry): js.Promise[Unit] = js.native
   }
   /* static members */
   object RoomBridgeStore {
@@ -242,10 +242,10 @@ object roomBridgeStoreMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/room-bridge-store", "RoomBridgeStoreEntry")
   @js.native
-  class RoomBridgeStoreEntry () extends StObject {
+  open class RoomBridgeStoreEntry () extends StObject {
     def this(doc: RoomStoreEntryDoc) = this()
     
-    var data: Record[String, js.Any] = js.native
+    var data: Record[String, Any] = js.native
     
     var id: js.UndefOr[String] = js.native
     
@@ -265,7 +265,7 @@ object roomBridgeStoreMod {
   
   trait RoomStoreEntryDoc extends StObject {
     
-    var data: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var data: js.UndefOr[Record[String, Any]] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -273,7 +273,7 @@ object roomBridgeStoreMod {
     
     var matrix_id: js.UndefOr[String] = js.undefined
     
-    var remote: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var remote: js.UndefOr[Record[String, Any]] = js.undefined
     
     var remote_id: js.UndefOr[String] = js.undefined
   }
@@ -286,7 +286,7 @@ object roomBridgeStoreMod {
     
     extension [Self <: RoomStoreEntryDoc](x: Self) {
       
-      inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -302,7 +302,7 @@ object roomBridgeStoreMod {
       
       inline def setMatrix_idUndefined: Self = StObject.set(x, "matrix_id", js.undefined)
       
-      inline def setRemote(value: Record[String, js.Any]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: Record[String, Any]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
       inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
       

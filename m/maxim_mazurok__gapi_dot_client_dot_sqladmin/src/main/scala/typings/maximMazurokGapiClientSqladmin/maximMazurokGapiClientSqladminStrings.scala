@@ -15,6 +15,6 @@ object maximMazurokGapiClientSqladminStrings {
   inline def sqladmin: sqladmin = "sqladmin".asInstanceOf[sqladmin]
   
   @js.native
-  sealed trait v1beta4 extends StObject
-  inline def v1beta4: v1beta4 = "v1beta4".asInstanceOf[v1beta4]
+  sealed trait v1 extends StObject
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

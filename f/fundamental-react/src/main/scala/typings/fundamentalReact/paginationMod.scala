@@ -11,14 +11,14 @@ object paginationMod {
   
   @JSImport("fundamental-react/lib/Pagination/Pagination", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PaginationProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PaginationProps, js.Object, Any]
   
-  type Pagination = Component[PaginationProps, js.Object, js.Any]
+  type Pagination = Component[PaginationProps, js.Object, Any]
   
   trait PaginationProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -26,7 +26,7 @@ object paginationMod {
     
     var displayTotal: js.UndefOr[Boolean] = js.undefined
     
-    var displayTotalProps: js.UndefOr[js.Any] = js.undefined
+    var displayTotalProps: js.UndefOr[Any] = js.undefined
     
     var initialPage: js.UndefOr[Double] = js.undefined
     
@@ -34,15 +34,15 @@ object paginationMod {
     
     var itemsTotal: Double
     
-    var linkProps: js.UndefOr[js.Any] = js.undefined
+    var linkProps: js.UndefOr[Any] = js.undefined
     
     var localizedText: js.UndefOr[Next] = js.undefined
     
-    var nextProps: js.UndefOr[js.Any] = js.undefined
+    var nextProps: js.UndefOr[Any] = js.undefined
     
-    def onClick(args: js.Any*): js.Any
+    def onClick(args: Any*): Any
     
-    var prevProps: js.UndefOr[js.Any] = js.undefined
+    var prevProps: js.UndefOr[Any] = js.undefined
     
     var totalText: js.UndefOr[String] = js.undefined
     
@@ -50,7 +50,7 @@ object paginationMod {
   }
   object PaginationProps {
     
-    inline def apply(itemsTotal: Double, onClick: /* repeated */ js.Any => js.Any): PaginationProps = {
+    inline def apply(itemsTotal: Double, onClick: /* repeated */ Any => Any): PaginationProps = {
       val __obj = js.Dynamic.literal(itemsTotal = itemsTotal.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[PaginationProps]
     }
@@ -67,7 +67,7 @@ object paginationMod {
       
       inline def setDisplayTotal(value: Boolean): Self = StObject.set(x, "displayTotal", value.asInstanceOf[js.Any])
       
-      inline def setDisplayTotalProps(value: js.Any): Self = StObject.set(x, "displayTotalProps", value.asInstanceOf[js.Any])
+      inline def setDisplayTotalProps(value: Any): Self = StObject.set(x, "displayTotalProps", value.asInstanceOf[js.Any])
       
       inline def setDisplayTotalPropsUndefined: Self = StObject.set(x, "displayTotalProps", js.undefined)
       
@@ -83,7 +83,7 @@ object paginationMod {
       
       inline def setItemsTotal(value: Double): Self = StObject.set(x, "itemsTotal", value.asInstanceOf[js.Any])
       
-      inline def setLinkProps(value: js.Any): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
+      inline def setLinkProps(value: Any): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
       
       inline def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
       
@@ -91,13 +91,13 @@ object paginationMod {
       
       inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
-      inline def setNextProps(value: js.Any): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
+      inline def setNextProps(value: Any): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
       
       inline def setNextPropsUndefined: Self = StObject.set(x, "nextProps", js.undefined)
       
-      inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      inline def setPrevProps(value: js.Any): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: Any): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
       inline def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
       

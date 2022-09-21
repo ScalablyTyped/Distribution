@@ -1,6 +1,6 @@
 package typings.formatjsEcma402Abstract
 
-import typings.formatjsEcma402Abstract.anon.`1`
+import typings.formatjsEcma402Abstract.anon.`0`
 import typings.std.Intl.NumberFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +12,5 @@ object computeExponentForMagnitudeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ComputeExponentForMagnitude(numberFormat: NumberFormat, magnitude: Double, hasGetInternalSlots: `1`): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponentForMagnitude")(numberFormat.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def ComputeExponentForMagnitude(numberFormat: NumberFormat, magnitude: Double, hasGetInternalSlots: `0`): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponentForMagnitude")(numberFormat.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

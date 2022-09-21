@@ -29,6 +29,13 @@ trait SketchViewModel
      with Evented {
   
   /**
+    * The [SimpleFillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html) displayed when actively creating a new `polygon` graphic using the [`polygon`](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool) tool.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeFillSymbol)
+    */
+  var activeFillSymbol: SimpleFillSymbol = js.native
+  
+  /**
     * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create) has been called), this property reflects the create tool being used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool)
@@ -36,18 +43,43 @@ trait SketchViewModel
   val activeTool: point | multipoint | polyline | polygon | circle | rectangle | move | transform | reshape = js.native
   
   /**
+    * Indicates if it is possible to perform a [redo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#redo) action in the current update session.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#canRedo)
+    */
+  def canRedo(): Boolean = js.native
+  
+  /**
+    * Indicates if it is possible to perform an [undo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#undo) action in the current update session.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#canUndo)
+    */
+  def canUndo(): Boolean = js.native
+  
+  /**
     * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event If called in the middle of a create operation, `cancel()` discards the partially created graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#cancel)
     */
-  def cancel(): Unit = js.native
+  def cancel(): scala.Unit = js.native
   
   /**
     * Completes the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event and changes the event's state to `complete`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#complete)
     */
-  def complete(): Unit = js.native
+  def complete(): scala.Unit = js.native
+  
+  /**
+    * Create a graphic with the geometry specified in the `tool` parameter.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create)
+    */
+  def create(tool: point | multipoint | polyline | polygon | rectangle | circle): scala.Unit = js.native
+  def create(
+    tool: point | multipoint | polyline | polygon | rectangle | circle,
+    createOptions: SketchViewModelCreateCreateOptions
+  ): scala.Unit = js.native
   
   /**
     * The graphic that is being created.
@@ -56,38 +88,8 @@ trait SketchViewModel
     */
   val createGraphic: Graphic = js.native
   
-  @JSName("create")
-  def create_circle(tool: circle): Unit = js.native
-  @JSName("create")
-  def create_circle(tool: circle, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
-  @JSName("create")
-  def create_multipoint(tool: multipoint): Unit = js.native
-  @JSName("create")
-  def create_multipoint(tool: multipoint, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
   /**
-    * Create a graphic with the geometry specified in the `tool` parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create)
-    */
-  @JSName("create")
-  def create_point(tool: point): Unit = js.native
-  @JSName("create")
-  def create_point(tool: point, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
-  @JSName("create")
-  def create_polygon(tool: polygon): Unit = js.native
-  @JSName("create")
-  def create_polygon(tool: polygon, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
-  @JSName("create")
-  def create_polyline(tool: polyline): Unit = js.native
-  @JSName("create")
-  def create_polyline(tool: polyline, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
-  @JSName("create")
-  def create_rectangle(tool: rectangle): Unit = js.native
-  @JSName("create")
-  def create_rectangle(tool: rectangle, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
-  
-  /**
-    * Default create options set for the Sketch widget.
+    * Default create options set for the SketchViewModel.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultCreateOptions)
     */
@@ -105,7 +107,14 @@ trait SketchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#delete)
     */
-  def delete(): Unit = js.native
+  def delete(): scala.Unit = js.native
+  
+  /**
+    * Options to configure the labels shown next to each segment of the geometry being created or updated.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#labelOptions)
+    */
+  var labelOptions: SketchLabelOptions = js.native
   
   /**
     * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the SketchViewModel.
@@ -126,32 +135,39 @@ trait SketchViewModel
   def on_update(name: update, eventHandler: SketchViewModelUpdateEventHandler): IHandle = js.native
   
   /**
-    * A  [SimpleMarkerSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html) or [PointSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html) used for representing the point geometry that is being drawn.
+    * A [SimpleMarkerSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html), [PointSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html), [TextSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html), [CIMSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html), or [WebStyleSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html) used for representing the point geometry that is being drawn.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#pointSymbol)
     */
-  var pointSymbol: SimpleMarkerSymbol | PointSymbol3D = js.native
+  var pointSymbol: SimpleMarkerSymbol | PointSymbol3D | TextSymbol | CIMSymbol | WebStyleSymbol = js.native
   
   /**
-    * A  [SimpleFillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html) or [PolygonSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html) used for representing the polygon geometry that is being drawn.
+    * A [SimpleFillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html), [PolygonSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html), or [CIMSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html) used for representing the polygon geometry that is being drawn.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#polygonSymbol)
     */
-  var polygonSymbol: SimpleFillSymbol | PolygonSymbol3D = js.native
+  var polygonSymbol: SimpleFillSymbol | PolygonSymbol3D | CIMSymbol = js.native
   
   /**
-    * A  [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html) or [LineSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html) used for representing the polyline geometry that is being drawn.
+    * A [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html), [LineSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html), or [CIMSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html) used for representing the polyline geometry that is being drawn.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#polylineSymbol)
     */
-  var polylineSymbol: SimpleLineSymbol | LineSymbol3D = js.native
+  var polylineSymbol: SimpleLineSymbol | LineSymbol3D | CIMSymbol = js.native
   
   /**
     * Incrementally redo actions recorded in the stack.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#redo)
     */
-  def redo(): Unit = js.native
+  def redo(): scala.Unit = js.native
+  
+  /**
+    * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for sketching.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#snappingOptions)
+    */
+  var snappingOptions: SnappingOptions = js.native
   
   /**
     * The sketch view model's state.
@@ -161,21 +177,28 @@ trait SketchViewModel
   val state: ready | disabled | active = js.native
   
   /**
+    * Options to configure the tooltip shown next to the cursor when creating or updating graphics.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#tooltipOptions)
+    */
+  var tooltipOptions: SketchTooltipOptions = js.native
+  
+  /**
     * Incrementally undo actions recorded in the stack.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#undo)
     */
-  def undo(): Unit = js.native
+  def undo(): scala.Unit = js.native
   
-  def update(graphics: js.Array[Graphic]): js.Promise[Unit] = js.native
-  def update(graphics: js.Array[Graphic], updateOptions: SketchViewModelUpdateUpdateOptions): js.Promise[Unit] = js.native
+  def update(graphics: js.Array[Graphic]): js.Promise[scala.Unit] = js.native
+  def update(graphics: js.Array[Graphic], updateOptions: SketchViewModelUpdateUpdateOptions): js.Promise[scala.Unit] = js.native
   /**
     * Initializes an update operation for the specified graphic(s) and fires [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  def update(graphics: Graphic): js.Promise[Unit] = js.native
-  def update(graphics: Graphic, updateOptions: SketchViewModelUpdateUpdateOptions): js.Promise[Unit] = js.native
+  def update(graphics: Graphic): js.Promise[scala.Unit] = js.native
+  def update(graphics: Graphic, updateOptions: SketchViewModelUpdateUpdateOptions): js.Promise[scala.Unit] = js.native
   
   /**
     * An array of graphics that are being updated by the SketchViewModel.

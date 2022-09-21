@@ -1,6 +1,5 @@
 package typings.highcharts.mod
 
-import typings.highcharts.highchartsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,14 +18,21 @@ trait ChartParallelAxesLabelsOptions extends StObject {
   var align: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highcharts) Whether to allow the axis labels to overlap. When false,
+    * overlapping labels are hidden.
+    */
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Gantt) For horizontal axes, the allowed degrees
     * of label rotation to prevent overlapping labels. If there is enough
     * space, labels are not rotated. As the chart gets narrower, it will start
     * rotating the labels -45 degrees, then remove every second label and try
-    * again with rotations 0 and -45 etc. Set it to `false` to disable
-    * rotation, which will cause the labels to word-wrap if possible.
+    * again with rotations 0 and -45 etc. Set it to `undefined` to disable
+    * rotation, which will cause the labels to word-wrap if possible. Defaults
+    * to `[-45]`` on bottom and top axes, `undefined` on left and right axes.
     */
-  var autoRotation: js.UndefOr[`false` | js.Array[Double]] = js.undefined
+  var autoRotation: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * (Highcharts, Gantt) When each category width is more than this many
@@ -52,18 +58,29 @@ trait ChartParallelAxesLabelsOptions extends StObject {
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) A format string for the axis label.
+    * (Highcharts) A format string for the axis label. The context is available
+    * as format string variables. For example, you can use `{text}` to insert
+    * the default formatted text. The recommended way of adding units for the
+    * label is using `text`, for example `{text} km`.
+    *
+    * To add custom numeric or datetime formatting, use `{value}` with
+    * formatting, for example `{value:.1f}` or `{value:%Y-%m-%d}`.
+    *
+    * See format string for more examples of formatting.
+    *
+    * The default value is not specified due to the dynamic nature of the
+    * default implementation.
     */
   var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Callback JavaScript function to format the label. The value
     * is given by `this.value`. Additional properties for `this` are `axis`,
-    * `chart`, `isFirst` and `isLast`. The value of the default label formatter
-    * can be retrieved by calling `this.axis.defaultLabelFormatter.call(this)`
-    * within the function.
+    * `chart`, `isFirst`, `isLast` and `text` which holds the value of the
+    * default formatter.
     *
-    * Defaults to: (see online documentation for example)
+    * Defaults to a built in function returning a formatted string depending on
+    * whether the axis is `category`, `datetime`, `numeric` or other.
     */
   var formatter: js.UndefOr[AxisLabelsFormatterCallbackFunction] = js.undefined
   
@@ -131,7 +148,8 @@ trait ChartParallelAxesLabelsOptions extends StObject {
   var reserveSpace: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) Rotation of the labels in degrees.
+    * (Highcharts) Rotation of the labels in degrees. When `undefined`, the
+    * `autoRotation` option takes precedence.
     */
   var rotation: js.UndefOr[Double] = js.undefined
   
@@ -148,7 +166,7 @@ trait ChartParallelAxesLabelsOptions extends StObject {
   
   /**
     * (Highcharts) Horizontal axes only. The number of lines to spread the
-    * labels over to make room or tighter labels.
+    * labels over to make room or tighter labels. 0 disables staggering.
     */
   var staggerLines: js.UndefOr[Double] = js.undefined
   
@@ -156,9 +174,10 @@ trait ChartParallelAxesLabelsOptions extends StObject {
     * (Highcharts) To show only every _n_'th label on the axis, set the step to
     * _n_. Setting the step to 2 shows every other label.
     *
-    * By default, the step is calculated automatically to avoid overlap. To
-    * prevent this, set it to 1\. This usually only happens on a category axis,
-    * and is often a sign that you have chosen the wrong axis type.
+    * By default, when 0, the step is calculated automatically to avoid
+    * overlap. To prevent this, set it to 1\. This usually only happens on a
+    * category axis, and is often a sign that you have chosen the wrong axis
+    * type.
     *
     * Read more at Axis docs => What axis should I use?
     */
@@ -215,7 +234,11 @@ object ChartParallelAxesLabelsOptions {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAutoRotation(value: `false` | js.Array[Double]): Self = StObject.set(x, "autoRotation", value.asInstanceOf[js.Any])
+    inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+    
+    inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
+    
+    inline def setAutoRotation(value: js.Array[Double]): Self = StObject.set(x, "autoRotation", value.asInstanceOf[js.Any])
     
     inline def setAutoRotationLimit(value: Double): Self = StObject.set(x, "autoRotationLimit", value.asInstanceOf[js.Any])
     
@@ -223,7 +246,7 @@ object ChartParallelAxesLabelsOptions {
     
     inline def setAutoRotationUndefined: Self = StObject.set(x, "autoRotation", js.undefined)
     
-    inline def setAutoRotationVarargs(value: Double*): Self = StObject.set(x, "autoRotation", js.Array(value :_*))
+    inline def setAutoRotationVarargs(value: Double*): Self = StObject.set(x, "autoRotation", js.Array(value*))
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
@@ -249,7 +272,7 @@ object ChartParallelAxesLabelsOptions {
     
     inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    inline def setLevelsVarargs(value: ChartParallelAxesLabelsLevelsOptions*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: ChartParallelAxesLabelsLevelsOptions*): Self = StObject.set(x, "levels", js.Array(value*))
     
     inline def setOverflow(value: OptionsOverflowValue): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     

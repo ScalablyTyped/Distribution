@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Workflow extends StObject {
   
   /**
-    * The date and time when the workflow was created.
+    * This structure indicates the details of the blueprint that this particular workflow is created from.
     */
-  var CreatedOn: js.UndefOr[TimestampValue] = js.undefined
+  var BlueprintDetails: js.UndefOr[typings.awsSdk.glueMod.BlueprintDetails] = js.undefined
   
   /**
-    * A collection of properties to be used as part of each execution of the workflow.
+    * The date and time when the workflow was created.
+    */
+  var CreatedOn: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * A collection of properties to be used as part of each execution of the workflow. The run properties are made available to each job in the workflow. A job can modify the properties for the next jobs in the flow.
     */
   var DefaultRunProperties: js.UndefOr[WorkflowRunProperties] = js.undefined
   
@@ -22,14 +27,14 @@ trait Workflow extends StObject {
   var Description: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The graph representing all the AWS Glue components that belong to the workflow as nodes and directed connections between them as edges.
+    * The graph representing all the Glue components that belong to the workflow as nodes and directed connections between them as edges.
     */
   var Graph: js.UndefOr[WorkflowGraph] = js.undefined
   
   /**
     * The date and time when the workflow was last modified.
     */
-  var LastModifiedOn: js.UndefOr[TimestampValue] = js.undefined
+  var LastModifiedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The information about the last execution of the workflow.
@@ -42,7 +47,7 @@ trait Workflow extends StObject {
   var MaxConcurrentRuns: js.UndefOr[NullableInteger] = js.undefined
   
   /**
-    * The name of the workflow representing the flow.
+    * The name of the workflow.
     */
   var Name: js.UndefOr[NameString] = js.undefined
 }
@@ -55,7 +60,11 @@ object Workflow {
   
   extension [Self <: Workflow](x: Self) {
     
-    inline def setCreatedOn(value: TimestampValue): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
+    inline def setBlueprintDetails(value: BlueprintDetails): Self = StObject.set(x, "BlueprintDetails", value.asInstanceOf[js.Any])
+    
+    inline def setBlueprintDetailsUndefined: Self = StObject.set(x, "BlueprintDetails", js.undefined)
+    
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
     
     inline def setCreatedOnUndefined: Self = StObject.set(x, "CreatedOn", js.undefined)
     
@@ -71,7 +80,7 @@ object Workflow {
     
     inline def setGraphUndefined: Self = StObject.set(x, "Graph", js.undefined)
     
-    inline def setLastModifiedOn(value: TimestampValue): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: js.Date): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     

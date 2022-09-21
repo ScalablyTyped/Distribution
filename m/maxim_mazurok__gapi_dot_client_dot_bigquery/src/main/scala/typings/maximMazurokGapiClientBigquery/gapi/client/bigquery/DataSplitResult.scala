@@ -9,6 +9,9 @@ trait DataSplitResult extends StObject {
   /** Table reference of the evaluation data after split. */
   var evaluationTable: js.UndefOr[TableReference] = js.undefined
   
+  /** Table reference of the test data after split. */
+  var testTable: js.UndefOr[TableReference] = js.undefined
+  
   /** Table reference of the training data after split. */
   var trainingTable: js.UndefOr[TableReference] = js.undefined
 }
@@ -24,6 +27,10 @@ object DataSplitResult {
     inline def setEvaluationTable(value: TableReference): Self = StObject.set(x, "evaluationTable", value.asInstanceOf[js.Any])
     
     inline def setEvaluationTableUndefined: Self = StObject.set(x, "evaluationTable", js.undefined)
+    
+    inline def setTestTable(value: TableReference): Self = StObject.set(x, "testTable", value.asInstanceOf[js.Any])
+    
+    inline def setTestTableUndefined: Self = StObject.set(x, "testTable", js.undefined)
     
     inline def setTrainingTable(value: TableReference): Self = StObject.set(x, "trainingTable", value.asInstanceOf[js.Any])
     

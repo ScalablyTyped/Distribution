@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "SortBy")
 @js.native
-class SortBy protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(props: js.Any) = this()
+open class SortBy protected ()
+  extends Component[SortByProps, js.Object, Any] {
+  def this(props: SortByProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: SortByProps, context: Any) = this()
 }

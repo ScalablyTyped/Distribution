@@ -31,7 +31,7 @@ object ExportUsersOptions {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: ExportUserField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: ExportUserField*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFormat(value: JobFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

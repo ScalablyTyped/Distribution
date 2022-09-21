@@ -1,56 +1,70 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Record
+import typings.weixinApp.anon.Cursor
+import typings.weixinApp.anon.Instantiable
+import typings.weixinApp.anon.Value
+import typings.weixinApp.weixinAppStrings.form
+import typings.weixinApp.weixinAppStrings.input
+import typings.weixinApp.weixinAppStrings.scroll
+import typings.weixinApp.weixinAppStrings.tap
+import typings.weixinApp.weixinAppStrings.touchcancel
+import typings.weixinApp.weixinAppStrings.touchend
+import typings.weixinApp.weixinAppStrings.touchforcechange
+import typings.weixinApp.weixinAppStrings.touchmove
+import typings.weixinApp.weixinAppStrings.touchstart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccelerometerChangeCallback = js.Function1[/* res */ typings.weixinApp.wx.AccelerometerData, scala.Unit]
+type AccelerometerChangeCallback = js.Function1[/* res */ AccelerometerData, Unit]
 
-type AccelerometerOptions = typings.weixinApp.wx.BaseOptions[js.Any, js.Any]
+type AccelerometerOptions = BaseOptions[Any, Any]
 
-type ArrayPropsDefinition[T] = js.Array[/* keyof T */ java.lang.String]
+type ArrayPropsDefinition[T] = js.Array[/* keyof T */ String]
 
-type ArrayType[T /* <: js.Array[js.Any] */] = js.Any
+type ArrayType[T /* <: js.Array[Any] */] = Any
 
-type BuiltInEvent[T /* <: typings.weixinApp.wx.EventType */, Detail] = typings.weixinApp.wx.BaseEvent[T, Detail]
+type BuiltInEvent[T /* <: EventType */, Detail] = BaseEvent[T, Detail]
 
-type CheckSessionOption = typings.weixinApp.wx.BaseOptions[js.Any, js.Any]
+type CheckSessionOption = BaseOptions[Any, Any]
 
 // CombinedInstance models the `this`, i.e. instance type for (user defined) component
-type CombinedInstance[Instance /* <: typings.weixinApp.wx.Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[
-(typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = Methods & Instance & typings.weixinApp.wx.UnboxBehaviorsMethods[Behaviors]
+type CombinedInstance[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = Methods & Instance & UnboxBehaviorsMethods[Behaviors]
 
-type CompassChangeCallback = js.Function1[/* res */ typings.weixinApp.wx.CompassData, scala.Unit]
+type CompassChangeCallback = js.Function1[/* res */ CompassData, Unit]
 
-type CompassOptions = typings.weixinApp.wx.BaseOptions[js.Any, js.Any]
+type CompassOptions = BaseOptions[Any, Any]
 
-type CustomEvent[T /* <: java.lang.String */, Detail] = typings.weixinApp.wx.BaseEvent[T, Detail]
+type CustomEvent[T /* <: String */, Detail] = BaseEvent[T, Detail]
 
 // #endregion
 // #region Compontent组件
 type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
 
-type DefaultMethods[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
+type DefaultMethods[V] = StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ Any, Any]]
 
-type DefaultProps = js.Object | (typings.std.Record[java.lang.String, js.Any])
+type DefaultProps = js.Object | (Record[String, Any])
 
-type FormEvent = typings.weixinApp.wx.BuiltInEvent[typings.weixinApp.weixinAppStrings.form, typings.weixinApp.anon.Value]
+type FormEvent = BuiltInEvent[form, Value]
 
 /**
   * 指定focus时的光标位置
   * @version 1.5.0
   */
-type InputEvent = typings.weixinApp.wx.BuiltInEvent[typings.weixinApp.weixinAppStrings.input, typings.weixinApp.anon.Cursor]
+type InputEvent = BuiltInEvent[input, Cursor]
 
 /**
   * https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/observer.html
   */
-type ObserversDefs[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
+type ObserversDefs[V] = StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ Any, Any]]
 
-type Prop[T] = js.Function0[T] | typings.weixinApp.anon.Instantiable[T]
+type Prop[T] = js.Function0[T] | Instantiable[T]
 
-type PropValidator[T] = typings.weixinApp.wx.PropOptions[T] | typings.weixinApp.wx.Prop[T] | js.Array[typings.weixinApp.wx.Prop[T]]
+type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
 
 /**
   * There are two valid ways to define the type of data / properties:
@@ -63,22 +77,22 @@ type PropValidator[T] = typings.weixinApp.wx.PropOptions[T] | typings.weixinApp.
   * Note this is different from PropOptions as it is the definitions you passed to Component function
   * whereas this type is for call-site.
   */
-type PropValueType[Def] = js.Any
+type PropValueType[Def] = Any
 
-type PropsDefinition[T] = typings.weixinApp.wx.ArrayPropsDefinition[T] | typings.weixinApp.wx.RecordPropsDefinition[T]
+type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
 
 type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]: weixin-app.wx.PropValidator<T[K]>}
-  */ typings.weixinApp.weixinAppStrings.RecordPropsDefinition & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.weixinApp.weixinAppStrings.RecordPropsDefinition & TopLevel[T]
 
-type RemoveSavedFileOptions = typings.weixinApp.wx.GetSavedFileInfoOptions
+type RemoveSavedFileOptions = GetSavedFileInfoOptions
 
 // #endregion
 // #region 网络API列表
 // 发起请求
-type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type RequestHeader = StringDictionary[String]
 
-type RmdirOptions = typings.weixinApp.wx.MkdirOptions
+type RmdirOptions = MkdirOptions
 
 // #endregion
 // #region App里的onLaunch、onShow回调参数
@@ -154,21 +168,21 @@ type RmdirOptions = typings.weixinApp.wx.MkdirOptions
   - typings.weixinApp.weixinAppNumbers.`1104`
   - scala.Double
 */
-type SceneValues = typings.weixinApp.wx._SceneValues | scala.Double
+type SceneValues = _SceneValues | Double
 
-type ScrollEvent = typings.weixinApp.wx.BuiltInEvent[typings.weixinApp.weixinAppStrings.scroll, js.Object]
+type ScrollEvent = BuiltInEvent[scroll, js.Object]
 
-type TapEvent = typings.weixinApp.wx.TouchEvent[typings.weixinApp.weixinAppStrings.tap]
+type TapEvent = TouchEvent[tap]
 
-type TouchCancelEvent = typings.weixinApp.wx.TouchEvent[typings.weixinApp.weixinAppStrings.touchcancel]
+type TouchCancelEvent = TouchEvent[touchcancel]
 
-type TouchEndEvent = typings.weixinApp.wx.TouchEvent[typings.weixinApp.weixinAppStrings.touchend]
+type TouchEndEvent = TouchEvent[touchend]
 
-type TouchForceChangeEvent = typings.weixinApp.wx.TouchEvent[typings.weixinApp.weixinAppStrings.touchforcechange]
+type TouchForceChangeEvent = TouchEvent[touchforcechange]
 
-type TouchMoveEvent = typings.weixinApp.wx.TouchEvent[typings.weixinApp.weixinAppStrings.touchmove]
+type TouchMoveEvent = TouchEvent[touchmove]
 
-type TouchStartEvent = typings.weixinApp.wx.TouchEvent[typings.weixinApp.weixinAppStrings.touchstart]
+type TouchStartEvent = TouchEvent[touchstart]
 
 type UnboxBehaviorData[T] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_DATA'] */ js.Any)
 
@@ -176,18 +190,12 @@ type UnboxBehaviorMethods[T] = js.Object | (/* import warning: importer.ImportTy
 
 type UnboxBehaviorProps[T] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_PROPS'] */ js.Any)
 
-type UnboxBehaviorsData[Behaviors /* <: js.Array[
-(typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = typings.weixinApp.wx.UnboxBehaviorData[
-typings.weixinApp.wx.UnionToIntersection[typings.weixinApp.wx.ArrayType[Behaviors]]]
+type UnboxBehaviorsData[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorData[UnionToIntersection[ArrayType[Behaviors]]]
 
-type UnboxBehaviorsMethods[Behaviors /* <: js.Array[
-(typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = typings.weixinApp.wx.UnboxBehaviorMethods[
-typings.weixinApp.wx.UnionToIntersection[typings.weixinApp.wx.ArrayType[Behaviors]]]
+type UnboxBehaviorsMethods[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorMethods[UnionToIntersection[ArrayType[Behaviors]]]
 
-type UnboxBehaviorsProps[Behaviors /* <: js.Array[
-(typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = typings.weixinApp.wx.UnboxBehaviorProps[
-typings.weixinApp.wx.UnionToIntersection[typings.weixinApp.wx.ArrayType[Behaviors]]]
+type UnboxBehaviorsProps[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorProps[UnionToIntersection[ArrayType[Behaviors]]]
 
-type UnionToIntersection[U] = js.Any
+type UnionToIntersection[U] = Any
 
-type WriteFileOptions = typings.weixinApp.wx.AppendFileOptions
+type WriteFileOptions = AppendFileOptions

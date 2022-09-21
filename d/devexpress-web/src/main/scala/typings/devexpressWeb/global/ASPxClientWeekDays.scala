@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWeekDays")
 @js.native
-class ASPxClientWeekDays ()
+open class ASPxClientWeekDays ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWeekDays {
   

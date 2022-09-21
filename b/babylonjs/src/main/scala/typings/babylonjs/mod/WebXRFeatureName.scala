@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "WebXRFeatureName")
 @js.native
-class WebXRFeatureName ()
+open class WebXRFeatureName ()
   extends typings.babylonjs.legacyMod.WebXRFeatureName
 /* static members */
 object WebXRFeatureName {
@@ -24,6 +24,20 @@ object WebXRFeatureName {
   @JSImport("babylonjs", "WebXRFeatureName.BACKGROUND_REMOVER")
   @js.native
   val BACKGROUND_REMOVER: String = js.native
+  
+  /**
+    * The name of the DOM overlay feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.DOM_OVERLAY")
+  @js.native
+  val DOM_OVERLAY: String = js.native
+  
+  /**
+    * The name of the eye tracking feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.EYE_TRACKING")
+  @js.native
+  val EYE_TRACKING: String = js.native
   
   /**
     * The name of the feature points feature.
@@ -45,6 +59,48 @@ object WebXRFeatureName {
   @JSImport("babylonjs", "WebXRFeatureName.HIT_TEST")
   @js.native
   val HIT_TEST: String = js.native
+  
+  /**
+    * The name of the image tracking feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.IMAGE_TRACKING")
+  @js.native
+  val IMAGE_TRACKING: String = js.native
+  
+  /**
+    * The name of the composition layers feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.LAYERS")
+  @js.native
+  val LAYERS: String = js.native
+  
+  /**
+    * The name of the light estimation feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.LIGHT_ESTIMATION")
+  @js.native
+  val LIGHT_ESTIMATION: String = js.native
+  
+  /**
+    * The name of the mesh detection feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.MESH_DETECTION")
+  @js.native
+  val MESH_DETECTION: String = js.native
+  
+  /**
+    * The name of the movement feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.MOVEMENT")
+  @js.native
+  val MOVEMENT: String = js.native
+  
+  /**
+    * The name of the near interaction feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.NEAR_INTERACTION")
+  @js.native
+  val NEAR_INTERACTION: String = js.native
   
   /**
     * physics impostors for xr controllers feature
@@ -73,4 +129,11 @@ object WebXRFeatureName {
   @JSImport("babylonjs", "WebXRFeatureName.TELEPORTATION")
   @js.native
   val TELEPORTATION: String = js.native
+  
+  /**
+    * The name of the walking locomotion feature
+    */
+  @JSImport("babylonjs", "WebXRFeatureName.WALKING_LOCOMOTION")
+  @js.native
+  val WALKING_LOCOMOTION: String = js.native
 }

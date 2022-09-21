@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReEncryptResponse extends StObject {
   
   /**
-    * The reencrypted data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
+    * The reencrypted data. When you use the HTTP API or the Amazon Web Services CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
   var CiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   
@@ -17,7 +17,7 @@ trait ReEncryptResponse extends StObject {
   var DestinationEncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.undefined
   
   /**
-    * The Amazon Resource Name (key ARN) of the CMK that was used to reencrypt the data.
+    * The Amazon Resource Name (key ARN) of the KMS key that was used to reencrypt the data.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
@@ -27,7 +27,7 @@ trait ReEncryptResponse extends StObject {
   var SourceEncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.undefined
   
   /**
-    * Unique identifier of the CMK used to originally encrypt the data.
+    * Unique identifier of the KMS key used to originally encrypt the data.
     */
   var SourceKeyId: js.UndefOr[KeyIdType] = js.undefined
 }

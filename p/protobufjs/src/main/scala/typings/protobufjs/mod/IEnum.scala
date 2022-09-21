@@ -10,7 +10,7 @@ trait IEnum
      with AnyNestedObject {
   
   /** Enum options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** Enum values */
   var values: StringDictionary[Double]
@@ -24,7 +24,7 @@ object IEnum {
   
   extension [Self <: IEnum](x: Self) {
     
-    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

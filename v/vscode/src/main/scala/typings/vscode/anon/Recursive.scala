@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Recursive extends StObject {
   
-  var recursive: Boolean
+  val recursive: Boolean
 }
 object Recursive {
   

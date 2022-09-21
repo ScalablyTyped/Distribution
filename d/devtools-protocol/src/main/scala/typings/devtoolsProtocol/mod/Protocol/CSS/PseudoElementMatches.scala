@@ -13,6 +13,11 @@ trait PseudoElementMatches extends StObject {
   var matches: js.Array[RuleMatch]
   
   /**
+    * Pseudo element custom ident.
+    */
+  var pseudoIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
     * Pseudo element type.
     */
   var pseudoType: PseudoType
@@ -28,7 +33,11 @@ object PseudoElementMatches {
     
     inline def setMatches(value: js.Array[RuleMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    inline def setMatchesVarargs(value: RuleMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: RuleMatch*): Self = StObject.set(x, "matches", js.Array(value*))
+    
+    inline def setPseudoIdentifier(value: String): Self = StObject.set(x, "pseudoIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setPseudoIdentifierUndefined: Self = StObject.set(x, "pseudoIdentifier", js.undefined)
     
     inline def setPseudoType(value: PseudoType): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
   }

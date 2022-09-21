@@ -20,14 +20,12 @@ object breakpointsMod extends Shortcut {
     
     var small: Columns
     
-    var xlarge: Columns
-    
     var xsmall: Columns
   }
   object Breakpoints {
     
-    inline def apply(large: Columns, medium: Columns, small: Columns, xlarge: Columns, xsmall: Columns): Breakpoints = {
-      val __obj = js.Dynamic.literal(large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], xlarge = xlarge.asInstanceOf[js.Any], xsmall = xsmall.asInstanceOf[js.Any])
+    inline def apply(large: Columns, medium: Columns, small: Columns, xsmall: Columns): Breakpoints = {
+      val __obj = js.Dynamic.literal(large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], xsmall = xsmall.asInstanceOf[js.Any])
       __obj.asInstanceOf[Breakpoints]
     }
     
@@ -38,8 +36,6 @@ object breakpointsMod extends Shortcut {
       inline def setMedium(value: Columns): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
       inline def setSmall(value: Columns): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
-      
-      inline def setXlarge(value: Columns): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
       
       inline def setXsmall(value: Columns): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
     }

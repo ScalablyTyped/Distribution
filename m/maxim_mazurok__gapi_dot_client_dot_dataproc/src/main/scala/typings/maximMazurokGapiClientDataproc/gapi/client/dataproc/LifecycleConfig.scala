@@ -17,7 +17,7 @@ trait LifecycleConfig extends StObject {
   
   /**
     * Optional. The duration to keep the cluster alive while idling (when no jobs are running). Passing this threshold will cause the cluster to be deleted. Minimum value is 5 minutes;
-    * maximum value is 14 days (see JSON representation of Duration (https://developers.google.com/protocol-buffers/docs/proto3#json).
+    * maximum value is 14 days (see JSON representation of Duration (https://developers.google.com/protocol-buffers/docs/proto3#json)).
     */
   var idleDeleteTtl: js.UndefOr[String] = js.undefined
   

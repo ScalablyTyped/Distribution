@@ -33,6 +33,6 @@ object ListRoleAliasesResponse {
     
     inline def setRoleAliasesUndefined: Self = StObject.set(x, "roleAliases", js.undefined)
     
-    inline def setRoleAliasesVarargs(value: RoleAlias*): Self = StObject.set(x, "roleAliases", js.Array(value :_*))
+    inline def setRoleAliasesVarargs(value: RoleAlias*): Self = StObject.set(x, "roleAliases", js.Array(value*))
   }
 }

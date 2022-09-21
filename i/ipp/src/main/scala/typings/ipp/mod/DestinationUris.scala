@@ -31,7 +31,7 @@ object DestinationUris {
     
     inline def `setDestination-attributesUndefined`: Self = StObject.set(x, "destination-attributes", js.undefined)
     
-    inline def `setDestination-attributesVarargs`(value: js.Object*): Self = StObject.set(x, "destination-attributes", js.Array(value :_*))
+    inline def `setDestination-attributesVarargs`(value: js.Object*): Self = StObject.set(x, "destination-attributes", js.Array(value*))
     
     inline def `setDestination-uri`(value: String): Self = StObject.set(x, "destination-uri", value.asInstanceOf[js.Any])
     

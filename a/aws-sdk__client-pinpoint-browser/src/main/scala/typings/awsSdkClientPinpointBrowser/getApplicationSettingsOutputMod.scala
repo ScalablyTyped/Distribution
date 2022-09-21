@@ -8,5 +8,5 @@ object getApplicationSettingsOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetApplicationSettingsOutput", "GetApplicationSettingsOutput")
   @js.native
-  val GetApplicationSettingsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetApplicationSettingsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

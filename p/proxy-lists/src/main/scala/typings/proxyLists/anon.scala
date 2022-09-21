@@ -48,7 +48,7 @@ object anon {
       
       inline def setAnonymityLevelsUndefined: Self = StObject.set(x, "anonymityLevels", js.undefined)
       
-      inline def setAnonymityLevelsVarargs(value: AnonymityLevel*): Self = StObject.set(x, "anonymityLevels", js.Array(value :_*))
+      inline def setAnonymityLevelsVarargs(value: AnonymityLevel*): Self = StObject.set(x, "anonymityLevels", js.Array(value*))
       
       inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
@@ -56,11 +56,11 @@ object anon {
       
       inline def setCountriesBlackListUndefined: Self = StObject.set(x, "countriesBlackList", js.undefined)
       
-      inline def setCountriesBlackListVarargs(value: String*): Self = StObject.set(x, "countriesBlackList", js.Array(value :_*))
+      inline def setCountriesBlackListVarargs(value: String*): Self = StObject.set(x, "countriesBlackList", js.Array(value*))
       
       inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
       
-      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
       
       inline def setDefaultRequestOptions(value: CoreOptions): Self = StObject.set(x, "defaultRequestOptions", value.asInstanceOf[js.Any])
       
@@ -74,13 +74,13 @@ object anon {
       
       inline def setIpTypesUndefined: Self = StObject.set(x, "ipTypes", js.undefined)
       
-      inline def setIpTypesVarargs(value: IPType*): Self = StObject.set(x, "ipTypes", js.Array(value :_*))
+      inline def setIpTypesVarargs(value: IPType*): Self = StObject.set(x, "ipTypes", js.Array(value*))
       
       inline def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
       inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value*))
       
       inline def setSeries(value: Boolean): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
       
@@ -90,13 +90,13 @@ object anon {
       
       inline def setSourcesBlackListUndefined: Self = StObject.set(x, "sourcesBlackList", js.undefined)
       
-      inline def setSourcesBlackListVarargs(value: String*): Self = StObject.set(x, "sourcesBlackList", js.Array(value :_*))
+      inline def setSourcesBlackListVarargs(value: String*): Self = StObject.set(x, "sourcesBlackList", js.Array(value*))
       
       inline def setSourcesWhiteList(value: js.Array[String]): Self = StObject.set(x, "sourcesWhiteList", value.asInstanceOf[js.Any])
       
       inline def setSourcesWhiteListUndefined: Self = StObject.set(x, "sourcesWhiteList", js.undefined)
       
-      inline def setSourcesWhiteListVarargs(value: String*): Self = StObject.set(x, "sourcesWhiteList", js.Array(value :_*))
+      inline def setSourcesWhiteListVarargs(value: String*): Self = StObject.set(x, "sourcesWhiteList", js.Array(value*))
     }
   }
 }

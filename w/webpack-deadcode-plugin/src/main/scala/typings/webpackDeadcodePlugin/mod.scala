@@ -1,6 +1,5 @@
 package typings.webpackDeadcodePlugin
 
-import typings.std.Plugin
 import typings.webpackDeadcodePlugin.anon.RequiredOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,10 +9,20 @@ object mod {
   
   @JSImport("webpack-deadcode-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with WebpackDeadcodePlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def handleAfterEmit(
+      options: RequiredOptions,
+      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var options: Options = js.native
   }
   
   trait Options extends StObject {
@@ -69,7 +78,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFailOnHint(value: Boolean): Self = StObject.set(x, "failOnHint", value.asInstanceOf[js.Any])
       
@@ -83,21 +92,38 @@ object mod {
       
       inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
     }
   }
   
-  @js.native
-  trait WebpackDeadcodePlugin
-    extends StObject
-       with Plugin {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ trait WebpackDeadcodePlugin extends StObject {
     
     def handleAfterEmit(
       options: RequiredOptions,
-      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any,
+      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any,
       callback: js.Function0[Unit]
-    ): Unit = js.native
+    ): Unit
     
-    var options: Options = js.native
+    var options: Options
+  }
+  object WebpackDeadcodePlugin {
+    
+    inline def apply(
+      handleAfterEmit: (RequiredOptions, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any, js.Function0[Unit]) => Unit,
+      options: Options
+    ): WebpackDeadcodePlugin = {
+      val __obj = js.Dynamic.literal(handleAfterEmit = js.Any.fromFunction3(handleAfterEmit), options = options.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WebpackDeadcodePlugin]
+    }
+    
+    extension [Self <: WebpackDeadcodePlugin](x: Self) {
+      
+      inline def setHandleAfterEmit(
+        value: (RequiredOptions, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any, js.Function0[Unit]) => Unit
+      ): Self = StObject.set(x, "handleAfterEmit", js.Any.fromFunction3(value))
+      
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    }
   }
 }

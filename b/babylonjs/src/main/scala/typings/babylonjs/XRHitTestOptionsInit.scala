@@ -25,7 +25,7 @@ object XRHitTestOptionsInit {
     
     inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    inline def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value*))
     
     inline def setOffsetRay(value: XRRay): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ A low-level Node.js RocksDB binding
 | Full name          | rocksdb |
 | Keywords           | leveldb, level |
 | # releases         | 5 |
-| # dependents       | 20 |
-| # downloads        | 37797 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 8977.0 |
+| # stars            | 186.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/rocksdb)

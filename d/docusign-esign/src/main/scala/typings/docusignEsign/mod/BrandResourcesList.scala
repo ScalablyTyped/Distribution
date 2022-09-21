@@ -24,6 +24,6 @@ object BrandResourcesList {
     
     inline def setResourcesContentTypesUndefined: Self = StObject.set(x, "resourcesContentTypes", js.undefined)
     
-    inline def setResourcesContentTypesVarargs(value: BrandResources*): Self = StObject.set(x, "resourcesContentTypes", js.Array(value :_*))
+    inline def setResourcesContentTypesVarargs(value: BrandResources*): Self = StObject.set(x, "resourcesContentTypes", js.Array(value*))
   }
 }

@@ -6,9 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NPR extends StObject {
   
+  var BYN: js.Array[js.UndefOr[String]]
+  
   var JPY: js.Array[String]
   
   var NPR: js.Array[String]
+  
+  var PHP: js.Array[js.UndefOr[String]]
   
   var THB: js.Array[String]
   
@@ -16,27 +20,42 @@ trait NPR extends StObject {
 }
 object NPR {
   
-  inline def apply(JPY: js.Array[String], NPR: js.Array[String], THB: js.Array[String], USD: js.Array[String]): NPR = {
-    val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], NPR = NPR.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
+  inline def apply(
+    BYN: js.Array[js.UndefOr[String]],
+    JPY: js.Array[String],
+    NPR: js.Array[String],
+    PHP: js.Array[js.UndefOr[String]],
+    THB: js.Array[String],
+    USD: js.Array[String]
+  ): NPR = {
+    val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], NPR = NPR.asInstanceOf[js.Any], PHP = PHP.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
     __obj.asInstanceOf[NPR]
   }
   
   extension [Self <: NPR](x: Self) {
     
+    inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
+    
+    inline def setBYNVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "BYN", js.Array(value*))
+    
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setNPR(value: js.Array[String]): Self = StObject.set(x, "NPR", value.asInstanceOf[js.Any])
     
-    inline def setNPRVarargs(value: String*): Self = StObject.set(x, "NPR", js.Array(value :_*))
+    inline def setNPRVarargs(value: String*): Self = StObject.set(x, "NPR", js.Array(value*))
+    
+    inline def setPHP(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "PHP", value.asInstanceOf[js.Any])
+    
+    inline def setPHPVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "PHP", js.Array(value*))
     
     inline def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
     
-    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
+    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

@@ -41,7 +41,7 @@ object anon {
       
       inline def setBootstrapNodesUndefined: Self = StObject.set(x, "bootstrapNodes", js.undefined)
       
-      inline def setBootstrapNodesVarargs(value: BootstrapNode*): Self = StObject.set(x, "bootstrapNodes", js.Array(value :_*))
+      inline def setBootstrapNodesVarargs(value: BootstrapNode*): Self = StObject.set(x, "bootstrapNodes", js.Array(value*))
       
       inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
@@ -59,7 +59,7 @@ object anon {
       
       inline def setHardforksUndefined: Self = StObject.set(x, "hardforks", js.undefined)
       
-      inline def setHardforksVarargs(value: Hardfork*): Self = StObject.set(x, "hardforks", js.Array(value :_*))
+      inline def setHardforksVarargs(value: Hardfork*): Self = StObject.set(x, "hardforks", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

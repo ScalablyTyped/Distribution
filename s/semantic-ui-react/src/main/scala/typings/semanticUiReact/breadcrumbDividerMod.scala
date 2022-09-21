@@ -3,10 +3,10 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.iconIconMod.IconProps
@@ -18,12 +18,12 @@ object breadcrumbDividerMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Breadcrumb/BreadcrumbDivider", JSImport.Default)
   @js.native
-  val default: StatelessComponent[BreadcrumbDividerProps] = js.native
+  val default: FC[BreadcrumbDividerProps] = js.native
   
   trait BreadcrumbDividerProps
     extends StObject
        with StrictBreadcrumbDividerProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object BreadcrumbDividerProps {
     
     inline def apply(): BreadcrumbDividerProps = {
@@ -35,7 +35,7 @@ object breadcrumbDividerMod extends Shortcut {
   trait StrictBreadcrumbDividerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -58,7 +58,7 @@ object breadcrumbDividerMod extends Shortcut {
     
     extension [Self <: StrictBreadcrumbDividerProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -84,8 +84,8 @@ object breadcrumbDividerMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[BreadcrumbDividerProps]
+  type _To = FC[BreadcrumbDividerProps]
   
   /* This means you don't have to write `default`, but can instead just say `breadcrumbDividerMod.foo` */
-  override def _to: StatelessComponent[BreadcrumbDividerProps] = default
+  override def _to: FC[BreadcrumbDividerProps] = default
 }

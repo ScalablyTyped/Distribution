@@ -33,7 +33,7 @@ object DataSourceTransportReadOptionsData {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setGroupVarargs(value: DataSourceGroupItem*): Self = StObject.set(x, "group", js.Array(value :_*))
+    inline def setGroupVarargs(value: DataSourceGroupItem*): Self = StObject.set(x, "group", js.Array(value*))
     
     inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object DataSourceTransportReadOptionsData {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: DataSourceSortItem*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: DataSourceSortItem*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     

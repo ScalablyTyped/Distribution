@@ -44,7 +44,7 @@ object XSearchableDictionaryList {
     getDictionaries: () => SafeArray[XDictionary],
     getDictionaryByName: String => XDictionary,
     queryDictionaryEntry: (String, Locale, Boolean, Boolean) => XDictionaryEntry,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDictionary: XDictionary => Boolean,
     removeDictionaryListEventListener: XDictionaryListEventListener => Boolean

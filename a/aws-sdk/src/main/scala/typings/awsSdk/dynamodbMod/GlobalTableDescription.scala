@@ -9,7 +9,7 @@ trait GlobalTableDescription extends StObject {
   /**
     * The creation time of the global table.
     */
-  var CreationDateTime: js.UndefOr[Date] = js.undefined
+  var CreationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique identifier of the global table.
@@ -40,7 +40,7 @@ object GlobalTableDescription {
   
   extension [Self <: GlobalTableDescription](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
@@ -60,6 +60,6 @@ object GlobalTableDescription {
     
     inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
     
-    inline def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+    inline def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
   }
 }

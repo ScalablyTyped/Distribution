@@ -10,10 +10,10 @@ The lodash method `_.overArgs` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.overargs |
 | Keywords           | lodash-modularized, overargs |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 5982 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 91.66666666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

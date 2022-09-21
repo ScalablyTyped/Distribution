@@ -14,7 +14,7 @@ object mod {
     * @param {Object} sourcemap source map for the generated file
     * @return {StackMapper} stack mapper for the particular source map
     */
-  inline def apply(sourcemap: js.Any): StackMapper = ^.asInstanceOf[js.Dynamic].apply(sourcemap.asInstanceOf[js.Any]).asInstanceOf[StackMapper]
+  inline def apply(sourcemap: Any): StackMapper = ^.asInstanceOf[js.Dynamic].apply(sourcemap.asInstanceOf[js.Any]).asInstanceOf[StackMapper]
   
   @JSImport("stack-mapper", JSImport.Namespace)
   @js.native
@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("stack-mapper", "StackMapper")
   @js.native
-  class StackMapper () extends StObject {
+  open class StackMapper () extends StObject {
     
     /**
       * Maps the trace statements of the given error stack and replaces locations

@@ -1,9 +1,9 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.mod.global.JQueryPromise
-import typings.devextreme.mod.global.Promise
+import typings.devextreme.anon.FormData
+import typings.devextreme.anon.`3`
+import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.std.Blob
-import typings.std.Date
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fileManagement {
   
+  object CustomFileSystemProvider {
+    
+    type Options = CustomFileSystemProviderOptions
+  }
   type CustomFileSystemProvider = FileSystemProviderBase
   
   trait CustomFileSystemProviderOptions
@@ -18,107 +22,89 @@ object fileManagement {
        with FileSystemProviderBaseOptions[CustomFileSystemProvider] {
     
     /**
-      * [descr:CustomFileSystemProvider.Options.abortFileUpload]
+      * A function that cancels the file upload.
       */
     var abortFileUpload: js.UndefOr[
         js.Function3[
           /* file */ File, 
           /* uploadInfo */ UploadInfo, 
           /* destinationDirectory */ FileSystemItem, 
-          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
+          js.Thenable[Any] | Any
         ]
       ] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.copyItem]
+      * A function that copies files or directories.
       */
     var copyItem: js.UndefOr[
         js.Function2[
           /* item */ FileSystemItem, 
           /* destinationDirectory */ FileSystemItem, 
-          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
+          js.Thenable[Any] | Any
         ]
       ] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.createDirectory]
+      * A function that creates a directory.
       */
     var createDirectory: js.UndefOr[
-        js.Function2[
-          /* parentDirectory */ FileSystemItem, 
-          /* name */ String, 
-          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
-        ]
+        js.Function2[/* parentDirectory */ FileSystemItem, /* name */ String, js.Thenable[Any] | Any]
       ] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.deleteItem]
+      * A function that deletes a file or directory.
       */
-    var deleteItem: js.UndefOr[
-        js.Function1[/* item */ FileSystemItem, Promise[js.Any] | JQueryPromise[js.Any] | js.Any]
-      ] = js.undefined
+    var deleteItem: js.UndefOr[js.Function1[/* item */ FileSystemItem, js.Thenable[Any] | Any]] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.downloadItems]
+      * A function that downloads files.
       */
-    var downloadItems: js.UndefOr[js.Function1[/* items */ js.Array[FileSystemItem], js.Any]] = js.undefined
+    var downloadItems: js.UndefOr[js.Function1[/* items */ js.Array[FileSystemItem], Unit]] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.getItems]
+      * A function that gets file system items.
       */
     var getItems: js.UndefOr[
-        js.Function1[
-          /* parentDirectory */ FileSystemItem, 
-          Promise[js.Array[js.Any]] | JQueryPromise[js.Array[js.Any]] | js.Array[js.Any]
-        ]
+        js.Function1[/* parentDirectory */ FileSystemItem, js.Thenable[js.Array[Any]] | js.Array[Any]]
       ] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.getItemsContent]
+      * A function that get items content.
       */
-    var getItemsContent: js.UndefOr[
-        js.Function1[
-          /* items */ js.Array[FileSystemItem], 
-          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
-        ]
-      ] = js.undefined
+    var getItemsContent: js.UndefOr[js.Function1[/* items */ js.Array[FileSystemItem], js.Thenable[Any] | Any]] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.hasSubDirectoriesExpr]
+      * A function or the name of a data source field that provides information on whether a file or directory contains sub directories.
       */
     var hasSubDirectoriesExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.moveItem]
+      * A function that moves files and directories.
       */
     var moveItem: js.UndefOr[
         js.Function2[
           /* item */ FileSystemItem, 
           /* destinationDirectory */ FileSystemItem, 
-          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
+          js.Thenable[Any] | Any
         ]
       ] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.renameItem]
+      * A function that renames files and directories.
       */
     var renameItem: js.UndefOr[
-        js.Function2[
-          /* item */ FileSystemItem, 
-          /* newName */ String, 
-          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
-        ]
+        js.Function2[/* item */ FileSystemItem, /* newName */ String, js.Thenable[Any] | Any]
       ] = js.undefined
     
     /**
-      * [descr:CustomFileSystemProvider.Options.uploadFileChunk]
+      * A function that uploads a file in chunks.
       */
     var uploadFileChunk: js.UndefOr[
         js.Function3[
           /* file */ File, 
           /* uploadInfo */ UploadInfo, 
           /* destinationDirectory */ FileSystemItem, 
-          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
+          js.Thenable[Any] | Any
         ]
       ] = js.undefined
   }
@@ -132,36 +118,32 @@ object fileManagement {
     extension [Self <: CustomFileSystemProviderOptions](x: Self) {
       
       inline def setAbortFileUpload(
-        value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
+        value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => js.Thenable[Any] | Any
       ): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
       
       inline def setAbortFileUploadUndefined: Self = StObject.set(x, "abortFileUpload", js.undefined)
       
       inline def setCopyItem(
-        value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
+        value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => js.Thenable[Any] | Any
       ): Self = StObject.set(x, "copyItem", js.Any.fromFunction2(value))
       
       inline def setCopyItemUndefined: Self = StObject.set(x, "copyItem", js.undefined)
       
-      inline def setCreateDirectory(
-        value: (/* parentDirectory */ FileSystemItem, /* name */ String) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
-      ): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
+      inline def setCreateDirectory(value: (/* parentDirectory */ FileSystemItem, /* name */ String) => js.Thenable[Any] | Any): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
       
       inline def setCreateDirectoryUndefined: Self = StObject.set(x, "createDirectory", js.undefined)
       
-      inline def setDeleteItem(value: /* item */ FileSystemItem => Promise[js.Any] | JQueryPromise[js.Any] | js.Any): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
+      inline def setDeleteItem(value: /* item */ FileSystemItem => js.Thenable[Any] | Any): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
       
       inline def setDeleteItemUndefined: Self = StObject.set(x, "deleteItem", js.undefined)
       
-      inline def setDownloadItems(value: /* items */ js.Array[FileSystemItem] => js.Any): Self = StObject.set(x, "downloadItems", js.Any.fromFunction1(value))
+      inline def setDownloadItems(value: /* items */ js.Array[FileSystemItem] => Unit): Self = StObject.set(x, "downloadItems", js.Any.fromFunction1(value))
       
       inline def setDownloadItemsUndefined: Self = StObject.set(x, "downloadItems", js.undefined)
       
-      inline def setGetItems(
-        value: /* parentDirectory */ FileSystemItem => Promise[js.Array[js.Any]] | JQueryPromise[js.Array[js.Any]] | js.Array[js.Any]
-      ): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
+      inline def setGetItems(value: /* parentDirectory */ FileSystemItem => js.Thenable[js.Array[Any]] | js.Array[Any]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      inline def setGetItemsContent(value: /* items */ js.Array[FileSystemItem] => Promise[js.Any] | JQueryPromise[js.Any] | js.Any): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
+      inline def setGetItemsContent(value: /* items */ js.Array[FileSystemItem] => js.Thenable[Any] | Any): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
       
       inline def setGetItemsContentUndefined: Self = StObject.set(x, "getItemsContent", js.undefined)
       
@@ -172,87 +154,125 @@ object fileManagement {
       inline def setHasSubDirectoriesExprUndefined: Self = StObject.set(x, "hasSubDirectoriesExpr", js.undefined)
       
       inline def setMoveItem(
-        value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
+        value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => js.Thenable[Any] | Any
       ): Self = StObject.set(x, "moveItem", js.Any.fromFunction2(value))
       
       inline def setMoveItemUndefined: Self = StObject.set(x, "moveItem", js.undefined)
       
-      inline def setRenameItem(
-        value: (/* item */ FileSystemItem, /* newName */ String) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
-      ): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
+      inline def setRenameItem(value: (/* item */ FileSystemItem, /* newName */ String) => js.Thenable[Any] | Any): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
       
       inline def setRenameItemUndefined: Self = StObject.set(x, "renameItem", js.undefined)
       
       inline def setUploadFileChunk(
-        value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
+        value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => js.Thenable[Any] | Any
       ): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
       
       inline def setUploadFileChunkUndefined: Self = StObject.set(x, "uploadFileChunk", js.undefined)
     }
   }
   
+  trait FileSystemError extends StObject {
+    
+    /**
+      * The error code.
+      */
+    var errorCode: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The error message.
+      */
+    var errorText: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The processed file or directory.
+      */
+    var fileSystemItem: js.UndefOr[FileSystemItem] = js.undefined
+  }
+  object FileSystemError {
+    
+    inline def apply(): FileSystemError = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileSystemError]
+    }
+    
+    extension [Self <: FileSystemError](x: Self) {
+      
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+      
+      inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+      
+      inline def setErrorTextUndefined: Self = StObject.set(x, "errorText", js.undefined)
+      
+      inline def setFileSystemItem(value: FileSystemItem): Self = StObject.set(x, "fileSystemItem", value.asInstanceOf[js.Any])
+      
+      inline def setFileSystemItemUndefined: Self = StObject.set(x, "fileSystemItem", js.undefined)
+    }
+  }
+  
   trait FileSystemItem extends StObject {
     
     /**
-      * [descr:FileSystemItem.dataItem]
+      * The file system data object that stores information about the file system item (name, size, modification date, etc.).
       */
-    var dataItem: js.Any
+    var dataItem: Any
     
     /**
-      * [descr:FileSystemItem.dateModified]
+      * A timestamp that indicates when the file system item was last modified.
       */
-    var dateModified: Date
+    var dateModified: js.Date
     
     /**
-      * [descr:FileSystemItem.getFileExtension()]
+      * Gets a file&apos;s extension.
       */
     def getFileExtension(): String
     
     /**
-      * [descr:FileSystemItem.hasSubDirectories]
+      * Specifies whether a directory has subdirectories.
       */
     var hasSubDirectories: Boolean
     
     /**
-      * [descr:FileSystemItem.isDirectory]
+      * Specifies whether the file system item is a directory.
       */
     var isDirectory: Boolean
     
     /**
-      * [descr:FileSystemItem.key]
+      * The file system item&apos;s key.
       */
     var key: String
     
     /**
-      * [descr:FileSystemItem.name]
+      * The file system item&apos;s name.
       */
     var name: String
     
     /**
-      * [descr:FileSystemItem.path]
+      * The file system item&apos;s path.
       */
     var path: String
     
     /**
-      * [descr:FileSystemItem.pathKeys]
+      * The file system item&apos;s path specified in keys.
       */
     var pathKeys: js.Array[String]
     
     /**
-      * [descr:FileSystemItem.size]
+      * The file system item&apos;s size (in bytes).
       */
     var size: Double
     
     /**
-      * [descr:FileSystemItem.thumbnail]
+      * An icon (URL) to be used as the file system item&apos;s thumbnail.
       */
     var thumbnail: String
   }
   object FileSystemItem {
     
     inline def apply(
-      dataItem: js.Any,
-      dateModified: Date,
+      dataItem: Any,
+      dateModified: js.Date,
       getFileExtension: () => String,
       hasSubDirectories: Boolean,
       isDirectory: Boolean,
@@ -269,9 +289,9 @@ object fileManagement {
     
     extension [Self <: FileSystemItem](x: Self) {
       
-      inline def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+      inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
       
-      inline def setDateModified(value: Date): Self = StObject.set(x, "dateModified", value.asInstanceOf[js.Any])
+      inline def setDateModified(value: js.Date): Self = StObject.set(x, "dateModified", value.asInstanceOf[js.Any])
       
       inline def setGetFileExtension(value: () => String): Self = StObject.set(x, "getFileExtension", js.Any.fromFunction0(value))
       
@@ -287,7 +307,7 @@ object fileManagement {
       
       inline def setPathKeys(value: js.Array[String]): Self = StObject.set(x, "pathKeys", value.asInstanceOf[js.Any])
       
-      inline def setPathKeysVarargs(value: String*): Self = StObject.set(x, "pathKeys", js.Array(value :_*))
+      inline def setPathKeysVarargs(value: String*): Self = StObject.set(x, "pathKeys", js.Array(value*))
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -298,68 +318,68 @@ object fileManagement {
   trait FileSystemProviderBase extends StObject {
     
     /**
-      * [descr:FileSystemProviderBase.abortFileUpload()]
+      * Cancels the file upload.
       */
-    def abortFileUpload(fileData: File, uploadInfo: UploadInfo, destinationDirectory: FileSystemItem): Promise[js.Any] & JQueryPromise[js.Any]
+    def abortFileUpload(fileData: File, uploadInfo: UploadInfo, destinationDirectory: FileSystemItem): DxPromise[Any]
     
     /**
-      * [descr:FileSystemProviderBase.copyItems()]
+      * Copies files or directories.
       */
-    def copyItems(items: js.Array[FileSystemItem], destinationDirectory: FileSystemItem): js.Array[Promise[js.Any] | JQueryPromise[js.Any]]
+    def copyItems(items: js.Array[FileSystemItem], destinationDirectory: FileSystemItem): js.Array[DxPromise[Any]]
     
     /**
-      * [descr:FileSystemProviderBase.createDirectory()]
+      * Creates a directory.
       */
-    def createDirectory(parentDirectory: FileSystemItem, name: String): Promise[js.Any] & JQueryPromise[js.Any]
+    def createDirectory(parentDirectory: FileSystemItem, name: String): DxPromise[Any]
     
     /**
-      * [descr:FileSystemProviderBase.deleteItems()]
+      * Deletes files or directories.
       */
-    def deleteItems(items: js.Array[FileSystemItem]): js.Array[Promise[js.Any] | JQueryPromise[js.Any]]
+    def deleteItems(items: js.Array[FileSystemItem]): js.Array[DxPromise[Any]]
     
     /**
-      * [descr:FileSystemProviderBase.downloadItems()]
+      * Downloads files.
       */
     def downloadItems(items: js.Array[FileSystemItem]): Unit
     
     /**
-      * [descr:FileSystemProviderBase.getItems()]
+      * Gets file system items.
       */
-    def getItems(parentDirectory: FileSystemItem): Promise[js.Array[FileSystemItem]] & JQueryPromise[js.Array[FileSystemItem]]
+    def getItems(parentDirectory: FileSystemItem): DxPromise[js.Array[FileSystemItem]]
     
     /**
-      * [descr:FileSystemProviderBase.getItemsContent()]
+      * Gets items content.
       */
-    def getItemsContent(items: js.Array[FileSystemItem]): Promise[js.Any] & JQueryPromise[js.Any]
+    def getItemsContent(items: js.Array[FileSystemItem]): DxPromise[Any]
     
     /**
-      * [descr:FileSystemProviderBase.moveItems()]
+      * Moves files and directories.
       */
-    def moveItems(items: js.Array[FileSystemItem], destinationDirectory: FileSystemItem): js.Array[Promise[js.Any] | JQueryPromise[js.Any]]
+    def moveItems(items: js.Array[FileSystemItem], destinationDirectory: FileSystemItem): js.Array[DxPromise[Any]]
     
     /**
-      * [descr:FileSystemProviderBase.renameItem()]
+      * Renames a file or directory.
       */
-    def renameItem(item: FileSystemItem, newName: String): Promise[js.Any] & JQueryPromise[js.Any]
+    def renameItem(item: FileSystemItem, newName: String): DxPromise[Any]
     
     /**
-      * [descr:FileSystemProviderBase.uploadFileChunk()]
+      * Uploads a file in chunks.
       */
-    def uploadFileChunk(fileData: File, uploadInfo: UploadInfo, destinationDirectory: FileSystemItem): Promise[js.Any] & JQueryPromise[js.Any]
+    def uploadFileChunk(fileData: File, uploadInfo: UploadInfo, destinationDirectory: FileSystemItem): DxPromise[Any]
   }
   object FileSystemProviderBase {
     
     inline def apply(
-      abortFileUpload: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any],
-      copyItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[Promise[js.Any] | JQueryPromise[js.Any]],
-      createDirectory: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any],
-      deleteItems: js.Array[FileSystemItem] => js.Array[Promise[js.Any] | JQueryPromise[js.Any]],
+      abortFileUpload: (File, UploadInfo, FileSystemItem) => DxPromise[Any],
+      copyItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[DxPromise[Any]],
+      createDirectory: (FileSystemItem, String) => DxPromise[Any],
+      deleteItems: js.Array[FileSystemItem] => js.Array[DxPromise[Any]],
       downloadItems: js.Array[FileSystemItem] => Unit,
-      getItems: FileSystemItem => Promise[js.Array[FileSystemItem]] & JQueryPromise[js.Array[FileSystemItem]],
-      getItemsContent: js.Array[FileSystemItem] => Promise[js.Any] & JQueryPromise[js.Any],
-      moveItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[Promise[js.Any] | JQueryPromise[js.Any]],
-      renameItem: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any],
-      uploadFileChunk: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any]
+      getItems: FileSystemItem => DxPromise[js.Array[FileSystemItem]],
+      getItemsContent: js.Array[FileSystemItem] => DxPromise[Any],
+      moveItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[DxPromise[Any]],
+      renameItem: (FileSystemItem, String) => DxPromise[Any],
+      uploadFileChunk: (File, UploadInfo, FileSystemItem) => DxPromise[Any]
     ): FileSystemProviderBase = {
       val __obj = js.Dynamic.literal(abortFileUpload = js.Any.fromFunction3(abortFileUpload), copyItems = js.Any.fromFunction2(copyItems), createDirectory = js.Any.fromFunction2(createDirectory), deleteItems = js.Any.fromFunction1(deleteItems), downloadItems = js.Any.fromFunction1(downloadItems), getItems = js.Any.fromFunction1(getItems), getItemsContent = js.Any.fromFunction1(getItemsContent), moveItems = js.Any.fromFunction2(moveItems), renameItem = js.Any.fromFunction2(renameItem), uploadFileChunk = js.Any.fromFunction3(uploadFileChunk))
       __obj.asInstanceOf[FileSystemProviderBase]
@@ -367,63 +387,57 @@ object fileManagement {
     
     extension [Self <: FileSystemProviderBase](x: Self) {
       
-      inline def setAbortFileUpload(value: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
+      inline def setAbortFileUpload(value: (File, UploadInfo, FileSystemItem) => DxPromise[Any]): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
       
-      inline def setCopyItems(
-        value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[Promise[js.Any] | JQueryPromise[js.Any]]
-      ): Self = StObject.set(x, "copyItems", js.Any.fromFunction2(value))
+      inline def setCopyItems(value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[DxPromise[Any]]): Self = StObject.set(x, "copyItems", js.Any.fromFunction2(value))
       
-      inline def setCreateDirectory(value: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
+      inline def setCreateDirectory(value: (FileSystemItem, String) => DxPromise[Any]): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
       
-      inline def setDeleteItems(value: js.Array[FileSystemItem] => js.Array[Promise[js.Any] | JQueryPromise[js.Any]]): Self = StObject.set(x, "deleteItems", js.Any.fromFunction1(value))
+      inline def setDeleteItems(value: js.Array[FileSystemItem] => js.Array[DxPromise[Any]]): Self = StObject.set(x, "deleteItems", js.Any.fromFunction1(value))
       
       inline def setDownloadItems(value: js.Array[FileSystemItem] => Unit): Self = StObject.set(x, "downloadItems", js.Any.fromFunction1(value))
       
-      inline def setGetItems(
-        value: FileSystemItem => Promise[js.Array[FileSystemItem]] & JQueryPromise[js.Array[FileSystemItem]]
-      ): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
+      inline def setGetItems(value: FileSystemItem => DxPromise[js.Array[FileSystemItem]]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      inline def setGetItemsContent(value: js.Array[FileSystemItem] => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
+      inline def setGetItemsContent(value: js.Array[FileSystemItem] => DxPromise[Any]): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
       
-      inline def setMoveItems(
-        value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[Promise[js.Any] | JQueryPromise[js.Any]]
-      ): Self = StObject.set(x, "moveItems", js.Any.fromFunction2(value))
+      inline def setMoveItems(value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[DxPromise[Any]]): Self = StObject.set(x, "moveItems", js.Any.fromFunction2(value))
       
-      inline def setRenameItem(value: (FileSystemItem, String) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
+      inline def setRenameItem(value: (FileSystemItem, String) => DxPromise[Any]): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
       
-      inline def setUploadFileChunk(value: (File, UploadInfo, FileSystemItem) => Promise[js.Any] & JQueryPromise[js.Any]): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
+      inline def setUploadFileChunk(value: (File, UploadInfo, FileSystemItem) => DxPromise[Any]): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
     }
   }
   
   trait FileSystemProviderBaseOptions[T] extends StObject {
     
     /**
-      * [descr:FileSystemProviderBase.Options.dateModifiedExpr]
+      * Specifies which data field provides timestamps that indicate when a file was last modified.
       */
     var dateModifiedExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
-      * [descr:FileSystemProviderBase.Options.isDirectoryExpr]
+      * Specifies which data field provides information about whether a file system item is a directory.
       */
     var isDirectoryExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
-      * [descr:FileSystemProviderBase.Options.keyExpr]
+      * Specifies the data field that provides keys.
       */
     var keyExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
-      * [descr:FileSystemProviderBase.Options.nameExpr]
+      * Specifies which data field provides file and directory names.
       */
     var nameExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
-      * [descr:FileSystemProviderBase.Options.sizeExpr]
+      * Specifies which data field provides file sizes.
       */
     var sizeExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
-      * [descr:FileSystemProviderBase.Options.thumbnailExpr]
+      * Specifies which data field provides icons to be used as thumbnails.
       */
     var thumbnailExpr: js.UndefOr[String | js.Function] = js.undefined
   }
@@ -462,6 +476,10 @@ object fileManagement {
     }
   }
   
+  object ObjectFileSystemProvider {
+    
+    type Options = ObjectFileSystemProviderOptions
+  }
   type ObjectFileSystemProvider = FileSystemProviderBase
   
   trait ObjectFileSystemProviderOptions
@@ -469,17 +487,17 @@ object fileManagement {
        with FileSystemProviderBaseOptions[ObjectFileSystemProvider] {
     
     /**
-      * [descr:ObjectFileSystemProvider.Options.contentExpr]
+      * Specifies which data field provides information about files content.
       */
     var contentExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
-      * [descr:ObjectFileSystemProvider.Options.data]
+      * Specifies an array of data objects that represent files and directories.
       */
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
-      * [descr:ObjectFileSystemProvider.Options.itemsExpr]
+      * Specifies which data field provides information about nested files and directories.
       */
     var itemsExpr: js.UndefOr[String | js.Function] = js.undefined
   }
@@ -496,11 +514,11 @@ object fileManagement {
       
       inline def setContentExprUndefined: Self = StObject.set(x, "contentExpr", js.undefined)
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setItemsExpr(value: String | js.Function): Self = StObject.set(x, "itemsExpr", value.asInstanceOf[js.Any])
       
@@ -508,6 +526,10 @@ object fileManagement {
     }
   }
   
+  object RemoteFileSystemProvider {
+    
+    type Options = RemoteFileSystemProviderOptions
+  }
   type RemoteFileSystemProvider = FileSystemProviderBase
   
   trait RemoteFileSystemProviderOptions
@@ -515,14 +537,29 @@ object fileManagement {
        with FileSystemProviderBaseOptions[RemoteFileSystemProvider] {
     
     /**
-      * [descr:RemoteFileSystemProvider.Options.endpointUrl]
+      * Specifies a function that customizes an Ajax request before it is sent to the server.
+      */
+    var beforeAjaxSend: js.UndefOr[js.Function1[/* options */ FormData, Unit]] = js.undefined
+    
+    /**
+      * Specifies a function that customizes a form submit request before it is sent to the server.
+      */
+    var beforeSubmit: js.UndefOr[js.Function1[/* options */ `3`, Unit]] = js.undefined
+    
+    /**
+      * Specifies the URL of an endpoint used to access and modify a file system located on the server.
       */
     var endpointUrl: js.UndefOr[String] = js.undefined
     
     /**
-      * [descr:RemoteFileSystemProvider.Options.hasSubDirectoriesExpr]
+      * Specifies which data field provides information about whether a directory has subdirectories.
       */
     var hasSubDirectoriesExpr: js.UndefOr[String | js.Function] = js.undefined
+    
+    /**
+      * Specifies the request headers.
+      */
+    var requestHeaders: js.UndefOr[Any] = js.undefined
   }
   object RemoteFileSystemProviderOptions {
     
@@ -533,6 +570,14 @@ object fileManagement {
     
     extension [Self <: RemoteFileSystemProviderOptions](x: Self) {
       
+      inline def setBeforeAjaxSend(value: /* options */ FormData => Unit): Self = StObject.set(x, "beforeAjaxSend", js.Any.fromFunction1(value))
+      
+      inline def setBeforeAjaxSendUndefined: Self = StObject.set(x, "beforeAjaxSend", js.undefined)
+      
+      inline def setBeforeSubmit(value: /* options */ `3` => Unit): Self = StObject.set(x, "beforeSubmit", js.Any.fromFunction1(value))
+      
+      inline def setBeforeSubmitUndefined: Self = StObject.set(x, "beforeSubmit", js.undefined)
+      
       inline def setEndpointUrl(value: String): Self = StObject.set(x, "endpointUrl", value.asInstanceOf[js.Any])
       
       inline def setEndpointUrlUndefined: Self = StObject.set(x, "endpointUrl", js.undefined)
@@ -540,39 +585,43 @@ object fileManagement {
       inline def setHasSubDirectoriesExpr(value: String | js.Function): Self = StObject.set(x, "hasSubDirectoriesExpr", value.asInstanceOf[js.Any])
       
       inline def setHasSubDirectoriesExprUndefined: Self = StObject.set(x, "hasSubDirectoriesExpr", js.undefined)
+      
+      inline def setRequestHeaders(value: Any): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     }
   }
   
   trait UploadInfo extends StObject {
     
     /**
-      * [descr:UploadInfo.bytesUploaded]
+      * The number of bytes that is uploaded to the server.
       */
     var bytesUploaded: Double
     
     /**
-      * [descr:UploadInfo.chunkBlob]
+      * The binary content of the uploading chunk.
       */
     var chunkBlob: Blob
     
     /**
-      * [descr:UploadInfo.chunkCount]
+      * The number of uploaded chunks and chunks that are to be uploaded.
       */
     var chunkCount: Double
     
     /**
-      * [descr:UploadInfo.chunkIndex]
+      * The index of the uploading chunk.
       */
     var chunkIndex: Double
     
     /**
-      * [descr:UploadInfo.customData]
+      * Information saved during the file upload.
       */
-    var customData: js.Any
+    var customData: Any
   }
   object UploadInfo {
     
-    inline def apply(bytesUploaded: Double, chunkBlob: Blob, chunkCount: Double, chunkIndex: Double, customData: js.Any): UploadInfo = {
+    inline def apply(bytesUploaded: Double, chunkBlob: Blob, chunkCount: Double, chunkIndex: Double, customData: Any): UploadInfo = {
       val __obj = js.Dynamic.literal(bytesUploaded = bytesUploaded.asInstanceOf[js.Any], chunkBlob = chunkBlob.asInstanceOf[js.Any], chunkCount = chunkCount.asInstanceOf[js.Any], chunkIndex = chunkIndex.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadInfo]
     }
@@ -587,7 +636,7 @@ object fileManagement {
       
       inline def setChunkIndex(value: Double): Self = StObject.set(x, "chunkIndex", value.asInstanceOf[js.Any])
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     }
   }
 }

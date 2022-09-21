@@ -1,6 +1,6 @@
 package typings.word
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.word.fibMod.FibRgLw97
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenParagraphFormattingDialogCommand")
 @js.native
-class OpenParagraphFormattingDialogCommand ()
+open class OpenParagraphFormattingDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenParagraphFormattingDialogCommand {
   

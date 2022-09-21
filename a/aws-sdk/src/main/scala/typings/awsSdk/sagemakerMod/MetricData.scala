@@ -14,7 +14,7 @@ trait MetricData extends StObject {
   /**
     * The date and time that the algorithm emitted the metric.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.sagemakerMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The value of the metric.
@@ -34,7 +34,7 @@ object MetricData {
     
     inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     

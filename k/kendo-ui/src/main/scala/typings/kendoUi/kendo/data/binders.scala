@@ -29,7 +29,7 @@ object binders {
       
       def change(): Unit = js.native
       
-      def value(): js.Any = js.native
+      def value(): Any = js.native
     }
   }
   
@@ -55,11 +55,11 @@ object binders {
     extends StObject
        with Binder {
     
-    def add(index: Number, items: js.Array[js.Any]): Unit = js.native
+    def add(index: Number, items: js.Array[Any]): Unit = js.native
     
     def container(): Element = js.native
     
-    def remove(index: Number, items: js.Array[js.Any]): Unit = js.native
+    def remove(index: Number, items: js.Array[Any]): Unit = js.native
     
     def render(): Unit = js.native
     
@@ -89,7 +89,7 @@ object binders {
       
       def change(): Unit = js.native
       
-      def value(): js.Any = js.native
+      def value(): Any = js.native
     }
     
     type disabled = Binder

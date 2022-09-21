@@ -8,37 +8,37 @@ trait ManagedDevice
   extends StObject
      with Entity {
   
-  // Code that allows the Activation Lock on a device to be bypassed.
+  // Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
   var activationLockBypassCode: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Android security patch level
+  // Android security patch level. This property is read-only.
   var androidSecurityPatchLevel: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The unique identifier for the Azure Active Directory device. Read only.
+  // The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
   var azureADDeviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Whether the device is Azure Active Directory registered.
+  // Whether the device is Azure Active Directory registered. This property is read-only.
   var azureADRegistered: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // The DateTime when device compliance grace period expires
+  // The DateTime when device compliance grace period expires. This property is read-only.
   var complianceGracePeriodExpirationDateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Compliance state of the device. Possible values are: unknown, compliant, noncompliant, conflict, error, inGracePeriod,
-    * configManager.
+    * Compliance state of the device. This property is read-only. Possible values are: unknown, compliant, noncompliant,
+    * conflict, error, inGracePeriod, configManager.
     */
   var complianceState: js.UndefOr[ComplianceState] = js.undefined
   
-  // ConfigrMgr client enabled features
+  // ConfigrMgr client enabled features. This property is read-only.
   var configurationManagerClientEnabledFeatures: js.UndefOr[NullableOption[ConfigurationManagerClientEnabledFeatures]] = js.undefined
   
-  // List of ComplexType deviceActionResult objects.
+  // List of ComplexType deviceActionResult objects. This property is read-only.
   var deviceActionResults: js.UndefOr[NullableOption[js.Array[DeviceActionResult]]] = js.undefined
   
   // Device category
   var deviceCategory: js.UndefOr[NullableOption[DeviceCategory]] = js.undefined
   
-  // Device category display name
+  // Device category display name. This property is read-only.
   var deviceCategoryDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Device compliance policy states for this device.
@@ -48,69 +48,79 @@ trait ManagedDevice
   var deviceConfigurationStates: js.UndefOr[NullableOption[js.Array[DeviceConfigurationState]]] = js.undefined
   
   /**
-    * Enrollment type of the device. Possible values are: unknown, userEnrollment, deviceEnrollmentManager,
-    * appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment,
-    * windowsBulkAzureDomainJoin, windowsCoManagement.
+    * Enrollment type of the device. This property is read-only. Possible values are: unknown, userEnrollment,
+    * deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless,
+    * windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,
+    * appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
     */
   var deviceEnrollmentType: js.UndefOr[DeviceEnrollmentType] = js.undefined
   
-  // The device health attestation state.
+  // The device health attestation state. This property is read-only.
   var deviceHealthAttestationState: js.UndefOr[NullableOption[DeviceHealthAttestationState]] = js.undefined
   
-  // Name of the device
+  // Name of the device. This property is read-only.
   var deviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Device registration state. Possible values are: notRegistered, registered, revoked, keyConflict, approvalPending,
-    * certificateReset, notRegisteredPendingEnrollment, unknown.
+    * Device registration state. This property is read-only. Possible values are: notRegistered, registered, revoked,
+    * keyConflict, approvalPending, certificateReset, notRegisteredPendingEnrollment, unknown.
     */
   var deviceRegistrationState: js.UndefOr[DeviceRegistrationState] = js.undefined
   
-  // Whether the device is Exchange ActiveSync activated.
+  // Whether the device is Exchange ActiveSync activated. This property is read-only.
   var easActivated: js.UndefOr[Boolean] = js.undefined
   
-  // Exchange ActivationSync activation time of the device.
+  // Exchange ActivationSync activation time of the device. This property is read-only.
   var easActivationDateTime: js.UndefOr[String] = js.undefined
   
-  // Exchange ActiveSync Id of the device.
+  // Exchange ActiveSync Id of the device. This property is read-only.
   var easDeviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Email(s) for the user associated with the device
+  // Email(s) for the user associated with the device. This property is read-only.
   var emailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Enrollment time of the device.
+  // Enrollment time of the device. This property is read-only.
   var enrolledDateTime: js.UndefOr[String] = js.undefined
   
-  // The Access State of the device in Exchange. Possible values are: none, unknown, allowed, blocked, quarantined.
+  // Ethernet MAC. This property is read-only.
+  var ethernetMacAddress: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * The Access State of the device in Exchange. This property is read-only. Possible values are: none, unknown, allowed,
+    * blocked, quarantined.
+    */
   var exchangeAccessState: js.UndefOr[DeviceManagementExchangeAccessState] = js.undefined
   
   /**
-    * The reason for the device's access state in Exchange. Possible values are: none, unknown, exchangeGlobalRule,
-    * exchangeIndividualRule, exchangeDeviceRule, exchangeUpgrade, exchangeMailboxPolicy, other, compliant, notCompliant,
-    * notEnrolled, unknownLocation, mfaRequired, azureADBlockDueToAccessPolicy, compromisedPassword,
+    * The reason for the device's access state in Exchange. This property is read-only. Possible values are: none, unknown,
+    * exchangeGlobalRule, exchangeIndividualRule, exchangeDeviceRule, exchangeUpgrade, exchangeMailboxPolicy, other,
+    * compliant, notCompliant, notEnrolled, unknownLocation, mfaRequired, azureADBlockDueToAccessPolicy, compromisedPassword,
     * deviceNotKnownWithManagedApp.
     */
   var exchangeAccessStateReason: js.UndefOr[DeviceManagementExchangeAccessStateReason] = js.undefined
   
-  // Last time the device contacted Exchange.
+  // Last time the device contacted Exchange. This property is read-only.
   var exchangeLastSuccessfulSyncDateTime: js.UndefOr[String] = js.undefined
   
-  // Free Storage in Bytes
+  // Free Storage in Bytes. This property is read-only.
   var freeStorageSpaceInBytes: js.UndefOr[Double] = js.undefined
   
-  // IMEI
+  // Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
+  var iccid: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // IMEI. This property is read-only.
   var imei: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Device encryption status
+  // Device encryption status. This property is read-only.
   var isEncrypted: js.UndefOr[Boolean] = js.undefined
   
-  // Device supervised status
+  // Device supervised status. This property is read-only.
   var isSupervised: js.UndefOr[Boolean] = js.undefined
   
-  // whether the device is jail broken or rooted.
+  // whether the device is jail broken or rooted. This property is read-only.
   var jailBroken: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The date and time that the device last completed a successful sync with Intune.
+  // The date and time that the device last completed a successful sync with Intune. This property is read-only.
   var lastSyncDateTime: js.UndefOr[String] = js.undefined
   
   // Automatically generated name to identify a device. Can be overwritten to a user friendly name.
@@ -120,62 +130,71 @@ trait ManagedDevice
   var managedDeviceOwnerType: js.UndefOr[ManagedDeviceOwnerType] = js.undefined
   
   /**
-    * Management channel of the device. Intune, EAS, etc. Possible values are: eas, mdm, easMdm, intuneClient,
-    * easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown,
-    * jamf, googleCloudDevicePolicyController.
+    * Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: eas, mdm, easMdm,
+    * intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm,
+    * configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
     */
   var managementAgent: js.UndefOr[ManagementAgentType] = js.undefined
   
-  // Manufacturer of the device
+  // Manufacturer of the device. This property is read-only.
   var manufacturer: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // MEID
+  // MEID. This property is read-only.
   var meid: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Model of the device
+  // Model of the device. This property is read-only.
   var model: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Operating system of the device. Windows, iOS, etc.
+  // Notes on the device created by IT Admin
+  var notes: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Operating system of the device. Windows, iOS, etc. This property is read-only.
   var operatingSystem: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Operating system version of the device.
+  // Operating system version of the device. This property is read-only.
   var osVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read
-    * Only. Possible values are: unknown, activated, deactivated, secured, lowSeverity, mediumSeverity, highSeverity,
-    * unresponsive, compromised, misconfigured.
+    * Only. This property is read-only. Possible values are: unknown, activated, deactivated, secured, lowSeverity,
+    * mediumSeverity, highSeverity, unresponsive, compromised, misconfigured.
     */
   var partnerReportedThreatState: js.UndefOr[ManagedDevicePartnerReportedHealthState] = js.undefined
   
-  // Phone number of the device
+  // Phone number of the device. This property is read-only.
   var phoneNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // An error string that identifies issues when creating Remote Assistance session objects.
+  // Total Memory in Bytes. This property is read-only.
+  var physicalMemoryInBytes: js.UndefOr[Double] = js.undefined
+  
+  // An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
   var remoteAssistanceSessionErrorDetails: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Url that allows a Remote Assistance session to be established with the device.
+  // Url that allows a Remote Assistance session to be established with the device. This property is read-only.
   var remoteAssistanceSessionUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // SerialNumber
+  // SerialNumber. This property is read-only.
   var serialNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Subscriber Carrier
+  // Subscriber Carrier. This property is read-only.
   var subscriberCarrier: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Total Storage in Bytes
+  // Total Storage in Bytes. This property is read-only.
   var totalStorageSpaceInBytes: js.UndefOr[Double] = js.undefined
   
-  // User display name
+  // Unique Device Identifier for iOS and macOS devices. This property is read-only.
+  var udid: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // User display name. This property is read-only.
   var userDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Unique Identifier for the user associated with the device
+  // Unique Identifier for the user associated with the device. This property is read-only.
   var userId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Device user principal name
+  // Device user principal name. This property is read-only.
   var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Wi-Fi MAC
+  // Wi-Fi MAC. This property is read-only.
   var wiFiMacAddress: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedDevice {
@@ -231,7 +250,7 @@ object ManagedDevice {
     
     inline def setDeviceActionResultsUndefined: Self = StObject.set(x, "deviceActionResults", js.undefined)
     
-    inline def setDeviceActionResultsVarargs(value: DeviceActionResult*): Self = StObject.set(x, "deviceActionResults", js.Array(value :_*))
+    inline def setDeviceActionResultsVarargs(value: DeviceActionResult*): Self = StObject.set(x, "deviceActionResults", js.Array(value*))
     
     inline def setDeviceCategory(value: NullableOption[DeviceCategory]): Self = StObject.set(x, "deviceCategory", value.asInstanceOf[js.Any])
     
@@ -251,7 +270,7 @@ object ManagedDevice {
     
     inline def setDeviceCompliancePolicyStatesUndefined: Self = StObject.set(x, "deviceCompliancePolicyStates", js.undefined)
     
-    inline def setDeviceCompliancePolicyStatesVarargs(value: DeviceCompliancePolicyState*): Self = StObject.set(x, "deviceCompliancePolicyStates", js.Array(value :_*))
+    inline def setDeviceCompliancePolicyStatesVarargs(value: DeviceCompliancePolicyState*): Self = StObject.set(x, "deviceCompliancePolicyStates", js.Array(value*))
     
     inline def setDeviceConfigurationStates(value: NullableOption[js.Array[DeviceConfigurationState]]): Self = StObject.set(x, "deviceConfigurationStates", value.asInstanceOf[js.Any])
     
@@ -259,7 +278,7 @@ object ManagedDevice {
     
     inline def setDeviceConfigurationStatesUndefined: Self = StObject.set(x, "deviceConfigurationStates", js.undefined)
     
-    inline def setDeviceConfigurationStatesVarargs(value: DeviceConfigurationState*): Self = StObject.set(x, "deviceConfigurationStates", js.Array(value :_*))
+    inline def setDeviceConfigurationStatesVarargs(value: DeviceConfigurationState*): Self = StObject.set(x, "deviceConfigurationStates", js.Array(value*))
     
     inline def setDeviceEnrollmentType(value: DeviceEnrollmentType): Self = StObject.set(x, "deviceEnrollmentType", value.asInstanceOf[js.Any])
     
@@ -305,6 +324,12 @@ object ManagedDevice {
     
     inline def setEnrolledDateTimeUndefined: Self = StObject.set(x, "enrolledDateTime", js.undefined)
     
+    inline def setEthernetMacAddress(value: NullableOption[String]): Self = StObject.set(x, "ethernetMacAddress", value.asInstanceOf[js.Any])
+    
+    inline def setEthernetMacAddressNull: Self = StObject.set(x, "ethernetMacAddress", null)
+    
+    inline def setEthernetMacAddressUndefined: Self = StObject.set(x, "ethernetMacAddress", js.undefined)
+    
     inline def setExchangeAccessState(value: DeviceManagementExchangeAccessState): Self = StObject.set(x, "exchangeAccessState", value.asInstanceOf[js.Any])
     
     inline def setExchangeAccessStateReason(value: DeviceManagementExchangeAccessStateReason): Self = StObject.set(x, "exchangeAccessStateReason", value.asInstanceOf[js.Any])
@@ -320,6 +345,12 @@ object ManagedDevice {
     inline def setFreeStorageSpaceInBytes(value: Double): Self = StObject.set(x, "freeStorageSpaceInBytes", value.asInstanceOf[js.Any])
     
     inline def setFreeStorageSpaceInBytesUndefined: Self = StObject.set(x, "freeStorageSpaceInBytes", js.undefined)
+    
+    inline def setIccid(value: NullableOption[String]): Self = StObject.set(x, "iccid", value.asInstanceOf[js.Any])
+    
+    inline def setIccidNull: Self = StObject.set(x, "iccid", null)
+    
+    inline def setIccidUndefined: Self = StObject.set(x, "iccid", js.undefined)
     
     inline def setImei(value: NullableOption[String]): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
     
@@ -377,6 +408,12 @@ object ManagedDevice {
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
+    inline def setNotes(value: NullableOption[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    
+    inline def setNotesNull: Self = StObject.set(x, "notes", null)
+    
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    
     inline def setOperatingSystem(value: NullableOption[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
     inline def setOperatingSystemNull: Self = StObject.set(x, "operatingSystem", null)
@@ -398,6 +435,10 @@ object ManagedDevice {
     inline def setPhoneNumberNull: Self = StObject.set(x, "phoneNumber", null)
     
     inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    
+    inline def setPhysicalMemoryInBytes(value: Double): Self = StObject.set(x, "physicalMemoryInBytes", value.asInstanceOf[js.Any])
+    
+    inline def setPhysicalMemoryInBytesUndefined: Self = StObject.set(x, "physicalMemoryInBytes", js.undefined)
     
     inline def setRemoteAssistanceSessionErrorDetails(value: NullableOption[String]): Self = StObject.set(x, "remoteAssistanceSessionErrorDetails", value.asInstanceOf[js.Any])
     
@@ -426,6 +467,12 @@ object ManagedDevice {
     inline def setTotalStorageSpaceInBytes(value: Double): Self = StObject.set(x, "totalStorageSpaceInBytes", value.asInstanceOf[js.Any])
     
     inline def setTotalStorageSpaceInBytesUndefined: Self = StObject.set(x, "totalStorageSpaceInBytes", js.undefined)
+    
+    inline def setUdid(value: NullableOption[String]): Self = StObject.set(x, "udid", value.asInstanceOf[js.Any])
+    
+    inline def setUdidNull: Self = StObject.set(x, "udid", null)
+    
+    inline def setUdidUndefined: Self = StObject.set(x, "udid", js.undefined)
     
     inline def setUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     

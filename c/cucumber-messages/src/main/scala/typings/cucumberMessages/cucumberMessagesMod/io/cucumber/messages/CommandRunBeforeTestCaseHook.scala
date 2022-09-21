@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CommandRunBeforeTestCaseHook.
   * @param [properties] Properties to set
   */
-class CommandRunBeforeTestCaseHook ()
+open class CommandRunBeforeTestCaseHook ()
   extends StObject
      with ICommandRunBeforeTestCaseHook {
   def this(properties: ICommandRunBeforeTestCaseHook) = this()
@@ -37,7 +36,7 @@ class CommandRunBeforeTestCaseHook ()
     * Converts this CommandRunBeforeTestCaseHook to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object CommandRunBeforeTestCaseHook {
   
@@ -54,6 +53,8 @@ object CommandRunBeforeTestCaseHook {
   inline def create(): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandRunBeforeTestCaseHook]
   inline def create(properties: ICommandRunBeforeTestCaseHook): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
   
+  inline def decode(reader: js.typedarray.Uint8Array): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): CommandRunBeforeTestCaseHook = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandRunBeforeTestCaseHook]
   /**
     * Decodes a CommandRunBeforeTestCaseHook message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -65,9 +66,8 @@ object CommandRunBeforeTestCaseHook {
   /* static member */
   inline def decode(reader: Reader): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
   inline def decode(reader: Reader, length: Double): CommandRunBeforeTestCaseHook = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandRunBeforeTestCaseHook]
-  inline def decode(reader: Uint8Array): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
-  inline def decode(reader: Uint8Array, length: Double): CommandRunBeforeTestCaseHook = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandRunBeforeTestCaseHook]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
   /**
     * Decodes a CommandRunBeforeTestCaseHook message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -77,7 +77,6 @@ object CommandRunBeforeTestCaseHook {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
-  inline def decodeDelimited(reader: Uint8Array): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
   
   /**
     * Encodes the specified CommandRunBeforeTestCaseHook message. Does not implicitly {@link io.cucumber.messages.CommandRunBeforeTestCaseHook.verify|verify} messages.
@@ -105,7 +104,7 @@ object CommandRunBeforeTestCaseHook {
     * @returns CommandRunBeforeTestCaseHook
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
+  inline def fromObject(`object`: StringDictionary[Any]): CommandRunBeforeTestCaseHook = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandRunBeforeTestCaseHook]
   
   /**
     * Creates a plain object from a CommandRunBeforeTestCaseHook message. Also converts values to other types if specified.
@@ -114,8 +113,8 @@ object CommandRunBeforeTestCaseHook {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: CommandRunBeforeTestCaseHook): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: CommandRunBeforeTestCaseHook, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CommandRunBeforeTestCaseHook): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: CommandRunBeforeTestCaseHook, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a CommandRunBeforeTestCaseHook message.
@@ -123,5 +122,5 @@ object CommandRunBeforeTestCaseHook {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

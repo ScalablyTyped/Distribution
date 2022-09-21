@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-reduce" : "2.1.0"
+      "p-reduce" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-reduce" : "2.1.0"
+      "p-reduce" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

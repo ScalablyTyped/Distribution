@@ -9,7 +9,7 @@ object lightingMod {
   
   @JSImport("rot-js/lib/lighting", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Lighting {
     def this(reflectivityCallback: ReflectivityCallback) = this()
@@ -24,7 +24,7 @@ object lightingMod {
     /**
       * Prepare a list of emitters for next pass
       */
-    /* private */ var _computeEmitters: js.Any = js.native
+    /* private */ var _computeEmitters: Any = js.native
     
     /**
       * Compute one iteration from all emitting cells
@@ -32,29 +32,29 @@ object lightingMod {
       * @param litCells Add projected light to these
       * @param doneCells These already emitted, forbid them from further calculations
       */
-    /* private */ var _emitLight: js.Any = js.native
+    /* private */ var _emitLight: Any = js.native
     
     /**
       * Compute one iteration from one cell
       */
-    /* private */ var _emitLightFromCell: js.Any = js.native
+    /* private */ var _emitLightFromCell: Any = js.native
     
-    /* private */ var _fov: js.Any = js.native
+    /* private */ var _fov: Any = js.native
     
-    /* private */ var _fovCache: js.Any = js.native
+    /* private */ var _fovCache: Any = js.native
     
-    /* private */ var _lights: js.Any = js.native
+    /* private */ var _lights: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _reflectivityCache: js.Any = js.native
+    /* private */ var _reflectivityCache: Any = js.native
     
-    /* private */ var _reflectivityCallback: js.Any = js.native
+    /* private */ var _reflectivityCallback: Any = js.native
     
     /**
       * Compute FOV ("form factor") for a potential light source at [x,y]
       */
-    /* private */ var _updateFOV: js.Any = js.native
+    /* private */ var _updateFOV: Any = js.native
     
     /**
       * Remove all light sources

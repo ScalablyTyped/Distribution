@@ -26,7 +26,7 @@ object XModifyBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addModifyListener: XModifyListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeModifyListener: XModifyListener => Unit
   ): XModifyBroadcaster = {

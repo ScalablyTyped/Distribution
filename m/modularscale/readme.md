@@ -10,10 +10,10 @@ Calculate a value from a modular scale
 | ------------------ | :-------------: |
 | Full name          | modularscale |
 | Keywords           | modular, modular-scale, modularscale, scale, typography |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 2576807 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 119505.33333333333 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/KyleAMathews/modularscale)

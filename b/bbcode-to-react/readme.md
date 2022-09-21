@@ -10,10 +10,10 @@ A utility for turning raw BBCode into React elements.
 | ------------------ | :-------------: |
 | Full name          | bbcode-to-react |
 | Keywords           | bbcode, react, bbcode parser |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 52499 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7347.333333333333 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/JimLiu/bbcode-to-react#readme)

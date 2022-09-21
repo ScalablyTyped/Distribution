@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object playcustomappV1 {
   
-  /**
-    * Google Play Custom App Publishing API
-    *
-    * An API to publish custom Android apps.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const playcustomapp = google.playcustomapp('v1');
-    *
-    * @namespace playcustomapp
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Playcustomapp
-    */
   @JSImport("googleapis", "playcustomapp_v1.Playcustomapp")
   @js.native
-  class Playcustomapp protected ()
+  open class Playcustomapp protected ()
     extends typings.googleapis.playcustomappV1Mod.playcustomappV1.Playcustomapp {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,14 +19,14 @@ object playcustomappV1 {
   
   @JSImport("googleapis", "playcustomapp_v1.Resource$Accounts")
   @js.native
-  class ResourceAccounts protected ()
+  open class ResourceAccounts protected ()
     extends typings.googleapis.playcustomappV1Mod.playcustomappV1.ResourceAccounts {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "playcustomapp_v1.Resource$Accounts$Customapps")
   @js.native
-  class ResourceAccountsCustomapps protected ()
+  open class ResourceAccountsCustomapps protected ()
     extends typings.googleapis.playcustomappV1Mod.playcustomappV1.ResourceAccountsCustomapps {
     def this(context: APIRequestContext) = this()
   }

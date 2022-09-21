@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.Column")
 @js.native
-class Column ()
+open class Column ()
   extends StObject
      with typings.tableau.tableau.Column {
   

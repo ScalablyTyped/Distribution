@@ -10,10 +10,10 @@ Finds first available shell command from a list.
 | ------------------ | :-------------: |
 | Full name          | find-exec |
 | Keywords           | find, executable, shell, minimalistic, command, line |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 149568 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 23708.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/shime/find-exec)

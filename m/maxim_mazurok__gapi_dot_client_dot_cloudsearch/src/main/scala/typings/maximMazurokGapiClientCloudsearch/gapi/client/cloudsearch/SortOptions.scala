@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SortOptions extends StObject {
   
-  /** Name of the operator corresponding to the field to sort on. The corresponding property must be marked as sortable. */
+  /** The name of the operator corresponding to the field to sort on. The corresponding property must be marked as sortable. */
   var operatorName: js.UndefOr[String] = js.undefined
   
   /** Ascending is the default sort order */

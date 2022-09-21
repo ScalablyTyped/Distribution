@@ -16,7 +16,7 @@ object getPullRequestCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/GetPullRequestCommand", "GetPullRequestCommand")
   @js.native
-  class GetPullRequestCommand protected ()
+  open class GetPullRequestCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getPullRequestCommandMod {
     override val middlewareStack: MiddlewareStack[GetPullRequestInput, GetPullRequestOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: CodeCommitResolvedConfiguration
     ): Handler[GetPullRequestInput, GetPullRequestOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CodeCommitResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetPullRequestInput, GetPullRequestOutput] = js.native
   }
 }

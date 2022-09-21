@@ -9,7 +9,6 @@ import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import typings.gitlab.runnersMod.RunnerSchema
 import typings.gitlab.usersMod.UserSchema
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object deploymentsMod {
   
   @JSImport("gitlab/dist/types/core/services/Deployments", "Deployments")
   @js.native
-  class Deployments () extends BaseService {
+  open class Deployments () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native
@@ -43,9 +42,9 @@ object deploymentsMod {
     
     var coverage: js.UndefOr[String] = js.undefined
     
-    var created_at: js.UndefOr[Date] = js.undefined
+    var created_at: js.UndefOr[js.Date] = js.undefined
     
-    var finished_at: js.UndefOr[Date] = js.undefined
+    var finished_at: js.UndefOr[js.Date] = js.undefined
     
     var id: Double
     
@@ -59,7 +58,7 @@ object deploymentsMod {
     
     var stage: js.UndefOr[String] = js.undefined
     
-    var started_at: js.UndefOr[Date] = js.undefined
+    var started_at: js.UndefOr[js.Date] = js.undefined
     
     var status: js.UndefOr[DeploymentStatus] = js.undefined
     
@@ -84,11 +83,11 @@ object deploymentsMod {
       
       inline def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
       
-      inline def setFinished_at(value: Date): Self = StObject.set(x, "finished_at", value.asInstanceOf[js.Any])
+      inline def setFinished_at(value: js.Date): Self = StObject.set(x, "finished_at", value.asInstanceOf[js.Any])
       
       inline def setFinished_atUndefined: Self = StObject.set(x, "finished_at", js.undefined)
       
@@ -110,7 +109,7 @@ object deploymentsMod {
       
       inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
       
-      inline def setStarted_at(value: Date): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
+      inline def setStarted_at(value: js.Date): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
       
       inline def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
       

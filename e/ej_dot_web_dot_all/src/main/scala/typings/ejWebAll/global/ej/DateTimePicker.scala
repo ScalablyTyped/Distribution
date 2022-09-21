@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.DateTimePicker")
 @js.native
-class DateTimePicker protected ()
+open class DateTimePicker protected ()
   extends StObject
      with typings.ejWebAll.ej.DateTimePicker {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object DateTimePicker {
   /* static member */
   @JSGlobal("ej.DateTimePicker.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.DateTimePicker.fn")

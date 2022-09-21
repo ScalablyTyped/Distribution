@@ -29,7 +29,7 @@ object FpgaInfo {
     
     inline def setFpgasUndefined: Self = StObject.set(x, "Fpgas", js.undefined)
     
-    inline def setFpgasVarargs(value: FpgaDeviceInfo*): Self = StObject.set(x, "Fpgas", js.Array(value :_*))
+    inline def setFpgasVarargs(value: FpgaDeviceInfo*): Self = StObject.set(x, "Fpgas", js.Array(value*))
     
     inline def setTotalFpgaMemoryInMiB(value: totalFpgaMemory): Self = StObject.set(x, "TotalFpgaMemoryInMiB", value.asInstanceOf[js.Any])
     

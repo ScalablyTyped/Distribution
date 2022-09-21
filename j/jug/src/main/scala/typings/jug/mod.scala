@@ -16,7 +16,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jug", "vertex")
   @js.native
-  class vertex ()
+  open class vertex ()
     extends StObject
        with Vertex {
     def this(obj: VertexData) = this()
@@ -168,7 +168,7 @@ object mod extends Shortcut {
       
       inline def setEdge(value: js.Array[Vertex]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      inline def setEdgeVarargs(value: Vertex*): Self = StObject.set(x, "edge", js.Array(value :_*))
+      inline def setEdgeVarargs(value: Vertex*): Self = StObject.set(x, "edge", js.Array(value*))
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

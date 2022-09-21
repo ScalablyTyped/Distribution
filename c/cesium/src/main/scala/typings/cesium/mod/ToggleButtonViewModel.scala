@@ -7,13 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "ToggleButtonViewModel")
 @js.native
-class ToggleButtonViewModel protected () extends StObject {
+open class ToggleButtonViewModel protected () extends StObject {
   def this(command: Command) = this()
   def this(command: Command, options: Toggled) = this()
   
+  /**
+    * Gets the command which will be executed when the button is toggled.
+    */
   var command: Command = js.native
   
+  /**
+    * Gets or sets whether the button is currently toggled.  This property is observable.
+    */
   var toggled: Boolean = js.native
   
+  /**
+    * Gets or sets the button's tooltip.  This property is observable.
+    */
   var tooltip: String = js.native
 }

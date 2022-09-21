@@ -10,10 +10,10 @@ A simple module for bitwise-xor on buffers
 | ------------------ | :-------------: |
 | Full name          | buffer-xor |
 | Keywords           | bits, bitwise, buffer, buffer-xor, crypto, inline, math, memory, performance, xor |
-| # releases         | 0 |
-| # dependents       | 125 |
-| # downloads        | 464233566 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.0664530333333336E7 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-browserify/buffer-xor)

@@ -105,7 +105,7 @@ object XStarBasicLibraryInfo {
     getModuleContainer: () => XNameContainer,
     getName: () => String,
     getPassword: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStarBasicLibraryInfo = {
     val __obj = js.Dynamic.literal(DialogContainer = DialogContainer.asInstanceOf[js.Any], ExternalSourceURL = ExternalSourceURL.asInstanceOf[js.Any], LinkTargetURL = LinkTargetURL.asInstanceOf[js.Any], ModuleContainer = ModuleContainer.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDialogContainer = js.Any.fromFunction0(getDialogContainer), getExternalSourceURL = js.Any.fromFunction0(getExternalSourceURL), getLinkTargetURL = js.Any.fromFunction0(getLinkTargetURL), getModuleContainer = js.Any.fromFunction0(getModuleContainer), getName = js.Any.fromFunction0(getName), getPassword = js.Any.fromFunction0(getPassword), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

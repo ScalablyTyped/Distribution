@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Details extends StObject {
   
+  /**
+    * Information about the job error.
+    */
   var ImportAssetFromSignedUrlJobErrorDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.ImportAssetFromSignedUrlJobErrorDetails] = js.undefined
   
+  /**
+    * Information about the job error.
+    */
   var ImportAssetsFromS3JobErrorDetails: js.UndefOr[ListOfAssetSourceEntry] = js.undefined
 }
 object Details {
@@ -27,6 +33,6 @@ object Details {
     
     inline def setImportAssetsFromS3JobErrorDetailsUndefined: Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", js.undefined)
     
-    inline def setImportAssetsFromS3JobErrorDetailsVarargs(value: AssetSourceEntry*): Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", js.Array(value :_*))
+    inline def setImportAssetsFromS3JobErrorDetailsVarargs(value: AssetSourceEntry*): Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", js.Array(value*))
   }
 }

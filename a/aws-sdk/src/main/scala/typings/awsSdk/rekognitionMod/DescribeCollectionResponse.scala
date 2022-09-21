@@ -14,7 +14,7 @@ trait DescribeCollectionResponse extends StObject {
   /**
     * The number of milliseconds since the Unix epoch time until the creation of the collection. The Unix epoch time is 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970.
     */
-  var CreationTimestamp: js.UndefOr[DateTime] = js.undefined
+  var CreationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of faces that are indexed into the collection. To index faces into a collection, use IndexFaces.
@@ -22,7 +22,7 @@ trait DescribeCollectionResponse extends StObject {
   var FaceCount: js.UndefOr[ULong] = js.undefined
   
   /**
-    * The version of the face model that's used by the collection for face detection. For more information, see Model Versioning in the Amazon Rekognition Developer Guide.
+    * The version of the face model that's used by the collection for face detection. For more information, see Model versioning in the Amazon Rekognition Developer Guide.
     */
   var FaceModelVersion: js.UndefOr[String] = js.undefined
 }
@@ -39,7 +39,7 @@ object DescribeCollectionResponse {
     
     inline def setCollectionARNUndefined: Self = StObject.set(x, "CollectionARN", js.undefined)
     
-    inline def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     

@@ -8,5 +8,5 @@ object changeMessageVisibilityInputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/ChangeMessageVisibilityInput", "ChangeMessageVisibilityInput")
   @js.native
-  val ChangeMessageVisibilityInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ChangeMessageVisibilityInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -18,7 +18,7 @@ object materialTextfieldFoundationMod {
     * @param adapter
     * @param foundationMap Map from subcomponent names to their subfoundations.
     */
-  class default () extends MDCTextFieldFoundation {
+  open class default () extends MDCTextFieldFoundation {
     def this(adapter: PartialMDCTextFieldAdapte) = this()
     def this(adapter: Unit, foundationMap: PartialMDCTextFieldFounda) = this()
     def this(adapter: PartialMDCTextFieldAdapte, foundationMap: PartialMDCTextFieldFounda) = this()
@@ -30,7 +30,7 @@ object materialTextfieldFoundationMod {
     * @param adapter
     * @param foundationMap Map from subcomponent names to their subfoundations.
     */
-  class MDCTextFieldFoundation () extends MDCFoundation[MDCTextFieldAdapter] {
+  open class MDCTextFieldFoundation () extends MDCFoundation[MDCTextFieldAdapter] {
     def this(adapter: PartialMDCTextFieldAdapte) = this()
     def this(adapter: Unit, foundationMap: PartialMDCTextFieldFounda) = this()
     def this(adapter: PartialMDCTextFieldAdapte, foundationMap: PartialMDCTextFieldFounda) = this()
@@ -46,10 +46,18 @@ object materialTextfieldFoundationMod {
       */
     def autoCompleteFocus(): Unit = js.native
     
+    /* private */ val characterCounter: Any = js.native
+    
     /**
       * Deactivates the Text Field's focus state.
       */
     def deactivateFocus(): Unit = js.native
+    
+    /**
+      * @return The native text input element from the host environment, or an
+      *     object with the same shape for unit tests.
+      */
+    /* private */ var getNativeInput: Any = js.native
     
     /**
       * @return Whether or not validity should be updated on value change. `true`
@@ -74,7 +82,28 @@ object materialTextfieldFoundationMod {
       */
     def handleValidationAttributeChange(attributesList: js.Array[String]): Unit = js.native
     
+    /* private */ val helperText: Any = js.native
+    
+    /* private */ val inputBlurHandler: Any = js.native
+    
+    /* private */ val inputFocusHandler: Any = js.native
+    
+    /* private */ val inputInputHandler: Any = js.native
+    
+    /**
+      * @return True if the Text Field input fails in converting the user-supplied
+      *     value.
+      */
+    /* private */ var isBadInput: Any = js.native
+    
     def isDisabled(): Boolean = js.native
+    
+    /* private */ var isFocused: Any = js.native
+    
+    /**
+      * @return The result of native validity checking (ValidityState.valid).
+      */
+    /* private */ var isNativeInputValid: Any = js.native
     
     /**
       * @return The custom validity state, if set; otherwise, the result of a
@@ -82,10 +111,14 @@ object materialTextfieldFoundationMod {
       */
     def isValid(): Boolean = js.native
     
+    /* private */ val leadingIcon: Any = js.native
+    
     /**
       * Opens/closes the notched outline.
       */
     def notchOutline(openNotch: Boolean): Unit = js.native
+    
+    /* private */ var receivedUserInput: Any = js.native
     
     /**
       * @param disabled Sets the text-field disabled or enabled.
@@ -106,6 +139,8 @@ object materialTextfieldFoundationMod {
       * Sets the text content of the leading icon.
       */
     def setLeadingIconContent(content: String): Unit = js.native
+    
+    /* private */ val setPointerXOffset: Any = js.native
     
     /**
       * Sets the aria label of the trailing icon.
@@ -148,8 +183,50 @@ object materialTextfieldFoundationMod {
       */
     def setValue(value: String): Unit = js.native
     
+    /**
+      * Sets character counter values that shows characters used and the total
+      * character limit.
+      */
+    /* private */ var setcharacterCounter: Any = js.native
+    
+    /* private */ def shouldAlwaysFloat: Any = js.native
+    
     def shouldFloat: Boolean = js.native
     
     def shouldShake: Boolean = js.native
+    
+    /**
+      * Styles the component based on the disabled state.
+      */
+    /* private */ var styleDisabled: Any = js.native
+    
+    /**
+      * Styles the component based on the label floating state.
+      */
+    /* private */ var styleFloating: Any = js.native
+    
+    /**
+      * Styles the component based on the focused state.
+      */
+    /* private */ var styleFocused: Any = js.native
+    
+    /**
+      * Styles the component based on the validity state.
+      */
+    /* private */ var styleValidity: Any = js.native
+    
+    /* private */ val textFieldInteractionHandler: Any = js.native
+    
+    /* private */ val trailingIcon: Any = js.native
+    
+    /* private */ var useNativeValidation: Any = js.native
+    
+    /* private */ var valid: Any = js.native
+    
+    /* private */ var validateOnValueChange: Any = js.native
+    
+    /* private */ val validationAttributeChangeHandler: Any = js.native
+    
+    /* private */ var validationObserver: Any = js.native
   }
 }

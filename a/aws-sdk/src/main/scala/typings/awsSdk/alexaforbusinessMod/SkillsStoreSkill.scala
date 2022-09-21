@@ -58,7 +58,7 @@ object SkillsStoreSkill {
     
     inline def setSampleUtterancesUndefined: Self = StObject.set(x, "SampleUtterances", js.undefined)
     
-    inline def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "SampleUtterances", js.Array(value :_*))
+    inline def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "SampleUtterances", js.Array(value*))
     
     inline def setShortDescription(value: ShortDescription): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
     

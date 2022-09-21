@@ -12,12 +12,12 @@ trait StatefulRule extends StObject {
   var Action: StatefulAction
   
   /**
-    * The stateful 5-tuple inspection criteria for this rule, used to inspect traffic flows. 
+    * The stateful inspection criteria for this rule, used to inspect traffic flows. 
     */
   var Header: typings.awsSdk.networkfirewallMod.Header
   
   /**
-    * 
+    * Additional options for the rule. These are the Suricata RuleOptions settings.
     */
   var RuleOptions: typings.awsSdk.networkfirewallMod.RuleOptions
 }
@@ -36,6 +36,6 @@ object StatefulRule {
     
     inline def setRuleOptions(value: RuleOptions): Self = StObject.set(x, "RuleOptions", value.asInstanceOf[js.Any])
     
-    inline def setRuleOptionsVarargs(value: RuleOption*): Self = StObject.set(x, "RuleOptions", js.Array(value :_*))
+    inline def setRuleOptionsVarargs(value: RuleOption*): Self = StObject.set(x, "RuleOptions", js.Array(value*))
   }
 }

@@ -63,7 +63,7 @@ object SendRawEmailRequest {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: Address*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Address*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setFromArn(value: AmazonResourceName): Self = StObject.set(x, "FromArn", value.asInstanceOf[js.Any])
     
@@ -87,6 +87,6 @@ object SendRawEmailRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: MessageTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: MessageTag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

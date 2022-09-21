@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JsonAttribute
   extends StObject
-     with BaseAttribute[js.Any]
+     with BaseAttribute[Any]
      with _Attribute {
   
   @JSName("type")

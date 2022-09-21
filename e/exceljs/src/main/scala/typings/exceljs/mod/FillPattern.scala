@@ -12,7 +12,7 @@ trait FillPattern
   
   var bgColor: js.UndefOr[PartialColor] = js.undefined
   
-  var fgColor: PartialColor
+  var fgColor: js.UndefOr[PartialColor] = js.undefined
   
   var pattern: FillPatterns
   
@@ -20,8 +20,8 @@ trait FillPattern
 }
 object FillPattern {
   
-  inline def apply(fgColor: PartialColor, pattern: FillPatterns): FillPattern = {
-    val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+  inline def apply(pattern: FillPatterns): FillPattern = {
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[FillPattern]
   }
@@ -33,6 +33,8 @@ object FillPattern {
     inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
     inline def setFgColor(value: PartialColor): Self = StObject.set(x, "fgColor", value.asInstanceOf[js.Any])
+    
+    inline def setFgColorUndefined: Self = StObject.set(x, "fgColor", js.undefined)
     
     inline def setPattern(value: FillPatterns): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

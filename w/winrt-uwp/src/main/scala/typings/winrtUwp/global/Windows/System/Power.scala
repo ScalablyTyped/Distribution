@@ -31,13 +31,13 @@ object Power {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the excessive usage level, expressed as a percentage of normal energy usage. */
     /* static member */
@@ -78,15 +78,15 @@ object Power {
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.onrecentenergyusageincreased")
     @js.native
-    def onrecentenergyusageincreased: EventHandler[js.Any] = js.native
-    inline def onrecentenergyusageincreased_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusageincreased")(x.asInstanceOf[js.Any])
+    def onrecentenergyusageincreased: EventHandler[Any] = js.native
+    inline def onrecentenergyusageincreased_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusageincreased")(x.asInstanceOf[js.Any])
     
     /** Occurs when the background task's energy usage has decreased to a low usage level. */
     /* static member */
     @JSGlobal("Windows.System.Power.BackgroundEnergyManager.onrecentenergyusagereturnedtolow")
     @js.native
-    def onrecentenergyusagereturnedtolow: EventHandler[js.Any] = js.native
-    inline def onrecentenergyusagereturnedtolow_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusagereturnedtolow")(x.asInstanceOf[js.Any])
+    def onrecentenergyusagereturnedtolow: EventHandler[Any] = js.native
+    inline def onrecentenergyusagereturnedtolow_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusagereturnedtolow")(x.asInstanceOf[js.Any])
     
     /** Gets the energy usage of the app's background task for the current 30 minute period, expressed as a percentage of normal. */
     /* static member */
@@ -104,13 +104,13 @@ object Power {
     inline def recentEnergyUsage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsage")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the termination usage level, expressed as a percentage of normal energy usage. */
     /* static member */
@@ -231,13 +231,13 @@ object Power {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the excessive usage level, expressed as a percentage of normal energy usage. */
     /* static member */
@@ -271,15 +271,15 @@ object Power {
     /* static member */
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.onrecentenergyusageincreased")
     @js.native
-    def onrecentenergyusageincreased: EventHandler[js.Any] = js.native
-    inline def onrecentenergyusageincreased_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusageincreased")(x.asInstanceOf[js.Any])
+    def onrecentenergyusageincreased: EventHandler[Any] = js.native
+    inline def onrecentenergyusageincreased_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusageincreased")(x.asInstanceOf[js.Any])
     
     /** Occurs when the app's energy usage has decreased to a low usage level. */
     /* static member */
     @JSGlobal("Windows.System.Power.ForegroundEnergyManager.onrecentenergyusagereturnedtolow")
     @js.native
-    def onrecentenergyusagereturnedtolow: EventHandler[js.Any] = js.native
-    inline def onrecentenergyusagereturnedtolow_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusagereturnedtolow")(x.asInstanceOf[js.Any])
+    def onrecentenergyusagereturnedtolow: EventHandler[Any] = js.native
+    inline def onrecentenergyusagereturnedtolow_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecentenergyusagereturnedtolow")(x.asInstanceOf[js.Any])
     
     /** Gets the nearest predefined energy level of the foreground app for the current 30 minute period, equal to LowUsageLevel , NearMaxAcceptableUsageLevel , MaxAcceptableUsageLevel , or ExcessiveUsageLevel . */
     /* static member */
@@ -297,13 +297,13 @@ object Power {
     inline def recentEnergyUsage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recentEnergyUsage")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_recentenergyusageincreased(`type`: recentenergyusageincreased, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_recentenergyusagereturnedtolow(`type`: recentenergyusagereturnedtolow, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** Provides access to information about a device's battery and power supply status. */
@@ -319,22 +319,22 @@ object Power {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_batterystatuschanged(`type`: batterystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_batterystatuschanged(`type`: batterystatuschanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_energysaverstatuschanged(`type`: energysaverstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_energysaverstatuschanged(`type`: energysaverstatuschanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_powersupplystatuschanged(`type`: powersupplystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_powersupplystatuschanged(`type`: powersupplystatuschanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_remainingchargepercentchanged(`type`: remainingchargepercentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_remainingchargepercentchanged(`type`: remainingchargepercentchanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_remainingdischargetimechanged(`type`: remainingdischargetimechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_remainingdischargetimechanged(`type`: remainingdischargetimechanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the device's battery status. */
     /* static member */
@@ -354,36 +354,36 @@ object Power {
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onbatterystatuschanged")
     @js.native
-    def onbatterystatuschanged: EventHandler[js.Any] = js.native
-    inline def onbatterystatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onbatterystatuschanged")(x.asInstanceOf[js.Any])
+    def onbatterystatuschanged: EventHandler[Any] = js.native
+    inline def onbatterystatuschanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onbatterystatuschanged")(x.asInstanceOf[js.Any])
     
     /** Occurs when EnergySaverStatus changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onenergysaverstatuschanged")
     @js.native
-    def onenergysaverstatuschanged: EventHandler[js.Any] = js.native
-    inline def onenergysaverstatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onenergysaverstatuschanged")(x.asInstanceOf[js.Any])
+    def onenergysaverstatuschanged: EventHandler[Any] = js.native
+    inline def onenergysaverstatuschanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onenergysaverstatuschanged")(x.asInstanceOf[js.Any])
     
     /** Occurs when the PowerSupplyStatus changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onpowersupplystatuschanged")
     @js.native
-    def onpowersupplystatuschanged: EventHandler[js.Any] = js.native
-    inline def onpowersupplystatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpowersupplystatuschanged")(x.asInstanceOf[js.Any])
+    def onpowersupplystatuschanged: EventHandler[Any] = js.native
+    inline def onpowersupplystatuschanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpowersupplystatuschanged")(x.asInstanceOf[js.Any])
     
     /** Occurs when RemainingChargePercent changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onremainingchargepercentchanged")
     @js.native
-    def onremainingchargepercentchanged: EventHandler[js.Any] = js.native
-    inline def onremainingchargepercentchanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onremainingchargepercentchanged")(x.asInstanceOf[js.Any])
+    def onremainingchargepercentchanged: EventHandler[Any] = js.native
+    inline def onremainingchargepercentchanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onremainingchargepercentchanged")(x.asInstanceOf[js.Any])
     
     /** Occurs when RemainingDischargeTime changes. */
     /* static member */
     @JSGlobal("Windows.System.Power.PowerManager.onremainingdischargetimechanged")
     @js.native
-    def onremainingdischargetimechanged: EventHandler[js.Any] = js.native
-    inline def onremainingdischargetimechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onremainingdischargetimechanged")(x.asInstanceOf[js.Any])
+    def onremainingdischargetimechanged: EventHandler[Any] = js.native
+    inline def onremainingdischargetimechanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onremainingdischargetimechanged")(x.asInstanceOf[js.Any])
     
     /** Gets the device's power supply status. */
     /* static member */
@@ -407,22 +407,22 @@ object Power {
     inline def remainingDischargeTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remainingDischargeTime")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_batterystatuschanged(`type`: batterystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_batterystatuschanged(`type`: batterystatuschanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_energysaverstatuschanged(`type`: energysaverstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_energysaverstatuschanged(`type`: energysaverstatuschanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_powersupplystatuschanged(`type`: powersupplystatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_powersupplystatuschanged(`type`: powersupplystatuschanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_remainingchargepercentchanged(`type`: remainingchargepercentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_remainingchargepercentchanged(`type`: remainingchargepercentchanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_remainingdischargetimechanged(`type`: remainingdischargetimechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_remainingdischargetimechanged(`type`: remainingdischargetimechanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** Represents the device's power supply status. */

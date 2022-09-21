@@ -20,11 +20,11 @@ object DataPackagePropertySetView {
     applicationName: String,
     description: String,
     fileTypes: IVectorView[String],
-    first: () => IIterator[IKeyValuePair[String, js.Any]],
+    first: () => IIterator[IKeyValuePair[String, Any]],
     hasKey: String => Boolean,
-    lookup: String => js.Any,
+    lookup: String => Any,
     size: Double,
-    split: () => First[String, js.Any],
+    split: () => First[String, Any],
     thumbnail: RandomAccessStreamReference,
     title: String
   ): DataPackagePropertySetView = {

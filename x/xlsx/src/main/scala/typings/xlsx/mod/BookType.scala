@@ -19,11 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xlsx.xlsxStrings.csv
   - typings.xlsx.xlsxStrings.txt
   - typings.xlsx.xlsxStrings.sylk
+  - typings.xlsx.xlsxStrings.slk
   - typings.xlsx.xlsxStrings.html
   - typings.xlsx.xlsxStrings.dif
   - typings.xlsx.xlsxStrings.rtf
   - typings.xlsx.xlsxStrings.prn
   - typings.xlsx.xlsxStrings.eth
+  - typings.xlsx.xlsxStrings.dbf
 */
 trait BookType extends StObject
 object BookType {
@@ -35,6 +37,8 @@ object BookType {
   inline def biff8: typings.xlsx.xlsxStrings.biff8 = "biff8".asInstanceOf[typings.xlsx.xlsxStrings.biff8]
   
   inline def csv: typings.xlsx.xlsxStrings.csv = "csv".asInstanceOf[typings.xlsx.xlsxStrings.csv]
+  
+  inline def dbf: typings.xlsx.xlsxStrings.dbf = "dbf".asInstanceOf[typings.xlsx.xlsxStrings.dbf]
   
   inline def dif: typings.xlsx.xlsxStrings.dif = "dif".asInstanceOf[typings.xlsx.xlsxStrings.dif]
   
@@ -49,6 +53,8 @@ object BookType {
   inline def prn: typings.xlsx.xlsxStrings.prn = "prn".asInstanceOf[typings.xlsx.xlsxStrings.prn]
   
   inline def rtf: typings.xlsx.xlsxStrings.rtf = "rtf".asInstanceOf[typings.xlsx.xlsxStrings.rtf]
+  
+  inline def slk: typings.xlsx.xlsxStrings.slk = "slk".asInstanceOf[typings.xlsx.xlsxStrings.slk]
   
   inline def sylk: typings.xlsx.xlsxStrings.sylk = "sylk".asInstanceOf[typings.xlsx.xlsxStrings.sylk]
   

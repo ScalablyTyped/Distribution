@@ -36,12 +36,12 @@ object FullManifestResource {
     
     inline def setIdPrefixesUndefined: Self = StObject.set(x, "idPrefixes", js.undefined)
     
-    inline def setIdPrefixesVarargs(value: String*): Self = StObject.set(x, "idPrefixes", js.Array(value :_*))
+    inline def setIdPrefixesVarargs(value: String*): Self = StObject.set(x, "idPrefixes", js.Array(value*))
     
     inline def setName(value: ShortManifestResource): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: js.Array[ContentType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: ContentType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: ContentType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

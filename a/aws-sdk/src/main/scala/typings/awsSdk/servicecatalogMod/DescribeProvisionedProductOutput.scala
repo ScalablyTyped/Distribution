@@ -29,7 +29,7 @@ object DescribeProvisionedProductOutput {
     
     inline def setCloudWatchDashboardsUndefined: Self = StObject.set(x, "CloudWatchDashboards", js.undefined)
     
-    inline def setCloudWatchDashboardsVarargs(value: CloudWatchDashboard*): Self = StObject.set(x, "CloudWatchDashboards", js.Array(value :_*))
+    inline def setCloudWatchDashboardsVarargs(value: CloudWatchDashboard*): Self = StObject.set(x, "CloudWatchDashboards", js.Array(value*))
     
     inline def setProvisionedProductDetail(value: ProvisionedProductDetail): Self = StObject.set(x, "ProvisionedProductDetail", value.asInstanceOf[js.Any])
     

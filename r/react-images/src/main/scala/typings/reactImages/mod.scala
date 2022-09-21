@@ -1,301 +1,729 @@
 package typings.reactImages
 
-import typings.react.mod.Component
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactElement
-import typings.react.mod.ReactHTMLElement
-import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.CSSProperties
+import typings.react.mod.ComponentType
+import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.reactImages.anon.Blanket
+import typings.reactImages.anon.Download
+import typings.reactImages.anon.Props
+import typings.reactImages.reactImagesBooleans.`false`
+import typings.reactImages.reactImagesStrings.auto
+import typings.reactImages.reactImagesStrings.height
+import typings.reactImages.reactImagesStrings.mouse
+import typings.reactImages.reactImagesStrings.touch
+import typings.reactImages.reactImagesStrings.width
+import typings.reactImages.reactImagesStrings.x
+import typings.reactImages.reactImagesStrings.y
+import typings.std.Event
+import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
   @JSImport("react-images", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[LightboxProps, js.Object, js.Any] {
-    def this(props: LightboxProps) = this()
-  }
+  val default: ComponentType[CarouselProps] = js.native
   
-  trait Image extends StObject {
+  @JSImport("react-images", "Modal")
+  @js.native
+  val Modal: ComponentType[ModalProps] = js.native
+  
+  @JSImport("react-images", "ModalGateway")
+  @js.native
+  val ModalGateway: ComponentType[js.Object] = js.native
+  
+  trait CarouselModalProps extends StObject {
     
-    /**
-      * The alt text for the image.
-      */
-    var alt: js.UndefOr[String] = js.undefined
+    var allowFullscreen: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * The image caption.
-      */
-    var caption: js.UndefOr[String] = js.undefined
+    var isFullscreen: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * The source of the image. Required.
-      */
-    var src: String
+    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLButtonElement, Event], Unit]] = js.undefined
     
-    /**
-      * array of strings or string
-      */
-    var srcSet: js.UndefOr[String | js.Array[String]] = js.undefined
+    var toggleFullscreen: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
-  object Image {
+  object CarouselModalProps {
     
-    inline def apply(src: String): Image = {
-      val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Image]
+    inline def apply(): CarouselModalProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CarouselModalProps]
     }
     
-    extension [Self <: Image](x: Self) {
+    extension [Self <: CarouselModalProps](x: Self) {
+      
+      inline def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
+      
+      inline def setAllowFullscreenUndefined: Self = StObject.set(x, "allowFullscreen", js.undefined)
+      
+      inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+      
+      inline def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
+      
+      inline def setOnClose(value: /* event */ SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      
+      inline def setToggleFullscreen(value: () => Unit): Self = StObject.set(x, "toggleFullscreen", js.Any.fromFunction0(value))
+      
+      inline def setToggleFullscreenUndefined: Self = StObject.set(x, "toggleFullscreen", js.undefined)
+    }
+  }
+  
+  trait CarouselProps extends StObject {
+    
+    var components: js.UndefOr[Components] = js.undefined
+    
+    var currentIndex: js.UndefOr[Double] = js.undefined
+    
+    var formatters: js.UndefOr[Formatters] = js.undefined
+    
+    var frameProps: js.UndefOr[FrameProps] = js.undefined
+    
+    var hideControlsWhenIdle: js.UndefOr[Double | `false`] = js.undefined
+    
+    var modalProps: js.UndefOr[CarouselModalProps] = js.undefined
+    
+    var styles: js.UndefOr[CarouselStyles] = js.undefined
+    
+    var trackProps: js.UndefOr[TrackProps] = js.undefined
+    
+    var views: js.Array[ViewType]
+  }
+  object CarouselProps {
+    
+    inline def apply(views: js.Array[ViewType]): CarouselProps = {
+      val __obj = js.Dynamic.literal(views = views.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CarouselProps]
+    }
+    
+    extension [Self <: CarouselProps](x: Self) {
+      
+      inline def setComponents(value: Components): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      
+      inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentIndexUndefined: Self = StObject.set(x, "currentIndex", js.undefined)
+      
+      inline def setFormatters(value: Formatters): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
+      
+      inline def setFormattersUndefined: Self = StObject.set(x, "formatters", js.undefined)
+      
+      inline def setFrameProps(value: FrameProps): Self = StObject.set(x, "frameProps", value.asInstanceOf[js.Any])
+      
+      inline def setFramePropsUndefined: Self = StObject.set(x, "frameProps", js.undefined)
+      
+      inline def setHideControlsWhenIdle(value: Double | `false`): Self = StObject.set(x, "hideControlsWhenIdle", value.asInstanceOf[js.Any])
+      
+      inline def setHideControlsWhenIdleUndefined: Self = StObject.set(x, "hideControlsWhenIdle", js.undefined)
+      
+      inline def setModalProps(value: CarouselModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
+      
+      inline def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
+      
+      inline def setStyles(value: CarouselStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      
+      inline def setTrackProps(value: TrackProps): Self = StObject.set(x, "trackProps", value.asInstanceOf[js.Any])
+      
+      inline def setTrackPropsUndefined: Self = StObject.set(x, "trackProps", js.undefined)
+      
+      inline def setViews(value: js.Array[ViewType]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsVarargs(value: ViewType*): Self = StObject.set(x, "views", js.Array(value*))
+    }
+  }
+  
+  trait CarouselState extends StObject {
+    
+    var interactionIsIdle: js.UndefOr[Boolean] = js.undefined
+    
+    var isFullscreen: js.UndefOr[Boolean] = js.undefined
+    
+    var isModal: js.UndefOr[Boolean] = js.undefined
+  }
+  object CarouselState {
+    
+    inline def apply(): CarouselState = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CarouselState]
+    }
+    
+    extension [Self <: CarouselState](x: Self) {
+      
+      inline def setInteractionIsIdle(value: Boolean): Self = StObject.set(x, "interactionIsIdle", value.asInstanceOf[js.Any])
+      
+      inline def setInteractionIsIdleUndefined: Self = StObject.set(x, "interactionIsIdle", js.undefined)
+      
+      inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+      
+      inline def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
+      
+      inline def setIsModal(value: Boolean): Self = StObject.set(x, "isModal", value.asInstanceOf[js.Any])
+      
+      inline def setIsModalUndefined: Self = StObject.set(x, "isModal", js.undefined)
+    }
+  }
+  
+  trait CarouselStyles extends StObject {
+    
+    var container: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var footer: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var footerCaption: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var footerCount: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var header: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var headerClose: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var headerFullscreen: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var navigation: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var navigationNext: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var navigationPrev: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+    
+    var view: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ CarouselState, CSSProperties]] = js.undefined
+  }
+  object CarouselStyles {
+    
+    inline def apply(): CarouselStyles = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CarouselStyles]
+    }
+    
+    extension [Self <: CarouselStyles](x: Self) {
+      
+      inline def setContainer(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      
+      inline def setFooter(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "footer", js.Any.fromFunction2(value))
+      
+      inline def setFooterCaption(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "footerCaption", js.Any.fromFunction2(value))
+      
+      inline def setFooterCaptionUndefined: Self = StObject.set(x, "footerCaption", js.undefined)
+      
+      inline def setFooterCount(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "footerCount", js.Any.fromFunction2(value))
+      
+      inline def setFooterCountUndefined: Self = StObject.set(x, "footerCount", js.undefined)
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      
+      inline def setHeader(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "header", js.Any.fromFunction2(value))
+      
+      inline def setHeaderClose(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "headerClose", js.Any.fromFunction2(value))
+      
+      inline def setHeaderCloseUndefined: Self = StObject.set(x, "headerClose", js.undefined)
+      
+      inline def setHeaderFullscreen(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "headerFullscreen", js.Any.fromFunction2(value))
+      
+      inline def setHeaderFullscreenUndefined: Self = StObject.set(x, "headerFullscreen", js.undefined)
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setNavigation(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "navigation", js.Any.fromFunction2(value))
+      
+      inline def setNavigationNext(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "navigationNext", js.Any.fromFunction2(value))
+      
+      inline def setNavigationNextUndefined: Self = StObject.set(x, "navigationNext", js.undefined)
+      
+      inline def setNavigationPrev(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "navigationPrev", js.Any.fromFunction2(value))
+      
+      inline def setNavigationPrevUndefined: Self = StObject.set(x, "navigationPrev", js.undefined)
+      
+      inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+      
+      inline def setView(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "view", js.Any.fromFunction2(value))
+      
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    }
+  }
+  
+  trait CommonProps extends StObject {
+    
+    var carouselProps: js.UndefOr[CarouselProps] = js.undefined
+    
+    var currentIndex: js.UndefOr[Double] = js.undefined
+    
+    var currentView: js.UndefOr[ViewType] = js.undefined
+    
+    var frameProps: js.UndefOr[FrameProps] = js.undefined
+    
+    var getStyles: js.UndefOr[js.Function2[/* base */ CSSProperties, /* state */ Any, CSSProperties]] = js.undefined
+    
+    var innerProps: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    var interactionIsIdle: js.UndefOr[Boolean] = js.undefined
+    
+    var isFullscreen: js.UndefOr[Boolean] = js.undefined
+    
+    var isModal: js.UndefOr[Boolean] = js.undefined
+    
+    var modalProps: js.UndefOr[CarouselModalProps] = js.undefined
+    
+    var trackProps: js.UndefOr[TrackProps] = js.undefined
+    
+    var views: js.UndefOr[js.Array[ViewType]] = js.undefined
+  }
+  object CommonProps {
+    
+    inline def apply(): CommonProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CommonProps]
+    }
+    
+    extension [Self <: CommonProps](x: Self) {
+      
+      inline def setCarouselProps(value: CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
+      
+      inline def setCarouselPropsUndefined: Self = StObject.set(x, "carouselProps", js.undefined)
+      
+      inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentIndexUndefined: Self = StObject.set(x, "currentIndex", js.undefined)
+      
+      inline def setCurrentView(value: ViewType): Self = StObject.set(x, "currentView", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentViewUndefined: Self = StObject.set(x, "currentView", js.undefined)
+      
+      inline def setFrameProps(value: FrameProps): Self = StObject.set(x, "frameProps", value.asInstanceOf[js.Any])
+      
+      inline def setFramePropsUndefined: Self = StObject.set(x, "frameProps", js.undefined)
+      
+      inline def setGetStyles(value: (/* base */ CSSProperties, /* state */ Any) => CSSProperties): Self = StObject.set(x, "getStyles", js.Any.fromFunction2(value))
+      
+      inline def setGetStylesUndefined: Self = StObject.set(x, "getStyles", js.undefined)
+      
+      inline def setInnerProps(value: StringDictionary[Any]): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
+      
+      inline def setInnerPropsUndefined: Self = StObject.set(x, "innerProps", js.undefined)
+      
+      inline def setInteractionIsIdle(value: Boolean): Self = StObject.set(x, "interactionIsIdle", value.asInstanceOf[js.Any])
+      
+      inline def setInteractionIsIdleUndefined: Self = StObject.set(x, "interactionIsIdle", js.undefined)
+      
+      inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+      
+      inline def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
+      
+      inline def setIsModal(value: Boolean): Self = StObject.set(x, "isModal", value.asInstanceOf[js.Any])
+      
+      inline def setIsModalUndefined: Self = StObject.set(x, "isModal", js.undefined)
+      
+      inline def setModalProps(value: CarouselModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
+      
+      inline def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
+      
+      inline def setTrackProps(value: TrackProps): Self = StObject.set(x, "trackProps", value.asInstanceOf[js.Any])
+      
+      inline def setTrackPropsUndefined: Self = StObject.set(x, "trackProps", js.undefined)
+      
+      inline def setViews(value: js.Array[ViewType]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: ViewType*): Self = StObject.set(x, "views", js.Array(value*))
+    }
+  }
+  
+  trait Components extends StObject {
+    
+    var Container: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var Footer: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var FooterCaption: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var FooterCount: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var Header: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var HeaderClose: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var HeaderFullscreen: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var Navigation: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var NavigationNext: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var NavigationPrev: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+    
+    var View: js.UndefOr[ComponentType[CommonProps]] = js.undefined
+  }
+  object Components {
+    
+    inline def apply(): Components = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Components]
+    }
+    
+    extension [Self <: Components](x: Self) {
+      
+      inline def setContainer(value: ComponentType[CommonProps]): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
+      
+      inline def setFooter(value: ComponentType[CommonProps]): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterCaption(value: ComponentType[CommonProps]): Self = StObject.set(x, "FooterCaption", value.asInstanceOf[js.Any])
+      
+      inline def setFooterCaptionUndefined: Self = StObject.set(x, "FooterCaption", js.undefined)
+      
+      inline def setFooterCount(value: ComponentType[CommonProps]): Self = StObject.set(x, "FooterCount", value.asInstanceOf[js.Any])
+      
+      inline def setFooterCountUndefined: Self = StObject.set(x, "FooterCount", js.undefined)
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "Footer", js.undefined)
+      
+      inline def setHeader(value: ComponentType[CommonProps]): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderClose(value: ComponentType[CommonProps]): Self = StObject.set(x, "HeaderClose", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderCloseUndefined: Self = StObject.set(x, "HeaderClose", js.undefined)
+      
+      inline def setHeaderFullscreen(value: ComponentType[CommonProps]): Self = StObject.set(x, "HeaderFullscreen", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderFullscreenUndefined: Self = StObject.set(x, "HeaderFullscreen", js.undefined)
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
+      
+      inline def setNavigation(value: ComponentType[CommonProps]): Self = StObject.set(x, "Navigation", value.asInstanceOf[js.Any])
+      
+      inline def setNavigationNext(value: ComponentType[CommonProps]): Self = StObject.set(x, "NavigationNext", value.asInstanceOf[js.Any])
+      
+      inline def setNavigationNextUndefined: Self = StObject.set(x, "NavigationNext", js.undefined)
+      
+      inline def setNavigationPrev(value: ComponentType[CommonProps]): Self = StObject.set(x, "NavigationPrev", value.asInstanceOf[js.Any])
+      
+      inline def setNavigationPrevUndefined: Self = StObject.set(x, "NavigationPrev", js.undefined)
+      
+      inline def setNavigationUndefined: Self = StObject.set(x, "Navigation", js.undefined)
+      
+      inline def setView(value: ComponentType[CommonProps]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+      
+      inline def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
+    }
+  }
+  
+  trait Formatters extends StObject {
+    
+    var getAltText: js.UndefOr[js.Function1[/* props */ CommonProps, String]] = js.undefined
+    
+    var getCloseLabel: js.UndefOr[js.Function1[/* props */ CommonProps, String]] = js.undefined
+    
+    var getFullscreenLabel: js.UndefOr[js.Function1[/* props */ CommonProps, String]] = js.undefined
+    
+    var getNextLabel: js.UndefOr[js.Function1[/* props */ CommonProps, String]] = js.undefined
+    
+    var getNextTitle: js.UndefOr[js.Function1[/* props */ CommonProps, String]] = js.undefined
+    
+    var getPrevLabel: js.UndefOr[js.Function1[/* props */ CommonProps, String]] = js.undefined
+    
+    var getPrevTitle: js.UndefOr[js.Function1[/* props */ CommonProps, String]] = js.undefined
+  }
+  object Formatters {
+    
+    inline def apply(): Formatters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Formatters]
+    }
+    
+    extension [Self <: Formatters](x: Self) {
+      
+      inline def setGetAltText(value: /* props */ CommonProps => String): Self = StObject.set(x, "getAltText", js.Any.fromFunction1(value))
+      
+      inline def setGetAltTextUndefined: Self = StObject.set(x, "getAltText", js.undefined)
+      
+      inline def setGetCloseLabel(value: /* props */ CommonProps => String): Self = StObject.set(x, "getCloseLabel", js.Any.fromFunction1(value))
+      
+      inline def setGetCloseLabelUndefined: Self = StObject.set(x, "getCloseLabel", js.undefined)
+      
+      inline def setGetFullscreenLabel(value: /* props */ CommonProps => String): Self = StObject.set(x, "getFullscreenLabel", js.Any.fromFunction1(value))
+      
+      inline def setGetFullscreenLabelUndefined: Self = StObject.set(x, "getFullscreenLabel", js.undefined)
+      
+      inline def setGetNextLabel(value: /* props */ CommonProps => String): Self = StObject.set(x, "getNextLabel", js.Any.fromFunction1(value))
+      
+      inline def setGetNextLabelUndefined: Self = StObject.set(x, "getNextLabel", js.undefined)
+      
+      inline def setGetNextTitle(value: /* props */ CommonProps => String): Self = StObject.set(x, "getNextTitle", js.Any.fromFunction1(value))
+      
+      inline def setGetNextTitleUndefined: Self = StObject.set(x, "getNextTitle", js.undefined)
+      
+      inline def setGetPrevLabel(value: /* props */ CommonProps => String): Self = StObject.set(x, "getPrevLabel", js.Any.fromFunction1(value))
+      
+      inline def setGetPrevLabelUndefined: Self = StObject.set(x, "getPrevLabel", js.undefined)
+      
+      inline def setGetPrevTitle(value: /* props */ CommonProps => String): Self = StObject.set(x, "getPrevTitle", js.Any.fromFunction1(value))
+      
+      inline def setGetPrevTitleUndefined: Self = StObject.set(x, "getPrevTitle", js.undefined)
+    }
+  }
+  
+  trait FrameProps extends StObject {
+    
+    var accessibility: js.UndefOr[Boolean] = js.undefined
+    
+    var autoSize: js.UndefOr[Boolean | width | height] = js.undefined
+    
+    var springConfig: js.UndefOr[StringDictionary[Double]] = js.undefined
+    
+    var tag: js.UndefOr[String] = js.undefined
+  }
+  object FrameProps {
+    
+    inline def apply(): FrameProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FrameProps]
+    }
+    
+    extension [Self <: FrameProps](x: Self) {
+      
+      inline def setAccessibility(value: Boolean): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+      
+      inline def setAutoSize(value: Boolean | width | height): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
+      
+      inline def setSpringConfig(value: StringDictionary[Double]): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
+      
+      inline def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
+      
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    }
+  }
+  
+  trait ModalProps extends StObject {
+    
+    var allowFullscreen: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var closeOnBackdropClick: js.UndefOr[Boolean] = js.undefined
+    
+    var closeOnEsc: js.UndefOr[Boolean] = js.undefined
+    
+    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLButtonElement, Event], Unit]] = js.undefined
+    
+    var styles: js.UndefOr[Blanket] = js.undefined
+  }
+  object ModalProps {
+    
+    inline def apply(): ModalProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ModalProps]
+    }
+    
+    extension [Self <: ModalProps](x: Self) {
+      
+      inline def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
+      
+      inline def setAllowFullscreenUndefined: Self = StObject.set(x, "allowFullscreen", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setCloseOnBackdropClick(value: Boolean): Self = StObject.set(x, "closeOnBackdropClick", value.asInstanceOf[js.Any])
+      
+      inline def setCloseOnBackdropClickUndefined: Self = StObject.set(x, "closeOnBackdropClick", js.undefined)
+      
+      inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+      
+      inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+      
+      inline def setOnClose(value: /* event */ SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      
+      inline def setStyles(value: Blanket): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    }
+  }
+  
+  trait TrackProps extends StObject {
+    
+    var align: js.UndefOr[Double] = js.undefined
+    
+    var animations: js.UndefOr[js.Array[Props]] = js.undefined
+    
+    var axis: js.UndefOr[x | y] = js.undefined
+    
+    var contain: js.UndefOr[Boolean] = js.undefined
+    
+    var currentView: js.UndefOr[Any] = js.undefined
+    
+    var flickTimeout: js.UndefOr[Double] = js.undefined
+    
+    var infinite: js.UndefOr[Boolean] = js.undefined
+    
+    var instant: js.UndefOr[Boolean] = js.undefined
+    
+    var onRest: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onScroll: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onSwipeEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onSwipeMove: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onSwipeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onViewChange: js.UndefOr[js.Function1[/* view */ Double, Unit]] = js.undefined
+    
+    var springConfig: js.UndefOr[StringDictionary[Double]] = js.undefined
+    
+    var swipe: js.UndefOr[Boolean | mouse | touch] = js.undefined
+    
+    var swipeThreshold: js.UndefOr[Double] = js.undefined
+    
+    var tag: js.UndefOr[Any] = js.undefined
+    
+    var viewsToMove: js.UndefOr[Double] = js.undefined
+    
+    var viewsToShow: js.UndefOr[Double | auto] = js.undefined
+  }
+  object TrackProps {
+    
+    inline def apply(): TrackProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TrackProps]
+    }
+    
+    extension [Self <: TrackProps](x: Self) {
+      
+      inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      
+      inline def setAnimations(value: js.Array[Props]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
+      
+      inline def setAnimationsVarargs(value: Props*): Self = StObject.set(x, "animations", js.Array(value*))
+      
+      inline def setAxis(value: typings.reactImages.reactImagesStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      
+      inline def setContain(value: Boolean): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+      
+      inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+      
+      inline def setCurrentView(value: Any): Self = StObject.set(x, "currentView", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentViewUndefined: Self = StObject.set(x, "currentView", js.undefined)
+      
+      inline def setFlickTimeout(value: Double): Self = StObject.set(x, "flickTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setFlickTimeoutUndefined: Self = StObject.set(x, "flickTimeout", js.undefined)
+      
+      inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+      
+      inline def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
+      
+      inline def setInstant(value: Boolean): Self = StObject.set(x, "instant", value.asInstanceOf[js.Any])
+      
+      inline def setInstantUndefined: Self = StObject.set(x, "instant", js.undefined)
+      
+      inline def setOnRest(value: () => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction0(value))
+      
+      inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
+      
+      inline def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
+      
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      
+      inline def setOnSwipeEnd(value: () => Unit): Self = StObject.set(x, "onSwipeEnd", js.Any.fromFunction0(value))
+      
+      inline def setOnSwipeEndUndefined: Self = StObject.set(x, "onSwipeEnd", js.undefined)
+      
+      inline def setOnSwipeMove(value: () => Unit): Self = StObject.set(x, "onSwipeMove", js.Any.fromFunction0(value))
+      
+      inline def setOnSwipeMoveUndefined: Self = StObject.set(x, "onSwipeMove", js.undefined)
+      
+      inline def setOnSwipeStart(value: () => Unit): Self = StObject.set(x, "onSwipeStart", js.Any.fromFunction0(value))
+      
+      inline def setOnSwipeStartUndefined: Self = StObject.set(x, "onSwipeStart", js.undefined)
+      
+      inline def setOnViewChange(value: /* view */ Double => Unit): Self = StObject.set(x, "onViewChange", js.Any.fromFunction1(value))
+      
+      inline def setOnViewChangeUndefined: Self = StObject.set(x, "onViewChange", js.undefined)
+      
+      inline def setSpringConfig(value: StringDictionary[Double]): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
+      
+      inline def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
+      
+      inline def setSwipe(value: Boolean | mouse | touch): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
+      
+      inline def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
+      
+      inline def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
+      
+      inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
+      
+      inline def setTag(value: Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      
+      inline def setViewsToMove(value: Double): Self = StObject.set(x, "viewsToMove", value.asInstanceOf[js.Any])
+      
+      inline def setViewsToMoveUndefined: Self = StObject.set(x, "viewsToMove", js.undefined)
+      
+      inline def setViewsToShow(value: Double | auto): Self = StObject.set(x, "viewsToShow", value.asInstanceOf[js.Any])
+      
+      inline def setViewsToShowUndefined: Self = StObject.set(x, "viewsToShow", js.undefined)
+    }
+  }
+  
+  trait ViewType extends StObject {
+    
+    var alt: js.UndefOr[String] = js.undefined
+    
+    var caption: js.UndefOr[ReactNode] = js.undefined
+    
+    var source: String | Download
+  }
+  object ViewType {
+    
+    inline def apply(source: String | Download): ViewType = {
+      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ViewType]
+    }
+    
+    extension [Self <: ViewType](x: Self) {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: ReactNode): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
       inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
-      
-      inline def setSrcSet(value: String | js.Array[String]): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
-      
-      inline def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
-      
-      inline def setSrcSetVarargs(value: String*): Self = StObject.set(x, "srcSet", js.Array(value :_*))
+      inline def setSource(value: String | Download): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
-  type Lightbox = Component[LightboxProps, js.Object, js.Any]
+  type _To = ComponentType[CarouselProps]
   
-  trait LightboxProps extends StObject {
-    
-    /**
-      * Allow users to exit the lightbox by clicking the backdrop. Default value: false.
-      */
-    var backdropClosesModal: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Custom close esc title. Default value: ' Close (Esc) '
-      */
-    var closeButtonTitle: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The index of the image to display initially. Default value: 0
-      */
-    var currentImage: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * An array of elements to display as custom controls on the top of lightbox. Default value: undefined
-      */
-    var customControls: js.UndefOr[js.Array[ReactHTMLElement[js.Any]]] = js.undefined
-    
-    /**
-      * Supports keyboard input - esc, arrow left, and arrow right. Default value: true
-      */
-    var enableKeyboardInput: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The image count separator. Default value: ' of '
-      */
-    var imageCountSeparator: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Array of image objects. Required.
-      */
-    var images: js.Array[Image]
-    
-    /**
-      * Whether or not the lightbox is displayed. Default value: false;
-      */
-    var isOpen: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Custom of left arrow title. Default value: ' Previous (Left arrow key) '
-      */
-    var leftArrowTitle: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Handle click on image.
-      */
-    var onClickImage: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLImageElement, NativeMouseEvent], Unit]] = js.undefined
-    
-    /**
-      * Fired on request of the next image.
-      */
-    var onClickNext: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    /**
-      * Fired on request of the previous image.
-      */
-    var onClickPrev: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    /**
-      * Handle click on thumbnail.
-      */
-    var onClickThumbnail: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
-    
-    /**
-      * Handle closing of the lightbox. Required.
-      */
-    def onClose(): Unit
-    
-    /**
-      * Based on the direction the user is navigating, preload the next available image. Default value: true
-      */
-    var preloadNextImage: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Determines whether scrolling is prevented via react-scrolllock. Default value: true
-      */
-    var preventScroll: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Customize right arrow title. Default value: ' Next (Right arrow key) '
-      */
-    var rightArrowTitle: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Optionally display a close "X" button in top right corner. Default value: true
-      */
-    var showCloseButton: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Optionally display image index, e.g., "3 of 20". Default value: true
-      */
-    var showImageCount: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Optionally display thumbnails beneath the Lightbox
-      */
-    var showThumbnails: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Spinner component.
-      */
-    var spinner: js.UndefOr[js.Function0[ReactElement]] = js.undefined
-    
-    /**
-      *  Color of spinner. Default value: 'white'
-      */
-    var spinnerColor: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Size of spinner. Default value: 100
-      */
-    var spinnerSize: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Maximum width of the carousel; defaults to 1024px
-      */
-    var width: js.UndefOr[Double] = js.undefined
-  }
-  object LightboxProps {
-    
-    inline def apply(images: js.Array[Image], onClose: () => Unit): LightboxProps = {
-      val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose))
-      __obj.asInstanceOf[LightboxProps]
-    }
-    
-    extension [Self <: LightboxProps](x: Self) {
-      
-      inline def setBackdropClosesModal(value: Boolean): Self = StObject.set(x, "backdropClosesModal", value.asInstanceOf[js.Any])
-      
-      inline def setBackdropClosesModalUndefined: Self = StObject.set(x, "backdropClosesModal", js.undefined)
-      
-      inline def setCloseButtonTitle(value: String): Self = StObject.set(x, "closeButtonTitle", value.asInstanceOf[js.Any])
-      
-      inline def setCloseButtonTitleUndefined: Self = StObject.set(x, "closeButtonTitle", js.undefined)
-      
-      inline def setCurrentImage(value: Double): Self = StObject.set(x, "currentImage", value.asInstanceOf[js.Any])
-      
-      inline def setCurrentImageUndefined: Self = StObject.set(x, "currentImage", js.undefined)
-      
-      inline def setCustomControls(value: js.Array[ReactHTMLElement[js.Any]]): Self = StObject.set(x, "customControls", value.asInstanceOf[js.Any])
-      
-      inline def setCustomControlsUndefined: Self = StObject.set(x, "customControls", js.undefined)
-      
-      inline def setCustomControlsVarargs(value: ReactHTMLElement[js.Any]*): Self = StObject.set(x, "customControls", js.Array(value :_*))
-      
-      inline def setEnableKeyboardInput(value: Boolean): Self = StObject.set(x, "enableKeyboardInput", value.asInstanceOf[js.Any])
-      
-      inline def setEnableKeyboardInputUndefined: Self = StObject.set(x, "enableKeyboardInput", js.undefined)
-      
-      inline def setImageCountSeparator(value: String): Self = StObject.set(x, "imageCountSeparator", value.asInstanceOf[js.Any])
-      
-      inline def setImageCountSeparatorUndefined: Self = StObject.set(x, "imageCountSeparator", js.undefined)
-      
-      inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
-      
-      inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
-      
-      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
-      
-      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
-      
-      inline def setLeftArrowTitle(value: String): Self = StObject.set(x, "leftArrowTitle", value.asInstanceOf[js.Any])
-      
-      inline def setLeftArrowTitleUndefined: Self = StObject.set(x, "leftArrowTitle", js.undefined)
-      
-      inline def setOnClickImage(value: /* e */ MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickImage", js.Any.fromFunction1(value))
-      
-      inline def setOnClickImageUndefined: Self = StObject.set(x, "onClickImage", js.undefined)
-      
-      inline def setOnClickNext(value: () => Unit): Self = StObject.set(x, "onClickNext", js.Any.fromFunction0(value))
-      
-      inline def setOnClickNextUndefined: Self = StObject.set(x, "onClickNext", js.undefined)
-      
-      inline def setOnClickPrev(value: () => Unit): Self = StObject.set(x, "onClickPrev", js.Any.fromFunction0(value))
-      
-      inline def setOnClickPrevUndefined: Self = StObject.set(x, "onClickPrev", js.undefined)
-      
-      inline def setOnClickThumbnail(value: /* index */ Double => Unit): Self = StObject.set(x, "onClickThumbnail", js.Any.fromFunction1(value))
-      
-      inline def setOnClickThumbnailUndefined: Self = StObject.set(x, "onClickThumbnail", js.undefined)
-      
-      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
-      
-      inline def setPreloadNextImage(value: Boolean): Self = StObject.set(x, "preloadNextImage", value.asInstanceOf[js.Any])
-      
-      inline def setPreloadNextImageUndefined: Self = StObject.set(x, "preloadNextImage", js.undefined)
-      
-      inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
-      
-      inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
-      
-      inline def setRightArrowTitle(value: String): Self = StObject.set(x, "rightArrowTitle", value.asInstanceOf[js.Any])
-      
-      inline def setRightArrowTitleUndefined: Self = StObject.set(x, "rightArrowTitle", js.undefined)
-      
-      inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
-      
-      inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
-      
-      inline def setShowImageCount(value: Boolean): Self = StObject.set(x, "showImageCount", value.asInstanceOf[js.Any])
-      
-      inline def setShowImageCountUndefined: Self = StObject.set(x, "showImageCount", js.undefined)
-      
-      inline def setShowThumbnails(value: Boolean): Self = StObject.set(x, "showThumbnails", value.asInstanceOf[js.Any])
-      
-      inline def setShowThumbnailsUndefined: Self = StObject.set(x, "showThumbnails", js.undefined)
-      
-      inline def setSpinner(value: () => ReactElement): Self = StObject.set(x, "spinner", js.Any.fromFunction0(value))
-      
-      inline def setSpinnerColor(value: String): Self = StObject.set(x, "spinnerColor", value.asInstanceOf[js.Any])
-      
-      inline def setSpinnerColorUndefined: Self = StObject.set(x, "spinnerColor", js.undefined)
-      
-      inline def setSpinnerSize(value: Double): Self = StObject.set(x, "spinnerSize", value.asInstanceOf[js.Any])
-      
-      inline def setSpinnerSizeUndefined: Self = StObject.set(x, "spinnerSize", js.undefined)
-      
-      inline def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
-  }
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: ComponentType[CarouselProps] = default
 }

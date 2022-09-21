@@ -10,10 +10,10 @@ Browser SDK for Amazon Pinpoint
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-pinpoint-browser |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 461 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 66.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fclient-pinpoint-browser)

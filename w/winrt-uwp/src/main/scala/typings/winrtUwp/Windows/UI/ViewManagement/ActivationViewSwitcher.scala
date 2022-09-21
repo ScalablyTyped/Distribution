@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ActivationViewSwitcher extends StObject {
   
-  var isViewPresentedOnActivationVirtualDesktop: js.Any = js.native
+  var isViewPresentedOnActivationVirtualDesktop: Any = js.native
   
   /**
     * Shows the view in a new standalone window.

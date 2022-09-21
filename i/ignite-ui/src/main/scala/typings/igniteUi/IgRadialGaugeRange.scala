@@ -10,7 +10,7 @@ trait IgRadialGaugeRange
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets the brush for the entire range.

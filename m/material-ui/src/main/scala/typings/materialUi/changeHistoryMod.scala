@@ -10,10 +10,10 @@ object changeHistoryMod {
   
   @JSImport("material-ui/svg-icons/action/change-history", JSImport.Default)
   @js.native
-  class default () extends ActionChangeHistory
+  open class default () extends ActionChangeHistory
   
   @JSImport("material-ui/svg-icons/action/change-history", "ActionChangeHistory")
   @js.native
-  class ActionChangeHistory ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionChangeHistory ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

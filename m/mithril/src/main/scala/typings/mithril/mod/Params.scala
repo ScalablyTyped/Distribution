@@ -8,3 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - Dropped object */ trait Params
   extends StObject
      with ParamsRec
+object Params {
+  
+  inline def apply(): Params = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Params]
+  }
+}

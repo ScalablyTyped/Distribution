@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BuildingExplorerViewModelConstructor
   extends StObject
-     with Instantiable0[BuildingExplorerViewModel]
+     with /**
+  * Provides the logic for the [BuildingExplorer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingExplorerViewModel.html)
+  */
+Instantiable0[BuildingExplorerViewModel]
      with Instantiable1[/* properties */ BuildingExplorerViewModelProperties, BuildingExplorerViewModel]

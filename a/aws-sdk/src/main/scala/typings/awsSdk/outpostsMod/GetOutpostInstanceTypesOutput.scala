@@ -12,6 +12,9 @@ trait GetOutpostInstanceTypesOutput extends StObject {
   
   var OutpostArn: js.UndefOr[typings.awsSdk.outpostsMod.OutpostArn] = js.undefined
   
+  /**
+    *  The ID of the Outpost.   In requests, Amazon Web Services Outposts accepts the Amazon Resource Name (ARN) or an ID for Outposts and sites throughout the Outposts Query API. To address backwards compatibility, the parameter names OutpostID or SiteID remain in use. Despite the parameter name, you can make the request with an ARN. 
+    */
   var OutpostId: js.UndefOr[typings.awsSdk.outpostsMod.OutpostId] = js.undefined
 }
 object GetOutpostInstanceTypesOutput {
@@ -27,7 +30,7 @@ object GetOutpostInstanceTypesOutput {
     
     inline def setInstanceTypesUndefined: Self = StObject.set(x, "InstanceTypes", js.undefined)
     
-    inline def setInstanceTypesVarargs(value: InstanceTypeItem*): Self = StObject.set(x, "InstanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: InstanceTypeItem*): Self = StObject.set(x, "InstanceTypes", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

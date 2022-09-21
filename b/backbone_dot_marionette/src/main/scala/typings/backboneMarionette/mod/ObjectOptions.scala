@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectOptions
   extends StObject
      with RadioMixinOptions
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[Any] {
   
   /**
     * Initialize is called immediately after the Object has been instantiated,

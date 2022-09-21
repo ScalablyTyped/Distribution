@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.XRWindowsMotionController")
 @js.native
-class XRWindowsMotionController protected ()
+open class XRWindowsMotionController protected ()
   extends StObject
      with typings.babylonjs.BABYLON.XRWindowsMotionController {
   /**
@@ -16,7 +16,7 @@ class XRWindowsMotionController protected ()
     *
     * @param gamepadInfo the gamepad object from the browser
     */
-  def this(gamepadInfo: js.Any) = this()
+  def this(gamepadInfo: Any) = this()
   
   /**
     * The rotation quaternion of the device in babylon space.

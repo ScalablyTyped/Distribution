@@ -39,30 +39,30 @@ object AUDFJD {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     
-    inline def setAUDVarargs(value: String*): Self = StObject.set(x, "AUD", js.Array(value :_*))
+    inline def setAUDVarargs(value: String*): Self = StObject.set(x, "AUD", js.Array(value*))
     
     inline def setFJD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "FJD", value.asInstanceOf[js.Any])
     
-    inline def setFJDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "FJD", js.Array(value :_*))
+    inline def setFJDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "FJD", js.Array(value*))
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setNZD(value: js.Array[String]): Self = StObject.set(x, "NZD", value.asInstanceOf[js.Any])
     
-    inline def setNZDVarargs(value: String*): Self = StObject.set(x, "NZD", js.Array(value :_*))
+    inline def setNZDVarargs(value: String*): Self = StObject.set(x, "NZD", js.Array(value*))
     
     inline def setSBD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "SBD", value.asInstanceOf[js.Any])
     
-    inline def setSBDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "SBD", js.Array(value :_*))
+    inline def setSBDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "SBD", js.Array(value*))
     
     inline def setTOP(value: js.Array[String]): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
     
-    inline def setTOPVarargs(value: String*): Self = StObject.set(x, "TOP", js.Array(value :_*))
+    inline def setTOPVarargs(value: String*): Self = StObject.set(x, "TOP", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

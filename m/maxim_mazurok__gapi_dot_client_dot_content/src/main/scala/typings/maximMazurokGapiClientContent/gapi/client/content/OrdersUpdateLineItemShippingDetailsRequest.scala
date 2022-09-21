@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrdersUpdateLineItemShippingDetailsRequest extends StObject {
   
-  /** Updated delivery by date, in ISO 8601 format. If not specified only ship by date is updated. Provided date should be within 1 year timeframe and can not be a date in the past. */
+  /** Updated delivery by date, in ISO 8601 format. If not specified only ship by date is updated. Provided date should be within 1 year timeframe and can't be a date in the past. */
   var deliverByDate: js.UndefOr[String] = js.undefined
   
   /** The ID of the line item to set metadata. Either lineItemId or productId is required. */
@@ -18,7 +18,7 @@ trait OrdersUpdateLineItemShippingDetailsRequest extends StObject {
   /** The ID of the product to set metadata. This is the REST ID used in the products service. Either lineItemId or productId is required. */
   var productId: js.UndefOr[String] = js.undefined
   
-  /** Updated ship by date, in ISO 8601 format. If not specified only deliver by date is updated. Provided date should be within 1 year timeframe and can not be a date in the past. */
+  /** Updated ship by date, in ISO 8601 format. If not specified only deliver by date is updated. Provided date should be within 1 year timeframe and can't be a date in the past. */
   var shipByDate: js.UndefOr[String] = js.undefined
 }
 object OrdersUpdateLineItemShippingDetailsRequest {

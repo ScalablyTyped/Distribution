@@ -54,7 +54,7 @@ object OauthAccess {
     
     inline def setDataVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "data", js.Array(value :_*))
+    ): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setExpires_in(value: String): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     

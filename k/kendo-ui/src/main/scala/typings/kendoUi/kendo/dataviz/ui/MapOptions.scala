@@ -9,7 +9,7 @@ trait MapOptions extends StObject {
   
   var beforeReset: js.UndefOr[js.Function1[/* e */ MapBeforeResetEvent, Unit]] = js.undefined
   
-  var center: js.UndefOr[js.Any | Location] = js.undefined
+  var center: js.UndefOr[Any | Location] = js.undefined
   
   var click: js.UndefOr[js.Function1[/* e */ MapClickEvent, Unit]] = js.undefined
   
@@ -30,6 +30,8 @@ trait MapOptions extends StObject {
   var markers: js.UndefOr[js.Array[MapMarker]] = js.undefined
   
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
+  var messages: js.UndefOr[MapMessages] = js.undefined
   
   var minSize: js.UndefOr[Double] = js.undefined
   
@@ -78,7 +80,7 @@ object MapOptions {
     
     inline def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
     
-    inline def setCenter(value: js.Any | Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Any | Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
@@ -98,7 +100,7 @@ object MapOptions {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: MapLayer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: MapLayer*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setMarkerActivate(value: /* e */ MapMarkerActivateEvent => Unit): Self = StObject.set(x, "markerActivate", js.Any.fromFunction1(value))
     
@@ -120,11 +122,15 @@ object MapOptions {
     
     inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
     
-    inline def setMarkersVarargs(value: MapMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: MapMarker*): Self = StObject.set(x, "markers", js.Array(value*))
     
     inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMessages(value: MapMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     

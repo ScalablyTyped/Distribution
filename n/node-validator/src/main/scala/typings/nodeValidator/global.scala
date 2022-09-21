@@ -19,13 +19,13 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def bodyValidator(validator: Validatable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def bodyValidator(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def express(validator: Validatable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("express")(validator.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def express(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("express")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def expressParams(validator: Validatable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expressParams")(validator.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def expressParams(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expressParams")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def expressQuery(validator: Validatable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expressQuery")(validator.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def expressQuery(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expressQuery")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def isAnyObject(): IsObjectValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyObject")().asInstanceOf[IsObjectValidator]
     
@@ -59,14 +59,14 @@ object global {
     inline def isStringOrNull(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringOrNull")().asInstanceOf[Validatable]
     inline def isStringOrNull(options: IsStringOptions): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringOrNull")(options.asInstanceOf[js.Any]).asInstanceOf[Validatable]
     
-    inline def paramsValidator(validator: Validatable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramsValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def paramsValidator(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramsValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def queryValidator(validator: Validatable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("queryValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def queryValidator(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("queryValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def run(
       validator: Validatable,
-      value: js.Any,
-      callback: js.Function2[/* errorCount */ Number, /* errors */ js.Array[js.Any], Unit]
+      value: Any,
+      callback: js.Function2[/* errorCount */ Number, /* errors */ js.Array[Any], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(validator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

@@ -10,7 +10,6 @@ import typings.awsSdkClientDynamodbBrowser.typesStreamSpecificationMod.StreamSpe
 import typings.awsSdkClientDynamodbBrowser.typesStreamSpecificationMod.UnmarshalledStreamSpecification
 import typings.awsSdkClientDynamodbBrowser.typesTimeToLiveDescriptionMod.TimeToLiveDescription
 import typings.awsSdkClientDynamodbBrowser.typesTimeToLiveDescriptionMod.UnmarshalledTimeToLiveDescription
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,12 +21,12 @@ object typesSourceTableFeatureDetailsMod {
     /**
       * <p>Represents the GSI properties for the table when the backup was created. It includes the IndexName, KeySchema, Projection and ProvisionedThroughput for the GSIs on the table at the time of backup. </p>
       */
-    var GlobalSecondaryIndexes: js.UndefOr[js.Array[GlobalSecondaryIndexInfo] | Iterable[GlobalSecondaryIndexInfo]] = js.undefined
+    var GlobalSecondaryIndexes: js.UndefOr[js.Array[GlobalSecondaryIndexInfo] | js.Iterable[GlobalSecondaryIndexInfo]] = js.undefined
     
     /**
       * <p>Represents the LSI properties for the table when the backup was created. It includes the IndexName, KeySchema and Projection for the LSIs on the table at the time of backup. </p>
       */
-    var LocalSecondaryIndexes: js.UndefOr[js.Array[LocalSecondaryIndexInfo] | Iterable[LocalSecondaryIndexInfo]] = js.undefined
+    var LocalSecondaryIndexes: js.UndefOr[js.Array[LocalSecondaryIndexInfo] | js.Iterable[LocalSecondaryIndexInfo]] = js.undefined
     
     /**
       * <p>The description of the server-side encryption status on the table when the backup was created.</p>
@@ -55,17 +54,17 @@ object typesSourceTableFeatureDetailsMod {
     
     extension [Self <: SourceTableFeatureDetails](x: Self) {
       
-      inline def setGlobalSecondaryIndexes(value: js.Array[GlobalSecondaryIndexInfo] | Iterable[GlobalSecondaryIndexInfo]): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: js.Array[GlobalSecondaryIndexInfo] | js.Iterable[GlobalSecondaryIndexInfo]): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
-      inline def setLocalSecondaryIndexes(value: js.Array[LocalSecondaryIndexInfo] | Iterable[LocalSecondaryIndexInfo]): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: js.Array[LocalSecondaryIndexInfo] | js.Iterable[LocalSecondaryIndexInfo]): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
       inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value*))
       
       inline def setSSEDescription(value: SSEDescription): Self = StObject.set(x, "SSEDescription", value.asInstanceOf[js.Any])
       
@@ -128,13 +127,13 @@ object typesSourceTableFeatureDetailsMod {
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      inline def setGlobalSecondaryIndexesVarargs(value: UnmarshalledGlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: UnmarshalledGlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
       
       inline def setLocalSecondaryIndexes(value: js.Array[UnmarshalledLocalSecondaryIndexInfo]): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
       inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      inline def setLocalSecondaryIndexesVarargs(value: UnmarshalledLocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: UnmarshalledLocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value*))
       
       inline def setSSEDescription(value: UnmarshalledSSEDescription): Self = StObject.set(x, "SSEDescription", value.asInstanceOf[js.Any])
       

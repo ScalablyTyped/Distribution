@@ -29,7 +29,7 @@ object AnimationParam {
     
     inline def setNonAnimatedPropsUndefined: Self = StObject.set(x, "nonAnimatedProps", js.undefined)
     
-    inline def setNonAnimatedPropsVarargs(value: String*): Self = StObject.set(x, "nonAnimatedProps", js.Array(value :_*))
+    inline def setNonAnimatedPropsVarargs(value: String*): Self = StObject.set(x, "nonAnimatedProps", js.Array(value*))
     
     inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     

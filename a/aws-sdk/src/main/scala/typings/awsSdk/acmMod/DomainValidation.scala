@@ -59,7 +59,7 @@ object DomainValidation {
     
     inline def setValidationEmailsUndefined: Self = StObject.set(x, "ValidationEmails", js.undefined)
     
-    inline def setValidationEmailsVarargs(value: String*): Self = StObject.set(x, "ValidationEmails", js.Array(value :_*))
+    inline def setValidationEmailsVarargs(value: String*): Self = StObject.set(x, "ValidationEmails", js.Array(value*))
     
     inline def setValidationMethod(value: ValidationMethod): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
     

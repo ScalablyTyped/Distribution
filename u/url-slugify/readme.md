@@ -10,10 +10,10 @@ Creates SEO friendly URL slugs with multiple language support
 | ------------------ | :-------------: |
 | Full name          | url-slugify |
 | Keywords           | slug, slugs, slugify, url, page url, unique url, seo |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 16275 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 364.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/url-slugify)

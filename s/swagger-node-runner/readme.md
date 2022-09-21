@@ -11,9 +11,9 @@ Swagger loader and middleware utilities
 | Full name          | swagger-node-runner |
 | Keywords           | swagger, api, apis, swagger-connect, swagger-express, swagger-restify, swagger-hapi, swagger-sails |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 627433 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 50295.333333333336 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/theganyo/swagger-node-runner#readme)

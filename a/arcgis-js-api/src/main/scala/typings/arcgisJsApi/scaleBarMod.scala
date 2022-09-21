@@ -22,7 +22,7 @@ object scaleBarMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ScaleBar {
     def this(properties: ScaleBarProperties) = this()

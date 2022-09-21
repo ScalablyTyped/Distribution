@@ -1,7 +1,6 @@
 package typings.httperr.mod
 
 import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait HttpError
   /** A human-readable title for the HTTP error. */
   var title: String
   
-  def toObject(skip: (String | RegExp)*): js.Any
+  def toObject(skip: (String | js.RegExp)*): Any
 }
 object HttpError {
   
@@ -29,7 +28,7 @@ object HttpError {
     name: String,
     statusCode: Double,
     title: String,
-    toObject: /* repeated */ String | RegExp => js.Any
+    toObject: /* repeated */ String | js.RegExp => Any
   ): HttpError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], toObject = js.Any.fromFunction1(toObject))
     __obj.asInstanceOf[HttpError]
@@ -43,6 +42,6 @@ object HttpError {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setToObject(value: /* repeated */ String | RegExp => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction1(value))
+    inline def setToObject(value: /* repeated */ String | js.RegExp => Any): Self = StObject.set(x, "toObject", js.Any.fromFunction1(value))
   }
 }

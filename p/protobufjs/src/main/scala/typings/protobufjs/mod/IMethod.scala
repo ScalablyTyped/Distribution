@@ -7,8 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMethod extends StObject {
   
+  /** Method comments */
+  var comment: String
+  
   /** Method options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  /** Method options properly parsed into an object */
+  var parsedOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** Whether requests are streamed */
   var requestStream: js.UndefOr[Boolean] = js.undefined
@@ -27,16 +33,22 @@ trait IMethod extends StObject {
 }
 object IMethod {
   
-  inline def apply(requestType: String, responseType: String): IMethod = {
-    val __obj = js.Dynamic.literal(requestType = requestType.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
+  inline def apply(comment: String, requestType: String, responseType: String): IMethod = {
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMethod]
   }
   
   extension [Self <: IMethod](x: Self) {
     
-    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setParsedOptions(value: StringDictionary[Any]): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
+    
+    inline def setParsedOptionsUndefined: Self = StObject.set(x, "parsedOptions", js.undefined)
     
     inline def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
     

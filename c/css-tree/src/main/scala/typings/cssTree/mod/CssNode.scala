@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cssTree.mod.DeclarationList
   - typings.cssTree.mod.Dimension
   - typings.cssTree.mod.FunctionNode
-  - typings.cssTree.mod.HexColor
+  - typings.cssTree.mod.Hash
   - typings.cssTree.mod.IdSelector
   - typings.cssTree.mod.Identifier
   - typings.cssTree.mod.MediaFeature
@@ -139,10 +139,10 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.FunctionNode]
   }
   
-  inline def HexColor(value: String): typings.cssTree.mod.HexColor = {
+  inline def Hash(value: String): typings.cssTree.mod.Hash = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("HexColor")
-    __obj.asInstanceOf[typings.cssTree.mod.HexColor]
+    __obj.updateDynamic("type")("Hash")
+    __obj.asInstanceOf[typings.cssTree.mod.Hash]
   }
   
   inline def IdSelector(name: String): typings.cssTree.mod.IdSelector = {

@@ -10,15 +10,12 @@ Draws a big triangle
 | ------------------ | :-------------: |
 | Full name          | a-big-triangle |
 | Keywords           | triangle, webgl, draw |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 3428175 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 366146.6666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/mikolalysenko/a-big-triangle#readme)
-- [Bugs](https://github.com/mikolalysenko/a-big-triangle/issues)
-- [Repository](https://github.com/mikolalysenko/a-big-triangle)
 - [Npm](https://www.npmjs.com/package/a-big-triangle)
     
 

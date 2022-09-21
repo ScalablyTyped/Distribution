@@ -1,12 +1,15 @@
 package typings.reactNativeAuth0.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.reactNativeAuth0.anon.Email
+import typings.reactNativeAuth0.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def users: typings.reactNativeAuth0.mod.Users_ = typings.reactNativeAuth0.mod.^.asInstanceOf[js.Dynamic].selectDynamic("users").asInstanceOf[typings.reactNativeAuth0.mod.Users_]
+inline def users: Users_ = ^.asInstanceOf[js.Dynamic].selectDynamic("users").asInstanceOf[Users_]
 
-type AuthParams = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type AuthParams = StringDictionary[String]
 
-type UserInfo[CustomClaims] = typings.reactNativeAuth0.anon.Email & CustomClaims
+type UserInfo[CustomClaims] = Email & CustomClaims

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ImageBlurOn")
 @js.native
-class ImageBlurOn ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ImageBlurOn ()
+  extends Component[SvgIconProps, js.Object, Any]

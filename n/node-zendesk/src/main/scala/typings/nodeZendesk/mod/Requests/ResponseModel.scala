@@ -94,13 +94,13 @@ object ResponseModel {
     
     inline def setCollaborator_ids(value: js.Array[ZendeskID]): Self = StObject.set(x, "collaborator_ids", value.asInstanceOf[js.Any])
     
-    inline def setCollaborator_idsVarargs(value: ZendeskID*): Self = StObject.set(x, "collaborator_ids", js.Array(value :_*))
+    inline def setCollaborator_idsVarargs(value: ZendeskID*): Self = StObject.set(x, "collaborator_ids", js.Array(value*))
     
     inline def setCustom_fields(value: js.Array[Field]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
     
     inline def setCustom_fieldsNull: Self = StObject.set(x, "custom_fields", null)
     
-    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
+    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -110,13 +110,13 @@ object ResponseModel {
     
     inline def setEmail_cc_ids(value: js.Array[ZendeskID]): Self = StObject.set(x, "email_cc_ids", value.asInstanceOf[js.Any])
     
-    inline def setEmail_cc_idsVarargs(value: ZendeskID*): Self = StObject.set(x, "email_cc_ids", js.Array(value :_*))
+    inline def setEmail_cc_idsVarargs(value: ZendeskID*): Self = StObject.set(x, "email_cc_ids", js.Array(value*))
     
     inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsNull: Self = StObject.set(x, "fields", null)
     
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFollowup_source_id(value: String): Self = StObject.set(x, "followup_source_id", value.asInstanceOf[js.Any])
     

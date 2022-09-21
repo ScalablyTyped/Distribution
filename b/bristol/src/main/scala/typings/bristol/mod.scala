@@ -14,27 +14,27 @@ object mod extends Shortcut {
   @js.native
   trait Bristol extends StObject {
     
-    def addTarget(target: js.Any): js.Any = js.native
-    def addTarget(target: js.Any, opts: js.Any): js.Any = js.native
+    def addTarget(target: Any): Any = js.native
+    def addTarget(target: Any, opts: Any): Any = js.native
     
-    def debug(message: String, data: LogData): js.Any = js.native
+    def debug(message: String, data: LogData): Any = js.native
     
-    def error(message: String, data: LogData): js.Any = js.native
+    def error(message: String, data: LogData): Any = js.native
     
-    def info(message: String, data: LogData): js.Any = js.native
+    def info(message: String, data: LogData): Any = js.native
     
-    def warn(message: String, data: LogData): js.Any = js.native
+    def warn(message: String, data: LogData): Any = js.native
     
-    def withFormatter(formatter: String): js.Any = js.native
+    def withFormatter(formatter: String): Any = js.native
     
-    def withLowestSeverity(severity: String): js.Any = js.native
+    def withLowestSeverity(severity: String): Any = js.native
   }
   
   trait LogData extends StObject {
     
     var code: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var error: js.UndefOr[LogError] = js.undefined
     
@@ -55,7 +55,7 @@ object mod extends Shortcut {
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -77,9 +77,9 @@ object mod extends Shortcut {
     
     var message: js.UndefOr[String] = js.undefined
     
-    var reason: js.UndefOr[js.Any] = js.undefined
+    var reason: js.UndefOr[Any] = js.undefined
     
-    var stack: js.UndefOr[js.Any] = js.undefined
+    var stack: js.UndefOr[Any] = js.undefined
   }
   object LogError {
     
@@ -94,11 +94,11 @@ object mod extends Shortcut {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
       inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       
-      inline def setStack(value: js.Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
       inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }

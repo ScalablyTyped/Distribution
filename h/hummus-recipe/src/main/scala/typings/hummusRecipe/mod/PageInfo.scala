@@ -49,7 +49,7 @@ object PageInfo {
     
     inline def setMediaBox(value: js.Array[Double]): Self = StObject.set(x, "mediaBox", value.asInstanceOf[js.Any])
     
-    inline def setMediaBoxVarargs(value: Double*): Self = StObject.set(x, "mediaBox", js.Array(value :_*))
+    inline def setMediaBoxVarargs(value: Double*): Self = StObject.set(x, "mediaBox", js.Array(value*))
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object PageInfo {
     
     inline def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }

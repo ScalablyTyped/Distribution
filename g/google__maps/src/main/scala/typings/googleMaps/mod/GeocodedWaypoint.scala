@@ -53,6 +53,6 @@ object GeocodedWaypoint {
     
     inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

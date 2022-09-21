@@ -1,7 +1,7 @@
 package typings.puppeteerCore
 
-import typings.node.Buffer
-import typings.puppeteerCore.commonConnectionMod.CDPSession
+import typings.node.bufferMod.global.Buffer
+import typings.puppeteerCore.puppeteerCommonConnectionMod.CDPSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,22 +10,19 @@ object commonTracingMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/Tracing", "Tracing")
   @js.native
-  class Tracing protected () extends StObject {
+  open class Tracing protected () extends StObject {
     /**
       * @internal
       */
     def this(client: CDPSession) = this()
     
-    var _client: CDPSession = js.native
-    
-    var _path: String = js.native
-    
-    var _recording: Boolean = js.native
+    /* private */ var `private`: Any = js.native
     
     /**
       * Starts a trace for the current page.
       * @remarks
       * Only one trace can be active at a time per browser.
+      *
       * @param options - Optional `TracingOptions`.
       */
     def start(): js.Promise[Unit] = js.native
@@ -35,7 +32,7 @@ object commonTracingMod {
       * Stops a trace started with the `start` method.
       * @returns Promise which resolves to buffer with trace data.
       */
-    def stop(): js.Promise[Buffer] = js.native
+    def stop(): js.Promise[js.UndefOr[Buffer]] = js.native
   }
   
   trait TracingOptions extends StObject {
@@ -59,7 +56,7 @@ object commonTracingMod {
       
       inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

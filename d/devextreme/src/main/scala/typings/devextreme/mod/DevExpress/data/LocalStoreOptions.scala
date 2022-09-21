@@ -4,33 +4,33 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalStoreOptions
+trait LocalStoreOptions[TItem, TKey]
   extends StObject
-     with ArrayStoreOptions[LocalStore] {
+     with ArrayStoreOptions[TItem, TKey] {
   
   /**
-    * [descr:LocalStore.Options.flushInterval]
+    * Specifies a delay in milliseconds between when data changes and the moment these changes are saved in the local storage. Applies only if immediate is false.
     */
   var flushInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * [descr:LocalStore.Options.immediate]
+    * Specifies whether the LocalStore saves changes in the local storage immediately.
     */
   var immediate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:LocalStore.Options.name]
+    * Specifies the name under which data should be saved in the local storage. The `dx-data-localStore-` prefix will be added to the name.
     */
   var name: js.UndefOr[String] = js.undefined
 }
 object LocalStoreOptions {
   
-  inline def apply(): LocalStoreOptions = {
+  inline def apply[TItem, TKey](): LocalStoreOptions[TItem, TKey] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[LocalStoreOptions]
+    __obj.asInstanceOf[LocalStoreOptions[TItem, TKey]]
   }
   
-  extension [Self <: LocalStoreOptions](x: Self) {
+  extension [Self <: LocalStoreOptions[?, ?], TItem, TKey](x: Self & (LocalStoreOptions[TItem, TKey])) {
     
     inline def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
     

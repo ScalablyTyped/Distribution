@@ -19,7 +19,7 @@ trait TopicRule extends StObject {
   /**
     * The date and time the rule was created.
     */
-  var createdAt: js.UndefOr[CreatedAtDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the rule.
@@ -59,13 +59,13 @@ object TopicRule {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAwsIotSqlVersion(value: AwsIotSqlVersion): Self = StObject.set(x, "awsIotSqlVersion", value.asInstanceOf[js.Any])
     
     inline def setAwsIotSqlVersionUndefined: Self = StObject.set(x, "awsIotSqlVersion", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAtDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

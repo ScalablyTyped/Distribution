@@ -98,13 +98,13 @@ object mod {
   @JSImport("prosemirror-schema-basic", "schema")
   @js.native
   def schema: Schema[
-    /* keyof {[ name in keyof typeof nodes ]: prosemirror-model.prosemirror-model.NodeType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} & {[key: string] : prosemirror-model.prosemirror-model.NodeType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} */ String, 
-    /* keyof {[ name in keyof typeof marks ]: prosemirror-model.prosemirror-model.MarkType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} & {[key: string] : prosemirror-model.prosemirror-model.MarkType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} */ String
+    /* keyof {readonly [ name in keyof typeof nodes ]: prosemirror-model.prosemirror-model.NodeType} & {readonly [key: string] : prosemirror-model.prosemirror-model.NodeType} */ String, 
+    /* keyof {readonly [ name in keyof typeof marks ]: prosemirror-model.prosemirror-model.MarkType} & {readonly [key: string] : prosemirror-model.prosemirror-model.MarkType} */ String
   ] = js.native
   inline def schema_=(
     x: Schema[
-      /* keyof {[ name in keyof typeof nodes ]: prosemirror-model.prosemirror-model.NodeType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} & {[key: string] : prosemirror-model.prosemirror-model.NodeType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} */ String, 
-      /* keyof {[ name in keyof typeof marks ]: prosemirror-model.prosemirror-model.MarkType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} & {[key: string] : prosemirror-model.prosemirror-model.MarkType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} */ String
+      /* keyof {readonly [ name in keyof typeof nodes ]: prosemirror-model.prosemirror-model.NodeType} & {readonly [key: string] : prosemirror-model.prosemirror-model.NodeType} */ String, 
+      /* keyof {readonly [ name in keyof typeof marks ]: prosemirror-model.prosemirror-model.MarkType} & {readonly [key: string] : prosemirror-model.prosemirror-model.MarkType} */ String
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("schema")(x.asInstanceOf[js.Any])
 }

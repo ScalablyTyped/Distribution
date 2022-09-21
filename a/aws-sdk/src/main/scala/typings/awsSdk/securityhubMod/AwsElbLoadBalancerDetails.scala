@@ -104,13 +104,13 @@ object AwsElbLoadBalancerDetails {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: NonEmptyString*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: NonEmptyString*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setBackendServerDescriptions(value: AwsElbLoadBalancerBackendServerDescriptions): Self = StObject.set(x, "BackendServerDescriptions", value.asInstanceOf[js.Any])
     
     inline def setBackendServerDescriptionsUndefined: Self = StObject.set(x, "BackendServerDescriptions", js.undefined)
     
-    inline def setBackendServerDescriptionsVarargs(value: AwsElbLoadBalancerBackendServerDescription*): Self = StObject.set(x, "BackendServerDescriptions", js.Array(value :_*))
+    inline def setBackendServerDescriptionsVarargs(value: AwsElbLoadBalancerBackendServerDescription*): Self = StObject.set(x, "BackendServerDescriptions", js.Array(value*))
     
     inline def setCanonicalHostedZoneName(value: NonEmptyString): Self = StObject.set(x, "CanonicalHostedZoneName", value.asInstanceOf[js.Any])
     
@@ -136,13 +136,13 @@ object AwsElbLoadBalancerDetails {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: AwsElbLoadBalancerInstance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: AwsElbLoadBalancerInstance*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setListenerDescriptions(value: AwsElbLoadBalancerListenerDescriptions): Self = StObject.set(x, "ListenerDescriptions", value.asInstanceOf[js.Any])
     
     inline def setListenerDescriptionsUndefined: Self = StObject.set(x, "ListenerDescriptions", js.undefined)
     
-    inline def setListenerDescriptionsVarargs(value: AwsElbLoadBalancerListenerDescription*): Self = StObject.set(x, "ListenerDescriptions", js.Array(value :_*))
+    inline def setListenerDescriptionsVarargs(value: AwsElbLoadBalancerListenerDescription*): Self = StObject.set(x, "ListenerDescriptions", js.Array(value*))
     
     inline def setLoadBalancerAttributes(value: AwsElbLoadBalancerAttributes): Self = StObject.set(x, "LoadBalancerAttributes", value.asInstanceOf[js.Any])
     
@@ -164,7 +164,7 @@ object AwsElbLoadBalancerDetails {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSourceSecurityGroup(value: AwsElbLoadBalancerSourceSecurityGroup): Self = StObject.set(x, "SourceSecurityGroup", value.asInstanceOf[js.Any])
     
@@ -174,7 +174,7 @@ object AwsElbLoadBalancerDetails {
     
     inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    inline def setSubnetsVarargs(value: NonEmptyString*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: NonEmptyString*): Self = StObject.set(x, "Subnets", js.Array(value*))
     
     inline def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

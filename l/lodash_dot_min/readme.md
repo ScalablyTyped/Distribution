@@ -10,10 +10,10 @@ The lodash method `_.min` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.min |
 | Keywords           | lodash-modularized, min |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 646367 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 126529.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

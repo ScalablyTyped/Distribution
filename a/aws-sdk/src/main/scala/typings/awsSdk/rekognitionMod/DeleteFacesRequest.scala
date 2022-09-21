@@ -29,6 +29,6 @@ object DeleteFacesRequest {
     
     inline def setFaceIds(value: FaceIdList): Self = StObject.set(x, "FaceIds", value.asInstanceOf[js.Any])
     
-    inline def setFaceIdsVarargs(value: FaceId*): Self = StObject.set(x, "FaceIds", js.Array(value :_*))
+    inline def setFaceIdsVarargs(value: FaceId*): Self = StObject.set(x, "FaceIds", js.Array(value*))
   }
 }

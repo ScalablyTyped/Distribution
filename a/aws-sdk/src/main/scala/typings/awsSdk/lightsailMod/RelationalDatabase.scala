@@ -24,7 +24,7 @@ trait RelationalDatabase extends StObject {
   /**
     * The timestamp when the database was created. Formatted in Unix time.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The database software (for example, MySQL).
@@ -44,7 +44,7 @@ trait RelationalDatabase extends StObject {
   /**
     * The latest point in time to which the database can be restored. Formatted in Unix time.
     */
-  var latestRestorableTime: js.UndefOr[IsoDate] = js.undefined
+  var latestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Region name and Availability Zone where the database is located.
@@ -132,7 +132,7 @@ trait RelationalDatabase extends StObject {
   var supportCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
+    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Amazon Lightsail Developer Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -157,7 +157,7 @@ object RelationalDatabase {
     
     inline def setCaCertificateIdentifierUndefined: Self = StObject.set(x, "caCertificateIdentifier", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -173,7 +173,7 @@ object RelationalDatabase {
     
     inline def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
     
-    inline def setLatestRestorableTime(value: IsoDate): Self = StObject.set(x, "latestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setLatestRestorableTime(value: js.Date): Self = StObject.set(x, "latestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setLatestRestorableTimeUndefined: Self = StObject.set(x, "latestRestorableTime", js.undefined)
     
@@ -205,7 +205,7 @@ object RelationalDatabase {
     
     inline def setPendingMaintenanceActionsUndefined: Self = StObject.set(x, "pendingMaintenanceActions", js.undefined)
     
-    inline def setPendingMaintenanceActionsVarargs(value: PendingMaintenanceAction*): Self = StObject.set(x, "pendingMaintenanceActions", js.Array(value :_*))
+    inline def setPendingMaintenanceActionsVarargs(value: PendingMaintenanceAction*): Self = StObject.set(x, "pendingMaintenanceActions", js.Array(value*))
     
     inline def setPendingModifiedValues(value: PendingModifiedRelationalDatabaseValues): Self = StObject.set(x, "pendingModifiedValues", value.asInstanceOf[js.Any])
     
@@ -251,6 +251,6 @@ object RelationalDatabase {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

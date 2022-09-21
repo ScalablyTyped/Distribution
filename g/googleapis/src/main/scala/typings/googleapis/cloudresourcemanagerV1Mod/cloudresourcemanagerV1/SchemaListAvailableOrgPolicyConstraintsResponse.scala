@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response returned from the ListAvailableOrgPolicyConstraints method.
-  * Returns all `Constraints` that could be set at this level of the hierarchy
-  * (contrast with the response from `ListPolicies`, which returns all policies
-  * which are set).
-  */
 trait SchemaListAvailableOrgPolicyConstraintsResponse extends StObject {
   
   /**
@@ -20,7 +14,7 @@ trait SchemaListAvailableOrgPolicyConstraintsResponse extends StObject {
   /**
     * Page token used to retrieve the next page. This is currently not used.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListAvailableOrgPolicyConstraintsResponse {
   
@@ -35,9 +29,11 @@ object SchemaListAvailableOrgPolicyConstraintsResponse {
     
     inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
-    inline def setConstraintsVarargs(value: SchemaConstraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: SchemaConstraint*): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

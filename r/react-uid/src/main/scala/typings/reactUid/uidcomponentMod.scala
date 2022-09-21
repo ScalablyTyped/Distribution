@@ -11,18 +11,18 @@ object uidcomponentMod {
   
   @JSImport("react-uid/dist/es5/UIDComponent", "UID")
   @js.native
-  class UID protected ()
-    extends Component[UIDProps, js.Object, js.Any] {
+  open class UID protected ()
+    extends Component[UIDProps, js.Object, Any] {
     def this(props: UIDProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UIDProps, context: js.Any) = this()
+    def this(props: UIDProps, context: Any) = this()
     
     @JSName("state")
     var state_UID: Id = js.native
     
-    def uid(item: js.Any): String = js.native
+    def uid(item: Any): String = js.native
   }
 }

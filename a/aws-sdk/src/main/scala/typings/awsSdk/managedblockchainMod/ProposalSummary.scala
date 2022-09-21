@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProposalSummary extends StObject {
   
   /**
+    * The Amazon Resource Name (ARN) of the proposal. For more information about ARNs and their format, see Amazon Resource Names (ARNs) in the AWS General Reference.
+    */
+  var Arn: js.UndefOr[ArnString] = js.undefined
+  
+  /**
     *  The date and time that the proposal was created. 
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The description of the proposal. 
@@ -19,7 +24,7 @@ trait ProposalSummary extends StObject {
   /**
     *  The date and time that the proposal expires. This is the CreationDate plus the ProposalDurationInHours that is specified in the ProposalThresholdPolicy. After this date and time, if members have not cast enough votes to determine the outcome according to the voting policy, the proposal is EXPIRED and Actions are not carried out. 
     */
-  var ExpirationDate: js.UndefOr[Timestamp] = js.undefined
+  var ExpirationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The unique identifier of the proposal. 
@@ -50,7 +55,11 @@ object ProposalSummary {
   
   extension [Self <: ProposalSummary](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setArn(value: ArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -58,7 +67,7 @@ object ProposalSummary {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     

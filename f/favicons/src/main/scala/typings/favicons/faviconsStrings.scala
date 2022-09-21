@@ -1,5 +1,6 @@
 package typings.favicons
 
+import typings.favicons.mod.PlatformName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,46 +8,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object faviconsStrings {
   
   @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
+  sealed trait android
+    extends StObject
+       with PlatformName
+  inline def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait any extends StObject
-  inline def any: any = "any".asInstanceOf[any]
+  sealed trait appleIcon
+    extends StObject
+       with PlatformName
+  inline def appleIcon: appleIcon = "appleIcon".asInstanceOf[appleIcon]
   
   @js.native
-  sealed trait black extends StObject
-  inline def black: black = "black".asInstanceOf[black]
+  sealed trait appleStartup
+    extends StObject
+       with PlatformName
+  inline def appleStartup: appleStartup = "appleStartup".asInstanceOf[appleStartup]
   
   @js.native
-  sealed trait `black-translucent` extends StObject
-  inline def `black-translucent`: `black-translucent` = "black-translucent".asInstanceOf[`black-translucent`]
+  sealed trait favicons
+    extends StObject
+       with PlatformName
+  inline def favicons: favicons = "favicons".asInstanceOf[favicons]
   
   @js.native
-  sealed trait browser extends StObject
-  inline def browser: browser = "browser".asInstanceOf[browser]
+  sealed trait windows
+    extends StObject
+       with PlatformName
+  inline def windows: windows = "windows".asInstanceOf[windows]
   
   @js.native
-  sealed trait fullscreen extends StObject
-  inline def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
-  
-  @js.native
-  sealed trait landscape extends StObject
-  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
-  
-  @js.native
-  sealed trait `minimal-ui` extends StObject
-  inline def `minimal-ui`: `minimal-ui` = "minimal-ui".asInstanceOf[`minimal-ui`]
-  
-  @js.native
-  sealed trait natural extends StObject
-  inline def natural: natural = "natural".asInstanceOf[natural]
-  
-  @js.native
-  sealed trait portrait extends StObject
-  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
-  
-  @js.native
-  sealed trait standalone extends StObject
-  inline def standalone: standalone = "standalone".asInstanceOf[standalone]
+  sealed trait yandex
+    extends StObject
+       with PlatformName
+  inline def yandex: yandex = "yandex".asInstanceOf[yandex]
 }

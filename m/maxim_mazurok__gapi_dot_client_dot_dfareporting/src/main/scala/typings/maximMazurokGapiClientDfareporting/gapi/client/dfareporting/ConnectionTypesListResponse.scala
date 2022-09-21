@@ -25,7 +25,7 @@ object ConnectionTypesListResponse {
     
     inline def setConnectionTypesUndefined: Self = StObject.set(x, "connectionTypes", js.undefined)
     
-    inline def setConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value :_*))
+    inline def setConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

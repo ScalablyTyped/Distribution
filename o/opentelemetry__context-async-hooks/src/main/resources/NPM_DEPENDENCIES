@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@opentelemetry/context-async-hooks" : "1.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@opentelemetry/context-async-hooks" : "1.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -11,14 +11,14 @@ object mod {
   
   @JSImport("react-toastr", "ToastContainer")
   @js.native
-  class ToastContainer protected ()
-    extends Component[ClassName, js.Object, js.Any] {
+  open class ToastContainer protected ()
+    extends Component[ClassName, js.Object, Any] {
     def this(props: ClassName) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ClassName, context: js.Any) = this()
+    def this(props: ClassName, context: Any) = this()
     
     def clear(): Unit = js.native
     
@@ -37,9 +37,9 @@ object mod {
   
   @JSImport("react-toastr", "ToastMessageAnimated")
   @js.native
-  val ToastMessageAnimated: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any = js.native
+  val ToastMessageAnimated: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any = js.native
   
   @JSImport("react-toastr", "ToastMessagejQuery")
   @js.native
-  val ToastMessagejQuery: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any = js.native
+  val ToastMessagejQuery: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any = js.native
 }

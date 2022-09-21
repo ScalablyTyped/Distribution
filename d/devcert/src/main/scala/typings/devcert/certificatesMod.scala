@@ -10,7 +10,7 @@ object certificatesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(domain: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(domains: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(domains.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def generateKey(filename: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,9 +2,10 @@ package typings.three
 
 import typings.three.animationClipMod.AnimationClip
 import typings.three.animationMixerMod.AnimationMixer
-import typings.three.constantsMod.AnimationActionLoopStyles
-import typings.three.constantsMod.AnimationBlendMode
+import typings.three.eventDispatcherMod.Event
 import typings.three.object3DMod.Object3D
+import typings.three.srcConstantsMod.AnimationActionLoopStyles
+import typings.three.srcConstantsMod.AnimationBlendMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +14,22 @@ object animationActionMod {
   
   @JSImport("three/src/animation/AnimationAction", "AnimationAction")
   @js.native
-  class AnimationAction protected () extends StObject {
+  open class AnimationAction protected () extends StObject {
     def this(mixer: AnimationMixer, clip: AnimationClip) = this()
-    def this(mixer: AnimationMixer, clip: AnimationClip, localRoot: Object3D) = this()
+    def this(mixer: AnimationMixer, clip: AnimationClip, localRoot: Object3D[Event]) = this()
     def this(mixer: AnimationMixer, clip: AnimationClip, localRoot: Unit, blendMode: AnimationBlendMode) = this()
-    def this(mixer: AnimationMixer, clip: AnimationClip, localRoot: Object3D, blendMode: AnimationBlendMode) = this()
+    def this(
+      mixer: AnimationMixer,
+      clip: AnimationClip,
+      localRoot: Object3D[Event],
+      blendMode: AnimationBlendMode
+    ) = this()
     
     var blendMode: AnimationBlendMode = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var clampWhenFinished: Boolean = js.native
     
     def crossFadeFrom(fadeOutAction: AnimationAction, duration: Double, warp: Boolean): AnimationAction = js.native
@@ -31,8 +37,8 @@ object animationActionMod {
     def crossFadeTo(fadeInAction: AnimationAction, duration: Double, warp: Boolean): AnimationAction = js.native
     
     /**
-    	 * @default true
-    	 */
+      * @default true
+      */
     var enabled: Boolean = js.native
     
     def fadeIn(duration: Double): AnimationAction = js.native
@@ -47,7 +53,7 @@ object animationActionMod {
     
     def getMixer(): AnimationMixer = js.native
     
-    def getRoot(): Object3D = js.native
+    def getRoot(): Object3D[Event] = js.native
     
     def halt(duration: Double): AnimationAction = js.native
     
@@ -56,20 +62,20 @@ object animationActionMod {
     def isScheduled(): Boolean = js.native
     
     /**
-    	 * @default THREE.LoopRepeat
-    	 */
+      * @default THREE.LoopRepeat
+      */
     var loop: AnimationActionLoopStyles = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var paused: Boolean = js.native
     
     def play(): AnimationAction = js.native
     
     /**
-    	 * @default Infinity
-    	 */
+      * @default Infinity
+      */
     var repetitions: Double = js.native
     
     def reset(): AnimationAction = js.native
@@ -93,30 +99,30 @@ object animationActionMod {
     def syncWith(action: AnimationAction): AnimationAction = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var time: Double = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var timeScale: Double = js.native
     
     def warp(statTimeScale: Double, endTimeScale: Double, duration: Double): AnimationAction = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var weight: Double = js.native
     
     /**
-    	 * @default true
-    	 */
+      * @default true
+      */
     var zeroSlopeAtEnd: Boolean = js.native
     
     /**
-    	 * @default true
-    	 */
+      * @default true
+      */
     var zeroSlopeAtStart: Boolean = js.native
   }
 }

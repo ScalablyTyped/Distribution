@@ -61,8 +61,8 @@ object AppointmentProperties {
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentProperties.detailsKind")
   @js.native
-  def detailsKind: js.Any = js.native
-  inline def detailsKind_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("detailsKind")(x.asInstanceOf[js.Any])
+  def detailsKind: Any = js.native
+  inline def detailsKind_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("detailsKind")(x.asInstanceOf[js.Any])
   
   inline def details_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("details")(x.asInstanceOf[js.Any])
   
@@ -154,8 +154,8 @@ object AppointmentProperties {
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentProperties.remoteChangeNumber")
   @js.native
-  def remoteChangeNumber: js.Any = js.native
-  inline def remoteChangeNumber_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remoteChangeNumber")(x.asInstanceOf[js.Any])
+  def remoteChangeNumber: Any = js.native
+  inline def remoteChangeNumber_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remoteChangeNumber")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   /** Gets the name of the ReplyTime property. */

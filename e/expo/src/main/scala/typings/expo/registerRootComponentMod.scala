@@ -1,5 +1,6 @@
 package typings.expo
 
+import typings.expo.withExpoRootTypesMod.InitialProps
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,5 +12,5 @@ object registerRootComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[P](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default[P /* <: InitialProps */](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -10,10 +10,10 @@ object updateMod {
   
   @JSImport("material-ui/svg-icons/action/update", JSImport.Default)
   @js.native
-  class default () extends ActionUpdate
+  open class default () extends ActionUpdate
   
   @JSImport("material-ui/svg-icons/action/update", "ActionUpdate")
   @js.native
-  class ActionUpdate ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionUpdate ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

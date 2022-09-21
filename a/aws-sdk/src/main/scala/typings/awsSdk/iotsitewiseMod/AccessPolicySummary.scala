@@ -9,7 +9,7 @@ trait AccessPolicySummary extends StObject {
   /**
     * The date the access policy was created, in Unix epoch time.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the access policy.
@@ -17,14 +17,14 @@ trait AccessPolicySummary extends StObject {
   var id: ID
   
   /**
-    * The identity (an AWS SSO user, an AWS SSO group, or an IAM user).
+    * The identity (an Amazon Web Services SSO user, an Amazon Web Services SSO group, or an IAM user).
     */
   var identity: Identity
   
   /**
     * The date the access policy was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The permissions for the access policy. Note that a project ADMINISTRATOR is also known as a project owner.
@@ -32,7 +32,7 @@ trait AccessPolicySummary extends StObject {
   var permission: Permission
   
   /**
-    * The AWS IoT SiteWise Monitor resource (a portal or project).
+    * The IoT SiteWise Monitor resource (a portal or project).
     */
   var resource: Resource
 }
@@ -45,7 +45,7 @@ object AccessPolicySummary {
   
   extension [Self <: AccessPolicySummary](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -53,7 +53,7 @@ object AccessPolicySummary {
     
     inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: js.Date): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
     

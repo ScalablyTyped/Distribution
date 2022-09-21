@@ -1,7 +1,8 @@
 package typings.webPush
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpsMod.Agent
 import typings.std.Error
 import typings.webPush.anon.Auth
 import typings.webPush.anon.Authorization
@@ -26,7 +27,7 @@ object mod {
   
   @JSImport("web-push", "WebPushError")
   @js.native
-  class WebPushError protected ()
+  open class WebPushError protected ()
     extends StObject
        with Error {
     def this(message: String, statusCode: Double, headers: Headers, body: String, endpoint: String) = this()
@@ -37,9 +38,11 @@ object mod {
     
     val headers: Headers = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -236,6 +239,9 @@ object mod {
     
     var TTL: js.UndefOr[Double] = js.undefined
     
+    /** Is the HTTPS Agent instance which will be used in the https.request method. If the proxy options defined, agent will be ignored! */
+    var agent: js.UndefOr[Agent] = js.undefined
+    
     // a value in seconds that describes how long a push message is retained by the push service (by default, four weeks).
     var contentEncoding: js.UndefOr[ContentEncoding] = js.undefined
     
@@ -245,6 +251,14 @@ object mod {
     
     // the type of push encoding to use (e.g. 'aesgcm', by default, or 'aes128gcm').
     var proxy: js.UndefOr[String] = js.undefined
+    
+    // proxy hostname/ip and a port to tunnel your requests through (eg. http://< hostname >:< port >).
+    /**
+      * Is the timeout to receive the full response. So if you have a socket timeout of 1 second, and a response comprised of 3 TCP packets,
+      * where each response packet takes 0.9 seconds to arrive, for a total response time of 2.7 seconds, then there will be no timeout.
+      * Once a socket 'timeout' triggers the request will be aborted by the library (by default undefined).
+      */
+    var timeout: js.UndefOr[Double] = js.undefined
     
     // can be a GCM API key to be used for this request and this request only. This overrides any API key set via setGCMAPIKey().
     var vapidDetails: js.UndefOr[PrivateKey] = js.undefined
@@ -257,6 +271,10 @@ object mod {
     }
     
     extension [Self <: RequestOptions](x: Self) {
+      
+      inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
       inline def setContentEncoding(value: ContentEncoding): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
@@ -277,6 +295,10 @@ object mod {
       inline def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
       
       inline def setTTLUndefined: Self = StObject.set(x, "TTL", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
       inline def setVapidDetails(value: PrivateKey): Self = StObject.set(x, "vapidDetails", value.asInstanceOf[js.Any])
       

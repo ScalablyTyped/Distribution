@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-select
 
-Typings are for version 2.5
+Typings are for version 3.16
 
 ## Library description:
 Everything you wish the HTML <select> element could do, wrapped up into a lightweight, extensible Vue component.
@@ -10,10 +10,10 @@ Everything you wish the HTML <select> element could do, wrapped up into a lightw
 | ------------------ | :-------------: |
 | Full name          | vue-select |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 117 |
-| # downloads        | 5007448 |
-| # stars            | 2 |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 842443.6666666666 |
+| # stars            | 4340.0 |
 
 ## Links
 - [Homepage](https://vue-select.org)

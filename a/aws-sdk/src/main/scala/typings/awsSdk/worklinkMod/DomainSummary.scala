@@ -9,7 +9,7 @@ trait DomainSummary extends StObject {
   /**
     * The time that the domain was created.
     */
-  var CreatedTime: DateTime
+  var CreatedTime: js.Date
   
   /**
     * The name to display.
@@ -28,14 +28,14 @@ trait DomainSummary extends StObject {
 }
 object DomainSummary {
   
-  inline def apply(CreatedTime: DateTime, DomainName: DomainName, DomainStatus: DomainStatus): DomainSummary = {
+  inline def apply(CreatedTime: js.Date, DomainName: DomainName, DomainStatus: DomainStatus): DomainSummary = {
     val __obj = js.Dynamic.literal(CreatedTime = CreatedTime.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], DomainStatus = DomainStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainSummary]
   }
   
   extension [Self <: DomainSummary](x: Self) {
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     

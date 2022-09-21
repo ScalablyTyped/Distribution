@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.MultipleChoices")
 @js.native
-class MultipleChoices () extends Abstract
+open class MultipleChoices () extends Abstract

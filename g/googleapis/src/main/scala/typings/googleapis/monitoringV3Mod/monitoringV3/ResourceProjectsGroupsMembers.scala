@@ -4,88 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Groups$Members")
 @js.native
-class ResourceProjectsGroupsMembers protected () extends StObject {
+open class ResourceProjectsGroupsMembers protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * monitoring.projects.groups.members.list
-    * @desc Lists the monitored resources that are members of a group.
-    * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
-    *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
-    *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'list' method:
-    *
-    *     // The group whose members are listed. The format is
-    *     // `"projects/{project_id_or_number}/groups/{group_id}"`.
-    *     name: "projects/{MY-PROJECT}/groups/{MY-GROUP}",
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *
-    *   var recur = function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *       if (result.nextPageToken) {
-    *         request.pageToken = result.nextPageToken;
-    *         monitoring.projects.groups.members.list(request, recur);
-    *       }
-    *     }
-    *   };
-    *
-    *   monitoring.projects.groups.members.list(request, recur);
-    * });
-    * @alias monitoring.projects.groups.members.list
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter An optional list filter describing the members to be returned. The filter may reference the type, labels, and metadata of monitored resources that comprise the group. For example, to return only resources representing Compute Engine VM instances, use this filter: resource.type = "gce_instance"
-    * @param {string=} params.interval.endTime Required. The end of the time interval.
-    * @param {string=} params.interval.startTime Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time.
-    * @param {string} params.name The group whose members are listed. The format is "projects/{project_id_or_number}/groups/{group_id}".
-    * @param {integer=} params.pageSize A positive number that is the maximum number of results to return.
-    * @param {string=} params.pageToken If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def list(): GaxiosPromise[SchemaListGroupMembersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListGroupMembersResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListGroupMembersResponse] = js.native
@@ -96,13 +27,85 @@ class ResourceProjectsGroupsMembers protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsGroupsMembersList,
-    options: BodyResponseCallback[SchemaListGroupMembersResponse],
-    callback: BodyResponseCallback[SchemaListGroupMembersResponse]
+    options: BodyResponseCallback[Readable | SchemaListGroupMembersResponse],
+    callback: BodyResponseCallback[Readable | SchemaListGroupMembersResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsGroupsMembersList, options: MethodOptions): GaxiosPromise[SchemaListGroupMembersResponse] = js.native
   def list(
     params: ParamsResourceProjectsGroupsMembersList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListGroupMembersResponse]
+  ): Unit = js.native
+  /**
+    * Lists the monitored resources that are members of a group.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.read',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.groups.members.list({
+    *     // An optional list filter (https://cloud.google.com/monitoring/api/learn_more#filtering) describing the members to be returned. The filter may reference the type, labels, and metadata of monitored resources that comprise the group. For example, to return only resources representing Compute Engine VM instances, use this filter: `resource.type = "gce_instance"`
+    *     filter: 'placeholder-value',
+    *     // Required. The end of the time interval.
+    *     'interval.endTime': 'placeholder-value',
+    *     // Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time.
+    *     'interval.startTime': 'placeholder-value',
+    *     // Required. The group whose members are listed. The format is: projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID]
+    *     name: 'projects/my-project/groups/my-group',
+    *     // A positive number that is the maximum number of results to return.
+    *     pageSize: 'placeholder-value',
+    *     // If this field is not empty then it must contain the next_page_token value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "members": [],
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "totalSize": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceProjectsGroupsMembersList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsGroupsMembersList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

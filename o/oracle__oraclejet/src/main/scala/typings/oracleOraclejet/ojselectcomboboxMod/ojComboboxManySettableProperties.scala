@@ -27,11 +27,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ojComboboxManySettableProperties[K, D]
   extends StObject
-     with editableValueSettableProperties[js.Array[js.Any] | Null, js.Array[js.Any] | Null, String] {
+     with editableValueSettableProperties[js.Array[Any] | Null, js.Array[Any] | Null, String] {
   
-  var asyncValidators: js.Array[AsyncValidator[js.Array[js.Any]]]
+  var asyncValidators: js.Array[AsyncValidator[js.Array[Any]]]
   
-  var converter: Converter[js.Any] | RegisteredConverter | Null
+  var converter: Converter[Any] | RegisteredConverter | Null
   
   var minLength: Double
   
@@ -56,14 +56,14 @@ trait ojComboboxManySettableProperties[K, D]
   @JSName("translations")
   var translations_ojComboboxManySettableProperties: FilterFurther
   
-  var validators: (js.Array[Validator[js.Array[js.Any]] | RegisteredValidator]) | Null
+  var validators: (js.Array[Validator[js.Array[Any]] | RegisteredValidator]) | Null
   
   var valueOptions: js.Array[LabelValue] | Null
 }
 object ojComboboxManySettableProperties {
   
   inline def apply[K, D](
-    asyncValidators: js.Array[AsyncValidator[js.Array[js.Any]]],
+    asyncValidators: js.Array[AsyncValidator[js.Array[Any]]],
     disabled: Boolean,
     displayOptions: ConverterHint,
     help: Instruction,
@@ -84,11 +84,11 @@ object ojComboboxManySettableProperties {
   
   extension [Self <: ojComboboxManySettableProperties[?, ?], K, D](x: Self & (ojComboboxManySettableProperties[K, D])) {
     
-    inline def setAsyncValidators(value: js.Array[AsyncValidator[js.Array[js.Any]]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+    inline def setAsyncValidators(value: js.Array[AsyncValidator[js.Array[Any]]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
-    inline def setAsyncValidatorsVarargs(value: AsyncValidator[js.Array[js.Any]]*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
+    inline def setAsyncValidatorsVarargs(value: AsyncValidator[js.Array[Any]]*): Self = StObject.set(x, "asyncValidators", js.Array(value*))
     
-    inline def setConverter(value: Converter[js.Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setConverter(value: Converter[Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     inline def setConverterNull: Self = StObject.set(x, "converter", null)
     
@@ -112,7 +112,7 @@ object ojComboboxManySettableProperties {
     
     inline def setOptionsVarargs(
       value: (typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup)*
-    ): Self = StObject.set(x, "options", js.Array(value :_*))
+    ): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     
@@ -130,16 +130,16 @@ object ojComboboxManySettableProperties {
     
     inline def setTranslations(value: FilterFurther): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    inline def setValidators(value: js.Array[Validator[js.Array[js.Any]] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: js.Array[Validator[js.Array[Any]] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     inline def setValidatorsNull: Self = StObject.set(x, "validators", null)
     
-    inline def setValidatorsVarargs(value: (Validator[js.Array[js.Any]] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: (Validator[js.Array[Any]] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value*))
     
     inline def setValueOptions(value: js.Array[LabelValue]): Self = StObject.set(x, "valueOptions", value.asInstanceOf[js.Any])
     
     inline def setValueOptionsNull: Self = StObject.set(x, "valueOptions", null)
     
-    inline def setValueOptionsVarargs(value: LabelValue*): Self = StObject.set(x, "valueOptions", js.Array(value :_*))
+    inline def setValueOptionsVarargs(value: LabelValue*): Self = StObject.set(x, "valueOptions", js.Array(value*))
   }
 }

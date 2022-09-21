@@ -33,16 +33,16 @@ object dialogMod {
     *
     * @param options - The dialog setup options.
     */
-  class Dialog[T] () extends Widget {
+  open class Dialog[T] () extends Widget {
     def this(options: Partial[IOptions[T]]) = this()
     
-    /* private */ var _body: js.Any = js.native
+    /* private */ var _body: Any = js.native
     
-    /* private */ var _buttonNodes: js.Any = js.native
+    /* private */ var _buttonNodes: Any = js.native
     
-    /* private */ var _buttons: js.Any = js.native
+    /* private */ var _buttons: Any = js.native
     
-    /* private */ var _defaultButton: js.Any = js.native
+    /* private */ var _defaultButton: Any = js.native
     
     /**
       * Handle the `'click'` event for a dialog button.
@@ -65,22 +65,33 @@ object dialogMod {
       */
     /* protected */ def _evtKeydown(event: KeyboardEvent): Unit = js.native
     
-    /* private */ var _first: js.Any = js.native
+    /**
+      * Handle the `'mousedown'` event for the widget.
+      *
+      * @param event - The DOM event sent to the widget
+      */
+    /* protected */ def _evtMouseDown(event: MouseEvent): Unit = js.native
     
-    /* private */ var _focusNodeSelector: js.Any = js.native
+    /* private */ var _first: Any = js.native
     
-    /* private */ var _host: js.Any = js.native
+    /* private */ var _focusNodeSelector: Any = js.native
     
-    /* private */ var _original: js.Any = js.native
+    /* private */ var _hasClose: Any = js.native
     
-    /* private */ var _primary: js.Any = js.native
+    /* private */ var _host: Any = js.native
     
-    /* private */ var _promise: js.Any = js.native
+    /* private */ var _lastMouseDownInDialog: Any = js.native
+    
+    /* private */ var _original: Any = js.native
+    
+    /* private */ var _primary: Any = js.native
+    
+    /* private */ var _promise: Any = js.native
     
     /**
       * Resolve a button item.
       */
-    /* private */ var _resolve: js.Any = js.native
+    /* private */ var _resolve: Any = js.native
     
     /**
       * Handle the DOM events for the directory listing.
@@ -133,7 +144,7 @@ object dialogMod {
       */
     @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.Renderer")
     @js.native
-    class Renderer () extends StObject {
+    open class Renderer () extends StObject {
       
       /**
         * Create the body of the dialog.
@@ -142,7 +153,7 @@ object dialogMod {
         *
         * @returns A widget for the body.
         */
-      def createBody(value: Body[js.Any]): Widget = js.native
+      def createBody(value: Body[Any]): Widget = js.native
       
       /**
         * Create a button node for the dialog.
@@ -169,7 +180,10 @@ object dialogMod {
         *
         * @returns A widget for the dialog header.
         */
-      def createHeader(title: Header): Widget = js.native
+      def createHeader[T](title: Header): Widget = js.native
+      def createHeader[T](title: Header, reject: js.Function0[Unit]): Widget = js.native
+      def createHeader[T](title: Header, reject: js.Function0[Unit], options: Partial[IOptions[T]]): Widget = js.native
+      def createHeader[T](title: Header, reject: Unit, options: Partial[IOptions[T]]): Widget = js.native
       
       /**
         * Create the class name for the button icon.
@@ -246,7 +260,7 @@ object dialogMod {
       */
     @JSImport("@jupyterlab/apputils/lib/dialog", "Dialog.tracker")
     @js.native
-    val tracker: WidgetTracker[Dialog[js.Any]] = js.native
+    val tracker: WidgetTracker[Dialog[Any]] = js.native
     
     /**
       * Create a warn button.
@@ -287,6 +301,11 @@ object dialogMod {
       var accept: Boolean
       
       /**
+        * The additional dialog actions to perform when the button is clicked.
+        */
+      var actions: js.Array[String]
+      
+      /**
         * The caption for the button.
         */
       var caption: String
@@ -320,6 +339,7 @@ object dialogMod {
       
       inline def apply(
         accept: Boolean,
+        actions: js.Array[String],
         caption: String,
         className: String,
         displayType: default | warn,
@@ -327,13 +347,17 @@ object dialogMod {
         iconLabel: String,
         label: String
       ): IButton = {
-        val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], displayType = displayType.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], actions = actions.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], displayType = displayType.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[IButton]
       }
       
       extension [Self <: IButton](x: Self) {
         
         inline def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+        
+        inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+        
+        inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
         
         inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
@@ -386,6 +410,12 @@ object dialogMod {
       var focusNodeSelector: String
       
       /**
+        * When "false", disallows user from dismissing the dialog by clicking outside it
+        * or pressing escape. Defaults to "true", which renders a close button.
+        */
+      var hasClose: Boolean
+      
+      /**
         * The host element for the dialog. Defaults to `document.body`.
         */
       var host: HTMLElement
@@ -408,11 +438,12 @@ object dialogMod {
         buttons: js.Array[IButton],
         defaultButton: Double,
         focusNodeSelector: String,
+        hasClose: Boolean,
         host: HTMLElement,
         renderer: IRenderer,
         title: Header
       ): IOptions[T] = {
-        val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], defaultButton = defaultButton.asInstanceOf[js.Any], focusNodeSelector = focusNodeSelector.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], defaultButton = defaultButton.asInstanceOf[js.Any], focusNodeSelector = focusNodeSelector.asInstanceOf[js.Any], hasClose = hasClose.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions[T]]
       }
       
@@ -422,11 +453,13 @@ object dialogMod {
         
         inline def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
-        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value*))
         
         inline def setDefaultButton(value: Double): Self = StObject.set(x, "defaultButton", value.asInstanceOf[js.Any])
         
         inline def setFocusNodeSelector(value: String): Self = StObject.set(x, "focusNodeSelector", value.asInstanceOf[js.Any])
+        
+        inline def setHasClose(value: Boolean): Self = StObject.set(x, "hasClose", value.asInstanceOf[js.Any])
         
         inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -448,7 +481,7 @@ object dialogMod {
         *
         * @returns A widget for the body.
         */
-      def createBody(body: Body[js.Any]): Widget
+      def createBody(body: Body[Any]): Widget
       
       /**
         * Create a button node for the dialog.
@@ -475,29 +508,29 @@ object dialogMod {
         *
         * @returns A widget for the dialog header.
         */
-      def createHeader(title: Header): Widget
+      def createHeader[T](title: Header, reject: js.Function0[Unit], options: Partial[IOptions[T]]): Widget
     }
     object IRenderer {
       
       inline def apply(
-        createBody: Body[js.Any] => Widget,
+        createBody: Body[Any] => Widget,
         createButtonNode: IButton => HTMLElement,
         createFooter: js.Array[HTMLElement] => Widget,
-        createHeader: Header => Widget
+        createHeader: (Header, js.Function0[Unit], Partial[IOptions[Any]]) => Widget
       ): IRenderer = {
-        val __obj = js.Dynamic.literal(createBody = js.Any.fromFunction1(createBody), createButtonNode = js.Any.fromFunction1(createButtonNode), createFooter = js.Any.fromFunction1(createFooter), createHeader = js.Any.fromFunction1(createHeader))
+        val __obj = js.Dynamic.literal(createBody = js.Any.fromFunction1(createBody), createButtonNode = js.Any.fromFunction1(createButtonNode), createFooter = js.Any.fromFunction1(createFooter), createHeader = js.Any.fromFunction3(createHeader))
         __obj.asInstanceOf[IRenderer]
       }
       
       extension [Self <: IRenderer](x: Self) {
         
-        inline def setCreateBody(value: Body[js.Any] => Widget): Self = StObject.set(x, "createBody", js.Any.fromFunction1(value))
+        inline def setCreateBody(value: Body[Any] => Widget): Self = StObject.set(x, "createBody", js.Any.fromFunction1(value))
         
         inline def setCreateButtonNode(value: IButton => HTMLElement): Self = StObject.set(x, "createButtonNode", js.Any.fromFunction1(value))
         
         inline def setCreateFooter(value: js.Array[HTMLElement] => Widget): Self = StObject.set(x, "createFooter", js.Any.fromFunction1(value))
         
-        inline def setCreateHeader(value: Header => Widget): Self = StObject.set(x, "createHeader", js.Any.fromFunction1(value))
+        inline def setCreateHeader(value: (Header, js.Function0[Unit], Partial[IOptions[Any]]) => Widget): Self = StObject.set(x, "createHeader", js.Any.fromFunction3(value))
       }
     }
     
@@ -537,6 +570,6 @@ object dialogMod {
   inline def showDialog[T](): js.Promise[IResult[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("showDialog")().asInstanceOf[js.Promise[IResult[T]]]
   inline def showDialog[T](options: Partial[IOptions[T]]): js.Promise[IResult[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("showDialog")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[T]]]
   
-  inline def showErrorMessage(title: String, error: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def showErrorMessage(title: String, error: js.Any, buttons: js.Array[IButton]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def showErrorMessage(title: String, error: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def showErrorMessage(title: String, error: Any, buttons: js.Array[IButton]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("showErrorMessage")(title.asInstanceOf[js.Any], error.asInstanceOf[js.Any], buttons.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

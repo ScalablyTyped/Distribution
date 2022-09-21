@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLNavigator")
 @js.native
-/* private */ class HTMLNavigator ()
+/* private */ open class HTMLNavigator ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLNavigator {
   
@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val connectionSpeed: Double = js.native
   
   /* CompleteClass */
-  override val constructor: js.Any = js.native
+  override val constructor: Any = js.native
   
   /* CompleteClass */
   override val cookieEnabled: Boolean = js.native

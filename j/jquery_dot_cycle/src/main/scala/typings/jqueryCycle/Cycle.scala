@@ -58,7 +58,7 @@ trait Cycle extends StObject {
   ): Unit = js.native
   
   // helper fn to calculate the number of slides between the current and the next
-  def createPagerAnchor(index: Double, DOMElement: Element, $pager: JQuery, els: js.Any, options: CycleOptions): String = js.native
+  def createPagerAnchor(index: Double, DOMElement: Element, $pager: JQuery, els: Any, options: CycleOptions): String = js.native
   
   // transition definitions - only fade is defined here, transition pack defines the rest
   def custom(
@@ -100,7 +100,7 @@ trait Cycle extends StObject {
     js.Function3[/* $cont */ JQuery, /* $slides */ JQuery, /* options */ CycleOptions, Unit]
   ] = js.native
   
-  def updateActivePagerLink(pager: js.Any, currSlide: Double, clsName: String): Unit = js.native
+  def updateActivePagerLink(pager: Any, currSlide: Double, clsName: String): Unit = js.native
   
   def ver(): String = js.native
 }

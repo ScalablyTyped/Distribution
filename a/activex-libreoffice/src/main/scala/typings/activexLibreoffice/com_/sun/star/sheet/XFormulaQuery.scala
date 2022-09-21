@@ -40,7 +40,7 @@ object XFormulaQuery {
   inline def apply(
     acquire: () => Unit,
     queryDependents: Boolean => XSheetCellRanges,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryPrecedents: Boolean => XSheetCellRanges,
     release: () => Unit
   ): XFormulaQuery = {

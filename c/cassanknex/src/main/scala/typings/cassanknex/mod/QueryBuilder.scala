@@ -3,20 +3,19 @@ package typings.cassanknex.mod
 import typings.cassandraDriver.mod.ValueCallback
 import typings.cassandraDriver.typesMod.types.ResultSet
 import typings.cassandraDriver.typesMod.types.Row
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait QueryBuilder extends StObject {
   
-  def bindings(): js.Array[js.Any]
+  def bindings(): js.Array[Any]
   
   def cql(): String
   
   def eachRow(
-    onEachRow: js.Function2[/* n */ Double, /* row */ Row, js.Any],
-    onError: js.Function1[/* err */ Error, js.Any]
+    onEachRow: js.Function2[/* n */ Double, /* row */ Row, Any],
+    onError: js.Function1[/* err */ js.Error, Any]
   ): Unit
   
   def exec(cb: ValueCallback[ResultSet]): Unit
@@ -26,9 +25,9 @@ trait QueryBuilder extends StObject {
 object QueryBuilder {
   
   inline def apply(
-    bindings: () => js.Array[js.Any],
+    bindings: () => js.Array[Any],
     cql: () => String,
-    eachRow: (js.Function2[/* n */ Double, /* row */ Row, js.Any], js.Function1[/* err */ Error, js.Any]) => Unit,
+    eachRow: (js.Function2[/* n */ Double, /* row */ Row, Any], js.Function1[/* err */ js.Error, Any]) => Unit,
     exec: ValueCallback[ResultSet] => Unit,
     stream: StreamParams => Unit
   ): QueryBuilder = {
@@ -38,12 +37,12 @@ object QueryBuilder {
   
   extension [Self <: QueryBuilder](x: Self) {
     
-    inline def setBindings(value: () => js.Array[js.Any]): Self = StObject.set(x, "bindings", js.Any.fromFunction0(value))
+    inline def setBindings(value: () => js.Array[Any]): Self = StObject.set(x, "bindings", js.Any.fromFunction0(value))
     
     inline def setCql(value: () => String): Self = StObject.set(x, "cql", js.Any.fromFunction0(value))
     
     inline def setEachRow(
-      value: (js.Function2[/* n */ Double, /* row */ Row, js.Any], js.Function1[/* err */ Error, js.Any]) => Unit
+      value: (js.Function2[/* n */ Double, /* row */ Row, Any], js.Function1[/* err */ js.Error, Any]) => Unit
     ): Self = StObject.set(x, "eachRow", js.Any.fromFunction2(value))
     
     inline def setExec(value: ValueCallback[ResultSet] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))

@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-debounce-it
 
-Typings are for version 1.1
+Typings are for version 3.1.1
 
 ## Library description:
 return a debounced function
@@ -10,10 +10,10 @@ return a debounced function
 | ------------------ | :-------------: |
 | Full name          | just-debounce-it |
 | Keywords           | function, debounce, no-dependencies, just |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 1076763 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 183538.66666666666 |
+| # stars            | 4414.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)
@@ -24,7 +24,7 @@ return a debounced function
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

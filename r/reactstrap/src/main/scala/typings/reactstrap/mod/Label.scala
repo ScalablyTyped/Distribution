@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "Label")
+@JSImport("reactstrap", "Label")
 @js.native
-class Label () extends default
+open class Label () extends default

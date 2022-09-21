@@ -11,8 +11,8 @@ trait ProximityLocationListAssignedTargetingOptionDetails extends StObject {
   
   /**
     * Required. Radius range for proximity location list. This represents the size of the area around a chosen location that will be targeted. `All` proximity location targeting under a
-    * single line item must have the same radius range value. Set this value to match any existing targeting. If updated, this field will change the radius range for all proximity
-    * targeting under the line item.
+    * single resource must have the same radius range value. Set this value to match any existing targeting. If updated, this field will change the radius range for all proximity
+    * targeting under the resource.
     */
   var proximityRadiusRange: js.UndefOr[String] = js.undefined
 }

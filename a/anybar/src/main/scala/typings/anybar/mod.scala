@@ -6,23 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Control the [AnyBar app](https://github.com/tonsky/AnyBar).
-  @param status - [Name](https://github.com/tonsky/AnyBar#usage) of the color dot you want AnyBar.app to display.
-  @returns Returns a promise, but AnyBar.app doesn't send back a reply, so really the only point of waiting for the promise to resolve is in case of an obscure DNS error.
-  @example
-  ```
-  import anybar = require('anybar');
-  anybar('purple');
-  // The Anybar.app menubar icon turned purple
-  ```
-  */
-  inline def apply(status: AnybarStatus): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(status: AnybarStatus, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(status.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
   @JSImport("anybar", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(status: AnybarStatus): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(status: AnybarStatus, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(status.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.anybar.anybarStrings.white
@@ -37,6 +26,8 @@ object mod {
     - typings.anybar.anybarStrings.question
     - typings.anybar.anybarStrings.exclamation
     - typings.anybar.anybarStrings.quit
+    - typings.anybar.anybarStrings.filled
+    - typings.anybar.anybarStrings.hollow
   */
   trait AnybarStatus extends StObject
   object AnybarStatus {
@@ -49,7 +40,11 @@ object mod {
     
     inline def exclamation: typings.anybar.anybarStrings.exclamation = "exclamation".asInstanceOf[typings.anybar.anybarStrings.exclamation]
     
+    inline def filled: typings.anybar.anybarStrings.filled = "filled".asInstanceOf[typings.anybar.anybarStrings.filled]
+    
     inline def green: typings.anybar.anybarStrings.green = "green".asInstanceOf[typings.anybar.anybarStrings.green]
+    
+    inline def hollow: typings.anybar.anybarStrings.hollow = "hollow".asInstanceOf[typings.anybar.anybarStrings.hollow]
     
     inline def orange: typings.anybar.anybarStrings.orange = "orange".asInstanceOf[typings.anybar.anybarStrings.orange]
     
@@ -69,10 +64,10 @@ object mod {
   trait Options extends StObject {
     
     /**
-    		Port to communicate with the AnyBar.app.
-    		@default 1738
-    		*/
-    var port: js.UndefOr[Double] = js.undefined
+    	The port to communicate with the AnyBar app.
+    	@default 1738
+    	*/
+    val port: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

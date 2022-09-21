@@ -12,12 +12,12 @@ trait SetRepositoryPolicyRequest extends StObject {
   var force: js.UndefOr[ForceFlag] = js.undefined
   
   /**
-    * The JSON repository policy text to apply to the repository. For more information, see Amazon ECR Repository Policies in the Amazon Elastic Container Registry User Guide.
+    * The JSON repository policy text to apply to the repository. For more information, see Amazon ECR repository policies in the Amazon Elastic Container Registry User Guide.
     */
   var policyText: RepositoryPolicyText
   
   /**
-    * The AWS account ID associated with the registry that contains the repository. If you do not specify a registry, the default registry is assumed.
+    * The Amazon Web Services account ID associated with the registry that contains the repository. If you do not specify a registry, the default registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   

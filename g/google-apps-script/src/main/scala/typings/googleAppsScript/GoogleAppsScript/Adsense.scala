@@ -570,7 +570,7 @@ object Adsense {
         
         inline def setSubAccountsUndefined: Self = StObject.set(x, "subAccounts", js.undefined)
         
-        inline def setSubAccountsVarargs(value: Account*): Self = StObject.set(x, "subAccounts", js.Array(value :_*))
+        inline def setSubAccountsVarargs(value: Account*): Self = StObject.set(x, "subAccounts", js.Array(value*))
         
         inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
         
@@ -605,7 +605,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Account*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Account*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -687,7 +687,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: AdClient*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: AdClient*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1077,7 +1077,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: AdUnit*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: AdUnit*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1122,7 +1122,7 @@ object Adsense {
         
         inline def setAveragesUndefined: Self = StObject.set(x, "averages", js.undefined)
         
-        inline def setAveragesVarargs(value: String*): Self = StObject.set(x, "averages", js.Array(value :_*))
+        inline def setAveragesVarargs(value: String*): Self = StObject.set(x, "averages", js.Array(value*))
         
         inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
         
@@ -1132,7 +1132,7 @@ object Adsense {
         
         inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        inline def setHeadersVarargs(value: AdsenseReportsGenerateResponseHeaders*): Self = StObject.set(x, "headers", js.Array(value :_*))
+        inline def setHeadersVarargs(value: AdsenseReportsGenerateResponseHeaders*): Self = StObject.set(x, "headers", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1142,7 +1142,7 @@ object Adsense {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
         
@@ -1156,13 +1156,13 @@ object Adsense {
         
         inline def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
         
-        inline def setTotalsVarargs(value: String*): Self = StObject.set(x, "totals", js.Array(value :_*))
+        inline def setTotalsVarargs(value: String*): Self = StObject.set(x, "totals", js.Array(value*))
         
         inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
         
         inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
         
-        inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+        inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
       }
     }
     
@@ -1265,7 +1265,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Alert*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Alert*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1380,7 +1380,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: CustomChannel*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: CustomChannel*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1411,7 +1411,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ReportingMetadataEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ReportingMetadataEntry*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1481,7 +1481,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Payment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Payment*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1518,13 +1518,13 @@ object Adsense {
         
         inline def setCompatibleDimensionsUndefined: Self = StObject.set(x, "compatibleDimensions", js.undefined)
         
-        inline def setCompatibleDimensionsVarargs(value: String*): Self = StObject.set(x, "compatibleDimensions", js.Array(value :_*))
+        inline def setCompatibleDimensionsVarargs(value: String*): Self = StObject.set(x, "compatibleDimensions", js.Array(value*))
         
         inline def setCompatibleMetrics(value: js.Array[String]): Self = StObject.set(x, "compatibleMetrics", value.asInstanceOf[js.Any])
         
         inline def setCompatibleMetricsUndefined: Self = StObject.set(x, "compatibleMetrics", js.undefined)
         
-        inline def setCompatibleMetricsVarargs(value: String*): Self = StObject.set(x, "compatibleMetrics", js.Array(value :_*))
+        inline def setCompatibleMetricsVarargs(value: String*): Self = StObject.set(x, "compatibleMetrics", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1538,19 +1538,19 @@ object Adsense {
         
         inline def setRequiredDimensionsUndefined: Self = StObject.set(x, "requiredDimensions", js.undefined)
         
-        inline def setRequiredDimensionsVarargs(value: String*): Self = StObject.set(x, "requiredDimensions", js.Array(value :_*))
+        inline def setRequiredDimensionsVarargs(value: String*): Self = StObject.set(x, "requiredDimensions", js.Array(value*))
         
         inline def setRequiredMetrics(value: js.Array[String]): Self = StObject.set(x, "requiredMetrics", value.asInstanceOf[js.Any])
         
         inline def setRequiredMetricsUndefined: Self = StObject.set(x, "requiredMetrics", js.undefined)
         
-        inline def setRequiredMetricsVarargs(value: String*): Self = StObject.set(x, "requiredMetrics", js.Array(value :_*))
+        inline def setRequiredMetricsVarargs(value: String*): Self = StObject.set(x, "requiredMetrics", js.Array(value*))
         
         inline def setSupportedProducts(value: js.Array[String]): Self = StObject.set(x, "supportedProducts", value.asInstanceOf[js.Any])
         
         inline def setSupportedProductsUndefined: Self = StObject.set(x, "supportedProducts", js.undefined)
         
-        inline def setSupportedProductsVarargs(value: String*): Self = StObject.set(x, "supportedProducts", js.Array(value :_*))
+        inline def setSupportedProductsVarargs(value: String*): Self = StObject.set(x, "supportedProducts", js.Array(value*))
       }
     }
     
@@ -1618,7 +1618,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: SavedAdStyle*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: SavedAdStyle*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1688,7 +1688,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: SavedReport*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: SavedReport*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1758,7 +1758,7 @@ object Adsense {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: UrlChannel*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: UrlChannel*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

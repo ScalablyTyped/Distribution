@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "DesaturateBlock")
 @js.native
-class DesaturateBlock protected ()
+open class DesaturateBlock protected ()
   extends typings.babylonjs.nodeIndexMod.DesaturateBlock {
   /**
     * Creates a new DesaturateBlock

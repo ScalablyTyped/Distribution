@@ -24,6 +24,6 @@ object DescribeTagsResponse {
     
     inline def setResourceTagsUndefined: Self = StObject.set(x, "resourceTags", js.undefined)
     
-    inline def setResourceTagsVarargs(value: ResourceTag*): Self = StObject.set(x, "resourceTags", js.Array(value :_*))
+    inline def setResourceTagsVarargs(value: ResourceTag*): Self = StObject.set(x, "resourceTags", js.Array(value*))
   }
 }

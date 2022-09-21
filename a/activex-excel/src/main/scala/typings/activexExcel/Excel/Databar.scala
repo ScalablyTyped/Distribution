@@ -45,7 +45,7 @@ trait Databar extends StObject {
   
   val PTCondition: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PercentMax: Double
   
@@ -85,7 +85,7 @@ object Databar {
     ModifyAppliesToRange: Range => Unit,
     NegativeBarFormat: NegativeBarFormat,
     PTCondition: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PercentMax: Double,
     PercentMin: Double,
     Priority: Double,
@@ -137,7 +137,7 @@ object Databar {
     
     inline def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPercentMax(value: Double): Self = StObject.set(x, "PercentMax", value.asInstanceOf[js.Any])
     

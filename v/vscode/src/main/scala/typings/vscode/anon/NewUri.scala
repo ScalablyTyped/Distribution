@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NewUri extends StObject {
   
-  var newUri: Uri
+  val newUri: Uri
   
-  var oldUri: Uri
+  val oldUri: Uri
 }
 object NewUri {
   

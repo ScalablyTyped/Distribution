@@ -10,12 +10,12 @@ object streamSkipUntilStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/SkipUntilStream", "SkipUntilStream")
   @js.native
-  class SkipUntilStream protected () extends BaseStream {
+  open class SkipUntilStream protected () extends BaseStream {
     def this(source: Stream, otherStream: Stream) = this()
     
-    /* private */ var _otherStream: js.Any = js.native
+    /* private */ var _otherStream: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     var isOpen: Boolean = js.native
   }

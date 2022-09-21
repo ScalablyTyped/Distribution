@@ -8,11 +8,11 @@ trait ContextTChildContext[TChildContext] extends StObject {
   
   var context: TChildContext
   
-  var value: js.Any
+  var value: Any
 }
 object ContextTChildContext {
   
-  inline def apply[TChildContext](context: TChildContext, value: js.Any): ContextTChildContext[TChildContext] = {
+  inline def apply[TChildContext](context: TChildContext, value: Any): ContextTChildContext[TChildContext] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextTChildContext[TChildContext]]
   }
@@ -21,6 +21,6 @@ object ContextTChildContext {
     
     inline def setContext(value: TChildContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

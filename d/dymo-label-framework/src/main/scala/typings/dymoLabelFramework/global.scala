@@ -65,7 +65,7 @@ object global {
           */
         @JSGlobal("dymo.label.framework.LabelSetBuilder")
         @js.native
-        class LabelSetBuilder ()
+        open class LabelSetBuilder ()
           extends StObject
              with typings.dymoLabelFramework.dymo.label.framework.LabelSetBuilder {
           

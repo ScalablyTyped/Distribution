@@ -17,7 +17,7 @@ trait PutRuleRequest extends StObject {
   var EventBusName: js.UndefOr[EventBusNameOrArn] = js.undefined
   
   /**
-    * The event pattern. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.
+    * The event pattern. For more information, see EventBridge event patterns in the Amazon EventBridge User Guide.
     */
   var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.undefined
   
@@ -27,7 +27,7 @@ trait PutRuleRequest extends StObject {
   var Name: RuleName
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role associated with the rule.
+    * The Amazon Resource Name (ARN) of the IAM role associated with the rule. If you're setting an event bus in another account as the target and that account granted permission to your account through an organization instead of directly by the account ID, you must specify a RoleArn with proper permissions in the Target structure, instead of here in this parameter.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.eventbridgeMod.RoleArn] = js.undefined
   
@@ -85,6 +85,6 @@ object PutRuleRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

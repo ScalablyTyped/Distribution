@@ -13,7 +13,7 @@ trait TreeStateCheckbox extends StObject {
   
   def checkItem(id: String): Unit = js.native
   
-  def getChecked(): js.Array[js.Any] = js.native
+  def getChecked(): js.Array[Any] = js.native
   
   def isChecked(id: String): Boolean = js.native
   def isChecked(id: Double): Boolean = js.native

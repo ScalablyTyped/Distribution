@@ -1,5 +1,8 @@
 package typings.chrome.chrome
 
+import typings.chrome.chromeStrings.CENTER
+import typings.chrome.chromeStrings.CENTER_CROPPED
+import typings.chrome.chromeStrings.STRETCH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +21,7 @@ object wallpaper {
   trait WallpaperDetails extends StObject {
     
     /** Optional. The jpeg or png encoded wallpaper image. */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
     
     /** The file name of the saved wallpaper. */
     var filename: String
@@ -27,7 +30,7 @@ object wallpaper {
       * The supported wallpaper layouts.
       * One of: "STRETCH", "CENTER", or "CENTER_CROPPED"
       */
-    var layout: String
+    var layout: STRETCH | CENTER | CENTER_CROPPED
     
     /** Optional. True if a 128x60 thumbnail should be generated. */
     var thumbnail: js.UndefOr[Boolean] = js.undefined
@@ -37,20 +40,20 @@ object wallpaper {
   }
   object WallpaperDetails {
     
-    inline def apply(filename: String, layout: String): WallpaperDetails = {
+    inline def apply(filename: String, layout: STRETCH | CENTER | CENTER_CROPPED): WallpaperDetails = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
       __obj.asInstanceOf[WallpaperDetails]
     }
     
     extension [Self <: WallpaperDetails](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: STRETCH | CENTER | CENTER_CROPPED): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Formatter
 @JSGlobal("google.visualization.DefaultFormatter")
 @js.native
-class DefaultFormatter ()
+open class DefaultFormatter ()
   extends StObject
      with typings.googleVisualization.google.visualization.DefaultFormatter {
   

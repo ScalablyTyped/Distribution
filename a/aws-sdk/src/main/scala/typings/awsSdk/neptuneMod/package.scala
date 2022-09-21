@@ -10,97 +10,105 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.`pending-reboot`
   - java.lang.String
 */
-type ApplyMethod = typings.awsSdk.neptuneMod._ApplyMethod | java.lang.String
+type ApplyMethod = _ApplyMethod | java.lang.String
 
-type AttributeValueList = js.Array[typings.awsSdk.neptuneMod.String]
+type AttributeValueList = js.Array[String]
 
-type AvailabilityZoneList = js.Array[typings.awsSdk.neptuneMod.AvailabilityZone]
+type AvailabilityZoneList = js.Array[AvailabilityZone]
 
-type AvailabilityZones = js.Array[typings.awsSdk.neptuneMod.String]
+type AvailabilityZones = js.Array[String]
 
 type Boolean = scala.Boolean
 
 type BooleanOptional = scala.Boolean
 
-type DBClusterEndpointList = js.Array[typings.awsSdk.neptuneMod.DBClusterEndpoint]
+type DBClusterEndpointList = js.Array[DBClusterEndpoint]
 
-type DBClusterList = js.Array[typings.awsSdk.neptuneMod.DBCluster]
+type DBClusterList = js.Array[DBCluster]
 
-type DBClusterMemberList = js.Array[typings.awsSdk.neptuneMod.DBClusterMember]
+type DBClusterMemberList = js.Array[DBClusterMember]
 
-type DBClusterOptionGroupMemberships = js.Array[typings.awsSdk.neptuneMod.DBClusterOptionGroupStatus]
+type DBClusterOptionGroupMemberships = js.Array[DBClusterOptionGroupStatus]
 
-type DBClusterParameterGroupList = js.Array[typings.awsSdk.neptuneMod.DBClusterParameterGroup]
+type DBClusterParameterGroupList = js.Array[DBClusterParameterGroup]
 
-type DBClusterRoles = js.Array[typings.awsSdk.neptuneMod.DBClusterRole]
+type DBClusterRoles = js.Array[DBClusterRole]
 
-type DBClusterSnapshotAttributeList = js.Array[typings.awsSdk.neptuneMod.DBClusterSnapshotAttribute]
+type DBClusterSnapshotAttributeList = js.Array[DBClusterSnapshotAttribute]
 
-type DBClusterSnapshotList = js.Array[typings.awsSdk.neptuneMod.DBClusterSnapshot]
+type DBClusterSnapshotList = js.Array[DBClusterSnapshot]
 
-type DBEngineVersionList = js.Array[typings.awsSdk.neptuneMod.DBEngineVersion]
+type DBEngineVersionList = js.Array[DBEngineVersion]
 
-type DBInstanceList = js.Array[typings.awsSdk.neptuneMod.DBInstance]
+type DBInstanceList = js.Array[DBInstance]
 
-type DBInstanceStatusInfoList = js.Array[typings.awsSdk.neptuneMod.DBInstanceStatusInfo]
+type DBInstanceStatusInfoList = js.Array[DBInstanceStatusInfo]
 
-type DBParameterGroupList = js.Array[typings.awsSdk.neptuneMod.DBParameterGroup]
+type DBParameterGroupList = js.Array[DBParameterGroup]
 
-type DBParameterGroupStatusList = js.Array[typings.awsSdk.neptuneMod.DBParameterGroupStatus]
+type DBParameterGroupStatusList = js.Array[DBParameterGroupStatus]
 
-type DBSecurityGroupMembershipList = js.Array[typings.awsSdk.neptuneMod.DBSecurityGroupMembership]
+type DBSecurityGroupMembershipList = js.Array[DBSecurityGroupMembership]
 
-type DBSecurityGroupNameList = js.Array[typings.awsSdk.neptuneMod.String]
+type DBSecurityGroupNameList = js.Array[String]
 
-type DBSubnetGroups = js.Array[typings.awsSdk.neptuneMod.DBSubnetGroup]
+type DBSubnetGroups = js.Array[DBSubnetGroup]
 
-type DomainMembershipList = js.Array[typings.awsSdk.neptuneMod.DomainMembership]
+type DomainMembershipList = js.Array[DomainMembership]
 
 type Double = scala.Double
 
 type DoubleOptional = scala.Double
 
-type DoubleRangeList = js.Array[typings.awsSdk.neptuneMod.DoubleRange]
+type DoubleRangeList = js.Array[DoubleRange]
 
-type EventCategoriesList = js.Array[typings.awsSdk.neptuneMod.String]
+type EventCategoriesList = js.Array[String]
 
-type EventCategoriesMapList = js.Array[typings.awsSdk.neptuneMod.EventCategoriesMap]
+type EventCategoriesMapList = js.Array[EventCategoriesMap]
 
-type EventList = js.Array[typings.awsSdk.neptuneMod.Event]
+type EventList = js.Array[Event]
 
-type EventSubscriptionsList = js.Array[typings.awsSdk.neptuneMod.EventSubscription]
+type EventSubscriptionsList = js.Array[EventSubscription]
 
-type FilterList = js.Array[typings.awsSdk.neptuneMod.Filter]
+type FilterList = js.Array[Filter]
 
-type FilterValueList = js.Array[typings.awsSdk.neptuneMod.String]
+type FilterValueList = js.Array[String]
+
+type GlobalClusterIdentifier = java.lang.String
+
+type GlobalClusterList = js.Array[GlobalCluster]
+
+type GlobalClusterMemberList = js.Array[GlobalClusterMember]
 
 type Integer = scala.Double
 
 type IntegerOptional = scala.Double
 
-type KeyList = js.Array[typings.awsSdk.neptuneMod.String]
+type KeyList = js.Array[String]
 
-type LogTypeList = js.Array[typings.awsSdk.neptuneMod.String]
+type LogTypeList = js.Array[String]
 
-type OptionGroupMembershipList = js.Array[typings.awsSdk.neptuneMod.OptionGroupMembership]
+type OptionGroupMembershipList = js.Array[OptionGroupMembership]
 
-type OrderableDBInstanceOptionsList = js.Array[typings.awsSdk.neptuneMod.OrderableDBInstanceOption]
+type OrderableDBInstanceOptionsList = js.Array[OrderableDBInstanceOption]
 
-type ParametersList = js.Array[typings.awsSdk.neptuneMod.Parameter]
+type ParametersList = js.Array[Parameter]
 
-type PendingMaintenanceActionDetails = js.Array[typings.awsSdk.neptuneMod.PendingMaintenanceAction]
+type PendingMaintenanceActionDetails = js.Array[PendingMaintenanceAction]
 
-type PendingMaintenanceActions = js.Array[typings.awsSdk.neptuneMod.ResourcePendingMaintenanceActions]
+type PendingMaintenanceActions = js.Array[ResourcePendingMaintenanceActions]
 
-type RangeList = js.Array[typings.awsSdk.neptuneMod.Range]
+type RangeList = js.Array[Range]
 
-type ReadReplicaDBClusterIdentifierList = js.Array[typings.awsSdk.neptuneMod.String]
+type ReadReplicaDBClusterIdentifierList = js.Array[String]
 
-type ReadReplicaDBInstanceIdentifierList = js.Array[typings.awsSdk.neptuneMod.String]
+type ReadReplicaDBInstanceIdentifierList = js.Array[String]
 
-type ReadReplicaIdentifierList = js.Array[typings.awsSdk.neptuneMod.String]
+type ReadReplicaIdentifierList = js.Array[String]
 
-type SourceIdsList = js.Array[typings.awsSdk.neptuneMod.String]
+type ReadersArnList = js.Array[String]
+
+type SourceIdsList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`db-instance`
@@ -111,35 +119,35 @@ type SourceIdsList = js.Array[typings.awsSdk.neptuneMod.String]
   - typings.awsSdk.awsSdkStrings.`db-cluster-snapshot`
   - java.lang.String
 */
-type SourceType = typings.awsSdk.neptuneMod._SourceType | java.lang.String
+type SourceType = _SourceType | java.lang.String
 
 type String = java.lang.String
 
-type StringList = js.Array[typings.awsSdk.neptuneMod.String]
+type StringList = js.Array[String]
 
-type SubnetIdentifierList = js.Array[typings.awsSdk.neptuneMod.String]
+type SubnetIdentifierList = js.Array[String]
 
-type SubnetList = js.Array[typings.awsSdk.neptuneMod.Subnet]
+type SubnetList = js.Array[Subnet]
 
-type SupportedCharacterSetsList = js.Array[typings.awsSdk.neptuneMod.CharacterSet]
+type SupportedCharacterSetsList = js.Array[CharacterSet]
 
-type SupportedTimezonesList = js.Array[typings.awsSdk.neptuneMod.Timezone]
+type SupportedTimezonesList = js.Array[Timezone]
 
-type TStamp = typings.std.Date
+type TStamp = js.Date
 
-type TagList = js.Array[typings.awsSdk.neptuneMod.Tag]
+type TagList = js.Array[Tag]
 
-type ValidStorageOptionsList = js.Array[typings.awsSdk.neptuneMod.ValidStorageOptions]
+type ValidStorageOptionsList = js.Array[ValidStorageOptions]
 
-type ValidUpgradeTargetList = js.Array[typings.awsSdk.neptuneMod.UpgradeTarget]
+type ValidUpgradeTargetList = js.Array[UpgradeTarget]
 
-type VpcSecurityGroupIdList = js.Array[typings.awsSdk.neptuneMod.String]
+type VpcSecurityGroupIdList = js.Array[String]
 
-type VpcSecurityGroupMembershipList = js.Array[typings.awsSdk.neptuneMod.VpcSecurityGroupMembership]
+type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2014-10-31`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.neptuneMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

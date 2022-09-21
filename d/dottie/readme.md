@@ -10,10 +10,10 @@ Fast and safe nested object access and manipulation in JavaScript
 | ------------------ | :-------------: |
 | Full name          | dottie |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 161 |
-| # downloads        | 36303632 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5134683.666666667 |
+| # stars            | 225.0 |
 
 ## Links
 - [Homepage](https://github.com/mickhansen/dottie.js#readme)

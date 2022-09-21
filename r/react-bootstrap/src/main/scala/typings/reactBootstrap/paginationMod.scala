@@ -12,8 +12,8 @@ object paginationMod {
   
   @JSImport("react-bootstrap/lib/Pagination", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PaginationProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PaginationProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Pagination", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -21,7 +21,7 @@ object paginationMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Pagination", "Ellipsis")
   @js.native
-  class Ellipsis ()
+  open class Ellipsis ()
     extends typings.reactBootstrap.paginationEllipsisMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Pagination", "Ellipsis")
@@ -32,7 +32,7 @@ object paginationMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Pagination", "First")
   @js.native
-  class First ()
+  open class First ()
     extends typings.reactBootstrap.paginationFirstMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Pagination", "First")
@@ -43,7 +43,7 @@ object paginationMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Pagination", "Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.reactBootstrap.paginationItemMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Pagination", "Item")
@@ -54,7 +54,7 @@ object paginationMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Pagination", "Last")
   @js.native
-  class Last ()
+  open class Last ()
     extends typings.reactBootstrap.paginationLastMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Pagination", "Last")
@@ -65,7 +65,7 @@ object paginationMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Pagination", "Next")
   @js.native
-  class Next ()
+  open class Next ()
     extends typings.reactBootstrap.paginationNextMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Pagination", "Next")
@@ -76,7 +76,7 @@ object paginationMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Pagination", "Prev")
   @js.native
-  class Prev ()
+  open class Prev ()
     extends typings.reactBootstrap.paginationPrevMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Pagination", "Prev")
@@ -84,9 +84,7 @@ object paginationMod {
   def Prev: Instantiable0[typings.reactBootstrap.paginationPrevMod.^] = js.native
   inline def Prev_=(x: Instantiable0[typings.reactBootstrap.paginationPrevMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Prev")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Pagination
-    extends Component[PaginationProps, js.Object, js.Any]
+  type Pagination = Component[PaginationProps, js.Object, Any]
   
   trait PaginationProps
     extends StObject

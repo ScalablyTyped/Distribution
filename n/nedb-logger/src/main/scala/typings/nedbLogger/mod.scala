@@ -1,7 +1,6 @@
 package typings.nedbLogger
 
 import typings.nedbLogger.anon.Filename
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("nedb-logger", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with NeDBLoggerDataStore {
     def this(path: String) = this()
@@ -25,6 +24,6 @@ object mod {
       * @param cb Optional callback, signature: err, insertedDoc
       */
     def insert[T](newDoc: T): Unit = js.native
-    def insert[T](newDoc: T, cb: js.Function2[/* err */ Error, /* document */ T, Unit]): Unit = js.native
+    def insert[T](newDoc: T, cb: js.Function2[/* err */ js.Error, /* document */ T, Unit]): Unit = js.native
   }
 }

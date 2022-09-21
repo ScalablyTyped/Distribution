@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The suggestion chip message that the user can tap to quickly post a reply
-  * to the conversation.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion extends StObject {
   
   /**
     * Required. The text shown the in the suggestion chip.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion {
   
@@ -25,6 +21,8 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion {
   extension [Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestion](x: Self) {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

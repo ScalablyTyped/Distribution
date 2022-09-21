@@ -6,10 +6,15 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.MutableRefObject
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.Ref
-import typings.reactMdMenu.reactMdMenuStrings.first
-import typings.reactMdMenu.reactMdMenuStrings.last
+import typings.react.mod.RefObject
+import typings.react.mod.SetStateAction
+import typings.reactMdButton.fabMod.FABPosition
+import typings.reactMdMenu.typesMod.BaseMenuHookOptions
+import typings.reactMdMenu.typesMod.BaseMenuHookReturnValue
+import typings.reactMdMenu.typesMod.ProvidedMenuProps
+import typings.reactMdMenu.typesMod.ProvidedMenuToggleProps
 import typings.std.HTMLDivElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,139 +25,148 @@ object useMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useMenu(
-    hasPropRefVisibleControlIdHorizontalPropOnClickPropOnKeyDownPortalledDefaultFocusOnRequestCloseDisableControlClickOkay: MenuOptions
-  ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenu")(hasPropRefVisibleControlIdHorizontalPropOnClickPropOnKeyDownPortalledDefaultFocusOnRequestCloseDisableControlClickOkay.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useMenu[ToggleEl /* <: HTMLElement */](options: MenuHookOptions[ToggleEl]): MenuHookReturnValue[ToggleEl] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenu")(options.asInstanceOf[js.Any]).asInstanceOf[MenuHookReturnValue[ToggleEl]]
   
-  trait MenuOptions extends StObject {
+  trait MenuHookOptions[ToggleEl /* <: HTMLElement */]
+    extends StObject
+       with BaseMenuHookOptions {
     
     /**
-      * The id of the element that controls the menu's visibility. This is required
-      * so that the menu won't be closed when the control element is clicked since
-      * it'll have it's own toggle functionality built-in already.
+      * Boolean if the toggle component is currently disabled which will prevent
+      * the arrow keys from opening a menuitem's menu.
+      *
+      * @defaultValue `false`
       */
-    var controlId: String
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The default focusable element within the menu.
+      * This is just used to update the default anchor behavior.
+      *
+      * @see {@link FABPosition}
+      * @defaultValue `null`
       */
-    var defaultFocus: first | last | String
+    var floating: js.UndefOr[FABPosition] = js.undefined
     
     /**
-      * Boolean if the close on outside click logic should consider the control
-      * element within the menu and not call the `onRequestClose` function when it
-      * is been clicked. This should be enabled when creating a context menu but
-      * normally should remain `false` otherwise since the control element has it's
-      * own toggle logic that conflicts with this close click.
+      * An optional click handler to merge with the
+      * {@link MenuHookReturnValue.onClick} behavior.
       */
-    var disableControlClickOkay: js.UndefOr[Boolean] = js.undefined
+    var onMenuClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     /**
-      * Boolean if the menu is oriented horizontally instead of vertically.  This
-      * will update the keydown handlers to use the `ArrowLeft` and `ArrowRight`
-      * keys instead of `ArrowUp` and `ArrrowDown` to navigate.
+      * An optional keydown handler to merge with the
+      * {@link MenuHookReturnValue.menuProps} behavior. Calling
+      * `event.stopPropagation()` will prevent the default behavior of closing the
+      * menu when the `"Escape"` key is pressed.
       */
-    var horizontal: js.UndefOr[Boolean] = js.undefined
+    var onMenuKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
     /**
-      * An optional click handler to call when the `Menu` (or any child item) is
-      * clicked. This will be merged with the default implementation to close the
-      * menu once clicked.
+      * An optional click handler to merge with the toggle visibility behavior.
+      * Calling `event.stopPropagation()` will prevent the default behavior from
+      * occurring.
       */
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    var onToggleClick: js.UndefOr[MouseEventHandler[ToggleEl]] = js.undefined
     
     /**
-      * An optional keydown handler to call when the `Menu` (or any child item)
-      * triggers a keydown event. This will be merged witht he default logic of
-      * allowing items to be focused with the arrow keys or closing when the escape
-      * or tab key is pressed.
+      * An optional keydown handler to merge with the
+      * {@link ProvidedMenuToggleProps.onKeyDown} behavior.
       */
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
+    var onToggleKeyDown: js.UndefOr[KeyboardEventHandler[ToggleEl]] = js.undefined
     
     /**
-      * The function that should close the menu.
+      * An optional keydown handler to merge with the
+      * {@link ProvidedMenuToggleProps.onMouseEnter} behavior.
       */
-    def onRequestClose(): Unit
+    var onToggleMouseEnter: js.UndefOr[MouseEventHandler[ToggleEl]] = js.undefined
     
     /**
-      * Boolean if the menu has been portalled so that the tab keypress behavior
-      * can be fixed since tab order is destroyed when portalling.
+      * An optional keydown handler to merge with the
+      * {@link ProvidedMenuToggleProps.onMouseLeave} behavior.
       */
-    var portalled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * An optional ref to be merged into the menu's required ref handler.
-      */
-    var ref: js.UndefOr[Ref[HTMLDivElement | Null]] = js.undefined
-    
-    /**
-      * Boolean if the menu is currently visible.
-      */
-    var visible: Boolean
+    var onToggleMouseLeave: js.UndefOr[MouseEventHandler[ToggleEl]] = js.undefined
   }
-  object MenuOptions {
+  object MenuHookOptions {
     
-    inline def apply(
-      controlId: String,
-      defaultFocus: first | last | String,
-      onRequestClose: () => Unit,
-      visible: Boolean
-    ): MenuOptions = {
-      val __obj = js.Dynamic.literal(controlId = controlId.asInstanceOf[js.Any], defaultFocus = defaultFocus.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), visible = visible.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MenuOptions]
+    inline def apply[ToggleEl /* <: HTMLElement */](baseId: String, setVisible: SetStateAction[Boolean] => Unit, visible: Boolean): MenuHookOptions[ToggleEl] = {
+      val __obj = js.Dynamic.literal(baseId = baseId.asInstanceOf[js.Any], setVisible = js.Any.fromFunction1(setVisible), visible = visible.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MenuHookOptions[ToggleEl]]
     }
     
-    extension [Self <: MenuOptions](x: Self) {
+    extension [Self <: MenuHookOptions[?], ToggleEl /* <: HTMLElement */](x: Self & MenuHookOptions[ToggleEl]) {
       
-      inline def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisableControlClickOkay(value: Boolean): Self = StObject.set(x, "disableControlClickOkay", value.asInstanceOf[js.Any])
+      inline def setFloating(value: FABPosition): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
       
-      inline def setDisableControlClickOkayUndefined: Self = StObject.set(x, "disableControlClickOkay", js.undefined)
+      inline def setFloatingNull: Self = StObject.set(x, "floating", null)
       
-      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
       
-      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setOnMenuClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMenuClick", js.Any.fromFunction1(value))
       
-      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnMenuClickUndefined: Self = StObject.set(x, "onMenuClick", js.undefined)
       
-      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnMenuKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onMenuKeyDown", js.Any.fromFunction1(value))
       
-      inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnMenuKeyDownUndefined: Self = StObject.set(x, "onMenuKeyDown", js.undefined)
       
-      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnToggleClick(value: MouseEvent[ToggleEl, NativeMouseEvent] => Unit): Self = StObject.set(x, "onToggleClick", js.Any.fromFunction1(value))
       
-      inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+      inline def setOnToggleClickUndefined: Self = StObject.set(x, "onToggleClick", js.undefined)
       
-      inline def setPortalled(value: Boolean): Self = StObject.set(x, "portalled", value.asInstanceOf[js.Any])
+      inline def setOnToggleKeyDown(value: KeyboardEvent[ToggleEl] => Unit): Self = StObject.set(x, "onToggleKeyDown", js.Any.fromFunction1(value))
       
-      inline def setPortalledUndefined: Self = StObject.set(x, "portalled", js.undefined)
+      inline def setOnToggleKeyDownUndefined: Self = StObject.set(x, "onToggleKeyDown", js.undefined)
       
-      inline def setRef(value: Ref[HTMLDivElement | Null]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setOnToggleMouseEnter(value: MouseEvent[ToggleEl, NativeMouseEvent] => Unit): Self = StObject.set(x, "onToggleMouseEnter", js.Any.fromFunction1(value))
       
-      inline def setRefFunction1(value: /* instance */ (HTMLDivElement | Null) | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setOnToggleMouseEnterUndefined: Self = StObject.set(x, "onToggleMouseEnter", js.undefined)
       
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setOnToggleMouseLeave(value: MouseEvent[ToggleEl, NativeMouseEvent] => Unit): Self = StObject.set(x, "onToggleMouseLeave", js.Any.fromFunction1(value))
       
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
-      
-      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setOnToggleMouseLeaveUndefined: Self = StObject.set(x, "onToggleMouseLeave", js.undefined)
     }
   }
   
-  /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLDivElement>, 'onClick' | 'onKeyDown'> */
-  @js.native
-  trait ReturnValue extends StObject {
+  trait MenuHookReturnValue[ToggleEl /* <: HTMLElement */]
+    extends StObject
+       with BaseMenuHookReturnValue {
     
-    var menuRef: MutableRefObject[HTMLDivElement | Null] = js.native
+    /**
+      * An object of props that must be provided to the toggle element for the
+      * visibility functionality of menus to work.
+      *
+      * @see {@link ProvidedMenuToggleProps}
+      */
+    var toggleProps: ProvidedMenuToggleProps[ToggleEl]
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    /**
+      * A ref that **must** be passed to the toggle element if the toggle should be
+      * refocused when the menu is closed via a keyboard press. This can also be
+      * used if you need access to the toggle element's DOM node for some reason.
+      */
+    var toggleRef: MutableRefObject[ToggleEl | Null]
+  }
+  object MenuHookReturnValue {
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    inline def apply[ToggleEl /* <: HTMLElement */](
+      menuNodeRef: RefObject[HTMLDivElement],
+      menuProps: ProvidedMenuProps,
+      toggleProps: ProvidedMenuToggleProps[ToggleEl],
+      toggleRef: MutableRefObject[ToggleEl | Null]
+    ): MenuHookReturnValue[ToggleEl] = {
+      val __obj = js.Dynamic.literal(menuNodeRef = menuNodeRef.asInstanceOf[js.Any], menuProps = menuProps.asInstanceOf[js.Any], toggleProps = toggleProps.asInstanceOf[js.Any], toggleRef = toggleRef.asInstanceOf[js.Any], menuRef = null)
+      __obj.asInstanceOf[MenuHookReturnValue[ToggleEl]]
+    }
     
-    def ref(): Unit = js.native
-    def ref(instance: HTMLDivElement): Unit = js.native
+    extension [Self <: MenuHookReturnValue[?], ToggleEl /* <: HTMLElement */](x: Self & MenuHookReturnValue[ToggleEl]) {
+      
+      inline def setToggleProps(value: ProvidedMenuToggleProps[ToggleEl]): Self = StObject.set(x, "toggleProps", value.asInstanceOf[js.Any])
+      
+      inline def setToggleRef(value: MutableRefObject[ToggleEl | Null]): Self = StObject.set(x, "toggleRef", value.asInstanceOf[js.Any])
+    }
   }
 }

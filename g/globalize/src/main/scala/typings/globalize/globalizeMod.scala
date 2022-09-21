@@ -20,7 +20,6 @@ import typings.globalize.globalizeStrings.round
 import typings.globalize.globalizeStrings.short
 import typings.globalize.globalizeStrings.symbol
 import typings.globalize.globalizeStrings.truncate
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +33,7 @@ object globalizeMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Shared {
     /**
@@ -309,6 +308,70 @@ object globalizeMod extends Shortcut {
   
   type Globalize = Shared
   
+  trait NumberFormatPart extends StObject {
+    
+    var `type`: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+    
+    var value: String
+  }
+  object NumberFormatPart {
+    
+    inline def apply(
+      `type`: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes,
+      value: String
+    ): NumberFormatPart = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NumberFormatPart]
+    }
+    
+    extension [Self <: NumberFormatPart](x: Self) {
+      
+      inline def setType(value: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.globalize.globalizeStrings.decimal
+    - typings.globalize.globalizeStrings.fraction
+    - typings.globalize.globalizeStrings.group
+    - typings.globalize.globalizeStrings.infinity
+    - typings.globalize.globalizeStrings.integer
+    - typings.globalize.globalizeStrings.literal
+    - typings.globalize.globalizeStrings.minusSign
+    - typings.globalize.globalizeStrings.nan
+    - typings.globalize.globalizeStrings.plusSign
+    - typings.globalize.globalizeStrings.percentSign
+    - typings.globalize.globalizeStrings.compact
+  */
+  trait NumberFormatPartTypes extends StObject
+  object NumberFormatPartTypes {
+    
+    inline def compact: typings.globalize.globalizeStrings.compact = "compact".asInstanceOf[typings.globalize.globalizeStrings.compact]
+    
+    inline def decimal: typings.globalize.globalizeStrings.decimal = "decimal".asInstanceOf[typings.globalize.globalizeStrings.decimal]
+    
+    inline def fraction: typings.globalize.globalizeStrings.fraction = "fraction".asInstanceOf[typings.globalize.globalizeStrings.fraction]
+    
+    inline def group: typings.globalize.globalizeStrings.group = "group".asInstanceOf[typings.globalize.globalizeStrings.group]
+    
+    inline def infinity: typings.globalize.globalizeStrings.infinity = "infinity".asInstanceOf[typings.globalize.globalizeStrings.infinity]
+    
+    inline def integer: typings.globalize.globalizeStrings.integer = "integer".asInstanceOf[typings.globalize.globalizeStrings.integer]
+    
+    inline def literal: typings.globalize.globalizeStrings.literal = "literal".asInstanceOf[typings.globalize.globalizeStrings.literal]
+    
+    inline def minusSign: typings.globalize.globalizeStrings.minusSign = "minusSign".asInstanceOf[typings.globalize.globalizeStrings.minusSign]
+    
+    inline def nan: typings.globalize.globalizeStrings.nan = "nan".asInstanceOf[typings.globalize.globalizeStrings.nan]
+    
+    inline def percentSign: typings.globalize.globalizeStrings.percentSign = "percentSign".asInstanceOf[typings.globalize.globalizeStrings.percentSign]
+    
+    inline def plusSign: typings.globalize.globalizeStrings.plusSign = "plusSign".asInstanceOf[typings.globalize.globalizeStrings.plusSign]
+  }
+  
   trait NumberFormatterOptions
     extends StObject
        with CommonNumberFormatterOptions
@@ -410,12 +473,12 @@ object globalizeMod extends Shortcut {
       * @param {DateFormatterOptions} options see date/expand_pattern for more info.
       * @returns {Function} Return a function that formats a date according to the given `options` and the default/instance locale.
       */
-    def dateFormatter(): js.Function1[/* value */ Date, String] = js.native
-    def dateFormatter(options: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatterOptions): js.Function1[/* value */ Date, String] = js.native
+    def dateFormatter(): js.Function1[/* value */ js.Date, String] = js.native
+    def dateFormatter(options: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatterOptions): js.Function1[/* value */ js.Date, String] = js.native
     
     //Return a function that parses a string representing a date into a JavaScript Date object according to the given options. The default parsing assumes numeric year, month, and day (i.e., { skeleton: "yMd" }).
-    def dateParser(): js.Function1[/* value */ String, Date] = js.native
-    def dateParser(options: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatterOptions): js.Function1[/* value */ String, Date] = js.native
+    def dateParser(): js.Function1[/* value */ String, js.Date] = js.native
+    def dateParser(options: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatterOptions): js.Function1[/* value */ String, js.Date] = js.native
     
     /**
       * .dateToPartsFormatter( options )
@@ -423,11 +486,11 @@ object globalizeMod extends Shortcut {
       * @returns {Function} Return a function that formats a date into parts tokens according to the given options. The default formatting is numeric year, month, and day (i.e., `{ skeleton: "yMd" }`).
       */
     def dateToPartsFormatter(): js.Function1[
-        /* value */ Date, 
+        /* value */ js.Date, 
         js.Array[typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPart]
       ] = js.native
     def dateToPartsFormatter(options: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatterOptions): js.Function1[
-        /* value */ Date, 
+        /* value */ js.Date, 
         js.Array[typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPart]
       ] = js.native
     
@@ -446,16 +509,16 @@ object globalizeMod extends Shortcut {
     ): String = js.native
     
     //Alias for .dateFormatter( [options] )( value ).
-    def formatDate(value: Date): String = js.native
+    def formatDate(value: js.Date): String = js.native
     def formatDate(
-      value: Date,
+      value: js.Date,
       options: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatterOptions
     ): String = js.native
     
     //Alias for .dateToPartsFormatter( [options] )( value ).
-    def formatDateToParts(value: Date): js.Array[typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPart] = js.native
+    def formatDateToParts(value: js.Date): js.Array[typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPart] = js.native
     def formatDateToParts(
-      value: Date,
+      value: js.Date,
       options: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatterOptions
     ): js.Array[typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPart] = js.native
     
@@ -491,6 +554,13 @@ object globalizeMod extends Shortcut {
       value: Double,
       options: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatterOptions
     ): String = js.native
+    
+    // Alias for .numberToPartsFormatter( [options] )( value ).
+    def formatNumberToParts(value: Double): js.Array[typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPart] = js.native
+    def formatNumberToParts(
+      value: Double,
+      options: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatterOptions
+    ): js.Array[typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPart] = js.native
     
     /**
       * Return a relative time according to the given unit
@@ -552,16 +622,36 @@ object globalizeMod extends Shortcut {
     def numberParser(options: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberParserOptions): js.Function1[/* value */ String, Double] = js.native
     
     /**
+      * Return a function that formats a number into parts tokens according to the given options.
+      * @param {NumberFormatterOptions} options A JSON object including none or any of the following options.
+      * style Optional String decimal (default), or percent.
+      * minimumIntegerDigits Optional Non-negative integer Number value indicating the minimum integer digits to be used. Numbers will be padded with leading zeroes if necessary.
+      * minimumFractionDigits and maximumFractionDigits Optional Non-negative integer Number values indicating the minimum and maximum fraction digits to be used. Numbers will be rounded or padded with trailing zeroes if necessary. Either one or both of these properties must be present. If they are, they will override minimum and maximum fraction digits derived from the CLDR patterns.
+      * minimumSignificantDigits and maximumSignificantDigits Optional Positive integer Number values indicating the minimum and maximum fraction digits to be shown. Either none or both of these properties are present. If they are, they override minimum and maximum integer and fraction digits. The formatter uses however many integer and fraction digits are required to display the specified number of significant digits.
+      * round Optional String with rounding method ceil, floor, round (default), or truncate.
+      * useGrouping Optional Boolean (default is true) value indicating whether a grouping separator should be used.
+      * @returns {Function} Return a function that formats a number into parts tokens according to the given options.
+      */
+    def numberToPartsFormatter(): js.Function1[
+        /* value */ Double, 
+        js.Array[typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPart]
+      ] = js.native
+    def numberToPartsFormatter(options: typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatterOptions): js.Function1[
+        /* value */ Double, 
+        js.Array[typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPart]
+      ] = js.native
+    
+    /**
       * Alias for .dateParser( [options] )( value ).
       * @param {string} value The object whose module id you wish to determine.
       * @param {DateFormatterOptions} options The object whose module id you wish to determine.
       * @returns {Date} Return the value as a Date.
       */
-    def parseDate(value: String): Date = js.native
+    def parseDate(value: String): js.Date = js.native
     def parseDate(
       value: String,
       options: typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatterOptions
-    ): Date = js.native
+    ): js.Date = js.native
     
     /**
       * A function that parses a string representing a number according to the given options or locale's defaults.
@@ -709,7 +799,7 @@ object globalizeMod extends Shortcut {
       * numberFormatter: [Function] a number formatter function. Defaults to Globalize .numberFormatter() for the current locale using the default options.
       */
     var numberFormatter: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ Any
       ] = js.undefined
   }
   object UnitFormatterOptions {
@@ -726,7 +816,7 @@ object globalizeMod extends Shortcut {
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
       inline def setNumberFormatter(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberFormatterOptions */ Any
       ): Self = StObject.set(x, "numberFormatter", value.asInstanceOf[js.Any])
       
       inline def setNumberFormatterUndefined: Self = StObject.set(x, "numberFormatter", js.undefined)

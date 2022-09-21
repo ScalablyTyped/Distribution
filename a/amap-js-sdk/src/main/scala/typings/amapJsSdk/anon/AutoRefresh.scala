@@ -55,6 +55,6 @@ object AutoRefresh {
     
     inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
     
-    inline def setZoomsVarargs(value: Double*): Self = StObject.set(x, "zooms", js.Array(value :_*))
+    inline def setZoomsVarargs(value: Double*): Self = StObject.set(x, "zooms", js.Array(value*))
   }
 }

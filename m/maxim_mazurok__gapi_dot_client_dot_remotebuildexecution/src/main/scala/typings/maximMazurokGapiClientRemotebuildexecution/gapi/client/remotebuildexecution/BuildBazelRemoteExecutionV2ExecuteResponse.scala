@@ -24,7 +24,7 @@ trait BuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
   var serverLogs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile}
-    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -59,7 +59,7 @@ object BuildBazelRemoteExecutionV2ExecuteResponse {
     inline def setServerLogs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[Any]
     ): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
     
     inline def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)

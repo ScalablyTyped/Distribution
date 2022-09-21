@@ -1,6 +1,5 @@
 package typings.micro
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,12 +34,18 @@ object anon {
   /* Inlined std.Error & {  statusCode :number,   originalError :std.Error | undefined} */
   trait ErrorstatusCodenumberorig extends StObject {
     
+    /* standard es2022.error */
+    var cause: js.UndefOr[Any] = js.undefined
+    
+    /* standard es5 */
     var message: String
     
+    /* standard es5 */
     var name: String
     
-    var originalError: js.UndefOr[Error] = js.undefined
+    var originalError: js.UndefOr[js.Error] = js.undefined
     
+    /* standard es5 */
     var stack: js.UndefOr[String] = js.undefined
     
     var statusCode: Double
@@ -54,11 +59,15 @@ object anon {
     
     extension [Self <: ErrorstatusCodenumberorig](x: Self) {
       
+      inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+      
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
+      inline def setOriginalError(value: js.Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
       
       inline def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
       

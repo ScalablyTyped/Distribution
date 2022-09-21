@@ -2,13 +2,13 @@ package typings.passportOauth2
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.oauth.mod.OAuth2
+import typings.passport.mod.global.Express.User
 import typings.passportOauth2.passportOauth2Booleans.`false`
 import typings.passportOauth2.passportOauth2Booleans.`true`
 import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,14 +17,14 @@ object mod {
   
   @JSImport("passport-oauth2", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StObject {
+  open class ^ protected () extends StObject {
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
   }
   
   @JSImport("passport-oauth2", "AuthorizationError")
   @js.native
-  class AuthorizationError protected ()
+  open class AuthorizationError protected ()
     extends StObject
        with Error {
     def this(message: String, code: String) = this()
@@ -38,9 +38,11 @@ object mod {
     
     var code: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -51,18 +53,20 @@ object mod {
   
   @JSImport("passport-oauth2", "InternalOAuthError")
   @js.native
-  class InternalOAuthError protected ()
+  open class InternalOAuthError protected ()
     extends StObject
        with Error {
-    def this(message: String, err: js.Any) = this()
+    def this(message: String, err: Any) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    var oauthError: js.Any = js.native
+    var oauthError: Any = js.native
   }
   
   @JSImport("passport-oauth2", "Strategy")
@@ -73,13 +77,13 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("passport-oauth2", "Strategy")
   @js.native
-  class StrategyCls protected () extends StObject {
+  open class StrategyCls protected () extends StObject {
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
   }
   
   @JSImport("passport-oauth2", "TokenError")
   @js.native
-  class TokenError protected ()
+  open class TokenError protected ()
     extends StObject
        with Error {
     def this(message: String, code: String) = this()
@@ -93,9 +97,11 @@ object mod {
     
     var code: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -139,49 +145,93 @@ object mod {
       */
     /* protected */ var _oauth2: OAuth2 = js.native
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Any): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: Any
+    ): Unit = js.native
     
-    def authorizationParams(options: js.Any): js.Object = js.native
+    def authorizationParams(options: Any): js.Object = js.native
     
     var name: String = js.native
     
-    def parseErrorResponse(body: js.Any, status: Double): Error | Null = js.native
+    def parseErrorResponse(body: Any, status: Double): js.Error | Null = js.native
     
-    def tokenParams(options: js.Any): js.Object = js.native
+    def tokenParams(options: Any): js.Object = js.native
     
     def userProfile(
       accessToken: String,
-      done: js.Function2[/* err */ js.UndefOr[Error | Null], /* profile */ js.UndefOr[js.Any], Unit]
+      done: js.Function2[/* err */ js.UndefOr[js.Error | Null], /* profile */ js.UndefOr[Any], Unit]
     ): Unit = js.native
   }
   
   @js.native
   trait StateStore extends StObject {
     
-    def store(req: Request_[ParamsDictionary, js.Any, js.Any, Query], callback: StateStoreStoreCallback): Unit = js.native
     def store(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      callback: StateStoreStoreCallback
+    ): Unit = js.native
+    def store(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       meta: Metadata,
       callback: StateStoreStoreCallback
     ): Unit = js.native
     
     def verify(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       state: String,
       callback: StateStoreVerifyCallback
     ): Unit = js.native
     def verify(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       state: String,
       meta: Metadata,
       callback: StateStoreVerifyCallback
     ): Unit = js.native
   }
   
-  type StateStoreStoreCallback = js.Function2[/* err */ Error | Null, /* state */ js.Any, Unit]
+  type StateStoreStoreCallback = js.Function2[/* err */ js.Error | Null, /* state */ Any, Unit]
   
-  type StateStoreVerifyCallback = js.Function3[/* err */ Error, /* ok */ Boolean, /* state */ js.Any, Unit]
+  type StateStoreVerifyCallback = js.Function3[/* err */ js.Error, /* ok */ Boolean, /* state */ Any, Unit]
   
   trait StrategyOptions
     extends StObject
@@ -218,7 +268,7 @@ object mod {
     
     var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.undefined
+    var proxy: js.UndefOr[Any] = js.undefined
     
     var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -226,9 +276,9 @@ object mod {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
+    var skipUserProfile: js.UndefOr[Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var store: js.UndefOr[StateStore] = js.undefined
     
@@ -261,7 +311,7 @@ object mod {
       
       inline def setPkceUndefined: Self = StObject.set(x, "pkce", js.undefined)
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
@@ -273,17 +323,17 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setSkipUserProfile(value: js.Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
+      inline def setSkipUserProfile(value: Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
       
       inline def setSkipUserProfileUndefined: Self = StObject.set(x, "skipUserProfile", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -315,8 +365,8 @@ object mod {
   }
   
   type VerifyCallback = js.Function3[
-    /* err */ js.UndefOr[Error | Null], 
-    /* user */ js.UndefOr[js.Object], 
+    /* err */ js.UndefOr[js.Error | Null], 
+    /* user */ js.UndefOr[User], 
     /* info */ js.UndefOr[js.Object], 
     Unit
   ]
@@ -324,31 +374,43 @@ object mod {
   type VerifyFunction = (js.Function4[
     /* accessToken */ String, 
     /* refreshToken */ String, 
-    /* profile */ js.Any, 
+    /* profile */ Any, 
     /* verified */ VerifyCallback, 
     Unit
   ]) | (js.Function5[
     /* accessToken */ String, 
     /* refreshToken */ String, 
-    /* results */ js.Any, 
-    /* profile */ js.Any, 
+    /* results */ Any, 
+    /* profile */ Any, 
     /* verified */ VerifyCallback, 
     Unit
   ])
   
   type VerifyFunctionWithRequest = (js.Function5[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
-    /* profile */ js.Any, 
+    /* profile */ Any, 
     /* verified */ VerifyCallback, 
     Unit
   ]) | (js.Function6[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
-    /* results */ js.Any, 
-    /* profile */ js.Any, 
+    /* results */ Any, 
+    /* profile */ Any, 
     /* verified */ VerifyCallback, 
     Unit
   ])

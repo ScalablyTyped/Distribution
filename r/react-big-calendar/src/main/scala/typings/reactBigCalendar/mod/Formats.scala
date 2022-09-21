@@ -1,6 +1,5 @@
 package typings.reactBigCalendar.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,7 +90,7 @@ object Formats {
     inline def setAgendaDateFormat(value: DateFormat): Self = StObject.set(x, "agendaDateFormat", value.asInstanceOf[js.Any])
     
     inline def setAgendaDateFormatFunction3(
-      value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
+      value: (/* date */ js.Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "agendaDateFormat", js.Any.fromFunction3(value))
     
     inline def setAgendaDateFormatUndefined: Self = StObject.set(x, "agendaDateFormat", js.undefined)
@@ -105,7 +104,7 @@ object Formats {
     inline def setAgendaTimeFormat(value: DateFormat): Self = StObject.set(x, "agendaTimeFormat", value.asInstanceOf[js.Any])
     
     inline def setAgendaTimeFormatFunction3(
-      value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
+      value: (/* date */ js.Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "agendaTimeFormat", js.Any.fromFunction3(value))
     
     inline def setAgendaTimeFormatUndefined: Self = StObject.set(x, "agendaTimeFormat", js.undefined)
@@ -119,7 +118,7 @@ object Formats {
     inline def setDateFormat(value: DateFormat): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     inline def setDateFormatFunction3(
-      value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
+      value: (/* date */ js.Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "dateFormat", js.Any.fromFunction3(value))
     
     inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
@@ -127,7 +126,7 @@ object Formats {
     inline def setDayFormat(value: DateFormat): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
     
     inline def setDayFormatFunction3(
-      value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
+      value: (/* date */ js.Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "dayFormat", js.Any.fromFunction3(value))
     
     inline def setDayFormatUndefined: Self = StObject.set(x, "dayFormat", js.undefined)
@@ -135,7 +134,7 @@ object Formats {
     inline def setDayHeaderFormat(value: DateFormat): Self = StObject.set(x, "dayHeaderFormat", value.asInstanceOf[js.Any])
     
     inline def setDayHeaderFormatFunction3(
-      value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
+      value: (/* date */ js.Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "dayHeaderFormat", js.Any.fromFunction3(value))
     
     inline def setDayHeaderFormatUndefined: Self = StObject.set(x, "dayHeaderFormat", js.undefined)
@@ -167,7 +166,7 @@ object Formats {
     inline def setMonthHeaderFormat(value: DateFormat): Self = StObject.set(x, "monthHeaderFormat", value.asInstanceOf[js.Any])
     
     inline def setMonthHeaderFormatFunction3(
-      value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
+      value: (/* date */ js.Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "monthHeaderFormat", js.Any.fromFunction3(value))
     
     inline def setMonthHeaderFormatUndefined: Self = StObject.set(x, "monthHeaderFormat", js.undefined)
@@ -181,7 +180,7 @@ object Formats {
     inline def setTimeGutterFormat(value: DateFormat): Self = StObject.set(x, "timeGutterFormat", value.asInstanceOf[js.Any])
     
     inline def setTimeGutterFormatFunction3(
-      value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
+      value: (/* date */ js.Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "timeGutterFormat", js.Any.fromFunction3(value))
     
     inline def setTimeGutterFormatUndefined: Self = StObject.set(x, "timeGutterFormat", js.undefined)
@@ -189,7 +188,7 @@ object Formats {
     inline def setWeekdayFormat(value: DateFormat): Self = StObject.set(x, "weekdayFormat", value.asInstanceOf[js.Any])
     
     inline def setWeekdayFormatFunction3(
-      value: (/* date */ Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
+      value: (/* date */ js.Date, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String
     ): Self = StObject.set(x, "weekdayFormat", js.Any.fromFunction3(value))
     
     inline def setWeekdayFormatUndefined: Self = StObject.set(x, "weekdayFormat", js.undefined)

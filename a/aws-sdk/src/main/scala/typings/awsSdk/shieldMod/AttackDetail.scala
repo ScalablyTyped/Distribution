@@ -17,14 +17,14 @@ trait AttackDetail extends StObject {
   var AttackId: js.UndefOr[typings.awsSdk.shieldMod.AttackId] = js.undefined
   
   /**
-    * The array of AttackProperty objects.
+    * The array of objects that provide details of the Shield event.  For infrastructure layer events (L3 and L4 events), you can view metrics for top contributors in Amazon CloudWatch metrics. For more information, see Shield metrics and alarms in the WAF Developer Guide. 
     */
   var AttackProperties: js.UndefOr[typings.awsSdk.shieldMod.AttackProperties] = js.undefined
   
   /**
-    * The time the attack ended, in Unix time in seconds. For more information see timestamp.
+    * The time the attack ended, in Unix time in seconds. 
     */
-  var EndTime: js.UndefOr[AttackTimestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * List of mitigation actions taken for the attack.
@@ -37,9 +37,9 @@ trait AttackDetail extends StObject {
   var ResourceArn: js.UndefOr[typings.awsSdk.shieldMod.ResourceArn] = js.undefined
   
   /**
-    * The time the attack started, in Unix time in seconds. For more information see timestamp.
+    * The time the attack started, in Unix time in seconds. 
     */
-  var StartTime: js.UndefOr[AttackTimestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If applicable, additional detail about the resource being attacked, for example, IP address or URL.
@@ -59,7 +59,7 @@ object AttackDetail {
     
     inline def setAttackCountersUndefined: Self = StObject.set(x, "AttackCounters", js.undefined)
     
-    inline def setAttackCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "AttackCounters", js.Array(value :_*))
+    inline def setAttackCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "AttackCounters", js.Array(value*))
     
     inline def setAttackId(value: AttackId): Self = StObject.set(x, "AttackId", value.asInstanceOf[js.Any])
     
@@ -69,9 +69,9 @@ object AttackDetail {
     
     inline def setAttackPropertiesUndefined: Self = StObject.set(x, "AttackProperties", js.undefined)
     
-    inline def setAttackPropertiesVarargs(value: AttackProperty*): Self = StObject.set(x, "AttackProperties", js.Array(value :_*))
+    inline def setAttackPropertiesVarargs(value: AttackProperty*): Self = StObject.set(x, "AttackProperties", js.Array(value*))
     
-    inline def setEndTime(value: AttackTimestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -79,13 +79,13 @@ object AttackDetail {
     
     inline def setMitigationsUndefined: Self = StObject.set(x, "Mitigations", js.undefined)
     
-    inline def setMitigationsVarargs(value: Mitigation*): Self = StObject.set(x, "Mitigations", js.Array(value :_*))
+    inline def setMitigationsVarargs(value: Mitigation*): Self = StObject.set(x, "Mitigations", js.Array(value*))
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
-    inline def setStartTime(value: AttackTimestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -93,6 +93,6 @@ object AttackDetail {
     
     inline def setSubResourcesUndefined: Self = StObject.set(x, "SubResources", js.undefined)
     
-    inline def setSubResourcesVarargs(value: SubResourceSummary*): Self = StObject.set(x, "SubResources", js.Array(value :_*))
+    inline def setSubResourcesVarargs(value: SubResourceSummary*): Self = StObject.set(x, "SubResources", js.Array(value*))
   }
 }

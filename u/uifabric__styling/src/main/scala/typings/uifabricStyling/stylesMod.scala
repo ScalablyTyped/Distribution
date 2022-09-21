@@ -1,5 +1,6 @@
 package typings.uifabricStyling
 
+import typings.fluentuiMergeStyles.irawstylebaseMod.IFontWeight
 import typings.fluentuiTheme.ianimationstylesMod.IAnimationStyles
 import typings.fluentuiTheme.ianimationstylesMod.IAnimationVariables
 import typings.fluentuiTheme.ieffectsMod.IEffects
@@ -11,7 +12,6 @@ import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.fluentuiTheme.themeMod.PartialTheme
 import typings.fluentuiTheme.themeMod.Theme
 import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
-import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames
 import typings.uifabricStyling.igetfocusstylesMod.IGetFocusStylesOptions
@@ -54,7 +54,7 @@ object stylesMod {
   
   @JSImport("@uifabric/styling/lib/styles", "EdgeChromiumHighContrastSelector")
   @js.native
-  val EdgeChromiumHighContrastSelector: /* "@media screen and (forced-colors: active)" */ String = js.native
+  val EdgeChromiumHighContrastSelector: /* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String = js.native
   
   object FontSizes {
     
@@ -184,15 +184,15 @@ object stylesMod {
   
   @JSImport("@uifabric/styling/lib/styles", "HighContrastSelector")
   @js.native
-  val HighContrastSelector: /* "@media screen and (-ms-high-contrast: active)" */ String = js.native
+  val HighContrastSelector: /* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String = js.native
   
   @JSImport("@uifabric/styling/lib/styles", "HighContrastSelectorBlack")
   @js.native
-  val HighContrastSelectorBlack: /* "@media screen and (-ms-high-contrast: white-on-black)" */ String = js.native
+  val HighContrastSelectorBlack: /* "@media screen and (-ms-high-contrast: white-on-black), screen and (forced-colors: active) and (prefers-color-scheme: dark)" */ String = js.native
   
   @JSImport("@uifabric/styling/lib/styles", "HighContrastSelectorWhite")
   @js.native
-  val HighContrastSelectorWhite: /* "@media screen and (-ms-high-contrast: black-on-white)" */ String = js.native
+  val HighContrastSelectorWhite: /* "@media screen and (-ms-high-contrast: black-on-white), screen and (forced-colors: active) and (prefers-color-scheme: light)" */ String = js.native
   
   object IconFontSizes {
     
@@ -364,7 +364,7 @@ object stylesMod {
   inline def getFadedOverflowStyle(
     theme: ITheme,
     color: js.UndefOr[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154 */ Any
     ],
     direction: js.UndefOr[horizontal | vertical],
     width: js.UndefOr[String | Double],
@@ -395,24 +395,33 @@ object stylesMod {
   inline def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): GlobalClassNames[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[GlobalClassNames[T]]
   inline def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): GlobalClassNames[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], disableGlobalClassNames.asInstanceOf[js.Any])).asInstanceOf[GlobalClassNames[T]]
   
+  inline def getHighContrastNoAdjustStyle(): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getHighContrastNoAdjustStyle")().asInstanceOf[IRawStyle]
+  
   inline def getInputFocusStyle(borderColor: String, borderRadius: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(borderColor: String, borderRadius: String, borderType: border | borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(
+    borderColor: String,
+    borderRadius: String,
+    borderType: border | borderBottom,
+    borderPosition: Double
+  ): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   inline def getInputFocusStyle(borderColor: String, borderRadius: String, borderType: Unit, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   inline def getInputFocusStyle(borderColor: String, borderRadius: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(borderColor: String, borderRadius: Double, borderType: border | borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(
+    borderColor: String,
+    borderRadius: Double,
+    borderType: border | borderBottom,
+    borderPosition: Double
+  ): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   inline def getInputFocusStyle(borderColor: String, borderRadius: Double, borderType: Unit, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
-  
-  inline def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
-  inline def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
-  inline def getInputFocusStyle_border(borderColor: String, borderRadius: Double, borderType: border): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
-  inline def getInputFocusStyle_border(borderColor: String, borderRadius: Double, borderType: border, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
-  
-  inline def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: String, borderType: borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
-  inline def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: String, borderType: borderBottom, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
-  inline def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: Double, borderType: borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
-  inline def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: Double, borderType: borderBottom, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
   inline def getPlaceholderStyles(styles: IStyle): IStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholderStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[IStyle]
   
+  inline def getScreenSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")().asInstanceOf[String]
+  inline def getScreenSelector(min: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getScreenSelector(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getScreenSelector(min: Unit, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getTheme(): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[ITheme]
   inline def getTheme(depComments: Boolean): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(depComments.asInstanceOf[js.Any]).asInstanceOf[ITheme]

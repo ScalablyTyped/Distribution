@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Scoping extends StObject {
   
   /**
-    * The property- or tag-based conditions that determine which objects to exclude from the analysis.
+    * The property- and tag-based conditions that determine which objects to exclude from the analysis.
     */
   var excludes: js.UndefOr[JobScopingBlock] = js.undefined
   
   /**
-    * The property- or tag-based conditions that determine which objects to include in the analysis.
+    * The property- and tag-based conditions that determine which objects to include in the analysis.
     */
   var includes: js.UndefOr[JobScopingBlock] = js.undefined
 }

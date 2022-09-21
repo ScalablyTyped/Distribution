@@ -1,6 +1,7 @@
 package typings.reactMdForm
 
 import typings.react.mod.FocusEvent
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLLabelElement
@@ -40,11 +41,11 @@ object useFocusStateMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setOnBlur(value: FocusEvent[FocusElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[FocusElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[FocusElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[FocusElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     }

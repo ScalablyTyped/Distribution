@@ -1,8 +1,8 @@
 package typings.autolinker
 
+import typings.autolinker.abstractMatchMod.AbstractMatchConfig
 import typings.autolinker.emailMatchMod.EmailMatchConfig
 import typings.autolinker.hashtagMatchMod.HashtagMatchConfig
-import typings.autolinker.matchMatchMod.MatchConfig
 import typings.autolinker.mentionMatchMod.MentionMatchConfig
 import typings.autolinker.phoneMatchMod.PhoneMatchConfig
 import typings.autolinker.urlMatchMod.UrlMatchConfig
@@ -12,9 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object matchMod {
   
+  @JSImport("autolinker/dist/commonjs/match", "AbstractMatch")
+  @js.native
+  abstract class AbstractMatch protected ()
+    extends typings.autolinker.abstractMatchMod.AbstractMatch {
+    /**
+      * @member Autolinker.match.Match
+      * @method constructor
+      * @param {Object} cfg The configuration properties for the Match
+      *   instance, specified in an Object (map).
+      */
+    def this(cfg: AbstractMatchConfig) = this()
+  }
+  
   @JSImport("autolinker/dist/commonjs/match", "EmailMatch")
   @js.native
-  class EmailMatch protected ()
+  open class EmailMatch protected ()
     extends typings.autolinker.emailMatchMod.EmailMatch {
     /**
       * @method constructor
@@ -26,7 +39,7 @@ object matchMod {
   
   @JSImport("autolinker/dist/commonjs/match", "HashtagMatch")
   @js.native
-  class HashtagMatch protected ()
+  open class HashtagMatch protected ()
     extends typings.autolinker.hashtagMatchMod.HashtagMatch {
     /**
       * @method constructor
@@ -36,22 +49,9 @@ object matchMod {
     def this(cfg: HashtagMatchConfig) = this()
   }
   
-  @JSImport("autolinker/dist/commonjs/match", "Match")
-  @js.native
-  abstract class Match protected ()
-    extends typings.autolinker.matchMatchMod.Match {
-    /**
-      * @member Autolinker.match.Match
-      * @method constructor
-      * @param {Object} cfg The configuration properties for the Match
-      *   instance, specified in an Object (map).
-      */
-    def this(cfg: MatchConfig) = this()
-  }
-  
   @JSImport("autolinker/dist/commonjs/match", "MentionMatch")
   @js.native
-  class MentionMatch protected ()
+  open class MentionMatch protected ()
     extends typings.autolinker.mentionMatchMod.MentionMatch {
     /**
       * @method constructor
@@ -63,7 +63,7 @@ object matchMod {
   
   @JSImport("autolinker/dist/commonjs/match", "PhoneMatch")
   @js.native
-  class PhoneMatch protected ()
+  open class PhoneMatch protected ()
     extends typings.autolinker.phoneMatchMod.PhoneMatch {
     /**
       * @method constructor
@@ -75,7 +75,7 @@ object matchMod {
   
   @JSImport("autolinker/dist/commonjs/match", "UrlMatch")
   @js.native
-  class UrlMatch protected ()
+  open class UrlMatch protected ()
     extends typings.autolinker.urlMatchMod.UrlMatch {
     /**
       * @method constructor

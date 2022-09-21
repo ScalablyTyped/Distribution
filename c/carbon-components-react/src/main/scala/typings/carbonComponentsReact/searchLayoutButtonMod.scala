@@ -11,6 +11,6 @@ object searchLayoutButtonMod {
     */
   @JSImport("carbon-components-react/lib/components/SearchLayoutButton", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.searchLayoutButtonSearchLayoutButtonMod.default
 }

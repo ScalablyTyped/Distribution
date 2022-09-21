@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenLayoutOptionsDialogCommand")
 @js.native
-class OpenLayoutOptionsDialogCommand ()
+open class OpenLayoutOptionsDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenLayoutOptionsDialogCommand {
   

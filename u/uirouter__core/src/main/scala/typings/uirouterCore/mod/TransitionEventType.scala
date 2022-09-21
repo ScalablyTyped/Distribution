@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "TransitionEventType")
 @js.native
-class TransitionEventType protected ()
+open class TransitionEventType protected ()
   extends typings.uirouterCore.transitionMod.TransitionEventType {
   def this(
     name: String,

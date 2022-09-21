@@ -12,7 +12,7 @@ trait DescribeFleetEventsOutput extends StObject {
   var Events: js.UndefOr[EventList] = js.undefined
   
   /**
-    * Token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
+    * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeFleetEventsOutput {
     
     inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

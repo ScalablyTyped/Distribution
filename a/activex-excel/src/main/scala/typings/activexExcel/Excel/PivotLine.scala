@@ -15,7 +15,7 @@ trait PivotLine extends StObject {
   
   val LineType: XlPivotLineType
   
-  val Parent: js.Any
+  val Parent: Any
   
   def PivotLineCells(Index: Double): PivotCell
   @JSName("PivotLineCells")
@@ -30,7 +30,7 @@ object PivotLine {
     Creator: XlCreator,
     ExcelDotPivotLine_typekey: PivotLine,
     LineType: XlPivotLineType,
-    Parent: js.Any,
+    Parent: Any,
     PivotLineCells: PivotLineCells,
     Position: Double
   ): PivotLine = {
@@ -49,7 +49,7 @@ object PivotLine {
     
     inline def setLineType(value: XlPivotLineType): Self = StObject.set(x, "LineType", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPivotLineCells(value: PivotLineCells): Self = StObject.set(x, "PivotLineCells", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GitPullRequestReviewFileContentInfo extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * The file change path.
@@ -20,7 +20,7 @@ trait GitPullRequestReviewFileContentInfo extends StObject {
 }
 object GitPullRequestReviewFileContentInfo {
   
-  inline def apply(_links: js.Any, path: String, sHA1Hash: String): GitPullRequestReviewFileContentInfo = {
+  inline def apply(_links: Any, path: String, sHA1Hash: String): GitPullRequestReviewFileContentInfo = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sHA1Hash = sHA1Hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitPullRequestReviewFileContentInfo]
   }
@@ -31,6 +31,6 @@ object GitPullRequestReviewFileContentInfo {
     
     inline def setSHA1Hash(value: String): Self = StObject.set(x, "sHA1Hash", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

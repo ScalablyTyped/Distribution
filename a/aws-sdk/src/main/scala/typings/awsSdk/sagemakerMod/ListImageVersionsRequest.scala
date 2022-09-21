@@ -9,12 +9,12 @@ trait ListImageVersionsRequest extends StObject {
   /**
     * A filter that returns only versions created on or after the specified time.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only versions created on or before the specified time.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the image to list the versions of.
@@ -24,12 +24,12 @@ trait ListImageVersionsRequest extends StObject {
   /**
     * A filter that returns only versions modified on or after the specified time.
     */
-  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only versions modified on or before the specified time.
     */
-  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of versions to return in the response. The default value is 10. 
@@ -60,21 +60,21 @@ object ListImageVersionsRequest {
   
   extension [Self <: ListImageVersionsRequest](x: Self) {
     
-    inline def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
     inline def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTimeAfter(value: Timestamp): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeAfter(value: js.Date): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeAfterUndefined: Self = StObject.set(x, "LastModifiedTimeAfter", js.undefined)
     
-    inline def setLastModifiedTimeBefore(value: Timestamp): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeBefore(value: js.Date): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeBeforeUndefined: Self = StObject.set(x, "LastModifiedTimeBefore", js.undefined)
     

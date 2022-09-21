@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "RemoteCallbacks")
 @js.native
-class RemoteCallbacks ()
+open class RemoteCallbacks ()
   extends typings.nodegit.remoteCallbacksMod.RemoteCallbacks

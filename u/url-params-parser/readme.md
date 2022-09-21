@@ -10,15 +10,12 @@ Url parser to extract named and query params
 | ------------------ | :-------------: |
 | Full name          | url-params-parser |
 | Keywords           | url, parser, pathname, named params, query params |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 8567 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3545.6666666666665 |
+| # stars            | 17.0 |
 
 ## Links
-- [Homepage](https://github.com/jorgegorka/url-params-parser/blob/master/README.md)
-- [Bugs](https://github.com/jorgegorka/url-params-parser/issues)
-- [Repository](https://github.com/jorgegorka/url-params-parser)
 - [Npm](https://www.npmjs.com/package/url-params-parser)
     
 

@@ -67,7 +67,7 @@ object RangyClassApplierOptions {
     
     inline def setTagNamesUndefined: Self = StObject.set(x, "tagNames", js.undefined)
     
-    inline def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value :_*))
+    inline def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value*))
     
     inline def setUseExistingElements(value: Boolean): Self = StObject.set(x, "useExistingElements", value.asInstanceOf[js.Any])
     

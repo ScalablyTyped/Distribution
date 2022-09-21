@@ -24,6 +24,6 @@ object SigningGroupInformation {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: SigningGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SigningGroup*): Self = StObject.set(x, "groups", js.Array(value*))
   }
 }

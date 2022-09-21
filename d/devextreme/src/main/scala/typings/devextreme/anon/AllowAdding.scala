@@ -6,18 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AllowAdding extends StObject {
   
+  /**
+    * Specifies whether or not an end-user can add appointments.
+    */
   var allowAdding: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether or not an end-user can delete appointments.
+    */
   var allowDeleting: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether users can drag and drop appointments.
+    */
   var allowDragging: js.UndefOr[Boolean] = js.undefined
   
-  var allowEditingTimeZones: js.UndefOr[Boolean] = js.undefined
-  
+  /**
+    * Specifies whether or not an end-user can change an appointment duration.
+    */
   var allowResizing: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether users can edit appointment time zones.
+    */
   var allowTimeZoneEditing: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether or not an end-user can change appointment properties.
+    */
   var allowUpdating: js.UndefOr[Boolean] = js.undefined
 }
 object AllowAdding {
@@ -40,10 +56,6 @@ object AllowAdding {
     inline def setAllowDragging(value: Boolean): Self = StObject.set(x, "allowDragging", value.asInstanceOf[js.Any])
     
     inline def setAllowDraggingUndefined: Self = StObject.set(x, "allowDragging", js.undefined)
-    
-    inline def setAllowEditingTimeZones(value: Boolean): Self = StObject.set(x, "allowEditingTimeZones", value.asInstanceOf[js.Any])
-    
-    inline def setAllowEditingTimeZonesUndefined: Self = StObject.set(x, "allowEditingTimeZones", js.undefined)
     
     inline def setAllowResizing(value: Boolean): Self = StObject.set(x, "allowResizing", value.asInstanceOf[js.Any])
     

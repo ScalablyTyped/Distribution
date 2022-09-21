@@ -10,10 +10,10 @@ Typings are for version 1.1.0
 | ------------------ | :-------------: |
 | Full name          | react-sortable-pane |
 | Keywords           | React |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 69433 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3713.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-sortable-pane)

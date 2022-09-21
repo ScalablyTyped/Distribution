@@ -21,7 +21,7 @@ trait XLinkFactory
     * @param ClassName the class name of the new object
     * @param xStorage a parent storage the entry should be created in
     * @param sEntryName a name for the entry
-    * @param aArgs {@link com.sun.star.document.MediaDescriptor} that contains source for the link
+    * @param aArgs The {@link com.sun.star.document.MediaDescriptor} that contains source for the link
     * @param aObjectArgs optional parameters for the object persistence initialization see also {@link com.sun.star.embed.EmbeddedObjectDescriptor}
     * @throws com::sun::star::lang::IllegalArgumentException one of arguments is illegal
     * @throws com::sun::star::io::IOException in case of io problems during opening or creation
@@ -41,7 +41,7 @@ object XLinkFactory {
   inline def apply(
     acquire: () => Unit,
     createInstanceLinkUserInit: (SeqEquiv[Double], String, XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLinkFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceLinkUserInit = js.Any.fromFunction6(createInstanceLinkUserInit), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

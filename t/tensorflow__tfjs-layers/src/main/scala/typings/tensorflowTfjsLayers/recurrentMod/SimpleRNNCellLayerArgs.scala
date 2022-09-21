@@ -45,6 +45,11 @@ trait SimpleRNNCellLayerArgs
   var dropout: js.UndefOr[Double] = js.undefined
   
   /**
+    * This is added for test DI purpose.
+    */
+  var dropoutFunc: js.UndefOr[js.Function] = js.undefined
+  
+  /**
     * Constraint function applied to the `kernel` weights matrix.
     */
   var kernelConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
@@ -118,6 +123,10 @@ object SimpleRNNCellLayerArgs {
     inline def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
     
     inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+    
+    inline def setDropoutFunc(value: js.Function): Self = StObject.set(x, "dropoutFunc", value.asInstanceOf[js.Any])
+    
+    inline def setDropoutFuncUndefined: Self = StObject.set(x, "dropoutFunc", js.undefined)
     
     inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
     

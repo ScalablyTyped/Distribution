@@ -1,22 +1,28 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.dockerode.anon.Endpointid
+import typings.dockerode.anon.Password
+import typings.dockerode.dockerodeStrings.cfssl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Callback[T] = js.Function2[/* error */ js.UndefOr[js.Any], /* result */ js.UndefOr[T], scala.Unit]
+type Callback[T] = js.Function2[/* error */ js.UndefOr[Any], /* result */ js.UndefOr[T], Unit]
 
-type Duration = scala.Double
+type Duration = Double
 
-type EndpointsConfig = org.scalablytyped.runtime.StringDictionary[typings.dockerode.mod.EndpointSettings]
+type EndpointsConfig = StringDictionary[EndpointSettings]
 
-type ExternalCAProtocol = typings.dockerode.dockerodeStrings.cfssl | java.lang.String
+type ExternalCAProtocol = cfssl | String
 
-type MountConfig = js.Array[typings.dockerode.mod.MountSettings]
+type MountConfig = js.Array[MountSettings]
 
-type NetworkStats = org.scalablytyped.runtime.StringDictionary[typings.dockerode.anon.Rxbytes]
+type NetworkStats = StringDictionary[Endpointid]
 
-type PluginInspectInfo = typings.dockerode.mod.PluginInfo
+type PluginInspectInfo = PluginInfo
 
-type PortMap = org.scalablytyped.runtime.StringDictionary[js.Array[typings.dockerode.mod.PortBinding]]
+type PortMap = StringDictionary[js.Array[PortBinding]]
+
+type RegistryConfig = StringDictionary[Password]

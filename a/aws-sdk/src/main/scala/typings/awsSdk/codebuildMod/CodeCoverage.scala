@@ -24,7 +24,7 @@ trait CodeCoverage extends StObject {
   /**
     * The date and time that the tests were run.
     */
-  var expired: js.UndefOr[Timestamp] = js.undefined
+  var expired: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The path of the test report file.
@@ -77,7 +77,7 @@ object CodeCoverage {
     
     inline def setBranchesMissedUndefined: Self = StObject.set(x, "branchesMissed", js.undefined)
     
-    inline def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+    inline def setExpired(value: js.Date): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
     inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     

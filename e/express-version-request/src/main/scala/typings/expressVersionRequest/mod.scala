@@ -27,7 +27,10 @@ object mod {
   inline def setVersionByQueryParam(queryParam: String, options: SetVersionByQueryParamOptions): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("setVersionByQueryParam")(queryParam.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
   inline def setVersionByQueryParam(queryParam: Unit, options: SetVersionByQueryParamOptions): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("setVersionByQueryParam")(queryParam.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
-  type CustomParsingFunction = js.Function1[/* header */ js.UndefOr[String], String]
+  type CustomParsingFunction = js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : string}['accept'] */ /* header */ js.Any, 
+    String
+  ]
   
   trait SetVersionByQueryParamOptions extends StObject {
     

@@ -21,6 +21,6 @@ object TimelineRecordsUpdatedEvent {
     
     inline def setTimelineRecords(value: js.Array[TimelineRecord]): Self = StObject.set(x, "timelineRecords", value.asInstanceOf[js.Any])
     
-    inline def setTimelineRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "timelineRecords", js.Array(value :_*))
+    inline def setTimelineRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "timelineRecords", js.Array(value*))
   }
 }

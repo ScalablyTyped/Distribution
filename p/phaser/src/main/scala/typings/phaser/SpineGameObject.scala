@@ -5,6 +5,9 @@ import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Data.DataManager
 import typings.phaser.Phaser.GameObjects.Components.TransformMatrix
 import typings.phaser.Phaser.GameObjects.Container
+import typings.phaser.Phaser.GameObjects.DisplayList
+import typings.phaser.Phaser.GameObjects.Layer
+import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Physics.Arcade.Body
 import typings.phaser.Phaser.Physics.Arcade.StaticBody
 import typings.phaser.Phaser.Scene
@@ -12,6 +15,9 @@ import typings.phaser.Phaser.Types.GameObjects.JSONGameObject
 import typings.phaser.Phaser.Types.Input.HitAreaCallback
 import typings.phaser.Phaser.Types.Input.InputConfiguration
 import typings.phaser.Phaser.Types.Input.InteractiveObject
+import typings.phaser.Phaser.Types.Math.Vector2Like
+import typings.phaser.Phaser.Types.Math.Vector3Like
+import typings.phaser.Phaser.Types.Math.Vector4Like
 import typings.phaser.spine.Animation
 import typings.phaser.spine.AnimationState
 import typings.phaser.spine.AnimationStateData
@@ -47,10 +53,10 @@ trait SpineGameObject extends StObject {
     */
   var active: Boolean = js.native
   
-  def addAnimation(trackIndex: integer, animationName: String): TrackEntry = js.native
-  def addAnimation(trackIndex: integer, animationName: String, loop: Boolean): TrackEntry = js.native
-  def addAnimation(trackIndex: integer, animationName: String, loop: Boolean, delay: integer): TrackEntry = js.native
-  def addAnimation(trackIndex: integer, animationName: String, loop: Unit, delay: integer): TrackEntry = js.native
+  def addAnimation(trackIndex: Double, animationName: String): TrackEntry = js.native
+  def addAnimation(trackIndex: Double, animationName: String, loop: Boolean): TrackEntry = js.native
+  def addAnimation(trackIndex: Double, animationName: String, loop: Boolean, delay: Double): TrackEntry = js.native
+  def addAnimation(trackIndex: Double, animationName: String, loop: Unit, delay: Double): TrackEntry = js.native
   
   /**
     * Add a listener for a given event.
@@ -59,13 +65,56 @@ trait SpineGameObject extends StObject {
     * @param context The context to invoke the listener with. Default this.
     */
   def addListener(event: String, fn: js.Function): this.type = js.native
-  def addListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
+  def addListener(event: String, fn: js.Function, context: Any): this.type = js.native
   def addListener(event: js.Symbol, fn: js.Function): this.type = js.native
-  def addListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  def addListener(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
+  
+  /**
+    * Adds this Game Object to the given Display List.
+    * 
+    * If no Display List is specified, it will default to the Display List owned by the Scene to which
+    * this Game Object belongs.
+    * 
+    * A Game Object can only exist on one Display List at any given time, but may move freely between them.
+    * 
+    * If this Game Object is already on another Display List when this method is called, it will first
+    * be removed from it, before being added to the new list.
+    * 
+    * You can query which list it is on by looking at the `Phaser.GameObjects.GameObject#displayList` property.
+    * 
+    * If a Game Object isn't on any display list, it will not be rendered. If you just wish to temporarly
+    * disable it from rendering, consider using the `setVisible` method, instead.
+    * @param displayList The Display List to add to. Defaults to the Scene Display List.
+    */
+  def addToDisplayList(): this.type = js.native
+  def addToDisplayList(displayList: DisplayList): this.type = js.native
+  def addToDisplayList(displayList: Layer): this.type = js.native
+  
+  /**
+    * Adds this Game Object to the Update List belonging to the Scene.
+    * 
+    * When a Game Object is added to the Update List it will have its `preUpdate` method called
+    * every game frame. This method is passed two parameters: `delta` and `time`.
+    * 
+    * If you wish to run your own logic within `preUpdate` then you should always call
+    * `preUpdate.super(delta, time)` within it, or it may fail to process required operations,
+    * such as Sprite animations.
+    */
+  def addToUpdateList(): this.type = js.native
+  
+  /**
+    * This callback is invoked when this Game Object is added to a Scene.
+    * 
+    * Can be overriden by custom Game Objects, but be aware of some Game Objects that
+    * will use this, such as Sprites, to add themselves into the Update List.
+    * 
+    * You can also listen for the `ADDED_TO_SCENE` event from this Game Object.
+    */
+  def addedToScene(): Unit = js.native
   
   var alpha: Double = js.native
   
-  var angle: integer = js.native
+  var angle: Double = js.native
   
   def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double): SpineGameObject = js.native
   def angleBoneToXY(bone: Bone, worldX: Double, worldY: Double, offset: Double): SpineGameObject = js.native
@@ -85,7 +134,7 @@ trait SpineGameObject extends StObject {
     */
   var body: Body | StaticBody | BodyType = js.native
   
-  var bounds: js.Any = js.native
+  var bounds: Any = js.native
   
   /**
     * A bitmask that controls if this Game Object is drawn by a Camera or not.
@@ -94,9 +143,17 @@ trait SpineGameObject extends StObject {
     */
   var cameraFilter: Double = js.native
   
-  def clearTrack(trackIndex: integer): SpineGameObject = js.native
+  def clearTrack(trackIndex: Double): SpineGameObject = js.native
   
   def clearTracks(): SpineGameObject = js.native
+  
+  /**
+    * Copies an object's coordinates to this Game Object's position.
+    * @param source An object with numeric 'x', 'y', 'z', or 'w' properties. Undefined values are not copied.
+    */
+  def copyPosition(source: Vector2Like): this.type = js.native
+  def copyPosition(source: Vector3Like): this.type = js.native
+  def copyPosition(source: Vector4Like): this.type = js.native
   
   /**
     * A Data Manager.
@@ -119,7 +176,7 @@ trait SpineGameObject extends StObject {
     * 
     * If you just want to temporarily disable an object then look at using the
     * Game Object Pool instead of destroying it, as destroyed objects cannot be resurrected.
-    * @param fromScene Is this Game Object being destroyed as the result of a Scene shutdown? Default false.
+    * @param fromScene `True` if this Game Object is being destroyed by the Scene, `false` if not. Default false.
     */
   def destroy(): Unit = js.native
   def destroy(fromScene: Boolean): Unit = js.native
@@ -137,6 +194,15 @@ trait SpineGameObject extends StObject {
   
   var displayHeight: Double = js.native
   
+  /**
+    * Holds a reference to the Display List that contains this Game Object.
+    * 
+    * This is set automatically when this Game Object is added to a Scene or Layer.
+    * 
+    * You should treat this property as being read-only.
+    */
+  var displayList: DisplayList | Layer = js.native
+  
   var displayOriginX: Double = js.native
   
   var displayOriginY: Double = js.native
@@ -150,8 +216,8 @@ trait SpineGameObject extends StObject {
     * @param event The event name.
     * @param args Additional arguments that will be passed to the event handler.
     */
-  def emit(event: String, args: js.Any*): Boolean = js.native
-  def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+  def emit(event: String, args: Any*): Boolean = js.native
+  def emit(event: js.Symbol, args: Any*): Boolean = js.native
   
   /**
     * Return an array listing the events for which the emitter has registered listeners.
@@ -186,16 +252,16 @@ trait SpineGameObject extends StObject {
   
   def getAnimationList(): js.Array[String] = js.native
   
-  def getAttachment(slotIndex: integer, attachmentName: String): Attachment = js.native
+  def getAttachment(slotIndex: Double, attachmentName: String): Attachment = js.native
   
   def getAttachmentByName(slotName: String, attachmentName: String): Attachment = js.native
   
   def getBoneList(): js.Array[String] = js.native
   
-  def getBounds(): js.Any = js.native
+  def getBounds(): Any = js.native
   
   def getCurrentAnimation(): Animation = js.native
-  def getCurrentAnimation(trackIndex: integer): Animation = js.native
+  def getCurrentAnimation(trackIndex: Double): Animation = js.native
   
   /**
     * Retrieves the value for the given key in this Game Objects Data Manager, or undefined if it doesn't exist.
@@ -221,8 +287,8 @@ trait SpineGameObject extends StObject {
     * This approach is useful for destructuring arrays in ES6.
     * @param key The key of the value to retrieve, or an array of keys.
     */
-  def getData(key: String): js.Any = js.native
-  def getData(key: js.Array[String]): js.Any = js.native
+  def getData(key: String): Any = js.native
+  def getData(key: js.Array[String]): Any = js.native
   
   /**
     * Returns an array containing the display list index of either this Game Object, or if it has one,
@@ -232,7 +298,26 @@ trait SpineGameObject extends StObject {
     * Used internally by the InputPlugin but also useful if you wish to find out the display depth of
     * this Game Object and all of its ancestors.
     */
-  def getIndexList(): js.Array[integer] = js.native
+  def getIndexList(): js.Array[Double] = js.native
+  
+  /**
+    * Takes the given `x` and `y` coordinates and converts them into local space for this
+    * Game Object, taking into account parent and local transforms, and the Display Origin.
+    * 
+    * The returned Vector2 contains the translated point in its properties.
+    * 
+    * A Camera needs to be provided in order to handle modified scroll factors. If no
+    * camera is specified, it will use the `main` camera from the Scene to which this
+    * Game Object belongs.
+    * @param x The x position to translate.
+    * @param y The y position to translate.
+    * @param point A Vector2, or point-like object, to store the results in.
+    * @param camera The Camera which is being tested against. If not given will use the Scene default camera.
+    */
+  def getLocalPoint(x: Double, y: Double): Vector2 = js.native
+  def getLocalPoint(x: Double, y: Double, point: Unit, camera: Camera): Vector2 = js.native
+  def getLocalPoint(x: Double, y: Double, point: Vector2): Vector2 = js.native
+  def getLocalPoint(x: Double, y: Double, point: Vector2, camera: Camera): Vector2 = js.native
   
   def getLocalTransformMatrix(): TransformMatrix = js.native
   def getLocalTransformMatrix(tempMatrix: TransformMatrix): TransformMatrix = js.native
@@ -275,9 +360,9 @@ trait SpineGameObject extends StObject {
     * @param data The value to increase for the given key.
     */
   def incData(key: String): this.type = js.native
-  def incData(key: String, data: js.Any): this.type = js.native
+  def incData(key: String, data: Any): this.type = js.native
   def incData(key: js.Object): this.type = js.native
-  def incData(key: js.Object, data: js.Any): this.type = js.native
+  def incData(key: js.Object, data: Any): this.type = js.native
   
   /**
     * If this Game Object is enabled for input then this property will contain an InteractiveObject instance.
@@ -314,19 +399,19 @@ trait SpineGameObject extends StObject {
     */
   def off(event: String): this.type = js.native
   def off(event: String, fn: js.Function): this.type = js.native
-  def off(event: String, fn: js.Function, context: js.Any): this.type = js.native
-  def off(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  def off(event: String, fn: js.Function, context: Any): this.type = js.native
+  def off(event: String, fn: js.Function, context: Any, once: Boolean): this.type = js.native
   def off(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
-  def off(event: String, fn: Unit, context: js.Any): this.type = js.native
-  def off(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+  def off(event: String, fn: Unit, context: Any): this.type = js.native
+  def off(event: String, fn: Unit, context: Any, once: Boolean): this.type = js.native
   def off(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
   def off(event: js.Symbol): this.type = js.native
   def off(event: js.Symbol, fn: js.Function): this.type = js.native
-  def off(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
-  def off(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  def off(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
+  def off(event: js.Symbol, fn: js.Function, context: Any, once: Boolean): this.type = js.native
   def off(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
-  def off(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
-  def off(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+  def off(event: js.Symbol, fn: Unit, context: Any): this.type = js.native
+  def off(event: js.Symbol, fn: Unit, context: Any, once: Boolean): this.type = js.native
   def off(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
   
   /**
@@ -336,9 +421,9 @@ trait SpineGameObject extends StObject {
     * @param context The context to invoke the listener with. Default this.
     */
   def on(event: String, fn: js.Function): this.type = js.native
-  def on(event: String, fn: js.Function, context: js.Any): this.type = js.native
+  def on(event: String, fn: js.Function, context: Any): this.type = js.native
   def on(event: js.Symbol, fn: js.Function): this.type = js.native
-  def on(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  def on(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
   
   /**
     * Add a one-time listener for a given event.
@@ -347,9 +432,9 @@ trait SpineGameObject extends StObject {
     * @param context The context to invoke the listener with. Default this.
     */
   def once(event: String, fn: js.Function): this.type = js.native
-  def once(event: String, fn: js.Function, context: js.Any): this.type = js.native
+  def once(event: String, fn: js.Function, context: Any): this.type = js.native
   def once(event: js.Symbol, fn: js.Function): this.type = js.native
-  def once(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  def once(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
   
   /**
     * The parent Container of this Game Object, if it has one.
@@ -382,6 +467,31 @@ trait SpineGameObject extends StObject {
   def removeAllListeners(event: js.Symbol): this.type = js.native
   
   /**
+    * Removes this Game Object from the Display List it is currently on.
+    * 
+    * A Game Object can only exist on one Display List at any given time, but may move freely removed
+    * and added back at a later stage.
+    * 
+    * You can query which list it is on by looking at the `Phaser.GameObjects.GameObject#displayList` property.
+    * 
+    * If a Game Object isn't on any Display List, it will not be rendered. If you just wish to temporarly
+    * disable it from rendering, consider using the `setVisible` method, instead.
+    */
+  def removeFromDisplayList(): this.type = js.native
+  
+  /**
+    * Removes this Game Object from the Scene's Update List.
+    * 
+    * When a Game Object is on the Update List, it will have its `preUpdate` method called
+    * every game frame. Calling this method will remove it from the list, preventing this.
+    * 
+    * Removing a Game Object from the Update List will stop most internal functions working.
+    * For example, removing a Sprite from the Update List will prevent it from being able to
+    * run animations.
+    */
+  def removeFromUpdateList(): this.type = js.native
+  
+  /**
     * If this Game Object has previously been enabled for input, this will queue it
     * for removal, causing it to no longer be interactive. The removal happens on
     * the next game step, it is not immediate.
@@ -412,27 +522,37 @@ trait SpineGameObject extends StObject {
     */
   def removeListener(event: String): this.type = js.native
   def removeListener(event: String, fn: js.Function): this.type = js.native
-  def removeListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
-  def removeListener(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  def removeListener(event: String, fn: js.Function, context: Any): this.type = js.native
+  def removeListener(event: String, fn: js.Function, context: Any, once: Boolean): this.type = js.native
   def removeListener(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
-  def removeListener(event: String, fn: Unit, context: js.Any): this.type = js.native
-  def removeListener(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+  def removeListener(event: String, fn: Unit, context: Any): this.type = js.native
+  def removeListener(event: String, fn: Unit, context: Any, once: Boolean): this.type = js.native
   def removeListener(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.Function, context: Any): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.Function, context: Any, once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
-  def removeListener(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
-  def removeListener(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+  def removeListener(event: js.Symbol, fn: Unit, context: Any): this.type = js.native
+  def removeListener(event: js.Symbol, fn: Unit, context: Any, once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
+  
+  /**
+    * This callback is invoked when this Game Object is removed from a Scene.
+    * 
+    * Can be overriden by custom Game Objects, but be aware of some Game Objects that
+    * will use this, such as Sprites, to removed themselves from the Update List.
+    * 
+    * You can also listen for the `REMOVED_FROM_SCENE` event from this Game Object.
+    */
+  def removedFromScene(): Unit = js.native
   
   /**
     * The flags that are compared against `RENDER_MASK` to determine if this Game Object will render or not.
     * The bits are 0001 | 0010 | 0100 | 1000 set by the components Visible, Alpha, Transform and Texture respectively.
     * If those components are not used by your custom class then you can use this bitmask as you wish.
     */
-  var renderFlags: integer = js.native
+  var renderFlags: Double = js.native
   
   def resetFlip(): this.type = js.native
   
@@ -447,10 +567,14 @@ trait SpineGameObject extends StObject {
   var scaleY: Double = js.native
   
   /**
-    * The Scene to which this Game Object belongs.
+    * A reference to the Scene to which this Game Object belongs.
+    * 
     * Game Objects can only belong to one Scene.
+    * 
+    * You should consider this property as being read-only. You cannot move a
+    * Game Object to another Scene by simply changing it.
     */
-  /* protected */ var scene: Scene = js.native
+  var scene: Scene = js.native
   
   var scrollFactorX: Double = js.native
   
@@ -469,19 +593,19 @@ trait SpineGameObject extends StObject {
   def setAngle(): this.type = js.native
   def setAngle(degrees: Double): this.type = js.native
   
-  def setAnimation(trackIndex: integer, animationName: String): TrackEntry = js.native
-  def setAnimation(trackIndex: integer, animationName: String, loop: Boolean): TrackEntry = js.native
-  def setAnimation(trackIndex: integer, animationName: String, loop: Boolean, ignoreIfPlaying: Boolean): TrackEntry = js.native
-  def setAnimation(trackIndex: integer, animationName: String, loop: Unit, ignoreIfPlaying: Boolean): TrackEntry = js.native
+  def setAnimation(trackIndex: Double, animationName: String): TrackEntry = js.native
+  def setAnimation(trackIndex: Double, animationName: String, loop: Boolean): TrackEntry = js.native
+  def setAnimation(trackIndex: Double, animationName: String, loop: Boolean, ignoreIfPlaying: Boolean): TrackEntry = js.native
+  def setAnimation(trackIndex: Double, animationName: String, loop: Unit, ignoreIfPlaying: Boolean): TrackEntry = js.native
   
   def setAttachment(slotName: String, attachmentName: String): SpineGameObject = js.native
   
   def setBonesToSetupPose(): SpineGameObject = js.native
   
   def setColor(): SpineGameObject = js.native
+  def setColor(color: Double): SpineGameObject = js.native
+  def setColor(color: Double, slotName: String): SpineGameObject = js.native
   def setColor(color: Unit, slotName: String): SpineGameObject = js.native
-  def setColor(color: integer): SpineGameObject = js.native
-  def setColor(color: integer, slotName: String): SpineGameObject = js.native
   
   /**
     * Allows you to store a key value pair within this Game Objects Data Manager.
@@ -525,23 +649,23 @@ trait SpineGameObject extends StObject {
     * @param data The value to set for the given key. If an object is provided as the key this argument is ignored.
     */
   def setData(key: String): this.type = js.native
-  def setData(key: String, data: js.Any): this.type = js.native
+  def setData(key: String, data: Any): this.type = js.native
   def setData(key: js.Object): this.type = js.native
-  def setData(key: js.Object, data: js.Any): this.type = js.native
+  def setData(key: js.Object, data: Any): this.type = js.native
   
   /**
     * Adds a Data Manager component to this Game Object.
     */
   def setDataEnabled(): this.type = js.native
   
-  def setDepth(value: integer): this.type = js.native
+  def setDepth(value: Double): this.type = js.native
   
   def setDisplaySize(width: Double, height: Double): this.type = js.native
   @JSName("setDisplaySize")
   var setDisplaySize_Original: js.Function2[/* width */ Double, /* height */ Double, this.type] = js.native
   
-  def setEmptyAnimation(trackIndex: integer): TrackEntry = js.native
-  def setEmptyAnimation(trackIndex: integer, mixDuration: integer): TrackEntry = js.native
+  def setEmptyAnimation(trackIndex: Double): TrackEntry = js.native
+  def setEmptyAnimation(trackIndex: Double, mixDuration: Double): TrackEntry = js.native
   
   def setFlip(x: Boolean, y: Boolean): this.type = js.native
   
@@ -561,22 +685,22 @@ trait SpineGameObject extends StObject {
     * shape for it to use.
     * 
     * You can also provide an Input Configuration Object as the only argument to this method.
-    * @param shape Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
-    * @param callback A callback to be invoked when the Game Object is interacted with. If you provide a shape you must also provide a callback.
+    * @param hitArea Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not given it will try to create a Rectangle based on the texture frame.
+    * @param callback The callback that determines if the pointer is within the Hit Area shape or not. If you provide a shape you must also provide a callback.
     * @param dropZone Should this Game Object be treated as a drop zone target? Default false.
     */
   def setInteractive(): this.type = js.native
-  def setInteractive(shape: js.Any): this.type = js.native
-  def setInteractive(shape: js.Any, callback: Unit, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: js.Any, callback: HitAreaCallback): this.type = js.native
-  def setInteractive(shape: js.Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: Unit, callback: Unit, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: Unit, callback: HitAreaCallback): this.type = js.native
-  def setInteractive(shape: Unit, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: InputConfiguration): this.type = js.native
-  def setInteractive(shape: InputConfiguration, callback: Unit, dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
-  def setInteractive(shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: Any): this.type = js.native
+  def setInteractive(hitArea: Any, callback: Unit, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: Any, callback: HitAreaCallback): this.type = js.native
+  def setInteractive(hitArea: Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: Unit, callback: Unit, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: Unit, callback: HitAreaCallback): this.type = js.native
+  def setInteractive(hitArea: Unit, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: InputConfiguration): this.type = js.native
+  def setInteractive(hitArea: InputConfiguration, callback: Unit, dropZone: Boolean): this.type = js.native
+  def setInteractive(hitArea: InputConfiguration, callback: HitAreaCallback): this.type = js.native
+  def setInteractive(hitArea: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   
   def setMix(fromName: String, toName: String): SpineGameObject = js.native
   def setMix(fromName: String, toName: String, duration: Double): SpineGameObject = js.native
@@ -681,7 +805,7 @@ trait SpineGameObject extends StObject {
     * If you need to store complex data about your Game Object, look at using the Data Component instead.
     * @param value The state of the Game Object.
     */
-  def setState(value: integer): this.type = js.native
+  def setState(value: Double): this.type = js.native
   
   def setToSetupPose(): SpineGameObject = js.native
   
@@ -717,7 +841,7 @@ trait SpineGameObject extends StObject {
     * The Tab Index of the Game Object.
     * Reserved for future use by plugins and the Input Manager.
     */
-  var tabIndex: integer = js.native
+  var tabIndex: Double = js.native
   
   var timeScale: Double = js.native
   
@@ -754,7 +878,7 @@ trait SpineGameObject extends StObject {
     * To be overridden by custom GameObjects. Allows base objects to be used in a Pool.
     * @param args args
     */
-  def update(args: js.Any*): Unit = js.native
+  def update(args: Any*): Unit = js.native
   
   def updateSize(): SpineGameObject = js.native
   

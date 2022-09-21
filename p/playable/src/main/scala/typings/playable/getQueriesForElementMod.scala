@@ -11,6 +11,6 @@ object getQueriesForElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(element: HTMLElement): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  inline def default(element: HTMLElement, prefix: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def default(element: HTMLElement): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  inline def default(element: HTMLElement, prefix: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
 }

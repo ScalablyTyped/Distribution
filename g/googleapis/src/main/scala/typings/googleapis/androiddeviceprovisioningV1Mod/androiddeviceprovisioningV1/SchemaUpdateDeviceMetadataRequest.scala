@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to set metadata for a device.
-  */
 trait SchemaUpdateDeviceMetadataRequest extends StObject {
   
   /**
-    * Required. The metdata to attach to the device.
+    * Required. The metadata to attach to the device.
     */
   var deviceMetadata: js.UndefOr[SchemaDeviceMetadata] = js.undefined
 }

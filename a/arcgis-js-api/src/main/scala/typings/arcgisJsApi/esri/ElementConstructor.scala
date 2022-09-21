@@ -17,5 +17,5 @@ trait ElementConstructor
 Instantiable0[Element]
      with Instantiable1[/* properties */ ElementProperties, Element] {
   
-  def fromJSON(json: js.Any): Element = js.native
+  def fromJSON(json: Any): Element = js.native
 }

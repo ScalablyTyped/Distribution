@@ -14,7 +14,7 @@ trait DailyVolume extends StObject {
   /**
     * The date that the DailyVolume metrics apply to, in Unix time.
     */
-  var StartDate: js.UndefOr[Timestamp] = js.undefined
+  var StartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An object that contains inbox placement metrics for a specific day in the analysis period.
@@ -34,9 +34,9 @@ object DailyVolume {
     
     inline def setDomainIspPlacementsUndefined: Self = StObject.set(x, "DomainIspPlacements", js.undefined)
     
-    inline def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value :_*))
+    inline def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value*))
     
-    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     

@@ -22,6 +22,6 @@ object DidChangeWatchedFilesRegistrationOptions {
     
     inline def setWatchers(value: js.Array[FileSystemWatcher]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
     
-    inline def setWatchersVarargs(value: FileSystemWatcher*): Self = StObject.set(x, "watchers", js.Array(value :_*))
+    inline def setWatchersVarargs(value: FileSystemWatcher*): Self = StObject.set(x, "watchers", js.Array(value*))
   }
 }

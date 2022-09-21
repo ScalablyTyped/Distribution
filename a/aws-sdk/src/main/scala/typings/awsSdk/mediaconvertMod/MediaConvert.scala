@@ -113,6 +113,20 @@ trait MediaConvert extends Service {
   ): Request[DeleteJobTemplateResponse, AWSError] = js.native
   
   /**
+    * Permanently delete a policy that you created.
+    */
+  def deletePolicy(): Request[DeletePolicyResponse, AWSError] = js.native
+  def deletePolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeletePolicyResponse, Unit]): Request[DeletePolicyResponse, AWSError] = js.native
+  /**
+    * Permanently delete a policy that you created.
+    */
+  def deletePolicy(params: DeletePolicyRequest): Request[DeletePolicyResponse, AWSError] = js.native
+  def deletePolicy(
+    params: DeletePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePolicyResponse, Unit]
+  ): Request[DeletePolicyResponse, AWSError] = js.native
+  
+  /**
     * Permanently delete a preset you have created.
     */
   def deletePreset(): Request[DeletePresetResponse, AWSError] = js.native
@@ -192,6 +206,20 @@ trait MediaConvert extends Service {
     params: GetJobTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetJobTemplateResponse, Unit]
   ): Request[GetJobTemplateResponse, AWSError] = js.native
+  
+  /**
+    * Retrieve the JSON for your policy.
+    */
+  def getPolicy(): Request[GetPolicyResponse, AWSError] = js.native
+  def getPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyResponse, Unit]): Request[GetPolicyResponse, AWSError] = js.native
+  /**
+    * Retrieve the JSON for your policy.
+    */
+  def getPolicy(params: GetPolicyRequest): Request[GetPolicyResponse, AWSError] = js.native
+  def getPolicy(
+    params: GetPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyResponse, Unit]
+  ): Request[GetPolicyResponse, AWSError] = js.native
   
   /**
     * Retrieve the JSON for a specific preset.
@@ -290,6 +318,20 @@ trait MediaConvert extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Create or change your policy. For more information about policies, see the user guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+    */
+  def putPolicy(): Request[PutPolicyResponse, AWSError] = js.native
+  def putPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutPolicyResponse, Unit]): Request[PutPolicyResponse, AWSError] = js.native
+  /**
+    * Create or change your policy. For more information about policies, see the user guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+    */
+  def putPolicy(params: PutPolicyRequest): Request[PutPolicyResponse, AWSError] = js.native
+  def putPolicy(
+    params: PutPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutPolicyResponse, Unit]
+  ): Request[PutPolicyResponse, AWSError] = js.native
   
   /**
     * Add tags to a MediaConvert queue, preset, or job template. For information about tagging, see the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/tagging-resources.html

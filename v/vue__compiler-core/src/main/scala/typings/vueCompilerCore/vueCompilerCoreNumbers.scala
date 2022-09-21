@@ -1,5 +1,6 @@
 package typings.vueCompilerCore
 
+import typings.vueCompilerCore.mod.ConstantTypes
 import typings.vueCompilerCore.mod.ElementTypes
 import typings.vueCompilerCore.mod.ErrorCodes
 import typings.vueCompilerCore.mod.NodeTypes
@@ -13,6 +14,7 @@ object vueCompilerCoreNumbers {
   @js.native
   sealed trait `0`
     extends StObject
+       with ConstantTypes
        with ElementTypes
        with ErrorCodes
        with NodeTypes
@@ -22,6 +24,7 @@ object vueCompilerCoreNumbers {
   @js.native
   sealed trait `1`
     extends StObject
+       with ConstantTypes
        with ElementTypes
        with ErrorCodes
        with NodeTypes
@@ -101,6 +104,7 @@ object vueCompilerCoreNumbers {
   @js.native
   sealed trait `2`
     extends StObject
+       with ConstantTypes
        with ElementTypes
        with ErrorCodes
        with NodeTypes
@@ -177,6 +181,7 @@ object vueCompilerCoreNumbers {
   @js.native
   sealed trait `3`
     extends StObject
+       with ConstantTypes
        with ElementTypes
        with ErrorCodes
        with NodeTypes
@@ -317,6 +322,12 @@ object vueCompilerCoreNumbers {
        with ErrorCodes
        with NodeTypes
   inline def `5`: `5` = 5.asInstanceOf[`5`]
+  
+  @js.native
+  sealed trait `50`
+    extends StObject
+       with ErrorCodes
+  inline def `50`: `50` = 50.asInstanceOf[`50`]
   
   @js.native
   sealed trait `6`

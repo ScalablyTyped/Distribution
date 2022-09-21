@@ -182,7 +182,7 @@ object Result {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setBaselineState(value: baselineState): Self = StObject.set(x, "baselineState", value.asInstanceOf[js.Any])
     
@@ -192,7 +192,7 @@ object Result {
     
     inline def setCodeFlowsUndefined: Self = StObject.set(x, "codeFlows", js.undefined)
     
-    inline def setCodeFlowsVarargs(value: CodeFlow*): Self = StObject.set(x, "codeFlows", js.Array(value :_*))
+    inline def setCodeFlowsVarargs(value: CodeFlow*): Self = StObject.set(x, "codeFlows", js.Array(value*))
     
     inline def setCorrelationGuid(value: String): Self = StObject.set(x, "correlationGuid", value.asInstanceOf[js.Any])
     
@@ -206,19 +206,19 @@ object Result {
     
     inline def setFixesUndefined: Self = StObject.set(x, "fixes", js.undefined)
     
-    inline def setFixesVarargs(value: Fix*): Self = StObject.set(x, "fixes", js.Array(value :_*))
+    inline def setFixesVarargs(value: Fix*): Self = StObject.set(x, "fixes", js.Array(value*))
     
     inline def setGraphTraversals(value: js.Array[GraphTraversal]): Self = StObject.set(x, "graphTraversals", value.asInstanceOf[js.Any])
     
     inline def setGraphTraversalsUndefined: Self = StObject.set(x, "graphTraversals", js.undefined)
     
-    inline def setGraphTraversalsVarargs(value: GraphTraversal*): Self = StObject.set(x, "graphTraversals", js.Array(value :_*))
+    inline def setGraphTraversalsVarargs(value: GraphTraversal*): Self = StObject.set(x, "graphTraversals", js.Array(value*))
     
     inline def setGraphs(value: js.Array[Graph]): Self = StObject.set(x, "graphs", value.asInstanceOf[js.Any])
     
     inline def setGraphsUndefined: Self = StObject.set(x, "graphs", js.undefined)
     
-    inline def setGraphsVarargs(value: Graph*): Self = StObject.set(x, "graphs", js.Array(value :_*))
+    inline def setGraphsVarargs(value: Graph*): Self = StObject.set(x, "graphs", js.Array(value*))
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
@@ -240,7 +240,7 @@ object Result {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
@@ -268,7 +268,7 @@ object Result {
     
     inline def setRelatedLocationsUndefined: Self = StObject.set(x, "relatedLocations", js.undefined)
     
-    inline def setRelatedLocationsVarargs(value: Location*): Self = StObject.set(x, "relatedLocations", js.Array(value :_*))
+    inline def setRelatedLocationsVarargs(value: Location*): Self = StObject.set(x, "relatedLocations", js.Array(value*))
     
     inline def setRule(value: ReportingDescriptorReference): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
@@ -286,19 +286,19 @@ object Result {
     
     inline def setStacksUndefined: Self = StObject.set(x, "stacks", js.undefined)
     
-    inline def setStacksVarargs(value: Stack*): Self = StObject.set(x, "stacks", js.Array(value :_*))
+    inline def setStacksVarargs(value: Stack*): Self = StObject.set(x, "stacks", js.Array(value*))
     
     inline def setSuppressions(value: js.Array[Suppression]): Self = StObject.set(x, "suppressions", value.asInstanceOf[js.Any])
     
     inline def setSuppressionsUndefined: Self = StObject.set(x, "suppressions", js.undefined)
     
-    inline def setSuppressionsVarargs(value: Suppression*): Self = StObject.set(x, "suppressions", js.Array(value :_*))
+    inline def setSuppressionsVarargs(value: Suppression*): Self = StObject.set(x, "suppressions", js.Array(value*))
     
     inline def setTaxa(value: js.Array[ReportingDescriptorReference]): Self = StObject.set(x, "taxa", value.asInstanceOf[js.Any])
     
     inline def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
     
-    inline def setTaxaVarargs(value: ReportingDescriptorReference*): Self = StObject.set(x, "taxa", js.Array(value :_*))
+    inline def setTaxaVarargs(value: ReportingDescriptorReference*): Self = StObject.set(x, "taxa", js.Array(value*))
     
     inline def setWebRequest(value: WebRequest): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
     
@@ -312,7 +312,7 @@ object Result {
     
     inline def setWorkItemUrisUndefined: Self = StObject.set(x, "workItemUris", js.undefined)
     
-    inline def setWorkItemUrisVarargs(value: String*): Self = StObject.set(x, "workItemUris", js.Array(value :_*))
+    inline def setWorkItemUrisVarargs(value: String*): Self = StObject.set(x, "workItemUris", js.Array(value*))
   }
   
   /* Rewritten from type alias, can be one of: 

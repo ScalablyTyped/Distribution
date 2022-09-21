@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetNotificationChannelResponse extends StObject {
   
   /**
-    * The IAM role that is used by AWS Firewall Manager to record activity to SNS.
+    * The IAM role that is used by Firewall Manager to record activity to SNS.
     */
   var SnsRoleName: js.UndefOr[ResourceArn] = js.undefined
   
   /**
-    * The SNS topic that records AWS Firewall Manager activity. 
+    * The SNS topic that records Firewall Manager activity. 
     */
   var SnsTopicArn: js.UndefOr[ResourceArn] = js.undefined
 }

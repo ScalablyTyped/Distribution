@@ -9,6 +9,7 @@ import typings.tensorflowTfjsLayers.constraintsMod.ConstraintIdentifier
 import typings.tensorflowTfjsLayers.initializersMod.Initializer
 import typings.tensorflowTfjsLayers.initializersMod.InitializerIdentifier
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
+import typings.tensorflowTfjsLayers.kerasFormatCommonMod.InterpolationFormat
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
 import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.regularizersMod.RegularizerIdentifier
@@ -95,7 +96,7 @@ object convolutionalMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv1D")
   @js.native
-  class Conv1D_ protected () extends Conv {
+  open class Conv1D_ protected () extends Conv {
     def this(args: ConvLayerArgs) = this()
   }
   /* static members */
@@ -116,7 +117,7 @@ object convolutionalMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv2DTranspose")
   @js.native
-  class Conv2DTranspose protected () extends Conv2D_ {
+  open class Conv2DTranspose protected () extends Conv2D_ {
     def this(args: ConvLayerArgs) = this()
   }
   /* static members */
@@ -135,7 +136,7 @@ object convolutionalMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv2D")
   @js.native
-  class Conv2D_ protected () extends Conv {
+  open class Conv2D_ protected () extends Conv {
     def this(args: ConvLayerArgs) = this()
   }
   /* static members */
@@ -154,9 +155,28 @@ object convolutionalMod {
     inline def verifyArgs(args: ConvLayerArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyArgs")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv3DTranspose")
+  @js.native
+  open class Conv3DTranspose protected () extends Conv3D_ {
+    def this(args: ConvLayerArgs) = this()
+  }
+  /* static members */
+  object Conv3DTranspose {
+    
+    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv3DTranspose")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /** @nocollapse */
+    @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv3DTranspose.className")
+    @js.native
+    def className: String = js.native
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Conv3D")
   @js.native
-  class Conv3D_ protected () extends Conv {
+  open class Conv3D_ protected () extends Conv {
     def this(args: ConvLayerArgs) = this()
   }
   /* static members */
@@ -177,7 +197,7 @@ object convolutionalMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "Cropping2D")
   @js.native
-  class Cropping2D protected () extends Layer {
+  open class Cropping2D protected () extends Layer {
     def this(args: Cropping2DLayerArgs) = this()
     
     /* protected */ val cropping: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
@@ -200,7 +220,7 @@ object convolutionalMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "SeparableConv")
   @js.native
-  class SeparableConv protected () extends Conv {
+  open class SeparableConv protected () extends Conv {
     def this(rank: Double) = this()
     def this(rank: Double, config: SeparableConvLayerArgs) = this()
     
@@ -242,7 +262,7 @@ object convolutionalMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "SeparableConv2D")
   @js.native
-  class SeparableConv2D () extends SeparableConv {
+  open class SeparableConv2D () extends SeparableConv {
     def this(args: SeparableConvLayerArgs) = this()
   }
   /* static members */
@@ -261,12 +281,14 @@ object convolutionalMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional", "UpSampling2D")
   @js.native
-  class UpSampling2D protected () extends Layer {
+  open class UpSampling2D protected () extends Layer {
     def this(args: UpSampling2DLayerArgs) = this()
     
     /* protected */ val DEFAULT_SIZE: js.Array[Double] = js.native
     
     /* protected */ val dataFormat: DataFormat = js.native
+    
+    /* protected */ val interpolation: InterpolationFormat = js.native
     
     /* protected */ val size: js.Array[Double] = js.native
   }
@@ -1165,7 +1187,7 @@ object convolutionalMod {
       
       inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value*))
       
       inline def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
       
@@ -1181,7 +1203,7 @@ object convolutionalMod {
       
       inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value*))
       
       inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
@@ -1191,7 +1213,7 @@ object convolutionalMod {
       
       inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
       
       inline def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
       
@@ -1375,6 +1397,12 @@ object convolutionalMod {
     var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /**
+      * The interpolation mechanism, one of `"nearest"` or `"bilinear"`, default
+      * to `"nearest"`.
+      */
+    var interpolation: js.UndefOr[InterpolationFormat] = js.undefined
+    
+    /**
       * The upsampling factors for rows and columns.
       *
       * Defaults to `[2, 2]`.
@@ -1394,11 +1422,15 @@ object convolutionalMod {
       
       inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
       
+      inline def setInterpolation(value: InterpolationFormat): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+      
+      inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+      
       inline def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
     }
   }
 }

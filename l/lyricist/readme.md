@@ -10,10 +10,10 @@ Fetches song lyrics using the Genius.com API and website.
 | ------------------ | :-------------: |
 | Full name          | lyricist |
 | Keywords           | lyric, lyrics, scrape, genius |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 9816 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 147.33333333333334 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/scf4/lyricist#readme)

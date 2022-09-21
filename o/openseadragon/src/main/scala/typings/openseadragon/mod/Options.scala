@@ -2,6 +2,7 @@ package typings.openseadragon.mod
 
 import typings.openseadragon.anon.Image
 import typings.openseadragon.anon.Levels
+import typings.openseadragon.anon.Type
 import typings.openseadragon.openseadragonBooleans.`false`
 import typings.openseadragon.openseadragonStrings.ABSOLUTE
 import typings.openseadragon.openseadragonStrings.Anonymous
@@ -178,7 +179,7 @@ trait Options extends StObject {
   
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var overlays: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var overlays: js.UndefOr[js.Array[Any]] = js.undefined
   
   var panHorizontal: js.UndefOr[Boolean] = js.undefined
   
@@ -248,7 +249,9 @@ trait Options extends StObject {
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var tileSources: js.UndefOr[String | (js.Array[String | TileSource]) | TileSourceOptions | Levels | Image] = js.undefined
+  var tileSources: js.UndefOr[
+    String | TileSourceOptions | Levels | Image | (js.Array[String | TileSource | Type])
+  ] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
   
@@ -375,7 +378,7 @@ object Options {
     
     inline def setDebugGridColorUndefined: Self = StObject.set(x, "debugGridColor", js.undefined)
     
-    inline def setDebugGridColorVarargs(value: String*): Self = StObject.set(x, "debugGridColor", js.Array(value :_*))
+    inline def setDebugGridColorVarargs(value: String*): Self = StObject.set(x, "debugGridColor", js.Array(value*))
     
     inline def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
     
@@ -565,11 +568,11 @@ object Options {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setOverlays(value: js.Array[js.Any]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+    inline def setOverlays(value: js.Array[Any]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
     inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
-    inline def setOverlaysVarargs(value: js.Any*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+    inline def setOverlaysVarargs(value: Any*): Self = StObject.set(x, "overlays", js.Array(value*))
     
     inline def setPanHorizontal(value: Boolean): Self = StObject.set(x, "panHorizontal", value.asInstanceOf[js.Any])
     
@@ -707,11 +710,11 @@ object Options {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
-    inline def setTileSources(value: String | (js.Array[String | TileSource]) | TileSourceOptions | Levels | Image): Self = StObject.set(x, "tileSources", value.asInstanceOf[js.Any])
+    inline def setTileSources(value: String | TileSourceOptions | Levels | Image | (js.Array[String | TileSource | Type])): Self = StObject.set(x, "tileSources", value.asInstanceOf[js.Any])
     
     inline def setTileSourcesUndefined: Self = StObject.set(x, "tileSources", js.undefined)
     
-    inline def setTileSourcesVarargs(value: (String | TileSource)*): Self = StObject.set(x, "tileSources", js.Array(value :_*))
+    inline def setTileSourcesVarargs(value: (String | TileSource | Type)*): Self = StObject.set(x, "tileSources", js.Array(value*))
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

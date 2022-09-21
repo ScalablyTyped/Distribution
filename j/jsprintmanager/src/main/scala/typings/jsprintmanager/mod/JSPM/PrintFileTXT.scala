@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsprintmanager", "JSPM.PrintFileTXT")
 @js.native
-class PrintFileTXT protected () extends PrintFile {
+open class PrintFileTXT protected () extends PrintFile {
   def this(fileContent: String, fileName: String) = this()
   def this(fileContent: String, fileName: String, copies: Double) = this()
   

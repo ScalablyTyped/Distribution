@@ -14,40 +14,40 @@ object events {
     
     // Methods
     def addListener(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any = js.native
     @JSName("addListener")
-    var addListener_Original: SinonSpy[js.Array[js.Any], js.Any] = js.native
+    var addListener_Original: SinonSpy[js.Array[Any], Any] = js.native
     
-    def applyTrigger(args: js.Array[js.Any]): Unit = js.native
+    def applyTrigger(args: js.Array[Any]): Unit = js.native
     
-    def applyTriggerAsync(args: js.Array[js.Any]): Unit = js.native
+    def applyTriggerAsync(args: js.Array[Any]): Unit = js.native
     
-    def dispatch(args: js.Any*): Unit = js.native
+    def dispatch(args: Any*): Unit = js.native
     
     // Methods
     def hasListener(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any = js.native
     @JSName("hasListener")
-    var hasListener_Original: SinonSpy[js.Array[js.Any], js.Any] = js.native
+    var hasListener_Original: SinonSpy[js.Array[Any], Any] = js.native
     
     // Methods
     def removeListener(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any = js.native
     @JSName("removeListener")
-    var removeListener_Original: SinonSpy[js.Array[js.Any], js.Any] = js.native
+    var removeListener_Original: SinonSpy[js.Array[Any], Any] = js.native
     
     // Methods
     def removeListeners(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any = js.native
     @JSName("removeListeners")
-    var removeListeners_Original: SinonSpy[js.Array[js.Any], js.Any] = js.native
+    var removeListeners_Original: SinonSpy[js.Array[Any], Any] = js.native
     
-    def trigger(args: js.Any*): Unit = js.native
+    def trigger(args: Any*): Unit = js.native
     
-    def triggerAsync(args: js.Any*): Unit = js.native
+    def triggerAsync(args: Any*): Unit = js.native
   }
 }

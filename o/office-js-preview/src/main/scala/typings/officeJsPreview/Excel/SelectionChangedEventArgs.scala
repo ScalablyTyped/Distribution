@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the document that raised the selection changed event.
   *
-  * Provides information about the document that raised the SelectionChanged event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait SelectionChangedEventArgs extends StObject {
   
   /**
+    * Gets the workbook object that raised the selection changed event.
     *
-    * Gets the workbook object that raised the SelectionChanged event.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var workbook: Workbook

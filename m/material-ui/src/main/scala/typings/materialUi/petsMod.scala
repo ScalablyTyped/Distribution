@@ -10,10 +10,10 @@ object petsMod {
   
   @JSImport("material-ui/svg-icons/action/pets", JSImport.Default)
   @js.native
-  class default () extends ActionPets
+  open class default () extends ActionPets
   
   @JSImport("material-ui/svg-icons/action/pets", "ActionPets")
   @js.native
-  class ActionPets ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPets ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

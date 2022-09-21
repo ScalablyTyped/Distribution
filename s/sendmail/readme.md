@@ -10,15 +10,12 @@ Sendmail without setting up SMTP server
 | ------------------ | :-------------: |
 | Full name          | sendmail |
 | Keywords           | email sender, send mail, sendmail, node sendmail, no smtp, without server, without smtp server, dev mode, dkim sign mail |
-| # releases         | 4 |
-| # dependents       | 90 |
-| # downloads        | 3479238 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 429394.0 |
+| # stars            | 509.0 |
 
 ## Links
-- [Homepage](https://github.com/guileen/node-sendmail)
-- [Bugs](https://github.com/guileen/node-sendmail/issues)
-- [Repository](https://github.com/guileen/node-sendmail)
 - [Npm](https://www.npmjs.com/package/sendmail)
     
 

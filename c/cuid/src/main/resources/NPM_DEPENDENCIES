@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cuid" : "2.1.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cuid" : "2.1.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -22,6 +22,6 @@ object BatchScheduleActionDeleteRequest {
     
     inline def setActionNames(value: listOfString): Self = StObject.set(x, "ActionNames", value.asInstanceOf[js.Any])
     
-    inline def setActionNamesVarargs(value: string*): Self = StObject.set(x, "ActionNames", js.Array(value :_*))
+    inline def setActionNamesVarargs(value: string*): Self = StObject.set(x, "ActionNames", js.Array(value*))
   }
 }

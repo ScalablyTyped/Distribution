@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudkms.anon
 
-import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.DestroyCryptoKeyVersionRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait Name extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the CryptoKeyVersion to destroy. */
+  /** Output only. The resource name for this CryptoKey in the format `projects/ *‍/locations/ *‍/keyRings/ *‍/cryptoKeys/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -38,8 +37,8 @@ trait Name extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: DestroyCryptoKeyVersionRequest
+  /** Required. List of fields to be updated in this request. */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +48,8 @@ trait Name extends StObject {
 }
 object Name {
   
-  inline def apply(name: String, resource: DestroyCryptoKeyVersionRequest): Name = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(name: String): Name = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
@@ -94,7 +93,9 @@ object Name {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: DestroyCryptoKeyVersionRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

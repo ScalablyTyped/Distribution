@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "SpatialDropout1D")
 @js.native
-class SpatialDropout1D protected () extends Dropout {
+open class SpatialDropout1D protected () extends Dropout {
   def this(args: SpatialDropout1DLayerConfig) = this()
 }
 /* static members */

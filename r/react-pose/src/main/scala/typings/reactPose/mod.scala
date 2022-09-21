@@ -18,7 +18,7 @@ object mod extends Shortcut {
   
   @JSImport("react-pose", "PoseGroup")
   @js.native
-  class PoseGroup ()
+  open class PoseGroup ()
     extends typings.reactPose.poseGroupMod.default
   /* static members */
   object PoseGroup {
@@ -35,7 +35,7 @@ object mod extends Shortcut {
   
   @JSImport("react-pose", "Transition")
   @js.native
-  class Transition ()
+  open class Transition ()
     extends typings.reactPose.transitionMod.default
   object Transition {
     

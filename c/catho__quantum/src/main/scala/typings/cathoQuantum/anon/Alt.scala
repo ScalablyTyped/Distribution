@@ -12,7 +12,7 @@ trait Alt extends StObject {
   
   var src: String
   
-  var theme: js.UndefOr[`7`] = js.undefined
+  var theme: js.UndefOr[`8`] = js.undefined
 }
 object Alt {
   
@@ -31,7 +31,7 @@ object Alt {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    inline def setTheme(value: `7`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `8`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

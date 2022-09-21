@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@peculiar/asn1-schema" : "2.0.3"
+      "@peculiar/asn1-schema" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@peculiar/asn1-schema" : "2.0.3"
+      "@peculiar/asn1-schema" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

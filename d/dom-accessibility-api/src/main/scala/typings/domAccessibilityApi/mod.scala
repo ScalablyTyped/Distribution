@@ -1,6 +1,8 @@
 package typings.domAccessibilityApi
 
 import typings.domAccessibilityApi.accessibleNameAndDescriptionMod.ComputeTextAlternativeOptions
+import typings.domAccessibilityApi.isInaccessibleMod.IsInaccessibleOptions
+import typings.domAccessibilityApi.isInaccessibleMod.IsSubtreeInaccessibleOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,4 +21,10 @@ object mod {
   inline def computeAccessibleName(root: Element, options: ComputeTextAlternativeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeAccessibleName")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getRole(element: Element): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRole")(element.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  
+  inline def isInaccessible(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInaccessible(element: Element, options: IsInaccessibleOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isSubtreeInaccessible(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSubtreeInaccessible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSubtreeInaccessible(element: Element, options: IsSubtreeInaccessibleOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSubtreeInaccessible")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

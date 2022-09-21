@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HistogramViewModelConstructor
   extends StObject
-     with Instantiable0[HistogramViewModel]
+     with /**
+  * Provides the logic for the [Histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html)
+  */
+Instantiable0[HistogramViewModel]
      with Instantiable1[/* properties */ HistogramViewModelProperties, HistogramViewModel]

@@ -33,13 +33,13 @@ trait MUIDataTableBody extends StObject {
   
   var searchText: js.UndefOr[String] = js.undefined
   
-  var selectRowUpdate: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var selectRowUpdate: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
   var selectedRows: js.UndefOr[MUIDataTableStateRows] = js.undefined
   
   var tableId: js.UndefOr[String] = js.undefined
   
-  var toggleExpandRow: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var toggleExpandRow: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
 }
 object MUIDataTableBody {
   
@@ -62,17 +62,17 @@ object MUIDataTableBody {
     
     inline def setColumnOrderUndefined: Self = StObject.set(x, "columnOrder", js.undefined)
     
-    inline def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value :_*))
+    inline def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value*))
     
     inline def setColumns(value: js.Array[MUIDataTableColumnDef]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: MUIDataTableColumnDef*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: MUIDataTableColumnDef*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     inline def setData(value: js.Array[js.Object | (js.Array[Double | String])]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: (js.Object | (js.Array[Double | String]))*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (js.Object | (js.Array[Double | String]))*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setExpandedRows(value: MUIDataTableStateRows): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object MUIDataTableBody {
     
     inline def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
-    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
+    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value*))
     
     inline def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
     
@@ -108,7 +108,7 @@ object MUIDataTableBody {
     
     inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
-    inline def setSelectRowUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
+    inline def setSelectRowUpdate(value: /* args */ Any => Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
     
     inline def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)
     
@@ -120,7 +120,7 @@ object MUIDataTableBody {
     
     inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
-    inline def setToggleExpandRow(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "toggleExpandRow", js.Any.fromFunction1(value))
+    inline def setToggleExpandRow(value: /* args */ Any => Any): Self = StObject.set(x, "toggleExpandRow", js.Any.fromFunction1(value))
     
     inline def setToggleExpandRowUndefined: Self = StObject.set(x, "toggleExpandRow", js.undefined)
   }

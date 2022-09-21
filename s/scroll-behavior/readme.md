@@ -1,7 +1,7 @@
 
 # Scala.js typings for scroll-behavior
 
-Typings are for version 0.9.12
+Typings are for version 0.11.0
 
 ## Library description:
 Pluggable browser scroll management
@@ -10,15 +10,12 @@ Pluggable browser scroll management
 | ------------------ | :-------------: |
 | Full name          | scroll-behavior |
 | Keywords           | scroll |
-| # releases         | 5 |
-| # dependents       | 52 |
-| # downloads        | 13041534 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 357068.0 |
+| # stars            | 546.0 |
 
 ## Links
-- [Homepage](https://github.com/taion/scroll-behavior#readme)
-- [Bugs](https://github.com/taion/scroll-behavior/issues)
-- [Repository](https://github.com/taion/scroll-behavior)
 - [Npm](https://www.npmjs.com/package/scroll-behavior)
     
 

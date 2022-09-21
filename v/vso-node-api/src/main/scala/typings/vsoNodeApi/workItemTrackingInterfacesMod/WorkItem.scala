@@ -12,7 +12,7 @@ trait WorkItem
   /**
     * Map of field and values for the work item.
     */
-  var fields: StringDictionary[js.Any]
+  var fields: StringDictionary[Any]
   
   /**
     * The work item ID.
@@ -32,8 +32,8 @@ trait WorkItem
 object WorkItem {
   
   inline def apply(
-    _links: js.Any,
-    fields: StringDictionary[js.Any],
+    _links: Any,
+    fields: StringDictionary[Any],
     id: Double,
     relations: js.Array[WorkItemRelation],
     rev: Double,
@@ -45,13 +45,13 @@ object WorkItem {
   
   extension [Self <: WorkItem](x: Self) {
     
-    inline def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setRelations(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
-    inline def setRelationsVarargs(value: WorkItemRelation*): Self = StObject.set(x, "relations", js.Array(value :_*))
+    inline def setRelationsVarargs(value: WorkItemRelation*): Self = StObject.set(x, "relations", js.Array(value*))
     
     inline def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
   }

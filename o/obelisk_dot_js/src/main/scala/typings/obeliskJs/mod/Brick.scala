@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "Brick")
 @js.native
-class Brick () extends AbstractPrimitive {
+open class Brick () extends AbstractPrimitive {
   def this(dimension: BrickDimension) = this()
   def this(dimension: Unit, color: SideColor) = this()
   def this(dimension: BrickDimension, color: SideColor) = this()

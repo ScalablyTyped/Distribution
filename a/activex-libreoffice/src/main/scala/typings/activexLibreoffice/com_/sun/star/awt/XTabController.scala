@@ -58,7 +58,7 @@ object XTabController {
     getContainer: () => XControlContainer,
     getControls: () => SafeArray[XControl],
     getModel: () => XTabControllerModel,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setContainer: XControlContainer => Unit,
     setModel: XTabControllerModel => Unit

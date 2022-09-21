@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("lang.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Lang {
     def this(options: Options) = this()

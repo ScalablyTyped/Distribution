@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SphericalPolynomial")
 @js.native
-class SphericalPolynomial ()
+open class SphericalPolynomial ()
   extends StObject
      with typings.babylonjs.BABYLON.SphericalPolynomial
 /* static members */

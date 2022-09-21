@@ -12,5 +12,5 @@ object wrapDisplayNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(component: ComponentType[js.Any], wrapperName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], wrapperName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(component: ComponentType[Any], wrapperName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], wrapperName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

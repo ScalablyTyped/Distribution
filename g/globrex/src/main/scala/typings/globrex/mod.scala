@@ -1,6 +1,5 @@
 package typings.globrex
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,6 +32,12 @@ object mod {
       * @default false
       */
     var filepath: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * RegExp flags (e.g. `'i'` ) to pass to the RegExp constructor.
+      * @default ''
+      */
+    var flags: js.UndefOr[String] = js.undefined
     
     /**
       * When `globstar` is false globs like '/foo/ *' are transformed to the following '^\/foo\/.*$'
@@ -69,6 +74,10 @@ object mod {
       
       inline def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
       
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      
       inline def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
       
       inline def setGlobstarUndefined: Self = StObject.set(x, "globstar", js.undefined)
@@ -85,7 +94,7 @@ object mod {
       * JavaScript RegExp instance build for testing against paths.
       * The regex have different path separators depending on host OS.
       */
-    var regex: RegExp
+    var regex: js.RegExp
     
     /**
       * Array of RegExp instances separated by /.
@@ -94,7 +103,7 @@ object mod {
       * [ /^foo$/, /^bar$/, /^([^\/]*)$/, '^baz\\.(md|js|txt)$' ]
       * ```
       */
-    var segments: js.Array[RegExp]
+    var segments: js.Array[js.RegExp]
     
     /**
       * String representation of the RegExp
@@ -103,18 +112,18 @@ object mod {
   }
   object Path {
     
-    inline def apply(regex: RegExp, segments: js.Array[RegExp], string: String): Path = {
+    inline def apply(regex: js.RegExp, segments: js.Array[js.RegExp], string: String): Path = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
     extension [Self <: Path](x: Self) {
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      inline def setSegments(value: js.Array[RegExp]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: js.Array[js.RegExp]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      inline def setSegmentsVarargs(value: RegExp*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: js.RegExp*): Self = StObject.set(x, "segments", js.Array(value*))
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
@@ -126,11 +135,11 @@ object mod {
     var path: js.UndefOr[Path] = js.undefined
     
     /** JavaScript RegExp instance. */
-    var regex: RegExp
+    var regex: js.RegExp
   }
   object Results {
     
-    inline def apply(regex: RegExp): Results = {
+    inline def apply(regex: js.RegExp): Results = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
@@ -141,7 +150,7 @@ object mod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,5 +1,8 @@
 package typings.materialUiCore
 
+import org.scalablytyped.runtime.TopLevel
+import typings.materialUiCore.materialUiCoreBooleans.`true`
+import typings.materialUiTypes.mod.OverridableStringUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,64 +19,54 @@ object createBreakpointsMod {
   @js.native
   val keys: js.Array[Breakpoint] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.xs
-    - typings.materialUiCore.materialUiCoreStrings.sm
-    - typings.materialUiCore.materialUiCoreStrings.md
-    - typings.materialUiCore.materialUiCoreStrings.lg
-    - typings.materialUiCore.materialUiCoreStrings.xl
-  */
-  trait Breakpoint extends StObject
-  object Breakpoint {
+  type Breakpoint = OverridableStringUnion[BreakpointDefaults, BreakpointOverrides]
+  
+  /* Inlined std.Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', true> */
+  trait BreakpointDefaults extends StObject {
     
-    inline def lg: typings.materialUiCore.materialUiCoreStrings.lg = "lg".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.lg]
+    var lg: `true`
     
-    inline def md: typings.materialUiCore.materialUiCoreStrings.md = "md".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.md]
+    var md: `true`
     
-    inline def sm: typings.materialUiCore.materialUiCoreStrings.sm = "sm".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sm]
+    var sm: `true`
     
-    inline def xl: typings.materialUiCore.materialUiCoreStrings.xl = "xl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.xl]
+    var xl: `true`
     
-    inline def xs: typings.materialUiCore.materialUiCoreStrings.xs = "xs".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.xs]
+    var xs: `true`
+  }
+  object BreakpointDefaults {
+    
+    inline def apply(): BreakpointDefaults = {
+      val __obj = js.Dynamic.literal(lg = true, md = true, sm = true, xl = true, xs = true)
+      __obj.asInstanceOf[BreakpointDefaults]
+    }
+    
+    extension [Self <: BreakpointDefaults](x: Self) {
+      
+      inline def setLg(value: `true`): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      
+      inline def setMd(value: `true`): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      
+      inline def setSm(value: `true`): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      
+      inline def setXl(value: `true`): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      
+      inline def setXs(value: `true`): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+    }
   }
   
-  /* Inlined {[ key in @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint ]: number} */
-  trait BreakpointValues extends StObject {
-    
-    var lg: Double
-    
-    var md: Double
-    
-    var sm: Double
-    
-    var xl: Double
-    
-    var xs: Double
-  }
-  object BreakpointValues {
-    
-    inline def apply(lg: Double, md: Double, sm: Double, xl: Double, xs: Double): BreakpointValues = {
-      val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any], xs = xs.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BreakpointValues]
-    }
-    
-    extension [Self <: BreakpointValues](x: Self) {
-      
-      inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
-      
-      inline def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
-      
-      inline def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
-      
-      inline def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
-      
-      inline def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
-    }
-  }
+  trait BreakpointOverrides extends StObject
+  
+  type BreakpointValues = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint ]: number}
+    */ typings.materialUiCore.materialUiCoreStrings.BreakpointValues & TopLevel[Any]
   
   @js.native
   trait Breakpoints extends StObject {
     
+    def between(start: Double, end: Double): String = js.native
+    def between(start: Double, end: Breakpoint): String = js.native
+    def between(start: Breakpoint, end: Double): String = js.native
     def between(start: Breakpoint, end: Breakpoint): String = js.native
     
     def down(key: Double): String = js.native
@@ -88,13 +81,19 @@ object createBreakpointsMod {
     
     var values: BreakpointValues = js.native
     
+    /**
+      * @deprecated
+      * Use the `values` prop instead
+      */
     def width(key: Breakpoint): Double = js.native
   }
   
   /* Inlined std.Partial<{  unit :string,   step :number} & @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoints> */
   trait BreakpointsOptions extends StObject {
     
-    var between: js.UndefOr[js.Function2[/* start */ Breakpoint, /* end */ Breakpoint, String]] = js.undefined
+    var between: js.UndefOr[
+        js.Function2[/* start */ Breakpoint | Double, /* end */ Breakpoint | Double, String]
+      ] = js.undefined
     
     var down: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.undefined
     
@@ -121,7 +120,7 @@ object createBreakpointsMod {
     
     extension [Self <: BreakpointsOptions](x: Self) {
       
-      inline def setBetween(value: (/* start */ Breakpoint, /* end */ Breakpoint) => String): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
+      inline def setBetween(value: (/* start */ Breakpoint | Double, /* end */ Breakpoint | Double) => String): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
       
       inline def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
       
@@ -133,7 +132,7 @@ object createBreakpointsMod {
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      inline def setKeysVarargs(value: Breakpoint*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Breakpoint*): Self = StObject.set(x, "keys", js.Array(value*))
       
       inline def setOnly(value: /* key */ Breakpoint => String): Self = StObject.set(x, "only", js.Any.fromFunction1(value))
       

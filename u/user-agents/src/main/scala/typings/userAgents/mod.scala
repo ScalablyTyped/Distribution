@@ -1,5 +1,6 @@
 package typings.userAgents
 
+import typings.userAgents.anon.PartialData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +11,13 @@ object mod {
   @js.native
   /**
     * The representation of a user-agents object.
-    * @param object <Array, Function, Object, RegExp, or String> - A set of filters to apply to the generated user agents
+    * @param filters <Array, Function, Object, RegExp, or String> - A set of filters to apply to the generated user agents
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with UserAgent {
-    def this(`object`: js.Any) = this()
+    def this(filters: js.Array[Filter]) = this()
+    def this(filters: Filter) = this()
     
     /**
       *  The value of data.appName
@@ -40,7 +42,7 @@ object mod {
     
     var downlink: js.UndefOr[Double] = js.undefined
     
-    var downlinkMax: js.UndefOr[js.Any] = js.undefined
+    var downlinkMax: js.UndefOr[Any] = js.undefined
     
     var effectiveType: js.UndefOr[String] = js.undefined
     
@@ -59,7 +61,7 @@ object mod {
       
       inline def setDownlink(value: Double): Self = StObject.set(x, "downlink", value.asInstanceOf[js.Any])
       
-      inline def setDownlinkMax(value: js.Any): Self = StObject.set(x, "downlinkMax", value.asInstanceOf[js.Any])
+      inline def setDownlinkMax(value: Any): Self = StObject.set(x, "downlinkMax", value.asInstanceOf[js.Any])
       
       inline def setDownlinkMaxUndefined: Self = StObject.set(x, "downlinkMax", js.undefined)
       
@@ -200,6 +202,8 @@ object mod {
       inline def setViewportWidth(value: Double): Self = StObject.set(x, "viewportWidth", value.asInstanceOf[js.Any])
     }
   }
+  
+  type Filter = PartialData | js.RegExp | (js.Function1[/* data */ Data, Boolean]) | String
   
   trait UserAgent extends StObject {
     

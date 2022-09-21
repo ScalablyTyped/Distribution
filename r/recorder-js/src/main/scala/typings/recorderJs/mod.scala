@@ -2,7 +2,6 @@ package typings.recorderJs
 
 import typings.std.AudioContext
 import typings.std.Blob
-import typings.std.Float32Array
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("recorder-js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Recorder {
     def this(audioContext: AudioContext) = this()
@@ -88,11 +87,11 @@ object mod {
     
     var blob: Blob
     
-    var buffer: js.Array[Float32Array]
+    var buffer: js.Array[js.typedarray.Float32Array]
   }
   object RecorderResult {
     
-    inline def apply(blob: Blob, buffer: js.Array[Float32Array]): RecorderResult = {
+    inline def apply(blob: Blob, buffer: js.Array[js.typedarray.Float32Array]): RecorderResult = {
       val __obj = js.Dynamic.literal(blob = blob.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecorderResult]
     }
@@ -101,9 +100,9 @@ object mod {
       
       inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
-      inline def setBuffer(value: js.Array[Float32Array]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.Array[js.typedarray.Float32Array]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      inline def setBufferVarargs(value: Float32Array*): Self = StObject.set(x, "buffer", js.Array(value :_*))
+      inline def setBufferVarargs(value: js.typedarray.Float32Array*): Self = StObject.set(x, "buffer", js.Array(value*))
     }
   }
 }

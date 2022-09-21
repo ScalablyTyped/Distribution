@@ -19,7 +19,7 @@ trait Campaign extends StObject {
   /**
     * The date and time (in Unix format) that the campaign was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.undefined
+  var creationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If a campaign fails, the reason behind the failure.
@@ -29,7 +29,7 @@ trait Campaign extends StObject {
   /**
     * The date and time (in Unix format) that the campaign was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   var latestCampaignUpdate: js.UndefOr[CampaignUpdateSummary] = js.undefined
   
@@ -70,7 +70,7 @@ object Campaign {
     
     inline def setCampaignConfigUndefined: Self = StObject.set(x, "campaignConfig", js.undefined)
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
@@ -78,7 +78,7 @@ object Campaign {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     

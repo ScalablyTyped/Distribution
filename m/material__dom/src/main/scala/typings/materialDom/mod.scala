@@ -26,7 +26,7 @@ object mod {
     
     @JSImport("@material/dom", "focusTrap.FocusTrap")
     @js.native
-    class FocusTrap protected ()
+    open class FocusTrap protected ()
       extends typings.materialDom.focusTrapMod.FocusTrap {
       def this(root: HTMLElement) = this()
       def this(root: HTMLElement, options: FocusOptions) = this()
@@ -109,6 +109,11 @@ object mod {
       @js.native
       def SPACEBAR: String = js.native
       inline def SPACEBAR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACEBAR")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@material/dom", "keyboard.KEY.TAB")
+      @js.native
+      def TAB: String = js.native
+      inline def TAB_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
       
       @JSImport("@material/dom", "keyboard.KEY.UNKNOWN")
       @js.native

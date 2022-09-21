@@ -44,7 +44,7 @@ object Node {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

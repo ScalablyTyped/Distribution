@@ -1,11 +1,13 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
-import typings.react.mod.RefObject
+import typings.react.mod.ElementRef
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.anon.Item
 import typings.reactNative.anon.Offset
+import typings.reactNative.anon.TypeofView
 import typings.reactNative.anon.ViewOffset
 import typings.reactNative.anon.`0`
 import org.scalablytyped.runtime.StObject
@@ -14,14 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "FlatList")
 @js.native
-class FlatList[ItemT] protected ()
-  extends Component[FlatListProps[ItemT], js.Object, js.Any] {
+open class FlatList[ItemT] protected ()
+  extends Component[FlatListProps[ItemT], js.Object, Any] {
   def this(props: FlatListProps[ItemT]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: FlatListProps[ItemT], context: js.Any) = this()
+  def this(props: FlatListProps[ItemT], context: Any) = this()
   
   /**
     * Displays the scroll indicators momentarily.
@@ -31,14 +33,14 @@ class FlatList[ItemT] protected ()
   /**
     * Provides a reference to the underlying host component
     */
-  def getNativeScrollRef(): js.UndefOr[(RefObject[ScrollViewComponent | View]) | Null] = js.native
+  def getNativeScrollRef(): js.UndefOr[(ElementRef[Instantiable0[ScrollViewComponent] | TypeofView]) | Null] = js.native
   
   /**
     * Provides a handle to the underlying scroll responder.
     */
   def getScrollResponder(): js.UndefOr[Element | Null] = js.native
   
-  def getScrollableNode(): js.Any = js.native
+  def getScrollableNode(): Any = js.native
   
   /**
     * Tells the list an interaction has occurred, which should trigger viewability calculations,
@@ -72,5 +74,5 @@ class FlatList[ItemT] protected ()
   def scrollToOffset(params: Offset): Unit = js.native
   
   // TODO: use `unknown` instead of `any` for Typescript >= 3.0
-  def setNativeProps(props: StringDictionary[js.Any]): Unit = js.native
+  def setNativeProps(props: StringDictionary[Any]): Unit = js.native
 }

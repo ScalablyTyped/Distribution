@@ -37,7 +37,7 @@ object TasksListParams {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object TasksListParams {
     
     inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value*))
     
     inline def setParentNode(value: String): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     

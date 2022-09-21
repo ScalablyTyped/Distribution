@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments")
 @js.native
-class ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments protected ()
+open class ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
-  /* protected */ def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  /* protected */ def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: Any) = this()
   
   /**
     * Returns the name of the client-side command corresponding to the parameter.
@@ -54,7 +54,7 @@ class ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments protected ()
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Determines if the media player controls should be displayed.

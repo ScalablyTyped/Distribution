@@ -23,7 +23,7 @@ trait Version extends StObject {
   
   def OpenOld(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   val SavedBy: String
   
@@ -41,7 +41,7 @@ object Version {
     Index: Double,
     Open: () => Document,
     OpenOld: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     SavedBy: String,
     WordDotVersion_typekey: Version
   ): Version = {
@@ -68,7 +68,7 @@ object Version {
     
     inline def setOpenOld(value: () => Unit): Self = StObject.set(x, "OpenOld", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSavedBy(value: String): Self = StObject.set(x, "SavedBy", value.asInstanceOf[js.Any])
     

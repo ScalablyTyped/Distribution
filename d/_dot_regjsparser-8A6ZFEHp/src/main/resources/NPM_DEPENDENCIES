@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".regjsparser-8A6ZFEHp" : "0.8.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".regjsparser-8A6ZFEHp" : "0.8.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

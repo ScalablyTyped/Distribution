@@ -12,5 +12,5 @@ trait Navigator
   
   var options: NavigatorOptions = js.native
   
-  def select(): js.Any = js.native
+  def select(): Any = js.native
 }

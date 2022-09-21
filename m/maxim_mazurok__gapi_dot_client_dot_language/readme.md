@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_language
 
-Typings are for version 1.0.20201114
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for Cloud Natural Language API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Natural Language API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.language |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 1657 |
-| # stars            | 0 |
+| # releases         | 64 |
+| # dependents       | 0.0 |
+| # downloads        | 1160.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

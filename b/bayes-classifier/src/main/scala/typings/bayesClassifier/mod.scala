@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("bayes-classifier", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with BayesClassifier {
     
@@ -25,7 +25,7 @@ object mod {
     override def getClassifications(doc: String): Classifications = js.native
     
     /* CompleteClass */
-    override def restore(classifier: js.Any): Unit = js.native
+    override def restore(classifier: Any): Unit = js.native
     
     /* CompleteClass */
     override def train(): Unit = js.native
@@ -41,7 +41,7 @@ object mod {
     
     def getClassifications(doc: String): Classifications
     
-    def restore(classifier: js.Any): Unit
+    def restore(classifier: Any): Unit
     
     def train(): Unit
   }
@@ -52,7 +52,7 @@ object mod {
       addDocuments: (js.Array[String], String) => Unit,
       classify: String => String,
       getClassifications: String => Classifications,
-      restore: js.Any => Unit,
+      restore: Any => Unit,
       train: () => Unit
     ): BayesClassifier = {
       val __obj = js.Dynamic.literal(addDocument = js.Any.fromFunction2(addDocument), addDocuments = js.Any.fromFunction2(addDocuments), classify = js.Any.fromFunction1(classify), getClassifications = js.Any.fromFunction1(getClassifications), restore = js.Any.fromFunction1(restore), train = js.Any.fromFunction0(train))
@@ -69,7 +69,7 @@ object mod {
       
       inline def setGetClassifications(value: String => Classifications): Self = StObject.set(x, "getClassifications", js.Any.fromFunction1(value))
       
-      inline def setRestore(value: js.Any => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
+      inline def setRestore(value: Any => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
       
       inline def setTrain(value: () => Unit): Self = StObject.set(x, "train", js.Any.fromFunction0(value))
     }

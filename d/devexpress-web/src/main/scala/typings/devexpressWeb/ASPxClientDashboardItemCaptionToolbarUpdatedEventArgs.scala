@@ -19,11 +19,11 @@ trait ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs
   /**
     * Provides access to caption options of the dashboard item.
     */
-  var Options: js.Any
+  var Options: Any
 }
 object ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs {
   
-  inline def apply(ItemName: String, Options: js.Any): ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs = {
+  inline def apply(ItemName: String, Options: Any): ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(ItemName = ItemName.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs {
     
     inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
   }
 }

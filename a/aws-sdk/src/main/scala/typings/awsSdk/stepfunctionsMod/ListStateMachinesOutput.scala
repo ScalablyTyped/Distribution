@@ -28,6 +28,6 @@ object ListStateMachinesOutput {
     
     inline def setStateMachines(value: StateMachineList): Self = StObject.set(x, "stateMachines", value.asInstanceOf[js.Any])
     
-    inline def setStateMachinesVarargs(value: StateMachineListItem*): Self = StObject.set(x, "stateMachines", js.Array(value :_*))
+    inline def setStateMachinesVarargs(value: StateMachineListItem*): Self = StObject.set(x, "stateMachines", js.Array(value*))
   }
 }

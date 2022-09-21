@@ -28,7 +28,7 @@ object ChangeLogsListResponse {
     
     inline def setChangeLogsUndefined: Self = StObject.set(x, "changeLogs", js.undefined)
     
-    inline def setChangeLogsVarargs(value: ChangeLog*): Self = StObject.set(x, "changeLogs", js.Array(value :_*))
+    inline def setChangeLogsVarargs(value: ChangeLog*): Self = StObject.set(x, "changeLogs", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

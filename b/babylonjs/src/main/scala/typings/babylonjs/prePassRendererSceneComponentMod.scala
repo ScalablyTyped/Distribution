@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.prePassRenderTargetMod.PrePassRenderTarget
 import typings.babylonjs.prePassRendererMod.PrePassRenderer
 import typings.babylonjs.sceneComponentMod.ISceneComponent
 import typings.babylonjs.sceneMod.Scene
@@ -12,7 +13,7 @@ object prePassRendererSceneComponentMod {
   
   @JSImport("babylonjs/Rendering/prePassRendererSceneComponent", "PrePassRendererSceneComponent")
   @js.native
-  class PrePassRendererSceneComponent protected ()
+  open class PrePassRendererSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -21,15 +22,21 @@ object prePassRendererSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _afterCameraDraw: js.Any = js.native
+    /* private */ var _afterCameraDraw: Any = js.native
     
-    /* private */ var _afterRenderingMeshStage: js.Any = js.native
+    /* private */ var _afterRenderTargetDraw: Any = js.native
     
-    /* private */ var _beforeCameraDraw: js.Any = js.native
+    /* private */ var _afterRenderingMeshStage: Any = js.native
     
-    /* private */ var _beforeClearStage: js.Any = js.native
+    /* private */ var _beforeCameraDraw: Any = js.native
     
-    /* private */ var _beforeRenderingMeshStage: js.Any = js.native
+    /* private */ var _beforeClearStage: Any = js.native
+    
+    /* private */ var _beforeRenderTargetClearStage: Any = js.native
+    
+    /* private */ var _beforeRenderTargetDraw: Any = js.native
+    
+    /* private */ var _beforeRenderingMeshStage: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.
@@ -107,6 +114,30 @@ object prePassRendererSceneComponentMod {
         inline def set_prePassRenderer(value: Nullable[PrePassRenderer]): Self = StObject.set(x, "_prePassRenderer", value.asInstanceOf[js.Any])
         
         inline def set_prePassRendererNull: Self = StObject.set(x, "_prePassRenderer", null)
+      }
+    }
+  }
+  
+  /* augmented module */
+  object babylonjsMaterialsTexturesRenderTargetTextureAugmentingMod {
+    
+    trait RenderTargetTexture extends StObject {
+      
+      /** @hidden */
+      var _prePassRenderTarget: Nullable[PrePassRenderTarget]
+    }
+    object RenderTargetTexture {
+      
+      inline def apply(): RenderTargetTexture = {
+        val __obj = js.Dynamic.literal(_prePassRenderTarget = null)
+        __obj.asInstanceOf[RenderTargetTexture]
+      }
+      
+      extension [Self <: RenderTargetTexture](x: Self) {
+        
+        inline def set_prePassRenderTarget(value: Nullable[PrePassRenderTarget]): Self = StObject.set(x, "_prePassRenderTarget", value.asInstanceOf[js.Any])
+        
+        inline def set_prePassRenderTargetNull: Self = StObject.set(x, "_prePassRenderTarget", null)
       }
     }
   }

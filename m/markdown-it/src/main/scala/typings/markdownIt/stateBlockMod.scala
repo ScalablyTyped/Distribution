@@ -11,10 +11,10 @@ object stateBlockMod {
   
   @JSImport("markdown-it/lib/rules_block/state_block", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with StateBlock {
-    def this(src: String, md: MarkdownIt, env: js.Any, tokens: js.Array[typings.markdownIt.tokenMod.^]) = this()
+    def this(src: String, md: MarkdownIt, env: Any, tokens: js.Array[typings.markdownIt.tokenMod.^]) = this()
     
     /* CompleteClass */
     var Token: Instantiable3[
@@ -65,7 +65,7 @@ object stateBlockMod {
     var eMarks: js.Array[Double] = js.native
     
     /* CompleteClass */
-    var env: js.Any = js.native
+    var env: Any = js.native
     
     /**
       * cut lines range from source.
@@ -242,7 +242,7 @@ object stateBlockMod {
       */
     var eMarks: js.Array[Double]
     
-    var env: js.Any
+    var env: Any
     
     /**
       * cut lines range from source.
@@ -347,7 +347,7 @@ object stateBlockMod {
       bsCount: js.Array[Double],
       ddIndent: Double,
       eMarks: js.Array[Double],
-      env: js.Any,
+      env: Any,
       getLines: (Double, Double, Double, Boolean) => String,
       isEmpty: Double => Boolean,
       level: Double,
@@ -377,21 +377,21 @@ object stateBlockMod {
       
       inline def setBMarks(value: js.Array[Double]): Self = StObject.set(x, "bMarks", value.asInstanceOf[js.Any])
       
-      inline def setBMarksVarargs(value: Double*): Self = StObject.set(x, "bMarks", js.Array(value :_*))
+      inline def setBMarksVarargs(value: Double*): Self = StObject.set(x, "bMarks", js.Array(value*))
       
       inline def setBlkIndent(value: Double): Self = StObject.set(x, "blkIndent", value.asInstanceOf[js.Any])
       
       inline def setBsCount(value: js.Array[Double]): Self = StObject.set(x, "bsCount", value.asInstanceOf[js.Any])
       
-      inline def setBsCountVarargs(value: Double*): Self = StObject.set(x, "bsCount", js.Array(value :_*))
+      inline def setBsCountVarargs(value: Double*): Self = StObject.set(x, "bsCount", js.Array(value*))
       
       inline def setDdIndent(value: Double): Self = StObject.set(x, "ddIndent", value.asInstanceOf[js.Any])
       
       inline def setEMarks(value: js.Array[Double]): Self = StObject.set(x, "eMarks", value.asInstanceOf[js.Any])
       
-      inline def setEMarksVarargs(value: Double*): Self = StObject.set(x, "eMarks", js.Array(value :_*))
+      inline def setEMarksVarargs(value: Double*): Self = StObject.set(x, "eMarks", js.Array(value*))
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setGetLines(value: (Double, Double, Double, Boolean) => String): Self = StObject.set(x, "getLines", js.Any.fromFunction4(value))
       
@@ -415,7 +415,7 @@ object stateBlockMod {
       
       inline def setSCount(value: js.Array[Double]): Self = StObject.set(x, "sCount", value.asInstanceOf[js.Any])
       
-      inline def setSCountVarargs(value: Double*): Self = StObject.set(x, "sCount", js.Array(value :_*))
+      inline def setSCountVarargs(value: Double*): Self = StObject.set(x, "sCount", js.Array(value*))
       
       inline def setSkipChars(value: (Double, Double) => Double): Self = StObject.set(x, "skipChars", js.Any.fromFunction2(value))
       
@@ -431,7 +431,7 @@ object stateBlockMod {
       
       inline def setTShift(value: js.Array[Double]): Self = StObject.set(x, "tShift", value.asInstanceOf[js.Any])
       
-      inline def setTShiftVarargs(value: Double*): Self = StObject.set(x, "tShift", js.Array(value :_*))
+      inline def setTShiftVarargs(value: Double*): Self = StObject.set(x, "tShift", js.Array(value*))
       
       inline def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
       
@@ -446,7 +446,7 @@ object stateBlockMod {
       
       inline def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value*))
     }
   }
 }

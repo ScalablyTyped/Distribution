@@ -6,20 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "CustomWidgetCollection")
 @js.native
-class CustomWidgetCollection () extends StObject {
+open class CustomWidgetCollection () extends StObject {
   
-  def add(widgetJson: js.Any): Unit = js.native
-  def add(widgetJson: js.Any, activatedBy: String): Unit = js.native
+  def add(widgetJson: Any): Unit = js.native
+  def add(widgetJson: Any, activatedBy: String): Unit = js.native
   
-  def addCustomWidget(widgetJson: js.Any): Unit = js.native
-  def addCustomWidget(widgetJson: js.Any, activatedBy: String): Unit = js.native
+  def addCustomWidget(widgetJson: Any): QuestionCustomWidget = js.native
+  def addCustomWidget(widgetJson: Any, activatedBy: String): QuestionCustomWidget = js.native
   
   def clear(): Unit = js.native
   
-  /**
+  /*
     * Returns the way the custom wiget is activated. It can be activated by a property ("property"), question type ("type") or by new/custom question type ("customtype").
-    * @param widgetName the custom widget name
-    * @see setActivatedBy
     */
   def getActivatedBy(widgetName: String): String = js.native
   
@@ -27,16 +25,18 @@ class CustomWidgetCollection () extends StObject {
   
   def getCustomWidgetByName(name: String): QuestionCustomWidget = js.native
   
-  var onCustomWidgetAdded: Event[js.Function1[/* customWidget */ QuestionCustomWidget, js.Any], js.Any] = js.native
+  var onCustomWidgetAdded: Event[js.Function1[/* customWidget */ QuestionCustomWidget, Any], Any] = js.native
   
-  /**
+  /*
     * Sets the way the custom wiget is activated. The activation types are: property ("property"), question type ("type") or new/custom question type ("customtype"). A custom wiget may support all or only some of this activation types.
-    * @param widgetName
-    * @param activatedBy there are three possible variants: "property", "type" and "customtype"
     */
   def setActivatedBy(widgetName: String, activatedBy: String): Unit = js.native
   
-  val widgets: js.Array[QuestionCustomWidget] = js.native
+  def widgets: Any = js.native
+  
+  var widgetsActivatedBy: Any = js.native
+  
+  var widgetsValues: Any = js.native
 }
 /* static members */
 object CustomWidgetCollection {

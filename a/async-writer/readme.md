@@ -10,15 +10,12 @@ The async-writer module makes it possible to asynchronously write data to an out
 | ------------------ | :-------------: |
 | Full name          | async-writer |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 253675 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5499.666666666667 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/marko-js/async-writer#readme)
-- [Bugs](https://github.com/marko-js/async-writer/issues)
-- [Repository](https://github.com/marko-js/async-writer)
 - [Npm](https://www.npmjs.com/package/async-writer)
     
 

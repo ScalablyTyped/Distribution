@@ -20,6 +20,11 @@ trait ServerCertificate extends StObject {
     * The meta information of the server certificate, such as its name, path, ID, and ARN.
     */
   var ServerCertificateMetadata: typings.awsSdk.iamMod.ServerCertificateMetadata
+  
+  /**
+    * A list of tags that are attached to the server certificate. For more information about tagging, see Tagging IAM resources in the IAM User Guide.
+    */
+  var Tags: js.UndefOr[tagListType] = js.undefined
 }
 object ServerCertificate {
   
@@ -37,5 +42,11 @@ object ServerCertificate {
     inline def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
     
     inline def setServerCertificateMetadata(value: ServerCertificateMetadata): Self = StObject.set(x, "ServerCertificateMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

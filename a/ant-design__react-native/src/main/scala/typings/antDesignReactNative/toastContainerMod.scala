@@ -4,6 +4,7 @@ import typings.antDesignReactNative.anon.Mask
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.antDesignReactNative.toastStyleMod.ToastStyle
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.Animated.CompositeAnimation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +14,7 @@ object toastContainerMod {
   
   @JSImport("@ant-design/react-native/lib/toast/ToastContainer", JSImport.Default)
   @js.native
-  class default protected () extends ToastContainer {
+  open class default protected () extends ToastContainer {
     def this(props: ToastProps) = this()
   }
   /* static members */
@@ -30,8 +31,7 @@ object toastContainerMod {
   }
   
   @js.native
-  trait ToastContainer
-    extends Component[ToastProps, js.Any, js.Any] {
+  trait ToastContainer extends Component[ToastProps, Any, Any] {
     
     var anim: CompositeAnimation | Null = js.native
     
@@ -46,7 +46,7 @@ object toastContainerMod {
     extends StObject
        with WithThemeStyles[ToastStyle] {
     
-    var content: String
+    var content: String | ReactNode
     
     var duration: js.UndefOr[Double] = js.undefined
     
@@ -60,14 +60,16 @@ object toastContainerMod {
   }
   object ToastProps {
     
-    inline def apply(content: String): ToastProps = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    inline def apply(): ToastProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToastProps]
     }
     
     extension [Self <: ToastProps](x: Self) {
       
-      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

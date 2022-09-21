@@ -10,10 +10,10 @@ JavaScript implementation of the Web Animations API
 | ------------------ | :-------------: |
 | Full name          | web-animations-js |
 | Keywords           | animations, polyfill |
-| # releases         | 2 |
-| # dependents       | 333 |
-| # downloads        | 12403432 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1157052.6666666667 |
+| # stars            | 3659.0 |
 
 ## Links
 - [Homepage](https://github.com/web-animations)

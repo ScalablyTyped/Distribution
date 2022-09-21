@@ -1,9 +1,5 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,29 +9,17 @@ trait ParamsResourceProjectsNotificationchanneldescriptorsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The REST resource name of the parent from which to retrieve the
-    * notification channel descriptors. The expected syntax is:
-    * projects/[PROJECT_ID] Note that this names the parent container in which
-    * to look for the descriptors; to retrieve a single descriptor by name, use
-    * the GetNotificationChannelDescriptor operation, instead.
+    * Required. The REST resource name of the parent from which to retrieve the notification channel descriptors. The expected syntax is: projects/[PROJECT_ID_OR_NUMBER] Note that this names (https://cloud.google.com/monitoring/api/v3#project_name) the parent container in which to look for the descriptors; to retrieve a single descriptor by name, use the GetNotificationChannelDescriptor operation, instead.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of results to return in a single response. If not set
-    * to a positive number, a reasonable value will be chosen by the service.
+    * The maximum number of results to return in a single response. If not set to a positive number, a reasonable value will be chosen by the service.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * If non-empty, page_token must contain a value returned as the
-    * next_page_token in a previous response to request the next set of
-    * results.
+    * If non-empty, page_token must contain a value returned as the next_page_token in a previous response to request the next set of results.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -47,10 +31,6 @@ object ParamsResourceProjectsNotificationchanneldescriptorsList {
   }
   
   extension [Self <: ParamsResourceProjectsNotificationchanneldescriptorsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

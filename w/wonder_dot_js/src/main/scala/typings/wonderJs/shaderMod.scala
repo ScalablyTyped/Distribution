@@ -20,15 +20,15 @@ object shaderMod {
     
     def addShaderLibToTop(lib: ShaderLib): Unit = js.native
     
-    var attributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
+    var attributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ Any = js.native
     
     /* protected */ def buildDefinitionData(cmd: RenderCommand, material: Material): Unit = js.native
     
-    def createFsShader(): js.Any = js.native
+    def createFsShader(): Any = js.native
     
     /* protected */ def createShaderSourceBuilder(): ShaderSourceBuilder = js.native
     
-    def createVsShader(): js.Any = js.native
+    def createVsShader(): Any = js.native
     
     var definitionDataDirty: Boolean = js.native
     
@@ -40,10 +40,10 @@ object shaderMod {
     
     def getLib(libClass: js.Function): ShaderLib = js.native
     
-    def getLibs(): js.Any = js.native
+    def getLibs(): Any = js.native
     
-    def hasLib(_class: js.Function): js.Any = js.native
-    def hasLib(lib: ShaderLib): js.Any = js.native
+    def hasLib(_class: js.Function): Any = js.native
+    def hasLib(lib: ShaderLib): Any = js.native
     
     def init(material: Material): Unit = js.native
     
@@ -51,22 +51,22 @@ object shaderMod {
     
     var libDirty: Boolean = js.native
     
-    /* protected */ var libs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<ShaderLib> */ js.Any = js.native
+    /* protected */ var libs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<ShaderLib> */ Any = js.native
     
     val program: Program = js.native
     
     def removeAllLibs(): Unit = js.native
     
-    def removeLib(func: js.Function): js.Any = js.native
-    def removeLib(lib: ShaderLib): js.Any = js.native
+    def removeLib(func: js.Function): Any = js.native
+    def removeLib(lib: ShaderLib): Any = js.native
     
-    def sortLib(func: js.Function2[/* a */ ShaderLib, /* b */ ShaderLib, js.Any]): Unit = js.native
+    def sortLib(func: js.Function2[/* a */ ShaderLib, /* b */ ShaderLib, Any]): Unit = js.native
     
     /* protected */ var sourceBuilder: ShaderSourceBuilder = js.native
     
-    var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
+    var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ Any = js.native
     
-    def update(cmd: RenderCommand, material: Material): js.Any = js.native
+    def update(cmd: RenderCommand, material: Material): Any = js.native
     
     var vsSource: String = js.native
   }
@@ -77,7 +77,7 @@ object shaderMod {
     
     var `type`: EVariableType
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object ShaderData {
     
@@ -95,7 +95,7 @@ object shaderMod {
       
       inline def setType(value: EVariableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

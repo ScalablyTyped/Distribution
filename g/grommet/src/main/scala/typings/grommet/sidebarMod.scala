@@ -1,11 +1,13 @@
 package typings.grommet
 
 import typings.grommet.boxMod.BoxProps
+import typings.grommet.grommetStrings.onClick
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +16,20 @@ object sidebarMod {
   
   @JSImport("grommet/components/Sidebar", "Sidebar")
   @js.native
-  val Sidebar: FC[
-    BoxProps & SidebarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Sidebar: FC[SidebarExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onClick'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait SidebarExtendedProps
+    extends StObject
+       with BoxProps
+       with SidebarProps
+  object SidebarExtendedProps {
+    
+    inline def apply(): SidebarExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SidebarExtendedProps]
+    }
+  }
   
   trait SidebarProps extends StObject {
     
@@ -42,4 +55,6 @@ object sidebarMod {
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
+  
+  type divProps = Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], onClick]
 }

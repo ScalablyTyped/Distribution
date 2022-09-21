@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,14 @@ trait externalRenderers extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#add)
     */
-  def add(view: SceneView, renderer: ExternalRenderer): Unit = js.native
+  def add(view: SceneView, renderer: ExternalRenderer): scala.Unit = js.native
+  
+  /**
+    * Requests the SceneView to use a specific WebGL verson for rendering.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#forceWebGLContext)
+    */
+  def forceWebGLContext(version: Double): scala.Unit = js.native
   
   /**
     * Transforms positions from the internal rendering coordinate system to the output spatial reference.
@@ -33,34 +39,34 @@ trait externalRenderers extends StObject {
     destStart: Double,
     destSpatialReference: SpatialReference,
     count: Double
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   def fromRenderCoordinates(
     view: SceneView,
     srcCoordinates: js.Array[Double],
     srcStart: Double,
-    destCoordinates: Float32Array,
+    destCoordinates: js.typedarray.Float32Array,
     destStart: Double,
     destSpatialReference: SpatialReference,
     count: Double
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   def fromRenderCoordinates(
     view: SceneView,
-    srcCoordinates: Float32Array,
+    srcCoordinates: js.typedarray.Float32Array,
     srcStart: Double,
     destCoordinates: js.Array[Double],
     destStart: Double,
     destSpatialReference: SpatialReference,
     count: Double
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   def fromRenderCoordinates(
     view: SceneView,
-    srcCoordinates: Float32Array,
+    srcCoordinates: js.typedarray.Float32Array,
     srcStart: Double,
-    destCoordinates: Float32Array,
+    destCoordinates: js.typedarray.Float32Array,
     destStart: Double,
     destSpatialReference: SpatialReference,
     count: Double
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   
   /**
     * Get the render representation of the current camera of a view.
@@ -74,47 +80,67 @@ trait externalRenderers extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#remove)
     */
-  def remove(view: SceneView, renderer: ExternalRenderer): Unit = js.native
+  def remove(view: SceneView, renderer: ExternalRenderer): scala.Unit = js.native
   
   /**
     * Computes a 4x4 affine transformation matrix that constitutes a linear coordinate transformation from a local Cartesian coordinate system to the virtual world coordinate system.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#renderCoordinateTransformAt)
     */
-  def renderCoordinateTransformAt(view: SceneView, origin: js.Array[Double]): js.Array[Double] | Float32Array = js.native
-  def renderCoordinateTransformAt(view: SceneView, origin: js.Array[Double], srcSpatialReference: Unit, dest: js.Array[Double]): js.Array[Double] | Float32Array = js.native
-  def renderCoordinateTransformAt(view: SceneView, origin: js.Array[Double], srcSpatialReference: Unit, dest: Float32Array): js.Array[Double] | Float32Array = js.native
-  def renderCoordinateTransformAt(view: SceneView, origin: js.Array[Double], srcSpatialReference: SpatialReference): js.Array[Double] | Float32Array = js.native
+  def renderCoordinateTransformAt(view: SceneView, origin: js.Array[Double]): js.Array[Double] | js.typedarray.Float32Array = js.native
+  def renderCoordinateTransformAt(view: SceneView, origin: js.Array[Double], srcSpatialReference: scala.Unit, dest: js.Array[Double]): js.Array[Double] | js.typedarray.Float32Array = js.native
+  def renderCoordinateTransformAt(
+    view: SceneView,
+    origin: js.Array[Double],
+    srcSpatialReference: scala.Unit,
+    dest: js.typedarray.Float32Array
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
+  def renderCoordinateTransformAt(view: SceneView, origin: js.Array[Double], srcSpatialReference: SpatialReference): js.Array[Double] | js.typedarray.Float32Array = js.native
   def renderCoordinateTransformAt(
     view: SceneView,
     origin: js.Array[Double],
     srcSpatialReference: SpatialReference,
     dest: js.Array[Double]
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   def renderCoordinateTransformAt(
     view: SceneView,
     origin: js.Array[Double],
     srcSpatialReference: SpatialReference,
-    dest: Float32Array
-  ): js.Array[Double] | Float32Array = js.native
-  def renderCoordinateTransformAt(view: SceneView, origin: Float32Array): js.Array[Double] | Float32Array = js.native
-  def renderCoordinateTransformAt(view: SceneView, origin: Float32Array, srcSpatialReference: Unit, dest: js.Array[Double]): js.Array[Double] | Float32Array = js.native
-  def renderCoordinateTransformAt(view: SceneView, origin: Float32Array, srcSpatialReference: Unit, dest: Float32Array): js.Array[Double] | Float32Array = js.native
-  def renderCoordinateTransformAt(view: SceneView, origin: Float32Array, srcSpatialReference: SpatialReference): js.Array[Double] | Float32Array = js.native
+    dest: js.typedarray.Float32Array
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
+  def renderCoordinateTransformAt(view: SceneView, origin: js.typedarray.Float32Array): js.Array[Double] | js.typedarray.Float32Array = js.native
   def renderCoordinateTransformAt(
     view: SceneView,
-    origin: Float32Array,
+    origin: js.typedarray.Float32Array,
+    srcSpatialReference: scala.Unit,
+    dest: js.Array[Double]
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
+  def renderCoordinateTransformAt(
+    view: SceneView,
+    origin: js.typedarray.Float32Array,
+    srcSpatialReference: scala.Unit,
+    dest: js.typedarray.Float32Array
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
+  def renderCoordinateTransformAt(view: SceneView, origin: js.typedarray.Float32Array, srcSpatialReference: SpatialReference): js.Array[Double] | js.typedarray.Float32Array = js.native
+  def renderCoordinateTransformAt(
+    view: SceneView,
+    origin: js.typedarray.Float32Array,
     srcSpatialReference: SpatialReference,
     dest: js.Array[Double]
-  ): js.Array[Double] | Float32Array = js.native
-  def renderCoordinateTransformAt(view: SceneView, origin: Float32Array, srcSpatialReference: SpatialReference, dest: Float32Array): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
+  def renderCoordinateTransformAt(
+    view: SceneView,
+    origin: js.typedarray.Float32Array,
+    srcSpatialReference: SpatialReference,
+    dest: js.typedarray.Float32Array
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   
   /**
     * Requests the view to be redrawn.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#requestRender)
     */
-  def requestRender(view: SceneView): Unit = js.native
+  def requestRender(view: SceneView): scala.Unit = js.native
   
   /**
     * Transforms positions from the given spatial reference to the internal rendering coordinate system.
@@ -129,32 +155,32 @@ trait externalRenderers extends StObject {
     destCoordinates: js.Array[Double],
     destStart: Double,
     count: Double
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   def toRenderCoordinates(
     view: SceneView,
     srcCoordinates: js.Array[Double],
     srcStart: Double,
     srcSpatialReference: SpatialReference,
-    destCoordinates: Float32Array,
+    destCoordinates: js.typedarray.Float32Array,
     destStart: Double,
     count: Double
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   def toRenderCoordinates(
     view: SceneView,
-    srcCoordinates: Float32Array,
+    srcCoordinates: js.typedarray.Float32Array,
     srcStart: Double,
     srcSpatialReference: SpatialReference,
     destCoordinates: js.Array[Double],
     destStart: Double,
     count: Double
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
   def toRenderCoordinates(
     view: SceneView,
-    srcCoordinates: Float32Array,
+    srcCoordinates: js.typedarray.Float32Array,
     srcStart: Double,
     srcSpatialReference: SpatialReference,
-    destCoordinates: Float32Array,
+    destCoordinates: js.typedarray.Float32Array,
     destStart: Double,
     count: Double
-  ): js.Array[Double] | Float32Array = js.native
+  ): js.Array[Double] | js.typedarray.Float32Array = js.native
 }

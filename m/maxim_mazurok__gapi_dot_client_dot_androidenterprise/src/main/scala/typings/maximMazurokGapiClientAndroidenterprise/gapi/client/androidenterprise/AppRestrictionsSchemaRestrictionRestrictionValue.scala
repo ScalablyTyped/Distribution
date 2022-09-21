@@ -46,7 +46,7 @@ object AppRestrictionsSchemaRestrictionRestrictionValue {
     
     inline def setValueMultiselectUndefined: Self = StObject.set(x, "valueMultiselect", js.undefined)
     
-    inline def setValueMultiselectVarargs(value: String*): Self = StObject.set(x, "valueMultiselect", js.Array(value :_*))
+    inline def setValueMultiselectVarargs(value: String*): Self = StObject.set(x, "valueMultiselect", js.Array(value*))
     
     inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     

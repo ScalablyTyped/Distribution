@@ -22,5 +22,5 @@ trait JQuery extends StObject {
     * @param options The options
     */
   def tinyscrollbar_update(): JQuery = js.native
-  def tinyscrollbar_update(options: js.Any): JQuery = js.native
+  def tinyscrollbar_update(options: Any): JQuery = js.native
 }

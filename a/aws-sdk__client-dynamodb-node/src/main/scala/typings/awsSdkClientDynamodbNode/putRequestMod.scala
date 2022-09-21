@@ -8,5 +8,5 @@ object putRequestMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_PutRequest", "_PutRequest")
   @js.native
-  val PutRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

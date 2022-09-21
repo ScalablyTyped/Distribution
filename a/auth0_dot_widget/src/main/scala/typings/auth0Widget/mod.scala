@@ -19,7 +19,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("auth0.widget", "Auth0Widget")
   @js.native
-  class Auth0Widget protected ()
+  open class Auth0Widget protected ()
     extends StObject
        with Auth0WidgetStatic {
     def this(params: Auth0Constructor) = this()
@@ -37,7 +37,7 @@ object mod {
     
     var cdn: js.UndefOr[String] = js.undefined
     
-    var dict: js.UndefOr[js.Any] = js.undefined
+    var dict: js.UndefOr[Any] = js.undefined
   }
   object Auth0Constructor {
     
@@ -56,7 +56,7 @@ object mod {
       
       inline def setCdnUndefined: Self = StObject.set(x, "cdn", js.undefined)
       
-      inline def setDict(value: js.Any): Self = StObject.set(x, "dict", value.asInstanceOf[js.Any])
+      inline def setDict(value: Any): Self = StObject.set(x, "dict", value.asInstanceOf[js.Any])
       
       inline def setDictUndefined: Self = StObject.set(x, "dict", js.undefined)
     }
@@ -72,7 +72,7 @@ object mod {
     
     var enableReturnUserExperience: js.UndefOr[Boolean] = js.undefined
     
-    var extraParameters: js.UndefOr[js.Any] = js.undefined
+    var extraParameters: js.UndefOr[Any] = js.undefined
     
     var icon: js.UndefOr[String] = js.undefined
     
@@ -88,7 +88,7 @@ object mod {
     
     var showSignup: js.UndefOr[Boolean] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var userPwdConnectionName: js.UndefOr[String] = js.undefined
     
@@ -111,7 +111,7 @@ object mod {
       
       inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
       
-      inline def setConnectionsVarargs(value: String*): Self = StObject.set(x, "connections", js.Array(value :_*))
+      inline def setConnectionsVarargs(value: String*): Self = StObject.set(x, "connections", js.Array(value*))
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -121,7 +121,7 @@ object mod {
       
       inline def setEnableReturnUserExperienceUndefined: Self = StObject.set(x, "enableReturnUserExperience", js.undefined)
       
-      inline def setExtraParameters(value: js.Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
+      inline def setExtraParameters(value: Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
       
       inline def setExtraParametersUndefined: Self = StObject.set(x, "extraParameters", js.undefined)
       
@@ -153,7 +153,7 @@ object mod {
       
       inline def setShowSignupUndefined: Self = StObject.set(x, "showSignup", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -194,7 +194,7 @@ object mod {
           /* id_token */ js.UndefOr[String], 
           /* access_token */ js.UndefOr[String], 
           /* state */ js.UndefOr[String], 
-          js.Any
+          Any
         ]
     ): Auth0WidgetStatic = js.native
   }

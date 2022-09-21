@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SoftwareTokenMfaConfigType extends StObject {
   
   /**
-    * Specifies whether software token MFA is enabled.
+    * Specifies whether software token MFA is activated.
     */
   var Enabled: js.UndefOr[BooleanType] = js.undefined
 }

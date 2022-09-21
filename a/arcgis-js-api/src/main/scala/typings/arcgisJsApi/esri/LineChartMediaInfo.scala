@@ -15,6 +15,8 @@ trait LineChartMediaInfo
   /**
     * Indicates the type of chart.
     *
+    * @default line-chart
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-LineChartMediaInfo.html#type)
     */
   val `type`: String = js.native

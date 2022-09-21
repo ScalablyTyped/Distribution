@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OpenCardOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   var cardList: js.Array[CardId]
 }
@@ -22,6 +22,6 @@ object OpenCardOptions {
     
     inline def setCardList(value: js.Array[CardId]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    inline def setCardListVarargs(value: CardId*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: CardId*): Self = StObject.set(x, "cardList", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.LineNumbering")
 @js.native
-/* private */ class LineNumbering ()
+/* private */ open class LineNumbering ()
   extends StObject
      with typings.activexWord.Word.LineNumbering {
   
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var DistanceFromText: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var RestartMode: WdNumberingRule = js.native

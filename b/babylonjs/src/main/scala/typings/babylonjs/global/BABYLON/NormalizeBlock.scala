@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NormalizeBlock")
 @js.native
-class NormalizeBlock protected ()
+open class NormalizeBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.NormalizeBlock {
   /**

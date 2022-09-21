@@ -25,7 +25,7 @@ object ListEnvironmentsResponse {
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    inline def setEnvironmentVarargs(value: Environment*): Self = StObject.set(x, "environment", js.Array(value :_*))
+    inline def setEnvironmentVarargs(value: Environment*): Self = StObject.set(x, "environment", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

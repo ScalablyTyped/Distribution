@@ -23,12 +23,6 @@ object GetOpenIdTokenForDeveloperIdentityResponse {
     __obj.asInstanceOf[GetOpenIdTokenForDeveloperIdentityResponse]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenForDeveloperIdentityResponse")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: GetOpenIdTokenForDeveloperIdentityResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: GetOpenIdTokenForDeveloperIdentityResponse](x: Self) {
     
     inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])

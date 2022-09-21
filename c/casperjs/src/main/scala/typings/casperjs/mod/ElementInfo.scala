@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ElementInfo extends StObject {
   
-  var attributes: js.Any
+  var attributes: Any
   
   var height: Double
   
@@ -29,7 +29,7 @@ trait ElementInfo extends StObject {
 object ElementInfo {
   
   inline def apply(
-    attributes: js.Any,
+    attributes: Any,
     height: Double,
     html: String,
     nodeName: String,
@@ -46,7 +46,7 @@ object ElementInfo {
   
   extension [Self <: ElementInfo](x: Self) {
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

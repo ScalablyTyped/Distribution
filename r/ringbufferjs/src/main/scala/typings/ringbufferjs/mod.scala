@@ -8,17 +8,17 @@ object mod {
   
   @JSImport("ringbufferjs", JSImport.Namespace)
   @js.native
-  class ^[T] protected ()
+  open class ^[T] protected ()
     extends StObject
        with RingBuffer[T] {
     def this(capacity: Double) = this()
-    def this(capacity: Double, evictedCB: js.Function1[/* element */ T, js.Any]) = this()
+    def this(capacity: Double, evictedCB: js.Function1[/* element */ T, Any]) = this()
     
     /* CompleteClass */
     var _elements: js.Array[T] = js.native
     
     /* CompleteClass */
-    override def _evictedCb(element: T): js.Any = js.native
+    override def _evictedCb(element: T): Any = js.native
     
     /* CompleteClass */
     var _first: Double = js.native
@@ -61,7 +61,7 @@ object mod {
     
     var _elements: js.Array[T]
     
-    def _evictedCb(element: T): js.Any
+    def _evictedCb(element: T): Any
     
     var _first: Double
     
@@ -91,7 +91,7 @@ object mod {
     
     inline def apply[T](
       _elements: js.Array[T],
-      _evictedCb: T => js.Any,
+      _evictedCb: T => Any,
       _first: Double,
       _last: Double,
       _size: Double,
@@ -131,9 +131,9 @@ object mod {
       
       inline def set_elements(value: js.Array[T]): Self = StObject.set(x, "_elements", value.asInstanceOf[js.Any])
       
-      inline def set_elementsVarargs(value: T*): Self = StObject.set(x, "_elements", js.Array(value :_*))
+      inline def set_elementsVarargs(value: T*): Self = StObject.set(x, "_elements", js.Array(value*))
       
-      inline def set_evictedCb(value: T => js.Any): Self = StObject.set(x, "_evictedCb", js.Any.fromFunction1(value))
+      inline def set_evictedCb(value: T => Any): Self = StObject.set(x, "_evictedCb", js.Any.fromFunction1(value))
       
       inline def set_first(value: Double): Self = StObject.set(x, "_first", value.asInstanceOf[js.Any])
       

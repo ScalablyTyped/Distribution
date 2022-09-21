@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__internal-deprecate
 
-Typings are for version 1.0.0-pre.13
+Typings are for version 1.0.0-pre.24
 
 ## Library description:
 This package provides internal utilities for '@esfx' and is not intended for use in user-code.
@@ -10,10 +10,10 @@ This package provides internal utilities for '@esfx' and is not intended for use
 | ------------------ | :-------------: |
 | Full name          | @esfx/internal-deprecate |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 196478 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 21802.333333333332 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/esfx/esfx#readme)

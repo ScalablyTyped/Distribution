@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bindingInSyntaxMod {
   
-  @JSImport("inversify/dts/syntax/binding_in_syntax", "BindingInSyntax")
+  @JSImport("inversify/lib/syntax/binding_in_syntax", "BindingInSyntax")
   @js.native
-  class BindingInSyntax[T] protected ()
+  open class BindingInSyntax[T] protected ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.BindingInSyntax[T] {
     def this(binding: Binding[T]) = this()
     
-    /* private */ var _binding: js.Any = js.native
+    /* private */ var _binding: Any = js.native
     
     /* CompleteClass */
     override def inRequestScope(): BindingWhenOnSyntax[T] = js.native

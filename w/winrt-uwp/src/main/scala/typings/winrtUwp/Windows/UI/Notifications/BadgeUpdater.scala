@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +24,7 @@ trait BadgeUpdater extends StObject {
     * @param startTime The time at which the URI should first be polled for new badge content.
     * @param requestedInterval The frequency with which the URI is polled for new badge content, following the initial update at startTime.
     */
-  def startPeriodicUpdate(badgeContent: Uri, startTime: Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
+  def startPeriodicUpdate(badgeContent: Uri, startTime: js.Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
   
   /** Cancels the current series of timed updates for the badge that the updater is bound to. */
   def stopPeriodicUpdate(): Unit = js.native

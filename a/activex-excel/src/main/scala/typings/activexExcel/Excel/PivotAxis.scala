@@ -13,7 +13,7 @@ trait PivotAxis extends StObject {
   /* private */ @JSName("Excel.PivotAxis_typekey")
   var ExcelDotPivotAxis_typekey: PivotAxis
   
-  val Parent: js.Any
+  val Parent: Any
   
   def PivotLines(Index: Double): PivotLine
   @JSName("PivotLines")
@@ -25,7 +25,7 @@ object PivotAxis {
     Application: Application,
     Creator: XlCreator,
     ExcelDotPivotAxis_typekey: PivotAxis,
-    Parent: js.Any,
+    Parent: Any,
     PivotLines: PivotLines
   ): PivotAxis = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PivotLines = PivotLines.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object PivotAxis {
     
     inline def setExcelDotPivotAxis_typekey(value: PivotAxis): Self = StObject.set(x, "Excel.PivotAxis_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPivotLines(value: PivotLines): Self = StObject.set(x, "PivotLines", value.asInstanceOf[js.Any])
   }

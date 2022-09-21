@@ -4,7 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UserMeta extends StObject {
+/**
+  * @see x-oss-meta-* in https://help.aliyun.com/document_detail/31978.html for Aliyun user
+  * @see x-oss-meta-* in https://www.alibabacloud.com/help/en/doc-detail/31978.html for AlibabaCloud user
+  */
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in string ]: string | number} */ trait UserMeta extends StObject {
   
   var pid: Double
   

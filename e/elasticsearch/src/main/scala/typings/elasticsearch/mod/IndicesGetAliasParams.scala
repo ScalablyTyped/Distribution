@@ -45,7 +45,7 @@ object IndicesGetAliasParams {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,6 @@ object IndicesGetAliasParams {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
   }
 }

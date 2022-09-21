@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.MarkAsTaskRuleAction")
 @js.native
-/* private */ class MarkAsTaskRuleAction ()
+/* private */ open class MarkAsTaskRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.MarkAsTaskRuleAction {
   
@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotMarkAsTaskRuleAction_typekey: typings.activexOutlook.Outlook.MarkAsTaskRuleAction = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

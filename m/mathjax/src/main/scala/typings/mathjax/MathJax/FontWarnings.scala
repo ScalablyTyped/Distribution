@@ -36,7 +36,7 @@ trait FontWarnings extends StObject {
     * file for details of what are set by default. See the CSS style objects for details about how to specify CSS
     * styles via javascript objects.
     */
-  var messageStyle: js.UndefOr[js.Any] = js.undefined
+  var messageStyle: js.UndefOr[Any] = js.undefined
   
   /*This is the amount of time to show the FontWarning message, in milliseconds. The default is 12 seconds.
     * Setting this value to zero means that the message will not fade out (the user must close it manually).
@@ -66,7 +66,7 @@ object FontWarnings {
     
     inline def setMessage(value: HTMLMessages): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    inline def setMessageStyle(value: js.Any): Self = StObject.set(x, "messageStyle", value.asInstanceOf[js.Any])
+    inline def setMessageStyle(value: Any): Self = StObject.set(x, "messageStyle", value.asInstanceOf[js.Any])
     
     inline def setMessageStyleUndefined: Self = StObject.set(x, "messageStyle", js.undefined)
     

@@ -20,7 +20,7 @@ trait IgGridSummariesMethods extends StObject {
     * represents dataType for the current column
     * @param dataType
     */
-  def calculateSummaryColumn(ck: String, columnMethods: js.Array[js.Any], data: js.Object, dataType: js.Object): Unit
+  def calculateSummaryColumn(ck: String, columnMethods: js.Array[Any], data: js.Object, dataType: js.Object): Unit
   
   def changeGlobalLanguage(): Unit
   
@@ -104,7 +104,7 @@ object IgGridSummariesMethods {
   
   inline def apply(
     calculateSummaries: () => Unit,
-    calculateSummaryColumn: (String, js.Array[js.Any], js.Object, js.Object) => Unit,
+    calculateSummaryColumn: (String, js.Array[Any], js.Object, js.Object) => Unit,
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: () => Unit,
@@ -128,7 +128,7 @@ object IgGridSummariesMethods {
     
     inline def setCalculateSummaries(value: () => Unit): Self = StObject.set(x, "calculateSummaries", js.Any.fromFunction0(value))
     
-    inline def setCalculateSummaryColumn(value: (String, js.Array[js.Any], js.Object, js.Object) => Unit): Self = StObject.set(x, "calculateSummaryColumn", js.Any.fromFunction4(value))
+    inline def setCalculateSummaryColumn(value: (String, js.Array[Any], js.Object, js.Object) => Unit): Self = StObject.set(x, "calculateSummaryColumn", js.Any.fromFunction4(value))
     
     inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     

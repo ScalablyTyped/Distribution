@@ -5,7 +5,9 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
+import typings.reactNotificationsComponent.anon.Fade
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`bottom-center`
+import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`bottom-full`
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`bottom-left`
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`bottom-right`
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`ease-in-out`
@@ -14,6 +16,7 @@ import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`e
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`step-end`
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`step-start`
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`top-center`
+import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`top-full`
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`top-left`
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.`top-right`
 import typings.reactNotificationsComponent.reactNotificationsComponentStrings.bottom
@@ -33,14 +36,14 @@ object mod {
   
   @JSImport("react-notifications-component", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ReactNotificationProps, js.Object, js.Any] {
+  open class default protected ()
+    extends Component[ReactNotificationProps, js.Object, Any] {
     def this(props: ReactNotificationProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactNotificationProps, context: js.Any) = this()
+    def this(props: ReactNotificationProps, context: Any) = this()
   }
   
   object store {
@@ -115,7 +118,7 @@ object mod {
     
     var animationOut: js.UndefOr[js.Array[String]] = js.undefined
     
-    var container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
+    var container: `top-full` | `top-left` | `top-right` | `top-center` | center | `bottom-full` | `bottom-left` | `bottom-right` | `bottom-center`
     
     var content: js.UndefOr[
         (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] | ReactNode
@@ -129,7 +132,7 @@ object mod {
     
     var message: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.undefined
     
-    var onRemoval: js.UndefOr[js.Function2[/* id */ String, /* removedBy */ js.Any, Unit]] = js.undefined
+    var onRemoval: js.UndefOr[js.Function2[/* id */ String, /* removedBy */ Any, Unit]] = js.undefined
     
     var slidingEnter: js.UndefOr[TransitionOptions] = js.undefined
     
@@ -139,7 +142,7 @@ object mod {
     
     var touchRevert: js.UndefOr[TransitionOptions] = js.undefined
     
-    var touchSlidingExit: js.UndefOr[TransitionOptions] = js.undefined
+    var touchSlidingExit: js.UndefOr[Fade] = js.undefined
     
     var `type`: js.UndefOr[
         success | danger | info | typings.reactNotificationsComponent.reactNotificationsComponentStrings.default | warning
@@ -150,7 +153,7 @@ object mod {
   object ReactNotificationOptions {
     
     inline def apply(
-      container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
+      container: `top-full` | `top-left` | `top-right` | `top-center` | center | `bottom-full` | `bottom-left` | `bottom-right` | `bottom-center`
     ): ReactNotificationOptions = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactNotificationOptions]
@@ -162,16 +165,16 @@ object mod {
       
       inline def setAnimationInUndefined: Self = StObject.set(x, "animationIn", js.undefined)
       
-      inline def setAnimationInVarargs(value: String*): Self = StObject.set(x, "animationIn", js.Array(value :_*))
+      inline def setAnimationInVarargs(value: String*): Self = StObject.set(x, "animationIn", js.Array(value*))
       
       inline def setAnimationOut(value: js.Array[String]): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
       
       inline def setAnimationOutUndefined: Self = StObject.set(x, "animationOut", js.undefined)
       
-      inline def setAnimationOutVarargs(value: String*): Self = StObject.set(x, "animationOut", js.Array(value :_*))
+      inline def setAnimationOutVarargs(value: String*): Self = StObject.set(x, "animationOut", js.Array(value*))
       
       inline def setContainer(
-        value: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
+        value: `top-full` | `top-left` | `top-right` | `top-center` | center | `bottom-full` | `bottom-left` | `bottom-right` | `bottom-center`
       ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContent(value: (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
@@ -194,7 +197,7 @@ object mod {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setOnRemoval(value: (/* id */ String, /* removedBy */ js.Any) => Unit): Self = StObject.set(x, "onRemoval", js.Any.fromFunction2(value))
+      inline def setOnRemoval(value: (/* id */ String, /* removedBy */ Any) => Unit): Self = StObject.set(x, "onRemoval", js.Any.fromFunction2(value))
       
       inline def setOnRemovalUndefined: Self = StObject.set(x, "onRemoval", js.undefined)
       
@@ -214,7 +217,7 @@ object mod {
       
       inline def setTouchRevertUndefined: Self = StObject.set(x, "touchRevert", js.undefined)
       
-      inline def setTouchSlidingExit(value: TransitionOptions): Self = StObject.set(x, "touchSlidingExit", value.asInstanceOf[js.Any])
+      inline def setTouchSlidingExit(value: Fade): Self = StObject.set(x, "touchSlidingExit", value.asInstanceOf[js.Any])
       
       inline def setTouchSlidingExitUndefined: Self = StObject.set(x, "touchSlidingExit", js.undefined)
       
@@ -271,7 +274,7 @@ object mod {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   

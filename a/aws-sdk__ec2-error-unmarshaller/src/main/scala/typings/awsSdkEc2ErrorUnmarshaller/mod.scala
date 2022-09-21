@@ -8,5 +8,5 @@ object mod {
   
   @JSImport("@aws-sdk/ec2-error-unmarshaller", "ec2ErrorUnmarshaller")
   @js.native
-  val ec2ErrorUnmarshaller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceExceptionParser */ js.Any = js.native
+  val ec2ErrorUnmarshaller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceExceptionParser */ Any = js.native
 }

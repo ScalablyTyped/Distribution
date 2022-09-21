@@ -2,7 +2,6 @@ package typings.tensorflowTfjsCore
 
 import typings.std.RequestInit
 import typings.std.Response
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.typesMod.RequestDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,13 +13,13 @@ object platformMod {
   trait Platform extends StObject {
     
     /** Decode the provided bytes into a string using the provided encoding. */
-    def decode(bytes: Uint8Array, encoding: String): String = js.native
+    def decode(bytes: js.typedarray.Uint8Array, encoding: String): String = js.native
     
     /**
       * Encode the provided string into an array of bytes using the provided
       * encoding.
       */
-    def encode(text: String, encoding: String): Uint8Array = js.native
+    def encode(text: String, encoding: String): js.typedarray.Uint8Array = js.native
     
     /**
       * Makes an HTTP request.

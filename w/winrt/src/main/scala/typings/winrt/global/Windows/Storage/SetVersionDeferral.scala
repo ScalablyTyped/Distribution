@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.SetVersionDeferral")
 @js.native
-class SetVersionDeferral ()
+open class SetVersionDeferral ()
   extends StObject
      with typings.winrt.Windows.Storage.SetVersionDeferral {
   

@@ -14,6 +14,6 @@ object anon {
     
     def apply(tpl: String): Statement | js.Array[Statement] = js.native
     def apply(tpl: String, opts: TemplateBuilderOptions): Statement | js.Array[Statement] = js.native
-    def apply(tpl: TemplateStringsArray, args: js.Any*): Statement | js.Array[Statement] = js.native
+    def apply(tpl: TemplateStringsArray, args: Any*): Statement | js.Array[Statement] = js.native
   }
 }

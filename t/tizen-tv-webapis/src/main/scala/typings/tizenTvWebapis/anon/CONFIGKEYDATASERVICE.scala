@@ -9,14 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CONFIGKEYDATASERVICE extends StObject {
   
   /**
-    * Data service configuration, it can be set as string type with numbers
+    * Data service configuration, it can be setted as string ype with numbers
+    *
     * @since 2.3
+    *
+    * @version 1.0
+    *
     */
   var CONFIG_KEY_DATA_SERVICE: `0`
   
   /**
     * Service country, readonly
+    *
     * @since 2.3
+    *
+    * @version 1.0
+    *
     */
   var CONFIG_KEY_SERVICE_COUNTRY: `1`
 }

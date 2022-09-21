@@ -29,7 +29,7 @@ trait RepositoryMetadata extends StObject {
   /**
     * The date and time the repository was created, in timestamp format.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The repository's default branch name.
@@ -39,7 +39,7 @@ trait RepositoryMetadata extends StObject {
   /**
     * The date and time the repository was last modified, in timestamp format.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A comment or description about the repository.
@@ -81,7 +81,7 @@ object RepositoryMetadata {
     
     inline def setCloneUrlSshUndefined: Self = StObject.set(x, "cloneUrlSsh", js.undefined)
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -89,7 +89,7 @@ object RepositoryMetadata {
     
     inline def setDefaultBranchUndefined: Self = StObject.set(x, "defaultBranch", js.undefined)
     
-    inline def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     

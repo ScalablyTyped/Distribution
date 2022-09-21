@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "arrify" : "2.0.1"
+      "arrify" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "arrify" : "2.0.1"
+      "arrify" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

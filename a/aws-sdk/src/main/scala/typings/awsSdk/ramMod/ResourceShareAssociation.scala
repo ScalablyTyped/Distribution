@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceShareAssociation extends StObject {
   
   /**
-    * The associated entity. For resource associations, this is the ARN of the resource. For principal associations, this is the ID of an AWS account or the ARN of an OU or organization from AWS Organizations.
+    * The associated entity. This can be either of the following:   For a resource association, this is the Amazon Resoure Name (ARN) of the resource.   For principal associations, this is one of the following:   The ID of an Amazon Web Services account   The Amazon Resoure Name (ARN) of an organization in Organizations   The ARN of an organizational unit (OU) in Organizations   The ARN of an IAM role   The ARN of an IAM user    
     */
   var associatedEntity: js.UndefOr[String] = js.undefined
   
   /**
-    * The association type.
+    * The type of entity included in this association.
     */
   var associationType: js.UndefOr[ResourceShareAssociationType] = js.undefined
   
   /**
-    * The time when the association was created.
+    * The date and time when the association was created.
     */
-  var creationTime: js.UndefOr[DateTime] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Indicates whether the principal belongs to the same AWS organization as the AWS account that owns the resource share.
+    * Indicates whether the principal belongs to the same organization in Organizations as the Amazon Web Services account that owns the resource share.
     */
   var external: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The time when the association was last updated.
+    * The date and time when the association was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
+  var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resource share.
+    * The Amazon Resoure Name (ARN) of the resource share.
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   
@@ -42,7 +42,7 @@ trait ResourceShareAssociation extends StObject {
   var resourceShareName: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the association.
+    * The current status of the association.
     */
   var status: js.UndefOr[ResourceShareAssociationStatus] = js.undefined
   
@@ -68,7 +68,7 @@ object ResourceShareAssociation {
     
     inline def setAssociationTypeUndefined: Self = StObject.set(x, "associationType", js.undefined)
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
@@ -76,7 +76,7 @@ object ResourceShareAssociation {
     
     inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
-    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     

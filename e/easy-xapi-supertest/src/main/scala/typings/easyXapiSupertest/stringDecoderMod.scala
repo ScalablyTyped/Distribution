@@ -1,6 +1,6 @@
 package typings.easyXapiSupertest
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object stringDecoderMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("string_decoder", "StringDecoder")
   @js.native
-  class StringDecoder protected ()
+  open class StringDecoder protected ()
     extends StObject
        with NodeStringDecoder {
     def this(encoding: String) = this()

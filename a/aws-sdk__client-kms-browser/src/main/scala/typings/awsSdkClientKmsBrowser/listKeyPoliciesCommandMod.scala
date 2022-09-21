@@ -16,7 +16,7 @@ object listKeyPoliciesCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/ListKeyPoliciesCommand", "ListKeyPoliciesCommand")
   @js.native
-  class ListKeyPoliciesCommand protected ()
+  open class ListKeyPoliciesCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object listKeyPoliciesCommandMod {
     override val middlewareStack: MiddlewareStack[ListKeyPoliciesInput, ListKeyPoliciesOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[ListKeyPoliciesInput, ListKeyPoliciesOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListKeyPoliciesInput, ListKeyPoliciesOutput] = js.native
   }
 }

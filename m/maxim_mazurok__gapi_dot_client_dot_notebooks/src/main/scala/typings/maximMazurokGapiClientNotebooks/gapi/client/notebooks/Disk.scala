@@ -34,7 +34,7 @@ trait Disk extends StObject {
   /**
     * Indicates the disk interface to use for attaching this disk, which is either SCSI or NVME. The default is SCSI. Persistent disks must always use SCSI and the request will fail if
     * you attempt to attach a persistent disk in any other format than SCSI. Local SSDs can use either NVME or SCSI. For performance characteristics of SCSI over NVMe, see Local SSD
-    * performance. Valid values: NVME SCSI
+    * performance. Valid values: * NVME * SCSI
     */
   var interface: js.UndefOr[String] = js.undefined
   
@@ -44,13 +44,13 @@ trait Disk extends StObject {
   /** A list of publicly visible licenses. Reserved for Google's use. A License represents billing and aggregate usage data for public and marketplace images. */
   var licenses: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The mode in which to attach this disk, either READ_WRITE or READ_ONLY. If not specified, the default is to attach the disk in READ_WRITE mode. Valid values: READ_ONLY READ_WRITE */
+  /** The mode in which to attach this disk, either READ_WRITE or READ_ONLY. If not specified, the default is to attach the disk in READ_WRITE mode. Valid values: * READ_ONLY * READ_WRITE */
   var mode: js.UndefOr[String] = js.undefined
   
   /** Indicates a valid partial or full URL to an existing Persistent Disk resource. */
   var source: js.UndefOr[String] = js.undefined
   
-  /** Indicates the type of the disk, either SCRATCH or PERSISTENT. Valid values: PERSISTENT SCRATCH */
+  /** Indicates the type of the disk, either SCRATCH or PERSISTENT. Valid values: * PERSISTENT * SCRATCH */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object Disk {
@@ -82,7 +82,7 @@ object Disk {
     
     inline def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
     
-    inline def setGuestOsFeaturesVarargs(value: GuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
+    inline def setGuestOsFeaturesVarargs(value: GuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value*))
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object Disk {
     
     inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
-    inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+    inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value*))
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

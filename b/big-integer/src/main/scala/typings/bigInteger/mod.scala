@@ -31,7 +31,7 @@ object mod extends Shortcut {
       
       inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -136,6 +136,7 @@ object mod extends Shortcut {
       * Returns true if the number is prime, false otherwise.
       */
     def isPrime(): Boolean = js.native
+    def isPrime(strict: Boolean): Boolean = js.native
     
     /**
       * Returns true if the number is very likely to be prime, false otherwise.
@@ -4364,7 +4365,7 @@ object mod extends Shortcut {
     /**
       * Returns true if x is a BigInteger, false otherwise.
       */
-    def isInstance(x: js.Any): /* is big-integer.big-integer.BigInteger */ Boolean = js.native
+    def isInstance(x: Any): /* is big-integer.big-integer.BigInteger */ Boolean = js.native
     
     /**
       * Finds the least common multiple of a and b.

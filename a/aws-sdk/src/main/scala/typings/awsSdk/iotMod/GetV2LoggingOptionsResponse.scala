@@ -17,7 +17,7 @@ trait GetV2LoggingOptionsResponse extends StObject {
   var disableAllLogs: js.UndefOr[DisableAllLogs] = js.undefined
   
   /**
-    * The IAM role ARN AWS IoT uses to write to your CloudWatch logs.
+    * The IAM role ARN IoT uses to write to your CloudWatch logs.
     */
   var roleArn: js.UndefOr[AwsArn] = js.undefined
 }

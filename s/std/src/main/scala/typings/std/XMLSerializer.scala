@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides the serializeToString() method to construct an XML string representing a DOM tree. */
 trait XMLSerializer extends StObject {
   
+  /* standard dom */
   def serializeToString(root: Node): java.lang.String
 }
 object XMLSerializer {

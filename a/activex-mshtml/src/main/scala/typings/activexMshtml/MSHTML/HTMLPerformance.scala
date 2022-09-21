@@ -13,7 +13,7 @@ trait HTMLPerformance extends StObject {
   
   val timing: IHTMLPerformanceTiming
   
-  def toJSON(): js.Any
+  def toJSON(): Any
 }
 object HTMLPerformance {
   
@@ -21,7 +21,7 @@ object HTMLPerformance {
     MSHTMLDotHTMLPerformance_typekey: HTMLPerformance,
     navigation: IHTMLPerformanceNavigation,
     timing: IHTMLPerformanceTiming,
-    toJSON: () => js.Any
+    toJSON: () => Any
   ): HTMLPerformance = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], timing = timing.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.updateDynamic("MSHTML.HTMLPerformance_typekey")(MSHTMLDotHTMLPerformance_typekey.asInstanceOf[js.Any])
@@ -36,6 +36,6 @@ object HTMLPerformance {
     
     inline def setTiming(value: IHTMLPerformanceTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

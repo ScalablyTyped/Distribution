@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFloatingActionButtonVerticalPosition")
 @js.native
-class ASPxClientFloatingActionButtonVerticalPosition ()
+open class ASPxClientFloatingActionButtonVerticalPosition ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFloatingActionButtonVerticalPosition
 object ASPxClientFloatingActionButtonVerticalPosition {

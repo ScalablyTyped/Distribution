@@ -1,5 +1,17 @@
 package typings.tizenTvWebapis
 
+import typings.tizenTvWebapis.mod.AVPlayBufferOption
+import typings.tizenTvWebapis.mod.AVPlayBufferSizeUnit
+import typings.tizenTvWebapis.mod.AVPlayDisplayMode
+import typings.tizenTvWebapis.mod.AVPlayDrmOperation
+import typings.tizenTvWebapis.mod.AVPlayDrmType
+import typings.tizenTvWebapis.mod.AVPlayError
+import typings.tizenTvWebapis.mod.AVPlayEvent
+import typings.tizenTvWebapis.mod.AVPlayPlayerState
+import typings.tizenTvWebapis.mod.AVPlayStreamType
+import typings.tizenTvWebapis.mod.AVPlayStreamingPropertyType
+import typings.tizenTvWebapis.mod.HistoryType
+import typings.tizenTvWebapis.mod.TVServerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object tizenTvWebapisStrings {
   
   @js.native
-  sealed trait ADAPTIVE_INFO extends StObject
+  sealed trait ADAPTIVE_INFO
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def ADAPTIVE_INFO: ADAPTIVE_INFO = "ADAPTIVE_INFO".asInstanceOf[ADAPTIVE_INFO]
   
   @js.native
@@ -17,6 +31,12 @@ object tizenTvWebapisStrings {
   @js.native
   sealed trait AKA extends StObject
   inline def AKA: AKA = "AKA".asInstanceOf[AKA]
+  
+  @js.native
+  sealed trait ALL
+    extends StObject
+       with HistoryType
+  inline def ALL: ALL = "ALL".asInstanceOf[ALL]
   
   @js.native
   sealed trait AMH extends StObject
@@ -31,11 +51,15 @@ object tizenTvWebapisStrings {
   inline def ASM: ASM = "ASM".asInstanceOf[ASM]
   
   @js.native
-  sealed trait AUDIO extends StObject
+  sealed trait AUDIO
+    extends StObject
+       with AVPlayStreamType
   inline def AUDIO: AUDIO = "AUDIO".asInstanceOf[AUDIO]
   
   @js.native
-  sealed trait AVAILABLE_BITRATE extends StObject
+  sealed trait AVAILABLE_BITRATE
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def AVAILABLE_BITRATE: AVAILABLE_BITRATE = "AVAILABLE_BITRATE".asInstanceOf[AVAILABLE_BITRATE]
   
   @js.native
@@ -59,11 +83,15 @@ object tizenTvWebapisStrings {
   inline def CMN: CMN = "CMN".asInstanceOf[CMN]
   
   @js.native
-  sealed trait COOKIE extends StObject
+  sealed trait COOKIE
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def COOKIE: COOKIE = "COOKIE".asInstanceOf[COOKIE]
   
   @js.native
-  sealed trait CURRENT_BANDWIDTH extends StObject
+  sealed trait CURRENT_BANDWIDTH
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def CURRENT_BANDWIDTH: CURRENT_BANDWIDTH = "CURRENT_BANDWIDTH".asInstanceOf[CURRENT_BANDWIDTH]
   
   @js.native
@@ -79,7 +107,9 @@ object tizenTvWebapisStrings {
   inline def DAN: DAN = "DAN".asInstanceOf[DAN]
   
   @js.native
-  sealed trait DEV extends StObject
+  sealed trait DEV
+    extends StObject
+       with TVServerType
   inline def DEV: DEV = "DEV".asInstanceOf[DEV]
   
   @js.native
@@ -87,11 +117,15 @@ object tizenTvWebapisStrings {
   inline def DUT: DUT = "DUT".asInstanceOf[DUT]
   
   @js.native
-  sealed trait EME_PLAYREADY extends StObject
+  sealed trait EME_PLAYREADY
+    extends StObject
+       with AVPlayDrmType
   inline def EME_PLAYREADY: EME_PLAYREADY = "EME_PLAYREADY".asInstanceOf[EME_PLAYREADY]
   
   @js.native
-  sealed trait EME_WIDEVINE_CDM extends StObject
+  sealed trait EME_WIDEVINE_CDM
+    extends StObject
+       with AVPlayDrmType
   inline def EME_WIDEVINE_CDM: EME_WIDEVINE_CDM = "EME_WIDEVINE_CDM".asInstanceOf[EME_WIDEVINE_CDM]
   
   @js.native
@@ -123,7 +157,9 @@ object tizenTvWebapisStrings {
   inline def FRE: FRE = "FRE".asInstanceOf[FRE]
   
   @js.native
-  sealed trait Finalize extends StObject
+  sealed trait Finalize
+    extends StObject
+       with AVPlayDrmOperation
   inline def Finalize: Finalize = "Finalize".asInstanceOf[Finalize]
   
   @js.native
@@ -135,7 +171,9 @@ object tizenTvWebapisStrings {
   inline def GER: GER = "GER".asInstanceOf[GER]
   
   @js.native
-  sealed trait GET_LIVE_DURATION extends StObject
+  sealed trait GET_LIVE_DURATION
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def GET_LIVE_DURATION: GET_LIVE_DURATION = "GET_LIVE_DURATION".asInstanceOf[GET_LIVE_DURATION]
   
   @js.native
@@ -159,7 +197,9 @@ object tizenTvWebapisStrings {
   inline def GUJ: GUJ = "GUJ".asInstanceOf[GUJ]
   
   @js.native
-  sealed trait GetUID extends StObject
+  sealed trait GetUID
+    extends StObject
+       with AVPlayDrmOperation
   inline def GetUID: GetUID = "GetUID".asInstanceOf[GetUID]
   
   @js.native
@@ -183,7 +223,9 @@ object tizenTvWebapisStrings {
   inline def HUN: HUN = "HUN".asInstanceOf[HUN]
   
   @js.native
-  sealed trait IDLE extends StObject
+  sealed trait IDLE
+    extends StObject
+       with AVPlayPlayerState
   inline def IDLE: IDLE = "IDLE".asInstanceOf[IDLE]
   
   @js.native
@@ -199,7 +241,9 @@ object tizenTvWebapisStrings {
   inline def IRI: IRI = "IRI".asInstanceOf[IRI]
   
   @js.native
-  sealed trait IS_LIVE extends StObject
+  sealed trait IS_LIVE
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def IS_LIVE: IS_LIVE = "IS_LIVE".asInstanceOf[IS_LIVE]
   
   @js.native
@@ -207,11 +251,15 @@ object tizenTvWebapisStrings {
   inline def ITA: ITA = "ITA".asInstanceOf[ITA]
   
   @js.native
-  sealed trait Initialize extends StObject
+  sealed trait Initialize
+    extends StObject
+       with AVPlayDrmOperation
   inline def Initialize: Initialize = "Initialize".asInstanceOf[Initialize]
   
   @js.native
-  sealed trait InstallLicense extends StObject
+  sealed trait InstallLicense
+    extends StObject
+       with AVPlayDrmOperation
   inline def InstallLicense: InstallLicense = "InstallLicense".asInstanceOf[InstallLicense]
   
   @js.native
@@ -235,7 +283,9 @@ object tizenTvWebapisStrings {
   inline def LAV: LAV = "LAV".asInstanceOf[LAV]
   
   @js.native
-  sealed trait LISTEN_SPARSE_TRACK extends StObject
+  sealed trait LISTEN_SPARSE_TRACK
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def LISTEN_SPARSE_TRACK: LISTEN_SPARSE_TRACK = "LISTEN_SPARSE_TRACK".asInstanceOf[LISTEN_SPARSE_TRACK]
   
   @js.native
@@ -263,7 +313,15 @@ object tizenTvWebapisStrings {
   inline def NBL: NBL = "NBL".asInstanceOf[NBL]
   
   @js.native
-  sealed trait NONE extends StObject
+  sealed trait `NON-SUBSCRIPTION`
+    extends StObject
+       with HistoryType
+  inline def `NON-SUBSCRIPTION`: `NON-SUBSCRIPTION` = "NON-SUBSCRIPTION".asInstanceOf[`NON-SUBSCRIPTION`]
+  
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with AVPlayPlayerState
   inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
@@ -291,7 +349,9 @@ object tizenTvWebapisStrings {
   inline def PAN: PAN = "PAN".asInstanceOf[PAN]
   
   @js.native
-  sealed trait PAUSED extends StObject
+  sealed trait PAUSED
+    extends StObject
+       with AVPlayPlayerState
   inline def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
   
   @js.native
@@ -299,115 +359,171 @@ object tizenTvWebapisStrings {
   inline def PER: PER = "PER".asInstanceOf[PER]
   
   @js.native
-  sealed trait PLAYER_BUFFER_FOR_PLAY extends StObject
+  sealed trait PLAYER_BUFFER_FOR_PLAY
+    extends StObject
+       with AVPlayBufferOption
   inline def PLAYER_BUFFER_FOR_PLAY: PLAYER_BUFFER_FOR_PLAY = "PLAYER_BUFFER_FOR_PLAY".asInstanceOf[PLAYER_BUFFER_FOR_PLAY]
   
   @js.native
-  sealed trait PLAYER_BUFFER_FOR_RESUME extends StObject
+  sealed trait PLAYER_BUFFER_FOR_RESUME
+    extends StObject
+       with AVPlayBufferOption
   inline def PLAYER_BUFFER_FOR_RESUME: PLAYER_BUFFER_FOR_RESUME = "PLAYER_BUFFER_FOR_RESUME".asInstanceOf[PLAYER_BUFFER_FOR_RESUME]
   
   @js.native
-  sealed trait PLAYER_BUFFER_SIZE_IN_BYTE extends StObject
+  sealed trait PLAYER_BUFFER_SIZE_IN_BYTE
+    extends StObject
+       with AVPlayBufferSizeUnit
   inline def PLAYER_BUFFER_SIZE_IN_BYTE: PLAYER_BUFFER_SIZE_IN_BYTE = "PLAYER_BUFFER_SIZE_IN_BYTE".asInstanceOf[PLAYER_BUFFER_SIZE_IN_BYTE]
   
   @js.native
-  sealed trait PLAYER_BUFFER_SIZE_IN_SECOND extends StObject
+  sealed trait PLAYER_BUFFER_SIZE_IN_SECOND
+    extends StObject
+       with AVPlayBufferSizeUnit
   inline def PLAYER_BUFFER_SIZE_IN_SECOND: PLAYER_BUFFER_SIZE_IN_SECOND = "PLAYER_BUFFER_SIZE_IN_SECOND".asInstanceOf[PLAYER_BUFFER_SIZE_IN_SECOND]
   
   @js.native
-  sealed trait PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO extends StObject
+  sealed trait PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO
+    extends StObject
+       with AVPlayDisplayMode
   inline def PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO: PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO = "PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO".asInstanceOf[PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO]
   
   @js.native
-  sealed trait PLAYER_DISPLAY_MODE_FULL_SCREEN extends StObject
+  sealed trait PLAYER_DISPLAY_MODE_FULL_SCREEN
+    extends StObject
+       with AVPlayDisplayMode
   inline def PLAYER_DISPLAY_MODE_FULL_SCREEN: PLAYER_DISPLAY_MODE_FULL_SCREEN = "PLAYER_DISPLAY_MODE_FULL_SCREEN".asInstanceOf[PLAYER_DISPLAY_MODE_FULL_SCREEN]
   
   @js.native
-  sealed trait PLAYER_DISPLAY_MODE_LETTER_BOX extends StObject
+  sealed trait PLAYER_DISPLAY_MODE_LETTER_BOX
+    extends StObject
+       with AVPlayDisplayMode
   inline def PLAYER_DISPLAY_MODE_LETTER_BOX: PLAYER_DISPLAY_MODE_LETTER_BOX = "PLAYER_DISPLAY_MODE_LETTER_BOX".asInstanceOf[PLAYER_DISPLAY_MODE_LETTER_BOX]
   
   @js.native
-  sealed trait PLAYER_ERROR_CONNECTION_FAILED extends StObject
+  sealed trait PLAYER_ERROR_CONNECTION_FAILED
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_CONNECTION_FAILED: PLAYER_ERROR_CONNECTION_FAILED = "PLAYER_ERROR_CONNECTION_FAILED".asInstanceOf[PLAYER_ERROR_CONNECTION_FAILED]
   
   @js.native
-  sealed trait PLAYER_ERROR_GENEREIC extends StObject
+  sealed trait PLAYER_ERROR_GENEREIC
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_GENEREIC: PLAYER_ERROR_GENEREIC = "PLAYER_ERROR_GENEREIC".asInstanceOf[PLAYER_ERROR_GENEREIC]
   
   @js.native
-  sealed trait PLAYER_ERROR_INVALID_OPERATION extends StObject
+  sealed trait PLAYER_ERROR_INVALID_OPERATION
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_INVALID_OPERATION: PLAYER_ERROR_INVALID_OPERATION = "PLAYER_ERROR_INVALID_OPERATION".asInstanceOf[PLAYER_ERROR_INVALID_OPERATION]
   
   @js.native
-  sealed trait PLAYER_ERROR_INVALID_PARAMETER extends StObject
+  sealed trait PLAYER_ERROR_INVALID_PARAMETER
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_INVALID_PARAMETER: PLAYER_ERROR_INVALID_PARAMETER = "PLAYER_ERROR_INVALID_PARAMETER".asInstanceOf[PLAYER_ERROR_INVALID_PARAMETER]
   
   @js.native
-  sealed trait PLAYER_ERROR_INVALID_STATE extends StObject
+  sealed trait PLAYER_ERROR_INVALID_STATE
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_INVALID_STATE: PLAYER_ERROR_INVALID_STATE = "PLAYER_ERROR_INVALID_STATE".asInstanceOf[PLAYER_ERROR_INVALID_STATE]
   
   @js.native
-  sealed trait PLAYER_ERROR_INVALID_URI extends StObject
+  sealed trait PLAYER_ERROR_INVALID_URI
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_INVALID_URI: PLAYER_ERROR_INVALID_URI = "PLAYER_ERROR_INVALID_URI".asInstanceOf[PLAYER_ERROR_INVALID_URI]
   
   @js.native
-  sealed trait PLAYER_ERROR_NONE extends StObject
+  sealed trait PLAYER_ERROR_NONE
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_NONE: PLAYER_ERROR_NONE = "PLAYER_ERROR_NONE".asInstanceOf[PLAYER_ERROR_NONE]
   
   @js.native
-  sealed trait PLAYER_ERROR_NOT_SUPPORTED_FILE extends StObject
+  sealed trait PLAYER_ERROR_NOT_SUPPORTED_FILE
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_NOT_SUPPORTED_FILE: PLAYER_ERROR_NOT_SUPPORTED_FILE = "PLAYER_ERROR_NOT_SUPPORTED_FILE".asInstanceOf[PLAYER_ERROR_NOT_SUPPORTED_FILE]
   
   @js.native
-  sealed trait PLAYER_ERROR_NOT_SUPPORTED_FORMAT extends StObject
+  sealed trait PLAYER_ERROR_NOT_SUPPORTED_FORMAT
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_NOT_SUPPORTED_FORMAT: PLAYER_ERROR_NOT_SUPPORTED_FORMAT = "PLAYER_ERROR_NOT_SUPPORTED_FORMAT".asInstanceOf[PLAYER_ERROR_NOT_SUPPORTED_FORMAT]
   
   @js.native
-  sealed trait PLAYER_ERROR_NO_SUCH_FILE extends StObject
+  sealed trait PLAYER_ERROR_NO_SUCH_FILE
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_NO_SUCH_FILE: PLAYER_ERROR_NO_SUCH_FILE = "PLAYER_ERROR_NO_SUCH_FILE".asInstanceOf[PLAYER_ERROR_NO_SUCH_FILE]
   
   @js.native
-  sealed trait PLAYER_ERROR_SEEK_FAILED extends StObject
+  sealed trait PLAYER_ERROR_SEEK_FAILED
+    extends StObject
+       with AVPlayError
   inline def PLAYER_ERROR_SEEK_FAILED: PLAYER_ERROR_SEEK_FAILED = "PLAYER_ERROR_SEEK_FAILED".asInstanceOf[PLAYER_ERROR_SEEK_FAILED]
   
   @js.native
-  sealed trait PLAYER_MSG_BITRATE_CHANGE extends StObject
+  sealed trait PLAYER_MSG_BITRATE_CHANGE
+    extends StObject
+       with AVPlayEvent
   inline def PLAYER_MSG_BITRATE_CHANGE: PLAYER_MSG_BITRATE_CHANGE = "PLAYER_MSG_BITRATE_CHANGE".asInstanceOf[PLAYER_MSG_BITRATE_CHANGE]
   
   @js.native
-  sealed trait PLAYER_MSG_DRM_CHALLENGE_DATA extends StObject
+  sealed trait PLAYER_MSG_DRM_CHALLENGE_DATA
+    extends StObject
+       with AVPlayEvent
   inline def PLAYER_MSG_DRM_CHALLENGE_DATA: PLAYER_MSG_DRM_CHALLENGE_DATA = "PLAYER_MSG_DRM_CHALLENGE_DATA".asInstanceOf[PLAYER_MSG_DRM_CHALLENGE_DATA]
   
   @js.native
-  sealed trait PLAYER_MSG_FRAGMENT_INFO extends StObject
+  sealed trait PLAYER_MSG_FRAGMENT_INFO
+    extends StObject
+       with AVPlayEvent
   inline def PLAYER_MSG_FRAGMENT_INFO: PLAYER_MSG_FRAGMENT_INFO = "PLAYER_MSG_FRAGMENT_INFO".asInstanceOf[PLAYER_MSG_FRAGMENT_INFO]
   
   @js.native
-  sealed trait PLAYER_MSG_HTTP_ERROR_CODE extends StObject
+  sealed trait PLAYER_MSG_HTTP_ERROR_CODE
+    extends StObject
+       with AVPlayEvent
   inline def PLAYER_MSG_HTTP_ERROR_CODE: PLAYER_MSG_HTTP_ERROR_CODE = "PLAYER_MSG_HTTP_ERROR_CODE".asInstanceOf[PLAYER_MSG_HTTP_ERROR_CODE]
   
   @js.native
-  sealed trait PLAYER_MSG_NONE extends StObject
+  sealed trait PLAYER_MSG_NONE
+    extends StObject
+       with AVPlayEvent
   inline def PLAYER_MSG_NONE: PLAYER_MSG_NONE = "PLAYER_MSG_NONE".asInstanceOf[PLAYER_MSG_NONE]
   
   @js.native
-  sealed trait PLAYER_MSG_RESOLUTION_CHANGED extends StObject
+  sealed trait PLAYER_MSG_RESOLUTION_CHANGED
+    extends StObject
+       with AVPlayEvent
   inline def PLAYER_MSG_RESOLUTION_CHANGED: PLAYER_MSG_RESOLUTION_CHANGED = "PLAYER_MSG_RESOLUTION_CHANGED".asInstanceOf[PLAYER_MSG_RESOLUTION_CHANGED]
   
   @js.native
-  sealed trait PLAYER_SPARSE_TRACK_DETECT extends StObject
+  sealed trait PLAYER_SPARSE_TRACK_DETECT
+    extends StObject
+       with AVPlayEvent
   inline def PLAYER_SPARSE_TRACK_DETECT: PLAYER_SPARSE_TRACK_DETECT = "PLAYER_SPARSE_TRACK_DETECT".asInstanceOf[PLAYER_SPARSE_TRACK_DETECT]
   
   @js.native
-  sealed trait PLAYER_STREAMING_EVENT extends StObject
+  sealed trait PLAYER_STREAMING_EVENT
+    extends StObject
+       with AVPlayEvent
   inline def PLAYER_STREAMING_EVENT: PLAYER_STREAMING_EVENT = "PLAYER_STREAMING_EVENT".asInstanceOf[PLAYER_STREAMING_EVENT]
   
   @js.native
-  sealed trait PLAYING extends StObject
+  sealed trait PLAYING
+    extends StObject
+       with AVPlayPlayerState
   inline def PLAYING: PLAYING = "PLAYING".asInstanceOf[PLAYING]
   
   @js.native
-  sealed trait PLAYREADY extends StObject
+  sealed trait PLAYREADY
+    extends StObject
+       with AVPlayDrmType
   inline def PLAYREADY: PLAYREADY = "PLAYREADY".asInstanceOf[PLAYREADY]
   
   @js.native
@@ -419,23 +535,33 @@ object tizenTvWebapisStrings {
   inline def POR: POR = "POR".asInstanceOf[POR]
   
   @js.native
-  sealed trait PORTRAIT_MODE extends StObject
+  sealed trait PORTRAIT_MODE
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def PORTRAIT_MODE: PORTRAIT_MODE = "PORTRAIT_MODE".asInstanceOf[PORTRAIT_MODE]
   
   @js.native
-  sealed trait PRD extends StObject
+  sealed trait PRD
+    extends StObject
+       with TVServerType
   inline def PRD: PRD = "PRD".asInstanceOf[PRD]
   
   @js.native
-  sealed trait PREBUFFER_MODE extends StObject
+  sealed trait PREBUFFER_MODE
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def PREBUFFER_MODE: PREBUFFER_MODE = "PREBUFFER_MODE".asInstanceOf[PREBUFFER_MODE]
   
   @js.native
-  sealed trait PROPERTY_HD_AUDIO extends StObject
+  sealed trait PROPERTY_HD_AUDIO
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def PROPERTY_HD_AUDIO: PROPERTY_HD_AUDIO = "PROPERTY_HD_AUDIO".asInstanceOf[PROPERTY_HD_AUDIO]
   
   @js.native
-  sealed trait ProcessInitiator extends StObject
+  sealed trait ProcessInitiator
+    extends StObject
+       with AVPlayDrmOperation
   inline def ProcessInitiator: ProcessInitiator = "ProcessInitiator".asInstanceOf[ProcessInitiator]
   
   @js.native
@@ -451,7 +577,9 @@ object tizenTvWebapisStrings {
   inline def QAC: QAC = "QAC".asInstanceOf[QAC]
   
   @js.native
-  sealed trait READY extends StObject
+  sealed trait READY
+    extends StObject
+       with AVPlayPlayerState
   inline def READY: READY = "READY".asInstanceOf[READY]
   
   @js.native
@@ -463,15 +591,21 @@ object tizenTvWebapisStrings {
   inline def RUS: RUS = "RUS".asInstanceOf[RUS]
   
   @js.native
-  sealed trait SET_MIXEDFRAME extends StObject
+  sealed trait SET_MIXEDFRAME
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def SET_MIXEDFRAME: SET_MIXEDFRAME = "SET_MIXEDFRAME".asInstanceOf[SET_MIXEDFRAME]
   
   @js.native
-  sealed trait SET_MODE_4K extends StObject
+  sealed trait SET_MODE_4K
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def SET_MODE_4K: SET_MODE_4K = "SET_MODE_4K".asInstanceOf[SET_MODE_4K]
   
   @js.native
-  sealed trait SET_VR360_MODE extends StObject
+  sealed trait SET_VR360_MODE
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def SET_VR360_MODE: SET_VR360_MODE = "SET_VR360_MODE".asInstanceOf[SET_VR360_MODE]
   
   @js.native
@@ -499,6 +633,12 @@ object tizenTvWebapisStrings {
   inline def SSW: SSW = "SSW".asInstanceOf[SSW]
   
   @js.native
+  sealed trait SUBSCRIPTION
+    extends StObject
+       with HistoryType
+  inline def SUBSCRIPTION: SUBSCRIPTION = "SUBSCRIPTION".asInstanceOf[SUBSCRIPTION]
+  
+  @js.native
   sealed trait SWA extends StObject
   inline def SWA: SWA = "SWA".asInstanceOf[SWA]
   
@@ -507,7 +647,9 @@ object tizenTvWebapisStrings {
   inline def SWE: SWE = "SWE".asInstanceOf[SWE]
   
   @js.native
-  sealed trait SetProperties extends StObject
+  sealed trait SetProperties
+    extends StObject
+       with AVPlayDrmOperation
   inline def SetProperties: SetProperties = "SetProperties".asInstanceOf[SetProperties]
   
   @js.native
@@ -519,7 +661,9 @@ object tizenTvWebapisStrings {
   inline def TEL: TEL = "TEL".asInstanceOf[TEL]
   
   @js.native
-  sealed trait TEXT extends StObject
+  sealed trait TEXT
+    extends StObject
+       with AVPlayStreamType
   inline def TEXT: TEXT = "TEXT".asInstanceOf[TEXT]
   
   @js.native
@@ -547,11 +691,15 @@ object tizenTvWebapisStrings {
   inline def UKR: UKR = "UKR".asInstanceOf[UKR]
   
   @js.native
-  sealed trait USER_AGENT extends StObject
+  sealed trait USER_AGENT
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def USER_AGENT: USER_AGENT = "USER_AGENT".asInstanceOf[USER_AGENT]
   
   @js.native
-  sealed trait USE_VIDEOMIXER extends StObject
+  sealed trait USE_VIDEOMIXER
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def USE_VIDEOMIXER: USE_VIDEOMIXER = "USE_VIDEOMIXER".asInstanceOf[USE_VIDEOMIXER]
   
   @js.native
@@ -563,7 +711,9 @@ object tizenTvWebapisStrings {
   inline def VEN: VEN = "VEN".asInstanceOf[VEN]
   
   @js.native
-  sealed trait VERIMATRIX extends StObject
+  sealed trait VERIMATRIX
+    extends StObject
+       with AVPlayDrmType
   inline def VERIMATRIX: VERIMATRIX = "VERIMATRIX".asInstanceOf[VERIMATRIX]
   
   @js.native
@@ -575,7 +725,9 @@ object tizenTvWebapisStrings {
   inline def VERY_SLOW: VERY_SLOW = "VERY_SLOW".asInstanceOf[VERY_SLOW]
   
   @js.native
-  sealed trait VIDEO extends StObject
+  sealed trait VIDEO
+    extends StObject
+       with AVPlayStreamType
   inline def VIDEO: VIDEO = "VIDEO".asInstanceOf[VIDEO]
   
   @js.native
@@ -587,11 +739,15 @@ object tizenTvWebapisStrings {
   inline def WEL: WEL = "WEL".asInstanceOf[WEL]
   
   @js.native
-  sealed trait WIDEVINE extends StObject
+  sealed trait WIDEVINE
+    extends StObject
+       with AVPlayStreamingPropertyType
   inline def WIDEVINE: WIDEVINE = "WIDEVINE".asInstanceOf[WIDEVINE]
   
   @js.native
-  sealed trait WIDEVINE_CDM extends StObject
+  sealed trait WIDEVINE_CDM
+    extends StObject
+       with AVPlayDrmType
   inline def WIDEVINE_CDM: WIDEVINE_CDM = "WIDEVINE_CDM".asInstanceOf[WIDEVINE_CDM]
   
   @js.native
@@ -619,14 +775,20 @@ object tizenTvWebapisStrings {
   inline def ZUL: ZUL = "ZUL".asInstanceOf[ZUL]
   
   @js.native
-  sealed trait widevine_app_session extends StObject
+  sealed trait widevine_app_session
+    extends StObject
+       with AVPlayDrmOperation
   inline def widevine_app_session: widevine_app_session = "widevine_app_session".asInstanceOf[widevine_app_session]
   
   @js.native
-  sealed trait widevine_data_type extends StObject
+  sealed trait widevine_data_type
+    extends StObject
+       with AVPlayDrmOperation
   inline def widevine_data_type: widevine_data_type = "widevine_data_type".asInstanceOf[widevine_data_type]
   
   @js.native
-  sealed trait widevine_license_data extends StObject
+  sealed trait widevine_license_data
+    extends StObject
+       with AVPlayDrmOperation
   inline def widevine_license_data: widevine_license_data = "widevine_license_data".asInstanceOf[widevine_license_data]
 }

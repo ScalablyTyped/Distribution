@@ -54,7 +54,7 @@ object paginationListMod {
   
   @JSImport("rbx/components/pagination/pagination-list", "PaginationList")
   @js.native
-  val PaginationList: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val PaginationList: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait PaginationListProps extends StObject {

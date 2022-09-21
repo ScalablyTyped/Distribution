@@ -33,7 +33,7 @@ trait User extends StObject {
     * @param value The property to get.
     * @return When this method completes, it returns the requested property. If the property is missing or unavailable, an empty string is returned.
     */
-  def getPropertyAsync(value: String): IPromiseWithIAsyncOperation[js.Any]
+  def getPropertyAsync(value: String): IPromiseWithIAsyncOperation[Any]
   
   /** Gets the user's non-roamable id. */
   var nonRoamableId: String
@@ -47,7 +47,7 @@ object User {
     authenticationStatus: UserAuthenticationStatus,
     getPictureAsync: UserPictureSize => IPromiseWithIAsyncOperation[IRandomAccessStreamReference],
     getPropertiesAsync: IVectorView[String] => IPromiseWithIAsyncOperation[IPropertySet],
-    getPropertyAsync: String => IPromiseWithIAsyncOperation[js.Any],
+    getPropertyAsync: String => IPromiseWithIAsyncOperation[Any],
     nonRoamableId: String,
     `type`: UserType
   ): User = {
@@ -64,7 +64,7 @@ object User {
     
     inline def setGetPropertiesAsync(value: IVectorView[String] => IPromiseWithIAsyncOperation[IPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
     
-    inline def setGetPropertyAsync(value: String => IPromiseWithIAsyncOperation[js.Any]): Self = StObject.set(x, "getPropertyAsync", js.Any.fromFunction1(value))
+    inline def setGetPropertyAsync(value: String => IPromiseWithIAsyncOperation[Any]): Self = StObject.set(x, "getPropertyAsync", js.Any.fromFunction1(value))
     
     inline def setNonRoamableId(value: String): Self = StObject.set(x, "nonRoamableId", value.asInstanceOf[js.Any])
     

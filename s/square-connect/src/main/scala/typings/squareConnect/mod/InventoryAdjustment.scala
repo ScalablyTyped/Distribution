@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InventoryAdjustment")
 @js.native
-class InventoryAdjustment () extends StObject {
+open class InventoryAdjustment () extends StObject {
   
   /**
     * The Square generated ID of the `CatalogObject` being tracked.

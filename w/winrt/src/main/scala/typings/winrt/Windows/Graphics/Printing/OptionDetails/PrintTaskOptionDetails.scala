@@ -21,8 +21,8 @@ object PrintTaskOptionDetails {
     createTextOption: (String, String) => PrintCustomTextOptionDetails,
     displayedOptions: IVector[String],
     getPageDescription: Double => PrintPageDescription,
-    onbeginvalidation: js.Any,
-    onoptionchanged: js.Any,
+    onbeginvalidation: Any,
+    onoptionchanged: Any,
     options: IMapView[String, IPrintOptionDetails]
   ): PrintTaskOptionDetails = {
     val __obj = js.Dynamic.literal(createItemListOption = js.Any.fromFunction2(createItemListOption), createTextOption = js.Any.fromFunction2(createTextOption), displayedOptions = displayedOptions.asInstanceOf[js.Any], getPageDescription = js.Any.fromFunction1(getPageDescription), onbeginvalidation = onbeginvalidation.asInstanceOf[js.Any], onoptionchanged = onoptionchanged.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])

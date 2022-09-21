@@ -9,7 +9,7 @@ trait SpreadsheetPdfExportEvent
   extends StObject
      with SpreadsheetEvent {
   
-  var promise: js.UndefOr[JQueryPromise[js.Any]] = js.undefined
+  var promise: js.UndefOr[JQueryPromise[Any]] = js.undefined
 }
 object SpreadsheetPdfExportEvent {
   
@@ -20,7 +20,7 @@ object SpreadsheetPdfExportEvent {
   
   extension [Self <: SpreadsheetPdfExportEvent](x: Self) {
     
-    inline def setPromise(value: JQueryPromise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: JQueryPromise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }

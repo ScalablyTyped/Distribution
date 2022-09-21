@@ -45,7 +45,7 @@ object ITpRegisterRequest {
     
     inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
-    inline def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+    inline def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

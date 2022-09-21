@@ -46,11 +46,11 @@ trait ClusterInfo extends StObject {
     The time when the cluster was created.
     
     */
-  var CreationTime: js.UndefOr[timestampIso8601] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 
-    Information about the version of software currently deployed on the Kafka brokers in the cluster.
+    Information about the version of software currently deployed on the Apache Kafka brokers in the cluster.
     
     */
   var CurrentBrokerSoftwareInfo: js.UndefOr[BrokerSoftwareInfo] = js.undefined
@@ -94,7 +94,7 @@ trait ClusterInfo extends StObject {
   
   /**
     * 
-    The state of the cluster. The possible states are CREATING, ACTIVE, and FAILED.
+    The state of the cluster. The possible states are ACTIVE, CREATING, DELETING, FAILED, HEALING, MAINTENANCE, REBOOTING_BROKER, and UPDATING.
     
     */
   var State: js.UndefOr[ClusterState] = js.undefined
@@ -151,7 +151,7 @@ object ClusterInfo {
     
     inline def setClusterNameUndefined: Self = StObject.set(x, "ClusterName", js.undefined)
     
-    inline def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

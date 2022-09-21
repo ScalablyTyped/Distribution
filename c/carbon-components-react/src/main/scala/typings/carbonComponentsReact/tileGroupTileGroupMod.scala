@@ -12,10 +12,10 @@ object tileGroupTileGroupMod {
   
   @JSImport("carbon-components-react/lib/components/TileGroup/TileGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TileGroupProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TileGroupProps, js.Object, Any]
   
-  type TileGroup = Component[TileGroupProps, js.Object, js.Any]
+  type TileGroup = Component[TileGroupProps, js.Object, Any]
   
   trait TileGroupProps extends StObject {
     

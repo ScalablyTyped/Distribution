@@ -11,14 +11,11 @@ React component for star (or any other icon based) ratings
 | Full name          | react-star-rating-component |
 | Keywords           | react, component, star, rating, rate, input |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 711019 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 66571.33333333333 |
+| # stars            | 351.0 |
 
 ## Links
-- [Homepage](https://github.com/voronianski/react-star-rating-component#readme)
-- [Bugs](https://github.com/voronianski/react-star-rating-component/issues)
-- [Repository](https://github.com/voronianski/react-star-rating-component)
 - [Npm](https://www.npmjs.com/package/react-star-rating-component)
     
 

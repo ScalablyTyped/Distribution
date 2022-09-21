@@ -1,7 +1,5 @@
 package typings.twemojiParser
 
-import typings.twemojiParser.twemojiParserStrings.png
-import typings.twemojiParser.twemojiParserStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +18,18 @@ object mod {
   inline def parse(text: String, options: ParsingOptions): js.Array[EmojiEntity] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[EmojiEntity]]
   
   inline def toCodePoints(unicodeSurrogates: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCodePoints")(unicodeSurrogates.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.twemojiParser.twemojiParserStrings.png
+    - typings.twemojiParser.twemojiParserStrings.svg
+  */
+  trait AssetType extends StObject
+  object AssetType {
+    
+    inline def png: typings.twemojiParser.twemojiParserStrings.png = "png".asInstanceOf[typings.twemojiParser.twemojiParserStrings.png]
+    
+    inline def svg: typings.twemojiParser.twemojiParserStrings.svg = "svg".asInstanceOf[typings.twemojiParser.twemojiParserStrings.svg]
+  }
   
   trait EmojiEntity extends StObject {
     
@@ -65,9 +75,9 @@ object mod {
     /**
       * @default 'svg'
       */
-    var assetType: js.UndefOr[png | svg] = js.undefined
+    var assetType: js.UndefOr[AssetType] = js.undefined
     
-    var buildUrl: js.UndefOr[js.Function2[/* codepoints */ String, /* assetType */ String, String]] = js.undefined
+    var buildUrl: js.UndefOr[js.Function2[/* codepoints */ String, /* assetType */ AssetType, String]] = js.undefined
   }
   object ParsingOptions {
     
@@ -78,11 +88,11 @@ object mod {
     
     extension [Self <: ParsingOptions](x: Self) {
       
-      inline def setAssetType(value: png | svg): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+      inline def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
       
       inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
       
-      inline def setBuildUrl(value: (/* codepoints */ String, /* assetType */ String) => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction2(value))
+      inline def setBuildUrl(value: (/* codepoints */ String, /* assetType */ AssetType) => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction2(value))
       
       inline def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
     }

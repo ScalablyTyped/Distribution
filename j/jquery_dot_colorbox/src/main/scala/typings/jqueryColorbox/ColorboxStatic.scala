@@ -10,7 +10,7 @@ trait ColorboxStatic extends StObject {
   /**
     * This method allows you to call Colorbox without having to assign it to an element.
     */
-  def apply(settings: ColorboxSettings): js.Any = js.native
+  def apply(settings: ColorboxSettings): Any = js.native
   
   /**
     * This method initiates the close sequence, which does not immediately complete. The lightbox will be completely closed only when the cbox_closed event / onClosed callback is fired.

@@ -10,7 +10,7 @@ trait Http extends StObject {
   
   var async: js.UndefOr[Boolean] = js.undefined
   
-  var authorizer: js.UndefOr[HttpAuthorizer] = js.undefined
+  var authorizer: js.UndefOr[HttpAuthorizer | String] = js.undefined
   
   var cors: js.UndefOr[Boolean | HttpCors] = js.undefined
   
@@ -37,7 +37,7 @@ object Http {
     
     inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    inline def setAuthorizer(value: HttpAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
+    inline def setAuthorizer(value: HttpAuthorizer | String): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
     inline def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     

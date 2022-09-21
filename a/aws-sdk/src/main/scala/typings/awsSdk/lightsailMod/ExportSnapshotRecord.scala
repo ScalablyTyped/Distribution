@@ -14,7 +14,7 @@ trait ExportSnapshotRecord extends StObject {
   /**
     * The date when the export snapshot record was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of objects describing the destination of the export snapshot record.
@@ -59,7 +59,7 @@ object ExportSnapshotRecord {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

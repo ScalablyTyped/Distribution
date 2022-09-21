@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "console-stamp" : "3.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "console-stamp" : "3.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

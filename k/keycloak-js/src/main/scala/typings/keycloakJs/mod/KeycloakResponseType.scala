@@ -1,0 +1,20 @@
+package typings.keycloakJs.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.keycloakJs.keycloakJsStrings.code
+  - typings.keycloakJs.keycloakJsStrings.`id_token token`
+  - typings.keycloakJs.keycloakJsStrings.`code id_token token`
+*/
+trait KeycloakResponseType extends StObject
+object KeycloakResponseType {
+  
+  inline def code: typings.keycloakJs.keycloakJsStrings.code = "code".asInstanceOf[typings.keycloakJs.keycloakJsStrings.code]
+  
+  inline def `code id_token token`: typings.keycloakJs.keycloakJsStrings.`code id_token token` = ("code id_token token").asInstanceOf[typings.keycloakJs.keycloakJsStrings.`code id_token token`]
+  
+  inline def `id_token token`: typings.keycloakJs.keycloakJsStrings.`id_token token` = ("id_token token").asInstanceOf[typings.keycloakJs.keycloakJsStrings.`id_token token`]
+}

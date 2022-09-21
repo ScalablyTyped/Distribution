@@ -14,10 +14,9 @@ object stickyMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Sticky", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[StickyProps, ComponentState, js.Any] {
+  open class default protected () extends Component[StickyProps, ComponentState, Any] {
     def this(props: StickyProps) = this()
-    def this(props: StickyProps, context: js.Any) = this()
+    def this(props: StickyProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Sticky", JSImport.Default)
   @js.native

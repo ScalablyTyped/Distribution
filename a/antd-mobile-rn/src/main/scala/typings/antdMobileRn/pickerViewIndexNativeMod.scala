@@ -9,7 +9,7 @@ object pickerViewIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/picker-view/index.native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antdMobileRn.pickerViewMod.default
   /* static members */
   object default {

@@ -1,7 +1,7 @@
 package typings.istanbulReports
 
 import typings.istanbulLibReport.mod.Node
-import typings.istanbulLibReport.mod.Visitor
+import typings.istanbulLibReport.mod.ReportBase
 import typings.istanbulReports.istanbulReportsStrings.`html-spa`
 import typings.istanbulReports.istanbulReportsStrings.`json-summary`
 import typings.istanbulReports.istanbulReportsStrings.`text-lcov`
@@ -30,44 +30,44 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create_clover(name: clover): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_clover(name: clover, options: Partial[CloverOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_clover(name: clover): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_clover(name: clover, options: Partial[CloverOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_cobertura(name: cobertura): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_cobertura(name: cobertura, options: Partial[CoberturaOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_cobertura(name: cobertura): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_cobertura(name: cobertura, options: Partial[CoberturaOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_html(name: html): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_html(name: html, options: Partial[HtmlOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_html(name: html): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_html(name: html, options: Partial[HtmlOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_htmlspa(name: `html-spa`): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_htmlspa(name: `html-spa`, options: Partial[HtmlSpaOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_htmlspa(name: `html-spa`): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_htmlspa(name: `html-spa`, options: Partial[HtmlSpaOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_json(name: json): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_json(name: json, options: Partial[JsonOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_json(name: json): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_json(name: json, options: Partial[JsonOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_jsonsummary(name: `json-summary`): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_jsonsummary(name: `json-summary`, options: Partial[JsonSummaryOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_jsonsummary(name: `json-summary`): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_jsonsummary(name: `json-summary`, options: Partial[JsonSummaryOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_lcov(name: lcov): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_lcov(name: lcov, options: Partial[LcovOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_lcov(name: lcov): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_lcov(name: lcov, options: Partial[LcovOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_lcovonly(name: lcovonly): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_lcovonly(name: lcovonly, options: Partial[LcovOnlyOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_lcovonly(name: lcovonly): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_lcovonly(name: lcovonly, options: Partial[LcovOnlyOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_none(name: none): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_none(name: none, options: Partial[scala.Nothing]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_none(name: none): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_none(name: none, options: Partial[scala.Nothing]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_teamcity(name: teamcity): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_teamcity(name: teamcity, options: Partial[TeamcityOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_teamcity(name: teamcity): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_teamcity(name: teamcity, options: Partial[TeamcityOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_text(name: text): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_text(name: text, options: Partial[TextOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_text(name: text): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_text(name: text, options: Partial[TextOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_textlcov(name: `text-lcov`): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_textlcov(name: `text-lcov`, options: Partial[TextLcovOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_textlcov(name: `text-lcov`): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_textlcov(name: `text-lcov`, options: Partial[TextLcovOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
-  inline def create_textsummary(name: `text-summary`): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
-  inline def create_textsummary(name: `text-summary`, options: Partial[TextSummaryOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  inline def create_textsummary(name: `text-summary`): ReportBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[ReportBase]
+  inline def create_textsummary(name: `text-summary`, options: Partial[TextSummaryOptions]): ReportBase = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReportBase]
   
   trait CloverOptions
     extends StObject
@@ -162,7 +162,7 @@ object mod {
       
       inline def setMetricsToShow(value: js.Array[lines | branches | functions | statements]): Self = StObject.set(x, "metricsToShow", value.asInstanceOf[js.Any])
       
-      inline def setMetricsToShowVarargs(value: (lines | branches | functions | statements)*): Self = StObject.set(x, "metricsToShow", js.Array(value :_*))
+      inline def setMetricsToShowVarargs(value: (lines | branches | functions | statements)*): Self = StObject.set(x, "metricsToShow", js.Array(value*))
     }
   }
   

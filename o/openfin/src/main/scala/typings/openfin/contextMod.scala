@@ -62,7 +62,7 @@ object contextMod {
     * @hidden
     * Custom properties and metadata. This can be extended in specific context object.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * An optional map of any equivalent identifiers for the context type, e.g. ISIN, CUSIP, etc. for an instrument.

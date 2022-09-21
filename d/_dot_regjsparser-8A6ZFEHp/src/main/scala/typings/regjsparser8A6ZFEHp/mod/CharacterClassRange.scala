@@ -1,0 +1,32 @@
+package typings.regjsparser8A6ZFEHp.mod
+
+import typings.regjsparser8A6ZFEHp.regjsparser8A6ZFEHpStrings.characterClassRange
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait CharacterClassRange
+  extends StObject
+     with Base[characterClassRange]
+     with CharacterClassBody
+     with _AstNode[Any] {
+  
+  var max: Value
+  
+  var min: Value
+}
+object CharacterClassRange {
+  
+  inline def apply(max: Value, min: Value, range: js.Tuple2[Double, Double], raw: String): CharacterClassRange = {
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("characterClassRange")
+    __obj.asInstanceOf[CharacterClassRange]
+  }
+  
+  extension [Self <: CharacterClassRange](x: Self) {
+    
+    inline def setMax(value: Value): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMin(value: Value): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+  }
+}

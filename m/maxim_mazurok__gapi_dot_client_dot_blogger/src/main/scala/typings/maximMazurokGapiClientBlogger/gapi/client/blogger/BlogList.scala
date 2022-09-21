@@ -28,13 +28,13 @@ object BlogList {
     
     inline def setBlogUserInfosUndefined: Self = StObject.set(x, "blogUserInfos", js.undefined)
     
-    inline def setBlogUserInfosVarargs(value: BlogUserInfo*): Self = StObject.set(x, "blogUserInfos", js.Array(value :_*))
+    inline def setBlogUserInfosVarargs(value: BlogUserInfo*): Self = StObject.set(x, "blogUserInfos", js.Array(value*))
     
     inline def setItems(value: js.Array[Blog]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Blog*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Blog*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

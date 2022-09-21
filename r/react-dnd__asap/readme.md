@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd__asap
 
-Typings are for version 4.0.0
+Typings are for version 5.0.2
 
 ## Library description:
 High-priority task queue for Node.js and browsers
@@ -10,15 +10,12 @@ High-priority task queue for Node.js and browsers
 | ------------------ | :-------------: |
 | Full name          | @react-dnd/asap |
 | Keywords           | event, task, queue |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 10210410 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 3801729.6666666665 |
+| # stars            | 17847.0 |
 
 ## Links
-- [Homepage](https://github.com/kriskowal/asap#readme)
-- [Bugs](https://github.com/kriskowal/asap/issues)
-- [Repository](https://github.com/kriskowal/asap)
 - [Npm](https://www.npmjs.com/package/%40react-dnd%2Fasap)
     
 

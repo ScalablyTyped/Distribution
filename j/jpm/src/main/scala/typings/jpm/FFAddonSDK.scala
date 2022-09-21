@@ -44,14 +44,16 @@ object FFAddonSDK {
     def destroy(): Unit = js.native
     
     @JSName("on")
-    def on_click(event: click, handler: js.Function1[/* state */ ActionButtonState, js.Any]): Unit = js.native
+    def on_click(event: click, handler: js.Function1[/* state */ ActionButtonState, Any]): Unit = js.native
     
     @JSName("once")
-    def once_click(event: click, handler: js.Function1[/* state */ ActionButtonState, js.Any]): Unit = js.native
+    def once_click(event: click, handler: js.Function1[/* state */ ActionButtonState, Any]): Unit = js.native
     
     @JSName("removeListener")
     def removeListener_click(event: click, handler: js.Function): Unit = js.native
     
+    def state(target: window | tab): ActionButtonState = js.native
+    def state(target: window | tab, state: Disabled): ActionButtonState = js.native
     def state(target: ActionButton): ActionButtonState = js.native
     def state(target: ActionButton, state: Disabled): ActionButtonState = js.native
     // there's a compromise here by always returning ActionButtonState. It will return undefined if no options are passed
@@ -59,14 +61,6 @@ object FFAddonSDK {
     def state(target: BrowserWindow, state: Disabled): ActionButtonState = js.native
     def state(target: Tab): ActionButtonState = js.native
     def state(target: Tab, state: Disabled): ActionButtonState = js.native
-    @JSName("state")
-    def state_tab(target: tab): ActionButtonState = js.native
-    @JSName("state")
-    def state_tab(target: tab, state: Disabled): ActionButtonState = js.native
-    @JSName("state")
-    def state_window(target: window): ActionButtonState = js.native
-    @JSName("state")
-    def state_window(target: window, state: Disabled): ActionButtonState = js.native
   }
   
   trait ActionButtonState extends StObject {
@@ -133,82 +127,82 @@ object FFAddonSDK {
     
     def destroy(): Unit = js.native
     
-    @JSName("on")
-    def on_detach(event: detach, handler: js.Function0[js.Any]): Unit = js.native
-    @JSName("on")
-    def on_error(event: error, handler: js.Function0[js.Any]): Unit = js.native
-    @JSName("on")
-    def on_message(event: message, handler: js.Function0[js.Any]): Unit = js.native
+    def on(event: detach | message | error, handler: js.Function0[Any]): Unit = js.native
     
     var port: Port = js.native
     
     def postMessage(): Unit = js.native
-    def postMessage(data: js.Any): Unit = js.native
+    def postMessage(data: Any): Unit = js.native
     
     var tab: Tab = js.native
     
     var url: URL = js.native
   }
   
-  @js.native
   trait Frame
     extends StObject
        with ToolbarItem {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    @JSName("off")
-    def off_attach(event: attach, handler: js.Function): Unit = js.native
-    @JSName("off")
-    def off_detach(event: detach, handler: js.Function): Unit = js.native
-    @JSName("off")
-    def off_load(event: load, handler: js.Function): Unit = js.native
-    @JSName("off")
-    def off_message(event: message, handler: js.Function): Unit = js.native
-    @JSName("off")
-    def off_ready(event: ready, handler: js.Function): Unit = js.native
+    def off(event: attach | detach | load | ready | message, handler: js.Function): Unit
     
-    @JSName("on")
-    def on_attach(event: attach, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_detach(event: detach, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_load(event: load, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_message(event: message, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_ready(event: ready, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
+    def on(
+      event: attach | detach | load | ready | message,
+      handler: js.Function1[/* event */ FrameEvent, Any]
+    ): Unit
     
-    @JSName("once")
-    def once_attach(event: attach, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_detach(event: detach, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_load(event: load, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_message(event: message, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_ready(event: ready, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
+    def once(
+      event: attach | detach | load | ready | message,
+      handler: js.Function1[/* event */ FrameEvent, Any]
+    ): Unit
     
-    def postMessage(message: String, target: String): Unit = js.native
+    def postMessage(message: String, target: String): Unit
     
-    @JSName("removeListener")
-    def removeListener_attach(event: attach, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_detach(event: detach, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_load(event: load, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_message(event: message, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_ready(event: ready, handler: js.Function): Unit = js.native
+    def removeListener(event: attach | detach | load | ready | message, handler: js.Function): Unit
     
-    var url: URL = js.native
+    var url: URL
+  }
+  object Frame {
+    
+    inline def apply(
+      destroy: () => Unit,
+      off: (attach | detach | load | ready | message, js.Function) => Unit,
+      on: (attach | detach | load | ready | message, js.Function1[/* event */ FrameEvent, Any]) => Unit,
+      once: (attach | detach | load | ready | message, js.Function1[/* event */ FrameEvent, Any]) => Unit,
+      postMessage: (String, String) => Unit,
+      removeListener: (attach | detach | load | ready | message, js.Function) => Unit,
+      url: URL
+    ): Frame = {
+      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), postMessage = js.Any.fromFunction2(postMessage), removeListener = js.Any.fromFunction2(removeListener), url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Frame]
+    }
+    
+    extension [Self <: Frame](x: Self) {
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      inline def setOff(value: (attach | detach | load | ready | message, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      
+      inline def setOn(
+        value: (attach | detach | load | ready | message, js.Function1[/* event */ FrameEvent, Any]) => Unit
+      ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      inline def setOnce(
+        value: (attach | detach | load | ready | message, js.Function1[/* event */ FrameEvent, Any]) => Unit
+      ): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      
+      inline def setPostMessage(value: (String, String) => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
+      
+      inline def setRemoveListener(value: (attach | detach | load | ready | message, js.Function) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      
+      inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
   }
   
   trait FrameEvent extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var origin: String
     
@@ -223,7 +217,7 @@ object FFAddonSDK {
     
     extension [Self <: FrameEvent](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -242,7 +236,7 @@ object FFAddonSDK {
     
     var columnNumber: Double
     
-    var data: js.Any
+    var data: Any
     
     var filename: String
     
@@ -250,24 +244,24 @@ object FFAddonSDK {
     
     var lineNumber: Double
     
-    var location: js.UndefOr[js.Any] = js.undefined
+    var location: js.UndefOr[Any] = js.undefined
     
     var message: String
     
     var name: String
     
-    var result: js.Any
+    var result: Any
   }
   object NSIException {
     
     inline def apply(
       columnNumber: Double,
-      data: js.Any,
+      data: Any,
       filename: String,
       lineNumber: Double,
       message: String,
       name: String,
-      result: js.Any
+      result: Any
     ): NSIException = {
       val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[NSIException]
@@ -277,7 +271,7 @@ object FFAddonSDK {
       
       inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -287,7 +281,7 @@ object FFAddonSDK {
       
       inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      inline def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
@@ -295,7 +289,7 @@ object FFAddonSDK {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -307,9 +301,9 @@ object FFAddonSDK {
   trait Port extends StObject {
     
     def emit(event: String): Unit = js.native
-    def emit(event: String, data: js.Any): Unit = js.native
+    def emit(event: String, data: Any): Unit = js.native
     
-    def on(event: String, handler: js.Function1[/* data */ js.UndefOr[js.Any], js.Any]): Unit = js.native
+    def on(event: String, handler: js.Function1[/* data */ js.UndefOr[Any], Any]): Unit = js.native
   }
   
   trait SDKURL extends StObject {
@@ -399,7 +393,7 @@ object FFAddonSDK {
     def attach(options: ContentScriptOptions): ContentWorker = js.native
     
     def close(): Unit = js.native
-    def close(afterClose: js.Function0[js.Any]): Unit = js.native
+    def close(afterClose: js.Function0[Any]): Unit = js.native
     
     var contentType: String = js.native
     
@@ -413,18 +407,10 @@ object FFAddonSDK {
     
     var isPinned: Boolean = js.native
     
-    @JSName("on")
-    def on_activate(event: activate, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_close(event: close, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_deactivate(event: deactivate, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_load(event: load, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_pageshow(event: pageshow, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_ready(event: ready, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
+    def on(
+      event: ready | load | pageshow | activate | deactivate | close,
+      handler: js.Function1[/* tab */ this.type, Any]
+    ): Unit = js.native
     
     def pin(): Unit = js.native
     
@@ -452,32 +438,20 @@ object FFAddonSDK {
     
     def destroy(): Unit = js.native
     
-    @JSName("on")
-    def on_change(event: change, handler: js.Function1[/* state */ ToggleButtonState, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_click(event: click, handler: js.Function1[/* state */ ToggleButtonState, js.Any]): Unit = js.native
+    def on(event: click | change, handler: js.Function1[/* state */ ToggleButtonState, Any]): Unit = js.native
     
-    @JSName("once")
-    def once_change(event: change, handler: js.Function1[/* state */ ToggleButtonState, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_click(event: click, handler: js.Function1[/* state */ ToggleButtonState, js.Any]): Unit = js.native
+    def once(event: click | change, handler: js.Function1[/* state */ ToggleButtonState, Any]): Unit = js.native
     
     def removeListener(event: String, handler: js.Function): Unit = js.native
     
+    def state(target: window | tab): ToggleButtonState = js.native
+    def state(target: window | tab, state: Checked): ToggleButtonState = js.native
     def state(target: BrowserWindow): ToggleButtonState = js.native
     def state(target: BrowserWindow, state: Checked): ToggleButtonState = js.native
     def state(target: Tab): ToggleButtonState = js.native
     def state(target: Tab, state: Checked): ToggleButtonState = js.native
     def state(target: ToggleButton): ToggleButtonState = js.native
     def state(target: ToggleButton, state: Checked): ToggleButtonState = js.native
-    @JSName("state")
-    def state_tab(target: tab): ToggleButtonState = js.native
-    @JSName("state")
-    def state_tab(target: tab, state: Checked): ToggleButtonState = js.native
-    @JSName("state")
-    def state_window(target: window): ToggleButtonState = js.native
-    @JSName("state")
-    def state_window(target: window, state: Checked): ToggleButtonState = js.native
   }
   
   trait ToggleButtonState extends StObject {

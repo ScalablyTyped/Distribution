@@ -21,7 +21,7 @@ object contextChannelsMod {
   
   @JSImport("openfin/_v2/fdc3/contextChannels", "AppChannel")
   @js.native
-  class AppChannel protected ()
+  open class AppChannel protected ()
     extends ChannelBase
        with Channel {
     /**
@@ -158,7 +158,7 @@ object contextChannelsMod {
     *
     * Channel objects should not be created directly by an application, channel objects should be obtained by calling the relevant APIs.
     */
-  class DefaultChannel_ ()
+  open class DefaultChannel_ ()
     extends ChannelBase
        with Channel {
     
@@ -168,7 +168,7 @@ object contextChannelsMod {
   
   @JSImport("openfin/_v2/fdc3/contextChannels", "SystemChannel")
   @js.native
-  class SystemChannel protected ()
+  open class SystemChannel protected ()
     extends ChannelBase
        with Channel {
     /**

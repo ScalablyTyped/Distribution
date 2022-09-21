@@ -1,7 +1,7 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.Vec2
-import typings.playcanvas.pc.Vec4
+import typings.playcanvas.mod.Vec2
+import typings.playcanvas.mod.Vec4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

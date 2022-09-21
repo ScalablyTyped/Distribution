@@ -41,7 +41,7 @@ object CompletionsQueryResult {
     
     inline def setCompletions(value: js.Array[Depth | String]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
     
-    inline def setCompletionsVarargs(value: (Depth | String)*): Self = StObject.set(x, "completions", js.Array(value :_*))
+    inline def setCompletionsVarargs(value: (Depth | String)*): Self = StObject.set(x, "completions", js.Array(value*))
     
     inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,6 @@ package typings.phaser.anon
 
 import typings.phaser.spine.ArrayLike
 import typings.phaser.spine.MixBlend
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ trait TypeofUtils extends StObject {
   
   /* static member */
   def ensureArrayCapacity[T](array: js.Array[T], size: Double): js.Array[T] = js.native
-  def ensureArrayCapacity[T](array: js.Array[T], size: Double, value: js.Any): js.Array[T] = js.native
+  def ensureArrayCapacity[T](array: js.Array[T], size: Double, value: Any): js.Array[T] = js.native
   
   /* static member */
   def newArray[T](size: Double, defaultValue: T): js.Array[T] = js.native
@@ -41,10 +40,10 @@ trait TypeofUtils extends StObject {
   
   /* static member */
   def setArraySize[T](array: js.Array[T], size: Double): js.Array[T] = js.native
-  def setArraySize[T](array: js.Array[T], size: Double, value: js.Any): js.Array[T] = js.native
+  def setArraySize[T](array: js.Array[T], size: Double, value: Any): js.Array[T] = js.native
   
   /* static member */
-  def toFloatArray(array: js.Array[Double]): js.Array[Double] | Float32Array = js.native
+  def toFloatArray(array: js.Array[Double]): js.Array[Double] | js.typedarray.Float32Array = js.native
   
   /* static member */
   def toSinglePrecision(value: Double): Double = js.native

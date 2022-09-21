@@ -4,30 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata the defines how a deployment is configured.
-  */
 trait SchemaDeploymentConfig extends StObject {
   
   /**
     * The description for this deployment.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The manifest file name for this deployment.
     */
-  var manifestFileName: js.UndefOr[String] = js.undefined
+  var manifestFileName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The script project&#39;s Drive ID.
+    * The script project's Drive ID.
     */
-  var scriptId: js.UndefOr[String] = js.undefined
+  var scriptId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The version number on which this deployment is based.
     */
-  var versionNumber: js.UndefOr[Double] = js.undefined
+  var versionNumber: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaDeploymentConfig {
   
@@ -40,17 +37,25 @@ object SchemaDeploymentConfig {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setManifestFileName(value: String): Self = StObject.set(x, "manifestFileName", value.asInstanceOf[js.Any])
+    
+    inline def setManifestFileNameNull: Self = StObject.set(x, "manifestFileName", null)
     
     inline def setManifestFileNameUndefined: Self = StObject.set(x, "manifestFileName", js.undefined)
     
     inline def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
+    inline def setScriptIdNull: Self = StObject.set(x, "scriptId", null)
+    
     inline def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
     
     inline def setVersionNumber(value: Double): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNumberNull: Self = StObject.set(x, "versionNumber", null)
     
     inline def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }

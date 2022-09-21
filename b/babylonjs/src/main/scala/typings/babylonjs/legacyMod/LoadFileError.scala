@@ -7,13 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "LoadFileError")
 @js.native
-class LoadFileError protected ()
+open class LoadFileError protected ()
   extends typings.babylonjs.indexMod.LoadFileError {
   /**
     * Creates a new LoadFileError
     * @param message defines the message of the error
-    * @param request defines the optional web request
-    * @param file defines the optional file
+    * @param object defines the optional web request
     */
   def this(message: String) = this()
   def this(message: String, `object`: typings.babylonjs.webRequestMod.WebRequest) = this()

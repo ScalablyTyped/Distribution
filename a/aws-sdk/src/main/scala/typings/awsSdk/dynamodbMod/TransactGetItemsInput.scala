@@ -12,7 +12,7 @@ trait TransactGetItemsInput extends StObject {
   var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.undefined
   
   /**
-    * An ordered array of up to 25 TransactGetItem objects, each of which contains a Get structure.
+    * An ordered array of up to 100 TransactGetItem objects, each of which contains a Get structure.
     */
   var TransactItems: TransactGetItemList
 }
@@ -31,6 +31,6 @@ object TransactGetItemsInput {
     
     inline def setTransactItems(value: TransactGetItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
     
-    inline def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
+    inline def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ manipulate vectors in 2d
 | ------------------ | :-------------: |
 | Full name          | vec2 |
 | Keywords           | 2d, vec, vector, geometry |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 73364 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 13503.666666666666 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/tmpvar/vec2.js)

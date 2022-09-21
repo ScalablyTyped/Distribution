@@ -9,12 +9,12 @@ trait RowEditDialogBeforeOpenEventUIParam extends StObject {
   /**
     * Gets a reference to row edit dialog DOM element.
     */
-  var dialogElement: js.UndefOr[js.Any] = js.undefined
+  var dialogElement: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to GridUpdating.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object RowEditDialogBeforeOpenEventUIParam {
   
@@ -25,11 +25,11 @@ object RowEditDialogBeforeOpenEventUIParam {
   
   extension [Self <: RowEditDialogBeforeOpenEventUIParam](x: Self) {
     
-    inline def setDialogElement(value: js.Any): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
+    inline def setDialogElement(value: Any): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
     
     inline def setDialogElementUndefined: Self = StObject.set(x, "dialogElement", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

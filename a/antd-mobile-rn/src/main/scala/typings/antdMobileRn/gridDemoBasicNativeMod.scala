@@ -9,9 +9,8 @@ object gridDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/grid/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends BasicGridExample
+  open class default () extends BasicGridExample
   
   @js.native
-  trait BasicGridExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicGridExample extends Component[Any, Any, Any]
 }

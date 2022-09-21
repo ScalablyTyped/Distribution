@@ -23,8 +23,8 @@ object Offset {
     
     inline def setOffsetRelative(value: js.Array[Double]): Self = StObject.set(x, "offsetRelative", value.asInstanceOf[js.Any])
     
-    inline def setOffsetRelativeVarargs(value: Double*): Self = StObject.set(x, "offsetRelative", js.Array(value :_*))
+    inline def setOffsetRelativeVarargs(value: Double*): Self = StObject.set(x, "offsetRelative", js.Array(value*))
     
-    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
   }
 }

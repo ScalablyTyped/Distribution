@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a conditional format for the positive side of the data bar.
   *
-  * Represents a conditional format DataBar Format for the positive side of the data bar.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalDataBarPositiveFormat")
 @js.native
-class ConditionalDataBarPositiveFormat ()
+open class ConditionalDataBarPositiveFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ConditionalDataBarPositiveFormat {
   

@@ -31,15 +31,15 @@ trait Parent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The parent (project, location, cluster id) where the node pools will be listed. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
+  /** The parent (project, location, cluster name) where the node pools will be listed. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *`. */
   var parent: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and
-    * replaced by the parent field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the parent field.
     */
   var projectId: String
   

@@ -23,6 +23,9 @@ trait EvaluateRequest extends StObject {
   /**
     * Specifies in which execution context to perform evaluation. If the parameter is omitted the
     * evaluation will be performed in the context of the inspected page.
+    * This is mutually exclusive with `uniqueContextId`, which offers an
+    * alternative way to identify the execution context that is more reliable
+    * in a multi-process environment.
     */
   var contextId: js.UndefOr[ExecutionContextId] = js.undefined
   
@@ -40,6 +43,11 @@ trait EvaluateRequest extends StObject {
     * Whether preview should be generated for the result.
     */
   var generatePreview: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether the result should be serialized according to https://w3c.github.io/webdriver-bidi.
+    */
+  var generateWebDriverValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines whether Command Line API should be available during the evaluation.
@@ -81,6 +89,16 @@ trait EvaluateRequest extends StObject {
   var timeout: js.UndefOr[TimeDelta] = js.undefined
   
   /**
+    * An alternative way to specify the execution context to evaluate in.
+    * Compared to contextId that may be reused across processes, this is guaranteed to be
+    * system-unique, so it can be used to prevent accidental evaluation of the expression
+    * in context different than intended (e.g. as a result of navigation across process
+    * boundaries).
+    * This is mutually exclusive with `contextId`.
+    */
+  var uniqueContextId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Whether execution should be treated as initiated by user in the UI.
     */
   var userGesture: js.UndefOr[Boolean] = js.undefined
@@ -116,6 +134,10 @@ object EvaluateRequest {
     
     inline def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
+    inline def setGenerateWebDriverValue(value: Boolean): Self = StObject.set(x, "generateWebDriverValue", value.asInstanceOf[js.Any])
+    
+    inline def setGenerateWebDriverValueUndefined: Self = StObject.set(x, "generateWebDriverValue", js.undefined)
+    
     inline def setIncludeCommandLineAPI(value: Boolean): Self = StObject.set(x, "includeCommandLineAPI", value.asInstanceOf[js.Any])
     
     inline def setIncludeCommandLineAPIUndefined: Self = StObject.set(x, "includeCommandLineAPI", js.undefined)
@@ -143,6 +165,10 @@ object EvaluateRequest {
     inline def setTimeout(value: TimeDelta): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUniqueContextId(value: String): Self = StObject.set(x, "uniqueContextId", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueContextIdUndefined: Self = StObject.set(x, "uniqueContextId", js.undefined)
     
     inline def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
     

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InitPlatformOptions extends StObject {
   
-  def overrideCallback(arg: PlatformProvider): js.Any
+  def overrideCallback(arg: PlatformProvider): Any
   @JSName("overrideCallback")
-  var overrideCallback_Original: OverrideCallback[js.Any]
+  var overrideCallback_Original: OverrideCallback[Any]
 }
 object InitPlatformOptions {
   
-  inline def apply(overrideCallback: /* arg */ PlatformProvider => js.Any): InitPlatformOptions = {
+  inline def apply(overrideCallback: /* arg */ PlatformProvider => Any): InitPlatformOptions = {
     val __obj = js.Dynamic.literal(overrideCallback = js.Any.fromFunction1(overrideCallback))
     __obj.asInstanceOf[InitPlatformOptions]
   }
   
   extension [Self <: InitPlatformOptions](x: Self) {
     
-    inline def setOverrideCallback(value: /* arg */ PlatformProvider => js.Any): Self = StObject.set(x, "overrideCallback", js.Any.fromFunction1(value))
+    inline def setOverrideCallback(value: /* arg */ PlatformProvider => Any): Self = StObject.set(x, "overrideCallback", js.Any.fromFunction1(value))
   }
 }

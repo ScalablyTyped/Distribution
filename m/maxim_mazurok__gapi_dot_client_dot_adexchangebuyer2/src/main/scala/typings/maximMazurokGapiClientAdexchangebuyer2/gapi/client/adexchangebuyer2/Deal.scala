@@ -10,7 +10,7 @@ trait Deal extends StObject {
   var availableEndTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional proposed flight start time of the deal. This will generally be stored in the granularity of one second since deal serving starts at seconds boundary. Any time specified
+    * Optional. Proposed flight start time of the deal. This will generally be stored in the granularity of one second since deal serving starts at seconds boundary. Any time specified
     * with more granularity (e.g., in milliseconds) will be truncated towards the start of time in seconds.
     */
   var availableStartTime: js.UndefOr[String] = js.undefined
@@ -25,7 +25,7 @@ trait Deal extends StObject {
   var createProductId: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional revision number of the product that the deal was created from. If present on create, and the server `product_revision` has advanced sinced the passed-in
+    * Optional. Revision number of the product that the deal was created from. If present on create, and the server `product_revision` has advanced since the passed-in
     * `create_product_revision`, an `ABORTED` error will be returned. Note: This field may be set only when creating the resource. Modifying this field while updating the resource will
     * result in an error.
     */
@@ -183,7 +183,7 @@ object Deal {
     
     inline def setSellerContactsUndefined: Self = StObject.set(x, "sellerContacts", js.undefined)
     
-    inline def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value :_*))
+    inline def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value*))
     
     inline def setSyndicationProduct(value: String): Self = StObject.set(x, "syndicationProduct", value.asInstanceOf[js.Any])
     
@@ -195,7 +195,7 @@ object Deal {
     
     inline def setTargetingCriterionUndefined: Self = StObject.set(x, "targetingCriterion", js.undefined)
     
-    inline def setTargetingCriterionVarargs(value: TargetingCriteria*): Self = StObject.set(x, "targetingCriterion", js.Array(value :_*))
+    inline def setTargetingCriterionVarargs(value: TargetingCriteria*): Self = StObject.set(x, "targetingCriterion", js.Array(value*))
     
     inline def setTargetingUndefined: Self = StObject.set(x, "targeting", js.undefined)
     

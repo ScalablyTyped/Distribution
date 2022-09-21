@@ -54,7 +54,7 @@ object modalCardHeadMod {
   
   @JSImport("rbx/components/modal/modal-card-head", "ModalCardHead")
   @js.native
-  val ModalCardHead: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val ModalCardHead: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait ModalCardHeadProps extends StObject {

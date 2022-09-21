@@ -43,7 +43,7 @@ object UpdateStreamRequest {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: StreamFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: StreamFile*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

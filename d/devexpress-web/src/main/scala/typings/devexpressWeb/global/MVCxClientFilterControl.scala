@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MVCxClientFilterControl")
 @js.native
-class MVCxClientFilterControl ()
+open class MVCxClientFilterControl ()
   extends StObject
      with typings.devexpressWeb.MVCxClientFilterControl {
   
@@ -65,7 +65,7 @@ class MVCxClientFilterControl ()
     * @param obj An object that receives a filter control's callback parameters.
     */
   /* CompleteClass */
-  override def FillStateObject(obj: js.Any): Unit = js.native
+  override def FillStateObject(obj: Any): Unit = js.native
   
   /**
     * Returns the applied filter expression.
@@ -81,11 +81,12 @@ class MVCxClientFilterControl ()
   override def GetClientVisible(): Boolean = js.native
   
   /**
-    * Returns the editor used to edit operand values for the specified filter column. An ASPxClientEditBase descendant that represents the editor used to edit operand values for the specified filter column.
-    * @param editorIndex An integer value that identifies the filter column by its index within the collection.
+    * Returns the editor used to edit the specified values. The editor.
+    * @param index The index of the filter condition.
+    * @param valueIndex The index of the value in the specified filter condition.
     */
   /* CompleteClass */
-  override def GetEditor(editorIndex: Double): typings.devexpressWeb.ASPxClientEditBase = js.native
+  override def GetEditor(index: Double, valueIndex: Double): typings.devexpressWeb.ASPxClientEditBase = js.native
   
   /**
     * Returns the filter expression.
@@ -103,13 +104,13 @@ class MVCxClientFilterControl ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -199,5 +200,5 @@ object MVCxClientFilterControl {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientFilterControl = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientFilterControl]
+  inline def Cast(obj: Any): typings.devexpressWeb.MVCxClientFilterControl = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientFilterControl]
 }

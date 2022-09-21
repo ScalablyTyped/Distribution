@@ -31,7 +31,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.Attribute")
     @js.native
-    class Attribute ()
+    open class Attribute ()
       extends typings.libxmljs.mod.Attribute
     @JSImport("libxslt", "libxmljs.Attribute")
     @js.native
@@ -46,7 +46,7 @@ object mod {
       * @param version XML document version, defaults to 1.0
       * @param encoding Encoding, defaults to utf8
       */
-    class Document ()
+    open class Document ()
       extends typings.libxmljs.mod.Document
     @JSImport("libxslt", "libxmljs.Document")
     @js.native
@@ -56,7 +56,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.Element")
     @js.native
-    class Element protected ()
+    open class Element protected ()
       extends typings.libxmljs.mod.Element {
       def this(doc: typings.libxmljs.mod.Document, name: String) = this()
     }
@@ -78,7 +78,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.Namespace")
     @js.native
-    class Namespace ()
+    open class Namespace ()
       extends typings.libxmljs.mod.Namespace
     @JSImport("libxslt", "libxmljs.Namespace")
     @js.native
@@ -88,7 +88,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.Node")
     @js.native
-    class Node ()
+    open class Node ()
       extends typings.libxmljs.mod.Node
     @JSImport("libxslt", "libxmljs.Node")
     @js.native
@@ -98,7 +98,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.SaxParser")
     @js.native
-    class SaxParser ()
+    open class SaxParser ()
       extends typings.libxmljs.mod.SaxParser
     @JSImport("libxslt", "libxmljs.SaxParser")
     @js.native
@@ -108,7 +108,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.SaxPushParser")
     @js.native
-    class SaxPushParser ()
+    open class SaxPushParser ()
       extends typings.libxmljs.mod.SaxPushParser
     @JSImport("libxslt", "libxmljs.SaxPushParser")
     @js.native

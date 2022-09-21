@@ -1,6 +1,6 @@
 package typings.bufferstream
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("bufferstream", JSImport.Namespace)
   @js.native
-  class ^ () extends BufferStream {
+  open class ^ () extends BufferStream {
     def this(options: Opts) = this()
   }
   
@@ -98,14 +98,14 @@ object mod {
     /*
       defines buffer level or sets buffer to given size (see ↓setSize for more)
       */
-    var size: js.UndefOr[js.Any] = js.undefined
+    var size: js.UndefOr[Any] = js.undefined
     
     /*
       short form for:
       split(token, function (chunk) {emit('data', chunk)})
       */
     // String or Buffer
-    var split: js.UndefOr[js.Any] = js.undefined
+    var split: js.UndefOr[Any] = js.undefined
   }
   object Opts {
     
@@ -128,11 +128,11 @@ object mod {
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSplit(value: js.Any): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+      inline def setSplit(value: Any): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
       inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     }

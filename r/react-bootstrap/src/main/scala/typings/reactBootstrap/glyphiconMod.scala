@@ -10,12 +10,10 @@ object glyphiconMod {
   
   @JSImport("react-bootstrap/lib/Glyphicon", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[GlyphiconProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[GlyphiconProps, js.Object, Any]
   
-  @js.native
-  trait Glyphicon
-    extends Component[GlyphiconProps, js.Object, js.Any]
+  type Glyphicon = Component[GlyphiconProps, js.Object, Any]
   
   trait GlyphiconProps
     extends StObject

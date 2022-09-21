@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait DataValidationType extends StObject
 /**
+  * Represents the data validation type enum.
   *
-  * Represents Data validation type enum.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.DataValidationType")
@@ -17,8 +17,9 @@ sealed trait DataValidationType extends StObject
 object DataValidationType extends StObject {
   
   /**
-    * Custom data validation type
-    *
+    * The custom data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait custom
@@ -26,8 +27,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * Date data validation type
-    *
+    * The date data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait date
@@ -35,8 +37,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * Decimal data validation type
-    *
+    * The decimal data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait decimal
@@ -44,8 +47,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
-    *
+    * Inconsistent means that the range has inconsistent data validation, indicating that there are different rules on different cells.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait inconsistent
@@ -53,8 +57,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * List data validation type
-    *
+    * The list data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait list
@@ -62,8 +67,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * MixedCriteria means that the range has data validation present on some but not all cells
-    *
+    * Mixed criteria means that the range has data validation present on some but not all cells.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait mixedCriteria
@@ -71,8 +77,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * None means allow any value and so there is no data validation in the range.
-    *
+    * None means allow any value, indicating that there is no data validation in the range.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait none
@@ -80,8 +87,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * Text length data validation type
-    *
+    * The text length data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait textLength
@@ -89,8 +97,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * Time data validation type
-    *
+    * The time data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait time
@@ -98,8 +107,9 @@ object DataValidationType extends StObject {
        with DataValidationType
   
   /**
-    * Whole number data validation type
-    *
+    * The whole number data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait wholeNumber

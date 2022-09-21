@@ -10,10 +10,10 @@ Open a URL via the operating system (http: in default browser, mailto: in mail c
 | ------------------ | :-------------: |
 | Full name          | openurl |
 | Keywords           | desktop, browser |
-| # releases         | 0 |
-| # dependents       | 189 |
-| # downloads        | 39395602 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3380734.3333333335 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/rauschma/openurl#readme)

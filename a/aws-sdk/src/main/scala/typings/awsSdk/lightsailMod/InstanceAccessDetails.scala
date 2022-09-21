@@ -14,7 +14,7 @@ trait InstanceAccessDetails extends StObject {
   /**
     * For SSH access, the date on which the temporary keys expire.
     */
-  var expiresAt: js.UndefOr[IsoDate] = js.undefined
+  var expiresAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Describes the public SSH host keys or the RDP certificate.
@@ -69,7 +69,7 @@ object InstanceAccessDetails {
     
     inline def setCertKeyUndefined: Self = StObject.set(x, "certKey", js.undefined)
     
-    inline def setExpiresAt(value: IsoDate): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
     inline def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
     
@@ -77,7 +77,7 @@ object InstanceAccessDetails {
     
     inline def setHostKeysUndefined: Self = StObject.set(x, "hostKeys", js.undefined)
     
-    inline def setHostKeysVarargs(value: HostKeyAttributes*): Self = StObject.set(x, "hostKeys", js.Array(value :_*))
+    inline def setHostKeysVarargs(value: HostKeyAttributes*): Self = StObject.set(x, "hostKeys", js.Array(value*))
     
     inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     

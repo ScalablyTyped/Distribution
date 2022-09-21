@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait RoleMappingType extends StObject
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "RoleMappingType")
+@JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "RoleMappingType")
 @js.native
 object RoleMappingType extends StObject {
   

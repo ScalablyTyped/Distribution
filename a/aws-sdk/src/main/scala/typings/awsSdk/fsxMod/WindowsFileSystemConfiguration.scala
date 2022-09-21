@@ -7,11 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsFileSystemConfiguration extends StObject {
   
   /**
-    * The ID for an existing Microsoft Active Directory instance that the file system should join when it's created.
+    * The ID for an existing Amazon Web Services Managed Microsoft Active Directory instance that the file system is joined to.
     */
   var ActiveDirectoryId: js.UndefOr[DirectoryId] = js.undefined
   
   var Aliases: js.UndefOr[typings.awsSdk.fsxMod.Aliases] = js.undefined
+  
+  /**
+    * The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system.
+    */
+  var AuditLogConfiguration: js.UndefOr[WindowsAuditLogConfiguration] = js.undefined
   
   /**
     * The number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days.
@@ -44,7 +49,7 @@ trait WindowsFileSystemConfiguration extends StObject {
   var PreferredFileServerIp: js.UndefOr[IpAddress] = js.undefined
   
   /**
-    * For MULTI_AZ_1 deployment types, it specifies the ID of the subnet where the preferred file server is located. Must be one of the two subnet IDs specified in SubnetIds property. Amazon FSx serves traffic from this subnet except in the event of a failover to the secondary file server. For SINGLE_AZ_1 and SINGLE_AZ_2 deployment types, this value is the same as that for SubnetIDs. For more information, see Availability and Durability: Single-AZ and Multi-AZ File Systems 
+    * For MULTI_AZ_1 deployment types, it specifies the ID of the subnet where the preferred file server is located. Must be one of the two subnet IDs specified in SubnetIds property. Amazon FSx serves traffic from this subnet except in the event of a failover to the secondary file server. For SINGLE_AZ_1 and SINGLE_AZ_2 deployment types, this value is the same as that for SubnetIDs. For more information, see Availability and durability: Single-AZ and Multi-AZ file systems.
     */
   var PreferredSubnetId: js.UndefOr[SubnetId] = js.undefined
   
@@ -56,7 +61,7 @@ trait WindowsFileSystemConfiguration extends StObject {
   var SelfManagedActiveDirectoryConfiguration: js.UndefOr[SelfManagedActiveDirectoryAttributes] = js.undefined
   
   /**
-    * The throughput of an Amazon FSx file system, measured in megabytes per second.
+    * The throughput of the Amazon FSx file system, measured in megabytes per second.
     */
   var ThroughputCapacity: js.UndefOr[MegabytesPerSecond] = js.undefined
   
@@ -82,7 +87,11 @@ object WindowsFileSystemConfiguration {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value*))
+    
+    inline def setAuditLogConfiguration(value: WindowsAuditLogConfiguration): Self = StObject.set(x, "AuditLogConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAuditLogConfigurationUndefined: Self = StObject.set(x, "AuditLogConfiguration", js.undefined)
     
     inline def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     
@@ -104,7 +113,7 @@ object WindowsFileSystemConfiguration {
     
     inline def setMaintenanceOperationsInProgressUndefined: Self = StObject.set(x, "MaintenanceOperationsInProgress", js.undefined)
     
-    inline def setMaintenanceOperationsInProgressVarargs(value: FileSystemMaintenanceOperation*): Self = StObject.set(x, "MaintenanceOperationsInProgress", js.Array(value :_*))
+    inline def setMaintenanceOperationsInProgressVarargs(value: FileSystemMaintenanceOperation*): Self = StObject.set(x, "MaintenanceOperationsInProgress", js.Array(value*))
     
     inline def setPreferredFileServerIp(value: IpAddress): Self = StObject.set(x, "PreferredFileServerIp", value.asInstanceOf[js.Any])
     

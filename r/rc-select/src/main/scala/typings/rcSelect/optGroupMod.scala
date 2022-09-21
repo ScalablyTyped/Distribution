@@ -1,8 +1,6 @@
 package typings.rcSelect
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcSelect.generatorMod.Key
-import typings.react.mod.CSSProperties
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -16,18 +14,16 @@ object optGroupMod extends Shortcut {
   @js.native
   val default: OptionGroupFC = js.native
   
-  /* Inlined parent std.Omit<rc-select.rc-select/lib/interface.OptionGroupData, 'options'> */
+  /* Inlined parent std.Omit<rc-select.rc-select/lib/Select.DefaultOptionType, 'options'> */
   trait OptGroupProps extends StObject {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.undefined
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key] = js.undefined
+    var label: ReactNode
     
-    var label: js.UndefOr[ReactNode] = js.undefined
-    
-    var style: js.UndefOr[CSSProperties] = js.undefined
+    var value: js.UndefOr[String | Double | Null] = js.undefined
   }
   object OptGroupProps {
     
@@ -42,21 +38,19 @@ object optGroupMod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

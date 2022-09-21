@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Url extends StObject {
   
-  var data: js.Any
+  var data: Any
   
   var `type`: String
   
@@ -14,7 +14,7 @@ trait Url extends StObject {
 }
 object Url {
   
-  inline def apply(data: js.Any, `type`: String, url: String): Url = {
+  inline def apply(data: Any, `type`: String, url: String): Url = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Url]
@@ -22,7 +22,7 @@ object Url {
   
   extension [Self <: Url](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

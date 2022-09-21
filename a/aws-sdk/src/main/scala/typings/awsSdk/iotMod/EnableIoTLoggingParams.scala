@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnableIoTLoggingParams extends StObject {
   
   /**
-    * Specifies the types of information to be logged.
+    * Specifies the type of information to be logged.
     */
   var logLevel: LogLevel
   
   /**
-    * The ARN of the IAM role used for logging.
+    * The Amazon Resource Name (ARN) of the IAM role used for logging.
     */
   var roleArnForLogging: RoleArn
 }

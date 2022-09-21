@@ -42,19 +42,19 @@ object ApplePayShippingContactUpdate {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: ApplePayError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ApplePayError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setNewLineItems(value: js.Array[ApplePayLineItem]): Self = StObject.set(x, "newLineItems", value.asInstanceOf[js.Any])
     
     inline def setNewLineItemsUndefined: Self = StObject.set(x, "newLineItems", js.undefined)
     
-    inline def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "newLineItems", js.Array(value :_*))
+    inline def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "newLineItems", js.Array(value*))
     
     inline def setNewShippingMethods(value: js.Array[ApplePayShippingMethod]): Self = StObject.set(x, "newShippingMethods", value.asInstanceOf[js.Any])
     
     inline def setNewShippingMethodsUndefined: Self = StObject.set(x, "newShippingMethods", js.undefined)
     
-    inline def setNewShippingMethodsVarargs(value: ApplePayShippingMethod*): Self = StObject.set(x, "newShippingMethods", js.Array(value :_*))
+    inline def setNewShippingMethodsVarargs(value: ApplePayShippingMethod*): Self = StObject.set(x, "newShippingMethods", js.Array(value*))
     
     inline def setNewTotal(value: ApplePayLineItem): Self = StObject.set(x, "newTotal", value.asInstanceOf[js.Any])
   }

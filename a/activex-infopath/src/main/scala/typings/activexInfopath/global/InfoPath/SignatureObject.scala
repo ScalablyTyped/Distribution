@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SignatureObject")
 @js.native
-/* private */ class SignatureObject ()
+/* private */ open class SignatureObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SignatureObject {
   

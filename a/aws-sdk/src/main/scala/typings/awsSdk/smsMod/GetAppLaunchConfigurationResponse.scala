@@ -17,7 +17,7 @@ trait GetAppLaunchConfigurationResponse extends StObject {
   var autoLaunch: js.UndefOr[AutoLaunch] = js.undefined
   
   /**
-    * The name of the service role in the customer's account that AWS CloudFormation uses to launch the application.
+    * The name of the service role in the customer's account that CloudFormation uses to launch the application.
     */
   var roleName: js.UndefOr[RoleName] = js.undefined
   
@@ -51,6 +51,6 @@ object GetAppLaunchConfigurationResponse {
     
     inline def setServerGroupLaunchConfigurationsUndefined: Self = StObject.set(x, "serverGroupLaunchConfigurations", js.undefined)
     
-    inline def setServerGroupLaunchConfigurationsVarargs(value: ServerGroupLaunchConfiguration*): Self = StObject.set(x, "serverGroupLaunchConfigurations", js.Array(value :_*))
+    inline def setServerGroupLaunchConfigurationsVarargs(value: ServerGroupLaunchConfiguration*): Self = StObject.set(x, "serverGroupLaunchConfigurations", js.Array(value*))
   }
 }

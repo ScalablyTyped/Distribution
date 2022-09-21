@@ -1,16 +1,6 @@
 package typings.history
 
-import typings.history.anon.Fn0
-import typings.history.anon.FnCall
-import typings.history.anon.FnCallLocation
-import typings.history.anon.FnCallLvRv
-import typings.history.anon.FnCallOptions
-import typings.history.anon.FnCallPathStateKeyCurrentLocation
-import typings.history.createBrowserHistoryMod.BrowserHistoryBuildOptions
-import typings.history.createHashHistoryMod.HashHistoryBuildOptions
-import typings.history.createMemoryHistoryMod.MemoryHistory
-import typings.history.createMemoryHistoryMod.MemoryHistoryBuildOptions
-import typings.history.historyBooleans.`false`
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,173 +11,316 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createBrowserHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[History[S]]
-  inline def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
-  
-  inline def createHashHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")().asInstanceOf[History[S]]
-  inline def createHashHistory[S](options: HashHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
-  
-  inline def createLocation[S](path: LocationDescriptor[S]): Location[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any]).asInstanceOf[Location[S]]
-  inline def createLocation[S](path: LocationDescriptor[S], state: S): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  inline def createLocation[S](path: LocationDescriptor[S], state: S, key: Unit, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  inline def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  inline def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  inline def createLocation[S](path: LocationDescriptor[S], state: Unit, key: Unit, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  inline def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  inline def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
-  
-  inline def createMemoryHistory[S](): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")().asInstanceOf[MemoryHistory[S]]
-  inline def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")(options.asInstanceOf[js.Any]).asInstanceOf[MemoryHistory[S]]
-  
-  inline def createPath[S](location: LocationDescriptorObject[S]): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(location.asInstanceOf[js.Any]).asInstanceOf[Path]
-  
-  inline def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("locationsAreEqual")(lv.asInstanceOf[js.Any], rv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def parsePath(path: Path): Location[LocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[Location[LocationState]]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.history.historyStrings.PUSH
-    - typings.history.historyStrings.POP
-    - typings.history.historyStrings.REPLACE
-  */
-  trait Action extends StObject
-  object Action {
+  @js.native
+  sealed trait Action extends StObject
+  @JSImport("history", "Action")
+  @js.native
+  object Action extends StObject {
     
-    inline def POP: typings.history.historyStrings.POP = "POP".asInstanceOf[typings.history.historyStrings.POP]
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[Action & String] = js.native
     
-    inline def PUSH: typings.history.historyStrings.PUSH = "PUSH".asInstanceOf[typings.history.historyStrings.PUSH]
+    /**
+      * A POP indicates a change to an arbitrary index in the history stack, such
+      * as a back or forward navigation. It does not describe the direction of the
+      * navigation, only that the current index changed.
+      *
+      * Note: This is the default action for newly created history objects.
+      */
+    @js.native
+    sealed trait Pop
+      extends StObject
+         with Action
+    /* "POP" */ val Pop: typings.history.mod.Action.Pop & String = js.native
     
-    inline def REPLACE: typings.history.historyStrings.REPLACE = "REPLACE".asInstanceOf[typings.history.historyStrings.REPLACE]
+    /**
+      * A PUSH indicates a new entry being added to the history stack, such as when
+      * a link is clicked and a new page loads. When this happens, all subsequent
+      * entries in the stack are lost.
+      */
+    @js.native
+    sealed trait Push
+      extends StObject
+         with Action
+    /* "PUSH" */ val Push: typings.history.mod.Action.Push & String = js.native
+    
+    /**
+      * A REPLACE indicates the entry at the current index in the history stack
+      * being replaced by a new one.
+      */
+    @js.native
+    sealed trait Replace
+      extends StObject
+         with Action
+    /* "REPLACE" */ val Replace: typings.history.mod.Action.Replace & String = js.native
   }
   
-  type Hash = typings.history.mod.History.Hash
+  inline def createBrowserHistory(): BrowserHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[BrowserHistory]
+  inline def createBrowserHistory(options: BrowserHistoryOptions): BrowserHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserHistory]
+  
+  inline def createHashHistory(): HashHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")().asInstanceOf[HashHistory]
+  inline def createHashHistory(options: HashHistoryOptions): HashHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")(options.asInstanceOf[js.Any]).asInstanceOf[HashHistory]
+  
+  inline def createMemoryHistory(): MemoryHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")().asInstanceOf[MemoryHistory]
+  inline def createMemoryHistory(options: MemoryHistoryOptions): MemoryHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")(options.asInstanceOf[js.Any]).asInstanceOf[MemoryHistory]
+  
+  inline def createPath(hasPathnameSearchHash: typings.history.anon.PartialPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(hasPathnameSearchHash.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def parsePath(path: String): typings.history.anon.PartialPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[typings.history.anon.PartialPath]
+  
+  type Blocker = js.Function1[/* tx */ Transition, Unit]
+  
+  type BrowserHistory = History
+  
+  trait BrowserHistoryOptions extends StObject {
+    
+    var window: js.UndefOr[Window] = js.undefined
+  }
+  object BrowserHistoryOptions {
+    
+    inline def apply(): BrowserHistoryOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BrowserHistoryOptions]
+    }
+    
+    extension [Self <: BrowserHistoryOptions](x: Self) {
+      
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    }
+  }
+  
+  type Hash = String
+  
+  type HashHistory = History
+  
+  trait HashHistoryOptions extends StObject {
+    
+    var window: js.UndefOr[Window] = js.undefined
+  }
+  object HashHistoryOptions {
+    
+    inline def apply(): HashHistoryOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HashHistoryOptions]
+    }
+    
+    extension [Self <: HashHistoryOptions](x: Self) {
+      
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    }
+  }
   
   @js.native
-  trait History[HistoryLocationState] extends StObject {
+  trait History extends StObject {
     
-    var action: Action = js.native
+    /**
+      * The last action that modified the current location. This will always be
+      * Action.Pop when a history instance is first created. This value is mutable.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.action
+      */
+    val action: Action = js.native
     
-    def block(): UnregisterCallback = js.native
-    def block(prompt: String): UnregisterCallback = js.native
-    def block(prompt: Boolean): UnregisterCallback = js.native
-    def block(prompt: TransitionPromptHook[HistoryLocationState]): UnregisterCallback = js.native
+    /**
+      * Navigates to the previous entry in the stack. Identical to go(-1).
+      *
+      * Warning: if the current location is the first location in the stack, this
+      * will unload the current document.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.back
+      */
+    def back(): Unit = js.native
     
-    def createHref(location: LocationDescriptorObject[HistoryLocationState]): Href = js.native
+    /**
+      * Prevents the current location from changing and sets up a listener that
+      * will be called instead.
+      *
+      * @param blocker - A function that will be called when a transition is blocked
+      * @returns unblock - A function that may be used to stop blocking
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.block
+      */
+    def block(blocker: Blocker): js.Function0[Unit] = js.native
     
-    def go(n: Double): Unit = js.native
+    /**
+      * Returns a valid href for the given `to` value that may be used as
+      * the value of an <a href> attribute.
+      *
+      * @param to - The destination URL
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.createHref
+      */
+    def createHref(to: To): String = js.native
     
-    def goBack(): Unit = js.native
+    /**
+      * Navigates to the next entry in the stack. Identical to go(1).
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.forward
+      */
+    def forward(): Unit = js.native
     
-    def goForward(): Unit = js.native
+    /**
+      * Navigates `n` entries backward/forward in the history stack relative to the
+      * current index. For example, a "back" navigation would use go(-1).
+      *
+      * @param delta - The delta in the stack index
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.go
+      */
+    def go(delta: Double): Unit = js.native
     
-    var length: Double = js.native
+    /**
+      * Sets up a listener that will be called whenever the current location
+      * changes.
+      *
+      * @param listener - A function that will be called when the location changes
+      * @returns unlisten - A function that may be used to stop listening
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.listen
+      */
+    def listen(listener: Listener): js.Function0[Unit] = js.native
     
-    def listen(listener: LocationListener[HistoryLocationState]): UnregisterCallback = js.native
+    /**
+      * The current location. This value is mutable.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.location
+      */
+    val location: Location = js.native
     
-    var location: Location[HistoryLocationState] = js.native
+    /**
+      * Pushes a new location onto the history stack, increasing its length by one.
+      * If there were any entries in the stack after the current one, they are
+      * lost.
+      *
+      * @param to - The new URL
+      * @param state - Data to associate with the new location
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.push
+      */
+    def push(to: To): Unit = js.native
+    def push(to: To, state: Any): Unit = js.native
     
-    def push(location: LocationDescriptor[HistoryLocationState]): Unit = js.native
-    def push(path: Path): Unit = js.native
-    def push(path: Path, state: HistoryLocationState): Unit = js.native
-    
-    def replace(location: LocationDescriptor[HistoryLocationState]): Unit = js.native
-    def replace(path: Path): Unit = js.native
-    def replace(path: Path, state: HistoryLocationState): Unit = js.native
-  }
-  object History {
-    
-    type Hash = String
-    
-    type Href = String
-    
-    type LocationDescriptor[S] = typings.history.mod.History.Path | LocationDescriptorObject[S]
-    
-    type LocationKey = String
-    
-    type LocationListener[S] = js.Function2[/* location */ Location[S], /* action */ Action, Unit]
-    
-    type LocationState = js.Any
-    
-    type Path = String
-    
-    type Pathname = String
-    
-    type Search = String
-    
-    type TransitionHook[S] = js.Function2[
-        /* location */ Location[S], 
-        /* callback */ js.Function1[/* result */ js.Any, Unit], 
-        js.Any
-      ]
-    
-    type TransitionPromptHook[S] = js.Function2[/* location */ Location[S], /* action */ Action, String | `false` | Unit]
+    /**
+      * Replaces the current location in the history stack with a new one.  The
+      * location that was replaced will no longer be available.
+      *
+      * @param to - The new URL
+      * @param state - Data to associate with the new location
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#history.replace
+      */
+    def replace(to: To): Unit = js.native
+    def replace(to: To, state: Any): Unit = js.native
   }
   
-  type Href = typings.history.mod.History.Href
+  type InitialEntry = String | typings.history.anon.PartialLocation
   
-  trait Location[S] extends StObject {
+  type Key = String
+  
+  type Listener = js.Function1[/* update */ Update, Unit]
+  
+  trait Location
+    extends StObject
+       with Path {
     
-    var hash: Hash
+    /**
+      * A unique string associated with this location. May be used to safely store
+      * and retrieve data in some other storage API, like `localStorage`.
+      *
+      * Note: This value is always "default" on the initial location.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.key
+      */
+    var key: Key
     
-    var key: js.UndefOr[LocationKey] = js.undefined
-    
-    var pathname: Pathname
-    
-    var search: Search
-    
-    var state: S
+    /**
+      * A value of arbitrary data associated with this location.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.state
+      */
+    var state: Any
   }
   object Location {
     
-    inline def apply[S](hash: Hash, pathname: Pathname, search: Search, state: S): Location[S] = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Location[S]]
+    inline def apply(hash: Hash, key: Key, pathname: Pathname, search: Search, state: Any): Location = {
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location[?], S](x: Self & Location[S]) {
+    extension [Self <: Location](x: Self) {
       
-      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-      
-      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
-      
-      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
-      
-      inline def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
-  type LocationDescriptor[S] = typings.history.mod.History.LocationDescriptor[S]
+  @js.native
+  trait MemoryHistory
+    extends StObject
+       with History {
+    
+    val index: Double = js.native
+  }
   
-  trait LocationDescriptorObject[S] extends StObject {
+  trait MemoryHistoryOptions extends StObject {
+    
+    var initialEntries: js.UndefOr[js.Array[InitialEntry]] = js.undefined
+    
+    var initialIndex: js.UndefOr[Double] = js.undefined
+  }
+  object MemoryHistoryOptions {
+    
+    inline def apply(): MemoryHistoryOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MemoryHistoryOptions]
+    }
+    
+    extension [Self <: MemoryHistoryOptions](x: Self) {
+      
+      inline def setInitialEntries(value: js.Array[InitialEntry]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
+      
+      inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
+      
+      inline def setInitialEntriesVarargs(value: InitialEntry*): Self = StObject.set(x, "initialEntries", js.Array(value*))
+      
+      inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
+      
+      inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<history.history.Location> */
+  trait PartialLocation extends StObject {
     
     var hash: js.UndefOr[Hash] = js.undefined
     
-    var key: js.UndefOr[LocationKey] = js.undefined
+    var key: js.UndefOr[Key] = js.undefined
     
     var pathname: js.UndefOr[Pathname] = js.undefined
     
     var search: js.UndefOr[Search] = js.undefined
     
-    var state: js.UndefOr[S] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
   }
-  object LocationDescriptorObject {
+  object PartialLocation {
     
-    inline def apply[S](): LocationDescriptorObject[S] = {
+    inline def apply(): PartialLocation = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[LocationDescriptorObject[S]]
+      __obj.asInstanceOf[PartialLocation]
     }
     
-    extension [Self <: LocationDescriptorObject[?], S](x: Self & LocationDescriptorObject[S]) {
+    extension [Self <: PartialLocation](x: Self) {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
       inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      inline def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
@@ -199,100 +332,138 @@ object mod {
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      inline def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
-  type LocationKey = typings.history.mod.History.LocationKey
-  
-  type LocationListener[S] = typings.history.mod.History.LocationListener[S]
-  
-  type LocationState = typings.history.mod.History.LocationState
-  
-  trait Module extends StObject {
+  /* Inlined std.Partial<history.history.Path> */
+  trait PartialPath extends StObject {
     
-    def createBrowserHistory[S](): History[S]
-    def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S]
-    @JSName("createBrowserHistory")
-    var createBrowserHistory_Original: FnCall
+    var hash: js.UndefOr[Hash] = js.undefined
     
-    def createHashHistory[S](): History[S]
-    def createHashHistory[S](options: HashHistoryBuildOptions): History[S]
-    @JSName("createHashHistory")
-    var createHashHistory_Original: FnCallOptions
+    var pathname: js.UndefOr[Pathname] = js.undefined
     
-    def createLocation[S](path: LocationDescriptor[S]): Location[S]
-    def createLocation[S](path: LocationDescriptor[S], state: S): Location[S]
-    def createLocation[S](path: LocationDescriptor[S], state: S, key: Unit, currentLocation: Location[S]): Location[S]
-    def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S]
-    def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S]
-    def createLocation[S](path: LocationDescriptor[S], state: Unit, key: Unit, currentLocation: Location[S]): Location[S]
-    def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey): Location[S]
-    def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey, currentLocation: Location[S]): Location[S]
-    @JSName("createLocation")
-    var createLocation_Original: FnCallPathStateKeyCurrentLocation
-    
-    def createMemoryHistory[S](): MemoryHistory[S]
-    def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S]
-    @JSName("createMemoryHistory")
-    var createMemoryHistory_Original: Fn0
-    
-    def createPath[S](location: LocationDescriptorObject[S]): Path
-    @JSName("createPath")
-    var createPath_Original: FnCallLocation
-    
-    def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean
-    @JSName("locationsAreEqual")
-    var locationsAreEqual_Original: FnCallLvRv
-    
-    def parsePath(path: Path): Location[LocationState]
-    @JSName("parsePath")
-    var parsePath_Original: js.Function1[/* path */ Path, Location[LocationState]]
+    var search: js.UndefOr[Search] = js.undefined
   }
-  object Module {
+  object PartialPath {
     
-    inline def apply(
-      createBrowserHistory: FnCall,
-      createHashHistory: FnCallOptions,
-      createLocation: FnCallPathStateKeyCurrentLocation,
-      createMemoryHistory: Fn0,
-      createPath: FnCallLocation,
-      locationsAreEqual: FnCallLvRv,
-      parsePath: /* path */ Path => Location[LocationState]
-    ): Module = {
-      val __obj = js.Dynamic.literal(createBrowserHistory = createBrowserHistory.asInstanceOf[js.Any], createHashHistory = createHashHistory.asInstanceOf[js.Any], createLocation = createLocation.asInstanceOf[js.Any], createMemoryHistory = createMemoryHistory.asInstanceOf[js.Any], createPath = createPath.asInstanceOf[js.Any], locationsAreEqual = locationsAreEqual.asInstanceOf[js.Any], parsePath = js.Any.fromFunction1(parsePath))
-      __obj.asInstanceOf[Module]
+    inline def apply(): PartialPath = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialPath]
     }
     
-    extension [Self <: Module](x: Self) {
+    extension [Self <: PartialPath](x: Self) {
       
-      inline def setCreateBrowserHistory(value: FnCall): Self = StObject.set(x, "createBrowserHistory", value.asInstanceOf[js.Any])
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      inline def setCreateHashHistory(value: FnCallOptions): Self = StObject.set(x, "createHashHistory", value.asInstanceOf[js.Any])
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      inline def setCreateLocation(value: FnCallPathStateKeyCurrentLocation): Self = StObject.set(x, "createLocation", value.asInstanceOf[js.Any])
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      inline def setCreateMemoryHistory(value: Fn0): Self = StObject.set(x, "createMemoryHistory", value.asInstanceOf[js.Any])
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
-      inline def setCreatePath(value: FnCallLocation): Self = StObject.set(x, "createPath", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      inline def setLocationsAreEqual(value: FnCallLvRv): Self = StObject.set(x, "locationsAreEqual", value.asInstanceOf[js.Any])
-      
-      inline def setParsePath(value: /* path */ Path => Location[LocationState]): Self = StObject.set(x, "parsePath", js.Any.fromFunction1(value))
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     }
   }
   
-  type Path = typings.history.mod.History.Path
+  trait Path extends StObject {
+    
+    /**
+      * A URL fragment identifier, beginning with a #.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.hash
+      */
+    var hash: Hash
+    
+    /**
+      * A URL pathname, beginning with a /.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.pathname
+      */
+    var pathname: Pathname
+    
+    /**
+      * A URL search string, beginning with a ?.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.search
+      */
+    var search: Search
+  }
+  object Path {
+    
+    inline def apply(hash: Hash, pathname: Pathname, search: Search): Path = {
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Path]
+    }
+    
+    extension [Self <: Path](x: Self) {
+      
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    }
+  }
   
-  type Pathname = typings.history.mod.History.Pathname
+  type Pathname = String
   
-  type Search = typings.history.mod.History.Search
+  type Search = String
   
-  type TransitionHook[S] = typings.history.mod.History.TransitionHook[S]
+  type State = Any
   
-  type TransitionPromptHook[S] = typings.history.mod.History.TransitionPromptHook[S]
+  type To = String | typings.history.anon.PartialPath
   
-  type UnregisterCallback = js.Function0[Unit]
+  trait Transition
+    extends StObject
+       with Update {
+    
+    /**
+      * Retries the update to the current location.
+      */
+    def retry(): Unit
+  }
+  object Transition {
+    
+    inline def apply(action: Action, location: Location, retry: () => Unit): Transition = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], retry = js.Any.fromFunction0(retry))
+      __obj.asInstanceOf[Transition]
+    }
+    
+    extension [Self <: Transition](x: Self) {
+      
+      inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait Update extends StObject {
+    
+    /**
+      * The action that triggered the change.
+      */
+    var action: Action
+    
+    /**
+      * The new location.
+      */
+    var location: Location
+  }
+  object Update {
+    
+    inline def apply(action: Action, location: Location): Update = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Update]
+    }
+    
+    extension [Self <: Update](x: Self) {
+      
+      inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    }
+  }
 }

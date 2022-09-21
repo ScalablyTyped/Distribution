@@ -7,20 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientJobsStrings {
   
   @js.native
-  sealed trait ClientEvent extends StObject
-  inline def ClientEvent: ClientEvent = "ClientEvent".asInstanceOf[ClientEvent]
-  
-  @js.native
-  sealed trait CustomAttributeHistogramResult extends StObject
-  inline def CustomAttributeHistogramResult: CustomAttributeHistogramResult = "CustomAttributeHistogramResult".asInstanceOf[CustomAttributeHistogramResult]
-  
-  @js.native
-  sealed trait GoogleCloudTalentV4Job extends StObject
-  inline def GoogleCloudTalentV4Job: GoogleCloudTalentV4Job = "GoogleCloudTalentV4Job".asInstanceOf[GoogleCloudTalentV4Job]
-  
-  @js.native
-  sealed trait HistogramResult extends StObject
-  inline def HistogramResult: HistogramResult = "HistogramResult".asInstanceOf[HistogramResult]
+  sealed trait HistogramQueryResult extends StObject
+  inline def HistogramQueryResult: HistogramQueryResult = "HistogramQueryResult".asInstanceOf[HistogramQueryResult]
   
   @js.native
   sealed trait Job extends StObject
@@ -35,6 +23,10 @@ object maximMazurokGapiClientJobsStrings {
   inline def NamespacedDebugInput: NamespacedDebugInput = "NamespacedDebugInput".asInstanceOf[NamespacedDebugInput]
   
   @js.native
+  sealed trait Operation extends StObject
+  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
+  
+  @js.native
   sealed trait Status extends StObject
   inline def Status: Status = "Status".asInstanceOf[Status]
   
@@ -43,6 +35,6 @@ object maximMazurokGapiClientJobsStrings {
   inline def jobs: jobs = "jobs".asInstanceOf[jobs]
   
   @js.native
-  sealed trait v3 extends StObject
-  inline def v3: v3 = "v3".asInstanceOf[v3]
+  sealed trait v4 extends StObject
+  inline def v4: v4 = "v4".asInstanceOf[v4]
 }

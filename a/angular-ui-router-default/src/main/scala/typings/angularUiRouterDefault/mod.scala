@@ -25,14 +25,14 @@ object mod {
         
         inline def setDefault(value: StateDefaultSpecifier): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
-        inline def setDefaultFunction1(value: /* repeated */ js.Any => IPromise[String] | String): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+        inline def setDefaultFunction1(value: /* repeated */ Any => IPromise[String] | String): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
         
         inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         
-        inline def setDefaultVarargs(value: ((js.Function1[/* repeated */ js.Any, IPromise[String] | String]) | String)*): Self = StObject.set(x, "default", js.Array(value :_*))
+        inline def setDefaultVarargs(value: ((js.Function1[/* repeated */ Any, IPromise[String] | String]) | String)*): Self = StObject.set(x, "default", js.Array(value*))
       }
     }
     
-    type StateDefaultSpecifier = String | (js.Function1[/* repeated */ js.Any, IPromise[String] | String]) | (js.Array[(js.Function1[/* repeated */ js.Any, IPromise[String] | String]) | String])
+    type StateDefaultSpecifier = String | (js.Function1[/* repeated */ Any, IPromise[String] | String]) | (js.Array[(js.Function1[/* repeated */ Any, IPromise[String] | String]) | String])
   }
 }

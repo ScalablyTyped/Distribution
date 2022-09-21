@@ -32,7 +32,7 @@ trait CustomXMLNode extends StObject {
   
   def AppendChildSubtree(XML: String): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def Attributes(Index: Double): CustomXMLNode = js.native
   @JSName("Attributes")
@@ -157,11 +157,11 @@ trait CustomXMLNode extends StObject {
   /* private */ @JSName("Office.CustomXMLNode_typekey")
   var OfficeDotCustomXMLNode_typekey: CustomXMLNode = js.native
   
-  val OwnerDocument: js.Any = js.native
+  val OwnerDocument: Any = js.native
   
   val OwnerPart: CustomXMLPart = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentNode: CustomXMLNode = js.native
   

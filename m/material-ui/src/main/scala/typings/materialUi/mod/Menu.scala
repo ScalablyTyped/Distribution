@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Menu")
 @js.native
-class Menu ()
-  extends Component[MenuProps, js.Object, js.Any]
+open class Menu ()
+  extends Component[MenuProps, js.Object, Any]

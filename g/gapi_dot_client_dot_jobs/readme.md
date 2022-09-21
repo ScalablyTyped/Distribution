@@ -1,7 +1,7 @@
 
 # Scala.js typings for gapi_dot_client_dot_jobs
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 
 

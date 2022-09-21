@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Per-project settings for the Tool Results service.
-  */
 trait SchemaProjectSettings extends StObject {
   
   /**
-    * The name of the Google Cloud Storage bucket to which results are written.
-    * By default, this is unset.  In update request: optional In response:
-    * optional
+    * The name of the Google Cloud Storage bucket to which results are written. By default, this is unset. In update request: optional In response: optional
     */
-  var defaultBucket: js.UndefOr[String] = js.undefined
+  var defaultBucket: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name of the project&#39;s settings.  Always of the form:
-    * projects/{project-id}/settings  In update request: never set In response:
-    * always set
+    * The name of the project's settings. Always of the form: projects/{project-id\}/settings In update request: never set In response: always set
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProjectSettings {
   
@@ -34,9 +27,13 @@ object SchemaProjectSettings {
     
     inline def setDefaultBucket(value: String): Self = StObject.set(x, "defaultBucket", value.asInstanceOf[js.Any])
     
+    inline def setDefaultBucketNull: Self = StObject.set(x, "defaultBucket", null)
+    
     inline def setDefaultBucketUndefined: Self = StObject.set(x, "defaultBucket", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

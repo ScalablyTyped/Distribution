@@ -16,6 +16,8 @@ trait CrossOriginLoginOptions extends StObject {
   
   var nonce: js.UndefOr[String] = js.undefined
   
+  var onRedirecting: js.UndefOr[js.Function1[/* done */ js.Function0[Unit], js.UndefOr[Unit]]] = js.undefined
+  
   var password: String
   
   var realm: js.UndefOr[String] = js.undefined
@@ -60,6 +62,10 @@ object CrossOriginLoginOptions {
     inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    
+    inline def setOnRedirecting(value: /* done */ js.Function0[Unit] => js.UndefOr[Unit]): Self = StObject.set(x, "onRedirecting", js.Any.fromFunction1(value))
+    
+    inline def setOnRedirectingUndefined: Self = StObject.set(x, "onRedirecting", js.undefined)
     
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

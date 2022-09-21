@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-dependency-injection", "NewInstance")
 @js.native
-class NewInstance_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends StObject {
+open class NewInstance_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends StObject {
   def this(
     key: PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl, TArgs],
     dynamicDependencies: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
@@ -26,5 +26,5 @@ object NewInstance_ {
   inline def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
     key: PrimitiveOrDependencyCtorOrFunctor[TBase, TImpl, TArgs],
     dynamicDependencies: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
-  ): NewInstance_[TBase, TImpl, TArgs] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(key.asInstanceOf[js.Any], dynamicDependencies.asInstanceOf[js.Any])).asInstanceOf[NewInstance_[TBase, TImpl, TArgs]]
+  ): NewInstance_[TBase, TImpl, TArgs] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(List(key.asInstanceOf[js.Any]).`++`(dynamicDependencies.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NewInstance_[TBase, TImpl, TArgs]]
 }

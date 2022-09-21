@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientNotebooks.anon
 
-import typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks.StartInstanceRequest
+import typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks.SetInstanceMachineTypeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait AccesstokenAlt extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: StartInstanceRequest
+  var resource: SetInstanceMachineTypeRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(name: String, resource: StartInstanceRequest): AccesstokenAlt = {
+  inline def apply(name: String, resource: SetInstanceMachineTypeRequest): AccesstokenAlt = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
@@ -94,7 +94,7 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: StartInstanceRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SetInstanceMachineTypeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

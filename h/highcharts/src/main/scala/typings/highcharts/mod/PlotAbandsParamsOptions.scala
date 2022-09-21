@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlotAbandsParamsOptions extends StObject {
   
   /**
-    * (Highstock) The algorithms factor value used to calculate bands.
-    */
-  var factor: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highstock) The point index which indicator calculations will base. For
     * example using OHLC data, index=2 means the indicator will be calculated
     * using Low values.
@@ -33,10 +28,6 @@ object PlotAbandsParamsOptions {
   }
   
   extension [Self <: PlotAbandsParamsOptions](x: Self) {
-    
-    inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
-    
-    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

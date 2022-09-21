@@ -1,7 +1,7 @@
 
 # Scala.js typings for unified
 
-Typings are for version 8.4.2
+Typings are for version 10.1.2
 
 ## Library description:
 Interface for parsing, inspecting, transforming, and serializing content through syntax trees
@@ -10,15 +10,13 @@ Interface for parsing, inspecting, transforming, and serializing content through
 | ------------------ | :-------------: |
 | Full name          | unified |
 | Keywords           | unified, process, parse, transform, compile, stringify, serialize, ast, cst, syntax, tree, content, rehype, retext, remark |
-| # releases         | 13 |
-| # dependents       | 626 |
-| # downloads        | 227998393 |
-| # stars            | 7 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5538576333333336E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://unifiedjs.com)
-- [Bugs](https://github.com/unifiedjs/unified/issues)
-- [Repository](https://github.com/unifiedjs/unified)
 - [Npm](https://www.npmjs.com/package/unified)
     
 

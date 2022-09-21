@@ -25,7 +25,7 @@ object DownloadSizeEvidence {
     
     inline def setTopUrlDownloadSizeBreakdownsUndefined: Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", js.undefined)
     
-    inline def setTopUrlDownloadSizeBreakdownsVarargs(value: UrlDownloadSize*): Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", js.Array(value :_*))
+    inline def setTopUrlDownloadSizeBreakdownsVarargs(value: UrlDownloadSize*): Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", js.Array(value*))
     
     inline def setTotalDownloadSizeKb(value: Double): Self = StObject.set(x, "totalDownloadSizeKb", value.asInstanceOf[js.Any])
     

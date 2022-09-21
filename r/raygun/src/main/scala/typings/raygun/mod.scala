@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.raygun.raygunBatchMod.RaygunBatchTransport
 import typings.raygun.typesMod.CustomData
 import typings.raygun.typesMod.Hook
@@ -16,7 +14,7 @@ import typings.raygun.typesMod.RawUserData
 import typings.raygun.typesMod.RaygunOptions
 import typings.raygun.typesMod.Tag
 import typings.raygun.typesMod.Transport
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +27,31 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("raygun", "default.Client")
-    @js.native
-    class Client ()
-      extends StObject
-         with Raygun
     @JSImport("raygun", "default.Client")
     @js.native
     def Client: Instantiable0[Raygun] = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("raygun", "default.Client")
+    @js.native
+    open class ClientCls ()
+      extends StObject
+         with Raygun
+    
     inline def Client_=(x: Instantiable0[Raygun]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
   }
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("raygun", "Client")
-  @js.native
-  class Client ()
-    extends StObject
-       with Raygun
   @JSImport("raygun", "Client")
   @js.native
   val Client: Instantiable0[Raygun] = js.native
+  type Client = Raygun
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("raygun", "Client")
+  @js.native
+  open class ClientCls ()
+    extends StObject
+       with Raygun
   
   @js.native
   trait Raygun extends StObject {
@@ -90,12 +92,29 @@ object mod {
     
     var _version: String = js.native
     
-    def expressCustomData(error: Error, request: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Object = js.native
+    /* private */ var buildSendOptions: Any = js.native
+    
+    def expressCustomData(
+      error: js.Error,
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): js.Object = js.native
     
     def expressHandler(
-      err: Error,
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response_[js.Any],
+      err: js.Error,
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]],
       next: NextFunction
     ): Unit = js.native
     
@@ -105,33 +124,49 @@ object mod {
     
     def offline(): Unit = js.native
     
-    /* private */ var offlineStorage: js.Any = js.native
+    /* private */ var offlineStorage: Any = js.native
+    
+    /* private */ var offlineTransport: Any = js.native
     
     def onBeforeSend(onBeforeSend: Hook[Message]): this.type = js.native
     
     def online(): Unit = js.native
     def online(callback: SendCB): Unit = js.native
     
+    /* private */ var reportUncaughtExceptions: Any = js.native
+    
     def send(exception: String): Message = js.native
-    def send(exception: String, customData: Unit, callback: js.Function1[/* err */ Error | Null, Unit]): Message = js.native
+    def send(exception: String, customData: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Message = js.native
     def send(
       exception: String,
       customData: Unit,
-      callback: js.Function1[/* err */ Error | Null, Unit],
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
       request: Unit,
       tags: js.Array[Tag]
     ): Message = js.native
     def send(
       exception: String,
       customData: Unit,
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Message = js.native
     def send(
       exception: String,
       customData: Unit,
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       tags: js.Array[Tag]
     ): Message = js.native
     def send(exception: String, customData: Unit, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
@@ -139,35 +174,59 @@ object mod {
       exception: String,
       customData: Unit,
       callback: Unit,
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Message = js.native
     def send(
       exception: String,
       customData: Unit,
       callback: Unit,
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       tags: js.Array[Tag]
     ): Message = js.native
     def send(exception: String, customData: CustomData): Message = js.native
-    def send(exception: String, customData: CustomData, callback: js.Function1[/* err */ Error | Null, Unit]): Message = js.native
+    def send(exception: String, customData: CustomData, callback: js.Function1[/* err */ js.Error | Null, Unit]): Message = js.native
     def send(
       exception: String,
       customData: CustomData,
-      callback: js.Function1[/* err */ Error | Null, Unit],
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
       request: Unit,
       tags: js.Array[Tag]
     ): Message = js.native
     def send(
       exception: String,
       customData: CustomData,
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Message = js.native
     def send(
       exception: String,
       customData: CustomData,
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       tags: js.Array[Tag]
     ): Message = js.native
     def send(exception: String, customData: CustomData, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
@@ -175,87 +234,153 @@ object mod {
       exception: String,
       customData: CustomData,
       callback: Unit,
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Message = js.native
     def send(
       exception: String,
       customData: CustomData,
       callback: Unit,
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       tags: js.Array[Tag]
     ): Message = js.native
-    def send(exception: Error): Message = js.native
-    def send(exception: Error, customData: Unit, callback: js.Function1[/* err */ Error | Null, Unit]): Message = js.native
+    def send(exception: js.Error): Message = js.native
+    def send(exception: js.Error, customData: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: Unit,
-      callback: js.Function1[/* err */ Error | Null, Unit],
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
       request: Unit,
       tags: js.Array[Tag]
     ): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: Unit,
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: Unit,
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       tags: js.Array[Tag]
     ): Message = js.native
-    def send(exception: Error, customData: Unit, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
+    def send(exception: js.Error, customData: Unit, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: Unit,
       callback: Unit,
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: Unit,
       callback: Unit,
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       tags: js.Array[Tag]
     ): Message = js.native
-    def send(exception: Error, customData: CustomData): Message = js.native
-    def send(exception: Error, customData: CustomData, callback: js.Function1[/* err */ Error | Null, Unit]): Message = js.native
+    def send(exception: js.Error, customData: CustomData): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: CustomData,
-      callback: js.Function1[/* err */ Error | Null, Unit],
+      callback: js.Function1[/* err */ js.Error | Null, Unit]
+    ): Message = js.native
+    def send(
+      exception: js.Error,
+      customData: CustomData,
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
       request: Unit,
       tags: js.Array[Tag]
     ): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: CustomData,
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: CustomData,
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      callback: js.Function1[/* err */ js.Error | Null, Unit],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       tags: js.Array[Tag]
     ): Message = js.native
-    def send(exception: Error, customData: CustomData, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
+    def send(exception: js.Error, customData: CustomData, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: CustomData,
       callback: Unit,
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Message = js.native
     def send(
-      exception: Error,
+      exception: js.Error,
       customData: CustomData,
       callback: Unit,
-      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       tags: js.Array[Tag]
     ): Message = js.native
+    
+    /* private */ var sendSync: Any = js.native
     
     def setTags(tags: js.Array[Tag]): Unit = js.native
     
@@ -267,8 +392,17 @@ object mod {
     
     def transport(): Transport = js.native
     
-    def user(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): RawUserData | Null = js.native
+    def user(): RawUserData | Null = js.native
+    def user(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): RawUserData | Null = js.native
   }
   
-  type SendCB = js.Function2[/* error */ Error | Null, /* items */ js.UndefOr[js.Array[String]], Unit]
+  type SendCB = js.Function2[/* error */ js.Error | Null, /* items */ js.UndefOr[js.Array[String]], Unit]
 }

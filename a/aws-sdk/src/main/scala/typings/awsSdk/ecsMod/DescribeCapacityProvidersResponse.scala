@@ -34,13 +34,13 @@ object DescribeCapacityProvidersResponse {
     
     inline def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
     
-    inline def setCapacityProvidersVarargs(value: CapacityProvider*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
+    inline def setCapacityProvidersVarargs(value: CapacityProvider*): Self = StObject.set(x, "capacityProviders", js.Array(value*))
     
     inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

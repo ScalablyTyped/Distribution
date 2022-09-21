@@ -18,19 +18,19 @@ object flipMod {
   inline def flipPose(
     props: PoserState[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       DomPopmotionPoser
     ],
     nextPose: Pose[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
       TransitionDefinition
     ]
   ): Pose[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
     TransitionDefinition
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("flipPose")(props.asInstanceOf[js.Any], nextPose.asInstanceOf[js.Any])).asInstanceOf[Pose[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
     TransitionDefinition
   ]]
   
@@ -39,8 +39,8 @@ object flipMod {
     key: String,
     state: PoserState[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       DomPopmotionPoser
     ]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFlipPose")(flip.asInstanceOf[js.Any], key.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -48,11 +48,11 @@ object flipMod {
   inline def setValue(
     hasValuesProps: PoserState[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       DomPopmotionPoser
     ],
     key: String,
-    to: js.Any
+    to: Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(hasValuesProps.asInstanceOf[js.Any], key.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

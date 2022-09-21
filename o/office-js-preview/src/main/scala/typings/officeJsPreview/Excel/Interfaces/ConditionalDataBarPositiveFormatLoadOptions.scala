@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a conditional format for the positive side of the data bar.
   *
-  * Represents a conditional format DataBar Format for the positive side of the data bar.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalDataBarPositiveFormatLoadOptions extends StObject {
@@ -19,26 +19,26 @@ trait ConditionalDataBarPositiveFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    Value is "" (an empty string) if no border is present or set.
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    "" (empty string) if no border is present or set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var borderColor: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * HTML color code representing the fill color, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the data bar has a gradient.
     *
-    * Specifies if the DataBar has a gradient.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var gradientFill: js.UndefOr[Boolean] = js.undefined

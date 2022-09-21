@@ -61,7 +61,7 @@ object DataSource {
     
     inline def setDataQualityStandardUndefined: Self = StObject.set(x, "dataQualityStandard", js.undefined)
     
-    inline def setDataQualityStandardVarargs(value: String*): Self = StObject.set(x, "dataQualityStandard", js.Array(value :_*))
+    inline def setDataQualityStandardVarargs(value: String*): Self = StObject.set(x, "dataQualityStandard", js.Array(value*))
     
     inline def setDataStreamId(value: String): Self = StObject.set(x, "dataStreamId", value.asInstanceOf[js.Any])
     

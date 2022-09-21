@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dockerode", "Exec")
 @js.native
-class Exec protected () extends StObject {
-  def this(modem: js.Any, id: String) = this()
+open class Exec protected () extends StObject {
+  def this(modem: Any, id: String) = this()
   
   var id: String = js.native
   
   def inspect(): js.Promise[ExecInspectInfo] = js.native
   def inspect(callback: Callback[ExecInspectInfo]): Unit = js.native
   
-  var modem: js.Any = js.native
+  var modem: Any = js.native
   
-  def resize(options: js.Object): js.Promise[js.Any] = js.native
-  def resize(options: js.Object, callback: Callback[js.Any]): Unit = js.native
+  def resize(options: js.Object): js.Promise[Any] = js.native
+  def resize(options: js.Object, callback: Callback[Any]): Unit = js.native
   
   def start(options: ExecStartOptions): js.Promise[Duplex] = js.native
   def start(options: ExecStartOptions, callback: Callback[Duplex]): Unit = js.native

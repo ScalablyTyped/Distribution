@@ -10,7 +10,7 @@ trait IMsoChartFormat extends StObject {
   @JSName("Adjustments")
   val Adjustments_Original: Adjustments
   
-  val Application: js.Any
+  val Application: Any
   
   var AutoShapeType: MsoAutoShapeType
   
@@ -25,7 +25,7 @@ trait IMsoChartFormat extends StObject {
   /* private */ @JSName("Office.IMsoChartFormat_typekey")
   var OfficeDotIMsoChartFormat_typekey: IMsoChartFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PictureFormat: typings.activexOffice.Office.PictureFormat
   
@@ -41,14 +41,14 @@ object IMsoChartFormat {
   
   inline def apply(
     Adjustments: Adjustments,
-    Application: js.Any,
+    Application: Any,
     AutoShapeType: MsoAutoShapeType,
     Creator: Double,
     Fill: FillFormat,
     Glow: GlowFormat,
     Line: LineFormat,
     OfficeDotIMsoChartFormat_typekey: IMsoChartFormat,
-    Parent: js.Any,
+    Parent: Any,
     PictureFormat: PictureFormat,
     Shadow: ShadowFormat,
     SoftEdge: SoftEdgeFormat,
@@ -64,7 +64,7 @@ object IMsoChartFormat {
     
     inline def setAdjustments(value: Adjustments): Self = StObject.set(x, "Adjustments", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAutoShapeType(value: MsoAutoShapeType): Self = StObject.set(x, "AutoShapeType", value.asInstanceOf[js.Any])
     
@@ -78,7 +78,7 @@ object IMsoChartFormat {
     
     inline def setOfficeDotIMsoChartFormat_typekey(value: IMsoChartFormat): Self = StObject.set(x, "Office.IMsoChartFormat_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
     

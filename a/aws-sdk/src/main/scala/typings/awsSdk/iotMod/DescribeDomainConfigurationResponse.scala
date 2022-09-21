@@ -39,7 +39,7 @@ trait DescribeDomainConfigurationResponse extends StObject {
   /**
     * The date and time the domain configuration's status was last changed.
     */
-  var lastStatusChangeDate: js.UndefOr[DateType] = js.undefined
+  var lastStatusChangeDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list containing summary information about the server certificate included in the domain configuration.
@@ -84,7 +84,7 @@ object DescribeDomainConfigurationResponse {
     
     inline def setDomainTypeUndefined: Self = StObject.set(x, "domainType", js.undefined)
     
-    inline def setLastStatusChangeDate(value: DateType): Self = StObject.set(x, "lastStatusChangeDate", value.asInstanceOf[js.Any])
+    inline def setLastStatusChangeDate(value: js.Date): Self = StObject.set(x, "lastStatusChangeDate", value.asInstanceOf[js.Any])
     
     inline def setLastStatusChangeDateUndefined: Self = StObject.set(x, "lastStatusChangeDate", js.undefined)
     
@@ -92,7 +92,7 @@ object DescribeDomainConfigurationResponse {
     
     inline def setServerCertificatesUndefined: Self = StObject.set(x, "serverCertificates", js.undefined)
     
-    inline def setServerCertificatesVarargs(value: ServerCertificateSummary*): Self = StObject.set(x, "serverCertificates", js.Array(value :_*))
+    inline def setServerCertificatesVarargs(value: ServerCertificateSummary*): Self = StObject.set(x, "serverCertificates", js.Array(value*))
     
     inline def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     

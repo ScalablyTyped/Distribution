@@ -29,6 +29,6 @@ object BatchDeleteAttributesRequest {
     
     inline def setItems(value: DeletableItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: DeletableItem*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DeletableItem*): Self = StObject.set(x, "Items", js.Array(value*))
   }
 }

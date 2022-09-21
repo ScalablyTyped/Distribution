@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "ShadowDepthWrapper")
 @js.native
-class ShadowDepthWrapper protected ()
+open class ShadowDepthWrapper protected ()
   extends typings.babylonjs.shadowDepthWrapperMod.ShadowDepthWrapper {
   /**
     * Instantiate a new shadow depth wrapper.
@@ -19,7 +19,13 @@ class ShadowDepthWrapper protected ()
     * @param scene Define the scene the material belongs to
     * @param options Options used to create the wrapper
     */
+  def this(baseMaterial: typings.babylonjs.materialMod.Material) = this()
   def this(baseMaterial: typings.babylonjs.materialMod.Material, scene: Scene) = this()
+  def this(
+    baseMaterial: typings.babylonjs.materialMod.Material,
+    scene: Unit,
+    options: IIOptionShadowDepthMaterial
+  ) = this()
   def this(
     baseMaterial: typings.babylonjs.materialMod.Material,
     scene: Scene,

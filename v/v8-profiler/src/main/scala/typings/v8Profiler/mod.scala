@@ -2,7 +2,6 @@ package typings.v8Profiler
 
 import org.scalablytyped.runtime.Shortcut
 import typings.node.fsMod.ReadStream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object mod extends Shortcut {
     /**
       * removes profile from memory.
       */
-    def delete(): js.Any = js.native
+    def delete(): Any = js.native
     
     /**
       * provides simple export API for profile.
@@ -30,12 +29,12 @@ object mod extends Shortcut {
       * provides simple export API for profile.
       * callback(error, data) receives serialized profile as second argument. (Serialization is equal to JSON.stringify result).
       */
-    def `export`(callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def `export`(callback: js.Function2[/* error */ js.Error, /* data */ Any, Unit]): Unit = js.native
     
     /**
       * provides short information about profile.
       */
-    def getHeader(): js.Any = js.native
+    def getHeader(): Any = js.native
   }
   
   @js.native
@@ -90,7 +89,7 @@ object mod extends Shortcut {
     /**
       * removes snapshot from memory.
       */
-    def delete(): js.Any = js.native
+    def delete(): Any = js.native
     
     /**
       * provides simple export API for snapshot.
@@ -103,12 +102,12 @@ object mod extends Shortcut {
       * callback(error, data) receives serialized snapshot as second argument. (Serialization is not equal to JSON.stringify result).
       * If callback will not be passed, export returns transform stream.
       */
-    def `export`(callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def `export`(callback: js.Function2[/* error */ js.Error, /* data */ Any, Unit]): Unit = js.native
     
     /**
       * provides short information about snapshot.
       */
-    def getHeader(): js.Any = js.native
+    def getHeader(): Any = js.native
     
     /**
       * low level serialization method.

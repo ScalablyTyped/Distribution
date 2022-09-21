@@ -15,6 +15,8 @@ trait Fixed extends StObject {
   var placeholder: js.UndefOr[String] = js.undefined
   
   var regexp: js.UndefOr[js.Object] = js.undefined
+  
+  var restrictToOptions: js.UndefOr[Boolean] = js.undefined
 }
 object Fixed {
   
@@ -33,13 +35,13 @@ object Fixed {
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value :_*))
+    inline def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value*))
     
     inline def setOptions(value: js.Array[Double | String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: (Double | String)*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: (Double | String)*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
@@ -48,5 +50,9 @@ object Fixed {
     inline def setRegexp(value: js.Object): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     inline def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
+    
+    inline def setRestrictToOptions(value: Boolean): Self = StObject.set(x, "restrictToOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictToOptionsUndefined: Self = StObject.set(x, "restrictToOptions", js.undefined)
   }
 }

@@ -27,7 +27,7 @@ trait InstanceStorageConfig extends StObject {
   var KinesisVideoStreamConfig: js.UndefOr[typings.awsSdk.connectMod.KinesisVideoStreamConfig] = js.undefined
   
   /**
-    * The S3 configuration.
+    * The S3 bucket configuration.
     */
   var S3Config: js.UndefOr[typings.awsSdk.connectMod.S3Config] = js.undefined
   

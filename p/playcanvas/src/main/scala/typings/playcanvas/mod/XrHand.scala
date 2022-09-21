@@ -5,56 +5,124 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents a hand with fingers and joints
-  * @property fingers - List of fingers of a hand
-  * @property joints - List of joints of hand
-  * @property tips - List of joints that are tips of a fingers
-  * @property wrist - Wrist of a hand, or null if it is not available by WebXR underlying system
-  * @property tracking - True if tracking is available, otherwise tracking might be lost
-  * @param inputSource - Input Source that hand is related to
+  * Represents a hand with fingers and joints.
+  *
+  * @augments EventHandler
   */
-@JSImport("playcanvas", "XrHand")
 @js.native
-class XrHand protected ()
-  extends StObject
-     with typings.playcanvas.pc.XrHand {
-  def this(inputSource: typings.playcanvas.pc.XrInputSource) = this()
+trait XrHand extends EventHandler {
   
   /**
-    * List of fingers of a hand
+    * @param {number} index - Finger index.
+    * @returns {boolean} True if finger is closed and false otherwise.
+    * @private
     */
-  /* CompleteClass */
-  var fingers: js.Array[typings.playcanvas.pc.XrFinger] = js.native
+  /* private */ var _fingerIsClosed: Any = js.native
   
   /**
-    * Returns joint by XRHand id from list in specs: https://immersive-web.github.io/webxr-hand-input/
-    * @param id - id of a joint based on specs ID's in XRHand: https://immersive-web.github.io/webxr-hand-input/
-    * @returns Joint or null if not available
+    * @type {XrFinger[]}
+    * @private
     */
-  /* CompleteClass */
-  override def getJointById(id: Double): typings.playcanvas.pc.XrJoint | Null = js.native
+  /* private */ var _fingers: Any = js.native
   
   /**
-    * List of joints of hand
+    * @type {XrInputSource}
+    * @private
     */
-  /* CompleteClass */
-  var joints: js.Array[typings.playcanvas.pc.XrJoint] = js.native
+  /* private */ var _inputSource: Any = js.native
   
   /**
-    * List of joints that are tips of a fingers
+    * @type {XrJoint[]}
+    * @private
     */
-  /* CompleteClass */
-  var tips: js.Array[typings.playcanvas.pc.XrJoint] = js.native
+  /* private */ var _joints: Any = js.native
   
   /**
-    * True if tracking is available, otherwise tracking might be lost
+    * @type {Object<string, XrJoint>}
+    * @private
     */
-  /* CompleteClass */
-  var tracking: Boolean = js.native
+  /* private */ var _jointsById: Any = js.native
   
   /**
-    * Wrist of a hand, or null if it is not available by WebXR underlying system
+    * @type {XrManager}
+    * @private
     */
-  /* CompleteClass */
-  var wrist: typings.playcanvas.pc.XrJoint | Null = js.native
+  /* private */ var _manager: Any = js.native
+  
+  /**
+    * @type {XrJoint[]}
+    * @private
+    */
+  /* private */ var _tips: Any = js.native
+  
+  /**
+    * @type {boolean}
+    * @private
+    */
+  /* private */ var _tracking: Any = js.native
+  
+  /**
+    * @type {XrJoint|null}
+    * @private
+    */
+  /* private */ var _wrist: Any = js.native
+  
+  /**
+    * List of fingers of a hand.
+    *
+    * @type {XrFinger[]}
+    */
+  def fingers: js.Array[XrFinger] = js.native
+  
+  /**
+    * Returns joint by XRHand id from list in specs: https://immersive-web.github.io/webxr-hand-input/.
+    *
+    * @param {string} id - Id of a joint based on specs ID's in XRHand: https://immersive-web.github.io/webxr-hand-input/.
+    * @returns {XrJoint|null} Joint or null if not available.
+    */
+  def getJointById(id: String): XrJoint | Null = js.native
+  
+  /**
+    * List of joints of hand.
+    *
+    * @type {XrJoint[]}
+    */
+  def joints: js.Array[XrJoint] = js.native
+  
+  /**
+    * List of joints that are fingertips.
+    *
+    * @type {XrJoint[]}
+    */
+  def tips: js.Array[XrJoint] = js.native
+  
+  /**
+    * True if tracking is available, otherwise tracking might be lost.
+    *
+    * @type {boolean}
+    */
+  def tracking: Boolean = js.native
+  
+  /**
+    * Fired when tracking becomes available.
+    *
+    * @event XrHand#tracking
+    */
+  /**
+    * Fired when tracking is lost.
+    *
+    * @event XrHand#trackinglost
+    */
+  /**
+    * @param {*} frame - XRFrame from requestAnimationFrame callback.
+    * @ignore
+    */
+  def update(frame: Any): Unit = js.native
+  
+  /**
+    * Wrist of a hand, or null if it is not available by WebXR underlying system.
+    *
+    * @type {XrJoint|null}
+    */
+  def wrist: XrJoint = js.native
 }

@@ -29,7 +29,7 @@ object SparklineCategoryAxisItemNotes {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: SparklineCategoryAxisItemNotesDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: SparklineCategoryAxisItemNotesDataItem*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setIcon(value: SparklineCategoryAxisItemNotesIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

@@ -16,6 +16,14 @@ trait CodeActionOptions
     * may list out every specific kind they provide.
     */
   var codeActionKinds: js.UndefOr[js.Array[CodeActionKind]] = js.undefined
+  
+  /**
+    * The server provides support to resolve additional
+    * information for a code action.
+    *
+    * @since 3.16.0
+    */
+  var resolveProvider: js.UndefOr[Boolean] = js.undefined
 }
 object CodeActionOptions {
   
@@ -30,6 +38,10 @@ object CodeActionOptions {
     
     inline def setCodeActionKindsUndefined: Self = StObject.set(x, "codeActionKinds", js.undefined)
     
-    inline def setCodeActionKindsVarargs(value: CodeActionKind*): Self = StObject.set(x, "codeActionKinds", js.Array(value :_*))
+    inline def setCodeActionKindsVarargs(value: CodeActionKind*): Self = StObject.set(x, "codeActionKinds", js.Array(value*))
+    
+    inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
+    
+    inline def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
   }
 }

@@ -17,15 +17,15 @@ object starMod {
   
   @JSImport("rc-rate/es/Star", JSImport.Default)
   @js.native
-  class default () extends Star
+  open class default () extends Star
   
   @js.native
   trait Star
-    extends Component[StarProps, js.Object, js.Any] {
+    extends Component[StarProps, js.Object, Any] {
     
     def getClassName(): String = js.native
     
-    def onClick(e: js.Any): Unit = js.native
+    def onClick(e: Any): Unit = js.native
     
     var onHover: MouseEventHandler[HTMLDivElement] = js.native
     
@@ -36,7 +36,7 @@ object starMod {
     
     var allowHalf: js.UndefOr[Boolean] = js.undefined
     
-    var character: js.UndefOr[ReactNode] = js.undefined
+    var character: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ this.type, ReactNode]] = js.undefined
     
@@ -77,7 +77,9 @@ object starMod {
       
       inline def setAllowHalfUndefined: Self = StObject.set(x, "allowHalf", js.undefined)
       
-      inline def setCharacter(value: ReactNode): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: ReactNode | (js.Function1[StarProps, ReactNode])): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      
+      inline def setCharacterFunction1(value: StarProps => ReactNode): Self = StObject.set(x, "character", js.Any.fromFunction1(value))
       
       inline def setCharacterRender(value: (/* origin */ ReactElement, StarProps) => ReactNode): Self = StObject.set(x, "characterRender", js.Any.fromFunction2(value))
       

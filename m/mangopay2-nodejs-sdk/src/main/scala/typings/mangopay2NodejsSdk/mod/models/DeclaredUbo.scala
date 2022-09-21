@@ -1,13 +1,13 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialUboDeclarationData
-import typings.mangopay2NodejsSdk.mod.uboDeclaration.UboDeclarationData
+import typings.mangopay2NodejsSdk.uboDeclarationMod.uboDeclaration.UboDeclarationData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.DeclaredUbo")
 @js.native
-class DeclaredUbo protected () extends Model[UboDeclarationData] {
+open class DeclaredUbo protected () extends Model[UboDeclarationData] {
   def this(data: PartialUboDeclarationData) = this()
 }

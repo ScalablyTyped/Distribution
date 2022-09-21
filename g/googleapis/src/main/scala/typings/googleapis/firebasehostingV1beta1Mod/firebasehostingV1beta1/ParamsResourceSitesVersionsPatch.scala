@@ -1,9 +1,5 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +9,7 @@ trait ParamsResourceSitesVersionsPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The unique identifier for a version, in the format:
-    * <code>sites/<var>site-name</var>/versions/<var>versionID</var></code>
-    * This name is provided in the response body when you call the
-    * [`CreateVersion`](../sites.versions/create) endpoint.
+    * The fully-qualified resource name for the version, in the format: sites/ SITE_ID/versions/VERSION_ID This name is provided in the response body when you call [`CreateVersion`](sites.versions/create).
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -31,10 +19,7 @@ trait ParamsResourceSitesVersionsPatch
   var requestBody: js.UndefOr[SchemaVersion] = js.undefined
   
   /**
-    * A set of field names from your [version](../sites.versions) that you want
-    * to update. <br>A field will be overwritten if, and only if, it's in the
-    * mask. <br>If a mask is not provided then a default mask of only
-    * [`status`](../sites.versions#Version.FIELDS.status) will be used.
+    * A set of field names from your [version](../sites.versions) that you want to update. A field will be overwritten if, and only if, it's in the mask. If a mask is not provided then a default mask of only [`status`](../sites.versions#Version.FIELDS.status) will be used.
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -46,10 +31,6 @@ object ParamsResourceSitesVersionsPatch {
   }
   
   extension [Self <: ParamsResourceSitesVersionsPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

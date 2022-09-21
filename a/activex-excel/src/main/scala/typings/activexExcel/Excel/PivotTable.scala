@@ -13,17 +13,17 @@ trait PivotTable extends StObject {
   @JSName("ActiveFilters")
   val ActiveFilters_Original: PivotFilters = js.native
   
-  def AddDataField(Field: js.Any): PivotField = js.native
-  def AddDataField(Field: js.Any, Caption: js.Any): PivotField = js.native
-  def AddDataField(Field: js.Any, Caption: js.Any, Function: js.Any): PivotField = js.native
-  def AddDataField(Field: js.Any, Caption: Unit, Function: js.Any): PivotField = js.native
+  def AddDataField(Field: Any): PivotField = js.native
+  def AddDataField(Field: Any, Caption: Any): PivotField = js.native
+  def AddDataField(Field: Any, Caption: Any, Function: Any): PivotField = js.native
+  def AddDataField(Field: Any, Caption: Unit, Function: Any): PivotField = js.native
   
   def AddFields(
     RowFields: js.UndefOr[String | SafeArray[String]],
     ColumnFields: js.UndefOr[String | SafeArray[String]],
     PageFields: js.UndefOr[String | SafeArray[String]],
     AddToTable: js.UndefOr[Boolean]
-  ): js.Any = js.native
+  ): Any = js.native
   
   def AllocateChanges(): Unit = js.native
   
@@ -188,37 +188,37 @@ trait PivotTable extends StObject {
   var DisplayNullString: Boolean = js.native
   
   def Dummy15(
-    Arg1: js.Any,
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any],
-    Arg14: js.UndefOr[js.Any],
-    Arg15: js.UndefOr[js.Any],
-    Arg16: js.UndefOr[js.Any],
-    Arg17: js.UndefOr[js.Any],
-    Arg18: js.UndefOr[js.Any],
-    Arg19: js.UndefOr[js.Any],
-    Arg20: js.UndefOr[js.Any],
-    Arg21: js.UndefOr[js.Any],
-    Arg22: js.UndefOr[js.Any],
-    Arg23: js.UndefOr[js.Any],
-    Arg24: js.UndefOr[js.Any],
-    Arg25: js.UndefOr[js.Any],
-    Arg26: js.UndefOr[js.Any],
-    Arg27: js.UndefOr[js.Any],
-    Arg28: js.UndefOr[js.Any],
-    Arg29: js.UndefOr[js.Any],
-    Arg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: Any,
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any],
+    Arg14: js.UndefOr[Any],
+    Arg15: js.UndefOr[Any],
+    Arg16: js.UndefOr[Any],
+    Arg17: js.UndefOr[Any],
+    Arg18: js.UndefOr[Any],
+    Arg19: js.UndefOr[Any],
+    Arg20: js.UndefOr[Any],
+    Arg21: js.UndefOr[Any],
+    Arg22: js.UndefOr[Any],
+    Arg23: js.UndefOr[Any],
+    Arg24: js.UndefOr[Any],
+    Arg25: js.UndefOr[Any],
+    Arg26: js.UndefOr[Any],
+    Arg27: js.UndefOr[Any],
+    Arg28: js.UndefOr[Any],
+    Arg29: js.UndefOr[Any],
+    Arg30: js.UndefOr[Any]
+  ): Any = js.native
   
   var EnableDataValueEditing: Boolean = js.native
   
@@ -330,7 +330,7 @@ trait PivotTable extends StObject {
   @JSName("PageRange")
   val PageRange_Original: Range = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PivotCache(): typings.activexExcel.Excel.PivotCache = js.native
   
@@ -423,8 +423,8 @@ trait PivotTable extends StObject {
   
   var ShowPageMultipleItemLabel: Boolean = js.native
   
-  def ShowPages(): js.Any = js.native
-  def ShowPages(PageField: String): js.Any = js.native
+  def ShowPages(): Any = js.native
+  def ShowPages(PageField: String): Any = js.native
   
   var ShowTableStyleColumnHeaders: Boolean = js.native
   
@@ -447,7 +447,7 @@ trait PivotTable extends StObject {
   
   var SortUsingCustomLists: Boolean = js.native
   
-  var SourceData: js.Any = js.native
+  var SourceData: Any = js.native
   
   var SubtotalHiddenPageItems: Boolean = js.native
   
@@ -469,7 +469,7 @@ trait PivotTable extends StObject {
   
   var TableStyle: String = js.native
   
-  var TableStyle2: js.Any = js.native
+  var TableStyle2: Any = js.native
   
   var Tag: String = js.native
   

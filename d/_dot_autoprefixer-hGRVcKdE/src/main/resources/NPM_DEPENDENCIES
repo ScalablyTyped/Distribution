@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".autoprefixer-hGRVcKdE" : "10.4.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".autoprefixer-hGRVcKdE" : "10.4.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

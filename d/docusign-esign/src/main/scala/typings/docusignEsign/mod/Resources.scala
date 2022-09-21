@@ -31,6 +31,6 @@ object Resources {
     
     inline def setResourcesVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "resources", js.Array(value :_*))
+    ): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

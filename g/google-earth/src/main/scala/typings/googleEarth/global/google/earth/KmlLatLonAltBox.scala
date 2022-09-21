@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlLatLonAltBox")
 @js.native
-class KmlLatLonAltBox ()
+open class KmlLatLonAltBox ()
   extends StObject
      with typings.googleEarth.google.earth.KmlLatLonAltBox {
   

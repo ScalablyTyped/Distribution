@@ -11,10 +11,10 @@ object appBarMod {
   
   @JSImport("material-ui/AppBar", JSImport.Default)
   @js.native
-  class default () extends AppBar
+  open class default () extends AppBar
   
   @JSImport("material-ui/AppBar", "AppBar")
   @js.native
-  class AppBar ()
-    extends Component[AppBarProps, js.Object, js.Any]
+  open class AppBar ()
+    extends Component[AppBarProps, js.Object, Any]
 }

@@ -8,11 +8,11 @@ object mod {
   
   @JSImport("@aws-sdk/abort-controller", "AbortController")
   @js.native
-  class AbortController ()
+  open class AbortController ()
     extends typings.awsSdkAbortController.abortControllerMod.AbortController
   
   @JSImport("@aws-sdk/abort-controller", "AbortSignal")
   @js.native
-  class AbortSignal ()
+  open class AbortSignal ()
     extends typings.awsSdkAbortController.abortSignalMod.AbortSignal
 }

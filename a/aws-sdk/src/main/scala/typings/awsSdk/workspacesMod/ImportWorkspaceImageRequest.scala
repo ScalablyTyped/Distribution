@@ -27,7 +27,7 @@ trait ImportWorkspaceImageRequest extends StObject {
   var ImageName: WorkspaceImageName
   
   /**
-    * The ingestion process to be used when importing the image. For non-GPU-enabled bundles (bundles other than Graphics or GraphicsPro), specify BYOL_REGULAR.
+    * The ingestion process to be used when importing the image, depending on which protocol you want to use for your BYOL Workspace image, either PCoIP or WorkSpaces Streaming Protocol (WSP). To use WSP, specify a value that ends in _WSP. To use PCoIP, specify a value that does not end in _WSP.  For non-GPU-enabled bundles (bundles other than Graphics or GraphicsPro), specify BYOL_REGULAR or BYOL_REGULAR_WSP, depending on the protocol.
     */
   var IngestionProcess: WorkspaceImageIngestionProcess
   
@@ -54,7 +54,7 @@ object ImportWorkspaceImageRequest {
     
     inline def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
-    inline def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value*))
     
     inline def setEc2ImageId(value: Ec2ImageId): Self = StObject.set(x, "Ec2ImageId", value.asInstanceOf[js.Any])
     
@@ -68,6 +68,6 @@ object ImportWorkspaceImageRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

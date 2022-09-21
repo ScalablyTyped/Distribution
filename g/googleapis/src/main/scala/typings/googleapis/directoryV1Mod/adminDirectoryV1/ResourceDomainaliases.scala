@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Domainaliases")
 @js.native
-class ResourceDomainaliases protected () extends StObject {
+open class ResourceDomainaliases protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * directory.domainAliases.delete
-    * @desc Deletes a Domain Alias of the customer.
-    * @alias directory.domainAliases.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {string} params.domainAliasName Name of domain alias to be retrieved.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -35,8 +24,8 @@ class ResourceDomainaliases protected () extends StObject {
   def delete(params: ParamsResourceDomainaliasesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceDomainaliasesDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceDomainaliasesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -44,20 +33,60 @@ class ResourceDomainaliases protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  
   /**
-    * directory.domainAliases.get
-    * @desc Retrieves a domain alias of the customer.
-    * @alias directory.domainAliases.get
-    * @memberOf! ()
+    * Deletes a domain Alias of the customer.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {string} params.domainAliasName Name of domain alias to be retrieved.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.domain'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.domainAliases.delete({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *     // Name of domain alias to be retrieved.
+    *     domainAliasName: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceDomainaliasesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceDomainaliasesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaDomainAlias] = js.native
   def get(callback: BodyResponseCallback[SchemaDomainAlias]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDomainAlias] = js.native
@@ -65,8 +94,8 @@ class ResourceDomainaliases protected () extends StObject {
   def get(params: ParamsResourceDomainaliasesGet, callback: BodyResponseCallback[SchemaDomainAlias]): Unit = js.native
   def get(
     params: ParamsResourceDomainaliasesGet,
-    options: BodyResponseCallback[SchemaDomainAlias],
-    callback: BodyResponseCallback[SchemaDomainAlias]
+    options: BodyResponseCallback[Readable | SchemaDomainAlias],
+    callback: BodyResponseCallback[Readable | SchemaDomainAlias]
   ): Unit = js.native
   def get(params: ParamsResourceDomainaliasesGet, options: MethodOptions): GaxiosPromise[SchemaDomainAlias] = js.native
   def get(
@@ -74,20 +103,73 @@ class ResourceDomainaliases protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomainAlias]
   ): Unit = js.native
-  
   /**
-    * directory.domainAliases.insert
-    * @desc Inserts a Domain alias of the customer.
-    * @alias directory.domainAliases.insert
-    * @memberOf! ()
+    * Retrieves a domain alias of the customer.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {().DomainAlias} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/admin.directory.domain',
+    *       'https://www.googleapis.com/auth/admin.directory.domain.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.domainAliases.get({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *     // Name of domain alias to be retrieved.
+    *     domainAliasName: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "creationTime": "my_creationTime",
+    *   //   "domainAliasName": "my_domainAliasName",
+    *   //   "etag": "my_etag",
+    *   //   "kind": "my_kind",
+    *   //   "parentDomainName": "my_parentDomainName",
+    *   //   "verified": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceDomainaliasesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceDomainaliasesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaDomainAlias] = js.native
   def insert(callback: BodyResponseCallback[SchemaDomainAlias]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDomainAlias] = js.native
@@ -95,8 +177,8 @@ class ResourceDomainaliases protected () extends StObject {
   def insert(params: ParamsResourceDomainaliasesInsert, callback: BodyResponseCallback[SchemaDomainAlias]): Unit = js.native
   def insert(
     params: ParamsResourceDomainaliasesInsert,
-    options: BodyResponseCallback[SchemaDomainAlias],
-    callback: BodyResponseCallback[SchemaDomainAlias]
+    options: BodyResponseCallback[Readable | SchemaDomainAlias],
+    callback: BodyResponseCallback[Readable | SchemaDomainAlias]
   ): Unit = js.native
   def insert(params: ParamsResourceDomainaliasesInsert, options: MethodOptions): GaxiosPromise[SchemaDomainAlias] = js.native
   def insert(
@@ -104,20 +186,81 @@ class ResourceDomainaliases protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomainAlias]
   ): Unit = js.native
-  
   /**
-    * directory.domainAliases.list
-    * @desc Lists the domain aliases of the customer.
-    * @alias directory.domainAliases.list
-    * @memberOf! ()
+    * Inserts a domain alias of the customer.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {string=} params.parentDomainName Name of the parent domain for which domain aliases are to be fetched.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.domain'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.domainAliases.insert({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "creationTime": "my_creationTime",
+    *       //   "domainAliasName": "my_domainAliasName",
+    *       //   "etag": "my_etag",
+    *       //   "kind": "my_kind",
+    *       //   "parentDomainName": "my_parentDomainName",
+    *       //   "verified": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "creationTime": "my_creationTime",
+    *   //   "domainAliasName": "my_domainAliasName",
+    *   //   "etag": "my_etag",
+    *   //   "kind": "my_kind",
+    *   //   "parentDomainName": "my_parentDomainName",
+    *   //   "verified": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceDomainaliasesInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceDomainaliasesInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaDomainAliases] = js.native
   def list(callback: BodyResponseCallback[SchemaDomainAliases]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDomainAliases] = js.native
@@ -125,13 +268,76 @@ class ResourceDomainaliases protected () extends StObject {
   def list(params: ParamsResourceDomainaliasesList, callback: BodyResponseCallback[SchemaDomainAliases]): Unit = js.native
   def list(
     params: ParamsResourceDomainaliasesList,
-    options: BodyResponseCallback[SchemaDomainAliases],
-    callback: BodyResponseCallback[SchemaDomainAliases]
+    options: BodyResponseCallback[Readable | SchemaDomainAliases],
+    callback: BodyResponseCallback[Readable | SchemaDomainAliases]
   ): Unit = js.native
   def list(params: ParamsResourceDomainaliasesList, options: MethodOptions): GaxiosPromise[SchemaDomainAliases] = js.native
   def list(
     params: ParamsResourceDomainaliasesList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDomainAliases]
+  ): Unit = js.native
+  /**
+    * Lists the domain aliases of the customer.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/admin.directory.domain',
+    *       'https://www.googleapis.com/auth/admin.directory.domain.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.domainAliases.list({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *     // Name of the parent domain for which domain aliases are to be fetched.
+    *     parentDomainName: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "domainAliases": [],
+    *   //   "etag": "my_etag",
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceDomainaliasesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceDomainaliasesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

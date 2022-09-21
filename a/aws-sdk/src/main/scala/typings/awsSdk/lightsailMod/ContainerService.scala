@@ -19,7 +19,7 @@ trait ContainerService extends StObject {
   /**
     * The timestamp when the container service was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An object that describes the current container deployment of the container service.
@@ -32,7 +32,7 @@ trait ContainerService extends StObject {
   var isDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An object that describes the location of the container service, such as the AWS Region and Availability Zone.
+    * An object that describes the location of the container service, such as the Amazon Web Services Region and Availability Zone.
     */
   var location: js.UndefOr[ResourceLocation] = js.undefined
   
@@ -52,7 +52,7 @@ trait ContainerService extends StObject {
   var powerId: js.UndefOr[String] = js.undefined
   
   /**
-    * The principal ARN of the container service. The principal ARN can be used to create a trust relationship between your standard AWS account and your Lightsail container service. This allows you to give your service permission to access resources in your standard AWS account.
+    * The principal ARN of the container service. The principal ARN can be used to create a trust relationship between your standard Amazon Web Services account and your Lightsail container service. This allows you to give your service permission to access resources in your standard Amazon Web Services account.
     */
   var principalArn: js.UndefOr[String] = js.undefined
   
@@ -60,6 +60,11 @@ trait ContainerService extends StObject {
     * The private domain name of the container service. The private domain name is accessible only by other resources within the default virtual private cloud (VPC) of your Lightsail account.
     */
   var privateDomainName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * An object that describes the configuration for the container service to access private container image repositories, such as Amazon Elastic Container Registry (Amazon ECR) private repositories. For more information, see Configuring access to an Amazon ECR private repository for an Amazon Lightsail container service in the Amazon Lightsail Developer Guide.
+    */
+  var privateRegistryAccess: js.UndefOr[PrivateRegistryAccess] = js.undefined
   
   /**
     * The public domain name of the container service, such as example.com and www.example.com. You can specify up to four public domain names for a container service. The domain names that you specify are used when you create a deployment with a container configured as the public endpoint of your container service. If you don't specify public domain names, then you can use the default domain of the container service.  You must create and validate an SSL/TLS certificate before you can use public domain names with your container service. Use the CreateCertificate action to create a certificate for the public domain names you want to use with your container service.  See CreateContainerService or UpdateContainerService for information about how to specify public domain names for your Lightsail container service.
@@ -77,12 +82,17 @@ trait ContainerService extends StObject {
   var scale: js.UndefOr[ContainerServiceScale] = js.undefined
   
   /**
-    * The current state of the container service. The state can be:    Pending - The container service is being created.    Ready - The container service is created but does not have a container deployment.    Disabled - The container service is disabled.    Updating - The container service capacity or other setting is being updated.    Deploying - The container service is launching a container deployment.    Running - The container service is created and it has a container deployment.  
+    * The current state of the container service. The following container service states are possible:    PENDING - The container service is being created.    READY - The container service is running but it does not have an active container deployment.    DEPLOYING - The container service is launching a container deployment.    RUNNING - The container service is running and it has an active container deployment.    UPDATING - The container service capacity or its custom domains are being updated.    DELETING - The container service is being deleted.    DISABLED - The container service is disabled, and its active deployment and containers, if any, are shut down.  
     */
   var state: js.UndefOr[ContainerServiceState] = js.undefined
   
   /**
-    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
+    * An object that describes the current state of the container service.  The state detail is populated only when a container service is in a PENDING, DEPLOYING, or UPDATING state. 
+    */
+  var stateDetail: js.UndefOr[ContainerServiceStateDetail] = js.undefined
+  
+  /**
+    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Amazon Lightsail Developer Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   
@@ -108,7 +118,7 @@ object ContainerService {
     
     inline def setContainerServiceNameUndefined: Self = StObject.set(x, "containerServiceName", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -144,6 +154,10 @@ object ContainerService {
     
     inline def setPrivateDomainNameUndefined: Self = StObject.set(x, "privateDomainName", js.undefined)
     
+    inline def setPrivateRegistryAccess(value: PrivateRegistryAccess): Self = StObject.set(x, "privateRegistryAccess", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateRegistryAccessUndefined: Self = StObject.set(x, "privateRegistryAccess", js.undefined)
+    
     inline def setPublicDomainNames(value: ContainerServicePublicDomains): Self = StObject.set(x, "publicDomainNames", value.asInstanceOf[js.Any])
     
     inline def setPublicDomainNamesUndefined: Self = StObject.set(x, "publicDomainNames", js.undefined)
@@ -158,13 +172,17 @@ object ContainerService {
     
     inline def setState(value: ContainerServiceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
+    inline def setStateDetail(value: ContainerServiceStateDetail): Self = StObject.set(x, "stateDetail", value.asInstanceOf[js.Any])
+    
+    inline def setStateDetailUndefined: Self = StObject.set(x, "stateDetail", js.undefined)
+    
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

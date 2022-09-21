@@ -10,10 +10,10 @@ react native app upgrade
 | ------------------ | :-------------: |
 | Full name          | rn-app-upgrade |
 | Keywords           | react-native, app, upgrade, android, ios |
-| # releases         | 20 |
-| # dependents       | 0 |
-| # downloads        | 2314 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 179.66666666666666 |
+| # stars            | 421.0 |
 
 ## Links
 - [Homepage](https://github.com/songxiaoliang/react-native-app-upgrade#readme)

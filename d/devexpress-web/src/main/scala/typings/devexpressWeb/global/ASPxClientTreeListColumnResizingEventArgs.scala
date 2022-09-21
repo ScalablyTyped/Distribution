@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListColumnResizingEventArgs")
 @js.native
-class ASPxClientTreeListColumnResizingEventArgs ()
+open class ASPxClientTreeListColumnResizingEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListColumnResizingEventArgs {
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

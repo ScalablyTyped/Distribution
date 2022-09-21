@@ -38,12 +38,12 @@ trait Store extends StObject {
   
   val IsOpen: Boolean
   
-  val MAPIOBJECT: js.Any
+  val MAPIOBJECT: Any
   
   /* private */ @JSName("Outlook.Store_typekey")
   var OutlookDotStore_typekey: Store
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
   
@@ -72,9 +72,9 @@ object Store {
     IsDataFileStore: Boolean,
     IsInstantSearchEnabled: Boolean,
     IsOpen: Boolean,
-    MAPIOBJECT: js.Any,
+    MAPIOBJECT: Any,
     OutlookDotStore_typekey: Store,
-    Parent: js.Any,
+    Parent: Any,
     PropertyAccessor: PropertyAccessor,
     RefreshQuotaDisplay: () => Unit,
     Session: NameSpace,
@@ -119,11 +119,11 @@ object Store {
     
     inline def setIsOpen(value: Boolean): Self = StObject.set(x, "IsOpen", value.asInstanceOf[js.Any])
     
-    inline def setMAPIOBJECT(value: js.Any): Self = StObject.set(x, "MAPIOBJECT", value.asInstanceOf[js.Any])
+    inline def setMAPIOBJECT(value: Any): Self = StObject.set(x, "MAPIOBJECT", value.asInstanceOf[js.Any])
     
     inline def setOutlookDotStore_typekey(value: Store): Self = StObject.set(x, "Outlook.Store_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPropertyAccessor(value: PropertyAccessor): Self = StObject.set(x, "PropertyAccessor", value.asInstanceOf[js.Any])
     

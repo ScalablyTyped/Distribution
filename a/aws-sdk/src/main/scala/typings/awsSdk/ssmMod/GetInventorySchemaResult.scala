@@ -33,6 +33,6 @@ object GetInventorySchemaResult {
     
     inline def setSchemasUndefined: Self = StObject.set(x, "Schemas", js.undefined)
     
-    inline def setSchemasVarargs(value: InventoryItemSchema*): Self = StObject.set(x, "Schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: InventoryItemSchema*): Self = StObject.set(x, "Schemas", js.Array(value*))
   }
 }

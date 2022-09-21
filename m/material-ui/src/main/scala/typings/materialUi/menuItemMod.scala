@@ -10,10 +10,10 @@ object menuItemMod {
   
   @JSImport("material-ui/MenuItem", JSImport.Default)
   @js.native
-  class default () extends MenuItem
+  open class default () extends MenuItem
   
   @JSImport("material-ui/MenuItem", "MenuItem")
   @js.native
-  class MenuItem ()
-    extends Component[MenuItemProps, js.Object, js.Any]
+  open class MenuItem ()
+    extends Component[MenuItemProps, js.Object, Any]
 }

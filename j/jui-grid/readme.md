@@ -10,10 +10,10 @@ JUI grid can handle millions of data, and can display the data in a hierarchical
 | ------------------ | :-------------: |
 | Full name          | jui-grid |
 | Keywords           | HTML5, CSS, JS, JavaScript, SVG, Grid, Framework, bootstrap, Web Development, free, MIT |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 684 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 55.333333333333336 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/juijs/jui-grid)

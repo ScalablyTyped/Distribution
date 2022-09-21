@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SharedWorkspaceTask")
 @js.native
-/* private */ class SharedWorkspaceTask ()
+/* private */ open class SharedWorkspaceTask ()
   extends StObject
      with typings.activexOffice.Office.SharedWorkspaceTask {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var AssignedTo: String = js.native
@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotSharedWorkspaceTask_typekey: typings.activexOffice.Office.SharedWorkspaceTask = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Priority: MsoSharedWorkspaceTaskPriority = js.native

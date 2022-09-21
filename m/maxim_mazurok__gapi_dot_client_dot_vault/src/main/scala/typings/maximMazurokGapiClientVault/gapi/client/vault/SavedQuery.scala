@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SavedQuery extends StObject {
   
-  /** Output only. The server generated timestamp at which saved query was created. */
+  /** Output only. The server-generated timestamp when the saved query was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Name of the saved query. */
+  /** The name of the saved query. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** Output only. The matter ID of the associated matter. The server does not look at this field during create and always uses matter id in the URL. */
+  /** Output only. The matter ID of the matter the saved query is saved in. The server does not use this field during create and always uses matter ID in the URL. */
   var matterId: js.UndefOr[String] = js.undefined
   
-  /** The underlying Query object which contains all the information of the saved query. */
+  /** The search parameters of the saved query. */
   var query: js.UndefOr[Query] = js.undefined
   
   /** A unique identifier for the saved query. */

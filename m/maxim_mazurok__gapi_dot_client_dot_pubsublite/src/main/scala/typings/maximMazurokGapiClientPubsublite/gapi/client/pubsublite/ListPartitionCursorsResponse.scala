@@ -29,6 +29,6 @@ object ListPartitionCursorsResponse {
     
     inline def setPartitionCursorsUndefined: Self = StObject.set(x, "partitionCursors", js.undefined)
     
-    inline def setPartitionCursorsVarargs(value: PartitionCursor*): Self = StObject.set(x, "partitionCursors", js.Array(value :_*))
+    inline def setPartitionCursorsVarargs(value: PartitionCursor*): Self = StObject.set(x, "partitionCursors", js.Array(value*))
   }
 }

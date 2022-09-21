@@ -18,7 +18,7 @@ object mod {
     
     var destDist: js.UndefOr[String] = js.undefined
     
-    var emitFile: js.UndefOr[Boolean] = js.undefined
+    var emitFiles: js.UndefOr[Boolean] = js.undefined
     
     var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -45,15 +45,15 @@ object mod {
       
       inline def setDestDistUndefined: Self = StObject.set(x, "destDist", js.undefined)
       
-      inline def setEmitFile(value: Boolean): Self = StObject.set(x, "emitFile", value.asInstanceOf[js.Any])
+      inline def setEmitFiles(value: Boolean): Self = StObject.set(x, "emitFiles", value.asInstanceOf[js.Any])
       
-      inline def setEmitFileUndefined: Self = StObject.set(x, "emitFile", js.undefined)
+      inline def setEmitFilesUndefined: Self = StObject.set(x, "emitFiles", js.undefined)
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -63,7 +63,7 @@ object mod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

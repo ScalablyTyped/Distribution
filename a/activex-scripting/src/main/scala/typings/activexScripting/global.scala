@@ -12,7 +12,7 @@ object global {
     /** Drive Object */
     @JSGlobal("Scripting.Drive")
     @js.native
-    /* private */ class Drive ()
+    /* private */ open class Drive ()
       extends StObject
          with typings.activexScripting.Scripting.Drive {
       
@@ -72,28 +72,28 @@ object global {
     /** File object */
     @JSGlobal("Scripting.File")
     @js.native
-    /* private */ class File ()
+    /* private */ open class File ()
       extends StObject
          with typings.activexScripting.Scripting.File
     
     /** FileSystem Object */
     @JSGlobal("Scripting.FileSystemObject")
     @js.native
-    /* private */ class FileSystemObject ()
+    /* private */ open class FileSystemObject ()
       extends StObject
          with typings.activexScripting.Scripting.FileSystemObject
     
     /** Folder object */
     @JSGlobal("Scripting.Folder")
     @js.native
-    /* private */ class Folder ()
+    /* private */ open class Folder ()
       extends StObject
          with typings.activexScripting.Scripting.Folder
     
     /** TextStream object */
     @JSGlobal("Scripting.TextStream")
     @js.native
-    /* private */ class TextStream ()
+    /* private */ open class TextStream ()
       extends StObject
          with typings.activexScripting.Scripting.TextStream
   }

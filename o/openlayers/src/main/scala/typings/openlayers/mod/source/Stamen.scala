@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.Stamen")
 @js.native
-class Stamen protected () extends XYZ {
+open class Stamen protected () extends XYZ {
   /**
     * @classdesc
     * Layer source for the Stamen tile server.

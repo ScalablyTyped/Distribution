@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_androidpublisher
 
-Typings are for version 3.0.20201119
+Typings are for version 3.0.20220811
 
 ## Library description:
 TypeScript typings for Google Play Android Developer API v3
@@ -10,10 +10,10 @@ TypeScript typings for Google Play Android Developer API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.androidpublisher |
 | Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 1 |
-| # downloads        | 3156 |
-| # stars            | 0 |
+| # releases         | 277 |
+| # dependents       | 0.0 |
+| # downloads        | 6137.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

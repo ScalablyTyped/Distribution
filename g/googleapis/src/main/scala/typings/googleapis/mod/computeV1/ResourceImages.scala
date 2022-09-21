@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_v1.Resource$Images")
 @js.native
-class ResourceImages protected ()
+open class ResourceImages protected ()
   extends typings.googleapis.computeV1Mod.computeV1.ResourceImages {
   def this(context: APIRequestContext) = this()
 }

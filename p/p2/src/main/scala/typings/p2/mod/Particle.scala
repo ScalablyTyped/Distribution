@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Particle")
 @js.native
-class Particle () extends Shape {
+open class Particle () extends Shape {
   def this(options: SharedShapeOptions) = this()
 }

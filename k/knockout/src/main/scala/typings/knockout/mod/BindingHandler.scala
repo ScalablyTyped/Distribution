@@ -10,16 +10,16 @@ trait BindingHandler[T] extends StObject {
   
   var init: js.UndefOr[
     js.Function5[
-      /* element */ js.Any, 
+      /* element */ Any, 
       /* valueAccessor */ js.Function0[T], 
       /* allBindings */ AllBindings, 
-      /* viewModel */ js.Any, 
-      /* bindingContext */ BindingContext[js.Any], 
+      /* viewModel */ Any, 
+      /* bindingContext */ BindingContext[Any], 
       Unit | BindingHandlerControlsDescendant
     ]
   ] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
   
   var preprocess: js.UndefOr[
     js.Function3[
@@ -32,11 +32,11 @@ trait BindingHandler[T] extends StObject {
   
   var update: js.UndefOr[
     js.Function5[
-      /* element */ js.Any, 
+      /* element */ Any, 
       /* valueAccessor */ js.Function0[T], 
       /* allBindings */ AllBindings, 
-      /* viewModel */ js.Any, 
-      /* bindingContext */ BindingContext[js.Any], 
+      /* viewModel */ Any, 
+      /* bindingContext */ BindingContext[Any], 
       Unit
     ]
   ] = js.undefined
@@ -54,15 +54,15 @@ object BindingHandler {
     
     inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value*))
     
     inline def setInit(
-      value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[js.Any]) => Unit | BindingHandlerControlsDescendant
+      value: (/* element */ Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ Any, /* bindingContext */ BindingContext[Any]) => Unit | BindingHandlerControlsDescendant
     ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
@@ -73,7 +73,7 @@ object BindingHandler {
     inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
     
     inline def setUpdate(
-      value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[js.Any]) => Unit
+      value: (/* element */ Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ Any, /* bindingContext */ BindingContext[Any]) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

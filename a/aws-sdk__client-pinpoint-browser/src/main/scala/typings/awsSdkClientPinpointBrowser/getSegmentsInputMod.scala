@@ -8,5 +8,5 @@ object getSegmentsInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetSegmentsInput", "GetSegmentsInput")
   @js.native
-  val GetSegmentsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetSegmentsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

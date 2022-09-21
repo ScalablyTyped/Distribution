@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Filter extends StObject {
   
   /**
-    * The name of the filter. Filter names are case-sensitive. 
+    * The name of the filter. Filter names are case-sensitive.
     */
   var name: js.UndefOr[FilterName] = js.undefined
   
   /**
-    * The filter values. Filter values are case-sensitive. 
+    * The filter values. Filter values are case-sensitive.
     */
   var values: js.UndefOr[FilterValues] = js.undefined
 }
@@ -33,6 +33,6 @@ object Filter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

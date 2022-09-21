@@ -29,6 +29,6 @@ object CatAllocationParams {
     
     inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value*))
   }
 }

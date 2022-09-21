@@ -22,6 +22,6 @@ object StartAssociationsOnceRequest {
     
     inline def setAssociationIds(value: AssociationIdList): Self = StObject.set(x, "AssociationIds", value.asInstanceOf[js.Any])
     
-    inline def setAssociationIdsVarargs(value: AssociationId*): Self = StObject.set(x, "AssociationIds", js.Array(value :_*))
+    inline def setAssociationIdsVarargs(value: AssociationId*): Self = StObject.set(x, "AssociationIds", js.Array(value*))
   }
 }

@@ -1,19 +1,19 @@
 
 # Scala.js typings for zeromq
 
-Typings are for version 4.6
+Typings are for version 5.2
 
 ## Library description:
-Next-generation ZeroMQ bindings for Node.js
+ZeroMQ for node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | zeromq |
-| Keywords           | zeromq, zmq, 0mq, ømq, libzmq, zmtp, message, messaging, queue, async, sockets, native, binding, addon, napi |
-| # releases         | 11 |
-| # dependents       | 217 |
-| # downloads        | 905561 |
-| # stars            | 7 |
+| Keywords           | zeromq, zmq, 0mq, ømq, libzmq, native, binding, addon |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 114444.66666666667 |
+| # stars            | 1174.0 |
 
 ## Links
 - [Homepage](https://github.com/zeromq/zeromq.js#readme)

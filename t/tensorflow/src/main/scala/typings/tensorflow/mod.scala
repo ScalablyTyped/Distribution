@@ -1,7 +1,7 @@
 package typings.tensorflow
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,11 +53,11 @@ object mod {
     
     def createSession(): Session
     
-    def delete(): js.Any
+    def delete(): Any
   }
   object Graph_ {
     
-    inline def apply(createSession: () => Session, delete: () => js.Any): Graph_ = {
+    inline def apply(createSession: () => Session, delete: () => Any): Graph_ = {
       val __obj = js.Dynamic.literal(createSession = js.Any.fromFunction0(createSession), delete = js.Any.fromFunction0(delete))
       __obj.asInstanceOf[Graph_]
     }
@@ -66,14 +66,14 @@ object mod {
       
       inline def setCreateSession(value: () => Session): Self = StObject.set(x, "createSession", js.Any.fromFunction0(value))
       
-      inline def setDelete(value: () => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
   }
   
   @js.native
   trait Session extends StObject {
     
-    def delete(): js.Any = js.native
+    def delete(): Any = js.native
     
     def run(inputs: SessionRunInputs, outputs: SessionRunOutputs): SessionRunResult = js.native
     def run(inputs: SessionRunInputs, outputs: SessionRunOutputs, targets: SessionRunTargets): SessionRunResult = js.native
@@ -115,13 +115,13 @@ object mod {
       
       inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
       
       inline def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Buffer | TensorValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: ((js.Array[(js.Array[js.Array[TensorData] | TensorData]) | TensorData]) | TensorData)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: ((js.Array[(js.Array[js.Array[TensorData] | TensorData]) | TensorData]) | TensorData)*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

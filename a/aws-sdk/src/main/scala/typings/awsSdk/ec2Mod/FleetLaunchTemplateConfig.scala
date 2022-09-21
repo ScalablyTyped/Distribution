@@ -33,6 +33,6 @@ object FleetLaunchTemplateConfig {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "Overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: FleetLaunchTemplateOverrides*): Self = StObject.set(x, "Overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: FleetLaunchTemplateOverrides*): Self = StObject.set(x, "Overrides", js.Array(value*))
   }
 }

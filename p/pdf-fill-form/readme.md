@@ -10,10 +10,10 @@ Fill PDF forms and return rendered PDF in buffer. No temporary files created.
 | ------------------ | :-------------: |
 | Full name          | pdf-fill-form |
 | Keywords           | pdf, forms, poppler, qt5, cairo |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 122897 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4181.666666666667 |
+| # stars            | 207.0 |
 
 ## Links
 - [Homepage](https://github.com/tpisto/pdf-fill-form#readme)

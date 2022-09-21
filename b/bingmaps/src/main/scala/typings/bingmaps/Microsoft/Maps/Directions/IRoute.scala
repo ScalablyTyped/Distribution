@@ -24,10 +24,10 @@ object IRoute {
     
     inline def setRouteLegs(value: js.Array[IRouteLeg]): Self = StObject.set(x, "routeLegs", value.asInstanceOf[js.Any])
     
-    inline def setRouteLegsVarargs(value: IRouteLeg*): Self = StObject.set(x, "routeLegs", js.Array(value :_*))
+    inline def setRouteLegsVarargs(value: IRouteLeg*): Self = StObject.set(x, "routeLegs", js.Array(value*))
     
     inline def setRoutePath(value: js.Array[Location]): Self = StObject.set(x, "routePath", value.asInstanceOf[js.Any])
     
-    inline def setRoutePathVarargs(value: Location*): Self = StObject.set(x, "routePath", js.Array(value :_*))
+    inline def setRoutePathVarargs(value: Location*): Self = StObject.set(x, "routePath", js.Array(value*))
   }
 }

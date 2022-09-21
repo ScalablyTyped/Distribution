@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait BlueToothDevice extends StObject {
   var RSSI: Double
   
   /** 当前蓝牙设备的广播数据段中的 ManufacturerData 数据段。 */
-  var advertisData: ArrayBuffer
+  var advertisData: js.typedarray.ArrayBuffer
   
   /** 当前蓝牙设备的广播数据段中的 ServiceUUIDs 数据段 */
   var advertisServiceUUIDs: js.Array[String]
@@ -32,7 +31,7 @@ object BlueToothDevice {
   
   inline def apply(
     RSSI: Double,
-    advertisData: ArrayBuffer,
+    advertisData: js.typedarray.ArrayBuffer,
     advertisServiceUUIDs: js.Array[String],
     deviceId: String,
     localName: String,
@@ -45,11 +44,11 @@ object BlueToothDevice {
   
   extension [Self <: BlueToothDevice](x: Self) {
     
-    inline def setAdvertisData(value: ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
+    inline def setAdvertisData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
     
     inline def setAdvertisServiceUUIDs(value: js.Array[String]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
     
-    inline def setAdvertisServiceUUIDsVarargs(value: String*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value :_*))
+    inline def setAdvertisServiceUUIDsVarargs(value: String*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value*))
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

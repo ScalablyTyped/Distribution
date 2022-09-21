@@ -30,7 +30,7 @@ object global {
     val ^ : js.Any = js.native
     @JSGlobal("Diff.Diff")
     @js.native
-    class Diff ()
+    open class Diff ()
       extends typings.diff.mod.Diff
     
     inline def applyPatch(source: String, patch: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(source.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -43,7 +43,7 @@ object global {
     inline def applyPatches(patch: String, options: ApplyPatchesOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatches")(patch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def applyPatches(patch: js.Array[ParsedDiff], options: ApplyPatchesOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatches")(patch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def canonicalize(obj: js.Any, stack: js.Array[js.Any], replacementStack: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(obj.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], replacementStack.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def canonicalize(obj: Any, stack: js.Array[Any], replacementStack: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(obj.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], replacementStack.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def convertChangesToDMP(changes: js.Array[Change]): js.Array[js.Tuple2[`1` | `0` | `-1`, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChangesToDMP")(changes.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[`1` | `0` | `-1`, String]]]
     

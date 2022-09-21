@@ -9,12 +9,12 @@ trait ProfilingStatus extends StObject {
   /**
     * The date and time when the profiling agent most recently pinged back. Specify using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
     */
-  var latestAgentOrchestratedAt: js.UndefOr[Timestamp] = js.undefined
+  var latestAgentOrchestratedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time when the most recent profile was received. Specify using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
     */
-  var latestAgentProfileReportedAt: js.UndefOr[Timestamp] = js.undefined
+  var latestAgentProfileReportedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  An  AggregatedProfileTime  object that contains the aggregation period and start time for an aggregated profile. 
@@ -30,11 +30,11 @@ object ProfilingStatus {
   
   extension [Self <: ProfilingStatus](x: Self) {
     
-    inline def setLatestAgentOrchestratedAt(value: Timestamp): Self = StObject.set(x, "latestAgentOrchestratedAt", value.asInstanceOf[js.Any])
+    inline def setLatestAgentOrchestratedAt(value: js.Date): Self = StObject.set(x, "latestAgentOrchestratedAt", value.asInstanceOf[js.Any])
     
     inline def setLatestAgentOrchestratedAtUndefined: Self = StObject.set(x, "latestAgentOrchestratedAt", js.undefined)
     
-    inline def setLatestAgentProfileReportedAt(value: Timestamp): Self = StObject.set(x, "latestAgentProfileReportedAt", value.asInstanceOf[js.Any])
+    inline def setLatestAgentProfileReportedAt(value: js.Date): Self = StObject.set(x, "latestAgentProfileReportedAt", value.asInstanceOf[js.Any])
     
     inline def setLatestAgentProfileReportedAtUndefined: Self = StObject.set(x, "latestAgentProfileReportedAt", js.undefined)
     

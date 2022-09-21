@@ -10,9 +10,9 @@ trait TypeComparisonInfo extends StObject {
   
   var flags: TypeRelationshipFlags
   
-  /* private */ var indent: js.Any
+  /* private */ var indent: Any
   
-  /* private */ def indentString(): js.Any
+  /* private */ def indentString(): Any
   
   var message: String
   
@@ -25,8 +25,8 @@ object TypeComparisonInfo {
   inline def apply(
     addMessage: String => Unit,
     flags: TypeRelationshipFlags,
-    indent: js.Any,
-    indentString: () => js.Any,
+    indent: Any,
+    indentString: () => Any,
     message: String,
     onlyCaptureFirstError: Boolean,
     stringConstantVal: AST
@@ -41,9 +41,9 @@ object TypeComparisonInfo {
     
     inline def setFlags(value: TypeRelationshipFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    inline def setIndent(value: js.Any): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: Any): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    inline def setIndentString(value: () => js.Any): Self = StObject.set(x, "indentString", js.Any.fromFunction0(value))
+    inline def setIndentString(value: () => Any): Self = StObject.set(x, "indentString", js.Any.fromFunction0(value))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

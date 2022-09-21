@@ -39,6 +39,6 @@ object ListUserAssetsResponse {
     
     inline def setUserAssetsUndefined: Self = StObject.set(x, "userAssets", js.undefined)
     
-    inline def setUserAssetsVarargs(value: UserAsset*): Self = StObject.set(x, "userAssets", js.Array(value :_*))
+    inline def setUserAssetsVarargs(value: UserAsset*): Self = StObject.set(x, "userAssets", js.Array(value*))
   }
 }

@@ -65,7 +65,7 @@ object PowerFormSendersResponse {
     
     inline def setPowerFormSendersUndefined: Self = StObject.set(x, "powerFormSenders", js.undefined)
     
-    inline def setPowerFormSendersVarargs(value: UserInfo*): Self = StObject.set(x, "powerFormSenders", js.Array(value :_*))
+    inline def setPowerFormSendersVarargs(value: UserInfo*): Self = StObject.set(x, "powerFormSenders", js.Array(value*))
     
     inline def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     

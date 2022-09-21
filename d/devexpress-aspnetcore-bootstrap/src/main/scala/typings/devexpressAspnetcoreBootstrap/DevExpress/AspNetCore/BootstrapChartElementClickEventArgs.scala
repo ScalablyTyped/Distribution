@@ -8,17 +8,17 @@ trait BootstrapChartElementClickEventArgs
   extends StObject
      with BootstrapChartElementActionEventArgs {
   
-  val jQueryEvent: js.Any
+  val jQueryEvent: Any
 }
 object BootstrapChartElementClickEventArgs {
   
-  inline def apply(component: js.Any, element: js.Any, jQueryEvent: js.Any, sender: Control, target: js.Any): BootstrapChartElementClickEventArgs = {
+  inline def apply(component: Any, element: Any, jQueryEvent: Any, sender: Control, target: Any): BootstrapChartElementClickEventArgs = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], jQueryEvent = jQueryEvent.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapChartElementClickEventArgs]
   }
   
   extension [Self <: BootstrapChartElementClickEventArgs](x: Self) {
     
-    inline def setJQueryEvent(value: js.Any): Self = StObject.set(x, "jQueryEvent", value.asInstanceOf[js.Any])
+    inline def setJQueryEvent(value: Any): Self = StObject.set(x, "jQueryEvent", value.asInstanceOf[js.Any])
   }
 }

@@ -11,33 +11,23 @@ trait NewableFunction
      with Function {
   
   /**
-    * Calls the function with the specified object as the this value and the elements of specified array as the arguments.
-    * @param thisArg The object to be used as the this object.
-    * @param args An array of argument values to be passed to the function.
-    */
-  @JSName("apply")
-  def apply[T](thisArg: T): Unit = js.native
-  @JSName("apply")
-  def apply[T, A /* <: Array[js.Any] */](thisArg: T, args: A): Unit = js.native
-  
-  /**
     * For a given function, creates a bound function that has the same body as the original function.
     * The this object of the bound function is associated with the specified object, and has the specified initial parameters.
     * @param thisArg The object to be used as the this object.
     * @param args Arguments to bind to the parameters of the function.
     */
-  def bind[A /* <: Array[js.Any] */, R](thisArg: js.Any): Instantiable1[/* args */ A, R] = js.native
-  def bind[A0, A /* <: Array[js.Any] */, R](thisArg: js.Any, arg0: A0): Instantiable1[/* args */ A, R] = js.native
-  def bind[A0, A1, A /* <: Array[js.Any] */, R](thisArg: js.Any, arg0: A0, arg1: A1): Instantiable1[/* args */ A, R] = js.native
-  def bind[A0, A1, A2, A /* <: Array[js.Any] */, R](thisArg: js.Any, arg0: A0, arg1: A1, arg2: A2): Instantiable1[/* args */ A, R] = js.native
-  def bind[A0, A1, A2, A3, A /* <: Array[js.Any] */, R](thisArg: js.Any, arg0: A0, arg1: A1, arg2: A2, arg3: A3): Instantiable1[/* args */ A, R] = js.native
+  def bind[A /* <: Array[Any] */, R](thisArg: Any): Instantiable1[/* args */ A, R] = js.native
+  def bind[A0, A /* <: Array[Any] */, R](thisArg: Any, arg0: A0): Instantiable1[/* args */ A, R] = js.native
+  def bind[A0, A1, A /* <: Array[Any] */, R](thisArg: Any, arg0: A0, arg1: A1): Instantiable1[/* args */ A, R] = js.native
+  def bind[A0, A1, A2, A /* <: Array[Any] */, R](thisArg: Any, arg0: A0, arg1: A1, arg2: A2): Instantiable1[/* args */ A, R] = js.native
+  def bind[A0, A1, A2, A3, A /* <: Array[Any] */, R](thisArg: Any, arg0: A0, arg1: A1, arg2: A2, arg3: A3): Instantiable1[/* args */ A, R] = js.native
   
   /**
     * Calls the function with the specified object as the this value and the specified rest arguments as the arguments.
     * @param thisArg The object to be used as the this object.
     * @param args Argument values to be passed to the function.
     */
-  def call[T, A /* <: Array[js.Any] */](
+  def call[T, A /* <: Array[Any] */](
     thisArg: T,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type A is not an array type */ args: A
   ): Unit = js.native

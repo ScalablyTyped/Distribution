@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientObject")
 @js.native
-class ClientObject protected ()
+open class ClientObject protected ()
   extends StObject
      with typings.sharepoint.SP.ClientObject {
   def this(context: typings.sharepoint.SP.ClientRuntimeContext, objectPath: typings.sharepoint.SP.ObjectPath) = this()

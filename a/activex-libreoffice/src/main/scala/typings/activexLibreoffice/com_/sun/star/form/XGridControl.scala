@@ -28,9 +28,9 @@ object XGridControl {
     acquire: () => Unit,
     addGridControlListener: XGridControlListener => Unit,
     getCurrentColumnPosition: () => Double,
-    queryFieldData: (Double, `type`) => SafeArray[js.Any],
+    queryFieldData: (Double, `type`) => SafeArray[Any],
     queryFieldDataType: `type` => SafeArray[Boolean],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeGridControlListener: XGridControlListener => Unit,
     setCurrentColumnPosition: Double => Unit

@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-list-endpoints
 
-Typings are for version 4.0
+Typings are for version 6.0
 
 ## Library description:
 A express package to list all registered endoints and its verbs
@@ -11,9 +11,9 @@ A express package to list all registered endoints and its verbs
 | Full name          | express-list-endpoints |
 | Keywords           | express, routes, endpoints, route, endpoint, list, ls, verb, verbs |
 | # releases         | 3 |
-| # dependents       | 46 |
-| # downloads        | 1988866 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 368052.0 |
+| # stars            | 136.0 |
 
 ## Links
 - [Homepage](https://github.com/AlbertoFdzM/express-list-endpoints#readme)

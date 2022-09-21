@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the title of a chart axis.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartAxisTitleLoadOptions extends StObject {
@@ -19,33 +19,33 @@ trait ChartAxisTitleLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the formatting of the chart axis title.
     *
-    * Specifies the formatting of chart axis title.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartAxisTitleFormatLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies the axis title.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var text: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var textOrientation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the axis title is visibile.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[Boolean] = js.undefined

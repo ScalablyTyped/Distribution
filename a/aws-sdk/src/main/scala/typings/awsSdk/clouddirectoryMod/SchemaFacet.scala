@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaFacet extends StObject {
   
   /**
-    * The name of the facet.
+    * The name of the facet. If this value is set, SchemaArn must also be set.
     */
   var FacetName: js.UndefOr[typings.awsSdk.clouddirectoryMod.FacetName] = js.undefined
   
   /**
-    * The ARN of the schema that contains the facet with no minor component. See arns and In-Place Schema Upgrade for a description of when to provide minor versions.
+    * The ARN of the schema that contains the facet with no minor component. See arns and In-Place Schema Upgrade for a description of when to provide minor versions. If this value is set, FacetName must also be set.
     */
   var SchemaArn: js.UndefOr[Arn] = js.undefined
 }

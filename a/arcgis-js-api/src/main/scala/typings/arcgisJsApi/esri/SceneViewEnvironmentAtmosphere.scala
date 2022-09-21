@@ -15,6 +15,8 @@ trait SceneViewEnvironmentAtmosphere
   /**
     * Indicates the quality of the atmosphere visualization.
     *
+    * @default low
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var quality: js.UndefOr[low | high] = js.undefined
@@ -26,8 +28,8 @@ object SceneViewEnvironmentAtmosphere {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewEnvironmentAtmosphere]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SceneViewEnvironmentAtmosphere]])
+      js.Function2[/* propertyName */ String, /* value */ Any, SceneViewEnvironmentAtmosphere]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewEnvironmentAtmosphere]])
   ): SceneViewEnvironmentAtmosphere = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewEnvironmentAtmosphere]

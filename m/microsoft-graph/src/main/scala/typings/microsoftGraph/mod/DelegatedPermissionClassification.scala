@@ -8,10 +8,19 @@ trait DelegatedPermissionClassification
   extends StObject
      with Entity {
   
+  // The classification value being given. Possible value: low. Does not support $filter.
   var classification: js.UndefOr[NullableOption[PermissionClassificationType]] = js.undefined
   
+  /**
+    * The unique identifier (id) for the delegated permission listed in the oauth2PermissionScopes collection of the
+    * servicePrincipal. Required on create. Does not support $filter.
+    */
   var permissionId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * The claim value (value) for the delegated permission listed in the oauth2PermissionScopes collection of the
+    * servicePrincipal. Does not support $filter.
+    */
   var permissionName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DelegatedPermissionClassification {

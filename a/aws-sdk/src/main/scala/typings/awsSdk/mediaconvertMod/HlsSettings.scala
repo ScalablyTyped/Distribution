@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HlsSettings extends StObject {
   
   /**
-    * Specifies the group to which the audio Rendition belongs.
+    * Specifies the group to which the audio rendition belongs.
     */
   var AudioGroupId: js.UndefOr[string] = js.undefined
   
@@ -27,7 +27,12 @@ trait HlsSettings extends StObject {
   var AudioTrackType: js.UndefOr[HlsAudioTrackType] = js.undefined
   
   /**
-    * When set to INCLUDE, writes I-Frame Only Manifest in addition to the HLS manifest
+    * Specify whether to flag this audio track as descriptive video service (DVS) in your HLS parent manifest. When you choose Flag (FLAG), MediaConvert includes the parameter CHARACTERISTICS="public.accessibility.describes-video" in the EXT-X-MEDIA entry for this track. When you keep the default choice, Don't flag (DONT_FLAG), MediaConvert leaves this parameter out. The DVS flag can help with accessibility on Apple devices. For more information, see the Apple documentation.
+    */
+  var DescriptiveVideoServiceFlag: js.UndefOr[HlsDescriptiveVideoServiceFlag] = js.undefined
+  
+  /**
+    * Choose Include (INCLUDE) to have MediaConvert generate a child manifest that lists only the I-frames for this rendition, in addition to your regular manifest for this rendition. You might use this manifest as part of a workflow that creates preview functions for your video. MediaConvert adds both the I-frame only child manifest and the regular child manifest to the parent manifest. When you don't need the I-frame only child manifest, keep the default value Exclude (EXCLUDE).
     */
   var IFrameOnlyManifest: js.UndefOr[HlsIFrameOnlyManifest] = js.undefined
   
@@ -60,6 +65,10 @@ object HlsSettings {
     inline def setAudioTrackType(value: HlsAudioTrackType): Self = StObject.set(x, "AudioTrackType", value.asInstanceOf[js.Any])
     
     inline def setAudioTrackTypeUndefined: Self = StObject.set(x, "AudioTrackType", js.undefined)
+    
+    inline def setDescriptiveVideoServiceFlag(value: HlsDescriptiveVideoServiceFlag): Self = StObject.set(x, "DescriptiveVideoServiceFlag", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptiveVideoServiceFlagUndefined: Self = StObject.set(x, "DescriptiveVideoServiceFlag", js.undefined)
     
     inline def setIFrameOnlyManifest(value: HlsIFrameOnlyManifest): Self = StObject.set(x, "IFrameOnlyManifest", value.asInstanceOf[js.Any])
     

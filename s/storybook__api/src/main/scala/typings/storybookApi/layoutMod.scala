@@ -4,7 +4,7 @@ import typings.storybookApi.mod.ModuleFn
 import typings.storybookApi.storybookApiStrings.addons
 import typings.storybookApi.storybookApiStrings.canvas
 import typings.storybookApi.storybookApiStrings.sidebar
-import typings.storybookTheming.typesMod.ThemeVars
+import typings.storybookTheming.mod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,21 +13,21 @@ object layoutMod {
   
   object ActiveTabs {
     
-    @JSImport("@storybook/api/dist/modules/layout", "ActiveTabs")
+    @JSImport("@storybook/api/dist/ts3.9/modules/layout", "ActiveTabs")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@storybook/api/dist/modules/layout", "ActiveTabs.ADDONS")
+    @JSImport("@storybook/api/dist/ts3.9/modules/layout", "ActiveTabs.ADDONS")
     @js.native
     def ADDONS: addons = js.native
     inline def ADDONS_=(x: addons): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDONS")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/api/dist/modules/layout", "ActiveTabs.CANVAS")
+    @JSImport("@storybook/api/dist/ts3.9/modules/layout", "ActiveTabs.CANVAS")
     @js.native
     def CANVAS: canvas = js.native
     inline def CANVAS_=(x: canvas): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANVAS")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/api/dist/modules/layout", "ActiveTabs.SIDEBAR")
+    @JSImport("@storybook/api/dist/ts3.9/modules/layout", "ActiveTabs.SIDEBAR")
     @js.native
     def SIDEBAR: sidebar = js.native
     inline def SIDEBAR_=(x: sidebar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIDEBAR")(x.asInstanceOf[js.Any])
@@ -35,27 +35,27 @@ object layoutMod {
   
   object focusableUIElements {
     
-    @JSImport("@storybook/api/dist/modules/layout", "focusableUIElements")
+    @JSImport("@storybook/api/dist/ts3.9/modules/layout", "focusableUIElements")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@storybook/api/dist/modules/layout", "focusableUIElements.storyListMenu")
+    @JSImport("@storybook/api/dist/ts3.9/modules/layout", "focusableUIElements.storyListMenu")
     @js.native
     def storyListMenu: String = js.native
     inline def storyListMenu_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyListMenu")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/api/dist/modules/layout", "focusableUIElements.storyPanelRoot")
+    @JSImport("@storybook/api/dist/ts3.9/modules/layout", "focusableUIElements.storyPanelRoot")
     @js.native
     def storyPanelRoot: String = js.native
     inline def storyPanelRoot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyPanelRoot")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/api/dist/modules/layout", "focusableUIElements.storySearchField")
+    @JSImport("@storybook/api/dist/ts3.9/modules/layout", "focusableUIElements.storySearchField")
     @js.native
     def storySearchField: String = js.native
     inline def storySearchField_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storySearchField")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/api/dist/modules/layout", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/layout", "init")
   @js.native
   val init: ModuleFn = js.native
   
@@ -80,25 +80,33 @@ object layoutMod {
     
     var isFullscreen: Boolean
     
-    var isToolshown: Boolean
+    /**
+      * @deprecated
+      */
+    var isToolshown: js.UndefOr[Boolean] = js.undefined
     
     var panelPosition: PanelPositions
     
     var showNav: Boolean
     
     var showPanel: Boolean
+    
+    var showTabs: Boolean
+    
+    var showToolbar: Boolean
   }
   object Layout {
     
     inline def apply(
       initialActive: ActiveTabsType,
       isFullscreen: Boolean,
-      isToolshown: Boolean,
       panelPosition: PanelPositions,
       showNav: Boolean,
-      showPanel: Boolean
+      showPanel: Boolean,
+      showTabs: Boolean,
+      showToolbar: Boolean
     ): Layout = {
-      val __obj = js.Dynamic.literal(initialActive = initialActive.asInstanceOf[js.Any], isFullscreen = isFullscreen.asInstanceOf[js.Any], isToolshown = isToolshown.asInstanceOf[js.Any], panelPosition = panelPosition.asInstanceOf[js.Any], showNav = showNav.asInstanceOf[js.Any], showPanel = showPanel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(initialActive = initialActive.asInstanceOf[js.Any], isFullscreen = isFullscreen.asInstanceOf[js.Any], panelPosition = panelPosition.asInstanceOf[js.Any], showNav = showNav.asInstanceOf[js.Any], showPanel = showPanel.asInstanceOf[js.Any], showTabs = showTabs.asInstanceOf[js.Any], showToolbar = showToolbar.asInstanceOf[js.Any])
       __obj.asInstanceOf[Layout]
     }
     
@@ -110,11 +118,17 @@ object layoutMod {
       
       inline def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
       
+      inline def setIsToolshownUndefined: Self = StObject.set(x, "isToolshown", js.undefined)
+      
       inline def setPanelPosition(value: PanelPositions): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
       
       inline def setShowNav(value: Boolean): Self = StObject.set(x, "showNav", value.asInstanceOf[js.Any])
       
       inline def setShowPanel(value: Boolean): Self = StObject.set(x, "showPanel", value.asInstanceOf[js.Any])
+      
+      inline def setShowTabs(value: Boolean): Self = StObject.set(x, "showTabs", value.asInstanceOf[js.Any])
+      
+      inline def setShowToolbar(value: Boolean): Self = StObject.set(x, "showToolbar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,7 +147,7 @@ object layoutMod {
   @js.native
   trait SubAPI extends StObject {
     
-    def setOptions(options: js.Any): Unit = js.native
+    def setOptions(options: Any): Unit = js.native
     
     def toggleFullscreen(): Unit = js.native
     def toggleFullscreen(toggled: Boolean): Unit = js.native
@@ -190,14 +204,12 @@ object layoutMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var sidebarAnimations: Boolean
-    
     var url: js.UndefOr[String] = js.undefined
   }
   object UI {
     
-    inline def apply(docsMode: Boolean, enableShortcuts: Boolean, sidebarAnimations: Boolean): UI = {
-      val __obj = js.Dynamic.literal(docsMode = docsMode.asInstanceOf[js.Any], enableShortcuts = enableShortcuts.asInstanceOf[js.Any], sidebarAnimations = sidebarAnimations.asInstanceOf[js.Any])
+    inline def apply(docsMode: Boolean, enableShortcuts: Boolean): UI = {
+      val __obj = js.Dynamic.literal(docsMode = docsMode.asInstanceOf[js.Any], enableShortcuts = enableShortcuts.asInstanceOf[js.Any])
       __obj.asInstanceOf[UI]
     }
     
@@ -210,8 +222,6 @@ object layoutMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setSidebarAnimations(value: Boolean): Self = StObject.set(x, "sidebarAnimations", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

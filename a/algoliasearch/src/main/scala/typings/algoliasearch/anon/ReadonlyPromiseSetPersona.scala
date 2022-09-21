@@ -1,11 +1,11 @@
 package typings.algoliasearch.anon
 
-import typings.algoliaClientRecommendation.mod.SetPersonalizationStrategyResponse
+import typings.algoliaClientPersonalization.mod.SetPersonalizationStrategyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<std.Promise<@algolia/client-recommendation.@algolia/client-recommendation.SetPersonalizationStrategyResponse>> */
+/* Inlined std.Readonly<std.Promise<@algolia/client-personalization.@algolia/client-personalization.SetPersonalizationStrategyResponse>> */
 trait ReadonlyPromiseSetPersona extends StObject {
   
   def `catch`[TResult](): js.Promise[SetPersonalizationStrategyResponse | TResult]
@@ -17,9 +17,9 @@ trait ReadonlyPromiseSetPersona extends StObject {
 object ReadonlyPromiseSetPersona {
   
   inline def apply(
-    `catch`: () => js.Promise[SetPersonalizationStrategyResponse | js.Any],
+    `catch`: () => js.Promise[SetPersonalizationStrategyResponse | Any],
     `finally`: () => js.Promise[SetPersonalizationStrategyResponse],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyPromiseSetPersona = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -30,10 +30,10 @@ object ReadonlyPromiseSetPersona {
   
   extension [Self <: ReadonlyPromiseSetPersona](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[SetPersonalizationStrategyResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[SetPersonalizationStrategyResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[SetPersonalizationStrategyResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

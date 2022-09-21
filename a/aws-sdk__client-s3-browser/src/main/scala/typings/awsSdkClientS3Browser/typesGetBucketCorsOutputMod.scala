@@ -33,7 +33,7 @@ object typesGetBucketCorsOutputMod {
       
       inline def setCORSRulesUndefined: Self = StObject.set(x, "CORSRules", js.undefined)
       
-      inline def setCORSRulesVarargs(value: UnmarshalledCORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
+      inline def setCORSRulesVarargs(value: UnmarshalledCORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value*))
     }
   }
 }

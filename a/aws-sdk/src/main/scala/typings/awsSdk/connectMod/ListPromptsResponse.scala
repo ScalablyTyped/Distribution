@@ -33,6 +33,6 @@ object ListPromptsResponse {
     
     inline def setPromptSummaryListUndefined: Self = StObject.set(x, "PromptSummaryList", js.undefined)
     
-    inline def setPromptSummaryListVarargs(value: PromptSummary*): Self = StObject.set(x, "PromptSummaryList", js.Array(value :_*))
+    inline def setPromptSummaryListVarargs(value: PromptSummary*): Self = StObject.set(x, "PromptSummaryList", js.Array(value*))
   }
 }

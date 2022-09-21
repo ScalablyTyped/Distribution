@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "StopSoundAction")
 @js.native
-class StopSoundAction protected ()
+open class StopSoundAction protected ()
   extends typings.babylonjs.actionsIndexMod.StopSoundAction {
   /**
     * Instantiate the action
@@ -14,9 +14,9 @@ class StopSoundAction protected ()
     * @param sound defines the sound to stop
     * @param condition defines the trigger related conditions
     */
-  def this(triggerOptions: js.Any, sound: typings.babylonjs.soundMod.Sound) = this()
+  def this(triggerOptions: Any, sound: typings.babylonjs.soundMod.Sound) = this()
   def this(
-    triggerOptions: js.Any,
+    triggerOptions: Any,
     sound: typings.babylonjs.soundMod.Sound,
     condition: typings.babylonjs.conditionMod.Condition
   ) = this()

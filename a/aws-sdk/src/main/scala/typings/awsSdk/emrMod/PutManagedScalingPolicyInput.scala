@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutManagedScalingPolicyInput extends StObject {
   
   /**
-    *  Specifies the ID of an EMR cluster where the managed scaling policy is attached. 
+    * Specifies the ID of an EMR cluster where the managed scaling policy is attached. 
     */
   var ClusterId: typings.awsSdk.emrMod.ClusterId
   
   /**
-    *  Specifies the constraints for the managed scaling policy. 
+    * Specifies the constraints for the managed scaling policy. 
     */
   var ManagedScalingPolicy: typings.awsSdk.emrMod.ManagedScalingPolicy
 }

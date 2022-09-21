@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-svg
 
-Typings are for version 4.2.1
+Typings are for version 4.3.2
 
 ## Library description:
 Check if a string or buffer is SVG
@@ -11,9 +11,9 @@ Check if a string or buffer is SVG
 | Full name          | is-svg |
 | Keywords           | svg, vector, graphics, image, img, pic, picture, type, detect, check, is, string, str, buffer |
 | # releases         | 5 |
-| # dependents       | 101 |
-| # downloads        | 362508563 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4732409666666666E7 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-svg#readme)

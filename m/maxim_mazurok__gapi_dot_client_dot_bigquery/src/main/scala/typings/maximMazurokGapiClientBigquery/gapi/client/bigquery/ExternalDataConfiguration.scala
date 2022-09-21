@@ -9,6 +9,9 @@ trait ExternalDataConfiguration extends StObject {
   /** Try to detect schema and format options automatically. Any option specified explicitly will be honored. */
   var autodetect: js.UndefOr[Boolean] = js.undefined
   
+  /** Additional properties to set if sourceFormat is set to Avro. */
+  var avroOptions: js.UndefOr[AvroOptions] = js.undefined
+  
   /** [Optional] Additional options if sourceFormat is set to BIGTABLE. */
   var bigtableOptions: js.UndefOr[BigtableOptions] = js.undefined
   
@@ -24,10 +27,22 @@ trait ExternalDataConfiguration extends StObject {
   /** Additional properties to set if sourceFormat is set to CSV. */
   var csvOptions: js.UndefOr[CsvOptions] = js.undefined
   
+  /**
+    * [Optional] Defines the list of possible SQL data types to which the source decimal values are converted. This list and the precision and the scale parameters of the decimal field
+    * determine the target type. In the order of NUMERIC, BIGNUMERIC, and STRING, a type is picked if it is in the specified list and if it supports the precision and the scale. STRING
+    * supports all precision and scale values. If none of the listed types supports the precision and the scale, the type supporting the widest range in the specified list is picked, and
+    * if a value exceeds the supported range when reading the data, an error will be thrown. Example: Suppose the value of this field is ["NUMERIC", "BIGNUMERIC"]. If (precision,scale)
+    * is: (38,9) -> NUMERIC; (39,9) -> BIGNUMERIC (NUMERIC cannot hold 30 integer digits); (38,10) -> BIGNUMERIC (NUMERIC cannot hold 10 fractional digits); (76,38) -> BIGNUMERIC; (77,38)
+    * -> BIGNUMERIC (error if value exeeds supported range). This field cannot contain duplicate types. The order of the types in this field is ignored. For example, ["BIGNUMERIC",
+    * "NUMERIC"] is the same as ["NUMERIC", "BIGNUMERIC"] and NUMERIC always takes precedence over BIGNUMERIC. Defaults to ["NUMERIC", "STRING"] for ORC and ["NUMERIC"] for the other file
+    * formats.
+    */
+  var decimalTargetTypes: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** [Optional] Additional options if sourceFormat is set to GOOGLE_SHEETS. */
   var googleSheetsOptions: js.UndefOr[GoogleSheetsOptions] = js.undefined
   
-  /** [Optional, Trusted Tester] Options to configure hive partitioning support. */
+  /** [Optional] Options to configure hive partitioning support. */
   var hivePartitioningOptions: js.UndefOr[HivePartitioningOptions] = js.undefined
   
   /**
@@ -44,6 +59,12 @@ trait ExternalDataConfiguration extends StObject {
     * Google Cloud Datastore backups and Avro formats.
     */
   var maxBadRecords: js.UndefOr[Double] = js.undefined
+  
+  /** Additional properties to set if sourceFormat is set to Parquet. */
+  var parquetOptions: js.UndefOr[ParquetOptions] = js.undefined
+  
+  /** [Optional] Provide a referencing file with the expected table schema. Enabled for the format: AVRO, PARQUET, ORC. */
+  var referenceFileSchemaUri: js.UndefOr[String] = js.undefined
   
   /** [Optional] The schema for the data. Schema is required for CSV and JSON formats. Schema is disallowed for Google Cloud Bigtable, Cloud Datastore backups, and Avro formats. */
   var schema: js.UndefOr[TableSchema] = js.undefined
@@ -74,6 +95,10 @@ object ExternalDataConfiguration {
     
     inline def setAutodetectUndefined: Self = StObject.set(x, "autodetect", js.undefined)
     
+    inline def setAvroOptions(value: AvroOptions): Self = StObject.set(x, "avroOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAvroOptionsUndefined: Self = StObject.set(x, "avroOptions", js.undefined)
+    
     inline def setBigtableOptions(value: BigtableOptions): Self = StObject.set(x, "bigtableOptions", value.asInstanceOf[js.Any])
     
     inline def setBigtableOptionsUndefined: Self = StObject.set(x, "bigtableOptions", js.undefined)
@@ -89,6 +114,12 @@ object ExternalDataConfiguration {
     inline def setCsvOptions(value: CsvOptions): Self = StObject.set(x, "csvOptions", value.asInstanceOf[js.Any])
     
     inline def setCsvOptionsUndefined: Self = StObject.set(x, "csvOptions", js.undefined)
+    
+    inline def setDecimalTargetTypes(value: js.Array[String]): Self = StObject.set(x, "decimalTargetTypes", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalTargetTypesUndefined: Self = StObject.set(x, "decimalTargetTypes", js.undefined)
+    
+    inline def setDecimalTargetTypesVarargs(value: String*): Self = StObject.set(x, "decimalTargetTypes", js.Array(value*))
     
     inline def setGoogleSheetsOptions(value: GoogleSheetsOptions): Self = StObject.set(x, "googleSheetsOptions", value.asInstanceOf[js.Any])
     
@@ -106,6 +137,14 @@ object ExternalDataConfiguration {
     
     inline def setMaxBadRecordsUndefined: Self = StObject.set(x, "maxBadRecords", js.undefined)
     
+    inline def setParquetOptions(value: ParquetOptions): Self = StObject.set(x, "parquetOptions", value.asInstanceOf[js.Any])
+    
+    inline def setParquetOptionsUndefined: Self = StObject.set(x, "parquetOptions", js.undefined)
+    
+    inline def setReferenceFileSchemaUri(value: String): Self = StObject.set(x, "referenceFileSchemaUri", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceFileSchemaUriUndefined: Self = StObject.set(x, "referenceFileSchemaUri", js.undefined)
+    
     inline def setSchema(value: TableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
@@ -118,6 +157,6 @@ object ExternalDataConfiguration {
     
     inline def setSourceUrisUndefined: Self = StObject.set(x, "sourceUris", js.undefined)
     
-    inline def setSourceUrisVarargs(value: String*): Self = StObject.set(x, "sourceUris", js.Array(value :_*))
+    inline def setSourceUrisVarargs(value: String*): Self = StObject.set(x, "sourceUris", js.Array(value*))
   }
 }

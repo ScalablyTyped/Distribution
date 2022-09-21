@@ -8,7 +8,7 @@ trait SchemaTargetingValueDayPartTargeting extends StObject {
   
   var dayParts: js.UndefOr[js.Array[SchemaTargetingValueDayPartTargetingDayPart]] = js.undefined
   
-  var timeZoneType: js.UndefOr[String] = js.undefined
+  var timeZoneType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTargetingValueDayPartTargeting {
   
@@ -23,9 +23,11 @@ object SchemaTargetingValueDayPartTargeting {
     
     inline def setDayPartsUndefined: Self = StObject.set(x, "dayParts", js.undefined)
     
-    inline def setDayPartsVarargs(value: SchemaTargetingValueDayPartTargetingDayPart*): Self = StObject.set(x, "dayParts", js.Array(value :_*))
+    inline def setDayPartsVarargs(value: SchemaTargetingValueDayPartTargetingDayPart*): Self = StObject.set(x, "dayParts", js.Array(value*))
     
     inline def setTimeZoneType(value: String): Self = StObject.set(x, "timeZoneType", value.asInstanceOf[js.Any])
+    
+    inline def setTimeZoneTypeNull: Self = StObject.set(x, "timeZoneType", null)
     
     inline def setTimeZoneTypeUndefined: Self = StObject.set(x, "timeZoneType", js.undefined)
   }

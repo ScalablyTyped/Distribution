@@ -28,16 +28,16 @@ object dbMod {
     extends StObject
        with DB {
     
-    def addBeforeCloseListener(listener: js.Any): Double = js.native
+    def addBeforeCloseListener(listener: Any): Double = js.native
     
     def close(): js.Promise[Unit] = js.native
     
-    def column(columnName: String, queryConfig: QueryArrayConfig[js.Array[js.Any]]): js.Promise[js.Array[js.Any]] = js.native
-    def column(columnName: String, queryConfig: QueryArrayConfig[js.Array[js.Any]], values: js.Array[js.Any]): js.Promise[js.Array[js.Any]] = js.native
-    def column(columnName: String, queryConfig: QueryConfig[js.Array[js.Any]]): js.Promise[js.Array[js.Any]] = js.native
-    def column(columnName: String, queryTextOrConfig: String): js.Promise[js.Array[js.Any]] = js.native
-    def column(columnName: String, queryTextOrConfig: String, values: js.Array[js.Any]): js.Promise[js.Array[js.Any]] = js.native
-    def column(columnName: String, queryTextOrConfig: QueryConfig[js.Array[js.Any]], values: js.Array[js.Any]): js.Promise[js.Array[js.Any]] = js.native
+    def column(columnName: String, queryConfig: QueryArrayConfig[js.Array[Any]]): js.Promise[js.Array[Any]] = js.native
+    def column(columnName: String, queryConfig: QueryArrayConfig[js.Array[Any]], values: js.Array[Any]): js.Promise[js.Array[Any]] = js.native
+    def column(columnName: String, queryConfig: QueryConfig[js.Array[Any]]): js.Promise[js.Array[Any]] = js.native
+    def column(columnName: String, queryTextOrConfig: String): js.Promise[js.Array[Any]] = js.native
+    def column(columnName: String, queryTextOrConfig: String, values: js.Array[Any]): js.Promise[js.Array[Any]] = js.native
+    def column(columnName: String, queryTextOrConfig: QueryConfig[js.Array[Any]], values: js.Array[Any]): js.Promise[js.Array[Any]] = js.native
     
     def connected(): Boolean = js.native
     

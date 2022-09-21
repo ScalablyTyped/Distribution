@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "BloomFilter")
 @js.native
-class BloomFilter protected ()
+open class BloomFilter protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.BloomFilter {
   def this(expectedCount: Double) = this()
@@ -16,16 +16,16 @@ class BloomFilter protected ()
   override def add(value: String): Unit = js.native
   
   /* CompleteClass */
-  override def addKeys(keys: IIndexable[js.Any]): Unit = js.native
+  override def addKeys(keys: IIndexable[Any]): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var bitArray: js.Any = js.native
+  var bitArray: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def computeHash(key: js.Any, seed: js.Any): js.Any = js.native
+  override def computeHash(key: Any, seed: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var hashFunctionCount: js.Any = js.native
+  var hashFunctionCount: Any = js.native
   
   /* CompleteClass */
   override def isEquivalent(filter: typings.typescriptServices.TypeScript.BloomFilter): Boolean = js.native

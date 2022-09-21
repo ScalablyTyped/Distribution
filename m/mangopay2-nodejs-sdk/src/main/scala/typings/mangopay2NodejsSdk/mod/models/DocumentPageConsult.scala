@@ -1,16 +1,16 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialDocumentPageConsul
-import typings.mangopay2NodejsSdk.mod.Timestamp
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.DocumentPageConsult")
 @js.native
-class DocumentPageConsult protected ()
-  extends Model[js.Any]
-     with typings.mangopay2NodejsSdk.mod.disputeDocument.DocumentPageConsult {
+open class DocumentPageConsult protected ()
+  extends Model[Any]
+     with typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentPageConsult {
   def this(data: PartialDocumentPageConsul) = this()
   
   /**

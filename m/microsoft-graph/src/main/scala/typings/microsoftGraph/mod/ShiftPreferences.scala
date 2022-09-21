@@ -26,6 +26,6 @@ object ShiftPreferences {
     
     inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
-    inline def setAvailabilityVarargs(value: ShiftAvailability*): Self = StObject.set(x, "availability", js.Array(value :_*))
+    inline def setAvailabilityVarargs(value: ShiftAvailability*): Self = StObject.set(x, "availability", js.Array(value*))
   }
 }

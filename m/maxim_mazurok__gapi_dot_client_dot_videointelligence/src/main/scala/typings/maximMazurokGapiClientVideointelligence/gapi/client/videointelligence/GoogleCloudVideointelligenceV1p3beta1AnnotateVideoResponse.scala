@@ -22,6 +22,6 @@ object GoogleCloudVideointelligenceV1p3beta1AnnotateVideoResponse {
     
     inline def setAnnotationResultsUndefined: Self = StObject.set(x, "annotationResults", js.undefined)
     
-    inline def setAnnotationResultsVarargs(value: GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults*): Self = StObject.set(x, "annotationResults", js.Array(value :_*))
+    inline def setAnnotationResultsVarargs(value: GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults*): Self = StObject.set(x, "annotationResults", js.Array(value*))
   }
 }

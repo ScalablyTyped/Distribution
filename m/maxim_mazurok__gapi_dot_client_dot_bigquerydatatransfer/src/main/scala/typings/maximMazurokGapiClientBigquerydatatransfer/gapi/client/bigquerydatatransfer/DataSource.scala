@@ -127,13 +127,13 @@ object DataSource {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: DataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: DataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     
     inline def setSupportsCustomSchedule(value: Boolean): Self = StObject.set(x, "supportsCustomSchedule", value.asInstanceOf[js.Any])
     

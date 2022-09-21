@@ -134,7 +134,7 @@ object XDataPilotDescriptor {
     getRowFields: () => XIndexAccess,
     getSourceRange: () => CellRangeAddress,
     getTag: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setName: String => Unit,
     setSourceRange: CellRangeAddress => Unit,

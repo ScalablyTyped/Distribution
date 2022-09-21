@@ -22,6 +22,6 @@ object BatchDeletePhotosResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value*))
   }
 }

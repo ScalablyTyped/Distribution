@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.NotifyCollectionChangedEventArgs")
 @js.native
-class NotifyCollectionChangedEventArgs protected ()
+open class NotifyCollectionChangedEventArgs protected ()
   extends StObject
      with typings.microsoftAjax.Sys.NotifyCollectionChangedEventArgs {
   //#region Constructors

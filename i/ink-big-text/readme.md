@@ -10,10 +10,10 @@ Awesome text component for Ink
 | ------------------ | :-------------: |
 | Full name          | ink-big-text |
 | Keywords           | ink-component, ink, component, text, font, big, large, string, react, jsx, terminal, term, console, command-line |
-| # releases         | 5 |
-| # dependents       | 98 |
-| # downloads        | 83045 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 12491.666666666666 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ink-big-text#readme)

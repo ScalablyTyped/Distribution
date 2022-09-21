@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientCloudidentity.anon
 
+import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.Membership
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,20 +23,23 @@ trait AltCallback extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Optional. The initial configuration option for the `Group`. */
-  var initialGroupConfig: js.UndefOr[String] = js.undefined
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
+  /** Required. The parent `Group` resource under which to create the `Membership`. Must be of the form `groups/{group}`. */
+  var parent: String
+  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: Membership
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -45,8 +49,8 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(): AltCallback = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(parent: String, resource: Membership): AltCallback = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
   
@@ -72,10 +76,6 @@ object AltCallback {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setInitialGroupConfig(value: String): Self = StObject.set(x, "initialGroupConfig", value.asInstanceOf[js.Any])
-    
-    inline def setInitialGroupConfigUndefined: Self = StObject.set(x, "initialGroupConfig", js.undefined)
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -84,6 +84,8 @@ object AltCallback {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -91,6 +93,8 @@ object AltCallback {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: Membership): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

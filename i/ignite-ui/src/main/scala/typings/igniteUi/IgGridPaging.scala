@@ -11,7 +11,7 @@ trait IgGridPaging
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * This option has been removed as of 2017.2 Volume release.
@@ -173,7 +173,7 @@ trait IgGridPaging
     * Predefined page sizes that are available to the end user to switch their grid paging to, through a drop down in the grid header.
     *
     */
-  var pageSizeList: js.UndefOr[js.Any] = js.undefined
+  var pageSizeList: js.UndefOr[Any] = js.undefined
   
   /**
     * Denotes the name of the encoded URL parameter that will state what is the currently requested page size.
@@ -393,7 +393,7 @@ object IgGridPaging {
     
     inline def setPageSizeDropDownTrailingLabelUndefined: Self = StObject.set(x, "pageSizeDropDownTrailingLabel", js.undefined)
     
-    inline def setPageSizeList(value: js.Any): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
+    inline def setPageSizeList(value: Any): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
     
     inline def setPageSizeListUndefined: Self = StObject.set(x, "pageSizeList", js.undefined)
     

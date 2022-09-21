@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsoneditor
 
-Typings are for version 8.6
+Typings are for version 9.9
 
 ## Library description:
 A web-based tool to view, edit, format, and validate JSON
@@ -10,13 +10,13 @@ A web-based tool to view, edit, format, and validate JSON
 | ------------------ | :-------------: |
 | Full name          | jsoneditor |
 | Keywords           | - |
-| # releases         | 70 |
-| # dependents       | 164 |
-| # downloads        | 3649377 |
-| # stars            | 15 |
+| # releases         | 39 |
+| # dependents       | 0.0 |
+| # downloads        | 519237.6666666667 |
+| # stars            | 9881.0 |
 
 ## Links
-- [Homepage](https://github.com/josdejong/jsoneditor)
+- [Homepage](https://jsoneditoronline.org)
 - [Bugs](https://github.com/josdejong/jsoneditor/issues)
 - [Repository](https://github.com/josdejong/jsoneditor)
 - [Npm](https://www.npmjs.com/package/jsoneditor)

@@ -10,10 +10,10 @@ split a buffer by another buffer. think String.split()
 | ------------------ | :-------------: |
 | Full name          | buffer-split |
 | Keywords           | buffer, split, chunks, binary |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 140415 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6979.666666666667 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/soldair/node-buffer-split#readme)

@@ -1,6 +1,6 @@
 package typings.qIo
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.qIo.Qio.Writer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

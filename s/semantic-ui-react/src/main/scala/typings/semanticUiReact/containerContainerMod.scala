@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticTEXTALIGNMENTS
 import org.scalablytyped.runtime.StObject
@@ -14,12 +14,12 @@ object containerContainerMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Container/Container", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ContainerProps] = js.native
+  val default: FC[ContainerProps] = js.native
   
   trait ContainerProps
     extends StObject
        with StrictContainerProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ContainerProps {
     
     inline def apply(): ContainerProps = {
@@ -31,7 +31,7 @@ object containerContainerMod extends Shortcut {
   trait StrictContainerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -60,7 +60,7 @@ object containerContainerMod extends Shortcut {
     
     extension [Self <: StrictContainerProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -90,8 +90,8 @@ object containerContainerMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ContainerProps]
+  type _To = FC[ContainerProps]
   
   /* This means you don't have to write `default`, but can instead just say `containerContainerMod.foo` */
-  override def _to: StatelessComponent[ContainerProps] = default
+  override def _to: FC[ContainerProps] = default
 }

@@ -25,13 +25,13 @@ object adapterMod {
     
     def setStyleForTilesElement(
       property: Exclude[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388 */ js.Any, 
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ Any, 
           length | parentRule
         ]
     ): Unit = js.native
     def setStyleForTilesElement(
       property: Exclude[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388 */ js.Any, 
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ Any, 
           length | parentRule
         ],
       value: String

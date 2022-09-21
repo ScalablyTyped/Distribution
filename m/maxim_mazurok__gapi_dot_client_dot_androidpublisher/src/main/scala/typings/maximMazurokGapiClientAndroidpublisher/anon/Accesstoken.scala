@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
-import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.ApksAddExternallyHostedRequest
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.DeviceTierConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +14,14 @@ trait Accesstoken extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
+  /** Whether the service should accept device IDs that are unknown to Play's device catalog. */
+  var allowUnknownDevices: js.UndefOr[Boolean] = js.undefined
+  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
-  
-  /** Identifier of the edit. */
-  var editId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -42,7 +42,7 @@ trait Accesstoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ApksAddExternallyHostedRequest
+  var resource: DeviceTierConfig
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +52,8 @@ trait Accesstoken extends StObject {
 }
 object Accesstoken {
   
-  inline def apply(editId: String, packageName: String, resource: ApksAddExternallyHostedRequest): Accesstoken = {
-    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(packageName: String, resource: DeviceTierConfig): Accesstoken = {
+    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accesstoken]
   }
   
@@ -67,6 +67,10 @@ object Accesstoken {
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
+    inline def setAllowUnknownDevices(value: Boolean): Self = StObject.set(x, "allowUnknownDevices", value.asInstanceOf[js.Any])
+    
+    inline def setAllowUnknownDevicesUndefined: Self = StObject.set(x, "allowUnknownDevices", js.undefined)
+    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
@@ -74,8 +78,6 @@ object Accesstoken {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setEditId(value: String): Self = StObject.set(x, "editId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -99,7 +101,7 @@ object Accesstoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ApksAddExternallyHostedRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: DeviceTierConfig): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

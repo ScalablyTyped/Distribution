@@ -19,7 +19,7 @@ trait Port extends StObject {
   var onDisconnect: Event[js.Function1[/* port */ this.type, Unit]]
   
   /** An object which allows the addition and removal of listeners for a Chrome event. */
-  var onMessage: Event[js.Function2[/* message */ js.Any, /* port */ this.type, Unit]]
+  var onMessage: Event[js.Function2[/* message */ Any, /* port */ this.type, Unit]]
   
   def postMessage(message: js.Object): Unit
   
@@ -35,7 +35,7 @@ object Port {
     disconnect: () => Unit,
     name: String,
     onDisconnect: Event[js.Function1[Port, Unit]],
-    onMessage: Event[js.Function2[/* message */ js.Any, Port, Unit]],
+    onMessage: Event[js.Function2[/* message */ Any, Port, Unit]],
     postMessage: js.Object => Unit
   ): Port = {
     val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), name = name.asInstanceOf[js.Any], onDisconnect = onDisconnect.asInstanceOf[js.Any], onMessage = onMessage.asInstanceOf[js.Any], postMessage = js.Any.fromFunction1(postMessage))
@@ -50,7 +50,7 @@ object Port {
     
     inline def setOnDisconnect(value: Event[js.Function1[Port, Unit]]): Self = StObject.set(x, "onDisconnect", value.asInstanceOf[js.Any])
     
-    inline def setOnMessage(value: Event[js.Function2[/* message */ js.Any, Port, Unit]]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
+    inline def setOnMessage(value: Event[js.Function2[/* message */ Any, Port, Unit]]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
     
     inline def setPostMessage(value: js.Object => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     

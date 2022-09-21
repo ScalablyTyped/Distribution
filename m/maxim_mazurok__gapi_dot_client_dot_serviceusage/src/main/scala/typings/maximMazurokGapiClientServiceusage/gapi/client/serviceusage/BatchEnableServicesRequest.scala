@@ -26,6 +26,6 @@ object BatchEnableServicesRequest {
     
     inline def setServiceIdsUndefined: Self = StObject.set(x, "serviceIds", js.undefined)
     
-    inline def setServiceIdsVarargs(value: String*): Self = StObject.set(x, "serviceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: String*): Self = StObject.set(x, "serviceIds", js.Array(value*))
   }
 }

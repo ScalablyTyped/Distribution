@@ -36,14 +36,14 @@ object oauth1Mod {
     ): Headers = js.native
     def createSignedRequest(method: HttpMethod, url: String, parameters: Null, oauth_token: String, oauth_token_secret: String): Headers = js.native
     
-    def exchangeRequestToken(oauth_token: String, oauth_verifier: String): js.Any = js.native
-    def exchangeRequestToken(oauth_token: String, oauth_verifier: String, qs: StringDictionary[js.UndefOr[String]]): js.Any = js.native
+    def exchangeRequestToken(oauth_token: String, oauth_verifier: String): Any = js.native
+    def exchangeRequestToken(oauth_token: String, oauth_verifier: String, qs: StringDictionary[js.UndefOr[String]]): Any = js.native
     
-    def fetchActiveUser(oauth_token: String, oauth_token_secret: String): js.Any = js.native
-    def fetchActiveUser(oauth_token: String, oauth_token_secret: String, qs: StringDictionary[js.UndefOr[String]]): js.Any = js.native
+    def fetchActiveUser(oauth_token: String, oauth_token_secret: String): Any = js.native
+    def fetchActiveUser(oauth_token: String, oauth_token_secret: String, qs: StringDictionary[js.UndefOr[String]]): Any = js.native
     
-    def fetchRequestToken(oauth_callback: String): js.Any = js.native
-    def fetchRequestToken(oauth_callback: String, qs: StringDictionary[js.UndefOr[String]]): js.Any = js.native
+    def fetchRequestToken(oauth_callback: String): Any = js.native
+    def fetchRequestToken(oauth_callback: String, qs: StringDictionary[js.UndefOr[String]]): Any = js.native
     
     def getAuthUrl(oauth_token: String): String = js.native
     def getAuthUrl(oauth_token: String, qs: StringDictionary[js.UndefOr[String]]): String = js.native

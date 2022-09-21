@@ -1,7 +1,6 @@
 package typings.vsoNodeApi
 
-import typings.node.NodeJS.ReadableStream
-import typings.std.Date
+import typings.std.ReadableStream
 import typings.vsoNodeApi.buildInterfacesMod.Build
 import typings.vsoNodeApi.buildInterfacesMod.BuildArtifact
 import typings.vsoNodeApi.buildInterfacesMod.BuildBadge
@@ -42,7 +41,7 @@ object buildApiMod {
   
   @JSImport("vso-node-api/BuildApi", "BuildApi")
   @js.native
-  class BuildApi protected () extends IBuildApi {
+  open class BuildApi protected () extends IBuildApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -116,8 +115,8 @@ object buildApiMod {
     def getArtifact(buildId: Double, artifactName: String): js.Promise[BuildArtifact] = js.native
     def getArtifact(buildId: Double, artifactName: String, project: String): js.Promise[BuildArtifact] = js.native
     
-    def getArtifactContentZip(buildId: Double, artifactName: String): js.Promise[ReadableStream] = js.native
-    def getArtifactContentZip(buildId: Double, artifactName: String, project: String): js.Promise[ReadableStream] = js.native
+    def getArtifactContentZip(buildId: Double, artifactName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getArtifactContentZip(buildId: Double, artifactName: String, project: String): js.Promise[ReadableStream[Any]] = js.native
     
     def getArtifacts(buildId: Double): js.Promise[js.Array[BuildArtifact]] = js.native
     def getArtifacts(buildId: Double, project: String): js.Promise[js.Array[BuildArtifact]] = js.native
@@ -172,10 +171,10 @@ object buildApiMod {
     def getBuildControllers(): js.Promise[js.Array[BuildController]] = js.native
     def getBuildControllers(name: String): js.Promise[js.Array[BuildController]] = js.native
     
-    def getBuildLog(project: String, buildId: Double, logId: Double): js.Promise[ReadableStream] = js.native
-    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double): js.Promise[ReadableStream] = js.native
-    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double, endLine: Double): js.Promise[ReadableStream] = js.native
-    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Unit, endLine: Double): js.Promise[ReadableStream] = js.native
+    def getBuildLog(project: String, buildId: Double, logId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double, endLine: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Unit, endLine: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getBuildLogLines(project: String, buildId: Double, logId: Double): js.Promise[js.Array[String]] = js.native
     def getBuildLogLines(project: String, buildId: Double, logId: Double, startLine: Double): js.Promise[js.Array[String]] = js.native
@@ -184,19 +183,19 @@ object buildApiMod {
     
     def getBuildLogs(project: String, buildId: Double): js.Promise[js.Array[BuildLog]] = js.native
     
-    def getBuildLogsZip(project: String, buildId: Double): js.Promise[ReadableStream] = js.native
+    def getBuildLogsZip(project: String, buildId: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getBuildOptionDefinitions(): js.Promise[js.Array[BuildOptionDefinition]] = js.native
     def getBuildOptionDefinitions(project: String): js.Promise[js.Array[BuildOptionDefinition]] = js.native
     
-    def getBuildProperties(project: String, buildId: Double): js.Promise[js.Any] = js.native
-    def getBuildProperties(project: String, buildId: Double, filter: js.Array[String]): js.Promise[js.Any] = js.native
+    def getBuildProperties(project: String, buildId: Double): js.Promise[Any] = js.native
+    def getBuildProperties(project: String, buildId: Double, filter: js.Array[String]): js.Promise[Any] = js.native
     
     def getBuildReport(project: String, buildId: Double): js.Promise[BuildReportMetadata] = js.native
     def getBuildReport(project: String, buildId: Double, `type`: String): js.Promise[BuildReportMetadata] = js.native
     
-    def getBuildReportHtmlContent(project: String, buildId: Double): js.Promise[ReadableStream] = js.native
-    def getBuildReportHtmlContent(project: String, buildId: Double, `type`: String): js.Promise[ReadableStream] = js.native
+    def getBuildReportHtmlContent(project: String, buildId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getBuildReportHtmlContent(project: String, buildId: Double, `type`: String): js.Promise[ReadableStream[Any]] = js.native
     
     def getBuildSettings(): js.Promise[BuildSettings] = js.native
     
@@ -222,8 +221,8 @@ object buildApiMod {
       definitions: js.UndefOr[js.Array[Double]],
       queues: js.UndefOr[js.Array[Double]],
       buildNumber: js.UndefOr[String],
-      minTime: js.UndefOr[Date],
-      maxTime: js.UndefOr[Date],
+      minTime: js.UndefOr[js.Date],
+      maxTime: js.UndefOr[js.Date],
       requestedFor: js.UndefOr[String],
       reasonFilter: js.UndefOr[BuildReason],
       statusFilter: js.UndefOr[BuildStatus],
@@ -253,6 +252,30 @@ object buildApiMod {
     def getDefinition(definitionId: Double): js.Promise[BuildDefinition] = js.native
     def getDefinition(definitionId: Double, project: String): js.Promise[BuildDefinition] = js.native
     def getDefinition(definitionId: Double, project: String, revision: Double): js.Promise[BuildDefinition] = js.native
+    def getDefinition(definitionId: Double, project: String, revision: Double, minMetricsTime: js.Date): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: Double,
+      minMetricsTime: js.Date,
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: Double,
+      minMetricsTime: js.Date,
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: Double,
+      minMetricsTime: js.Date,
+      propertyFilters: Unit,
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: String,
@@ -276,27 +299,27 @@ object buildApiMod {
       propertyFilters: Unit,
       includeLatestBuilds: Boolean
     ): js.Promise[BuildDefinition] = js.native
-    def getDefinition(definitionId: Double, project: String, revision: Double, minMetricsTime: Date): js.Promise[BuildDefinition] = js.native
+    def getDefinition(definitionId: Double, project: String, revision: Unit, minMetricsTime: js.Date): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: String,
-      revision: Double,
-      minMetricsTime: Date,
+      revision: Unit,
+      minMetricsTime: js.Date,
       propertyFilters: js.Array[String]
     ): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: String,
-      revision: Double,
-      minMetricsTime: Date,
+      revision: Unit,
+      minMetricsTime: js.Date,
       propertyFilters: js.Array[String],
       includeLatestBuilds: Boolean
     ): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: String,
-      revision: Double,
-      minMetricsTime: Date,
+      revision: Unit,
+      minMetricsTime: js.Date,
       propertyFilters: Unit,
       includeLatestBuilds: Boolean
     ): js.Promise[BuildDefinition] = js.native
@@ -320,34 +343,34 @@ object buildApiMod {
       project: String,
       revision: Unit,
       minMetricsTime: Unit,
-      propertyFilters: Unit,
-      includeLatestBuilds: Boolean
-    ): js.Promise[BuildDefinition] = js.native
-    def getDefinition(definitionId: Double, project: String, revision: Unit, minMetricsTime: Date): js.Promise[BuildDefinition] = js.native
-    def getDefinition(
-      definitionId: Double,
-      project: String,
-      revision: Unit,
-      minMetricsTime: Date,
-      propertyFilters: js.Array[String]
-    ): js.Promise[BuildDefinition] = js.native
-    def getDefinition(
-      definitionId: Double,
-      project: String,
-      revision: Unit,
-      minMetricsTime: Date,
-      propertyFilters: js.Array[String],
-      includeLatestBuilds: Boolean
-    ): js.Promise[BuildDefinition] = js.native
-    def getDefinition(
-      definitionId: Double,
-      project: String,
-      revision: Unit,
-      minMetricsTime: Date,
       propertyFilters: Unit,
       includeLatestBuilds: Boolean
     ): js.Promise[BuildDefinition] = js.native
     def getDefinition(definitionId: Double, project: Unit, revision: Double): js.Promise[BuildDefinition] = js.native
+    def getDefinition(definitionId: Double, project: Unit, revision: Double, minMetricsTime: js.Date): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: Unit,
+      revision: Double,
+      minMetricsTime: js.Date,
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: Unit,
+      revision: Double,
+      minMetricsTime: js.Date,
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: Unit,
+      revision: Double,
+      minMetricsTime: js.Date,
+      propertyFilters: Unit,
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: Unit,
@@ -371,27 +394,27 @@ object buildApiMod {
       propertyFilters: Unit,
       includeLatestBuilds: Boolean
     ): js.Promise[BuildDefinition] = js.native
-    def getDefinition(definitionId: Double, project: Unit, revision: Double, minMetricsTime: Date): js.Promise[BuildDefinition] = js.native
+    def getDefinition(definitionId: Double, project: Unit, revision: Unit, minMetricsTime: js.Date): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: Unit,
-      revision: Double,
-      minMetricsTime: Date,
+      revision: Unit,
+      minMetricsTime: js.Date,
       propertyFilters: js.Array[String]
     ): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: Unit,
-      revision: Double,
-      minMetricsTime: Date,
+      revision: Unit,
+      minMetricsTime: js.Date,
       propertyFilters: js.Array[String],
       includeLatestBuilds: Boolean
     ): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: Unit,
-      revision: Double,
-      minMetricsTime: Date,
+      revision: Unit,
+      minMetricsTime: js.Date,
       propertyFilters: Unit,
       includeLatestBuilds: Boolean
     ): js.Promise[BuildDefinition] = js.native
@@ -415,39 +438,15 @@ object buildApiMod {
       project: Unit,
       revision: Unit,
       minMetricsTime: Unit,
-      propertyFilters: Unit,
-      includeLatestBuilds: Boolean
-    ): js.Promise[BuildDefinition] = js.native
-    def getDefinition(definitionId: Double, project: Unit, revision: Unit, minMetricsTime: Date): js.Promise[BuildDefinition] = js.native
-    def getDefinition(
-      definitionId: Double,
-      project: Unit,
-      revision: Unit,
-      minMetricsTime: Date,
-      propertyFilters: js.Array[String]
-    ): js.Promise[BuildDefinition] = js.native
-    def getDefinition(
-      definitionId: Double,
-      project: Unit,
-      revision: Unit,
-      minMetricsTime: Date,
-      propertyFilters: js.Array[String],
-      includeLatestBuilds: Boolean
-    ): js.Promise[BuildDefinition] = js.native
-    def getDefinition(
-      definitionId: Double,
-      project: Unit,
-      revision: Unit,
-      minMetricsTime: Date,
       propertyFilters: Unit,
       includeLatestBuilds: Boolean
     ): js.Promise[BuildDefinition] = js.native
     
     def getDefinitionMetrics(project: String, definitionId: Double): js.Promise[js.Array[BuildMetric]] = js.native
-    def getDefinitionMetrics(project: String, definitionId: Double, minMetricsTime: Date): js.Promise[js.Array[BuildMetric]] = js.native
+    def getDefinitionMetrics(project: String, definitionId: Double, minMetricsTime: js.Date): js.Promise[js.Array[BuildMetric]] = js.native
     
-    def getDefinitionProperties(project: String, definitionId: Double): js.Promise[js.Any] = js.native
-    def getDefinitionProperties(project: String, definitionId: Double, filter: js.Array[String]): js.Promise[js.Any] = js.native
+    def getDefinitionProperties(project: String, definitionId: Double): js.Promise[Any] = js.native
+    def getDefinitionProperties(project: String, definitionId: Double, filter: js.Array[String]): js.Promise[Any] = js.native
     
     def getDefinitionRevisions(project: String, definitionId: Double): js.Promise[js.Array[BuildDefinitionRevision]] = js.native
     
@@ -462,11 +461,11 @@ object buildApiMod {
       queryOrder: js.UndefOr[DefinitionQueryOrder],
       top: js.UndefOr[Double],
       continuationToken: js.UndefOr[String],
-      minMetricsTime: js.UndefOr[Date],
+      minMetricsTime: js.UndefOr[js.Date],
       definitionIds: js.UndefOr[js.Array[Double]],
       path: js.UndefOr[String],
-      builtAfter: js.UndefOr[Date],
-      notBuiltAfter: js.UndefOr[Date],
+      builtAfter: js.UndefOr[js.Date],
+      notBuiltAfter: js.UndefOr[js.Date],
       includeAllProperties: js.UndefOr[Boolean],
       includeLatestBuilds: js.UndefOr[Boolean],
       taskIdFilter: js.UndefOr[String]
@@ -479,8 +478,8 @@ object buildApiMod {
     
     def getProjectMetrics(project: String): js.Promise[js.Array[BuildMetric]] = js.native
     def getProjectMetrics(project: String, metricAggregationType: String): js.Promise[js.Array[BuildMetric]] = js.native
-    def getProjectMetrics(project: String, metricAggregationType: String, minMetricsTime: Date): js.Promise[js.Array[BuildMetric]] = js.native
-    def getProjectMetrics(project: String, metricAggregationType: Unit, minMetricsTime: Date): js.Promise[js.Array[BuildMetric]] = js.native
+    def getProjectMetrics(project: String, metricAggregationType: String, minMetricsTime: js.Date): js.Promise[js.Array[BuildMetric]] = js.native
+    def getProjectMetrics(project: String, metricAggregationType: Unit, minMetricsTime: js.Date): js.Promise[js.Array[BuildMetric]] = js.native
     
     def getResourceUsage(): js.Promise[BuildResourceUsage] = js.native
     
@@ -524,7 +523,7 @@ object buildApiMod {
     def updateBuild(build: Build, buildId: Double): js.Promise[Build] = js.native
     def updateBuild(build: Build, buildId: Double, project: String): js.Promise[Build] = js.native
     
-    def updateBuildProperties(customHeaders: js.Any, document: JsonPatchDocument, project: String, buildId: Double): js.Promise[js.Any] = js.native
+    def updateBuildProperties(customHeaders: Any, document: JsonPatchDocument, project: String, buildId: Double): js.Promise[Any] = js.native
     
     def updateBuildSettings(settings: BuildSettings): js.Promise[BuildSettings] = js.native
     
@@ -574,7 +573,7 @@ object buildApiMod {
       secretsSourceDefinitionRevision: Double
     ): js.Promise[BuildDefinition] = js.native
     
-    def updateDefinitionProperties(customHeaders: js.Any, document: JsonPatchDocument, project: String, definitionId: Double): js.Promise[js.Any] = js.native
+    def updateDefinitionProperties(customHeaders: Any, document: JsonPatchDocument, project: String, definitionId: Double): js.Promise[Any] = js.native
     
     def updateFolder(folder: Folder, project: String, path: String): js.Promise[Folder] = js.native
   }

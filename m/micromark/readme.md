@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark
 
-Typings are for version 2.10.1
+Typings are for version 3.0.10
 
 ## Library description:
 small commonmark compliant markdown parser with positional info and concrete tokens
@@ -10,15 +10,15 @@ small commonmark compliant markdown parser with positional info and concrete tok
 | ------------------ | :-------------: |
 | Full name          | micromark |
 | Keywords           | commonmark, compiler, gfm, html, lexer, markdown, markup, md, unified, parse, parser, plugin, process, remark, render, renderer, token, tokenizer |
-| # releases         | 20 |
-| # dependents       | 22 |
-| # downloads        | 8571311 |
-| # stars            | 0 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3752612E7 |
+| # stars            | 1252.0 |
 
 ## Links
-- [Homepage](https://github.com/micromark/micromark#readme)
+- [Homepage](https://github.com/micromark/micromark/tree/main#readme)
 - [Bugs](https://github.com/micromark/micromark/issues)
-- [Repository](https://github.com/micromark/micromark)
+- [Repository](https://github.com/micromark/micromark/tree/main)
 - [Npm](https://www.npmjs.com/package/micromark)
     
 

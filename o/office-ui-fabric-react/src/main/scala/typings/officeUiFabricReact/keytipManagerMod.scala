@@ -10,7 +10,7 @@ object keytipManagerMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/keytips/KeytipManager", "KeytipManager")
   @js.native
-  class KeytipManager () extends StObject {
+  open class KeytipManager () extends StObject {
     
     /**
       * Creates an IUniqueKeytip object
@@ -19,7 +19,7 @@ object keytipManagerMod {
       * @param uniqueID - Unique ID, will default to the next unique ID if not passed
       * @returns IUniqueKeytip object
       */
-    /* private */ var _getUniqueKtp: js.Any = js.native
+    /* private */ var _getUniqueKtp: Any = js.native
     
     /**
       * Adds the overflowSetSequence to the keytipProps if its parent keytip also has it
@@ -109,8 +109,8 @@ object keytipManagerMod {
     
     @JSImport("office-ui-fabric-react/lib/utilities/keytips/KeytipManager", "KeytipManager._instance")
     @js.native
-    def _instance: js.Any = js.native
-    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    def _instance: Any = js.native
+    inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /**
       * Static function to get singleton KeytipManager instance

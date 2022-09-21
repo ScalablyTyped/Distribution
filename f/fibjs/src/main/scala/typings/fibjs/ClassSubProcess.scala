@@ -18,7 +18,7 @@ trait ClassSubProcess
     * 
     * 
     */
-  def findWindow(name: String): js.Any = js.native
+  def findWindow(name: String): Any = js.native
   
   /**
     * 

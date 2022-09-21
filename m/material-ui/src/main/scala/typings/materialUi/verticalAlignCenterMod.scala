@@ -10,10 +10,10 @@ object verticalAlignCenterMod {
   
   @JSImport("material-ui/svg-icons/editor/vertical-align-center", JSImport.Default)
   @js.native
-  class default () extends EditorVerticalAlignCenter
+  open class default () extends EditorVerticalAlignCenter
   
   @JSImport("material-ui/svg-icons/editor/vertical-align-center", "EditorVerticalAlignCenter")
   @js.native
-  class EditorVerticalAlignCenter ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorVerticalAlignCenter ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

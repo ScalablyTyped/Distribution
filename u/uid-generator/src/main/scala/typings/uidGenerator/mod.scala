@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
 import typings.uidGenerator.uidGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 import typings.uidGenerator.uidGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde`
 import typings.uidGenerator.uidGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde`
@@ -21,7 +20,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("uid-generator", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with UIDGeneratorInstance {
     def this(baseEncoding: String) = this()
@@ -69,7 +68,7 @@ object mod extends Shortcut {
     val bitSize: Double = js.native
     
     def generate(): js.Promise[String] = js.native
-    def generate(cb: js.Function2[/* error */ Error | Null, /* uid */ String, js.Any]): Unit = js.native
+    def generate(cb: js.Function2[/* error */ js.Error | Null, /* uid */ String, Any]): Unit = js.native
     
     def generateSync(): String = js.native
     

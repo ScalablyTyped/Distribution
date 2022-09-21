@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'indices'> */
 trait OneHotInputs extends StObject {
   
-  var indices: js.UndefOr[js.Any] = js.undefined
+  var indices: js.UndefOr[scala.Any] = js.undefined
 }
 object OneHotInputs {
   
@@ -18,7 +18,7 @@ object OneHotInputs {
   
   extension [Self <: OneHotInputs](x: Self) {
     
-    inline def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: scala.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
   }

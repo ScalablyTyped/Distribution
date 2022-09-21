@@ -28,7 +28,7 @@ object ListAttestorsResponse {
     
     inline def setAttestorsUndefined: Self = StObject.set(x, "attestors", js.undefined)
     
-    inline def setAttestorsVarargs(value: Attestor*): Self = StObject.set(x, "attestors", js.Array(value :_*))
+    inline def setAttestorsVarargs(value: Attestor*): Self = StObject.set(x, "attestors", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,10 @@
 package typings.cucumberHtmlReporter
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.cucumberHtmlReporter.cucumberHtmlReporterStrings.bootstrap
+import typings.cucumberHtmlReporter.cucumberHtmlReporterStrings.foundation
+import typings.cucumberHtmlReporter.cucumberHtmlReporterStrings.hierarchy
+import typings.cucumberHtmlReporter.cucumberHtmlReporterStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +20,15 @@ object mod {
   
   trait Options extends StObject {
     
+    var brandTitle: js.UndefOr[String] = js.undefined
+    
     var columnLayout: js.UndefOr[Double] = js.undefined
     
     var ignoreBadJsonFile: js.UndefOr[Boolean] = js.undefined
     
     var jsonDir: js.UndefOr[String] = js.undefined
     
-    var jsonFile: String
+    var jsonFile: js.UndefOr[String] = js.undefined
     
     var launchReport: Boolean
     
@@ -36,26 +42,31 @@ object mod {
     
     var reportSuiteAsScenarios: Boolean
     
+    var scenarioTimestamp: js.UndefOr[Boolean] = js.undefined
+    
     var screenshotsDirectory: js.UndefOr[String] = js.undefined
     
     var storeScreenshots: js.UndefOr[Boolean] = js.undefined
     
-    var theme: String
+    var theme: bootstrap | hierarchy | foundation | simple
   }
   object Options {
     
     inline def apply(
-      jsonFile: String,
       launchReport: Boolean,
       output: String,
       reportSuiteAsScenarios: Boolean,
-      theme: String
+      theme: bootstrap | hierarchy | foundation | simple
     ): Options = {
-      val __obj = js.Dynamic.literal(jsonFile = jsonFile.asInstanceOf[js.Any], launchReport = launchReport.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], reportSuiteAsScenarios = reportSuiteAsScenarios.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(launchReport = launchReport.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], reportSuiteAsScenarios = reportSuiteAsScenarios.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setBrandTitle(value: String): Self = StObject.set(x, "brandTitle", value.asInstanceOf[js.Any])
+      
+      inline def setBrandTitleUndefined: Self = StObject.set(x, "brandTitle", js.undefined)
       
       inline def setColumnLayout(value: Double): Self = StObject.set(x, "columnLayout", value.asInstanceOf[js.Any])
       
@@ -70,6 +81,8 @@ object mod {
       inline def setJsonDirUndefined: Self = StObject.set(x, "jsonDir", js.undefined)
       
       inline def setJsonFile(value: String): Self = StObject.set(x, "jsonFile", value.asInstanceOf[js.Any])
+      
+      inline def setJsonFileUndefined: Self = StObject.set(x, "jsonFile", js.undefined)
       
       inline def setLaunchReport(value: Boolean): Self = StObject.set(x, "launchReport", value.asInstanceOf[js.Any])
       
@@ -89,6 +102,10 @@ object mod {
       
       inline def setReportSuiteAsScenarios(value: Boolean): Self = StObject.set(x, "reportSuiteAsScenarios", value.asInstanceOf[js.Any])
       
+      inline def setScenarioTimestamp(value: Boolean): Self = StObject.set(x, "scenarioTimestamp", value.asInstanceOf[js.Any])
+      
+      inline def setScenarioTimestampUndefined: Self = StObject.set(x, "scenarioTimestamp", js.undefined)
+      
       inline def setScreenshotsDirectory(value: String): Self = StObject.set(x, "screenshotsDirectory", value.asInstanceOf[js.Any])
       
       inline def setScreenshotsDirectoryUndefined: Self = StObject.set(x, "screenshotsDirectory", js.undefined)
@@ -97,7 +114,7 @@ object mod {
       
       inline def setStoreScreenshotsUndefined: Self = StObject.set(x, "storeScreenshots", js.undefined)
       
-      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: bootstrap | hierarchy | foundation | simple): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
 }

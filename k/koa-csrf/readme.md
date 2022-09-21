@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-csrf
 
-Typings are for version 3.0
+Typings are for version 5.0
 
 ## Library description:
 CSRF tokens for Koa
@@ -9,11 +9,11 @@ CSRF tokens for Koa
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | koa-csrf |
-| Keywords           | cross, csrf, forgery, koa, koa2, koa@2, koa@next, koanext, next, request, security, site |
-| # releases         | 2 |
-| # dependents       | 56 |
-| # downloads        | 1353176 |
-| # stars            | 12 |
+| Keywords           | cross, csrf, forgery, koa, koa2, koa@2, koa@next, koanext, middleware, next, request, security, site |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 210722.66666666666 |
+| # stars            | 262.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/csrf)

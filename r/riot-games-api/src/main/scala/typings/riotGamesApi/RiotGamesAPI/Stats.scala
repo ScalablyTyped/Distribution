@@ -380,7 +380,7 @@ object Stats {
       
       inline def setPlayerStatSummaries(value: js.Array[PlayerStatsSummaryDto]): Self = StObject.set(x, "playerStatSummaries", value.asInstanceOf[js.Any])
       
-      inline def setPlayerStatSummariesVarargs(value: PlayerStatsSummaryDto*): Self = StObject.set(x, "playerStatSummaries", js.Array(value :_*))
+      inline def setPlayerStatSummariesVarargs(value: PlayerStatsSummaryDto*): Self = StObject.set(x, "playerStatSummaries", js.Array(value*))
       
       inline def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
     }
@@ -405,7 +405,7 @@ object Stats {
       
       inline def setChampions(value: js.Array[ChampionStatsDto]): Self = StObject.set(x, "champions", value.asInstanceOf[js.Any])
       
-      inline def setChampionsVarargs(value: ChampionStatsDto*): Self = StObject.set(x, "champions", js.Array(value :_*))
+      inline def setChampionsVarargs(value: ChampionStatsDto*): Self = StObject.set(x, "champions", js.Array(value*))
       
       inline def setModifyDate(value: Double): Self = StObject.set(x, "modifyDate", value.asInstanceOf[js.Any])
       

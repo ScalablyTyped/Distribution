@@ -25,6 +25,6 @@ object FontFace {
     
     inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
-    inline def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value*))
   }
 }

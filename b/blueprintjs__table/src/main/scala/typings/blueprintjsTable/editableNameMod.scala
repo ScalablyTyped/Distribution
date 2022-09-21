@@ -11,24 +11,22 @@ object editableNameMod {
   
   @JSImport("@blueprintjs/table/lib/esm/headers/editableName", "EditableName")
   @js.native
-  class EditableName protected ()
-    extends PureComponent[IEditableNameProps, IEditableNameState, js.Any] {
+  open class EditableName protected () extends PureComponent[IEditableNameProps, IEditableNameState, Any] {
     def this(props: IEditableNameProps) = this()
-    def this(props: IEditableNameProps, context: js.Any) = this()
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MEditableName(prevProps: IEditableNameProps): Unit = js.native
     
-    /* private */ var handleCancel: js.Any = js.native
+    /* private */ var handleCancel: Any = js.native
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
-    /* private */ var handleConfirm: js.Any = js.native
+    /* private */ var handleConfirm: Any = js.native
     
-    /* private */ var handleEdit: js.Any = js.native
-    
-    /* private */ var invokeCallback: js.Any = js.native
+    /* private */ var handleEdit: Any = js.native
   }
+  
+  type EditableNameProps = IEditableNameProps
   
   trait IEditableNameProps
     extends StObject

@@ -1,22 +1,26 @@
 package typings.angularCommon.mod
 
+import typings.angularCommon.angularCommonBooleans.`true`
+import typings.angularCommon.angularCommonStrings.slice
 import typings.angularCore.mod.PipeTransform
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularCore.mod.ɵɵPipeDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "SlicePipe")
 @js.native
-class SlicePipe ()
+open class SlicePipe ()
   extends StObject
      with PipeTransform {
   
-  /* private */ var supports: js.Any = js.native
+  /* private */ var supports: Any = js.native
   
   def transform(value: String, start: Double): String = js.native
   def transform(value: String, start: Double, end: Double): String = js.native
   /* CompleteClass */
-  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
+  override def transform(value: Any, args: Any*): Any = js.native
   def transform(value: Null, start: Double): Null = js.native
   def transform(value: Null, start: Double, end: Double): Null = js.native
   def transform(value: Unit, start: Double): Null = js.native
@@ -62,4 +66,21 @@ class SlicePipe ()
   def transform_Union(value: Unit, start: Double): String | Null = js.native
   @JSName("transform")
   def transform_Union(value: Unit, start: Double, end: Double): String | Null = js.native
+}
+/* static members */
+object SlicePipe {
+  
+  @JSImport("@angular/common", "SlicePipe")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/common", "SlicePipe.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[SlicePipe, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[SlicePipe, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/common", "SlicePipe.\u0275pipe")
+  @js.native
+  def ɵpipe: ɵɵPipeDeclaration[SlicePipe, slice, `true`] = js.native
+  inline def ɵpipe_=(x: ɵɵPipeDeclaration[SlicePipe, slice, `true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275pipe")(x.asInstanceOf[js.Any])
 }

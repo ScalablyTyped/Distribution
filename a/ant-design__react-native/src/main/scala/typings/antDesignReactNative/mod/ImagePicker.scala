@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "ImagePicker")
 @js.native
-class ImagePicker protected () extends default {
+open class ImagePicker protected () extends default {
   def this(props: ImagePickerProps) = this()
 }
 /* static members */

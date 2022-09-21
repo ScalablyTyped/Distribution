@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait PackageMetadata extends StObject {
   /**
     * The date the package was created
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * A direct link to download the package.
@@ -50,7 +49,7 @@ trait PackageMetadata extends StObject {
 object PackageMetadata {
   
   inline def apply(
-    createdOn: Date,
+    createdOn: js.Date,
     downloadUrl: String,
     filename: String,
     hashValue: String,
@@ -66,7 +65,7 @@ object PackageMetadata {
   
   extension [Self <: PackageMetadata](x: Self) {
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     

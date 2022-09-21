@@ -1,6 +1,5 @@
 package typings.grpc.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object VerifyOptions {
   
   extension [Self <: VerifyOptions](x: Self) {
     
-    inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+    inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
     
     inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
   }

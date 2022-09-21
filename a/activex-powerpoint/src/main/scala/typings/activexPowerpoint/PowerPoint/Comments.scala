@@ -14,7 +14,7 @@ trait Comments extends StObject {
   
   def Item(Index: Double): Comment
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Comments_typekey")
   var PowerPointDotComments_typekey: Comments
@@ -26,7 +26,7 @@ object Comments {
     Application: Application,
     Count: Double,
     Item: Double => Comment,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotComments_typekey: Comments
   ): Comments = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction5(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object Comments {
     
     inline def setItem(value: Double => Comment): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotComments_typekey(value: Comments): Self = StObject.set(x, "PowerPoint.Comments_typekey", value.asInstanceOf[js.Any])
   }

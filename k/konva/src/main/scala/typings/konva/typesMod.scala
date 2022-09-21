@@ -8,7 +8,7 @@ object typesMod {
   
   @js.native
   sealed trait KonvaNodeEvent extends StObject
-  @JSImport("konva/types/types", "KonvaNodeEvent")
+  @JSImport("konva/lib/types", "KonvaNodeEvent")
   @js.native
   object KonvaNodeEvent extends StObject {
     

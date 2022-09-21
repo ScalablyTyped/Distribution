@@ -13,7 +13,7 @@ object packBuilderMod {
   
   @JSImport("nodegit/pack-builder", "Packbuilder")
   @js.native
-  class Packbuilder () extends StObject {
+  open class Packbuilder () extends StObject {
     
     def free(): Unit = js.native
     

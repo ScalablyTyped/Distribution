@@ -42,7 +42,7 @@ object DomainMapping {
     
     inline def setResourceRecordsUndefined: Self = StObject.set(x, "resourceRecords", js.undefined)
     
-    inline def setResourceRecordsVarargs(value: ResourceRecord*): Self = StObject.set(x, "resourceRecords", js.Array(value :_*))
+    inline def setResourceRecordsVarargs(value: ResourceRecord*): Self = StObject.set(x, "resourceRecords", js.Array(value*))
     
     inline def setSslSettings(value: SslSettings): Self = StObject.set(x, "sslSettings", value.asInstanceOf[js.Any])
     

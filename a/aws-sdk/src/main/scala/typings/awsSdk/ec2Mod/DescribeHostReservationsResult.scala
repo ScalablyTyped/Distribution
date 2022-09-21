@@ -29,7 +29,7 @@ object DescribeHostReservationsResult {
     
     inline def setHostReservationSetUndefined: Self = StObject.set(x, "HostReservationSet", js.undefined)
     
-    inline def setHostReservationSetVarargs(value: HostReservation*): Self = StObject.set(x, "HostReservationSet", js.Array(value :_*))
+    inline def setHostReservationSetVarargs(value: HostReservation*): Self = StObject.set(x, "HostReservationSet", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

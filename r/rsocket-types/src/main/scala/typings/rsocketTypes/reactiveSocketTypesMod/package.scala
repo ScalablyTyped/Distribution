@@ -1,10 +1,12 @@
 package typings.rsocketTypes.reactiveSocketTypesMod
 
+import typings.node.bufferMod.global.Buffer
+import typings.rsocketTypes.reactiveSocketTypesMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def CONNECTION_STATUS: typings.rsocketTypes.reactiveSocketTypesMod.ConnectionStatus = typings.rsocketTypes.reactiveSocketTypesMod.^.asInstanceOf[js.Dynamic].selectDynamic("CONNECTION_STATUS").asInstanceOf[typings.rsocketTypes.reactiveSocketTypesMod.ConnectionStatus]
+inline def CONNECTION_STATUS: ConnectionStatus = ^.asInstanceOf[js.Dynamic].selectDynamic("CONNECTION_STATUS").asInstanceOf[ConnectionStatus]
 
-type Encodable = java.lang.String | typings.node.Buffer | typings.std.Uint8Array
+type Encodable = String | Buffer | js.typedarray.Uint8Array

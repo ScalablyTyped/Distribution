@@ -15,7 +15,7 @@ trait UseTableInstanceProps[D /* <: js.Object */] extends StObject {
   
   var columns: js.Array[ColumnInstance[D]] = js.native
   
-  var dispatch: TableDispatch[js.Any] = js.native
+  var dispatch: TableDispatch[Any] = js.native
   
   var flatHeaders: js.Array[ColumnInstance[D]] = js.native
   

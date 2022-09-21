@@ -167,7 +167,7 @@ object propertyTypesMod {
       
       inline def setClid(value: String | js.Array[String]): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
       
-      inline def setClidVarargs(value: String*): Self = StObject.set(x, "clid", js.Array(value :_*))
+      inline def setClidVarargs(value: String*): Self = StObject.set(x, "clid", js.Array(value*))
       
       inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
       

@@ -11,9 +11,9 @@ returns specified keys for passed in object
 | Full name          | whitelist-object |
 | Keywords           | object, whitelist, filter, reduce |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1583 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3281.6666666666665 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/conorhastings/whitelist-object#readme)

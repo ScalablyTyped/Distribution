@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of chart trendlines.
   *
-  * Represents a collection of Chart Trendlines.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartTrendlineCollection")
 @js.native
-class ChartTrendlineCollection ()
+open class ChartTrendlineCollection ()
   extends StObject
      with typings.officeJs.Excel.ChartTrendlineCollection {
   

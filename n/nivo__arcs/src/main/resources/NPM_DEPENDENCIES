@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nivo/arcs" : "0.80.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nivo/arcs" : "0.80.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

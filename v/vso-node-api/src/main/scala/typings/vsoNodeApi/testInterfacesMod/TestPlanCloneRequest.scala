@@ -27,6 +27,6 @@ object TestPlanCloneRequest {
     
     inline def setSuiteIds(value: js.Array[Double]): Self = StObject.set(x, "suiteIds", value.asInstanceOf[js.Any])
     
-    inline def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value :_*))
+    inline def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value*))
   }
 }

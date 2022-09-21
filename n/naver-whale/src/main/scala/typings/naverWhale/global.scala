@@ -38,13 +38,39 @@ object global {
       */
     @JSGlobal("whale._debugger")
     @js.native
-    val debugger: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof chrome.debugger */ js.Any = js.native
+    val debugger: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof chrome.debugger */ Any = js.native
     
     object downloads {
       
       @JSGlobal("chrome.downloads.State")
       @js.native
       val State: StateType = js.native
+    }
+    
+    ////////////////////
+    // Runtime
+    ////////////////////
+    /**
+      * Use the chrome.runtime API to retrieve the background page, return details about the manifest, and listen for and respond to events in the app or extension lifecycle. You can also use this API to convert the relative path of URLs to fully-qualified URLs.
+      * @since Chrome 22
+      */
+    object runtime {
+      
+      @JSGlobal("chrome.runtime.OnInstalledReason")
+      @js.native
+      object OnInstalledReason extends StObject {
+        
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.naverWhale.whale.runtime.OnInstalledReason & String] = js.native
+        
+        /* "chrome_update" */ val CHROME_UPDATE: typings.naverWhale.whale.runtime.OnInstalledReason.CHROME_UPDATE & String = js.native
+        
+        /* "install" */ val INSTALL: typings.naverWhale.whale.runtime.OnInstalledReason.INSTALL & String = js.native
+        
+        /* "shared_module_update" */ val SHARED_MODULE_UPDATE: typings.naverWhale.whale.runtime.OnInstalledReason.SHARED_MODULE_UPDATE & String = js.native
+        
+        /* "update" */ val UPDATE: typings.naverWhale.whale.runtime.OnInstalledReason.UPDATE & String = js.native
+      }
     }
     
     object sidebarAction {
@@ -130,7 +156,7 @@ object global {
       
       inline def unblock(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unblock")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      inline def update(urls: js.Array[MostVisitedURL2]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(urls.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def update(urls: js.Array[MostVisitedURL2]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(urls.asInstanceOf[js.Any]).asInstanceOf[Any]
     }
   }
 }

@@ -23,6 +23,8 @@ object NodeBuilderFlags extends StObject {
   
   /* 65536 */ val AllowQualifedNameInPlaceOfIdentifier: typings.typescript.mod.NodeBuilderFlags.AllowQualifedNameInPlaceOfIdentifier & Double = js.native
   
+  /* 65536 */ val AllowQualifiedNameInPlaceOfIdentifier: typings.typescript.mod.NodeBuilderFlags.AllowQualifiedNameInPlaceOfIdentifier & Double = js.native
+  
   /* 32768 */ val AllowThisInObjectLiteral: typings.typescript.mod.NodeBuilderFlags.AllowThisInObjectLiteral & Double = js.native
   
   /* 1048576 */ val AllowUniqueESSymbolType: typings.typescript.mod.NodeBuilderFlags.AllowUniqueESSymbolType & Double = js.native
@@ -37,8 +39,6 @@ object NodeBuilderFlags extends StObject {
   
   /* 4194304 */ val InObjectTypeLiteral: typings.typescript.mod.NodeBuilderFlags.InObjectTypeLiteral & Double = js.native
   
-  /* 33554432 */ val InReverseMappedType: typings.typescript.mod.NodeBuilderFlags.InReverseMappedType & Double = js.native
-  
   /* 8388608 */ val InTypeAlias: typings.typescript.mod.NodeBuilderFlags.InTypeAlias & Double = js.native
   
   /* 1024 */ val MultilineObjectLiterals: typings.typescript.mod.NodeBuilderFlags.MultilineObjectLiterals & Double = js.native
@@ -47,11 +47,11 @@ object NodeBuilderFlags extends StObject {
   
   /* 536870912 */ val NoTypeReduction: typings.typescript.mod.NodeBuilderFlags.NoTypeReduction & Double = js.native
   
-  /* 1073741824 */ val NoUndefinedOptionalParameterType: typings.typescript.mod.NodeBuilderFlags.NoUndefinedOptionalParameterType & Double = js.native
-  
   /* 0 */ val None: typings.typescript.mod.NodeBuilderFlags.None & Double = js.native
   
   /* 8192 */ val OmitParameterModifiers: typings.typescript.mod.NodeBuilderFlags.OmitParameterModifiers & Double = js.native
+  
+  /* 33554432 */ val OmitThisParameter: typings.typescript.mod.NodeBuilderFlags.OmitThisParameter & Double = js.native
   
   /* 256 */ val SuppressAnyReturnType: typings.typescript.mod.NodeBuilderFlags.SuppressAnyReturnType & Double = js.native
   

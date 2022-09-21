@@ -16,7 +16,7 @@ trait IEvented
     */
   @JSName("relayEvents")
   var relayEvents_IEvented: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
 }
 object IEvented {
@@ -28,7 +28,7 @@ object IEvented {
   
   extension [Self <: IEvented](x: Self) {
     
-    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
   }

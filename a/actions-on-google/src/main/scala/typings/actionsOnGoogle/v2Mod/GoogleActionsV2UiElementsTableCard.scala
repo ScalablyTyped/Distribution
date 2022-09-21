@@ -55,13 +55,13 @@ object GoogleActionsV2UiElementsTableCard {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: GoogleActionsV2UiElementsButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: GoogleActionsV2UiElementsButton*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setColumnProperties(value: js.Array[GoogleActionsV2UiElementsTableCardColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
     inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
-    inline def setColumnPropertiesVarargs(value: GoogleActionsV2UiElementsTableCardColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+    inline def setColumnPropertiesVarargs(value: GoogleActionsV2UiElementsTableCardColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value*))
     
     inline def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object GoogleActionsV2UiElementsTableCard {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: GoogleActionsV2UiElementsTableCardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: GoogleActionsV2UiElementsTableCardRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     

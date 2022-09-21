@@ -10,15 +10,13 @@ Knockout makes it easier to create rich, responsive UIs with JavaScript
 | ------------------ | :-------------: |
 | Full name          | knockout |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 307 |
-| # downloads        | 2160452 |
-| # stars            | 21 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 278711.0 |
+| # stars            | 10204.0 |
 
 ## Links
 - [Homepage](http://knockoutjs.com/)
-- [Bugs](https://github.com/knockout/knockout/issues)
-- [Repository](https://github.com/knockout/knockout)
 - [Npm](https://www.npmjs.com/package/knockout)
     
 

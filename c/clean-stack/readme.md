@@ -1,7 +1,7 @@
 
 # Scala.js typings for clean-stack
 
-Typings are for version 3.0.1
+Typings are for version 4.2.0
 
 ## Library description:
 Clean up error stack traces
@@ -10,10 +10,10 @@ Clean up error stack traces
 | ------------------ | :-------------: |
 | Full name          | clean-stack |
 | Keywords           | clean, stack, trace, traces, error, electron |
-| # releases         | 3 |
-| # dependents       | 97 |
-| # downloads        | 346449863 |
-| # stars            | 3 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 8.137699266666667E7 |
+| # stars            | 290.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/clean-stack#readme)

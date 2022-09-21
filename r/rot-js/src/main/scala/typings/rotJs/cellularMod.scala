@@ -14,7 +14,7 @@ object cellularMod {
   
   @JSImport("rot-js/lib/map/cellular", JSImport.Default)
   @js.native
-  class default protected () extends Cellular {
+  open class default protected () extends Cellular {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, options: PartialOptionsBorn) = this()
   }
@@ -121,11 +121,11 @@ object cellularMod {
       
       inline def setBorn(value: js.Array[Double]): Self = StObject.set(x, "born", value.asInstanceOf[js.Any])
       
-      inline def setBornVarargs(value: Double*): Self = StObject.set(x, "born", js.Array(value :_*))
+      inline def setBornVarargs(value: Double*): Self = StObject.set(x, "born", js.Array(value*))
       
       inline def setSurvive(value: js.Array[Double]): Self = StObject.set(x, "survive", value.asInstanceOf[js.Any])
       
-      inline def setSurviveVarargs(value: Double*): Self = StObject.set(x, "survive", js.Array(value :_*))
+      inline def setSurviveVarargs(value: Double*): Self = StObject.set(x, "survive", js.Array(value*))
       
       inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
     }

@@ -59,7 +59,7 @@ trait PNotifyOptions extends StObject {
   /**
     * Set icon to true to use the default icon for the selected style/type, false for no icon, or a string for your own icon class.
     */
-  var icon: js.UndefOr[js.Any] = js.undefined
+  var icon: js.UndefOr[Any] = js.undefined
   
   /**
     * Change new lines to br tags.
@@ -197,7 +197,7 @@ object PNotifyOptions {
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PostProcess")
 @js.native
-class PostProcess protected ()
+open class PostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PostProcess {
   /**
@@ -42,7 +42,7 @@ class PostProcess protected ()
     defines: js.UndefOr[Nullable[String]],
     textureType: js.UndefOr[Double],
     vertexUrl: js.UndefOr[String],
-    indexParameters: js.UndefOr[js.Any],
+    indexParameters: js.UndefOr[Any],
     blockCompilation: js.UndefOr[Boolean],
     textureFormat: js.UndefOr[Double]
   ) = this()
@@ -61,5 +61,19 @@ object PostProcess {
     * @param rootUrl defines the root URL to use to load textures
     * @returns a new post process
     */
-  inline def Parse(parsedPostProcess: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.PostProcess]]
+  inline def Parse(parsedPostProcess: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.PostProcess]]
+  
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
+  inline def _Parse(
+    parsedPostProcess: Any,
+    targetCamera: typings.babylonjs.BABYLON.Camera,
+    scene: typings.babylonjs.BABYLON.Scene,
+    rootUrl: String
+  ): Nullable[typings.babylonjs.BABYLON.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.PostProcess]]
 }

@@ -1,5 +1,6 @@
 package typings.antd
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,14 +14,16 @@ object skeletonImageMod {
   
   inline def default(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* Inlined parent std.Omit<antd.antd/lib/skeleton/Element.SkeletonElementProps, 'size' | 'shape' | 'active'> */
+  /* Inlined parent std.Omit<antd.antd/lib/skeleton/Element.SkeletonElementProps, 'size' | 'shape'> */
   trait SkeletonImageProps extends StObject {
+    
+    var active: js.UndefOr[Boolean] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SkeletonImageProps {
     
@@ -31,6 +34,10 @@ object skeletonImageMod {
     
     extension [Self <: SkeletonImageProps](x: Self) {
       
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -39,7 +46,7 @@ object skeletonImageMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

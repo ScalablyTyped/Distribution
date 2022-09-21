@@ -1,6 +1,6 @@
 package typings.bip174
 
-import typings.bip174.anon.Decode
+import typings.bip174.anon.Expected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,5 @@ object witnessScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def makeConverter(TYPE_BYTE: Double): Decode = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConverter")(TYPE_BYTE.asInstanceOf[js.Any]).asInstanceOf[Decode]
+  inline def makeConverter(TYPE_BYTE: Double): Expected = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConverter")(TYPE_BYTE.asInstanceOf[js.Any]).asInstanceOf[Expected]
 }

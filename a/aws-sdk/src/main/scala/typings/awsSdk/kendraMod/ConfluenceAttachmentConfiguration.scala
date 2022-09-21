@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfluenceAttachmentConfiguration extends StObject {
   
   /**
-    * Defines how attachment metadata fields should be mapped to index fields. Before you can map a field, you must first create an index field with a matching type using the console or the UpdateIndex operation. If you specify the AttachentFieldMappings parameter, you must specify at least one field mapping.
+    * Maps attributes or field names of Confluence attachments to Amazon Kendra index field names. To create custom fields, use the UpdateIndex API before you map to Confluence fields. For more information, see Mapping data source fields. The Confluence data source field names must exist in your Confluence custom metadata. If you specify the AttachentFieldMappings parameter, you must specify at least one field mapping.
     */
   var AttachmentFieldMappings: js.UndefOr[ConfluenceAttachmentFieldMappingsList] = js.undefined
   
   /**
-    * Indicates whether Amazon Kendra indexes attachments to the pages and blogs in the Confluence data source. 
+    *  TRUE to index attachments of pages and blogs in Confluence.
     */
   var CrawlAttachments: js.UndefOr[Boolean] = js.undefined
 }
@@ -29,7 +29,7 @@ object ConfluenceAttachmentConfiguration {
     
     inline def setAttachmentFieldMappingsUndefined: Self = StObject.set(x, "AttachmentFieldMappings", js.undefined)
     
-    inline def setAttachmentFieldMappingsVarargs(value: ConfluenceAttachmentToIndexFieldMapping*): Self = StObject.set(x, "AttachmentFieldMappings", js.Array(value :_*))
+    inline def setAttachmentFieldMappingsVarargs(value: ConfluenceAttachmentToIndexFieldMapping*): Self = StObject.set(x, "AttachmentFieldMappings", js.Array(value*))
     
     inline def setCrawlAttachments(value: Boolean): Self = StObject.set(x, "CrawlAttachments", value.asInstanceOf[js.Any])
     

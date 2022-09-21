@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegisterPatchBaselineForPatchGroupRequest extends StObject {
   
   /**
-    * The ID of the patch baseline to register the patch group with.
+    * The ID of the patch baseline to register with the patch group.
     */
   var BaselineId: typings.awsSdk.ssmMod.BaselineId
   
   /**
-    * The name of the patch group that should be registered with the patch baseline.
+    * The name of the patch group to be registered with the patch baseline.
     */
   var PatchGroup: typings.awsSdk.ssmMod.PatchGroup
 }

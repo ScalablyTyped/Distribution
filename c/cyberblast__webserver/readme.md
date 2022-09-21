@@ -10,10 +10,10 @@ A minimal node-based web server
 | ------------------ | :-------------: |
 | Full name          | @cyberblast/webserver |
 | Keywords           | node, webserver |
-| # releases         | 17 |
-| # dependents       | 0 |
-| # downloads        | 787 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 66.33333333333333 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/cyberblast/WebServer#readme)

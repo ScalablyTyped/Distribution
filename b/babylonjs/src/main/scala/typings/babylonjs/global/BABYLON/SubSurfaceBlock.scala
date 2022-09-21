@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SubSurfaceBlock")
 @js.native
-class SubSurfaceBlock protected ()
+open class SubSurfaceBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SubSurfaceBlock {
   /**

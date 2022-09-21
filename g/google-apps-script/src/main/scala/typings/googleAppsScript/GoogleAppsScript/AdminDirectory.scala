@@ -1240,7 +1240,7 @@ object AdminDirectory {
     
     trait Aliases extends StObject {
       
-      var aliases: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var aliases: js.UndefOr[js.Array[Any]] = js.undefined
       
       var etag: js.UndefOr[String] = js.undefined
       
@@ -1255,11 +1255,11 @@ object AdminDirectory {
       
       extension [Self <: Aliases](x: Self) {
         
-        inline def setAliases(value: js.Array[js.Any]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+        inline def setAliases(value: js.Array[Any]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
         
         inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
         
-        inline def setAliasesVarargs(value: js.Any*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+        inline def setAliasesVarargs(value: Any*): Self = StObject.set(x, "aliases", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1302,7 +1302,7 @@ object AdminDirectory {
         
         inline def setBlockedApiAccessBucketsUndefined: Self = StObject.set(x, "blockedApiAccessBuckets", js.undefined)
         
-        inline def setBlockedApiAccessBucketsVarargs(value: String*): Self = StObject.set(x, "blockedApiAccessBuckets", js.Array(value :_*))
+        inline def setBlockedApiAccessBucketsVarargs(value: String*): Self = StObject.set(x, "blockedApiAccessBuckets", js.Array(value*))
         
         inline def setEnforceSettingsForAndroidDrive(value: Boolean): Self = StObject.set(x, "enforceSettingsForAndroidDrive", value.asInstanceOf[js.Any])
         
@@ -1414,7 +1414,7 @@ object AdminDirectory {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Asp*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Asp*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1477,7 +1477,7 @@ object AdminDirectory {
         
         inline def setFloorNamesUndefined: Self = StObject.set(x, "floorNames", js.undefined)
         
-        inline def setFloorNamesVarargs(value: String*): Self = StObject.set(x, "floorNames", js.Array(value :_*))
+        inline def setFloorNamesVarargs(value: String*): Self = StObject.set(x, "floorNames", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1514,7 +1514,7 @@ object AdminDirectory {
         
         inline def setAddressLinesUndefined: Self = StObject.set(x, "addressLines", js.undefined)
         
-        inline def setAddressLinesVarargs(value: String*): Self = StObject.set(x, "addressLines", js.Array(value :_*))
+        inline def setAddressLinesVarargs(value: String*): Self = StObject.set(x, "addressLines", js.Array(value*))
         
         inline def setAdministrativeArea(value: String): Self = StObject.set(x, "administrativeArea", value.asInstanceOf[js.Any])
         
@@ -1590,7 +1590,7 @@ object AdminDirectory {
         
         inline def setBuildingsUndefined: Self = StObject.set(x, "buildings", js.undefined)
         
-        inline def setBuildingsVarargs(value: Building*): Self = StObject.set(x, "buildings", js.Array(value :_*))
+        inline def setBuildingsVarargs(value: Building*): Self = StObject.set(x, "buildings", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1736,7 +1736,7 @@ object AdminDirectory {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: CalendarResource*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: CalendarResource*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1900,7 +1900,7 @@ object AdminDirectory {
         
         inline def setActiveTimeRangesUndefined: Self = StObject.set(x, "activeTimeRanges", js.undefined)
         
-        inline def setActiveTimeRangesVarargs(value: ChromeOsDeviceActiveTimeRanges*): Self = StObject.set(x, "activeTimeRanges", js.Array(value :_*))
+        inline def setActiveTimeRangesVarargs(value: ChromeOsDeviceActiveTimeRanges*): Self = StObject.set(x, "activeTimeRanges", js.Array(value*))
         
         inline def setAnnotatedAssetId(value: String): Self = StObject.set(x, "annotatedAssetId", value.asInstanceOf[js.Any])
         
@@ -1926,13 +1926,13 @@ object AdminDirectory {
         
         inline def setCpuStatusReportsUndefined: Self = StObject.set(x, "cpuStatusReports", js.undefined)
         
-        inline def setCpuStatusReportsVarargs(value: ChromeOsDeviceCpuStatusReports*): Self = StObject.set(x, "cpuStatusReports", js.Array(value :_*))
+        inline def setCpuStatusReportsVarargs(value: ChromeOsDeviceCpuStatusReports*): Self = StObject.set(x, "cpuStatusReports", js.Array(value*))
         
         inline def setDeviceFiles(value: js.Array[ChromeOsDeviceDeviceFiles]): Self = StObject.set(x, "deviceFiles", value.asInstanceOf[js.Any])
         
         inline def setDeviceFilesUndefined: Self = StObject.set(x, "deviceFiles", js.undefined)
         
-        inline def setDeviceFilesVarargs(value: ChromeOsDeviceDeviceFiles*): Self = StObject.set(x, "deviceFiles", js.Array(value :_*))
+        inline def setDeviceFilesVarargs(value: ChromeOsDeviceDeviceFiles*): Self = StObject.set(x, "deviceFiles", js.Array(value*))
         
         inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
         
@@ -1942,7 +1942,7 @@ object AdminDirectory {
         
         inline def setDiskVolumeReportsUndefined: Self = StObject.set(x, "diskVolumeReports", js.undefined)
         
-        inline def setDiskVolumeReportsVarargs(value: ChromeOsDeviceDiskVolumeReports*): Self = StObject.set(x, "diskVolumeReports", js.Array(value :_*))
+        inline def setDiskVolumeReportsVarargs(value: ChromeOsDeviceDiskVolumeReports*): Self = StObject.set(x, "diskVolumeReports", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2004,7 +2004,7 @@ object AdminDirectory {
         
         inline def setRecentUsersUndefined: Self = StObject.set(x, "recentUsers", js.undefined)
         
-        inline def setRecentUsersVarargs(value: ChromeOsDeviceRecentUsers*): Self = StObject.set(x, "recentUsers", js.Array(value :_*))
+        inline def setRecentUsersVarargs(value: ChromeOsDeviceRecentUsers*): Self = StObject.set(x, "recentUsers", js.Array(value*))
         
         inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
         
@@ -2022,7 +2022,7 @@ object AdminDirectory {
         
         inline def setSystemRamFreeReportsUndefined: Self = StObject.set(x, "systemRamFreeReports", js.undefined)
         
-        inline def setSystemRamFreeReportsVarargs(value: ChromeOsDeviceSystemRamFreeReports*): Self = StObject.set(x, "systemRamFreeReports", js.Array(value :_*))
+        inline def setSystemRamFreeReportsVarargs(value: ChromeOsDeviceSystemRamFreeReports*): Self = StObject.set(x, "systemRamFreeReports", js.Array(value*))
         
         inline def setSystemRamTotal(value: String): Self = StObject.set(x, "systemRamTotal", value.asInstanceOf[js.Any])
         
@@ -2109,13 +2109,13 @@ object AdminDirectory {
         
         inline def setCpuTemperatureInfoUndefined: Self = StObject.set(x, "cpuTemperatureInfo", js.undefined)
         
-        inline def setCpuTemperatureInfoVarargs(value: ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo*): Self = StObject.set(x, "cpuTemperatureInfo", js.Array(value :_*))
+        inline def setCpuTemperatureInfoVarargs(value: ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo*): Self = StObject.set(x, "cpuTemperatureInfo", js.Array(value*))
         
         inline def setCpuUtilizationPercentageInfo(value: js.Array[Double]): Self = StObject.set(x, "cpuUtilizationPercentageInfo", value.asInstanceOf[js.Any])
         
         inline def setCpuUtilizationPercentageInfoUndefined: Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.undefined)
         
-        inline def setCpuUtilizationPercentageInfoVarargs(value: Double*): Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.Array(value :_*))
+        inline def setCpuUtilizationPercentageInfoVarargs(value: Double*): Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.Array(value*))
         
         inline def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
         
@@ -2202,7 +2202,7 @@ object AdminDirectory {
         
         inline def setVolumeInfoUndefined: Self = StObject.set(x, "volumeInfo", js.undefined)
         
-        inline def setVolumeInfoVarargs(value: ChromeOsDeviceDiskVolumeReportsVolumeInfo*): Self = StObject.set(x, "volumeInfo", js.Array(value :_*))
+        inline def setVolumeInfoVarargs(value: ChromeOsDeviceDiskVolumeReportsVolumeInfo*): Self = StObject.set(x, "volumeInfo", js.Array(value*))
       }
     }
     
@@ -2285,7 +2285,7 @@ object AdminDirectory {
         
         inline def setSystemRamFreeInfoUndefined: Self = StObject.set(x, "systemRamFreeInfo", js.undefined)
         
-        inline def setSystemRamFreeInfoVarargs(value: String*): Self = StObject.set(x, "systemRamFreeInfo", js.Array(value :_*))
+        inline def setSystemRamFreeInfoVarargs(value: String*): Self = StObject.set(x, "systemRamFreeInfo", js.Array(value*))
       }
     }
     
@@ -2361,7 +2361,7 @@ object AdminDirectory {
         
         inline def setChromeosdevicesUndefined: Self = StObject.set(x, "chromeosdevices", js.undefined)
         
-        inline def setChromeosdevicesVarargs(value: ChromeOsDevice*): Self = StObject.set(x, "chromeosdevices", js.Array(value :_*))
+        inline def setChromeosdevicesVarargs(value: ChromeOsDevice*): Self = StObject.set(x, "chromeosdevices", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2394,7 +2394,7 @@ object AdminDirectory {
         
         inline def setDeviceIdsUndefined: Self = StObject.set(x, "deviceIds", js.undefined)
         
-        inline def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "deviceIds", js.Array(value :_*))
+        inline def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "deviceIds", js.Array(value*))
       }
     }
     
@@ -2602,7 +2602,7 @@ object AdminDirectory {
         
         inline def setDomainAliasesUndefined: Self = StObject.set(x, "domainAliases", js.undefined)
         
-        inline def setDomainAliasesVarargs(value: DomainAlias*): Self = StObject.set(x, "domainAliases", js.Array(value :_*))
+        inline def setDomainAliasesVarargs(value: DomainAlias*): Self = StObject.set(x, "domainAliases", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2647,7 +2647,7 @@ object AdminDirectory {
         
         inline def setDomainAliasesUndefined: Self = StObject.set(x, "domainAliases", js.undefined)
         
-        inline def setDomainAliasesVarargs(value: DomainAlias*): Self = StObject.set(x, "domainAliases", js.Array(value :_*))
+        inline def setDomainAliasesVarargs(value: DomainAlias*): Self = StObject.set(x, "domainAliases", js.Array(value*))
         
         inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
         
@@ -2692,7 +2692,7 @@ object AdminDirectory {
         
         inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
         
-        inline def setDomainsVarargs(value: Domains*): Self = StObject.set(x, "domains", js.Array(value :_*))
+        inline def setDomainsVarargs(value: Domains*): Self = StObject.set(x, "domains", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2800,7 +2800,7 @@ object AdminDirectory {
         
         inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
         
-        inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+        inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2851,7 +2851,7 @@ object AdminDirectory {
         
         inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
         
-        inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+        inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -2885,7 +2885,7 @@ object AdminDirectory {
         
         inline def setNonEditableAliasesUndefined: Self = StObject.set(x, "nonEditableAliases", js.undefined)
         
-        inline def setNonEditableAliasesVarargs(value: String*): Self = StObject.set(x, "nonEditableAliases", js.Array(value :_*))
+        inline def setNonEditableAliasesVarargs(value: String*): Self = StObject.set(x, "nonEditableAliases", js.Array(value*))
       }
     }
     
@@ -2916,7 +2916,7 @@ object AdminDirectory {
         
         inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
         
-        inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3020,7 +3020,7 @@ object AdminDirectory {
         
         inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
         
-        inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "members", js.Array(value :_*))
+        inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "members", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -3146,7 +3146,7 @@ object AdminDirectory {
         
         inline def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
         
-        inline def setApplicationsVarargs(value: MobileDeviceApplications*): Self = StObject.set(x, "applications", js.Array(value :_*))
+        inline def setApplicationsVarargs(value: MobileDeviceApplications*): Self = StObject.set(x, "applications", js.Array(value*))
         
         inline def setBasebandVersion(value: String): Self = StObject.set(x, "basebandVersion", value.asInstanceOf[js.Any])
         
@@ -3188,7 +3188,7 @@ object AdminDirectory {
         
         inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
         
-        inline def setEmailVarargs(value: String*): Self = StObject.set(x, "email", js.Array(value :_*))
+        inline def setEmailVarargs(value: String*): Self = StObject.set(x, "email", js.Array(value*))
         
         inline def setEncryptionStatus(value: String): Self = StObject.set(x, "encryptionStatus", value.asInstanceOf[js.Any])
         
@@ -3246,7 +3246,7 @@ object AdminDirectory {
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+        inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
         
         inline def setNetworkOperator(value: String): Self = StObject.set(x, "networkOperator", value.asInstanceOf[js.Any])
         
@@ -3260,7 +3260,7 @@ object AdminDirectory {
         
         inline def setOtherAccountsInfoUndefined: Self = StObject.set(x, "otherAccountsInfo", js.undefined)
         
-        inline def setOtherAccountsInfoVarargs(value: String*): Self = StObject.set(x, "otherAccountsInfo", js.Array(value :_*))
+        inline def setOtherAccountsInfoVarargs(value: String*): Self = StObject.set(x, "otherAccountsInfo", js.Array(value*))
         
         inline def setPrivilege(value: String): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
         
@@ -3360,7 +3360,7 @@ object AdminDirectory {
         
         inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
         
-        inline def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
+        inline def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value*))
         
         inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
         
@@ -3403,7 +3403,7 @@ object AdminDirectory {
         
         inline def setMobiledevicesUndefined: Self = StObject.set(x, "mobiledevices", js.undefined)
         
-        inline def setMobiledevicesVarargs(value: MobileDevice*): Self = StObject.set(x, "mobiledevices", js.Array(value :_*))
+        inline def setMobiledevicesVarargs(value: MobileDevice*): Self = StObject.set(x, "mobiledevices", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -3501,7 +3501,7 @@ object AdminDirectory {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Notification*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Notification*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3613,7 +3613,7 @@ object AdminDirectory {
         
         inline def setOrganizationUnitsUndefined: Self = StObject.set(x, "organizationUnits", js.undefined)
         
-        inline def setOrganizationUnitsVarargs(value: OrgUnit*): Self = StObject.set(x, "organizationUnits", js.Array(value :_*))
+        inline def setOrganizationUnitsVarargs(value: OrgUnit*): Self = StObject.set(x, "organizationUnits", js.Array(value*))
       }
     }
     
@@ -3646,7 +3646,7 @@ object AdminDirectory {
         
         inline def setChildPrivilegesUndefined: Self = StObject.set(x, "childPrivileges", js.undefined)
         
-        inline def setChildPrivilegesVarargs(value: Privilege*): Self = StObject.set(x, "childPrivileges", js.Array(value :_*))
+        inline def setChildPrivilegesVarargs(value: Privilege*): Self = StObject.set(x, "childPrivileges", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3699,7 +3699,7 @@ object AdminDirectory {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Privilege*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Privilege*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3766,7 +3766,7 @@ object AdminDirectory {
         
         inline def setRolePrivilegesUndefined: Self = StObject.set(x, "rolePrivileges", js.undefined)
         
-        inline def setRolePrivilegesVarargs(value: RoleRolePrivileges*): Self = StObject.set(x, "rolePrivileges", js.Array(value :_*))
+        inline def setRolePrivilegesVarargs(value: RoleRolePrivileges*): Self = StObject.set(x, "rolePrivileges", js.Array(value*))
       }
     }
     
@@ -3852,7 +3852,7 @@ object AdminDirectory {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: RoleAssignment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: RoleAssignment*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3916,7 +3916,7 @@ object AdminDirectory {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Role*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Role*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3963,7 +3963,7 @@ object AdminDirectory {
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        inline def setFieldsVarargs(value: SchemaFieldSpec*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: SchemaFieldSpec*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4106,7 +4106,7 @@ object AdminDirectory {
         
         inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
         
-        inline def setSchemasVarargs(value: typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Schema*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+        inline def setSchemasVarargs(value: typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Schema*): Self = StObject.set(x, "schemas", js.Array(value*))
       }
     }
     
@@ -4165,7 +4165,7 @@ object AdminDirectory {
         
         inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
         
-        inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+        inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
         
         inline def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
         
@@ -4198,7 +4198,7 @@ object AdminDirectory {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Token*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Token*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4284,13 +4284,13 @@ object AdminDirectory {
         
         inline def setTrustedAppsUndefined: Self = StObject.set(x, "trustedApps", js.undefined)
         
-        inline def setTrustedAppsVarargs(value: TrustedAppId*): Self = StObject.set(x, "trustedApps", js.Array(value :_*))
+        inline def setTrustedAppsVarargs(value: TrustedAppId*): Self = StObject.set(x, "trustedApps", js.Array(value*))
       }
     }
     
     trait User extends StObject {
       
-      var addresses: js.UndefOr[js.Object] = js.undefined
+      var addresses: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var agreedToTerms: js.UndefOr[Boolean] = js.undefined
       
@@ -4308,11 +4308,11 @@ object AdminDirectory {
       
       var deletionTime: js.UndefOr[String] = js.undefined
       
-      var emails: js.UndefOr[js.Object] = js.undefined
+      var emails: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var etag: js.UndefOr[String] = js.undefined
       
-      var externalIds: js.UndefOr[js.Object] = js.undefined
+      var externalIds: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var gender: js.UndefOr[js.Object] = js.undefined
       
@@ -4320,7 +4320,7 @@ object AdminDirectory {
       
       var id: js.UndefOr[String] = js.undefined
       
-      var ims: js.UndefOr[js.Object] = js.undefined
+      var ims: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var includeInGlobalAddressList: js.UndefOr[Boolean] = js.undefined
       
@@ -4336,37 +4336,37 @@ object AdminDirectory {
       
       var isMailboxSetup: js.UndefOr[Boolean] = js.undefined
       
-      var keywords: js.UndefOr[js.Object] = js.undefined
+      var keywords: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var kind: js.UndefOr[String] = js.undefined
       
-      var languages: js.UndefOr[js.Object] = js.undefined
+      var languages: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var lastLoginTime: js.UndefOr[String] = js.undefined
       
-      var locations: js.UndefOr[js.Object] = js.undefined
+      var locations: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var name: js.UndefOr[UserName] = js.undefined
       
       var nonEditableAliases: js.UndefOr[js.Array[String]] = js.undefined
       
-      var notes: js.UndefOr[js.Object] = js.undefined
+      var notes: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var orgUnitPath: js.UndefOr[String] = js.undefined
       
-      var organizations: js.UndefOr[js.Object] = js.undefined
+      var organizations: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var password: js.UndefOr[String] = js.undefined
       
-      var phones: js.UndefOr[js.Object] = js.undefined
+      var phones: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var posixAccounts: js.UndefOr[js.Object] = js.undefined
+      var posixAccounts: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var primaryEmail: js.UndefOr[String] = js.undefined
       
-      var relations: js.UndefOr[js.Object] = js.undefined
+      var relations: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var sshPublicKeys: js.UndefOr[js.Object] = js.undefined
+      var sshPublicKeys: js.UndefOr[js.Array[js.Object]] = js.undefined
       
       var suspended: js.UndefOr[Boolean] = js.undefined
       
@@ -4376,7 +4376,7 @@ object AdminDirectory {
       
       var thumbnailPhotoUrl: js.UndefOr[String] = js.undefined
       
-      var websites: js.UndefOr[js.Object] = js.undefined
+      var websites: js.UndefOr[js.Array[js.Object]] = js.undefined
     }
     object User {
       
@@ -4387,9 +4387,11 @@ object AdminDirectory {
       
       extension [Self <: User](x: Self) {
         
-        inline def setAddresses(value: js.Object): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+        inline def setAddresses(value: js.Array[js.Object]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
         
         inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+        
+        inline def setAddressesVarargs(value: js.Object*): Self = StObject.set(x, "addresses", js.Array(value*))
         
         inline def setAgreedToTerms(value: Boolean): Self = StObject.set(x, "agreedToTerms", value.asInstanceOf[js.Any])
         
@@ -4399,7 +4401,7 @@ object AdminDirectory {
         
         inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
         
-        inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+        inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
         
         inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
         
@@ -4425,17 +4427,21 @@ object AdminDirectory {
         
         inline def setDeletionTimeUndefined: Self = StObject.set(x, "deletionTime", js.undefined)
         
-        inline def setEmails(value: js.Object): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+        inline def setEmails(value: js.Array[js.Object]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
         
         inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+        
+        inline def setEmailsVarargs(value: js.Object*): Self = StObject.set(x, "emails", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
         inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        inline def setExternalIds(value: js.Object): Self = StObject.set(x, "externalIds", value.asInstanceOf[js.Any])
+        inline def setExternalIds(value: js.Array[js.Object]): Self = StObject.set(x, "externalIds", value.asInstanceOf[js.Any])
         
         inline def setExternalIdsUndefined: Self = StObject.set(x, "externalIds", js.undefined)
+        
+        inline def setExternalIdsVarargs(value: js.Object*): Self = StObject.set(x, "externalIds", js.Array(value*))
         
         inline def setGender(value: js.Object): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
         
@@ -4449,9 +4455,11 @@ object AdminDirectory {
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        inline def setIms(value: js.Object): Self = StObject.set(x, "ims", value.asInstanceOf[js.Any])
+        inline def setIms(value: js.Array[js.Object]): Self = StObject.set(x, "ims", value.asInstanceOf[js.Any])
         
         inline def setImsUndefined: Self = StObject.set(x, "ims", js.undefined)
+        
+        inline def setImsVarargs(value: js.Object*): Self = StObject.set(x, "ims", js.Array(value*))
         
         inline def setIncludeInGlobalAddressList(value: Boolean): Self = StObject.set(x, "includeInGlobalAddressList", value.asInstanceOf[js.Any])
         
@@ -4481,25 +4489,31 @@ object AdminDirectory {
         
         inline def setIsMailboxSetupUndefined: Self = StObject.set(x, "isMailboxSetup", js.undefined)
         
-        inline def setKeywords(value: js.Object): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+        inline def setKeywords(value: js.Array[js.Object]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
         
         inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+        
+        inline def setKeywordsVarargs(value: js.Object*): Self = StObject.set(x, "keywords", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
         inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        inline def setLanguages(value: js.Object): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+        inline def setLanguages(value: js.Array[js.Object]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
         
         inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+        
+        inline def setLanguagesVarargs(value: js.Object*): Self = StObject.set(x, "languages", js.Array(value*))
         
         inline def setLastLoginTime(value: String): Self = StObject.set(x, "lastLoginTime", value.asInstanceOf[js.Any])
         
         inline def setLastLoginTimeUndefined: Self = StObject.set(x, "lastLoginTime", js.undefined)
         
-        inline def setLocations(value: js.Object): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+        inline def setLocations(value: js.Array[js.Object]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
         
         inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+        
+        inline def setLocationsVarargs(value: js.Object*): Self = StObject.set(x, "locations", js.Array(value*))
         
         inline def setName(value: UserName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -4509,43 +4523,55 @@ object AdminDirectory {
         
         inline def setNonEditableAliasesUndefined: Self = StObject.set(x, "nonEditableAliases", js.undefined)
         
-        inline def setNonEditableAliasesVarargs(value: String*): Self = StObject.set(x, "nonEditableAliases", js.Array(value :_*))
+        inline def setNonEditableAliasesVarargs(value: String*): Self = StObject.set(x, "nonEditableAliases", js.Array(value*))
         
-        inline def setNotes(value: js.Object): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: js.Array[js.Object]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
         inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        
+        inline def setNotesVarargs(value: js.Object*): Self = StObject.set(x, "notes", js.Array(value*))
         
         inline def setOrgUnitPath(value: String): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
         
         inline def setOrgUnitPathUndefined: Self = StObject.set(x, "orgUnitPath", js.undefined)
         
-        inline def setOrganizations(value: js.Object): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+        inline def setOrganizations(value: js.Array[js.Object]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
         
         inline def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
+        
+        inline def setOrganizationsVarargs(value: js.Object*): Self = StObject.set(x, "organizations", js.Array(value*))
         
         inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
         inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
         
-        inline def setPhones(value: js.Object): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
+        inline def setPhones(value: js.Array[js.Object]): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
         
         inline def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
         
-        inline def setPosixAccounts(value: js.Object): Self = StObject.set(x, "posixAccounts", value.asInstanceOf[js.Any])
+        inline def setPhonesVarargs(value: js.Object*): Self = StObject.set(x, "phones", js.Array(value*))
+        
+        inline def setPosixAccounts(value: js.Array[js.Object]): Self = StObject.set(x, "posixAccounts", value.asInstanceOf[js.Any])
         
         inline def setPosixAccountsUndefined: Self = StObject.set(x, "posixAccounts", js.undefined)
+        
+        inline def setPosixAccountsVarargs(value: js.Object*): Self = StObject.set(x, "posixAccounts", js.Array(value*))
         
         inline def setPrimaryEmail(value: String): Self = StObject.set(x, "primaryEmail", value.asInstanceOf[js.Any])
         
         inline def setPrimaryEmailUndefined: Self = StObject.set(x, "primaryEmail", js.undefined)
         
-        inline def setRelations(value: js.Object): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+        inline def setRelations(value: js.Array[js.Object]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
         
         inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
         
-        inline def setSshPublicKeys(value: js.Object): Self = StObject.set(x, "sshPublicKeys", value.asInstanceOf[js.Any])
+        inline def setRelationsVarargs(value: js.Object*): Self = StObject.set(x, "relations", js.Array(value*))
+        
+        inline def setSshPublicKeys(value: js.Array[js.Object]): Self = StObject.set(x, "sshPublicKeys", value.asInstanceOf[js.Any])
         
         inline def setSshPublicKeysUndefined: Self = StObject.set(x, "sshPublicKeys", js.undefined)
+        
+        inline def setSshPublicKeysVarargs(value: js.Object*): Self = StObject.set(x, "sshPublicKeys", js.Array(value*))
         
         inline def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
         
@@ -4563,9 +4589,11 @@ object AdminDirectory {
         
         inline def setThumbnailPhotoUrlUndefined: Self = StObject.set(x, "thumbnailPhotoUrl", js.undefined)
         
-        inline def setWebsites(value: js.Object): Self = StObject.set(x, "websites", value.asInstanceOf[js.Any])
+        inline def setWebsites(value: js.Array[js.Object]): Self = StObject.set(x, "websites", value.asInstanceOf[js.Any])
         
         inline def setWebsitesUndefined: Self = StObject.set(x, "websites", js.undefined)
+        
+        inline def setWebsitesVarargs(value: js.Object*): Self = StObject.set(x, "websites", js.Array(value*))
       }
     }
     
@@ -5409,7 +5437,7 @@ object AdminDirectory {
         
         inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
         
-        inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value :_*))
+        inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value*))
       }
     }
     
@@ -5475,7 +5503,7 @@ object AdminDirectory {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: VerificationCode*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: VerificationCode*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

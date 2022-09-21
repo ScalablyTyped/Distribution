@@ -1,7 +1,7 @@
 
 # Scala.js typings for whatwg-encoding
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Decode strings according to the WHATWG Encoding Standard
@@ -10,10 +10,10 @@ Decode strings according to the WHATWG Encoding Standard
 | ------------------ | :-------------: |
 | Full name          | whatwg-encoding |
 | Keywords           | encoding, whatwg |
-| # releases         | 2 |
-| # dependents       | 75 |
-| # downloads        | 336782882 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.019042233333333E7 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/whatwg-encoding#readme)

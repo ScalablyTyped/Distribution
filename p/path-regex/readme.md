@@ -10,10 +10,10 @@ Regular expression for matching the parts of a file path.
 | ------------------ | :-------------: |
 | Full name          | path-regex |
 | Keywords           | expression, file, filepath, match, matching, path, regex, regexp, regular |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1502 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42.333333333333336 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/regexps/path-regex)

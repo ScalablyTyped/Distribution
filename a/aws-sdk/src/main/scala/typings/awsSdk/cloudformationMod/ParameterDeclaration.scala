@@ -12,22 +12,22 @@ trait ParameterDeclaration extends StObject {
   var DefaultValue: js.UndefOr[ParameterValue] = js.undefined
   
   /**
-    * The description that is associate with the parameter.
+    * The description that's associate with the parameter.
     */
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
-    * Flag that indicates whether the parameter value is shown as plain text in logs and in the AWS Management Console.
+    * Flag that indicates whether the parameter value is shown as plain text in logs and in the Amazon Web Services Management Console.
     */
   var NoEcho: js.UndefOr[typings.awsSdk.cloudformationMod.NoEcho] = js.undefined
   
   /**
-    * The criteria that AWS CloudFormation uses to validate parameter values.
+    * The criteria that CloudFormation uses to validate parameter values.
     */
   var ParameterConstraints: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterConstraints] = js.undefined
   
   /**
-    * The name that is associated with the parameter.
+    * The name that's associated with the parameter.
     */
   var ParameterKey: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterKey] = js.undefined
   

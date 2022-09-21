@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Popover")
 @js.native
-class Popover ()
-  extends Component[PopoverProps, js.Object, js.Any]
+open class Popover ()
+  extends Component[PopoverProps, js.Object, Any]

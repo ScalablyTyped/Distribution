@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetPopupMenuItemCollection")
 @js.native
-class ASPxClientSpreadsheetPopupMenuItemCollection ()
+open class ASPxClientSpreadsheetPopupMenuItemCollection ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetPopupMenuItemCollection {
   

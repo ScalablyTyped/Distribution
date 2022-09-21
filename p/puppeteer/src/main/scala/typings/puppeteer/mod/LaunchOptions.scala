@@ -1,72 +1,93 @@
 package typings.puppeteer.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LaunchOptions
-  extends StObject
-     with ChromeArgOptions
-     with BrowserOptions
-     with Timeoutable {
+trait LaunchOptions extends StObject {
   
   /**
-    * Whether to pipe browser process stdout and stderr into process.stdout and
-    * process.stderr.
-    * @default false
+    * Chrome Release Channel
+    */
+  var channel: js.UndefOr[ChromeReleaseChannel] = js.undefined
+  
+  /**
+    * If true, pipes the browser process stdout and stderr to `process.stdout`
+    * and `process.stderr`.
+    * @defaultValue false
     */
   var dumpio: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify environment variables that will be visible to Chromium.
-    * @default `process.env`.
+    * Specify environment variables that will be visible to the browser.
+    * @defaultValue The contents of `process.env`.
     */
-  var env: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.undefined
+  var env: js.UndefOr[Record[String, js.UndefOr[String]]] = js.undefined
   
   /**
-    * Path to a Chromium executable to run instead of bundled Chromium. If
-    * executablePath is a relative path, then it is resolved relative to current
-    * working directory.
+    * Path to a browser executable to use instead of the bundled Chromium. Note
+    * that Puppeteer is only guaranteed to work with the bundled Chromium, so use
+    * this setting at your own risk.
     */
   var executablePath: js.UndefOr[String] = js.undefined
   
   /**
-    * Close chrome process on SIGHUP.
-    * @default true
+    * {@link https://searchfox.org/mozilla-release/source/modules/libpref/init/all.js | Additional preferences } that can be passed when launching with Firefox.
+    */
+  var extraPrefsFirefox: js.UndefOr[Record[String, Any]] = js.undefined
+  
+  /**
+    * Close the browser process on `SIGHUP`.
+    * @defaultValue `true`
     */
   var handleSIGHUP: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Close chrome process on Ctrl-C.
-    * @default true
+    * Close the browser process on `Ctrl+C`.
+    * @defaultValue `true`
     */
   var handleSIGINT: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Close chrome process on SIGTERM.
-    * @default true
+    * Close the browser process on `SIGTERM`.
+    * @defaultValue `true`
     */
   var handleSIGTERM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Do not use `puppeteer.defaultArgs()` for launching Chromium.
-    * @default false
+    * If `true`, do not use `puppeteer.defaultArgs()` when creating a browser. If
+    * an array is provided, these args will be filtered out. Use this with care -
+    * you probably want the default arguments Puppeteer uses.
+    * @defaultValue false
     */
   var ignoreDefaultArgs: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
   /**
-    * Connects to the browser over a pipe instead of a WebSocket.
-    * @default false
+    * Connect to a browser over a pipe instead of a WebSocket.
+    * @defaultValue false
     */
   var pipe: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Which browser to launch.
-    * At this time, this is either `chrome` or `firefox`. See also `PUPPETEER_PRODUCT`.
-    * @default 'chrome'
+    * @defaultValue `chrome`
     */
-  var product: js.UndefOr[Product_] = js.undefined
+  var product: js.UndefOr[Product] = js.undefined
+  
+  /**
+    * Maximum time in milliseconds to wait for the browser to start.
+    * Pass `0` to disable the timeout.
+    * @defaultValue 30000 (30 seconds).
+    */
+  var timeout: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Whether to wait for the initial page to be ready.
+    * Useful when a user explicitly disables that (e.g. `--no-startup-window` for Chrome).
+    * @defaultValue true
+    */
+  var waitForInitialPage: js.UndefOr[Boolean] = js.undefined
 }
 object LaunchOptions {
   
@@ -77,17 +98,25 @@ object LaunchOptions {
   
   extension [Self <: LaunchOptions](x: Self) {
     
+    inline def setChannel(value: ChromeReleaseChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    
     inline def setDumpio(value: Boolean): Self = StObject.set(x, "dumpio", value.asInstanceOf[js.Any])
     
     inline def setDumpioUndefined: Self = StObject.set(x, "dumpio", js.undefined)
     
-    inline def setEnv(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Record[String, js.UndefOr[String]]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
     
     inline def setExecutablePathUndefined: Self = StObject.set(x, "executablePath", js.undefined)
+    
+    inline def setExtraPrefsFirefox(value: Record[String, Any]): Self = StObject.set(x, "extraPrefsFirefox", value.asInstanceOf[js.Any])
+    
+    inline def setExtraPrefsFirefoxUndefined: Self = StObject.set(x, "extraPrefsFirefox", js.undefined)
     
     inline def setHandleSIGHUP(value: Boolean): Self = StObject.set(x, "handleSIGHUP", value.asInstanceOf[js.Any])
     
@@ -105,14 +134,22 @@ object LaunchOptions {
     
     inline def setIgnoreDefaultArgsUndefined: Self = StObject.set(x, "ignoreDefaultArgs", js.undefined)
     
-    inline def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value :_*))
+    inline def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value*))
     
     inline def setPipe(value: Boolean): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
     
     inline def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
     
-    inline def setProduct(value: Product_): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setWaitForInitialPage(value: Boolean): Self = StObject.set(x, "waitForInitialPage", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForInitialPageUndefined: Self = StObject.set(x, "waitForInitialPage", js.undefined)
   }
 }

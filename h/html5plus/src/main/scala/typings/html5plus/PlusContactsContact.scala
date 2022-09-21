@@ -1,6 +1,5 @@
 package typings.html5plus
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ trait PlusContactsContact extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var birthday: js.UndefOr[Date] = js.native
+  var birthday: js.UndefOr[js.Date] = js.native
   
   /**
     * 数组，联系人的组名
@@ -124,8 +123,8 @@ trait PlusContactsContact extends StObject {
     */
   def remove(): Unit = js.native
   def remove(successCB: js.Function0[Unit]): Unit = js.native
-  def remove(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def remove(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def remove(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def remove(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 保存联系人
@@ -135,8 +134,8 @@ trait PlusContactsContact extends StObject {
     */
   def save(): Unit = js.native
   def save(successCB: js.Function0[Unit]): Unit = js.native
-  def save(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def save(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def save(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def save(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 数组，联系人的网址

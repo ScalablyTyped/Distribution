@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +33,7 @@ trait SmsTextMessage extends StObject {
   var partReferenceId: Double
   
   /** Indicates the timestamp of the message. It is determined locally for a constructed message instance or from the service center timestamp of a received message. */
-  var timestamp: Date
+  var timestamp: js.Date
   
   /** Indicates the recipient phone number of this message. */
   var to: String
@@ -57,7 +56,7 @@ object SmsTextMessage {
     partCount: Double,
     partNumber: Double,
     partReferenceId: Double,
-    timestamp: Date,
+    timestamp: js.Date,
     to: String,
     toBinaryMessages: SmsDataFormat => IVectorView[ISmsBinaryMessage]
   ): SmsTextMessage = {
@@ -83,7 +82,7 @@ object SmsTextMessage {
     
     inline def setPartReferenceId(value: Double): Self = StObject.set(x, "partReferenceId", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,7 @@ trait IDataReader
     * @param response Object The response object
     * @returns Ext.data.ResultSet A ResultSet object
     */
-  var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+  var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], IResultSet]] = js.undefined
   
   /** [Config Option] (String) */
   var idProperty: js.UndefOr[String] = js.undefined
@@ -25,22 +25,22 @@ trait IDataReader
   var messageProperty: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var metaData: js.UndefOr[js.Any] = js.undefined
+  var metaData: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var rawData: js.UndefOr[js.Any] = js.undefined
+  var rawData: js.UndefOr[Any] = js.undefined
   
   /** [Method] Reads the given response object
     * @param response Object The response object. This may be either an XMLHttpRequest object or a plain JS object
     * @returns Ext.data.ResultSet The parsed or default ResultSet object
     */
-  var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+  var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], IResultSet]] = js.undefined
   
   /** [Method] Abstracts common functionality used by all Reader subclasses
     * @param data Object The raw data object
     * @returns Ext.data.ResultSet A ResultSet object
     */
-  var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+  var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], IResultSet]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var readRecordsOnFailure: js.UndefOr[Boolean] = js.undefined
@@ -63,7 +63,7 @@ object IDataReader {
   
   extension [Self <: IDataReader](x: Self) {
     
-    inline def setGetResponseData(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
+    inline def setGetResponseData(value: /* response */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
     
     inline def setGetResponseDataUndefined: Self = StObject.set(x, "getResponseData", js.undefined)
     
@@ -79,17 +79,17 @@ object IDataReader {
     
     inline def setMessagePropertyUndefined: Self = StObject.set(x, "messageProperty", js.undefined)
     
-    inline def setMetaData(value: js.Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
     inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
-    inline def setRawData(value: js.Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
     inline def setRawDataUndefined: Self = StObject.set(x, "rawData", js.undefined)
     
-    inline def setRead(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: /* response */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    inline def setReadRecords(value: /* data */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
+    inline def setReadRecords(value: /* data */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
     
     inline def setReadRecordsOnFailure(value: Boolean): Self = StObject.set(x, "readRecordsOnFailure", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,7 @@ object Active {
     
     inline def setRepeatsOnWeekDaysUndefined: Self = StObject.set(x, "repeatsOnWeekDays", js.undefined)
     
-    inline def setRepeatsOnWeekDaysVarargs(value: String*): Self = StObject.set(x, "repeatsOnWeekDays", js.Array(value :_*))
+    inline def setRepeatsOnWeekDaysVarargs(value: String*): Self = StObject.set(x, "repeatsOnWeekDays", js.Array(value*))
     
     inline def setRepeatsUndefined: Self = StObject.set(x, "repeats", js.undefined)
     

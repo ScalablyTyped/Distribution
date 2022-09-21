@@ -26,7 +26,7 @@ object XShapeMirror {
     acquire: () => Unit,
     mirror: (js.Array[XShapes], MirrorAxis) => Unit,
     mirrorAtAxis: (js.Array[XShapes], XShape) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XShapeMirror = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), mirror = js.Any.fromFunction2(mirror), mirrorAtAxis = js.Any.fromFunction2(mirrorAtAxis), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

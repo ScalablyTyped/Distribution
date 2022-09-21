@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "segfault-handler" : "1.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "segfault-handler" : "1.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

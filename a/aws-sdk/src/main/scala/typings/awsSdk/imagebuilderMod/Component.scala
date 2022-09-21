@@ -17,7 +17,7 @@ trait Component extends StObject {
   var changeDescription: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The data of the component.
+    * Component data contains the YAML document content for the component.
     */
   var data: js.UndefOr[ComponentData] = js.undefined
   
@@ -52,12 +52,22 @@ trait Component extends StObject {
   var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * Contains parameter details for each of the parameters that are defined for the component.
+    */
+  var parameters: js.UndefOr[ComponentParameterDetailList] = js.undefined
+  
+  /**
     * The platform of the component.
     */
   var platform: js.UndefOr[Platform] = js.undefined
   
   /**
-    * The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the parent image OS version during image recipe creation. 
+    * Describes the current status of the component. This is used for components that are no longer active.
+    */
+  var state: js.UndefOr[ComponentState] = js.undefined
+  
+  /**
+    * The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the base image OS version during image recipe creation.
     */
   var supportedOsVersions: js.UndefOr[OsVersionList] = js.undefined
   
@@ -121,15 +131,25 @@ object Component {
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
+    inline def setParameters(value: ComponentParameterDetailList): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    
+    inline def setParametersVarargs(value: ComponentParameterDetail*): Self = StObject.set(x, "parameters", js.Array(value*))
+    
     inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    
+    inline def setState(value: ComponentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setSupportedOsVersions(value: OsVersionList): Self = StObject.set(x, "supportedOsVersions", value.asInstanceOf[js.Any])
     
     inline def setSupportedOsVersionsUndefined: Self = StObject.set(x, "supportedOsVersions", js.undefined)
     
-    inline def setSupportedOsVersionsVarargs(value: OsVersion*): Self = StObject.set(x, "supportedOsVersions", js.Array(value :_*))
+    inline def setSupportedOsVersionsVarargs(value: OsVersion*): Self = StObject.set(x, "supportedOsVersions", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

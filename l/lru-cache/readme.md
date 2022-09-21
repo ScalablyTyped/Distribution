@@ -1,7 +1,7 @@
 
 # Scala.js typings for lru-cache
 
-Typings are for version 5.1
+Typings are for version 7.14.0
 
 ## Library description:
 A cache object that deletes the least-recently-used items.
@@ -10,10 +10,10 @@ A cache object that deletes the least-recently-used items.
 | ------------------ | :-------------: |
 | Full name          | lru-cache |
 | Keywords           | mru, lru, cache |
-| # releases         | 8 |
-| # dependents       | 2364 |
-| # downloads        | 1269670818 |
-| # stars            | 123 |
+| # releases         | 48 |
+| # dependents       | 0.0 |
+| # downloads        | 3.05797097E8 |
+| # stars            | 4310.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/node-lru-cache#readme)
@@ -24,7 +24,7 @@ A cache object that deletes the least-recently-used items.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

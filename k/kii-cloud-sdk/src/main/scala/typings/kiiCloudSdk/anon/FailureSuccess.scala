@@ -14,15 +14,15 @@ trait FailureSuccess extends StObject {
     anErrorString: String,
     addMembersArray: js.Array[KiiUser],
     removeMembersArray: js.Array[KiiUser]
-  ): js.Any
+  ): Any
   
-  def success(adminContext: KiiAppAdminContext): js.Any
+  def success(adminContext: KiiAppAdminContext): Any
 }
 object FailureSuccess {
   
   inline def apply(
-    failure: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => js.Any,
-    success: KiiAppAdminContext => js.Any
+    failure: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => Any,
+    success: KiiAppAdminContext => Any
   ): FailureSuccess = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction4(failure), success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[FailureSuccess]
@@ -30,8 +30,8 @@ object FailureSuccess {
   
   extension [Self <: FailureSuccess](x: Self) {
     
-    inline def setFailure(value: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
+    inline def setFailure(value: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
     
-    inline def setSuccess(value: KiiAppAdminContext => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: KiiAppAdminContext => Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

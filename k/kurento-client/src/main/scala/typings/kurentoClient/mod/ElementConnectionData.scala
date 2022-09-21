@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ElementConnectionData extends StObject {
   
-  var sink: WebRtcEndpoint
+  var sink: MediaElement
   
   var sinkDescription: String
   
-  var source: WebRtcEndpoint
+  var source: MediaElement
   
   var sourceDescription: String
   
-  var `type`: js.Any
+  var `type`: MediaType
 }
 object ElementConnectionData {
   
   inline def apply(
-    sink: WebRtcEndpoint,
+    sink: MediaElement,
     sinkDescription: String,
-    source: WebRtcEndpoint,
+    source: MediaElement,
     sourceDescription: String,
-    `type`: js.Any
+    `type`: MediaType
   ): ElementConnectionData = {
     val __obj = js.Dynamic.literal(sink = sink.asInstanceOf[js.Any], sinkDescription = sinkDescription.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceDescription = sourceDescription.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -32,14 +32,14 @@ object ElementConnectionData {
   
   extension [Self <: ElementConnectionData](x: Self) {
     
-    inline def setSink(value: WebRtcEndpoint): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: MediaElement): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     
     inline def setSinkDescription(value: String): Self = StObject.set(x, "sinkDescription", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: WebRtcEndpoint): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: MediaElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceDescription(value: String): Self = StObject.set(x, "sourceDescription", value.asInstanceOf[js.Any])
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MediaType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

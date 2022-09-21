@@ -2,8 +2,6 @@ package typings.vueSplitpane
 
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Event
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,20 +37,44 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SplitpaneConstructor
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait SplitpaneConstructor extends StObject {
     
-    var computed: SplitpaneComputed = js.native
+    var computed: SplitpaneComputed
     
-    def data(): SplitpaneData = js.native
+    def data(): SplitpaneData
     
-    var methods: SplitpaneMethods = js.native
+    var methods: SplitpaneMethods
     
-    var props: SplitpaneProps = js.native
+    var props: SplitpaneProps
     
-    var watch: SplitpaneWatch = js.native
+    var watch: SplitpaneWatch
+  }
+  object SplitpaneConstructor {
+    
+    inline def apply(
+      computed: SplitpaneComputed,
+      data: () => SplitpaneData,
+      methods: SplitpaneMethods,
+      props: SplitpaneProps,
+      watch: SplitpaneWatch
+    ): SplitpaneConstructor = {
+      val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], data = js.Any.fromFunction0(data), methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SplitpaneConstructor]
+    }
+    
+    extension [Self <: SplitpaneConstructor](x: Self) {
+      
+      inline def setComputed(value: SplitpaneComputed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+      
+      inline def setData(value: () => SplitpaneData): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      
+      inline def setMethods(value: SplitpaneMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: SplitpaneProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: SplitpaneWatch): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
   }
   
   trait SplitpaneData extends StObject {
@@ -61,7 +83,7 @@ object mod extends Shortcut {
     
     var hasMoved: Boolean
     
-    var height: js.Any
+    var height: Any
     
     // null number string
     var percent: Double
@@ -75,7 +97,7 @@ object mod extends Shortcut {
     inline def apply(
       active: Boolean,
       hasMoved: Boolean,
-      height: js.Any,
+      height: Any,
       percent: Double,
       resizeType: String,
       `type`: String
@@ -91,7 +113,7 @@ object mod extends Shortcut {
       
       inline def setHasMoved(value: Boolean): Self = StObject.set(x, "hasMoved", value.asInstanceOf[js.Any])
       
-      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
@@ -162,18 +184,18 @@ object mod extends Shortcut {
   
   trait SplitpaneWatch extends StObject {
     
-    def defaultPercent(`val`: js.Any): Unit
+    def defaultPercent(`val`: Any): Unit
   }
   object SplitpaneWatch {
     
-    inline def apply(defaultPercent: js.Any => Unit): SplitpaneWatch = {
+    inline def apply(defaultPercent: Any => Unit): SplitpaneWatch = {
       val __obj = js.Dynamic.literal(defaultPercent = js.Any.fromFunction1(defaultPercent))
       __obj.asInstanceOf[SplitpaneWatch]
     }
     
     extension [Self <: SplitpaneWatch](x: Self) {
       
-      inline def setDefaultPercent(value: js.Any => Unit): Self = StObject.set(x, "defaultPercent", js.Any.fromFunction1(value))
+      inline def setDefaultPercent(value: Any => Unit): Self = StObject.set(x, "defaultPercent", js.Any.fromFunction1(value))
     }
   }
   

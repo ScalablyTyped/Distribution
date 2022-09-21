@@ -44,7 +44,7 @@ trait ReplicationTask extends StObject {
   /**
     * The date the replication task was created.
     */
-  var ReplicationTaskCreationDate: js.UndefOr[TStamp] = js.undefined
+  var ReplicationTaskCreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The user-assigned replication task identifier or name. Constraints:   Must contain 1-255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
@@ -59,7 +59,7 @@ trait ReplicationTask extends StObject {
   /**
     * The date the replication task is scheduled to start.
     */
-  var ReplicationTaskStartDate: js.UndefOr[TStamp] = js.undefined
+  var ReplicationTaskStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The statistics for the task, including elapsed time, tables loaded, and table errors.
@@ -77,7 +77,7 @@ trait ReplicationTask extends StObject {
   var Status: js.UndefOr[String] = js.undefined
   
   /**
-    * The reason the replication task was stopped. This response parameter can return one of the following values:    "STOP_REASON_FULL_LOAD_COMPLETED" – Full-load migration completed.    "STOP_REASON_CACHED_CHANGES_APPLIED" – Change data capture (CDC) load completed.    "STOP_REASON_CACHED_CHANGES_NOT_APPLIED" – In a full-load and CDC migration, the full load stopped as specified before starting the CDC migration.    "STOP_REASON_SERVER_TIME" – The migration stopped at the specified server time.  
+    * The reason the replication task was stopped. This response parameter can return one of the following values:    "Stop Reason NORMAL"     "Stop Reason RECOVERABLE_ERROR"     "Stop Reason FATAL_ERROR"     "Stop Reason FULL_LOAD_ONLY_FINISHED"     "Stop Reason STOPPED_AFTER_FULL_LOAD" – Full load completed, with cached changes not applied    "Stop Reason STOPPED_AFTER_CACHED_EVENTS" – Full load completed, with cached changes applied    "Stop Reason EXPRESS_LICENSE_LIMITS_REACHED"     "Stop Reason STOPPED_AFTER_DDL_APPLY" – User-defined stop task after DDL applied    "Stop Reason STOPPED_DUE_TO_LOW_MEMORY"     "Stop Reason STOPPED_DUE_TO_LOW_DISK"     "Stop Reason STOPPED_AT_SERVER_TIME" – User-defined server time for stopping task    "Stop Reason STOPPED_AT_COMMIT_TIME" – User-defined commit time for stopping task    "Stop Reason RECONFIGURATION_RESTART"     "Stop Reason RECYCLE_TASK"   
     */
   var StopReason: js.UndefOr[String] = js.undefined
   
@@ -97,7 +97,7 @@ trait ReplicationTask extends StObject {
   var TargetReplicationInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration Service User Guide. 
+    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the Database Migration Service User Guide. 
     */
   var TaskData: js.UndefOr[String] = js.undefined
 }
@@ -138,7 +138,7 @@ object ReplicationTask {
     
     inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
     
-    inline def setReplicationTaskCreationDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskCreationDate", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskCreationDate(value: js.Date): Self = StObject.set(x, "ReplicationTaskCreationDate", value.asInstanceOf[js.Any])
     
     inline def setReplicationTaskCreationDateUndefined: Self = StObject.set(x, "ReplicationTaskCreationDate", js.undefined)
     
@@ -150,7 +150,7 @@ object ReplicationTask {
     
     inline def setReplicationTaskSettingsUndefined: Self = StObject.set(x, "ReplicationTaskSettings", js.undefined)
     
-    inline def setReplicationTaskStartDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskStartDate", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskStartDate(value: js.Date): Self = StObject.set(x, "ReplicationTaskStartDate", value.asInstanceOf[js.Any])
     
     inline def setReplicationTaskStartDateUndefined: Self = StObject.set(x, "ReplicationTaskStartDate", js.undefined)
     

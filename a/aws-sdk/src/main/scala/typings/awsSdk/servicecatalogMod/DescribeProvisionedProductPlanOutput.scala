@@ -42,6 +42,6 @@ object DescribeProvisionedProductPlanOutput {
     
     inline def setResourceChangesUndefined: Self = StObject.set(x, "ResourceChanges", js.undefined)
     
-    inline def setResourceChangesVarargs(value: ResourceChange*): Self = StObject.set(x, "ResourceChanges", js.Array(value :_*))
+    inline def setResourceChangesVarargs(value: ResourceChange*): Self = StObject.set(x, "ResourceChanges", js.Array(value*))
   }
 }

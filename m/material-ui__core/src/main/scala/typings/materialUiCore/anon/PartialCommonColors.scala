@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/colors/common.CommonColors> */
+/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.CommonColors> */
 trait PartialCommonColors extends StObject {
   
   var black: js.UndefOr[String] = js.undefined

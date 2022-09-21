@@ -24,6 +24,6 @@ object ResourcePath {
     
     inline def setComponentsUndefined: Self = StObject.set(x, "Components", js.undefined)
     
-    inline def setComponentsVarargs(value: ResourcePathComponent*): Self = StObject.set(x, "Components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: ResourcePathComponent*): Self = StObject.set(x, "Components", js.Array(value*))
   }
 }

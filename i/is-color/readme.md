@@ -10,10 +10,10 @@ Check if a string is CSS color value
 | ------------------ | :-------------: |
 | Full name          | is-color |
 | Keywords           | css, color |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 717876 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 37174.333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/is-color)

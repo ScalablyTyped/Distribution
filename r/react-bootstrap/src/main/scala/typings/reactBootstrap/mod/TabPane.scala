@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "TabPane")
 @js.native
-class TabPane ()
+open class TabPane ()
   extends typings.reactBootstrap.libMod.TabPane

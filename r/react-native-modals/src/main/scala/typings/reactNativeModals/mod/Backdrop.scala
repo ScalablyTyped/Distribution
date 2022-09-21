@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-modals", "Backdrop")
 @js.native
-class Backdrop protected ()
-  extends Component[BackdropProps, js.Object, js.Any] {
+open class Backdrop protected ()
+  extends Component[BackdropProps, js.Object, Any] {
   def this(props: BackdropProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BackdropProps, context: js.Any) = this()
+  def this(props: BackdropProps, context: Any) = this()
 }

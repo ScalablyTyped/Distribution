@@ -30,7 +30,7 @@ object XViewsSupplier {
     Views: XNameAccess,
     acquire: () => Unit,
     getViews: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XViewsSupplier = {
     val __obj = js.Dynamic.literal(Views = Views.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getViews = js.Any.fromFunction0(getViews), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

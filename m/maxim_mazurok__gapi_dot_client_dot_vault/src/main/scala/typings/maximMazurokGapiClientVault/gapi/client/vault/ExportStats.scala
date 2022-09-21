@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExportStats extends StObject {
   
-  /** The number of documents already processed by the export. */
+  /** The number of messages or files already processed for export. */
   var exportedArtifactCount: js.UndefOr[String] = js.undefined
   
   /** The size of export in bytes. */
   var sizeInBytes: js.UndefOr[String] = js.undefined
   
-  /** The number of documents to be exported. */
+  /** The number of messages or files to be exported. */
   var totalArtifactCount: js.UndefOr[String] = js.undefined
 }
 object ExportStats {

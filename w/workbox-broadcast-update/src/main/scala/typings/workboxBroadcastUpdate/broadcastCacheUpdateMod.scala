@@ -11,7 +11,7 @@ object broadcastCacheUpdateMod {
   
   @JSImport("workbox-broadcast-update/BroadcastCacheUpdate", "BroadcastCacheUpdate")
   @js.native
-  class BroadcastCacheUpdate () extends StObject {
+  open class BroadcastCacheUpdate () extends StObject {
     def this(options: BroadcastCacheUpdateOptions) = this()
     
     def notifyIfUpdated(options: NotifyIfUpdatedOptions): js.Promise[Unit] = js.native
@@ -85,7 +85,7 @@ object broadcastCacheUpdateMod {
       
       inline def setHeadersToCheckUndefined: Self = StObject.set(x, "headersToCheck", js.undefined)
       
-      inline def setHeadersToCheckVarargs(value: String*): Self = StObject.set(x, "headersToCheck", js.Array(value :_*))
+      inline def setHeadersToCheckVarargs(value: String*): Self = StObject.set(x, "headersToCheck", js.Array(value*))
     }
   }
 }

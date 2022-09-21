@@ -48,11 +48,11 @@ object ISearchGroupItemMatch {
     
     inline def setQAttributes(value: js.Array[ISearchAttribute]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
     
-    inline def setQAttributesVarargs(value: ISearchAttribute*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
+    inline def setQAttributesVarargs(value: ISearchAttribute*): Self = StObject.set(x, "qAttributes", js.Array(value*))
     
     inline def setQRanges(value: js.Array[ISearchCharRange]): Self = StObject.set(x, "qRanges", value.asInstanceOf[js.Any])
     
-    inline def setQRangesVarargs(value: ISearchCharRange*): Self = StObject.set(x, "qRanges", js.Array(value :_*))
+    inline def setQRangesVarargs(value: ISearchCharRange*): Self = StObject.set(x, "qRanges", js.Array(value*))
     
     inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
   }

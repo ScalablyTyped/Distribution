@@ -2,9 +2,11 @@ package typings.blueprintjsCore
 
 import typings.blueprintjsCore.anon.AnimationState
 import typings.blueprintjsCore.anon.Height
+import typings.blueprintjsCore.anon.PartialCollapseProps
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.ElementType
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,10 +86,10 @@ object collapseMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse")
   @js.native
-  class Collapse protected ()
-    extends AbstractPureComponent2[ICollapseProps, ICollapseState, js.Object] {
-    def this(props: ICollapseProps) = this()
-    def this(props: ICollapseProps, context: js.Any) = this()
+  open class Collapse protected ()
+    extends AbstractPureComponent2[CollapseProps, ICollapseState, js.Object] {
+    def this(props: CollapseProps) = this()
+    def this(props: CollapseProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MCollapse(): Unit = js.native
@@ -95,11 +97,11 @@ object collapseMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MCollapse(): Unit = js.native
     
-    /* private */ var contents: js.Any = js.native
+    /* private */ var contents: Any = js.native
     
-    /* private */ var contentsRefHandler: js.Any = js.native
+    /* private */ var contentsRefHandler: Any = js.native
     
-    /* private */ var onDelayedStateChange: js.Any = js.native
+    /* private */ var onDelayedStateChange: Any = js.native
   }
   /* static members */
   object Collapse {
@@ -110,30 +112,37 @@ object collapseMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse.defaultProps")
     @js.native
-    def defaultProps: ICollapseProps = js.native
-    inline def defaultProps_=(x: ICollapseProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialCollapseProps = js.native
+    inline def defaultProps_=(x: PartialCollapseProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnimationState | Height | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnimationState | Height | Null]
+    inline def getDerivedStateFromProps(props: CollapseProps, state: ICollapseState): AnimationState | Height | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnimationState | Height | Null]
   }
+  
+  type CollapseProps = ICollapseProps
   
   trait ICollapseProps
     extends StObject
        with IProps {
     
+    /** Contents to collapse. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Component to render as the root element.
       * Useful when rendering a `Collapse` inside a `<table>`, for instance.
+      *
       * @default "div"
       */
-    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var component: js.UndefOr[ElementType[Any]] = js.undefined
     
     /**
       * Whether the component is open or closed.
+      *
       * @default false
       */
     var isOpen: js.UndefOr[Boolean] = js.undefined
@@ -141,6 +150,7 @@ object collapseMod {
     /**
       * Whether the child components will remain mounted when the `Collapse` is closed.
       * Setting to true may improve performance by avoiding re-mounting children.
+      *
       * @default false
       */
     var keepChildrenMounted: js.UndefOr[Boolean] = js.undefined
@@ -150,6 +160,7 @@ object collapseMod {
       * the duration of the animation in CSS. Only set this prop if you override
       * Blueprint's default transitions with new transitions of a different
       * length.
+      *
       * @default 200
       */
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -163,7 +174,11 @@ object collapseMod {
     
     extension [Self <: ICollapseProps](x: Self) {
       
-      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       

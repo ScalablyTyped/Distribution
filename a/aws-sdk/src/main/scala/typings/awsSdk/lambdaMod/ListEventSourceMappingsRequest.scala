@@ -22,7 +22,7 @@ trait ListEventSourceMappingsRequest extends StObject {
   var Marker: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of event source mappings to return.
+    * The maximum number of event source mappings to return. Note that ListEventSourceMappings returns a maximum of 100 items in each response, even if you set the number higher.
     */
   var MaxItems: js.UndefOr[MaxListItems] = js.undefined
 }

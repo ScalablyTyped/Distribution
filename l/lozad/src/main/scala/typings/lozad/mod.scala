@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(): Observer = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Observer]
-  inline def apply(selector: Unit, options: Option): Observer = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observer]
+  inline def apply(selector: Unit, options: Options): Observer = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observer]
   inline def apply(selector: Selector): Observer = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[Observer]
-  inline def apply(selector: Selector, options: Option): Observer = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observer]
+  inline def apply(selector: Selector, options: Options): Observer = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observer]
   
   @JSImport("lozad", JSImport.Namespace)
   @js.native
@@ -44,7 +44,13 @@ object mod {
     }
   }
   
-  trait Option extends StObject {
+  // TODO: remove on next major version bump
+  // tslint:disable:next-line no-empty-interface
+  type Option = Options
+  
+  trait Options extends StObject {
+    
+    var enableAutoReload: js.UndefOr[Boolean] = js.undefined
     
     var load: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
     
@@ -54,14 +60,18 @@ object mod {
     
     var threshold: js.UndefOr[Double] = js.undefined
   }
-  object Option {
+  object Options {
     
-    inline def apply(): Option = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Option]
+      __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Option](x: Self) {
+    extension [Self <: Options](x: Self) {
+      
+      inline def setEnableAutoReload(value: Boolean): Self = StObject.set(x, "enableAutoReload", value.asInstanceOf[js.Any])
+      
+      inline def setEnableAutoReloadUndefined: Self = StObject.set(x, "enableAutoReload", js.undefined)
       
       inline def setLoad(value: /* element */ Element => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       

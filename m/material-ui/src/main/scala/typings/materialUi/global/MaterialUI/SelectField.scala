@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.SelectField")
 @js.native
-class SelectField ()
-  extends Component[SelectFieldProps, js.Object, js.Any]
+open class SelectField ()
+  extends Component[SelectFieldProps, js.Object, Any]

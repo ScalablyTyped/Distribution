@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types.Loader
 
-import typings.phaser.integer
 import typings.std.XMLHttpRequestResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,7 +50,7 @@ trait XHRSettingsObject extends StObject {
   /**
     * Optional XHR timeout value.
     */
-  var timeout: js.UndefOr[integer] = js.undefined
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional username for the XHR request.
@@ -102,7 +101,7 @@ object XHRSettingsObject {
     
     inline def setResponseType(value: XMLHttpRequestResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    inline def setTimeout(value: integer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     

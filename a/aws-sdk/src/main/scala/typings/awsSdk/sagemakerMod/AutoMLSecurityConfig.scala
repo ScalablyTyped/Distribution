@@ -17,7 +17,7 @@ trait AutoMLSecurityConfig extends StObject {
   var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
-    * VPC configuration.
+    * The VPC configuration.
     */
   var VpcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.VpcConfig] = js.undefined
 }

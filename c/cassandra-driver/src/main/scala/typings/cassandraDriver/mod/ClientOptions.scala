@@ -11,7 +11,6 @@ import typings.cassandraDriver.authMod.auth.AuthProvider
 import typings.cassandraDriver.metricsMod.metrics.ClientMetrics
 import typings.cassandraDriver.trackerMod.tracker.RequestTracker
 import typings.node.tlsMod.ConnectionOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +48,10 @@ trait ClientOptions extends StObject {
   var promiseFactory: js.UndefOr[
     js.Function1[
       /* handler */ js.Function1[
-        /* callback */ js.Function2[/* err */ Error, /* result */ js.UndefOr[js.Any], Unit], 
+        /* callback */ js.Function2[/* err */ js.Error, /* result */ js.UndefOr[Any], Unit], 
         Unit
       ], 
-      js.Promise[js.Any]
+      js.Promise[Any]
     ]
   ] = js.undefined
   
@@ -91,7 +90,7 @@ object ClientOptions {
     
     inline def setContactPointsUndefined: Self = StObject.set(x, "contactPoints", js.undefined)
     
-    inline def setContactPointsVarargs(value: String*): Self = StObject.set(x, "contactPoints", js.Array(value :_*))
+    inline def setContactPointsVarargs(value: String*): Self = StObject.set(x, "contactPoints", js.Array(value*))
     
     inline def setCredentials(value: Password): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
@@ -137,13 +136,13 @@ object ClientOptions {
     
     inline def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
     
-    inline def setProfilesVarargs(value: ExecutionProfile*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+    inline def setProfilesVarargs(value: ExecutionProfile*): Self = StObject.set(x, "profiles", js.Array(value*))
     
     inline def setPromiseFactory(
       value: /* handler */ js.Function1[
-          /* callback */ js.Function2[/* err */ Error, /* result */ js.UndefOr[js.Any], Unit], 
+          /* callback */ js.Function2[/* err */ js.Error, /* result */ js.UndefOr[Any], Unit], 
           Unit
-        ] => js.Promise[js.Any]
+        ] => js.Promise[Any]
     ): Self = StObject.set(x, "promiseFactory", js.Any.fromFunction1(value))
     
     inline def setPromiseFactoryUndefined: Self = StObject.set(x, "promiseFactory", js.undefined)

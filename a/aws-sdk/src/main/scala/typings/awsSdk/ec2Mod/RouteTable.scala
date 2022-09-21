@@ -12,7 +12,7 @@ trait RouteTable extends StObject {
   var Associations: js.UndefOr[RouteTableAssociationList] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the route table.
+    * The ID of the Amazon Web Services account that owns the route table.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -54,7 +54,7 @@ object RouteTable {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: RouteTableAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: RouteTableAssociation*): Self = StObject.set(x, "Associations", js.Array(value*))
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object RouteTable {
     
     inline def setPropagatingVgwsUndefined: Self = StObject.set(x, "PropagatingVgws", js.undefined)
     
-    inline def setPropagatingVgwsVarargs(value: PropagatingVgw*): Self = StObject.set(x, "PropagatingVgws", js.Array(value :_*))
+    inline def setPropagatingVgwsVarargs(value: PropagatingVgw*): Self = StObject.set(x, "PropagatingVgws", js.Array(value*))
     
     inline def setRouteTableId(value: String): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
     
@@ -74,13 +74,13 @@ object RouteTable {
     
     inline def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
-    inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "Routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "Routes", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

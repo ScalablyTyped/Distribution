@@ -11,9 +11,9 @@ A locking socket alternative to file-system mutex locks
 | Full name          | slocket |
 | Keywords           | mutex, lock, socket, file system, lockfile |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 860 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 123.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/slocket#readme)

@@ -9,7 +9,12 @@ trait AnisotropyBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _generateTBNSpace: js.Any = js.native
+  /**
+    * Gets the TBN input component
+    */
+  def TBN: NodeMaterialConnectionPoint = js.native
+  
+  /* private */ var _generateTBNSpace: Any = js.native
   
   /**
     * Gets the anisotropy object output component

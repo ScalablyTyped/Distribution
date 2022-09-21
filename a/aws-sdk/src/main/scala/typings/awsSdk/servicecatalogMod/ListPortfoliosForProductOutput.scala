@@ -33,6 +33,6 @@ object ListPortfoliosForProductOutput {
     
     inline def setPortfolioDetailsUndefined: Self = StObject.set(x, "PortfolioDetails", js.undefined)
     
-    inline def setPortfolioDetailsVarargs(value: PortfolioDetail*): Self = StObject.set(x, "PortfolioDetails", js.Array(value :_*))
+    inline def setPortfolioDetailsVarargs(value: PortfolioDetail*): Self = StObject.set(x, "PortfolioDetails", js.Array(value*))
   }
 }

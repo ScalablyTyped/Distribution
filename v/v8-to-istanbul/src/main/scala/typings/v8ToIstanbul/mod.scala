@@ -64,6 +64,8 @@ object mod {
     
     def applyCoverage(blocks: js.Array[FunctionCoverage]): Unit
     
+    def destroy(): Unit
+    
     def load(): js.Promise[Unit]
     
     def toIstanbul(): CoverageMapData
@@ -72,16 +74,19 @@ object mod {
     
     inline def apply(
       applyCoverage: js.Array[FunctionCoverage] => Unit,
+      destroy: () => Unit,
       load: () => js.Promise[Unit],
       toIstanbul: () => CoverageMapData
     ): V8ToIstanbul = {
-      val __obj = js.Dynamic.literal(applyCoverage = js.Any.fromFunction1(applyCoverage), load = js.Any.fromFunction0(load), toIstanbul = js.Any.fromFunction0(toIstanbul))
+      val __obj = js.Dynamic.literal(applyCoverage = js.Any.fromFunction1(applyCoverage), destroy = js.Any.fromFunction0(destroy), load = js.Any.fromFunction0(load), toIstanbul = js.Any.fromFunction0(toIstanbul))
       __obj.asInstanceOf[V8ToIstanbul]
     }
     
     extension [Self <: V8ToIstanbul](x: Self) {
       
       inline def setApplyCoverage(value: js.Array[FunctionCoverage] => Unit): Self = StObject.set(x, "applyCoverage", js.Any.fromFunction1(value))
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
       inline def setLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       

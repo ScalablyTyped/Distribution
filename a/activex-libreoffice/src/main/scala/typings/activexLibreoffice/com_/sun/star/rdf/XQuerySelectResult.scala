@@ -34,8 +34,8 @@ object XQuerySelectResult {
     acquire: () => Unit,
     getBindingNames: () => SafeArray[String],
     hasMoreElements: () => Boolean,
-    nextElement: () => js.Any,
-    queryInterface: `type` => js.Any,
+    nextElement: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XQuerySelectResult = {
     val __obj = js.Dynamic.literal(BindingNames = BindingNames.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getBindingNames = js.Any.fromFunction0(getBindingNames), hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextElement = js.Any.fromFunction0(nextElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -39,17 +39,17 @@ trait MalformedDataException
     *
     * If no more detail information is available, this may be left `VOID` .
     */
-  var ErrorDetails: js.Any
+  var ErrorDetails: Any
 }
 object MalformedDataException {
   
-  inline def apply(Context: XInterface, ErrorDetails: js.Any, Message: String): MalformedDataException = {
+  inline def apply(Context: XInterface, ErrorDetails: Any, Message: String): MalformedDataException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorDetails = ErrorDetails.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MalformedDataException]
   }
   
   extension [Self <: MalformedDataException](x: Self) {
     
-    inline def setErrorDetails(value: js.Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
   }
 }

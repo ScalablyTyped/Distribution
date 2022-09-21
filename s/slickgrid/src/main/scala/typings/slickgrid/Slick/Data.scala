@@ -38,13 +38,13 @@ object Data {
       }
     }
     
-    type Avg[T] = Aggregator[T]
+    type Avg[T /* <: SlickData */] = Aggregator[T]
     
-    type Max[T] = Aggregator[T]
+    type Max[T /* <: SlickData */] = Aggregator[T]
     
-    type Min[T] = Aggregator[T]
+    type Min[T /* <: SlickData */] = Aggregator[T]
     
-    type Sum[T] = Aggregator[T]
+    type Sum[T /* <: SlickData */] = Aggregator[T]
   }
   
   @js.native
@@ -98,7 +98,7 @@ object Data {
     
     def getIdxById(id: String): Double = js.native
     
-    def getItemById(id: js.Any): T = js.native
+    def getItemById(id: Any): T = js.native
     
     def getItemByIdx(idx: Double): T = js.native
     
@@ -114,7 +114,7 @@ object Data {
     /**
       * @deprecated
       **/
-    def groupBy(valueGetter: js.Any, valueFormatter: js.Any, sortComparer: js.Any): Unit = js.native
+    def groupBy(valueGetter: Any, valueFormatter: Any, sortComparer: Any): Unit = js.native
     
     def insertItem(insertBefore: Double, item: T): Unit = js.native
     
@@ -134,11 +134,11 @@ object Data {
     /**
       * @deprecated
       **/
-    def setAggregators(groupAggregators: js.Any, includeCollapsed: js.Any): Unit = js.native
+    def setAggregators(groupAggregators: Any, includeCollapsed: Any): Unit = js.native
     
-    def setFilter(filterFn: js.Function2[/* item */ T, /* args */ js.Any, Boolean]): Unit = js.native
+    def setFilter(filterFn: js.Function2[/* item */ T, /* args */ Any, Boolean]): Unit = js.native
     
-    def setFilterArgs(args: js.Any): Unit = js.native
+    def setFilterArgs(args: Any): Unit = js.native
     
     def setGrouping(groupingInfos: js.Array[GroupingOptions[T]]): Unit = js.native
     def setGrouping(groupingInfos: GroupingOptions[T]): Unit = js.native
@@ -266,7 +266,7 @@ object Data {
     }
   }
   
-  trait GroupingOptions[T] extends StObject {
+  trait GroupingOptions[T /* <: SlickData */] extends StObject {
     
     var aggregateChildGroups: js.UndefOr[Boolean] = js.undefined
     
@@ -285,18 +285,18 @@ object Data {
     
     var formatter: js.UndefOr[js.Function1[/* item */ js.UndefOr[T], String]] = js.undefined
     
-    var getter: js.UndefOr[(js.Function1[/* item */ js.UndefOr[T], js.Any]) | String] = js.undefined
+    var getter: js.UndefOr[(js.Function1[/* item */ js.UndefOr[T], Any]) | String] = js.undefined
     
-    var predefinedValues: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var predefinedValues: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object GroupingOptions {
     
-    inline def apply[T](): GroupingOptions[T] = {
+    inline def apply[T /* <: SlickData */](): GroupingOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GroupingOptions[T]]
     }
     
-    extension [Self <: GroupingOptions[?], T](x: Self & GroupingOptions[T]) {
+    extension [Self <: GroupingOptions[?], T /* <: SlickData */](x: Self & GroupingOptions[T]) {
       
       inline def setAggregateChildGroups(value: Boolean): Self = StObject.set(x, "aggregateChildGroups", value.asInstanceOf[js.Any])
       
@@ -314,7 +314,7 @@ object Data {
       
       inline def setAggregatorsUndefined: Self = StObject.set(x, "aggregators", js.undefined)
       
-      inline def setAggregatorsVarargs(value: Aggregator[T]*): Self = StObject.set(x, "aggregators", js.Array(value :_*))
+      inline def setAggregatorsVarargs(value: Aggregator[T]*): Self = StObject.set(x, "aggregators", js.Array(value*))
       
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
@@ -332,17 +332,17 @@ object Data {
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      inline def setGetter(value: (js.Function1[/* item */ js.UndefOr[T], js.Any]) | String): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
+      inline def setGetter(value: (js.Function1[/* item */ js.UndefOr[T], Any]) | String): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
       
-      inline def setGetterFunction1(value: /* item */ js.UndefOr[T] => js.Any): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
+      inline def setGetterFunction1(value: /* item */ js.UndefOr[T] => Any): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
       
       inline def setGetterUndefined: Self = StObject.set(x, "getter", js.undefined)
       
-      inline def setPredefinedValues(value: js.Array[js.Any]): Self = StObject.set(x, "predefinedValues", value.asInstanceOf[js.Any])
+      inline def setPredefinedValues(value: js.Array[Any]): Self = StObject.set(x, "predefinedValues", value.asInstanceOf[js.Any])
       
       inline def setPredefinedValuesUndefined: Self = StObject.set(x, "predefinedValues", js.undefined)
       
-      inline def setPredefinedValuesVarargs(value: js.Any*): Self = StObject.set(x, "predefinedValues", js.Array(value :_*))
+      inline def setPredefinedValuesVarargs(value: Any*): Self = StObject.set(x, "predefinedValues", js.Array(value*))
     }
   }
   
@@ -365,7 +365,7 @@ object Data {
       
       inline def setRows(value: js.Array[Double]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: Double*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: Double*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
   

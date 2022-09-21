@@ -24,6 +24,6 @@ object SchemaTextConfig {
     
     inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
     
-    inline def setTransformationsVarargs(value: SchemaInfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+    inline def setTransformationsVarargs(value: SchemaInfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value*))
   }
 }

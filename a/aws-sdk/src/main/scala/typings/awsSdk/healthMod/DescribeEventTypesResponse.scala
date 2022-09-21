@@ -29,7 +29,7 @@ object DescribeEventTypesResponse {
     
     inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
     
-    inline def setEventTypesVarargs(value: EventType_ *): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+    inline def setEventTypesVarargs(value: EventType_ *): Self = StObject.set(x, "eventTypes", js.Array(value*))
     
     inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

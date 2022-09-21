@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/domutils" : "1.2.3"
+      "@lumino/domutils" : "1.8.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/domutils" : "1.2.3"
+      "@lumino/domutils" : "1.8.2"
     }
   ],
   "compile-devDependencies" : [

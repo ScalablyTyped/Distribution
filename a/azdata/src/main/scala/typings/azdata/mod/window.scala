@@ -46,18 +46,39 @@ object window {
   inline def createButton(label: String): Button = ^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(label.asInstanceOf[js.Any]).asInstanceOf[Button]
   inline def createButton(label: String, position: DialogButtonPosition): Button = (^.asInstanceOf[js.Dynamic].applyDynamic("createButton")(label.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Button]
   
+  inline def createModelViewDashboard(title: String): ModelViewDashboard = ^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDashboard")(title.asInstanceOf[js.Any]).asInstanceOf[ModelViewDashboard]
+  inline def createModelViewDashboard(title: String, name: String): ModelViewDashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDashboard")(title.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModelViewDashboard]
+  inline def createModelViewDashboard(title: String, name: String, options: ModelViewDashboardOptions): ModelViewDashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDashboard")(title.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ModelViewDashboard]
+  inline def createModelViewDashboard(title: String, name: Unit, options: ModelViewDashboardOptions): ModelViewDashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDashboard")(title.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ModelViewDashboard]
+  
   inline def createModelViewDialog(title: String): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any]).asInstanceOf[Dialog]
+  inline def createModelViewDialog(
+    title: String,
+    dialogName: js.UndefOr[String],
+    width: js.UndefOr[DialogWidth],
+    dialogStyle: js.UndefOr[DialogStyle],
+    dialogPosition: js.UndefOr[DialogPosition],
+    renderHeader: js.UndefOr[Boolean],
+    renderFooter: js.UndefOr[Boolean],
+    dialogProperties: js.UndefOr[IDialogProperties]
+  ): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], width.asInstanceOf[js.Any], dialogStyle.asInstanceOf[js.Any], dialogPosition.asInstanceOf[js.Any], renderHeader.asInstanceOf[js.Any], renderFooter.asInstanceOf[js.Any], dialogProperties.asInstanceOf[js.Any])).asInstanceOf[Dialog]
   inline def createModelViewDialog(title: String, dialogName: String): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any])).asInstanceOf[Dialog]
   inline def createModelViewDialog(title: String, dialogName: String, isWide: Boolean): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], isWide.asInstanceOf[js.Any])).asInstanceOf[Dialog]
+  inline def createModelViewDialog(title: String, dialogName: String, width: DialogWidth): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Dialog]
   inline def createModelViewDialog(title: String, dialogName: Unit, isWide: Boolean): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], isWide.asInstanceOf[js.Any])).asInstanceOf[Dialog]
+  inline def createModelViewDialog(title: String, dialogName: Unit, width: DialogWidth): Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("createModelViewDialog")(title.asInstanceOf[js.Any], dialogName.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Dialog]
   
   inline def createTab(title: String): DialogTab = ^.asInstanceOf[js.Dynamic].applyDynamic("createTab")(title.asInstanceOf[js.Any]).asInstanceOf[DialogTab]
   
   inline def createWebViewDialog(title: String): ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebViewDialog")(title.asInstanceOf[js.Any]).asInstanceOf[ModalDialog]
   
   inline def createWizard(title: String): Wizard = ^.asInstanceOf[js.Dynamic].applyDynamic("createWizard")(title.asInstanceOf[js.Any]).asInstanceOf[Wizard]
+  inline def createWizard(title: String, name: String): Wizard = (^.asInstanceOf[js.Dynamic].applyDynamic("createWizard")(title.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Wizard]
+  inline def createWizard(title: String, name: String, width: DialogWidth): Wizard = (^.asInstanceOf[js.Dynamic].applyDynamic("createWizard")(title.asInstanceOf[js.Any], name.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Wizard]
+  inline def createWizard(title: String, name: Unit, width: DialogWidth): Wizard = (^.asInstanceOf[js.Dynamic].applyDynamic("createWizard")(title.asInstanceOf[js.Any], name.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Wizard]
   
   inline def createWizardPage(title: String): WizardPage = ^.asInstanceOf[js.Dynamic].applyDynamic("createWizardPage")(title.asInstanceOf[js.Any]).asInstanceOf[WizardPage]
+  inline def createWizardPage(title: String, pageName: String): WizardPage = (^.asInstanceOf[js.Dynamic].applyDynamic("createWizardPage")(title.asInstanceOf[js.Any], pageName.asInstanceOf[js.Any])).asInstanceOf[WizardPage]
   
   inline def openDialog(dialog: Dialog): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDialog")(dialog.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -87,15 +108,35 @@ object window {
     /**
       * Raised when the button is clicked
       */
-    def onClick(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
-    def onClick(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
-    def onClick(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-    def onClick(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClick(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
+    def onClick(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
+    def onClick(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClick(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
     
     /**
       * Position of the button on the dialog footer
       */
     var position: js.UndefOr[DialogButtonPosition] = js.native
+    
+    /**
+      * Specifies whether this is a secondary button. Default is false.
+      */
+    var secondary: js.UndefOr[Boolean] = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.azdata.azdataStrings.close
+    - typings.azdata.azdataStrings.cancel
+    - typings.azdata.azdataStrings.ok
+  */
+  trait CloseReason extends StObject
+  object CloseReason {
+    
+    inline def cancel: typings.azdata.azdataStrings.cancel = "cancel".asInstanceOf[typings.azdata.azdataStrings.cancel]
+    
+    inline def close: typings.azdata.azdataStrings.close = "close".asInstanceOf[typings.azdata.azdataStrings.close]
+    
+    inline def ok: typings.azdata.azdataStrings.ok = "ok".asInstanceOf[typings.azdata.azdataStrings.ok]
   }
   
   @js.native
@@ -126,6 +167,24 @@ object window {
     var dialogName: js.UndefOr[String] = js.native
     
     /**
+      * Dialog position type: left, below and undefined.
+      * Default is undefined.
+      */
+    var dialogPosition: js.UndefOr[DialogPosition] = js.native
+    
+    /**
+      * Positional data prior to opening of dialog.
+      * Default is undefined.
+      */
+    var dialogProperties: js.UndefOr[IDialogProperties] = js.native
+    
+    /**
+      * Dialog style type: normal, flyout, callout.
+      * Default is 'flyout'.
+      */
+    var dialogStyle: js.UndefOr[DialogStyle] = js.native
+    
+    /**
       * Indicates the width of the dialog
       */
     var isWide: Boolean = js.native
@@ -140,6 +199,23 @@ object window {
       * The ok button
       */
     var okButton: Button = js.native
+    
+    /**
+      * Fired when the dialog is closed for any reason. The value indicates the reason it was closed (such as 'ok' or 'cancel')
+      */
+    def onClosed(listener: js.Function1[/* e */ CloseReason, Any]): Disposable = js.native
+    def onClosed(listener: js.Function1[/* e */ CloseReason, Any], thisArgs: Any): Disposable = js.native
+    def onClosed(listener: js.Function1[/* e */ CloseReason, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClosed(
+      listener: js.Function1[/* e */ CloseReason, Any],
+      thisArgs: Unit,
+      disposables: js.Array[Disposable]
+    ): Disposable = js.native
+    /**
+      * Fired when the dialog is closed for any reason. The value indicates the reason it was closed (such as 'ok' or 'cancel')
+      */
+    @JSName("onClosed")
+    var onClosed_Original: Event[CloseReason] = js.native
     
     /**
       * Register a callback that will be called when the user tries to click done. Only
@@ -157,9 +233,27 @@ object window {
     def registerOperation(operationInfo: BackgroundOperationInfo): Unit = js.native
     
     /**
+      * Specify whether or not to render the Dialog footer.
+      * Default is true.
+      */
+    var renderFooter: js.UndefOr[Boolean] = js.native
+    
+    /**
+      * Specify whether or not to render the Dialog header.
+      * Default is true.
+      */
+    var renderHeader: js.UndefOr[Boolean] = js.native
+    
+    /**
       * The title of the dialog
       */
     var title: String = js.native
+    
+    /**
+      * Width of the dialog.
+      * Default is 'narrow'.
+      */
+    var width: js.UndefOr[DialogWidth] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -203,6 +297,33 @@ object window {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.azdata.azdataStrings.left
+    - typings.azdata.azdataStrings.below
+  */
+  trait DialogPosition extends StObject
+  object DialogPosition {
+    
+    inline def below: typings.azdata.azdataStrings.below = "below".asInstanceOf[typings.azdata.azdataStrings.below]
+    
+    inline def left: typings.azdata.azdataStrings.left = "left".asInstanceOf[typings.azdata.azdataStrings.left]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.azdata.azdataStrings.normal
+    - typings.azdata.azdataStrings.flyout
+    - typings.azdata.azdataStrings.callout
+  */
+  trait DialogStyle extends StObject
+  object DialogStyle {
+    
+    inline def callout: typings.azdata.azdataStrings.callout = "callout".asInstanceOf[typings.azdata.azdataStrings.callout]
+    
+    inline def flyout: typings.azdata.azdataStrings.flyout = "flyout".asInstanceOf[typings.azdata.azdataStrings.flyout]
+    
+    inline def normal: typings.azdata.azdataStrings.normal = "normal".asInstanceOf[typings.azdata.azdataStrings.normal]
+  }
+  
   @js.native
   trait DialogTab
     extends StObject
@@ -219,6 +340,115 @@ object window {
     var title: String = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.azdata.azdataStrings.narrow
+    - typings.azdata.azdataStrings.medium
+    - typings.azdata.azdataStrings.wide
+    - scala.Double
+    - java.lang.String
+  */
+  type DialogWidth = _DialogWidth | Double | String
+  
+  trait IDialogProperties extends StObject {
+    
+    /**
+      * height of the dialog
+      */
+    var height: Double
+    
+    /**
+      * width of the dialog
+      */
+    var width: Double
+    
+    /**
+      * x position of the dialog relative to the parent element
+      */
+    var xPos: Double
+    
+    /**
+      * y position of the dialog relative to the parent element
+      */
+    var yPos: Double
+  }
+  object IDialogProperties {
+    
+    inline def apply(height: Double, width: Double, xPos: Double, yPos: Double): IDialogProperties = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xPos = xPos.asInstanceOf[js.Any], yPos = yPos.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IDialogProperties]
+    }
+    
+    extension [Self <: IDialogProperties](x: Self) {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setXPos(value: Double): Self = StObject.set(x, "xPos", value.asInstanceOf[js.Any])
+      
+      inline def setYPos(value: Double): Self = StObject.set(x, "yPos", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ModelViewDashboard extends StObject {
+    
+    /**
+      * Close the dashboard
+      */
+    def close(): Thenable[Unit]
+    
+    /**
+      * Open the dashboard
+      */
+    def open(): Thenable[Unit]
+    
+    /**
+      * Registers the initial set of tabs for this dashboard
+      * @param handler Callback for creating the initial set of tabs to display
+      */
+    def registerTabs(handler: js.Function1[/* view */ ModelView, Thenable[js.Array[DashboardTab | DashboardTabGroup]]]): Unit
+    
+    /**
+      * Selects the tab with the given ID
+      * @param id The ID of the tab to select
+      */
+    def selectTab(id: String): Unit
+    
+    /**
+      * Updates the tabs that are currently displayed
+      * @param tabs The new set of tabs to display
+      */
+    def updateTabs(tabs: js.Array[DashboardTab | DashboardTabGroup]): Unit
+  }
+  object ModelViewDashboard {
+    
+    inline def apply(
+      close: () => Thenable[Unit],
+      open: () => Thenable[Unit],
+      registerTabs: js.Function1[/* view */ ModelView, Thenable[js.Array[DashboardTab | DashboardTabGroup]]] => Unit,
+      selectTab: String => Unit,
+      updateTabs: js.Array[DashboardTab | DashboardTabGroup] => Unit
+    ): ModelViewDashboard = {
+      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open), registerTabs = js.Any.fromFunction1(registerTabs), selectTab = js.Any.fromFunction1(selectTab), updateTabs = js.Any.fromFunction1(updateTabs))
+      __obj.asInstanceOf[ModelViewDashboard]
+    }
+    
+    extension [Self <: ModelViewDashboard](x: Self) {
+      
+      inline def setClose(value: () => Thenable[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      
+      inline def setOpen(value: () => Thenable[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      
+      inline def setRegisterTabs(
+        value: js.Function1[/* view */ ModelView, Thenable[js.Array[DashboardTab | DashboardTabGroup]]] => Unit
+      ): Self = StObject.set(x, "registerTabs", js.Any.fromFunction1(value))
+      
+      inline def setSelectTab(value: String => Unit): Self = StObject.set(x, "selectTab", js.Any.fromFunction1(value))
+      
+      inline def setUpdateTabs(value: js.Array[DashboardTab | DashboardTabGroup] => Unit): Self = StObject.set(x, "updateTabs", js.Any.fromFunction1(value))
+    }
+  }
+  
   @js.native
   trait ModelViewPanel extends StObject {
     
@@ -230,14 +460,10 @@ object window {
     /**
       * Fired whenever the panel's valid property changes
       */
-    def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any]): Disposable = js.native
-    def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: js.Any): Disposable = js.native
-    def onValidityChanged(
-      listener: js.Function1[/* e */ Boolean, js.Any],
-      thisArgs: js.Any,
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+    def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any]): Disposable = js.native
+    def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Any): Disposable = js.native
+    def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
     
     /**
       * Register model view content for the dialog.
@@ -314,6 +540,11 @@ object window {
     var message: DialogMessage = js.native
     
     /**
+      * The name used to identify the wizard in telemetry
+      */
+    var name: js.UndefOr[String] = js.native
+    
+    /**
       * The next button
       */
     var nextButton: Button = js.native
@@ -322,15 +553,15 @@ object window {
       * Event fired when the wizard's page changes, containing information about the
       * previous page and the new page
       */
-    def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, js.Any]): Disposable = js.native
-    def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, js.Any], thisArgs: js.Any): Disposable = js.native
+    def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, Any]): Disposable = js.native
+    def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, Any], thisArgs: Any): Disposable = js.native
     def onPageChanged(
-      listener: js.Function1[/* e */ WizardPageChangeInfo, js.Any],
-      thisArgs: js.Any,
+      listener: js.Function1[/* e */ WizardPageChangeInfo, Any],
+      thisArgs: Any,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
     def onPageChanged(
-      listener: js.Function1[/* e */ WizardPageChangeInfo, js.Any],
+      listener: js.Function1[/* e */ WizardPageChangeInfo, Any],
       thisArgs: Unit,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
@@ -343,8 +574,10 @@ object window {
     
     /**
       * Open the wizard. Does nothing if the wizard is already open.
+      * @param source Where the wizard was opened from for telemetry (ex: command palette, context menu)
       */
     def open(): Thenable[Unit] = js.native
+    def open(source: String): Thenable[Unit] = js.native
     
     /**
       * The wizard's pages. Pages can be added/removed while the dialog is open by using
@@ -384,6 +617,11 @@ object window {
       * The title of the wizard
       */
     var title: String = js.native
+    
+    /**
+      * Width of the wizard
+      */
+    var width: js.UndefOr[DialogWidth] = js.native
   }
   
   @js.native
@@ -411,6 +649,11 @@ object window {
       * able to advance to it. Defaults to true.
       */
     var enabled: Boolean = js.native
+    
+    /**
+      * An optional name for the page. If provided it will be used for telemetry
+      */
+    var pageName: js.UndefOr[String] = js.native
     
     /**
       * The title of the page
@@ -444,4 +687,6 @@ object window {
       inline def setNewPage(value: Double): Self = StObject.set(x, "newPage", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait _DialogWidth extends StObject
 }

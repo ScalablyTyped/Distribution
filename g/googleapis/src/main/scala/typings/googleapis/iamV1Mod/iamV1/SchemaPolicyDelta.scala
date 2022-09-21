@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The difference delta between two policies.
-  */
 trait SchemaPolicyDelta extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaPolicyDelta {
     
     inline def setBindingDeltasUndefined: Self = StObject.set(x, "bindingDeltas", js.undefined)
     
-    inline def setBindingDeltasVarargs(value: SchemaBindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value :_*))
+    inline def setBindingDeltasVarargs(value: SchemaBindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value*))
   }
 }

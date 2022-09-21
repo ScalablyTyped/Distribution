@@ -20,7 +20,7 @@ trait IPersonaSharedProps
   /**
     * Whether initials are calculated for phone numbers and number sequences.
     * Example: Set property to true to get initials for project names consisting of numbers only.
-    * @defaultvalue false
+    * @default false
     */
   var allowPhoneInitials: js.UndefOr[Boolean] = js.undefined
   
@@ -46,7 +46,7 @@ trait IPersonaSharedProps
   
   /**
     * The user's initials to display in the image area when there is no image.
-    * @defaultvalue [Derived from text]
+    * @default [Derived from text]
     */
   var imageInitials: js.UndefOr[String] = js.undefined
   
@@ -58,7 +58,7 @@ trait IPersonaSharedProps
   /**
     * If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until
     * it is successfully loaded. This disables imageShouldFadeIn.
-    * @defaultvalue false
+    * @default false
     */
   var imageShouldStartVisible: js.UndefOr[Boolean] = js.undefined
   
@@ -69,9 +69,14 @@ trait IPersonaSharedProps
   
   /**
     * The background color when the user's initials are displayed.
-    * @defaultvalue [Derived from text]
+    * @default [Derived from text]
     */
   var initialsColor: js.UndefOr[PersonaInitialsColor | String] = js.undefined
+  
+  /**
+    * The text color when the user's initials are displayed
+    */
+  var initialsTextColor: js.UndefOr[String] = js.undefined
   
   /**
     * This flag can be used to signal the persona is out of office.
@@ -107,7 +112,7 @@ trait IPersonaSharedProps
   
   /**
     * Presence of the person to display - will not display presence if undefined.
-    * @defaultvalue PersonaPresence.none
+    * @default PersonaPresence.none
     */
   var presence: js.UndefOr[PersonaPresence] = js.undefined
   
@@ -133,9 +138,15 @@ trait IPersonaSharedProps
   /**
     * If true renders the initials while the image is loading.
     * This only applies when an imageUrl is provided.
-    * @defaultvalue false
+    * @default false
     */
   var showInitialsUntilImageLoads: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether clipped overflow text should render in a tooltip.
+    * @default true
+    */
+  var showOverflowTooltip: js.UndefOr[Boolean] = js.undefined
   
   var showSecondaryText: js.UndefOr[Boolean] = js.undefined
   
@@ -147,7 +158,7 @@ trait IPersonaSharedProps
   
   /**
     * Decides the size of the control.
-    * @defaultvalue PersonaSize.size48
+    * @default PersonaSize.size48
     */
   var size: js.UndefOr[PersonaSize] = js.undefined
   
@@ -216,6 +227,10 @@ object IPersonaSharedProps {
     
     inline def setInitialsColorUndefined: Self = StObject.set(x, "initialsColor", js.undefined)
     
+    inline def setInitialsTextColor(value: String): Self = StObject.set(x, "initialsTextColor", value.asInstanceOf[js.Any])
+    
+    inline def setInitialsTextColorUndefined: Self = StObject.set(x, "initialsTextColor", js.undefined)
+    
     inline def setIsOutOfOffice(value: Boolean): Self = StObject.set(x, "isOutOfOffice", value.asInstanceOf[js.Any])
     
     inline def setIsOutOfOfficeUndefined: Self = StObject.set(x, "isOutOfOffice", js.undefined)
@@ -269,6 +284,10 @@ object IPersonaSharedProps {
     inline def setShowInitialsUntilImageLoads(value: Boolean): Self = StObject.set(x, "showInitialsUntilImageLoads", value.asInstanceOf[js.Any])
     
     inline def setShowInitialsUntilImageLoadsUndefined: Self = StObject.set(x, "showInitialsUntilImageLoads", js.undefined)
+    
+    inline def setShowOverflowTooltip(value: Boolean): Self = StObject.set(x, "showOverflowTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setShowOverflowTooltipUndefined: Self = StObject.set(x, "showOverflowTooltip", js.undefined)
     
     inline def setShowSecondaryText(value: Boolean): Self = StObject.set(x, "showSecondaryText", value.asInstanceOf[js.Any])
     

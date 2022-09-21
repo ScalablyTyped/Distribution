@@ -29,7 +29,7 @@ trait CreateStageResponse extends StObject {
   /**
     * The timestamp when the stage was created.
     */
-  var CreatedDate: js.UndefOr[timestampIso8601] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Default route settings for the stage.
@@ -54,7 +54,7 @@ trait CreateStageResponse extends StObject {
   /**
     * The timestamp when the stage was last updated.
     */
-  var LastUpdatedDate: js.UndefOr[timestampIso8601] = js.undefined
+  var LastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Route settings for the stage, by routeKey.
@@ -101,7 +101,7 @@ object CreateStageResponse {
     
     inline def setClientCertificateIdUndefined: Self = StObject.set(x, "ClientCertificateId", js.undefined)
     
-    inline def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -121,7 +121,7 @@ object CreateStageResponse {
     
     inline def setLastDeploymentStatusMessageUndefined: Self = StObject.set(x, "LastDeploymentStatusMessage", js.undefined)
     
-    inline def setLastUpdatedDate(value: timestampIso8601): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     

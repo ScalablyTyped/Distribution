@@ -10,7 +10,7 @@ object reflectionTextureBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Dual/reflectionTextureBlock", "ReflectionTextureBlock")
   @js.native
-  class ReflectionTextureBlock protected () extends ReflectionTextureBaseBlock {
+  open class ReflectionTextureBlock protected () extends ReflectionTextureBaseBlock {
     /**
       * Create a new ReflectionTextureBlock
       * @param name defines the block name

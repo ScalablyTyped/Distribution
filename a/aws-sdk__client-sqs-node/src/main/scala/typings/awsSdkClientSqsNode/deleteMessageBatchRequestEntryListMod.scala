@@ -8,5 +8,5 @@ object deleteMessageBatchRequestEntryListMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/_DeleteMessageBatchRequestEntryList", "_DeleteMessageBatchRequestEntryList")
   @js.native
-  val DeleteMessageBatchRequestEntryList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val DeleteMessageBatchRequestEntryList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

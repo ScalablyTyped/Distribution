@@ -14,7 +14,7 @@ object libDatePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/DatePicker", "DatePickerBase")
   @js.native
-  class DatePickerBase protected ()
+  open class DatePickerBase protected ()
     extends typings.officeUiFabricReact.datePickerMod.DatePickerBase {
     def this(props: IDatePickerProps) = this()
   }

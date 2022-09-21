@@ -10,15 +10,12 @@ The pirate bay client
 | ------------------ | :-------------: |
 | Full name          | thepiratebay |
 | Keywords           | thepiratebay, pirate bay, torrent, api, client, scraper |
-| # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 33069 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1406.0 |
+| # stars            | 204.0 |
 
 ## Links
-- [Homepage](http://github.com/t3chnoboy/thepiratebay)
-- [Bugs](https://github.com/t3chnoboy/thepiratebay/issues)
-- [Repository](https://github.com/t3chnoboy/thepiratebay)
 - [Npm](https://www.npmjs.com/package/thepiratebay)
     
 

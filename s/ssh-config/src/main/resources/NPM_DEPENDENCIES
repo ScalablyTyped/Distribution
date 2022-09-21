@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ssh-config" : "4.1.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ssh-config" : "4.1.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

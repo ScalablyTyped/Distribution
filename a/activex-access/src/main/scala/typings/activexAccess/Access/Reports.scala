@@ -19,5 +19,5 @@ trait Reports extends StObject {
   def Item(Index: String): Report = js.native
   def Item(Index: Double): Report = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

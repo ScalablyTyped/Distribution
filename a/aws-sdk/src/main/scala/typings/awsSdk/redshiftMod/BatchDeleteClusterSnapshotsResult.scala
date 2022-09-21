@@ -29,12 +29,12 @@ object BatchDeleteClusterSnapshotsResult {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SnapshotErrorMessage*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SnapshotErrorMessage*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setResources(value: SnapshotIdentifierList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value*))
   }
 }

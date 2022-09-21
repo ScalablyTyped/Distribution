@@ -10,10 +10,10 @@ The apicalypse query language client for nodejs
 | ------------------ | :-------------: |
 | Full name          | apicalypse |
 | Keywords           | query, language, graphql, apicalypse |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 12084 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2468.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/apicalypse)

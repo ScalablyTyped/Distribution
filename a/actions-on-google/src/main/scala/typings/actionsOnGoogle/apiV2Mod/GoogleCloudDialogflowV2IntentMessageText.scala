@@ -21,6 +21,6 @@ object GoogleCloudDialogflowV2IntentMessageText {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
   }
 }

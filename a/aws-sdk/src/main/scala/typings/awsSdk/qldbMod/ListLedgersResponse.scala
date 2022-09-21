@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLedgersResponse extends StObject {
   
   /**
-    * The array of ledger summaries that are associated with the current AWS account and Region.
+    * The array of ledger summaries that are associated with the current Amazon Web Services account and Region.
     */
   var Ledgers: js.UndefOr[LedgerList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListLedgersResponse {
     
     inline def setLedgersUndefined: Self = StObject.set(x, "Ledgers", js.undefined)
     
-    inline def setLedgersVarargs(value: LedgerSummary*): Self = StObject.set(x, "Ledgers", js.Array(value :_*))
+    inline def setLedgersVarargs(value: LedgerSummary*): Self = StObject.set(x, "Ledgers", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

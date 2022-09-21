@@ -3,6 +3,7 @@ package typings.maximMazurokGapiClientSearchconsole
 import typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole.SearchanalyticsResource
 import typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole.SitemapsResource
 import typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole.SitesResource
+import typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole.UrlInspectionResource
 import typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole.UrlTestingToolsResource
 import typings.maximMazurokGapiClientSearchconsole.maximMazurokGapiClientSearchconsoleStrings.searchconsole
 import typings.maximMazurokGapiClientSearchconsole.maximMazurokGapiClientSearchconsoleStrings.v1
@@ -22,7 +23,7 @@ object global {
       
       /** Load Google Search Console API v1 */
       inline def load(name: searchconsole, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: searchconsole, version: v1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: searchconsole, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object searchconsole {
         
@@ -37,6 +38,10 @@ object global {
         @JSGlobal("gapi.client.searchconsole.sites")
         @js.native
         val sites: SitesResource = js.native
+        
+        @JSGlobal("gapi.client.searchconsole.urlInspection")
+        @js.native
+        val urlInspection: UrlInspectionResource = js.native
         
         @JSGlobal("gapi.client.searchconsole.urlTestingTools")
         @js.native

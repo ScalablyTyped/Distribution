@@ -15,47 +15,47 @@ trait TexturePacker extends StObject {
     * @param dtUnits is 1/dtSize
     * @param update flag to update the input meshes
     */
-  /* private */ var _calculateMeshUVFrames: js.Any = js.native
+  /* private */ var _calculateMeshUVFrames: Any = js.native
   
   /**
     * Calculates the Size of the Channel Sets
     * @returns Vector2
     */
-  /* private */ var _calculateSize: js.Any = js.native
+  /* private */ var _calculateSize: Any = js.native
   
   /**
     * Starts the package process
     * @param resolve The promises resolution function
     * @returns TexturePacker
     */
-  /* private */ var _createFrames: js.Any = js.native
+  /* private */ var _createFrames: Any = js.native
   
   /** The expected number of textures the system is parsing. */
-  /* private */ var _expecting: js.Any = js.native
+  /* private */ var _expecting: Any = js.native
   
   /**
     * Calculates the frames Offset.
     * @param index of the frame
     * @returns Vector2
     */
-  /* private */ var _getFrameOffset: js.Any = js.native
+  /* private */ var _getFrameOffset: Any = js.native
   
   /** The padding value from Math.ceil(frameSize * paddingRatio) */
-  /* private */ var _paddingValue: js.Any = js.native
+  /* private */ var _paddingValue: Any = js.native
   
   /**
     * Updates a Mesh to the frame data
     * @param mesh that is the target
     * @param frameID or the frame index
     */
-  /* private */ var _updateMeshUV: js.Any = js.native
+  /* private */ var _updateMeshUV: Any = js.native
   
   /**
     * Updates a Meshes materials to use the texture packer channels
     * @param m is the mesh to target
     * @param force all channels on the packer to be set.
     */
-  /* private */ var _updateTextureReferences: js.Any = js.native
+  /* private */ var _updateTextureReferences: Any = js.native
   
   /**
     * Disposes all textures associated with this packer

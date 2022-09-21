@@ -4,21 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for `ListProjectBillingInfoResponse`.
-  */
 trait SchemaListProjectBillingInfoResponse extends StObject {
   
   /**
-    * A token to retrieve the next page of results. To retrieve the next page,
-    * call `ListProjectBillingInfo` again with the `page_token` field set to
-    * this value. This field is empty if there are no more results to retrieve.
+    * A token to retrieve the next page of results. To retrieve the next page, call `ListProjectBillingInfo` again with the `page_token` field set to this value. This field is empty if there are no more results to retrieve.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A list of `ProjectBillingInfo` resources representing the projects
-    * associated with the billing account.
+    * A list of `ProjectBillingInfo` resources representing the projects associated with the billing account.
     */
   var projectBillingInfo: js.UndefOr[js.Array[SchemaProjectBillingInfo]] = js.undefined
 }
@@ -33,12 +27,14 @@ object SchemaListProjectBillingInfoResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setProjectBillingInfo(value: js.Array[SchemaProjectBillingInfo]): Self = StObject.set(x, "projectBillingInfo", value.asInstanceOf[js.Any])
     
     inline def setProjectBillingInfoUndefined: Self = StObject.set(x, "projectBillingInfo", js.undefined)
     
-    inline def setProjectBillingInfoVarargs(value: SchemaProjectBillingInfo*): Self = StObject.set(x, "projectBillingInfo", js.Array(value :_*))
+    inline def setProjectBillingInfoVarargs(value: SchemaProjectBillingInfo*): Self = StObject.set(x, "projectBillingInfo", js.Array(value*))
   }
 }

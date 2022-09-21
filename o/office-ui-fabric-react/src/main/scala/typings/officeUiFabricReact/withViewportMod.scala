@@ -14,8 +14,8 @@ object withViewportMod {
   val ^ : js.Any = js.native
   
   inline def withViewport[TProps /* <: Viewport */, TState](
-    ComposedComponent: Instantiable2[/* props */ TProps, /* args (repeated) */ js.Any, Component[TProps, TState, js.Any]]
-  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewport")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ComposedComponent: Instantiable2[/* props */ TProps, /* args (repeated) */ Any, Component[TProps, TState, Any]]
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewport")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait IViewport extends StObject {
     
@@ -45,6 +45,16 @@ object withViewportMod {
   }
   
   trait IWithViewportProps extends StObject {
+    
+    /**
+      * Whether or not `withViewport` will delay before first measuring the viewport size.
+      * Setting this will delay measurement by the same amount as the debounce for resizing the window.
+      * This is useful for giving the child of the viewport time to render before measuring.
+      *
+      * This is an opt-in setting as existing systems have a dependency on immediate measurement for performance.
+      * @default false
+      */
+    var delayFirstMeasure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to explicitly disable usage of the `ResizeObserver` in favor of a `'resize'` event on `window`,
@@ -80,6 +90,10 @@ object withViewportMod {
     }
     
     extension [Self <: IWithViewportProps](x: Self) {
+      
+      inline def setDelayFirstMeasure(value: Boolean): Self = StObject.set(x, "delayFirstMeasure", value.asInstanceOf[js.Any])
+      
+      inline def setDelayFirstMeasureUndefined: Self = StObject.set(x, "delayFirstMeasure", js.undefined)
       
       inline def setDisableResizeObserver(value: Boolean): Self = StObject.set(x, "disableResizeObserver", value.asInstanceOf[js.Any])
       

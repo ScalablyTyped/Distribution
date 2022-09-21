@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeProvisioningTemplateResponse extends StObject {
   
   /**
-    * The date when the fleet provisioning template was created.
+    * The date when the provisioning template was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The default fleet template version ID.
@@ -17,19 +17,19 @@ trait DescribeProvisioningTemplateResponse extends StObject {
   var defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined
   
   /**
-    * The description of the fleet provisioning template.
+    * The description of the provisioning template.
     */
   var description: js.UndefOr[TemplateDescription] = js.undefined
   
   /**
-    * True if the fleet provisioning template is enabled, otherwise false.
+    * True if the provisioning template is enabled, otherwise false.
     */
   var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
-    * The date when the fleet provisioning template was last modified.
+    * The date when the provisioning template was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Gets information about a pre-provisioned hook.
@@ -42,19 +42,24 @@ trait DescribeProvisioningTemplateResponse extends StObject {
   var provisioningRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
-    * The ARN of the fleet provisioning template.
+    * The ARN of the provisioning template.
     */
   var templateArn: js.UndefOr[TemplateArn] = js.undefined
   
   /**
-    * The JSON formatted contents of the fleet provisioning template.
+    * The JSON formatted contents of the provisioning template.
     */
   var templateBody: js.UndefOr[TemplateBody] = js.undefined
   
   /**
-    * The name of the fleet provisioning template.
+    * The name of the provisioning template.
     */
   var templateName: js.UndefOr[TemplateName] = js.undefined
+  
+  /**
+    * The type you define in a provisioning template. You can create a template with only one type. You can't change the template type after its creation. The default value is FLEET_PROVISIONING. For more information about provisioning template, see: Provisioning template. 
+    */
+  var `type`: js.UndefOr[TemplateType] = js.undefined
 }
 object DescribeProvisioningTemplateResponse {
   
@@ -65,7 +70,7 @@ object DescribeProvisioningTemplateResponse {
   
   extension [Self <: DescribeProvisioningTemplateResponse](x: Self) {
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -81,7 +86,7 @@ object DescribeProvisioningTemplateResponse {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
@@ -104,5 +109,9 @@ object DescribeProvisioningTemplateResponse {
     inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     
     inline def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
+    
+    inline def setType(value: TemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

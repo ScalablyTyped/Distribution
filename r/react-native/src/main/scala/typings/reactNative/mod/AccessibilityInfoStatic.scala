@@ -10,7 +10,7 @@ trait AccessibilityInfoStatic extends StObject {
   def addEventListener(
     eventName: AccessibilityAnnouncementEventName,
     handler: AccessibilityAnnouncementFinishedEventHandler
-  ): Unit = js.native
+  ): EmitterSubscription = js.native
   /**
     * Add an event handler. Supported events:
     * - announcementFinished: iOS-only event. Fires when the screen reader has finished making an announcement.
@@ -22,7 +22,7 @@ trait AccessibilityInfoStatic extends StObject {
     *            The boolean is true when the related event's feature is enabled and false otherwise.
     *
     */
-  def addEventListener(eventName: AccessibilityChangeEventName, handler: AccessibilityChangeEventHandler): Unit = js.native
+  def addEventListener(eventName: AccessibilityChangeEventName, handler: AccessibilityChangeEventHandler): EmitterSubscription = js.native
   
   /**
     * Post a string to be announced by the screen reader.
@@ -30,11 +30,12 @@ trait AccessibilityInfoStatic extends StObject {
   def announceForAccessibility(announcement: String): Unit = js.native
   
   /**
-    * Query whether a screen reader is currently enabled.
+    * Gets the timeout in millisecond that the user needs.
+    * This value is set in "Time to take action (Accessibility timeout)" of "Accessibility" settings.
     *
-    * @deprecated use isScreenReaderChanged instead
+    * @platform android
     */
-  def fetch(): js.Promise[Boolean] = js.native
+  def getRecommendedTimeoutMillis(originalTimeout: Double): js.Promise[Double] = js.native
   
   /**
     * Query whether bold text is currently enabled.
@@ -73,15 +74,6 @@ trait AccessibilityInfoStatic extends StObject {
     * Query whether a screen reader is currently enabled.
     */
   def isScreenReaderEnabled(): js.Promise[Boolean] = js.native
-  
-  def removeEventListener(
-    eventName: AccessibilityAnnouncementEventName,
-    handler: AccessibilityAnnouncementFinishedEventHandler
-  ): Unit = js.native
-  /**
-    * Remove an event handler.
-    */
-  def removeEventListener(eventName: AccessibilityChangeEventName, handler: AccessibilityChangeEventHandler): Unit = js.native
   
   /**
     * Set accessibility focus to a react component.

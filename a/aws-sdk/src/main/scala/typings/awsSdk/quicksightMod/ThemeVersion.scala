@@ -12,7 +12,7 @@ trait ThemeVersion extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
-    * The Amazon QuickSight-defined ID of the theme that a custom theme inherits from. All themes initially inherit from a default QuickSight theme.
+    * The Amazon QuickSight-defined ID of the theme that a custom theme inherits from. All themes initially inherit from a default Amazon QuickSight theme.
     */
   var BaseThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
@@ -24,7 +24,7 @@ trait ThemeVersion extends StObject {
   /**
     * The date and time that this theme version was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the theme.
@@ -67,7 +67,7 @@ object ThemeVersion {
     
     inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -79,7 +79,7 @@ object ThemeVersion {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: ThemeError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ThemeError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setStatus(value: ResourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

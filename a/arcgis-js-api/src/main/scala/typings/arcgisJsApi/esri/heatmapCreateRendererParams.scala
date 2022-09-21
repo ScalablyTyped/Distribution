@@ -12,21 +12,9 @@ trait heatmapCreateRendererParams
      with Object {
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  
-  /**
-    * The [blurRadius](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#blurRadius) in pixels that determines the area of influence of each point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
-    */
-  var blurRadius: js.UndefOr[Double] = js.undefined
-  
-  /**
     * Indicates whether to fade the lower color stops to a transparent color to create a fuzzy boundary on the edge of the heatmap.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
@@ -51,10 +39,12 @@ trait heatmapCreateRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * The maximum [ratio](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#ratio) used in the [HeatmapRenderer.colorStops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops) of the output renderer.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
@@ -63,9 +53,20 @@ trait heatmapCreateRendererParams
   /**
     * The minimum [ratio](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#ratio) used in the [HeatmapRenderer.colorStops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops) of the output renderer.
     *
+    * @default 0.01
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
   var minRatio: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The [radius](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#radius) in points that determines the area of influence of each point.
+    *
+    * @default 18
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
+    */
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows for cancelable requests.
@@ -86,30 +87,22 @@ trait heatmapCreateRendererParams
     *
     * [Read more...](global.html)
     */
-  var view: MapView
+  var view: MapView | SceneView
 }
 object heatmapCreateRendererParams {
   
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
-    view: MapView
+    view: MapView | SceneView
   ): heatmapCreateRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapCreateRendererParams]
   }
   
   extension [Self <: heatmapCreateRendererParams](x: Self) {
-    
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
-    
-    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
-    
-    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
     inline def setFadeToTransparent(value: Boolean): Self = StObject.set(x, "fadeToTransparent", value.asInstanceOf[js.Any])
     
@@ -123,7 +116,7 @@ object heatmapCreateRendererParams {
     
     inline def setHeatmapSchemeUndefined: Self = StObject.set(x, "heatmapScheme", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setMaxRatio(value: Double): Self = StObject.set(x, "maxRatio", value.asInstanceOf[js.Any])
     
@@ -133,6 +126,10 @@ object heatmapCreateRendererParams {
     
     inline def setMinRatioUndefined: Self = StObject.set(x, "minRatio", js.undefined)
     
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
@@ -141,6 +138,6 @@ object heatmapCreateRendererParams {
     
     inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
-    inline def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

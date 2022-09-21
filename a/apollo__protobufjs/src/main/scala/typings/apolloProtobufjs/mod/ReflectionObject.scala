@@ -23,7 +23,7 @@ abstract class ReflectionObject () extends StObject {
     * @param name Option name
     * @returns Option value or `undefined` if not set
     */
-  def getOption(name: String): js.Any = js.native
+  def getOption(name: String): Any = js.native
   
   /** Unique name within its namespace. */
   var name: String = js.native
@@ -41,7 +41,7 @@ abstract class ReflectionObject () extends StObject {
   def onRemove(parent: ReflectionObject): Unit = js.native
   
   /** Options. */
-  var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
+  var options: js.UndefOr[StringDictionary[Any]] = js.native
   
   /** Parent namespace. */
   var parent: Namespace | Null = js.native
@@ -65,8 +65,8 @@ abstract class ReflectionObject () extends StObject {
     * @param [ifNotSet] Sets the option only if it isn't currently set
     * @returns `this`
     */
-  def setOption(name: String, value: js.Any): ReflectionObject = js.native
-  def setOption(name: String, value: js.Any, ifNotSet: Boolean): ReflectionObject = js.native
+  def setOption(name: String, value: Any): ReflectionObject = js.native
+  def setOption(name: String, value: Any, ifNotSet: Boolean): ReflectionObject = js.native
   
   /**
     * Sets multiple options.
@@ -74,12 +74,12 @@ abstract class ReflectionObject () extends StObject {
     * @param [ifNotSet] Sets an option only if it isn't currently set
     * @returns `this`
     */
-  def setOptions(options: StringDictionary[js.UndefOr[js.Any]]): ReflectionObject = js.native
-  def setOptions(options: StringDictionary[js.UndefOr[js.Any]], ifNotSet: Boolean): ReflectionObject = js.native
+  def setOptions(options: StringDictionary[Any]): ReflectionObject = js.native
+  def setOptions(options: StringDictionary[Any], ifNotSet: Boolean): ReflectionObject = js.native
   
   /**
     * Converts this reflection object to its descriptor representation.
     * @returns Descriptor
     */
-  def toJSON(): StringDictionary[js.UndefOr[js.Any]] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }

@@ -22,6 +22,6 @@ object SecurityContext {
     
     inline def setSecuritiesUndefined: Self = StObject.set(x, "securities", js.undefined)
     
-    inline def setSecuritiesVarargs(value: String*): Self = StObject.set(x, "securities", js.Array(value :_*))
+    inline def setSecuritiesVarargs(value: String*): Self = StObject.set(x, "securities", js.Array(value*))
   }
 }

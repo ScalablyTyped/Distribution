@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.EmptyCell")
 @js.native
-/* private */ class EmptyCell ()
+/* private */ open class EmptyCell ()
   extends StObject
      with typings.activexAccess.Access.EmptyCell

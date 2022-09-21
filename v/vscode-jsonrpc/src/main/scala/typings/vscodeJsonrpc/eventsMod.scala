@@ -1,47 +1,22 @@
 package typings.vscodeJsonrpc
 
+import typings.vscodeJsonrpc.disposableMod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  trait Disposable extends StObject {
-    
-    /**
-      * Dispose this object.
-      */
-    def dispose(): Unit
-  }
-  object Disposable {
-    
-    inline def apply(dispose: () => Unit): Disposable = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
-      __obj.asInstanceOf[Disposable]
-    }
-    
-    @JSImport("vscode-jsonrpc/lib/events", "Disposable")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def create(func: js.Function0[Unit]): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(func.asInstanceOf[js.Any]).asInstanceOf[Disposable]
-    
-    extension [Self <: Disposable](x: Self) {
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-    }
-  }
-  
-  @JSImport("vscode-jsonrpc/lib/events", "Emitter")
+  @JSImport("vscode-jsonrpc/lib/common/events", "Emitter")
   @js.native
-  class Emitter[T] () extends StObject {
+  open class Emitter[T] () extends StObject {
     def this(_options: EmitterOptions) = this()
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _event: js.Any = js.native
+    /* private */ var _event: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
     def dispose(): Unit = js.native
     
@@ -55,30 +30,30 @@ object eventsMod {
       * To be kept private to fire an event to
       * subscribers
       */
-    def fire(event: T): js.Any = js.native
+    def fire(event: T): Any = js.native
   }
   /* static members */
   object Emitter {
     
-    @JSImport("vscode-jsonrpc/lib/events", "Emitter")
+    @JSImport("vscode-jsonrpc/lib/common/events", "Emitter")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("vscode-jsonrpc/lib/events", "Emitter._noop")
+    @JSImport("vscode-jsonrpc/lib/common/events", "Emitter._noop")
     @js.native
-    def _noop: js.Any = js.native
-    inline def _noop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
+    def _noop: Any = js.native
+    inline def _noop_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
   }
   
   object Event {
     
-    @JSImport("vscode-jsonrpc/lib/events", "Event.None")
+    @JSImport("vscode-jsonrpc/lib/common/events", "Event.None")
     @js.native
-    val None: Event[js.Any] = js.native
+    val None: Event[Any] = js.native
   }
   type Event[T] = js.Function3[
-    /* listener */ js.Function1[/* e */ T, js.Any], 
-    /* thisArgs */ js.UndefOr[js.Any], 
+    /* listener */ js.Function1[/* e */ T, Any], 
+    /* thisArgs */ js.UndefOr[Any], 
     /* disposables */ js.UndefOr[js.Array[Disposable]], 
     Disposable
   ]

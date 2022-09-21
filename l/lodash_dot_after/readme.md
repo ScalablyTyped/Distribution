@@ -10,10 +10,10 @@ The lodash method `_.after` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.after |
 | Keywords           | lodash-modularized, after |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 129681 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7765.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -26,7 +26,7 @@ trait Control
     * * webresource
     * * notes
     * * timercontrol
-    * * kbsearch (CRM Online Only, use parature.d.ts)
+    * * kbsearch
     * * quickform (see ui.QuickForm)
     * * customcontrol: <namespace>.<name> (A custom control for mobile phone and tablet clients).
     * * customsubgrid: <namespace>.<name> (A custom dataset control for mobile phone and tablet clients).

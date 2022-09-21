@@ -1,9 +1,9 @@
 package typings.aframe.mod.THREE
 
-import typings.three.constantsMod.Mapping
-import typings.three.constantsMod.TextureDataType
-import typings.three.constantsMod.TextureFilter
-import typings.three.constantsMod.Wrapping
+import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureFilter
+import typings.three.srcConstantsMod.Wrapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,19 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.DepthTexture")
 @js.native
-class DepthTexture protected ()
+open class DepthTexture protected ()
   extends typings.three.mod.DepthTexture {
   /**
-  	 * @param width
-  	 * @param height
-  	 * @param type
-  	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
-  	 * @param [wrapS=THREE.ClampToEdgeWrapping]
-  	 * @param [wrapT=THREE.ClampToEdgeWrapping]
-  	 * @param [magFilter=THREE.NearestFilter]
-  	 * @param [minFilter=THREE.NearestFilter]
-  	 * @param [anisotropy=1]
-  	 */
+    * @param width
+    * @param height
+    * @param type
+    * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.NearestFilter]
+    * @param [minFilter=THREE.NearestFilter]
+    * @param [anisotropy=1]
+    */
   def this(
     width: Double,
     height: Double,

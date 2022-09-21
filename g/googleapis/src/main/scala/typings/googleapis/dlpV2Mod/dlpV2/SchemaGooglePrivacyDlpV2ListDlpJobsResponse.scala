@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response message for listing DLP jobs.
-  */
 trait SchemaGooglePrivacyDlpV2ListDlpJobsResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGooglePrivacyDlpV2ListDlpJobsResponse extends StObject {
   /**
     * The standard List next-page token.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ListDlpJobsResponse {
   
@@ -32,9 +29,11 @@ object SchemaGooglePrivacyDlpV2ListDlpJobsResponse {
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: SchemaGooglePrivacyDlpV2DlpJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: SchemaGooglePrivacyDlpV2DlpJob*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

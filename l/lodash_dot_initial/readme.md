@@ -10,10 +10,10 @@ The lodash method `_.initial` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.initial |
 | Keywords           | lodash-modularized, initial |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 1337524 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 109884.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

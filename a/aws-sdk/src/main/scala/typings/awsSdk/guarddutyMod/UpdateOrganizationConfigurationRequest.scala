@@ -12,7 +12,7 @@ trait UpdateOrganizationConfigurationRequest extends StObject {
   var AutoEnable: Boolean
   
   /**
-    * An object describes which data sources will be updated.
+    * Describes which data sources will be updated.
     */
   var DataSources: js.UndefOr[OrganizationDataSourceConfigurations] = js.undefined
   

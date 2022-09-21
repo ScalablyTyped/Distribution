@@ -24,7 +24,7 @@ trait LifecyclePolicyPreviewResult extends StObject {
   /**
     * The date and time, expressed in standard JavaScript date format, at which the current image was pushed to the repository.
     */
-  var imagePushedAt: js.UndefOr[PushTimestamp] = js.undefined
+  var imagePushedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The list of tags associated with this image.
@@ -52,7 +52,7 @@ object LifecyclePolicyPreviewResult {
     
     inline def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
-    inline def setImagePushedAt(value: PushTimestamp): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
+    inline def setImagePushedAt(value: js.Date): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
     
     inline def setImagePushedAtUndefined: Self = StObject.set(x, "imagePushedAt", js.undefined)
     
@@ -60,6 +60,6 @@ object LifecyclePolicyPreviewResult {
     
     inline def setImageTagsUndefined: Self = StObject.set(x, "imageTags", js.undefined)
     
-    inline def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
+    inline def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value*))
   }
 }

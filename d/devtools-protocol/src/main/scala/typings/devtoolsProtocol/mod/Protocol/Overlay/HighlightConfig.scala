@@ -18,9 +18,19 @@ trait HighlightConfig extends StObject {
   var colorFormat: js.UndefOr[ColorFormat] = js.undefined
   
   /**
+    * The container query container highlight configuration (default: all transparent).
+    */
+  var containerQueryContainerHighlightConfig: js.UndefOr[ContainerQueryContainerHighlightConfig] = js.undefined
+  
+  /**
     * The content box highlight fill color (default: transparent).
     */
   var contentColor: js.UndefOr[RGBA] = js.undefined
+  
+  /**
+    * The contrast algorithm to use for the contrast ratio (default: aa).
+    */
+  var contrastAlgorithm: js.UndefOr[ContrastAlgorithm] = js.undefined
   
   /**
     * The grid layout color (default: transparent).
@@ -31,6 +41,16 @@ trait HighlightConfig extends StObject {
     * The event target element highlight fill color (default: transparent).
     */
   var eventTargetColor: js.UndefOr[RGBA] = js.undefined
+  
+  /**
+    * The flex container highlight configuration (default: all transparent).
+    */
+  var flexContainerHighlightConfig: js.UndefOr[FlexContainerHighlightConfig] = js.undefined
+  
+  /**
+    * The flex item highlight configuration (default: all transparent).
+    */
+  var flexItemHighlightConfig: js.UndefOr[FlexItemHighlightConfig] = js.undefined
   
   /**
     * The grid layout highlight configuration (default: all transparent).
@@ -99,9 +119,17 @@ object HighlightConfig {
     
     inline def setColorFormatUndefined: Self = StObject.set(x, "colorFormat", js.undefined)
     
+    inline def setContainerQueryContainerHighlightConfig(value: ContainerQueryContainerHighlightConfig): Self = StObject.set(x, "containerQueryContainerHighlightConfig", value.asInstanceOf[js.Any])
+    
+    inline def setContainerQueryContainerHighlightConfigUndefined: Self = StObject.set(x, "containerQueryContainerHighlightConfig", js.undefined)
+    
     inline def setContentColor(value: RGBA): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
     
     inline def setContentColorUndefined: Self = StObject.set(x, "contentColor", js.undefined)
+    
+    inline def setContrastAlgorithm(value: ContrastAlgorithm): Self = StObject.set(x, "contrastAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setContrastAlgorithmUndefined: Self = StObject.set(x, "contrastAlgorithm", js.undefined)
     
     inline def setCssGridColor(value: RGBA): Self = StObject.set(x, "cssGridColor", value.asInstanceOf[js.Any])
     
@@ -110,6 +138,14 @@ object HighlightConfig {
     inline def setEventTargetColor(value: RGBA): Self = StObject.set(x, "eventTargetColor", value.asInstanceOf[js.Any])
     
     inline def setEventTargetColorUndefined: Self = StObject.set(x, "eventTargetColor", js.undefined)
+    
+    inline def setFlexContainerHighlightConfig(value: FlexContainerHighlightConfig): Self = StObject.set(x, "flexContainerHighlightConfig", value.asInstanceOf[js.Any])
+    
+    inline def setFlexContainerHighlightConfigUndefined: Self = StObject.set(x, "flexContainerHighlightConfig", js.undefined)
+    
+    inline def setFlexItemHighlightConfig(value: FlexItemHighlightConfig): Self = StObject.set(x, "flexItemHighlightConfig", value.asInstanceOf[js.Any])
+    
+    inline def setFlexItemHighlightConfigUndefined: Self = StObject.set(x, "flexItemHighlightConfig", js.undefined)
     
     inline def setGridHighlightConfig(value: GridHighlightConfig): Self = StObject.set(x, "gridHighlightConfig", value.asInstanceOf[js.Any])
     

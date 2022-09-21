@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-virtual-list
 
-Typings are for version 3.2.2
+Typings are for version 3.4.8
 
 ## Library description:
 React Virtual List Component
@@ -10,15 +10,12 @@ React Virtual List Component
 | ------------------ | :-------------: |
 | Full name          | rc-virtual-list |
 | Keywords           | react, react-component, virtual-list |
-| # releases         | 79 |
-| # dependents       | 30 |
-| # downloads        | 11195364 |
-| # stars            | 0 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 3192850.3333333335 |
+| # stars            | 434.0 |
 
 ## Links
-- [Homepage](https://github.com/react-component/virtual-list)
-- [Bugs](https://github.com/react-component/virtual-list/issues)
-- [Repository](https://github.com/react-component/virtual-list)
 - [Npm](https://www.npmjs.com/package/rc-virtual-list)
     
 

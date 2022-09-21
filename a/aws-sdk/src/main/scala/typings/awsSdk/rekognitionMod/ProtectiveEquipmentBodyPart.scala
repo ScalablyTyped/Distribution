@@ -38,7 +38,7 @@ object ProtectiveEquipmentBodyPart {
     
     inline def setEquipmentDetectionsUndefined: Self = StObject.set(x, "EquipmentDetections", js.undefined)
     
-    inline def setEquipmentDetectionsVarargs(value: EquipmentDetection*): Self = StObject.set(x, "EquipmentDetections", js.Array(value :_*))
+    inline def setEquipmentDetectionsVarargs(value: EquipmentDetection*): Self = StObject.set(x, "EquipmentDetections", js.Array(value*))
     
     inline def setName(value: BodyPart): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

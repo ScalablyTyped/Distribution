@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Birthday extends StObject {
   
-  /** The date of the birthday. */
+  /** The structured date of the birthday. */
   var date: js.UndefOr[Date] = js.undefined
   
   /** Metadata about the birthday. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined
   
-  /** A free-form string representing the user's birthday. */
+  /** Prefer to use the `date` field if set. A free-form string representing the user's birthday. This value is not validated. */
   var text: js.UndefOr[String] = js.undefined
 }
 object Birthday {

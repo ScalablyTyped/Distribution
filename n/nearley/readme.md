@@ -10,10 +10,10 @@ Simple, fast, powerful parser toolkit for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | nearley |
 | Keywords           | parser, parse, generator, compiler, compile, grammar, language |
-| # releases         | 15 |
-| # dependents       | 195 |
-| # downloads        | 115991343 |
-| # stars            | 14 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1454958333333334E7 |
+| # stars            | 3235.0 |
 
 ## Links
 - [Homepage](https://github.com/hardmath123/nearley#readme)

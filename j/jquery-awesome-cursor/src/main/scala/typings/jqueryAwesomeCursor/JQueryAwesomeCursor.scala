@@ -70,7 +70,7 @@ object JQueryAwesomeCursor {
       
       inline def setHotspotUndefined: Self = StObject.set(x, "hotspot", js.undefined)
       
-      inline def setHotspotVarargs(value: Double*): Self = StObject.set(x, "hotspot", js.Array(value :_*))
+      inline def setHotspotVarargs(value: Double*): Self = StObject.set(x, "hotspot", js.Array(value*))
       
       inline def setOutline(value: String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
       

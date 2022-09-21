@@ -26,97 +26,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineData extends StObject {
   
   /**
-    *
     * Represents the length of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.undefined
   
   /**
-    *
     * Represents the style of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.undefined
   
   /**
-    *
     * Represents the width of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.undefined
   
   /**
+    * Represents the connection site to which the beginning of a connector is connected. Returns `null` when the beginning of the line is not attached to any shape.
     *
-    * Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning of the line is not attached to any shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginConnectedSite: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Represents the connector type for the line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var connectorType: js.UndefOr[ConnectorType | Straight | Elbow | Curve] = js.undefined
   
   /**
-    *
     * Represents the length of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.undefined
   
   /**
-    *
     * Represents the style of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.undefined
   
   /**
-    *
     * Represents the width of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.undefined
   
   /**
+    * Represents the connection site to which the end of a connector is connected. Returns `null` when the end of the line is not attached to any shape.
     *
-    * Represents the connection site to which the end of a connector is connected. Returns null when the end of the line is not attached to any shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endConnectedSite: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the shape identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Specifies if the beginning of the specified line is connected to a shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isBeginConnected: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the end of the specified line is connected to a shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isEndConnected: js.UndefOr[Boolean] = js.undefined

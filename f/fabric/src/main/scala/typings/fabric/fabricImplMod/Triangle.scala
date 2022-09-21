@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param [options] Options object
   */
-class Triangle () extends Object {
+open class Triangle () extends Object {
   def this(options: ITriangleOptions) = this()
 }
 /* static members */
@@ -24,5 +24,5 @@ object Triangle {
     * Returns Triangle instance from an object representation
     * @param object Object to create an instance from
     */
-  inline def fromObject(`object`: js.Any): Triangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Triangle]
+  inline def fromObject(`object`: Any): Triangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Triangle]
 }

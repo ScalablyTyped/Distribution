@@ -12,12 +12,12 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   def ChangeVaultLanguage(
     Language: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ChangeVaultLanguage(
     Language: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ChangeVaultLanguage(
@@ -29,12 +29,12 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   def ChangeVaultLanguage(
     Language: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ChangeVaultLanguage(
     Language: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ChangeVaultLanguage(Language: Double, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -43,11 +43,11 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   def GetSubstituteUsers(successCallback: js.Function1[/* result */ IUserOrUserGroupIDs, Unit]): Unit = js.native
   def GetSubstituteUsers(
     successCallback: js.Function1[/* result */ IUserOrUserGroupIDs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSubstituteUsers(
     successCallback: js.Function1[/* result */ IUserOrUserGroupIDs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSubstituteUsers(
@@ -57,11 +57,11 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   ): Unit = js.native
   def GetSubstituteUsers(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSubstituteUsers(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSubstituteUsers(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -70,11 +70,11 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   def GetVaultLanguage(successCallback: js.Function1[/* result */ Double, Unit]): Unit = js.native
   def GetVaultLanguage(
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetVaultLanguage(
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetVaultLanguage(
@@ -84,11 +84,11 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   ): Unit = js.native
   def GetVaultLanguage(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetVaultLanguage(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetVaultLanguage(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -97,11 +97,11 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   def GetVaultLanguageCode(successCallback: js.Function1[/* result */ String, Unit]): Unit = js.native
   def GetVaultLanguageCode(
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetVaultLanguageCode(
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetVaultLanguageCode(
@@ -111,11 +111,11 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   ): Unit = js.native
   def GetVaultLanguageCode(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetVaultLanguageCode(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetVaultLanguageCode(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -125,12 +125,12 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   def SetSubstituteUsers(
     UserOrUserGroupIDs: IUserOrUserGroupIDs,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetSubstituteUsers(
     UserOrUserGroupIDs: IUserOrUserGroupIDs,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetSubstituteUsers(
@@ -142,12 +142,12 @@ trait IVaultUserSettingOperationsAsync extends StObject {
   def SetSubstituteUsers(
     UserOrUserGroupIDs: IUserOrUserGroupIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetSubstituteUsers(
     UserOrUserGroupIDs: IUserOrUserGroupIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetSubstituteUsers(

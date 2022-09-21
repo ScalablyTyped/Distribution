@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DecodeAuthorizationMessageResponse extends StObject {
   
   /**
-    * An XML document that contains the decoded message.
+    * The API returns a response with the decoded message.
     */
   var DecodedMessage: js.UndefOr[decodedMessageType] = js.undefined
 }

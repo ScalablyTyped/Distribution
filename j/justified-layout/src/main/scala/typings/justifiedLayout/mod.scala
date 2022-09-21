@@ -180,7 +180,7 @@ object mod {
       
       inline def setBoxes(value: js.Array[LayoutBox]): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
       
-      inline def setBoxesVarargs(value: LayoutBox*): Self = StObject.set(x, "boxes", js.Array(value :_*))
+      inline def setBoxesVarargs(value: LayoutBox*): Self = StObject.set(x, "boxes", js.Array(value*))
       
       inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
@@ -197,6 +197,11 @@ object mod {
       * Aspect ratio of the box.
       */
     var aspectRatio: Double
+    
+    /**
+      * Whether or not the aspect ratio was forced.
+      */
+    var forcedAspectRatio: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Height of the box in a justified layout.
@@ -228,6 +233,10 @@ object mod {
     extension [Self <: LayoutBox](x: Self) {
       
       inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      
+      inline def setForcedAspectRatio(value: Boolean): Self = StObject.set(x, "forcedAspectRatio", value.asInstanceOf[js.Any])
+      
+      inline def setForcedAspectRatioUndefined: Self = StObject.set(x, "forcedAspectRatio", js.undefined)
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

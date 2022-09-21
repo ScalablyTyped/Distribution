@@ -10,10 +10,10 @@ object topicMod {
   
   @JSImport("jsforce/topic", "Topic")
   @js.native
-  class Topic protected () extends StObject {
+  open class Topic protected () extends StObject {
     def this(streaming: Streaming, name: String) = this()
     
-    def subscribe(listener: js.Function1[/* streamingMessage */ StreamingMessage, Unit]): js.Any = js.native
+    def subscribe(listener: js.Function1[/* streamingMessage */ StreamingMessage, Unit]): Any = js.native
     
     // Faye Subscription
     def unsubscribe(listener: js.Function1[/* streamingMessage */ StreamingMessage, Unit]): Topic = js.native

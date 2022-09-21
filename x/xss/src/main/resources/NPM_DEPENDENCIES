@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xss" : "1.0.8"
+      "xss" : "1.0.14"
     }
   ],
   "test-dependencies" : [
     {
-      "xss" : "1.0.8"
+      "xss" : "1.0.14"
     }
   ],
   "compile-devDependencies" : [

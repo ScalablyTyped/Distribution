@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThirdPartySourceRepository extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) of an AWS CodeStar Connections connection. Its format is arn:aws:codestar-connections:region-id:aws-account_id:connection/connection-id. For more information, see  Connection  in the AWS CodeStar Connections API Reference. 
+    * The Amazon Resource Name (ARN) of an Amazon Web Services CodeStar Connections connection. Its format is arn:aws:codestar-connections:region-id:aws-account_id:connection/connection-id. For more information, see Connection in the Amazon Web Services CodeStar Connections API Reference.
     */
   var ConnectionArn: typings.awsSdk.codegurureviewerMod.ConnectionArn
   
   /**
-    *  The name of the third party source repository. 
+    * The name of the third party source repository.
     */
   var Name: typings.awsSdk.codegurureviewerMod.Name
   
   /**
-    *  The owner of the repository. For a GitHub, GitHub Enterprise, or Bitbucket repository, this is the username for the account that owns the repository. 
+    * The owner of the repository. For a GitHub, GitHub Enterprise, or Bitbucket repository, this is the username for the account that owns the repository. For an S3 repository, this can be the username or Amazon Web Services account ID 
     */
   var Owner: typings.awsSdk.codegurureviewerMod.Owner
 }

@@ -1,7 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +33,7 @@ trait TimePicker extends StObject {
   /**
     * Gets or sets the current time of the TimePicker. Note that the date value is always July 15, 2011.
     **/
-  var current: Date = js.native
+  var current: js.Date = js.native
   
   /**
     * Specifies whether the TimePicker is disabled.
@@ -47,7 +46,7 @@ trait TimePicker extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this TimePicker. Call this method when the TimePicker is no longer needed. After calling this method, the TimePicker becomes unusable.
@@ -80,7 +79,7 @@ trait TimePicker extends StObject {
     * Occurs when any of the controls are changed by the user.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onchange(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onchange(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Gets or sets the display pattern for the period. The default period pattern is period.abbreviated(2). You can change the period pattern by changing the number of integers displayed.
@@ -94,5 +93,5 @@ trait TimePicker extends StObject {
     * @param useCapture Optional. The same value that was passed to addEventListener for this listener. It may be omitted if it was omitted when calling addEventListener.
     **/
   def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function, useCapture: js.Any): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Function, useCapture: Any): Unit = js.native
 }

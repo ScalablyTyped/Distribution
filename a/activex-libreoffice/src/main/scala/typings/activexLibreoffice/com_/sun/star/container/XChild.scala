@@ -33,7 +33,7 @@ object XChild {
     Parent: XInterface,
     acquire: () => Unit,
     getParent: () => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setParent: XInterface => Unit
   ): XChild = {

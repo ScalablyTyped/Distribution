@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Add a list of accounts to a hold.
-  */
 trait SchemaAddHeldAccountsRequest extends StObject {
   
   /**
-    * Account ids to identify which accounts to add. Only account_ids or only
-    * emails should be specified, but not both.
+    * A comma-separated list of the account IDs of the accounts to add to the hold. Specify either **emails** or **account_ids**, but not both.
     */
-  var accountIds: js.UndefOr[js.Array[String]] = js.undefined
+  var accountIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Emails to identify which accounts to add. Only emails or only account_ids
-    * should be specified, but not both.
+    * A comma-separated list of the emails of the accounts to add to the hold. Specify either **emails** or **account_ids**, but not both.
     */
-  var emails: js.UndefOr[js.Array[String]] = js.undefined
+  var emails: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAddHeldAccountsRequest {
   
@@ -32,14 +27,18 @@ object SchemaAddHeldAccountsRequest {
     
     inline def setAccountIds(value: js.Array[String]): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdsNull: Self = StObject.set(x, "accountIds", null)
+    
     inline def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
-    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value*))
     
     inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
+    inline def setEmailsNull: Self = StObject.set(x, "emails", null)
+    
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value*))
   }
 }

@@ -15,7 +15,7 @@ object global {
       * 组合了旋转、倾斜、复位、缩放在内的地图控件
       * @param options 选项
       */
-    class ControlBar ()
+    open class ControlBar ()
       extends StObject
          with typings.amapJsApiControlBar.AMap.ControlBar {
       def this(options: Options) = this()

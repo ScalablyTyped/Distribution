@@ -2,7 +2,6 @@ package typings.easeljs.global.createjs
 
 import typings.easeljs.createjs.IStageGLOptions
 import typings.std.CanvasRenderingContext2D
-import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.StageGL")
 @js.native
-class StageGL protected ()
+open class StageGL protected ()
   extends StObject
      with typings.easeljs.createjs.StageGL {
   def this(canvas: String) = this()
@@ -39,13 +38,13 @@ object StageGL {
   
   @JSGlobal("createjs.StageGL.COVER_UV")
   @js.native
-  def COVER_UV: Float32Array = js.native
-  inline def COVER_UV_=(x: Float32Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COVER_UV")(x.asInstanceOf[js.Any])
+  def COVER_UV: js.typedarray.Float32Array = js.native
+  inline def COVER_UV_=(x: js.typedarray.Float32Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COVER_UV")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.StageGL.COVER_UV_FLIP")
   @js.native
-  def COVER_UV_FLIP: Float32Array = js.native
-  inline def COVER_UV_FLIP_=(x: Float32Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COVER_UV_FLIP")(x.asInstanceOf[js.Any])
+  def COVER_UV_FLIP: js.typedarray.Float32Array = js.native
+  inline def COVER_UV_FLIP_=(x: js.typedarray.Float32Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COVER_UV_FLIP")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.StageGL.COVER_VARYING_HEADER")
   @js.native
@@ -54,7 +53,7 @@ object StageGL {
   
   @JSGlobal("createjs.StageGL.COVER_VERT")
   @js.native
-  def COVER_VERT: Float32Array = js.native
+  def COVER_VERT: js.typedarray.Float32Array = js.native
   
   @JSGlobal("createjs.StageGL.COVER_VERTEX_BODY")
   @js.native
@@ -66,7 +65,7 @@ object StageGL {
   def COVER_VERTEX_HEADER: String = js.native
   inline def COVER_VERTEX_HEADER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COVER_VERTEX_HEADER")(x.asInstanceOf[js.Any])
   
-  inline def COVER_VERT_=(x: Float32Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COVER_VERT")(x.asInstanceOf[js.Any])
+  inline def COVER_VERT_=(x: js.typedarray.Float32Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COVER_VERT")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.StageGL.DEFAULT_MAX_BATCH_SIZE")
   @js.native

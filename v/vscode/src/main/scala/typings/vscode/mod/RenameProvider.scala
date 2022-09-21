@@ -12,7 +12,7 @@ trait RenameProvider extends StObject {
     * be a range or a range and a placeholder text. The placeholder text should be the identifier of the symbol
     * which is being renamed - when omitted the text in the returned range is used.
     *
-    * *Note: * This function should throw an error or return a rejected thenable when the provided location
+    * *Note:* This function should throw an error or return a rejected thenable when the provided location
     * doesn't allow for a rename.
     *
     * @param document The document in which rename will be invoked.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "Place")
 @js.native
-class Place protected ()
+open class Place protected ()
   extends typings.actionsOnGoogle.helperMod.Place {
   /**
     * @param options Place options

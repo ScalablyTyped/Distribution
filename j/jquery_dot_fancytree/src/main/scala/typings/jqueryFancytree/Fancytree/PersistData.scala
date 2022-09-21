@@ -29,7 +29,7 @@ object PersistData {
     
     inline def setExpanded(value: js.Array[String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    inline def setExpandedVarargs(value: String*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+    inline def setExpandedVarargs(value: String*): Self = StObject.set(x, "expanded", js.Array(value*))
     
     inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
@@ -37,6 +37,6 @@ object PersistData {
     
     inline def setSelected(value: js.Array[String]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    inline def setSelectedVarargs(value: String*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: String*): Self = StObject.set(x, "selected", js.Array(value*))
   }
 }

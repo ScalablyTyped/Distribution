@@ -8,8 +8,8 @@ object propertyMixerMod {
   
   @JSImport("three/src/animation/PropertyMixer", "PropertyMixer")
   @js.native
-  class PropertyMixer protected () extends StObject {
-    def this(binding: js.Any, typeName: String, valueSize: Double) = this()
+  open class PropertyMixer protected () extends StObject {
+    def this(binding: Any, typeName: String, valueSize: Double) = this()
     
     def accumulate(accuIndex: Double, weight: Double): Unit = js.native
     
@@ -18,9 +18,9 @@ object propertyMixerMod {
     @JSName("apply")
     def apply(accuIndex: Double): Unit = js.native
     
-    var binding: js.Any = js.native
+    var binding: Any = js.native
     
-    var buffer: js.Any = js.native
+    var buffer: Any = js.native
     
     var cumulativeWeight: Double = js.native
     

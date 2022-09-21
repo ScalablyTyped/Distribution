@@ -27,7 +27,7 @@ object NotIn {
     
     inline def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
     
-    inline def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value :_*))
+    inline def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value*))
     
     inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }

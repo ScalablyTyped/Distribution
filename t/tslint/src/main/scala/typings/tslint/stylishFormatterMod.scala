@@ -10,15 +10,15 @@ object stylishFormatterMod {
   
   @JSImport("tslint/lib/formatters/stylishFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter {
+  open class Formatter () extends AbstractFormatter {
     
-    /* private */ var getPositionMaxSize: js.Any = js.native
+    /* private */ var getPositionMaxSize: Any = js.native
     
-    /* private */ var getRuleMaxSize: js.Any = js.native
+    /* private */ var getRuleMaxSize: Any = js.native
     
-    /* private */ var mapToMessages: js.Any = js.native
+    /* private */ var mapToMessages: Any = js.native
     
-    /* private */ var pad: js.Any = js.native
+    /* private */ var pad: Any = js.native
   }
   /* static members */
   object Formatter {

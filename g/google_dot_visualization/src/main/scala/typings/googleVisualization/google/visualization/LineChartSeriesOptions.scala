@@ -55,7 +55,7 @@ object LineChartSeriesOptions {
     
     inline def setLineDashStyleUndefined: Self = StObject.set(x, "lineDashStyle", js.undefined)
     
-    inline def setLineDashStyleVarargs(value: Double*): Self = StObject.set(x, "lineDashStyle", js.Array(value :_*))
+    inline def setLineDashStyleVarargs(value: Double*): Self = StObject.set(x, "lineDashStyle", js.Array(value*))
     
     inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     

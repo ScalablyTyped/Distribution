@@ -1,12 +1,17 @@
 package typings.maximMazurokGapiClientAndroidpublisher
 
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.ApplicationsResource
 import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.EditsResource
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.GeneratedapksResource
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.GrantsResource
 import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.InappproductsResource
 import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.InternalappsharingartifactsResource
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.MonetizationResource
 import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.OrdersResource
 import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.PurchasesResource
 import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.ReviewsResource
 import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.SystemapksResource
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.UsersResource
 import typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.androidpublisher
 import typings.maximMazurokGapiClientAndroidpublisher.maximMazurokGapiClientAndroidpublisherStrings.v3
 import org.scalablytyped.runtime.StObject
@@ -25,9 +30,21 @@ object global {
       
       object androidpublisher {
         
+        @JSGlobal("gapi.client.androidpublisher.applications")
+        @js.native
+        val applications: ApplicationsResource = js.native
+        
         @JSGlobal("gapi.client.androidpublisher.edits")
         @js.native
         val edits: EditsResource = js.native
+        
+        @JSGlobal("gapi.client.androidpublisher.generatedapks")
+        @js.native
+        val generatedapks: GeneratedapksResource = js.native
+        
+        @JSGlobal("gapi.client.androidpublisher.grants")
+        @js.native
+        val grants: GrantsResource = js.native
         
         @JSGlobal("gapi.client.androidpublisher.inappproducts")
         @js.native
@@ -36,6 +53,10 @@ object global {
         @JSGlobal("gapi.client.androidpublisher.internalappsharingartifacts")
         @js.native
         val internalappsharingartifacts: InternalappsharingartifactsResource = js.native
+        
+        @JSGlobal("gapi.client.androidpublisher.monetization")
+        @js.native
+        val monetization: MonetizationResource = js.native
         
         @JSGlobal("gapi.client.androidpublisher.orders")
         @js.native
@@ -52,11 +73,15 @@ object global {
         @JSGlobal("gapi.client.androidpublisher.systemapks")
         @js.native
         val systemapks: SystemapksResource = js.native
+        
+        @JSGlobal("gapi.client.androidpublisher.users")
+        @js.native
+        val users: UsersResource = js.native
       }
       
       /** Load Google Play Android Developer API v3 */
       inline def load(name: androidpublisher, version: v3): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: androidpublisher, version: v3, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: androidpublisher, version: v3, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

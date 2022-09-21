@@ -123,13 +123,13 @@ object DescribeSObjectResult {
     
     inline def setActionOverridesUndefined: Self = StObject.set(x, "actionOverrides", js.undefined)
     
-    inline def setActionOverridesVarargs(value: ActionOverride*): Self = StObject.set(x, "actionOverrides", js.Array(value :_*))
+    inline def setActionOverridesVarargs(value: ActionOverride*): Self = StObject.set(x, "actionOverrides", js.Array(value*))
     
     inline def setActivateable(value: Boolean): Self = StObject.set(x, "activateable", value.asInstanceOf[js.Any])
     
     inline def setChildRelationships(value: js.Array[ChildRelationship]): Self = StObject.set(x, "childRelationships", value.asInstanceOf[js.Any])
     
-    inline def setChildRelationshipsVarargs(value: ChildRelationship*): Self = StObject.set(x, "childRelationships", js.Array(value :_*))
+    inline def setChildRelationshipsVarargs(value: ChildRelationship*): Self = StObject.set(x, "childRelationships", js.Array(value*))
     
     inline def setCompactLayoutable(value: Boolean): Self = StObject.set(x, "compactLayoutable", value.asInstanceOf[js.Any])
     
@@ -147,7 +147,7 @@ object DescribeSObjectResult {
     
     inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setKeyPrefix(value: maybe[String]): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
@@ -181,7 +181,7 @@ object DescribeSObjectResult {
     
     inline def setNamedLayoutInfos(value: js.Array[NamedLayoutInfo]): Self = StObject.set(x, "namedLayoutInfos", value.asInstanceOf[js.Any])
     
-    inline def setNamedLayoutInfosVarargs(value: NamedLayoutInfo*): Self = StObject.set(x, "namedLayoutInfos", js.Array(value :_*))
+    inline def setNamedLayoutInfosVarargs(value: NamedLayoutInfo*): Self = StObject.set(x, "namedLayoutInfos", js.Array(value*))
     
     inline def setNetworkScopeFieldName(value: maybe[String]): Self = StObject.set(x, "networkScopeFieldName", value.asInstanceOf[js.Any])
     
@@ -193,7 +193,7 @@ object DescribeSObjectResult {
     
     inline def setRecordTypeInfos(value: js.Array[RecordTypeInfo]): Self = StObject.set(x, "recordTypeInfos", value.asInstanceOf[js.Any])
     
-    inline def setRecordTypeInfosVarargs(value: RecordTypeInfo*): Self = StObject.set(x, "recordTypeInfos", js.Array(value :_*))
+    inline def setRecordTypeInfosVarargs(value: RecordTypeInfo*): Self = StObject.set(x, "recordTypeInfos", js.Array(value*))
     
     inline def setReplicateable(value: Boolean): Self = StObject.set(x, "replicateable", value.asInstanceOf[js.Any])
     
@@ -205,7 +205,7 @@ object DescribeSObjectResult {
     
     inline def setSupportedScopes(value: js.Array[ScopeInfo]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
     
-    inline def setSupportedScopesVarargs(value: ScopeInfo*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
+    inline def setSupportedScopesVarargs(value: ScopeInfo*): Self = StObject.set(x, "supportedScopes", js.Array(value*))
     
     inline def setTriggerable(value: Boolean): Self = StObject.set(x, "triggerable", value.asInstanceOf[js.Any])
     

@@ -102,31 +102,31 @@ object BuildBazelRemoteExecutionV2ActionResult {
     
     inline def setOutputDirectoriesUndefined: Self = StObject.set(x, "outputDirectories", js.undefined)
     
-    inline def setOutputDirectoriesVarargs(value: BuildBazelRemoteExecutionV2OutputDirectory*): Self = StObject.set(x, "outputDirectories", js.Array(value :_*))
+    inline def setOutputDirectoriesVarargs(value: BuildBazelRemoteExecutionV2OutputDirectory*): Self = StObject.set(x, "outputDirectories", js.Array(value*))
     
     inline def setOutputDirectorySymlinks(value: js.Array[BuildBazelRemoteExecutionV2OutputSymlink]): Self = StObject.set(x, "outputDirectorySymlinks", value.asInstanceOf[js.Any])
     
     inline def setOutputDirectorySymlinksUndefined: Self = StObject.set(x, "outputDirectorySymlinks", js.undefined)
     
-    inline def setOutputDirectorySymlinksVarargs(value: BuildBazelRemoteExecutionV2OutputSymlink*): Self = StObject.set(x, "outputDirectorySymlinks", js.Array(value :_*))
+    inline def setOutputDirectorySymlinksVarargs(value: BuildBazelRemoteExecutionV2OutputSymlink*): Self = StObject.set(x, "outputDirectorySymlinks", js.Array(value*))
     
     inline def setOutputFileSymlinks(value: js.Array[BuildBazelRemoteExecutionV2OutputSymlink]): Self = StObject.set(x, "outputFileSymlinks", value.asInstanceOf[js.Any])
     
     inline def setOutputFileSymlinksUndefined: Self = StObject.set(x, "outputFileSymlinks", js.undefined)
     
-    inline def setOutputFileSymlinksVarargs(value: BuildBazelRemoteExecutionV2OutputSymlink*): Self = StObject.set(x, "outputFileSymlinks", js.Array(value :_*))
+    inline def setOutputFileSymlinksVarargs(value: BuildBazelRemoteExecutionV2OutputSymlink*): Self = StObject.set(x, "outputFileSymlinks", js.Array(value*))
     
     inline def setOutputFiles(value: js.Array[BuildBazelRemoteExecutionV2OutputFile]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
     
     inline def setOutputFilesUndefined: Self = StObject.set(x, "outputFiles", js.undefined)
     
-    inline def setOutputFilesVarargs(value: BuildBazelRemoteExecutionV2OutputFile*): Self = StObject.set(x, "outputFiles", js.Array(value :_*))
+    inline def setOutputFilesVarargs(value: BuildBazelRemoteExecutionV2OutputFile*): Self = StObject.set(x, "outputFiles", js.Array(value*))
     
     inline def setOutputSymlinks(value: js.Array[BuildBazelRemoteExecutionV2OutputSymlink]): Self = StObject.set(x, "outputSymlinks", value.asInstanceOf[js.Any])
     
     inline def setOutputSymlinksUndefined: Self = StObject.set(x, "outputSymlinks", js.undefined)
     
-    inline def setOutputSymlinksVarargs(value: BuildBazelRemoteExecutionV2OutputSymlink*): Self = StObject.set(x, "outputSymlinks", js.Array(value :_*))
+    inline def setOutputSymlinksVarargs(value: BuildBazelRemoteExecutionV2OutputSymlink*): Self = StObject.set(x, "outputSymlinks", js.Array(value*))
     
     inline def setStderrDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "stderrDigest", value.asInstanceOf[js.Any])
     

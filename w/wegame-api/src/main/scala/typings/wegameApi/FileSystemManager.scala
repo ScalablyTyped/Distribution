@@ -1,6 +1,5 @@
 package typings.wegameApi
 
-import typings.std.ArrayBuffer
 import typings.wegameApi.wx.types.AccessfileParams
 import typings.wegameApi.wx.types.AppendfileParams
 import typings.wegameApi.wx.types.CallbacksWithType
@@ -54,7 +53,7 @@ trait FileSystemManager extends StObject {
     * @throws 指定的 filePath 是一个已经存在的目录
     */
   def appendFileSync(filePath: String, data: String, encoding: FileContentEncoding): Unit = js.native
-  def appendFileSync(filePath: String, data: ArrayBuffer, encoding: FileContentEncoding): Unit = js.native
+  def appendFileSync(filePath: String, data: js.typedarray.ArrayBuffer, encoding: FileContentEncoding): Unit = js.native
   
   /**
     * 复制文件
@@ -110,7 +109,7 @@ trait FileSystemManager extends StObject {
     * @throws 指定的 filePath 所在目录不存在
     * @throws 指定的 filePath 路径没有读权限
     */
-  def readFileSync(filePath: String): ArrayBuffer = js.native
+  def readFileSync(filePath: String): js.typedarray.ArrayBuffer = js.native
   /**
     * readFile 的同步版本，读取并按指定字符编码返回字符串
     * @param filePath 要读取的文件的路径
@@ -236,5 +235,5 @@ trait FileSystemManager extends StObject {
     * @throws 指定的 filePath 所在目录不存在
     * @throws 指定的 filePath 路径没有写权限
     */
-  def writeFileSync(filePath: String, data: ArrayBuffer): Unit = js.native
+  def writeFileSync(filePath: String, data: js.typedarray.ArrayBuffer): Unit = js.native
 }

@@ -8,5 +8,5 @@ object tooManyEntriesInBatchRequestMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/TooManyEntriesInBatchRequest", "TooManyEntriesInBatchRequest")
   @js.native
-  val TooManyEntriesInBatchRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val TooManyEntriesInBatchRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

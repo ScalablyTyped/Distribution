@@ -1,6 +1,5 @@
 package typings.sirenParser
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object linkMod {
     var `class`: js.UndefOr[js.Array[String]] = js.native
     
     def hasClass(cls: String): Boolean = js.native
-    def hasClass(cls: RegExp): Boolean = js.native
+    def hasClass(cls: js.RegExp): Boolean = js.native
     
     var href: String = js.native
     

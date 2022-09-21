@@ -10,10 +10,10 @@ Time and SMTPE Timecodes conversions
 | ------------------ | :-------------: |
 | Full name          | node-timecodes |
 | Keywords           | node, timecode, smtpe, time, conversion |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 16330 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1167.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/Synchronized-TV/node-timecodes#readme)

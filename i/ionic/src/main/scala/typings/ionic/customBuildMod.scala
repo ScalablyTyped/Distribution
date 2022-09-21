@@ -11,7 +11,7 @@ object customBuildMod {
   
   @JSImport("ionic/lib/project/custom/build", "CustomBuildRunner")
   @js.native
-  class CustomBuildRunner protected () extends BuildRunner[CustomBuildOptions] {
+  open class CustomBuildRunner protected () extends BuildRunner[CustomBuildOptions] {
     def this(e: BuildRunnerDeps) = this()
   }
 }

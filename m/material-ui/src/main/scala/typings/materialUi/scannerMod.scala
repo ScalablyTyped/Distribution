@@ -10,10 +10,10 @@ object scannerMod {
   
   @JSImport("material-ui/svg-icons/hardware/scanner", JSImport.Default)
   @js.native
-  class default () extends HardwareScanner
+  open class default () extends HardwareScanner
   
   @JSImport("material-ui/svg-icons/hardware/scanner", "HardwareScanner")
   @js.native
-  class HardwareScanner ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareScanner ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,11 +1,11 @@
 package typings.tuyaPanelKit.mod
 
+import typings.react.mod.ReactNode
 import typings.reactNative.anon.Start
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.DataDetectorTypes
@@ -15,6 +15,8 @@ import typings.reactNative.mod.Insets
 import typings.reactNative.mod.KeyboardTypeOptions
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNative.mod.NativeTouchEvent
+import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.ReturnKeyTypeOptions
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
@@ -29,17 +31,40 @@ import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.tuyaPanelKitStrings.URL
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`birthdate-day`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`birthdate-full`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`birthdate-month`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`birthdate-year`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-none`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-only`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`cc-csc`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`cc-exp-day`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`cc-exp-month`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`cc-exp-year`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`cc-exp`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`cc-number`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`name-family`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`name-given`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`name-middle-initial`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`name-middle`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`name-prefix`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`name-suffix`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`no-hide-descendants`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`password-new`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`postal-address-country`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`postal-address-extended-postal-code`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`postal-address-extended`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`postal-address-locality`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`postal-address-region`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`postal-address`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`postal-code`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`sms-otp`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`street-address`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`tel-country-code`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`tel-device`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`tel-national`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`unless-editing`
+import typings.tuyaPanelKit.tuyaPanelKitStrings.`username-new`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`while-editing`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.addressCity
 import typings.tuyaPanelKit.tuyaPanelKitStrings.addressCityAndState
@@ -49,7 +74,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.assertive
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.balanced
 import typings.tuyaPanelKit.tuyaPanelKitStrings.bottom
-import typings.tuyaPanelKit.tuyaPanelKitStrings.button
 import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.characters
 import typings.tuyaPanelKit.tuyaPanelKitStrings.countryName
@@ -61,9 +85,11 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.email
 import typings.tuyaPanelKit.tuyaPanelKitStrings.emailAddress
 import typings.tuyaPanelKit.tuyaPanelKitStrings.familyName
 import typings.tuyaPanelKit.tuyaPanelKitStrings.fullStreetAddress
+import typings.tuyaPanelKit.tuyaPanelKitStrings.gender
 import typings.tuyaPanelKit.tuyaPanelKitStrings.givenName
 import typings.tuyaPanelKit.tuyaPanelKitStrings.highQuality
 import typings.tuyaPanelKit.tuyaPanelKitStrings.jobTitle
+import typings.tuyaPanelKit.tuyaPanelKitStrings.left
 import typings.tuyaPanelKit.tuyaPanelKitStrings.light
 import typings.tuyaPanelKit.tuyaPanelKitStrings.location
 import typings.tuyaPanelKit.tuyaPanelKitStrings.middleName
@@ -82,8 +108,7 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.organizationName
 import typings.tuyaPanelKit.tuyaPanelKitStrings.password
 import typings.tuyaPanelKit.tuyaPanelKitStrings.polite
 import typings.tuyaPanelKit.tuyaPanelKitStrings.postalCode
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_checked
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_unchecked
+import typings.tuyaPanelKit.tuyaPanelKitStrings.right
 import typings.tuyaPanelKit.tuyaPanelKitStrings.sentences
 import typings.tuyaPanelKit.tuyaPanelKitStrings.simple
 import typings.tuyaPanelKit.tuyaPanelKitStrings.streetAddressLine1
@@ -106,8 +131,6 @@ trait StepperProps extends StObject {
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
-  var accessibilityComponentType: js.UndefOr[none_ | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
-  
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
   var accessibilityHint: js.UndefOr[String] = js.undefined
@@ -116,13 +139,15 @@ trait StepperProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[none_ | polite | assertive] = js.undefined
   
   var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
@@ -134,8 +159,8 @@ trait StepperProps extends StObject {
   
   var autoCapitalize: js.UndefOr[none_ | sentences | words | characters] = js.undefined
   
-  var autoCompleteType: js.UndefOr[
-    `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
+  var autoComplete: js.UndefOr[
+    `birthdate-day` | `birthdate-full` | `birthdate-month` | `birthdate-year` | `cc-csc` | `cc-exp` | `cc-exp-day` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | gender | name | `name-family` | `name-given` | `name-middle` | `name-middle-initial` | `name-prefix` | `name-suffix` | password | `password-new` | `postal-address` | `postal-address-country` | `postal-address-extended` | `postal-address-extended-postal-code` | `postal-address-locality` | `postal-address-region` | `postal-code` | `street-address` | `sms-otp` | tel | `tel-country-code` | `tel-national` | `tel-device` | username | `username-new` | off
   ] = js.undefined
   
   var autoCorrect: js.UndefOr[Boolean] = js.undefined
@@ -144,11 +169,35 @@ trait StepperProps extends StObject {
   
   var blurOnSubmit: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 加减按钮样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Button Style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮类型
+    * @defaultValue 'ellipse'
+    */
+  /**
+    * @language en-US
+    * @description Button type
+    * @defaultValue 'ellipse'
+    */
   var buttonType: js.UndefOr[ellipse | triangle] = js.undefined
   
   var caretHidden: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var clearButtonMode: js.UndefOr[never | `while-editing` | `unless-editing` | always] = js.undefined
   
@@ -158,30 +207,92 @@ trait StepperProps extends StObject {
   
   var contextMenuHidden: js.UndefOr[Boolean] = js.undefined
   
+  var cursorColor: js.UndefOr[ColorValue | Null] = js.undefined
+  
   var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.undefined
   
   var defaultValue: js.UndefOr[String] = js.undefined
   
   var disableFullscreenUI: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否禁用
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Disable stepper button
+    * @defaultValue false
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否支持手动编辑
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Do you support manual editing
+    * @defaultValue true
+    */
   var editable: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮类型为 ellipse 时按钮激活状态下的颜色
+    * @defaultValue "#333"
+    */
+  /**
+    * @language en-US
+    * @description The color of the button when the button type is ellipse
+    * @defaultValue "#333"
+    */
   var ellipseIconColor: js.UndefOr[String] = js.undefined
   
   var enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined
   
   var focusable: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 获取 TextInput 实例
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Gets an instance of textinput
+    * @defaultValue () => {}
+    */
   var getTextInputRef: js.UndefOr[js.Function1[/* TextInputRef */ js.Object, Unit]] = js.undefined
   
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
   var hitSlop: js.UndefOr[Insets] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮类型为 triangle 时的减法按钮路径
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/stepper/styled.js#L11">dPlus</a>
+    */
+  /**
+    * @language en-US
+    * @description Subtraction button path when button type is triangle
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/stepper/styled.js#L11">dPlus</a>
+    */
   var iconMinusPath: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮类型为 triangle 时的加法按钮路径
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/stepper/styled.js#L8">dPlus</a>
+    */
+  /**
+    * @language en-US
+    * @description Add button path when button type is triangle
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/stepper/styled.js#L8">dPlus</a>
+    */
   var iconPlusPath: js.UndefOr[String] = js.undefined
   
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
@@ -194,6 +305,18 @@ trait StepperProps extends StObject {
   
   var inputAccessoryViewID: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 输入框样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Input style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var inputStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
@@ -202,12 +325,32 @@ trait StepperProps extends StObject {
   
   var keyboardType: js.UndefOr[KeyboardTypeOptions] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最大值
+    * @defaultValue 99
+    */
+  /**
+    * @language en-US
+    * @description Max
+    * @defaultValue 99
+    */
   var max: js.UndefOr[Double] = js.undefined
   
   var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
   
   var maxLength: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最小值
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Min
+    * @defaultValue 0
+    */
   var min: js.UndefOr[Double] = js.undefined
   
   var multiline: js.UndefOr[Boolean] = js.undefined
@@ -247,6 +390,34 @@ trait StepperProps extends StObject {
   var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
+  
+  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPressIn: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
+  
+  var onPressOut: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
   
   var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
@@ -290,6 +461,16 @@ trait StepperProps extends StObject {
   
   var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 短按值回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Short press value callback
+    * @defaultValue () => {}
+    */
   var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
   var passwordRules: js.UndefOr[String | Null] = js.undefined
@@ -318,6 +499,16 @@ trait StepperProps extends StObject {
   
   var selection: js.UndefOr[Start] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 文本输入的高亮和光标颜色
+    * @defaultValue "#FF4800"
+    */
+  /**
+    * @language en-US
+    * @description Highlight and cursor color for text input
+    * @defaultValue "#FF4800"
+    */
   var selectionColor: js.UndefOr[String] = js.undefined
   
   var selectionState: js.UndefOr[DocumentSelectionState] = js.undefined
@@ -328,11 +519,35 @@ trait StepperProps extends StObject {
   
   var spellCheck: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 步长
+    * @defaultValue 1
+    */
+  /**
+    * @language en-US
+    * @description StepValue
+    * @defaultValue 1
+    */
   var stepValue: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 内容样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Container Style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var testID: js.UndefOr[String] = js.undefined
+  
+  var textAlign: js.UndefOr[left | center | right] = js.undefined
   
   var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
   
@@ -342,6 +557,16 @@ trait StepperProps extends StObject {
     none_ | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
   ] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 按钮类型为 triangle 时激活状态下的颜色
+    * @defaultValue "#FF4800"
+    */
+  /**
+    * @language en-US
+    * @description The color in the active state when the button type is triangle
+    * @defaultValue "#FF4800"
+    */
   var triangleIconColor: js.UndefOr[String] = js.undefined
   
   var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
@@ -356,6 +581,16 @@ trait StepperProps extends StObject {
   
   var underlineColorAndroid: js.UndefOr[ColorValue] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 具体值
+    * @defaultValue 20
+    */
+  /**
+    * @language en-US
+    * @description Value
+    * @defaultValue 20
+    */
   var value: js.UndefOr[Double] = js.undefined
 }
 object StepperProps {
@@ -371,11 +606,7 @@ object StepperProps {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none_ | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -393,6 +624,16 @@ object StepperProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none_ | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -404,12 +645,6 @@ object StepperProps {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -431,11 +666,11 @@ object StepperProps {
     
     inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
     
-    inline def setAutoCompleteType(
-      value: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
-    ): Self = StObject.set(x, "autoCompleteType", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(
+      value: `birthdate-day` | `birthdate-full` | `birthdate-month` | `birthdate-year` | `cc-csc` | `cc-exp` | `cc-exp-day` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | gender | name | `name-family` | `name-given` | `name-middle` | `name-middle-initial` | `name-prefix` | `name-suffix` | password | `password-new` | `postal-address` | `postal-address-country` | `postal-address-extended` | `postal-address-extended-postal-code` | `postal-address-locality` | `postal-address-region` | `postal-code` | `street-address` | `sms-otp` | tel | `tel-country-code` | `tel-national` | `tel-device` | username | `username-new` | off
+    ): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    inline def setAutoCompleteTypeUndefined: Self = StObject.set(x, "autoCompleteType", js.undefined)
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
     inline def setAutoCorrect(value: Boolean): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
     
@@ -463,6 +698,10 @@ object StepperProps {
     
     inline def setCaretHiddenUndefined: Self = StObject.set(x, "caretHidden", js.undefined)
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setClearButtonMode(value: never | `while-editing` | `unless-editing` | always): Self = StObject.set(x, "clearButtonMode", value.asInstanceOf[js.Any])
     
     inline def setClearButtonModeUndefined: Self = StObject.set(x, "clearButtonMode", js.undefined)
@@ -479,11 +718,17 @@ object StepperProps {
     
     inline def setContextMenuHiddenUndefined: Self = StObject.set(x, "contextMenuHidden", js.undefined)
     
+    inline def setCursorColor(value: ColorValue): Self = StObject.set(x, "cursorColor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorColorNull: Self = StObject.set(x, "cursorColor", null)
+    
+    inline def setCursorColorUndefined: Self = StObject.set(x, "cursorColor", js.undefined)
+    
     inline def setDataDetectorTypes(value: DataDetectorTypes | js.Array[DataDetectorTypes]): Self = StObject.set(x, "dataDetectorTypes", value.asInstanceOf[js.Any])
     
     inline def setDataDetectorTypesUndefined: Self = StObject.set(x, "dataDetectorTypes", js.undefined)
     
-    inline def setDataDetectorTypesVarargs(value: DataDetectorTypes*): Self = StObject.set(x, "dataDetectorTypes", js.Array(value :_*))
+    inline def setDataDetectorTypesVarargs(value: DataDetectorTypes*): Self = StObject.set(x, "dataDetectorTypes", js.Array(value*))
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
@@ -661,6 +906,62 @@ object StepperProps {
     
     inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
     
+    inline def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancelCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
+    
+    inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+    
+    inline def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDownCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
+    
+    inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+    
+    inline def setOnPointerEnter(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnterCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
+    
+    inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+    
+    inline def setOnPointerLeave(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeaveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
+    
+    inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+    
+    inline def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMoveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
+    
+    inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+    
+    inline def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUpCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
+    
+    inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+    
+    inline def setOnPressIn(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+    
+    inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    
+    inline def setOnPressOut(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+    
+    inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+    
     inline def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
     
     inline def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
@@ -830,6 +1131,10 @@ object StepperProps {
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    
+    inline def setTextAlign(value: left | center | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     inline def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
     

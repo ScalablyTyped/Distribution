@@ -34,6 +34,6 @@ object Referer {
     
     inline def setWaitUntilUndefined: Self = StObject.set(x, "waitUntil", js.undefined)
     
-    inline def setWaitUntilVarargs(value: PuppeteerLifeCycleEvent*): Self = StObject.set(x, "waitUntil", js.Array(value :_*))
+    inline def setWaitUntilVarargs(value: PuppeteerLifeCycleEvent*): Self = StObject.set(x, "waitUntil", js.Array(value*))
   }
 }

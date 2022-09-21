@@ -4,6 +4,7 @@ import typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Vocabulary
 import typings.tensorflowModelsUniversalSentenceEncoder.useQnaMod.UniversalSentenceEncoderQnA
 import typings.tensorflowTfjsConverter.mod.GraphModel
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
+import typings.tensorflowTfjsCore.typesMod.IOHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object mod {
   
   @JSImport("@tensorflow-models/universal-sentence-encoder", "Tokenizer")
   @js.native
-  class Tokenizer protected ()
+  open class Tokenizer protected ()
     extends typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer {
     def this(vocabulary: Vocabulary) = this()
     def this(vocabulary: Vocabulary, reservedSymbolsCount: Double) = this()
@@ -24,7 +25,7 @@ object mod {
   
   @JSImport("@tensorflow-models/universal-sentence-encoder", "UniversalSentenceEncoder")
   @js.native
-  class UniversalSentenceEncoder () extends StObject {
+  open class UniversalSentenceEncoder () extends StObject {
     
     def embed(inputs: String): js.Promise[Tensor2D] = js.native
     /**
@@ -37,19 +38,50 @@ object mod {
     def embed(inputs: js.Array[String]): js.Promise[Tensor2D] = js.native
     
     def load(): js.Promise[Unit] = js.native
+    def load(config: LoadConfig): js.Promise[Unit] = js.native
     
-    def loadModel(): js.Promise[GraphModel] = js.native
+    def loadModel(): js.Promise[GraphModel[String | IOHandler]] = js.native
+    def loadModel(modelUrl: String): js.Promise[GraphModel[String | IOHandler]] = js.native
     
-    /* private */ var model: js.Any = js.native
+    /* private */ var model: Any = js.native
     
-    /* private */ var tokenizer: js.Any = js.native
+    /* private */ var tokenizer: Any = js.native
   }
   
   inline def load(): js.Promise[UniversalSentenceEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[UniversalSentenceEncoder]]
+  inline def load(config: LoadConfig): js.Promise[UniversalSentenceEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UniversalSentenceEncoder]]
   
   inline def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
   
+  inline def loadTokenizer(): js.Promise[typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")().asInstanceOf[js.Promise[typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer]]
+  inline def loadTokenizer(pathToVocabulary: String): js.Promise[typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")(pathToVocabulary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer]]
+  
   @JSImport("@tensorflow-models/universal-sentence-encoder", "version")
   @js.native
-  val version: /* "1.3.2" */ String = js.native
+  val version: /* "1.3.3" */ String = js.native
+  
+  trait LoadConfig extends StObject {
+    
+    var modelUrl: js.UndefOr[String] = js.undefined
+    
+    var vocabUrl: js.UndefOr[String] = js.undefined
+  }
+  object LoadConfig {
+    
+    inline def apply(): LoadConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LoadConfig]
+    }
+    
+    extension [Self <: LoadConfig](x: Self) {
+      
+      inline def setModelUrl(value: String): Self = StObject.set(x, "modelUrl", value.asInstanceOf[js.Any])
+      
+      inline def setModelUrlUndefined: Self = StObject.set(x, "modelUrl", js.undefined)
+      
+      inline def setVocabUrl(value: String): Self = StObject.set(x, "vocabUrl", value.asInstanceOf[js.Any])
+      
+      inline def setVocabUrlUndefined: Self = StObject.set(x, "vocabUrl", js.undefined)
+    }
+  }
 }

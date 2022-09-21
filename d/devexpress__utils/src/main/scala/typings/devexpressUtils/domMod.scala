@@ -16,7 +16,7 @@ object domMod {
   
   @JSImport("@devexpress/utils/lib/utils/dom", "DomUtils")
   @js.native
-  class DomUtils () extends StObject
+  open class DomUtils () extends StObject
   /* static members */
   object DomUtils {
     
@@ -72,8 +72,8 @@ object domMod {
     
     @JSImport("@devexpress/utils/lib/utils/dom", "DomUtils.html2PlainTextFilter")
     @js.native
-    def html2PlainTextFilter: js.Any = js.native
-    inline def html2PlainTextFilter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html2PlainTextFilter")(x.asInstanceOf[js.Any])
+    def html2PlainTextFilter: Any = js.native
+    inline def html2PlainTextFilter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html2PlainTextFilter")(x.asInstanceOf[js.Any])
     
     inline def isElementNode(node: Node): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
     
@@ -106,7 +106,7 @@ object domMod {
     
     @JSImport("@devexpress/utils/lib/utils/dom", "DomUtils.verticalScrollBarWidth")
     @js.native
-    def verticalScrollBarWidth: js.Any = js.native
-    inline def verticalScrollBarWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verticalScrollBarWidth")(x.asInstanceOf[js.Any])
+    def verticalScrollBarWidth: Any = js.native
+    inline def verticalScrollBarWidth_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verticalScrollBarWidth")(x.asInstanceOf[js.Any])
   }
 }

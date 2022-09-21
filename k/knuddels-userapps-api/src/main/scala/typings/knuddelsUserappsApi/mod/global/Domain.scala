@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * @see https://developer.knuddels.de/docs/classes/Domain.html
-	 */
+  * @see https://developer.knuddels.de/docs/classes/Domain.html
+  */
 @JSGlobal("Domain")
 @js.native
-class Domain () extends StObject {
+open class Domain () extends StObject {
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/Domain.html#method_getDomainName
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/Domain.html#method_getDomainName
+    */
   def getDomainName(): java.lang.String = js.native
 }

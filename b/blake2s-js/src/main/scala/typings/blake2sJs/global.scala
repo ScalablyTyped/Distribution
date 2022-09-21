@@ -14,7 +14,7 @@ object global {
   
   @JSGlobal("BLAKE2s")
   @js.native
-  class BLAKE2s () extends default {
+  open class BLAKE2s () extends default {
     def this(digestLength: Double) = this()
     def this(digestLength: Double, config: BLAKE2sConfig) = this()
     def this(digestLength: Double, key: ByteArray) = this()

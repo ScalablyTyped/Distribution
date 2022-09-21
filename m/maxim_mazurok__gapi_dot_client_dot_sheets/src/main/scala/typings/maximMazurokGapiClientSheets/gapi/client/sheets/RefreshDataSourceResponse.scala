@@ -22,6 +22,6 @@ object RefreshDataSourceResponse {
     
     inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    inline def setStatusesVarargs(value: RefreshDataSourceObjectExecutionStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: RefreshDataSourceObjectExecutionStatus*): Self = StObject.set(x, "statuses", js.Array(value*))
   }
 }

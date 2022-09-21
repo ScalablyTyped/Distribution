@@ -11,13 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentClass[P, S]
   extends StObject
      with Instantiable1[/* props */ P, Component[P, S]]
-     with Instantiable2[/* props */ P, /* context */ js.Any, Component[P, S]] {
+     with Instantiable2[/* props */ P, /* context */ Any, Component[P, S]] {
+  
+  var contextType: js.UndefOr[Context[Any]] = js.native
   
   var defaultProps: js.UndefOr[Partial[P]] = js.native
   
   var displayName: js.UndefOr[String] = js.native
   
-  var getDerivedStateFromError: js.UndefOr[js.Function1[/* error */ js.Any, Partial[S] | Null]] = js.native
+  var getDerivedStateFromError: js.UndefOr[js.Function1[/* error */ Any, Partial[S] | Null]] = js.native
   
   var getDerivedStateFromProps: js.UndefOr[js.Function2[/* props */ P, /* state */ S, Partial[S] | Null]] = js.native
 }

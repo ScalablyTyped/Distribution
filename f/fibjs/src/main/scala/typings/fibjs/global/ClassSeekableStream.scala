@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_SeekableStream")
 @js.native
-class ClassSeekableStream ()
+open class ClassSeekableStream ()
   extends StObject
      with typings.fibjs.ClassSeekableStream

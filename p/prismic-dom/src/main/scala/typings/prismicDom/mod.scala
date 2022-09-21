@@ -47,7 +47,7 @@ object mod {
   val HTMLSerializer: typings.prismicDom.mod.HTMLSerializer[String] = js.native
   type HTMLSerializer[T] = js.Function5[
     /* type */ ElementType, 
-    /* element */ js.Any, 
+    /* element */ Any, 
     /* text */ String | Null, 
     /* children */ js.Array[T], 
     /* index */ Double, 
@@ -57,8 +57,8 @@ object mod {
   @js.native
   trait Link extends StObject {
     
-    def url(link: js.Any): String = js.native
-    def url(link: js.Any, linkResolver: js.Function1[/* doc */ js.Any, String]): String = js.native
+    def url(link: Any): String = js.native
+    def url(link: Any, linkResolver: js.Function1[/* doc */ Any, String]): String = js.native
   }
   @JSImport("prismic-dom", "Link")
   @js.native
@@ -69,17 +69,17 @@ object mod {
     
     var Elements: typings.prismicDom.mod.Elements = js.native
     
-    def asHtml(richText: js.Any): String = js.native
-    def asHtml(richText: js.Any, linkResolver: js.Function1[/* doc */ js.Any, String]): String = js.native
+    def asHtml(richText: Any): String = js.native
+    def asHtml(richText: Any, linkResolver: js.Function1[/* doc */ Any, String]): String = js.native
     def asHtml(
-      richText: js.Any,
-      linkResolver: js.Function1[/* doc */ js.Any, String],
+      richText: Any,
+      linkResolver: js.Function1[/* doc */ Any, String],
       serializer: typings.prismicDom.mod.HTMLSerializer[String]
     ): String = js.native
-    def asHtml(richText: js.Any, linkResolver: Unit, serializer: typings.prismicDom.mod.HTMLSerializer[String]): String = js.native
+    def asHtml(richText: Any, linkResolver: Unit, serializer: typings.prismicDom.mod.HTMLSerializer[String]): String = js.native
     
-    def asText(richText: js.Any): String = js.native
-    def asText(richText: js.Any, joinString: String): String = js.native
+    def asText(richText: Any): String = js.native
+    def asText(richText: Any, joinString: String): String = js.native
   }
   @JSImport("prismic-dom", "RichText")
   @js.native

@@ -8,7 +8,7 @@ trait Invitation
   extends StObject
      with Entity {
   
-  // The URL the user can use to redeem their invitation. Read-only
+  // The URL the user can use to redeem their invitation. Read-only.
   var inviteRedeemUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The URL the user should be redirected to once the invitation is redeemed. Required.
@@ -42,10 +42,10 @@ trait Invitation
     */
   var invitedUserType: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Indicates whether an email should be sent to the user being invited or not. The default is false.
+  // Indicates whether an email should be sent to the user being invited. The default is false.
   var sendInvitationMessage: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // The status of the invitation. Possible values: PendingAcceptance, Completed, InProgress, and Error
+  // The status of the invitation. Possible values are: PendingAcceptance, Completed, InProgress, and Error.
   var status: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Invitation {

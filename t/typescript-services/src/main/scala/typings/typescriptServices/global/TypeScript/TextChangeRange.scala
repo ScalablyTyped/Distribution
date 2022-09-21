@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.TextChangeRange")
 @js.native
-class TextChangeRange protected ()
+open class TextChangeRange protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.TextChangeRange {
   def this(span: typings.typescriptServices.TypeScript.TextSpan, newLength: Double) = this()
   
   /* private */ /* CompleteClass */
-  var _newLength: js.Any = js.native
+  var _newLength: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _span: js.Any = js.native
+  var _span: Any = js.native
   
   /* CompleteClass */
   override def isUnchanged(): Boolean = js.native

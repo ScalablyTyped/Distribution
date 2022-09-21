@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait SpreadElement_
   extends StObject
      with BaseNode
+     with Standardized
      with UnaryLike {
   
   var argument: Expression

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ISize extends StObject {
   
   /**
-    * Heighht
+    * Height
     */
   var height: Double
   

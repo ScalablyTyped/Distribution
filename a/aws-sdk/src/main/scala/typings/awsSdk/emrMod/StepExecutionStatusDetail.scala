@@ -9,12 +9,12 @@ trait StepExecutionStatusDetail extends StObject {
   /**
     * The creation date and time of the step.
     */
-  var CreationDateTime: Date
+  var CreationDateTime: js.Date
   
   /**
     * The completion date and time of the step.
     */
-  var EndDateTime: js.UndefOr[Date] = js.undefined
+  var EndDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the step's current state.
@@ -24,7 +24,7 @@ trait StepExecutionStatusDetail extends StObject {
   /**
     * The start date and time of the step.
     */
-  var StartDateTime: js.UndefOr[Date] = js.undefined
+  var StartDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the step.
@@ -33,16 +33,16 @@ trait StepExecutionStatusDetail extends StObject {
 }
 object StepExecutionStatusDetail {
   
-  inline def apply(CreationDateTime: Date, State: StepExecutionState): StepExecutionStatusDetail = {
+  inline def apply(CreationDateTime: js.Date, State: StepExecutionState): StepExecutionStatusDetail = {
     val __obj = js.Dynamic.literal(CreationDateTime = CreationDateTime.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepExecutionStatusDetail]
   }
   
   extension [Self <: StepExecutionStatusDetail](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    inline def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: js.Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
     inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
@@ -50,7 +50,7 @@ object StepExecutionStatusDetail {
     
     inline def setLastStateChangeReasonUndefined: Self = StObject.set(x, "LastStateChangeReason", js.undefined)
     
-    inline def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: js.Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
     inline def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
     

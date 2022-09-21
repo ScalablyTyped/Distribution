@@ -41,10 +41,10 @@ object Accepttlschannelid {
     
     inline def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value*))
     
     inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object FontLikeObject {
     
     inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    inline def setFamilyVarargs(value: String*): Self = StObject.set(x, "family", js.Array(value :_*))
+    inline def setFamilyVarargs(value: String*): Self = StObject.set(x, "family", js.Array(value*))
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

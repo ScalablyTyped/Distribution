@@ -10,10 +10,10 @@ The lodash method `_.isElement` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.iselement |
 | Keywords           | lodash-modularized, iselement |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 145072 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 35362.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

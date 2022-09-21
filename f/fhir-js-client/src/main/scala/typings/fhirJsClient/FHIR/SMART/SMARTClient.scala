@@ -14,7 +14,7 @@ trait SMARTClient
     * @param input
     * Returns: The object populated with Authorization header
     */
-  def authenticated(input: js.Any): js.Any = js.native
+  def authenticated(input: Any): Any = js.native
   
   /**
     * OAuth2 configuration used in context
@@ -24,5 +24,5 @@ trait SMARTClient
   /**
     * OAuth2 Access Token response
     */
-  var tokenResponse: js.UndefOr[js.Any] = js.native
+  var tokenResponse: js.UndefOr[Any] = js.native
 }

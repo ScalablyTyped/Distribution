@@ -10,12 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new queue
   */
-class SimplificationQueue ()
+open class SimplificationQueue ()
   extends StObject
      with typings.babylonjs.BABYLON.SimplificationQueue {
   
   /* private */ /* CompleteClass */
-  var _simplificationArray: js.Any = js.native
+  var _getSimplifier: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _simplificationArray: Any = js.native
   
   /**
     * Adds a new simplification task
@@ -29,9 +32,6 @@ class SimplificationQueue ()
     */
   /* CompleteClass */
   override def executeNext(): Unit = js.native
-  
-  /* private */ /* CompleteClass */
-  var getSimplifier: js.Any = js.native
   
   /**
     * Execute a simplification task

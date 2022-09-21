@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRecommendationsResponse extends StObject {
   
   /**
-    *  Pagination token. 
+    * Pagination token.
     */
   var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.undefined
   
   /**
-    *  List of recommendations for the requested code review. 
+    * List of recommendations for the requested code review.
     */
   var RecommendationSummaries: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationSummaries] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListRecommendationsResponse {
     
     inline def setRecommendationSummariesUndefined: Self = StObject.set(x, "RecommendationSummaries", js.undefined)
     
-    inline def setRecommendationSummariesVarargs(value: RecommendationSummary*): Self = StObject.set(x, "RecommendationSummaries", js.Array(value :_*))
+    inline def setRecommendationSummariesVarargs(value: RecommendationSummary*): Self = StObject.set(x, "RecommendationSummaries", js.Array(value*))
   }
 }

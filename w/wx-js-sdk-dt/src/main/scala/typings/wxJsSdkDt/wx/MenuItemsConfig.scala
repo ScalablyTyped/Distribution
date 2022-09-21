@@ -24,6 +24,6 @@ object MenuItemsConfig {
     
     inline def setMenuList(value: js.Array[String]): Self = StObject.set(x, "menuList", value.asInstanceOf[js.Any])
     
-    inline def setMenuListVarargs(value: String*): Self = StObject.set(x, "menuList", js.Array(value :_*))
+    inline def setMenuListVarargs(value: String*): Self = StObject.set(x, "menuList", js.Array(value*))
   }
 }

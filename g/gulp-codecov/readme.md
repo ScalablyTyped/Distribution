@@ -10,10 +10,10 @@ Gulp plugin to submit code coverage to Codecov
 | ------------------ | :-------------: |
 | Full name          | gulp-codecov |
 | Keywords           | gulpplugin, coverage, codecov, gulp-codecov, code-coverage, codecov.io, gulp |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 12300 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 405.3333333333333 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/eddiemoore/gulp-codecov)

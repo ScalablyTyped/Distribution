@@ -1,15 +1,15 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
+import typings.hdrHistogramJs.histogramMod.Histogram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object histogramLogWriterMod {
   
-  @JSImport("hdr-histogram-js/HistogramLogWriter", JSImport.Default)
+  @JSImport("hdr-histogram-js/dist/HistogramLogWriter", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with HistogramLogWriter {
     def this(log: Writable) = this()
@@ -26,7 +26,7 @@ object histogramLogWriterMod {
       */
     var baseTime: Double = js.native
     
-    /* private */ var log: js.Any = js.native
+    /* private */ var log: Any = js.native
     
     /**
       * Log a comment to the log.
@@ -46,34 +46,19 @@ object histogramLogWriterMod {
       * @param histogram The interval histogram to log.
       * @param maxValueUnitRatio The ratio by which to divide the histogram's max value when reporting on it.
       */
-    def outputIntervalHistogram(histogram: AbstractHistogram): Unit = js.native
-    def outputIntervalHistogram(histogram: AbstractHistogram, startTimeStampSec: Double): Unit = js.native
-    def outputIntervalHistogram(histogram: AbstractHistogram, startTimeStampSec: Double, endTimeStampSec: Double): Unit = js.native
+    def outputIntervalHistogram(histogram: Histogram): Unit = js.native
+    def outputIntervalHistogram(histogram: Histogram, startTimeStampSec: Double): Unit = js.native
+    def outputIntervalHistogram(histogram: Histogram, startTimeStampSec: Double, endTimeStampSec: Double): Unit = js.native
     def outputIntervalHistogram(
-      histogram: AbstractHistogram,
+      histogram: Histogram,
       startTimeStampSec: Double,
       endTimeStampSec: Double,
       maxValueUnitRatio: Double
     ): Unit = js.native
-    def outputIntervalHistogram(
-      histogram: AbstractHistogram,
-      startTimeStampSec: Double,
-      endTimeStampSec: Unit,
-      maxValueUnitRatio: Double
-    ): Unit = js.native
-    def outputIntervalHistogram(histogram: AbstractHistogram, startTimeStampSec: Unit, endTimeStampSec: Double): Unit = js.native
-    def outputIntervalHistogram(
-      histogram: AbstractHistogram,
-      startTimeStampSec: Unit,
-      endTimeStampSec: Double,
-      maxValueUnitRatio: Double
-    ): Unit = js.native
-    def outputIntervalHistogram(
-      histogram: AbstractHistogram,
-      startTimeStampSec: Unit,
-      endTimeStampSec: Unit,
-      maxValueUnitRatio: Double
-    ): Unit = js.native
+    def outputIntervalHistogram(histogram: Histogram, startTimeStampSec: Double, endTimeStampSec: Unit, maxValueUnitRatio: Double): Unit = js.native
+    def outputIntervalHistogram(histogram: Histogram, startTimeStampSec: Unit, endTimeStampSec: Double): Unit = js.native
+    def outputIntervalHistogram(histogram: Histogram, startTimeStampSec: Unit, endTimeStampSec: Double, maxValueUnitRatio: Double): Unit = js.native
+    def outputIntervalHistogram(histogram: Histogram, startTimeStampSec: Unit, endTimeStampSec: Unit, maxValueUnitRatio: Double): Unit = js.native
     
     /**
       * Output a legend line to the log.

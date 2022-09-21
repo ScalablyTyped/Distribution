@@ -6,13 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListQueriesResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "doubleclickbidmanager#listQueriesResponse". */
-  var kind: js.UndefOr[String] = js.undefined
-  
-  /** Next page's pagination token if one exists. */
+  /** A token, which can be sent as page_token to retrieve the next page of queries. If this field is omitted, there are no subsequent pages. */
   var nextPageToken: js.UndefOr[String] = js.undefined
   
-  /** Retrieved queries. */
+  /** The list of queries. */
   var queries: js.UndefOr[js.Array[Query]] = js.undefined
 }
 object ListQueriesResponse {
@@ -24,10 +21,6 @@ object ListQueriesResponse {
   
   extension [Self <: ListQueriesResponse](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
@@ -36,6 +29,6 @@ object ListQueriesResponse {
     
     inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    inline def setQueriesVarargs(value: Query*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: Query*): Self = StObject.set(x, "queries", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object ListAppImageConfigsResponse {
     
     inline def setAppImageConfigsUndefined: Self = StObject.set(x, "AppImageConfigs", js.undefined)
     
-    inline def setAppImageConfigsVarargs(value: AppImageConfigDetails*): Self = StObject.set(x, "AppImageConfigs", js.Array(value :_*))
+    inline def setAppImageConfigsVarargs(value: AppImageConfigDetails*): Self = StObject.set(x, "AppImageConfigs", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

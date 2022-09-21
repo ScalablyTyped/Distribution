@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1.Androidenterprise
-import typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1.Options
-import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.googleapisStrings.v1alpha
+import typings.googleapis.v1alphaMod.analyticsadminV1alpha.Analyticsadmin
+import typings.googleapis.v1alphaMod.analyticsadminV1alpha.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn11 extends StObject {
   
-  def apply(options: Options): Androidenterprise = js.native
-  def apply(version: v1): Androidenterprise = js.native
+  def apply(options: Options): Analyticsadmin = js.native
+  def apply(version: v1alpha): Analyticsadmin = js.native
 }

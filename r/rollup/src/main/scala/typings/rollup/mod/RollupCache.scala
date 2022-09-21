@@ -22,7 +22,7 @@ object RollupCache {
     
     inline def setModules(value: js.Array[ModuleJSON]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    inline def setModulesVarargs(value: ModuleJSON*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: ModuleJSON*): Self = StObject.set(x, "modules", js.Array(value*))
     
     inline def setPlugins(value: Record[String, SerializablePluginCache]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     

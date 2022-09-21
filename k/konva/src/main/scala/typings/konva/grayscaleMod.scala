@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object grayscaleMod {
   
-  @JSImport("konva/types/filters/Grayscale", "Grayscale")
+  @JSImport("konva/lib/filters/Grayscale", "Grayscale")
   @js.native
   val Grayscale: Filter = js.native
 }

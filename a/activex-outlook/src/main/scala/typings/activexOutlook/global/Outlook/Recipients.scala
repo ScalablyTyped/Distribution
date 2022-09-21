@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Recipients")
 @js.native
-/* private */ class Recipients ()
+/* private */ open class Recipients ()
   extends StObject
      with typings.activexOutlook.Outlook.Recipients {
   
@@ -24,14 +24,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.Recipient = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.Recipient = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.Recipients_typekey")
   var OutlookDotRecipients_typekey: typings.activexOutlook.Outlook.Recipients = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Remove(Index: Double): Unit = js.native

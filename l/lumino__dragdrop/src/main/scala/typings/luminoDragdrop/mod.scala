@@ -3,9 +3,11 @@ package typings.luminoDragdrop
 import typings.luminoCoreutils.mod.MimeData
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoDragdrop.mod.Drag.IOptions
+import typings.std.Document
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +16,7 @@ object mod {
   
   @JSImport("@lumino/dragdrop", "Drag")
   @js.native
-  class Drag protected ()
+  open class Drag protected ()
     extends StObject
        with IDisposable {
     /**
@@ -27,82 +29,82 @@ object mod {
     /**
       * Add the document event listeners for the drag object.
       */
-    /* private */ var _addListeners: js.Any = js.native
+    /* private */ var _addListeners: Any = js.native
     
     /**
       * Attach the drag image element at the specified location.
       *
       * This is a no-op if there is no drag image element.
       */
-    /* private */ var _attachDragImage: js.Any = js.native
+    /* private */ var _attachDragImage: Any = js.native
     
-    /* private */ var _currentElement: js.Any = js.native
+    /* private */ var _currentElement: Any = js.native
     
-    /* private */ var _currentTarget: js.Any = js.native
+    /* private */ var _currentTarget: Any = js.native
     
     /**
       * Detach the drag image element from the DOM.
       *
       * This is a no-op if there is no drag image element.
       */
-    /* private */ var _detachDragImage: js.Any = js.native
+    /* private */ var _detachDragImage: Any = js.native
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _dropAction: js.Any = js.native
+    /* private */ var _dropAction: Any = js.native
     
     /**
       * Handle the `'keydown'` event for the drag object.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the drag object.
       */
-    /* private */ var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the drag object.
       */
-    /* private */ var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: Any = js.native
     
     /**
       * Finalize the drag operation and resolve the drag promise.
       */
-    /* private */ var _finalize: js.Any = js.native
+    /* private */ var _finalize: Any = js.native
     
     /**
       * The scroll loop handler function.
       */
-    /* private */ var _onScrollFrame: js.Any = js.native
+    /* private */ var _onScrollFrame: Any = js.native
     
-    /* private */ var _override: js.Any = js.native
+    /* private */ var _override: Any = js.native
     
-    /* private */ var _promise: js.Any = js.native
+    /* private */ var _promise: Any = js.native
     
     /**
       * Remove the document event listeners for the drag object.
       */
-    /* private */ var _removeListeners: js.Any = js.native
+    /* private */ var _removeListeners: Any = js.native
     
-    /* private */ var _resolve: js.Any = js.native
+    /* private */ var _resolve: Any = js.native
     
-    /* private */ var _scrollTarget: js.Any = js.native
+    /* private */ var _scrollTarget: Any = js.native
     
     /**
       * Set the internal drop action state and update the drag cursor.
       */
-    /* private */ var _setDropAction: js.Any = js.native
+    /* private */ var _setDropAction: Any = js.native
     
     /**
       * Update the current target node using the given mouse event.
       */
-    /* private */ var _updateCurrentTarget: js.Any = js.native
+    /* private */ var _updateCurrentTarget: Any = js.native
     
     /**
       * Update the drag scroll element under the mouse.
       */
-    /* private */ var _updateDragScroll: js.Any = js.native
+    /* private */ var _updateDragScroll: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -117,6 +119,11 @@ object mod {
       */
     /* CompleteClass */
     override def dispose(): Unit = js.native
+    
+    /**
+      * The target document for dragging events.
+      */
+    val document: Document | ShadowRoot = js.native
     
     /**
       * The drag image element for the drag object.
@@ -164,7 +171,7 @@ object mod {
     /**
       * Get the drag source for the drag object.
       */
-    val source: js.Any = js.native
+    val source: Any = js.native
     
     /**
       * Start the drag operation at the specified client position.
@@ -227,11 +234,18 @@ object mod {
       * ```
       */
     inline def overrideCursor(cursor: String): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+    inline def overrideCursor(cursor: String, doc: Document): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
+    inline def overrideCursor(cursor: String, doc: ShadowRoot): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
     
     /**
       * An options object for initializing a `Drag` object.
       */
     trait IOptions extends StObject {
+      
+      /**
+        * The root element for dragging DOM artifacts (defaults to document).
+        */
+      var document: js.UndefOr[Document | ShadowRoot] = js.undefined
       
       /**
         * An optional drag image which follows the mouse cursor.
@@ -277,7 +291,7 @@ object mod {
         *
         * The default value is `null`.
         */
-      var source: js.UndefOr[js.Any] = js.undefined
+      var source: js.UndefOr[Any] = js.undefined
       
       /**
         * The drop actions supported by the drag initiator.
@@ -302,6 +316,10 @@ object mod {
       
       extension [Self <: IOptions](x: Self) {
         
+        inline def setDocument(value: Document | ShadowRoot): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+        
+        inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+        
         inline def setDragImage(value: HTMLElement): Self = StObject.set(x, "dragImage", value.asInstanceOf[js.Any])
         
         inline def setDragImageUndefined: Self = StObject.set(x, "dragImage", js.undefined)
@@ -312,7 +330,7 @@ object mod {
         
         inline def setProposedActionUndefined: Self = StObject.set(x, "proposedAction", js.undefined)
         
-        inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
         inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
         
@@ -387,7 +405,7 @@ object mod {
       * a source object to the drop targets. That will be provided here
       * if given by the drag initiator, otherwise it will be `null`.
       */
-    val source: js.Any = js.native
+    val source: Any = js.native
     
     /**
       * The drop actions supported by the drag initiator.

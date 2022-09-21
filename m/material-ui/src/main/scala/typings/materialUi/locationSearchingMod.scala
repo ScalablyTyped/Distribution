@@ -10,10 +10,10 @@ object locationSearchingMod {
   
   @JSImport("material-ui/svg-icons/device/location-searching", JSImport.Default)
   @js.native
-  class default () extends DeviceLocationSearching
+  open class default () extends DeviceLocationSearching
   
   @JSImport("material-ui/svg-icons/device/location-searching", "DeviceLocationSearching")
   @js.native
-  class DeviceLocationSearching ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceLocationSearching ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

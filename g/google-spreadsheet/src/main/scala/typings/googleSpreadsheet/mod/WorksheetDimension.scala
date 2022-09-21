@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.googleSpreadsheet.googleSpreadsheetStrings.ROW
-  - typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMN
+  - typings.googleSpreadsheet.googleSpreadsheetStrings.ROWS
+  - typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMNS
 */
 trait WorksheetDimension extends StObject
 object WorksheetDimension {
   
-  inline def COLUMN: typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMN = "COLUMN".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMN]
+  inline def COLUMNS: typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMNS = "COLUMNS".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMNS]
   
-  inline def ROW: typings.googleSpreadsheet.googleSpreadsheetStrings.ROW = "ROW".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.ROW]
+  inline def ROWS: typings.googleSpreadsheet.googleSpreadsheetStrings.ROWS = "ROWS".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.ROWS]
 }

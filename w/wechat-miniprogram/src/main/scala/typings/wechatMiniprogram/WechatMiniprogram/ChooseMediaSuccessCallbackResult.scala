@@ -28,7 +28,7 @@ object ChooseMediaSuccessCallbackResult {
     
     inline def setTempFiles(value: js.Array[MediaFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
-    inline def setTempFilesVarargs(value: MediaFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
+    inline def setTempFilesVarargs(value: MediaFile*): Self = StObject.set(x, "tempFiles", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

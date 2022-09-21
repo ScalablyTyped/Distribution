@@ -11,7 +11,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.BinaryAnnotation")
   @js.native
-  class BinaryAnnotation protected ()
+  open class BinaryAnnotation protected ()
     extends StObject
        with IAnnotation {
     def this(key: String, value: String) = this()
@@ -26,7 +26,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ClientAddr")
   @js.native
-  class ClientAddr protected ()
+  open class ClientAddr protected ()
     extends StObject
        with IAnnotation {
     def this(args: Port) = this()
@@ -37,7 +37,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ClientRecv")
   @js.native
-  class ClientRecv ()
+  open class ClientRecv ()
     extends StObject
        with IAnnotation {
     
@@ -47,7 +47,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ClientSend")
   @js.native
-  class ClientSend ()
+  open class ClientSend ()
     extends StObject
        with IAnnotation {
     
@@ -57,7 +57,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ConsumerStart")
   @js.native
-  class ConsumerStart ()
+  open class ConsumerStart ()
     extends StObject
        with IAnnotation {
     
@@ -67,7 +67,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ConsumerStop")
   @js.native
-  class ConsumerStop ()
+  open class ConsumerStop ()
     extends StObject
        with IAnnotation {
     
@@ -77,7 +77,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.LocalAddr")
   @js.native
-  class LocalAddr ()
+  open class LocalAddr ()
     extends StObject
        with IAnnotation {
     def this(args: HostPort) = this()
@@ -92,7 +92,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.LocalOperationStart")
   @js.native
-  class LocalOperationStart protected ()
+  open class LocalOperationStart protected ()
     extends StObject
        with IAnnotation {
     def this(name: String) = this()
@@ -105,7 +105,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.LocalOperationStop")
   @js.native
-  class LocalOperationStop ()
+  open class LocalOperationStop ()
     extends StObject
        with IAnnotation {
     
@@ -115,7 +115,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.Message")
   @js.native
-  class Message protected ()
+  open class Message protected ()
     extends StObject
        with IAnnotation {
     def this(message: String) = this()
@@ -128,7 +128,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.MessageAddr")
   @js.native
-  class MessageAddr protected ()
+  open class MessageAddr protected ()
     extends StObject
        with IAnnotation {
     def this(args: Host) = this()
@@ -145,7 +145,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ProducerStart")
   @js.native
-  class ProducerStart ()
+  open class ProducerStart ()
     extends StObject
        with IAnnotation {
     
@@ -155,7 +155,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ProducerStop")
   @js.native
-  class ProducerStop ()
+  open class ProducerStop ()
     extends StObject
        with IAnnotation {
     
@@ -165,7 +165,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.Rpc")
   @js.native
-  class Rpc protected ()
+  open class Rpc protected ()
     extends StObject
        with IAnnotation {
     def this(name: String) = this()
@@ -178,7 +178,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ServerAddr")
   @js.native
-  class ServerAddr protected ()
+  open class ServerAddr protected ()
     extends StObject
        with IAnnotation {
     def this(args: Host) = this()
@@ -195,7 +195,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ServerRecv")
   @js.native
-  class ServerRecv ()
+  open class ServerRecv ()
     extends StObject
        with IAnnotation {
     
@@ -205,7 +205,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ServerSend")
   @js.native
-  class ServerSend ()
+  open class ServerSend ()
     extends StObject
        with IAnnotation {
     
@@ -215,7 +215,7 @@ object Annotation {
   
   @JSImport("zipkin", "Annotation.ServiceName")
   @js.native
-  class ServiceName protected ()
+  open class ServiceName protected ()
     extends StObject
        with IAnnotation {
     def this(serviceName: String) = this()

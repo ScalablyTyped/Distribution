@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetGroupQueryOutput extends StObject {
   
   /**
-    * The resource query associated with the specified group.
+    * The resource query associated with the specified group. For more information about resource queries, see Create a tag-based group in Resource Groups.
     */
   var GroupQuery: js.UndefOr[typings.awsSdk.resourcegroupsMod.GroupQuery] = js.undefined
 }

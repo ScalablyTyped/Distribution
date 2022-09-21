@@ -19,6 +19,6 @@ object GetCredentialsResponse {
     
     inline def setCredentials(value: js.Array[Credential]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    inline def setCredentialsVarargs(value: Credential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
+    inline def setCredentialsVarargs(value: Credential*): Self = StObject.set(x, "credentials", js.Array(value*))
   }
 }

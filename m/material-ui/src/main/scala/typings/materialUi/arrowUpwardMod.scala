@@ -10,10 +10,10 @@ object arrowUpwardMod {
   
   @JSImport("material-ui/svg-icons/navigation/arrow-upward", JSImport.Default)
   @js.native
-  class default () extends NavigationArrowUpward
+  open class default () extends NavigationArrowUpward
   
   @JSImport("material-ui/svg-icons/navigation/arrow-upward", "NavigationArrowUpward")
   @js.native
-  class NavigationArrowUpward ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationArrowUpward ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,9 +1,5 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +9,7 @@ trait ParamsResourceProjectsInstancesTablesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Maximum number of results per page. CURRENTLY UNIMPLEMENTED AND IGNORED.
+    * Maximum number of results per page. A page_size of zero lets the server choose the number of items to return. A page_size which is strictly positive will return at most that many items. A negative page_size will cause an error. Following the first request, subsequent paginated calls are not required to pass a page_size. If a page_size is set in subsequent calls, it must match the page_size given in the first request.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
@@ -28,14 +19,12 @@ trait ParamsResourceProjectsInstancesTablesList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The unique name of the instance for which tables should be listed. Values
-    * are of the form `projects/<project>/instances/<instance>`.
+    * Required. The unique name of the instance for which tables should be listed. Values are of the form `projects/{project\}/instances/{instance\}`.
     */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * The view to be applied to the returned tables' fields. Defaults to
-    * `NAME_ONLY` if unspecified; no others are currently supported.
+    * The view to be applied to the returned tables' fields. Only NAME_ONLY view (default), REPLICATION_VIEW and ENCRYPTION_VIEW are supported.
     */
   var view: js.UndefOr[String] = js.undefined
 }
@@ -47,10 +36,6 @@ object ParamsResourceProjectsInstancesTablesList {
   }
   
   extension [Self <: ParamsResourceProjectsInstancesTablesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

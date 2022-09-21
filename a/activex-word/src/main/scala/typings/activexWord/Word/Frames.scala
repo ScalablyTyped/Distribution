@@ -18,7 +18,7 @@ trait Frames extends StObject {
   
   def Item(Index: Double): Frame
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Frames_typekey")
   var WordDotFrames_typekey: Frames
@@ -32,7 +32,7 @@ object Frames {
     Creator: Double,
     Delete: () => Unit,
     Item: Double => Frame,
-    Parent: js.Any,
+    Parent: Any,
     WordDotFrames_typekey: Frames
   ): Frames = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object Frames {
     
     inline def setItem(value: Double => Frame): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotFrames_typekey(value: Frames): Self = StObject.set(x, "Word.Frames_typekey", value.asInstanceOf[js.Any])
   }

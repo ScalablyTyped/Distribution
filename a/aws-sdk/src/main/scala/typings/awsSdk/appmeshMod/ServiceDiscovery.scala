@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceDiscovery extends StObject {
   
   /**
-    * Specifies any AWS Cloud Map information for the virtual node.
+    * Specifies any Cloud Map information for the virtual node.
     */
   var awsCloudMap: js.UndefOr[AwsCloudMapServiceDiscovery] = js.undefined
   

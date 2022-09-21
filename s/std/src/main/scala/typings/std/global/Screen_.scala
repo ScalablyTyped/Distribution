@@ -8,28 +8,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Screen")
 @js.native
-class Screen_ ()
+/* standard dom */
+open class Screen_ ()
   extends StObject
      with Screen {
   
+  /* standard dom */
   /* CompleteClass */
   override val availHeight: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val availWidth: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val colorDepth: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val height: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val orientation: typings.std.ScreenOrientation = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val pixelDepth: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val width: Double = js.native
 }

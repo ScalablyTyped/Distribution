@@ -55,7 +55,7 @@ object goog {
         * @param message
         * @param message.data
         */
-      def onmessage(message: js.Any): Unit
+      def onmessage(message: Any): Unit
       
       /**
         * Set this to a function called when the socket is ready to receive messages.
@@ -68,7 +68,7 @@ object goog {
         close: () => Unit,
         onclose: () => Unit,
         onerror: js.Function,
-        onmessage: js.Any => Unit,
+        onmessage: Any => Unit,
         onopen: () => Unit
       ): Socket = {
         val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), onclose = js.Any.fromFunction0(onclose), onerror = onerror.asInstanceOf[js.Any], onmessage = js.Any.fromFunction1(onmessage), onopen = js.Any.fromFunction0(onopen))
@@ -83,7 +83,7 @@ object goog {
         
         inline def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
         
-        inline def setOnmessage(value: js.Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+        inline def setOnmessage(value: Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
         
         inline def setOnopen(value: () => Unit): Self = StObject.set(x, "onopen", js.Any.fromFunction0(value))
       }

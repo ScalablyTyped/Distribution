@@ -22,6 +22,6 @@ object RemixInfo {
     
     inline def setSourceAssetUndefined: Self = StObject.set(x, "sourceAsset", js.undefined)
     
-    inline def setSourceAssetVarargs(value: String*): Self = StObject.set(x, "sourceAsset", js.Array(value :_*))
+    inline def setSourceAssetVarargs(value: String*): Self = StObject.set(x, "sourceAsset", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SipRuleTargetApplication extends StObject {
   
   /**
-    * AWS Region of target application.
+    * The AWS Region of the target application.
     */
   var AwsRegion: js.UndefOr[String] = js.undefined
   

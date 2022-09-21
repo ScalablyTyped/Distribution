@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Gaming.XboxLive.Storage
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait GameSaveContainerInfo extends StObject {
   var displayName: String
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var lastModifiedTime: Date
+  var lastModifiedTime: js.Date
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   var name: String
@@ -25,7 +24,13 @@ trait GameSaveContainerInfo extends StObject {
 }
 object GameSaveContainerInfo {
   
-  inline def apply(displayName: String, lastModifiedTime: Date, name: String, needsSync: Boolean, totalSize: Double): GameSaveContainerInfo = {
+  inline def apply(
+    displayName: String,
+    lastModifiedTime: js.Date,
+    name: String,
+    needsSync: Boolean,
+    totalSize: Double
+  ): GameSaveContainerInfo = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], lastModifiedTime = lastModifiedTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needsSync = needsSync.asInstanceOf[js.Any], totalSize = totalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSaveContainerInfo]
   }
@@ -34,7 +39,7 @@ object GameSaveContainerInfo {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Date): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

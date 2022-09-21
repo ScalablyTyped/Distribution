@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'input'> */
 trait ImagInputs extends StObject {
   
-  var input: js.UndefOr[js.Any] = js.undefined
+  var input: js.UndefOr[scala.Any] = js.undefined
 }
 object ImagInputs {
   
@@ -18,7 +18,7 @@ object ImagInputs {
   
   extension [Self <: ImagInputs](x: Self) {
     
-    inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: scala.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
   }

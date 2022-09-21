@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.DataNodeWrapper")
 @js.native
-class DataNodeWrapper ()
+open class DataNodeWrapper ()
   extends StObject
      with typings.sharepoint.CUI.DataNodeWrapper
 object DataNodeWrapper {

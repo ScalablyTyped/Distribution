@@ -1,10 +1,12 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod.Context
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.Window
@@ -12,23 +14,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object affixMod {
+object affixMod extends Shortcut {
   
   @JSImport("antd/lib/affix", JSImport.Default)
   @js.native
-  class default () extends Affix
-  object default {
-    
-    @JSImport("antd/lib/affix", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    @JSImport("antd/lib/affix", "default.contextType")
-    @js.native
-    def contextType: Context[ConfigConsumerProps] = js.native
-    inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
-  }
+  val default: ForwardRefExoticComponent[AffixProps & RefAttributes[Affix]] = js.native
   
   @js.native
   sealed trait AffixStatus extends StObject
@@ -48,8 +38,7 @@ object affixMod {
   }
   
   @js.native
-  trait Affix
-    extends Component[AffixProps, AffixState, js.Any] {
+  trait Affix extends Component[InternalAffixProps, AffixState, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MAffix(): Unit = js.native
@@ -69,7 +58,7 @@ object affixMod {
     
     def getOffsetTop(): js.UndefOr[Double] = js.native
     
-    /* private */ var getTargetFunc: js.Any = js.native
+    /* private */ var getTargetFunc: Any = js.native
     
     def lazyUpdatePosition(): Unit = js.native
     
@@ -83,7 +72,7 @@ object affixMod {
     
     def savePlaceholderNode(node: HTMLDivElement): Unit = js.native
     
-    /* private */ var timeout: js.Any = js.native
+    /* private */ var timeout: Any = js.native
     
     def updatePosition(): Unit = js.native
   }
@@ -97,9 +86,7 @@ object affixMod {
     /** 距离窗口底部达到指定偏移量后触发 */
     var offsetBottom: js.UndefOr[Double] = js.undefined
     
-    /**
-      * 距离窗口顶部达到指定偏移量后触发
-      */
+    /** 距离窗口顶部达到指定偏移量后触发 */
     var offsetTop: js.UndefOr[Double] = js.undefined
     
     /** 固定状态改变时触发的回调函数 */
@@ -193,4 +180,30 @@ object affixMod {
       inline def setStatus(value: AffixStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
+  
+  type InternalAffixClass = Affix
+  
+  trait InternalAffixProps
+    extends StObject
+       with AffixProps {
+    
+    var affixPrefixCls: String
+  }
+  object InternalAffixProps {
+    
+    inline def apply(affixPrefixCls: String): InternalAffixProps = {
+      val __obj = js.Dynamic.literal(affixPrefixCls = affixPrefixCls.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InternalAffixProps]
+    }
+    
+    extension [Self <: InternalAffixProps](x: Self) {
+      
+      inline def setAffixPrefixCls(value: String): Self = StObject.set(x, "affixPrefixCls", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type _To = ForwardRefExoticComponent[AffixProps & RefAttributes[Affix]]
+  
+  /* This means you don't have to write `default`, but can instead just say `affixMod.foo` */
+  override def _to: ForwardRefExoticComponent[AffixProps & RefAttributes[Affix]] = default
 }

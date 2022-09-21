@@ -23,7 +23,7 @@ trait ProtectedViewWindows extends StObject {
   def Open(FileName: String, ReadPassword: String, OpenAndRepair: MsoTriState): ProtectedViewWindow = js.native
   def Open(FileName: String, ReadPassword: Unit, OpenAndRepair: MsoTriState): ProtectedViewWindow = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.ProtectedViewWindows_typekey")
   var PowerPointDotProtectedViewWindows_typekey: ProtectedViewWindows = js.native

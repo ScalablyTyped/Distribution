@@ -10,11 +10,11 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var toastMessageFactory: js.Any
+    var toastMessageFactory: Any
   }
   object ClassName {
     
-    inline def apply(toastMessageFactory: js.Any): ClassName = {
+    inline def apply(toastMessageFactory: Any): ClassName = {
       val __obj = js.Dynamic.literal(toastMessageFactory = toastMessageFactory.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassName]
     }
@@ -25,7 +25,7 @@ object anon {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setToastMessageFactory(value: js.Any): Self = StObject.set(x, "toastMessageFactory", value.asInstanceOf[js.Any])
+      inline def setToastMessageFactory(value: Any): Self = StObject.set(x, "toastMessageFactory", value.asInstanceOf[js.Any])
     }
   }
 }

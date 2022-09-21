@@ -19,7 +19,7 @@ trait StackResourceDetail extends StObject {
   /**
     * Time the status was updated.
     */
-  var LastUpdatedTimestamp: Timestamp
+  var LastUpdatedTimestamp: js.Date
   
   /**
     * The logical name of the resource specified in the template.
@@ -27,12 +27,17 @@ trait StackResourceDetail extends StObject {
   var LogicalResourceId: typings.awsSdk.cloudformationMod.LogicalResourceId
   
   /**
-    * The content of the Metadata attribute declared for the resource. For more information, see Metadata Attribute in the AWS CloudFormation User Guide.
+    * The content of the Metadata attribute declared for the resource. For more information, see Metadata Attribute in the CloudFormation User Guide.
     */
   var Metadata: js.UndefOr[typings.awsSdk.cloudformationMod.Metadata] = js.undefined
   
   /**
-    * The name or unique identifier that corresponds to a physical instance ID of a resource supported by AWS CloudFormation.
+    * Contains information about the module from which the resource was created, if the resource was created from a module included in the stack template.
+    */
+  var ModuleInfo: js.UndefOr[typings.awsSdk.cloudformationMod.ModuleInfo] = js.undefined
+  
+  /**
+    * The name or unique identifier that corresponds to a physical instance ID of a resource supported by CloudFormation.
     */
   var PhysicalResourceId: js.UndefOr[typings.awsSdk.cloudformationMod.PhysicalResourceId] = js.undefined
   
@@ -47,7 +52,7 @@ trait StackResourceDetail extends StObject {
   var ResourceStatusReason: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceStatusReason] = js.undefined
   
   /**
-    * Type of resource. ((For more information, go to  AWS Resource Types Reference in the AWS CloudFormation User Guide.)
+    * Type of resource. For more information, go to Amazon Web Services Resource Types Reference in the CloudFormation User Guide.
     */
   var ResourceType: typings.awsSdk.cloudformationMod.ResourceType
   
@@ -64,7 +69,7 @@ trait StackResourceDetail extends StObject {
 object StackResourceDetail {
   
   inline def apply(
-    LastUpdatedTimestamp: Timestamp,
+    LastUpdatedTimestamp: js.Date,
     LogicalResourceId: LogicalResourceId,
     ResourceStatus: ResourceStatus,
     ResourceType: ResourceType
@@ -83,13 +88,17 @@ object StackResourceDetail {
     
     inline def setDriftInformationUndefined: Self = StObject.set(x, "DriftInformation", js.undefined)
     
-    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    
+    inline def setModuleInfo(value: ModuleInfo): Self = StObject.set(x, "ModuleInfo", value.asInstanceOf[js.Any])
+    
+    inline def setModuleInfoUndefined: Self = StObject.set(x, "ModuleInfo", js.undefined)
     
     inline def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
     

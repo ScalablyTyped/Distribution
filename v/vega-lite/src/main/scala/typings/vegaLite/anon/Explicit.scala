@@ -1,5 +1,6 @@
 package typings.vegaLite.anon
 
+import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,11 +10,11 @@ trait Explicit extends StObject {
   
   var explicit: Boolean
   
-  var value: String | js.Array[String] | SignalRef
+  var value: SignalRef | Text
 }
 object Explicit {
   
-  inline def apply(explicit: Boolean, value: String | js.Array[String] | SignalRef): Explicit = {
+  inline def apply(explicit: Boolean, value: SignalRef | Text): Explicit = {
     val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Explicit]
   }
@@ -22,8 +23,8 @@ object Explicit {
     
     inline def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String | js.Array[String] | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SignalRef | Text): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

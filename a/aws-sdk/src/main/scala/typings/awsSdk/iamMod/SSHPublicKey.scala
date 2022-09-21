@@ -22,14 +22,14 @@ trait SSHPublicKey extends StObject {
   var SSHPublicKeyId: publicKeyIdType
   
   /**
-    * The status of the SSH public key. Active means that the key can be used for authentication with an AWS CodeCommit repository. Inactive means that the key cannot be used.
+    * The status of the SSH public key. Active means that the key can be used for authentication with an CodeCommit repository. Inactive means that the key cannot be used.
     */
   var Status: statusType
   
   /**
     * The date and time, in ISO 8601 date-time format, when the SSH public key was uploaded.
     */
-  var UploadDate: js.UndefOr[dateType] = js.undefined
+  var UploadDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the IAM user associated with the SSH public key.
@@ -59,7 +59,7 @@ object SSHPublicKey {
     
     inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
+    inline def setUploadDate(value: js.Date): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
     inline def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
     

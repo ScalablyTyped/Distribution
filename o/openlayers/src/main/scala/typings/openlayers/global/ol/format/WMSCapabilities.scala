@@ -18,5 +18,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @api
   */
-class WMSCapabilities ()
+open class WMSCapabilities ()
   extends typings.openlayers.mod.format.WMSCapabilities

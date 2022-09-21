@@ -12,7 +12,7 @@ trait WorkItemClassificationNode
   /**
     * Dictionary that has node attributes like start/finish date for iteration nodes.
     */
-  var attributes: StringDictionary[js.Any]
+  var attributes: StringDictionary[Any]
   
   /**
     * List of child nodes fetched.
@@ -47,8 +47,8 @@ trait WorkItemClassificationNode
 object WorkItemClassificationNode {
   
   inline def apply(
-    _links: js.Any,
-    attributes: StringDictionary[js.Any],
+    _links: Any,
+    attributes: StringDictionary[Any],
     children: js.Array[WorkItemClassificationNode],
     hasChildren: Boolean,
     id: Double,
@@ -63,11 +63,11 @@ object WorkItemClassificationNode {
   
   extension [Self <: WorkItemClassificationNode](x: Self) {
     
-    inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setChildren(value: js.Array[WorkItemClassificationNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: WorkItemClassificationNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: WorkItemClassificationNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
     

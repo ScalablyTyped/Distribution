@@ -86,7 +86,7 @@ object XSimpleTabController {
     getActiveTabID: () => Double,
     getTabProps: Double => SafeArray[NamedValue],
     insertTab: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTab: Double => Unit,
     removeTabListener: XTabListener => Unit,

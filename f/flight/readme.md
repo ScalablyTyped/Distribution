@@ -10,10 +10,10 @@ Simple flat file database
 | ------------------ | :-------------: |
 | Full name          | flight |
 | Keywords           | database, flat, file |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 253 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/flight)

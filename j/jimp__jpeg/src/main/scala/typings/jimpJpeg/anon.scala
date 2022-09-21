@@ -5,7 +5,7 @@ import typings.jimpCore.etcMod.DecoderFn
 import typings.jimpCore.etcMod.EncoderFn
 import typings.jimpCore.etcMod.Image
 import typings.jimpJpeg.jimpJpegStrings.imageSlashjpeg
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ object anon {
       
       inline def setImageSlashjpeg(value: js.Array[String]): Self = StObject.set(x, "image/jpeg", value.asInstanceOf[js.Any])
       
-      inline def setImageSlashjpegVarargs(value: String*): Self = StObject.set(x, "image/jpeg", js.Array(value :_*))
+      inline def setImageSlashjpegVarargs(value: String*): Self = StObject.set(x, "image/jpeg", js.Array(value*))
     }
   }
   

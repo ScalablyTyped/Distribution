@@ -25,7 +25,7 @@ object GooglePrivacyDlpV2Regex {
     
     inline def setGroupIndexesUndefined: Self = StObject.set(x, "groupIndexes", js.undefined)
     
-    inline def setGroupIndexesVarargs(value: Double*): Self = StObject.set(x, "groupIndexes", js.Array(value :_*))
+    inline def setGroupIndexesVarargs(value: Double*): Self = StObject.set(x, "groupIndexes", js.Array(value*))
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

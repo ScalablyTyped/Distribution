@@ -25,7 +25,7 @@ object ListAdvertisersResponse {
     
     inline def setAdvertisersUndefined: Self = StObject.set(x, "advertisers", js.undefined)
     
-    inline def setAdvertisersVarargs(value: Advertiser*): Self = StObject.set(x, "advertisers", js.Array(value :_*))
+    inline def setAdvertisersVarargs(value: Advertiser*): Self = StObject.set(x, "advertisers", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

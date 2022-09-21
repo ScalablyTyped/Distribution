@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsConstructor
   extends StObject
      with /**
-  * The Directions Widget provides a way to build driving and walking directions using ArcGIS Online and custom Network Analysis Route services.
+  * The Directions widget provides a way to calculate directions, between two or more input locations with a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html), using ArcGIS Online and custom Network Analysis Route services.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html)
   */

@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Construct an object holding an empty list of ChangedEvents and no .name.
   */
-class Transaction ()
+open class Transaction ()
   extends typings.go.mod.Transaction

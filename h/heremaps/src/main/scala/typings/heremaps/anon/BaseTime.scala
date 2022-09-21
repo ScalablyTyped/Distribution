@@ -40,7 +40,7 @@ object BaseTime {
     
     inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ trait RelationalDatabaseEvent extends StObject {
   /**
     * The timestamp when the database event was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The category that the database event belongs to.
@@ -35,7 +35,7 @@ object RelationalDatabaseEvent {
   
   extension [Self <: RelationalDatabaseEvent](x: Self) {
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -43,7 +43,7 @@ object RelationalDatabaseEvent {
     
     inline def setEventCategoriesUndefined: Self = StObject.set(x, "eventCategories", js.undefined)
     
-    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "eventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "eventCategories", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -12,27 +12,24 @@ trait SchemaOrdersCustomBatchRequestEntryRefund extends StObject {
   var amount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * The amount that is refunded. Either amount or amountPretax should be
-    * filled.
+    * The amount that is refunded. Either amount or amountPretax should be filled.
     */
   var amountPretax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * Tax amount that corresponds to refund amount in amountPretax. Optional,
-    * but if filled, amountPretax must be set. Calculated automatically if not
-    * provided.
+    * Tax amount that corresponds to refund amount in amountPretax. Optional, but if filled, amountPretax must be set. Calculated automatically if not provided.
     */
   var amountTax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * The reason for the refund.
+    * The reason for the refund. Acceptable values are: - "`adjustment`" - "`courtesyAdjustment`" - "`customerCanceled`" - "`customerDiscretionaryReturn`" - "`deliveredLateByCarrier`" - "`feeAdjustment`" - "`lateShipmentCredit`" - "`noInventory`" - "`other`" - "`priceError`" - "`productArrivedDamaged`" - "`productNotAsDescribed`" - "`shippingCostAdjustment`" - "`taxAdjustment`" - "`undeliverableShippingAddress`" - "`wrongProductShipped`"
     */
-  var reason: js.UndefOr[String] = js.undefined
+  var reason: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The explanation of the reason.
     */
-  var reasonText: js.UndefOr[String] = js.undefined
+  var reasonText: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntryRefund {
   
@@ -57,7 +54,11 @@ object SchemaOrdersCustomBatchRequestEntryRefund {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
+    
     inline def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
+    
+    inline def setReasonTextNull: Self = StObject.set(x, "reasonText", null)
     
     inline def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     

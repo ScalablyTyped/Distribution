@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ValueFunction extends StObject {
   
-  def valueFunction(`val`: String): js.Any
+  def valueFunction(`val`: String): Any
 }
 object ValueFunction {
   
-  inline def apply(valueFunction: String => js.Any): ValueFunction = {
+  inline def apply(valueFunction: String => Any): ValueFunction = {
     val __obj = js.Dynamic.literal(valueFunction = js.Any.fromFunction1(valueFunction))
     __obj.asInstanceOf[ValueFunction]
   }
   
   extension [Self <: ValueFunction](x: Self) {
     
-    inline def setValueFunction(value: String => js.Any): Self = StObject.set(x, "valueFunction", js.Any.fromFunction1(value))
+    inline def setValueFunction(value: String => Any): Self = StObject.set(x, "valueFunction", js.Any.fromFunction1(value))
   }
 }

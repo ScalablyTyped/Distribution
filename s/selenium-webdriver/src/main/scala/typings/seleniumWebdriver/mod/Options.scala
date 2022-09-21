@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "Options")
 @js.native
-class Options protected () extends StObject {
+open class Options protected () extends StObject {
   // region Constructors
   /**
     * @param {!WebDriver} driver The parent driver.

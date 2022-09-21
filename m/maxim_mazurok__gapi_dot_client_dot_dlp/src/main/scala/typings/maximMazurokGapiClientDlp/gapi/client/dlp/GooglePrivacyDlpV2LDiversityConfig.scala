@@ -28,7 +28,7 @@ object GooglePrivacyDlpV2LDiversityConfig {
     
     inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "quasiIds", js.Array(value*))
     
     inline def setSensitiveAttribute(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "sensitiveAttribute", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,7 @@ object UpdateContactRequest {
     
     inline def setTopicPreferencesUndefined: Self = StObject.set(x, "TopicPreferences", js.undefined)
     
-    inline def setTopicPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicPreferences", js.Array(value :_*))
+    inline def setTopicPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicPreferences", js.Array(value*))
     
     inline def setUnsubscribeAll(value: UnsubscribeAll): Self = StObject.set(x, "UnsubscribeAll", value.asInstanceOf[js.Any])
     

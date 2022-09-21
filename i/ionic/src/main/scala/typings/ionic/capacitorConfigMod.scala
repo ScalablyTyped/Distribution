@@ -15,9 +15,9 @@ object capacitorConfigMod {
   
   @JSImport("ionic/lib/integrations/capacitor/config", "CapacitorConfig")
   @js.native
-  class CapacitorConfig protected () extends BaseConfig[CapacitorConfigFile] {
+  open class CapacitorConfig protected () extends BaseConfig[CapacitorConfigFile] {
     def this(p: String) = this()
-    def this(p: String, hasPathPrefix: BaseConfigOptions) = this()
+    def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
     
     def provideDefaults(config: CapacitorConfigFile): CapacitorConfigFile = js.native
     

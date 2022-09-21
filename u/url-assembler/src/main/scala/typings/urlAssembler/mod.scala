@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.qs.mod.IStringifyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("url-assembler", JSImport.Namespace)
   @js.native
-  class Class ()
+  open class Class ()
     extends StObject
        with UrlAssembler {
     def this(baseUrl: String) = this()
@@ -29,13 +30,17 @@ object mod extends Shortcut {
     
     def param(key: String, value: String): UrlAssembler = js.native
     def param(key: String, value: String, strict: Boolean): UrlAssembler = js.native
-    def param(params: StringDictionary[js.Any]): UrlAssembler = js.native
-    def param(params: StringDictionary[js.Any], strict: Boolean): UrlAssembler = js.native
+    def param(params: StringDictionary[Any]): UrlAssembler = js.native
+    def param(params: StringDictionary[Any], strict: Boolean): UrlAssembler = js.native
+    
+    var pathname: String = js.native
     
     def prefix(subPath: String): UrlAssembler = js.native
     
-    def query(key: String, value: js.Any): UrlAssembler = js.native
-    def query(params: StringDictionary[js.Any]): UrlAssembler = js.native
+    def qsConfig(config: IStringifyOptions): UrlAssembler = js.native
+    
+    def query(key: String, value: Any): UrlAssembler = js.native
+    def query(params: StringDictionary[Any]): UrlAssembler = js.native
     
     def segment(subPathTemplate: String): UrlAssembler = js.native
     

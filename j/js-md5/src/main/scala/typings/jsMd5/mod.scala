@@ -1,8 +1,6 @@
 package typings.jsMd5
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +15,11 @@ object mod extends Shortcut {
     
     def array(): js.Array[Double]
     
-    def arrayBuffer(): ArrayBuffer
+    def arrayBuffer(): js.typedarray.ArrayBuffer
     
     def base64(): String
     
-    def buffer(): ArrayBuffer
+    def buffer(): js.typedarray.ArrayBuffer
     
     def digest(): js.Array[Double]
     
@@ -33,9 +31,9 @@ object mod extends Shortcut {
     
     inline def apply(
       array: () => js.Array[Double],
-      arrayBuffer: () => ArrayBuffer,
+      arrayBuffer: () => js.typedarray.ArrayBuffer,
       base64: () => String,
-      buffer: () => ArrayBuffer,
+      buffer: () => js.typedarray.ArrayBuffer,
       digest: () => js.Array[Double],
       hex: () => String,
       update: message => Md5_
@@ -48,11 +46,11 @@ object mod extends Shortcut {
       
       inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       
-      inline def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => js.typedarray.ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
       inline def setBase64(value: () => String): Self = StObject.set(x, "base64", js.Any.fromFunction0(value))
       
-      inline def setBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
+      inline def setBuffer(value: () => js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
       
       inline def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
@@ -74,11 +72,11 @@ object mod extends Shortcut {
     
     def array(message: message): js.Array[Double] = js.native
     
-    def arrayBuffer(message: message): ArrayBuffer = js.native
+    def arrayBuffer(message: message): js.typedarray.ArrayBuffer = js.native
     
     def base64(message: message): String = js.native
     
-    def buffer(message: message): ArrayBuffer = js.native
+    def buffer(message: message): js.typedarray.ArrayBuffer = js.native
     
     def create(): Md5_ = js.native
     
@@ -89,5 +87,5 @@ object mod extends Shortcut {
     def update(message: message): Md5_ = js.native
   }
   
-  type message = String | js.Array[js.Any] | Uint8Array | ArrayBuffer
+  type message = String | js.Array[Any] | js.typedarray.Uint8Array | js.typedarray.ArrayBuffer
 }

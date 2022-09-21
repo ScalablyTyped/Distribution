@@ -1,20 +1,22 @@
 package typings.peculiarJsonSchema
 
 import typings.peculiarJsonSchema.typesMod.IValidation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/json-schema/build/types/validations/enumeration", JSImport.Namespace)
-@js.native
-object enumerationMod extends js.Object {
-  @js.native
-  class EnumerationValidation protected () extends IValidation {
-    def this(enumeration: js.Array[String]) = this()
-    var enumeration: js.Any = js.native
-    /* CompleteClass */
-    override def validate(value: js.Any): Unit = js.native
-  }
+object enumerationMod {
   
+  @JSImport("@peculiar/json-schema/build/types/validations/enumeration", "EnumerationValidation")
+  @js.native
+  open class EnumerationValidation protected ()
+    extends StObject
+       with IValidation {
+    def this(enumeration: js.Array[String]) = this()
+    
+    /* private */ var enumeration: Any = js.native
+    
+    /* CompleteClass */
+    override def validate(value: Any): Unit = js.native
+  }
 }
-

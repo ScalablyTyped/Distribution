@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.SiteUrl")
 @js.native
-class SiteUrl ()
+open class SiteUrl ()
   extends StObject
      with typings.sharepoint.SP.ClientObject

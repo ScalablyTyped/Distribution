@@ -29,6 +29,6 @@ object DescribeResourceGroupsResponse {
     
     inline def setResourceGroups(value: ResourceGroupList): Self = StObject.set(x, "resourceGroups", value.asInstanceOf[js.Any])
     
-    inline def setResourceGroupsVarargs(value: ResourceGroup*): Self = StObject.set(x, "resourceGroups", js.Array(value :_*))
+    inline def setResourceGroupsVarargs(value: ResourceGroup*): Self = StObject.set(x, "resourceGroups", js.Array(value*))
   }
 }

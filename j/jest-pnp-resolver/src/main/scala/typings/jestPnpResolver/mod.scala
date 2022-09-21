@@ -16,13 +16,13 @@ object mod {
     
     var basedir: String
     
-    def defaultResolver(request: String, opts: js.Any): String
+    def defaultResolver(request: String, opts: Any): String
     
     var extensions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object JestResolverOptions {
     
-    inline def apply(basedir: String, defaultResolver: (String, js.Any) => String): JestResolverOptions = {
+    inline def apply(basedir: String, defaultResolver: (String, Any) => String): JestResolverOptions = {
       val __obj = js.Dynamic.literal(basedir = basedir.asInstanceOf[js.Any], defaultResolver = js.Any.fromFunction2(defaultResolver))
       __obj.asInstanceOf[JestResolverOptions]
     }
@@ -31,13 +31,13 @@ object mod {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      inline def setDefaultResolver(value: (String, js.Any) => String): Self = StObject.set(x, "defaultResolver", js.Any.fromFunction2(value))
+      inline def setDefaultResolver(value: (String, Any) => String): Self = StObject.set(x, "defaultResolver", js.Any.fromFunction2(value))
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     }
   }
 }

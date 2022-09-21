@@ -8,13 +8,18 @@ object messageSupportingTypesMod {
   
   @JSImport("postmark/dist/client/models/message/SupportingTypes", "Attachment")
   @js.native
-  class Attachment protected () extends StObject {
+  open class Attachment protected () extends StObject {
     def this(Name: String, Content: String, ContentType: String) = this()
     def this(Name: String, Content: String, ContentType: String, ContentID: String) = this()
+    def this(Name: String, Content: String, ContentType: String, ContentID: String, ContentLength: Double) = this()
+    def this(Name: String, Content: String, ContentType: String, ContentID: Null, ContentLength: Double) = this()
+    def this(Name: String, Content: String, ContentType: String, ContentID: Unit, ContentLength: Double) = this()
     
     var Content: String = js.native
     
     var ContentID: String | Null = js.native
+    
+    var ContentLength: js.UndefOr[Double] = js.native
     
     var ContentType: String = js.native
     
@@ -23,7 +28,7 @@ object messageSupportingTypesMod {
   
   @JSImport("postmark/dist/client/models/message/SupportingTypes", "Header")
   @js.native
-  class Header protected () extends StObject {
+  open class Header protected () extends StObject {
     def this(Name: String, Value: String) = this()
     
     var Name: String = js.native
@@ -85,5 +90,27 @@ object messageSupportingTypesMod {
       extends StObject
          with LinkTrackingOptions
     /* "TextOnly" */ val TextOnly: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.TextOnly & String = js.native
+  }
+  
+  @js.native
+  sealed trait ServerDeliveryTypes extends StObject
+  @JSImport("postmark/dist/client/models/message/SupportingTypes", "ServerDeliveryTypes")
+  @js.native
+  object ServerDeliveryTypes extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ServerDeliveryTypes & String] = js.native
+    
+    @js.native
+    sealed trait Live
+      extends StObject
+         with ServerDeliveryTypes
+    /* "Live" */ val Live: typings.postmark.messageSupportingTypesMod.ServerDeliveryTypes.Live & String = js.native
+    
+    @js.native
+    sealed trait Sandbox
+      extends StObject
+         with ServerDeliveryTypes
+    /* "Sandbox" */ val Sandbox: typings.postmark.messageSupportingTypesMod.ServerDeliveryTypes.Sandbox & String = js.native
   }
 }

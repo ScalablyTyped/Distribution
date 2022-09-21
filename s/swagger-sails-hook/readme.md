@@ -11,14 +11,11 @@ Sails.js hook for Swagger projects
 | Full name          | swagger-sails-hook |
 | Keywords           | swagger, api, apis, sails |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1203 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 97.66666666666667 |
+| # stars            | 9.0 |
 
 ## Links
-- [Homepage](https://github.com/apigee-127/swagger-sails#readme)
-- [Bugs](https://github.com/apigee-127/swagger-sails/issues)
-- [Repository](https://github.com/apigee-127/swagger-sails)
 - [Npm](https://www.npmjs.com/package/swagger-sails-hook)
     
 

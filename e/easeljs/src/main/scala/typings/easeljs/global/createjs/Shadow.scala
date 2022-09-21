@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Shadow")
 @js.native
-class Shadow protected ()
+open class Shadow protected ()
   extends StObject
      with typings.easeljs.createjs.Shadow {
   def this(color: String, offsetX: Double, offsetY: Double, blur: Double) = this()

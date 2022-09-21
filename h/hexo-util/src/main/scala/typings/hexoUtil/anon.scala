@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.hexoUtil.hexoUtilNumbers.`1`
 import typings.hexoUtil.hexoUtilNumbers.`2`
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,7 +67,7 @@ object anon {
       
       inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      inline def setMarkVarargs(value: Double*): Self = StObject.set(x, "mark", js.Array(value :_*))
+      inline def setMarkVarargs(value: Double*): Self = StObject.set(x, "mark", js.Array(value*))
       
       inline def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
       
@@ -82,8 +81,8 @@ object anon {
   
   trait Dictindex
     extends StObject
-       with /* index */ NumberDictionary[js.Any]
-       with /* name */ StringDictionary[js.Any] {
+       with /* index */ NumberDictionary[Any]
+       with /* name */ StringDictionary[Any] {
     
     var `0`: String
   }
@@ -134,7 +133,7 @@ object anon {
   
   trait Segments extends StObject {
     
-    var segments: js.UndefOr[StringDictionary[String | RegExp]] = js.undefined
+    var segments: js.UndefOr[StringDictionary[String | js.RegExp]] = js.undefined
   }
   object Segments {
     
@@ -145,7 +144,7 @@ object anon {
     
     extension [Self <: Segments](x: Self) {
       
-      inline def setSegments(value: StringDictionary[String | RegExp]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: StringDictionary[String | js.RegExp]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
       inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     }

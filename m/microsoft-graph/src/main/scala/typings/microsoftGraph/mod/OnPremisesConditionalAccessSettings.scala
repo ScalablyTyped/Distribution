@@ -43,13 +43,13 @@ object OnPremisesConditionalAccessSettings {
     
     inline def setExcludedGroupsUndefined: Self = StObject.set(x, "excludedGroups", js.undefined)
     
-    inline def setExcludedGroupsVarargs(value: String*): Self = StObject.set(x, "excludedGroups", js.Array(value :_*))
+    inline def setExcludedGroupsVarargs(value: String*): Self = StObject.set(x, "excludedGroups", js.Array(value*))
     
     inline def setIncludedGroups(value: js.Array[String]): Self = StObject.set(x, "includedGroups", value.asInstanceOf[js.Any])
     
     inline def setIncludedGroupsUndefined: Self = StObject.set(x, "includedGroups", js.undefined)
     
-    inline def setIncludedGroupsVarargs(value: String*): Self = StObject.set(x, "includedGroups", js.Array(value :_*))
+    inline def setIncludedGroupsVarargs(value: String*): Self = StObject.set(x, "includedGroups", js.Array(value*))
     
     inline def setOverrideDefaultRule(value: Boolean): Self = StObject.set(x, "overrideDefaultRule", value.asInstanceOf[js.Any])
     

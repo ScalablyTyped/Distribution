@@ -1,9 +1,5 @@
 package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,31 +9,17 @@ trait ParamsResourceProjectsRegionsJobsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional. If set, the returned jobs list includes only jobs that were
-    * submitted to the named cluster.
+    * Optional. If set, the returned jobs list includes only jobs that were submitted to the named cluster.
     */
   var clusterName: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. A filter constraining the jobs to list. Filters are
-    * case-sensitive and have the following syntax:field = value AND field =
-    * value ...where field is status.state or labels.[KEY], and [KEY] is a
-    * label key. value can be * to match all values. status.state can be either
-    * ACTIVE or NON_ACTIVE. Only the logical AND operator is supported;
-    * space-separated items are treated as having an implicit AND
-    * operator.Example filter:status.state = ACTIVE AND labels.env = staging
-    * AND labels.starred = *
+    * Optional. A filter constraining the jobs to list. Filters are case-sensitive and have the following syntax:field = value AND field = value ...where field is status.state or labels.[KEY], and [KEY] is a label key. value can be * to match all values. status.state can be either ACTIVE or NON_ACTIVE. Only the logical AND operator is supported; space-separated items are treated as having an implicit AND operator.Example filter:status.state = ACTIVE AND labels.env = staging AND labels.starred = *
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. Specifies enumerated categories of jobs to list. (default =
-    * match ALL jobs).If filter is provided, jobStateMatcher will be ignored.
+    * Optional. Specifies enumerated categories of jobs to list. (default = match ALL jobs).If filter is provided, jobStateMatcher will be ignored.
     */
   var jobStateMatcher: js.UndefOr[String] = js.undefined
   
@@ -47,19 +29,17 @@ trait ParamsResourceProjectsRegionsJobsList
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. The page token, returned by a previous call, to request the
-    * next page of results.
+    * Optional. The page token, returned by a previous call, to request the next page of results.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The ID of the Google Cloud Platform project that the job
-    * belongs to.
+    * Required. The ID of the Google Cloud Platform project that the job belongs to.
     */
   var projectId: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The Cloud Dataproc region in which to handle the request.
+    * Required. The Dataproc region in which to handle the request.
     */
   var region: js.UndefOr[String] = js.undefined
 }
@@ -71,10 +51,6 @@ object ParamsResourceProjectsRegionsJobsList {
   }
   
   extension [Self <: ParamsResourceProjectsRegionsJobsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

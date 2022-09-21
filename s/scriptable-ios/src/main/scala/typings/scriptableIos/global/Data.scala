@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Data")
 @js.native
-class Data ()
+open class Data ()
   extends StObject
      with typings.scriptableIos.Data {
   

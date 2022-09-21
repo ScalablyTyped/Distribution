@@ -4,19 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for Instances.DebugInstance.
-  */
 trait SchemaDebugInstanceRequest extends StObject {
   
   /**
-    * Public SSH key to add to the instance. Examples: [USERNAME]:ssh-rsa
-    * [KEY_VALUE] [USERNAME] [USERNAME]:ssh-rsa [KEY_VALUE] google-ssh
-    * {&quot;userName&quot;:&quot;[USERNAME]&quot;,&quot;expireOn&quot;:&quot;[EXPIRE_TIME]&quot;}For
-    * more information, see Adding and Removing SSH Keys
-    * (https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys).
+    * Public SSH key to add to the instance. Examples: [USERNAME]:ssh-rsa [KEY_VALUE] [USERNAME] [USERNAME]:ssh-rsa [KEY_VALUE] google-ssh {"userName":"[USERNAME]","expireOn":"[EXPIRE_TIME]"\}For more information, see Adding and Removing SSH Keys (https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys).
     */
-  var sshKey: js.UndefOr[String] = js.undefined
+  var sshKey: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDebugInstanceRequest {
   
@@ -28,6 +21,8 @@ object SchemaDebugInstanceRequest {
   extension [Self <: SchemaDebugInstanceRequest](x: Self) {
     
     inline def setSshKey(value: String): Self = StObject.set(x, "sshKey", value.asInstanceOf[js.Any])
+    
+    inline def setSshKeyNull: Self = StObject.set(x, "sshKey", null)
     
     inline def setSshKeyUndefined: Self = StObject.set(x, "sshKey", js.undefined)
   }

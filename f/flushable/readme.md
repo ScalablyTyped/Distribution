@@ -10,10 +10,10 @@ A flushable timeout function
 | ------------------ | :-------------: |
 | Full name          | flushable |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 1639605 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51485.333333333336 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/petegleeson/flushable#readme)

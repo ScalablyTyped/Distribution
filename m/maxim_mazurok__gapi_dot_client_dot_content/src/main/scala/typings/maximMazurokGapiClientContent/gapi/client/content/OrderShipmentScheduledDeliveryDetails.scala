@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrderShipmentScheduledDeliveryDetails extends StObject {
   
-  /** The phone number of the carrier fulfilling the delivery. The phone number is formatted as the international notation in ITU-T Recommendation E.123 (e.g., "+41 44 668 1800"). */
+  /** The phone number of the carrier fulfilling the delivery. The phone number is formatted as the international notation in ITU-T Recommendation E.123 (for example, "+41 44 668 1800"). */
   var carrierPhoneNumber: js.UndefOr[String] = js.undefined
   
   /** The date a shipment is scheduled for delivery, in ISO 8601 format. */

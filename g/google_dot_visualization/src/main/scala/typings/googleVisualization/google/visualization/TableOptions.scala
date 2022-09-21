@@ -20,7 +20,7 @@ trait TableOptions extends StObject {
   
   var frozenColumns: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String | Double] = js.undefined
   
   var page: js.UndefOr[String] = js.undefined
   
@@ -42,7 +42,7 @@ trait TableOptions extends StObject {
   
   var startPage: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[String] = js.undefined
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object TableOptions {
   
@@ -73,7 +73,7 @@ object TableOptions {
     
     inline def setFrozenColumnsUndefined: Self = StObject.set(x, "frozenColumns", js.undefined)
     
-    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -117,7 +117,7 @@ object TableOptions {
     
     inline def setStartPageUndefined: Self = StObject.set(x, "startPage", js.undefined)
     
-    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

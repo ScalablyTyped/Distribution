@@ -8,5 +8,5 @@ object deleteArchiveOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/DeleteArchiveOutput", "DeleteArchiveOutput")
   @js.native
-  val DeleteArchiveOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteArchiveOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

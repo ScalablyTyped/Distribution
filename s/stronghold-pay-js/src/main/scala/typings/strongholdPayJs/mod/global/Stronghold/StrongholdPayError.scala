@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Stronghold.StrongholdPayError")
 @js.native
-class StrongholdPayError protected ()
+open class StrongholdPayError protected ()
   extends StObject
      with Error {
   def this(`type`: ERROR_TYPE, code: ERROR_CODE, message: String) = this()
@@ -15,9 +15,11 @@ class StrongholdPayError protected ()
   
   var code: ERROR_CODE = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   

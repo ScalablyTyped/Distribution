@@ -95,7 +95,7 @@ object Team {
       
       inline def setMemberList(value: js.Array[TeamMemberInfoDto]): Self = StObject.set(x, "memberList", value.asInstanceOf[js.Any])
       
-      inline def setMemberListVarargs(value: TeamMemberInfoDto*): Self = StObject.set(x, "memberList", js.Array(value :_*))
+      inline def setMemberListVarargs(value: TeamMemberInfoDto*): Self = StObject.set(x, "memberList", js.Array(value*))
       
       inline def setOwnerId(value: Double): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     }
@@ -167,7 +167,7 @@ object Team {
       
       inline def setMatchHistory(value: js.Array[MatchHistorySummaryDto]): Self = StObject.set(x, "matchHistory", value.asInstanceOf[js.Any])
       
-      inline def setMatchHistoryVarargs(value: MatchHistorySummaryDto*): Self = StObject.set(x, "matchHistory", js.Array(value :_*))
+      inline def setMatchHistoryVarargs(value: MatchHistorySummaryDto*): Self = StObject.set(x, "matchHistory", js.Array(value*))
       
       inline def setModifyDate(value: Double): Self = StObject.set(x, "modifyDate", value.asInstanceOf[js.Any])
       
@@ -183,7 +183,7 @@ object Team {
       
       inline def setTeamStatDetails(value: js.Array[TeamStatDetailDto]): Self = StObject.set(x, "teamStatDetails", value.asInstanceOf[js.Any])
       
-      inline def setTeamStatDetailsVarargs(value: TeamStatDetailDto*): Self = StObject.set(x, "teamStatDetails", js.Array(value :_*))
+      inline def setTeamStatDetailsVarargs(value: TeamStatDetailDto*): Self = StObject.set(x, "teamStatDetails", js.Array(value*))
       
       inline def setThirdLastJoinDate(value: Double): Self = StObject.set(x, "thirdLastJoinDate", value.asInstanceOf[js.Any])
     }

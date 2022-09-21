@@ -19,6 +19,10 @@ object mdastUtilToMarkdownStrings {
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
+  sealed trait Dot extends StObject
+  inline def Dot: Dot = ".".asInstanceOf[Dot]
+  
+  @js.native
   sealed trait Graveaccent extends StObject
   inline def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
   
@@ -31,12 +35,20 @@ object mdastUtilToMarkdownStrings {
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native
+  sealed trait Rightparenthesis extends StObject
+  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
+  
+  @js.native
   sealed trait Tilde extends StObject
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
   sealed trait _underscore extends StObject
   inline def _underscore: _underscore = "_".asInstanceOf[_underscore]
+  
+  @js.native
+  sealed trait children extends StObject
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait mixed extends StObject

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Checkout")
 @js.native
-class Checkout () extends StObject {
+open class Checkout () extends StObject {
   
   /**
     * Additional recipients (other than the merchant) receiving a portion of this checkout. For example, fees assessed

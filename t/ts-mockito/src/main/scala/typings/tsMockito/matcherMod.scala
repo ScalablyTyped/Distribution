@@ -8,8 +8,8 @@ object matcherMod {
   
   @JSImport("ts-mockito/lib/matcher/type/Matcher", "Matcher")
   @js.native
-  class Matcher () extends StObject {
+  open class Matcher () extends StObject {
     
-    def `match`(value: js.Any): Boolean = js.native
+    def `match`(value: Any): Boolean = js.native
   }
 }

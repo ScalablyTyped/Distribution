@@ -1,26 +1,25 @@
 package typings.node.anon
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BytesWritten[TBuffer /* <: Uint8Array */] extends StObject {
+trait BytesWritten extends StObject {
   
-  var buffer: TBuffer
+  var buffer: String
   
   var bytesWritten: Double
 }
 object BytesWritten {
   
-  inline def apply[TBuffer /* <: Uint8Array */](buffer: TBuffer, bytesWritten: Double): BytesWritten[TBuffer] = {
+  inline def apply(buffer: String, bytesWritten: Double): BytesWritten = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BytesWritten[TBuffer]]
+    __obj.asInstanceOf[BytesWritten]
   }
   
-  extension [Self <: BytesWritten[?], TBuffer /* <: Uint8Array */](x: Self & BytesWritten[TBuffer]) {
+  extension [Self <: BytesWritten](x: Self) {
     
-    inline def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: String): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
   }

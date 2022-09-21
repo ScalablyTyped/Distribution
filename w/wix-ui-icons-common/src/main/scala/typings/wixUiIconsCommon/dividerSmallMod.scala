@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object dividerSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/DividerSmall", JSImport.Default)
   @js.native
-  val default: SFC[DividerSmallProps] = js.native
+  val default: FC[DividerSmallProps] = js.native
   
   trait DividerSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object DividerSmallProps {
     
@@ -29,14 +29,14 @@ object dividerSmallMod extends Shortcut {
     
     extension [Self <: DividerSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[DividerSmallProps]
+  type _To = FC[DividerSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `dividerSmallMod.foo` */
-  override def _to: SFC[DividerSmallProps] = default
+  override def _to: FC[DividerSmallProps] = default
 }

@@ -4,12 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-right`
 import typings.arcgisJsApi.arcgisJsApiStrings.`top-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`top-right`
-import typings.arcgisJsApi.arcgisJsApiStrings.bottom
-import typings.arcgisJsApi.arcgisJsApiStrings.center
-import typings.arcgisJsApi.arcgisJsApiStrings.left
-import typings.arcgisJsApi.arcgisJsApiStrings.relative
-import typings.arcgisJsApi.arcgisJsApiStrings.right
-import typings.arcgisJsApi.arcgisJsApiStrings.top
+import typings.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
+import typings.arcgisJsApi.arcgisJsApiStrings.left_
+import typings.arcgisJsApi.arcgisJsApiStrings.relative_
+import typings.arcgisJsApi.arcgisJsApiStrings.right_
+import typings.arcgisJsApi.arcgisJsApiStrings.top_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,10 +21,12 @@ trait IconSymbol3DLayerProperties
   /**
     * The positioning of the icon relative to the geometry.
     *
+    * @default center
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor)
     */
   var anchor: js.UndefOr[
-    center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative
+    center_ | left_ | right_ | top_ | bottom_ | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative_
   ] = js.undefined
   
   /**
@@ -51,12 +53,16 @@ trait IconSymbol3DLayerProperties
   /**
     * The shape (`primitive`) or image URL (`href`) used to visualize the features.
     *
+    * @default { primitive: "circle" }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
     */
   var resource: js.UndefOr[IconSymbol3DLayerResource] = js.undefined
   
   /**
     * The size of the icon in points.
+    *
+    * @default 12
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#size)
     */
@@ -72,7 +78,7 @@ object IconSymbol3DLayerProperties {
   extension [Self <: IconSymbol3DLayerProperties](x: Self) {
     
     inline def setAnchor(
-      value: center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative
+      value: center_ | left_ | right_ | top_ | bottom_ | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative_
     ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     inline def setAnchorPosition(value: IconSymbol3DLayerAnchorPosition): Self = StObject.set(x, "anchorPosition", value.asInstanceOf[js.Any])

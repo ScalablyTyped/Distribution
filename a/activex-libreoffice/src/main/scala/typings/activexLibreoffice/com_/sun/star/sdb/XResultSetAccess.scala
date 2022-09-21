@@ -23,7 +23,7 @@ object XResultSetAccess {
   inline def apply(
     acquire: () => Unit,
     createResultSet: () => XResultSet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XResultSetAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createResultSet = js.Any.fromFunction0(createResultSet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

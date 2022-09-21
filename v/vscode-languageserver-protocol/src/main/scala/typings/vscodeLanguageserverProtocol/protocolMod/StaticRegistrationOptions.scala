@@ -19,7 +19,7 @@ object StaticRegistrationOptions {
     __obj.asInstanceOf[StaticRegistrationOptions]
   }
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "StaticRegistrationOptions")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "StaticRegistrationOptions")
   @js.native
   val ^ : js.Any = js.native
   

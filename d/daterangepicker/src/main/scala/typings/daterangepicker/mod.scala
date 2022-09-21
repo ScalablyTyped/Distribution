@@ -15,7 +15,6 @@ import typings.jquery.JQueryEventObject
 import typings.moment.mod.DurationInputArg1
 import typings.moment.mod.Moment
 import typings.std.Array
-import typings.std.Date
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
@@ -27,7 +26,7 @@ object mod {
   
   @JSImport("daterangepicker", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.daterangepicker.mod.daterangepicker {
     def this(element: HTMLElement) = this()
@@ -77,7 +76,7 @@ object mod {
   
   type DataRangePickerCallback = js.Function3[/* start */ Moment, /* end */ Moment, /* label */ String | Null, Unit]
   
-  type DateOrString = String | Moment | Date
+  type DateOrString = String | Moment | js.Date
   
   @js.native
   trait DateRangePicker_ extends StObject {
@@ -167,7 +166,7 @@ object mod {
     extends StObject
        with JQueryEventObject {
     
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     def format(): String = js.native
     def format(format: String): String = js.native
@@ -279,7 +278,7 @@ object mod {
       
       inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
       
-      inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+      inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value*))
       
       inline def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
       
@@ -297,7 +296,7 @@ object mod {
       
       inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
       
-      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
@@ -513,7 +512,7 @@ object mod {
       
       inline def setButtonClassesUndefined: Self = StObject.set(x, "buttonClasses", js.undefined)
       
-      inline def setButtonClassesVarargs(value: String*): Self = StObject.set(x, "buttonClasses", js.Array(value :_*))
+      inline def setButtonClassesVarargs(value: String*): Self = StObject.set(x, "buttonClasses", js.Array(value*))
       
       inline def setCancelButtonClasses(value: String): Self = StObject.set(x, "cancelButtonClasses", value.asInstanceOf[js.Any])
       

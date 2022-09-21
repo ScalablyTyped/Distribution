@@ -32,6 +32,6 @@ object PivotOrderBy {
     
     inline def setPivotSelectionsUndefined: Self = StObject.set(x, "pivotSelections", js.undefined)
     
-    inline def setPivotSelectionsVarargs(value: PivotSelection*): Self = StObject.set(x, "pivotSelections", js.Array(value :_*))
+    inline def setPivotSelectionsVarargs(value: PivotSelection*): Self = StObject.set(x, "pivotSelections", js.Array(value*))
   }
 }

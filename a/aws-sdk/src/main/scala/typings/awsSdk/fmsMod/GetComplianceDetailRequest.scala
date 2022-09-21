@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetComplianceDetailRequest extends StObject {
   
   /**
-    * The AWS account that owns the resources that you want to get the details for.
+    * The Amazon Web Services account that owns the resources that you want to get the details for.
     */
   var MemberAccount: AWSAccountId
   

@@ -11,9 +11,9 @@ Single component release of site
 | Full name          | semantic-ui-site |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1936 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 237.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

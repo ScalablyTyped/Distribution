@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDBRequestEventMap extends StObject {
   
+  /* standard dom */
   var error: Event
   
+  /* standard dom */
   var success: Event
 }
 object IDBRequestEventMap {

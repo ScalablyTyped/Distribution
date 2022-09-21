@@ -28,23 +28,29 @@ object instancedBufferAttributeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def center(geometry: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(geometry.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    /**
+      * @deprecated Use {@link Geometry#center geometry.center()} instead.
+      */
+    inline def center(geometry: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(geometry.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def merge(geometry1: js.Any, geometry2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def merge(geometry1: js.Any, geometry2: js.Any, materialIndexOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any], materialIndexOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    /**
+      * @deprecated Use {@link Geometry#merge geometry.merge( geometry2, matrix, materialIndexOffset )} instead.
+      */
+    inline def merge(geometry1: Any, geometry2: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def merge(geometry1: Any, geometry2: Any, materialIndexOffset: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any], materialIndexOffset.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   @JSImport("three/src/core/InstancedBufferAttribute", "InstancedBufferAttribute")
   @js.native
-  class InstancedBufferAttribute protected () extends BufferAttribute {
+  open class InstancedBufferAttribute protected () extends BufferAttribute {
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean, meshPerAttribute: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Unit, meshPerAttribute: Double) = this()
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var meshPerAttribute: Double = js.native
   }
 }

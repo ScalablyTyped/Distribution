@@ -11,7 +11,7 @@ object fileDataSourceMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/sources/file_data_source", "FileDataSource")
   @js.native
-  class FileDataSource protected () extends DataSource {
+  open class FileDataSource protected () extends DataSource {
     def this(input: String) = this()
     /**
       * Create a `FileDataSource`.

@@ -46,7 +46,7 @@ object Discount {
     
     inline def setPhotos(value: js.Array[Photo]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    inline def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value*))
     
     inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

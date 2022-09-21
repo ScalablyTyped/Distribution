@@ -1,16 +1,18 @@
 package typings.cordovaPluginsDiagnostic
 
-import typings.cordovaPluginsDiagnostic.anon.ACCESSBACKGROUNDLOCATION
+import typings.cordovaPluginsDiagnostic.anon.ACCEPTHANDOVER
 import typings.cordovaPluginsDiagnostic.anon.ALERT
 import typings.cordovaPluginsDiagnostic.anon.ALWAYS
 import typings.cordovaPluginsDiagnostic.anon.ARMv6
+import typings.cordovaPluginsDiagnostic.anon.ApiLevel
 import typings.cordovaPluginsDiagnostic.anon.BATTERYSAVING
-import typings.cordovaPluginsDiagnostic.anon.CALENDAR
 import typings.cordovaPluginsDiagnostic.anon.DENIEDALWAYS
 import typings.cordovaPluginsDiagnostic.anon.FULL
 import typings.cordovaPluginsDiagnostic.anon.GRANTED
+import typings.cordovaPluginsDiagnostic.anon.MinApiLevel
 import typings.cordovaPluginsDiagnostic.anon.POWEREDOFF
 import typings.cordovaPluginsDiagnostic.anon.POWEREDON
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +31,6 @@ trait Diagnostic extends StObject {
   var NFCState: POWEREDON = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Constants for the various Bluetooth hardware states.
     * @type {Object}
     */
@@ -43,14 +44,12 @@ trait Diagnostic extends StObject {
   var cpuArchitecture: ARMv6 = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Enables debug mode, which logs native plugin debug messages to the native and JS consoles.
     * Debug mode is initially disabled on plugin initialisation.
     */
   var enableDebug: js.UndefOr[js.Function1[/* successCallback */ js.Function0[Unit], Unit]] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Returns CPU architecture of the current device.
     * @param successCallback
     * @param errorCallback
@@ -78,7 +77,31 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
+    * Returns the Bluetooth authorization status of the application on the device.
+    * @param successCallback
+    * @param errorCallback
+    */
+  def getBluetoothAuthorizationStatus(
+    successCallback: js.Function1[/* statuses */ js.Array[typings.cordovaPluginsDiagnostic.anon.String], Unit],
+    errorCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
+  
+  /**
+    * ANDROID ONLY
+    * Returns the authorization statuses for various Bluetooth run-time permissions on Android 12+ / API 31+
+    * On Android 11 / API 30 and below, all will be returned as GRANTED if the manifest has BLUETOOTH since they are implicitly granted at build-time.
+    * @param successCallback
+    * @param errorCallback
+    */
+  var getBluetoothAuthorizationStatuses: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function1[/* statuses */ js.Array[typings.cordovaPluginsDiagnostic.anon.String], Unit], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
     * Returns the state of Bluetooth on the device.
     * @param successCallback
     * @param errorCallback
@@ -92,7 +115,20 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
+    * Returns details of the SDK levels used to build the app.
+    *
+    * @param successCallback
+    * @param errorCallback
+    */
+  var getBuildOSVersion: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function1[/* details */ MinApiLevel, Unit], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
     * Returns the calendar authorization status for the application.
     * @param successCallback
     * @param errorCallback
@@ -106,7 +142,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Returns the camera authorization status for the application.
     * @param successCallback
     * @param errorCallback
@@ -128,15 +163,15 @@ trait Diagnostic extends StObject {
     * @param errorCallback
     */
   var getCameraRollAuthorizationStatus: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* successCallback */ js.Function1[/* status */ String, Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      /* accessLevel */ js.UndefOr[String], 
       Unit
     ]
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Returns the contacts authorization status for the application.
     * @param successCallback
     * @param errorCallback
@@ -150,6 +185,33 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
+    * Returns the current battery level of the device as a percentage.
+    * @param successCallback
+    * @param errorCallback
+    */
+  var getCurrentBatteryLevel: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function1[/* level */ Double, Unit], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
+    * Returns details of the OS of the device on which the app is currently running
+    *
+    * @param successCallback
+    * @param errorCallback
+    */
+  var getDeviceOSVersion: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function1[/* details */ ApiLevel, Unit], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
     * ANDROID ONLY
     * Returns details of external SD card(s): absolute path, is writable, free space
     * @param successCallback
@@ -157,7 +219,7 @@ trait Diagnostic extends StObject {
     */
   var getExternalSdCardDetails: js.UndefOr[
     js.Function2[
-      /* successCallback */ js.Function1[/* status */ js.Any, Unit], 
+      /* successCallback */ js.Function1[/* status */ Any, Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
       Unit
     ]
@@ -178,7 +240,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * iOS ONLY
     * Returns the location accuracy authorization for the application.
     * @param successCallback
     * @param errorCallback
@@ -192,12 +253,25 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Returns the location authorization status for the application.
     * @param successCallback
     * @param errorCallback
     */
   var getLocationAuthorizationStatus: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function1[/* status */ String, Unit], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
+    * Android ONLY
+    * Returns the individual location authorization status for each type of location access (FINE, COARSE and BACKGROUND).
+    * @param successCallback
+    * @param errorCallback
+    */
+  var getLocationAuthorizationStatuses: js.UndefOr[
     js.Function2[
       /* successCallback */ js.Function1[/* status */ String, Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
@@ -220,7 +294,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Returns the microphone authorization status for the application.
     * @param successCallback
     * @param errorCallback
@@ -272,7 +345,7 @@ trait Diagnostic extends StObject {
     */
   var getPermissionsAuthorizationStatus: js.UndefOr[
     js.Function3[
-      /* successCallback */ js.Function1[/* status */ js.Array[String], Unit], 
+      /* successCallback */ js.Function1[/* status */ Record[String, String], Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
       /* permissions */ js.Array[String], 
       Unit
@@ -301,7 +374,7 @@ trait Diagnostic extends StObject {
     */
   var getRemoteNotificationTypes: js.UndefOr[
     js.Function2[
-      /* successCallback */ js.Function1[/* types */ js.Any, Unit], 
+      /* successCallback */ js.Function1[/* types */ Any, Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
       Unit
     ]
@@ -378,6 +451,36 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
+    * ANDROID ONLY
+    *
+    * Checks if airplane mode is enabled on device.
+    *
+    * @param successCallback
+    * @param errorCallback
+    */
+  var isAirplaneModeEnabled: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function0[Boolean], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
+    * ANDROID ONLY
+    * Checks if the device setting for Airplane Mode is switched on.
+    * @param successCallback
+    * @param errorCallback
+    */
+  var isAirplaneModeOn: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function1[/* enabled */ Boolean, Unit], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
     * iOS ONLY
     * Checks if the application is authorized for background refresh.
     * @param successCallback
@@ -393,7 +496,7 @@ trait Diagnostic extends StObject {
   
   /**
     * Checks if Bluetooth is available to the app.
-    * Returns true if the device has Bluetooth capabilities AND if Bluetooth setting is switched on (same on Android, iOS and Windows 10 Mobile)
+    * Returns true if the device has Bluetooth capabilities AND if Bluetooth setting is switched on (same on Android, iOS)
     * @param successCallback
     * @param errorCallback
     */
@@ -417,7 +520,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Checks if the application is authorized to use the calendar.
     * @param successCallback
     * @param errorCallback
@@ -431,7 +533,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Checks if the application is authorized to use the camera.
     * @param successCallback
     * @param errorCallback
@@ -449,7 +550,6 @@ trait Diagnostic extends StObject {
   /**
     * Checks if camera is available.
     * On Android & iOS this returns true if the device has a camera AND the application is authorized to use it.
-    * On Windows 10 Mobile this returns true if the device has a rear-facing camera.
     * @param successCallbackOrParams
     * @param errorCallback
     * @param externalStorageOrParams
@@ -495,7 +595,6 @@ trait Diagnostic extends StObject {
   def isCameraAvailable(successCallbackOrParams: Unit, errorCallback: Unit, externalStorageOrParams: Boolean): Unit = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Checks if camera hardware is present on device.
     * @param successCallback
     * @param errorCallback
@@ -515,15 +614,15 @@ trait Diagnostic extends StObject {
     * @param errorCallback
     */
   var isCameraRollAuthorized: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* successCallback */ js.Function1[/* authorized */ Boolean, Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      /* accessLevel */ js.UndefOr[String], 
       Unit
     ]
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Checks if the application is authorized to use contacts (address book).
     * @param successCallback
     * @param errorCallback
@@ -610,7 +709,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Checks if the application is authorized to use location.
     * @param successCallback
     * @param errorCallback
@@ -634,9 +732,8 @@ trait Diagnostic extends StObject {
   ): Unit = js.native
   
   /**
-    * ANDROID and iOS ONLY
-    * Returns true if the device setting for location is on. 
-    * On Android this returns true if Location Mode is switched on. 
+    * Returns true if the device setting for location is on.
+    * On Android this returns true if Location Mode is switched on.
     * On iOS this returns true if Location Services is switched on.
     * @param successCallback
     * @param errorCallback
@@ -650,7 +747,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Checks if the application is authorized to use the microphone.
     * @param successCallback
     * @param errorCallback
@@ -792,7 +888,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Checks if remote (push) notifications are enabled.
     * @param successCallback
     * @param errorCallback
@@ -814,7 +909,7 @@ trait Diagnostic extends StObject {
   /**
     * Checks if Wifi is available.
     * On iOS this returns true if the device is connected to a network by WiFi.
-    * On Android and Windows 10 Mobile this returns true if the WiFi setting is set to enabled, and is the same as isWifiEnabled()
+    * On Android this returns true if the WiFi setting is set to enabled, and is the same as isWifiEnabled()
     * @param successCallback
     * @param errorCallback
     */
@@ -824,7 +919,7 @@ trait Diagnostic extends StObject {
   ): Unit = js.native
   
   /**
-    * ANDROID and WINDOWS ONLY
+    * ANDROID ONLY
     * Returns true if the WiFi setting is set to enabled, and is the same as isWifiAvailable()
     * @param successCallback
     * @param errorCallback
@@ -838,14 +933,12 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * iOS ONLY
     * Location accuracy authorization
     * @type {Object}
     */
   var locationAccuracyAuthorization: FULL = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Location authorization mode
     * @type {Object}
     */
@@ -871,29 +964,38 @@ trait Diagnostic extends StObject {
     * See http://developer.android.com/guide/topics/security/permissions.html#perm-groups
     * @type {Object}
     */
-  var permission: ACCESSBACKGROUNDLOCATION = js.native
+  var permission: ACCEPTHANDOVER = js.native
   
   /**
-    * ANDROID ONLY
-    * Permission groups indicate which associated permissions will also be requested if a given permission is requested.
-    * See http://developer.android.com/guide/topics/security/permissions.html#perm-groups
-    * @type {Object}
-    */
-  var permissionGroups: CALENDAR = js.native
-  
-  /**
-    * ANDROID and iOS ONLY
     * Constants for requesting and reporting the various permission states.
     * @type {Object}
     */
   var permissionStatus: DENIEDALWAYS = js.native
   
   /**
-    * ANDROID and iOS ONLY
+    * iOS ONLY
+    * Presents limited library picker UI on iOS 14+
+    * @param successCallback
+    * @param errorCallback
+    */
+  var presentLimitedLibraryPicker: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function1[/* identifiers */ js.UndefOr[js.Array[String]], Unit], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
     * Registers a function to be called when a change in Bluetooth state occurs. Pass in a falsey value to de-register the currently registered function.
     * @param successCallback
     */
-  var registerBluetoothStateChangeHandler: js.UndefOr[js.Function1[/* successCallback */ js.Function1[/* state */ String, Unit], Unit]] = js.native
+  var registerBluetoothStateChangeHandler: js.UndefOr[
+    js.Function1[
+      /* successCallback */ js.UndefOr[js.Function1[/* state */ String | Null, Unit]], 
+      Unit
+    ]
+  ] = js.native
   
   /**
     * iOS ONLY
@@ -903,13 +1005,14 @@ trait Diagnostic extends StObject {
   var registerLocationAccuracyAuthorizationChangeHandler: js.UndefOr[js.Function1[/* successCallback */ js.Function1[/* state */ String, Unit], Unit]] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Registers a function to be called when a change in Location state occurs. Pass in a falsey value to de-register the currently registered function.
     * On Android, this occurs when the Location Mode is changed.
     * On iOS, this occurs when location authorization status is changed. This can be triggered either by the user's response to a location permission authorization dialog, by the user turning on/off Location Services, or by the user changing the Location authorization state specifically for your app.
     * @param successCallback
     */
-  var registerLocationStateChangeHandler: js.UndefOr[js.Function1[/* successCallback */ js.Function1[/* state */ String, Unit], Unit]] = js.native
+  var registerLocationStateChangeHandler: js.UndefOr[
+    js.Function1[/* successCallback */ js.UndefOr[js.Function1[/* state */ String, Unit]], Unit]
+  ] = js.native
   
   /**
     * ANDROID ONLY
@@ -917,7 +1020,9 @@ trait Diagnostic extends StObject {
     * Pass in a falsey value to de-register the currently registered function.
     * @param successCallback
     */
-  var registerNFCStateChangeHandler: js.UndefOr[js.Function1[/* successCallback */ js.Function1[/* state */ String, Unit], Unit]] = js.native
+  var registerNFCStateChangeHandler: js.UndefOr[
+    js.Function1[/* successCallback */ js.UndefOr[js.Function1[/* state */ String, Unit]], Unit]
+  ] = js.native
   
   /**
     * ANDROID ONLY
@@ -925,7 +1030,7 @@ trait Diagnostic extends StObject {
     * @param successCallback
     */
   var registerPermissionRequestCompleteHandler: js.UndefOr[
-    js.Function1[/* successCallback */ js.Function1[/* statuses */ js.Any, Unit], Unit]
+    js.Function1[/* successCallback */ js.UndefOr[js.Function1[/* statuses */ Any, Unit]], Unit]
   ] = js.native
   
   /**
@@ -936,21 +1041,21 @@ trait Diagnostic extends StObject {
   var remoteNotificationType: ALERT = js.native
   
   /**
-    * iOS ONLY
     * Requests Bluetooth authorization for the application.
     * @param successCallback
     * @param errorCallback
+    * @param permissions - ANDROID ONLY
     */
   var requestBluetoothAuthorization: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* successCallback */ js.Function0[Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      /* permissions */ js.UndefOr[js.Array[String]], 
       Unit
     ]
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Requests calendar authorization for the application.
     * @param successCallback
     * @param errorCallback
@@ -964,7 +1069,6 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Requests camera authorization for the application.
     * @param successCallback
     * @param errorCallback
@@ -986,15 +1090,15 @@ trait Diagnostic extends StObject {
     * @param errorCallback
     */
   var requestCameraRollAuthorization: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* successCallback */ js.Function1[/* status */ String, Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      /* accessLevel */ js.UndefOr[String], 
       Unit
     ]
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Requests contacts authorization for the application.
     * @param successCallback
     * @param errorCallback
@@ -1022,23 +1126,23 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Requests location authorization for the application.
     * @param successCallback
     * @param errorCallback
     * @param mode - (optional / iOS & Android >= 10) location authorization mode specified as a locationAuthorizationMode constant. If not specified, defaults to WHEN_IN_USE.
+    * @param accuracy
     */
   var requestLocationAuthorization: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* successCallback */ js.Function1[/* status */ String, Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
       /* mode */ js.UndefOr[String], 
+      /* accuracy */ js.UndefOr[String], 
       Unit
     ]
   ] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Requests microphone authorization for the application.
     * @param successCallback
     * @param errorCallback
@@ -1122,7 +1226,7 @@ trait Diagnostic extends StObject {
     */
   var requestRuntimePermissions: js.UndefOr[
     js.Function3[
-      /* successCallback */ js.Function1[/* status */ js.Array[String], Unit], 
+      /* successCallback */ js.Function1[/* status */ Record[String, String], Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
       /* permissions */ js.Array[String], 
       Unit
@@ -1161,7 +1265,7 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and WINDOWS ONLY
+    * ANDROID ONLY
     * Enables/disables Bluetooth on the device.
     * @param successCallback
     * @param errorCallback
@@ -1177,7 +1281,7 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and WINDOWS ONLY
+    * ANDROID ONLY
     * Enables/disables WiFi on the device.
     * @param successCallback
     * @param errorCallback
@@ -1193,25 +1297,24 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and WINDOWS ONLY
+    * ANDROID ONLY
     * Displays Bluetooth settings to allow user to enable Bluetooth.
     */
   var switchToBluetoothSettings: js.UndefOr[js.Function0[Unit]] = js.native
   
   /**
-    * ANDROID and WINDOWS ONLY
+    * ANDROID ONLY
     * Displays the device location settings to allow user to enable location services/change location mode.
     */
   var switchToLocationSettings: js.UndefOr[js.Function0[Unit]] = js.native
   
   /**
-    * ANDROID and WINDOWS ONLY
+    * ANDROID ONLY
     * Displays mobile settings to allow user to enable mobile data.
     */
   var switchToMobileDataSettings: js.UndefOr[js.Function0[Unit]] = js.native
   
   /**
-    * ANDROID and iOS ONLY
     * Opens settings page for this app.
     * On Android, this opens the "App Info" page in the Settings app.
     * On iOS, this opens the app settings page in the Settings app.
@@ -1225,7 +1328,7 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
-    * ANDROID and WINDOWS ONLY
+    * ANDROID ONLY
     * Displays WiFi settings to allow user to enable WiFi.
     */
   var switchToWifiSettings: js.UndefOr[js.Function0[Unit]] = js.native

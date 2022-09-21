@@ -21,10 +21,10 @@ object KeptDims {
     
     inline def setKeptDims(value: js.Array[Double]): Self = StObject.set(x, "keptDims", value.asInstanceOf[js.Any])
     
-    inline def setKeptDimsVarargs(value: Double*): Self = StObject.set(x, "keptDims", js.Array(value :_*))
+    inline def setKeptDimsVarargs(value: Double*): Self = StObject.set(x, "keptDims", js.Array(value*))
     
     inline def setNewShape(value: js.Array[Double]): Self = StObject.set(x, "newShape", value.asInstanceOf[js.Any])
     
-    inline def setNewShapeVarargs(value: Double*): Self = StObject.set(x, "newShape", js.Array(value :_*))
+    inline def setNewShapeVarargs(value: Double*): Self = StObject.set(x, "newShape", js.Array(value*))
   }
 }

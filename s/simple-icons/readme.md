@@ -1,7 +1,7 @@
 
 # Scala.js typings for simple-icons
 
-Typings are for version 2.5
+Typings are for version 7.12.0
 
 ## Library description:
 SVG icons for popular brands https://simpleicons.org
@@ -10,13 +10,13 @@ SVG icons for popular brands https://simpleicons.org
 | ------------------ | :-------------: |
 | Full name          | simple-icons |
 | Keywords           | svg, icons |
-| # releases         | 76 |
-| # dependents       | 11 |
-| # downloads        | 2339703 |
-| # stars            | 1 |
+| # releases         | 101 |
+| # dependents       | 0.0 |
+| # downloads        | 439460.0 |
+| # stars            | 14089.0 |
 
 ## Links
-- [Homepage](https://www.simpleicons.org)
+- [Homepage](https://simpleicons.org)
 - [Bugs](https://github.com/simple-icons/simple-icons/issues)
 - [Repository](https://github.com/simple-icons/simple-icons)
 - [Npm](https://www.npmjs.com/package/simple-icons)
@@ -24,7 +24,7 @@ SVG icons for popular brands https://simpleicons.org
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

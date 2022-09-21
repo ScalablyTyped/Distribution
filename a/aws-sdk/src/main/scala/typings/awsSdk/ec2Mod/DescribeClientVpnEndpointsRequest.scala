@@ -44,7 +44,7 @@ object DescribeClientVpnEndpointsRequest {
     
     inline def setClientVpnEndpointIdsUndefined: Self = StObject.set(x, "ClientVpnEndpointIds", js.undefined)
     
-    inline def setClientVpnEndpointIdsVarargs(value: ClientVpnEndpointId*): Self = StObject.set(x, "ClientVpnEndpointIds", js.Array(value :_*))
+    inline def setClientVpnEndpointIdsVarargs(value: ClientVpnEndpointId*): Self = StObject.set(x, "ClientVpnEndpointIds", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object DescribeClientVpnEndpointsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: DescribeClientVpnEndpointMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

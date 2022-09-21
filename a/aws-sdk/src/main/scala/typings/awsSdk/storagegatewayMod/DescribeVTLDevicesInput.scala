@@ -46,6 +46,6 @@ object DescribeVTLDevicesInput {
     
     inline def setVTLDeviceARNsUndefined: Self = StObject.set(x, "VTLDeviceARNs", js.undefined)
     
-    inline def setVTLDeviceARNsVarargs(value: VTLDeviceARN*): Self = StObject.set(x, "VTLDeviceARNs", js.Array(value :_*))
+    inline def setVTLDeviceARNsVarargs(value: VTLDeviceARN*): Self = StObject.set(x, "VTLDeviceARNs", js.Array(value*))
   }
 }

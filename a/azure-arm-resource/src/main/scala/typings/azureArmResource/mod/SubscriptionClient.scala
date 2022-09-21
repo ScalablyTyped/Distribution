@@ -11,7 +11,7 @@ object SubscriptionClient {
   
   @JSImport("azure-arm-resource", "SubscriptionClient.default")
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.azureArmResource.subscriptionClientMod.default {
     /**
       * Initializes a new instance of the SubscriptionClient class.
@@ -46,7 +46,7 @@ object SubscriptionClient {
   
   @JSImport("azure-arm-resource", "SubscriptionClient.SubscriptionClient")
   @js.native
-  class SubscriptionClient protected ()
+  open class SubscriptionClient protected ()
     extends typings.azureArmResource.subscriptionClientMod.SubscriptionClient {
     /**
       * Initializes a new instance of the SubscriptionClient class.
@@ -83,12 +83,12 @@ object SubscriptionClient {
     
     @JSImport("azure-arm-resource", "SubscriptionClient.SubscriptionModels.BaseResource")
     @js.native
-    class BaseResource ()
+    open class BaseResource ()
       extends typings.azureArmResource.subscriptionClientMod.SubscriptionModels.BaseResource
     
     @JSImport("azure-arm-resource", "SubscriptionClient.SubscriptionModels.CloudError")
     @js.native
-    class CloudError protected ()
+    open class CloudError protected ()
       extends typings.azureArmResource.subscriptionClientMod.SubscriptionModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }

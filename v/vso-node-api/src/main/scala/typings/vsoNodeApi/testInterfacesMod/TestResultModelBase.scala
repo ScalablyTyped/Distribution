@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait TestResultModelBase extends StObject {
   
   var comment: String
   
-  var completedDate: Date
+  var completedDate: js.Date
   
   var durationInMs: Double
   
@@ -17,17 +16,17 @@ trait TestResultModelBase extends StObject {
   
   var outcome: String
   
-  var startedDate: Date
+  var startedDate: js.Date
 }
 object TestResultModelBase {
   
   inline def apply(
     comment: String,
-    completedDate: Date,
+    completedDate: js.Date,
     durationInMs: Double,
     errorMessage: String,
     outcome: String,
-    startedDate: Date
+    startedDate: js.Date
   ): TestResultModelBase = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], completedDate = completedDate.asInstanceOf[js.Any], durationInMs = durationInMs.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], startedDate = startedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResultModelBase]
@@ -37,7 +36,7 @@ object TestResultModelBase {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
+    inline def setCompletedDate(value: js.Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
     
     inline def setDurationInMs(value: Double): Self = StObject.set(x, "durationInMs", value.asInstanceOf[js.Any])
     
@@ -45,6 +44,6 @@ object TestResultModelBase {
     
     inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    inline def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
+    inline def setStartedDate(value: js.Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
   }
 }

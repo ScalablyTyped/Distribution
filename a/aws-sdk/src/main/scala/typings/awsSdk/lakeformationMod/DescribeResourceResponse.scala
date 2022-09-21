@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeResourceResponse extends StObject {
   
   /**
-    * A structure containing information about an AWS Lake Formation resource.
+    * A structure containing information about an Lake Formation resource.
     */
   var ResourceInfo: js.UndefOr[typings.awsSdk.lakeformationMod.ResourceInfo] = js.undefined
 }

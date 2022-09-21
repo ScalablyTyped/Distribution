@@ -11,14 +11,11 @@ Navigation Timing API measurement helpers
 | Full name          | timing.js |
 | Keywords           | user-timing, user, timing |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 65591 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2361.3333333333335 |
+| # stars            | 1502.0 |
 
 ## Links
-- [Homepage](https://github.com/addyosmani/timing.js)
-- [Bugs](https://github.com/addyosmani/timing.js/issues)
-- [Repository](https://github.com/addyosmani/timing.js)
 - [Npm](https://www.npmjs.com/package/timing.js)
     
 

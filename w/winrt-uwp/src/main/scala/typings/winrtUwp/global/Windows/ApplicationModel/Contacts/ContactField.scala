@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes a piece of contact data. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactField")
 @js.native
-class ContactField protected ()
+open class ContactField protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactField {
   /**

@@ -10,10 +10,10 @@ HTTP status utility
 | ------------------ | :-------------: |
 | Full name          | statuses |
 | Keywords           | http, status, code |
-| # releases         | 2 |
-| # dependents       | 392 |
-| # downloads        | 799004478 |
-| # stars            | 27 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.47404086E8 |
+| # stars            | 244.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/statuses#readme)

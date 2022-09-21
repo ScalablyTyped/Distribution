@@ -2,6 +2,10 @@ package typings.carbonComponents
 
 import typings.carbonComponents.anon.Max
 import typings.carbonComponents.anon.NewValue
+import typings.carbonComponents.anon.PartialSliderOptions
+import typings.carbonComponents.anon.Value
+import typings.std.HTMLElement
+import typings.std.MouseEvent
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,34 +15,11 @@ object sliderMod {
   
   @JSImport("carbon-components/components/slider/slider", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Slider {
-    def this(element: js.Any, options: js.Any) = this()
-    
-    /* CompleteClass */
-    override def _calcValue(evt: js.Any): NewValue = js.native
-    
-    /* CompleteClass */
-    override def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def _updateInput(): Unit = js.native
-    
-    /* CompleteClass */
-    override def _updatePosition(evt: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def getInputProps(): Max = js.native
-    
-    /* CompleteClass */
-    override def setValue(value: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def stepDown(): Unit = js.native
-    
-    /* CompleteClass */
-    override def stepUp(): Unit = js.native
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialSliderOptions) = this()
   }
   object default {
     
@@ -49,62 +30,96 @@ object sliderMod {
     /* static member */
     @JSImport("carbon-components/components/slider/slider", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait Slider extends StObject {
+  - Dropped any */ @js.native
+  trait Slider extends StObject {
     
-    def _calcValue(evt: js.Any): NewValue
+    def _calcValue(): NewValue = js.native
+    def _calcValue(evt: MouseEvent): NewValue = js.native
     
-    def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit
+    def _changeState(state: String, detail: Value): Unit = js.native
+    def _changeState(state: String, detail: Value, callback: js.Function0[Unit]): Unit = js.native
     
-    def _updateInput(): Unit
+    def _updateInput(): Unit = js.native
     
-    def _updatePosition(evt: js.Any): Unit
+    def _updatePosition(): Unit = js.native
+    def _updatePosition(evt: MouseEvent): Unit = js.native
     
-    def getInputProps(): Max
+    def getInputProps(): Max = js.native
     
-    def setValue(value: js.Any): Unit
+    def setValue(value: String): Unit = js.native
+    def setValue(value: Double): Unit = js.native
     
-    def stepDown(): Unit
+    def stepDown(): Unit = js.native
     
-    def stepUp(): Unit
+    def stepUp(): Unit = js.native
   }
-  object Slider {
+  
+  trait SliderOptions extends StObject {
+    
+    var classDisabled: String
+    
+    var classThumbClicked: String
+    
+    var eventAfterSliderValueChange: String
+    
+    var eventBeforeSliderValueChange: String
+    
+    var selectorFilledTrack: String
+    
+    var selectorInit: String
+    
+    var selectorInput: String
+    
+    var selectorThumb: String
+    
+    var selectorTrack: String
+    
+    var stepMultiplier: Double
+  }
+  object SliderOptions {
     
     inline def apply(
-      _calcValue: js.Any => NewValue,
-      _changeState: (js.Any, js.Any, js.Any) => Unit,
-      _updateInput: () => Unit,
-      _updatePosition: js.Any => Unit,
-      getInputProps: () => Max,
-      setValue: js.Any => Unit,
-      stepDown: () => Unit,
-      stepUp: () => Unit
-    ): Slider = {
-      val __obj = js.Dynamic.literal(_calcValue = js.Any.fromFunction1(_calcValue), _changeState = js.Any.fromFunction3(_changeState), _updateInput = js.Any.fromFunction0(_updateInput), _updatePosition = js.Any.fromFunction1(_updatePosition), getInputProps = js.Any.fromFunction0(getInputProps), setValue = js.Any.fromFunction1(setValue), stepDown = js.Any.fromFunction0(stepDown), stepUp = js.Any.fromFunction0(stepUp))
-      __obj.asInstanceOf[Slider]
+      classDisabled: String,
+      classThumbClicked: String,
+      eventAfterSliderValueChange: String,
+      eventBeforeSliderValueChange: String,
+      selectorFilledTrack: String,
+      selectorInit: String,
+      selectorInput: String,
+      selectorThumb: String,
+      selectorTrack: String,
+      stepMultiplier: Double
+    ): SliderOptions = {
+      val __obj = js.Dynamic.literal(classDisabled = classDisabled.asInstanceOf[js.Any], classThumbClicked = classThumbClicked.asInstanceOf[js.Any], eventAfterSliderValueChange = eventAfterSliderValueChange.asInstanceOf[js.Any], eventBeforeSliderValueChange = eventBeforeSliderValueChange.asInstanceOf[js.Any], selectorFilledTrack = selectorFilledTrack.asInstanceOf[js.Any], selectorInit = selectorInit.asInstanceOf[js.Any], selectorInput = selectorInput.asInstanceOf[js.Any], selectorThumb = selectorThumb.asInstanceOf[js.Any], selectorTrack = selectorTrack.asInstanceOf[js.Any], stepMultiplier = stepMultiplier.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SliderOptions]
     }
     
-    extension [Self <: Slider](x: Self) {
+    extension [Self <: SliderOptions](x: Self) {
       
-      inline def setGetInputProps(value: () => Max): Self = StObject.set(x, "getInputProps", js.Any.fromFunction0(value))
+      inline def setClassDisabled(value: String): Self = StObject.set(x, "classDisabled", value.asInstanceOf[js.Any])
       
-      inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setClassThumbClicked(value: String): Self = StObject.set(x, "classThumbClicked", value.asInstanceOf[js.Any])
       
-      inline def setStepDown(value: () => Unit): Self = StObject.set(x, "stepDown", js.Any.fromFunction0(value))
+      inline def setEventAfterSliderValueChange(value: String): Self = StObject.set(x, "eventAfterSliderValueChange", value.asInstanceOf[js.Any])
       
-      inline def setStepUp(value: () => Unit): Self = StObject.set(x, "stepUp", js.Any.fromFunction0(value))
+      inline def setEventBeforeSliderValueChange(value: String): Self = StObject.set(x, "eventBeforeSliderValueChange", value.asInstanceOf[js.Any])
       
-      inline def set_calcValue(value: js.Any => NewValue): Self = StObject.set(x, "_calcValue", js.Any.fromFunction1(value))
+      inline def setSelectorFilledTrack(value: String): Self = StObject.set(x, "selectorFilledTrack", value.asInstanceOf[js.Any])
       
-      inline def set_changeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
       
-      inline def set_updateInput(value: () => Unit): Self = StObject.set(x, "_updateInput", js.Any.fromFunction0(value))
+      inline def setSelectorInput(value: String): Self = StObject.set(x, "selectorInput", value.asInstanceOf[js.Any])
       
-      inline def set_updatePosition(value: js.Any => Unit): Self = StObject.set(x, "_updatePosition", js.Any.fromFunction1(value))
+      inline def setSelectorThumb(value: String): Self = StObject.set(x, "selectorThumb", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorTrack(value: String): Self = StObject.set(x, "selectorTrack", value.asInstanceOf[js.Any])
+      
+      inline def setStepMultiplier(value: Double): Self = StObject.set(x, "stepMultiplier", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -21,7 +21,7 @@ object UserProfilePhotos {
     
     inline def setPhotos(value: js.Array[js.Array[PhotoSize]]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    inline def setPhotosVarargs(value: js.Array[PhotoSize]*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: js.Array[PhotoSize]*): Self = StObject.set(x, "photos", js.Array(value*))
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }

@@ -9,6 +9,9 @@ trait Enterprise extends StObject {
   /** Deprecated and unused. */
   var appAutoApprovalEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /** The enterprise contact info of an EMM-managed enterprise. */
+  var contactInfo: js.UndefOr[ContactInfo] = js.undefined
+  
   /** The types of Google Pub/Sub notifications enabled for the enterprise. */
   var enabledNotificationTypes: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -30,7 +33,7 @@ trait Enterprise extends StObject {
     */
   var primaryColor: js.UndefOr[Double] = js.undefined
   
-  /** The topic that Cloud Pub/Sub notifications are published to, in the form projects/{project}/topics/{topic}. This field is only required if Pub/Sub notifications are enabled. */
+  /** The topic which Pub/Sub notifications are published to, in the form projects/{project}/topics/{topic}. This field is only required if Pub/Sub notifications are enabled. */
   var pubsubTopic: js.UndefOr[String] = js.undefined
   
   /** Sign-in details of the enterprise. */
@@ -52,11 +55,15 @@ object Enterprise {
     
     inline def setAppAutoApprovalEnabledUndefined: Self = StObject.set(x, "appAutoApprovalEnabled", js.undefined)
     
+    inline def setContactInfo(value: ContactInfo): Self = StObject.set(x, "contactInfo", value.asInstanceOf[js.Any])
+    
+    inline def setContactInfoUndefined: Self = StObject.set(x, "contactInfo", js.undefined)
+    
     inline def setEnabledNotificationTypes(value: js.Array[String]): Self = StObject.set(x, "enabledNotificationTypes", value.asInstanceOf[js.Any])
     
     inline def setEnabledNotificationTypesUndefined: Self = StObject.set(x, "enabledNotificationTypes", js.undefined)
     
-    inline def setEnabledNotificationTypesVarargs(value: String*): Self = StObject.set(x, "enabledNotificationTypes", js.Array(value :_*))
+    inline def setEnabledNotificationTypesVarargs(value: String*): Self = StObject.set(x, "enabledNotificationTypes", js.Array(value*))
     
     inline def setEnterpriseDisplayName(value: String): Self = StObject.set(x, "enterpriseDisplayName", value.asInstanceOf[js.Any])
     
@@ -82,12 +89,12 @@ object Enterprise {
     
     inline def setSigninDetailsUndefined: Self = StObject.set(x, "signinDetails", js.undefined)
     
-    inline def setSigninDetailsVarargs(value: SigninDetail*): Self = StObject.set(x, "signinDetails", js.Array(value :_*))
+    inline def setSigninDetailsVarargs(value: SigninDetail*): Self = StObject.set(x, "signinDetails", js.Array(value*))
     
     inline def setTermsAndConditions(value: js.Array[TermsAndConditions]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
     
     inline def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
     
-    inline def setTermsAndConditionsVarargs(value: TermsAndConditions*): Self = StObject.set(x, "termsAndConditions", js.Array(value :_*))
+    inline def setTermsAndConditionsVarargs(value: TermsAndConditions*): Self = StObject.set(x, "termsAndConditions", js.Array(value*))
   }
 }

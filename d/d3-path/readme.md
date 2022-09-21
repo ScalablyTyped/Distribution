@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-path
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Serialize Canvas path commands to SVG.
@@ -11,9 +11,9 @@ Serialize Canvas path commands to SVG.
 | Full name          | d3-path |
 | Keywords           | d3, d3-module, canvas, path, svg, graphics, CanvasRenderingContext2D, CanvasPathMethods, Path2D |
 | # releases         | 5 |
-| # dependents       | 102 |
-| # downloads        | 70721247 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5486344666666666E7 |
+| # stars            | 176.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-path/)

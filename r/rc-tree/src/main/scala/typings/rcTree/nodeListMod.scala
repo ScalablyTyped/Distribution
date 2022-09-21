@@ -1,9 +1,11 @@
 package typings.rcTree
 
 import typings.rcTree.interfaceMod.DataEntity
+import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.FlattenNode
 import typings.rcTree.interfaceMod.Key
-import typings.rcTree.interfaceMod.ScrollTo
+import typings.rcVirtualList.listMod.ScrollConfig
+import typings.rcVirtualList.listMod.ScrollTo
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -11,6 +13,7 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.RefAttributes
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -25,7 +28,7 @@ object nodeListMod {
   
   @JSImport("rc-tree/es/NodeList", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[NodeListProps & RefAttributes[NodeListRef]] = js.native
+  val default: ForwardRefExoticComponent[NodeListProps[Any] & RefAttributes[NodeListRef]] = js.native
   
   @JSImport("rc-tree/es/NodeList", "MOTION_KEY")
   @js.native
@@ -33,19 +36,19 @@ object nodeListMod {
   
   @JSImport("rc-tree/es/NodeList", "MotionEntity")
   @js.native
-  val MotionEntity: DataEntity = js.native
+  val MotionEntity: DataEntity[DataNode] = js.native
   
-  inline def getMinimumRangeTransitionRange(list: js.Array[FlattenNode], virtual: Boolean, height: Double, itemHeight: Double): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMinimumRangeTransitionRange")(list.asInstanceOf[js.Any], virtual.asInstanceOf[js.Any], height.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
+  inline def getMinimumRangeTransitionRange(list: js.Array[FlattenNode[DataNode]], virtual: Boolean, height: Double, itemHeight: Double): js.Array[FlattenNode[DataNode]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMinimumRangeTransitionRange")(list.asInstanceOf[js.Any], virtual.asInstanceOf[js.Any], height.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode[DataNode]]]
   
-  trait NodeListProps extends StObject {
+  trait NodeListProps[TreeDataType] extends StObject {
     
-    var activeItem: FlattenNode
+    var activeItem: FlattenNode[TreeDataType]
     
     var checkable: js.UndefOr[Boolean] = js.undefined
     
     var checkedKeys: js.Array[Key]
     
-    var data: js.Array[FlattenNode]
+    var data: js.Array[FlattenNode[TreeDataType]]
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -67,13 +70,13 @@ object nodeListMod {
     
     var itemHeight: Double
     
-    var keyEntities: Record[Key, DataEntity]
+    var keyEntities: Record[Key, DataEntity[Any]]
     
     var loadedKeys: js.Array[Key]
     
     var loadingKeys: js.Array[Key]
     
-    var motion: js.Any
+    var motion: Any
     
     def onActiveChange(key: Key): Unit
     
@@ -101,10 +104,10 @@ object nodeListMod {
   }
   object NodeListProps {
     
-    inline def apply(
-      activeItem: FlattenNode,
+    inline def apply[TreeDataType](
+      activeItem: FlattenNode[TreeDataType],
       checkedKeys: js.Array[Key],
-      data: js.Array[FlattenNode],
+      data: js.Array[FlattenNode[TreeDataType]],
       dragOverNodeKey: Key,
       dragging: Boolean,
       dropPosition: Double,
@@ -112,10 +115,10 @@ object nodeListMod {
       halfCheckedKeys: js.Array[Key],
       height: Double,
       itemHeight: Double,
-      keyEntities: Record[Key, DataEntity],
+      keyEntities: Record[Key, DataEntity[Any]],
       loadedKeys: js.Array[Key],
       loadingKeys: js.Array[Key],
-      motion: js.Any,
+      motion: Any,
       onActiveChange: Key => Unit,
       onListChangeEnd: () => Unit,
       onListChangeStart: () => Unit,
@@ -123,14 +126,14 @@ object nodeListMod {
       selectedKeys: js.Array[Key],
       style: CSSProperties,
       tabIndex: Double
-    ): NodeListProps = {
+    ): NodeListProps[TreeDataType] = {
       val __obj = js.Dynamic.literal(activeItem = activeItem.asInstanceOf[js.Any], checkedKeys = checkedKeys.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dragOverNodeKey = dragOverNodeKey.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], dropPosition = dropPosition.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], halfCheckedKeys = halfCheckedKeys.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemHeight = itemHeight.asInstanceOf[js.Any], keyEntities = keyEntities.asInstanceOf[js.Any], loadedKeys = loadedKeys.asInstanceOf[js.Any], loadingKeys = loadingKeys.asInstanceOf[js.Any], motion = motion.asInstanceOf[js.Any], onActiveChange = js.Any.fromFunction1(onActiveChange), onListChangeEnd = js.Any.fromFunction0(onListChangeEnd), onListChangeStart = js.Any.fromFunction0(onListChangeStart), prefixCls = prefixCls.asInstanceOf[js.Any], selectedKeys = selectedKeys.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NodeListProps]
+      __obj.asInstanceOf[NodeListProps[TreeDataType]]
     }
     
-    extension [Self <: NodeListProps](x: Self) {
+    extension [Self <: NodeListProps[?], TreeDataType](x: Self & NodeListProps[TreeDataType]) {
       
-      inline def setActiveItem(value: FlattenNode): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
+      inline def setActiveItem(value: FlattenNode[TreeDataType]): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       
       inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
@@ -138,11 +141,11 @@ object nodeListMod {
       
       inline def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       
-      inline def setCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
+      inline def setCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "checkedKeys", js.Array(value*))
       
-      inline def setData(value: js.Array[FlattenNode]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[FlattenNode[TreeDataType]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: FlattenNode*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: FlattenNode[TreeDataType]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,7 @@ object nodeListMod {
       
       inline def setExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
       
-      inline def setExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
+      inline def setExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "expandedKeys", js.Array(value*))
       
       inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
@@ -168,31 +171,31 @@ object nodeListMod {
       
       inline def setHalfCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
       
-      inline def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
+      inline def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
       
-      inline def setKeyEntities(value: Record[Key, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
+      inline def setKeyEntities(value: Record[Key, DataEntity[Any]]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
       
       inline def setLoadedKeys(value: js.Array[Key]): Self = StObject.set(x, "loadedKeys", value.asInstanceOf[js.Any])
       
-      inline def setLoadedKeysVarargs(value: Key*): Self = StObject.set(x, "loadedKeys", js.Array(value :_*))
+      inline def setLoadedKeysVarargs(value: Key*): Self = StObject.set(x, "loadedKeys", js.Array(value*))
       
       inline def setLoadingKeys(value: js.Array[Key]): Self = StObject.set(x, "loadingKeys", value.asInstanceOf[js.Any])
       
-      inline def setLoadingKeysVarargs(value: Key*): Self = StObject.set(x, "loadingKeys", js.Array(value :_*))
+      inline def setLoadingKeysVarargs(value: Key*): Self = StObject.set(x, "loadingKeys", js.Array(value*))
       
-      inline def setMotion(value: js.Any): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+      inline def setMotion(value: Any): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
       
       inline def setOnActiveChange(value: Key => Unit): Self = StObject.set(x, "onActiveChange", js.Any.fromFunction1(value))
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -212,7 +215,7 @@ object nodeListMod {
       
       inline def setSelectedKeys(value: js.Array[Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
       
-      inline def setSelectedKeysVarargs(value: Key*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+      inline def setSelectedKeysVarargs(value: Key*): Self = StObject.set(x, "selectedKeys", js.Array(value*))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -226,18 +229,22 @@ object nodeListMod {
   
   trait NodeListRef extends StObject {
     
+    def getIndentWidth(): Double
+    
     var scrollTo: ScrollTo
   }
   object NodeListRef {
     
-    inline def apply(scrollTo: /* scroll */ typings.rcTree.anon.Key => Unit): NodeListRef = {
-      val __obj = js.Dynamic.literal(scrollTo = js.Any.fromFunction1(scrollTo))
+    inline def apply(getIndentWidth: () => Double, scrollTo: /* arg */ Double | ScrollConfig => Unit): NodeListRef = {
+      val __obj = js.Dynamic.literal(getIndentWidth = js.Any.fromFunction0(getIndentWidth), scrollTo = js.Any.fromFunction1(scrollTo))
       __obj.asInstanceOf[NodeListRef]
     }
     
     extension [Self <: NodeListRef](x: Self) {
       
-      inline def setScrollTo(value: /* scroll */ typings.rcTree.anon.Key => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      inline def setGetIndentWidth(value: () => Double): Self = StObject.set(x, "getIndentWidth", js.Any.fromFunction0(value))
+      
+      inline def setScrollTo(value: /* arg */ Double | ScrollConfig => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
     }
   }
 }

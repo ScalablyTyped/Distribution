@@ -6,10 +6,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StateObject
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.iobroker.objectsMod.global.ioBroker._ObjectIdToObjectType because Already inherited */ trait StateObject
   extends StObject
      with BaseObject
-     with AnyObject {
+     with AdapterScopedObject
+     with AnyObject
+     with _InferGetObjectViewItemType[Any, Any] {
   
   @JSName("acl")
   var acl_StateObject: js.UndefOr[StateACL] = js.undefined
@@ -22,7 +25,7 @@ trait StateObject
 }
 object StateObject {
   
-  inline def apply(_id: String, common: StateCommon, native: Record[String, js.Any]): StateObject = {
+  inline def apply(_id: String, common: StateCommon, native: Record[String, Any]): StateObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("state")
     __obj.asInstanceOf[StateObject]

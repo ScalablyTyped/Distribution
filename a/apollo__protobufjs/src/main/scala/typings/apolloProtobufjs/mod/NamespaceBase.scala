@@ -23,7 +23,7 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @param nestedJson Any nested object descriptors
     * @returns `this`
     */
-  def addJSON(nestedJson: StringDictionary[js.UndefOr[AnyNestedObject]]): Namespace = js.native
+  def addJSON(nestedJson: StringDictionary[AnyNestedObject]): Namespace = js.native
   
   /**
     * Defines additial namespaces within this one if not yet existing.
@@ -32,9 +32,9 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @returns Pointer to the last namespace created or `this` if path is empty
     */
   def define(path: String): Namespace = js.native
-  def define(path: String, json: js.Any): Namespace = js.native
+  def define(path: String, json: Any): Namespace = js.native
   def define(path: js.Array[String]): Namespace = js.native
-  def define(path: js.Array[String], json: js.Any): Namespace = js.native
+  def define(path: js.Array[String], json: Any): Namespace = js.native
   
   /**
     * Gets the nested object of the specified name.
@@ -50,7 +50,7 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @returns Enum values
     * @throws {Error} If there is no such enum
     */
-  def getEnum(name: String): StringDictionary[js.UndefOr[Double]] = js.native
+  def getEnum(name: String): StringDictionary[Double] = js.native
   
   /**
     * Looks up the reflection object at the specified path, relative to this namespace.
@@ -59,6 +59,8 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @returns Looked up object or `null` if none could be found
     */
   def lookup(path: String): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: js.Array[Any]): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: js.Array[Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   /**
     * Recursively looks up the reflection object matching the specified path in the scope of this namespace.
     * @param path Path to look up
@@ -66,16 +68,14 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @param [parentAlreadyChecked=false] If known, whether the parent has already been checked
     * @returns Looked up object or `null` if none could be found
     */
-  def lookup(path: String, filterTypes: js.Any): ReflectionObject | Null = js.native
-  def lookup(path: String, filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  def lookup(path: String, filterTypes: js.Array[js.Any]): ReflectionObject | Null = js.native
-  def lookup(path: String, filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: Any): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: String, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String]): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Any): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Array[js.Any]): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: js.Array[Any]): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: js.Array[Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: Any): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   
   /**
@@ -119,7 +119,7 @@ abstract class NamespaceBase () extends ReflectionObject {
   def lookupTypeOrEnum(path: js.Array[String]): Type = js.native
   
   /** Nested objects by name. */
-  var nested: js.UndefOr[StringDictionary[js.UndefOr[ReflectionObject]]] = js.native
+  var nested: js.UndefOr[StringDictionary[ReflectionObject]] = js.native
   
   /** Nested objects of this namespace as an array for iteration. */
   val nestedArray: js.Array[ReflectionObject] = js.native

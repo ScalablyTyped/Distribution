@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.NavigationGroups")
 @js.native
-/* private */ class NavigationGroups ()
+/* private */ open class NavigationGroups ()
   extends StObject
      with typings.activexOutlook.Outlook.NavigationGroups {
   
@@ -31,14 +31,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def GetDefaultNavigationGroup(DefaultFolderGroup: OlGroupType): typings.activexOutlook.Outlook.NavigationGroup = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.NavigationGroup = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.NavigationGroup = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.NavigationGroups_typekey")
   var OutlookDotNavigationGroups_typekey: typings.activexOutlook.Outlook.NavigationGroups = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

@@ -12,12 +12,12 @@ trait AddressLists extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): AddressList
+  def Item(Index: Any): AddressList
   
   /* private */ @JSName("Outlook.AddressLists_typekey")
   var OutlookDotAddressLists_typekey: AddressLists
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -27,9 +27,9 @@ object AddressLists {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => AddressList,
+    Item: Any => AddressList,
     OutlookDotAddressLists_typekey: AddressLists,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): AddressLists = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -45,11 +45,11 @@ object AddressLists {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => AddressList): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => AddressList): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotAddressLists_typekey(value: AddressLists): Self = StObject.set(x, "Outlook.AddressLists_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

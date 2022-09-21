@@ -9,17 +9,17 @@ object stringDictionaryMod {
   
   @JSImport("babylonjs/Misc/stringDictionary", "StringDictionary")
   @js.native
-  class StringDictionary[T] () extends StObject {
+  open class StringDictionary[T] () extends StObject {
     
-    /* private */ var _count: js.Any = js.native
+    /* private */ var _count: Any = js.native
     
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
     
     /**
       * Add a new key and its corresponding value
       * @param key the key to add
       * @param value the value corresponding to the key
-      * @return true if the operation completed successfully, false if we couldn't insert the key/value because there was already this key in the dictionary
+      * @returns true if the operation completed successfully, false if we couldn't insert the key/value because there was already this key in the dictionary
       */
     def add(key: String, value: T): Boolean = js.native
     
@@ -31,7 +31,7 @@ object stringDictionaryMod {
     /**
       * Check if there's a given key in the dictionary
       * @param key the key to check for
-      * @return true if the key is present, false otherwise
+      * @returns true if the key is present, false otherwise
       */
     def contains(key: String): Boolean = js.native
     
@@ -66,7 +66,7 @@ object stringDictionaryMod {
     /**
       * Get a value based from its key
       * @param key the given key to get the matching value from
-      * @return the value if found, otherwise undefined is returned
+      * @returns the value if found, otherwise undefined is returned
       */
     def get(key: String): js.UndefOr[T] = js.native
     
@@ -81,7 +81,7 @@ object stringDictionaryMod {
       * Get a value from its key if present in the dictionary otherwise add it
       * @param key the key to get the value from
       * @param val if there's no such key/value pair in the dictionary add it with this value
-      * @return the value corresponding to the key
+      * @returns the value corresponding to the key
       */
     def getOrAdd(key: String, `val`: T): T = js.native
     
@@ -91,14 +91,14 @@ object stringDictionaryMod {
       * @param key the given key to get the matching value from
       * @param factory the factory that will create the value if the key is not present in the dictionary.
       * The factory will only be invoked if there's no data for the given key.
-      * @return the value corresponding to the key.
+      * @returns the value corresponding to the key.
       */
     def getOrAddWithFactory(key: String, factory: js.Function1[/* key */ String, T]): T = js.native
     
     /**
       * Remove a key/value from the dictionary.
       * @param key the key to remove
-      * @return true if the item was successfully deleted, false if no item with such key exist in the dictionary
+      * @returns true if the item was successfully deleted, false if no item with such key exist in the dictionary
       */
     def remove(key: String): Boolean = js.native
     

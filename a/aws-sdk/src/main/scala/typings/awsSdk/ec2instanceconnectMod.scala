@@ -16,7 +16,7 @@ object ec2instanceconnectMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends EC2InstanceConnect {
+  open class ^ () extends EC2InstanceConnect {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -58,18 +58,32 @@ object ec2instanceconnectMod {
     var config_EC2InstanceConnect: ConfigBase & ClientConfiguration = js.native
     
     /**
-      * Pushes an SSH public key to a particular OS user on a given EC2 instance for 60 seconds.
+      * Pushes an SSH public key to the specified EC2 instance for use by the specified user. The key remains for 60 seconds. For more information, see Connect to your Linux instance using EC2 Instance Connect in the Amazon EC2 User Guide.
       */
     def sendSSHPublicKey(): Request[SendSSHPublicKeyResponse, AWSError] = js.native
     def sendSSHPublicKey(callback: js.Function2[/* err */ AWSError, /* data */ SendSSHPublicKeyResponse, Unit]): Request[SendSSHPublicKeyResponse, AWSError] = js.native
     /**
-      * Pushes an SSH public key to a particular OS user on a given EC2 instance for 60 seconds.
+      * Pushes an SSH public key to the specified EC2 instance for use by the specified user. The key remains for 60 seconds. For more information, see Connect to your Linux instance using EC2 Instance Connect in the Amazon EC2 User Guide.
       */
     def sendSSHPublicKey(params: SendSSHPublicKeyRequest): Request[SendSSHPublicKeyResponse, AWSError] = js.native
     def sendSSHPublicKey(
       params: SendSSHPublicKeyRequest,
       callback: js.Function2[/* err */ AWSError, /* data */ SendSSHPublicKeyResponse, Unit]
     ): Request[SendSSHPublicKeyResponse, AWSError] = js.native
+    
+    /**
+      * Pushes an SSH public key to the specified EC2 instance. The key remains for 60 seconds, which gives you 60 seconds to establish a serial console connection to the instance using SSH. For more information, see EC2 Serial Console in the Amazon EC2 User Guide.
+      */
+    def sendSerialConsoleSSHPublicKey(): Request[SendSerialConsoleSSHPublicKeyResponse, AWSError] = js.native
+    def sendSerialConsoleSSHPublicKey(callback: js.Function2[/* err */ AWSError, /* data */ SendSerialConsoleSSHPublicKeyResponse, Unit]): Request[SendSerialConsoleSSHPublicKeyResponse, AWSError] = js.native
+    /**
+      * Pushes an SSH public key to the specified EC2 instance. The key remains for 60 seconds, which gives you 60 seconds to establish a serial console connection to the instance using SSH. For more information, see EC2 Serial Console in the Amazon EC2 User Guide.
+      */
+    def sendSerialConsoleSSHPublicKey(params: SendSerialConsoleSSHPublicKeyRequest): Request[SendSerialConsoleSSHPublicKeyResponse, AWSError] = js.native
+    def sendSerialConsoleSSHPublicKey(
+      params: SendSerialConsoleSSHPublicKeyRequest,
+      callback: js.Function2[/* err */ AWSError, /* data */ SendSerialConsoleSSHPublicKeyResponse, Unit]
+    ): Request[SendSerialConsoleSSHPublicKeyResponse, AWSError] = js.native
   }
   
   type InstanceId = String
@@ -83,40 +97,37 @@ object ec2instanceconnectMod {
   trait SendSSHPublicKeyRequest extends StObject {
     
     /**
-      * The availability zone the EC2 instance was launched in.
+      * The Availability Zone in which the EC2 instance was launched.
       */
-    var AvailabilityZone: typings.awsSdk.ec2instanceconnectMod.AvailabilityZone
+    var AvailabilityZone: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.AvailabilityZone] = js.undefined
     
     /**
-      * The EC2 instance you wish to publish the SSH key to.
+      * The ID of the EC2 instance.
       */
     var InstanceId: typings.awsSdk.ec2instanceconnectMod.InstanceId
     
     /**
-      * The OS user on the EC2 instance whom the key may be used to authenticate as.
+      * The OS user on the EC2 instance for whom the key can be used to authenticate.
       */
     var InstanceOSUser: typings.awsSdk.ec2instanceconnectMod.InstanceOSUser
     
     /**
-      * The public key to be published to the instance. To use it after publication you must have the matching private key.
+      * The public key material. To use the public key, you must have the matching private key.
       */
     var SSHPublicKey: typings.awsSdk.ec2instanceconnectMod.SSHPublicKey
   }
   object SendSSHPublicKeyRequest {
     
-    inline def apply(
-      AvailabilityZone: AvailabilityZone,
-      InstanceId: InstanceId,
-      InstanceOSUser: InstanceOSUser,
-      SSHPublicKey: SSHPublicKey
-    ): SendSSHPublicKeyRequest = {
-      val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], InstanceOSUser = InstanceOSUser.asInstanceOf[js.Any], SSHPublicKey = SSHPublicKey.asInstanceOf[js.Any])
+    inline def apply(InstanceId: InstanceId, InstanceOSUser: InstanceOSUser, SSHPublicKey: SSHPublicKey): SendSSHPublicKeyRequest = {
+      val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], InstanceOSUser = InstanceOSUser.asInstanceOf[js.Any], SSHPublicKey = SSHPublicKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendSSHPublicKeyRequest]
     }
     
     extension [Self <: SendSSHPublicKeyRequest](x: Self) {
       
       inline def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+      
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
       
       inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
       
@@ -129,12 +140,12 @@ object ec2instanceconnectMod {
   trait SendSSHPublicKeyResponse extends StObject {
     
     /**
-      * The request ID as logged by EC2 Connect. Please provide this when contacting AWS Support.
+      * The ID of the request. Please provide this ID when contacting AWS Support for assistance.
       */
     var RequestId: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.RequestId] = js.undefined
     
     /**
-      * Indicates request success.
+      * Is true if the request succeeds and an error otherwise.
       */
     var Success: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.Success] = js.undefined
   }
@@ -156,6 +167,75 @@ object ec2instanceconnectMod {
       inline def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
     }
   }
+  
+  trait SendSerialConsoleSSHPublicKeyRequest extends StObject {
+    
+    /**
+      * The ID of the EC2 instance.
+      */
+    var InstanceId: typings.awsSdk.ec2instanceconnectMod.InstanceId
+    
+    /**
+      * The public key material. To use the public key, you must have the matching private key. For information about the supported key formats and lengths, see Requirements for key pairs in the Amazon EC2 User Guide.
+      */
+    var SSHPublicKey: typings.awsSdk.ec2instanceconnectMod.SSHPublicKey
+    
+    /**
+      * The serial port of the EC2 instance. Currently only port 0 is supported. Default: 0
+      */
+    var SerialPort: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.SerialPort] = js.undefined
+  }
+  object SendSerialConsoleSSHPublicKeyRequest {
+    
+    inline def apply(InstanceId: InstanceId, SSHPublicKey: SSHPublicKey): SendSerialConsoleSSHPublicKeyRequest = {
+      val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], SSHPublicKey = SSHPublicKey.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SendSerialConsoleSSHPublicKeyRequest]
+    }
+    
+    extension [Self <: SendSerialConsoleSSHPublicKeyRequest](x: Self) {
+      
+      inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+      
+      inline def setSSHPublicKey(value: SSHPublicKey): Self = StObject.set(x, "SSHPublicKey", value.asInstanceOf[js.Any])
+      
+      inline def setSerialPort(value: SerialPort): Self = StObject.set(x, "SerialPort", value.asInstanceOf[js.Any])
+      
+      inline def setSerialPortUndefined: Self = StObject.set(x, "SerialPort", js.undefined)
+    }
+  }
+  
+  trait SendSerialConsoleSSHPublicKeyResponse extends StObject {
+    
+    /**
+      * The ID of the request. Please provide this ID when contacting AWS Support for assistance.
+      */
+    var RequestId: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.RequestId] = js.undefined
+    
+    /**
+      * Is true if the request succeeds and an error otherwise.
+      */
+    var Success: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.Success] = js.undefined
+  }
+  object SendSerialConsoleSSHPublicKeyResponse {
+    
+    inline def apply(): SendSerialConsoleSSHPublicKeyResponse = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SendSerialConsoleSSHPublicKeyResponse]
+    }
+    
+    extension [Self <: SendSerialConsoleSSHPublicKeyResponse](x: Self) {
+      
+      inline def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+      
+      inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+      
+      inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+      
+      inline def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
+    }
+  }
+  
+  type SerialPort = Double
   
   type Success = Boolean
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 媒体-----视频
 trait ChooseVideoOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 前置或者后置摄像头，默认为前后都有，即：['front', 'back'] */
   var camera: js.UndefOr[CameraDevice] = js.undefined
@@ -50,7 +50,7 @@ object ChooseVideoOptions {
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    inline def setSourceTypeVarargs(value: VideoSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: VideoSourceType*): Self = StObject.set(x, "sourceType", js.Array(value*))
     
     inline def setSuccess(value: /* res */ VideoData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

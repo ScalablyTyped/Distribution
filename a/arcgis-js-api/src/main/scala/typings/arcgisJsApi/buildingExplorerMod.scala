@@ -22,7 +22,7 @@ object buildingExplorerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with BuildingExplorer {
     def this(properties: BuildingExplorerProperties) = this()

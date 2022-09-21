@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutEmailIdentityDkimAttributesRequest extends StObject {
   
   /**
-    * The email identity that you want to change the DKIM settings for.
+    * The email identity.
     */
   var EmailIdentity: Identity
   

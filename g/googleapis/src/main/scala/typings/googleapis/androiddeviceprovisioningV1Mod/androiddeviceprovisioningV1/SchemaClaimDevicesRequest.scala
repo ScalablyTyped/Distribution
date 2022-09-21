@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to claim devices asynchronously in batch. Claiming a device adds
-  * the device to zero-touch enrollment and shows the device in the
-  * customer&#39;s view of the portal.
-  */
 trait SchemaClaimDevicesRequest extends StObject {
   
   /**
@@ -29,6 +24,6 @@ object SchemaClaimDevicesRequest {
     
     inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
-    inline def setClaimsVarargs(value: SchemaPartnerClaim*): Self = StObject.set(x, "claims", js.Array(value :_*))
+    inline def setClaimsVarargs(value: SchemaPartnerClaim*): Self = StObject.set(x, "claims", js.Array(value*))
   }
 }

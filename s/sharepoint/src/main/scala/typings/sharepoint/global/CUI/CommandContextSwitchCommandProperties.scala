@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.CommandContextSwitchCommandProperties")
 @js.native
-class CommandContextSwitchCommandProperties ()
+open class CommandContextSwitchCommandProperties ()
   extends StObject
      with typings.sharepoint.CUI.CommandContextSwitchCommandProperties

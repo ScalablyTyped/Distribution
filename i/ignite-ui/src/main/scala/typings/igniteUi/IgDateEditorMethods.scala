@@ -1,6 +1,5 @@
 package typings.igniteUi
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait IgDateEditorMethods extends StObject {
     * Gets selected date as a date object. This method can be used when dataMode is set as either displayModeText or editModeText.
     * In such cases the value() method will not return date object and getSelectedDate() can be used to replace that functionality.
     */
-  def getSelectedDate(): Date = js.native
+  def getSelectedDate(): js.Date = js.native
   
   def getSelectedListItem(): Unit = js.native
   
@@ -43,7 +42,7 @@ trait IgDateEditorMethods extends StObject {
     *
     * @param date
     */
-  def selectDate(date: Date): Unit = js.native
+  def selectDate(date: js.Date): Unit = js.native
   
   def selectedListIndex(): Unit = js.native
   
@@ -82,6 +81,6 @@ trait IgDateEditorMethods extends StObject {
     *
     * @param newValue New editor value. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too. For example Date(/"thicks"/).
     */
-  def value(): Date = js.native
-  def value(newValue: Date): Date = js.native
+  def value(): js.Date = js.native
+  def value(newValue: js.Date): js.Date = js.native
 }

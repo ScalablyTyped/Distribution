@@ -10,8 +10,8 @@ object containerMod {
   
   @JSImport("muicss/lib/react/container", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ContainerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ContainerProps, js.Object, Any]
   
-  type Container = Component[ContainerProps, js.Object, js.Any]
+  type Container = Component[ContainerProps, js.Object, Any]
 }

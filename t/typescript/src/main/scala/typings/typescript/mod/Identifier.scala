@@ -9,6 +9,7 @@ trait Identifier
   extends StObject
      with PrimaryExpression
      with Declaration
+     with AssertionKey
      with BindingName
      with BindingOrAssignmentElementTarget
      with DeclarationName
@@ -16,6 +17,7 @@ trait Identifier
      with EntityNameExpression
      with JSDocNamespaceBody
      with JsxTagNameExpression
+     with MemberName
      with ModuleName
      with PropertyName
      with PropertyNameLiteral

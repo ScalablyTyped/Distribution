@@ -12,7 +12,7 @@ object slave {
   /**
     * Default Constructor.
     */
-  class InvokeHistory ()
+  open class InvokeHistory ()
     extends typings.samchon.slaveMod.InvokeHistory {
     /**
       * Construct from an {@link Invoke} message.
@@ -24,7 +24,7 @@ object slave {
   
   @JSImport("samchon/templates", "slave.PInvoke")
   @js.native
-  class PInvoke protected ()
+  open class PInvoke protected ()
     extends typings.samchon.slaveMod.PInvoke {
     /**
       * Initializer Constructor.

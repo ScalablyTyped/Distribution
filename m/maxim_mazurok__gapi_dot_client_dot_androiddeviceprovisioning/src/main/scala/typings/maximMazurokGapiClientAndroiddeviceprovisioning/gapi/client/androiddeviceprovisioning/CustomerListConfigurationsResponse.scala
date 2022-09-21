@@ -22,6 +22,6 @@ object CustomerListConfigurationsResponse {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "configurations", js.Array(value*))
   }
 }

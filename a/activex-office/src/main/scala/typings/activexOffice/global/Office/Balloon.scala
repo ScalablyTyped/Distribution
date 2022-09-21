@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Balloon")
 @js.native
-/* private */ class Balloon ()
+/* private */ open class Balloon ()
   extends StObject
      with typings.activexOffice.Office.Balloon {
   
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Animation: MsoAnimationType = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var BalloonType: MsoBalloonType = js.native
@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotBalloon_typekey: typings.activexOffice.Office.Balloon = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Private: Double = js.native

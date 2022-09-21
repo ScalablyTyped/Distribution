@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_RedisList")
 @js.native
-class ClassRedisList ()
+open class ClassRedisList ()
   extends StObject
      with typings.fibjs.ClassRedisList

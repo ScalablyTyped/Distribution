@@ -5,7 +5,7 @@ import typings.blueprintjsSelect.blueprintjsSelectStrings.first
 import typings.blueprintjsSelect.blueprintjsSelectStrings.last
 import typings.blueprintjsSelect.itemListRendererMod.ItemListRenderer
 import typings.blueprintjsSelect.itemRendererMod.ItemRenderer
-import typings.blueprintjsSelect.listItemsUtilsMod.ICreateNewItem
+import typings.blueprintjsSelect.listItemsUtilsMod.CreateNewItem
 import typings.blueprintjsSelect.predicateMod.ItemListPredicate
 import typings.blueprintjsSelect.predicateMod.ItemPredicate
 import typings.react.mod.ChangeEvent
@@ -37,8 +37,14 @@ object listItemsPropsMod {
   inline def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: Null, itemB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any], itemB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: Unit, itemB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")(itemsEqualProp.asInstanceOf[js.Any], itemA.asInstanceOf[js.Any], itemB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  type IListItemsProps[T] = ListItemsProps[T]
+  
+  type ItemsEqualComparator[T] = js.Function2[/* itemA */ T, /* itemB */ T, Boolean]
+  
+  type ItemsEqualProp[T] = ItemsEqualComparator[T] | (/* keyof T */ String)
+  
   @js.native
-  trait IListItemsProps[T]
+  trait ListItemsProps[T]
     extends StObject
        with IProps {
     
@@ -48,7 +54,7 @@ object listItemsPropsMod {
       * uncontrolled (managed by the component's state). Use `onActiveItemChange`
       * to listen for updates.
       */
-    var activeItem: js.UndefOr[T | ICreateNewItem | Null] = js.native
+    var activeItem: js.UndefOr[T | CreateNewItem | Null] = js.native
     
     /**
       * If provided, allows new items to be created using the current query
@@ -61,6 +67,7 @@ object listItemsPropsMod {
     /**
       * Determines the position of the `createNewItem` within the list: first or
       * last. Only relevant when `createNewItemRenderer` is defined.
+      *
       * @default 'last'
       */
     var createNewItemPosition: js.UndefOr[first | last] = js.native
@@ -165,6 +172,8 @@ object listItemsPropsMod {
       * If omitted, nothing will be rendered in this case.
       *
       * This prop is ignored if a custom `itemListRenderer` is supplied.
+      *
+      * NOTE: if passing a `MenuItem`, ensure it has `roleStructure="listoption"` prop.
       */
     var noResults: js.UndefOr[ReactNode] = js.native
     
@@ -176,11 +185,11 @@ object listItemsPropsMod {
       *
       * If the "Create Item" option is displayed and currently active, then
       * `isCreateNewItem` will be `true` and `activeItem` will be `null`. In this
-      * case, you should provide a valid `ICreateNewItem` object to the
+      * case, you should provide a valid `CreateNewItem` object to the
       * `activeItem` _prop_ in order for the "Create Item" option to appear as
       * active.
       *
-      * __Note:__ You can instantiate a `ICreateNewItem` object using the
+      * __Note:__ You can instantiate a `CreateNewItem` object using the
       * `getCreateNewItem()` utility exported from this package.
       */
     var onActiveItemChange: js.UndefOr[js.Function2[/* activeItem */ T | Null, /* isCreateNewItem */ Boolean, Unit]] = js.native
@@ -214,6 +223,7 @@ object listItemsPropsMod {
     /**
       * Whether the active item should be reset to the first matching item _every
       * time the query changes_ (via prop or by user input).
+      *
       * @default true
       */
     var resetOnQuery: js.UndefOr[Boolean] = js.native
@@ -221,6 +231,7 @@ object listItemsPropsMod {
     /**
       * Whether the active item should be reset to the first matching item _when
       * an item is selected_. The query will also be reset to the empty string.
+      *
       * @default false
       */
     var resetOnSelect: js.UndefOr[Boolean] = js.native
@@ -231,12 +242,9 @@ object listItemsPropsMod {
       * that result from built-in interactions (clicking, querying, or using
       * arrow keys) will scroll the active item into view. Ignored if the
       * `activeItem` prop is omitted (uncontrolled behavior).
+      *
       * @default true
       */
     var scrollToActiveItem: js.UndefOr[Boolean] = js.native
   }
-  
-  type ItemsEqualComparator[T] = js.Function2[/* itemA */ T, /* itemB */ T, Boolean]
-  
-  type ItemsEqualProp[T] = ItemsEqualComparator[T] | (/* keyof T */ String)
 }

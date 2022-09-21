@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Cancel
   extends StObject
      with AbstractAction
-     with AsyncAction[js.Any] {
+     with AsyncAction[Any] {
   
   @JSName("type")
   var type_Cancel: cancel

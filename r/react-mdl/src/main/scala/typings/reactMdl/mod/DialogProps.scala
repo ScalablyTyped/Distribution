@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DialogProps
   extends StObject
-     with HTMLProps[js.Any] {
+     with HTMLProps[Any] {
   
-  var onCancel: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+  var onCancel: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
 }
 object DialogProps {
   
@@ -20,7 +20,7 @@ object DialogProps {
   
   extension [Self <: DialogProps](x: Self) {
     
-    inline def setOnCancel(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+    inline def setOnCancel(value: /* e */ Any => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
     
     inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
   }

@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object componentContainerMod {
   
-  @JSImport("@firebase/component/dist/src/component_container", "ComponentContainer")
+  @JSImport("@firebase/component/dist/esm/src/component_container", "ComponentContainer")
   @js.native
-  class ComponentContainer protected () extends StObject {
+  open class ComponentContainer protected () extends StObject {
     def this(name: String) = this()
     
     @JSName("addComponent")
@@ -70,8 +70,8 @@ object componentContainerMod {
     
     def getProviders(): js.Array[Provider[Name]] = js.native
     
-    /* private */ val name: js.Any = js.native
+    /* private */ val name: Any = js.native
     
-    /* private */ val providers: js.Any = js.native
+    /* private */ val providers: Any = js.native
   }
 }

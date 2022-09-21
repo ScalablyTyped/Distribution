@@ -44,7 +44,7 @@ object typesListGlobalTablesOutputMod {
       
       inline def setGlobalTablesUndefined: Self = StObject.set(x, "GlobalTables", js.undefined)
       
-      inline def setGlobalTablesVarargs(value: UnmarshalledGlobalTable*): Self = StObject.set(x, "GlobalTables", js.Array(value :_*))
+      inline def setGlobalTablesVarargs(value: UnmarshalledGlobalTable*): Self = StObject.set(x, "GlobalTables", js.Array(value*))
       
       inline def setLastEvaluatedGlobalTableName(value: String): Self = StObject.set(x, "LastEvaluatedGlobalTableName", value.asInstanceOf[js.Any])
       

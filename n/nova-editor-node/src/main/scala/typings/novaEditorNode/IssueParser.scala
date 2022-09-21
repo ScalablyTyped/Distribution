@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/issue-parser/
+/// https://docs.nova.app/api-reference/issue-parser/
 trait IssueParser extends StObject {
   
   def clear(): Unit
@@ -26,7 +26,7 @@ object IssueParser {
     
     inline def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
-    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value*))
     
     inline def setPushLine(value: String => Unit): Self = StObject.set(x, "pushLine", js.Any.fromFunction1(value))
   }

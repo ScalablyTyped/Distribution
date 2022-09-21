@@ -9,17 +9,17 @@ trait `1`[TElement]
   extends StObject
      with _ValHook[TElement] {
   
-  def set(elem: TElement, value: js.Any): js.Any
+  def set(elem: TElement, value: Any): Any
 }
 object `1` {
   
-  inline def apply[TElement](set: (TElement, js.Any) => js.Any): `1`[TElement] = {
+  inline def apply[TElement](set: (TElement, Any) => Any): `1`[TElement] = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[`1`[TElement]]
   }
   
   extension [Self <: `1`[?], TElement](x: Self & `1`[TElement]) {
     
-    inline def setSet(value: (TElement, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (TElement, Any) => Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

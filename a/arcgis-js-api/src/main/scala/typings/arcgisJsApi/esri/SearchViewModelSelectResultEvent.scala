@@ -8,13 +8,13 @@ trait SearchViewModelSelectResultEvent extends StObject {
   
   var result: SearchViewModelSelectResultEventResult
   
-  var source: js.Any
+  var source: Any
   
   var sourceIndex: Double
 }
 object SearchViewModelSelectResultEvent {
   
-  inline def apply(result: SearchViewModelSelectResultEventResult, source: js.Any, sourceIndex: Double): SearchViewModelSelectResultEvent = {
+  inline def apply(result: SearchViewModelSelectResultEventResult, source: Any, sourceIndex: Double): SearchViewModelSelectResultEvent = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchViewModelSelectResultEvent]
   }
@@ -23,7 +23,7 @@ object SearchViewModelSelectResultEvent {
     
     inline def setResult(value: SearchViewModelSelectResultEventResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
   }

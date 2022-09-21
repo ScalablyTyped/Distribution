@@ -12,7 +12,7 @@ trait NodeGroupAutoscalingPolicy extends StObject {
   /** The minimum number of nodes that the group should have. */
   var minNodes: js.UndefOr[Double] = js.undefined
   
-  /** The autoscaling mode. Set to one of: ON, OFF, or ONLY_SCALE_OUT. For more information, see  Autoscaler modes. */
+  /** The autoscaling mode. Set to one of: ON, OFF, or ONLY_SCALE_OUT. For more information, see Autoscaler modes. */
   var mode: js.UndefOr[String] = js.undefined
 }
 object NodeGroupAutoscalingPolicy {

@@ -23,11 +23,11 @@ object mod {
     
     // TODO: Add istanbul-api
     /** `instrumentation` is used to configure Istanbul API package. */
-    val instrumentation: js.UndefOr[js.Any] = js.undefined
+    val instrumentation: js.UndefOr[Any] = js.undefined
     
     // TODO: Add istanbul-api
     /** Most reporters accept additional config options. You can pass these through the `report-config` option. */
-    val `report-config`: js.UndefOr[js.Any] = js.undefined
+    val `report-config`: js.UndefOr[Any] = js.undefined
     
     /** Reports can be any that are listed {@link https://github.com/istanbuljs/istanbuljs/tree/aae256fb8b9a3d19414dcf069c592e88712c32c6/packages/istanbul-reports/lib here}. */
     val reports: js.UndefOr[js.Array[String]] = js.undefined
@@ -65,11 +65,11 @@ object mod {
       
       inline def setFixWebpackSourcePathsUndefined: Self = StObject.set(x, "fixWebpackSourcePaths", js.undefined)
       
-      inline def setInstrumentation(value: js.Any): Self = StObject.set(x, "instrumentation", value.asInstanceOf[js.Any])
+      inline def setInstrumentation(value: Any): Self = StObject.set(x, "instrumentation", value.asInstanceOf[js.Any])
       
       inline def setInstrumentationUndefined: Self = StObject.set(x, "instrumentation", js.undefined)
       
-      inline def `setReport-config`(value: js.Any): Self = StObject.set(x, "report-config", value.asInstanceOf[js.Any])
+      inline def `setReport-config`(value: Any): Self = StObject.set(x, "report-config", value.asInstanceOf[js.Any])
       
       inline def `setReport-configUndefined`: Self = StObject.set(x, "report-config", js.undefined)
       
@@ -77,7 +77,7 @@ object mod {
       
       inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
       
-      inline def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value :_*))
+      inline def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value*))
       
       inline def setSkipFilesWithNoCoverage(value: Boolean): Self = StObject.set(x, "skipFilesWithNoCoverage", value.asInstanceOf[js.Any])
       

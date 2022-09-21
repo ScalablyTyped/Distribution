@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.SphericalHarmonics3")
 @js.native
-class SphericalHarmonics3 ()
+open class SphericalHarmonics3 ()
   extends typings.three.mod.SphericalHarmonics3

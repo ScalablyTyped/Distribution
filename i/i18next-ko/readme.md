@@ -10,10 +10,10 @@ KnockoutJS bindings for i18next.
 | ------------------ | :-------------: |
 | Full name          | i18next-ko |
 | Keywords           | i18n, knockoutjs, knockout, internationalization |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 2051 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 204.66666666666666 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/leMaik/i18next-ko#readme)

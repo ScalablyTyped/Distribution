@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.RibbonPeripheralSection")
 @js.native
-class RibbonPeripheralSection ()
+open class RibbonPeripheralSection ()
   extends StObject
      with typings.sharepoint.CUI.RibbonPeripheralSection

@@ -1,7 +1,7 @@
 package typings.magnetUri
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -63,19 +63,19 @@ object mod extends Shortcut {
       
       inline def setAnnounceUndefined: Self = StObject.set(x, "announce", js.undefined)
       
-      inline def setAnnounceVarargs(value: String*): Self = StObject.set(x, "announce", js.Array(value :_*))
+      inline def setAnnounceVarargs(value: String*): Self = StObject.set(x, "announce", js.Array(value*))
       
       inline def setAs(value: String | js.Array[String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value :_*))
+      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value*))
       
       inline def setDn(value: String | js.Array[String]): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
       
       inline def setDnUndefined: Self = StObject.set(x, "dn", js.undefined)
       
-      inline def setDnVarargs(value: String*): Self = StObject.set(x, "dn", js.Array(value :_*))
+      inline def setDnVarargs(value: String*): Self = StObject.set(x, "dn", js.Array(value*))
       
       inline def setInfoHash(value: String): Self = StObject.set(x, "infoHash", value.asInstanceOf[js.Any])
       
@@ -89,55 +89,55 @@ object mod extends Shortcut {
       
       inline def setIxUndefined: Self = StObject.set(x, "ix", js.undefined)
       
-      inline def setIxVarargs(value: Double*): Self = StObject.set(x, "ix", js.Array(value :_*))
+      inline def setIxVarargs(value: Double*): Self = StObject.set(x, "ix", js.Array(value*))
       
       inline def setKeywords(value: String | js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
       inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setKt(value: js.Array[String]): Self = StObject.set(x, "kt", value.asInstanceOf[js.Any])
       
       inline def setKtUndefined: Self = StObject.set(x, "kt", js.undefined)
       
-      inline def setKtVarargs(value: String*): Self = StObject.set(x, "kt", js.Array(value :_*))
+      inline def setKtVarargs(value: String*): Self = StObject.set(x, "kt", js.Array(value*))
       
       inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
       
       inline def setTr(value: String | js.Array[String]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
       
       inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
       
-      inline def setTrVarargs(value: String*): Self = StObject.set(x, "tr", js.Array(value :_*))
+      inline def setTrVarargs(value: String*): Self = StObject.set(x, "tr", js.Array(value*))
       
       inline def setUrlList(value: js.Array[String]): Self = StObject.set(x, "urlList", value.asInstanceOf[js.Any])
       
       inline def setUrlListUndefined: Self = StObject.set(x, "urlList", js.undefined)
       
-      inline def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value :_*))
+      inline def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value*))
       
       inline def setWs(value: String | js.Array[String]): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
       
       inline def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
       
-      inline def setWsVarargs(value: String*): Self = StObject.set(x, "ws", js.Array(value :_*))
+      inline def setWsVarargs(value: String*): Self = StObject.set(x, "ws", js.Array(value*))
       
       inline def setXs(value: String | js.Array[String]): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
       inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
       
-      inline def setXsVarargs(value: String*): Self = StObject.set(x, "xs", js.Array(value :_*))
+      inline def setXsVarargs(value: String*): Self = StObject.set(x, "xs", js.Array(value*))
       
       inline def setXt(value: String | js.Array[String]): Self = StObject.set(x, "xt", value.asInstanceOf[js.Any])
       
       inline def setXtUndefined: Self = StObject.set(x, "xt", js.undefined)
       
-      inline def setXtVarargs(value: String*): Self = StObject.set(x, "xt", js.Array(value :_*))
+      inline def setXtVarargs(value: String*): Self = StObject.set(x, "xt", js.Array(value*))
     }
   }
   

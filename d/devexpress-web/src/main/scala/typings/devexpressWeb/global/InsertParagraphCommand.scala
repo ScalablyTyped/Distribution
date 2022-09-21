@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertParagraphCommand")
 @js.native
-class InsertParagraphCommand ()
+open class InsertParagraphCommand ()
   extends StObject
      with typings.devexpressWeb.InsertParagraphCommand {
   

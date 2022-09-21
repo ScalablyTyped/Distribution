@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.NewItemAlertRuleAction")
 @js.native
-/* private */ class NewItemAlertRuleAction ()
+/* private */ open class NewItemAlertRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.NewItemAlertRuleAction {
   
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotNewItemAlertRuleAction_typekey: typings.activexOutlook.Outlook.NewItemAlertRuleAction = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

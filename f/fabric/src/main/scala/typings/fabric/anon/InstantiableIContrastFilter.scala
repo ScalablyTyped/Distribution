@@ -21,5 +21,5 @@ Instantiable0[IContrastFilter]
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IContrastFilter = js.native
+  def fromObject(`object`: Any): IContrastFilter = js.native
 }

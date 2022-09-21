@@ -12,9 +12,14 @@ trait ModifyInstanceAttributeRequest extends StObject {
   var Attribute: js.UndefOr[InstanceAttributeName] = js.undefined
   
   /**
-    * Modifies the DeleteOnTermination attribute for volumes that are currently attached. The volume must be owned by the caller. If no value is specified for DeleteOnTermination, the default is true and the volume is deleted when the instance is terminated. To add instance store volumes to an Amazon EBS-backed instance, you must add them when you launch the instance. For more information, see Updating the block device mapping when launching an instance in the Amazon Elastic Compute Cloud User Guide.
+    * Modifies the DeleteOnTermination attribute for volumes that are currently attached. The volume must be owned by the caller. If no value is specified for DeleteOnTermination, the default is true and the volume is deleted when the instance is terminated. To add instance store volumes to an Amazon EBS-backed instance, you must add them when you launch the instance. For more information, see Update the block device mapping when launching an instance in the Amazon EC2 User Guide.
     */
   var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingSpecificationList] = js.undefined
+  
+  /**
+    * Indicates whether an instance is enabled for stop protection. For more information, see Stop Protection. 
+    */
+  var DisableApiStop: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * If the value is true, you can't terminate the instance using the Amazon EC2 console, CLI, or API; otherwise, you can. You cannot use this parameter for Spot Instances.
@@ -37,7 +42,7 @@ trait ModifyInstanceAttributeRequest extends StObject {
   var EnaSupport: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
-    * [EC2-VPC] Changes the security groups of the instance. You must specify at least one security group, even if it's just the default security group for the VPC. You must specify the security group ID, not the security group name.
+    * [EC2-VPC] Replaces the security groups of the instance with the specified security groups. You must specify at least one security group, even if it's just the default security group for the VPC. You must specify the security group ID, not the security group name.
     */
   var Groups: js.UndefOr[GroupIdStringList] = js.undefined
   
@@ -52,7 +57,7 @@ trait ModifyInstanceAttributeRequest extends StObject {
   var InstanceInitiatedShutdownBehavior: js.UndefOr[AttributeValue] = js.undefined
   
   /**
-    * Changes the instance type to the specified value. For more information, see Instance types. If the instance type is not valid, the error returned is InvalidInstanceAttributeValue.
+    * Changes the instance type to the specified value. For more information, see Instance types in the Amazon EC2 User Guide. If the instance type is not valid, the error returned is InvalidInstanceAttributeValue.
     */
   var InstanceType: js.UndefOr[AttributeValue] = js.undefined
   
@@ -67,7 +72,7 @@ trait ModifyInstanceAttributeRequest extends StObject {
   var Ramdisk: js.UndefOr[AttributeValue] = js.undefined
   
   /**
-    * Specifies whether source/destination checking is enabled. A value of true means that checking is enabled, and false means that checking is disabled. This value must be false for a NAT instance to perform NAT.
+    * Enable or disable source/destination checks, which ensure that the instance is either the source or the destination of any traffic that it receives. If the value is true, source/destination checks are enabled; otherwise, they are disabled. The default value is true. You must disable source/destination checks if the instance runs services such as network address translation, routing, or firewalls.
     */
   var SourceDestCheck: js.UndefOr[AttributeBooleanValue] = js.undefined
   
@@ -77,7 +82,7 @@ trait ModifyInstanceAttributeRequest extends StObject {
   var SriovNetSupport: js.UndefOr[AttributeValue] = js.undefined
   
   /**
-    * Changes the instance's user data to the specified value. If you are using an AWS SDK or command line tool, base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide base64-encoded text.
+    * Changes the instance's user data to the specified value. If you are using an Amazon Web Services SDK or command line tool, base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide base64-encoded text.
     */
   var UserData: js.UndefOr[BlobAttributeValue] = js.undefined
   
@@ -103,7 +108,11 @@ object ModifyInstanceAttributeRequest {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMappingSpecification*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMappingSpecification*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value*))
+    
+    inline def setDisableApiStop(value: AttributeBooleanValue): Self = StObject.set(x, "DisableApiStop", value.asInstanceOf[js.Any])
+    
+    inline def setDisableApiStopUndefined: Self = StObject.set(x, "DisableApiStop", js.undefined)
     
     inline def setDisableApiTermination(value: AttributeBooleanValue): Self = StObject.set(x, "DisableApiTermination", value.asInstanceOf[js.Any])
     
@@ -125,7 +134,7 @@ object ModifyInstanceAttributeRequest {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

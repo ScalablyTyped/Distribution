@@ -1,7 +1,7 @@
 
 # Scala.js typings for any-signal
 
-Typings are for version 2.1.1
+Typings are for version 3.0.1
 
 ## Library description:
 Combines an array of AbortSignals into a single signal that is aborted when any signal is
@@ -10,15 +10,12 @@ Combines an array of AbortSignals into a single signal that is aborted when any 
 | ------------------ | :-------------: |
 | Full name          | any-signal |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 10 |
-| # downloads        | 550653 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 430622.3333333333 |
+| # stars            | 7.0 |
 
 ## Links
-- [Homepage](https://github.com/jacobheun/any-signal#readme)
-- [Bugs](https://github.com/jacobheun/any-signal/issues)
-- [Repository](https://github.com/jacobheun/any-signal)
 - [Npm](https://www.npmjs.com/package/any-signal)
     
 

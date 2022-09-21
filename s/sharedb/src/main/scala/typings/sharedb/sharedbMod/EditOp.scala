@@ -12,20 +12,20 @@ trait EditOp
   
   var del: Unit
   
-  var op: js.Array[Op]
+  var op: js.Array[Any]
 }
 object EditOp {
   
   inline def apply(
-    c: String,
+    c: CollectionName,
     create: Unit,
-    d: String,
+    d: DocumentID,
     del: Unit,
-    m: js.Any,
-    op: js.Array[Op],
+    m: Any,
+    op: js.Array[Any],
     seq: Double,
     src: String,
-    v: Double
+    v: VersionNumber
   ): EditOp = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditOp]
@@ -37,8 +37,8 @@ object EditOp {
     
     inline def setDel(value: Unit): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
-    inline def setOp(value: js.Array[Op]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: js.Array[Any]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    inline def setOpVarargs(value: Op*): Self = StObject.set(x, "op", js.Array(value :_*))
+    inline def setOpVarargs(value: Any*): Self = StObject.set(x, "op", js.Array(value*))
   }
 }

@@ -15,7 +15,7 @@ trait ExtendedValue extends StObject {
   /** Represents a formula. */
   var formulaValue: js.UndefOr[String] = js.undefined
   
-  /** Represents a double value. Note: Dates, Times and DateTimes are represented as doubles in "serial number" format. */
+  /** Represents a double value. Note: Dates, Times and DateTimes are represented as doubles in SERIAL_NUMBER format. */
   var numberValue: js.UndefOr[Double] = js.undefined
   
   /** Represents a string value. Leading single quotes are not included. For example, if the user typed `'123` into the UI, this would be represented as a `stringValue` of `"123"`. */

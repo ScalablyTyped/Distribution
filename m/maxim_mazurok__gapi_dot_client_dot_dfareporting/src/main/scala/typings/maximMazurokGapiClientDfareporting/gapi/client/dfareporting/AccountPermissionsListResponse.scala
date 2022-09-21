@@ -25,7 +25,7 @@ object AccountPermissionsListResponse {
     
     inline def setAccountPermissionsUndefined: Self = StObject.set(x, "accountPermissions", js.undefined)
     
-    inline def setAccountPermissionsVarargs(value: AccountPermission*): Self = StObject.set(x, "accountPermissions", js.Array(value :_*))
+    inline def setAccountPermissionsVarargs(value: AccountPermission*): Self = StObject.set(x, "accountPermissions", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

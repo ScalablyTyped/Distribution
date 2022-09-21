@@ -22,10 +22,10 @@ object Padding {
     
     inline def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setPoints(value: js.Array[LagLng]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: LagLng*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: LagLng*): Self = StObject.set(x, "points", js.Array(value*))
   }
 }

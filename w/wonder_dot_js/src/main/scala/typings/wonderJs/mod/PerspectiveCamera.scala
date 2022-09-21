@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "PerspectiveCamera")
 @js.native
-class PerspectiveCamera ()
+open class PerspectiveCamera ()
   extends typings.wonderJs.perspectiveCameraMod.PerspectiveCamera
 /* static members */
 object PerspectiveCamera {

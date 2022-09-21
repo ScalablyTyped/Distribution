@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about settings changes.
-  */
 trait SchemaSettingsChange extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaSettingsChange {
     
     inline def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
     
-    inline def setRestrictionChangesVarargs(value: SchemaRestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
+    inline def setRestrictionChangesVarargs(value: SchemaRestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value*))
   }
 }

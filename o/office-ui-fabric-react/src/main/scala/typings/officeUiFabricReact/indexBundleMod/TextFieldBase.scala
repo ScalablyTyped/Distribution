@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "TextFieldBase")
 @js.native
-class TextFieldBase protected ()
+open class TextFieldBase protected ()
   extends typings.officeUiFabricReact.mod.TextFieldBase {
   def this(props: ITextFieldProps) = this()
 }

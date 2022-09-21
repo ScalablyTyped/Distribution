@@ -8,5 +8,5 @@ object createBackupInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/CreateBackupInput", "CreateBackupInput")
   @js.native
-  val CreateBackupInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CreateBackupInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ListCollection
   extends StObject
-     with ClientObjectCollection[List[js.Any]] {
+     with ClientObjectCollection[List[Any]] {
   
   /** Creates a new list or a document library. */
-  def add(parameters: ListCreationInformation): List[js.Any] = js.native
+  def add(parameters: ListCreationInformation): List[Any] = js.native
   
   /** Gets a list that is the default asset location for images or other files, which the users upload to their wiki pages. */
-  def ensureSiteAssetsLibrary(): List[js.Any] = js.native
+  def ensureSiteAssetsLibrary(): List[Any] = js.native
   
   /** Gets a list that is the default location for wiki pages. */
-  def ensureSitePagesLibrary(): List[js.Any] = js.native
+  def ensureSitePagesLibrary(): List[Any] = js.native
   
   /** Returns the list with the specified list identifier. */
   def getById[T](id: String): List[T] = js.native

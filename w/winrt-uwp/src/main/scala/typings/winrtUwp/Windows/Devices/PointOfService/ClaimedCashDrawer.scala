@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClaimedCashDrawer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: TypedEventHandler[ClaimedCashDrawer, js.Any]): Unit = js.native
+  def addEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: TypedEventHandler[ClaimedCashDrawer, Any]): Unit = js.native
   
   /** Disposes the claimed cash drawer, releases claim on the device, and disables the device the same way as calling DisableAsync. */
   def close(): Unit = js.native
@@ -47,10 +47,10 @@ trait ClaimedCashDrawer extends StObject {
   var isEnabled: Boolean = js.native
   
   /** Occurs when the device gets a request to release its exclusive claim. */
-  def onreleasedevicerequested(ev: js.Any & WinRTEvent[ClaimedCashDrawer]): Unit = js.native
+  def onreleasedevicerequested(ev: Any & WinRTEvent[ClaimedCashDrawer]): Unit = js.native
   /** Occurs when the device gets a request to release its exclusive claim. */
   @JSName("onreleasedevicerequested")
-  var onreleasedevicerequested_Original: TypedEventHandler[ClaimedCashDrawer, js.Any] = js.native
+  var onreleasedevicerequested_Original: TypedEventHandler[ClaimedCashDrawer, Any] = js.native
   
   /**
     * Opens the cash drawer.
@@ -58,9 +58,9 @@ trait ClaimedCashDrawer extends StObject {
     */
   def openDrawerAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: TypedEventHandler[ClaimedCashDrawer, js.Any]): Unit = js.native
+  def removeEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: TypedEventHandler[ClaimedCashDrawer, Any]): Unit = js.native
   
   /**
     * Resets the specified device statistics to their defaults.
@@ -80,5 +80,5 @@ trait ClaimedCashDrawer extends StObject {
     * @param statistics The statistics to update.
     * @return True if update succeeded; otherwise false.
     */
-  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncOperation[Boolean] = js.native
 }

@@ -11,14 +11,11 @@ Convert PNG to ICO in memory
 | Full name          | to-ico |
 | Keywords           | buffer, convert, fast, ico, png |
 | # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 5244644 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 614440.3333333334 |
+| # stars            | 114.0 |
 
 ## Links
-- [Homepage](https://github.com/kevva/to-ico#readme)
-- [Bugs](https://github.com/kevva/to-ico/issues)
-- [Repository](https://github.com/kevva/to-ico)
 - [Npm](https://www.npmjs.com/package/to-ico)
     
 

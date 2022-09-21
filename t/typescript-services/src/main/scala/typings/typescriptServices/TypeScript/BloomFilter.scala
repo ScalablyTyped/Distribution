@@ -8,13 +8,13 @@ trait BloomFilter extends StObject {
   
   def add(value: String): Unit
   
-  def addKeys(keys: IIndexable[js.Any]): Unit
+  def addKeys(keys: IIndexable[Any]): Unit
   
-  /* private */ var bitArray: js.Any
+  /* private */ var bitArray: Any
   
-  /* private */ def computeHash(key: js.Any, seed: js.Any): js.Any
+  /* private */ def computeHash(key: Any, seed: Any): Any
   
-  /* private */ var hashFunctionCount: js.Any
+  /* private */ var hashFunctionCount: Any
   
   def isEquivalent(filter: BloomFilter): Boolean
   
@@ -24,10 +24,10 @@ object BloomFilter {
   
   inline def apply(
     add: String => Unit,
-    addKeys: IIndexable[js.Any] => Unit,
-    bitArray: js.Any,
-    computeHash: (js.Any, js.Any) => js.Any,
-    hashFunctionCount: js.Any,
+    addKeys: IIndexable[Any] => Unit,
+    bitArray: Any,
+    computeHash: (Any, Any) => Any,
+    hashFunctionCount: Any,
     isEquivalent: BloomFilter => Boolean,
     probablyContains: String => Boolean
   ): BloomFilter = {
@@ -39,13 +39,13 @@ object BloomFilter {
     
     inline def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    inline def setAddKeys(value: IIndexable[js.Any] => Unit): Self = StObject.set(x, "addKeys", js.Any.fromFunction1(value))
+    inline def setAddKeys(value: IIndexable[Any] => Unit): Self = StObject.set(x, "addKeys", js.Any.fromFunction1(value))
     
-    inline def setBitArray(value: js.Any): Self = StObject.set(x, "bitArray", value.asInstanceOf[js.Any])
+    inline def setBitArray(value: Any): Self = StObject.set(x, "bitArray", value.asInstanceOf[js.Any])
     
-    inline def setComputeHash(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "computeHash", js.Any.fromFunction2(value))
+    inline def setComputeHash(value: (Any, Any) => Any): Self = StObject.set(x, "computeHash", js.Any.fromFunction2(value))
     
-    inline def setHashFunctionCount(value: js.Any): Self = StObject.set(x, "hashFunctionCount", value.asInstanceOf[js.Any])
+    inline def setHashFunctionCount(value: Any): Self = StObject.set(x, "hashFunctionCount", value.asInstanceOf[js.Any])
     
     inline def setIsEquivalent(value: BloomFilter => Boolean): Self = StObject.set(x, "isEquivalent", js.Any.fromFunction1(value))
     

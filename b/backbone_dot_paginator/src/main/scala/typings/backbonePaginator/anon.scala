@@ -16,15 +16,15 @@ object anon {
   @js.native
   trait TypeofPageableCollection
     extends StObject
-       with Instantiable0[PageableCollection[Model[js.Any, ModelSetOptions, js.Object]]]
+       with Instantiable0[PageableCollection[Model[Any, ModelSetOptions, Any]]]
        with Instantiable1[
-          /* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any], 
-          PageableCollection[Model[js.Any, ModelSetOptions, js.Object]]
+          /* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ Any], 
+          PageableCollection[Model[Any, ModelSetOptions, Any]]
         ]
        with Instantiable2[
-          (/* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any]) | (/* models */ Unit), 
+          (/* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ Any]) | (/* models */ Unit), 
           /* options */ PageableInitialOptions, 
-          PageableCollection[Model[js.Any, ModelSetOptions, js.Object]]
+          PageableCollection[Model[Any, ModelSetOptions, Any]]
         ] {
     
     def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof PageableCollection */ js.Any = js.native

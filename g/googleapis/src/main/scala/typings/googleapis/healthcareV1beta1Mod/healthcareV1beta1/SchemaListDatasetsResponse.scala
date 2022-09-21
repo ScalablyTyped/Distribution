@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Lists the available datasets.
-  */
 trait SchemaListDatasetsResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaListDatasetsResponse extends StObject {
   var datasets: js.UndefOr[js.Array[SchemaDataset]] = js.undefined
   
   /**
-    * Token to retrieve the next page of results, or empty if there are no more
-    * results in the list.
+    * Token to retrieve the next page of results, or empty if there are no more results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListDatasetsResponse {
   
@@ -33,9 +29,11 @@ object SchemaListDatasetsResponse {
     
     inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
-    inline def setDatasetsVarargs(value: SchemaDataset*): Self = StObject.set(x, "datasets", js.Array(value :_*))
+    inline def setDatasetsVarargs(value: SchemaDataset*): Self = StObject.set(x, "datasets", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

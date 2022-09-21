@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpriteOptions extends StObject {
   
-  var animation: js.UndefOr[js.Any] = js.undefined
+  var animation: js.UndefOr[Any] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -27,11 +27,11 @@ object SpriteOptions {
   
   extension [Self <: SpriteOptions](x: Self) {
     
-    inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

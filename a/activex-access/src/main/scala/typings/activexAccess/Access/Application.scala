@@ -45,7 +45,7 @@ trait Application extends StObject {
   
   val AnswerWizard: typings.activexOffice.Office.AnswerWizard = js.native
   
-  def AppLoadString(id: Double): js.Any = js.native
+  def AppLoadString(id: Double): Any = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native
   
@@ -65,7 +65,7 @@ trait Application extends StObject {
   
   def BuildCriteria(Field: String, FieldType: Double, Expression: String): String = js.native
   
-  def BuilderString(): js.Any = js.native
+  def BuilderString(): Any = js.native
   
   def COMAddIns(Index: String): COMAddIn = js.native
   def COMAddIns(Index: Double): COMAddIn = js.native
@@ -74,7 +74,7 @@ trait Application extends StObject {
   
   def CloseCurrentDatabase(): Unit = js.native
   
-  val CodeContextObject: js.Any = js.native
+  val CodeContextObject: Any = js.native
   
   val CodeData: typings.activexAccess.Access.CodeData = js.native
   
@@ -268,9 +268,9 @@ trait Application extends StObject {
   
   def CurrentUser(): String = js.native
   
-  def CurrentWebUser(DisplayOption: AcWebUserDisplay): js.Any = js.native
+  def CurrentWebUser(DisplayOption: AcWebUserDisplay): Any = js.native
   
-  def CurrentWebUserGroups(DisplayOption: AcWebUserGroupsDisplay): js.Any = js.native
+  def CurrentWebUserGroups(DisplayOption: AcWebUserGroupsDisplay): Any = js.native
   
   def DAvg(Expr: String, Domain: String): Double | Null = js.native
   def DAvg(Expr: String, Domain: String, Criteria: String): Double | Null = js.native
@@ -292,20 +292,20 @@ trait Application extends StObject {
   
   def DDETerminateAll(): Unit = js.native
   
-  def DFirst(Expr: String, Domain: String): js.Any = js.native
-  def DFirst(Expr: String, Domain: String, Criteria: String): js.Any = js.native
+  def DFirst(Expr: String, Domain: String): Any = js.native
+  def DFirst(Expr: String, Domain: String, Criteria: String): Any = js.native
   
-  def DLast(Expr: String, Domain: String): js.Any = js.native
-  def DLast(Expr: String, Domain: String, Criteria: String): js.Any = js.native
+  def DLast(Expr: String, Domain: String): Any = js.native
+  def DLast(Expr: String, Domain: String, Criteria: String): Any = js.native
   
-  def DLookup(Expr: String, Domain: String): js.Any = js.native
-  def DLookup(Expr: String, Domain: String, Criteria: String): js.Any = js.native
+  def DLookup(Expr: String, Domain: String): Any = js.native
+  def DLookup(Expr: String, Domain: String, Criteria: String): Any = js.native
   
-  def DMax(Expr: String, Domain: String): js.Any = js.native
-  def DMax(Expr: String, Domain: String, Criteria: String): js.Any = js.native
+  def DMax(Expr: String, Domain: String): Any = js.native
+  def DMax(Expr: String, Domain: String, Criteria: String): Any = js.native
   
-  def DMin(Expr: String, Domain: String): js.Any = js.native
-  def DMin(Expr: String, Domain: String, Criteria: String): js.Any = js.native
+  def DMin(Expr: String, Domain: String): Any = js.native
+  def DMin(Expr: String, Domain: String, Criteria: String): Any = js.native
   
   def DStDev(Expr: String, Domain: String): Double | Null = js.native
   def DStDev(Expr: String, Domain: String, Criteria: String): Double | Null = js.native
@@ -322,7 +322,7 @@ trait Application extends StObject {
   def DVarP(Expr: String, Domain: String): Double | Null = js.native
   def DVarP(Expr: String, Domain: String, Criteria: String): Double | Null = js.native
   
-  def DataAccessPages(var_0: js.Any): DataAccessPage = js.native
+  def DataAccessPages(var_0: Any): DataAccessPage = js.native
   @JSName("DataAccessPages")
   val DataAccessPages_Original: DataAccessPages = js.native
   
@@ -361,28 +361,23 @@ trait Application extends StObject {
     TriangulationPrecision: Double
   ): Double = js.native
   
-  def Eval(StringExpr: String): js.Any = js.native
+  def Eval(StringExpr: String): Any = js.native
   
   /**
     * @param SelectedRecords [SelectedRecords=false]
     * @param FromPage [FromPage=1]
     * @param ToPage [ToPage=-1]
     */
+  def ExportCustomFixedFormat(ExternalExporter: Any, OutputFileName: String, ObjectName: String, ObjectType: AcOutputObjectType): Unit = js.native
   def ExportCustomFixedFormat(
-    ExternalExporter: js.Any,
-    OutputFileName: String,
-    ObjectName: String,
-    ObjectType: AcOutputObjectType
-  ): Unit = js.native
-  def ExportCustomFixedFormat(
-    ExternalExporter: js.Any,
+    ExternalExporter: Any,
     OutputFileName: String,
     ObjectName: String,
     ObjectType: AcOutputObjectType,
     SelectedRecords: Boolean
   ): Unit = js.native
   def ExportCustomFixedFormat(
-    ExternalExporter: js.Any,
+    ExternalExporter: Any,
     OutputFileName: String,
     ObjectName: String,
     ObjectType: AcOutputObjectType,
@@ -390,7 +385,7 @@ trait Application extends StObject {
     FromPage: Double
   ): Unit = js.native
   def ExportCustomFixedFormat(
-    ExternalExporter: js.Any,
+    ExternalExporter: Any,
     OutputFileName: String,
     ObjectName: String,
     ObjectType: AcOutputObjectType,
@@ -399,7 +394,7 @@ trait Application extends StObject {
     ToPage: Double
   ): Unit = js.native
   def ExportCustomFixedFormat(
-    ExternalExporter: js.Any,
+    ExternalExporter: Any,
     OutputFileName: String,
     ObjectName: String,
     ObjectType: AcOutputObjectType,
@@ -408,7 +403,7 @@ trait Application extends StObject {
     ToPage: Double
   ): Unit = js.native
   def ExportCustomFixedFormat(
-    ExternalExporter: js.Any,
+    ExternalExporter: Any,
     OutputFileName: String,
     ObjectName: String,
     ObjectType: AcOutputObjectType,
@@ -416,7 +411,7 @@ trait Application extends StObject {
     FromPage: Double
   ): Unit = js.native
   def ExportCustomFixedFormat(
-    ExternalExporter: js.Any,
+    ExternalExporter: Any,
     OutputFileName: String,
     ObjectName: String,
     ObjectType: AcOutputObjectType,
@@ -425,7 +420,7 @@ trait Application extends StObject {
     ToPage: Double
   ): Unit = js.native
   def ExportCustomFixedFormat(
-    ExternalExporter: js.Any,
+    ExternalExporter: Any,
     OutputFileName: String,
     ObjectName: String,
     ObjectType: AcOutputObjectType,
@@ -521,8 +516,8 @@ trait Application extends StObject {
   def HtmlEncode(PlainText: String, Length: Double): String = js.native
   
   /** @param Part [Part=0] */
-  def HyperlinkPart(Hyperlink: js.Any): String = js.native
-  def HyperlinkPart(Hyperlink: js.Any, Part: AcHyperlinkPart): String = js.native
+  def HyperlinkPart(Hyperlink: Any): String = js.native
+  def HyperlinkPart(Hyperlink: Any, Part: AcHyperlinkPart): String = js.native
   
   /** @param fAppendOnly [fAppendOnly=false] */
   def ImportNavigationPane(Path: String): Unit = js.native
@@ -540,7 +535,7 @@ trait Application extends StObject {
   
   val IsCompiled: Boolean = js.native
   
-  def IsCurrentWebUserInGroup(GroupNameOrID: js.Any): Boolean = js.native
+  def IsCurrentWebUserInGroup(GroupNameOrID: Any): Boolean = js.native
   
   def IsMemberSafe(dispid: Double): Boolean = js.native
   
@@ -552,9 +547,9 @@ trait Application extends StObject {
   
   def LoadFromText(ObjectType: AcObjectType, ObjectName: String, FileName: String): Unit = js.native
   
-  def LoadPicture(FileName: String): js.Any = js.native
+  def LoadPicture(FileName: String): Any = js.native
   
-  def LocalVars(Index: js.Any): LocalVar = js.native
+  def LocalVars(Index: Any): LocalVar = js.native
   @JSName("LocalVars")
   val LocalVars_Original: LocalVars = js.native
   
@@ -624,8 +619,8 @@ trait Application extends StObject {
   
   val NewFileTaskPane: NewFile = js.native
   
-  def Nz(Value: js.Any): js.Any = js.native
-  def Nz(Value: js.Any, ValueIfNull: js.Any): js.Any = js.native
+  def Nz(Value: Any): Any = js.native
+  def Nz(Value: Any, ValueIfNull: Any): Any = js.native
   
   /** @param Exclusive [Exclusive=false] */
   def OpenAccessProject(filepath: String): Unit = js.native
@@ -644,7 +639,7 @@ trait Application extends StObject {
   def OpenCurrentDatabaseOld(filepath: String): Unit = js.native
   def OpenCurrentDatabaseOld(filepath: String, Exclusive: Boolean): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PlainText(RichText: String): String = js.native
   def PlainText(RichText: String, Length: Double): String = js.native
@@ -687,37 +682,37 @@ trait Application extends StObject {
   
   def Run(
     Procedure: String,
-    Arg1: js.UndefOr[js.Any],
-    Arg2: js.UndefOr[js.Any],
-    Arg3: js.UndefOr[js.Any],
-    Arg4: js.UndefOr[js.Any],
-    Arg5: js.UndefOr[js.Any],
-    Arg6: js.UndefOr[js.Any],
-    Arg7: js.UndefOr[js.Any],
-    Arg8: js.UndefOr[js.Any],
-    Arg9: js.UndefOr[js.Any],
-    Arg10: js.UndefOr[js.Any],
-    Arg11: js.UndefOr[js.Any],
-    Arg12: js.UndefOr[js.Any],
-    Arg13: js.UndefOr[js.Any],
-    Arg14: js.UndefOr[js.Any],
-    Arg15: js.UndefOr[js.Any],
-    Arg16: js.UndefOr[js.Any],
-    Arg17: js.UndefOr[js.Any],
-    Arg18: js.UndefOr[js.Any],
-    Arg19: js.UndefOr[js.Any],
-    Arg20: js.UndefOr[js.Any],
-    Arg21: js.UndefOr[js.Any],
-    Arg22: js.UndefOr[js.Any],
-    Arg23: js.UndefOr[js.Any],
-    Arg24: js.UndefOr[js.Any],
-    Arg25: js.UndefOr[js.Any],
-    Arg26: js.UndefOr[js.Any],
-    Arg27: js.UndefOr[js.Any],
-    Arg28: js.UndefOr[js.Any],
-    Arg29: js.UndefOr[js.Any],
-    Arg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    Arg1: js.UndefOr[Any],
+    Arg2: js.UndefOr[Any],
+    Arg3: js.UndefOr[Any],
+    Arg4: js.UndefOr[Any],
+    Arg5: js.UndefOr[Any],
+    Arg6: js.UndefOr[Any],
+    Arg7: js.UndefOr[Any],
+    Arg8: js.UndefOr[Any],
+    Arg9: js.UndefOr[Any],
+    Arg10: js.UndefOr[Any],
+    Arg11: js.UndefOr[Any],
+    Arg12: js.UndefOr[Any],
+    Arg13: js.UndefOr[Any],
+    Arg14: js.UndefOr[Any],
+    Arg15: js.UndefOr[Any],
+    Arg16: js.UndefOr[Any],
+    Arg17: js.UndefOr[Any],
+    Arg18: js.UndefOr[Any],
+    Arg19: js.UndefOr[Any],
+    Arg20: js.UndefOr[Any],
+    Arg21: js.UndefOr[Any],
+    Arg22: js.UndefOr[Any],
+    Arg23: js.UndefOr[Any],
+    Arg24: js.UndefOr[Any],
+    Arg25: js.UndefOr[Any],
+    Arg26: js.UndefOr[Any],
+    Arg27: js.UndefOr[Any],
+    Arg28: js.UndefOr[Any],
+    Arg29: js.UndefOr[Any],
+    Arg30: js.UndefOr[Any]
+  ): Any = js.native
   
   def RunCommand(Command: AcCommand): Unit = js.native
   
@@ -729,12 +724,12 @@ trait Application extends StObject {
     IconPath: String,
     CoreTable: String,
     Category: String,
-    PreviewPath: js.UndefOr[js.Any],
+    PreviewPath: js.UndefOr[Any],
     Description: js.UndefOr[String],
     InstantiationForm: js.UndefOr[String],
     ApplicationPart: js.UndefOr[Boolean],
     IncludeData: js.UndefOr[Boolean],
-    Variation: js.UndefOr[js.Any]
+    Variation: js.UndefOr[Any]
   ): Unit = js.native
   
   def SaveAsText(ObjectType: AcObjectType, ObjectName: String, FileName: String): Unit = js.native
@@ -761,32 +756,15 @@ trait Application extends StObject {
   
   def StringFromGUID(Guid: ByteArray): String = js.native
   
+  def SysCmd(Acton: `9` | `7` | `11` | `5` | `13` | `8` | `12` | `3` | `6`): Null = js.native
   @JSName("SysCmd")
   def SysCmd_1(Action: `1`, StatusText: String, MaxValue: Double): Null = js.native
   @JSName("SysCmd")
   def SysCmd_10(Action: `10`, Argument2: AcObjectType, Argument3: String): `2` | `4` | `1` = js.native
   @JSName("SysCmd")
-  def SysCmd_11(Acton: `11`): Null = js.native
-  @JSName("SysCmd")
-  def SysCmd_12(Acton: `12`): Null = js.native
-  @JSName("SysCmd")
-  def SysCmd_13(Acton: `13`): Null = js.native
-  @JSName("SysCmd")
   def SysCmd_2(Action: `2`, CurrentValue: Double): Null = js.native
   @JSName("SysCmd")
-  def SysCmd_3(Acton: `3`): Null = js.native
-  @JSName("SysCmd")
   def SysCmd_4(Action: `4`, StatusText: String): Null = js.native
-  @JSName("SysCmd")
-  def SysCmd_5(Acton: `5`): Null = js.native
-  @JSName("SysCmd")
-  def SysCmd_6(Acton: `6`): Null = js.native
-  @JSName("SysCmd")
-  def SysCmd_7(Acton: `7`): Null = js.native
-  @JSName("SysCmd")
-  def SysCmd_8(Acton: `8`): Null = js.native
-  @JSName("SysCmd")
-  def SysCmd_9(Acton: `9`): Null = js.native
   
   def TempVars(Index: String): TempVar = js.native
   def TempVars(Index: Double): TempVar = js.native
@@ -818,7 +796,7 @@ trait Application extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE = js.native
   
-  val VGXFrameInterval: js.Any = js.native
+  val VGXFrameInterval: Any = js.native
   
   val Version: String = js.native
   

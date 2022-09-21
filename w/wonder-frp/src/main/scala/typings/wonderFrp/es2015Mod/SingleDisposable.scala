@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "SingleDisposable")
 @js.native
-class SingleDisposable protected ()
+open class SingleDisposable protected ()
   extends typings.wonderFrp.disposableSingleDisposableMod.SingleDisposable {
   def this(dispose: js.Function) = this()
   def this(dispose: IDisposable) = this()

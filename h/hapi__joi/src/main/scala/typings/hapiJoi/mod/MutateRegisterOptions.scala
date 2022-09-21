@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MutateRegisterOptions extends StObject {
   
-  var family: js.UndefOr[js.Any] = js.undefined
+  var family: js.UndefOr[Any] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.undefined
+  var key: js.UndefOr[Any] = js.undefined
 }
 object MutateRegisterOptions {
   
@@ -19,11 +19,11 @@ object MutateRegisterOptions {
   
   extension [Self <: MutateRegisterOptions](x: Self) {
     
-    inline def setFamily(value: js.Any): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: Any): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }

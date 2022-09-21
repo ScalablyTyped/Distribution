@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fluentReactStrings {
   
   @js.native
-  sealed trait Matching extends StObject
-  inline def Matching: Matching = "Matching".asInstanceOf[Matching]
-  
-  @js.native
-  sealed trait Shared extends StObject
-  inline def Shared: Shared = "Shared".asInstanceOf[Shared]
+  sealed trait getString extends StObject
+  inline def getString: getString = "getString".asInstanceOf[getString]
 }

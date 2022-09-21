@@ -1,10 +1,9 @@
 package typings.postmanCollection.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.postmanCollection.anon.Body
 import typings.postmanCollection.anon.Code
 import typings.postmanCollection.anon.Format
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.ResponseDefinition because var conflicts: description, disabled, id, name. Inlined code, header, cookie, body, stream, responseTime, originalRequest */ @JSImport("postman-collection", "Response")
 @js.native
-class Response protected () extends Property[ResponseDefinition] {
+open class Response protected () extends Property[ResponseDefinition] {
   def this(options: ResponseDefinition) = this()
   
   var body: js.UndefOr[String] = js.native
@@ -35,10 +34,10 @@ class Response protected () extends Property[ResponseDefinition] {
   
   var headers: HeaderList = js.native
   
-  def json(): js.Any = js.native
-  def json(reviver: js.Any): js.Any = js.native
-  def json(reviver: js.Any, strict: Boolean): js.Any = js.native
-  def json(reviver: Unit, strict: Boolean): js.Any = js.native
+  def json(): Any = js.native
+  def json(reviver: Any): Any = js.native
+  def json(reviver: Any, strict: Boolean): Any = js.native
+  def json(reviver: Unit, strict: Boolean): Any = js.native
   
   var originalRequest: js.UndefOr[Request | RequestDefinition] = js.native
   
@@ -52,7 +51,7 @@ class Response protected () extends Property[ResponseDefinition] {
   
   var status: String = js.native
   
-  var stream: js.UndefOr[Buffer | Uint8Array] = js.native
+  var stream: js.UndefOr[Buffer | js.typedarray.Uint8Array] = js.native
   
   def text(): js.UndefOr[String] = js.native
   
@@ -67,5 +66,5 @@ object Response {
   
   inline def createFromNode(response: Body, cookies: js.Array[CookieDefinition]): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromNode")(response.asInstanceOf[js.Any], cookies.asInstanceOf[js.Any])).asInstanceOf[Response]
   
-  inline def isResponse(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isResponse(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

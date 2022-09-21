@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.SvgFactory")
 @js.native
-class SvgFactory ()
+open class SvgFactory ()
   extends StObject
      with typings.phaser.MatterJS.SvgFactory {
   

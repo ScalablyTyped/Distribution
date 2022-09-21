@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.NavigationControl")
 @js.native
-class NavigationControl ()
+open class NavigationControl ()
   extends StObject
      with typings.baidumapWebSdk.BMap.NavigationControl {
   def this(opts: NavigationControlOptions) = this()

@@ -8,5 +8,5 @@ object concurrencyMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/_Concurrency", "_Concurrency")
   @js.native
-  val Concurrency: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Concurrency: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

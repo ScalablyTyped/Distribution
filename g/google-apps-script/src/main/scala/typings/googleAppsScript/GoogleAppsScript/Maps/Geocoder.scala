@@ -37,10 +37,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Geocoder extends StObject {
   
-  def geocode(address: String): js.Any = js.native
+  def geocode(address: String): Any = js.native
   
-  def reverseGeocode(latitude: Double, longitude: Double): js.Any = js.native
-  def reverseGeocode(swLatitude: Double, swLongitude: Double, neLatitude: Double, neLongitude: Double): js.Any = js.native
+  def reverseGeocode(latitude: Double, longitude: Double): Any = js.native
+  def reverseGeocode(swLatitude: Double, swLongitude: Double, neLatitude: Double, neLongitude: Double): Any = js.native
   
   def setBounds(swLatitude: Double, swLongitude: Double, neLatitude: Double, neLongitude: Double): Geocoder = js.native
   

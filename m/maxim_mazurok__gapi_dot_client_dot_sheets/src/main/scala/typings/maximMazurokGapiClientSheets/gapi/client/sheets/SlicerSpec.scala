@@ -9,7 +9,7 @@ trait SlicerSpec extends StObject {
   /** True if the filter should apply to pivot tables. If not set, default to `True`. */
   var applyToPivotTables: js.UndefOr[Boolean] = js.undefined
   
-  /** The background color of the slicer. */
+  /** The background color of the slicer. Deprecated: Use background_color_style. */
   var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /** The background color of the slicer. If background_color is also set, this field takes precedence. */
@@ -27,7 +27,7 @@ trait SlicerSpec extends StObject {
   /** The horizontal alignment of title in the slicer. If unspecified, defaults to `LEFT` */
   var horizontalAlignment: js.UndefOr[String] = js.undefined
   
-  /** The text format of title in the slicer. */
+  /** The text format of title in the slicer. The link field is not supported. */
   var textFormat: js.UndefOr[TextFormat] = js.undefined
   
   /** The title of the slicer. */

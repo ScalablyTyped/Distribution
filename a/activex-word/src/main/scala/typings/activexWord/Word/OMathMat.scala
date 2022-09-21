@@ -22,7 +22,7 @@ trait OMathMat extends StObject {
   
   val Creator: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PlcHoldHidden: Boolean
   
@@ -46,7 +46,7 @@ object OMathMat {
     ColSpacing: Double,
     Cols: OMathMatCols,
     Creator: Double,
-    Parent: js.Any,
+    Parent: Any,
     PlcHoldHidden: Boolean,
     RowSpacing: Double,
     RowSpacingRule: WdOMathSpacingRule,
@@ -76,7 +76,7 @@ object OMathMat {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPlcHoldHidden(value: Boolean): Self = StObject.set(x, "PlcHoldHidden", value.asInstanceOf[js.Any])
     

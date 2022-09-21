@@ -25,12 +25,12 @@ object FreeBusyCalendar {
     
     inline def setBusyUndefined: Self = StObject.set(x, "busy", js.undefined)
     
-    inline def setBusyVarargs(value: TimePeriod*): Self = StObject.set(x, "busy", js.Array(value :_*))
+    inline def setBusyVarargs(value: TimePeriod*): Self = StObject.set(x, "busy", js.Array(value*))
     
     inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

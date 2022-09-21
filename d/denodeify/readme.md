@@ -10,10 +10,10 @@ Tool to turn functions with Node-style callback APIs into functions that return 
 | ------------------ | :-------------: |
 | Full name          | denodeify |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 318 |
-| # downloads        | 36661780 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3482953.6666666665 |
+| # stars            | 228.0 |
 
 ## Links
 - [Homepage](https://github.com/matthew-andrews/denodeify)

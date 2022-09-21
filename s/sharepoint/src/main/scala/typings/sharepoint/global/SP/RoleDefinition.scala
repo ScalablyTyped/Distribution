@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RoleDefinition")
 @js.native
-class RoleDefinition ()
+open class RoleDefinition ()
   extends StObject
      with typings.sharepoint.SP.RoleDefinition

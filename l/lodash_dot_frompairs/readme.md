@@ -10,10 +10,10 @@ The lodash method `_.fromPairs` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.frompairs |
 | Keywords           | lodash, lodash-modularized, stdlib, util, frompairs |
-| # releases         | 0 |
-| # dependents       | 70 |
-| # downloads        | 4031624 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1593974.3333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

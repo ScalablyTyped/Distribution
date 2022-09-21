@@ -16,7 +16,7 @@ object platformMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/cordova/platform", "PlatformCommand")
   @js.native
-  class PlatformCommand protected () extends CordovaCommand {
+  open class PlatformCommand protected () extends CordovaCommand {
     def this(namespace: INamespace) = this()
     
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native

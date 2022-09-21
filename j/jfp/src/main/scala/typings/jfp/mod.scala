@@ -24,8 +24,8 @@ object mod extends Shortcut {
       * jfp supports string function aliasing -- alias is a jfp function name and seeking behavior
       * will happen against the jfp object only.
       */
-    def apply(alias: String, args: js.Any*): JfpCurriedOutput[js.Any] = js.native
-    def apply(externalFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): JfpCurriedOutput[js.Any] = js.native
+    def apply(alias: String, args: Any*): JfpCurriedOutput[Any] = js.native
+    def apply(externalFunction: js.Function1[/* repeated */ Any, Any], args: Any*): JfpCurriedOutput[Any] = js.native
     
     /**
       * Adds two numbers
@@ -37,7 +37,7 @@ object mod extends Shortcut {
       * Signature: (any) -> () -> any
       * @param value Value to return from produced function
       */
-    def always(value: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def always(value: Any): js.Function1[/* repeated */ Any, Any] = js.native
     
     /**
       * Performs a conjunction (and) operation on two or more booleans
@@ -50,7 +50,7 @@ object mod extends Shortcut {
       * @param values Array of arguments for function
       */
     @JSName("apply")
-    def apply(userFn: js.Function1[/* repeated */ js.Any, js.Any], values: js.Array[js.Any]): Unit = js.native
+    def apply(userFn: js.Function1[/* repeated */ Any, Any], values: js.Array[Any]): Unit = js.native
     
     /**
       * Checks if number is between two values
@@ -60,84 +60,84 @@ object mod extends Shortcut {
     /**
       * Clones values to an optional depth
       */
-    def clone(value: js.Any): js.Any = js.native
-    def clone(value: js.Any, depth: Double): js.Any = js.native
+    def clone(value: Any): Any = js.native
+    def clone(value: Any, depth: Double): Any = js.native
     
     /**
       * Removes falsey values from an array
       * @param values The array to compact
       */
-    def compact(values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def compact(values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Composes a set of functions into a new single function
       * @param ...args Arguments for compose
       */
-    def compose(args: (js.Function1[/* repeated */ js.Any, js.Any])*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def compose(args: (js.Function1[/* repeated */ Any, Any])*): js.Function1[/* repeated */ Any, Any] = js.native
     
     /**
       * Creates composite predicate which performs each check on a value and then conjoins the result
       */
-    def composePredicate(args: (js.Function1[/* repeated */ js.Any, Boolean])*): js.Function1[/* repeated */ js.Any, Boolean] = js.native
+    def composePredicate(args: (js.Function1[/* repeated */ Any, Boolean])*): js.Function1[/* repeated */ Any, Boolean] = js.native
     
     /**
       * Clones and concatenates two arrays
       * @param values1 The array to concatenate to
       * @param values2 The array to concatenate with
       */
-    def concat(values1: js.Array[js.Any], values2: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def concat(values1: js.Array[Any], values2: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Appends value to clone of destination array
       * @param value The value to add to the end of an array
       * @param destination The array to be cloned and appended to
       */
-    def conj(value: js.Any, destination: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def conj(value: Any, destination: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Prepends value to clone of destination array
       * @param value The value to add to the beginning of an array
       * @param destination The array to be cloned and prepended to
       */
-    def cons(value: js.Any, destination: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def cons(value: Any, destination: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Returns true if array contains provided value, else false
       */
-    def contains(value: js.Any, list: js.Array[js.Any]): Boolean = js.native
+    def contains(value: Any, list: js.Array[Any]): Boolean = js.native
     
     /**
       * Returns a copy of passed array
       */
-    def copyArray(list: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def copyArray(list: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Counts the number of arguments in a function declaration
       * @param userFn Function to count arguments of
       */
-    def countArguments(userFn: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.native
+    def countArguments(userFn: js.Function1[/* repeated */ Any, Any]): Double = js.native
     
-    def curry(userFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
-    def curry(userFn: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Any = js.native
     /**
       * Curries function until all arguments are satisfied
       * @param userFn Function to curry
       * @param ...argments Initial arguments for currying application
       */
+    def curry(userFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any] = js.native
+    def curry(userFn: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Any] = js.native
     @JSName("curry")
-    def curry_Function1(userFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def curry_Any(userFn: js.Function1[/* repeated */ Any, Any]): Any = js.native
     @JSName("curry")
-    def curry_Function1(userFn: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def curry_Any(userFn: js.Function1[/* repeated */ Any, Any], args: Any*): Any = js.native
     
     /**
       * Traverses object tree and retrieves dot-delimited key or returns null
       */
-    def deref(key: String, dataset: js.Object): js.Any = js.native
+    def deref(key: String, dataset: js.Object): Any = js.native
     
     /**
       * Takes the difference of sets A and B where the difference is A - B
       */
-    def difference(lista: js.Array[js.Any], listb: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def difference(lista: js.Array[Any], listb: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Divides first number by second
@@ -149,45 +149,45 @@ object mod extends Shortcut {
       * @param index Index to perform drop at
       * @param values Array to remove value from
       */
-    def drop(index: Double, values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def drop(index: Double, values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Drops first element from clone of values array
       * @param values Array to drop first value of
       */
-    def dropFirst(values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def dropFirst(values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Drops last element from clone of values array
       * @param values Array to drop last value from
       */
-    def dropLast(values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def dropLast(values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Drops values from array until predicate is satisfied
       */
-    def dropUntil(predicate: js.Function1[/* repeated */ js.Any, Boolean], list: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def dropUntil(predicate: js.Function1[/* repeated */ Any, Boolean], list: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Performs iterable function on each value of provided array
       * @param iterable Function to perform on each value of array
       * @param values Array to operate on
       */
-    def each(iteratable: js.Function1[/* value */ js.Any, Unit], values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def each(iteratable: js.Function1[/* value */ Any, Unit], values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Returns preferred value if truthy, otherwise returns default value
       * @param defaultValue Default value
       * @param preferredValue Preferred value
       */
-    def either(defaultValue: js.Any, preferredValue: js.Any): js.Any = js.native
+    def either(defaultValue: Any, preferredValue: Any): Any = js.native
     /**
       * Returns provided value if truthy or matches datatype, otherwise returns default value
       * @param defaultValue Default value
       * @param preferredValue Preferred value
       * @param datatype Type preferred value should be
       */
-    def either(defaultValue: js.Any, preferredValue: js.Any, datatype: String): js.Any = js.native
+    def either(defaultValue: Any, preferredValue: Any, datatype: String): Any = js.native
     
     /**
       * Returns preferred value if truthy, otherwise returns default value
@@ -195,12 +195,12 @@ object mod extends Shortcut {
       * @param preferredValue Preferred value
       * @param predicateValue Boolean switch to return default or preferred value
       */
-    def eitherIf(defaultValue: js.Any, preferredValue: js.Any, predicateValue: Boolean): js.Any = js.native
+    def eitherIf(defaultValue: Any, preferredValue: Any, predicateValue: Boolean): Any = js.native
     
     /**
       * Returns either typed value based on type parameter
       */
-    def eitherType(`type`: String, defaultValue: js.Any, value: js.Any): js.Any = js.native
+    def eitherType(`type`: String, defaultValue: Any, value: Any): Any = js.native
     
     /**
       * Returns provided value if truthy, otherwise returns default value
@@ -208,25 +208,25 @@ object mod extends Shortcut {
       * @param preferredValue Preferred value
       * @param predicate Predicate function preferred value is tested against
       */
-    def eitherWhen(defaultValue: js.Any, preferredValue: js.Any, predicate: js.Function1[/* value */ js.Any, Boolean]): js.Any = js.native
+    def eitherWhen(defaultValue: Any, preferredValue: Any, predicate: js.Function1[/* value */ Any, Boolean]): Any = js.native
     
     /**
       * Checks value equality of two arguments
       * @param valuea
       * @param valueb
       */
-    def equal(valuea: js.Any, valueb: js.Any): Boolean = js.native
+    def equal(valuea: Any, valueb: Any): Boolean = js.native
     
     /**
       * Checks if every value in an array passes a predicate
       */
-    def every(predicate: js.Function1[/* value */ js.Any, Boolean], list: js.Array[js.Any]): Boolean = js.native
+    def every(predicate: js.Function1[/* value */ Any, Boolean], list: js.Array[Any]): Boolean = js.native
     
     /**
       * Executes passed function
       * @param userFn
       */
-    def execute(userFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
+    def execute(userFn: js.Function1[/* repeated */ Any, Any]): Any = js.native
     
     /**
       * Takes the factorial of passed number
@@ -238,20 +238,20 @@ object mod extends Shortcut {
       * @param predicate Function which performs a boolean resultant operation on a value of the array
       * @param values Array to filter
       */
-    def filter(predicate: js.Function1[/* value */ js.Any, Boolean], values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def filter(predicate: js.Function1[/* value */ Any, Boolean], values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Finds the first value in an array that satisfies provided predicate
       * @param predicate Function which performs a boolean resultant operation on a value of the array
       * @param values Array to run predicate against
       */
-    def find(predicate: js.Function1[/* value */ js.Any, Boolean], values: js.Array[js.Any]): js.Any = js.native
+    def find(predicate: js.Function1[/* value */ Any, Boolean], values: js.Array[Any]): Any = js.native
     
     /**
       * Returns the first value in an array
       * @param values Array of values
       */
-    def first(values: js.Array[js.Any]): js.Any = js.native
+    def first(values: js.Array[Any]): Any = js.native
     
     /**
       * Checks if a is greater or equal to b
@@ -267,7 +267,7 @@ object mod extends Shortcut {
       * Gets type of passed value
       * @param value
       */
-    def getType(value: js.Any): String = js.native
+    def getType(value: Any): String = js.native
     
     /**
       * Checks if a is greater than b
@@ -277,13 +277,13 @@ object mod extends Shortcut {
     /**
       * Checks that passed value is an array which contains a first value
       */
-    def hasFirst(value: js.Any): Boolean = js.native
+    def hasFirst(value: Any): Boolean = js.native
     
     /**
       * Returns value passed to the function
       * @param value Value to return
       */
-    def identity(value: js.Any): js.Any = js.native
+    def identity(value: Any): Any = js.native
     
     /**
       * Increments a number
@@ -293,28 +293,28 @@ object mod extends Shortcut {
     /**
       * Drops last element of array
       */
-    def init(list: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def init(list: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Takes the intersection of two arrays
       */
-    def intersect(lista: js.Array[js.Any], listb: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def intersect(lista: js.Array[Any], listb: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Checks if passed value is an array
       */
-    def isArray(value: js.Any): Boolean = js.native
+    def isArray(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is a boolean
       */
-    def isBoolean(value: js.Any): Boolean = js.native
+    def isBoolean(value: Any): Boolean = js.native
     
     /**
       * Checks if value is an empty string
       * @param value
       */
-    def isEmptyString(value: js.Any): Boolean = js.native
+    def isEmptyString(value: Any): Boolean = js.native
     
     /**
       * Checks if value is even
@@ -324,7 +324,7 @@ object mod extends Shortcut {
     /**
       * Checks if passed value is a function
       */
-    def isFunction(value: js.Any): Boolean = js.native
+    def isFunction(value: Any): Boolean = js.native
     
     /**
       * Checks if value is an integer
@@ -360,22 +360,22 @@ object mod extends Shortcut {
       * Checks if value is null
       * @param value
       */
-    def isNull(value: js.Any): Boolean = js.native
+    def isNull(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is a number
       */
-    def isNumber(value: js.Any): Boolean = js.native
+    def isNumber(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is either a number or a numeric string
       */
-    def isNumeric(value: js.Any): Boolean = js.native
+    def isNumeric(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is an object
       */
-    def isObject(value: js.Any): Boolean = js.native
+    def isObject(value: Any): Boolean = js.native
     
     /**
       * Checks if value is odd
@@ -385,7 +385,7 @@ object mod extends Shortcut {
     /**
       * Checks if passed value is a tuple of length 2
       */
-    def isPair(value: js.Any): Boolean = js.native
+    def isPair(value: Any): Boolean = js.native
     
     /**
       * Checks if number is positive
@@ -395,44 +395,44 @@ object mod extends Shortcut {
     /**
       * Checks if passed value is a primitive Javascript type
       */
-    def isPrimitive(value: js.Any): Boolean = js.native
+    def isPrimitive(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is a tuple of length 1
       */
-    def isSingle(value: js.Any): Boolean = js.native
+    def isSingle(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is a string
       */
-    def isString(value: js.Any): Boolean = js.native
+    def isString(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is a tuple of length 3
       */
-    def isTriple(value: js.Any): Boolean = js.native
+    def isTriple(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is truthy
       */
-    def isTruthy(value: js.Any): Boolean = js.native
+    def isTruthy(value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is a tuple
       */
-    def isTuple(value: js.Any): Boolean = js.native
+    def isTuple(value: Any): Boolean = js.native
     
     /**
       * Checks if value is of type passed as string
       * @param type
       * @param value
       */
-    def isType(`type`: String, value: js.Any): Boolean = js.native
+    def isType(`type`: String, value: Any): Boolean = js.native
     
     /**
       * Checks if passed value is undefined
       */
-    def isUndefined(value: js.Any): Boolean = js.native
+    def isUndefined(value: Any): Boolean = js.native
     
     /**
       * Checks if number is 0
@@ -443,13 +443,13 @@ object mod extends Shortcut {
       * Returns last value in an array
       * @param values Array of values
       */
-    def last(values: js.Array[js.Any]): js.Any = js.native
+    def last(values: js.Array[Any]): Any = js.native
     
     /**
       * Returns last index of an array
       * @param values Array
       */
-    def lastIndex(values: js.Array[js.Any]): Double = js.native
+    def lastIndex(values: js.Array[Any]): Double = js.native
     
     /**
       * Checks if a is less than or equal to b
@@ -466,7 +466,7 @@ object mod extends Shortcut {
       * @param mapper Mapping function
       * @param values Array to map
       */
-    def map(mapper: js.Function1[/* value */ js.Any, js.Any], values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def map(mapper: js.Function1[/* value */ Any, Any], values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Takes the maximum of two numbers
@@ -477,18 +477,18 @@ object mod extends Shortcut {
       * Returns preferred value if truthy, otherwise null
       * @param preferredValue Preferred value to check
       */
-    def maybe(preferredValue: js.Any): js.Any = js.native
+    def maybe(preferredValue: Any): Any = js.native
     /**
       * Returns preferred value if truthy or matches datatype, otherwise null
       * @param preferredValue Preferred value to check
       * @param datatype Datatype to match
       */
-    def maybe(preferredValue: js.Any, datatype: String): js.Any = js.native
+    def maybe(preferredValue: Any, datatype: String): Any = js.native
     
     /**
       * Returns maybe typed value based on type parameter
       */
-    def maybeType(`type`: String, value: js.Any): js.Any = js.native
+    def maybeType(`type`: String, value: Any): Any = js.native
     
     /**
       * Merges right object into a copy of left object
@@ -514,10 +514,10 @@ object mod extends Shortcut {
       * Takes multiple partitions of a list using a partitioning predicate and criteria
       */
     def multiPartition(
-      predicate: js.Function2[/* criterion */ js.Any, /* value */ js.Any, Boolean],
-      criteria: js.Array[js.Any],
-      list: js.Array[js.Any]
-    ): js.Array[js.Array[js.Any]] = js.native
+      predicate: js.Function2[/* criterion */ Any, /* value */ Any, Boolean],
+      criteria: js.Array[Any],
+      list: js.Array[Any]
+    ): js.Array[js.Array[Any]] = js.native
     
     /**
       * Multiplies two numbers
@@ -534,12 +534,12 @@ object mod extends Shortcut {
       * @param index Array index
       * @param values Array of values
       */
-    def nth(index: Double, values: js.Array[js.Any]): js.Any = js.native
+    def nth(index: Double, values: js.Array[Any]): Any = js.native
     
     /**
       * Counts number of list values which satisfy predicate
       */
-    def numberOf(predicate: js.Function1[/* value */ js.Any, Boolean], list: js.Array[js.Any]): Double = js.native
+    def numberOf(predicate: js.Function1[/* value */ Any, Boolean], list: js.Array[Any]): Double = js.native
     
     /**
       * Performs a disjunction (or) operation on two or more booleans
@@ -551,30 +551,30 @@ object mod extends Shortcut {
       * @param userFn Function to apply values to
       * @param ...args Values to apply
       */
-    def partial(userFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-    def partial(userFn: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def partial(userFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any] = js.native
+    def partial(userFn: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Any] = js.native
     
     /**
       * Returns a partially applied function with remaining arguments reversed
       */
-    def partialReverse(fn: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def partialReverse(fn: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Any] = js.native
     
     /**
       * Partitions array on values which pass and do not pass predicate
       */
-    def partition(predicate: js.Function1[/* value */ js.Any, Boolean], list: js.Array[js.Any]): js.Array[js.Array[js.Any]] = js.native
+    def partition(predicate: js.Function1[/* value */ Any, Boolean], list: js.Array[Any]): js.Array[js.Array[Any]] = js.native
     
     /**
       * Picks key from object
       */
-    def pick(key: String, dataset: js.Object): js.Any = js.native
+    def pick(key: String, dataset: js.Object): Any = js.native
     
     /**
       * Pipelines or chains functions producing a single final output
       * @param value Initial condition for function pipelining
       * @param ...args Functions to chain/pipeline
       */
-    def pipeline(value: js.Any, args: (js.Function1[/* repeated */ js.Any, js.Any])*): js.Any = js.native
+    def pipeline(value: Any, args: (js.Function1[/* repeated */ Any, Any])*): Any = js.native
     
     /**
       * Picks value from object by key and returns a new object containing key value pair
@@ -595,25 +595,22 @@ object mod extends Shortcut {
     /**
       * Composes functions executing from left to right
       */
-    def rcompose(args: (js.Function1[/* repeated */ js.Any, js.Any])*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def rcompose(args: (js.Function1[/* repeated */ Any, Any])*): js.Function1[/* repeated */ Any, Any] = js.native
     
     /**
       * Recursion function to allow for tail-optimized recursion
       * @param userFn Function to recur on
       * @param ...args Initial condition arguments
       */
-    def recur(userFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
-    def recur(userFn: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Any = js.native
+    def recur(userFn: js.Function1[/* repeated */ Any, Any]): Any = js.native
+    def recur(userFn: js.Function1[/* repeated */ Any, Any], args: Any*): Any = js.native
     
     /**
       * Reduces array using reducer function
       * @param reducer Function to reduce values with
       * @param values Array to reduce
       */
-    def reduce(
-      reducer: js.Function2[/* condition1 */ js.Any, /* condition2 */ js.Any, js.Any],
-      values: js.Array[js.Any]
-    ): js.Any = js.native
+    def reduce(reducer: js.Function2[/* condition1 */ Any, /* condition2 */ Any, Any], values: js.Array[Any]): Any = js.native
     /**
       * Reduces array using reducer function
       * @param reducer Function to reduce values with
@@ -621,35 +618,35 @@ object mod extends Shortcut {
       * @param initialCondition Initial value to use in first reduction application
       */
     def reduce(
-      reducer: js.Function2[/* condition1 */ js.Any, /* condition2 */ js.Any, js.Any],
-      values: js.Array[js.Any],
-      initialCondition: js.Any
-    ): js.Any = js.native
+      reducer: js.Function2[/* condition1 */ Any, /* condition2 */ Any, Any],
+      values: js.Array[Any],
+      initialCondition: Any
+    ): Any = js.native
     
     /**
       * Repeats action n times
       */
-    def repeat(count: Double, action: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
+    def repeat(count: Double, action: js.Function1[/* repeated */ Any, Any]): Any = js.native
     
     /**
       * Returns all but the first element of array
       * @param values Array to return the rest of
       */
-    def rest(values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def rest(values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Reverses arguments of provided function
       * @param userFn
       */
-    def reverseArgs(userFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def reverseArgs(userFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any] = js.native
     
     /**
       * Performs a right partial application on a function
       * @param userFn Function to apply arguments
       * @param ...args Inital arguments
       */
-    def rpartial(userFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
-    def rpartial(userFn: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Any = js.native
+    def rpartial(userFn: js.Function1[/* repeated */ Any, Any]): Any = js.native
+    def rpartial(userFn: js.Function1[/* repeated */ Any, Any], args: Any*): Any = js.native
     
     /**
       * Executes function if value is truthy, otherwise returns default
@@ -657,32 +654,32 @@ object mod extends Shortcut {
       * @param userFn
       * @param value
       */
-    def shortCircuit(defaultValue: js.Any, userFn: js.Function1[/* repeated */ js.Any, js.Any], value: js.Any): js.Any = js.native
+    def shortCircuit(defaultValue: Any, userFn: js.Function1[/* repeated */ Any, Any], value: Any): Any = js.native
     
     /**
       * Returns a slice of an array
       * @param initialIndex index to start slicing at
       * @param values Array to slice
       */
-    def slice(initialIndex: Double, values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def slice(initialIndex: Double, values: js.Array[Any]): js.Array[Any] = js.native
     /**
       * Returns a slice of an array
       * @param initialIndex index to start slicing at
       * @param values Array to slice
       * @param lastIndex Index to end slice with
       */
-    def slice(initialIndex: Double, values: js.Array[js.Any], lastIndex: Double): js.Array[js.Any] = js.native
+    def slice(initialIndex: Double, values: js.Array[Any], lastIndex: Double): js.Array[Any] = js.native
     
     /**
       * Returns true if at least one array element satisfies predicate, else false
       */
-    def some(predicate: js.Function1[/* value */ js.Any, Boolean], list: js.Array[js.Any]): Boolean = js.native
+    def some(predicate: js.Function1[/* value */ Any, Boolean], list: js.Array[Any]): Boolean = js.native
     
     /**
       * Sorts values in an array with an optional comparator arguments
       */
-    def sort(list: js.Array[js.Any]): js.Array[js.Any] = js.native
-    def sort(list: js.Array[js.Any], comparator: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): js.Array[js.Any] = js.native
+    def sort(list: js.Array[Any]): js.Array[Any] = js.native
+    def sort(list: js.Array[Any], comparator: js.Function2[/* a */ Any, /* b */ Any, Double]): js.Array[Any] = js.native
     
     /**
       * Performs a split partial application
@@ -690,11 +687,7 @@ object mod extends Shortcut {
       * @param leftArgs
       * @param rightArgs
       */
-    def splitPartial(
-      userFn: js.Function1[/* repeated */ js.Any, js.Any],
-      leftArgs: js.Array[js.Any],
-      rightArgs: js.Array[js.Any]
-    ): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def splitPartial(userFn: js.Function1[/* repeated */ Any, Any], leftArgs: js.Array[Any], rightArgs: js.Array[Any]): js.Function1[/* repeated */ Any, Any] = js.native
     
     /**
       * Subtracts second argument from first
@@ -704,19 +697,19 @@ object mod extends Shortcut {
     /**
       * Takes the symmetric difference of two arrays
       */
-    def symmetricDifference(lista: js.Array[js.Any], listb: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def symmetricDifference(lista: js.Array[Any], listb: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Returns first n values of an array
       * @param quantity Number of values to return
       * @param values Array of values to take from
       */
-    def take(quantity: Double, values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def take(quantity: Double, values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Takes values from array until predicate is satisfied
       */
-    def takeUntil(predicate: js.Function1[/* value */ js.Any, Boolean], list: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def takeUntil(predicate: js.Function1[/* value */ Any, Boolean], list: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Outputs a string composed of n copies of base string
@@ -731,7 +724,7 @@ object mod extends Shortcut {
     /**
       * Converts string to decimal safely
       */
-    def toDec(value: js.Any): Double = js.native
+    def toDec(value: Any): Double = js.native
     def toDec(value: Double): Double = js.native
     
     /**
@@ -741,7 +734,7 @@ object mod extends Shortcut {
     /**
       * Converts object to an array of values
       */
-    def toValues(value: js.Object): js.Array[js.Any] = js.native
+    def toValues(value: js.Object): js.Array[Any] = js.native
     
     /**
       * Transforms object to a new object containing transformed keys
@@ -756,27 +749,27 @@ object mod extends Shortcut {
     /**
       * Takes the union of two arrays
       */
-    def union(lista: js.Array[js.Any], listb: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def union(lista: js.Array[Any], listb: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Returns array of values with duplicates removed
       * @param values Array of values to filter by uniqueness
       */
-    def unique(values: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def unique(values: js.Array[Any]): js.Array[Any] = js.native
     
     /**
       * Executes function when condition is true
       * @param predicateValue Value to set behavior execution
       * @param userFunction Behavior to execute
       */
-    def when(predicateValue: Boolean, userFunction: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
+    def when(predicateValue: Boolean, userFunction: js.Function1[/* repeated */ Any, Any]): Any = js.native
     /**
       * Executes function when condition is true
       * @param predicateValue Value to set behavior execution
       * @param userFunction Behavior to execute
       * @param ...args arguments for userFunction
       */
-    def when(predicateValue: Boolean, userFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Any = js.native
+    def when(predicateValue: Boolean, userFunction: js.Function1[/* repeated */ Any, Any], args: Any*): Any = js.native
     
     /**
       * Performs an exclusive or operation on two booleans
@@ -786,7 +779,7 @@ object mod extends Shortcut {
     /**
       * Zips two arrays together into an array of arrays
       */
-    def zip(lista: js.Array[js.Any], listb: js.Array[js.Any]): js.Array[js.Array[js.Any]] = js.native
+    def zip(lista: js.Array[Any], listb: js.Array[Any]): js.Array[js.Array[Any]] = js.native
   }
   
   type _To = JfpStatic

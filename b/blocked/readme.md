@@ -10,15 +10,12 @@ check if the event loop is blocked
 | ------------------ | :-------------: |
 | Full name          | blocked |
 | Keywords           | block, event, loop, performance |
-| # releases         | 2 |
-| # dependents       | 23 |
-| # downloads        | 2427515 |
-| # stars            | 50 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 179689.33333333334 |
+| # stars            | 706.0 |
 
 ## Links
-- [Homepage](https://github.com/visionmedia/node-blocked#readme)
-- [Bugs](https://github.com/visionmedia/node-blocked/issues)
-- [Repository](https://github.com/visionmedia/node-blocked)
 - [Npm](https://www.npmjs.com/package/blocked)
     
 

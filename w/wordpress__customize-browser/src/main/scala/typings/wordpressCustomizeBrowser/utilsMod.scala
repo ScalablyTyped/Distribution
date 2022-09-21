@@ -2,7 +2,6 @@ package typings.wordpressCustomizeBrowser
 
 import typings.jquery.JQuery
 import typings.jquery.JQuery.Event
-import typings.std.Date
 import typings.std.HTMLElement
 import typings.std.Record
 import typings.wordpressCustomizeBrowser.classMod.Class
@@ -45,13 +44,13 @@ object utilsMod {
     
     def areElementListsEqual(listA: js.Array[JQuery[HTMLElement]], listB: js.Array[JQuery[HTMLElement]]): Boolean = js.native
     
-    def bubbleChildValueChanges(instance: Class, properties: js.Array[js.Any]): Unit = js.native
+    def bubbleChildValueChanges(instance: Class, properties: js.Array[Any]): Unit = js.native
     
     def getCurrentTimestamp(): Double = js.native
     
     def getRemainingTime(datetime: String): Double = js.native
+    def getRemainingTime(datetime: js.Date): Double = js.native
     def getRemainingTime(datetime: Double): Double = js.native
-    def getRemainingTime(datetime: Date): Double = js.native
     
     def highlightButton(button: JQuery[HTMLElement]): js.Function0[Unit] = js.native
     def highlightButton(button: JQuery[HTMLElement], options: HighlightButtonOptions): js.Function0[Unit] = js.native

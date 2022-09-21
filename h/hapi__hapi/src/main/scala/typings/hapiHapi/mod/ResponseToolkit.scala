@@ -1,8 +1,6 @@
 package typings.hapiHapi.mod
 
 import typings.hapiHapi.anon.Etag
-import typings.hapiHapi.anon.ReadonlyRequest
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +34,7 @@ trait ResponseToolkit extends StObject {
     * A response symbol. Provides access to the route or server context set via the route [bind](https://github.com/hapijs/hapi/blob/master/API.md#route.options.bind)
     * option or [server.bind()](https://github.com/hapijs/hapi/blob/master/API.md#server.bind()).
     */
-  val context: js.Any = js.native
+  val context: Any = js.native
   
   /**
     * A response symbol. When returned by a lifecycle method, the request lifecycle continues without changing the response.
@@ -81,7 +79,7 @@ trait ResponseToolkit extends StObject {
     * The [request] object. This is a duplication of the request lifecycle method argument used by
     * [toolkit decorations](https://github.com/hapijs/hapi/blob/master/API.md#server.decorate()) to access the current request.
     */
-  val request: ReadonlyRequest = js.native
+  val request: Request = js.native
   
   /**
     * Wraps the provided value and returns a response object which allows customizing the response
@@ -119,8 +117,8 @@ trait ResponseToolkit extends StObject {
     * There is no difference between throwing the error or passing it with the h.unauthenticated() method is no credentials are passed, but it might still be helpful for code clarity.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-hunauthenticatederror-data)
     */
-  def unauthenticated(error: Error): Unit = js.native
-  def unauthenticated(error: Error, data: AuthenticationData): Unit = js.native
+  def unauthenticated(error: js.Error): Auth = js.native
+  def unauthenticated(error: js.Error, data: AuthenticationData): Auth = js.native
   
   /**
     * Clears a response cookie using the same arguments as

@@ -5,15 +5,15 @@ import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.koaBodyparser.anon.Form
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(opts: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(opts: Options): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-bodyparser", JSImport.Namespace)
   @js.native
@@ -34,7 +34,7 @@ object mod {
     /**
       * requested encoding. Default is utf-8 by co-body
       */
-    var encode: js.UndefOr[String] = js.undefined
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * support extend types
@@ -55,7 +55,7 @@ object mod {
     /**
       * support custom error handle
       */
-    var onerror: js.UndefOr[js.Function2[/* err */ Error, /* ctx */ Context, Unit]] = js.undefined
+    var onerror: js.UndefOr[js.Function2[/* err */ js.Error, /* ctx */ Context, Unit]] = js.undefined
     
     /**
       * when set to true, JSON parser will only accept arrays and objects. Default is true
@@ -66,6 +66,11 @@ object mod {
       * limit of the text body. Default is 1mb.
       */
     var textLimit: js.UndefOr[String] = js.undefined
+    
+    /**
+      * limit of the xml body. Default is 1mb.
+      */
+    var xmlLimit: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -84,11 +89,11 @@ object mod {
       
       inline def setEnableTypesUndefined: Self = StObject.set(x, "enableTypes", js.undefined)
       
-      inline def setEnableTypesVarargs(value: String*): Self = StObject.set(x, "enableTypes", js.Array(value :_*))
+      inline def setEnableTypesVarargs(value: String*): Self = StObject.set(x, "enableTypes", js.Array(value*))
       
-      inline def setEncode(value: String): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
       inline def setExtendTypes(value: Form): Self = StObject.set(x, "extendTypes", value.asInstanceOf[js.Any])
       
@@ -102,7 +107,7 @@ object mod {
       
       inline def setJsonLimitUndefined: Self = StObject.set(x, "jsonLimit", js.undefined)
       
-      inline def setOnerror(value: (/* err */ Error, /* ctx */ Context) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
+      inline def setOnerror(value: (/* err */ js.Error, /* ctx */ Context) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
       
       inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
@@ -113,6 +118,10 @@ object mod {
       inline def setTextLimit(value: String): Self = StObject.set(x, "textLimit", value.asInstanceOf[js.Any])
       
       inline def setTextLimitUndefined: Self = StObject.set(x, "textLimit", js.undefined)
+      
+      inline def setXmlLimit(value: String): Self = StObject.set(x, "xmlLimit", value.asInstanceOf[js.Any])
+      
+      inline def setXmlLimitUndefined: Self = StObject.set(x, "xmlLimit", js.undefined)
     }
   }
   
@@ -121,7 +130,8 @@ object mod {
     
     trait Request extends StObject {
       
-      var body: js.UndefOr[js.Any] = js.undefined
+      // any declaration breaks types intellisense and type safety, keep it at least Record<string, unknown>
+      var body: js.UndefOr[Record[String, Any]] = js.undefined
       
       var rawBody: String
     }
@@ -134,7 +144,7 @@ object mod {
       
       extension [Self <: Request](x: Self) {
         
-        inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Record[String, Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
         inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         

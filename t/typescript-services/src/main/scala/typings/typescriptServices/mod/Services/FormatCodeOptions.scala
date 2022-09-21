@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.FormatCodeOptions")
 @js.native
-class FormatCodeOptions ()
+open class FormatCodeOptions ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.FormatCodeOptions {
   

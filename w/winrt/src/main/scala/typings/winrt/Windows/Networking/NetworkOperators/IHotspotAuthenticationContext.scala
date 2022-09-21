@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
-import typings.std.Uint8Array
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
@@ -26,7 +25,7 @@ trait IHotspotAuthenticationContext extends StObject {
   
   def triggerAttentionRequired(packageRelativeApplicationId: String, applicationParameters: String): Unit
   
-  var wirelessNetworkId: Uint8Array
+  var wirelessNetworkId: js.typedarray.Uint8Array
 }
 object IHotspotAuthenticationContext {
   
@@ -39,7 +38,7 @@ object IHotspotAuthenticationContext {
     redirectMessageXml: XmlDocument,
     skipAuthentication: () => Unit,
     triggerAttentionRequired: (String, String) => Unit,
-    wirelessNetworkId: Uint8Array
+    wirelessNetworkId: js.typedarray.Uint8Array
   ): IHotspotAuthenticationContext = {
     val __obj = js.Dynamic.literal(abortAuthentication = js.Any.fromFunction1(abortAuthentication), authenticationUrl = authenticationUrl.asInstanceOf[js.Any], issueCredentials = js.Any.fromFunction4(issueCredentials), networkAdapter = networkAdapter.asInstanceOf[js.Any], redirectMessageUrl = redirectMessageUrl.asInstanceOf[js.Any], redirectMessageXml = redirectMessageXml.asInstanceOf[js.Any], skipAuthentication = js.Any.fromFunction0(skipAuthentication), triggerAttentionRequired = js.Any.fromFunction2(triggerAttentionRequired), wirelessNetworkId = wirelessNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHotspotAuthenticationContext]
@@ -63,6 +62,6 @@ object IHotspotAuthenticationContext {
     
     inline def setTriggerAttentionRequired(value: (String, String) => Unit): Self = StObject.set(x, "triggerAttentionRequired", js.Any.fromFunction2(value))
     
-    inline def setWirelessNetworkId(value: Uint8Array): Self = StObject.set(x, "wirelessNetworkId", value.asInstanceOf[js.Any])
+    inline def setWirelessNetworkId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "wirelessNetworkId", value.asInstanceOf[js.Any])
   }
 }

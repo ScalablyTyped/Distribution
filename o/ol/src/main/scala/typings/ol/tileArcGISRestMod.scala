@@ -14,7 +14,7 @@ object tileArcGISRestMod {
   
   @JSImport("ol/source/TileArcGISRest", JSImport.Default)
   @js.native
-  class default () extends TileArcGISRest {
+  open class default () extends TileArcGISRest {
     def this(opt_options: Options) = this()
   }
   
@@ -24,13 +24,13 @@ object tileArcGISRestMod {
     
     var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var hidpi: js.UndefOr[Boolean] = js.undefined
     
     var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var params: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var projection: js.UndefOr[ProjectionLike] = js.undefined
     
@@ -63,13 +63,15 @@ object tileArcGISRestMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
       inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -81,7 +83,7 @@ object tileArcGISRestMod {
       
       inline def setImageSmoothingUndefined: Self = StObject.set(x, "imageSmoothing", js.undefined)
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -113,7 +115,7 @@ object tileArcGISRestMod {
       
       inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
       
       inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
@@ -129,11 +131,11 @@ object tileArcGISRestMod {
       * Get the user-provided params, i.e. those passed to the constructor through
       * the "params" option, and possibly updated using the updateParams method.
       */
-    def getParams(): js.Any = js.native
+    def getParams(): Any = js.native
     
     /**
       * Update the user-provided params.
       */
-    def updateParams(params: js.Any): Unit = js.native
+    def updateParams(params: Any): Unit = js.native
   }
 }

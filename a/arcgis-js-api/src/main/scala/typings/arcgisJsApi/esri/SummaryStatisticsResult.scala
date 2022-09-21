@@ -18,7 +18,7 @@ trait SummaryStatisticsResult
   var avg: Double
   
   /**
-    * The number of features evaluated.
+    * The total number of features with a non-null value for the given field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
@@ -32,11 +32,25 @@ trait SummaryStatisticsResult
   var max: Double
   
   /**
+    * The median of all values returned from the field or expression.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
+    */
+  var median: Double
+  
+  /**
     * The minimum of all values returned from the field or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
     */
   var min: Double
+  
+  /**
+    * The number of null values stored in the given field.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html#SummaryStatisticsResult)
+    */
+  var nullcount: js.UndefOr[Double] = js.undefined
   
   /**
     * The standard deviation calculated from values returned from the field or expression.
@@ -67,13 +81,14 @@ object SummaryStatisticsResult {
     count: Double,
     hasOwnProperty: PropertyKey => Boolean,
     max: Double,
+    median: Double,
     min: Double,
     propertyIsEnumerable: PropertyKey => Boolean,
     stddev: Double,
     sum: Double,
     variance: Double
   ): SummaryStatisticsResult = {
-    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stddev = stddev.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], median = median.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stddev = stddev.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummaryStatisticsResult]
   }
   
@@ -85,7 +100,13 @@ object SummaryStatisticsResult {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
+    inline def setMedian(value: Double): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
+    
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setNullcount(value: Double): Self = StObject.set(x, "nullcount", value.asInstanceOf[js.Any])
+    
+    inline def setNullcountUndefined: Self = StObject.set(x, "nullcount", js.undefined)
     
     inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     

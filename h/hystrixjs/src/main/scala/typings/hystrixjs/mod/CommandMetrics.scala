@@ -12,11 +12,11 @@ trait CommandMetrics extends StObject {
   
   def getCurrentExecutionCount(): Double
   
-  def getExecutionTime(percentile: js.Any): Double
+  def getExecutionTime(percentile: Any): Double
   
   def getHealthCounts(): HealthCounts
   
-  def getRollingCount(`type`: js.Any): Double
+  def getRollingCount(`type`: Any): Double
   
   def incrementExecutionCount(): Unit
   
@@ -38,9 +38,9 @@ object CommandMetrics {
     addExecutionTime: Double => Unit,
     decrementExecutionCount: () => Unit,
     getCurrentExecutionCount: () => Double,
-    getExecutionTime: js.Any => Double,
+    getExecutionTime: Any => Double,
     getHealthCounts: () => HealthCounts,
-    getRollingCount: js.Any => Double,
+    getRollingCount: Any => Double,
     incrementExecutionCount: () => Unit,
     markFailure: () => Unit,
     markRejected: () => Unit,
@@ -61,11 +61,11 @@ object CommandMetrics {
     
     inline def setGetCurrentExecutionCount(value: () => Double): Self = StObject.set(x, "getCurrentExecutionCount", js.Any.fromFunction0(value))
     
-    inline def setGetExecutionTime(value: js.Any => Double): Self = StObject.set(x, "getExecutionTime", js.Any.fromFunction1(value))
+    inline def setGetExecutionTime(value: Any => Double): Self = StObject.set(x, "getExecutionTime", js.Any.fromFunction1(value))
     
     inline def setGetHealthCounts(value: () => HealthCounts): Self = StObject.set(x, "getHealthCounts", js.Any.fromFunction0(value))
     
-    inline def setGetRollingCount(value: js.Any => Double): Self = StObject.set(x, "getRollingCount", js.Any.fromFunction1(value))
+    inline def setGetRollingCount(value: Any => Double): Self = StObject.set(x, "getRollingCount", js.Any.fromFunction1(value))
     
     inline def setIncrementExecutionCount(value: () => Unit): Self = StObject.set(x, "incrementExecutionCount", js.Any.fromFunction0(value))
     

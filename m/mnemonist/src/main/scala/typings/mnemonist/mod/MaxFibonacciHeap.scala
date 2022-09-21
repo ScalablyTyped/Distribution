@@ -2,25 +2,25 @@ package typings.mnemonist.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mnemonist.fibonacciHeapMod.FibonacciHeapComparator
-import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "MaxFibonacciHeap")
 @js.native
 // Constructor
-class MaxFibonacciHeap[T] ()
+open class MaxFibonacciHeap[T] ()
   extends typings.mnemonist.fibonacciHeapMod.MaxFibonacciHeap[T] {
   def this(comparator: FibonacciHeapComparator[T]) = this()
 }
-
 /* static members */
-@JSImport("mnemonist", "MaxFibonacciHeap")
-@js.native
-object MaxFibonacciHeap extends js.Object {
-  def from[I](iterable: StringDictionary[I]): typings.mnemonist.fibonacciHeapMod.FibonacciHeap[I] = js.native
+object MaxFibonacciHeap {
+  
+  @JSImport("mnemonist", "MaxFibonacciHeap")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Statics
-  def from[I](iterable: Iterable[I]): typings.mnemonist.fibonacciHeapMod.FibonacciHeap[I] = js.native
+  inline def from[I](iterable: js.Iterable[I]): typings.mnemonist.fibonacciHeapMod.FibonacciHeap[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.mnemonist.fibonacciHeapMod.FibonacciHeap[I]]
+  inline def from[I](iterable: StringDictionary[I]): typings.mnemonist.fibonacciHeapMod.FibonacciHeap[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.mnemonist.fibonacciHeapMod.FibonacciHeap[I]]
 }
-

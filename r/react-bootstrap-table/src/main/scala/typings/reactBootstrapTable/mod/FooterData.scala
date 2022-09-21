@@ -24,7 +24,7 @@ trait FooterData extends StObject {
     * The output value from the formatter function will be used instead of the label if the formatter function is
     * defined.
     */
-  var formatter: js.UndefOr[js.Function1[/* tableData */ js.Array[js.Any], String | Double | ReactElement]] = js.undefined
+  var formatter: js.UndefOr[js.Function1[/* tableData */ js.Array[Any], String | Double | ReactElement]] = js.undefined
   
   /**
     * Title to display for the column footer
@@ -46,7 +46,7 @@ object FooterData {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    inline def setFormatter(value: /* tableData */ js.Array[js.Any] => String | Double | ReactElement): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: /* tableData */ js.Array[Any] => String | Double | ReactElement): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     

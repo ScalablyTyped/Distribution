@@ -18,13 +18,13 @@ object modalManagerMod {
     */
   @JSImport("react-overlays/cjs/ModalManager", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ModalManager {
     def this(hasHideSiblingNodesHandleContainerOverflow: HandleContainerOverflow) = this()
   }
   
-  type ContainerState = (Record[String, js.Any]) & IsOverflowing
+  type ContainerState = (Record[String, Any]) & IsOverflowing
   
   trait ModalInstance extends StObject {
     
@@ -68,7 +68,7 @@ object modalManagerMod {
     
     val hideSiblingNodes: Boolean = js.native
     
-    def isContainerOverflowing(modal: ModalInstance): js.Any = js.native
+    def isContainerOverflowing(modal: ModalInstance): Any = js.native
     
     def isTopModal(modal: ModalInstance): Boolean = js.native
     

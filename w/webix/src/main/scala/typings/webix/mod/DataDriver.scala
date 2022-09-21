@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataDriver extends StObject {
   
-  var csv: js.Any
+  var csv: Any
   
   var excel: String
   
-  var html: js.Any
+  var html: Any
   
-  var htmltable: js.Any
+  var htmltable: Any
   
-  var jsarray: js.Any
+  var jsarray: Any
   
-  var json: js.Any
+  var json: Any
   
-  var xml: js.Any
+  var xml: Any
 }
 object DataDriver {
   
@@ -28,18 +28,18 @@ object DataDriver {
   
   extension [Self <: DataDriver](x: Self) {
     
-    inline def setCsv(value: js.Any): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+    inline def setCsv(value: Any): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
     inline def setExcel(value: String): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
-    inline def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    inline def setHtmltable(value: js.Any): Self = StObject.set(x, "htmltable", value.asInstanceOf[js.Any])
+    inline def setHtmltable(value: Any): Self = StObject.set(x, "htmltable", value.asInstanceOf[js.Any])
     
-    inline def setJsarray(value: js.Any): Self = StObject.set(x, "jsarray", value.asInstanceOf[js.Any])
+    inline def setJsarray(value: Any): Self = StObject.set(x, "jsarray", value.asInstanceOf[js.Any])
     
-    inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    inline def setXml(value: js.Any): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: Any): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
   }
 }

@@ -10,14 +10,14 @@ object formRadioGroupMod {
   
   @JSImport("fundamental-react/lib/Forms/FormRadioGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FormRadioGroupProps, js.Object, js.Any]
+  open class default ()
+    extends Component[FormRadioGroupProps, js.Object, Any]
   
-  type FormRadioGroup = Component[FormRadioGroupProps, js.Object, js.Any]
+  type FormRadioGroup = Component[FormRadioGroupProps, js.Object, Any]
   
   trait FormRadioGroupProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -29,7 +29,7 @@ object formRadioGroupMod {
     
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   }
   object FormRadioGroupProps {
     
@@ -60,7 +60,7 @@ object formRadioGroupMod {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }

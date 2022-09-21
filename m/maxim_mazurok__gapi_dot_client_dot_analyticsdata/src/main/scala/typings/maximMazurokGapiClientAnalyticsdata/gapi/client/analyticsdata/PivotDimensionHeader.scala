@@ -22,6 +22,6 @@ object PivotDimensionHeader {
     
     inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    inline def setDimensionValuesVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value*))
   }
 }

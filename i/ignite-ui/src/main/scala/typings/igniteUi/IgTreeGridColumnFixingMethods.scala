@@ -27,14 +27,14 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     *
     * @param columns Array of columns and/or column identifiers - could be column indexes, column keys, column object or mixed.
     */
-  def checkFixingAllowed(columns: js.Array[js.Any]): Boolean = js.native
+  def checkFixingAllowed(columns: js.Array[Any]): Boolean = js.native
   
   /**
     * Checks whether unfixing is allowed for the specified columns. It should not be allowed if there is only one visible column in the fixed area.
     *
     * @param columns Array of columns and/or column identifiers - could be column indexes, column keys, column object or mixed.
     */
-  def checkUnfixingAllowed(columns: js.Array[js.Any]): Boolean = js.native
+  def checkUnfixingAllowed(columns: js.Array[Any]): Boolean = js.native
   
   def destroy(): Unit = js.native
   
@@ -68,10 +68,10 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     * @param includeHidden If set to true calculates width of the hidden fixed columns (their initial width before hiding).
     */
   def getWidthOfFixedColumns(): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.Array[js.Any]): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.Array[js.Any], excludeNonDataColumns: Boolean): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.Array[js.Any], excludeNonDataColumns: Boolean, includeHidden: Boolean): Double = js.native
-  def getWidthOfFixedColumns(fCols: js.Array[js.Any], excludeNonDataColumns: Unit, includeHidden: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: js.Array[Any]): Double = js.native
+  def getWidthOfFixedColumns(fCols: js.Array[Any], excludeNonDataColumns: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: js.Array[Any], excludeNonDataColumns: Boolean, includeHidden: Boolean): Double = js.native
+  def getWidthOfFixedColumns(fCols: js.Array[Any], excludeNonDataColumns: Unit, includeHidden: Boolean): Double = js.native
   def getWidthOfFixedColumns(fCols: Unit, excludeNonDataColumns: Boolean): Double = js.native
   def getWidthOfFixedColumns(fCols: Unit, excludeNonDataColumns: Boolean, includeHidden: Boolean): Double = js.native
   def getWidthOfFixedColumns(fCols: Unit, excludeNonDataColumns: Unit, includeHidden: Boolean): Double = js.native
@@ -100,7 +100,7 @@ trait IgTreeGridColumnFixingMethods extends StObject {
     * @param $trs An array of rows of the first(fixed/unfixed) container.
     * @param $anotherRows An array of rows of the second(fixed/unfixed) container.
     */
-  def syncRowsHeights($trs: js.Array[js.Any], $anotherRows: js.Array[js.Any]): Unit = js.native
+  def syncRowsHeights($trs: js.Array[Any], $anotherRows: js.Array[Any]): Unit = js.native
   
   /**
     * Unfixes all fixed columns.

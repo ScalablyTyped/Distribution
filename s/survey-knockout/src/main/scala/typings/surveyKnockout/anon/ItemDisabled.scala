@@ -6,13 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ItemDisabled extends StObject {
   
-  var column: String
-  
-  var controlLabel: String
-  
   var item: String
   
-  var itemChecked: String
+  var itemCaption: String
   
   var itemControl: String
   
@@ -22,55 +18,34 @@ trait ItemDisabled extends StObject {
   
   var itemHover: String
   
-  var itemInline: String
+  var itemIcon: String
   
-  var itemNone: String
-  
-  var itemSelectAll: String
-  
-  var label: String
-  
-  var labelChecked: String
-  
-  var materialDecorator: String
-  
-  var other: String
+  var itemSelected: String
   
   var root: String
 }
 object ItemDisabled {
   
   inline def apply(
-    column: String,
-    controlLabel: String,
     item: String,
-    itemChecked: String,
+    itemCaption: String,
     itemControl: String,
     itemDecorator: String,
     itemDisabled: String,
     itemHover: String,
-    itemInline: String,
-    itemNone: String,
-    itemSelectAll: String,
-    label: String,
-    labelChecked: String,
-    materialDecorator: String,
-    other: String,
+    itemIcon: String,
+    itemSelected: String,
     root: String
   ): ItemDisabled = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemNone = itemNone.asInstanceOf[js.Any], itemSelectAll = itemSelectAll.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], itemCaption = itemCaption.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemIcon = itemIcon.asInstanceOf[js.Any], itemSelected = itemSelected.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDisabled]
   }
   
   extension [Self <: ItemDisabled](x: Self) {
     
-    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-    
-    inline def setControlLabel(value: String): Self = StObject.set(x, "controlLabel", value.asInstanceOf[js.Any])
-    
     inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
+    inline def setItemCaption(value: String): Self = StObject.set(x, "itemCaption", value.asInstanceOf[js.Any])
     
     inline def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
     
@@ -80,19 +55,9 @@ object ItemDisabled {
     
     inline def setItemHover(value: String): Self = StObject.set(x, "itemHover", value.asInstanceOf[js.Any])
     
-    inline def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
+    inline def setItemIcon(value: String): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
     
-    inline def setItemNone(value: String): Self = StObject.set(x, "itemNone", value.asInstanceOf[js.Any])
-    
-    inline def setItemSelectAll(value: String): Self = StObject.set(x, "itemSelectAll", value.asInstanceOf[js.Any])
-    
-    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelChecked(value: String): Self = StObject.set(x, "labelChecked", value.asInstanceOf[js.Any])
-    
-    inline def setMaterialDecorator(value: String): Self = StObject.set(x, "materialDecorator", value.asInstanceOf[js.Any])
-    
-    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setItemSelected(value: String): Self = StObject.set(x, "itemSelected", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

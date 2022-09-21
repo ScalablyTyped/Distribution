@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.SetStateResponse")
 @js.native
-class SetStateResponse protected () extends StObject {
+open class SetStateResponse protected () extends StObject {
   def this(responseXml: java.lang.String) = this()
 }

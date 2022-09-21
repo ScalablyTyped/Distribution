@@ -1,7 +1,7 @@
 
 # Scala.js typings for diagnostic-channel
 
-Typings are for version 0.3.1
+Typings are for version 1.1.0
 
 ## Library description:
 Provides a context-saving pub/sub channel to connect diagnostic event publishers and subscribers
@@ -11,9 +11,9 @@ Provides a context-saving pub/sub channel to connect diagnostic event publishers
 | Full name          | diagnostic-channel |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 7376489 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1586673.0 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/node-diagnostic-channel)

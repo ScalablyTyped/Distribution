@@ -10,10 +10,10 @@ Cross platform native logging
 | ------------------ | :-------------: |
 | Full name          | nslog |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 28962 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6296.666666666667 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/atom/node-nslog#readme)

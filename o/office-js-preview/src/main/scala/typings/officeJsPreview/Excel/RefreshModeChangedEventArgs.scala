@@ -12,45 +12,45 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents information about a newly added linked data type, such as source and ID.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 trait RefreshModeChangedEventArgs extends StObject {
   
   /**
-    *
     * The linked data type refresh mode.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var refreshMode: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic
   
   /**
+    * The unique ID of the object whose refresh mode was changed.
     *
-    * The unique id of the object whose refresh mode was changed.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var serviceId: Double
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */

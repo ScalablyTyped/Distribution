@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsCloudMapInstanceAttribute extends StObject {
   
   /**
-    * The name of an AWS Cloud Map service instance attribute key. Any AWS Cloud Map service instance that contains the specified key and value is returned.
+    * The name of an Cloud Map service instance attribute key. Any Cloud Map service instance that contains the specified key and value is returned.
     */
   var key: AwsCloudMapInstanceAttributeKey
   
   /**
-    * The value of an AWS Cloud Map service instance attribute key. Any AWS Cloud Map service instance that contains the specified key and value is returned.
+    * The value of an Cloud Map service instance attribute key. Any Cloud Map service instance that contains the specified key and value is returned.
     */
   var value: AwsCloudMapInstanceAttributeValue
 }

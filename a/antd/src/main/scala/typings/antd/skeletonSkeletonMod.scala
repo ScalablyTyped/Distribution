@@ -1,17 +1,20 @@
 package typings.antd
 
 import typings.antd.anon.Avatar
-import typings.antd.anon.Call
 import typings.antd.anon.CallDefaultProps
+import typings.antd.anon.CallProps
 import typings.antd.anon.DefaultProps
 import typings.antd.antdStrings.circle
 import typings.antd.antdStrings.default
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.square
+import typings.antd.nodeMod.SkeletonNodeProps
 import typings.antd.paragraphMod.SkeletonParagraphProps
 import typings.antd.skeletonImageMod.SkeletonImageProps
 import typings.antd.titleMod.SkeletonTitleProps
+import typings.react.mod.CSSProperties
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -22,7 +25,7 @@ object skeletonSkeletonMod {
   
   object default {
     
-    inline def apply(props: SkeletonProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: SkeletonProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
     @JSImport("antd/lib/skeleton/Skeleton", JSImport.Default)
     @js.native
@@ -30,20 +33,25 @@ object skeletonSkeletonMod {
     
     @JSImport("antd/lib/skeleton/Skeleton", "default.Avatar")
     @js.native
-    def Avatar: DefaultProps = js.native
-    inline def Avatar_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Avatar")(x.asInstanceOf[js.Any])
+    def Avatar: CallDefaultProps = js.native
+    inline def Avatar_=(x: CallDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Avatar")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/skeleton/Skeleton", "default.Button")
     @js.native
-    def Button: Call = js.native
-    inline def Button_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+    def Button: DefaultProps = js.native
+    inline def Button_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
     
     inline def Image(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Image")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/skeleton/Skeleton", "default.Input")
     @js.native
-    def Input: CallDefaultProps = js.native
-    inline def Input_=(x: CallDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
+    def Input: CallProps = js.native
+    inline def Input_=(x: CallProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd/lib/skeleton/Skeleton", "default.Node")
+    @js.native
+    def Node: FC[SkeletonNodeProps] = js.native
+    inline def Node_=(x: FC[SkeletonNodeProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Node")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/skeleton/Skeleton", "default.defaultProps")
     @js.native
@@ -62,7 +70,7 @@ object skeletonSkeletonMod {
     
     var size: js.UndefOr[large | small | default | Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SkeletonAvatarProps {
     
@@ -89,7 +97,7 @@ object skeletonSkeletonMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -112,6 +120,8 @@ object skeletonSkeletonMod {
     var prefixCls: js.UndefOr[String] = js.undefined
     
     var round: js.UndefOr[Boolean] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var title: js.UndefOr[SkeletonTitleProps | Boolean] = js.undefined
   }
@@ -155,6 +165,10 @@ object skeletonSkeletonMod {
       inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
       inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setTitle(value: SkeletonTitleProps | Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

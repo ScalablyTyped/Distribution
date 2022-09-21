@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCanaryResponse extends StObject {
   
   /**
-    * A strucure that contains the full information about the canary.
+    * A structure that contains the full information about the canary.
     */
   var Canary: js.UndefOr[typings.awsSdk.syntheticsMod.Canary] = js.undefined
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("documentdb", "RangePartitionResolver")
 @js.native
-class RangePartitionResolver protected ()
+open class RangePartitionResolver protected ()
   extends StObject
      with PartitionResolver {
   /**
@@ -23,18 +23,18 @@ class RangePartitionResolver protected ()
     */
   def this(partitionKeyExtractor: String, partitionKeyMap: js.Array[PartitionKeyMap]) = this()
   def this(
-    partitionKeyExtractor: js.Function1[/* obj */ js.Any, js.Any],
+    partitionKeyExtractor: js.Function1[/* obj */ Any, Any],
     partitionKeyMap: js.Array[PartitionKeyMap]
   ) = this()
   def this(
     partitionKeyExtractor: String,
     partitionKeyMap: js.Array[PartitionKeyMap],
-    compareFunction: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
+    compareFunction: js.Function2[/* a */ Any, /* b */ Any, Double]
   ) = this()
   def this(
-    partitionKeyExtractor: js.Function1[/* obj */ js.Any, js.Any],
+    partitionKeyExtractor: js.Function1[/* obj */ Any, Any],
     partitionKeyMap: js.Array[PartitionKeyMap],
-    compareFunction: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
+    compareFunction: js.Function2[/* a */ Any, /* b */ Any, Double]
   ) = this()
   
   /**
@@ -42,7 +42,7 @@ class RangePartitionResolver protected ()
     * @param document - The document from which to extract the partition key.
     */
   /* CompleteClass */
-  override def getPartitionKey(document: js.Any): String = js.native
+  override def getPartitionKey(document: Any): String = js.native
   
   /**
     * Given a partition key, returns the correct collection link for creating a document.
@@ -61,5 +61,5 @@ class RangePartitionResolver protected ()
     * @param partitionKey - The partition key used to determine the target collection for query
     */
   /* CompleteClass */
-  override def resolveForRead(partitionKey: js.Any): js.Array[String] = js.native
+  override def resolveForRead(partitionKey: Any): js.Array[String] = js.native
 }

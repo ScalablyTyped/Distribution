@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object basicselectionmodelMod {
   
-  @JSImport("@lumino/datagrid/lib/basicselectionmodel", "BasicSelectionModel")
+  @JSImport("@lumino/datagrid/types/basicselectionmodel", "BasicSelectionModel")
   @js.native
-  class BasicSelectionModel protected () extends SelectionModel {
+  open class BasicSelectionModel protected () extends SelectionModel {
     /**
       * Construct a new selection model.
       *
@@ -18,12 +18,12 @@ object basicselectionmodelMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _cursorColumn: js.Any = js.native
+    /* private */ var _cursorColumn: Any = js.native
     
-    /* private */ var _cursorRectIndex: js.Any = js.native
+    /* private */ var _cursorRectIndex: Any = js.native
     
-    /* private */ var _cursorRow: js.Any = js.native
+    /* private */ var _cursorRow: Any = js.native
     
-    /* private */ var _selections: js.Any = js.native
+    /* private */ var _selections: Any = js.native
   }
 }

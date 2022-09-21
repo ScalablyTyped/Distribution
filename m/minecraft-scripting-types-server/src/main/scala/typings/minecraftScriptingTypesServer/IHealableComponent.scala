@@ -44,6 +44,6 @@ object IHealableComponent {
     
     inline def setItems(value: js.Array[Effects]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Effects*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Effects*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

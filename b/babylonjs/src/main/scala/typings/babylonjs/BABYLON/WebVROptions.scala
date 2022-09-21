@@ -53,7 +53,7 @@ trait WebVROptions extends StObject {
   var useCustomVRButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If multiview should be used if availible (default: false)
+    * If multiview should be used if available (default: false)
     */
   var useMultiview: js.UndefOr[Boolean] = js.undefined
 }

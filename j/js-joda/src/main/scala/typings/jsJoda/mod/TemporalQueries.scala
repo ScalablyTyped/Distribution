@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "TemporalQueries")
 @js.native
-/* private */ class TemporalQueries () extends StObject
+/* private */ open class TemporalQueries () extends StObject
 object TemporalQueries {
   
   @JSImport("js-joda", "TemporalQueries")

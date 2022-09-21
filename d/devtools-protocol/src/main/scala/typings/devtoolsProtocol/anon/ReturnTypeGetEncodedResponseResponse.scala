@@ -23,7 +23,7 @@ object ReturnTypeGetEncodedResponseResponse {
     
     inline def setParamsType(value: js.Array[GetEncodedResponseRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetEncodedResponseRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetEncodedResponseRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetEncodedResponseResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

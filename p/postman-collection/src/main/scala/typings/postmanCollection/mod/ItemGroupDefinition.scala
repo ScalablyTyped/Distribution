@@ -31,12 +31,12 @@ object ItemGroupDefinition {
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    inline def setEventVarargs(value: EventDefinition*): Self = StObject.set(x, "event", js.Array(value :_*))
+    inline def setEventVarargs(value: EventDefinition*): Self = StObject.set(x, "event", js.Array(value*))
     
     inline def setItem(value: js.Array[ItemDefinition | ItemGroupDefinition]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setItemVarargs(value: (ItemDefinition | ItemGroupDefinition)*): Self = StObject.set(x, "item", js.Array(value :_*))
+    inline def setItemVarargs(value: (ItemDefinition | ItemGroupDefinition)*): Self = StObject.set(x, "item", js.Array(value*))
   }
 }

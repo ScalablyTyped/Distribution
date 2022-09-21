@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PositionedSeparatedList")
 @js.native
-class PositionedSeparatedList protected ()
+open class PositionedSeparatedList protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PositionedSeparatedList {
   def this(
@@ -18,13 +18,13 @@ class PositionedSeparatedList protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _element: js.Any = js.native
+  var _element: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _fullStart: js.Any = js.native
+  var _fullStart: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _parent: js.Any = js.native
+  var _parent: Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): typings.typescriptServices.TypeScript.PositionedElement = js.native

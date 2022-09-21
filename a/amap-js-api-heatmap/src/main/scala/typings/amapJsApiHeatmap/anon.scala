@@ -11,7 +11,7 @@ object anon {
     
     var data: String
     
-    var dataParser: js.UndefOr[js.Function1[/* data */ js.Any, DataSet]] = js.undefined
+    var dataParser: js.UndefOr[js.Function1[/* data */ Any, DataSet]] = js.undefined
   }
   object Data {
     
@@ -24,7 +24,7 @@ object anon {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataParser(value: /* data */ js.Any => DataSet): Self = StObject.set(x, "dataParser", js.Any.fromFunction1(value))
+      inline def setDataParser(value: /* data */ Any => DataSet): Self = StObject.set(x, "dataParser", js.Any.fromFunction1(value))
       
       inline def setDataParserUndefined: Self = StObject.set(x, "dataParser", js.undefined)
     }
@@ -61,7 +61,7 @@ object anon {
       
       inline def setHeightBezierUndefined: Self = StObject.set(x, "heightBezier", js.undefined)
       
-      inline def setHeightBezierVarargs(value: Double*): Self = StObject.set(x, "heightBezier", js.Array(value :_*))
+      inline def setHeightBezierVarargs(value: Double*): Self = StObject.set(x, "heightBezier", js.Array(value*))
       
       inline def setHeightScale(value: Double): Self = StObject.set(x, "heightScale", value.asInstanceOf[js.Any])
       

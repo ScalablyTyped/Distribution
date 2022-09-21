@@ -20,9 +20,9 @@ trait TooltipOptions extends StObject {
     js.ThisFunction4[
       /* this */ ChartInternal, 
       /* data */ js.Array[DataPoint], 
-      /* defaultTitleFormat */ js.Function1[/* repeated */ js.Any, js.Any], 
-      /* defaultValueFormat */ js.Function1[/* repeated */ js.Any, js.Any], 
-      /* color */ js.Function1[/* repeated */ js.Any, js.Any], 
+      /* defaultTitleFormat */ js.Function1[/* repeated */ Any, Any], 
+      /* defaultValueFormat */ js.Function1[/* repeated */ Any, Any], 
+      /* color */ js.Function1[/* repeated */ Any, Any], 
       String
     ]
   ] = js.undefined
@@ -44,7 +44,7 @@ trait TooltipOptions extends StObject {
     * Set tooltip values order.
     */
   var order: js.UndefOr[
-    desc | asc | js.Array[js.Any] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double]) | Null
+    desc | asc | js.Array[Any] | (js.Function2[/* data1 */ Any, /* data2 */ Any, Double]) | Null
   ] = js.undefined
   
   /**
@@ -80,9 +80,9 @@ object TooltipOptions {
       value: js.ThisFunction4[
           /* this */ ChartInternal, 
           /* data */ js.Array[DataPoint], 
-          /* defaultTitleFormat */ js.Function1[/* repeated */ js.Any, js.Any], 
-          /* defaultValueFormat */ js.Function1[/* repeated */ js.Any, js.Any], 
-          /* color */ js.Function1[/* repeated */ js.Any, js.Any], 
+          /* defaultTitleFormat */ js.Function1[/* repeated */ Any, Any], 
+          /* defaultValueFormat */ js.Function1[/* repeated */ Any, Any], 
+          /* color */ js.Function1[/* repeated */ Any, Any], 
           String
         ]
     ): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
@@ -105,17 +105,15 @@ object TooltipOptions {
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    inline def setOrder(
-      value: desc | asc | js.Array[js.Any] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double])
-    ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: desc | asc | js.Array[Any] | (js.Function2[/* data1 */ Any, /* data2 */ Any, Double])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    inline def setOrderFunction2(value: (/* data1 */ js.Any, /* data2 */ js.Any) => Double): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
+    inline def setOrderFunction2(value: (/* data1 */ Any, /* data2 */ Any) => Double): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
     
     inline def setOrderNull: Self = StObject.set(x, "order", null)
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: js.Any*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: Any*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setPosition(
       value: js.ThisFunction4[

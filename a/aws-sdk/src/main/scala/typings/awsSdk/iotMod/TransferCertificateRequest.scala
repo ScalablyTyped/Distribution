@@ -12,7 +12,7 @@ trait TransferCertificateRequest extends StObject {
   var certificateId: CertificateId
   
   /**
-    * The AWS account.
+    * The Amazon Web Services account.
     */
   var targetAwsAccount: AwsAccountId
   

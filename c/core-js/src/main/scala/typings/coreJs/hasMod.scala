@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object hasMod {
   
   /* was `typeof core.Reflect.has` */
-  inline def apply(target: js.Any, propertyKey: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def apply(target: js.Any, propertyKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: Any, propertyKey: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: Any, propertyKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("core-js/fn/reflect/has", JSImport.Namespace)
   @js.native

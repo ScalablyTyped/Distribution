@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "strip-indent" : "3.0.0"
+      "strip-indent" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "strip-indent" : "3.0.0"
+      "strip-indent" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

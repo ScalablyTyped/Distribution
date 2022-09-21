@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Viz Classes
 @JSGlobal("tableau.VizManager")
 @js.native
-class VizManager ()
+open class VizManager ()
   extends StObject
      with typings.tableau.tableau.VizManager {
   

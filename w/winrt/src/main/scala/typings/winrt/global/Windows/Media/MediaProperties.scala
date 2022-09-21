@@ -16,7 +16,7 @@ object MediaProperties {
   
   @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties")
   @js.native
-  class AudioEncodingProperties ()
+  open class AudioEncodingProperties ()
     extends StObject
        with typings.winrt.Windows.Media.MediaProperties.AudioEncodingProperties {
     
@@ -60,7 +60,7 @@ object MediaProperties {
   
   @JSGlobal("Windows.Media.MediaProperties.ContainerEncodingProperties")
   @js.native
-  class ContainerEncodingProperties ()
+  open class ContainerEncodingProperties ()
     extends StObject
        with typings.winrt.Windows.Media.MediaProperties.ContainerEncodingProperties {
     
@@ -76,7 +76,7 @@ object MediaProperties {
   
   @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties")
   @js.native
-  class ImageEncodingProperties ()
+  open class ImageEncodingProperties ()
     extends StObject
        with typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties {
     
@@ -111,7 +111,7 @@ object MediaProperties {
   
   @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile")
   @js.native
-  class MediaEncodingProfile ()
+  open class MediaEncodingProfile ()
     extends StObject
        with typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile {
     
@@ -148,7 +148,7 @@ object MediaProperties {
   
   @JSGlobal("Windows.Media.MediaProperties.MediaPropertySet")
   @js.native
-  class MediaPropertySet ()
+  open class MediaPropertySet ()
     extends StObject
        with typings.winrt.Windows.Media.MediaProperties.MediaPropertySet {
     
@@ -156,19 +156,19 @@ object MediaProperties {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[String, Any]] = js.native
     
     /* CompleteClass */
-    override def getView(): IMapView[String, js.Any] = js.native
+    override def getView(): IMapView[String, Any] = js.native
     
     /* CompleteClass */
     override def hasKey(key: String): Boolean = js.native
     
     /* CompleteClass */
-    override def insert(key: String, value: js.Any): Boolean = js.native
+    override def insert(key: String, value: Any): Boolean = js.native
     
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /* CompleteClass */
     override def remove(key: String): Unit = js.native
@@ -179,7 +179,7 @@ object MediaProperties {
   
   @JSGlobal("Windows.Media.MediaProperties.MediaRatio")
   @js.native
-  class MediaRatio ()
+  open class MediaRatio ()
     extends StObject
        with typings.winrt.Windows.Media.MediaProperties.MediaRatio {
     
@@ -192,7 +192,7 @@ object MediaProperties {
   
   @JSGlobal("Windows.Media.MediaProperties.VideoEncodingProperties")
   @js.native
-  class VideoEncodingProperties ()
+  open class VideoEncodingProperties ()
     extends StObject
        with typings.winrt.Windows.Media.MediaProperties.VideoEncodingProperties {
     

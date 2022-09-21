@@ -3,6 +3,7 @@ package typings.reactMdMenu
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -36,7 +37,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdDivider.dividerMod.DividerElement
 import typings.reactMdMenu.reactMdMenuStrings.`additions removals`
 import typings.reactMdMenu.reactMdMenuStrings.`additions text`
 import typings.reactMdMenu.reactMdMenuStrings.`inline`
@@ -87,7 +87,9 @@ import typings.reactMdMenu.reactMdMenuStrings.tree
 import typings.reactMdMenu.reactMdMenuStrings.url
 import typings.reactMdMenu.reactMdMenuStrings.vertical
 import typings.reactMdMenu.reactMdMenuStrings.yes
+import typings.std.Element
 import typings.std.Event
+import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,9 +98,10 @@ object menuItemSeparatorMod {
   
   @JSImport("@react-md/menu/types/MenuItemSeparator", "MenuItemSeparator")
   @js.native
-  val MenuItemSeparator: ForwardRefExoticComponent[MenuItemSeparatorProps & RefAttributes[DividerElement]] = js.native
+  val MenuItemSeparator: ForwardRefExoticComponent[MenuItemSeparatorProps & RefAttributes[HTMLLIElement]] = js.native
   
-  /* Inlined parent @react-md/divider.@react-md/divider.DividerProps */
+  /* Inlined parent react.react.HTMLAttributes<std.HTMLLIElement> */
+  /* Inlined parent std.Pick<@react-md/divider.@react-md/divider.DividerProps, 'inset' | 'vertical'> */
   /* Inlined parent std.Pick<@react-md/divider.@react-md/divider.VerticalDividerProps, 'maxHeight'> */
   trait MenuItemSeparatorProps extends StObject {
     
@@ -112,7 +115,7 @@ object menuItemSeparatorMod {
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
@@ -121,7 +124,7 @@ object menuItemSeparatorMod {
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
@@ -172,7 +175,7 @@ object menuItemSeparatorMod {
       * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
       * @see aria-hidden @see aria-readonly.
       */
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what functions can be performed when a dragged object is released on the drop target.
@@ -187,7 +190,7 @@ object menuItemSeparatorMod {
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
@@ -199,7 +202,7 @@ object menuItemSeparatorMod {
       * Indicates an element's "grabbed" state in a drag-and-drop operation.
       * @deprecated in ARIA 1.1
       */
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
@@ -208,7 +211,7 @@ object menuItemSeparatorMod {
       * Indicates whether the element is exposed to an accessibility API.
       * @see aria-disabled.
       */
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the entered value does not conform to the format expected by the application.
@@ -238,18 +241,15 @@ object menuItemSeparatorMod {
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates that the user may select more than one item from the current selectable descendants. */
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    /**
-      * The current orientation of the separator. This is required for a11y, but
-      * will automatically be determined by the `Menu`'s orientation if omitted.
-      */
+    /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
@@ -281,7 +281,7 @@ object menuItemSeparatorMod {
       * Indicates that the element is not editable, but is otherwise operable.
       * @see aria-disabled.
       */
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
@@ -292,7 +292,7 @@ object menuItemSeparatorMod {
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     /** Defines a human-readable, author-localized description for the role of an element. */
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
@@ -319,7 +319,7 @@ object menuItemSeparatorMod {
       * Indicates the current "selected" state of various widgets.
       * @see aria-checked @see aria-pressed.
       */
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
@@ -379,7 +379,7 @@ object menuItemSeparatorMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -388,14 +388,6 @@ object menuItemSeparatorMod {
       */
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
-    /**
-      * Boolean if the divider should appear inset instead of full width. This
-      * really just applied a margin-left (or margin-right when dir="rtl").
-      *
-      * If you want to create a divider that is centered, you most likely want to
-      * use the `rmd-divider-theme-update-var` mixin instead to update the
-      * `max-size` of the divider.
-      */
     var inset: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -419,178 +411,179 @@ object menuItemSeparatorMod {
     var maxHeight: js.UndefOr[Double] = js.undefined
     
     // Media Events
-    var onAbort: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onAbort: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[DividerElement]] = js.undefined
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLLIElement]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[DividerElement]] = js.undefined
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLLIElement]] = js.undefined
     
     // Animation Events
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[DividerElement]] = js.undefined
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLLIElement]] = js.undefined
     
     // MouseEvents
-    var onAuxClick: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[DividerElement]] = js.undefined
+    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLLIElement]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[DividerElement]] = js.undefined
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLLIElement]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     // Form Events
-    var onChange: js.UndefOr[FormEventHandler[DividerElement]] = js.undefined
+    var onChange: js.UndefOr[FormEventHandler[HTMLLIElement]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onClick: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
     // Composition Events
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[DividerElement]] = js.undefined
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLLIElement]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[DividerElement]] = js.undefined
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLLIElement]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[DividerElement]] = js.undefined
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLLIElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
     // Clipboard Events
-    var onCopy: js.UndefOr[ClipboardEventHandler[DividerElement]] = js.undefined
+    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLLIElement]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[DividerElement]] = js.undefined
+    var onCut: js.UndefOr[ClipboardEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[DividerElement]] = js.undefined
+    var onDrag: js.UndefOr[DragEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[DividerElement]] = js.undefined
+    var onDragEnd: js.UndefOr[DragEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[DividerElement]] = js.undefined
+    var onDragEnter: js.UndefOr[DragEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[DividerElement]] = js.undefined
+    var onDragExit: js.UndefOr[DragEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[DividerElement]] = js.undefined
+    var onDragLeave: js.UndefOr[DragEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[DividerElement]] = js.undefined
+    var onDragOver: js.UndefOr[DragEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[DividerElement]] = js.undefined
+    var onDragStart: js.UndefOr[DragEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[DividerElement]] = js.undefined
+    var onDrop: js.UndefOr[DragEventHandler[HTMLLIElement]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onEmptied: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onEnded: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onError: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     // Focus Events
-    var onFocus: js.UndefOr[FocusEventHandler[DividerElement]] = js.undefined
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLLIElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[DividerElement]] = js.undefined
+    var onInput: js.UndefOr[FormEventHandler[HTMLLIElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[DividerElement]] = js.undefined
+    var onInvalid: js.UndefOr[FormEventHandler[HTMLLIElement]] = js.undefined
     
     // also a Media Event
     // Keyboard Events
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[DividerElement]] = js.undefined
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[DividerElement]] = js.undefined
+    /** @deprecated */
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[DividerElement]] = js.undefined
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.undefined
     
     // Image Events
-    var onLoad: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onLoad: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[DividerElement]] = js.undefined
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[DividerElement]] = js.undefined
+    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onPause: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onPlay: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onPlaying: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[DividerElement]] = js.undefined
+    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLLIElement]] = js.undefined
     
     // Pointer Events
-    var onPointerDown: js.UndefOr[PointerEventHandler[DividerElement]] = js.undefined
+    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[DividerElement]] = js.undefined
+    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[DividerElement]] = js.undefined
+    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[DividerElement]] = js.undefined
+    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[DividerElement]] = js.undefined
+    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[DividerElement]] = js.undefined
+    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLLIElement]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[DividerElement]] = js.undefined
+    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLLIElement]] = js.undefined
     
-    var onProgress: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onProgress: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onRateChange: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[DividerElement]] = js.undefined
+    var onReset: js.UndefOr[FormEventHandler[HTMLLIElement]] = js.undefined
     
     // UI Events
-    var onScroll: js.UndefOr[UIEventHandler[DividerElement]] = js.undefined
+    var onScroll: js.UndefOr[UIEventHandler[HTMLLIElement]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onSeeked: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onSeeking: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onSeeking: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     // Selection Events
-    var onSelect: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onSelect: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onStalled: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[DividerElement]] = js.undefined
+    var onSubmit: js.UndefOr[FormEventHandler[HTMLLIElement]] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onSuspend: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     // Touch Events
-    var onTouchCancel: js.UndefOr[TouchEventHandler[DividerElement]] = js.undefined
+    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLLIElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[DividerElement]] = js.undefined
+    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLLIElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[DividerElement]] = js.undefined
+    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLLIElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[DividerElement]] = js.undefined
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLLIElement]] = js.undefined
     
     // Transition Events
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[DividerElement]] = js.undefined
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLLIElement]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[DividerElement]] = js.undefined
+    var onWaiting: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     // Wheel Events
-    var onWheel: js.UndefOr[WheelEventHandler[DividerElement]] = js.undefined
+    var onWheel: js.UndefOr[WheelEventHandler[HTMLLIElement]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -607,7 +600,7 @@ object menuItemSeparatorMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -631,15 +624,6 @@ object menuItemSeparatorMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
-    /**
-      * Boolean if the divider should be vertical instead of horizontal. This will
-      * change the divider to be rendered as a `<div>` instead of an `<hr>`.
-      *
-      * Note: If your parent element of the divider does not have a static height
-      * set, you **must** manually set the height of the divider to a static
-      * non-percentage number OR use the `VerticalDivider` component instead to
-      * automagically create a valid percentage height.
-      */
     var vertical: js.UndefOr[Boolean] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -665,7 +649,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -673,7 +657,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -709,7 +693,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -721,7 +705,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -729,7 +713,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -737,7 +721,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -765,15 +749,15 @@ object menuItemSeparatorMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -797,7 +781,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -807,7 +791,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -827,7 +811,7 @@ object menuItemSeparatorMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -903,7 +887,7 @@ object menuItemSeparatorMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -921,7 +905,7 @@ object menuItemSeparatorMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -965,319 +949,319 @@ object menuItemSeparatorMod {
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setOnAbort(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      inline def setOnAnimationEnd(value: AnimationEvent[DividerElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+      inline def setOnAnimationEnd(value: AnimationEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       
       inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      inline def setOnAnimationIteration(value: AnimationEvent[DividerElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+      inline def setOnAnimationIteration(value: AnimationEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
       
       inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
       
-      inline def setOnAnimationStart(value: AnimationEvent[DividerElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+      inline def setOnAnimationStart(value: AnimationEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
       
       inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
       
-      inline def setOnAuxClick(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+      inline def setOnAuxClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      inline def setOnBeforeInput(value: FormEvent[DividerElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: FormEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[DividerElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLLIElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnCanPlay(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+      inline def setOnCanPlay(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
       
-      inline def setOnCanPlayThrough(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+      inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
       
       inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: FormEvent[DividerElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FormEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClick(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnCompositionEnd(value: CompositionEvent[DividerElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+      inline def setOnCompositionEnd(value: CompositionEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
       
       inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
       
-      inline def setOnCompositionStart(value: CompositionEvent[DividerElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+      inline def setOnCompositionStart(value: CompositionEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
       
       inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
       
-      inline def setOnCompositionUpdate(value: CompositionEvent[DividerElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+      inline def setOnCompositionUpdate(value: CompositionEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
       
       inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
       
-      inline def setOnContextMenu(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnCopy(value: ClipboardEvent[DividerElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      inline def setOnCopy(value: ClipboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      inline def setOnCut(value: ClipboardEvent[DividerElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      inline def setOnCut(value: ClipboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
       
       inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
       
-      inline def setOnDoubleClick(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
       inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      inline def setOnDrag(value: DragEvent[DividerElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: DragEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
-      inline def setOnDragEnd(value: DragEvent[DividerElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: DragEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
       inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      inline def setOnDragEnter(value: DragEvent[DividerElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      inline def setOnDragEnter(value: DragEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
       inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
-      inline def setOnDragExit(value: DragEvent[DividerElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+      inline def setOnDragExit(value: DragEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
       
       inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
       
-      inline def setOnDragLeave(value: DragEvent[DividerElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      inline def setOnDragLeave(value: DragEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
       inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      inline def setOnDragOver(value: DragEvent[DividerElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: DragEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
       inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      inline def setOnDragStart(value: DragEvent[DividerElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: DragEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
       inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      inline def setOnDrop(value: DragEvent[DividerElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+      inline def setOnDrop(value: DragEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      inline def setOnDurationChange(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+      inline def setOnDurationChange(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
       
       inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
       
-      inline def setOnEmptied(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+      inline def setOnEmptied(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
       
       inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
       
-      inline def setOnEncrypted(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+      inline def setOnEncrypted(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
       
       inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
       
-      inline def setOnEnded(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnError(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[DividerElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLLIElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: FormEvent[DividerElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: FormEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: FormEvent[DividerElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: FormEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      inline def setOnKeyDown(value: KeyboardEvent[DividerElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnKeyPress(value: KeyboardEvent[DividerElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: KeyboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
       inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      inline def setOnKeyUp(value: KeyboardEvent[DividerElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
       inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      inline def setOnLoad(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      inline def setOnLoadStart(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+      inline def setOnLoadStart(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
       
       inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      inline def setOnLoadedData(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+      inline def setOnLoadedData(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
       
       inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
       
-      inline def setOnLoadedMetadata(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+      inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
       
       inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
-      inline def setOnMouseDown(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
       inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      inline def setOnMouseEnter(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
       inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      inline def setOnMouseLeave(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      inline def setOnMouseMove(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
       inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      inline def setOnMouseOut(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+      inline def setOnMouseOut(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
       
       inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
       
-      inline def setOnMouseOver(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
       
       inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
-      inline def setOnMouseUp(value: MouseEvent[DividerElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      inline def setOnMouseUp(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setOnPaste(value: ClipboardEvent[DividerElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      inline def setOnPaste(value: ClipboardEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       
       inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
       
-      inline def setOnPause(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
       inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      inline def setOnPlay(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
       inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      inline def setOnPlaying(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+      inline def setOnPlaying(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
       
       inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
       
-      inline def setOnPointerCancel(value: PointerEvent[DividerElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+      inline def setOnPointerCancel(value: PointerEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
       
       inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
       
-      inline def setOnPointerDown(value: PointerEvent[DividerElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      inline def setOnPointerDown(value: PointerEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
       
       inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
       
-      inline def setOnPointerEnter(value: PointerEvent[DividerElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+      inline def setOnPointerEnter(value: PointerEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
       
       inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
       
-      inline def setOnPointerLeave(value: PointerEvent[DividerElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      inline def setOnPointerLeave(value: PointerEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
       
       inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
       
-      inline def setOnPointerMove(value: PointerEvent[DividerElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      inline def setOnPointerMove(value: PointerEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
       
       inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
       
-      inline def setOnPointerOut(value: PointerEvent[DividerElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      inline def setOnPointerOut(value: PointerEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
       
       inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
       
-      inline def setOnPointerOver(value: PointerEvent[DividerElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      inline def setOnPointerOver(value: PointerEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
       
       inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
       
-      inline def setOnPointerUp(value: PointerEvent[DividerElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      inline def setOnPointerUp(value: PointerEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
       
       inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
-      inline def setOnProgress(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
       inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      inline def setOnRateChange(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+      inline def setOnRateChange(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
       
       inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      inline def setOnReset(value: FormEvent[DividerElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: FormEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      inline def setOnScroll(value: UIEvent[DividerElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[HTMLLIElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSeeked(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+      inline def setOnSeeked(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
       
       inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
-      inline def setOnSeeking(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+      inline def setOnSeeking(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
       
       inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
-      inline def setOnSelect(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setOnStalled(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+      inline def setOnStalled(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnSubmit(value: FormEvent[DividerElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: FormEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      inline def setOnSuspend(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+      inline def setOnSuspend(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
       
       inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      inline def setOnTimeUpdate(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+      inline def setOnTimeUpdate(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
       
       inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      inline def setOnTouchCancel(value: TouchEvent[DividerElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+      inline def setOnTouchCancel(value: TouchEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
       
       inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
       
-      inline def setOnTouchEnd(value: TouchEvent[DividerElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: TouchEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
       inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      inline def setOnTouchMove(value: TouchEvent[DividerElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
       inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      inline def setOnTouchStart(value: TouchEvent[DividerElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
       inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      inline def setOnTransitionEnd(value: TransitionEvent[DividerElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: TransitionEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
       inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      inline def setOnVolumeChange(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+      inline def setOnVolumeChange(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
       
       inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
       
-      inline def setOnWaiting(value: SyntheticEvent[DividerElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+      inline def setOnWaiting(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
       
       inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
       
-      inline def setOnWheel(value: WheelEvent[DividerElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: WheelEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
@@ -1305,7 +1289,7 @@ object menuItemSeparatorMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       

@@ -53,14 +53,14 @@ object PropertyPool {
     getDefaults: () => XPropertySet,
     getName: () => String,
     getParentStyle: () => String,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
-    getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
+    getPropertyValue: String => Any,
+    getPropertyValues: SeqEquiv[String] => SafeArray[Any],
     isInUse: () => Boolean,
     isUserDefined: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertiesChangeListener: XPropertiesChangeListener => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
@@ -69,8 +69,8 @@ object PropertyPool {
     setName: String => Unit,
     setParentStyle: String => Unit,
     setPropertiesToDefault: SeqEquiv[String] => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
+    setPropertyValue: (String, Any) => Unit,
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[Any]) => Unit
   ): PropertyPool = {
     val __obj = js.Dynamic.literal(Defaults = Defaults.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], FollowStyle = FollowStyle.asInstanceOf[js.Any], Hidden = Hidden.asInstanceOf[js.Any], IsAutoUpdate = IsAutoUpdate.asInstanceOf[js.Any], IsPhysical = IsPhysical.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ParaStyleConditions = ParaStyleConditions.asInstanceOf[js.Any], ParentStyle = ParentStyle.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], StyleInteropGrabBag = StyleInteropGrabBag.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getDefaults = js.Any.fromFunction0(getDefaults), getName = js.Any.fromFunction0(getName), getParentStyle = js.Any.fromFunction0(getParentStyle), getPropertyDefaults = js.Any.fromFunction1(getPropertyDefaults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), isInUse = js.Any.fromFunction0(isInUse), isUserDefined = js.Any.fromFunction0(isUserDefined), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setAllPropertiesToDefault = js.Any.fromFunction0(setAllPropertiesToDefault), setName = js.Any.fromFunction1(setName), setParentStyle = js.Any.fromFunction1(setParentStyle), setPropertiesToDefault = js.Any.fromFunction1(setPropertiesToDefault), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[PropertyPool]

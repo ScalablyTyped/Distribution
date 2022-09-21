@@ -1,6 +1,5 @@
 package typings.tuyaPanelKit.mod
 
-import typings.react.mod.ReactNode
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,14 +9,52 @@ trait CircleViewProps
   extends StObject
      with ViewProps {
   
+  /**
+    * @language zh-CN
+    * @description 圆形视图边框的背景色
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description The background color of the circular view border
+    * @defaultValue undefined
+    */
   var borderColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description The size of the circular view border
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description The size of the circular view border
+    * @defaultValue undefined
+    */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 圆形视图的背景色
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description The background color of the circular view
+    * @defaultValue undefined
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 圆形视图的半径
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Radius of circular view
+    * @defaultValue undefined
+    */
   var radius: Double
 }
 object CircleViewProps {
@@ -36,10 +73,6 @@ object CircleViewProps {
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
-    
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-    
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

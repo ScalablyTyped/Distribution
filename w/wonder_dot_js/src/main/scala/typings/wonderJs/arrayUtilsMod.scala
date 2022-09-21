@@ -9,7 +9,7 @@ object arrayUtilsMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArrayUtils$ * / any */ @JSImport("wonder.js/dist/es2015/utils/ArrayUtils", "ArrayUtils")
   @js.native
-  class ArrayUtils () extends StObject
+  open class ArrayUtils () extends StObject
   /* static members */
   object ArrayUtils {
     
@@ -17,8 +17,8 @@ object arrayUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def contain(arr: js.Array[js.Any], item: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contain")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contain(arr: js.Array[Any], item: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contain")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def hasRepeatItems(arr: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRepeatItems")(arr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasRepeatItems(arr: js.Array[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRepeatItems")(arr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

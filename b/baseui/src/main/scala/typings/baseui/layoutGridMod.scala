@@ -1,421 +1,125 @@
 package typings.baseui
 
-import typings.react.mod.FunctionComponent
-import typings.react.mod.ReactNode
-import typings.styletronReact.mod.StyletronComponent
+import org.scalablytyped.runtime.Shortcut
+import typings.baseui.anon.Columns
+import typings.baseui.baseuiStrings.`flex-end`
+import typings.baseui.baseuiStrings.`flex-start`
+import typings.baseui.baseuiStrings.default_
+import typings.baseui.baseuiStrings.div
+import typings.baseui.layoutGridTypesMod.CSSLengthUnit
+import typings.baseui.layoutGridTypesMod.CellProps
+import typings.baseui.layoutGridTypesMod.GridProps
+import typings.baseui.layoutGridTypesMod.StyledCellProps
+import typings.baseui.layoutGridTypesMod.StyledGridProps
+import typings.react.mod.global.JSX.Element
+import typings.styletronReact.typesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutGridMod {
   
+  @JSImport("baseui/layout-grid", JSImport.Namespace)
   @js.native
-  sealed trait ALIGNMENT extends StObject
-  @JSImport("baseui/layout-grid", "ALIGNMENT")
-  @js.native
-  object ALIGNMENT extends StObject {
+  val ^ : js.Any = js.native
+  
+  /* Inlined std.Readonly<{ readonly start :'flex-start',  readonly center :'center',  readonly end :'flex-end'}> */
+  object ALIGNMENT {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[ALIGNMENT & String] = js.native
-    
+    @JSImport("baseui/layout-grid", "ALIGNMENT.center")
     @js.native
-    sealed trait center
-      extends StObject
-         with ALIGNMENT
-    /* "center" */ val center: typings.baseui.layoutGridMod.ALIGNMENT.center & String = js.native
+    val center: typings.baseui.baseuiStrings.center = js.native
     
+    @JSImport("baseui/layout-grid", "ALIGNMENT.end")
     @js.native
-    sealed trait end
-      extends StObject
-         with ALIGNMENT
-    /* "flex-end" */ val end: typings.baseui.layoutGridMod.ALIGNMENT.end & String = js.native
+    val end: `flex-end` = js.native
     
+    @JSImport("baseui/layout-grid", "ALIGNMENT.start")
     @js.native
-    sealed trait start
-      extends StObject
-         with ALIGNMENT
-    /* "flex-start" */ val start: typings.baseui.layoutGridMod.ALIGNMENT.start & String = js.native
+    val start: `flex-start` = js.native
   }
   
-  @js.native
-  sealed trait BEHAVIOR extends StObject
-  @JSImport("baseui/layout-grid", "BEHAVIOR")
-  @js.native
-  object BEHAVIOR extends StObject {
+  /* Inlined std.Readonly<{ readonly fluid :'fluid',  readonly fixed :'fixed'}> */
+  object BEHAVIOR {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[BEHAVIOR & String] = js.native
-    
+    @JSImport("baseui/layout-grid", "BEHAVIOR.fixed")
     @js.native
-    sealed trait fixed
-      extends StObject
-         with BEHAVIOR
-    /* "fixed" */ val fixed: typings.baseui.layoutGridMod.BEHAVIOR.fixed & String = js.native
+    val fixed: typings.baseui.baseuiStrings.fixed = js.native
     
+    @JSImport("baseui/layout-grid", "BEHAVIOR.fluid")
     @js.native
-    sealed trait fluid
-      extends StObject
-         with BEHAVIOR
-    /* "fluid" */ val fluid: typings.baseui.layoutGridMod.BEHAVIOR.fluid & String = js.native
+    val fluid: typings.baseui.baseuiStrings.fluid = js.native
   }
   
-  @JSImport("baseui/layout-grid", "Cell")
-  @js.native
-  val Cell: FunctionComponent[CellProps] = js.native
+  inline def Cell(hasAlignChildrenGridColumnsGridGapsGridGuttersGridUnitOrderSkipSpanOverrides: CellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(hasAlignChildrenGridColumnsGridGapsGridGuttersGridUnitOrderSkipSpanOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("baseui/layout-grid", "Grid")
-  @js.native
-  val Grid: FunctionComponent[GridProps] = js.native
+  inline def Grid(
+    hasAlignBehaviorChildrenGridColumnsGridGapsGridGuttersGridMarginsGridMaxWidthGridStyleGridUnitOverrides: GridProps
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(hasAlignBehaviorChildrenGridColumnsGridGapsGridGuttersGridMarginsGridMaxWidthGridStyleGridUnitOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  /* Inlined std.Readonly<{ readonly default :'default',  readonly compact :'compact'}> */
+  object STYLE extends Shortcut {
+    
+    @JSImport("baseui/layout-grid", "STYLE.default")
+    @js.native
+    val default: default_ = js.native
+    
+    @JSImport("baseui/layout-grid", "STYLE.compact")
+    @js.native
+    val compact: typings.baseui.baseuiStrings.compact = js.native
+    
+    type _To = default_
+    
+    /* This means you don't have to write `default`, but can instead just say `STYLE.foo` */
+    override def _to: default_ = default
+  }
+  
+  /* Inlined std.Readonly<{  default :any,   compact :{  columns :std.Array<number>,   gutters :std.Array<number>,   margins :std.Array<number>,   gaps :number,   unit :string,   maxWidth :number}}> */
+  object STYLE_VALUES extends Shortcut {
+    
+    @JSImport("baseui/layout-grid", "STYLE_VALUES.default")
+    @js.native
+    val default: Any = js.native
+    
+    @JSImport("baseui/layout-grid", "STYLE_VALUES.compact")
+    @js.native
+    val compact: Columns = js.native
+    
+    type _To = Any
+    
+    /* This means you don't have to write `default`, but can instead just say `STYLE_VALUES.foo` */
+    override def _to: Any = default
+  }
   
   @JSImport("baseui/layout-grid", "StyledCell")
   @js.native
-  val StyledCell: StyletronComponent[StyledCellProps] = js.native
+  val StyledCell: StyletronComponent[div, StyledCellProps] = js.native
   
   @JSImport("baseui/layout-grid", "StyledGrid")
   @js.native
-  val StyledGrid: StyletronComponent[StyledGridProps] = js.native
+  val StyledGrid: StyletronComponent[div, StyledGridProps] = js.native
   
-  trait CellOverrides extends StObject {
-    
-    var Cell: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-  }
-  object CellOverrides {
-    
-    inline def apply(): CellOverrides = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CellOverrides]
-    }
-    
-    extension [Self <: CellOverrides](x: Self) {
-      
-      inline def setCell(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
-      
-      inline def setCellUndefined: Self = StObject.set(x, "Cell", js.undefined)
-    }
-  }
+  @JSImport("baseui/layout-grid", "Unstable_Cell")
+  @js.native
+  val UnstableCell: js.Function1[
+    /* hasAlignChildrenGridColumnsGridGapsGridGuttersGridUnitOrderSkipSpanOverrides */ CellProps, 
+    Element
+  ] = js.native
   
-  trait CellProps extends StObject {
-    
-    var align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var order: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    var overrides: js.UndefOr[CellOverrides] = js.undefined
-    
-    var skip: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    var span: js.UndefOr[Responsive[Double]] = js.undefined
-  }
-  object CellProps {
-    
-    inline def apply(): CellProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CellProps]
-    }
-    
-    extension [Self <: CellProps](x: Self) {
-      
-      inline def setAlign(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
-      
-      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
-      
-      inline def setAlignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "align", js.Array(value :_*))
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setOrder(value: Responsive[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
-      
-      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
-      
-      inline def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value :_*))
-      
-      inline def setOverrides(value: CellOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      inline def setSkip(value: Responsive[Double]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
-      
-      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
-      
-      inline def setSkipVarargs(value: Double*): Self = StObject.set(x, "skip", js.Array(value :_*))
-      
-      inline def setSpan(value: Responsive[Double]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
-      
-      inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
-      
-      inline def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value :_*))
-    }
-  }
+  @JSImport("baseui/layout-grid", "Unstable_Grid")
+  @js.native
+  val UnstableGrid: js.Function1[
+    /* hasAlignBehaviorChildrenGridColumnsGridGapsGridGuttersGridMarginsGridMaxWidthGridStyleGridUnitOverrides */ GridProps, 
+    Element
+  ] = js.native
   
-  trait GridOverrides extends StObject {
-    
-    var Grid: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-  }
-  object GridOverrides {
-    
-    inline def apply(): GridOverrides = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GridOverrides]
-    }
-    
-    extension [Self <: GridOverrides](x: Self) {
-      
-      inline def setGrid(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Grid", value.asInstanceOf[js.Any])
-      
-      inline def setGridUndefined: Self = StObject.set(x, "Grid", js.undefined)
-    }
-  }
+  @JSImport("baseui/layout-grid", "Unstable_StyledCell")
+  @js.native
+  val UnstableStyledCell: StyletronComponent[div, StyledCellProps] = js.native
   
-  trait GridProps extends StObject {
-    
-    var align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
-    
-    var behavior: js.UndefOr[BEHAVIOR] = js.undefined
-    
-    var children: ReactNode
-    
-    var gridColumns: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    var gridGaps: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    var gridGutters: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    var gridMargins: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    var gridMaxWidth: js.UndefOr[Double] = js.undefined
-    
-    var gridUnit: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ] = js.undefined
-    
-    var overrides: js.UndefOr[GridOverrides] = js.undefined
-  }
-  object GridProps {
-    
-    inline def apply(): GridProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GridProps]
-    }
-    
-    extension [Self <: GridProps](x: Self) {
-      
-      inline def setAlign(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
-      
-      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
-      
-      inline def setAlignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "align", js.Array(value :_*))
-      
-      inline def setBehavior(value: BEHAVIOR): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
-      
-      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setGridColumns(value: Responsive[Double]): Self = StObject.set(x, "gridColumns", value.asInstanceOf[js.Any])
-      
-      inline def setGridColumnsUndefined: Self = StObject.set(x, "gridColumns", js.undefined)
-      
-      inline def setGridColumnsVarargs(value: Double*): Self = StObject.set(x, "gridColumns", js.Array(value :_*))
-      
-      inline def setGridGaps(value: Responsive[Double]): Self = StObject.set(x, "gridGaps", value.asInstanceOf[js.Any])
-      
-      inline def setGridGapsUndefined: Self = StObject.set(x, "gridGaps", js.undefined)
-      
-      inline def setGridGapsVarargs(value: Double*): Self = StObject.set(x, "gridGaps", js.Array(value :_*))
-      
-      inline def setGridGutters(value: Responsive[Double]): Self = StObject.set(x, "gridGutters", value.asInstanceOf[js.Any])
-      
-      inline def setGridGuttersUndefined: Self = StObject.set(x, "gridGutters", js.undefined)
-      
-      inline def setGridGuttersVarargs(value: Double*): Self = StObject.set(x, "gridGutters", js.Array(value :_*))
-      
-      inline def setGridMargins(value: Responsive[Double]): Self = StObject.set(x, "gridMargins", value.asInstanceOf[js.Any])
-      
-      inline def setGridMarginsUndefined: Self = StObject.set(x, "gridMargins", js.undefined)
-      
-      inline def setGridMarginsVarargs(value: Double*): Self = StObject.set(x, "gridMargins", js.Array(value :_*))
-      
-      inline def setGridMaxWidth(value: Double): Self = StObject.set(x, "gridMaxWidth", value.asInstanceOf[js.Any])
-      
-      inline def setGridMaxWidthUndefined: Self = StObject.set(x, "gridMaxWidth", js.undefined)
-      
-      inline def setGridUnit(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ): Self = StObject.set(x, "gridUnit", value.asInstanceOf[js.Any])
-      
-      inline def setGridUnitUndefined: Self = StObject.set(x, "gridUnit", js.undefined)
-      
-      inline def setOverrides(value: GridOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-    }
-  }
+  @JSImport("baseui/layout-grid", "Unstable_StyledGrid")
+  @js.native
+  val UnstableStyledGrid: StyletronComponent[div, StyledGridProps] = js.native
   
-  type Responsive[T] = T | js.Array[T]
-  
-  trait StyledCellProps extends StObject {
-    
-    @JSName("$align")
-    var $align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
-    
-    @JSName("$gridColumns")
-    var $gridColumns: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    @JSName("$gridGaps")
-    var $gridGaps: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    @JSName("$gridGutters")
-    var $gridGutters: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    @JSName("$gridUnit")
-    var $gridUnit: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ] = js.undefined
-    
-    @JSName("$order")
-    var $order: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    @JSName("$skip")
-    var $skip: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    @JSName("$span")
-    var $span: js.UndefOr[Responsive[Double]] = js.undefined
-  }
-  object StyledCellProps {
-    
-    inline def apply(): StyledCellProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StyledCellProps]
-    }
-    
-    extension [Self <: StyledCellProps](x: Self) {
-      
-      inline def set$align(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
-      
-      inline def set$alignUndefined: Self = StObject.set(x, "$align", js.undefined)
-      
-      inline def set$alignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "$align", js.Array(value :_*))
-      
-      inline def set$gridColumns(value: Responsive[Double]): Self = StObject.set(x, "$gridColumns", value.asInstanceOf[js.Any])
-      
-      inline def set$gridColumnsUndefined: Self = StObject.set(x, "$gridColumns", js.undefined)
-      
-      inline def set$gridColumnsVarargs(value: Double*): Self = StObject.set(x, "$gridColumns", js.Array(value :_*))
-      
-      inline def set$gridGaps(value: Responsive[Double]): Self = StObject.set(x, "$gridGaps", value.asInstanceOf[js.Any])
-      
-      inline def set$gridGapsUndefined: Self = StObject.set(x, "$gridGaps", js.undefined)
-      
-      inline def set$gridGapsVarargs(value: Double*): Self = StObject.set(x, "$gridGaps", js.Array(value :_*))
-      
-      inline def set$gridGutters(value: Responsive[Double]): Self = StObject.set(x, "$gridGutters", value.asInstanceOf[js.Any])
-      
-      inline def set$gridGuttersUndefined: Self = StObject.set(x, "$gridGutters", js.undefined)
-      
-      inline def set$gridGuttersVarargs(value: Double*): Self = StObject.set(x, "$gridGutters", js.Array(value :_*))
-      
-      inline def set$gridUnit(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ): Self = StObject.set(x, "$gridUnit", value.asInstanceOf[js.Any])
-      
-      inline def set$gridUnitUndefined: Self = StObject.set(x, "$gridUnit", js.undefined)
-      
-      inline def set$order(value: Responsive[Double]): Self = StObject.set(x, "$order", value.asInstanceOf[js.Any])
-      
-      inline def set$orderUndefined: Self = StObject.set(x, "$order", js.undefined)
-      
-      inline def set$orderVarargs(value: Double*): Self = StObject.set(x, "$order", js.Array(value :_*))
-      
-      inline def set$skip(value: Responsive[Double]): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
-      
-      inline def set$skipUndefined: Self = StObject.set(x, "$skip", js.undefined)
-      
-      inline def set$skipVarargs(value: Double*): Self = StObject.set(x, "$skip", js.Array(value :_*))
-      
-      inline def set$span(value: Responsive[Double]): Self = StObject.set(x, "$span", value.asInstanceOf[js.Any])
-      
-      inline def set$spanUndefined: Self = StObject.set(x, "$span", js.undefined)
-      
-      inline def set$spanVarargs(value: Double*): Self = StObject.set(x, "$span", js.Array(value :_*))
-    }
-  }
-  
-  trait StyledGridProps extends StObject {
-    
-    @JSName("$align")
-    var $align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
-    
-    @JSName("$behavior")
-    var $behavior: js.UndefOr[BEHAVIOR] = js.undefined
-    
-    @JSName("$gridGutters")
-    var $gridGutters: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    @JSName("$gridMargins")
-    var $gridMargins: js.UndefOr[Responsive[Double]] = js.undefined
-    
-    @JSName("$gridMaxWidth")
-    var $gridMaxWidth: js.UndefOr[Double] = js.undefined
-    
-    @JSName("$gridUnit")
-    var $gridUnit: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ] = js.undefined
-  }
-  object StyledGridProps {
-    
-    inline def apply(): StyledGridProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StyledGridProps]
-    }
-    
-    extension [Self <: StyledGridProps](x: Self) {
-      
-      inline def set$align(value: Responsive[ALIGNMENT]): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
-      
-      inline def set$alignUndefined: Self = StObject.set(x, "$align", js.undefined)
-      
-      inline def set$alignVarargs(value: ALIGNMENT*): Self = StObject.set(x, "$align", js.Array(value :_*))
-      
-      inline def set$behavior(value: BEHAVIOR): Self = StObject.set(x, "$behavior", value.asInstanceOf[js.Any])
-      
-      inline def set$behaviorUndefined: Self = StObject.set(x, "$behavior", js.undefined)
-      
-      inline def set$gridGutters(value: Responsive[Double]): Self = StObject.set(x, "$gridGutters", value.asInstanceOf[js.Any])
-      
-      inline def set$gridGuttersUndefined: Self = StObject.set(x, "$gridGutters", js.undefined)
-      
-      inline def set$gridGuttersVarargs(value: Double*): Self = StObject.set(x, "$gridGutters", js.Array(value :_*))
-      
-      inline def set$gridMargins(value: Responsive[Double]): Self = StObject.set(x, "$gridMargins", value.asInstanceOf[js.Any])
-      
-      inline def set$gridMarginsUndefined: Self = StObject.set(x, "$gridMargins", js.undefined)
-      
-      inline def set$gridMarginsVarargs(value: Double*): Self = StObject.set(x, "$gridMargins", js.Array(value :_*))
-      
-      inline def set$gridMaxWidth(value: Double): Self = StObject.set(x, "$gridMaxWidth", value.asInstanceOf[js.Any])
-      
-      inline def set$gridMaxWidthUndefined: Self = StObject.set(x, "$gridMaxWidth", js.undefined)
-      
-      inline def set$gridUnit(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ): Self = StObject.set(x, "$gridUnit", value.asInstanceOf[js.Any])
-      
-      inline def set$gridUnitUndefined: Self = StObject.set(x, "$gridUnit", js.undefined)
-    }
-  }
+  type CSSLengthUnitT = CSSLengthUnit
 }

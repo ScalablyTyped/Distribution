@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Data
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var data: js.Object
   
   var group: String
   
-  var groupData: js.Array[js.Any]
+  var groupData: js.Array[Any]
   
   var id: String
   
@@ -28,7 +28,7 @@ object Data {
   inline def apply(
     data: js.Object,
     group: String,
-    groupData: js.Array[js.Any],
+    groupData: js.Array[Any],
     id: String,
     itemData: js.Object,
     series: String,
@@ -44,9 +44,9 @@ object Data {
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    inline def setGroupData(value: js.Array[js.Any]): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
+    inline def setGroupData(value: js.Array[Any]): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
     
-    inline def setGroupDataVarargs(value: js.Any*): Self = StObject.set(x, "groupData", js.Array(value :_*))
+    inline def setGroupDataVarargs(value: Any*): Self = StObject.set(x, "groupData", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

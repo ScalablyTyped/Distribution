@@ -7,11 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SameOrigin
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginAllowPopups
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.RestrictProperties
   - typings.devtoolsProtocol.devtoolsProtocolStrings.UnsafeNone
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginPlusCoep
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.RestrictPropertiesPlusCoep
 */
 trait CrossOriginOpenerPolicyValue extends StObject
 object CrossOriginOpenerPolicyValue {
+  
+  inline def RestrictProperties: typings.devtoolsProtocol.devtoolsProtocolStrings.RestrictProperties = "RestrictProperties".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RestrictProperties]
+  
+  inline def RestrictPropertiesPlusCoep: typings.devtoolsProtocol.devtoolsProtocolStrings.RestrictPropertiesPlusCoep = "RestrictPropertiesPlusCoep".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RestrictPropertiesPlusCoep]
   
   inline def SameOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.SameOrigin = "SameOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameOrigin]
   

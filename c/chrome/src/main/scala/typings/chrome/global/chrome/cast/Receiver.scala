@@ -6,15 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("chrome.cast.Receiver")
 @js.native
-class Receiver protected ()
+open class Receiver protected ()
   extends StObject
      with typings.chrome.chrome.cast.Receiver {
   /**
-    * @param {string} label
-    * @param {string} friendlyName
-    * @param {Array<chrome.cast.Capability>=} opt_capabilities
-    * @param {chrome.cast.Volume=} opt_volume
-    * @constructor
+    * @param label
+    * @param friendlyName
+    * @param opt_capabilities
+    * @param opt_volume
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Receiver
     */
   def this(label: String, friendlyName: String) = this()

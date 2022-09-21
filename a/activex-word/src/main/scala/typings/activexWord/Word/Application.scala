@@ -78,13 +78,13 @@ trait Application extends StObject {
   val BuildFull: String = js.native
   
   def BuildKeyCode(Arg1: WdKey): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: Unit, Arg4: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: js.Any, Arg4: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Unit, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Any, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Unit, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Any, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Unit, Arg4: Any): Double = js.native
   
   def COMAddIns(Index: String): COMAddIn = js.native
   def COMAddIns(Index: Double): COMAddIn = js.native
@@ -107,18 +107,18 @@ trait Application extends StObject {
   
   def CheckSpelling(
     Word: String,
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    MainDictionary: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    MainDictionary: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): Boolean = js.native
   
   def CleanString(String: String): String = js.native
@@ -167,7 +167,7 @@ trait Application extends StObject {
   
   val CustomDictionaries: Dictionaries = js.native
   
-  var CustomizationContext: js.Any = js.native
+  var CustomizationContext: Any = js.native
   
   def DDEExecute(Channel: Double, Command: String): Unit = js.native
   
@@ -191,7 +191,7 @@ trait Application extends StObject {
   
   val Dialogs: typings.activexWord.Word.Dialogs = js.native
   
-  def DiscussionSupport(Range: js.Any, cid: js.Any, piCSE: js.Any): Unit = js.native
+  def DiscussionSupport(Range: Any, cid: Any, piCSE: Any): Unit = js.native
   
   var DisplayAlerts: WdAlertLevel = js.native
   
@@ -234,40 +234,40 @@ trait Application extends StObject {
   var FileValidation: MsoFileValidationMode = js.native
   
   def FindKey(KeyCode: Double): KeyBinding = js.native
-  def FindKey(KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native
+  def FindKey(KeyCode: Double, KeyCode2: Any): KeyBinding = js.native
   
   val FocusInMailHeader: Boolean = js.native
   
   val FontNames: typings.activexWord.Word.FontNames = js.native
   
   def GetAddress(
-    Name: js.UndefOr[js.Any],
-    AddressProperties: js.UndefOr[js.Any],
-    UseAutoText: js.UndefOr[js.Any],
-    DisplaySelectDialog: js.UndefOr[js.Any],
-    SelectDialog: js.UndefOr[js.Any],
-    CheckNamesDialog: js.UndefOr[js.Any],
-    RecentAddressesChoice: js.UndefOr[js.Any],
-    UpdateRecentAddresses: js.UndefOr[js.Any]
+    Name: js.UndefOr[Any],
+    AddressProperties: js.UndefOr[Any],
+    UseAutoText: js.UndefOr[Any],
+    DisplaySelectDialog: js.UndefOr[Any],
+    SelectDialog: js.UndefOr[Any],
+    CheckNamesDialog: js.UndefOr[Any],
+    RecentAddressesChoice: js.UndefOr[Any],
+    UpdateRecentAddresses: js.UndefOr[Any]
   ): String = js.native
   
   def GetDefaultTheme(DocumentType: WdDocumentMedium): String = js.native
   
   def GetSpellingSuggestions(
     Word: String,
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    MainDictionary: js.UndefOr[js.Any],
-    SuggestionMode: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    MainDictionary: js.UndefOr[Any],
+    SuggestionMode: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): SpellingSuggestions = js.native
   
   def GoBack(): Unit = js.native
@@ -278,22 +278,22 @@ trait Application extends StObject {
   
   var Height: Double = js.native
   
-  def Help(HelpType: js.Any): Unit = js.native
+  def Help(HelpType: Any): Unit = js.native
   
   def HelpTool(): Unit = js.native
   
   def InchesToPoints(Inches: Double): Double = js.native
   
-  def International(Index: WdInternationalIndex): js.Any = js.native
+  def International(Index: WdInternationalIndex): Any = js.native
   
-  def IsObjectValid(Object: js.Any): Boolean = js.native
+  def IsObjectValid(Object: Any): Boolean = js.native
   
   val IsSandboxed: Boolean = js.native
   
   val KeyBindings: typings.activexWord.Word.KeyBindings = js.native
   
   def KeyString(KeyCode: Double): String = js.native
-  def KeyString(KeyCode: Double, KeyCode2: js.Any): String = js.native
+  def KeyString(KeyCode: Double, KeyCode2: Any): String = js.native
   
   /** @param number [LangId=0] */
   def Keyboard(): Double = js.native
@@ -304,7 +304,7 @@ trait Application extends StObject {
   def KeyboardLatin(): Unit = js.native
   
   def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String): typings.activexWord.Word.KeysBoundTo = js.native
-  def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String, CommandParameter: js.Any): typings.activexWord.Word.KeysBoundTo = js.native
+  def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String, CommandParameter: Any): typings.activexWord.Word.KeysBoundTo = js.native
   
   val LandscapeFontNames: typings.activexWord.Word.FontNames = js.native
   
@@ -328,7 +328,7 @@ trait Application extends StObject {
   
   val MAPIAvailable: Boolean = js.native
   
-  val MacroContainer: js.Any = js.native
+  val MacroContainer: Any = js.native
   
   val MailMessage: typings.activexWord.Word.MailMessage = js.native
   
@@ -378,41 +378,13 @@ trait Application extends StObject {
   def MillimetersToPoints(Millimeters: Double): Double = js.native
   
   def MountVolume(Zone: String, Server: String, Volume: String): Double = js.native
-  def MountVolume(Zone: String, Server: String, Volume: String, User: js.Any): Double = js.native
-  def MountVolume(Zone: String, Server: String, Volume: String, User: js.Any, UserPassword: js.Any): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: js.Any,
-    UserPassword: js.Any,
-    VolumePassword: js.Any
-  ): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: js.Any,
-    UserPassword: Unit,
-    VolumePassword: js.Any
-  ): Double = js.native
-  def MountVolume(Zone: String, Server: String, Volume: String, User: Unit, UserPassword: js.Any): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: Unit,
-    UserPassword: js.Any,
-    VolumePassword: js.Any
-  ): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: Unit,
-    UserPassword: Unit,
-    VolumePassword: js.Any
-  ): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Any, UserPassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Any, UserPassword: Any, VolumePassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Any, UserPassword: Unit, VolumePassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Unit, UserPassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Unit, UserPassword: Any, VolumePassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Unit, UserPassword: Unit, VolumePassword: Any): Double = js.native
   
   val MouseAvailable: Boolean = js.native
   
@@ -432,8 +404,8 @@ trait Application extends StObject {
   
   val OMathAutoCorrect: typings.activexWord.Word.OMathAutoCorrect = js.native
   
-  def OnTime(When: js.Any, Name: String): Unit = js.native
-  def OnTime(When: js.Any, Name: String, Tolerance: js.Any): Unit = js.native
+  def OnTime(When: Any, Name: String): Unit = js.native
+  def OnTime(When: Any, Name: String, Tolerance: Any): Unit = js.native
   
   var OpenAttachmentsInFullScreen: Boolean = js.native
   
@@ -445,7 +417,7 @@ trait Application extends StObject {
   
   def OrganizerRename(Source: String, Name: String, NewName: String, Object: WdOrganizerObject): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Path: String = js.native
   
@@ -456,7 +428,7 @@ trait Application extends StObject {
   val PickerDialog: typings.activexOffice.Office.PickerDialog = js.native
   
   def PixelsToPoints(Pixels: Double): Double = js.native
-  def PixelsToPoints(Pixels: Double, fVertical: js.Any): Double = js.native
+  def PixelsToPoints(Pixels: Double, fVertical: Any): Double = js.native
   
   def PointsToCentimeters(Points: Double): Double = js.native
   
@@ -469,70 +441,70 @@ trait Application extends StObject {
   def PointsToPicas(Points: Double): Double = js.native
   
   def PointsToPixels(Points: Double): Double = js.native
-  def PointsToPixels(Points: Double, fVertical: js.Any): Double = js.native
+  def PointsToPixels(Points: Double, fVertical: Any): Double = js.native
   
   val PortraitFontNames: typings.activexWord.Word.FontNames = js.native
   
   def PrintOut(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    FileName: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any],
-    PrintZoomColumn: js.UndefOr[js.Any],
-    PrintZoomRow: js.UndefOr[js.Any],
-    PrintZoomPaperWidth: js.UndefOr[js.Any],
-    PrintZoomPaperHeight: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    FileName: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any],
+    PrintZoomColumn: js.UndefOr[Any],
+    PrintZoomRow: js.UndefOr[Any],
+    PrintZoomPaperWidth: js.UndefOr[Any],
+    PrintZoomPaperHeight: js.UndefOr[Any]
   ): Unit = js.native
   
   def PrintOut2000(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    FileName: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any],
-    PrintZoomColumn: js.UndefOr[js.Any],
-    PrintZoomRow: js.UndefOr[js.Any],
-    PrintZoomPaperWidth: js.UndefOr[js.Any],
-    PrintZoomPaperHeight: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    FileName: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any],
+    PrintZoomColumn: js.UndefOr[Any],
+    PrintZoomRow: js.UndefOr[Any],
+    PrintZoomPaperWidth: js.UndefOr[Any],
+    PrintZoomPaperHeight: js.UndefOr[Any]
   ): Unit = js.native
   
   def PrintOutOld(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    FileName: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    FileName: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any]
   ): Unit = js.native
   
   var PrintPreview: Boolean = js.native
@@ -544,18 +516,18 @@ trait Application extends StObject {
   def PutFocusInMailHeader(): Unit = js.native
   
   def Quit(): Unit = js.native
-  def Quit(SaveChanges: js.Any): Unit = js.native
-  def Quit(SaveChanges: js.Any, OriginalFormat: js.Any): Unit = js.native
-  def Quit(SaveChanges: js.Any, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
-  def Quit(SaveChanges: js.Any, OriginalFormat: Unit, RouteDocument: js.Any): Unit = js.native
-  def Quit(SaveChanges: Unit, OriginalFormat: js.Any): Unit = js.native
-  def Quit(SaveChanges: Unit, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
-  def Quit(SaveChanges: Unit, OriginalFormat: Unit, RouteDocument: js.Any): Unit = js.native
+  def Quit(SaveChanges: Any): Unit = js.native
+  def Quit(SaveChanges: Any, OriginalFormat: Any): Unit = js.native
+  def Quit(SaveChanges: Any, OriginalFormat: Any, RouteDocument: Any): Unit = js.native
+  def Quit(SaveChanges: Any, OriginalFormat: Unit, RouteDocument: Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: Any, RouteDocument: Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: Unit, RouteDocument: Any): Unit = js.native
   
   val RecentFiles: typings.activexWord.Word.RecentFiles = js.native
   
   def Repeat(): Boolean = js.native
-  def Repeat(Times: js.Any): Boolean = js.native
+  def Repeat(Times: Any): Boolean = js.native
   
   def ResetIgnoreAll(): Unit = js.native
   
@@ -565,37 +537,37 @@ trait Application extends StObject {
   
   def Run(
     MacroName: String,
-    varg1: js.UndefOr[js.Any],
-    varg2: js.UndefOr[js.Any],
-    varg3: js.UndefOr[js.Any],
-    varg4: js.UndefOr[js.Any],
-    varg5: js.UndefOr[js.Any],
-    varg6: js.UndefOr[js.Any],
-    varg7: js.UndefOr[js.Any],
-    varg8: js.UndefOr[js.Any],
-    varg9: js.UndefOr[js.Any],
-    varg10: js.UndefOr[js.Any],
-    varg11: js.UndefOr[js.Any],
-    varg12: js.UndefOr[js.Any],
-    varg13: js.UndefOr[js.Any],
-    varg14: js.UndefOr[js.Any],
-    varg15: js.UndefOr[js.Any],
-    varg16: js.UndefOr[js.Any],
-    varg17: js.UndefOr[js.Any],
-    varg18: js.UndefOr[js.Any],
-    varg19: js.UndefOr[js.Any],
-    varg20: js.UndefOr[js.Any],
-    varg21: js.UndefOr[js.Any],
-    varg22: js.UndefOr[js.Any],
-    varg23: js.UndefOr[js.Any],
-    varg24: js.UndefOr[js.Any],
-    varg25: js.UndefOr[js.Any],
-    varg26: js.UndefOr[js.Any],
-    varg27: js.UndefOr[js.Any],
-    varg28: js.UndefOr[js.Any],
-    varg29: js.UndefOr[js.Any],
-    varg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    varg1: js.UndefOr[Any],
+    varg2: js.UndefOr[Any],
+    varg3: js.UndefOr[Any],
+    varg4: js.UndefOr[Any],
+    varg5: js.UndefOr[Any],
+    varg6: js.UndefOr[Any],
+    varg7: js.UndefOr[Any],
+    varg8: js.UndefOr[Any],
+    varg9: js.UndefOr[Any],
+    varg10: js.UndefOr[Any],
+    varg11: js.UndefOr[Any],
+    varg12: js.UndefOr[Any],
+    varg13: js.UndefOr[Any],
+    varg14: js.UndefOr[Any],
+    varg15: js.UndefOr[Any],
+    varg16: js.UndefOr[Any],
+    varg17: js.UndefOr[Any],
+    varg18: js.UndefOr[Any],
+    varg19: js.UndefOr[Any],
+    varg20: js.UndefOr[Any],
+    varg21: js.UndefOr[Any],
+    varg22: js.UndefOr[Any],
+    varg23: js.UndefOr[Any],
+    varg24: js.UndefOr[Any],
+    varg25: js.UndefOr[Any],
+    varg26: js.UndefOr[Any],
+    varg27: js.UndefOr[Any],
+    varg28: js.UndefOr[Any],
+    varg29: js.UndefOr[Any],
+    varg30: js.UndefOr[Any]
+  ): Any = js.native
   
   def RunOld(MacroName: String): Unit = js.native
   
@@ -649,7 +621,7 @@ trait Application extends StObject {
   def SubstituteFont(UnavailableFont: String, SubstituteFont: String): Unit = js.native
   
   def SynonymInfo(Word: String): typings.activexWord.Word.SynonymInfo = js.native
-  def SynonymInfo(Word: String, LanguageID: js.Any): typings.activexWord.Word.SynonymInfo = js.native
+  def SynonymInfo(Word: String, LanguageID: Any): typings.activexWord.Word.SynonymInfo = js.native
   
   val System: typings.activexWord.Word.System = js.native
   
@@ -691,7 +663,7 @@ trait Application extends StObject {
   
   val Windows: typings.activexWord.Word.Windows = js.native
   
-  val WordBasic: js.Any = js.native
+  val WordBasic: Any = js.native
   
   /* private */ @JSName("Word.Application_typekey")
   var WordDotApplication_typekey: typings.activexWord.Word.Application = js.native

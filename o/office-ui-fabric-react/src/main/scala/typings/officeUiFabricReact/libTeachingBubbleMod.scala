@@ -15,7 +15,7 @@ object libTeachingBubbleMod {
   
   @JSImport("office-ui-fabric-react/lib/TeachingBubble", "TeachingBubbleBase")
   @js.native
-  class TeachingBubbleBase protected ()
+  open class TeachingBubbleBase protected ()
     extends typings.officeUiFabricReact.teachingBubbleMod.TeachingBubbleBase {
     def this(props: ITeachingBubbleProps) = this()
   }
@@ -38,7 +38,7 @@ object libTeachingBubbleMod {
   
   @JSImport("office-ui-fabric-react/lib/TeachingBubble", "TeachingBubbleContentBase")
   @js.native
-  class TeachingBubbleContentBase protected ()
+  open class TeachingBubbleContentBase protected ()
     extends typings.officeUiFabricReact.teachingBubbleMod.TeachingBubbleContentBase {
     def this(props: ITeachingBubbleProps) = this()
   }

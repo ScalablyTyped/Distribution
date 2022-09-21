@@ -51,6 +51,6 @@ object GetFindingsRequest {
     
     inline def setSortCriteriaUndefined: Self = StObject.set(x, "SortCriteria", js.undefined)
     
-    inline def setSortCriteriaVarargs(value: SortCriterion*): Self = StObject.set(x, "SortCriteria", js.Array(value :_*))
+    inline def setSortCriteriaVarargs(value: SortCriterion*): Self = StObject.set(x, "SortCriteria", js.Array(value*))
   }
 }

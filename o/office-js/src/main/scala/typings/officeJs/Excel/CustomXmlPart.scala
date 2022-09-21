@@ -10,9 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a custom XML part object in a workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.5]
   */
 @js.native
@@ -27,6 +27,7 @@ trait CustomXmlPart
   /**
     * Deletes the custom XML part.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   def delete(): Unit = js.native
@@ -34,14 +35,15 @@ trait CustomXmlPart
   /**
     * Gets the custom XML part's full XML content.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   def getXml(): ClientResult[String] = js.native
   
   /**
-    *
     * The custom XML part's ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   val id: String = js.native
@@ -58,9 +60,9 @@ trait CustomXmlPart
   def load(propertyNames: js.Array[String]): CustomXmlPart = js.native
   
   /**
-    *
     * The custom XML part's namespace URI.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   val namespaceUri: String = js.native
@@ -68,6 +70,7 @@ trait CustomXmlPart
   /**
     * Sets the custom XML part's full XML content.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     *
     * @param xml XML content for the part.

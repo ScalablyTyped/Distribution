@@ -10,10 +10,10 @@ jQuery matchers and fixture loader for Jasmine framework
 | ------------------ | :-------------: |
 | Full name          | jasmine-jquery |
 | Keywords           | jasmine, jquery |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 4135924 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 189926.66666666666 |
+| # stars            | 1908.0 |
 
 ## Links
 - [Homepage](http://github.com/velesin/jasmine-jquery)

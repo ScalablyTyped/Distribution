@@ -25,7 +25,7 @@ trait PlusRuntimeApplicationInf extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
-  var extra: js.UndefOr[js.Any] = js.undefined
+  var extra: js.UndefOr[Any] = js.undefined
   
   /**
     * 新任务模式标记
@@ -60,7 +60,7 @@ object PlusRuntimeApplicationInf {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     

@@ -22,6 +22,6 @@ object Row {
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    inline def setCellsVarargs(value: Value*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: Value*): Self = StObject.set(x, "cells", js.Array(value*))
   }
 }

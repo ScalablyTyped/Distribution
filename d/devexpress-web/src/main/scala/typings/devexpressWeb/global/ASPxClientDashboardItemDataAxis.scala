@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDataAxis")
 @js.native
-class ASPxClientDashboardItemDataAxis ()
+open class ASPxClientDashboardItemDataAxis ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDataAxis {
   
@@ -24,7 +24,7 @@ class ASPxClientDashboardItemDataAxis ()
     * @param uniqueValues A hierarchy of unique values identifying the required data point.
     */
   /* CompleteClass */
-  override def GetPointByUniqueValues(uniqueValues: js.Array[js.Any]): typings.devexpressWeb.ASPxClientDashboardItemDataAxisPoint = js.native
+  override def GetPointByUniqueValues(uniqueValues: js.Array[Any]): typings.devexpressWeb.ASPxClientDashboardItemDataAxisPoint = js.native
   
   /**
     * Returns axis points corresponding to values of the last-level dimension.

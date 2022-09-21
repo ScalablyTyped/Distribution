@@ -58,7 +58,7 @@ object CIMMarkerPlacementAtRatioPositions {
     
     inline def setPositionArrayUndefined: Self = StObject.set(x, "positionArray", js.undefined)
     
-    inline def setPositionArrayVarargs(value: Double*): Self = StObject.set(x, "positionArray", js.Array(value :_*))
+    inline def setPositionArrayVarargs(value: Double*): Self = StObject.set(x, "positionArray", js.Array(value*))
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -10,10 +10,10 @@ Chained and parallel async iterator in one elegant function
 | ------------------ | :-------------: |
 | Full name          | each |
 | Keywords           | array, asynchronous, control flow, each, object |
-| # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 115128 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 57587.333333333336 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/adaltas/node-each)

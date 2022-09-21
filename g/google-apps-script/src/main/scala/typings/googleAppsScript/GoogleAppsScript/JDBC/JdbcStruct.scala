@@ -10,20 +10,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait JdbcStruct extends StObject {
   
-  def getAttributes(): js.Array[js.Any]
+  def getAttributes(): js.Array[Any]
   
   def getSQLTypeName(): String
 }
 object JdbcStruct {
   
-  inline def apply(getAttributes: () => js.Array[js.Any], getSQLTypeName: () => String): JdbcStruct = {
+  inline def apply(getAttributes: () => js.Array[Any], getSQLTypeName: () => String): JdbcStruct = {
     val __obj = js.Dynamic.literal(getAttributes = js.Any.fromFunction0(getAttributes), getSQLTypeName = js.Any.fromFunction0(getSQLTypeName))
     __obj.asInstanceOf[JdbcStruct]
   }
   
   extension [Self <: JdbcStruct](x: Self) {
     
-    inline def setGetAttributes(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
+    inline def setGetAttributes(value: () => js.Array[Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
     
     inline def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
   }

@@ -1,24 +1,25 @@
 package typings.fridaGum.ObjC
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ChooseSpecifier = typings.fridaGum.ObjC.SimpleChooseSpecifier | typings.fridaGum.ObjC.DetailedChooseSpecifier
+type ChooseSpecifier = SimpleChooseSpecifier | DetailedChooseSpecifier
 
 type EnumerateLoadedClassesResult = /**
   * Class names grouped by name of owner module.
   */
-org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+StringDictionary[js.Array[String]]
 
 /**
   * User-defined data that can be accessed from method implementations.
   */
-type InstanceData = org.scalablytyped.runtime.StringDictionary[js.Any]
+type InstanceData = StringDictionary[Any]
 
-type ObjectMethods = org.scalablytyped.runtime.StringDictionary[typings.fridaGum.ObjC.ObjectMethod]
+type ObjectMethods = StringDictionary[ObjectMethod]
 
-type ProtocolPropertyAttributes = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type ProtocolPropertyAttributes = StringDictionary[String]
 
-type SimpleChooseSpecifier = typings.fridaGum.ObjC.Object
+type SimpleChooseSpecifier = Object

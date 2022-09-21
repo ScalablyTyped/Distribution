@@ -1,12 +1,9 @@
 package typings.jszip
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.jszip.anon.JSZipFileOptionsdirtrue
-import typings.jszip.anon.Level
 import typings.jszip.anon.Promise
 import typings.jszip.jszipStrings.DOS
 import typings.jszip.jszipStrings.UNIX
@@ -15,17 +12,16 @@ import typings.jszip.jszipStrings.arraybuffer
 import typings.jszip.jszipStrings.base64
 import typings.jszip.jszipStrings.binarystring
 import typings.jszip.jszipStrings.blob
+import typings.jszip.jszipStrings.data
+import typings.jszip.jszipStrings.end
+import typings.jszip.jszipStrings.error
 import typings.jszip.jszipStrings.nodebuffer
 import typings.jszip.jszipStrings.string
 import typings.jszip.jszipStrings.text
 import typings.jszip.jszipStrings.uint8array
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.std.ArrayBuffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Blob
-import typings.std.Date
-import typings.std.RegExp
-import typings.std.Uint8Array
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +30,7 @@ object mod extends Shortcut {
   
   @JSImport("jszip", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & JSZip = js.native
+  val ^ : JSZip = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jszip", JSImport.Namespace)
@@ -42,20 +38,9 @@ object mod extends Shortcut {
   /**
     * Create JSZip instance
     */
-  /**
-    * Create JSZip instance
-    * If no parameters given an empty zip archive will be created
-    *
-    * @param data Serialized zip archive
-    * @param options Description of the serialized zip archive
-    */
-  class Class ()
+  open class Class ()
     extends StObject
-       with JSZip {
-    def this(data: InputFileFormat) = this()
-    def this(data: Unit, options: JSZipLoadOptions) = this()
-    def this(data: InputFileFormat, options: JSZipLoadOptions) = this()
-  }
+       with JSZip
   
   /* Rewritten from type alias, can be one of: 
     - typings.jszip.jszipStrings.STORE
@@ -69,11 +54,38 @@ object mod extends Shortcut {
     inline def STORE: typings.jszip.jszipStrings.STORE = "STORE".asInstanceOf[typings.jszip.jszipStrings.STORE]
   }
   
+  /**
+    * Depends on the compression type. With `STORE` (no compression), these options are ignored. With
+    * `DEFLATE`, you can give the compression level between 1 (best speed) and 9 (best compression).
+    */
+  trait CompressionOptions extends StObject {
+    
+    var level: Double
+  }
+  object CompressionOptions {
+    
+    inline def apply(level: Double): CompressionOptions = {
+      val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CompressionOptions]
+    }
+    
+    extension [Self <: CompressionOptions](x: Self) {
+      
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type DataEventCallback[T] = js.Function2[/* dataChunk */ T, /* metadata */ JSZipMetadata, Unit]
+  
+  type EndEventCallback = js.Function0[Unit]
+  
+  type ErrorEventCallback = js.Function1[/* error */ js.Error, Unit]
+  
   trait InputByType extends StObject {
     
     var array: js.Array[Double]
     
-    var arraybuffer: ArrayBuffer
+    var arraybuffer: js.typedarray.ArrayBuffer
     
     var base64: String
     
@@ -81,26 +93,26 @@ object mod extends Shortcut {
     
     var blob: Blob
     
-    var stream: ReadableStream
+    var stream: ReadableStream[Any]
     
     var string: String
     
     var text: String
     
-    var uint8array: Uint8Array
+    var uint8array: js.typedarray.Uint8Array
   }
   object InputByType {
     
     inline def apply(
       array: js.Array[Double],
-      arraybuffer: ArrayBuffer,
+      arraybuffer: js.typedarray.ArrayBuffer,
       base64: String,
       binarystring: String,
       blob: Blob,
-      stream: ReadableStream,
+      stream: ReadableStream[Any],
       string: String,
       text: String,
-      uint8array: Uint8Array
+      uint8array: js.typedarray.Uint8Array
     ): InputByType = {
       val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], arraybuffer = arraybuffer.asInstanceOf[js.Any], base64 = base64.asInstanceOf[js.Any], binarystring = binarystring.asInstanceOf[js.Any], blob = blob.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], uint8array = uint8array.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputByType]
@@ -110,9 +122,9 @@ object mod extends Shortcut {
       
       inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value*))
       
-      inline def setArraybuffer(value: ArrayBuffer): Self = StObject.set(x, "arraybuffer", value.asInstanceOf[js.Any])
+      inline def setArraybuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "arraybuffer", value.asInstanceOf[js.Any])
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -120,13 +132,13 @@ object mod extends Shortcut {
       
       inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
-      inline def setStream(value: ReadableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: ReadableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setUint8array(value: Uint8Array): Self = StObject.set(x, "uint8array", value.asInstanceOf[js.Any])
+      inline def setUint8array(value: js.typedarray.Uint8Array): Self = StObject.set(x, "uint8array", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,7 +151,9 @@ object mod extends Shortcut {
   //     compression: object;
   //     compressedContent: string|ArrayBuffer|Uint8Array|Buffer;
   // }
-  type InputFileFormat = Blob | String | ArrayBuffer | ReadableStream | js.Array[Double] | Uint8Array
+  type InputFileFormat = Blob | String | js.typedarray.ArrayBuffer | ReadableStream[Any] | js.Array[Double] | js.typedarray.Uint8Array | (js.Promise[
+    Blob | String | js.typedarray.ArrayBuffer | ReadableStream[Any] | js.Array[Double] | js.typedarray.Uint8Array
+  ])
   
   /* Rewritten from type alias, can be one of: 
     - typings.jszip.jszipStrings.base64
@@ -160,20 +174,7 @@ object mod extends Shortcut {
        with /**
     * Create JSZip instance
     */
-  /**
-    * Create JSZip instance
-    * If no parameters given an empty zip archive will be created
-    *
-    * @param data Serialized zip archive
-    * @param options Description of the serialized zip archive
-    */
-  Instantiable0[JSZip]
-       with Instantiable1[/* data */ InputFileFormat, JSZip]
-       with Instantiable2[
-          (/* data */ InputFileFormat) | (/* data */ Unit), 
-          /* options */ JSZipLoadOptions, 
-          JSZip
-        ] {
+  Instantiable0[JSZip] {
     
     def apply(): JSZip = js.native
     
@@ -194,29 +195,33 @@ object mod extends Shortcut {
     def file(path: String, data: js.Array[Double], options: JSZipFileOptions): this.type = js.native
     def file(
       path: String,
-      data: js.Promise[js.Array[Double] | ArrayBuffer | Blob | ReadableStream | String | Uint8Array]
+      data: js.Promise[
+          js.Array[Double] | js.typedarray.ArrayBuffer | Blob | ReadableStream[Any] | String | js.typedarray.Uint8Array
+        ]
     ): this.type = js.native
     def file(
       path: String,
-      data: js.Promise[js.Array[Double] | ArrayBuffer | Blob | ReadableStream | String | Uint8Array],
+      data: js.Promise[
+          js.Array[Double] | js.typedarray.ArrayBuffer | Blob | ReadableStream[Any] | String | js.typedarray.Uint8Array
+        ],
       options: JSZipFileOptions
     ): this.type = js.native
+    def file(path: String, data: js.typedarray.ArrayBuffer): this.type = js.native
+    def file(path: String, data: js.typedarray.ArrayBuffer, options: JSZipFileOptions): this.type = js.native
+    def file(path: String, data: js.typedarray.Uint8Array): this.type = js.native
+    def file(path: String, data: js.typedarray.Uint8Array, options: JSZipFileOptions): this.type = js.native
     def file(path: String, data: Null, options: JSZipFileOptionsdirtrue): this.type = js.native
-    def file(path: String, data: ReadableStream): this.type = js.native
-    def file(path: String, data: ReadableStream, options: JSZipFileOptions): this.type = js.native
-    def file(path: String, data: ArrayBuffer): this.type = js.native
-    def file(path: String, data: ArrayBuffer, options: JSZipFileOptions): this.type = js.native
     def file(path: String, data: Blob): this.type = js.native
     def file(path: String, data: Blob, options: JSZipFileOptions): this.type = js.native
-    def file(path: String, data: Uint8Array): this.type = js.native
-    def file(path: String, data: Uint8Array, options: JSZipFileOptions): this.type = js.native
+    def file(path: String, data: ReadableStream[Any]): this.type = js.native
+    def file(path: String, data: ReadableStream[Any], options: JSZipFileOptions): this.type = js.native
     /**
       * Get files matching a RegExp from archive
       *
       * @param path RegExp to match
       * @return Return all matching files or an empty array
       */
-    def file(path: RegExp): js.Array[JSZipObject] = js.native
+    def file(path: js.RegExp): js.Array[JSZipObject] = js.native
     /**
       * Get a file from the archive
       *
@@ -249,7 +254,7 @@ object mod extends Shortcut {
       * @param name RegExp to match
       * @return New array of JSZipFile objects which match the RegExp
       */
-    def folder(name: RegExp): js.Array[JSZipObject] = js.native
+    def folder(name: js.RegExp): js.Array[JSZipObject] = js.native
     
     /**
       * Call a callback function for each entry at this folder level.
@@ -272,9 +277,9 @@ object mod extends Shortcut {
     @JSName("generateAsync")
     def generateAsync_array(options: JSZipGeneratorOptions[array], onUpdate: OnUpdateCallback): js.Promise[js.Array[Double]] = js.native
     @JSName("generateAsync")
-    def generateAsync_arraybuffer(options: JSZipGeneratorOptions[arraybuffer]): js.Promise[ArrayBuffer] = js.native
+    def generateAsync_arraybuffer(options: JSZipGeneratorOptions[arraybuffer]): js.Promise[js.typedarray.ArrayBuffer] = js.native
     @JSName("generateAsync")
-    def generateAsync_arraybuffer(options: JSZipGeneratorOptions[arraybuffer], onUpdate: OnUpdateCallback): js.Promise[ArrayBuffer] = js.native
+    def generateAsync_arraybuffer(options: JSZipGeneratorOptions[arraybuffer], onUpdate: OnUpdateCallback): js.Promise[js.typedarray.ArrayBuffer] = js.native
     @JSName("generateAsync")
     def generateAsync_base64(options: JSZipGeneratorOptions[base64]): js.Promise[String] = js.native
     @JSName("generateAsync")
@@ -300,9 +305,35 @@ object mod extends Shortcut {
     @JSName("generateAsync")
     def generateAsync_text(options: JSZipGeneratorOptions[text], onUpdate: OnUpdateCallback): js.Promise[String] = js.native
     @JSName("generateAsync")
-    def generateAsync_uint8array(options: JSZipGeneratorOptions[uint8array]): js.Promise[Uint8Array] = js.native
+    def generateAsync_uint8array(options: JSZipGeneratorOptions[uint8array]): js.Promise[js.typedarray.Uint8Array] = js.native
     @JSName("generateAsync")
-    def generateAsync_uint8array(options: JSZipGeneratorOptions[uint8array], onUpdate: OnUpdateCallback): js.Promise[Uint8Array] = js.native
+    def generateAsync_uint8array(options: JSZipGeneratorOptions[uint8array], onUpdate: OnUpdateCallback): js.Promise[js.typedarray.Uint8Array] = js.native
+    
+    /**
+      * Generates the complete zip file with the internal stream implementation
+      *
+      * @param options Optional options for the generator
+      * @return a StreamHelper
+      */
+    def generateInternalStream(): JSZipStreamHelper[String] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_array(options: JSZipGeneratorOptions[array]): JSZipStreamHelper[js.Array[Double]] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_arraybuffer(options: JSZipGeneratorOptions[arraybuffer]): JSZipStreamHelper[js.typedarray.ArrayBuffer] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_base64(options: JSZipGeneratorOptions[base64]): JSZipStreamHelper[String] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_binarystring(options: JSZipGeneratorOptions[binarystring]): JSZipStreamHelper[String] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_blob(options: JSZipGeneratorOptions[blob]): JSZipStreamHelper[Blob] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): JSZipStreamHelper[Buffer] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_string(options: JSZipGeneratorOptions[string]): JSZipStreamHelper[String] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_text(options: JSZipGeneratorOptions[text]): JSZipStreamHelper[String] = js.native
+    @JSName("generateInternalStream")
+    def generateInternalStream_uint8array(options: JSZipGeneratorOptions[uint8array]): JSZipStreamHelper[js.typedarray.Uint8Array] = js.native
     
     /**
       * Generates a new archive asynchronously
@@ -311,12 +342,12 @@ object mod extends Shortcut {
       * @param onUpdate The optional function called on each internal update with the metadata.
       * @return A Node.js `ReadableStream`
       */
-    def generateNodeStream(): ReadableStream = js.native
-    def generateNodeStream(options: Unit, onUpdate: OnUpdateCallback): ReadableStream = js.native
+    def generateNodeStream(): ReadableStream[Any] = js.native
+    def generateNodeStream(options: Unit, onUpdate: OnUpdateCallback): ReadableStream[Any] = js.native
     @JSName("generateNodeStream")
-    def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): ReadableStream = js.native
+    def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): ReadableStream[Any] = js.native
     @JSName("generateNodeStream")
-    def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer], onUpdate: OnUpdateCallback): ReadableStream = js.native
+    def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer], onUpdate: OnUpdateCallback): ReadableStream[Any] = js.native
     
     /**
       * Deserialize zip file asynchronously
@@ -354,7 +385,15 @@ object mod extends Shortcut {
     
     var comment: js.UndefOr[String] = js.undefined
     
-    var compression: js.UndefOr[String] = js.undefined
+    /**
+      * Sets per file compression. The `compressionOptions` parameter depends on the compression type.
+      */
+    var compression: js.UndefOr[Compression] = js.undefined
+    
+    /**
+      * Sets per file compression level for `DEFLATE` compression.
+      */
+    var compressionOptions: js.UndefOr[Null | CompressionOptions] = js.undefined
     
     /** Set to `true` if folders in the file path should be automatically created, otherwise there will only be virtual folders that represent the path to the file. */
     var createFolders: js.UndefOr[Boolean] = js.undefined
@@ -362,7 +401,7 @@ object mod extends Shortcut {
     /**
       * The last modification date, defaults to the current date.
       */
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     /** Set to `true` if this is a directory and content should be ignored. */
     var dir: js.UndefOr[Boolean] = js.undefined
@@ -400,7 +439,13 @@ object mod extends Shortcut {
       
       inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionOptions(value: CompressionOptions): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
       inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
@@ -408,7 +453,7 @@ object mod extends Shortcut {
       
       inline def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -438,9 +483,15 @@ object mod extends Shortcut {
     
     var comment: js.UndefOr[String] = js.undefined
     
+    /**
+      * Sets compression option for all entries that have not specified their own `compression` option
+      */
     var compression: js.UndefOr[Compression] = js.undefined
     
-    var compressionOptions: js.UndefOr[Null | Level] = js.undefined
+    /**
+      * Sets compression level for `DEFLATE` compression.
+      */
+    var compressionOptions: js.UndefOr[Null | CompressionOptions] = js.undefined
     
     var encodeFileName: js.UndefOr[js.Function1[/* filename */ String, String]] = js.undefined
     
@@ -474,7 +525,7 @@ object mod extends Shortcut {
       
       inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      inline def setCompressionOptions(value: CompressionOptions): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
       
       inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
       
@@ -512,6 +563,10 @@ object mod extends Shortcut {
     
     var createFolders: js.UndefOr[Boolean] = js.undefined
     
+    var decodeFileName: js.UndefOr[
+        js.Function1[/* bytes */ js.Array[String] | js.typedarray.Uint8Array | Buffer, String]
+      ] = js.undefined
+    
     var optimizedBinaryString: js.UndefOr[Boolean] = js.undefined
   }
   object JSZipLoadOptions {
@@ -535,9 +590,36 @@ object mod extends Shortcut {
       
       inline def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
       
+      inline def setDecodeFileName(value: /* bytes */ js.Array[String] | js.typedarray.Uint8Array | Buffer => String): Self = StObject.set(x, "decodeFileName", js.Any.fromFunction1(value))
+      
+      inline def setDecodeFileNameUndefined: Self = StObject.set(x, "decodeFileName", js.undefined)
+      
       inline def setOptimizedBinaryString(value: Boolean): Self = StObject.set(x, "optimizedBinaryString", value.asInstanceOf[js.Any])
       
       inline def setOptimizedBinaryStringUndefined: Self = StObject.set(x, "optimizedBinaryString", js.undefined)
+    }
+  }
+  
+  trait JSZipMetadata extends StObject {
+    
+    var currentFile: String | Null
+    
+    var percent: Double
+  }
+  object JSZipMetadata {
+    
+    inline def apply(percent: Double): JSZipMetadata = {
+      val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], currentFile = null)
+      __obj.asInstanceOf[JSZipMetadata]
+    }
+    
+    extension [Self <: JSZipMetadata](x: Self) {
+      
+      inline def setCurrentFile(value: String): Self = StObject.set(x, "currentFile", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentFileNull: Self = StObject.set(x, "currentFile", null)
+      
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -549,9 +631,9 @@ object mod extends Shortcut {
     @JSName("async")
     def async_array(`type`: array, onUpdate: OnUpdateCallback): js.Promise[js.Array[Double]] = js.native
     @JSName("async")
-    def async_arraybuffer(`type`: arraybuffer): js.Promise[ArrayBuffer] = js.native
+    def async_arraybuffer(`type`: arraybuffer): js.Promise[js.typedarray.ArrayBuffer] = js.native
     @JSName("async")
-    def async_arraybuffer(`type`: arraybuffer, onUpdate: OnUpdateCallback): js.Promise[ArrayBuffer] = js.native
+    def async_arraybuffer(`type`: arraybuffer, onUpdate: OnUpdateCallback): js.Promise[js.typedarray.ArrayBuffer] = js.native
     /**
       * Prepare the content in the asked type.
       * @param type the type of the result.
@@ -583,13 +665,13 @@ object mod extends Shortcut {
     @JSName("async")
     def async_text(`type`: text, onUpdate: OnUpdateCallback): js.Promise[String] = js.native
     @JSName("async")
-    def async_uint8array(`type`: uint8array): js.Promise[Uint8Array] = js.native
+    def async_uint8array(`type`: uint8array): js.Promise[js.typedarray.Uint8Array] = js.native
     @JSName("async")
-    def async_uint8array(`type`: uint8array, onUpdate: OnUpdateCallback): js.Promise[Uint8Array] = js.native
+    def async_uint8array(`type`: uint8array, onUpdate: OnUpdateCallback): js.Promise[js.typedarray.Uint8Array] = js.native
     
     var comment: String = js.native
     
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     var dir: Boolean = js.native
     
@@ -598,17 +680,23 @@ object mod extends Shortcut {
     
     var name: String = js.native
     
-    def nodeStream(): ReadableStream = js.native
-    def nodeStream(`type`: Unit, onUpdate: OnUpdateCallback): ReadableStream = js.native
+    def nodeStream(): ReadableStream[Any] = js.native
+    def nodeStream(`type`: Unit, onUpdate: OnUpdateCallback): ReadableStream[Any] = js.native
     @JSName("nodeStream")
-    def nodeStream_nodebuffer(`type`: nodebuffer): ReadableStream = js.native
+    def nodeStream_nodebuffer(`type`: nodebuffer): ReadableStream[Any] = js.native
     @JSName("nodeStream")
-    def nodeStream_nodebuffer(`type`: nodebuffer, onUpdate: OnUpdateCallback): ReadableStream = js.native
+    def nodeStream_nodebuffer(`type`: nodebuffer, onUpdate: OnUpdateCallback): ReadableStream[Any] = js.native
     
     var options: JSZipObjectOptions = js.native
     
     /** The UNIX permissions of the file, if any. */
     var unixPermissions: Double | String | Null = js.native
+    
+    /**
+      * Present for files loadded with `loadAsync`. May contain ".." path components that could
+      * result in a zip-slip attack. See https://snyk.io/research/zip-slip-vulnerability
+      */
+    var unsafeOriginalName: js.UndefOr[String] = js.native
   }
   
   trait JSZipObjectOptions extends StObject {
@@ -626,6 +714,43 @@ object mod extends Shortcut {
       
       inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait JSZipStreamHelper[T] extends StObject {
+    
+    /**
+      * Read the whole stream and call a callback with the complete content
+      *
+      * @param updateCallback The function called every time the stream updates
+      * @return A Promise of the full content
+      */
+    def accumulate(): js.Promise[T] = js.native
+    def accumulate(updateCallback: js.Function1[/* metadata */ JSZipMetadata, Unit]): js.Promise[T] = js.native
+    
+    /**
+      * Register a listener on an event
+      */
+    @JSName("on")
+    def on_data(event: data, callback: DataEventCallback[T]): this.type = js.native
+    @JSName("on")
+    def on_end(event: end, callback: EndEventCallback): this.type = js.native
+    @JSName("on")
+    def on_error(event: error, callback: ErrorEventCallback): this.type = js.native
+    
+    /**
+      * Pause the stream if the stream is running. Once paused, the stream stops sending data events
+      *
+      * @return The current StreamHelper object, for chaining
+      */
+    def pause(): this.type = js.native
+    
+    /**
+      * Resume the stream if the stream is paused. Once resumed, the stream starts sending data events again
+      *
+      * @return The current StreamHelper object, for chaining
+      */
+    def resume(): this.type = js.native
   }
   
   trait JSZipSupport extends StObject {
@@ -657,34 +782,13 @@ object mod extends Shortcut {
     }
   }
   
-  trait Metadata extends StObject {
-    
-    var currentFile: String
-    
-    var percent: Double
-  }
-  object Metadata {
-    
-    inline def apply(currentFile: String, percent: Double): Metadata = {
-      val __obj = js.Dynamic.literal(currentFile = currentFile.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Metadata]
-    }
-    
-    extension [Self <: Metadata](x: Self) {
-      
-      inline def setCurrentFile(value: String): Self = StObject.set(x, "currentFile", value.asInstanceOf[js.Any])
-      
-      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type OnUpdateCallback = js.Function1[/* metadata */ Metadata, Unit]
+  type OnUpdateCallback = js.Function1[/* metadata */ JSZipMetadata, Unit]
   
   trait OutputByType extends StObject {
     
     var array: js.Array[Double]
     
-    var arraybuffer: ArrayBuffer
+    var arraybuffer: js.typedarray.ArrayBuffer
     
     var base64: String
     
@@ -698,20 +802,20 @@ object mod extends Shortcut {
     
     var text: String
     
-    var uint8array: Uint8Array
+    var uint8array: js.typedarray.Uint8Array
   }
   object OutputByType {
     
     inline def apply(
       array: js.Array[Double],
-      arraybuffer: ArrayBuffer,
+      arraybuffer: js.typedarray.ArrayBuffer,
       base64: String,
       binarystring: String,
       blob: Blob,
       nodebuffer: Buffer,
       string: String,
       text: String,
-      uint8array: Uint8Array
+      uint8array: js.typedarray.Uint8Array
     ): OutputByType = {
       val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], arraybuffer = arraybuffer.asInstanceOf[js.Any], base64 = base64.asInstanceOf[js.Any], binarystring = binarystring.asInstanceOf[js.Any], blob = blob.asInstanceOf[js.Any], nodebuffer = nodebuffer.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], uint8array = uint8array.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutputByType]
@@ -721,9 +825,9 @@ object mod extends Shortcut {
       
       inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value*))
       
-      inline def setArraybuffer(value: ArrayBuffer): Self = StObject.set(x, "arraybuffer", value.asInstanceOf[js.Any])
+      inline def setArraybuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "arraybuffer", value.asInstanceOf[js.Any])
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -737,7 +841,7 @@ object mod extends Shortcut {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setUint8array(value: Uint8Array): Self = StObject.set(x, "uint8array", value.asInstanceOf[js.Any])
+      inline def setUint8array(value: js.typedarray.Uint8Array): Self = StObject.set(x, "uint8array", value.asInstanceOf[js.Any])
     }
   }
   
@@ -754,8 +858,8 @@ object mod extends Shortcut {
   */
   trait OutputType extends StObject
   
-  type _To = js.Object & JSZip
+  type _To = JSZip
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & JSZip = ^
+  override def _to: JSZip = ^
 }

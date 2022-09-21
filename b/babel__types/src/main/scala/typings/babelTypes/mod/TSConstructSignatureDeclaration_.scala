@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSConstructSignatureDeclaration_
   extends StObject
      with BaseNode
-     with TSTypeElement {
+     with TSTypeElement
+     with TypeScript {
   
   var parameters: js.Array[Identifier_ | RestElement_]
   
@@ -32,7 +33,7 @@ object TSConstructSignatureDeclaration_ {
     
     inline def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setType(value: TSConstructSignatureDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

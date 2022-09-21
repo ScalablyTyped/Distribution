@@ -69,7 +69,7 @@ object anon {
       
       inline def setLines(value: js.Array[Offset]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      inline def setLinesVarargs(value: Offset*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Offset*): Self = StObject.set(x, "lines", js.Array(value*))
       
       inline def setMarks(value: typings.cliBox.mod.Marks): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       

@@ -4,37 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request message for a webhook call.
-  */
 trait SchemaGoogleCloudDialogflowV2WebhookRequest extends StObject {
   
   /**
-    * Optional. The contents of the original request that was passed to
-    * `[Streaming]DetectIntent` call.
+    * Optional. The contents of the original request that was passed to `[Streaming]DetectIntent` call.
     */
   var originalDetectIntentRequest: js.UndefOr[SchemaGoogleCloudDialogflowV2OriginalDetectIntentRequest] = js.undefined
   
   /**
-    * The result of the conversational query or event processing. Contains the
-    * same value as `[Streaming]DetectIntentResponse.query_result`.
+    * The result of the conversational query or event processing. Contains the same value as `[Streaming]DetectIntentResponse.query_result`.
     */
   var queryResult: js.UndefOr[SchemaGoogleCloudDialogflowV2QueryResult] = js.undefined
   
   /**
-    * The unique identifier of the response. Contains the same value as
-    * `[Streaming]DetectIntentResponse.response_id`.
+    * The unique identifier of the response. Contains the same value as `[Streaming]DetectIntentResponse.response_id`.
     */
-  var responseId: js.UndefOr[String] = js.undefined
+  var responseId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The unique identifier of detectIntent request session. Can be used to
-    * identify end-user inside webhook implementation. Format:
-    * `projects/&lt;Project ID&gt;/agent/sessions/&lt;Session ID&gt;`, or
-    * `projects/&lt;Project ID&gt;/agent/environments/&lt;Environment
-    * ID&gt;/users/&lt;User ID&gt;/sessions/&lt;Session ID&gt;`.
+    * The unique identifier of detectIntent request session. Can be used to identify end-user inside webhook implementation. Format: `projects//agent/sessions/`, or `projects//agent/environments//users//sessions/`.
     */
-  var session: js.UndefOr[String] = js.undefined
+  var session: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2WebhookRequest {
   
@@ -55,9 +45,13 @@ object SchemaGoogleCloudDialogflowV2WebhookRequest {
     
     inline def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
     
+    inline def setResponseIdNull: Self = StObject.set(x, "responseId", null)
+    
     inline def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
     
     inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    
+    inline def setSessionNull: Self = StObject.set(x, "session", null)
     
     inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }

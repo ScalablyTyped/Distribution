@@ -10,10 +10,10 @@ Capture preview image from a video file
 | ------------------ | :-------------: |
 | Full name          | poster-image |
 | Keywords           | js, capture, frame, poster, screenshot, video, video poster |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1327 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 52.333333333333336 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/herrmannplatz/poster-image#readme)

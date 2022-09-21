@@ -10,7 +10,7 @@ object requestPendingMod {
   @JSImport("sip.js/lib/api/exceptions/request-pending", "RequestPendingError")
   @js.native
   /** @internal */
-  class RequestPendingError () extends Exception {
+  open class RequestPendingError () extends Exception {
     def this(message: String) = this()
   }
 }

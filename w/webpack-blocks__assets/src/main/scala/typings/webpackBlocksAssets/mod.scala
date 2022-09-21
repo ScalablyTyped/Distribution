@@ -1,6 +1,5 @@
 package typings.webpackBlocksAssets
 
-import typings.std.RegExp
 import typings.webpackBlocksAssets.mod.css.FileOptions
 import typings.webpackBlocksAssets.mod.css.UrlOptions
 import typings.webpackBlocksAssets.webpackBlocksAssetsNumbers.`0`
@@ -23,15 +22,15 @@ object mod {
   
   object css {
     
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(options: CssOptions): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+    inline def apply(options: CssOptions): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("@webpack-blocks/assets", "css")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def modules(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("modules")().asInstanceOf[js.Any]
-    inline def modules(options: ModuleOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("modules")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def modules(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("modules")().asInstanceOf[Any]
+    inline def modules(options: ModuleOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("modules")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     trait CssOptions extends StObject {
       
@@ -88,7 +87,7 @@ object mod {
       
       var publicPath: js.UndefOr[String | PathFunction] = js.undefined
       
-      var regExp: js.UndefOr[RegExp] = js.undefined
+      var regExp: js.UndefOr[js.RegExp] = js.undefined
     }
     object FileOptions {
       
@@ -109,13 +108,13 @@ object mod {
         
         inline def setName(value: String | NameFunction): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        inline def setNameFunction1(value: /* file */ String => js.Any): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+        inline def setNameFunction1(value: /* file */ String => Any): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
         inline def setOutputPath(value: String | PathFunction): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
         
-        inline def setOutputPathFunction3(value: (/* url */ String, /* resourcePath */ String, /* context */ String) => js.Any): Self = StObject.set(x, "outputPath", js.Any.fromFunction3(value))
+        inline def setOutputPathFunction3(value: (/* url */ String, /* resourcePath */ String, /* context */ String) => Any): Self = StObject.set(x, "outputPath", js.Any.fromFunction3(value))
         
         inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
         
@@ -125,21 +124,21 @@ object mod {
         
         inline def setPublicPath(value: String | PathFunction): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
         
-        inline def setPublicPathFunction3(value: (/* url */ String, /* resourcePath */ String, /* context */ String) => js.Any): Self = StObject.set(x, "publicPath", js.Any.fromFunction3(value))
+        inline def setPublicPathFunction3(value: (/* url */ String, /* resourcePath */ String, /* context */ String) => Any): Self = StObject.set(x, "publicPath", js.Any.fromFunction3(value))
         
         inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
         
-        inline def setRegExp(value: RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+        inline def setRegExp(value: js.RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
         
         inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
       }
     }
     
     type GetLocalIdent = js.Function4[
-        /* context */ js.Any, 
-        /* localIdentName */ js.Any, 
-        /* localName */ js.Any, 
-        /* options */ js.Any, 
+        /* context */ Any, 
+        /* localIdentName */ Any, 
+        /* localName */ Any, 
+        /* options */ Any, 
         String
       ]
     
@@ -162,7 +161,7 @@ object mod {
       
       var localIdentName: js.UndefOr[String] = js.undefined
       
-      var localIdentRegExp: js.UndefOr[String | RegExp] = js.undefined
+      var localIdentRegExp: js.UndefOr[String | js.RegExp] = js.undefined
       
       var localsConvention: js.UndefOr[asIs | camelCase | camelCaseOnly | dashes | dashesOnly] = js.undefined
       
@@ -184,7 +183,7 @@ object mod {
         inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
         inline def setGetLocalIdent(
-          value: (/* context */ js.Any, /* localIdentName */ js.Any, /* localName */ js.Any, /* options */ js.Any) => String
+          value: (/* context */ Any, /* localIdentName */ Any, /* localName */ Any, /* options */ Any) => String
         ): Self = StObject.set(x, "getLocalIdent", js.Any.fromFunction4(value))
         
         inline def setGetLocalIdentUndefined: Self = StObject.set(x, "getLocalIdent", js.undefined)
@@ -201,7 +200,7 @@ object mod {
         
         inline def setLocalIdentNameUndefined: Self = StObject.set(x, "localIdentName", js.undefined)
         
-        inline def setLocalIdentRegExp(value: String | RegExp): Self = StObject.set(x, "localIdentRegExp", value.asInstanceOf[js.Any])
+        inline def setLocalIdentRegExp(value: String | js.RegExp): Self = StObject.set(x, "localIdentRegExp", value.asInstanceOf[js.Any])
         
         inline def setLocalIdentRegExpUndefined: Self = StObject.set(x, "localIdentRegExp", js.undefined)
         
@@ -219,7 +218,7 @@ object mod {
       }
     }
     
-    type NameFunction = js.Function1[/* file */ String, js.Any]
+    type NameFunction = js.Function1[/* file */ String, Any]
     
     trait ParseImportOptions extends StObject {
       
@@ -242,7 +241,7 @@ object mod {
       }
     }
     
-    type PathFunction = js.Function3[/* url */ String, /* resourcePath */ String, /* context */ String, js.Any]
+    type PathFunction = js.Function3[/* url */ String, /* resourcePath */ String, /* context */ String, Any]
     
     type UrlFilter = js.Function2[/* url */ String, /* resourcePath */ String, Boolean]
     
@@ -278,9 +277,9 @@ object mod {
     }
   }
   
-  inline def file(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file")().asInstanceOf[js.Any]
-  inline def file(options: FileOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def file(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file")().asInstanceOf[Any]
+  inline def file(options: FileOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def url(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[js.Any]
-  inline def url(options: UrlOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def url(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[Any]
+  inline def url(options: UrlOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

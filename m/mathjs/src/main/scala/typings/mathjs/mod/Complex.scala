@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Complex
   extends StObject
-     with _MathType {
+     with _MathNumericType {
   
   def compare(a: Complex, b: Complex): Double = js.native
   

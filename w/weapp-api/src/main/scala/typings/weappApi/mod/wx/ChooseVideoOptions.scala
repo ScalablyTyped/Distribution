@@ -37,13 +37,13 @@ object ChooseVideoOptions {
     
     inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    inline def setCameraVarargs(value: CameraDevice*): Self = StObject.set(x, "camera", js.Array(value :_*))
+    inline def setCameraVarargs(value: CameraDevice*): Self = StObject.set(x, "camera", js.Array(value*))
     
-    inline def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
@@ -55,7 +55,7 @@ object ChooseVideoOptions {
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    inline def setSourceTypeVarargs(value: VideoSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: VideoSourceType*): Self = StObject.set(x, "sourceType", js.Array(value*))
     
     inline def setSuccess(value: /* res */ VideoData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

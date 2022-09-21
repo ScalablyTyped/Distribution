@@ -7,7 +7,6 @@ import typings.chromeApps.chromeAppsStrings.INVALID_PUK
 import typings.chromeApps.chromeAppsStrings.MAX_ATTEMPTS_EXCEEDED
 import typings.chromeApps.chromeAppsStrings.PUK
 import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
-import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +32,7 @@ object certificateProvider {
       * Must be the DER encoding of a X.509 certificate. Currently, only
       * certificates of RSA keys are supported.
       */
-    var certificate: js.UndefOr[ArrayBuffer] = js.undefined
+    var certificate: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
     
     /**
       * Must be set to all hashes supported for this certificate. This app
@@ -52,7 +51,7 @@ object certificateProvider {
     
     extension [Self <: CertificateInfo](x: Self) {
       
-      inline def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
       inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
       
@@ -60,7 +59,7 @@ object certificateProvider {
       
       inline def setSupportedHashesUndefined: Self = StObject.set(x, "supportedHashes", js.undefined)
       
-      inline def setSupportedHashesVarargs(value: Hash*): Self = StObject.set(x, "supportedHashes", js.Array(value :_*))
+      inline def setSupportedHashesVarargs(value: Hash*): Self = StObject.set(x, "supportedHashes", js.Array(value*))
     }
   }
   
@@ -201,10 +200,10 @@ object certificateProvider {
       * The DER encoding of a X.509 certificate. The app must sign
       * *digest* using the associated private key.
       */
-    var certificate: ArrayBuffer
+    var certificate: js.typedarray.ArrayBuffer
     
     /** The digest that must be signed */
-    var digest: ArrayBuffer
+    var digest: js.typedarray.ArrayBuffer
     
     /** Refers to the hash algorithm that was used to create *digest*. */
     var hash: Hash
@@ -217,16 +216,21 @@ object certificateProvider {
   }
   object SignRequest {
     
-    inline def apply(certificate: ArrayBuffer, digest: ArrayBuffer, hash: Hash, signRequestId: integer): SignRequest = {
+    inline def apply(
+      certificate: js.typedarray.ArrayBuffer,
+      digest: js.typedarray.ArrayBuffer,
+      hash: Hash,
+      signRequestId: integer
+    ): SignRequest = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], signRequestId = signRequestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignRequest]
     }
     
     extension [Self <: SignRequest](x: Self) {
       
-      inline def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      inline def setDigest(value: ArrayBuffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

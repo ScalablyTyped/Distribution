@@ -22,7 +22,7 @@ object anon {
       
       inline def setOmit(value: js.Array[T]): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
       
-      inline def setOmitVarargs(value: T*): Self = StObject.set(x, "omit", js.Array(value :_*))
+      inline def setOmitVarargs(value: T*): Self = StObject.set(x, "omit", js.Array(value*))
     }
   }
   
@@ -41,7 +41,7 @@ object anon {
       
       inline def setPick(value: js.Array[T]): Self = StObject.set(x, "pick", value.asInstanceOf[js.Any])
       
-      inline def setPickVarargs(value: T*): Self = StObject.set(x, "pick", js.Array(value :_*))
+      inline def setPickVarargs(value: T*): Self = StObject.set(x, "pick", js.Array(value*))
     }
   }
 }

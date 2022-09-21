@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.JsxProcessor")
 @js.native
-class JsxProcessor ()
+open class JsxProcessor ()
   extends typings.tabris.mod.JsxProcessor

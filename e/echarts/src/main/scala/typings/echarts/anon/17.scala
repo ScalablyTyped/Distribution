@@ -7,40 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `17` extends StObject {
   
   /**
-    * Specify the delay time before animation start.
-    * Callback function can be used, where different delay time
-    * can be used on different element.
-    *
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
-    *
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-parallel.data.emphasis.lineStyle
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
-  
-  /**
-    * Specify the delay time before update animation.
-    * Callback function can be used, where different delay time
-    * can be used on different element.
-    *
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
-    *
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate
-    */
-  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
 }
 object `17` {
   
@@ -51,12 +20,8 @@ object `17` {
   
   extension [Self <: `17`](x: Self) {
     
-    inline def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
-    
-    inline def setAnimationDelayUpdate(value: js.Function | Double): Self = StObject.set(x, "animationDelayUpdate", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationDelayUpdateUndefined: Self = StObject.set(x, "animationDelayUpdate", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

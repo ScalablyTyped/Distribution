@@ -8,7 +8,7 @@ object loadingScreenMod {
   
   @JSImport("babylonjs/Loading/loadingScreen", "DefaultLoadingScreen")
   @js.native
-  class DefaultLoadingScreen protected ()
+  open class DefaultLoadingScreen protected ()
     extends StObject
        with ILoadingScreen {
     /**
@@ -22,17 +22,19 @@ object loadingScreenMod {
     def this(_renderingCanvas: HTMLCanvasElement, _loadingText: String, _loadingDivBackgroundColor: String) = this()
     def this(_renderingCanvas: HTMLCanvasElement, _loadingText: Unit, _loadingDivBackgroundColor: String) = this()
     
-    /* private */ var _loadingDiv: js.Any = js.native
+    /* private */ var _loadingDiv: Any = js.native
     
-    /* private */ var _loadingDivBackgroundColor: js.Any = js.native
+    /* private */ var _loadingDivBackgroundColor: Any = js.native
     
-    /* private */ var _loadingText: js.Any = js.native
+    /* private */ var _loadingText: Any = js.native
     
-    /* private */ var _loadingTextDiv: js.Any = js.native
+    /* private */ var _loadingTextDiv: Any = js.native
     
-    /* private */ var _renderingCanvas: js.Any = js.native
+    /* private */ var _renderingCanvas: Any = js.native
     
-    /* private */ var _resizeLoadingUI: js.Any = js.native
+    /* private */ var _resizeLoadingUI: Any = js.native
+    
+    /* private */ var _style: Any = js.native
     
     /**
       * Function called to display the loading screen

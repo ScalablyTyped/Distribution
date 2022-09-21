@@ -8,5 +8,5 @@ object tagQueueOutputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/TagQueueOutput", "TagQueueOutput")
   @js.native
-  val TagQueueOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val TagQueueOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

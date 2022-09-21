@@ -52,7 +52,7 @@ object DescribeNetworkInterfaceAttributeResult {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     

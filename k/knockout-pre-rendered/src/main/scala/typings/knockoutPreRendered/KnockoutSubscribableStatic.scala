@@ -10,5 +10,5 @@ trait KnockoutSubscribableStatic
   extends StObject
      with Instantiable0[KnockoutSubscribable[js.Object]] {
   
-  var fn: KnockoutSubscribableFunctions[js.Any] = js.native
+  var fn: KnockoutSubscribableFunctions[Any] = js.native
 }

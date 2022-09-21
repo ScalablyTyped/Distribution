@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("project-oxford", "VisionAPI")
 @js.native
-class VisionAPI () extends StObject {
+open class VisionAPI () extends StObject {
   
   /**
     * This operation does a deep analysis on the given image and then extracts a

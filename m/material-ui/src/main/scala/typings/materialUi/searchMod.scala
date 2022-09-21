@@ -10,10 +10,10 @@ object searchMod {
   
   @JSImport("material-ui/svg-icons/action/search", JSImport.Default)
   @js.native
-  class default () extends ActionSearch
+  open class default () extends ActionSearch
   
   @JSImport("material-ui/svg-icons/action/search", "ActionSearch")
   @js.native
-  class ActionSearch ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSearch ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -44,7 +44,7 @@ object anon {
       
       inline def setGrid(value: js.Array[Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
+      inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value*))
       
       inline def setMaxHeight(value: Unit): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       

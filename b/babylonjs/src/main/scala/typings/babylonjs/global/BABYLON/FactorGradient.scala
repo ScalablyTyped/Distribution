@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.FactorGradient")
 @js.native
-class FactorGradient protected ()
+open class FactorGradient protected ()
   extends StObject
      with typings.babylonjs.BABYLON.FactorGradient {
   /**

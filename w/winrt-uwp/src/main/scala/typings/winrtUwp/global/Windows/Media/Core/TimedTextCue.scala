@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Core.TimedTextCue")
 @js.native
 /** Initializes a new instance of the TimedTextCue class. */
-class TimedTextCue ()
+open class TimedTextCue ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.TimedTextCue {
   

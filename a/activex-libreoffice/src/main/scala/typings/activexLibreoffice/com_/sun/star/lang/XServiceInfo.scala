@@ -51,7 +51,7 @@ object XServiceInfo {
     acquire: () => Unit,
     getImplementationName: () => String,
     getSupportedServiceNames: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     supportsService: String => Boolean
   ): XServiceInfo = {

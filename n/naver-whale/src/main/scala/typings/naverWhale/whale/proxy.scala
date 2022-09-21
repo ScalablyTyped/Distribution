@@ -150,7 +150,7 @@ object proxy {
       
       inline def setBypassListUndefined: Self = StObject.set(x, "bypassList", js.undefined)
       
-      inline def setBypassListVarargs(value: String*): Self = StObject.set(x, "bypassList", js.Array(value :_*))
+      inline def setBypassListVarargs(value: String*): Self = StObject.set(x, "bypassList", js.Array(value*))
       
       inline def setFallbackProxy(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "fallbackProxy", value.asInstanceOf[js.Any])
       

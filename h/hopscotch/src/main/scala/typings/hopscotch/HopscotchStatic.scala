@@ -53,7 +53,7 @@ trait HopscotchStatic extends StObject {
   /**
     * Registers a callback helper. See the section about Helpers below.
     */
-  def registerHelper(id: String, helper: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def registerHelper(id: String, helper: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   /**
     * Remove callbacks for hopscotch events. If tourOnly is set to true, only removes

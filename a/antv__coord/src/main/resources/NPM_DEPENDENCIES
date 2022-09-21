@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/coord" : "0.3.0"
+      "@antv/coord" : "0.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/coord" : "0.3.0"
+      "@antv/coord" : "0.4.4"
     }
   ],
   "compile-devDependencies" : [

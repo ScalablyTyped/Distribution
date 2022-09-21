@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRecipesRequest extends StObject {
   
   /**
+    *  Filters returned recipes by domain for a Domain dataset group. Only recipes (Domain dataset group use cases) for this domain are included in the response. If you don't specify a domain, all recipes are returned. 
+    */
+  var domain: js.UndefOr[Domain] = js.undefined
+  
+  /**
     * The maximum number of recipes to return.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
@@ -29,6 +34,10 @@ object ListRecipesRequest {
   }
   
   extension [Self <: ListRecipesRequest](x: Self) {
+    
+    inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

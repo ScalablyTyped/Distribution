@@ -4,7 +4,6 @@ import typings.sipJs.clientTransactionMod.ClientTransaction
 import typings.sipJs.coreTransportMod.Transport
 import typings.sipJs.messagesMod.OutgoingRequestMessage
 import typings.sipJs.transactionUserMod.ClientTransactionUser
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object nonInviteClientTransactionMod {
   
   @JSImport("sip.js/lib/core/transactions/non-invite-client-transaction", "NonInviteClientTransaction")
   @js.native
-  class NonInviteClientTransaction protected () extends ClientTransaction {
+  open class NonInviteClientTransaction protected () extends ClientTransaction {
     /**
       * Constructor
       * Upon construction, the outgoing request's Via header is updated by calling `setViaHeader`.
@@ -27,9 +26,9 @@ object nonInviteClientTransactionMod {
       */
     def this(request: OutgoingRequestMessage, transport: Transport, user: ClientTransactionUser) = this()
     
-    /* private */ var F: js.Any = js.native
+    /* private */ var F: Any = js.native
     
-    /* private */ var K: js.Any = js.native
+    /* private */ var K: Any = js.native
     
     /**
       * The client transaction SHOULD inform the TU that a transport failure has occurred,
@@ -38,13 +37,13 @@ object nonInviteClientTransactionMod {
       * https://tools.ietf.org/html/rfc3261#section-17.1.4
       * @param error - Transport error
       */
-    /* protected */ def onTransportError(error: Error): Unit = js.native
+    /* protected */ def onTransportError(error: js.Error): Unit = js.native
     
     /**
       * Execute a state transition.
       * @param newState - New state.
       */
-    /* private */ var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: Any = js.native
     
     /**
       * If Timer F fires while the client transaction is still in the
@@ -54,13 +53,13 @@ object nonInviteClientTransactionMod {
       * a timeout, and the client transaction MUST transition to the terminated state.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2.2
       */
-    /* private */ var timerF: js.Any = js.native
+    /* private */ var timerF: Any = js.native
     
     /**
       * If Timer K fires while in this (COMPLETED) state, the client transaction
       * MUST transition to the "Terminated" state.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2.2
       */
-    /* private */ var timerK: js.Any = js.native
+    /* private */ var timerK: Any = js.native
   }
 }

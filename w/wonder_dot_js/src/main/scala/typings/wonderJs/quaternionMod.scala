@@ -10,7 +10,7 @@ object quaternionMod {
   
   @JSImport("wonder.js/dist/es2015/math/Quaternion", "Quaternion")
   @js.native
-  class Quaternion () extends StObject {
+  open class Quaternion () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()
@@ -29,14 +29,14 @@ object quaternionMod {
     
     def conjugate(): this.type = js.native
     
-    def getEulerAngles(): js.Any = js.native
+    def getEulerAngles(): Any = js.native
     
     def invert(): this.type = js.native
     
-    def length(): js.Any = js.native
+    def length(): Any = js.native
     
-    def multiply(rhs1: Quaternion, rhs2: Quaternion): js.Any = js.native
-    def multiply(rhs: Quaternion): js.Any = js.native
+    def multiply(rhs1: Quaternion, rhs2: Quaternion): Any = js.native
+    def multiply(rhs: Quaternion): Any = js.native
     
     def multiplyVector3(vector: Vector3): Vector3 = js.native
     

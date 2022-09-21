@@ -8,7 +8,6 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object pluginPbMod {
   
   @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorRequest")
   @js.native
-  class CodeGeneratorRequest () extends Message {
+  open class CodeGeneratorRequest () extends Message {
     
     def addFileToGenerate(value: String): String = js.native
     def addFileToGenerate(value: String, index: Double): String = js.native
@@ -63,7 +62,7 @@ object pluginPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): CodeGeneratorRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CodeGeneratorRequest]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): CodeGeneratorRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CodeGeneratorRequest]
     
     inline def deserializeBinaryFromReader(message: CodeGeneratorRequest, reader: BinaryReader): CodeGeneratorRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[CodeGeneratorRequest]
     
@@ -110,7 +109,7 @@ object pluginPbMod {
         
         inline def setFileToGenerateList(value: js.Array[String]): Self = StObject.set(x, "fileToGenerateList", value.asInstanceOf[js.Any])
         
-        inline def setFileToGenerateListVarargs(value: String*): Self = StObject.set(x, "fileToGenerateList", js.Array(value :_*))
+        inline def setFileToGenerateListVarargs(value: String*): Self = StObject.set(x, "fileToGenerateList", js.Array(value*))
         
         inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
         
@@ -118,14 +117,14 @@ object pluginPbMod {
         
         inline def setProtoFileList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject]): Self = StObject.set(x, "protoFileList", value.asInstanceOf[js.Any])
         
-        inline def setProtoFileListVarargs(value: typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject*): Self = StObject.set(x, "protoFileList", js.Array(value :_*))
+        inline def setProtoFileListVarargs(value: typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject*): Self = StObject.set(x, "protoFileList", js.Array(value*))
       }
     }
   }
   
   @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse")
   @js.native
-  class CodeGeneratorResponse () extends Message {
+  open class CodeGeneratorResponse () extends Message {
     
     def addFile(): File = js.native
     def addFile(value: Unit, index: Double): File = js.native
@@ -136,15 +135,23 @@ object pluginPbMod {
     
     def clearFileList(): CodeGeneratorResponse = js.native
     
+    def clearSupportedFeatures(): CodeGeneratorResponse = js.native
+    
     def getError(): js.UndefOr[String] = js.native
     
     def getFileList(): js.Array[File] = js.native
     
+    def getSupportedFeatures(): js.UndefOr[Double] = js.native
+    
     def hasError(): Boolean = js.native
+    
+    def hasSupportedFeatures(): Boolean = js.native
     
     def setError(value: String): CodeGeneratorResponse = js.native
     
     def setFileList(value: js.Array[File]): CodeGeneratorResponse = js.native
+    
+    def setSupportedFeatures(value: Double): CodeGeneratorResponse = js.native
   }
   /* static members */
   object CodeGeneratorResponse {
@@ -153,9 +160,31 @@ object pluginPbMod {
     @js.native
     val ^ : js.Any = js.native
     
+    @js.native
+    sealed trait Feature extends StObject
+    @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse.Feature")
+    @js.native
+    object Feature extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[Feature & Double] = js.native
+      
+      @js.native
+      sealed trait FEATURE_NONE
+        extends StObject
+           with Feature
+      /* 0 */ val FEATURE_NONE: typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.Feature.FEATURE_NONE & Double = js.native
+      
+      @js.native
+      sealed trait FEATURE_PROTO3_OPTIONAL
+        extends StObject
+           with Feature
+      /* 1 */ val FEATURE_PROTO3_OPTIONAL: typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.Feature.FEATURE_PROTO3_OPTIONAL & Double = js.native
+    }
+    
     @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse.File")
     @js.native
-    class File () extends Message {
+    open class File () extends Message {
       
       def clearContent(): File = js.native
       
@@ -188,7 +217,7 @@ object pluginPbMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def deserializeBinary(bytes: Uint8Array): File = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[File]
+      inline def deserializeBinary(bytes: js.typedarray.Uint8Array): File = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[File]
       
       inline def deserializeBinaryFromReader(message: File, reader: BinaryReader): File = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[File]
       
@@ -239,7 +268,7 @@ object pluginPbMod {
       }
     }
     
-    inline def deserializeBinary(bytes: Uint8Array): CodeGeneratorResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CodeGeneratorResponse]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): CodeGeneratorResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CodeGeneratorResponse]
     
     inline def deserializeBinaryFromReader(message: CodeGeneratorResponse, reader: BinaryReader): CodeGeneratorResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[CodeGeneratorResponse]
     
@@ -263,6 +292,8 @@ object pluginPbMod {
       var error: js.UndefOr[String] = js.undefined
       
       var fileList: js.Array[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]
+      
+      var supportedFeatures: js.UndefOr[Double] = js.undefined
     }
     object AsObject {
       
@@ -279,14 +310,18 @@ object pluginPbMod {
         
         inline def setFileList(value: js.Array[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
         
-        inline def setFileListVarargs(value: typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+        inline def setFileListVarargs(value: typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject*): Self = StObject.set(x, "fileList", js.Array(value*))
+        
+        inline def setSupportedFeatures(value: Double): Self = StObject.set(x, "supportedFeatures", value.asInstanceOf[js.Any])
+        
+        inline def setSupportedFeaturesUndefined: Self = StObject.set(x, "supportedFeatures", js.undefined)
       }
     }
   }
   
   @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "Version")
   @js.native
-  class Version () extends Message {
+  open class Version () extends Message {
     
     def clearMajor(): Version = js.native
     
@@ -327,7 +362,7 @@ object pluginPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Version]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Version]
     
     inline def deserializeBinaryFromReader(message: Version, reader: BinaryReader): Version = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Version]
     

@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Native content for a creative.
-  */
 trait SchemaNativeContent extends StObject {
   
   /**
-    * The name of the advertiser or sponsor, to be displayed in the ad
-    * creative.
+    * The name of the advertiser or sponsor, to be displayed in the ad creative.
     */
-  var advertiserName: js.UndefOr[String] = js.undefined
+  var advertiserName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The app icon, for app download ads.
@@ -23,27 +19,27 @@ trait SchemaNativeContent extends StObject {
   /**
     * A long description of the ad.
     */
-  var body: js.UndefOr[String] = js.undefined
+  var body: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A label for the button that the user is supposed to click.
     */
-  var callToAction: js.UndefOr[String] = js.undefined
+  var callToAction: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The URL that the browser/SDK will load when the user clicks the ad.
     */
-  var clickLinkUrl: js.UndefOr[String] = js.undefined
+  var clickLinkUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The URL to use for click tracking.
     */
-  var clickTrackingUrl: js.UndefOr[String] = js.undefined
+  var clickTrackingUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A short title for the ad.
     */
-  var headline: js.UndefOr[String] = js.undefined
+  var headline: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A large image.
@@ -51,29 +47,29 @@ trait SchemaNativeContent extends StObject {
   var image: js.UndefOr[SchemaImage] = js.undefined
   
   /**
-    * A smaller image, for the advertiser&#39;s logo.
+    * A smaller image, for the advertiser's logo.
     */
   var logo: js.UndefOr[SchemaImage] = js.undefined
   
   /**
     * The price of the promoted app including currency info.
     */
-  var priceDisplayText: js.UndefOr[String] = js.undefined
+  var priceDisplayText: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The app rating in the app store. Must be in the range [0-5].
     */
-  var starRating: js.UndefOr[Double] = js.undefined
+  var starRating: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The URL to the app store to purchase/download the promoted app.
     */
-  var storeUrl: js.UndefOr[String] = js.undefined
+  var storeUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The URL to fetch a native video ad.
     */
-  var videoUrl: js.UndefOr[String] = js.undefined
+  var videoUrl: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaNativeContent {
   
@@ -86,6 +82,8 @@ object SchemaNativeContent {
     
     inline def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
     
+    inline def setAdvertiserNameNull: Self = StObject.set(x, "advertiserName", null)
+    
     inline def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
     
     inline def setAppIcon(value: SchemaImage): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
@@ -94,21 +92,31 @@ object SchemaNativeContent {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
+    inline def setBodyNull: Self = StObject.set(x, "body", null)
+    
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setCallToAction(value: String): Self = StObject.set(x, "callToAction", value.asInstanceOf[js.Any])
+    
+    inline def setCallToActionNull: Self = StObject.set(x, "callToAction", null)
     
     inline def setCallToActionUndefined: Self = StObject.set(x, "callToAction", js.undefined)
     
     inline def setClickLinkUrl(value: String): Self = StObject.set(x, "clickLinkUrl", value.asInstanceOf[js.Any])
     
+    inline def setClickLinkUrlNull: Self = StObject.set(x, "clickLinkUrl", null)
+    
     inline def setClickLinkUrlUndefined: Self = StObject.set(x, "clickLinkUrl", js.undefined)
     
     inline def setClickTrackingUrl(value: String): Self = StObject.set(x, "clickTrackingUrl", value.asInstanceOf[js.Any])
     
+    inline def setClickTrackingUrlNull: Self = StObject.set(x, "clickTrackingUrl", null)
+    
     inline def setClickTrackingUrlUndefined: Self = StObject.set(x, "clickTrackingUrl", js.undefined)
     
     inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
+    
+    inline def setHeadlineNull: Self = StObject.set(x, "headline", null)
     
     inline def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
     
@@ -122,17 +130,25 @@ object SchemaNativeContent {
     
     inline def setPriceDisplayText(value: String): Self = StObject.set(x, "priceDisplayText", value.asInstanceOf[js.Any])
     
+    inline def setPriceDisplayTextNull: Self = StObject.set(x, "priceDisplayText", null)
+    
     inline def setPriceDisplayTextUndefined: Self = StObject.set(x, "priceDisplayText", js.undefined)
     
     inline def setStarRating(value: Double): Self = StObject.set(x, "starRating", value.asInstanceOf[js.Any])
+    
+    inline def setStarRatingNull: Self = StObject.set(x, "starRating", null)
     
     inline def setStarRatingUndefined: Self = StObject.set(x, "starRating", js.undefined)
     
     inline def setStoreUrl(value: String): Self = StObject.set(x, "storeUrl", value.asInstanceOf[js.Any])
     
+    inline def setStoreUrlNull: Self = StObject.set(x, "storeUrl", null)
+    
     inline def setStoreUrlUndefined: Self = StObject.set(x, "storeUrl", js.undefined)
     
     inline def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
+    
+    inline def setVideoUrlNull: Self = StObject.set(x, "videoUrl", null)
     
     inline def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
   }

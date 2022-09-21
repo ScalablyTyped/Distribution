@@ -1,26 +1,30 @@
 package typings.devextreme.mod.DevExpress.data
 
+import typings.devextreme.anon.CustomQueryParams
 import typings.devextreme.anon.Expand
-import typings.devextreme.mod.global.JQueryPromise
-import typings.devextreme.mod.global.Promise
+import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODataStore
+trait ODataStore[TItem, TKey]
   extends StObject
-     with Store {
-  
-  def byKey(key: String, extraOptions: Expand): Promise[js.Any] & JQueryPromise[js.Any] = js.native
-  /**
-    * [descr:ODataStore.byKey(key, extraOptions)]
-    */
-  def byKey(key: js.Any, extraOptions: Expand): Promise[js.Any] & JQueryPromise[js.Any] = js.native
-  def byKey(key: Double, extraOptions: Expand): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+     with Store[TItem, TKey]
+     with typings.devextreme.mod.DevExpress.data.utils.Store[TItem, TKey] {
   
   /**
-    * [descr:ODataStore.createQuery(loadOptions)]
+    * Gets an entity with a specific key.
     */
-  def createQuery(loadOptions: js.Any): js.Any = js.native
+  def byKey(key: TKey, extraOptions: Expand): DxPromise[TItem] = js.native
+  
+  /**
+    * Creates a Query for the OData endpoint.
+    */
+  def createQuery(): Query = js.native
+  def createQuery(loadOptions: CustomQueryParams): Query = js.native
+}
+object ODataStore {
+  
+  type Options[TItem, TKey] = ODataStoreOptions[TItem, TKey]
 }

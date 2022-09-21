@@ -10,10 +10,10 @@ object formatListBulletedMod {
   
   @JSImport("material-ui/svg-icons/editor/format-list-bulleted", JSImport.Default)
   @js.native
-  class default () extends EditorFormatListBulleted
+  open class default () extends EditorFormatListBulleted
   
   @JSImport("material-ui/svg-icons/editor/format-list-bulleted", "EditorFormatListBulleted")
   @js.native
-  class EditorFormatListBulleted ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatListBulleted ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

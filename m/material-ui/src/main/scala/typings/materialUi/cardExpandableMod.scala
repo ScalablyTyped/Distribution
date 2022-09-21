@@ -10,10 +10,10 @@ object cardExpandableMod {
   
   @JSImport("material-ui/Card/CardExpandable", JSImport.Default)
   @js.native
-  class default () extends CardExpandable
+  open class default () extends CardExpandable
   
   @JSImport("material-ui/Card/CardExpandable", "CardExpandable")
   @js.native
-  class CardExpandable ()
-    extends Component[CardExpandableProps, js.Object, js.Any]
+  open class CardExpandable ()
+    extends Component[CardExpandableProps, js.Object, Any]
 }

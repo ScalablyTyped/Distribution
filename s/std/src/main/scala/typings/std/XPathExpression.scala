@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait XPathExpression extends StObject {
   
+  /* standard dom */
   def evaluate(contextNode: Node): XPathResult = js.native
   def evaluate(contextNode: Node, `type`: Double): XPathResult = js.native
   def evaluate(contextNode: Node, `type`: Double, result: XPathResult): XPathResult = js.native

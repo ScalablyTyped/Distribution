@@ -15,8 +15,7 @@ import typings.mysql2.queryMod.QueryError
 import typings.mysql2.queryMod.QueryOptions
 import typings.mysql2.resultSetHeaderMod.ResultSetHeader
 import typings.mysql2.rowDataPacketMod.RowDataPacket
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.node.bufferMod.global.Buffer
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,11 +35,11 @@ object mod {
   inline def createPoolCluster(): PoolCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")().asInstanceOf[PoolCluster]
   inline def createPoolCluster(config: PoolClusterOptions): PoolCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")(config.asInstanceOf[js.Any]).asInstanceOf[PoolCluster]
   
-  inline def escape(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def format(sql: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def format(sql: String, values: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def format(sql: String, values: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(sql: String, values: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(sql: String, values: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait Connection
@@ -53,88 +52,53 @@ object mod {
           /* err */ QueryError | Null, 
           /* result */ T, 
           /* fields */ js.UndefOr[js.Array[FieldPacket]], 
-          js.Any
+          Any
         ]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Any,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Array[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: Any): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: StringDictionary[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Any,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Array[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: Any): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: StringDictionary[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
     
     def ping(): Unit = js.native
-    def ping(callback: js.Function1[/* err */ QueryError | Null, js.Any]): Unit = js.native
+    def ping(callback: js.Function1[/* err */ QueryError | Null, Any]): Unit = js.native
     
     def promise(): typings.mysql2.promiseMod.Connection = js.native
     def promise(promiseImpl: PromiseConstructor): typings.mysql2.promiseMod.Connection = js.native
@@ -144,17 +108,17 @@ object mod {
     extends StObject
        with typings.mysql2.connectionMod.ConnectionOptions {
     
-    var Promise: js.UndefOr[js.Any] = js.undefined
+    var Promise: js.UndefOr[Any] = js.undefined
     
     var authPlugins: js.UndefOr[StringDictionary[typings.mysql2.mod.authPlugins]] = js.undefined
     
-    var authSwitchHandler: js.UndefOr[js.Function2[/* data */ js.Any, /* callback */ js.Function0[Unit], js.Any]] = js.undefined
+    var authSwitchHandler: js.UndefOr[js.Function2[/* data */ Any, /* callback */ js.Function0[Unit], Any]] = js.undefined
     
     var charsetNumber: js.UndefOr[Double] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
-    var connectAttributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var connectAttributes: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var connectionLimit: js.UndefOr[Double] = js.undefined
     
@@ -170,13 +134,11 @@ object mod {
     
     var passwordSha1: js.UndefOr[String] = js.undefined
     
-    var pool: js.UndefOr[js.Any] = js.undefined
+    var pool: js.UndefOr[Any] = js.undefined
     
     var queueLimit: js.UndefOr[Double] = js.undefined
     
-    var rowsAsArray: js.UndefOr[Boolean] = js.undefined
-    
-    var stream: js.UndefOr[js.Any] = js.undefined
+    var stream: js.UndefOr[Any] = js.undefined
     
     var uri: js.UndefOr[String] = js.undefined
     
@@ -195,7 +157,7 @@ object mod {
       
       inline def setAuthPluginsUndefined: Self = StObject.set(x, "authPlugins", js.undefined)
       
-      inline def setAuthSwitchHandler(value: (/* data */ js.Any, /* callback */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "authSwitchHandler", js.Any.fromFunction2(value))
+      inline def setAuthSwitchHandler(value: (/* data */ Any, /* callback */ js.Function0[Unit]) => Any): Self = StObject.set(x, "authSwitchHandler", js.Any.fromFunction2(value))
       
       inline def setAuthSwitchHandlerUndefined: Self = StObject.set(x, "authSwitchHandler", js.undefined)
       
@@ -207,7 +169,7 @@ object mod {
       
       inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      inline def setConnectAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "connectAttributes", value.asInstanceOf[js.Any])
+      inline def setConnectAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "connectAttributes", value.asInstanceOf[js.Any])
       
       inline def setConnectAttributesUndefined: Self = StObject.set(x, "connectAttributes", js.undefined)
       
@@ -239,11 +201,11 @@ object mod {
       
       inline def setPasswordSha1Undefined: Self = StObject.set(x, "passwordSha1", js.undefined)
       
-      inline def setPool(value: js.Any): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: Any): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
       inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
       
-      inline def setPromise(value: js.Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
@@ -251,11 +213,7 @@ object mod {
       
       inline def setQueueLimitUndefined: Self = StObject.set(x, "queueLimit", js.undefined)
       
-      inline def setRowsAsArray(value: Boolean): Self = StObject.set(x, "rowsAsArray", value.asInstanceOf[js.Any])
-      
-      inline def setRowsAsArrayUndefined: Self = StObject.set(x, "rowsAsArray", js.undefined)
-      
-      inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -280,96 +238,67 @@ object mod {
           /* err */ QueryError | Null, 
           /* result */ T, 
           /* fields */ js.UndefOr[js.Array[FieldPacket]], 
-          js.Any
+          Any
         ]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Any,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Array[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: Any): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: StringDictionary[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Any,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Array[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: Any): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: StringDictionary[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
     
-    def getConnection(callback: js.Function2[/* err */ ErrnoException, /* connection */ PoolConnection, js.Any]): Unit = js.native
+    def getConnection(
+      callback: js.Function2[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+          /* connection */ PoolConnection, 
+          Any
+        ]
+    ): Unit = js.native
     
     @JSName("on")
-    def on_acquire(event: acquire, listener: js.Function1[/* connection */ PoolConnection, js.Any]): this.type = js.native
+    def on_acquire(event: acquire, listener: js.Function1[/* connection */ PoolConnection, Any]): this.type = js.native
     @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* connection */ PoolConnection, js.Any]): this.type = js.native
+    def on_connection(event: connection, listener: js.Function1[/* connection */ PoolConnection, Any]): this.type = js.native
     @JSName("on")
-    def on_enqueue(event: enqueue, listener: js.Function0[js.Any]): this.type = js.native
+    def on_enqueue(event: enqueue, listener: js.Function0[Any]): this.type = js.native
     @JSName("on")
-    def on_release(event: release, listener: js.Function1[/* connection */ PoolConnection, js.Any]): this.type = js.native
+    def on_release(event: release, listener: js.Function1[/* connection */ PoolConnection, Any]): this.type = js.native
     
     def promise(): typings.mysql2.promiseMod.Pool = js.native
     def promise(promiseImpl: PromiseConstructor): typings.mysql2.promiseMod.Pool = js.native
@@ -380,7 +309,7 @@ object mod {
   - typings.node.eventsMod.EventEmitter because Already inherited
   - typings.mysql2.connectionMod.Connection because Already inherited
   - typings.mysql2.connectionMod.^ because Already inherited
-  - typings.mysql2.mod.Connection because var conflicts: config, threadId. Inlined execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, ping, ping, promise, promise */ @js.native
+  - typings.mysql2.mod.Connection because var conflicts: authorized, config, threadId. Inlined execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, execute, ping, ping, promise, promise */ @js.native
   trait PoolConnection
     extends typings.mysql2.poolConnectionMod.^ {
     
@@ -391,88 +320,53 @@ object mod {
           /* err */ QueryError | Null, 
           /* result */ T, 
           /* fields */ js.UndefOr[js.Array[FieldPacket]], 
-          js.Any
+          Any
         ]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Any,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Array[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: Any): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: StringDictionary[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Any,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[Any]): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Array[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
-    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): Query = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: Any): Query = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: StringDictionary[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): Query = js.native
     
     def ping(): Unit = js.native
-    def ping(callback: js.Function1[/* err */ QueryError | Null, js.Any]): Unit = js.native
+    def ping(callback: js.Function1[/* err */ QueryError | Null, Any]): Unit = js.native
     
     def promise(): typings.mysql2.promiseMod.Connection = js.native
     def promise(promiseImpl: PromiseConstructor): typings.mysql2.promiseMod.Connection = js.native
@@ -484,21 +378,21 @@ object mod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mysql2.connectionMod.ConnectionOptions because Already inherited
-  - typings.mysql2.mod.ConnectionOptions because var conflicts: bigNumberStrings, charset, connectTimeout, connectionLimit, database, dateStrings, debug, flags, host, insecureAuth, localAddress, multipleStatements, password, port, queryFormat, queueLimit, socketPath, ssl, stringifyObjects, supportBigNumbers, timezone, trace, typeCast, user, waitForConnections. Inlined charsetNumber, compress, authSwitchHandler, connectAttributes, decimalNumbers, isServer, maxPreparedStatements, namedPlaceholders, nestTables, passwordSha1, pool, rowsAsArray, stream, uri, Promise, authPlugins */ trait PoolOptions
+  - typings.mysql2.mod.ConnectionOptions because var conflicts: bigNumberStrings, charset, connectTimeout, connectionLimit, database, dateStrings, debug, flags, host, insecureAuth, localAddress, multipleStatements, password, port, queryFormat, queueLimit, rowsAsArray, socketPath, ssl, stringifyObjects, supportBigNumbers, timezone, trace, typeCast, user, waitForConnections. Inlined charsetNumber, compress, authSwitchHandler, connectAttributes, decimalNumbers, isServer, maxPreparedStatements, namedPlaceholders, nestTables, passwordSha1, pool, stream, uri, Promise, authPlugins */ trait PoolOptions
     extends StObject
        with typings.mysql2.poolMod.PoolOptions {
     
-    var Promise: js.UndefOr[js.Any] = js.undefined
+    var Promise: js.UndefOr[Any] = js.undefined
     
     var authPlugins: js.UndefOr[StringDictionary[typings.mysql2.mod.authPlugins]] = js.undefined
     
-    var authSwitchHandler: js.UndefOr[js.Function2[/* data */ js.Any, /* callback */ js.Function0[Unit], js.Any]] = js.undefined
+    var authSwitchHandler: js.UndefOr[js.Function2[/* data */ Any, /* callback */ js.Function0[Unit], Any]] = js.undefined
     
     var charsetNumber: js.UndefOr[Double] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
-    var connectAttributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var connectAttributes: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var decimalNumbers: js.UndefOr[Boolean] = js.undefined
     
@@ -512,11 +406,9 @@ object mod {
     
     var passwordSha1: js.UndefOr[String] = js.undefined
     
-    var pool: js.UndefOr[js.Any] = js.undefined
+    var pool: js.UndefOr[Any] = js.undefined
     
-    var rowsAsArray: js.UndefOr[Boolean] = js.undefined
-    
-    var stream: js.UndefOr[js.Any] = js.undefined
+    var stream: js.UndefOr[Any] = js.undefined
     
     var uri: js.UndefOr[String] = js.undefined
   }
@@ -533,7 +425,7 @@ object mod {
       
       inline def setAuthPluginsUndefined: Self = StObject.set(x, "authPlugins", js.undefined)
       
-      inline def setAuthSwitchHandler(value: (/* data */ js.Any, /* callback */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "authSwitchHandler", js.Any.fromFunction2(value))
+      inline def setAuthSwitchHandler(value: (/* data */ Any, /* callback */ js.Function0[Unit]) => Any): Self = StObject.set(x, "authSwitchHandler", js.Any.fromFunction2(value))
       
       inline def setAuthSwitchHandlerUndefined: Self = StObject.set(x, "authSwitchHandler", js.undefined)
       
@@ -545,7 +437,7 @@ object mod {
       
       inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      inline def setConnectAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "connectAttributes", value.asInstanceOf[js.Any])
+      inline def setConnectAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "connectAttributes", value.asInstanceOf[js.Any])
       
       inline def setConnectAttributesUndefined: Self = StObject.set(x, "connectAttributes", js.undefined)
       
@@ -573,19 +465,15 @@ object mod {
       
       inline def setPasswordSha1Undefined: Self = StObject.set(x, "passwordSha1", js.undefined)
       
-      inline def setPool(value: js.Any): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: Any): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
       inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
       
-      inline def setPromise(value: js.Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      inline def setRowsAsArray(value: Boolean): Self = StObject.set(x, "rowsAsArray", value.asInstanceOf[js.Any])
-      
-      inline def setRowsAsArrayUndefined: Self = StObject.set(x, "rowsAsArray", js.undefined)
-      
-      inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -597,6 +485,6 @@ object mod {
   
   type authPlugins = js.Function1[
     /* pluginMetadata */ Command, 
-    js.Function1[/* pluginData */ Buffer, js.Promise[String]]
+    js.Function1[/* pluginData */ Buffer, (js.Promise[Buffer | String]) | String | Buffer | Null]
   ]
 }

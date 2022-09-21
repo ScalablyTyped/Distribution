@@ -34,6 +34,6 @@ object PopoverOptions {
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    inline def setLinkVarargs(value: (js.Tuple2[link, js.Array[popoverLinkLinkOptions]])*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: (js.Tuple2[link, js.Array[popoverLinkLinkOptions]])*): Self = StObject.set(x, "link", js.Array(value*))
   }
 }

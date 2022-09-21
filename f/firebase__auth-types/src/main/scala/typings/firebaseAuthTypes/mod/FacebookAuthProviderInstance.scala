@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "FacebookAuthProvider_Instance")
 @js.native
-class FacebookAuthProviderInstance ()
+open class FacebookAuthProviderInstance ()
   extends StObject
      with AuthProvider {
   

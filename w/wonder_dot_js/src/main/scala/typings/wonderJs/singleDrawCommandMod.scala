@@ -10,7 +10,7 @@ object singleDrawCommandMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/command/SingleDrawCommand", "SingleDrawCommand")
   @js.native
-  class SingleDrawCommand () extends QuadCommand {
+  open class SingleDrawCommand () extends QuadCommand {
     
     var normalMatrix: Matrix3 = js.native
   }

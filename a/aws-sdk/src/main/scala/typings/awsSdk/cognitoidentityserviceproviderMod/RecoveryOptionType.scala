@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecoveryOptionType extends StObject {
   
   /**
-    * Specifies the recovery method for a user.
+    * The recovery method for a user.
     */
   var Name: RecoveryOptionNameType
   

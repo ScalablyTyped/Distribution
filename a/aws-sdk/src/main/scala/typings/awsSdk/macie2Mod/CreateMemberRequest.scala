@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateMemberRequest extends StObject {
   
   /**
-    * The details for the account to associate with the master account.
+    * The details of the account to associate with the administrator account.
     */
   var account: AccountDetail
   

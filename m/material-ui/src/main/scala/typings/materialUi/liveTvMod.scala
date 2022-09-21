@@ -10,10 +10,10 @@ object liveTvMod {
   
   @JSImport("material-ui/svg-icons/notification/live-tv", JSImport.Default)
   @js.native
-  class default () extends NotificationLiveTv
+  open class default () extends NotificationLiveTv
   
   @JSImport("material-ui/svg-icons/notification/live-tv", "NotificationLiveTv")
   @js.native
-  class NotificationLiveTv ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationLiveTv ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

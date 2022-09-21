@@ -27,6 +27,6 @@ object Compressed {
     
     inline def setSourceType(value: js.Array[String]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    inline def setSourceTypeVarargs(value: String*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: String*): Self = StObject.set(x, "sourceType", js.Array(value*))
   }
 }

@@ -21,6 +21,6 @@ object ErrorInfo {
     
     inline def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
     
-    inline def setErrorMessagesVarargs(value: ErrorMessage*): Self = StObject.set(x, "errorMessages", js.Array(value :_*))
+    inline def setErrorMessagesVarargs(value: ErrorMessage*): Self = StObject.set(x, "errorMessages", js.Array(value*))
   }
 }

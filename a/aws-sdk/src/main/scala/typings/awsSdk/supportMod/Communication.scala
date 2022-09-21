@@ -12,17 +12,17 @@ trait Communication extends StObject {
   var attachmentSet: js.UndefOr[AttachmentSet] = js.undefined
   
   /**
-    * The text of the communication between the customer and AWS Support.
+    * The text of the communication between the customer and Amazon Web Services Support.
     */
   var body: js.UndefOr[CommunicationBody] = js.undefined
   
   /**
-    * The AWS Support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-12345678910-2013-c4c1d2bf33c5cf47 
+    * The support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-12345678910-2013-c4c1d2bf33c5cf47 
     */
   var caseId: js.UndefOr[CaseId] = js.undefined
   
   /**
-    * The identity of the account that submitted, or responded to, the support case. Customer entries include the role or IAM user as well as the email address. For example, "AdminRole (Role) &lt;someone@example.com&gt;. Entries from the AWS Support team display "Amazon Web Services," and do not show an email address. 
+    * The identity of the account that submitted, or responded to, the support case. Customer entries include the role or IAM user as well as the email address. For example, "AdminRole (Role) &lt;janedoe@example.com&gt;. Entries from the Amazon Web Services Support team display "Amazon Web Services," and don't show an email address. 
     */
   var submittedBy: js.UndefOr[SubmittedBy] = js.undefined
   
@@ -44,7 +44,7 @@ object Communication {
     
     inline def setAttachmentSetUndefined: Self = StObject.set(x, "attachmentSet", js.undefined)
     
-    inline def setAttachmentSetVarargs(value: AttachmentDetails*): Self = StObject.set(x, "attachmentSet", js.Array(value :_*))
+    inline def setAttachmentSetVarargs(value: AttachmentDetails*): Self = StObject.set(x, "attachmentSet", js.Array(value*))
     
     inline def setBody(value: CommunicationBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object endpointsMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/endpoints", "defaultRegionInfoProvider")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/endpoints", "defaultRegionInfoProvider")
   @js.native
   val defaultRegionInfoProvider: RegionInfoProvider = js.native
 }

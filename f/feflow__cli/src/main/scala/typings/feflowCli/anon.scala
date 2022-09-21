@@ -23,7 +23,7 @@ object anon {
       
       inline def set_underscore(value: js.Array[Double | String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
-      inline def set_underscoreVarargs(value: (Double | String)*): Self = StObject.set(x, "_", js.Array(value :_*))
+      inline def set_underscoreVarargs(value: (Double | String)*): Self = StObject.set(x, "_", js.Array(value*))
     }
   }
 }

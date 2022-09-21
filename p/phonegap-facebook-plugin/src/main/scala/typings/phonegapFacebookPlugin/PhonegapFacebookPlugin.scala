@@ -79,12 +79,12 @@ object PhonegapFacebookPlugin {
     def api(
       graphPath: String,
       permissions: js.Array[String],
-      successCallback: js.Function1[/* result */ js.Any, Unit]
+      successCallback: js.Function1[/* result */ Any, Unit]
     ): Unit = js.native
     def api(
       graphPath: String,
       permissions: js.Array[String],
-      successCallback: js.Function1[/* result */ js.Any, Unit],
+      successCallback: js.Function1[/* result */ Any, Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     def api(
@@ -134,34 +134,34 @@ object PhonegapFacebookPlugin {
       * @param failureCallback The callback to be executed when the call fails.
       */
     def logEvent(name: String): Unit = js.native
-    def logEvent(name: String, params: js.Any): Unit = js.native
-    def logEvent(name: String, params: js.Any, valueToSum: Double): Unit = js.native
-    def logEvent(name: String, params: js.Any, valueToSum: Double, successCallback: js.Function0[Unit]): Unit = js.native
+    def logEvent(name: String, params: Any): Unit = js.native
+    def logEvent(name: String, params: Any, valueToSum: Double): Unit = js.native
+    def logEvent(name: String, params: Any, valueToSum: Double, successCallback: js.Function0[Unit]): Unit = js.native
     def logEvent(
       name: String,
-      params: js.Any,
+      params: Any,
       valueToSum: Double,
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     def logEvent(
       name: String,
-      params: js.Any,
+      params: Any,
       valueToSum: Double,
       successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
-    def logEvent(name: String, params: js.Any, valueToSum: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logEvent(name: String, params: Any, valueToSum: Unit, successCallback: js.Function0[Unit]): Unit = js.native
     def logEvent(
       name: String,
-      params: js.Any,
+      params: Any,
       valueToSum: Unit,
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     def logEvent(
       name: String,
-      params: js.Any,
+      params: Any,
       valueToSum: Unit,
       successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]

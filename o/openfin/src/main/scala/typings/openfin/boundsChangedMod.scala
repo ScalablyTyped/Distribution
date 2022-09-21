@@ -14,7 +14,7 @@ object boundsChangedMod {
   
   @JSImport("openfin/_v2/api/window/bounds-changed", JSImport.Default)
   @js.native
-  class default () extends BoundsChangedReply
+  open class default () extends BoundsChangedReply
   
   /* Rewritten from type alias, can be one of: 
     - typings.openfin.openfinNumbers.`0`

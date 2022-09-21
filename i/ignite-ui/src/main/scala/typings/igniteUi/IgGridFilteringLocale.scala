@@ -10,7 +10,7 @@ trait IgGridFilteringLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * 'Advance Button' label that is used for the predefined filtering conditions in the filter dropdowns.

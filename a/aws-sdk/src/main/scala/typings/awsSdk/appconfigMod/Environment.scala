@@ -61,7 +61,7 @@ object Environment {
     
     inline def setMonitorsUndefined: Self = StObject.set(x, "Monitors", js.undefined)
     
-    inline def setMonitorsVarargs(value: Monitor*): Self = StObject.set(x, "Monitors", js.Array(value :_*))
+    inline def setMonitorsVarargs(value: Monitor*): Self = StObject.set(x, "Monitors", js.Array(value*))
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

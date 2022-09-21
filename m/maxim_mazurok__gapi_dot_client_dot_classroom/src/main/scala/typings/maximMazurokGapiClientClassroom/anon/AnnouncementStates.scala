@@ -86,7 +86,7 @@ object AnnouncementStates {
     
     inline def setAnnouncementStatesUndefined: Self = StObject.set(x, "announcementStates", js.undefined)
     
-    inline def setAnnouncementStatesVarargs(value: String*): Self = StObject.set(x, "announcementStates", js.Array(value :_*))
+    inline def setAnnouncementStatesVarargs(value: String*): Self = StObject.set(x, "announcementStates", js.Array(value*))
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

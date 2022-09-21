@@ -1,20 +1,18 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antDesignProLayout.anon.Color
 import typings.antDesignProLayout.anon.DefaultMessage
-import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.RefAttributes
+import typings.react.mod.ForwardRefRenderFunction
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object themeColorMod extends Shortcut {
+object themeColorMod {
   
-  @JSImport("@ant-design/pro-layout/lib/SettingDrawer/ThemeColor", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/es/components/SettingDrawer/ThemeColor", "ThemeColor")
   @js.native
-  val default: ForwardRefExoticComponent[ThemeColorProps & RefAttributes[HTMLDivElement]] = js.native
+  val ThemeColor: ForwardRefRenderFunction[HTMLDivElement, ThemeColorProps] = js.native
   
   trait TagProps extends StObject {
     
@@ -51,39 +49,48 @@ object themeColorMod extends Shortcut {
   
   trait ThemeColorProps extends StObject {
     
-    var colors: js.UndefOr[js.Array[Color]] = js.undefined
+    var colorList: js.UndefOr[js.Array[Color]] = js.undefined
     
     def formatMessage(data: DefaultMessage): String
     
+    var hashId: String
+    
     def onChange(color: String): Unit
+    
+    var prefixCls: String
     
     var value: String
   }
   object ThemeColorProps {
     
-    inline def apply(formatMessage: DefaultMessage => String, onChange: String => Unit, value: String): ThemeColorProps = {
-      val __obj = js.Dynamic.literal(formatMessage = js.Any.fromFunction1(formatMessage), onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
+    inline def apply(
+      formatMessage: DefaultMessage => String,
+      hashId: String,
+      onChange: String => Unit,
+      prefixCls: String,
+      value: String
+    ): ThemeColorProps = {
+      val __obj = js.Dynamic.literal(formatMessage = js.Any.fromFunction1(formatMessage), hashId = hashId.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), prefixCls = prefixCls.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThemeColorProps]
     }
     
     extension [Self <: ThemeColorProps](x: Self) {
       
-      inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColorList(value: js.Array[Color]): Self = StObject.set(x, "colorList", value.asInstanceOf[js.Any])
       
-      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorListUndefined: Self = StObject.set(x, "colorList", js.undefined)
       
-      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorListVarargs(value: Color*): Self = StObject.set(x, "colorList", js.Array(value*))
       
       inline def setFormatMessage(value: DefaultMessage => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
       
+      inline def setHashId(value: String): Self = StObject.set(x, "hashId", value.asInstanceOf[js.Any])
+      
       inline def setOnChange(value: String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = ForwardRefExoticComponent[ThemeColorProps & RefAttributes[HTMLDivElement]]
-  
-  /* This means you don't have to write `default`, but can instead just say `themeColorMod.foo` */
-  override def _to: ForwardRefExoticComponent[ThemeColorProps & RefAttributes[HTMLDivElement]] = default
 }

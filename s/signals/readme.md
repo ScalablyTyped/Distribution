@@ -11,14 +11,11 @@ Custom Event/Messaging System
 | Full name          | signals |
 | Keywords           | js-signals, signals, pub/sub, event, publish, subscribe, observer |
 | # releases         | 0 |
-| # dependents       | 126 |
-| # downloads        | 704015 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 135045.0 |
+| # stars            | 1910.0 |
 
 ## Links
-- [Homepage](http://millermedeiros.github.com/js-signals/)
-- [Bugs](https://github.com/millermedeiros/js-signals/issues)
-- [Repository](https://github.com/millermedeiros/js-signals)
 - [Npm](https://www.npmjs.com/package/signals)
     
 

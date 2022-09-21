@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cborg" : "1.9.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cborg" : "1.9.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

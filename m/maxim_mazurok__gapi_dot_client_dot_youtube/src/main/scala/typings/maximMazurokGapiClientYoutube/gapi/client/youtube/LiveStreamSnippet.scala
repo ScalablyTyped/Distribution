@@ -14,7 +14,7 @@ trait LiveStreamSnippet extends StObject {
   
   var isDefaultStream: js.UndefOr[Boolean] = js.undefined
   
-  /** The date and time that the stream was created. The value is specified in ISO 8601 format. */
+  /** The date and time that the stream was created. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /** The stream's title. The value must be between 1 and 128 characters long. */

@@ -22,6 +22,6 @@ object Layers {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: VolumeAnnotationsVersion*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: VolumeAnnotationsVersion*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

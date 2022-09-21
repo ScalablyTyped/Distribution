@@ -12,7 +12,28 @@ object calculatePositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def calculatePosition(state: State, nextPos: nextPosition): EventData = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePosition")(state.asInstanceOf[js.Any], nextPos.asInstanceOf[js.Any])).asInstanceOf[EventData]
+  inline def calculatePosition(state: State, options: Options): EventData = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePosition")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EventData]
+  
+  trait Options extends StObject {
+    
+    var directionDelta: Double
+    
+    var rotatePosition: nextPosition
+  }
+  object Options {
+    
+    inline def apply(directionDelta: Double, rotatePosition: nextPosition): Options = {
+      val __obj = js.Dynamic.literal(directionDelta = directionDelta.asInstanceOf[js.Any], rotatePosition = rotatePosition.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setDirectionDelta(value: Double): Self = StObject.set(x, "directionDelta", value.asInstanceOf[js.Any])
+      
+      inline def setRotatePosition(value: nextPosition): Self = StObject.set(x, "rotatePosition", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait nextPosition extends StObject {
     

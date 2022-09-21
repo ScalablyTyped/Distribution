@@ -8,7 +8,7 @@ trait LinearGradientOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var stops: js.UndefOr[js.Any] = js.undefined
+  var stops: js.UndefOr[Any] = js.undefined
 }
 object LinearGradientOptions {
   
@@ -23,7 +23,7 @@ object LinearGradientOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setStops(value: js.Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
   }

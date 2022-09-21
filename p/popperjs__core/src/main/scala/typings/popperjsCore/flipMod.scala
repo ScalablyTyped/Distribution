@@ -7,7 +7,7 @@ import typings.popperjsCore.enumsMod.RootBoundary
 import typings.popperjsCore.popperjsCoreStrings.flip
 import typings.popperjsCore.typesMod.Modifier
 import typings.popperjsCore.typesMod.Padding
-import typings.std.HTMLElement
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object flipMod extends Shortcut {
   
   @JSImport("@popperjs/core/lib/modifiers/flip", JSImport.Default)
   @js.native
-  val default: Modifier[flip, Options] = js.native
+  val default: FlipModifier = js.native
   
   type FlipModifier = Modifier[flip, Options]
   
@@ -61,7 +61,7 @@ object flipMod extends Shortcut {
       
       inline def setAllowedAutoPlacements(value: js.Array[Placement]): Self = StObject.set(x, "allowedAutoPlacements", value.asInstanceOf[js.Any])
       
-      inline def setAllowedAutoPlacementsVarargs(value: Placement*): Self = StObject.set(x, "allowedAutoPlacements", js.Array(value :_*))
+      inline def setAllowedAutoPlacementsVarargs(value: Placement*): Self = StObject.set(x, "allowedAutoPlacements", js.Array(value*))
       
       inline def setAltAxis(value: Boolean): Self = StObject.set(x, "altAxis", value.asInstanceOf[js.Any])
       
@@ -69,11 +69,11 @@ object flipMod extends Shortcut {
       
       inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
-      inline def setBoundaryVarargs(value: HTMLElement*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+      inline def setBoundaryVarargs(value: Element*): Self = StObject.set(x, "boundary", js.Array(value*))
       
       inline def setFallbackPlacements(value: js.Array[Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
       
-      inline def setFallbackPlacementsVarargs(value: Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value :_*))
+      inline def setFallbackPlacementsVarargs(value: Placement*): Self = StObject.set(x, "fallbackPlacements", js.Array(value*))
       
       inline def setFlipVariations(value: Boolean): Self = StObject.set(x, "flipVariations", value.asInstanceOf[js.Any])
       
@@ -85,8 +85,8 @@ object flipMod extends Shortcut {
     }
   }
   
-  type _To = Modifier[flip, Options]
+  type _To = FlipModifier
   
   /* This means you don't have to write `default`, but can instead just say `flipMod.foo` */
-  override def _to: Modifier[flip, Options] = default
+  override def _to: FlipModifier = default
 }

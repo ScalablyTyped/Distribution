@@ -24,7 +24,7 @@ object anon {
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable0[js.Any]
+       with Instantiable0[Any]
   
   @js.native
   trait InstantiableAction

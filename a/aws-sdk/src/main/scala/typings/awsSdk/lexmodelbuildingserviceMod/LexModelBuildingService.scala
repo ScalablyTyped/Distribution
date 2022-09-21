@@ -387,6 +387,34 @@ trait LexModelBuildingService extends Service {
   ): Request[GetIntentsResponse, AWSError] = js.native
   
   /**
+    * Provides details about an ongoing or complete migration from an Amazon Lex V1 bot to an Amazon Lex V2 bot. Use this operation to view the migration alerts and warnings related to the migration.
+    */
+  def getMigration(): Request[GetMigrationResponse, AWSError] = js.native
+  def getMigration(callback: js.Function2[/* err */ AWSError, /* data */ GetMigrationResponse, Unit]): Request[GetMigrationResponse, AWSError] = js.native
+  /**
+    * Provides details about an ongoing or complete migration from an Amazon Lex V1 bot to an Amazon Lex V2 bot. Use this operation to view the migration alerts and warnings related to the migration.
+    */
+  def getMigration(params: GetMigrationRequest): Request[GetMigrationResponse, AWSError] = js.native
+  def getMigration(
+    params: GetMigrationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMigrationResponse, Unit]
+  ): Request[GetMigrationResponse, AWSError] = js.native
+  
+  /**
+    * Gets a list of migrations between Amazon Lex V1 and Amazon Lex V2.
+    */
+  def getMigrations(): Request[GetMigrationsResponse, AWSError] = js.native
+  def getMigrations(callback: js.Function2[/* err */ AWSError, /* data */ GetMigrationsResponse, Unit]): Request[GetMigrationsResponse, AWSError] = js.native
+  /**
+    * Gets a list of migrations between Amazon Lex V1 and Amazon Lex V2.
+    */
+  def getMigrations(params: GetMigrationsRequest): Request[GetMigrationsResponse, AWSError] = js.native
+  def getMigrations(
+    params: GetMigrationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMigrationsResponse, Unit]
+  ): Request[GetMigrationsResponse, AWSError] = js.native
+  
+  /**
     * Returns information about a specific version of a slot type. In addition to specifying the slot type name, you must specify the slot type version. This operation requires permissions for the lex:GetSlotType action.
     */
   def getSlotType(): Request[GetSlotTypeResponse, AWSError] = js.native
@@ -429,12 +457,12 @@ trait LexModelBuildingService extends Service {
   ): Request[GetSlotTypesResponse, AWSError] = js.native
   
   /**
-    * Use the GetUtterancesView operation to get information about the utterances that your users have made to your bot. You can use this list to tune the utterances that your bot responds to. For example, say that you have created a bot to order flowers. After your users have used your bot for a while, use the GetUtterancesView operation to see the requests that they have made and whether they have been successful. You might find that the utterance "I want flowers" is not being recognized. You could add this utterance to the OrderFlowers intent so that your bot recognizes that utterance. After you publish a new version of a bot, you can get information about the old version and the new so that you can compare the performance across the two versions.  Utterance statistics are generated once a day. Data is available for the last 15 days. You can request information for up to 5 versions of your bot in each request. Amazon Lex returns the most frequent utterances received by the bot in the last 15 days. The response contains information about a maximum of 100 utterances for each version. If you set childDirected field to true when you created your bot, or if you opted out of participating in improving Amazon Lex, utterances are not available. This operation requires permissions for the lex:GetUtterancesView action.
+    * Use the GetUtterancesView operation to get information about the utterances that your users have made to your bot. You can use this list to tune the utterances that your bot responds to. For example, say that you have created a bot to order flowers. After your users have used your bot for a while, use the GetUtterancesView operation to see the requests that they have made and whether they have been successful. You might find that the utterance "I want flowers" is not being recognized. You could add this utterance to the OrderFlowers intent so that your bot recognizes that utterance. After you publish a new version of a bot, you can get information about the old version and the new so that you can compare the performance across the two versions.  Utterance statistics are generated once a day. Data is available for the last 15 days. You can request information for up to 5 versions of your bot in each request. Amazon Lex returns the most frequent utterances received by the bot in the last 15 days. The response contains information about a maximum of 100 utterances for each version. If you set childDirected field to true when you created your bot, if you are using slot obfuscation with one or more slots, or if you opted out of participating in improving Amazon Lex, utterances are not available. This operation requires permissions for the lex:GetUtterancesView action.
     */
   def getUtterancesView(): Request[GetUtterancesViewResponse, AWSError] = js.native
   def getUtterancesView(callback: js.Function2[/* err */ AWSError, /* data */ GetUtterancesViewResponse, Unit]): Request[GetUtterancesViewResponse, AWSError] = js.native
   /**
-    * Use the GetUtterancesView operation to get information about the utterances that your users have made to your bot. You can use this list to tune the utterances that your bot responds to. For example, say that you have created a bot to order flowers. After your users have used your bot for a while, use the GetUtterancesView operation to see the requests that they have made and whether they have been successful. You might find that the utterance "I want flowers" is not being recognized. You could add this utterance to the OrderFlowers intent so that your bot recognizes that utterance. After you publish a new version of a bot, you can get information about the old version and the new so that you can compare the performance across the two versions.  Utterance statistics are generated once a day. Data is available for the last 15 days. You can request information for up to 5 versions of your bot in each request. Amazon Lex returns the most frequent utterances received by the bot in the last 15 days. The response contains information about a maximum of 100 utterances for each version. If you set childDirected field to true when you created your bot, or if you opted out of participating in improving Amazon Lex, utterances are not available. This operation requires permissions for the lex:GetUtterancesView action.
+    * Use the GetUtterancesView operation to get information about the utterances that your users have made to your bot. You can use this list to tune the utterances that your bot responds to. For example, say that you have created a bot to order flowers. After your users have used your bot for a while, use the GetUtterancesView operation to see the requests that they have made and whether they have been successful. You might find that the utterance "I want flowers" is not being recognized. You could add this utterance to the OrderFlowers intent so that your bot recognizes that utterance. After you publish a new version of a bot, you can get information about the old version and the new so that you can compare the performance across the two versions.  Utterance statistics are generated once a day. Data is available for the last 15 days. You can request information for up to 5 versions of your bot in each request. Amazon Lex returns the most frequent utterances received by the bot in the last 15 days. The response contains information about a maximum of 100 utterances for each version. If you set childDirected field to true when you created your bot, if you are using slot obfuscation with one or more slots, or if you opted out of participating in improving Amazon Lex, utterances are not available. This operation requires permissions for the lex:GetUtterancesView action.
     */
   def getUtterancesView(params: GetUtterancesViewRequest): Request[GetUtterancesViewResponse, AWSError] = js.native
   def getUtterancesView(
@@ -522,6 +550,20 @@ trait LexModelBuildingService extends Service {
     params: StartImportRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartImportResponse, Unit]
   ): Request[StartImportResponse, AWSError] = js.native
+  
+  /**
+    * Starts migrating a bot from Amazon Lex V1 to Amazon Lex V2. Migrate your bot when you want to take advantage of the new features of Amazon Lex V2. For more information, see Migrating a bot in the Amazon Lex developer guide.
+    */
+  def startMigration(): Request[StartMigrationResponse, AWSError] = js.native
+  def startMigration(callback: js.Function2[/* err */ AWSError, /* data */ StartMigrationResponse, Unit]): Request[StartMigrationResponse, AWSError] = js.native
+  /**
+    * Starts migrating a bot from Amazon Lex V1 to Amazon Lex V2. Migrate your bot when you want to take advantage of the new features of Amazon Lex V2. For more information, see Migrating a bot in the Amazon Lex developer guide.
+    */
+  def startMigration(params: StartMigrationRequest): Request[StartMigrationResponse, AWSError] = js.native
+  def startMigration(
+    params: StartMigrationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartMigrationResponse, Unit]
+  ): Request[StartMigrationResponse, AWSError] = js.native
   
   /**
     * Adds the specified tags to the specified resource. If a tag key already exists, the existing value is replaced with the new value.

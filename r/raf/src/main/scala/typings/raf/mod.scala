@@ -15,5 +15,5 @@ object mod {
   inline def cancel(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def polyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")().asInstanceOf[Unit]
-  inline def polyfill(globalObject: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(globalObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def polyfill(globalObject: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(globalObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

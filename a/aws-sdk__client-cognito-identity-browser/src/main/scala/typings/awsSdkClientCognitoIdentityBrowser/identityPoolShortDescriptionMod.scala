@@ -8,5 +8,5 @@ object identityPoolShortDescriptionMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/_IdentityPoolShortDescription", "_IdentityPoolShortDescription")
   @js.native
-  val IdentityPoolShortDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val IdentityPoolShortDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

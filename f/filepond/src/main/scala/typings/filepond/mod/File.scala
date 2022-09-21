@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("filepond", "File")
 @js.native
-class File () extends FilePondFile
+open class File () extends FilePondFile

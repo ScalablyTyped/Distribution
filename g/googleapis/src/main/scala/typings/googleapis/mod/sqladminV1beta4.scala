@@ -11,79 +11,84 @@ object sqladminV1beta4 {
   
   @JSImport("googleapis", "sqladmin_v1beta4.Resource$Backupruns")
   @js.native
-  class ResourceBackupruns protected ()
+  open class ResourceBackupruns protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceBackupruns {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "sqladmin_v1beta4.Resource$Connect")
+  @js.native
+  open class ResourceConnect protected ()
+    extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceConnect {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sqladmin_v1beta4.Resource$Databases")
   @js.native
-  class ResourceDatabases protected ()
+  open class ResourceDatabases protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceDatabases {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sqladmin_v1beta4.Resource$Flags")
   @js.native
-  class ResourceFlags protected ()
+  open class ResourceFlags protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceFlags {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sqladmin_v1beta4.Resource$Instances")
   @js.native
-  class ResourceInstances protected ()
+  open class ResourceInstances protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceInstances {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sqladmin_v1beta4.Resource$Operations")
   @js.native
-  class ResourceOperations protected ()
+  open class ResourceOperations protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceOperations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "sqladmin_v1beta4.Resource$Projects")
+  @js.native
+  open class ResourceProjects protected ()
+    extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceProjects {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "sqladmin_v1beta4.Resource$Projects$Instances")
+  @js.native
+  open class ResourceProjectsInstances protected ()
+    extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceProjectsInstances {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sqladmin_v1beta4.Resource$Sslcerts")
   @js.native
-  class ResourceSslcerts protected ()
+  open class ResourceSslcerts protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceSslcerts {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sqladmin_v1beta4.Resource$Tiers")
   @js.native
-  class ResourceTiers protected ()
+  open class ResourceTiers protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceTiers {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sqladmin_v1beta4.Resource$Users")
   @js.native
-  class ResourceUsers protected ()
+  open class ResourceUsers protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceUsers {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * Cloud SQL Admin API
-    *
-    * Creates and manages Cloud SQL instances, which provide fully managed MySQL
-    * or PostgreSQL databases.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const sqladmin = google.sqladmin('v1beta4');
-    *
-    * @namespace sqladmin
-    * @type {Function}
-    * @version v1beta4
-    * @variation v1beta4
-    * @param {object=} options Options for Sqladmin
-    */
   @JSImport("googleapis", "sqladmin_v1beta4.Sqladmin")
   @js.native
-  class Sqladmin protected ()
+  open class Sqladmin protected ()
     extends typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

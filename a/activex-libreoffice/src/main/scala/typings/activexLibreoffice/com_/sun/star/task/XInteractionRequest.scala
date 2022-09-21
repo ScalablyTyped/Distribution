@@ -19,7 +19,7 @@ trait XInteractionRequest
     * Get information about the request itself.
     * @returns an {@link com.sun.star.uno.Exception} , wrapped as an `any` .
     */
-  val Request: js.Any
+  val Request: Any
   
   /** Get the set of com::sun::star::task::XInteractionContinuations the client supports for this request. */
   def getContinuations(): SafeArray[XInteractionContinuation]
@@ -28,17 +28,17 @@ trait XInteractionRequest
     * Get information about the request itself.
     * @returns an {@link com.sun.star.uno.Exception} , wrapped as an `any` .
     */
-  def getRequest(): js.Any
+  def getRequest(): Any
 }
 object XInteractionRequest {
   
   inline def apply(
     Continuations: SafeArray[XInteractionContinuation],
-    Request: js.Any,
+    Request: Any,
     acquire: () => Unit,
     getContinuations: () => SafeArray[XInteractionContinuation],
-    getRequest: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getRequest: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XInteractionRequest = {
     val __obj = js.Dynamic.literal(Continuations = Continuations.asInstanceOf[js.Any], Request = Request.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getContinuations = js.Any.fromFunction0(getContinuations), getRequest = js.Any.fromFunction0(getRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -51,8 +51,8 @@ object XInteractionRequest {
     
     inline def setGetContinuations(value: () => SafeArray[XInteractionContinuation]): Self = StObject.set(x, "getContinuations", js.Any.fromFunction0(value))
     
-    inline def setGetRequest(value: () => js.Any): Self = StObject.set(x, "getRequest", js.Any.fromFunction0(value))
+    inline def setGetRequest(value: () => Any): Self = StObject.set(x, "getRequest", js.Any.fromFunction0(value))
     
-    inline def setRequest(value: js.Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
   }
 }

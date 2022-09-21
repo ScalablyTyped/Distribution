@@ -12,7 +12,7 @@ trait InappproductsListResponse extends StObject {
   /** The kind of this response ("androidpublisher#inappproductsListResponse"). */
   var kind: js.UndefOr[String] = js.undefined
   
-  /** Information about the current page. */
+  /** Deprecated and unset. */
   var pageInfo: js.UndefOr[PageInfo] = js.undefined
   
   /** Pagination token, to handle a number of products that is over one page. */
@@ -31,7 +31,7 @@ object InappproductsListResponse {
     
     inline def setInappproductUndefined: Self = StObject.set(x, "inappproduct", js.undefined)
     
-    inline def setInappproductVarargs(value: InAppProduct*): Self = StObject.set(x, "inappproduct", js.Array(value :_*))
+    inline def setInappproductVarargs(value: InAppProduct*): Self = StObject.set(x, "inappproduct", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

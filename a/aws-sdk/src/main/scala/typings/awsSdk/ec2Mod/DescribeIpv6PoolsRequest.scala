@@ -48,7 +48,7 @@ object DescribeIpv6PoolsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: Ipv6PoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object DescribeIpv6PoolsRequest {
     
     inline def setPoolIdsUndefined: Self = StObject.set(x, "PoolIds", js.undefined)
     
-    inline def setPoolIdsVarargs(value: Ipv6PoolEc2Id*): Self = StObject.set(x, "PoolIds", js.Array(value :_*))
+    inline def setPoolIdsVarargs(value: Ipv6PoolEc2Id*): Self = StObject.set(x, "PoolIds", js.Array(value*))
   }
 }

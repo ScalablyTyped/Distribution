@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeFaqRequest extends StObject {
   
   /**
-    * The unique identifier of the FAQ.
+    * The identifier of the FAQ you want to get information on.
     */
   var Id: FaqId
   
   /**
-    * The identifier of the index that contains the FAQ.
+    * The identifier of the index for the FAQ.
     */
   var IndexId: typings.awsSdk.kendraMod.IndexId
 }

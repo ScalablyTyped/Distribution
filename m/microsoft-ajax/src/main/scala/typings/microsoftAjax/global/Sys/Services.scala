@@ -28,7 +28,7 @@ object Services {
   /**
     * Initializes a new instance of the Sys.Services.AuthenticationService class.
     */
-  class AuthenticationService ()
+  open class AuthenticationService ()
     extends StObject
        with typings.microsoftAjax.Sys.Services.AuthenticationService
   
@@ -41,7 +41,7 @@ object Services {
   @JSGlobal("Sys.Services.ProfileGroup")
   @js.native
   //#region Constructors
-  class ProfileGroup ()
+  open class ProfileGroup ()
     extends StObject
        with typings.microsoftAjax.Sys.Services.ProfileGroup {
     /**
@@ -58,7 +58,7 @@ object Services {
     */
   @JSGlobal("Sys.Services.ProfileService")
   @js.native
-  class ProfileService ()
+  open class ProfileService ()
     extends StObject
        with typings.microsoftAjax.Sys.Services.ProfileService
   object ProfileService {
@@ -148,7 +148,7 @@ object Services {
       propertyNames: js.Array[String],
       loadCompletedCallback: js.Function,
       failedCallback: js.Function,
-      userContext: js.Any
+      userContext: Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(propertyNames.asInstanceOf[js.Any], loadCompletedCallback.asInstanceOf[js.Any], failedCallback.asInstanceOf[js.Any], userContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
@@ -158,8 +158,8 @@ object Services {
     /* static member */
     @JSGlobal("Sys.Services.ProfileService.properties")
     @js.native
-    def properties: js.Any = js.native
-    inline def properties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
+    def properties: Any = js.native
+    inline def properties_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
     
     /**
       * @param propertyNames
@@ -176,7 +176,7 @@ object Services {
       propertyNames: js.Array[String],
       saveCompletedCallback: js.Function,
       failedCallback: js.Function,
-      userContext: js.Any
+      userContext: Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(propertyNames.asInstanceOf[js.Any], saveCompletedCallback.asInstanceOf[js.Any], failedCallback.asInstanceOf[js.Any], userContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     //#endregion
@@ -232,7 +232,7 @@ object Services {
     */
   @JSGlobal("Sys.Services.RoleService")
   @js.native
-  class RoleService ()
+  open class RoleService ()
     extends StObject
        with typings.microsoftAjax.Sys.Services.RoleService
 }

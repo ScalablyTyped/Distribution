@@ -10,6 +10,6 @@ object netGopherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def gopherParsedir(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("gopher_parsedir")().asInstanceOf[js.Any]
-  inline def gopherParsedir(dirent: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("gopher_parsedir")(dirent.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def gopherParsedir(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("gopher_parsedir")().asInstanceOf[Any]
+  inline def gopherParsedir(dirent: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("gopher_parsedir")(dirent.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

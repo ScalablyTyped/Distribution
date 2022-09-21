@@ -10,7 +10,7 @@ trait SignatureSetup extends StObject {
   
   var AllowComments: Boolean
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -38,7 +38,7 @@ object SignatureSetup {
   inline def apply(
     AdditionalXml: String,
     AllowComments: Boolean,
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Id: String,
     OfficeDotSignatureSetup_typekey: SignatureSetup,
@@ -61,7 +61,7 @@ object SignatureSetup {
     
     inline def setAllowComments(value: Boolean): Self = StObject.set(x, "AllowComments", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     

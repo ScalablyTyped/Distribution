@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ParagraphBuilderFactory extends StObject {
   
   /**
@@ -11,29 +12,18 @@ trait ParagraphBuilderFactory extends StObject {
     * @param style
     * @param fontManager
     */
-  def Make(style: ParagraphStyle, fontManager: SkFontMgr): ParagraphBuilder
+  def Make(style: ParagraphStyle, fontManager: FontMgr): ParagraphBuilder = js.native
   
   /**
     * Creates a ParagraphBuilder using the fonts available from the given font provider.
     * @param style
     * @param fontSrc
     */
-  def MakeFromFontProvider(style: ParagraphStyle, fontSrc: TypefaceFontProvider): ParagraphBuilder
-}
-object ParagraphBuilderFactory {
+  def MakeFromFontProvider(style: ParagraphStyle, fontSrc: TypefaceFontProvider): ParagraphBuilder = js.native
   
-  inline def apply(
-    Make: (ParagraphStyle, SkFontMgr) => ParagraphBuilder,
-    MakeFromFontProvider: (ParagraphStyle, TypefaceFontProvider) => ParagraphBuilder
-  ): ParagraphBuilderFactory = {
-    val __obj = js.Dynamic.literal(Make = js.Any.fromFunction2(Make), MakeFromFontProvider = js.Any.fromFunction2(MakeFromFontProvider))
-    __obj.asInstanceOf[ParagraphBuilderFactory]
-  }
-  
-  extension [Self <: ParagraphBuilderFactory](x: Self) {
-    
-    inline def setMake(value: (ParagraphStyle, SkFontMgr) => ParagraphBuilder): Self = StObject.set(x, "Make", js.Any.fromFunction2(value))
-    
-    inline def setMakeFromFontProvider(value: (ParagraphStyle, TypefaceFontProvider) => ParagraphBuilder): Self = StObject.set(x, "MakeFromFontProvider", js.Any.fromFunction2(value))
-  }
+  /**
+    * Return a shaped array of lines
+    */
+  def ShapeText(text: String, runs: js.Array[FontBlock]): js.Array[ShapedLine] = js.native
+  def ShapeText(text: String, runs: js.Array[FontBlock], width: Double): js.Array[ShapedLine] = js.native
 }

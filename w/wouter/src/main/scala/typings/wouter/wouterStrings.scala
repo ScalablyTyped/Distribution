@@ -31,10 +31,6 @@ object wouterStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait auto extends StObject
-  inline def auto: auto = "auto".asInstanceOf[auto]
-  
-  @js.native
   sealed trait both extends StObject
   inline def both: both = "both".asInstanceOf[both]
   
@@ -57,10 +53,6 @@ object wouterStrings {
   @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
-  
-  @js.native
-  sealed trait eager extends StObject
-  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
   sealed trait email extends StObject
@@ -91,10 +83,6 @@ object wouterStrings {
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait `lazy` extends StObject
-  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
-  
-  @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
   
@@ -109,10 +97,6 @@ object wouterStrings {
   @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
-  
-  @js.native
-  sealed trait ltr extends StObject
-  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait menu extends StObject
@@ -173,10 +157,6 @@ object wouterStrings {
   @js.native
   sealed trait `removals text` extends StObject
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
-  
-  @js.native
-  sealed trait rtl extends StObject
-  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait search extends StObject

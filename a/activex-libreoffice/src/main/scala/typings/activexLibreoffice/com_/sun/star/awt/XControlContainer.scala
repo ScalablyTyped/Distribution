@@ -38,7 +38,7 @@ object XControlContainer {
     addControl: (String, XControl) => Unit,
     getControl: String => XControl,
     getControls: () => SafeArray[XControl],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeControl: XControl => Unit,
     setStatusText: String => Unit

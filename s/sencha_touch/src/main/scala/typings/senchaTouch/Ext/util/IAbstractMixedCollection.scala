@@ -14,12 +14,12 @@ trait IAbstractMixedCollection
     * @param obj Object The item to add.
     * @returns Object The item added.
     */
-  var add: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* obj */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var add: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* obj */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Adds all elements of an Array or an Object to the collection
     * @param objs Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if allowFunctions has been set to true.
     */
-  var addAll: js.UndefOr[js.Function1[/* objs */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addAll: js.UndefOr[js.Function1[/* objs */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var allowFunctions: js.UndefOr[Boolean] = js.undefined
@@ -52,7 +52,7 @@ trait IAbstractMixedCollection
     * @param o Object The Object to look for in the collection.
     * @returns Boolean true if the collection contains the Object as an item.
     */
-  var contains: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var contains: js.UndefOr[js.Function1[/* o */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns true if the collection contains the passed Object as a key
     * @param key String The key to look for in the collection.
@@ -64,13 +64,13 @@ trait IAbstractMixedCollection
     * @param fn Function The function to execute for each item.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
     * @param fn Function The function to execute for each item.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     */
-  var eachKey: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var eachKey: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Filters the objects in this collection by a set of Filters or by a single property value pair with optional paramete
     * @param property Ext.util.Filter[]/String A property on your objects, or an array of Filter objects
@@ -81,8 +81,8 @@ trait IAbstractMixedCollection
     */
   var filter: js.UndefOr[
     js.Function4[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[js.Any], 
+      /* property */ js.UndefOr[Any], 
+      /* value */ js.UndefOr[Any], 
       /* anyMatch */ js.UndefOr[Boolean], 
       /* caseSensitive */ js.UndefOr[Boolean], 
       IMixedCollection
@@ -95,7 +95,7 @@ trait IAbstractMixedCollection
     * @returns Ext.util.MixedCollection The new filtered collection.
     */
   var filterBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
+    js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], IMixedCollection]
   ] = js.undefined
   
   /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function
@@ -103,9 +103,7 @@ trait IAbstractMixedCollection
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     * @returns Object The first item in the collection which returned true from the selection function.
     */
-  var findBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var findBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Finds the index of the first matching object in this collection by a specific property value
     * @param property String The name of a property on your objects.
@@ -118,7 +116,7 @@ trait IAbstractMixedCollection
   var findIndex: js.UndefOr[
     js.Function5[
       /* property */ js.UndefOr[String], 
-      /* value */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[Any], 
       /* start */ js.UndefOr[Double], 
       /* anyMatch */ js.UndefOr[Boolean], 
       /* caseSensitive */ js.UndefOr[Boolean], 
@@ -134,8 +132,8 @@ trait IAbstractMixedCollection
     */
   var findIndexBy: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* start */ js.UndefOr[Double], 
       Double
     ]
@@ -144,25 +142,25 @@ trait IAbstractMixedCollection
   /** [Method] Returns the first item in the collection
     * @returns Object the first item in the collection..
     */
-  var first: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var first: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the item associated with the passed key OR index
     * @param key String/Number The key or index of the item.
     * @returns Object If the item is found, returns the item. If the item was not found, returns undefined. If an item was found, but is a Class, returns null.
     */
-  var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the item at the specified index
     * @param index Number The index of the item.
     * @returns Object The item at the specified index.
     */
-  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Returns the item associated with the passed key
     * @param key String/Number The key of the item.
     * @returns Object The item associated with the passed key.
     */
-  var getByKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getByKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the number of items in the collection
     * @returns Number the number of items in the collection.
@@ -173,7 +171,7 @@ trait IAbstractMixedCollection
     * @param item Object The item for which to find the key.
     * @returns Object The key for the passed item.
     */
-  var getKey: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getKey: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns a range of items in this collection
     * @param start Number The starting index.
@@ -188,7 +186,7 @@ trait IAbstractMixedCollection
     * @param o Object The item to find the index of.
     * @returns Number index of the item. Returns -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], Double]] = js.undefined
+  var indexOf: js.UndefOr[js.Function1[/* o */ js.UndefOr[Any], Double]] = js.undefined
   
   /** [Method] Returns index within the collection of the passed key
     * @param key String The key to find the index of.
@@ -206,15 +204,15 @@ trait IAbstractMixedCollection
     js.Function3[
       /* index */ js.UndefOr[Double], 
       /* key */ js.UndefOr[String], 
-      /* obj */ js.UndefOr[js.Any], 
-      js.Any
+      /* obj */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
   /** [Method] Returns the last item in the collection
     * @returns Object the last item in the collection..
     */
-  var last: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var last: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -224,8 +222,8 @@ trait IAbstractMixedCollection
   @JSName("relayEvents")
   var relayEvents_IAbstractMixedCollection: js.UndefOr[
     js.Function2[
-      /* object */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[js.Any], 
+      /* object */ js.UndefOr[Any], 
+      /* events */ js.UndefOr[Any], 
       typings.senchaTouch.Ext.mixin.IObservable
     ]
   ] = js.undefined
@@ -234,7 +232,7 @@ trait IAbstractMixedCollection
     * @param o Object The item to remove.
     * @returns Object The item removed or false if no item was removed.
     */
-  var remove: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var remove: js.UndefOr[js.Function1[/* o */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Remove all items in the passed array from the collection
     * @param items Array An array of items to be removed.
@@ -246,20 +244,20 @@ trait IAbstractMixedCollection
     * @param index Number The index within the collection of the item to remove.
     * @returns Object/Boolean The item removed or false if no item was removed.
     */
-  var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+  var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Removed an item associated with the passed key from the collection
     * @param key String The key of the item to remove.
     * @returns Object/Boolean The item removed or false if no item was removed.
     */
-  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], js.Any]] = js.undefined
+  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] Replaces an item in the collection
     * @param key String The key associated with the item to replace, or the replacement item. If you supplied a getKey implementation for this MixedCollection, or if the key of your stored items is in a property called id, then the MixedCollection will be able to derive the key of the replacement item. If you want to replace an item with one having the same key value, then just pass the replacement item in this parameter.
     * @param o Object If the first parameter passed was a key, the item to associate with that key.
     * @returns Object The new item.
     */
-  var replace: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* o */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var replace: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* o */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Collects all of the values of the given property and returns their sum
     * @param property String The property to sum by.
@@ -287,9 +285,9 @@ object IAbstractMixedCollection {
   
   extension [Self <: IAbstractMixedCollection](x: Self) {
     
-    inline def setAdd(value: (/* key */ js.UndefOr[String], /* obj */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (/* key */ js.UndefOr[String], /* obj */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    inline def setAddAll(value: /* objs */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+    inline def setAddAll(value: /* objs */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
     inline def setAddAllUndefined: Self = StObject.set(x, "addAll", js.undefined)
     
@@ -313,7 +311,7 @@ object IAbstractMixedCollection {
     
     inline def setCollectUndefined: Self = StObject.set(x, "collect", js.undefined)
     
-    inline def setContains(value: /* o */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: /* o */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     inline def setContainsKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
     
@@ -321,51 +319,51 @@ object IAbstractMixedCollection {
     
     inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    inline def setEachKey(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachKey", js.Any.fromFunction2(value))
+    inline def setEachKey(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "eachKey", js.Any.fromFunction2(value))
     
     inline def setEachKeyUndefined: Self = StObject.set(x, "eachKey", js.undefined)
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     inline def setFilter(
-      value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => IMixedCollection
+      value: (/* property */ js.UndefOr[Any], /* value */ js.UndefOr[Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => IMixedCollection
     ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
     
-    inline def setFilterBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
+    inline def setFilterBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IMixedCollection): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
     
     inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
+    inline def setFindBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
     
     inline def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
     
     inline def setFindIndex(
-      value: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double
+      value: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction5(value))
     
     inline def setFindIndexBy(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double]) => Double
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* start */ js.UndefOr[Double]) => Double
     ): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction3(value))
     
     inline def setFindIndexByUndefined: Self = StObject.set(x, "findIndexBy", js.undefined)
     
     inline def setFindIndexUndefined: Self = StObject.set(x, "findIndex", js.undefined)
     
-    inline def setFirst(value: () => js.Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    inline def setGet(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* key */ js.UndefOr[Any] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setGetAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+    inline def setGetAt(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
     
     inline def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
     
-    inline def setGetByKey(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
+    inline def setGetByKey(value: /* key */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
     
     inline def setGetByKeyUndefined: Self = StObject.set(x, "getByKey", js.undefined)
     
@@ -373,7 +371,7 @@ object IAbstractMixedCollection {
     
     inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    inline def setGetKey(value: /* item */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: /* item */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
     inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     
@@ -383,7 +381,7 @@ object IAbstractMixedCollection {
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    inline def setIndexOf(value: /* o */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* o */ js.UndefOr[Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     inline def setIndexOfKey(value: /* key */ js.UndefOr[String] => Double): Self = StObject.set(x, "indexOfKey", js.Any.fromFunction1(value))
     
@@ -392,30 +390,30 @@ object IAbstractMixedCollection {
     inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
     inline def setInsert(
-      value: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* obj */ js.UndefOr[js.Any]) => js.Any
+      value: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* obj */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
     
     inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    inline def setLast(value: () => js.Any): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+    inline def setLast(value: () => Any): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     inline def setRelayEvents(
-      value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.mixin.IObservable
+      value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => typings.senchaTouch.Ext.mixin.IObservable
     ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
-    inline def setRemove(value: /* o */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* o */ js.UndefOr[Any] => Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     inline def setRemoveAll(value: /* items */ js.UndefOr[Array] => IMixedCollection): Self = StObject.set(x, "removeAll", js.Any.fromFunction1(value))
     
     inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
     
-    inline def setRemoveAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
+    inline def setRemoveAt(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
     
-    inline def setRemoveAtKey(value: /* key */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
+    inline def setRemoveAtKey(value: /* key */ js.UndefOr[String] => Any): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
     
     inline def setRemoveAtKeyUndefined: Self = StObject.set(x, "removeAtKey", js.undefined)
     
@@ -423,7 +421,7 @@ object IAbstractMixedCollection {
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setReplace(value: (/* key */ js.UndefOr[String], /* o */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (/* key */ js.UndefOr[String], /* o */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
     inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     

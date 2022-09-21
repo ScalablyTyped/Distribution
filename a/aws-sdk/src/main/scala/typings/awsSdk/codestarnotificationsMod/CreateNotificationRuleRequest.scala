@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateNotificationRuleRequest extends StObject {
   
   /**
-    * A unique, client-generated idempotency token that, when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request with the same parameters is received and a token is included, the request returns information about the initial request that used that token.  The AWS SDKs prepopulate client request tokens. If you are using an AWS SDK, an idempotency token is created for you. 
+    * A unique, client-generated idempotency token that, when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request with the same parameters is received and a token is included, the request returns information about the initial request that used that token.  The Amazon Web Services SDKs prepopulate client request tokens. If you are using an Amazon Web Services SDK, an idempotency token is created for you. 
     */
   var ClientRequestToken: js.UndefOr[typings.awsSdk.codestarnotificationsMod.ClientRequestToken] = js.undefined
   
   /**
-    * The level of detail to include in the notifications for this resource. BASIC will include only the contents of the event as it would appear in AWS CloudWatch. FULL will include any supplemental information provided by AWS CodeStar Notifications and/or the service for the resource for which the notification is created.
+    * The level of detail to include in the notifications for this resource. BASIC will include only the contents of the event as it would appear in Amazon CloudWatch. FULL will include any supplemental information provided by AWS CodeStar Notifications and/or the service for the resource for which the notification is created.
     */
   var DetailType: typings.awsSdk.codestarnotificationsMod.DetailType
   
@@ -22,12 +22,12 @@ trait CreateNotificationRuleRequest extends StObject {
   var EventTypeIds: typings.awsSdk.codestarnotificationsMod.EventTypeIds
   
   /**
-    * The name for the notification rule. Notifictaion rule names must be unique in your AWS account.
+    * The name for the notification rule. Notification rule names must be unique in your Amazon Web Services account.
     */
   var Name: NotificationRuleName
   
   /**
-    * The Amazon Resource Name (ARN) of the resource to associate with the notification rule. Supported resources include pipelines in AWS CodePipeline, repositories in AWS CodeCommit, and build projects in AWS CodeBuild.
+    * The Amazon Resource Name (ARN) of the resource to associate with the notification rule. Supported resources include pipelines in CodePipeline, repositories in CodeCommit, and build projects in CodeBuild.
     */
   var Resource: NotificationRuleResource
   
@@ -42,7 +42,7 @@ trait CreateNotificationRuleRequest extends StObject {
   var Tags: js.UndefOr[typings.awsSdk.codestarnotificationsMod.Tags] = js.undefined
   
   /**
-    * A list of Amazon Resource Names (ARNs) of SNS topics to associate with the notification rule.
+    * A list of Amazon Resource Names (ARNs) of Amazon Simple Notification Service topics and Chatbot clients to associate with the notification rule.
     */
   var Targets: typings.awsSdk.codestarnotificationsMod.Targets
 }
@@ -69,7 +69,7 @@ object CreateNotificationRuleRequest {
     
     inline def setEventTypeIds(value: EventTypeIds): Self = StObject.set(x, "EventTypeIds", value.asInstanceOf[js.Any])
     
-    inline def setEventTypeIdsVarargs(value: EventTypeId*): Self = StObject.set(x, "EventTypeIds", js.Array(value :_*))
+    inline def setEventTypeIdsVarargs(value: EventTypeId*): Self = StObject.set(x, "EventTypeIds", js.Array(value*))
     
     inline def setName(value: NotificationRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -85,6 +85,6 @@ object CreateNotificationRuleRequest {
     
     inline def setTargets(value: Targets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

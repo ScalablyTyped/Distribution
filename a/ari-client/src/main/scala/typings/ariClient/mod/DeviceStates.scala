@@ -1,7 +1,6 @@
 package typings.ariClient.mod
 
 import typings.ariClient.anon.DeviceName
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait DeviceStates extends StObject {
     *
     * @param params.deviceName - Name of the device.
     */
-  def delete(params: DeviceName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def delete(params: DeviceName, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Retrieve the current state of a device.
@@ -33,7 +32,10 @@ trait DeviceStates extends StObject {
     *
     * @param params.deviceName - Name of the device.
     */
-  def get(params: DeviceName, callback: js.Function2[/* err */ Error, /* devicestate */ DeviceState, Unit]): Unit = js.native
+  def get(
+    params: DeviceName,
+    callback: js.Function2[/* err */ js.Error, /* devicestate */ DeviceState, Unit]
+  ): Unit = js.native
   
   /**
     * List all ARI controlled device states.
@@ -42,7 +44,7 @@ trait DeviceStates extends StObject {
   /**
     * List all ARI controlled device states.
     */
-  def list(callback: js.Function2[/* err */ Error, /* devicestates */ js.Array[DeviceState], Unit]): Unit = js.native
+  def list(callback: js.Function2[/* err */ js.Error, /* devicestates */ js.Array[DeviceState], Unit]): Unit = js.native
   
   /**
     * Change the state of a device controlled by ARI. (Note - implicitly creates the device state).
@@ -57,5 +59,5 @@ trait DeviceStates extends StObject {
     * @param params.deviceName - Name of the device.
     * @param params.deviceState - Device state value.
     */
-  def update(params: typings.ariClient.anon.DeviceState, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def update(params: typings.ariClient.anon.DeviceState, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

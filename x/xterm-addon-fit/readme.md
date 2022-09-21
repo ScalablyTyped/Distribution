@@ -1,7 +1,7 @@
 
 # Scala.js typings for xterm-addon-fit
 
-Typings are for version 0.3.0
+Typings are for version 0.6.0
 
 ## Library description:
 An addon for [xterm.js](https://github.com/xtermjs/xterm.js) that enables fitting the terminal's dimensions to a containing element. This addon requires xterm.js v4+.
@@ -9,11 +9,11 @@ An addon for [xterm.js](https://github.com/xtermjs/xterm.js) that enables fittin
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | xterm-addon-fit |
-| Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 47 |
-| # downloads        | 2192672 |
-| # stars            | 0 |
+| Keywords           | terminal, xterm, xterm.js |
+| # releases         | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 582213.0 |
+| # stars            | 13706.0 |
 
 ## Links
 - [Homepage](https://github.com/xtermjs/xterm.js#readme)

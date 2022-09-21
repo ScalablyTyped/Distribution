@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-dnd/shallowequal" : "2.0.0"
+      "@react-dnd/shallowequal" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-dnd/shallowequal" : "2.0.0"
+      "@react-dnd/shallowequal" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

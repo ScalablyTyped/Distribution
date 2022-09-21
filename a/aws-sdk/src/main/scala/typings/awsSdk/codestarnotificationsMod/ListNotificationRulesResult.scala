@@ -12,7 +12,7 @@ trait ListNotificationRulesResult extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.codestarnotificationsMod.NextToken] = js.undefined
   
   /**
-    * The list of notification rules for the AWS account, by Amazon Resource Name (ARN) and ID. 
+    * The list of notification rules for the Amazon Web Services account, by Amazon Resource Name (ARN) and ID. 
     */
   var NotificationRules: js.UndefOr[NotificationRuleBatch] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListNotificationRulesResult {
     
     inline def setNotificationRulesUndefined: Self = StObject.set(x, "NotificationRules", js.undefined)
     
-    inline def setNotificationRulesVarargs(value: NotificationRuleSummary*): Self = StObject.set(x, "NotificationRules", js.Array(value :_*))
+    inline def setNotificationRulesVarargs(value: NotificationRuleSummary*): Self = StObject.set(x, "NotificationRules", js.Array(value*))
   }
 }

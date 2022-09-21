@@ -1,7 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait EtaRequestOptions extends StObject {
   /**
     * The mode of transportation the server uses when estimating arrival times.
     */
-  var departureDate: Date
+  var departureDate: js.Date
   
   /**
     * The time of departure used in an estimated arrival time request.
@@ -34,7 +33,7 @@ trait EtaRequestOptions extends StObject {
 object EtaRequestOptions {
   
   inline def apply(
-    departureDate: Date,
+    departureDate: js.Date,
     destinations: js.Array[Coordinate],
     origin: Coordinate,
     transportType: Transport
@@ -45,11 +44,11 @@ object EtaRequestOptions {
   
   extension [Self <: EtaRequestOptions](x: Self) {
     
-    inline def setDepartureDate(value: Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
+    inline def setDepartureDate(value: js.Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
     
     inline def setDestinations(value: js.Array[Coordinate]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    inline def setDestinationsVarargs(value: Coordinate*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Coordinate*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setOrigin(value: Coordinate): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

@@ -13,40 +13,40 @@ trait Worker
      with EventTarget {
   
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, js.Any]): Unit = js.native
+  def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_message(
     `type`: message,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_messageerror(`type`: messageerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_messageerror(`type`: messageerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_messageerror(
     `type`: messageerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   
-  def onerror(ev: Event): js.Any = js.native
+  def onerror(ev: Event): Any = js.native
   
-  def onmessage(ev: MessageEvent): js.Any = js.native
+  def onmessage(ev: MessageEvent): Any = js.native
   
-  def onmessageerror(ev: Event): js.Any = js.native
+  def onmessageerror(ev: Event): Any = js.native
   
-  def onopen(ev: Event): js.Any = js.native
+  def onopen(ev: Event): Any = js.native
   
-  def postMessage(data: js.Any): Unit = js.native
-  def postMessage(data: js.Any, transferList: js.Array[js.Any]): Unit = js.native
+  def postMessage(data: Any): Unit = js.native
+  def postMessage(data: Any, transferList: js.Array[Any]): Unit = js.native
   
   val protocol: String = js.native
   

@@ -59,6 +59,6 @@ object Light {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value*))
   }
 }

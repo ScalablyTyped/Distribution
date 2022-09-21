@@ -1,11 +1,18 @@
 package typings.baseui
 
-import typings.baseui.anon.Desktop
-import typings.baseui.baseuiStrings.horizontal
-import typings.baseui.baseuiStrings.vertical
-import typings.react.mod.Component
-import typings.react.mod.ComponentType
-import typings.react.mod.ReactNode
+import typings.baseui.anon.Active
+import typings.baseui.anon.Disabled
+import typings.baseui.anon.IsFocusVisible
+import typings.baseui.appNavBarTypesMod.AppNavBarOverrides
+import typings.baseui.appNavBarTypesMod.AppNavBarProps
+import typings.baseui.appNavBarTypesMod.NavItem
+import typings.baseui.appNavBarTypesMod.UserMenuProps
+import typings.baseui.baseuiStrings.button
+import typings.baseui.baseuiStrings.div
+import typings.baseui.baseuiStrings.li_
+import typings.baseui.utilsMod.GetUniqueIdentifier
+import typings.react.mod.global.JSX.Element
+import typings.styletronReact.typesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,203 +23,87 @@ object appNavBarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("baseui/app-nav-bar", "AppNavBar")
-  @js.native
-  class AppNavBar protected ()
-    extends Component[AppNavBarPropsT, js.Object, js.Any] {
-    def this(props: AppNavBarPropsT) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: AppNavBarPropsT, context: js.Any) = this()
-  }
+  inline def AppNavBar(props: AppNavBarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AppNavBar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  trait POSITION extends StObject {
-    
-    var horizontal: typings.baseui.baseuiStrings.horizontal
-    
-    var vertical: typings.baseui.baseuiStrings.vertical
-  }
   object POSITION {
     
-    @JSImport("baseui/app-nav-bar", "POSITION")
+    @JSImport("baseui/app-nav-bar", "POSITION.horizontal")
     @js.native
-    val ^ : POSITION = js.native
+    val horizontal: typings.baseui.baseuiStrings.horizontal = js.native
     
-    extension [Self <: POSITION](x: Self) {
-      
-      inline def setHorizontal(value: horizontal): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
-      
-      inline def setVertical(value: vertical): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
-    }
+    @JSImport("baseui/app-nav-bar", "POSITION.vertical")
+    @js.native
+    val vertical: typings.baseui.baseuiStrings.vertical = js.native
   }
   
-  inline def setItemActive(items: js.Array[NavItemT], item: NavItemT): js.Array[NavItemT] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemActive")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[NavItemT]]
-  inline def setItemActive(
-    items: js.Array[NavItemT],
-    item: NavItemT,
-    getUniqueueIdentifier: js.Function1[/* currentItem */ NavItemT, String | Double]
-  ): js.Array[NavItemT] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemActive")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any], getUniqueueIdentifier.asInstanceOf[js.Any])).asInstanceOf[js.Array[NavItemT]]
+  @JSImport("baseui/app-nav-bar", "StyledAppName")
+  @js.native
+  val StyledAppName: StyletronComponent[div, js.Object] = js.native
   
-  trait AppNavBarPropsT
-    extends StObject
-       with UserMenuPropsT {
-    
-    var isMainItemActive: js.UndefOr[js.Function1[/* item */ NavItemT, Boolean]] = js.undefined
-    
-    var mainItems: js.UndefOr[js.Array[NavItemT]] = js.undefined
-    
-    var mapItemToNode: js.UndefOr[js.Function1[/* item */ NavItemT, ReactNode]] = js.undefined
-    
-    var onMainItemSelect: js.UndefOr[
-        js.Function1[
-          /* item */ NavItemT, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
-        ]
-      ] = js.undefined
-    
-    var title: js.UndefOr[ReactNode] = js.undefined
-  }
-  object AppNavBarPropsT {
-    
-    inline def apply(): AppNavBarPropsT = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AppNavBarPropsT]
-    }
-    
-    extension [Self <: AppNavBarPropsT](x: Self) {
-      
-      inline def setIsMainItemActive(value: /* item */ NavItemT => Boolean): Self = StObject.set(x, "isMainItemActive", js.Any.fromFunction1(value))
-      
-      inline def setIsMainItemActiveUndefined: Self = StObject.set(x, "isMainItemActive", js.undefined)
-      
-      inline def setMainItems(value: js.Array[NavItemT]): Self = StObject.set(x, "mainItems", value.asInstanceOf[js.Any])
-      
-      inline def setMainItemsUndefined: Self = StObject.set(x, "mainItems", js.undefined)
-      
-      inline def setMainItemsVarargs(value: NavItemT*): Self = StObject.set(x, "mainItems", js.Array(value :_*))
-      
-      inline def setMapItemToNode(value: /* item */ NavItemT => ReactNode): Self = StObject.set(x, "mapItemToNode", js.Any.fromFunction1(value))
-      
-      inline def setMapItemToNodeUndefined: Self = StObject.set(x, "mapItemToNode", js.undefined)
-      
-      inline def setOnMainItemSelect(
-        value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
-      ): Self = StObject.set(x, "onMainItemSelect", js.Any.fromFunction1(value))
-      
-      inline def setOnMainItemSelectUndefined: Self = StObject.set(x, "onMainItemSelect", js.undefined)
-      
-      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-      
-      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    }
-  }
+  @JSImport("baseui/app-nav-bar", "StyledDesktopMenu")
+  @js.native
+  val StyledDesktopMenu: StyletronComponent[div, js.Object] = js.native
   
-  trait NavItemT extends StObject {
-    
-    var active: js.UndefOr[Boolean] = js.undefined
-    
-    var children: js.UndefOr[js.Array[NavItemT]] = js.undefined
-    
-    var icon: js.UndefOr[ComponentType[js.Any]] = js.undefined
-    
-    var info: js.UndefOr[js.Any] = js.undefined
-    
-    var label: String
-    
-    var navExitIcon: js.UndefOr[ComponentType[js.Any]] = js.undefined
-    
-    var navPosition: js.UndefOr[Desktop] = js.undefined
-  }
-  object NavItemT {
-    
-    inline def apply(label: String): NavItemT = {
-      val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NavItemT]
-    }
-    
-    extension [Self <: NavItemT](x: Self) {
-      
-      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
-      
-      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
-      
-      inline def setChildren(value: js.Array[NavItemT]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setChildrenVarargs(value: NavItemT*): Self = StObject.set(x, "children", js.Array(value :_*))
-      
-      inline def setIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-      
-      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
-      
-      inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
-      
-      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
-      
-      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-      
-      inline def setNavExitIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "navExitIcon", value.asInstanceOf[js.Any])
-      
-      inline def setNavExitIconUndefined: Self = StObject.set(x, "navExitIcon", js.undefined)
-      
-      inline def setNavPosition(value: Desktop): Self = StObject.set(x, "navPosition", value.asInstanceOf[js.Any])
-      
-      inline def setNavPositionUndefined: Self = StObject.set(x, "navPosition", js.undefined)
-    }
-  }
+  @JSImport("baseui/app-nav-bar", "StyledDesktopMenuContainer")
+  @js.native
+  val StyledDesktopMenuContainer: StyletronComponent[div, js.Object] = js.native
   
-  trait UserMenuPropsT extends StObject {
-    
-    var onUserItemSelect: js.UndefOr[
-        js.Function1[
-          /* item */ NavItemT, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
-        ]
-      ] = js.undefined
-    
-    var userImgUrl: js.UndefOr[String] = js.undefined
-    
-    var userItems: js.UndefOr[js.Array[NavItemT]] = js.undefined
-    
-    var username: js.UndefOr[String] = js.undefined
-    
-    var usernameSubtitle: js.UndefOr[ReactNode] = js.undefined
-  }
-  object UserMenuPropsT {
-    
-    inline def apply(): UserMenuPropsT = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[UserMenuPropsT]
-    }
-    
-    extension [Self <: UserMenuPropsT](x: Self) {
-      
-      inline def setOnUserItemSelect(
-        value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
-      ): Self = StObject.set(x, "onUserItemSelect", js.Any.fromFunction1(value))
-      
-      inline def setOnUserItemSelectUndefined: Self = StObject.set(x, "onUserItemSelect", js.undefined)
-      
-      inline def setUserImgUrl(value: String): Self = StObject.set(x, "userImgUrl", value.asInstanceOf[js.Any])
-      
-      inline def setUserImgUrlUndefined: Self = StObject.set(x, "userImgUrl", js.undefined)
-      
-      inline def setUserItems(value: js.Array[NavItemT]): Self = StObject.set(x, "userItems", value.asInstanceOf[js.Any])
-      
-      inline def setUserItemsUndefined: Self = StObject.set(x, "userItems", js.undefined)
-      
-      inline def setUserItemsVarargs(value: NavItemT*): Self = StObject.set(x, "userItems", js.Array(value :_*))
-      
-      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
-      
-      inline def setUsernameSubtitle(value: ReactNode): Self = StObject.set(x, "usernameSubtitle", value.asInstanceOf[js.Any])
-      
-      inline def setUsernameSubtitleUndefined: Self = StObject.set(x, "usernameSubtitle", js.undefined)
-      
-      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
-    }
-  }
+  @JSImport("baseui/app-nav-bar", "StyledMainMenuItem")
+  @js.native
+  val StyledMainMenuItem: StyletronComponent[div, Active] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledPrimaryMenuContainer")
+  @js.native
+  val StyledPrimaryMenuContainer: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledRoot")
+  @js.native
+  val StyledRoot: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledSecondaryMenuContainer")
+  @js.native
+  val StyledSecondaryMenuContainer: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledSideMenuButton")
+  @js.native
+  val StyledSideMenuButton: StyletronComponent[button, IsFocusVisible] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledSpacing")
+  @js.native
+  val StyledSpacing: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledSubnavContainer")
+  @js.native
+  val StyledSubnavContainer: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledUserMenuButton")
+  @js.native
+  val StyledUserMenuButton: StyletronComponent[button, IsFocusVisible] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledUserMenuProfileListItem")
+  @js.native
+  val StyledUserMenuProfileListItem: StyletronComponent[li_, Disabled] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledUserProfileInfoContainer")
+  @js.native
+  val StyledUserProfileInfoContainer: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledUserProfilePictureContainer")
+  @js.native
+  val StyledUserProfilePictureContainer: StyletronComponent[div, js.Object] = js.native
+  
+  @JSImport("baseui/app-nav-bar", "StyledUserProfileTileContainer")
+  @js.native
+  val StyledUserProfileTileContainer: StyletronComponent[div, js.Object] = js.native
+  
+  inline def setItemActive(items: js.Array[NavItem], item: NavItem): js.Array[NavItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemActive")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[NavItem]]
+  inline def setItemActive(items: js.Array[NavItem], item: NavItem, getUniqueIdentifier: GetUniqueIdentifier): js.Array[NavItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemActive")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any], getUniqueIdentifier.asInstanceOf[js.Any])).asInstanceOf[js.Array[NavItem]]
+  
+  type AppNavBarOverridesT = AppNavBarOverrides
+  
+  type AppNavBarPropsT = AppNavBarProps
+  
+  type NavItemT = NavItem
+  
+  type UserMenuPropsT = UserMenuProps
 }

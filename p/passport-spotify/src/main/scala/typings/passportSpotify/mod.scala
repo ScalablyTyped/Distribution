@@ -1,12 +1,10 @@
 package typings.passportSpotify
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passportSpotify.anon.Type
 import typings.passportSpotify.passportSpotifyBooleans.`false`
 import typings.passportSpotify.passportSpotifyBooleans.`true`
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,19 +13,36 @@ object mod {
   
   @JSImport("passport-spotify", "Strategy")
   @js.native
-  class Strategy protected () extends StObject {
+  open class Strategy protected () extends StObject {
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
     
     var name: String = js.native
   }
   
   trait Profile extends StObject {
     
-    var _json: js.Any
+    var _json: Any
     
     var _raw: String
     
@@ -54,7 +69,7 @@ object mod {
   object Profile {
     
     inline def apply(
-      _json: js.Any,
+      _json: Any,
       _raw: String,
       country: String,
       displayName: String,
@@ -76,7 +91,7 @@ object mod {
       
       inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
       
-      inline def setEmailsVarargs(value: Type*): Self = StObject.set(x, "emails", js.Array(value :_*))
+      inline def setEmailsVarargs(value: Type*): Self = StObject.set(x, "emails", js.Array(value*))
       
       inline def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
@@ -88,7 +103,7 @@ object mod {
       
       inline def setPhotosNull: Self = StObject.set(x, "photos", null)
       
-      inline def setPhotosVarargs(value: String*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: String*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
@@ -102,7 +117,7 @@ object mod {
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
       
       inline def set_raw(value: String): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
     }
@@ -178,7 +193,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setShowDialog(value: Boolean): Self = StObject.set(x, "showDialog", value.asInstanceOf[js.Any])
       
@@ -214,7 +229,7 @@ object mod {
   }
   
   type VerifyCallback = js.Function3[
-    /* error */ js.UndefOr[Error | Null], 
+    /* error */ js.UndefOr[js.Error | Null], 
     /* user */ js.UndefOr[js.Object], 
     /* info */ js.UndefOr[js.Object], 
     Unit
@@ -223,19 +238,25 @@ object mod {
   type VerifyFunction = js.Function5[
     /* accessToken */ String, 
     /* refreshToken */ String, 
+    /* expires_in */ Double, 
     /* profile */ Profile, 
     /* done */ VerifyCallback, 
-    /* expires_in */ js.UndefOr[Double], 
     Unit
   ]
   
   type VerifyFunctionWithRequest = js.Function6[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
+    /* expires_in */ Double, 
     /* profile */ Profile, 
     /* done */ VerifyCallback, 
-    /* expires_in */ js.UndefOr[Double], 
     Unit
   ]
 }

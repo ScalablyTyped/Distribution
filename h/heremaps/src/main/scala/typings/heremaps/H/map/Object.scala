@@ -24,19 +24,19 @@ trait Object
     * @param object {*} - The object that's being compared against.
     * @returns {boolean}
     */
-  def contains(`object`: js.Any): Boolean = js.native
+  def contains(`object`: Any): Boolean = js.native
   
   /**
     * This method returns previously stored arbitrary data from this object.
     * @returns {*} - the previously stored data or undefined if not data was stored.
     */
-  def getData(): js.Any = js.native
+  def getData(): Any = js.native
   
   /**
     * Returns the ID of this object.
     * @returns {*}
     */
-  def getId(): js.Any = js.native
+  def getId(): Any = js.native
   
   /**
     * Returns the invalidations of this object
@@ -88,7 +88,7 @@ trait Object
     * @param data {*} - the data to be stored
     * @returns {H.map.Object} - returns this map object instance
     */
-  def setData(data: js.Any): Object = js.native
+  def setData(data: Any): Object = js.native
   
   /**
     * Sets the visibility of this object.
@@ -166,7 +166,7 @@ object Object {
     */
   trait Options extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
     
@@ -187,7 +187,7 @@ object Object {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

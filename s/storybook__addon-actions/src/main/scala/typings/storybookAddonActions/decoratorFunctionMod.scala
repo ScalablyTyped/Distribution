@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object decoratorFunctionMod {
   
-  type DecoratorFunction = js.Function1[/* args */ js.Array[js.Any], js.Array[js.Any]]
+  type DecoratorFunction = js.Function1[/* args */ js.Array[Any], js.Array[Any]]
 }

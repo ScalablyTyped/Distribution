@@ -1,24 +1,26 @@
 package typings.minappEnv.DB
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.minappEnv.IAPIParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DocumentId = java.lang.String | scala.Double
+type DocumentId = String | Double
 
-type ICountDocumentOptions = typings.minappEnv.DB.IDBAPIParam
+type ICountDocumentOptions = IDBAPIParam
 
-type IDBAPIParam = typings.minappEnv.IAPIParam[js.Any]
+type IDBAPIParam = IAPIParam[Any]
 
-type IGetDocumentOptions = typings.minappEnv.DB.IDBAPIParam
+type IGetDocumentOptions = IDBAPIParam
 
-type IQueryCondition = org.scalablytyped.runtime.StringDictionary[js.Any]
+type IQueryCondition = StringDictionary[Any]
 
-type IRemoveSingleDocumentOptions = typings.minappEnv.DB.IDBAPIParam
+type IRemoveSingleDocumentOptions = IDBAPIParam
 
-type IStringQueryCondition = java.lang.String
+type IStringQueryCondition = String
 
-type IStringUpdateCondition = java.lang.String
+type IStringUpdateCondition = String
 
-type IUpdateCondition = org.scalablytyped.runtime.StringDictionary[js.Any]
+type IUpdateCondition = StringDictionary[Any]

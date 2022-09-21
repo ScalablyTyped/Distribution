@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param x2 Defines the x component of the end tangent in the bezier curve
   * @param y2 Defines the y component of the end tangent in the bezier curve
   */
-class BezierCurveEase ()
+open class BezierCurveEase ()
   extends StObject
      with typings.babylonjs.BABYLON.BezierCurveEase {
   def this(/** Defines the x component of the start tangent in the bezier curve */
@@ -145,10 +145,10 @@ class BezierCurveEase ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _easingMode: js.Any = js.native
+  var _easingMode: Any = js.native
   
   /**
-    * Given an input gradient between 0 and 1, this returns the corrseponding value
+    * Given an input gradient between 0 and 1, this returns the corresponding value
     * of the easing function.
     * The link below provides some of the most common examples of easing functions.
     * @see https://easings.net/
@@ -159,6 +159,7 @@ class BezierCurveEase ()
   override def ease(gradient: Double): Double = js.native
   
   /**
+    * @param gradient
     * @hidden
     */
   /* CompleteClass */

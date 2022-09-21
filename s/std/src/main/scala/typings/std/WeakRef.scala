@@ -11,8 +11,10 @@ trait WeakRef[T /* <: js.Object */] extends StObject {
     * Returns the WeakRef instance's target object, or undefined if the target object has been
     * reclaimed.
     */
+  /* standard es2021.weakref */
   def deref(): js.UndefOr[T] = js.native
   
+  /* standard es2021.weakref */
   @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.std.stdStrings.WeakRef = js.native
 }

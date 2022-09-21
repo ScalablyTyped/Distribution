@@ -1,10 +1,10 @@
 package typings.googleapis.anon
 
-import typings.googleapis.v32Mod.dfareportingV32.SchemaActivities
-import typings.googleapis.v32Mod.dfareportingV32.SchemaCustomRichMediaEvents
-import typings.googleapis.v32Mod.dfareportingV32.SchemaDateRange
-import typings.googleapis.v32Mod.dfareportingV32.SchemaDimensionValue
-import typings.googleapis.v32Mod.dfareportingV32.SchemaSortedDimension
+import typings.googleapis.v34Mod.dfareportingV34.SchemaActivities
+import typings.googleapis.v34Mod.dfareportingV34.SchemaCustomRichMediaEvents
+import typings.googleapis.v34Mod.dfareportingV34.SchemaDateRange
+import typings.googleapis.v34Mod.dfareportingV34.SchemaDimensionValue
+import typings.googleapis.v34Mod.dfareportingV34.SchemaSortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,13 +52,13 @@ object EnableAllDimensionCombinations {
     
     inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    inline def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
     
     inline def setDimensions(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setEnableAllDimensionCombinations(value: Boolean): Self = StObject.set(x, "enableAllDimensionCombinations", value.asInstanceOf[js.Any])
     
@@ -68,12 +68,12 @@ object EnableAllDimensionCombinations {
     
     inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
     
     inline def setReachByFrequencyMetricNames(value: js.Array[String]): Self = StObject.set(x, "reachByFrequencyMetricNames", value.asInstanceOf[js.Any])
     
     inline def setReachByFrequencyMetricNamesUndefined: Self = StObject.set(x, "reachByFrequencyMetricNames", js.undefined)
     
-    inline def setReachByFrequencyMetricNamesVarargs(value: String*): Self = StObject.set(x, "reachByFrequencyMetricNames", js.Array(value :_*))
+    inline def setReachByFrequencyMetricNamesVarargs(value: String*): Self = StObject.set(x, "reachByFrequencyMetricNames", js.Array(value*))
   }
 }

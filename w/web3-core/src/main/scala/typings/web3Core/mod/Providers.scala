@@ -15,7 +15,7 @@ trait Providers extends StObject {
     typings.web3Core.mod.HttpProvider
   ]
   
-  var IpcProvider: Instantiable2[/* path */ String, /* net */ js.Any, typings.web3Core.mod.IpcProvider]
+  var IpcProvider: Instantiable2[/* path */ String, /* net */ Any, typings.web3Core.mod.IpcProvider]
   
   var WebsocketProvider: Instantiable2[
     /* host */ String, 
@@ -27,7 +27,7 @@ object Providers {
   
   inline def apply(
     HttpProvider: Instantiable2[/* host */ String, /* options */ js.UndefOr[HttpProviderOptions], HttpProvider],
-    IpcProvider: Instantiable2[/* path */ String, /* net */ js.Any, IpcProvider],
+    IpcProvider: Instantiable2[/* path */ String, /* net */ Any, IpcProvider],
     WebsocketProvider: Instantiable2[
       /* host */ String, 
       /* options */ js.UndefOr[WebsocketProviderOptions], 
@@ -44,7 +44,7 @@ object Providers {
       value: Instantiable2[/* host */ String, /* options */ js.UndefOr[HttpProviderOptions], HttpProvider]
     ): Self = StObject.set(x, "HttpProvider", value.asInstanceOf[js.Any])
     
-    inline def setIpcProvider(value: Instantiable2[/* path */ String, /* net */ js.Any, IpcProvider]): Self = StObject.set(x, "IpcProvider", value.asInstanceOf[js.Any])
+    inline def setIpcProvider(value: Instantiable2[/* path */ String, /* net */ Any, IpcProvider]): Self = StObject.set(x, "IpcProvider", value.asInstanceOf[js.Any])
     
     inline def setWebsocketProvider(
       value: Instantiable2[

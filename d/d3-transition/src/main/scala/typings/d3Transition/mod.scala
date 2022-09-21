@@ -8,7 +8,6 @@ import typings.d3Selection.mod.ValueFn
 import typings.d3Transition.d3TransitionStrings.important
 import typings.std.Document
 import typings.std.Element
-import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,41 +33,25 @@ object mod {
   inline def interrupt(node: BaseType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def interrupt(node: BaseType, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")().asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
-  inline def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(name.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
-  inline def transition[OldDatum](transition: Transition_[BaseType, js.Any, BaseType, js.Any]): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(transition.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+  inline def transition[OldDatum](): Transition_[BaseType, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")().asInstanceOf[Transition_[BaseType, OldDatum, Null, Unit]]
+  inline def transition[OldDatum](name: String): Transition_[BaseType, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(name.asInstanceOf[js.Any]).asInstanceOf[Transition_[BaseType, OldDatum, Null, Unit]]
+  inline def transition[OldDatum](transition: Transition_[BaseType, Any, BaseType, Any]): Transition_[BaseType, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(transition.asInstanceOf[js.Any]).asInstanceOf[Transition_[BaseType, OldDatum, Null, Unit]]
   
   type SelectionOrTransition[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] = (Selection_[GElement, Datum, PElement, PDatum]) | (Transition_[GElement, Datum, PElement, PDatum])
   
   @js.native
   trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] extends StObject {
     
+    // Modifying -------------------------------
     /**
       * For each selected element, assigns the attribute tween for the attribute with the specified name to the specified target value.
       * The starting value of the tween is the attribute’s value when the transition starts.
-      * The target value is the specified constant value for all elements.
-      *
-      * An interpolator is chosen based on the type of the target value, using the following algorithm:
-      * 1.) If value is a number, use interpolateNumber.
-      * 2.) If value is a color or a string coercible to a color, use interpolateRgb.
-      * 3.) Use interpolateString.
-      *
-      * To apply a different interpolator, use transition.attrTween.
-      *
-      * @param name Name of the attribute.
-      * @param value Target value for the attribute.
+      * If the target value is null, the attribute is removed when the transition starts.
       */
+    def attr(name: String): this.type = js.native
     def attr(name: String, value: String): this.type = js.native
     def attr(name: String, value: Boolean): this.type = js.native
     def attr(name: String, value: Double): this.type = js.native
-    // Modifying -------------------------------
-    /**
-      * For each selected element, the attribute with the specified name will be cleared at the start of the transition.
-      *
-      * @param name Name of the attribute.
-      * @param value Use null to clear the attribute.
-      */
-    def attr(name: String, value: Null): this.type = js.native
     /**
       * For each selected element, assigns the attribute tween for the attribute with the specified name to the specified target value.
       * The starting value of the tween is the attribute’s value when the transition starts.
@@ -130,10 +113,10 @@ object mod {
     def call(
       func: js.Function2[
           /* transition */ Transition_[GElement, Datum, PElement, PDatum], 
-          /* repeated */ js.Any, 
-          js.Any
+          /* repeated */ Any, 
+          Any
         ],
-      args: js.Any*
+      args: Any*
     ): this.type = js.native
     
     // Transition Configuration ----------------------
@@ -260,6 +243,7 @@ object mod {
       *
       * @param filter A CSS selector string.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("filter")
     def filter_FilteredElement_BaseType[FilteredElement /* <: BaseType */](filter: String): Transition_[FilteredElement, Datum, PElement, PDatum] = js.native
     /**
@@ -275,6 +259,7 @@ object mod {
       * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). The filter function returns a boolean indicating,
       * whether the selected element matches.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("filter")
     def filter_FilteredElement_BaseType[FilteredElement /* <: BaseType */](filter: ValueFn[GElement, Datum, Boolean]): Transition_[FilteredElement, Datum, PElement, PDatum] = js.native
     
@@ -353,6 +338,7 @@ object mod {
       *
       * @param selector CSS selector string
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def select[DescElement /* <: BaseType */](selector: String): Transition_[DescElement, Datum, PElement, PDatum] = js.native
     /**
       * For each selected element, select the descendant element returned by the selector function, if any,
@@ -378,6 +364,7 @@ object mod {
       *
       * @param selector CSS selector string
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def selectAll[DescElement /* <: BaseType */, OldDatum](selector: String): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
     /**
       * For each selected element, select all descendant elements returned by the selector function, if any,
@@ -391,7 +378,38 @@ object mod {
       * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). It must return an array of elements
       * (or a pseudo-array, such as a NodeList), or the empty array if there are no matching elements.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def selectAll[DescElement /* <: BaseType */, OldDatum](selector: ValueFn[GElement, Datum, js.Array[DescElement] | ArrayLike[DescElement]]): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
+    
+    /**
+      * For each selected element, selects the first child element that matches the specified selector string, if any, and returns a transition on the resulting selection.
+      * The selector may be specified either as a selector string or a function.
+      * If a function, it is evaluated for each selected element, in order, being passed the current datum (d),
+      * the current index (i), and the current group (nodes), with this as the current DOM element.
+      * The new transition has the same id, name and timing as this transition;
+      * however, if a transition with the same id already exists on a selected element, the existing transition is returned for that element.
+      * This method is equivalent to deriving the selection for this transition via transition.selection,
+      * creating a subselection via selection.selectChild, and then creating a new transition via selection.transition.
+      */
+    // tslint:disable-next-line:no-unnecessary-generics
+    def selectChild[DescElement /* <: BaseType */, OldDatum](): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
+    def selectChild[DescElement /* <: BaseType */, OldDatum](selector: String): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
+    def selectChild[DescElement /* <: BaseType */, OldDatum](selector: ValueFn[GElement, Datum, DescElement]): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
+    
+    /**
+      * For each selected element, selects all children that match the specified selector string, if any, and returns a transition on the resulting selection.
+      * The selector may be specified either as a selector string or a function.
+      * If a function, it is evaluated for each selected element, in order, being passed the current datum (d),
+      * the current index (i), and the current group (nodes), with this as the current DOM element.
+      * The new transition has the same id, name and timing as this transition;
+      * however, if a transition with the same id already exists on a selected element, the existing transition is returned for that element.
+      * This method is equivalent to deriving the selection for this transition via transition.selection,
+      * creating a subselection via selection.selectChildren, and then creating a new transition via selection.transition.
+      */
+    // tslint:disable-next-line:no-unnecessary-generics
+    def selectChildren[DescElement /* <: BaseType */, OldDatum](): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
+    def selectChildren[DescElement /* <: BaseType */, OldDatum](selector: String): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
+    def selectChildren[DescElement /* <: BaseType */, OldDatum](selector: ValueFn[GElement, Datum, DescElement]): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
     
     /**
       * Return the selection corresponding to this transition.
@@ -505,21 +523,12 @@ object mod {
     
     /**
       * For each selected element, sets the text content to the specified target value when the transition starts.
-      *
-      * To interpolate text rather than to set it on start, use transition.textTween (for example) or append a replacement element and cross-fade opacity (for example).
-      * Text is not interpolated by default because it is usually undesirable.
-      *
-      * @param value Value used for text content
+      * A null value will clear the content.
       */
+    def text(): this.type = js.native
     def text(value: String): this.type = js.native
     def text(value: Boolean): this.type = js.native
     def text(value: Double): this.type = js.native
-    /**
-      * For each selected element, the text content will be cleared, replacing any existing child elements.
-      *
-      * @param value Use null to clear the text content.
-      */
-    def text(value: Null): this.type = js.native
     /**
       * For each selected element, sets the text content returned by the value function for each selected element when the transition starts.
       *
@@ -657,7 +666,7 @@ object mod {
         *
         * @param transition A transition instance.
         */
-      def transition(transition: Transition_[BaseType, js.Any, js.Any, js.Any]): Transition_[GElement, Datum, PElement, PDatum] = js.native
+      def transition(transition: Transition_[BaseType, Any, Any, Any]): Transition_[GElement, Datum, PElement, PDatum] = js.native
     }
   }
 }

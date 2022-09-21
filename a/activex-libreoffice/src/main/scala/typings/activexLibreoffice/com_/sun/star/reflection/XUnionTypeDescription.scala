@@ -19,7 +19,7 @@ trait XUnionTypeDescription
     * Returns the default discriminant value.
     * @returns default discriminant value
     */
-  val DefaultDiscriminant: js.Any
+  val DefaultDiscriminant: Any
   
   /**
     * Returns the type of the default value.
@@ -37,7 +37,7 @@ trait XUnionTypeDescription
     * Returns discriminants of all members in order of IDL declaration.
     * @returns discriminants of all members
     */
-  val Discriminants: SafeArray[js.Any]
+  val Discriminants: SafeArray[Any]
   
   /**
     * Returns names of all members in order of IDL declaration.
@@ -55,7 +55,7 @@ trait XUnionTypeDescription
     * Returns the default discriminant value.
     * @returns default discriminant value
     */
-  def getDefaultDiscriminant(): js.Any
+  def getDefaultDiscriminant(): Any
   
   /**
     * Returns the type of the default value.
@@ -73,7 +73,7 @@ trait XUnionTypeDescription
     * Returns discriminants of all members in order of IDL declaration.
     * @returns discriminants of all members
     */
-  def getDiscriminants(): SafeArray[js.Any]
+  def getDiscriminants(): SafeArray[Any]
   
   /**
     * Returns names of all members in order of IDL declaration.
@@ -90,24 +90,24 @@ trait XUnionTypeDescription
 object XUnionTypeDescription {
   
   inline def apply(
-    DefaultDiscriminant: js.Any,
+    DefaultDiscriminant: Any,
     DefaultMemberType: XTypeDescription,
     DiscriminantType: XTypeDescription,
-    Discriminants: SafeArray[js.Any],
+    Discriminants: SafeArray[Any],
     MemberNames: SafeArray[String],
     MemberTypes: SafeArray[XTypeDescription],
     Name: String,
     TypeClass: TypeClass,
     acquire: () => Unit,
-    getDefaultDiscriminant: () => js.Any,
+    getDefaultDiscriminant: () => Any,
     getDefaultMemberType: () => XTypeDescription,
     getDiscriminantType: () => XTypeDescription,
-    getDiscriminants: () => SafeArray[js.Any],
+    getDiscriminants: () => SafeArray[Any],
     getMemberNames: () => SafeArray[String],
     getMemberTypes: () => SafeArray[XTypeDescription],
     getName: () => String,
     getTypeClass: () => TypeClass,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XUnionTypeDescription = {
     val __obj = js.Dynamic.literal(DefaultDiscriminant = DefaultDiscriminant.asInstanceOf[js.Any], DefaultMemberType = DefaultMemberType.asInstanceOf[js.Any], DiscriminantType = DiscriminantType.asInstanceOf[js.Any], Discriminants = Discriminants.asInstanceOf[js.Any], MemberNames = MemberNames.asInstanceOf[js.Any], MemberTypes = MemberTypes.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDefaultDiscriminant = js.Any.fromFunction0(getDefaultDiscriminant), getDefaultMemberType = js.Any.fromFunction0(getDefaultMemberType), getDiscriminantType = js.Any.fromFunction0(getDiscriminantType), getDiscriminants = js.Any.fromFunction0(getDiscriminants), getMemberNames = js.Any.fromFunction0(getMemberNames), getMemberTypes = js.Any.fromFunction0(getMemberTypes), getName = js.Any.fromFunction0(getName), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -116,21 +116,21 @@ object XUnionTypeDescription {
   
   extension [Self <: XUnionTypeDescription](x: Self) {
     
-    inline def setDefaultDiscriminant(value: js.Any): Self = StObject.set(x, "DefaultDiscriminant", value.asInstanceOf[js.Any])
+    inline def setDefaultDiscriminant(value: Any): Self = StObject.set(x, "DefaultDiscriminant", value.asInstanceOf[js.Any])
     
     inline def setDefaultMemberType(value: XTypeDescription): Self = StObject.set(x, "DefaultMemberType", value.asInstanceOf[js.Any])
     
     inline def setDiscriminantType(value: XTypeDescription): Self = StObject.set(x, "DiscriminantType", value.asInstanceOf[js.Any])
     
-    inline def setDiscriminants(value: SafeArray[js.Any]): Self = StObject.set(x, "Discriminants", value.asInstanceOf[js.Any])
+    inline def setDiscriminants(value: SafeArray[Any]): Self = StObject.set(x, "Discriminants", value.asInstanceOf[js.Any])
     
-    inline def setGetDefaultDiscriminant(value: () => js.Any): Self = StObject.set(x, "getDefaultDiscriminant", js.Any.fromFunction0(value))
+    inline def setGetDefaultDiscriminant(value: () => Any): Self = StObject.set(x, "getDefaultDiscriminant", js.Any.fromFunction0(value))
     
     inline def setGetDefaultMemberType(value: () => XTypeDescription): Self = StObject.set(x, "getDefaultMemberType", js.Any.fromFunction0(value))
     
     inline def setGetDiscriminantType(value: () => XTypeDescription): Self = StObject.set(x, "getDiscriminantType", js.Any.fromFunction0(value))
     
-    inline def setGetDiscriminants(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getDiscriminants", js.Any.fromFunction0(value))
+    inline def setGetDiscriminants(value: () => SafeArray[Any]): Self = StObject.set(x, "getDiscriminants", js.Any.fromFunction0(value))
     
     inline def setGetMemberNames(value: () => SafeArray[String]): Self = StObject.set(x, "getMemberNames", js.Any.fromFunction0(value))
     

@@ -15,7 +15,7 @@ trait KeyBinding extends StObject {
   
   val CommandParameter: String = js.native
   
-  val Context: js.Any = js.native
+  val Context: Any = js.native
   
   val Creator: Double = js.native
   
@@ -31,12 +31,12 @@ trait KeyBinding extends StObject {
   
   val KeyString: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Protected: Boolean = js.native
   
   def Rebind(KeyCategory: WdKeyCategory, Command: String): Unit = js.native
-  def Rebind(KeyCategory: WdKeyCategory, Command: String, CommandParameter: js.Any): Unit = js.native
+  def Rebind(KeyCategory: WdKeyCategory, Command: String, CommandParameter: Any): Unit = js.native
   
   /* private */ @JSName("Word.KeyBinding_typekey")
   var WordDotKeyBinding_typekey: KeyBinding = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_admin
 
-Typings are for version 1.0.20201117
+Typings are for version 1.0.20220809
 
 ## Library description:
 TypeScript typings for Admin SDK API reports_v1
@@ -10,10 +10,10 @@ TypeScript typings for Admin SDK API reports_v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.admin |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 1 |
-| # downloads        | 1405 |
-| # stars            | 0 |
+| # releases         | 78 |
+| # dependents       | 0.0 |
+| # downloads        | 975.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

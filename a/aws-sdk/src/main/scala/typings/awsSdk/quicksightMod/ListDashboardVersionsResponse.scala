@@ -17,7 +17,7 @@ trait ListDashboardVersionsResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object ListDashboardVersionsResponse {
     
     inline def setDashboardVersionSummaryListUndefined: Self = StObject.set(x, "DashboardVersionSummaryList", js.undefined)
     
-    inline def setDashboardVersionSummaryListVarargs(value: DashboardVersionSummary*): Self = StObject.set(x, "DashboardVersionSummaryList", js.Array(value :_*))
+    inline def setDashboardVersionSummaryListVarargs(value: DashboardVersionSummary*): Self = StObject.set(x, "DashboardVersionSummaryList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -14,11 +14,11 @@ object mod {
   inline def apply(
     middleware: js.Function3[
       /* req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+      /* res */ ServerResponse[IncomingMessage], 
+      /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
       Unit
     ]
-  ): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  ): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("express-to-koa", JSImport.Namespace)
   @js.native

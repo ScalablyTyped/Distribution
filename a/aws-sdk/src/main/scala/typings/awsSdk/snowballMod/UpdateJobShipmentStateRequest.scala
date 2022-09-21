@@ -12,7 +12,7 @@ trait UpdateJobShipmentStateRequest extends StObject {
   var JobId: typings.awsSdk.snowballMod.JobId
   
   /**
-    * The state of a device when it is being shipped.  Set to RECEIVED when the device arrives at your location. Set to RETURNED when you have returned the device to AWS.
+    * The state of a device when it is being shipped.  Set to RECEIVED when the device arrives at your location. Set to RETURNED when you have returned the device to Amazon Web Services.
     */
   var ShipmentState: typings.awsSdk.snowballMod.ShipmentState
 }

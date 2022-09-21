@@ -27,7 +27,7 @@ trait ISearchService extends StObject {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching items
     */
-  def searchAll(args: ISearchArgs): IPromise[js.Any]
+  def searchAll(args: ISearchArgs): IPromise[Any]
   
   /**
     * @ngdoc method
@@ -71,7 +71,7 @@ trait ISearchService extends StObject {
 object ISearchService {
   
   inline def apply(
-    searchAll: ISearchArgs => IPromise[js.Any],
+    searchAll: ISearchArgs => IPromise[Any],
     searchContent: ISearchArgs => IPromise[js.Array[ISearchContent]],
     searchMedia: ISearchArgs => IPromise[js.Array[ISearchMedia]],
     searchMembers: ISearchArgs => IPromise[js.Array[ISearchMember]]
@@ -82,7 +82,7 @@ object ISearchService {
   
   extension [Self <: ISearchService](x: Self) {
     
-    inline def setSearchAll(value: ISearchArgs => IPromise[js.Any]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
+    inline def setSearchAll(value: ISearchArgs => IPromise[Any]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
     
     inline def setSearchContent(value: ISearchArgs => IPromise[js.Array[ISearchContent]]): Self = StObject.set(x, "searchContent", js.Any.fromFunction1(value))
     

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Line extends StObject {
   
-  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
+  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var line: js.UndefOr[`3`] = js.undefined
+  var line: js.UndefOr[`4`] = js.undefined
 }
 object Line {
   
@@ -23,13 +23,13 @@ object Line {
   
   extension [Self <: Line](x: Self) {
     
-    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setLine(value: `3`): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: `4`): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }

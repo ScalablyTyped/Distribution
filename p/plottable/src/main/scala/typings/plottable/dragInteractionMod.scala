@@ -11,53 +11,53 @@ object dragInteractionMod {
   
   @JSImport("plottable/build/src/interactions/dragInteraction", "Drag")
   @js.native
-  class Drag () extends Interaction {
+  open class Drag () extends Interaction {
     def this(mouseButton: Double) = this()
     
-    /* private */ var _constrainedToComponent: js.Any = js.native
+    /* private */ var _constrainedToComponent: Any = js.native
     
-    /* private */ def _doDrag(point: js.Any, event: js.Any): js.Any = js.native
+    /* private */ var _doDrag: Any = js.native
     
-    /* private */ var _dragCallbacks: js.Any = js.native
+    /* private */ var _dragCallbacks: Any = js.native
     
-    /* private */ var _dragEndCallbacks: js.Any = js.native
+    /* private */ var _dragEndCallbacks: Any = js.native
     
-    /* private */ var _dragOrigin: js.Any = js.native
+    /* private */ var _dragOrigin: Any = js.native
     
-    /* private */ var _dragStartCallbacks: js.Any = js.native
+    /* private */ var _dragStartCallbacks: Any = js.native
     
-    /* private */ var _dragging: js.Any = js.native
+    /* private */ var _dragging: Any = js.native
     
-    /* private */ def _endDrag(point: js.Any, event: js.Any): js.Any = js.native
+    /* private */ var _endDrag: Any = js.native
     
-    /* private */ var _mouseButton: js.Any = js.native
+    /* private */ var _mouseButton: Any = js.native
     
-    /* private */ var _mouseDispatcher: js.Any = js.native
+    /* private */ var _mouseDispatcher: Any = js.native
     
-    /* private */ var _mouseDownCallback: js.Any = js.native
+    /* private */ var _mouseDownCallback: Any = js.native
     
     /**
       * Only emit events when the mouseFilter is true for the source mouse
       * events. Use this to define custom filters (e.g. only right click,
       * require shift to be held down, etc.)
       */
-    /* private */ var _mouseFilter: js.Any = js.native
+    /* private */ var _mouseFilter: Any = js.native
     
-    /* private */ var _mouseMoveCallback: js.Any = js.native
+    /* private */ var _mouseMoveCallback: Any = js.native
     
-    /* private */ var _mouseUpCallback: js.Any = js.native
+    /* private */ var _mouseUpCallback: Any = js.native
     
-    /* private */ def _startDrag(point: js.Any, event: js.Any): js.Any = js.native
+    /* private */ var _startDrag: Any = js.native
     
-    /* private */ var _touchDispatcher: js.Any = js.native
+    /* private */ var _touchDispatcher: Any = js.native
     
-    /* private */ var _touchEndCallback: js.Any = js.native
+    /* private */ var _touchEndCallback: Any = js.native
     
-    /* private */ var _touchMoveCallback: js.Any = js.native
+    /* private */ var _touchMoveCallback: Any = js.native
     
-    /* private */ var _touchStartCallback: js.Any = js.native
+    /* private */ var _touchStartCallback: Any = js.native
     
-    /* private */ def _translateAndConstrain(p: js.Any): js.Any = js.native
+    /* private */ var _translateAndConstrain: Any = js.native
     
     /**
       * Gets whether the Drag Interaction constrains Points passed to its
@@ -157,8 +157,8 @@ object dragInteractionMod {
     
     @JSImport("plottable/build/src/interactions/dragInteraction", "Drag._DEFAULT_MOUSE_FILTER")
     @js.native
-    def _DEFAULT_MOUSE_FILTER: js.Any = js.native
-    inline def _DEFAULT_MOUSE_FILTER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MOUSE_FILTER")(x.asInstanceOf[js.Any])
+    def _DEFAULT_MOUSE_FILTER: Any = js.native
+    inline def _DEFAULT_MOUSE_FILTER_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MOUSE_FILTER")(x.asInstanceOf[js.Any])
   }
   
   type DragCallback = js.Function2[/* start */ Point, /* end */ Point, Unit]

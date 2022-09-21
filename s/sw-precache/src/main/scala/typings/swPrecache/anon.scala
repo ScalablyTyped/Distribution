@@ -1,6 +1,5 @@
 package typings.swPrecache
 
-import typings.std.RegExp
 import typings.swPrecache.mod.Method
 import typings.swToolbox.mod.Options_
 import typings.swToolbox.mod.Request
@@ -19,11 +18,11 @@ object anon {
     
     var options: js.UndefOr[Options_] = js.undefined
     
-    var urlPattern: RegExp | String
+    var urlPattern: js.RegExp | String
   }
   object Handler {
     
-    inline def apply(handler: typings.swPrecache.mod.Handler, urlPattern: RegExp | String): Handler = {
+    inline def apply(handler: typings.swPrecache.mod.Handler, urlPattern: js.RegExp | String): Handler = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], urlPattern = urlPattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Handler]
     }
@@ -42,7 +41,7 @@ object anon {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setUrlPattern(value: RegExp | String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
+      inline def setUrlPattern(value: js.RegExp | String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
     }
   }
 }

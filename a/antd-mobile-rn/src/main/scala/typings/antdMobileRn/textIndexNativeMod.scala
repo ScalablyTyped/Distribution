@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object textIndexNativeMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @JSImport("antd-mobile-rn/lib/text/index.native", JSImport.Default)
+  - Dropped new (args : ...any): react-native.react-native.NativeMethods */ @JSImport("antd-mobile-rn/lib/text/index.native", JSImport.Default)
   @js.native
-  class default protected () extends Text {
+  open class default protected () extends Text {
     def this(props: TextProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TextProps, context: js.Any) = this()
+    def this(props: TextProps, context: Any) = this()
   }
 }

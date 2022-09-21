@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.dataviz.drawing
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait PDFOptions extends StObject {
   
   var creator: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   var imgDPI: js.UndefOr[Double] = js.undefined
   
@@ -17,9 +16,9 @@ trait PDFOptions extends StObject {
   
   var landscape: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[Any] = js.undefined
   
-  var paperSize: js.UndefOr[js.Any] = js.undefined
+  var paperSize: js.UndefOr[Any] = js.undefined
   
   var subject: js.UndefOr[String] = js.undefined
   
@@ -38,7 +37,7 @@ object PDFOptions {
     
     inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
@@ -54,11 +53,11 @@ object PDFOptions {
     
     inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
-    inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setPaperSize(value: js.Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
+    inline def setPaperSize(value: Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
     
     inline def setPaperSizeUndefined: Self = StObject.set(x, "paperSize", js.undefined)
     

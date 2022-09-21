@@ -9,16 +9,16 @@ Web based JavaScript HTML WYSIWYG editor control.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tinymce |
-| Keywords           | editor, wysiwyg, tinymce, richtext, javascript, html |
-| # releases         | 46 |
-| # dependents       | 416 |
-| # downloads        | 6234189 |
-| # stars            | 8 |
+| Keywords           | wysiwyg, tinymce, richtext, javascript, html, text, rich editor, rich text editor, rte, rich text, contenteditable, editing |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 1378476.6666666667 |
+| # stars            | 11893.0 |
 
 ## Links
-- [Homepage](https://github.com/tinymce/tinymce-dist#readme)
+- [Homepage](https://www.tiny.cloud/)
 - [Bugs](https://github.com/tinymce/tinymce/issues)
-- [Repository](https://github.com/tinymce/tinymce-dist)
+- [Repository](https://github.com/tinymce/tinymce)
 - [Npm](https://www.npmjs.com/package/tinymce)
     
 

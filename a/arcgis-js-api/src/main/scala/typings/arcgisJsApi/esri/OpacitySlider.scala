@@ -28,8 +28,8 @@ trait OpacitySlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#updateFromVisualVariableResult)
     */
-  def updateFromVisualVariableResult(visualVariableResult: opacityVisualVariableResult): Unit = js.native
-  def updateFromVisualVariableResult(visualVariableResult: opacityVisualVariableResult, histogramResult: HistogramResult): Unit = js.native
+  def updateFromVisualVariableResult(visualVariableResult: opacityVisualVariableResult): scala.Unit = js.native
+  def updateFromVisualVariableResult(visualVariableResult: opacityVisualVariableResult, histogramResult: HistogramResult): scala.Unit = js.native
   
   /**
     * The view model for the OpacitySlider widget.

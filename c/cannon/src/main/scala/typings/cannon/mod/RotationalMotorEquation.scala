@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "RotationalMotorEquation")
 @js.native
-class RotationalMotorEquation protected ()
+open class RotationalMotorEquation protected ()
   extends StObject
      with typings.cannon.CANNON.RotationalMotorEquation {
   def this(bodyA: typings.cannon.CANNON.Body, bodyB: typings.cannon.CANNON.Body) = this()

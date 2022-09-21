@@ -31,38 +31,9 @@ object anon {
       
       inline def setShortcut(value: js.Array[Code]): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
       
-      inline def setShortcutVarargs(value: Code*): Self = StObject.set(x, "shortcut", js.Array(value :_*))
+      inline def setShortcutVarargs(value: Code*): Self = StObject.set(x, "shortcut", js.Array(value*))
       
       inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Avatar extends StObject {
-    
-    var avatar: String
-    
-    var discriminator: String
-    
-    var id: String
-    
-    var username: String
-  }
-  object Avatar {
-    
-    inline def apply(avatar: String, discriminator: String, id: String, username: String): Avatar = {
-      val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], discriminator = discriminator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Avatar]
-    }
-    
-    extension [Self <: Avatar](x: Self) {
-      
-      inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
-      
-      inline def setDiscriminator(value: String): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,7 +41,7 @@ object anon {
     
     var capacity: Double
     
-    var metadata: js.Any
+    var metadata: Any
     
     var owner: Id | String
     
@@ -78,7 +49,7 @@ object anon {
   }
   object Capacity {
     
-    inline def apply(capacity: Double, metadata: js.Any, owner: Id | String, `type`: String): Capacity = {
+    inline def apply(capacity: Double, metadata: Any, owner: Id | String, `type`: String): Capacity = {
       val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Capacity]
@@ -88,7 +59,7 @@ object anon {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setOwner(value: Id | String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
@@ -122,41 +93,6 @@ object anon {
     }
   }
   
-  trait Description extends StObject {
-    
-    var description: String
-    
-    var icon: String
-    
-    var id: String
-    
-    var name: String
-    
-    var rpc_origins: js.Array[String]
-  }
-  object Description {
-    
-    inline def apply(description: String, icon: String, id: String, name: String, rpc_origins: js.Array[String]): Description = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rpc_origins = rpc_origins.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Description]
-    }
-    
-    extension [Self <: Description](x: Self) {
-      
-      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
-      
-      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setRpc_origins(value: js.Array[String]): Self = StObject.set(x, "rpc_origins", value.asInstanceOf[js.Any])
-      
-      inline def setRpc_originsVarargs(value: String*): Self = StObject.set(x, "rpc_origins", js.Array(value :_*))
-    }
-  }
-  
   trait Device extends StObject {
     
     var device: String
@@ -180,8 +116,15 @@ object anon {
   
   trait Force extends StObject {
     
+    /**
+      * Force this move. This should only be done if you
+      * have explicit permission from the user.
+      */
     var force: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Timeout for the command
+      */
     var timeout: js.UndefOr[Double] = js.undefined
   }
   object Force {
@@ -220,6 +163,27 @@ object anon {
     }
   }
   
+  trait Label extends StObject {
+    
+    var label: String
+    
+    var url: String
+  }
+  object Label {
+    
+    inline def apply(label: String, url: String): Label = {
+      val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Label]
+    }
+    
+    extension [Self <: Label](x: Self) {
+      
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Left extends StObject {
     
     var left: Double
@@ -243,8 +207,14 @@ object anon {
   
   trait Name extends StObject {
     
+    /**
+      * Model's name
+      */
     var name: String
     
+    /**
+      * Model's url
+      */
     var url: String
   }
   object Name {
@@ -264,22 +234,23 @@ object anon {
   
   trait Timeout extends StObject {
     
-    var force: Boolean
-    
-    var timeout: Double
+    /**
+      * Timeout for the command
+      */
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Timeout {
     
-    inline def apply(force: Boolean, timeout: Double): Timeout = {
-      val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    inline def apply(): Timeout = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Timeout]
     }
     
     extension [Self <: Timeout](x: Self) {
       
-      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
-      
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

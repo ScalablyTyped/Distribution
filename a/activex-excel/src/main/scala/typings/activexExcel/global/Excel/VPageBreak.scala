@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.VPageBreak")
 @js.native
-/* private */ class VPageBreak ()
+/* private */ open class VPageBreak ()
   extends StObject
      with typings.activexExcel.Excel.VPageBreak {
   

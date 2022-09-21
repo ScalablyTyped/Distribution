@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/app-check-compat" : "0.2.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/app-check-compat" : "0.2.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

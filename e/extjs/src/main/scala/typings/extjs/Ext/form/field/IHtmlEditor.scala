@@ -17,27 +17,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with IFieldContainer {
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterIFrameTpl: js.UndefOr[js.Any] = js.undefined
+  var afterIFrameTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterTextAreaTpl: js.UndefOr[js.Any] = js.undefined
+  var afterTextAreaTpl: js.UndefOr[Any] = js.undefined
   
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
     * @param fn Object A function containing the transaction code
     */
-  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeIFrameTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeIFrameTpl: js.UndefOr[Any] = js.undefined
   
   /** [Method] Template method before a field is reset  */
   var beforeReset: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeTextAreaTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeTextAreaTpl: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var buttonTips: js.UndefOr[js.Any] = js.undefined
+  var buttonTips: js.UndefOr[Any] = js.undefined
   
   /** [Method] Checks whether the value of the field has changed since the last time it was checked  */
   var checkChange: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -94,12 +94,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param cmd String The Midas command
     * @param value String/Boolean The value to pass to the command
     */
-  var execCmd: js.UndefOr[js.Function2[/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var execCmd: js.UndefOr[js.Function2[/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Only relevant if the instance s isFileUpload method returns true
     * @returns HTMLElement
     */
-  var extractFileInput: js.UndefOr[js.Function0[js.Any | HTMLElement]] = js.undefined
+  var extractFileInput: js.UndefOr[js.Function0[Any | HTMLElement]] = js.undefined
   
   /** [Method] Try to focus this component
     * @param selectText Object
@@ -108,7 +108,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   @JSName("focus")
   var focus_IHtmlEditor: js.UndefOr[
-    js.Function2[/* selectText */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any], IComponent]
+    js.Function2[/* selectText */ js.UndefOr[Any], /* delay */ js.UndefOr[Any], IComponent]
   ] = js.undefined
   
   /** [Config Option] (String[]) */
@@ -121,12 +121,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param value Object The value to get errors for (defaults to the current field value)
     * @returns String[] All error messages for this field; an empty Array if none.
     */
-  var getErrors: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any | Array]] = js.undefined
+  var getErrors: js.UndefOr[js.Function1[js.UndefOr[Any], Any | Array]] = js.undefined
   
   /** [Method] Returns the value s that should be saved to the Ext data Model instance for this field when Ext form Basic updateRe
     * @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
     */
-  var getModelData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getModelData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the name attribute of the field
     * @returns String name The field name
@@ -136,7 +136,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the parameter s that would be included in a standard form submit for this field
     * @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
     */
-  var getSubmitData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSubmitData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the editor s toolbar
     * @returns Ext.toolbar.Toolbar
@@ -146,10 +146,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the current data value of the field
     * @returns Object value The field value
     */
-  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var iframeAttrTpl: js.UndefOr[js.Any] = js.undefined
+  var iframeAttrTpl: js.UndefOr[Any] = js.undefined
   
   /** [Method] Initializes this Field mixin on the current instance  */
   var initField: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -165,19 +165,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
     * @returns Boolean True if this field has been changed from its original value (and is not disabled), false otherwise.
     */
-  var isDirty: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
+  var isDirty: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
   
   /** [Method] Returns whether two field values are logically equal
     * @param value1 Object
     * @param value2 Object
     * @returns Boolean True if the values are equal, false if inequal.
     */
-  var isEqual: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any | Boolean]] = js.undefined
+  var isEqual: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Any], Any | Boolean]] = js.undefined
   
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
     * @returns Boolean
     */
-  var isFileUpload: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
+  var isFileUpload: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
   
   /** [Property] (Boolean) */
   var isFormField: js.UndefOr[Boolean] = js.undefined
@@ -185,18 +185,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value
     * @returns Boolean True if the value is valid, else false
     */
-  var isValid: js.UndefOr[js.Function0[js.Any | Boolean]] = js.undefined
+  var isValid: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
   
   /** [Method] Associate one or more error messages with this field
     * @param errors String/String[] The error message(s) for the field.
     */
-  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var name: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var originalValue: js.UndefOr[js.Any] = js.undefined
+  var originalValue: js.UndefOr[Any] = js.undefined
   
   /** [Method] Pushes the value of the textarea into the iframe editor  */
   var pushValue: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -205,7 +205,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param cmd String The Midas command
     * @param value String/Boolean The value to pass to the command
     */
-  var relayCmd: js.UndefOr[js.Function2[/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var relayCmd: js.UndefOr[js.Function2[/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
   var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -222,7 +222,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param value Object
     * @returns any this
     */
-  var setValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var submitValue: js.UndefOr[Boolean] = js.undefined
@@ -239,7 +239,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param value Object The initial value
     * @returns Object The modified initial value
     */
-  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Triggers a toolbar update by reading the markup state of the current selection in the editor  */
   var updateToolbar: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -247,13 +247,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
     * @returns any True if the value is valid, else false
     */
-  var validate: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var validate: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var validateOnChange: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object IHtmlEditor {
   
@@ -264,19 +264,19 @@ object IHtmlEditor {
   
   extension [Self <: IHtmlEditor](x: Self) {
     
-    inline def setAfterIFrameTpl(value: js.Any): Self = StObject.set(x, "afterIFrameTpl", value.asInstanceOf[js.Any])
+    inline def setAfterIFrameTpl(value: Any): Self = StObject.set(x, "afterIFrameTpl", value.asInstanceOf[js.Any])
     
     inline def setAfterIFrameTplUndefined: Self = StObject.set(x, "afterIFrameTpl", js.undefined)
     
-    inline def setAfterTextAreaTpl(value: js.Any): Self = StObject.set(x, "afterTextAreaTpl", value.asInstanceOf[js.Any])
+    inline def setAfterTextAreaTpl(value: Any): Self = StObject.set(x, "afterTextAreaTpl", value.asInstanceOf[js.Any])
     
     inline def setAfterTextAreaTplUndefined: Self = StObject.set(x, "afterTextAreaTpl", js.undefined)
     
-    inline def setBatchChanges(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "batchChanges", js.Any.fromFunction1(value))
+    inline def setBatchChanges(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "batchChanges", js.Any.fromFunction1(value))
     
     inline def setBatchChangesUndefined: Self = StObject.set(x, "batchChanges", js.undefined)
     
-    inline def setBeforeIFrameTpl(value: js.Any): Self = StObject.set(x, "beforeIFrameTpl", value.asInstanceOf[js.Any])
+    inline def setBeforeIFrameTpl(value: Any): Self = StObject.set(x, "beforeIFrameTpl", value.asInstanceOf[js.Any])
     
     inline def setBeforeIFrameTplUndefined: Self = StObject.set(x, "beforeIFrameTpl", js.undefined)
     
@@ -284,11 +284,11 @@ object IHtmlEditor {
     
     inline def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
     
-    inline def setBeforeTextAreaTpl(value: js.Any): Self = StObject.set(x, "beforeTextAreaTpl", value.asInstanceOf[js.Any])
+    inline def setBeforeTextAreaTpl(value: Any): Self = StObject.set(x, "beforeTextAreaTpl", value.asInstanceOf[js.Any])
     
     inline def setBeforeTextAreaTplUndefined: Self = StObject.set(x, "beforeTextAreaTpl", js.undefined)
     
-    inline def setButtonTips(value: js.Any): Self = StObject.set(x, "buttonTips", value.asInstanceOf[js.Any])
+    inline def setButtonTips(value: Any): Self = StObject.set(x, "buttonTips", value.asInstanceOf[js.Any])
     
     inline def setButtonTipsUndefined: Self = StObject.set(x, "buttonTips", js.undefined)
     
@@ -356,15 +356,15 @@ object IHtmlEditor {
     
     inline def setEnableSourceEditUndefined: Self = StObject.set(x, "enableSourceEdit", js.undefined)
     
-    inline def setExecCmd(value: (/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "execCmd", js.Any.fromFunction2(value))
+    inline def setExecCmd(value: (/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "execCmd", js.Any.fromFunction2(value))
     
     inline def setExecCmdUndefined: Self = StObject.set(x, "execCmd", js.undefined)
     
-    inline def setExtractFileInput(value: () => js.Any | HTMLElement): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
+    inline def setExtractFileInput(value: () => Any | HTMLElement): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
     
     inline def setExtractFileInputUndefined: Self = StObject.set(x, "extractFileInput", js.undefined)
     
-    inline def setFocus(value: (/* selectText */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any]) => IComponent): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
+    inline def setFocus(value: (/* selectText */ js.UndefOr[Any], /* delay */ js.UndefOr[Any]) => IComponent): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
@@ -376,11 +376,11 @@ object IHtmlEditor {
     
     inline def setGetDocMarkupUndefined: Self = StObject.set(x, "getDocMarkup", js.undefined)
     
-    inline def setGetErrors(value: js.UndefOr[js.Any] => js.Any | Array): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
+    inline def setGetErrors(value: js.UndefOr[Any] => Any | Array): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
     
     inline def setGetErrorsUndefined: Self = StObject.set(x, "getErrors", js.undefined)
     
-    inline def setGetModelData(value: () => js.Any): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
+    inline def setGetModelData(value: () => Any): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
     
     inline def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
     
@@ -388,7 +388,7 @@ object IHtmlEditor {
     
     inline def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
     
-    inline def setGetSubmitData(value: () => js.Any): Self = StObject.set(x, "getSubmitData", js.Any.fromFunction0(value))
+    inline def setGetSubmitData(value: () => Any): Self = StObject.set(x, "getSubmitData", js.Any.fromFunction0(value))
     
     inline def setGetSubmitDataUndefined: Self = StObject.set(x, "getSubmitData", js.undefined)
     
@@ -396,11 +396,11 @@ object IHtmlEditor {
     
     inline def setGetToolbarUndefined: Self = StObject.set(x, "getToolbar", js.undefined)
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    inline def setIframeAttrTpl(value: js.Any): Self = StObject.set(x, "iframeAttrTpl", value.asInstanceOf[js.Any])
+    inline def setIframeAttrTpl(value: Any): Self = StObject.set(x, "iframeAttrTpl", value.asInstanceOf[js.Any])
     
     inline def setIframeAttrTplUndefined: Self = StObject.set(x, "iframeAttrTpl", js.undefined)
     
@@ -416,15 +416,15 @@ object IHtmlEditor {
     
     inline def setInsertAtCursorUndefined: Self = StObject.set(x, "insertAtCursor", js.undefined)
     
-    inline def setIsDirty(value: () => js.Any | Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
+    inline def setIsDirty(value: () => Any | Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
     inline def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
-    inline def setIsEqual(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any | Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+    inline def setIsEqual(value: (js.UndefOr[Any], js.UndefOr[Any]) => Any | Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
     
     inline def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
     
-    inline def setIsFileUpload(value: () => js.Any | Boolean): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
+    inline def setIsFileUpload(value: () => Any | Boolean): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
     
     inline def setIsFileUploadUndefined: Self = StObject.set(x, "isFileUpload", js.undefined)
     
@@ -432,11 +432,11 @@ object IHtmlEditor {
     
     inline def setIsFormFieldUndefined: Self = StObject.set(x, "isFormField", js.undefined)
     
-    inline def setIsValid(value: () => js.Any | Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Any | Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
-    inline def setMarkInvalid(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "markInvalid", js.Any.fromFunction1(value))
+    inline def setMarkInvalid(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "markInvalid", js.Any.fromFunction1(value))
     
     inline def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
     
@@ -444,7 +444,7 @@ object IHtmlEditor {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
     inline def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
     
@@ -452,7 +452,7 @@ object IHtmlEditor {
     
     inline def setPushValueUndefined: Self = StObject.set(x, "pushValue", js.undefined)
     
-    inline def setRelayCmd(value: (/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "relayCmd", js.Any.fromFunction2(value))
+    inline def setRelayCmd(value: (/* cmd */ js.UndefOr[String], /* value */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "relayCmd", js.Any.fromFunction2(value))
     
     inline def setRelayCmdUndefined: Self = StObject.set(x, "relayCmd", js.undefined)
     
@@ -468,7 +468,7 @@ object IHtmlEditor {
     
     inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
-    inline def setSetValue(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
@@ -484,7 +484,7 @@ object IHtmlEditor {
     
     inline def setToggleSourceEditUndefined: Self = StObject.set(x, "toggleSourceEdit", js.undefined)
     
-    inline def setTransformOriginalValue(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
+    inline def setTransformOriginalValue(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
     
     inline def setTransformOriginalValueUndefined: Self = StObject.set(x, "transformOriginalValue", js.undefined)
     
@@ -492,7 +492,7 @@ object IHtmlEditor {
     
     inline def setUpdateToolbarUndefined: Self = StObject.set(x, "updateToolbar", js.undefined)
     
-    inline def setValidate(value: () => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => Any): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
     inline def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
     
@@ -500,7 +500,7 @@ object IHtmlEditor {
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

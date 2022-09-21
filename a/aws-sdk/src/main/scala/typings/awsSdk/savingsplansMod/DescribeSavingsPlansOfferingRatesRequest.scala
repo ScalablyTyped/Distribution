@@ -69,7 +69,7 @@ object DescribeSavingsPlansOfferingRatesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: SavingsPlanOfferingRateFilterElement*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SavingsPlanOfferingRateFilterElement*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -83,42 +83,42 @@ object DescribeSavingsPlansOfferingRatesRequest {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: SavingsPlanRateOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: SavingsPlanRateOperation*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setProducts(value: SavingsPlanProductTypeList): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    inline def setProductsVarargs(value: SavingsPlanProductType*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: SavingsPlanProductType*): Self = StObject.set(x, "products", js.Array(value*))
     
     inline def setSavingsPlanOfferingIds(value: UUIDs): Self = StObject.set(x, "savingsPlanOfferingIds", value.asInstanceOf[js.Any])
     
     inline def setSavingsPlanOfferingIdsUndefined: Self = StObject.set(x, "savingsPlanOfferingIds", js.undefined)
     
-    inline def setSavingsPlanOfferingIdsVarargs(value: UUID*): Self = StObject.set(x, "savingsPlanOfferingIds", js.Array(value :_*))
+    inline def setSavingsPlanOfferingIdsVarargs(value: UUID*): Self = StObject.set(x, "savingsPlanOfferingIds", js.Array(value*))
     
     inline def setSavingsPlanPaymentOptions(value: SavingsPlanPaymentOptionList): Self = StObject.set(x, "savingsPlanPaymentOptions", value.asInstanceOf[js.Any])
     
     inline def setSavingsPlanPaymentOptionsUndefined: Self = StObject.set(x, "savingsPlanPaymentOptions", js.undefined)
     
-    inline def setSavingsPlanPaymentOptionsVarargs(value: SavingsPlanPaymentOption*): Self = StObject.set(x, "savingsPlanPaymentOptions", js.Array(value :_*))
+    inline def setSavingsPlanPaymentOptionsVarargs(value: SavingsPlanPaymentOption*): Self = StObject.set(x, "savingsPlanPaymentOptions", js.Array(value*))
     
     inline def setSavingsPlanTypes(value: SavingsPlanTypeList): Self = StObject.set(x, "savingsPlanTypes", value.asInstanceOf[js.Any])
     
     inline def setSavingsPlanTypesUndefined: Self = StObject.set(x, "savingsPlanTypes", js.undefined)
     
-    inline def setSavingsPlanTypesVarargs(value: SavingsPlanType*): Self = StObject.set(x, "savingsPlanTypes", js.Array(value :_*))
+    inline def setSavingsPlanTypesVarargs(value: SavingsPlanType*): Self = StObject.set(x, "savingsPlanTypes", js.Array(value*))
     
     inline def setServiceCodes(value: SavingsPlanRateServiceCodeList): Self = StObject.set(x, "serviceCodes", value.asInstanceOf[js.Any])
     
     inline def setServiceCodesUndefined: Self = StObject.set(x, "serviceCodes", js.undefined)
     
-    inline def setServiceCodesVarargs(value: SavingsPlanRateServiceCode*): Self = StObject.set(x, "serviceCodes", js.Array(value :_*))
+    inline def setServiceCodesVarargs(value: SavingsPlanRateServiceCode*): Self = StObject.set(x, "serviceCodes", js.Array(value*))
     
     inline def setUsageTypes(value: SavingsPlanRateUsageTypeList): Self = StObject.set(x, "usageTypes", value.asInstanceOf[js.Any])
     
     inline def setUsageTypesUndefined: Self = StObject.set(x, "usageTypes", js.undefined)
     
-    inline def setUsageTypesVarargs(value: SavingsPlanRateUsageType*): Self = StObject.set(x, "usageTypes", js.Array(value :_*))
+    inline def setUsageTypesVarargs(value: SavingsPlanRateUsageType*): Self = StObject.set(x, "usageTypes", js.Array(value*))
   }
 }

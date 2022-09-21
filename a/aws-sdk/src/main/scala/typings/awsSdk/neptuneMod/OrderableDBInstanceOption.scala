@@ -82,6 +82,11 @@ trait OrderableDBInstanceOption extends StObject {
   var SupportsEnhancedMonitoring: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * A value that indicates whether you can use Neptune global databases with a specific combination of other DB engine attributes.
+    */
+  var SupportsGlobalDatabases: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Indicates whether a DB instance supports IAM database authentication.
     */
   var SupportsIAMDatabaseAuthentication: js.UndefOr[Boolean] = js.undefined
@@ -119,7 +124,7 @@ object OrderableDBInstanceOption {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     
@@ -176,6 +181,10 @@ object OrderableDBInstanceOption {
     inline def setSupportsEnhancedMonitoring(value: Boolean): Self = StObject.set(x, "SupportsEnhancedMonitoring", value.asInstanceOf[js.Any])
     
     inline def setSupportsEnhancedMonitoringUndefined: Self = StObject.set(x, "SupportsEnhancedMonitoring", js.undefined)
+    
+    inline def setSupportsGlobalDatabases(value: Boolean): Self = StObject.set(x, "SupportsGlobalDatabases", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsGlobalDatabasesUndefined: Self = StObject.set(x, "SupportsGlobalDatabases", js.undefined)
     
     inline def setSupportsIAMDatabaseAuthentication(value: Boolean): Self = StObject.set(x, "SupportsIAMDatabaseAuthentication", value.asInstanceOf[js.Any])
     

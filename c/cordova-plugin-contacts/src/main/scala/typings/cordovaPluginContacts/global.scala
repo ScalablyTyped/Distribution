@@ -1,7 +1,5 @@
 package typings.cordovaPluginContacts
 
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +9,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Contact")
   @js.native
-  class Contact protected ()
+  open class Contact protected ()
     extends StObject
        with typings.cordovaPluginContacts.Contact {
     /** Constructor of Contact object */
@@ -25,7 +23,7 @@ object global {
       addresses: js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactAddress]],
       ims: js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]],
       organizations: js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactOrganization]],
-      birthday: js.UndefOr[Date],
+      birthday: js.UndefOr[js.Date],
       note: js.UndefOr[String],
       photos: js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]],
       categories: js.UndefOr[typings.cordovaPluginContacts.ContactField],
@@ -38,7 +36,7 @@ object global {
       * @param onError Error callback function, invoked when an error occurs.
       */
     /* CompleteClass */
-    override def remove(onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def remove(onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Saves a new contact to the device contacts database, or updates an existing contact if a contact with the same id already exists.
@@ -48,14 +46,14 @@ object global {
     /* CompleteClass */
     override def save(
       onSuccess: js.Function1[/* contact */ this.type, Unit],
-      onError: js.Function1[/* error */ Error, Unit]
+      onError: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactAddress")
   @js.native
-  class ContactAddress protected ()
+  open class ContactAddress protected ()
     extends StObject
        with typings.cordovaPluginContacts.ContactAddress {
     /** Constructor of ContactAddress object */
@@ -74,7 +72,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactError")
   @js.native
-  class ContactError protected ()
+  open class ContactError protected ()
     extends StObject
        with typings.cordovaPluginContacts.ContactError {
     def this(code: Double) = this()
@@ -133,7 +131,7 @@ object global {
   @JSGlobal("ContactField")
   @js.native
   /** Constructor for ContactField object */
-  class ContactField ()
+  open class ContactField ()
     extends StObject
        with typings.cordovaPluginContacts.ContactField {
     def this(`type`: String) = this()
@@ -161,7 +159,7 @@ object global {
   @JSGlobal("ContactFindOptions")
   @js.native
   /** Constructor for ContactFindOptions object */
-  class ContactFindOptions ()
+  open class ContactFindOptions ()
     extends StObject
        with typings.cordovaPluginContacts.ContactFindOptions {
     def this(filter: String) = this()
@@ -176,7 +174,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactName")
   @js.native
-  class ContactName protected ()
+  open class ContactName protected ()
     extends StObject
        with typings.cordovaPluginContacts.ContactName {
     /** Constructor for ContactName object */
@@ -194,7 +192,7 @@ object global {
   @JSGlobal("ContactOrganization")
   @js.native
   /** Constructor for ContactOrganization object */
-  class ContactOrganization ()
+  open class ContactOrganization ()
     extends StObject
        with typings.cordovaPluginContacts.ContactOrganization {
     def this(pref: Boolean) = this()

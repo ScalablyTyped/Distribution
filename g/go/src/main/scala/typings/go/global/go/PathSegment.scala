@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("go.PathSegment")
 @js.native
-class PathSegment protected ()
+open class PathSegment protected ()
   extends typings.go.mod.PathSegment {
   /**
     * Constructs a segment that goes nowhere unless you specify some Points.

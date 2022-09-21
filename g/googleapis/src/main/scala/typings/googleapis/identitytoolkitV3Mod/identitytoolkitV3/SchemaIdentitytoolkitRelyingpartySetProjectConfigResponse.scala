@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response of setting the project configuration.
-  */
 trait SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse extends StObject {
   
   /**
     * Project ID of the relying party.
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse {
   
@@ -24,6 +21,8 @@ object SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse {
   extension [Self <: SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse](x: Self) {
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
     
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }

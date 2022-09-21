@@ -13,7 +13,6 @@ import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings._Message
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings._UnmarshalledMessage
 import typings.awsSdkClientSqsNode.typesMessageAttributeValueMod.MessageAttributeValue
 import typings.awsSdkClientSqsNode.typesMessageAttributeValueMod.UnmarshalledMessageAttributeValue
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object typesMessageMod {
     var Attributes: js.UndefOr[
         (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-      */ _Message & TopLevel[js.Any]) | (Iterable[
+      */ _Message & TopLevel[Any]) | (js.Iterable[
           js.Tuple2[
             SenderId | SentTimestamp | ApproximateReceiveCount | ApproximateFirstReceiveTimestamp | SequenceNumber | MessageDeduplicationId | MessageGroupId | String, 
             String
@@ -55,7 +54,7 @@ object typesMessageMod {
       * <p>Each message attribute consists of a <code>Name</code>, <code>Type</code>, and <code>Value</code>. For more information, see <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-attributes.html">Amazon SQS Message Attributes</a> in the <i>Amazon Simple Queue Service Developer Guide</i>.</p>
       */
     var MessageAttributes: js.UndefOr[
-        StringDictionary[MessageAttributeValue] | (Iterable[js.Tuple2[String, MessageAttributeValue]])
+        StringDictionary[MessageAttributeValue] | (js.Iterable[js.Tuple2[String, MessageAttributeValue]])
       ] = js.undefined
     
     /**
@@ -80,7 +79,7 @@ object typesMessageMod {
       inline def setAttributes(
         value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-        */ _Message & TopLevel[js.Any]) | (Iterable[
+        */ _Message & TopLevel[Any]) | (js.Iterable[
               js.Tuple2[
                 SenderId | SentTimestamp | ApproximateReceiveCount | ApproximateFirstReceiveTimestamp | SequenceNumber | MessageDeduplicationId | MessageGroupId | String, 
                 String
@@ -103,7 +102,7 @@ object typesMessageMod {
       inline def setMD5OfMessageAttributesUndefined: Self = StObject.set(x, "MD5OfMessageAttributes", js.undefined)
       
       inline def setMessageAttributes(
-        value: StringDictionary[MessageAttributeValue] | (Iterable[js.Tuple2[String, MessageAttributeValue]])
+        value: StringDictionary[MessageAttributeValue] | (js.Iterable[js.Tuple2[String, MessageAttributeValue]])
       ): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
       
       inline def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
@@ -129,7 +128,7 @@ object typesMessageMod {
     var Attributes_UnmarshalledMessage: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-      */ _UnmarshalledMessage & TopLevel[js.Any]
+      */ _UnmarshalledMessage & TopLevel[Any]
       ] = js.undefined
     
     /**
@@ -150,7 +149,7 @@ object typesMessageMod {
       inline def setAttributes(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-        */ _UnmarshalledMessage & TopLevel[js.Any]
+        */ _UnmarshalledMessage & TopLevel[Any]
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)

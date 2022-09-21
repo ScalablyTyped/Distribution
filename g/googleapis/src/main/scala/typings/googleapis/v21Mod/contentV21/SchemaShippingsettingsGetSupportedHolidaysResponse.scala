@@ -12,10 +12,9 @@ trait SchemaShippingsettingsGetSupportedHolidaysResponse extends StObject {
   var holidays: js.UndefOr[js.Array[SchemaHolidaysHoliday]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#shippingsettingsGetSupportedHolidaysResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#shippingsettingsGetSupportedHolidaysResponse`".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaShippingsettingsGetSupportedHolidaysResponse {
   
@@ -30,9 +29,11 @@ object SchemaShippingsettingsGetSupportedHolidaysResponse {
     
     inline def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
     
-    inline def setHolidaysVarargs(value: SchemaHolidaysHoliday*): Self = StObject.set(x, "holidays", js.Array(value :_*))
+    inline def setHolidaysVarargs(value: SchemaHolidaysHoliday*): Self = StObject.set(x, "holidays", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

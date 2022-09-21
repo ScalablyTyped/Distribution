@@ -5,7 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IActionCall = js.Function2[
-/* next */ js.Function1[/* repeated */ js.Any, scala.Unit], 
-/* repeated */ js.Any, 
-scala.Unit]
+type IActionCall = js.Function2[/* next */ js.Function1[/* repeated */ Any, Unit], /* repeated */ Any, Unit]

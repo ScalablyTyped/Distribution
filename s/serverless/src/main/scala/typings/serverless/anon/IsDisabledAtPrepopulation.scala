@@ -9,7 +9,7 @@ trait IsDisabledAtPrepopulation extends StObject {
   
   var isDisabledAtPrepopulation: js.UndefOr[Boolean] = js.undefined
   
-  def resolver(variableSource: String): js.Promise[js.Any]
+  def resolver(variableSource: String): js.Promise[Any]
   @JSName("resolver")
   var resolver_Original: VariableResolver
   
@@ -17,7 +17,7 @@ trait IsDisabledAtPrepopulation extends StObject {
 }
 object IsDisabledAtPrepopulation {
   
-  inline def apply(resolver: /* variableSource */ String => js.Promise[js.Any]): IsDisabledAtPrepopulation = {
+  inline def apply(resolver: /* variableSource */ String => js.Promise[Any]): IsDisabledAtPrepopulation = {
     val __obj = js.Dynamic.literal(resolver = js.Any.fromFunction1(resolver))
     __obj.asInstanceOf[IsDisabledAtPrepopulation]
   }
@@ -28,7 +28,7 @@ object IsDisabledAtPrepopulation {
     
     inline def setIsDisabledAtPrepopulationUndefined: Self = StObject.set(x, "isDisabledAtPrepopulation", js.undefined)
     
-    inline def setResolver(value: /* variableSource */ String => js.Promise[js.Any]): Self = StObject.set(x, "resolver", js.Any.fromFunction1(value))
+    inline def setResolver(value: /* variableSource */ String => js.Promise[Any]): Self = StObject.set(x, "resolver", js.Any.fromFunction1(value))
     
     inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     

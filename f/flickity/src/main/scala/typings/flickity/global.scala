@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("Flickity")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.flickity.mod.^ {
       /**
         * Initializes an new instance of Flickity .

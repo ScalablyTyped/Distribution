@@ -1,7 +1,6 @@
 package typings.loopback.mod
 
 import typings.express.mod.NextFunction
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,8 +77,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Model")
 @js.native
-class Model protected () extends StObject {
-  def this(data: js.Any) = this()
+open class Model protected () extends StObject {
+  def this(data: Any) = this()
   
   def afterRemote(
     method: String,
@@ -131,18 +130,18 @@ object Model {
   /* static member */
   inline def checkAccess(
     token: AccessToken,
-    modelId: js.Any,
-    sharedMethod: js.Any,
-    ctx: js.Any,
-    callback: js.Function2[/* err */ String | Error, /* allowed */ Boolean, Unit]
+    modelId: Any,
+    sharedMethod: Any,
+    ctx: Any,
+    callback: js.Function2[/* err */ String | js.Error, /* allowed */ Boolean, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccess")(token.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], sharedMethod.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Data source to which the model is connected, if any. */
   /* static member */
   @JSImport("loopback", "Model.dataSource")
   @js.native
-  def dataSource: js.Any = js.native
-  inline def dataSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataSource")(x.asInstanceOf[js.Any])
+  def dataSource: Any = js.native
+  inline def dataSource_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataSource")(x.asInstanceOf[js.Any])
   
   /**
     * Disable remote invocation for the method with the given name
@@ -170,7 +169,7 @@ object Model {
     * @end
     */
   /* static member */
-  inline def getApp(callback: js.Function2[/* err */ Error, /* app */ Application, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getApp")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getApp(callback: js.Function2[/* err */ js.Error, /* app */ Application, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getApp")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** The name of the model. */
   /* static member */
@@ -218,7 +217,7 @@ object Model {
     getterName: String,
     hooks: Boolean,
     options: js.Object,
-    filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
+    filterCallback: js.Function2[/* SharedMethod */ Any, /* RelationDefinition */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nestRemoting")(relationName.asInstanceOf[js.Any], pathName.asInstanceOf[js.Any], filterMethod.asInstanceOf[js.Any], paramName.asInstanceOf[js.Any], getterName.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], options.asInstanceOf[js.Any], filterCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def nestRemoting(
     relationName: String,
@@ -228,7 +227,7 @@ object Model {
     getterName: String,
     hooks: Boolean,
     options: Unit,
-    filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
+    filterCallback: js.Function2[/* SharedMethod */ Any, /* RelationDefinition */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nestRemoting")(relationName.asInstanceOf[js.Any], pathName.asInstanceOf[js.Any], filterMethod.asInstanceOf[js.Any], paramName.asInstanceOf[js.Any], getterName.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], options.asInstanceOf[js.Any], filterCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -258,6 +257,6 @@ object Model {
   /* static member */
   @JSImport("loopback", "Model.sharedMethod")
   @js.native
-  def sharedMethod: js.Any = js.native
-  inline def sharedMethod_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sharedMethod")(x.asInstanceOf[js.Any])
+  def sharedMethod: Any = js.native
+  inline def sharedMethod_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sharedMethod")(x.asInstanceOf[js.Any])
 }

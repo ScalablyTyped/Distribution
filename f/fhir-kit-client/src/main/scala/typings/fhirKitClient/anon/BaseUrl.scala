@@ -9,6 +9,8 @@ trait BaseUrl extends StObject {
   var baseUrl: String
   
   var customHeaders: js.UndefOr[typings.request.mod.Headers] = js.undefined
+  
+  var requestOptions: js.UndefOr[typings.request.mod.Options] = js.undefined
 }
 object BaseUrl {
   
@@ -24,5 +26,9 @@ object BaseUrl {
     inline def setCustomHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
     inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+    
+    inline def setRequestOptions(value: typings.request.mod.Options): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
   }
 }

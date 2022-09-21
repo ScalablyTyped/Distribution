@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for UpdateRepo.
-  */
 trait SchemaUpdateRepoRequest extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaUpdateRepoRequest extends StObject {
   var repo: js.UndefOr[SchemaRepo] = js.undefined
   
   /**
-    * A FieldMask specifying which fields of the repo to modify. Only the
-    * fields in the mask will be modified. If no mask is provided, this request
-    * is no-op.
+    * A FieldMask specifying which fields of the repo to modify. Only the fields in the mask will be modified. If no mask is provided, this request is no-op.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUpdateRepoRequest {
   
@@ -35,6 +30,8 @@ object SchemaUpdateRepoRequest {
     inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

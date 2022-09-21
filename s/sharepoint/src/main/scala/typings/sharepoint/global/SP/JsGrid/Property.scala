@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.Property")
 @js.native
-class Property ()
+open class Property ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.Property
 object Property {
@@ -18,14 +18,14 @@ object Property {
   
   /* static member */
   inline def MakeProperty(
-    dataValue: js.Any,
+    dataValue: Any,
     localizedValue: String,
     bHasDataValue: Boolean,
     bHasLocalizedValue: Boolean,
-    propType: js.Any
+    propType: Any
   ): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeProperty")(dataValue.asInstanceOf[js.Any], localizedValue.asInstanceOf[js.Any], bHasDataValue.asInstanceOf[js.Any], bHasLocalizedValue.asInstanceOf[js.Any], propType.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
   
   /* static member */
-  inline def MakePropertyFromGridField(gridField: js.Any, dataValue: js.Any, localizedVal: String): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePropertyFromGridField")(gridField.asInstanceOf[js.Any], dataValue.asInstanceOf[js.Any], localizedVal.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
-  inline def MakePropertyFromGridField(gridField: js.Any, dataValue: js.Any, localizedVal: String, optPropType: js.Any): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePropertyFromGridField")(gridField.asInstanceOf[js.Any], dataValue.asInstanceOf[js.Any], localizedVal.asInstanceOf[js.Any], optPropType.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
+  inline def MakePropertyFromGridField(gridField: Any, dataValue: Any, localizedVal: String): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePropertyFromGridField")(gridField.asInstanceOf[js.Any], dataValue.asInstanceOf[js.Any], localizedVal.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
+  inline def MakePropertyFromGridField(gridField: Any, dataValue: Any, localizedVal: String, optPropType: Any): IPropertyBase = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePropertyFromGridField")(gridField.asInstanceOf[js.Any], dataValue.asInstanceOf[js.Any], localizedVal.asInstanceOf[js.Any], optPropType.asInstanceOf[js.Any])).asInstanceOf[IPropertyBase]
 }

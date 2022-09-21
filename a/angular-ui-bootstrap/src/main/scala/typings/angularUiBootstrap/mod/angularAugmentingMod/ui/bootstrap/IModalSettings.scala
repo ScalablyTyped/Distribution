@@ -192,7 +192,7 @@ object IModalSettings {
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value*))
     
     inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     

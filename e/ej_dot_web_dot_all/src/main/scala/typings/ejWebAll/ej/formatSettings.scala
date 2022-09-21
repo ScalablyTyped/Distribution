@@ -37,11 +37,11 @@ object formatSettings {
     
     inline def setGroupSizes(value: js.Array[Double]): Self = StObject.set(x, "groupSizes", value.asInstanceOf[js.Any])
     
-    inline def setGroupSizesVarargs(value: Double*): Self = StObject.set(x, "groupSizes", js.Array(value :_*))
+    inline def setGroupSizesVarargs(value: Double*): Self = StObject.set(x, "groupSizes", js.Array(value*))
     
     inline def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+    inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value*))
     
     inline def setPercent(value: percentSettings): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IResourceClass[T]
   extends StObject
      with Instantiable0[IResource[T]]
-     with Instantiable1[/* dataOrParams */ js.Any, IResource[T]] {
+     with Instantiable1[/* dataOrParams */ Any, IResource[T]] {
   
   def delete(): IResource[T] = js.native
   def delete(params: js.Object): IResource[T] = js.native

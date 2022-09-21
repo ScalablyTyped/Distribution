@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The palette of predefined colors for a page.
-  */
 trait SchemaColorScheme extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaColorScheme {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: SchemaThemeColorPair*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: SchemaThemeColorPair*): Self = StObject.set(x, "colors", js.Array(value*))
   }
 }

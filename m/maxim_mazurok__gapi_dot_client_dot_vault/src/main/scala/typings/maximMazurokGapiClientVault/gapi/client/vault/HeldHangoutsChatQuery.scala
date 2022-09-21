@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeldHangoutsChatQuery extends StObject {
   
-  /** If true, include rooms the user has participated in. */
+  /** To include messages in Chat spaces the user was a member of, set to **true**. */
   var includeRooms: js.UndefOr[Boolean] = js.undefined
 }
 object HeldHangoutsChatQuery {

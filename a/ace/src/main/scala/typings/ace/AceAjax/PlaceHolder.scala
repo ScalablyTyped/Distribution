@@ -24,7 +24,7 @@ trait PlaceHolder extends StObject {
     **/
   def hideOtherMarkers(): Unit
   
-  def on(event: String, fn: js.Function1[/* e */ js.Any, js.Any]): Unit
+  def on(event: String, fn: js.Function1[/* e */ Any, Any]): Unit
   
   /**
     * PlaceHolder@onCursorChange(e)
@@ -56,7 +56,7 @@ object PlaceHolder {
     cancel: () => Unit,
     detach: () => Unit,
     hideOtherMarkers: () => Unit,
-    on: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit,
+    on: (String, js.Function1[/* e */ Any, Any]) => Unit,
     onCursorChange: () => Unit,
     onUpdate: () => Unit,
     setup: () => Unit,
@@ -74,7 +74,7 @@ object PlaceHolder {
     
     inline def setHideOtherMarkers(value: () => Unit): Self = StObject.set(x, "hideOtherMarkers", js.Any.fromFunction0(value))
     
-    inline def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function1[/* e */ Any, Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     inline def setOnCursorChange(value: () => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction0(value))
     

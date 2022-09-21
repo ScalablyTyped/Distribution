@@ -78,7 +78,7 @@ object menus {
   /**
     * Updates the extension items in the shown menu, including changes that have been made since the menu was shown. Has no effect if the menu is hidden. Rebuilding a shown menu is an expensive operation, only invoke this method when necessary.
     */
-  inline def refresh(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Promise[js.Any]]
+  inline def refresh(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Promise[Any]]
   
   inline def remove(menuItemId: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**

@@ -45,6 +45,6 @@ object SlideVisibleLayersProperties {
     
     inline def setSublayerIdsUndefined: Self = StObject.set(x, "sublayerIds", js.undefined)
     
-    inline def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value :_*))
+    inline def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value*))
   }
 }

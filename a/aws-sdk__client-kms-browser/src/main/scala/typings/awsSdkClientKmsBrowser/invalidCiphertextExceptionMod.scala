@@ -8,5 +8,5 @@ object invalidCiphertextExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/InvalidCiphertextException", "InvalidCiphertextException")
   @js.native
-  val InvalidCiphertextException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidCiphertextException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,10 +10,10 @@ object snackbarMod {
   
   @JSImport("material-ui/Snackbar", JSImport.Default)
   @js.native
-  class default () extends Snackbar
+  open class default () extends Snackbar
   
   @JSImport("material-ui/Snackbar", "Snackbar")
   @js.native
-  class Snackbar ()
-    extends Component[SnackbarProps, js.Object, js.Any]
+  open class Snackbar ()
+    extends Component[SnackbarProps, js.Object, Any]
 }

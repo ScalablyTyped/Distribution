@@ -83,11 +83,11 @@ object engineTextureSelectorMod {
         
         inline def setTexturesSupported(value: js.Array[String]): Self = StObject.set(x, "texturesSupported", value.asInstanceOf[js.Any])
         
-        inline def setTexturesSupportedVarargs(value: String*): Self = StObject.set(x, "texturesSupported", js.Array(value :_*))
+        inline def setTexturesSupportedVarargs(value: String*): Self = StObject.set(x, "texturesSupported", js.Array(value*))
         
         inline def set_excludedCompressedTextures(value: js.Array[String]): Self = StObject.set(x, "_excludedCompressedTextures", value.asInstanceOf[js.Any])
         
-        inline def set_excludedCompressedTexturesVarargs(value: String*): Self = StObject.set(x, "_excludedCompressedTextures", js.Array(value :_*))
+        inline def set_excludedCompressedTexturesVarargs(value: String*): Self = StObject.set(x, "_excludedCompressedTextures", js.Array(value*))
         
         inline def set_textureFormatInUse(value: String): Self = StObject.set(x, "_textureFormatInUse", value.asInstanceOf[js.Any])
       }

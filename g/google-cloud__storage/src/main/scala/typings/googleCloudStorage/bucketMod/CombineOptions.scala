@@ -1,10 +1,13 @@
 package typings.googleCloudStorage.bucketMod
 
+import typings.googleCloudStorage.storageMod.PreconditionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CombineOptions extends StObject {
+trait CombineOptions
+  extends StObject
+     with PreconditionOptions {
   
   var kmsKeyName: js.UndefOr[String] = js.undefined
   

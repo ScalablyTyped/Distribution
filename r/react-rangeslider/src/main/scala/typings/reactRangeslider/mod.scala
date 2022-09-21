@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-rangeslider", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SliderProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SliderProps, js.Object, Any]
   
-  type Slider = Component[SliderProps, js.Object, js.Any]
+  type Slider = Component[SliderProps, js.Object, Any]
   
   trait SliderProps extends StObject {
     

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListImageRecipesResponse extends StObject {
   
   /**
-    * The list of image pipelines. 
+    * The list of image pipelines.
     */
   var imageRecipeSummaryList: js.UndefOr[ImageRecipeSummaryList] = js.undefined
   
   /**
-    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects. 
+    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -34,7 +34,7 @@ object ListImageRecipesResponse {
     
     inline def setImageRecipeSummaryListUndefined: Self = StObject.set(x, "imageRecipeSummaryList", js.undefined)
     
-    inline def setImageRecipeSummaryListVarargs(value: ImageRecipeSummary*): Self = StObject.set(x, "imageRecipeSummaryList", js.Array(value :_*))
+    inline def setImageRecipeSummaryListVarargs(value: ImageRecipeSummary*): Self = StObject.set(x, "imageRecipeSummaryList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StackTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -46,7 +46,7 @@ object StackTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setOffset(value: StackOffset | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

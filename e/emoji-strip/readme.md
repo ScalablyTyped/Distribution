@@ -10,10 +10,10 @@ Strip emoji from a string in Node.js and browsers.
 | ------------------ | :-------------: |
 | Full name          | emoji-strip |
 | Keywords           | emoji, strip, remove, emoticons |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 493856 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 192980.66666666666 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/khalifenizar/emoji-strip)

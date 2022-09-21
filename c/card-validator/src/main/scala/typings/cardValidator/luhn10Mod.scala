@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object luhn10Mod {
   
-  inline def apply(identifier: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(identifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(identifier: Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(identifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("card-validator/dist/luhn-10", JSImport.Namespace)
   @js.native

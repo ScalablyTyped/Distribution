@@ -1,31 +1,19 @@
 package typings.antDesignIconsVue
 
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
+import org.scalablytyped.runtime.Shortcut
+import typings.antDesignIconsVue.funnelPlotFilledMod.FunnelPlotFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object antDesignIconsVueFunnelPlotFilledMod {
+object antDesignIconsVueFunnelPlotFilledMod extends Shortcut {
   
-  object default {
-    
-    inline def apply(
-      props: AntdIconProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("@ant-design/icons-vue/FunnelPlotFilled", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/icons-vue/FunnelPlotFilled", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/FunnelPlotFilled", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@ant-design/icons-vue/FunnelPlotFilled", JSImport.Default)
+  @js.native
+  val default: FunnelPlotFilledIconType = js.native
+  
+  type _To = FunnelPlotFilledIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `antDesignIconsVueFunnelPlotFilledMod.foo` */
+  override def _to: FunnelPlotFilledIconType = default
 }

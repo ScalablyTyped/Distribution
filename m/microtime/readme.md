@@ -10,10 +10,10 @@ Get the current time in microseconds
 | ------------------ | :-------------: |
 | Full name          | microtime |
 | Keywords           | microtime, microseconds, gettimeofday |
-| # releases         | 0 |
-| # dependents       | 179 |
-| # downloads        | 1468496 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 537149.6666666666 |
+| # stars            | 565.0 |
 
 ## Links
 - [Homepage](https://github.com/wadey/node-microtime)

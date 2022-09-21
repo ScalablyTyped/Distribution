@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "OnScreenKeyboard")
 @js.native
-class OnScreenKeyboard protected ()
+open class OnScreenKeyboard protected ()
   extends typings.guacamoleClient.onScreenKeyboardMod.OnScreenKeyboard {
   def this(layout: Layout) = this()
 }

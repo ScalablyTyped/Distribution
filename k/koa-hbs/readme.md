@@ -10,10 +10,10 @@ Handlebars Templates via Generators for Koa
 | ------------------ | :-------------: |
 | Full name          | koa-hbs |
 | Keywords           | koa, handlebars, template, view, render |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 77314 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5756.333333333333 |
+| # stars            | 159.0 |
 
 ## Links
 - [Homepage](https://github.com/gilt/koa-hbs/)

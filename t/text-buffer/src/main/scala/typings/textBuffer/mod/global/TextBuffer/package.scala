@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /** The types usable when constructing a point via the Point::fromObject method. */
-type PointCompatible = typings.textBuffer.mod.global.TextBuffer.PointLike | (js.Tuple2[scala.Double, scala.Double])
+type PointCompatible = PointLike | (js.Tuple2[Double, Double])
 
 /** The types usable when constructing a range via the Range::fromObject method. */
-type RangeCompatible = typings.textBuffer.mod.global.TextBuffer.RangeLike | (js.Tuple2[
-typings.textBuffer.mod.global.TextBuffer.PointLike | (js.Tuple2[scala.Double, scala.Double]), 
-typings.textBuffer.mod.global.TextBuffer.PointLike | (js.Tuple2[scala.Double, scala.Double])])
+type RangeCompatible = RangeLike | (js.Tuple2[PointLike | (js.Tuple2[Double, Double]), PointLike | (js.Tuple2[Double, Double])])

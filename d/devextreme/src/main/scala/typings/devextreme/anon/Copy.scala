@@ -6,18 +6,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Copy extends StObject {
   
+  /**
+    * Specifies whether a user is allowed to copy files and directories.
+    */
   var copy: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user is allowed to create files and directories.
+    */
   var create: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user is allowed to delete files and directories.
+    */
   var delete: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user is allowed to download files.
+    */
   var download: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user is allowed to move files and directories.
+    */
   var move: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user is allowed to rename files and directories.
+    */
   var rename: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user is allowed to upload files.
+    */
   var upload: js.UndefOr[Boolean] = js.undefined
 }
 object Copy {

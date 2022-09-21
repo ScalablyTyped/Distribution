@@ -12,6 +12,11 @@ trait AwsElbLoadBalancerAttributes extends StObject {
   var AccessLog: js.UndefOr[AwsElbLoadBalancerAccessLog] = js.undefined
   
   /**
+    * Any additional attributes for a load balancer.
+    */
+  var AdditionalAttributes: js.UndefOr[AwsElbLoadBalancerAdditionalAttributeList] = js.undefined
+  
+  /**
     * Information about the connection draining configuration for the load balancer. If connection draining is enabled, the load balancer allows existing requests to complete before it shifts traffic away from a deregistered or unhealthy instance.
     */
   var ConnectionDraining: js.UndefOr[AwsElbLoadBalancerConnectionDraining] = js.undefined
@@ -38,6 +43,12 @@ object AwsElbLoadBalancerAttributes {
     inline def setAccessLog(value: AwsElbLoadBalancerAccessLog): Self = StObject.set(x, "AccessLog", value.asInstanceOf[js.Any])
     
     inline def setAccessLogUndefined: Self = StObject.set(x, "AccessLog", js.undefined)
+    
+    inline def setAdditionalAttributes(value: AwsElbLoadBalancerAdditionalAttributeList): Self = StObject.set(x, "AdditionalAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalAttributesUndefined: Self = StObject.set(x, "AdditionalAttributes", js.undefined)
+    
+    inline def setAdditionalAttributesVarargs(value: AwsElbLoadBalancerAdditionalAttribute*): Self = StObject.set(x, "AdditionalAttributes", js.Array(value*))
     
     inline def setConnectionDraining(value: AwsElbLoadBalancerConnectionDraining): Self = StObject.set(x, "ConnectionDraining", value.asInstanceOf[js.Any])
     

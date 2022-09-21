@@ -28,11 +28,11 @@ object windowresolverMod {
   
   @JSImport("@jupyterlab/apputils/lib/windowresolver", "WindowResolver")
   @js.native
-  class WindowResolver ()
+  open class WindowResolver ()
     extends StObject
        with IWindowResolver {
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
     /**
       * A window name to use as a handle among shared resources.

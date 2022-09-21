@@ -40,7 +40,7 @@ object TableRow {
     
     inline def setCells(value: js.Array[TableCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    inline def setCellsVarargs(value: TableCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: TableCell*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

@@ -29,6 +29,6 @@ object PlayerScoreSubmissionList {
     
     inline def setScoresUndefined: Self = StObject.set(x, "scores", js.undefined)
     
-    inline def setScoresVarargs(value: ScoreSubmission*): Self = StObject.set(x, "scores", js.Array(value :_*))
+    inline def setScoresVarargs(value: ScoreSubmission*): Self = StObject.set(x, "scores", js.Array(value*))
   }
 }

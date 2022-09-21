@@ -10,7 +10,7 @@ trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMe
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Optional="false" An aggregator function called when each cell is evaluated.

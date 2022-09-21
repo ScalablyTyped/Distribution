@@ -4,8 +4,10 @@ import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.Courses.Al
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.Courses.AnnouncementsCollection
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.Courses.CourseWork.StudentSubmissionsCollection
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.Courses.CourseWorkCollection
+import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.Courses.CourseWorkMaterialsCollection
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.Courses.StudentsCollection
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.Courses.TeachersCollection
+import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.Courses.TopicsCollection
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.CoursesCollection
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.InvitationsCollection
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Collection.RegistrationsCollection
@@ -24,6 +26,7 @@ import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.CourseMaterial
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.CourseRosterChangesInfo
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.CourseWork
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.CourseWorkChangesInfo
+import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.CourseWorkMaterial
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.Date
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.DriveFile
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.DriveFolder
@@ -38,6 +41,7 @@ import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.Invitation
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.Link
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListAnnouncementsResponse
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListCourseAliasesResponse
+import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListCourseWorkMaterialResponse
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListCourseWorkResponse
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListCoursesResponse
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListGuardianInvitationsResponse
@@ -46,6 +50,7 @@ import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListInvitation
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListStudentSubmissionsResponse
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListStudentsResponse
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListTeachersResponse
+import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ListTopicResponse
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.Material
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ModifyAnnouncementAssigneesRequest
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.ModifyAttachmentsRequest
@@ -63,6 +68,7 @@ import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.StudentSubmiss
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.SubmissionHistory
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.Teacher
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.TimeOfDay
+import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.Topic
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.UserProfile
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.YouTubeVideo
 import org.scalablytyped.runtime.StObject
@@ -114,6 +120,9 @@ trait Classroom extends StObject {
   
   // Create a new instance of CourseWorkChangesInfo
   def newCourseWorkChangesInfo(): CourseWorkChangesInfo
+  
+  // Create a new instance of CourseWorkMaterial
+  def newCourseWorkMaterial(): CourseWorkMaterial
   
   // Create a new instance of Date
   def newDate(): Date
@@ -172,14 +181,8 @@ trait Classroom extends StObject {
   // Create a new instance of Name
   def newName(): Name
   
-  // Create a new instance of ReclaimStudentSubmissionRequest
-  def newReclaimStudentSubmissionRequest(): js.Any
-  
   // Create a new instance of Registration
   def newRegistration(): Registration
-  
-  // Create a new instance of ReturnStudentSubmissionRequest
-  def newReturnStudentSubmissionRequest(): js.Any
   
   // Create a new instance of SharedDriveFile
   def newSharedDriveFile(): SharedDriveFile
@@ -205,8 +208,8 @@ trait Classroom extends StObject {
   // Create a new instance of TimeOfDay
   def newTimeOfDay(): TimeOfDay
   
-  // Create a new instance of TurnInStudentSubmissionRequest
-  def newTurnInStudentSubmissionRequest(): js.Any
+  // Create a new instance of Topic
+  def newTopic(): Topic
   
   // Create a new instance of UserProfile
   def newUserProfile(): UserProfile
@@ -229,6 +232,7 @@ object Classroom {
     newCourseRosterChangesInfo: () => CourseRosterChangesInfo,
     newCourseWork: () => CourseWork,
     newCourseWorkChangesInfo: () => CourseWorkChangesInfo,
+    newCourseWorkMaterial: () => CourseWorkMaterial,
     newDate: () => Date,
     newDriveFile: () => DriveFile,
     newDriveFolder: () => DriveFolder,
@@ -248,9 +252,7 @@ object Classroom {
     newMultipleChoiceQuestion: () => MultipleChoiceQuestion,
     newMultipleChoiceSubmission: () => MultipleChoiceSubmission,
     newName: () => Name,
-    newReclaimStudentSubmissionRequest: () => js.Any,
     newRegistration: () => Registration,
-    newReturnStudentSubmissionRequest: () => js.Any,
     newSharedDriveFile: () => SharedDriveFile,
     newShortAnswerSubmission: () => ShortAnswerSubmission,
     newStateHistory: () => StateHistory,
@@ -259,11 +261,11 @@ object Classroom {
     newSubmissionHistory: () => SubmissionHistory,
     newTeacher: () => Teacher,
     newTimeOfDay: () => TimeOfDay,
-    newTurnInStudentSubmissionRequest: () => js.Any,
+    newTopic: () => Topic,
     newUserProfile: () => UserProfile,
     newYouTubeVideo: () => YouTubeVideo
   ): Classroom = {
-    val __obj = js.Dynamic.literal(newAnnouncement = js.Any.fromFunction0(newAnnouncement), newAssignment = js.Any.fromFunction0(newAssignment), newAssignmentSubmission = js.Any.fromFunction0(newAssignmentSubmission), newAttachment = js.Any.fromFunction0(newAttachment), newCloudPubsubTopic = js.Any.fromFunction0(newCloudPubsubTopic), newCourse = js.Any.fromFunction0(newCourse), newCourseAlias = js.Any.fromFunction0(newCourseAlias), newCourseMaterial = js.Any.fromFunction0(newCourseMaterial), newCourseMaterialSet = js.Any.fromFunction0(newCourseMaterialSet), newCourseRosterChangesInfo = js.Any.fromFunction0(newCourseRosterChangesInfo), newCourseWork = js.Any.fromFunction0(newCourseWork), newCourseWorkChangesInfo = js.Any.fromFunction0(newCourseWorkChangesInfo), newDate = js.Any.fromFunction0(newDate), newDriveFile = js.Any.fromFunction0(newDriveFile), newDriveFolder = js.Any.fromFunction0(newDriveFolder), newFeed = js.Any.fromFunction0(newFeed), newForm = js.Any.fromFunction0(newForm), newGlobalPermission = js.Any.fromFunction0(newGlobalPermission), newGradeHistory = js.Any.fromFunction0(newGradeHistory), newGuardianInvitation = js.Any.fromFunction0(newGuardianInvitation), newIndividualStudentsOptions = js.Any.fromFunction0(newIndividualStudentsOptions), newInvitation = js.Any.fromFunction0(newInvitation), newLink = js.Any.fromFunction0(newLink), newMaterial = js.Any.fromFunction0(newMaterial), newModifyAnnouncementAssigneesRequest = js.Any.fromFunction0(newModifyAnnouncementAssigneesRequest), newModifyAttachmentsRequest = js.Any.fromFunction0(newModifyAttachmentsRequest), newModifyCourseWorkAssigneesRequest = js.Any.fromFunction0(newModifyCourseWorkAssigneesRequest), newModifyIndividualStudentsOptions = js.Any.fromFunction0(newModifyIndividualStudentsOptions), newMultipleChoiceQuestion = js.Any.fromFunction0(newMultipleChoiceQuestion), newMultipleChoiceSubmission = js.Any.fromFunction0(newMultipleChoiceSubmission), newName = js.Any.fromFunction0(newName), newReclaimStudentSubmissionRequest = js.Any.fromFunction0(newReclaimStudentSubmissionRequest), newRegistration = js.Any.fromFunction0(newRegistration), newReturnStudentSubmissionRequest = js.Any.fromFunction0(newReturnStudentSubmissionRequest), newSharedDriveFile = js.Any.fromFunction0(newSharedDriveFile), newShortAnswerSubmission = js.Any.fromFunction0(newShortAnswerSubmission), newStateHistory = js.Any.fromFunction0(newStateHistory), newStudent = js.Any.fromFunction0(newStudent), newStudentSubmission = js.Any.fromFunction0(newStudentSubmission), newSubmissionHistory = js.Any.fromFunction0(newSubmissionHistory), newTeacher = js.Any.fromFunction0(newTeacher), newTimeOfDay = js.Any.fromFunction0(newTimeOfDay), newTurnInStudentSubmissionRequest = js.Any.fromFunction0(newTurnInStudentSubmissionRequest), newUserProfile = js.Any.fromFunction0(newUserProfile), newYouTubeVideo = js.Any.fromFunction0(newYouTubeVideo))
+    val __obj = js.Dynamic.literal(newAnnouncement = js.Any.fromFunction0(newAnnouncement), newAssignment = js.Any.fromFunction0(newAssignment), newAssignmentSubmission = js.Any.fromFunction0(newAssignmentSubmission), newAttachment = js.Any.fromFunction0(newAttachment), newCloudPubsubTopic = js.Any.fromFunction0(newCloudPubsubTopic), newCourse = js.Any.fromFunction0(newCourse), newCourseAlias = js.Any.fromFunction0(newCourseAlias), newCourseMaterial = js.Any.fromFunction0(newCourseMaterial), newCourseMaterialSet = js.Any.fromFunction0(newCourseMaterialSet), newCourseRosterChangesInfo = js.Any.fromFunction0(newCourseRosterChangesInfo), newCourseWork = js.Any.fromFunction0(newCourseWork), newCourseWorkChangesInfo = js.Any.fromFunction0(newCourseWorkChangesInfo), newCourseWorkMaterial = js.Any.fromFunction0(newCourseWorkMaterial), newDate = js.Any.fromFunction0(newDate), newDriveFile = js.Any.fromFunction0(newDriveFile), newDriveFolder = js.Any.fromFunction0(newDriveFolder), newFeed = js.Any.fromFunction0(newFeed), newForm = js.Any.fromFunction0(newForm), newGlobalPermission = js.Any.fromFunction0(newGlobalPermission), newGradeHistory = js.Any.fromFunction0(newGradeHistory), newGuardianInvitation = js.Any.fromFunction0(newGuardianInvitation), newIndividualStudentsOptions = js.Any.fromFunction0(newIndividualStudentsOptions), newInvitation = js.Any.fromFunction0(newInvitation), newLink = js.Any.fromFunction0(newLink), newMaterial = js.Any.fromFunction0(newMaterial), newModifyAnnouncementAssigneesRequest = js.Any.fromFunction0(newModifyAnnouncementAssigneesRequest), newModifyAttachmentsRequest = js.Any.fromFunction0(newModifyAttachmentsRequest), newModifyCourseWorkAssigneesRequest = js.Any.fromFunction0(newModifyCourseWorkAssigneesRequest), newModifyIndividualStudentsOptions = js.Any.fromFunction0(newModifyIndividualStudentsOptions), newMultipleChoiceQuestion = js.Any.fromFunction0(newMultipleChoiceQuestion), newMultipleChoiceSubmission = js.Any.fromFunction0(newMultipleChoiceSubmission), newName = js.Any.fromFunction0(newName), newRegistration = js.Any.fromFunction0(newRegistration), newSharedDriveFile = js.Any.fromFunction0(newSharedDriveFile), newShortAnswerSubmission = js.Any.fromFunction0(newShortAnswerSubmission), newStateHistory = js.Any.fromFunction0(newStateHistory), newStudent = js.Any.fromFunction0(newStudent), newStudentSubmission = js.Any.fromFunction0(newStudentSubmission), newSubmissionHistory = js.Any.fromFunction0(newSubmissionHistory), newTeacher = js.Any.fromFunction0(newTeacher), newTimeOfDay = js.Any.fromFunction0(newTimeOfDay), newTopic = js.Any.fromFunction0(newTopic), newUserProfile = js.Any.fromFunction0(newUserProfile), newYouTubeVideo = js.Any.fromFunction0(newYouTubeVideo))
     __obj.asInstanceOf[Classroom]
   }
   
@@ -300,6 +302,8 @@ object Classroom {
     inline def setNewCourseWork(value: () => CourseWork): Self = StObject.set(x, "newCourseWork", js.Any.fromFunction0(value))
     
     inline def setNewCourseWorkChangesInfo(value: () => CourseWorkChangesInfo): Self = StObject.set(x, "newCourseWorkChangesInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewCourseWorkMaterial(value: () => CourseWorkMaterial): Self = StObject.set(x, "newCourseWorkMaterial", js.Any.fromFunction0(value))
     
     inline def setNewDate(value: () => Date): Self = StObject.set(x, "newDate", js.Any.fromFunction0(value))
     
@@ -339,11 +343,7 @@ object Classroom {
     
     inline def setNewName(value: () => Name): Self = StObject.set(x, "newName", js.Any.fromFunction0(value))
     
-    inline def setNewReclaimStudentSubmissionRequest(value: () => js.Any): Self = StObject.set(x, "newReclaimStudentSubmissionRequest", js.Any.fromFunction0(value))
-    
     inline def setNewRegistration(value: () => Registration): Self = StObject.set(x, "newRegistration", js.Any.fromFunction0(value))
-    
-    inline def setNewReturnStudentSubmissionRequest(value: () => js.Any): Self = StObject.set(x, "newReturnStudentSubmissionRequest", js.Any.fromFunction0(value))
     
     inline def setNewSharedDriveFile(value: () => SharedDriveFile): Self = StObject.set(x, "newSharedDriveFile", js.Any.fromFunction0(value))
     
@@ -361,7 +361,7 @@ object Classroom {
     
     inline def setNewTimeOfDay(value: () => TimeOfDay): Self = StObject.set(x, "newTimeOfDay", js.Any.fromFunction0(value))
     
-    inline def setNewTurnInStudentSubmissionRequest(value: () => js.Any): Self = StObject.set(x, "newTurnInStudentSubmissionRequest", js.Any.fromFunction0(value))
+    inline def setNewTopic(value: () => Topic): Self = StObject.set(x, "newTopic", js.Any.fromFunction0(value))
     
     inline def setNewUserProfile(value: () => UserProfile): Self = StObject.set(x, "newUserProfile", js.Any.fromFunction0(value))
     
@@ -383,122 +383,79 @@ object Classroom {
       @js.native
       trait AliasesCollection extends StObject {
         
-        // Creates an alias for a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to create the
-        // alias or for access errors.
-        // * `NOT_FOUND` if the course does not exist.
-        // * `ALREADY_EXISTS` if the alias already exists.
-        // * `FAILED_PRECONDITION` if the alias requested does not make sense for the
-        //   requesting user or course (for example, if a user not in a domain
-        //   attempts to access a domain-scoped alias).
+        // Creates an alias for a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to create the alias or for access errors.
+        // *`NOT_FOUND` if the course does not exist.
+        // *`ALREADY_EXISTS` if the alias already exists.
+        // *`FAILED_PRECONDITION` if the alias requested does not make sense for the requesting user or course (for example, if a user not in a domain attempts to access a domain-scoped alias).
         def create(resource: CourseAlias, courseId: String): CourseAlias = js.native
         
-        // Returns a list of aliases for a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-        // course or for access errors.
-        // * `NOT_FOUND` if the course does not exist.
+        // Returns a list of aliases for a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the course or for access errors.
+        // *`NOT_FOUND` if the course does not exist.
         def list(courseId: String): ListCourseAliasesResponse = js.native
-        // Returns a list of aliases for a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-        // course or for access errors.
-        // * `NOT_FOUND` if the course does not exist.
+        // Returns a list of aliases for a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the course or for access errors.
+        // *`NOT_FOUND` if the course does not exist.
         def list(courseId: String, optionalArgs: js.Object): ListCourseAliasesResponse = js.native
         
-        // Deletes an alias of a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to remove the
-        // alias or for access errors.
-        // * `NOT_FOUND` if the alias does not exist.
-        // * `FAILED_PRECONDITION` if the alias requested does not make sense for the
-        //   requesting user or course (for example, if a user not in a domain
-        //   attempts to delete a domain-scoped alias).
+        // Deletes an alias of a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to remove the alias or for access errors.
+        // *`NOT_FOUND` if the alias does not exist.
+        // *`FAILED_PRECONDITION` if the alias requested does not make sense for the requesting user or course (for example, if a user not in a domain attempts to delete a domain-scoped alias).
         def remove(courseId: String, alias: String): Unit = js.native
       }
       
       @js.native
       trait AnnouncementsCollection extends StObject {
         
-        // Creates an announcement.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-        // requested course, create announcements in the requested course, share a
-        // Drive attachment, or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course does not exist.
-        // * `FAILED_PRECONDITION` for the following request error:
-        //     * AttachmentNotVisible
+        // Creates an announcement. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course, create announcements in the requested course, share a Drive attachment, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
+        // *`FAILED_PRECONDITION` for the following request error: * AttachmentNotVisible
         def create(resource: Announcement, courseId: String): Announcement = js.native
         
-        // Returns an announcement.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-        // requested course or announcement, or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course or announcement does not exist.
+        // Returns an announcement. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or announcement, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course or announcement does not exist.
         def get(courseId: String, id: String): Announcement = js.native
         
-        // Returns a list of announcements that the requester is permitted to view.
-        // Course students may only view `PUBLISHED` announcements. Course teachers
-        // and domain administrators may view all announcements.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access
-        // the requested course or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course does not exist.
+        // Returns a list of announcements that the requester is permitted to view. Course students may only view `PUBLISHED` announcements. Course teachers and domain administrators may view all announcements. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
         def list(courseId: String): ListAnnouncementsResponse = js.native
-        // Returns a list of announcements that the requester is permitted to view.
-        // Course students may only view `PUBLISHED` announcements. Course teachers
-        // and domain administrators may view all announcements.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access
-        // the requested course or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course does not exist.
+        // Returns a list of announcements that the requester is permitted to view. Course students may only view `PUBLISHED` announcements. Course teachers and domain administrators may view all announcements. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
         def list(courseId: String, optionalArgs: js.Object): ListAnnouncementsResponse = js.native
         
-        // Modifies assignee mode and options of an announcement.
-        // Only a teacher of the course that contains the announcement may
-        // call this method.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-        // requested course or course work or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course or course work does not exist.
+        // Modifies assignee mode and options of an announcement. Only a teacher of the course that contains the announcement may call this method. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course or course work does not exist.
         def modifyAssignees(resource: ModifyAnnouncementAssigneesRequest, courseId: String, id: String): Announcement = js.native
         
-        // Updates one or more fields of an announcement.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting developer project did not create
-        // the corresponding announcement or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `FAILED_PRECONDITION` if the requested announcement has already been
-        // deleted.
-        // * `NOT_FOUND` if the requested course or announcement does not exist
+        // Updates one or more fields of an announcement. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding announcement or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`FAILED_PRECONDITION` if the requested announcement has already been deleted.
+        // *`NOT_FOUND` if the requested course or announcement does not exist
         def patch(resource: Announcement, courseId: String, id: String): Announcement = js.native
-        // Updates one or more fields of an announcement.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting developer project did not create
-        // the corresponding announcement or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `FAILED_PRECONDITION` if the requested announcement has already been
-        // deleted.
-        // * `NOT_FOUND` if the requested course or announcement does not exist
+        // Updates one or more fields of an announcement. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding announcement or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`FAILED_PRECONDITION` if the requested announcement has already been deleted.
+        // *`NOT_FOUND` if the requested course or announcement does not exist
         def patch(resource: Announcement, courseId: String, id: String, optionalArgs: js.Object): Announcement = js.native
         
-        // Deletes an announcement.
-        // This request must be made by the Developer Console project of the
-        // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-        // create the corresponding announcement item.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting developer project did not create
-        // the corresponding announcement, if the requesting user is not permitted
-        // to delete the requested course or for access errors.
-        // * `FAILED_PRECONDITION` if the requested announcement has already been
-        // deleted.
-        // * `NOT_FOUND` if no course exists with the requested ID.
+        // Deletes an announcement. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding announcement item. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding announcement, if the requesting user is not permitted to delete the requested course or for access errors.
+        // *`FAILED_PRECONDITION` if the requested announcement has already been deleted.
+        // *`NOT_FOUND` if no course exists with the requested ID.
         def remove(courseId: String, id: String): Unit = js.native
       }
       
@@ -508,84 +465,37 @@ object Classroom {
         trait StudentSubmissionsCollection extends StObject {
           
           // Returns a student submission.
-          // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-          // requested course, course work, or student submission or for
-          // access errors.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course, course work, or student submission
-          // does not exist.
+          // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course, course work, or student submission or for access errors.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
           def get(courseId: String, courseWorkId: String, id: String): StudentSubmission = js.native
           
-          // Returns a list of student submissions that the requester is permitted to
-          // view, factoring in the OAuth scopes of the request.
-          // `-` may be specified as the `course_work_id` to include student
-          // submissions for multiple course work items.
-          // Course students may only view their own work. Course teachers
-          // and domain administrators may view all student submissions.
-          // This method returns the following error codes:
-          // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-          // requested course or course work, or for access errors.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course does not exist.
+          // Returns a list of student submissions that the requester is permitted to view, factoring in the OAuth scopes of the request. `-` may be specified as the `course_work_id` to include student submissions for multiple course work items. Course students may only view their own work. Course teachers and domain administrators may view all student submissions. This method returns the following error codes:
+          // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work, or for access errors.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course does not exist.
           def list(courseId: String, courseWorkId: String): ListStudentSubmissionsResponse = js.native
-          // Returns a list of student submissions that the requester is permitted to
-          // view, factoring in the OAuth scopes of the request.
-          // `-` may be specified as the `course_work_id` to include student
-          // submissions for multiple course work items.
-          // Course students may only view their own work. Course teachers
-          // and domain administrators may view all student submissions.
-          // This method returns the following error codes:
-          // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-          // requested course or course work, or for access errors.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course does not exist.
+          // Returns a list of student submissions that the requester is permitted to view, factoring in the OAuth scopes of the request. `-` may be specified as the `course_work_id` to include student submissions for multiple course work items. Course students may only view their own work. Course teachers and domain administrators may view all student submissions. This method returns the following error codes:
+          // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work, or for access errors.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course does not exist.
           def list(courseId: String, courseWorkId: String, optionalArgs: js.Object): ListStudentSubmissionsResponse = js.native
           
-          // Modifies attachments of student submission.
-          // Attachments may only be added to student submissions belonging to course
-          // work objects with a `workType` of `ASSIGNMENT`.
-          // This request must be made by the Developer Console project of the
-          // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-          // create the corresponding course work item.
-          // This method returns the following error codes:
-          // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-          // requested course or course work, if the user is not permitted to modify
-          // attachments on the requested student submission, or for
-          // access errors.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course, course work, or student submission
-          // does not exist.
+          // Modifies attachments of student submission. Attachments may only be added to student submissions belonging to course work objects with a `workType` of `ASSIGNMENT`. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+          // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work, if the user is not permitted to modify attachments on the requested student submission, or for access errors.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
           def modifyAttachments(resource: ModifyAttachmentsRequest, courseId: String, courseWorkId: String, id: String): StudentSubmission = js.native
           
-          // Updates one or more fields of a student submission.
-          // See google.StudentSubmission for details
-          // of which fields may be updated and who may change them.
-          // This request must be made by the Developer Console project of the
-          // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-          // create the corresponding course work item.
-          // This method returns the following error codes:
-          // * `PERMISSION_DENIED` if the requesting developer project did not create
-          // the corresponding course work, if the user is not permitted to make the
-          // requested modification to the student submission, or for
-          // access errors.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course, course work, or student submission
-          // does not exist.
+          // Updates one or more fields of a student submission. See google.classroom.v1.StudentSubmission for details of which fields may be updated and who may change them. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+          // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding course work, if the user is not permitted to make the requested modification to the student submission, or for access errors.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
           def patch(resource: StudentSubmission, courseId: String, courseWorkId: String, id: String): StudentSubmission = js.native
-          // Updates one or more fields of a student submission.
-          // See google.StudentSubmission for details
-          // of which fields may be updated and who may change them.
-          // This request must be made by the Developer Console project of the
-          // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-          // create the corresponding course work item.
-          // This method returns the following error codes:
-          // * `PERMISSION_DENIED` if the requesting developer project did not create
-          // the corresponding course work, if the user is not permitted to make the
-          // requested modification to the student submission, or for
-          // access errors.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course, course work, or student submission
-          // does not exist.
+          // Updates one or more fields of a student submission. See google.classroom.v1.StudentSubmission for details of which fields may be updated and who may change them. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+          // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding course work, if the user is not permitted to make the requested modification to the student submission, or for access errors.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
           def patch(
             resource: StudentSubmission,
             courseId: String,
@@ -594,59 +504,24 @@ object Classroom {
             optionalArgs: js.Object
           ): StudentSubmission = js.native
           
-          // Reclaims a student submission on behalf of the student that owns it.
-          // Reclaiming a student submission transfers ownership of attached Drive
-          // files to the student and updates the submission state.
-          // Only the student that owns the requested student submission may call this
-          // method, and only for a student submission that has been turned in.
-          // This request must be made by the Developer Console project of the
-          // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-          // create the corresponding course work item.
-          // This method returns the following error codes:
-          // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-          // requested course or course work, unsubmit the requested student submission,
-          // or for access errors.
-          // * `FAILED_PRECONDITION` if the student submission has not been turned in.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course, course work, or student submission
-          // does not exist.
-          def reclaim(resource: js.Any, courseId: String, courseWorkId: String, id: String): Unit = js.native
+          // Reclaims a student submission on behalf of the student that owns it. Reclaiming a student submission transfers ownership of attached Drive files to the student and updates the submission state. Only the student that owns the requested student submission may call this method, and only for a student submission that has been turned in. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+          // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work, unsubmit the requested student submission, or for access errors.
+          // *`FAILED_PRECONDITION` if the student submission has not been turned in.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
+          def reclaim(courseId: String, courseWorkId: String, id: String): Unit = js.native
           
-          // Returns a student submission.
-          // Returning a student submission transfers ownership of attached Drive
-          // files to the student and may also update the submission state.
-          // Unlike the Classroom application, returning a student submission does not
-          // set assignedGrade to the draftGrade value.
-          // Only a teacher of the course that contains the requested student submission
-          // may call this method.
-          // This request must be made by the Developer Console project of the
-          // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-          // create the corresponding course work item.
-          // This method returns the following error codes:
-          // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-          // requested course or course work, return the requested student submission,
-          // or for access errors.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course, course work, or student submission
-          // does not exist.
-          def `return`(resource: js.Any, courseId: String, courseWorkId: String, id: String): Unit = js.native
+          // Returns a student submission. Returning a student submission transfers ownership of attached Drive files to the student and may also update the submission state. Unlike the Classroom application, returning a student submission does not set assignedGrade to the draftGrade value. Only a teacher of the course that contains the requested student submission may call this method. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+          // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work, return the requested student submission, or for access errors.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
+          def `return`(rcourseId: String, courseWorkId: String, id: String): Unit = js.native
           
-          // Turns in a student submission.
-          // Turning in a student submission transfers ownership of attached Drive
-          // files to the teacher and may also update the submission state.
-          // This may only be called by the student that owns the specified student
-          // submission.
-          // This request must be made by the Developer Console project of the
-          // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-          // create the corresponding course work item.
-          // This method returns the following error codes:
-          // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-          // requested course or course work, turn in the requested student submission,
-          // or for access errors.
-          // * `INVALID_ARGUMENT` if the request is malformed.
-          // * `NOT_FOUND` if the requested course, course work, or student submission
-          // does not exist.
-          def turnIn(resource: js.Any, courseId: String, courseWorkId: String, id: String): Unit = js.native
+          // Turns in a student submission. Turning in a student submission transfers ownership of attached Drive files to the teacher and may also update the submission state. This may only be called by the student that owns the specified student submission. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+          // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work, turn in the requested student submission, or for access errors.
+          // *`INVALID_ARGUMENT` if the request is malformed.
+          // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
+          def turnIn(courseId: String, courseWorkId: String, id: String): Unit = js.native
         }
       }
       
@@ -655,217 +530,212 @@ object Classroom {
         
         var StudentSubmissions: js.UndefOr[StudentSubmissionsCollection] = js.native
         
-        // Creates course work.
-        // The resulting course work (and corresponding student submissions) are
-        // associated with the Developer Console project of the
-        // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-        // make the request. Classroom API requests to modify course work and student
-        // submissions must be made with an OAuth client ID from the associated
-        // Developer Console project.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-        // requested course, create course work in the requested course, share a
-        // Drive attachment, or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course does not exist.
-        // * `FAILED_PRECONDITION` for the following request error:
-        //     * AttachmentNotVisible
+        // Creates course work. The resulting course work (and corresponding student submissions) are associated with the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to make the request. Classroom API requests to modify course work and student submissions must be made with an OAuth client ID from the associated Developer Console project. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course, create course work in the requested course, share a Drive attachment, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
+        // *`FAILED_PRECONDITION` for the following request error: * AttachmentNotVisible
         def create(resource: CourseWork, courseId: String): CourseWork = js.native
         
-        // Returns course work.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-        // requested course or course work, or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course or course work does not exist.
+        // Returns course work. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course or course work does not exist.
         def get(courseId: String, id: String): CourseWork = js.native
         
-        // Returns a list of course work that the requester is permitted to view.
-        // Course students may only view `PUBLISHED` course work. Course teachers
-        // and domain administrators may view all course work.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access
-        // the requested course or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course does not exist.
+        // Returns a list of course work that the requester is permitted to view. Course students may only view `PUBLISHED` course work. Course teachers and domain administrators may view all course work. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
         def list(courseId: String): ListCourseWorkResponse = js.native
-        // Returns a list of course work that the requester is permitted to view.
-        // Course students may only view `PUBLISHED` course work. Course teachers
-        // and domain administrators may view all course work.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access
-        // the requested course or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course does not exist.
+        // Returns a list of course work that the requester is permitted to view. Course students may only view `PUBLISHED` course work. Course teachers and domain administrators may view all course work. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
         def list(courseId: String, optionalArgs: js.Object): ListCourseWorkResponse = js.native
         
-        // Modifies assignee mode and options of a coursework.
-        // Only a teacher of the course that contains the coursework may
-        // call this method.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-        // requested course or course work or for access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `NOT_FOUND` if the requested course or course work does not exist.
+        // Modifies assignee mode and options of a coursework. Only a teacher of the course that contains the coursework may call this method. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course or course work does not exist.
         def modifyAssignees(resource: ModifyCourseWorkAssigneesRequest, courseId: String, id: String): CourseWork = js.native
         
-        // Updates one or more fields of a course work.
-        // See google.CourseWork for details
-        // of which fields may be updated and who may change them.
-        // This request must be made by the Developer Console project of the
-        // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-        // create the corresponding course work item.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting developer project did not create
-        // the corresponding course work, if the user is not permitted to make the
-        // requested modification to the student submission, or for
-        // access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `FAILED_PRECONDITION` if the requested course work has already been
-        // deleted.
-        // * `NOT_FOUND` if the requested course, course work, or student submission
-        // does not exist.
+        // Updates one or more fields of a course work. See google.classroom.v1.CourseWork for details of which fields may be updated and who may change them. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding course work, if the user is not permitted to make the requested modification to the student submission, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`FAILED_PRECONDITION` if the requested course work has already been deleted.
+        // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
         def patch(resource: CourseWork, courseId: String, id: String): CourseWork = js.native
-        // Updates one or more fields of a course work.
-        // See google.CourseWork for details
-        // of which fields may be updated and who may change them.
-        // This request must be made by the Developer Console project of the
-        // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-        // create the corresponding course work item.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting developer project did not create
-        // the corresponding course work, if the user is not permitted to make the
-        // requested modification to the student submission, or for
-        // access errors.
-        // * `INVALID_ARGUMENT` if the request is malformed.
-        // * `FAILED_PRECONDITION` if the requested course work has already been
-        // deleted.
-        // * `NOT_FOUND` if the requested course, course work, or student submission
-        // does not exist.
+        // Updates one or more fields of a course work. See google.classroom.v1.CourseWork for details of which fields may be updated and who may change them. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding course work, if the user is not permitted to make the requested modification to the student submission, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`FAILED_PRECONDITION` if the requested course work has already been deleted.
+        // *`NOT_FOUND` if the requested course, course work, or student submission does not exist.
         def patch(resource: CourseWork, courseId: String, id: String, optionalArgs: js.Object): CourseWork = js.native
         
-        // Deletes a course work.
-        // This request must be made by the Developer Console project of the
-        // [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to
-        // create the corresponding course work item.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting developer project did not create
-        // the corresponding course work, if the requesting user is not permitted
-        // to delete the requested course or for access errors.
-        // * `FAILED_PRECONDITION` if the requested course work has already been
-        // deleted.
-        // * `NOT_FOUND` if no course exists with the requested ID.
+        // Deletes a course work. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work item. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding course work, if the requesting user is not permitted to delete the requested course or for access errors.
+        // *`FAILED_PRECONDITION` if the requested course work has already been deleted.
+        // *`NOT_FOUND` if no course exists with the requested ID.
+        def remove(courseId: String, id: String): Unit = js.native
+      }
+      
+      @js.native
+      trait CourseWorkMaterialsCollection extends StObject {
+        
+        // Creates a course work material. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course, create course work material in the requested course, share a Drive attachment, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed or if more than 20 * materials are provided.
+        // *`NOT_FOUND` if the requested course does not exist.
+        // *`FAILED_PRECONDITION` for the following request error: * AttachmentNotVisible
+        def create(resource: CourseWorkMaterial, courseId: String): CourseWorkMaterial = js.native
+        
+        // Returns a course work material. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or course work material, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course or course work material does not exist.
+        def get(courseId: String, id: String): CourseWorkMaterial = js.native
+        
+        // Returns a list of course work material that the requester is permitted to view. Course students may only view `PUBLISHED` course work material. Course teachers and domain administrators may view all course work material. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
+        def list(courseId: String): ListCourseWorkMaterialResponse = js.native
+        // Returns a list of course work material that the requester is permitted to view. Course students may only view `PUBLISHED` course work material. Course teachers and domain administrators may view all course work material. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
+        def list(courseId: String, optionalArgs: js.Object): ListCourseWorkMaterialResponse = js.native
+        
+        // Updates one or more fields of a course work material. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`FAILED_PRECONDITION` if the requested course work material has already been deleted.
+        // *`NOT_FOUND` if the requested course or course work material does not exist
+        def patch(resource: CourseWorkMaterial, courseId: String, id: String): CourseWorkMaterial = js.native
+        // Updates one or more fields of a course work material. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`FAILED_PRECONDITION` if the requested course work material has already been deleted.
+        // *`NOT_FOUND` if the requested course or course work material does not exist
+        def patch(resource: CourseWorkMaterial, courseId: String, id: String, optionalArgs: js.Object): CourseWorkMaterial = js.native
+        
+        // Deletes a course work material. This request must be made by the Developer Console project of the [OAuth client ID](https://support.google.com/cloud/answer/6158849) used to create the corresponding course work material item. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding course work material, if the requesting user is not permitted to delete the requested course or for access errors.
+        // *`FAILED_PRECONDITION` if the requested course work material has already been deleted.
+        // *`NOT_FOUND` if no course exists with the requested ID.
         def remove(courseId: String, id: String): Unit = js.native
       }
       
       @js.native
       trait StudentsCollection extends StObject {
         
-        // Adds a user as a student of a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to create
-        // students in this course or for access errors.
-        // * `NOT_FOUND` if the requested course ID does not exist.
-        // * `FAILED_PRECONDITION` if the requested user's account is disabled,
-        // for the following request errors:
-        //     * CourseMemberLimitReached
-        //     * CourseNotModifiable
-        //     * UserGroupsMembershipLimitReached
-        // * `ALREADY_EXISTS` if the user is already a student or teacher in the
-        // course.
+        // Adds a user as a student of a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to create students in this course or for access errors.
+        // *`NOT_FOUND` if the requested course ID does not exist.
+        // *`FAILED_PRECONDITION` if the requested user's account is disabled, for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * UserGroupsMembershipLimitReached
+        // *`ALREADY_EXISTS` if the user is already a student or teacher in the course.
         def create(resource: Student, courseId: String): Student = js.native
-        // Adds a user as a student of a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to create
-        // students in this course or for access errors.
-        // * `NOT_FOUND` if the requested course ID does not exist.
-        // * `FAILED_PRECONDITION` if the requested user's account is disabled,
-        // for the following request errors:
-        //     * CourseMemberLimitReached
-        //     * CourseNotModifiable
-        //     * UserGroupsMembershipLimitReached
-        // * `ALREADY_EXISTS` if the user is already a student or teacher in the
-        // course.
+        // Adds a user as a student of a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to create students in this course or for access errors.
+        // *`NOT_FOUND` if the requested course ID does not exist.
+        // *`FAILED_PRECONDITION` if the requested user's account is disabled, for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * UserGroupsMembershipLimitReached
+        // *`ALREADY_EXISTS` if the user is already a student or teacher in the course.
         def create(resource: Student, courseId: String, optionalArgs: js.Object): Student = js.native
         
-        // Returns a student of a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to view
-        // students of this course or for access errors.
-        // * `NOT_FOUND` if no student of this course has the requested ID or if the
-        // course does not exist.
+        // Returns a student of a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to view students of this course or for access errors.
+        // *`NOT_FOUND` if no student of this course has the requested ID or if the course does not exist.
         def get(courseId: String, userId: String): Student = js.native
         
-        // Returns a list of students of this course that the requester
-        // is permitted to view.
-        // This method returns the following error codes:
-        // * `NOT_FOUND` if the course does not exist.
-        // * `PERMISSION_DENIED` for access errors.
+        // Returns a list of students of this course that the requester is permitted to view. This method returns the following error codes:
+        // *`NOT_FOUND` if the course does not exist.
+        // *`PERMISSION_DENIED` for access errors.
         def list(courseId: String): ListStudentsResponse = js.native
-        // Returns a list of students of this course that the requester
-        // is permitted to view.
-        // This method returns the following error codes:
-        // * `NOT_FOUND` if the course does not exist.
-        // * `PERMISSION_DENIED` for access errors.
+        // Returns a list of students of this course that the requester is permitted to view. This method returns the following error codes:
+        // *`NOT_FOUND` if the course does not exist.
+        // *`PERMISSION_DENIED` for access errors.
         def list(courseId: String, optionalArgs: js.Object): ListStudentsResponse = js.native
         
-        // Deletes a student of a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to delete
-        // students of this course or for access errors.
-        // * `NOT_FOUND` if no student of this course has the requested ID or if the
-        // course does not exist.
+        // Deletes a student of a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to delete students of this course or for access errors.
+        // *`NOT_FOUND` if no student of this course has the requested ID or if the course does not exist.
         def remove(courseId: String, userId: String): Unit = js.native
       }
       
       @js.native
       trait TeachersCollection extends StObject {
         
-        // Creates a teacher of a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not  permitted to create
-        // teachers in this course or for access errors.
-        // * `NOT_FOUND` if the requested course ID does not exist.
-        // * `FAILED_PRECONDITION` if the requested user's account is disabled,
-        // for the following request errors:
-        //     * CourseMemberLimitReached
-        //     * CourseNotModifiable
-        //     * CourseTeacherLimitReached
-        //     * UserGroupsMembershipLimitReached
-        // * `ALREADY_EXISTS` if the user is already a teacher or student in the
-        // course.
+        // Creates a teacher of a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to create teachers in this course or for access errors.
+        // *`NOT_FOUND` if the requested course ID does not exist.
+        // *`FAILED_PRECONDITION` if the requested user's account is disabled, for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * CourseTeacherLimitReached * UserGroupsMembershipLimitReached
+        // *`ALREADY_EXISTS` if the user is already a teacher or student in the course.
         def create(resource: Teacher, courseId: String): Teacher = js.native
         
-        // Returns a teacher of a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to view
-        // teachers of this course or for access errors.
-        // * `NOT_FOUND` if no teacher of this course has the requested ID or if the
-        // course does not exist.
+        // Returns a teacher of a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to view teachers of this course or for access errors.
+        // *`NOT_FOUND` if no teacher of this course has the requested ID or if the course does not exist.
         def get(courseId: String, userId: String): Teacher = js.native
         
-        // Returns a list of teachers of this course that the requester
-        // is permitted to view.
-        // This method returns the following error codes:
-        // * `NOT_FOUND` if the course does not exist.
-        // * `PERMISSION_DENIED` for access errors.
+        // Returns a list of teachers of this course that the requester is permitted to view. This method returns the following error codes:
+        // *`NOT_FOUND` if the course does not exist.
+        // *`PERMISSION_DENIED` for access errors.
         def list(courseId: String): ListTeachersResponse = js.native
-        // Returns a list of teachers of this course that the requester
-        // is permitted to view.
-        // This method returns the following error codes:
-        // * `NOT_FOUND` if the course does not exist.
-        // * `PERMISSION_DENIED` for access errors.
+        // Returns a list of teachers of this course that the requester is permitted to view. This method returns the following error codes:
+        // *`NOT_FOUND` if the course does not exist.
+        // *`PERMISSION_DENIED` for access errors.
         def list(courseId: String, optionalArgs: js.Object): ListTeachersResponse = js.native
         
-        // Deletes a teacher of a course.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to delete
-        // teachers of this course or for access errors.
-        // * `NOT_FOUND` if no teacher of this course has the requested ID or if the
-        // course does not exist.
-        // * `FAILED_PRECONDITION` if the requested ID belongs to the primary teacher
-        // of this course.
+        // Deletes a teacher of a course. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to delete teachers of this course or for access errors.
+        // *`NOT_FOUND` if no teacher of this course has the requested ID or if the course does not exist.
+        // *`FAILED_PRECONDITION` if the requested ID belongs to the primary teacher of this course.
         def remove(courseId: String, userId: String): Unit = js.native
+      }
+      
+      @js.native
+      trait TopicsCollection extends StObject {
+        
+        // Creates a topic. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course, create a topic in the requested course, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
+        def create(resource: Topic, courseId: String): Topic = js.native
+        
+        // Returns a topic. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or topic, or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course or topic does not exist.
+        def get(courseId: String, id: String): Topic = js.native
+        
+        // Returns the list of topics that the requester is permitted to view. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
+        def list(courseId: String): ListTopicResponse = js.native
+        // Returns the list of topics that the requester is permitted to view. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course does not exist.
+        def list(courseId: String, optionalArgs: js.Object): ListTopicResponse = js.native
+        
+        // Updates one or more fields of a topic. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding topic or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course or topic does not exist
+        def patch(resource: Topic, courseId: String, id: String): Topic = js.native
+        // Updates one or more fields of a topic. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting developer project did not create the corresponding topic or for access errors.
+        // *`INVALID_ARGUMENT` if the request is malformed.
+        // *`NOT_FOUND` if the requested course or topic does not exist
+        def patch(resource: Topic, courseId: String, id: String, optionalArgs: js.Object): Topic = js.native
+        
+        // Deletes a topic. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not allowed to delete the requested topic or for access errors.
+        // *`FAILED_PRECONDITION` if the requested topic has already been deleted.
+        // *`NOT_FOUND` if no course or topic exists with the requested ID.
+        def remove(courseId: String, id: String): Unit = js.native
       }
     }
     
@@ -878,177 +748,105 @@ object Classroom {
       
       var CourseWork: js.UndefOr[CourseWorkCollection] = js.native
       
+      var CourseWorkMaterials: js.UndefOr[CourseWorkMaterialsCollection] = js.native
+      
       var Students: js.UndefOr[StudentsCollection] = js.native
       
       var Teachers: js.UndefOr[TeachersCollection] = js.native
       
-      // Creates a course.
-      // The user specified in `ownerId` is the owner of the created course
-      // and added as a teacher.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to create
-      // courses or for access errors.
-      // * `NOT_FOUND` if the primary teacher is not a valid user.
-      // * `FAILED_PRECONDITION` if the course owner's account is disabled or for
-      // the following request errors:
-      //     * UserGroupsMembershipLimitReached
-      // * `ALREADY_EXISTS` if an alias was specified in the `id` and
-      // already exists.
+      var Topics: js.UndefOr[TopicsCollection] = js.native
+      
+      // Creates a course. The user specified in `ownerId` is the owner of the created course and added as a teacher. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to create courses or for access errors.
+      // *`NOT_FOUND` if the primary teacher is not a valid user.
+      // *`FAILED_PRECONDITION` if the course owner's account is disabled or for the following request errors: * UserGroupsMembershipLimitReached
+      // *`ALREADY_EXISTS` if an alias was specified in the `id` and already exists.
       def create(resource: Course): Course = js.native
       
-      // Returns a course.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to access the
-      // requested course or for access errors.
-      // * `NOT_FOUND` if no course exists with the requested ID.
+      // Returns a course. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to access the requested course or for access errors.
+      // *`NOT_FOUND` if no course exists with the requested ID.
       def get(id: String): Course = js.native
       
-      // Returns a list of courses that the requesting user is permitted to view,
-      // restricted to those that match the request. Returned courses are ordered by
-      // creation time, with the most recently created coming first.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` for access errors.
-      // * `INVALID_ARGUMENT` if the query argument is malformed.
-      // * `NOT_FOUND` if any users specified in the query arguments do not exist.
+      // Returns a list of courses that the requesting user is permitted to view, restricted to those that match the request. Returned courses are ordered by creation time, with the most recently created coming first. This method returns the following error codes:
+      // *`PERMISSION_DENIED` for access errors.
+      // *`INVALID_ARGUMENT` if the query argument is malformed.
+      // *`NOT_FOUND` if any users specified in the query arguments do not exist.
       def list(): ListCoursesResponse = js.native
-      // Returns a list of courses that the requesting user is permitted to view,
-      // restricted to those that match the request. Returned courses are ordered by
-      // creation time, with the most recently created coming first.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` for access errors.
-      // * `INVALID_ARGUMENT` if the query argument is malformed.
-      // * `NOT_FOUND` if any users specified in the query arguments do not exist.
+      // Returns a list of courses that the requesting user is permitted to view, restricted to those that match the request. Returned courses are ordered by creation time, with the most recently created coming first. This method returns the following error codes:
+      // *`PERMISSION_DENIED` for access errors.
+      // *`INVALID_ARGUMENT` if the query argument is malformed.
+      // *`NOT_FOUND` if any users specified in the query arguments do not exist.
       def list(optionalArgs: js.Object): ListCoursesResponse = js.native
       
-      // Updates one or more fields in a course.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to modify the
-      // requested course or for access errors.
-      // * `NOT_FOUND` if no course exists with the requested ID.
-      // * `INVALID_ARGUMENT` if invalid fields are specified in the update mask or
-      // if no update mask is supplied.
-      // * `FAILED_PRECONDITION` for the following request errors:
-      //     * CourseNotModifiable
+      // Updates one or more fields in a course. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to modify the requested course or for access errors.
+      // *`NOT_FOUND` if no course exists with the requested ID.
+      // *`INVALID_ARGUMENT` if invalid fields are specified in the update mask or if no update mask is supplied.
+      // *`FAILED_PRECONDITION` for the following request errors: * CourseNotModifiable
       def patch(resource: Course, id: String): Course = js.native
-      // Updates one or more fields in a course.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to modify the
-      // requested course or for access errors.
-      // * `NOT_FOUND` if no course exists with the requested ID.
-      // * `INVALID_ARGUMENT` if invalid fields are specified in the update mask or
-      // if no update mask is supplied.
-      // * `FAILED_PRECONDITION` for the following request errors:
-      //     * CourseNotModifiable
+      // Updates one or more fields in a course. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to modify the requested course or for access errors.
+      // *`NOT_FOUND` if no course exists with the requested ID.
+      // *`INVALID_ARGUMENT` if invalid fields are specified in the update mask or if no update mask is supplied.
+      // *`FAILED_PRECONDITION` for the following request errors: * CourseNotModifiable
       def patch(resource: Course, id: String, optionalArgs: js.Object): Course = js.native
       
-      // Deletes a course.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to delete the
-      // requested course or for access errors.
-      // * `NOT_FOUND` if no course exists with the requested ID.
+      // Deletes a course. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to delete the requested course or for access errors.
+      // *`NOT_FOUND` if no course exists with the requested ID.
       def remove(id: String): Unit = js.native
       
-      // Updates a course.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to modify the
-      // requested course or for access errors.
-      // * `NOT_FOUND` if no course exists with the requested ID.
-      // * `FAILED_PRECONDITION` for the following request errors:
-      //     * CourseNotModifiable
+      // Updates a course. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to modify the requested course or for access errors.
+      // *`NOT_FOUND` if no course exists with the requested ID.
+      // *`FAILED_PRECONDITION` for the following request errors: * CourseNotModifiable
       def update(resource: Course, id: String): Course = js.native
     }
     
     @js.native
     trait InvitationsCollection extends StObject {
       
-      // Accepts an invitation, removing it and adding the invited user to the
-      // teachers or students (as appropriate) of the specified course. Only the
-      // invited user may accept an invitation.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to accept the
-      // requested invitation or for access errors.
-      // * `FAILED_PRECONDITION` for the following request errors:
-      //     * CourseMemberLimitReached
-      //     * CourseNotModifiable
-      //     * CourseTeacherLimitReached
-      //     * UserGroupsMembershipLimitReached
-      // * `NOT_FOUND` if no invitation exists with the requested ID.
+      // Accepts an invitation, removing it and adding the invited user to the teachers or students (as appropriate) of the specified course. Only the invited user may accept an invitation. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to accept the requested invitation or for access errors.
+      // *`FAILED_PRECONDITION` for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * CourseTeacherLimitReached * UserGroupsMembershipLimitReached
+      // *`NOT_FOUND` if no invitation exists with the requested ID.
       def accept(id: String): Unit = js.native
       
-      // Creates an invitation. Only one invitation for a user and course may exist
-      // at a time. Delete and re-create an invitation to make changes.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to create
-      // invitations for this course or for access errors.
-      // * `NOT_FOUND` if the course or the user does not exist.
-      // * `FAILED_PRECONDITION` if the requested user's account is disabled or if
-      // the user already has this role or a role with greater permissions.
-      // * `ALREADY_EXISTS` if an invitation for the specified user and course
-      // already exists.
+      // Creates an invitation. Only one invitation for a user and course may exist at a time. Delete and re-create an invitation to make changes. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to create invitations for this course or for access errors.
+      // *`NOT_FOUND` if the course or the user does not exist.
+      // *`FAILED_PRECONDITION` if the requested user's account is disabled or if the user already has this role or a role with greater permissions.
+      // *`ALREADY_EXISTS` if an invitation for the specified user and course already exists.
       def create(resource: Invitation): Invitation = js.native
       
-      // Returns an invitation.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to view the
-      // requested invitation or for access errors.
-      // * `NOT_FOUND` if no invitation exists with the requested ID.
+      // Returns an invitation. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to view the requested invitation or for access errors.
+      // *`NOT_FOUND` if no invitation exists with the requested ID.
       def get(id: String): Invitation = js.native
       
-      // Returns a list of invitations that the requesting user is permitted to
-      // view, restricted to those that match the list request.
-      // *Note:* At least one of `user_id` or `course_id` must be supplied. Both
-      // fields can be supplied.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` for access errors.
+      // Returns a list of invitations that the requesting user is permitted to view, restricted to those that match the list request. *Note:* At least one of `user_id` or `course_id` must be supplied. Both fields can be supplied. This method returns the following error codes:
+      // *`PERMISSION_DENIED` for access errors.
       def list(): ListInvitationsResponse = js.native
-      // Returns a list of invitations that the requesting user is permitted to
-      // view, restricted to those that match the list request.
-      // *Note:* At least one of `user_id` or `course_id` must be supplied. Both
-      // fields can be supplied.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` for access errors.
+      // Returns a list of invitations that the requesting user is permitted to view, restricted to those that match the list request. *Note:* At least one of `user_id` or `course_id` must be supplied. Both fields can be supplied. This method returns the following error codes:
+      // *`PERMISSION_DENIED` for access errors.
       def list(optionalArgs: js.Object): ListInvitationsResponse = js.native
       
-      // Deletes an invitation.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to delete the
-      // requested invitation or for access errors.
-      // * `NOT_FOUND` if no invitation exists with the requested ID.
+      // Deletes an invitation. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to delete the requested invitation or for access errors.
+      // *`NOT_FOUND` if no invitation exists with the requested ID.
       def remove(id: String): Unit = js.native
     }
     
     trait RegistrationsCollection extends StObject {
       
-      // Creates a `Registration`, causing Classroom to start sending notifications
-      // from the provided `feed` to the destination provided in `cloudPubSubTopic`.
-      // Returns the created `Registration`. Currently, this will be the same as
-      // the argument, but with server-assigned fields such as `expiry_time` and
-      // `id` filled in.
-      // Note that any value specified for the `expiry_time` or `id` fields will be
-      // ignored.
-      // While Classroom may validate the `cloudPubSubTopic` and return errors on a
-      // best effort basis, it is the caller's responsibility to ensure that it
-      // exists and that Classroom has permission to publish to it.
-      // This method may return the following error codes:
-      // * `PERMISSION_DENIED` if:
-      //     * the authenticated user does not have permission to receive
-      //       notifications from the requested field; or
-      //     * the credential provided does not include the appropriate scope for
-      //       the requested feed.
-      //     * another access error is encountered.
-      // * `INVALID_ARGUMENT` if:
-      //     * no `cloudPubsubTopic` is specified, or the specified
-      //       `cloudPubsubTopic` is not valid; or
-      //     * no `feed` is specified, or the specified `feed` is not valid.
-      // * `NOT_FOUND` if:
-      //     * the specified `feed` cannot be located, or the requesting user does
-      //       not have permission to determine whether or not it exists; or
-      //     * the specified `cloudPubsubTopic` cannot be located, or Classroom has
-      //       not been granted permission to publish to it.
+      // Creates a `Registration`, causing Classroom to start sending notifications from the provided `feed` to the destination provided in `cloudPubSubTopic`. Returns the created `Registration`. Currently, this will be the same as the argument, but with server-assigned fields such as `expiry_time` and `id` filled in. Note that any value specified for the `expiry_time` or `id` fields will be ignored. While Classroom may validate the `cloudPubSubTopic` and return errors on a best effort basis, it is the caller's responsibility to ensure that it exists and that Classroom has permission to publish to it. This method may return the following error codes:
+      // *`PERMISSION_DENIED` if: * the authenticated user does not have permission to receive notifications from the requested field; or * the current user has not granted access to the current Cloud project with the appropriate scope for the requested feed. Note that domain-wide delegation of authority is not currently supported for this purpose. If the request has the appropriate scope, but no grant exists, a Request Errors is returned. * another access error is encountered.
+      // *`INVALID_ARGUMENT` if: * no `cloudPubsubTopic` is specified, or the specified `cloudPubsubTopic` is not valid; or * no `feed` is specified, or the specified `feed` is not valid.
+      // *`NOT_FOUND` if: * the specified `feed` cannot be located, or the requesting user does not have permission to determine whether or not it exists; or * the specified `cloudPubsubTopic` cannot be located, or Classroom has not been granted permission to publish to it.
       def create(resource: Registration): Registration
       
-      // Deletes a `Registration`, causing Classroom to stop sending notifications
-      // for that `Registration`.
+      // Deletes a `Registration`, causing Classroom to stop sending notifications for that `Registration`.
       def remove(registrationId: String): Unit
     }
     object RegistrationsCollection {
@@ -1071,183 +869,69 @@ object Classroom {
       @js.native
       trait GuardianInvitationsCollection extends StObject {
         
-        // Creates a guardian invitation, and sends an email to the guardian asking
-        // them to confirm that they are the student's guardian.
-        // Once the guardian accepts the invitation, their `state` will change to
-        // `COMPLETED` and they will start receiving guardian notifications. A
-        // `Guardian` resource will also be created to represent the active guardian.
-        // The request object must have the `student_id` and
-        // `invited_email_address` fields set. Failing to set these fields, or
-        // setting any other fields in the request, will result in an error.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the current user does not have permission to
-        //   manage guardians, if the guardian in question has already rejected
-        //   too many requests for that student, if guardians are not enabled for the
-        //   domain in question, or for other access errors.
-        // * `RESOURCE_EXHAUSTED` if the student or guardian has exceeded the guardian
-        //   link limit.
-        // * `INVALID_ARGUMENT` if the guardian email address is not valid (for
-        //   example, if it is too long), or if the format of the student ID provided
-        //   cannot be recognized (it is not an email address, nor a `user_id` from
-        //   this API). This error will also be returned if read-only fields are set,
-        //   or if the `state` field is set to to a value other than `PENDING`.
-        // * `NOT_FOUND` if the student ID provided is a valid student ID, but
-        //   Classroom has no record of that student.
-        // * `ALREADY_EXISTS` if there is already a pending guardian invitation for
-        //   the student and `invited_email_address` provided, or if the provided
-        //   `invited_email_address` matches the Google account of an existing
-        //   `Guardian` for this user.
+        // Creates a guardian invitation, and sends an email to the guardian asking them to confirm that they are the student's guardian. Once the guardian accepts the invitation, their `state` will change to `COMPLETED` and they will start receiving guardian notifications. A `Guardian` resource will also be created to represent the active guardian. The request object must have the `student_id` and `invited_email_address` fields set. Failing to set these fields, or setting any other fields in the request, will result in an error. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the current user does not have permission to manage guardians, if the guardian in question has already rejected too many requests for that student, if guardians are not enabled for the domain in question, or for other access errors.
+        // *`RESOURCE_EXHAUSTED` if the student or guardian has exceeded the guardian link limit.
+        // *`INVALID_ARGUMENT` if the guardian email address is not valid (for example, if it is too long), or if the format of the student ID provided cannot be recognized (it is not an email address, nor a `user_id` from this API). This error will also be returned if read-only fields are set, or if the `state` field is set to to a value other than `PENDING`.
+        // *`NOT_FOUND` if the student ID provided is a valid student ID, but Classroom has no record of that student.
+        // *`ALREADY_EXISTS` if there is already a pending guardian invitation for the student and `invited_email_address` provided, or if the provided `invited_email_address` matches the Google account of an existing `Guardian` for this user.
         def create(resource: GuardianInvitation, studentId: String): GuardianInvitation = js.native
         
-        // Returns a specific guardian invitation.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the requesting user is not permitted to view
-        //   guardian invitations for the student identified by the `student_id`, if
-        //   guardians are not enabled for the domain in question, or for other
-        //   access errors.
-        // * `INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot
-        //   be recognized (it is not an email address, nor a `student_id` from the
-        //   API, nor the literal string `me`).
-        // * `NOT_FOUND` if Classroom cannot find any record of the given student or
-        //   `invitation_id`. May also be returned if the student exists, but the
-        //   requesting user does not have access to see that student.
+        // Returns a specific guardian invitation. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the requesting user is not permitted to view guardian invitations for the student identified by the `student_id`, if guardians are not enabled for the domain in question, or for other access errors.
+        // *`INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot be recognized (it is not an email address, nor a `student_id` from the API, nor the literal string `me`).
+        // *`NOT_FOUND` if Classroom cannot find any record of the given student or `invitation_id`. May also be returned if the student exists, but the requesting user does not have access to see that student.
         def get(studentId: String, invitationId: String): GuardianInvitation = js.native
         
-        // Returns a list of guardian invitations that the requesting user is
-        // permitted to view, filtered by the parameters provided.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if a `student_id` is specified, and the requesting
-        //   user is not permitted to view guardian invitations for that student, if
-        //   `"-"` is specified as the `student_id` and the user is not a domain
-        //   administrator, if guardians are not enabled for the domain in question,
-        //   or for other access errors.
-        // * `INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot
-        //   be recognized (it is not an email address, nor a `student_id` from the
-        //   API, nor the literal string `me`). May also be returned if an invalid
-        //   `page_token` or `state` is provided.
-        // * `NOT_FOUND` if a `student_id` is specified, and its format can be
-        //   recognized, but Classroom has no record of that student.
+        // Returns a list of guardian invitations that the requesting user is permitted to view, filtered by the parameters provided. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if a `student_id` is specified, and the requesting user is not permitted to view guardian invitations for that student, if `"-"` is specified as the `student_id` and the user is not a domain administrator, if guardians are not enabled for the domain in question, or for other access errors.
+        // *`INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot be recognized (it is not an email address, nor a `student_id` from the API, nor the literal string `me`). May also be returned if an invalid `page_token` or `state` is provided.
+        // *`NOT_FOUND` if a `student_id` is specified, and its format can be recognized, but Classroom has no record of that student.
         def list(studentId: String): ListGuardianInvitationsResponse = js.native
-        // Returns a list of guardian invitations that the requesting user is
-        // permitted to view, filtered by the parameters provided.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if a `student_id` is specified, and the requesting
-        //   user is not permitted to view guardian invitations for that student, if
-        //   `"-"` is specified as the `student_id` and the user is not a domain
-        //   administrator, if guardians are not enabled for the domain in question,
-        //   or for other access errors.
-        // * `INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot
-        //   be recognized (it is not an email address, nor a `student_id` from the
-        //   API, nor the literal string `me`). May also be returned if an invalid
-        //   `page_token` or `state` is provided.
-        // * `NOT_FOUND` if a `student_id` is specified, and its format can be
-        //   recognized, but Classroom has no record of that student.
+        // Returns a list of guardian invitations that the requesting user is permitted to view, filtered by the parameters provided. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if a `student_id` is specified, and the requesting user is not permitted to view guardian invitations for that student, if `"-"` is specified as the `student_id` and the user is not a domain administrator, if guardians are not enabled for the domain in question, or for other access errors.
+        // *`INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot be recognized (it is not an email address, nor a `student_id` from the API, nor the literal string `me`). May also be returned if an invalid `page_token` or `state` is provided.
+        // *`NOT_FOUND` if a `student_id` is specified, and its format can be recognized, but Classroom has no record of that student.
         def list(studentId: String, optionalArgs: js.Object): ListGuardianInvitationsResponse = js.native
         
-        // Modifies a guardian invitation.
-        // Currently, the only valid modification is to change the `state` from
-        // `PENDING` to `COMPLETE`. This has the effect of withdrawing the invitation.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the current user does not have permission to
-        //   manage guardians, if guardians are not enabled for the domain in question
-        //   or for other access errors.
-        // * `FAILED_PRECONDITION` if the guardian link is not in the `PENDING` state.
-        // * `INVALID_ARGUMENT` if the format of the student ID provided
-        //   cannot be recognized (it is not an email address, nor a `user_id` from
-        //   this API), or if the passed `GuardianInvitation` has a `state` other than
-        //   `COMPLETE`, or if it modifies fields other than `state`.
-        // * `NOT_FOUND` if the student ID provided is a valid student ID, but
-        //   Classroom has no record of that student, or if the `id` field does not
-        //   refer to a guardian invitation known to Classroom.
+        // Modifies a guardian invitation. Currently, the only valid modification is to change the `state` from `PENDING` to `COMPLETE`. This has the effect of withdrawing the invitation. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the current user does not have permission to manage guardians, if guardians are not enabled for the domain in question or for other access errors.
+        // *`FAILED_PRECONDITION` if the guardian link is not in the `PENDING` state.
+        // *`INVALID_ARGUMENT` if the format of the student ID provided cannot be recognized (it is not an email address, nor a `user_id` from this API), or if the passed `GuardianInvitation` has a `state` other than `COMPLETE`, or if it modifies fields other than `state`.
+        // *`NOT_FOUND` if the student ID provided is a valid student ID, but Classroom has no record of that student, or if the `id` field does not refer to a guardian invitation known to Classroom.
         def patch(resource: GuardianInvitation, studentId: String, invitationId: String): GuardianInvitation = js.native
-        // Modifies a guardian invitation.
-        // Currently, the only valid modification is to change the `state` from
-        // `PENDING` to `COMPLETE`. This has the effect of withdrawing the invitation.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if the current user does not have permission to
-        //   manage guardians, if guardians are not enabled for the domain in question
-        //   or for other access errors.
-        // * `FAILED_PRECONDITION` if the guardian link is not in the `PENDING` state.
-        // * `INVALID_ARGUMENT` if the format of the student ID provided
-        //   cannot be recognized (it is not an email address, nor a `user_id` from
-        //   this API), or if the passed `GuardianInvitation` has a `state` other than
-        //   `COMPLETE`, or if it modifies fields other than `state`.
-        // * `NOT_FOUND` if the student ID provided is a valid student ID, but
-        //   Classroom has no record of that student, or if the `id` field does not
-        //   refer to a guardian invitation known to Classroom.
+        // Modifies a guardian invitation. Currently, the only valid modification is to change the `state` from `PENDING` to `COMPLETE`. This has the effect of withdrawing the invitation. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if the current user does not have permission to manage guardians, if guardians are not enabled for the domain in question or for other access errors.
+        // *`FAILED_PRECONDITION` if the guardian link is not in the `PENDING` state.
+        // *`INVALID_ARGUMENT` if the format of the student ID provided cannot be recognized (it is not an email address, nor a `user_id` from this API), or if the passed `GuardianInvitation` has a `state` other than `COMPLETE`, or if it modifies fields other than `state`.
+        // *`NOT_FOUND` if the student ID provided is a valid student ID, but Classroom has no record of that student, or if the `id` field does not refer to a guardian invitation known to Classroom.
         def patch(resource: GuardianInvitation, studentId: String, invitationId: String, optionalArgs: js.Object): GuardianInvitation = js.native
       }
       
       @js.native
       trait GuardiansCollection extends StObject {
         
-        // Returns a specific guardian.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if no user that matches the provided `student_id`
-        //   is visible to the requesting user, if the requesting user is not
-        //   permitted to view guardian information for the student identified by the
-        //   `student_id`, if guardians are not enabled for the domain in question,
-        //   or for other access errors.
-        // * `INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot
-        //   be recognized (it is not an email address, nor a `student_id` from the
-        //   API, nor the literal string `me`).
-        // * `NOT_FOUND` if the requesting user is permitted to view guardians for
-        //   the requested `student_id`, but no `Guardian` record exists for that
-        //   student that matches the provided `guardian_id`.
+        // Returns a specific guardian. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if no user that matches the provided `student_id` is visible to the requesting user, if the requesting user is not permitted to view guardian information for the student identified by the `student_id`, if guardians are not enabled for the domain in question, or for other access errors.
+        // *`INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot be recognized (it is not an email address, nor a `student_id` from the API, nor the literal string `me`).
+        // *`NOT_FOUND` if the requesting user is permitted to view guardians for the requested `student_id`, but no `Guardian` record exists for that student that matches the provided `guardian_id`.
         def get(studentId: String, guardianId: String): Guardian = js.native
         
-        // Returns a list of guardians that the requesting user is permitted to
-        // view, restricted to those that match the request.
-        // To list guardians for any student that the requesting user may view
-        // guardians for, use the literal character `-` for the student ID.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if a `student_id` is specified, and the requesting
-        //   user is not permitted to view guardian information for that student, if
-        //   `"-"` is specified as the `student_id` and the user is not a domain
-        //   administrator, if guardians are not enabled for the domain in question,
-        //   if the `invited_email_address` filter is set by a user who is not a
-        //   domain administrator, or for other access errors.
-        // * `INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot
-        //   be recognized (it is not an email address, nor a `student_id` from the
-        //   API, nor the literal string `me`). May also be returned if an invalid
-        //   `page_token` is provided.
-        // * `NOT_FOUND` if a `student_id` is specified, and its format can be
-        //   recognized, but Classroom has no record of that student.
+        // Returns a list of guardians that the requesting user is permitted to view, restricted to those that match the request. To list guardians for any student that the requesting user may view guardians for, use the literal character `-` for the student ID. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if a `student_id` is specified, and the requesting user is not permitted to view guardian information for that student, if `"-"` is specified as the `student_id` and the user is not a domain administrator, if guardians are not enabled for the domain in question, if the `invited_email_address` filter is set by a user who is not a domain administrator, or for other access errors.
+        // *`INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot be recognized (it is not an email address, nor a `student_id` from the API, nor the literal string `me`). May also be returned if an invalid `page_token` is provided.
+        // *`NOT_FOUND` if a `student_id` is specified, and its format can be recognized, but Classroom has no record of that student.
         def list(studentId: String): ListGuardiansResponse = js.native
-        // Returns a list of guardians that the requesting user is permitted to
-        // view, restricted to those that match the request.
-        // To list guardians for any student that the requesting user may view
-        // guardians for, use the literal character `-` for the student ID.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if a `student_id` is specified, and the requesting
-        //   user is not permitted to view guardian information for that student, if
-        //   `"-"` is specified as the `student_id` and the user is not a domain
-        //   administrator, if guardians are not enabled for the domain in question,
-        //   if the `invited_email_address` filter is set by a user who is not a
-        //   domain administrator, or for other access errors.
-        // * `INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot
-        //   be recognized (it is not an email address, nor a `student_id` from the
-        //   API, nor the literal string `me`). May also be returned if an invalid
-        //   `page_token` is provided.
-        // * `NOT_FOUND` if a `student_id` is specified, and its format can be
-        //   recognized, but Classroom has no record of that student.
+        // Returns a list of guardians that the requesting user is permitted to view, restricted to those that match the request. To list guardians for any student that the requesting user may view guardians for, use the literal character `-` for the student ID. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if a `student_id` is specified, and the requesting user is not permitted to view guardian information for that student, if `"-"` is specified as the `student_id` and the user is not a domain administrator, if guardians are not enabled for the domain in question, if the `invited_email_address` filter is set by a user who is not a domain administrator, or for other access errors.
+        // *`INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot be recognized (it is not an email address, nor a `student_id` from the API, nor the literal string `me`). May also be returned if an invalid `page_token` is provided.
+        // *`NOT_FOUND` if a `student_id` is specified, and its format can be recognized, but Classroom has no record of that student.
         def list(studentId: String, optionalArgs: js.Object): ListGuardiansResponse = js.native
         
-        // Deletes a guardian.
-        // The guardian will no longer receive guardian notifications and the guardian
-        // will no longer be accessible via the API.
-        // This method returns the following error codes:
-        // * `PERMISSION_DENIED` if no user that matches the provided `student_id`
-        //   is visible to the requesting user, if the requesting user is not
-        //   permitted to manage guardians for the student identified by the
-        //   `student_id`, if guardians are not enabled for the domain in question,
-        //   or for other access errors.
-        // * `INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot
-        //   be recognized (it is not an email address, nor a `student_id` from the
-        //   API).
-        // * `NOT_FOUND` if the requesting user is permitted to modify guardians for
-        //   the requested `student_id`, but no `Guardian` record exists for that
-        //   student with the provided `guardian_id`.
+        // Deletes a guardian. The guardian will no longer receive guardian notifications and the guardian will no longer be accessible via the API. This method returns the following error codes:
+        // *`PERMISSION_DENIED` if no user that matches the provided `student_id` is visible to the requesting user, if the requesting user is not permitted to manage guardians for the student identified by the `student_id`, if guardians are not enabled for the domain in question, or for other access errors.
+        // *`INVALID_ARGUMENT` if a `student_id` is specified, but its format cannot be recognized (it is not an email address, nor a `student_id` from the API).
+        // *`NOT_FOUND` if the requesting user is permitted to modify guardians for the requested `student_id`, but no `Guardian` record exists for that student with the provided `guardian_id`.
         def remove(studentId: String, guardianId: String): Unit = js.native
       }
     }
@@ -1258,11 +942,8 @@ object Classroom {
       
       var Guardians: js.UndefOr[GuardiansCollection] = js.undefined
       
-      // Returns a user profile.
-      // This method returns the following error codes:
-      // * `PERMISSION_DENIED` if the requesting user is not permitted to access
-      // this user profile, if no profile exists with the requested ID, or for
-      // access errors.
+      // Returns a user profile. This method returns the following error codes:
+      // *`PERMISSION_DENIED` if the requesting user is not permitted to access this user profile, if no profile exists with the requested ID, or for access errors.
       def get(userId: String): UserProfile
     }
     object UserProfilesCollection {
@@ -1356,7 +1037,7 @@ object Classroom {
         
         inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
         
-        inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value :_*))
+        inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value*))
         
         inline def setScheduledTime(value: String): Self = StObject.set(x, "scheduledTime", value.asInstanceOf[js.Any])
         
@@ -1412,7 +1093,7 @@ object Classroom {
         
         inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
         
-        inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+        inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
       }
     }
     
@@ -1535,7 +1216,7 @@ object Classroom {
         
         inline def setCourseMaterialSetsUndefined: Self = StObject.set(x, "courseMaterialSets", js.undefined)
         
-        inline def setCourseMaterialSetsVarargs(value: CourseMaterialSet*): Self = StObject.set(x, "courseMaterialSets", js.Array(value :_*))
+        inline def setCourseMaterialSetsVarargs(value: CourseMaterialSet*): Self = StObject.set(x, "courseMaterialSets", js.Array(value*))
         
         inline def setCourseState(value: String): Self = StObject.set(x, "courseState", value.asInstanceOf[js.Any])
         
@@ -1670,7 +1351,7 @@ object Classroom {
         
         inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
         
-        inline def setMaterialsVarargs(value: CourseMaterial*): Self = StObject.set(x, "materials", js.Array(value :_*))
+        inline def setMaterialsVarargs(value: CourseMaterial*): Self = StObject.set(x, "materials", js.Array(value*))
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -1804,7 +1485,7 @@ object Classroom {
         
         inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
         
-        inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value :_*))
+        inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value*))
         
         inline def setMaxPoints(value: Double): Self = StObject.set(x, "maxPoints", value.asInstanceOf[js.Any])
         
@@ -1860,6 +1541,105 @@ object Classroom {
         inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
         
         inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+      }
+    }
+    
+    trait CourseWorkMaterial extends StObject {
+      
+      var alternateLink: js.UndefOr[String] = js.undefined
+      
+      var assigneeMode: js.UndefOr[String] = js.undefined
+      
+      var courseId: js.UndefOr[String] = js.undefined
+      
+      var creationTime: js.UndefOr[String] = js.undefined
+      
+      var creatorUserId: js.UndefOr[String] = js.undefined
+      
+      var description: js.UndefOr[String] = js.undefined
+      
+      var id: js.UndefOr[String] = js.undefined
+      
+      var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.undefined
+      
+      var materials: js.UndefOr[js.Array[Material]] = js.undefined
+      
+      var scheduledTime: js.UndefOr[String] = js.undefined
+      
+      var state: js.UndefOr[String] = js.undefined
+      
+      var title: js.UndefOr[String] = js.undefined
+      
+      var topicId: js.UndefOr[String] = js.undefined
+      
+      var updateTime: js.UndefOr[String] = js.undefined
+    }
+    object CourseWorkMaterial {
+      
+      inline def apply(): CourseWorkMaterial = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[CourseWorkMaterial]
+      }
+      
+      extension [Self <: CourseWorkMaterial](x: Self) {
+        
+        inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
+        
+        inline def setAlternateLinkUndefined: Self = StObject.set(x, "alternateLink", js.undefined)
+        
+        inline def setAssigneeMode(value: String): Self = StObject.set(x, "assigneeMode", value.asInstanceOf[js.Any])
+        
+        inline def setAssigneeModeUndefined: Self = StObject.set(x, "assigneeMode", js.undefined)
+        
+        inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
+        
+        inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+        
+        inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+        
+        inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+        
+        inline def setCreatorUserId(value: String): Self = StObject.set(x, "creatorUserId", value.asInstanceOf[js.Any])
+        
+        inline def setCreatorUserIdUndefined: Self = StObject.set(x, "creatorUserId", js.undefined)
+        
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        
+        inline def setIndividualStudentsOptions(value: IndividualStudentsOptions): Self = StObject.set(x, "individualStudentsOptions", value.asInstanceOf[js.Any])
+        
+        inline def setIndividualStudentsOptionsUndefined: Self = StObject.set(x, "individualStudentsOptions", js.undefined)
+        
+        inline def setMaterials(value: js.Array[Material]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
+        
+        inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
+        
+        inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value*))
+        
+        inline def setScheduledTime(value: String): Self = StObject.set(x, "scheduledTime", value.asInstanceOf[js.Any])
+        
+        inline def setScheduledTimeUndefined: Self = StObject.set(x, "scheduledTime", js.undefined)
+        
+        inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+        
+        inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+        
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        
+        inline def setTopicId(value: String): Self = StObject.set(x, "topicId", value.asInstanceOf[js.Any])
+        
+        inline def setTopicIdUndefined: Self = StObject.set(x, "topicId", js.undefined)
+        
+        inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+        
+        inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
       }
     }
     
@@ -2189,7 +1969,7 @@ object Classroom {
         
         inline def setStudentIdsUndefined: Self = StObject.set(x, "studentIds", js.undefined)
         
-        inline def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value :_*))
+        inline def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value*))
       }
     }
     
@@ -2280,7 +2060,7 @@ object Classroom {
         
         inline def setAnnouncementsUndefined: Self = StObject.set(x, "announcements", js.undefined)
         
-        inline def setAnnouncementsVarargs(value: Announcement*): Self = StObject.set(x, "announcements", js.Array(value :_*))
+        inline def setAnnouncementsVarargs(value: Announcement*): Self = StObject.set(x, "announcements", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2307,7 +2087,34 @@ object Classroom {
         
         inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
         
-        inline def setAliasesVarargs(value: CourseAlias*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+        inline def setAliasesVarargs(value: CourseAlias*): Self = StObject.set(x, "aliases", js.Array(value*))
+        
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+      }
+    }
+    
+    trait ListCourseWorkMaterialResponse extends StObject {
+      
+      var courseWorkMaterial: js.UndefOr[js.Array[CourseWorkMaterial]] = js.undefined
+      
+      var nextPageToken: js.UndefOr[String] = js.undefined
+    }
+    object ListCourseWorkMaterialResponse {
+      
+      inline def apply(): ListCourseWorkMaterialResponse = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[ListCourseWorkMaterialResponse]
+      }
+      
+      extension [Self <: ListCourseWorkMaterialResponse](x: Self) {
+        
+        inline def setCourseWorkMaterial(value: js.Array[CourseWorkMaterial]): Self = StObject.set(x, "courseWorkMaterial", value.asInstanceOf[js.Any])
+        
+        inline def setCourseWorkMaterialUndefined: Self = StObject.set(x, "courseWorkMaterial", js.undefined)
+        
+        inline def setCourseWorkMaterialVarargs(value: CourseWorkMaterial*): Self = StObject.set(x, "courseWorkMaterial", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2334,7 +2141,7 @@ object Classroom {
         
         inline def setCourseWorkUndefined: Self = StObject.set(x, "courseWork", js.undefined)
         
-        inline def setCourseWorkVarargs(value: CourseWork*): Self = StObject.set(x, "courseWork", js.Array(value :_*))
+        inline def setCourseWorkVarargs(value: CourseWork*): Self = StObject.set(x, "courseWork", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2361,7 +2168,7 @@ object Classroom {
         
         inline def setCoursesUndefined: Self = StObject.set(x, "courses", js.undefined)
         
-        inline def setCoursesVarargs(value: Course*): Self = StObject.set(x, "courses", js.Array(value :_*))
+        inline def setCoursesVarargs(value: Course*): Self = StObject.set(x, "courses", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2388,7 +2195,7 @@ object Classroom {
         
         inline def setGuardianInvitationsUndefined: Self = StObject.set(x, "guardianInvitations", js.undefined)
         
-        inline def setGuardianInvitationsVarargs(value: GuardianInvitation*): Self = StObject.set(x, "guardianInvitations", js.Array(value :_*))
+        inline def setGuardianInvitationsVarargs(value: GuardianInvitation*): Self = StObject.set(x, "guardianInvitations", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2415,7 +2222,7 @@ object Classroom {
         
         inline def setGuardiansUndefined: Self = StObject.set(x, "guardians", js.undefined)
         
-        inline def setGuardiansVarargs(value: Guardian*): Self = StObject.set(x, "guardians", js.Array(value :_*))
+        inline def setGuardiansVarargs(value: Guardian*): Self = StObject.set(x, "guardians", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2442,7 +2249,7 @@ object Classroom {
         
         inline def setInvitationsUndefined: Self = StObject.set(x, "invitations", js.undefined)
         
-        inline def setInvitationsVarargs(value: Invitation*): Self = StObject.set(x, "invitations", js.Array(value :_*))
+        inline def setInvitationsVarargs(value: Invitation*): Self = StObject.set(x, "invitations", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2473,7 +2280,7 @@ object Classroom {
         
         inline def setStudentSubmissionsUndefined: Self = StObject.set(x, "studentSubmissions", js.undefined)
         
-        inline def setStudentSubmissionsVarargs(value: StudentSubmission*): Self = StObject.set(x, "studentSubmissions", js.Array(value :_*))
+        inline def setStudentSubmissionsVarargs(value: StudentSubmission*): Self = StObject.set(x, "studentSubmissions", js.Array(value*))
       }
     }
     
@@ -2500,7 +2307,7 @@ object Classroom {
         
         inline def setStudentsUndefined: Self = StObject.set(x, "students", js.undefined)
         
-        inline def setStudentsVarargs(value: Student*): Self = StObject.set(x, "students", js.Array(value :_*))
+        inline def setStudentsVarargs(value: Student*): Self = StObject.set(x, "students", js.Array(value*))
       }
     }
     
@@ -2527,7 +2334,34 @@ object Classroom {
         
         inline def setTeachersUndefined: Self = StObject.set(x, "teachers", js.undefined)
         
-        inline def setTeachersVarargs(value: Teacher*): Self = StObject.set(x, "teachers", js.Array(value :_*))
+        inline def setTeachersVarargs(value: Teacher*): Self = StObject.set(x, "teachers", js.Array(value*))
+      }
+    }
+    
+    trait ListTopicResponse extends StObject {
+      
+      var nextPageToken: js.UndefOr[String] = js.undefined
+      
+      var topic: js.UndefOr[js.Array[Topic]] = js.undefined
+    }
+    object ListTopicResponse {
+      
+      inline def apply(): ListTopicResponse = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[ListTopicResponse]
+      }
+      
+      extension [Self <: ListTopicResponse](x: Self) {
+        
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        
+        inline def setTopic(value: js.Array[Topic]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+        
+        inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+        
+        inline def setTopicVarargs(value: Topic*): Self = StObject.set(x, "topic", js.Array(value*))
       }
     }
     
@@ -2610,7 +2444,7 @@ object Classroom {
         
         inline def setAddAttachmentsUndefined: Self = StObject.set(x, "addAttachments", js.undefined)
         
-        inline def setAddAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "addAttachments", js.Array(value :_*))
+        inline def setAddAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "addAttachments", js.Array(value*))
       }
     }
     
@@ -2658,13 +2492,13 @@ object Classroom {
         
         inline def setAddStudentIdsUndefined: Self = StObject.set(x, "addStudentIds", js.undefined)
         
-        inline def setAddStudentIdsVarargs(value: String*): Self = StObject.set(x, "addStudentIds", js.Array(value :_*))
+        inline def setAddStudentIdsVarargs(value: String*): Self = StObject.set(x, "addStudentIds", js.Array(value*))
         
         inline def setRemoveStudentIds(value: js.Array[String]): Self = StObject.set(x, "removeStudentIds", value.asInstanceOf[js.Any])
         
         inline def setRemoveStudentIdsUndefined: Self = StObject.set(x, "removeStudentIds", js.undefined)
         
-        inline def setRemoveStudentIdsVarargs(value: String*): Self = StObject.set(x, "removeStudentIds", js.Array(value :_*))
+        inline def setRemoveStudentIdsVarargs(value: String*): Self = StObject.set(x, "removeStudentIds", js.Array(value*))
       }
     }
     
@@ -2685,7 +2519,7 @@ object Classroom {
         
         inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
         
-        inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
+        inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value*))
       }
     }
     
@@ -2993,7 +2827,7 @@ object Classroom {
         
         inline def setSubmissionHistoryUndefined: Self = StObject.set(x, "submissionHistory", js.undefined)
         
-        inline def setSubmissionHistoryVarargs(value: SubmissionHistory*): Self = StObject.set(x, "submissionHistory", js.Array(value :_*))
+        inline def setSubmissionHistoryVarargs(value: SubmissionHistory*): Self = StObject.set(x, "submissionHistory", js.Array(value*))
         
         inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
         
@@ -3098,6 +2932,43 @@ object Classroom {
       }
     }
     
+    trait Topic extends StObject {
+      
+      var courseId: js.UndefOr[String] = js.undefined
+      
+      var name: js.UndefOr[String] = js.undefined
+      
+      var topicId: js.UndefOr[String] = js.undefined
+      
+      var updateTime: js.UndefOr[String] = js.undefined
+    }
+    object Topic {
+      
+      inline def apply(): Topic = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Topic]
+      }
+      
+      extension [Self <: Topic](x: Self) {
+        
+        inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
+        
+        inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+        
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        
+        inline def setTopicId(value: String): Self = StObject.set(x, "topicId", value.asInstanceOf[js.Any])
+        
+        inline def setTopicIdUndefined: Self = StObject.set(x, "topicId", js.undefined)
+        
+        inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+        
+        inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+      }
+    }
+    
     trait UserProfile extends StObject {
       
       var emailAddress: js.UndefOr[String] = js.undefined
@@ -3137,7 +3008,7 @@ object Classroom {
         
         inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
         
-        inline def setPermissionsVarargs(value: GlobalPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+        inline def setPermissionsVarargs(value: GlobalPermission*): Self = StObject.set(x, "permissions", js.Array(value*))
         
         inline def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
         

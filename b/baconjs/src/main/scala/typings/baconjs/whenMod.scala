@@ -15,27 +15,27 @@ object whenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(patterns.asInstanceOf[js.Any]).asInstanceOf[EventStream[O]]
+  inline def default[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(patterns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[EventStream[O]]
   
   inline def extractRawPatterns[O](patterns: js.Array[Pattern[O]]): js.Array[RawPattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRawPatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[RawPattern]]
   
-  inline def when[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(patterns.asInstanceOf[js.Any]).asInstanceOf[EventStream[O]]
+  inline def when[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(patterns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[EventStream[O]]
   
-  inline def whenP[O](patterns: Pattern[O]*): Property[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenP")(patterns.asInstanceOf[js.Any]).asInstanceOf[Property[O]]
+  inline def whenP[O](patterns: Pattern[O]*): Property[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenP")(patterns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Property[O]]
   
   inline def when_[O](ctor: ObservableConstructor, patterns: js.Array[Pattern[O]]): default[O] = (^.asInstanceOf[js.Dynamic].applyDynamic("when_")(ctor.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[default[O]]
   
   type AnyFunction = js.Function
   
-  type AnyObservable = default[js.Any]
+  type AnyObservable = default[Any]
   
   type AnyObservableOrSource = AnyObservable | AnySource
   
-  type AnySource = Source[js.Any, js.Any]
+  type AnySource = Source[Any, Any]
   
-  type ObservableOrSource[V] = default[V] | (Source[js.Any, V])
+  type ObservableOrSource[V] = default[V] | (Source[Any, V])
   
-  type Pattern[O] = (Pattern1[js.Any, O]) | (Pattern2[js.Any, js.Any, O]) | (Pattern3[js.Any, js.Any, js.Any, O]) | (Pattern4[js.Any, js.Any, js.Any, js.Any, O]) | (Pattern5[js.Any, js.Any, js.Any, js.Any, js.Any, O]) | (Pattern6[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, O]) | RawPattern
+  type Pattern[O] = (Pattern1[Any, O]) | (Pattern2[Any, Any, O]) | (Pattern3[Any, Any, Any, O]) | (Pattern4[Any, Any, Any, Any, O]) | (Pattern5[Any, Any, Any, Any, Any, O]) | (Pattern6[Any, Any, Any, Any, Any, Any, O]) | RawPattern
   
   type Pattern1[I1, O] = js.Tuple2[ObservableOrSource[I1], O | (js.Function1[/* a */ I1, O])]
   

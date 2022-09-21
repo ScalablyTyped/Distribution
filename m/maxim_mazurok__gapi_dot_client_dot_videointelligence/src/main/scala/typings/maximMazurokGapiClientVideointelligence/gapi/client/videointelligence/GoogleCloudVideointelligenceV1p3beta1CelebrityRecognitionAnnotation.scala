@@ -25,7 +25,7 @@ object GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation {
     
     inline def setCelebrityTracksUndefined: Self = StObject.set(x, "celebrityTracks", js.undefined)
     
-    inline def setCelebrityTracksVarargs(value: GoogleCloudVideointelligenceV1p3beta1CelebrityTrack*): Self = StObject.set(x, "celebrityTracks", js.Array(value :_*))
+    inline def setCelebrityTracksVarargs(value: GoogleCloudVideointelligenceV1p3beta1CelebrityTrack*): Self = StObject.set(x, "celebrityTracks", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

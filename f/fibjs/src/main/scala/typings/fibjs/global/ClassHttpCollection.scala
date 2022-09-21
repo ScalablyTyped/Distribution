@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_HttpCollection")
 @js.native
-class ClassHttpCollection ()
+open class ClassHttpCollection ()
   extends StObject
      with typings.fibjs.ClassHttpCollection

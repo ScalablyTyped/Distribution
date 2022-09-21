@@ -23,7 +23,7 @@ object XDiagramProvider {
     Diagram: XDiagram,
     acquire: () => Unit,
     getDiagram: () => XDiagram,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDiagram: XDiagram => Unit
   ): XDiagramProvider = {

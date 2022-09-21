@@ -39,16 +39,16 @@ trait IDate
   var maxText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Date/String) */
-  var maxValue: js.UndefOr[js.Any] = js.undefined
+  var maxValue: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var minText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Date/String) */
-  var minValue: js.UndefOr[js.Any] = js.undefined
+  var minValue: js.UndefOr[Any] = js.undefined
   
   /** [Method] Attempts to parse a given string value using a given date format. ... */
-  var safeParse: js.UndefOr[js.Any] = js.undefined
+  var safeParse: js.UndefOr[Any] = js.undefined
   
   /** [Method] Replaces any existing disabled dates with new values and refreshes the Date picker
     * @param disabledDates String[] An array of date strings (see the disabledDates config for details on supported values) used to disable a pattern of dates.
@@ -63,19 +63,19 @@ trait IDate
   /** [Method] Replaces any existing maxValue with the new value and refreshes the Date picker
     * @param value Date The maximum date that can be selected
     */
-  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Replaces any existing minValue with the new value and refreshes the Date picker
     * @param value Date The minimum date that can be selected
     */
-  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of the date field
     * @param date String/Date The date or valid date string
     * @returns Ext.form.field.Date this
     */
   @JSName("setValue")
-  var setValue_IDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setValue_IDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var showToday: js.UndefOr[Boolean] = js.undefined
@@ -134,7 +134,7 @@ object IDate {
     
     inline def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
     
-    inline def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
@@ -142,11 +142,11 @@ object IDate {
     
     inline def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
     
-    inline def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    inline def setSafeParse(value: js.Any): Self = StObject.set(x, "safeParse", value.asInstanceOf[js.Any])
+    inline def setSafeParse(value: Any): Self = StObject.set(x, "safeParse", value.asInstanceOf[js.Any])
     
     inline def setSafeParseUndefined: Self = StObject.set(x, "safeParse", js.undefined)
     
@@ -158,15 +158,15 @@ object IDate {
     
     inline def setSetDisabledDaysUndefined: Self = StObject.set(x, "setDisabledDays", js.undefined)
     
-    inline def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
+    inline def setSetMaxValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
     inline def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
-    inline def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
+    inline def setSetMinValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
     inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
-    inline def setSetValue(value: /* date */ js.UndefOr[js.Any] => IDate): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* date */ js.UndefOr[Any] => IDate): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     

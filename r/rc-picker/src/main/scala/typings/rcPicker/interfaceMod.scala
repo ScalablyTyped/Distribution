@@ -11,6 +11,7 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MutableRefObject
 import typings.react.mod.ReactNode
+import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -236,13 +237,13 @@ object interfaceMod {
       
       inline def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
       
-      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value*))
       
       inline def setShortWeekDays(value: js.Array[String]): Self = StObject.set(x, "shortWeekDays", value.asInstanceOf[js.Any])
       
       inline def setShortWeekDaysUndefined: Self = StObject.set(x, "shortWeekDays", js.undefined)
       
-      inline def setShortWeekDaysVarargs(value: String*): Self = StObject.set(x, "shortWeekDays", js.Array(value :_*))
+      inline def setShortWeekDaysVarargs(value: String*): Self = StObject.set(x, "shortWeekDays", js.Array(value*))
       
       inline def setTimeSelect(value: String): Self = StObject.set(x, "timeSelect", value.asInstanceOf[js.Any])
       
@@ -310,7 +311,7 @@ object interfaceMod {
     
     extension [Self <: PanelRefProps](x: Self) {
       
-      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       

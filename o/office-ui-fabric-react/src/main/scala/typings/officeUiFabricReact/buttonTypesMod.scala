@@ -182,12 +182,12 @@ object buttonTypesMod {
       * Any custom data the developer wishes to associate with the menu item.
       */
     @JSName("data")
-    var data_IButtonProps: js.UndefOr[js.Any] = js.undefined
+    var data_IButtonProps: js.UndefOr[Any] = js.undefined
     
     /**
       * yet unknown docs
       */
-    var defaultRender: js.UndefOr[js.Any] = js.undefined
+    var defaultRender: js.UndefOr[Any] = js.undefined
     
     /**
       * Style for the description text if applicable (for compound buttons.)
@@ -473,11 +473,11 @@ object buttonTypesMod {
       
       inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDefaultRender(value: js.Any): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
+      inline def setDefaultRender(value: Any): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
       
       inline def setDefaultRenderUndefined: Self = StObject.set(x, "defaultRender", js.undefined)
       
@@ -911,6 +911,11 @@ object buttonTypesMod {
     var splitButtonMenuButtonExpanded: js.UndefOr[IStyle] = js.undefined
     
     /**
+      * Style override for the SplitButton when only primaryButton is in a disabled state
+      */
+    var splitButtonMenuFocused: js.UndefOr[IStyle] = js.undefined
+    
+    /**
       * Style override for the SplitButton menu icon element
       */
     var splitButtonMenuIcon: js.UndefOr[IStyle] = js.undefined
@@ -1239,6 +1244,12 @@ object buttonTypesMod {
       inline def setSplitButtonMenuButtonNull: Self = StObject.set(x, "splitButtonMenuButton", null)
       
       inline def setSplitButtonMenuButtonUndefined: Self = StObject.set(x, "splitButtonMenuButton", js.undefined)
+      
+      inline def setSplitButtonMenuFocused(value: IStyle): Self = StObject.set(x, "splitButtonMenuFocused", value.asInstanceOf[js.Any])
+      
+      inline def setSplitButtonMenuFocusedNull: Self = StObject.set(x, "splitButtonMenuFocused", null)
+      
+      inline def setSplitButtonMenuFocusedUndefined: Self = StObject.set(x, "splitButtonMenuFocused", js.undefined)
       
       inline def setSplitButtonMenuIcon(value: IStyle): Self = StObject.set(x, "splitButtonMenuIcon", value.asInstanceOf[js.Any])
       

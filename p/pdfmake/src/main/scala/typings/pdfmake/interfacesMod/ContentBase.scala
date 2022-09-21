@@ -1,6 +1,5 @@
 package typings.pdfmake.interfacesMod
 
-import typings.pdfmake.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,17 +8,60 @@ trait ContentBase
   extends StObject
      with Style {
   
-  var absolutePosition: js.UndefOr[X] = js.undefined
+  /**
+    * Absolute position of the element from the top-left corner of the current page.
+    *
+    * If set, the element does not occupy any space in the normal content layout.
+    *
+    * In this case, the element is rendered above elements defined earlier in the
+    * document content, but below elements defined later.
+    */
+  var absolutePosition: js.UndefOr[Position] = js.undefined
   
+  /**
+    * Sets the headline level for the current element.
+    *
+    * This value is not currently used by pdfmake itself.
+    * It is, however, passed to the {@link TDocumentDefinitions.pageBreakBefore} callback, where you
+    * can use it to automatically insert page breaks before elements with certain headline levels.
+    */
   var headlineLevel: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Controls whether to insert a page break before or after the element.
+    *
+    * For more complex page break logic, use {@link TDocumentDefinitions.pageBreakBefore}.
+    */
   var pageBreak: js.UndefOr[PageBreak] = js.undefined
   
+  /**
+    * Sets the page orientation.
+    *
+    * Only relevant when used in combination with {@link pageBreak}.
+    */
   var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
   
-  var relativePosition: js.UndefOr[X] = js.undefined
+  /**
+    * Relative position of the element from the position it would normally be rendered in.
+    *
+    * If set, the element does not occupy any space in the normal content layout.
+    *
+    * In this case, the element is rendered above elements defined earlier in the
+    * document content, but below elements defined later.
+    */
+  var relativePosition: js.UndefOr[Position] = js.undefined
   
-  var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+  /**
+    * Style or style reference to apply.
+    */
+  var style: js.UndefOr[StyleReference] = js.undefined
+  
+  /**
+    * Controls whether the element should be kept together on the same page.
+    *
+    * Defaults to `false`.
+    */
+  var unbreakable: js.UndefOr[Boolean] = js.undefined
 }
 object ContentBase {
   
@@ -30,7 +72,7 @@ object ContentBase {
   
   extension [Self <: ContentBase](x: Self) {
     
-    inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+    inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     
     inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
     
@@ -46,14 +88,18 @@ object ContentBase {
     
     inline def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
     
-    inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+    inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
     
     inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
     
-    inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+    
+    inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+    
+    inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
   }
 }

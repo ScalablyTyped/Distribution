@@ -24,12 +24,12 @@ object Log {
     
     inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    inline def setLogVarargs(value: String*): Self = StObject.set(x, "log", js.Array(value :_*))
+    inline def setLogVarargs(value: String*): Self = StObject.set(x, "log", js.Array(value*))
     
     inline def setRequest(value: js.Array[String] | `false`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    inline def setRequestVarargs(value: String*): Self = StObject.set(x, "request", js.Array(value :_*))
+    inline def setRequestVarargs(value: String*): Self = StObject.set(x, "request", js.Array(value*))
   }
 }

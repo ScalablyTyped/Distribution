@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.GamepadSettings")
 @js.native
-class GamepadSettingsCls ()
+/**
+  * Gamepad input specific configuration settings.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html)
+  */
+open class GamepadSettingsCls ()
   extends StObject
      with typings.arcgisJsApi.esri.GamepadSettings {
   def this(properties: GamepadSettingsProperties) = this()

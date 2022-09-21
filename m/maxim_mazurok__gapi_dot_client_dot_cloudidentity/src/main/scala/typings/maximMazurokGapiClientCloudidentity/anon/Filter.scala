@@ -20,18 +20,15 @@ trait Filter extends StObject {
   var callback: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. [Resource name](https://cloud.google.com/apis/design/resource_names) of the customer. If you're using this API for your own organization, use `customers/my_customer`
-    * If you're using this API to manage another organization, use `customers/{customer_id}`, where customer_id is the customer to whom the device belongs.
+    * Optional. [Resource name](https://cloud.google.com/apis/design/resource_names) of the customer. If you're using this API for your own organization, use `customers/my_customer`
+    * If you're using this API to manage another organization, use `customers/{customer}`, where customer is the customer to whom the device belongs.
     */
   var customer: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /**
-    * Optional. Additional restrictions when fetching list of devices. For a list of search fields, refer to [Mobile device search
-    * fields](https://developers.google.com/admin-sdk/directory/v1/search-operators). Multiple search fields are separated by the space character.
-    */
+  /** Optional. Additional restrictions when fetching list of client states. */
   var filter: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -40,19 +37,19 @@ trait Filter extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Optional. Order specification for devices in the response. */
+  /** Optional. Order specification for client states in the response. */
   var orderBy: js.UndefOr[String] = js.undefined
   
-  /** Optional. The maximum number of DeviceUsers to return. If unspecified, at most 5 DeviceUsers will be returned. The maximum value is 20; values above 20 will be coerced to 20. */
-  var pageSize: js.UndefOr[Double] = js.undefined
-  
   /**
-    * Optional. A page token, received from a previous `ListDeviceUsers` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
-    * `ListBooks` must match the call that provided the page token.
+    * Optional. A page token, received from a previous `ListClientStates` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `ListClientStates` must match the call that provided the page token.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. To list all DeviceUsers, set this to "devices/-". To list all DeviceUsers owned by a device, set this to the resource name of the device. Format: devices/{device} */
+  /**
+    * Required. To list all ClientStates, set this to "devices/-/deviceUsers/-". To list all ClientStates owned by a DeviceUser, set this to the resource name of the DeviceUser.
+    * Format: devices/{device}/deviceUsers/{deviceUser}
+    */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -115,10 +112,6 @@ object Filter {
     inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
-    
-    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-    
-    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

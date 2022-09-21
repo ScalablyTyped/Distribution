@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__intl
 
-Typings are for version 1.4.8
+Typings are for version 2.4.1
 
 ## Library description:
 Internationalize JS apps. This library provides an API to format dates, numbers, and strings, including pluralization and handling translations.
@@ -10,10 +10,10 @@ Internationalize JS apps. This library provides an API to format dates, numbers,
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl |
 | Keywords           | intl, i18n, internationalization, locale, localization, globalization, react-intl, format, formatting, translate, translation |
-| # releases         | 45 |
-| # dependents       | 6 |
-| # downloads        | 3777479 |
-| # stars            | 0 |
+| # releases         | 102 |
+| # dependents       | 0.0 |
+| # downloads        | 3316944.3333333335 |
+| # stars            | 13336.0 |
 
 ## Links
 - [Homepage](https://formatjs.io)

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Validation")
 @js.native
-/* private */ class Validation ()
+/* private */ open class Validation ()
   extends StObject
      with typings.activexExcel.Excel.Validation

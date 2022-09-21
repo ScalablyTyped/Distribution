@@ -20,7 +20,7 @@ trait RegionAttachment
   
   var region: TextureRegion
   
-  var rendererObject: js.Any
+  var rendererObject: Any
   
   var rotation: Double
   
@@ -53,7 +53,7 @@ object RegionAttachment {
     offset: ArrayLike[Double],
     path: String,
     region: TextureRegion,
-    rendererObject: js.Any,
+    rendererObject: Any,
     rotation: Double,
     scaleX: Double,
     scaleY: Double,
@@ -83,7 +83,7 @@ object RegionAttachment {
     
     inline def setRegion(value: TextureRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    inline def setRendererObject(value: js.Any): Self = StObject.set(x, "rendererObject", value.asInstanceOf[js.Any])
+    inline def setRendererObject(value: Any): Self = StObject.set(x, "rendererObject", value.asInstanceOf[js.Any])
     
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

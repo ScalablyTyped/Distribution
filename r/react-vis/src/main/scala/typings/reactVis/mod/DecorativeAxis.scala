@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "DecorativeAxis")
 @js.native
-class DecorativeAxis protected () extends AbstractSeries[DecorativeAxisProps] {
+open class DecorativeAxis protected () extends AbstractSeries[DecorativeAxisProps] {
   def this(props: DecorativeAxisProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: DecorativeAxisProps, context: js.Any) = this()
+  def this(props: DecorativeAxisProps, context: Any) = this()
 }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.MobileBroadbandPinLockStateChangeTrigger")
 @js.native
 /** Constructs a MobileBroadbandPinLockStateChangeTrigger object. */
-class MobileBroadbandPinLockStateChangeTrigger ()
+open class MobileBroadbandPinLockStateChangeTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.MobileBroadbandPinLockStateChangeTrigger

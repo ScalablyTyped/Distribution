@@ -10,7 +10,7 @@ trait IgGridColumnFixingColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies whether the column can be fixed or not. If allow fixing is false, then the fixing pin will not be rendered for the column.

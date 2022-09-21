@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("promise-worker", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PromiseWorker {
     /**
@@ -47,14 +47,14 @@ object mod {
   }
   object PromiseWorker {
     
-    inline def apply(postMessage: js.Any => js.Promise[js.Any]): PromiseWorker = {
+    inline def apply(postMessage: Any => js.Promise[Any]): PromiseWorker = {
       val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction1(postMessage))
       __obj.asInstanceOf[PromiseWorker]
     }
     
     extension [Self <: PromiseWorker](x: Self) {
       
-      inline def setPostMessage(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+      inline def setPostMessage(value: Any => js.Promise[Any]): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     }
   }
 }

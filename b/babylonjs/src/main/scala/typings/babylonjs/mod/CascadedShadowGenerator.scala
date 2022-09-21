@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "CascadedShadowGenerator")
 @js.native
-class CascadedShadowGenerator protected ()
+open class CascadedShadowGenerator protected ()
   extends typings.babylonjs.legacyMod.CascadedShadowGenerator {
   /**
     * Creates a Cascaded Shadow Generator object.
@@ -66,12 +66,15 @@ object CascadedShadowGenerator {
     * @param scene The scene to create the shadow map for
     * @returns The parsed shadow generator
     */
-  inline def Parse(parsedShadowGenerator: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+  inline def Parse(parsedShadowGenerator: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
   
-  /** @hidden */
-  inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  @JSImport("babylonjs", "CascadedShadowGenerator.frustumCornersNDCSpace")
+  @JSImport("babylonjs", "CascadedShadowGenerator._FrustumCornersNDCSpace")
   @js.native
-  val frustumCornersNDCSpace: js.Any = js.native
+  val _FrustumCornersNDCSpace: Any = js.native
+  
+  /**
+    * @param _
+    * @hidden
+    */
+  inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

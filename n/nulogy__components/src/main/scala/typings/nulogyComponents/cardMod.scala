@@ -8,9 +8,9 @@ object cardMod {
   
   @JSImport("@nulogy/components/src/Card", "Card")
   @js.native
-  val Card: js.Any = js.native
+  val Card: Any = js.native
   
   @JSImport("@nulogy/components/src/Card", "CardSet")
   @js.native
-  val CardSet: js.Any = js.native
+  val CardSet: Any = js.native
 }

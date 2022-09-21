@@ -29,7 +29,7 @@ object ListMembersOutput {
     
     inline def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
     
-    inline def setMembersVarargs(value: MemberSummary*): Self = StObject.set(x, "Members", js.Array(value :_*))
+    inline def setMembersVarargs(value: MemberSummary*): Self = StObject.set(x, "Members", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object GetContainerLogResult {
     
     inline def setLogEventsUndefined: Self = StObject.set(x, "logEvents", js.undefined)
     
-    inline def setLogEventsVarargs(value: ContainerServiceLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
+    inline def setLogEventsVarargs(value: ContainerServiceLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -19,11 +19,11 @@ trait DOMCustomEvent extends StObject {
   
   val defaultPrevented: Boolean
   
-  val detail: js.Any
+  val detail: Any
   
   val eventPhase: Double
   
-  def initCustomEvent(eventType: String, canBubble: Boolean, cancelable: Boolean, detail: js.Any): Unit
+  def initCustomEvent(eventType: String, canBubble: Boolean, cancelable: Boolean, detail: Any): Unit
   
   def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit
   
@@ -52,9 +52,9 @@ object DOMCustomEvent {
     cancelable: Boolean,
     currentTarget: IEventTarget,
     defaultPrevented: Boolean,
-    detail: js.Any,
+    detail: Any,
     eventPhase: Double,
-    initCustomEvent: (String, Boolean, Boolean, js.Any) => Unit,
+    initCustomEvent: (String, Boolean, Boolean, Any) => Unit,
     initEvent: (String, Boolean, Boolean) => Unit,
     isTrusted: Boolean,
     preventDefault: () => Unit,
@@ -83,11 +83,11 @@ object DOMCustomEvent {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
-    inline def setDetail(value: js.Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
-    inline def setInitCustomEvent(value: (String, Boolean, Boolean, js.Any) => Unit): Self = StObject.set(x, "initCustomEvent", js.Any.fromFunction4(value))
+    inline def setInitCustomEvent(value: (String, Boolean, Boolean, Any) => Unit): Self = StObject.set(x, "initCustomEvent", js.Any.fromFunction4(value))
     
     inline def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
     

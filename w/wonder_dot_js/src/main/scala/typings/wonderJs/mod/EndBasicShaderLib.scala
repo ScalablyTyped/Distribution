@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "EndBasicShaderLib")
 @js.native
-class EndBasicShaderLib ()
+open class EndBasicShaderLib ()
   extends typings.wonderJs.endBasicShaderLibMod.EndBasicShaderLib
 /* static members */
 object EndBasicShaderLib {

@@ -1,5 +1,7 @@
 package typings.concurrently
 
+import typings.concurrently.completionListenerMod.SuccessCondition
+import typings.concurrently.killOthersMod.ProcessCloseCondition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,42 +9,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object concurrentlyStrings {
   
   @js.native
-  sealed trait command extends StObject
-  inline def command: command = "command".asInstanceOf[command]
+  sealed trait `Exclamationmarkcommand-$Leftcurlybracketstring Verticalline numberRightcurlybracket`
+    extends StObject
+       with SuccessCondition
+  inline def `Exclamationmarkcommand-$Leftcurlybracketstring Verticalline numberRightcurlybracket`: `Exclamationmarkcommand-$Leftcurlybracketstring Verticalline numberRightcurlybracket` = ("!command-${string | number}").asInstanceOf[`Exclamationmarkcommand-$Leftcurlybracketstring Verticalline numberRightcurlybracket`]
   
   @js.native
-  sealed trait failure extends StObject
+  sealed trait all
+    extends StObject
+       with SuccessCondition
+  inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait `command-$Leftcurlybracketstring Verticalline numberRightcurlybracket`
+    extends StObject
+       with SuccessCondition
+  inline def `command-$Leftcurlybracketstring Verticalline numberRightcurlybracket`: `command-$Leftcurlybracketstring Verticalline numberRightcurlybracket` = ("command-${string | number}").asInstanceOf[`command-$Leftcurlybracketstring Verticalline numberRightcurlybracket`]
+  
+  @js.native
+  sealed trait failure
+    extends StObject
+       with ProcessCloseCondition
   inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
-  sealed trait first extends StObject
+  sealed trait first
+    extends StObject
+       with SuccessCondition
   inline def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait index extends StObject
-  inline def index: index = "index".asInstanceOf[index]
-  
-  @js.native
-  sealed trait last extends StObject
+  sealed trait last
+    extends StObject
+       with SuccessCondition
   inline def last: last = "last".asInstanceOf[last]
   
   @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
-  
-  @js.native
-  sealed trait none extends StObject
-  inline def none: none = "none".asInstanceOf[none]
-  
-  @js.native
-  sealed trait pid extends StObject
-  inline def pid: pid = "pid".asInstanceOf[pid]
-  
-  @js.native
-  sealed trait success extends StObject
+  sealed trait success
+    extends StObject
+       with ProcessCloseCondition
   inline def success: success = "success".asInstanceOf[success]
-  
-  @js.native
-  sealed trait time extends StObject
-  inline def time: time = "time".asInstanceOf[time]
 }

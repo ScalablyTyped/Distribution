@@ -16,7 +16,7 @@ object blurPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/blurPostProcess", "BlurPostProcess")
   @js.native
-  class BlurPostProcess protected () extends PostProcess {
+  open class BlurPostProcess protected () extends PostProcess {
     /**
       * Creates a new instance BlurPostProcess
       * @param name The name of the effect.
@@ -28,7 +28,8 @@ object blurPostProcessMod {
       * @param engine The engine which the post process will be applied. (default: current engine)
       * @param reusable If the post process can be reused on the same frame. (default: false)
       * @param textureType Type of textures used when performing the post process. (default: 0)
-      * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
+      * @param defines
+      * @param _blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
       */
     def this(
       name: String,
@@ -41,13 +42,15 @@ object blurPostProcessMod {
       reusable: js.UndefOr[Boolean],
       textureType: js.UndefOr[Double],
       defines: js.UndefOr[String],
-      blockCompilation: js.UndefOr[Boolean]
+      _blockCompilation: js.UndefOr[Boolean]
     ) = this()
+    
+    /* private */ var _blockCompilation: Any = js.native
     
     /**
       * Calculates the value of a Gaussian distribution with sigma 3 at a given point.
       * @param x The point on the Gaussian distribution to sample.
-      * @return the value of the Gaussian function at x.
+      * @returns the value of the Gaussian function at x.
       */
     /* protected */ def _gaussianWeight(x: Double): Double = js.native
     
@@ -55,7 +58,7 @@ object blurPostProcessMod {
       * Generates a string that can be used as a floating point number in GLSL.
       * @param x Value to print.
       * @param decimalFigures Number of decimal places to print the number to (excluding trailing 0s).
-      * @return GLSL float string.
+      * @returns GLSL float string.
       */
     /* protected */ def _glslFloat(x: Double): String = js.native
     /* protected */ def _glslFloat(x: Double, decimalFigures: Double): String = js.native
@@ -71,13 +74,13 @@ object blurPostProcessMod {
       * want to minimize kernel changes, having gaps between physical kernels is helpful in that regard.
       * The gaps between physical kernels are compensated for in the weighting of the samples
       * @param idealKernel Ideal blur kernel.
-      * @return Nearest best kernel.
+      * @returns Nearest best kernel.
       */
     /* protected */ def _nearestBestKernel(idealKernel: Double): Double = js.native
     
     /* protected */ var _packedFloat: Boolean = js.native
     
-    /* private */ var _staticDefines: js.Any = js.native
+    /* private */ var _staticDefines: Any = js.native
     
     /* protected */ def _updateParameters(): Unit = js.native
     /* protected */ def _updateParameters(onCompiled: js.Function1[/* effect */ Effect, Unit]): Unit = js.native
@@ -86,8 +89,6 @@ object blurPostProcessMod {
       onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
     ): Unit = js.native
     /* protected */ def _updateParameters(onCompiled: Unit, onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]): Unit = js.native
-    
-    /* private */ var blockCompilation: js.Any = js.native
     
     /** The direction in which to blur the image. */
     var direction: Vector2 = js.native
@@ -102,11 +103,11 @@ object blurPostProcessMod {
     def kernel_=(v: Double): Unit = js.native
     
     /**
-      * Gets wether or not the blur is unpacking/repacking floats
+      * Gets whether or not the blur is unpacking/repacking floats
       */
     def packedFloat: Boolean = js.native
     /**
-      * Sets wether or not the blur needs to unpack/repack floats
+      * Sets whether or not the blur needs to unpack/repack floats
       */
     def packedFloat_=(v: Boolean): Unit = js.native
     
@@ -123,7 +124,7 @@ object blurPostProcessMod {
       defines: js.UndefOr[Nullable[String]],
       uniforms: js.UndefOr[Nullable[js.Array[String]]],
       samplers: js.UndefOr[Nullable[js.Array[String]]],
-      indexParameters: js.UndefOr[js.Any],
+      indexParameters: js.UndefOr[Any],
       onCompiled: js.UndefOr[js.Function1[/* effect */ Effect, Unit]],
       onError: js.UndefOr[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]
     ): Unit = js.native
@@ -135,7 +136,13 @@ object blurPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[BlurPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BlurPostProcess]]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[BlurPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BlurPostProcess]]
   }
 }

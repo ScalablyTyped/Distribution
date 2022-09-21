@@ -44,11 +44,11 @@ object Uploadbox {
     
     /** Selected FileList Object.
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -56,7 +56,7 @@ object Uploadbox {
     
     /** XHR-AJAX Object for reference.
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object BeforeSendEventArgs {
     
@@ -71,11 +71,11 @@ object Uploadbox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -83,7 +83,7 @@ object Uploadbox {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -97,15 +97,15 @@ object Uploadbox {
     
     /** To pass additional information to the server.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Selected FileList Object.
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -124,15 +124,15 @@ object Uploadbox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -191,11 +191,11 @@ object Uploadbox {
     
     /** Canceled FileList Object.
       */
-    var fileStatus: js.UndefOr[js.Any] = js.undefined
+    var fileStatus: js.UndefOr[Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -210,11 +210,11 @@ object Uploadbox {
     
     extension [Self <: CancelEventArgs](x: Self) {
       
-      inline def setFileStatus(value: js.Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
+      inline def setFileStatus(value: Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
       
       inline def setFileStatusUndefined: Self = StObject.set(x, "fileStatus", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -228,15 +228,15 @@ object Uploadbox {
     
     /** AJAX event argument for reference.
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** Uploaded file list.
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** response from the server.
       */
@@ -248,7 +248,7 @@ object Uploadbox {
     
     /** XHR-AJAX Object for reference.
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object CompleteEventArgs {
     
@@ -259,15 +259,15 @@ object Uploadbox {
     
     extension [Self <: CompleteEventArgs](x: Self) {
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -279,7 +279,7 @@ object Uploadbox {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -289,7 +289,7 @@ object Uploadbox {
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -304,7 +304,7 @@ object Uploadbox {
     
     extension [Self <: CreateEventArgs](x: Self) {
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -371,7 +371,7 @@ object Uploadbox {
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -386,7 +386,7 @@ object Uploadbox {
     
     extension [Self <: DestroyEventArgs](x: Self) {
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -498,7 +498,7 @@ object Uploadbox {
     
     /** returns the file details of the file uploaded
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -521,7 +521,7 @@ object Uploadbox {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
@@ -535,11 +535,11 @@ object Uploadbox {
     
     /** returns Selected FileList objects
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -554,11 +554,11 @@ object Uploadbox {
     
     extension [Self <: FileSelectEventArgs](x: Self) {
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -576,19 +576,19 @@ object Uploadbox {
     
     /** AJAX event argument for reference.
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** returns Selected FileList objects
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the current progress percentage.
       */
-    var percentage: js.UndefOr[js.Any] = js.undefined
+    var percentage: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -607,19 +607,19 @@ object Uploadbox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPercentage(value: js.Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
       inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
@@ -692,7 +692,7 @@ object Uploadbox {
     /** Displays the Uploadbox dialog at the given X and Y positions. X: Dialog sets the left position value. Y: Dialog sets the top position value.
       * @Default {null}
       */
-    var dialogPosition: js.UndefOr[js.Any] = js.undefined
+    var dialogPosition: js.UndefOr[Any] = js.undefined
     
     /** Property for applying the text to the Dialog title and content headers.
       * @Default {{ title: Upload Box, name: Name, size: Size, status: Status}}
@@ -753,7 +753,7 @@ object Uploadbox {
     /** Specifies the list of HTML attributes to be added to uploadbox control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Fires when the file is uploading.
       */
@@ -772,7 +772,7 @@ object Uploadbox {
     /** You can push the file to the Uploadbox in the client-side of the XHR supported browsers alone.
       * @Default {null}
       */
-    var pushFile: js.UndefOr[js.Any] = js.undefined
+    var pushFile: js.UndefOr[Any] = js.undefined
     
     /** Fires when the uploaded file is removed successfully.
       */
@@ -875,7 +875,7 @@ object Uploadbox {
       
       inline def setDialogActionUndefined: Self = StObject.set(x, "dialogAction", js.undefined)
       
-      inline def setDialogPosition(value: js.Any): Self = StObject.set(x, "dialogPosition", value.asInstanceOf[js.Any])
+      inline def setDialogPosition(value: Any): Self = StObject.set(x, "dialogPosition", value.asInstanceOf[js.Any])
       
       inline def setDialogPositionUndefined: Self = StObject.set(x, "dialogPosition", js.undefined)
       
@@ -927,7 +927,7 @@ object Uploadbox {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -943,7 +943,7 @@ object Uploadbox {
       
       inline def setMultipleFilesSelectionUndefined: Self = StObject.set(x, "multipleFilesSelection", js.undefined)
       
-      inline def setPushFile(value: js.Any): Self = StObject.set(x, "pushFile", value.asInstanceOf[js.Any])
+      inline def setPushFile(value: Any): Self = StObject.set(x, "pushFile", value.asInstanceOf[js.Any])
       
       inline def setPushFileUndefined: Self = StObject.set(x, "pushFile", js.undefined)
       
@@ -989,11 +989,11 @@ object Uploadbox {
     
     /** returns the file details of the file object
       */
-    var fileStatus: js.UndefOr[js.Any] = js.undefined
+    var fileStatus: js.UndefOr[Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1008,11 +1008,11 @@ object Uploadbox {
     
     extension [Self <: RemoveEventArgs](x: Self) {
       
-      inline def setFileStatus(value: js.Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
+      inline def setFileStatus(value: Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
       
       inline def setFileStatusUndefined: Self = StObject.set(x, "fileStatus", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1026,15 +1026,15 @@ object Uploadbox {
     
     /** AJAX event argument for reference.
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** Uploaded file list.
       */
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** response from the server.
       */
@@ -1042,7 +1042,7 @@ object Uploadbox {
     
     /** successfully uploaded files list.
       */
-    var success: js.UndefOr[js.Any] = js.undefined
+    var success: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1050,7 +1050,7 @@ object Uploadbox {
     
     /** XHR-AJAX Object for reference.
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object SuccessEventArgs {
     
@@ -1061,15 +1061,15 @@ object Uploadbox {
     
     extension [Self <: SuccessEventArgs](x: Self) {
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1077,7 +1077,7 @@ object Uploadbox {
       
       inline def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
       
-      inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
@@ -1085,7 +1085,7 @@ object Uploadbox {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }

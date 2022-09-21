@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.ReInviteUserAgentServer")
 @js.native
-class ReInviteUserAgentServer protected ()
+open class ReInviteUserAgentServer protected ()
   extends typings.sipJs.coreMod.ReInviteUserAgentServer {
   def this(
     dialog: typings.sipJs.dialogsMod.SessionDialog,

@@ -13,7 +13,7 @@ object normalizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def normalizeArgs[E /* <: ErrorLike */, P /* <: js.Object */](args: js.Array[js.Any], options: OnoOptions): Message[E, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeArgs")(args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Message[E, P]]
+  inline def normalizeArgs[E /* <: ErrorLike */, P /* <: js.Object */](args: js.Array[Any], options: OnoOptions): Message[E, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeArgs")(args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Message[E, P]]
   
   inline def normalizeOptions(): OnoOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeOptions")().asInstanceOf[OnoOptions]
   inline def normalizeOptions(options: OnoOptions): OnoOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeOptions")(options.asInstanceOf[js.Any]).asInstanceOf[OnoOptions]

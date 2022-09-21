@@ -10,10 +10,10 @@ Add source maps of multiple files, offset them and then combine them into one so
 | ------------------ | :-------------: |
 | Full name          | combine-source-map |
 | Keywords           | source, map, sourcemap, bundle, combine, cat, sourceMappingUrl, browserify |
-| # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 34529330 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6272092.666666667 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/thlorenz/combine-source-map)

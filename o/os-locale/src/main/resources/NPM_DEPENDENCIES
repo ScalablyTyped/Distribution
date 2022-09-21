@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "os-locale" : "5.0.0"
+      "os-locale" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "os-locale" : "5.0.0"
+      "os-locale" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

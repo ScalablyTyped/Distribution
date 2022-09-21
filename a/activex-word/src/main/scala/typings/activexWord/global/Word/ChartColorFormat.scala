@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartColorFormat")
 @js.native
-/* private */ class ChartColorFormat ()
+/* private */ open class ChartColorFormat ()
   extends StObject
      with typings.activexWord.Word.ChartColorFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val RGB: Double = js.native

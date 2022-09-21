@@ -11,6 +11,14 @@ sealed trait AnimationKeyInterpolation extends StObject
 object AnimationKeyInterpolation extends StObject {
   
   /**
+    * Use tangents to interpolate between start and end values.
+    */
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with AnimationKeyInterpolation
+  
+  /**
     * Do not interpolate between keys and use the start key value only. Tangents are ignored
     */
   @js.native

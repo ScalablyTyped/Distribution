@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait XboxLiveDeviceAddress extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_snapshotchanged(`type`: snapshotchanged, listener: TypedEventHandler[XboxLiveDeviceAddress, js.Any]): Unit = js.native
+  def addEventListener_snapshotchanged(`type`: snapshotchanged, listener: TypedEventHandler[XboxLiveDeviceAddress, Any]): Unit = js.native
   
   /**
     * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
@@ -52,12 +52,12 @@ trait XboxLiveDeviceAddress extends StObject {
   var networkAccessKind: XboxLiveNetworkAccessKind = js.native
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  def onsnapshotchanged(ev: js.Any & WinRTEvent[XboxLiveDeviceAddress]): Unit = js.native
+  def onsnapshotchanged(ev: Any & WinRTEvent[XboxLiveDeviceAddress]): Unit = js.native
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @JSName("onsnapshotchanged")
-  var onsnapshotchanged_Original: TypedEventHandler[XboxLiveDeviceAddress, js.Any] = js.native
+  var onsnapshotchanged_Original: TypedEventHandler[XboxLiveDeviceAddress, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_snapshotchanged(`type`: snapshotchanged, listener: TypedEventHandler[XboxLiveDeviceAddress, js.Any]): Unit = js.native
+  def removeEventListener_snapshotchanged(`type`: snapshotchanged, listener: TypedEventHandler[XboxLiveDeviceAddress, Any]): Unit = js.native
 }

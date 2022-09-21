@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PreserveFocus extends StObject {
   
-  var preserveFocus: js.UndefOr[Boolean] = js.undefined
+  val preserveFocus: js.UndefOr[Boolean] = js.undefined
   
-  var viewColumn: ViewColumn
+  val viewColumn: ViewColumn
 }
 object PreserveFocus {
   

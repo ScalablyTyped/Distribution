@@ -16,7 +16,7 @@ object getBucketReplicationCommandMod {
   
   @JSImport("@aws-sdk/client-s3-node/commands/GetBucketReplicationCommand", "GetBucketReplicationCommand")
   @js.native
-  class GetBucketReplicationCommand protected ()
+  open class GetBucketReplicationCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -33,17 +33,17 @@ object getBucketReplicationCommandMod {
     /* CompleteClass */
     override val middlewareStack: MiddlewareStack[GetBucketReplicationInput, GetBucketReplicationOutput] = js.native
     
-    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
+    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ Any = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: S3ResolvedConfiguration
     ): Handler[GetBucketReplicationInput, GetBucketReplicationOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: S3ResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetBucketReplicationInput, GetBucketReplicationOutput] = js.native
   }
 }

@@ -17,7 +17,7 @@ trait RuleAction extends StObject {
   /* private */ @JSName("Outlook.RuleAction_typekey")
   var OutlookDotRuleAction_typekey: RuleAction
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -29,7 +29,7 @@ object RuleAction {
     Class: OlObjectClass,
     Enabled: Boolean,
     OutlookDotRuleAction_typekey: RuleAction,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): RuleAction = {
     val __obj = js.Dynamic.literal(ActionType = ActionType.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object RuleAction {
     
     inline def setOutlookDotRuleAction_typekey(value: RuleAction): Self = StObject.set(x, "Outlook.RuleAction_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

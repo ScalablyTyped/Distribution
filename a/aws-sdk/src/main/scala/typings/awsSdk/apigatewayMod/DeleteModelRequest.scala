@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteModelRequest extends StObject {
   
   /**
-    * [Required] The name of the model to delete.
+    * The name of the model to delete.
     */
   var modelName: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

@@ -217,31 +217,31 @@ object mod extends Shortcut {
       
       inline def setColAlignsUndefined: Self = StObject.set(x, "colAligns", js.undefined)
       
-      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value*))
       
       inline def setColWidths(value: js.Array[Double | Null]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
       inline def setColWidthsUndefined: Self = StObject.set(x, "colWidths", js.undefined)
       
-      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value*))
       
       inline def setHead(value: js.Array[Cell]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
       inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      inline def setHeadVarargs(value: Cell*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: Cell*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def setRowAligns(value: js.Array[VerticalAlignment]): Self = StObject.set(x, "rowAligns", value.asInstanceOf[js.Any])
       
       inline def setRowAlignsUndefined: Self = StObject.set(x, "rowAligns", js.undefined)
       
-      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value :_*))
+      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value*))
       
       inline def setRowHeights(value: js.Array[Double | Null]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
       
       inline def setRowHeightsUndefined: Self = StObject.set(x, "rowHeights", js.undefined)
       
-      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
+      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value*))
       
       inline def setStyle(value: Partial[Border]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -325,23 +325,23 @@ object mod extends Shortcut {
       
       inline def setColAligns(value: js.Array[HorizontalAlignment]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
       
-      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value*))
       
       inline def setColWidths(value: js.Array[Double | Null]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
-      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value*))
       
       inline def setHead(value: js.Array[Cell]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      inline def setHeadVarargs(value: Cell*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: Cell*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def setRowAligns(value: js.Array[VerticalAlignment]): Self = StObject.set(x, "rowAligns", value.asInstanceOf[js.Any])
       
-      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value :_*))
+      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value*))
       
       inline def setRowHeights(value: js.Array[Double | Null]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
       
-      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
+      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value*))
       
       inline def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       

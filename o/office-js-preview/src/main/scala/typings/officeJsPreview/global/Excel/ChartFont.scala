@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * This object represents the font attributes (such as font name, font size, and color) for a chart object.
   *
-  * This object represents the font attributes (font name, font size, color, etc.) for a chart object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartFont")
 @js.native
-class ChartFont ()
+open class ChartFont ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartFont {
   

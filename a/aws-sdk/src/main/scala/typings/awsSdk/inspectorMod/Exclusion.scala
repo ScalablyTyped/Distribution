@@ -51,7 +51,7 @@ object Exclusion {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object Exclusion {
     
     inline def setScopes(value: ScopeList): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value*))
     
     inline def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

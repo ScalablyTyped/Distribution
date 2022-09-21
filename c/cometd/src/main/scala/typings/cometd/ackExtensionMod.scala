@@ -12,7 +12,7 @@ object ackExtensionMod {
   
   @JSImport("cometd/AckExtension", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with AckExtension {
     

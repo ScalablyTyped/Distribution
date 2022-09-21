@@ -8,7 +8,7 @@ trait MessagePayload extends StObject {
   
   var devices: js.Array[String]
   
-  var payload: js.Any
+  var payload: Any
   
   var qos: js.UndefOr[Double] = js.undefined
   
@@ -16,7 +16,7 @@ trait MessagePayload extends StObject {
 }
 object MessagePayload {
   
-  inline def apply(devices: js.Array[String], payload: js.Any, topic: String): MessagePayload = {
+  inline def apply(devices: js.Array[String], payload: Any, topic: String): MessagePayload = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePayload]
   }
@@ -25,9 +25,9 @@ object MessagePayload {
     
     inline def setDevices(value: js.Array[String]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    inline def setDevicesVarargs(value: String*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: String*): Self = StObject.set(x, "devices", js.Array(value*))
     
-    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setQos(value: Double): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     

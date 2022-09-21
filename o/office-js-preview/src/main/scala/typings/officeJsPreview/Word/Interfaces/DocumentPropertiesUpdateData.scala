@@ -8,73 +8,73 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentPropertiesUpdateData extends StObject {
   
   /**
-    *
     * Gets or sets the author of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var author: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the category of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var category: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the comments of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var comments: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the company of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var company: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the format of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var format: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the keywords of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var keywords: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the manager of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var manager: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the subject of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var subject: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the title of the document.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var title: js.UndefOr[String] = js.undefined

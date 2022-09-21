@@ -35,6 +35,7 @@ object CompletionItemKind extends StObject {
     extends StObject
        with CompletionItemKind
   
+  // Values
   @js.native
   sealed trait Constant
     extends StObject
@@ -42,6 +43,11 @@ object CompletionItemKind extends StObject {
   
   @js.native
   sealed trait Constructor
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait Destructor
     extends StObject
        with CompletionItemKind
   
@@ -55,6 +61,7 @@ object CompletionItemKind extends StObject {
     extends StObject
        with CompletionItemKind
   
+  // Expressions
   @js.native
   sealed trait Expression
     extends StObject
@@ -65,8 +72,14 @@ object CompletionItemKind extends StObject {
     extends StObject
        with CompletionItemKind
   
+  // Types
   @js.native
   sealed trait Function
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait Getter
     extends StObject
        with CompletionItemKind
   
@@ -101,7 +114,22 @@ object CompletionItemKind extends StObject {
        with CompletionItemKind
   
   @js.native
+  sealed trait Setter
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
   sealed trait Statement
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait StaticMethod
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait StaticProperty
     extends StObject
        with CompletionItemKind
   
@@ -126,15 +154,123 @@ object CompletionItemKind extends StObject {
        with CompletionItemKind
   
   @js.native
+  sealed trait StylePseudoClass
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait StylePseudoElement
+    extends StObject
+       with CompletionItemKind
+  
+  // StyleSheets
+  @js.native
   sealed trait StyleRuleset
     extends StObject
        with CompletionItemKind
   
+  // Tags
   @js.native
   sealed trait Tag
     extends StObject
        with CompletionItemKind
   
+  @js.native
+  sealed trait TagAnchor
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagBody
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagContainer
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagForm
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagFormField
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagFramework
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagHead
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagHeading
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagImage
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagLink
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagListItem
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagMedia
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagMeta
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagOrderedList
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagScript
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagSection
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagStyle
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagTitle
+    extends StObject
+       with CompletionItemKind
+  
+  @js.native
+  sealed trait TagUnorderedList
+    extends StObject
+       with CompletionItemKind
+  
+  // Types
   @js.native
   sealed trait Type
     extends StObject

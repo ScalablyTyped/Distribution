@@ -12,27 +12,29 @@ object touchRecordMod {
   
   @JSImport("smooth-scrollbar/utils/touch-record", "TouchRecord")
   @js.native
-  class TouchRecord () extends StObject {
+  open class TouchRecord () extends StObject {
     
-    /* private */ var _activeTouchID: js.Any = js.native
+    /* private */ var _activeTouchID: Any = js.native
     
-    /* private */ var _add: js.Any = js.native
+    /* private */ var _add: Any = js.native
     
-    /* private */ var _delete: js.Any = js.native
+    /* private */ var _delete: Any = js.native
     
-    /* private */ var _getActiveTracker: js.Any = js.native
+    /* private */ var _getActiveTracker: Any = js.native
     
-    /* private */ var _has: js.Any = js.native
+    /* private */ var _has: Any = js.native
     
-    /* private */ val _primitiveValue: js.Any = js.native
+    /* private */ val _primitiveValue: Any = js.native
     
-    /* private */ var _renew: js.Any = js.native
+    /* private */ var _renew: Any = js.native
     
-    /* private */ var _setActiveID: js.Any = js.native
+    /* private */ var _setActiveID: Any = js.native
     
-    /* private */ var _touchList: js.Any = js.native
+    /* private */ var _touchList: Any = js.native
     
     def getDelta(): Y = js.native
+    
+    def getEasingDistance(damping: Double): Y = js.native
     
     def getVelocity(): Y = js.native
     
@@ -47,7 +49,7 @@ object touchRecordMod {
   
   @JSImport("smooth-scrollbar/utils/touch-record", "Tracker")
   @js.native
-  class Tracker protected () extends StObject {
+  open class Tracker protected () extends StObject {
     def this(touch: Touch) = this()
     
     var delta: Y = js.native
@@ -59,5 +61,7 @@ object touchRecordMod {
     var updateTime: Double = js.native
     
     var velocity: Y = js.native
+    
+    val velocityMultiplier: Double = js.native
   }
 }

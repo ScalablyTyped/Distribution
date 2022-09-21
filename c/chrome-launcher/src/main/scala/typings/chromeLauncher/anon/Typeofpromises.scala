@@ -1,33 +1,42 @@
 package typings.chromeLauncher.anon
 
 import typings.chromeLauncher.chromeLauncherStrings.buffer
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.anon.BaseEncodingOptionsflagOp
-import typings.node.anon.BaseEncodingOptionsmodeMo
-import typings.node.anon.BaseEncodingOptionswithFi
-import typings.node.anon.BaseEncodingOptionswithFiEncoding
-import typings.node.anon.BufferBytesWritten
-import typings.node.anon.BytesWritten
 import typings.node.anon.Encoding
-import typings.node.anon.EncodingFlag
-import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
-import typings.node.fsMod.BaseEncodingOptions
+import typings.node.anon.ObjectEncodingOptionsAbor
+import typings.node.anon.ObjectEncodingOptionsmode
+import typings.node.anon.ObjectEncodingOptionswith
+import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.StatOptionsbigintfalseund
+import typings.node.anon.StatOptionsbiginttrue
+import typings.node.anon.WatchOptionsencodingbuffe
+import typings.node.anon.encodingBufferEncodingfla
+import typings.node.anon.encodingnullundefinedflag
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
+import typings.node.fsMod.BigIntStats
 import typings.node.fsMod.BufferEncodingOption
-import typings.node.fsMod.Dir
-import typings.node.fsMod.Dirent
+import typings.node.fsMod.CopyOptions
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.Mode
+import typings.node.fsMod.ObjectEncodingOptions
 import typings.node.fsMod.OpenDirOptions
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.RmOptions
-import typings.node.fsMod.Stats
-import typings.node.promisesMod.FileHandle
-import typings.std.Date
-import typings.std.Uint8Array
+import typings.node.fsMod.StatOptions
+import typings.node.fsMod.TimeLike
+import typings.node.fsMod.WatchOptions
+import typings.node.fsPromisesMod.FileChangeInfo
+import typings.node.fsPromisesMod.FileHandle
+import typings.node.fsPromisesMod.FlagAndOpenMode
+import typings.node.nodeFsMod.Dir
+import typings.node.nodeFsMod.Dirent
+import typings.node.nodeFsMod.Stats
+import typings.node.nodeStreamMod.Stream
+import typings.std.AsyncIterable
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,163 +45,186 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Typeofpromises extends StObject {
   
   /**
-    * Asynchronously tests a user's permissions for the file specified by path.
-    * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
+    * Tests a user's permissions for the file or directory specified by `path`.
+    * The `mode` argument is an optional integer that specifies the accessibility
+    * checks to be performed. `mode` should be either the value `fs.constants.F_OK`or a mask consisting of the bitwise OR of any of `fs.constants.R_OK`,`fs.constants.W_OK`, and `fs.constants.X_OK`
+    * (e.g.`fs.constants.W_OK | fs.constants.R_OK`). Check `File access constants` for
+    * possible values of `mode`.
+    *
+    * If the accessibility check is successful, the promise is resolved with no
+    * value. If any of the accessibility checks fail, the promise is rejected
+    * with an [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) object. The following example checks if the file`/etc/passwd` can be read and
+    * written by the current process.
+    *
+    * ```js
+    * import { access } from 'fs/promises';
+    * import { constants } from 'fs';
+    *
+    * try {
+    *   await access('/etc/passwd', constants.R_OK | constants.W_OK);
+    *   console.log('can access');
+    * } catch {
+    *   console.error('cannot access');
+    * }
+    * ```
+    *
+    * Using `fsPromises.access()` to check for the accessibility of a file before
+    * calling `fsPromises.open()` is not recommended. Doing so introduces a race
+    * condition, since other processes may change the file's state between the two
+    * calls. Instead, user code should open/read/write the file directly and handle
+    * the error raised if the file is not accessible.
+    * @since v10.0.0
+    * @param [mode=fs.constants.F_OK]
+    * @return Fulfills with `undefined` upon success.
     */
   def access(path: PathLike): js.Promise[Unit] = js.native
   def access(path: PathLike, mode: Double): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronously append data to a file, creating the file if it does not exist.
-    * @param file A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * If a `FileHandle` is provided, the underlying file will _not_ be closed automatically.
-    * @param data The data to write. If something other than a `Buffer` or `Uint8Array` is provided, the value is coerced to a string.
-    * @param options Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
-    * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `mode` is not supplied, the default of `0o666` is used.
-    * If `mode` is a string, it is parsed as an octal integer.
-    * If `flag` is not supplied, the default of `'a'` is used.
+    * Asynchronously append data to a file, creating the file if it does not yet
+    * exist. `data` can be a string or a `Buffer`.
+    *
+    * If `options` is a string, then it specifies the `encoding`.
+    *
+    * The `mode` option only affects the newly created file. See `fs.open()` for more details.
+    *
+    * The `path` may be specified as a `FileHandle` that has been opened
+    * for appending (using `fsPromises.open()`).
+    * @since v10.0.0
+    * @param path filename or {FileHandle}
+    * @return Fulfills with `undefined` upon success.
     */
   def appendFile(path: PathLike, data: String): js.Promise[Unit] = js.native
+  def appendFile(path: PathLike, data: String, options: ObjectEncodingOptions & FlagAndOpenMode): js.Promise[Unit] = js.native
   def appendFile(path: PathLike, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-  def appendFile(path: PathLike, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-  def appendFile(path: PathLike, data: Uint8Array): js.Promise[Unit] = js.native
-  def appendFile(path: PathLike, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
-  def appendFile(path: PathLike, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  def appendFile(path: PathLike, data: js.typedarray.Uint8Array): js.Promise[Unit] = js.native
+  def appendFile(path: PathLike, data: js.typedarray.Uint8Array, options: ObjectEncodingOptions & FlagAndOpenMode): js.Promise[Unit] = js.native
+  def appendFile(path: PathLike, data: js.typedarray.Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
   def appendFile(path: FileHandle, data: String): js.Promise[Unit] = js.native
+  def appendFile(path: FileHandle, data: String, options: ObjectEncodingOptions & FlagAndOpenMode): js.Promise[Unit] = js.native
   def appendFile(path: FileHandle, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-  def appendFile(path: FileHandle, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-  def appendFile(path: FileHandle, data: Uint8Array): js.Promise[Unit] = js.native
-  def appendFile(path: FileHandle, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
-  def appendFile(path: FileHandle, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  def appendFile(path: FileHandle, data: js.typedarray.Uint8Array): js.Promise[Unit] = js.native
+  def appendFile(path: FileHandle, data: js.typedarray.Uint8Array, options: ObjectEncodingOptions & FlagAndOpenMode): js.Promise[Unit] = js.native
+  def appendFile(path: FileHandle, data: js.typedarray.Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous chmod(2) - Change permissions of a file.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
+    * Changes the permissions of a file.
+    * @since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
   def chmod(path: PathLike, mode: Mode): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous chown(2) - Change ownership of a file.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * Changes the ownership of a file.
+    * @since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
   def chown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = js.native
   
+  /* was `typeof fsConstants` */
+  val constants: Typeofconstants = js.native
+  
   /**
-    * Asynchronously copies `src` to `dest`. By default, `dest` is overwritten if it already exists.
-    * Node.js makes no guarantees about the atomicity of the copy operation.
-    * If an error occurs after the destination file has been opened for writing, Node.js will attempt
-    * to remove the destination.
-    * @param src A path to the source file.
-    * @param dest A path to the destination file.
-    * @param flags An optional integer that specifies the behavior of the copy operation. The only
-    * supported flag is `fs.constants.COPYFILE_EXCL`, which causes the copy operation to fail if
-    * `dest` already exists.
+    * Asynchronously copies `src` to `dest`. By default, `dest` is overwritten if it
+    * already exists.
+    *
+    * No guarantees are made about the atomicity of the copy operation. If an
+    * error occurs after the destination file has been opened for writing, an attempt
+    * will be made to remove the destination.
+    *
+    * ```js
+    * import { constants } from 'fs';
+    * import { copyFile } from 'fs/promises';
+    *
+    * try {
+    *   await copyFile('source.txt', 'destination.txt');
+    *   console.log('source.txt was copied to destination.txt');
+    * } catch {
+    *   console.log('The file could not be copied');
+    * }
+    *
+    * // By using COPYFILE_EXCL, the operation will fail if destination.txt exists.
+    * try {
+    *   await copyFile('source.txt', 'destination.txt', constants.COPYFILE_EXCL);
+    *   console.log('source.txt was copied to destination.txt');
+    * } catch {
+    *   console.log('The file could not be copied');
+    * }
+    * ```
+    * @since v10.0.0
+    * @param src source filename to copy
+    * @param dest destination filename of the copy operation
+    * @param [mode=0] Optional modifiers that specify the behavior of the copy operation. It is possible to create a mask consisting of the bitwise OR of two or more values (e.g.
+    * `fs.constants.COPYFILE_EXCL | fs.constants.COPYFILE_FICLONE`)
+    * @return Fulfills with `undefined` upon success.
     */
   def copyFile(src: PathLike, dest: PathLike): js.Promise[Unit] = js.native
-  def copyFile(src: PathLike, dest: PathLike, flags: Double): js.Promise[Unit] = js.native
+  def copyFile(src: PathLike, dest: PathLike, mode: Double): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous fchmod(2) - Change permissions of a file.
-    * @param handle A `FileHandle`.
-    * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
+    * Asynchronously copies the entire directory structure from `src` to `dest`,
+    * including subdirectories and files.
+    *
+    * When copying a directory to another directory, globs are not supported and
+    * behavior is similar to `cp dir1/ dir2/`.
+    * @since v16.7.0
+    * @experimental
+    * @param src source path to copy.
+    * @param dest destination path to copy to.
+    * @return Fulfills with `undefined` upon success.
     */
-  def fchmod(handle: FileHandle, mode: Mode): js.Promise[Unit] = js.native
+  def cp(source: String, destination: String): js.Promise[Unit] = js.native
+  def cp(source: String, destination: String, opts: CopyOptions): js.Promise[Unit] = js.native
+  def cp(source: String, destination: URL): js.Promise[Unit] = js.native
+  def cp(source: String, destination: URL, opts: CopyOptions): js.Promise[Unit] = js.native
+  def cp(source: URL, destination: String): js.Promise[Unit] = js.native
+  def cp(source: URL, destination: String, opts: CopyOptions): js.Promise[Unit] = js.native
+  def cp(source: URL, destination: URL): js.Promise[Unit] = js.native
+  def cp(source: URL, destination: URL, opts: CopyOptions): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous fchown(2) - Change ownership of a file.
-    * @param handle A `FileHandle`.
-    */
-  def fchown(handle: FileHandle, uid: Double, gid: Double): js.Promise[Unit] = js.native
-  
-  /**
-    * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
-    * @param handle A `FileHandle`.
-    */
-  def fdatasync(handle: FileHandle): js.Promise[Unit] = js.native
-  
-  /**
-    * Asynchronous fstat(2) - Get file status.
-    * @param handle A `FileHandle`.
-    */
-  def fstat(handle: FileHandle): js.Promise[Stats] = js.native
-  
-  /**
-    * Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
-    * @param handle A `FileHandle`.
-    */
-  def fsync(handle: FileHandle): js.Promise[Unit] = js.native
-  
-  /**
-    * Asynchronous ftruncate(2) - Truncate a file to a specified length.
-    * @param handle A `FileHandle`.
-    * @param len If not specified, defaults to `0`.
-    */
-  def ftruncate(handle: FileHandle): js.Promise[Unit] = js.native
-  def ftruncate(handle: FileHandle, len: Double): js.Promise[Unit] = js.native
-  
-  /**
-    * Asynchronously change file timestamps of the file referenced by the supplied `FileHandle`.
-    * @param handle A `FileHandle`.
-    * @param atime The last access time. If a string is provided, it will be coerced to number.
-    * @param mtime The last modified time. If a string is provided, it will be coerced to number.
-    */
-  def futimes(handle: FileHandle, atime: String, mtime: String): js.Promise[Unit] = js.native
-  def futimes(handle: FileHandle, atime: String, mtime: Double): js.Promise[Unit] = js.native
-  def futimes(handle: FileHandle, atime: String, mtime: Date): js.Promise[Unit] = js.native
-  def futimes(handle: FileHandle, atime: Double, mtime: String): js.Promise[Unit] = js.native
-  def futimes(handle: FileHandle, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-  def futimes(handle: FileHandle, atime: Double, mtime: Date): js.Promise[Unit] = js.native
-  def futimes(handle: FileHandle, atime: Date, mtime: String): js.Promise[Unit] = js.native
-  def futimes(handle: FileHandle, atime: Date, mtime: Double): js.Promise[Unit] = js.native
-  def futimes(handle: FileHandle, atime: Date, mtime: Date): js.Promise[Unit] = js.native
-  
-  /**
-    * Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
+    * Changes the permissions on a symbolic link.
+    *
+    * This method is only implemented on macOS.
+    * @deprecated Since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
   def lchmod(path: PathLike, mode: Mode): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * Changes the ownership on a symbolic link.
+    * @since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
   def lchown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous link(2) - Create a new link (also known as a hard link) to an existing file.
-    * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * Creates a new link from the `existingPath` to the `newPath`. See the POSIX [`link(2)`](http://man7.org/linux/man-pages/man2/link.2.html) documentation for more detail.
+    * @since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
   def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * Equivalent to `fsPromises.stat()` unless `path` refers to a symbolic link,
+    * in which case the link itself is stat-ed, not the file that it refers to.
+    * Refer to the POSIX [`lstat(2)`](http://man7.org/linux/man-pages/man2/lstat.2.html) document for more detail.
+    * @since v10.0.0
+    * @return Fulfills with the {fs.Stats} object for the given symbolic link `path`.
     */
   def lstat(path: PathLike): js.Promise[Stats] = js.native
+  def lstat(path: PathLike, opts: StatOptionsbigintfalseund): js.Promise[Stats] = js.native
+  def lstat(path: PathLike, opts: StatOptionsbiginttrue): js.Promise[BigIntStats] = js.native
+  def lstat(path: PathLike, opts: StatOptions): js.Promise[Stats | BigIntStats] = js.native
   
   /**
-    * Changes the access and modification times of a file in the same way as `fsPromises.utimes()`,
-    * with the difference that if the path refers to a symbolic link, then the link is not
-    * dereferenced: instead, the timestamps of the symbolic link itself are changed.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param atime The last access time. If a string is provided, it will be coerced to number.
-    * @param mtime The last modified time. If a string is provided, it will be coerced to number.
+    * Changes the access and modification times of a file in the same way as `fsPromises.utimes()`, with the difference that if the path refers to a
+    * symbolic link, then the link is not dereferenced: instead, the timestamps of
+    * the symbolic link itself are changed.
+    * @since v14.5.0, v12.19.0
+    * @return Fulfills with `undefined` upon success.
     */
-  def lutimes(path: PathLike, atime: String, mtime: String): js.Promise[Unit] = js.native
-  def lutimes(path: PathLike, atime: String, mtime: Double): js.Promise[Unit] = js.native
-  def lutimes(path: PathLike, atime: String, mtime: Date): js.Promise[Unit] = js.native
-  def lutimes(path: PathLike, atime: Double, mtime: String): js.Promise[Unit] = js.native
-  def lutimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-  def lutimes(path: PathLike, atime: Double, mtime: Date): js.Promise[Unit] = js.native
-  def lutimes(path: PathLike, atime: Date, mtime: String): js.Promise[Unit] = js.native
-  def lutimes(path: PathLike, atime: Date, mtime: Double): js.Promise[Unit] = js.native
-  def lutimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = js.native
+  def lutimes(path: PathLike, atime: TimeLike, mtime: TimeLike): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous mkdir(2) - create a directory.
@@ -202,16 +234,47 @@ trait Typeofpromises extends StObject {
     */
   def mkdir(path: PathLike): js.Promise[Unit] = js.native
   /**
-    * Asynchronous mkdir(2) - create a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
-    * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
+    * Asynchronously creates a directory.
+    *
+    * The optional `options` argument can be an integer specifying `mode` (permission
+    * and sticky bits), or an object with a `mode` property and a `recursive`property indicating whether parent directories should be created. Calling`fsPromises.mkdir()` when `path` is a directory
+    * that exists results in a
+    * rejection only when `recursive` is false.
+    * @since v10.0.0
+    * @return Upon success, fulfills with `undefined` if `recursive` is `false`, or the first directory path created if `recursive` is `true`.
     */
-  def mkdir(path: PathLike, options: MakeDirectoryOptionsrecur): js.Promise[String] = js.native
+  def mkdir(path: PathLike, options: MakeDirectoryOptionsrecur): js.Promise[js.UndefOr[String]] = js.native
   def mkdir(path: PathLike, options: MakeDirectoryOptionsrecurMode): js.Promise[Unit] = js.native
   def mkdir(path: PathLike, options: MakeDirectoryOptions): js.Promise[js.UndefOr[String]] = js.native
   def mkdir(path: PathLike, options: Mode): js.Promise[Unit] = js.native
   
+  /**
+    * Creates a unique temporary directory. A unique directory name is generated by
+    * appending six random characters to the end of the provided `prefix`. Due to
+    * platform inconsistencies, avoid trailing `X` characters in `prefix`. Some
+    * platforms, notably the BSDs, can return more than six random characters, and
+    * replace trailing `X` characters in `prefix` with random characters.
+    *
+    * The optional `options` argument can be a string specifying an encoding, or an
+    * object with an `encoding` property specifying the character encoding to use.
+    *
+    * ```js
+    * import { mkdtemp } from 'fs/promises';
+    *
+    * try {
+    *   await mkdtemp(path.join(os.tmpdir(), 'foo-'));
+    * } catch (err) {
+    *   console.error(err);
+    * }
+    * ```
+    *
+    * The `fsPromises.mkdtemp()` method will append the six randomly selected
+    * characters directly to the `prefix` string. For instance, given a directory`/tmp`, if the intention is to create a temporary directory _within_`/tmp`, the`prefix` must end with a trailing
+    * platform-specific path separator
+    * (`require('path').sep`).
+    * @since v10.0.0
+    * @return Fulfills with a string containing the filesystem path of the newly created temporary directory.
+    */
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
@@ -219,52 +282,107 @@ trait Typeofpromises extends StObject {
     */
   def mkdtemp(prefix: String): js.Promise[String] = js.native
   def mkdtemp(prefix: String, options: BufferEncoding): js.Promise[String] = js.native
-  def mkdtemp(prefix: String, options: BaseEncodingOptions): js.Promise[String] = js.native
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def mkdtemp(prefix: String, options: BufferEncodingOption): js.Promise[Buffer] = js.native
+  def mkdtemp(prefix: String, options: ObjectEncodingOptions): js.Promise[String] = js.native
   
   /**
-    * Asynchronous open(2) - open and possibly create a file.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param mode A file mode. If a string is passed, it is parsed as an octal integer. If not
-    * supplied, defaults to `0o666`.
+    * Opens a `FileHandle`.
+    *
+    * Refer to the POSIX [`open(2)`](http://man7.org/linux/man-pages/man2/open.2.html) documentation for more detail.
+    *
+    * Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented
+    * by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains
+    * a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/using-streams).
+    * @since v10.0.0
+    * @param [flags='r'] See `support of file system `flags``.
+    * @param [mode=0o666] Sets the file mode (permission and sticky bits) if the file is created.
+    * @return Fulfills with a {FileHandle} object.
     */
+  def open(path: PathLike): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: String): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: String, mode: Mode): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: Double): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: Double, mode: Mode): js.Promise[FileHandle] = js.native
-  
-  def opendir(path: String): js.Promise[Dir] = js.native
-  def opendir(path: String, options: OpenDirOptions): js.Promise[Dir] = js.native
+  def open(path: PathLike, flags: Unit, mode: Mode): js.Promise[FileHandle] = js.native
   
   /**
-    * Asynchronously reads data from the file referenced by the supplied `FileHandle`.
-    * @param handle A `FileHandle`.
-    * @param buffer The buffer that the data will be written to.
-    * @param offset The offset in the buffer at which to start writing.
-    * @param length The number of bytes to read.
-    * @param position The offset from the beginning of the file from which data should be read. If
-    * `null`, data will be read from the current position.
+    * Asynchronously open a directory for iterative scanning. See the POSIX [`opendir(3)`](http://man7.org/linux/man-pages/man3/opendir.3.html) documentation for more detail.
+    *
+    * Creates an `fs.Dir`, which contains all further functions for reading from
+    * and cleaning up the directory.
+    *
+    * The `encoding` option sets the encoding for the `path` while opening the
+    * directory and subsequent read operations.
+    *
+    * Example using async iteration:
+    *
+    * ```js
+    * import { opendir } from 'fs/promises';
+    *
+    * try {
+    *   const dir = await opendir('./');
+    *   for await (const dirent of dir)
+    *     console.log(dirent.name);
+    * } catch (err) {
+    *   console.error(err);
+    * }
+    * ```
+    *
+    * When using the async iterator, the `fs.Dir` object will be automatically
+    * closed after the iterator exits.
+    * @since v12.12.0
+    * @return Fulfills with an {fs.Dir}.
     */
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Unit, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Unit, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Unit, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  def opendir(path: PathLike): js.Promise[Dir] = js.native
+  def opendir(path: PathLike, options: OpenDirOptions): js.Promise[Dir] = js.native
   
+  /**
+    * Asynchronously reads the entire contents of a file.
+    *
+    * If no encoding is specified (using `options.encoding`), the data is returned
+    * as a `Buffer` object. Otherwise, the data will be a string.
+    *
+    * If `options` is a string, then it specifies the encoding.
+    *
+    * When the `path` is a directory, the behavior of `fsPromises.readFile()` is
+    * platform-specific. On macOS, Linux, and Windows, the promise will be rejected
+    * with an error. On FreeBSD, a representation of the directory's contents will be
+    * returned.
+    *
+    * It is possible to abort an ongoing `readFile` using an `AbortSignal`. If a
+    * request is aborted the promise returned is rejected with an `AbortError`:
+    *
+    * ```js
+    * import { readFile } from 'fs/promises';
+    *
+    * try {
+    *   const controller = new AbortController();
+    *   const { signal } = controller;
+    *   const promise = readFile(fileName, { signal });
+    *
+    *   // Abort the request before the promise settles.
+    *   controller.abort();
+    *
+    *   await promise;
+    * } catch (err) {
+    *   // When a request is aborted - err is an AbortError
+    *   console.error(err);
+    * }
+    * ```
+    *
+    * Aborting an ongoing request does not abort individual operating
+    * system requests but rather the internal buffering `fs.readFile` performs.
+    *
+    * Any specified `FileHandle` has to support reading.
+    * @since v10.0.0
+    * @param path filename or `FileHandle`
+    * @return Fulfills with the contents of the file.
+    */
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -273,8 +391,7 @@ trait Typeofpromises extends StObject {
     * If a flag is not provided, it defaults to `'r'`.
     */
   def readFile(path: PathLike): js.Promise[Buffer] = js.native
-  def readFile(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
-  def readFile(path: PathLike, options: BaseEncodingOptionsflagOp): js.Promise[String | Buffer] = js.native
+  def readFile(path: PathLike, options: ObjectEncodingOptionsAbor): js.Promise[String | Buffer] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -282,37 +399,73 @@ trait Typeofpromises extends StObject {
     * @param options An object that may contain an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
-  def readFile(path: PathLike, options: EncodingFlag): js.Promise[String] = js.native
-  def readFile(path: PathLike, options: Flag): js.Promise[Buffer] = js.native
+  def readFile(path: PathLike, options: encodingBufferEncodingfla): js.Promise[String] = js.native
+  def readFile(path: PathLike, options: encodingnullundefinedflag): js.Promise[Buffer] = js.native
+  def readFile(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
   def readFile(path: FileHandle): js.Promise[Buffer] = js.native
+  def readFile(path: FileHandle, options: ObjectEncodingOptionsAbor): js.Promise[String | Buffer] = js.native
+  def readFile(path: FileHandle, options: encodingBufferEncodingfla): js.Promise[String] = js.native
+  def readFile(path: FileHandle, options: encodingnullundefinedflag): js.Promise[Buffer] = js.native
   def readFile(path: FileHandle, options: BufferEncoding): js.Promise[String] = js.native
-  def readFile(path: FileHandle, options: BaseEncodingOptionsflagOp): js.Promise[String | Buffer] = js.native
-  def readFile(path: FileHandle, options: EncodingFlag): js.Promise[String] = js.native
-  def readFile(path: FileHandle, options: Flag): js.Promise[Buffer] = js.native
   
+  /**
+    * Reads the contents of a directory.
+    *
+    * The optional `options` argument can be a string specifying an encoding, or an
+    * object with an `encoding` property specifying the character encoding to use for
+    * the filenames. If the `encoding` is set to `'buffer'`, the filenames returned
+    * will be passed as `Buffer` objects.
+    *
+    * If `options.withFileTypes` is set to `true`, the resolved array will contain `fs.Dirent` objects.
+    *
+    * ```js
+    * import { readdir } from 'fs/promises';
+    *
+    * try {
+    *   const files = await readdir(path);
+    *   for (const file of files)
+    *     console.log(file);
+    * } catch (err) {
+    *   console.error(err);
+    * }
+    * ```
+    * @since v10.0.0
+    * @return Fulfills with an array of the names of the files in the directory excluding `'.'` and `'..'`.
+    */
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readdir(path: PathLike): js.Promise[js.Array[String]] = js.native
-  def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = js.native
-  def readdir(path: PathLike, options: BaseEncodingOptionswithFi): js.Promise[js.Array[String]] = js.native
-  /**
-    * Asynchronous readdir(3) - read a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
-    */
-  def readdir(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Promise[js.Array[Dirent]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readdir(path: PathLike, options: Encoding): js.Promise[js.Array[Buffer]] = js.native
+  def readdir(path: PathLike, options: ObjectEncodingOptionswith): js.Promise[js.Array[String]] = js.native
+  /**
+    * Asynchronous readdir(3) - read a directory.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
+    */
+  def readdir(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Promise[js.Array[Dirent]] = js.native
+  def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = js.native
   @JSName("readdir")
   def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = js.native
   
+  /**
+    * Reads the contents of the symbolic link referred to by `path`. See the POSIX [`readlink(2)`](http://man7.org/linux/man-pages/man2/readlink.2.html) documentation for more detail. The promise is
+    * resolved with the`linkString` upon success.
+    *
+    * The optional `options` argument can be a string specifying an encoding, or an
+    * object with an `encoding` property specifying the character encoding to use for
+    * the link path returned. If the `encoding` is set to `'buffer'`, the link path
+    * returned will be passed as a `Buffer` object.
+    * @since v10.0.0
+    * @return Fulfills with the `linkString` upon success.
+    */
   /**
     * Asynchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -321,14 +474,30 @@ trait Typeofpromises extends StObject {
   def readlink(path: PathLike): js.Promise[String] = js.native
   def readlink(path: PathLike, options: String): js.Promise[String | Buffer] = js.native
   def readlink(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
-  def readlink(path: PathLike, options: BaseEncodingOptions): js.Promise[String] = js.native
   /**
     * Asynchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readlink(path: PathLike, options: BufferEncodingOption): js.Promise[Buffer] = js.native
+  def readlink(path: PathLike, options: ObjectEncodingOptions): js.Promise[String] = js.native
   
+  /**
+    * Determines the actual location of `path` using the same semantics as the`fs.realpath.native()` function.
+    *
+    * Only paths that can be converted to UTF8 strings are supported.
+    *
+    * The optional `options` argument can be a string specifying an encoding, or an
+    * object with an `encoding` property specifying the character encoding to use for
+    * the path. If the `encoding` is set to `'buffer'`, the path returned will be
+    * passed as a `Buffer` object.
+    *
+    * On Linux, when Node.js is linked against musl libc, the procfs file system must
+    * be mounted on `/proc` in order for this function to work. Glibc does not have
+    * this restriction.
+    * @since v10.0.0
+    * @return Fulfills with the resolved path upon success.
+    */
   /**
     * Asynchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -336,144 +505,255 @@ trait Typeofpromises extends StObject {
     */
   def realpath(path: PathLike): js.Promise[String] = js.native
   def realpath(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
-  def realpath(path: PathLike, options: BaseEncodingOptions): js.Promise[String] = js.native
   /**
     * Asynchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def realpath(path: PathLike, options: BufferEncodingOption): js.Promise[Buffer] = js.native
+  def realpath(path: PathLike, options: ObjectEncodingOptions): js.Promise[String] = js.native
   
   /**
-    * Asynchronous rename(2) - Change the name or location of a file or directory.
-    * @param oldPath A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
+    * Renames `oldPath` to `newPath`.
+    * @since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
   def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronously removes files and directories (modeled on the standard POSIX `rm` utility).
+    * Removes files and directories (modeled on the standard POSIX `rm` utility).
+    * @since v14.14.0
+    * @return Fulfills with `undefined` upon success.
     */
   def rm(path: PathLike): js.Promise[Unit] = js.native
   def rm(path: PathLike, options: RmOptions): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous rmdir(2) - delete a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * Removes the directory identified by `path`.
+    *
+    * Using `fsPromises.rmdir()` on a file (not a directory) results in the
+    * promise being rejected with an `ENOENT` error on Windows and an `ENOTDIR`error on POSIX.
+    *
+    * To get a behavior similar to the `rm -rf` Unix command, use `fsPromises.rm()` with options `{ recursive: true, force: true }`.
+    * @since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
   def rmdir(path: PathLike): js.Promise[Unit] = js.native
   def rmdir(path: PathLike, options: RmDirOptions): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous stat(2) - Get file status.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @since v10.0.0
+    * @return Fulfills with the {fs.Stats} object for the given `path`.
     */
   def stat(path: PathLike): js.Promise[Stats] = js.native
+  def stat(path: PathLike, opts: StatOptionsbigintfalseund): js.Promise[Stats] = js.native
+  def stat(path: PathLike, opts: StatOptionsbiginttrue): js.Promise[BigIntStats] = js.native
+  def stat(path: PathLike, opts: StatOptions): js.Promise[Stats | BigIntStats] = js.native
   
   /**
-    * Asynchronous symlink(2) - Create a new symbolic link to an existing file.
-    * @param target A path to an existing file. If a URL is provided, it must use the `file:` protocol.
-    * @param path A path to the new symlink. If a URL is provided, it must use the `file:` protocol.
-    * @param type May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
-    * When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.
+    * Creates a symbolic link.
+    *
+    * The `type` argument is only used on Windows platforms and can be one of `'dir'`,`'file'`, or `'junction'`. Windows junction points require the destination path
+    * to be absolute. When using `'junction'`, the `target` argument will
+    * automatically be normalized to absolute path.
+    * @since v10.0.0
+    * @param [type='file']
+    * @return Fulfills with `undefined` upon success.
     */
   def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = js.native
   def symlink(target: PathLike, path: PathLike, `type`: String): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous truncate(2) - Truncate a file to a specified length.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param len If not specified, defaults to `0`.
+    * Truncates (shortens or extends the length) of the content at `path` to `len`bytes.
+    * @since v10.0.0
+    * @param [len=0]
+    * @return Fulfills with `undefined` upon success.
     */
   def truncate(path: PathLike): js.Promise[Unit] = js.native
   def truncate(path: PathLike, len: Double): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * If `path` refers to a symbolic link, then the link is removed without affecting
+    * the file or directory to which that link refers. If the `path` refers to a file
+    * path that is not a symbolic link, the file is deleted. See the POSIX [`unlink(2)`](http://man7.org/linux/man-pages/man2/unlink.2.html) documentation for more detail.
+    * @since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
   def unlink(path: PathLike): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronously change file timestamps of the file referenced by the supplied path.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param atime The last access time. If a string is provided, it will be coerced to number.
-    * @param mtime The last modified time. If a string is provided, it will be coerced to number.
+    * Change the file system timestamps of the object referenced by `path`.
+    *
+    * The `atime` and `mtime` arguments follow these rules:
+    *
+    * * Values can be either numbers representing Unix epoch time, `Date`s, or a
+    * numeric string like `'123456789.0'`.
+    * * If the value can not be converted to a number, or is `NaN`, `Infinity` or`-Infinity`, an `Error` will be thrown.
+    * @since v10.0.0
+    * @return Fulfills with `undefined` upon success.
     */
-  def utimes(path: PathLike, atime: String, mtime: String): js.Promise[Unit] = js.native
-  def utimes(path: PathLike, atime: String, mtime: Double): js.Promise[Unit] = js.native
-  def utimes(path: PathLike, atime: String, mtime: Date): js.Promise[Unit] = js.native
-  def utimes(path: PathLike, atime: Double, mtime: String): js.Promise[Unit] = js.native
-  def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-  def utimes(path: PathLike, atime: Double, mtime: Date): js.Promise[Unit] = js.native
-  def utimes(path: PathLike, atime: Date, mtime: String): js.Promise[Unit] = js.native
-  def utimes(path: PathLike, atime: Date, mtime: Double): js.Promise[Unit] = js.native
-  def utimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = js.native
+  def utimes(path: PathLike, atime: TimeLike, mtime: TimeLike): js.Promise[Unit] = js.native
   
   /**
-    * Asynchronously writes `string` to the file referenced by the supplied `FileHandle`.
-    * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
-    * to be resolved (or rejected). For this scenario, `fs.createWriteStream` is strongly recommended.
-    * @param handle A `FileHandle`.
-    * @param string A string to write.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    * @param encoding The expected string encoding.
-    */
-  def write(handle: FileHandle, string: String): js.Promise[BufferBytesWritten] = js.native
-  def write(handle: FileHandle, string: String, position: Double): js.Promise[BufferBytesWritten] = js.native
-  def write(handle: FileHandle, string: String, position: Double, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
-  def write(handle: FileHandle, string: String, position: Null, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
-  def write(handle: FileHandle, string: String, position: Unit, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
-    * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
-    * to be resolved (or rejected). For this scenario, `fs.createWriteStream` is strongly recommended.
-    * @param handle A `FileHandle`.
-    * @param buffer The buffer that the data will be written to.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    */
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Unit, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
-  
-  /**
-    * Asynchronously writes data to a file, replacing the file if it already exists.
-    * It is unsafe to call `fsPromises.writeFile()` multiple times on the same file without waiting for the `Promise` to be resolved (or rejected).
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * If a `FileHandle` is provided, the underlying file will _not_ be closed automatically.
-    * @param data The data to write. If something other than a `Buffer` or `Uint8Array` is provided, the value is coerced to a string.
-    * @param options Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
+    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
     * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `mode` is not supplied, the default of `0o666` is used.
-    * If `mode` is a string, it is parsed as an octal integer.
-    * If `flag` is not supplied, the default of `'w'` is used.
+    * If `persistent` is not supplied, the default of `true` is used.
+    * If `recursive` is not supplied, the default of `false` is used.
     */
-  def writeFile(path: PathLike, data: String): js.Promise[Unit] = js.native
-  def writeFile(path: PathLike, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-  def writeFile(path: PathLike, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-  def writeFile(path: PathLike, data: Uint8Array): js.Promise[Unit] = js.native
-  def writeFile(path: PathLike, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
-  def writeFile(path: PathLike, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-  def writeFile(path: FileHandle, data: String): js.Promise[Unit] = js.native
-  def writeFile(path: FileHandle, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-  def writeFile(path: FileHandle, data: String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
-  def writeFile(path: FileHandle, data: Uint8Array): js.Promise[Unit] = js.native
-  def writeFile(path: FileHandle, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
-  def writeFile(path: FileHandle, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  def watch(filename: PathLike): AsyncIterable[FileChangeInfo[String]] = js.native
+  def watch(filename: PathLike, options: String): AsyncIterable[FileChangeInfo[Buffer | String]] = js.native
+  /**
+    * Returns an async iterator that watches for changes on `filename`, where `filename`is either a file or a directory.
+    *
+    * ```js
+    * const { watch } = require('fs/promises');
+    *
+    * const ac = new AbortController();
+    * const { signal } = ac;
+    * setTimeout(() => ac.abort(), 10000);
+    *
+    * (async () => {
+    *   try {
+    *     const watcher = watch(__filename, { signal });
+    *     for await (const event of watcher)
+    *       console.log(event);
+    *   } catch (err) {
+    *     if (err.name === 'AbortError')
+    *       return;
+    *     throw err;
+    *   }
+    * })();
+    * ```
+    *
+    * On most platforms, `'rename'` is emitted whenever a filename appears or
+    * disappears in the directory.
+    *
+    * All the `caveats` for `fs.watch()` also apply to `fsPromises.watch()`.
+    * @since v15.9.0, v14.18.0
+    * @return of objects with the properties:
+    */
+  def watch(filename: PathLike, options: WatchOptionsencodingbuffe): AsyncIterable[FileChangeInfo[Buffer]] = js.native
+  def watch(filename: PathLike, options: BufferEncoding): AsyncIterable[FileChangeInfo[String]] = js.native
+  /**
+    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+    * If `encoding` is not supplied, the default of `'utf8'` is used.
+    * If `persistent` is not supplied, the default of `true` is used.
+    * If `recursive` is not supplied, the default of `false` is used.
+    */
+  def watch(filename: PathLike, options: WatchOptions): AsyncIterable[FileChangeInfo[String]] = js.native
+  @JSName("watch")
+  def watch_buffer(filename: PathLike, options: buffer): AsyncIterable[FileChangeInfo[Buffer]] = js.native
+  
+  /**
+    * Asynchronously writes data to a file, replacing the file if it already exists.`data` can be a string, a buffer, an
+    * [AsyncIterable](https://tc39.github.io/ecma262/#sec-asynciterable-interface) or
+    * [Iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol) object.
+    *
+    * The `encoding` option is ignored if `data` is a buffer.
+    *
+    * If `options` is a string, then it specifies the encoding.
+    *
+    * The `mode` option only affects the newly created file. See `fs.open()` for more details.
+    *
+    * Any specified `FileHandle` has to support writing.
+    *
+    * It is unsafe to use `fsPromises.writeFile()` multiple times on the same file
+    * without waiting for the promise to be settled.
+    *
+    * Similarly to `fsPromises.readFile` \- `fsPromises.writeFile` is a convenience
+    * method that performs multiple `write` calls internally to write the buffer
+    * passed to it. For performance sensitive code consider using `fs.createWriteStream()` or `filehandle.createWriteStream()`.
+    *
+    * It is possible to use an `AbortSignal` to cancel an `fsPromises.writeFile()`.
+    * Cancelation is "best effort", and some amount of data is likely still
+    * to be written.
+    *
+    * ```js
+    * import { writeFile } from 'fs/promises';
+    * import { Buffer } from 'buffer';
+    *
+    * try {
+    *   const controller = new AbortController();
+    *   const { signal } = controller;
+    *   const data = new Uint8Array(Buffer.from('Hello Node.js'));
+    *   const promise = writeFile('message.txt', data, { signal });
+    *
+    *   // Abort the request before the promise settles.
+    *   controller.abort();
+    *
+    *   await promise;
+    * } catch (err) {
+    *   // When a request is aborted - err is an AbortError
+    *   console.error(err);
+    * }
+    * ```
+    *
+    * Aborting an ongoing request does not abort individual operating
+    * system requests but rather the internal buffering `fs.writeFile` performs.
+    * @since v10.0.0
+    * @param file filename or `FileHandle`
+    * @return Fulfills with `undefined` upon success.
+    */
+  def writeFile(file: PathLike, data: String): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: String, options: ObjectEncodingOptionsmode): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: js.Iterable[String | js.typedarray.ArrayBufferView]): js.Promise[Unit] = js.native
+  def writeFile(
+    file: PathLike,
+    data: js.Iterable[String | js.typedarray.ArrayBufferView],
+    options: ObjectEncodingOptionsmode
+  ): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: js.Iterable[String | js.typedarray.ArrayBufferView], options: BufferEncoding): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: js.typedarray.ArrayBufferView): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: js.typedarray.ArrayBufferView, options: ObjectEncodingOptionsmode): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: js.typedarray.ArrayBufferView, options: BufferEncoding): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: Stream): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: Stream, options: ObjectEncodingOptionsmode): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: Stream, options: BufferEncoding): js.Promise[Unit] = js.native
+  def writeFile(file: PathLike, data: AsyncIterable[String | js.typedarray.ArrayBufferView]): js.Promise[Unit] = js.native
+  def writeFile(
+    file: PathLike,
+    data: AsyncIterable[String | js.typedarray.ArrayBufferView],
+    options: ObjectEncodingOptionsmode
+  ): js.Promise[Unit] = js.native
+  def writeFile(
+    file: PathLike,
+    data: AsyncIterable[String | js.typedarray.ArrayBufferView],
+    options: BufferEncoding
+  ): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: String): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: String, options: ObjectEncodingOptionsmode): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: js.Iterable[String | js.typedarray.ArrayBufferView]): js.Promise[Unit] = js.native
+  def writeFile(
+    file: FileHandle,
+    data: js.Iterable[String | js.typedarray.ArrayBufferView],
+    options: ObjectEncodingOptionsmode
+  ): js.Promise[Unit] = js.native
+  def writeFile(
+    file: FileHandle,
+    data: js.Iterable[String | js.typedarray.ArrayBufferView],
+    options: BufferEncoding
+  ): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: js.typedarray.ArrayBufferView): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: js.typedarray.ArrayBufferView, options: ObjectEncodingOptionsmode): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: js.typedarray.ArrayBufferView, options: BufferEncoding): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: Stream): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: Stream, options: ObjectEncodingOptionsmode): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: Stream, options: BufferEncoding): js.Promise[Unit] = js.native
+  def writeFile(file: FileHandle, data: AsyncIterable[String | js.typedarray.ArrayBufferView]): js.Promise[Unit] = js.native
+  def writeFile(
+    file: FileHandle,
+    data: AsyncIterable[String | js.typedarray.ArrayBufferView],
+    options: ObjectEncodingOptionsmode
+  ): js.Promise[Unit] = js.native
+  def writeFile(
+    file: FileHandle,
+    data: AsyncIterable[String | js.typedarray.ArrayBufferView],
+    options: BufferEncoding
+  ): js.Promise[Unit] = js.native
 }

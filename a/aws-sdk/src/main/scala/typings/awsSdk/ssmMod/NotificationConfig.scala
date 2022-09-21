@@ -12,12 +12,12 @@ trait NotificationConfig extends StObject {
   var NotificationArn: js.UndefOr[typings.awsSdk.ssmMod.NotificationArn] = js.undefined
   
   /**
-    * The different events for which you can receive notifications. These events include the following: All (events), InProgress, Success, TimedOut, Cancelled, Failed. To learn more about these events, see Monitoring Systems Manager status changes using Amazon SNS notifications in the AWS Systems Manager User Guide.
+    * The different events for which you can receive notifications. To learn more about these events, see Monitoring Systems Manager status changes using Amazon SNS notifications in the Amazon Web Services Systems Manager User Guide.
     */
   var NotificationEvents: js.UndefOr[NotificationEventList] = js.undefined
   
   /**
-    * Command: Receive notification when the status of a command changes. Invocation: For commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. 
+    * The type of notification.    Command: Receive notification when the status of a command changes.    Invocation: For commands sent to multiple managed nodes, receive notification on a per-node basis when the status of a command changes.   
     */
   var NotificationType: js.UndefOr[typings.awsSdk.ssmMod.NotificationType] = js.undefined
 }
@@ -38,7 +38,7 @@ object NotificationConfig {
     
     inline def setNotificationEventsUndefined: Self = StObject.set(x, "NotificationEvents", js.undefined)
     
-    inline def setNotificationEventsVarargs(value: NotificationEvent*): Self = StObject.set(x, "NotificationEvents", js.Array(value :_*))
+    inline def setNotificationEventsVarargs(value: NotificationEvent*): Self = StObject.set(x, "NotificationEvents", js.Array(value*))
     
     inline def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     

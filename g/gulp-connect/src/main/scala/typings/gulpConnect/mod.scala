@@ -1,8 +1,12 @@
 package typings.gulpConnect
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.connect.mod.HandleFunction
 import typings.node.httpMod.Server
 import typings.node.httpsMod.ServerOptions
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +17,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def reload(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[js.Any]
+  inline def reload(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Any]
   
   inline def server(): ConnectAppOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[ConnectAppOptions]
+  inline def server(options: Unit, startedCallback: js.Function0[Any]): ConnectAppOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("server")(options.asInstanceOf[js.Any], startedCallback.asInstanceOf[js.Any])).asInstanceOf[ConnectAppOptions]
   inline def server(options: ConnectAppOptions): ConnectAppOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectAppOptions]
+  inline def server(options: ConnectAppOptions, startedCallback: js.Function0[Any]): ConnectAppOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("server")(options.asInstanceOf[js.Any], startedCallback.asInstanceOf[js.Any])).asInstanceOf[ConnectAppOptions]
   
   inline def serverClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serverClose")().asInstanceOf[Unit]
   
@@ -36,7 +42,15 @@ object mod {
       * Defaults to false. When https is just set to true, then internally
       * some defaults will be used.
       */
-    var https: js.UndefOr[Boolean | ServerOptions] = js.undefined
+    var https: js.UndefOr[
+        Boolean | (ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ])
+      ] = js.undefined
     
     /** Value to pass into the serve-static's index option. See serve-static documentation for details. Defaults to true. */
     var index: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
@@ -57,7 +71,24 @@ object mod {
     var root: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** A function to run custom initialization on the underlying http or https server */
-    var serverInit: js.UndefOr[js.Function1[/* server */ Server | typings.node.httpsMod.Server, Unit]] = js.undefined
+    var serverInit: js.UndefOr[
+        js.Function1[
+          /* server */ (Server[
+            Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+            ]
+          ]) | (typings.node.httpsMod.Server[
+            Instantiable1[/* socket */ Socket, IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              ServerResponse[typings.node.httpMod.IncomingMessage]
+            ]
+          ]), 
+          Unit
+        ]
+      ] = js.undefined
     
     /** Don't log any messages. Defaults to false. */
     var silent: js.UndefOr[Boolean] = js.undefined
@@ -83,7 +114,15 @@ object mod {
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      inline def setHttps(value: Boolean | ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(
+        value: Boolean | (ServerOptions[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[typings.node.httpMod.IncomingMessage]
+              ]
+            ])
+      ): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
       inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
@@ -91,7 +130,7 @@ object mod {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
       
       inline def setLivereload(value: Boolean | LiveReloadOptions): Self = StObject.set(x, "livereload", value.asInstanceOf[js.Any])
       
@@ -115,9 +154,23 @@ object mod {
       
       inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      inline def setRootVarargs(value: String*): Self = StObject.set(x, "root", js.Array(value :_*))
+      inline def setRootVarargs(value: String*): Self = StObject.set(x, "root", js.Array(value*))
       
-      inline def setServerInit(value: /* server */ Server | typings.node.httpsMod.Server => Unit): Self = StObject.set(x, "serverInit", js.Any.fromFunction1(value))
+      inline def setServerInit(
+        value: /* server */ (Server[
+              Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+              ]
+            ]) | (typings.node.httpsMod.Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[typings.node.httpMod.IncomingMessage]
+              ]
+            ]) => Unit
+      ): Self = StObject.set(x, "serverInit", js.Any.fromFunction1(value))
       
       inline def setServerInitUndefined: Self = StObject.set(x, "serverInit", js.undefined)
       

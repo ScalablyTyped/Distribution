@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceDetails extends StObject {
   
   /**
-    * Details on the Amazon EC2 resource.
+    * Details for the Amazon EC2 resource.
     */
   var EC2ResourceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.EC2ResourceDetails] = js.undefined
 }

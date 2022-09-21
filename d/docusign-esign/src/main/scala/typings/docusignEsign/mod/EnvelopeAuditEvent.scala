@@ -31,6 +31,6 @@ object EnvelopeAuditEvent {
     
     inline def setEventFieldsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "eventFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "eventFields", js.Array(value*))
   }
 }

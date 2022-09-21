@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video frame level annotation results for explicit content.
-  */
 trait SchemaGoogleCloudVideointelligenceV1beta2ExplicitContentFrame extends StObject {
   
   /**
     * Likelihood of the pornography content..
     */
-  var pornographyLikelihood: js.UndefOr[String] = js.undefined
+  var pornographyLikelihood: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Time-offset, relative to the beginning of the video, corresponding to the
-    * video frame for this location.
+    * Time-offset, relative to the beginning of the video, corresponding to the video frame for this location.
     */
-  var timeOffset: js.UndefOr[String] = js.undefined
+  var timeOffset: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1beta2ExplicitContentFrame {
   
@@ -31,9 +27,13 @@ object SchemaGoogleCloudVideointelligenceV1beta2ExplicitContentFrame {
     
     inline def setPornographyLikelihood(value: String): Self = StObject.set(x, "pornographyLikelihood", value.asInstanceOf[js.Any])
     
+    inline def setPornographyLikelihoodNull: Self = StObject.set(x, "pornographyLikelihood", null)
+    
     inline def setPornographyLikelihoodUndefined: Self = StObject.set(x, "pornographyLikelihood", js.undefined)
     
     inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOffsetNull: Self = StObject.set(x, "timeOffset", null)
     
     inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }

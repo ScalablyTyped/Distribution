@@ -17,10 +17,9 @@ object ratingIconMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Rating/RatingIcon", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[RatingIconProps, ComponentState, js.Any] {
+  open class default protected () extends Component[RatingIconProps, ComponentState, Any] {
     def this(props: RatingIconProps) = this()
-    def this(props: RatingIconProps, context: js.Any) = this()
+    def this(props: RatingIconProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Rating/RatingIcon", JSImport.Default)
   @js.native
@@ -29,7 +28,7 @@ object ratingIconMod extends Shortcut {
   trait RatingIconProps
     extends StObject
        with StrictRatingIconProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object RatingIconProps {
     
     inline def apply(): RatingIconProps = {
@@ -44,7 +43,7 @@ object ratingIconMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Additional classes. */
     var className: js.UndefOr[String] = js.undefined
@@ -110,7 +109,7 @@ object ratingIconMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

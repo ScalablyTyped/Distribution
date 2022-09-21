@@ -32,6 +32,6 @@ object ListViewsResponse {
     
     inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
-    inline def setViewsVarargs(value: LogView*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: LogView*): Self = StObject.set(x, "views", js.Array(value*))
   }
 }

@@ -26,7 +26,7 @@ object posedMod extends Shortcut {
   @js.native
   trait Posed
     extends StObject
-       with /* key */ StringDictionary[ComponentFactory[HTMLProps[js.Any]]] {
+       with /* key */ StringDictionary[ComponentFactory[HTMLProps[Any]]] {
     
     def apply[T](component: ComponentType[T]): ComponentFactory[T] = js.native
   }

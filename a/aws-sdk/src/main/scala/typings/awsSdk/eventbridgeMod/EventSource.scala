@@ -19,12 +19,12 @@ trait EventSource extends StObject {
   /**
     * The date and time the event source was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The date and time that the event source will expire, if the AWS account doesn't create a matching event bus for it.
+    * The date and time that the event source will expire, if the Amazon Web Services account doesn't create a matching event bus for it.
     */
-  var ExpirationTime: js.UndefOr[Timestamp] = js.undefined
+  var ExpirationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the event source.
@@ -53,11 +53,11 @@ object EventSource {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    inline def setExpirationTime(value: Timestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: js.Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     

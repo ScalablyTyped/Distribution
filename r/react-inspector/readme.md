@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-inspector
 
-Typings are for version 4.0
+Typings are for version 6.0.1
 
 ## Library description:
 Power of Browser DevTools inspectors right inside your React app
@@ -10,10 +10,10 @@ Power of Browser DevTools inspectors right inside your React app
 | ------------------ | :-------------: |
 | Full name          | react-inspector |
 | Keywords           | devtools, inspector, object, object-inspector, react, react-component, reactjs, table, table-inspector, table-view, tableview, tree, tree-view, treeview, ui, view |
-| # releases         | 10 |
-| # dependents       | 81 |
-| # downloads        | 82345471 |
-| # stars            | 4 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4599116E7 |
+| # stars            | 611.0 |
 
 ## Links
 - [Homepage](https://github.com/xyc/react-inspector)
@@ -24,7 +24,7 @@ Power of Browser DevTools inspectors right inside your React app
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -9,9 +9,9 @@ object indexNativeMod {
   
   @JSImport("rc-swipeout/lib/index.native", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.rcSwipeout.swipeoutMod.default {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
   }
   /* static members */
   object default {

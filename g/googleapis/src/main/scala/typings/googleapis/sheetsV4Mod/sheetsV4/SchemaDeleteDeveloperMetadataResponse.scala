@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response from deleting developer metadata.
-  */
 trait SchemaDeleteDeveloperMetadataResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaDeleteDeveloperMetadataResponse {
     
     inline def setDeletedDeveloperMetadataUndefined: Self = StObject.set(x, "deletedDeveloperMetadata", js.undefined)
     
-    inline def setDeletedDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "deletedDeveloperMetadata", js.Array(value :_*))
+    inline def setDeletedDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "deletedDeveloperMetadata", js.Array(value*))
   }
 }

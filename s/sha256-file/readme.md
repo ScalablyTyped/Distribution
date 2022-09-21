@@ -11,14 +11,11 @@ return an sha256sum of a given file
 | Full name          | sha256-file |
 | Keywords           | sha256, sha256sum, checksum |
 | # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 2379651 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 358679.6666666667 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/so-ta/sha256-file)
-- [Bugs](http://github.com/so-ta/sha256-file/issues)
-- [Repository](https://github.com/so-ta/sha256-file)
 - [Npm](https://www.npmjs.com/package/sha256-file)
     
 

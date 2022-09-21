@@ -11,7 +11,7 @@ object anon {
   
   trait Dict
     extends StObject
-       with /* _ */ StringDictionary[js.Any] {
+       with /* _ */ StringDictionary[Any] {
     
     var name: js.UndefOr[String] = js.undefined
   }
@@ -71,7 +71,7 @@ object anon {
       
       inline def setParts(value: js.Array[Double]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setPartsVarargs(value: Double*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: Double*): Self = StObject.set(x, "parts", js.Array(value*))
       
       inline def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
       
@@ -104,9 +104,41 @@ object anon {
     }
   }
   
+  /* Inlined std.Partial<matter-js.matter-js.Gravity> */
+  trait PartialGravity extends StObject {
+    
+    var scale: js.UndefOr[Double] = js.undefined
+    
+    var x: js.UndefOr[Double] = js.undefined
+    
+    var y: js.UndefOr[Double] = js.undefined
+  }
+  object PartialGravity {
+    
+    inline def apply(): PartialGravity = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialGravity]
+    }
+    
+    extension [Self <: PartialGravity](x: Self) {
+      
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    }
+  }
+  
   trait Uses
     extends StObject
-       with /* _ */ StringDictionary[js.Any] {
+       with /* _ */ StringDictionary[Any] {
     
     var uses: js.UndefOr[js.Array[Plugin | String]] = js.undefined
   }
@@ -123,7 +155,7 @@ object anon {
       
       inline def setUsesUndefined: Self = StObject.set(x, "uses", js.undefined)
       
-      inline def setUsesVarargs(value: (Plugin | String)*): Self = StObject.set(x, "uses", js.Array(value :_*))
+      inline def setUsesVarargs(value: (Plugin | String)*): Self = StObject.set(x, "uses", js.Array(value*))
     }
   }
   
@@ -147,6 +179,27 @@ object anon {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait X extends StObject {
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object X {
+    
+    inline def apply(x: Double, y: Double): X = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[X]
+    }
+    
+    extension [Self <: X](x: Self) {
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

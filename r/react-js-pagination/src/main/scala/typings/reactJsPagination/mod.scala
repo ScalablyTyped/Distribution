@@ -14,9 +14,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-js-pagination", JSImport.Default)
   @js.native
-  class default protected () extends ClassicComponent[ReactJsPaginationProps, ComponentState] {
+  open class default protected () extends ClassicComponent[ReactJsPaginationProps, ComponentState] {
     def this(props: ReactJsPaginationProps) = this()
-    def this(props: ReactJsPaginationProps, context: js.Any) = this()
+    def this(props: ReactJsPaginationProps, context: Any) = this()
   }
   @JSImport("react-js-pagination", JSImport.Default)
   @js.native

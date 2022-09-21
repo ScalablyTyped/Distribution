@@ -8,5 +8,5 @@ object campaignLimitsMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_CampaignLimits", "_CampaignLimits")
   @js.native
-  val CampaignLimits: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CampaignLimits: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

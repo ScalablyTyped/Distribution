@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a single followup intent in the chain.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1IntentFollowupIntentInfo extends StObject {
   
   /**
-    * The unique identifier of the followup intent. Format:
-    * `projects/&lt;Project ID&gt;/agent/intents/&lt;Intent ID&gt;`.
+    * The unique identifier of the followup intent. Format: `projects//agent/intents/`.
     */
-  var followupIntentName: js.UndefOr[String] = js.undefined
+  var followupIntentName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The unique identifier of the followup intent&#39;s parent. Format:
-    * `projects/&lt;Project ID&gt;/agent/intents/&lt;Intent ID&gt;`.
+    * The unique identifier of the followup intent's parent. Format: `projects//agent/intents/`.
     */
-  var parentFollowupIntentName: js.UndefOr[String] = js.undefined
+  var parentFollowupIntentName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentFollowupIntentInfo {
   
@@ -32,9 +27,13 @@ object SchemaGoogleCloudDialogflowV2beta1IntentFollowupIntentInfo {
     
     inline def setFollowupIntentName(value: String): Self = StObject.set(x, "followupIntentName", value.asInstanceOf[js.Any])
     
+    inline def setFollowupIntentNameNull: Self = StObject.set(x, "followupIntentName", null)
+    
     inline def setFollowupIntentNameUndefined: Self = StObject.set(x, "followupIntentName", js.undefined)
     
     inline def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
+    
+    inline def setParentFollowupIntentNameNull: Self = StObject.set(x, "parentFollowupIntentName", null)
     
     inline def setParentFollowupIntentNameUndefined: Self = StObject.set(x, "parentFollowupIntentName", js.undefined)
   }

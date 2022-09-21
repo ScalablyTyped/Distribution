@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "PositioningContainer")
 @js.native
-class PositioningContainer protected ()
+open class PositioningContainer protected ()
   extends typings.officeUiFabricReact.libPositioningContainerMod.PositioningContainer {
   def this(props: IPositioningContainerProps) = this()
 }

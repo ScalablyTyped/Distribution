@@ -47,7 +47,7 @@ object executorMod {
   
   @JSImport("@ionic/cli-framework/lib/executor", "BaseExecutor")
   @js.native
-  class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends AbstractExecutor[C, N, M, I, O] {
+  open class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends AbstractExecutor[C, N, M, I, O] {
     def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[C, N, M, I, O]) = this()
     
     val colors: Colors = js.native
@@ -94,7 +94,7 @@ object executorMod {
   
   @JSImport("@ionic/cli-framework/lib/executor", "Executor")
   @js.native
-  class Executor protected () extends BaseExecutor[
+  open class Executor protected () extends BaseExecutor[
           Command, 
           Namespace, 
           CommandMetadata[CommandMetadataInput, CommandMetadataOption], 

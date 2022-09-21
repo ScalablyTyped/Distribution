@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Error
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var error: js.UndefOr[
-    js.Function3[/* model */ this.type, /* xhr */ js.Any, /* options */ js.Object, Unit]
+    js.Function3[/* model */ this.type, /* xhr */ Any, /* options */ js.Object, Unit]
   ] = js.undefined
   
   var success: js.UndefOr[
-    js.Function3[/* model */ this.type, /* response */ js.Any, /* options */ js.Object, Unit]
+    js.Function3[/* model */ this.type, /* response */ Any, /* options */ js.Object, Unit]
   ] = js.undefined
 }
 object Error {
@@ -26,11 +26,11 @@ object Error {
   
   extension [Self <: Error](x: Self) {
     
-    inline def setError(value: (Error, /* xhr */ js.Any, /* options */ js.Object) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(value: (Error, /* xhr */ Any, /* options */ js.Object) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setSuccess(value: (Error, /* response */ js.Any, /* options */ js.Object) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+    inline def setSuccess(value: (Error, /* response */ Any, /* options */ js.Object) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }

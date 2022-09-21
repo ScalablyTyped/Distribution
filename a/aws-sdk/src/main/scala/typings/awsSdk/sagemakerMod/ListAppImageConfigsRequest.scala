@@ -9,12 +9,12 @@ trait ListAppImageConfigsRequest extends StObject {
   /**
     * A filter that returns only AppImageConfigs created on or after the specified time.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only AppImageConfigs created on or before the specified time.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of AppImageConfigs to return in the response. The default value is 10. 
@@ -24,12 +24,12 @@ trait ListAppImageConfigsRequest extends StObject {
   /**
     * A filter that returns only AppImageConfigs modified on or after the specified time.
     */
-  var ModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var ModifiedTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only AppImageConfigs modified on or before the specified time.
     */
-  var ModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var ModifiedTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only AppImageConfigs whose name contains the specified string.
@@ -60,11 +60,11 @@ object ListAppImageConfigsRequest {
   
   extension [Self <: ListAppImageConfigsRequest](x: Self) {
     
-    inline def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
@@ -72,11 +72,11 @@ object ListAppImageConfigsRequest {
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setModifiedTimeAfter(value: Timestamp): Self = StObject.set(x, "ModifiedTimeAfter", value.asInstanceOf[js.Any])
+    inline def setModifiedTimeAfter(value: js.Date): Self = StObject.set(x, "ModifiedTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setModifiedTimeAfterUndefined: Self = StObject.set(x, "ModifiedTimeAfter", js.undefined)
     
-    inline def setModifiedTimeBefore(value: Timestamp): Self = StObject.set(x, "ModifiedTimeBefore", value.asInstanceOf[js.Any])
+    inline def setModifiedTimeBefore(value: js.Date): Self = StObject.set(x, "ModifiedTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setModifiedTimeBeforeUndefined: Self = StObject.set(x, "ModifiedTimeBefore", js.undefined)
     

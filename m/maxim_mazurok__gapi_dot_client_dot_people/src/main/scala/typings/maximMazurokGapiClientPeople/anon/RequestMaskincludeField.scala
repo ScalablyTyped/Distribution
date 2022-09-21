@@ -48,7 +48,7 @@ trait RequestMaskincludeField extends StObject {
   /**
     * Required. The resource name of the person to provide information about. - To get information about the authenticated user, specify `people/me`. - To get information about a
     * google account, specify `people/{account_id}`. - To get information about a contact, specify the resource name that identifies the contact as returned by
-    * [`people.connections.list`](/people/api/rest/v1/people.connections/list).
+    * `people.connections.list`.
     */
   var resourceName: String
   
@@ -120,7 +120,7 @@ object RequestMaskincludeField {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

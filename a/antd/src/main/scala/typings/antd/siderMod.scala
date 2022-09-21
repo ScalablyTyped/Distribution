@@ -9,9 +9,10 @@ import typings.antd.antdStrings.xs
 import typings.antd.antdStrings.xxl
 import typings.react.mod.CSSProperties
 import typings.react.mod.Context
-import typings.react.mod.FC
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ object siderMod extends Shortcut {
   
   @JSImport("antd/lib/layout/Sider", JSImport.Default)
   @js.native
-  val default: FC[SiderProps] = js.native
+  val default: ForwardRefExoticComponent[SiderProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("antd/lib/layout/Sider", "SiderContext")
   @js.native
@@ -41,8 +42,6 @@ object siderMod extends Shortcut {
   
   trait SiderContextProps extends StObject {
     
-    var collapsedWidth: js.UndefOr[Double | String] = js.undefined
-    
     var siderCollapsed: js.UndefOr[Boolean] = js.undefined
   }
   object SiderContextProps {
@@ -53,10 +52,6 @@ object siderMod extends Shortcut {
     }
     
     extension [Self <: SiderContextProps](x: Self) {
-      
-      inline def setCollapsedWidth(value: Double | String): Self = StObject.set(x, "collapsedWidth", value.asInstanceOf[js.Any])
-      
-      inline def setCollapsedWidthUndefined: Self = StObject.set(x, "collapsedWidth", js.undefined)
       
       inline def setSiderCollapsed(value: Boolean): Self = StObject.set(x, "siderCollapsed", value.asInstanceOf[js.Any])
       
@@ -192,8 +187,8 @@ object siderMod extends Shortcut {
     inline def light: typings.antd.antdStrings.light = "light".asInstanceOf[typings.antd.antdStrings.light]
   }
   
-  type _To = FC[SiderProps]
+  type _To = ForwardRefExoticComponent[SiderProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `siderMod.foo` */
-  override def _to: FC[SiderProps] = default
+  override def _to: ForwardRefExoticComponent[SiderProps & RefAttributes[HTMLDivElement]] = default
 }

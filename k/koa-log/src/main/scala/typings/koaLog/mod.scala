@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(`type`: String): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(`type`: String): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-log", JSImport.Namespace)
   @js.native
@@ -39,7 +39,7 @@ object mod {
     
     inline def token(
       name: String,
-      fn: js.Function1[/* ctx */ ParameterizedContext[DefaultState, DefaultContext], String]
+      fn: js.Function1[/* ctx */ ParameterizedContext[DefaultState, DefaultContext, Any], String]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def url(ctx: BaseContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(ctx.asInstanceOf[js.Any]).asInstanceOf[String]

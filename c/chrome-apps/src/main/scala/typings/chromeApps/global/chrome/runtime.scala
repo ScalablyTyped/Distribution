@@ -446,31 +446,44 @@ object runtime {
   inline def restart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restart")().asInstanceOf[Unit]
   
   /**
+    * Restart the ChromeOS device when the app runs in kiosk mode after the
+    * given seconds. If called again before the time ends, the reboot will
+    * be delayed. If called with a value of -1, the reboot will be
+    * cancelled. It's a no-op in non-kiosk mode. It's only allowed to be
+    * called repeatedly by the first extension to invoke this API.
+    * @since Chrome 53.
+    * @param seconds
+    * @param callback
+    */
+  inline def restartAfterDelay(seconds: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restartAfterDelay")(seconds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def restartAfterDelay(seconds: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restartAfterDelay")(seconds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * Sends a single message to event listeners within your app or a different app. Similar to runtime.connect but only sends a single message, with an optional response. If sending to your extension, the runtime.onMessage event will be fired in each page, or runtime.onMessageExternal, if a different extension. Note that extensions cannot send messages to content scripts using this method.
     * @since Chrome 32.
     * @param extensionId The ID of the app to send the message to. If omitted, the message will be sent to your own app. Required if sending messages from a web page for web messaging.
     * @param [responseCallback]
     * Parameter response: The JSON response object sent by the handler of the message. If an error occurs while connecting to the extension, the callback will be called with no arguments and runtime.lastError will be set to the error message.
     */
-  inline def sendMessage(extensionId: String, message: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage(extensionId: String, message: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sendMessage(
     extensionId: String,
-    message: js.Any,
+    message: Any,
     options: Null,
-    responseCallback: js.Function1[/* response */ js.Any, Unit]
+    responseCallback: js.Function1[/* response */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sendMessage(
     extensionId: String,
-    message: js.Any,
+    message: Any,
     options: Unit,
-    responseCallback: js.Function1[/* response */ js.Any, Unit]
+    responseCallback: js.Function1[/* response */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendMessage(extensionId: String, message: js.Any, options: MessageOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage(extensionId: String, message: Any, options: MessageOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sendMessage(
     extensionId: String,
-    message: js.Any,
+    message: Any,
     options: MessageOptions,
-    responseCallback: js.Function1[/* response */ js.Any, Unit]
+    responseCallback: js.Function1[/* response */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Sends a single message to event listeners within your app or a different app. Similar to runtime.connect but only sends a single message, with an optional response.
@@ -486,16 +499,12 @@ object runtime {
     * @param [responseCallback]
     * Parameter response: The JSON response object sent by the handler of the message. If an error occurs while connecting to the extension, the callback will be called with no arguments and runtime.lastError will be set to the error message.
     */
-  inline def sendMessage(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def sendMessage(message: js.Any, options: Null, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendMessage(message: js.Any, options: Unit, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendMessage(message: js.Any, options: MessageOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendMessage(
-    message: js.Any,
-    options: MessageOptions,
-    responseCallback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendMessage(message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage(message: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sendMessage(message: Any, options: Null, responseCallback: js.Function1[/* response */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage(message: Any, options: Unit, responseCallback: js.Function1[/* response */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage(message: Any, options: MessageOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage(message: Any, options: MessageOptions, responseCallback: js.Function1[/* response */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage(message: Any, responseCallback: js.Function1[/* response */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Send a single message to a native application.
@@ -506,11 +515,7 @@ object runtime {
     * Parameter response: The response message sent by the native messaging host. If an error occurs while connecting to the native messaging host, the callback will be called with no arguments and runtime.lastError will be set to the error message.
     */
   inline def sendNativeMessage(application: String, message: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNativeMessage")(application.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendNativeMessage(
-    application: String,
-    message: js.Object,
-    responseCallback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNativeMessage")(application.asInstanceOf[js.Any], message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendNativeMessage(application: String, message: js.Object, responseCallback: js.Function1[/* response */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNativeMessage")(application.asInstanceOf[js.Any], message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the URL to be visited upon uninstallation. This may be used to clean up server-side data, do analytics, and implement surveys. Maximum 255 characters.

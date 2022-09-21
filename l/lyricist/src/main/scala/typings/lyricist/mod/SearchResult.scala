@@ -28,7 +28,7 @@ trait SearchResult extends StObject {
   
   var primary_artist: ArtistBrief
   
-  var pyongs_count: js.UndefOr[js.Any] = js.undefined
+  var pyongs_count: js.UndefOr[Any] = js.undefined
   
   var song_art_image_thumbnail_url: String
   
@@ -85,7 +85,7 @@ object SearchResult {
     
     inline def setPrimary_artist(value: ArtistBrief): Self = StObject.set(x, "primary_artist", value.asInstanceOf[js.Any])
     
-    inline def setPyongs_count(value: js.Any): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
+    inline def setPyongs_count(value: Any): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
     
     inline def setPyongs_countUndefined: Self = StObject.set(x, "pyongs_count", js.undefined)
     

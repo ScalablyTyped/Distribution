@@ -68,7 +68,7 @@ object Comment {
     
     inline def setChildren(value: js.Array[Comment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: Comment*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Comment*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

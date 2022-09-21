@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.proxy because var conflicts: $height, $scope, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.proxy")
+- typings.webix.webix.ui.proxy because var conflicts: $height, $scope, $setNode, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.proxy")
 @js.native
-class proxy ()
+open class proxy ()
   extends typings.webix.mod.ui.proxy

@@ -32,7 +32,7 @@ trait ObjectInspectorModel
     * @see XObjectInspectorModel.HandlerFactories
     * @throws com::sun::star::lang::IllegalArgumentException if the given sequence is empty.
     */
-  def createWithHandlerFactories(handlerFactories: SeqEquiv[js.Any]): Unit
+  def createWithHandlerFactories(handlerFactories: SeqEquiv[Any]): Unit
   
   /**
     * creates a default {@link ObjectInspectorModel} , using an externally provided sequence of property handler factories, and describing an {@link
@@ -48,19 +48,19 @@ trait ObjectInspectorModel
     * @throws com::sun::star::lang::IllegalArgumentException if handlerFactories is empty.
     * @throws com::sun::star::lang::IllegalArgumentException if minHelpTextLines or maxHelpTextLines are negative, or if minHelpTextLines is greater than maxHe
     */
-  def createWithHandlerFactoriesAndHelpSection(handlerFactories: SeqEquiv[js.Any], minHelpTextLines: Double, maxHelpTextLines: Double): Unit
+  def createWithHandlerFactoriesAndHelpSection(handlerFactories: SeqEquiv[Any], minHelpTextLines: Double, maxHelpTextLines: Double): Unit
 }
 object ObjectInspectorModel {
   
   inline def apply(
-    HandlerFactories: SafeArray[js.Any],
+    HandlerFactories: SafeArray[Any],
     HasHelpSection: Boolean,
     IsReadOnly: Boolean,
     MaxHelpTextLines: Double,
     MinHelpTextLines: Double,
     createDefault: () => Unit,
-    createWithHandlerFactories: SeqEquiv[js.Any] => Unit,
-    createWithHandlerFactoriesAndHelpSection: (SeqEquiv[js.Any], Double, Double) => Unit,
+    createWithHandlerFactories: SeqEquiv[Any] => Unit,
+    createWithHandlerFactoriesAndHelpSection: (SeqEquiv[Any], Double, Double) => Unit,
     describeCategories: () => SafeArray[PropertyCategoryDescriptor],
     getPropertyOrderIndex: String => Double
   ): ObjectInspectorModel = {
@@ -72,8 +72,8 @@ object ObjectInspectorModel {
     
     inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
-    inline def setCreateWithHandlerFactories(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "createWithHandlerFactories", js.Any.fromFunction1(value))
+    inline def setCreateWithHandlerFactories(value: SeqEquiv[Any] => Unit): Self = StObject.set(x, "createWithHandlerFactories", js.Any.fromFunction1(value))
     
-    inline def setCreateWithHandlerFactoriesAndHelpSection(value: (SeqEquiv[js.Any], Double, Double) => Unit): Self = StObject.set(x, "createWithHandlerFactoriesAndHelpSection", js.Any.fromFunction3(value))
+    inline def setCreateWithHandlerFactoriesAndHelpSection(value: (SeqEquiv[Any], Double, Double) => Unit): Self = StObject.set(x, "createWithHandlerFactoriesAndHelpSection", js.Any.fromFunction3(value))
   }
 }

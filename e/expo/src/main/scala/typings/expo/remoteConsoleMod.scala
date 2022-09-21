@@ -7,15 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object remoteConsoleMod {
   
-  object default {
-    
-    @JSImport("expo/build/logs/RemoteConsole", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("expo/build/logs/RemoteConsole", "default.createRemoteConsole")
-    @js.native
-    def createRemoteConsole: js.Function1[/* originalConsole */ Console, Console] = js.native
-    inline def createRemoteConsole_=(x: js.Function1[/* originalConsole */ Console, Console]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRemoteConsole")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("expo/build/logs/RemoteConsole", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def createRemoteConsole(originalConsole: Console): Console = ^.asInstanceOf[js.Dynamic].applyDynamic("createRemoteConsole")(originalConsole.asInstanceOf[js.Any]).asInstanceOf[Console]
 }

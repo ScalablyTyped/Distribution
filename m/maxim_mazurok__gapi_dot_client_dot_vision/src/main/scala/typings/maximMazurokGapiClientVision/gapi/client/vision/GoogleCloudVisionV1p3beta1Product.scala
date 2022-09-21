@@ -58,6 +58,6 @@ object GoogleCloudVisionV1p3beta1Product {
     
     inline def setProductLabelsUndefined: Self = StObject.set(x, "productLabels", js.undefined)
     
-    inline def setProductLabelsVarargs(value: GoogleCloudVisionV1p3beta1ProductKeyValue*): Self = StObject.set(x, "productLabels", js.Array(value :_*))
+    inline def setProductLabelsVarargs(value: GoogleCloudVisionV1p3beta1ProductKeyValue*): Self = StObject.set(x, "productLabels", js.Array(value*))
   }
 }

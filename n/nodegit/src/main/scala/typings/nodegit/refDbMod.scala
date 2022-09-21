@@ -9,7 +9,7 @@ object refDbMod {
   
   @JSImport("nodegit/ref-db", "Refdb")
   @js.native
-  class Refdb () extends StObject {
+  open class Refdb () extends StObject {
     
     def compress(): Double = js.native
     

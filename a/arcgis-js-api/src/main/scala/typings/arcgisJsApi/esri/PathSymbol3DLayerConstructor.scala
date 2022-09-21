@@ -17,5 +17,5 @@ trait PathSymbol3DLayerConstructor
 Instantiable0[PathSymbol3DLayer]
      with Instantiable1[/* properties */ PathSymbol3DLayerProperties, PathSymbol3DLayer] {
   
-  def fromJSON(json: js.Any): PathSymbol3DLayer = js.native
+  def fromJSON(json: Any): PathSymbol3DLayer = js.native
 }

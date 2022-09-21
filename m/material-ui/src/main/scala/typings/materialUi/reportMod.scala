@@ -10,10 +10,10 @@ object reportMod {
   
   @JSImport("material-ui/svg-icons/content/report", JSImport.Default)
   @js.native
-  class default () extends ContentReport
+  open class default () extends ContentReport
   
   @JSImport("material-ui/svg-icons/content/report", "ContentReport")
   @js.native
-  class ContentReport ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentReport ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeRemediationExecutionStatusRequest extends StObject {
   
   /**
-    * A list of AWS Config rule names.
+    * A list of Config rule names.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
-    * The maximum number of RemediationExecutionStatuses returned on each page. The default is maximum. If you specify 0, AWS Config uses the default. 
+    * The maximum number of RemediationExecutionStatuses returned on each page. The default is maximum. If you specify 0, Config uses the default. 
     */
   var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
@@ -49,6 +49,6 @@ object DescribeRemediationExecutionStatusRequest {
     
     inline def setResourceKeysUndefined: Self = StObject.set(x, "ResourceKeys", js.undefined)
     
-    inline def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value :_*))
+    inline def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value*))
   }
 }

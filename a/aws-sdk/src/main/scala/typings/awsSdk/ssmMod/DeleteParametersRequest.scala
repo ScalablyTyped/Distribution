@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersRequest extends StObject {
   
   /**
-    * The names of the parameters to delete.
+    * The names of the parameters to delete. After deleting a parameter, wait for at least 30 seconds to create a parameter with the same name.
     */
   var Names: ParameterNameList
 }
@@ -22,6 +22,6 @@ object DeleteParametersRequest {
     
     inline def setNames(value: ParameterNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: PSParameterName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: PSParameterName*): Self = StObject.set(x, "Names", js.Array(value*))
   }
 }

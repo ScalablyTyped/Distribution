@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagResourceRequest extends StObject {
   
   /**
-    * The GraphqlApi ARN.
+    * The GraphqlApi Amazon Resource Name (ARN).
     */
   var resourceArn: ResourceArn
   

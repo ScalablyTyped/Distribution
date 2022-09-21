@@ -10,10 +10,10 @@ Get url property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-url |
 | Keywords           | metascraper, url |
-| # releases         | 103 |
-| # dependents       | 19 |
-| # downloads        | 791205 |
-| # stars            | 0 |
+| # releases         | 84 |
+| # dependents       | 0.0 |
+| # downloads        | 74482.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://metascraper.js.org)

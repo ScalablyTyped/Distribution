@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was reached.
   *
-  * A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was reached.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait NamedItemCollectionLoadOptions extends StObject {
@@ -19,81 +19,82 @@ trait NamedItemCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns an object containing values and types of the named item.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var arrayValues: js.UndefOr[NamedItemArrayValuesLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the comment associated with this name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var comment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The formula of the named item. Formulas always start with an equal sign ("=").
     *
-    * For EACH ITEM in the collection: The formula of the named item. Formula always starts with a '=' sign.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var formula: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The name of the object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var scope: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.
     *
-    * For EACH ITEM in the collection: Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will return the range address.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var value: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the object is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
-    * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var worksheetOrNullObject: js.UndefOr[WorksheetLoadOptions] = js.undefined

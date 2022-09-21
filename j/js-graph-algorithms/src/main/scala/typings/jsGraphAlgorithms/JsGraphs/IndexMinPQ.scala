@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IndexMinPQ[T] extends StObject {
   
-  /* private */ var N: js.Any
+  /* private */ var N: Any
   
-  /* private */ var compare: js.Any
+  /* private */ var compare: Any
   
   def containsIndex(index: Double): Boolean
   
@@ -20,15 +20,15 @@ trait IndexMinPQ[T] extends StObject {
   
   def isEmpty(): Boolean
   
-  /* private */ var keys: js.Any
+  /* private */ var keys: Any
   
   def min(): Double
   
   def minKey(): T | Null
   
-  /* private */ var pq: js.Any
+  /* private */ var pq: Any
   
-  /* private */ var qp: js.Any
+  /* private */ var qp: Any
   
   def sink(k: Double): Unit
   
@@ -39,18 +39,18 @@ trait IndexMinPQ[T] extends StObject {
 object IndexMinPQ {
   
   inline def apply[T](
-    N: js.Any,
-    compare: js.Any,
+    N: Any,
+    compare: Any,
     containsIndex: Double => Boolean,
     decreaseKey: (Double, T) => Unit,
     delMin: () => Double,
     insert: (Double, T) => Unit,
     isEmpty: () => Boolean,
-    keys: js.Any,
+    keys: Any,
     min: () => Double,
     minKey: () => T | Null,
-    pq: js.Any,
-    qp: js.Any,
+    pq: Any,
+    qp: Any,
     sink: Double => Unit,
     size: () => Double,
     swim: Double => Unit
@@ -61,7 +61,7 @@ object IndexMinPQ {
   
   extension [Self <: IndexMinPQ[?], T](x: Self & IndexMinPQ[T]) {
     
-    inline def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setContainsIndex(value: Double => Boolean): Self = StObject.set(x, "containsIndex", js.Any.fromFunction1(value))
     
@@ -73,17 +73,17 @@ object IndexMinPQ {
     
     inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    inline def setKeys(value: js.Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setMin(value: () => Double): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
     
     inline def setMinKey(value: () => T | Null): Self = StObject.set(x, "minKey", js.Any.fromFunction0(value))
     
-    inline def setN(value: js.Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    inline def setPq(value: js.Any): Self = StObject.set(x, "pq", value.asInstanceOf[js.Any])
+    inline def setPq(value: Any): Self = StObject.set(x, "pq", value.asInstanceOf[js.Any])
     
-    inline def setQp(value: js.Any): Self = StObject.set(x, "qp", value.asInstanceOf[js.Any])
+    inline def setQp(value: Any): Self = StObject.set(x, "qp", value.asInstanceOf[js.Any])
     
     inline def setSink(value: Double => Unit): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
     

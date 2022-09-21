@@ -17,7 +17,7 @@ object ohandlerMod {
   
   @JSImport("odata/dist/types/OHandler", "OHandler")
   @js.native
-  class OHandler protected () extends StObject {
+  open class OHandler protected () extends StObject {
     def this(config: OdataConfig) = this()
     
     /**
@@ -27,8 +27,8 @@ object ohandlerMod {
       * @param query The URLSearchParams that are added to the question mark on the url.
       *              That are usually the odata queries like $filter, $top, etc...
       */
-    def batch(): js.Promise[js.Any] = js.native
-    def batch(query: OdataQuery): js.Promise[js.Any] = js.native
+    def batch(): js.Promise[Any] = js.native
+    def batch(query: OdataQuery): js.Promise[Any] = js.native
     
     var config: OdataConfig = js.native
     
@@ -58,9 +58,9 @@ object ohandlerMod {
     def get(): this.type = js.native
     def get(resource: String): this.type = js.native
     
-    /* private */ var getBody: js.Any = js.native
+    /* private */ var getBody: Any = js.native
     
-    /* private */ var getFetch: js.Any = js.native
+    /* private */ var getFetch: Any = js.native
     
     /**
       * Returns a URL based on the rootURL + the given resource
@@ -132,8 +132,8 @@ object ohandlerMod {
       *          resources are fetched, this method returns a array of array/object. If there
       *          is no content (e.g. for delete) this method returns the Response
       */
-    def query(): js.Promise[js.Any] = js.native
-    def query(query: OdataQuery): js.Promise[js.Any] = js.native
+    def query(): js.Promise[Any] = js.native
+    def query(query: OdataQuery): js.Promise[Any] = js.native
     
     /**
       * Use that method to add any kind of request (e.g. a head request) to
@@ -149,7 +149,7 @@ object ohandlerMod {
       */
     def request(req: ORequest): Unit = js.native
     
-    /* private */ var requests: js.Any = js.native
+    /* private */ var requests: Any = js.native
   }
   
   type BodyType = Blob | BufferSource | FormData | URLSearchParams | String | js.Object

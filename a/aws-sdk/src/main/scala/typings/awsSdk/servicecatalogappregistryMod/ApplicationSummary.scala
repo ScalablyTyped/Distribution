@@ -14,7 +14,7 @@ trait ApplicationSummary extends StObject {
   /**
     * The ISO-8601 formatted timestamp of the moment when the application was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the application.
@@ -29,7 +29,7 @@ trait ApplicationSummary extends StObject {
   /**
     *  The ISO-8601 formatted timestamp of the moment when the application was last updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the application. The name must be unique in the region in which you are creating the application.
@@ -49,7 +49,7 @@ object ApplicationSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
@@ -61,7 +61,7 @@ object ApplicationSummary {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     

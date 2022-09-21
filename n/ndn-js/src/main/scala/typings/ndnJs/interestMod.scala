@@ -4,7 +4,7 @@ import typings.ndnJs.blobMod.Blob
 import typings.ndnJs.dataMod.Data
 import typings.ndnJs.interestMod.DelegationSet.Delegation
 import typings.ndnJs.nameMod.Name
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object interestMod {
   
   @JSImport("ndn-js/interest", "DelegationSet")
   @js.native
-  class DelegationSet () extends StObject {
+  open class DelegationSet () extends StObject {
     
     def add(preference: Double, name: Name): Unit = js.native
     
@@ -31,7 +31,7 @@ object interestMod {
     
     @JSImport("ndn-js/interest", "DelegationSet.Delegation")
     @js.native
-    class Delegation () extends StObject {
+    open class Delegation () extends StObject {
       
       def getName(): Name = js.native
       
@@ -41,7 +41,7 @@ object interestMod {
   
   @JSImport("ndn-js/interest", "Interest")
   @js.native
-  class Interest () extends StObject {
+  open class Interest () extends StObject {
     def this(interest: Interest) = this()
     def this(name: String) = this()
     def this(name: Name) = this()

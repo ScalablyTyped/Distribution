@@ -10,15 +10,12 @@ Package implements data structures and algorithms for processing various types o
 | ------------------ | :-------------: |
 | Full name          | js-graph-algorithms |
 | Keywords           | graph, weighted graph, digraph, directed graph, connected components, strongly connected components, min cut, max flow, dijkstra, bellman-ford, minimum spanning tree, depth first search, breadth first search, directed cycles, topological sort, ford-fulkerson, prim, kruskal |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 321924 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104149.0 |
+| # stars            | 117.0 |
 
 ## Links
-- [Homepage](https://github.com/chen0040/js-graph-algorithms#readme)
-- [Bugs](https://github.com/chen0040/js-graph-algorithms/issues)
-- [Repository](https://github.com/chen0040/js-graph-algorithms)
 - [Npm](https://www.npmjs.com/package/js-graph-algorithms)
     
 

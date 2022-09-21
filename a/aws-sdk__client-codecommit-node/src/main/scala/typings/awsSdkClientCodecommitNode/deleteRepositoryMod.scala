@@ -8,5 +8,5 @@ object deleteRepositoryMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/DeleteRepository", "DeleteRepository")
   @js.native
-  val DeleteRepository: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteRepository: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

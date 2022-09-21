@@ -24,7 +24,7 @@ object Events {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addHandler(target: js.Any, eventName: String, handler: js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]): IHandlerId = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IHandlerId]
+  inline def addHandler(target: Any, eventName: String, handler: js.Function1[/* eventArg */ js.UndefOr[Any], Unit]): IHandlerId = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IHandlerId]
   inline def addHandler(
     target: DirectionsManager,
     eventName: String,
@@ -81,7 +81,7 @@ object Events {
     handler: js.Function1[/* eventArg */ js.UndefOr[IMouseEventArgs | IPrimitiveChangedEventArgs], Unit]
   ): IHandlerId = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IHandlerId]
   
-  inline def addOne(target: js.Any, eventName: String, handler: js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOne")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addOne(target: Any, eventName: String, handler: js.Function1[/* eventArg */ js.UndefOr[Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOne")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addOne(
     target: DirectionsManager,
     eventName: String,
@@ -139,9 +139,9 @@ object Events {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOne")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def addThrottledHandler(
-    target: js.Any,
+    target: Any,
     eventName: String,
-    handler: js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit],
+    handler: js.Function1[/* eventArg */ js.UndefOr[Any], Unit],
     throttleInterval: Double
   ): IHandlerId = (^.asInstanceOf[js.Dynamic].applyDynamic("addThrottledHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], throttleInterval.asInstanceOf[js.Any])).asInstanceOf[IHandlerId]
   inline def addThrottledHandler(
@@ -208,9 +208,9 @@ object Events {
     throttleInterval: Double
   ): IHandlerId = (^.asInstanceOf[js.Dynamic].applyDynamic("addThrottledHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], throttleInterval.asInstanceOf[js.Any])).asInstanceOf[IHandlerId]
   
-  inline def hasHandler(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasHandler(target: Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasHandler")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def invoke(target: js.Any, evenName: String, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(target.asInstanceOf[js.Any], evenName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def invoke(target: Any, evenName: String, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(target.asInstanceOf[js.Any], evenName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def removeHandler(handlerId: IHandlerId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHandler")(handlerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

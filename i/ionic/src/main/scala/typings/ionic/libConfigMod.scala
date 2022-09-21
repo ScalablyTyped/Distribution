@@ -22,7 +22,7 @@ object libConfigMod {
   
   @JSImport("ionic/lib/config", "Config")
   @js.native
-  class Config protected () extends IConfig {
+  open class Config protected () extends IConfig {
     def this(p: String) = this()
     def this(p: String, options: BaseConfigOptions) = this()
     

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wsStrings {
   
   @js.native
+  sealed trait arraybuffer extends StObject
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  
+  @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
   
@@ -19,6 +23,10 @@ object wsStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
+  sealed trait fragments extends StObject
+  inline def fragments: fragments = "fragments".asInstanceOf[fragments]
+  
+  @js.native
   sealed trait headers extends StObject
   inline def headers: headers = "headers".asInstanceOf[headers]
   
@@ -29,6 +37,10 @@ object wsStrings {
   @js.native
   sealed trait message extends StObject
   inline def message: message = "message".asInstanceOf[message]
+  
+  @js.native
+  sealed trait nodebuffer extends StObject
+  inline def nodebuffer: nodebuffer = "nodebuffer".asInstanceOf[nodebuffer]
   
   @js.native
   sealed trait open extends StObject

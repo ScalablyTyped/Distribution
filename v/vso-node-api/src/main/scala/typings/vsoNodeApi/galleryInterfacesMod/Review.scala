@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +51,7 @@ trait Review extends StObject {
   /**
     * Time when the review was edited/updated
     */
-  var updatedDate: Date
+  var updatedDate: js.Date
   
   /**
     * Name of the user
@@ -76,7 +75,7 @@ object Review {
     reply: ReviewReply,
     text: String,
     title: String,
-    updatedDate: Date,
+    updatedDate: js.Date,
     userDisplayName: String,
     userId: String
   ): Review = {
@@ -104,7 +103,7 @@ object Review {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
     inline def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     

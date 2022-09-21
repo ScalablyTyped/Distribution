@@ -12,7 +12,7 @@ object cardMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/card", "BasicCard")
   @js.native
-  class BasicCard protected ()
+  open class BasicCard protected ()
     extends typings.actionsOnGoogle.basicMod.BasicCard
        with _RichResponseItem {
     /** @public */
@@ -21,7 +21,7 @@ object cardMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/card", "Button")
   @js.native
-  class Button protected ()
+  open class Button protected ()
     extends typings.actionsOnGoogle.buttonMod.Button {
     /**
       * @param options Button options
@@ -32,7 +32,7 @@ object cardMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/card", "Table")
   @js.native
-  class Table protected ()
+  open class Table protected ()
     extends typings.actionsOnGoogle.tableMod.Table
        with _RichResponseItem {
     /** @public */

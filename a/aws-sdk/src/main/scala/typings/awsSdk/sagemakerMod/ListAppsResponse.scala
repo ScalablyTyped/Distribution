@@ -29,7 +29,7 @@ object ListAppsResponse {
     
     inline def setAppsUndefined: Self = StObject.set(x, "Apps", js.undefined)
     
-    inline def setAppsVarargs(value: AppDetails*): Self = StObject.set(x, "Apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: AppDetails*): Self = StObject.set(x, "Apps", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

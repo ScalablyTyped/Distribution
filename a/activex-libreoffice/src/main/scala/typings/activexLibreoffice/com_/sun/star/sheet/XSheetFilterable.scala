@@ -32,7 +32,7 @@ object XSheetFilterable {
     acquire: () => Unit,
     createFilterDescriptor: Boolean => XSheetFilterDescriptor,
     filter: XSheetFilterDescriptor => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSheetFilterable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createFilterDescriptor = js.Any.fromFunction1(createFilterDescriptor), filter = js.Any.fromFunction1(filter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

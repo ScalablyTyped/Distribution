@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Debug")
 @js.native
-class Debug ()
+open class Debug ()
   extends StObject
      with typings.typescriptServices.TypeScript.Debug
 object Debug {
@@ -16,16 +16,16 @@ object Debug {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def assert(expression: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def assert(expression: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def assert(expression: js.Any, message: String, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def assert(expression: js.Any, message: Unit, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(expression: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def assert(expression: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(expression: Any, message: String, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(expression: Any, message: Unit, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   @JSImport("typescript-services", "Debug.currentAssertionLevel")
   @js.native
-  def currentAssertionLevel: js.Any = js.native
-  inline def currentAssertionLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentAssertionLevel")(x.asInstanceOf[js.Any])
+  def currentAssertionLevel: Any = js.native
+  inline def currentAssertionLevel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentAssertionLevel")(x.asInstanceOf[js.Any])
   
   /* static member */
   inline def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]

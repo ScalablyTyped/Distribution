@@ -11,33 +11,33 @@ object choiceGroupBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroup.base", "ChoiceGroupBase")
   @js.native
-  class ChoiceGroupBase protected ()
-    extends Component[IChoiceGroupProps, IChoiceGroupState, js.Any]
+  open class ChoiceGroupBase protected ()
+    extends Component[IChoiceGroupProps, IChoiceGroupState, Any]
        with IChoiceGroup {
     def this(props: IChoiceGroupProps) = this()
     
-    /* private */ var _changeCallbacks: js.Any = js.native
+    /* private */ var _changeCallbacks: Any = js.native
     
-    /* private */ var _focusCallbacks: js.Any = js.native
+    /* private */ var _focusCallbacks: Any = js.native
     
     /**
       * Returns `selectedKey` if provided, or the key of the first option with the `checked` prop set.
       */
-    /* private */ var _getKeyChecked: js.Any = js.native
+    /* private */ var _getKeyChecked: Any = js.native
     
-    /* private */ var _getOptionId: js.Any = js.native
+    /* private */ var _getOptionId: Any = js.native
     
-    /* private */ var _getOptionLabelId: js.Any = js.native
+    /* private */ var _getOptionLabelId: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _labelId: js.Any = js.native
+    /* private */ var _labelId: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onChange: js.Any = js.native
+    /* private */ var _onChange: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MChoiceGroupBase(prevProps: IChoiceGroupProps, prevState: IChoiceGroupState): Unit = js.native

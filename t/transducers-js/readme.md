@@ -10,10 +10,10 @@ A Transducers implementation for JavaScript
 | ------------------ | :-------------: |
 | Full name          | transducers-js |
 | Keywords           | underscore, lodash, functional, util, server, client, browser |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 128644 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14481.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/cognitect-labs/transducers-js)

@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for CreateSession.
-  */
 trait SchemaCreateSessionRequest extends StObject {
   
   /**
-    * The session to create.
+    * Required. The session to create.
     */
   var session: js.UndefOr[SchemaSession] = js.undefined
 }

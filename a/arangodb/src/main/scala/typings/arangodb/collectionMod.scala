@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object collectionMod {
   
-  inline def apply(options: String | Collection[js.Any]): CollectionSessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CollectionSessionStorage]
+  inline def apply(options: String | Collection[Any]): CollectionSessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CollectionSessionStorage]
   inline def apply(options: CollectionStorageOptions): CollectionSessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CollectionSessionStorage]
   
   @JSImport("@arangodb/foxx/sessions/storages/collection", JSImport.Namespace)
@@ -19,7 +19,7 @@ object collectionMod {
     
     var autoUpdate: js.UndefOr[Boolean] = js.undefined
     
-    var collection: String | Collection[js.Any]
+    var collection: String | Collection[Any]
     
     var pruneExpired: js.UndefOr[Boolean] = js.undefined
     
@@ -27,7 +27,7 @@ object collectionMod {
   }
   object CollectionStorageOptions {
     
-    inline def apply(collection: String | Collection[js.Any]): CollectionStorageOptions = {
+    inline def apply(collection: String | Collection[Any]): CollectionStorageOptions = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollectionStorageOptions]
     }
@@ -38,7 +38,7 @@ object collectionMod {
       
       inline def setAutoUpdateUndefined: Self = StObject.set(x, "autoUpdate", js.undefined)
       
-      inline def setCollection(value: String | Collection[js.Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String | Collection[Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
       inline def setPruneExpired(value: Boolean): Self = StObject.set(x, "pruneExpired", value.asInstanceOf[js.Any])
       

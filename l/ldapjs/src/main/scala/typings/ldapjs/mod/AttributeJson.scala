@@ -24,6 +24,6 @@ object AttributeJson {
     
     inline def setVals(value: js.Array[String]): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
     
-    inline def setValsVarargs(value: String*): Self = StObject.set(x, "vals", js.Array(value :_*))
+    inline def setValsVarargs(value: String*): Self = StObject.set(x, "vals", js.Array(value*))
   }
 }

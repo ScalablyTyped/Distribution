@@ -1,6 +1,10 @@
 package typings.mapboxMapboxSdk
 
 import typings.mapboxGl.mod.LngLatLike
+import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.Feature
+import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.FeatureCollection
+import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.Point
+import typings.mapboxMapboxSdk.mapiRequestMod.Coordinates
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
@@ -16,34 +20,7 @@ object geocodingMod {
   inline def default(config: SdkConfig): GeocodeService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GeocodeService]
   inline def default(config: typings.mapboxMapboxSdk.mod.default): GeocodeService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GeocodeService]
   
-  trait BoundingBox extends StObject {
-    
-    var maxLatitude: Double
-    
-    var maxLongitude: Double
-    
-    var minLatitude: Double
-    
-    var minLongitude: Double
-  }
-  object BoundingBox {
-    
-    inline def apply(maxLatitude: Double, maxLongitude: Double, minLatitude: Double, minLongitude: Double): BoundingBox = {
-      val __obj = js.Dynamic.literal(maxLatitude = maxLatitude.asInstanceOf[js.Any], maxLongitude = maxLongitude.asInstanceOf[js.Any], minLatitude = minLatitude.asInstanceOf[js.Any], minLongitude = minLongitude.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BoundingBox]
-    }
-    
-    extension [Self <: BoundingBox](x: Self) {
-      
-      inline def setMaxLatitude(value: Double): Self = StObject.set(x, "maxLatitude", value.asInstanceOf[js.Any])
-      
-      inline def setMaxLongitude(value: Double): Self = StObject.set(x, "maxLongitude", value.asInstanceOf[js.Any])
-      
-      inline def setMinLatitude(value: Double): Self = StObject.set(x, "minLatitude", value.asInstanceOf[js.Any])
-      
-      inline def setMinLongitude(value: Double): Self = StObject.set(x, "minLongitude", value.asInstanceOf[js.Any])
-    }
-  }
+  type BoundingBox = js.Tuple4[Double, Double, Double, Double]
   
   trait GeocodeFeature extends StObject {
     
@@ -130,9 +107,9 @@ object geocodingMod {
     var text: String
     
     /**
-      * "Feature" , a GeoJSON type from the GeoJSON specification.
+      * "Feature", a GeoJSON type from the GeoJSON specification.
       */
-    var `type`: String
+    var `type`: Feature
   }
   object GeocodeFeature {
     
@@ -148,11 +125,10 @@ object geocodingMod {
       place_type: js.Array[String],
       properties: GeocodeProperties,
       relevance: Double,
-      text: String,
-      `type`: String
+      text: String
     ): GeocodeFeature = {
       val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], matching_place_name = matching_place_name.asInstanceOf[js.Any], matching_text = matching_text.asInstanceOf[js.Any], place_name = place_name.asInstanceOf[js.Any], place_type = place_type.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Feature")
       __obj.asInstanceOf[GeocodeFeature]
     }
     
@@ -166,15 +142,15 @@ object geocodingMod {
       
       inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
-      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value :_*))
+      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value*))
       
       inline def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
       
       inline def setContext(value: js.Array[GeocodeFeature]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setContextVarargs(value: GeocodeFeature*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: GeocodeFeature*): Self = StObject.set(x, "context", js.Array(value*))
       
       inline def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -190,7 +166,7 @@ object geocodingMod {
       
       inline def setPlace_type(value: js.Array[String]): Self = StObject.set(x, "place_type", value.asInstanceOf[js.Any])
       
-      inline def setPlace_typeVarargs(value: String*): Self = StObject.set(x, "place_type", js.Array(value :_*))
+      inline def setPlace_typeVarargs(value: String*): Self = StObject.set(x, "place_type", js.Array(value*))
       
       inline def setProperties(value: GeocodeProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
@@ -198,7 +174,7 @@ object geocodingMod {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,11 +240,10 @@ object geocodingMod {
       properties: GeocodeProperties,
       relevance: Double,
       short_code: String,
-      text: String,
-      `type`: String
+      text: String
     ): GeocodeProperties = {
       val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], matching_place_name = matching_place_name.asInstanceOf[js.Any], matching_text = matching_text.asInstanceOf[js.Any], place_name = place_name.asInstanceOf[js.Any], place_type = place_type.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any], short_code = short_code.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Feature")
       __obj.asInstanceOf[GeocodeProperties]
     }
     
@@ -342,7 +317,7 @@ object geocodingMod {
     var autocomplete: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Forward geocoding only. Limit results to a bounding box. Options are in the format  minX,minY,maxX,maxY .
+      * Forward geocoding only. Limit results to a bounding box. Options are in the format  minLongitude,minLatitude,maxLongitude,maxLatitude.
       */
     var bbox: js.UndefOr[BoundingBox] = js.undefined
     
@@ -366,17 +341,22 @@ object geocodingMod {
     /**
       * Either  mapbox.places for ephemeral geocoding, or  mapbox.places-permanent for storing results and batch geocoding.
       */
-    var mode: GeocodeMode
+    var mode: js.UndefOr[GeocodeMode] = js.undefined
     
     /**
       * Bias local results based on a provided location. Options are  longitude,latitude coordinates.
       */
-    var proximity: js.UndefOr[js.Array[Double]] = js.undefined
+    var proximity: js.UndefOr[Coordinates] = js.undefined
     
     /**
       * A location. This will be a place name for forward geocoding or a coordinate pair (longitude, latitude) for reverse geocoding.
       */
     var query: String | LngLatLike
+    
+    /**
+      * Specify whether to request additional etadat about the recommended navigation destination. Only applicable for address features.
+      */
+    var routing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Filter results by one or more feature types
@@ -385,8 +365,8 @@ object geocodingMod {
   }
   object GeocodeRequest {
     
-    inline def apply(mode: GeocodeMode, query: String | LngLatLike): GeocodeRequest = {
-      val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    inline def apply(query: String | LngLatLike): GeocodeRequest = {
+      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeocodeRequest]
     }
     
@@ -404,13 +384,13 @@ object geocodingMod {
       
       inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
       
-      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
       
       inline def setLanguage(value: js.Array[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
       inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      inline def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value :_*))
+      inline def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value*))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -418,19 +398,23 @@ object geocodingMod {
       
       inline def setMode(value: GeocodeMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      inline def setProximity(value: js.Array[Double]): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
+      inline def setProximity(value: Coordinates): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
       
       inline def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
       
-      inline def setProximityVarargs(value: Double*): Self = StObject.set(x, "proximity", js.Array(value :_*))
-      
       inline def setQuery(value: String | LngLatLike): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setRouting(value: Boolean): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+      
+      inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
       
       inline def setTypes(value: js.Array[GeocodeQueryType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: GeocodeQueryType*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: GeocodeQueryType*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   
@@ -454,13 +438,13 @@ object geocodingMod {
     /**
       * "Feature Collection" , a GeoJSON type from the GeoJSON specification.
       */
-    var `type`: String
+    var `type`: FeatureCollection
   }
   object GeocodeResponse {
     
-    inline def apply(attribution: String, features: js.Array[GeocodeFeature], query: js.Array[String], `type`: String): GeocodeResponse = {
+    inline def apply(attribution: String, features: js.Array[GeocodeFeature], query: js.Array[String]): GeocodeResponse = {
       val __obj = js.Dynamic.literal(attribution = attribution.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("FeatureCollection")
       __obj.asInstanceOf[GeocodeResponse]
     }
     
@@ -470,34 +454,37 @@ object geocodingMod {
       
       inline def setFeatures(value: js.Array[GeocodeFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      inline def setFeaturesVarargs(value: GeocodeFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: GeocodeFeature*): Self = StObject.set(x, "features", js.Array(value*))
       
       inline def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value*))
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: FeatureCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait GeocodeService extends StObject {
     
-    def forwardGeocode(request: GeocodeRequest): MapiRequest
+    def forwardGeocode(request: GeocodeRequest): MapiRequest[GeocodeResponse]
     
-    def reverseGeocode(request: GeocodeRequest): MapiRequest
+    def reverseGeocode(request: GeocodeRequest): MapiRequest[GeocodeResponse]
   }
   object GeocodeService {
     
-    inline def apply(forwardGeocode: GeocodeRequest => MapiRequest, reverseGeocode: GeocodeRequest => MapiRequest): GeocodeService = {
+    inline def apply(
+      forwardGeocode: GeocodeRequest => MapiRequest[GeocodeResponse],
+      reverseGeocode: GeocodeRequest => MapiRequest[GeocodeResponse]
+    ): GeocodeService = {
       val __obj = js.Dynamic.literal(forwardGeocode = js.Any.fromFunction1(forwardGeocode), reverseGeocode = js.Any.fromFunction1(reverseGeocode))
       __obj.asInstanceOf[GeocodeService]
     }
     
     extension [Self <: GeocodeService](x: Self) {
       
-      inline def setForwardGeocode(value: GeocodeRequest => MapiRequest): Self = StObject.set(x, "forwardGeocode", js.Any.fromFunction1(value))
+      inline def setForwardGeocode(value: GeocodeRequest => MapiRequest[GeocodeResponse]): Self = StObject.set(x, "forwardGeocode", js.Any.fromFunction1(value))
       
-      inline def setReverseGeocode(value: GeocodeRequest => MapiRequest): Self = StObject.set(x, "reverseGeocode", js.Any.fromFunction1(value))
+      inline def setReverseGeocode(value: GeocodeRequest => MapiRequest[GeocodeResponse]): Self = StObject.set(x, "reverseGeocode", js.Any.fromFunction1(value))
     }
   }
   
@@ -516,13 +503,13 @@ object geocodingMod {
     /**
       * Point, a GeoJSON type from the GeoJSON specification .
       */
-    var `type`: String
+    var `type`: Point
   }
   object Geometry {
     
-    inline def apply(coordinates: js.Array[Double], interpolated: Boolean, `type`: String): Geometry = {
+    inline def apply(coordinates: js.Array[Double], interpolated: Boolean): Geometry = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], interpolated = interpolated.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Point")
       __obj.asInstanceOf[Geometry]
     }
     
@@ -530,11 +517,11 @@ object geocodingMod {
       
       inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
       inline def setInterpolated(value: Boolean): Self = StObject.set(x, "interpolated", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

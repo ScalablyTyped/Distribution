@@ -24,7 +24,7 @@ object environmentMod {
   
   @JSImport("ionic/lib/environment", "Environment")
   @js.native
-  class Environment protected ()
+  open class Environment protected ()
     extends StObject
        with IonicEnvironment {
     def this(hasClientConfigFlagsGetInfoLogCtxPromptSessionShell: EnvironmentDeps) = this()

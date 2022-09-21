@@ -6,38 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object filenamifyMod {
   
-  /**
-  Convert a string to a valid filename.
-  @example
-  ```
-  import filenamify = require('filenamify');
-  filenamify('<foo/bar>');
-  //=> 'foo!bar'
-  filenamify('foo:"bar"', {replacement: '🐴'});
-  //=> 'foo🐴bar'
-  ```
-  */
-  inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("filenamify/filenamify", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
     /**
-    		Truncate the filename to the given length.
-    		Systems generally allow up to 255 characters, but we default to 100 for usability reasons.
-    		@default 100
-    		*/
+    	Truncate the filename to the given length.
+    	Only the base of the filename is truncated, preserving the extension. If the extension itself is longer than `maxLength`, you will get a string that is longer than `maxLength`, so you need to check for that if you allow arbitrary extensions.
+    	Systems generally allow up to 255 characters, but we default to 100 for usability reasons.
+    	@default 100
+    	*/
     val maxLength: js.UndefOr[Double] = js.undefined
     
     /**
-    		String to use as replacement for reserved filename characters.
-    		Cannot contain: `<` `>` `:` `"` `/` `\` `|` `?` `*`
-    		@default '!'
-    		*/
+    	String to use as replacement for reserved filename characters.
+    	Cannot contain: `<` `>` `:` `"` `/` `\` `|` `?` `*`
+    	@default '!'
+    	*/
     val replacement: js.UndefOr[String] = js.undefined
   }
   object Options {

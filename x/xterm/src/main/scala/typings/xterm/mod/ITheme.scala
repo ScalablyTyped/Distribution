@@ -48,6 +48,9 @@ trait ITheme extends StObject {
   /** ANSI cyan (eg. `\x1b[36m`) */
   var cyan: js.UndefOr[String] = js.undefined
   
+  /** ANSI extended colors (16-255) */
+  var extendedAnsi: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** The default foreground color */
   var foreground: js.UndefOr[String] = js.undefined
   
@@ -61,7 +64,13 @@ trait ITheme extends StObject {
   var red: js.UndefOr[String] = js.undefined
   
   /** The selection background color (can be transparent) */
-  var selection: js.UndefOr[String] = js.undefined
+  var selectionBackground: js.UndefOr[String] = js.undefined
+  
+  /** The selection foreground color */
+  var selectionForeground: js.UndefOr[String] = js.undefined
+  
+  /** The selection background color when the terminal does not have focus (can be transparent) */
+  var selectionInactiveBackground: js.UndefOr[String] = js.undefined
   
   /** ANSI white (eg. `\x1b[37m`) */
   var white: js.UndefOr[String] = js.undefined
@@ -134,6 +143,12 @@ object ITheme {
     
     inline def setCyanUndefined: Self = StObject.set(x, "cyan", js.undefined)
     
+    inline def setExtendedAnsi(value: js.Array[String]): Self = StObject.set(x, "extendedAnsi", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedAnsiUndefined: Self = StObject.set(x, "extendedAnsi", js.undefined)
+    
+    inline def setExtendedAnsiVarargs(value: String*): Self = StObject.set(x, "extendedAnsi", js.Array(value*))
+    
     inline def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
     
     inline def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
@@ -150,9 +165,17 @@ object ITheme {
     
     inline def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
     
-    inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelectionBackground(value: String): Self = StObject.set(x, "selectionBackground", value.asInstanceOf[js.Any])
     
-    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    inline def setSelectionBackgroundUndefined: Self = StObject.set(x, "selectionBackground", js.undefined)
+    
+    inline def setSelectionForeground(value: String): Self = StObject.set(x, "selectionForeground", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionForegroundUndefined: Self = StObject.set(x, "selectionForeground", js.undefined)
+    
+    inline def setSelectionInactiveBackground(value: String): Self = StObject.set(x, "selectionInactiveBackground", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionInactiveBackgroundUndefined: Self = StObject.set(x, "selectionInactiveBackground", js.undefined)
     
     inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     

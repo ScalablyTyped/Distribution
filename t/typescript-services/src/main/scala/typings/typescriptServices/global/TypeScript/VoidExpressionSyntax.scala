@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.VoidExpressionSyntax")
 @js.native
-class VoidExpressionSyntax protected ()
+open class VoidExpressionSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.VoidExpressionSyntax {
   def this(voidKeyword: ISyntaxToken, expression: IUnaryExpressionSyntax, parsedInStrictMode: Boolean) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

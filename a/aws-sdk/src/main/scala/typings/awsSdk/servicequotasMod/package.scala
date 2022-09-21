@@ -1,15 +1,18 @@
 package typings.awsSdk.servicequotasMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AwsRegion = java.lang.String
+type AmazonResourceName = String
 
-type CustomerServiceEngagementId = java.lang.String
+type AwsRegion = String
 
-type DateTime = typings.std.Date
+type CustomerServiceEngagementId = String
+
+type DateTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEPENDENCY_ACCESS_DENIED_ERROR
@@ -18,21 +21,27 @@ type DateTime = typings.std.Date
   - typings.awsSdk.awsSdkStrings.SERVICE_QUOTA_NOT_AVAILABLE_ERROR
   - java.lang.String
 */
-type ErrorCode = typings.awsSdk.servicequotasMod._ErrorCode | java.lang.String
+type ErrorCode = _ErrorCode | String
 
-type ErrorMessage = java.lang.String
+type ErrorMessage = String
 
-type GlobalQuota = scala.Boolean
+type GlobalQuota = Boolean
 
-type MaxResults = scala.Double
+type InputTagKeys = js.Array[TagKey]
 
-type MetricDimensionName = java.lang.String
+type InputTags = js.Array[Tag]
 
-type MetricDimensionValue = java.lang.String
+type MaxResults = Double
 
-type MetricDimensionsMapDefinition = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicequotasMod.MetricDimensionValue]
+type MetricDimensionName = String
 
-type NextToken = java.lang.String
+type MetricDimensionValue = String
+
+type MetricDimensionsMapDefinition = StringDictionary[MetricDimensionValue]
+
+type NextToken = String
+
+type OutputTags = js.Array[Tag]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MICROSECOND
@@ -44,27 +53,27 @@ type NextToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.WEEK
   - java.lang.String
 */
-type PeriodUnit = typings.awsSdk.servicequotasMod._PeriodUnit | java.lang.String
+type PeriodUnit = _PeriodUnit | String
 
-type PeriodValue = scala.Double
+type PeriodValue = Double
 
-type QuotaAdjustable = scala.Boolean
+type QuotaAdjustable = Boolean
 
-type QuotaArn = java.lang.String
+type QuotaArn = String
 
-type QuotaCode = java.lang.String
+type QuotaCode = String
 
-type QuotaMetricName = java.lang.String
+type QuotaMetricName = String
 
-type QuotaMetricNamespace = java.lang.String
+type QuotaMetricNamespace = String
 
-type QuotaName = java.lang.String
+type QuotaName = String
 
-type QuotaUnit = java.lang.String
+type QuotaUnit = String
 
-type QuotaValue = scala.Double
+type QuotaValue = Double
 
-type RequestId = java.lang.String
+type RequestId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -74,34 +83,38 @@ type RequestId = java.lang.String
   - typings.awsSdk.awsSdkStrings.CASE_CLOSED
   - java.lang.String
 */
-type RequestStatus = typings.awsSdk.servicequotasMod._RequestStatus | java.lang.String
+type RequestStatus = _RequestStatus | String
 
-type RequestedServiceQuotaChangeHistoryListDefinition = js.Array[typings.awsSdk.servicequotasMod.RequestedServiceQuotaChange]
+type RequestedServiceQuotaChangeHistoryListDefinition = js.Array[RequestedServiceQuotaChange]
 
-type Requester = java.lang.String
+type Requester = String
 
-type ServiceCode = java.lang.String
+type ServiceCode = String
 
-type ServiceInfoListDefinition = js.Array[typings.awsSdk.servicequotasMod.ServiceInfo]
+type ServiceInfoListDefinition = js.Array[ServiceInfo]
 
-type ServiceName = java.lang.String
+type ServiceName = String
 
-type ServiceQuotaIncreaseRequestInTemplateList = js.Array[typings.awsSdk.servicequotasMod.ServiceQuotaIncreaseRequestInTemplate]
+type ServiceQuotaIncreaseRequestInTemplateList = js.Array[ServiceQuotaIncreaseRequestInTemplate]
 
-type ServiceQuotaListDefinition = js.Array[typings.awsSdk.servicequotasMod.ServiceQuota]
+type ServiceQuotaListDefinition = js.Array[ServiceQuota]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASSOCIATED
   - typings.awsSdk.awsSdkStrings.DISASSOCIATED
   - java.lang.String
 */
-type ServiceQuotaTemplateAssociationStatus = typings.awsSdk.servicequotasMod._ServiceQuotaTemplateAssociationStatus | java.lang.String
+type ServiceQuotaTemplateAssociationStatus = _ServiceQuotaTemplateAssociationStatus | String
 
-type Statistic = java.lang.String
+type Statistic = String
+
+type TagKey = String
+
+type TagValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-06-24`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.servicequotasMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

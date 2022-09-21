@@ -10,7 +10,7 @@ object listMod {
   
   @JSImport("ionic/commands/doctor/list", "DoctorListCommand")
   @js.native
-  class DoctorListCommand protected () extends DoctorCommand {
+  open class DoctorListCommand protected () extends DoctorCommand {
     def this(namespace: INamespace) = this()
   }
 }

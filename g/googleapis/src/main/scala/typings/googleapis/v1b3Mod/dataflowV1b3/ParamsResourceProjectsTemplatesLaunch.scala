@@ -1,9 +1,5 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,34 +9,24 @@ trait ParamsResourceProjectsTemplatesLaunch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Path to dynamic template spec file on GCS. The file must be a Json
-    * serialized DynamicTemplateFieSpec object.
+    * Path to dynamic template spec file on Cloud Storage. The file must be a Json serialized DynamicTemplateFieSpec object.
     */
   @JSName("dynamicTemplate.gcsPath")
   var dynamicTemplateDotgcsPath: js.UndefOr[String] = js.undefined
   
   /**
-    * Cloud Storage path for staging dependencies. Must be a valid Cloud
-    * Storage URL, beginning with `gs://`.
+    * Cloud Storage path for staging dependencies. Must be a valid Cloud Storage URL, beginning with `gs://`.
     */
   @JSName("dynamicTemplate.stagingLocation")
   var dynamicTemplateDotstagingLocation: js.UndefOr[String] = js.undefined
   
   /**
-    * A Cloud Storage path to the template from which to create the job. Must
-    * be valid Cloud Storage URL, beginning with 'gs://'.
+    * A Cloud Storage path to the template from which to create the job. Must be valid Cloud Storage URL, beginning with 'gs://'.
     */
   var gcsPath: js.UndefOr[String] = js.undefined
   
   /**
-    * The [regional endpoint]
-    * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
-    * which to direct the request.
+    * The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which to direct the request.
     */
   var location: js.UndefOr[String] = js.undefined
   
@@ -55,8 +41,7 @@ trait ParamsResourceProjectsTemplatesLaunch
   var requestBody: js.UndefOr[SchemaLaunchTemplateParameters] = js.undefined
   
   /**
-    * If true, the request is validated but not actually executed. Defaults to
-    * false.
+    * If true, the request is validated but not actually executed. Defaults to false.
     */
   var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
@@ -68,10 +53,6 @@ object ParamsResourceProjectsTemplatesLaunch {
   }
   
   extension [Self <: ParamsResourceProjectsTemplatesLaunch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDynamicTemplateDotgcsPath(value: String): Self = StObject.set(x, "dynamicTemplate.gcsPath", value.asInstanceOf[js.Any])
     

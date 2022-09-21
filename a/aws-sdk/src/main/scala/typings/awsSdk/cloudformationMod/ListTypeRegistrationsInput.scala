@@ -12,27 +12,27 @@ trait ListTypeRegistrationsInput extends StObject {
   var MaxResults: js.UndefOr[typings.awsSdk.cloudformationMod.MaxResults] = js.undefined
   
   /**
-    * If the previous paginated request didn't return all of the remaining results, the response object's NextToken parameter value is set to a token. To retrieve the next set of results, call this action again and assign that token to the request object's NextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null.
+    * If the previous paginated request didn't return all the remaining results, the response object's NextToken parameter value is set to a token. To retrieve the next set of results, call this action again and assign that token to the request object's NextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null.
     */
   var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
-    * The current status of the type registration request. The default is IN_PROGRESS.
+    * The current status of the extension registration request. The default is IN_PROGRESS.
     */
   var RegistrationStatusFilter: js.UndefOr[RegistrationStatus] = js.undefined
   
   /**
-    * The kind of type. Currently the only valid value is RESOURCE. Conditional: You must specify either TypeName and Type, or Arn.
+    * The kind of extension. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var Type: js.UndefOr[RegistryType] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the type. Conditional: You must specify either TypeName and Type, or Arn.
+    * The Amazon Resource Name (ARN) of the extension. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var TypeArn: js.UndefOr[typings.awsSdk.cloudformationMod.TypeArn] = js.undefined
   
   /**
-    * The name of the type. Conditional: You must specify either TypeName and Type, or Arn.
+    * The name of the extension. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.undefined
 }

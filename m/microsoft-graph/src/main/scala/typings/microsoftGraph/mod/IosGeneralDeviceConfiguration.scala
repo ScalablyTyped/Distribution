@@ -38,7 +38,7 @@ trait IosGeneralDeviceConfiguration
     */
   var appStoreBlockUIAppInstallation: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from using the App Store.
+  // Indicates whether or not to block the user from using the App Store. Requires a supervised device for iOS 13 and later.
   var appStoreBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require a password when using the app store.
@@ -74,7 +74,10 @@ trait IosGeneralDeviceConfiguration
     */
   var bluetoothBlockModification: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from accessing the camera of the device.
+  /**
+    * Indicates whether or not to block the user from accessing the camera of the device. Requires a supervised device for
+    * iOS 13 and later.
+    */
   var cameraBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block data roaming.
@@ -161,22 +164,28 @@ trait IosGeneralDeviceConfiguration
   // Indicates whether or not to block the user from trusting an enterprise app.
   var enterpriseAppBlockTrust: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from modifying the enterprise app trust settings.
+  // [Deprecated] Configuring this setting and setting the value to 'true' has no effect on the device.
   var enterpriseAppBlockTrustModification: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from using FaceTime.
+  // Indicates whether or not to block the user from using FaceTime. Requires a supervised device for iOS 13 and later.
   var faceTimeBlocked: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block Find My Friends when the device is in supervised mode.
+  // Indicates whether or not to block changes to Find My Friends when the device is in supervised mode.
   var findMyFriendsBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from using Game Center when the device is in supervised mode.
   var gameCenterBlocked: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from having friends in Game Center.
+  /**
+    * Indicates whether or not to block the user from having friends in Game Center. Requires a supervised device for iOS 13
+    * and later.
+    */
   var gamingBlockGameCenterFriends: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from using multiplayer gaming.
+  /**
+    * Indicates whether or not to block the user from using multiplayer gaming. Requires a supervised device for iOS 13 and
+    * later.
+    */
   var gamingBlockMultiplayer: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -197,10 +206,10 @@ trait IosGeneralDeviceConfiguration
     */
   var iCloudBlockActivityContinuation: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block iCloud backup.
+  // Indicates whether or not to block iCloud backup. Requires a supervised device for iOS 13 and later.
   var iCloudBlockBackup: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block iCloud document sync.
+  // Indicates whether or not to block iCloud document sync. Requires a supervised device for iOS 13 and later.
   var iCloudBlockDocumentSync: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Managed Apps Cloud Sync.
@@ -218,7 +227,10 @@ trait IosGeneralDeviceConfiguration
   // Indicates whether or not to require backups to iCloud be encrypted.
   var iCloudRequireEncryptedBackup: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from accessing explicit content in iTunes and the App Store.
+  /**
+    * Indicates whether or not to block the user from accessing explicit content in iTunes and the App Store. Requires a
+    * supervised device for iOS 13 and later.
+    */
   var iTunesBlockExplicitContent: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -254,28 +266,46 @@ trait IosGeneralDeviceConfiguration
   // Indicates whether or not to allow access to the Assistive Touch Settings while in kiosk mode.
   var kioskModeAllowAssistiveTouchSettings: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to allow device auto lock while in kiosk mode.
+  /**
+    * Indicates whether or not to allow device auto lock while in kiosk mode. This property's functionality is redundant with
+    * the OS default and is deprecated. Use KioskModeBlockAutoLock instead.
+    */
   var kioskModeAllowAutoLock: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow access to the Color Inversion Settings while in kiosk mode.
   var kioskModeAllowColorInversionSettings: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to allow use of the ringer switch while in kiosk mode.
+  /**
+    * Indicates whether or not to allow use of the ringer switch while in kiosk mode. This property's functionality is
+    * redundant with the OS default and is deprecated. Use KioskModeBlockRingerSwitch instead.
+    */
   var kioskModeAllowRingerSwitch: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to allow screen rotation while in kiosk mode.
+  /**
+    * Indicates whether or not to allow screen rotation while in kiosk mode. This property's functionality is redundant with
+    * the OS default and is deprecated. Use KioskModeBlockScreenRotation instead.
+    */
   var kioskModeAllowScreenRotation: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to allow use of the sleep button while in kiosk mode.
+  /**
+    * Indicates whether or not to allow use of the sleep button while in kiosk mode. This property's functionality is
+    * redundant with the OS default and is deprecated. Use KioskModeBlockSleepButton instead.
+    */
   var kioskModeAllowSleepButton: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to allow use of the touchscreen while in kiosk mode.
+  /**
+    * Indicates whether or not to allow use of the touchscreen while in kiosk mode. This property's functionality is
+    * redundant with the OS default and is deprecated. Use KioskModeBlockTouchscreen instead.
+    */
   var kioskModeAllowTouchscreen: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow access to the voice over settings while in kiosk mode.
   var kioskModeAllowVoiceOverSettings: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to allow use of the volume buttons while in kiosk mode.
+  /**
+    * Indicates whether or not to allow use of the volume buttons while in kiosk mode. This property's functionality is
+    * redundant with the OS default and is deprecated. Use KioskModeBlockVolumeButtons instead.
+    */
   var kioskModeAllowVolumeButtons: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow access to the zoom settings while in kiosk mode.
@@ -401,13 +431,16 @@ trait IosGeneralDeviceConfiguration
   // Type of passcode that is required. Possible values are: deviceDefault, alphanumeric, numeric.
   var passcodeRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
   
-  // Number of sign in failures allowed before wiping the device. Valid values 4 to 11
+  // Number of sign in failures allowed before wiping the device. Valid values 2 to 11
   var passcodeSignInFailureCountBeforeWipe: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to block the user from using podcasts on the supervised device (iOS 8.0 and later).
   var podcastsBlocked: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from using Auto fill in Safari.
+  /**
+    * Indicates whether or not to block the user from using Auto fill in Safari. Requires a supervised device for iOS 13 and
+    * later.
+    */
   var safariBlockAutofill: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block JavaScript in Safari.
@@ -416,7 +449,7 @@ trait IosGeneralDeviceConfiguration
   // Indicates whether or not to block popups in Safari.
   var safariBlockPopups: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether or not to block the user from using Safari.
+  // Indicates whether or not to block the user from using Safari. Requires a supervised device for iOS 13 and later.
   var safariBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -463,7 +496,8 @@ trait IosGeneralDeviceConfiguration
   
   /**
     * Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is
-    * in supervised mode.
+    * in supervised mode. Available for devices running iOS and iPadOS versions 14.4 and earlier. Devices running 14.5+
+    * should use the setting, 'WiFiConnectToAllowedNetworksOnlyForced.
     */
   var wiFiConnectOnlyToConfiguredNetworks: js.UndefOr[Boolean] = js.undefined
 }
@@ -534,7 +568,7 @@ object IosGeneralDeviceConfiguration {
     
     inline def setAppsSingleAppModeListUndefined: Self = StObject.set(x, "appsSingleAppModeList", js.undefined)
     
-    inline def setAppsSingleAppModeListVarargs(value: AppListItem*): Self = StObject.set(x, "appsSingleAppModeList", js.Array(value :_*))
+    inline def setAppsSingleAppModeListVarargs(value: AppListItem*): Self = StObject.set(x, "appsSingleAppModeList", js.Array(value*))
     
     inline def setAppsVisibilityList(value: NullableOption[js.Array[AppListItem]]): Self = StObject.set(x, "appsVisibilityList", value.asInstanceOf[js.Any])
     
@@ -546,7 +580,7 @@ object IosGeneralDeviceConfiguration {
     
     inline def setAppsVisibilityListUndefined: Self = StObject.set(x, "appsVisibilityList", js.undefined)
     
-    inline def setAppsVisibilityListVarargs(value: AppListItem*): Self = StObject.set(x, "appsVisibilityList", js.Array(value :_*))
+    inline def setAppsVisibilityListVarargs(value: AppListItem*): Self = StObject.set(x, "appsVisibilityList", js.Array(value*))
     
     inline def setBluetoothBlockModification(value: Boolean): Self = StObject.set(x, "bluetoothBlockModification", value.asInstanceOf[js.Any])
     
@@ -598,7 +632,7 @@ object IosGeneralDeviceConfiguration {
     
     inline def setCompliantAppsListUndefined: Self = StObject.set(x, "compliantAppsList", js.undefined)
     
-    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value :_*))
+    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value*))
     
     inline def setConfigurationProfileBlockChanges(value: Boolean): Self = StObject.set(x, "configurationProfileBlockChanges", value.asInstanceOf[js.Any])
     
@@ -642,7 +676,7 @@ object IosGeneralDeviceConfiguration {
     
     inline def setEmailInDomainSuffixesUndefined: Self = StObject.set(x, "emailInDomainSuffixes", js.undefined)
     
-    inline def setEmailInDomainSuffixesVarargs(value: String*): Self = StObject.set(x, "emailInDomainSuffixes", js.Array(value :_*))
+    inline def setEmailInDomainSuffixesVarargs(value: String*): Self = StObject.set(x, "emailInDomainSuffixes", js.Array(value*))
     
     inline def setEnterpriseAppBlockTrust(value: Boolean): Self = StObject.set(x, "enterpriseAppBlockTrust", value.asInstanceOf[js.Any])
     
@@ -914,7 +948,7 @@ object IosGeneralDeviceConfiguration {
     
     inline def setNetworkUsageRulesUndefined: Self = StObject.set(x, "networkUsageRules", js.undefined)
     
-    inline def setNetworkUsageRulesVarargs(value: IosNetworkUsageRule*): Self = StObject.set(x, "networkUsageRules", js.Array(value :_*))
+    inline def setNetworkUsageRulesVarargs(value: IosNetworkUsageRule*): Self = StObject.set(x, "networkUsageRules", js.Array(value*))
     
     inline def setNotificationsBlockSettingsModification(value: Boolean): Self = StObject.set(x, "notificationsBlockSettingsModification", value.asInstanceOf[js.Any])
     
@@ -1016,7 +1050,7 @@ object IosGeneralDeviceConfiguration {
     
     inline def setSafariManagedDomainsUndefined: Self = StObject.set(x, "safariManagedDomains", js.undefined)
     
-    inline def setSafariManagedDomainsVarargs(value: String*): Self = StObject.set(x, "safariManagedDomains", js.Array(value :_*))
+    inline def setSafariManagedDomainsVarargs(value: String*): Self = StObject.set(x, "safariManagedDomains", js.Array(value*))
     
     inline def setSafariPasswordAutoFillDomains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "safariPasswordAutoFillDomains", value.asInstanceOf[js.Any])
     
@@ -1024,7 +1058,7 @@ object IosGeneralDeviceConfiguration {
     
     inline def setSafariPasswordAutoFillDomainsUndefined: Self = StObject.set(x, "safariPasswordAutoFillDomains", js.undefined)
     
-    inline def setSafariPasswordAutoFillDomainsVarargs(value: String*): Self = StObject.set(x, "safariPasswordAutoFillDomains", js.Array(value :_*))
+    inline def setSafariPasswordAutoFillDomainsVarargs(value: String*): Self = StObject.set(x, "safariPasswordAutoFillDomains", js.Array(value*))
     
     inline def setSafariRequireFraudWarning(value: Boolean): Self = StObject.set(x, "safariRequireFraudWarning", value.asInstanceOf[js.Any])
     

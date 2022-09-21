@@ -14,10 +14,9 @@ object popupMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Popup", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[PopupProps, ComponentState, js.Any] {
+  open class default protected () extends Component[PopupProps, ComponentState, Any] {
     def this(props: PopupProps) = this()
-    def this(props: PopupProps, context: js.Any) = this()
+    def this(props: PopupProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Popup", JSImport.Default)
   @js.native

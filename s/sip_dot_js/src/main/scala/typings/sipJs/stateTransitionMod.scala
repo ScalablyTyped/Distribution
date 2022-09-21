@@ -9,7 +9,7 @@ object stateTransitionMod {
   
   @JSImport("sip.js/lib/api/exceptions/state-transition", "StateTransitionError")
   @js.native
-  class StateTransitionError () extends Exception {
+  open class StateTransitionError () extends Exception {
     def this(message: String) = this()
   }
 }

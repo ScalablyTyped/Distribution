@@ -19,7 +19,7 @@ trait TasksModule extends StObject {
   /* private */ @JSName("Outlook.TasksModule_typekey")
   var OutlookDotTasksModule_typekey: TasksModule
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -36,7 +36,7 @@ object TasksModule {
     NavigationGroups: NavigationGroups,
     NavigationModuleType: OlNavigationModuleType,
     OutlookDotTasksModule_typekey: TasksModule,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Session: NameSpace,
     Visible: Boolean
@@ -60,7 +60,7 @@ object TasksModule {
     
     inline def setOutlookDotTasksModule_typekey(value: TasksModule): Self = StObject.set(x, "Outlook.TasksModule_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

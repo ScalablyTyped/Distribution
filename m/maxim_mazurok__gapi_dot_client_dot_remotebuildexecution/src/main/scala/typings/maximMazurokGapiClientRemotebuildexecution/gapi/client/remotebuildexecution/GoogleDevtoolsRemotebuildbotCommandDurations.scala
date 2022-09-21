@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleDevtoolsRemotebuildbotCommandDurations extends StObject {
   
+  /** The time spent to release the CAS blobs used by the task. */
+  var casRelease: js.UndefOr[String] = js.undefined
+  
+  /** The time spent waiting for Container Manager to assign an asynchronous container for execution. */
+  var cmWaitForAssignment: js.UndefOr[String] = js.undefined
+  
   /** The time spent preparing the command to be run in a Docker container (includes pulling the Docker image, if necessary). */
   var dockerPrep: js.UndefOr[String] = js.undefined
   
@@ -47,6 +53,14 @@ object GoogleDevtoolsRemotebuildbotCommandDurations {
   }
   
   extension [Self <: GoogleDevtoolsRemotebuildbotCommandDurations](x: Self) {
+    
+    inline def setCasRelease(value: String): Self = StObject.set(x, "casRelease", value.asInstanceOf[js.Any])
+    
+    inline def setCasReleaseUndefined: Self = StObject.set(x, "casRelease", js.undefined)
+    
+    inline def setCmWaitForAssignment(value: String): Self = StObject.set(x, "cmWaitForAssignment", value.asInstanceOf[js.Any])
+    
+    inline def setCmWaitForAssignmentUndefined: Self = StObject.set(x, "cmWaitForAssignment", js.undefined)
     
     inline def setDockerPrep(value: String): Self = StObject.set(x, "dockerPrep", value.asInstanceOf[js.Any])
     

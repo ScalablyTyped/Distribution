@@ -7,18 +7,88 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TYFlatListData
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /**
+  * @language zh-CN
+  * @description 其他属性
+  * @defaultValue null
+  */
+/**
+  * @language en-US
+  * @description Other attributes
+  * @defaultValue null
+  */
+/* prop */ StringDictionary[Any] {
   
-  var Action: js.UndefOr[js.Any] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 右侧 Action 具体值
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Specific value of action on the right
+    * @defaultValue null
+    */
+  var Action: js.UndefOr[Any] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否已经选中
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Is it already selected
+    * @defaultValue null
+    */
   var checked: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Key 值
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Key Value
+    * @defaultValue null
+    */
   var key: js.UndefOr[String | Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 改变回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Change callback
+    * @defaultValue () => {}
+    */
   var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 副标题
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description SubTitle
+    * @defaultValue null
+    */
   var subTitle: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 标题
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Title
+    * @defaultValue null
+    */
   var title: js.UndefOr[String] = js.undefined
 }
 object TYFlatListData {
@@ -30,7 +100,7 @@ object TYFlatListData {
   
   extension [Self <: TYFlatListData](x: Self) {
     
-    inline def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     

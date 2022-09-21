@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetHyperlinkClickEventArgs")
 @js.native
-class ASPxClientSpreadsheetHyperlinkClickEventArgs protected ()
+open class ASPxClientSpreadsheetHyperlinkClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetHyperlinkClickEventArgs {
   /**
@@ -20,7 +20,7 @@ class ASPxClientSpreadsheetHyperlinkClickEventArgs protected ()
     * @param targetUri A sting value specifying the link's URI.
     */
   def this(
-    htmlEvent: js.Any,
+    htmlEvent: Any,
     handled: Boolean,
     hyperlinkType: typings.devexpressWeb.ASPxClientOfficeDocumentLinkType,
     targetUri: String
@@ -36,7 +36,7 @@ class ASPxClientSpreadsheetHyperlinkClickEventArgs protected ()
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets a value identifying the clicked hyperlink type.

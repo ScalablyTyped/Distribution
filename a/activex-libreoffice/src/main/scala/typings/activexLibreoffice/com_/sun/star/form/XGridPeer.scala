@@ -37,7 +37,7 @@ object XGridPeer {
     Columns: XIndexContainer,
     acquire: () => Unit,
     getColumns: () => XIndexContainer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setColumns: XIndexContainer => Unit
   ): XGridPeer = {

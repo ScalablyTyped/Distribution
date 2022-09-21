@@ -2,6 +2,7 @@ package typings.opentok
 
 import typings.opentok.mod.ArchiveMode
 import typings.opentok.mod.ArchiveStatus
+import typings.opentok.mod.BroadcastLayoutType
 import typings.opentok.mod.MediaMode
 import typings.opentok.mod.OutputMode
 import typings.opentok.mod.Role
@@ -12,10 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object opentokStrings {
   
   @js.native
+  sealed trait `1280x720` extends StObject
+  inline def `1280x720`: `1280x720` = "1280x720".asInstanceOf[`1280x720`]
+  
+  @js.native
+  sealed trait `640x480` extends StObject
+  inline def `640x480`: `640x480` = "640x480".asInstanceOf[`640x480`]
+  
+  @js.native
   sealed trait always
     extends StObject
        with ArchiveMode
   inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait available
@@ -24,8 +37,14 @@ object opentokStrings {
   inline def available: available = "available".asInstanceOf[available]
   
   @js.native
-  sealed trait bestFit extends StObject
+  sealed trait bestFit
+    extends StObject
+       with BroadcastLayoutType
   inline def bestFit: bestFit = "bestFit".asInstanceOf[bestFit]
+  
+  @js.native
+  sealed trait camera extends StObject
+  inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
   sealed trait composed
@@ -50,7 +69,15 @@ object opentokStrings {
   inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait horizontalPresentation extends StObject
+  sealed trait focus
+    extends StObject
+       with BroadcastLayoutType
+  inline def focus: focus = "focus".asInstanceOf[focus]
+  
+  @js.native
+  sealed trait horizontalPresentation
+    extends StObject
+       with BroadcastLayoutType
   inline def horizontalPresentation: horizontalPresentation = "horizontalPresentation".asInstanceOf[horizontalPresentation]
   
   @js.native
@@ -78,7 +105,9 @@ object opentokStrings {
   inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait pip extends StObject
+  sealed trait pip
+    extends StObject
+       with BroadcastLayoutType
   inline def pip: pip = "pip".asInstanceOf[pip]
   
   @js.native
@@ -98,6 +127,10 @@ object opentokStrings {
     extends StObject
        with MediaMode
   inline def routed: routed = "routed".asInstanceOf[routed]
+  
+  @js.native
+  sealed trait screen extends StObject
+  inline def screen: screen = "screen".asInstanceOf[screen]
   
   @js.native
   sealed trait started
@@ -124,6 +157,8 @@ object opentokStrings {
   inline def uploaded: uploaded = "uploaded".asInstanceOf[uploaded]
   
   @js.native
-  sealed trait verticalPresentation extends StObject
+  sealed trait verticalPresentation
+    extends StObject
+       with BroadcastLayoutType
   inline def verticalPresentation: verticalPresentation = "verticalPresentation".asInstanceOf[verticalPresentation]
 }

@@ -1,9 +1,9 @@
 package typings.babylonjs
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.BendAxis
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,43 +13,53 @@ object boneIKControllerMod {
   
   @JSImport("babylonjs/Bones/boneIKController", "BoneIKController")
   @js.native
-  class BoneIKController protected () extends StObject {
+  open class BoneIKController protected () extends StObject {
     /**
       * Creates a new BoneIKController
-      * @param mesh defines the mesh to control
+      * @param mesh defines the TransformNode to control
       * @param bone defines the bone to control
       * @param options defines options to set up the controller
+      * @param options.targetMesh
+      * @param options.poleTargetMesh
+      * @param options.poleTargetBone
+      * @param options.poleTargetLocalOffset
+      * @param options.poleAngle
+      * @param options.bendAxis
+      * @param options.maxAngle
+      * @param options.slerpAmount
       */
-    def this(mesh: AbstractMesh, bone: Bone) = this()
-    def this(mesh: AbstractMesh, bone: Bone, options: BendAxis) = this()
+    def this(mesh: TransformNode, bone: Bone) = this()
+    def this(mesh: TransformNode, bone: Bone, options: BendAxis) = this()
     
-    /* private */ var _adjustRoll: js.Any = js.native
+    /* private */ var _adjustRoll: Any = js.native
     
-    /* private */ var _bendAxis: js.Any = js.native
+    /* private */ var _bendAxis: Any = js.native
     
-    /* private */ var _bone1: js.Any = js.native
+    /* private */ var _bone1: Any = js.native
     
-    /* private */ var _bone1Length: js.Any = js.native
+    /* private */ var _bone1Length: Any = js.native
     
-    /* private */ var _bone1Mat: js.Any = js.native
+    /* private */ var _bone1Mat: Any = js.native
     
-    /* private */ var _bone1Quat: js.Any = js.native
+    /* private */ var _bone1Quat: Any = js.native
     
-    /* private */ var _bone2: js.Any = js.native
+    /* private */ var _bone2: Any = js.native
     
-    /* private */ var _bone2Ang: js.Any = js.native
+    /* private */ var _bone2Ang: Any = js.native
     
-    /* private */ var _bone2Length: js.Any = js.native
+    /* private */ var _bone2Length: Any = js.native
     
-    /* private */ var _maxAngle: js.Any = js.native
+    /* private */ var _maxAngle: Any = js.native
     
-    /* private */ var _maxReach: js.Any = js.native
+    /* private */ var _maxReach: Any = js.native
     
-    /* private */ var _rightHandedSystem: js.Any = js.native
+    /* private */ var _rightHandedSystem: Any = js.native
     
-    /* private */ var _setMaxAngle: js.Any = js.native
+    /* private */ var _setMaxAngle: Any = js.native
     
-    /* private */ var _slerping: js.Any = js.native
+    /* private */ var _slerping: Any = js.native
+    
+    /* private */ var _updateLinkedTransformRotation: Any = js.native
     
     /**
       * Gets or sets maximum allowed angle
@@ -58,9 +68,10 @@ object boneIKControllerMod {
     def maxAngle_=(value: Double): Unit = js.native
     
     /**
-      * Gets or sets the mesh associated with the controller
+      * Gets or sets the TransformNode associated with the controller
+      * Name kept as mesh for back compatibility
       */
-    var mesh: AbstractMesh = js.native
+    var mesh: TransformNode = js.native
     
     /**
       * Gets or sets the pole angle
@@ -78,7 +89,7 @@ object boneIKControllerMod {
     var poleTargetLocalOffset: Vector3 = js.native
     
     /** Gets or sets the mesh used as pole */
-    var poleTargetMesh: AbstractMesh = js.native
+    var poleTargetMesh: TransformNode = js.native
     
     /**
       * Gets or sets the pole target position
@@ -91,9 +102,10 @@ object boneIKControllerMod {
     var slerpAmount: Double = js.native
     
     /**
-      * Gets or sets the target mesh
+      * Gets or sets the target TransformNode
+      * Name kept as mesh for back compatibility
       */
-    var targetMesh: AbstractMesh = js.native
+    var targetMesh: TransformNode = js.native
     
     /**
       * Gets or sets the target position
@@ -112,19 +124,19 @@ object boneIKControllerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpMats")
+    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._TmpMats")
     @js.native
-    def _tmpMats: js.Any = js.native
-    inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+    def _TmpMats: Any = js.native
+    inline def _TmpMats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMats")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpQuat")
+    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._TmpQuat")
     @js.native
-    def _tmpQuat: js.Any = js.native
-    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    def _TmpQuat: Any = js.native
+    inline def _TmpQuat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpQuat")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._tmpVecs")
+    @JSImport("babylonjs/Bones/boneIKController", "BoneIKController._TmpVecs")
     @js.native
-    def _tmpVecs: js.Any = js.native
-    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    def _TmpVecs: Any = js.native
+    inline def _TmpVecs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpVecs")(x.asInstanceOf[js.Any])
   }
 }

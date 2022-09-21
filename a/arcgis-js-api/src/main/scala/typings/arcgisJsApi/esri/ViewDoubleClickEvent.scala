@@ -9,11 +9,11 @@ trait ViewDoubleClickEvent extends StObject {
   
   var button: Double
   
-  var buttons: js.Any
+  var buttons: Any
   
   var mapPoint: Point
   
-  var native: js.Any
+  var native: Any
   
   var stopPropagation: js.Function
   
@@ -29,9 +29,9 @@ object ViewDoubleClickEvent {
   
   inline def apply(
     button: Double,
-    buttons: js.Any,
+    buttons: Any,
     mapPoint: Point,
-    native: js.Any,
+    native: Any,
     stopPropagation: js.Function,
     timestamp: Double,
     x: Double,
@@ -46,11 +46,11 @@ object ViewDoubleClickEvent {
     
     inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
     
-    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     

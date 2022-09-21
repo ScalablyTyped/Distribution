@@ -8,5 +8,5 @@ object inventoryRetrievalJobInputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_InventoryRetrievalJobInput", "_InventoryRetrievalJobInput")
   @js.native
-  val InventoryRetrievalJobInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InventoryRetrievalJobInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

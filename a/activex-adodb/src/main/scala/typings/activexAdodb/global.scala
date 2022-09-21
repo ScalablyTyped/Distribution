@@ -16,7 +16,7 @@ object global {
     
     @JSGlobal("ADODB.Bookmark")
     @js.native
-    /* private */ class Bookmark ()
+    /* private */ open class Bookmark ()
       extends StObject
          with typings.activexAdodb.ADODB.Bookmark {
       
@@ -27,19 +27,19 @@ object global {
     
     @JSGlobal("ADODB.Command")
     @js.native
-    /* private */ class Command ()
+    /* private */ open class Command ()
       extends StObject
          with typings.activexAdodb.ADODB.Command
     
     @JSGlobal("ADODB.Connection")
     @js.native
-    /* private */ class Connection ()
+    /* private */ open class Connection ()
       extends StObject
          with typings.activexAdodb.ADODB.Connection
     
     @JSGlobal("ADODB.Error")
     @js.native
-    /* private */ class Error ()
+    /* private */ open class Error ()
       extends StObject
          with typings.activexAdodb.ADODB.Error {
       
@@ -71,7 +71,7 @@ object global {
     
     @JSGlobal("ADODB.Field")
     @js.native
-    /* private */ class Field ()
+    /* private */ open class Field ()
       extends StObject
          with typings.activexAdodb.ADODB.Field {
       
@@ -83,20 +83,20 @@ object global {
       override val ActualSize: Double = js.native
       
       /* CompleteClass */
-      override def AppendChunk(Data: js.Any): Unit = js.native
+      override def AppendChunk(Data: Any): Unit = js.native
       
       /** Sum of one or more of the values in the **FieldAttributeEnum** enum */
       /* CompleteClass */
       var Attributes: FieldAttributeEnum = js.native
       
       /* CompleteClass */
-      var DataFormat: js.Any = js.native
+      var DataFormat: Any = js.native
       
       /* CompleteClass */
       var DefinedSize: Double = js.native
       
       /* CompleteClass */
-      override def GetChunk(Length: Double): js.Any = js.native
+      override def GetChunk(Length: Double): Any = js.native
       
       /* CompleteClass */
       override val Name: String = js.native
@@ -105,7 +105,7 @@ object global {
       var NumericScale: Double = js.native
       
       /* CompleteClass */
-      override val OriginalValue: js.Any = js.native
+      override val OriginalValue: Any = js.native
       
       /* CompleteClass */
       var Precision: Double = js.native
@@ -125,15 +125,15 @@ object global {
       var Type: DataTypeEnum = js.native
       
       /* CompleteClass */
-      override val UnderlyingValue: js.Any = js.native
+      override val UnderlyingValue: Any = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
     }
     
     @JSGlobal("ADODB.Parameter")
     @js.native
-    /* private */ class Parameter ()
+    /* private */ open class Parameter ()
       extends StObject
          with typings.activexAdodb.ADODB.Parameter {
       
@@ -142,7 +142,7 @@ object global {
       var ADODBDotParameter_typekey: typings.activexAdodb.ADODB.Parameter = js.native
       
       /* CompleteClass */
-      override def AppendChunk(Val: js.Any): Unit = js.native
+      override def AppendChunk(Val: Any): Unit = js.native
       
       /** Sum of one or more of the values in the **ParameterAttributesEnum** enum */
       /* CompleteClass */
@@ -175,12 +175,12 @@ object global {
       var Type: DataTypeEnum = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
     }
     
     @JSGlobal("ADODB.Property")
     @js.native
-    /* private */ class Property ()
+    /* private */ open class Property ()
       extends StObject
          with typings.activexAdodb.ADODB.Property {
       
@@ -199,18 +199,18 @@ object global {
       override val Type: DataTypeEnum = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
     }
     
     @JSGlobal("ADODB.Record")
     @js.native
-    /* private */ class Record ()
+    /* private */ open class Record ()
       extends StObject
          with typings.activexAdodb.ADODB.Record
     
     @JSGlobal("ADODB.Stream")
     @js.native
-    /* private */ class Stream ()
+    /* private */ open class Stream ()
       extends StObject
          with typings.activexAdodb.ADODB.Stream
   }

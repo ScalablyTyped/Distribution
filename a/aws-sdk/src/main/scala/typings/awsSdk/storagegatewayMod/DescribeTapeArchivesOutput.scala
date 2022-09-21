@@ -33,6 +33,6 @@ object DescribeTapeArchivesOutput {
     
     inline def setTapeArchivesUndefined: Self = StObject.set(x, "TapeArchives", js.undefined)
     
-    inline def setTapeArchivesVarargs(value: TapeArchive*): Self = StObject.set(x, "TapeArchives", js.Array(value :_*))
+    inline def setTapeArchivesVarargs(value: TapeArchive*): Self = StObject.set(x, "TapeArchives", js.Array(value*))
   }
 }

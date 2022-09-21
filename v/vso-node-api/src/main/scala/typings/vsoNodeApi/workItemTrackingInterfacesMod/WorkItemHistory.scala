@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +12,17 @@ trait WorkItemHistory
   
   var revisedBy: IdentityReference
   
-  var revisedDate: Date
+  var revisedDate: js.Date
   
   var value: String
 }
 object WorkItemHistory {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     rev: Double,
     revisedBy: IdentityReference,
-    revisedDate: Date,
+    revisedDate: js.Date,
     url: String,
     value: String
   ): WorkItemHistory = {
@@ -37,7 +36,7 @@ object WorkItemHistory {
     
     inline def setRevisedBy(value: IdentityReference): Self = StObject.set(x, "revisedBy", value.asInstanceOf[js.Any])
     
-    inline def setRevisedDate(value: Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
+    inline def setRevisedDate(value: js.Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

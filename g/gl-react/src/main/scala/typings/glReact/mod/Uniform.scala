@@ -23,7 +23,7 @@ object Uniform {
   inline def backbufferFrom(node: Bus): typings.glReact.anon.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("backbufferFrom")(node.asInstanceOf[js.Any]).asInstanceOf[typings.glReact.anon.Node]
   inline def backbufferFrom(node: Node): typings.glReact.anon.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("backbufferFrom")(node.asInstanceOf[js.Any]).asInstanceOf[typings.glReact.anon.Node]
   
-  inline def textureSize(obj: js.Any): Obj = ^.asInstanceOf[js.Dynamic].applyDynamic("textureSize")(obj.asInstanceOf[js.Any]).asInstanceOf[Obj]
+  inline def textureSize(obj: Any): Obj = ^.asInstanceOf[js.Dynamic].applyDynamic("textureSize")(obj.asInstanceOf[js.Any]).asInstanceOf[Obj]
   
-  inline def textureSizeRatio(obj: js.Any): Ratio = ^.asInstanceOf[js.Dynamic].applyDynamic("textureSizeRatio")(obj.asInstanceOf[js.Any]).asInstanceOf[Ratio]
+  inline def textureSizeRatio(obj: Any): Ratio = ^.asInstanceOf[js.Dynamic].applyDynamic("textureSizeRatio")(obj.asInstanceOf[js.Any]).asInstanceOf[Ratio]
 }

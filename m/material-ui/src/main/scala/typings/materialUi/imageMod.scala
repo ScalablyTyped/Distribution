@@ -10,10 +10,10 @@ object imageMod {
   
   @JSImport("material-ui/svg-icons/image/image", JSImport.Default)
   @js.native
-  class default () extends ImageImage
+  open class default () extends ImageImage
   
   @JSImport("material-ui/svg-icons/image/image", "ImageImage")
   @js.native
-  class ImageImage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageImage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

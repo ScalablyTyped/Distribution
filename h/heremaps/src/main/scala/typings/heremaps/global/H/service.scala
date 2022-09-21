@@ -21,7 +21,7 @@ object service {
     * Constructor
     * @param opt_options {H.service.AbstractRestService.Options=}
     */
-  class AbstractRestService ()
+  open class AbstractRestService ()
     extends StObject
        with typings.heremaps.H.service.AbstractRestService {
     def this(opt_options: Options) = this()
@@ -37,7 +37,7 @@ object service {
     * Constructor
     * @param opt_options {H.service.EnterpriseRoutingService.Options=}
     */
-  class EnterpriseRoutingService ()
+  open class EnterpriseRoutingService ()
     extends StObject
        with typings.heremaps.H.service.EnterpriseRoutingService {
     def this(opt_options: typings.heremaps.H.service.EnterpriseRoutingService.Options) = this()
@@ -52,7 +52,7 @@ object service {
     * Constructor
     * @param opt_options {H.service.GeocodingService.Options=}
     */
-  class GeocodingService ()
+  open class GeocodingService ()
     extends StObject
        with typings.heremaps.H.service.GeocodingService {
     def this(opt_options: typings.heremaps.H.service.GeocodingService.Options) = this()
@@ -67,7 +67,7 @@ object service {
     * Constructor
     * @param opt_options {H.service.MapTileService.Options=}
     */
-  class MapTileService ()
+  open class MapTileService ()
     extends StObject
        with typings.heremaps.H.service.MapTileService {
     def this(opt_options: typings.heremaps.H.service.MapTileService.Options) = this()
@@ -82,7 +82,7 @@ object service {
     * Constructor
     * @param opt_options {H.service.PlacesService.Options=}
     */
-  class PlacesService ()
+  open class PlacesService ()
     extends StObject
        with typings.heremaps.H.service.PlacesService {
     def this(opt_options: typings.heremaps.H.service.PlacesService.Options) = this()
@@ -119,7 +119,7 @@ object service {
     */
   @JSGlobal("H.service.Platform")
   @js.native
-  class Platform protected ()
+  open class Platform protected ()
     extends StObject
        with typings.heremaps.H.service.Platform {
     /**
@@ -139,7 +139,7 @@ object service {
     * Constructor
     * @param opt_options {H.service.RoutingService.Options=}
     */
-  class RoutingService ()
+  open class RoutingService ()
     extends StObject
        with typings.heremaps.H.service.RoutingService {
     def this(opt_options: typings.heremaps.H.service.RoutingService.Options) = this()
@@ -151,7 +151,7 @@ object service {
     */
   @JSGlobal("H.service.Url")
   @js.native
-  class Url protected ()
+  open class Url protected ()
     extends StObject
        with typings.heremaps.H.service.Url {
     /**
@@ -257,7 +257,7 @@ object service {
       * Constructor
       * @param opt_options {H.service.metaInfo.Service.Options=} - additional service parameters
       */
-    class Service ()
+    open class Service ()
       extends StObject
          with typings.heremaps.H.service.metaInfo.Service {
       def this(opt_options: typings.heremaps.H.service.metaInfo.Service.Options) = this()
@@ -268,7 +268,7 @@ object service {
       */
     @JSGlobal("H.service.metaInfo.TileProvider")
     @js.native
-    class TileProvider protected ()
+    open class TileProvider protected ()
       extends StObject
          with RemoteTileProvider {
       def this(service: typings.heremaps.H.service.MapTileService) = this()
@@ -316,7 +316,7 @@ object service {
       * Constructor
       * @param opt_options {H.service.Service.Options=}
       */
-    class Service ()
+    open class Service ()
       extends StObject
          with typings.heremaps.H.service.traffic.Service {
       def this(opt_options: typings.heremaps.H.service.traffic.Service.Options) = this()
@@ -330,7 +330,7 @@ object service {
       */
     @JSGlobal("H.service.venues.Building")
     @js.native
-    class Building protected ()
+    open class Building protected ()
       extends StObject
          with typings.heremaps.H.service.venues.Building {
       /**
@@ -349,7 +349,7 @@ object service {
       */
     @JSGlobal("H.service.venues.Floor")
     @js.native
-    class Floor protected ()
+    open class Floor protected ()
       extends StObject
          with typings.heremaps.H.service.venues.Floor {
       /**
@@ -358,7 +358,7 @@ object service {
         * @param data {*} - The meta data of this floor
         * @param level {number} - The level of this floor
         */
-      def this(provider: ObjectProvider, data: js.Any, level: Double) = this()
+      def this(provider: ObjectProvider, data: Any, level: Double) = this()
     }
     
     /**
@@ -370,7 +370,7 @@ object service {
       * Constructor
       * @param opt_options {H.service.venues.Service.Options=} - additional service parameters
       */
-    class Service ()
+    open class Service ()
       extends StObject
          with typings.heremaps.H.service.venues.Service {
       def this(opt_options: typings.heremaps.H.service.venues.Service.Options) = this()
@@ -400,7 +400,7 @@ object service {
       */
     @JSGlobal("H.service.venues.Space")
     @js.native
-    class Space protected ()
+    open class Space protected ()
       extends StObject
          with typings.heremaps.H.service.venues.Space {
       /**
@@ -411,8 +411,8 @@ object service {
         * @param opt_isFloorSpace {boolean=} - Indicates whether this space represents a floor itself, defaults to false
         */
       def this(provider: ObjectProvider, uid: String) = this()
-      def this(provider: ObjectProvider, uid: String, data: js.Any) = this()
-      def this(provider: ObjectProvider, uid: String, data: js.Any, opt_isFloorSpace: Boolean) = this()
+      def this(provider: ObjectProvider, uid: String, data: Any) = this()
+      def this(provider: ObjectProvider, uid: String, data: Any, opt_isFloorSpace: Boolean) = this()
       def this(provider: ObjectProvider, uid: String, data: Unit, opt_isFloorSpace: Boolean) = this()
     }
     
@@ -421,7 +421,7 @@ object service {
       */
     @JSGlobal("H.service.venues.TileProvider")
     @js.native
-    class TileProvider protected ()
+    open class TileProvider protected ()
       extends StObject
          with typings.heremaps.H.service.venues.TileProvider {
       /**
@@ -443,7 +443,7 @@ object service {
       */
     @JSGlobal("H.service.venues.Venue")
     @js.native
-    class Venue protected ()
+    open class Venue protected ()
       extends StObject
          with typings.heremaps.H.service.venues.Venue {
       /**

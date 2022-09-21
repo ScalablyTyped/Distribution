@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteConfigRuleRequest extends StObject {
   
   /**
-    * The name of the AWS Config rule that you want to delete.
+    * The name of the Config rule that you want to delete.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
 }

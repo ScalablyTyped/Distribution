@@ -74,7 +74,7 @@ object mod {
       * Resolve a requireable path to a real filesystem path to a JavaScript or JSON file.
       * Resolution is performed relative to the passed module.
       */
-    inline def resolve(path: String, module: js.Any): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(path.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+    inline def resolve(path: String, module: Any): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(path.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
     inline def resolve_=(x: Resolve): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolve")(x.asInstanceOf[js.Any])
     
     /**
@@ -84,7 +84,7 @@ object mod {
     inline def resolver(resolve: Resolve): Unmount = ^.asInstanceOf[js.Dynamic].applyDynamic("resolver")(resolve.asInstanceOf[js.Any]).asInstanceOf[Unmount]
     
     /** Convert anything to valid CommonJS JavaScript module source code. */
-    inline def toJavascriptModuleSource(anything: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_javascript_module_source")(anything.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toJavascriptModuleSource(anything: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_javascript_module_source")(anything.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   trait GlobalHookOptions extends StObject {
@@ -112,28 +112,28 @@ object mod {
     }
   }
   
-  type GlobalResolve = js.Function2[/* path */ String, /* module */ js.Any, js.UndefOr[Path]]
+  type GlobalResolve = js.Function2[/* path */ String, /* module */ Any, js.UndefOr[Path]]
   
   trait Log extends StObject {
     
-    def debug(args: js.Any*): Unit
+    def debug(args: Any*): Unit
     
-    def error(args: js.Any*): Unit
+    def error(args: Any*): Unit
     
     var options: LogOptions
     
-    def trace(args: js.Any*): Unit
+    def trace(args: Any*): Unit
     
-    def warning(args: js.Any*): Unit
+    def warning(args: Any*): Unit
   }
   object Log {
     
     inline def apply(
-      debug: /* repeated */ js.Any => Unit,
-      error: /* repeated */ js.Any => Unit,
+      debug: /* repeated */ Any => Unit,
+      error: /* repeated */ Any => Unit,
       options: LogOptions,
-      trace: /* repeated */ js.Any => Unit,
-      warning: /* repeated */ js.Any => Unit
+      trace: /* repeated */ Any => Unit,
+      warning: /* repeated */ Any => Unit
     ): Log = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), options = options.asInstanceOf[js.Any], trace = js.Any.fromFunction1(trace), warning = js.Any.fromFunction1(warning))
       __obj.asInstanceOf[Log]
@@ -141,15 +141,15 @@ object mod {
     
     extension [Self <: Log](x: Self) {
       
-      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setOptions(value: LogOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: /* repeated */ Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
-      inline def setWarning(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      inline def setWarning(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
     }
   }
   
@@ -173,7 +173,7 @@ object mod {
     }
   }
   
-  type Resolve = js.Function2[/* path */ String, /* module */ js.Any, js.UndefOr[String]]
+  type Resolve = js.Function2[/* path */ String, /* module */ Any, js.UndefOr[String]]
   
   trait Unmount extends StObject {
     

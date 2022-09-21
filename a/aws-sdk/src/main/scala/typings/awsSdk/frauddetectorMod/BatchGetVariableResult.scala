@@ -29,12 +29,12 @@ object BatchGetVariableResult {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: BatchGetVariableError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchGetVariableError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setVariables(value: VariableList): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     
-    inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

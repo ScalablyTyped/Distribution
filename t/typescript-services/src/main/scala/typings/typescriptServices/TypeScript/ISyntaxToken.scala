@@ -30,14 +30,14 @@ trait ISyntaxToken
   
   var tokenKind: SyntaxKind
   
-  def value(): js.Any
+  def value(): Any
   
   def valueText(): String
 }
 object ISyntaxToken {
   
   inline def apply(
-    accept: ISyntaxVisitor => js.Any,
+    accept: ISyntaxVisitor => Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
     collectTextElements: js.Array[String] => Unit,
@@ -72,7 +72,7 @@ object ISyntaxToken {
     tokenKind: SyntaxKind,
     trailingTrivia: () => ISyntaxTriviaList,
     trailingTriviaWidth: () => Double,
-    value: () => js.Any,
+    value: () => Any,
     valueText: () => String,
     width: () => Double,
     withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
@@ -106,7 +106,7 @@ object ISyntaxToken {
     
     inline def setTokenKind(value: SyntaxKind): Self = StObject.set(x, "tokenKind", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: () => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+    inline def setValue(value: () => Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     
     inline def setValueText(value: () => String): Self = StObject.set(x, "valueText", js.Any.fromFunction0(value))
   }

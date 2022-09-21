@@ -10,10 +10,10 @@ share extension using react-native for both ios and android
 | ------------------ | :-------------: |
 | Full name          | react-native-share-extension |
 | Keywords           | react-component, react-native, share-extension |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 11335 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 404.0 |
+| # stars            | 696.0 |
 
 ## Links
 - [Homepage](https://github.com/alinz/react-native-share-extension)

@@ -18,7 +18,7 @@ trait DetectLanguageRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.DetectLanguageRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.DetectLanguageRequest & TopLevel[Any]
   ] = js.undefined
   
   /** Optional. The format of the source text, for example, "text/html", "text/plain". If left blank, the MIME type defaults to "text/html". */
@@ -46,7 +46,7 @@ object DetectLanguageRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.DetectLanguageRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.DetectLanguageRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

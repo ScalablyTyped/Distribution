@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait seriesTypeBase extends StObject {
   
-  var fill: js.UndefOr[js.Any] = js.undefined
+  var fill: js.UndefOr[Any] = js.undefined
   
   //boolean or number
-  var fillColor: js.UndefOr[js.Any] = js.undefined
+  var fillColor: js.UndefOr[Any] = js.undefined
   
   var lineWidth: js.UndefOr[Double] = js.undefined
   
@@ -24,9 +24,9 @@ object seriesTypeBase {
   
   extension [Self <: seriesTypeBase](x: Self) {
     
-    inline def setFill(value: js.Any): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Any): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    inline def setFillColor(value: js.Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     

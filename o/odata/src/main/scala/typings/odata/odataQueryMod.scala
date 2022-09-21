@@ -9,7 +9,7 @@ object odataQueryMod {
   
   trait OdataQuery
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     @JSName("$compute")
     var $compute: js.UndefOr[String] = js.undefined

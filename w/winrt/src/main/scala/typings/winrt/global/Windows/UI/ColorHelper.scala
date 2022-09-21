@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.UI.ColorHelper")
 @js.native
-class ColorHelper ()
+open class ColorHelper ()
   extends StObject
      with IColorHelper
 /* static members */

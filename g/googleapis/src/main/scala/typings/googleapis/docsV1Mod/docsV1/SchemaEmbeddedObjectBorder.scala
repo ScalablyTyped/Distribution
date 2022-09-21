@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A border around an EmbeddedObject.
-  */
 trait SchemaEmbeddedObjectBorder extends StObject {
   
   /**
@@ -17,12 +14,12 @@ trait SchemaEmbeddedObjectBorder extends StObject {
   /**
     * The dash style of the border.
     */
-  var dashStyle: js.UndefOr[String] = js.undefined
+  var dashStyle: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The property state of the border property.
     */
-  var propertyState: js.UndefOr[String] = js.undefined
+  var propertyState: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The width of the border.
@@ -44,9 +41,13 @@ object SchemaEmbeddedObjectBorder {
     
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
+    inline def setDashStyleNull: Self = StObject.set(x, "dashStyle", null)
+    
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyStateNull: Self = StObject.set(x, "propertyState", null)
     
     inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OutputConfig extends StObject {
   
-  /** Destination on BigQuery. The output table stores the fields in asset proto as columns in BigQuery. */
+  /** Destination on BigQuery. The output table stores the fields in asset Protobuf as columns in BigQuery. */
   var bigqueryDestination: js.UndefOr[BigQueryDestination] = js.undefined
   
   /** Destination on Cloud Storage. */

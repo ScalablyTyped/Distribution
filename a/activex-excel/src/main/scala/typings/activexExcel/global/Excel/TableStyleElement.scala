@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.TableStyleElement")
 @js.native
-/* private */ class TableStyleElement ()
+/* private */ open class TableStyleElement ()
   extends StObject
      with typings.activexExcel.Excel.TableStyleElement {
   
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Interior: typings.activexExcel.Excel.Interior = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var StripeSize: Double = js.native

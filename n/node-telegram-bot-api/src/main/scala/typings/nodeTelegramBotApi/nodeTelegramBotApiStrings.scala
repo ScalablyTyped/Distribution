@@ -15,6 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object nodeTelegramBotApiStrings {
   
   @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
   sealed trait HTML
     extends StObject
        with ParseMode
@@ -37,6 +41,18 @@ object nodeTelegramBotApiStrings {
     extends StObject
        with ChatMemberStatus
   inline def administrator: administrator = "administrator".asInstanceOf[administrator]
+  
+  @js.native
+  sealed trait all_chat_administrators extends StObject
+  inline def all_chat_administrators: all_chat_administrators = "all_chat_administrators".asInstanceOf[all_chat_administrators]
+  
+  @js.native
+  sealed trait all_group_chats extends StObject
+  inline def all_group_chats: all_group_chats = "all_group_chats".asInstanceOf[all_group_chats]
+  
+  @js.native
+  sealed trait all_private_chats extends StObject
+  inline def all_private_chats: all_private_chats = "all_private_chats".asInstanceOf[all_private_chats]
   
   @js.native
   sealed trait animation
@@ -83,6 +99,12 @@ object nodeTelegramBotApiStrings {
   inline def callback_query: callback_query = "callback_query".asInstanceOf[callback_query]
   
   @js.native
+  sealed trait cashtag
+    extends StObject
+       with MessageEntityType
+  inline def cashtag: cashtag = "cashtag".asInstanceOf[cashtag]
+  
+  @js.native
   sealed trait channel
     extends StObject
        with ChatType
@@ -99,6 +121,34 @@ object nodeTelegramBotApiStrings {
   inline def channel_post: channel_post = "channel_post".asInstanceOf[channel_post]
   
   @js.native
+  sealed trait chat extends StObject
+  inline def chat: chat = "chat".asInstanceOf[chat]
+  
+  @js.native
+  sealed trait chat_administrators extends StObject
+  inline def chat_administrators: chat_administrators = "chat_administrators".asInstanceOf[chat_administrators]
+  
+  @js.native
+  sealed trait chat_invite_link
+    extends StObject
+       with MessageType
+  inline def chat_invite_link: chat_invite_link = "chat_invite_link".asInstanceOf[chat_invite_link]
+  
+  @js.native
+  sealed trait chat_join_request extends StObject
+  inline def chat_join_request: chat_join_request = "chat_join_request".asInstanceOf[chat_join_request]
+  
+  @js.native
+  sealed trait chat_member extends StObject
+  inline def chat_member: chat_member = "chat_member".asInstanceOf[chat_member]
+  
+  @js.native
+  sealed trait chat_member_updated
+    extends StObject
+       with MessageType
+  inline def chat_member_updated: chat_member_updated = "chat_member_updated".asInstanceOf[chat_member_updated]
+  
+  @js.native
   sealed trait chosen_inline_result extends StObject
   inline def chosen_inline_result: chosen_inline_result = "chosen_inline_result".asInstanceOf[chosen_inline_result]
   
@@ -107,6 +157,10 @@ object nodeTelegramBotApiStrings {
     extends StObject
        with MessageEntityType
   inline def code: code = "code".asInstanceOf[code]
+  
+  @js.native
+  sealed trait commands extends StObject
+  inline def commands: commands = "commands".asInstanceOf[commands]
   
   @js.native
   sealed trait contact
@@ -257,6 +311,12 @@ object nodeTelegramBotApiStrings {
   inline def message: message = "message".asInstanceOf[message]
   
   @js.native
+  sealed trait message_auto_delete_timer_changed
+    extends StObject
+       with MessageType
+  inline def message_auto_delete_timer_changed: message_auto_delete_timer_changed = "message_auto_delete_timer_changed".asInstanceOf[message_auto_delete_timer_changed]
+  
+  @js.native
   sealed trait migrate_from_chat_id
     extends StObject
        with MessageType
@@ -271,6 +331,10 @@ object nodeTelegramBotApiStrings {
   @js.native
   sealed trait mpeg4_gif extends StObject
   inline def mpeg4_gif: mpeg4_gif = "mpeg4_gif".asInstanceOf[mpeg4_gif]
+  
+  @js.native
+  sealed trait my_chat_member extends StObject
+  inline def my_chat_member: my_chat_member = "my_chat_member".asInstanceOf[my_chat_member]
   
   @js.native
   sealed trait new_chat_members
@@ -295,6 +359,12 @@ object nodeTelegramBotApiStrings {
     extends StObject
        with MessageType
   inline def passport_data: passport_data = "passport_data".asInstanceOf[passport_data]
+  
+  @js.native
+  sealed trait phone_number
+    extends StObject
+       with MessageEntityType
+  inline def phone_number: phone_number = "phone_number".asInstanceOf[phone_number]
   
   @js.native
   sealed trait photo
@@ -339,12 +409,6 @@ object nodeTelegramBotApiStrings {
   inline def quiz: quiz = "quiz".asInstanceOf[quiz]
   
   @js.native
-  sealed trait record_audio
-    extends StObject
-       with ChatAction
-  inline def record_audio: record_audio = "record_audio".asInstanceOf[record_audio]
-  
-  @js.native
   sealed trait record_video
     extends StObject
        with ChatAction
@@ -355,6 +419,12 @@ object nodeTelegramBotApiStrings {
     extends StObject
        with ChatAction
   inline def record_video_note: record_video_note = "record_video_note".asInstanceOf[record_video_note]
+  
+  @js.native
+  sealed trait record_voice
+    extends StObject
+       with ChatAction
+  inline def record_voice: record_voice = "record_voice".asInstanceOf[record_voice]
   
   @js.native
   sealed trait regular
@@ -373,10 +443,22 @@ object nodeTelegramBotApiStrings {
   inline def shipping_query: shipping_query = "shipping_query".asInstanceOf[shipping_query]
   
   @js.native
+  sealed trait spoiler
+    extends StObject
+       with MessageEntityType
+  inline def spoiler: spoiler = "spoiler".asInstanceOf[spoiler]
+  
+  @js.native
   sealed trait sticker
     extends StObject
        with MessageType
   inline def sticker: sticker = "sticker".asInstanceOf[sticker]
+  
+  @js.native
+  sealed trait strikethrough
+    extends StObject
+       with MessageEntityType
+  inline def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
   
   @js.native
   sealed trait successful_payment
@@ -421,10 +503,10 @@ object nodeTelegramBotApiStrings {
   inline def typing: typing = "typing".asInstanceOf[typing]
   
   @js.native
-  sealed trait upload_audio
+  sealed trait underline
     extends StObject
-       with ChatAction
-  inline def upload_audio: upload_audio = "upload_audio".asInstanceOf[upload_audio]
+       with MessageEntityType
+  inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
   sealed trait upload_document
@@ -451,6 +533,12 @@ object nodeTelegramBotApiStrings {
   inline def upload_video_note: upload_video_note = "upload_video_note".asInstanceOf[upload_video_note]
   
   @js.native
+  sealed trait upload_voice
+    extends StObject
+       with ChatAction
+  inline def upload_voice: upload_voice = "upload_voice".asInstanceOf[upload_voice]
+  
+  @js.native
   sealed trait url
     extends StObject
        with MessageEntityType
@@ -467,6 +555,30 @@ object nodeTelegramBotApiStrings {
   inline def video: video = "video".asInstanceOf[video]
   
   @js.native
+  sealed trait video_chat_ended
+    extends StObject
+       with MessageType
+  inline def video_chat_ended: video_chat_ended = "video_chat_ended".asInstanceOf[video_chat_ended]
+  
+  @js.native
+  sealed trait video_chat_participants_invited
+    extends StObject
+       with MessageType
+  inline def video_chat_participants_invited: video_chat_participants_invited = "video_chat_participants_invited".asInstanceOf[video_chat_participants_invited]
+  
+  @js.native
+  sealed trait video_chat_scheduled
+    extends StObject
+       with MessageType
+  inline def video_chat_scheduled: video_chat_scheduled = "video_chat_scheduled".asInstanceOf[video_chat_scheduled]
+  
+  @js.native
+  sealed trait video_chat_started
+    extends StObject
+       with MessageType
+  inline def video_chat_started: video_chat_started = "video_chat_started".asInstanceOf[video_chat_started]
+  
+  @js.native
   sealed trait video_note
     extends StObject
        with MessageType
@@ -477,6 +589,16 @@ object nodeTelegramBotApiStrings {
     extends StObject
        with MessageType
   inline def voice: voice = "voice".asInstanceOf[voice]
+  
+  @js.native
+  sealed trait web_app extends StObject
+  inline def web_app: web_app = "web_app".asInstanceOf[web_app]
+  
+  @js.native
+  sealed trait web_app_data
+    extends StObject
+       with MessageType
+  inline def web_app_data: web_app_data = "web_app_data".asInstanceOf[web_app_data]
   
   @js.native
   sealed trait webhook_error extends StObject

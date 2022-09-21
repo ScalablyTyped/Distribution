@@ -9,7 +9,7 @@ trait ProvisioningArtifactSummary extends StObject {
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[ProvisioningArtifactCreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the provisioning artifact.
@@ -27,7 +27,7 @@ trait ProvisioningArtifactSummary extends StObject {
   var Name: js.UndefOr[ProvisioningArtifactName] = js.undefined
   
   /**
-    * The metadata for the provisioning artifact. This is used with AWS Marketplace products.
+    * The metadata for the provisioning artifact. This is used with Amazon Web Services Marketplace products.
     */
   var ProvisioningArtifactMetadata: js.UndefOr[ProvisioningArtifactInfo] = js.undefined
 }
@@ -40,7 +40,7 @@ object ProvisioningArtifactSummary {
   
   extension [Self <: ProvisioningArtifactSummary](x: Self) {
     
-    inline def setCreatedTime(value: ProvisioningArtifactCreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

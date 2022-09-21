@@ -1,7 +1,7 @@
 
 # Scala.js typings for webxr
 
-Typings are for version 0.1
+Typings are for version 0.5
 
 ## Library description:
 An entry point for WebXR tools.
@@ -10,10 +10,10 @@ An entry point for WebXR tools.
 | ------------------ | :-------------: |
 | Full name          | webxr |
 | Keywords           | webxr, xr, webvr, vr, cli, terminal, headless, browser, automation, commandline, command-line, testing |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 206 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 527.3333333333334 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/webvrrocks/webxr#readme)

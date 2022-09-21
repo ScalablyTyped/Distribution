@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("js-roman-numerals", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RomanNumeral {
     def this(value: String) = this()

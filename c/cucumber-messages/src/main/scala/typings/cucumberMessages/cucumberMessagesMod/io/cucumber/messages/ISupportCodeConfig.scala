@@ -34,7 +34,7 @@ object ISupportCodeConfig {
     
     inline def setAfterTestCaseHooksUndefined: Self = StObject.set(x, "afterTestCaseHooks", js.undefined)
     
-    inline def setAfterTestCaseHooksVarargs(value: IHook*): Self = StObject.set(x, "afterTestCaseHooks", js.Array(value :_*))
+    inline def setAfterTestCaseHooksVarargs(value: IHook*): Self = StObject.set(x, "afterTestCaseHooks", js.Array(value*))
     
     inline def setBeforeTestCaseHooks(value: js.Array[IHook]): Self = StObject.set(x, "beforeTestCaseHooks", value.asInstanceOf[js.Any])
     
@@ -42,7 +42,7 @@ object ISupportCodeConfig {
     
     inline def setBeforeTestCaseHooksUndefined: Self = StObject.set(x, "beforeTestCaseHooks", js.undefined)
     
-    inline def setBeforeTestCaseHooksVarargs(value: IHook*): Self = StObject.set(x, "beforeTestCaseHooks", js.Array(value :_*))
+    inline def setBeforeTestCaseHooksVarargs(value: IHook*): Self = StObject.set(x, "beforeTestCaseHooks", js.Array(value*))
     
     inline def setParameterTypes(value: js.Array[IParameterType]): Self = StObject.set(x, "parameterTypes", value.asInstanceOf[js.Any])
     
@@ -50,7 +50,7 @@ object ISupportCodeConfig {
     
     inline def setParameterTypesUndefined: Self = StObject.set(x, "parameterTypes", js.undefined)
     
-    inline def setParameterTypesVarargs(value: IParameterType*): Self = StObject.set(x, "parameterTypes", js.Array(value :_*))
+    inline def setParameterTypesVarargs(value: IParameterType*): Self = StObject.set(x, "parameterTypes", js.Array(value*))
     
     inline def setStepDefinitions(value: js.Array[IStepDefinition]): Self = StObject.set(x, "stepDefinitions", value.asInstanceOf[js.Any])
     
@@ -58,6 +58,6 @@ object ISupportCodeConfig {
     
     inline def setStepDefinitionsUndefined: Self = StObject.set(x, "stepDefinitions", js.undefined)
     
-    inline def setStepDefinitionsVarargs(value: IStepDefinition*): Self = StObject.set(x, "stepDefinitions", js.Array(value :_*))
+    inline def setStepDefinitionsVarargs(value: IStepDefinition*): Self = StObject.set(x, "stepDefinitions", js.Array(value*))
   }
 }

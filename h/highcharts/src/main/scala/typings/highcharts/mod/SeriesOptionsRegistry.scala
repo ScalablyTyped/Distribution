@@ -14,6 +14,8 @@ trait SeriesOptionsRegistry extends StObject {
   
   var SeriesApoOptions: typings.highcharts.mod.SeriesApoOptions
   
+  var SeriesArcdiagramOptions: typings.highcharts.mod.SeriesArcdiagramOptions
+  
   var SeriesAreaOptions: typings.highcharts.mod.SeriesAreaOptions
   
   var SeriesArearangeOptions: typings.highcharts.mod.SeriesArearangeOptions
@@ -48,6 +50,8 @@ trait SeriesOptionsRegistry extends StObject {
   
   var SeriesCmfOptions: typings.highcharts.mod.SeriesCmfOptions
   
+  var SeriesCmoOptions: typings.highcharts.mod.SeriesCmoOptions
+  
   var SeriesColumnOptions: typings.highcharts.mod.SeriesColumnOptions
   
   var SeriesColumnpyramidOptions: typings.highcharts.mod.SeriesColumnpyramidOptions
@@ -59,6 +63,10 @@ trait SeriesOptionsRegistry extends StObject {
   var SeriesDemaOptions: typings.highcharts.mod.SeriesDemaOptions
   
   var SeriesDependencywheelOptions: typings.highcharts.mod.SeriesDependencywheelOptions
+  
+  var SeriesDisparityindexOptions: typings.highcharts.mod.SeriesDisparityindexOptions
+  
+  var SeriesDmiOptions: typings.highcharts.mod.SeriesDmiOptions
   
   var SeriesDpoOptions: typings.highcharts.mod.SeriesDpoOptions
   
@@ -80,13 +88,21 @@ trait SeriesOptionsRegistry extends StObject {
   
   var SeriesHeatmapOptions: typings.highcharts.mod.SeriesHeatmapOptions
   
+  var SeriesHeikinashiOptions: typings.highcharts.mod.SeriesHeikinashiOptions
+  
   var SeriesHistogramOptions: typings.highcharts.mod.SeriesHistogramOptions
+  
+  var SeriesHlcOptions: typings.highcharts.mod.SeriesHlcOptions
+  
+  var SeriesHollowcandlestickOptions: typings.highcharts.mod.SeriesHollowcandlestickOptions
   
   var SeriesIkhOptions: typings.highcharts.mod.SeriesIkhOptions
   
   var SeriesItemOptions: typings.highcharts.mod.SeriesItemOptions
   
   var SeriesKeltnerchannelsOptions: typings.highcharts.mod.SeriesKeltnerchannelsOptions
+  
+  var SeriesKlingerOptions: typings.highcharts.mod.SeriesKlingerOptions
   
   var SeriesLineOptions: typings.highcharts.mod.SeriesLineOptions
   
@@ -117,6 +133,8 @@ trait SeriesOptionsRegistry extends StObject {
   var SeriesNatrOptions: typings.highcharts.mod.SeriesNatrOptions
   
   var SeriesNetworkgraphOptions: typings.highcharts.mod.SeriesNetworkgraphOptions
+  
+  var SeriesObvOptions: typings.highcharts.mod.SeriesObvOptions
   
   var SeriesOhlcOptions: typings.highcharts.mod.SeriesOhlcOptions
   
@@ -215,6 +233,7 @@ object SeriesOptionsRegistry {
     SeriesAdOptions: SeriesAdOptions,
     SeriesAoOptions: SeriesAoOptions,
     SeriesApoOptions: SeriesApoOptions,
+    SeriesArcdiagramOptions: SeriesArcdiagramOptions,
     SeriesAreaOptions: SeriesAreaOptions,
     SeriesArearangeOptions: SeriesArearangeOptions,
     SeriesAreasplineOptions: SeriesAreasplineOptions,
@@ -232,12 +251,15 @@ object SeriesOptionsRegistry {
     SeriesCciOptions: SeriesCciOptions,
     SeriesChaikinOptions: SeriesChaikinOptions,
     SeriesCmfOptions: SeriesCmfOptions,
+    SeriesCmoOptions: SeriesCmoOptions,
     SeriesColumnOptions: SeriesColumnOptions,
     SeriesColumnpyramidOptions: SeriesColumnpyramidOptions,
     SeriesColumnrangeOptions: SeriesColumnrangeOptions,
     SeriesCylinderOptions: SeriesCylinderOptions,
     SeriesDemaOptions: SeriesDemaOptions,
     SeriesDependencywheelOptions: SeriesDependencywheelOptions,
+    SeriesDisparityindexOptions: SeriesDisparityindexOptions,
+    SeriesDmiOptions: SeriesDmiOptions,
     SeriesDpoOptions: SeriesDpoOptions,
     SeriesDumbbellOptions: SeriesDumbbellOptions,
     SeriesEmaOptions: SeriesEmaOptions,
@@ -248,10 +270,14 @@ object SeriesOptionsRegistry {
     SeriesGanttOptions: SeriesGanttOptions,
     SeriesGaugeOptions: SeriesGaugeOptions,
     SeriesHeatmapOptions: SeriesHeatmapOptions,
+    SeriesHeikinashiOptions: SeriesHeikinashiOptions,
     SeriesHistogramOptions: SeriesHistogramOptions,
+    SeriesHlcOptions: SeriesHlcOptions,
+    SeriesHollowcandlestickOptions: SeriesHollowcandlestickOptions,
     SeriesIkhOptions: SeriesIkhOptions,
     SeriesItemOptions: SeriesItemOptions,
     SeriesKeltnerchannelsOptions: SeriesKeltnerchannelsOptions,
+    SeriesKlingerOptions: SeriesKlingerOptions,
     SeriesLineOptions: SeriesLineOptions,
     SeriesLinearregressionOptions: SeriesLinearregressionOptions,
     SeriesLinearregressionangleOptions: SeriesLinearregressionangleOptions,
@@ -267,6 +293,7 @@ object SeriesOptionsRegistry {
     SeriesMomentumOptions: SeriesMomentumOptions,
     SeriesNatrOptions: SeriesNatrOptions,
     SeriesNetworkgraphOptions: SeriesNetworkgraphOptions,
+    SeriesObvOptions: SeriesObvOptions,
     SeriesOhlcOptions: SeriesOhlcOptions,
     SeriesOrganizationOptions: SeriesOrganizationOptions,
     SeriesPackedbubbleOptions: SeriesPackedbubbleOptions,
@@ -313,7 +340,7 @@ object SeriesOptionsRegistry {
     SeriesXrangeOptions: SeriesXrangeOptions,
     SeriesZigzagOptions: SeriesZigzagOptions
   ): SeriesOptionsRegistry = {
-    val __obj = js.Dynamic.literal(SeriesAbandsOptions = SeriesAbandsOptions.asInstanceOf[js.Any], SeriesAdOptions = SeriesAdOptions.asInstanceOf[js.Any], SeriesAoOptions = SeriesAoOptions.asInstanceOf[js.Any], SeriesApoOptions = SeriesApoOptions.asInstanceOf[js.Any], SeriesAreaOptions = SeriesAreaOptions.asInstanceOf[js.Any], SeriesArearangeOptions = SeriesArearangeOptions.asInstanceOf[js.Any], SeriesAreasplineOptions = SeriesAreasplineOptions.asInstanceOf[js.Any], SeriesAreasplinerangeOptions = SeriesAreasplinerangeOptions.asInstanceOf[js.Any], SeriesAroonOptions = SeriesAroonOptions.asInstanceOf[js.Any], SeriesAroonoscillatorOptions = SeriesAroonoscillatorOptions.asInstanceOf[js.Any], SeriesAtrOptions = SeriesAtrOptions.asInstanceOf[js.Any], SeriesBarOptions = SeriesBarOptions.asInstanceOf[js.Any], SeriesBbOptions = SeriesBbOptions.asInstanceOf[js.Any], SeriesBellcurveOptions = SeriesBellcurveOptions.asInstanceOf[js.Any], SeriesBoxplotOptions = SeriesBoxplotOptions.asInstanceOf[js.Any], SeriesBubbleOptions = SeriesBubbleOptions.asInstanceOf[js.Any], SeriesBulletOptions = SeriesBulletOptions.asInstanceOf[js.Any], SeriesCandlestickOptions = SeriesCandlestickOptions.asInstanceOf[js.Any], SeriesCciOptions = SeriesCciOptions.asInstanceOf[js.Any], SeriesChaikinOptions = SeriesChaikinOptions.asInstanceOf[js.Any], SeriesCmfOptions = SeriesCmfOptions.asInstanceOf[js.Any], SeriesColumnOptions = SeriesColumnOptions.asInstanceOf[js.Any], SeriesColumnpyramidOptions = SeriesColumnpyramidOptions.asInstanceOf[js.Any], SeriesColumnrangeOptions = SeriesColumnrangeOptions.asInstanceOf[js.Any], SeriesCylinderOptions = SeriesCylinderOptions.asInstanceOf[js.Any], SeriesDemaOptions = SeriesDemaOptions.asInstanceOf[js.Any], SeriesDependencywheelOptions = SeriesDependencywheelOptions.asInstanceOf[js.Any], SeriesDpoOptions = SeriesDpoOptions.asInstanceOf[js.Any], SeriesDumbbellOptions = SeriesDumbbellOptions.asInstanceOf[js.Any], SeriesEmaOptions = SeriesEmaOptions.asInstanceOf[js.Any], SeriesErrorbarOptions = SeriesErrorbarOptions.asInstanceOf[js.Any], SeriesFlagsOptions = SeriesFlagsOptions.asInstanceOf[js.Any], SeriesFunnel3dOptions = SeriesFunnel3dOptions.asInstanceOf[js.Any], SeriesFunnelOptions = SeriesFunnelOptions.asInstanceOf[js.Any], SeriesGanttOptions = SeriesGanttOptions.asInstanceOf[js.Any], SeriesGaugeOptions = SeriesGaugeOptions.asInstanceOf[js.Any], SeriesHeatmapOptions = SeriesHeatmapOptions.asInstanceOf[js.Any], SeriesHistogramOptions = SeriesHistogramOptions.asInstanceOf[js.Any], SeriesIkhOptions = SeriesIkhOptions.asInstanceOf[js.Any], SeriesItemOptions = SeriesItemOptions.asInstanceOf[js.Any], SeriesKeltnerchannelsOptions = SeriesKeltnerchannelsOptions.asInstanceOf[js.Any], SeriesLineOptions = SeriesLineOptions.asInstanceOf[js.Any], SeriesLinearregressionOptions = SeriesLinearregressionOptions.asInstanceOf[js.Any], SeriesLinearregressionangleOptions = SeriesLinearregressionangleOptions.asInstanceOf[js.Any], SeriesLinearregressioninterceptOptions = SeriesLinearregressioninterceptOptions.asInstanceOf[js.Any], SeriesLinearregressionslopeOptions = SeriesLinearregressionslopeOptions.asInstanceOf[js.Any], SeriesLollipopOptions = SeriesLollipopOptions.asInstanceOf[js.Any], SeriesMacdOptions = SeriesMacdOptions.asInstanceOf[js.Any], SeriesMapOptions = SeriesMapOptions.asInstanceOf[js.Any], SeriesMapbubbleOptions = SeriesMapbubbleOptions.asInstanceOf[js.Any], SeriesMaplineOptions = SeriesMaplineOptions.asInstanceOf[js.Any], SeriesMappointOptions = SeriesMappointOptions.asInstanceOf[js.Any], SeriesMfiOptions = SeriesMfiOptions.asInstanceOf[js.Any], SeriesMomentumOptions = SeriesMomentumOptions.asInstanceOf[js.Any], SeriesNatrOptions = SeriesNatrOptions.asInstanceOf[js.Any], SeriesNetworkgraphOptions = SeriesNetworkgraphOptions.asInstanceOf[js.Any], SeriesOhlcOptions = SeriesOhlcOptions.asInstanceOf[js.Any], SeriesOrganizationOptions = SeriesOrganizationOptions.asInstanceOf[js.Any], SeriesPackedbubbleOptions = SeriesPackedbubbleOptions.asInstanceOf[js.Any], SeriesParetoOptions = SeriesParetoOptions.asInstanceOf[js.Any], SeriesPcOptions = SeriesPcOptions.asInstanceOf[js.Any], SeriesPieOptions = SeriesPieOptions.asInstanceOf[js.Any], SeriesPivotpointsOptions = SeriesPivotpointsOptions.asInstanceOf[js.Any], SeriesPolygonOptions = SeriesPolygonOptions.asInstanceOf[js.Any], SeriesPpoOptions = SeriesPpoOptions.asInstanceOf[js.Any], SeriesPriceenvelopesOptions = SeriesPriceenvelopesOptions.asInstanceOf[js.Any], SeriesPsarOptions = SeriesPsarOptions.asInstanceOf[js.Any], SeriesPyramid3dOptions = SeriesPyramid3dOptions.asInstanceOf[js.Any], SeriesPyramidOptions = SeriesPyramidOptions.asInstanceOf[js.Any], SeriesRocOptions = SeriesRocOptions.asInstanceOf[js.Any], SeriesRsiOptions = SeriesRsiOptions.asInstanceOf[js.Any], SeriesSankeyOptions = SeriesSankeyOptions.asInstanceOf[js.Any], SeriesScatter3dOptions = SeriesScatter3dOptions.asInstanceOf[js.Any], SeriesScatterOptions = SeriesScatterOptions.asInstanceOf[js.Any], SeriesSlowstochasticOptions = SeriesSlowstochasticOptions.asInstanceOf[js.Any], SeriesSmaOptions = SeriesSmaOptions.asInstanceOf[js.Any], SeriesSolidgaugeOptions = SeriesSolidgaugeOptions.asInstanceOf[js.Any], SeriesSplineOptions = SeriesSplineOptions.asInstanceOf[js.Any], SeriesStochasticOptions = SeriesStochasticOptions.asInstanceOf[js.Any], SeriesStreamgraphOptions = SeriesStreamgraphOptions.asInstanceOf[js.Any], SeriesSunburstOptions = SeriesSunburstOptions.asInstanceOf[js.Any], SeriesSupertrendOptions = SeriesSupertrendOptions.asInstanceOf[js.Any], SeriesTemaOptions = SeriesTemaOptions.asInstanceOf[js.Any], SeriesTilemapOptions = SeriesTilemapOptions.asInstanceOf[js.Any], SeriesTimelineOptions = SeriesTimelineOptions.asInstanceOf[js.Any], SeriesTreemapOptions = SeriesTreemapOptions.asInstanceOf[js.Any], SeriesTrendlineOptions = SeriesTrendlineOptions.asInstanceOf[js.Any], SeriesTrixOptions = SeriesTrixOptions.asInstanceOf[js.Any], SeriesVariablepieOptions = SeriesVariablepieOptions.asInstanceOf[js.Any], SeriesVariwideOptions = SeriesVariwideOptions.asInstanceOf[js.Any], SeriesVbpOptions = SeriesVbpOptions.asInstanceOf[js.Any], SeriesVectorOptions = SeriesVectorOptions.asInstanceOf[js.Any], SeriesVennOptions = SeriesVennOptions.asInstanceOf[js.Any], SeriesVwapOptions = SeriesVwapOptions.asInstanceOf[js.Any], SeriesWaterfallOptions = SeriesWaterfallOptions.asInstanceOf[js.Any], SeriesWilliamsrOptions = SeriesWilliamsrOptions.asInstanceOf[js.Any], SeriesWindbarbOptions = SeriesWindbarbOptions.asInstanceOf[js.Any], SeriesWmaOptions = SeriesWmaOptions.asInstanceOf[js.Any], SeriesWordcloudOptions = SeriesWordcloudOptions.asInstanceOf[js.Any], SeriesXrangeOptions = SeriesXrangeOptions.asInstanceOf[js.Any], SeriesZigzagOptions = SeriesZigzagOptions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(SeriesAbandsOptions = SeriesAbandsOptions.asInstanceOf[js.Any], SeriesAdOptions = SeriesAdOptions.asInstanceOf[js.Any], SeriesAoOptions = SeriesAoOptions.asInstanceOf[js.Any], SeriesApoOptions = SeriesApoOptions.asInstanceOf[js.Any], SeriesArcdiagramOptions = SeriesArcdiagramOptions.asInstanceOf[js.Any], SeriesAreaOptions = SeriesAreaOptions.asInstanceOf[js.Any], SeriesArearangeOptions = SeriesArearangeOptions.asInstanceOf[js.Any], SeriesAreasplineOptions = SeriesAreasplineOptions.asInstanceOf[js.Any], SeriesAreasplinerangeOptions = SeriesAreasplinerangeOptions.asInstanceOf[js.Any], SeriesAroonOptions = SeriesAroonOptions.asInstanceOf[js.Any], SeriesAroonoscillatorOptions = SeriesAroonoscillatorOptions.asInstanceOf[js.Any], SeriesAtrOptions = SeriesAtrOptions.asInstanceOf[js.Any], SeriesBarOptions = SeriesBarOptions.asInstanceOf[js.Any], SeriesBbOptions = SeriesBbOptions.asInstanceOf[js.Any], SeriesBellcurveOptions = SeriesBellcurveOptions.asInstanceOf[js.Any], SeriesBoxplotOptions = SeriesBoxplotOptions.asInstanceOf[js.Any], SeriesBubbleOptions = SeriesBubbleOptions.asInstanceOf[js.Any], SeriesBulletOptions = SeriesBulletOptions.asInstanceOf[js.Any], SeriesCandlestickOptions = SeriesCandlestickOptions.asInstanceOf[js.Any], SeriesCciOptions = SeriesCciOptions.asInstanceOf[js.Any], SeriesChaikinOptions = SeriesChaikinOptions.asInstanceOf[js.Any], SeriesCmfOptions = SeriesCmfOptions.asInstanceOf[js.Any], SeriesCmoOptions = SeriesCmoOptions.asInstanceOf[js.Any], SeriesColumnOptions = SeriesColumnOptions.asInstanceOf[js.Any], SeriesColumnpyramidOptions = SeriesColumnpyramidOptions.asInstanceOf[js.Any], SeriesColumnrangeOptions = SeriesColumnrangeOptions.asInstanceOf[js.Any], SeriesCylinderOptions = SeriesCylinderOptions.asInstanceOf[js.Any], SeriesDemaOptions = SeriesDemaOptions.asInstanceOf[js.Any], SeriesDependencywheelOptions = SeriesDependencywheelOptions.asInstanceOf[js.Any], SeriesDisparityindexOptions = SeriesDisparityindexOptions.asInstanceOf[js.Any], SeriesDmiOptions = SeriesDmiOptions.asInstanceOf[js.Any], SeriesDpoOptions = SeriesDpoOptions.asInstanceOf[js.Any], SeriesDumbbellOptions = SeriesDumbbellOptions.asInstanceOf[js.Any], SeriesEmaOptions = SeriesEmaOptions.asInstanceOf[js.Any], SeriesErrorbarOptions = SeriesErrorbarOptions.asInstanceOf[js.Any], SeriesFlagsOptions = SeriesFlagsOptions.asInstanceOf[js.Any], SeriesFunnel3dOptions = SeriesFunnel3dOptions.asInstanceOf[js.Any], SeriesFunnelOptions = SeriesFunnelOptions.asInstanceOf[js.Any], SeriesGanttOptions = SeriesGanttOptions.asInstanceOf[js.Any], SeriesGaugeOptions = SeriesGaugeOptions.asInstanceOf[js.Any], SeriesHeatmapOptions = SeriesHeatmapOptions.asInstanceOf[js.Any], SeriesHeikinashiOptions = SeriesHeikinashiOptions.asInstanceOf[js.Any], SeriesHistogramOptions = SeriesHistogramOptions.asInstanceOf[js.Any], SeriesHlcOptions = SeriesHlcOptions.asInstanceOf[js.Any], SeriesHollowcandlestickOptions = SeriesHollowcandlestickOptions.asInstanceOf[js.Any], SeriesIkhOptions = SeriesIkhOptions.asInstanceOf[js.Any], SeriesItemOptions = SeriesItemOptions.asInstanceOf[js.Any], SeriesKeltnerchannelsOptions = SeriesKeltnerchannelsOptions.asInstanceOf[js.Any], SeriesKlingerOptions = SeriesKlingerOptions.asInstanceOf[js.Any], SeriesLineOptions = SeriesLineOptions.asInstanceOf[js.Any], SeriesLinearregressionOptions = SeriesLinearregressionOptions.asInstanceOf[js.Any], SeriesLinearregressionangleOptions = SeriesLinearregressionangleOptions.asInstanceOf[js.Any], SeriesLinearregressioninterceptOptions = SeriesLinearregressioninterceptOptions.asInstanceOf[js.Any], SeriesLinearregressionslopeOptions = SeriesLinearregressionslopeOptions.asInstanceOf[js.Any], SeriesLollipopOptions = SeriesLollipopOptions.asInstanceOf[js.Any], SeriesMacdOptions = SeriesMacdOptions.asInstanceOf[js.Any], SeriesMapOptions = SeriesMapOptions.asInstanceOf[js.Any], SeriesMapbubbleOptions = SeriesMapbubbleOptions.asInstanceOf[js.Any], SeriesMaplineOptions = SeriesMaplineOptions.asInstanceOf[js.Any], SeriesMappointOptions = SeriesMappointOptions.asInstanceOf[js.Any], SeriesMfiOptions = SeriesMfiOptions.asInstanceOf[js.Any], SeriesMomentumOptions = SeriesMomentumOptions.asInstanceOf[js.Any], SeriesNatrOptions = SeriesNatrOptions.asInstanceOf[js.Any], SeriesNetworkgraphOptions = SeriesNetworkgraphOptions.asInstanceOf[js.Any], SeriesObvOptions = SeriesObvOptions.asInstanceOf[js.Any], SeriesOhlcOptions = SeriesOhlcOptions.asInstanceOf[js.Any], SeriesOrganizationOptions = SeriesOrganizationOptions.asInstanceOf[js.Any], SeriesPackedbubbleOptions = SeriesPackedbubbleOptions.asInstanceOf[js.Any], SeriesParetoOptions = SeriesParetoOptions.asInstanceOf[js.Any], SeriesPcOptions = SeriesPcOptions.asInstanceOf[js.Any], SeriesPieOptions = SeriesPieOptions.asInstanceOf[js.Any], SeriesPivotpointsOptions = SeriesPivotpointsOptions.asInstanceOf[js.Any], SeriesPolygonOptions = SeriesPolygonOptions.asInstanceOf[js.Any], SeriesPpoOptions = SeriesPpoOptions.asInstanceOf[js.Any], SeriesPriceenvelopesOptions = SeriesPriceenvelopesOptions.asInstanceOf[js.Any], SeriesPsarOptions = SeriesPsarOptions.asInstanceOf[js.Any], SeriesPyramid3dOptions = SeriesPyramid3dOptions.asInstanceOf[js.Any], SeriesPyramidOptions = SeriesPyramidOptions.asInstanceOf[js.Any], SeriesRocOptions = SeriesRocOptions.asInstanceOf[js.Any], SeriesRsiOptions = SeriesRsiOptions.asInstanceOf[js.Any], SeriesSankeyOptions = SeriesSankeyOptions.asInstanceOf[js.Any], SeriesScatter3dOptions = SeriesScatter3dOptions.asInstanceOf[js.Any], SeriesScatterOptions = SeriesScatterOptions.asInstanceOf[js.Any], SeriesSlowstochasticOptions = SeriesSlowstochasticOptions.asInstanceOf[js.Any], SeriesSmaOptions = SeriesSmaOptions.asInstanceOf[js.Any], SeriesSolidgaugeOptions = SeriesSolidgaugeOptions.asInstanceOf[js.Any], SeriesSplineOptions = SeriesSplineOptions.asInstanceOf[js.Any], SeriesStochasticOptions = SeriesStochasticOptions.asInstanceOf[js.Any], SeriesStreamgraphOptions = SeriesStreamgraphOptions.asInstanceOf[js.Any], SeriesSunburstOptions = SeriesSunburstOptions.asInstanceOf[js.Any], SeriesSupertrendOptions = SeriesSupertrendOptions.asInstanceOf[js.Any], SeriesTemaOptions = SeriesTemaOptions.asInstanceOf[js.Any], SeriesTilemapOptions = SeriesTilemapOptions.asInstanceOf[js.Any], SeriesTimelineOptions = SeriesTimelineOptions.asInstanceOf[js.Any], SeriesTreemapOptions = SeriesTreemapOptions.asInstanceOf[js.Any], SeriesTrendlineOptions = SeriesTrendlineOptions.asInstanceOf[js.Any], SeriesTrixOptions = SeriesTrixOptions.asInstanceOf[js.Any], SeriesVariablepieOptions = SeriesVariablepieOptions.asInstanceOf[js.Any], SeriesVariwideOptions = SeriesVariwideOptions.asInstanceOf[js.Any], SeriesVbpOptions = SeriesVbpOptions.asInstanceOf[js.Any], SeriesVectorOptions = SeriesVectorOptions.asInstanceOf[js.Any], SeriesVennOptions = SeriesVennOptions.asInstanceOf[js.Any], SeriesVwapOptions = SeriesVwapOptions.asInstanceOf[js.Any], SeriesWaterfallOptions = SeriesWaterfallOptions.asInstanceOf[js.Any], SeriesWilliamsrOptions = SeriesWilliamsrOptions.asInstanceOf[js.Any], SeriesWindbarbOptions = SeriesWindbarbOptions.asInstanceOf[js.Any], SeriesWmaOptions = SeriesWmaOptions.asInstanceOf[js.Any], SeriesWordcloudOptions = SeriesWordcloudOptions.asInstanceOf[js.Any], SeriesXrangeOptions = SeriesXrangeOptions.asInstanceOf[js.Any], SeriesZigzagOptions = SeriesZigzagOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesOptionsRegistry]
   }
   
@@ -326,6 +353,8 @@ object SeriesOptionsRegistry {
     inline def setSeriesAoOptions(value: SeriesAoOptions): Self = StObject.set(x, "SeriesAoOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesApoOptions(value: SeriesApoOptions): Self = StObject.set(x, "SeriesApoOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesArcdiagramOptions(value: SeriesArcdiagramOptions): Self = StObject.set(x, "SeriesArcdiagramOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesAreaOptions(value: SeriesAreaOptions): Self = StObject.set(x, "SeriesAreaOptions", value.asInstanceOf[js.Any])
     
@@ -361,6 +390,8 @@ object SeriesOptionsRegistry {
     
     inline def setSeriesCmfOptions(value: SeriesCmfOptions): Self = StObject.set(x, "SeriesCmfOptions", value.asInstanceOf[js.Any])
     
+    inline def setSeriesCmoOptions(value: SeriesCmoOptions): Self = StObject.set(x, "SeriesCmoOptions", value.asInstanceOf[js.Any])
+    
     inline def setSeriesColumnOptions(value: SeriesColumnOptions): Self = StObject.set(x, "SeriesColumnOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesColumnpyramidOptions(value: SeriesColumnpyramidOptions): Self = StObject.set(x, "SeriesColumnpyramidOptions", value.asInstanceOf[js.Any])
@@ -372,6 +403,10 @@ object SeriesOptionsRegistry {
     inline def setSeriesDemaOptions(value: SeriesDemaOptions): Self = StObject.set(x, "SeriesDemaOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesDependencywheelOptions(value: SeriesDependencywheelOptions): Self = StObject.set(x, "SeriesDependencywheelOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesDisparityindexOptions(value: SeriesDisparityindexOptions): Self = StObject.set(x, "SeriesDisparityindexOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesDmiOptions(value: SeriesDmiOptions): Self = StObject.set(x, "SeriesDmiOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesDpoOptions(value: SeriesDpoOptions): Self = StObject.set(x, "SeriesDpoOptions", value.asInstanceOf[js.Any])
     
@@ -393,13 +428,21 @@ object SeriesOptionsRegistry {
     
     inline def setSeriesHeatmapOptions(value: SeriesHeatmapOptions): Self = StObject.set(x, "SeriesHeatmapOptions", value.asInstanceOf[js.Any])
     
+    inline def setSeriesHeikinashiOptions(value: SeriesHeikinashiOptions): Self = StObject.set(x, "SeriesHeikinashiOptions", value.asInstanceOf[js.Any])
+    
     inline def setSeriesHistogramOptions(value: SeriesHistogramOptions): Self = StObject.set(x, "SeriesHistogramOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesHlcOptions(value: SeriesHlcOptions): Self = StObject.set(x, "SeriesHlcOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesHollowcandlestickOptions(value: SeriesHollowcandlestickOptions): Self = StObject.set(x, "SeriesHollowcandlestickOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesIkhOptions(value: SeriesIkhOptions): Self = StObject.set(x, "SeriesIkhOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesItemOptions(value: SeriesItemOptions): Self = StObject.set(x, "SeriesItemOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesKeltnerchannelsOptions(value: SeriesKeltnerchannelsOptions): Self = StObject.set(x, "SeriesKeltnerchannelsOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesKlingerOptions(value: SeriesKlingerOptions): Self = StObject.set(x, "SeriesKlingerOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesLineOptions(value: SeriesLineOptions): Self = StObject.set(x, "SeriesLineOptions", value.asInstanceOf[js.Any])
     
@@ -430,6 +473,8 @@ object SeriesOptionsRegistry {
     inline def setSeriesNatrOptions(value: SeriesNatrOptions): Self = StObject.set(x, "SeriesNatrOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesNetworkgraphOptions(value: SeriesNetworkgraphOptions): Self = StObject.set(x, "SeriesNetworkgraphOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesObvOptions(value: SeriesObvOptions): Self = StObject.set(x, "SeriesObvOptions", value.asInstanceOf[js.Any])
     
     inline def setSeriesOhlcOptions(value: SeriesOhlcOptions): Self = StObject.set(x, "SeriesOhlcOptions", value.asInstanceOf[js.Any])
     

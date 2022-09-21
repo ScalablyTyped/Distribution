@@ -8,5 +8,5 @@ object getEventStreamOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetEventStreamOutput", "GetEventStreamOutput")
   @js.native
-  val GetEventStreamOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetEventStreamOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

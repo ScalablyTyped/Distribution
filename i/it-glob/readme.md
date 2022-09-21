@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-glob
 
-Typings are for version 0.0.10
+Typings are for version 1.0.2
 
 ## Library description:
 Async iterable filename pattern matcher
@@ -10,13 +10,13 @@ Async iterable filename pattern matcher
 | ------------------ | :-------------: |
 | Full name          | it-glob |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 7 |
-| # downloads        | 916043 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 437367.0 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-glob#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-glob)

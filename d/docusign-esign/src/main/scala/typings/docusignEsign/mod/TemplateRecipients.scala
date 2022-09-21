@@ -70,7 +70,8 @@ trait TemplateRecipients extends StObject {
   var intermediaries: js.UndefOr[
     js.Array[
       /* Contains information about an intermediary recipient. An intermediary is a recipient who can, but is not required to,
-    add name and email information for recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */ Intermediary
+    add name and email information for recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */
+  Intermediary
     ]
   ] = js.undefined
   
@@ -121,7 +122,7 @@ object TemplateRecipients {
     inline def setAgentsVarargs(
       value: (/* Contains information about an agent recipient. An agent is a recipient who can add name and email information for recipients that appear after
       the agent in routing order. */ Agent)*
-    ): Self = StObject.set(x, "agents", js.Array(value :_*))
+    ): Self = StObject.set(x, "agents", js.Array(value*))
     
     inline def setCarbonCopies(
       value: js.Array[
@@ -135,13 +136,13 @@ object TemplateRecipients {
     inline def setCarbonCopiesVarargs(
       value: (/* Contains information about a carbon copy recipient. Carbon copy recipients get a copy of the envelope but don't need to sign, initial,
       date or add information to any of the documents.  */ CarbonCopy)*
-    ): Self = StObject.set(x, "carbonCopies", js.Array(value :_*))
+    ): Self = StObject.set(x, "carbonCopies", js.Array(value*))
     
     inline def setCertifiedDeliveries(value: js.Array[CertifiedDelivery]): Self = StObject.set(x, "certifiedDeliveries", value.asInstanceOf[js.Any])
     
     inline def setCertifiedDeliveriesUndefined: Self = StObject.set(x, "certifiedDeliveries", js.undefined)
     
-    inline def setCertifiedDeliveriesVarargs(value: CertifiedDelivery*): Self = StObject.set(x, "certifiedDeliveries", js.Array(value :_*))
+    inline def setCertifiedDeliveriesVarargs(value: CertifiedDelivery*): Self = StObject.set(x, "certifiedDeliveries", js.Array(value*))
     
     inline def setCurrentRoutingOrder(value: String): Self = StObject.set(x, "currentRoutingOrder", value.asInstanceOf[js.Any])
     
@@ -163,7 +164,7 @@ object TemplateRecipients {
       Editors have the same management and access rights for the envelope as the sender. They can make changes to the envelope as if they were using the Correct feature.
       This recipient can add name and email information, add or change the routing order and set authentication options for the remaining recipients. Additionally,
       this recipient can edit signature/initial tabs and text tabs for the remaining recipients. */ Editor)*
-    ): Self = StObject.set(x, "editors", js.Array(value :_*))
+    ): Self = StObject.set(x, "editors", js.Array(value*))
     
     inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
@@ -175,12 +176,13 @@ object TemplateRecipients {
     
     inline def setInPersonSignersUndefined: Self = StObject.set(x, "inPersonSigners", js.undefined)
     
-    inline def setInPersonSignersVarargs(value: InPersonSigner*): Self = StObject.set(x, "inPersonSigners", js.Array(value :_*))
+    inline def setInPersonSignersVarargs(value: InPersonSigner*): Self = StObject.set(x, "inPersonSigners", js.Array(value*))
     
     inline def setIntermediaries(
       value: js.Array[
           /* Contains information about an intermediary recipient. An intermediary is a recipient who can, but is not required to,
-      add name and email information for recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */ Intermediary
+      add name and email information for recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */
+    Intermediary
         ]
     ): Self = StObject.set(x, "intermediaries", value.asInstanceOf[js.Any])
     
@@ -188,8 +190,9 @@ object TemplateRecipients {
     
     inline def setIntermediariesVarargs(
       value: (/* Contains information about an intermediary recipient. An intermediary is a recipient who can, but is not required to,
-      add name and email information for recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */ Intermediary)*
-    ): Self = StObject.set(x, "intermediaries", js.Array(value :_*))
+      add name and email information for recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */
+    Intermediary)*
+    ): Self = StObject.set(x, "intermediaries", js.Array(value*))
     
     inline def setRecipientCount(value: String): Self = StObject.set(x, "recipientCount", value.asInstanceOf[js.Any])
     
@@ -199,13 +202,13 @@ object TemplateRecipients {
     
     inline def setSealsUndefined: Self = StObject.set(x, "seals", js.undefined)
     
-    inline def setSealsVarargs(value: SealSign*): Self = StObject.set(x, "seals", js.Array(value :_*))
+    inline def setSealsVarargs(value: SealSign*): Self = StObject.set(x, "seals", js.Array(value*))
     
     inline def setSigners(value: js.Array[Signer]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
     
     inline def setSignersUndefined: Self = StObject.set(x, "signers", js.undefined)
     
-    inline def setSignersVarargs(value: Signer*): Self = StObject.set(x, "signers", js.Array(value :_*))
+    inline def setSignersVarargs(value: Signer*): Self = StObject.set(x, "signers", js.Array(value*))
     
     inline def setWitnesses(
       value: js.Array[
@@ -219,6 +222,6 @@ object TemplateRecipients {
     inline def setWitnessesVarargs(
       value: (/* A complex type containing information about a witness recipient. Witnesses are recipients whose signatures affirm that the identified signers
       have signed the documents in the envelope. */ Witness)*
-    ): Self = StObject.set(x, "witnesses", js.Array(value :_*))
+    ): Self = StObject.set(x, "witnesses", js.Array(value*))
   }
 }

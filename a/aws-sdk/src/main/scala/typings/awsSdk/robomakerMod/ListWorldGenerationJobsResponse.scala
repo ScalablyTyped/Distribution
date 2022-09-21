@@ -31,6 +31,6 @@ object ListWorldGenerationJobsResponse {
     
     inline def setWorldGenerationJobSummaries(value: WorldGenerationJobSummaries): Self = StObject.set(x, "worldGenerationJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setWorldGenerationJobSummariesVarargs(value: WorldGenerationJobSummary*): Self = StObject.set(x, "worldGenerationJobSummaries", js.Array(value :_*))
+    inline def setWorldGenerationJobSummariesVarargs(value: WorldGenerationJobSummary*): Self = StObject.set(x, "worldGenerationJobSummaries", js.Array(value*))
   }
 }

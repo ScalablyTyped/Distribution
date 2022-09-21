@@ -41,7 +41,7 @@ object IosUpdateConfiguration {
     
     inline def setScheduledInstallDaysUndefined: Self = StObject.set(x, "scheduledInstallDays", js.undefined)
     
-    inline def setScheduledInstallDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "scheduledInstallDays", js.Array(value :_*))
+    inline def setScheduledInstallDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "scheduledInstallDays", js.Array(value*))
     
     inline def setUtcTimeOffsetInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "utcTimeOffsetInMinutes", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,7 @@ object HttpCors {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
@@ -47,6 +47,6 @@ object HttpCors {
     
     inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
     
-    inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
+    inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value*))
   }
 }

@@ -14,17 +14,17 @@ trait AutoAdjust extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
-  var coordinateBBox: js.Any
+  var coordinateBBox: Any
   
   var defaultCfg: Line
   
   var direction: String
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -59,12 +59,12 @@ object AutoAdjust {
     animateOption: Appear,
     autoAdjust: Boolean,
     capture: Boolean,
-    container: js.Any,
-    coordinateBBox: js.Any,
+    container: Any,
+    coordinateBBox: Any,
     defaultCfg: Line,
     direction: String,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -94,17 +94,17 @@ object AutoAdjust {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setCoordinateBBox(value: js.Any): Self = StObject.set(x, "coordinateBBox", value.asInstanceOf[js.Any])
+    inline def setCoordinateBBox(value: Any): Self = StObject.set(x, "coordinateBBox", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: Line): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LifecycleHookSpecification extends StObject {
   
   /**
-    * Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses or if an unexpected failure occurs. The valid values are CONTINUE and ABANDON. The default value is ABANDON.
+    * The action the Auto Scaling group takes when the lifecycle hook timeout elapses or if an unexpected failure occurs. The default value is ABANDON. Valid values: CONTINUE | ABANDON 
     */
   var DefaultResult: js.UndefOr[LifecycleActionResult] = js.undefined
   
   /**
-    * The maximum time, in seconds, that can elapse before the lifecycle hook times out. If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the action that you specified in the DefaultResult parameter. You can prevent the lifecycle hook from timing out by calling RecordLifecycleActionHeartbeat.
+    * The maximum time, in seconds, that can elapse before the lifecycle hook times out. The range is from 30 to 7200 seconds. The default value is 3600 seconds (1 hour).
     */
   var HeartbeatTimeout: js.UndefOr[typings.awsSdk.autoscalingMod.HeartbeatTimeout] = js.undefined
   
@@ -22,7 +22,7 @@ trait LifecycleHookSpecification extends StObject {
   var LifecycleHookName: AsciiStringMaxLen255
   
   /**
-    * The state of the EC2 instance to which you want to attach the lifecycle hook. The valid values are:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING  
+    * The lifecycle transition. For Auto Scaling groups, there are two major lifecycle transitions.   To create a lifecycle hook for scale-out events, specify autoscaling:EC2_INSTANCE_LAUNCHING.   To create a lifecycle hook for scale-in events, specify autoscaling:EC2_INSTANCE_TERMINATING.  
     */
   var LifecycleTransition: typings.awsSdk.autoscalingMod.LifecycleTransition
   
@@ -32,14 +32,14 @@ trait LifecycleHookSpecification extends StObject {
   var NotificationMetadata: js.UndefOr[XmlStringMaxLen1023] = js.undefined
   
   /**
-    * The ARN of the target that Amazon EC2 Auto Scaling sends notifications to when an instance is in the transition state for the lifecycle hook. The notification target can be either an SQS queue or an SNS topic.
+    * The Amazon Resource Name (ARN) of the notification target that Amazon EC2 Auto Scaling sends notifications to when an instance is in a wait state for the lifecycle hook. You can specify an Amazon SNS topic or an Amazon SQS queue.
     */
   var NotificationTargetARN: js.UndefOr[NotificationTargetResourceName] = js.undefined
   
   /**
-    * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target, for example, an Amazon SNS topic or an Amazon SQS queue.
+    * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target. For information about creating this role, see Configure a notification target for a lifecycle hook in the Amazon EC2 Auto Scaling User Guide. Valid only if the notification target is an Amazon SNS topic or an Amazon SQS queue.
     */
-  var RoleARN: js.UndefOr[ResourceName] = js.undefined
+  var RoleARN: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object LifecycleHookSpecification {
   
@@ -70,7 +70,7 @@ object LifecycleHookSpecification {
     
     inline def setNotificationTargetARNUndefined: Self = StObject.set(x, "NotificationTargetARN", js.undefined)
     
-    inline def setRoleARN(value: ResourceName): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: XmlStringMaxLen255): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }

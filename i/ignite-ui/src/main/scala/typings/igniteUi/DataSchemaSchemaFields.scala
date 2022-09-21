@@ -1,7 +1,6 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +10,12 @@ trait DataSchemaSchemaFields
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * ParamType="function" optional="true" formatter function which accepts three parameters: val - value of the field; record - data source record; field - field definition; and return the formatted string. Formatter function is used when filtering by all fields.
     */
-  var formatter: js.UndefOr[js.Any] = js.undefined
+  var formatter: js.UndefOr[Any] = js.undefined
   
   /**
     * This option is applicable only for fields with fieldDataType="object". Reference to a function (string or function) that can be used for complex data extraction from the data records, whose return value will be used for all data operations associated with this field.
@@ -40,7 +39,7 @@ trait DataSchemaSchemaFields
     * Valid values:
     * "time"
     */
-  var `type`: js.UndefOr[String | Double | Boolean | Date | js.Object] = js.undefined
+  var `type`: js.UndefOr[String | Double | Boolean | js.Date | js.Object] = js.undefined
   
   /**
     * The XPath expression to map the node to the field
@@ -56,7 +55,7 @@ object DataSchemaSchemaFields {
   
   extension [Self <: DataSchemaSchemaFields](x: Self) {
     
-    inline def setFormatter(value: js.Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
@@ -68,7 +67,7 @@ object DataSchemaSchemaFields {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setType(value: String | Double | Boolean | Date | js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | Double | Boolean | js.Date | js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

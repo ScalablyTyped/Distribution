@@ -10,10 +10,10 @@ Edmond's weighted maximum matching algorithm (Blossom algorithm) ported from htt
 | ------------------ | :-------------: |
 | Full name          | edmonds-blossom |
 | Keywords           | graph, directional graph, edmonds, maximum matching, blossom |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 17493 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3089.6666666666665 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/mattkrick/EdmondsBlossom#readme)

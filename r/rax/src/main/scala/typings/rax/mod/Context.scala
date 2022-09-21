@@ -9,14 +9,14 @@ trait Context[T] extends StObject {
   /**
     * **NOTE**: Exotic components are not callable.
     */
-  def Consumer(props: ConsumerProps[T]): (RaxElement[js.Any, String | JSXElementConstructor[js.Any]]) | Null
+  def Consumer(props: ConsumerProps[T]): (RaxElement[Any, String | JSXElementConstructor[Any]]) | Null
   @JSName("Consumer")
   var Consumer_Original: Consumer[T]
   
   /**
     * **NOTE**: Exotic components are not callable.
     */
-  def Provider(props: ProviderProps[T]): (RaxElement[js.Any, String | JSXElementConstructor[js.Any]]) | Null
+  def Provider(props: ProviderProps[T]): (RaxElement[Any, String | JSXElementConstructor[Any]]) | Null
   @JSName("Provider")
   var Provider_Original: Provider[T]
   

@@ -8,5 +8,5 @@ object getObjectTaggingOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetObjectTaggingOutput", "GetObjectTaggingOutput")
   @js.native
-  val GetObjectTaggingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetObjectTaggingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

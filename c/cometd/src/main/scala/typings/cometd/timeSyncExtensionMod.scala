@@ -4,7 +4,6 @@ import typings.cometd.mod.CometD
 import typings.cometd.mod.Extension
 import typings.cometd.mod.Listener
 import typings.cometd.mod.Message
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object timeSyncExtensionMod {
   
   @JSImport("cometd/TimeSyncExtension", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with TimeSyncExtension {
     
@@ -28,7 +27,7 @@ object timeSyncExtensionMod {
       * Get the estimated server time as a Date object
       */
     /* CompleteClass */
-    override def getServerDate(): Date = js.native
+    override def getServerDate(): js.Date = js.native
     
     /**
       * Get the estimated server time in ms since the epoch.
@@ -86,7 +85,7 @@ object timeSyncExtensionMod {
       *
       * Get the estimated server time as a Date object
       */
-    def getServerDate(): Date
+    def getServerDate(): js.Date
     
     /**
       * Get the estimated server time in ms since the epoch.
@@ -125,7 +124,7 @@ object timeSyncExtensionMod {
     
     inline def apply(
       getNetworkLag: () => Double,
-      getServerDate: () => Date,
+      getServerDate: () => js.Date,
       getServerTime: () => Double,
       getTimeOffset: () => Double,
       getTimeOffsetSamples: () => js.Array[Double],
@@ -142,7 +141,7 @@ object timeSyncExtensionMod {
       
       inline def setGetNetworkLag(value: () => Double): Self = StObject.set(x, "getNetworkLag", js.Any.fromFunction0(value))
       
-      inline def setGetServerDate(value: () => Date): Self = StObject.set(x, "getServerDate", js.Any.fromFunction0(value))
+      inline def setGetServerDate(value: () => js.Date): Self = StObject.set(x, "getServerDate", js.Any.fromFunction0(value))
       
       inline def setGetServerTime(value: () => Double): Self = StObject.set(x, "getServerTime", js.Any.fromFunction0(value))
       

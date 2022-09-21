@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.OLEControl")
 @js.native
-/* private */ class OLEControl ()
+/* private */ open class OLEControl ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.OLEControl {
   

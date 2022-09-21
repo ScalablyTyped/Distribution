@@ -10,10 +10,10 @@ Core module for the Sugar Javascript utility library.
 | ------------------ | :-------------: |
 | Full name          | sugar-core |
 | Keywords           | sugar, sugarjs, functional, browser, utility, util |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 576887 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 52321.333333333336 |
+| # stars            | 4472.0 |
 
 ## Links
 - [Homepage](https://sugarjs.com/)

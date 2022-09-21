@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Triangular")
 @js.native
-class Triangular ()
+open class Triangular ()
   extends typings.ranjs.mod.dist.Triangular {
   def this(a: Double) = this()
   def this(a: Double, b: Double) = this()

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDatacatalog.anon
 
-import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1EntryGroup
+import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1EntryGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,8 +21,8 @@ trait EntryGroupId extends StObject {
   var callback: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The id of the entry group to create. The id must begin with a letter or underscore, contain only English letters, numbers and underscores, and be at most 64
-    * characters.
+    * Required. The ID of the entry group to create. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and must start with a letter or underscore. The
+    * maximum size is 64 bytes when encoded in UTF-8.
     */
   var entryGroupId: js.UndefOr[String] = js.undefined
   
@@ -36,8 +36,8 @@ trait EntryGroupId extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The name of the project this entry group is in. Example: * projects/{project_id}/locations/{location} Note that this EntryGroup and its child resources may not
-    * actually be stored in the location in this name.
+    * Required. The names of the project and location that the new entry group belongs to. Note: The entry group itself and its child resources might not be stored in the location
+    * specified in its name.
     */
   var parent: String
   
@@ -48,7 +48,7 @@ trait EntryGroupId extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleCloudDatacatalogV1beta1EntryGroup
+  var resource: GoogleCloudDatacatalogV1EntryGroup
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -58,7 +58,7 @@ trait EntryGroupId extends StObject {
 }
 object EntryGroupId {
   
-  inline def apply(parent: String, resource: GoogleCloudDatacatalogV1beta1EntryGroup): EntryGroupId = {
+  inline def apply(parent: String, resource: GoogleCloudDatacatalogV1EntryGroup): EntryGroupId = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryGroupId]
   }
@@ -107,7 +107,7 @@ object EntryGroupId {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleCloudDatacatalogV1beta1EntryGroup): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudDatacatalogV1EntryGroup): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

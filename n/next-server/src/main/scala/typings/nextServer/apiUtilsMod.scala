@@ -18,36 +18,38 @@ object apiUtilsMod {
   
   @JSImport("next-server/dist/server/api-utils", "ApiError")
   @js.native
-  class ApiError protected ()
+  open class ApiError protected ()
     extends StObject
        with Error {
     def this(statusCode: Double, message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
     val statusCode: Double = js.native
   }
   
-  inline def apiResolver(req: NextApiRequest, res: NextApiResponse[js.Any], params: js.Any, resolverModule: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiResolver")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], params.asInstanceOf[js.Any], resolverModule.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apiResolver(req: NextApiRequest, res: NextApiResponse[Any], params: Any, resolverModule: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiResolver")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], params.asInstanceOf[js.Any], resolverModule.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def getCookieParser(req: IncomingMessage): js.Function0[NextApiRequestCookies] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCookieParser")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function0[NextApiRequestCookies]]
   
   inline def getQueryParser(hasUrl: IncomingMessage): js.Function0[NextApiRequestQuery] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParser")(hasUrl.asInstanceOf[js.Any]).asInstanceOf[js.Function0[NextApiRequestQuery]]
   
-  inline def parseBody(req: NextApiRequest, limit: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def parseBody(req: NextApiRequest, limit: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def parseBody(req: NextApiRequest, limit: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def parseBody(req: NextApiRequest, limit: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def sendData(res: NextApiResponse[js.Any], body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendData")(res.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendData(res: NextApiResponse[Any], body: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendData")(res.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def sendError(res: NextApiResponse[js.Any], statusCode: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendError(res: NextApiResponse[Any], statusCode: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def sendJson(res: NextApiResponse[js.Any], jsonBody: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendJson")(res.asInstanceOf[js.Any], jsonBody.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendJson(res: NextApiResponse[Any], jsonBody: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendJson")(res.asInstanceOf[js.Any], jsonBody.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def sendStatusCode(res: NextApiResponse[js.Any], statusCode: Double): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendStatusCode")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  inline def sendStatusCode(res: NextApiResponse[Any], statusCode: Double): NextApiResponse[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendStatusCode")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[Any]]
   
   inline def setLazyProp[T](hasReqParams: LazyProps, prop: String, getter: js.Function0[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLazyProp")(hasReqParams.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

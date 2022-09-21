@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.Imprint")
 @js.native
-class Imprint protected ()
+open class Imprint protected ()
   extends StObject
      with typings.heremaps.H.map.Imprint {
   /**

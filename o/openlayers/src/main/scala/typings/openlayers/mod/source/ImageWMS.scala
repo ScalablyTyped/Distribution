@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class ImageWMS () extends Image {
+open class ImageWMS () extends Image {
   def this(opt_options: ImageWMSOptions) = this()
   
   /**

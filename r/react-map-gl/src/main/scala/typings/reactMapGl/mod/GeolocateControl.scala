@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "GeolocateControl")
 @js.native
-class GeolocateControl protected () extends BaseControl[GeolocateControlProps, HTMLDivElement] {
+open class GeolocateControl protected () extends BaseControl[GeolocateControlProps, HTMLDivElement] {
   def this(props: GeolocateControlProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: GeolocateControlProps, context: js.Any) = this()
+  def this(props: GeolocateControlProps, context: Any) = this()
 }

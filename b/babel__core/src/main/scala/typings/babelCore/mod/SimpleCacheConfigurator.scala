@@ -42,9 +42,9 @@ object SimpleCacheConfigurator {
   
   inline def apply(
     forever: () => Unit,
-    invalidate: SimpleCacheCallback[js.Any] => js.Any,
+    invalidate: SimpleCacheCallback[Any] => Any,
     never: () => Unit,
-    `using`: SimpleCacheCallback[js.Any] => js.Any
+    `using`: SimpleCacheCallback[Any] => Any
   ): SimpleCacheConfigurator = {
     val __obj = js.Dynamic.literal(forever = js.Any.fromFunction0(forever), invalidate = js.Any.fromFunction1(invalidate), never = js.Any.fromFunction0(never))
     __obj.updateDynamic("using")(js.Any.fromFunction1(`using`))
@@ -55,10 +55,10 @@ object SimpleCacheConfigurator {
     
     inline def setForever(value: () => Unit): Self = StObject.set(x, "forever", js.Any.fromFunction0(value))
     
-    inline def setInvalidate(value: SimpleCacheCallback[js.Any] => js.Any): Self = StObject.set(x, "invalidate", js.Any.fromFunction1(value))
+    inline def setInvalidate(value: SimpleCacheCallback[Any] => Any): Self = StObject.set(x, "invalidate", js.Any.fromFunction1(value))
     
     inline def setNever(value: () => Unit): Self = StObject.set(x, "never", js.Any.fromFunction0(value))
     
-    inline def setUsing(value: SimpleCacheCallback[js.Any] => js.Any): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
+    inline def setUsing(value: SimpleCacheCallback[Any] => Any): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
   }
 }

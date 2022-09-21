@@ -15,35 +15,35 @@ object typestyleMod {
   
   @JSImport("typestyle/lib/internal/typestyle", "TypeStyle")
   @js.native
-  class TypeStyle protected () extends StObject {
+  open class TypeStyle protected () extends StObject {
     def this(hasAutoGenerateTag: AutoGenerateTag) = this()
     
     /**
       * Only calls cb all sync operations settle
       */
-    /* private */ var _afterAllSync: js.Any = js.native
+    /* private */ var _afterAllSync: Any = js.native
     
-    /* private */ var _autoGenerateTag: js.Any = js.native
+    /* private */ var _autoGenerateTag: Any = js.native
     
-    /* private */ var _freeStyle: js.Any = js.native
+    /* private */ var _freeStyle: Any = js.native
     
-    /* private */ var _getTag: js.Any = js.native
+    /* private */ var _getTag: Any = js.native
     
     /**
       * We have a single stylesheet that we update as components register themselves
       */
-    /* private */ var _lastFreeStyleChangeId: js.Any = js.native
+    /* private */ var _lastFreeStyleChangeId: Any = js.native
     
-    /* private */ var _pending: js.Any = js.native
+    /* private */ var _pending: Any = js.native
     
-    /* private */ var _pendingRawChange: js.Any = js.native
+    /* private */ var _pendingRawChange: Any = js.native
     
-    /* private */ var _raw: js.Any = js.native
+    /* private */ var _raw: Any = js.native
     
     /** Checks if the style tag needs updating and if so queues up the change */
-    /* private */ var _styleUpdated: js.Any = js.native
+    /* private */ var _styleUpdated: Any = js.native
     
-    /* private */ var _tag: js.Any = js.native
+    /* private */ var _tag: Any = js.native
     
     /**
       * Insert `raw` CSS as a string. This is useful for e.g.
@@ -100,9 +100,9 @@ object typestyleMod {
       * returns an object where property names are the same ideal class names and the property values are
       * the actual generated class names using the ideal class name as the $debugName
       */
-    def stylesheet[Classes /* <: Record[String, NestedCSSProperties] */](classes: Classes): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ ClassName in keyof Classes ]: string}
-      */ typings.typestyle.typestyleStrings.TypeStyle & TopLevel[js.Any] = js.native
+    def stylesheet[Classes /* <: String */](classes: Record[Classes, NestedCSSProperties]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ ClassName in Classes ]: string}
+      */ typings.typestyle.typestyleStrings.TypeStyle & TopLevel[Any] = js.native
   }
   
   trait StylesTarget extends StObject {

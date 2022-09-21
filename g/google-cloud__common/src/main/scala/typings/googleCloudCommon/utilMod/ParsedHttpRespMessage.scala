@@ -9,11 +9,11 @@ trait ParsedHttpRespMessage extends StObject {
   
   var err: js.UndefOr[ApiError] = js.undefined
   
-  var resp: Response[js.Any]
+  var resp: Response[Any]
 }
 object ParsedHttpRespMessage {
   
-  inline def apply(resp: Response[js.Any]): ParsedHttpRespMessage = {
+  inline def apply(resp: Response[Any]): ParsedHttpRespMessage = {
     val __obj = js.Dynamic.literal(resp = resp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedHttpRespMessage]
   }
@@ -24,6 +24,6 @@ object ParsedHttpRespMessage {
     
     inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
-    inline def setResp(value: Response[js.Any]): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
+    inline def setResp(value: Response[Any]): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
   }
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object intvalMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any, base: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(mixedVar: Unit, base: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(mixedVar: Any): Any = ^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(mixedVar: Any, base: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(mixedVar: Unit, base: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/var/intval", JSImport.Namespace)
   @js.native

@@ -75,6 +75,22 @@ object tabrisStrings {
   inline def NamedResources: NamedResources = "NamedResources".asInstanceOf[NamedResources]
   
   @js.native
+  sealed trait `SHA-1` extends StObject
+  inline def `SHA-1`: `SHA-1` = "SHA-1".asInstanceOf[`SHA-1`]
+  
+  @js.native
+  sealed trait `SHA-256` extends StObject
+  inline def `SHA-256`: `SHA-256` = "SHA-256".asInstanceOf[`SHA-256`]
+  
+  @js.native
+  sealed trait `SHA-384` extends StObject
+  inline def `SHA-384`: `SHA-384` = "SHA-384".asInstanceOf[`SHA-384`]
+  
+  @js.native
+  sealed trait `SHA-512` extends StObject
+  inline def `SHA-512`: `SHA-512` = "SHA-512".asInstanceOf[`SHA-512`]
+  
+  @js.native
   sealed trait Space
     extends StObject
        with _ReservedResourceKeys
@@ -169,6 +185,10 @@ object tabrisStrings {
   inline def autoPlay: autoPlay = "autoPlay".asInstanceOf[autoPlay]
   
   @js.native
+  sealed trait availableBiometrics extends StObject
+  inline def availableBiometrics: availableBiometrics = "availableBiometrics".asInstanceOf[availableBiometrics]
+  
+  @js.native
   sealed trait availableCaptureResolutions extends StObject
   inline def availableCaptureResolutions: availableCaptureResolutions = "availableCaptureResolutions".asInstanceOf[availableCaptureResolutions]
   
@@ -203,6 +223,10 @@ object tabrisStrings {
   @js.native
   sealed trait bevel extends StObject
   inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @js.native
+  sealed trait biometricsNotEnrolled extends StObject
+  inline def biometricsNotEnrolled: biometricsNotEnrolled = "biometricsNotEnrolled".asInstanceOf[biometricsNotEnrolled]
   
   @js.native
   sealed trait black
@@ -255,6 +279,10 @@ object tabrisStrings {
   @js.native
   sealed trait cancel extends StObject
   inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
+  sealed trait canceled extends StObject
+  inline def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
   sealed trait captureResolution extends StObject
@@ -345,6 +373,10 @@ object tabrisStrings {
   @js.native
   sealed trait createCell extends StObject
   inline def createCell: createCell = "createCell".asInstanceOf[createCell]
+  
+  @js.native
+  sealed trait credentialsNotEnrolled extends StObject
+  inline def credentialsNotEnrolled: credentialsNotEnrolled = "credentialsNotEnrolled".asInstanceOf[credentialsNotEnrolled]
   
   @js.native
   sealed trait cspreport extends StObject
@@ -487,8 +519,16 @@ object tabrisStrings {
   inline def external: external = "external".asInstanceOf[external]
   
   @js.native
+  sealed trait face extends StObject
+  inline def face: face = "face".asInstanceOf[face]
+  
+  @js.native
   sealed trait fail extends StObject
   inline def fail: fail = "fail".asInstanceOf[fail]
+  
+  @js.native
+  sealed trait fastScroll extends StObject
+  inline def fastScroll: fastScroll = "fastScroll".asInstanceOf[fastScroll]
   
   @js.native
   sealed trait favicon extends StObject
@@ -501,6 +541,10 @@ object tabrisStrings {
   @js.native
   sealed trait fill extends StObject
   inline def fill: fill = "fill".asInstanceOf[fill]
+  
+  @js.native
+  sealed trait fingerprint extends StObject
+  inline def fingerprint: fingerprint = "fingerprint".asInstanceOf[fingerprint]
   
   @js.native
   sealed trait finish extends StObject
@@ -733,6 +777,10 @@ object tabrisStrings {
   inline def light: light = "light".asInstanceOf[light]
   
   @js.native
+  sealed trait limitExceeded extends StObject
+  inline def limitExceeded: limitExceeded = "limitExceeded".asInstanceOf[limitExceeded]
+  
+  @js.native
   sealed trait lineSpacing extends StObject
   inline def lineSpacing: lineSpacing = "lineSpacing".asInstanceOf[lineSpacing]
   
@@ -759,6 +807,10 @@ object tabrisStrings {
   @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait lockout extends StObject
+  inline def lockout: lockout = "lockout".asInstanceOf[lockout]
   
   @js.native
   sealed trait log extends StObject
@@ -1220,10 +1272,6 @@ object tabrisStrings {
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait started extends StObject
-  inline def started: started = "started".asInstanceOf[started]
-  
-  @js.native
   sealed trait state extends StObject
   inline def state: state = "state".asInstanceOf[state]
   
@@ -1266,8 +1314,8 @@ object tabrisStrings {
   inline def subresource: subresource = "subresource".asInstanceOf[subresource]
   
   @js.native
-  sealed trait symbols extends StObject
-  inline def symbols: symbols = "symbols".asInstanceOf[symbols]
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait tabBarBackground extends StObject
@@ -1403,6 +1451,10 @@ object tabrisStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait userCanceled extends StObject
+  inline def userCanceled: userCanceled = "userCanceled".asInstanceOf[userCanceled]
   
   @js.native
   sealed trait valueOf

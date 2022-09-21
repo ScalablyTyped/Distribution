@@ -10,7 +10,7 @@ object cloneMod {
   
   @JSImport("ionic/commands/git/clone", "GitCloneCommand")
   @js.native
-  class GitCloneCommand protected () extends Command {
+  open class GitCloneCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

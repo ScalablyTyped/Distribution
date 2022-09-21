@@ -29,6 +29,6 @@ object ProgressTimeseries {
     
     inline def setDataPointsUndefined: Self = StObject.set(x, "dataPoints", js.undefined)
     
-    inline def setDataPointsVarargs(value: Point*): Self = StObject.set(x, "dataPoints", js.Array(value :_*))
+    inline def setDataPointsVarargs(value: Point*): Self = StObject.set(x, "dataPoints", js.Array(value*))
   }
 }

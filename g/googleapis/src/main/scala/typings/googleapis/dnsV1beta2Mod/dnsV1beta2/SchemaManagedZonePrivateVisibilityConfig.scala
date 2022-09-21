@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaManagedZonePrivateVisibilityConfig extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dns#managedZonePrivateVisibilityConfig&quot;.
+    * The list of Google Kubernetes Engine clusters that can see this zone.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var gkeClusters: js.UndefOr[js.Array[SchemaManagedZonePrivateVisibilityConfigGKECluster]] = js.undefined
   
+  var kind: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The list of VPC networks that can see this zone.
+    */
   var networks: js.UndefOr[js.Array[SchemaManagedZonePrivateVisibilityConfigNetwork]] = js.undefined
 }
 object SchemaManagedZonePrivateVisibilityConfig {
@@ -23,7 +27,15 @@ object SchemaManagedZonePrivateVisibilityConfig {
   
   extension [Self <: SchemaManagedZonePrivateVisibilityConfig](x: Self) {
     
+    inline def setGkeClusters(value: js.Array[SchemaManagedZonePrivateVisibilityConfigGKECluster]): Self = StObject.set(x, "gkeClusters", value.asInstanceOf[js.Any])
+    
+    inline def setGkeClustersUndefined: Self = StObject.set(x, "gkeClusters", js.undefined)
+    
+    inline def setGkeClustersVarargs(value: SchemaManagedZonePrivateVisibilityConfigGKECluster*): Self = StObject.set(x, "gkeClusters", js.Array(value*))
+    
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -31,6 +43,6 @@ object SchemaManagedZonePrivateVisibilityConfig {
     
     inline def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
     
-    inline def setNetworksVarargs(value: SchemaManagedZonePrivateVisibilityConfigNetwork*): Self = StObject.set(x, "networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: SchemaManagedZonePrivateVisibilityConfigNetwork*): Self = StObject.set(x, "networks", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-multi-ref
 
-Typings are for version 1.0.0
+Typings are for version 1.0.1
 
 ## Library description:
 Utility for keeping references to multiple React elements.
@@ -10,10 +10,10 @@ Utility for keeping references to multiple React elements.
 | ------------------ | :-------------: |
 | Full name          | react-multi-ref |
 | Keywords           | react, ref |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 413576 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 139166.66666666666 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/Macil/react-multi-ref#readme)

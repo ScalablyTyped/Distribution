@@ -167,7 +167,7 @@ object Emscripten {
     inline def string: typings.emscripten.emscriptenStrings.string = "string".asInstanceOf[typings.emscripten.emscriptenStrings.string]
   }
   
-  type TypeCompatibleWithC = Double | String | js.Array[js.Any] | Boolean
+  type TypeCompatibleWithC = Double | String | js.Array[Any] | Boolean
   
   type WebAssemblyExports = js.Array[Module]
   

@@ -7,9 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcErrorMod {
   
+  @js.native
+  sealed trait ErrorCode extends StObject
+  @JSImport("intl-messageformat/src/error", "ErrorCode")
+  @js.native
+  object ErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ErrorCode & String] = js.native
+    
+    @js.native
+    sealed trait INVALID_VALUE
+      extends StObject
+         with ErrorCode
+    /* "INVALID_VALUE" */ val INVALID_VALUE: typings.intlMessageformat.srcErrorMod.ErrorCode.INVALID_VALUE & String = js.native
+    
+    @js.native
+    sealed trait MISSING_INTL_API
+      extends StObject
+         with ErrorCode
+    /* "MISSING_INTL_API" */ val MISSING_INTL_API: typings.intlMessageformat.srcErrorMod.ErrorCode.MISSING_INTL_API & String = js.native
+    
+    @js.native
+    sealed trait MISSING_VALUE
+      extends StObject
+         with ErrorCode
+    /* "MISSING_VALUE" */ val MISSING_VALUE: typings.intlMessageformat.srcErrorMod.ErrorCode.MISSING_VALUE & String = js.native
+  }
+  
   @JSImport("intl-messageformat/src/error", "FormatError")
   @js.native
-  class FormatError protected ()
+  open class FormatError protected ()
     extends StObject
        with Error {
     def this(msg: String, code: ErrorCode) = this()
@@ -17,9 +45,11 @@ object srcErrorMod {
     
     val code: ErrorCode = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -35,37 +65,22 @@ object srcErrorMod {
   
   @JSImport("intl-messageformat/src/error", "InvalidValueError")
   @js.native
-  class InvalidValueError protected () extends FormatError {
-    def this(variableId: String, value: js.Any, options: js.Array[String]) = this()
-    def this(variableId: String, value: js.Any, options: js.Array[String], originalMessage: String) = this()
+  open class InvalidValueError protected () extends FormatError {
+    def this(variableId: String, value: Any, options: js.Array[String]) = this()
+    def this(variableId: String, value: Any, options: js.Array[String], originalMessage: String) = this()
   }
   
   @JSImport("intl-messageformat/src/error", "InvalidValueTypeError")
   @js.native
-  class InvalidValueTypeError protected () extends FormatError {
-    def this(value: js.Any, `type`: String) = this()
-    def this(value: js.Any, `type`: String, originalMessage: String) = this()
+  open class InvalidValueTypeError protected () extends FormatError {
+    def this(value: Any, `type`: String) = this()
+    def this(value: Any, `type`: String, originalMessage: String) = this()
   }
   
   @JSImport("intl-messageformat/src/error", "MissingValueError")
   @js.native
-  class MissingValueError protected () extends FormatError {
+  open class MissingValueError protected () extends FormatError {
     def this(variableId: String) = this()
     def this(variableId: String, originalMessage: String) = this()
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.intlMessageformat.intlMessageformatStrings.MISSING_VALUE
-    - typings.intlMessageformat.intlMessageformatStrings.INVALID_VALUE
-    - typings.intlMessageformat.intlMessageformatStrings.MISSING_INTL_API
-  */
-  trait ErrorCode extends StObject
-  object ErrorCode {
-    
-    inline def INVALID_VALUE: typings.intlMessageformat.intlMessageformatStrings.INVALID_VALUE = "INVALID_VALUE".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.INVALID_VALUE]
-    
-    inline def MISSING_INTL_API: typings.intlMessageformat.intlMessageformatStrings.MISSING_INTL_API = "MISSING_INTL_API".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.MISSING_INTL_API]
-    
-    inline def MISSING_VALUE: typings.intlMessageformat.intlMessageformatStrings.MISSING_VALUE = "MISSING_VALUE".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.MISSING_VALUE]
   }
 }

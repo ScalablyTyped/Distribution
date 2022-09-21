@@ -3,6 +3,7 @@ package typings.devtoolsProtocol.mod.Protocol
 import typings.devtoolsProtocol.devtoolsProtocolStrings.appcache
 import typings.devtoolsProtocol.devtoolsProtocolStrings.blockedEvent
 import typings.devtoolsProtocol.devtoolsProtocolStrings.blockedParser
+import typings.devtoolsProtocol.devtoolsProtocolStrings.cors
 import typings.devtoolsProtocol.devtoolsProtocolStrings.deprecation
 import typings.devtoolsProtocol.devtoolsProtocolStrings.discouragedAPIUse
 import typings.devtoolsProtocol.devtoolsProtocolStrings.error
@@ -60,6 +61,11 @@ object Log {
       * Call arguments.
       */
     var args: js.UndefOr[js.Array[RemoteObject]] = js.undefined
+    
+    /**
+      *  (LogEntryCategory enum)
+      */
+    var category: js.UndefOr[cors] = js.undefined
     
     /**
       * Log entry severity. (LogEntryLevel enum)
@@ -124,7 +130,11 @@ object Log {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: RemoteObject*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: RemoteObject*): Self = StObject.set(x, "args", js.Array(value*))
+      
+      inline def setCategory(value: cors): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
       inline def setLevel(value: verbose | info | warning | error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -157,6 +167,12 @@ object Log {
       inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
     }
   }
+  
+  object LogEntryCategory {
+    
+    inline def Cors: cors = "cors".asInstanceOf[cors]
+  }
+  type LogEntryCategory = cors
   
   /* Rewritten from type alias, can be one of: 
     - typings.devtoolsProtocol.devtoolsProtocolStrings.verbose
@@ -239,7 +255,7 @@ object Log {
       
       inline def setConfig(value: js.Array[ViolationSetting]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setConfigVarargs(value: ViolationSetting*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: ViolationSetting*): Self = StObject.set(x, "config", js.Array(value*))
     }
   }
   

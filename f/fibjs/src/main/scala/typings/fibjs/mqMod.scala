@@ -17,31 +17,31 @@ object mqMod {
   
   @JSImport("mq", "Chain")
   @js.native
-  class Chain ()
+  open class Chain ()
     extends StObject
        with ClassChain
   
   @JSImport("mq", "Handler")
   @js.native
-  class Handler ()
+  open class Handler ()
     extends StObject
        with ClassHandler
   
   @JSImport("mq", "HttpHandler")
   @js.native
-  class HttpHandler ()
+  open class HttpHandler ()
     extends StObject
        with ClassHttpHandler
   
   @JSImport("mq", "Message")
   @js.native
-  class Message ()
+  open class Message ()
     extends StObject
        with ClassMessage
   
   @JSImport("mq", "Routing")
   @js.native
-  class Routing ()
+  open class Routing ()
     extends StObject
        with ClassRouting
   

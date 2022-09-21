@@ -12,7 +12,7 @@ trait LabelingJobDataSource extends StObject {
   var S3DataSource: js.UndefOr[LabelingJobS3DataSource] = js.undefined
   
   /**
-    * An Amazon SNS data source used for streaming labeling jobs.
+    * An Amazon SNS data source used for streaming labeling jobs. To learn more, see Send Data to a Streaming Labeling Job. 
     */
   var SnsDataSource: js.UndefOr[LabelingJobSnsDataSource] = js.undefined
 }

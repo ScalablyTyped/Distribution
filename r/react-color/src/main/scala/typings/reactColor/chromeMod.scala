@@ -12,12 +12,10 @@ object chromeMod {
   
   @JSImport("react-color/lib/components/chrome/Chrome", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ChromePickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ChromePickerProps, js.Object, Any]
   
-  @js.native
-  trait ChromePicker
-    extends Component[ChromePickerProps, js.Object, js.Any]
+  type ChromePicker = Component[ChromePickerProps, js.Object, Any]
   
   trait ChromePickerProps
     extends StObject

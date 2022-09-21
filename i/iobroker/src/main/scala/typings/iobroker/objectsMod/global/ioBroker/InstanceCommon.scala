@@ -1,5 +1,8 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
+import typings.iobroker.iobrokerNumbers.`1`
+import typings.iobroker.iobrokerNumbers.`2`
+import typings.iobroker.iobrokerNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +21,14 @@ trait InstanceCommon
   
   /** How and when this instance should be started */
   var mode: InstanceMode
+  
+  /**
+    * The starting priority of this adapter:
+    * - **1:** Logic adapters
+    * - **2:** Data providers
+    * - **3:** All other adapters
+    */
+  var tier: js.UndefOr[`1` | `2` | `3`] = js.undefined
 }
 object InstanceCommon {
   
@@ -35,5 +46,9 @@ object InstanceCommon {
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     inline def setMode(value: InstanceMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setTier(value: `1` | `2` | `3`): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

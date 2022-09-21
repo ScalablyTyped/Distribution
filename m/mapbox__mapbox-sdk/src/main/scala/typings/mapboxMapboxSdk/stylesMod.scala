@@ -1,13 +1,14 @@
 package typings.mapboxMapboxSdk
 
 import typings.mapboxMapboxSdk.anon.Config
+import typings.mapboxMapboxSdk.anon.Draft
 import typings.mapboxMapboxSdk.anon.End
 import typings.mapboxMapboxSdk.anon.File
 import typings.mapboxMapboxSdk.anon.Format
+import typings.mapboxMapboxSdk.anon.Fresh
 import typings.mapboxMapboxSdk.anon.IconId
 import typings.mapboxMapboxSdk.anon.LastKnownModification
 import typings.mapboxMapboxSdk.anon.OwnerId
-import typings.mapboxMapboxSdk.anon.Start
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
@@ -61,7 +62,7 @@ object stylesMod {
       */
     var owner: String
     
-    var sources: js.Any
+    var sources: Any
     
     var sprite: String
     
@@ -85,7 +86,7 @@ object stylesMod {
       modified: String,
       name: String,
       owner: String,
-      sources: js.Any,
+      sources: Any,
       sprite: String,
       version: Double,
       visibility: String
@@ -106,7 +107,7 @@ object stylesMod {
       
       inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,7 @@ object stylesMod {
       
       inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      inline def setSources(value: js.Any): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: Any): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
       inline def setSprite(value: String): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
       
@@ -133,14 +134,14 @@ object stylesMod {
       * @param style
       * @param ownerId
       */
-    def createStyle(config: typings.mapboxMapboxSdk.anon.Style): MapiRequest
+    def createStyle(config: OwnerId): MapiRequest[Any]
     
     /**
       * Delete a style.
       * @param style
       * @param ownerId
       */
-    def deleteStyle(config: typings.mapboxMapboxSdk.anon.Style): MapiRequest
+    def deleteStyle(config: OwnerId): MapiRequest[Any]
     
     /**
       * Remove an icon from a style.
@@ -159,7 +160,7 @@ object stylesMod {
       * @param title
       * @param ownerId
       */
-    def getEmbeddableHtml(config: Config): MapiRequest
+    def getEmbeddableHtml(config: Config): MapiRequest[Any]
     
     /**
       * Get a font glyph range.
@@ -168,14 +169,14 @@ object stylesMod {
       * @param end
       * @param ownerId
       */
-    def getFontGlyphRange(config: End): MapiRequest
+    def getFontGlyphRange(config: End): MapiRequest[Any]
     
     /**
       * Get a style.
       * @param styleId
       * @param ownerId
       */
-    def getStyle(config: OwnerId): MapiRequest
+    def getStyle(config: Draft): MapiRequest[Any]
     
     /**
       * Get a style sprite's image or JSON document.
@@ -184,14 +185,14 @@ object stylesMod {
       * @param highRes
       * @param ownerId
       */
-    def getStyleSprite(config: Format): MapiRequest
+    def getStyleSprite(config: Format): MapiRequest[Any]
     
     /**
       * List styles in your account.
       * @param start
       * @param ownerId
       */
-    def listStyles(config: Start): MapiRequest
+    def listStyles(config: Fresh): MapiRequest[Any]
     
     /**
       * Add an icon to a style, or update an existing one.
@@ -200,7 +201,7 @@ object stylesMod {
       * @param file
       * @param ownerId
       */
-    def putStyleIcon(config: File): MapiRequest
+    def putStyleIcon(config: File): MapiRequest[Any]
     
     /**
       * Update a style.
@@ -215,15 +216,15 @@ object stylesMod {
   object StylesService {
     
     inline def apply(
-      createStyle: typings.mapboxMapboxSdk.anon.Style => MapiRequest,
-      deleteStyle: typings.mapboxMapboxSdk.anon.Style => MapiRequest,
+      createStyle: OwnerId => MapiRequest[Any],
+      deleteStyle: OwnerId => MapiRequest[Any],
       deleteStyleIcon: IconId => Unit,
-      getEmbeddableHtml: Config => MapiRequest,
-      getFontGlyphRange: End => MapiRequest,
-      getStyle: OwnerId => MapiRequest,
-      getStyleSprite: Format => MapiRequest,
-      listStyles: Start => MapiRequest,
-      putStyleIcon: File => MapiRequest,
+      getEmbeddableHtml: Config => MapiRequest[Any],
+      getFontGlyphRange: End => MapiRequest[Any],
+      getStyle: Draft => MapiRequest[Any],
+      getStyleSprite: Format => MapiRequest[Any],
+      listStyles: Fresh => MapiRequest[Any],
+      putStyleIcon: File => MapiRequest[Any],
       updateStyle: LastKnownModification => Unit
     ): StylesService = {
       val __obj = js.Dynamic.literal(createStyle = js.Any.fromFunction1(createStyle), deleteStyle = js.Any.fromFunction1(deleteStyle), deleteStyleIcon = js.Any.fromFunction1(deleteStyleIcon), getEmbeddableHtml = js.Any.fromFunction1(getEmbeddableHtml), getFontGlyphRange = js.Any.fromFunction1(getFontGlyphRange), getStyle = js.Any.fromFunction1(getStyle), getStyleSprite = js.Any.fromFunction1(getStyleSprite), listStyles = js.Any.fromFunction1(listStyles), putStyleIcon = js.Any.fromFunction1(putStyleIcon), updateStyle = js.Any.fromFunction1(updateStyle))
@@ -232,23 +233,23 @@ object stylesMod {
     
     extension [Self <: StylesService](x: Self) {
       
-      inline def setCreateStyle(value: typings.mapboxMapboxSdk.anon.Style => MapiRequest): Self = StObject.set(x, "createStyle", js.Any.fromFunction1(value))
+      inline def setCreateStyle(value: OwnerId => MapiRequest[Any]): Self = StObject.set(x, "createStyle", js.Any.fromFunction1(value))
       
-      inline def setDeleteStyle(value: typings.mapboxMapboxSdk.anon.Style => MapiRequest): Self = StObject.set(x, "deleteStyle", js.Any.fromFunction1(value))
+      inline def setDeleteStyle(value: OwnerId => MapiRequest[Any]): Self = StObject.set(x, "deleteStyle", js.Any.fromFunction1(value))
       
       inline def setDeleteStyleIcon(value: IconId => Unit): Self = StObject.set(x, "deleteStyleIcon", js.Any.fromFunction1(value))
       
-      inline def setGetEmbeddableHtml(value: Config => MapiRequest): Self = StObject.set(x, "getEmbeddableHtml", js.Any.fromFunction1(value))
+      inline def setGetEmbeddableHtml(value: Config => MapiRequest[Any]): Self = StObject.set(x, "getEmbeddableHtml", js.Any.fromFunction1(value))
       
-      inline def setGetFontGlyphRange(value: End => MapiRequest): Self = StObject.set(x, "getFontGlyphRange", js.Any.fromFunction1(value))
+      inline def setGetFontGlyphRange(value: End => MapiRequest[Any]): Self = StObject.set(x, "getFontGlyphRange", js.Any.fromFunction1(value))
       
-      inline def setGetStyle(value: OwnerId => MapiRequest): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
+      inline def setGetStyle(value: Draft => MapiRequest[Any]): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
       
-      inline def setGetStyleSprite(value: Format => MapiRequest): Self = StObject.set(x, "getStyleSprite", js.Any.fromFunction1(value))
+      inline def setGetStyleSprite(value: Format => MapiRequest[Any]): Self = StObject.set(x, "getStyleSprite", js.Any.fromFunction1(value))
       
-      inline def setListStyles(value: Start => MapiRequest): Self = StObject.set(x, "listStyles", js.Any.fromFunction1(value))
+      inline def setListStyles(value: Fresh => MapiRequest[Any]): Self = StObject.set(x, "listStyles", js.Any.fromFunction1(value))
       
-      inline def setPutStyleIcon(value: File => MapiRequest): Self = StObject.set(x, "putStyleIcon", js.Any.fromFunction1(value))
+      inline def setPutStyleIcon(value: File => MapiRequest[Any]): Self = StObject.set(x, "putStyleIcon", js.Any.fromFunction1(value))
       
       inline def setUpdateStyle(value: LastKnownModification => Unit): Self = StObject.set(x, "updateStyle", js.Any.fromFunction1(value))
     }

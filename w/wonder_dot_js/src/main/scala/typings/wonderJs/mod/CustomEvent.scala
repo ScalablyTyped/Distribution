@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "CustomEvent")
 @js.native
-class CustomEvent protected ()
+open class CustomEvent protected ()
   extends typings.wonderJs.customEventMod.CustomEvent {
   def this(eventName: String) = this()
-  def this(eventName: String, userData: js.Any) = this()
+  def this(eventName: String, userData: Any) = this()
 }
 /* static members */
 object CustomEvent {
@@ -18,6 +18,6 @@ object CustomEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(eventName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def create(eventName: String, userData: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def create(eventName: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def create(eventName: String, userData: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

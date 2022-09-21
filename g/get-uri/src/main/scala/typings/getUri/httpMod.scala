@@ -1,8 +1,6 @@
 package typings.getUri
 
 import typings.getUri.mod.GetUriOptions
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpsMod.RequestOptions
 import typings.node.streamMod.Readable
@@ -22,13 +20,7 @@ object httpMod {
   @js.native
   trait HttpIncomingMessage
     extends IncomingMessage
-       with HttpReadableProps {
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-  }
+       with HttpReadableProps
   
   trait HttpOptions
     extends StObject
@@ -69,7 +61,7 @@ object httpMod {
       
       inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       
-      inline def setRedirectsVarargs(value: HttpReadable*): Self = StObject.set(x, "redirects", js.Array(value :_*))
+      inline def setRedirectsVarargs(value: HttpReadable*): Self = StObject.set(x, "redirects", js.Array(value*))
     }
   }
   
@@ -82,13 +74,7 @@ object httpMod {
   @js.native
   trait HttpReadable
     extends Readable
-       with HttpReadableProps {
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-  }
+       with HttpReadableProps
   
   trait HttpReadableProps extends StObject {
     
@@ -119,7 +105,7 @@ object httpMod {
       
       inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       
-      inline def setRedirectsVarargs(value: HttpReadable*): Self = StObject.set(x, "redirects", js.Array(value :_*))
+      inline def setRedirectsVarargs(value: HttpReadable*): Self = StObject.set(x, "redirects", js.Array(value*))
     }
   }
 }

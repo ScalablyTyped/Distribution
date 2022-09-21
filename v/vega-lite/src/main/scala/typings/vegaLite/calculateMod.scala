@@ -21,14 +21,14 @@ object calculateMod {
   
   @JSImport("vega-lite/build/src/compile/data/calculate", "CalculateNode")
   @js.native
-  class CalculateNode protected () extends DataFlowNode {
+  open class CalculateNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: CalculateTransform) = this()
     
-    /* private */ var _dependentFields: js.Any = js.native
+    /* private */ var _dependentFields: Any = js.native
     
     def assemble(): FormulaTransform = js.native
     
-    /* private */ val transform: js.Any = js.native
+    /* private */ val transform: Any = js.native
   }
   /* static members */
   object CalculateNode {
@@ -41,11 +41,11 @@ object calculateMod {
   }
   
   inline def sortArrayIndexField_binned(
-    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
+    fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null],
     channel: SingleDefChannel
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sortArrayIndexField")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sortArrayIndexField_binned(
-    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
+    fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null],
     channel: SingleDefChannel,
     opt: FieldRefOption
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sortArrayIndexField")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]

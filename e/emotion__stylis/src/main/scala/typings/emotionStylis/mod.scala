@@ -3,7 +3,6 @@ package typings.emotionStylis
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,16 +65,13 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@emotion/stylis", JSImport.Default)
   @js.native
-  class defaultCls ()
+  open class defaultCls ()
     extends StObject
        with Stylis {
     def this(options: Options) = this()
   }
   
-  @js.native
-  trait ArrayPlugable
-    extends StObject
-       with Array[Plugable]
+  type ArrayPlugable = js.Array[Plugable]
   
   trait Options extends StObject {
     
@@ -98,12 +94,12 @@ object mod extends Shortcut {
     }
   }
   
-  type Plugable = js.UndefOr[Null | Boolean | Plugin | ArrayPlugable]
+  type Plugable = js.UndefOr[Null | Boolean | Plugin | Any]
   
   type Plugin = js.ThisFunction9[
     /* this */ Stylis, 
     /* context */ Context, 
-    /* content */ js.Any, 
+    /* content */ Any, 
     /* selector */ js.Array[String], 
     /* parent */ js.Array[String], 
     /* line */ Double, 
@@ -111,7 +107,7 @@ object mod extends Shortcut {
     /* length */ Double, 
     /* at */ Double, 
     /* depth */ Double, 
-    js.Any
+    Any
   ]
   
   type Prefix = Boolean | (js.Function3[/* key */ String, /* value */ String, /* context */ PrefixContext, Boolean])
@@ -128,14 +124,14 @@ object mod extends Shortcut {
     extends StObject
        with StylisConstructor {
     
-    def apply(selector: String, properties: String): js.Any = js.native
+    def apply(selector: String, properties: String): Any = js.native
     
-    def set(options: Options): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @emotion/stylis.@emotion/stylis.StylisSet */ js.Object = js.native
+    def set(options: Options): StylisSet = js.native
     @JSName("set")
     var set_Original: StylisSet = js.native
     
-    def use(): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @emotion/stylis.@emotion/stylis.StylisUse */ js.Object = js.native
-    def use(plugin: Plugable): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @emotion/stylis.@emotion/stylis.StylisUse */ js.Object = js.native
+    def use(): StylisUse = js.native
+    def use(plugin: Plugable): StylisUse = js.native
     @JSName("use")
     var use_Original: StylisUse = js.native
   }
@@ -146,15 +142,18 @@ object mod extends Shortcut {
        with Instantiable0[Stylis]
        with Instantiable1[/* options */ Options, Stylis]
   
-  type StylisSet = js.Function1[
-    /* options */ Options, 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @emotion/stylis.@emotion/stylis.StylisSet */ js.Object
-  ]
+  @js.native
+  trait StylisSet extends StObject {
+    
+    def apply(options: Options): StylisSet = js.native
+  }
   
-  type StylisUse = js.Function1[
-    /* plugin */ js.UndefOr[Plugable], 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @emotion/stylis.@emotion/stylis.StylisUse */ js.Object
-  ]
+  @js.native
+  trait StylisUse extends StObject {
+    
+    def apply(): StylisUse = js.native
+    def apply(plugin: Plugable): StylisUse = js.native
+  }
   
   type _To = StylisConstructor
   

@@ -1,6 +1,5 @@
 package typings.durandal
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +12,19 @@ trait DurandalSystemModule extends StObject {
     * @param {string} moduleId The id of the module to load.
     * @returns {Promise} A promise for the loaded module.
     */
-  def acquire(moduleId: String): DurandalPromise[js.Any] = js.native
+  def acquire(moduleId: String): DurandalPromise[Any] = js.native
   /**
     * Uses require.js to obtain multiple modules. This function returns a promise which resolves with the module instances in an array.
     * @param {string} moduleIds* The ids of the modules to load.
     * @returns {Promise} A promise for the loaded module.
     */
-  def acquire(moduleIds: String*): DurandalPromise[js.Array[js.Any]] = js.native
+  def acquire(moduleIds: String*): DurandalPromise[js.Array[Any]] = js.native
   /**
     * Uses require.js to obtain an array of modules. This function returns a promise which resolves with the modules instances in an array.
     * @param {string[]} moduleIds The ids of the modules to load.
     * @returns {Promise} A promise for the loaded module.
     */
-  def acquire(modules: js.Array[String]): DurandalPromise[js.Array[js.Any]] = js.native
+  def acquire(modules: js.Array[String]): DurandalPromise[js.Array[Any]] = js.native
   
   /**
     * Asserts a condition by throwing an error if the condition fails.
@@ -59,21 +58,21 @@ trait DurandalSystemModule extends StObject {
     * Logs an error.
     * @param {Error} obj The error to report.
     */
-  def error(error: Error): Unit = js.native
+  def error(error: js.Error): Unit = js.native
   
   /**
     * Extends the first object with the properties of the following objects.
     * @param {object} obj The target object to extend.
     * @param {object} extension* Uses to extend the target object.
     */
-  def extend(obj: js.Any, extensions: js.Any*): js.Any = js.native
+  def extend(obj: Any, extensions: Any*): Any = js.native
   
   /**
     * Gets the module id for the specified object.
     * @param {object} obj The object whose module id you wish to determine.
     * @returns {string} The module id.
     */
-  def getModuleId(obj: js.Any): String = js.native
+  def getModuleId(obj: Any): String = js.native
   
   /**
     * Creates a simple V4 UUID. This should not be used as a PK in your database. It can be used to generate internal, unique ids. For a more robust solution see [node-uuid](https://github.com/broofa/node-uuid).
@@ -86,83 +85,83 @@ trait DurandalSystemModule extends StObject {
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isArguments(obj: js.Any): Boolean = js.native
+  def isArguments(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is an array.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isArray(obj: js.Any): Boolean = js.native
+  def isArray(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is a boolean.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isBoolean(obj: js.Any): Boolean = js.native
+  def isBoolean(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is a date.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isDate(obj: js.Any): Boolean = js.native
+  def isDate(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is an html element.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isElement(obj: js.Any): Boolean = js.native
+  def isElement(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is a function.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isFunction(obj: js.Any): Boolean = js.native
+  def isFunction(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is a number.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isNumber(obj: js.Any): Boolean = js.native
+  def isNumber(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is a boolean.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isObject(obj: js.Any): Boolean = js.native
+  def isObject(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is a promise.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isPromise(obj: js.Any): Boolean = js.native
+  def isPromise(obj: Any): Boolean = js.native
   
   /**
     * Determines if the specified object is a string.
     * @param {object} object The object to check.
     * @returns {boolean} True if matches the type, false otherwise.
     */
-  def isString(obj: js.Any): Boolean = js.native
+  def isString(obj: Any): Boolean = js.native
   
   /**
     * Gets all the owned keys of the specified object.
     * @param {object} object The object whose owned keys should be returned.
     * @returns {string[]} The keys.
     */
-  def keys(obj: js.Any): js.Array[String] = js.native
+  def keys(obj: Any): js.Array[String] = js.native
   
   /**
     * Logs data to the console. Pass any number of parameters to be logged. Log output is not processed if the framework is not running in debug mode.
     * @param {object} info* The objects to log.
     */
-  def log(msgs: js.Any*): Unit = js.native
+  def log(msgs: Any*): Unit = js.native
   
   /**
     * A noop function.
@@ -174,14 +173,14 @@ trait DurandalSystemModule extends StObject {
     * @param {object} module The module to use to get/create the default object for.
     * @returns {object} The default object for the module.
     */
-  def resolveObject(module: js.Any): js.Any = js.native
+  def resolveObject(module: Any): Any = js.native
   
   /**
     * Sets the module id for the specified object.
     * @param {object} obj The object whose module id you wish to set.
     * @param {string} id The id to set for the specified object.
     */
-  def setModuleId(obj: js.Any, id: String): Unit = js.native
+  def setModuleId(obj: Any, id: String): Unit = js.native
   
   /**
     * Durandal's version.
@@ -193,5 +192,5 @@ trait DurandalSystemModule extends StObject {
     * @param {number} milliseconds The number of milliseconds to wait.
     * @returns {Promise}
     */
-  def wait(milliseconds: Double): DurandalPromise[js.Any] = js.native
+  def wait(milliseconds: Double): DurandalPromise[Any] = js.native
 }

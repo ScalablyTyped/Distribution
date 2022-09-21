@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the collection of worksheet-level custom property.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @js.native
@@ -24,9 +24,10 @@ trait WorksheetCustomPropertyCollection
   /**
     * Adds a new custom property that maps to the provided key. This overwrites existing custom properties with that key.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     *
-    * @param key The key that identifies the custom property object. It is case-insensitive.The key is limited to 255 characters (larger values will cause an "InvalidArgument" error to be thrown.)
+    * @param key The key that identifies the custom property object. It is case-insensitive.The key is limited to 255 characters (larger values will cause an `InvalidArgument` error to be thrown.)
     * @param value The value of this custom property.
     */
   def add(key: String, value: String): WorksheetCustomProperty = js.native
@@ -38,13 +39,15 @@ trait WorksheetCustomPropertyCollection
   /**
     * Gets the number of custom properties on this worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
+    * Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does not exist.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     *
     * @param key The key that identifies the custom property object. It is case-insensitive.
@@ -52,8 +55,10 @@ trait WorksheetCustomPropertyCollection
   def getItem(key: String): WorksheetCustomProperty = js.native
   
   /**
-    * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.
+    * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     *
     * @param key The key that identifies the custom property object. It is case-insensitive.

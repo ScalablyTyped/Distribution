@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html)
   */
-class FullscreenCls ()
+open class FullscreenCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Fullscreen {
   def this(properties: FullscreenProperties) = this()

@@ -8,7 +8,7 @@ object areasSettingsMod {
   
   @JSImport("amcharts/AreasSettings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with AreasSettings {
     

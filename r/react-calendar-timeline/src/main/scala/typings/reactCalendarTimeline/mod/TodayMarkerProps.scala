@@ -1,6 +1,5 @@
 package typings.reactCalendarTimeline.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait TodayMarkerProps
 }
 object TodayMarkerProps {
   
-  inline def apply(date: Date | Double): TodayMarkerProps = {
+  inline def apply(date: js.Date | Double): TodayMarkerProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[TodayMarkerProps]
   }

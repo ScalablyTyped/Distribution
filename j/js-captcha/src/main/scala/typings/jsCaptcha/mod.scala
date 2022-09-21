@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("js-captcha", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with jCaptcha {
     def this(options: Options) = this()

@@ -1,12 +1,17 @@
 package typings.materialUiCore
 
+import typings.materialUiCore.accordionAccordionMod.AccordionClassKey
+import typings.materialUiCore.accordionActionsAccordionActionsMod.AccordionActionsClassKey
+import typings.materialUiCore.accordionSummaryAccordionSummaryMod.AccordionSummaryClassKey
 import typings.materialUiCore.appBarAppBarMod.AppBarClassKey
 import typings.materialUiCore.avatarAvatarMod.AvatarClassKey
 import typings.materialUiCore.backdropBackdropMod.BackdropClassKey
 import typings.materialUiCore.badgeBadgeMod.BadgeClassKey
 import typings.materialUiCore.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionClassKey
+import typings.materialUiCore.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseClassKey
 import typings.materialUiCore.buttonButtonMod.ButtonClassKey
+import typings.materialUiCore.buttonGroupButtonGroupMod.ButtonGroupClassKey
 import typings.materialUiCore.cardActionAreaCardActionAreaMod.CardActionAreaClassKey
 import typings.materialUiCore.cardActionsCardActionsMod.CardActionsClassKey
 import typings.materialUiCore.cardHeaderCardHeaderMod.CardHeaderClassKey
@@ -16,10 +21,11 @@ import typings.materialUiCore.chipChipMod.ChipClassKey
 import typings.materialUiCore.circularProgressCircularProgressMod.CircularProgressClassKey
 import typings.materialUiCore.collapseCollapseMod.CollapseClassKey
 import typings.materialUiCore.colorManipulatorMod.ColorFormat
-import typings.materialUiCore.createBreakpointsMod.Breakpoint
-import typings.materialUiCore.createMuiThemeMod.Direction
-import typings.materialUiCore.createTypographyMod.ThemeStyle
+import typings.materialUiCore.containerContainerMod.ContainerClassKey
+import typings.materialUiCore.createThemeMod.Direction
+import typings.materialUiCore.createTypographyMod.Variant
 import typings.materialUiCore.dialogActionsDialogActionsMod.DialogActionsClassKey
+import typings.materialUiCore.dialogContentDialogContentMod.DialogContentClassKey
 import typings.materialUiCore.dialogDialogMod.DialogClassKey
 import typings.materialUiCore.dividerDividerMod.DividerClassKey
 import typings.materialUiCore.drawerDrawerMod.DrawerClassKey
@@ -28,7 +34,6 @@ import typings.materialUiCore.expansionPanelExpansionPanelMod.ExpansionPanelClas
 import typings.materialUiCore.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
 import typings.materialUiCore.fabFabMod.FabClassKey
 import typings.materialUiCore.filledInputFilledInputMod.FilledInputClassKey
-import typings.materialUiCore.formControlContextMod.ContextFromPropsKey
 import typings.materialUiCore.formControlFormControlMod.FormControlClassKey
 import typings.materialUiCore.formControlLabelFormControlLabelMod.FormControlLabelClassKey
 import typings.materialUiCore.formGroupFormGroupMod.FormGroupClassKey
@@ -41,11 +46,12 @@ import typings.materialUiCore.gridGridMod.GridItemsAlignment
 import typings.materialUiCore.gridGridMod.GridJustification
 import typings.materialUiCore.gridGridMod.GridSize
 import typings.materialUiCore.gridGridMod.GridWrap
-import typings.materialUiCore.gridGridMod.StrippedProps
 import typings.materialUiCore.gridListTileBarGridListTileBarMod.GridListTileBarClassKey
 import typings.materialUiCore.gridListTileGridListTileMod.GridListTileClassKey
 import typings.materialUiCore.iconButtonIconButtonMod.IconButtonClassKey
 import typings.materialUiCore.iconIconMod.IconClassKey
+import typings.materialUiCore.imageListItemBarImageListItemBarMod.ImageListItemBarClassKey
+import typings.materialUiCore.imageListItemImageListItemMod.ImageListItemClassKey
 import typings.materialUiCore.inputAdornmentInputAdornmentMod.InputAdornmentClassKey
 import typings.materialUiCore.inputBaseInputBaseMod.InputBaseClassKey
 import typings.materialUiCore.inputInputMod.InputClassKey
@@ -53,27 +59,31 @@ import typings.materialUiCore.inputLabelInputLabelMod.InputLabelClassKey
 import typings.materialUiCore.linearProgressLinearProgressMod.LinearProgressClassKey
 import typings.materialUiCore.linkLinkMod.LinkClassKey
 import typings.materialUiCore.listItemAvatarListItemAvatarMod.ListItemAvatarClassKey
+import typings.materialUiCore.listItemIconListItemIconMod.ListItemIconClassKey
 import typings.materialUiCore.listItemListItemMod.ListItemClassKey
 import typings.materialUiCore.listItemTextListItemTextMod.ListItemTextClassKey
 import typings.materialUiCore.listListMod.ListClassKey
 import typings.materialUiCore.listSubheaderListSubheaderMod.ListSubheaderClassKey
 import typings.materialUiCore.menuItemMenuItemMod.MenuItemClassKey
+import typings.materialUiCore.menuMenuMod.MenuClassKey
 import typings.materialUiCore.mobileStepperMobileStepperMod.MobileStepperClassKey
 import typings.materialUiCore.mod.PaletteType
 import typings.materialUiCore.mod.PropTypes.Alignment
 import typings.materialUiCore.mod.PropTypes.Color
 import typings.materialUiCore.mod.PropTypes.Margin
-import typings.materialUiCore.modalModalMod.ModalClassKey
 import typings.materialUiCore.nativeSelectNativeSelectMod.NativeSelectClassKey
 import typings.materialUiCore.notchedOutlineMod.NotchedOutlineClassKey
 import typings.materialUiCore.outlinedInputOutlinedInputMod.OutlinedInputClassKey
 import typings.materialUiCore.paperPaperMod.PaperClassKey
+import typings.materialUiCore.popoverPopoverMod.PopoverClassKey
 import typings.materialUiCore.popoverPopoverMod.PopoverReference
 import typings.materialUiCore.popperPopperMod.PopperPlacementType
 import typings.materialUiCore.radioRadioMod.RadioClassKey
 import typings.materialUiCore.selectSelectMod.SelectClassKey
+import typings.materialUiCore.sliderSliderMod.SliderClassKey
 import typings.materialUiCore.snackbarContentSnackbarContentMod.SnackbarContentClassKey
 import typings.materialUiCore.snackbarSnackbarMod.SnackbarClassKey
+import typings.materialUiCore.snackbarSnackbarMod.SnackbarCloseReason
 import typings.materialUiCore.stepButtonStepButtonMod.StepButtonClasskey
 import typings.materialUiCore.stepConnectorStepConnectorMod.StepConnectorClasskey
 import typings.materialUiCore.stepContentStepContentMod.StepContentClasskey
@@ -85,7 +95,7 @@ import typings.materialUiCore.stepperStepperMod.StepperClasskey
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconClassKey
 import typings.materialUiCore.switchBaseMod.SwitchBaseClassKey
 import typings.materialUiCore.switchSwitchMod.SwitchClassKey
-import typings.materialUiCore.tabIndicatorMod.TabIndicatorClassKey
+import typings.materialUiCore.tabScrollButtonTabScrollButtonMod.TabScrollButtonClassKey
 import typings.materialUiCore.tabTabMod.TabClassKey
 import typings.materialUiCore.tableCellTableCellMod.SortDirection
 import typings.materialUiCore.tableCellTableCellMod.TableCellClassKey
@@ -93,15 +103,16 @@ import typings.materialUiCore.tablePaginationTablePaginationMod.TablePaginationC
 import typings.materialUiCore.tableRowTableRowMod.TableRowClassKey
 import typings.materialUiCore.tableSortLabelTableSortLabelMod.TableSortLabelClassKey
 import typings.materialUiCore.tableTableMod.Padding
+import typings.materialUiCore.tableTableMod.Size
+import typings.materialUiCore.tableTableMod.TableClassKey
 import typings.materialUiCore.tabsTabsMod.TabsClassKey
-import typings.materialUiCore.textareaMod.TextareaClassKey
 import typings.materialUiCore.toolbarToolbarMod.ToolbarClassKey
 import typings.materialUiCore.tooltipTooltipMod.TooltipClassKey
 import typings.materialUiCore.touchRippleMod.TouchRippleClassKey
 import typings.materialUiCore.transitionMod.TransitionHandlerKeys
 import typings.materialUiCore.transitionMod.TransitionKeys
-import typings.materialUiCore.typographyTypographyMod.Style
 import typings.materialUiCore.typographyTypographyMod.TypographyClassKey
+import typings.materialUiCore.useFormControlMod.ContextFromPropsKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,7 +125,6 @@ object materialUiCoreStrings {
        with Color
        with ListItemClassKey
        with Padding
-       with typings.materialUiCore.tableCellTableCellMod.Padding
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
@@ -122,16 +132,1052 @@ object materialUiCoreStrings {
   inline def `@global`: `@global` = "@global".asInstanceOf[`@global`]
   
   @js.native
-  sealed trait ConsistentWith extends StObject
-  inline def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
+  sealed trait BreakpointValues extends StObject
+  inline def BreakpointValues: BreakpointValues = "BreakpointValues".asInstanceOf[BreakpointValues]
   
   @js.native
-  sealed trait PartialTypographyPropsAbout extends StObject
-  inline def PartialTypographyPropsAbout: PartialTypographyPropsAbout = "PartialTypographyPropsAbout".asInstanceOf[PartialTypographyPropsAbout]
+  sealed trait Numbersign000 extends StObject
+  inline def Numbersign000: Numbersign000 = "#000".asInstanceOf[Numbersign000]
   
   @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
+  sealed trait Numbersign004d40 extends StObject
+  inline def Numbersign004d40: Numbersign004d40 = "#004d40".asInstanceOf[Numbersign004d40]
+  
+  @js.native
+  sealed trait Numbersign006064 extends StObject
+  inline def Numbersign006064: Numbersign006064 = "#006064".asInstanceOf[Numbersign006064]
+  
+  @js.native
+  sealed trait Numbersign00695c extends StObject
+  inline def Numbersign00695c: Numbersign00695c = "#00695c".asInstanceOf[Numbersign00695c]
+  
+  @js.native
+  sealed trait Numbersign00796b extends StObject
+  inline def Numbersign00796b: Numbersign00796b = "#00796b".asInstanceOf[Numbersign00796b]
+  
+  @js.native
+  sealed trait Numbersign00838f extends StObject
+  inline def Numbersign00838f: Numbersign00838f = "#00838f".asInstanceOf[Numbersign00838f]
+  
+  @js.native
+  sealed trait Numbersign00897b extends StObject
+  inline def Numbersign00897b: Numbersign00897b = "#00897b".asInstanceOf[Numbersign00897b]
+  
+  @js.native
+  sealed trait Numbersign0091ea extends StObject
+  inline def Numbersign0091ea: Numbersign0091ea = "#0091ea".asInstanceOf[Numbersign0091ea]
+  
+  @js.native
+  sealed trait Numbersign009688 extends StObject
+  inline def Numbersign009688: Numbersign009688 = "#009688".asInstanceOf[Numbersign009688]
+  
+  @js.native
+  sealed trait Numbersign0097a7 extends StObject
+  inline def Numbersign0097a7: Numbersign0097a7 = "#0097a7".asInstanceOf[Numbersign0097a7]
+  
+  @js.native
+  sealed trait Numbersign00acc1 extends StObject
+  inline def Numbersign00acc1: Numbersign00acc1 = "#00acc1".asInstanceOf[Numbersign00acc1]
+  
+  @js.native
+  sealed trait Numbersign00b0ff extends StObject
+  inline def Numbersign00b0ff: Numbersign00b0ff = "#00b0ff".asInstanceOf[Numbersign00b0ff]
+  
+  @js.native
+  sealed trait Numbersign00b8d4 extends StObject
+  inline def Numbersign00b8d4: Numbersign00b8d4 = "#00b8d4".asInstanceOf[Numbersign00b8d4]
+  
+  @js.native
+  sealed trait Numbersign00bcd4 extends StObject
+  inline def Numbersign00bcd4: Numbersign00bcd4 = "#00bcd4".asInstanceOf[Numbersign00bcd4]
+  
+  @js.native
+  sealed trait Numbersign00bfa5 extends StObject
+  inline def Numbersign00bfa5: Numbersign00bfa5 = "#00bfa5".asInstanceOf[Numbersign00bfa5]
+  
+  @js.native
+  sealed trait Numbersign00c853 extends StObject
+  inline def Numbersign00c853: Numbersign00c853 = "#00c853".asInstanceOf[Numbersign00c853]
+  
+  @js.native
+  sealed trait Numbersign00e5ff extends StObject
+  inline def Numbersign00e5ff: Numbersign00e5ff = "#00e5ff".asInstanceOf[Numbersign00e5ff]
+  
+  @js.native
+  sealed trait Numbersign00e676 extends StObject
+  inline def Numbersign00e676: Numbersign00e676 = "#00e676".asInstanceOf[Numbersign00e676]
+  
+  @js.native
+  sealed trait Numbersign01579b extends StObject
+  inline def Numbersign01579b: Numbersign01579b = "#01579b".asInstanceOf[Numbersign01579b]
+  
+  @js.native
+  sealed trait Numbersign0277bd extends StObject
+  inline def Numbersign0277bd: Numbersign0277bd = "#0277bd".asInstanceOf[Numbersign0277bd]
+  
+  @js.native
+  sealed trait Numbersign0288d1 extends StObject
+  inline def Numbersign0288d1: Numbersign0288d1 = "#0288d1".asInstanceOf[Numbersign0288d1]
+  
+  @js.native
+  sealed trait Numbersign039be5 extends StObject
+  inline def Numbersign039be5: Numbersign039be5 = "#039be5".asInstanceOf[Numbersign039be5]
+  
+  @js.native
+  sealed trait Numbersign03a9f4 extends StObject
+  inline def Numbersign03a9f4: Numbersign03a9f4 = "#03a9f4".asInstanceOf[Numbersign03a9f4]
+  
+  @js.native
+  sealed trait Numbersign0d47a1 extends StObject
+  inline def Numbersign0d47a1: Numbersign0d47a1 = "#0d47a1".asInstanceOf[Numbersign0d47a1]
+  
+  @js.native
+  sealed trait Numbersign1565c0 extends StObject
+  inline def Numbersign1565c0: Numbersign1565c0 = "#1565c0".asInstanceOf[Numbersign1565c0]
+  
+  @js.native
+  sealed trait Numbersign18ffff extends StObject
+  inline def Numbersign18ffff: Numbersign18ffff = "#18ffff".asInstanceOf[Numbersign18ffff]
+  
+  @js.native
+  sealed trait Numbersign1976d2 extends StObject
+  inline def Numbersign1976d2: Numbersign1976d2 = "#1976d2".asInstanceOf[Numbersign1976d2]
+  
+  @js.native
+  sealed trait Numbersign1a237e extends StObject
+  inline def Numbersign1a237e: Numbersign1a237e = "#1a237e".asInstanceOf[Numbersign1a237e]
+  
+  @js.native
+  sealed trait Numbersign1b5e20 extends StObject
+  inline def Numbersign1b5e20: Numbersign1b5e20 = "#1b5e20".asInstanceOf[Numbersign1b5e20]
+  
+  @js.native
+  sealed trait Numbersign1de9b6 extends StObject
+  inline def Numbersign1de9b6: Numbersign1de9b6 = "#1de9b6".asInstanceOf[Numbersign1de9b6]
+  
+  @js.native
+  sealed trait Numbersign1e88e5 extends StObject
+  inline def Numbersign1e88e5: Numbersign1e88e5 = "#1e88e5".asInstanceOf[Numbersign1e88e5]
+  
+  @js.native
+  sealed trait Numbersign212121 extends StObject
+  inline def Numbersign212121: Numbersign212121 = "#212121".asInstanceOf[Numbersign212121]
+  
+  @js.native
+  sealed trait Numbersign2196f3 extends StObject
+  inline def Numbersign2196f3: Numbersign2196f3 = "#2196f3".asInstanceOf[Numbersign2196f3]
+  
+  @js.native
+  sealed trait Numbersign263238 extends StObject
+  inline def Numbersign263238: Numbersign263238 = "#263238".asInstanceOf[Numbersign263238]
+  
+  @js.native
+  sealed trait Numbersign26a69a extends StObject
+  inline def Numbersign26a69a: Numbersign26a69a = "#26a69a".asInstanceOf[Numbersign26a69a]
+  
+  @js.native
+  sealed trait Numbersign26c6da extends StObject
+  inline def Numbersign26c6da: Numbersign26c6da = "#26c6da".asInstanceOf[Numbersign26c6da]
+  
+  @js.native
+  sealed trait Numbersign283593 extends StObject
+  inline def Numbersign283593: Numbersign283593 = "#283593".asInstanceOf[Numbersign283593]
+  
+  @js.native
+  sealed trait Numbersign2962ff extends StObject
+  inline def Numbersign2962ff: Numbersign2962ff = "#2962ff".asInstanceOf[Numbersign2962ff]
+  
+  @js.native
+  sealed trait Numbersign2979ff extends StObject
+  inline def Numbersign2979ff: Numbersign2979ff = "#2979ff".asInstanceOf[Numbersign2979ff]
+  
+  @js.native
+  sealed trait Numbersign29b6f6 extends StObject
+  inline def Numbersign29b6f6: Numbersign29b6f6 = "#29b6f6".asInstanceOf[Numbersign29b6f6]
+  
+  @js.native
+  sealed trait Numbersign2e7d32 extends StObject
+  inline def Numbersign2e7d32: Numbersign2e7d32 = "#2e7d32".asInstanceOf[Numbersign2e7d32]
+  
+  @js.native
+  sealed trait Numbersign303030 extends StObject
+  inline def Numbersign303030: Numbersign303030 = "#303030".asInstanceOf[Numbersign303030]
+  
+  @js.native
+  sealed trait Numbersign303f9f extends StObject
+  inline def Numbersign303f9f: Numbersign303f9f = "#303f9f".asInstanceOf[Numbersign303f9f]
+  
+  @js.native
+  sealed trait Numbersign304ffe extends StObject
+  inline def Numbersign304ffe: Numbersign304ffe = "#304ffe".asInstanceOf[Numbersign304ffe]
+  
+  @js.native
+  sealed trait Numbersign311b92 extends StObject
+  inline def Numbersign311b92: Numbersign311b92 = "#311b92".asInstanceOf[Numbersign311b92]
+  
+  @js.native
+  sealed trait Numbersign33691e extends StObject
+  inline def Numbersign33691e: Numbersign33691e = "#33691e".asInstanceOf[Numbersign33691e]
+  
+  @js.native
+  sealed trait Numbersign37474f extends StObject
+  inline def Numbersign37474f: Numbersign37474f = "#37474f".asInstanceOf[Numbersign37474f]
+  
+  @js.native
+  sealed trait Numbersign388e3c extends StObject
+  inline def Numbersign388e3c: Numbersign388e3c = "#388e3c".asInstanceOf[Numbersign388e3c]
+  
+  @js.native
+  sealed trait Numbersign3949ab extends StObject
+  inline def Numbersign3949ab: Numbersign3949ab = "#3949ab".asInstanceOf[Numbersign3949ab]
+  
+  @js.native
+  sealed trait Numbersign3d5afe extends StObject
+  inline def Numbersign3d5afe: Numbersign3d5afe = "#3d5afe".asInstanceOf[Numbersign3d5afe]
+  
+  @js.native
+  sealed trait Numbersign3e2723 extends StObject
+  inline def Numbersign3e2723: Numbersign3e2723 = "#3e2723".asInstanceOf[Numbersign3e2723]
+  
+  @js.native
+  sealed trait Numbersign3f51b5 extends StObject
+  inline def Numbersign3f51b5: Numbersign3f51b5 = "#3f51b5".asInstanceOf[Numbersign3f51b5]
+  
+  @js.native
+  sealed trait Numbersign40c4ff extends StObject
+  inline def Numbersign40c4ff: Numbersign40c4ff = "#40c4ff".asInstanceOf[Numbersign40c4ff]
+  
+  @js.native
+  sealed trait Numbersign424242 extends StObject
+  inline def Numbersign424242: Numbersign424242 = "#424242".asInstanceOf[Numbersign424242]
+  
+  @js.native
+  sealed trait Numbersign42a5f5 extends StObject
+  inline def Numbersign42a5f5: Numbersign42a5f5 = "#42a5f5".asInstanceOf[Numbersign42a5f5]
+  
+  @js.native
+  sealed trait Numbersign43a047 extends StObject
+  inline def Numbersign43a047: Numbersign43a047 = "#43a047".asInstanceOf[Numbersign43a047]
+  
+  @js.native
+  sealed trait Numbersign448aff extends StObject
+  inline def Numbersign448aff: Numbersign448aff = "#448aff".asInstanceOf[Numbersign448aff]
+  
+  @js.native
+  sealed trait Numbersign4527a0 extends StObject
+  inline def Numbersign4527a0: Numbersign4527a0 = "#4527a0".asInstanceOf[Numbersign4527a0]
+  
+  @js.native
+  sealed trait Numbersign455a64 extends StObject
+  inline def Numbersign455a64: Numbersign455a64 = "#455a64".asInstanceOf[Numbersign455a64]
+  
+  @js.native
+  sealed trait Numbersign4a148c extends StObject
+  inline def Numbersign4a148c: Numbersign4a148c = "#4a148c".asInstanceOf[Numbersign4a148c]
+  
+  @js.native
+  sealed trait Numbersign4caf50 extends StObject
+  inline def Numbersign4caf50: Numbersign4caf50 = "#4caf50".asInstanceOf[Numbersign4caf50]
+  
+  @js.native
+  sealed trait Numbersign4db6ac extends StObject
+  inline def Numbersign4db6ac: Numbersign4db6ac = "#4db6ac".asInstanceOf[Numbersign4db6ac]
+  
+  @js.native
+  sealed trait Numbersign4dd0e1 extends StObject
+  inline def Numbersign4dd0e1: Numbersign4dd0e1 = "#4dd0e1".asInstanceOf[Numbersign4dd0e1]
+  
+  @js.native
+  sealed trait Numbersign4e342e extends StObject
+  inline def Numbersign4e342e: Numbersign4e342e = "#4e342e".asInstanceOf[Numbersign4e342e]
+  
+  @js.native
+  sealed trait Numbersign4fc3f7 extends StObject
+  inline def Numbersign4fc3f7: Numbersign4fc3f7 = "#4fc3f7".asInstanceOf[Numbersign4fc3f7]
+  
+  @js.native
+  sealed trait Numbersign512da8 extends StObject
+  inline def Numbersign512da8: Numbersign512da8 = "#512da8".asInstanceOf[Numbersign512da8]
+  
+  @js.native
+  sealed trait Numbersign536dfe extends StObject
+  inline def Numbersign536dfe: Numbersign536dfe = "#536dfe".asInstanceOf[Numbersign536dfe]
+  
+  @js.native
+  sealed trait Numbersign546e7a extends StObject
+  inline def Numbersign546e7a: Numbersign546e7a = "#546e7a".asInstanceOf[Numbersign546e7a]
+  
+  @js.native
+  sealed trait Numbersign558b2f extends StObject
+  inline def Numbersign558b2f: Numbersign558b2f = "#558b2f".asInstanceOf[Numbersign558b2f]
+  
+  @js.native
+  sealed trait Numbersign5c6bc0 extends StObject
+  inline def Numbersign5c6bc0: Numbersign5c6bc0 = "#5c6bc0".asInstanceOf[Numbersign5c6bc0]
+  
+  @js.native
+  sealed trait Numbersign5d4037 extends StObject
+  inline def Numbersign5d4037: Numbersign5d4037 = "#5d4037".asInstanceOf[Numbersign5d4037]
+  
+  @js.native
+  sealed trait Numbersign5e35b1 extends StObject
+  inline def Numbersign5e35b1: Numbersign5e35b1 = "#5e35b1".asInstanceOf[Numbersign5e35b1]
+  
+  @js.native
+  sealed trait Numbersign607d8b extends StObject
+  inline def Numbersign607d8b: Numbersign607d8b = "#607d8b".asInstanceOf[Numbersign607d8b]
+  
+  @js.native
+  sealed trait Numbersign616161 extends StObject
+  inline def Numbersign616161: Numbersign616161 = "#616161".asInstanceOf[Numbersign616161]
+  
+  @js.native
+  sealed trait Numbersign6200ea extends StObject
+  inline def Numbersign6200ea: Numbersign6200ea = "#6200ea".asInstanceOf[Numbersign6200ea]
+  
+  @js.native
+  sealed trait Numbersign64b5f6 extends StObject
+  inline def Numbersign64b5f6: Numbersign64b5f6 = "#64b5f6".asInstanceOf[Numbersign64b5f6]
+  
+  @js.native
+  sealed trait Numbersign64dd17 extends StObject
+  inline def Numbersign64dd17: Numbersign64dd17 = "#64dd17".asInstanceOf[Numbersign64dd17]
+  
+  @js.native
+  sealed trait Numbersign64ffda extends StObject
+  inline def Numbersign64ffda: Numbersign64ffda = "#64ffda".asInstanceOf[Numbersign64ffda]
+  
+  @js.native
+  sealed trait Numbersign651fff extends StObject
+  inline def Numbersign651fff: Numbersign651fff = "#651fff".asInstanceOf[Numbersign651fff]
+  
+  @js.native
+  sealed trait Numbersign66bb6a extends StObject
+  inline def Numbersign66bb6a: Numbersign66bb6a = "#66bb6a".asInstanceOf[Numbersign66bb6a]
+  
+  @js.native
+  sealed trait Numbersign673ab7 extends StObject
+  inline def Numbersign673ab7: Numbersign673ab7 = "#673ab7".asInstanceOf[Numbersign673ab7]
+  
+  @js.native
+  sealed trait Numbersign689f38 extends StObject
+  inline def Numbersign689f38: Numbersign689f38 = "#689f38".asInstanceOf[Numbersign689f38]
+  
+  @js.native
+  sealed trait Numbersign69f0ae extends StObject
+  inline def Numbersign69f0ae: Numbersign69f0ae = "#69f0ae".asInstanceOf[Numbersign69f0ae]
+  
+  @js.native
+  sealed trait Numbersign6a1b9a extends StObject
+  inline def Numbersign6a1b9a: Numbersign6a1b9a = "#6a1b9a".asInstanceOf[Numbersign6a1b9a]
+  
+  @js.native
+  sealed trait Numbersign6d4c41 extends StObject
+  inline def Numbersign6d4c41: Numbersign6d4c41 = "#6d4c41".asInstanceOf[Numbersign6d4c41]
+  
+  @js.native
+  sealed trait Numbersign757575 extends StObject
+  inline def Numbersign757575: Numbersign757575 = "#757575".asInstanceOf[Numbersign757575]
+  
+  @js.native
+  sealed trait Numbersign76ff03 extends StObject
+  inline def Numbersign76ff03: Numbersign76ff03 = "#76ff03".asInstanceOf[Numbersign76ff03]
+  
+  @js.native
+  sealed trait Numbersign78909c extends StObject
+  inline def Numbersign78909c: Numbersign78909c = "#78909c".asInstanceOf[Numbersign78909c]
+  
+  @js.native
+  sealed trait Numbersign795548 extends StObject
+  inline def Numbersign795548: Numbersign795548 = "#795548".asInstanceOf[Numbersign795548]
+  
+  @js.native
+  sealed trait Numbersign7986cb extends StObject
+  inline def Numbersign7986cb: Numbersign7986cb = "#7986cb".asInstanceOf[Numbersign7986cb]
+  
+  @js.native
+  sealed trait Numbersign7b1fa2 extends StObject
+  inline def Numbersign7b1fa2: Numbersign7b1fa2 = "#7b1fa2".asInstanceOf[Numbersign7b1fa2]
+  
+  @js.native
+  sealed trait Numbersign7c4dff extends StObject
+  inline def Numbersign7c4dff: Numbersign7c4dff = "#7c4dff".asInstanceOf[Numbersign7c4dff]
+  
+  @js.native
+  sealed trait Numbersign7cb342 extends StObject
+  inline def Numbersign7cb342: Numbersign7cb342 = "#7cb342".asInstanceOf[Numbersign7cb342]
+  
+  @js.native
+  sealed trait Numbersign7e57c2 extends StObject
+  inline def Numbersign7e57c2: Numbersign7e57c2 = "#7e57c2".asInstanceOf[Numbersign7e57c2]
+  
+  @js.native
+  sealed trait Numbersign80cbc4 extends StObject
+  inline def Numbersign80cbc4: Numbersign80cbc4 = "#80cbc4".asInstanceOf[Numbersign80cbc4]
+  
+  @js.native
+  sealed trait Numbersign80d8ff extends StObject
+  inline def Numbersign80d8ff: Numbersign80d8ff = "#80d8ff".asInstanceOf[Numbersign80d8ff]
+  
+  @js.native
+  sealed trait Numbersign80deea extends StObject
+  inline def Numbersign80deea: Numbersign80deea = "#80deea".asInstanceOf[Numbersign80deea]
+  
+  @js.native
+  sealed trait Numbersign81c784 extends StObject
+  inline def Numbersign81c784: Numbersign81c784 = "#81c784".asInstanceOf[Numbersign81c784]
+  
+  @js.native
+  sealed trait Numbersign81d4fa extends StObject
+  inline def Numbersign81d4fa: Numbersign81d4fa = "#81d4fa".asInstanceOf[Numbersign81d4fa]
+  
+  @js.native
+  sealed trait Numbersign827717 extends StObject
+  inline def Numbersign827717: Numbersign827717 = "#827717".asInstanceOf[Numbersign827717]
+  
+  @js.native
+  sealed trait Numbersign82b1ff extends StObject
+  inline def Numbersign82b1ff: Numbersign82b1ff = "#82b1ff".asInstanceOf[Numbersign82b1ff]
+  
+  @js.native
+  sealed trait Numbersign84ffff extends StObject
+  inline def Numbersign84ffff: Numbersign84ffff = "#84ffff".asInstanceOf[Numbersign84ffff]
+  
+  @js.native
+  sealed trait Numbersign880e4f extends StObject
+  inline def Numbersign880e4f: Numbersign880e4f = "#880e4f".asInstanceOf[Numbersign880e4f]
+  
+  @js.native
+  sealed trait Numbersign8bc34a extends StObject
+  inline def Numbersign8bc34a: Numbersign8bc34a = "#8bc34a".asInstanceOf[Numbersign8bc34a]
+  
+  @js.native
+  sealed trait Numbersign8c9eff extends StObject
+  inline def Numbersign8c9eff: Numbersign8c9eff = "#8c9eff".asInstanceOf[Numbersign8c9eff]
+  
+  @js.native
+  sealed trait Numbersign8d6e63 extends StObject
+  inline def Numbersign8d6e63: Numbersign8d6e63 = "#8d6e63".asInstanceOf[Numbersign8d6e63]
+  
+  @js.native
+  sealed trait Numbersign8e24aa extends StObject
+  inline def Numbersign8e24aa: Numbersign8e24aa = "#8e24aa".asInstanceOf[Numbersign8e24aa]
+  
+  @js.native
+  sealed trait Numbersign90a4ae extends StObject
+  inline def Numbersign90a4ae: Numbersign90a4ae = "#90a4ae".asInstanceOf[Numbersign90a4ae]
+  
+  @js.native
+  sealed trait Numbersign90caf9 extends StObject
+  inline def Numbersign90caf9: Numbersign90caf9 = "#90caf9".asInstanceOf[Numbersign90caf9]
+  
+  @js.native
+  sealed trait Numbersign9575cd extends StObject
+  inline def Numbersign9575cd: Numbersign9575cd = "#9575cd".asInstanceOf[Numbersign9575cd]
+  
+  @js.native
+  sealed trait Numbersign9c27b0 extends StObject
+  inline def Numbersign9c27b0: Numbersign9c27b0 = "#9c27b0".asInstanceOf[Numbersign9c27b0]
+  
+  @js.native
+  sealed trait Numbersign9ccc65 extends StObject
+  inline def Numbersign9ccc65: Numbersign9ccc65 = "#9ccc65".asInstanceOf[Numbersign9ccc65]
+  
+  @js.native
+  sealed trait Numbersign9e9d24 extends StObject
+  inline def Numbersign9e9d24: Numbersign9e9d24 = "#9e9d24".asInstanceOf[Numbersign9e9d24]
+  
+  @js.native
+  sealed trait Numbersign9e9e9e extends StObject
+  inline def Numbersign9e9e9e: Numbersign9e9e9e = "#9e9e9e".asInstanceOf[Numbersign9e9e9e]
+  
+  @js.native
+  sealed trait Numbersign9fa8da extends StObject
+  inline def Numbersign9fa8da: Numbersign9fa8da = "#9fa8da".asInstanceOf[Numbersign9fa8da]
+  
+  @js.native
+  sealed trait Numbersigna1887f extends StObject
+  inline def Numbersigna1887f: Numbersigna1887f = "#a1887f".asInstanceOf[Numbersigna1887f]
+  
+  @js.native
+  sealed trait Numbersigna5d6a7 extends StObject
+  inline def Numbersigna5d6a7: Numbersigna5d6a7 = "#a5d6a7".asInstanceOf[Numbersigna5d6a7]
+  
+  @js.native
+  sealed trait Numbersigna7ffeb extends StObject
+  inline def Numbersigna7ffeb: Numbersigna7ffeb = "#a7ffeb".asInstanceOf[Numbersigna7ffeb]
+  
+  @js.native
+  sealed trait Numbersignaa00ff extends StObject
+  inline def Numbersignaa00ff: Numbersignaa00ff = "#aa00ff".asInstanceOf[Numbersignaa00ff]
+  
+  @js.native
+  sealed trait Numbersignaaaaaa extends StObject
+  inline def Numbersignaaaaaa: Numbersignaaaaaa = "#aaaaaa".asInstanceOf[Numbersignaaaaaa]
+  
+  @js.native
+  sealed trait Numbersignab47bc extends StObject
+  inline def Numbersignab47bc: Numbersignab47bc = "#ab47bc".asInstanceOf[Numbersignab47bc]
+  
+  @js.native
+  sealed trait Numbersignad1457 extends StObject
+  inline def Numbersignad1457: Numbersignad1457 = "#ad1457".asInstanceOf[Numbersignad1457]
+  
+  @js.native
+  sealed trait Numbersignaed581 extends StObject
+  inline def Numbersignaed581: Numbersignaed581 = "#aed581".asInstanceOf[Numbersignaed581]
+  
+  @js.native
+  sealed trait Numbersignaeea00 extends StObject
+  inline def Numbersignaeea00: Numbersignaeea00 = "#aeea00".asInstanceOf[Numbersignaeea00]
+  
+  @js.native
+  sealed trait Numbersignafb42b extends StObject
+  inline def Numbersignafb42b: Numbersignafb42b = "#afb42b".asInstanceOf[Numbersignafb42b]
+  
+  @js.native
+  sealed trait Numbersignb0bec5 extends StObject
+  inline def Numbersignb0bec5: Numbersignb0bec5 = "#b0bec5".asInstanceOf[Numbersignb0bec5]
+  
+  @js.native
+  sealed trait Numbersignb2dfdb extends StObject
+  inline def Numbersignb2dfdb: Numbersignb2dfdb = "#b2dfdb".asInstanceOf[Numbersignb2dfdb]
+  
+  @js.native
+  sealed trait Numbersignb2ebf2 extends StObject
+  inline def Numbersignb2ebf2: Numbersignb2ebf2 = "#b2ebf2".asInstanceOf[Numbersignb2ebf2]
+  
+  @js.native
+  sealed trait Numbersignb2ff59 extends StObject
+  inline def Numbersignb2ff59: Numbersignb2ff59 = "#b2ff59".asInstanceOf[Numbersignb2ff59]
+  
+  @js.native
+  sealed trait Numbersignb388ff extends StObject
+  inline def Numbersignb388ff: Numbersignb388ff = "#b388ff".asInstanceOf[Numbersignb388ff]
+  
+  @js.native
+  sealed trait Numbersignb39ddb extends StObject
+  inline def Numbersignb39ddb: Numbersignb39ddb = "#b39ddb".asInstanceOf[Numbersignb39ddb]
+  
+  @js.native
+  sealed trait Numbersignb3e5fc extends StObject
+  inline def Numbersignb3e5fc: Numbersignb3e5fc = "#b3e5fc".asInstanceOf[Numbersignb3e5fc]
+  
+  @js.native
+  sealed trait Numbersignb71c1c extends StObject
+  inline def Numbersignb71c1c: Numbersignb71c1c = "#b71c1c".asInstanceOf[Numbersignb71c1c]
+  
+  @js.native
+  sealed trait Numbersignb9f6ca extends StObject
+  inline def Numbersignb9f6ca: Numbersignb9f6ca = "#b9f6ca".asInstanceOf[Numbersignb9f6ca]
+  
+  @js.native
+  sealed trait Numbersignba68c8 extends StObject
+  inline def Numbersignba68c8: Numbersignba68c8 = "#ba68c8".asInstanceOf[Numbersignba68c8]
+  
+  @js.native
+  sealed trait Numbersignbbdefb extends StObject
+  inline def Numbersignbbdefb: Numbersignbbdefb = "#bbdefb".asInstanceOf[Numbersignbbdefb]
+  
+  @js.native
+  sealed trait Numbersignbcaaa4 extends StObject
+  inline def Numbersignbcaaa4: Numbersignbcaaa4 = "#bcaaa4".asInstanceOf[Numbersignbcaaa4]
+  
+  @js.native
+  sealed trait Numbersignbdbdbd extends StObject
+  inline def Numbersignbdbdbd: Numbersignbdbdbd = "#bdbdbd".asInstanceOf[Numbersignbdbdbd]
+  
+  @js.native
+  sealed trait Numbersignbf360c extends StObject
+  inline def Numbersignbf360c: Numbersignbf360c = "#bf360c".asInstanceOf[Numbersignbf360c]
+  
+  @js.native
+  sealed trait Numbersignc0ca33 extends StObject
+  inline def Numbersignc0ca33: Numbersignc0ca33 = "#c0ca33".asInstanceOf[Numbersignc0ca33]
+  
+  @js.native
+  sealed trait Numbersignc2185b extends StObject
+  inline def Numbersignc2185b: Numbersignc2185b = "#c2185b".asInstanceOf[Numbersignc2185b]
+  
+  @js.native
+  sealed trait Numbersignc51162 extends StObject
+  inline def Numbersignc51162: Numbersignc51162 = "#c51162".asInstanceOf[Numbersignc51162]
+  
+  @js.native
+  sealed trait Numbersignc5cae9 extends StObject
+  inline def Numbersignc5cae9: Numbersignc5cae9 = "#c5cae9".asInstanceOf[Numbersignc5cae9]
+  
+  @js.native
+  sealed trait Numbersignc5e1a5 extends StObject
+  inline def Numbersignc5e1a5: Numbersignc5e1a5 = "#c5e1a5".asInstanceOf[Numbersignc5e1a5]
+  
+  @js.native
+  sealed trait Numbersignc62828 extends StObject
+  inline def Numbersignc62828: Numbersignc62828 = "#c62828".asInstanceOf[Numbersignc62828]
+  
+  @js.native
+  sealed trait Numbersignc6ff00 extends StObject
+  inline def Numbersignc6ff00: Numbersignc6ff00 = "#c6ff00".asInstanceOf[Numbersignc6ff00]
+  
+  @js.native
+  sealed trait Numbersignc8e6c9 extends StObject
+  inline def Numbersignc8e6c9: Numbersignc8e6c9 = "#c8e6c9".asInstanceOf[Numbersignc8e6c9]
+  
+  @js.native
+  sealed trait Numbersignccff90 extends StObject
+  inline def Numbersignccff90: Numbersignccff90 = "#ccff90".asInstanceOf[Numbersignccff90]
+  
+  @js.native
+  sealed trait Numbersigncddc39 extends StObject
+  inline def Numbersigncddc39: Numbersigncddc39 = "#cddc39".asInstanceOf[Numbersigncddc39]
+  
+  @js.native
+  sealed trait Numbersignce93d8 extends StObject
+  inline def Numbersignce93d8: Numbersignce93d8 = "#ce93d8".asInstanceOf[Numbersignce93d8]
+  
+  @js.native
+  sealed trait Numbersigncfd8dc extends StObject
+  inline def Numbersigncfd8dc: Numbersigncfd8dc = "#cfd8dc".asInstanceOf[Numbersigncfd8dc]
+  
+  @js.native
+  sealed trait Numbersignd1c4e9 extends StObject
+  inline def Numbersignd1c4e9: Numbersignd1c4e9 = "#d1c4e9".asInstanceOf[Numbersignd1c4e9]
+  
+  @js.native
+  sealed trait Numbersignd32f2f extends StObject
+  inline def Numbersignd32f2f: Numbersignd32f2f = "#d32f2f".asInstanceOf[Numbersignd32f2f]
+  
+  @js.native
+  sealed trait Numbersignd4e157 extends StObject
+  inline def Numbersignd4e157: Numbersignd4e157 = "#d4e157".asInstanceOf[Numbersignd4e157]
+  
+  @js.native
+  sealed trait Numbersignd50000 extends StObject
+  inline def Numbersignd50000: Numbersignd50000 = "#d50000".asInstanceOf[Numbersignd50000]
+  
+  @js.native
+  sealed trait Numbersignd500f9 extends StObject
+  inline def Numbersignd500f9: Numbersignd500f9 = "#d500f9".asInstanceOf[Numbersignd500f9]
+  
+  @js.native
+  sealed trait Numbersignd5d5d5 extends StObject
+  inline def Numbersignd5d5d5: Numbersignd5d5d5 = "#d5d5d5".asInstanceOf[Numbersignd5d5d5]
+  
+  @js.native
+  sealed trait Numbersignd7ccc8 extends StObject
+  inline def Numbersignd7ccc8: Numbersignd7ccc8 = "#d7ccc8".asInstanceOf[Numbersignd7ccc8]
+  
+  @js.native
+  sealed trait Numbersignd81b60 extends StObject
+  inline def Numbersignd81b60: Numbersignd81b60 = "#d81b60".asInstanceOf[Numbersignd81b60]
+  
+  @js.native
+  sealed trait Numbersignd84315 extends StObject
+  inline def Numbersignd84315: Numbersignd84315 = "#d84315".asInstanceOf[Numbersignd84315]
+  
+  @js.native
+  sealed trait Numbersigndce775 extends StObject
+  inline def Numbersigndce775: Numbersigndce775 = "#dce775".asInstanceOf[Numbersigndce775]
+  
+  @js.native
+  sealed trait Numbersigndcedc8 extends StObject
+  inline def Numbersigndcedc8: Numbersigndcedc8 = "#dcedc8".asInstanceOf[Numbersigndcedc8]
+  
+  @js.native
+  sealed trait Numbersigndd2c00 extends StObject
+  inline def Numbersigndd2c00: Numbersigndd2c00 = "#dd2c00".asInstanceOf[Numbersigndd2c00]
+  
+  @js.native
+  sealed trait Numbersigne040fb extends StObject
+  inline def Numbersigne040fb: Numbersigne040fb = "#e040fb".asInstanceOf[Numbersigne040fb]
+  
+  @js.native
+  sealed trait Numbersigne0e0e0 extends StObject
+  inline def Numbersigne0e0e0: Numbersigne0e0e0 = "#e0e0e0".asInstanceOf[Numbersigne0e0e0]
+  
+  @js.native
+  sealed trait Numbersigne0f2f1 extends StObject
+  inline def Numbersigne0f2f1: Numbersigne0f2f1 = "#e0f2f1".asInstanceOf[Numbersigne0f2f1]
+  
+  @js.native
+  sealed trait Numbersigne0f7fa extends StObject
+  inline def Numbersigne0f7fa: Numbersigne0f7fa = "#e0f7fa".asInstanceOf[Numbersigne0f7fa]
+  
+  @js.native
+  sealed trait Numbersigne1bee7 extends StObject
+  inline def Numbersigne1bee7: Numbersigne1bee7 = "#e1bee7".asInstanceOf[Numbersigne1bee7]
+  
+  @js.native
+  sealed trait Numbersigne1f5fe extends StObject
+  inline def Numbersigne1f5fe: Numbersigne1f5fe = "#e1f5fe".asInstanceOf[Numbersigne1f5fe]
+  
+  @js.native
+  sealed trait Numbersigne3f2fd extends StObject
+  inline def Numbersigne3f2fd: Numbersigne3f2fd = "#e3f2fd".asInstanceOf[Numbersigne3f2fd]
+  
+  @js.native
+  sealed trait Numbersigne53935 extends StObject
+  inline def Numbersigne53935: Numbersigne53935 = "#e53935".asInstanceOf[Numbersigne53935]
+  
+  @js.native
+  sealed trait Numbersigne57373 extends StObject
+  inline def Numbersigne57373: Numbersigne57373 = "#e57373".asInstanceOf[Numbersigne57373]
+  
+  @js.native
+  sealed trait Numbersigne64a19 extends StObject
+  inline def Numbersigne64a19: Numbersigne64a19 = "#e64a19".asInstanceOf[Numbersigne64a19]
+  
+  @js.native
+  sealed trait Numbersigne65100 extends StObject
+  inline def Numbersigne65100: Numbersigne65100 = "#e65100".asInstanceOf[Numbersigne65100]
+  
+  @js.native
+  sealed trait Numbersigne6ee9c extends StObject
+  inline def Numbersigne6ee9c: Numbersigne6ee9c = "#e6ee9c".asInstanceOf[Numbersigne6ee9c]
+  
+  @js.native
+  sealed trait Numbersigne8eaf6 extends StObject
+  inline def Numbersigne8eaf6: Numbersigne8eaf6 = "#e8eaf6".asInstanceOf[Numbersigne8eaf6]
+  
+  @js.native
+  sealed trait Numbersigne8f5e9 extends StObject
+  inline def Numbersigne8f5e9: Numbersigne8f5e9 = "#e8f5e9".asInstanceOf[Numbersigne8f5e9]
+  
+  @js.native
+  sealed trait Numbersigne91e63 extends StObject
+  inline def Numbersigne91e63: Numbersigne91e63 = "#e91e63".asInstanceOf[Numbersigne91e63]
+  
+  @js.native
+  sealed trait Numbersignea80fc extends StObject
+  inline def Numbersignea80fc: Numbersignea80fc = "#ea80fc".asInstanceOf[Numbersignea80fc]
+  
+  @js.native
+  sealed trait Numbersignec407a extends StObject
+  inline def Numbersignec407a: Numbersignec407a = "#ec407a".asInstanceOf[Numbersignec407a]
+  
+  @js.native
+  sealed trait Numbersigneceff1 extends StObject
+  inline def Numbersigneceff1: Numbersigneceff1 = "#eceff1".asInstanceOf[Numbersigneceff1]
+  
+  @js.native
+  sealed trait Numbersignede7f6 extends StObject
+  inline def Numbersignede7f6: Numbersignede7f6 = "#ede7f6".asInstanceOf[Numbersignede7f6]
+  
+  @js.native
+  sealed trait Numbersigneeeeee extends StObject
+  inline def Numbersigneeeeee: Numbersigneeeeee = "#eeeeee".asInstanceOf[Numbersigneeeeee]
+  
+  @js.native
+  sealed trait Numbersigneeff41 extends StObject
+  inline def Numbersigneeff41: Numbersigneeff41 = "#eeff41".asInstanceOf[Numbersigneeff41]
+  
+  @js.native
+  sealed trait Numbersignef5350 extends StObject
+  inline def Numbersignef5350: Numbersignef5350 = "#ef5350".asInstanceOf[Numbersignef5350]
+  
+  @js.native
+  sealed trait Numbersignef6c00 extends StObject
+  inline def Numbersignef6c00: Numbersignef6c00 = "#ef6c00".asInstanceOf[Numbersignef6c00]
+  
+  @js.native
+  sealed trait Numbersignef9a9a extends StObject
+  inline def Numbersignef9a9a: Numbersignef9a9a = "#ef9a9a".asInstanceOf[Numbersignef9a9a]
+  
+  @js.native
+  sealed trait Numbersignefebe9 extends StObject
+  inline def Numbersignefebe9: Numbersignefebe9 = "#efebe9".asInstanceOf[Numbersignefebe9]
+  
+  @js.native
+  sealed trait Numbersignf06292 extends StObject
+  inline def Numbersignf06292: Numbersignf06292 = "#f06292".asInstanceOf[Numbersignf06292]
+  
+  @js.native
+  sealed trait Numbersignf0f4c3 extends StObject
+  inline def Numbersignf0f4c3: Numbersignf0f4c3 = "#f0f4c3".asInstanceOf[Numbersignf0f4c3]
+  
+  @js.native
+  sealed trait Numbersignf1f8e9 extends StObject
+  inline def Numbersignf1f8e9: Numbersignf1f8e9 = "#f1f8e9".asInstanceOf[Numbersignf1f8e9]
+  
+  @js.native
+  sealed trait Numbersignf3e5f5 extends StObject
+  inline def Numbersignf3e5f5: Numbersignf3e5f5 = "#f3e5f5".asInstanceOf[Numbersignf3e5f5]
+  
+  @js.native
+  sealed trait Numbersignf44336 extends StObject
+  inline def Numbersignf44336: Numbersignf44336 = "#f44336".asInstanceOf[Numbersignf44336]
+  
+  @js.native
+  sealed trait Numbersignf4511e extends StObject
+  inline def Numbersignf4511e: Numbersignf4511e = "#f4511e".asInstanceOf[Numbersignf4511e]
+  
+  @js.native
+  sealed trait Numbersignf48fb1 extends StObject
+  inline def Numbersignf48fb1: Numbersignf48fb1 = "#f48fb1".asInstanceOf[Numbersignf48fb1]
+  
+  @js.native
+  sealed trait Numbersignf4ff81 extends StObject
+  inline def Numbersignf4ff81: Numbersignf4ff81 = "#f4ff81".asInstanceOf[Numbersignf4ff81]
+  
+  @js.native
+  sealed trait Numbersignf50057 extends StObject
+  inline def Numbersignf50057: Numbersignf50057 = "#f50057".asInstanceOf[Numbersignf50057]
+  
+  @js.native
+  sealed trait Numbersignf57c00 extends StObject
+  inline def Numbersignf57c00: Numbersignf57c00 = "#f57c00".asInstanceOf[Numbersignf57c00]
+  
+  @js.native
+  sealed trait Numbersignf57f17 extends StObject
+  inline def Numbersignf57f17: Numbersignf57f17 = "#f57f17".asInstanceOf[Numbersignf57f17]
+  
+  @js.native
+  sealed trait Numbersignf5f5f5 extends StObject
+  inline def Numbersignf5f5f5: Numbersignf5f5f5 = "#f5f5f5".asInstanceOf[Numbersignf5f5f5]
+  
+  @js.native
+  sealed trait Numbersignf8bbd0 extends StObject
+  inline def Numbersignf8bbd0: Numbersignf8bbd0 = "#f8bbd0".asInstanceOf[Numbersignf8bbd0]
+  
+  @js.native
+  sealed trait Numbersignf9a825 extends StObject
+  inline def Numbersignf9a825: Numbersignf9a825 = "#f9a825".asInstanceOf[Numbersignf9a825]
+  
+  @js.native
+  sealed trait Numbersignf9fbe7 extends StObject
+  inline def Numbersignf9fbe7: Numbersignf9fbe7 = "#f9fbe7".asInstanceOf[Numbersignf9fbe7]
+  
+  @js.native
+  sealed trait Numbersignfafafa extends StObject
+  inline def Numbersignfafafa: Numbersignfafafa = "#fafafa".asInstanceOf[Numbersignfafafa]
+  
+  @js.native
+  sealed trait Numbersignfb8c00 extends StObject
+  inline def Numbersignfb8c00: Numbersignfb8c00 = "#fb8c00".asInstanceOf[Numbersignfb8c00]
+  
+  @js.native
+  sealed trait Numbersignfbc02d extends StObject
+  inline def Numbersignfbc02d: Numbersignfbc02d = "#fbc02d".asInstanceOf[Numbersignfbc02d]
+  
+  @js.native
+  sealed trait Numbersignfbe9e7 extends StObject
+  inline def Numbersignfbe9e7: Numbersignfbe9e7 = "#fbe9e7".asInstanceOf[Numbersignfbe9e7]
+  
+  @js.native
+  sealed trait Numbersignfce4ec extends StObject
+  inline def Numbersignfce4ec: Numbersignfce4ec = "#fce4ec".asInstanceOf[Numbersignfce4ec]
+  
+  @js.native
+  sealed trait Numbersignfdd835 extends StObject
+  inline def Numbersignfdd835: Numbersignfdd835 = "#fdd835".asInstanceOf[Numbersignfdd835]
+  
+  @js.native
+  sealed trait Numbersignff1744 extends StObject
+  inline def Numbersignff1744: Numbersignff1744 = "#ff1744".asInstanceOf[Numbersignff1744]
+  
+  @js.native
+  sealed trait Numbersignff3d00 extends StObject
+  inline def Numbersignff3d00: Numbersignff3d00 = "#ff3d00".asInstanceOf[Numbersignff3d00]
+  
+  @js.native
+  sealed trait Numbersignff4081 extends StObject
+  inline def Numbersignff4081: Numbersignff4081 = "#ff4081".asInstanceOf[Numbersignff4081]
+  
+  @js.native
+  sealed trait Numbersignff5252 extends StObject
+  inline def Numbersignff5252: Numbersignff5252 = "#ff5252".asInstanceOf[Numbersignff5252]
+  
+  @js.native
+  sealed trait Numbersignff5722 extends StObject
+  inline def Numbersignff5722: Numbersignff5722 = "#ff5722".asInstanceOf[Numbersignff5722]
+  
+  @js.native
+  sealed trait Numbersignff6d00 extends StObject
+  inline def Numbersignff6d00: Numbersignff6d00 = "#ff6d00".asInstanceOf[Numbersignff6d00]
+  
+  @js.native
+  sealed trait Numbersignff6e40 extends StObject
+  inline def Numbersignff6e40: Numbersignff6e40 = "#ff6e40".asInstanceOf[Numbersignff6e40]
+  
+  @js.native
+  sealed trait Numbersignff6f00 extends StObject
+  inline def Numbersignff6f00: Numbersignff6f00 = "#ff6f00".asInstanceOf[Numbersignff6f00]
+  
+  @js.native
+  sealed trait Numbersignff7043 extends StObject
+  inline def Numbersignff7043: Numbersignff7043 = "#ff7043".asInstanceOf[Numbersignff7043]
+  
+  @js.native
+  sealed trait Numbersignff80ab extends StObject
+  inline def Numbersignff80ab: Numbersignff80ab = "#ff80ab".asInstanceOf[Numbersignff80ab]
+  
+  @js.native
+  sealed trait Numbersignff8a65 extends StObject
+  inline def Numbersignff8a65: Numbersignff8a65 = "#ff8a65".asInstanceOf[Numbersignff8a65]
+  
+  @js.native
+  sealed trait Numbersignff8a80 extends StObject
+  inline def Numbersignff8a80: Numbersignff8a80 = "#ff8a80".asInstanceOf[Numbersignff8a80]
+  
+  @js.native
+  sealed trait Numbersignff8f00 extends StObject
+  inline def Numbersignff8f00: Numbersignff8f00 = "#ff8f00".asInstanceOf[Numbersignff8f00]
+  
+  @js.native
+  sealed trait Numbersignff9100 extends StObject
+  inline def Numbersignff9100: Numbersignff9100 = "#ff9100".asInstanceOf[Numbersignff9100]
+  
+  @js.native
+  sealed trait Numbersignff9800 extends StObject
+  inline def Numbersignff9800: Numbersignff9800 = "#ff9800".asInstanceOf[Numbersignff9800]
+  
+  @js.native
+  sealed trait Numbersignff9e80 extends StObject
+  inline def Numbersignff9e80: Numbersignff9e80 = "#ff9e80".asInstanceOf[Numbersignff9e80]
+  
+  @js.native
+  sealed trait Numbersignffa000 extends StObject
+  inline def Numbersignffa000: Numbersignffa000 = "#ffa000".asInstanceOf[Numbersignffa000]
+  
+  @js.native
+  sealed trait Numbersignffa726 extends StObject
+  inline def Numbersignffa726: Numbersignffa726 = "#ffa726".asInstanceOf[Numbersignffa726]
+  
+  @js.native
+  sealed trait Numbersignffab00 extends StObject
+  inline def Numbersignffab00: Numbersignffab00 = "#ffab00".asInstanceOf[Numbersignffab00]
+  
+  @js.native
+  sealed trait Numbersignffab40 extends StObject
+  inline def Numbersignffab40: Numbersignffab40 = "#ffab40".asInstanceOf[Numbersignffab40]
+  
+  @js.native
+  sealed trait Numbersignffab91 extends StObject
+  inline def Numbersignffab91: Numbersignffab91 = "#ffab91".asInstanceOf[Numbersignffab91]
+  
+  @js.native
+  sealed trait Numbersignffb300 extends StObject
+  inline def Numbersignffb300: Numbersignffb300 = "#ffb300".asInstanceOf[Numbersignffb300]
+  
+  @js.native
+  sealed trait Numbersignffb74d extends StObject
+  inline def Numbersignffb74d: Numbersignffb74d = "#ffb74d".asInstanceOf[Numbersignffb74d]
+  
+  @js.native
+  sealed trait Numbersignffc107 extends StObject
+  inline def Numbersignffc107: Numbersignffc107 = "#ffc107".asInstanceOf[Numbersignffc107]
+  
+  @js.native
+  sealed trait Numbersignffc400 extends StObject
+  inline def Numbersignffc400: Numbersignffc400 = "#ffc400".asInstanceOf[Numbersignffc400]
+  
+  @js.native
+  sealed trait Numbersignffca28 extends StObject
+  inline def Numbersignffca28: Numbersignffca28 = "#ffca28".asInstanceOf[Numbersignffca28]
+  
+  @js.native
+  sealed trait Numbersignffcc80 extends StObject
+  inline def Numbersignffcc80: Numbersignffcc80 = "#ffcc80".asInstanceOf[Numbersignffcc80]
+  
+  @js.native
+  sealed trait Numbersignffccbc extends StObject
+  inline def Numbersignffccbc: Numbersignffccbc = "#ffccbc".asInstanceOf[Numbersignffccbc]
+  
+  @js.native
+  sealed trait Numbersignffcdd2 extends StObject
+  inline def Numbersignffcdd2: Numbersignffcdd2 = "#ffcdd2".asInstanceOf[Numbersignffcdd2]
+  
+  @js.native
+  sealed trait Numbersignffd180 extends StObject
+  inline def Numbersignffd180: Numbersignffd180 = "#ffd180".asInstanceOf[Numbersignffd180]
+  
+  @js.native
+  sealed trait Numbersignffd54f extends StObject
+  inline def Numbersignffd54f: Numbersignffd54f = "#ffd54f".asInstanceOf[Numbersignffd54f]
+  
+  @js.native
+  sealed trait Numbersignffd600 extends StObject
+  inline def Numbersignffd600: Numbersignffd600 = "#ffd600".asInstanceOf[Numbersignffd600]
+  
+  @js.native
+  sealed trait Numbersignffd740 extends StObject
+  inline def Numbersignffd740: Numbersignffd740 = "#ffd740".asInstanceOf[Numbersignffd740]
+  
+  @js.native
+  sealed trait Numbersignffe082 extends StObject
+  inline def Numbersignffe082: Numbersignffe082 = "#ffe082".asInstanceOf[Numbersignffe082]
+  
+  @js.native
+  sealed trait Numbersignffe0b2 extends StObject
+  inline def Numbersignffe0b2: Numbersignffe0b2 = "#ffe0b2".asInstanceOf[Numbersignffe0b2]
+  
+  @js.native
+  sealed trait Numbersignffe57f extends StObject
+  inline def Numbersignffe57f: Numbersignffe57f = "#ffe57f".asInstanceOf[Numbersignffe57f]
+  
+  @js.native
+  sealed trait Numbersignffea00 extends StObject
+  inline def Numbersignffea00: Numbersignffea00 = "#ffea00".asInstanceOf[Numbersignffea00]
+  
+  @js.native
+  sealed trait Numbersignffeb3b extends StObject
+  inline def Numbersignffeb3b: Numbersignffeb3b = "#ffeb3b".asInstanceOf[Numbersignffeb3b]
+  
+  @js.native
+  sealed trait Numbersignffebee extends StObject
+  inline def Numbersignffebee: Numbersignffebee = "#ffebee".asInstanceOf[Numbersignffebee]
+  
+  @js.native
+  sealed trait Numbersignffecb3 extends StObject
+  inline def Numbersignffecb3: Numbersignffecb3 = "#ffecb3".asInstanceOf[Numbersignffecb3]
+  
+  @js.native
+  sealed trait Numbersignffee58 extends StObject
+  inline def Numbersignffee58: Numbersignffee58 = "#ffee58".asInstanceOf[Numbersignffee58]
+  
+  @js.native
+  sealed trait Numbersignfff extends StObject
+  inline def Numbersignfff: Numbersignfff = "#fff".asInstanceOf[Numbersignfff]
+  
+  @js.native
+  sealed trait Numbersignfff176 extends StObject
+  inline def Numbersignfff176: Numbersignfff176 = "#fff176".asInstanceOf[Numbersignfff176]
+  
+  @js.native
+  sealed trait Numbersignfff3e0 extends StObject
+  inline def Numbersignfff3e0: Numbersignfff3e0 = "#fff3e0".asInstanceOf[Numbersignfff3e0]
+  
+  @js.native
+  sealed trait Numbersignfff59d extends StObject
+  inline def Numbersignfff59d: Numbersignfff59d = "#fff59d".asInstanceOf[Numbersignfff59d]
+  
+  @js.native
+  sealed trait Numbersignfff8e1 extends StObject
+  inline def Numbersignfff8e1: Numbersignfff8e1 = "#fff8e1".asInstanceOf[Numbersignfff8e1]
+  
+  @js.native
+  sealed trait Numbersignfff9c4 extends StObject
+  inline def Numbersignfff9c4: Numbersignfff9c4 = "#fff9c4".asInstanceOf[Numbersignfff9c4]
+  
+  @js.native
+  sealed trait Numbersignfffde7 extends StObject
+  inline def Numbersignfffde7: Numbersignfffde7 = "#fffde7".asInstanceOf[Numbersignfffde7]
+  
+  @js.native
+  sealed trait Numbersignffff00 extends StObject
+  inline def Numbersignffff00: Numbersignffff00 = "#ffff00".asInstanceOf[Numbersignffff00]
+  
+  @js.native
+  sealed trait Numbersignffff8d extends StObject
+  inline def Numbersignffff8d: Numbersignffff8d = "#ffff8d".asInstanceOf[Numbersignffff8d]
+  
+  @js.native
+  sealed trait Simplify extends StObject
+  inline def Simplify: Simplify = "Simplify".asInstanceOf[Simplify]
+  
+  @js.native
+  sealed trait a extends StObject
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
   sealed trait absolute
@@ -142,10 +1188,7 @@ object materialUiCoreStrings {
   @js.native
   sealed trait action
     extends StObject
-       with CardActionsClassKey
        with CardHeaderClassKey
-       with DialogActionsClassKey
-       with ExpansionPanelActionsClassKey
        with SnackbarContentClassKey
   inline def action: action = "action".asInstanceOf[action]
   
@@ -153,12 +1196,14 @@ object materialUiCoreStrings {
   sealed trait actionIcon
     extends StObject
        with GridListTileBarClassKey
+       with ImageListItemBarClassKey
   inline def actionIcon: actionIcon = "actionIcon".asInstanceOf[actionIcon]
   
   @js.native
   sealed trait actionIconActionPosLeft
     extends StObject
        with GridListTileBarClassKey
+       with ImageListItemBarClassKey
   inline def actionIconActionPosLeft: actionIconActionPosLeft = "actionIconActionPosLeft".asInstanceOf[actionIconActionPosLeft]
   
   @js.native
@@ -170,6 +1215,7 @@ object materialUiCoreStrings {
   @js.native
   sealed trait active
     extends StObject
+       with SliderClassKey
        with StepConnectorClasskey
        with StepIconClasskey
        with StepLabelClasskey
@@ -197,20 +1243,16 @@ object materialUiCoreStrings {
   @js.native
   sealed trait adornedEnd
     extends StObject
-       with FilledInputClassKey
+       with InputBaseClassKey
        with OutlinedInputClassKey
   inline def adornedEnd: adornedEnd = "adornedEnd".asInstanceOf[adornedEnd]
   
   @js.native
   sealed trait adornedStart
     extends StObject
-       with FilledInputClassKey
+       with InputBaseClassKey
        with OutlinedInputClassKey
   inline def adornedStart: adornedStart = "adornedStart".asInstanceOf[adornedStart]
-  
-  @js.native
-  sealed trait `after-edge` extends StObject
-  inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
   
   @js.native
   sealed trait `align-content-xs-center`
@@ -269,46 +1311,52 @@ object materialUiCoreStrings {
   @js.native
   sealed trait alignCenter
     extends StObject
+       with TableCellClassKey
        with TypographyClassKey
   inline def alignCenter: alignCenter = "alignCenter".asInstanceOf[alignCenter]
   
   @js.native
-  sealed trait alignContent
-    extends StObject
-       with StrippedProps
+  sealed trait alignContent extends StObject
   inline def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
   
   @js.native
-  sealed trait alignItems
-    extends StObject
-       with StrippedProps
+  sealed trait alignItems extends StObject
   inline def alignItems: alignItems = "alignItems".asInstanceOf[alignItems]
+  
+  @js.native
+  sealed trait alignItemsFlexStart
+    extends StObject
+       with ListItemIconClassKey
+  inline def alignItemsFlexStart: alignItemsFlexStart = "alignItemsFlexStart".asInstanceOf[alignItemsFlexStart]
   
   @js.native
   sealed trait alignJustify
     extends StObject
+       with TableCellClassKey
        with TypographyClassKey
   inline def alignJustify: alignJustify = "alignJustify".asInstanceOf[alignJustify]
   
   @js.native
   sealed trait alignLeft
     extends StObject
+       with TableCellClassKey
        with TypographyClassKey
   inline def alignLeft: alignLeft = "alignLeft".asInstanceOf[alignLeft]
   
   @js.native
   sealed trait alignRight
     extends StObject
+       with TableCellClassKey
        with TypographyClassKey
   inline def alignRight: alignRight = "alignRight".asInstanceOf[alignRight]
   
   @js.native
-  sealed trait all extends StObject
-  inline def all: all = "all".asInstanceOf[all]
+  sealed trait alignSelf extends StObject
+  inline def alignSelf: alignSelf = "alignSelf".asInstanceOf[alignSelf]
   
   @js.native
-  sealed trait alphabetic extends StObject
-  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait alternativeLabel
@@ -342,10 +1390,46 @@ object materialUiCoreStrings {
   inline def anchorOriginBottomLeft: anchorOriginBottomLeft = "anchorOriginBottomLeft".asInstanceOf[anchorOriginBottomLeft]
   
   @js.native
+  sealed trait anchorOriginBottomLeftRectangle
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginBottomLeftRectangle: anchorOriginBottomLeftRectangle = "anchorOriginBottomLeftRectangle".asInstanceOf[anchorOriginBottomLeftRectangle]
+  
+  @js.native
+  sealed trait anchorOriginBottomLeftRectangular
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginBottomLeftRectangular: anchorOriginBottomLeftRectangular = "anchorOriginBottomLeftRectangular".asInstanceOf[anchorOriginBottomLeftRectangular]
+  
+  @js.native
   sealed trait anchorOriginBottomRight
     extends StObject
        with SnackbarClassKey
   inline def anchorOriginBottomRight: anchorOriginBottomRight = "anchorOriginBottomRight".asInstanceOf[anchorOriginBottomRight]
+  
+  @js.native
+  sealed trait anchorOriginBottomRightCircle
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginBottomRightCircle: anchorOriginBottomRightCircle = "anchorOriginBottomRightCircle".asInstanceOf[anchorOriginBottomRightCircle]
+  
+  @js.native
+  sealed trait anchorOriginBottomRightCircular
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginBottomRightCircular: anchorOriginBottomRightCircular = "anchorOriginBottomRightCircular".asInstanceOf[anchorOriginBottomRightCircular]
+  
+  @js.native
+  sealed trait anchorOriginBottomRightRectangle
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginBottomRightRectangle: anchorOriginBottomRightRectangle = "anchorOriginBottomRightRectangle".asInstanceOf[anchorOriginBottomRightRectangle]
+  
+  @js.native
+  sealed trait anchorOriginBottomRightRectangular
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginBottomRightRectangular: anchorOriginBottomRightRectangular = "anchorOriginBottomRightRectangular".asInstanceOf[anchorOriginBottomRightRectangular]
   
   @js.native
   sealed trait anchorOriginTopCenter
@@ -360,10 +1444,58 @@ object materialUiCoreStrings {
   inline def anchorOriginTopLeft: anchorOriginTopLeft = "anchorOriginTopLeft".asInstanceOf[anchorOriginTopLeft]
   
   @js.native
+  sealed trait anchorOriginTopLeftCircle
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginTopLeftCircle: anchorOriginTopLeftCircle = "anchorOriginTopLeftCircle".asInstanceOf[anchorOriginTopLeftCircle]
+  
+  @js.native
+  sealed trait anchorOriginTopLeftCircular
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginTopLeftCircular: anchorOriginTopLeftCircular = "anchorOriginTopLeftCircular".asInstanceOf[anchorOriginTopLeftCircular]
+  
+  @js.native
+  sealed trait anchorOriginTopLeftRectangle
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginTopLeftRectangle: anchorOriginTopLeftRectangle = "anchorOriginTopLeftRectangle".asInstanceOf[anchorOriginTopLeftRectangle]
+  
+  @js.native
+  sealed trait anchorOriginTopLeftRectangular
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginTopLeftRectangular: anchorOriginTopLeftRectangular = "anchorOriginTopLeftRectangular".asInstanceOf[anchorOriginTopLeftRectangular]
+  
+  @js.native
   sealed trait anchorOriginTopRight
     extends StObject
        with SnackbarClassKey
   inline def anchorOriginTopRight: anchorOriginTopRight = "anchorOriginTopRight".asInstanceOf[anchorOriginTopRight]
+  
+  @js.native
+  sealed trait anchorOriginTopRightCircle
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginTopRightCircle: anchorOriginTopRightCircle = "anchorOriginTopRightCircle".asInstanceOf[anchorOriginTopRightCircle]
+  
+  @js.native
+  sealed trait anchorOriginTopRightCircular
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginTopRightCircular: anchorOriginTopRightCircular = "anchorOriginTopRightCircular".asInstanceOf[anchorOriginTopRightCircular]
+  
+  @js.native
+  sealed trait anchorOriginTopRightRectangle
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginTopRightRectangle: anchorOriginTopRightRectangle = "anchorOriginTopRightRectangle".asInstanceOf[anchorOriginTopRightRectangle]
+  
+  @js.native
+  sealed trait anchorOriginTopRightRectangular
+    extends StObject
+       with BadgeClassKey
+  inline def anchorOriginTopRightRectangular: anchorOriginTopRightRectangular = "anchorOriginTopRightRectangular".asInstanceOf[anchorOriginTopRightRectangular]
   
   @js.native
   sealed trait anchorPosition
@@ -378,8 +1510,10 @@ object materialUiCoreStrings {
   inline def animated: animated = "animated".asInstanceOf[animated]
   
   @js.native
-  sealed trait anonymous extends StObject
-  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  sealed trait arrow
+    extends StObject
+       with TooltipClassKey
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
   sealed trait asc
@@ -399,6 +1533,7 @@ object materialUiCoreStrings {
   sealed trait asterisk
     extends StObject
        with FormLabelClassKey
+       with InputLabelClassKey
   inline def asterisk: asterisk = "asterisk".asInstanceOf[asterisk]
   
   @js.native
@@ -415,22 +1550,26 @@ object materialUiCoreStrings {
   inline def avatar: avatar = "avatar".asInstanceOf[avatar]
   
   @js.native
-  sealed trait avatarChildren
+  sealed trait avatarColorPrimary
     extends StObject
        with ChipClassKey
-  inline def avatarChildren: avatarChildren = "avatarChildren".asInstanceOf[avatarChildren]
+  inline def avatarColorPrimary: avatarColorPrimary = "avatarColorPrimary".asInstanceOf[avatarColorPrimary]
   
   @js.native
-  sealed trait avatarPrimary
+  sealed trait avatarColorSecondary
     extends StObject
        with ChipClassKey
-  inline def avatarPrimary: avatarPrimary = "avatarPrimary".asInstanceOf[avatarPrimary]
+  inline def avatarColorSecondary: avatarColorSecondary = "avatarColorSecondary".asInstanceOf[avatarColorSecondary]
   
   @js.native
-  sealed trait avatarSecondary
+  sealed trait avatarSmall
     extends StObject
        with ChipClassKey
-  inline def avatarSecondary: avatarSecondary = "avatarSecondary".asInstanceOf[avatarSecondary]
+  inline def avatarSmall: avatarSmall = "avatarSmall".asInstanceOf[avatarSmall]
+  
+  @js.native
+  sealed trait backdropClick extends StObject
+  inline def backdropClick: backdropClick = "backdropClick".asInstanceOf[backdropClick]
   
   @js.native
   sealed trait badge
@@ -442,7 +1581,6 @@ object materialUiCoreStrings {
   sealed trait bar
     extends StObject
        with LinearProgressClassKey
-       with SwitchClassKey
   inline def bar: bar = "bar".asInstanceOf[bar]
   
   @js.native
@@ -494,12 +1632,12 @@ object materialUiCoreStrings {
   inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait `before-edge` extends StObject
-  inline def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
+  sealed trait bgcolor extends StObject
+  inline def bgcolor: bgcolor = "bgcolor".asInstanceOf[bgcolor]
   
   @js.native
-  sealed trait bevel extends StObject
-  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  sealed trait block extends StObject
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
   sealed trait body
@@ -510,18 +1648,46 @@ object materialUiCoreStrings {
   @js.native
   sealed trait body1
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def body1: body1 = "body1".asInstanceOf[body1]
   
   @js.native
   sealed trait body2
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def body2: body2 = "body2".asInstanceOf[body2]
+  
+  @js.native
+  sealed trait border extends StObject
+  inline def border: border = "border".asInstanceOf[border]
+  
+  @js.native
+  sealed trait borderBottom extends StObject
+  inline def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
+  
+  @js.native
+  sealed trait borderColor extends StObject
+  inline def borderColor: borderColor = "borderColor".asInstanceOf[borderColor]
+  
+  @js.native
+  sealed trait borderLeft extends StObject
+  inline def borderLeft: borderLeft = "borderLeft".asInstanceOf[borderLeft]
+  
+  @js.native
+  sealed trait borderRadius extends StObject
+  inline def borderRadius: borderRadius = "borderRadius".asInstanceOf[borderRadius]
+  
+  @js.native
+  sealed trait borderRight extends StObject
+  inline def borderRight: borderRight = "borderRight".asInstanceOf[borderRight]
+  
+  @js.native
+  sealed trait borderTop extends StObject
+  inline def borderTop: borderTop = "borderTop".asInstanceOf[borderTop]
   
   @js.native
   sealed trait both extends StObject
@@ -546,32 +1712,36 @@ object materialUiCoreStrings {
   inline def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
   
   @js.native
+  sealed trait boxShadow extends StObject
+  inline def boxShadow: boxShadow = "boxShadow".asInstanceOf[boxShadow]
+  
+  @js.native
+  sealed trait boxSizing extends StObject
+  inline def boxSizing: boxSizing = "boxSizing".asInstanceOf[boxSizing]
+  
+  @js.native
   sealed trait buffer
     extends StObject
        with LinearProgressClassKey
   inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait butt extends StObject
-  inline def butt: butt = "butt".asInstanceOf[butt]
-  
-  @js.native
   sealed trait button
     extends StObject
        with LinkClassKey
        with ListItemClassKey
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait caption
     extends StObject
-       with Style
        with TablePaginationClassKey
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
@@ -590,14 +1760,9 @@ object materialUiCoreStrings {
   inline def centered: centered = "centered".asInstanceOf[centered]
   
   @js.native
-  sealed trait central extends StObject
-  inline def central: central = "central".asInstanceOf[central]
-  
-  @js.native
   sealed trait checkbox
     extends StObject
        with Padding
-       with typings.materialUiCore.tableCellTableCellMod.Padding
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
@@ -630,8 +1795,15 @@ object materialUiCoreStrings {
   @js.native
   sealed trait circle
     extends StObject
+       with AvatarClassKey
        with CircularProgressClassKey
   inline def circle: circle = "circle".asInstanceOf[circle]
+  
+  @js.native
+  sealed trait circleDeterminate
+    extends StObject
+       with CircularProgressClassKey
+  inline def circleDeterminate: circleDeterminate = "circleDeterminate".asInstanceOf[circleDeterminate]
   
   @js.native
   sealed trait circleDisableShrink
@@ -652,15 +1824,17 @@ object materialUiCoreStrings {
   inline def circleStatic: circleStatic = "circleStatic".asInstanceOf[circleStatic]
   
   @js.native
-  sealed trait className
+  sealed trait circular
     extends StObject
-       with StrippedProps
+       with AvatarClassKey
+  inline def circular: circular = "circular".asInstanceOf[circular]
+  
+  @js.native
+  sealed trait className extends StObject
   inline def className: className = "className".asInstanceOf[className]
   
   @js.native
-  sealed trait classes
-    extends StObject
-       with StrippedProps
+  sealed trait classes extends StObject
   inline def classes: classes = "classes".asInstanceOf[classes]
   
   @js.native
@@ -670,16 +1844,26 @@ object materialUiCoreStrings {
   inline def clickable: clickable = "clickable".asInstanceOf[clickable]
   
   @js.native
-  sealed trait clickablePrimary
+  sealed trait clickableColorPrimary
     extends StObject
        with ChipClassKey
-  inline def clickablePrimary: clickablePrimary = "clickablePrimary".asInstanceOf[clickablePrimary]
+  inline def clickableColorPrimary: clickableColorPrimary = "clickableColorPrimary".asInstanceOf[clickableColorPrimary]
   
   @js.native
-  sealed trait clickableSecondary
+  sealed trait clickableColorSecondary
     extends StObject
        with ChipClassKey
-  inline def clickableSecondary: clickableSecondary = "clickableSecondary".asInstanceOf[clickableSecondary]
+  inline def clickableColorSecondary: clickableColorSecondary = "clickableColorSecondary".asInstanceOf[clickableColorSecondary]
+  
+  @js.native
+  sealed trait clickaway
+    extends StObject
+       with SnackbarCloseReason
+  inline def clickaway: clickaway = "clickaway".asInstanceOf[clickaway]
+  
+  @js.native
+  sealed trait color extends StObject
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
   sealed trait colorAction
@@ -705,6 +1889,7 @@ object materialUiCoreStrings {
   @js.native
   sealed trait colorError
     extends StObject
+       with BadgeClassKey
        with IconClassKey
        with SvgIconClassKey
        with TypographyClassKey
@@ -733,9 +1918,10 @@ object materialUiCoreStrings {
        with LinearProgressClassKey
        with ListSubheaderClassKey
        with RadioClassKey
+       with SliderClassKey
        with SvgIconClassKey
        with SwitchClassKey
-       with TabIndicatorClassKey
+       with TypographyClassKey
   inline def colorPrimary: colorPrimary = "colorPrimary".asInstanceOf[colorPrimary]
   
   @js.native
@@ -746,15 +1932,26 @@ object materialUiCoreStrings {
        with CheckboxClassKey
        with ChipClassKey
        with CircularProgressClassKey
+       with FilledInputClassKey
+       with FormLabelClassKey
        with IconButtonClassKey
        with IconClassKey
+       with InputBaseClassKey
+       with InputClassKey
        with LinearProgressClassKey
+       with OutlinedInputClassKey
        with RadioClassKey
+       with SliderClassKey
        with SvgIconClassKey
        with SwitchClassKey
-       with TabIndicatorClassKey
        with TypographyClassKey
   inline def colorSecondary: colorSecondary = "colorSecondary".asInstanceOf[colorSecondary]
+  
+  @js.native
+  sealed trait colorTextPrimary
+    extends StObject
+       with TypographyClassKey
+  inline def colorTextPrimary: colorTextPrimary = "colorTextPrimary".asInstanceOf[colorTextPrimary]
   
   @js.native
   sealed trait colorTextSecondary
@@ -777,21 +1974,21 @@ object materialUiCoreStrings {
   @js.native
   sealed trait completed
     extends StObject
+       with StepClasskey
        with StepConnectorClasskey
        with StepIconClasskey
        with StepLabelClasskey
   inline def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
-  sealed trait component
-    extends StObject
-       with StrippedProps
+  sealed trait component extends StObject
   inline def component: component = "component".asInstanceOf[component]
   
   @js.native
   sealed trait contained
     extends StObject
        with ButtonClassKey
+       with ButtonGroupClassKey
        with FormHelperTextClassKey
   inline def contained: contained = "contained".asInstanceOf[contained]
   
@@ -808,18 +2005,29 @@ object materialUiCoreStrings {
   inline def containedSecondary: containedSecondary = "containedSecondary".asInstanceOf[containedSecondary]
   
   @js.native
+  sealed trait containedSizeLarge
+    extends StObject
+       with ButtonClassKey
+  inline def containedSizeLarge: containedSizeLarge = "containedSizeLarge".asInstanceOf[containedSizeLarge]
+  
+  @js.native
+  sealed trait containedSizeSmall
+    extends StObject
+       with ButtonClassKey
+  inline def containedSizeSmall: containedSizeSmall = "containedSizeSmall".asInstanceOf[containedSizeSmall]
+  
+  @js.native
   sealed trait container
     extends StObject
-       with CollapseClassKey
        with DialogClassKey
        with GridClassKey
        with ListItemClassKey
-       with StrippedProps
   inline def container: container = "container".asInstanceOf[container]
   
   @js.native
   sealed trait content
     extends StObject
+       with AccordionSummaryClassKey
        with CardHeaderClassKey
        with ExpansionPanelSummaryClassKey
   inline def content: content = "content".asInstanceOf[content]
@@ -871,22 +2079,34 @@ object materialUiCoreStrings {
   inline def deletable: deletable = "deletable".asInstanceOf[deletable]
   
   @js.native
-  sealed trait deletablePrimary
+  sealed trait deletableColorPrimary
     extends StObject
        with ChipClassKey
-  inline def deletablePrimary: deletablePrimary = "deletablePrimary".asInstanceOf[deletablePrimary]
+  inline def deletableColorPrimary: deletableColorPrimary = "deletableColorPrimary".asInstanceOf[deletableColorPrimary]
   
   @js.native
-  sealed trait deletableSecondary
+  sealed trait deletableColorSecondary
     extends StObject
        with ChipClassKey
-  inline def deletableSecondary: deletableSecondary = "deletableSecondary".asInstanceOf[deletableSecondary]
+  inline def deletableColorSecondary: deletableColorSecondary = "deletableColorSecondary".asInstanceOf[deletableColorSecondary]
   
   @js.native
   sealed trait deleteIcon
     extends StObject
        with ChipClassKey
   inline def deleteIcon: deleteIcon = "deleteIcon".asInstanceOf[deleteIcon]
+  
+  @js.native
+  sealed trait deleteIconColorPrimary
+    extends StObject
+       with ChipClassKey
+  inline def deleteIconColorPrimary: deleteIconColorPrimary = "deleteIconColorPrimary".asInstanceOf[deleteIconColorPrimary]
+  
+  @js.native
+  sealed trait deleteIconColorSecondary
+    extends StObject
+       with ChipClassKey
+  inline def deleteIconColorSecondary: deleteIconColorSecondary = "deleteIconColorSecondary".asInstanceOf[deleteIconColorSecondary]
   
   @js.native
   sealed trait deleteIconOutlinedColorPrimary
@@ -901,16 +2121,10 @@ object materialUiCoreStrings {
   inline def deleteIconOutlinedColorSecondary: deleteIconOutlinedColorSecondary = "deleteIconOutlinedColorSecondary".asInstanceOf[deleteIconOutlinedColorSecondary]
   
   @js.native
-  sealed trait deleteIconPrimary
+  sealed trait deleteIconSmall
     extends StObject
        with ChipClassKey
-  inline def deleteIconPrimary: deleteIconPrimary = "deleteIconPrimary".asInstanceOf[deleteIconPrimary]
-  
-  @js.native
-  sealed trait deleteIconSecondary
-    extends StObject
-       with ChipClassKey
-  inline def deleteIconSecondary: deleteIconSecondary = "deleteIconSecondary".asInstanceOf[deleteIconSecondary]
+  inline def deleteIconSmall: deleteIconSmall = "deleteIconSmall".asInstanceOf[deleteIconSmall]
   
   @js.native
   sealed trait dense
@@ -919,8 +2133,7 @@ object materialUiCoreStrings {
        with ListItemClassKey
        with ListItemTextClassKey
        with Margin
-       with Padding
-       with typings.materialUiCore.tableCellTableCellMod.Padding
+       with MenuItemClassKey
        with ToolbarClassKey
   inline def dense: dense = "dense".asInstanceOf[dense]
   
@@ -935,20 +2148,19 @@ object materialUiCoreStrings {
   inline def descending: descending = "descending".asInstanceOf[descending]
   
   @js.native
+  sealed trait desktop extends StObject
+  inline def desktop: desktop = "desktop".asInstanceOf[desktop]
+  
+  @js.native
   sealed trait determinate
     extends StObject
+       with CircularProgressClassKey
        with LinearProgressClassKey
   inline def determinate: determinate = "determinate".asInstanceOf[determinate]
   
   @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
-  
-  @js.native
-  sealed trait direction
-    extends StObject
-       with StrippedProps
-  inline def direction: direction = "direction".asInstanceOf[direction]
   
   @js.native
   sealed trait `direction-xs-column`
@@ -969,10 +2181,17 @@ object materialUiCoreStrings {
   inline def `direction-xs-row-reverse`: `direction-xs-row-reverse` = "direction-xs-row-reverse".asInstanceOf[`direction-xs-row-reverse`]
   
   @js.native
-  sealed trait disableActionSpacing
+  sealed trait disableElevation
     extends StObject
-       with CardActionsClassKey
-  inline def disableActionSpacing: disableActionSpacing = "disableActionSpacing".asInstanceOf[disableActionSpacing]
+       with ButtonClassKey
+       with ButtonGroupClassKey
+  inline def disableElevation: disableElevation = "disableElevation".asInstanceOf[disableElevation]
+  
+  @js.native
+  sealed trait disableGutters
+    extends StObject
+       with ContainerClassKey
+  inline def disableGutters: disableGutters = "disableGutters".asInstanceOf[disableGutters]
   
   @js.native
   sealed trait disablePointerEvents
@@ -983,14 +2202,17 @@ object materialUiCoreStrings {
   @js.native
   sealed trait disabled
     extends StObject
+       with AccordionClassKey
+       with AccordionSummaryClassKey
        with ButtonBaseClassKey
        with ButtonClassKey
+       with ButtonGroupClassKey
        with CheckboxClassKey
+       with ChipClassKey
        with ContextFromPropsKey
        with ExpansionPanelClassKey
        with ExpansionPanelSummaryClassKey
        with FabClassKey
-       with FilledInputClassKey
        with FormControlLabelClassKey
        with FormHelperTextClassKey
        with FormLabelClassKey
@@ -1004,50 +2226,50 @@ object materialUiCoreStrings {
        with OutlinedInputClassKey
        with RadioClassKey
        with SelectClassKey
+       with SliderClassKey
        with StepConnectorClasskey
        with StepLabelClasskey
        with SwitchBaseClassKey
        with SwitchClassKey
        with TabClassKey
+       with TabScrollButtonClassKey
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait display1
-    extends StObject
-       with Style
-       with ThemeStyle
-       with TypographyClassKey
-  inline def display1: display1 = "display1".asInstanceOf[display1]
+  sealed trait display extends StObject
+  inline def display: display = "display".asInstanceOf[display]
   
   @js.native
-  sealed trait display2
+  sealed trait displayBlock
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
-  inline def display2: display2 = "display2".asInstanceOf[display2]
+  inline def displayBlock: displayBlock = "displayBlock".asInstanceOf[displayBlock]
   
   @js.native
-  sealed trait display3
+  sealed trait displayInline
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
-  inline def display3: display3 = "display3".asInstanceOf[display3]
+  inline def displayInline: displayInline = "displayInline".asInstanceOf[displayInline]
   
   @js.native
-  sealed trait display4
-    extends StObject
-       with Style
-       with ThemeStyle
-       with TypographyClassKey
-  inline def display4: display4 = "display4".asInstanceOf[display4]
+  sealed trait displayPrint extends StObject
+  inline def displayPrint: displayPrint = "displayPrint".asInstanceOf[displayPrint]
+  
+  @js.native
+  sealed trait div extends StObject
+  inline def div: div = "div".asInstanceOf[div]
   
   @js.native
   sealed trait divider
     extends StObject
        with ListItemClassKey
   inline def divider: divider = "divider".asInstanceOf[divider]
+  
+  @js.native
+  sealed trait dividers
+    extends StObject
+       with DialogContentClassKey
+  inline def dividers: dividers = "dividers".asInstanceOf[dividers]
   
   @js.native
   sealed trait docked
@@ -1077,6 +2299,22 @@ object materialUiCoreStrings {
   @js.native
   sealed trait down extends StObject
   inline def down: down = "down".asInstanceOf[down]
+  
+  @js.native
+  sealed trait edgeEnd
+    extends StObject
+       with IconButtonClassKey
+  inline def edgeEnd: edgeEnd = "edgeEnd".asInstanceOf[edgeEnd]
+  
+  @js.native
+  sealed trait edgeStart
+    extends StObject
+       with IconButtonClassKey
+  inline def edgeStart: edgeStart = "edgeStart".asInstanceOf[edgeStart]
+  
+  @js.native
+  sealed trait elevation extends StObject
+  inline def elevation: elevation = "elevation".asInstanceOf[elevation]
   
   @js.native
   sealed trait elevation0
@@ -1237,6 +2475,12 @@ object materialUiCoreStrings {
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
+  sealed trait endIcon
+    extends StObject
+       with ButtonClassKey
+  inline def endIcon: endIcon = "endIcon".asInstanceOf[endIcon]
+  
+  @js.native
   sealed trait entered
     extends StObject
        with CollapseClassKey
@@ -1246,7 +2490,6 @@ object materialUiCoreStrings {
   sealed trait error
     extends StObject
        with ContextFromPropsKey
-       with FilledInputClassKey
        with FormHelperTextClassKey
        with FormLabelClassKey
        with InputBaseClassKey
@@ -1259,8 +2502,8 @@ object materialUiCoreStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait evenodd extends StObject
-  inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
+  sealed trait escapeKeyDown extends StObject
+  inline def escapeKeyDown: escapeKeyDown = "escapeKeyDown".asInstanceOf[escapeKeyDown]
   
   @js.native
   sealed trait execute extends StObject
@@ -1269,12 +2512,15 @@ object materialUiCoreStrings {
   @js.native
   sealed trait expandIcon
     extends StObject
+       with AccordionSummaryClassKey
        with ExpansionPanelSummaryClassKey
   inline def expandIcon: expandIcon = "expandIcon".asInstanceOf[expandIcon]
   
   @js.native
   sealed trait expanded
     extends StObject
+       with AccordionClassKey
+       with AccordionSummaryClassKey
        with ExpansionPanelClassKey
        with ExpansionPanelSummaryClassKey
   inline def expanded: expanded = "expanded".asInstanceOf[expanded]
@@ -1286,16 +2532,10 @@ object materialUiCoreStrings {
   inline def extended: extended = "extended".asInstanceOf[extended]
   
   @js.native
-  sealed trait extendedFab
+  sealed trait fallback
     extends StObject
-       with ButtonClassKey
-  inline def extendedFab: extendedFab = "extendedFab".asInstanceOf[extendedFab]
-  
-  @js.native
-  sealed trait fab
-    extends StObject
-       with ButtonClassKey
-  inline def fab: fab = "fab".asInstanceOf[fab]
+       with AvatarClassKey
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
   sealed trait filled
@@ -1311,26 +2551,13 @@ object materialUiCoreStrings {
   @js.native
   sealed trait fixed
     extends StObject
+       with ContainerClassKey
        with TabsClassKey
   inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait flat
-    extends StObject
-       with ButtonClassKey
-  inline def flat: flat = "flat".asInstanceOf[flat]
-  
-  @js.native
-  sealed trait flatPrimary
-    extends StObject
-       with ButtonClassKey
-  inline def flatPrimary: flatPrimary = "flatPrimary".asInstanceOf[flatPrimary]
-  
-  @js.native
-  sealed trait flatSecondary
-    extends StObject
-       with ButtonClassKey
-  inline def flatSecondary: flatSecondary = "flatSecondary".asInstanceOf[flatSecondary]
+  sealed trait flex extends StObject
+  inline def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
   sealed trait `flex-end`
@@ -1349,10 +2576,30 @@ object materialUiCoreStrings {
   inline def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
+  sealed trait flexBasis extends StObject
+  inline def flexBasis: flexBasis = "flexBasis".asInstanceOf[flexBasis]
+  
+  @js.native
   sealed trait flexContainer
     extends StObject
        with TabsClassKey
   inline def flexContainer: flexContainer = "flexContainer".asInstanceOf[flexContainer]
+  
+  @js.native
+  sealed trait flexDirection extends StObject
+  inline def flexDirection: flexDirection = "flexDirection".asInstanceOf[flexDirection]
+  
+  @js.native
+  sealed trait flexGrow extends StObject
+  inline def flexGrow: flexGrow = "flexGrow".asInstanceOf[flexGrow]
+  
+  @js.native
+  sealed trait flexShrink extends StObject
+  inline def flexShrink: flexShrink = "flexShrink".asInstanceOf[flexShrink]
+  
+  @js.native
+  sealed trait flexWrap extends StObject
+  inline def flexWrap: flexWrap = "flexWrap".asInstanceOf[flexWrap]
   
   @js.native
   sealed trait focusHighlight
@@ -1363,18 +2610,21 @@ object materialUiCoreStrings {
   @js.native
   sealed trait focusVisible
     extends StObject
+       with AccordionSummaryClassKey
        with ButtonBaseClassKey
        with ButtonClassKey
        with CardActionAreaClassKey
        with FabClassKey
+       with LinkClassKey
        with ListItemClassKey
+       with SliderClassKey
   inline def focusVisible: focusVisible = "focusVisible".asInstanceOf[focusVisible]
   
   @js.native
   sealed trait focused
     extends StObject
+       with AccordionSummaryClassKey
        with ExpansionPanelSummaryClassKey
-       with FilledInputClassKey
        with FormHelperTextClassKey
        with FormLabelClassKey
        with InputBaseClassKey
@@ -1383,6 +2633,14 @@ object materialUiCoreStrings {
        with NotchedOutlineClassKey
        with OutlinedInputClassKey
   inline def focused: focused = "focused".asInstanceOf[focused]
+  
+  @js.native
+  sealed trait fontFamily extends StObject
+  inline def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
+  
+  @js.native
+  sealed trait fontSize extends StObject
+  inline def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   
   @js.native
   sealed trait fontSizeInherit
@@ -1406,6 +2664,14 @@ object materialUiCoreStrings {
   inline def fontSizeSmall: fontSizeSmall = "fontSizeSmall".asInstanceOf[fontSizeSmall]
   
   @js.native
+  sealed trait fontStyle extends StObject
+  inline def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
+  
+  @js.native
+  sealed trait fontWeight extends StObject
+  inline def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
+  
+  @js.native
   sealed trait footer
     extends StObject
        with TableCellClassKey
@@ -1424,6 +2690,8 @@ object materialUiCoreStrings {
   sealed trait fullWidth
     extends StObject
        with ButtonClassKey
+       with ButtonGroupClassKey
+       with ContextFromPropsKey
        with FormControlClassKey
        with InputBaseClassKey
        with InputClassKey
@@ -1523,6 +2791,162 @@ object materialUiCoreStrings {
   inline def `grid-xs-true`: `grid-xs-true` = "grid-xs-true".asInstanceOf[`grid-xs-true`]
   
   @js.native
+  sealed trait gridArea extends StObject
+  inline def gridArea: gridArea = "gridArea".asInstanceOf[gridArea]
+  
+  @js.native
+  sealed trait gridAutoColumns extends StObject
+  inline def gridAutoColumns: gridAutoColumns = "gridAutoColumns".asInstanceOf[gridAutoColumns]
+  
+  @js.native
+  sealed trait gridAutoFlow extends StObject
+  inline def gridAutoFlow: gridAutoFlow = "gridAutoFlow".asInstanceOf[gridAutoFlow]
+  
+  @js.native
+  sealed trait gridAutoRows extends StObject
+  inline def gridAutoRows: gridAutoRows = "gridAutoRows".asInstanceOf[gridAutoRows]
+  
+  @js.native
+  sealed trait gridColumn extends StObject
+  inline def gridColumn: gridColumn = "gridColumn".asInstanceOf[gridColumn]
+  
+  @js.native
+  sealed trait gridColumnGap extends StObject
+  inline def gridColumnGap: gridColumnGap = "gridColumnGap".asInstanceOf[gridColumnGap]
+  
+  @js.native
+  sealed trait gridGap extends StObject
+  inline def gridGap: gridGap = "gridGap".asInstanceOf[gridGap]
+  
+  @js.native
+  sealed trait gridRow extends StObject
+  inline def gridRow: gridRow = "gridRow".asInstanceOf[gridRow]
+  
+  @js.native
+  sealed trait gridRowGap extends StObject
+  inline def gridRowGap: gridRowGap = "gridRowGap".asInstanceOf[gridRowGap]
+  
+  @js.native
+  sealed trait gridTemplateAreas extends StObject
+  inline def gridTemplateAreas: gridTemplateAreas = "gridTemplateAreas".asInstanceOf[gridTemplateAreas]
+  
+  @js.native
+  sealed trait gridTemplateColumns extends StObject
+  inline def gridTemplateColumns: gridTemplateColumns = "gridTemplateColumns".asInstanceOf[gridTemplateColumns]
+  
+  @js.native
+  sealed trait gridTemplateRows extends StObject
+  inline def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
+  
+  @js.native
+  sealed trait grouped
+    extends StObject
+       with ButtonGroupClassKey
+  inline def grouped: grouped = "grouped".asInstanceOf[grouped]
+  
+  @js.native
+  sealed trait groupedContained
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedContained: groupedContained = "groupedContained".asInstanceOf[groupedContained]
+  
+  @js.native
+  sealed trait groupedContainedHorizontal
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedContainedHorizontal: groupedContainedHorizontal = "groupedContainedHorizontal".asInstanceOf[groupedContainedHorizontal]
+  
+  @js.native
+  sealed trait groupedContainedPrimary
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedContainedPrimary: groupedContainedPrimary = "groupedContainedPrimary".asInstanceOf[groupedContainedPrimary]
+  
+  @js.native
+  sealed trait groupedContainedSecondary
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedContainedSecondary: groupedContainedSecondary = "groupedContainedSecondary".asInstanceOf[groupedContainedSecondary]
+  
+  @js.native
+  sealed trait groupedContainedVertical
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedContainedVertical: groupedContainedVertical = "groupedContainedVertical".asInstanceOf[groupedContainedVertical]
+  
+  @js.native
+  sealed trait groupedHorizontal
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedHorizontal: groupedHorizontal = "groupedHorizontal".asInstanceOf[groupedHorizontal]
+  
+  @js.native
+  sealed trait groupedOutlined
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedOutlined: groupedOutlined = "groupedOutlined".asInstanceOf[groupedOutlined]
+  
+  @js.native
+  sealed trait groupedOutlinedHorizontal
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedOutlinedHorizontal: groupedOutlinedHorizontal = "groupedOutlinedHorizontal".asInstanceOf[groupedOutlinedHorizontal]
+  
+  @js.native
+  sealed trait groupedOutlinedPrimary
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedOutlinedPrimary: groupedOutlinedPrimary = "groupedOutlinedPrimary".asInstanceOf[groupedOutlinedPrimary]
+  
+  @js.native
+  sealed trait groupedOutlinedSecondary
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedOutlinedSecondary: groupedOutlinedSecondary = "groupedOutlinedSecondary".asInstanceOf[groupedOutlinedSecondary]
+  
+  @js.native
+  sealed trait groupedOutlinedVertical
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedOutlinedVertical: groupedOutlinedVertical = "groupedOutlinedVertical".asInstanceOf[groupedOutlinedVertical]
+  
+  @js.native
+  sealed trait groupedText
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedText: groupedText = "groupedText".asInstanceOf[groupedText]
+  
+  @js.native
+  sealed trait groupedTextHorizontal
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedTextHorizontal: groupedTextHorizontal = "groupedTextHorizontal".asInstanceOf[groupedTextHorizontal]
+  
+  @js.native
+  sealed trait groupedTextPrimary
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedTextPrimary: groupedTextPrimary = "groupedTextPrimary".asInstanceOf[groupedTextPrimary]
+  
+  @js.native
+  sealed trait groupedTextSecondary
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedTextSecondary: groupedTextSecondary = "groupedTextSecondary".asInstanceOf[groupedTextSecondary]
+  
+  @js.native
+  sealed trait groupedTextVertical
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedTextVertical: groupedTextVertical = "groupedTextVertical".asInstanceOf[groupedTextVertical]
+  
+  @js.native
+  sealed trait groupedVertical
+    extends StObject
+       with ButtonGroupClassKey
+  inline def groupedVertical: groupedVertical = "groupedVertical".asInstanceOf[groupedVertical]
+  
+  @js.native
   sealed trait gutterBottom
     extends StObject
        with TypographyClassKey
@@ -1540,54 +2964,50 @@ object materialUiCoreStrings {
   @js.native
   sealed trait h1
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
   sealed trait h2
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
   sealed trait h3
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
   sealed trait h4
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
   sealed trait h5
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
   sealed trait h6
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def h6: h6 = "h6".asInstanceOf[h6]
-  
-  @js.native
-  sealed trait hanging extends StObject
-  inline def hanging: hanging = "hanging".asInstanceOf[hanging]
   
   @js.native
   sealed trait head
@@ -1597,19 +3017,21 @@ object materialUiCoreStrings {
   inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait headline
-    extends StObject
-       with Style
-       with ThemeStyle
-       with TypographyClassKey
-  inline def headline: headline = "headline".asInstanceOf[headline]
+  sealed trait height extends StObject
+  inline def height: height = "height".asInstanceOf[height]
   
   @js.native
   sealed trait hidden
     extends StObject
-       with ModalClassKey
-       with StrippedProps
+       with CollapseClassKey
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
+  sealed trait hiddenLabel
+    extends StObject
+       with ContextFromPropsKey
+       with InputAdornmentClassKey
+  inline def hiddenLabel: hiddenLabel = "hiddenLabel".asInstanceOf[hiddenLabel]
   
   @js.native
   sealed trait horizontal
@@ -1628,6 +3050,10 @@ object materialUiCoreStrings {
   inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
+  sealed trait hr extends StObject
+  inline def hr: hr = "hr".asInstanceOf[hr]
+  
+  @js.native
   sealed trait hsl
     extends StObject
        with ColorFormat
@@ -1642,18 +3068,24 @@ object materialUiCoreStrings {
   @js.native
   sealed trait icon
     extends StObject
+       with ChipClassKey
        with ListItemAvatarClassKey
        with NativeSelectClassKey
        with SelectClassKey
-       with SwitchClassKey
        with TableSortLabelClassKey
   inline def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
-  sealed trait iconChecked
+  sealed trait iconColorPrimary
     extends StObject
-       with SwitchClassKey
-  inline def iconChecked: iconChecked = "iconChecked".asInstanceOf[iconChecked]
+       with ChipClassKey
+  inline def iconColorPrimary: iconColorPrimary = "iconColorPrimary".asInstanceOf[iconColorPrimary]
+  
+  @js.native
+  sealed trait iconColorSecondary
+    extends StObject
+       with ChipClassKey
+  inline def iconColorSecondary: iconColorSecondary = "iconColorSecondary".asInstanceOf[iconColorSecondary]
   
   @js.native
   sealed trait iconContainer
@@ -1674,14 +3106,54 @@ object materialUiCoreStrings {
   inline def iconDirectionDesc: iconDirectionDesc = "iconDirectionDesc".asInstanceOf[iconDirectionDesc]
   
   @js.native
+  sealed trait iconFilled
+    extends StObject
+       with NativeSelectClassKey
+       with SelectClassKey
+  inline def iconFilled: iconFilled = "iconFilled".asInstanceOf[iconFilled]
+  
+  @js.native
   sealed trait iconOnly
     extends StObject
        with BottomNavigationActionClassKey
   inline def iconOnly: iconOnly = "iconOnly".asInstanceOf[iconOnly]
   
   @js.native
-  sealed trait ideographic extends StObject
-  inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  sealed trait iconOpen
+    extends StObject
+       with SelectClassKey
+  inline def iconOpen: iconOpen = "iconOpen".asInstanceOf[iconOpen]
+  
+  @js.native
+  sealed trait iconOutlined
+    extends StObject
+       with NativeSelectClassKey
+       with SelectClassKey
+  inline def iconOutlined: iconOutlined = "iconOutlined".asInstanceOf[iconOutlined]
+  
+  @js.native
+  sealed trait iconSizeLarge
+    extends StObject
+       with ButtonClassKey
+  inline def iconSizeLarge: iconSizeLarge = "iconSizeLarge".asInstanceOf[iconSizeLarge]
+  
+  @js.native
+  sealed trait iconSizeMedium
+    extends StObject
+       with ButtonClassKey
+  inline def iconSizeMedium: iconSizeMedium = "iconSizeMedium".asInstanceOf[iconSizeMedium]
+  
+  @js.native
+  sealed trait iconSizeSmall
+    extends StObject
+       with ButtonClassKey
+  inline def iconSizeSmall: iconSizeSmall = "iconSizeSmall".asInstanceOf[iconSizeSmall]
+  
+  @js.native
+  sealed trait iconSmall
+    extends StObject
+       with ChipClassKey
+  inline def iconSmall: iconSmall = "iconSmall".asInstanceOf[iconSmall]
   
   @js.native
   sealed trait img
@@ -1693,12 +3165,14 @@ object materialUiCoreStrings {
   sealed trait imgFullHeight
     extends StObject
        with GridListTileClassKey
+       with ImageListItemClassKey
   inline def imgFullHeight: imgFullHeight = "imgFullHeight".asInstanceOf[imgFullHeight]
   
   @js.native
   sealed trait imgFullWidth
     extends StObject
        with GridListTileClassKey
+       with ImageListItemClassKey
   inline def imgFullWidth: imgFullWidth = "imgFullWidth".asInstanceOf[imgFullWidth]
   
   @js.native
@@ -1733,16 +3207,17 @@ object materialUiCoreStrings {
   inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait `inline`
-    extends StObject
-       with TypographyClassKey
+  sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
+  sealed trait innerRef extends StObject
+  inline def innerRef: innerRef = "innerRef".asInstanceOf[innerRef]
   
   @js.native
   sealed trait input
     extends StObject
        with CheckboxClassKey
-       with FilledInputClassKey
        with InputBaseClassKey
        with InputClassKey
        with OutlinedInputClassKey
@@ -1755,27 +3230,26 @@ object materialUiCoreStrings {
   @js.native
   sealed trait inputAdornedEnd
     extends StObject
-       with FilledInputClassKey
+       with InputBaseClassKey
        with OutlinedInputClassKey
   inline def inputAdornedEnd: inputAdornedEnd = "inputAdornedEnd".asInstanceOf[inputAdornedEnd]
   
   @js.native
   sealed trait inputAdornedStart
     extends StObject
-       with FilledInputClassKey
+       with InputBaseClassKey
        with OutlinedInputClassKey
   inline def inputAdornedStart: inputAdornedStart = "inputAdornedStart".asInstanceOf[inputAdornedStart]
   
   @js.native
-  sealed trait inputDisabled
+  sealed trait inputHiddenLabel
     extends StObject
        with InputBaseClassKey
-  inline def inputDisabled: inputDisabled = "inputDisabled".asInstanceOf[inputDisabled]
+  inline def inputHiddenLabel: inputHiddenLabel = "inputHiddenLabel".asInstanceOf[inputHiddenLabel]
   
   @js.native
   sealed trait inputMarginDense
     extends StObject
-       with FilledInputClassKey
        with InputBaseClassKey
        with InputClassKey
        with OutlinedInputClassKey
@@ -1784,18 +3258,10 @@ object materialUiCoreStrings {
   @js.native
   sealed trait inputMultiline
     extends StObject
-       with FilledInputClassKey
        with InputBaseClassKey
        with InputClassKey
        with OutlinedInputClassKey
   inline def inputMultiline: inputMultiline = "inputMultiline".asInstanceOf[inputMultiline]
-  
-  @js.native
-  sealed trait inputType
-    extends StObject
-       with InputBaseClassKey
-       with InputClassKey
-  inline def inputType: inputType = "inputType".asInstanceOf[inputType]
   
   @js.native
   sealed trait inputTypeSearch
@@ -1813,6 +3279,10 @@ object materialUiCoreStrings {
   inline def inset: inset = "inset".asInstanceOf[inset]
   
   @js.native
+  sealed trait inverted extends StObject
+  inline def inverted: inverted = "inverted".asInstanceOf[inverted]
+  
+  @js.native
   sealed trait invisible
     extends StObject
        with BackdropClassKey
@@ -1820,14 +3290,10 @@ object materialUiCoreStrings {
   inline def invisible: invisible = "invisible".asInstanceOf[invisible]
   
   @js.native
-  sealed trait isolated extends StObject
-  inline def isolated: isolated = "isolated".asInstanceOf[isolated]
-  
-  @js.native
   sealed trait item
     extends StObject
        with GridClassKey
-       with StrippedProps
+       with ImageListItemClassKey
   inline def item: item = "item".asInstanceOf[item]
   
   @js.native
@@ -1838,32 +3304,49 @@ object materialUiCoreStrings {
   sealed trait justify
     extends StObject
        with Alignment
-       with StrippedProps
   inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
-  sealed trait `justify-xs-center`
+  sealed trait `justify-content-xs-center`
     extends StObject
        with GridClassKey
-  inline def `justify-xs-center`: `justify-xs-center` = "justify-xs-center".asInstanceOf[`justify-xs-center`]
+  inline def `justify-content-xs-center`: `justify-content-xs-center` = "justify-content-xs-center".asInstanceOf[`justify-content-xs-center`]
   
   @js.native
-  sealed trait `justify-xs-flex-end`
+  sealed trait `justify-content-xs-flex-end`
     extends StObject
        with GridClassKey
-  inline def `justify-xs-flex-end`: `justify-xs-flex-end` = "justify-xs-flex-end".asInstanceOf[`justify-xs-flex-end`]
+  inline def `justify-content-xs-flex-end`: `justify-content-xs-flex-end` = "justify-content-xs-flex-end".asInstanceOf[`justify-content-xs-flex-end`]
   
   @js.native
-  sealed trait `justify-xs-space-around`
+  sealed trait `justify-content-xs-space-around`
     extends StObject
        with GridClassKey
-  inline def `justify-xs-space-around`: `justify-xs-space-around` = "justify-xs-space-around".asInstanceOf[`justify-xs-space-around`]
+  inline def `justify-content-xs-space-around`: `justify-content-xs-space-around` = "justify-content-xs-space-around".asInstanceOf[`justify-content-xs-space-around`]
   
   @js.native
-  sealed trait `justify-xs-space-between`
+  sealed trait `justify-content-xs-space-between`
     extends StObject
        with GridClassKey
-  inline def `justify-xs-space-between`: `justify-xs-space-between` = "justify-xs-space-between".asInstanceOf[`justify-xs-space-between`]
+  inline def `justify-content-xs-space-between`: `justify-content-xs-space-between` = "justify-content-xs-space-between".asInstanceOf[`justify-content-xs-space-between`]
+  
+  @js.native
+  sealed trait `justify-content-xs-space-evenly`
+    extends StObject
+       with GridClassKey
+  inline def `justify-content-xs-space-evenly`: `justify-content-xs-space-evenly` = "justify-content-xs-space-evenly".asInstanceOf[`justify-content-xs-space-evenly`]
+  
+  @js.native
+  sealed trait justifyContent extends StObject
+  inline def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
+  
+  @js.native
+  sealed trait justifyItems extends StObject
+  inline def justifyItems: justifyItems = "justifyItems".asInstanceOf[justifyItems]
+  
+  @js.native
+  sealed trait justifySelf extends StObject
+  inline def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
   
   @js.native
   sealed trait label
@@ -1875,14 +3358,12 @@ object materialUiCoreStrings {
        with FormControlLabelClassKey
        with IconButtonClassKey
        with StepLabelClasskey
-       with TabClassKey
   inline def label: label = "label".asInstanceOf[label]
   
   @js.native
   sealed trait labelContainer
     extends StObject
        with StepLabelClasskey
-       with TabClassKey
   inline def labelContainer: labelContainer = "labelContainer".asInstanceOf[labelContainer]
   
   @js.native
@@ -1892,10 +3373,28 @@ object materialUiCoreStrings {
   inline def labelIcon: labelIcon = "labelIcon".asInstanceOf[labelIcon]
   
   @js.native
-  sealed trait labelWrapped
+  sealed trait labelPlacementBottom
     extends StObject
-       with TabClassKey
-  inline def labelWrapped: labelWrapped = "labelWrapped".asInstanceOf[labelWrapped]
+       with FormControlLabelClassKey
+  inline def labelPlacementBottom: labelPlacementBottom = "labelPlacementBottom".asInstanceOf[labelPlacementBottom]
+  
+  @js.native
+  sealed trait labelPlacementStart
+    extends StObject
+       with FormControlLabelClassKey
+  inline def labelPlacementStart: labelPlacementStart = "labelPlacementStart".asInstanceOf[labelPlacementStart]
+  
+  @js.native
+  sealed trait labelPlacementTop
+    extends StObject
+       with FormControlLabelClassKey
+  inline def labelPlacementTop: labelPlacementTop = "labelPlacementTop".asInstanceOf[labelPlacementTop]
+  
+  @js.native
+  sealed trait labelSmall
+    extends StObject
+       with ChipClassKey
+  inline def labelSmall: labelSmall = "labelSmall".asInstanceOf[labelSmall]
   
   @js.native
   sealed trait large extends StObject
@@ -1933,11 +3432,18 @@ object materialUiCoreStrings {
   inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait lg
-    extends StObject
-       with Breakpoint
-       with StrippedProps
+  sealed trait letterSpacing extends StObject
+  inline def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
+  
+  @js.native
+  sealed trait lg extends StObject
   inline def lg: lg = "lg".asInstanceOf[lg]
+  
+  @js.native
+  sealed trait li
+    extends StObject
+       with BreadcrumbsClassKey
+  inline def li: li = "li".asInstanceOf[li]
   
   @js.native
   sealed trait light
@@ -1953,6 +3459,10 @@ object materialUiCoreStrings {
   inline def line: line = "line".asInstanceOf[line]
   
   @js.native
+  sealed trait lineHeight extends StObject
+  inline def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
+  
+  @js.native
   sealed trait lineHorizontal
     extends StObject
        with StepConnectorClasskey
@@ -1965,15 +3475,13 @@ object materialUiCoreStrings {
   inline def lineVertical: lineVertical = "lineVertical".asInstanceOf[lineVertical]
   
   @js.native
-  sealed trait linearRGB extends StObject
-  inline def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
-  
-  @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait list extends StObject
+  sealed trait list
+    extends StObject
+       with MenuClassKey
   inline def list: list = "list".asInstanceOf[list]
   
   @js.native
@@ -1991,18 +3499,34 @@ object materialUiCoreStrings {
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
+  sealed trait m extends StObject
+  inline def m: m = "m".asInstanceOf[m]
+  
+  @js.native
   sealed trait margin
     extends StObject
        with ContextFromPropsKey
   inline def margin: margin = "margin".asInstanceOf[margin]
   
   @js.native
+  sealed trait marginBottom extends StObject
+  inline def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
+  
+  @js.native
   sealed trait marginDense
     extends StObject
        with FormControlClassKey
        with FormHelperTextClassKey
+       with InputAdornmentClassKey
+       with InputBaseClassKey
+       with InputClassKey
        with InputLabelClassKey
+       with OutlinedInputClassKey
   inline def marginDense: marginDense = "marginDense".asInstanceOf[marginDense]
+  
+  @js.native
+  sealed trait marginLeft extends StObject
+  inline def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
   
   @js.native
   sealed trait marginNormal
@@ -2011,14 +3535,95 @@ object materialUiCoreStrings {
   inline def marginNormal: marginNormal = "marginNormal".asInstanceOf[marginNormal]
   
   @js.native
-  sealed trait mathematical extends StObject
-  inline def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
+  sealed trait marginRight extends StObject
+  inline def marginRight: marginRight = "marginRight".asInstanceOf[marginRight]
   
   @js.native
-  sealed trait md
+  sealed trait marginTop extends StObject
+  inline def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
+  
+  @js.native
+  sealed trait marginX extends StObject
+  inline def marginX: marginX = "marginX".asInstanceOf[marginX]
+  
+  @js.native
+  sealed trait marginY extends StObject
+  inline def marginY: marginY = "marginY".asInstanceOf[marginY]
+  
+  @js.native
+  sealed trait mark
     extends StObject
-       with Breakpoint
-       with StrippedProps
+       with SliderClassKey
+  inline def mark: mark = "mark".asInstanceOf[mark]
+  
+  @js.native
+  sealed trait markActive
+    extends StObject
+       with SliderClassKey
+  inline def markActive: markActive = "markActive".asInstanceOf[markActive]
+  
+  @js.native
+  sealed trait markLabel
+    extends StObject
+       with SliderClassKey
+  inline def markLabel: markLabel = "markLabel".asInstanceOf[markLabel]
+  
+  @js.native
+  sealed trait markLabelActive
+    extends StObject
+       with SliderClassKey
+  inline def markLabelActive: markLabelActive = "markLabelActive".asInstanceOf[markLabelActive]
+  
+  @js.native
+  sealed trait marked
+    extends StObject
+       with SliderClassKey
+  inline def marked: marked = "marked".asInstanceOf[marked]
+  
+  @js.native
+  sealed trait maxHeight extends StObject
+  inline def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
+  
+  @js.native
+  sealed trait maxWidth extends StObject
+  inline def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
+  
+  @js.native
+  sealed trait maxWidthLg
+    extends StObject
+       with ContainerClassKey
+  inline def maxWidthLg: maxWidthLg = "maxWidthLg".asInstanceOf[maxWidthLg]
+  
+  @js.native
+  sealed trait maxWidthMd
+    extends StObject
+       with ContainerClassKey
+  inline def maxWidthMd: maxWidthMd = "maxWidthMd".asInstanceOf[maxWidthMd]
+  
+  @js.native
+  sealed trait maxWidthSm
+    extends StObject
+       with ContainerClassKey
+  inline def maxWidthSm: maxWidthSm = "maxWidthSm".asInstanceOf[maxWidthSm]
+  
+  @js.native
+  sealed trait maxWidthXl
+    extends StObject
+       with ContainerClassKey
+  inline def maxWidthXl: maxWidthXl = "maxWidthXl".asInstanceOf[maxWidthXl]
+  
+  @js.native
+  sealed trait maxWidthXs
+    extends StObject
+       with ContainerClassKey
+  inline def maxWidthXs: maxWidthXs = "maxWidthXs".asInstanceOf[maxWidthXs]
+  
+  @js.native
+  sealed trait mb extends StObject
+  inline def mb: mb = "mb".asInstanceOf[mb]
+  
+  @js.native
+  sealed trait md extends StObject
   inline def md: md = "md".asInstanceOf[md]
   
   @js.native
@@ -2028,11 +3633,9 @@ object materialUiCoreStrings {
   inline def media: media = "media".asInstanceOf[media]
   
   @js.native
-  sealed trait medial extends StObject
-  inline def medial: medial = "medial".asInstanceOf[medial]
-  
-  @js.native
-  sealed trait medium extends StObject
+  sealed trait medium
+    extends StObject
+       with Size
   inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
@@ -2058,18 +3661,20 @@ object materialUiCoreStrings {
   inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait mini
-    extends StObject
-       with ButtonClassKey
-  inline def mini: mini = "mini".asInstanceOf[mini]
+  sealed trait minHeight extends StObject
+  inline def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
   
   @js.native
-  sealed trait miter extends StObject
-  inline def miter: miter = "miter".asInstanceOf[miter]
+  sealed trait minWidth extends StObject
+  inline def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
   
   @js.native
   sealed trait mixed extends StObject
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @js.native
+  sealed trait ml extends StObject
+  inline def ml: ml = "ml".asInstanceOf[ml]
   
   @js.native
   sealed trait modal
@@ -2092,13 +3697,33 @@ object materialUiCoreStrings {
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
+  sealed trait mr extends StObject
+  inline def mr: mr = "mr".asInstanceOf[mr]
+  
+  @js.native
+  sealed trait mt extends StObject
+  inline def mt: mt = "mt".asInstanceOf[mt]
+  
+  @js.native
   sealed trait multiline
     extends StObject
-       with FilledInputClassKey
        with InputBaseClassKey
        with InputClassKey
+       with ListItemTextClassKey
        with OutlinedInputClassKey
   inline def multiline: multiline = "multiline".asInstanceOf[multiline]
+  
+  @js.native
+  sealed trait mx extends StObject
+  inline def mx: mx = "mx".asInstanceOf[mx]
+  
+  @js.native
+  sealed trait my extends StObject
+  inline def my: my = "my".asInstanceOf[my]
+  
+  @js.native
+  sealed trait nav extends StObject
+  inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
   sealed trait no extends StObject
@@ -2115,18 +3740,14 @@ object materialUiCoreStrings {
     extends StObject
        with Margin
        with Padding
-       with typings.materialUiCore.tableCellTableCellMod.Padding
        with PopoverReference
   inline def none: none = "none".asInstanceOf[none]
-  
-  @js.native
-  sealed trait nonzero extends StObject
-  inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
   sealed trait normal
     extends StObject
        with Margin
+       with Padding
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
@@ -2142,14 +3763,18 @@ object materialUiCoreStrings {
   inline def nowrap_ : nowrap_ = "nowrap".asInstanceOf[nowrap_]
   
   @js.native
-  sealed trait numeric
-    extends StObject
-       with TableCellClassKey
+  sealed trait numeric extends StObject
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait off extends StObject
   inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
+  sealed trait ol
+    extends StObject
+       with BreadcrumbsClassKey
+  inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
   sealed trait on extends StObject
@@ -2218,6 +3843,10 @@ object materialUiCoreStrings {
   inline def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
   
   @js.native
+  sealed trait order extends StObject
+  inline def order: order = "order".asInstanceOf[order]
+  
+  @js.native
   sealed trait other extends StObject
   inline def other: other = "other".asInstanceOf[other]
   
@@ -2228,6 +3857,7 @@ object materialUiCoreStrings {
        with ChipClassKey
        with InputLabelClassKey
        with NativeSelectClassKey
+       with PaperClassKey
        with SelectClassKey
   inline def outlined: outlined = "outlined".asInstanceOf[outlined]
   
@@ -2246,12 +3876,32 @@ object materialUiCoreStrings {
   inline def outlinedSecondary: outlinedSecondary = "outlinedSecondary".asInstanceOf[outlinedSecondary]
   
   @js.native
+  sealed trait outlinedSizeLarge
+    extends StObject
+       with ButtonClassKey
+  inline def outlinedSizeLarge: outlinedSizeLarge = "outlinedSizeLarge".asInstanceOf[outlinedSizeLarge]
+  
+  @js.native
+  sealed trait outlinedSizeSmall
+    extends StObject
+       with ButtonClassKey
+  inline def outlinedSizeSmall: outlinedSizeSmall = "outlinedSizeSmall".asInstanceOf[outlinedSizeSmall]
+  
+  @js.native
+  sealed trait overflow extends StObject
+  inline def overflow: overflow = "overflow".asInstanceOf[overflow]
+  
+  @js.native
   sealed trait overline
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def overline: overline = "overline".asInstanceOf[overline]
+  
+  @js.native
+  sealed trait p extends StObject
+  inline def p: p = "p".asInstanceOf[p]
   
   @js.native
   sealed trait padding
@@ -2260,22 +3910,40 @@ object materialUiCoreStrings {
   inline def padding: padding = "padding".asInstanceOf[padding]
   
   @js.native
+  sealed trait paddingBottom extends StObject
+  inline def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
+  
+  @js.native
   sealed trait paddingCheckbox
     extends StObject
        with TableCellClassKey
   inline def paddingCheckbox: paddingCheckbox = "paddingCheckbox".asInstanceOf[paddingCheckbox]
   
   @js.native
-  sealed trait paddingDense
-    extends StObject
-       with TableCellClassKey
-  inline def paddingDense: paddingDense = "paddingDense".asInstanceOf[paddingDense]
+  sealed trait paddingLeft extends StObject
+  inline def paddingLeft: paddingLeft = "paddingLeft".asInstanceOf[paddingLeft]
   
   @js.native
   sealed trait paddingNone
     extends StObject
        with TableCellClassKey
   inline def paddingNone: paddingNone = "paddingNone".asInstanceOf[paddingNone]
+  
+  @js.native
+  sealed trait paddingRight extends StObject
+  inline def paddingRight: paddingRight = "paddingRight".asInstanceOf[paddingRight]
+  
+  @js.native
+  sealed trait paddingTop extends StObject
+  inline def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
+  
+  @js.native
+  sealed trait paddingX extends StObject
+  inline def paddingX: paddingX = "paddingX".asInstanceOf[paddingX]
+  
+  @js.native
+  sealed trait paddingY extends StObject
+  inline def paddingY: paddingY = "paddingY".asInstanceOf[paddingY]
   
   @js.native
   sealed trait page extends StObject
@@ -2286,6 +3954,8 @@ object materialUiCoreStrings {
     extends StObject
        with DialogClassKey
        with DrawerClassKey
+       with MenuClassKey
+       with PopoverClassKey
   inline def paper: paper = "paper".asInstanceOf[paper]
   
   @js.native
@@ -2361,6 +4031,12 @@ object materialUiCoreStrings {
   inline def paperScrollPaper: paperScrollPaper = "paperScrollPaper".asInstanceOf[paperScrollPaper]
   
   @js.native
+  sealed trait paperWidthFalse
+    extends StObject
+       with DialogClassKey
+  inline def paperWidthFalse: paperWidthFalse = "paperWidthFalse".asInstanceOf[paperWidthFalse]
+  
+  @js.native
   sealed trait paperWidthLg
     extends StObject
        with DialogClassKey
@@ -2397,12 +4073,20 @@ object materialUiCoreStrings {
   inline def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   
   @js.native
+  sealed trait pb extends StObject
+  inline def pb: pb = "pb".asInstanceOf[pb]
+  
+  @js.native
   sealed trait permanent extends StObject
   inline def permanent: permanent = "permanent".asInstanceOf[permanent]
   
   @js.native
   sealed trait persistent extends StObject
   inline def persistent: persistent = "persistent".asInstanceOf[persistent]
+  
+  @js.native
+  sealed trait pl extends StObject
+  inline def pl: pl = "pl".asInstanceOf[pl]
   
   @js.native
   sealed trait polite extends StObject
@@ -2415,6 +4099,12 @@ object materialUiCoreStrings {
   inline def popper: popper = "popper".asInstanceOf[popper]
   
   @js.native
+  sealed trait popperArrow
+    extends StObject
+       with TooltipClassKey
+  inline def popperArrow: popperArrow = "popperArrow".asInstanceOf[popperArrow]
+  
+  @js.native
   sealed trait popperInteractive
     extends StObject
        with TooltipClassKey
@@ -2425,6 +4115,10 @@ object materialUiCoreStrings {
   inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
+  sealed trait position extends StObject
+  inline def position: position = "position".asInstanceOf[position]
+  
+  @js.native
   sealed trait positionAbsolute
     extends StObject
        with AppBarClassKey
@@ -2433,6 +4127,7 @@ object materialUiCoreStrings {
   @js.native
   sealed trait positionBottom
     extends StObject
+       with ImageListItemBarClassKey
        with MobileStepperClassKey
   inline def positionBottom: positionBottom = "positionBottom".asInstanceOf[positionBottom]
   
@@ -2476,8 +4171,13 @@ object materialUiCoreStrings {
   @js.native
   sealed trait positionTop
     extends StObject
+       with ImageListItemBarClassKey
        with MobileStepperClassKey
   inline def positionTop: positionTop = "positionTop".asInstanceOf[positionTop]
+  
+  @js.native
+  sealed trait pr extends StObject
+  inline def pr: pr = "pr".asInstanceOf[pr]
   
   @js.native
   sealed trait primary
@@ -2494,28 +4194,40 @@ object materialUiCoreStrings {
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
+  sealed trait props extends StObject
+  inline def props: props = "props".asInstanceOf[props]
+  
+  @js.native
+  sealed trait pt extends StObject
+  inline def pt: pt = "pt".asInstanceOf[pt]
+  
+  @js.native
+  sealed trait px extends StObject
+  inline def px: px = "px".asInstanceOf[px]
+  
+  @js.native
+  sealed trait py extends StObject
+  inline def py: py = "py".asInstanceOf[py]
+  
+  @js.native
   sealed trait query
     extends StObject
        with LinearProgressClassKey
   inline def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait raised
+  sealed trait rail
     extends StObject
-       with ButtonClassKey
-  inline def raised: raised = "raised".asInstanceOf[raised]
+       with SliderClassKey
+  inline def rail: rail = "rail".asInstanceOf[rail]
   
   @js.native
-  sealed trait raisedPrimary
-    extends StObject
-       with ButtonClassKey
-  inline def raisedPrimary: raisedPrimary = "raisedPrimary".asInstanceOf[raisedPrimary]
+  sealed trait rectangle extends StObject
+  inline def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   
   @js.native
-  sealed trait raisedSecondary
-    extends StObject
-       with ButtonClassKey
-  inline def raisedSecondary: raisedSecondary = "raisedSecondary".asInstanceOf[raisedSecondary]
+  sealed trait rectangular extends StObject
+  inline def rectangular: rectangular = "rectangular".asInstanceOf[rectangular]
   
   @js.native
   sealed trait regular
@@ -2540,10 +4252,6 @@ object materialUiCoreStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait replace extends StObject
-  inline def replace: replace = "replace".asInstanceOf[replace]
-  
-  @js.native
   sealed trait required
     extends StObject
        with ContextFromPropsKey
@@ -2551,10 +4259,6 @@ object materialUiCoreStrings {
        with FormLabelClassKey
        with InputLabelClassKey
   inline def required: required = "required".asInstanceOf[required]
-  
-  @js.native
-  sealed trait reset extends StObject
-  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
   sealed trait rgb
@@ -2608,13 +4312,18 @@ object materialUiCoreStrings {
   @js.native
   sealed trait root
     extends StObject
+       with AccordionActionsClassKey
+       with AccordionClassKey
+       with AccordionSummaryClassKey
        with AppBarClassKey
        with AvatarClassKey
        with BackdropClassKey
        with BadgeClassKey
        with BottomNavigationActionClassKey
+       with BreadcrumbsClassKey
        with ButtonBaseClassKey
        with ButtonClassKey
+       with ButtonGroupClassKey
        with CardActionAreaClassKey
        with CardActionsClassKey
        with CardHeaderClassKey
@@ -2622,23 +4331,29 @@ object materialUiCoreStrings {
        with CheckboxClassKey
        with ChipClassKey
        with CircularProgressClassKey
+       with CollapseClassKey
+       with ContainerClassKey
        with DialogActionsClassKey
        with DialogClassKey
+       with DialogContentClassKey
        with DividerClassKey
+       with DrawerClassKey
        with ExpansionPanelActionsClassKey
        with ExpansionPanelClassKey
        with ExpansionPanelSummaryClassKey
        with FabClassKey
-       with FilledInputClassKey
        with FormControlClassKey
        with FormControlLabelClassKey
        with FormGroupClassKey
        with FormHelperTextClassKey
        with FormLabelClassKey
+       with GridClassKey
        with GridListTileBarClassKey
        with GridListTileClassKey
        with IconButtonClassKey
        with IconClassKey
+       with ImageListItemBarClassKey
+       with ImageListItemClassKey
        with InputAdornmentClassKey
        with InputBaseClassKey
        with InputClassKey
@@ -2648,17 +4363,19 @@ object materialUiCoreStrings {
        with ListClassKey
        with ListItemAvatarClassKey
        with ListItemClassKey
+       with ListItemIconClassKey
        with ListItemTextClassKey
        with ListSubheaderClassKey
        with MenuItemClassKey
        with MobileStepperClassKey
-       with ModalClassKey
        with NativeSelectClassKey
        with NotchedOutlineClassKey
        with OutlinedInputClassKey
        with PaperClassKey
+       with PopoverClassKey
        with RadioClassKey
        with SelectClassKey
+       with SliderClassKey
        with SnackbarClassKey
        with SnackbarContentClassKey
        with StepButtonClasskey
@@ -2672,13 +4389,13 @@ object materialUiCoreStrings {
        with SwitchBaseClassKey
        with SwitchClassKey
        with TabClassKey
-       with TabIndicatorClassKey
+       with TabScrollButtonClassKey
        with TableCellClassKey
+       with TableClassKey
        with TablePaginationClassKey
        with TableRowClassKey
        with TableSortLabelClassKey
        with TabsClassKey
-       with TextareaClassKey
        with ToolbarClassKey
        with TouchRippleClassKey
        with TypographyClassKey
@@ -2688,6 +4405,7 @@ object materialUiCoreStrings {
   sealed trait rootSubtitle
     extends StObject
        with GridListTileBarClassKey
+       with ImageListItemBarClassKey
   inline def rootSubtitle: rootSubtitle = "rootSubtitle".asInstanceOf[rootSubtitle]
   
   @js.native
@@ -2697,6 +4415,8 @@ object materialUiCoreStrings {
   @js.native
   sealed trait rounded
     extends StObject
+       with AccordionClassKey
+       with AvatarClassKey
        with ExpansionPanelClassKey
        with PaperClassKey
   inline def rounded: rounded = "rounded".asInstanceOf[rounded]
@@ -2721,10 +4441,6 @@ object materialUiCoreStrings {
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait sRGB extends StObject
-  inline def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
-  
-  @js.native
   sealed trait scrollBody
     extends StObject
        with DialogClassKey
@@ -2737,10 +4453,10 @@ object materialUiCoreStrings {
   inline def scrollButtons: scrollButtons = "scrollButtons".asInstanceOf[scrollButtons]
   
   @js.native
-  sealed trait scrollButtonsAuto
+  sealed trait scrollButtonsDesktop
     extends StObject
        with TabsClassKey
-  inline def scrollButtonsAuto: scrollButtonsAuto = "scrollButtonsAuto".asInstanceOf[scrollButtonsAuto]
+  inline def scrollButtonsDesktop: scrollButtonsDesktop = "scrollButtonsDesktop".asInstanceOf[scrollButtonsDesktop]
   
   @js.native
   sealed trait scrollPaper
@@ -2816,10 +4532,14 @@ object materialUiCoreStrings {
   inline def selected: selected = "selected".asInstanceOf[selected]
   
   @js.native
-  sealed trait shadow
+  sealed trait selectedMenu extends StObject
+  inline def selectedMenu: selectedMenu = "selectedMenu".asInstanceOf[selectedMenu]
+  
+  @js.native
+  sealed trait separator
     extends StObject
-       with TextareaClassKey
-  inline def shadow: shadow = "shadow".asInstanceOf[shadow]
+       with BreadcrumbsClassKey
+  inline def separator: separator = "separator".asInstanceOf[separator]
   
   @js.native
   sealed trait shallow extends StObject
@@ -2830,6 +4550,10 @@ object materialUiCoreStrings {
     extends StObject
        with InputLabelClassKey
   inline def shrink: shrink = "shrink".asInstanceOf[shrink]
+  
+  @js.native
+  sealed trait sizeHeight extends StObject
+  inline def sizeHeight: sizeHeight = "sizeHeight".asInstanceOf[sizeHeight]
   
   @js.native
   sealed trait sizeLarge
@@ -2847,18 +4571,25 @@ object materialUiCoreStrings {
   sealed trait sizeSmall
     extends StObject
        with ButtonClassKey
+       with ChipClassKey
        with FabClassKey
+       with IconButtonClassKey
+       with SwitchClassKey
+       with TableCellClassKey
   inline def sizeSmall: sizeSmall = "sizeSmall".asInstanceOf[sizeSmall]
   
   @js.native
-  sealed trait sm
-    extends StObject
-       with Breakpoint
-       with StrippedProps
+  sealed trait sizeWidth extends StObject
+  inline def sizeWidth: sizeWidth = "sizeWidth".asInstanceOf[sizeWidth]
+  
+  @js.native
+  sealed trait sm extends StObject
   inline def sm: sm = "sm".asInstanceOf[sm]
   
   @js.native
-  sealed trait small extends StObject
+  sealed trait small
+    extends StObject
+       with Size
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
@@ -2890,26 +4621,59 @@ object materialUiCoreStrings {
   @js.native
   sealed trait spacing
     extends StObject
-       with StrippedProps
+       with AccordionActionsClassKey
+       with CardActionsClassKey
+       with DialogActionsClassKey
+       with ExpansionPanelActionsClassKey
   inline def spacing: spacing = "spacing".asInstanceOf[spacing]
   
   @js.native
-  sealed trait `spacing-xs-16`
+  sealed trait `spacing-xs-1`
     extends StObject
        with GridClassKey
-  inline def `spacing-xs-16`: `spacing-xs-16` = "spacing-xs-16".asInstanceOf[`spacing-xs-16`]
+  inline def `spacing-xs-1`: `spacing-xs-1` = "spacing-xs-1".asInstanceOf[`spacing-xs-1`]
   
   @js.native
-  sealed trait `spacing-xs-24`
+  sealed trait `spacing-xs-10`
     extends StObject
        with GridClassKey
-  inline def `spacing-xs-24`: `spacing-xs-24` = "spacing-xs-24".asInstanceOf[`spacing-xs-24`]
+  inline def `spacing-xs-10`: `spacing-xs-10` = "spacing-xs-10".asInstanceOf[`spacing-xs-10`]
   
   @js.native
-  sealed trait `spacing-xs-40`
+  sealed trait `spacing-xs-2`
     extends StObject
        with GridClassKey
-  inline def `spacing-xs-40`: `spacing-xs-40` = "spacing-xs-40".asInstanceOf[`spacing-xs-40`]
+  inline def `spacing-xs-2`: `spacing-xs-2` = "spacing-xs-2".asInstanceOf[`spacing-xs-2`]
+  
+  @js.native
+  sealed trait `spacing-xs-3`
+    extends StObject
+       with GridClassKey
+  inline def `spacing-xs-3`: `spacing-xs-3` = "spacing-xs-3".asInstanceOf[`spacing-xs-3`]
+  
+  @js.native
+  sealed trait `spacing-xs-4`
+    extends StObject
+       with GridClassKey
+  inline def `spacing-xs-4`: `spacing-xs-4` = "spacing-xs-4".asInstanceOf[`spacing-xs-4`]
+  
+  @js.native
+  sealed trait `spacing-xs-5`
+    extends StObject
+       with GridClassKey
+  inline def `spacing-xs-5`: `spacing-xs-5` = "spacing-xs-5".asInstanceOf[`spacing-xs-5`]
+  
+  @js.native
+  sealed trait `spacing-xs-6`
+    extends StObject
+       with GridClassKey
+  inline def `spacing-xs-6`: `spacing-xs-6` = "spacing-xs-6".asInstanceOf[`spacing-xs-6`]
+  
+  @js.native
+  sealed trait `spacing-xs-7`
+    extends StObject
+       with GridClassKey
+  inline def `spacing-xs-7`: `spacing-xs-7` = "spacing-xs-7".asInstanceOf[`spacing-xs-7`]
   
   @js.native
   sealed trait `spacing-xs-8`
@@ -2918,18 +4682,30 @@ object materialUiCoreStrings {
   inline def `spacing-xs-8`: `spacing-xs-8` = "spacing-xs-8".asInstanceOf[`spacing-xs-8`]
   
   @js.native
+  sealed trait `spacing-xs-9`
+    extends StObject
+       with GridClassKey
+  inline def `spacing-xs-9`: `spacing-xs-9` = "spacing-xs-9".asInstanceOf[`spacing-xs-9`]
+  
+  @js.native
+  sealed trait span extends StObject
+  inline def span: span = "span".asInstanceOf[span]
+  
+  @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
-  sealed trait square extends StObject
+  sealed trait square
+    extends StObject
+       with AvatarClassKey
   inline def square: square = "square".asInstanceOf[square]
   
   @js.native
   sealed trait srOnly
     extends StObject
-       with Style
        with TypographyClassKey
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def srOnly: srOnly = "srOnly".asInstanceOf[srOnly]
   
   @js.native
@@ -2937,10 +4713,14 @@ object materialUiCoreStrings {
   inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
-  sealed trait start
-    extends StObject
-       with FormControlLabelClassKey
+  sealed trait start extends StObject
   inline def start: start = "start".asInstanceOf[start]
+  
+  @js.native
+  sealed trait startIcon
+    extends StObject
+       with ButtonClassKey
+  inline def startIcon: startIcon = "startIcon".asInstanceOf[startIcon]
   
   @js.native
   sealed trait static
@@ -2959,11 +4739,22 @@ object materialUiCoreStrings {
   inline def sticky: sticky = "sticky".asInstanceOf[sticky]
   
   @js.native
+  sealed trait stickyHeader
+    extends StObject
+       with TableCellClassKey
+       with TableClassKey
+  inline def stickyHeader: stickyHeader = "stickyHeader".asInstanceOf[stickyHeader]
+  
+  @js.native
   sealed trait stretch
     extends StObject
        with GridContentAlignment
        with GridItemsAlignment
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
+  
+  @js.native
+  sealed trait style extends StObject
+  inline def style: style = "style".asInstanceOf[style]
   
   @js.native
   sealed trait subheader
@@ -2973,42 +4764,27 @@ object materialUiCoreStrings {
   inline def subheader: subheader = "subheader".asInstanceOf[subheader]
   
   @js.native
-  sealed trait subheading
-    extends StObject
-       with Style
-       with ThemeStyle
-       with TypographyClassKey
-  inline def subheading: subheading = "subheading".asInstanceOf[subheading]
-  
-  @js.native
-  sealed trait submit extends StObject
-  inline def submit: submit = "submit".asInstanceOf[submit]
-  
-  @js.native
   sealed trait subtitle
     extends StObject
        with GridListTileBarClassKey
+       with ImageListItemBarClassKey
   inline def subtitle: subtitle = "subtitle".asInstanceOf[subtitle]
   
   @js.native
   sealed trait subtitle1
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def subtitle1: subtitle1 = "subtitle1".asInstanceOf[subtitle1]
   
   @js.native
   sealed trait subtitle2
     extends StObject
-       with Style
-       with ThemeStyle
        with TypographyClassKey
+       with Variant
+       with typings.materialUiCore.typographyTypographyMod.Variant
   inline def subtitle2: subtitle2 = "subtitle2".asInstanceOf[subtitle2]
-  
-  @js.native
-  sealed trait sum extends StObject
-  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
   sealed trait svg
@@ -3023,16 +4799,20 @@ object materialUiCoreStrings {
   inline def switchBase: switchBase = "switchBase".asInstanceOf[switchBase]
   
   @js.native
+  sealed trait table extends StObject
+  inline def table: table = "table".asInstanceOf[table]
+  
+  @js.native
+  sealed trait tbody extends StObject
+  inline def tbody: tbody = "tbody".asInstanceOf[tbody]
+  
+  @js.native
   sealed trait tel extends StObject
   inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
   sealed trait temporary extends StObject
   inline def temporary: temporary = "temporary".asInstanceOf[temporary]
-  
-  @js.native
-  sealed trait terminal extends StObject
-  inline def terminal: terminal = "terminal".asInstanceOf[terminal]
   
   @js.native
   sealed trait text
@@ -3050,12 +4830,8 @@ object materialUiCoreStrings {
   inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
-  sealed trait `text-after-edge` extends StObject
-  inline def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
-  
-  @js.native
-  sealed trait `text-before-edge` extends StObject
-  inline def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  sealed trait textAlign extends StObject
+  inline def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
   
   @js.native
   sealed trait textColorInherit
@@ -3076,10 +4852,8 @@ object materialUiCoreStrings {
   inline def textColorSecondary: textColorSecondary = "textColorSecondary".asInstanceOf[textColorSecondary]
   
   @js.native
-  sealed trait textDense
-    extends StObject
-       with ListItemTextClassKey
-  inline def textDense: textDense = "textDense".asInstanceOf[textDense]
+  sealed trait textOverflow extends StObject
+  inline def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
   
   @js.native
   sealed trait textPrimary
@@ -3094,10 +4868,47 @@ object materialUiCoreStrings {
   inline def textSecondary: textSecondary = "textSecondary".asInstanceOf[textSecondary]
   
   @js.native
-  sealed trait textarea
+  sealed trait textSizeLarge
     extends StObject
-       with TextareaClassKey
-  inline def textarea: textarea = "textarea".asInstanceOf[textarea]
+       with ButtonClassKey
+  inline def textSizeLarge: textSizeLarge = "textSizeLarge".asInstanceOf[textSizeLarge]
+  
+  @js.native
+  sealed trait textSizeSmall
+    extends StObject
+       with ButtonClassKey
+  inline def textSizeSmall: textSizeSmall = "textSizeSmall".asInstanceOf[textSizeSmall]
+  
+  @js.native
+  sealed trait tfoot extends StObject
+  inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
+  
+  @js.native
+  sealed trait thead extends StObject
+  inline def thead: thead = "thead".asInstanceOf[thead]
+  
+  @js.native
+  sealed trait theme extends StObject
+  inline def theme: theme = "theme".asInstanceOf[theme]
+  
+  @js.native
+  sealed trait thumb
+    extends StObject
+       with SliderClassKey
+       with SwitchClassKey
+  inline def thumb: thumb = "thumb".asInstanceOf[thumb]
+  
+  @js.native
+  sealed trait thumbColorPrimary
+    extends StObject
+       with SliderClassKey
+  inline def thumbColorPrimary: thumbColorPrimary = "thumbColorPrimary".asInstanceOf[thumbColorPrimary]
+  
+  @js.native
+  sealed trait thumbColorSecondary
+    extends StObject
+       with SliderClassKey
+  inline def thumbColorSecondary: thumbColorSecondary = "thumbColorSecondary".asInstanceOf[thumbColorSecondary]
   
   @js.native
   sealed trait tile
@@ -3112,6 +4923,7 @@ object materialUiCoreStrings {
   @js.native
   sealed trait timeout
     extends StObject
+       with SnackbarCloseReason
        with TransitionKeys
   inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
@@ -3120,9 +4932,7 @@ object materialUiCoreStrings {
     extends StObject
        with CardHeaderClassKey
        with GridListTileBarClassKey
-       with Style
-       with ThemeStyle
-       with TypographyClassKey
+       with ImageListItemBarClassKey
   inline def title: title = "title".asInstanceOf[title]
   
   @js.native
@@ -3141,18 +4951,21 @@ object materialUiCoreStrings {
   sealed trait titleWrap
     extends StObject
        with GridListTileBarClassKey
+       with ImageListItemBarClassKey
   inline def titleWrap: titleWrap = "titleWrap".asInstanceOf[titleWrap]
   
   @js.native
   sealed trait titleWrapActionPosLeft
     extends StObject
        with GridListTileBarClassKey
+       with ImageListItemBarClassKey
   inline def titleWrapActionPosLeft: titleWrapActionPosLeft = "titleWrapActionPosLeft".asInstanceOf[titleWrapActionPosLeft]
   
   @js.native
   sealed trait titleWrapActionPosRight
     extends StObject
        with GridListTileBarClassKey
+       with ImageListItemBarClassKey
   inline def titleWrapActionPosRight: titleWrapActionPosRight = "titleWrapActionPosRight".asInstanceOf[titleWrapActionPosRight]
   
   @js.native
@@ -3166,6 +4979,12 @@ object materialUiCoreStrings {
     extends StObject
        with TooltipClassKey
   inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
+  
+  @js.native
+  sealed trait tooltipArrow
+    extends StObject
+       with TooltipClassKey
+  inline def tooltipArrow: tooltipArrow = "tooltipArrow".asInstanceOf[tooltipArrow]
   
   @js.native
   sealed trait tooltipPlacementBottom
@@ -3222,14 +5041,45 @@ object materialUiCoreStrings {
   inline def touchRipple: touchRipple = "touchRipple".asInstanceOf[touchRipple]
   
   @js.native
+  sealed trait tr extends StObject
+  inline def tr: tr = "tr".asInstanceOf[tr]
+  
+  @js.native
+  sealed trait track
+    extends StObject
+       with SliderClassKey
+       with SwitchClassKey
+  inline def track: track = "track".asInstanceOf[track]
+  
+  @js.native
+  sealed trait trackFalse
+    extends StObject
+       with SliderClassKey
+  inline def trackFalse: trackFalse = "trackFalse".asInstanceOf[trackFalse]
+  
+  @js.native
+  sealed trait trackInverted
+    extends StObject
+       with SliderClassKey
+  inline def trackInverted: trackInverted = "trackInverted".asInstanceOf[trackInverted]
+  
+  @js.native
   sealed trait transition
     extends StObject
        with StepContentClasskey
   inline def transition: transition = "transition".asInstanceOf[transition]
   
   @js.native
+  sealed trait transparent extends StObject
+  inline def transparent: transparent = "transparent".asInstanceOf[transparent]
+  
+  @js.native
   sealed trait tree extends StObject
   inline def tree: tree = "tree".asInstanceOf[tree]
+  
+  @js.native
+  sealed trait ul extends StObject
+  inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
   sealed trait underline
@@ -3271,8 +5121,10 @@ object materialUiCoreStrings {
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait `use-credentials` extends StObject
-  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  sealed trait valueLabel
+    extends StObject
+       with SliderClassKey
+  inline def valueLabel: valueLabel = "valueLabel".asInstanceOf[valueLabel]
   
   @js.native
   sealed trait variant
@@ -3283,19 +5135,38 @@ object materialUiCoreStrings {
   @js.native
   sealed trait vertical
     extends StObject
+       with ButtonGroupClassKey
+       with DividerClassKey
        with Orientation
+       with SliderClassKey
        with StepButtonClasskey
        with StepClasskey
        with StepConnectorClasskey
        with StepLabelClasskey
        with StepperClasskey
+       with TabScrollButtonClassKey
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait visibility extends StObject
+  inline def visibility: visibility = "visibility".asInstanceOf[visibility]
+  
+  @js.native
+  sealed trait whiteSpace extends StObject
+  inline def whiteSpace: whiteSpace = "whiteSpace".asInstanceOf[whiteSpace]
+  
+  @js.native
+  sealed trait width extends StObject
+  inline def width: width = "width".asInstanceOf[width]
+  
+  @js.native
+  sealed trait withTheme extends StObject
+  inline def withTheme: withTheme = "withTheme".asInstanceOf[withTheme]
   
   @js.native
   sealed trait wrap
     extends StObject
        with GridWrap
-       with StrippedProps
   inline def wrap: wrap = "wrap".asInstanceOf[wrap]
   
   @js.native
@@ -3317,6 +5188,12 @@ object materialUiCoreStrings {
   inline def `wrap-xs-wrap-reverse`: `wrap-xs-wrap-reverse` = "wrap-xs-wrap-reverse".asInstanceOf[`wrap-xs-wrap-reverse`]
   
   @js.native
+  sealed trait wrapped
+    extends StObject
+       with TabClassKey
+  inline def wrapped: wrapped = "wrapped".asInstanceOf[wrapped]
+  
+  @js.native
   sealed trait wrapper
     extends StObject
        with BottomNavigationActionClassKey
@@ -3331,20 +5208,24 @@ object materialUiCoreStrings {
   inline def wrapperInner: wrapperInner = "wrapperInner".asInstanceOf[wrapperInner]
   
   @js.native
-  sealed trait xl
-    extends StObject
-       with Breakpoint
-       with StrippedProps
+  sealed trait xl extends StObject
   inline def xl: xl = "xl".asInstanceOf[xl]
   
   @js.native
-  sealed trait xs
-    extends StObject
-       with Breakpoint
-       with StrippedProps
+  sealed trait xs extends StObject
   inline def xs: xs = "xs".asInstanceOf[xs]
   
   @js.native
   sealed trait yes extends StObject
   inline def yes: yes = "yes".asInstanceOf[yes]
+  
+  @js.native
+  sealed trait zIndex extends StObject
+  inline def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
+  
+  @js.native
+  sealed trait zeroMinWidth
+    extends StObject
+       with GridClassKey
+  inline def zeroMinWidth: zeroMinWidth = "zeroMinWidth".asInstanceOf[zeroMinWidth]
 }

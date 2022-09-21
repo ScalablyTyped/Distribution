@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "MapController")
 @js.native
-class MapController ()
+open class MapController ()
   extends StObject
      with BaseMapController {
   
@@ -23,5 +23,5 @@ class MapController ()
   
   def setState(newState: MapState): Unit = js.native
   
-  def updateViewport(newMapState: MapState, extraProps: js.Any, extraState: ExtraState): Unit = js.native
+  def updateViewport(newMapState: MapState, extraProps: Any, extraState: ExtraState): Unit = js.native
 }

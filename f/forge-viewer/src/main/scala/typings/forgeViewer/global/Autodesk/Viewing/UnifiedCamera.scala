@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.UnifiedCamera")
 @js.native
-class UnifiedCamera ()
-  extends typings.forgeViewer.Autodesk.Viewing.UnifiedCamera
+open class UnifiedCamera ()
+  extends StObject
+     with typings.forgeViewer.Autodesk.Viewing.UnifiedCamera

@@ -2,14 +2,12 @@ package typings.popperjsCore
 
 import typings.popperjsCore.anon.PartialModifieranyany
 import typings.popperjsCore.anon.PartialOptions
+import typings.popperjsCore.applyStylesMod.ApplyStylesModifier
+import typings.popperjsCore.computeStylesMod.ComputeStylesModifier
 import typings.popperjsCore.createPopperMod.PopperGeneratorArgs
-import typings.popperjsCore.eventListenersMod.Options
-import typings.popperjsCore.popperjsCoreStrings.applyStyles
-import typings.popperjsCore.popperjsCoreStrings.computeStyles
-import typings.popperjsCore.popperjsCoreStrings.eventListeners
-import typings.popperjsCore.popperjsCoreStrings.popperOffsets
+import typings.popperjsCore.eventListenersMod.EventListenersModifier
+import typings.popperjsCore.popperOffsetsMod.PopperOffsetsModifier
 import typings.popperjsCore.typesMod.Instance
-import typings.popperjsCore.typesMod.Modifier
 import typings.popperjsCore.typesMod.OptionsGeneric
 import typings.popperjsCore.typesMod.SideObject
 import typings.popperjsCore.typesMod.State
@@ -35,10 +33,7 @@ object popperLiteMod {
   @JSImport("@popperjs/core/lib/popper-lite", "defaultModifiers")
   @js.native
   val defaultModifiers: js.Array[
-    Modifier[
-      popperOffsets | eventListeners | computeStyles | applyStyles, 
-      js.Object | Options | typings.popperjsCore.computeStylesMod.Options
-    ]
+    PopperOffsetsModifier | EventListenersModifier | ComputeStylesModifier | ApplyStylesModifier
   ] = js.native
   
   inline def detectOverflow(state: State): SideObject = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any]).asInstanceOf[SideObject]

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Crescendo")
 @js.native
-class Crescendo protected ()
+open class Crescendo protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Crescendo {
   def this(note_struct: DurationLine) = this()

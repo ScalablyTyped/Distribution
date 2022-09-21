@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Deletes the dimensions from the sheet.
-  */
 trait SchemaDeleteDimensionRequest extends StObject {
   
   /**

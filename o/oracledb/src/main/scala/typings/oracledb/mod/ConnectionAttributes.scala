@@ -1,7 +1,6 @@
 package typings.oracledb.mod
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,11 +90,11 @@ trait ConnectionAttributes extends StObject {
   
   /**
     * Allows a connection to be established directly to a database shard.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sharding
     * @since 4.1
     */
-  var shardingKey: js.UndefOr[js.Array[String | Double | Date | Buffer]] = js.undefined
+  var shardingKey: js.UndefOr[js.Array[String | Double | js.Date | Buffer]] = js.undefined
   
   /**
     * The number of statements to be cached in the statement cache of each connection.
@@ -105,11 +104,11 @@ trait ConnectionAttributes extends StObject {
   
   /**
     * Allows a connection to be established directly to a database shard.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sharding
     * @since 4.1
     */
-  var superShardingKey: js.UndefOr[js.Array[String | Double | Date | Buffer]] = js.undefined
+  var superShardingKey: js.UndefOr[js.Array[String | Double | js.Date | Buffer]] = js.undefined
   
   /**
     * Used when getting a connection from a connection pool.
@@ -174,21 +173,21 @@ object ConnectionAttributes {
     
     inline def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
-    inline def setShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = StObject.set(x, "shardingKey", value.asInstanceOf[js.Any])
+    inline def setShardingKey(value: js.Array[String | Double | js.Date | Buffer]): Self = StObject.set(x, "shardingKey", value.asInstanceOf[js.Any])
     
     inline def setShardingKeyUndefined: Self = StObject.set(x, "shardingKey", js.undefined)
     
-    inline def setShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = StObject.set(x, "shardingKey", js.Array(value :_*))
+    inline def setShardingKeyVarargs(value: (String | Double | js.Date | Buffer)*): Self = StObject.set(x, "shardingKey", js.Array(value*))
     
     inline def setStmtCacheSize(value: Double): Self = StObject.set(x, "stmtCacheSize", value.asInstanceOf[js.Any])
     
     inline def setStmtCacheSizeUndefined: Self = StObject.set(x, "stmtCacheSize", js.undefined)
     
-    inline def setSuperShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = StObject.set(x, "superShardingKey", value.asInstanceOf[js.Any])
+    inline def setSuperShardingKey(value: js.Array[String | Double | js.Date | Buffer]): Self = StObject.set(x, "superShardingKey", value.asInstanceOf[js.Any])
     
     inline def setSuperShardingKeyUndefined: Self = StObject.set(x, "superShardingKey", js.undefined)
     
-    inline def setSuperShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = StObject.set(x, "superShardingKey", js.Array(value :_*))
+    inline def setSuperShardingKeyVarargs(value: (String | Double | js.Date | Buffer)*): Self = StObject.set(x, "superShardingKey", js.Array(value*))
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     

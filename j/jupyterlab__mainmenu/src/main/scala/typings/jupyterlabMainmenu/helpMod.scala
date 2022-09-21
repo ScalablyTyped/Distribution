@@ -2,11 +2,12 @@ package typings.jupyterlabMainmenu
 
 import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
 import typings.jupyterlabMainmenu.helpMod.IHelpMenu.IKernelUser
-import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
-import typings.jupyterlabMainmenu.labmenuMod.IMenuExtender
-import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
+import typings.jupyterlabMainmenu.tokensMod.IMenuExtender
 import typings.jupyterlabServices.kernelKernelMod.IKernelConnection
-import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu.IOptions
+import typings.jupyterlabUiComponents.mod.RankedMenu
+import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -15,29 +16,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object helpMod {
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.luminoDisposable.mod.IDisposable because Already inherited
-  - typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu because Already inherited
-  - typings.jupyterlabMainmenu.helpMod.IHelpMenu because var conflicts: isDisposed. Inlined kernelUsers */ @JSImport("@jupyterlab/mainmenu/lib/help", "HelpMenu")
+  @JSImport("@jupyterlab/mainmenu/lib/help", "HelpMenu")
   @js.native
-  class HelpMenu protected () extends JupyterLabMenu {
+  open class HelpMenu protected ()
+    extends RankedMenu
+       with IHelpMenu {
     /**
       * Construct the help menu.
       */
     def this(options: IOptions) = this()
     
     /**
-      * A set of kernel users for the help menu.
-      * This is used to populate additional help
-      * links provided by the kernel of a widget.
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
       */
-    val kernelUsers: Set[IKernelUser[Widget]] = js.native
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* InferMemberOverrides */
+    override val isDisposed: Boolean = js.native
+    
+    /**
+      * Process a message sent to the handler.
+      *
+      * @param msg - The message to be processed.
+      */
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def processMessage(msg: Message): Unit = js.native
   }
   
   @js.native
   trait IHelpMenu
     extends StObject
-       with IJupyterLabMenu {
+       with IRankedMenu {
     
     /**
       * A set of kernel users for the help menu.

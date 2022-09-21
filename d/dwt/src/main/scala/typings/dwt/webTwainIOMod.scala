@@ -5,7 +5,6 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTUploadDataFormat
 import typings.dwt.webTwainUtilMod.WebTwainUtil
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -856,7 +855,7 @@ object webTwainIOMod {
     ): Unit | Boolean = js.native
     
     def LoadImageFromBinary(
-      imageData: ArrayBuffer,
+      imageData: js.typedarray.ArrayBuffer,
       successCallback: js.Function0[Unit],
       failureCallback: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit = js.native

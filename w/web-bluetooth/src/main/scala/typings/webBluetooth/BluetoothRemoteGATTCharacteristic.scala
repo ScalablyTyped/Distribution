@@ -1,7 +1,6 @@
 package typings.webBluetooth
 
 import typings.std.BufferSource
-import typings.std.DataView
 import typings.std.Event
 import typings.std.EventTarget
 import typings.webBluetooth.webBluetoothStrings.characteristicvaluechanged
@@ -18,12 +17,12 @@ trait BluetoothRemoteGATTCharacteristic
   @JSName("addEventListener")
   def addEventListener_characteristicvaluechanged(
     `type`: characteristicvaluechanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_characteristicvaluechanged(
     `type`: characteristicvaluechanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -34,9 +33,9 @@ trait BluetoothRemoteGATTCharacteristic
   
   val properties: BluetoothCharacteristicProperties = js.native
   
-  def readValue(): js.Promise[DataView] = js.native
+  def readValue(): js.Promise[js.typedarray.DataView] = js.native
   
-  val service: js.UndefOr[BluetoothRemoteGATTService] = js.native
+  val service: BluetoothRemoteGATTService = js.native
   
   def startNotifications(): js.Promise[BluetoothRemoteGATTCharacteristic] = js.native
   
@@ -44,7 +43,7 @@ trait BluetoothRemoteGATTCharacteristic
   
   val uuid: String = js.native
   
-  val value: js.UndefOr[DataView] = js.native
+  val value: js.UndefOr[js.typedarray.DataView] = js.native
   
   def writeValue(value: BufferSource): js.Promise[Unit] = js.native
   

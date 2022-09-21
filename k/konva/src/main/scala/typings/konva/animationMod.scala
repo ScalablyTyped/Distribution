@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object animationMod {
   
-  @JSImport("konva/types/Animation", "Animation")
+  @JSImport("konva/lib/Animation", "Animation")
   @js.native
-  class Animation protected () extends StObject {
+  open class Animation protected () extends StObject {
     def this(func: AnimationFn) = this()
-    def this(func: AnimationFn, layers: js.Any) = this()
+    def this(func: AnimationFn, layers: Any) = this()
     
-    def _updateFrameObject(time: js.Any): Unit = js.native
+    def _updateFrameObject(time: Any): Unit = js.native
     
-    def addLayer(layer: js.Any): Boolean = js.native
+    def addLayer(layer: Any): Boolean = js.native
     
     var frame: IFrame = js.native
     
@@ -34,7 +34,7 @@ object animationMod {
     
     var layers: js.Array[Layer] = js.native
     
-    def setLayers(layers: js.Any): this.type = js.native
+    def setLayers(layers: Any): this.type = js.native
     
     def start(): this.type = js.native
     
@@ -43,33 +43,33 @@ object animationMod {
   /* static members */
   object Animation {
     
-    @JSImport("konva/types/Animation", "Animation")
+    @JSImport("konva/lib/Animation", "Animation")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def _addAnimation(anim: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_addAnimation")(anim.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def _addAnimation(anim: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_addAnimation")(anim.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def _animationLoop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_animationLoop")().asInstanceOf[Unit]
     
     inline def _handleAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_handleAnimation")().asInstanceOf[Unit]
     
-    inline def _removeAnimation(anim: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_removeAnimation")(anim.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def _removeAnimation(anim: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_removeAnimation")(anim.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def _runFrames(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_runFrames")().asInstanceOf[Unit]
     
-    @JSImport("konva/types/Animation", "Animation.animIdCounter")
+    @JSImport("konva/lib/Animation", "Animation.animIdCounter")
     @js.native
     def animIdCounter: Double = js.native
     inline def animIdCounter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animIdCounter")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/Animation", "Animation.animRunning")
+    @JSImport("konva/lib/Animation", "Animation.animRunning")
     @js.native
     def animRunning: Boolean = js.native
     inline def animRunning_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animRunning")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/Animation", "Animation.animations")
+    @JSImport("konva/lib/Animation", "Animation.animations")
     @js.native
-    def animations: js.Array[js.Any] = js.native
-    inline def animations_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animations")(x.asInstanceOf[js.Any])
+    def animations: js.Array[Any] = js.native
+    inline def animations_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animations")(x.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,7 @@ object titleMod {
   
   @JSImport("amcharts/Title", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Title {
     

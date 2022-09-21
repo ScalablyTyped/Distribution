@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullTypeEnclosingTypeWalker")
 @js.native
-class PullTypeEnclosingTypeWalker ()
+open class PullTypeEnclosingTypeWalker ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullTypeEnclosingTypeWalker
 object PullTypeEnclosingTypeWalker {
@@ -18,14 +18,14 @@ object PullTypeEnclosingTypeWalker {
   /* static member */
   @JSImport("typescript-services", "PullTypeEnclosingTypeWalker._defaultEnclosingTypeWalkerState")
   @js.native
-  def defaultEnclosingTypeWalkerState: js.Any = js.native
+  def defaultEnclosingTypeWalkerState: Any = js.native
   
-  inline def defaultEnclosingTypeWalkerState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultEnclosingTypeWalkerState")(x.asInstanceOf[js.Any])
+  inline def defaultEnclosingTypeWalkerState_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultEnclosingTypeWalkerState")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("typescript-services", "PullTypeEnclosingTypeWalker._nonGenericEnclosingTypeWalkerState")
   @js.native
-  def nonGenericEnclosingTypeWalkerState: js.Any = js.native
+  def nonGenericEnclosingTypeWalkerState: Any = js.native
   
-  inline def nonGenericEnclosingTypeWalkerState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_nonGenericEnclosingTypeWalkerState")(x.asInstanceOf[js.Any])
+  inline def nonGenericEnclosingTypeWalkerState_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_nonGenericEnclosingTypeWalkerState")(x.asInstanceOf[js.Any])
 }

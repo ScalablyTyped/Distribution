@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Curve")
 @js.native
-class Curve protected ()
+open class Curve protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Curve {
   def this(from: typings.vexflow.Vex.Flow.Note, to: typings.vexflow.Vex.Flow.Note) = this()

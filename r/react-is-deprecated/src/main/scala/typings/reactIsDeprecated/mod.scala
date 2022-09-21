@@ -39,54 +39,54 @@ object mod {
   // define a version that intersects in the Deprecatable interface into the keys.
   trait DeprecatablePropTypes extends StObject {
     
-    var any: Requireable[js.Any] & Deprecatable[js.Any]
+    var any: Requireable[Any] & Deprecatable[Any]
     
-    var array: Requireable[js.Any] & Deprecatable[js.Any]
+    var array: Requireable[Any] & Deprecatable[Any]
     
-    def arrayOf(`type`: Validator[js.Any]): Requireable[js.Any] & Deprecatable[js.Any]
+    def arrayOf(`type`: Validator[Any]): Requireable[Any] & Deprecatable[Any]
     
-    var bool: Requireable[js.Any] & Deprecatable[js.Any]
+    var bool: Requireable[Any] & Deprecatable[Any]
     
-    var element: Requireable[js.Any] & Deprecatable[js.Any]
+    var element: Requireable[Any] & Deprecatable[Any]
     
-    var func: Requireable[js.Any] & Deprecatable[js.Any]
+    var func: Requireable[Any] & Deprecatable[Any]
     
-    def instanceOf(expectedClass: js.Object): Requireable[js.Any] & Deprecatable[js.Any]
+    def instanceOf(expectedClass: js.Object): Requireable[Any] & Deprecatable[Any]
     
-    var node: Requireable[js.Any] & Deprecatable[js.Any]
+    var node: Requireable[Any] & Deprecatable[Any]
     
-    var number: Requireable[js.Any] & Deprecatable[js.Any]
+    var number: Requireable[Any] & Deprecatable[Any]
     
-    var `object`: Requireable[js.Any] & Deprecatable[js.Any]
+    var `object`: Requireable[Any] & Deprecatable[Any]
     
-    def objectOf(`type`: Validator[js.Any]): Requireable[js.Any] & Deprecatable[js.Any]
+    def objectOf(`type`: Validator[Any]): Requireable[Any] & Deprecatable[Any]
     
-    def oneOf(types: js.Array[js.Any]): Requireable[js.Any] & Deprecatable[js.Any]
+    def oneOf(types: js.Array[Any]): Requireable[Any] & Deprecatable[Any]
     
-    def oneOfType(types: js.Array[Validator[js.Any]]): Requireable[js.Any] & Deprecatable[js.Any]
+    def oneOfType(types: js.Array[Validator[Any]]): Requireable[Any] & Deprecatable[Any]
     
-    def shape(`type`: ValidationMap[js.Any]): Requireable[js.Any] & Deprecatable[js.Any]
+    def shape(`type`: ValidationMap[Any]): Requireable[Any] & Deprecatable[Any]
     
-    var string: Requireable[js.Any] & Deprecatable[js.Any]
+    var string: Requireable[Any] & Deprecatable[Any]
   }
   object DeprecatablePropTypes {
     
     inline def apply(
-      any: Requireable[js.Any] & Deprecatable[js.Any],
-      array: Requireable[js.Any] & Deprecatable[js.Any],
-      arrayOf: Validator[js.Any] => Requireable[js.Any] & Deprecatable[js.Any],
-      bool: Requireable[js.Any] & Deprecatable[js.Any],
-      element: Requireable[js.Any] & Deprecatable[js.Any],
-      func: Requireable[js.Any] & Deprecatable[js.Any],
-      instanceOf: js.Object => Requireable[js.Any] & Deprecatable[js.Any],
-      node: Requireable[js.Any] & Deprecatable[js.Any],
-      number: Requireable[js.Any] & Deprecatable[js.Any],
-      `object`: Requireable[js.Any] & Deprecatable[js.Any],
-      objectOf: Validator[js.Any] => Requireable[js.Any] & Deprecatable[js.Any],
-      oneOf: js.Array[js.Any] => Requireable[js.Any] & Deprecatable[js.Any],
-      oneOfType: js.Array[Validator[js.Any]] => Requireable[js.Any] & Deprecatable[js.Any],
-      shape: ValidationMap[js.Any] => Requireable[js.Any] & Deprecatable[js.Any],
-      string: Requireable[js.Any] & Deprecatable[js.Any]
+      any: Requireable[Any] & Deprecatable[Any],
+      array: Requireable[Any] & Deprecatable[Any],
+      arrayOf: Validator[Any] => Requireable[Any] & Deprecatable[Any],
+      bool: Requireable[Any] & Deprecatable[Any],
+      element: Requireable[Any] & Deprecatable[Any],
+      func: Requireable[Any] & Deprecatable[Any],
+      instanceOf: js.Object => Requireable[Any] & Deprecatable[Any],
+      node: Requireable[Any] & Deprecatable[Any],
+      number: Requireable[Any] & Deprecatable[Any],
+      `object`: Requireable[Any] & Deprecatable[Any],
+      objectOf: Validator[Any] => Requireable[Any] & Deprecatable[Any],
+      oneOf: js.Array[Any] => Requireable[Any] & Deprecatable[Any],
+      oneOfType: js.Array[Validator[Any]] => Requireable[Any] & Deprecatable[Any],
+      shape: ValidationMap[Any] => Requireable[Any] & Deprecatable[Any],
+      string: Requireable[Any] & Deprecatable[Any]
     ): DeprecatablePropTypes = {
       val __obj = js.Dynamic.literal(any = any.asInstanceOf[js.Any], array = array.asInstanceOf[js.Any], arrayOf = js.Any.fromFunction1(arrayOf), bool = bool.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], func = func.asInstanceOf[js.Any], instanceOf = js.Any.fromFunction1(instanceOf), node = node.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], objectOf = js.Any.fromFunction1(objectOf), oneOf = js.Any.fromFunction1(oneOf), oneOfType = js.Any.fromFunction1(oneOfType), shape = js.Any.fromFunction1(shape), string = string.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
@@ -95,35 +95,35 @@ object mod {
     
     extension [Self <: DeprecatablePropTypes](x: Self) {
       
-      inline def setAny(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+      inline def setAny(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
       
-      inline def setArray(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      inline def setArrayOf(value: Validator[js.Any] => Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "arrayOf", js.Any.fromFunction1(value))
+      inline def setArrayOf(value: Validator[Any] => Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "arrayOf", js.Any.fromFunction1(value))
       
-      inline def setBool(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+      inline def setBool(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
-      inline def setElement(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setFunc(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+      inline def setFunc(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       
-      inline def setInstanceOf(value: js.Object => Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "instanceOf", js.Any.fromFunction1(value))
+      inline def setInstanceOf(value: js.Object => Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "instanceOf", js.Any.fromFunction1(value))
       
-      inline def setNode(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      inline def setNumber(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObjectOf(value: Validator[js.Any] => Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "objectOf", js.Any.fromFunction1(value))
+      inline def setObjectOf(value: Validator[Any] => Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "objectOf", js.Any.fromFunction1(value))
       
-      inline def setOneOf(value: js.Array[js.Any] => Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "oneOf", js.Any.fromFunction1(value))
+      inline def setOneOf(value: js.Array[Any] => Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "oneOf", js.Any.fromFunction1(value))
       
-      inline def setOneOfType(value: js.Array[Validator[js.Any]] => Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "oneOfType", js.Any.fromFunction1(value))
+      inline def setOneOfType(value: js.Array[Validator[Any]] => Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "oneOfType", js.Any.fromFunction1(value))
       
-      inline def setShape(value: ValidationMap[js.Any] => Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
+      inline def setShape(value: ValidationMap[Any] => Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
       
-      inline def setString(value: Requireable[js.Any] & Deprecatable[js.Any]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -3,7 +3,6 @@ package typings.cassanknex.mod
 import typings.cassandraDriver.mod.ValueCallback
 import typings.cassandraDriver.typesMod.types.ResultSet
 import typings.cassandraDriver.typesMod.types.Row
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,9 @@ trait KeyspaceQueryBuilder
 object KeyspaceQueryBuilder {
   
   inline def apply(
-    bindings: () => js.Array[js.Any],
+    bindings: () => js.Array[Any],
     cql: () => String,
-    eachRow: (js.Function2[/* n */ Double, /* row */ Row, js.Any], js.Function1[/* err */ Error, js.Any]) => Unit,
+    eachRow: (js.Function2[/* n */ Double, /* row */ Row, Any], js.Function1[/* err */ js.Error, Any]) => Unit,
     exec: ValueCallback[ResultSet] => Unit,
     stream: StreamParams => Unit,
     withDurableWrites: Boolean => KeyspaceQueryBuilder,

@@ -1,5 +1,6 @@
 package typings.braintreeWebDropIn.mod
 
+import typings.braintreeWebDropIn.braintreeWebDropInStrings.changeActiveView
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.noPaymentMethodRequestable
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.paymentMethodRequestable
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.paymentOptionSelected
@@ -15,6 +16,8 @@ trait Dropin extends StObject {
   def isPaymentMethodRequestable(): Boolean = js.native
   
   @JSName("off")
+  def off_changeActiveView(event: changeActiveView, handler: js.Function1[/* payload */ ChangeActiveViewPayload, Unit]): Unit = js.native
+  @JSName("off")
   def off_noPaymentMethodRequestable(event: noPaymentMethodRequestable, handler: js.Function0[Unit]): Unit = js.native
   @JSName("off")
   def off_paymentMethodRequestable(
@@ -27,6 +30,8 @@ trait Dropin extends StObject {
     handler: js.Function1[/* payload */ PaymentOptionSelectedPayload, Unit]
   ): Unit = js.native
   
+  @JSName("on")
+  def on_changeActiveView(event: changeActiveView, handler: js.Function1[/* payload */ ChangeActiveViewPayload, Unit]): Unit = js.native
   @JSName("on")
   def on_noPaymentMethodRequestable(event: noPaymentMethodRequestable, handler: js.Function0[Unit]): Unit = js.native
   @JSName("on")
@@ -42,7 +47,8 @@ trait Dropin extends StObject {
   
   def requestPaymentMethod(): js.Promise[PaymentMethodPayload] = js.native
   def requestPaymentMethod(callback: RequestPaymentMethodCallback): Unit = js.native
-  def requestPaymentMethod(options: js.Object, callback: RequestPaymentMethodCallback): Unit = js.native
+  def requestPaymentMethod(options: PaymentMethodOptions): js.Promise[PaymentMethodPayload] = js.native
+  def requestPaymentMethod(options: PaymentMethodOptions, callback: RequestPaymentMethodCallback): Unit = js.native
   
   def teardown(): js.Promise[Unit] = js.native
   def teardown(callback: js.Function1[/* error */ js.UndefOr[js.Object | Null], Unit]): Unit = js.native

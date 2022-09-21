@@ -11,55 +11,55 @@ object tweenMod {
   
   object Easings {
     
-    @JSImport("konva/types/Tween", "Easings")
+    @JSImport("konva/lib/Tween", "Easings")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def BackEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def BackEaseIn(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def BackEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def BackEaseInOut(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def BackEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def BackEaseOut(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BackEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def BounceEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def BounceEaseIn(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def BounceEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def BounceEaseInOut(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def BounceEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def BounceEaseOut(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BounceEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def EaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def EaseIn(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def EaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def EaseInOut(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def EaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def EaseOut(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("EaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def ElasticEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def ElasticEaseIn(t: Any, b: Any, c: Any, d: Any, a: Any, p: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def ElasticEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def ElasticEaseInOut(t: Any, b: Any, c: Any, d: Any, a: Any, p: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def ElasticEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any, a: js.Any, p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def ElasticEaseOut(t: Any, b: Any, c: Any, d: Any, a: Any, p: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ElasticEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def Linear(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Linear")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def Linear(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Linear")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def StrongEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def StrongEaseIn(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseIn")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def StrongEaseInOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def StrongEaseInOut(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseInOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def StrongEaseOut(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def StrongEaseOut(t: Any, b: Any, c: Any, d: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("StrongEaseOut")(t.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
-  @JSImport("konva/types/Tween", "Tween")
+  @JSImport("konva/lib/Tween", "Tween")
   @js.native
-  class Tween protected () extends StObject {
+  open class Tween protected () extends StObject {
     def this(config: TweenConfig) = this()
     
-    def _addAttr(key: js.Any, end: js.Any): Unit = js.native
+    def _addAttr(key: Any, end: Any): Unit = js.native
     
     def _addListeners(): Unit = js.native
     
     var _id: Double = js.native
     
-    def _tweenFunc(i: js.Any): Unit = js.native
+    def _tweenFunc(i: Any): Unit = js.native
     
     var anim: Animation = js.native
     
@@ -83,23 +83,23 @@ object tweenMod {
     
     def reverse(): this.type = js.native
     
-    def seek(t: js.Any): this.type = js.native
+    def seek(t: Any): this.type = js.native
     
     var tween: TweenEngine = js.native
   }
   /* static members */
   object Tween {
     
-    @JSImport("konva/types/Tween", "Tween")
+    @JSImport("konva/lib/Tween", "Tween")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("konva/types/Tween", "Tween.attrs")
+    @JSImport("konva/lib/Tween", "Tween.attrs")
     @js.native
     def attrs: js.Object = js.native
     inline def attrs_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attrs")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/Tween", "Tween.tweens")
+    @JSImport("konva/lib/Tween", "Tween.tweens")
     @js.native
     def tweens: js.Object = js.native
     inline def tweens_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tweens")(x.asInstanceOf[js.Any])
@@ -162,11 +162,11 @@ object tweenMod {
     
     def finish(): Unit
     
-    def fire(str: js.Any): Unit
+    def fire(str: Any): Unit
     
     var func: js.Function
     
-    def getPosition(t: js.Any): js.Any
+    def getPosition(t: Any): Any
     
     def getTime(): Double
     
@@ -200,11 +200,11 @@ object tweenMod {
     
     def reverse(): Unit
     
-    def seek(t: js.Any): Unit
+    def seek(t: Any): Unit
     
-    def setPosition(p: js.Any): Unit
+    def setPosition(p: Any): Unit
     
-    def setTime(t: js.Any): Unit
+    def setTime(t: Any): Unit
     
     var state: Double
     
@@ -224,9 +224,9 @@ object tweenMod {
       begin: Double,
       duration: Double,
       finish: () => Unit,
-      fire: js.Any => Unit,
+      fire: Any => Unit,
       func: js.Function,
-      getPosition: js.Any => js.Any,
+      getPosition: Any => Any,
       getTime: () => Double,
       getTimer: () => Double,
       onEnterFrame: () => Unit,
@@ -243,9 +243,9 @@ object tweenMod {
       propFunc: js.Function,
       reset: () => Unit,
       reverse: () => Unit,
-      seek: js.Any => Unit,
-      setPosition: js.Any => Unit,
-      setTime: js.Any => Unit,
+      seek: Any => Unit,
+      setPosition: Any => Unit,
+      setTime: Any => Unit,
       state: Double,
       update: () => Unit,
       yoyo: Boolean
@@ -262,11 +262,11 @@ object tweenMod {
       
       inline def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
       
-      inline def setFire(value: js.Any => Unit): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
+      inline def setFire(value: Any => Unit): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
       
       inline def setFunc(value: js.Function): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       
-      inline def setGetPosition(value: js.Any => js.Any): Self = StObject.set(x, "getPosition", js.Any.fromFunction1(value))
+      inline def setGetPosition(value: Any => Any): Self = StObject.set(x, "getPosition", js.Any.fromFunction1(value))
       
       inline def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
       
@@ -300,11 +300,11 @@ object tweenMod {
       
       inline def setReverse(value: () => Unit): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
       
-      inline def setSeek(value: js.Any => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+      inline def setSeek(value: Any => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
       
-      inline def setSetPosition(value: js.Any => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+      inline def setSetPosition(value: Any => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
       
-      inline def setSetTime(value: js.Any => Unit): Self = StObject.set(x, "setTime", js.Any.fromFunction1(value))
+      inline def setSetTime(value: Any => Unit): Self = StObject.set(x, "setTime", js.Any.fromFunction1(value))
       
       inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

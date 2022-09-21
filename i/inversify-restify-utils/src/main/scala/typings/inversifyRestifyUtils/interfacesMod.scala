@@ -4,7 +4,6 @@ import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
 import typings.restify.mod.RequestHandler
 import typings.restify.mod.Server
 import typings.std.PropertyKey
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,11 +22,11 @@ object interfacesMod {
       
       var path: String
       
-      var target: js.Any
+      var target: Any
     }
     object ControllerMetadata {
       
-      inline def apply(middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMetadata = {
+      inline def apply(middleware: js.Array[Middleware], path: String, target: Any): ControllerMetadata = {
         val __obj = js.Dynamic.literal(middleware = middleware.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[ControllerMetadata]
       }
@@ -36,11 +35,11 @@ object interfacesMod {
         
         inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
         
-        inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+        inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value*))
         
         inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
@@ -54,17 +53,11 @@ object interfacesMod {
       
       var options: RouteOptions
       
-      var target: js.Any
+      var target: Any
     }
     object ControllerMethodMetadata {
       
-      inline def apply(
-        key: String,
-        method: String,
-        middleware: js.Array[Middleware],
-        options: RouteOptions,
-        target: js.Any
-      ): ControllerMethodMetadata = {
+      inline def apply(key: String, method: String, middleware: js.Array[Middleware], options: RouteOptions, target: Any): ControllerMethodMetadata = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[ControllerMethodMetadata]
       }
@@ -77,17 +70,17 @@ object interfacesMod {
         
         inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
         
-        inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+        inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value*))
         
         inline def setOptions(value: RouteOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
-    type HandlerDecorator = js.Function3[/* target */ js.Any, /* key */ String, /* value */ js.Any, Unit]
+    type HandlerDecorator = js.Function3[/* target */ Any, /* key */ String, /* value */ Any, Unit]
     
-    type Middleware = ServiceIdentifier[js.Any] | RequestHandler
+    type Middleware = ServiceIdentifier[Any] | RequestHandler
     
     /* Rewritten from type alias, can be one of: 
       - typings.inversifyRestifyUtils.interfacesMod.interfaces.StrOrRegex
@@ -117,7 +110,7 @@ object interfacesMod {
       }
     }
     
-    type StrOrRegex = String | RegExp
+    type StrOrRegex = String | js.RegExp
     
     trait _RouteOptions extends StObject
     object _RouteOptions {

@@ -9,7 +9,7 @@ trait EstimatedResourceSize extends StObject {
   /**
     * The time when the estimate of the size of the resource was made.
     */
-  var estimatedOn: js.UndefOr[Timestamp] = js.undefined
+  var estimatedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The estimated size of the resource, in bytes.
@@ -25,7 +25,7 @@ object EstimatedResourceSize {
   
   extension [Self <: EstimatedResourceSize](x: Self) {
     
-    inline def setEstimatedOn(value: Timestamp): Self = StObject.set(x, "estimatedOn", value.asInstanceOf[js.Any])
+    inline def setEstimatedOn(value: js.Date): Self = StObject.set(x, "estimatedOn", value.asInstanceOf[js.Any])
     
     inline def setEstimatedOnUndefined: Self = StObject.set(x, "estimatedOn", js.undefined)
     

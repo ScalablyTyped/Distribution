@@ -10,10 +10,10 @@ object controlPointDuplicateMod {
   
   @JSImport("material-ui/svg-icons/image/control-point-duplicate", JSImport.Default)
   @js.native
-  class default () extends ImageControlPointDuplicate
+  open class default () extends ImageControlPointDuplicate
   
   @JSImport("material-ui/svg-icons/image/control-point-duplicate", "ImageControlPointDuplicate")
   @js.native
-  class ImageControlPointDuplicate ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageControlPointDuplicate ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -29,6 +29,6 @@ object TracksListResponse {
     
     inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    inline def setTracksVarargs(value: Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: Track*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

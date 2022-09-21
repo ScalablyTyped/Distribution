@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRealtimebidding.anon
 
-import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.ActivatePretargetingConfigRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,11 @@ trait PrettyPrint extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the pretargeting configuration. Format: bidders/{bidderAccountId}/pretargetingConfig/{configId} */
+  /**
+    * Required. To fetch remarketing tag for an account, name must follow the pattern `buyers/{accountId}` where `{accountId}` represents ID of a buyer that owns the remarketing tag.
+    * For a bidder accessing remarketing tag on behalf of a child seat buyer, `{accountId}` should represent the ID of the child seat buyer. To fetch remarketing tag for a specific
+    * user list, name must follow the pattern `buyers/{accountId}/userLists/{userListId}`. See UserList.name.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -38,9 +41,6 @@ trait PrettyPrint extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: ActivatePretargetingConfigRequest
-  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -49,8 +49,8 @@ trait PrettyPrint extends StObject {
 }
 object PrettyPrint {
   
-  inline def apply(name: String, resource: ActivatePretargetingConfigRequest): PrettyPrint = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(name: String): PrettyPrint = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrint]
   }
   
@@ -93,8 +93,6 @@ object PrettyPrint {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: ActivatePretargetingConfigRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Used for attributes of basic type <angle> which can be animated. */
 trait SVGAnimatedAngle extends StObject {
   
+  /* standard dom */
   val animVal: SVGAngle
   
+  /* standard dom */
   val baseVal: SVGAngle
 }
 object SVGAnimatedAngle {

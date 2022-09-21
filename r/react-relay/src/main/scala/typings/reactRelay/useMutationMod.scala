@@ -11,14 +11,13 @@ import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
 import typings.relayRuntime.relayStoreTypesMod.Environment
 import typings.relayRuntime.relayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMutationMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useMutation", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/useMutation", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -35,12 +34,12 @@ object useMutationMod {
     var onCompleted: js.UndefOr[
         js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: TMutation['response'] */ /* response */ js.Any, 
-          /* errors */ js.Array[PayloadError], 
+          /* errors */ js.Array[PayloadError] | Null, 
           Unit | Null
         ]
       ] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit | Null]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ js.Error, Unit | Null]] = js.undefined
     
     var onUnsubscribe: js.UndefOr[js.Function0[Unit | Null]] = js.undefined
     
@@ -77,15 +76,15 @@ object useMutationMod {
       
       inline def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
       
-      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
+      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value*))
       
       inline def setOnCompleted(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: TMutation['response'] */ /* response */ js.Any, /* errors */ js.Array[PayloadError]) => Unit | Null
+        value: (/* import warning: importer.ImportType#apply Failed type conversion: TMutation['response'] */ /* response */ js.Any, /* errors */ js.Array[PayloadError] | Null) => Unit | Null
       ): Self = StObject.set(x, "onCompleted", js.Any.fromFunction2(value))
       
       inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      inline def setOnError(value: /* error */ Error => Unit | Null): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error => Unit | Null): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.GatewayTimeout")
 @js.native
-class GatewayTimeout () extends Abstract
+open class GatewayTimeout () extends Abstract

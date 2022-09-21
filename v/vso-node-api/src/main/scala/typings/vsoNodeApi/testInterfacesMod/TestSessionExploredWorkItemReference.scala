@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,20 +16,20 @@ trait TestSessionExploredWorkItemReference
   /**
     * Time when exploration of workitem ended.
     */
-  var endTime: Date
+  var endTime: js.Date
   
   /**
     * Time when explore of workitem was started.
     */
-  var startTime: Date
+  var startTime: js.Date
 }
 object TestSessionExploredWorkItemReference {
   
   inline def apply(
     associatedWorkItems: js.Array[TestSessionWorkItemReference],
-    endTime: Date,
+    endTime: js.Date,
     id: Double,
-    startTime: Date,
+    startTime: js.Date,
     `type`: String
   ): TestSessionExploredWorkItemReference = {
     val __obj = js.Dynamic.literal(associatedWorkItems = associatedWorkItems.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
@@ -42,10 +41,10 @@ object TestSessionExploredWorkItemReference {
     
     inline def setAssociatedWorkItems(value: js.Array[TestSessionWorkItemReference]): Self = StObject.set(x, "associatedWorkItems", value.asInstanceOf[js.Any])
     
-    inline def setAssociatedWorkItemsVarargs(value: TestSessionWorkItemReference*): Self = StObject.set(x, "associatedWorkItems", js.Array(value :_*))
+    inline def setAssociatedWorkItemsVarargs(value: TestSessionWorkItemReference*): Self = StObject.set(x, "associatedWorkItems", js.Array(value*))
     
-    inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

@@ -9,12 +9,12 @@ trait CreateClusterRequest extends StObject {
   /** Required. A [cluster resource](https://cloud.google.com/container-engine/reference/rest/v1/projects.locations.clusters) */
   var cluster: js.UndefOr[Cluster] = js.undefined
   
-  /** The parent (project and location) where the cluster will be created. Specified in the format `projects/∗/locations/ *`. */
+  /** The parent (project and location) where the cluster will be created. Specified in the format `projects/ *‍/locations/ *`. */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the parent
-    * field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated
+    * and replaced by the parent field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   

@@ -14,9 +14,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the shapes in the worksheet.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -25,36 +25,40 @@ trait ShapeCollection
      with ClientObject {
   
   /**
-    * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
+    * Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
-    * @param geometricShapeType Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
+    * @param geometricShapeType Represents the type of the geometric shape. See `Excel.GeometricShapeType` for details.
     */
   def addGeometricShape(
-    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any
+    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
   ): Shape = js.native
   /**
-    * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
+    * Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
-    * @param geometricShapeType Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
+    * @param geometricShapeType Represents the type of the geometric shape. See `Excel.GeometricShapeType` for details.
     */
   def addGeometricShape(geometricShapeType: GeometricShapeType): Shape = js.native
   
   /**
-    * Groups a subset of shapes in this collection's worksheet. Returns a Shape object that represents the new group of shapes.
+    * Groups a subset of shapes in this collection's worksheet. Returns a `Shape` object that represents the new group of shapes.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
-    * @param values An array of shape ID or shape objects.
+    * @param values An array of shape IDs or shape objects.
     */
   def addGroup(values: js.Array[String | Shape]): Shape = js.native
   
   /**
-    * Creates an image from a base64-encoded string and adds it to the worksheet. Returns the Shape object that represents the new image.
+    * Creates an image from a base64-encoded string and adds it to the worksheet. Returns the `Shape` object that represents the new image.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param base64ImageString A base64-encoded string representing an image in either JPEG or PNG format.
@@ -62,28 +66,31 @@ trait ShapeCollection
   def addImage(base64ImageString: String): Shape = js.native
   
   /**
-    * Adds a line to worksheet. Returns a Shape object that represents the new line.
+    * Adds a line to worksheet. Returns a `Shape` object that represents the new line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param startLeft The distance, in points, from the start of the line to the left side of the worksheet.
     * @param startTop The distance, in points, from the start of the line to the top of the worksheet.
     * @param endLeft The distance, in points, from the end of the line to the left of the worksheet.
     * @param endTop The distance, in points, from the end of the line to the top of the worksheet.
-    * @param connectorType Represents the connector type. See Excel.ConnectorType for details.
+    * @param connectorType Represents the connector type. See `Excel.ConnectorType` for details.
     */
   def addLine(startLeft: Double, startTop: Double, endLeft: Double, endTop: Double): Shape = js.native
+  def addLine(
+    startLeft: Double,
+    startTop: Double,
+    endLeft: Double,
+    endTop: Double,
+    connectorType: Straight | Elbow | Curve
+  ): Shape = js.native
   def addLine(startLeft: Double, startTop: Double, endLeft: Double, endTop: Double, connectorType: ConnectorType): Shape = js.native
-  @JSName("addLine")
-  def addLine_Curve(startLeft: Double, startTop: Double, endLeft: Double, endTop: Double, connectorType: Curve): Shape = js.native
-  @JSName("addLine")
-  def addLine_Elbow(startLeft: Double, startTop: Double, endLeft: Double, endTop: Double, connectorType: Elbow): Shape = js.native
-  @JSName("addLine")
-  def addLine_Straight(startLeft: Double, startTop: Double, endLeft: Double, endTop: Double, connectorType: Straight): Shape = js.native
   
   /**
-    * Adds a text box to the worksheet with the provided text as the content. Returns a Shape object that represents the new text box.
+    * Adds a text box to the worksheet with the provided text as the content. Returns a `Shape` object that represents the new text box.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param text Represents the text that will be shown in the created text box.
@@ -98,27 +105,42 @@ trait ShapeCollection
   /**
     * Returns the number of shapes in the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a shape using its Name or ID.
+    * Gets a shape using its name or ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
-    * @param key Name or ID of the shape to be retrieved.
+    * @param key The name or ID of the shape to be retrieved.
     */
   def getItem(key: String): Shape = js.native
   
   /**
     * Gets a shape using its position in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param index The zero-based index of the shape to be retrieved.
     */
   def getItemAt(index: Double): Shape = js.native
+  
+  /**
+    * Gets a shape using its name or ID.
+    If the shape object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.14]
+    *
+    * @param key The name or ID of the shape to be retrieved.
+    */
+  def getItemOrNullObject(key: String): Shape = js.native
   
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Shape] = js.native

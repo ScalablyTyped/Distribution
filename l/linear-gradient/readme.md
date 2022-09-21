@@ -10,10 +10,10 @@ Calculates the color representing a number based on the gradient supplied
 | ------------------ | :-------------: |
 | Full name          | linear-gradient |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 4414 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 865.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/karmadata/linear-gradient#readme)

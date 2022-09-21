@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaPrivateData extends StObject {
   
-  var referenceId: js.UndefOr[String] = js.undefined
+  var referenceId: js.UndefOr[String | Null] = js.undefined
   
-  var referencePayload: js.UndefOr[String] = js.undefined
+  var referencePayload: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPrivateData {
   
@@ -21,9 +21,13 @@ object SchemaPrivateData {
     
     inline def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     
+    inline def setReferenceIdNull: Self = StObject.set(x, "referenceId", null)
+    
     inline def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
     
     inline def setReferencePayload(value: String): Self = StObject.set(x, "referencePayload", value.asInstanceOf[js.Any])
+    
+    inline def setReferencePayloadNull: Self = StObject.set(x, "referencePayload", null)
     
     inline def setReferencePayloadUndefined: Self = StObject.set(x, "referencePayload", js.undefined)
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertEquationsCaptionCommand")
 @js.native
-class InsertEquationsCaptionCommand ()
+open class InsertEquationsCaptionCommand ()
   extends StObject
      with typings.devexpressWeb.InsertEquationsCaptionCommand {
   

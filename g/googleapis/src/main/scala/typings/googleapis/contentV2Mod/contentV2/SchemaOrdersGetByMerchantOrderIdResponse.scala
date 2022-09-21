@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrdersGetByMerchantOrderIdResponse extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#ordersGetByMerchantOrderIdResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "content#ordersGetByMerchantOrderIdResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The requested order.
@@ -27,6 +26,8 @@ object SchemaOrdersGetByMerchantOrderIdResponse {
   extension [Self <: SchemaOrdersGetByMerchantOrderIdResponse](x: Self) {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

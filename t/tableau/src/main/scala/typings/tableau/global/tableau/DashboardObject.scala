@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.DashboardObject")
 @js.native
-class DashboardObject ()
+open class DashboardObject ()
   extends StObject
      with typings.tableau.tableau.DashboardObject {
   

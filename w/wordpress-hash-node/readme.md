@@ -11,9 +11,9 @@ A phpass portable hashing function compatible with wordpress passwords
 | Full name          | wordpress-hash-node |
 | Keywords           | wordpress, phpass, hash |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 84228 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8074.666666666667 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/AlexAlbala/wordpress-hash-node)

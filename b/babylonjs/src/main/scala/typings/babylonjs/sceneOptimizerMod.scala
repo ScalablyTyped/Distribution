@@ -14,9 +14,8 @@ object sceneOptimizerMod {
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
-    * @param desc defines the description associated with the optimization
     */
-  class CustomOptimization () extends SceneOptimization {
+  open class CustomOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -41,7 +40,7 @@ object sceneOptimizerMod {
     * @param maximumScale defines the maximum scale to use (2 by default)
     * @param step defines the step to use between two passes (0.5 by default)
     */
-  class HardwareScalingOptimization () extends SceneOptimization {
+  open class HardwareScalingOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -123,9 +122,9 @@ object sceneOptimizerMod {
     step: Double
     ) = this()
     
-    /* private */ var _currentScale: js.Any = js.native
+    /* private */ var _currentScale: Any = js.native
     
-    /* private */ var _directionOffset: js.Any = js.native
+    /* private */ var _directionOffset: Any = js.native
     
     /**
       * Defines the maximum scale to use (2 by default)
@@ -143,9 +142,8 @@ object sceneOptimizerMod {
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
-    * @param desc defines the description associated with the optimization
     */
-  class LensFlaresOptimization () extends SceneOptimization {
+  open class LensFlaresOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -157,15 +155,14 @@ object sceneOptimizerMod {
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
-    * @param desc defines the description associated with the optimization
     */
-  class MergeMeshesOptimization () extends SceneOptimization {
+  open class MergeMeshesOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
     priority: Double) = this()
     
-    /* private */ var _canBeMerged: js.Any = js.native
+    /* private */ var _canBeMerged: Any = js.native
     
     @JSName("apply")
     def apply(scene: Scene, optimizer: SceneOptimizer, updateSelectionTree: Boolean): Boolean = js.native
@@ -179,8 +176,8 @@ object sceneOptimizerMod {
     
     @JSImport("babylonjs/Misc/sceneOptimizer", "MergeMeshesOptimization._UpdateSelectionTree")
     @js.native
-    def _UpdateSelectionTree: js.Any = js.native
-    inline def _UpdateSelectionTree_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
+    def _UpdateSelectionTree: Any = js.native
+    inline def _UpdateSelectionTree_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Misc/sceneOptimizer", "ParticlesOptimization")
@@ -188,9 +185,8 @@ object sceneOptimizerMod {
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
-    * @param desc defines the description associated with the optimization
     */
-  class ParticlesOptimization () extends SceneOptimization {
+  open class ParticlesOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -202,9 +198,8 @@ object sceneOptimizerMod {
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
-    * @param desc defines the description associated with the optimization
     */
-  class PostProcessesOptimization () extends SceneOptimization {
+  open class PostProcessesOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -216,9 +211,8 @@ object sceneOptimizerMod {
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
-    * @param desc defines the description associated with the optimization
     */
-  class RenderTargetsOptimization () extends SceneOptimization {
+  open class RenderTargetsOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -230,9 +224,8 @@ object sceneOptimizerMod {
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
-    * @param desc defines the description associated with the optimization
     */
-  class SceneOptimization () extends StObject {
+  open class SceneOptimization () extends StObject {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -261,7 +254,7 @@ object sceneOptimizerMod {
   
   @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer")
   @js.native
-  class SceneOptimizer protected ()
+  open class SceneOptimizer protected ()
     extends StObject
        with IDisposable {
     /**
@@ -290,25 +283,25 @@ object sceneOptimizerMod {
       improvementMode: Boolean
     ) = this()
     
-    /* private */ var _checkCurrentState: js.Any = js.native
+    /* private */ var _checkCurrentState: Any = js.native
     
-    /* private */ var _currentFrameRate: js.Any = js.native
+    /* private */ var _currentFrameRate: Any = js.native
     
-    /* private */ var _currentPriorityLevel: js.Any = js.native
+    /* private */ var _currentPriorityLevel: Any = js.native
     
-    /* private */ var _improvementMode: js.Any = js.native
+    /* private */ var _improvementMode: Any = js.native
     
-    /* private */ var _isRunning: js.Any = js.native
+    /* private */ var _isRunning: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _sceneDisposeObserver: js.Any = js.native
+    /* private */ var _sceneDisposeObserver: Any = js.native
     
-    /* private */ var _targetFrameRate: js.Any = js.native
+    /* private */ var _targetFrameRate: Any = js.native
     
-    /* private */ var _trackerDuration: js.Any = js.native
+    /* private */ var _trackerDuration: Any = js.native
     
     /**
       * Gets the current frame rate checked by the SceneOptimizer
@@ -327,9 +320,10 @@ object sceneOptimizerMod {
     override def dispose(): Unit = js.native
     
     /**
-      * Gets a boolean indicating if the optimizer is in improvement mode
+      * Gets or sets a boolean indicating if the optimizer is in improvement mode
       */
     def isInImprovementMode: Boolean = js.native
+    def isInImprovementMode_=(value: Boolean): Unit = js.native
     
     /**
       * Defines an observable called when the optimizer is not able to reach the target frame rate
@@ -358,7 +352,7 @@ object sceneOptimizerMod {
     
     /**
       * Start the optimizer. By default it will try to reach a specific framerate
-      * but if the optimizer is set with improvementMode === true then it will run all optimiatiation while frame rate is above the target frame rate
+      * but if the optimizer is set with improvementMode === true then it will run all optimization while frame rate is above the target frame rate
       */
     def start(): Unit = js.native
     
@@ -420,9 +414,9 @@ object sceneOptimizerMod {
   /**
     * Creates a new list of options used by SceneOptimizer
     * @param targetFrameRate defines the target frame rate to reach (60 by default)
-    * @param trackerDuration defines the interval between two checkes (2000ms by default)
+    * @param trackerDuration defines the interval between two checks (2000ms by default)
     */
-  class SceneOptimizerOptions () extends StObject {
+  open class SceneOptimizerOptions () extends StObject {
     def this(/**
       * Defines the target frame rate to reach (60 by default)
       */
@@ -433,7 +427,7 @@ object sceneOptimizerMod {
       */
     targetFrameRate: Double,
       /**
-      * Defines the interval between two checkes (2000ms by default)
+      * Defines the interval between two checks (2000ms by default)
       */
     trackerDuration: Double
     ) = this()
@@ -443,7 +437,7 @@ object sceneOptimizerMod {
       */
     targetFrameRate: Unit,
       /**
-      * Defines the interval between two checkes (2000ms by default)
+      * Defines the interval between two checks (2000ms by default)
       */
     trackerDuration: Double
     ) = this()
@@ -455,9 +449,12 @@ object sceneOptimizerMod {
       * @param priority defines the priority of this optimization (0 by default which means first in the list)
       * @returns the current SceneOptimizerOptions
       */
-    def addCustomOptimization(onApply: js.Function1[/* scene */ Scene, Boolean], onGetDescription: js.Function0[String]): SceneOptimizerOptions = js.native
     def addCustomOptimization(
-      onApply: js.Function1[/* scene */ Scene, Boolean],
+      onApply: js.Function2[/* scene */ Scene, /* optimizer */ SceneOptimizer, Boolean],
+      onGetDescription: js.Function0[String]
+    ): SceneOptimizerOptions = js.native
+    def addCustomOptimization(
+      onApply: js.Function2[/* scene */ Scene, /* optimizer */ SceneOptimizer, Boolean],
       onGetDescription: js.Function0[String],
       priority: Double
     ): SceneOptimizerOptions = js.native
@@ -480,7 +477,7 @@ object sceneOptimizerMod {
     var targetFrameRate: Double = js.native
     
     /**
-      * Defines the interval between two checkes (2000ms by default)
+      * Defines the interval between two checks (2000ms by default)
       */
     var trackerDuration: Double = js.native
   }
@@ -521,9 +518,8 @@ object sceneOptimizerMod {
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
-    * @param desc defines the description associated with the optimization
     */
-  class ShadowsOptimization () extends SceneOptimization {
+  open class ShadowsOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -538,7 +534,7 @@ object sceneOptimizerMod {
     * @param maximumSize defines the maximum sized allowed for textures (1024 is the default value). If a texture is bigger, it will be scaled down using a factor defined by the step parameter
     * @param step defines the factor (0.5 by default) used to scale down textures bigger than maximum sized allowed.
     */
-  class TextureOptimization () extends SceneOptimization {
+  open class TextureOptimization () extends SceneOptimization {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */

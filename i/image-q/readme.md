@@ -1,7 +1,7 @@
 
 # Scala.js typings for image-q
 
-Typings are for version 1.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Image Quantization Library in **TypeScript** *(MIT Licensed)*
@@ -10,13 +10,13 @@ Image Quantization Library in **TypeScript** *(MIT Licensed)*
 | ------------------ | :-------------: |
 | Full name          | image-q |
 | Keywords           | image, palette, quantization, quantizer, color, neuquant, rgbquant, xiaolin wu, cie94 distance, ciede2000, dithering, floyd-steinberg |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 8397032 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 3871624.6666666665 |
+| # stars            | 105.0 |
 
 ## Links
-- [Homepage](https://github.com/ibezkrovnyi/image-quantization)
+- [Homepage](https://github.com/ibezkrovnyi/image-quantization/tree/main/packages/image-q)
 - [Bugs](https://github.com/ibezkrovnyi/image-quantization/issues)
 - [Repository](https://github.com/ibezkrovnyi/image-quantization)
 - [Npm](https://www.npmjs.com/package/image-q)

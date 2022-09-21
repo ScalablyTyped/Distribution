@@ -21,5 +21,5 @@ trait Controls extends StObject {
   // tslint:disable-next-line:no-unnecessary-generics
   def Item[T](Index: Double): T = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

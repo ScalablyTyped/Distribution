@@ -11,7 +11,7 @@ trait MenuLauncher
 object MenuLauncher {
   
   inline def apply(
-    createComponentForDisplayMode: String => js.Any,
+    createComponentForDisplayMode: String => Any,
     dispose: () => scala.Unit,
     get_enabled: () => Boolean,
     get_id: () => String,

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientLogging.anon
 
-import typings.maximMazurokGapiClientLogging.gapi.client.logging.TailLogEntriesRequest
+import typings.maximMazurokGapiClientLogging.gapi.client.logging.CopyLogEntriesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +36,7 @@ trait CallbackFields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: TailLogEntriesRequest
+  var resource: CopyLogEntriesRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -46,7 +46,7 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(resource: TailLogEntriesRequest): CallbackFields = {
+  inline def apply(resource: CopyLogEntriesRequest): CallbackFields = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
@@ -89,7 +89,7 @@ object CallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: TailLogEntriesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CopyLogEntriesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

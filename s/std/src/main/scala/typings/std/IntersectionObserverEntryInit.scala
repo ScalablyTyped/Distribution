@@ -6,19 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IntersectionObserverEntryInit extends StObject {
   
+  /* standard dom */
   var boundingClientRect: DOMRectInit
   
+  /* standard dom */
   var intersectionRatio: Double
   
+  /* standard dom */
   var intersectionRect: DOMRectInit
   
+  /* standard dom */
   var isIntersecting: scala.Boolean
   
+  /* standard dom */
   var rootBounds: DOMRectInit | Null
   
+  /* standard dom */
   var target: Element
   
-  var time: Double
+  /* standard dom */
+  var time: DOMHighResTimeStamp
 }
 object IntersectionObserverEntryInit {
   
@@ -28,7 +35,7 @@ object IntersectionObserverEntryInit {
     intersectionRect: DOMRectInit,
     isIntersecting: scala.Boolean,
     target: Element,
-    time: Double
+    time: DOMHighResTimeStamp
   ): IntersectionObserverEntryInit = {
     val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], rootBounds = null)
     __obj.asInstanceOf[IntersectionObserverEntryInit]
@@ -50,6 +57,6 @@ object IntersectionObserverEntryInit {
     
     inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: DOMHighResTimeStamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

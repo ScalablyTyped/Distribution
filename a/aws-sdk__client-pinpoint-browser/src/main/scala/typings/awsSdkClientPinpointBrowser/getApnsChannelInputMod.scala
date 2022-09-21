@@ -8,5 +8,5 @@ object getApnsChannelInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetApnsChannelInput", "GetApnsChannelInput")
   @js.native
-  val GetApnsChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetApnsChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

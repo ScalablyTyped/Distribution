@@ -11,9 +11,9 @@ native js function for hashing messages with SHA-1
 | Full name          | sha1 |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 573 |
-| # downloads        | 5885483 |
-| # stars            | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 1041200.3333333334 |
+| # stars            | 99.0 |
 
 ## Links
 - [Homepage](https://github.com/pvorb/node-sha1)

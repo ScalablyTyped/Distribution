@@ -10,10 +10,10 @@ webcomponents.js
 | ------------------ | :-------------: |
 | Full name          | webcomponents.js |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 40 |
-| # downloads        | 564381 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 65809.0 |
+| # stars            | 3868.0 |
 
 ## Links
 - [Homepage](http://webcomponents.org)

@@ -6,50 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Start extends StObject {
   
-  /**
-    * 辅助框结束位置，值为原始数据值，支持 callback
-    */
-  var end: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
+  var end: X
   
-  /**
-    * 辅助框起始位置，值为原始数据值，支持 callback
-    */
-  var start: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
-  
-  var style: js.UndefOr[FillOpacity] = js.undefined
-  
-  /**
-    * 指定 giude 是否绘制在 canvas 最上层，默认为 false, 即绘制在最下层
-    */
-  var top: js.UndefOr[Boolean] = js.undefined
+  var start: X
 }
 object Start {
   
-  inline def apply(): Start = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(end: X, start: X): Start = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Start]
   }
   
   extension [Self <: Start](x: Self) {
     
-    inline def setEnd(value: js.Any | js.Function | (js.Array[String | Double])): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: X): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
-    
-    inline def setEndVarargs(value: (String | Double)*): Self = StObject.set(x, "end", js.Array(value :_*))
-    
-    inline def setStart(value: js.Any | js.Function | (js.Array[String | Double])): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
-    
-    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
-    
-    inline def setStartVarargs(value: (String | Double)*): Self = StObject.set(x, "start", js.Array(value :_*))
-    
-    inline def setStyle(value: FillOpacity): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-    
-    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-    
-    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-    
-    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,11 @@ trait AccessPoint extends StObject {
   var AccessPointArn: js.UndefOr[S3AccessPointArn] = js.undefined
   
   /**
+    * The name or alias of the access point.
+    */
+  var Alias: js.UndefOr[typings.awsSdk.s3controlMod.Alias] = js.undefined
+  
+  /**
     * The name of the bucket associated with this access point.
     */
   var Bucket: BucketName
@@ -27,7 +32,7 @@ trait AccessPoint extends StObject {
   var NetworkOrigin: typings.awsSdk.s3controlMod.NetworkOrigin
   
   /**
-    * The virtual private cloud (VPC) configuration for this access point, if one exists.
+    * The virtual private cloud (VPC) configuration for this access point, if one exists.  This element is empty if this access point is an Amazon S3 on Outposts access point that is used by other Amazon Web Services. 
     */
   var VpcConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.VpcConfiguration] = js.undefined
 }
@@ -43,6 +48,10 @@ object AccessPoint {
     inline def setAccessPointArn(value: S3AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
     
     inline def setAccessPointArnUndefined: Self = StObject.set(x, "AccessPointArn", js.undefined)
+    
+    inline def setAlias(value: Alias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

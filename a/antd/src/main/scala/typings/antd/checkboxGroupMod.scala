@@ -4,8 +4,11 @@ import org.scalablytyped.runtime.Shortcut
 import typings.antd.checkboxCheckboxMod.CheckboxChangeEvent
 import typings.react.mod.CSSProperties
 import typings.react.mod.Context
-import typings.react.mod.NamedExoticComponent
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.MemoExoticComponent
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +17,7 @@ object checkboxGroupMod extends Shortcut {
   
   @JSImport("antd/lib/checkbox/Group", JSImport.Default)
   @js.native
-  val default: NamedExoticComponent[CheckboxGroupProps] = js.native
+  val default: MemoExoticComponent[ForwardRefExoticComponent[CheckboxGroupProps & RefAttributes[HTMLDivElement]]] = js.native
   
   @JSImport("antd/lib/checkbox/Group", "GroupContext")
   @js.native
@@ -26,7 +29,7 @@ object checkboxGroupMod extends Shortcut {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.UndefOr[js.Array[CheckboxOptionType | String]] = js.undefined
+    var options: js.UndefOr[js.Array[CheckboxOptionType | String | Double]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -49,11 +52,11 @@ object checkboxGroupMod extends Shortcut {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setOptions(value: js.Array[CheckboxOptionType | String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[CheckboxOptionType | String | Double]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: (CheckboxOptionType | String)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (CheckboxOptionType | String | Double)*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -77,7 +80,7 @@ object checkboxGroupMod extends Shortcut {
     
     var toggleOption: js.UndefOr[js.Function1[/* option */ CheckboxOptionType, Unit]] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object CheckboxGroupContext {
     
@@ -104,7 +107,7 @@ object checkboxGroupMod extends Shortcut {
       
       inline def setToggleOptionUndefined: Self = StObject.set(x, "toggleOption", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -141,7 +144,7 @@ object checkboxGroupMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: CheckboxValueType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: CheckboxValueType*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,7 @@ object checkboxGroupMod extends Shortcut {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: CheckboxValueType*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: CheckboxValueType*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -202,8 +205,8 @@ object checkboxGroupMod extends Shortcut {
   
   type CheckboxValueType = String | Double | Boolean
   
-  type _To = NamedExoticComponent[CheckboxGroupProps]
+  type _To = MemoExoticComponent[ForwardRefExoticComponent[CheckboxGroupProps & RefAttributes[HTMLDivElement]]]
   
   /* This means you don't have to write `default`, but can instead just say `checkboxGroupMod.foo` */
-  override def _to: NamedExoticComponent[CheckboxGroupProps] = default
+  override def _to: MemoExoticComponent[ForwardRefExoticComponent[CheckboxGroupProps & RefAttributes[HTMLDivElement]]] = default
 }

@@ -15,20 +15,12 @@ object fixUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getCellFixedInfo_ltr(
+  inline def getCellFixedInfo(
     colStart: Double,
     colEnd: Double,
     columns: js.Array[Fixed],
     stickyOffsets: StickyOffsets,
-    direction: ltr
-  ): FixedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellFixedInfo")(colStart.asInstanceOf[js.Any], colEnd.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], stickyOffsets.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[FixedInfo]
-  
-  inline def getCellFixedInfo_rtl(
-    colStart: Double,
-    colEnd: Double,
-    columns: js.Array[Fixed],
-    stickyOffsets: StickyOffsets,
-    direction: rtl
+    direction: ltr | rtl
   ): FixedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellFixedInfo")(colStart.asInstanceOf[js.Any], colEnd.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], stickyOffsets.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[FixedInfo]
   
   trait FixedInfo extends StObject {

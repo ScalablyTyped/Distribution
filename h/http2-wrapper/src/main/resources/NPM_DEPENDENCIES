@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "http2-wrapper" : "2.1.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "http2-wrapper" : "2.1.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,26 +1,41 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.baiduApp.anon.Cursor
+import typings.baiduApp.anon.Instantiable
+import typings.baiduApp.anon.Value
+import typings.baiduApp.baiduAppStrings.form
+import typings.baiduApp.baiduAppStrings.input
+import typings.baiduApp.baiduAppStrings.scroll
+import typings.baiduApp.baiduAppStrings.tap
+import typings.baiduApp.baiduAppStrings.touchcancel
+import typings.baiduApp.baiduAppStrings.touchend
+import typings.baiduApp.baiduAppStrings.touchforcechange
+import typings.baiduApp.baiduAppStrings.touchmove
+import typings.baiduApp.baiduAppStrings.touchstart
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccelerometerChangeCallback = js.Function1[/* res */ typings.baiduApp.swan.AccelerometerData, scala.Unit]
+type AccelerometerChangeCallback = js.Function1[/* res */ AccelerometerData, Unit]
 
-type ArrayPropsDefinition[T] = js.Array[/* keyof T */ java.lang.String]
+type ArrayPropsDefinition[T] = js.Array[/* keyof T */ String]
 
-type BuiltInEvent[T /* <: typings.baiduApp.swan.EventType */, Detail] = typings.baiduApp.swan.BaseEvent[T, Detail]
+type BuiltInEvent[T /* <: EventType */, Detail] = BaseEvent[T, Detail]
 
-type CheckSessionOption = typings.baiduApp.swan.BaseOptions[js.Any, js.Any]
+type CheckSessionOption = BaseOptions[Any, Any]
 
 // CombinedInstance models the `this`, i.e. instance type for (user defined) component
-type CombinedInstance[Instance /* <: typings.baiduApp.swan.Component[Data, Props] */, Data, Methods, Props] = Methods & Instance
+type CombinedInstance[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = Methods & Instance
 
-type CompassChangeCallback = js.Function1[/* res */ typings.baiduApp.swan.CompassData, scala.Unit]
+type CompassChangeCallback = js.Function1[/* res */ CompassData, Unit]
 
-type CompassOptions = typings.baiduApp.swan.BaseOptions[js.Any, js.Any]
+type CompassOptions = BaseOptions[Any, Any]
 
-type CustomEvent[T /* <: java.lang.String */, Detail] = typings.baiduApp.swan.BaseEvent[T, Detail]
+type CustomEvent[T /* <: String */, Detail] = BaseEvent[T, Detail]
 
 /**
   * There are two valid ways to define the type of data / properties:
@@ -33,51 +48,51 @@ type CustomEvent[T /* <: java.lang.String */, Detail] = typings.baiduApp.swan.Ba
   * Note this is different from PropOptions as it is the definitions you passed to Component function
   * whereas this type is for call-site.
   */
-type DataValueType[Def] = js.Any
+type DataValueType[Def] = Any
 
 // #endregion
 // #region Compontent组件
 type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
 
-type DefaultMethods[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
+type DefaultMethods[V] = StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ Any, Any]]
 
-type DefaultProps = js.Object | (typings.std.Record[java.lang.String, js.Any])
+type DefaultProps = js.Object | (Record[String, Any])
 
-type ExtendedComponent[Instance /* <: typings.baiduApp.swan.Component[Data, Props] */, Data, Methods, Props] = (typings.baiduApp.swan.CombinedInstance[Instance, Data, Methods, Props]) & (typings.baiduApp.swan.Component[Data, Props])
+type ExtendedComponent[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = (CombinedInstance[Instance, Data, Methods, Props]) & (Component[Data, Props])
 
-type FormEvent = typings.baiduApp.swan.BuiltInEvent[typings.baiduApp.baiduAppStrings.form, typings.baiduApp.anon.Value]
+type FormEvent = BuiltInEvent[form, Value]
 
 /**
   * 指定focus时的光标位置
   * @version 1.5.0
   */
-type InputEvent = typings.baiduApp.swan.BuiltInEvent[typings.baiduApp.baiduAppStrings.input, typings.baiduApp.anon.Cursor]
+type InputEvent = BuiltInEvent[input, Cursor]
 
-type Prop[T] = js.Function0[T] | typings.baiduApp.anon.Instantiable[T]
+type Prop[T] = js.Function0[T] | Instantiable[T]
 
-type PropValidator[T] = typings.baiduApp.swan.PropOptions[T] | typings.baiduApp.swan.Prop[T] | js.Array[typings.baiduApp.swan.Prop[T]]
+type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
 
-type PropsDefinition[T] = typings.baiduApp.swan.ArrayPropsDefinition[T] | typings.baiduApp.swan.RecordPropsDefinition[T]
+type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
 
 type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]: baidu-app.swan.PropValidator<T[K]>}
-  */ typings.baiduApp.baiduAppStrings.RecordPropsDefinition & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.baiduApp.baiduAppStrings.RecordPropsDefinition & TopLevel[T]
 
 // #endregion
 // #region 网络API列表
 // 发起请求
-type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type RequestHeader = StringDictionary[String]
 
-type ScrollEvent = typings.baiduApp.swan.BuiltInEvent[typings.baiduApp.baiduAppStrings.scroll, js.Object]
+type ScrollEvent = BuiltInEvent[scroll, js.Object]
 
-type TapEvent = typings.baiduApp.swan.TouchEvent[typings.baiduApp.baiduAppStrings.tap]
+type TapEvent = TouchEvent[tap]
 
-type TouchCancelEvent = typings.baiduApp.swan.TouchEvent[typings.baiduApp.baiduAppStrings.touchcancel]
+type TouchCancelEvent = TouchEvent[touchcancel]
 
-type TouchEndEvent = typings.baiduApp.swan.TouchEvent[typings.baiduApp.baiduAppStrings.touchend]
+type TouchEndEvent = TouchEvent[touchend]
 
-type TouchForceChangeEvent = typings.baiduApp.swan.TouchEvent[typings.baiduApp.baiduAppStrings.touchforcechange]
+type TouchForceChangeEvent = TouchEvent[touchforcechange]
 
-type TouchMoveEvent = typings.baiduApp.swan.TouchEvent[typings.baiduApp.baiduAppStrings.touchmove]
+type TouchMoveEvent = TouchEvent[touchmove]
 
-type TouchStartEvent = typings.baiduApp.swan.TouchEvent[typings.baiduApp.baiduAppStrings.touchstart]
+type TouchStartEvent = TouchEvent[touchstart]

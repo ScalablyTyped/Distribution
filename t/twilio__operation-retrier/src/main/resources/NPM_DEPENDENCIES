@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@twilio/operation-retrier" : "4.0.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@twilio/operation-retrier" : "4.0.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

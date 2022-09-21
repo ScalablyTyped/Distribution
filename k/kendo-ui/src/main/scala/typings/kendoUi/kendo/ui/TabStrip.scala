@@ -15,7 +15,7 @@ trait TabStrip
   
   def activateTab(item: JQuery): Unit = js.native
   
-  def append(tab: js.Any): TabStrip = js.native
+  def append(tab: Any): TabStrip = js.native
   
   def contentElement(itemIndex: Double): Element = js.native
   
@@ -39,9 +39,9 @@ trait TabStrip
   def insertAfter(item: String, referenceTab: String): TabStrip = js.native
   def insertAfter(item: String, referenceTab: JQuery): TabStrip = js.native
   def insertAfter(item: String, referenceTab: Element): TabStrip = js.native
-  def insertAfter(item: js.Any, referenceTab: String): TabStrip = js.native
-  def insertAfter(item: js.Any, referenceTab: JQuery): TabStrip = js.native
-  def insertAfter(item: js.Any, referenceTab: Element): TabStrip = js.native
+  def insertAfter(item: Any, referenceTab: String): TabStrip = js.native
+  def insertAfter(item: Any, referenceTab: JQuery): TabStrip = js.native
+  def insertAfter(item: Any, referenceTab: Element): TabStrip = js.native
   def insertAfter(item: JQuery, referenceTab: String): TabStrip = js.native
   def insertAfter(item: JQuery, referenceTab: JQuery): TabStrip = js.native
   def insertAfter(item: JQuery, referenceTab: Element): TabStrip = js.native
@@ -52,9 +52,9 @@ trait TabStrip
   def insertBefore(item: String, referenceTab: String): TabStrip = js.native
   def insertBefore(item: String, referenceTab: JQuery): TabStrip = js.native
   def insertBefore(item: String, referenceTab: Element): TabStrip = js.native
-  def insertBefore(item: js.Any, referenceTab: String): TabStrip = js.native
-  def insertBefore(item: js.Any, referenceTab: JQuery): TabStrip = js.native
-  def insertBefore(item: js.Any, referenceTab: Element): TabStrip = js.native
+  def insertBefore(item: Any, referenceTab: String): TabStrip = js.native
+  def insertBefore(item: Any, referenceTab: JQuery): TabStrip = js.native
+  def insertBefore(item: Any, referenceTab: Element): TabStrip = js.native
   def insertBefore(item: JQuery, referenceTab: String): TabStrip = js.native
   def insertBefore(item: JQuery, referenceTab: JQuery): TabStrip = js.native
   def insertBefore(item: JQuery, referenceTab: Element): TabStrip = js.native
@@ -81,7 +81,7 @@ trait TabStrip
   def select(element: JQuery): Unit = js.native
   def select(element: Element): Unit = js.native
   
-  def setDataSource(dataSource: js.Any): Unit = js.native
+  def setDataSource(dataSource: Any): Unit = js.native
   def setDataSource(dataSource: DataSource): Unit = js.native
   
   var tabGroup: JQuery = js.native

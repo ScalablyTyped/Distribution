@@ -17,8 +17,7 @@ object utilsMod {
   inline def arrayify[T](obj: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def arrayify[T](obj: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  inline def debounce[F /* <: js.Function */](func: F, wait: Double): js.ThisFunction0[/* this */ js.Function, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction0[/* this */ js.Function, Unit]]
-  inline def debounce[F /* <: js.Function */](func: F, wait: Double, immediate: Boolean): js.ThisFunction0[/* this */ js.Function, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction0[/* this */ js.Function, Unit]]
+  inline def debounce[F /* <: js.Function */](fn: F, wait: Double): js.ThisFunction0[/* this */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction0[/* this */ Any, Unit]]
   
   inline def int(bool: Boolean): `1` | `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("int")(bool.asInstanceOf[js.Any]).asInstanceOf[`1` | `0`]
   

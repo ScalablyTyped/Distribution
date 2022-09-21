@@ -22,6 +22,6 @@ object GetMappingResponse {
     
     inline def setMapping(value: MappingList): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
     
-    inline def setMappingVarargs(value: MappingEntry*): Self = StObject.set(x, "Mapping", js.Array(value :_*))
+    inline def setMappingVarargs(value: MappingEntry*): Self = StObject.set(x, "Mapping", js.Array(value*))
   }
 }

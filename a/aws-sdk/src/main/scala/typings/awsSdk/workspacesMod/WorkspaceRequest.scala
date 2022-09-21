@@ -12,7 +12,7 @@ trait WorkspaceRequest extends StObject {
   var BundleId: typings.awsSdk.workspacesMod.BundleId
   
   /**
-    * The identifier of the AWS Directory Service directory for the WorkSpace. You can use DescribeWorkspaceDirectories to list the available directories.
+    * The identifier of the Directory Service directory for the WorkSpace. You can use DescribeWorkspaceDirectories to list the available directories.
     */
   var DirectoryId: typings.awsSdk.workspacesMod.DirectoryId
   
@@ -27,7 +27,7 @@ trait WorkspaceRequest extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The user name of the user for the WorkSpace. This user name must exist in the AWS Directory Service directory for the WorkSpace.
+    * The user name of the user for the WorkSpace. This user name must exist in the Directory Service directory for the WorkSpace.
     */
   var UserName: typings.awsSdk.workspacesMod.UserName
   
@@ -37,7 +37,7 @@ trait WorkspaceRequest extends StObject {
   var UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
-    * The symmetric AWS KMS customer master key (CMK) used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric CMKs.
+    * The symmetric KMS key used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric KMS keys.
     */
   var VolumeEncryptionKey: js.UndefOr[typings.awsSdk.workspacesMod.VolumeEncryptionKey] = js.undefined
   
@@ -67,7 +67,7 @@ object WorkspaceRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     

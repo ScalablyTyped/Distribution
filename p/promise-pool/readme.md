@@ -9,10 +9,10 @@ just another simple task pool based on promise (Q).
 | ------------------ | :-------------: |
 | Full name          | promise-pool |
 | Keywords           | task, pool, promise, concurrency |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2624 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 399.6666666666667 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/vilic/promise-pool)

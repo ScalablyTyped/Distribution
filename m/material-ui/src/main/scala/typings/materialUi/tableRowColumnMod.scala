@@ -10,10 +10,10 @@ object tableRowColumnMod {
   
   @JSImport("material-ui/Table/TableRowColumn", JSImport.Default)
   @js.native
-  class default () extends TableRowColumn
+  open class default () extends TableRowColumn
   
   @JSImport("material-ui/Table/TableRowColumn", "TableRowColumn")
   @js.native
-  class TableRowColumn ()
-    extends Component[TableRowColumnProps, js.Object, js.Any]
+  open class TableRowColumn ()
+    extends Component[TableRowColumnProps, js.Object, Any]
 }

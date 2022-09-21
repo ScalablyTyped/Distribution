@@ -32,7 +32,7 @@ trait Consequence extends StObject {
     * Custom JSON object that will be appended to the userData array in the response.
     * This object is not interpreted by the API. It is limited to 1kB of minified JSON.
     */
-  val userData: js.UndefOr[js.Any] = js.undefined
+  val userData: js.UndefOr[Any] = js.undefined
 }
 object Consequence {
   
@@ -51,7 +51,7 @@ object Consequence {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setHideVarargs(value: ObjectID*): Self = StObject.set(x, "hide", js.Array(value :_*))
+    inline def setHideVarargs(value: ObjectID*): Self = StObject.set(x, "hide", js.Array(value*))
     
     inline def setParams(value: ConsequenceParamsPickSear): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
@@ -61,9 +61,9 @@ object Consequence {
     
     inline def setPromoteUndefined: Self = StObject.set(x, "promote", js.undefined)
     
-    inline def setPromoteVarargs(value: ConsequencePromote*): Self = StObject.set(x, "promote", js.Array(value :_*))
+    inline def setPromoteVarargs(value: ConsequencePromote*): Self = StObject.set(x, "promote", js.Array(value*))
     
-    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }

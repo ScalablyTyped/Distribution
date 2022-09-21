@@ -43,9 +43,9 @@ object mod {
   
   inline def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def join(paths: (js.Any | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def join(paths: (Any | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
-  inline def joinSafe(p: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinSafe")(p.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def joinSafe(p: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinSafe")(p.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   inline def normalize(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -77,7 +77,7 @@ object mod {
     
     inline def isAbsolute(p: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def join(paths: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(paths: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     inline def normalize(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(p.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -85,7 +85,7 @@ object mod {
     
     inline def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def resolve(pathSegments: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def resolve(pathSegments: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     @JSImport("upath", "posix.sep")
     @js.native
@@ -97,7 +97,7 @@ object mod {
   
   inline def removeExt(filename: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeExt")(filename.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def resolve(pathSegments: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolve(pathSegments: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   @JSImport("upath", "sep")
   @js.native
@@ -133,7 +133,7 @@ object mod {
     
     inline def isAbsolute(p: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def join(paths: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(paths: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     inline def normalize(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(p.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -141,7 +141,7 @@ object mod {
     
     inline def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def resolve(pathSegments: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def resolve(pathSegments: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(pathSegments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     @JSImport("upath", "win32.sep")
     @js.native

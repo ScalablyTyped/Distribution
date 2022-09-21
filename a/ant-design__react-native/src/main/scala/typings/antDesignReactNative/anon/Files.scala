@@ -25,7 +25,7 @@ object Files {
     
     inline def setFiles(value: js.Array[scala.Nothing]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: scala.Nothing*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: scala.Nothing*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     

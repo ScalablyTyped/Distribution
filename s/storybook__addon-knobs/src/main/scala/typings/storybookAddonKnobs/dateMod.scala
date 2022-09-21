@@ -14,7 +14,7 @@ object dateMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/types/Date", JSImport.Default)
   @js.native
-  class default () extends DateType
+  open class default () extends DateType
   /* static members */
   object default {
     
@@ -40,17 +40,16 @@ object dateMod {
   }
   
   @js.native
-  trait DateType
-    extends Component[DateTypeProps, DateTypeState, js.Any] {
+  trait DateType extends Component[DateTypeProps, DateTypeState, Any] {
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDateType(): Unit = js.native
     
     var dateInput: HTMLInputElement = js.native
     
-    /* private */ var onDateChange: js.Any = js.native
+    /* private */ var onDateChange: Any = js.native
     
-    /* private */ var onTimeChange: js.Any = js.native
+    /* private */ var onTimeChange: Any = js.native
     
     var timeInput: HTMLInputElement = js.native
   }

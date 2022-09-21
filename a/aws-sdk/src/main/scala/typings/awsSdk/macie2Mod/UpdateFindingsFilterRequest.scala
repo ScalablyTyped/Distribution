@@ -12,7 +12,12 @@ trait UpdateFindingsFilterRequest extends StObject {
   var action: js.UndefOr[FindingsFilterAction] = js.undefined
   
   /**
-    * A custom description of the filter. The description can contain as many as 512 characters. We strongly recommend that you avoid including any sensitive data in the description of a filter. Other users might be able to see the filter's description, depending on the actions that they're allowed to perform in Amazon Macie.
+    * A unique, case-sensitive token that you provide to ensure the idempotency of the request.
+    */
+  var clientToken: js.UndefOr[string] = js.undefined
+  
+  /**
+    * A custom description of the filter. The description can contain as many as 512 characters. We strongly recommend that you avoid including any sensitive data in the description of a filter. Other users might be able to see this description, depending on the actions that they're allowed to perform in Amazon Macie.
     */
   var description: js.UndefOr[string] = js.undefined
   
@@ -22,12 +27,12 @@ trait UpdateFindingsFilterRequest extends StObject {
   var findingCriteria: js.UndefOr[FindingCriteria] = js.undefined
   
   /**
-    * The unique identifier for the Amazon Macie resource or account that the request applies to.
+    * The unique identifier for the Amazon Macie resource that the request applies to.
     */
   var id: string
   
   /**
-    * A custom name for the filter. The name must contain at least 3 characters and can contain as many as 64 characters. We strongly recommend that you avoid including any sensitive data in the name of a filter. Other users might be able to see the filter's name, depending on the actions that they're allowed to perform in Amazon Macie.
+    * A custom name for the filter. The name must contain at least 3 characters and can contain as many as 64 characters. We strongly recommend that you avoid including any sensitive data in the name of a filter. Other users might be able to see this name, depending on the actions that they're allowed to perform in Amazon Macie.
     */
   var name: js.UndefOr[string] = js.undefined
   
@@ -48,6 +53,10 @@ object UpdateFindingsFilterRequest {
     inline def setAction(value: FindingsFilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     inline def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

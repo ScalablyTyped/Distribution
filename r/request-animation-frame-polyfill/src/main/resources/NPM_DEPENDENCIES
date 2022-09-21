@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "request-animation-frame-polyfill" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "request-animation-frame-polyfill" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

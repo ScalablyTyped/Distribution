@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.mod.ClassDeclaration
   - typings.estree.mod.ClassExpression
 */
-trait Class
-  extends StObject
-     with Node
+trait Class extends StObject
 object Class {
   
   inline def ClassDeclaration(body: ClassBody): typings.estree.mod.ClassDeclaration = {

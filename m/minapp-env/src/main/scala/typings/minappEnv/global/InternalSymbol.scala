@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InternalSymbol")
 @js.native
-class InternalSymbol ()
+open class InternalSymbol ()
   extends StObject
      with typings.minappEnv.InternalSymbol

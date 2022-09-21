@@ -33,7 +33,7 @@ trait XController
     * provides access to current view status
     * @returns set of data that can be used to restore the current view status at later time by using {@link XController.restoreViewData()}
     */
-  val ViewData: js.Any
+  val ViewData: Any
   
   /**
     * is called to attach the controller with its managing frame.
@@ -64,13 +64,13 @@ trait XController
     * provides access to current view status
     * @returns set of data that can be used to restore the current view status at later time by using {@link XController.restoreViewData()}
     */
-  def getViewData(): js.Any
+  def getViewData(): Any
   
   /**
     * restores the view status using the data gotten from a previous call to {@link XController.getViewData()} .
     * @param Data set of data to restore it
     */
-  def restoreViewData(Data: js.Any): Unit
+  def restoreViewData(Data: Any): Unit
   
   /**
     * is called to prepare the controller for closing the view
@@ -84,7 +84,7 @@ object XController {
   inline def apply(
     Frame: XFrame,
     Model: XModel,
-    ViewData: js.Any,
+    ViewData: Any,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     attachFrame: XFrame => Unit,
@@ -92,11 +92,11 @@ object XController {
     dispose: () => Unit,
     getFrame: () => XFrame,
     getModel: () => XModel,
-    getViewData: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getViewData: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
-    restoreViewData: js.Any => Unit,
+    restoreViewData: Any => Unit,
     suspend: Boolean => Boolean
   ): XController = {
     val __obj = js.Dynamic.literal(Frame = Frame.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getViewData = js.Any.fromFunction0(getViewData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))
@@ -115,14 +115,14 @@ object XController {
     
     inline def setGetModel(value: () => XModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
-    inline def setGetViewData(value: () => js.Any): Self = StObject.set(x, "getViewData", js.Any.fromFunction0(value))
+    inline def setGetViewData(value: () => Any): Self = StObject.set(x, "getViewData", js.Any.fromFunction0(value))
     
     inline def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    inline def setRestoreViewData(value: js.Any => Unit): Self = StObject.set(x, "restoreViewData", js.Any.fromFunction1(value))
+    inline def setRestoreViewData(value: Any => Unit): Self = StObject.set(x, "restoreViewData", js.Any.fromFunction1(value))
     
     inline def setSuspend(value: Boolean => Boolean): Self = StObject.set(x, "suspend", js.Any.fromFunction1(value))
     
-    inline def setViewData(value: js.Any): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
+    inline def setViewData(value: Any): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
   }
 }

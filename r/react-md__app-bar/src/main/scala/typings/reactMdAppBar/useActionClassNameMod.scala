@@ -25,8 +25,8 @@ object useActionClassNameMod {
     
     /**
       * Boolean if this is the first action within the app bar. This is really just
-      * used to automatically right-align all the actions by applying `margin-left:
-      * auto` to this action.
+      * used to automatically right-align all the actions by applying
+      * `margin-left: auto` to this action.
       */
     var first: js.UndefOr[Boolean] = js.undefined
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientImageSliderItemEventArgs")
 @js.native
-class ASPxClientImageSliderItemEventArgs protected ()
+open class ASPxClientImageSliderItemEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientImageSliderItemEventArgs {
   /**

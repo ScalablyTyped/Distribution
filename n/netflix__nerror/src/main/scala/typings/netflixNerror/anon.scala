@@ -7,7 +7,6 @@ import typings.netflixNerror.mod.VError
 import typings.netflixNerror.mod.VError.Info
 import typings.netflixNerror.mod.VError.MultiError
 import typings.netflixNerror.mod.VError.Options
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,9 @@ object anon {
   trait Instantiable
     extends StObject
        with Instantiable3[
-          (/* options */ Error) | (/* options */ Options), 
+          (/* options */ js.Error) | (/* options */ Options), 
           /* message */ String, 
-          /* params (repeated) */ js.Any, 
+          /* params (repeated) */ Any, 
           VError
         ] {
     
@@ -30,7 +29,7 @@ object anon {
       * contained in this object, but may also just treat it as a normal single
       * error, in which case a summary message will be printed.
       */
-    var MultiError: Instantiable1[/* errors */ js.Array[Error], typings.netflixNerror.mod.VError.MultiError] = js.native
+    var MultiError: Instantiable1[/* errors */ js.Array[js.Error], typings.netflixNerror.mod.VError.MultiError] = js.native
     
     /*
       * PError is like VError, but the message is not run through printf-style
@@ -53,18 +52,18 @@ object anon {
       */
     var WError: Instantiable0[typings.netflixNerror.mod.VError.WError] = js.native
     
-    def cause(err: Error): Error | Null = js.native
+    def cause(err: js.Error): js.Error | Null = js.native
     
-    def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def errorForEach(err: js.Error, func: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
-    def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = js.native
+    def errorFromList[T /* <: js.Error */](errors: js.Array[T]): Null | T | MultiError = js.native
     
-    def findCauseByName(err: Error, name: String): Error | Null = js.native
+    def findCauseByName(err: js.Error, name: String): js.Error | Null = js.native
     
-    def fullStack(err: Error): String = js.native
+    def fullStack(err: js.Error): String = js.native
     
-    def hasCauseWithName(err: Error, name: String): Boolean = js.native
+    def hasCauseWithName(err: js.Error, name: String): Boolean = js.native
     
-    def info(err: Error): Info = js.native
+    def info(err: js.Error): Info = js.native
   }
 }

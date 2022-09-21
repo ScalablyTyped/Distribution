@@ -34,28 +34,28 @@ object RectEncodeEntry {
     
     inline def setCornerRadiusBottomLeftUndefined: Self = StObject.set(x, "cornerRadiusBottomLeft", js.undefined)
     
-    inline def setCornerRadiusBottomLeftVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadiusBottomLeft", js.Array(value :_*))
+    inline def setCornerRadiusBottomLeftVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadiusBottomLeft", js.Array(value*))
     
     inline def setCornerRadiusBottomRight(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "cornerRadiusBottomRight", value.asInstanceOf[js.Any])
     
     inline def setCornerRadiusBottomRightUndefined: Self = StObject.set(x, "cornerRadiusBottomRight", js.undefined)
     
-    inline def setCornerRadiusBottomRightVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadiusBottomRight", js.Array(value :_*))
+    inline def setCornerRadiusBottomRightVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadiusBottomRight", js.Array(value*))
     
     inline def setCornerRadiusTopLeft(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "cornerRadiusTopLeft", value.asInstanceOf[js.Any])
     
     inline def setCornerRadiusTopLeftUndefined: Self = StObject.set(x, "cornerRadiusTopLeft", js.undefined)
     
-    inline def setCornerRadiusTopLeftVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadiusTopLeft", js.Array(value :_*))
+    inline def setCornerRadiusTopLeftVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadiusTopLeft", js.Array(value*))
     
     inline def setCornerRadiusTopRight(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "cornerRadiusTopRight", value.asInstanceOf[js.Any])
     
     inline def setCornerRadiusTopRightUndefined: Self = StObject.set(x, "cornerRadiusTopRight", js.undefined)
     
-    inline def setCornerRadiusTopRightVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadiusTopRight", js.Array(value :_*))
+    inline def setCornerRadiusTopRightVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadiusTopRight", js.Array(value*))
     
     inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
-    inline def setCornerRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadius", js.Array(value :_*))
+    inline def setCornerRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadius", js.Array(value*))
   }
 }

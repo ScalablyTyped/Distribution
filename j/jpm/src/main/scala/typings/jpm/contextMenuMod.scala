@@ -25,7 +25,7 @@ object contextMenuMod {
     
     var context: ItemContext
     
-    var data: js.Any
+    var data: Any
     
     def destroy(): Unit
     
@@ -49,15 +49,15 @@ object contextMenuMod {
       
       inline def setContentScriptFileUndefined: Self = StObject.set(x, "contentScriptFile", js.undefined)
       
-      inline def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value :_*))
+      inline def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value*))
       
       inline def setContentScriptUndefined: Self = StObject.set(x, "contentScript", js.undefined)
       
-      inline def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value :_*))
+      inline def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value*))
       
       inline def setContext(value: ItemContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -109,9 +109,9 @@ object contextMenuMod {
       
       inline def setContentScriptFile(value: String | js.Array[String]): Self = StObject.set(x, "contentScriptFile", value.asInstanceOf[js.Any])
       
-      inline def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value :_*))
+      inline def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value*))
       
-      inline def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value :_*))
+      inline def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value*))
       
       inline def setContext(value: ItemContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -121,7 +121,7 @@ object contextMenuMod {
       
       inline def setItems(value: js.Array[ItemMenuSeparator]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: ItemMenuSeparator*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ItemMenuSeparator*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -239,7 +239,7 @@ object contextMenuMod {
   trait ItemMenuSeparator extends StObject
   object ItemMenuSeparator {
     
-    inline def Item(context: ItemContext, data: js.Any, destroy: () => Unit, image: String | URL, label: String): typings.jpm.contextMenuMod.Item = {
+    inline def Item(context: ItemContext, data: Any, destroy: () => Unit, image: String | URL, label: String): typings.jpm.contextMenuMod.Item = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), image = image.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jpm.contextMenuMod.Item]
     }

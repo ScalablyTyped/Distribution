@@ -37,6 +37,6 @@ object GrantPermissionsRequest {
     
     inline def setPermissions(value: js.Array[PermissionType]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    inline def setPermissionsVarargs(value: PermissionType*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: PermissionType*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

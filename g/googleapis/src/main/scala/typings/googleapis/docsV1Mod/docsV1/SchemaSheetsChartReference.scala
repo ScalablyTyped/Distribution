@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A reference to a linked chart embedded from Google Sheets.
-  */
 trait SchemaSheetsChartReference extends StObject {
   
   /**
-    * The ID of the specific chart in the Google Sheets spreadsheet that is
-    * embedded.
+    * The ID of the specific chart in the Google Sheets spreadsheet that is embedded.
     */
-  var chartId: js.UndefOr[Double] = js.undefined
+  var chartId: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The ID of the Google Sheets spreadsheet that contains the source chart.
     */
-  var spreadsheetId: js.UndefOr[String] = js.undefined
+  var spreadsheetId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSheetsChartReference {
   
@@ -31,9 +27,13 @@ object SchemaSheetsChartReference {
     
     inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
+    inline def setChartIdNull: Self = StObject.set(x, "chartId", null)
+    
     inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadsheetIdNull: Self = StObject.set(x, "spreadsheetId", null)
     
     inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
   }

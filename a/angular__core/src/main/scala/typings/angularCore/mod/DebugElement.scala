@@ -1,93 +1,105 @@
 package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DebugElement
-  extends StObject
-     with DebugNode {
+@JSImport("@angular/core", "DebugElement")
+@js.native
+open class DebugElement protected () extends DebugNode {
+  def this(nativeNode: Element) = this()
   
-  val attributes: StringDictionary[String | Null]
+  /**
+    *  A map of attribute names to attribute values for an element.
+    */
+  def attributes: StringDictionary[String | Null] = js.native
   
-  val childNodes: js.Array[DebugNode]
+  /**
+    * The `childNodes` of the DOM element as a `DebugNode` array.
+    *
+    * @see [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
+    */
+  def childNodes: js.Array[DebugNode] = js.native
   
-  val children: js.Array[DebugElement]
+  /**
+    * The immediate `DebugElement` children. Walk the tree by descending through `children`.
+    */
+  def children: js.Array[DebugElement] = js.native
   
-  val classes: StringDictionary[Boolean]
+  /**
+    * A map containing the class names on the element as keys.
+    *
+    * This map is derived from the `className` property of the DOM element.
+    *
+    * Note: The values of this object will always be `true`. The class key will not appear in the KV
+    * object if it does not exist on the element.
+    *
+    * @see [Element.className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
+    */
+  def classes: StringDictionary[Boolean] = js.native
   
-  val name: String
+  /**
+    * The element tag name, if it is an element.
+    */
+  def name: String = js.native
   
-  val nativeElement: js.Any
+  /**
+    * The underlying DOM element at the root of the component.
+    */
+  def nativeElement: Any = js.native
   
-  val properties: StringDictionary[js.Any]
+  /**
+    *  Gets a map of property names to property values for an element.
+    *
+    *  This map includes:
+    *  - Regular property bindings (e.g. `[id]="id"`)
+    *  - Host property bindings (e.g. `host: { '[id]': "id" }`)
+    *  - Interpolated property bindings (e.g. `id="{{ value }}")
+    *
+    *  It does not include:
+    *  - input property bindings (e.g. `[myCustomInput]="value"`)
+    *  - attribute bindings (e.g. `[attr.role]="menu"`)
+    */
+  def properties: StringDictionary[Any] = js.native
   
-  def query(predicate: Predicate[DebugElement]): DebugElement
+  /**
+    * @returns the first `DebugElement` that matches the predicate at any depth in the subtree.
+    */
+  def query(predicate: Predicate[DebugElement]): DebugElement = js.native
   
-  def queryAll(predicate: Predicate[DebugElement]): js.Array[DebugElement]
+  /**
+    * @returns All `DebugElement` matches for the predicate at any depth in the subtree.
+    */
+  def queryAll(predicate: Predicate[DebugElement]): js.Array[DebugElement] = js.native
   
-  def queryAllNodes(predicate: Predicate[DebugNode]): js.Array[DebugNode]
+  /**
+    * @returns All `DebugNode` matches for the predicate at any depth in the subtree.
+    */
+  def queryAllNodes(predicate: Predicate[DebugNode]): js.Array[DebugNode] = js.native
   
-  val styles: StringDictionary[String | Null]
+  /**
+    * The inline styles of the DOM element.
+    *
+    * Will be `null` if there is no `style` property on the underlying DOM element.
+    *
+    * @see [ElementCSSInlineStyle](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style)
+    */
+  def styles: StringDictionary[String | Null] = js.native
   
-  def triggerEventHandler(eventName: String, eventObj: js.Any): Unit
-}
-object DebugElement {
-  
-  inline def apply(
-    attributes: StringDictionary[String | Null],
-    childNodes: js.Array[DebugNode],
-    children: js.Array[DebugElement],
-    classes: StringDictionary[Boolean],
-    componentInstance: js.Any,
-    context: js.Any,
-    injector: Injector,
-    listeners: js.Array[DebugEventListener],
-    name: String,
-    nativeElement: js.Any,
-    nativeNode: js.Any,
-    properties: StringDictionary[js.Any],
-    providerTokens: js.Array[js.Any],
-    query: Predicate[DebugElement] => DebugElement,
-    queryAll: Predicate[DebugElement] => js.Array[DebugElement],
-    queryAllNodes: Predicate[DebugNode] => js.Array[DebugNode],
-    references: StringDictionary[js.Any],
-    styles: StringDictionary[String | Null],
-    triggerEventHandler: (String, js.Any) => Unit
-  ): DebugElement = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], componentInstance = componentInstance.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nativeElement = nativeElement.asInstanceOf[js.Any], nativeNode = nativeNode.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], providerTokens = providerTokens.asInstanceOf[js.Any], query = js.Any.fromFunction1(query), queryAll = js.Any.fromFunction1(queryAll), queryAllNodes = js.Any.fromFunction1(queryAllNodes), references = references.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], triggerEventHandler = js.Any.fromFunction2(triggerEventHandler), parent = null)
-    __obj.asInstanceOf[DebugElement]
-  }
-  
-  extension [Self <: DebugElement](x: Self) {
-    
-    inline def setAttributes(value: StringDictionary[String | Null]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
-    
-    inline def setChildNodes(value: js.Array[DebugNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
-    
-    inline def setChildNodesVarargs(value: DebugNode*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
-    
-    inline def setChildren(value: js.Array[DebugElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-    
-    inline def setChildrenVarargs(value: DebugElement*): Self = StObject.set(x, "children", js.Array(value :_*))
-    
-    inline def setClasses(value: StringDictionary[Boolean]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNativeElement(value: js.Any): Self = StObject.set(x, "nativeElement", value.asInstanceOf[js.Any])
-    
-    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
-    
-    inline def setQuery(value: Predicate[DebugElement] => DebugElement): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
-    
-    inline def setQueryAll(value: Predicate[DebugElement] => js.Array[DebugElement]): Self = StObject.set(x, "queryAll", js.Any.fromFunction1(value))
-    
-    inline def setQueryAllNodes(value: Predicate[DebugNode] => js.Array[DebugNode]): Self = StObject.set(x, "queryAllNodes", js.Any.fromFunction1(value))
-    
-    inline def setStyles(value: StringDictionary[String | Null]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
-    
-    inline def setTriggerEventHandler(value: (String, js.Any) => Unit): Self = StObject.set(x, "triggerEventHandler", js.Any.fromFunction2(value))
-  }
+  /**
+    * Triggers the event by its name if there is a corresponding listener in the element's
+    * `listeners` collection.
+    *
+    * If the event lacks a listener or there's some other problem, consider
+    * calling `nativeElement.dispatchEvent(eventObject)`.
+    *
+    * @param eventName The name of the event to trigger
+    * @param eventObj The _event object_ expected by the handler
+    *
+    * @see [Testing components scenarios](guide/testing-components-scenarios#trigger-event-handler)
+    */
+  def triggerEventHandler(eventName: String): Unit = js.native
+  def triggerEventHandler(eventName: String, eventObj: Any): Unit = js.native
 }

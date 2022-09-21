@@ -14,12 +14,12 @@ trait ConfigurationSettingsDescription extends StObject {
   /**
     * The date (in UTC time) when this configuration set was created.
     */
-  var DateCreated: js.UndefOr[CreationDate] = js.undefined
+  var DateCreated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date (in UTC time) when this configuration set was last modified.
     */
-  var DateUpdated: js.UndefOr[UpdateDate] = js.undefined
+  var DateUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  If this configuration set is associated with an environment, the DeploymentStatus parameter indicates the deployment status of this configuration set:     null: This configuration is not associated with a running environment.    pending: This is a draft configuration that is not deployed to the associated environment but is in the process of deploying.    deployed: This is the configuration that is currently deployed to the associated running environment.    failed: This is a draft configuration that failed to successfully deploy.  
@@ -69,11 +69,11 @@ object ConfigurationSettingsDescription {
     
     inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    inline def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    inline def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
+    inline def setDateUpdated(value: js.Date): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
     inline def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
@@ -93,7 +93,7 @@ object ConfigurationSettingsDescription {
     
     inline def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
     
-    inline def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
+    inline def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value*))
     
     inline def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     

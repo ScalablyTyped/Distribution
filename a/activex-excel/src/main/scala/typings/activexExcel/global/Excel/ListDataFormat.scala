@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ListDataFormat")
 @js.native
-/* private */ class ListDataFormat ()
+/* private */ open class ListDataFormat ()
   extends StObject
      with typings.activexExcel.Excel.ListDataFormat {
   
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val DecimalPlaces: Double = js.native
   
   /* CompleteClass */
-  override val DefaultValue: js.Any = js.native
+  override val DefaultValue: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Excel.ListDataFormat_typekey")
@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val MinNumber: Double | Null = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val ReadOnly: Boolean = js.native

@@ -22,6 +22,6 @@ object AppContext {
     
     inline def setAppTypesUndefined: Self = StObject.set(x, "appTypes", js.undefined)
     
-    inline def setAppTypesVarargs(value: String*): Self = StObject.set(x, "appTypes", js.Array(value :_*))
+    inline def setAppTypesVarargs(value: String*): Self = StObject.set(x, "appTypes", js.Array(value*))
   }
 }

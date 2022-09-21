@@ -10,9 +10,9 @@ object anyOfClassMatcherMod {
   
   @JSImport("ts-mockito/lib/matcher/type/AnyOfClassMatcher", "AnyOfClassMatcher")
   @js.native
-  class AnyOfClassMatcher[T] protected () extends Matcher {
-    def this(expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]) = this()
+  open class AnyOfClassMatcher[T] protected () extends Matcher {
+    def this(expectedClass: Instantiable1[/* args (repeated) */ Any, T]) = this()
     
-    /* private */ var expectedClass: js.Any = js.native
+    /* private */ var expectedClass: Any = js.native
   }
 }

@@ -27,7 +27,7 @@ trait NamespacedDebugInput extends StObject {
   
   /**
     * If true, disable automatic enrollment selection (at all diversion points). Automatic enrollment selection means experiment selection process based on the experiment's automatic
-    * enrollment condition. This does not disable selection of forced experiments.
+    * enrollment condition. This does not disable selection of forced experiments. Setting this filed to false does not change anything in experiment selection process.
     */
   var disableAutomaticEnrollmentSelection: js.UndefOr[Boolean] = js.undefined
   
@@ -53,14 +53,14 @@ trait NamespacedDebugInput extends StObject {
   
   /**
     * If true, disable manual enrollment selection (at all diversion points). Manual enrollment selection means experiment selection process based on the request's manual enrollment
-    * states (a.k.a. opt-in experiments). This does not disable selection of forced experiments.
+    * states (a.k.a. opt-in experiments). This does not disable selection of forced experiments. Setting this filed to false does not change anything in experiment selection process.
     */
   var disableManualEnrollmentSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, disable organic experiment selection (at all diversion points). Organic selection means experiment selection process based on traffic allocation and diversion condition
     * evaluation. This does not disable selection of forced experiments. This is useful in cases when it is not known whether experiment selection behavior is responsible for a error or
-    * breakage. Disabling organic selection may help to isolate the cause of a given problem.
+    * breakage. Disabling organic selection may help to isolate the cause of a given problem. Setting this filed to false does not change anything in experiment selection process.
     */
   var disableOrganicSelection: js.UndefOr[Boolean] = js.undefined
   
@@ -68,15 +68,21 @@ trait NamespacedDebugInput extends StObject {
   var forcedFlags: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[Any]
   ] = js.undefined
   
   /** Rollouts to force in a particular experiment state. Map from rollout name to rollout value. */
   var forcedRollouts: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: boolean}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[Any]
   ] = js.undefined
+  
+  /**
+    * If set to ALL_OFF, organic selection will be disabled; if set to ALL_ON, organic selection will be disabled, and only select launch experiments will receive traffic. See
+    * go/mendel-aoao-runtime-design.
+    */
+  var testingMode: js.UndefOr[String] = js.undefined
 }
 object NamespacedDebugInput {
   
@@ -91,37 +97,37 @@ object NamespacedDebugInput {
     
     inline def setAbsolutelyForcedExpNamesUndefined: Self = StObject.set(x, "absolutelyForcedExpNames", js.undefined)
     
-    inline def setAbsolutelyForcedExpNamesVarargs(value: String*): Self = StObject.set(x, "absolutelyForcedExpNames", js.Array(value :_*))
+    inline def setAbsolutelyForcedExpNamesVarargs(value: String*): Self = StObject.set(x, "absolutelyForcedExpNames", js.Array(value*))
     
     inline def setAbsolutelyForcedExpTags(value: js.Array[String]): Self = StObject.set(x, "absolutelyForcedExpTags", value.asInstanceOf[js.Any])
     
     inline def setAbsolutelyForcedExpTagsUndefined: Self = StObject.set(x, "absolutelyForcedExpTags", js.undefined)
     
-    inline def setAbsolutelyForcedExpTagsVarargs(value: String*): Self = StObject.set(x, "absolutelyForcedExpTags", js.Array(value :_*))
+    inline def setAbsolutelyForcedExpTagsVarargs(value: String*): Self = StObject.set(x, "absolutelyForcedExpTags", js.Array(value*))
     
     inline def setAbsolutelyForcedExps(value: js.Array[Double]): Self = StObject.set(x, "absolutelyForcedExps", value.asInstanceOf[js.Any])
     
     inline def setAbsolutelyForcedExpsUndefined: Self = StObject.set(x, "absolutelyForcedExps", js.undefined)
     
-    inline def setAbsolutelyForcedExpsVarargs(value: Double*): Self = StObject.set(x, "absolutelyForcedExps", js.Array(value :_*))
+    inline def setAbsolutelyForcedExpsVarargs(value: Double*): Self = StObject.set(x, "absolutelyForcedExps", js.Array(value*))
     
     inline def setConditionallyForcedExpNames(value: js.Array[String]): Self = StObject.set(x, "conditionallyForcedExpNames", value.asInstanceOf[js.Any])
     
     inline def setConditionallyForcedExpNamesUndefined: Self = StObject.set(x, "conditionallyForcedExpNames", js.undefined)
     
-    inline def setConditionallyForcedExpNamesVarargs(value: String*): Self = StObject.set(x, "conditionallyForcedExpNames", js.Array(value :_*))
+    inline def setConditionallyForcedExpNamesVarargs(value: String*): Self = StObject.set(x, "conditionallyForcedExpNames", js.Array(value*))
     
     inline def setConditionallyForcedExpTags(value: js.Array[String]): Self = StObject.set(x, "conditionallyForcedExpTags", value.asInstanceOf[js.Any])
     
     inline def setConditionallyForcedExpTagsUndefined: Self = StObject.set(x, "conditionallyForcedExpTags", js.undefined)
     
-    inline def setConditionallyForcedExpTagsVarargs(value: String*): Self = StObject.set(x, "conditionallyForcedExpTags", js.Array(value :_*))
+    inline def setConditionallyForcedExpTagsVarargs(value: String*): Self = StObject.set(x, "conditionallyForcedExpTags", js.Array(value*))
     
     inline def setConditionallyForcedExps(value: js.Array[Double]): Self = StObject.set(x, "conditionallyForcedExps", value.asInstanceOf[js.Any])
     
     inline def setConditionallyForcedExpsUndefined: Self = StObject.set(x, "conditionallyForcedExps", js.undefined)
     
-    inline def setConditionallyForcedExpsVarargs(value: Double*): Self = StObject.set(x, "conditionallyForcedExps", js.Array(value :_*))
+    inline def setConditionallyForcedExpsVarargs(value: Double*): Self = StObject.set(x, "conditionallyForcedExps", js.Array(value*))
     
     inline def setDisableAutomaticEnrollmentSelection(value: Boolean): Self = StObject.set(x, "disableAutomaticEnrollmentSelection", value.asInstanceOf[js.Any])
     
@@ -131,19 +137,19 @@ object NamespacedDebugInput {
     
     inline def setDisableExpNamesUndefined: Self = StObject.set(x, "disableExpNames", js.undefined)
     
-    inline def setDisableExpNamesVarargs(value: String*): Self = StObject.set(x, "disableExpNames", js.Array(value :_*))
+    inline def setDisableExpNamesVarargs(value: String*): Self = StObject.set(x, "disableExpNames", js.Array(value*))
     
     inline def setDisableExpTags(value: js.Array[String]): Self = StObject.set(x, "disableExpTags", value.asInstanceOf[js.Any])
     
     inline def setDisableExpTagsUndefined: Self = StObject.set(x, "disableExpTags", js.undefined)
     
-    inline def setDisableExpTagsVarargs(value: String*): Self = StObject.set(x, "disableExpTags", js.Array(value :_*))
+    inline def setDisableExpTagsVarargs(value: String*): Self = StObject.set(x, "disableExpTags", js.Array(value*))
     
     inline def setDisableExps(value: js.Array[Double]): Self = StObject.set(x, "disableExps", value.asInstanceOf[js.Any])
     
     inline def setDisableExpsUndefined: Self = StObject.set(x, "disableExps", js.undefined)
     
-    inline def setDisableExpsVarargs(value: Double*): Self = StObject.set(x, "disableExps", js.Array(value :_*))
+    inline def setDisableExpsVarargs(value: Double*): Self = StObject.set(x, "disableExps", js.Array(value*))
     
     inline def setDisableManualEnrollmentSelection(value: Boolean): Self = StObject.set(x, "disableManualEnrollmentSelection", value.asInstanceOf[js.Any])
     
@@ -156,7 +162,7 @@ object NamespacedDebugInput {
     inline def setForcedFlags(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[Any]
     ): Self = StObject.set(x, "forcedFlags", value.asInstanceOf[js.Any])
     
     inline def setForcedFlagsUndefined: Self = StObject.set(x, "forcedFlags", js.undefined)
@@ -164,9 +170,13 @@ object NamespacedDebugInput {
     inline def setForcedRollouts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: boolean}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput & TopLevel[Any]
     ): Self = StObject.set(x, "forcedRollouts", value.asInstanceOf[js.Any])
     
     inline def setForcedRolloutsUndefined: Self = StObject.set(x, "forcedRollouts", js.undefined)
+    
+    inline def setTestingMode(value: String): Self = StObject.set(x, "testingMode", value.asInstanceOf[js.Any])
+    
+    inline def setTestingModeUndefined: Self = StObject.set(x, "testingMode", js.undefined)
   }
 }

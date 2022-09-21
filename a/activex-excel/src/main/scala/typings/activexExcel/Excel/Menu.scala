@@ -21,11 +21,11 @@ trait Menu extends StObject {
   
   val Index: Double
   
-  def MenuItems(Index: js.Any): js.Any
+  def MenuItems(Index: Any): Any
   @JSName("MenuItems")
   val MenuItems_Original: MenuItems
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object Menu {
   
@@ -38,7 +38,7 @@ object Menu {
     ExcelDotMenu_typekey: Menu,
     Index: Double,
     MenuItems: MenuItems,
-    Parent: js.Any
+    Parent: Any
   ): Menu = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Caption = Caption.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Enabled = Enabled.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], MenuItems = MenuItems.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.Menu_typekey")(ExcelDotMenu_typekey.asInstanceOf[js.Any])
@@ -63,6 +63,6 @@ object Menu {
     
     inline def setMenuItems(value: MenuItems): Self = StObject.set(x, "MenuItems", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

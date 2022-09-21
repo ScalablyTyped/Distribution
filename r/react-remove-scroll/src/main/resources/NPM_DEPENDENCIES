@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-remove-scroll" : "2.5.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-remove-scroll" : "2.5.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

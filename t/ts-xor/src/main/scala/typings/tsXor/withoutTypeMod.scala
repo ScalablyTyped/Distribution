@@ -9,5 +9,5 @@ object withoutTypeMod {
   
   type Without[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Exclude<keyof T, keyof U> ]:? never}
-    */ typings.tsXor.tsXorStrings.Without & TopLevel[js.Any]
+    */ typings.tsXor.tsXorStrings.Without & TopLevel[Any]
 }

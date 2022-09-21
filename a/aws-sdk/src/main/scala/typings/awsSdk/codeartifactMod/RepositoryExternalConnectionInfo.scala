@@ -12,7 +12,7 @@ trait RepositoryExternalConnectionInfo extends StObject {
   var externalConnectionName: js.UndefOr[ExternalConnectionName] = js.undefined
   
   /**
-    *  The package format associated with a repository's external connection. The valid package formats are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.   
+    *  The package format associated with a repository's external connection. The valid package formats are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.     nuget: A NuGet package.   
     */
   var packageFormat: js.UndefOr[PackageFormat] = js.undefined
   

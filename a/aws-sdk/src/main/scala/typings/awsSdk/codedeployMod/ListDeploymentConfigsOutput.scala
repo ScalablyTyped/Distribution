@@ -29,7 +29,7 @@ object ListDeploymentConfigsOutput {
     
     inline def setDeploymentConfigsListUndefined: Self = StObject.set(x, "deploymentConfigsList", js.undefined)
     
-    inline def setDeploymentConfigsListVarargs(value: DeploymentConfigName*): Self = StObject.set(x, "deploymentConfigsList", js.Array(value :_*))
+    inline def setDeploymentConfigsListVarargs(value: DeploymentConfigName*): Self = StObject.set(x, "deploymentConfigsList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

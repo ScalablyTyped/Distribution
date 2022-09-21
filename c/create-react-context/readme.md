@@ -10,10 +10,10 @@ Polyfill for the proposed React context API
 | ------------------ | :-------------: |
 | Full name          | create-react-context |
 | Keywords           | react, context, contextTypes, polyfill, ponyfill |
-| # releases         | 2 |
-| # dependents       | 309 |
-| # downloads        | 182683219 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1764141E7 |
+| # stars            | 694.0 |
 
 ## Links
 - [Homepage](https://github.com/thejameskyle/create-react-context#readme)

@@ -46,13 +46,13 @@ object GoogleCloudMlV1ParameterSpec {
     
     inline def setCategoricalValuesUndefined: Self = StObject.set(x, "categoricalValues", js.undefined)
     
-    inline def setCategoricalValuesVarargs(value: String*): Self = StObject.set(x, "categoricalValues", js.Array(value :_*))
+    inline def setCategoricalValuesVarargs(value: String*): Self = StObject.set(x, "categoricalValues", js.Array(value*))
     
     inline def setDiscreteValues(value: js.Array[Double]): Self = StObject.set(x, "discreteValues", value.asInstanceOf[js.Any])
     
     inline def setDiscreteValuesUndefined: Self = StObject.set(x, "discreteValues", js.undefined)
     
-    inline def setDiscreteValuesVarargs(value: Double*): Self = StObject.set(x, "discreteValues", js.Array(value :_*))
+    inline def setDiscreteValuesVarargs(value: Double*): Self = StObject.set(x, "discreteValues", js.Array(value*))
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

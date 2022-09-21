@@ -1,7 +1,7 @@
 package typings.videoJs.videoCoreMod.default
 
-import typings.videoJs.mod.videojs.ComponentOptions
 import typings.videoJs.mod.videojs.ProgressControl
+import typings.videoJs.mod.videojs.ProgressControlOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js/dist/alt/video.core", "default.ProgressControl")
 @js.native
-class ProgressControlCls protected ()
+open class ProgressControlCls protected ()
   extends StObject
      with ProgressControl {
   /**
@@ -22,5 +22,5 @@ class ProgressControlCls protected ()
     *        The key/value store of player options.
     */
   def this(player: typings.videoJs.mod.videojs.Player) = this()
-  def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
+  def this(player: typings.videoJs.mod.videojs.Player, options: ProgressControlOptions) = this()
 }

@@ -10,10 +10,10 @@ An ES2019 spec-compliant `Array.prototype.flat` shim/polyfill/replacement that w
 | ------------------ | :-------------: |
 | Full name          | array.prototype.flat |
 | Keywords           | Array.prototype.flatten, Array.prototype.flat, flatten, flat, array, ESnext, shim, polyfill, flatMap, Array.prototype.flatMap, es-shim API |
-| # releases         | 2 |
-| # dependents       | 58 |
-| # downloads        | 277551310 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4943107666666664E7 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/es-shims/Array.prototype.flat#readme)

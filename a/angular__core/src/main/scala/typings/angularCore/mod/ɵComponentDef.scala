@@ -15,7 +15,7 @@ trait ɵComponentDef[T]
     * compiler. The property should never be read.
     */
   @JSName("_")
-  val _underscore: js.UndefOr[scala.Nothing] = js.native
+  val _underscore: js.UndefOr[Any] = js.native
   
   /** Constants associated with the component's view. */
   val consts: TConstantsOrFactory | Null = js.native
@@ -24,7 +24,7 @@ trait ɵComponentDef[T]
     * Defines arbitrary developer-defined data to be stored on a renderer instance.
     * This is useful for renderers that delegate to other renderers.
     */
-  val data: StringDictionary[js.Any] = js.native
+  val data: StringDictionary[Any] = js.native
   
   /**
     * The number of nodes, local refs, and pipes in this component template.
@@ -33,6 +33,11 @@ trait ɵComponentDef[T]
     * can pre-fill the array and set the binding start index.
     */
   val decls: Double = js.native
+  
+  /**
+    * Unfiltered list of all dependencies of a component, or `null` if none.
+    */
+  var dependencies: TypeOrFactory[DependencyTypeList] | Null = js.native
   
   /**
     * Registry of directives and components that may be found in this view.
@@ -54,7 +59,14 @@ trait ɵComponentDef[T]
   val encapsulation: ViewEncapsulation = js.native
   
   /**
-    * Runtime unique component ID.
+    * A function added by the {@link ɵɵStandaloneFeature} and used by the framework to create
+    * standalone injectors.
+    */
+  var getStandaloneInjector: (js.Function1[/* parentInjector */ EnvironmentInjector, EnvironmentInjector | Null]) | Null = js.native
+  
+  /**
+    * Unique ID for the component. Used in view encapsulation and
+    * to keep track of the injector in standalone components.
     */
   val id: String = js.native
   

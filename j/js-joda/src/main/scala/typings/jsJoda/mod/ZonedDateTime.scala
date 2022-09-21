@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ZonedDateTime")
 @js.native
-/* private */ class ZonedDateTime () extends ChronoZonedDateTime {
+/* private */ open class ZonedDateTime () extends ChronoZonedDateTime {
   
   def dayOfMonth(): Double = js.native
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def isSupported(fieldOrUnit: TemporalField): Boolean = js.native
   def isSupported(fieldOrUnit: TemporalUnit): Boolean = js.native
   
-  def minus(): js.Any = js.native
+  def minus(): Any = js.native
   def minus(amountToSubtract: Double, unit: TemporalUnit): ZonedDateTime = js.native
   
   def minusDays(days: Double): ZonedDateTime = js.native
@@ -50,12 +50,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def nano(): Double = js.native
   
-  def offset(): js.Any = js.native
+  def offset(): Any = js.native
   
-  def plus(): js.Any = js.native
+  def plus(): Any = js.native
   def plus(amountToAdd: Double, unit: TemporalUnit): ZonedDateTime = js.native
   
-  def plusDays(days: Double): js.Any = js.native
+  def plusDays(days: Double): Any = js.native
   
   def plusHours(hours: Double): ZonedDateTime = js.native
   
@@ -69,7 +69,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def plusTemporalAmount(amount: TemporalAmount): ZonedDateTime = js.native
   
-  def plusWeeks(weeks: Double): js.Any = js.native
+  def plusWeeks(weeks: Double): Any = js.native
   
   def plusYears(years: Double): ZonedDateTime = js.native
   
@@ -87,7 +87,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def until(endExclusive: Temporal, unit: TemporalUnit): Double = js.native
   
-  def `with`(): js.Any = js.native
+  def `with`(): Any = js.native
   def `with`(field: TemporalField, newValue: Double): ZonedDateTime = js.native
   
   def withDayOfMonth(dayOfMonth: Double): ZonedDateTime = js.native
@@ -133,7 +133,7 @@ object ZonedDateTime {
   inline def now(clockOrZone: ZoneId): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(clockOrZone.asInstanceOf[js.Any]).asInstanceOf[ZonedDateTime]
   
   /* static member */
-  inline def of(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("of")().asInstanceOf[js.Any]
+  inline def of(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("of")().asInstanceOf[Any]
   /* static member */
   inline def of(date: LocalDate, time: LocalTime, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
   /* static member */

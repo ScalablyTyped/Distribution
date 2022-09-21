@@ -12,18 +12,18 @@ trait Dimension extends StObject {
   var DimensionValueType: js.UndefOr[typings.awsSdk.timestreamwriteMod.DimensionValueType] = js.undefined
   
   /**
-    *  Dimension represents the meta data attributes of the time series. For example, the name and availability zone of an EC2 instance or the name of the manufacturer of a wind turbine are dimensions. Dimension names can only contain alphanumeric characters and underscores. Dimension names cannot end with an underscore. 
+    *  Dimension represents the meta data attributes of the time series. For example, the name and availability zone of an EC2 instance or the name of the manufacturer of a wind turbine are dimensions.  For constraints on Dimension names, see Naming Constraints.
     */
-  var Name: StringValue256
+  var Name: SchemaName
   
   /**
     * The value of the dimension.
     */
-  var Value: StringValue2048
+  var Value: SchemaValue
 }
 object Dimension {
   
-  inline def apply(Name: StringValue256, Value: StringValue2048): Dimension = {
+  inline def apply(Name: SchemaName, Value: SchemaValue): Dimension = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimension]
   }
@@ -34,8 +34,8 @@ object Dimension {
     
     inline def setDimensionValueTypeUndefined: Self = StObject.set(x, "DimensionValueType", js.undefined)
     
-    inline def setName(value: StringValue256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: StringValue2048): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SchemaValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

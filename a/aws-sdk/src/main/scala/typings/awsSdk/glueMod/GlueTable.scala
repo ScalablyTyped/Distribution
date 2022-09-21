@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlueTable extends StObject {
   
   /**
-    * A unique identifier for the AWS Glue Data Catalog.
+    * A unique identifier for the Glue Data Catalog.
     */
   var CatalogId: js.UndefOr[NameString] = js.undefined
   
   /**
-    * The name of the connection to the AWS Glue Data Catalog.
+    * The name of the connection to the Glue Data Catalog.
     */
   var ConnectionName: js.UndefOr[NameString] = js.undefined
   
   /**
-    * A database name in the AWS Glue Data Catalog.
+    * A database name in the Glue Data Catalog.
     */
   var DatabaseName: NameString
   
   /**
-    * A table name in the AWS Glue Data Catalog.
+    * A table name in the Glue Data Catalog.
     */
   var TableName: NameString
 }

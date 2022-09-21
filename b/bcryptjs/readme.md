@@ -10,10 +10,10 @@ Optimized bcrypt in plain JavaScript with zero dependencies. Compatible to 'bcry
 | ------------------ | :-------------: |
 | Full name          | bcryptjs |
 | Keywords           | bcrypt, password, auth, authentication, encryption, crypt, crypto |
-| # releases         | 1 |
-| # dependents       | 1300 |
-| # downloads        | 38946140 |
-| # stars            | 170 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5917013.333333333 |
+| # stars            | 3098.0 |
 
 ## Links
 - [Homepage](https://github.com/dcodeIO/bcrypt.js#readme)

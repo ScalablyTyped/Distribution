@@ -8,7 +8,7 @@ object dateFnsIsDateIndexMod {
   
   object default {
     
-    inline def apply(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def apply(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("date-fns/isDate/index", JSImport.Default)
     @js.native

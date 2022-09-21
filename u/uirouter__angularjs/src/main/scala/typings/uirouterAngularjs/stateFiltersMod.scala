@@ -9,7 +9,7 @@ object stateFiltersMod {
   
   object IncludedByStateFilter {
     
-    inline def apply($state: StateService): js.Any = ^.asInstanceOf[js.Dynamic].apply($state.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply($state: StateService): Any = ^.asInstanceOf[js.Dynamic].apply($state.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("@uirouter/angularjs/lib/stateFilters", "$IncludedByStateFilter")
     @js.native
@@ -24,7 +24,7 @@ object stateFiltersMod {
   
   object IsStateFilter {
     
-    inline def apply($state: StateService): js.Any = ^.asInstanceOf[js.Dynamic].apply($state.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply($state: StateService): Any = ^.asInstanceOf[js.Dynamic].apply($state.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("@uirouter/angularjs/lib/stateFilters", "$IsStateFilter")
     @js.native

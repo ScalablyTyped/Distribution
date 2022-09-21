@@ -41,7 +41,7 @@ object XInteractionFilterOptions {
     FilterOptions: SafeArray[PropertyValue],
     acquire: () => Unit,
     getFilterOptions: () => SafeArray[PropertyValue],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     select: () => Unit,
     setFilterOptions: SeqEquiv[PropertyValue] => Unit

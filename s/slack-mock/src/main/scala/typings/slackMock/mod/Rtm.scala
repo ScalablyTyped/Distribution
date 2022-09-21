@@ -1,5 +1,6 @@
 package typings.slackMock.mod
 
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ trait Rtm[T] extends StObject {
   
   var calls: js.Array[RtmCall[T]]
   
-  var clients: js.Array[typings.ws.mod.^]
+  var clients: js.Array[WebSocket]
   
   def reset(): Unit
   
@@ -23,7 +24,7 @@ object Rtm {
   
   inline def apply[T](
     calls: js.Array[RtmCall[T]],
-    clients: js.Array[typings.ws.mod.^],
+    clients: js.Array[WebSocket],
     reset: () => Unit,
     send: (String, T) => js.Promise[Unit],
     startServer: String => Unit,
@@ -37,11 +38,11 @@ object Rtm {
     
     inline def setCalls(value: js.Array[RtmCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    inline def setCallsVarargs(value: RtmCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: RtmCall[T]*): Self = StObject.set(x, "calls", js.Array(value*))
     
-    inline def setClients(value: js.Array[typings.ws.mod.^]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
+    inline def setClients(value: js.Array[WebSocket]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     
-    inline def setClientsVarargs(value: typings.ws.mod.^ *): Self = StObject.set(x, "clients", js.Array(value :_*))
+    inline def setClientsVarargs(value: WebSocket*): Self = StObject.set(x, "clients", js.Array(value*))
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

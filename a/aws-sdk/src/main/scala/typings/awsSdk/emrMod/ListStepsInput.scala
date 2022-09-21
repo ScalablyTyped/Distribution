@@ -12,7 +12,7 @@ trait ListStepsInput extends StObject {
   var ClusterId: typings.awsSdk.emrMod.ClusterId
   
   /**
-    * The pagination token that indicates the next set of results to retrieve.
+    * The maximum number of steps that a single ListSteps action returns is 50. To return a longer list of steps, use multiple ListSteps actions along with the Marker parameter, which is a pagination token that indicates the next set of results to retrieve.
     */
   var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
   
@@ -45,12 +45,12 @@ object ListStepsInput {
     
     inline def setStepIdsUndefined: Self = StObject.set(x, "StepIds", js.undefined)
     
-    inline def setStepIdsVarargs(value: XmlString*): Self = StObject.set(x, "StepIds", js.Array(value :_*))
+    inline def setStepIdsVarargs(value: XmlString*): Self = StObject.set(x, "StepIds", js.Array(value*))
     
     inline def setStepStates(value: StepStateList): Self = StObject.set(x, "StepStates", value.asInstanceOf[js.Any])
     
     inline def setStepStatesUndefined: Self = StObject.set(x, "StepStates", js.undefined)
     
-    inline def setStepStatesVarargs(value: StepState*): Self = StObject.set(x, "StepStates", js.Array(value :_*))
+    inline def setStepStatesVarargs(value: StepState*): Self = StObject.set(x, "StepStates", js.Array(value*))
   }
 }

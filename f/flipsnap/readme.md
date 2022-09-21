@@ -9,10 +9,10 @@ Provides UI of snap and slide
 | ------------------ | :-------------: |
 | Full name          | flipsnap |
 | Keywords           | mobile, ui, browser |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 48200 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3677.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/hokaccha/js-flipsnap)

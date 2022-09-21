@@ -42,11 +42,11 @@ object IncludePointsOption {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setPoints(value: js.Array[MapPostion]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: MapPostion*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: MapPostion*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

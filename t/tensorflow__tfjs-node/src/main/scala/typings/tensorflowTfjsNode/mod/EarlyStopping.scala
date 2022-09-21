@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-node", "EarlyStopping")
 @js.native
-class EarlyStopping ()
+open class EarlyStopping ()
   extends typings.tensorflowTfjs.mod.EarlyStopping {
   def this(args: EarlyStoppingCallbackArgs) = this()
 }

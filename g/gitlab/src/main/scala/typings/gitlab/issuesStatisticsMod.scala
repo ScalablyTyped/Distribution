@@ -1,10 +1,10 @@
 package typings.gitlab
 
-import typings.gitlab.anon.GroupId
-import typings.gitlab.anon.ProjectId
+import typings.gitlab.anon.BaseRequestOptions
+import typings.gitlab.anon.groupIdstringnumberundefiDictkey
+import typings.gitlab.anon.projectIdstringnumberundeDictkey
 import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
-import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,10 +14,12 @@ object issuesStatisticsMod {
   
   @JSImport("gitlab/dist/types/core/services/IssuesStatistics", "IssuesStatistics")
   @js.native
-  class IssuesStatistics () extends BaseService {
+  open class IssuesStatistics () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(hasProjectIdGroupIdOptions: (ProjectId | GroupId | js.Object) & BaseRequestOptions): js.Promise[GetResponse] = js.native
+    def all(
+      hasProjectIdGroupIdOptions: projectIdstringnumberundeDictkey | groupIdstringnumberundefiDictkey | BaseRequestOptions
+    ): js.Promise[GetResponse] = js.native
   }
 }

@@ -68,7 +68,7 @@ object Alert {
     
     inline def setRgbUndefined: Self = StObject.set(x, "rgb", js.undefined)
     
-    inline def setRgbVarargs(value: Double*): Self = StObject.set(x, "rgb", js.Array(value :_*))
+    inline def setRgbVarargs(value: Double*): Self = StObject.set(x, "rgb", js.Array(value*))
     
     inline def setSat(value: Double): Self = StObject.set(x, "sat", value.asInstanceOf[js.Any])
     

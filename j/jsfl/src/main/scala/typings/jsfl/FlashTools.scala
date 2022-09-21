@@ -6,48 +6,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FlashTools extends StObject {
   
-  var activeTool: js.Any
+  var activeTool: Any
   
-  var altIsDown: js.Any
+  var altIsDown: Any
   
-  def constraintPoint(): js.Any
+  def constraintPoint(): Any
   
-  var ctlIsDown: js.Any
+  var ctlIsDown: Any
   
-  def getKeyDown(): js.Any
+  def getKeyDown(): Any
   
-  var mouseIsDown: js.Any
+  var mouseIsDown: Any
   
-  var penDownLoc: js.Any
+  var penDownLoc: Any
   
-  var penLoc: js.Any
+  var penLoc: Any
   
-  def setCreatingBbox(): js.Any
+  def setCreatingBbox(): Any
   
-  def setCursor(): js.Any
+  def setCursor(): Any
   
-  var shiftIsDown: js.Any
+  var shiftIsDown: Any
   
-  def snapPoint(): js.Any
+  def snapPoint(): Any
   
-  var toolObjs: js.Any
+  var toolObjs: Any
 }
 object FlashTools {
   
   inline def apply(
-    activeTool: js.Any,
-    altIsDown: js.Any,
-    constraintPoint: () => js.Any,
-    ctlIsDown: js.Any,
-    getKeyDown: () => js.Any,
-    mouseIsDown: js.Any,
-    penDownLoc: js.Any,
-    penLoc: js.Any,
-    setCreatingBbox: () => js.Any,
-    setCursor: () => js.Any,
-    shiftIsDown: js.Any,
-    snapPoint: () => js.Any,
-    toolObjs: js.Any
+    activeTool: Any,
+    altIsDown: Any,
+    constraintPoint: () => Any,
+    ctlIsDown: Any,
+    getKeyDown: () => Any,
+    mouseIsDown: Any,
+    penDownLoc: Any,
+    penLoc: Any,
+    setCreatingBbox: () => Any,
+    setCursor: () => Any,
+    shiftIsDown: Any,
+    snapPoint: () => Any,
+    toolObjs: Any
   ): FlashTools = {
     val __obj = js.Dynamic.literal(activeTool = activeTool.asInstanceOf[js.Any], altIsDown = altIsDown.asInstanceOf[js.Any], constraintPoint = js.Any.fromFunction0(constraintPoint), ctlIsDown = ctlIsDown.asInstanceOf[js.Any], getKeyDown = js.Any.fromFunction0(getKeyDown), mouseIsDown = mouseIsDown.asInstanceOf[js.Any], penDownLoc = penDownLoc.asInstanceOf[js.Any], penLoc = penLoc.asInstanceOf[js.Any], setCreatingBbox = js.Any.fromFunction0(setCreatingBbox), setCursor = js.Any.fromFunction0(setCursor), shiftIsDown = shiftIsDown.asInstanceOf[js.Any], snapPoint = js.Any.fromFunction0(snapPoint), toolObjs = toolObjs.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashTools]
@@ -55,30 +55,30 @@ object FlashTools {
   
   extension [Self <: FlashTools](x: Self) {
     
-    inline def setActiveTool(value: js.Any): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
+    inline def setActiveTool(value: Any): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
     
-    inline def setAltIsDown(value: js.Any): Self = StObject.set(x, "altIsDown", value.asInstanceOf[js.Any])
+    inline def setAltIsDown(value: Any): Self = StObject.set(x, "altIsDown", value.asInstanceOf[js.Any])
     
-    inline def setConstraintPoint(value: () => js.Any): Self = StObject.set(x, "constraintPoint", js.Any.fromFunction0(value))
+    inline def setConstraintPoint(value: () => Any): Self = StObject.set(x, "constraintPoint", js.Any.fromFunction0(value))
     
-    inline def setCtlIsDown(value: js.Any): Self = StObject.set(x, "ctlIsDown", value.asInstanceOf[js.Any])
+    inline def setCtlIsDown(value: Any): Self = StObject.set(x, "ctlIsDown", value.asInstanceOf[js.Any])
     
-    inline def setGetKeyDown(value: () => js.Any): Self = StObject.set(x, "getKeyDown", js.Any.fromFunction0(value))
+    inline def setGetKeyDown(value: () => Any): Self = StObject.set(x, "getKeyDown", js.Any.fromFunction0(value))
     
-    inline def setMouseIsDown(value: js.Any): Self = StObject.set(x, "mouseIsDown", value.asInstanceOf[js.Any])
+    inline def setMouseIsDown(value: Any): Self = StObject.set(x, "mouseIsDown", value.asInstanceOf[js.Any])
     
-    inline def setPenDownLoc(value: js.Any): Self = StObject.set(x, "penDownLoc", value.asInstanceOf[js.Any])
+    inline def setPenDownLoc(value: Any): Self = StObject.set(x, "penDownLoc", value.asInstanceOf[js.Any])
     
-    inline def setPenLoc(value: js.Any): Self = StObject.set(x, "penLoc", value.asInstanceOf[js.Any])
+    inline def setPenLoc(value: Any): Self = StObject.set(x, "penLoc", value.asInstanceOf[js.Any])
     
-    inline def setSetCreatingBbox(value: () => js.Any): Self = StObject.set(x, "setCreatingBbox", js.Any.fromFunction0(value))
+    inline def setSetCreatingBbox(value: () => Any): Self = StObject.set(x, "setCreatingBbox", js.Any.fromFunction0(value))
     
-    inline def setSetCursor(value: () => js.Any): Self = StObject.set(x, "setCursor", js.Any.fromFunction0(value))
+    inline def setSetCursor(value: () => Any): Self = StObject.set(x, "setCursor", js.Any.fromFunction0(value))
     
-    inline def setShiftIsDown(value: js.Any): Self = StObject.set(x, "shiftIsDown", value.asInstanceOf[js.Any])
+    inline def setShiftIsDown(value: Any): Self = StObject.set(x, "shiftIsDown", value.asInstanceOf[js.Any])
     
-    inline def setSnapPoint(value: () => js.Any): Self = StObject.set(x, "snapPoint", js.Any.fromFunction0(value))
+    inline def setSnapPoint(value: () => Any): Self = StObject.set(x, "snapPoint", js.Any.fromFunction0(value))
     
-    inline def setToolObjs(value: js.Any): Self = StObject.set(x, "toolObjs", value.asInstanceOf[js.Any])
+    inline def setToolObjs(value: Any): Self = StObject.set(x, "toolObjs", value.asInstanceOf[js.Any])
   }
 }

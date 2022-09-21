@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EmptyUpdate extends StObject {
   
-  var emptyUpdate: js.UndefOr[js.Any] = js.undefined
+  var emptyUpdate: js.UndefOr[Any] = js.undefined
   
   var tableAlias: js.UndefOr[String] = js.undefined
   
@@ -21,7 +21,7 @@ object EmptyUpdate {
   
   extension [Self <: EmptyUpdate](x: Self) {
     
-    inline def setEmptyUpdate(value: js.Any): Self = StObject.set(x, "emptyUpdate", value.asInstanceOf[js.Any])
+    inline def setEmptyUpdate(value: Any): Self = StObject.set(x, "emptyUpdate", value.asInstanceOf[js.Any])
     
     inline def setEmptyUpdateUndefined: Self = StObject.set(x, "emptyUpdate", js.undefined)
     

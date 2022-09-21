@@ -12,7 +12,7 @@ trait ITimestamp extends StObject {
   
   /** Timestamp seconds */
   var seconds: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) | Null
   ] = js.undefined
 }
 object ITimestamp {
@@ -31,7 +31,7 @@ object ITimestamp {
     inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
     inline def setSeconds(
-      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
     ): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     inline def setSecondsNull: Self = StObject.set(x, "seconds", null)

@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty network.
   */
-class TreeNetwork ()
+open class TreeNetwork ()
   extends typings.go.mod.TreeNetwork

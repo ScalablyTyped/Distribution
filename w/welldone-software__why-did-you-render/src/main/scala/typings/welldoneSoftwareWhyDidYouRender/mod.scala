@@ -1,7 +1,6 @@
 package typings.welldoneSoftwareWhyDidYouRender
 
 import typings.react.mod.Component
-import typings.std.RegExp
 import typings.welldoneSoftwareWhyDidYouRender.anon.TypeofReact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -70,23 +69,42 @@ object mod {
         inline def setWhyDidYouRenderUndefined: Self = StObject.set(x, "whyDidYouRender", js.undefined)
       }
     }
+    
+    trait VoidFunctionComponent[P] extends StObject {
+      
+      var whyDidYouRender: js.UndefOr[WhyDidYouRenderComponentMember] = js.undefined
+    }
+    object VoidFunctionComponent {
+      
+      inline def apply[P](): VoidFunctionComponent[P] = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[VoidFunctionComponent[P]]
+      }
+      
+      extension [Self <: VoidFunctionComponent[?], P](x: Self & VoidFunctionComponent[P]) {
+        
+        inline def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
+        
+        inline def setWhyDidYouRenderUndefined: Self = StObject.set(x, "whyDidYouRender", js.undefined)
+      }
+    }
   }
   
-  type ExtraHookToTrack = js.Tuple2[js.Any, String]
+  type ExtraHookToTrack = js.Tuple2[Any, String]
   
   trait HookDifference extends StObject {
     
     var diffType: String
     
-    var nextValue: js.Any
+    var nextValue: Any
     
     var pathString: String
     
-    var prevValue: js.Any
+    var prevValue: Any
   }
   object HookDifference {
     
-    inline def apply(diffType: String, nextValue: js.Any, pathString: String, prevValue: js.Any): HookDifference = {
+    inline def apply(diffType: String, nextValue: Any, pathString: String, prevValue: Any): HookDifference = {
       val __obj = js.Dynamic.literal(diffType = diffType.asInstanceOf[js.Any], nextValue = nextValue.asInstanceOf[js.Any], pathString = pathString.asInstanceOf[js.Any], prevValue = prevValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[HookDifference]
     }
@@ -95,11 +113,11 @@ object mod {
       
       inline def setDiffType(value: String): Self = StObject.set(x, "diffType", value.asInstanceOf[js.Any])
       
-      inline def setNextValue(value: js.Any): Self = StObject.set(x, "nextValue", value.asInstanceOf[js.Any])
+      inline def setNextValue(value: Any): Self = StObject.set(x, "nextValue", value.asInstanceOf[js.Any])
       
       inline def setPathString(value: String): Self = StObject.set(x, "pathString", value.asInstanceOf[js.Any])
       
-      inline def setPrevValue(value: js.Any): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
+      inline def setPrevValue(value: Any): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,7 +142,7 @@ object mod {
       
       inline def setHookDifferences(value: js.Array[HookDifference]): Self = StObject.set(x, "hookDifferences", value.asInstanceOf[js.Any])
       
-      inline def setHookDifferencesVarargs(value: HookDifference*): Self = StObject.set(x, "hookDifferences", js.Array(value :_*))
+      inline def setHookDifferencesVarargs(value: HookDifference*): Self = StObject.set(x, "hookDifferences", js.Array(value*))
       
       inline def setPropsDifferences(value: Boolean): Self = StObject.set(x, "propsDifferences", value.asInstanceOf[js.Any])
       
@@ -134,40 +152,40 @@ object mod {
   
   trait UpdateInfo extends StObject {
     
-    var Component: typings.react.mod.Component[js.Object, js.Object, js.Any]
+    var Component: typings.react.mod.Component[js.Object, js.Object, Any]
     
     var displayName: String
     
     var hookName: js.UndefOr[String] = js.undefined
     
-    var nextHook: js.Any
+    var nextHook: Any
     
-    var nextProps: js.Any
+    var nextProps: Any
     
-    var nextState: js.Any
+    var nextState: Any
     
     var options: WhyDidYouRenderOptions
     
-    var prevHook: js.Any
+    var prevHook: Any
     
-    var prevProps: js.Any
+    var prevProps: Any
     
-    var prevState: js.Any
+    var prevState: Any
     
     var reason: ReasonForUpdate
   }
   object UpdateInfo {
     
     inline def apply(
-      Component: Component[js.Object, js.Object, js.Any],
+      Component: Component[js.Object, js.Object, Any],
       displayName: String,
-      nextHook: js.Any,
-      nextProps: js.Any,
-      nextState: js.Any,
+      nextHook: Any,
+      nextProps: Any,
+      nextState: Any,
       options: WhyDidYouRenderOptions,
-      prevHook: js.Any,
-      prevProps: js.Any,
-      prevState: js.Any,
+      prevHook: Any,
+      prevProps: Any,
+      prevState: Any,
       reason: ReasonForUpdate
     ): UpdateInfo = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], nextHook = nextHook.asInstanceOf[js.Any], nextProps = nextProps.asInstanceOf[js.Any], nextState = nextState.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], prevHook = prevHook.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any], prevState = prevState.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
@@ -176,7 +194,7 @@ object mod {
     
     extension [Self <: UpdateInfo](x: Self) {
       
-      inline def setComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Component[js.Object, js.Object, Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -184,19 +202,19 @@ object mod {
       
       inline def setHookNameUndefined: Self = StObject.set(x, "hookName", js.undefined)
       
-      inline def setNextHook(value: js.Any): Self = StObject.set(x, "nextHook", value.asInstanceOf[js.Any])
+      inline def setNextHook(value: Any): Self = StObject.set(x, "nextHook", value.asInstanceOf[js.Any])
       
-      inline def setNextProps(value: js.Any): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
+      inline def setNextProps(value: Any): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
       
-      inline def setNextState(value: js.Any): Self = StObject.set(x, "nextState", value.asInstanceOf[js.Any])
+      inline def setNextState(value: Any): Self = StObject.set(x, "nextState", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: WhyDidYouRenderOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setPrevHook(value: js.Any): Self = StObject.set(x, "prevHook", value.asInstanceOf[js.Any])
+      inline def setPrevHook(value: Any): Self = StObject.set(x, "prevHook", value.asInstanceOf[js.Any])
       
-      inline def setPrevProps(value: js.Any): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: Any): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
-      inline def setPrevState(value: js.Any): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
+      inline def setPrevState(value: Any): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
       
       inline def setReason(value: ReasonForUpdate): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
@@ -214,11 +232,11 @@ object mod {
     
     var diffPathColor: js.UndefOr[String] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var exclude: js.UndefOr[js.Array[js.RegExp]] = js.undefined
     
     var hotReloadBufferMs: js.UndefOr[Double] = js.undefined
     
-    var include: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var include: js.UndefOr[js.Array[js.RegExp]] = js.undefined
     
     var logOnDifferentValues: js.UndefOr[Boolean] = js.undefined
     
@@ -261,21 +279,21 @@ object mod {
       
       inline def setDiffPathColorUndefined: Self = StObject.set(x, "diffPathColor", js.undefined)
       
-      inline def setExclude(value: js.Array[RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[js.RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: RegExp*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: js.RegExp*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setHotReloadBufferMs(value: Double): Self = StObject.set(x, "hotReloadBufferMs", value.asInstanceOf[js.Any])
       
       inline def setHotReloadBufferMsUndefined: Self = StObject.set(x, "hotReloadBufferMs", js.undefined)
       
-      inline def setInclude(value: js.Array[RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[js.RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: RegExp*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: js.RegExp*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setLogOnDifferentValues(value: Boolean): Self = StObject.set(x, "logOnDifferentValues", value.asInstanceOf[js.Any])
       
@@ -305,7 +323,7 @@ object mod {
       
       inline def setTrackExtraHooksUndefined: Self = StObject.set(x, "trackExtraHooks", js.undefined)
       
-      inline def setTrackExtraHooksVarargs(value: ExtraHookToTrack*): Self = StObject.set(x, "trackExtraHooks", js.Array(value :_*))
+      inline def setTrackExtraHooksVarargs(value: ExtraHookToTrack*): Self = StObject.set(x, "trackExtraHooks", js.Array(value*))
       
       inline def setTrackHooks(value: Boolean): Self = StObject.set(x, "trackHooks", value.asInstanceOf[js.Any])
       

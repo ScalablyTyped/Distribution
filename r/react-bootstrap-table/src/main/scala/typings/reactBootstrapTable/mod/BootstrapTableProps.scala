@@ -1,15 +1,14 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootstrapTableProps
-  extends StObject
-     with Props[BootstrapTable] {
+trait BootstrapTableProps extends StObject {
   
   /**
     * Automatically collapses open rows when doing a sort/filter/search action if those options have been specified.
@@ -36,7 +35,9 @@ trait BootstrapTableProps
   /**
     * Enable cell editing on table. cellEdit accept an object which have the following properties
     */
-  var cellEdit: js.UndefOr[CellEdit[js.Any]] = js.undefined
+  var cellEdit: js.UndefOr[CellEdit[Any]] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Enable column filter by setting columnFilter to true, default is false.
@@ -94,7 +95,7 @@ trait BootstrapTableProps
     * expandComponent is always used with expandableRow, both of props are enable
     * the expand row functionality on table.
     */
-  var expandComponent: js.UndefOr[js.Function1[/* row */ js.Any, String | ReactElement]] = js.undefined
+  var expandComponent: js.UndefOr[js.Function1[/* row */ Any, String | ReactElement]] = js.undefined
   
   /**
     * Tell react-bootstrap-table which rows are able to expand. This prop accepts
@@ -102,7 +103,7 @@ trait BootstrapTableProps
     * expandableRow is always used with expandComponent, both of props are enable
     * the expand row functionality on table.
     */
-  var expandableRow: js.UndefOr[js.Function1[/* row */ js.Any, Boolean]] = js.undefined
+  var expandableRow: js.UndefOr[js.Function1[/* row */ Any, Boolean]] = js.undefined
   
   /**
     * Enable export csv function, default is false.
@@ -196,12 +197,14 @@ trait BootstrapTableProps
   /**
     * For some options setting on this component, you can set the options attribute and give an object which contain following properties
     */
-  var options: js.UndefOr[Options[js.Any]] = js.undefined
+  var options: js.UndefOr[Options[Any]] = js.undefined
   
   /**
     * Enable pagination by setting pagination to true, default is false.
     */
   var pagination: js.UndefOr[Boolean] = js.undefined
+  
+  var ref: js.UndefOr[LegacyRef[BootstrapTable]] = js.undefined
   
   /**
     * Normally, react-bootstrap-table handles all the data sorting/filtering/pagination/etc itself internally.
@@ -239,7 +242,7 @@ trait BootstrapTableProps
   /**
     * Enable row selection on table. SelectRow accept an object.
     */
-  var selectRow: js.UndefOr[SelectRow[js.Any]] = js.undefined
+  var selectRow: js.UndefOr[SelectRow[Any]] = js.undefined
   
   /**
     * Strict search. Set this flag to apply search terms so that only rows that contain ALL terms are included in the
@@ -288,13 +291,13 @@ trait BootstrapTableProps
     *      return rowIndex % 2 == 0 ? "tr-odd" : "tr-even"; // return a class name.
     *    }
     */
-  var trClassName: js.UndefOr[String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, String])] = js.undefined
+  var trClassName: js.UndefOr[String | (js.Function2[/* rowData */ Any, /* rowIndex */ Double, String])] = js.undefined
   
   /**
     * Set a style to be used for the table rows. Example: https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/style/tr-style-table.js
     */
   var trStyle: js.UndefOr[
-    CSSProperties | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, CSSProperties])
+    CSSProperties | (js.Function2[/* rowData */ Any, /* rowIndex */ Double, CSSProperties])
   ] = js.undefined
   
   /**
@@ -333,9 +336,13 @@ object BootstrapTableProps {
     
     inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
     
-    inline def setCellEdit(value: CellEdit[js.Any]): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
+    inline def setCellEdit(value: CellEdit[Any]): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     
     inline def setCellEditUndefined: Self = StObject.set(x, "cellEdit", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setColumnFilter(value: Boolean): Self = StObject.set(x, "columnFilter", value.asInstanceOf[js.Any])
     
@@ -361,7 +368,7 @@ object BootstrapTableProps {
     
     inline def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDeleteRow(value: Boolean): Self = StObject.set(x, "deleteRow", value.asInstanceOf[js.Any])
     
@@ -375,11 +382,11 @@ object BootstrapTableProps {
     
     inline def setExpandColumnOptionsUndefined: Self = StObject.set(x, "expandColumnOptions", js.undefined)
     
-    inline def setExpandComponent(value: /* row */ js.Any => String | ReactElement): Self = StObject.set(x, "expandComponent", js.Any.fromFunction1(value))
+    inline def setExpandComponent(value: /* row */ Any => String | ReactElement): Self = StObject.set(x, "expandComponent", js.Any.fromFunction1(value))
     
     inline def setExpandComponentUndefined: Self = StObject.set(x, "expandComponent", js.undefined)
     
-    inline def setExpandableRow(value: /* row */ js.Any => Boolean): Self = StObject.set(x, "expandableRow", js.Any.fromFunction1(value))
+    inline def setExpandableRow(value: /* row */ Any => Boolean): Self = StObject.set(x, "expandableRow", js.Any.fromFunction1(value))
     
     inline def setExpandableRowUndefined: Self = StObject.set(x, "expandableRow", js.undefined)
     
@@ -397,7 +404,7 @@ object BootstrapTableProps {
     
     inline def setFooterDataUndefined: Self = StObject.set(x, "footerData", js.undefined)
     
-    inline def setFooterDataVarargs(value: js.Array[FooterData]*): Self = StObject.set(x, "footerData", js.Array(value :_*))
+    inline def setFooterDataVarargs(value: js.Array[FooterData]*): Self = StObject.set(x, "footerData", js.Array(value*))
     
     inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
@@ -445,13 +452,21 @@ object BootstrapTableProps {
     
     inline def setMultiColumnSortUndefined: Self = StObject.set(x, "multiColumnSort", js.undefined)
     
-    inline def setOptions(value: Options[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     inline def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
     inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+    
+    inline def setRef(value: LegacyRef[BootstrapTable]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ BootstrapTable | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     inline def setRemote(value: Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec])): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
@@ -475,7 +490,7 @@ object BootstrapTableProps {
     
     inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    inline def setSelectRow(value: SelectRow[js.Any]): Self = StObject.set(x, "selectRow", value.asInstanceOf[js.Any])
+    inline def setSelectRow(value: SelectRow[Any]): Self = StObject.set(x, "selectRow", value.asInstanceOf[js.Any])
     
     inline def setSelectRowUndefined: Self = StObject.set(x, "selectRow", js.undefined)
     
@@ -507,15 +522,15 @@ object BootstrapTableProps {
     
     inline def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
     
-    inline def setTrClassName(value: String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, String])): Self = StObject.set(x, "trClassName", value.asInstanceOf[js.Any])
+    inline def setTrClassName(value: String | (js.Function2[/* rowData */ Any, /* rowIndex */ Double, String])): Self = StObject.set(x, "trClassName", value.asInstanceOf[js.Any])
     
-    inline def setTrClassNameFunction2(value: (/* rowData */ js.Any, /* rowIndex */ Double) => String): Self = StObject.set(x, "trClassName", js.Any.fromFunction2(value))
+    inline def setTrClassNameFunction2(value: (/* rowData */ Any, /* rowIndex */ Double) => String): Self = StObject.set(x, "trClassName", js.Any.fromFunction2(value))
     
     inline def setTrClassNameUndefined: Self = StObject.set(x, "trClassName", js.undefined)
     
-    inline def setTrStyle(value: CSSProperties | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, CSSProperties])): Self = StObject.set(x, "trStyle", value.asInstanceOf[js.Any])
+    inline def setTrStyle(value: CSSProperties | (js.Function2[/* rowData */ Any, /* rowIndex */ Double, CSSProperties])): Self = StObject.set(x, "trStyle", value.asInstanceOf[js.Any])
     
-    inline def setTrStyleFunction2(value: (/* rowData */ js.Any, /* rowIndex */ Double) => CSSProperties): Self = StObject.set(x, "trStyle", js.Any.fromFunction2(value))
+    inline def setTrStyleFunction2(value: (/* rowData */ Any, /* rowIndex */ Double) => CSSProperties): Self = StObject.set(x, "trStyle", js.Any.fromFunction2(value))
     
     inline def setTrStyleUndefined: Self = StObject.set(x, "trStyle", js.undefined)
     

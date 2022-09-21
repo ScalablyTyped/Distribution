@@ -9,7 +9,7 @@ object resourceMod {
   
   @JSImport("@opentelemetry/resources/build/src/Resource", "Resource")
   @js.native
-  class Resource protected () extends StObject {
+  open class Resource protected () extends StObject {
     def this(/**
       * A dictionary of attributes with string keys and values that provide
       * information about the entity as numbers, strings or booleans
@@ -26,7 +26,7 @@ object resourceMod {
     
     /**
       * Returns a new, merged {@link Resource} by merging the current Resource
-      * with the other Resource. In case of a collision, current Resource takes
+      * with the other Resource. In case of a collision, other Resource takes
       * precedence.
       *
       * @param other the Resource that will be merged with this.
@@ -42,14 +42,14 @@ object resourceMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.EMPTY")
-    @js.native
-    val EMPTY: Resource = js.native
-    
     /**
       * Returns a Resource that indentifies the SDK in use.
       */
-    inline def createTelemetrySDKResource(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetrySDKResource")().asInstanceOf[Resource]
+    inline def default(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Resource]
+    
+    @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.EMPTY")
+    @js.native
+    val EMPTY: Resource = js.native
     
     /**
       * Returns an empty Resource

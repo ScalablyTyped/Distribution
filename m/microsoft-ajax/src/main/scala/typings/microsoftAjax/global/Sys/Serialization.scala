@@ -23,7 +23,7 @@ object Serialization {
   /**
     * Initializes a new instance of the Sys.Serialization.JavaScriptSerializer class.
     */
-  class JavaScriptSerializer ()
+  open class JavaScriptSerializer ()
     extends StObject
        with typings.microsoftAjax.Sys.Serialization.JavaScriptSerializer
   object JavaScriptSerializer {
@@ -34,24 +34,22 @@ object Serialization {
     
     /**
       * Converts a JSON string into an ECMAScript (JavaScript) object graph. This member is static and can be invoked without creating an instance of the class.
-      * @static
       * @param value
       *           The JSON string to deserialize.
       */
     /* static member */
-    inline def deserialize(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def deserialize(value: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     //#endregion
     //#region Methods
     /**
       * Converts an ECMAScript (JavaScript) object graph into a JSON string. This member is static and can be invoked without creating an instance of the class.
-      * @static
       * @param value
       *           The JavaScript object graph to serialize.
       * @exception Sys.ArgumentException
       *           value contains a value that cannot be serialized.
       */
     /* static member */
-    inline def serialize(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def serialize(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

@@ -23,6 +23,6 @@ trait MVCxClientBinaryImage
     * @param data Information that is passed to the server.
     * @param onSuccess A client action that is performed if a callback is completed successfully.
     */
-  def PerformCallback(data: js.Any): Unit = js.native
-  def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
+  def PerformCallback(data: Any): Unit = js.native
+  def PerformCallback(data: Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
 }

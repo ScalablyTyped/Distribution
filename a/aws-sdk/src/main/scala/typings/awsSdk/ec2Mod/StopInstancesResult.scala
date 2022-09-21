@@ -24,6 +24,6 @@ object StopInstancesResult {
     
     inline def setStoppingInstancesUndefined: Self = StObject.set(x, "StoppingInstances", js.undefined)
     
-    inline def setStoppingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "StoppingInstances", js.Array(value :_*))
+    inline def setStoppingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "StoppingInstances", js.Array(value*))
   }
 }

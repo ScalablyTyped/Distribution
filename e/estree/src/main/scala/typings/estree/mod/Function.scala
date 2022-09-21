@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.mod.FunctionExpression
   - typings.estree.mod.ArrowFunctionExpression
 */
-trait Function
-  extends StObject
-     with Node
+trait Function extends StObject
 object Function {
   
   inline def ArrowFunctionExpression(body: BlockStatement | Expression, expression: Boolean, params: js.Array[Pattern]): typings.estree.mod.ArrowFunctionExpression = {

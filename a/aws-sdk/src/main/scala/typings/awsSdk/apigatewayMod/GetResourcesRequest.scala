@@ -22,7 +22,7 @@ trait GetResourcesRequest extends StObject {
   var position: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }
@@ -39,7 +39,7 @@ object GetResourcesRequest {
     
     inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
-    inline def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value :_*))
+    inline def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value*))
     
     inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

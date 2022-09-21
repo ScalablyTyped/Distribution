@@ -10,10 +10,10 @@ The simplified HTTP request client 'request' with Promise support. Powered by Bl
 | ------------------ | :-------------: |
 | Full name          | request-promise |
 | Keywords           | xhr, http, https, promise, request, then, thenable, bluebird |
-| # releases         | 5 |
-| # dependents       | 5667 |
-| # downloads        | 129139454 |
-| # stars            | 200 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9519940.666666666 |
+| # stars            | 4759.0 |
 
 ## Links
 - [Homepage](https://github.com/request/request-promise#readme)

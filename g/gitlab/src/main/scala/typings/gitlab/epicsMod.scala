@@ -14,7 +14,7 @@ object epicsMod {
   
   @JSImport("gitlab/dist/types/core/services/Epics", "Epics")
   @js.native
-  class Epics () extends BaseService {
+  open class Epics () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(groupId: String): js.Promise[GetResponse] = js.native

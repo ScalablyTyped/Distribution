@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WeightedSound extends StObject {
   
-  /* private */ var _coneInnerAngle: js.Any = js.native
+  /* private */ var _coneInnerAngle: Any = js.native
   
-  /* private */ var _coneOuterAngle: js.Any = js.native
+  /* private */ var _coneOuterAngle: Any = js.native
   
-  /* private */ var _currentIndex: js.Any = js.native
+  /* private */ var _currentIndex: Any = js.native
   
-  /* private */ var _onended: js.Any = js.native
+  /* private */ var _onended: Any = js.native
   
-  /* private */ var _sounds: js.Any = js.native
+  /* private */ var _sounds: Any = js.native
   
-  /* private */ var _volume: js.Any = js.native
+  /* private */ var _volume: Any = js.native
   
-  /* private */ var _weights: js.Any = js.native
+  /* private */ var _weights: Any = js.native
   
   /**
     * The size of cone in degrees for a directional sound in which there will be no attenuation.
     */
   def directionalConeInnerAngle: Double = js.native
   /**
-    * The size of cone in degress for a directional sound in which there will be no attenuation.
+    * The size of cone in degrees for a directional sound in which there will be no attenuation.
     */
   def directionalConeInnerAngle_=(value: Double): Unit = js.native
   

@@ -46,14 +46,14 @@ trait XIntrospection
     * considered to be normal methods.
     * @see XIntrospectionAccess
     */
-  def inspect(aObject: js.Any): XIntrospectionAccess
+  def inspect(aObject: Any): XIntrospectionAccess
 }
 object XIntrospection {
   
   inline def apply(
     acquire: () => Unit,
-    inspect: js.Any => XIntrospectionAccess,
-    queryInterface: `type` => js.Any,
+    inspect: Any => XIntrospectionAccess,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XIntrospection = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), inspect = js.Any.fromFunction1(inspect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -62,6 +62,6 @@ object XIntrospection {
   
   extension [Self <: XIntrospection](x: Self) {
     
-    inline def setInspect(value: js.Any => XIntrospectionAccess): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
+    inline def setInspect(value: Any => XIntrospectionAccess): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
   }
 }

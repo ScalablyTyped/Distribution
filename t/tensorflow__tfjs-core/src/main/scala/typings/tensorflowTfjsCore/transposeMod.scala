@@ -15,4 +15,6 @@ object transposeMod {
   
   inline def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike, perm: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike, perm: js.Array[Double], conjugate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], conjugate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike, perm: Unit, conjugate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], conjugate.asInstanceOf[js.Any])).asInstanceOf[T]
 }

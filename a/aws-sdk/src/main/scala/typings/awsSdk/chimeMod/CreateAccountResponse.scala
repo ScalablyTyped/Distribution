@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateAccountResponse extends StObject {
   
+  /**
+    * The Amazon Chime account details.
+    */
   var Account: js.UndefOr[typings.awsSdk.chimeMod.Account] = js.undefined
 }
 object CreateAccountResponse {

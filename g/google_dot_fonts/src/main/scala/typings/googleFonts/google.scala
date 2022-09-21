@@ -58,11 +58,11 @@ object google {
         
         inline def setSubsets(value: js.Array[String]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
         
-        inline def setSubsetsVarargs(value: String*): Self = StObject.set(x, "subsets", js.Array(value :_*))
+        inline def setSubsetsVarargs(value: String*): Self = StObject.set(x, "subsets", js.Array(value*))
         
         inline def setVariants(value: js.Array[String]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
         
-        inline def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value :_*))
+        inline def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value*))
         
         inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
@@ -85,7 +85,7 @@ object google {
         
         inline def setItems(value: js.Array[WebfontFamily]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        inline def setItemsVarargs(value: WebfontFamily*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: WebfontFamily*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       }

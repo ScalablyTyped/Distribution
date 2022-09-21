@@ -9,7 +9,7 @@ trait GetSamplingTargetsResult extends StObject {
   /**
     * The last time a user changed the sampling rule configuration. If the sampling rule configuration changed since the service last retrieved it, the service should call GetSamplingRules to get the latest version.
     */
-  var LastRuleModification: js.UndefOr[Timestamp] = js.undefined
+  var LastRuleModification: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Updated rules that the service should use to sample requests.
@@ -30,7 +30,7 @@ object GetSamplingTargetsResult {
   
   extension [Self <: GetSamplingTargetsResult](x: Self) {
     
-    inline def setLastRuleModification(value: Timestamp): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
+    inline def setLastRuleModification(value: js.Date): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
     
     inline def setLastRuleModificationUndefined: Self = StObject.set(x, "LastRuleModification", js.undefined)
     
@@ -38,12 +38,12 @@ object GetSamplingTargetsResult {
     
     inline def setSamplingTargetDocumentsUndefined: Self = StObject.set(x, "SamplingTargetDocuments", js.undefined)
     
-    inline def setSamplingTargetDocumentsVarargs(value: SamplingTargetDocument*): Self = StObject.set(x, "SamplingTargetDocuments", js.Array(value :_*))
+    inline def setSamplingTargetDocumentsVarargs(value: SamplingTargetDocument*): Self = StObject.set(x, "SamplingTargetDocuments", js.Array(value*))
     
     inline def setUnprocessedStatistics(value: UnprocessedStatisticsList): Self = StObject.set(x, "UnprocessedStatistics", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedStatisticsUndefined: Self = StObject.set(x, "UnprocessedStatistics", js.undefined)
     
-    inline def setUnprocessedStatisticsVarargs(value: UnprocessedStatistics*): Self = StObject.set(x, "UnprocessedStatistics", js.Array(value :_*))
+    inline def setUnprocessedStatisticsVarargs(value: UnprocessedStatistics*): Self = StObject.set(x, "UnprocessedStatistics", js.Array(value*))
   }
 }

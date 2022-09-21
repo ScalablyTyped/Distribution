@@ -1,50 +1,82 @@
 package typings.awsSdk.connectparticipantMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ChatContent = java.lang.String
-
-type ChatContentType = java.lang.String
-
-type ChatItemId = java.lang.String
+type ArtifactId = String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.APPROVED
+  - typings.awsSdk.awsSdkStrings.REJECTED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - java.lang.String
+*/
+type ArtifactStatus = _ArtifactStatus | String
+
+type AttachmentIdList = js.Array[ArtifactId]
+
+type AttachmentName = String
+
+type AttachmentSizeInBytes = Double
+
+type Attachments = js.Array[AttachmentItem]
+
+type Bool = Boolean
+
+type ChatContent = String
+
+type ChatContentType = String
+
+type ChatItemId = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TYPING
+  - typings.awsSdk.awsSdkStrings.PARTICIPANT_JOINED
+  - typings.awsSdk.awsSdkStrings.PARTICIPANT_LEFT
+  - typings.awsSdk.awsSdkStrings.CHAT_ENDED
+  - typings.awsSdk.awsSdkStrings.TRANSFER_SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.TRANSFER_FAILED
   - typings.awsSdk.awsSdkStrings.MESSAGE
   - typings.awsSdk.awsSdkStrings.EVENT
+  - typings.awsSdk.awsSdkStrings.ATTACHMENT
   - typings.awsSdk.awsSdkStrings.CONNECTION_ACK
   - java.lang.String
 */
-type ChatItemType = typings.awsSdk.connectparticipantMod._ChatItemType | java.lang.String
+type ChatItemType = _ChatItemType | String
 
-type ClientToken = java.lang.String
+type ClientToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WEBSOCKET
   - typings.awsSdk.awsSdkStrings.CONNECTION_CREDENTIALS
   - java.lang.String
 */
-type ConnectionType = typings.awsSdk.connectparticipantMod._ConnectionType | java.lang.String
+type ConnectionType = _ConnectionType | String
 
-type ConnectionTypeList = js.Array[typings.awsSdk.connectparticipantMod.ConnectionType]
+type ConnectionTypeList = js.Array[ConnectionType]
 
-type ContactId = java.lang.String
+type ContactId = String
 
-type DisplayName = java.lang.String
+type ContentType = String
 
-type ISO8601Datetime = java.lang.String
+type DisplayName = String
 
-type Instant = java.lang.String
+type ISO8601Datetime = String
 
-type MaxResults = scala.Double
+type Instant = String
 
-type MostRecent = scala.Double
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type MostRecent = Double
 
-type ParticipantId = java.lang.String
+type NextToken = String
+
+type NonEmptyClientToken = String
+
+type ParticipantId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AGENT
@@ -52,31 +84,41 @@ type ParticipantId = java.lang.String
   - typings.awsSdk.awsSdkStrings.SYSTEM
   - java.lang.String
 */
-type ParticipantRole = typings.awsSdk.connectparticipantMod._ParticipantRole | java.lang.String
+type ParticipantRole = _ParticipantRole | String
 
-type ParticipantToken = java.lang.String
+type ParticipantToken = String
 
-type PreSignedConnectionUrl = java.lang.String
+type PreSignedAttachmentUrl = String
+
+type PreSignedConnectionUrl = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FORWARD
   - typings.awsSdk.awsSdkStrings.BACKWARD
   - java.lang.String
 */
-type ScanDirection = typings.awsSdk.connectparticipantMod._ScanDirection | java.lang.String
+type ScanDirection = _ScanDirection | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DESCENDING
   - typings.awsSdk.awsSdkStrings.ASCENDING
   - java.lang.String
 */
-type SortKey = typings.awsSdk.connectparticipantMod._SortKey | java.lang.String
+type SortKey = _SortKey | String
 
-type Transcript = js.Array[typings.awsSdk.connectparticipantMod.Item]
+type Transcript = js.Array[Item]
+
+type UploadMetadataSignedHeaders = StringDictionary[UploadMetadataSignedHeadersValue]
+
+type UploadMetadataSignedHeadersKey = String
+
+type UploadMetadataSignedHeadersValue = String
+
+type UploadMetadataUrl = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-09-07`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.connectparticipantMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

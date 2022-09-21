@@ -1,6 +1,5 @@
 package typings.reactRouterBootstrap
 
-import typings.history.mod.LocationState
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import typings.reactRouterDom.mod.NavLinkProps
@@ -17,10 +16,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-router-bootstrap", "IndexLinkContainer")
   @js.native
-  class IndexLinkContainerCls protected ()
-    extends Component[NavLinkProps[LocationState], ComponentState, js.Any] {
-    def this(props: NavLinkProps[LocationState]) = this()
-    def this(props: NavLinkProps[LocationState], context: js.Any) = this()
+  open class IndexLinkContainerCls protected () extends Component[NavLinkProps, ComponentState, Any] {
+    def this(props: NavLinkProps) = this()
+    def this(props: NavLinkProps, context: Any) = this()
   }
   
   @JSImport("react-router-bootstrap", "LinkContainer")
@@ -30,9 +28,8 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-router-bootstrap", "LinkContainer")
   @js.native
-  class LinkContainerCls protected ()
-    extends Component[NavLinkProps[LocationState], ComponentState, js.Any] {
-    def this(props: NavLinkProps[LocationState]) = this()
-    def this(props: NavLinkProps[LocationState], context: js.Any) = this()
+  open class LinkContainerCls protected () extends Component[NavLinkProps, ComponentState, Any] {
+    def this(props: NavLinkProps) = this()
+    def this(props: NavLinkProps, context: Any) = this()
   }
 }

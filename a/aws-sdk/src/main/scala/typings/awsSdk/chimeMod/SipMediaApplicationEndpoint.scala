@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SipMediaApplicationEndpoint extends StObject {
   
   /**
-    * Valid Amazon Resource Name (ARN) of the Lambda function of the same AWS Region where the SIP media application is created.
+    * Valid Amazon Resource Name (ARN) of the Lambda function. The function must be created in the same AWS Region as the SIP media application.
     */
   var LambdaArn: js.UndefOr[FunctionArn] = js.undefined
 }

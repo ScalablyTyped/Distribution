@@ -1,39 +1,33 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
+import typings.materialUiCore.materialUiCoreStrings.Numbersign000
+import typings.materialUiCore.materialUiCoreStrings.Numbersignfff
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object commonMod extends Shortcut {
+object commonMod {
   
-  @JSImport("@material-ui/core/colors/common", JSImport.Default)
-  @js.native
-  val default: CommonColors = js.native
-  
-  trait CommonColors extends StObject {
+  object default {
     
-    var black: String
+    @JSImport("@material-ui/core/colors/common", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var white: String
+    /**
+      * Preview: ![common black](https://mui.com/static/colors-preview/common-black-24x24.svg)
+      */
+    @JSImport("@material-ui/core/colors/common", "default.black")
+    @js.native
+    def black: Numbersign000 = js.native
+    inline def black_=(x: Numbersign000): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Preview: ![common white](https://mui.com/static/colors-preview/common-white-24x24.svg)
+      */
+    @JSImport("@material-ui/core/colors/common", "default.white")
+    @js.native
+    def white: Numbersignfff = js.native
+    inline def white_=(x: Numbersignfff): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
   }
-  object CommonColors {
-    
-    inline def apply(black: String, white: String): CommonColors = {
-      val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CommonColors]
-    }
-    
-    extension [Self <: CommonColors](x: Self) {
-      
-      inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
-      
-      inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type _To = CommonColors
-  
-  /* This means you don't have to write `default`, but can instead just say `commonMod.foo` */
-  override def _to: CommonColors = default
 }

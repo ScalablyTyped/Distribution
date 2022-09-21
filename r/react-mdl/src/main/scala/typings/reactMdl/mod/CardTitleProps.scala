@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CardTitleProps
   extends StObject
-     with HTMLProps[js.Any] {
+     with HTMLProps[Any] {
   
   var expand: js.UndefOr[Boolean] = js.undefined
 }

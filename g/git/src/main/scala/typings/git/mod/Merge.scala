@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "Merge")
 @js.native
-class Merge protected () extends StObject {
+open class Merge protected () extends StObject {
   def this(str: String) = this()
   
-  var conflicts: js.Any = js.native
+  var conflicts: Any = js.native
   
-  var sections: js.Any = js.native
+  var sections: Any = js.native
   
-  var text: js.Any = js.native
+  var text: Any = js.native
 }
 /* static members */
 object Merge {

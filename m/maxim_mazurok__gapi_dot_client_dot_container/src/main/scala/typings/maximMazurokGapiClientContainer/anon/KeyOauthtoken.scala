@@ -28,15 +28,15 @@ trait KeyOauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The parent (project and location) where the operations will be listed. Specified in the format `projects/∗/locations/ *`. Location "-" matches all zones and all regions. */
+  /** The parent (project and location) where the operations will be listed. Specified in the format `projects/ *‍/locations/ *`. Location "-" matches all zones and all regions. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the
-    * parent field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the parent field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   

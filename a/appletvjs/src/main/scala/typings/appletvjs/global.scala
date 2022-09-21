@@ -19,7 +19,7 @@ object global {
     
     @JSGlobal("AppleTVJS.Highlight")
     @js.native
-    class Highlight ()
+    open class Highlight ()
       extends StObject
          with typings.appletvjs.AppleTVJS.Highlight {
       
@@ -46,7 +46,7 @@ object global {
     
     @JSGlobal("AppleTVJS.HighlightGroup")
     @js.native
-    class HighlightGroup ()
+    open class HighlightGroup ()
       extends StObject
          with typings.appletvjs.AppleTVJS.HighlightGroup {
       
@@ -61,7 +61,7 @@ object global {
     
     @JSGlobal("AppleTVJS.Interstitial")
     @js.native
-    class Interstitial ()
+    open class Interstitial ()
       extends StObject
          with typings.appletvjs.AppleTVJS.Interstitial {
       
@@ -76,7 +76,7 @@ object global {
     
     @JSGlobal("AppleTVJS.MediaItem")
     @js.native
-    class MediaItem protected ()
+    open class MediaItem protected ()
       extends StObject
          with typings.appletvjs.AppleTVJS.MediaItem {
       /**
@@ -138,7 +138,7 @@ object global {
       /* CompleteClass */
       override def loadKey(
         url: String,
-        requestData: js.Any,
+        requestData: Any,
         callback: js.Function3[/* key */ String, /* renewalDate */ String, /* error */ String, Unit]
       ): Unit = js.native
       
@@ -174,13 +174,13 @@ object global {
     
     @JSGlobal("AppleTVJS.Player")
     @js.native
-    class Player ()
+    open class Player ()
       extends StObject
          with typings.appletvjs.AppleTVJS.Player
     
     @JSGlobal("AppleTVJS.Playlist")
     @js.native
-    class Playlist ()
+    open class Playlist ()
       extends StObject
          with typings.appletvjs.AppleTVJS.Playlist {
       
@@ -207,7 +207,7 @@ object global {
     
     @JSGlobal("AppleTVJS.TVError")
     @js.native
-    class TVError ()
+    open class TVError ()
       extends StObject
          with typings.appletvjs.AppleTVJS.TVError {
       
@@ -249,7 +249,7 @@ object global {
         * NSURLErrorFailingURLPeerTrustErrorKey
         * */
       /* CompleteClass */
-      var userInfo: js.Any = js.native
+      var userInfo: Any = js.native
     }
   }
   

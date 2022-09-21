@@ -12,7 +12,7 @@ trait FleetLaunchTemplateConfigRequest extends StObject {
   var LaunchTemplateSpecification: js.UndefOr[FleetLaunchTemplateSpecificationRequest] = js.undefined
   
   /**
-    * Any parameters that you specify override the same parameters in the launch template.
+    * Any parameters that you specify override the same parameters in the launch template. For fleets of type request and maintain, a maximum of 300 items is allowed across all launch templates.
     */
   var Overrides: js.UndefOr[FleetLaunchTemplateOverridesListRequest] = js.undefined
 }
@@ -33,6 +33,6 @@ object FleetLaunchTemplateConfigRequest {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "Overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: FleetLaunchTemplateOverridesRequest*): Self = StObject.set(x, "Overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: FleetLaunchTemplateOverridesRequest*): Self = StObject.set(x, "Overrides", js.Array(value*))
   }
 }

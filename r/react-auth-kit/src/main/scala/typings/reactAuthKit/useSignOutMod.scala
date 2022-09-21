@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useSignOutMod {
   
-  @JSImport("react-auth-kit/hooks/useSignOut", JSImport.Namespace)
+  @JSImport("react-auth-kit/dist/hooks/useSignOut", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

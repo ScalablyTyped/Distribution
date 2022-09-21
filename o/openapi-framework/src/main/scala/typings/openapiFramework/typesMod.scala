@@ -1,13 +1,13 @@
 package typings.openapiFramework
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.mod.KeywordDefinition
+import typings.ajv.distTypesMod.KeywordDefinition
 import typings.openapiFramework.anon.Coercer
+import typings.openapiFramework.anon.DefaultSetter
 import typings.openapiFramework.basePathMod.default
 import typings.openapiSecurityHandler.mod.SecurityHandlers
 import typings.openapiTypes.mod.IJsonSchema
 import typings.openapiTypes.mod.OpenAPIV2.Document
-import typings.std.RegExp
 import typings.tsLog.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ object typesMod {
   
   @JSImport("openapi-framework/dist/src/types", "ConsoleDebugAdapterLogger")
   @js.native
-  class ConsoleDebugAdapterLogger ()
+  open class ConsoleDebugAdapterLogger ()
     extends StObject
        with Logger
   
@@ -52,11 +52,11 @@ object typesMod {
     
     var basePaths: js.Array[default]
     
-    def getApiDoc(): js.Any
+    def getApiDoc(): Any
   }
   object OpenAPIFrameworkAPIContext {
     
-    inline def apply(basePaths: js.Array[default], getApiDoc: () => js.Any): OpenAPIFrameworkAPIContext = {
+    inline def apply(basePaths: js.Array[default], getApiDoc: () => Any): OpenAPIFrameworkAPIContext = {
       val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], getApiDoc = js.Any.fromFunction0(getApiDoc))
       __obj.asInstanceOf[OpenAPIFrameworkAPIContext]
     }
@@ -65,21 +65,21 @@ object typesMod {
       
       inline def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
-      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value*))
       
-      inline def setGetApiDoc(value: () => js.Any): Self = StObject.set(x, "getApiDoc", js.Any.fromFunction0(value))
+      inline def setGetApiDoc(value: () => Any): Self = StObject.set(x, "getApiDoc", js.Any.fromFunction0(value))
     }
   }
   
   trait OpenAPIFrameworkArgs extends StObject {
     
-    var apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String
+    var apiDoc: Document[js.Object] | typings.openapiTypes.mod.OpenAPIV3.Document[js.Object] | String
     
-    var customFormats: js.UndefOr[StringDictionary[js.Function1[/* arg */ js.Any, Boolean]]] = js.undefined
+    var customFormats: js.UndefOr[StringDictionary[js.Function1[/* arg */ Any, Boolean]]] = js.undefined
     
     var customKeywords: js.UndefOr[StringDictionary[KeywordDefinition]] = js.undefined
     
-    var dependencies: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var dependencies: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var enableObjectCoercion: js.UndefOr[Boolean] = js.undefined
     
@@ -87,19 +87,25 @@ object typesMod {
     
     var externalSchemas: js.UndefOr[StringDictionary[IJsonSchema]] = js.undefined
     
+    var features: js.UndefOr[Coercer] = js.undefined
+    
     var logger: js.UndefOr[Logger] = js.undefined
     
-    var operations: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]] = js.undefined
+    var operations: js.UndefOr[
+        StringDictionary[
+          (js.Function1[/* repeated */ Any, Any]) | (js.Array[js.Function1[/* repeated */ Any, Any]])
+        ]
+      ] = js.undefined
     
     var pathSecurity: js.UndefOr[js.Array[PathSecurityTuple]] = js.undefined
     
     var paths: js.UndefOr[String | js.Array[OpenAPIFrameworkPathObject]] = js.undefined
     
-    var pathsIgnore: js.UndefOr[RegExp] = js.undefined
+    var pathsIgnore: js.UndefOr[js.RegExp] = js.undefined
     
     var routesGlob: js.UndefOr[String] = js.undefined
     
-    var routesIndexFileRegExp: js.UndefOr[RegExp] = js.undefined
+    var routesIndexFileRegExp: js.UndefOr[js.RegExp] = js.undefined
     
     var securityHandlers: js.UndefOr[SecurityHandlers] = js.undefined
     
@@ -107,16 +113,16 @@ object typesMod {
   }
   object OpenAPIFrameworkArgs {
     
-    inline def apply(apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String): OpenAPIFrameworkArgs = {
+    inline def apply(apiDoc: Document[js.Object] | typings.openapiTypes.mod.OpenAPIV3.Document[js.Object] | String): OpenAPIFrameworkArgs = {
       val __obj = js.Dynamic.literal(apiDoc = apiDoc.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIFrameworkArgs]
     }
     
     extension [Self <: OpenAPIFrameworkArgs](x: Self) {
       
-      inline def setApiDoc(value: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
+      inline def setApiDoc(value: Document[js.Object] | typings.openapiTypes.mod.OpenAPIV3.Document[js.Object] | String): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       
-      inline def setCustomFormats(value: StringDictionary[js.Function1[/* arg */ js.Any, Boolean]]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+      inline def setCustomFormats(value: StringDictionary[js.Function1[/* arg */ Any, Boolean]]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
       
       inline def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
       
@@ -124,7 +130,7 @@ object typesMod {
       
       inline def setCustomKeywordsUndefined: Self = StObject.set(x, "customKeywords", js.undefined)
       
-      inline def setDependencies(value: StringDictionary[js.Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
@@ -140,11 +146,19 @@ object typesMod {
       
       inline def setExternalSchemasUndefined: Self = StObject.set(x, "externalSchemas", js.undefined)
       
+      inline def setFeatures(value: Coercer): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      inline def setOperations(value: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(
+        value: StringDictionary[
+              (js.Function1[/* repeated */ Any, Any]) | (js.Array[js.Function1[/* repeated */ Any, Any]])
+            ]
+      ): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
       inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
       
@@ -152,23 +166,23 @@ object typesMod {
       
       inline def setPathSecurityUndefined: Self = StObject.set(x, "pathSecurity", js.undefined)
       
-      inline def setPathSecurityVarargs(value: PathSecurityTuple*): Self = StObject.set(x, "pathSecurity", js.Array(value :_*))
+      inline def setPathSecurityVarargs(value: PathSecurityTuple*): Self = StObject.set(x, "pathSecurity", js.Array(value*))
       
       inline def setPaths(value: String | js.Array[OpenAPIFrameworkPathObject]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      inline def setPathsIgnore(value: RegExp): Self = StObject.set(x, "pathsIgnore", value.asInstanceOf[js.Any])
+      inline def setPathsIgnore(value: js.RegExp): Self = StObject.set(x, "pathsIgnore", value.asInstanceOf[js.Any])
       
       inline def setPathsIgnoreUndefined: Self = StObject.set(x, "pathsIgnore", js.undefined)
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: OpenAPIFrameworkPathObject*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: OpenAPIFrameworkPathObject*): Self = StObject.set(x, "paths", js.Array(value*))
       
       inline def setRoutesGlob(value: String): Self = StObject.set(x, "routesGlob", value.asInstanceOf[js.Any])
       
       inline def setRoutesGlobUndefined: Self = StObject.set(x, "routesGlob", js.undefined)
       
-      inline def setRoutesIndexFileRegExp(value: RegExp): Self = StObject.set(x, "routesIndexFileRegExp", value.asInstanceOf[js.Any])
+      inline def setRoutesIndexFileRegExp(value: js.RegExp): Self = StObject.set(x, "routesIndexFileRegExp", value.asInstanceOf[js.Any])
       
       inline def setRoutesIndexFileRegExpUndefined: Self = StObject.set(x, "routesIndexFileRegExp", js.undefined)
       
@@ -193,7 +207,7 @@ object typesMod {
   object OpenAPIFrameworkConstructorArgs {
     
     inline def apply(
-      apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String,
+      apiDoc: Document[js.Object] | typings.openapiTypes.mod.OpenAPIV3.Document[js.Object] | String,
       featureType: String,
       name: String
     ): OpenAPIFrameworkConstructorArgs = {
@@ -211,41 +225,41 @@ object typesMod {
   
   trait OpenAPIFrameworkOperationContext extends StObject {
     
-    var additionalFeatures: js.Array[js.Any]
+    var additionalFeatures: js.Array[Any]
     
     var allowsFeatures: Boolean
     
-    var apiDoc: js.Any
+    var apiDoc: Any
     
     var basePaths: js.Array[default]
     
     var consumes: js.Array[String]
     
-    var features: Coercer
+    var features: DefaultSetter
     
     var methodName: String
     
-    var methodParameters: js.Array[js.Any]
+    var methodParameters: js.Array[Any]
     
-    var operationDoc: js.Any
+    var operationDoc: Any
     
-    var operationHandler: js.Any
+    var operationHandler: Any
     
     var path: String
   }
   object OpenAPIFrameworkOperationContext {
     
     inline def apply(
-      additionalFeatures: js.Array[js.Any],
+      additionalFeatures: js.Array[Any],
       allowsFeatures: Boolean,
-      apiDoc: js.Any,
+      apiDoc: Any,
       basePaths: js.Array[default],
       consumes: js.Array[String],
-      features: Coercer,
+      features: DefaultSetter,
       methodName: String,
-      methodParameters: js.Array[js.Any],
-      operationDoc: js.Any,
-      operationHandler: js.Any,
+      methodParameters: js.Array[Any],
+      operationDoc: Any,
+      operationHandler: Any,
       path: String
     ): OpenAPIFrameworkOperationContext = {
       val __obj = js.Dynamic.literal(additionalFeatures = additionalFeatures.asInstanceOf[js.Any], allowsFeatures = allowsFeatures.asInstanceOf[js.Any], apiDoc = apiDoc.asInstanceOf[js.Any], basePaths = basePaths.asInstanceOf[js.Any], consumes = consumes.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], methodParameters = methodParameters.asInstanceOf[js.Any], operationDoc = operationDoc.asInstanceOf[js.Any], operationHandler = operationHandler.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
@@ -254,33 +268,33 @@ object typesMod {
     
     extension [Self <: OpenAPIFrameworkOperationContext](x: Self) {
       
-      inline def setAdditionalFeatures(value: js.Array[js.Any]): Self = StObject.set(x, "additionalFeatures", value.asInstanceOf[js.Any])
+      inline def setAdditionalFeatures(value: js.Array[Any]): Self = StObject.set(x, "additionalFeatures", value.asInstanceOf[js.Any])
       
-      inline def setAdditionalFeaturesVarargs(value: js.Any*): Self = StObject.set(x, "additionalFeatures", js.Array(value :_*))
+      inline def setAdditionalFeaturesVarargs(value: Any*): Self = StObject.set(x, "additionalFeatures", js.Array(value*))
       
       inline def setAllowsFeatures(value: Boolean): Self = StObject.set(x, "allowsFeatures", value.asInstanceOf[js.Any])
       
-      inline def setApiDoc(value: js.Any): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
+      inline def setApiDoc(value: Any): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       
       inline def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
-      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value*))
       
       inline def setConsumes(value: js.Array[String]): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
       
-      inline def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value :_*))
+      inline def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value*))
       
-      inline def setFeatures(value: Coercer): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: DefaultSetter): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
       inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      inline def setMethodParameters(value: js.Array[js.Any]): Self = StObject.set(x, "methodParameters", value.asInstanceOf[js.Any])
+      inline def setMethodParameters(value: js.Array[Any]): Self = StObject.set(x, "methodParameters", value.asInstanceOf[js.Any])
       
-      inline def setMethodParametersVarargs(value: js.Any*): Self = StObject.set(x, "methodParameters", js.Array(value :_*))
+      inline def setMethodParametersVarargs(value: Any*): Self = StObject.set(x, "methodParameters", js.Array(value*))
       
-      inline def setOperationDoc(value: js.Any): Self = StObject.set(x, "operationDoc", value.asInstanceOf[js.Any])
+      inline def setOperationDoc(value: Any): Self = StObject.set(x, "operationDoc", value.asInstanceOf[js.Any])
       
-      inline def setOperationHandler(value: js.Any): Self = StObject.set(x, "operationHandler", value.asInstanceOf[js.Any])
+      inline def setOperationHandler(value: Any): Self = StObject.set(x, "operationHandler", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -290,13 +304,13 @@ object typesMod {
     
     var basePaths: js.Array[default]
     
-    def getApiDoc(): js.Any
+    def getApiDoc(): Any
     
-    def getPathDoc(): js.Any
+    def getPathDoc(): Any
   }
   object OpenAPIFrameworkPathContext {
     
-    inline def apply(basePaths: js.Array[default], getApiDoc: () => js.Any, getPathDoc: () => js.Any): OpenAPIFrameworkPathContext = {
+    inline def apply(basePaths: js.Array[default], getApiDoc: () => Any, getPathDoc: () => Any): OpenAPIFrameworkPathContext = {
       val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], getApiDoc = js.Any.fromFunction0(getApiDoc), getPathDoc = js.Any.fromFunction0(getPathDoc))
       __obj.asInstanceOf[OpenAPIFrameworkPathContext]
     }
@@ -305,17 +319,17 @@ object typesMod {
       
       inline def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
-      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+      inline def setBasePathsVarargs(value: default*): Self = StObject.set(x, "basePaths", js.Array(value*))
       
-      inline def setGetApiDoc(value: () => js.Any): Self = StObject.set(x, "getApiDoc", js.Any.fromFunction0(value))
+      inline def setGetApiDoc(value: () => Any): Self = StObject.set(x, "getApiDoc", js.Any.fromFunction0(value))
       
-      inline def setGetPathDoc(value: () => js.Any): Self = StObject.set(x, "getPathDoc", js.Any.fromFunction0(value))
+      inline def setGetPathDoc(value: () => Any): Self = StObject.set(x, "getPathDoc", js.Any.fromFunction0(value))
     }
   }
   
   trait OpenAPIFrameworkPathObject extends StObject {
     
-    var module: js.UndefOr[js.Any] = js.undefined
+    var module: js.UndefOr[Any] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
   }
@@ -328,7 +342,7 @@ object typesMod {
     
     extension [Self <: OpenAPIFrameworkPathObject](x: Self) {
       
-      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
       inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
@@ -369,7 +383,7 @@ object typesMod {
     }
   }
   
-  type PathSecurityTuple = js.Tuple2[RegExp, js.Array[SecurityRequirement]]
+  type PathSecurityTuple = js.Tuple2[js.RegExp, js.Array[SecurityRequirement]]
   
   type SecurityRequirement = StringDictionary[js.Array[SecurityScope]]
   

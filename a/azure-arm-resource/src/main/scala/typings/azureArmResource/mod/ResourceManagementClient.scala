@@ -11,7 +11,7 @@ object ResourceManagementClient {
   
   @JSImport("azure-arm-resource", "ResourceManagementClient.default")
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.azureArmResource.resourceManagementClientMod.default {
     /**
       * Initializes a new instance of the ResourceManagementClient class.
@@ -58,7 +58,7 @@ object ResourceManagementClient {
   
   @JSImport("azure-arm-resource", "ResourceManagementClient.ResourceManagementClient")
   @js.native
-  class ResourceManagementClient protected ()
+  open class ResourceManagementClient protected ()
     extends typings.azureArmResource.resourceManagementClientMod.ResourceManagementClient {
     /**
       * Initializes a new instance of the ResourceManagementClient class.
@@ -107,12 +107,12 @@ object ResourceManagementClient {
     
     @JSImport("azure-arm-resource", "ResourceManagementClient.ResourceManagementModels.BaseResource")
     @js.native
-    class BaseResource ()
+    open class BaseResource ()
       extends typings.azureArmResource.resourceManagementClientMod.ResourceManagementModels.BaseResource
     
     @JSImport("azure-arm-resource", "ResourceManagementClient.ResourceManagementModels.CloudError")
     @js.native
-    class CloudError protected ()
+    open class CloudError protected ()
       extends typings.azureArmResource.resourceManagementClientMod.ResourceManagementModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }

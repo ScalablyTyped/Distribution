@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ForExpression
   extends StObject
      with PartialStatement
-     with Instantiable3[/* prev */ PartialStatement, /* varname */ js.Any, /* expr */ js.Any, PartialStatement] {
+     with Instantiable3[/* prev */ PartialStatement, /* varname */ Any, /* expr */ Any, PartialStatement] {
   
   var _varname: Identifier = js.native
   

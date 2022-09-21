@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration for the PodSecurityPolicy feature.
-  */
 trait SchemaPodSecurityPolicyConfig extends StObject {
   
   /**
-    * Enable the PodSecurityPolicy controller for this cluster. If enabled,
-    * pods must be valid under a PodSecurityPolicy to be created.
+    * Enable the PodSecurityPolicy controller for this cluster. If enabled, pods must be valid under a PodSecurityPolicy to be created.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaPodSecurityPolicyConfig {
   
@@ -25,6 +21,8 @@ object SchemaPodSecurityPolicyConfig {
   extension [Self <: SchemaPodSecurityPolicyConfig](x: Self) {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledNull: Self = StObject.set(x, "enabled", null)
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }

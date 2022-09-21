@@ -39,7 +39,7 @@ object DescribeParametersRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: ParametersFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ParametersFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object DescribeParametersRequest {
     
     inline def setParameterFiltersUndefined: Self = StObject.set(x, "ParameterFilters", js.undefined)
     
-    inline def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = StObject.set(x, "ParameterFilters", js.Array(value :_*))
+    inline def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = StObject.set(x, "ParameterFilters", js.Array(value*))
   }
 }

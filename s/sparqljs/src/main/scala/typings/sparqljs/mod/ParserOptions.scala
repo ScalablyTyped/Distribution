@@ -1,8 +1,8 @@
 package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rdfJs.mod.DataFactory
-import typings.rdfJs.mod.Quad
+import typings.rdfjsTypes.dataModelMod.DataFactory
+import typings.rdfjsTypes.dataModelMod.Quad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

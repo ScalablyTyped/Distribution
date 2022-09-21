@@ -24,6 +24,6 @@ object GetInstancePortStatesResult {
     
     inline def setPortStatesUndefined: Self = StObject.set(x, "portStates", js.undefined)
     
-    inline def setPortStatesVarargs(value: InstancePortState*): Self = StObject.set(x, "portStates", js.Array(value :_*))
+    inline def setPortStatesVarargs(value: InstancePortState*): Self = StObject.set(x, "portStates", js.Array(value*))
   }
 }

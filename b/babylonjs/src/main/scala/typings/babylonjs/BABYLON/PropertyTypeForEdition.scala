@@ -22,6 +22,12 @@ object PropertyTypeForEdition extends StObject {
     extends StObject
        with PropertyTypeForEdition
   
+  /** property is a int */
+  @js.native
+  sealed trait Int
+    extends StObject
+       with PropertyTypeForEdition
+  
   /** property is a list of values */
   @js.native
   sealed trait List

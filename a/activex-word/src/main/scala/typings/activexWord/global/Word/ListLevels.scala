@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ListLevels")
 @js.native
-/* private */ class ListLevels ()
+/* private */ open class ListLevels ()
   extends StObject
      with typings.activexWord.Word.ListLevels {
   
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Index: Double): typings.activexWord.Word.ListLevel = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.ListLevels_typekey")

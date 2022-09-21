@@ -1,10 +1,10 @@
 package typings.powerappsComponentFramework.ComponentFramework.PropertyHelper
 
 import typings.powerappsComponentFramework.ComponentFramework.EntityReference
+import typings.powerappsComponentFramework.ComponentFramework.LookupValue
 import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.DataSetApi.Types.ConditionOperator
 import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.DataSetApi.Types.FilterOperator
 import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.DataSetApi.Types.SortDirection
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,7 +147,7 @@ object DataSetApi {
       
       inline def setValue(value: String | js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -176,7 +176,7 @@ object DataSetApi {
       * Get the raw value of the record's column
       * @param columnName Column name of the record
       */
-    def getValue(columnName: String): String | Date | Double | (js.Array[Double | EntityReference]) | Boolean | EntityReference
+    def getValue(columnName: String): String | js.Date | Double | (js.Array[Double | EntityReference | LookupValue]) | Boolean | EntityReference | LookupValue
   }
   object EntityRecord {
     
@@ -184,7 +184,7 @@ object DataSetApi {
       getFormattedValue: String => String,
       getNamedReference: () => EntityReference,
       getRecordId: () => String,
-      getValue: String => String | Date | Double | (js.Array[Double | EntityReference]) | Boolean | EntityReference
+      getValue: String => String | js.Date | Double | (js.Array[Double | EntityReference | LookupValue]) | Boolean | EntityReference | LookupValue
     ): EntityRecord = {
       val __obj = js.Dynamic.literal(getFormattedValue = js.Any.fromFunction1(getFormattedValue), getNamedReference = js.Any.fromFunction0(getNamedReference), getRecordId = js.Any.fromFunction0(getRecordId), getValue = js.Any.fromFunction1(getValue))
       __obj.asInstanceOf[EntityRecord]
@@ -199,7 +199,7 @@ object DataSetApi {
       inline def setGetRecordId(value: () => String): Self = StObject.set(x, "getRecordId", js.Any.fromFunction0(value))
       
       inline def setGetValue(
-        value: String => String | Date | Double | (js.Array[Double | EntityReference]) | Boolean | EntityReference
+        value: String => String | js.Date | Double | (js.Array[Double | EntityReference | LookupValue]) | Boolean | EntityReference | LookupValue
       ): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     }
   }
@@ -235,7 +235,7 @@ object DataSetApi {
       
       inline def setConditions(value: js.Array[ConditionExpression]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      inline def setConditionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+      inline def setConditionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "conditions", js.Array(value*))
       
       inline def setFilterOperator(value: FilterOperator): Self = StObject.set(x, "filterOperator", value.asInstanceOf[js.Any])
       
@@ -243,7 +243,7 @@ object DataSetApi {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: FilterExpression*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: FilterExpression*): Self = StObject.set(x, "filters", js.Array(value*))
     }
   }
   
@@ -264,7 +264,7 @@ object DataSetApi {
     
     /**
       * Sets the top-most filter associated with the data-set
-      * @expression filter expression to be set
+      * @param expression filter expression to be set
       */
     def setFilter(expression: FilterExpression): Unit
   }
@@ -343,6 +343,7 @@ object DataSetApi {
     
     /**
       * Add a new linked entity relationship with the existed query primary entity
+      * @param expression The new linked entity to add
       */
     def addLinkedEntity(expression: LinkEntityExposedExpression): Unit
     
@@ -372,75 +373,71 @@ object DataSetApi {
   /**
     * Paging state for a dataset
     */
+  @js.native
   trait Paging extends StObject {
+    
+    /**
+      * The number of the first page to retrieve
+      */
+    var firstPageNumber: Double = js.native
     
     /**
       * Whether the result set can be paged forwards.
       */
-    var hasNextPage: Boolean
+    var hasNextPage: Boolean = js.native
     
     /**
       * Whether the result set can be paged backwards.
       */
-    var hasPreviousPage: Boolean
+    var hasPreviousPage: Boolean = js.native
     
     /**
-      * Request the next page of results to be loaded. New data will be pushed to control in another 'updateView' cycle.
+      * The number of the last page to retrieve
       */
-    def loadNextPage(): Unit
+    var lastPageNumber: Double = js.native
     
     /**
-      * Request the previous page of results to be loaded. New data will be pushed to control in another 'updateView' cycle.
+      * Request the exact page of results to be loaded.
+      * @param pageNumber exact page to be loaded.
       */
-    def loadPreviousPage(): Unit
+    def loadExactPage(pageNumber: Double): Unit = js.native
+    
+    /**
+      * Request the next page of results to be loaded. Returns results for the whole page range.
+      * New data will be pushed to control in another 'updateView' cycle.
+      * @param loadOnlyNewPage Limits return value to only newly loaded page.
+      */
+    def loadNextPage(): Unit = js.native
+    def loadNextPage(loadOnlyNewPage: Boolean): Unit = js.native
+    
+    /**
+      * Request the previous page of results to be loaded. Returns results for the whole page range.
+      * New data will be pushed to control in another 'updateView' cycle.
+      * @param loadOnlyNewPage Limits return value to only newly loaded page.
+      */
+    def loadPreviousPage(): Unit = js.native
+    def loadPreviousPage(loadOnlyNewPage: Boolean): Unit = js.native
+    
+    /**
+      * The pagesize for each page retrieved
+      */
+    var pageSize: Double = js.native
     
     /**
       * Reload the results from the server, and reset to page 1.
       */
-    def reset(): Unit
+    def reset(): Unit = js.native
     
     /**
       * Sets the number of results to return per page on the next data refresh.
-      * @pageSize pageSize to be set.
+      * @param pageSize pageSize to be set.
       */
-    def setPageSize(pageSize: Double): Unit
+    def setPageSize(pageSize: Double): Unit = js.native
     
     /**
-      * Total number of results on the server for the current query.
+      * Total number of results on the server for the currently applied query.
       */
-    var totalResultCount: Double
-  }
-  object Paging {
-    
-    inline def apply(
-      hasNextPage: Boolean,
-      hasPreviousPage: Boolean,
-      loadNextPage: () => Unit,
-      loadPreviousPage: () => Unit,
-      reset: () => Unit,
-      setPageSize: Double => Unit,
-      totalResultCount: Double
-    ): Paging = {
-      val __obj = js.Dynamic.literal(hasNextPage = hasNextPage.asInstanceOf[js.Any], hasPreviousPage = hasPreviousPage.asInstanceOf[js.Any], loadNextPage = js.Any.fromFunction0(loadNextPage), loadPreviousPage = js.Any.fromFunction0(loadPreviousPage), reset = js.Any.fromFunction0(reset), setPageSize = js.Any.fromFunction1(setPageSize), totalResultCount = totalResultCount.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Paging]
-    }
-    
-    extension [Self <: Paging](x: Self) {
-      
-      inline def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
-      
-      inline def setHasPreviousPage(value: Boolean): Self = StObject.set(x, "hasPreviousPage", value.asInstanceOf[js.Any])
-      
-      inline def setLoadNextPage(value: () => Unit): Self = StObject.set(x, "loadNextPage", js.Any.fromFunction0(value))
-      
-      inline def setLoadPreviousPage(value: () => Unit): Self = StObject.set(x, "loadPreviousPage", js.Any.fromFunction0(value))
-      
-      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
-      
-      inline def setSetPageSize(value: Double => Unit): Self = StObject.set(x, "setPageSize", js.Any.fromFunction1(value))
-      
-      inline def setTotalResultCount(value: Double): Self = StObject.set(x, "totalResultCount", value.asInstanceOf[js.Any])
-    }
+    var totalResultCount: Double = js.native
   }
   
   /**

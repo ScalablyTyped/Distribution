@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "LensFlareSystemSceneComponent")
 @js.native
-class LensFlareSystemSceneComponent protected ()
+open class LensFlareSystemSceneComponent protected ()
   extends typings.babylonjs.legacyMod.LensFlareSystemSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

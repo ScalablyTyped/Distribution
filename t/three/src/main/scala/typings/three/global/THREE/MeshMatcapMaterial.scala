@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.MeshMatcapMaterial")
 @js.native
-class MeshMatcapMaterial ()
+open class MeshMatcapMaterial ()
   extends typings.three.mod.MeshMatcapMaterial {
   def this(parameters: MeshMatcapMaterialParameters) = this()
 }

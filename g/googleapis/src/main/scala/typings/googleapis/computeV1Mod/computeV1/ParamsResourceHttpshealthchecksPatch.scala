@@ -1,8 +1,5 @@
 package typings.googleapis.computeV1Mod.computeV1
 
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceHttpshealthchecksPatch
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the HttpsHealthCheck resource to patch.
@@ -32,16 +24,7 @@ trait ParamsResourceHttpshealthchecksPatch
   var requestBody: js.UndefOr[SchemaHttpsHealthCheck] = js.undefined
   
   /**
-    * An optional request ID to identify requests. Specify a unique request ID
-    * so that if you must retry your request, the server will know to ignore
-    * the request if it has already been completed.  For example, consider a
-    * situation where you make an initial request and the request times out. If
-    * you make the request again with the same request ID, the server can check
-    * if original operation with the same request ID was received, and if so,
-    * will ignore the second request. This prevents clients from accidentally
-    * creating duplicate commitments.  The request ID must be a valid UUID with
-    * the exception that zero UUID is not supported
-    * (00000000-0000-0000-0000-000000000000).
+    * An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
     */
   var requestId: js.UndefOr[String] = js.undefined
 }
@@ -53,10 +36,6 @@ object ParamsResourceHttpshealthchecksPatch {
   }
   
   extension [Self <: ParamsResourceHttpshealthchecksPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setHttpsHealthCheck(value: String): Self = StObject.set(x, "httpsHealthCheck", value.asInstanceOf[js.Any])
     

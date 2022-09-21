@@ -61,7 +61,7 @@ object DescribeSnapshotScheduleOutput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTimezone(value: GatewayTimezone): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,7 @@ object IDataBinInfo {
     
     inline def setContainedPushpins(value: js.Array[Pushpin]): Self = StObject.set(x, "containedPushpins", value.asInstanceOf[js.Any])
     
-    inline def setContainedPushpinsVarargs(value: Pushpin*): Self = StObject.set(x, "containedPushpins", js.Array(value :_*))
+    inline def setContainedPushpinsVarargs(value: Pushpin*): Self = StObject.set(x, "containedPushpins", js.Array(value*))
     
     inline def setMetrics(value: IDataBinMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
   }

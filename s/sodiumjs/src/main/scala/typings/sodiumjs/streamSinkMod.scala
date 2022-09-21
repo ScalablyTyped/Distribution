@@ -10,13 +10,13 @@ object streamSinkMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/StreamSink", "StreamSink")
   @js.native
-  class StreamSink[A] () extends StreamWithSend[A] {
+  open class StreamSink[A] () extends StreamWithSend[A] {
     def this(f: js.Function2[/* l */ A, /* r */ A, A]) = this()
     def this(f: Lambda2_[A, A, A]) = this()
     
-    /* private */ var coalescer: js.Any = js.native
+    /* private */ var coalescer: Any = js.native
     
-    /* private */ var disableListenCheck: js.Any = js.native
+    /* private */ var disableListenCheck: Any = js.native
     
     def send(a: A): Unit = js.native
   }

@@ -15,14 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides HTTP content that uses name/value data encoded with the application/x-www-form-urlencoded MIME type. */
 @JSGlobal("Windows.Web.Http.HttpFormUrlEncodedContent")
 @js.native
-class HttpFormUrlEncodedContent protected ()
+open class HttpFormUrlEncodedContent protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpFormUrlEncodedContent {
   /**
     * Initializes a new instance of the HttpFormUrlEncodedContent class with the specified content.
     * @param content The content used to initialize the HttpFormUrlEncodedContent .
     */
-  def this(content: IIterable[IKeyValuePair[js.Any, js.Any]]) = this()
+  def this(content: IIterable[IKeyValuePair[Any, Any]]) = this()
   
   /**
     * Serialize the HttpFormUrlEncodedContent into memory as an asynchronous operation.

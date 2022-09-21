@@ -269,6 +269,20 @@ trait StepFunctions extends Service {
   ): Request[StartExecutionOutput, AWSError] = js.native
   
   /**
+    * Starts a Synchronous Express state machine execution.
+    */
+  def startSyncExecution(): Request[StartSyncExecutionOutput, AWSError] = js.native
+  def startSyncExecution(callback: js.Function2[/* err */ AWSError, /* data */ StartSyncExecutionOutput, Unit]): Request[StartSyncExecutionOutput, AWSError] = js.native
+  /**
+    * Starts a Synchronous Express state machine execution.
+    */
+  def startSyncExecution(params: StartSyncExecutionInput): Request[StartSyncExecutionOutput, AWSError] = js.native
+  def startSyncExecution(
+    params: StartSyncExecutionInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartSyncExecutionOutput, Unit]
+  ): Request[StartSyncExecutionOutput, AWSError] = js.native
+  
+  /**
     * Stops an execution. This API action is not supported by EXPRESS state machines.
     */
   def stopExecution(): Request[StopExecutionOutput, AWSError] = js.native

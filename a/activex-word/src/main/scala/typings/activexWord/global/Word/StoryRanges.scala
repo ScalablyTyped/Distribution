@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.StoryRanges")
 @js.native
-/* private */ class StoryRanges ()
+/* private */ open class StoryRanges ()
   extends StObject
      with typings.activexWord.Word.StoryRanges {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Index: WdStoryType): typings.activexWord.Word.Range = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.StoryRanges_typekey")

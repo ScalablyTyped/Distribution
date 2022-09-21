@@ -33,7 +33,7 @@ object IClientBatchListRequest {
     
     inline def setBatchIdsUndefined: Self = StObject.set(x, "batchIds", js.undefined)
     
-    inline def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value :_*))
+    inline def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value*))
     
     inline def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object IClientBatchListRequest {
     
     inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
-    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value :_*))
+    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value*))
   }
 }

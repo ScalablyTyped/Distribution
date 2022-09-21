@@ -11,9 +11,9 @@ Single component release of sticky
 | Full name          | semantic-ui-sticky |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 9252 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 576.6666666666666 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

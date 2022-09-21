@@ -5,13 +5,15 @@ import typings.seleniumWebdriver.anon.AsyncBoolean
 import typings.seleniumWebdriver.anon.Bridge
 import typings.seleniumWebdriver.commandMod.Command
 import typings.seleniumWebdriver.httpMod.Executor
+import typings.seleniumWebdriver.networkinterceptorMod.HttpResponse
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "WebDriver")
 @js.native
-class WebDriver protected () extends StObject {
+open class WebDriver protected () extends StObject {
   def this(session: js.Promise[Session], executor: Executor) = this()
   // region Constructors
   /**
@@ -46,6 +48,12 @@ class WebDriver protected () extends StObject {
     *     when this command has completed.
     */
   def close(): js.Promise[Unit] = js.native
+  
+  /**
+    * Creates a new WebSocket connection.
+    * @return {!Promise<resolved>} A new CDP instance.
+    */
+  def createCDPConnection(target: String): js.Promise[Any] = js.native
   
   // endregion
   // region Methods
@@ -138,8 +146,8 @@ class WebDriver protected () extends StObject {
     *    scripts return value.
     * @template T
     */
-  def executeAsyncScript[T](script: String, var_args: js.Any*): js.Promise[T] = js.native
-  def executeAsyncScript[T](script: js.Function, var_args: js.Any*): js.Promise[T] = js.native
+  def executeAsyncScript[T](script: String, var_args: Any*): js.Promise[T] = js.native
+  def executeAsyncScript[T](script: js.Function, var_args: Any*): js.Promise[T] = js.native
   
   /**
     * Schedules a command to execute JavaScript in the context of the currently
@@ -178,8 +186,8 @@ class WebDriver protected () extends StObject {
     *    scripts return value.
     * @template T
     */
-  def executeScript[T](script: String, var_args: js.Any*): js.Promise[T] = js.native
-  def executeScript[T](script: js.Function, var_args: js.Any*): js.Promise[T] = js.native
+  def executeScript[T](script: String, var_args: Any*): js.Promise[T] = js.native
+  def executeScript[T](script: js.Function, var_args: Any*): js.Promise[T] = js.native
   
   /**
     * Schedule a command to find an element on the page. If the element cannot be
@@ -220,6 +228,16 @@ class WebDriver protected () extends StObject {
   def findElement(locator: Locator): WebElementPromise = js.native
   
   /**
+    * @param {!Function} locatorFn The locator function to use.
+    * @param {!(WebDriver|WebElement)} context The search context.
+    * @return {!Promise<!WebElement>} A promise that will resolve to a list of
+    *     WebElements.
+    * @private
+    */
+  def findElementInternal_(locatorFn: js.Function, context: WebDriver): js.Promise[WebElement] = js.native
+  def findElementInternal_(locatorFn: js.Function, context: WebElement): js.Promise[WebElement] = js.native
+  
+  /**
     * Schedule a command to search for multiple elements on the page.
     *
     * @param {!(by.By|Function)} locator The locator to use.
@@ -227,6 +245,16 @@ class WebDriver protected () extends StObject {
     *     promise that will resolve to an array of WebElements.
     */
   def findElements(locator: Locator): js.Promise[js.Array[WebElement]] = js.native
+  
+  /**
+    * @param {!Function} locatorFn The locator function to use.
+    * @param {!(WebDriver|WebElement)} context The search context.
+    * @return {!Promise<!Array<!WebElement>>} A promise that will resolve to an
+    *     array of WebElements.
+    * @private
+    */
+  def findElementsInternal_(locatorFn: js.Function, context: WebDriver): js.Promise[js.Array[WebElement]] = js.native
+  def findElementsInternal_(locatorFn: js.Function, context: WebElement): js.Promise[js.Array[WebElement]] = js.native
   
   /**
     * Schedules a command to navigate to the given URL.
@@ -290,6 +318,26 @@ class WebDriver protected () extends StObject {
   def getWindowHandle(): js.Promise[String] = js.native
   
   /**
+    * Retrieves 'webSocketDebuggerUrl' by sending a http request using debugger address
+    * @param {string} debuggerAddress
+    * @param target
+    * @param caps
+    * @return {string} Returns parsed webSocketDebuggerUrl obtained from the http request
+    */
+  def getWsUrl(
+    debuggerAddress: String,
+    target: String,
+    caps: typings.seleniumWebdriver.capabilitiesMod.Capabilities
+  ): js.Promise[String] = js.native
+  
+  /**
+    * @param connection
+    * @param callback
+    * @returns {Promise<void>}
+    */
+  def logMutationEvents(connection: WebSocket, callback: js.Function1[/* event */ Any, Unit]): js.Promise[Unit] = js.native
+  
+  /**
     * @return {!Options} The options interface for this
     *     instance.
     */
@@ -302,6 +350,37 @@ class WebDriver protected () extends StObject {
   def navigate(): Navigation = js.native
   
   /**
+    * @param {!Function} webElementPromise The webElement in unresolved state
+    * @return {!Promise<!WebElement>} First single WebElement from array of resolved promises
+    */
+  def normalize_(webElementPromise: js.Function): js.Promise[WebElement] = js.native
+  
+  /**
+    * Handle Network interception requests
+    * @param connection WebSocket connection to the browser
+    * @param httpResponse Object representing what we are intercepting
+    *                     as well as what should be returned.
+    * @param callback callback called when we intercept requests.
+    */
+  def onIntercept(connection: WebSocket, httpResponse: HttpResponse, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  
+  /**
+    *
+    * @param connection
+    * @param callback
+    * @returns {Promise<void>}
+    */
+  def onLogEvent(connection: WebSocket, callback: js.Function1[/* event */ Any, Unit]): js.Promise[Unit] = js.native
+  
+  /**
+    *
+    * @param connection
+    * @param callback
+    * @returns {Promise<void>}
+    */
+  def onLogException(connection: WebSocket, callback: js.Function1[/* event */ Any, Unit]): js.Promise[Unit] = js.native
+  
+  /**
     * Schedules a command to quit the current session. After calling quit, this
     * instance will be invalidated and may no longer be used to issue commands
     * against the browser.
@@ -309,6 +388,16 @@ class WebDriver protected () extends StObject {
     *     when the command has completed.
     */
   def quit(): js.Promise[Unit] = js.native
+  
+  /**
+    * Sets a listener for Fetch.authRequired event from CDP
+    * If event is triggered, it enter username and password
+    * and allows the test to move forward
+    * @param {string} username
+    * @param {string} password
+    * @param connection CDP Connection
+    */
+  def register(username: String, password: String, connection: Any): js.Promise[Unit] = js.native
   
   /**
     * Sets the {@linkplain input.FileDetector file detector} that should be
@@ -388,6 +477,7 @@ class WebDriver protected () extends StObject {
     * @param {number=} opt_timeout How long to wait for the condition to be true.
     * @param {string=} opt_message An optional message to use if the wait times
     *     out.
+    * @param {number=} opt_pollTimeout How long to wait between polling the condition.
     * @return {!WebElementPromise} A promise that will be fulfilled
     *     with the first truthy value returned by the condition function, or
     *     rejected if the condition times out.
@@ -396,7 +486,11 @@ class WebDriver protected () extends StObject {
   def wait(condition: WebElementCondition): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: Double): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: Double, opt_message: String): WebElementPromise = js.native
+  def wait(condition: WebElementCondition, opt_timeout: Double, opt_message: String, opt_pollTimeout: Double): WebElementPromise = js.native
+  def wait(condition: WebElementCondition, opt_timeout: Double, opt_message: Unit, opt_pollTimeout: Double): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: Unit, opt_message: String): WebElementPromise = js.native
+  def wait(condition: WebElementCondition, opt_timeout: Unit, opt_message: String, opt_pollTimeout: Double): WebElementPromise = js.native
+  def wait(condition: WebElementCondition, opt_timeout: Unit, opt_message: Unit, opt_pollTimeout: Double): WebElementPromise = js.native
   def wait[T](condition: js.Function): js.Promise[T] = js.native
   def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]]): js.Promise[T] = js.native
   def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]], opt_timeout: Double): js.Promise[T] = js.native
@@ -540,5 +634,5 @@ object WebDriver {
   // This method's arguments are untyped so that its overloads can have correct
   // types. Typescript doesn't allow static methods to be overridden with
   // incompatible signatures.
-  inline def createSession(var_args: js.Any*): WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[js.Any]).asInstanceOf[WebDriver]
+  inline def createSession(var_args: Any*): WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[WebDriver]
 }

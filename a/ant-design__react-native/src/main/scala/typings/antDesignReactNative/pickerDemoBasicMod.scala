@@ -9,15 +9,14 @@ object pickerDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/picker/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends PopupExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends PopupExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait PopupExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait PopupExample extends Component[Any, Any, Any] {
     
-    def onChange(value: js.Any): Unit = js.native
+    def onChange(value: Any): Unit = js.native
     
     def onPress(): Unit = js.native
   }

@@ -29,7 +29,7 @@ object DescribeCasesResponse {
     
     inline def setCasesUndefined: Self = StObject.set(x, "cases", js.undefined)
     
-    inline def setCasesVarargs(value: CaseDetails*): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: CaseDetails*): Self = StObject.set(x, "cases", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IEntityReferenceCollectionView = js.Array[typings.microsoftSdkSoap.mod.global.Sdk.IEntityReferenceView]
+type IEntityReferenceCollectionView = js.Array[IEntityReferenceView]

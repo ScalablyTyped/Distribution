@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "DiffPerfdata")
 @js.native
-class DiffPerfdata ()
+open class DiffPerfdata ()
   extends typings.nodegit.diffPerfDataMod.DiffPerfdata

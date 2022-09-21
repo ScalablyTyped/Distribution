@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.anon.MenuItem
 import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
@@ -22,10 +22,9 @@ object tabTabMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Tab/Tab", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[TabProps, ComponentState, js.Any] {
+  open class default protected () extends Component[TabProps, ComponentState, Any] {
     def this(props: TabProps) = this()
-    def this(props: TabProps, context: js.Any) = this()
+    def this(props: TabProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Tab/Tab", JSImport.Default)
   @js.native
@@ -37,16 +36,16 @@ object tabTabMod extends Shortcut {
     var activeIndex: js.UndefOr[Double | String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** The initial activeIndex. */
     var defaultActiveIndex: js.UndefOr[Double | String] = js.undefined
     
     /** Shorthand props for the Grid. */
-    var grid: js.UndefOr[js.Any] = js.undefined
+    var grid: js.UndefOr[Any] = js.undefined
     
     /** Shorthand props for the Menu. */
-    var menu: js.UndefOr[js.Any] = js.undefined
+    var menu: js.UndefOr[Any] = js.undefined
     
     /** Align vertical menu */
     var menuPosition: js.UndefOr[left | right] = js.undefined
@@ -93,7 +92,7 @@ object tabTabMod extends Shortcut {
       
       inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -101,11 +100,11 @@ object tabTabMod extends Shortcut {
       
       inline def setDefaultActiveIndexUndefined: Self = StObject.set(x, "defaultActiveIndex", js.undefined)
       
-      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      inline def setMenu(value: js.Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
       inline def setMenuPosition(value: left | right): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
       
@@ -121,7 +120,7 @@ object tabTabMod extends Shortcut {
       
       inline def setPanesUndefined: Self = StObject.set(x, "panes", js.undefined)
       
-      inline def setPanesVarargs(value: MenuItem*): Self = StObject.set(x, "panes", js.Array(value :_*))
+      inline def setPanesVarargs(value: MenuItem*): Self = StObject.set(x, "panes", js.Array(value*))
       
       inline def setRenderActiveOnly(value: Boolean): Self = StObject.set(x, "renderActiveOnly", value.asInstanceOf[js.Any])
       
@@ -134,13 +133,13 @@ object tabTabMod extends Shortcut {
     extends StObject
        with ComponentClass[TabProps, ComponentState] {
     
-    var Pane: StatelessComponent[TabPaneProps] = js.native
+    var Pane: FC[TabPaneProps] = js.native
   }
   
   trait TabProps
     extends StObject
        with StrictTabProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object TabProps {
     
     inline def apply(): TabProps = {

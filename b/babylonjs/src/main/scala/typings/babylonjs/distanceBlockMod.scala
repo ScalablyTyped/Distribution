@@ -10,7 +10,7 @@ object distanceBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/distanceBlock", "DistanceBlock")
   @js.native
-  class DistanceBlock protected () extends NodeMaterialBlock {
+  open class DistanceBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new DistanceBlock
       * @param name defines the block name

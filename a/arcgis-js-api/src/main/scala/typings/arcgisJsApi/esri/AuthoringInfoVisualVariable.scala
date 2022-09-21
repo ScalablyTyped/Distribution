@@ -4,6 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
 import typings.arcgisJsApi.arcgisJsApiStrings.`centered-on`
 import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
 import typings.arcgisJsApi.arcgisJsApiStrings.`percent-of-total`
+import typings.arcgisJsApi.arcgisJsApiStrings.above
+import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.arcgisJsApi.arcgisJsApiStrings.days
 import typings.arcgisJsApi.arcgisJsApiStrings.extremes
 import typings.arcgisJsApi.arcgisJsApiStrings.hours
@@ -70,7 +72,7 @@ trait AuthoringInfoVisualVariable
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#theme)
     */
-  var theme: `above-and-below` | `centered-on` | extremes | `high-to-low` = js.native
+  var theme: above | below | `above-and-below` | `centered-on` | extremes | `high-to-low` = js.native
   
   /**
     * The type of visual variable generated.

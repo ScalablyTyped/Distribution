@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Command extends StObject {
   
   /** contains the argument of the command */
-  var Argument: js.Any
+  var Argument: Any
   
   /**
     * contains an implementation specific handle for the command.
@@ -25,14 +25,14 @@ trait Command extends StObject {
 }
 object Command {
   
-  inline def apply(Argument: js.Any, Handle: Double, Name: String): Command = {
+  inline def apply(Argument: Any, Handle: Double, Name: String): Command = {
     val __obj = js.Dynamic.literal(Argument = Argument.asInstanceOf[js.Any], Handle = Handle.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
   
   extension [Self <: Command](x: Self) {
     
-    inline def setArgument(value: js.Any): Self = StObject.set(x, "Argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Any): Self = StObject.set(x, "Argument", value.asInstanceOf[js.Any])
     
     inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     

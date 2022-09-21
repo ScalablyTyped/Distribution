@@ -18,7 +18,7 @@ trait Call extends StObject {
     *    @param eventName Event name
     *    @param eventHandler Handler function. A single parameter is passed - object with the event information
     */
-  def addEventListener(eventName: CallEvents, eventHandler: js.Function1[/* eventObject */ VoxImplantCallEvent, js.Any]): Unit = js.native
+  def addEventListener(eventName: CallEvents, eventHandler: js.Function1[/* eventObject */ VoxImplantCallEvent, Any]): Unit = js.native
   
   /**
     *    Answer on incoming call
@@ -96,7 +96,7 @@ trait Call extends StObject {
     *    @param eventName Event name
     *    @param eventHandler Handler function
     */
-  def removeEventListener(eventName: CallEvents, eventHandler: js.Function0[js.Any]): Unit = js.native
+  def removeEventListener(eventName: CallEvents, eventHandler: js.Function0[Any]): Unit = js.native
   
   /**
     *    Send Info (SIP INFO) message inside the call
@@ -139,13 +139,13 @@ trait Call extends StObject {
   def setRemoteVideoSize(width: Double, height: Double): Unit = js.native
   
   def setVideoSettings(settings: FlashVideoSettings): Unit = js.native
-  def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[js.Any]): Unit = js.native
+  def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[Any]): Unit = js.native
   def setVideoSettings(
     settings: FlashVideoSettings,
-    successCallback: js.Function0[js.Any],
-    failedCallback: js.Function0[js.Any]
+    successCallback: js.Function0[Any],
+    failedCallback: js.Function0[Any]
   ): Unit = js.native
-  def setVideoSettings(settings: FlashVideoSettings, successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def setVideoSettings(settings: FlashVideoSettings, successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   /**
     *    Set video settings
     *
@@ -154,13 +154,9 @@ trait Call extends StObject {
     *    @param failedCallback Called in WebRTC mode if video settings couldn't be applied
     */
   def setVideoSettings(settings: VideoSettings): Unit = js.native
-  def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[js.Any]): Unit = js.native
-  def setVideoSettings(
-    settings: VideoSettings,
-    successCallback: js.Function0[js.Any],
-    failedCallback: js.Function0[js.Any]
-  ): Unit = js.native
-  def setVideoSettings(settings: VideoSettings, successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[Any]): Unit = js.native
+  def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[Any], failedCallback: js.Function0[Any]): Unit = js.native
+  def setVideoSettings(settings: VideoSettings, successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   
   /**
     *    Show/hide remote party video

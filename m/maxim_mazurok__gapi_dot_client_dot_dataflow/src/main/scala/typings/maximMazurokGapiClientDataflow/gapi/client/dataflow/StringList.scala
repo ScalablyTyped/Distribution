@@ -22,6 +22,6 @@ object StringList {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value*))
   }
 }

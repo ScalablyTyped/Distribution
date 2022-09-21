@@ -5,45 +5,67 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This message defines core attributes for a resource. A resource is an
-  * addressable (named) entity provided by the destination service. For
-  * example, a file stored on a network storage service.
-  */
 trait SchemaResource extends StObject {
   
   /**
-    * The labels or tags on the resource, such as AWS resource tags and
-    * Kubernetes resource labels.
+    * Annotations is an unstructured key-value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/user-guide/annotations
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var annotations: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * The stable identifier (name) of a resource on the `service`. A resource
-    * can be logically identified as
-    * &quot;//{resource.service}/{resource.name}&quot;. The differences between
-    * a resource name and a URI are:  *   Resource name is a logical
-    * identifier, independent of network     protocol and API version. For
-    * example,     `//pubsub.googleapis.com/projects/123/topics/news-feed`. *
-    * URI often includes protocol and version information, so it can     be
-    * used directly by applications. For example,
-    * `https://pubsub.googleapis.com/v1/projects/123/topics/news-feed`.  See
-    * https://cloud.google.com/apis/design/resource_names for details.
+    * Output only. The timestamp when the resource was created. This may be either the time creation was initiated or when it was completed.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name of the service that this resource belongs to, such as
-    * `pubsub.googleapis.com`. The service may be different from the DNS
-    * hostname that actually serves the request.
+    * Output only. The timestamp when the resource was deleted. If the resource is not deleted, this must be empty.
     */
-  var service: js.UndefOr[String] = js.undefined
+  var deleteTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The type of the resource. The scheme is platform-specific because
-    * different platforms define their resources differently.
+    * Mutable. The display name set by clients. Must be <= 63 characters.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output only. An opaque value that uniquely identifies a version or generation of a resource. It can be used to confirm that the client and server agree on the ordering of a resource being written.
+    */
+  var etag: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The labels or tags on the resource, such as AWS resource tags and Kubernetes resource labels.
+    */
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  
+  /**
+    * Immutable. The location of the resource. The location encoding is specific to the service provider, and new encoding may be introduced as the service evolves. For Google Cloud products, the encoding is what is used by Google Cloud APIs, such as `us-east1`, `aws-us-east-1`, and `azure-eastus2`. The semantics of `location` is identical to the `cloud.googleapis.com/location` label used by some Google Cloud APIs.
+    */
+  var location: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The stable identifier (name) of a resource on the `service`. A resource can be logically identified as "//{resource.service\}/{resource.name\}". The differences between a resource name and a URI are: * Resource name is a logical identifier, independent of network protocol and API version. For example, `//pubsub.googleapis.com/projects/123/topics/news-feed`. * URI often includes protocol and version information, so it can be used directly by applications. For example, `https://pubsub.googleapis.com/v1/projects/123/topics/news-feed`. See https://cloud.google.com/apis/design/resource_names for details.
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The name of the service that this resource belongs to, such as `pubsub.googleapis.com`. The service may be different from the DNS hostname that actually serves the request.
+    */
+  var service: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The type of the resource. The syntax is platform-specific because different platforms define their resources differently. For Google APIs, the type format must be "{service\}/{kind\}", such as "pubsub.googleapis.com/Topic".
+    */
+  var `type`: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The unique identifier of the resource. UID is unique in the time and space for this resource within the scope of the service. It is typically generated by the server on successful creation of a resource and must not be changed. UID is used to uniquely identify resources with resource name reuses. This should be a UUID4.
+    */
+  var uid: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output only. The timestamp when the resource was last updated. Any change to the resource made by users must refresh this value. Changes to a resource made by the service should refresh this value.
+    */
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResource {
   
@@ -54,20 +76,76 @@ object SchemaResource {
   
   extension [Self <: SchemaResource](x: Self) {
     
+    inline def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    
+    inline def setAnnotationsNull: Self = StObject.set(x, "annotations", null)
+    
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    
+    inline def setDeleteTime(value: String): Self = StObject.set(x, "deleteTime", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteTimeNull: Self = StObject.set(x, "deleteTime", null)
+    
+    inline def setDeleteTimeUndefined: Self = StObject.set(x, "deleteTime", js.undefined)
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
+    inline def setServiceNull: Self = StObject.set(x, "service", null)
+    
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    
+    inline def setUidNull: Self = StObject.set(x, "uid", null)
+    
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
+    
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

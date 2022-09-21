@@ -7,5 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-big-scheduler", JSImport.Default)
 @js.native
-class default ()
-  extends Component[SchedulerProps, js.Any, js.Any]
+open class default () extends Component[SchedulerProps, Any, Any]

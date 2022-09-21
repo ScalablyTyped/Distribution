@@ -23,5 +23,5 @@ object Orientation extends StObject {
   sealed trait Vertical
     extends StObject
        with Orientation
-  /* "vertial" */ val Vertical: typings.azdata.mod.Orientation.Vertical & String = js.native
+  /* "vertical" */ val Vertical: typings.azdata.mod.Orientation.Vertical & String = js.native
 }

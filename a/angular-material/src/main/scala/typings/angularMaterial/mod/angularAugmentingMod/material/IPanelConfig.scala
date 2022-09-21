@@ -42,18 +42,18 @@ trait IPanelConfig extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   // default: true
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var locals: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ String, js.Any]] = js.undefined
+  var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ String, Any]] = js.undefined
   
   // default: false
-  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
+  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ Any, js.Thenable[Unit] | Unit]] = js.undefined
   
-  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
+  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ Any, js.Thenable[Unit] | Unit]] = js.undefined
   
-  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
+  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ Any, js.Thenable[Unit] | Unit]] = js.undefined
   
-  var onRemoving: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
+  var onRemoving: js.UndefOr[js.Function1[/* repeated */ Any, js.Thenable[Unit] | Unit]] = js.undefined
   
   var origin: js.UndefOr[String | JQuery | Element] = js.undefined
   
@@ -106,11 +106,11 @@ object IPanelConfig {
     
     inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
-    inline def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    inline def setControllerFunction1(value: /* repeated */ Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value*))
     
     inline def setDisableParentScroll(value: Boolean): Self = StObject.set(x, "disableParentScroll", value.asInstanceOf[js.Any])
     
@@ -136,27 +136,27 @@ object IPanelConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    inline def setLocals(value: StringDictionary[Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
-    inline def setOnCloseSuccess(value: (/* panel */ IPanelRef, /* closeReason */ String) => js.Any): Self = StObject.set(x, "onCloseSuccess", js.Any.fromFunction2(value))
+    inline def setOnCloseSuccess(value: (/* panel */ IPanelRef, /* closeReason */ String) => Any): Self = StObject.set(x, "onCloseSuccess", js.Any.fromFunction2(value))
     
     inline def setOnCloseSuccessUndefined: Self = StObject.set(x, "onCloseSuccess", js.undefined)
     
-    inline def setOnDomAdded(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onDomAdded", js.Any.fromFunction1(value))
+    inline def setOnDomAdded(value: /* repeated */ Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onDomAdded", js.Any.fromFunction1(value))
     
     inline def setOnDomAddedUndefined: Self = StObject.set(x, "onDomAdded", js.undefined)
     
-    inline def setOnDomRemoved(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onDomRemoved", js.Any.fromFunction1(value))
+    inline def setOnDomRemoved(value: /* repeated */ Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onDomRemoved", js.Any.fromFunction1(value))
     
     inline def setOnDomRemovedUndefined: Self = StObject.set(x, "onDomRemoved", js.undefined)
     
-    inline def setOnOpenComplete(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onOpenComplete", js.Any.fromFunction1(value))
+    inline def setOnOpenComplete(value: /* repeated */ Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onOpenComplete", js.Any.fromFunction1(value))
     
     inline def setOnOpenCompleteUndefined: Self = StObject.set(x, "onOpenComplete", js.undefined)
     
-    inline def setOnRemoving(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction1(value))
+    inline def setOnRemoving(value: /* repeated */ Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction1(value))
     
     inline def setOnRemovingUndefined: Self = StObject.set(x, "onRemoving", js.undefined)
     

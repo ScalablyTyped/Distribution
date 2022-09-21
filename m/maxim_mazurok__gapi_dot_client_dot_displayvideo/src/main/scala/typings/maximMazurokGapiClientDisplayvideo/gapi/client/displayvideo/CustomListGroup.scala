@@ -22,6 +22,6 @@ object CustomListGroup {
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    inline def setSettingsVarargs(value: CustomListTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: CustomListTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value*))
   }
 }

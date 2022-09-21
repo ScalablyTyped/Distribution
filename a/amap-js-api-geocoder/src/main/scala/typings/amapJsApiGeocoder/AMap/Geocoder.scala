@@ -96,7 +96,7 @@ object Geocoder {
       
       inline def setRegeocodes(value: js.Array[ReGeocode]): Self = StObject.set(x, "regeocodes", value.asInstanceOf[js.Any])
       
-      inline def setRegeocodesVarargs(value: ReGeocode*): Self = StObject.set(x, "regeocodes", js.Array(value :_*))
+      inline def setRegeocodesVarargs(value: ReGeocode*): Self = StObject.set(x, "regeocodes", js.Array(value*))
     }
   }
   
@@ -415,7 +415,7 @@ object Geocoder {
       
       inline def setGeocodes(value: js.Array[Geocode]): Self = StObject.set(x, "geocodes", value.asInstanceOf[js.Any])
       
-      inline def setGeocodesVarargs(value: Geocode*): Self = StObject.set(x, "geocodes", js.Array(value :_*))
+      inline def setGeocodesVarargs(value: Geocode*): Self = StObject.set(x, "geocodes", js.Array(value*))
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -531,21 +531,21 @@ object Geocoder {
       
       inline def setAoisUndefined: Self = StObject.set(x, "aois", js.undefined)
       
-      inline def setAoisVarargs(value: ReGeocodeAoi*): Self = StObject.set(x, "aois", js.Array(value :_*))
+      inline def setAoisVarargs(value: ReGeocodeAoi*): Self = StObject.set(x, "aois", js.Array(value*))
       
       inline def setCrosses(value: js.Array[Cross]): Self = StObject.set(x, "crosses", value.asInstanceOf[js.Any])
       
-      inline def setCrossesVarargs(value: Cross*): Self = StObject.set(x, "crosses", js.Array(value :_*))
+      inline def setCrossesVarargs(value: Cross*): Self = StObject.set(x, "crosses", js.Array(value*))
       
       inline def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
       
       inline def setPois(value: js.Array[ReGeocodePoi]): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
       
-      inline def setPoisVarargs(value: ReGeocodePoi*): Self = StObject.set(x, "pois", js.Array(value :_*))
+      inline def setPoisVarargs(value: ReGeocodePoi*): Self = StObject.set(x, "pois", js.Array(value*))
       
       inline def setRoads(value: js.Array[Road]): Self = StObject.set(x, "roads", value.asInstanceOf[js.Any])
       
-      inline def setRoadsVarargs(value: Road*): Self = StObject.set(x, "roads", js.Array(value :_*))
+      inline def setRoadsVarargs(value: Road*): Self = StObject.set(x, "roads", js.Array(value*))
     }
   }
   
@@ -647,7 +647,7 @@ object Geocoder {
       
       inline def setBusinessAreas(value: js.Array[BuildingArea]): Self = StObject.set(x, "businessAreas", value.asInstanceOf[js.Any])
       
-      inline def setBusinessAreasVarargs(value: BuildingArea*): Self = StObject.set(x, "businessAreas", js.Array(value :_*))
+      inline def setBusinessAreasVarargs(value: BuildingArea*): Self = StObject.set(x, "businessAreas", js.Array(value*))
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       

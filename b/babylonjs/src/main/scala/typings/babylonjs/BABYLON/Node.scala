@@ -13,30 +13,38 @@ trait Node
   /** @hidden */
   def _addToSceneRootNodes(): Unit = js.native
   
-  /* private */ var _animationPropertiesOverride: js.Any = js.native
+  /* private */ var _animationPropertiesOverride: Any = js.native
   
-  /* private */ var _behaviors: js.Any = js.native
+  /* private */ var _behaviors: Any = js.native
   
   /** @hidden */
-  var _cache: js.Any = js.native
+  var _cache: Any = js.native
   
   /** @hidden */
   var _childUpdateId: Double = js.native
   
-  /* private */ var _children: js.Any = js.native
+  /** @hidden */
+  /* protected */ var _children: Nullable[js.Array[Node]] = js.native
   
   /** @hidden */
   var _currentRenderId: Double = js.native
   
-  /* private */ var _doNotSerialize: js.Any = js.native
-  
-  /** @hidden */
+  /**
+    * @param trigger
+    * @param initialCall
+    * @hidden
+    */
   def _getActionManagerForTrigger(): Nullable[AbstractActionManager] = js.native
   def _getActionManagerForTrigger(trigger: Double): Nullable[AbstractActionManager] = js.native
   def _getActionManagerForTrigger(trigger: Double, initialCall: Boolean): Nullable[AbstractActionManager] = js.native
   def _getActionManagerForTrigger(trigger: Unit, initialCall: Boolean): Nullable[AbstractActionManager] = js.native
   
-  /** @hidden */
+  /**
+    * @param results
+    * @param directDescendantsOnly
+    * @param predicate
+    * @hidden
+    */
   def _getDescendants(results: js.Array[Node]): Unit = js.native
   def _getDescendants(results: js.Array[Node], directDescendantsOnly: Boolean): Unit = js.native
   def _getDescendants(
@@ -56,17 +64,10 @@ trait Node
   /** @hidden */
   def _initCache(): Unit = js.native
   
-  /** @hidden */
-  var _isDisposed: Boolean = js.native
-  
-  /* private */ var _isEnabled: js.Any = js.native
+  /* protected */ var _isDirty: Boolean = js.native
   
   /** @hidden */
-  val _isNode: Boolean = js.native
-  
-  /* private */ var _isParentEnabled: js.Any = js.native
-  
-  /* private */ var _isReady: js.Any = js.native
+  val _isNode: /* true */ Boolean = js.native
   
   /** @hidden */
   def _isSynchronized(): Boolean = js.native
@@ -74,11 +75,16 @@ trait Node
   /** @hidden */
   def _markSyncedWithParent(): Unit = js.native
   
-  /* private */ var _onDisposeObserver: js.Any = js.native
+  /* private */ var _nodeDataStorage: Any = js.native
   
-  /* private */ var _parentNode: js.Any = js.native
+  /* private */ var _onDisposeObserver: Any = js.native
   
-  /* private */ var _parentUpdateId: js.Any = js.native
+  /** @hidden */
+  var _parentContainer: Nullable[AbstractScene] = js.native
+  
+  /* protected */ var _parentNode: Nullable[Node] = js.native
+  
+  /* private */ var _parentUpdateId: Any = js.native
   
   /* protected */ var _ranges: org.scalablytyped.runtime.StringDictionary[Nullable[AnimationRange]] = js.native
   
@@ -88,21 +94,36 @@ trait Node
   /** @hidden */
   var _scene: Scene = js.native
   
-  /** @hidden */
-  /* private */ var _sceneRootNodesIndex: js.Any = js.native
+  /**
+    * @param serializationObject
+    * @hidden
+    */
+  def _serializeAsParent(serializationObject: Any): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param state
+    * @hidden
+    */
   def _setReady(state: Boolean): Unit = js.native
   
   /** @hidden */
   /* protected */ def _syncParentEnabledState(): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param ignoreParentClass
+    * @hidden
+    */
   def _updateCache(): Unit = js.native
   def _updateCache(ignoreParentClass: Boolean): Unit = js.native
   
   /** @hidden */
   var _waitingParentId: Nullable[String] = js.native
+  
+  /** @hidden */
+  var _waitingParentInstanceIndex: Nullable[String] = js.native
+  
+  /** @hidden */
+  var _waitingParsedUniqueId: Nullable[Double] = js.native
   
   /** @hidden */
   var _worldMatrix: Matrix = js.native
@@ -219,6 +240,20 @@ trait Node
   def getChildMeshes(directDescendantsOnly: Boolean): js.Array[AbstractMesh] = js.native
   def getChildMeshes(directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[AbstractMesh] = js.native
   def getChildMeshes(directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[AbstractMesh] = js.native
+  /**
+    * Get all child-meshes of this node
+    * @param directDescendantsOnly defines if true only direct descendants of 'this' will be considered, if false direct and also indirect (children of children, an so on in a recursive manner) descendants of 'this' will be considered (Default: false)
+    * @param predicate defines an optional predicate that will be called on every evaluated child, the predicate must return true for a given child to be part of the result, otherwise it will be ignored
+    * @returns an array of AbstractMesh
+    */
+  @JSName("getChildMeshes")
+  def getChildMeshes_T_AbstractMesh[T /* <: AbstractMesh */](): js.Array[T] = js.native
+  @JSName("getChildMeshes")
+  def getChildMeshes_T_AbstractMesh[T /* <: AbstractMesh */](directDescendantsOnly: Boolean): js.Array[T] = js.native
+  @JSName("getChildMeshes")
+  def getChildMeshes_T_AbstractMesh[T /* <: AbstractMesh */](directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
+  @JSName("getChildMeshes")
+  def getChildMeshes_T_AbstractMesh[T /* <: AbstractMesh */](directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
   
   /**
     * Get all direct children of this node
@@ -230,6 +265,20 @@ trait Node
   def getChildren(predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
   def getChildren(predicate: js.Function1[/* node */ this.type, Boolean], directDescendantsOnly: Boolean): js.Array[Node] = js.native
   def getChildren(predicate: Unit, directDescendantsOnly: Boolean): js.Array[Node] = js.native
+  /**
+    * Get all direct children of this node
+    * @param predicate defines an optional predicate that will be called on every evaluated child, the predicate must return true for a given child to be part of the result, otherwise it will be ignored
+    * @param directDescendantsOnly defines if true only direct descendants of 'this' will be considered, if false direct and also indirect (children of children, an so on in a recursive manner) descendants of 'this' will be considered (Default: true)
+    * @returns an array of Node
+    */
+  @JSName("getChildren")
+  def getChildren_T_Node[T /* <: Node */](): js.Array[T] = js.native
+  @JSName("getChildren")
+  def getChildren_T_Node[T /* <: Node */](predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
+  @JSName("getChildren")
+  def getChildren_T_Node[T /* <: Node */](predicate: js.Function1[/* node */ this.type, /* is T */ Boolean], directDescendantsOnly: Boolean): js.Array[T] = js.native
+  @JSName("getChildren")
+  def getChildren_T_Node[T /* <: Node */](predicate: Unit, directDescendantsOnly: Boolean): js.Array[T] = js.native
   
   /**
     * Gets a string identifying the name of the class
@@ -241,12 +290,26 @@ trait Node
     * Will return all nodes that have this node as ascendant
     * @param directDescendantsOnly defines if true only direct descendants of 'this' will be considered, if false direct and also indirect (children of children, an so on in a recursive manner) descendants of 'this' will be considered
     * @param predicate defines an optional predicate that will be called on every evaluated child, the predicate must return true for a given child to be part of the result, otherwise it will be ignored
-    * @return all children nodes of all types
+    * @returns all children nodes of all types
     */
   def getDescendants(): js.Array[Node] = js.native
   def getDescendants(directDescendantsOnly: Boolean): js.Array[Node] = js.native
   def getDescendants(directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
   def getDescendants(directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[Node] = js.native
+  /**
+    * Will return all nodes that have this node as ascendant
+    * @param directDescendantsOnly defines if true only direct descendants of 'this' will be considered, if false direct and also indirect (children of children, an so on in a recursive manner) descendants of 'this' will be considered
+    * @param predicate defines an optional predicate that will be called on every evaluated child, the predicate must return true for a given child to be part of the result, otherwise it will be ignored
+    * @returns all children nodes of all types
+    */
+  @JSName("getDescendants")
+  def getDescendants_T_Node[T /* <: Node */](): js.Array[T] = js.native
+  @JSName("getDescendants")
+  def getDescendants_T_Node[T /* <: Node */](directDescendantsOnly: Boolean): js.Array[T] = js.native
+  @JSName("getDescendants")
+  def getDescendants_T_Node[T /* <: Node */](directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
+  @JSName("getDescendants")
+  def getDescendants_T_Node[T /* <: Node */](directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
   
   /**
     * Gets the engine of the node
@@ -312,7 +375,7 @@ trait Node
     * Is this node enabled?
     * If the node has a parent, all ancestors will be checked and false will be returned if any are false (not enabled), otherwise will return true
     * @param checkAncestors indicates if this method should check the ancestors. The default is to check the ancestors. If set to false, the method will return the value of this node without checking ancestors
-    * @return whether this node (and its parent) is enabled
+    * @returns whether this node (and its parent) is enabled
     */
   def isEnabled(): Boolean = js.native
   def isEnabled(checkAncestors: Boolean): Boolean = js.native
@@ -320,7 +383,7 @@ trait Node
   /**
     * Is this node ready to be used/rendered
     * @param completeCheck defines if a complete check (including materials and lights) has to be done (false by default)
-    * @return true if the node is ready
+    * @returns true if the node is ready
     */
   def isReady(): Boolean = js.native
   def isReady(completeCheck: Boolean): Boolean = js.native
@@ -332,14 +395,27 @@ trait Node
   def isSynchronizedWithParent(): Boolean = js.native
   
   /**
+    * Flag the  node as dirty (Forcing it to update everything)
+    * @param property helps children apply precise "dirtyfication"
+    * @returns this node
+    */
+  def markAsDirty(): Node = js.native
+  def markAsDirty(property: String): Node = js.native
+  
+  /**
     * Gets or sets an object used to store user defined information for the node
     */
-  var metadata: js.Any = js.native
+  var metadata: Any = js.native
   
   /**
     * Gets or sets the name of the node
     */
   var name: String = js.native
+  
+  /**
+    * An event triggered when the node is cloned
+    */
+  def onClonedObservable: Observable[Node] = js.native
   
   /**
     * An event triggered when the mesh is disposed
@@ -350,6 +426,11 @@ trait Node
     * Sets a callback that will be raised when the node will be disposed
     */
   def onDispose_=(callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * An event triggered when the enabled state of the node changes
+    */
+  def onEnabledStateChangedObservable: Observable[Boolean] = js.native
   
   /**
     * Callback raised when the node is ready to be used
@@ -366,13 +447,13 @@ trait Node
   /**
     * For internal use only. Please do not use.
     */
-  var reservedDataStore: js.Any = js.native
+  var reservedDataStore: Any = js.native
   
   /**
     * Serialize animation ranges into a JSON compatible object
     * @returns serialization object
     */
-  def serializeAnimationRanges(): js.Any = js.native
+  def serializeAnimationRanges(): Any = js.native
   
   /**
     * Set the enabled state of this node
@@ -390,7 +471,10 @@ trait Node
     */
   var uniqueId: Double = js.native
   
-  /** @hidden */
+  /**
+    * @param force
+    * @hidden
+    */
   def updateCache(): Unit = js.native
   def updateCache(force: Boolean): Unit = js.native
   

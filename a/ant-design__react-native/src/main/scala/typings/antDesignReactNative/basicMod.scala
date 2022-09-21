@@ -10,11 +10,10 @@ object basicMod {
   
   @JSImport("@ant-design/react-native/lib/accordion/demo/basic", JSImport.Default)
   @js.native
-  class default () extends AccordionExmple
+  open class default () extends AccordionExmple
   
   @js.native
-  trait AccordionExmple
-    extends Component[js.Any, js.Any, js.Any] {
+  trait AccordionExmple extends Component[Any, Any, Any] {
     
     def onChange(activeSections: js.Array[Double]): Unit = js.native
     

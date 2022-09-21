@@ -33,7 +33,7 @@ object anon {
       
       inline def setUnicode(value: js.Array[String]): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
       
-      inline def setUnicodeVarargs(value: String*): Self = StObject.set(x, "unicode", js.Array(value :_*))
+      inline def setUnicodeVarargs(value: String*): Self = StObject.set(x, "unicode", js.Array(value*))
     }
   }
 }

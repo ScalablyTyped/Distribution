@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewRowFocusingEventArgs")
 @js.native
-class ASPxClientGridViewRowFocusingEventArgs protected ()
+open class ASPxClientGridViewRowFocusingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewRowFocusingEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientGridViewRowFocusingEventArgs protected ()
     * @param visibleIndex An integer value specifying the row visible index.
     * @param htmlEvent An object specifying the HTML event.
     */
-  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+  def this(visibleIndex: Double, htmlEvent: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -29,7 +29,7 @@ class ASPxClientGridViewRowFocusingEventArgs protected ()
     * Provides access to the parameters associated with the ASPxClientGridView.RowFocusing event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the processed row's visible index.

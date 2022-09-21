@@ -11,7 +11,7 @@ trait LoggerHttpOptions extends StObject {
   
   var auth: String
   
-  var headers: js.Any
+  var headers: Any
   
   var hostname: String
   
@@ -29,7 +29,7 @@ object LoggerHttpOptions {
   
   inline def apply(
     auth: String,
-    headers: js.Any,
+    headers: Any,
     hostname: String,
     method: String,
     path: String,
@@ -47,7 +47,7 @@ object LoggerHttpOptions {
     
     inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

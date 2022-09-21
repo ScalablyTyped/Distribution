@@ -32,7 +32,7 @@ trait CreateTrailResponse extends StObject {
   var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
+    * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the following format.  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   

@@ -30,6 +30,6 @@ object InstanceUpdateOptions {
     
     inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     
-    inline def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
+    inline def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value*))
   }
 }

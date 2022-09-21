@@ -12,12 +12,12 @@ trait SimpleItems extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): js.Any
+  def Item(Index: Any): Any
   
   /* private */ @JSName("Outlook.SimpleItems_typekey")
   var OutlookDotSimpleItems_typekey: SimpleItems
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -27,9 +27,9 @@ object SimpleItems {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => js.Any,
+    Item: Any => Any,
     OutlookDotSimpleItems_typekey: SimpleItems,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): SimpleItems = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -45,11 +45,11 @@ object SimpleItems {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotSimpleItems_typekey(value: SimpleItems): Self = StObject.set(x, "Outlook.SimpleItems_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

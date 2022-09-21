@@ -11,7 +11,7 @@ object shaderManagerMod {
   
   @JSImport("wonder.js/dist/es2015/material/ShaderManager", "ShaderManager")
   @js.native
-  class ShaderManager protected () extends StObject {
+  open class ShaderManager protected () extends StObject {
     def this(material: Material) = this()
     
     def dispose(): Unit = js.native

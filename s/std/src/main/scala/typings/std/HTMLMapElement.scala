@@ -11,24 +11,22 @@ trait HTMLMapElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Retrieves a collection of the area objects defined for the given map object.
-    */
+  /** Retrieves a collection of the area objects defined for the given map object. */
+  /* standard dom */
   val areas: HTMLCollection = js.native
   
-  /**
-    * Sets or retrieves the name of the object.
-    */
+  /** Sets or retrieves the name of the object. */
+  /* standard dom */
   var name: java.lang.String = js.native
   
   /* InferMemberOverrides */

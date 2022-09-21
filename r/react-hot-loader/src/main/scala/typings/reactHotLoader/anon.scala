@@ -23,7 +23,7 @@ object anon {
       
       inline def setErrors(value: js.Array[HotError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: HotError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: HotError*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
   
@@ -46,10 +46,10 @@ object anon {
     
     var logLevel: js.UndefOr[String] = js.undefined
     
-    var onComponentCreate: js.UndefOr[js.Function2[/* type */ js.Any, /* displayName */ String, js.Any]] = js.undefined
+    var onComponentCreate: js.UndefOr[js.Function2[/* type */ Any, /* displayName */ String, Any]] = js.undefined
     
     var onComponentRegister: js.UndefOr[
-        js.Function3[/* type */ js.Any, /* uniqueLocalName */ String, /* fileName */ String, js.Any]
+        js.Function3[/* type */ Any, /* uniqueLocalName */ String, /* fileName */ String, Any]
       ] = js.undefined
     
     var pureRender: js.UndefOr[Boolean] = js.undefined
@@ -103,11 +103,11 @@ object anon {
       
       inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      inline def setOnComponentCreate(value: (/* type */ js.Any, /* displayName */ String) => js.Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
+      inline def setOnComponentCreate(value: (/* type */ Any, /* displayName */ String) => Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
       
       inline def setOnComponentCreateUndefined: Self = StObject.set(x, "onComponentCreate", js.undefined)
       
-      inline def setOnComponentRegister(value: (/* type */ js.Any, /* uniqueLocalName */ String, /* fileName */ String) => js.Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
+      inline def setOnComponentRegister(value: (/* type */ Any, /* uniqueLocalName */ String, /* fileName */ String) => Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
       
       inline def setOnComponentRegisterUndefined: Self = StObject.set(x, "onComponentRegister", js.undefined)
       

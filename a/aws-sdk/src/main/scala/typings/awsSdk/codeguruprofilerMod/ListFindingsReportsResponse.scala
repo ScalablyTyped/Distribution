@@ -27,7 +27,7 @@ object ListFindingsReportsResponse {
     
     inline def setFindingsReportSummaries(value: FindingsReportSummaries): Self = StObject.set(x, "findingsReportSummaries", value.asInstanceOf[js.Any])
     
-    inline def setFindingsReportSummariesVarargs(value: FindingsReportSummary*): Self = StObject.set(x, "findingsReportSummaries", js.Array(value :_*))
+    inline def setFindingsReportSummariesVarargs(value: FindingsReportSummary*): Self = StObject.set(x, "findingsReportSummaries", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

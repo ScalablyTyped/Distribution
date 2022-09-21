@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "HitsPerPage")
 @js.native
-class HitsPerPage protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(props: js.Any) = this()
+open class HitsPerPage protected ()
+  extends Component[HitsPerPageProps, js.Object, Any] {
+  def this(props: HitsPerPageProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: HitsPerPageProps, context: Any) = this()
 }

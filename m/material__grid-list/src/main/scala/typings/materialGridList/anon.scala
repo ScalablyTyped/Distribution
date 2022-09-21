@@ -26,7 +26,7 @@ object anon {
     var setStyleForTilesElement: js.UndefOr[
         js.Function2[
           /* property */ Exclude[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388 */ js.Any, 
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ Any, 
             length | parentRule
           ], 
           /* value */ String | Null, 
@@ -65,7 +65,7 @@ object anon {
       
       inline def setSetStyleForTilesElement(
         value: (/* property */ Exclude[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388 */ js.Any, 
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ Any, 
               length | parentRule
             ], /* value */ String | Null) => Unit
       ): Self = StObject.set(x, "setStyleForTilesElement", js.Any.fromFunction2(value))

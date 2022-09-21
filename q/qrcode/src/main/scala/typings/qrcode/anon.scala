@@ -1,5 +1,7 @@
 package typings.qrcode
 
+import typings.node.bufferMod.global.Buffer
+import typings.qrcode.mod.QRCodeSegment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +12,14 @@ object anon {
     
     /**
       * Color of dark module. Value must be in hex format (RGBA).
-      * Note: dark color should always be darker than color.light.
-      * Default: #000000ff
+      * Note: dark color should always be darker than `color.light`.
+      * @default '#000000ff'
       */
     var dark: js.UndefOr[String] = js.undefined
     
     /**
       * Color of light module. Value must be in hex format (RGBA).
-      * Default: #ffffffff
+      * @default '#ffffffff'
       */
     var light: js.UndefOr[String] = js.undefined
   }
@@ -40,17 +42,36 @@ object anon {
     }
   }
   
+  trait Data
+    extends StObject
+       with QRCodeSegment {
+    
+    var data: String | Buffer | js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array
+  }
+  object Data {
+    
+    inline def apply(data: String | Buffer | js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array): Data = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Data]
+    }
+    
+    extension [Self <: Data](x: Self) {
+      
+      inline def setData(value: String | Buffer | js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait DeflateLevel extends StObject {
     
     /**
       * Compression level for deflate.
-      * Default: 9
+      * @default 9
       */
     var deflateLevel: js.UndefOr[Double] = js.undefined
     
     /**
       * Compression strategy for deflate.
-      * Default: 3
+      * @default 3
       */
     var deflateStrategy: js.UndefOr[Double] = js.undefined
   }
@@ -76,8 +97,8 @@ object anon {
   trait Quality extends StObject {
     
     /**
-      * A Number between 0 and 1 indicating image quality if the requested type is image/jpeg or image/webp.
-      * Default: 0.92
+      * A number between `0` and `1` indicating image quality.
+      * @default 0.92
       */
     var quality: js.UndefOr[Double] = js.undefined
   }

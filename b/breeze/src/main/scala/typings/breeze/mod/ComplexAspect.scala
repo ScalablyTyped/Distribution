@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("breeze", "ComplexAspect")
 @js.native
-class ComplexAspect ()
+open class ComplexAspect ()
   extends StObject
      with typings.breeze.breeze.ComplexAspect {
   

@@ -1,0 +1,16 @@
+package typings.maplibreGl.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("maplibre-gl", "SymbolLineVertexArray")
+@js.native
+open class SymbolLineVertexArray () extends StructArrayLayout3i6 {
+  
+  def gettileUnitDistanceFromAnchor(index: Double): Double = js.native
+  
+  def getx(index: Double): Double = js.native
+  
+  def gety(index: Double): Double = js.native
+}

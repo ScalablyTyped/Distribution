@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeTapesOutput extends StObject {
   
   /**
-    * An opaque string which can be used as part of a subsequent DescribeTapes call to retrieve the next page of results. If a response does not contain a marker, then there are no more results to be retrieved.
+    * An opaque string that can be used as part of a subsequent DescribeTapes call to retrieve the next page of results. If a response does not contain a marker, then there are no more results to be retrieved.
     */
   var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
@@ -33,6 +33,6 @@ object DescribeTapesOutput {
     
     inline def setTapesUndefined: Self = StObject.set(x, "Tapes", js.undefined)
     
-    inline def setTapesVarargs(value: Tape*): Self = StObject.set(x, "Tapes", js.Array(value :_*))
+    inline def setTapesVarargs(value: Tape*): Self = StObject.set(x, "Tapes", js.Array(value*))
   }
 }

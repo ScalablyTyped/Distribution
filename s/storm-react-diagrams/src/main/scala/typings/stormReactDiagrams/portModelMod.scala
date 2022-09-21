@@ -15,7 +15,7 @@ object portModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/models/PortModel", "PortModel")
   @js.native
-  class PortModel protected () extends BaseModel[NodeModel, BaseModelListener] {
+  open class PortModel protected () extends BaseModel[NodeModel, BaseModelListener] {
     def this(name: String) = this()
     def this(name: String, `type`: String) = this()
     def this(name: String, `type`: String, id: String) = this()
@@ -31,7 +31,7 @@ object portModelMod {
     
     def createLinkModel(): LinkModel[LinkModelListener] | Null = js.native
     
-    def doClone(lookupTable: js.Object, clone: js.Any): Unit = js.native
+    def doClone(lookupTable: js.Object, clone: Any): Unit = js.native
     
     def getLinks(): StringDictionary[LinkModel[LinkModelListener]] = js.native
     

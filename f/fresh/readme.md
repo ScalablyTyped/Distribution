@@ -10,15 +10,12 @@ HTTP response freshness testing
 | ------------------ | :-------------: |
 | Full name          | fresh |
 | Keywords           | fresh, http, conditional, cache |
-| # releases         | 0 |
-| # dependents       | 444 |
-| # downloads        | 690917201 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.7066837E7 |
+| # stars            | 153.0 |
 
 ## Links
-- [Homepage](https://github.com/jshttp/fresh#readme)
-- [Bugs](https://github.com/jshttp/fresh/issues)
-- [Repository](https://github.com/jshttp/fresh)
 - [Npm](https://www.npmjs.com/package/fresh)
     
 

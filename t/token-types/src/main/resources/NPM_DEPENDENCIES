@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "token-types" : "2.0.0"
+      "token-types" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "token-types" : "2.0.0"
+      "token-types" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -14,7 +14,7 @@ object global {
   
   @JSGlobal("HelloSign")
   @js.native
-  class HelloSign () extends default {
+  open class HelloSign () extends default {
     def this(opts: Options) = this()
   }
   object HelloSign {

@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("progressbar", "Progressbar")
   @js.native
-  class Progressbar () extends StObject {
+  open class Progressbar () extends StObject {
     
     def addTick(): this.type = js.native
     def addTick(steps: Double): this.type = js.native

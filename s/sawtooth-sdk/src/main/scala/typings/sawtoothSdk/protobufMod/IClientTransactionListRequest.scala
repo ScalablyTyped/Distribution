@@ -45,7 +45,7 @@ object IClientTransactionListRequest {
     
     inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
-    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value :_*))
+    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value*))
     
     inline def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object IClientTransactionListRequest {
     
     inline def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
     
-    inline def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
+    inline def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value*))
   }
 }

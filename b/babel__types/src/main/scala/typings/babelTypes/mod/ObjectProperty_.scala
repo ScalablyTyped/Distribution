@@ -11,13 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with ObjectMember
      with Property
+     with Standardized
      with UserWhitespacable {
   
   var computed: Boolean
   
   var decorators: js.Array[Decorator_] | Null
   
-  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_
+  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_
   
   var shorthand: Boolean
   
@@ -30,7 +31,7 @@ object ObjectProperty_ {
   
   inline def apply(
     computed: Boolean,
-    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_,
     shorthand: Boolean,
     value: Expression | PatternLike
   ): ObjectProperty_ = {
@@ -47,9 +48,11 @@ object ObjectProperty_ {
     
     inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
-    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
     
-    inline def setKey(value: Expression | Identifier_ | StringLiteral_ | NumericLiteral_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(
+      value: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_
+    ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
     

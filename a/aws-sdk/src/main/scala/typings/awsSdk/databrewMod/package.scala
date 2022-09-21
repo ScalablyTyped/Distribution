@@ -1,31 +1,50 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.CHECK_ALL
+import typings.awsSdk.awsSdkStrings.LAST_MODIFIED_DATE
+import typings.awsSdk.awsSdkStrings.NEW_TABLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type ActionId = scala.Double
+type ActionId = Double
 
-type Arn = java.lang.String
+type AllowedStatisticList = js.Array[AllowedStatistics]
 
-type AssumeControl = scala.Boolean
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLE
+  - typings.awsSdk.awsSdkStrings.DISABLE
+  - java.lang.String
+*/
+type AnalyticsMode = _AnalyticsMode | String
 
-type Attempt = scala.Double
+type Arn = String
 
-type Bucket = java.lang.String
+type AssumeControl = Boolean
 
-type CatalogId = java.lang.String
+type Attempt = Double
 
-type ClientSessionId = java.lang.String
+type Bucket = String
 
-type ColumnName = java.lang.String
+type BucketOwner = String
 
-type ColumnNameList = js.Array[typings.awsSdk.databrewMod.ColumnName]
+type CatalogId = String
 
-type ColumnRange = scala.Double
+type ClientSessionId = String
+
+type ColumnName = String
+
+type ColumnNameList = js.Array[ColumnName]
+
+type ColumnRange = Double
+
+type ColumnSelectorList = js.Array[ColumnSelector]
+
+type ColumnStatisticsConfigurationList = js.Array[ColumnStatisticsConfiguration]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GZIP
@@ -39,52 +58,88 @@ type ColumnRange = scala.Double
   - typings.awsSdk.awsSdkStrings.ZLIB
   - java.lang.String
 */
-type CompressionFormat = typings.awsSdk.databrewMod._CompressionFormat | java.lang.String
+type CompressionFormat = _CompressionFormat | String
 
-type Condition = java.lang.String
+type Condition = String
 
-type ConditionExpressionList = js.Array[typings.awsSdk.databrewMod.ConditionExpression]
+type ConditionExpressionList = js.Array[ConditionExpression]
 
-type ConditionValue = java.lang.String
+type ConditionValue = String
 
-type CreatedBy = java.lang.String
+type CreateColumn = Boolean
 
-type CronExpression = java.lang.String
+type CreatedBy = String
 
-type DatabaseName = java.lang.String
+type CronExpression = String
 
-type DatasetList = js.Array[typings.awsSdk.databrewMod.Dataset]
+type DataCatalogOutputList = js.Array[DataCatalogOutput]
 
-type DatasetName = java.lang.String
+type DatabaseName = String
 
-type Date = typings.std.Date
+type DatabaseOutputList = js.Array[DatabaseOutput]
 
-type EncryptionKeyArn = java.lang.String
+type DatabaseOutputMode = NEW_TABLE | String
+
+type DatabaseTableName = String
+
+type DatasetList = js.Array[Dataset]
+
+type DatasetName = String
+
+type Date = js.Date
+
+type DatetimeFormat = String
+
+type Delimiter = String
+
+type Disabled = Boolean
+
+type EncryptionKeyArn = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`SSE-KMS`
   - typings.awsSdk.awsSdkStrings.`SSE-S3`
   - java.lang.String
 */
-type EncryptionMode = typings.awsSdk.databrewMod._EncryptionMode | java.lang.String
+type EncryptionMode = _EncryptionMode | String
 
-type ErrorCode = java.lang.String
+type EntityType = String
 
-type ExecutionTime = scala.Double
+type EntityTypeList = js.Array[EntityType]
 
-type HiddenColumnList = js.Array[typings.awsSdk.databrewMod.ColumnName]
+type ErrorCode = String
 
-type JobList = js.Array[typings.awsSdk.databrewMod.Job]
+type ExecutionTime = Double
 
-type JobName = java.lang.String
+type Expression = String
 
-type JobNameList = js.Array[typings.awsSdk.databrewMod.JobName]
+type GlueConnectionName = String
 
-type JobRunErrorMessage = java.lang.String
+type HeaderRow = Boolean
 
-type JobRunId = java.lang.String
+type HiddenColumnList = js.Array[ColumnName]
 
-type JobRunList = js.Array[typings.awsSdk.databrewMod.JobRun]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CSV
+  - typings.awsSdk.awsSdkStrings.JSON
+  - typings.awsSdk.awsSdkStrings.PARQUET
+  - typings.awsSdk.awsSdkStrings.EXCEL
+  - typings.awsSdk.awsSdkStrings.ORC
+  - java.lang.String
+*/
+type InputFormat = _InputFormat | String
+
+type JobList = js.Array[Job]
+
+type JobName = String
+
+type JobNameList = js.Array[JobName]
+
+type JobRunErrorMessage = String
+
+type JobRunId = String
+
+type JobRunList = js.Array[JobRun]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STARTING
@@ -96,41 +151,58 @@ type JobRunList = js.Array[typings.awsSdk.databrewMod.JobRun]
   - typings.awsSdk.awsSdkStrings.TIMEOUT
   - java.lang.String
 */
-type JobRunState = typings.awsSdk.databrewMod._JobRunState | java.lang.String
+type JobRunState = _JobRunState | String
+
+type JobSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROFILE
   - typings.awsSdk.awsSdkStrings.RECIPE
   - java.lang.String
 */
-type JobType = typings.awsSdk.databrewMod._JobType | java.lang.String
+type JobType = _JobType | String
 
-type Key = java.lang.String
+type Key = String
 
-type LastModifiedBy = java.lang.String
+type LastModifiedBy = String
 
-type LogGroupName = java.lang.String
+type LocaleCode = String
+
+type LogGroupName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLE
   - typings.awsSdk.awsSdkStrings.DISABLE
   - java.lang.String
 */
-type LogSubscription = typings.awsSdk.databrewMod._LogSubscription | java.lang.String
+type LogSubscription = _LogSubscription | String
 
-type MaxCapacity = scala.Double
+type MaxCapacity = Double
 
-type MaxResults100 = scala.Double
+type MaxFiles = Double
 
-type MaxRetries = scala.Double
+type MaxOutputFiles = Double
 
-type MultiLine = scala.Boolean
+type MaxResults100 = Double
 
-type NextToken = java.lang.String
+type MaxRetries = Double
 
-type OpenedBy = java.lang.String
+type MultiLine = Boolean
 
-type Operation = java.lang.String
+type NextToken = String
+
+type OpenedBy = String
+
+type Operation = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DESCENDING
+  - typings.awsSdk.awsSdkStrings.ASCENDING
+  - java.lang.String
+*/
+type Order = _Order | String
+
+type OrderedBy = LAST_MODIFIED_DATE | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CSV
@@ -140,47 +212,83 @@ type Operation = java.lang.String
   - typings.awsSdk.awsSdkStrings.AVRO
   - typings.awsSdk.awsSdkStrings.ORC
   - typings.awsSdk.awsSdkStrings.XML
+  - typings.awsSdk.awsSdkStrings.TABLEAUHYPER
   - java.lang.String
 */
-type OutputFormat = typings.awsSdk.databrewMod._OutputFormat | java.lang.String
+type OutputFormat = _OutputFormat | String
 
-type OutputList = js.Array[typings.awsSdk.databrewMod.Output]
+type OutputList = js.Array[Output]
 
-type OverwriteOutput = scala.Boolean
+type OverwriteOutput = Boolean
 
-type ParameterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.databrewMod.ParameterValue]
+type ParameterMap = StringDictionary[ParameterValue]
 
-type ParameterName = java.lang.String
+type ParameterName = String
 
-type ParameterValue = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Datetime__
+  - typings.awsSdk.awsSdkStrings.Number_
+  - typings.awsSdk.awsSdkStrings.String_
+  - java.lang.String
+*/
+type ParameterType = _ParameterType | String
 
-type Preview = scala.Boolean
+type ParameterValue = String
 
-type ProjectList = js.Array[typings.awsSdk.databrewMod.Project]
+type PathParameterName = String
 
-type ProjectName = java.lang.String
+type PathParametersMap = StringDictionary[DatasetParameter]
 
-type PublishedBy = java.lang.String
+type Preview = Boolean
 
-type RecipeDescription = java.lang.String
+type ProjectList = js.Array[Project]
 
-type RecipeErrorList = js.Array[typings.awsSdk.databrewMod.RecipeVersionErrorDetail]
+type ProjectName = String
 
-type RecipeErrorMessage = java.lang.String
+type PublishedBy = String
 
-type RecipeList = js.Array[typings.awsSdk.databrewMod.Recipe]
+type QueryString = String
 
-type RecipeName = java.lang.String
+type RecipeDescription = String
 
-type RecipeStepList = js.Array[typings.awsSdk.databrewMod.RecipeStep]
+type RecipeErrorList = js.Array[RecipeVersionErrorDetail]
 
-type RecipeVersion = java.lang.String
+type RecipeErrorMessage = String
 
-type RecipeVersionList = js.Array[typings.awsSdk.databrewMod.RecipeVersion]
+type RecipeList = js.Array[Recipe]
 
-type Result = java.lang.String
+type RecipeName = String
 
-type SampleSize = scala.Double
+type RecipeStepList = js.Array[RecipeStep]
+
+type RecipeVersion = String
+
+type RecipeVersionList = js.Array[RecipeVersion]
+
+type Result = String
+
+type RowRange = Double
+
+type RuleCount = Double
+
+type RuleList = js.Array[Rule]
+
+type RuleName = String
+
+type RulesetDescription = String
+
+type RulesetItemList = js.Array[RulesetItem]
+
+type RulesetName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FULL_DATASET
+  - typings.awsSdk.awsSdkStrings.CUSTOM_ROWS
+  - java.lang.String
+*/
+type SampleMode = _SampleMode | String
+
+type SampleSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FIRST_N
@@ -188,11 +296,11 @@ type SampleSize = scala.Double
   - typings.awsSdk.awsSdkStrings.RANDOM
   - java.lang.String
 */
-type SampleType = typings.awsSdk.databrewMod._SampleType | java.lang.String
+type SampleType = _SampleType | String
 
-type ScheduleList = js.Array[typings.awsSdk.databrewMod.Schedule]
+type ScheduleList = js.Array[Schedule]
 
-type ScheduleName = java.lang.String
+type ScheduleName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASSIGNED
@@ -207,46 +315,83 @@ type ScheduleName = java.lang.String
   - typings.awsSdk.awsSdkStrings.UPDATING
   - java.lang.String
 */
-type SessionStatus = typings.awsSdk.databrewMod._SessionStatus | java.lang.String
+type SessionStatus = _SessionStatus | String
 
-type SheetIndex = scala.Double
+type SheetIndex = Double
 
-type SheetIndexList = js.Array[typings.awsSdk.databrewMod.SheetIndex]
+type SheetIndexList = js.Array[SheetIndex]
 
-type SheetName = java.lang.String
+type SheetName = String
 
-type SheetNameList = js.Array[typings.awsSdk.databrewMod.SheetName]
+type SheetNameList = js.Array[SheetName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.S3
   - typings.awsSdk.awsSdkStrings.`DATA-CATALOG`
+  - typings.awsSdk.awsSdkStrings.DATABASE
   - java.lang.String
 */
-type Source = typings.awsSdk.databrewMod._Source | java.lang.String
+type Source = _Source | String
 
-type StartColumnIndex = scala.Double
+type StartColumnIndex = Double
 
-type StartedBy = java.lang.String
+type StartRowIndex = Double
 
-type StepIndex = scala.Double
+type StartedBy = String
 
-type TableName = java.lang.String
+type Statistic = String
 
-type TagKey = java.lang.String
+type StatisticList = js.Array[Statistic]
 
-type TagKeyList = js.Array[typings.awsSdk.databrewMod.TagKey]
+type StatisticOverrideList = js.Array[StatisticOverride]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.databrewMod.TagValue]
+type StepIndex = Double
 
-type TagValue = java.lang.String
+type TableName = String
 
-type TargetColumn = java.lang.String
+type TagKey = String
 
-type Timeout = scala.Double
+type TagKeyList = js.Array[TagKey]
+
+type TagMap = StringDictionary[TagValue]
+
+type TagValue = String
+
+type TargetColumn = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GREATER_THAN_OR_EQUAL
+  - typings.awsSdk.awsSdkStrings.LESS_THAN_OR_EQUAL
+  - typings.awsSdk.awsSdkStrings.GREATER_THAN
+  - typings.awsSdk.awsSdkStrings.LESS_THAN
+  - java.lang.String
+*/
+type ThresholdType = _ThresholdType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COUNT
+  - typings.awsSdk.awsSdkStrings.PERCENTAGE
+  - java.lang.String
+*/
+type ThresholdUnit = _ThresholdUnit | String
+
+type ThresholdValue = Double
+
+type Timeout = Double
+
+type TimezoneOffset = String
+
+type ValidationConfigurationList = js.Array[ValidationConfiguration]
+
+type ValidationMode = CHECK_ALL | String
+
+type ValueReference = String
+
+type ValuesMap = StringDictionary[ConditionValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-07-25`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.databrewMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

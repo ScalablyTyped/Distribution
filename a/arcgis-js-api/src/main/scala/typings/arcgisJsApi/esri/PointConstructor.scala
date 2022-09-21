@@ -17,5 +17,5 @@ trait PointConstructor
 Instantiable0[Point]
      with Instantiable1[/* properties */ PointProperties, Point] {
   
-  def fromJSON(json: js.Any): Point = js.native
+  def fromJSON(json: Any): Point = js.native
 }

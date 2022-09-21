@@ -16,7 +16,7 @@ trait BatchSummary extends StObject {
   
   var id: Double
   
-  var resultSetSummaries: js.Array[ResultSetSummary]
+  var resultSetSummaries: js.Array[ResultSetSummary] | Null
   
   var selection: ISelectionData
 }
@@ -28,10 +28,9 @@ object BatchSummary {
     executionStart: String,
     hasError: Boolean,
     id: Double,
-    resultSetSummaries: js.Array[ResultSetSummary],
     selection: ISelectionData
   ): BatchSummary = {
-    val __obj = js.Dynamic.literal(executionElapsed = executionElapsed.asInstanceOf[js.Any], executionEnd = executionEnd.asInstanceOf[js.Any], executionStart = executionStart.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resultSetSummaries = resultSetSummaries.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(executionElapsed = executionElapsed.asInstanceOf[js.Any], executionEnd = executionEnd.asInstanceOf[js.Any], executionStart = executionStart.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], resultSetSummaries = null)
     __obj.asInstanceOf[BatchSummary]
   }
   
@@ -49,7 +48,9 @@ object BatchSummary {
     
     inline def setResultSetSummaries(value: js.Array[ResultSetSummary]): Self = StObject.set(x, "resultSetSummaries", value.asInstanceOf[js.Any])
     
-    inline def setResultSetSummariesVarargs(value: ResultSetSummary*): Self = StObject.set(x, "resultSetSummaries", js.Array(value :_*))
+    inline def setResultSetSummariesNull: Self = StObject.set(x, "resultSetSummaries", null)
+    
+    inline def setResultSetSummariesVarargs(value: ResultSetSummary*): Self = StObject.set(x, "resultSetSummaries", js.Array(value*))
     
     inline def setSelection(value: ISelectionData): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }

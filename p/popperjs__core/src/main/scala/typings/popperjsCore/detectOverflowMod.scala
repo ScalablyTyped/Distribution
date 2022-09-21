@@ -6,9 +6,10 @@ import typings.popperjsCore.enumsMod.Context
 import typings.popperjsCore.enumsMod.Placement
 import typings.popperjsCore.enumsMod.RootBoundary
 import typings.popperjsCore.typesMod.Padding
+import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.popperjsCore.typesMod.SideObject
 import typings.popperjsCore.typesMod.State
-import typings.std.HTMLElement
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +36,8 @@ object detectOverflowMod {
     var placement: Placement
     
     var rootBoundary: RootBoundary
+    
+    var strategy: PositioningStrategy
   }
   object Options {
     
@@ -44,9 +47,10 @@ object detectOverflowMod {
       elementContext: Context,
       padding: Padding,
       placement: Placement,
-      rootBoundary: RootBoundary
+      rootBoundary: RootBoundary,
+      strategy: PositioningStrategy
     ): Options = {
-      val __obj = js.Dynamic.literal(altBoundary = altBoundary.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], elementContext = elementContext.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], rootBoundary = rootBoundary.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altBoundary = altBoundary.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], elementContext = elementContext.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], rootBoundary = rootBoundary.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
@@ -56,7 +60,7 @@ object detectOverflowMod {
       
       inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
-      inline def setBoundaryVarargs(value: HTMLElement*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+      inline def setBoundaryVarargs(value: Element*): Self = StObject.set(x, "boundary", js.Array(value*))
       
       inline def setElementContext(value: Context): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
       
@@ -65,6 +69,8 @@ object detectOverflowMod {
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -29,6 +29,6 @@ object ListVariablesResponse {
     
     inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
-    inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+    inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value*))
   }
 }

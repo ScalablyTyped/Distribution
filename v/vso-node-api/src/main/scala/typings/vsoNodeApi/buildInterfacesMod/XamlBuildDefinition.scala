@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ trait XamlBuildDefinition
   extends StObject
      with DefinitionReference {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Batch size of the definition
@@ -32,7 +31,7 @@ trait XamlBuildDefinition
   /**
     * The date this definition was created
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * Default drop location for builds from this definition
@@ -67,13 +66,13 @@ trait XamlBuildDefinition
 object XamlBuildDefinition {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     batchSize: Double,
     buildArgs: String,
     continuousIntegrationQuietPeriod: Double,
     controller: BuildController,
-    createdDate: Date,
-    createdOn: Date,
+    createdDate: js.Date,
+    createdOn: js.Date,
     defaultDropLocation: String,
     description: String,
     id: Double,
@@ -105,7 +104,7 @@ object XamlBuildDefinition {
     
     inline def setController(value: BuildController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setDefaultDropLocation(value: String): Self = StObject.set(x, "defaultDropLocation", value.asInstanceOf[js.Any])
     
@@ -119,6 +118,6 @@ object XamlBuildDefinition {
     
     inline def setTriggerType(value: DefinitionTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

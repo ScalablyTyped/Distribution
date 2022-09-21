@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BatchDeleteCatalogObjectsRequest")
 @js.native
-class BatchDeleteCatalogObjectsRequest () extends StObject {
+open class BatchDeleteCatalogObjectsRequest () extends StObject {
   
   /**
     * The IDs of the CatalogObjects to be deleted. When an object is deleted, other objects in the graph that depend on

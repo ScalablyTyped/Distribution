@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a rule, for all traditional rule/format pairings.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalFormatRule")
 @js.native
-class ConditionalFormatRule ()
+open class ConditionalFormatRule ()
   extends StObject
      with typings.officeJs.Excel.ConditionalFormatRule {
   

@@ -52,7 +52,7 @@ object mod {
   
   @JSImport("system-service", "Logger")
   @js.native
-  class Logger ()
+  open class Logger ()
     extends typings.systemLogger.mod.Logger {
     def this(configuration: LoggerConfiguration) = this()
     def this(configuration: Unit, fileConfig: FileConfiguration) = this()
@@ -69,7 +69,7 @@ object mod {
   
   @JSImport("system-service", "MessageConsumer")
   @js.native
-  class MessageConsumer () extends StObject {
+  open class MessageConsumer () extends StObject {
     
     def cleanup(): Unit = js.native
     
@@ -77,7 +77,7 @@ object mod {
     
     var logger: typings.systemLogger.mod.Logger = js.native
     
-    def process(message: js.Any): Unit = js.native
+    def process(message: Any): Unit = js.native
     
     def service(): Unit = js.native
     
@@ -87,12 +87,12 @@ object mod {
     
     def stop(): Unit = js.native
     
-    def validate(message: js.Any): Unit = js.native
+    def validate(message: Any): Unit = js.native
   }
   
   @JSImport("system-service", "SystemService")
   @js.native
-  class SystemService () extends StObject {
+  open class SystemService () extends StObject {
     def this(config: ServiceConfiguration) = this()
     def this(config: Unit, messageConsumer: MessageConsumer) = this()
     def this(config: ServiceConfiguration, messageConsumer: MessageConsumer) = this()
@@ -103,13 +103,13 @@ object mod {
     
     var messageConsumer: MessageConsumer = js.native
     
-    def processMessage(message: js.Any): Unit = js.native
+    def processMessage(message: Any): Unit = js.native
     
     def start(): Unit = js.native
     
     def stop(): Unit = js.native
     
-    def validateMessage(message: js.Any): Unit = js.native
+    def validateMessage(message: Any): Unit = js.native
   }
   
   trait ServiceConfiguration extends StObject {

@@ -9,15 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object containersActionLoggerMod {
   
-  @JSImport("@storybook/addon-actions/dist/containers/ActionLogger", JSImport.Default)
+  @JSImport("@storybook/addon-actions/dist/ts3.9/containers/ActionLogger", JSImport.Default)
   @js.native
-  class default protected () extends ActionLogger {
+  open class default protected () extends ActionLogger {
     def this(props: ActionLoggerProps) = this()
   }
   
   @js.native
-  trait ActionLogger
-    extends Component[ActionLoggerProps, ActionLoggerState, js.Any] {
+  trait ActionLogger extends Component[ActionLoggerProps, ActionLoggerState, Any] {
     
     def addAction(action: ActionDisplay): Unit = js.native
     
@@ -31,7 +30,7 @@ object containersActionLoggerMod {
     
     def handleStoryChange(): Unit = js.native
     
-    /* private */ var mounted: js.Any = js.native
+    /* private */ var mounted: Any = js.native
   }
   
   trait ActionLoggerProps extends StObject {
@@ -70,7 +69,7 @@ object containersActionLoggerMod {
       
       inline def setActions(value: js.Array[ActionDisplay]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: ActionDisplay*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: ActionDisplay*): Self = StObject.set(x, "actions", js.Array(value*))
     }
   }
 }

@@ -12,10 +12,10 @@ trait AllSearchResults[TDoc]
 object AllSearchResults {
   
   inline def apply[TDoc](
-    disjunctiveFacets: js.Array[js.Any],
+    disjunctiveFacets: js.Array[Any],
     exhaustiveNbHits: Boolean,
-    facets: js.Array[js.Any],
-    hierarchicalFacets: js.Array[js.Any],
+    facets: js.Array[Any],
+    hierarchicalFacets: js.Array[Any],
     hits: js.Array[Hit[TDoc]],
     hitsPerPage: Double,
     index: String,

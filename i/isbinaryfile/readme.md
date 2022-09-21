@@ -1,7 +1,7 @@
 
 # Scala.js typings for isbinaryfile
 
-Typings are for version 4.0.6
+Typings are for version 5.0.0
 
 ## Library description:
 Detects if a file is binary in Node.js. Similar to Perl's -B.
@@ -10,10 +10,10 @@ Detects if a file is binary in Node.js. Similar to Perl's -B.
 | ------------------ | :-------------: |
 | Full name          | isbinaryfile |
 | Keywords           | text, binary, encoding, istext, is text, isbinary, is binary, is text or binary, is text or binary file, isbinaryfile, is binary file, istextfile, is text file |
-| # releases         | 7 |
-| # dependents       | 358 |
-| # downloads        | 136749131 |
-| # stars            | 3 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8103335666666668E7 |
+| # stars            | 156.0 |
 
 ## Links
 - [Homepage](https://github.com/gjtorikian/isBinaryFile#readme)

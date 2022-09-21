@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PluralRules extends StObject {
   
+  /* standard es2018.intl */
   def resolvedOptions(): ResolvedPluralRulesOptions
   
+  /* standard es2018.intl */
   def select(n: Double): LDMLPluralRule
 }
 object PluralRules {

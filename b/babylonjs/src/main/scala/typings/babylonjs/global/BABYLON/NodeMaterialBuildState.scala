@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NodeMaterialBuildState")
 @js.native
-class NodeMaterialBuildState ()
+open class NodeMaterialBuildState ()
   extends StObject
      with typings.babylonjs.BABYLON.NodeMaterialBuildState

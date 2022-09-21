@@ -8,6 +8,7 @@ import typings.grommet.anon.Vertical
 import typings.grommet.grommetStrings.area
 import typings.grommet.grommetStrings.bar
 import typings.grommet.grommetStrings.circle
+import typings.grommet.grommetStrings.circles
 import typings.grommet.grommetStrings.diamond
 import typings.grommet.grommetStrings.fill
 import typings.grommet.grommetStrings.full
@@ -17,7 +18,12 @@ import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.point
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.square
+import typings.grommet.grommetStrings.squares
 import typings.grommet.grommetStrings.star
+import typings.grommet.grommetStrings.stripesDiagonalDown
+import typings.grommet.grommetStrings.stripesDiagonalUp
+import typings.grommet.grommetStrings.stripesHorizontal
+import typings.grommet.grommetStrings.stripesVertical
 import typings.grommet.grommetStrings.strong
 import typings.grommet.grommetStrings.triangle
 import typings.grommet.grommetStrings.triangleDown
@@ -33,26 +39,116 @@ import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.ThicknessType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chartMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("grommet/components/Chart", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("grommet/components/Chart", "Chart")
   @js.native
-  class Chart protected ()
-    extends Component[ChartProps, ComponentState, js.Any] {
-    def this(props: ChartProps) = this()
-    def this(props: ChartProps, context: js.Any) = this()
+  val Chart: FC[ChartExtendedProps] = js.native
+  
+  inline def calcs(values: js.Array[js.Array[Double] | Double]): CalcsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("calcs")(values.asInstanceOf[js.Any]).asInstanceOf[CalcsResult]
+  inline def calcs(values: js.Array[js.Array[Double] | Double], options: CalcsOptions): CalcsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calcs")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CalcsResult]
+  
+  type Bounds = js.Tuple2[
+    js.Array[Any] | (js.Tuple2[Double, Double]), 
+    js.Array[Any] | (js.Tuple2[Double, Double])
+  ]
+  
+  trait CalcsOptions extends StObject {
+    
+    var bounds: js.UndefOr[Bounds] = js.undefined
+    
+    var max: js.UndefOr[Double] = js.undefined
+    
+    var min: js.UndefOr[Double] = js.undefined
+    
+    var thickness: js.UndefOr[String] = js.undefined
   }
-  @JSImport("grommet/components/Chart", "Chart")
-  @js.native
-  val Chart: ComponentClass[ChartProps, ComponentState] = js.native
+  object CalcsOptions {
+    
+    inline def apply(): CalcsOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CalcsOptions]
+    }
+    
+    extension [Self <: CalcsOptions](x: Self) {
+      
+      inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      
+      inline def setThickness(value: String): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+      
+      inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    }
+  }
+  
+  trait CalcsResult extends StObject {
+    
+    var axis: js.Tuple2[js.Array[Double], js.Array[Double]]
+    
+    var bounds: Bounds
+    
+    var dimensions: js.Tuple2[Double, Double]
+    
+    var pad: String
+    
+    var thickness: String
+  }
+  object CalcsResult {
+    
+    inline def apply(
+      axis: js.Tuple2[js.Array[Double], js.Array[Double]],
+      bounds: Bounds,
+      dimensions: js.Tuple2[Double, Double],
+      pad: String,
+      thickness: String
+    ): CalcsResult = {
+      val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CalcsResult]
+    }
+    
+    extension [Self <: CalcsResult](x: Self) {
+      
+      inline def setAxis(value: js.Tuple2[js.Array[Double], js.Array[Double]]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      
+      inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      
+      inline def setDimensions(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      
+      inline def setPad(value: String): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+      
+      inline def setThickness(value: String): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.SVGProps<std.SVGSVGElement>, 'a11yTitle' | 'alignSelf' | 'animate' | 'gridArea' | 'margin' | 'bounds' | 'color' | 'dash' | 'gap' | 'onClick' | 'onHover' | 'opacity' | 'overflow' | 'pad' | 'pattern' | 'point' | 'round' | 'size' | 'thickness' | 'type' | 'values'> ]: react.react.SVGProps<std.SVGSVGElement>[P]} */ trait ChartExtendedProps
+    extends StObject
+       with ChartProps
+  object ChartExtendedProps {
+    
+    inline def apply(values: js.Array[Double | js.Array[Double] | Label]): ChartExtendedProps = {
+      val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChartExtendedProps]
+    }
+  }
   
   trait ChartProps extends StObject {
     
@@ -74,15 +170,19 @@ object chartMod {
     
     var margin: js.UndefOr[MarginType] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
-    var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onHover: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.undefined
     
     var overflow: js.UndefOr[Boolean] = js.undefined
     
     var pad: js.UndefOr[EdgeSizeType | Vertical] = js.undefined
+    
+    var pattern: js.UndefOr[
+        squares | circles | stripesHorizontal | stripesVertical | stripesDiagonalDown | stripesDiagonalUp
+      ] = js.undefined
     
     var point: js.UndefOr[circle | diamond | square | star | triangle | triangleDown] = js.undefined
     
@@ -123,13 +223,13 @@ object chartMod {
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      inline def setBoundsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+      inline def setBoundsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "bounds", js.Array(value*))
       
       inline def setColor(value: ColorType | js.Array[Color] | Opacity): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: Color*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Color*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setDash(value: Boolean): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
       
@@ -147,11 +247,11 @@ object chartMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnHover(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
+      inline def setOnHover(value: /* repeated */ Any => Any): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
       
       inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
       
@@ -166,6 +266,12 @@ object chartMod {
       inline def setPad(value: EdgeSizeType | Vertical): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
       
       inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+      
+      inline def setPattern(
+        value: squares | circles | stripesHorizontal | stripesVertical | stripesDiagonalDown | stripesDiagonalUp
+      ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
       inline def setPoint(value: circle | diamond | square | star | triangle | triangleDown): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
@@ -189,7 +295,7 @@ object chartMod {
       
       inline def setValues(value: js.Array[Double | js.Array[Double] | Label]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: (Double | js.Array[Double] | Label)*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: (Double | js.Array[Double] | Label)*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

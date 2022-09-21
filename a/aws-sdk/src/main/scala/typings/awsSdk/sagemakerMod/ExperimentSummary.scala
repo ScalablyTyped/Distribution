@@ -9,7 +9,7 @@ trait ExperimentSummary extends StObject {
   /**
     * When the experiment was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the experiment as displayed. If DisplayName isn't specified, ExperimentName is displayed.
@@ -31,7 +31,7 @@ trait ExperimentSummary extends StObject {
   /**
     * When the experiment was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
 }
 object ExperimentSummary {
   
@@ -42,7 +42,7 @@ object ExperimentSummary {
   
   extension [Self <: ExperimentSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -62,7 +62,7 @@ object ExperimentSummary {
     
     inline def setExperimentSourceUndefined: Self = StObject.set(x, "ExperimentSource", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
   }

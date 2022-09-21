@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkBusinessCardControl")
 @js.native
-/* private */ class OlkBusinessCardControl ()
+/* private */ open class OlkBusinessCardControl ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkBusinessCardControl {
   

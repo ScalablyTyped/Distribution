@@ -10,15 +10,12 @@ jasmine-style 'expect' calls for mocha and other test frameworks
 | ------------------ | :-------------: |
 | Full name          | expectations |
 | Keywords           | expect, mocha, jasmine, assertion |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 8402 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 889.6666666666666 |
+| # stars            | 30.0 |
 
 ## Links
-- [Homepage](https://github.com/spmason/expectations#readme)
-- [Bugs](https://github.com/spmason/expectations/issues)
-- [Repository](https://github.com/spmason/expectations)
 - [Npm](https://www.npmjs.com/package/expectations)
     
 

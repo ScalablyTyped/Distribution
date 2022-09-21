@@ -50,7 +50,9 @@ object TSBaseType {
     __obj.asInstanceOf[typings.babelTypes.mod.TSIntrinsicKeyword_]
   }
   
-  inline def TSLiteralType_(literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_): typings.babelTypes.mod.TSLiteralType_ = {
+  inline def TSLiteralType_(
+    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_ | TemplateLiteral_ | UnaryExpression_
+  ): typings.babelTypes.mod.TSLiteralType_ = {
     val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSLiteralType")
     __obj.asInstanceOf[typings.babelTypes.mod.TSLiteralType_]

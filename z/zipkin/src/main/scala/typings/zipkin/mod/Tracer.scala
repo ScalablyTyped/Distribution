@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zipkin", "Tracer")
 @js.native
-class Tracer protected () extends StObject {
+open class Tracer protected () extends StObject {
   def this(args: CtxImpl) = this()
   
   /** Creates a child of the current trace ID or a new root span. */
@@ -50,5 +50,5 @@ class Tracer protected () extends StObject {
   
   def setId(traceId: TraceId): Unit = js.native
   
-  def writeIdToConsole(message: js.Any): Unit = js.native
+  def writeIdToConsole(message: Any): Unit = js.native
 }

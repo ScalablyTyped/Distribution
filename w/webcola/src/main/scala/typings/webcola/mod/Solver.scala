@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "Solver")
 @js.native
-class Solver protected ()
+open class Solver protected ()
   extends typings.webcola.vpscMod.Solver {
   def this(vs: js.Array[typings.webcola.vpscMod.Variable], cs: js.Array[typings.webcola.vpscMod.Constraint]) = this()
 }

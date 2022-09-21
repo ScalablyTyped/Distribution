@@ -37,6 +37,6 @@ object BuiltError {
     
     inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
     
-    inline def setStackTraceVarargs(value: StackFrame*): Self = StObject.set(x, "stackTrace", js.Array(value :_*))
+    inline def setStackTraceVarargs(value: StackFrame*): Self = StObject.set(x, "stackTrace", js.Array(value*))
   }
 }

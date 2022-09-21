@@ -15,7 +15,7 @@ object ViewManagement {
   
   @JSGlobal("Windows.UI.ViewManagement.AccessibilitySettings")
   @js.native
-  class AccessibilitySettings ()
+  open class AccessibilitySettings ()
     extends StObject
        with typings.winrt.Windows.UI.ViewManagement.AccessibilitySettings {
     
@@ -26,12 +26,12 @@ object ViewManagement {
     var highContrastScheme: String = js.native
     
     /* CompleteClass */
-    var onhighcontrastchanged: js.Any = js.native
+    var onhighcontrastchanged: Any = js.native
   }
   
   @JSGlobal("Windows.UI.ViewManagement.ApplicationView")
   @js.native
-  class ApplicationView ()
+  open class ApplicationView ()
     extends StObject
        with typings.winrt.Windows.UI.ViewManagement.ApplicationView {
     
@@ -87,7 +87,7 @@ object ViewManagement {
       * Gets the title bar of the app.
       **/
     /* CompleteClass */
-    var titleBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ApplicationViewTitleBar */ js.Any = js.native
+    var titleBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ApplicationViewTitleBar */ Any = js.native
   }
   /* static members */
   object ApplicationView {
@@ -153,7 +153,7 @@ object ViewManagement {
   
   @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTitleBar")
   @js.native
-  class ApplicationViewTitleBar ()
+  open class ApplicationViewTitleBar ()
     extends StObject
        with typings.winrt.Windows.UI.ViewManagement.ApplicationViewTitleBar {
     
@@ -161,73 +161,73 @@ object ViewManagement {
       * Gets or sets the color of the title bar background.
       **/
     /* CompleteClass */
-    var backgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var backgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the background color of the title bar buttons.
       **/
     /* CompleteClass */
-    var buttonBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var buttonBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the foreground color of the title bar buttons.
       **/
     /* CompleteClass */
-    var buttonForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var buttonForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the background color of a title bar button when the pointer is over it.
       **/
     /* CompleteClass */
-    var buttonHoverBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var buttonHoverBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the foreground color of a title bar button when the pointer is over it.
       **/
     /* CompleteClass */
-    var buttonHoverForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var buttonHoverForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the background color of a title bar button when it's inactive.
       **/
     /* CompleteClass */
-    var buttonInactiveBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var buttonInactiveBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the foreground color of a title bar button when it's inactive.
       **/
     /* CompleteClass */
-    var buttonInactiveForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var buttonInactiveForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the background color of a title bar button when it's pressed.
       **/
     /* CompleteClass */
-    var buttonPressedBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var buttonPressedBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the foreground color of a title bar button when it's pressed.
       **/
     /* CompleteClass */
-    var buttonPressedForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var buttonPressedForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the color of the title bar foreground.
       **/
     /* CompleteClass */
-    var foregroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var foregroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the color of the title bar background when it's inactive.
       **/
     /* CompleteClass */
-    var inactiveBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var inactiveBackgroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
     
     /**
       * Gets or sets the color of the title bar foreground when it's inactive.
       **/
     /* CompleteClass */
-    var inactiveForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ js.Any = js.native
+    var inactiveForegroundColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any = js.native
   }
   
   @JSGlobal("Windows.UI.ViewManagement.HandPreference")
@@ -244,7 +244,7 @@ object ViewManagement {
   
   @JSGlobal("Windows.UI.ViewManagement.InputPane")
   @js.native
-  class InputPane ()
+  open class InputPane ()
     extends StObject
        with typings.winrt.Windows.UI.ViewManagement.InputPane {
     
@@ -252,10 +252,10 @@ object ViewManagement {
     var occludedRect: Rect = js.native
     
     /* CompleteClass */
-    var onhiding: js.Any = js.native
+    var onhiding: Any = js.native
     
     /* CompleteClass */
-    var onshowing: js.Any = js.native
+    var onshowing: Any = js.native
   }
   /* static members */
   object InputPane {
@@ -269,7 +269,7 @@ object ViewManagement {
   
   @JSGlobal("Windows.UI.ViewManagement.InputPaneVisibilityEventArgs")
   @js.native
-  class InputPaneVisibilityEventArgs ()
+  open class InputPaneVisibilityEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.ViewManagement.InputPaneVisibilityEventArgs {
     
@@ -316,7 +316,7 @@ object ViewManagement {
   
   @JSGlobal("Windows.UI.ViewManagement.UISettings")
   @js.native
-  class UISettings ()
+  open class UISettings ()
     extends StObject
        with typings.winrt.Windows.UI.ViewManagement.UISettings {
     

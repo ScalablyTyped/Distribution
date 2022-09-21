@@ -19,6 +19,6 @@ object Gravity {
     
     inline def setGravity(value: js.Array[Double]): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    inline def setGravityVarargs(value: Double*): Self = StObject.set(x, "gravity", js.Array(value :_*))
+    inline def setGravityVarargs(value: Double*): Self = StObject.set(x, "gravity", js.Array(value*))
   }
 }

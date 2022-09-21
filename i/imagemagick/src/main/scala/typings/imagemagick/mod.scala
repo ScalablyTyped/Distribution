@@ -1,7 +1,6 @@
 package typings.imagemagick
 
 import typings.node.childProcessMod.ChildProcess
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +13,8 @@ object mod {
   
   object convert {
     
-    inline def apply(args: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
-    inline def apply(args: js.Any, timeout: Double, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    inline def apply(args: Any, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    inline def apply(args: Any, timeout: Double, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
     
     @JSImport("imagemagick", "convert")
     @js.native
@@ -27,12 +26,12 @@ object mod {
     inline def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
   }
   
-  inline def crop(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("crop")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  inline def crop(options: Options, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("crop")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
   object identify {
     
-    inline def apply(path: String, callback: js.Function2[/* err */ Error, /* features */ Features, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
-    inline def apply(path: js.Array[js.Any], callback: js.Function2[/* err */ Error, /* result */ String, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    inline def apply(path: String, callback: js.Function2[/* err */ js.Error, /* features */ Features, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    inline def apply(path: js.Array[Any], callback: js.Function2[/* err */ js.Error, /* result */ String, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
     
     @JSImport("imagemagick", "identify")
     @js.native
@@ -44,9 +43,9 @@ object mod {
     inline def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
   }
   
-  inline def readMetadata(path: String, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("readMetadata")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  inline def readMetadata(path: String, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("readMetadata")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  inline def resize(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  inline def resize(options: Options, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
   inline def resizeArgs(options: Options): ResizeArgs_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeArgs")(options.asInstanceOf[js.Any]).asInstanceOf[ResizeArgs_]
   
@@ -90,10 +89,10 @@ object mod {
   trait Options extends StObject {
     
     //: false,
-    var colorspace: js.UndefOr[js.Any] = js.undefined
+    var colorspace: js.UndefOr[Any] = js.undefined
     
     //: 0.2,
-    var customArgs: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var customArgs: js.UndefOr[js.Array[Any]] = js.undefined
     
     //: null,
     var dstPath: js.UndefOr[String] = js.undefined
@@ -142,15 +141,15 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setColorspace(value: js.Any): Self = StObject.set(x, "colorspace", value.asInstanceOf[js.Any])
+      inline def setColorspace(value: Any): Self = StObject.set(x, "colorspace", value.asInstanceOf[js.Any])
       
       inline def setColorspaceUndefined: Self = StObject.set(x, "colorspace", js.undefined)
       
-      inline def setCustomArgs(value: js.Array[js.Any]): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
+      inline def setCustomArgs(value: js.Array[Any]): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
       
       inline def setCustomArgsUndefined: Self = StObject.set(x, "customArgs", js.undefined)
       
-      inline def setCustomArgsVarargs(value: js.Any*): Self = StObject.set(x, "customArgs", js.Array(value :_*))
+      inline def setCustomArgsVarargs(value: Any*): Self = StObject.set(x, "customArgs", js.Array(value*))
       
       inline def setDstPath(value: String): Self = StObject.set(x, "dstPath", value.asInstanceOf[js.Any])
       
@@ -223,7 +222,7 @@ object mod {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setOpt(value: Options): Self = StObject.set(x, "opt", value.asInstanceOf[js.Any])
     }

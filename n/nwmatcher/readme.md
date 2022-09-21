@@ -10,13 +10,13 @@ A CSS3-compliant JavaScript selector engine.
 | ------------------ | :-------------: |
 | Full name          | nwmatcher |
 | Keywords           | css, matcher, selector, ender |
-| # releases         | 0 |
-| # dependents       | 60 |
-| # downloads        | 50924940 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3010784.6666666665 |
+| # stars            | 312.0 |
 
 ## Links
-- [Homepage](https://github.com/dperini/nwmatcher#readme)
+- [Homepage](http://javascript.nwbox.com/NWMatcher/)
 - [Bugs](http://github.com/dperini/nwmatcher/issues)
 - [Repository](https://github.com/dperini/nwmatcher)
 - [Npm](https://www.npmjs.com/package/nwmatcher)

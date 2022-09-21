@@ -12,7 +12,7 @@ trait Configuration extends StObject {
   var ConfigurationVersion: js.UndefOr[Version] = js.undefined
   
   /**
-    * The content of the configuration or the configuration data.
+    * The content of the configuration or the configuration data.  The Content attribute only contains data if the system finds new or updated configuration data. If there is no new or updated data and ClientConfigurationVersion matches the version of the current configuration, AppConfig returns a 204 No Content HTTP response code and the Content value will be empty. 
     */
   var Content: js.UndefOr[_Blob] = js.undefined
   

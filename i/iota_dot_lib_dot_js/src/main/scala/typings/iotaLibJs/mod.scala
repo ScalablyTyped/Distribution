@@ -17,7 +17,6 @@ import typings.iotaLibJs.anon.Received
 import typings.iotaLibJs.anon.Trytes
 import typings.iotaLibJs.iotaLibJsStrings.tcp
 import typings.iotaLibJs.iotaLibJsStrings.udp
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object mod {
   
   @JSImport("iota.lib.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with IotaClass {
     def this(settings: Host) = this()
@@ -112,93 +111,100 @@ object mod {
     def broadcastAndStore(trytes: js.Array[String]): Unit = js.native
     def broadcastAndStore(
       trytes: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]
     ): Unit = js.native
     
     def broadcastBundle(transactionHash: String): Unit = js.native
-    def broadcastBundle(transactionHash: String, callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]): Unit = js.native
+    def broadcastBundle(
+      transactionHash: String,
+      callback: js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]
+    ): Unit = js.native
     
     def findTransactionObjects(searchValues: Addresses): Unit = js.native
     def findTransactionObjects(
       searchValues: Addresses,
-      callback: js.Function2[/* error */ Error, /* transactions */ js.Array[TransactionObject], Unit]
+      callback: js.Function2[/* error */ js.Error, /* transactions */ js.Array[TransactionObject], Unit]
     ): Unit = js.native
     
     def getAccountData(seed: String): Unit = js.native
     def getAccountData(
       seed: String,
       options: Unit,
-      callback: js.Function2[/* error */ Error, /* response */ Balance, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ Balance, Unit]
     ): Unit = js.native
     def getAccountData(seed: String, options: typings.iotaLibJs.anon.Security): Unit = js.native
     def getAccountData(
       seed: String,
       options: typings.iotaLibJs.anon.Security,
-      callback: js.Function2[/* error */ Error, /* response */ Balance, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ Balance, Unit]
     ): Unit = js.native
     
     def getBundle(transactionHash: String): Unit = js.native
     def getBundle(
       transactionHash: String,
-      callback: js.Function2[/* error */ Error, /* bundle */ js.Array[TransactionObject], Unit]
+      callback: js.Function2[/* error */ js.Error, /* bundle */ js.Array[TransactionObject], Unit]
     ): Unit = js.native
     
     def getInputs(seed: String): Unit = js.native
     def getInputs(
       seed: String,
       options: Unit,
-      callback: js.Function2[/* error */ Error, /* response */ Inputs, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ Inputs, Unit]
     ): Unit = js.native
     def getInputs(seed: String, options: End): Unit = js.native
-    def getInputs(seed: String, options: End, callback: js.Function2[/* error */ Error, /* response */ Inputs, Unit]): Unit = js.native
+    def getInputs(
+      seed: String,
+      options: End,
+      callback: js.Function2[/* error */ js.Error, /* response */ Inputs, Unit]
+    ): Unit = js.native
     
     def getLatestInclusion(hashes: js.Array[String]): Unit = js.native
     def getLatestInclusion(
       hashes: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* states */ js.Array[Boolean], Unit]
+      callback: js.Function2[/* error */ js.Error, /* states */ js.Array[Boolean], Unit]
     ): Unit = js.native
     
     def getNewAddress(seed: String): Unit = js.native
     def getNewAddress(
       seed: String,
       options: Unit,
-      callback: js.Function2[/* error */ Error, /* response */ String | js.Array[String], Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ String | js.Array[String], Unit]
     ): Unit = js.native
     def getNewAddress(seed: String, options: Checksum): Unit = js.native
     def getNewAddress(
       seed: String,
       options: Checksum,
-      callback: js.Function2[/* error */ Error, /* response */ String | js.Array[String], Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ String | js.Array[String], Unit]
     ): Unit = js.native
     
     def getTransactionsObjects(hashes: js.Array[String]): Unit = js.native
     def getTransactionsObjects(
       hashes: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* transactions */ js.Array[TransactionObject], Unit]
+      callback: js.Function2[/* error */ js.Error, /* transactions */ js.Array[TransactionObject], Unit]
     ): Unit = js.native
     
     def getTransfers(seed: String): Unit = js.native
     def getTransfers(
       seed: String,
       options: Unit,
-      callback: js.Function2[/* error */ Error, /* transfers */ js.Array[js.Array[TransactionObject]], Unit]
+      callback: js.Function2[/* error */ js.Error, /* transfers */ js.Array[js.Array[TransactionObject]], Unit]
     ): Unit = js.native
     def getTransfers(seed: String, options: InclusionStates): Unit = js.native
     def getTransfers(
       seed: String,
       options: InclusionStates,
-      callback: js.Function2[/* error */ Error, /* transfers */ js.Array[js.Array[TransactionObject]], Unit]
+      callback: js.Function2[/* error */ js.Error, /* transfers */ js.Array[js.Array[TransactionObject]], Unit]
     ): Unit = js.native
     
     def isReattachable(address: String): Unit = js.native
     def isReattachable(
       address: String,
-      callback: js.Function2[/* error */ Error, /* response */ Boolean | js.Array[Boolean], Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ Boolean | js.Array[Boolean], Unit]
     ): Unit = js.native
     def isReattachable(address: js.Array[String]): Unit = js.native
     def isReattachable(
       address: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* response */ Boolean | js.Array[Boolean], Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ Boolean | js.Array[Boolean], Unit]
     ): Unit = js.native
     
     def prepareTransfers(seed: String, transfers: js.Array[TransferObject]): Unit = js.native
@@ -206,14 +212,14 @@ object mod {
       seed: String,
       transfers: js.Array[TransferObject],
       options: Unit,
-      callback: js.Function2[/* error */ Error, /* response */ Trytes, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ Trytes, Unit]
     ): Unit = js.native
     def prepareTransfers(seed: String, transfers: js.Array[TransferObject], options: Address): Unit = js.native
     def prepareTransfers(
       seed: String,
       transfers: js.Array[TransferObject],
       options: Address,
-      callback: js.Function2[/* error */ Error, /* response */ Trytes, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ Trytes, Unit]
     ): Unit = js.native
     
     def replayBundle(transactionHash: String, depth: Double, minWeightMagnitude: Double): Unit = js.native
@@ -221,7 +227,7 @@ object mod {
       transactionHash: String,
       depth: Double,
       minWeightMagnitude: Double,
-      callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]
     ): Unit = js.native
     
     def sendTransfer(seed: String, depth: Double, minWeightMagnitude: Double, transfers: js.Array[TransferObject]): Unit = js.native
@@ -231,7 +237,7 @@ object mod {
       minWeightMagnitude: Double,
       transfers: js.Array[TransferObject],
       options: Unit,
-      callback: js.Function2[/* error */ Error, /* response */ InputsArray, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ InputsArray, Unit]
     ): Unit = js.native
     def sendTransfer(
       seed: String,
@@ -246,7 +252,7 @@ object mod {
       minWeightMagnitude: Double,
       transfers: js.Array[TransferObject],
       options: AddressInputs,
-      callback: js.Function2[/* error */ Error, /* response */ InputsArray, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ InputsArray, Unit]
     ): Unit = js.native
     
     def sendTrytes(trytes: js.Array[String], depth: Double, minWeightMagnitude: Double): Unit = js.native
@@ -254,7 +260,7 @@ object mod {
       trytes: js.Array[String],
       depth: Double,
       minWeightMagnitude: Double,
-      callback: js.Function2[/* error */ Error, /* response */ InputsArray, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ InputsArray, Unit]
     ): Unit = js.native
   }
   
@@ -302,7 +308,7 @@ object mod {
       bundleToSign: js.Array[TransactionObject],
       inputAddress: String,
       key: String,
-      callback: js.Function2[/* error */ Error, /* bundle */ js.Array[TransactionObject], Unit]
+      callback: js.Function2[/* error */ js.Error, /* bundle */ js.Array[TransactionObject], Unit]
     ): Unit = js.native
     
     def address(digestTrytes: String): MultisigAddress = js.native
@@ -323,7 +329,7 @@ object mod {
       inputAddress: String,
       remainderAddress: String,
       transfers: js.Array[TransferObject],
-      callback: js.Function2[/* error */ Error, /* bundle */ js.Array[TransactionObject], Unit]
+      callback: js.Function2[/* error */ js.Error, /* bundle */ js.Array[TransactionObject], Unit]
     ): Unit = js.native
     
     def validateAddress(multisigAddress: String, digests: js.Array[String]): Boolean = js.native
@@ -375,34 +381,34 @@ object mod {
     
     def isAddress(address: String): Boolean = js.native
     
-    def isArray(array: js.Any): Boolean = js.native
+    def isArray(array: Any): Boolean = js.native
     
-    def isArrayOfAttachedTrytes(trytes: js.Any): Boolean = js.native
+    def isArrayOfAttachedTrytes(trytes: Any): Boolean = js.native
     
-    def isArrayOfHashes(hashes: js.Any): Boolean = js.native
+    def isArrayOfHashes(hashes: Any): Boolean = js.native
     
-    def isArrayOfTrytes(trytes: js.Any): Boolean = js.native
+    def isArrayOfTrytes(trytes: Any): Boolean = js.native
     
-    def isArrayOfTxObjects(transactions: js.Any): Boolean = js.native
+    def isArrayOfTxObjects(transactions: Any): Boolean = js.native
     
-    def isHash(hash: js.Any): Boolean = js.native
+    def isHash(hash: Any): Boolean = js.native
     
-    def isInputs(inputs: js.Any): Boolean = js.native
+    def isInputs(inputs: Any): Boolean = js.native
     
-    def isNum(value: js.Any): Boolean = js.native
+    def isNum(value: Any): Boolean = js.native
     
-    def isObject(`object`: js.Any): Boolean = js.native
+    def isObject(`object`: Any): Boolean = js.native
     
-    def isString(string: js.Any): Boolean = js.native
+    def isString(string: Any): Boolean = js.native
     
-    def isTransfersArray(transfers: js.Any): Boolean = js.native
+    def isTransfersArray(transfers: Any): Boolean = js.native
     
     def isTrytes(trytes: String): Boolean = js.native
     def isTrytes(trytes: String, length: Double): Boolean = js.native
     
-    def isUri(uri: js.Any): Boolean = js.native
+    def isUri(uri: Any): Boolean = js.native
     
-    def isValue(value: js.Any): Boolean = js.native
+    def isValue(value: Any): Boolean = js.native
   }
   
   //
@@ -412,7 +418,7 @@ object mod {
     
     def addNeighbors(
       uris: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* addedNeighbors */ Double, Unit]
+      callback: js.Function2[/* error */ js.Error, /* addedNeighbors */ Double, Unit]
     ): Unit
     
     def attachToTangle(
@@ -420,73 +426,76 @@ object mod {
       branchTransaction: String,
       minWeightMagnitude: Double,
       trytes: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]
+      callback: js.Function2[/* error */ js.Error, /* trytes */ js.Array[String], Unit]
     ): Unit
     
     def broadcastTransactions(
       trytes: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]
     ): Unit
     
     def findTransactions(
       searchValues: Addresses,
-      callback: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]
+      callback: js.Function2[/* error */ js.Error, /* hashes */ js.Array[String], Unit]
     ): Unit
     
     def getBalances(
       addresses: js.Array[String],
       treshold: Double,
-      callback: js.Function2[/* error */ Error, /* response */ Balances, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ Balances, Unit]
     ): Unit
     
     def getInclusionStates(
       transactions: js.Array[String],
       tips: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* states */ js.Array[Boolean], Unit]
+      callback: js.Function2[/* error */ js.Error, /* states */ js.Array[Boolean], Unit]
     ): Unit
     
-    def getNeighbors(callback: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit]): Unit
+    def getNeighbors(callback: js.Function2[/* error */ js.Error, /* neighbors */ js.Array[Neighbor], Unit]): Unit
     
-    def getNodeInfo(callback: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit]): Unit
+    def getNodeInfo(callback: js.Function2[/* error */ js.Error, /* info */ NodeInfo, Unit]): Unit
     
-    def getTips(callback: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]): Unit
+    def getTips(callback: js.Function2[/* error */ js.Error, /* hashes */ js.Array[String], Unit]): Unit
     
-    def getTransactionsToApprove(depth: Double, callback: js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]): Unit
+    def getTransactionsToApprove(
+      depth: Double,
+      callback: js.Function2[/* error */ js.Error, /* response */ BranchTransaction, Unit]
+    ): Unit
     
     def getTrytes(
       hashes: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]
+      callback: js.Function2[/* error */ js.Error, /* trytes */ js.Array[String], Unit]
     ): Unit
     
-    def interruptAttachingToTangle(callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]): Unit
+    def interruptAttachingToTangle(callback: js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]): Unit
     
     def removeNeighbors(
       uris: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* removedNeighbors */ js.Array[Double], Unit]
+      callback: js.Function2[/* error */ js.Error, /* removedNeighbors */ js.Array[Double], Unit]
     ): Unit
     
     def storeTransactions(
       trytes: js.Array[String],
-      callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
+      callback: js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]
     ): Unit
   }
   object IriApi {
     
     inline def apply(
-      addNeighbors: (js.Array[String], js.Function2[/* error */ Error, /* addedNeighbors */ Double, Unit]) => Unit,
-      attachToTangle: (String, String, Double, js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit,
-      broadcastTransactions: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit,
-      findTransactions: (Addresses, js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]) => Unit,
-      getBalances: (js.Array[String], Double, js.Function2[/* error */ Error, /* response */ Balances, Unit]) => Unit,
-      getInclusionStates: (js.Array[String], js.Array[String], js.Function2[/* error */ Error, /* states */ js.Array[Boolean], Unit]) => Unit,
-      getNeighbors: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit] => Unit,
-      getNodeInfo: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit] => Unit,
-      getTips: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit] => Unit,
-      getTransactionsToApprove: (Double, js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]) => Unit,
-      getTrytes: (js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit,
-      interruptAttachingToTangle: js.Function2[/* error */ Error, /* response */ js.Object, Unit] => Unit,
-      removeNeighbors: (js.Array[String], js.Function2[/* error */ Error, /* removedNeighbors */ js.Array[Double], Unit]) => Unit,
-      storeTransactions: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit
+      addNeighbors: (js.Array[String], js.Function2[/* error */ js.Error, /* addedNeighbors */ Double, Unit]) => Unit,
+      attachToTangle: (String, String, Double, js.Array[String], js.Function2[/* error */ js.Error, /* trytes */ js.Array[String], Unit]) => Unit,
+      broadcastTransactions: (js.Array[String], js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]) => Unit,
+      findTransactions: (Addresses, js.Function2[/* error */ js.Error, /* hashes */ js.Array[String], Unit]) => Unit,
+      getBalances: (js.Array[String], Double, js.Function2[/* error */ js.Error, /* response */ Balances, Unit]) => Unit,
+      getInclusionStates: (js.Array[String], js.Array[String], js.Function2[/* error */ js.Error, /* states */ js.Array[Boolean], Unit]) => Unit,
+      getNeighbors: js.Function2[/* error */ js.Error, /* neighbors */ js.Array[Neighbor], Unit] => Unit,
+      getNodeInfo: js.Function2[/* error */ js.Error, /* info */ NodeInfo, Unit] => Unit,
+      getTips: js.Function2[/* error */ js.Error, /* hashes */ js.Array[String], Unit] => Unit,
+      getTransactionsToApprove: (Double, js.Function2[/* error */ js.Error, /* response */ BranchTransaction, Unit]) => Unit,
+      getTrytes: (js.Array[String], js.Function2[/* error */ js.Error, /* trytes */ js.Array[String], Unit]) => Unit,
+      interruptAttachingToTangle: js.Function2[/* error */ js.Error, /* response */ js.Object, Unit] => Unit,
+      removeNeighbors: (js.Array[String], js.Function2[/* error */ js.Error, /* removedNeighbors */ js.Array[Double], Unit]) => Unit,
+      storeTransactions: (js.Array[String], js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]) => Unit
     ): IriApi = {
       val __obj = js.Dynamic.literal(addNeighbors = js.Any.fromFunction2(addNeighbors), attachToTangle = js.Any.fromFunction5(attachToTangle), broadcastTransactions = js.Any.fromFunction2(broadcastTransactions), findTransactions = js.Any.fromFunction2(findTransactions), getBalances = js.Any.fromFunction3(getBalances), getInclusionStates = js.Any.fromFunction3(getInclusionStates), getNeighbors = js.Any.fromFunction1(getNeighbors), getNodeInfo = js.Any.fromFunction1(getNodeInfo), getTips = js.Any.fromFunction1(getTips), getTransactionsToApprove = js.Any.fromFunction2(getTransactionsToApprove), getTrytes = js.Any.fromFunction2(getTrytes), interruptAttachingToTangle = js.Any.fromFunction1(interruptAttachingToTangle), removeNeighbors = js.Any.fromFunction2(removeNeighbors), storeTransactions = js.Any.fromFunction2(storeTransactions))
       __obj.asInstanceOf[IriApi]
@@ -495,44 +504,52 @@ object mod {
     extension [Self <: IriApi](x: Self) {
       
       inline def setAddNeighbors(
-        value: (js.Array[String], js.Function2[/* error */ Error, /* addedNeighbors */ Double, Unit]) => Unit
+        value: (js.Array[String], js.Function2[/* error */ js.Error, /* addedNeighbors */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "addNeighbors", js.Any.fromFunction2(value))
       
       inline def setAttachToTangle(
-        value: (String, String, Double, js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit
+        value: (String, String, Double, js.Array[String], js.Function2[/* error */ js.Error, /* trytes */ js.Array[String], Unit]) => Unit
       ): Self = StObject.set(x, "attachToTangle", js.Any.fromFunction5(value))
       
-      inline def setBroadcastTransactions(value: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit): Self = StObject.set(x, "broadcastTransactions", js.Any.fromFunction2(value))
+      inline def setBroadcastTransactions(
+        value: (js.Array[String], js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]) => Unit
+      ): Self = StObject.set(x, "broadcastTransactions", js.Any.fromFunction2(value))
       
-      inline def setFindTransactions(value: (Addresses, js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "findTransactions", js.Any.fromFunction2(value))
+      inline def setFindTransactions(
+        value: (Addresses, js.Function2[/* error */ js.Error, /* hashes */ js.Array[String], Unit]) => Unit
+      ): Self = StObject.set(x, "findTransactions", js.Any.fromFunction2(value))
       
       inline def setGetBalances(
-        value: (js.Array[String], Double, js.Function2[/* error */ Error, /* response */ Balances, Unit]) => Unit
+        value: (js.Array[String], Double, js.Function2[/* error */ js.Error, /* response */ Balances, Unit]) => Unit
       ): Self = StObject.set(x, "getBalances", js.Any.fromFunction3(value))
       
       inline def setGetInclusionStates(
-        value: (js.Array[String], js.Array[String], js.Function2[/* error */ Error, /* states */ js.Array[Boolean], Unit]) => Unit
+        value: (js.Array[String], js.Array[String], js.Function2[/* error */ js.Error, /* states */ js.Array[Boolean], Unit]) => Unit
       ): Self = StObject.set(x, "getInclusionStates", js.Any.fromFunction3(value))
       
-      inline def setGetNeighbors(value: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit] => Unit): Self = StObject.set(x, "getNeighbors", js.Any.fromFunction1(value))
+      inline def setGetNeighbors(value: js.Function2[/* error */ js.Error, /* neighbors */ js.Array[Neighbor], Unit] => Unit): Self = StObject.set(x, "getNeighbors", js.Any.fromFunction1(value))
       
-      inline def setGetNodeInfo(value: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit] => Unit): Self = StObject.set(x, "getNodeInfo", js.Any.fromFunction1(value))
+      inline def setGetNodeInfo(value: js.Function2[/* error */ js.Error, /* info */ NodeInfo, Unit] => Unit): Self = StObject.set(x, "getNodeInfo", js.Any.fromFunction1(value))
       
-      inline def setGetTips(value: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "getTips", js.Any.fromFunction1(value))
+      inline def setGetTips(value: js.Function2[/* error */ js.Error, /* hashes */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "getTips", js.Any.fromFunction1(value))
       
-      inline def setGetTransactionsToApprove(value: (Double, js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]) => Unit): Self = StObject.set(x, "getTransactionsToApprove", js.Any.fromFunction2(value))
+      inline def setGetTransactionsToApprove(
+        value: (Double, js.Function2[/* error */ js.Error, /* response */ BranchTransaction, Unit]) => Unit
+      ): Self = StObject.set(x, "getTransactionsToApprove", js.Any.fromFunction2(value))
       
       inline def setGetTrytes(
-        value: (js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit
+        value: (js.Array[String], js.Function2[/* error */ js.Error, /* trytes */ js.Array[String], Unit]) => Unit
       ): Self = StObject.set(x, "getTrytes", js.Any.fromFunction2(value))
       
-      inline def setInterruptAttachingToTangle(value: js.Function2[/* error */ Error, /* response */ js.Object, Unit] => Unit): Self = StObject.set(x, "interruptAttachingToTangle", js.Any.fromFunction1(value))
+      inline def setInterruptAttachingToTangle(value: js.Function2[/* error */ js.Error, /* response */ js.Object, Unit] => Unit): Self = StObject.set(x, "interruptAttachingToTangle", js.Any.fromFunction1(value))
       
       inline def setRemoveNeighbors(
-        value: (js.Array[String], js.Function2[/* error */ Error, /* removedNeighbors */ js.Array[Double], Unit]) => Unit
+        value: (js.Array[String], js.Function2[/* error */ js.Error, /* removedNeighbors */ js.Array[Double], Unit]) => Unit
       ): Self = StObject.set(x, "removeNeighbors", js.Any.fromFunction2(value))
       
-      inline def setStoreTransactions(value: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit): Self = StObject.set(x, "storeTransactions", js.Any.fromFunction2(value))
+      inline def setStoreTransactions(
+        value: (js.Array[String], js.Function2[/* error */ js.Error, /* response */ js.Object, Unit]) => Unit
+      ): Self = StObject.set(x, "storeTransactions", js.Any.fromFunction2(value))
     }
   }
   

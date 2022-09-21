@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.ui.Widget")
 @js.native
-class Widget ()
+open class Widget ()
   extends StObject
      with typings.kendoUi.kendo.ui.Widget

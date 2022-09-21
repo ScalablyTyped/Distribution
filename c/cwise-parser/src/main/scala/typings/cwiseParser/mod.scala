@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[T](func: js.Function2[/* a */ Double, /* repeated */ T, js.Any]): CompiledRoutine = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[CompiledRoutine]
+  inline def apply[T](func: js.Function2[/* a */ Double, /* repeated */ T, Any]): CompiledRoutine = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[CompiledRoutine]
   
   @JSImport("cwise-parser", JSImport.Namespace)
   @js.native
@@ -67,17 +67,17 @@ object mod {
       
       inline def setArgs(value: js.Array[CompiledArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: CompiledArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: CompiledArgument*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setLocalVars(value: js.Array[String]): Self = StObject.set(x, "localVars", value.asInstanceOf[js.Any])
       
-      inline def setLocalVarsVarargs(value: String*): Self = StObject.set(x, "localVars", js.Array(value :_*))
+      inline def setLocalVarsVarargs(value: String*): Self = StObject.set(x, "localVars", js.Array(value*))
       
       inline def setThisVars(value: js.Array[String]): Self = StObject.set(x, "thisVars", value.asInstanceOf[js.Any])
       
-      inline def setThisVarsVarargs(value: String*): Self = StObject.set(x, "thisVars", js.Array(value :_*))
+      inline def setThisVarsVarargs(value: String*): Self = StObject.set(x, "thisVars", js.Array(value*))
     }
   }
 }

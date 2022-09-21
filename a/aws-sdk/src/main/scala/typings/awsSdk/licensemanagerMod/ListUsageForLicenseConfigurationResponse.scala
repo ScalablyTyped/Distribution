@@ -29,7 +29,7 @@ object ListUsageForLicenseConfigurationResponse {
     
     inline def setLicenseConfigurationUsageListUndefined: Self = StObject.set(x, "LicenseConfigurationUsageList", js.undefined)
     
-    inline def setLicenseConfigurationUsageListVarargs(value: LicenseConfigurationUsage*): Self = StObject.set(x, "LicenseConfigurationUsageList", js.Array(value :_*))
+    inline def setLicenseConfigurationUsageListVarargs(value: LicenseConfigurationUsage*): Self = StObject.set(x, "LicenseConfigurationUsageList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

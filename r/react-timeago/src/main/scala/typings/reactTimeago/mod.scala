@@ -2,9 +2,7 @@ package typings.reactTimeago
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentProps
-import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,27 +11,23 @@ object mod {
   
   @JSImport("react-timeago", JSImport.Namespace)
   @js.native
-  class ^[T /* <: ComponentType[js.Object] */] ()
-    extends Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, js.Any]
+  open class ^[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] ()
+    extends Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, Any]
   
-  type Formatter = js.Function5[
-    /* value */ Double, 
-    /* unit */ Unit, 
-    /* suffix */ Suffix, 
-    /* epochMiliseconds */ Double, 
-    /* nextFormatter */ js.UndefOr[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-timeago.react-timeago.Formatter */ js.Object
-    ], 
-    ReactNode
-  ]
-  
-  type ReactTimeago[T /* <: ComponentType[js.Object] */] = Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, js.Any]
-  
-  trait ReactTimeagoProps[T /* <: ComponentType[js.Object] */] extends StObject {
+  @js.native
+  trait Formatter extends StObject {
     
-    val component: js.UndefOr[String | T] = js.undefined
+    def apply(value: Double, unit: Unit, suffix: Suffix, epochMiliseconds: Double): ReactNode = js.native
+    def apply(value: Double, unit: Unit, suffix: Suffix, epochMiliseconds: Double, nextFormatter: Formatter): ReactNode = js.native
+  }
+  
+  type ReactTimeago[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, Any]
+  
+  trait ReactTimeagoProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] extends StObject {
     
-    val date: String | Double | Date
+    val component: js.UndefOr[T] = js.undefined
+    
+    val date: String | Double | js.Date
     
     val formatter: js.UndefOr[Formatter] = js.undefined
     
@@ -49,24 +43,20 @@ object mod {
   }
   object ReactTimeagoProps {
     
-    inline def apply[T /* <: ComponentType[js.Object] */](date: String | Double | Date): ReactTimeagoProps[T] = {
+    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */](date: String | Double | js.Date): ReactTimeagoProps[T] = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTimeagoProps[T]]
     }
     
-    extension [Self <: ReactTimeagoProps[?], T /* <: ComponentType[js.Object] */](x: Self & ReactTimeagoProps[T]) {
+    extension [Self <: ReactTimeagoProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */](x: Self & ReactTimeagoProps[T]) {
       
-      inline def setComponent(value: String | T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setDate(value: String | Double | Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String | Double | js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      inline def setFormatter(
-        value: (/* value */ Double, /* unit */ Unit, /* suffix */ Suffix, /* epochMiliseconds */ Double, /* nextFormatter */ js.UndefOr[
-              /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-timeago.react-timeago.Formatter */ js.Object
-            ]) => ReactNode
-      ): Self = StObject.set(x, "formatter", js.Any.fromFunction5(value))
+      inline def setFormatter(value: Formatter): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       

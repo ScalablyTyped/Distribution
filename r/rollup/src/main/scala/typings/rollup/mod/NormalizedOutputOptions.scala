@@ -1,6 +1,5 @@
 package typings.rollup.mod
 
-import typings.rollup.anon.Id
 import typings.rollup.rollupBooleans.`true`
 import typings.rollup.rollupStrings.`inline`
 import typings.rollup.rollupStrings.auto
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NormalizedOutputOptions extends StObject {
   
-  var amd: Id
+  var amd: NormalizedAmdOptions
   
   var assetFileNames: String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String])
   
@@ -47,6 +46,8 @@ trait NormalizedOutputOptions extends StObject {
   
   var freeze: Boolean
   
+  var generatedCode: NormalizedGeneratedCodeOptions
+  
   var globals: GlobalsOption
   
   var hoistTransitiveImports: Boolean
@@ -78,13 +79,18 @@ trait NormalizedOutputOptions extends StObject {
   
   var plugins: js.Array[OutputPlugin]
   
+  /** @deprecated Use the "renderDynamicImport" plugin hook instead. */
   var preferConst: Boolean
   
   var preserveModules: Boolean
   
   var preserveModulesRoot: js.UndefOr[String] = js.undefined
   
+  def sanitizeFileName(fileName: String): String
+  
   var sourcemap: Boolean | `inline` | hidden
+  
+  var sourcemapBaseUrl: js.UndefOr[String] = js.undefined
   
   var sourcemapExcludeSources: Boolean
   
@@ -95,11 +101,13 @@ trait NormalizedOutputOptions extends StObject {
   var strict: Boolean
   
   var systemNullSetters: Boolean
+  
+  var validate: Boolean
 }
 object NormalizedOutputOptions {
   
   inline def apply(
-    amd: Id,
+    amd: NormalizedAmdOptions,
     assetFileNames: String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String]),
     banner: () => String | js.Promise[String],
     chunkFileNames: String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String]),
@@ -112,6 +120,7 @@ object NormalizedOutputOptions {
     footer: () => String | js.Promise[String],
     format: InternalModuleFormat,
     freeze: Boolean,
+    generatedCode: NormalizedGeneratedCodeOptions,
     globals: GlobalsOption,
     hoistTransitiveImports: Boolean,
     indent: `true` | String,
@@ -127,18 +136,20 @@ object NormalizedOutputOptions {
     plugins: js.Array[OutputPlugin],
     preferConst: Boolean,
     preserveModules: Boolean,
+    sanitizeFileName: String => String,
     sourcemap: Boolean | `inline` | hidden,
     sourcemapExcludeSources: Boolean,
     strict: Boolean,
-    systemNullSetters: Boolean
+    systemNullSetters: Boolean,
+    validate: Boolean
   ): NormalizedOutputOptions = {
-    val __obj = js.Dynamic.literal(amd = amd.asInstanceOf[js.Any], assetFileNames = assetFileNames.asInstanceOf[js.Any], banner = js.Any.fromFunction0(banner), chunkFileNames = chunkFileNames.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], entryFileNames = entryFileNames.asInstanceOf[js.Any], esModule = esModule.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any], externalLiveBindings = externalLiveBindings.asInstanceOf[js.Any], footer = js.Any.fromFunction0(footer), format = format.asInstanceOf[js.Any], freeze = freeze.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], hoistTransitiveImports = hoistTransitiveImports.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], inlineDynamicImports = inlineDynamicImports.asInstanceOf[js.Any], interop = js.Any.fromFunction1(interop), intro = js.Any.fromFunction0(intro), manualChunks = manualChunks.asInstanceOf[js.Any], minifyInternalExports = minifyInternalExports.asInstanceOf[js.Any], namespaceToStringTag = namespaceToStringTag.asInstanceOf[js.Any], noConflict = noConflict.asInstanceOf[js.Any], outro = js.Any.fromFunction0(outro), paths = paths.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preferConst = preferConst.asInstanceOf[js.Any], preserveModules = preserveModules.asInstanceOf[js.Any], sourcemap = sourcemap.asInstanceOf[js.Any], sourcemapExcludeSources = sourcemapExcludeSources.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any], systemNullSetters = systemNullSetters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amd = amd.asInstanceOf[js.Any], assetFileNames = assetFileNames.asInstanceOf[js.Any], banner = js.Any.fromFunction0(banner), chunkFileNames = chunkFileNames.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], entryFileNames = entryFileNames.asInstanceOf[js.Any], esModule = esModule.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any], externalLiveBindings = externalLiveBindings.asInstanceOf[js.Any], footer = js.Any.fromFunction0(footer), format = format.asInstanceOf[js.Any], freeze = freeze.asInstanceOf[js.Any], generatedCode = generatedCode.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], hoistTransitiveImports = hoistTransitiveImports.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], inlineDynamicImports = inlineDynamicImports.asInstanceOf[js.Any], interop = js.Any.fromFunction1(interop), intro = js.Any.fromFunction0(intro), manualChunks = manualChunks.asInstanceOf[js.Any], minifyInternalExports = minifyInternalExports.asInstanceOf[js.Any], namespaceToStringTag = namespaceToStringTag.asInstanceOf[js.Any], noConflict = noConflict.asInstanceOf[js.Any], outro = js.Any.fromFunction0(outro), paths = paths.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preferConst = preferConst.asInstanceOf[js.Any], preserveModules = preserveModules.asInstanceOf[js.Any], sanitizeFileName = js.Any.fromFunction1(sanitizeFileName), sourcemap = sourcemap.asInstanceOf[js.Any], sourcemapExcludeSources = sourcemapExcludeSources.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any], systemNullSetters = systemNullSetters.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizedOutputOptions]
   }
   
   extension [Self <: NormalizedOutputOptions](x: Self) {
     
-    inline def setAmd(value: Id): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
+    inline def setAmd(value: NormalizedAmdOptions): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     
     inline def setAssetFileNames(value: String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String])): Self = StObject.set(x, "assetFileNames", value.asInstanceOf[js.Any])
     
@@ -182,6 +193,8 @@ object NormalizedOutputOptions {
     
     inline def setFreeze(value: Boolean): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
     
+    inline def setGeneratedCode(value: NormalizedGeneratedCodeOptions): Self = StObject.set(x, "generatedCode", value.asInstanceOf[js.Any])
+    
     inline def setGlobals(value: GlobalsOption): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     inline def setGlobalsFunction1(value: /* name */ String => String): Self = StObject.set(x, "globals", js.Any.fromFunction1(value))
@@ -198,7 +211,7 @@ object NormalizedOutputOptions {
     
     inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => String | Null | Unit): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
     inline def setMinifyInternalExports(value: Boolean): Self = StObject.set(x, "minifyInternalExports", value.asInstanceOf[js.Any])
     
@@ -218,7 +231,7 @@ object NormalizedOutputOptions {
     
     inline def setPlugins(value: js.Array[OutputPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    inline def setPluginsVarargs(value: OutputPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: OutputPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPreferConst(value: Boolean): Self = StObject.set(x, "preferConst", value.asInstanceOf[js.Any])
     
@@ -228,7 +241,13 @@ object NormalizedOutputOptions {
     
     inline def setPreserveModulesRootUndefined: Self = StObject.set(x, "preserveModulesRoot", js.undefined)
     
+    inline def setSanitizeFileName(value: String => String): Self = StObject.set(x, "sanitizeFileName", js.Any.fromFunction1(value))
+    
     inline def setSourcemap(value: Boolean | `inline` | hidden): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
+    
+    inline def setSourcemapBaseUrl(value: String): Self = StObject.set(x, "sourcemapBaseUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSourcemapBaseUrlUndefined: Self = StObject.set(x, "sourcemapBaseUrl", js.undefined)
     
     inline def setSourcemapExcludeSources(value: Boolean): Self = StObject.set(x, "sourcemapExcludeSources", value.asInstanceOf[js.Any])
     
@@ -243,5 +262,7 @@ object NormalizedOutputOptions {
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     inline def setSystemNullSetters(value: Boolean): Self = StObject.set(x, "systemNullSetters", value.asInstanceOf[js.Any])
+    
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
   }
 }

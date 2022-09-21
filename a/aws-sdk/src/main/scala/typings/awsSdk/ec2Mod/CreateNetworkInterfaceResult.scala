@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateNetworkInterfaceResult extends StObject {
   
   /**
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+    */
+  var ClientToken: js.UndefOr[String] = js.undefined
+  
+  /**
     * Information about the network interface.
     */
   var NetworkInterface: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInterface] = js.undefined
@@ -19,6 +24,10 @@ object CreateNetworkInterfaceResult {
   }
   
   extension [Self <: CreateNetworkInterfaceResult](x: Self) {
+    
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     inline def setNetworkInterface(value: NetworkInterface): Self = StObject.set(x, "NetworkInterface", value.asInstanceOf[js.Any])
     

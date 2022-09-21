@@ -10,10 +10,10 @@ object cropSquareMod {
   
   @JSImport("material-ui/svg-icons/image/crop-square", JSImport.Default)
   @js.native
-  class default () extends ImageCropSquare
+  open class default () extends ImageCropSquare
   
   @JSImport("material-ui/svg-icons/image/crop-square", "ImageCropSquare")
   @js.native
-  class ImageCropSquare ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCropSquare ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

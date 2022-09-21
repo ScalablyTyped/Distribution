@@ -19,10 +19,10 @@ trait IPositionable
     */
   var alignTo: js.UndefOr[
     js.Function4[
-      /* element */ js.UndefOr[js.Any], 
+      /* element */ js.UndefOr[Any], 
       /* position */ js.UndefOr[String], 
       /* offsets */ js.UndefOr[Array], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -38,12 +38,12 @@ trait IPositionable
     */
   var anchorTo: js.UndefOr[
     js.Function6[
-      /* element */ js.UndefOr[js.Any], 
+      /* element */ js.UndefOr[Any], 
       /* position */ js.UndefOr[String], 
       /* offsets */ js.UndefOr[Array], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* monitorScroll */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
+      /* monitorScroll */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -57,7 +57,7 @@ trait IPositionable
     */
   var calculateConstrainedPosition: js.UndefOr[
     js.Function4[
-      /* constrainTo */ js.UndefOr[js.Any], 
+      /* constrainTo */ js.UndefOr[Any], 
       /* proposedPosition */ js.UndefOr[Array], 
       /* local */ js.UndefOr[Boolean], 
       /* proposedSize */ js.UndefOr[Array], 
@@ -73,7 +73,7 @@ trait IPositionable
     */
   var getAlignToXY: js.UndefOr[
     js.Function3[
-      /* element */ js.UndefOr[js.Any], 
+      /* element */ js.UndefOr[Any], 
       /* position */ js.UndefOr[String], 
       /* offsets */ js.UndefOr[Array], 
       Array
@@ -90,7 +90,7 @@ trait IPositionable
     js.Function3[
       /* anchor */ js.UndefOr[String], 
       /* local */ js.UndefOr[Boolean], 
-      /* size */ js.UndefOr[js.Any], 
+      /* size */ js.UndefOr[Any], 
       Array
     ]
   ] = js.undefined
@@ -101,7 +101,7 @@ trait IPositionable
     * @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  left: &lt;Element's X position (an alias for x)&gt;,  top: &lt;Element's Y position (an alias for y)&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. The result may also be used for setXY
     */
   var getBox: js.UndefOr[
-    js.Function2[/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean], js.Any]
+    js.Function2[/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean], Any]
   ] = js.undefined
   
   /** [Method] Returns the X Y vector by which this Positionable s element must be translated to make a best attempt to constrain
@@ -112,10 +112,10 @@ trait IPositionable
     */
   var getConstrainVector: js.UndefOr[
     js.Function3[
-      /* constrainTo */ js.UndefOr[js.Any], 
+      /* constrainTo */ js.UndefOr[Any], 
       /* proposedPosition */ js.UndefOr[Array], 
       /* proposedSize */ js.UndefOr[Array], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -138,7 +138,7 @@ trait IPositionable
     * @param offsetsTo Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or element id to get get the offsets from.
     * @returns Number[] The XY page offsets (e.g. [100, -200])
     */
-  var getOffsetsTo: js.UndefOr[js.Function1[/* offsetsTo */ js.UndefOr[js.Any], Array]] = js.undefined
+  var getOffsetsTo: js.UndefOr[js.Function1[/* offsetsTo */ js.UndefOr[Any], Array]] = js.undefined
   
   /** [Method] Returns a region object that defines the area of this element
     * @returns Ext.util.Region A Region containing "top, left, bottom, right" properties.
@@ -174,7 +174,7 @@ trait IPositionable
     js.Function3[
       /* direction */ js.UndefOr[String], 
       /* distance */ js.UndefOr[Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -190,7 +190,7 @@ trait IPositionable
     * @returns Ext.util.Positionable this
     */
   var setBox: js.UndefOr[
-    js.Function2[/* box */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], this.type]
+    js.Function2[/* box */ js.UndefOr[Any], /* animate */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Sets the local x coordinate of this element using CSS style
@@ -204,7 +204,7 @@ trait IPositionable
     * @param y Number The y coordinate, required if x is not an array. A value of null sets the top style to 'auto'
     * @returns Ext.util.Positionable this
     */
-  var setLocalXY: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double], this.type]] = js.undefined
+  var setLocalXY: js.UndefOr[js.Function2[/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double], this.type]] = js.undefined
   
   /** [Method] Sets the local y coordinate of this element using CSS style
     * @param y Number The y coordinate. A value of null sets the top style to 'auto'.
@@ -218,7 +218,7 @@ trait IPositionable
     * @returns Ext.util.Positionable this
     */
   var setRegion: js.UndefOr[
-    js.Function2[/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[js.Any], this.type]
+    js.Function2[/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Sets the X position of the DOM element based on page coordinates
@@ -227,7 +227,7 @@ trait IPositionable
     * @returns Ext.util.Positionable this
     */
   var setX: js.UndefOr[
-    js.Function2[/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any], this.type]
+    js.Function2[/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Sets the position of the DOM element in page coordinates
@@ -236,7 +236,7 @@ trait IPositionable
     * @returns Ext.util.Positionable this
     */
   var setXY: js.UndefOr[
-    js.Function2[/* pos */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any], this.type]
+    js.Function2[/* pos */ js.UndefOr[Array], /* animate */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Sets the Y position of the DOM element based on page coordinates
@@ -245,7 +245,7 @@ trait IPositionable
     * @returns Ext.util.Positionable this
     */
   var setY: js.UndefOr[
-    js.Function2[/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any], this.type]
+    js.Function2[/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[Any], this.type]
   ] = js.undefined
   
   /** [Method] Translates the passed page coordinates into left top css values for the element
@@ -253,7 +253,7 @@ trait IPositionable
     * @param y Number The page y, required if x is not an array
     * @returns Object An object with left and top properties. e.g. {left: (value), top: (value)}
     */
-  var translatePoints: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double], js.Any]] = js.undefined
+  var translatePoints: js.UndefOr[js.Function2[/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double], Any]] = js.undefined
 }
 object IPositionable {
   
@@ -265,41 +265,41 @@ object IPositionable {
   extension [Self <: IPositionable](x: Self) {
     
     inline def setAlignTo(
-      value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any]) => IPositionable
+      value: (/* element */ js.UndefOr[Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[Any]) => IPositionable
     ): Self = StObject.set(x, "alignTo", js.Any.fromFunction4(value))
     
     inline def setAlignToUndefined: Self = StObject.set(x, "alignTo", js.undefined)
     
     inline def setAnchorTo(
-      value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any], /* monitorScroll */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any]) => IPositionable
+      value: (/* element */ js.UndefOr[Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[Any], /* monitorScroll */ js.UndefOr[Any], /* callback */ js.UndefOr[Any]) => IPositionable
     ): Self = StObject.set(x, "anchorTo", js.Any.fromFunction6(value))
     
     inline def setAnchorToUndefined: Self = StObject.set(x, "anchorTo", js.undefined)
     
     inline def setCalculateConstrainedPosition(
-      value: (/* constrainTo */ js.UndefOr[js.Any], /* proposedPosition */ js.UndefOr[Array], /* local */ js.UndefOr[Boolean], /* proposedSize */ js.UndefOr[Array]) => Array
+      value: (/* constrainTo */ js.UndefOr[Any], /* proposedPosition */ js.UndefOr[Array], /* local */ js.UndefOr[Boolean], /* proposedSize */ js.UndefOr[Array]) => Array
     ): Self = StObject.set(x, "calculateConstrainedPosition", js.Any.fromFunction4(value))
     
     inline def setCalculateConstrainedPositionUndefined: Self = StObject.set(x, "calculateConstrainedPosition", js.undefined)
     
     inline def setGetAlignToXY(
-      value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array]) => Array
+      value: (/* element */ js.UndefOr[Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array]) => Array
     ): Self = StObject.set(x, "getAlignToXY", js.Any.fromFunction3(value))
     
     inline def setGetAlignToXYUndefined: Self = StObject.set(x, "getAlignToXY", js.undefined)
     
     inline def setGetAnchorXY(
-      value: (/* anchor */ js.UndefOr[String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array
+      value: (/* anchor */ js.UndefOr[String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[Any]) => Array
     ): Self = StObject.set(x, "getAnchorXY", js.Any.fromFunction3(value))
     
     inline def setGetAnchorXYUndefined: Self = StObject.set(x, "getAnchorXY", js.undefined)
     
-    inline def setGetBox(value: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBox", js.Any.fromFunction2(value))
+    inline def setGetBox(value: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "getBox", js.Any.fromFunction2(value))
     
     inline def setGetBoxUndefined: Self = StObject.set(x, "getBox", js.undefined)
     
     inline def setGetConstrainVector(
-      value: (/* constrainTo */ js.UndefOr[js.Any], /* proposedPosition */ js.UndefOr[Array], /* proposedSize */ js.UndefOr[Array]) => js.Any
+      value: (/* constrainTo */ js.UndefOr[Any], /* proposedPosition */ js.UndefOr[Array], /* proposedSize */ js.UndefOr[Array]) => Any
     ): Self = StObject.set(x, "getConstrainVector", js.Any.fromFunction3(value))
     
     inline def setGetConstrainVectorUndefined: Self = StObject.set(x, "getConstrainVector", js.undefined)
@@ -316,7 +316,7 @@ object IPositionable {
     
     inline def setGetLocalYUndefined: Self = StObject.set(x, "getLocalY", js.undefined)
     
-    inline def setGetOffsetsTo(value: /* offsetsTo */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getOffsetsTo", js.Any.fromFunction1(value))
+    inline def setGetOffsetsTo(value: /* offsetsTo */ js.UndefOr[Any] => Array): Self = StObject.set(x, "getOffsetsTo", js.Any.fromFunction1(value))
     
     inline def setGetOffsetsToUndefined: Self = StObject.set(x, "getOffsetsTo", js.undefined)
     
@@ -341,7 +341,7 @@ object IPositionable {
     inline def setGetYUndefined: Self = StObject.set(x, "getY", js.undefined)
     
     inline def setMove(
-      value: (/* direction */ js.UndefOr[String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Unit
+      value: (/* direction */ js.UndefOr[String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
     
     inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
@@ -350,7 +350,7 @@ object IPositionable {
     
     inline def setRemoveAnchorUndefined: Self = StObject.set(x, "removeAnchor", js.undefined)
     
-    inline def setSetBox(value: (/* box */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setBox", js.Any.fromFunction2(value))
+    inline def setSetBox(value: (/* box */ js.UndefOr[Any], /* animate */ js.UndefOr[Any]) => IPositionable): Self = StObject.set(x, "setBox", js.Any.fromFunction2(value))
     
     inline def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
     
@@ -358,7 +358,7 @@ object IPositionable {
     
     inline def setSetLocalXUndefined: Self = StObject.set(x, "setLocalX", js.undefined)
     
-    inline def setSetLocalXY(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IPositionable): Self = StObject.set(x, "setLocalXY", js.Any.fromFunction2(value))
+    inline def setSetLocalXY(value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double]) => IPositionable): Self = StObject.set(x, "setLocalXY", js.Any.fromFunction2(value))
     
     inline def setSetLocalXYUndefined: Self = StObject.set(x, "setLocalXY", js.undefined)
     
@@ -366,23 +366,23 @@ object IPositionable {
     
     inline def setSetLocalYUndefined: Self = StObject.set(x, "setLocalY", js.undefined)
     
-    inline def setSetRegion(value: (/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setRegion", js.Any.fromFunction2(value))
+    inline def setSetRegion(value: (/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[Any]) => IPositionable): Self = StObject.set(x, "setRegion", js.Any.fromFunction2(value))
     
     inline def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
     
-    inline def setSetX(value: (/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setX", js.Any.fromFunction2(value))
+    inline def setSetX(value: (/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IPositionable): Self = StObject.set(x, "setX", js.Any.fromFunction2(value))
     
     inline def setSetXUndefined: Self = StObject.set(x, "setX", js.undefined)
     
-    inline def setSetXY(value: (/* pos */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setXY", js.Any.fromFunction2(value))
+    inline def setSetXY(value: (/* pos */ js.UndefOr[Array], /* animate */ js.UndefOr[Any]) => IPositionable): Self = StObject.set(x, "setXY", js.Any.fromFunction2(value))
     
     inline def setSetXYUndefined: Self = StObject.set(x, "setXY", js.undefined)
     
-    inline def setSetY(value: (/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setY", js.Any.fromFunction2(value))
+    inline def setSetY(value: (/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IPositionable): Self = StObject.set(x, "setY", js.Any.fromFunction2(value))
     
     inline def setSetYUndefined: Self = StObject.set(x, "setY", js.undefined)
     
-    inline def setTranslatePoints(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "translatePoints", js.Any.fromFunction2(value))
+    inline def setTranslatePoints(value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double]) => Any): Self = StObject.set(x, "translatePoints", js.Any.fromFunction2(value))
     
     inline def setTranslatePointsUndefined: Self = StObject.set(x, "translatePoints", js.undefined)
   }

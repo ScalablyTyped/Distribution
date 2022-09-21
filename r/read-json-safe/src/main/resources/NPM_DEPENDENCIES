@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "read-json-safe" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "read-json-safe" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

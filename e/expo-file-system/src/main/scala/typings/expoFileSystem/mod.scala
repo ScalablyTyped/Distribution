@@ -5,12 +5,15 @@ import typings.expoFileSystem.anon.Idempotent
 import typings.expoFileSystem.anon.Intermediates
 import typings.expoFileSystem.anon.Md5
 import typings.expoFileSystem.fileSystemTypesMod.DownloadOptions
-import typings.expoFileSystem.fileSystemTypesMod.DownloadProgressCallback
+import typings.expoFileSystem.fileSystemTypesMod.DownloadProgressData
 import typings.expoFileSystem.fileSystemTypesMod.FileInfo
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemDownloadResult
+import typings.expoFileSystem.fileSystemTypesMod.FileSystemNetworkTaskProgressCallback
+import typings.expoFileSystem.fileSystemTypesMod.FileSystemRequestDirectoryPermissionsResult
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadOptions
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadResult
 import typings.expoFileSystem.fileSystemTypesMod.ReadingOptions
+import typings.expoFileSystem.fileSystemTypesMod.UploadProgressData
 import typings.expoFileSystem.fileSystemTypesMod.WritingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,26 +27,36 @@ object mod {
   
   @JSImport("expo-file-system", "DownloadResumable")
   @js.native
-  class DownloadResumable protected ()
+  open class DownloadResumable protected ()
     extends typings.expoFileSystem.fileSystemMod.DownloadResumable {
-    def this(url: String, fileUri: String) = this()
-    def this(url: String, fileUri: String, options: DownloadOptions) = this()
-    def this(url: String, fileUri: String, options: Unit, callback: DownloadProgressCallback) = this()
-    def this(url: String, fileUri: String, options: DownloadOptions, callback: DownloadProgressCallback) = this()
-    def this(url: String, fileUri: String, options: Unit, callback: Unit, resumeData: String) = this()
+    def this(url: String, _fileUri: String) = this()
+    def this(url: String, _fileUri: String, options: DownloadOptions) = this()
     def this(
       url: String,
-      fileUri: String,
+      _fileUri: String,
       options: Unit,
-      callback: DownloadProgressCallback,
+      callback: FileSystemNetworkTaskProgressCallback[DownloadProgressData]
+    ) = this()
+    def this(
+      url: String,
+      _fileUri: String,
+      options: DownloadOptions,
+      callback: FileSystemNetworkTaskProgressCallback[DownloadProgressData]
+    ) = this()
+    def this(url: String, _fileUri: String, options: Unit, callback: Unit, resumeData: String) = this()
+    def this(
+      url: String,
+      _fileUri: String,
+      options: Unit,
+      callback: FileSystemNetworkTaskProgressCallback[DownloadProgressData],
       resumeData: String
     ) = this()
-    def this(url: String, fileUri: String, options: DownloadOptions, callback: Unit, resumeData: String) = this()
+    def this(url: String, _fileUri: String, options: DownloadOptions, callback: Unit, resumeData: String) = this()
     def this(
       url: String,
-      fileUri: String,
+      _fileUri: String,
       options: DownloadOptions,
-      callback: DownloadProgressCallback,
+      callback: FileSystemNetworkTaskProgressCallback[DownloadProgressData],
       resumeData: String
     ) = this()
   }
@@ -59,6 +72,11 @@ object mod {
     
     /* "utf8" */ val UTF8: typings.expoFileSystem.fileSystemTypesMod.EncodingType.UTF8 & String = js.native
   }
+  
+  @JSImport("expo-file-system", "FileSystemCancellableNetworkTask")
+  @js.native
+  abstract class FileSystemCancellableNetworkTask[T /* <: DownloadProgressData | UploadProgressData */] ()
+    extends typings.expoFileSystem.fileSystemMod.FileSystemCancellableNetworkTask[T]
   
   @JSImport("expo-file-system", "FileSystemSessionType")
   @js.native
@@ -84,6 +102,62 @@ object mod {
     /* 1 */ val MULTIPART: typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadType.MULTIPART & Double = js.native
   }
   
+  object StorageAccessFramework {
+    
+    @JSImport("expo-file-system", "StorageAccessFramework")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* was `typeof imported_FileSystem.copyAsync` */
+    inline def copyAsync(options: From): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    inline def createFileAsync(parentUri: String, fileName: String, mimeType: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFileAsync")(parentUri.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    
+    /* was `typeof imported_FileSystem.deleteAsync` */
+    inline def deleteAsync(fileUri: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def deleteAsync(fileUri: String, options: Idempotent): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    inline def getUriForDirectoryInRoot(folderName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUriForDirectoryInRoot")(folderName.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def makeDirectoryAsync(parentUri: String, dirName: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectoryAsync")(parentUri.asInstanceOf[js.Any], dirName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    
+    /* was `typeof imported_FileSystem.moveAsync` */
+    inline def moveAsync(options: From): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    /* was `typeof imported_FileSystem.readAsStringAsync` */
+    inline def readAsStringAsync(fileUri: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readAsStringAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def readAsStringAsync(fileUri: String, options: ReadingOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readAsStringAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    
+    inline def readDirectoryAsync(dirUri: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readDirectoryAsync")(dirUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    
+    inline def requestDirectoryPermissionsAsync(): js.Promise[FileSystemRequestDirectoryPermissionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDirectoryPermissionsAsync")().asInstanceOf[js.Promise[FileSystemRequestDirectoryPermissionsResult]]
+    inline def requestDirectoryPermissionsAsync(initialFileUrl: String): js.Promise[FileSystemRequestDirectoryPermissionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDirectoryPermissionsAsync")(initialFileUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileSystemRequestDirectoryPermissionsResult]]
+    
+    /* was `typeof imported_FileSystem.writeAsStringAsync` */
+    inline def writeAsStringAsync(fileUri: String, contents: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeAsStringAsync")(fileUri.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def writeAsStringAsync(fileUri: String, contents: String, options: WritingOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeAsStringAsync")(fileUri.asInstanceOf[js.Any], contents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  }
+  
+  @JSImport("expo-file-system", "UploadTask")
+  @js.native
+  open class UploadTask protected ()
+    extends typings.expoFileSystem.fileSystemMod.UploadTask {
+    def this(url: String, fileUri: String) = this()
+    def this(url: String, fileUri: String, options: FileSystemUploadOptions) = this()
+    def this(
+      url: String,
+      fileUri: String,
+      options: Unit,
+      callback: FileSystemNetworkTaskProgressCallback[UploadProgressData]
+    ) = this()
+    def this(
+      url: String,
+      fileUri: String,
+      options: FileSystemUploadOptions,
+      callback: FileSystemNetworkTaskProgressCallback[UploadProgressData]
+    ) = this()
+  }
+  
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(bundleDirectory) */ @JSImport("expo-file-system", "bundledAssets")
   @js.native
   val bundledAssets: String | Null = js.native
@@ -96,24 +170,49 @@ object mod {
   
   inline def createDownloadResumable(uri: String, fileUri: String): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
   inline def createDownloadResumable(uri: String, fileUri: String, options: Unit, callback: Unit, resumeData: String): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], resumeData.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
-  inline def createDownloadResumable(uri: String, fileUri: String, options: Unit, callback: DownloadProgressCallback): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
   inline def createDownloadResumable(
     uri: String,
     fileUri: String,
     options: Unit,
-    callback: DownloadProgressCallback,
+    callback: FileSystemNetworkTaskProgressCallback[DownloadProgressData]
+  ): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
+  inline def createDownloadResumable(
+    uri: String,
+    fileUri: String,
+    options: Unit,
+    callback: FileSystemNetworkTaskProgressCallback[DownloadProgressData],
     resumeData: String
   ): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], resumeData.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
   inline def createDownloadResumable(uri: String, fileUri: String, options: DownloadOptions): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
   inline def createDownloadResumable(uri: String, fileUri: String, options: DownloadOptions, callback: Unit, resumeData: String): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], resumeData.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
-  inline def createDownloadResumable(uri: String, fileUri: String, options: DownloadOptions, callback: DownloadProgressCallback): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
   inline def createDownloadResumable(
     uri: String,
     fileUri: String,
     options: DownloadOptions,
-    callback: DownloadProgressCallback,
+    callback: FileSystemNetworkTaskProgressCallback[DownloadProgressData]
+  ): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
+  inline def createDownloadResumable(
+    uri: String,
+    fileUri: String,
+    options: DownloadOptions,
+    callback: FileSystemNetworkTaskProgressCallback[DownloadProgressData],
     resumeData: String
   ): typings.expoFileSystem.fileSystemMod.DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], resumeData.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.DownloadResumable]
+  
+  inline def createUploadTask(url: String, fileUri: String): typings.expoFileSystem.fileSystemMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("createUploadTask")(url.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.UploadTask]
+  inline def createUploadTask(
+    url: String,
+    fileUri: String,
+    options: Unit,
+    callback: FileSystemNetworkTaskProgressCallback[UploadProgressData]
+  ): typings.expoFileSystem.fileSystemMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("createUploadTask")(url.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.UploadTask]
+  inline def createUploadTask(url: String, fileUri: String, options: FileSystemUploadOptions): typings.expoFileSystem.fileSystemMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("createUploadTask")(url.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.UploadTask]
+  inline def createUploadTask(
+    url: String,
+    fileUri: String,
+    options: FileSystemUploadOptions,
+    callback: FileSystemNetworkTaskProgressCallback[UploadProgressData]
+  ): typings.expoFileSystem.fileSystemMod.UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("createUploadTask")(url.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.expoFileSystem.fileSystemMod.UploadTask]
   
   inline def deleteAsync(fileUri: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def deleteAsync(fileUri: String, options: Idempotent): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator")
 @js.native
-class ThemeGenerator ()
+open class ThemeGenerator ()
   extends typings.officeUiFabricReact.mod.ThemeGenerator
 /* static members */
 object ThemeGenerator {
@@ -35,8 +35,8 @@ object ThemeGenerator {
     */
   @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator._makeRemainingCode")
   @js.native
-  def _makeRemainingCode: js.Any = js.native
-  inline def _makeRemainingCode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_makeRemainingCode")(x.asInstanceOf[js.Any])
+  def _makeRemainingCode: Any = js.native
+  inline def _makeRemainingCode_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_makeRemainingCode")(x.asInstanceOf[js.Any])
   
   /**
     * Sets the given slot's color to the appropriate color, shading it if necessary.
@@ -46,22 +46,22 @@ object ThemeGenerator {
     */
   @JSImport("office-ui-fabric-react/lib/index.bundle", "ThemeGenerator._setSlot")
   @js.native
-  def _setSlot: js.Any = js.native
-  inline def _setSlot_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_setSlot")(x.asInstanceOf[js.Any])
+  def _setSlot: Any = js.native
+  inline def _setSlot_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_setSlot")(x.asInstanceOf[js.Any])
   
   /**
     * Gets code-formatted load theme blob that can be copy and pasted.
     * Only used for the old theme designer, where loadTheme usage is acceptable,
     * unlike in the new theme designer.
     */
-  inline def getThemeAsCode(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCode")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeAsCode(slotRules: IThemeRules): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCode")(slotRules.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Gets code-formatted load theme blob, specifically for the new theme designer,
     * aka.ms/themedesigner. Shouldn't use loadTheme like the old theme designer since it's deprecated.
     * We want to use the theme object from createTheme and use the Customizations.applySettings API instead.
     */
-  inline def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCodeWithCreateTheme")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsCodeWithCreateTheme")(slotRules.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Gets the JSON-formatted blob that describes the theme, usable with the REST request endpoints:
@@ -72,7 +72,7 @@ object ThemeGenerator {
     *   ... }
     * ```
     */
-  inline def getThemeAsJson(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsJson")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeAsJson(slotRules: IThemeRules): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsJson")(slotRules.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Gets the theme as a list of SASS variables that can be used in code
@@ -82,7 +82,7 @@ object ThemeGenerator {
     * ...
     * ```
     */
-  inline def getThemeAsSass(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsSass")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeAsSass(slotRules: IThemeRules): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeAsSass")(slotRules.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Gets the theme formatted for PowerShell scripts
@@ -94,7 +94,7 @@ object ThemeGenerator {
     * }
     * ```
     */
-  inline def getThemeForPowerShell(slotRules: IThemeRules): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeForPowerShell")(slotRules.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getThemeForPowerShell(slotRules: IThemeRules): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeForPowerShell")(slotRules.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Sets the color of each slot based on its rule. Slots that don't inherit must have a color already.

@@ -14,23 +14,23 @@ trait Post extends StObject {
     * Create a Post
     */
   def create(data: Data): js.Promise[Unit] = js.native
-  def create(data: Data, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def create(data: Data, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
   def create(data: Data, replace: Boolean): js.Promise[Unit] = js.native
-  def create(data: Data, replace: Boolean, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def create(data: Data, replace: Unit, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def create(data: Data, replace: Boolean, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
+  def create(data: Data, replace: Unit, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
   
   /**
     * Publish a Draft
     */
   def publish(data: Data): js.Promise[Unit] = js.native
-  def publish(data: Data, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def publish(data: Data, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
   def publish(data: Data, replace: Boolean): js.Promise[Unit] = js.native
-  def publish(data: Data, replace: Boolean, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def publish(data: Data, replace: Unit, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def publish(data: Data, replace: Boolean, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
+  def publish(data: Data, replace: Unit, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
   
-  def render(source: String, data: RenderData, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def render(source: Null, data: RenderData, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def render(source: Unit, data: RenderData, fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def render(source: String, data: RenderData, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
+  def render(source: Null, data: RenderData, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
+  def render(source: Unit, data: RenderData, fn: js.Function1[/* err */ Any, Unit]): js.Promise[Unit] = js.native
 }
 object Post {
   
@@ -59,7 +59,7 @@ object Post {
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value :_*))
+      inline def setDateVarargs(value: (Double | String)*): Self = StObject.set(x, "date", js.Array(value*))
       
       inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       

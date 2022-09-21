@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWebChartControlHotTrackEventArgs")
 @js.native
-class ASPxClientWebChartControlHotTrackEventArgs protected ()
+open class ASPxClientWebChartControlHotTrackEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebChartControlHotTrackEventArgs {
   /**
@@ -20,7 +20,7 @@ class ASPxClientWebChartControlHotTrackEventArgs protected ()
     hitObject: typings.devexpressWeb.ASPxClientWebChartElement,
     additionalHitObject: typings.devexpressWeb.ASPxClientWebChartElement,
     hitInfo: typings.devexpressWeb.ASPxClientWebChartHitInfo,
-    htmlElement: js.Any,
+    htmlElement: Any,
     x: Double,
     y: Double
   ) = this()
@@ -29,7 +29,7 @@ class ASPxClientWebChartControlHotTrackEventArgs protected ()
     hitObject: typings.devexpressWeb.ASPxClientWebChartElement,
     additionalHitObject: typings.devexpressWeb.ASPxClientWebChartElement,
     hitInfo: typings.devexpressWeb.ASPxClientWebChartHitInfo,
-    htmlElement: js.Any,
+    htmlElement: Any,
     x: Double,
     y: Double,
     absoluteX: Double
@@ -39,7 +39,7 @@ class ASPxClientWebChartControlHotTrackEventArgs protected ()
     hitObject: typings.devexpressWeb.ASPxClientWebChartElement,
     additionalHitObject: typings.devexpressWeb.ASPxClientWebChartElement,
     hitInfo: typings.devexpressWeb.ASPxClientWebChartHitInfo,
-    htmlElement: js.Any,
+    htmlElement: Any,
     x: Double,
     y: Double,
     absoluteX: Double,
@@ -50,7 +50,7 @@ class ASPxClientWebChartControlHotTrackEventArgs protected ()
     hitObject: typings.devexpressWeb.ASPxClientWebChartElement,
     additionalHitObject: typings.devexpressWeb.ASPxClientWebChartElement,
     hitInfo: typings.devexpressWeb.ASPxClientWebChartHitInfo,
-    htmlElement: js.Any,
+    htmlElement: Any,
     x: Double,
     y: Double,
     absoluteX: Unit,
@@ -103,7 +103,7 @@ class ASPxClientWebChartControlHotTrackEventArgs protected ()
     * Gets the HTML object that contains the processed item.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
   
   /**
     * Gets or sets a value that specifies whether the event should be finally processed on the server side.

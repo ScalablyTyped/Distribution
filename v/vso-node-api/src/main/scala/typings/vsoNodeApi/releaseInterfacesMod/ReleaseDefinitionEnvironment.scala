@@ -13,7 +13,7 @@ trait ReleaseDefinitionEnvironment extends StObject {
   
   var conditions: js.Array[Condition]
   
-  var demands: js.Array[js.Any]
+  var demands: js.Array[Any]
   
   var deployPhases: js.Array[DeployPhase]
   
@@ -39,7 +39,7 @@ trait ReleaseDefinitionEnvironment extends StObject {
   
   var processParameters: ProcessParameters
   
-  var properties: js.Any
+  var properties: Any
   
   var queueId: Double
   
@@ -60,7 +60,7 @@ object ReleaseDefinitionEnvironment {
   inline def apply(
     badgeUrl: String,
     conditions: js.Array[Condition],
-    demands: js.Array[js.Any],
+    demands: js.Array[Any],
     deployPhases: js.Array[DeployPhase],
     deployStep: ReleaseDefinitionDeployStep,
     environmentOptions: EnvironmentOptions,
@@ -73,7 +73,7 @@ object ReleaseDefinitionEnvironment {
     preDeployApprovals: ReleaseDefinitionApprovals,
     preDeploymentGates: ReleaseDefinitionGatesStep,
     processParameters: ProcessParameters,
-    properties: js.Any,
+    properties: Any,
     queueId: Double,
     rank: Double,
     retentionPolicy: EnvironmentRetentionPolicy,
@@ -92,15 +92,15 @@ object ReleaseDefinitionEnvironment {
     
     inline def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value*))
     
-    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: Any*): Self = StObject.set(x, "demands", js.Array(value*))
     
     inline def setDeployPhases(value: js.Array[DeployPhase]): Self = StObject.set(x, "deployPhases", value.asInstanceOf[js.Any])
     
-    inline def setDeployPhasesVarargs(value: DeployPhase*): Self = StObject.set(x, "deployPhases", js.Array(value :_*))
+    inline def setDeployPhasesVarargs(value: DeployPhase*): Self = StObject.set(x, "deployPhases", js.Array(value*))
     
     inline def setDeployStep(value: ReleaseDefinitionDeployStep): Self = StObject.set(x, "deployStep", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object ReleaseDefinitionEnvironment {
     
     inline def setProcessParameters(value: ProcessParameters): Self = StObject.set(x, "processParameters", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setQueueId(value: Double): Self = StObject.set(x, "queueId", value.asInstanceOf[js.Any])
     
@@ -136,11 +136,11 @@ object ReleaseDefinitionEnvironment {
     
     inline def setSchedules(value: js.Array[ReleaseSchedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
-    inline def setSchedulesVarargs(value: ReleaseSchedule*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+    inline def setSchedulesVarargs(value: ReleaseSchedule*): Self = StObject.set(x, "schedules", js.Array(value*))
     
     inline def setVariableGroups(value: js.Array[Double]): Self = StObject.set(x, "variableGroups", value.asInstanceOf[js.Any])
     
-    inline def setVariableGroupsVarargs(value: Double*): Self = StObject.set(x, "variableGroups", js.Array(value :_*))
+    inline def setVariableGroupsVarargs(value: Double*): Self = StObject.set(x, "variableGroups", js.Array(value*))
     
     inline def setVariables(value: StringDictionary[ConfigurationVariableValue]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }

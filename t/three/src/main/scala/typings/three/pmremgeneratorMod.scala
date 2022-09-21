@@ -13,7 +13,7 @@ object pmremgeneratorMod {
   
   @JSImport("three/src/extras/PMREMGenerator", "PMREMGenerator")
   @js.native
-  class PMREMGenerator protected () extends StObject {
+  open class PMREMGenerator protected () extends StObject {
     def this(renderer: WebGLRenderer) = this()
     
     def compileCubemapShader(): Unit = js.native
@@ -23,8 +23,10 @@ object pmremgeneratorMod {
     def dispose(): Unit = js.native
     
     def fromCubemap(cubemap: CubeTexture): WebGLRenderTarget = js.native
+    def fromCubemap(cubemap: CubeTexture, renderTarget: WebGLRenderTarget): WebGLRenderTarget = js.native
     
     def fromEquirectangular(equirectangular: Texture): WebGLRenderTarget = js.native
+    def fromEquirectangular(equirectangular: Texture, renderTarget: WebGLRenderTarget): WebGLRenderTarget = js.native
     
     def fromScene(scene: Scene): WebGLRenderTarget = js.native
     def fromScene(scene: Scene, sigma: Double): WebGLRenderTarget = js.native

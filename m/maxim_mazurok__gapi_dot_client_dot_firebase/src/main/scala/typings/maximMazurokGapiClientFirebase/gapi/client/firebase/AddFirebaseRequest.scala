@@ -12,18 +12,6 @@ trait AddFirebaseRequest extends StObject {
     * locations](https://firebase.google.com/docs/projects/locations).
     */
   var locationId: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Deprecated. Instead, to link a Project with a Google Analytics account, call [`AddGoogleAnalytics`](../../v1beta1/projects/addGoogleAnalytics) after you add Firebase resources to
-    * the GCP `Project`. The region code (CLDR) that the account will use for Google Analytics data For example: US, GB, or DE In Java, use `com.google.i18n.identifiers.RegionCode`.
-    */
-  var regionCode: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Deprecated. Instead, to link a Project with a Google Analytics account, call [`AddGoogleAnalytics`](../../v1beta1/projects/addGoogleAnalytics) after you add Firebase resources to
-    * the GCP `Project`. The time zone that the account will use for Google Analytics data. For example: America/Los_Angeles or Africa/Abidjan
-    */
-  var timeZone: js.UndefOr[String] = js.undefined
 }
 object AddFirebaseRequest {
   
@@ -37,13 +25,5 @@ object AddFirebaseRequest {
     inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
-    
-    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
-    
-    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
-    
-    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
-    
-    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

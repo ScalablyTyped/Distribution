@@ -10,10 +10,10 @@ object fastRewindMod {
   
   @JSImport("material-ui/svg-icons/av/fast-rewind", JSImport.Default)
   @js.native
-  class default () extends AvFastRewind
+  open class default () extends AvFastRewind
   
   @JSImport("material-ui/svg-icons/av/fast-rewind", "AvFastRewind")
   @js.native
-  class AvFastRewind ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvFastRewind ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

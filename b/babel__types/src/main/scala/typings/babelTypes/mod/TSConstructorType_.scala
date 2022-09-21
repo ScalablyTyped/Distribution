@@ -9,7 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSConstructorType_
   extends StObject
      with BaseNode
-     with TSType {
+     with TSType
+     with TypeScript {
+  
+  var `abstract`: Boolean | Null
   
   var parameters: js.Array[Identifier_ | RestElement_]
   
@@ -25,14 +28,19 @@ object TSConstructorType_ {
   inline def apply(parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType_ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
     __obj.updateDynamic("type")("TSConstructorType")
+    __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[TSConstructorType_]
   }
   
   extension [Self <: TSConstructorType_](x: Self) {
     
+    inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
+    
+    inline def setAbstractNull: Self = StObject.set(x, "abstract", null)
+    
     inline def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setType(value: TSConstructorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

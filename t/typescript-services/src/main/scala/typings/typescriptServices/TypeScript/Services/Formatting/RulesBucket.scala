@@ -15,14 +15,14 @@ trait RulesBucket extends StObject {
   
   def Rules(): js.Array[Rule]
   
-  /* private */ var rules: js.Any
+  /* private */ var rules: Any
 }
 object RulesBucket {
   
   inline def apply(
     AddRule: (Rule, Boolean, js.Array[RulesBucketConstructionState], Double) => Unit,
     Rules: () => js.Array[Rule],
-    rules: js.Any
+    rules: Any
   ): RulesBucket = {
     val __obj = js.Dynamic.literal(AddRule = js.Any.fromFunction4(AddRule), Rules = js.Any.fromFunction0(Rules), rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulesBucket]

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-keep-awake" : "8.3.0"
+      "expo-keep-awake" : "10.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-keep-awake" : "8.3.0"
+      "expo-keep-awake" : "10.2.0"
     }
   ],
   "compile-devDependencies" : [

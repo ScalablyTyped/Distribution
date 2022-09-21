@@ -76,7 +76,7 @@ object ToolEvent {
     item: Item,
     lastPoint: Point,
     middlePoint: Point,
-    modifiers: js.Any,
+    modifiers: Any,
     point: Point,
     preventDefault: () => Unit,
     stop: () => Unit,

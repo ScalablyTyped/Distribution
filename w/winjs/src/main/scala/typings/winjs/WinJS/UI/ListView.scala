@@ -41,7 +41,7 @@ trait ListView[T] extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this object. Call this method when the object is no longer needed. After calling this method, the object becomes unusable.
@@ -89,7 +89,7 @@ trait ListView[T] extends StObject {
   /**
     * Gets or sets the Template or function that creates the DOM elements for each group header in the groupDataSource. Each group header can contain multiple elements, but it must have a single root element.
     **/
-  var groupHeaderTemplate: js.Any = js.native
+  var groupHeaderTemplate: Any = js.native
   
   /**
     * Gets or sets the header of the ListView.
@@ -121,7 +121,7 @@ trait ListView[T] extends StObject {
   /**
     * Gets or sets the WinJS.Binding.Template or templating function that creates the DOM elements for each item in the itemDataSource. Each item can contain multiple elements, but it must have a single root element.
     **/
-  var itemTemplate: js.Any = js.native
+  var itemTemplate: Any = js.native
   
   /**
     * Go Gets or sets a value that specifies whether items can be dragged. When this is set to true the ListView provides built in behaviors related to item dragging.
@@ -174,103 +174,103 @@ trait ListView[T] extends StObject {
     * Raised when the accessibility attributes have been added to the ListView items.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties detail.firstIndex, detail.lastIndex, detail.firstHeaderIndex, detail.lastHeaderIndex.
     **/
-  def onaccessibilityannotationcomplete(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onaccessibilityannotationcomplete(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs when the ListView is about to play an entrance or contentTransition animation.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.type, detail.setPromise.
     **/
-  def oncontentanimating(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def oncontentanimating(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the footer's visibility property changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.visible.
     **/
-  def onfootervisibilitychanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onfootervisibilitychanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the user taps or clicks a group header.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.groupHeaderIndex, detail.groupHeaderPromise.
     **/
-  def ongroupheaderinvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def ongroupheaderinvoked(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the header's visibility property changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.visible.
     **/
-  def onheadervisibilitychanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onheadervisibilitychanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the ListView is a drop target and the onitemdragenter has been disabled. This is raised every time the cursor is moved between a new pair of items. If you call preventDefault on this event, then the ListView does not move the items slightly above/below the cursor to provide visual feedback for a drop.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains additional information about the event.
     **/
-  def onitemdragbetween(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemdragbetween(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the user is dragging an item from the ListView and the datasource changes while the user is dragging.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains additional information about the event.
     **/
-  def onitemdragchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemdragchanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when an item is dropped onto the ListView as the result of a drag operation.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.dataTransfer, detail.index, detail.insertAfterIndex.
     **/
-  def onitemdragdrop(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemdragdrop(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the user drops an item dragged from a ListView.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onitemdragend(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemdragend(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when an dragged item enters the bounds of the ListView control.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.dataTransfer.
     **/
-  def onitemdragenter(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemdragenter(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when a draggable item leaves the bounds of a ListView control.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onitemdragleave(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemdragleave(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the user begins to drag an item from a ListView control.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.dataTransfer, detail.dragInfo.
     **/
-  def onitemdragstart(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onitemdragstart(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs when the user taps or clicks an item.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.itemIndex.
     **/
-  def oniteminvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def oniteminvoked(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the focused item changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.oldFocus, detail.oldNewFocus.
     **/
-  def onkeyboardnavigating(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onkeyboardnavigating(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs when the ListView control's loadingState changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.scrolling.
     **/
-  def onloadingstatechanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onloadingstatechanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs after the current selection changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object is null. To obtain the selected items, use the ListView.selection property.
     **/
-  def onselectionchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onselectionchanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs just before the current selection changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.newSelection, detail.preventTapBehavior.
     **/
-  def onselectionchanging(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onselectionchanging(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * This property is deprecated. Gets or sets the number of pages to load when the loadingBehavior property is set to "incremental" and the user scrolls beyond the threshold specified by the pagesToLoadThreshold property.
@@ -299,7 +299,7 @@ trait ListView[T] extends StObject {
   /**
     * Gets or sets the function that is called when the ListView discards or recycles the element representation of a group header.
     **/
-  def resetGroupHeader(header: js.Any, element: HTMLElement): Unit = js.native
+  def resetGroupHeader(header: Any, element: HTMLElement): Unit = js.native
   
   /**
     * Gets or sets the function that is called when an item is removed, an item is changed, or an item falls outside of the realized range of the ListView.

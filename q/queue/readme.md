@@ -1,7 +1,7 @@
 
 # Scala.js typings for queue
 
-Typings are for version 6.0.1
+Typings are for version 6.0.2
 
 ## Library description:
 asynchronous function queue with adjustable concurrency
@@ -10,15 +10,12 @@ asynchronous function queue with adjustable concurrency
 | ------------------ | :-------------: |
 | Full name          | queue |
 | Keywords           | queue, async, asynchronous, synchronous, job, task, concurrency, concurrent |
-| # releases         | 5 |
-| # dependents       | 185 |
-| # downloads        | 17504008 |
-| # stars            | 27 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7897322.0 |
+| # stars            | 568.0 |
 
 ## Links
-- [Homepage](https://github.com/jessetane/queue#readme)
-- [Bugs](https://github.com/jessetane/queue/issues)
-- [Repository](https://github.com/jessetane/queue)
 - [Npm](https://www.npmjs.com/package/queue)
     
 

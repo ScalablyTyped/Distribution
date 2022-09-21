@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait AGClientSocket
-  extends typings.asyncStreamEmitter.mod.^[js.Any]
+  extends typings.asyncStreamEmitter.mod.^[Any]
      with Client {
   
   val AUTHENTICATED: authenticated = js.native
@@ -81,7 +81,7 @@ trait AGClientSocket
   def cancelBatching(): Unit = js.native
   
   // ---- Channel logic ----
-  def channel(channelName: String): typings.agChannel.mod.^[js.Any] = js.native
+  def channel(channelName: String): typings.agChannel.mod.^[Any] = js.native
   
   var channelPrefix: String | Null = js.native
   
@@ -119,7 +119,7 @@ trait AGClientSocket
   
   def deauthenticate(): js.Promise[Unit] = js.native
   
-  def decode(message: js.Any): js.Any = js.native
+  def decode(message: Any): Any = js.native
   
   def decodeBase64(encodedString: String): String = js.native
   
@@ -130,25 +130,21 @@ trait AGClientSocket
   
   var disconnectOnUnload: Boolean = js.native
   
+  def emit(eventName: connectAbort | disconnect | close, data: CloseData): Unit = js.native
+  def emit(eventName: subscribe | subscribeRequest, data: SubscribeData): Unit = js.native
   /* CompleteClass */
   /* InferMemberOverrides */
-  override def emit(eventName: String, data: js.Any): Unit = js.native
+  override def emit(eventName: String, data: Any): Unit = js.native
   @JSName("emit")
   def emit_authStateChange(eventName: authStateChange, data: AuthStateChangeData): Unit = js.native
   @JSName("emit")
   def emit_authenticate(eventName: authenticate, data: AuthenticateData): Unit = js.native
   @JSName("emit")
-  def emit_close(eventName: close, data: CloseData): Unit = js.native
-  @JSName("emit")
   def emit_connect(eventName: connect, data: ConnectData): Unit = js.native
-  @JSName("emit")
-  def emit_connectAbort(eventName: connectAbort, data: CloseData): Unit = js.native
   @JSName("emit")
   def emit_connecting(eventName: connecting, data: js.Object): Unit = js.native
   @JSName("emit")
   def emit_deauthenticate(eventName: deauthenticate, data: DeauthenticateData): Unit = js.native
-  @JSName("emit")
-  def emit_disconnect(eventName: disconnect, data: CloseData): Unit = js.native
   @JSName("emit")
   def emit_error(eventName: error, data: Error): Unit = js.native
   @JSName("emit")
@@ -156,17 +152,13 @@ trait AGClientSocket
   @JSName("emit")
   def emit_removeAuthToken(eventName: removeAuthToken, data: OldAuthToken): Unit = js.native
   @JSName("emit")
-  def emit_subscribe(eventName: subscribe, data: SubscribeData): Unit = js.native
-  @JSName("emit")
   def emit_subscribeFail(eventName: subscribeFail, data: SubscribeFailData): Unit = js.native
-  @JSName("emit")
-  def emit_subscribeRequest(eventName: subscribeRequest, data: SubscribeData): Unit = js.native
   @JSName("emit")
   def emit_subscribeStateChange(eventName: subscribeStateChange, data: SubscribeStateChangeData): Unit = js.native
   @JSName("emit")
   def emit_unsubscribe(eventName: unsubscribe, data: UnsubscribeData): Unit = js.native
   
-  def encode(`object`: js.Any): js.Any = js.native
+  def encode(`object`: Any): Any = js.native
   
   def encodeBase64(decodedString: String): String = js.native
   
@@ -176,11 +168,11 @@ trait AGClientSocket
   
   def getAllChannelListenersBackpressure(): Double = js.native
   
-  def getAllChannelListenersConsumerStatsList(): js.Array[js.Any] = js.native
+  def getAllChannelListenersConsumerStatsList(): js.Array[Any] = js.native
   
   def getAllChannelOutputsBackpressure(): Double = js.native
   
-  def getAllChannelOutputsConsumerStatsList(): js.Array[js.Any] = js.native
+  def getAllChannelOutputsConsumerStatsList(): js.Array[Any] = js.native
   
   def getAllChannelsBackpressure(): Double = js.native
   
@@ -243,9 +235,9 @@ trait AGClientSocket
   
   def getState(): States = js.native
   
-  def hasAnyChannelListenerConsumer(consumerId: js.Any): Boolean = js.native
+  def hasAnyChannelListenerConsumer(consumerId: Any): Boolean = js.native
   
-  def hasAnyChannelOutputConsumer(consumerId: js.Any): Boolean = js.native
+  def hasAnyChannelOutputConsumer(consumerId: Any): Boolean = js.native
   
   /* CompleteClass */
   /* InferMemberOverrides */
@@ -267,8 +259,8 @@ trait AGClientSocket
   
   val ignoreStatuses: SocketProtocolIgnoreStatuses_ = js.native
   
-  def invoke(event: String, data: js.Any): js.Promise[js.Any] = js.native
-  def invoke(event: String, data: js.Any, options: AckTimeout): js.Promise[js.Any] = js.native
+  def invoke(event: String, data: Any): js.Promise[Any] = js.native
+  def invoke(event: String, data: Any, options: AckTimeout): js.Promise[Any] = js.native
   
   var isBatching: Boolean = js.native
   
@@ -304,25 +296,20 @@ trait AGClientSocket
   
   def killReceiverConsumer(consumerId: Double): Unit = js.native
   
+  def listener(eventName: close | connectAbort | disconnect | subscribe | subscribeRequest): typings.consumableStream.mod.^[CloseData] = js.native
   /* CompleteClass */
   /* InferMemberOverrides */
-  override def listener(eventName: String): typings.consumableStream.mod.^[js.Any] = js.native
+  override def listener(eventName: String): typings.consumableStream.mod.^[Any] = js.native
   @JSName("listener")
   def listener_authStateChange(eventName: authStateChange): typings.consumableStream.mod.^[AuthStateChangeData] = js.native
   @JSName("listener")
   def listener_authenticate(eventName: authenticate): typings.consumableStream.mod.^[AuthenticateData] = js.native
   @JSName("listener")
-  def listener_close(eventName: close): typings.consumableStream.mod.^[CloseData] = js.native
-  @JSName("listener")
   def listener_connect(eventName: connect): typings.consumableStream.mod.^[ConnectData] = js.native
-  @JSName("listener")
-  def listener_connectAbort(eventName: connectAbort): typings.consumableStream.mod.^[CloseData] = js.native
   @JSName("listener")
   def listener_connecting(eventName: connecting): typings.consumableStream.mod.^[js.Object] = js.native
   @JSName("listener")
   def listener_deauthenticate(eventName: deauthenticate): typings.consumableStream.mod.^[DeauthenticateData] = js.native
-  @JSName("listener")
-  def listener_disconnect(eventName: disconnect): typings.consumableStream.mod.^[CloseData] = js.native
   @JSName("listener")
   def listener_error(eventName: error): typings.consumableStream.mod.^[Error] = js.native
   @JSName("listener")
@@ -330,11 +317,7 @@ trait AGClientSocket
   @JSName("listener")
   def listener_removeAuthToken(eventName: removeAuthToken): typings.consumableStream.mod.^[OldAuthToken] = js.native
   @JSName("listener")
-  def listener_subscribe(eventName: subscribe): typings.consumableStream.mod.^[SubscribeData] = js.native
-  @JSName("listener")
   def listener_subscribeFail(eventName: subscribeFail): typings.consumableStream.mod.^[SubscribeFailData] = js.native
-  @JSName("listener")
-  def listener_subscribeRequest(eventName: subscribeRequest): typings.consumableStream.mod.^[SubscribeData] = js.native
   @JSName("listener")
   def listener_subscribeStateChange(eventName: subscribeStateChange): typings.consumableStream.mod.^[SubscribeStateChangeData] = js.native
   @JSName("listener")
@@ -355,21 +338,21 @@ trait AGClientSocket
   var preparingPendingSubscriptions: Boolean = js.native
   
   // ---- Procedure logic ----
-  def procedure(procedureName: String): typings.streamDemux.demuxedConsumableStreamMod.^[js.Any] = js.native
+  def procedure(procedureName: String): typings.streamDemux.demuxedConsumableStreamMod.^[Any] = js.native
   
   def processPendingSubscriptions(): Unit = js.native
   
   var protocolVersion: ProtocolVersions = js.native
   
   // ---- Receiver logic ----
-  def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[js.Any] = js.native
+  def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[Any] = js.native
   
   def reconnect(): Unit = js.native
   def reconnect(code: Double): Unit = js.native
   def reconnect(code: Double, reason: String): Unit = js.native
   def reconnect(code: Unit, reason: String): Unit = js.native
   
-  def send(data: js.Any): Unit = js.native
+  def send(data: Any): Unit = js.native
   
   var signedAuthToken: SignedAuthToken | Null = js.native
   
@@ -381,14 +364,14 @@ trait AGClientSocket
   
   def stopBatching(): Unit = js.native
   
-  def subscribe(channelName: String, options: SubscribeOptions): typings.agChannel.mod.^[js.Any] = js.native
+  def subscribe(channelName: String, options: SubscribeOptions): typings.agChannel.mod.^[Any] = js.native
   
   // ---- Subscriptions ----
   def subscriptions(): js.Array[String] = js.native
   def subscriptions(includePending: Boolean): js.Array[String] = js.native
   
-  def transmit(event: String, data: js.Any): js.Promise[Unit] = js.native
-  def transmit(event: String, data: js.Any, options: AckTimeout): js.Promise[Unit] = js.native
+  def transmit(event: String, data: Any): js.Promise[Unit] = js.native
+  def transmit(event: String, data: Any, options: AckTimeout): js.Promise[Unit] = js.native
   
   var transport: js.UndefOr[typings.socketclusterClient.transportMod.^] = js.native
   

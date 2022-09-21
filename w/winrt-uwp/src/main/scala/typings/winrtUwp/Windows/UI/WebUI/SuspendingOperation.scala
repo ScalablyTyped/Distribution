@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.WebUI
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SuspendingOperation extends StObject {
   
   /** Gets the time remaining before a delayed app suspension operation continues. */
-  var deadline: Date
+  var deadline: js.Date
   
   /**
     * Requests that the app suspension operation be delayed.
@@ -19,14 +18,14 @@ trait SuspendingOperation extends StObject {
 }
 object SuspendingOperation {
   
-  inline def apply(deadline: Date, getDeferral: () => typings.winrtUwp.Windows.ApplicationModel.SuspendingDeferral): SuspendingOperation = {
+  inline def apply(deadline: js.Date, getDeferral: () => typings.winrtUwp.Windows.ApplicationModel.SuspendingDeferral): SuspendingOperation = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[SuspendingOperation]
   }
   
   extension [Self <: SuspendingOperation](x: Self) {
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setGetDeferral(value: () => typings.winrtUwp.Windows.ApplicationModel.SuspendingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }

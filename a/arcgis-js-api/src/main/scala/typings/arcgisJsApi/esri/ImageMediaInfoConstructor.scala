@@ -17,5 +17,5 @@ trait ImageMediaInfoConstructor
 Instantiable0[ImageMediaInfo]
      with Instantiable1[/* properties */ ImageMediaInfoProperties, ImageMediaInfo] {
   
-  def fromJSON(json: js.Any): ImageMediaInfo = js.native
+  def fromJSON(json: Any): ImageMediaInfo = js.native
 }

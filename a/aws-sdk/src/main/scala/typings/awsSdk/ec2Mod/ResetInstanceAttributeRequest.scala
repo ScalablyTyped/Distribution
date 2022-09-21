@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResetInstanceAttributeRequest extends StObject {
   
   /**
-    * The attribute to reset.  You can only reset the following attributes: kernel | ramdisk | sourceDestCheck. To change an instance attribute, use ModifyInstanceAttribute. 
+    * The attribute to reset.  You can only reset the following attributes: kernel | ramdisk | sourceDestCheck. 
     */
   var Attribute: InstanceAttributeName
   

@@ -30,7 +30,7 @@ object XUnoTunnel {
   inline def apply(
     acquire: () => Unit,
     getSomething: SeqEquiv[Double] => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XUnoTunnel = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getSomething = js.Any.fromFunction1(getSomething), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

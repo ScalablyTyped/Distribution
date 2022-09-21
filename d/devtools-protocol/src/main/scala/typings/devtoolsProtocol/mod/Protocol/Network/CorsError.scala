@@ -1,0 +1,101 @@
+package typings.devtoolsProtocol.mod.Protocol.Network
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.DisallowedByMode
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidResponse
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.WildcardOriginNotAllowed
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.MissingAllowOriginHeader
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.MultipleAllowOriginValues
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowOriginValue
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.AllowOriginMismatch
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowCredentials
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.CorsDisabledScheme
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidStatus
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightDisallowedRedirect
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightWildcardOriginNotAllowed
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowOriginHeader
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMultipleAllowOriginValues
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowOriginValue
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightAllowOriginMismatch
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowCredentials
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowExternal
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowExternal
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowPrivateNetwork
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowPrivateNetwork
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowMethodsPreflightResponse
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowHeadersPreflightResponse
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.MethodDisallowedByPreflightResponse
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.HeaderDisallowedByPreflightResponse
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.RedirectContainsCredentials
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InsecurePrivateNetwork
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidPrivateNetworkAccess
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.UnexpectedPrivateNetworkAccess
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.NoCorsRedirectModeNotFollow
+*/
+trait CorsError extends StObject
+object CorsError {
+  
+  inline def AllowOriginMismatch: typings.devtoolsProtocol.devtoolsProtocolStrings.AllowOriginMismatch = "AllowOriginMismatch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.AllowOriginMismatch]
+  
+  inline def CorsDisabledScheme: typings.devtoolsProtocol.devtoolsProtocolStrings.CorsDisabledScheme = "CorsDisabledScheme".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CorsDisabledScheme]
+  
+  inline def DisallowedByMode: typings.devtoolsProtocol.devtoolsProtocolStrings.DisallowedByMode = "DisallowedByMode".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DisallowedByMode]
+  
+  inline def HeaderDisallowedByPreflightResponse: typings.devtoolsProtocol.devtoolsProtocolStrings.HeaderDisallowedByPreflightResponse = "HeaderDisallowedByPreflightResponse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeaderDisallowedByPreflightResponse]
+  
+  inline def InsecurePrivateNetwork: typings.devtoolsProtocol.devtoolsProtocolStrings.InsecurePrivateNetwork = "InsecurePrivateNetwork".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InsecurePrivateNetwork]
+  
+  inline def InvalidAllowCredentials: typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowCredentials = "InvalidAllowCredentials".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowCredentials]
+  
+  inline def InvalidAllowHeadersPreflightResponse: typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowHeadersPreflightResponse = "InvalidAllowHeadersPreflightResponse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowHeadersPreflightResponse]
+  
+  inline def InvalidAllowMethodsPreflightResponse: typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowMethodsPreflightResponse = "InvalidAllowMethodsPreflightResponse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowMethodsPreflightResponse]
+  
+  inline def InvalidAllowOriginValue: typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowOriginValue = "InvalidAllowOriginValue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowOriginValue]
+  
+  inline def InvalidPrivateNetworkAccess: typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidPrivateNetworkAccess = "InvalidPrivateNetworkAccess".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidPrivateNetworkAccess]
+  
+  inline def InvalidResponse: typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidResponse = "InvalidResponse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidResponse]
+  
+  inline def MethodDisallowedByPreflightResponse: typings.devtoolsProtocol.devtoolsProtocolStrings.MethodDisallowedByPreflightResponse = "MethodDisallowedByPreflightResponse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MethodDisallowedByPreflightResponse]
+  
+  inline def MissingAllowOriginHeader: typings.devtoolsProtocol.devtoolsProtocolStrings.MissingAllowOriginHeader = "MissingAllowOriginHeader".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MissingAllowOriginHeader]
+  
+  inline def MultipleAllowOriginValues: typings.devtoolsProtocol.devtoolsProtocolStrings.MultipleAllowOriginValues = "MultipleAllowOriginValues".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MultipleAllowOriginValues]
+  
+  inline def NoCorsRedirectModeNotFollow: typings.devtoolsProtocol.devtoolsProtocolStrings.NoCorsRedirectModeNotFollow = "NoCorsRedirectModeNotFollow".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NoCorsRedirectModeNotFollow]
+  
+  inline def PreflightAllowOriginMismatch: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightAllowOriginMismatch = "PreflightAllowOriginMismatch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightAllowOriginMismatch]
+  
+  inline def PreflightDisallowedRedirect: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightDisallowedRedirect = "PreflightDisallowedRedirect".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightDisallowedRedirect]
+  
+  inline def PreflightInvalidAllowCredentials: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowCredentials = "PreflightInvalidAllowCredentials".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowCredentials]
+  
+  inline def PreflightInvalidAllowExternal: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowExternal = "PreflightInvalidAllowExternal".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowExternal]
+  
+  inline def PreflightInvalidAllowOriginValue: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowOriginValue = "PreflightInvalidAllowOriginValue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowOriginValue]
+  
+  inline def PreflightInvalidAllowPrivateNetwork: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowPrivateNetwork = "PreflightInvalidAllowPrivateNetwork".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowPrivateNetwork]
+  
+  inline def PreflightInvalidStatus: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidStatus = "PreflightInvalidStatus".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidStatus]
+  
+  inline def PreflightMissingAllowExternal: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowExternal = "PreflightMissingAllowExternal".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowExternal]
+  
+  inline def PreflightMissingAllowOriginHeader: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowOriginHeader = "PreflightMissingAllowOriginHeader".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowOriginHeader]
+  
+  inline def PreflightMissingAllowPrivateNetwork: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowPrivateNetwork = "PreflightMissingAllowPrivateNetwork".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowPrivateNetwork]
+  
+  inline def PreflightMultipleAllowOriginValues: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMultipleAllowOriginValues = "PreflightMultipleAllowOriginValues".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightMultipleAllowOriginValues]
+  
+  inline def PreflightWildcardOriginNotAllowed: typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightWildcardOriginNotAllowed = "PreflightWildcardOriginNotAllowed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreflightWildcardOriginNotAllowed]
+  
+  inline def RedirectContainsCredentials: typings.devtoolsProtocol.devtoolsProtocolStrings.RedirectContainsCredentials = "RedirectContainsCredentials".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RedirectContainsCredentials]
+  
+  inline def UnexpectedPrivateNetworkAccess: typings.devtoolsProtocol.devtoolsProtocolStrings.UnexpectedPrivateNetworkAccess = "UnexpectedPrivateNetworkAccess".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UnexpectedPrivateNetworkAccess]
+  
+  inline def WildcardOriginNotAllowed: typings.devtoolsProtocol.devtoolsProtocolStrings.WildcardOriginNotAllowed = "WildcardOriginNotAllowed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WildcardOriginNotAllowed]
+}

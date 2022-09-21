@@ -1,18 +1,19 @@
 package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
+import typings.carbonComponentsReact.carbonComponentsReactStrings.lg
+import typings.carbonComponentsReact.carbonComponentsReactStrings.md
 import typings.carbonComponentsReact.carbonComponentsReactStrings.sm
 import typings.carbonComponentsReact.carbonComponentsReactStrings.xl
 import typings.carbonComponentsReact.controlledPasswordInputMod.ControlledPasswordInputProps
-import typings.carbonComponentsReact.passwordInputMod.PasswordInputProps
 import typings.carbonComponentsReact.propsMod.TextInputSharedProps
-import typings.carbonComponentsReact.typingsSharedMod.CarbonInputSize
+import typings.carbonComponentsReact.textInputPasswordInputMod.PasswordInputProps
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
-import typings.std.Extract
 import typings.std.HTMLInputElement
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +40,7 @@ object textInputTextInputMod extends Shortcut {
     
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Extract[CarbonInputSize, sm | xl]] = js.undefined
+    var size: js.UndefOr[sm | md | lg | xl] = js.undefined
     
     var warn: js.UndefOr[Boolean] = js.undefined
     
@@ -47,8 +48,8 @@ object textInputTextInputMod extends Shortcut {
   }
   object TextInputProps {
     
-    inline def apply(id: String): TextInputProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    inline def apply(id: String, labelText: NonNullable[ReactNode]): TextInputProps = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], labelText = labelText.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextInputProps]
     }
     
@@ -58,7 +59,7 @@ object textInputTextInputMod extends Shortcut {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setSize(value: Extract[CarbonInputSize, sm | xl]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: sm | md | lg | xl): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

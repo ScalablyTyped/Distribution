@@ -1,0 +1,74 @@
+package typings.googleapis.v34Mod.dfareportingV34
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParamsResourceReportsList
+  extends StObject
+     with StandardParameters {
+  
+  /**
+    * Maximum number of results to return.
+    */
+  var maxResults: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The value of the nextToken from the previous result page.
+    */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Campaign Manager 360 user profile ID.
+    */
+  var profileId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The scope that defines which results are returned.
+    */
+  var scope: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The field by which to sort the list.
+    */
+  var sortField: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Order of sorted results.
+    */
+  var sortOrder: js.UndefOr[String] = js.undefined
+}
+object ParamsResourceReportsList {
+  
+  inline def apply(): ParamsResourceReportsList = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ParamsResourceReportsList]
+  }
+  
+  extension [Self <: ParamsResourceReportsList](x: Self) {
+    
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
+    
+    inline def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
+    
+    inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+  }
+}

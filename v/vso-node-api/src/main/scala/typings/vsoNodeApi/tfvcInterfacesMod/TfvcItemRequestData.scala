@@ -37,6 +37,6 @@ object TfvcItemRequestData {
     
     inline def setItemDescriptors(value: js.Array[TfvcItemDescriptor]): Self = StObject.set(x, "itemDescriptors", value.asInstanceOf[js.Any])
     
-    inline def setItemDescriptorsVarargs(value: TfvcItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value :_*))
+    inline def setItemDescriptorsVarargs(value: TfvcItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value*))
   }
 }

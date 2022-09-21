@@ -22,7 +22,7 @@ trait DescribePatchPropertiesRequest extends StObject {
   var OperatingSystem: typings.awsSdk.ssmMod.OperatingSystem
   
   /**
-    * Indicates whether to list patches for the Windows operating system or for Microsoft applications. Not applicable for Linux operating systems.
+    * Indicates whether to list patches for the Windows operating system or for applications released by Microsoft. Not applicable for the Linux or macOS operating systems.
     */
   var PatchSet: js.UndefOr[typings.awsSdk.ssmMod.PatchSet] = js.undefined
   

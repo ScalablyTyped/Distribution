@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RollingAverage")
 @js.native
-class RollingAverage protected ()
+open class RollingAverage protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RollingAverage {
   /**
@@ -30,7 +30,7 @@ class RollingAverage protected ()
   /**
     * Wraps a value around the sample range boundaries
     * @param i Position in sample range, for example if the sample length is 5, and i is -3, then 2 will be returned.
-    * @return Wrapped position in sample range
+    * @returns Wrapped position in sample range
     */
   /* protected */ /* CompleteClass */
   override def _wrapPosition(i: Double): Double = js.native
@@ -51,14 +51,14 @@ class RollingAverage protected ()
   /**
     * Returns previously added values or null if outside of history or outside the sliding window domain
     * @param i Index in history. For example, pass 0 for the most recent value and 1 for the value before that
-    * @return Value previously recorded with add() or null if outside of range
+    * @returns Value previously recorded with add() or null if outside of range
     */
   /* CompleteClass */
   override def history(i: Double): Double = js.native
   
   /**
     * Returns true if enough samples have been taken to completely fill the sliding window
-    * @return true if sample-set saturated
+    * @returns true if sample-set saturated
     */
   /* CompleteClass */
   override def isSaturated(): Boolean = js.native

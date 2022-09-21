@@ -1,17 +1,10 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
-import typings.jsrsasign.anon.AccessLocation
-import typings.jsrsasign.anon.Ca
-import typings.jsrsasign.anon.E
+import typings.jsrsasign.anon.ArrayStr
+import typings.jsrsasign.anon.ExtnameString
 import typings.jsrsasign.anon.HexName
-import typings.jsrsasign.anon.Kid
-import typings.jsrsasign.anon.Name
-import typings.jsrsasign.anon.Obj
-import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.UriParam
-import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
-import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
-import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
-import typings.jsrsasign.jsrsasign.RSAKey
+import typings.jsrsasign.anon.HexObj
+import typings.jsrsasign.anon.Str
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,178 +34,288 @@ object csr {
   
   /**
     * ASN.1 CertificationRequest structure class
-    * @param params associative array of parameters (ex. {})
-    * @example
-    * csri = new KJUR.asn1.csr.CertificationRequestInfo();
-    * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
-    * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
-    * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
-    * csr.sign("SHA256withRSA", prvKeyObj);
-    * pem = csr.getPEMString();
+    * @param params associative array of parameters
     *
-    * // -- DEFINITION OF ASN.1 SYNTAX --
-    * // CertificationRequest ::= SEQUENCE {
-    * //   certificationRequestInfo CertificationRequestInfo,
-    * //   signatureAlgorithm       AlgorithmIdentifier{{ SignatureAlgorithms }},
-    * //   signature                BIT STRING }
-    * //
-    * // CertificationRequestInfo ::= SEQUENCE {
-    * //   version       INTEGER { v1(0) } (v1,...),
-    * //   subject       Name,
-    * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
-    * //   attributes    [0] Attributes{{ CRIAttributes }} }
+    * @description
+    * This class provides CertificateRequestInfo ASN.1 structure
+    * defined in * {@link https://tools.ietf.org/html/rfc2986#page-5 RFC 2986 4.2}.
+    *
+    * <pre>
+    * CertificationRequest ::= SEQUENCE {
+    *   certificationRequestInfo CertificationRequestInfo,
+    *   signatureAlgorithm       AlgorithmIdentifier{{ SignatureAlgorithms }},
+    *   signature                BIT STRING }
+    * CertificationRequestInfo ::= SEQUENCE {
+    *   version       INTEGER { v1(0) } (v1,...),
+    *   subject       Name,
+    *   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
+    *   attributes    [0] Attributes{{ CRIAttributes }} }
+    * </pre>
+    *
+    *
+    * Argument "params" JSON object can have following keys:
+    *
+    * - {Array}subject - parameter to be passed to {@link KJUR.asn1.x509.X500Name}
+    * - {Object}sbjpubkey - PEM string or key object to be passed to {@link KEYUTIL.getKey}
+    * - {Array}extreq - array of certificate extension parameters
+    * - {String}sigalg - signature algorithm name (ex. SHA256withRSA)
+    * - {Object}sbjprvkey - PEM string or key object to be passed to {@link KEYUTIL.getKey}
+    * (OPTION)
+    * - {String}sighex - hexadecimal string of signature value. When this is not defined and
+    * sbjprvkey is specified, sighex will be set automatically
+    * during getEncodedHex() is called. (OPTION)
+    *
+    *
+    * CAUTION:
+    * Argument "params" JSON value format have been changed without
+    * backward compatibility since jsrsasign 9.0.0 asn1csr 2.0.0.
+    *
+    * @example
+    * // sign by private key
+    * csr = new KJUR.asn1.csr.CertificationRequest({
+    *   subject: {str:"/C=US/O=Test"},
+    *   sbjpubkey: "-----BEGIN PUBLIC KEY...",
+    *   extreq: [{extname:"subjectAltName",array:[{dns:"example.com"}]}]
+    *   sigalg: "SHA256withRSA",
+    *   sbjprvkey: "-----BEGIN PRIVATE KEY..."
+    * });
+    * pem = csr.getPEM(); // signed with sbjprvkey automatically
+    *
+    * // or specifying signature value
+    * csr = new KJUR.asn1.csr.CertificationRequest({
+    *   subject: {str:"/C=US/O=Test"},
+    *   sbjpubkey: "-----BEGIN PUBLIC KEY...",
+    *   extreq: [{extname:"subjectAltName",array:[{dns:"example.com"}]}]
+    *   sigalg: "SHA256withRSA",
+    *   sighex: "1234abcd..."
+    * });
+    * pem = csr.getPEM();
     */
+  @js.native
   trait CertificationRequest
     extends StObject
        with ASN1Object {
     
     /**
-      * get PEM formatted certificate signing request (CSR/PKCS#10)
+      * get PEM formatted certificate signing request (CSR/PKCS#10)<br/>
       * @return PEM formatted string of CSR/PKCS#10
       * @description
-      * This method is to a get CSR PEM string after signed.
+      * This method is to a get CSR PEM string
       *
       * @example
-      * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
-      * csr.sign();
-      * pem =  csr.getPEMString();
-      * // pem will be following:
-      * // -----BEGIN CERTIFICATE REQUEST-----
-      * // MII ...snip...
-      * // -----END CERTIFICATE REQUEST-----
+      * csr = new KJUR.asn1.csr.CertificationRequest({
+      *   subject: "/C=JP/O=Test",
+      *   sbjpubkey: ...
+      * });
+      * csr.getPEM() &rarr; "-----BEGIN CERTIFICATE REQUEST..."
       */
-    def getPEMString(): String
+    def getPEM(): String = js.native
+    
+    def setByParam(): Unit = js.native
+    def setByParam(params: CertificationRequestParams): Unit = js.native
     
     /**
-      * sign CertificationRequest and set signature value internally
+      * sign CertificationRequest and set signature value internally<br/>
       * @description
       * This method self-signs CertificateRequestInfo with a subject's
       * private key and set signature value internally.
       *
       * @example
-      * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
-      * csr.sign("SHA256withRSA", prvKeyObj);
+      * csr = new KJUR.asn1.csr.CertificationRequest({
+      *   subject: "/C=JP/O=Test",
+      *   sbjpubkey: ...
+      * });
+      * csr.sign();
       */
-    def sign(sigAlgName: String, prvKeyObj: js.Any): Unit
-  }
-  object CertificationRequest {
-    
-    inline def apply(
-      getEncodedHex: () => String,
-      getFreshValueHex: () => String,
-      getLengthHexFromValue: () => String,
-      getPEMString: () => String,
-      getValueHex: () => String,
-      hL: String,
-      hT: String,
-      hTLV: String,
-      hV: String,
-      isModified: String,
-      sign: (String, js.Any) => Unit
-    ): CertificationRequest = {
-      val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getPEMString = js.Any.fromFunction0(getPEMString), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], sign = js.Any.fromFunction2(sign))
-      __obj.asInstanceOf[CertificationRequest]
-    }
-    
-    extension [Self <: CertificationRequest](x: Self) {
-      
-      inline def setGetPEMString(value: () => String): Self = StObject.set(x, "getPEMString", js.Any.fromFunction0(value))
-      
-      inline def setSign(value: (String, js.Any) => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
-    }
+    def sign(): Unit = js.native
   }
   
   /**
     * ASN.1 CertificationRequestInfo structure class
     * @param params associative array of parameters (ex. {})
     * @description
-    * ```
-    * // -- DEFINITION OF ASN.1 SYNTAX --
-    * // CertificationRequestInfo ::= SEQUENCE {
-    * //   version       INTEGER { v1(0) } (v1,...),
-    * //   subject       Name,
-    * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
-    * //   attributes    [0] Attributes{{ CRIAttributes }} }
-    * ```
+    * This class provides CertificateRequestInfo ASN.1 structure
+    * defined in
+    * {@link https://tools.ietf.org/html/rfc2986#page-5" RFC 2986 4.1}.
+    *
+    * <pre>
+    * CertificationRequestInfo ::= SEQUENCE {
+    *   version       INTEGER { v1(0) } (v1,...),
+    *   subject       Name,
+    *   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
+    *   attributes    [0] Attributes{{ CRIAttributes }} }
+    * </pre>
+    *
+    *
+    * CAUTION:
+    * Argument "params" JSON value format have been changed without
+    * backward compatibility since jsrsasign 9.0.0 asn1csr 2.0.0.
     *
     * @example
-    * csri = new KJUR.asn1.csr.CertificationRequestInfo();
-    * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
-    * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
+    * csri = new KJUR.asn1.csr.CertificationRequestInfo({
+    *   subject: {str: '/C=US/CN=b'},
+    *   sbjpubkey: <<PUBLIC KEY PEM>>,
+    *   extreq: [
+    *     {extname:"subjectAltName", array:[{dns:"example.com"}]}
+    *   ]});
+    * csri.getEncodedHex() &rarr; "30..."
     */
   @js.native
   trait CertificationRequestInfo
     extends StObject
        with ASN1Object {
     
-    def _initialize(): Unit = js.native
+    def setByParam(): Unit = js.native
+    def setByParam(params: CertificationRequestInfoParams): Unit = js.native
+  }
+  
+  trait CertificationRequestInfoParams extends StObject {
     
-    /**
-      * append X.509v3 extension to this object by name and parameters
-      * @param name name of X.509v3 Extension object
-      * @param extParams parameters as argument of Extension constructor.
-      * @see KJUR.asn1.x509.Extension
-      * @example
-      * var o = new KJUR.asn1.csr.CertificationRequestInfo();
-      * o.appendExtensionByName('BasicConstraints', {'cA':true, 'critical': true});
-      * o.appendExtensionByName('KeyUsage', {'bin':'11'});
-      * o.appendExtensionByName('CRLDistributionPoints', {uri: 'http://aaa.com/a.crl'});
-      * o.appendExtensionByName('ExtKeyUsage', {array: [{name: 'clientAuth'}]});
-      * o.appendExtensionByName('AuthorityKeyIdentifier', {kid: '1234ab..'});
-      * o.appendExtensionByName('AuthorityInfoAccess', {array: [{accessMethod:{oid:...},accessLocation:{uri:...}}]});
-      */
-    def appendExtensionByName(name: String, extParams: Ca): Unit = js.native
-    def appendExtensionByName(name: String, extParams: Kid): Unit = js.native
-    def appendExtensionByName(name: String, extParams: ArrayParam[AccessLocation | Name]): Unit = js.native
-    def appendExtensionByName(name: String, extParams: BinParam): Unit = js.native
-    def appendExtensionByName(name: String, extParams: UriParam): Unit = js.native
+    var extreq: js.UndefOr[js.Array[ExtnameString]] = js.undefined
     
-    /**
-      * set subject name field by parameter
-      * @param x500NameParam X500Name parameter
-      * @description
-      * @example
-      * csri.setSubjectByParam({'str': '/C=US/CN=b'});
-      * @see KJUR.asn1.x509.X500Name
-      */
-    def setSubjectByParam(x500NameParam: StringParam): Unit = js.native
+    var sbjprvkey: js.UndefOr[String] = js.undefined
     
-    def setSubjectPublicKeyByGetKey(keyParam: String): Unit = js.native
-    def setSubjectPublicKeyByGetKey(keyParam: E): Unit = js.native
-    def setSubjectPublicKeyByGetKey(keyParam: DSA): Unit = js.native
-    def setSubjectPublicKeyByGetKey(keyParam: ECDSA): Unit = js.native
-    def setSubjectPublicKeyByGetKey(keyParam: JsonWebKey): Unit = js.native
-    /**
-      * set subject public key info by RSA/ECDSA/DSA key parameter
-      * @param keyParam public key parameter which passed to `KEYUTIL.getKey` argument
-      * @example
-      * csri.setSubjectPublicKeyByGetKeyParam(certPEMString); // or
-      * csri.setSubjectPublicKeyByGetKeyParam(pkcs8PublicKeyPEMString); // or
-      * csir.setSubjectPublicKeyByGetKeyParam(kjurCryptoECDSAKeyObject); // et.al.
-      * @see KJUR.asn1.x509.SubjectPublicKeyInfo
-      * @see KEYUTIL.getKey
-      */
-    def setSubjectPublicKeyByGetKey(keyParam: RSAKey): Unit = js.native
+    var sbjpubkey: String
+    
+    var sigalg: js.UndefOr[String] = js.undefined
+    
+    var sighex: js.UndefOr[String] = js.undefined
+    
+    var subject: ArrayStr
+  }
+  object CertificationRequestInfoParams {
+    
+    inline def apply(sbjpubkey: String, subject: ArrayStr): CertificationRequestInfoParams = {
+      val __obj = js.Dynamic.literal(sbjpubkey = sbjpubkey.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CertificationRequestInfoParams]
+    }
+    
+    extension [Self <: CertificationRequestInfoParams](x: Self) {
+      
+      inline def setExtreq(value: js.Array[ExtnameString]): Self = StObject.set(x, "extreq", value.asInstanceOf[js.Any])
+      
+      inline def setExtreqUndefined: Self = StObject.set(x, "extreq", js.undefined)
+      
+      inline def setExtreqVarargs(value: ExtnameString*): Self = StObject.set(x, "extreq", js.Array(value*))
+      
+      inline def setSbjprvkey(value: String): Self = StObject.set(x, "sbjprvkey", value.asInstanceOf[js.Any])
+      
+      inline def setSbjprvkeyUndefined: Self = StObject.set(x, "sbjprvkey", js.undefined)
+      
+      inline def setSbjpubkey(value: String): Self = StObject.set(x, "sbjpubkey", value.asInstanceOf[js.Any])
+      
+      inline def setSigalg(value: String): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
+      
+      inline def setSigalgUndefined: Self = StObject.set(x, "sigalg", js.undefined)
+      
+      inline def setSighex(value: String): Self = StObject.set(x, "sighex", value.asInstanceOf[js.Any])
+      
+      inline def setSighexUndefined: Self = StObject.set(x, "sighex", js.undefined)
+      
+      inline def setSubject(value: ArrayStr): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait CertificationRequestParams extends StObject {
+    
+    var extreq: js.UndefOr[js.Array[ExtnameString]] = js.undefined
+    
+    var sbjprvkey: js.UndefOr[String] = js.undefined
+    
+    var sbjpubkey: String
+    
+    var sigalg: String
+    
+    var sighex: js.UndefOr[String] = js.undefined
+    
+    var subject: Str
+  }
+  object CertificationRequestParams {
+    
+    inline def apply(sbjpubkey: String, sigalg: String, subject: Str): CertificationRequestParams = {
+      val __obj = js.Dynamic.literal(sbjpubkey = sbjpubkey.asInstanceOf[js.Any], sigalg = sigalg.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CertificationRequestParams]
+    }
+    
+    extension [Self <: CertificationRequestParams](x: Self) {
+      
+      inline def setExtreq(value: js.Array[ExtnameString]): Self = StObject.set(x, "extreq", value.asInstanceOf[js.Any])
+      
+      inline def setExtreqUndefined: Self = StObject.set(x, "extreq", js.undefined)
+      
+      inline def setExtreqVarargs(value: ExtnameString*): Self = StObject.set(x, "extreq", js.Array(value*))
+      
+      inline def setSbjprvkey(value: String): Self = StObject.set(x, "sbjprvkey", value.asInstanceOf[js.Any])
+      
+      inline def setSbjprvkeyUndefined: Self = StObject.set(x, "sbjprvkey", js.undefined)
+      
+      inline def setSbjpubkey(value: String): Self = StObject.set(x, "sbjpubkey", value.asInstanceOf[js.Any])
+      
+      inline def setSigalg(value: String): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
+      
+      inline def setSighex(value: String): Self = StObject.set(x, "sighex", value.asInstanceOf[js.Any])
+      
+      inline def setSighexUndefined: Self = StObject.set(x, "sighex", js.undefined)
+      
+      inline def setSubject(value: Str): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    }
   }
   
   trait PEMInfo extends StObject {
     
-    var pubkey: Obj
+    var pubkey: HexObj
     
     var subject: HexName
   }
   object PEMInfo {
     
-    inline def apply(pubkey: Obj, subject: HexName): PEMInfo = {
+    inline def apply(pubkey: HexObj, subject: HexName): PEMInfo = {
       val __obj = js.Dynamic.literal(pubkey = pubkey.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
       __obj.asInstanceOf[PEMInfo]
     }
     
     extension [Self <: PEMInfo](x: Self) {
       
-      inline def setPubkey(value: Obj): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
+      inline def setPubkey(value: HexObj): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
       
       inline def setSubject(value: HexName): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ParamResponse extends StObject {
+    
+    var extreq: js.UndefOr[js.Array[ExtnameString]] = js.undefined
+    
+    var sbjpubkey: String
+    
+    var sigalg: String
+    
+    var sighex: String
+    
+    var subject: ArrayStr
+  }
+  object ParamResponse {
+    
+    inline def apply(sbjpubkey: String, sigalg: String, sighex: String, subject: ArrayStr): ParamResponse = {
+      val __obj = js.Dynamic.literal(sbjpubkey = sbjpubkey.asInstanceOf[js.Any], sigalg = sigalg.asInstanceOf[js.Any], sighex = sighex.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParamResponse]
+    }
+    
+    extension [Self <: ParamResponse](x: Self) {
+      
+      inline def setExtreq(value: js.Array[ExtnameString]): Self = StObject.set(x, "extreq", value.asInstanceOf[js.Any])
+      
+      inline def setExtreqUndefined: Self = StObject.set(x, "extreq", js.undefined)
+      
+      inline def setExtreqVarargs(value: ExtnameString*): Self = StObject.set(x, "extreq", js.Array(value*))
+      
+      inline def setSbjpubkey(value: String): Self = StObject.set(x, "sbjpubkey", value.asInstanceOf[js.Any])
+      
+      inline def setSigalg(value: String): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
+      
+      inline def setSighex(value: String): Self = StObject.set(x, "sighex", value.asInstanceOf[js.Any])
+      
+      inline def setSubject(value: ArrayStr): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     }
   }
 }

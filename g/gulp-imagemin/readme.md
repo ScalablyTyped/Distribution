@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-imagemin
 
-Typings are for version 7.0
+Typings are for version 8.0
 
 ## Library description:
 Minify PNG, JPEG, GIF and SVG images
@@ -10,10 +10,10 @@ Minify PNG, JPEG, GIF and SVG images
 | ------------------ | :-------------: |
 | Full name          | gulp-imagemin |
 | Keywords           | gulpplugin, imagemin, image, img, picture, photo, minify, minifier, compress, png, jpg, jpeg, gif, svg |
-| # releases         | 7 |
-| # dependents       | 793 |
-| # downloads        | 6469732 |
-| # stars            | 342 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 668086.3333333334 |
+| # stars            | 1877.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/gulp-imagemin#readme)

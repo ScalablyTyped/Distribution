@@ -47,7 +47,7 @@ object Order {
     
     inline def setAuthorizations(value: js.Array[String]): Self = StObject.set(x, "authorizations", value.asInstanceOf[js.Any])
     
-    inline def setAuthorizationsVarargs(value: String*): Self = StObject.set(x, "authorizations", js.Array(value :_*))
+    inline def setAuthorizationsVarargs(value: String*): Self = StObject.set(x, "authorizations", js.Array(value*))
     
     inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object Order {
     
     inline def setIdentifiers(value: js.Array[Identifier]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
-    inline def setIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+    inline def setIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "identifiers", js.Array(value*))
     
     inline def setNotAfter(value: String): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     

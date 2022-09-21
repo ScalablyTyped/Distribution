@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteMedicalTranscriptionJobRequest extends StObject {
   
   /**
-    * The name you provide to the DeleteMedicalTranscriptionJob object to delete a transcription job.
+    * The name of the medical transcription job you want to delete. Job names are case sensitive.
     */
   var MedicalTranscriptionJobName: TranscriptionJobName
 }

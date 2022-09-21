@@ -1,6 +1,6 @@
 package typings.hiredis
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("hiredis", "Reader")
   @js.native
-  class Reader () extends StObject {
+  open class Reader () extends StObject {
     def this(config: Config) = this()
     
     def feed(reply: String): Unit = js.native

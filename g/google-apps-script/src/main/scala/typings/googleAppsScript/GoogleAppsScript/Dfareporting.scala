@@ -1317,7 +1317,7 @@ object Dfareporting {
       // Inserts a new creative asset.
       def insert(resource: CreativeAssetMetadata, profileId: String, advertiserId: String): CreativeAssetMetadata = js.native
       // Inserts a new creative asset.
-      def insert(resource: CreativeAssetMetadata, profileId: String, advertiserId: String, mediaData: js.Any): CreativeAssetMetadata = js.native
+      def insert(resource: CreativeAssetMetadata, profileId: String, advertiserId: String, mediaData: Any): CreativeAssetMetadata = js.native
     }
     
     @js.native
@@ -2746,7 +2746,7 @@ object Dfareporting {
         
         inline def setAccountPermissionIdsUndefined: Self = StObject.set(x, "accountPermissionIds", js.undefined)
         
-        inline def setAccountPermissionIdsVarargs(value: String*): Self = StObject.set(x, "accountPermissionIds", js.Array(value :_*))
+        inline def setAccountPermissionIdsVarargs(value: String*): Self = StObject.set(x, "accountPermissionIds", js.Array(value*))
         
         inline def setAccountProfile(value: String): Self = StObject.set(x, "accountProfile", value.asInstanceOf[js.Any])
         
@@ -2768,7 +2768,7 @@ object Dfareporting {
         
         inline def setAvailablePermissionIdsUndefined: Self = StObject.set(x, "availablePermissionIds", js.undefined)
         
-        inline def setAvailablePermissionIdsVarargs(value: String*): Self = StObject.set(x, "availablePermissionIds", js.Array(value :_*))
+        inline def setAvailablePermissionIdsVarargs(value: String*): Self = StObject.set(x, "availablePermissionIds", js.Array(value*))
         
         inline def setCountryId(value: String): Self = StObject.set(x, "countryId", value.asInstanceOf[js.Any])
         
@@ -2894,7 +2894,7 @@ object Dfareporting {
         
         inline def setAccountProfilesUndefined: Self = StObject.set(x, "accountProfiles", js.undefined)
         
-        inline def setAccountProfilesVarargs(value: String*): Self = StObject.set(x, "accountProfiles", js.Array(value :_*))
+        inline def setAccountProfilesVarargs(value: String*): Self = StObject.set(x, "accountProfiles", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -2968,7 +2968,7 @@ object Dfareporting {
         
         inline def setAccountPermissionGroupsUndefined: Self = StObject.set(x, "accountPermissionGroups", js.undefined)
         
-        inline def setAccountPermissionGroupsVarargs(value: AccountPermissionGroup*): Self = StObject.set(x, "accountPermissionGroups", js.Array(value :_*))
+        inline def setAccountPermissionGroupsVarargs(value: AccountPermissionGroup*): Self = StObject.set(x, "accountPermissionGroups", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2995,7 +2995,7 @@ object Dfareporting {
         
         inline def setAccountPermissionsUndefined: Self = StObject.set(x, "accountPermissions", js.undefined)
         
-        inline def setAccountPermissionsVarargs(value: AccountPermission*): Self = StObject.set(x, "accountPermissions", js.Array(value :_*))
+        inline def setAccountPermissionsVarargs(value: AccountPermission*): Self = StObject.set(x, "accountPermissions", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3133,7 +3133,7 @@ object Dfareporting {
         
         inline def setAccountUserProfilesUndefined: Self = StObject.set(x, "accountUserProfiles", js.undefined)
         
-        inline def setAccountUserProfilesVarargs(value: AccountUserProfile*): Self = StObject.set(x, "accountUserProfiles", js.Array(value :_*))
+        inline def setAccountUserProfilesVarargs(value: AccountUserProfile*): Self = StObject.set(x, "accountUserProfiles", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3166,7 +3166,7 @@ object Dfareporting {
         
         inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
         
-        inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+        inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3199,7 +3199,7 @@ object Dfareporting {
         
         inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
         
-        inline def setFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "filters", js.Array(value :_*))
+        inline def setFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "filters", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3209,7 +3209,7 @@ object Dfareporting {
         
         inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
         
-        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
       }
     }
     
@@ -3358,7 +3358,7 @@ object Dfareporting {
         
         inline def setCreativeGroupAssignmentsUndefined: Self = StObject.set(x, "creativeGroupAssignments", js.undefined)
         
-        inline def setCreativeGroupAssignmentsVarargs(value: CreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value :_*))
+        inline def setCreativeGroupAssignmentsVarargs(value: CreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value*))
         
         inline def setCreativeRotation(value: CreativeRotation): Self = StObject.set(x, "creativeRotation", value.asInstanceOf[js.Any])
         
@@ -3388,7 +3388,7 @@ object Dfareporting {
         
         inline def setEventTagOverridesUndefined: Self = StObject.set(x, "eventTagOverrides", js.undefined)
         
-        inline def setEventTagOverridesVarargs(value: EventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value :_*))
+        inline def setEventTagOverridesVarargs(value: EventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value*))
         
         inline def setGeoTargeting(value: GeoTargeting): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
         
@@ -3426,7 +3426,7 @@ object Dfareporting {
         
         inline def setPlacementAssignmentsUndefined: Self = StObject.set(x, "placementAssignments", js.undefined)
         
-        inline def setPlacementAssignmentsVarargs(value: PlacementAssignment*): Self = StObject.set(x, "placementAssignments", js.Array(value :_*))
+        inline def setPlacementAssignmentsVarargs(value: PlacementAssignment*): Self = StObject.set(x, "placementAssignments", js.Array(value*))
         
         inline def setRemarketingListExpression(value: ListTargetingExpression): Self = StObject.set(x, "remarketingListExpression", value.asInstanceOf[js.Any])
         
@@ -3585,7 +3585,7 @@ object Dfareporting {
         
         inline def setAdsUndefined: Self = StObject.set(x, "ads", js.undefined)
         
-        inline def setAdsVarargs(value: Ad*): Self = StObject.set(x, "ads", js.Array(value :_*))
+        inline def setAdsVarargs(value: Ad*): Self = StObject.set(x, "ads", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3758,7 +3758,7 @@ object Dfareporting {
         
         inline def setAdvertiserGroupsUndefined: Self = StObject.set(x, "advertiserGroups", js.undefined)
         
-        inline def setAdvertiserGroupsVarargs(value: AdvertiserGroup*): Self = StObject.set(x, "advertiserGroups", js.Array(value :_*))
+        inline def setAdvertiserGroupsVarargs(value: AdvertiserGroup*): Self = StObject.set(x, "advertiserGroups", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3795,7 +3795,7 @@ object Dfareporting {
         
         inline def setLandingPagesUndefined: Self = StObject.set(x, "landingPages", js.undefined)
         
-        inline def setLandingPagesVarargs(value: LandingPage*): Self = StObject.set(x, "landingPages", js.Array(value :_*))
+        inline def setLandingPagesVarargs(value: LandingPage*): Self = StObject.set(x, "landingPages", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -3824,7 +3824,7 @@ object Dfareporting {
         
         inline def setAdvertisersUndefined: Self = StObject.set(x, "advertisers", js.undefined)
         
-        inline def setAdvertisersVarargs(value: Advertiser*): Self = StObject.set(x, "advertisers", js.Array(value :_*))
+        inline def setAdvertisersVarargs(value: Advertiser*): Self = StObject.set(x, "advertisers", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3888,7 +3888,7 @@ object Dfareporting {
         
         inline def setAudienceSegmentsUndefined: Self = StObject.set(x, "audienceSegments", js.undefined)
         
-        inline def setAudienceSegmentsVarargs(value: AudienceSegment*): Self = StObject.set(x, "audienceSegments", js.Array(value :_*))
+        inline def setAudienceSegmentsVarargs(value: AudienceSegment*): Self = StObject.set(x, "audienceSegments", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -3968,7 +3968,7 @@ object Dfareporting {
         
         inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
         
-        inline def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+        inline def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4055,7 +4055,7 @@ object Dfareporting {
         
         inline def setAdditionalCreativeOptimizationConfigurationsUndefined: Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.undefined)
         
-        inline def setAdditionalCreativeOptimizationConfigurationsVarargs(value: CreativeOptimizationConfiguration*): Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.Array(value :_*))
+        inline def setAdditionalCreativeOptimizationConfigurationsVarargs(value: CreativeOptimizationConfiguration*): Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.Array(value*))
         
         inline def setAdvertiserGroupId(value: String): Self = StObject.set(x, "advertiserGroupId", value.asInstanceOf[js.Any])
         
@@ -4077,7 +4077,7 @@ object Dfareporting {
         
         inline def setAudienceSegmentGroupsUndefined: Self = StObject.set(x, "audienceSegmentGroups", js.undefined)
         
-        inline def setAudienceSegmentGroupsVarargs(value: AudienceSegmentGroup*): Self = StObject.set(x, "audienceSegmentGroups", js.Array(value :_*))
+        inline def setAudienceSegmentGroupsVarargs(value: AudienceSegmentGroup*): Self = StObject.set(x, "audienceSegmentGroups", js.Array(value*))
         
         inline def setBillingInvoiceCode(value: String): Self = StObject.set(x, "billingInvoiceCode", value.asInstanceOf[js.Any])
         
@@ -4099,7 +4099,7 @@ object Dfareporting {
         
         inline def setCreativeGroupIdsUndefined: Self = StObject.set(x, "creativeGroupIds", js.undefined)
         
-        inline def setCreativeGroupIdsVarargs(value: String*): Self = StObject.set(x, "creativeGroupIds", js.Array(value :_*))
+        inline def setCreativeGroupIdsVarargs(value: String*): Self = StObject.set(x, "creativeGroupIds", js.Array(value*))
         
         inline def setCreativeOptimizationConfiguration(value: CreativeOptimizationConfiguration): Self = StObject.set(x, "creativeOptimizationConfiguration", value.asInstanceOf[js.Any])
         
@@ -4121,7 +4121,7 @@ object Dfareporting {
         
         inline def setEventTagOverridesUndefined: Self = StObject.set(x, "eventTagOverrides", js.undefined)
         
-        inline def setEventTagOverridesVarargs(value: EventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value :_*))
+        inline def setEventTagOverridesVarargs(value: EventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value*))
         
         inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
         
@@ -4163,7 +4163,7 @@ object Dfareporting {
         
         inline def setTraffickerEmailsUndefined: Self = StObject.set(x, "traffickerEmails", js.undefined)
         
-        inline def setTraffickerEmailsVarargs(value: String*): Self = StObject.set(x, "traffickerEmails", js.Array(value :_*))
+        inline def setTraffickerEmailsVarargs(value: String*): Self = StObject.set(x, "traffickerEmails", js.Array(value*))
       }
     }
     
@@ -4213,7 +4213,7 @@ object Dfareporting {
         
         inline def setCampaignCreativeAssociationsUndefined: Self = StObject.set(x, "campaignCreativeAssociations", js.undefined)
         
-        inline def setCampaignCreativeAssociationsVarargs(value: CampaignCreativeAssociation*): Self = StObject.set(x, "campaignCreativeAssociations", js.Array(value :_*))
+        inline def setCampaignCreativeAssociationsVarargs(value: CampaignCreativeAssociation*): Self = StObject.set(x, "campaignCreativeAssociations", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4246,7 +4246,7 @@ object Dfareporting {
         
         inline def setCampaignsUndefined: Self = StObject.set(x, "campaigns", js.undefined)
         
-        inline def setCampaignsVarargs(value: Campaign*): Self = StObject.set(x, "campaigns", js.Array(value :_*))
+        inline def setCampaignsVarargs(value: Campaign*): Self = StObject.set(x, "campaigns", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4376,7 +4376,7 @@ object Dfareporting {
         
         inline def setChangeLogsUndefined: Self = StObject.set(x, "changeLogs", js.undefined)
         
-        inline def setChangeLogsVarargs(value: ChangeLog*): Self = StObject.set(x, "changeLogs", js.Array(value :_*))
+        inline def setChangeLogsVarargs(value: ChangeLog*): Self = StObject.set(x, "changeLogs", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4407,7 +4407,7 @@ object Dfareporting {
         
         inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
         
-        inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value :_*))
+        inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4627,7 +4627,7 @@ object Dfareporting {
         
         inline def setEnabledSizesUndefined: Self = StObject.set(x, "enabledSizes", js.undefined)
         
-        inline def setEnabledSizesVarargs(value: Size*): Self = StObject.set(x, "enabledSizes", js.Array(value :_*))
+        inline def setEnabledSizesVarargs(value: Size*): Self = StObject.set(x, "enabledSizes", js.Array(value*))
         
         inline def setImageOnly(value: Boolean): Self = StObject.set(x, "imageOnly", value.asInstanceOf[js.Any])
         
@@ -4738,7 +4738,7 @@ object Dfareporting {
         
         inline def setConnectionTypesUndefined: Self = StObject.set(x, "connectionTypes", js.undefined)
         
-        inline def setConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value :_*))
+        inline def setConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4767,7 +4767,7 @@ object Dfareporting {
         
         inline def setContentCategoriesUndefined: Self = StObject.set(x, "contentCategories", js.undefined)
         
-        inline def setContentCategoriesVarargs(value: ContentCategory*): Self = StObject.set(x, "contentCategories", js.Array(value :_*))
+        inline def setContentCategoriesVarargs(value: ContentCategory*): Self = StObject.set(x, "contentCategories", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4867,7 +4867,7 @@ object Dfareporting {
         
         inline def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
         
-        inline def setCustomVariablesVarargs(value: CustomFloodlightVariable*): Self = StObject.set(x, "customVariables", js.Array(value :_*))
+        inline def setCustomVariablesVarargs(value: CustomFloodlightVariable*): Self = StObject.set(x, "customVariables", js.Array(value*))
         
         inline def setEncryptedUserId(value: String): Self = StObject.set(x, "encryptedUserId", value.asInstanceOf[js.Any])
         
@@ -4875,7 +4875,7 @@ object Dfareporting {
         
         inline def setEncryptedUserIdCandidatesUndefined: Self = StObject.set(x, "encryptedUserIdCandidates", js.undefined)
         
-        inline def setEncryptedUserIdCandidatesVarargs(value: String*): Self = StObject.set(x, "encryptedUserIdCandidates", js.Array(value :_*))
+        inline def setEncryptedUserIdCandidatesVarargs(value: String*): Self = StObject.set(x, "encryptedUserIdCandidates", js.Array(value*))
         
         inline def setEncryptedUserIdUndefined: Self = StObject.set(x, "encryptedUserId", js.undefined)
         
@@ -4985,7 +4985,7 @@ object Dfareporting {
         
         inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        inline def setErrorsVarargs(value: ConversionError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: ConversionError*): Self = StObject.set(x, "errors", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5014,7 +5014,7 @@ object Dfareporting {
         
         inline def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
         
-        inline def setConversionsVarargs(value: Conversion*): Self = StObject.set(x, "conversions", js.Array(value :_*))
+        inline def setConversionsVarargs(value: Conversion*): Self = StObject.set(x, "conversions", js.Array(value*))
         
         inline def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
         
@@ -5055,7 +5055,7 @@ object Dfareporting {
         
         inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
-        inline def setStatusVarargs(value: ConversionStatus*): Self = StObject.set(x, "status", js.Array(value :_*))
+        inline def setStatusVarargs(value: ConversionStatus*): Self = StObject.set(x, "status", js.Array(value*))
       }
     }
     
@@ -5080,7 +5080,7 @@ object Dfareporting {
         
         inline def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
         
-        inline def setConversionsVarargs(value: Conversion*): Self = StObject.set(x, "conversions", js.Array(value :_*))
+        inline def setConversionsVarargs(value: Conversion*): Self = StObject.set(x, "conversions", js.Array(value*))
         
         inline def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
         
@@ -5121,7 +5121,7 @@ object Dfareporting {
         
         inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
-        inline def setStatusVarargs(value: ConversionStatus*): Self = StObject.set(x, "status", js.Array(value :_*))
+        inline def setStatusVarargs(value: ConversionStatus*): Self = StObject.set(x, "status", js.Array(value*))
       }
     }
     
@@ -5144,7 +5144,7 @@ object Dfareporting {
         
         inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
         
-        inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
+        inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5350,13 +5350,13 @@ object Dfareporting {
         
         inline def setAdTagKeysUndefined: Self = StObject.set(x, "adTagKeys", js.undefined)
         
-        inline def setAdTagKeysVarargs(value: String*): Self = StObject.set(x, "adTagKeys", js.Array(value :_*))
+        inline def setAdTagKeysVarargs(value: String*): Self = StObject.set(x, "adTagKeys", js.Array(value*))
         
         inline def setAdditionalSizes(value: js.Array[Size]): Self = StObject.set(x, "additionalSizes", value.asInstanceOf[js.Any])
         
         inline def setAdditionalSizesUndefined: Self = StObject.set(x, "additionalSizes", js.undefined)
         
-        inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value :_*))
+        inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value*))
         
         inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
         
@@ -5398,7 +5398,7 @@ object Dfareporting {
         
         inline def setBackupImageFeaturesUndefined: Self = StObject.set(x, "backupImageFeatures", js.undefined)
         
-        inline def setBackupImageFeaturesVarargs(value: String*): Self = StObject.set(x, "backupImageFeatures", js.Array(value :_*))
+        inline def setBackupImageFeaturesVarargs(value: String*): Self = StObject.set(x, "backupImageFeatures", js.Array(value*))
         
         inline def setBackupImageReportingLabel(value: String): Self = StObject.set(x, "backupImageReportingLabel", value.asInstanceOf[js.Any])
         
@@ -5412,7 +5412,7 @@ object Dfareporting {
         
         inline def setClickTagsUndefined: Self = StObject.set(x, "clickTags", js.undefined)
         
-        inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value :_*))
+        inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value*))
         
         inline def setCommercialId(value: String): Self = StObject.set(x, "commercialId", value.asInstanceOf[js.Any])
         
@@ -5422,13 +5422,13 @@ object Dfareporting {
         
         inline def setCompanionCreativesUndefined: Self = StObject.set(x, "companionCreatives", js.undefined)
         
-        inline def setCompanionCreativesVarargs(value: String*): Self = StObject.set(x, "companionCreatives", js.Array(value :_*))
+        inline def setCompanionCreativesVarargs(value: String*): Self = StObject.set(x, "companionCreatives", js.Array(value*))
         
         inline def setCompatibility(value: js.Array[String]): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
         
         inline def setCompatibilityUndefined: Self = StObject.set(x, "compatibility", js.undefined)
         
-        inline def setCompatibilityVarargs(value: String*): Self = StObject.set(x, "compatibility", js.Array(value :_*))
+        inline def setCompatibilityVarargs(value: String*): Self = StObject.set(x, "compatibility", js.Array(value*))
         
         inline def setConvertFlashToHtml5(value: Boolean): Self = StObject.set(x, "convertFlashToHtml5", value.asInstanceOf[js.Any])
         
@@ -5438,7 +5438,7 @@ object Dfareporting {
         
         inline def setCounterCustomEventsUndefined: Self = StObject.set(x, "counterCustomEvents", js.undefined)
         
-        inline def setCounterCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "counterCustomEvents", js.Array(value :_*))
+        inline def setCounterCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "counterCustomEvents", js.Array(value*))
         
         inline def setCreativeAssetSelection(value: CreativeAssetSelection): Self = StObject.set(x, "creativeAssetSelection", value.asInstanceOf[js.Any])
         
@@ -5448,19 +5448,19 @@ object Dfareporting {
         
         inline def setCreativeAssetsUndefined: Self = StObject.set(x, "creativeAssets", js.undefined)
         
-        inline def setCreativeAssetsVarargs(value: CreativeAsset*): Self = StObject.set(x, "creativeAssets", js.Array(value :_*))
+        inline def setCreativeAssetsVarargs(value: CreativeAsset*): Self = StObject.set(x, "creativeAssets", js.Array(value*))
         
         inline def setCreativeFieldAssignments(value: js.Array[CreativeFieldAssignment]): Self = StObject.set(x, "creativeFieldAssignments", value.asInstanceOf[js.Any])
         
         inline def setCreativeFieldAssignmentsUndefined: Self = StObject.set(x, "creativeFieldAssignments", js.undefined)
         
-        inline def setCreativeFieldAssignmentsVarargs(value: CreativeFieldAssignment*): Self = StObject.set(x, "creativeFieldAssignments", js.Array(value :_*))
+        inline def setCreativeFieldAssignmentsVarargs(value: CreativeFieldAssignment*): Self = StObject.set(x, "creativeFieldAssignments", js.Array(value*))
         
         inline def setCustomKeyValues(value: js.Array[String]): Self = StObject.set(x, "customKeyValues", value.asInstanceOf[js.Any])
         
         inline def setCustomKeyValuesUndefined: Self = StObject.set(x, "customKeyValues", js.undefined)
         
-        inline def setCustomKeyValuesVarargs(value: String*): Self = StObject.set(x, "customKeyValues", js.Array(value :_*))
+        inline def setCustomKeyValuesVarargs(value: String*): Self = StObject.set(x, "customKeyValues", js.Array(value*))
         
         inline def setDynamicAssetSelection(value: Boolean): Self = StObject.set(x, "dynamicAssetSelection", value.asInstanceOf[js.Any])
         
@@ -5470,7 +5470,7 @@ object Dfareporting {
         
         inline def setExitCustomEventsUndefined: Self = StObject.set(x, "exitCustomEvents", js.undefined)
         
-        inline def setExitCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "exitCustomEvents", js.Array(value :_*))
+        inline def setExitCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "exitCustomEvents", js.Array(value*))
         
         inline def setFsCommand(value: FsCommand): Self = StObject.set(x, "fsCommand", value.asInstanceOf[js.Any])
         
@@ -5592,13 +5592,13 @@ object Dfareporting {
         
         inline def setThirdPartyUrlsUndefined: Self = StObject.set(x, "thirdPartyUrls", js.undefined)
         
-        inline def setThirdPartyUrlsVarargs(value: ThirdPartyTrackingUrl*): Self = StObject.set(x, "thirdPartyUrls", js.Array(value :_*))
+        inline def setThirdPartyUrlsVarargs(value: ThirdPartyTrackingUrl*): Self = StObject.set(x, "thirdPartyUrls", js.Array(value*))
         
         inline def setTimerCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "timerCustomEvents", value.asInstanceOf[js.Any])
         
         inline def setTimerCustomEventsUndefined: Self = StObject.set(x, "timerCustomEvents", js.undefined)
         
-        inline def setTimerCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "timerCustomEvents", js.Array(value :_*))
+        inline def setTimerCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "timerCustomEvents", js.Array(value*))
         
         inline def setTotalFileSize(value: String): Self = StObject.set(x, "totalFileSize", value.asInstanceOf[js.Any])
         
@@ -5741,7 +5741,7 @@ object Dfareporting {
         
         inline def setAdditionalSizesUndefined: Self = StObject.set(x, "additionalSizes", js.undefined)
         
-        inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value :_*))
+        inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value*))
         
         inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
@@ -5783,7 +5783,7 @@ object Dfareporting {
         
         inline def setCompanionCreativeIdsUndefined: Self = StObject.set(x, "companionCreativeIds", js.undefined)
         
-        inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value :_*))
+        inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value*))
         
         inline def setCustomStartTimeValue(value: Double): Self = StObject.set(x, "customStartTimeValue", value.asInstanceOf[js.Any])
         
@@ -5793,7 +5793,7 @@ object Dfareporting {
         
         inline def setDetectedFeaturesUndefined: Self = StObject.set(x, "detectedFeatures", js.undefined)
         
-        inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value :_*))
+        inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value*))
         
         inline def setDisplayType(value: String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
         
@@ -5995,13 +5995,13 @@ object Dfareporting {
         
         inline def setClickTagsUndefined: Self = StObject.set(x, "clickTags", js.undefined)
         
-        inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value :_*))
+        inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value*))
         
         inline def setDetectedFeatures(value: js.Array[String]): Self = StObject.set(x, "detectedFeatures", value.asInstanceOf[js.Any])
         
         inline def setDetectedFeaturesUndefined: Self = StObject.set(x, "detectedFeatures", js.undefined)
         
-        inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value :_*))
+        inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -6019,7 +6019,7 @@ object Dfareporting {
         
         inline def setWarnedValidationRulesUndefined: Self = StObject.set(x, "warnedValidationRules", js.undefined)
         
-        inline def setWarnedValidationRulesVarargs(value: String*): Self = StObject.set(x, "warnedValidationRules", js.Array(value :_*))
+        inline def setWarnedValidationRulesVarargs(value: String*): Self = StObject.set(x, "warnedValidationRules", js.Array(value*))
       }
     }
     
@@ -6046,7 +6046,7 @@ object Dfareporting {
         
         inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
         
-        inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+        inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
       }
     }
     
@@ -6103,13 +6103,13 @@ object Dfareporting {
         
         inline def setCompanionCreativeOverridesUndefined: Self = StObject.set(x, "companionCreativeOverrides", js.undefined)
         
-        inline def setCompanionCreativeOverridesVarargs(value: CompanionClickThroughOverride*): Self = StObject.set(x, "companionCreativeOverrides", js.Array(value :_*))
+        inline def setCompanionCreativeOverridesVarargs(value: CompanionClickThroughOverride*): Self = StObject.set(x, "companionCreativeOverrides", js.Array(value*))
         
         inline def setCreativeGroupAssignments(value: js.Array[CreativeGroupAssignment]): Self = StObject.set(x, "creativeGroupAssignments", value.asInstanceOf[js.Any])
         
         inline def setCreativeGroupAssignmentsUndefined: Self = StObject.set(x, "creativeGroupAssignments", js.undefined)
         
-        inline def setCreativeGroupAssignmentsVarargs(value: CreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value :_*))
+        inline def setCreativeGroupAssignmentsVarargs(value: CreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value*))
         
         inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
         
@@ -6127,7 +6127,7 @@ object Dfareporting {
         
         inline def setRichMediaExitOverridesUndefined: Self = StObject.set(x, "richMediaExitOverrides", js.undefined)
         
-        inline def setRichMediaExitOverridesVarargs(value: RichMediaExitOverride*): Self = StObject.set(x, "richMediaExitOverrides", js.Array(value :_*))
+        inline def setRichMediaExitOverridesVarargs(value: RichMediaExitOverride*): Self = StObject.set(x, "richMediaExitOverrides", js.Array(value*))
         
         inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
         
@@ -6383,7 +6383,7 @@ object Dfareporting {
         
         inline def setCreativeFieldValuesUndefined: Self = StObject.set(x, "creativeFieldValues", js.undefined)
         
-        inline def setCreativeFieldValuesVarargs(value: CreativeFieldValue*): Self = StObject.set(x, "creativeFieldValues", js.Array(value :_*))
+        inline def setCreativeFieldValuesVarargs(value: CreativeFieldValue*): Self = StObject.set(x, "creativeFieldValues", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6416,7 +6416,7 @@ object Dfareporting {
         
         inline def setCreativeFieldsUndefined: Self = StObject.set(x, "creativeFields", js.undefined)
         
-        inline def setCreativeFieldsVarargs(value: CreativeField*): Self = StObject.set(x, "creativeFields", js.Array(value :_*))
+        inline def setCreativeFieldsVarargs(value: CreativeField*): Self = StObject.set(x, "creativeFields", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6535,7 +6535,7 @@ object Dfareporting {
         
         inline def setCreativeGroupsUndefined: Self = StObject.set(x, "creativeGroups", js.undefined)
         
-        inline def setCreativeGroupsVarargs(value: CreativeGroup*): Self = StObject.set(x, "creativeGroups", js.Array(value :_*))
+        inline def setCreativeGroupsVarargs(value: CreativeGroup*): Self = StObject.set(x, "creativeGroups", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6578,7 +6578,7 @@ object Dfareporting {
         
         inline def setOptimizationActivitysUndefined: Self = StObject.set(x, "optimizationActivitys", js.undefined)
         
-        inline def setOptimizationActivitysVarargs(value: OptimizationActivity*): Self = StObject.set(x, "optimizationActivitys", js.Array(value :_*))
+        inline def setOptimizationActivitysVarargs(value: OptimizationActivity*): Self = StObject.set(x, "optimizationActivitys", js.Array(value*))
         
         inline def setOptimizationModel(value: String): Self = StObject.set(x, "optimizationModel", value.asInstanceOf[js.Any])
         
@@ -6609,7 +6609,7 @@ object Dfareporting {
         
         inline def setCreativeAssignmentsUndefined: Self = StObject.set(x, "creativeAssignments", js.undefined)
         
-        inline def setCreativeAssignmentsVarargs(value: CreativeAssignment*): Self = StObject.set(x, "creativeAssignments", js.Array(value :_*))
+        inline def setCreativeAssignmentsVarargs(value: CreativeAssignment*): Self = StObject.set(x, "creativeAssignments", js.Array(value*))
         
         inline def setCreativeOptimizationConfigurationId(value: String): Self = StObject.set(x, "creativeOptimizationConfigurationId", value.asInstanceOf[js.Any])
         
@@ -6646,7 +6646,7 @@ object Dfareporting {
         
         inline def setCreativesUndefined: Self = StObject.set(x, "creatives", js.undefined)
         
-        inline def setCreativesVarargs(value: Creative*): Self = StObject.set(x, "creatives", js.Array(value :_*))
+        inline def setCreativesVarargs(value: Creative*): Self = StObject.set(x, "creatives", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6683,13 +6683,13 @@ object Dfareporting {
         
         inline def setBreakdownUndefined: Self = StObject.set(x, "breakdown", js.undefined)
         
-        inline def setBreakdownVarargs(value: Dimension*): Self = StObject.set(x, "breakdown", js.Array(value :_*))
+        inline def setBreakdownVarargs(value: Dimension*): Self = StObject.set(x, "breakdown", js.Array(value*))
         
         inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
         
         inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
         
-        inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+        inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6699,13 +6699,13 @@ object Dfareporting {
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
         
         inline def setOverlapMetrics(value: js.Array[Metric]): Self = StObject.set(x, "overlapMetrics", value.asInstanceOf[js.Any])
         
         inline def setOverlapMetricsUndefined: Self = StObject.set(x, "overlapMetrics", js.undefined)
         
-        inline def setOverlapMetricsVarargs(value: Metric*): Self = StObject.set(x, "overlapMetrics", js.Array(value :_*))
+        inline def setOverlapMetricsVarargs(value: Metric*): Self = StObject.set(x, "overlapMetrics", js.Array(value*))
       }
     }
     
@@ -6759,7 +6759,7 @@ object Dfareporting {
         
         inline def setFilteredEventIdsUndefined: Self = StObject.set(x, "filteredEventIds", js.undefined)
         
-        inline def setFilteredEventIdsVarargs(value: DimensionValue*): Self = StObject.set(x, "filteredEventIds", js.Array(value :_*))
+        inline def setFilteredEventIdsVarargs(value: DimensionValue*): Self = StObject.set(x, "filteredEventIds", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -6893,13 +6893,13 @@ object Dfareporting {
         
         inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
         
-        inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+        inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value*))
         
         inline def setHoursOfDay(value: js.Array[Double]): Self = StObject.set(x, "hoursOfDay", value.asInstanceOf[js.Any])
         
         inline def setHoursOfDayUndefined: Self = StObject.set(x, "hoursOfDay", js.undefined)
         
-        inline def setHoursOfDayVarargs(value: Double*): Self = StObject.set(x, "hoursOfDay", js.Array(value :_*))
+        inline def setHoursOfDayVarargs(value: Double*): Self = StObject.set(x, "hoursOfDay", js.Array(value*))
         
         inline def setUserLocalTime(value: Boolean): Self = StObject.set(x, "userLocalTime", value.asInstanceOf[js.Any])
         
@@ -6948,7 +6948,7 @@ object Dfareporting {
         
         inline def setRemarketingListIdsUndefined: Self = StObject.set(x, "remarketingListIds", js.undefined)
         
-        inline def setRemarketingListIdsVarargs(value: String*): Self = StObject.set(x, "remarketingListIds", js.Array(value :_*))
+        inline def setRemarketingListIdsVarargs(value: String*): Self = StObject.set(x, "remarketingListIds", js.Array(value*))
       }
     }
     
@@ -7189,7 +7189,7 @@ object Dfareporting {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: DimensionValue*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: DimensionValue*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7234,7 +7234,7 @@ object Dfareporting {
         
         inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
         
-        inline def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+        inline def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7291,13 +7291,13 @@ object Dfareporting {
         
         inline def setInpageTagFormatsUndefined: Self = StObject.set(x, "inpageTagFormats", js.undefined)
         
-        inline def setInpageTagFormatsVarargs(value: String*): Self = StObject.set(x, "inpageTagFormats", js.Array(value :_*))
+        inline def setInpageTagFormatsVarargs(value: String*): Self = StObject.set(x, "inpageTagFormats", js.Array(value*))
         
         inline def setInterstitialTagFormats(value: js.Array[String]): Self = StObject.set(x, "interstitialTagFormats", value.asInstanceOf[js.Any])
         
         inline def setInterstitialTagFormatsUndefined: Self = StObject.set(x, "interstitialTagFormats", js.undefined)
         
-        inline def setInterstitialTagFormatsVarargs(value: String*): Self = StObject.set(x, "interstitialTagFormats", js.Array(value :_*))
+        inline def setInterstitialTagFormatsVarargs(value: String*): Self = StObject.set(x, "interstitialTagFormats", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7375,7 +7375,7 @@ object Dfareporting {
         
         inline def setDirectorySitesUndefined: Self = StObject.set(x, "directorySites", js.undefined)
         
-        inline def setDirectorySitesVarargs(value: DirectorySite*): Self = StObject.set(x, "directorySites", js.Array(value :_*))
+        inline def setDirectorySitesVarargs(value: DirectorySite*): Self = StObject.set(x, "directorySites", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7443,7 +7443,7 @@ object Dfareporting {
         
         inline def setDynamicTargetingKeysUndefined: Self = StObject.set(x, "dynamicTargetingKeys", js.undefined)
         
-        inline def setDynamicTargetingKeysVarargs(value: DynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value :_*))
+        inline def setDynamicTargetingKeysVarargs(value: DynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7583,7 +7583,7 @@ object Dfareporting {
         
         inline def setSiteIdsUndefined: Self = StObject.set(x, "siteIds", js.undefined)
         
-        inline def setSiteIdsVarargs(value: String*): Self = StObject.set(x, "siteIds", js.Array(value :_*))
+        inline def setSiteIdsVarargs(value: String*): Self = StObject.set(x, "siteIds", js.Array(value*))
         
         inline def setSslCompliant(value: Boolean): Self = StObject.set(x, "sslCompliant", value.asInstanceOf[js.Any])
         
@@ -7655,7 +7655,7 @@ object Dfareporting {
         
         inline def setEventTagsUndefined: Self = StObject.set(x, "eventTags", js.undefined)
         
-        inline def setEventTagsVarargs(value: EventTag*): Self = StObject.set(x, "eventTags", js.Array(value :_*))
+        inline def setEventTagsVarargs(value: EventTag*): Self = StObject.set(x, "eventTags", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7763,7 +7763,7 @@ object Dfareporting {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: File*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: File*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7889,7 +7889,7 @@ object Dfareporting {
         
         inline def setFloodlightActivitiesUndefined: Self = StObject.set(x, "floodlightActivities", js.undefined)
         
-        inline def setFloodlightActivitiesVarargs(value: FloodlightActivity*): Self = StObject.set(x, "floodlightActivities", js.Array(value :_*))
+        inline def setFloodlightActivitiesVarargs(value: FloodlightActivity*): Self = StObject.set(x, "floodlightActivities", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7992,7 +7992,7 @@ object Dfareporting {
         
         inline def setDefaultTagsUndefined: Self = StObject.set(x, "defaultTags", js.undefined)
         
-        inline def setDefaultTagsVarargs(value: FloodlightActivityDynamicTag*): Self = StObject.set(x, "defaultTags", js.Array(value :_*))
+        inline def setDefaultTagsVarargs(value: FloodlightActivityDynamicTag*): Self = StObject.set(x, "defaultTags", js.Array(value*))
         
         inline def setExpectedUrl(value: String): Self = StObject.set(x, "expectedUrl", value.asInstanceOf[js.Any])
         
@@ -8054,7 +8054,7 @@ object Dfareporting {
         
         inline def setPublisherTagsUndefined: Self = StObject.set(x, "publisherTags", js.undefined)
         
-        inline def setPublisherTagsVarargs(value: FloodlightActivityPublisherDynamicTag*): Self = StObject.set(x, "publisherTags", js.Array(value :_*))
+        inline def setPublisherTagsVarargs(value: FloodlightActivityPublisherDynamicTag*): Self = StObject.set(x, "publisherTags", js.Array(value*))
         
         inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
         
@@ -8084,7 +8084,7 @@ object Dfareporting {
         
         inline def setUserDefinedVariableTypesUndefined: Self = StObject.set(x, "userDefinedVariableTypes", js.undefined)
         
-        inline def setUserDefinedVariableTypesVarargs(value: String*): Self = StObject.set(x, "userDefinedVariableTypes", js.Array(value :_*))
+        inline def setUserDefinedVariableTypesVarargs(value: String*): Self = StObject.set(x, "userDefinedVariableTypes", js.Array(value*))
       }
     }
     
@@ -8225,7 +8225,7 @@ object Dfareporting {
         
         inline def setFloodlightActivityGroupsUndefined: Self = StObject.set(x, "floodlightActivityGroups", js.undefined)
         
-        inline def setFloodlightActivityGroupsVarargs(value: FloodlightActivityGroup*): Self = StObject.set(x, "floodlightActivityGroups", js.Array(value :_*))
+        inline def setFloodlightActivityGroupsVarargs(value: FloodlightActivityGroup*): Self = StObject.set(x, "floodlightActivityGroups", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8401,13 +8401,13 @@ object Dfareporting {
         
         inline def setThirdPartyAuthenticationTokensUndefined: Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.undefined)
         
-        inline def setThirdPartyAuthenticationTokensVarargs(value: ThirdPartyAuthenticationToken*): Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.Array(value :_*))
+        inline def setThirdPartyAuthenticationTokensVarargs(value: ThirdPartyAuthenticationToken*): Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.Array(value*))
         
         inline def setUserDefinedVariableConfigurations(value: js.Array[UserDefinedVariableConfiguration]): Self = StObject.set(x, "userDefinedVariableConfigurations", value.asInstanceOf[js.Any])
         
         inline def setUserDefinedVariableConfigurationsUndefined: Self = StObject.set(x, "userDefinedVariableConfigurations", js.undefined)
         
-        inline def setUserDefinedVariableConfigurationsVarargs(value: UserDefinedVariableConfiguration*): Self = StObject.set(x, "userDefinedVariableConfigurations", js.Array(value :_*))
+        inline def setUserDefinedVariableConfigurationsVarargs(value: UserDefinedVariableConfiguration*): Self = StObject.set(x, "userDefinedVariableConfigurations", js.Array(value*))
       }
     }
     
@@ -8430,7 +8430,7 @@ object Dfareporting {
         
         inline def setFloodlightConfigurationsUndefined: Self = StObject.set(x, "floodlightConfigurations", js.undefined)
         
-        inline def setFloodlightConfigurationsVarargs(value: FloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value :_*))
+        inline def setFloodlightConfigurationsVarargs(value: FloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8461,13 +8461,13 @@ object Dfareporting {
         
         inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
         
-        inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+        inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
         
         inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8477,7 +8477,7 @@ object Dfareporting {
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
       }
     }
     
@@ -8576,13 +8576,13 @@ object Dfareporting {
         
         inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
         
-        inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value :_*))
+        inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value*))
         
         inline def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
         
         inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
         
-        inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
+        inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value*))
         
         inline def setExcludeCountries(value: Boolean): Self = StObject.set(x, "excludeCountries", value.asInstanceOf[js.Any])
         
@@ -8592,19 +8592,19 @@ object Dfareporting {
         
         inline def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
         
-        inline def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value :_*))
+        inline def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value*))
         
         inline def setPostalCodes(value: js.Array[PostalCode]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
         
         inline def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
         
-        inline def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
+        inline def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value*))
         
         inline def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
         
         inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
         
-        inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+        inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value*))
       }
     }
     
@@ -8667,7 +8667,7 @@ object Dfareporting {
         
         inline def setAdSlotsUndefined: Self = StObject.set(x, "adSlots", js.undefined)
         
-        inline def setAdSlotsVarargs(value: AdSlot*): Self = StObject.set(x, "adSlots", js.Array(value :_*))
+        inline def setAdSlotsVarargs(value: AdSlot*): Self = StObject.set(x, "adSlots", js.Array(value*))
         
         inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
         
@@ -8764,7 +8764,7 @@ object Dfareporting {
         
         inline def setInventoryItemsUndefined: Self = StObject.set(x, "inventoryItems", js.undefined)
         
-        inline def setInventoryItemsVarargs(value: InventoryItem*): Self = StObject.set(x, "inventoryItems", js.Array(value :_*))
+        inline def setInventoryItemsVarargs(value: InventoryItem*): Self = StObject.set(x, "inventoryItems", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8832,7 +8832,7 @@ object Dfareporting {
         
         inline def setDeepLinksUndefined: Self = StObject.set(x, "deepLinks", js.undefined)
         
-        inline def setDeepLinksVarargs(value: DeepLink*): Self = StObject.set(x, "deepLinks", js.Array(value :_*))
+        inline def setDeepLinksVarargs(value: DeepLink*): Self = StObject.set(x, "deepLinks", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -8906,7 +8906,7 @@ object Dfareporting {
         
         inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
         
-        inline def setLanguagesVarargs(value: typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language*): Self = StObject.set(x, "languages", js.Array(value :_*))
+        inline def setLanguagesVarargs(value: typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language*): Self = StObject.set(x, "languages", js.Array(value*))
       }
     }
     
@@ -8933,7 +8933,7 @@ object Dfareporting {
         
         inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
         
-        inline def setLanguagesVarargs(value: typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language*): Self = StObject.set(x, "languages", js.Array(value :_*))
+        inline def setLanguagesVarargs(value: typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language*): Self = StObject.set(x, "languages", js.Array(value*))
       }
     }
     
@@ -8973,7 +8973,7 @@ object Dfareporting {
         
         inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
         
-        inline def setTermsVarargs(value: ListPopulationTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+        inline def setTermsVarargs(value: ListPopulationTerm*): Self = StObject.set(x, "terms", js.Array(value*))
       }
     }
     
@@ -9006,7 +9006,7 @@ object Dfareporting {
         
         inline def setListPopulationClausesUndefined: Self = StObject.set(x, "listPopulationClauses", js.undefined)
         
-        inline def setListPopulationClausesVarargs(value: ListPopulationClause*): Self = StObject.set(x, "listPopulationClauses", js.Array(value :_*))
+        inline def setListPopulationClausesVarargs(value: ListPopulationClause*): Self = StObject.set(x, "listPopulationClauses", js.Array(value*))
       }
     }
     
@@ -9218,7 +9218,7 @@ object Dfareporting {
         
         inline def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
         
-        inline def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value :_*))
+        inline def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value*))
       }
     }
     
@@ -9290,7 +9290,7 @@ object Dfareporting {
         
         inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
         
-        inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
+        inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -9364,7 +9364,7 @@ object Dfareporting {
         
         inline def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
         
-        inline def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value :_*))
+        inline def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value*))
       }
     }
     
@@ -9393,7 +9393,7 @@ object Dfareporting {
         
         inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
         
-        inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+        inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value*))
         
         inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
@@ -9566,7 +9566,7 @@ object Dfareporting {
         
         inline def setOperatingSystemVersionsUndefined: Self = StObject.set(x, "operatingSystemVersions", js.undefined)
         
-        inline def setOperatingSystemVersionsVarargs(value: OperatingSystemVersion*): Self = StObject.set(x, "operatingSystemVersions", js.Array(value :_*))
+        inline def setOperatingSystemVersionsVarargs(value: OperatingSystemVersion*): Self = StObject.set(x, "operatingSystemVersions", js.Array(value*))
       }
     }
     
@@ -9593,7 +9593,7 @@ object Dfareporting {
         
         inline def setOperatingSystemsUndefined: Self = StObject.set(x, "operatingSystems", js.undefined)
         
-        inline def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "operatingSystems", js.Array(value :_*))
+        inline def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "operatingSystems", js.Array(value*))
       }
     }
     
@@ -9691,7 +9691,7 @@ object Dfareporting {
         
         inline def setApproverUserProfileIdsUndefined: Self = StObject.set(x, "approverUserProfileIds", js.undefined)
         
-        inline def setApproverUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "approverUserProfileIds", js.Array(value :_*))
+        inline def setApproverUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "approverUserProfileIds", js.Array(value*))
         
         inline def setBuyerInvoiceId(value: String): Self = StObject.set(x, "buyerInvoiceId", value.asInstanceOf[js.Any])
         
@@ -9709,7 +9709,7 @@ object Dfareporting {
         
         inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
         
-        inline def setContactsVarargs(value: OrderContact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+        inline def setContactsVarargs(value: OrderContact*): Self = StObject.set(x, "contacts", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -9751,13 +9751,13 @@ object Dfareporting {
         
         inline def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
         
-        inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value :_*))
+        inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value*))
         
         inline def setSiteNames(value: js.Array[String]): Self = StObject.set(x, "siteNames", value.asInstanceOf[js.Any])
         
         inline def setSiteNamesUndefined: Self = StObject.set(x, "siteNames", js.undefined)
         
-        inline def setSiteNamesVarargs(value: String*): Self = StObject.set(x, "siteNames", js.Array(value :_*))
+        inline def setSiteNamesVarargs(value: String*): Self = StObject.set(x, "siteNames", js.Array(value*))
         
         inline def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
         
@@ -9873,7 +9873,7 @@ object Dfareporting {
         
         inline def setApprovedByUserProfileIdsUndefined: Self = StObject.set(x, "approvedByUserProfileIds", js.undefined)
         
-        inline def setApprovedByUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "approvedByUserProfileIds", js.Array(value :_*))
+        inline def setApprovedByUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "approvedByUserProfileIds", js.Array(value*))
         
         inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
         
@@ -9899,7 +9899,7 @@ object Dfareporting {
         
         inline def setLastSentRecipientsUndefined: Self = StObject.set(x, "lastSentRecipients", js.undefined)
         
-        inline def setLastSentRecipientsVarargs(value: String*): Self = StObject.set(x, "lastSentRecipients", js.Array(value :_*))
+        inline def setLastSentRecipientsVarargs(value: String*): Self = StObject.set(x, "lastSentRecipients", js.Array(value*))
         
         inline def setLastSentTime(value: String): Self = StObject.set(x, "lastSentTime", value.asInstanceOf[js.Any])
         
@@ -9960,7 +9960,7 @@ object Dfareporting {
         
         inline def setOrderDocumentsUndefined: Self = StObject.set(x, "orderDocuments", js.undefined)
         
-        inline def setOrderDocumentsVarargs(value: OrderDocument*): Self = StObject.set(x, "orderDocuments", js.Array(value :_*))
+        inline def setOrderDocumentsVarargs(value: OrderDocument*): Self = StObject.set(x, "orderDocuments", js.Array(value*))
       }
     }
     
@@ -9993,7 +9993,7 @@ object Dfareporting {
         
         inline def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
         
-        inline def setOrdersVarargs(value: Order*): Self = StObject.set(x, "orders", js.Array(value :_*))
+        inline def setOrdersVarargs(value: Order*): Self = StObject.set(x, "orders", js.Array(value*))
       }
     }
     
@@ -10022,13 +10022,13 @@ object Dfareporting {
         
         inline def setConversionDimensionsUndefined: Self = StObject.set(x, "conversionDimensions", js.undefined)
         
-        inline def setConversionDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value :_*))
+        inline def setConversionDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value*))
         
         inline def setCustomFloodlightVariables(value: js.Array[Dimension]): Self = StObject.set(x, "customFloodlightVariables", value.asInstanceOf[js.Any])
         
         inline def setCustomFloodlightVariablesUndefined: Self = StObject.set(x, "customFloodlightVariables", js.undefined)
         
-        inline def setCustomFloodlightVariablesVarargs(value: Dimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value :_*))
+        inline def setCustomFloodlightVariablesVarargs(value: Dimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -10038,13 +10038,13 @@ object Dfareporting {
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
         
         inline def setPerInteractionDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "perInteractionDimensions", value.asInstanceOf[js.Any])
         
         inline def setPerInteractionDimensionsUndefined: Self = StObject.set(x, "perInteractionDimensions", js.undefined)
         
-        inline def setPerInteractionDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value :_*))
+        inline def setPerInteractionDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value*))
       }
     }
     
@@ -10153,7 +10153,7 @@ object Dfareporting {
         
         inline def setAdditionalSizesUndefined: Self = StObject.set(x, "additionalSizes", js.undefined)
         
-        inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value :_*))
+        inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value*))
         
         inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
         
@@ -10291,7 +10291,7 @@ object Dfareporting {
         
         inline def setTagFormatsUndefined: Self = StObject.set(x, "tagFormats", js.undefined)
         
-        inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value :_*))
+        inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value*))
         
         inline def setTagSetting(value: TagSetting): Self = StObject.set(x, "tagSetting", value.asInstanceOf[js.Any])
         
@@ -10439,7 +10439,7 @@ object Dfareporting {
         
         inline def setChildPlacementIdsUndefined: Self = StObject.set(x, "childPlacementIds", js.undefined)
         
-        inline def setChildPlacementIdsVarargs(value: String*): Self = StObject.set(x, "childPlacementIds", js.Array(value :_*))
+        inline def setChildPlacementIdsVarargs(value: String*): Self = StObject.set(x, "childPlacementIds", js.Array(value*))
         
         inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
         
@@ -10548,7 +10548,7 @@ object Dfareporting {
         
         inline def setPlacementGroupsUndefined: Self = StObject.set(x, "placementGroups", js.undefined)
         
-        inline def setPlacementGroupsVarargs(value: PlacementGroup*): Self = StObject.set(x, "placementGroups", js.Array(value :_*))
+        inline def setPlacementGroupsVarargs(value: PlacementGroup*): Self = StObject.set(x, "placementGroups", js.Array(value*))
       }
     }
     
@@ -10581,7 +10581,7 @@ object Dfareporting {
         
         inline def setPlacementStrategiesUndefined: Self = StObject.set(x, "placementStrategies", js.undefined)
         
-        inline def setPlacementStrategiesVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategies", js.Array(value :_*))
+        inline def setPlacementStrategiesVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategies", js.Array(value*))
       }
     }
     
@@ -10645,7 +10645,7 @@ object Dfareporting {
         
         inline def setTagDatasUndefined: Self = StObject.set(x, "tagDatas", js.undefined)
         
-        inline def setTagDatasVarargs(value: TagData*): Self = StObject.set(x, "tagDatas", js.Array(value :_*))
+        inline def setTagDatasVarargs(value: TagData*): Self = StObject.set(x, "tagDatas", js.Array(value*))
       }
     }
     
@@ -10672,7 +10672,7 @@ object Dfareporting {
         
         inline def setPlacementTagsUndefined: Self = StObject.set(x, "placementTags", js.undefined)
         
-        inline def setPlacementTagsVarargs(value: PlacementTag*): Self = StObject.set(x, "placementTags", js.Array(value :_*))
+        inline def setPlacementTagsVarargs(value: PlacementTag*): Self = StObject.set(x, "placementTags", js.Array(value*))
       }
     }
     
@@ -10705,7 +10705,7 @@ object Dfareporting {
         
         inline def setPlacementsUndefined: Self = StObject.set(x, "placements", js.undefined)
         
-        inline def setPlacementsVarargs(value: Placement*): Self = StObject.set(x, "placements", js.Array(value :_*))
+        inline def setPlacementsVarargs(value: Placement*): Self = StObject.set(x, "placements", js.Array(value*))
       }
     }
     
@@ -10763,7 +10763,7 @@ object Dfareporting {
         
         inline def setPlatformTypesUndefined: Self = StObject.set(x, "platformTypes", js.undefined)
         
-        inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value :_*))
+        inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value*))
       }
     }
     
@@ -10900,7 +10900,7 @@ object Dfareporting {
         
         inline def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
         
-        inline def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
+        inline def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value*))
       }
     }
     
@@ -10939,7 +10939,7 @@ object Dfareporting {
         
         inline def setFlightsUndefined: Self = StObject.set(x, "flights", js.undefined)
         
-        inline def setFlightsVarargs(value: Flight*): Self = StObject.set(x, "flights", js.Array(value :_*))
+        inline def setFlightsVarargs(value: Flight*): Self = StObject.set(x, "flights", js.Array(value*))
         
         inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
         
@@ -11008,7 +11008,7 @@ object Dfareporting {
         
         inline def setPricingPeriodsUndefined: Self = StObject.set(x, "pricingPeriods", js.undefined)
         
-        inline def setPricingPeriodsVarargs(value: PricingSchedulePricingPeriod*): Self = StObject.set(x, "pricingPeriods", js.Array(value :_*))
+        inline def setPricingPeriodsVarargs(value: PricingSchedulePricingPeriod*): Self = StObject.set(x, "pricingPeriods", js.Array(value*))
         
         inline def setPricingType(value: String): Self = StObject.set(x, "pricingType", value.asInstanceOf[js.Any])
         
@@ -11241,7 +11241,7 @@ object Dfareporting {
         
         inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
         
-        inline def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value :_*))
+        inline def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value*))
       }
     }
     
@@ -11272,13 +11272,13 @@ object Dfareporting {
         
         inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
         
-        inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+        inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
         
         inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -11288,19 +11288,19 @@ object Dfareporting {
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
         
         inline def setPivotedActivityMetrics(value: js.Array[Metric]): Self = StObject.set(x, "pivotedActivityMetrics", value.asInstanceOf[js.Any])
         
         inline def setPivotedActivityMetricsUndefined: Self = StObject.set(x, "pivotedActivityMetrics", js.undefined)
         
-        inline def setPivotedActivityMetricsVarargs(value: Metric*): Self = StObject.set(x, "pivotedActivityMetrics", js.Array(value :_*))
+        inline def setPivotedActivityMetricsVarargs(value: Metric*): Self = StObject.set(x, "pivotedActivityMetrics", js.Array(value*))
         
         inline def setReachByFrequencyMetrics(value: js.Array[Metric]): Self = StObject.set(x, "reachByFrequencyMetrics", value.asInstanceOf[js.Any])
         
         inline def setReachByFrequencyMetricsUndefined: Self = StObject.set(x, "reachByFrequencyMetrics", js.undefined)
         
-        inline def setReachByFrequencyMetricsVarargs(value: Metric*): Self = StObject.set(x, "reachByFrequencyMetrics", js.Array(value :_*))
+        inline def setReachByFrequencyMetricsVarargs(value: Metric*): Self = StObject.set(x, "reachByFrequencyMetrics", js.Array(value*))
       }
     }
     
@@ -11407,7 +11407,7 @@ object Dfareporting {
         
         inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
         
-        inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+        inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value*))
       }
     }
     
@@ -11533,13 +11533,13 @@ object Dfareporting {
         
         inline def setSharedAccountIdsUndefined: Self = StObject.set(x, "sharedAccountIds", js.undefined)
         
-        inline def setSharedAccountIdsVarargs(value: String*): Self = StObject.set(x, "sharedAccountIds", js.Array(value :_*))
+        inline def setSharedAccountIdsVarargs(value: String*): Self = StObject.set(x, "sharedAccountIds", js.Array(value*))
         
         inline def setSharedAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "sharedAdvertiserIds", value.asInstanceOf[js.Any])
         
         inline def setSharedAdvertiserIdsUndefined: Self = StObject.set(x, "sharedAdvertiserIds", js.undefined)
         
-        inline def setSharedAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "sharedAdvertiserIds", js.Array(value :_*))
+        inline def setSharedAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "sharedAdvertiserIds", js.Array(value*))
       }
     }
     
@@ -11572,7 +11572,7 @@ object Dfareporting {
         
         inline def setRemarketingListsUndefined: Self = StObject.set(x, "remarketingLists", js.undefined)
         
-        inline def setRemarketingListsVarargs(value: RemarketingList*): Self = StObject.set(x, "remarketingLists", js.Array(value :_*))
+        inline def setRemarketingListsVarargs(value: RemarketingList*): Self = StObject.set(x, "remarketingLists", js.Array(value*))
       }
     }
     
@@ -11722,13 +11722,13 @@ object Dfareporting {
         
         inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
         
-        inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+        inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
         
         inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -11738,13 +11738,13 @@ object Dfareporting {
         
         inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
         
         inline def setPivotedActivityMetrics(value: js.Array[Metric]): Self = StObject.set(x, "pivotedActivityMetrics", value.asInstanceOf[js.Any])
         
         inline def setPivotedActivityMetricsUndefined: Self = StObject.set(x, "pivotedActivityMetrics", js.undefined)
         
-        inline def setPivotedActivityMetricsVarargs(value: Metric*): Self = StObject.set(x, "pivotedActivityMetrics", js.Array(value :_*))
+        inline def setPivotedActivityMetricsVarargs(value: Metric*): Self = StObject.set(x, "pivotedActivityMetrics", js.Array(value*))
       }
     }
     
@@ -11787,19 +11787,19 @@ object Dfareporting {
         
         inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
         
-        inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+        inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
         
         inline def setDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
         
         inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
         
-        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
       }
     }
     
@@ -11832,7 +11832,7 @@ object Dfareporting {
         
         inline def setBreakdownUndefined: Self = StObject.set(x, "breakdown", js.undefined)
         
-        inline def setBreakdownVarargs(value: SortedDimension*): Self = StObject.set(x, "breakdown", js.Array(value :_*))
+        inline def setBreakdownVarargs(value: SortedDimension*): Self = StObject.set(x, "breakdown", js.Array(value*))
         
         inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
         
@@ -11844,7 +11844,7 @@ object Dfareporting {
         
         inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
         
-        inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+        inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
         
         inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
         
@@ -11852,13 +11852,13 @@ object Dfareporting {
         
         inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
         
-        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
         
         inline def setOverlapMetricNames(value: js.Array[String]): Self = StObject.set(x, "overlapMetricNames", value.asInstanceOf[js.Any])
         
         inline def setOverlapMetricNamesUndefined: Self = StObject.set(x, "overlapMetricNames", js.undefined)
         
-        inline def setOverlapMetricNamesVarargs(value: String*): Self = StObject.set(x, "overlapMetricNames", js.Array(value :_*))
+        inline def setOverlapMetricNamesVarargs(value: String*): Self = StObject.set(x, "overlapMetricNames", js.Array(value*))
         
         inline def setPivoted(value: Boolean): Self = StObject.set(x, "pivoted", value.asInstanceOf[js.Any])
         
@@ -11901,7 +11901,7 @@ object Dfareporting {
         
         inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
         
-        inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+        inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value*))
       }
     }
     
@@ -11934,7 +11934,7 @@ object Dfareporting {
         
         inline def setCustomRichMediaEventsUndefined: Self = StObject.set(x, "customRichMediaEvents", js.undefined)
         
-        inline def setCustomRichMediaEventsVarargs(value: DimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value :_*))
+        inline def setCustomRichMediaEventsVarargs(value: DimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value*))
         
         inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
         
@@ -11944,13 +11944,13 @@ object Dfareporting {
         
         inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
         
-        inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+        inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
         
         inline def setDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setFloodlightConfigId(value: DimensionValue): Self = StObject.set(x, "floodlightConfigId", value.asInstanceOf[js.Any])
         
@@ -11960,7 +11960,7 @@ object Dfareporting {
         
         inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
         
-        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
         
         inline def setReportProperties(value: ReportFloodlightCriteriaReportProperties): Self = StObject.set(x, "reportProperties", value.asInstanceOf[js.Any])
         
@@ -12026,7 +12026,7 @@ object Dfareporting {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Report*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Report*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -12071,25 +12071,25 @@ object Dfareporting {
         
         inline def setActivityFiltersUndefined: Self = StObject.set(x, "activityFilters", js.undefined)
         
-        inline def setActivityFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value :_*))
+        inline def setActivityFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value*))
         
         inline def setConversionDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "conversionDimensions", value.asInstanceOf[js.Any])
         
         inline def setConversionDimensionsUndefined: Self = StObject.set(x, "conversionDimensions", js.undefined)
         
-        inline def setConversionDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value :_*))
+        inline def setConversionDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value*))
         
         inline def setCustomFloodlightVariables(value: js.Array[SortedDimension]): Self = StObject.set(x, "customFloodlightVariables", value.asInstanceOf[js.Any])
         
         inline def setCustomFloodlightVariablesUndefined: Self = StObject.set(x, "customFloodlightVariables", js.undefined)
         
-        inline def setCustomFloodlightVariablesVarargs(value: SortedDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value :_*))
+        inline def setCustomFloodlightVariablesVarargs(value: SortedDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value*))
         
         inline def setCustomRichMediaEvents(value: js.Array[DimensionValue]): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
         
         inline def setCustomRichMediaEventsUndefined: Self = StObject.set(x, "customRichMediaEvents", js.undefined)
         
-        inline def setCustomRichMediaEventsVarargs(value: DimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value :_*))
+        inline def setCustomRichMediaEventsVarargs(value: DimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value*))
         
         inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
         
@@ -12103,13 +12103,13 @@ object Dfareporting {
         
         inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
         
-        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
         
         inline def setPerInteractionDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "perInteractionDimensions", value.asInstanceOf[js.Any])
         
         inline def setPerInteractionDimensionsUndefined: Self = StObject.set(x, "perInteractionDimensions", js.undefined)
         
-        inline def setPerInteractionDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value :_*))
+        inline def setPerInteractionDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value*))
         
         inline def setReportProperties(value: ReportPathToConversionCriteriaReportProperties): Self = StObject.set(x, "reportProperties", value.asInstanceOf[js.Any])
         
@@ -12227,13 +12227,13 @@ object Dfareporting {
         
         inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
         
-        inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+        inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
         
         inline def setDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
         inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
         
         inline def setEnableAllDimensionCombinations(value: Boolean): Self = StObject.set(x, "enableAllDimensionCombinations", value.asInstanceOf[js.Any])
         
@@ -12243,13 +12243,13 @@ object Dfareporting {
         
         inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
         
-        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+        inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
         
         inline def setReachByFrequencyMetricNames(value: js.Array[String]): Self = StObject.set(x, "reachByFrequencyMetricNames", value.asInstanceOf[js.Any])
         
         inline def setReachByFrequencyMetricNamesUndefined: Self = StObject.set(x, "reachByFrequencyMetricNames", js.undefined)
         
-        inline def setReachByFrequencyMetricNamesVarargs(value: String*): Self = StObject.set(x, "reachByFrequencyMetricNames", js.Array(value :_*))
+        inline def setReachByFrequencyMetricNamesVarargs(value: String*): Self = StObject.set(x, "reachByFrequencyMetricNames", js.Array(value*))
       }
     }
     
@@ -12296,7 +12296,7 @@ object Dfareporting {
         
         inline def setRepeatsOnWeekDaysUndefined: Self = StObject.set(x, "repeatsOnWeekDays", js.undefined)
         
-        inline def setRepeatsOnWeekDaysVarargs(value: String*): Self = StObject.set(x, "repeatsOnWeekDays", js.Array(value :_*))
+        inline def setRepeatsOnWeekDaysVarargs(value: String*): Self = StObject.set(x, "repeatsOnWeekDays", js.Array(value*))
         
         inline def setRepeatsUndefined: Self = StObject.set(x, "repeats", js.undefined)
         
@@ -12480,7 +12480,7 @@ object Dfareporting {
         
         inline def setSiteContactsUndefined: Self = StObject.set(x, "siteContacts", js.undefined)
         
-        inline def setSiteContactsVarargs(value: SiteContact*): Self = StObject.set(x, "siteContacts", js.Array(value :_*))
+        inline def setSiteContactsVarargs(value: SiteContact*): Self = StObject.set(x, "siteContacts", js.Array(value*))
         
         inline def setSiteSettings(value: SiteSettings): Self = StObject.set(x, "siteSettings", value.asInstanceOf[js.Any])
         
@@ -12523,7 +12523,7 @@ object Dfareporting {
         
         inline def setEnabledSizesUndefined: Self = StObject.set(x, "enabledSizes", js.undefined)
         
-        inline def setEnabledSizesVarargs(value: Size*): Self = StObject.set(x, "enabledSizes", js.Array(value :_*))
+        inline def setEnabledSizesVarargs(value: Size*): Self = StObject.set(x, "enabledSizes", js.Array(value*))
         
         inline def setImageOnly(value: Boolean): Self = StObject.set(x, "imageOnly", value.asInstanceOf[js.Any])
         
@@ -12701,7 +12701,7 @@ object Dfareporting {
         
         inline def setEnabledVideoFormatsUndefined: Self = StObject.set(x, "enabledVideoFormats", js.undefined)
         
-        inline def setEnabledVideoFormatsVarargs(value: Double*): Self = StObject.set(x, "enabledVideoFormats", js.Array(value :_*))
+        inline def setEnabledVideoFormatsVarargs(value: Double*): Self = StObject.set(x, "enabledVideoFormats", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -12781,7 +12781,7 @@ object Dfareporting {
         
         inline def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
         
-        inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value :_*))
+        inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value*))
       }
     }
     
@@ -12851,7 +12851,7 @@ object Dfareporting {
         
         inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
         
-        inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+        inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value*))
       }
     }
     
@@ -12952,7 +12952,7 @@ object Dfareporting {
         
         inline def setAvailablePermissionIdsUndefined: Self = StObject.set(x, "availablePermissionIds", js.undefined)
         
-        inline def setAvailablePermissionIdsVarargs(value: String*): Self = StObject.set(x, "availablePermissionIds", js.Array(value :_*))
+        inline def setAvailablePermissionIdsVarargs(value: String*): Self = StObject.set(x, "availablePermissionIds", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -12997,7 +12997,7 @@ object Dfareporting {
         
         inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
         
-        inline def setSubaccountsVarargs(value: Subaccount*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
+        inline def setSubaccountsVarargs(value: Subaccount*): Self = StObject.set(x, "subaccounts", js.Array(value*))
       }
     }
     
@@ -13245,7 +13245,7 @@ object Dfareporting {
         
         inline def setTargetableRemarketingListsUndefined: Self = StObject.set(x, "targetableRemarketingLists", js.undefined)
         
-        inline def setTargetableRemarketingListsVarargs(value: TargetableRemarketingList*): Self = StObject.set(x, "targetableRemarketingLists", js.Array(value :_*))
+        inline def setTargetableRemarketingListsVarargs(value: TargetableRemarketingList*): Self = StObject.set(x, "targetableRemarketingLists", js.Array(value*))
       }
     }
     
@@ -13369,7 +13369,7 @@ object Dfareporting {
         
         inline def setTargetingTemplatesUndefined: Self = StObject.set(x, "targetingTemplates", js.undefined)
         
-        inline def setTargetingTemplatesVarargs(value: TargetingTemplate*): Self = StObject.set(x, "targetingTemplates", js.Array(value :_*))
+        inline def setTargetingTemplatesVarargs(value: TargetingTemplate*): Self = StObject.set(x, "targetingTemplates", js.Array(value*))
       }
     }
     
@@ -13400,37 +13400,37 @@ object Dfareporting {
         
         inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
         
-        inline def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+        inline def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value*))
         
         inline def setConnectionTypes(value: js.Array[ConnectionType]): Self = StObject.set(x, "connectionTypes", value.asInstanceOf[js.Any])
         
         inline def setConnectionTypesUndefined: Self = StObject.set(x, "connectionTypes", js.undefined)
         
-        inline def setConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value :_*))
+        inline def setConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value*))
         
         inline def setMobileCarriers(value: js.Array[MobileCarrier]): Self = StObject.set(x, "mobileCarriers", value.asInstanceOf[js.Any])
         
         inline def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
         
-        inline def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value :_*))
+        inline def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value*))
         
         inline def setOperatingSystemVersions(value: js.Array[OperatingSystemVersion]): Self = StObject.set(x, "operatingSystemVersions", value.asInstanceOf[js.Any])
         
         inline def setOperatingSystemVersionsUndefined: Self = StObject.set(x, "operatingSystemVersions", js.undefined)
         
-        inline def setOperatingSystemVersionsVarargs(value: OperatingSystemVersion*): Self = StObject.set(x, "operatingSystemVersions", js.Array(value :_*))
+        inline def setOperatingSystemVersionsVarargs(value: OperatingSystemVersion*): Self = StObject.set(x, "operatingSystemVersions", js.Array(value*))
         
         inline def setOperatingSystems(value: js.Array[OperatingSystem]): Self = StObject.set(x, "operatingSystems", value.asInstanceOf[js.Any])
         
         inline def setOperatingSystemsUndefined: Self = StObject.set(x, "operatingSystems", js.undefined)
         
-        inline def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "operatingSystems", js.Array(value :_*))
+        inline def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "operatingSystems", js.Array(value*))
         
         inline def setPlatformTypes(value: js.Array[PlatformType]): Self = StObject.set(x, "platformTypes", value.asInstanceOf[js.Any])
         
         inline def setPlatformTypesUndefined: Self = StObject.set(x, "platformTypes", js.undefined)
         
-        inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value :_*))
+        inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value*))
       }
     }
     
@@ -13503,7 +13503,7 @@ object Dfareporting {
         
         inline def setEnabledVideoFormatsUndefined: Self = StObject.set(x, "enabledVideoFormats", js.undefined)
         
-        inline def setEnabledVideoFormatsVarargs(value: Double*): Self = StObject.set(x, "enabledVideoFormats", js.Array(value :_*))
+        inline def setEnabledVideoFormatsVarargs(value: Double*): Self = StObject.set(x, "enabledVideoFormats", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13653,7 +13653,7 @@ object Dfareporting {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: UserProfile*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: UserProfile*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -13716,7 +13716,7 @@ object Dfareporting {
         
         inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
         
-        inline def setPermissionsVarargs(value: UserRolePermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+        inline def setPermissionsVarargs(value: UserRolePermission*): Self = StObject.set(x, "permissions", js.Array(value*))
         
         inline def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
         
@@ -13821,7 +13821,7 @@ object Dfareporting {
         
         inline def setUserRolePermissionGroupsUndefined: Self = StObject.set(x, "userRolePermissionGroups", js.undefined)
         
-        inline def setUserRolePermissionGroupsVarargs(value: UserRolePermissionGroup*): Self = StObject.set(x, "userRolePermissionGroups", js.Array(value :_*))
+        inline def setUserRolePermissionGroupsVarargs(value: UserRolePermissionGroup*): Self = StObject.set(x, "userRolePermissionGroups", js.Array(value*))
       }
     }
     
@@ -13848,7 +13848,7 @@ object Dfareporting {
         
         inline def setUserRolePermissionsUndefined: Self = StObject.set(x, "userRolePermissions", js.undefined)
         
-        inline def setUserRolePermissionsVarargs(value: UserRolePermission*): Self = StObject.set(x, "userRolePermissions", js.Array(value :_*))
+        inline def setUserRolePermissionsVarargs(value: UserRolePermission*): Self = StObject.set(x, "userRolePermissions", js.Array(value*))
       }
     }
     
@@ -13881,7 +13881,7 @@ object Dfareporting {
         
         inline def setUserRolesUndefined: Self = StObject.set(x, "userRoles", js.undefined)
         
-        inline def setUserRolesVarargs(value: UserRole*): Self = StObject.set(x, "userRoles", js.Array(value :_*))
+        inline def setUserRolesVarargs(value: UserRole*): Self = StObject.set(x, "userRoles", js.Array(value*))
       }
     }
     
@@ -13951,7 +13951,7 @@ object Dfareporting {
         
         inline def setVideoFormatsUndefined: Self = StObject.set(x, "videoFormats", js.undefined)
         
-        inline def setVideoFormatsVarargs(value: VideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value :_*))
+        inline def setVideoFormatsVarargs(value: VideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value*))
       }
     }
     

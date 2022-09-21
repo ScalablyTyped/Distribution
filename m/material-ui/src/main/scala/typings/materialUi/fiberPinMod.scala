@@ -10,10 +10,10 @@ object fiberPinMod {
   
   @JSImport("material-ui/svg-icons/av/fiber-pin", JSImport.Default)
   @js.native
-  class default () extends AvFiberPin
+  open class default () extends AvFiberPin
   
   @JSImport("material-ui/svg-icons/av/fiber-pin", "AvFiberPin")
   @js.native
-  class AvFiberPin ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvFiberPin ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

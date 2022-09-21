@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty network.
   */
-class LayoutNetwork () extends StObject {
+open class LayoutNetwork () extends StObject {
   
   /**
     * Adds a LayoutEdge to the network.

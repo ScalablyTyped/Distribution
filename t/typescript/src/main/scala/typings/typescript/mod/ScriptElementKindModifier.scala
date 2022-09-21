@@ -26,10 +26,34 @@ object ScriptElementKindModifier extends StObject {
   /* "declare" */ val ambientModifier: typings.typescript.mod.ScriptElementKindModifier.ambientModifier & java.lang.String = js.native
   
   @js.native
+  sealed trait cjsModifier
+    extends StObject
+       with ScriptElementKindModifier
+  /* ".cjs" */ val cjsModifier: typings.typescript.mod.ScriptElementKindModifier.cjsModifier & java.lang.String = js.native
+  
+  @js.native
+  sealed trait ctsModifier
+    extends StObject
+       with ScriptElementKindModifier
+  /* ".cts" */ val ctsModifier: typings.typescript.mod.ScriptElementKindModifier.ctsModifier & java.lang.String = js.native
+  
+  @js.native
+  sealed trait dctsModifier
+    extends StObject
+       with ScriptElementKindModifier
+  /* ".d.cts" */ val dctsModifier: typings.typescript.mod.ScriptElementKindModifier.dctsModifier & java.lang.String = js.native
+  
+  @js.native
   sealed trait deprecatedModifier
     extends StObject
        with ScriptElementKindModifier
   /* "deprecated" */ val deprecatedModifier: typings.typescript.mod.ScriptElementKindModifier.deprecatedModifier & java.lang.String = js.native
+  
+  @js.native
+  sealed trait dmtsModifier
+    extends StObject
+       with ScriptElementKindModifier
+  /* ".d.mts" */ val dmtsModifier: typings.typescript.mod.ScriptElementKindModifier.dmtsModifier & java.lang.String = js.native
   
   @js.native
   sealed trait dtsModifier
@@ -60,6 +84,18 @@ object ScriptElementKindModifier extends StObject {
     extends StObject
        with ScriptElementKindModifier
   /* ".jsx" */ val jsxModifier: typings.typescript.mod.ScriptElementKindModifier.jsxModifier & java.lang.String = js.native
+  
+  @js.native
+  sealed trait mjsModifier
+    extends StObject
+       with ScriptElementKindModifier
+  /* ".mjs" */ val mjsModifier: typings.typescript.mod.ScriptElementKindModifier.mjsModifier & java.lang.String = js.native
+  
+  @js.native
+  sealed trait mtsModifier
+    extends StObject
+       with ScriptElementKindModifier
+  /* ".mts" */ val mtsModifier: typings.typescript.mod.ScriptElementKindModifier.mtsModifier & java.lang.String = js.native
   
   @js.native
   sealed trait none

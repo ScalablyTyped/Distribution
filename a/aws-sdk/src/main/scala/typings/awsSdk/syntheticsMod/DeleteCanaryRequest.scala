@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteCanaryRequest extends StObject {
   
   /**
+    * Specifies whether to also delete the Lambda functions and layers used by this canary. The default is false. Type: Boolean
+    */
+  var DeleteLambda: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The name of the canary that you want to delete. To find the names of your canaries, use DescribeCanaries.
     */
   var Name: CanaryName
@@ -19,6 +24,10 @@ object DeleteCanaryRequest {
   }
   
   extension [Self <: DeleteCanaryRequest](x: Self) {
+    
+    inline def setDeleteLambda(value: Boolean): Self = StObject.set(x, "DeleteLambda", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteLambdaUndefined: Self = StObject.set(x, "DeleteLambda", js.undefined)
     
     inline def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

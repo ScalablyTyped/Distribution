@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Text")
 @js.native
-class Text protected ()
-  extends Component[TextProps, js.Object, js.Any] {
+open class Text protected ()
+  extends Component[TextProps, js.Object, Any] {
   def this(props: TextProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TextProps, context: js.Any) = this()
+  def this(props: TextProps, context: Any) = this()
 }

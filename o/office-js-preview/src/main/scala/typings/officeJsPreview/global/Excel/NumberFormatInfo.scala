@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
   *
+  * @remarks
   * [Api set: ExcelApi 1.11]
   */
 @JSGlobal("Excel.NumberFormatInfo")
 @js.native
-class NumberFormatInfo ()
+open class NumberFormatInfo ()
   extends StObject
      with typings.officeJsPreview.Excel.NumberFormatInfo {
   

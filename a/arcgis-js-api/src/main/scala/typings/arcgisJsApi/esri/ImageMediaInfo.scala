@@ -21,6 +21,8 @@ trait ImageMediaInfo
   /**
     * The type of popup element.
     *
+    * @default image
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#type)
     */
   val `type`: String = js.native

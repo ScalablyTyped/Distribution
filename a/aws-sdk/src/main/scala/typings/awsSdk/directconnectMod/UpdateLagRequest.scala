@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateLagRequest extends StObject {
   
   /**
+    * The LAG MAC Security (MACsec) encryption mode. Amazon Web Services applies the value to all connections which are part of the LAG.
+    */
+  var encryptionMode: js.UndefOr[EncryptionMode] = js.undefined
+  
+  /**
     * The ID of the LAG.
     */
   var lagId: LagId
@@ -29,6 +34,10 @@ object UpdateLagRequest {
   }
   
   extension [Self <: UpdateLagRequest](x: Self) {
+    
+    inline def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "encryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionModeUndefined: Self = StObject.set(x, "encryptionMode", js.undefined)
     
     inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     

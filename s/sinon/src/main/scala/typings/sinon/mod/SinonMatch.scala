@@ -1,6 +1,5 @@
 package typings.sinon.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +10,12 @@ trait SinonMatch extends StObject {
   /**
     * See custom matchers.
     */
-  def apply(callback: js.Function1[/* value */ js.Any, Boolean]): SinonMatcher = js.native
-  def apply(callback: js.Function1[/* value */ js.Any, Boolean], message: String): SinonMatcher = js.native
+  def apply(callback: js.Function1[/* value */ Any, Boolean]): SinonMatcher = js.native
+  def apply(callback: js.Function1[/* value */ Any, Boolean], message: String): SinonMatcher = js.native
   /**
     * Requires the value to be a string and match the given regular expression.
     */
-  def apply(expr: RegExp): SinonMatcher = js.native
+  def apply(expr: js.RegExp): SinonMatcher = js.native
   /**
     * Requires the value to be not null or undefined and have at least the same properties as expectation.
     * This supports nested matchers.
@@ -80,7 +79,7 @@ trait SinonMatch extends StObject {
     * @param expect
     */
   def has(property: String): SinonMatcher = js.native
-  def has(property: String, expect: js.Any): SinonMatcher = js.native
+  def has(property: String, expect: Any): SinonMatcher = js.native
   
   /**
     * Requires the value to define the given propertyPath. Dot (prop.prop) and bracket (prop[0]) notations are supported as in Lodash.get.
@@ -89,7 +88,7 @@ trait SinonMatch extends StObject {
     * The expectation can be another matcher.
     */
   def hasNested(path: String): SinonMatcher = js.native
-  def hasNested(path: String, expect: js.Any): SinonMatcher = js.native
+  def hasNested(path: String, expect: Any): SinonMatcher = js.native
   
   /**
     * Same as sinon.match.has but the property must be defined by the value itself. Inherited properties are ignored.
@@ -97,17 +96,17 @@ trait SinonMatch extends StObject {
     * @param expect
     */
   def hasOwn(property: String): SinonMatcher = js.native
-  def hasOwn(property: String, expect: js.Any): SinonMatcher = js.native
+  def hasOwn(property: String, expect: Any): SinonMatcher = js.native
   
   /**
     * Requires the value to be in the specified array.
     */
-  def in(allowed: js.Array[js.Any]): SinonMatcher = js.native
+  def in(allowed: js.Array[Any]): SinonMatcher = js.native
   
   /**
     * Requires the value to be an instance of the given type.
     */
-  def instanceOf(`type`: js.Any): SinonMatcher = js.native
+  def instanceOf(`type`: Any): SinonMatcher = js.native
   
   /**
     * Requires the value to be a Map.
@@ -132,7 +131,7 @@ trait SinonMatch extends StObject {
   /**
     * Requires the value to strictly equal ref.
     */
-  def same(obj: js.Any): SinonMatcher = js.native
+  def same(obj: Any): SinonMatcher = js.native
   
   /**
     * Requires the value to be a Set.

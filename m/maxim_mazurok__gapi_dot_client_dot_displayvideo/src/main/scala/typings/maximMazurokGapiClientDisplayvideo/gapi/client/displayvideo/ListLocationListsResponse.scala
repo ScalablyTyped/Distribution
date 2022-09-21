@@ -25,7 +25,7 @@ object ListLocationListsResponse {
     
     inline def setLocationListsUndefined: Self = StObject.set(x, "locationLists", js.undefined)
     
-    inline def setLocationListsVarargs(value: LocationList*): Self = StObject.set(x, "locationLists", js.Array(value :_*))
+    inline def setLocationListsVarargs(value: LocationList*): Self = StObject.set(x, "locationLists", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

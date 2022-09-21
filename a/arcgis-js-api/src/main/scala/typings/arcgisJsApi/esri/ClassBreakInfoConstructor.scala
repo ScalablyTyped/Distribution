@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClassBreakInfoConstructor
   extends StObject
-     with Instantiable0[ClassBreakInfo]
+     with /**
+  * Defines a class break for a [ClassBreaksRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html)
+  */
+Instantiable0[ClassBreakInfo]
      with Instantiable1[/* properties */ ClassBreakInfoProperties, ClassBreakInfo] {
   
-  def fromJSON(json: js.Any): ClassBreakInfo = js.native
+  def fromJSON(json: Any): ClassBreakInfo = js.native
 }

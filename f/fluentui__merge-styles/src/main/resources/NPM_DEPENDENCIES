@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/merge-styles" : "8.5.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/merge-styles" : "8.5.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

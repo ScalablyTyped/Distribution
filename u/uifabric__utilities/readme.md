@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__utilities
 
-Typings are for version 7.33.2
+Typings are for version 7.38.0
 
 ## Library description:
 Fluent UI React utilities for building components.
@@ -10,10 +10,10 @@ Fluent UI React utilities for building components.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/utilities |
 | Keywords           | - |
-| # releases         | 178 |
-| # dependents       | 48 |
-| # downloads        | 5171500 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 344548.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

@@ -8,10 +8,10 @@ object datePickerDialogMod {
   
   @JSImport("material-ui/DatePicker/DatePickerDialog", JSImport.Default)
   @js.native
-  class default () extends DatePickerDialog
+  open class default () extends DatePickerDialog
   
   @JSImport("material-ui/DatePicker/DatePickerDialog", "DatePickerDialog")
   @js.native
-  class DatePickerDialog ()
+  open class DatePickerDialog ()
     extends typings.materialUi.MaterialUI.DatePicker.DatePickerDialog
 }

@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * User Role Permission Group List Response
-  */
 trait SchemaUserRolePermissionGroupsListResponse extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#userRolePermissionGroupsListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#userRolePermissionGroupsListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * User role permission group collection.
@@ -31,12 +27,14 @@ object SchemaUserRolePermissionGroupsListResponse {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setUserRolePermissionGroups(value: js.Array[SchemaUserRolePermissionGroup]): Self = StObject.set(x, "userRolePermissionGroups", value.asInstanceOf[js.Any])
     
     inline def setUserRolePermissionGroupsUndefined: Self = StObject.set(x, "userRolePermissionGroups", js.undefined)
     
-    inline def setUserRolePermissionGroupsVarargs(value: SchemaUserRolePermissionGroup*): Self = StObject.set(x, "userRolePermissionGroups", js.Array(value :_*))
+    inline def setUserRolePermissionGroupsVarargs(value: SchemaUserRolePermissionGroup*): Self = StObject.set(x, "userRolePermissionGroups", js.Array(value*))
   }
 }

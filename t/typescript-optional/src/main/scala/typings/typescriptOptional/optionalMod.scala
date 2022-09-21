@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object optionalMod {
   
-  @JSImport("typescript-optional/dist/optional", "Optional")
+  @JSImport("typescript-optional/dist/esm/optional", "EmptyOptional")
+  @js.native
+  open class EmptyOptional[T] () extends Optional[T]
+  
+  @JSImport("typescript-optional/dist/esm/optional", "Optional")
   @js.native
   abstract class Optional[T] () extends StObject {
     
@@ -43,14 +47,14 @@ object optionalMod {
     
     def orUndefined(): js.UndefOr[T] = js.native
     
-    def toJSON(key: String): js.Any = js.native
+    def toJSON(key: String): Any = js.native
     
     def toOption(): Option[T] = js.native
   }
   /* static members */
   object Optional {
     
-    @JSImport("typescript-optional/dist/optional", "Optional")
+    @JSImport("typescript-optional/dist/esm/optional", "Optional")
     @js.native
     val ^ : js.Any = js.native
     
@@ -64,5 +68,13 @@ object optionalMod {
     
     inline def ofNullable[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")().asInstanceOf[Optional[T]]
     inline def ofNullable[T](nullable: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+  }
+  
+  @JSImport("typescript-optional/dist/esm/optional", "PresentOptional")
+  @js.native
+  open class PresentOptional[T] protected () extends Optional[T] {
+    def this(value: T) = this()
+    
+    var payload: T = js.native
   }
 }

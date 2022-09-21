@@ -8,7 +8,7 @@ trait FunctionComponentElement[P]
   extends StObject
      with ReactElement[P, FunctionComponent[P]] {
   
-  var ref: js.UndefOr[js.Any] = js.undefined
+  var ref: js.UndefOr[Any] = js.undefined
 }
 object FunctionComponentElement {
   
@@ -20,7 +20,7 @@ object FunctionComponentElement {
   
   extension [Self <: FunctionComponentElement[?], P](x: Self & FunctionComponentElement[P]) {
     
-    inline def setRef(value: js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: scala.Nothing | Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }

@@ -2,6 +2,7 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientGames.anon.ApplicationId
+import typings.maximMazurokGapiClientGames.anon.EndPointType
 import typings.maximMazurokGapiClientGames.anon.Oauthtoken
 import typings.maximMazurokGapiClientGames.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
@@ -17,6 +18,10 @@ trait ApplicationsResource extends StObject {
     */
   def get(): Request[Application] = js.native
   def get(request: ApplicationId): Request[Application] = js.native
+  
+  /** Returns a URL for the requested end point type. */
+  def getEndPoint(): Request[EndPoint] = js.native
+  def getEndPoint(request: EndPointType): Request[EndPoint] = js.native
   
   /** Indicate that the currently authenticated user is playing your application. */
   def played(): Request[Unit] = js.native

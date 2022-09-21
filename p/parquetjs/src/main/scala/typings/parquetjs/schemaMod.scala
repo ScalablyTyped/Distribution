@@ -11,7 +11,7 @@ object schemaMod {
   
   @JSImport("parquetjs/lib/schema", "ParquetSchema")
   @js.native
-  class ParquetSchema protected () extends StObject {
+  open class ParquetSchema protected () extends StObject {
     def this(schema: SchemaInterface) = this()
     
     var fieldList: js.Array[FieldInterface] = js.native

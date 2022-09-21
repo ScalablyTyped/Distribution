@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.FieldGroupConfig")
 @js.native
 /**
-  * Configuration options for displaying a group of fields within the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
+  * Configuration options for configuring grouped fields.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html)
   */
-class FieldGroupConfigCls ()
+open class FieldGroupConfigCls ()
   extends StObject
      with typings.arcgisJsApi.esri.FieldGroupConfig {
   def this(properties: FieldGroupConfigProperties) = this()

@@ -10,10 +10,10 @@ High-level request & response object. Inspired by Koa's context
 | ------------------ | :-------------: |
 | Full name          | http-context |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 350986 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 355315.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/lapwinglabs/http-context#readme)

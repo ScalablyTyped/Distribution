@@ -10,10 +10,10 @@ Finds the first parent directory that contains a given file or directory.
 | ------------------ | :-------------: |
 | Full name          | find-parent-dir |
 | Keywords           | find, parent, dir, root, resolve, walk |
-| # releases         | 0 |
-| # dependents       | 119 |
-| # downloads        | 47157912 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3873546.6666666665 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/thlorenz/find-parent-dir)

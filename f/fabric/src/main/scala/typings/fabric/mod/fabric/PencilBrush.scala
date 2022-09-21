@@ -6,5 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.PencilBrush")
 @js.native
-class PencilBrush ()
-  extends typings.fabric.fabricImplMod.PencilBrush
+open class PencilBrush protected ()
+  extends typings.fabric.fabricImplMod.PencilBrush {
+  /**
+    * Constructor
+    * @param {Canvas} canvas
+    */
+  def this(canvas: typings.fabric.fabricImplMod.Canvas) = this()
+}

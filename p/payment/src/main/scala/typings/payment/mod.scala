@@ -11,6 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Add a new card type to the card array.
+    */
+  inline def addToCardArray(cardType: CardType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addToCardArray")(cardType.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("payment", "fns")
   @js.native
   def fns: Fns = js.native
@@ -42,9 +47,73 @@ object mod {
   inline def formatCardNumber(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardNumber")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   /**
+    * Returns the array of card types.
+    */
+  inline def getCardArray(): js.Array[CardType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCardArray")().asInstanceOf[js.Array[CardType]]
+  
+  /**
+    * Remove a card type from the card array.
+    */
+  inline def removeFromCardArray(cardName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCardArray")(cardName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
     * General numeric input restriction.
     */
   inline def restrictNumeric(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictNumeric")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
+  
+  /**
+    * Overrides the array of card types with a new array.
+    */
+  inline def setCardArray(cardTypes: js.Array[CardType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCardArray")(cardTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  trait CardType extends StObject {
+    
+    var cvcLength: js.Array[Double]
+    
+    var format: js.RegExp
+    
+    var length: js.Array[Double]
+    
+    var luhn: Boolean
+    
+    var pattern: js.RegExp
+    
+    var `type`: String
+  }
+  object CardType {
+    
+    inline def apply(
+      cvcLength: js.Array[Double],
+      format: js.RegExp,
+      length: js.Array[Double],
+      luhn: Boolean,
+      pattern: js.RegExp,
+      `type`: String
+    ): CardType = {
+      val __obj = js.Dynamic.literal(cvcLength = cvcLength.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], luhn = luhn.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CardType]
+    }
+    
+    extension [Self <: CardType](x: Self) {
+      
+      inline def setCvcLength(value: js.Array[Double]): Self = StObject.set(x, "cvcLength", value.asInstanceOf[js.Any])
+      
+      inline def setCvcLengthVarargs(value: Double*): Self = StObject.set(x, "cvcLength", js.Array(value*))
+      
+      inline def setFormat(value: js.RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setLength(value: js.Array[Double]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      
+      inline def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value*))
+      
+      inline def setLuhn(value: Boolean): Self = StObject.set(x, "luhn", value.asInstanceOf[js.Any])
+      
+      inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait Fns extends StObject {

@@ -9,7 +9,7 @@ trait ColumnUnfixingRefusedEventUIParam extends StObject {
   /**
     * Gets the columnKey or the columnIndex.
     */
-  var columnIdentifier: js.UndefOr[js.Any] = js.undefined
+  var columnIdentifier: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the error message describing the reason fixing has failed.
@@ -24,7 +24,7 @@ trait ColumnUnfixingRefusedEventUIParam extends StObject {
   /**
     * Gets a reference to the widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ColumnUnfixingRefusedEventUIParam {
   
@@ -35,7 +35,7 @@ object ColumnUnfixingRefusedEventUIParam {
   
   extension [Self <: ColumnUnfixingRefusedEventUIParam](x: Self) {
     
-    inline def setColumnIdentifier(value: js.Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
+    inline def setColumnIdentifier(value: Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
     
     inline def setColumnIdentifierUndefined: Self = StObject.set(x, "columnIdentifier", js.undefined)
     
@@ -47,7 +47,7 @@ object ColumnUnfixingRefusedEventUIParam {
     
     inline def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

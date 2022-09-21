@@ -8,5 +8,5 @@ object getEncryptionConfigMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/GetEncryptionConfig", "GetEncryptionConfig")
   @js.native
-  val GetEncryptionConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetEncryptionConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for a list of leaderboard objects.
-  */
 trait SchemaLeaderboardListResponse extends StObject {
   
   /**
@@ -15,15 +12,14 @@ trait SchemaLeaderboardListResponse extends StObject {
   var items: js.UndefOr[js.Array[SchemaLeaderboard]] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#leaderboardListResponse.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#leaderboardListResponse`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Token corresponding to the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLeaderboardListResponse {
   
@@ -38,13 +34,17 @@ object SchemaLeaderboardListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaLeaderboard*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaLeaderboard*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

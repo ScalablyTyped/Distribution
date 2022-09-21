@@ -7,60 +7,100 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ContentControlType extends StObject
 /**
-  *
   * Specifies supported content control types and subtypes.
   *
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.ContentControlType")
 @js.native
 object ContentControlType extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait buildingBlockGallery
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait checkBox
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait comboBox
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait datePicker
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait dropDownList
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait picture
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait plainText
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait plainTextInline
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait plainTextParagraph
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait repeatingSection
     extends StObject
@@ -68,18 +108,27 @@ object ContentControlType extends StObject {
   
   /**
     * Identifies a rich text content control.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait richText
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait richTextInline
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait richTextParagraphs
     extends StObject
@@ -87,7 +136,8 @@ object ContentControlType extends StObject {
   
   /**
     * Contains a whole table.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait richTextTable
@@ -96,7 +146,8 @@ object ContentControlType extends StObject {
   
   /**
     * Contains a whole cell.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait richTextTableCell
@@ -105,13 +156,18 @@ object ContentControlType extends StObject {
   
   /**
     * Contains a whole row.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait richTextTableRow
     extends StObject
        with ContentControlType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
   sealed trait unknown
     extends StObject

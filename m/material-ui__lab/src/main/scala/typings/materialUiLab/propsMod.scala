@@ -1,9 +1,12 @@
 package typings.materialUiLab
 
+import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseTypeMap
+import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiLab.alertAlertMod.AlertProps
 import typings.materialUiLab.alertTitleAlertTitleMod.AlertTitleProps
 import typings.materialUiLab.autocompleteAutocompleteMod.AutocompleteProps
 import typings.materialUiLab.avatarGroupAvatarGroupMod.AvatarGroupProps
+import typings.materialUiLab.materialUiLabStrings.button
 import typings.materialUiLab.materialUiLabStrings.div
 import typings.materialUiLab.paginationItemPaginationItemMod.PaginationItemProps
 import typings.materialUiLab.paginationPaginationMod.PaginationProps
@@ -30,7 +33,7 @@ object propsMod {
     
     var MuiAlertTitle: AlertTitleProps
     
-    var MuiAutocomplete: AutocompleteProps[js.Any, js.Any, js.Any, js.Any]
+    var MuiAutocomplete: AutocompleteProps[Any, Any, Any, Any]
     
     var MuiAvatarGroup: AvatarGroupProps
     
@@ -48,15 +51,12 @@ object propsMod {
     
     var MuiSpeedDialIcon: SpeedDialIconProps
     
-    var MuiTabList: TabListProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsTypeMap * / any['defaultComponent'] */ js.Any, 
-        js.Object
-      ]
+    var MuiTabList: TabListProps[ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]], js.Object]
     
     var MuiTabPanel: TabPanelProps
     
     var MuiToggleButton: ToggleButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.@material-ui/lab/ToggleButton/ToggleButton.ToggleButtonTypeMap<{}, 'button'>['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.DefaultComponent['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
@@ -71,7 +71,7 @@ object propsMod {
     inline def apply(
       MuiAlert: AlertProps,
       MuiAlertTitle: AlertTitleProps,
-      MuiAutocomplete: AutocompleteProps[js.Any, js.Any, js.Any, js.Any],
+      MuiAutocomplete: AutocompleteProps[Any, Any, Any, Any],
       MuiAvatarGroup: AvatarGroupProps,
       MuiPagination: PaginationProps,
       MuiPaginationItem: PaginationItemProps[div, js.Object],
@@ -80,13 +80,10 @@ object propsMod {
       MuiSpeedDial: SpeedDialProps,
       MuiSpeedDialAction: SpeedDialActionProps,
       MuiSpeedDialIcon: SpeedDialIconProps,
-      MuiTabList: TabListProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsTypeMap * / any['defaultComponent'] */ js.Any, 
-          js.Object
-        ],
+      MuiTabList: TabListProps[ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]], js.Object],
       MuiTabPanel: TabPanelProps,
       MuiToggleButton: ToggleButtonProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.@material-ui/lab/ToggleButton/ToggleButton.ToggleButtonTypeMap<{}, 'button'>['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.DefaultComponent['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiToggleButtonGroup: ToggleButtonGroupProps,
@@ -103,7 +100,7 @@ object propsMod {
       
       inline def setMuiAlertTitle(value: AlertTitleProps): Self = StObject.set(x, "MuiAlertTitle", value.asInstanceOf[js.Any])
       
-      inline def setMuiAutocomplete(value: AutocompleteProps[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "MuiAutocomplete", value.asInstanceOf[js.Any])
+      inline def setMuiAutocomplete(value: AutocompleteProps[Any, Any, Any, Any]): Self = StObject.set(x, "MuiAutocomplete", value.asInstanceOf[js.Any])
       
       inline def setMuiAvatarGroup(value: AvatarGroupProps): Self = StObject.set(x, "MuiAvatarGroup", value.asInstanceOf[js.Any])
       
@@ -121,18 +118,13 @@ object propsMod {
       
       inline def setMuiSpeedDialIcon(value: SpeedDialIconProps): Self = StObject.set(x, "MuiSpeedDialIcon", value.asInstanceOf[js.Any])
       
-      inline def setMuiTabList(
-        value: TabListProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsTypeMap * / any['defaultComponent'] */ js.Any, 
-              js.Object
-            ]
-      ): Self = StObject.set(x, "MuiTabList", value.asInstanceOf[js.Any])
+      inline def setMuiTabList(value: TabListProps[ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]], js.Object]): Self = StObject.set(x, "MuiTabList", value.asInstanceOf[js.Any])
       
       inline def setMuiTabPanel(value: TabPanelProps): Self = StObject.set(x, "MuiTabPanel", value.asInstanceOf[js.Any])
       
       inline def setMuiToggleButton(
         value: ToggleButtonProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.@material-ui/lab/ToggleButton/ToggleButton.ToggleButtonTypeMap<{}, 'button'>['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.DefaultComponent['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiToggleButton", value.asInstanceOf[js.Any])

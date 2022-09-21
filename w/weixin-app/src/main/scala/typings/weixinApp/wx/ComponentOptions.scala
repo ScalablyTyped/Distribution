@@ -84,7 +84,7 @@ trait ComponentOptions[Instance /* <: Component[Data, Props, Behaviors] */, Data
   /**
     * 组件间关系定义，参见 [组件间关系](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/relations.html)
     */
-  var relations: js.UndefOr[StringDictionary[ComponentRelation[js.Any, js.Any]]] = js.undefined
+  var relations: js.UndefOr[StringDictionary[ComponentRelation[Any, Any]]] = js.undefined
 }
 object ComponentOptions {
   
@@ -119,7 +119,7 @@ object ComponentOptions {
     
     inline def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
     
-    inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
+    inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value*))
     
     inline def setLifetimes(value: PartialLifetimes): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
     
@@ -153,7 +153,7 @@ object ComponentOptions {
     
     inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
-    inline def setRelations(value: StringDictionary[ComponentRelation[js.Any, js.Any]]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: StringDictionary[ComponentRelation[Any, Any]]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
     inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
   }

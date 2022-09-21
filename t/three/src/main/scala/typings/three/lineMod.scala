@@ -2,7 +2,7 @@ package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.geometryMod.Geometry
+import typings.three.eventDispatcherMod.Event
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
@@ -16,14 +16,10 @@ object lineMod {
   
   @JSImport("three/src/objects/Line", "Line")
   @js.native
-  class Line[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Object3D {
+  open class Line[TGeometry /* <: BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Object3D[Event] {
     def this(geometry: TGeometry) = this()
     def this(geometry: TGeometry, material: TMaterial) = this()
     def this(geometry: Unit, material: TMaterial) = this()
-    def this(geometry: TGeometry, material: TMaterial, mode: Double) = this()
-    def this(geometry: TGeometry, material: Unit, mode: Double) = this()
-    def this(geometry: Unit, material: TMaterial, mode: Double) = this()
-    def this(geometry: Unit, material: Unit, mode: Double) = this()
     
     def computeLineDistances(): this.type = js.native
     

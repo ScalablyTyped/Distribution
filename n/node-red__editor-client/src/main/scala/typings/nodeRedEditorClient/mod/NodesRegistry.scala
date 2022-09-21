@@ -63,8 +63,8 @@ object NodesRegistry {
     getNodeSetForType: String => js.Object,
     getNodeType: String => NodeDef[NodeProperties, Unit, NodeProperties],
     getNodeTypes: () => js.Array[String],
-    registerNodeType: (String, NodeDef[js.Any, js.Any, js.Any]) => Unit,
-    removeNodeSet: js.Any => js.Any,
+    registerNodeType: (String, NodeDef[Any, Any, Any]) => Unit,
+    removeNodeSet: Any => Any,
     removeNodeType: String => Unit,
     setIconSets: Record[String, js.Array[String]] => Unit,
     setModulePendingUpdated: (String, String) => Unit,
@@ -98,9 +98,9 @@ object NodesRegistry {
     
     inline def setGetNodeTypes(value: () => js.Array[String]): Self = StObject.set(x, "getNodeTypes", js.Any.fromFunction0(value))
     
-    inline def setRegisterNodeType(value: (String, NodeDef[js.Any, js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerNodeType", js.Any.fromFunction2(value))
+    inline def setRegisterNodeType(value: (String, NodeDef[Any, Any, Any]) => Unit): Self = StObject.set(x, "registerNodeType", js.Any.fromFunction2(value))
     
-    inline def setRemoveNodeSet(value: js.Any => js.Any): Self = StObject.set(x, "removeNodeSet", js.Any.fromFunction1(value))
+    inline def setRemoveNodeSet(value: Any => Any): Self = StObject.set(x, "removeNodeSet", js.Any.fromFunction1(value))
     
     inline def setRemoveNodeType(value: String => Unit): Self = StObject.set(x, "removeNodeType", js.Any.fromFunction1(value))
     

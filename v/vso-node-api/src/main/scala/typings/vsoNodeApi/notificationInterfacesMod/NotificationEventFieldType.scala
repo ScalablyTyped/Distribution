@@ -44,11 +44,11 @@ object NotificationEventFieldType {
     
     inline def setOperatorConstraints(value: js.Array[OperatorConstraint]): Self = StObject.set(x, "operatorConstraints", value.asInstanceOf[js.Any])
     
-    inline def setOperatorConstraintsVarargs(value: OperatorConstraint*): Self = StObject.set(x, "operatorConstraints", js.Array(value :_*))
+    inline def setOperatorConstraintsVarargs(value: OperatorConstraint*): Self = StObject.set(x, "operatorConstraints", js.Array(value*))
     
     inline def setOperators(value: js.Array[NotificationEventFieldOperator]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
-    inline def setOperatorsVarargs(value: NotificationEventFieldOperator*): Self = StObject.set(x, "operators", js.Array(value :_*))
+    inline def setOperatorsVarargs(value: NotificationEventFieldOperator*): Self = StObject.set(x, "operators", js.Array(value*))
     
     inline def setSubscriptionFieldType(value: SubscriptionFieldType): Self = StObject.set(x, "subscriptionFieldType", value.asInstanceOf[js.Any])
     

@@ -1,17 +1,16 @@
 package typings.nodeRedRuntime.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.express.mod.Express
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
+import typings.expressServeStaticCore.mod.Application
 import typings.node.eventsMod.EventEmitter
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import typings.node.httpsMod.Server
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.nodeRedUtil.mod.I18n
 import typings.nodeRedUtil.mod.Log
 import typings.nodeRedUtil.mod.Util
-import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +20,7 @@ trait InternalRuntimeAPI extends StObject {
   
   val adminApi: js.Object
   
-  /**
-    * Express instance itself is a request handler, which could be invoked without
-    * third argument.
-    */
-  def adminApp(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-  def adminApp(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-  def adminApp(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-  def adminApp(req: IncomingMessage, res: ServerResponse): js.Any
+  def adminApp(): Application
   @JSName("adminApp")
   val adminApp_Original: Express
   
@@ -44,20 +36,19 @@ trait InternalRuntimeAPI extends StObject {
   
   val log: Log
   
-  /**
-    * Express instance itself is a request handler, which could be invoked without
-    * third argument.
-    */
-  def nodeApp(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-  def nodeApp(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-  def nodeApp(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-  def nodeApp(req: IncomingMessage, res: ServerResponse): js.Any
+  def nodeApp(): Application
   @JSName("nodeApp")
   val nodeApp_Original: Express
   
   var nodes: InternalNodesModule
   
-  val server: Server
+  val server: Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[typings.node.httpMod.IncomingMessage]
+    ]
+  ]
   
   var settings: PersistentSettings
   
@@ -80,7 +71,13 @@ object InternalRuntimeAPI {
     log: Log,
     nodeApp: Express,
     nodes: InternalNodesModule,
-    server: Server,
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ],
     settings: PersistentSettings,
     storage: StorageModule,
     util: Util,
@@ -112,7 +109,15 @@ object InternalRuntimeAPI {
     
     inline def setNodes(value: InternalNodesModule): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(
+      value: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setSettings(value: PersistentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

@@ -12,21 +12,25 @@ trait AsyncGeneratorFunction
   * Creates a new AsyncGenerator object.
   * @param args A list of arguments the function accepts.
   */
-Instantiable1[/* args (repeated) */ js.Any, AsyncGenerator[js.Any, js.Any, js.Any]] {
+/* standard es2018.asyncgenerator */
+Instantiable1[/* args (repeated) */ Any, AsyncGenerator[Any, Any, Any]] {
   
   /**
     * Creates a new AsyncGenerator object.
     * @param args A list of arguments the function accepts.
     */
-  def apply(args: js.Any*): AsyncGenerator[js.Any, js.Any, js.Any] = js.native
+  /* standard es2018.asyncgenerator */
+  def apply(args: Any*): AsyncGenerator[Any, Any, Any] = js.native
   
   /**
     * The length of the arguments.
     */
+  /* standard es2018.asyncgenerator */
   val length: Double = js.native
   
   /**
     * Returns the name of the function.
     */
+  /* standard es2018.asyncgenerator */
   val name: java.lang.String = js.native
 }

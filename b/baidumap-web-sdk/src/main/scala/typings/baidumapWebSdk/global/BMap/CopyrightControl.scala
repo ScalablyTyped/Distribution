@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.CopyrightControl")
 @js.native
-class CopyrightControl ()
+open class CopyrightControl ()
   extends StObject
      with typings.baidumapWebSdk.BMap.CopyrightControl {
   def this(opts: CopyrightControlOptions) = this()

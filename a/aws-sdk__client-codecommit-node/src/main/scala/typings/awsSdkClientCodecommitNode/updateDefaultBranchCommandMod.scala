@@ -16,7 +16,7 @@ object updateDefaultBranchCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/UpdateDefaultBranchCommand", "UpdateDefaultBranchCommand")
   @js.native
-  class UpdateDefaultBranchCommand protected ()
+  open class UpdateDefaultBranchCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateDefaultBranchCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateDefaultBranchInput, UpdateDefaultBranchOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: CodeCommitResolvedConfiguration
     ): Handler[UpdateDefaultBranchInput, UpdateDefaultBranchOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CodeCommitResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateDefaultBranchInput, UpdateDefaultBranchOutput] = js.native
   }
 }

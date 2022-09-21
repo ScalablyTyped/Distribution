@@ -93,6 +93,9 @@ trait UrlCreationOptions extends StObject {
     *    }
     *  }
     * ```
+    *
+    * A value of `null` or `undefined` indicates that the navigation commands should be applied
+    * relative to the root.
     */
   var relativeTo: js.UndefOr[ActivatedRoute | Null] = js.undefined
 }

@@ -1,126 +1,113 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.openlayers.mod.^
+import typings.openlayers.mod.events.Event
+import typings.openlayers.mod.geom.Geometry
+import typings.openlayers.mod.geom.SimpleGeometry
+import typings.openlayers.mod.layer.Layer
+import typings.openlayers.mod.olx.FrameState
+import typings.openlayers.mod.proj.Projection
+import typings.openlayers.mod.style.Style
+import typings.std.CanvasGradient
+import typings.std.CanvasPattern
+import typings.std.HTMLCanvasElement
+import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def inherits(childCtor: js.Function0[js.Any], parentCtor: js.Function0[js.Any]): scala.Unit = (typings.openlayers.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(childCtor.asInstanceOf[js.Any], parentCtor.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def inherits(childCtor: js.Function0[Any], parentCtor: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(childCtor.asInstanceOf[js.Any], parentCtor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-type AttributionLike = java.lang.String | (js.Array[typings.openlayers.mod.Attribution | java.lang.String]) | typings.openlayers.mod.Attribution
+type AttributionLike = String | (js.Array[Attribution | String]) | Attribution
 
 type CanvasFunctionType = js.Function5[
-/* extent */ typings.openlayers.mod.Extent_, 
-/* resolution */ scala.Double, 
-/* pixelRatio */ scala.Double, 
-/* size */ typings.openlayers.mod.Size, 
-/* proj */ typings.openlayers.mod.proj.Projection, 
-typings.std.HTMLCanvasElement]
+/* extent */ Extent_, 
+/* resolution */ Double, 
+/* pixelRatio */ Double, 
+/* size */ Size, 
+/* proj */ Projection, 
+HTMLCanvasElement]
 
-type ColorLike_ = java.lang.String | typings.std.CanvasPattern | typings.std.CanvasGradient
+type ColorLike_ = String | CanvasPattern | CanvasGradient
 
-type Color_ = (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) | typings.std.Uint8Array | typings.std.Uint8ClampedArray
+type Color_ = (js.Tuple4[Double, Double, Double, Double]) | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray
 
-type CoordinateFormatType = js.Function1[/* coords */ js.UndefOr[typings.openlayers.mod.Coordinate_], java.lang.String]
+type CoordinateFormatType = js.Function1[/* coords */ js.UndefOr[Coordinate_], String]
 
-type Coordinate_ = js.Tuple2[scala.Double, scala.Double]
+type Coordinate_ = js.Tuple2[Double, Double]
 
-type DragBoxEndConditionType = js.Function3[
-/* event */ typings.openlayers.mod.MapBrowserEvent, 
-/* pixel1 */ typings.openlayers.mod.Pixel, 
-/* pixel2 */ typings.openlayers.mod.Pixel, 
-scala.Boolean]
+type DragBoxEndConditionType = js.Function3[/* event */ MapBrowserEvent, /* pixel1 */ Pixel, /* pixel2 */ Pixel, Boolean]
 
 type DrawGeometryFunctionType = js.Function2[
-/* coords */ typings.openlayers.mod.Coordinate_ | (js.Array[
-  js.Array[typings.openlayers.mod.Coordinate_] | typings.openlayers.mod.Coordinate_
-]), 
-/* geo */ js.UndefOr[typings.openlayers.mod.geom.SimpleGeometry], 
-typings.openlayers.mod.geom.SimpleGeometry]
+/* coords */ Coordinate_ | (js.Array[js.Array[Coordinate_] | Coordinate_]), 
+/* geo */ js.UndefOr[SimpleGeometry], 
+SimpleGeometry]
 
-type EventsConditionType = js.Function1[/* event */ typings.openlayers.mod.MapBrowserEvent, scala.Boolean]
+type EventsConditionType = js.Function1[/* event */ MapBrowserEvent, Boolean]
 
-type EventsKey = typings.openlayers.mod.GlobalObject
+type EventsKey = GlobalObject
 
-type EventsListenerFunctionType = js.Function1[/* evt */ typings.openlayers.mod.events.Event, scala.Boolean | scala.Unit]
+type EventsListenerFunctionType = js.Function1[/* evt */ Event, Boolean | Unit]
 
-type Extent_ = js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
+type Extent_ = js.Tuple4[Double, Double, Double, Double]
 
-type FeatureLoader_ = js.Function3[
-/* extent */ typings.openlayers.mod.Extent_, 
-/* resolution */ scala.Double, 
-/* proj */ typings.openlayers.mod.proj.Projection, 
-scala.Unit]
+type FeatureLoader_ = js.Function3[/* extent */ Extent_, /* resolution */ Double, /* proj */ Projection, Unit]
 
-type FeatureStyleFunction = js.Function1[
-/* resolution */ scala.Double, 
-typings.openlayers.mod.style.Style | js.Array[typings.openlayers.mod.style.Style] | scala.Null]
+type FeatureStyleFunction = js.Function1[/* resolution */ Double, Style | js.Array[Style] | Null]
 
-type FeatureUrlFunction = js.Function3[
-/* extent */ typings.openlayers.mod.Extent_, 
-/* resolution */ scala.Double, 
-/* proj */ typings.openlayers.mod.proj.Projection, 
-java.lang.String]
+type FeatureUrlFunction = js.Function3[/* extent */ Extent_, /* resolution */ Double, /* proj */ Projection, String]
 
-type GlobalObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type GlobalObject = StringDictionary[Any]
 
-type ImageLoadFunctionType = js.Function2[/* image */ typings.openlayers.mod.Image, /* url */ java.lang.String, scala.Unit]
+type ImageLoadFunctionType = js.Function2[/* image */ Image, /* url */ String, Unit]
 
-type ImageState = scala.Double
+type ImageState = Double
 
-type LoadingStrategy_ = js.Function2[
-/* extent */ typings.openlayers.mod.Extent_, 
-/* resolution */ scala.Double, 
-js.Array[typings.openlayers.mod.Extent_]]
+type LoadingStrategy_ = js.Function2[/* extent */ Extent_, /* resolution */ Double, js.Array[Extent_]]
 
-type ModifyEventType = java.lang.String
+type ModifyEventType = String
 
-type Pixel = js.Tuple2[scala.Double, scala.Double]
+type Pixel = js.Tuple2[Double, Double]
 
-type PreRenderFunction = js.Function2[
-/* map */ typings.openlayers.mod.Map, 
-/* state */ js.UndefOr[typings.openlayers.mod.olx.FrameState], 
-scala.Boolean]
+type PreRenderFunction = js.Function2[/* map */ Map, /* state */ js.UndefOr[FrameState], Boolean]
 
-type ProjectionLike = js.UndefOr[typings.openlayers.mod.proj.Projection | java.lang.String]
+type ProjectionLike = js.UndefOr[Projection | String]
 
 type RasterOperation = js.Function2[
-/* data */ js.Array[js.Array[scala.Double] | typings.std.ImageData], 
-/* obj */ typings.openlayers.mod.GlobalObject, 
-js.Array[scala.Double] | typings.std.ImageData]
+/* data */ js.Array[js.Array[Double] | ImageData], 
+/* obj */ GlobalObject, 
+js.Array[Double] | ImageData]
 
 type SelectFilterFunction = js.Function2[
-/* feature */ typings.openlayers.mod.Feature | typings.openlayers.mod.render.Feature, 
-/* layer */ typings.openlayers.mod.layer.Layer, 
-scala.Boolean]
+/* feature */ Feature | typings.openlayers.mod.render.Feature, 
+/* layer */ Layer, 
+Boolean]
 
-type Size = js.Tuple2[scala.Double, scala.Double]
+type Size = js.Tuple2[Double, Double]
 
 type StyleFunction = js.Function2[
-/* feature */ typings.openlayers.mod.Feature | typings.openlayers.mod.render.Feature, 
-/* resolution */ scala.Double, 
-typings.openlayers.mod.style.Style | js.Array[typings.openlayers.mod.style.Style] | scala.Null]
+/* feature */ Feature | typings.openlayers.mod.render.Feature, 
+/* resolution */ Double, 
+Style | js.Array[Style] | Null]
 
 type StyleGeometryFunction = js.Function1[
-/* feature */ typings.openlayers.mod.Feature | typings.openlayers.mod.render.Feature, 
-typings.openlayers.mod.geom.Geometry | typings.openlayers.mod.render.Feature]
+/* feature */ Feature | typings.openlayers.mod.render.Feature, 
+Geometry | typings.openlayers.mod.render.Feature]
 
-type TileCoord = js.Tuple3[scala.Double, scala.Double, scala.Double]
+type TileCoord = js.Tuple3[Double, Double, Double]
 
-type TileLoadFunctionType = js.Function2[/* tile */ typings.openlayers.mod.Tile, /* url */ java.lang.String, scala.Unit]
+type TileLoadFunctionType = js.Function2[/* tile */ Tile, /* url */ String, Unit]
 
-type TileUrlFunctionType = js.Function3[
-/* coords */ typings.openlayers.mod.TileCoord, 
-/* pixelRatio */ scala.Double, 
-/* proj */ typings.openlayers.mod.proj.Projection, 
-java.lang.String]
+type TileUrlFunctionType = js.Function3[/* coords */ TileCoord, /* pixelRatio */ Double, /* proj */ Projection, String]
 
 type TransformFunction = js.Function3[
-/* array */ js.Array[scala.Double], 
-/* out */ js.UndefOr[js.Array[scala.Double]], 
-/* dimension */ js.UndefOr[scala.Double], 
-js.Array[scala.Double]]
+/* array */ js.Array[Double], 
+/* out */ js.UndefOr[js.Array[Double]], 
+/* dimension */ js.UndefOr[Double], 
+js.Array[Double]]
 
-type WFSFeatureCollectionMetadata = typings.openlayers.mod.GlobalObject
+type WFSFeatureCollectionMetadata = GlobalObject
 
-type WFSTransactionResponse = typings.openlayers.mod.GlobalObject
+type WFSTransactionResponse = GlobalObject

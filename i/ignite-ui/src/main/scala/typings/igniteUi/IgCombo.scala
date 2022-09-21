@@ -11,7 +11,7 @@ trait IgCombo
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * If set to true:
@@ -96,7 +96,7 @@ trait IgCombo
     * Note: if it is set to string and [dataSourceType](ui.igcombo#options:dataSourceType) option is not set, then [$.ig.JSONDataSource](ig.jsondatasource) is used.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets data source type (such as "json", "xml", etc). Please refer to the documentation of [$.ig.DataSource](ig.datasource) and its [type](ig.datasource#options:settings.type) property.
@@ -523,7 +523,7 @@ trait IgCombo
     * Notes: in order for validator to work, application should ensure that [igValidator](ui.igvalidator) is loaded (ig.ui.validator.js/css files).
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.undefined
+  var validatorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets name of column which contains the "value". If it is missing, then the name of first column will be used.
@@ -605,7 +605,7 @@ object IgCombo {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -713,7 +713,7 @@ object IgCombo {
     
     inline def setInitialSelectedItemsUndefined: Self = StObject.set(x, "initialSelectedItems", js.undefined)
     
-    inline def setInitialSelectedItemsVarargs(value: IgComboInitialSelectedItem*): Self = StObject.set(x, "initialSelectedItems", js.Array(value :_*))
+    inline def setInitialSelectedItemsVarargs(value: IgComboInitialSelectedItem*): Self = StObject.set(x, "initialSelectedItems", js.Array(value*))
     
     inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
@@ -815,7 +815,7 @@ object IgCombo {
     
     inline def setTextKeyUndefined: Self = StObject.set(x, "textKey", js.undefined)
     
-    inline def setValidatorOptions(value: js.Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
+    inline def setValidatorOptions(value: Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
     
     inline def setValidatorOptionsUndefined: Self = StObject.set(x, "validatorOptions", js.undefined)
     

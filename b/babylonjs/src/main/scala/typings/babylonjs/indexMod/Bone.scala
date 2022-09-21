@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "Bone")
 @js.native
-class Bone protected ()
+open class Bone protected ()
   extends typings.babylonjs.bonesIndexMod.Bone {
   /**
     * Create a new bone
@@ -17,7 +17,7 @@ class Bone protected ()
     * @param localMatrix defines the local matrix
     * @param restPose defines the rest pose matrix
     * @param baseMatrix defines the base matrix
-    * @param index defines index of the bone in the hiearchy
+    * @param index defines index of the bone in the hierarchy
     */
   def this(/**
     * defines the bone name
@@ -377,18 +377,18 @@ object Bone {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("babylonjs/index", "Bone._tmpMats")
+  @JSImport("babylonjs/index", "Bone._TmpMats")
   @js.native
-  def _tmpMats: js.Any = js.native
-  inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+  def _TmpMats: Any = js.native
+  inline def _TmpMats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMats")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "Bone._tmpQuat")
+  @JSImport("babylonjs/index", "Bone._TmpQuat")
   @js.native
-  def _tmpQuat: js.Any = js.native
-  inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+  def _TmpQuat: Any = js.native
+  inline def _TmpQuat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpQuat")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "Bone._tmpVecs")
+  @JSImport("babylonjs/index", "Bone._TmpVecs")
   @js.native
-  def _tmpVecs: js.Any = js.native
-  inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+  def _TmpVecs: Any = js.native
+  inline def _TmpVecs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpVecs")(x.asInstanceOf[js.Any])
 }

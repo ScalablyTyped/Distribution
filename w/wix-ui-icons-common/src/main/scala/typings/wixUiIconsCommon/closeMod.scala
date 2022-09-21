@@ -1,42 +1,20 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.componentsCloseMod.CloseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object closeMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/system/dist/components/Close", JSImport.Default)
+  @JSImport("wix-ui-icons-common/classic-editor/Close", JSImport.Default)
   @js.native
-  val default: SFC[CloseProps] = js.native
+  val default: FC[CloseProps] = js.native
   
-  trait CloseProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String] = js.undefined
-  }
-  object CloseProps {
-    
-    inline def apply(): CloseProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CloseProps]
-    }
-    
-    extension [Self <: CloseProps](x: Self) {
-      
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
-  
-  type _To = SFC[CloseProps]
+  type _To = FC[CloseProps]
   
   /* This means you don't have to write `default`, but can instead just say `closeMod.foo` */
-  override def _to: SFC[CloseProps] = default
+  override def _to: FC[CloseProps] = default
 }

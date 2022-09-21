@@ -26,7 +26,6 @@ import typings.appleMapkitJsBrowser.mapkit.StylesOverlayOptions
 import typings.appleMapkitJsBrowser.mapkit.TileOverlayConstructorOptions
 import typings.appleMapkitJsBrowser.mapkit.URLTemplateCallback
 import typings.std.Element
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ object global {
       */
     @JSGlobal("mapkit.Annotation")
     @js.native
-    class Annotation protected ()
+    open class Annotation protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Annotation {
       /**
@@ -122,7 +121,7 @@ object global {
       */
     @JSGlobal("mapkit.BoundingRegion")
     @js.native
-    class BoundingRegion protected ()
+    open class BoundingRegion protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.BoundingRegion {
       /**
@@ -178,7 +177,7 @@ object global {
       */
     @JSGlobal("mapkit.CameraZoomRange")
     @js.native
-    class CameraZoomRange protected ()
+    open class CameraZoomRange protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.CameraZoomRange {
       def this(minCameraDistance: Double) = this()
@@ -208,7 +207,7 @@ object global {
       */
     @JSGlobal("mapkit.CircleOverlay")
     @js.native
-    class CircleOverlay protected ()
+    open class CircleOverlay protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.CircleOverlay {
       /**
@@ -233,7 +232,7 @@ object global {
       */
     @JSGlobal("mapkit.Coordinate")
     @js.native
-    class Coordinate protected ()
+    open class Coordinate protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Coordinate {
       /**
@@ -284,7 +283,7 @@ object global {
       */
     @JSGlobal("mapkit.CoordinateRegion")
     @js.native
-    class CoordinateRegion protected ()
+    open class CoordinateRegion protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.CoordinateRegion {
       /**
@@ -348,7 +347,7 @@ object global {
       */
     @JSGlobal("mapkit.CoordinateSpan")
     @js.native
-    class CoordinateSpan protected ()
+    open class CoordinateSpan protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.CoordinateSpan {
       /**
@@ -400,7 +399,7 @@ object global {
       * @param An object containing the options for creating a directions object.
       * This parameter is optional.
       */
-    class Directions ()
+    open class Directions ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Directions {
       def this(options: DirectionsConstructorOptions) = this()
@@ -423,7 +422,7 @@ object global {
       /* CompleteClass */
       override def eta(
         request: EtaRequestOptions,
-        callback: js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]
+        callback: js.Function2[/* error */ js.Error | Null, /* data */ EtaResponse, Unit]
       ): Double = js.native
       
       /**
@@ -439,7 +438,7 @@ object global {
       /* CompleteClass */
       override def route(
         request: DirectionsRequest,
-        callback: js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]
+        callback: js.Function2[/* error */ js.Error | Null, /* data */ DirectionsResponse, Unit]
       ): Double = js.native
     }
     object Directions {
@@ -497,7 +496,7 @@ object global {
       * Initialize a geocoder object and set optional language and user location
       * properties.
       */
-    class Geocoder ()
+    open class Geocoder ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Geocoder {
       def this(options: GeocoderConstructorOptions) = this()
@@ -508,7 +507,7 @@ object global {
       */
     @JSGlobal("mapkit.ImageAnnotation")
     @js.native
-    class ImageAnnotation protected ()
+    open class ImageAnnotation protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Annotation {
       /**
@@ -530,7 +529,7 @@ object global {
       *
       * @param options A JavaScript object with unit distance values as keys with matched CSS colors.
       */
-    class LineGradient ()
+    open class LineGradient ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.LineGradient {
       def this(options: js.Object) = this()
@@ -559,7 +558,7 @@ object global {
       */
     @JSGlobal("mapkit.Map")
     @js.native
-    class Map protected ()
+    open class Map protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Map {
       /**
@@ -672,7 +671,7 @@ object global {
       */
     @JSGlobal("mapkit.MapPoint")
     @js.native
-    class MapPoint protected ()
+    open class MapPoint protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.MapPoint {
       /**
@@ -722,7 +721,7 @@ object global {
       */
     @JSGlobal("mapkit.MapRect")
     @js.native
-    class MapRect protected ()
+    open class MapRect protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.MapRect {
       /**
@@ -819,7 +818,7 @@ object global {
       */
     @JSGlobal("mapkit.MapSize")
     @js.native
-    class MapSize protected ()
+    open class MapSize protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.MapSize {
       /**
@@ -864,7 +863,7 @@ object global {
       */
     @JSGlobal("mapkit.MarkerAnnotation")
     @js.native
-    class MarkerAnnotation protected ()
+    open class MarkerAnnotation protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.MarkerAnnotation {
       /**
@@ -906,7 +905,7 @@ object global {
       * @param left The amount of padding, in CSS pixels, to inset the map from
       * the left edge.
       */
-    class Padding ()
+    open class Padding ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Padding {
       def this(options: PaddingConstructorOptions) = this()
@@ -1047,7 +1046,7 @@ object global {
       */
     @JSGlobal("mapkit.PointOfInterestFilter")
     @js.native
-    class PointOfInterestFilter ()
+    open class PointOfInterestFilter ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter {
       
@@ -1108,7 +1107,7 @@ object global {
       *
       * @param options Options that you may provide when you create a points of interest search.
       */
-    class PointsOfInterestSearch ()
+    open class PointsOfInterestSearch ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.PointsOfInterestSearch {
       def this(options: PointsOfInterestSearchOptions) = this()
@@ -1119,7 +1118,7 @@ object global {
       */
     @JSGlobal("mapkit.PolygonOverlay")
     @js.native
-    class PolygonOverlay protected ()
+    open class PolygonOverlay protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.PolygonOverlay {
       /**
@@ -1140,7 +1139,7 @@ object global {
       */
     @JSGlobal("mapkit.PolylineOverlay")
     @js.native
-    class PolylineOverlay protected ()
+    open class PolylineOverlay protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.PolylineOverlay {
       /**
@@ -1164,7 +1163,7 @@ object global {
       *
       * @param options Options that you may provide when creating a search object.
       */
-    class Search ()
+    open class Search ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Search {
       def this(options: SearchConstructorOptions) = this()
@@ -1179,7 +1178,7 @@ object global {
     /**
       * Creates and initializes a style object.
       */
-    class Style ()
+    open class Style ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.Style {
       def this(options: StyleConstructorOptions) = this()
@@ -1268,7 +1267,7 @@ object global {
       */
     @JSGlobal("mapkit.TileOverlay")
     @js.native
-    class TileOverlay protected ()
+    open class TileOverlay protected ()
       extends StObject
          with typings.appleMapkitJsBrowser.mapkit.TileOverlay {
       /**
@@ -1350,12 +1349,12 @@ object global {
       * @param callback A callback function that is required if you provide a URL
       * for the data parameter, and optional otherwise.
       */
-    inline def importGeoJSON(data: String): ItemCollection | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | Error]
-    inline def importGeoJSON(data: String, callback: GeoJSONDelegate): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
-    inline def importGeoJSON(data: String, callback: ImportGeoJSONCallback): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
-    inline def importGeoJSON(data: js.Object): ItemCollection | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | Error]
-    inline def importGeoJSON(data: js.Object, callback: GeoJSONDelegate): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
-    inline def importGeoJSON(data: js.Object, callback: ImportGeoJSONCallback): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
+    inline def importGeoJSON(data: String): ItemCollection | js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | js.Error]
+    inline def importGeoJSON(data: String, callback: GeoJSONDelegate): ItemCollection | js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | js.Error]
+    inline def importGeoJSON(data: String, callback: ImportGeoJSONCallback): ItemCollection | js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | js.Error]
+    inline def importGeoJSON(data: js.Object): ItemCollection | js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | js.Error]
+    inline def importGeoJSON(data: js.Object, callback: GeoJSONDelegate): ItemCollection | js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | js.Error]
+    inline def importGeoJSON(data: js.Object, callback: ImportGeoJSONCallback): ItemCollection | js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | js.Error]
     
     /**
       * Initialize a mapkit object by providing an authorization callback and language.

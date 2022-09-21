@@ -29,7 +29,7 @@ object DescribeLocalGatewayVirtualInterfaceGroupsResult {
     
     inline def setLocalGatewayVirtualInterfaceGroupsUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", js.undefined)
     
-    inline def setLocalGatewayVirtualInterfaceGroupsVarargs(value: LocalGatewayVirtualInterfaceGroup*): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", js.Array(value :_*))
+    inline def setLocalGatewayVirtualInterfaceGroupsVarargs(value: LocalGatewayVirtualInterfaceGroup*): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroups", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.DistanceTool")
 @js.native
-class DistanceTool protected ()
+open class DistanceTool protected ()
   extends StObject
      with typings.bmapgl.BMapGL.DistanceTool {
   def this(map: typings.bmapgl.BMapGL.Map) = this()

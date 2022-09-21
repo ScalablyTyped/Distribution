@@ -12,7 +12,7 @@ trait RateBasedStatement extends StObject {
   var AggregateKeyType: RateBasedStatementAggregateKeyType
   
   /**
-    * The configuration for inspecting IP addresses in an HTTP header that you specify, instead of using the IP address that's reported by the web request origin. Commonly, this is the X-Forwarded-For (XFF) header, but you can specify any header name.   If the specified header isn't present in the request, AWS WAF doesn't apply the rule to the web request at all.  This is required if AggregateKeyType is set to FORWARDED_IP.
+    * The configuration for inspecting IP addresses in an HTTP header that you specify, instead of using the IP address that's reported by the web request origin. Commonly, this is the X-Forwarded-For (XFF) header, but you can specify any header name.   If the specified header isn't present in the request, WAF doesn't apply the rule to the web request at all.  This is required if AggregateKeyType is set to FORWARDED_IP.
     */
   var ForwardedIPConfig: js.UndefOr[typings.awsSdk.wafv2Mod.ForwardedIPConfig] = js.undefined
   
@@ -22,7 +22,7 @@ trait RateBasedStatement extends StObject {
   var Limit: RateLimit
   
   /**
-    * An optional nested statement that narrows the scope of the rate-based statement to matching web requests. This can be any nestable statement, and you can nest statements at any level below this scope-down statement.
+    * An optional nested statement that narrows the scope of the web requests that are evaluated by the rate-based statement. Requests are only tracked by the rate-based statement if they match the scope-down statement. You can use any nestable Statement in the scope-down statement, and you can nest statements at any level, the same as you can for a rule statement. 
     */
   var ScopeDownStatement: js.UndefOr[Statement] = js.undefined
 }

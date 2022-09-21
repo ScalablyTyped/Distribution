@@ -27,12 +27,12 @@ trait BatchExecuteStatementRequest extends StObject {
   var schema: js.UndefOr[DbName] = js.undefined
   
   /**
-    * The name or ARN of the secret that enables access to the DB cluster.
+    * The ARN of the secret that enables access to the DB cluster. Enter the database user name and password for the credentials in the secret. For information about creating the secret, see Create a database secret.
     */
   var secretArn: Arn
   
   /**
-    * The SQL statement to run.
+    * The SQL statement to run. Don't include a semicolon (;) at the end of the SQL statement.
     */
   var sql: SqlStatement
   
@@ -58,7 +58,7 @@ object BatchExecuteStatementRequest {
     
     inline def setParameterSetsUndefined: Self = StObject.set(x, "parameterSets", js.undefined)
     
-    inline def setParameterSetsVarargs(value: SqlParametersList*): Self = StObject.set(x, "parameterSets", js.Array(value :_*))
+    inline def setParameterSetsVarargs(value: SqlParametersList*): Self = StObject.set(x, "parameterSets", js.Array(value*))
     
     inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     

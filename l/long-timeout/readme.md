@@ -10,10 +10,10 @@ Long timeout makes it possible to have a timeout or interval that is longer than
 | ------------------ | :-------------: |
 | Full name          | long-timeout |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 44462721 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3218466.0 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/tellnes/long-timeout)

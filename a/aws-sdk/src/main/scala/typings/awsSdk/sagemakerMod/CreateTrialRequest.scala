@@ -16,13 +16,15 @@ trait CreateTrialRequest extends StObject {
     */
   var ExperimentName: ExperimentEntityName
   
+  var MetadataProperties: js.UndefOr[typings.awsSdk.sagemakerMod.MetadataProperties] = js.undefined
+  
   /**
     * A list of tags to associate with the trial. You can use Search API to search on the tags.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The name of the trial. The name must be unique in your AWS account and is not case-sensitive.
+    * The name of the trial. The name must be unique in your Amazon Web Services account and is not case-sensitive.
     */
   var TrialName: ExperimentEntityName
 }
@@ -41,11 +43,15 @@ object CreateTrialRequest {
     
     inline def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
     
+    inline def setMetadataProperties(value: MetadataProperties): Self = StObject.set(x, "MetadataProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataPropertiesUndefined: Self = StObject.set(x, "MetadataProperties", js.undefined)
+    
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
   }

@@ -8,7 +8,7 @@ object constantsMod {
   
   object bt709 {
     
-    @JSImport("image-q/dist/constants", "bt709.Y")
+    @JSImport("image-q/dist/types/src/constants", "bt709.Y")
     @js.native
     object Y_ extends StObject {
       
@@ -24,7 +24,7 @@ object constantsMod {
       /* 1 */ val WHITE: typings.imageQ.bt709Mod.Y_.WHITE & Double = js.native
     }
     
-    @JSImport("image-q/dist/constants", "bt709.x")
+    @JSImport("image-q/dist/types/src/constants", "bt709.x")
     @js.native
     object x extends StObject {
       
@@ -40,7 +40,7 @@ object constantsMod {
       /* 0.3127 */ val WHITE: typings.imageQ.bt709Mod.x.WHITE & Double = js.native
     }
     
-    @JSImport("image-q/dist/constants", "bt709.y")
+    @JSImport("image-q/dist/types/src/constants", "bt709.y")
     @js.native
     object y extends StObject {
       

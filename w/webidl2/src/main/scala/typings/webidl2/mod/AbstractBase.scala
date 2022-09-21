@@ -27,7 +27,7 @@ object AbstractBase {
     
     inline def setExtAttrs(value: js.Array[ExtendedAttribute]): Self = StObject.set(x, "extAttrs", value.asInstanceOf[js.Any])
     
-    inline def setExtAttrsVarargs(value: ExtendedAttribute*): Self = StObject.set(x, "extAttrs", js.Array(value :_*))
+    inline def setExtAttrsVarargs(value: ExtendedAttribute*): Self = StObject.set(x, "extAttrs", js.Array(value*))
     
     inline def setParent(value: AbstractBase): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

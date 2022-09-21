@@ -10,10 +10,10 @@ JSX assertions for Jasmine
 | ------------------ | :-------------: |
 | Full name          | jasmine-expect-jsx |
 | Keywords           | assert, assertion, jasmine, expect, jsx, react, test |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 45429 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8242.666666666666 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/smacker/jasmine-expect-jsx#readme)

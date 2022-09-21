@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.OverlayImageElement")
 @js.native
-class OverlayImageElement () extends BoxElement {
+open class OverlayImageElement () extends BoxElement {
   def this(options: OverlayImageOptions) = this()
   
   /**

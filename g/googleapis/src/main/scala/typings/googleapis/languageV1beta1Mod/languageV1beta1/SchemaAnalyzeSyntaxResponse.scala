@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The syntax analysis response message.
-  */
 trait SchemaAnalyzeSyntaxResponse extends StObject {
   
   /**
-    * The language of the text, which will be the same as the language
-    * specified in the request or, if not specified, the automatically-detected
-    * language. See Document.language field for more details.
+    * The language of the text, which will be the same as the language specified in the request or, if not specified, the automatically-detected language. See Document.language field for more details.
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Sentences in the input document.
@@ -37,18 +32,20 @@ object SchemaAnalyzeSyntaxResponse {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
+    
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     inline def setSentences(value: js.Array[SchemaSentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
     inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    inline def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value*))
     
     inline def setTokens(value: js.Array[SchemaToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
-    inline def setTokensVarargs(value: SchemaToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: SchemaToken*): Self = StObject.set(x, "tokens", js.Array(value*))
   }
 }

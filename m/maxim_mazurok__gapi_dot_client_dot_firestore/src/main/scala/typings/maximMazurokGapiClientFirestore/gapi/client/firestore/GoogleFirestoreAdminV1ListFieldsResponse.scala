@@ -25,7 +25,7 @@ object GoogleFirestoreAdminV1ListFieldsResponse {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: GoogleFirestoreAdminV1Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: GoogleFirestoreAdminV1Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

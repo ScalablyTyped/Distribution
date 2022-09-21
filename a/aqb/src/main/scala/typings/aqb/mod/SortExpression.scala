@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SortExpression
   extends StObject
      with PartialStatement
-     with Instantiable2[/* prev */ PartialStatement, /* dfns (repeated) */ js.Any, PartialStatement] {
+     with Instantiable2[/* prev */ PartialStatement, /* dfns (repeated) */ Any, PartialStatement] {
   
   var _args: js.Array[Keyword] = js.native
   

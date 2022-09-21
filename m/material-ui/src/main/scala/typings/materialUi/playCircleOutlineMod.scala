@@ -10,10 +10,10 @@ object playCircleOutlineMod {
   
   @JSImport("material-ui/svg-icons/av/play-circle-outline", JSImport.Default)
   @js.native
-  class default () extends AvPlayCircleOutline
+  open class default () extends AvPlayCircleOutline
   
   @JSImport("material-ui/svg-icons/av/play-circle-outline", "AvPlayCircleOutline")
   @js.native
-  class AvPlayCircleOutline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvPlayCircleOutline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

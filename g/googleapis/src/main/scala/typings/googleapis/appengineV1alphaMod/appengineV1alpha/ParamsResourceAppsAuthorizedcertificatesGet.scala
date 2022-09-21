@@ -1,0 +1,47 @@
+package typings.googleapis.appengineV1alphaMod.appengineV1alpha
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParamsResourceAppsAuthorizedcertificatesGet
+  extends StObject
+     with StandardParameters {
+  
+  /**
+    * Part of `name`. Name of the resource requested. Example: apps/myapp/authorizedCertificates/12345.
+    */
+  var appsId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Part of `name`. See documentation of `appsId`.
+    */
+  var authorizedCertificatesId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Controls the set of fields returned in the GET response.
+    */
+  var view: js.UndefOr[String] = js.undefined
+}
+object ParamsResourceAppsAuthorizedcertificatesGet {
+  
+  inline def apply(): ParamsResourceAppsAuthorizedcertificatesGet = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ParamsResourceAppsAuthorizedcertificatesGet]
+  }
+  
+  extension [Self <: ParamsResourceAppsAuthorizedcertificatesGet](x: Self) {
+    
+    inline def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
+    
+    inline def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
+    
+    inline def setAuthorizedCertificatesId(value: String): Self = StObject.set(x, "authorizedCertificatesId", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorizedCertificatesIdUndefined: Self = StObject.set(x, "authorizedCertificatesId", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
+}

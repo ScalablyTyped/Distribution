@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LabelingJobDataAttributes extends StObject {
   
   /**
-    * Declares that your content is free of personally identifiable information or adult content. Amazon SageMaker may restrict the Amazon Mechanical Turk workers that can view your task based on this information.
+    * Declares that your content is free of personally identifiable information or adult content. SageMaker may restrict the Amazon Mechanical Turk workers that can view your task based on this information.
     */
   var ContentClassifiers: js.UndefOr[typings.awsSdk.sagemakerMod.ContentClassifiers] = js.undefined
 }
@@ -24,6 +24,6 @@ object LabelingJobDataAttributes {
     
     inline def setContentClassifiersUndefined: Self = StObject.set(x, "ContentClassifiers", js.undefined)
     
-    inline def setContentClassifiersVarargs(value: ContentClassifier*): Self = StObject.set(x, "ContentClassifiers", js.Array(value :_*))
+    inline def setContentClassifiersVarargs(value: ContentClassifier*): Self = StObject.set(x, "ContentClassifiers", js.Array(value*))
   }
 }

@@ -65,5 +65,5 @@ Instantiable0[Mesh]
   def createSphere(location: Point): Mesh = js.native
   def createSphere(location: Point, params: MeshCreateSphereParams): Mesh = js.native
   
-  def fromJSON(json: js.Any): Mesh = js.native
+  def fromJSON(json: Any): Mesh = js.native
 }

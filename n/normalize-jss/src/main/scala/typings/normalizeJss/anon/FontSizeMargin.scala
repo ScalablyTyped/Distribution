@@ -23,6 +23,6 @@ object FontSizeMargin {
     
     inline def setMargin(value: js.Array[js.Array[String]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    inline def setMarginVarargs(value: js.Array[String]*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: js.Array[String]*): Self = StObject.set(x, "margin", js.Array(value*))
   }
 }

@@ -3,7 +3,7 @@ package typings.polished.anon
 import typings.polished.polishedNumbers.`0`
 import typings.polished.polishedNumbers.`1`
 import typings.polished.polishedStrings.func
-import typings.polished.polishedStrings.max
+import typings.polished.polishedStrings.sqrt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait NotationPrecedenceRightToLeft extends StObject {
   
   var argCount: `1`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify max */ js.Any
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify sqrt */ Any
   
   var notation: func
   
@@ -20,14 +20,14 @@ trait NotationPrecedenceRightToLeft extends StObject {
   
   var rightToLeft: `0`
   
-  var symbol: max
+  var symbol: sqrt
 }
 object NotationPrecedenceRightToLeft {
   
   inline def apply(
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify max */ js.Any
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify sqrt */ Any
   ): NotationPrecedenceRightToLeft = {
-    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "func", precedence = 0, rightToLeft = 0, symbol = "max")
+    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "func", precedence = 0, rightToLeft = 0, symbol = "sqrt")
     __obj.asInstanceOf[NotationPrecedenceRightToLeft]
   }
   
@@ -36,7 +36,7 @@ object NotationPrecedenceRightToLeft {
     inline def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
     inline def setF(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify max */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify sqrt */ Any
     ): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
     inline def setNotation(value: func): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
@@ -45,6 +45,6 @@ object NotationPrecedenceRightToLeft {
     
     inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: max): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: sqrt): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ Array#isArray for older browsers
 | ------------------ | :-------------: |
 | Full name          | isarray |
 | Keywords           | browser, isarray, array |
-| # releases         | 2 |
-| # dependents       | 422 |
-| # downloads        | 1836786989 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.66882136E8 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/juliangruber/isarray)

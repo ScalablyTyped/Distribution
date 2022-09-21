@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Callback extends StObject {
   
-  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   var hideLabel: js.UndefOr[Boolean] = js.undefined
   
@@ -27,11 +27,11 @@ object Callback {
   
   extension [Self <: Callback](x: Self) {
     
-    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     

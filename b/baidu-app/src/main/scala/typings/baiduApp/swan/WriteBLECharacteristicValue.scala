@@ -1,13 +1,12 @@
 package typings.baiduApp.swan
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait WriteBLECharacteristicValue
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 蓝牙特征值的 uuid
@@ -36,7 +35,7 @@ trait WriteBLECharacteristicValue
   /**
     * 蓝牙设备特征值对应的二进制值
     */
-  var value: ArrayBuffer
+  var value: js.typedarray.ArrayBuffer
 }
 object WriteBLECharacteristicValue {
   
@@ -45,7 +44,7 @@ object WriteBLECharacteristicValue {
     deviceId: String,
     serviceId: String,
     success: ErrMsgResponse => Unit,
-    value: ArrayBuffer
+    value: js.typedarray.ArrayBuffer
   ): WriteBLECharacteristicValue = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteBLECharacteristicValue]
@@ -69,6 +68,6 @@ object WriteBLECharacteristicValue {
     
     inline def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

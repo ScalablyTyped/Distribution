@@ -10,10 +10,10 @@ object screenLockRotationMod {
   
   @JSImport("material-ui/svg-icons/device/screen-lock-rotation", JSImport.Default)
   @js.native
-  class default () extends DeviceScreenLockRotation
+  open class default () extends DeviceScreenLockRotation
   
   @JSImport("material-ui/svg-icons/device/screen-lock-rotation", "DeviceScreenLockRotation")
   @js.native
-  class DeviceScreenLockRotation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceScreenLockRotation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -6,14 +6,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "ServiceDescriptorProto")
 @js.native
-class ServiceDescriptorProto () extends Message {
+open class ServiceDescriptorProto () extends Message {
   
   def addMethod(): MethodDescriptorProto = js.native
   def addMethod(value: Unit, index: Double): MethodDescriptorProto = js.native
@@ -50,7 +49,7 @@ object ServiceDescriptorProto {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
   
   inline def deserializeBinaryFromReader(message: ServiceDescriptorProto, reader: BinaryReader): ServiceDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ServiceDescriptorProto]
   
@@ -88,7 +87,7 @@ object ServiceDescriptorProto {
       
       inline def setMethodList(value: js.Array[typings.googleProtobuf.descriptorPbMod.MethodDescriptorProto.AsObject]): Self = StObject.set(x, "methodList", value.asInstanceOf[js.Any])
       
-      inline def setMethodListVarargs(value: typings.googleProtobuf.descriptorPbMod.MethodDescriptorProto.AsObject*): Self = StObject.set(x, "methodList", js.Array(value :_*))
+      inline def setMethodListVarargs(value: typings.googleProtobuf.descriptorPbMod.MethodDescriptorProto.AsObject*): Self = StObject.set(x, "methodList", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

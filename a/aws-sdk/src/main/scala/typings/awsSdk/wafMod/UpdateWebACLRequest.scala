@@ -45,7 +45,7 @@ object UpdateWebACLRequest {
     
     inline def setUpdatesUndefined: Self = StObject.set(x, "Updates", js.undefined)
     
-    inline def setUpdatesVarargs(value: WebACLUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: WebACLUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
     
     inline def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }

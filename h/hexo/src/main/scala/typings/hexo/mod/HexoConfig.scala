@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HexoConfig
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   /**
     * Archive directory
@@ -290,7 +290,7 @@ object HexoConfig {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setExternal_link(value: Boolean): Self = StObject.set(x, "external_link", value.asInstanceOf[js.Any])
     
@@ -304,13 +304,13 @@ object HexoConfig {
     
     inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
-    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
     
     inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
@@ -340,7 +340,7 @@ object HexoConfig {
     
     inline def setSkip_renderNull: Self = StObject.set(x, "skip_render", null)
     
-    inline def setSkip_renderVarargs(value: String*): Self = StObject.set(x, "skip_render", js.Array(value :_*))
+    inline def setSkip_renderVarargs(value: String*): Self = StObject.set(x, "skip_render", js.Array(value*))
     
     inline def setSource_dir(value: String): Self = StObject.set(x, "source_dir", value.asInstanceOf[js.Any])
     

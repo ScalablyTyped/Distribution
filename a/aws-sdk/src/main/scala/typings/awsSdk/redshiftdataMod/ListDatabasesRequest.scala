@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDatabasesRequest extends StObject {
   
   /**
-    * The cluster identifier. This parameter is required when authenticating using either AWS Secrets Manager or temporary credentials. 
+    * The cluster identifier. This parameter is required when connecting to a cluster and authenticating using either Secrets Manager or temporary credentials. 
     */
-  var ClusterIdentifier: Location
+  var ClusterIdentifier: js.UndefOr[Location] = js.undefined
   
   /**
-    * The name of the database. This parameter is required when authenticating using temporary credentials. 
+    * The name of the database. This parameter is required when authenticating using either Secrets Manager or temporary credentials. 
     */
-  var Database: js.UndefOr[String] = js.undefined
+  var Database: String
   
   /**
-    * The database user name. This parameter is required when authenticating using temporary credentials. 
+    * The database user name. This parameter is required when connecting to a cluster and authenticating using temporary credentials. 
     */
   var DbUser: js.UndefOr[String] = js.undefined
   
@@ -32,14 +32,19 @@ trait ListDatabasesRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The name or ARN of the secret that enables access to the database. This parameter is required when authenticating using AWS Secrets Manager. 
+    * The name or ARN of the secret that enables access to the database. This parameter is required when authenticating using Secrets Manager. 
     */
   var SecretArn: js.UndefOr[typings.awsSdk.redshiftdataMod.SecretArn] = js.undefined
+  
+  /**
+    * The serverless workgroup name. This parameter is required when connecting to a serverless workgroup and authenticating using either Secrets Manager or temporary credentials.
+    */
+  var WorkgroupName: js.UndefOr[WorkgroupNameString] = js.undefined
 }
 object ListDatabasesRequest {
   
-  inline def apply(ClusterIdentifier: Location): ListDatabasesRequest = {
-    val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
+  inline def apply(Database: String): ListDatabasesRequest = {
+    val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDatabasesRequest]
   }
   
@@ -47,9 +52,9 @@ object ListDatabasesRequest {
     
     inline def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    inline def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    inline def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
+    inline def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
     inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
@@ -66,5 +71,9 @@ object ListDatabasesRequest {
     inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     inline def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
+    
+    inline def setWorkgroupName(value: WorkgroupNameString): Self = StObject.set(x, "WorkgroupName", value.asInstanceOf[js.Any])
+    
+    inline def setWorkgroupNameUndefined: Self = StObject.set(x, "WorkgroupName", js.undefined)
   }
 }

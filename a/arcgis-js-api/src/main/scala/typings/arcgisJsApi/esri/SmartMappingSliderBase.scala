@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`max-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.`min-change`
+import typings.arcgisJsApi.arcgisJsApiStrings.`segment-drag`
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-drag`
 import typings.arcgisJsApi.arcgisJsApiStrings.average
@@ -34,7 +35,9 @@ trait SmartMappingSliderBase
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
-  def inputFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: average | min | max | value): String = js.native
+  def inputFormatFunction(value: Double, `type`: average | min | max | value, index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: scala.Unit, index: Double): String = js.native
   /**
     * A function used to format user inputs.
     *
@@ -42,22 +45,6 @@ trait SmartMappingSliderBase
     */
   @JSName("inputFormatFunction")
   var inputFormatFunction_Original: SmartMappingSliderBaseLabelFormatter = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_average(value: Double, `type`: average): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_max(value: Double, `type`: max): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_min(value: Double, `type`: min): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_value(value: Double, `type`: value): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputFormatFunction).
@@ -65,7 +52,9 @@ trait SmartMappingSliderBase
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
-  def inputParseFunction(value: String, `type`: Unit, index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: average | min | max | tick | value): Double = js.native
+  def inputParseFunction(value: String, `type`: average | min | max | tick | value, index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: scala.Unit, index: Double): Double = js.native
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputFormatFunction).
     *
@@ -73,26 +62,6 @@ trait SmartMappingSliderBase
     */
   @JSName("inputParseFunction")
   var inputParseFunction_Original: InputParser = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_average(value: String, `type`: average): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_average(value: String, `type`: average, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_max(value: String, `type`: max): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_max(value: String, `type`: max, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_min(value: String, `type`: min): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_min(value: String, `type`: min, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_tick(value: String, `type`: tick): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_tick(value: String, `type`: tick, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_value(value: String, `type`: value): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_value(value: String, `type`: value, index: Double): Double = js.native
   
   /**
     * A modified version of [Slider.labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which is a custom function used to format labels on the thumbs, min, max, and average values.
@@ -100,7 +69,9 @@ trait SmartMappingSliderBase
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: average | min | max | value): String = js.native
+  def labelFormatFunction(value: Double, `type`: average | min | max | value, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: scala.Unit, index: Double): String = js.native
   /**
     * A modified version of [Slider.labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which is a custom function used to format labels on the thumbs, min, max, and average values.
     *
@@ -108,22 +79,6 @@ trait SmartMappingSliderBase
     */
   @JSName("labelFormatFunction")
   var labelFormatFunction_Original: SmartMappingSliderBaseLabelFormatter = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_average(value: Double, `type`: average): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_max(value: Double, `type`: max): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_min(value: Double, `type`: min): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_value(value: Double, `type`: value): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   
   /**
     * The maximum value or upper bound of the slider.
@@ -144,12 +99,16 @@ trait SmartMappingSliderBase
   @JSName("on")
   def on_minchange(name: `min-change`, eventHandler: SmartMappingSliderBaseMinChangeEventHandler): IHandle = js.native
   @JSName("on")
+  def on_segmentdrag(name: `segment-drag`, eventHandler: SmartMappingSliderBaseSegmentDragEventHandler): IHandle = js.native
+  @JSName("on")
   def on_thumbchange(name: `thumb-change`, eventHandler: SmartMappingSliderBaseThumbChangeEventHandler): IHandle = js.native
   @JSName("on")
   def on_thumbdrag(name: `thumb-drag`, eventHandler: SmartMappingSliderBaseThumbDragEventHandler): IHandle = js.native
   
   /**
     * Defines how slider thumb values should be rounded.
+    *
+    * @default 4
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#precision)
     */
@@ -161,6 +120,22 @@ trait SmartMappingSliderBase
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#state)
     */
   val state: ready | disabled = js.native
+  
+  /**
+    * When `true`, all segments will sync together in updating thumb values when the user drags any segment.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#syncedSegmentsEnabled)
+    */
+  var syncedSegmentsEnabled: Boolean = js.native
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#visibleElements)
+    */
+  var visibleElements: SmartMappingSliderBaseVisibleElements = js.native
   
   /**
     * Zooms the slider track to the bounds provided in this property.

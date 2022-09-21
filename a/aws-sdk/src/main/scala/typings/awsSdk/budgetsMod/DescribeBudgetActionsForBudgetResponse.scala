@@ -24,7 +24,7 @@ object DescribeBudgetActionsForBudgetResponse {
     
     inline def setActions(value: Actions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,7 @@ object Readonlystaletrueundefine {
     
     inline def setRoutes(value: js.Array[PartialRoute[Route[String, js.UndefOr[js.Object]]]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: (PartialRoute[Route[String, js.UndefOr[js.Object]]])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: (PartialRoute[Route[String, js.UndefOr[js.Object]]])*): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     

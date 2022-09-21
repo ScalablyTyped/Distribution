@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // http://foundation.zurb.com/docs/components/alert_boxes.html
 trait AlertOptions extends StObject {
   
-  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
 }
 object AlertOptions {
   
@@ -18,7 +18,7 @@ object AlertOptions {
   
   extension [Self <: AlertOptions](x: Self) {
     
-    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
   }

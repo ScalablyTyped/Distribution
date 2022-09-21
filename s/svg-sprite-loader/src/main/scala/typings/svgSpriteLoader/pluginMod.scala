@@ -1,18 +1,17 @@
 package typings.svgSpriteLoader
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
   
-  @JSImport("svg-sprite-loader/plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("svg-sprite-loader/plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   
@@ -22,7 +21,7 @@ object pluginMod {
     var plainSprite: js.UndefOr[Boolean] = js.undefined
     
     /** Custom tag attributes for the svg */
-    var spriteAttrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var spriteAttrs: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object Options {
     
@@ -37,7 +36,7 @@ object pluginMod {
       
       inline def setPlainSpriteUndefined: Self = StObject.set(x, "plainSprite", js.undefined)
       
-      inline def setSpriteAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "spriteAttrs", value.asInstanceOf[js.Any])
+      inline def setSpriteAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "spriteAttrs", value.asInstanceOf[js.Any])
       
       inline def setSpriteAttrsUndefined: Self = StObject.set(x, "spriteAttrs", js.undefined)
     }

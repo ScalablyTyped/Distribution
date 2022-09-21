@@ -1,9 +1,5 @@
 package typings.googleapis.driveV3Mod.driveV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +9,9 @@ trait ParamsResourceFilesEmptytrash
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Deprecated. If an item is not in a shared drive and its last parent is deleted but the item itself is not, the item will be placed under its owner's root.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var enforceSingleParent: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceFilesEmptytrash {
   
@@ -26,8 +22,8 @@ object ParamsResourceFilesEmptytrash {
   
   extension [Self <: ParamsResourceFilesEmptytrash](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setEnforceSingleParent(value: Boolean): Self = StObject.set(x, "enforceSingleParent", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setEnforceSingleParentUndefined: Self = StObject.set(x, "enforceSingleParent", js.undefined)
   }
 }

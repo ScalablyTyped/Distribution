@@ -1,12 +1,11 @@
 package typings.cssSelectorParser
 
-import typings.cssSelectorParser.anon.Name
-import typings.cssSelectorParser.anon.Operator
-import typings.cssSelectorParser.anon.Value
-import typings.cssSelectorParser.anon.ValueType
+import typings.cssSelectorParser.cssSelectorParserStrings.numeric
 import typings.cssSelectorParser.cssSelectorParserStrings.rule
 import typings.cssSelectorParser.cssSelectorParserStrings.ruleSet
 import typings.cssSelectorParser.cssSelectorParserStrings.selectors
+import typings.cssSelectorParser.cssSelectorParserStrings.string
+import typings.cssSelectorParser.cssSelectorParserStrings.substitute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,13 +56,13 @@ object selectorMod {
       
       inline def setAttrs(value: js.Array[RuleAttr]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      inline def setAttrsVarargs(value: RuleAttr*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+      inline def setAttrsVarargs(value: RuleAttr*): Self = StObject.set(x, "attrs", js.Array(value*))
       
       inline def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
       inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      inline def setClassNamesVarargs(value: String*): Self = StObject.set(x, "classNames", js.Array(value :_*))
+      inline def setClassNamesVarargs(value: String*): Self = StObject.set(x, "classNames", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -75,7 +74,7 @@ object selectorMod {
       
       inline def setPseudos(value: js.Array[RulePseudo]): Self = StObject.set(x, "pseudos", value.asInstanceOf[js.Any])
       
-      inline def setPseudosVarargs(value: RulePseudo*): Self = StObject.set(x, "pseudos", js.Array(value :_*))
+      inline def setPseudosVarargs(value: RulePseudo*): Self = StObject.set(x, "pseudos", js.Array(value*))
       
       inline def setRule(value: Rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
@@ -89,9 +88,41 @@ object selectorMod {
     }
   }
   
-  type RuleAttr = Name & (js.Object | Operator)
+  /* Rewritten from type alias, can be one of: 
+    - typings.cssSelectorParser.anon.namestring
+    - typings.cssSelectorParser.anon.operatorstringvalueTypeAt
+  */
+  trait RuleAttr extends StObject
+  object RuleAttr {
+    
+    inline def namestring(name: String): typings.cssSelectorParser.anon.namestring = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.cssSelectorParser.anon.namestring]
+    }
+    
+    inline def operatorstringvalueTypeAt(name: String, operator: String, value: String, valueType: AttrValueType): typings.cssSelectorParser.anon.operatorstringvalueTypeAt = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.cssSelectorParser.anon.operatorstringvalueTypeAt]
+    }
+  }
   
-  type RulePseudo = Name & (Value | ValueType)
+  /* Rewritten from type alias, can be one of: 
+    - typings.cssSelectorParser.anon.valueTypeselectorvalueSel
+    - typings.cssSelectorParser.anon.valueTypestringsubstitute
+  */
+  trait RulePseudo extends StObject
+  object RulePseudo {
+    
+    inline def valueTypeselectorvalueSel(name: String, value: Selector): typings.cssSelectorParser.anon.valueTypeselectorvalueSel = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = "selector")
+      __obj.asInstanceOf[typings.cssSelectorParser.anon.valueTypeselectorvalueSel]
+    }
+    
+    inline def valueTypestringsubstitute(name: String, value: String, valueType: string | substitute | numeric): typings.cssSelectorParser.anon.valueTypestringsubstitute = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.cssSelectorParser.anon.valueTypestringsubstitute]
+    }
+  }
   
   trait RuleSet
     extends StObject
@@ -186,7 +217,7 @@ object selectorMod {
       
       inline def setSelectors(value: js.Array[RuleSet]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
-      inline def setSelectorsVarargs(value: RuleSet*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+      inline def setSelectorsVarargs(value: RuleSet*): Self = StObject.set(x, "selectors", js.Array(value*))
       
       inline def setType(value: selectors): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

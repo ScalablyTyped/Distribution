@@ -12,7 +12,7 @@ trait ScriptBootstrapActionConfig extends StObject {
   var Args: js.UndefOr[XmlStringList] = js.undefined
   
   /**
-    * Location of the script to run during a bootstrap action. Can be either a location in Amazon S3 or on a local file system.
+    * Location in Amazon S3 of the script to run during a bootstrap action.
     */
   var Path: XmlString
 }
@@ -29,7 +29,7 @@ object ScriptBootstrapActionConfig {
     
     inline def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
-    inline def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value*))
     
     inline def setPath(value: XmlString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }

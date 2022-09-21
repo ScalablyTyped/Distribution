@@ -9,7 +9,7 @@ trait SchemaListZonesResponse extends StObject {
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * All GTM Zones of a GTM Container.
@@ -27,12 +27,14 @@ object SchemaListZonesResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setZone(value: js.Array[SchemaZone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     
-    inline def setZoneVarargs(value: SchemaZone*): Self = StObject.set(x, "zone", js.Array(value :_*))
+    inline def setZoneVarargs(value: SchemaZone*): Self = StObject.set(x, "zone", js.Array(value*))
   }
 }

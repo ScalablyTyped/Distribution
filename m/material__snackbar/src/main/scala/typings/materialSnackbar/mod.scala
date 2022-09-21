@@ -1,7 +1,7 @@
 package typings.materialSnackbar
 
+import typings.materialBase.Element
 import typings.materialSnackbar.anon.PartialMDCSnackbarAdapter
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +10,13 @@ object mod {
   
   @JSImport("@material/snackbar", "MDCSnackbar")
   @js.native
-  class MDCSnackbar protected ()
+  open class MDCSnackbar protected ()
     extends typings.materialSnackbar.componentMod.MDCSnackbar {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialSnackbar.foundationMod.MDCSnackbarFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -26,38 +26,16 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialSnackbar.componentMod.MDCSnackbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSnackbar.componentMod.MDCSnackbar]
+    inline def attachTo(root: typings.std.Element): typings.materialSnackbar.componentMod.MDCSnackbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSnackbar.componentMod.MDCSnackbar]
   }
   
   @JSImport("@material/snackbar", "MDCSnackbarFoundation")
   @js.native
-  class MDCSnackbarFoundation ()
+  open class MDCSnackbarFoundation ()
     extends typings.materialSnackbar.foundationMod.MDCSnackbarFoundation {
     def this(adapter: PartialMDCSnackbarAdapter) = this()
   }
   
-  /**
-    * @license
-    * Copyright 2018 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object cssClasses {
     
     @JSImport("@material/snackbar", "cssClasses")
@@ -196,29 +174,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * @license
-      * Copyright 2018 Google Inc.
-      *
-      * Permission is hereby granted, free of charge, to any person obtaining a copy
-      * of this software and associated documentation files (the "Software"), to deal
-      * in the Software without restriction, including without limitation the rights
-      * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-      * copies of the Software, and to permit persons to whom the Software is
-      * furnished to do so, subject to the following conditions:
-      *
-      * The above copyright notice and this permission notice shall be included in
-      * all copies or substantial portions of the Software.
-      *
-      * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-      * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-      * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-      * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-      * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-      * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-      * THE SOFTWARE.
-      */
-    inline def announce(ariaEl: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("announce")(ariaEl.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def announce(ariaEl: Element, labelEl: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("announce")(ariaEl.asInstanceOf[js.Any], labelEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def announce(ariaEl: typings.std.Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("announce")(ariaEl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def announce(ariaEl: typings.std.Element, labelEl: typings.std.Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("announce")(ariaEl.asInstanceOf[js.Any], labelEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

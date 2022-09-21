@@ -1,8 +1,12 @@
 package typings.wordpressHooks
 
 import typings.std.Record
-import typings.wordpressHooks.anon.Actions
-import typings.wordpressHooks.anon.Current
+import typings.wordpressHooks.createAddHookMod.AddHook
+import typings.wordpressHooks.createDidHookMod.DidHook
+import typings.wordpressHooks.createDoingHookMod.DoingHook
+import typings.wordpressHooks.createHasHookMod.HasHook
+import typings.wordpressHooks.createHooksMod._Hooks
+import typings.wordpressHooks.createRemoveHookMod.RemoveHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,41 +19,33 @@ object mod {
   
   @JSImport("@wordpress/hooks", "actions")
   @js.native
-  val actions: HookMap[ActionCallback] = js.native
+  val actions: Store = js.native
   
-  inline def addAction(hookName: String, namespace: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAction")(hookName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addAction(
-    hookName: String,
-    namespace: String,
-    callback: js.Function1[/* repeated */ js.Any, Unit],
-    priority: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAction")(hookName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def addFilter[T](
-    hookName: String,
-    namespace: String,
-    callback: js.Function2[/* firstArg */ T, /* repeated */ js.Any, T]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFilter")(hookName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addFilter[T](
-    hookName: String,
-    namespace: String,
-    callback: js.Function2[/* firstArg */ T, /* repeated */ js.Any, T],
-    priority: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFilter")(hookName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  @JSImport("@wordpress/hooks", "applyFilters")
+  @JSImport("@wordpress/hooks", "addAction")
   @js.native
-  val applyFilters: RunHook = js.native
+  val addAction: AddHook = js.native
   
-  inline def createHooks(): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("createHooks")().asInstanceOf[Actions]
-  
-  @JSImport("@wordpress/hooks", "currentAction")
+  @JSImport("@wordpress/hooks", "addFilter")
   @js.native
-  val currentAction: CurrentHook = js.native
+  val addFilter: AddHook = js.native
   
-  @JSImport("@wordpress/hooks", "currentFilter")
+  inline def applyFilters(hookName: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyFilters")(List(hookName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  
+  /** @typedef {_Hooks} Hooks */
+  /**
+    * Returns an instance of the hooks object.
+    *
+    * @return {Hooks} A Hooks instance.
+    */
+  inline def createHooks(): typings.wordpressHooks.createHooksMod.Hooks = ^.asInstanceOf[js.Dynamic].applyDynamic("createHooks")().asInstanceOf[typings.wordpressHooks.createHooksMod.Hooks]
+  
+  inline def currentAction(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("currentAction")().asInstanceOf[String | Null]
+  
+  inline def currentFilter(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("currentFilter")().asInstanceOf[String | Null]
+  
+  @JSImport("@wordpress/hooks", "defaultHooks")
   @js.native
-  val currentFilter: CurrentHook = js.native
+  val defaultHooks: _Hooks = js.native
   
   @JSImport("@wordpress/hooks", "didAction")
   @js.native
@@ -59,9 +55,7 @@ object mod {
   @js.native
   val didFilter: DidHook = js.native
   
-  @JSImport("@wordpress/hooks", "doAction")
-  @js.native
-  val doAction: RunHook = js.native
+  inline def doAction(hookName: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("doAction")(List(hookName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("@wordpress/hooks", "doingAction")
   @js.native
@@ -73,7 +67,7 @@ object mod {
   
   @JSImport("@wordpress/hooks", "filters")
   @js.native
-  val filters: HookMap[FilterCallback] = js.native
+  val filters: Store = js.native
   
   @JSImport("@wordpress/hooks", "hasAction")
   @js.native
@@ -100,56 +94,119 @@ object mod {
   val removeFilter: RemoveHook = js.native
   
   @js.native
-  trait ActionCallback extends StObject {
+  trait Callback extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Any = js.native
   }
   
-  type CurrentHook = js.Function0[String | Null]
-  
-  type DidHook = js.Function1[/* hookName */ String, Double]
-  
-  type DoingHook = js.Function1[/* hookName */ js.UndefOr[String], Boolean]
-  
-  @js.native
-  trait FilterCallback extends StObject {
+  trait Current extends StObject {
     
-    def apply[T](firstArg: T, rest: js.Any*): T | Double | String = js.native
+    /**
+      * The index
+      */
+    var currentIndex: Double
+    
+    /**
+      * Hook name
+      */
+    var name: String
+  }
+  object Current {
+    
+    inline def apply(currentIndex: Double, name: String): Current = {
+      val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Current]
+    }
+    
+    extension [Self <: Current](x: Self) {
+      
+      inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
   }
   
-  type HasHook = js.Function1[/* hookName */ String, Boolean]
+  trait Handler extends StObject {
+    
+    /**
+      * The callback
+      */
+    def callback(args: Any*): Any
+    /**
+      * The callback
+      */
+    @JSName("callback")
+    var callback_Original: Callback
+    
+    /**
+      * The namespace
+      */
+    var namespace: String
+    
+    /**
+      * The namespace
+      */
+    var priority: Double
+  }
+  object Handler {
+    
+    inline def apply(callback: Callback, namespace: String, priority: Double): Handler = {
+      val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Handler]
+    }
+    
+    extension [Self <: Handler](x: Self) {
+      
+      inline def setCallback(value: Callback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    }
+  }
   
-  trait Hook[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
+  trait Hook extends StObject {
     
-    var handlers: js.Array[T]
+    /**
+      * Array of handlers
+      */
+    var handlers: js.Array[Handler]
     
+    /**
+      * Run counter
+      */
     var runs: Double
   }
   object Hook {
     
-    inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](handlers: js.Array[T], runs: Double): Hook[T] = {
+    inline def apply(handlers: js.Array[Handler], runs: Double): Hook = {
       val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], runs = runs.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Hook[T]]
+      __obj.asInstanceOf[Hook]
     }
     
-    extension [Self <: Hook[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & Hook[T]) {
+    extension [Self <: Hook](x: Self) {
       
-      inline def setHandlers(value: js.Array[T]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: js.Array[Handler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      inline def setHandlersVarargs(value: T*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+      inline def setHandlersVarargs(value: Handler*): Self = StObject.set(x, "handlers", js.Array(value*))
       
       inline def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     }
   }
   
-  type HookMap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = Current[T] & (Record[String, js.UndefOr[js.Array[Hook[T]]]])
+  type Hooks = typings.wordpressHooks.createHooksMod.Hooks
   
-  type RemoveHook = js.Function2[/* hookName */ String, /* namespace */ String, Double]
+  type Store = (Record[String, Hook]) & typings.wordpressHooks.anon.Current
   
-  @js.native
-  trait RunHook extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.wordpressHooks.wordpressHooksStrings.actions
+    - typings.wordpressHooks.wordpressHooksStrings.filters
+  */
+  trait StoreKey extends StObject
+  object StoreKey {
     
-    def apply[T](hookName: String, firstArg: T, rest: js.Any*): T | Double | String = js.native
-    def apply[T](hookName: String, firstArg: Unit, rest: js.Any*): T | Double | String = js.native
+    inline def actions: typings.wordpressHooks.wordpressHooksStrings.actions = "actions".asInstanceOf[typings.wordpressHooks.wordpressHooksStrings.actions]
+    
+    inline def filters: typings.wordpressHooks.wordpressHooksStrings.filters = "filters".asInstanceOf[typings.wordpressHooks.wordpressHooksStrings.filters]
   }
 }

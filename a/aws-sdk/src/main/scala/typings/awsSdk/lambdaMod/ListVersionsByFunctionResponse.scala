@@ -33,6 +33,6 @@ object ListVersionsByFunctionResponse {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    inline def setVersionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "Versions", js.Array(value*))
   }
 }

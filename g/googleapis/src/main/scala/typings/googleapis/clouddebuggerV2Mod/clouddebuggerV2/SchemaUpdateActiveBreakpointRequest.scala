@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to update an active breakpoint.
-  */
 trait SchemaUpdateActiveBreakpointRequest extends StObject {
   
   /**
-    * Updated breakpoint information. The field `id` must be set. The agent
-    * must echo all Breakpoint specification fields in the update.
+    * Required. Updated breakpoint information. The field `id` must be set. The agent must echo all Breakpoint specification fields in the update.
     */
   var breakpoint: js.UndefOr[SchemaBreakpoint] = js.undefined
 }

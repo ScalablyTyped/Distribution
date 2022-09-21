@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "BucketsApi")
 @js.native
-class BucketsApi () extends StObject {
+open class BucketsApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Use this endpoint to create a bucket. Buckets are arbitrary spaces created and owned by applications.

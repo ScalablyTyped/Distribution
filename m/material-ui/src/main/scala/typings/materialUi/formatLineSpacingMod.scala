@@ -10,10 +10,10 @@ object formatLineSpacingMod {
   
   @JSImport("material-ui/svg-icons/editor/format-line-spacing", JSImport.Default)
   @js.native
-  class default () extends EditorFormatLineSpacing
+  open class default () extends EditorFormatLineSpacing
   
   @JSImport("material-ui/svg-icons/editor/format-line-spacing", "EditorFormatLineSpacing")
   @js.native
-  class EditorFormatLineSpacing ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatLineSpacing ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

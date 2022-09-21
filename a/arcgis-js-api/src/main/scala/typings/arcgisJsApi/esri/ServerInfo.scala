@@ -18,7 +18,7 @@ trait ServerInfo
   var adminTokenServiceUrl: String = js.native
   
   /**
-    * Version of the ArcGIS Server deployed on this server.
+    * Version of the ArcGIS Server or Portal deployed on the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#currentVersion)
     */
@@ -58,4 +58,11 @@ trait ServerInfo
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#tokenServiceUrl)
     */
   var tokenServiceUrl: String = js.native
+  
+  /**
+    * Indicates whether the server is configured to work with web tier authentication.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#webTierAuth)
+    */
+  var webTierAuth: Boolean = js.native
 }

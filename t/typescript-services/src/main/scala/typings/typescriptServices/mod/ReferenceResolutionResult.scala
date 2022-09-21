@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ReferenceResolutionResult")
 @js.native
-class ReferenceResolutionResult ()
+open class ReferenceResolutionResult ()
   extends StObject
      with typings.typescriptServices.TypeScript.ReferenceResolutionResult {
   

@@ -51,6 +51,6 @@ object RemoveAttributes {
     
     inline def setReplaceStringsUndefined: Self = StObject.set(x, "replaceStrings", js.undefined)
     
-    inline def setReplaceStringsVarargs(value: Replace*): Self = StObject.set(x, "replaceStrings", js.Array(value :_*))
+    inline def setReplaceStringsVarargs(value: Replace*): Self = StObject.set(x, "replaceStrings", js.Array(value*))
   }
 }

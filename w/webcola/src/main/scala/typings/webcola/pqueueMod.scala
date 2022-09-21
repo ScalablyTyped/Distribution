@@ -8,7 +8,7 @@ object pqueueMod {
   
   @JSImport("webcola/dist/src/pqueue", "PairingHeap")
   @js.native
-  class PairingHeap[T] protected () extends StObject {
+  open class PairingHeap[T] protected () extends StObject {
     def this(elem: T) = this()
     
     def contains(h: PairingHeap[T]): Boolean = js.native
@@ -26,13 +26,13 @@ object pqueueMod {
     
     def empty(): Boolean = js.native
     
-    def forEach(f: js.Any): Unit = js.native
+    def forEach(f: Any): Unit = js.native
     
-    def insert(obj: T, lessThan: js.Any): PairingHeap[T] = js.native
+    def insert(obj: T, lessThan: Any): PairingHeap[T] = js.native
     
     def isHeap(lessThan: js.Function2[/* a */ T, /* b */ T, Boolean]): Boolean = js.native
     
-    def merge(heap2: PairingHeap[T], lessThan: js.Any): PairingHeap[T] = js.native
+    def merge(heap2: PairingHeap[T], lessThan: Any): PairingHeap[T] = js.native
     
     def mergePairs(lessThan: js.Function2[/* a */ T, /* b */ T, Boolean]): PairingHeap[T] = js.native
     
@@ -40,25 +40,25 @@ object pqueueMod {
     
     def removeMin(lessThan: js.Function2[/* a */ T, /* b */ T, Boolean]): PairingHeap[T] = js.native
     
-    /* private */ var subheaps: js.Any = js.native
+    /* private */ var subheaps: Any = js.native
     
-    def toString(selector: js.Any): String = js.native
+    def toString(selector: Any): String = js.native
   }
   
   @JSImport("webcola/dist/src/pqueue", "PriorityQueue")
   @js.native
-  class PriorityQueue[T] protected () extends StObject {
+  open class PriorityQueue[T] protected () extends StObject {
     def this(lessThan: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
     
     def count(): Double = js.native
     
     def empty(): Boolean = js.native
     
-    def forEach(f: js.Any): Unit = js.native
+    def forEach(f: Any): Unit = js.native
     
     def isHeap(): Boolean = js.native
     
-    /* private */ var lessThan: js.Any = js.native
+    /* private */ var lessThan: Any = js.native
     
     def pop(): T = js.native
     
@@ -71,9 +71,9 @@ object pqueueMod {
       setHeapNode: js.Function2[/* e */ T, /* h */ PairingHeap[T], Unit]
     ): Unit = js.native
     
-    /* private */ var root: js.Any = js.native
+    /* private */ var root: Any = js.native
     
-    def toString(selector: js.Any): String = js.native
+    def toString(selector: Any): String = js.native
     
     def top(): T = js.native
   }

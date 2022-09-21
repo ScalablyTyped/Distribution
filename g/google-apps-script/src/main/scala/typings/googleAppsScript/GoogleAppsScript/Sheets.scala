@@ -294,7 +294,7 @@ trait Sheets extends StObject {
   def newClearBasicFilterRequest(): ClearBasicFilterRequest
   
   // Create a new instance of ClearValuesRequest
-  def newClearValuesRequest(): js.Any
+  def newClearValuesRequest(): Any
   
   // Schema.ClearValuesRequest;
   // Create a new instance of Color
@@ -673,7 +673,7 @@ object Sheets {
     newChartSourceRange: () => ChartSourceRange,
     newChartSpec: () => ChartSpec,
     newClearBasicFilterRequest: () => ClearBasicFilterRequest,
-    newClearValuesRequest: () => js.Any,
+    newClearValuesRequest: () => Any,
     newColor: () => Color,
     newConditionValue: () => ConditionValue,
     newConditionalFormatRule: () => ConditionalFormatRule,
@@ -919,7 +919,7 @@ object Sheets {
         // The caller must specify the spreadsheet ID and range.
         // Only values are cleared -- all other properties of the cell (such as
         // formatting, data validation, etc..) are kept.
-        def clear(resource: js.Any, /* Schema.ClearValuesRequest */ spreadsheetId: String, range: String): ClearValuesResponse = js.native
+        def clear(resource: Any, /* Schema.ClearValuesRequest */ spreadsheetId: String, range: String): ClearValuesResponse = js.native
         
         // Returns a range of values from a spreadsheet.
         // The caller must specify the spreadsheet ID and a range.
@@ -1164,7 +1164,7 @@ object Sheets {
         
         inline def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
         
-        inline def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
+        inline def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value*))
       }
     }
     
@@ -1345,7 +1345,7 @@ object Sheets {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
         
@@ -1681,7 +1681,7 @@ object Sheets {
         
         inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
         
-        inline def setAxisVarargs(value: BasicChartAxis*): Self = StObject.set(x, "axis", js.Array(value :_*))
+        inline def setAxisVarargs(value: BasicChartAxis*): Self = StObject.set(x, "axis", js.Array(value*))
         
         inline def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
         
@@ -1695,7 +1695,7 @@ object Sheets {
         
         inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
         
-        inline def setDomainsVarargs(value: BasicChartDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+        inline def setDomainsVarargs(value: BasicChartDomain*): Self = StObject.set(x, "domains", js.Array(value*))
         
         inline def setHeaderCount(value: Double): Self = StObject.set(x, "headerCount", value.asInstanceOf[js.Any])
         
@@ -1717,7 +1717,7 @@ object Sheets {
         
         inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
         
-        inline def setSeriesVarargs(value: BasicChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+        inline def setSeriesVarargs(value: BasicChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
         
         inline def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
         
@@ -1758,7 +1758,7 @@ object Sheets {
         
         inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
         
-        inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+        inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
       }
     }
     
@@ -1779,7 +1779,7 @@ object Sheets {
         
         inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
         
-        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
       }
     }
     
@@ -1802,7 +1802,7 @@ object Sheets {
         
         inline def setClearedRangesUndefined: Self = StObject.set(x, "clearedRanges", js.undefined)
         
-        inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value :_*))
+        inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value*))
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -1827,7 +1827,7 @@ object Sheets {
         
         inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
         
-        inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+        inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value*))
       }
     }
     
@@ -1850,7 +1850,7 @@ object Sheets {
         
         inline def setClearedRangesUndefined: Self = StObject.set(x, "clearedRanges", js.undefined)
         
-        inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value :_*))
+        inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value*))
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -1881,7 +1881,7 @@ object Sheets {
         
         inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
         
-        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
         
         inline def setDateTimeRenderOption(value: String): Self = StObject.set(x, "dateTimeRenderOption", value.asInstanceOf[js.Any])
         
@@ -1920,7 +1920,7 @@ object Sheets {
         
         inline def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
         
-        inline def setValueRangesVarargs(value: MatchedValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
+        inline def setValueRangesVarargs(value: MatchedValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value*))
       }
     }
     
@@ -1947,7 +1947,7 @@ object Sheets {
         
         inline def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
         
-        inline def setValueRangesVarargs(value: ValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
+        inline def setValueRangesVarargs(value: ValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value*))
       }
     }
     
@@ -1978,7 +1978,7 @@ object Sheets {
         
         inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
         
-        inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
+        inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value*))
         
         inline def setResponseIncludeGridData(value: Boolean): Self = StObject.set(x, "responseIncludeGridData", value.asInstanceOf[js.Any])
         
@@ -1988,7 +1988,7 @@ object Sheets {
         
         inline def setResponseRangesUndefined: Self = StObject.set(x, "responseRanges", js.undefined)
         
-        inline def setResponseRangesVarargs(value: String*): Self = StObject.set(x, "responseRanges", js.Array(value :_*))
+        inline def setResponseRangesVarargs(value: String*): Self = StObject.set(x, "responseRanges", js.Array(value*))
       }
     }
     
@@ -2013,7 +2013,7 @@ object Sheets {
         
         inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
         
-        inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
+        inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value*))
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -2050,7 +2050,7 @@ object Sheets {
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setDataVarargs(value: DataFilterValueRange*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: DataFilterValueRange*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setIncludeValuesInResponse(value: Boolean): Self = StObject.set(x, "includeValuesInResponse", value.asInstanceOf[js.Any])
         
@@ -2097,7 +2097,7 @@ object Sheets {
         
         inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
         
-        inline def setResponsesVarargs(value: UpdateValuesByDataFilterResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+        inline def setResponsesVarargs(value: UpdateValuesByDataFilterResponse*): Self = StObject.set(x, "responses", js.Array(value*))
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -2146,7 +2146,7 @@ object Sheets {
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setDataVarargs(value: ValueRange*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: ValueRange*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setIncludeValuesInResponse(value: Boolean): Self = StObject.set(x, "includeValuesInResponse", value.asInstanceOf[js.Any])
         
@@ -2193,7 +2193,7 @@ object Sheets {
         
         inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
         
-        inline def setResponsesVarargs(value: UpdateValuesResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+        inline def setResponsesVarargs(value: UpdateValuesResponse*): Self = StObject.set(x, "responses", js.Array(value*))
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -2240,7 +2240,7 @@ object Sheets {
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        inline def setValuesVarargs(value: ConditionValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: ConditionValue*): Self = StObject.set(x, "values", js.Array(value*))
       }
     }
     
@@ -2435,7 +2435,7 @@ object Sheets {
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setDataVarargs(value: CandlestickData*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: CandlestickData*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setDomain(value: CandlestickDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -2587,7 +2587,7 @@ object Sheets {
         
         inline def setTextFormatRunsUndefined: Self = StObject.set(x, "textFormatRuns", js.undefined)
         
-        inline def setTextFormatRunsVarargs(value: TextFormatRun*): Self = StObject.set(x, "textFormatRuns", js.Array(value :_*))
+        inline def setTextFormatRunsVarargs(value: TextFormatRun*): Self = StObject.set(x, "textFormatRuns", js.Array(value*))
         
         inline def setUserEnteredFormat(value: CellFormat): Self = StObject.set(x, "userEnteredFormat", value.asInstanceOf[js.Any])
         
@@ -2714,7 +2714,7 @@ object Sheets {
         
         inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
         
-        inline def setSourcesVarargs(value: GridRange*): Self = StObject.set(x, "sources", js.Array(value :_*))
+        inline def setSourcesVarargs(value: GridRange*): Self = StObject.set(x, "sources", js.Array(value*))
       }
     }
     
@@ -2980,7 +2980,7 @@ object Sheets {
         
         inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
         
-        inline def setRangesVarargs(value: GridRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+        inline def setRangesVarargs(value: GridRange*): Self = StObject.set(x, "ranges", js.Array(value*))
       }
     }
     
@@ -3146,7 +3146,7 @@ object Sheets {
       
       var majorDimension: js.UndefOr[String] = js.undefined
       
-      var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+      var values: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
     }
     object DataFilterValueRange {
       
@@ -3165,11 +3165,11 @@ object Sheets {
         
         inline def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
         
-        inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
       }
     }
     
@@ -3328,7 +3328,7 @@ object Sheets {
         
         inline def setDeletedDeveloperMetadataUndefined: Self = StObject.set(x, "deletedDeveloperMetadata", js.undefined)
         
-        inline def setDeletedDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "deletedDeveloperMetadata", js.Array(value :_*))
+        inline def setDeletedDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "deletedDeveloperMetadata", js.Array(value*))
       }
     }
     
@@ -3368,7 +3368,7 @@ object Sheets {
         
         inline def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
         
-        inline def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
+        inline def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value*))
       }
     }
     
@@ -3700,7 +3700,7 @@ object Sheets {
         
         inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
         
-        inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+        inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value*))
         
         inline def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
         
@@ -3872,13 +3872,13 @@ object Sheets {
         
         inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
         
-        inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
         
         inline def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
         
         inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
         
-        inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
+        inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value*))
       }
     }
     
@@ -4035,7 +4035,7 @@ object Sheets {
         
         inline def setHiddenValuesUndefined: Self = StObject.set(x, "hiddenValues", js.undefined)
         
-        inline def setHiddenValuesVarargs(value: String*): Self = StObject.set(x, "hiddenValues", js.Array(value :_*))
+        inline def setHiddenValuesVarargs(value: String*): Self = StObject.set(x, "hiddenValues", js.Array(value*))
       }
     }
     
@@ -4082,7 +4082,7 @@ object Sheets {
         
         inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
         
-        inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+        inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -4219,7 +4219,7 @@ object Sheets {
         
         inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
         
-        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
         
         inline def setIncludeGridData(value: Boolean): Self = StObject.set(x, "includeGridData", value.asInstanceOf[js.Any])
         
@@ -4314,19 +4314,19 @@ object Sheets {
         
         inline def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
         
-        inline def setColumnMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
+        inline def setColumnMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "columnMetadata", js.Array(value*))
         
         inline def setRowData(value: js.Array[RowData]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
         
         inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
         
-        inline def setRowDataVarargs(value: RowData*): Self = StObject.set(x, "rowData", js.Array(value :_*))
+        inline def setRowDataVarargs(value: RowData*): Self = StObject.set(x, "rowData", js.Array(value*))
         
         inline def setRowMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "rowMetadata", value.asInstanceOf[js.Any])
         
         inline def setRowMetadataUndefined: Self = StObject.set(x, "rowMetadata", js.undefined)
         
-        inline def setRowMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "rowMetadata", js.Array(value :_*))
+        inline def setRowMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "rowMetadata", js.Array(value*))
         
         inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
         
@@ -4473,7 +4473,7 @@ object Sheets {
         
         inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
         
-        inline def setSeriesVarargs(value: HistogramSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+        inline def setSeriesVarargs(value: HistogramSeries*): Self = StObject.set(x, "series", js.Array(value*))
         
         inline def setShowItemDividers(value: Boolean): Self = StObject.set(x, "showItemDividers", value.asInstanceOf[js.Any])
         
@@ -4685,7 +4685,7 @@ object Sheets {
         
         inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
         
-        inline def setGroupsVarargs(value: ManualRuleGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: ManualRuleGroup*): Self = StObject.set(x, "groups", js.Array(value*))
       }
     }
     
@@ -4712,7 +4712,7 @@ object Sheets {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ExtendedValue*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ExtendedValue*): Self = StObject.set(x, "items", js.Array(value*))
       }
     }
     
@@ -4735,7 +4735,7 @@ object Sheets {
         
         inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
         
-        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
         
         inline def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
         
@@ -4762,7 +4762,7 @@ object Sheets {
         
         inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
         
-        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
         
         inline def setValueRange(value: ValueRange): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
         
@@ -5108,7 +5108,7 @@ object Sheets {
         
         inline def setVisibleValuesUndefined: Self = StObject.set(x, "visibleValues", js.undefined)
         
-        inline def setVisibleValuesVarargs(value: String*): Self = StObject.set(x, "visibleValues", js.Array(value :_*))
+        inline def setVisibleValuesVarargs(value: String*): Self = StObject.set(x, "visibleValues", js.Array(value*))
       }
     }
     
@@ -5171,7 +5171,7 @@ object Sheets {
         
         inline def setValueMetadataUndefined: Self = StObject.set(x, "valueMetadata", js.undefined)
         
-        inline def setValueMetadataVarargs(value: PivotGroupValueMetadata*): Self = StObject.set(x, "valueMetadata", js.Array(value :_*))
+        inline def setValueMetadataVarargs(value: PivotGroupValueMetadata*): Self = StObject.set(x, "valueMetadata", js.Array(value*))
       }
     }
     
@@ -5225,7 +5225,7 @@ object Sheets {
         
         inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
         
-        inline def setBucketsVarargs(value: ExtendedValue*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+        inline def setBucketsVarargs(value: ExtendedValue*): Self = StObject.set(x, "buckets", js.Array(value*))
         
         inline def setValuesIndex(value: Double): Self = StObject.set(x, "valuesIndex", value.asInstanceOf[js.Any])
         
@@ -5285,7 +5285,7 @@ object Sheets {
         
         inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
         
-        inline def setColumnsVarargs(value: PivotGroup*): Self = StObject.set(x, "columns", js.Array(value :_*))
+        inline def setColumnsVarargs(value: PivotGroup*): Self = StObject.set(x, "columns", js.Array(value*))
         
         inline def setCriteria(value: js.Object): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
         
@@ -5295,7 +5295,7 @@ object Sheets {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: PivotGroup*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: PivotGroup*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
@@ -5309,7 +5309,7 @@ object Sheets {
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        inline def setValuesVarargs(value: PivotValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: PivotValue*): Self = StObject.set(x, "values", js.Array(value*))
       }
     }
     
@@ -5411,7 +5411,7 @@ object Sheets {
         
         inline def setUnprotectedRangesUndefined: Self = StObject.set(x, "unprotectedRanges", js.undefined)
         
-        inline def setUnprotectedRangesVarargs(value: GridRange*): Self = StObject.set(x, "unprotectedRanges", js.Array(value :_*))
+        inline def setUnprotectedRangesVarargs(value: GridRange*): Self = StObject.set(x, "unprotectedRanges", js.Array(value*))
         
         inline def setWarningOnly(value: Boolean): Self = StObject.set(x, "warningOnly", value.asInstanceOf[js.Any])
         
@@ -5950,7 +5950,7 @@ object Sheets {
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        inline def setValuesVarargs(value: CellData*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: CellData*): Self = StObject.set(x, "values", js.Array(value*))
       }
     }
     
@@ -5971,7 +5971,7 @@ object Sheets {
         
         inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
         
-        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
       }
     }
     
@@ -5992,7 +5992,7 @@ object Sheets {
         
         inline def setMatchedDeveloperMetadataUndefined: Self = StObject.set(x, "matchedDeveloperMetadata", js.undefined)
         
-        inline def setMatchedDeveloperMetadataVarargs(value: MatchedDeveloperMetadata*): Self = StObject.set(x, "matchedDeveloperMetadata", js.Array(value :_*))
+        inline def setMatchedDeveloperMetadataVarargs(value: MatchedDeveloperMetadata*): Self = StObject.set(x, "matchedDeveloperMetadata", js.Array(value*))
       }
     }
     
@@ -6079,7 +6079,7 @@ object Sheets {
         
         inline def setBandedRangesUndefined: Self = StObject.set(x, "bandedRanges", js.undefined)
         
-        inline def setBandedRangesVarargs(value: BandedRange*): Self = StObject.set(x, "bandedRanges", js.Array(value :_*))
+        inline def setBandedRangesVarargs(value: BandedRange*): Self = StObject.set(x, "bandedRanges", js.Array(value*))
         
         inline def setBasicFilter(value: BasicFilter): Self = StObject.set(x, "basicFilter", value.asInstanceOf[js.Any])
         
@@ -6089,43 +6089,43 @@ object Sheets {
         
         inline def setChartsUndefined: Self = StObject.set(x, "charts", js.undefined)
         
-        inline def setChartsVarargs(value: EmbeddedChart*): Self = StObject.set(x, "charts", js.Array(value :_*))
+        inline def setChartsVarargs(value: EmbeddedChart*): Self = StObject.set(x, "charts", js.Array(value*))
         
         inline def setColumnGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "columnGroups", value.asInstanceOf[js.Any])
         
         inline def setColumnGroupsUndefined: Self = StObject.set(x, "columnGroups", js.undefined)
         
-        inline def setColumnGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "columnGroups", js.Array(value :_*))
+        inline def setColumnGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "columnGroups", js.Array(value*))
         
         inline def setConditionalFormats(value: js.Array[ConditionalFormatRule]): Self = StObject.set(x, "conditionalFormats", value.asInstanceOf[js.Any])
         
         inline def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
         
-        inline def setConditionalFormatsVarargs(value: ConditionalFormatRule*): Self = StObject.set(x, "conditionalFormats", js.Array(value :_*))
+        inline def setConditionalFormatsVarargs(value: ConditionalFormatRule*): Self = StObject.set(x, "conditionalFormats", js.Array(value*))
         
         inline def setData(value: js.Array[GridData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setDataVarargs(value: GridData*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: GridData*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
         
         inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
         
-        inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+        inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value*))
         
         inline def setFilterViews(value: js.Array[FilterView]): Self = StObject.set(x, "filterViews", value.asInstanceOf[js.Any])
         
         inline def setFilterViewsUndefined: Self = StObject.set(x, "filterViews", js.undefined)
         
-        inline def setFilterViewsVarargs(value: FilterView*): Self = StObject.set(x, "filterViews", js.Array(value :_*))
+        inline def setFilterViewsVarargs(value: FilterView*): Self = StObject.set(x, "filterViews", js.Array(value*))
         
         inline def setMerges(value: js.Array[GridRange]): Self = StObject.set(x, "merges", value.asInstanceOf[js.Any])
         
         inline def setMergesUndefined: Self = StObject.set(x, "merges", js.undefined)
         
-        inline def setMergesVarargs(value: GridRange*): Self = StObject.set(x, "merges", js.Array(value :_*))
+        inline def setMergesVarargs(value: GridRange*): Self = StObject.set(x, "merges", js.Array(value*))
         
         inline def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
@@ -6135,13 +6135,13 @@ object Sheets {
         
         inline def setProtectedRangesUndefined: Self = StObject.set(x, "protectedRanges", js.undefined)
         
-        inline def setProtectedRangesVarargs(value: ProtectedRange*): Self = StObject.set(x, "protectedRanges", js.Array(value :_*))
+        inline def setProtectedRangesVarargs(value: ProtectedRange*): Self = StObject.set(x, "protectedRanges", js.Array(value*))
         
         inline def setRowGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "rowGroups", value.asInstanceOf[js.Any])
         
         inline def setRowGroupsUndefined: Self = StObject.set(x, "rowGroups", js.undefined)
         
-        inline def setRowGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "rowGroups", js.Array(value :_*))
+        inline def setRowGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "rowGroups", js.Array(value*))
       }
     }
     
@@ -6229,7 +6229,7 @@ object Sheets {
         
         inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
         
-        inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+        inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
       }
     }
     
@@ -6316,13 +6316,13 @@ object Sheets {
         
         inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
         
-        inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+        inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value*))
         
         inline def setNamedRanges(value: js.Array[NamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
         
         inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
         
-        inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
+        inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value*))
         
         inline def setProperties(value: SpreadsheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
@@ -6332,7 +6332,7 @@ object Sheets {
         
         inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
         
-        inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+        inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "sheets", js.Array(value*))
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -6800,7 +6800,7 @@ object Sheets {
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value*))
         
         inline def setStart(value: GridCoordinate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
@@ -6928,7 +6928,7 @@ object Sheets {
         
         inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
         
-        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+        inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
         
         inline def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
         
@@ -6957,7 +6957,7 @@ object Sheets {
         
         inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
         
-        inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+        inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value*))
       }
     }
     
@@ -7296,7 +7296,7 @@ object Sheets {
       
       var range: js.UndefOr[String] = js.undefined
       
-      var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+      var values: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
     }
     object ValueRange {
       
@@ -7315,11 +7315,11 @@ object Sheets {
         
         inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
         
-        inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
       }
     }
     
@@ -7431,7 +7431,7 @@ object Sheets {
         
         inline def setCustomSubtotalsUndefined: Self = StObject.set(x, "customSubtotals", js.undefined)
         
-        inline def setCustomSubtotalsVarargs(value: WaterfallChartCustomSubtotal*): Self = StObject.set(x, "customSubtotals", js.Array(value :_*))
+        inline def setCustomSubtotalsVarargs(value: WaterfallChartCustomSubtotal*): Self = StObject.set(x, "customSubtotals", js.Array(value*))
         
         inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -7498,7 +7498,7 @@ object Sheets {
         
         inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
         
-        inline def setSeriesVarargs(value: WaterfallChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+        inline def setSeriesVarargs(value: WaterfallChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
         
         inline def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
         
@@ -7589,7 +7589,7 @@ object Sheets {
     
     inline def setNewClearBasicFilterRequest(value: () => ClearBasicFilterRequest): Self = StObject.set(x, "newClearBasicFilterRequest", js.Any.fromFunction0(value))
     
-    inline def setNewClearValuesRequest(value: () => js.Any): Self = StObject.set(x, "newClearValuesRequest", js.Any.fromFunction0(value))
+    inline def setNewClearValuesRequest(value: () => Any): Self = StObject.set(x, "newClearValuesRequest", js.Any.fromFunction0(value))
     
     inline def setNewColor(value: () => Color): Self = StObject.set(x, "newColor", js.Any.fromFunction0(value))
     

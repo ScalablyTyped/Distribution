@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionMatrixDynamicImplementor")
 @js.native
-class QuestionMatrixDynamicImplementor protected () extends QuestionMatrixBaseImplementor {
-  def this(question: Question) = this()
+open class QuestionMatrixDynamicImplementor protected () extends QuestionMatrixBaseImplementor {
+  def this(question: Any) = this()
   
-  /* protected */ def removeRow(row: MatrixDynamicRowModel): Unit = js.native
+  def getKoPopupIsVisible(row: Any): Any = js.native
 }

@@ -1,7 +1,7 @@
 package typings.request.mod
 
 import typings.caseless.mod.Httpified
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
 import typings.node.netMod.Socket
@@ -19,7 +19,6 @@ import typings.request.requestStrings.pipe
 import typings.request.requestStrings.request
 import typings.request.requestStrings.response
 import typings.request.requestStrings.socket
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +48,7 @@ trait Request
   
   var cert: js.UndefOr[Buffer] = js.native
   
-  def debug(args: js.Any*): Unit = js.native
+  def debug(args: Any*): Unit = js.native
   
   def destroy(): Unit = js.native
   
@@ -60,15 +59,15 @@ trait Request
   
   var encoding: js.UndefOr[String | Null] = js.native
   
-  def end(): Unit = js.native
-  def end(cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: String): Unit = js.native
-  def end(chunk: String, cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: Buffer): Unit = js.native
-  def end(chunk: Buffer, cb: js.Function0[Unit]): Unit = js.native
-  def end(str: String, encoding: String): Unit = js.native
-  def end(str: String, encoding: String, cb: js.Function0[Unit]): Unit = js.native
-  def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
+  def end(): Any = js.native
+  def end(cb: js.Function0[Unit]): Any = js.native
+  def end(chunk: String): Any = js.native
+  def end(chunk: String, cb: js.Function0[Unit]): Any = js.native
+  def end(chunk: Buffer): Any = js.native
+  def end(chunk: Buffer, cb: js.Function0[Unit]): Any = js.native
+  def end(str: String, encoding: String): Any = js.native
+  def end(str: String, encoding: String, cb: js.Function0[Unit]): Any = js.native
+  def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Any = js.native
   
   var explicitMethod: js.UndefOr[`true`] = js.native
   
@@ -77,7 +76,7 @@ trait Request
   var followOriginalHttpMethod: js.UndefOr[Boolean] = js.native
   
   def form(): typings.formData.mod.^ = js.native
-  def form(form: js.Any): Request = js.native
+  def form(form: Any): Request = js.native
   
   var gzip: js.UndefOr[Boolean] = js.native
   
@@ -97,7 +96,7 @@ trait Request
   
   def jar(jar: CookieJar): Request = js.native
   
-  def json(`val`: js.Any): Request = js.native
+  def json(`val`: Any): Request = js.native
   
   var key: js.UndefOr[Buffer] = js.native
   
@@ -111,6 +110,7 @@ trait Request
   
   def oauth(oauth: OAuthOptions): Request = js.native
   
+  def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("on")
   def on_complete(
     event: complete,
@@ -119,7 +119,7 @@ trait Request
   @JSName("on")
   def on_data(event: data, listener: js.Function1[/* data */ Buffer | String, Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* e */ Error, Unit]): this.type = js.native
+  def on_error(event: error, listener: js.Function1[/* e */ js.Error, Unit]): this.type = js.native
   @JSName("on")
   def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("on")
@@ -135,7 +135,7 @@ trait Request
   
   def pause(): Unit = js.native
   
-  def pipeDest(dest: js.Any): Unit = js.native
+  def pipeDest(dest: Any): Unit = js.native
   
   var pool: PoolOptions = js.native
   
@@ -189,10 +189,10 @@ trait Request
   var writable: Boolean = js.native
   
   def write(buffer: String): Boolean = js.native
-  def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Boolean = js.native
   def write(buffer: Buffer): Boolean = js.native
-  def write(buffer: Buffer, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  def write(buffer: Buffer, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Boolean = js.native
   def write(str: String, encoding: String): Boolean = js.native
-  def write(str: String, encoding: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
-  def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  def write(str: String, encoding: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Boolean = js.native
+  def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Boolean = js.native
 }

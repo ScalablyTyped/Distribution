@@ -11,14 +11,25 @@ object focusablesMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getFocusableIn(topNode: HTMLElement): js.Array[FocusableIn] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableIn")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[FocusableIn]]
+  
   inline def getFocusabledIn(topNode: HTMLElement): js.Array[FocusableIn] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusabledIn")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[FocusableIn]]
   
   trait FocusableIn extends StObject {
     
+    /**
+      * true, if this node is a focus-guard (system node)
+      */
     var guard: Boolean
     
+    /**
+      * tab index
+      */
     var index: Double
     
+    /**
+      * true, if this node belongs to a Lock
+      */
     var lockItem: Boolean
     
     var node: HTMLElement

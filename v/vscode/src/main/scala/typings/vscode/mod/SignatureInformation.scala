@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "SignatureInformation")
 @js.native
-class SignatureInformation protected () extends StObject {
+open class SignatureInformation protected () extends StObject {
   /**
     * Creates a new signature information object.
     *
@@ -20,7 +20,7 @@ class SignatureInformation protected () extends StObject {
   /**
     * The index of the active parameter.
     *
-    * If provided, this is used in place of [`SignatureHelp.activeSignature`](#SignatureHelp.activeSignature).
+    * If provided, this is used in place of {@linkcode SignatureHelp.activeParameter}.
     */
   var activeParameter: js.UndefOr[Double] = js.native
   

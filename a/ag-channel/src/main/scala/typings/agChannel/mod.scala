@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("ag-channel", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends AGChannel[T] {
+  open class ^[T] protected () extends AGChannel[T] {
     def this(
       name: String,
       client: Client,
@@ -55,7 +55,7 @@ object mod {
     
     def getOutputBackpressure(): Double = js.native
     
-    def getOutputConsumerBackpressure(consumerId: Double): js.Any = js.native
+    def getOutputConsumerBackpressure(consumerId: Double): Any = js.native
     
     def getOutputConsumerStats(consumerId: Double): js.UndefOr[ConsumerStats] = js.native
     
@@ -67,7 +67,7 @@ object mod {
     
     def hasOutputConsumer(consumerId: Double): Boolean = js.native
     
-    def invokePublish(data: js.Any): js.Promise[Unit] = js.native
+    def invokePublish(data: Any): js.Promise[Unit] = js.native
     
     def isSubscribed(): Boolean = js.native
     def isSubscribed(includePending: Boolean): Boolean = js.native
@@ -93,9 +93,9 @@ object mod {
     var state: ChannelState = js.native
     
     def subscribe(): Unit = js.native
-    def subscribe(options: js.Any): Unit = js.native
+    def subscribe(options: Any): Unit = js.native
     
-    def transmitPublish(data: js.Any): js.Promise[Unit] = js.native
+    def transmitPublish(data: Any): js.Promise[Unit] = js.native
     
     def unsubscribe(): Unit = js.native
   }
@@ -164,7 +164,7 @@ object mod {
     
     def getChannelState(channelName: String): ChannelState = js.native
     
-    def invokePublish(channelName: String, data: js.Any): js.Promise[js.Any] = js.native
+    def invokePublish(channelName: String, data: Any): js.Promise[Any] = js.native
     
     def isSubscribed(channelName: String): Boolean = js.native
     def isSubscribed(channelName: String, includePending: Boolean): Boolean = js.native
@@ -175,9 +175,9 @@ object mod {
     
     def killChannelOutputConsumer(consumerId: Double): Unit = js.native
     
-    def subscribe(channelName: String): AGChannel[js.Any] = js.native
+    def subscribe(channelName: String): AGChannel[Any] = js.native
     
-    def transmitPublish(channelName: String, data: js.Any): js.Promise[Unit] = js.native
+    def transmitPublish(channelName: String, data: Any): js.Promise[Unit] = js.native
     
     def unsubscribe(channelName: String): js.Promise[Unit] = js.native
   }

@@ -27,7 +27,7 @@ trait DatafeedFetchSchedule extends StObject {
   /** Whether the scheduled fetch is paused or not. */
   var paused: js.UndefOr[Boolean] = js.undefined
   
-  /** Time zone used for schedule. UTC by default. E.g., "America/Los_Angeles". */
+  /** Time zone used for schedule. UTC by default. For example, "America/Los_Angeles". */
   var timeZone: js.UndefOr[String] = js.undefined
   
   /** An optional user name for fetch_url. */

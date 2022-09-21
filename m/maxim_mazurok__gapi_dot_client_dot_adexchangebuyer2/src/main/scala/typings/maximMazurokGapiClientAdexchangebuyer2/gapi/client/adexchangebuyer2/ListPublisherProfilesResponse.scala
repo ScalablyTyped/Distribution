@@ -29,6 +29,6 @@ object ListPublisherProfilesResponse {
     
     inline def setPublisherProfilesUndefined: Self = StObject.set(x, "publisherProfiles", js.undefined)
     
-    inline def setPublisherProfilesVarargs(value: PublisherProfile*): Self = StObject.set(x, "publisherProfiles", js.Array(value :_*))
+    inline def setPublisherProfilesVarargs(value: PublisherProfile*): Self = StObject.set(x, "publisherProfiles", js.Array(value*))
   }
 }

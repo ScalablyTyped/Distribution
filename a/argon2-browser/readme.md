@@ -1,7 +1,7 @@
 
 # Scala.js typings for argon2-browser
 
-Typings are for version 1.12
+Typings are for version 1.18
 
 ## Library description:
 Argon2 library compiled for browser runtime
@@ -10,10 +10,10 @@ Argon2 library compiled for browser runtime
 | ------------------ | :-------------: |
 | Full name          | argon2-browser |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 12 |
-| # downloads        | 60266 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 9805.333333333334 |
+| # stars            | 275.0 |
 
 ## Links
 - [Homepage](https://github.com/antelle/argon2-browser#readme)

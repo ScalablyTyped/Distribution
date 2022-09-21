@@ -27,7 +27,7 @@ object ISmartArrayLike {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

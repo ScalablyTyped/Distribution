@@ -17,7 +17,7 @@ trait CreateReportGroupInput extends StObject {
   var name: ReportGroupName
   
   /**
-    *  A list of tag key and value pairs associated with this report group.  These tags are available for use by AWS services that support AWS CodeBuild report group tags.
+    *  A list of tag key and value pairs associated with this report group.  These tags are available for use by Amazon Web Services services that support CodeBuild report group tags.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   
@@ -44,7 +44,7 @@ object CreateReportGroupInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setType(value: ReportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

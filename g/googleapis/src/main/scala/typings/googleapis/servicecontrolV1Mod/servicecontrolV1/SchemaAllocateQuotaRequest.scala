@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for the AllocateQuota method.
-  */
 trait SchemaAllocateQuotaRequest extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaAllocateQuotaRequest extends StObject {
   var allocateOperation: js.UndefOr[SchemaQuotaOperation] = js.undefined
   
   /**
-    * Specifies which version of service configuration should be used to
-    * process the request. If unspecified or no matching version can be found,
-    * the latest one will be used.
+    * Specifies which version of service configuration should be used to process the request. If unspecified or no matching version can be found, the latest one will be used.
     */
-  var serviceConfigId: js.UndefOr[String] = js.undefined
+  var serviceConfigId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAllocateQuotaRequest {
   
@@ -35,6 +30,8 @@ object SchemaAllocateQuotaRequest {
     inline def setAllocateOperationUndefined: Self = StObject.set(x, "allocateOperation", js.undefined)
     
     inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
+    
+    inline def setServiceConfigIdNull: Self = StObject.set(x, "serviceConfigId", null)
     
     inline def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }

@@ -29,6 +29,6 @@ object StackFrames {
     
     inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
-    inline def setFrameVarargs(value: StackFrame*): Self = StObject.set(x, "frame", js.Array(value :_*))
+    inline def setFrameVarargs(value: StackFrame*): Self = StObject.set(x, "frame", js.Array(value*))
   }
 }

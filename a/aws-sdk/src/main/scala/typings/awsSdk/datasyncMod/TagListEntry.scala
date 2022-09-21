@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagListEntry extends StObject {
   
   /**
-    * The key for an AWS resource tag.
+    * The key for an Amazon Web Services resource tag.
     */
   var Key: TagKey
   
   /**
-    * The value for an AWS resource tag.
+    * The value for an Amazon Web Services resource tag.
     */
   var Value: js.UndefOr[TagValue] = js.undefined
 }

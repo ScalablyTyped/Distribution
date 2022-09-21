@@ -8,5 +8,5 @@ object revokeGrantMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/RevokeGrant", "RevokeGrant")
   @js.native
-  val RevokeGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val RevokeGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

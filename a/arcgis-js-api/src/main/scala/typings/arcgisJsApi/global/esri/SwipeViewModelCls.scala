@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.SwipeViewModel")
 @js.native
-class SwipeViewModelCls ()
+/**
+  * Provides the logic for the [Swipe](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe-SwipeViewModel.html)
+  */
+open class SwipeViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.SwipeViewModel {
   def this(properties: SwipeViewModelProperties) = this()

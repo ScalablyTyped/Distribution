@@ -11,18 +11,18 @@ object knockoutCompositionMod {
   
   @JSImport("aurelia-knockout/dist/commonjs/knockout-composition", "KnockoutComposition")
   @js.native
-  class KnockoutComposition protected () extends StObject {
+  open class KnockoutComposition protected () extends StObject {
     def this(compositionEngine: CompositionEngine, container: Container, loader: Loader) = this()
     
     /** internal: do not use */
-    def buildCompositionSettings(value: js.Any, bindingContext: js.Any): js.Promise[js.Any] = js.native
+    def buildCompositionSettings(value: Any, bindingContext: Any): js.Promise[Any] = js.native
     
     var compositionEngine: CompositionEngine = js.native
     
     var container: Container = js.native
     
     /** internal: do not use */
-    def getViewModelInstance(moduleId: String): js.Promise[js.Any] = js.native
+    def getViewModelInstance(moduleId: String): js.Promise[Any] = js.native
     
     var loader: Loader = js.native
     

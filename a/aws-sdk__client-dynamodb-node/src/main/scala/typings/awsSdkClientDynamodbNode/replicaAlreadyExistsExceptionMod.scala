@@ -8,5 +8,5 @@ object replicaAlreadyExistsExceptionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/ReplicaAlreadyExistsException", "ReplicaAlreadyExistsException")
   @js.native
-  val ReplicaAlreadyExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ReplicaAlreadyExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

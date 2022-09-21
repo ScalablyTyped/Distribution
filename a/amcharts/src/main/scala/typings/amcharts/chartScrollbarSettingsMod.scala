@@ -8,7 +8,7 @@ object chartScrollbarSettingsMod {
   
   @JSImport("amcharts/ChartScrollbarSettings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ChartScrollbarSettings {
     

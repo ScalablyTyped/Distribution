@@ -29,7 +29,7 @@ object DescribeCanariesLastRunResponse {
     
     inline def setCanariesLastRunUndefined: Self = StObject.set(x, "CanariesLastRun", js.undefined)
     
-    inline def setCanariesLastRunVarargs(value: CanaryLastRun*): Self = StObject.set(x, "CanariesLastRun", js.Array(value :_*))
+    inline def setCanariesLastRunVarargs(value: CanaryLastRun*): Self = StObject.set(x, "CanariesLastRun", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

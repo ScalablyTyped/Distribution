@@ -18,10 +18,11 @@ object renderingGroupMod {
   
   @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup")
   @js.native
-  class RenderingGroup protected () extends StObject {
+  open class RenderingGroup protected () extends StObject {
     /**
       * Creates a new rendering group.
       * @param index The rendering group index
+      * @param scene
       * @param opaqueSortCompareFn The opaque sort comparison function. If null no order is applied
       * @param alphaTestSortCompareFn The alpha test sort comparison function. If null no order is applied
       * @param transparentSortCompareFn The transparent sort comparison function. If null back to front + alpha index sort is applied
@@ -73,38 +74,59 @@ object renderingGroupMod {
       transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ) = this()
     
-    /* private */ var _alphaTestSortCompareFn: js.Any = js.native
+    /* private */ var _alphaTestSortCompareFn: Any = js.native
     
-    /* private */ var _alphaTestSubMeshes: js.Any = js.native
+    /* private */ var _alphaTestSubMeshes: Any = js.native
     
-    /* private */ var _depthOnlySubMeshes: js.Any = js.native
+    /* private */ var _depthOnlySubMeshes: Any = js.native
     
     /** @hidden */
     var _edgesRenderers: SmartArrayNoDuplicate[IEdgesRenderer] = js.native
     
-    /* private */ var _opaqueSortCompareFn: js.Any = js.native
+    /** @hidden */
+    var _empty: Boolean = js.native
     
-    /* private */ var _opaqueSubMeshes: js.Any = js.native
+    /* private */ var _opaqueSortCompareFn: Any = js.native
     
-    /* private */ var _particleSystems: js.Any = js.native
+    /* private */ var _opaqueSubMeshes: Any = js.native
     
-    /* private */ var _renderAlphaTest: js.Any = js.native
+    /* private */ var _particleSystems: Any = js.native
     
-    /* private */ var _renderOpaque: js.Any = js.native
+    /* private */ var _renderAlphaTest: Any = js.native
     
-    /* private */ var _renderParticles: js.Any = js.native
+    /**
+      * Renders the opaque submeshes in the order from the alphatestSortCompareFn.
+      * @param subMeshes The submeshes to render
+      */
+    /* private */ var _renderAlphaTestSorted: Any = js.native
     
-    /* private */ var _renderSprites: js.Any = js.native
+    /* private */ var _renderOpaque: Any = js.native
     
-    /* private */ var _renderTransparent: js.Any = js.native
+    /**
+      * Renders the opaque submeshes in the order from the opaqueSortCompareFn.
+      * @param subMeshes The submeshes to render
+      */
+    /* private */ var _renderOpaqueSorted: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _renderParticles: Any = js.native
     
-    /* private */ var _spriteManagers: js.Any = js.native
+    /* private */ var _renderSprites: Any = js.native
     
-    /* private */ var _transparentSortCompareFn: js.Any = js.native
+    /* private */ var _renderTransparent: Any = js.native
     
-    /* private */ var _transparentSubMeshes: js.Any = js.native
+    /**
+      * Renders the opaque submeshes in the order from the transparentSortCompareFn.
+      * @param subMeshes The submeshes to render
+      */
+    /* private */ var _renderTransparentSorted: Any = js.native
+    
+    /* private */ var _scene: Any = js.native
+    
+    /* private */ var _spriteManagers: Any = js.native
+    
+    /* private */ var _transparentSortCompareFn: Any = js.native
+    
+    /* private */ var _transparentSubMeshes: Any = js.native
     
     /**
       * Set the alpha test sort comparison function.
@@ -147,6 +169,9 @@ object renderingGroupMod {
     /**
       * Render all the sub meshes contained in the group.
       * @param customRenderFunction Used to override the default render behaviour of the group.
+      * @param renderSprites
+      * @param renderParticles
+      * @param activeMeshes
       * @returns true if rendered some submeshes.
       */
     def render(
@@ -165,24 +190,6 @@ object renderingGroupMod {
     ): Unit = js.native
     
     /**
-      * Renders the opaque submeshes in the order from the alphatestSortCompareFn.
-      * @param subMeshes The submeshes to render
-      */
-    /* private */ var renderAlphaTestSorted: js.Any = js.native
-    
-    /**
-      * Renders the opaque submeshes in the order from the opaqueSortCompareFn.
-      * @param subMeshes The submeshes to render
-      */
-    /* private */ var renderOpaqueSorted: js.Any = js.native
-    
-    /**
-      * Renders the opaque submeshes in the order from the transparentSortCompareFn.
-      * @param subMeshes The submeshes to render
-      */
-    /* private */ var renderTransparentSorted: js.Any = js.native
-    
-    /**
       * Set the transparent sort comparison function.
       * If null the sub meshes will be render in the order they were created
       */
@@ -195,10 +202,32 @@ object renderingGroupMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup._zeroVector")
+    /**
+      * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
+      * are grouped by material then geometry.
+      *
+      * @param a The first submesh
+      * @param b The second submesh
+      * @returns The result of the comparison
+      */
+    inline def PainterSortCompare(a: SubMesh, b: SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("PainterSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+      * Renders the submeshes in a specified order.
+      * @param subMeshes The submeshes to sort before render
+      * @param sortCompareFn The comparison function use to sort
+      * @param camera The camera position use to preprocess the submeshes to help sorting
+      * @param transparent Specifies to activate blending if true
+      */
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup._RenderSorted")
     @js.native
-    def _zeroVector: js.Any = js.native
-    inline def _zeroVector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_zeroVector")(x.asInstanceOf[js.Any])
+    def _RenderSorted: Any = js.native
+    inline def _RenderSorted_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RenderSorted")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup._ZeroVector")
+    @js.native
+    def _ZeroVector: Any = js.native
+    inline def _ZeroVector_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroVector")(x.asInstanceOf[js.Any])
     
     /**
       * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -229,26 +258,5 @@ object renderingGroupMod {
       * @returns The result of the comparison
       */
     inline def frontToBackSortCompare(a: SubMesh, b: SubMesh): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frontToBackSortCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-    
-    /**
-      * Renders the submeshes in a specified order.
-      * @param subMeshes The submeshes to sort before render
-      * @param sortCompareFn The comparison function use to sort
-      * @param cameraPosition The camera position use to preprocess the submeshes to help sorting
-      * @param transparent Specifies to activate blending if true
-      */
-    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup.renderSorted")
-    @js.native
-    def renderSorted: js.Any = js.native
-    inline def renderSorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSorted")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Renders the submeshes in the order they were dispatched (no sort applied).
-      * @param subMeshes The submeshes to render
-      */
-    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup.renderUnsorted")
-    @js.native
-    def renderUnsorted: js.Any = js.native
-    inline def renderUnsorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderUnsorted")(x.asInstanceOf[js.Any])
   }
 }

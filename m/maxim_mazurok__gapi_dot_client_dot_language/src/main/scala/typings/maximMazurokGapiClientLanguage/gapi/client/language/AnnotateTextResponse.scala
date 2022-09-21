@@ -40,7 +40,7 @@ object AnnotateTextResponse {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: ClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: ClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setDocumentSentiment(value: Sentiment): Self = StObject.set(x, "documentSentiment", value.asInstanceOf[js.Any])
     
@@ -50,7 +50,7 @@ object AnnotateTextResponse {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
@@ -60,12 +60,12 @@ object AnnotateTextResponse {
     
     inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    inline def setSentencesVarargs(value: Sentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: Sentence*): Self = StObject.set(x, "sentences", js.Array(value*))
     
     inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
-    inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value*))
   }
 }

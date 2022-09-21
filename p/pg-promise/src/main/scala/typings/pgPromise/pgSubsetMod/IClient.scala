@@ -1,7 +1,6 @@
 package typings.pgPromise.pgSubsetMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,13 +29,13 @@ trait IClient extends EventEmitter {
   
   var processID: Double = js.native
   
-  def query(config: js.Any): js.Promise[IResult] = js.native
-  def query(config: js.Any, callback: js.Function2[/* err */ Error, /* result */ IResult, Unit]): Unit = js.native
-  def query(config: js.Any, values: js.Array[js.Any]): js.Promise[IResult] = js.native
+  def query(config: Any): js.Promise[IResult] = js.native
+  def query(config: Any, callback: js.Function2[/* err */ js.Error, /* result */ IResult, Unit]): Unit = js.native
+  def query(config: Any, values: js.Array[Any]): js.Promise[IResult] = js.native
   def query(
-    config: js.Any,
-    values: js.Array[js.Any],
-    callback: js.Function2[/* err */ Error, /* result */ IResult, Unit]
+    config: Any,
+    values: js.Array[Any],
+    callback: js.Function2[/* err */ js.Error, /* result */ IResult, Unit]
   ): Unit = js.native
   
   var queryQueue: js.Array[IQuery] = js.native

@@ -9,12 +9,12 @@ trait DaySelectedEventUIParam extends StObject {
   /**
     * Gets a reference to currently selected date.
     */
-  var date: js.UndefOr[js.Any] = js.undefined
+  var date: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object DaySelectedEventUIParam {
   
@@ -25,11 +25,11 @@ object DaySelectedEventUIParam {
   
   extension [Self <: DaySelectedEventUIParam](x: Self) {
     
-    inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

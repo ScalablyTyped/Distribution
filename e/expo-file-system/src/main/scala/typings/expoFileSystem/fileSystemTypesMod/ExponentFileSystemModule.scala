@@ -17,6 +17,8 @@ trait ExponentFileSystemModule extends StObject {
   
   val copyAsync: js.UndefOr[PlatformMethod] = js.undefined
   
+  val createSAFFileAsync: js.UndefOr[PlatformMethod] = js.undefined
+  
   val deleteAsync: js.UndefOr[PlatformMethod] = js.undefined
   
   val documentDirectory: String | Null
@@ -37,21 +39,31 @@ trait ExponentFileSystemModule extends StObject {
   
   val makeDirectoryAsync: js.UndefOr[PlatformMethod] = js.undefined
   
+  val makeSAFDirectoryAsync: js.UndefOr[PlatformMethod] = js.undefined
+  
   val moveAsync: js.UndefOr[PlatformMethod] = js.undefined
   
   val name: ExponentFileSystem
+  
+  val networkTaskCancelAsync: js.UndefOr[PlatformMethod] = js.undefined
   
   val readAsStringAsync: js.UndefOr[PlatformMethod] = js.undefined
   
   val readDirectoryAsync: js.UndefOr[PlatformMethod] = js.undefined
   
+  val readSAFDirectoryAsync: js.UndefOr[PlatformMethod] = js.undefined
+  
   def removeListeners(count: Double): Unit
+  
+  val requestDirectoryPermissionsAsync: js.UndefOr[PlatformMethod] = js.undefined
   
   var startObserving: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var stopObserving: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   val uploadAsync: js.UndefOr[PlatformMethod] = js.undefined
+  
+  val uploadTaskStartAsync: js.UndefOr[PlatformMethod] = js.undefined
   
   val writeAsStringAsync: js.UndefOr[PlatformMethod] = js.undefined
 }
@@ -81,6 +93,10 @@ object ExponentFileSystemModule {
     inline def setCopyAsync(value: PlatformMethod): Self = StObject.set(x, "copyAsync", value.asInstanceOf[js.Any])
     
     inline def setCopyAsyncUndefined: Self = StObject.set(x, "copyAsync", js.undefined)
+    
+    inline def setCreateSAFFileAsync(value: PlatformMethod): Self = StObject.set(x, "createSAFFileAsync", value.asInstanceOf[js.Any])
+    
+    inline def setCreateSAFFileAsyncUndefined: Self = StObject.set(x, "createSAFFileAsync", js.undefined)
     
     inline def setDeleteAsync(value: PlatformMethod): Self = StObject.set(x, "deleteAsync", value.asInstanceOf[js.Any])
     
@@ -122,11 +138,19 @@ object ExponentFileSystemModule {
     
     inline def setMakeDirectoryAsyncUndefined: Self = StObject.set(x, "makeDirectoryAsync", js.undefined)
     
+    inline def setMakeSAFDirectoryAsync(value: PlatformMethod): Self = StObject.set(x, "makeSAFDirectoryAsync", value.asInstanceOf[js.Any])
+    
+    inline def setMakeSAFDirectoryAsyncUndefined: Self = StObject.set(x, "makeSAFDirectoryAsync", js.undefined)
+    
     inline def setMoveAsync(value: PlatformMethod): Self = StObject.set(x, "moveAsync", value.asInstanceOf[js.Any])
     
     inline def setMoveAsyncUndefined: Self = StObject.set(x, "moveAsync", js.undefined)
     
     inline def setName(value: ExponentFileSystem): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTaskCancelAsync(value: PlatformMethod): Self = StObject.set(x, "networkTaskCancelAsync", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTaskCancelAsyncUndefined: Self = StObject.set(x, "networkTaskCancelAsync", js.undefined)
     
     inline def setReadAsStringAsync(value: PlatformMethod): Self = StObject.set(x, "readAsStringAsync", value.asInstanceOf[js.Any])
     
@@ -136,7 +160,15 @@ object ExponentFileSystemModule {
     
     inline def setReadDirectoryAsyncUndefined: Self = StObject.set(x, "readDirectoryAsync", js.undefined)
     
+    inline def setReadSAFDirectoryAsync(value: PlatformMethod): Self = StObject.set(x, "readSAFDirectoryAsync", value.asInstanceOf[js.Any])
+    
+    inline def setReadSAFDirectoryAsyncUndefined: Self = StObject.set(x, "readSAFDirectoryAsync", js.undefined)
+    
     inline def setRemoveListeners(value: Double => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
+    
+    inline def setRequestDirectoryPermissionsAsync(value: PlatformMethod): Self = StObject.set(x, "requestDirectoryPermissionsAsync", value.asInstanceOf[js.Any])
+    
+    inline def setRequestDirectoryPermissionsAsyncUndefined: Self = StObject.set(x, "requestDirectoryPermissionsAsync", js.undefined)
     
     inline def setStartObserving(value: () => Unit): Self = StObject.set(x, "startObserving", js.Any.fromFunction0(value))
     
@@ -149,6 +181,10 @@ object ExponentFileSystemModule {
     inline def setUploadAsync(value: PlatformMethod): Self = StObject.set(x, "uploadAsync", value.asInstanceOf[js.Any])
     
     inline def setUploadAsyncUndefined: Self = StObject.set(x, "uploadAsync", js.undefined)
+    
+    inline def setUploadTaskStartAsync(value: PlatformMethod): Self = StObject.set(x, "uploadTaskStartAsync", value.asInstanceOf[js.Any])
+    
+    inline def setUploadTaskStartAsyncUndefined: Self = StObject.set(x, "uploadTaskStartAsync", js.undefined)
     
     inline def setWriteAsStringAsync(value: PlatformMethod): Self = StObject.set(x, "writeAsStringAsync", value.asInstanceOf[js.Any])
     

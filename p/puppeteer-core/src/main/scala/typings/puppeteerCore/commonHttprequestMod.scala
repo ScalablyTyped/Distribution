@@ -1,11 +1,16 @@
 package typings.puppeteerCore
 
+import typings.devtoolsProtocol.mod.Protocol.Network.ErrorReason
+import typings.devtoolsProtocol.mod.Protocol.Network.Initiator
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestWillBeSentEvent
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.puppeteerCore.anon.ErrorText
-import typings.puppeteerCore.commonConnectionMod.CDPSession
-import typings.puppeteerCore.commonFrameManagerMod.Frame
+import typings.puppeteerCore.anon.PartialResponseForRequest
+import typings.puppeteerCore.commonEventEmitterMod.EventEmitter
+import typings.puppeteerCore.commonFrameMod.Frame
 import typings.puppeteerCore.commonHttpresponseMod.HTTPResponse
+import typings.puppeteerCore.puppeteerCoreStrings.abort_
+import typings.std.Lowercase
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +18,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object commonHttprequestMod {
   
+  @JSImport("puppeteer-core/lib/esm/puppeteer/common/HTTPRequest", "DEFAULT_INTERCEPT_RESOLUTION_PRIORITY")
+  @js.native
+  val DEFAULT_INTERCEPT_RESOLUTION_PRIORITY: /* 0 */ Double = js.native
+  
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/HTTPRequest", "HTTPRequest")
   @js.native
-  class HTTPRequest protected () extends StObject {
+  open class HTTPRequest protected () extends StObject {
+    def this(
+      client: CDPSession,
+      frame: Null,
+      interceptionId: String,
+      allowInterception: Boolean,
+      event: RequestWillBeSentEvent,
+      redirectChain: js.Array[HTTPRequest]
+    ) = this()
+    def this(
+      client: CDPSession,
+      frame: Null,
+      interceptionId: Unit,
+      allowInterception: Boolean,
+      event: RequestWillBeSentEvent,
+      redirectChain: js.Array[HTTPRequest]
+    ) = this()
     /**
       * @internal
       */
@@ -27,37 +52,29 @@ object commonHttprequestMod {
       event: RequestWillBeSentEvent,
       redirectChain: js.Array[HTTPRequest]
     ) = this()
-    
-    /* private */ var _allowInterception: js.Any = js.native
-    
-    /* private */ var _client: js.Any = js.native
+    def this(
+      client: CDPSession,
+      frame: Frame,
+      interceptionId: Unit,
+      allowInterception: Boolean,
+      event: RequestWillBeSentEvent,
+      redirectChain: js.Array[HTTPRequest]
+    ) = this()
     
     /**
       * @internal
       */
-    var _failureText: js.Any = js.native
-    
-    /* private */ var _frame: js.Any = js.native
+    var _failureText: String | Null = js.native
     
     /**
       * @internal
       */
     var _fromMemoryCache: Boolean = js.native
     
-    /* private */ var _headers: js.Any = js.native
-    
-    /* private */ var _interceptionHandled: js.Any = js.native
-    
     /**
       * @internal
       */
-    var _interceptionId: String = js.native
-    
-    /* private */ var _isNavigationRequest: js.Any = js.native
-    
-    /* private */ var _method: js.Any = js.native
-    
-    /* private */ var _postData: js.Any = js.native
+    var _interceptionId: js.UndefOr[String] = js.native
     
     /**
       * @internal
@@ -69,14 +86,10 @@ object commonHttprequestMod {
       */
     var _requestId: String = js.native
     
-    /* private */ var _resourceType: js.Any = js.native
-    
     /**
       * @internal
       */
     var _response: HTTPResponse | Null = js.native
-    
-    /* private */ var _url: js.Any = js.native
     
     /**
       * Aborts a request.
@@ -87,9 +100,26 @@ object commonHttprequestMod {
       * throw an exception immediately.
       *
       * @param errorCode - optional error code to provide.
+      * @param priority - If provided, intercept is resolved using
+      * cooperative handling rules. Otherwise, intercept is resolved
+      * immediately.
       */
     def abort(): js.Promise[Unit] = js.native
+    def abort(errorCode: Unit, priority: Double): js.Promise[Unit] = js.native
     def abort(errorCode: ErrorCode): js.Promise[Unit] = js.native
+    def abort(errorCode: ErrorCode, priority: Double): js.Promise[Unit] = js.native
+    
+    /**
+      * @returns the most recent reason for aborting the request
+      */
+    def abortErrorReason(): ErrorReason | Null = js.native
+    
+    /**
+      * Warning! Using this client can break Puppeteer. Use with caution.
+      *
+      * @experimental
+      */
+    def client: CDPSession = js.native
     
     /**
       * Continues request with optional request overrides.
@@ -102,7 +132,8 @@ object commonHttprequestMod {
       * Exception is immediately thrown if the request interception is not enabled.
       *
       * @example
-      * ```js
+      *
+      * ```ts
       * await page.setRequestInterception(true);
       * page.on('request', request => {
       *   // Override headers
@@ -115,9 +146,29 @@ object commonHttprequestMod {
       * ```
       *
       * @param overrides - optional overrides to apply to the request.
+      * @param priority - If provided, intercept is resolved using
+      * cooperative handling rules. Otherwise, intercept is resolved
+      * immediately.
       */
     def continue(): js.Promise[Unit] = js.native
+    def continue(overrides: Unit, priority: Double): js.Promise[Unit] = js.native
     def continue(overrides: ContinueRequestOverrides): js.Promise[Unit] = js.native
+    def continue(overrides: ContinueRequestOverrides, priority: Double): js.Promise[Unit] = js.native
+    
+    /**
+      * @returns the `ContinueRequestOverrides` that will be used
+      * if the interception is allowed to continue (ie, `abort()` and
+      * `respond()` aren't called).
+      */
+    def continueRequestOverrides(): ContinueRequestOverrides = js.native
+    
+    /**
+      * Adds an async request handler to the processing queue.
+      * Deferred handlers are not guaranteed to execute in any particular order,
+      * but they are guaranteed to resolve before the request interception
+      * is finalized.
+      */
+    def enqueueInterceptAction(pendingHandler: js.Function0[Unit | js.Thenable[Any]]): Unit = js.native
     
     /**
       * Access information about the request's failure.
@@ -128,7 +179,7 @@ object commonHttprequestMod {
       *
       * Example of logging all failed requests:
       *
-      * ```js
+      * ```ts
       * page.on('requestfailed', request => {
       *   console.log(request.url() + ' ' + request.failure().errorText);
       * });
@@ -136,13 +187,20 @@ object commonHttprequestMod {
       *
       * @returns `null` unless the request failed. If the request fails this can
       * return an object with `errorText` containing a human-readable error
-      * message, e.g. `net::ERR_FAILED`. It is not guaranteeded that there will be
+      * message, e.g. `net::ERR_FAILED`. It is not guaranteed that there will be
       * failure text if the request fails.
       */
     def failure(): ErrorText | Null = js.native
     
     /**
-      * @returns the frame that initiated the request.
+      * Awaits pending interception handlers and then decides how to fulfill
+      * the request interception.
+      */
+    def finalizeInterceptions(): js.Promise[Unit] = js.native
+    
+    /**
+      * @returns the frame that initiated the request, or null if navigating to
+      * error pages.
       */
     def frame(): Frame | Null = js.native
     
@@ -151,6 +209,30 @@ object commonHttprequestMod {
       * header names are lower-case.
       */
     def headers(): Record[String, String] = js.native
+    
+    /**
+      * @returns the initiator of the request.
+      */
+    def initiator(): Initiator = js.native
+    
+    /**
+      * @returns An InterceptResolutionState object describing the current resolution
+      * action and priority.
+      *
+      * InterceptResolutionState contains:
+      * action: InterceptResolutionAction
+      * priority?: number
+      *
+      * InterceptResolutionAction is one of: `abort`, `respond`, `continue`,
+      * `disabled`, `none`, or `already-handled`.
+      */
+    def interceptResolutionState(): InterceptResolutionState = js.native
+    
+    /**
+      * @returns `true` if the intercept resolution has already been handled,
+      * `false` otherwise.
+      */
+    def isInterceptResolutionHandled(): Boolean = js.native
     
     /**
       * @returns true if the request is the driver of the current frame's navigation.
@@ -167,7 +249,10 @@ object commonHttprequestMod {
       */
     def postData(): js.UndefOr[String] = js.native
     
+    /* private */ var `private`: Any = js.native
+    
     /**
+      * A `redirectChain` is a chain of requests initiated to fetch a resource.
       * @remarks
       *
       * `redirectChain` is shared between all the requests of the same chain.
@@ -175,7 +260,7 @@ object commonHttprequestMod {
       * For example, if the website `http://example.com` has a single redirect to
       * `https://example.com`, then the chain will contain one request:
       *
-      * ```js
+      * ```ts
       * const response = await page.goto('http://example.com');
       * const chain = response.request().redirectChain();
       * console.log(chain.length); // 1
@@ -184,7 +269,7 @@ object commonHttprequestMod {
       *
       * If the website `https://google.com` has no redirects, then the chain will be empty:
       *
-      * ```js
+      * ```ts
       * const response = await page.goto('https://google.com');
       * const chain = response.request().redirectChain();
       * console.log(chain.length); // 0
@@ -198,12 +283,8 @@ object commonHttprequestMod {
     /**
       * Contains the request's resource type as it was perceived by the rendering
       * engine.
-      * @remarks
-      * @returns one of the following: `document`, `stylesheet`, `image`, `media`,
-      * `font`, `script`, `texttrack`, `xhr`, `fetch`, `eventsource`, `websocket`,
-      * `manifest`, `other`.
       */
-    def resourceType(): String = js.native
+    def resourceType(): ResourceType = js.native
     
     /**
       * Fulfills a request with the given response.
@@ -217,13 +298,14 @@ object commonHttprequestMod {
       *
       * @example
       * An example of fulfilling all requests with 404 responses:
-      * ```js
+      *
+      * ```ts
       * await page.setRequestInterception(true);
       * page.on('request', request => {
       *   request.respond({
       *     status: 404,
       *     contentType: 'text/plain',
-      *     body: 'Not Found!'
+      *     body: 'Not Found!',
       *   });
       * });
       * ```
@@ -232,18 +314,102 @@ object commonHttprequestMod {
       * Calling `request.respond` for a dataURL request is a noop.
       *
       * @param response - the response to fulfill the request with.
+      * @param priority - If provided, intercept is resolved using
+      * cooperative handling rules. Otherwise, intercept is resolved
+      * immediately.
       */
-    def respond(response: ResponseForRequest): js.Promise[Unit] = js.native
+    def respond(response: PartialResponseForRequest): js.Promise[Unit] = js.native
+    def respond(response: PartialResponseForRequest, priority: Double): js.Promise[Unit] = js.native
     
     /**
-      * @returns the response for this request, if a response has been received.
+      * @returns A matching `HTTPResponse` object, or null if the response has not
+      * been received yet.
       */
     def response(): HTTPResponse | Null = js.native
+    
+    /**
+      * @returns The `ResponseForRequest` that gets used if the
+      * interception is allowed to respond (ie, `abort()` is not called).
+      */
+    def responseForRequest(): PartialResponseForRequest | Null = js.native
     
     /**
       * @returns the URL of the request
       */
     def url(): String = js.native
+  }
+  
+  @js.native
+  sealed trait InterceptResolutionAction extends StObject
+  @JSImport("puppeteer-core/lib/esm/puppeteer/common/HTTPRequest", "InterceptResolutionAction")
+  @js.native
+  object InterceptResolutionAction extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[InterceptResolutionAction & String] = js.native
+    
+    @js.native
+    sealed trait Abort
+      extends StObject
+         with InterceptResolutionAction
+    /* "abort" */ val Abort: typings.puppeteerCore.commonHttprequestMod.InterceptResolutionAction.Abort & String = js.native
+    
+    @js.native
+    sealed trait AlreadyHandled
+      extends StObject
+         with InterceptResolutionAction
+    /* "already-handled" */ val AlreadyHandled: typings.puppeteerCore.commonHttprequestMod.InterceptResolutionAction.AlreadyHandled & String = js.native
+    
+    @js.native
+    sealed trait Continue
+      extends StObject
+         with InterceptResolutionAction
+    /* "continue" */ val Continue: typings.puppeteerCore.commonHttprequestMod.InterceptResolutionAction.Continue & String = js.native
+    
+    @js.native
+    sealed trait Disabled
+      extends StObject
+         with InterceptResolutionAction
+    /* "disabled" */ val Disabled: typings.puppeteerCore.commonHttprequestMod.InterceptResolutionAction.Disabled & String = js.native
+    
+    @js.native
+    sealed trait None
+      extends StObject
+         with InterceptResolutionAction
+    /* "none" */ val None: typings.puppeteerCore.commonHttprequestMod.InterceptResolutionAction.None & String = js.native
+    
+    @js.native
+    sealed trait Respond
+      extends StObject
+         with InterceptResolutionAction
+    /* "respond" */ val Respond: typings.puppeteerCore.commonHttprequestMod.InterceptResolutionAction.Respond & String = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.puppeteerCore.puppeteerCoreStrings.continue
+    - typings.puppeteerCore.puppeteerCoreStrings.abort_
+    - typings.puppeteerCore.puppeteerCoreStrings.respond
+  */
+  trait ActionResult extends StObject
+  object ActionResult {
+    
+    inline def abort: abort_ = "abort".asInstanceOf[abort_]
+    
+    inline def continue: typings.puppeteerCore.puppeteerCoreStrings.continue = "continue".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.continue]
+    
+    inline def respond: typings.puppeteerCore.puppeteerCoreStrings.respond = "respond".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.respond]
+  }
+  
+  @js.native
+  trait CDPSession extends EventEmitter {
+    
+    @JSName("send")
+    def send_paramsType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 536 */ Any */](
+      method: T,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param paramArgs because its type ProtocolMapping.Commands[T]['paramsType'] is not an array type */ paramArgs: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'] */ js.Any
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
+      ] = js.native
   }
   
   trait ContinueRequestOverrides extends StObject {
@@ -334,19 +500,49 @@ object commonHttprequestMod {
     inline def timedout: typings.puppeteerCore.puppeteerCoreStrings.timedout = "timedout".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.timedout]
   }
   
+  trait InterceptResolutionState extends StObject {
+    
+    var action: InterceptResolutionAction
+    
+    var priority: js.UndefOr[Double] = js.undefined
+  }
+  object InterceptResolutionState {
+    
+    inline def apply(action: InterceptResolutionAction): InterceptResolutionState = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InterceptResolutionState]
+    }
+    
+    extension [Self <: InterceptResolutionState](x: Self) {
+      
+      inline def setAction(value: InterceptResolutionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    }
+  }
+  
+  type InterceptResolutionStrategy = InterceptResolutionAction
+  
+  type ResourceType = Lowercase[typings.devtoolsProtocol.mod.Protocol.Network.ResourceType]
+  
   trait ResponseForRequest extends StObject {
     
     var body: String | Buffer
     
     var contentType: String
     
-    var headers: Record[String, String]
+    /**
+      * Optional response headers. All values are converted to strings.
+      */
+    var headers: Record[String, Any]
     
     var status: Double
   }
   object ResponseForRequest {
     
-    inline def apply(body: String | Buffer, contentType: String, headers: Record[String, String], status: Double): ResponseForRequest = {
+    inline def apply(body: String | Buffer, contentType: String, headers: Record[String, Any], status: Double): ResponseForRequest = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseForRequest]
     }
@@ -357,7 +553,7 @@ object commonHttprequestMod {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bookshelf
 
-Typings are for version v1.1.1
+Typings are for version v1.2.0
 
 ## Library description:
 A lightweight ORM for PostgreSQL, MySQL, and SQLite3
@@ -10,15 +10,13 @@ A lightweight ORM for PostgreSQL, MySQL, and SQLite3
 | ------------------ | :-------------: |
 | Full name          | bookshelf |
 | Keywords           | orm, mysql, postgresql, sqlite, datamapper, active record |
-| # releases         | 13 |
-| # dependents       | 189 |
-| # downloads        | 2109063 |
-| # stars            | 65 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 373921.3333333333 |
+| # stars            | 6278.0 |
 
 ## Links
 - [Homepage](https://bookshelfjs.org)
-- [Bugs](https://github.com/bookshelf/bookshelf/issues)
-- [Repository](https://github.com/bookshelf/bookshelf)
 - [Npm](https://www.npmjs.com/package/bookshelf)
     
 

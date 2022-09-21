@@ -1,12 +1,12 @@
 package typings.expect
 
 import typings.chalk.mod.Chalk
-import typings.expect.typesMod.Tester
-import typings.jestDiff.typesMod.DiffOptions
+import typings.expect.mod.AsymmetricMatcher2
+import typings.jestExpectUtils.mod.Tester
+import typings.jestMatcherUtils.mod.DiffOptions
 import typings.jestMatcherUtils.mod.MatcherHintOptions
 import typings.jestMatcherUtils.mod.PrintLabel
-import typings.jestTypes.configMod.Path
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +17,13 @@ object anon {
     
     var actual: String | Double
     
-    var error: Error
+    var error: js.Error
     
     var expected: String
   }
   object Actual {
     
-    inline def apply(actual: String | Double, error: Error, expected: String): Actual = {
+    inline def apply(actual: String | Double, error: js.Error, expected: String): Actual = {
       val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any])
       __obj.asInstanceOf[Actual]
     }
@@ -32,53 +32,100 @@ object anon {
       
       inline def setActual(value: String | Double): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined std.Partial<expect.expect/build/types.MatcherState> */
+  /* Inlined std.Omit<expect.expect.AsymmetricMatchers, 'any' | 'anything'> */
+  trait OmitAsymmetricMatchersany extends StObject {
+    
+    var arrayContaining: js.Function1[/* sample */ js.Array[Any], AsymmetricMatcher2]
+    
+    var closeTo: js.Function2[/* sample */ Double, /* precision */ js.UndefOr[Double], AsymmetricMatcher2]
+    
+    var objectContaining: js.Function1[/* sample */ Record[String, Any], AsymmetricMatcher2]
+    
+    var stringContaining: js.Function1[/* sample */ String, AsymmetricMatcher2]
+    
+    var stringMatching: js.Function1[/* sample */ String | js.RegExp, AsymmetricMatcher2]
+  }
+  object OmitAsymmetricMatchersany {
+    
+    inline def apply(
+      arrayContaining: /* sample */ js.Array[Any] => AsymmetricMatcher2,
+      closeTo: (/* sample */ Double, /* precision */ js.UndefOr[Double]) => AsymmetricMatcher2,
+      objectContaining: /* sample */ Record[String, Any] => AsymmetricMatcher2,
+      stringContaining: /* sample */ String => AsymmetricMatcher2,
+      stringMatching: /* sample */ String | js.RegExp => AsymmetricMatcher2
+    ): OmitAsymmetricMatchersany = {
+      val __obj = js.Dynamic.literal(arrayContaining = js.Any.fromFunction1(arrayContaining), closeTo = js.Any.fromFunction2(closeTo), objectContaining = js.Any.fromFunction1(objectContaining), stringContaining = js.Any.fromFunction1(stringContaining), stringMatching = js.Any.fromFunction1(stringMatching))
+      __obj.asInstanceOf[OmitAsymmetricMatchersany]
+    }
+    
+    extension [Self <: OmitAsymmetricMatchersany](x: Self) {
+      
+      inline def setArrayContaining(value: /* sample */ js.Array[Any] => AsymmetricMatcher2): Self = StObject.set(x, "arrayContaining", js.Any.fromFunction1(value))
+      
+      inline def setCloseTo(value: (/* sample */ Double, /* precision */ js.UndefOr[Double]) => AsymmetricMatcher2): Self = StObject.set(x, "closeTo", js.Any.fromFunction2(value))
+      
+      inline def setObjectContaining(value: /* sample */ Record[String, Any] => AsymmetricMatcher2): Self = StObject.set(x, "objectContaining", js.Any.fromFunction1(value))
+      
+      inline def setStringContaining(value: /* sample */ String => AsymmetricMatcher2): Self = StObject.set(x, "stringContaining", js.Any.fromFunction1(value))
+      
+      inline def setStringMatching(value: /* sample */ String | js.RegExp => AsymmetricMatcher2): Self = StObject.set(x, "stringMatching", js.Any.fromFunction1(value))
+    }
+  }
+  
+  /* Inlined std.Omit<expect.expect.SyncExpectationResult, 'message'> & {  message :string} */
+  trait OmitSyncExpectationResult extends StObject {
+    
+    var message: String
+    
+    var pass: Boolean
+  }
+  object OmitSyncExpectationResult {
+    
+    inline def apply(message: String, pass: Boolean): OmitSyncExpectationResult = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OmitSyncExpectationResult]
+    }
+    
+    extension [Self <: OmitSyncExpectationResult](x: Self) {
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<expect.expect.MatcherState> */
   trait PartialMatcherState extends StObject {
     
     var assertionCalls: js.UndefOr[Double] = js.undefined
     
     var currentTestName: js.UndefOr[String] = js.undefined
     
-    var dontThrow: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    @JSName("equals")
-    var equals_FPartialMatcherState: js.UndefOr[
-        js.Function4[
-          /* a */ js.Any, 
-          /* b */ js.Any, 
-          /* customTesters */ js.UndefOr[js.Array[Tester]], 
-          /* strictCheck */ js.UndefOr[Boolean], 
-          Boolean
-        ]
-      ] = js.undefined
-    
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var expand: js.UndefOr[Boolean] = js.undefined
     
     var expectedAssertionsNumber: js.UndefOr[Double | Null] = js.undefined
     
-    var expectedAssertionsNumberError: js.UndefOr[Error] = js.undefined
+    var expectedAssertionsNumberError: js.UndefOr[js.Error] = js.undefined
     
     var isExpectingAssertions: js.UndefOr[Boolean] = js.undefined
     
-    var isExpectingAssertionsError: js.UndefOr[Error] = js.undefined
+    var isExpectingAssertionsError: js.UndefOr[js.Error] = js.undefined
     
     var isNot: js.UndefOr[Boolean] = js.undefined
     
     var promise: js.UndefOr[String] = js.undefined
     
-    var suppressedErrors: js.UndefOr[js.Array[Error]] = js.undefined
+    var suppressedErrors: js.UndefOr[js.Array[js.Error]] = js.undefined
     
-    var testPath: js.UndefOr[Path] = js.undefined
-    
-    var utils: js.UndefOr[readonlyprintExpectedvalu] = js.undefined
+    var testPath: js.UndefOr[String] = js.undefined
   }
   object PartialMatcherState {
     
@@ -97,17 +144,7 @@ object anon {
       
       inline def setCurrentTestNameUndefined: Self = StObject.set(x, "currentTestName", js.undefined)
       
-      inline def setDontThrow(value: () => Unit): Self = StObject.set(x, "dontThrow", js.Any.fromFunction0(value))
-      
-      inline def setDontThrowUndefined: Self = StObject.set(x, "dontThrow", js.undefined)
-      
-      inline def setEquals_(
-        value: (/* a */ js.Any, /* b */ js.Any, /* customTesters */ js.UndefOr[js.Array[Tester]], /* strictCheck */ js.UndefOr[Boolean]) => Boolean
-      ): Self = StObject.set(x, "equals", js.Any.fromFunction4(value))
-      
-      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
-      
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -117,7 +154,7 @@ object anon {
       
       inline def setExpectedAssertionsNumber(value: Double): Self = StObject.set(x, "expectedAssertionsNumber", value.asInstanceOf[js.Any])
       
-      inline def setExpectedAssertionsNumberError(value: Error): Self = StObject.set(x, "expectedAssertionsNumberError", value.asInstanceOf[js.Any])
+      inline def setExpectedAssertionsNumberError(value: js.Error): Self = StObject.set(x, "expectedAssertionsNumberError", value.asInstanceOf[js.Any])
       
       inline def setExpectedAssertionsNumberErrorUndefined: Self = StObject.set(x, "expectedAssertionsNumberError", js.undefined)
       
@@ -127,7 +164,7 @@ object anon {
       
       inline def setIsExpectingAssertions(value: Boolean): Self = StObject.set(x, "isExpectingAssertions", value.asInstanceOf[js.Any])
       
-      inline def setIsExpectingAssertionsError(value: Error): Self = StObject.set(x, "isExpectingAssertionsError", value.asInstanceOf[js.Any])
+      inline def setIsExpectingAssertionsError(value: js.Error): Self = StObject.set(x, "isExpectingAssertionsError", value.asInstanceOf[js.Any])
       
       inline def setIsExpectingAssertionsErrorUndefined: Self = StObject.set(x, "isExpectingAssertionsError", js.undefined)
       
@@ -141,80 +178,51 @@ object anon {
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
-      inline def setSuppressedErrors(value: js.Array[Error]): Self = StObject.set(x, "suppressedErrors", value.asInstanceOf[js.Any])
+      inline def setSuppressedErrors(value: js.Array[js.Error]): Self = StObject.set(x, "suppressedErrors", value.asInstanceOf[js.Any])
       
       inline def setSuppressedErrorsUndefined: Self = StObject.set(x, "suppressedErrors", js.undefined)
       
-      inline def setSuppressedErrorsVarargs(value: Error*): Self = StObject.set(x, "suppressedErrors", js.Array(value :_*))
+      inline def setSuppressedErrorsVarargs(value: js.Error*): Self = StObject.set(x, "suppressedErrors", js.Array(value*))
       
-      inline def setTestPath(value: Path): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
+      inline def setTestPath(value: String): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
       
       inline def setTestPathUndefined: Self = StObject.set(x, "testPath", js.undefined)
-      
-      inline def setUtils(value: readonlyprintExpectedvalu): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
-      
-      inline def setUtilsUndefined: Self = StObject.set(x, "utils", js.undefined)
     }
   }
   
-  @js.native
-  trait TypeofBOLDWEIGHT
-    extends StObject
-       with Chalk
-  
-  @js.native
-  trait TypeofDIMCOLOR
-    extends StObject
-       with Chalk
-  
-  @js.native
-  trait TypeofEXPECTEDCOLOR
-    extends StObject
-       with Chalk
-  
-  @js.native
-  trait TypeofINVERTEDCOLOR
-    extends StObject
-       with Chalk
-  
-  @js.native
-  trait TypeofRECEIVEDCOLOR
-    extends StObject
-       with Chalk
-  
-  /* Inlined {readonly printExpected (value : unknown): string,  readonly BOLD_WEIGHT :{ readonly ^ :chalk.chalk.Chalk},  readonly EXPECTED_COLOR :{ readonly ^ :chalk.chalk.Chalk}, readonly ensureActualIsNumber (actual : unknown, matcherName : string): void, readonly ensureActualIsNumber (actual : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly getLabelPrinter (strings : ...string): jest-matcher-utils.jest-matcher-utils.PrintLabel, readonly pluralize (word : string, count : number): string, readonly printDiffOrStringify (expected : unknown, received : unknown, expectedLabel : string, receivedLabel : string, expand : boolean): string, readonly ensureNoExpected (expected : unknown, matcherName : string): void, readonly ensureNoExpected (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly ensureExpectedIsNonNegativeInteger (expected : unknown, matcherName : string): void, readonly ensureExpectedIsNonNegativeInteger (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void,  readonly SUGGEST_TO_CONTAIN_EQUAL :string, readonly matcherHint (matcherName : string): string, readonly matcherHint (matcherName : string, received : string): string, readonly matcherHint (matcherName : string, received : string, expected : string): string, readonly matcherHint (matcherName : string, received : undefined, expected : string): string, readonly matcherHint (matcherName : string, received : string, expected : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : undefined, expected : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : string, expected : undefined, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : undefined, expected : undefined, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly ensureNumbers (actual : unknown, expected : unknown, matcherName : string): void, readonly ensureNumbers (actual : unknown, expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly printReceived (object : unknown): string, readonly diff (a : unknown, b : unknown): string | null, readonly diff (a : unknown, b : unknown, options : jest-diff.jest-diff/build/types.DiffOptions): string | null,  readonly DIM_COLOR :{ readonly ^ :chalk.chalk.Chalk}, readonly ensureExpectedIsNumber (expected : unknown, matcherName : string): void, readonly ensureExpectedIsNumber (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void,  readonly INVERTED_COLOR :{ readonly ^ :chalk.chalk.Chalk}, readonly printWithType (name : string, value : unknown, print : (value : unknown): string): string, readonly highlightTrailingWhitespace (text : string): string, readonly matcherErrorMessage (hint : string, generic : string): string, readonly matcherErrorMessage (hint : string, generic : string, specific : string): string,  readonly RECEIVED_COLOR :{ readonly ^ :chalk.chalk.Chalk}, readonly stringify (object : unknown): string, readonly stringify (object : unknown, maxDepth : number): string} & {  iterableEquality :expect.expect/build/types.Tester,   subsetEquality :expect.expect/build/types.Tester} */
+  /* Inlined {readonly printExpected (value : unknown): string,  readonly BOLD_WEIGHT :chalk.chalk.Chalk,  readonly EXPECTED_COLOR :chalk.chalk.Chalk, readonly ensureActualIsNumber (actual : unknown, matcherName : string): void, readonly ensureActualIsNumber (actual : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly getLabelPrinter (strings : ...string): jest-matcher-utils.jest-matcher-utils.PrintLabel, readonly pluralize (word : string, count : number): string, readonly printDiffOrStringify (expected : unknown, received : unknown, expectedLabel : string, receivedLabel : string, expand : boolean): string, readonly ensureNoExpected (expected : unknown, matcherName : string): void, readonly ensureNoExpected (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly ensureExpectedIsNonNegativeInteger (expected : unknown, matcherName : string): void, readonly ensureExpectedIsNonNegativeInteger (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void,  readonly SUGGEST_TO_CONTAIN_EQUAL :string, readonly matcherHint (matcherName : string): string, readonly matcherHint (matcherName : string, received : string): string, readonly matcherHint (matcherName : string, received : string, expected : string): string, readonly matcherHint (matcherName : string, received : undefined, expected : string): string, readonly matcherHint (matcherName : string, received : string, expected : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : undefined, expected : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : string, expected : undefined, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : undefined, expected : undefined, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly ensureNumbers (actual : unknown, expected : unknown, matcherName : string): void, readonly ensureNumbers (actual : unknown, expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly printReceived (object : unknown): string, readonly diff (a : unknown, b : unknown): string | null, readonly diff (a : unknown, b : unknown, options : jest-matcher-utils.jest-matcher-utils.DiffOptions): string | null,  readonly DIM_COLOR :chalk.chalk.Chalk, readonly ensureExpectedIsNumber (expected : unknown, matcherName : string): void, readonly ensureExpectedIsNumber (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void,  readonly INVERTED_COLOR :chalk.chalk.Chalk, readonly printWithType <T>(name : string, value : T, print : (value : T): string): string, readonly highlightTrailingWhitespace (text : string): string, readonly matcherErrorMessage (hint : string, generic : string): string, readonly matcherErrorMessage (hint : string, generic : string, specific : string): string,  readonly RECEIVED_COLOR :chalk.chalk.Chalk, readonly stringify (object : unknown): string, readonly stringify (object : unknown, maxDepth : number): string, readonly stringify (object : unknown, maxDepth : number, maxWidth : number): string, readonly stringify (object : unknown, maxDepth : undefined, maxWidth : number): string} & {  iterableEquality :@jest/expect-utils.@jest/expect-utils.Tester,   subsetEquality :@jest/expect-utils.@jest/expect-utils.Tester} */
   @js.native
   trait readonlyprintExpectedvalu extends StObject {
     
-    val BOLD_WEIGHT: TypeofBOLDWEIGHT = js.native
+    val BOLD_WEIGHT: Chalk = js.native
     
-    val DIM_COLOR: TypeofDIMCOLOR = js.native
+    val DIM_COLOR: Chalk = js.native
     
-    val EXPECTED_COLOR: TypeofEXPECTEDCOLOR = js.native
+    val EXPECTED_COLOR: Chalk = js.native
     
-    val INVERTED_COLOR: TypeofINVERTEDCOLOR = js.native
+    val INVERTED_COLOR: Chalk = js.native
     
-    val RECEIVED_COLOR: TypeofRECEIVEDCOLOR = js.native
+    val RECEIVED_COLOR: Chalk = js.native
     
     val SUGGEST_TO_CONTAIN_EQUAL: String = js.native
     
-    def diff(a: js.Any, b: js.Any): String | Null = js.native
-    def diff(a: js.Any, b: js.Any, options: DiffOptions): String | Null = js.native
+    def diff(a: Any, b: Any): String | Null = js.native
+    def diff(a: Any, b: Any, options: DiffOptions): String | Null = js.native
     
-    def ensureActualIsNumber(actual: js.Any, matcherName: String): Unit = js.native
-    def ensureActualIsNumber(actual: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+    def ensureActualIsNumber(actual: Any, matcherName: String): Unit = js.native
+    def ensureActualIsNumber(actual: Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
     
-    def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String): Unit = js.native
-    def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+    def ensureExpectedIsNonNegativeInteger(expected: Any, matcherName: String): Unit = js.native
+    def ensureExpectedIsNonNegativeInteger(expected: Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
     
-    def ensureExpectedIsNumber(expected: js.Any, matcherName: String): Unit = js.native
-    def ensureExpectedIsNumber(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+    def ensureExpectedIsNumber(expected: Any, matcherName: String): Unit = js.native
+    def ensureExpectedIsNumber(expected: Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
     
-    def ensureNoExpected(expected: js.Any, matcherName: String): Unit = js.native
-    def ensureNoExpected(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+    def ensureNoExpected(expected: Any, matcherName: String): Unit = js.native
+    def ensureNoExpected(expected: Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
     
-    def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String): Unit = js.native
-    def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
+    def ensureNumbers(actual: Any, expected: Any, matcherName: String): Unit = js.native
+    def ensureNumbers(actual: Any, expected: Any, matcherName: String, options: MatcherHintOptions): Unit = js.native
     
     def getLabelPrinter(strings: String*): PrintLabel = js.native
     
@@ -236,16 +244,18 @@ object anon {
     
     def pluralize(word: String, count: Double): String = js.native
     
-    def printDiffOrStringify(expected: js.Any, received: js.Any, expectedLabel: String, receivedLabel: String, expand: Boolean): String = js.native
+    def printDiffOrStringify(expected: Any, received: Any, expectedLabel: String, receivedLabel: String, expand: Boolean): String = js.native
     
-    def printExpected(value: js.Any): String = js.native
+    def printExpected(value: Any): String = js.native
     
-    def printReceived(`object`: js.Any): String = js.native
+    def printReceived(`object`: Any): String = js.native
     
-    def printWithType(name: String, value: js.Any, print: js.Function1[/* value */ js.Any, String]): String = js.native
+    def printWithType[T](name: String, value: T, print: js.Function1[/* value */ T, String]): String = js.native
     
-    def stringify(`object`: js.Any): String = js.native
-    def stringify(`object`: js.Any, maxDepth: Double): String = js.native
+    def stringify(`object`: Any): String = js.native
+    def stringify(`object`: Any, maxDepth: Double): String = js.native
+    def stringify(`object`: Any, maxDepth: Double, maxWidth: Double): String = js.native
+    def stringify(`object`: Any, maxDepth: Unit, maxWidth: Double): String = js.native
     
     var subsetEquality: Tester = js.native
   }

@@ -11,14 +11,11 @@ Generate random numbers with a seed, useful for reproducible tests
 | Full name          | seed-random |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 26002700 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 3666401.0 |
+| # stars            | 36.0 |
 
 ## Links
-- [Homepage](https://github.com/ForbesLindesay/seed-random#readme)
-- [Bugs](https://github.com/ForbesLindesay/seed-random/issues)
-- [Repository](https://github.com/ForbesLindesay/seed-random)
 - [Npm](https://www.npmjs.com/package/seed-random)
     
 

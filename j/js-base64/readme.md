@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-base64
 
-Typings are for version 3.0
+Typings are for version 3.7.2
 
 ## Library description:
 Yet another Base64 transcoder in pure-JS
@@ -10,10 +10,10 @@ Yet another Base64 transcoder in pure-JS
 | ------------------ | :-------------: |
 | Full name          | js-base64 |
 | Keywords           | base64, binary |
-| # releases         | 32 |
-| # dependents       | 1079 |
-| # downloads        | 309604007 |
-| # stars            | 36 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2.32616E7 |
+| # stars            | 3795.0 |
 
 ## Links
 - [Homepage](https://github.com/dankogai/js-base64#readme)
@@ -24,7 +24,7 @@ Yet another Base64 transcoder in pure-JS
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

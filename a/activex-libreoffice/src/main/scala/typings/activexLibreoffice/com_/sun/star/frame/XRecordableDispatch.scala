@@ -41,7 +41,7 @@ object XRecordableDispatch {
   inline def apply(
     acquire: () => Unit,
     dispatchAndRecord: (URL, SeqEquiv[PropertyValue], XDispatchRecorder) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRecordableDispatch = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dispatchAndRecord = js.Any.fromFunction3(dispatchAndRecord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

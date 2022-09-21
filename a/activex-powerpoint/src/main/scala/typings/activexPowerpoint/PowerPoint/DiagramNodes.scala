@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DiagramNodes extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Count: Double
   
   val Creator: Double
   
-  def Item(Index: js.Any): DiagramNode
+  def Item(Index: Any): DiagramNode
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.DiagramNodes_typekey")
   var PowerPointDotDiagramNodes_typekey: DiagramNodes
@@ -24,11 +24,11 @@ trait DiagramNodes extends StObject {
 object DiagramNodes {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Count: Double,
     Creator: Double,
-    Item: js.Any => DiagramNode,
-    Parent: js.Any,
+    Item: Any => DiagramNode,
+    Parent: Any,
     PowerPointDotDiagramNodes_typekey: DiagramNodes,
     SelectAll: () => Unit
   ): DiagramNodes = {
@@ -39,15 +39,15 @@ object DiagramNodes {
   
   extension [Self <: DiagramNodes](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => DiagramNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => DiagramNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotDiagramNodes_typekey(value: DiagramNodes): Self = StObject.set(x, "PowerPoint.DiagramNodes_typekey", value.asInstanceOf[js.Any])
     

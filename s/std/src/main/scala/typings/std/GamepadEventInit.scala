@@ -8,6 +8,7 @@ trait GamepadEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var gamepad: Gamepad
 }
 object GamepadEventInit {

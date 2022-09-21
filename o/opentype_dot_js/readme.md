@@ -10,10 +10,10 @@ OpenType font parser
 | ------------------ | :-------------: |
 | Full name          | opentype.js |
 | Keywords           | graphics, fonts, font, opentype, otf, ttf, woff, type |
-| # releases         | 12 |
-| # dependents       | 149 |
-| # downloads        | 2030304 |
-| # stars            | 9 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 838278.0 |
+| # stars            | 3605.0 |
 
 ## Links
 - [Homepage](https://github.com/opentypejs/opentype.js#readme)

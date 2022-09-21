@@ -27,7 +27,7 @@ trait DescribeAutomationStepExecutionsRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * A boolean that indicates whether to list step executions in reverse order by start time. The default value is false.
+    * Indicates whether to list step executions in reverse order by start time. The default value is 'false'.
     */
   var ReverseOrder: js.UndefOr[Boolean] = js.undefined
 }
@@ -46,7 +46,7 @@ object DescribeAutomationStepExecutionsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: StepExecutionFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: StepExecutionFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,7 @@ object Playlists {
   @JSGlobal("Windows.Media.Playlists.Playlist")
   @js.native
   /** Creates a new instance of a Playlist object. */
-  class Playlist ()
+  open class Playlist ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Playlists.Playlist
   object Playlist {

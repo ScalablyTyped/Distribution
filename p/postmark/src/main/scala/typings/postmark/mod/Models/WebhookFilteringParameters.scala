@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.WebhookFilteringParameters")
 @js.native
-class WebhookFilteringParameters protected ()
+open class WebhookFilteringParameters protected ()
   extends typings.postmark.modelsMod.WebhookFilteringParameters {
   def this(messageStream: String) = this()
 }

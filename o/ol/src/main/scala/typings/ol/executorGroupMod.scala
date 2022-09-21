@@ -3,12 +3,10 @@ package typings.ol
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.ol.builderTypeMod.BuilderType
-import typings.ol.canvasMod.DeclutterGroup
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.olMod.Transform
-import typings.ol.pluggableMapMod.DeclutterItems
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +20,7 @@ object executorGroupMod {
   
   @JSImport("ol/render/canvas/ExecutorGroup", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ExecutorGroup {
     def this(
@@ -30,28 +28,19 @@ object executorGroupMod {
       resolution: Double,
       pixelRatio: Double,
       overlaps: Boolean,
-      allInstructions: StringDictionary[typings.ol.olStrings.default & TopLevel[js.Any]]
+      allInstructions: StringDictionary[typings.ol.olStrings.default & TopLevel[Any]]
     ) = this()
     def this(
       maxExtent: Extent,
       resolution: Double,
       pixelRatio: Double,
       overlaps: Boolean,
-      allInstructions: StringDictionary[typings.ol.olStrings.default & TopLevel[js.Any]],
+      allInstructions: StringDictionary[typings.ol.olStrings.default & TopLevel[Any]],
       opt_renderBuffer: Double
     ) = this()
   }
   
-  inline def getCircleArray(radius: Double): js.Array[js.Array[js.UndefOr[Boolean]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCircleArray")(radius.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.UndefOr[Boolean]]]]
-  
-  inline def replayDeclutter(
-    declutterReplays: StringDictionary[js.Array[js.Any]],
-    context: CanvasRenderingContext2D,
-    rotation: Double,
-    opacity: Double,
-    snapToPixel: Boolean,
-    declutterItems: js.Array[DeclutterItems]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replayDeclutter")(declutterReplays.asInstanceOf[js.Any], context.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], snapToPixel.asInstanceOf[js.Any], declutterItems.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getPixelIndexArray(radius: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPixelIndexArray")(radius.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   @js.native
   trait ExecutorGroup extends StObject {
@@ -80,7 +69,7 @@ object executorGroupMod {
       viewRotation: Double,
       snapToPixel: Boolean,
       opt_builderTypes: js.Array[BuilderType],
-      opt_declutterReplays: StringDictionary[DeclutterGroup]
+      opt_declutterTree: typings.rbush.mod.default[Any]
     ): Unit = js.native
     def execute(
       context: CanvasRenderingContext2D,
@@ -89,7 +78,7 @@ object executorGroupMod {
       viewRotation: Double,
       snapToPixel: Boolean,
       opt_builderTypes: Unit,
-      opt_declutterReplays: StringDictionary[DeclutterGroup]
+      opt_declutterTree: typings.rbush.mod.default[Any]
     ): Unit = js.native
     
     def forEachFeatureAtCoordinate[T](
@@ -97,7 +86,12 @@ object executorGroupMod {
       resolution: Double,
       rotation: Double,
       hitTolerance: Double,
-      callback: js.Function1[/* p0 */ FeatureLike, T],
+      callback: js.Function3[
+          /* p0 */ FeatureLike, 
+          /* p1 */ typings.ol.simpleGeometryMod.default, 
+          /* p2 */ Double, 
+          T
+        ],
       declutteredFeatures: js.Array[FeatureLike]
     ): js.UndefOr[T] = js.native
     

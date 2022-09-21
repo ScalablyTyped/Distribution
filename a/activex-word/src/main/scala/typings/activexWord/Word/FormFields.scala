@@ -14,9 +14,9 @@ trait FormFields extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): FormField
+  def Item(Index: Any): FormField
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Shaded: Boolean
   
@@ -30,8 +30,8 @@ object FormFields {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => FormField,
-    Parent: js.Any,
+    Item: Any => FormField,
+    Parent: Any,
     Shaded: Boolean,
     WordDotFormFields_typekey: FormFields
   ): FormFields = {
@@ -50,9 +50,9 @@ object FormFields {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => FormField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => FormField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setShaded(value: Boolean): Self = StObject.set(x, "Shaded", value.asInstanceOf[js.Any])
     

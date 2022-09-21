@@ -26,7 +26,7 @@ object DrawCanvasOptions {
     
     inline def setActions(value: js.Array[CanvasAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: CanvasAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: CanvasAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setCanvasId(value: Double | String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
   }

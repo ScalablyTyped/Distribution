@@ -28,6 +28,8 @@ trait Message extends StObject {
   
   var delete_chat_photo: js.UndefOr[Boolean] = js.undefined
   
+  var dice: js.UndefOr[Dice] = js.undefined
+  
   var document: js.UndefOr[Document] = js.undefined
   
   var edit_date: js.UndefOr[Double] = js.undefined
@@ -52,7 +54,11 @@ trait Message extends StObject {
   
   var group_chat_created: js.UndefOr[Boolean] = js.undefined
   
+  var has_protected_content: js.UndefOr[Boolean] = js.undefined
+  
   var invoice: js.UndefOr[Invoice] = js.undefined
+  
+  var is_automatic_forward: js.UndefOr[Boolean] = js.undefined
   
   var left_chat_member: js.UndefOr[User] = js.undefined
   
@@ -84,6 +90,8 @@ trait Message extends StObject {
   
   var reply_to_message: js.UndefOr[Message] = js.undefined
   
+  var sender_chat: js.UndefOr[Chat] = js.undefined
+  
   var sticker: js.UndefOr[Sticker] = js.undefined
   
   var successful_payment: js.UndefOr[SuccessfulPayment] = js.undefined
@@ -99,6 +107,8 @@ trait Message extends StObject {
   var video_note: js.UndefOr[VideoNote] = js.undefined
   
   var voice: js.UndefOr[Voice] = js.undefined
+  
+  var web_app_data: js.UndefOr[WebAppData] = js.undefined
 }
 object Message {
   
@@ -129,7 +139,7 @@ object Message {
     
     inline def setCaption_entitiesUndefined: Self = StObject.set(x, "caption_entities", js.undefined)
     
-    inline def setCaption_entitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "caption_entities", js.Array(value :_*))
+    inline def setCaption_entitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "caption_entities", js.Array(value*))
     
     inline def setChannel_chat_created(value: Boolean): Self = StObject.set(x, "channel_chat_created", value.asInstanceOf[js.Any])
     
@@ -151,6 +161,10 @@ object Message {
     
     inline def setDelete_chat_photoUndefined: Self = StObject.set(x, "delete_chat_photo", js.undefined)
     
+    inline def setDice(value: Dice): Self = StObject.set(x, "dice", value.asInstanceOf[js.Any])
+    
+    inline def setDiceUndefined: Self = StObject.set(x, "dice", js.undefined)
+    
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
@@ -163,7 +177,7 @@ object Message {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setForward_date(value: Double): Self = StObject.set(x, "forward_date", value.asInstanceOf[js.Any])
     
@@ -201,9 +215,17 @@ object Message {
     
     inline def setGroup_chat_createdUndefined: Self = StObject.set(x, "group_chat_created", js.undefined)
     
+    inline def setHas_protected_content(value: Boolean): Self = StObject.set(x, "has_protected_content", value.asInstanceOf[js.Any])
+    
+    inline def setHas_protected_contentUndefined: Self = StObject.set(x, "has_protected_content", js.undefined)
+    
     inline def setInvoice(value: Invoice): Self = StObject.set(x, "invoice", value.asInstanceOf[js.Any])
     
     inline def setInvoiceUndefined: Self = StObject.set(x, "invoice", js.undefined)
+    
+    inline def setIs_automatic_forward(value: Boolean): Self = StObject.set(x, "is_automatic_forward", value.asInstanceOf[js.Any])
+    
+    inline def setIs_automatic_forwardUndefined: Self = StObject.set(x, "is_automatic_forward", js.undefined)
     
     inline def setLeft_chat_member(value: User): Self = StObject.set(x, "left_chat_member", value.asInstanceOf[js.Any])
     
@@ -231,13 +253,13 @@ object Message {
     
     inline def setNew_chat_membersUndefined: Self = StObject.set(x, "new_chat_members", js.undefined)
     
-    inline def setNew_chat_membersVarargs(value: User*): Self = StObject.set(x, "new_chat_members", js.Array(value :_*))
+    inline def setNew_chat_membersVarargs(value: User*): Self = StObject.set(x, "new_chat_members", js.Array(value*))
     
     inline def setNew_chat_photo(value: js.Array[PhotoSize]): Self = StObject.set(x, "new_chat_photo", value.asInstanceOf[js.Any])
     
     inline def setNew_chat_photoUndefined: Self = StObject.set(x, "new_chat_photo", js.undefined)
     
-    inline def setNew_chat_photoVarargs(value: PhotoSize*): Self = StObject.set(x, "new_chat_photo", js.Array(value :_*))
+    inline def setNew_chat_photoVarargs(value: PhotoSize*): Self = StObject.set(x, "new_chat_photo", js.Array(value*))
     
     inline def setNew_chat_title(value: String): Self = StObject.set(x, "new_chat_title", value.asInstanceOf[js.Any])
     
@@ -251,7 +273,7 @@ object Message {
     
     inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
-    inline def setPhotoVarargs(value: PhotoSize*): Self = StObject.set(x, "photo", js.Array(value :_*))
+    inline def setPhotoVarargs(value: PhotoSize*): Self = StObject.set(x, "photo", js.Array(value*))
     
     inline def setPinned_message(value: Message): Self = StObject.set(x, "pinned_message", value.asInstanceOf[js.Any])
     
@@ -268,6 +290,10 @@ object Message {
     inline def setReply_to_message(value: Message): Self = StObject.set(x, "reply_to_message", value.asInstanceOf[js.Any])
     
     inline def setReply_to_messageUndefined: Self = StObject.set(x, "reply_to_message", js.undefined)
+    
+    inline def setSender_chat(value: Chat): Self = StObject.set(x, "sender_chat", value.asInstanceOf[js.Any])
+    
+    inline def setSender_chatUndefined: Self = StObject.set(x, "sender_chat", js.undefined)
     
     inline def setSticker(value: Sticker): Self = StObject.set(x, "sticker", value.asInstanceOf[js.Any])
     
@@ -300,5 +326,9 @@ object Message {
     inline def setVoice(value: Voice): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
     
     inline def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
+    
+    inline def setWeb_app_data(value: WebAppData): Self = StObject.set(x, "web_app_data", value.asInstanceOf[js.Any])
+    
+    inline def setWeb_app_dataUndefined: Self = StObject.set(x, "web_app_data", js.undefined)
   }
 }

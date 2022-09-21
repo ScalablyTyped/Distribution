@@ -4,6 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactVirtualized.anon.SortBy
+import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache
 import typings.reactVirtualized.esGridMod.GridCoreProps
 import typings.reactVirtualized.mod.Index
 import typings.reactVirtualized.mod.IndexRange
@@ -20,6 +21,9 @@ trait TableProps
   /** One or more Columns describing the data displayed in this row */
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  @JSName("deferredMeasurementCache")
+  var deferredMeasurementCache_TableProps: js.UndefOr[CellMeasurerCache] = js.undefined
+  
   /** Disable rendering the header at all */
   var disableHeader: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +31,7 @@ trait TableProps
   var gridClassName: js.UndefOr[String] = js.undefined
   
   /** Optional inline style to attach to inner Grid element. */
-  var gridStyle: js.UndefOr[js.Any] = js.undefined
+  var gridStyle: js.UndefOr[Any] = js.undefined
   
   /** Optional CSS class to apply to all column headers */
   var headerClassName: js.UndefOr[String] = js.undefined
@@ -46,7 +50,7 @@ trait TableProps
   var headerRowRenderer: js.UndefOr[TableHeaderRowRenderer] = js.undefined
   
   /** Optional custom inline style to attach to table header columns. */
-  var headerStyle: js.UndefOr[js.Any] = js.undefined
+  var headerStyle: js.UndefOr[Any] = js.undefined
   
   /** Fixed/available height for out DOM element */
   @JSName("height")
@@ -110,7 +114,7 @@ trait TableProps
     * Callback responsible for returning a data row given an index.
     * ({ index: number }): any
     */
-  var rowGetter: js.UndefOr[js.Function1[/* info */ Index, js.Any]] = js.undefined
+  var rowGetter: js.UndefOr[js.Function1[/* info */ Index, Any]] = js.undefined
   
   /**
     * Responsible for rendering a table row given an array of columns:
@@ -172,6 +176,10 @@ object TableProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
+    inline def setDeferredMeasurementCache(value: CellMeasurerCache): Self = StObject.set(x, "deferredMeasurementCache", value.asInstanceOf[js.Any])
+    
+    inline def setDeferredMeasurementCacheUndefined: Self = StObject.set(x, "deferredMeasurementCache", js.undefined)
+    
     inline def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
     
     inline def setDisableHeaderUndefined: Self = StObject.set(x, "disableHeader", js.undefined)
@@ -180,7 +188,7 @@ object TableProps {
     
     inline def setGridClassNameUndefined: Self = StObject.set(x, "gridClassName", js.undefined)
     
-    inline def setGridStyle(value: js.Any): Self = StObject.set(x, "gridStyle", value.asInstanceOf[js.Any])
+    inline def setGridStyle(value: Any): Self = StObject.set(x, "gridStyle", value.asInstanceOf[js.Any])
     
     inline def setGridStyleUndefined: Self = StObject.set(x, "gridStyle", js.undefined)
     
@@ -194,7 +202,7 @@ object TableProps {
     
     inline def setHeaderRowRendererUndefined: Self = StObject.set(x, "headerRowRenderer", js.undefined)
     
-    inline def setHeaderStyle(value: js.Any): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+    inline def setHeaderStyle(value: Any): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
     inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
@@ -240,7 +248,7 @@ object TableProps {
     
     inline def setRowClassNameUndefined: Self = StObject.set(x, "rowClassName", js.undefined)
     
-    inline def setRowGetter(value: /* info */ Index => js.Any): Self = StObject.set(x, "rowGetter", js.Any.fromFunction1(value))
+    inline def setRowGetter(value: /* info */ Index => Any): Self = StObject.set(x, "rowGetter", js.Any.fromFunction1(value))
     
     inline def setRowGetterUndefined: Self = StObject.set(x, "rowGetter", js.undefined)
     

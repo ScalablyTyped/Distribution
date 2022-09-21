@@ -29,7 +29,7 @@ object DescribeMovingAddressesResult {
     
     inline def setMovingAddressStatusesUndefined: Self = StObject.set(x, "MovingAddressStatuses", js.undefined)
     
-    inline def setMovingAddressStatusesVarargs(value: MovingAddressStatus*): Self = StObject.set(x, "MovingAddressStatuses", js.Array(value :_*))
+    inline def setMovingAddressStatusesVarargs(value: MovingAddressStatus*): Self = StObject.set(x, "MovingAddressStatuses", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

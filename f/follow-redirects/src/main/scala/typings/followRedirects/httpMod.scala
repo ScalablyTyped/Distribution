@@ -6,12 +6,13 @@ import typings.followRedirects.mod.FollowOptions
 import typings.followRedirects.mod.FollowResponse
 import typings.followRedirects.mod.RedirectableRequest
 import typings.node.httpMod.RequestOptions
-import typings.node.netMod.Socket
+import typings.node.nodeNetMod.Socket
+import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined follow-redirects.follow-redirects.Override<{readonly request (options : node.http.RequestOptions): node.http.ClientRequest, readonly request (options : string): node.http.ClientRequest, readonly request (options : node.url.URL): node.http.ClientRequest, readonly request (options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : node.url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : string, options : node.http.RequestOptions): node.http.ClientRequest, readonly request (url : node.url.URL, options : node.http.RequestOptions): node.http.ClientRequest, readonly request (url : string, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : node.url.URL, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest,   IncomingMessage :new (socket : node.net.Socket): node.http.IncomingMessage,   ServerResponse :new (req : node.http.IncomingMessage): node.http.ServerResponse, readonly get (options : node.http.RequestOptions): node.http.ClientRequest, readonly get (options : string): node.http.ClientRequest, readonly get (options : node.url.URL): node.http.ClientRequest, readonly get (options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : node.url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : string, options : node.http.RequestOptions): node.http.ClientRequest, readonly get (url : node.url.URL, options : node.http.RequestOptions): node.http.ClientRequest, readonly get (url : string, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : node.url.URL, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly createServer (): node.http.Server, readonly createServer (requestListener : node.http.RequestListener): node.http.Server, readonly createServer (options : node.http.ServerOptions): node.http.Server, readonly createServer (options : node.http.ServerOptions, requestListener : node.http.RequestListener): node.http.Server,  readonly STATUS_CODES,   Agent :new (): node.http.Agent,  readonly maxHeaderSize :number,   ClientRequest :new (url : string): node.http.ClientRequest,   OutgoingMessage :new (): node.http.OutgoingMessage,   Server :new (): node.http.Server,   globalAgent :node.http.Agent,  readonly METHODS :std.Array<string>}, follow-redirects.follow-redirects.RedirectScheme<node.http.RequestOptions, node.http.ClientRequest, node.http.IncomingMessage>> */
+/* Inlined follow-redirects.follow-redirects.Override<{readonly request (options : node.http.RequestOptions): node.http.ClientRequest, readonly request (options : string): node.http.ClientRequest, readonly request (options : node.node:url.URL): node.http.ClientRequest, readonly request (options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : node.node:url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : string, options : node.http.RequestOptions): node.http.ClientRequest, readonly request (url : node.node:url.URL, options : node.http.RequestOptions): node.http.ClientRequest, readonly request (url : string, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : node.node:url.URL, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest,   IncomingMessage :new (socket : node.node:net.Socket): node.http.IncomingMessage,   ServerResponse :new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>, readonly get (options : node.http.RequestOptions): node.http.ClientRequest, readonly get (options : string): node.http.ClientRequest, readonly get (options : node.node:url.URL): node.http.ClientRequest, readonly get (options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : node.node:url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : string, options : node.http.RequestOptions): node.http.ClientRequest, readonly get (url : node.node:url.URL, options : node.http.RequestOptions): node.http.ClientRequest, readonly get (url : string, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : node.node:url.URL, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly createServer <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(): node.http.Server<Request, Response>, readonly createServer <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(requestListener : node.http.RequestListener<Request, Response>): node.http.Server<Request, Response>, readonly createServer <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(options : node.http.ServerOptions<Request, Response>): node.http.Server<Request, Response>, readonly createServer <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(options : node.http.ServerOptions<Request, Response>, requestListener : node.http.RequestListener<Request, Response>): node.http.Server<Request, Response>,  readonly STATUS_CODES,   Agent :new (): node.http.Agent,  readonly maxHeaderSize :number,   ClientRequest :new (url : string): node.http.ClientRequest,   OutgoingMessage :new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(): node.http.OutgoingMessage<Request>,   Server :new <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(): node.http.Server<Request, Response>,   globalAgent :node.http.Agent,  readonly METHODS :std.Array<string>}, follow-redirects.follow-redirects.RedirectScheme<node.http.RequestOptions, node.http.ClientRequest, node.http.IncomingMessage>> */
 object httpMod {
   
   @JSImport("follow-redirects/http", JSImport.Namespace)
@@ -21,7 +22,7 @@ object httpMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("follow-redirects/http", "Agent")
   @js.native
-  class Agent ()
+  open class Agent ()
     extends typings.node.httpMod.Agent
   @JSImport("follow-redirects/http", "Agent")
   @js.native
@@ -31,7 +32,7 @@ object httpMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("follow-redirects/http", "ClientRequest")
   @js.native
-  class ClientRequest protected ()
+  open class ClientRequest protected ()
     extends typings.node.httpMod.ClientRequest {
     def this(url: String) = this()
   }
@@ -43,7 +44,7 @@ object httpMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("follow-redirects/http", "IncomingMessage")
   @js.native
-  class IncomingMessage protected ()
+  open class IncomingMessage protected ()
     extends typings.node.httpMod.IncomingMessage {
     def this(socket: Socket) = this()
   }
@@ -60,66 +61,171 @@ object httpMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("follow-redirects/http", "OutgoingMessage")
   @js.native
-  class OutgoingMessage ()
-    extends typings.node.httpMod.OutgoingMessage
+  open class OutgoingMessage[Request /* <: typings.node.httpMod.IncomingMessage */] ()
+    extends typings.node.httpMod.OutgoingMessage[Request]
   @JSImport("follow-redirects/http", "OutgoingMessage")
   @js.native
-  def OutgoingMessage: Instantiable0[typings.node.httpMod.OutgoingMessage] = js.native
-  inline def OutgoingMessage_=(x: Instantiable0[typings.node.httpMod.OutgoingMessage]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OutgoingMessage")(x.asInstanceOf[js.Any])
+  def OutgoingMessage: Instantiable0[typings.node.httpMod.OutgoingMessage[typings.node.httpMod.IncomingMessage]] = js.native
+  inline def OutgoingMessage_=(x: Instantiable0[typings.node.httpMod.OutgoingMessage[typings.node.httpMod.IncomingMessage]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OutgoingMessage")(x.asInstanceOf[js.Any])
   
   @JSImport("follow-redirects/http", "STATUS_CODES")
   @js.native
-  def STATUS_CODES: js.Any = js.native
-  inline def STATUS_CODES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_CODES")(x.asInstanceOf[js.Any])
+  def STATUS_CODES: Any = js.native
+  inline def STATUS_CODES_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_CODES")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("follow-redirects/http", "Server")
   @js.native
-  class Server ()
-    extends typings.node.httpMod.Server
+  open class Server[Request /* <: Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage] */, Response /* <: Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+    typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+  ] */] ()
+    extends typings.node.httpMod.Server[Request, Response]
   @JSImport("follow-redirects/http", "Server")
   @js.native
-  def Server: Instantiable0[typings.node.httpMod.Server] = js.native
+  def Server: Instantiable0[
+    typings.node.httpMod.Server[
+      Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("follow-redirects/http", "ServerResponse")
   @js.native
-  class ServerResponse protected ()
-    extends typings.node.httpMod.ServerResponse {
-    def this(req: typings.node.httpMod.IncomingMessage) = this()
+  open class ServerResponse[Request /* <: typings.node.httpMod.IncomingMessage */] protected ()
+    extends typings.node.httpMod.ServerResponse[Request] {
+    def this(req: /* import warning: RewrittenClass.unapply cls was tparam Request */ Any) = this()
   }
   @JSImport("follow-redirects/http", "ServerResponse")
   @js.native
   def ServerResponse: Instantiable1[
-    /* req */ typings.node.httpMod.IncomingMessage, 
-    typings.node.httpMod.ServerResponse
+    /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+    typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
   ] = js.native
   inline def ServerResponse_=(
     x: Instantiable1[
-      /* req */ typings.node.httpMod.IncomingMessage, 
-      typings.node.httpMod.ServerResponse
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServerResponse")(x.asInstanceOf[js.Any])
   
-  inline def Server_=(x: Instantiable0[typings.node.httpMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
+  inline def Server_=(
+    x: Instantiable0[
+      typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+        ]
+      ]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
   
-  inline def createServer(): typings.node.httpMod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.node.httpMod.Server]
+  inline def createServer[Request /* <: Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage] */, Response /* <: Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+    typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+  ] */](): typings.node.httpMod.Server[Request, Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.node.httpMod.Server[Request, Response]]
   @JSImport("follow-redirects/http", "createServer")
   @js.native
-  def createServer_FhttpMod: js.Function0[typings.node.httpMod.Server] = js.native
+  def createServer_FhttpMod: js.Function0[
+    typings.node.httpMod.Server[
+      Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.native
   
-  inline def createServer_FhttpMod_=(x: js.Function0[typings.node.httpMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createServer")(x.asInstanceOf[js.Any])
+  inline def createServer_FhttpMod_=(
+    x: js.Function0[
+      typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typings.node.httpMod.ServerResponse[typings.node.httpMod.IncomingMessage]
+        ]
+      ]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createServer")(x.asInstanceOf[js.Any])
   
-  inline def get(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(url: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
   inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: RequestOptions & FollowOptions[RequestOptions]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
     options: RequestOptions & FollowOptions[RequestOptions],
     callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
-  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
-  inline def get(options: String): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
   inline def get(
-    options: String,
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit],
     callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
-  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: Unit,
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  /**
+    * This function has two overloads:
+    * ```typescript
+    * get(options: string | URL | Options, callback)
+    * get(url: string | URL, options: Options, callback)
+    * ```
+    */
+  inline def get(url: String): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(url: String, options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: String,
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: String,
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: String,
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: String,
+    options: Unit,
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(url: URL_): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(url: URL_, options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: URL_,
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: URL_,
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: URL_,
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def get(
+    url: URL_,
+    options: Unit,
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
   
   @JSImport("follow-redirects/http", "globalAgent")
   @js.native
@@ -131,14 +237,77 @@ object httpMod {
   def maxHeaderSize: Double = js.native
   inline def maxHeaderSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxHeaderSize")(x.asInstanceOf[js.Any])
   
-  inline def request(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(url: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
   inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: RequestOptions & FollowOptions[RequestOptions]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
     options: RequestOptions & FollowOptions[RequestOptions],
     callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
-  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
-  inline def request(options: String): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
   inline def request(
-    options: String,
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit],
     callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
-  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: Unit,
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  /**
+    * This function has two overloads:
+    * ```typescript
+    * request(options: string | URL | Options, callback)
+    * request(url: string | URL, options: Options, callback)
+    * ```
+    */
+  inline def request(url: String): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(url: String, options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: String,
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: String,
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: String,
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: String,
+    options: Unit,
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(url: URL_): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(url: URL_, options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: URL_,
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: URL_,
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: URL_,
+    options: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+  inline def request(
+    url: URL_,
+    options: Unit,
+    callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
 }

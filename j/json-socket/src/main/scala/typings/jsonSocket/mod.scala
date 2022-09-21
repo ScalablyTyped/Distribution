@@ -1,7 +1,6 @@
 package typings.jsonSocket
 
 import typings.node.netMod.Socket
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("json-socket", JSImport.Namespace)
   @js.native
-  class ^ protected () extends JsonSocket {
+  open class ^ protected () extends JsonSocket {
     def this(socket: Socket) = this()
   }
   @JSImport("json-socket", JSImport.Namespace)
@@ -26,7 +25,7 @@ object mod {
     * @param callback will be called after the message has been sent
     */
   /* static member */
-  inline def sendSingleMessage(port: Double, host: String, message: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSingleMessage")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendSingleMessage(port: Double, host: String, message: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSingleMessage")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * sends a single message, waits for a single response message from the server and closes the connection right after.
@@ -41,8 +40,8 @@ object mod {
   inline def sendSingleMessageAndReceive(
     port: Double,
     host: String,
-    message: js.Any,
-    callback: js.Function2[/* err */ Error, /* message */ js.Any, Unit]
+    message: Any,
+    callback: js.Function2[/* err */ js.Error, /* message */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSingleMessageAndReceive")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
@@ -55,7 +54,7 @@ object mod {
       * @param err
       * @param callback
       */
-    def sendEndError(err: Error, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def sendEndError(err: js.Error, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     /**
       * Same as {@link JsonSocket.sendMessage}, except that the socket is closed right after the message has been sent
@@ -64,20 +63,20 @@ object mod {
       * @param message the message to send
       * @param callback will be called after the message has been sent
       */
-    def sendEndMessage(message: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def sendEndMessage(message: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     /**
       * Convenience method for sending an error as a message.
       * @param err an Error object that should be formatted as a message
       * @param callback will be called after the message has been sent
       */
-    def sendError(err: Error, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def sendError(err: js.Error, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     /**
       * Sends a JSON message over the socket.
       * @param message the message to send
       * @param callback will be called after the message has been sent
       */
-    def sendMessage(message: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def sendMessage(message: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   }
 }

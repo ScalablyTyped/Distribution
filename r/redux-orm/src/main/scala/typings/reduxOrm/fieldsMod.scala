@@ -11,7 +11,7 @@ object fieldsMod {
   
   @JSImport("redux-orm/fields", "Attribute")
   @js.native
-  class Attribute () extends Field {
+  open class Attribute () extends Field {
     def this(opts: AttributeOpts) = this()
     
     var `type`: typings.reduxOrm.reduxOrmStrings.attr = js.native
@@ -19,14 +19,14 @@ object fieldsMod {
   
   @JSImport("redux-orm/fields", "Field")
   @js.native
-  class Field () extends StObject {
+  open class Field () extends StObject {
     
     val index: Boolean = js.native
   }
   
   @JSImport("redux-orm/fields", "ForeignKey")
   @js.native
-  class ForeignKey protected () extends RelationalField {
+  open class ForeignKey protected () extends RelationalField {
     def this(opts: RelationalFieldOpts) = this()
     def this(toModelName: String) = this()
     def this(toModelName: String, relatedName: String) = this()
@@ -39,7 +39,7 @@ object fieldsMod {
   
   @JSImport("redux-orm/fields", "ManyToMany")
   @js.native
-  class ManyToMany protected () extends RelationalField {
+  open class ManyToMany protected () extends RelationalField {
     def this(opts: RelationalFieldOpts) = this()
     def this(toModelName: String) = this()
     def this(toModelName: String, relatedName: String) = this()
@@ -52,7 +52,7 @@ object fieldsMod {
   
   @JSImport("redux-orm/fields", "OneToOne")
   @js.native
-  class OneToOne_ protected () extends RelationalField {
+  open class OneToOne_ protected () extends RelationalField {
     def this(opts: RelationalFieldOpts) = this()
     def this(toModelName: String) = this()
     def this(toModelName: String, relatedName: String) = this()
@@ -62,7 +62,7 @@ object fieldsMod {
   
   @JSImport("redux-orm/fields", "RelationalField")
   @js.native
-  class RelationalField protected () extends Field {
+  open class RelationalField protected () extends Field {
     def this(opts: RelationalFieldOpts) = this()
     def this(toModelName: String) = this()
     def this(toModelName: String, relatedName: String) = this()
@@ -93,7 +93,7 @@ object fieldsMod {
   
   trait AttributeOpts extends StObject {
     
-    var getDefault: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getDefault: js.UndefOr[js.Function0[Any]] = js.undefined
   }
   object AttributeOpts {
     
@@ -104,7 +104,7 @@ object fieldsMod {
     
     extension [Self <: AttributeOpts](x: Self) {
       
-      inline def setGetDefault(value: () => js.Any): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+      inline def setGetDefault(value: () => Any): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
       
       inline def setGetDefaultUndefined: Self = StObject.set(x, "getDefault", js.undefined)
     }
@@ -113,7 +113,7 @@ object fieldsMod {
   @js.native
   trait AttributeWithDefault extends Attribute {
     
-    def getDefault(): js.Any = js.native
+    def getDefault(): Any = js.native
   }
   
   type FieldSpecMap = StringDictionary[Attribute | ForeignKey | ManyToMany | OneToOne_]

@@ -1,6 +1,5 @@
 package typings.fibjs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,5 +25,5 @@ trait ClassMemoryStream
     * 
     * 
     */
-  def setTime(d: Date): Unit = js.native
+  def setTime(d: js.Date): Unit = js.native
 }

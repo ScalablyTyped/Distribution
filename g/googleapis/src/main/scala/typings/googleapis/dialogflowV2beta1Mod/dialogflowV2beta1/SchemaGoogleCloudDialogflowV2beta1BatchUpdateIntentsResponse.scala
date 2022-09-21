@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response message for Intents.BatchUpdateIntents.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaGoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse {
     
     inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    inline def setIntentsVarargs(value: SchemaGoogleCloudDialogflowV2beta1Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: SchemaGoogleCloudDialogflowV2beta1Intent*): Self = StObject.set(x, "intents", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ Adds cookie parsing/setting to restify
 | ------------------ | :-------------: |
 | Full name          | restify-cookies |
 | Keywords           | restify, cookies, cookie |
-| # releases         | 2 |
-| # dependents       | 29 |
-| # downloads        | 416431 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 39645.333333333336 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/nathschmidt/restify-cookies)

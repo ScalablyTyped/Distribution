@@ -10,10 +10,10 @@ A process lookup utility
 | ------------------ | :-------------: |
 | Full name          | ps-node |
 | Keywords           | ps, process, lookup, pid |
-| # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 2885347 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 248336.33333333334 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://github.com/neekey/ps#readme)

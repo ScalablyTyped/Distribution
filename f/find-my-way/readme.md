@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-my-way
 
-Typings are for version 2.2.5
+Typings are for version 7.2.0
 
 ## Library description:
 Crazy fast http radix based router
@@ -10,10 +10,10 @@ Crazy fast http radix based router
 | ------------------ | :-------------: |
 | Full name          | find-my-way |
 | Keywords           | http, router, radix, fast, speed |
-| # releases         | 17 |
-| # dependents       | 72 |
-| # downloads        | 10091977 |
-| # stars            | 5 |
+| # releases         | 32 |
+| # dependents       | 0.0 |
+| # downloads        | 4723735.666666667 |
+| # stars            | 1177.0 |
 
 ## Links
 - [Homepage](https://github.com/delvedor/find-my-way#readme)

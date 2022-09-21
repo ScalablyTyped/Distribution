@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DictpropNameDirection
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var direction: ascending | descending
   
-  var header: js.Any
+  var header: Any
 }
 object DictpropNameDirection {
   
-  inline def apply(direction: ascending | descending, header: js.Any): DictpropNameDirection = {
+  inline def apply(direction: ascending | descending, header: Any): DictpropNameDirection = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictpropNameDirection]
   }
@@ -26,6 +26,6 @@ object DictpropNameDirection {
     
     inline def setDirection(value: ascending | descending): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

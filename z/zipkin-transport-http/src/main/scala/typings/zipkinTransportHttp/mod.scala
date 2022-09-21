@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("zipkin-transport-http", "HttpLogger")
   @js.native
-  class HttpLogger protected ()
+  open class HttpLogger protected ()
     extends StObject
        with Logger {
     /**
@@ -35,18 +35,18 @@ object mod {
   
   trait ErrorLogger extends StObject {
     
-    def error(args: js.Any*): Unit
+    def error(args: Any*): Unit
   }
   object ErrorLogger {
     
-    inline def apply(error: /* repeated */ js.Any => Unit): ErrorLogger = {
+    inline def apply(error: /* repeated */ Any => Unit): ErrorLogger = {
       val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
       __obj.asInstanceOf[ErrorLogger]
     }
     
     extension [Self <: ErrorLogger](x: Self) {
       
-      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     }
   }
 }

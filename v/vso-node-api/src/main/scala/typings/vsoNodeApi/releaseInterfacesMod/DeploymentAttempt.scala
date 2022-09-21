@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +32,7 @@ trait DeploymentAttempt extends StObject {
   
   var lastModifiedBy: IdentityRef
   
-  var lastModifiedOn: Date
+  var lastModifiedOn: js.Date
   
   var operationStatus: DeploymentOperationStatus
   
@@ -41,7 +40,7 @@ trait DeploymentAttempt extends StObject {
   
   var preDeploymentGates: ReleaseGates
   
-  var queuedOn: Date
+  var queuedOn: js.Date
   
   var reason: DeploymentReason
   
@@ -68,11 +67,11 @@ object DeploymentAttempt {
     issues: js.Array[Issue],
     job: ReleaseTask,
     lastModifiedBy: IdentityRef,
-    lastModifiedOn: Date,
+    lastModifiedOn: js.Date,
     operationStatus: DeploymentOperationStatus,
     postDeploymentGates: ReleaseGates,
     preDeploymentGates: ReleaseGates,
-    queuedOn: Date,
+    queuedOn: js.Date,
     reason: DeploymentReason,
     releaseDeployPhases: js.Array[ReleaseDeployPhase],
     requestedBy: IdentityRef,
@@ -99,13 +98,13 @@ object DeploymentAttempt {
     
     inline def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
-    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value*))
     
     inline def setJob(value: ReleaseTask): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedBy(value: IdentityRef): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedOn(value: Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: js.Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     
     inline def setOperationStatus(value: DeploymentOperationStatus): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
@@ -113,13 +112,13 @@ object DeploymentAttempt {
     
     inline def setPreDeploymentGates(value: ReleaseGates): Self = StObject.set(x, "preDeploymentGates", value.asInstanceOf[js.Any])
     
-    inline def setQueuedOn(value: Date): Self = StObject.set(x, "queuedOn", value.asInstanceOf[js.Any])
+    inline def setQueuedOn(value: js.Date): Self = StObject.set(x, "queuedOn", value.asInstanceOf[js.Any])
     
     inline def setReason(value: DeploymentReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     inline def setReleaseDeployPhases(value: js.Array[ReleaseDeployPhase]): Self = StObject.set(x, "releaseDeployPhases", value.asInstanceOf[js.Any])
     
-    inline def setReleaseDeployPhasesVarargs(value: ReleaseDeployPhase*): Self = StObject.set(x, "releaseDeployPhases", js.Array(value :_*))
+    inline def setReleaseDeployPhasesVarargs(value: ReleaseDeployPhase*): Self = StObject.set(x, "releaseDeployPhases", js.Array(value*))
     
     inline def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
@@ -131,6 +130,6 @@ object DeploymentAttempt {
     
     inline def setTasks(value: js.Array[ReleaseTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    inline def setTasksVarargs(value: ReleaseTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: ReleaseTask*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

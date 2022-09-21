@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchCatalogItemsRequest")
 @js.native
-class SearchCatalogItemsRequest () extends StObject {
+open class SearchCatalogItemsRequest () extends StObject {
   
   /**
     * The category id query expression to return items containing the specified category IDs.

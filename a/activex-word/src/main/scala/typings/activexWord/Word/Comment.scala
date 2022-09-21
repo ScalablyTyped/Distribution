@@ -25,7 +25,7 @@ trait Comment extends StObject {
   
   val IsInk: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -50,7 +50,7 @@ object Comment {
     Index: Double,
     Initial: String,
     IsInk: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     Reference: Range,
     Scope: Range,
@@ -82,7 +82,7 @@ object Comment {
     
     inline def setIsInk(value: Boolean): Self = StObject.set(x, "IsInk", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

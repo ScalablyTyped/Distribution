@@ -1,10 +1,8 @@
 package typings.expressUaMiddleware
 
-import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.RequestHandler
 import typings.expressUaMiddleware.anon.Model
 import typings.expressUaMiddleware.anon.Name
-import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +12,7 @@ object mod {
   /**
     * Express middleware to parse user-agent header
     */
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  inline def apply(): RequestHandler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler]
   
   @JSImport("express-ua-middleware", JSImport.Namespace)
   @js.native

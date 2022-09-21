@@ -25,7 +25,7 @@ object XCachedContentResultSetFactory {
   inline def apply(
     acquire: () => Unit,
     createCachedContentResultSet: (XResultSet, XContentIdentifierMapping) => XResultSet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCachedContentResultSetFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createCachedContentResultSet = js.Any.fromFunction2(createCachedContentResultSet), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

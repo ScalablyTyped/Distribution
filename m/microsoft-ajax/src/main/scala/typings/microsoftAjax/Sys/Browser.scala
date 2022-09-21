@@ -15,7 +15,7 @@ trait Browser extends StObject {
   /**
     * Gets an object that represents the user agent of the browser.
     */
-  var agent: js.Any
+  var agent: Any
   
   /**
     * Gets a value that indicates the document compatibility mode of the browser.
@@ -47,14 +47,14 @@ trait Browser extends StObject {
 }
 object Browser {
   
-  inline def apply(agent: js.Any, documentMode: Double, hasDebuggerStatement: Boolean, name: String, version: Double): Browser = {
+  inline def apply(agent: Any, documentMode: Double, hasDebuggerStatement: Boolean, name: String, version: Double): Browser = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], documentMode = documentMode.asInstanceOf[js.Any], hasDebuggerStatement = hasDebuggerStatement.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Browser]
   }
   
   extension [Self <: Browser](x: Self) {
     
-    inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     inline def setDocumentMode(value: Double): Self = StObject.set(x, "documentMode", value.asInstanceOf[js.Any])
     

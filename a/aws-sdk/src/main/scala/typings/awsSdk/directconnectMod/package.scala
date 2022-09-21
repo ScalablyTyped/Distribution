@@ -1,36 +1,46 @@
 package typings.awsSdk.directconnectMod
 
+import typings.awsSdk.awsSdkStrings.applicationSlashpdf
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ASN = scala.Double
+type ASN = Double
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.ipv4_
-  - typings.awsSdk.awsSdkStrings.ipv6_
+  - typings.awsSdk.awsSdkStrings.ipv4__
+  - typings.awsSdk.awsSdkStrings.ipv6__
   - java.lang.String
 */
-type AddressFamily = typings.awsSdk.directconnectMod._AddressFamily | java.lang.String
+type AddressFamily = _AddressFamily | String
 
-type AmazonAddress = java.lang.String
+type AgreementList = js.Array[CustomerAgreement]
 
-type AssociatedGatewayId = java.lang.String
+type AgreementName = String
 
-type AvailablePortSpeeds = js.Array[typings.awsSdk.directconnectMod.PortSpeed]
+type AmazonAddress = String
 
-type AwsDevice = java.lang.String
+type AssociatedGatewayId = String
 
-type AwsDeviceV2 = java.lang.String
+type AvailableMacSecPortSpeeds = js.Array[PortSpeed]
 
-type BGPAuthKey = java.lang.String
+type AvailablePortSpeeds = js.Array[PortSpeed]
 
-type BGPPeerId = java.lang.String
+type AwsDevice = String
 
-type BGPPeerIdList = js.Array[typings.awsSdk.directconnectMod.BGPPeerId]
+type AwsDeviceV2 = String
 
-type BGPPeerList = js.Array[typings.awsSdk.directconnectMod.BGPPeer]
+type AwsLogicalDeviceId = String
+
+type BGPAuthKey = String
+
+type BGPPeerId = String
+
+type BGPPeerIdList = js.Array[BGPPeerId]
+
+type BGPPeerList = js.Array[BGPPeer]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.verifying__
@@ -40,7 +50,7 @@ type BGPPeerList = js.Array[typings.awsSdk.directconnectMod.BGPPeer]
   - typings.awsSdk.awsSdkStrings.deleted__
   - java.lang.String
 */
-type BGPPeerState = typings.awsSdk.directconnectMod._BGPPeerState | java.lang.String
+type BGPPeerState = _BGPPeerState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.up_
@@ -48,19 +58,23 @@ type BGPPeerState = typings.awsSdk.directconnectMod._BGPPeerState | java.lang.St
   - typings.awsSdk.awsSdkStrings.unknown__
   - java.lang.String
 */
-type BGPStatus = typings.awsSdk.directconnectMod._BGPStatus | java.lang.String
+type BGPStatus = _BGPStatus | String
 
-type Bandwidth = java.lang.String
+type Bandwidth = String
 
-type BooleanFlag = scala.Boolean
+type BooleanFlag = Boolean
 
-type CIDR = java.lang.String
+type CIDR = String
 
-type ConnectionId = java.lang.String
+type Cak = String
 
-type ConnectionList = js.Array[typings.awsSdk.directconnectMod.Connection]
+type Ckn = String
 
-type ConnectionName = java.lang.String
+type ConnectionId = String
+
+type ConnectionList = js.Array[Connection]
+
+type ConnectionName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ordering
@@ -74,19 +88,19 @@ type ConnectionName = java.lang.String
   - typings.awsSdk.awsSdkStrings.unknown__
   - java.lang.String
 */
-type ConnectionState = typings.awsSdk.directconnectMod._ConnectionState | java.lang.String
+type ConnectionState = _ConnectionState | String
 
-type Count = scala.Double
+type Count = Double
 
-type CustomerAddress = java.lang.String
+type CustomerAddress = String
 
-type DirectConnectGatewayAssociationId = java.lang.String
+type DirectConnectGatewayAssociationId = String
 
-type DirectConnectGatewayAssociationList = js.Array[typings.awsSdk.directconnectMod.DirectConnectGatewayAssociation]
+type DirectConnectGatewayAssociationList = js.Array[DirectConnectGatewayAssociation]
 
-type DirectConnectGatewayAssociationProposalId = java.lang.String
+type DirectConnectGatewayAssociationProposalId = String
 
-type DirectConnectGatewayAssociationProposalList = js.Array[typings.awsSdk.directconnectMod.DirectConnectGatewayAssociationProposal]
+type DirectConnectGatewayAssociationProposalList = js.Array[DirectConnectGatewayAssociationProposal]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.requested__
@@ -94,7 +108,7 @@ type DirectConnectGatewayAssociationProposalList = js.Array[typings.awsSdk.direc
   - typings.awsSdk.awsSdkStrings.deleted__
   - java.lang.String
 */
-type DirectConnectGatewayAssociationProposalState = typings.awsSdk.directconnectMod._DirectConnectGatewayAssociationProposalState | java.lang.String
+type DirectConnectGatewayAssociationProposalState = _DirectConnectGatewayAssociationProposalState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.associating__
@@ -104,9 +118,9 @@ type DirectConnectGatewayAssociationProposalState = typings.awsSdk.directconnect
   - typings.awsSdk.awsSdkStrings.updating__
   - java.lang.String
 */
-type DirectConnectGatewayAssociationState = typings.awsSdk.directconnectMod._DirectConnectGatewayAssociationState | java.lang.String
+type DirectConnectGatewayAssociationState = _DirectConnectGatewayAssociationState | String
 
-type DirectConnectGatewayAttachmentList = js.Array[typings.awsSdk.directconnectMod.DirectConnectGatewayAttachment]
+type DirectConnectGatewayAttachmentList = js.Array[DirectConnectGatewayAttachment]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.attaching_
@@ -115,20 +129,20 @@ type DirectConnectGatewayAttachmentList = js.Array[typings.awsSdk.directconnectM
   - typings.awsSdk.awsSdkStrings.detached__
   - java.lang.String
 */
-type DirectConnectGatewayAttachmentState = typings.awsSdk.directconnectMod._DirectConnectGatewayAttachmentState | java.lang.String
+type DirectConnectGatewayAttachmentState = _DirectConnectGatewayAttachmentState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TransitVirtualInterface
   - typings.awsSdk.awsSdkStrings.PrivateVirtualInterface
   - java.lang.String
 */
-type DirectConnectGatewayAttachmentType = typings.awsSdk.directconnectMod._DirectConnectGatewayAttachmentType | java.lang.String
+type DirectConnectGatewayAttachmentType = _DirectConnectGatewayAttachmentType | String
 
-type DirectConnectGatewayId = java.lang.String
+type DirectConnectGatewayId = String
 
-type DirectConnectGatewayList = js.Array[typings.awsSdk.directconnectMod.DirectConnectGateway]
+type DirectConnectGatewayList = js.Array[DirectConnectGateway]
 
-type DirectConnectGatewayName = java.lang.String
+type DirectConnectGatewayName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.pending__
@@ -137,22 +151,26 @@ type DirectConnectGatewayName = java.lang.String
   - typings.awsSdk.awsSdkStrings.deleted__
   - java.lang.String
 */
-type DirectConnectGatewayState = typings.awsSdk.directconnectMod._DirectConnectGatewayState | java.lang.String
+type DirectConnectGatewayState = _DirectConnectGatewayState | String
 
-type EndTime = typings.std.Date
+type EnableSiteLink = Boolean
 
-type FailureTestHistoryStatus = java.lang.String
+type EncryptionMode = String
 
-type GatewayIdToAssociate = java.lang.String
+type EndTime = js.Date
 
-type GatewayIdentifier = java.lang.String
+type FailureTestHistoryStatus = String
+
+type GatewayIdToAssociate = String
+
+type GatewayIdentifier = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.virtualPrivateGateway
-  - typings.awsSdk.awsSdkStrings.transitGateway
+  - typings.awsSdk.awsSdkStrings.transitGateway_
   - java.lang.String
 */
-type GatewayType = typings.awsSdk.directconnectMod._GatewayType | java.lang.String
+type GatewayType = _GatewayType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.unknown__
@@ -160,33 +178,13 @@ type GatewayType = typings.awsSdk.directconnectMod._GatewayType | java.lang.Stri
   - typings.awsSdk.awsSdkStrings.no_
   - java.lang.String
 */
-type HasLogicalRedundancy = typings.awsSdk.directconnectMod._HasLogicalRedundancy | java.lang.String
+type HasLogicalRedundancy = _HasLogicalRedundancy | String
 
-type InterconnectId = java.lang.String
+type InterconnectId = String
 
-type InterconnectList = js.Array[typings.awsSdk.directconnectMod.Interconnect]
+type InterconnectList = js.Array[Interconnect]
 
-type InterconnectName = java.lang.String
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.requested__
-  - typings.awsSdk.awsSdkStrings.pending__
-  - typings.awsSdk.awsSdkStrings.available__
-  - typings.awsSdk.awsSdkStrings.down_
-  - typings.awsSdk.awsSdkStrings.deleting__
-  - typings.awsSdk.awsSdkStrings.deleted__
-  - typings.awsSdk.awsSdkStrings.unknown__
-  - java.lang.String
-*/
-type InterconnectState = typings.awsSdk.directconnectMod._InterconnectState | java.lang.String
-
-type JumboFrameCapable = scala.Boolean
-
-type LagId = java.lang.String
-
-type LagList = js.Array[typings.awsSdk.directconnectMod.Lag]
-
-type LagName = java.lang.String
+type InterconnectName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.requested__
@@ -198,83 +196,137 @@ type LagName = java.lang.String
   - typings.awsSdk.awsSdkStrings.unknown__
   - java.lang.String
 */
-type LagState = typings.awsSdk.directconnectMod._LagState | java.lang.String
+type InterconnectState = _InterconnectState | String
 
-type LoaContent = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.directconnectMod.Blob | java.lang.String
+type JumboFrameCapable = Boolean
 
-type LoaContentType = typings.awsSdk.awsSdkStrings.applicationSlashpdf | java.lang.String
+type LagId = String
 
-type LoaIssueTime = typings.std.Date
+type LagList = js.Array[Lag]
 
-type LocationCode = java.lang.String
+type LagName = String
 
-type LocationList = js.Array[typings.awsSdk.directconnectMod.Location]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.requested__
+  - typings.awsSdk.awsSdkStrings.pending__
+  - typings.awsSdk.awsSdkStrings.available__
+  - typings.awsSdk.awsSdkStrings.down_
+  - typings.awsSdk.awsSdkStrings.deleting__
+  - typings.awsSdk.awsSdkStrings.deleted__
+  - typings.awsSdk.awsSdkStrings.unknown__
+  - java.lang.String
+*/
+type LagState = _LagState | String
 
-type LocationName = java.lang.String
+type LoaContent = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type LongAsn = scala.Double
+type LoaContentType = applicationSlashpdf | String
 
-type MTU = scala.Double
+type LoaIssueTime = js.Date
 
-type MaxResultSetSize = scala.Double
+type LocationCode = String
 
-type OwnerAccount = java.lang.String
+type LocationList = js.Array[Location]
 
-type PaginationToken = java.lang.String
+type LocationName = String
 
-type PartnerName = java.lang.String
+type LongAsn = Double
 
-type PortSpeed = java.lang.String
+type MTU = Double
 
-type ProviderList = js.Array[typings.awsSdk.directconnectMod.ProviderName]
+type MacSecCapable = Boolean
 
-type ProviderName = java.lang.String
+type MacSecKeyList = js.Array[MacSecKey]
 
-type Region = java.lang.String
+type MaxResultSetSize = Double
 
-type ResourceArn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.v1_
+  - typings.awsSdk.awsSdkStrings.v2_
+  - typings.awsSdk.awsSdkStrings.nonPartner
+  - java.lang.String
+*/
+type NniPartnerType = _NniPartnerType | String
 
-type ResourceArnList = js.Array[typings.awsSdk.directconnectMod.ResourceArn]
+type OwnerAccount = String
 
-type ResourceTagList = js.Array[typings.awsSdk.directconnectMod.ResourceTag]
+type PaginationToken = String
 
-type RouteFilterPrefixList = js.Array[typings.awsSdk.directconnectMod.RouteFilterPrefix]
+type PartnerName = String
 
-type RouterConfig = java.lang.String
+type Platform = String
 
-type StartTime = typings.std.Date
+type PortEncryptionStatus = String
 
-type StateChangeError = java.lang.String
+type PortSpeed = String
 
-type TagKey = java.lang.String
+type ProviderList = js.Array[ProviderName]
 
-type TagKeyList = js.Array[typings.awsSdk.directconnectMod.TagKey]
+type ProviderName = String
 
-type TagList = js.Array[typings.awsSdk.directconnectMod.Tag]
+type Region = String
 
-type TagValue = java.lang.String
+type RequestMACSec = Boolean
 
-type TestDuration = scala.Double
+type ResourceArn = String
 
-type TestId = java.lang.String
+type ResourceArnList = js.Array[ResourceArn]
 
-type VLAN = scala.Double
+type ResourceTagList = js.Array[ResourceTag]
 
-type VirtualGatewayId = java.lang.String
+type RouteFilterPrefixList = js.Array[RouteFilterPrefix]
 
-type VirtualGatewayList = js.Array[typings.awsSdk.directconnectMod.VirtualGateway]
+type RouterConfig = String
 
-type VirtualGatewayRegion = java.lang.String
+type RouterTypeIdentifier = String
 
-type VirtualGatewayState = java.lang.String
+type SecretARN = String
 
-type VirtualInterfaceId = java.lang.String
+type SiteLinkEnabled = Boolean
 
-type VirtualInterfaceList = js.Array[typings.awsSdk.directconnectMod.VirtualInterface]
+type Software = String
 
-type VirtualInterfaceName = java.lang.String
+type StartOnDate = String
 
-type VirtualInterfaceRegion = java.lang.String
+type StartTime = js.Date
+
+type State = String
+
+type StateChangeError = String
+
+type Status = String
+
+type TagKey = String
+
+type TagKeyList = js.Array[TagKey]
+
+type TagList = js.Array[Tag]
+
+type TagValue = String
+
+type TestDuration = Double
+
+type TestId = String
+
+type VLAN = Double
+
+type Vendor = String
+
+type VirtualGatewayId = String
+
+type VirtualGatewayList = js.Array[VirtualGateway]
+
+type VirtualGatewayRegion = String
+
+type VirtualGatewayState = String
+
+type VirtualInterfaceId = String
+
+type VirtualInterfaceList = js.Array[VirtualInterface]
+
+type VirtualInterfaceName = String
+
+type VirtualInterfaceRegion = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.confirming
@@ -288,15 +340,19 @@ type VirtualInterfaceRegion = java.lang.String
   - typings.awsSdk.awsSdkStrings.unknown__
   - java.lang.String
 */
-type VirtualInterfaceState = typings.awsSdk.directconnectMod._VirtualInterfaceState | java.lang.String
+type VirtualInterfaceState = _VirtualInterfaceState | String
 
-type VirtualInterfaceTestHistoryList = js.Array[typings.awsSdk.directconnectMod.VirtualInterfaceTestHistory]
+type VirtualInterfaceTestHistoryList = js.Array[VirtualInterfaceTestHistory]
 
-type VirtualInterfaceType = java.lang.String
+type VirtualInterfaceType = String
+
+type XsltTemplateName = String
+
+type XsltTemplateNameForMacSec = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2012-10-25`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.directconnectMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

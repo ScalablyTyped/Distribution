@@ -24,6 +24,6 @@ object HlsIngest {
     
     inline def setIngestEndpointsUndefined: Self = StObject.set(x, "IngestEndpoints", js.undefined)
     
-    inline def setIngestEndpointsVarargs(value: IngestEndpoint*): Self = StObject.set(x, "IngestEndpoints", js.Array(value :_*))
+    inline def setIngestEndpointsVarargs(value: IngestEndpoint*): Self = StObject.set(x, "IngestEndpoints", js.Array(value*))
   }
 }

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.coinbase.coinbaseStrings.exchange_deposit
   - typings.coinbase.coinbaseStrings.exchange_withdrawal
   - typings.coinbase.coinbaseStrings.vault_withdrawal
+  - typings.coinbase.coinbaseStrings.trade
 */
 trait TransactionType extends StObject
 object TransactionType {
@@ -34,6 +35,8 @@ object TransactionType {
   inline def sell: typings.coinbase.coinbaseStrings.sell = "sell".asInstanceOf[typings.coinbase.coinbaseStrings.sell]
   
   inline def send: typings.coinbase.coinbaseStrings.send = "send".asInstanceOf[typings.coinbase.coinbaseStrings.send]
+  
+  inline def trade: typings.coinbase.coinbaseStrings.trade = "trade".asInstanceOf[typings.coinbase.coinbaseStrings.trade]
   
   inline def transfer: typings.coinbase.coinbaseStrings.transfer = "transfer".asInstanceOf[typings.coinbase.coinbaseStrings.transfer]
   

@@ -10,10 +10,10 @@ Hooks for building range and multi-range sliders in React
 | ------------------ | :-------------: |
 | Full name          | react-ranger |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 43119 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 22381.333333333332 |
+| # stars            | 368.0 |
 
 ## Links
 - [Homepage](https://github.com/tannerlinsley/react-ranger#readme)

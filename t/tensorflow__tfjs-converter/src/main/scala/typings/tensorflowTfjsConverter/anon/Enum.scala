@@ -23,7 +23,7 @@ object Enum {
     
     inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

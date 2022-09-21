@@ -10,7 +10,7 @@ object diffOptionsMod {
   
   trait DiffOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var contextLines: js.UndefOr[Double] = js.undefined
     
@@ -32,9 +32,9 @@ object diffOptionsMod {
     
     var pathspec: js.UndefOr[Strarray | String | js.Array[String]] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
     
-    var progressCb: js.UndefOr[js.Any] = js.undefined
+    var progressCb: js.UndefOr[Any] = js.undefined
     
     var version: js.UndefOr[Double] = js.undefined
   }
@@ -87,13 +87,13 @@ object diffOptionsMod {
       
       inline def setPathspecUndefined: Self = StObject.set(x, "pathspec", js.undefined)
       
-      inline def setPathspecVarargs(value: String*): Self = StObject.set(x, "pathspec", js.Array(value :_*))
+      inline def setPathspecVarargs(value: String*): Self = StObject.set(x, "pathspec", js.Array(value*))
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      inline def setProgressCb(value: js.Any): Self = StObject.set(x, "progressCb", value.asInstanceOf[js.Any])
+      inline def setProgressCb(value: Any): Self = StObject.set(x, "progressCb", value.asInstanceOf[js.Any])
       
       inline def setProgressCbUndefined: Self = StObject.set(x, "progressCb", js.undefined)
       

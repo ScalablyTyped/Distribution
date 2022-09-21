@@ -9,19 +9,19 @@ object schedulerMod {
   
   @JSImport("wonder-frp/dist/commonjs/core/Scheduler", "Scheduler")
   @js.native
-  class Scheduler () extends StObject {
+  open class Scheduler () extends StObject {
     
-    /* private */ var _requestLoopId: js.Any = js.native
+    /* private */ var _requestLoopId: Any = js.native
     
-    def publishInterval(observer: IObserver, initial: js.Any, interval: Double, action: js.Function): Double = js.native
+    def publishInterval(observer: IObserver, initial: Any, interval: Double, action: js.Function): Double = js.native
     
     def publishIntervalRequest(observer: IObserver, action: js.Function): Unit = js.native
     
-    def publishRecursive(observer: IObserver, initial: js.Any, action: js.Function): Unit = js.native
+    def publishRecursive(observer: IObserver, initial: Any, action: js.Function): Unit = js.native
     
     def publishTimeout(observer: IObserver, time: Double, action: js.Function): Double = js.native
     
-    var requestLoopId: js.Any = js.native
+    var requestLoopId: Any = js.native
   }
   /* static members */
   object Scheduler {
@@ -30,6 +30,6 @@ object schedulerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(args: js.Any*): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Scheduler]
+    inline def create(args: Any*): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Scheduler]
   }
 }

@@ -22,6 +22,11 @@ trait CACertificateDescription extends StObject {
   var certificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
+    * The mode of the CA.  All the device certificates that are registered using this CA will be registered in the same mode as the CA. For more information about certificate mode for device certificates, see certificate mode.
+    */
+  var certificateMode: js.UndefOr[CertificateMode] = js.undefined
+  
+  /**
     * The CA certificate data, in PEM format.
     */
   var certificatePem: js.UndefOr[CertificatePem] = js.undefined
@@ -29,7 +34,7 @@ trait CACertificateDescription extends StObject {
   /**
     * The date the CA certificate was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The customer version of the CA certificate.
@@ -44,7 +49,7 @@ trait CACertificateDescription extends StObject {
   /**
     * The date the CA certificate was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The owner of the CA certificate.
@@ -82,11 +87,15 @@ object CACertificateDescription {
     
     inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
+    inline def setCertificateMode(value: CertificateMode): Self = StObject.set(x, "certificateMode", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateModeUndefined: Self = StObject.set(x, "certificateMode", js.undefined)
+    
     inline def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
     inline def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -98,7 +107,7 @@ object CACertificateDescription {
     
     inline def setGenerationIdUndefined: Self = StObject.set(x, "generationId", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     

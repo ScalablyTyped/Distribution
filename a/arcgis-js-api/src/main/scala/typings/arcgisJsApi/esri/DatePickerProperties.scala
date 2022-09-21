@@ -11,6 +11,8 @@ trait DatePickerProperties
   /**
     * Indicates whether the date gets updated when the user changes the month in the drop-down.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#commitOnMonthChange)
     */
   var commitOnMonthChange: js.UndefOr[Boolean] = js.undefined

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProviderUserIdentifierType extends StObject {
   
   /**
-    * The name of the provider attribute to link to, for example, NameID.
+    * The name of the provider attribute to link to, such as NameID.
     */
   var ProviderAttributeName: js.UndefOr[StringType] = js.undefined
   
   /**
-    * The value of the provider attribute to link to, for example, xxxxx_account.
+    * The value of the provider attribute to link to, such as xxxxx_account.
     */
   var ProviderAttributeValue: js.UndefOr[StringType] = js.undefined
   
   /**
-    * The name of the provider, for example, Facebook, Google, or Login with Amazon.
+    * The name of the provider, such as Facebook, Google, or Login with Amazon.
     */
   var ProviderName: js.UndefOr[ProviderNameType] = js.undefined
 }

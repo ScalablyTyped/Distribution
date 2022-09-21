@@ -12,12 +12,12 @@ object random {
   
   inline def createInstance(): Random = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[Random]
   
-  inline def getBytes(count: Double): Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(count.asInstanceOf[js.Any]).asInstanceOf[Bytes]
-  inline def getBytes(count: Double, callback: js.Function1[/* bytes */ Bytes, js.Any]): Bytes = (^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(count.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Bytes]
+  inline def getBytes(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getBytes(count: Double, callback: js.Function2[/* err */ js.Error | Null, /* bytes */ Bytes, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(count.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getBytesSync(count: Double): Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("getBytesSync")(count.asInstanceOf[js.Any]).asInstanceOf[Bytes]
   
-  type CB = js.Function2[/* _ */ js.Any, /* seed */ String, Unit]
+  type CB = js.Function2[/* _ */ Any, /* seed */ String, Unit]
   
   trait Random extends StObject {
     

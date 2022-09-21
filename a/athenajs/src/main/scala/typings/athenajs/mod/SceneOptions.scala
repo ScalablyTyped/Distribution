@@ -45,6 +45,6 @@ object SceneOptions {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: Res*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Res*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

@@ -13,7 +13,7 @@ object Common {
     /**
       * Empty constructor
       **/
-    class b2Mat22 ()
+    open class b2Mat22 ()
       extends StObject
          with typings.box2d.Box2D.Common.Math.b2Mat22 {
       
@@ -139,7 +139,7 @@ object Common {
     
     @JSGlobal("Box2D.Common.Math.b2Mat33")
     @js.native
-    class b2Mat33 protected ()
+    open class b2Mat33 protected ()
       extends StObject
          with typings.box2d.Box2D.Common.Math.b2Mat33 {
       /**
@@ -242,7 +242,7 @@ object Common {
     
     @JSGlobal("Box2D.Common.Math.b2Math")
     @js.native
-    class b2Math ()
+    open class b2Math ()
       extends StObject
          with typings.box2d.Box2D.Common.Math.b2Math
     /* static members */
@@ -495,7 +495,7 @@ object Common {
         * @param a a -> b.
         * @param b b -> a.
         **/
-      inline def Swap(a: js.Any, b: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Swap")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def Swap(a: Any, b: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Swap")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Global instance of a 2x2 identity matrix.  Use as read-only.
@@ -524,7 +524,7 @@ object Common {
     
     @JSGlobal("Box2D.Common.Math.b2Sweep")
     @js.native
-    class b2Sweep ()
+    open class b2Sweep ()
       extends StObject
          with typings.box2d.Box2D.Common.Math.b2Sweep {
       
@@ -595,7 +595,7 @@ object Common {
     
     @JSGlobal("Box2D.Common.Math.b2Transform")
     @js.native
-    class b2Transform protected ()
+    open class b2Transform protected ()
       extends StObject
          with typings.box2d.Box2D.Common.Math.b2Transform {
       /**
@@ -653,7 +653,7 @@ object Common {
       * @param x x value, default = 0.
       * @param y y value, default = 0.
       **/
-    class b2Vec2 ()
+    open class b2Vec2 ()
       extends StObject
          with typings.box2d.Box2D.Common.Math.b2Vec2 {
       def this(x: Double) = this()
@@ -683,7 +683,7 @@ object Common {
       * @param y y value, default = 0.
       * @param z z value, default = 0.
       **/
-    class b2Vec3 ()
+    open class b2Vec3 ()
       extends StObject
          with typings.box2d.Box2D.Common.Math.b2Vec3 {
       def this(x: Double) = this()
@@ -698,7 +698,7 @@ object Common {
   
   @JSGlobal("Box2D.Common.b2Color")
   @js.native
-  class b2Color protected ()
+  open class b2Color protected ()
     extends StObject
        with typings.box2d.Box2D.Common.b2Color {
     /**
@@ -745,7 +745,7 @@ object Common {
   
   @JSGlobal("Box2D.Common.b2Settings")
   @js.native
-  class b2Settings ()
+  open class b2Settings ()
     extends StObject
        with typings.box2d.Box2D.Common.b2Settings
   /* static members */

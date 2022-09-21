@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.abstractSceneMod.AbstractScene
 import typings.babylonjs.animatableMod.Animatable
 import typings.babylonjs.animationMod.Animation
 import typings.babylonjs.observableMod.Observable
@@ -14,13 +15,13 @@ object animationGroupMod {
   
   @JSImport("babylonjs/Animations/animationGroup", "AnimationGroup")
   @js.native
-  class AnimationGroup protected ()
+  open class AnimationGroup protected ()
     extends StObject
        with IDisposable {
     /**
       * Instantiates a new Animation Group.
       * This helps managing several animations at once.
-      * @see https://doc.babylonjs.com/how_to/group
+      * @see https://doc.babylonjs.com/divingDeeper/animation/groupAnimations
       * @param name Defines the name of the group
       * @param scene Defines the scene the group belongs to
       */
@@ -29,33 +30,36 @@ object animationGroupMod {
     def this(/** The name of the animation group */
     name: String, scene: Nullable[Scene]) = this()
     
-    /* private */ var _animatables: js.Any = js.native
+    /* private */ var _animatables: Any = js.native
     
-    /* private */ var _animationLoopCount: js.Any = js.native
+    /* private */ var _animationLoopCount: Any = js.native
     
-    /* private */ var _animationLoopFlags: js.Any = js.native
+    /* private */ var _animationLoopFlags: Any = js.native
     
-    /* private */ var _checkAnimationGroupEnded: js.Any = js.native
+    /* private */ var _checkAnimationGroupEnded: Any = js.native
     
-    /* private */ var _from: js.Any = js.native
+    /* private */ var _from: Any = js.native
     
-    /* private */ var _isAdditive: js.Any = js.native
+    /* private */ var _isAdditive: Any = js.native
     
-    /* private */ var _isPaused: js.Any = js.native
+    /* private */ var _isPaused: Any = js.native
     
-    /* private */ var _isStarted: js.Any = js.native
+    /* private */ var _isStarted: Any = js.native
     
-    /* private */ var _loopAnimation: js.Any = js.native
+    /* private */ var _loopAnimation: Any = js.native
     
-    /* private */ var _processLoop: js.Any = js.native
+    /** @hidden */
+    var _parentContainer: Nullable[AbstractScene] = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _processLoop: Any = js.native
     
-    /* private */ var _speedRatio: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _targetedAnimations: js.Any = js.native
+    /* private */ var _speedRatio: Any = js.native
     
-    /* private */ var _to: js.Any = js.native
+    /* private */ var _targetedAnimations: Any = js.native
+    
+    /* private */ var _to: Any = js.native
     
     /**
       * Add an animation (with its target) in the group
@@ -63,7 +67,7 @@ object animationGroupMod {
       * @param target defines the target of the animation
       * @returns the TargetedAnimation object
       */
-    def addTargetedAnimation(animation: Animation, target: js.Any): TargetedAnimation = js.native
+    def addTargetedAnimation(animation: Animation, target: Any): TargetedAnimation = js.native
     
     /**
       * returning the list of animatables controlled by this animation group.
@@ -79,10 +83,13 @@ object animationGroupMod {
       * Clone the current animation group and returns a copy
       * @param newName defines the name of the new group
       * @param targetConverter defines an optional function used to convert current animation targets to new ones
-      * @returns the new aniamtion group
+      * @param cloneAnimations defines if the animations should be cloned or referenced
+      * @returns the new animation group
       */
     def clone(newName: String): AnimationGroup = js.native
-    def clone(newName: String, targetConverter: js.Function1[/* oldTarget */ js.Any, js.Any]): AnimationGroup = js.native
+    def clone(newName: String, targetConverter: js.Function1[/* oldTarget */ Any, Any]): AnimationGroup = js.native
+    def clone(newName: String, targetConverter: js.Function1[/* oldTarget */ Any, Any], cloneAnimations: Boolean): AnimationGroup = js.native
+    def clone(newName: String, targetConverter: Unit, cloneAnimations: Boolean): AnimationGroup = js.native
     
     /**
       * Releases all held resources
@@ -104,7 +111,7 @@ object animationGroupMod {
     /**
       * Goes to a specific frame in this animation group
       * @param frame the frame number to go to
-      * @return the animationGroup
+      * @returns the animationGroup
       */
     def goToFrame(frame: Double): AnimationGroup = js.native
     
@@ -129,6 +136,11 @@ object animationGroupMod {
       */
     def loopAnimation: Boolean = js.native
     def loopAnimation_=(value: Boolean): Unit = js.native
+    
+    /**
+      * Gets or sets an object used to store user defined information for the node
+      */
+    var metadata: Any = js.native
     
     /** The name of the animation group */
     var name: String = js.native
@@ -206,12 +218,12 @@ object animationGroupMod {
       * Serializes the animationGroup to an object
       * @returns Serialized object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Set animation weight for all animatables
       * @param weight defines the weight to use
-      * @return the animationGroup
+      * @returns the animationGroup
       * @see https://doc.babylonjs.com/babylon101/animations#animation-weights
       */
     def setWeightForAllAnimatables(weight: Double): AnimationGroup = js.native
@@ -275,11 +287,11 @@ object animationGroupMod {
     
     /**
       * Synchronize and normalize all animatables with a source animatable
-      * @param root defines the root animatable to synchronize with
-      * @return the animationGroup
+      * @param root defines the root animatable to synchronize with (null to stop synchronizing)
+      * @returns the animationGroup
       * @see https://doc.babylonjs.com/babylon101/animations#animation-weights
       */
-    def syncAllAnimationsWith(root: Animatable): AnimationGroup = js.native
+    def syncAllAnimationsWith(root: Nullable[Animatable]): AnimationGroup = js.native
     
     /**
       * Gets the targeted animations for this animation group
@@ -390,12 +402,12 @@ object animationGroupMod {
       * @param scene defines the scene that will receive the animationGroup
       * @returns a new AnimationGroup
       */
-    inline def Parse(parsedAnimationGroup: js.Any, scene: Scene): AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimationGroup.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[AnimationGroup]
+    inline def Parse(parsedAnimationGroup: Any, scene: Scene): AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimationGroup.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[AnimationGroup]
   }
   
   @JSImport("babylonjs/Animations/animationGroup", "TargetedAnimation")
   @js.native
-  class TargetedAnimation () extends StObject {
+  open class TargetedAnimation () extends StObject {
     
     /**
       * Animation to perform
@@ -412,11 +424,11 @@ object animationGroupMod {
       * Serialize the object
       * @returns the JSON object representing the current entity
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Target to animate
       */
-    var target: js.Any = js.native
+    var target: Any = js.native
   }
 }

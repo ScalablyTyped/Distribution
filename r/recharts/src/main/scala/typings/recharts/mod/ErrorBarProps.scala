@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ErrorBarProps extends StObject {
   
   // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
   
   var dataKey: DataKey
   
@@ -37,19 +37,19 @@ object ErrorBarProps {
   
   extension [Self <: ErrorBarProps](x: Self) {
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
-    inline def setDataPointFormatter(value: (/* entry */ js.Any, /* dataKey */ DataKey) => ErrorVal): Self = StObject.set(x, "dataPointFormatter", js.Any.fromFunction2(value))
+    inline def setDataPointFormatter(value: (/* entry */ Any, /* dataKey */ DataKey) => ErrorVal): Self = StObject.set(x, "dataPointFormatter", js.Any.fromFunction2(value))
     
     inline def setDataPointFormatterUndefined: Self = StObject.set(x, "dataPointFormatter", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

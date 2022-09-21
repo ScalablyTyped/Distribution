@@ -24,6 +24,6 @@ object GetRelationalDatabaseLogStreamsResult {
     
     inline def setLogStreamsUndefined: Self = StObject.set(x, "logStreams", js.undefined)
     
-    inline def setLogStreamsVarargs(value: String*): Self = StObject.set(x, "logStreams", js.Array(value :_*))
+    inline def setLogStreamsVarargs(value: String*): Self = StObject.set(x, "logStreams", js.Array(value*))
   }
 }

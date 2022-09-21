@@ -22,7 +22,7 @@ trait Point
   
   var options: PointOptions = js.native
   
-  def rotate(angle: Double, center: js.Any): Point = js.native
+  def rotate(angle: Double, center: Any): Point = js.native
   def rotate(angle: Double, center: Point): Point = js.native
   
   def round(digits: Double): Point = js.native
@@ -35,7 +35,7 @@ trait Point
   
   def setY(value: Double): Point = js.native
   
-  def toArray(digits: Double): js.Any = js.native
+  def toArray(digits: Double): Any = js.native
   
   def toString(digits: Double, separator: String): String = js.native
   
@@ -45,7 +45,7 @@ trait Point
   
   def translate(dx: Double, dy: Double): Point = js.native
   
-  def translateWith(vector: js.Any): Point = js.native
+  def translateWith(vector: Any): Point = js.native
   def translateWith(vector: Point): Point = js.native
   
   var x: Double = js.native

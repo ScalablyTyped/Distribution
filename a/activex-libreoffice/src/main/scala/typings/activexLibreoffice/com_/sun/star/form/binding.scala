@@ -682,7 +682,7 @@ object binding {
       getAllListEntries: () => SafeArray[String],
       getListEntry: Double => String,
       getListEntryCount: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removeListEntryListener: XListEntryListener => Unit
@@ -742,17 +742,17 @@ object binding {
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       dispose: () => Unit,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
+      getPropertyValue: String => Any,
       getSupportedValueTypes: () => SafeArray[`type`],
-      getValue: `type` => js.Any,
-      queryInterface: `type` => js.Any,
+      getValue: `type` => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removeModifyListener: XModifyListener => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (String, js.Any) => Unit,
-      setValue: js.Any => Unit,
+      setPropertyValue: (String, Any) => Unit,
+      setValue: Any => Unit,
       supportsType: `type` => Boolean
     ): ValueBinding = {
       val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any], Relevant = Relevant.asInstanceOf[js.Any], SupportedValueTypes = SupportedValueTypes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addModifyListener = js.Any.fromFunction1(addModifyListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSupportedValueTypes = js.Any.fromFunction0(getSupportedValueTypes), getValue = js.Any.fromFunction1(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeModifyListener = js.Any.fromFunction1(removeModifyListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setValue = js.Any.fromFunction1(setValue), supportsType = js.Any.fromFunction1(supportsType))
@@ -796,7 +796,7 @@ object binding {
       ValueBinding: XValueBinding,
       acquire: () => Unit,
       getValueBinding: () => XValueBinding,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setValueBinding: XValueBinding => Unit
     ): XBindableValue = {
@@ -854,7 +854,7 @@ object binding {
       entryChanged: ListEntryEvent => Unit,
       entryRangeInserted: ListEntryEvent => Unit,
       entryRangeRemoved: ListEntryEvent => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XListEntryListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), allEntriesChanged = js.Any.fromFunction1(allEntriesChanged), disposing = js.Any.fromFunction1(disposing), entryChanged = js.Any.fromFunction1(entryChanged), entryRangeInserted = js.Any.fromFunction1(entryRangeInserted), entryRangeRemoved = js.Any.fromFunction1(entryRangeRemoved), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -898,7 +898,7 @@ object binding {
       ListEntrySource: XListEntrySource,
       acquire: () => Unit,
       getListEntrySource: () => XListEntrySource,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setListEntrySource: XListEntrySource => Unit
     ): XListEntrySink = {
@@ -968,7 +968,7 @@ object binding {
       getAllListEntries: () => SafeArray[String],
       getListEntry: Double => String,
       getListEntryCount: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeListEntryListener: XListEntryListener => Unit
     ): XListEntrySource = {
@@ -1017,7 +1017,7 @@ object binding {
       * @see supportsType
       * @throws IncompatibleTypesException if the requested value type is not supported by the binding
       */
-    def getValue(aType: `type`): js.Any
+    def getValue(aType: `type`): Any
     
     /**
       * sets the current value
@@ -1028,7 +1028,7 @@ object binding {
       * @throws InvalidBindingStateException if the value currently cannot be changed, since the binding is not fully operational. Possible reasons for this incl
       * @throws com::sun::star::lang::NoSupportException if the binding in general does not support write access to its binding
       */
-    def setValue(aValue: js.Any): Unit
+    def setValue(aValue: Any): Unit
     
     /**
       * determines whether a given type is supported by this binding for value exchange
@@ -1044,10 +1044,10 @@ object binding {
       SupportedValueTypes: SafeArray[`type`],
       acquire: () => Unit,
       getSupportedValueTypes: () => SafeArray[`type`],
-      getValue: `type` => js.Any,
-      queryInterface: `type` => js.Any,
+      getValue: `type` => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
-      setValue: js.Any => Unit,
+      setValue: Any => Unit,
       supportsType: `type` => Boolean
     ): XValueBinding = {
       val __obj = js.Dynamic.literal(SupportedValueTypes = SupportedValueTypes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getSupportedValueTypes = js.Any.fromFunction0(getSupportedValueTypes), getValue = js.Any.fromFunction1(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValue = js.Any.fromFunction1(setValue), supportsType = js.Any.fromFunction1(supportsType))
@@ -1058,9 +1058,9 @@ object binding {
       
       inline def setGetSupportedValueTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getSupportedValueTypes", js.Any.fromFunction0(value))
       
-      inline def setGetValue(value: `type` => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: `type` => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
-      inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
       inline def setSupportedValueTypes(value: SafeArray[`type`]): Self = StObject.set(x, "SupportedValueTypes", value.asInstanceOf[js.Any])
       

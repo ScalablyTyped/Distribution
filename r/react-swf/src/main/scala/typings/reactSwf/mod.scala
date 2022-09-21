@@ -13,7 +13,7 @@ object mod {
   /* was `typeof rswf.ReactSWF` */
   @JSImport("react-swf", JSImport.Namespace)
   @js.native
-  class ^ () extends ReactSWF
+  open class ^ () extends ReactSWF
   @JSImport("react-swf", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -232,8 +232,7 @@ object mod {
     }
     
     @js.native
-    trait ReactSWF
-      extends Component[Props, State, js.Any] {
+    trait ReactSWF extends Component[Props, State, Any] {
       
       /**
         * Returns the Flash Player object DOM node.

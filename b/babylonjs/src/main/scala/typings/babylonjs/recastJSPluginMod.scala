@@ -1,14 +1,16 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.AgentIndex
 import typings.babylonjs.inavigationengineMod.IAgentParameters
 import typings.babylonjs.inavigationengineMod.ICrowd
 import typings.babylonjs.inavigationengineMod.INavMeshParameters
 import typings.babylonjs.inavigationengineMod.INavigationEnginePlugin
+import typings.babylonjs.inavigationengineMod.IObstacle
 import typings.babylonjs.mathMod.Vector3
 import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.transformNodeMod.TransformNode
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +19,7 @@ object recastJSPluginMod {
   
   @JSImport("babylonjs/Navigation/Plugins/recastJSPlugin", "RecastJSCrowd")
   @js.native
-  class RecastJSCrowd protected ()
+  open class RecastJSCrowd protected ()
     extends StObject
        with ICrowd {
     /**
@@ -31,14 +33,24 @@ object recastJSPluginMod {
     def this(plugin: RecastJSPlugin, maxAgents: Double, maxAgentRadius: Double, scene: Scene) = this()
     
     /**
+      * agent current target
+      */
+    /* private */ var _agentDestination: Any = js.native
+    
+    /**
+      * true when a destination is active for an agent and notifier hasn't been notified of reach
+      */
+    /* private */ var _agentDestinationArmed: Any = js.native
+    
+    /**
       * Observer for crowd updates
       */
-    /* private */ var _onBeforeAnimationsObserver: js.Any = js.native
+    /* private */ var _onBeforeAnimationsObserver: Any = js.native
     
     /**
       * Link to the scene is kept to unregister the crowd from the scene
       */
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /**
       * Add a new agent to the crowd with the specified parameter a corresponding transformNode.
@@ -147,6 +159,14 @@ object recastJSPluginMod {
     override def getAgents(): js.Array[Double] = js.native
     
     /**
+      * Get the next corner points composing the path (max 4 points)
+      * @param index agent index returned by addAgent
+      * @returns array containing world position composing the path
+      */
+    /* CompleteClass */
+    override def getCorners(index: Double): js.Array[Vector3] = js.native
+    
+    /**
       * Get the Bounding box extent specified by setDefaultQueryExtent
       * @returns the box extent values
       */
@@ -161,6 +181,11 @@ object recastJSPluginMod {
     override def getDefaultQueryExtentToRef(result: Vector3): Unit = js.native
     
     /**
+      * Fires each time an agent is in reach radius of its destination
+      */
+    var onReachTargetObservable: Observable[AgentIndex] = js.native
+    
+    /**
       * returns true if the agent in over an off mesh link connection
       * @param index agent index returned by addAgent
       * @returns true if over an off mesh link connection
@@ -169,9 +194,14 @@ object recastJSPluginMod {
     override def overOffmeshConnection(index: Double): Boolean = js.native
     
     /**
+      * agents reach radius
+      */
+    var reachRadii: js.Array[Double] = js.native
+    
+    /**
       * Link to the detour crowd
       */
-    var recastCrowd: js.Any = js.native
+    var recastCrowd: Any = js.native
     
     /**
       * remove a particular agent previously created
@@ -216,26 +246,54 @@ object recastJSPluginMod {
     * Initializes the recastJS plugin
     * @param recastInjection can be used to inject your own recast reference
     */
-  class RecastJSPlugin ()
+  open class RecastJSPlugin ()
     extends StObject
        with INavigationEnginePlugin {
-    def this(recastInjection: js.Any) = this()
+    def this(recastInjection: Any) = this()
     
-    /* private */ var _maximumSubStepCount: js.Any = js.native
+    /* private */ var _maximumSubStepCount: Any = js.native
     
-    /* private */ var _timeStep: js.Any = js.native
+    /* private */ var _tempVec1: Any = js.native
+    
+    /* private */ var _tempVec2: Any = js.native
+    
+    /* private */ var _timeFactor: Any = js.native
+    
+    /* private */ var _timeStep: Any = js.native
+    
+    /* private */ var _worker: Any = js.native
+    
+    /**
+      * Creates an oriented box obstacle and add it to the navigation
+      * @param position world position
+      * @param extent box size
+      * @param angle angle in radians of the box orientation on Y axis
+      * @returns the obstacle freshly created
+      */
+    /* CompleteClass */
+    override def addBoxObstacle(position: Vector3, extent: Vector3, angle: Double): IObstacle = js.native
+    
+    /**
+      * Creates a cylinder obstacle and add it to the navigation
+      * @param position world position
+      * @param radius cylinder radius
+      * @param height cylinder height
+      * @returns the obstacle freshly created
+      */
+    /* CompleteClass */
+    override def addCylinderObstacle(position: Vector3, radius: Double, height: Double): IObstacle = js.native
     
     /**
       * Reference to the Recast library
       */
-    var bjsRECAST: js.Any = js.native
+    var bjsRECAST: Any = js.native
     
     /**
       * build the navmesh from a previously saved state using getNavmeshData
       * @param data the Uint8Array returned by getNavmeshData
       */
     /* CompleteClass */
-    override def buildFromNavmeshData(data: Uint8Array): Unit = js.native
+    override def buildFromNavmeshData(data: js.typedarray.Uint8Array): Unit = js.native
     
     /**
       * Compute a navigation path from start to end. Returns an empty array if no path can be computed
@@ -266,11 +324,16 @@ object recastJSPluginMod {
     
     /**
       * Creates a navigation mesh
-      * @param meshes array of all the geometry used to compute the navigatio mesh
+      * @param meshes array of all the geometry used to compute the navigation mesh
       * @param parameters bunch of parameters used to filter geometry
       */
     /* CompleteClass */
     override def createNavMesh(meshes: js.Array[Mesh], parameters: INavMeshParameters): Unit = js.native
+    def createNavMesh(
+      meshes: js.Array[Mesh],
+      parameters: INavMeshParameters,
+      completion: js.Function1[/* navmeshData */ js.typedarray.Uint8Array, Unit]
+    ): Unit = js.native
     
     /**
       * Release all resources
@@ -320,7 +383,7 @@ object recastJSPluginMod {
       * @returns data the Uint8Array that can be saved and reused
       */
     /* CompleteClass */
-    override def getNavmeshData(): Uint8Array = js.native
+    override def getNavmeshData(): js.typedarray.Uint8Array = js.native
     
     /**
       * Get a navigation mesh constrained position, within a particular radius
@@ -381,7 +444,14 @@ object recastJSPluginMod {
     /**
       * the first navmesh created. We might extend this to support multiple navmeshes
       */
-    var navMesh: js.Any = js.native
+    var navMesh: Any = js.native
+    
+    /**
+      * Removes an obstacle created by addCylinderObstacle or addBoxObstacle
+      * @param obstacle obstacle to remove from the navigation
+      */
+    /* CompleteClass */
+    override def removeObstacle(obstacle: IObstacle): Unit = js.native
     
     /**
       * Set the Bounding box extent for doing spatial queries (getClosestPoint, getRandomPointAround, ...)
@@ -425,5 +495,23 @@ object recastJSPluginMod {
       */
     /* CompleteClass */
     override def setTimeStep(newTimeStep: Double): Unit = js.native
+    
+    /**
+      * Set worker URL to be used when generating a new navmesh
+      * @param workerURL url string
+      * @returns boolean indicating if worker is created
+      */
+    def setWorkerURL(workerURL: String): Boolean = js.native
+    
+    /**
+      * Get the time factor used for crowd agent update
+      * @returns the time factor
+      */
+    def timeFactor: Double = js.native
+    /**
+      * Time factor applied when updating crowd agents (default 1). A value of 0 will pause crowd updates.
+      * @param value the time factor applied at update
+      */
+    def timeFactor_=(value: Double): Unit = js.native
   }
 }

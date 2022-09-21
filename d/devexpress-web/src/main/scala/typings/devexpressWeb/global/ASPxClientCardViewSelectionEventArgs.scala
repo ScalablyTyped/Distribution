@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewSelectionEventArgs")
 @js.native
-class ASPxClientCardViewSelectionEventArgs protected ()
+open class ASPxClientCardViewSelectionEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewSelectionEventArgs {
   /**

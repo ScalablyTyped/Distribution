@@ -1,7 +1,7 @@
 
 # Scala.js typings for bitwise
 
-Typings are for version 2.0.4
+Typings are for version 2.1.0
 
 ## Library description:
 Manipulates bits, nibbles, bytes, and buffers.
@@ -10,10 +10,10 @@ Manipulates bits, nibbles, bytes, and buffers.
 | ------------------ | :-------------: |
 | Full name          | bitwise |
 | Keywords           | and, binary, bit, bits, bitwise, buffer, buffers, change, flip, manipulate, nand, nibble, nibbles, nor, not, or, read, toggle, write, xnor, xor |
-| # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 79276 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 79852.33333333333 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/FlorianWendelborn/bitwise#readme)

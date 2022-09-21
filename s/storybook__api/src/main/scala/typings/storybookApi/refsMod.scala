@@ -15,23 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object refsMod {
   
-  @JSImport("@storybook/api/dist/modules/refs", JSImport.Namespace)
+  @JSImport("@storybook/api/dist/ts3.9/modules/refs", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@storybook/api/dist/modules/refs", "defaultStoryMapper")
+  @JSImport("@storybook/api/dist/ts3.9/modules/refs", "defaultStoryMapper")
   @js.native
   val defaultStoryMapper: StoryMapper = js.native
   
   inline def getSourceType(source: String, refId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceType")(source.asInstanceOf[js.Any], refId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@storybook/api/dist/modules/refs", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/refs", "init")
   @js.native
   val init: ModuleFn = js.native
   
   trait ComposedRef extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
+    
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     var id: String
     
@@ -60,9 +62,13 @@ object refsMod {
     
     extension [Self <: ComposedRef](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -96,10 +102,12 @@ object refsMod {
     }
   }
   
-  /* Inlined std.Partial<std.Pick<@storybook/api.@storybook/api/dist/modules/refs.ComposedRef, 'title' | 'type' | 'stories' | 'versions' | 'loginUrl' | 'version' | 'ready' | 'error'>> */
+  /* Inlined std.Partial<std.Pick<@storybook/api.@storybook/api/dist/ts3.9/modules/refs.ComposedRef, 'title' | 'type' | 'expanded' | 'stories' | 'versions' | 'loginUrl' | 'version' | 'ready' | 'error'>> */
   trait ComposedRefUpdate extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
+    
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     var loginUrl: js.UndefOr[String] = js.undefined
     
@@ -124,9 +132,13 @@ object refsMod {
     
     extension [Self <: ComposedRefUpdate](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
       inline def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
       
@@ -164,10 +176,12 @@ object refsMod {
   
   type Refs = Record[String, ComposedRef]
   
-  /* Inlined std.Partial<std.Omit<@storybook/api.@storybook/api/dist/modules/refs.ComposedRef, 'stories'> & {  stories :@storybook/api.@storybook/api/dist/lib/stories.StoriesRaw | undefined}> */
+  /* Inlined std.Partial<std.Omit<@storybook/api.@storybook/api/dist/ts3.9/modules/refs.ComposedRef, 'stories'> & {  v :number,   stories :@storybook/api.@storybook/api/dist/ts3.9/lib/stories.StoriesRaw | undefined}> */
   trait SetRefData extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
+    
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -183,6 +197,8 @@ object refsMod {
     
     var url: js.UndefOr[String] = js.undefined
     
+    var v: js.UndefOr[Double] = js.undefined
+    
     var version: js.UndefOr[String] = js.undefined
     
     var versions: js.UndefOr[Versions] = js.undefined
@@ -196,9 +212,13 @@ object refsMod {
     
     extension [Self <: SetRefData](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -227,6 +247,10 @@ object refsMod {
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      
+      inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       

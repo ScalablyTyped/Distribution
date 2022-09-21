@@ -12,30 +12,30 @@ object layerSceneComponentMod {
   
   @JSImport("babylonjs/Layers/layerSceneComponent", "LayerSceneComponent")
   @js.native
-  class LayerSceneComponent protected ()
+  /**
+    * Creates a new instance of the component for the given scene
+    * @param scene Defines the scene to register the component in
+    */
+  open class LayerSceneComponent ()
     extends StObject
        with ISceneComponent {
-    /**
-      * Creates a new instance of the component for the given scene
-      * @param scene Defines the scene to register the component in
-      */
     def this(scene: Scene) = this()
     
-    /* private */ var _draw: js.Any = js.native
+    /* private */ var _draw: Any = js.native
     
-    /* private */ var _drawCameraBackground: js.Any = js.native
+    /* private */ var _drawCameraBackground: Any = js.native
     
-    /* private */ var _drawCameraForeground: js.Any = js.native
+    /* private */ var _drawCameraForeground: Any = js.native
     
-    /* private */ var _drawCameraPredicate: js.Any = js.native
+    /* private */ var _drawCameraPredicate: Any = js.native
     
-    /* private */ var _drawRenderTargetBackground: js.Any = js.native
+    /* private */ var _drawRenderTargetBackground: Any = js.native
     
-    /* private */ var _drawRenderTargetForeground: js.Any = js.native
+    /* private */ var _drawRenderTargetForeground: Any = js.native
     
-    /* private */ var _drawRenderTargetPredicate: js.Any = js.native
+    /* private */ var _drawRenderTargetPredicate: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
     /**
       * Adds all the elements from the container to the scene
@@ -104,7 +104,7 @@ object layerSceneComponentMod {
         
         inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
-        inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+        inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
       }
     }
   }

@@ -54,7 +54,7 @@ trait Map
     * @param {any} Pass the navigation control instance
     * @returns {void}
     */
-  def refreshNavigationControl(navigation: js.Any): Unit = js.native
+  def refreshNavigationControl(navigation: Any): Unit = js.native
   
   /** Method to perform map zooming.
     * @param {number} Pass the zoom level for map to be zoomed
@@ -425,7 +425,7 @@ object Map {
     
     /** Returns the bubble values.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object BubbleRenderingEventArgs {
     
@@ -436,7 +436,7 @@ object Map {
     
     extension [Self <: BubbleRenderingEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -446,7 +446,7 @@ object Map {
     
     /** Returns clicked shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object ClickEventArgs {
     
@@ -457,7 +457,7 @@ object Map {
     
     extension [Self <: ClickEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -472,11 +472,11 @@ object Map {
     /** text - Text displayed in data label. You can add custom text to the data label    locationX - X-coordinate of data label location    locationY - Y-coordinate of data label
       * location
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the map model object.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -495,11 +495,11 @@ object Map {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -513,7 +513,7 @@ object Map {
     
     /** Returns double clicked shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -524,7 +524,7 @@ object Map {
     
     extension [Self <: DoubleClickEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -543,7 +543,7 @@ object Map {
     
     /** Specifies the datasource for the shape layer
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Enables or disables the shape mouse hover
       * @Default {false}
@@ -589,12 +589,12 @@ object Map {
     
     /** Specify markers for shape layer.
       */
-    var markers: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var markers: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specify selectedMapShapes for shape layer
       * @Default {[]}
       */
-    var selectedMapShapes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedMapShapes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
       * @Default {default}
@@ -603,7 +603,7 @@ object Map {
     
     /** Specifies the shape data for the shape layer
       */
-    var shapeData: js.UndefOr[js.Any] = js.undefined
+    var shapeData: js.UndefOr[Any] = js.undefined
     
     /** Specifies the data path of shape
       */
@@ -657,7 +657,7 @@ object Map {
       
       inline def setBubbleSettingsUndefined: Self = StObject.set(x, "bubbleSettings", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -697,23 +697,23 @@ object Map {
       
       inline def setMarkerTemplateUndefined: Self = StObject.set(x, "markerTemplate", js.undefined)
       
-      inline def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+      inline def setMarkers(value: js.Array[Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       
       inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
       
-      inline def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))
+      inline def setMarkersVarargs(value: Any*): Self = StObject.set(x, "markers", js.Array(value*))
       
-      inline def setSelectedMapShapes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedMapShapes", value.asInstanceOf[js.Any])
+      inline def setSelectedMapShapes(value: js.Array[Any]): Self = StObject.set(x, "selectedMapShapes", value.asInstanceOf[js.Any])
       
       inline def setSelectedMapShapesUndefined: Self = StObject.set(x, "selectedMapShapes", js.undefined)
       
-      inline def setSelectedMapShapesVarargs(value: js.Any*): Self = StObject.set(x, "selectedMapShapes", js.Array(value :_*))
+      inline def setSelectedMapShapesVarargs(value: Any*): Self = StObject.set(x, "selectedMapShapes", js.Array(value*))
       
       inline def setSelectionMode(value: typings.std.SelectionMode | String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
       inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
-      inline def setShapeData(value: js.Any): Self = StObject.set(x, "shapeData", value.asInstanceOf[js.Any])
+      inline def setShapeData(value: Any): Self = StObject.set(x, "shapeData", value.asInstanceOf[js.Any])
       
       inline def setShapeDataPath(value: String): Self = StObject.set(x, "shapeDataPath", value.asInstanceOf[js.Any])
       
@@ -741,7 +741,7 @@ object Map {
       
       inline def setSubLayersUndefined: Self = StObject.set(x, "subLayers", js.undefined)
       
-      inline def setSubLayersVarargs(value: LayersSubLayer*): Self = StObject.set(x, "subLayers", js.Array(value :_*))
+      inline def setSubLayersVarargs(value: LayersSubLayer*): Self = StObject.set(x, "subLayers", js.Array(value*))
       
       inline def setTooltipTemplate(value: String): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
       
@@ -876,7 +876,7 @@ object Map {
       
       inline def setRangeColorMappingUndefined: Self = StObject.set(x, "rangeColorMapping", js.undefined)
       
-      inline def setRangeColorMappingVarargs(value: LayersBubbleSettingsColorMappingsRangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value :_*))
+      inline def setRangeColorMappingVarargs(value: LayersBubbleSettingsColorMappingsRangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value*))
     }
   }
   
@@ -894,7 +894,7 @@ object Map {
     
     /** GradientColors in the bubble layer of map.
       */
-    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var gradientColors: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** End range colorMappings in the bubble layer.
       * @Default {null}
@@ -918,11 +918,11 @@ object Map {
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      inline def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      inline def setGradientColors(value: js.Array[Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       inline def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
       
-      inline def setGradientColorsVarargs(value: js.Any*): Self = StObject.set(x, "gradientColors", js.Array(value :_*))
+      inline def setGradientColorsVarargs(value: Any*): Self = StObject.set(x, "gradientColors", js.Array(value*))
       
       inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -1438,13 +1438,13 @@ object Map {
       
       inline def setEqualColorMappingUndefined: Self = StObject.set(x, "equalColorMapping", js.undefined)
       
-      inline def setEqualColorMappingVarargs(value: LayersShapeSettingsColorMappingsEqualColorMapping*): Self = StObject.set(x, "equalColorMapping", js.Array(value :_*))
+      inline def setEqualColorMappingVarargs(value: LayersShapeSettingsColorMappingsEqualColorMapping*): Self = StObject.set(x, "equalColorMapping", js.Array(value*))
       
       inline def setRangeColorMapping(value: js.Array[LayersShapeSettingsColorMappingsRangeColorMapping]): Self = StObject.set(x, "rangeColorMapping", value.asInstanceOf[js.Any])
       
       inline def setRangeColorMappingUndefined: Self = StObject.set(x, "rangeColorMapping", js.undefined)
       
-      inline def setRangeColorMappingVarargs(value: LayersShapeSettingsColorMappingsRangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value :_*))
+      inline def setRangeColorMappingVarargs(value: LayersShapeSettingsColorMappingsRangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value*))
     }
   }
   
@@ -1489,7 +1489,7 @@ object Map {
     /** Specifies the gradientColors in the shape layer of map.
       * @Default {null}
       */
-    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var gradientColors: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the to range colorMappings in the shape layer of map.
       * @Default {null}
@@ -1509,11 +1509,11 @@ object Map {
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      inline def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      inline def setGradientColors(value: js.Array[Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       inline def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
       
-      inline def setGradientColorsVarargs(value: js.Any*): Self = StObject.set(x, "gradientColors", js.Array(value :_*))
+      inline def setGradientColorsVarargs(value: Any*): Self = StObject.set(x, "gradientColors", js.Array(value*))
       
       inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -1534,7 +1534,7 @@ object Map {
     
     /** Specifies the datasource for the shape layer
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Enables or disables the shape mouse hover
       * @Default {false}
@@ -1580,12 +1580,12 @@ object Map {
     
     /** Specify markers for shape layer.
       */
-    var markers: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var markers: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specify selectedMapShapes for shape layer
       * @Default {[]}
       */
-    var selectedMapShapes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedMapShapes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
       * @Default {default}
@@ -1594,7 +1594,7 @@ object Map {
     
     /** Specifies the shape data for the shape layer
       */
-    var shapeData: js.UndefOr[js.Any] = js.undefined
+    var shapeData: js.UndefOr[Any] = js.undefined
     
     /** Specifies the data path of shape
       */
@@ -1644,7 +1644,7 @@ object Map {
       
       inline def setBubbleSettingsUndefined: Self = StObject.set(x, "bubbleSettings", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -1684,23 +1684,23 @@ object Map {
       
       inline def setMarkerTemplateUndefined: Self = StObject.set(x, "markerTemplate", js.undefined)
       
-      inline def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+      inline def setMarkers(value: js.Array[Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       
       inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
       
-      inline def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))
+      inline def setMarkersVarargs(value: Any*): Self = StObject.set(x, "markers", js.Array(value*))
       
-      inline def setSelectedMapShapes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedMapShapes", value.asInstanceOf[js.Any])
+      inline def setSelectedMapShapes(value: js.Array[Any]): Self = StObject.set(x, "selectedMapShapes", value.asInstanceOf[js.Any])
       
       inline def setSelectedMapShapesUndefined: Self = StObject.set(x, "selectedMapShapes", js.undefined)
       
-      inline def setSelectedMapShapesVarargs(value: js.Any*): Self = StObject.set(x, "selectedMapShapes", js.Array(value :_*))
+      inline def setSelectedMapShapesVarargs(value: Any*): Self = StObject.set(x, "selectedMapShapes", js.Array(value*))
       
       inline def setSelectionMode(value: typings.std.SelectionMode | String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
       inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
-      inline def setShapeData(value: js.Any): Self = StObject.set(x, "shapeData", value.asInstanceOf[js.Any])
+      inline def setShapeData(value: Any): Self = StObject.set(x, "shapeData", value.asInstanceOf[js.Any])
       
       inline def setShapeDataPath(value: String): Self = StObject.set(x, "shapeDataPath", value.asInstanceOf[js.Any])
       
@@ -1866,7 +1866,7 @@ object Map {
       
       inline def setRangeColorMappingUndefined: Self = StObject.set(x, "rangeColorMapping", js.undefined)
       
-      inline def setRangeColorMappingVarargs(value: LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value :_*))
+      inline def setRangeColorMappingVarargs(value: LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value*))
     }
   }
   
@@ -1884,7 +1884,7 @@ object Map {
     
     /** GradientColors in the bubble layer of map.
       */
-    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var gradientColors: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** End range colorMappings in the bubble layer.
       * @Default {null}
@@ -1908,11 +1908,11 @@ object Map {
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      inline def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      inline def setGradientColors(value: js.Array[Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       inline def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
       
-      inline def setGradientColorsVarargs(value: js.Any*): Self = StObject.set(x, "gradientColors", js.Array(value :_*))
+      inline def setGradientColorsVarargs(value: Any*): Self = StObject.set(x, "gradientColors", js.Array(value*))
       
       inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -2335,13 +2335,13 @@ object Map {
       
       inline def setEqualColorMappingUndefined: Self = StObject.set(x, "equalColorMapping", js.undefined)
       
-      inline def setEqualColorMappingVarargs(value: LayersSubLayersShapeSettingsColorMappingsEqualColorMapping*): Self = StObject.set(x, "equalColorMapping", js.Array(value :_*))
+      inline def setEqualColorMappingVarargs(value: LayersSubLayersShapeSettingsColorMappingsEqualColorMapping*): Self = StObject.set(x, "equalColorMapping", js.Array(value*))
       
       inline def setRangeColorMapping(value: js.Array[LayersSubLayersShapeSettingsColorMappingsRangeColorMapping]): Self = StObject.set(x, "rangeColorMapping", value.asInstanceOf[js.Any])
       
       inline def setRangeColorMappingUndefined: Self = StObject.set(x, "rangeColorMapping", js.undefined)
       
-      inline def setRangeColorMappingVarargs(value: LayersSubLayersShapeSettingsColorMappingsRangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value :_*))
+      inline def setRangeColorMappingVarargs(value: LayersSubLayersShapeSettingsColorMappingsRangeColorMapping*): Self = StObject.set(x, "rangeColorMapping", js.Array(value*))
     }
   }
   
@@ -2386,7 +2386,7 @@ object Map {
     /** Specifies the gradientColors in the shape layer of map.
       * @Default {null}
       */
-    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var gradientColors: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the to range colorMappings in the shape layer of map.
       * @Default {null}
@@ -2406,11 +2406,11 @@ object Map {
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      inline def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      inline def setGradientColors(value: js.Array[Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       inline def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
       
-      inline def setGradientColorsVarargs(value: js.Any*): Self = StObject.set(x, "gradientColors", js.Array(value :_*))
+      inline def setGradientColorsVarargs(value: Any*): Self = StObject.set(x, "gradientColors", js.Array(value*))
       
       inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -2428,11 +2428,11 @@ object Map {
       * styles such as border, color, size, etcâ€¦,        symbolShape - Name of the legend item shape. Use this option to customize legend item shape before rendering    map - Instance
       * of the map object corresponding to the legend item
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the map model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -2451,11 +2451,11 @@ object Map {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2469,7 +2469,7 @@ object Map {
     
     /** Returns the legend item.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object LegendItemRenderingEventArgs {
     
@@ -2480,7 +2480,7 @@ object Map {
     
     extension [Self <: LegendItemRenderingEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -2494,7 +2494,7 @@ object Map {
     
     /** Instance of the map model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -2513,7 +2513,7 @@ object Map {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2531,7 +2531,7 @@ object Map {
     
     /** Instance of the map model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -2550,7 +2550,7 @@ object Map {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2564,7 +2564,7 @@ object Map {
     
     /** Returns marker object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object MarkerSelectedEventArgs {
     
@@ -2575,7 +2575,7 @@ object Map {
     
     extension [Self <: MarkerSelectedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -2604,7 +2604,7 @@ object Map {
     /** Specify the center position where map should be displayed
       * @Default {[0,0]}
       */
-    var centerPosition: js.UndefOr[js.Any] = js.undefined
+    var centerPosition: js.UndefOr[Any] = js.undefined
     
     /** Fires before rendering the data labels. This event is triggered for each data label in the layers. You can use this event to add custom text in data labels.
       */
@@ -2752,7 +2752,7 @@ object Map {
       
       inline def setBubbleRenderingUndefined: Self = StObject.set(x, "bubbleRendering", js.undefined)
       
-      inline def setCenterPosition(value: js.Any): Self = StObject.set(x, "centerPosition", value.asInstanceOf[js.Any])
+      inline def setCenterPosition(value: Any): Self = StObject.set(x, "centerPosition", value.asInstanceOf[js.Any])
       
       inline def setCenterPositionUndefined: Self = StObject.set(x, "centerPosition", js.undefined)
       
@@ -2800,7 +2800,7 @@ object Map {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setLegendItemClick(value: /* e */ LegendItemClickEventArgs => Unit): Self = StObject.set(x, "legendItemClick", js.Any.fromFunction1(value))
       
@@ -2884,7 +2884,7 @@ object Map {
     
     /** Returns hovered map shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object MouseleaveEventArgs {
     
@@ -2895,7 +2895,7 @@ object Map {
     
     extension [Self <: MouseleaveEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -2905,7 +2905,7 @@ object Map {
     
     /** Returns hovered map shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object MouseoverEventArgs {
     
@@ -2916,7 +2916,7 @@ object Map {
     
     extension [Self <: MouseoverEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -2927,7 +2927,7 @@ object Map {
     /** Set the absolutePosition for navigation control
       * @Default {{x:0,y:0}}
       */
-    var absolutePosition: js.UndefOr[js.Any] = js.undefined
+    var absolutePosition: js.UndefOr[Any] = js.undefined
     
     /** Specifies the navigation control template for map
       * @Default {null}
@@ -2958,7 +2958,7 @@ object Map {
     
     extension [Self <: NavigationControl](x: Self) {
       
-      inline def setAbsolutePosition(value: js.Any): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Any): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -2988,7 +2988,7 @@ object Map {
     
     /** Instance of the map model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -3007,7 +3007,7 @@ object Map {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3021,7 +3021,7 @@ object Map {
     
     /** Event parameters from map
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object OnRenderCompleteEventArgs {
     
@@ -3032,7 +3032,7 @@ object Map {
     
     extension [Self <: OnRenderCompleteEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -3042,7 +3042,7 @@ object Map {
     
     /** Event parameters from map
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object PannedEventArgs {
     
@@ -3053,7 +3053,7 @@ object Map {
     
     extension [Self <: PannedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -3063,7 +3063,7 @@ object Map {
     
     /** Refresh and load the map.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object RefreshedEventArgs {
     
@@ -3074,7 +3074,7 @@ object Map {
     
     extension [Self <: RefreshedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -3084,7 +3084,7 @@ object Map {
     
     /** Returns right clicked shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -3095,7 +3095,7 @@ object Map {
     
     extension [Self <: RightClickEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -3105,7 +3105,7 @@ object Map {
     
     /** Returns the shape values.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object ShapeRenderingEventArgs {
     
@@ -3116,7 +3116,7 @@ object Map {
     
     extension [Self <: ShapeRenderingEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -3126,7 +3126,7 @@ object Map {
     
     /** Returns selected shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object ShapeSelectedEventArgs {
     
@@ -3137,7 +3137,7 @@ object Map {
     
     extension [Self <: ShapeSelectedEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -3232,11 +3232,11 @@ object Map {
     
     /** Event parameters from map
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
     
     /** Returns zoom level value for which the map is zoomed.
       */
-    var zoomLevel: js.UndefOr[js.Any] = js.undefined
+    var zoomLevel: js.UndefOr[Any] = js.undefined
   }
   object ZoomedInEventArgs {
     
@@ -3247,11 +3247,11 @@ object Map {
     
     extension [Self <: ZoomedInEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      inline def setZoomLevel(value: js.Any): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+      inline def setZoomLevel(value: Any): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
       
       inline def setZoomLevelUndefined: Self = StObject.set(x, "zoomLevel", js.undefined)
     }
@@ -3261,11 +3261,11 @@ object Map {
     
     /** Event parameters from map
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
     
     /** Returns zoom level value for which the map is zoomed.
       */
-    var zoomLevel: js.UndefOr[js.Any] = js.undefined
+    var zoomLevel: js.UndefOr[Any] = js.undefined
   }
   object ZoomedOutEventArgs {
     
@@ -3276,11 +3276,11 @@ object Map {
     
     extension [Self <: ZoomedOutEventArgs](x: Self) {
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      inline def setZoomLevel(value: js.Any): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+      inline def setZoomLevel(value: Any): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
       
       inline def setZoomLevelUndefined: Self = StObject.set(x, "zoomLevel", js.undefined)
     }

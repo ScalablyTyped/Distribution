@@ -41,7 +41,7 @@ object ShareTicket {
     
     inline def setKeyList(value: js.Array[String]): Self = StObject.set(x, "keyList", value.asInstanceOf[js.Any])
     
-    inline def setKeyListVarargs(value: String*): Self = StObject.set(x, "keyList", js.Array(value :_*))
+    inline def setKeyListVarargs(value: String*): Self = StObject.set(x, "keyList", js.Array(value*))
     
     inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
     

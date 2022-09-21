@@ -9,13 +9,13 @@ object templateSources {
   
   @JSImport("knockout", "templateSources.anonymousTemplate")
   @js.native
-  class anonymousTemplate protected () extends domElement {
+  open class anonymousTemplate protected () extends domElement {
     def this(element: Node) = this()
   }
   
   @JSImport("knockout", "templateSources.domElement")
   @js.native
-  class domElement protected ()
+  open class domElement protected ()
     extends StObject
        with TemplateSource {
     def this(element: Node) = this()

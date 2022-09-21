@@ -12,12 +12,12 @@ trait SavingsPlansDetails extends StObject {
   var InstanceFamily: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The unique ID used to distinguish Savings Plans from one another.
+    * The unique ID that's used to distinguish Savings Plans from one another.
     */
   var OfferingId: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * A collection of AWS resources in a geographic area. Each AWS Region is isolated and independent of the other Regions.
+    * A collection of Amazon Web Services resources in a geographic area. Each Amazon Web Services Region is isolated and independent of the other Regions.
     */
   var Region: js.UndefOr[GenericString] = js.undefined
 }

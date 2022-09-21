@@ -31,7 +31,7 @@ object entityArrayMod {
     /**
       * @inheritdoc
       */
-    def count(key: js.Any): Double = js.native
+    def count(key: Any): Double = js.native
     
     /**
       * @inheritdoc
@@ -41,17 +41,17 @@ object entityArrayMod {
     /**
       * @inheritdoc
       */
-    def get(key: js.Any): T = js.native
+    def get(key: Any): T = js.native
     
     /**
       * @inheritdoc
       */
-    def has(key: js.Any): Boolean = js.native
+    def has(key: Any): Boolean = js.native
     
     /**
       * @inheritdoc
       */
-    def key(): js.Any = js.native
+    def key(): Any = js.native
     
     /**
       * @inheritdoc
@@ -82,7 +82,7 @@ object entityArrayMod {
     /**
       * @inheritdoc
       */
-    def count(key: js.Any): Double = js.native
+    def count(key: Any): Double = js.native
     
     /**
       * @inheritdoc
@@ -92,17 +92,17 @@ object entityArrayMod {
     /**
       * @inheritdoc
       */
-    def get(key: js.Any): T = js.native
+    def get(key: Any): T = js.native
     
     /**
       * @inheritdoc
       */
-    def has(key: js.Any): Boolean = js.native
+    def has(key: Any): Boolean = js.native
     
     /**
       * @inheritdoc
       */
-    def key(): js.Any = js.native
+    def key(): Any = js.native
     
     /**
       * @inheritdoc
@@ -133,7 +133,7 @@ object entityArrayMod {
     /**
       * @inheritdoc
       */
-    def count(key: js.Any): Double = js.native
+    def count(key: Any): Double = js.native
     
     /**
       * @inheritdoc
@@ -143,17 +143,17 @@ object entityArrayMod {
     /**
       * @inheritdoc
       */
-    def get(key: js.Any): T = js.native
+    def get(key: Any): T = js.native
     
     /**
       * @inheritdoc
       */
-    def has(key: js.Any): Boolean = js.native
+    def has(key: Any): Boolean = js.native
     
     /**
       * @inheritdoc
       */
-    def key(): js.Any = js.native
+    def key(): Any = js.native
     
     /**
       * @inheritdoc

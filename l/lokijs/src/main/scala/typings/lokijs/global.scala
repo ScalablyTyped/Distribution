@@ -11,7 +11,6 @@ import typings.lokijs.lokijsBooleans.`true`
 import typings.lokijs.lokijsNumbers.`-1`
 import typings.lokijs.lokijsNumbers.`0`
 import typings.lokijs.lokijsNumbers.`1`
-import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,12 +20,11 @@ object global {
   
   /**
     * Collection class that handles documents of same type
-    * @implements LokiEventEmitter
     * @see {@link Loki#addCollection} for normal creation of collections
     */
   @JSGlobal("Collection")
   @js.native
-  class Collection[E /* <: js.Object */] protected ()
+  open class Collection[E /* <: js.Object */] protected ()
     extends StObject
        with typings.lokijs.Collection[E] {
     /**
@@ -60,12 +58,10 @@ object global {
     * mydv.applyFind({ 'doors' : 4 });
     * mydv.applyWhere(function(obj) { return obj.name === 'Toyota'; });
     * var results = mydv.data();
-    *
-    * @implements LokiEventEmitter
     */
   @JSGlobal("DynamicView")
   @js.native
-  class DynamicView[E /* <: js.Object */] protected ()
+  open class DynamicView[E /* <: js.Object */] protected ()
     extends StObject
        with typings.lokijs.DynamicView[E] {
     /**
@@ -83,7 +79,7 @@ object global {
   
   @JSGlobal("ExactIndex")
   @js.native
-  class ExactIndex[E /* <: js.Object */] protected ()
+  open class ExactIndex[E /* <: js.Object */] protected ()
     extends StObject
        with typings.lokijs.ExactIndex[E] {
     def this(exactField: /* keyof E */ String) = this()
@@ -91,39 +87,38 @@ object global {
   
   @JSGlobal("KeyValueStore")
   @js.native
-  class KeyValueStore ()
+  open class KeyValueStore ()
     extends StObject
        with typings.lokijs.KeyValueStore {
     
     /* CompleteClass */
-    override def bs(): js.Function2[/* array */ js.Array[js.Any], /* item */ js.Any, Found] = js.native
+    override def bs(): js.Function2[/* array */ js.Array[Any], /* item */ Any, Found] = js.native
     
     /* CompleteClass */
-    override def get(key: js.Any): js.Array[js.Any] = js.native
+    override def get(key: Any): js.Array[Any] = js.native
     
     /* CompleteClass */
-    var keys: js.Array[js.Any] = js.native
+    var keys: js.Array[Any] = js.native
     
     /* CompleteClass */
-    override def set(key: js.Any, value: js.Any): Unit = js.native
+    override def set(key: Any, value: Any): Unit = js.native
     
     /* CompleteClass */
-    override def setSort(fun: js.Function2[/* target */ js.Any, /* test */ js.Any, js.Any]): Unit = js.native
+    override def setSort(fun: js.Function2[/* target */ Any, /* test */ Any, Any]): Unit = js.native
     
     /* CompleteClass */
-    override def sort(a: js.Any, b: js.Any): `-1` | `0` | `1` = js.native
+    override def sort(a: Any, b: Any): `-1` | `0` | `1` = js.native
     
     /* CompleteClass */
-    var values: js.Array[js.Any] = js.native
+    var values: js.Array[Any] = js.native
   }
   
   /**
     * Loki: The main database class
-    * @implements LokiEventEmitter
     */
   @JSGlobal("Loki")
   @js.native
-  class Loki protected ()
+  open class Loki protected ()
     extends StObject
        with typings.lokijs.Loki {
     /**
@@ -152,7 +147,7 @@ object global {
     */
   @JSGlobal("LokiConstructor")
   @js.native
-  class LokiConstructor protected ()
+  open class LokiConstructor protected ()
     extends StObject
        with typings.lokijs.Loki {
     def this(filename: String) = this()
@@ -166,51 +161,57 @@ object global {
     
     @JSGlobal("LokiConstructor.Collection")
     @js.native
-    class Collection[E /* <: js.Object */] ()
+    open class Collection[E /* <: js.Object */] ()
       extends StObject
          with typings.lokijs.Collection[E]
     
+    @JSGlobal("LokiConstructor.DynamicView")
+    @js.native
+    open class DynamicView[E /* <: js.Object */] ()
+      extends StObject
+         with typings.lokijs.DynamicView[E]
+    
     @JSGlobal("LokiConstructor.KeyValueStore")
     @js.native
-    class KeyValueStore ()
+    open class KeyValueStore ()
       extends StObject
          with typings.lokijs.KeyValueStore {
       
       /* CompleteClass */
-      override def bs(): js.Function2[/* array */ js.Array[js.Any], /* item */ js.Any, Found] = js.native
+      override def bs(): js.Function2[/* array */ js.Array[Any], /* item */ Any, Found] = js.native
       
       /* CompleteClass */
-      override def get(key: js.Any): js.Array[js.Any] = js.native
+      override def get(key: Any): js.Array[Any] = js.native
       
       /* CompleteClass */
-      var keys: js.Array[js.Any] = js.native
+      var keys: js.Array[Any] = js.native
       
       /* CompleteClass */
-      override def set(key: js.Any, value: js.Any): Unit = js.native
+      override def set(key: Any, value: Any): Unit = js.native
       
       /* CompleteClass */
-      override def setSort(fun: js.Function2[/* target */ js.Any, /* test */ js.Any, js.Any]): Unit = js.native
+      override def setSort(fun: js.Function2[/* target */ Any, /* test */ Any, Any]): Unit = js.native
       
       /* CompleteClass */
-      override def sort(a: js.Any, b: js.Any): `-1` | `0` | `1` = js.native
+      override def sort(a: Any, b: Any): `-1` | `0` | `1` = js.native
       
       /* CompleteClass */
-      var values: js.Array[js.Any] = js.native
+      var values: js.Array[Any] = js.native
     }
     
     @JSGlobal("LokiConstructor.LokiFsAdapter")
     @js.native
-    class LokiFsAdapter ()
+    open class LokiFsAdapter ()
       extends StObject
          with typings.lokijs.LokiFsAdapter {
       
       /* CompleteClass */
-      override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+      override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
     }
     
     @JSGlobal("LokiConstructor.LokiLocalStorageAdapter")
     @js.native
-    class LokiLocalStorageAdapter ()
+    open class LokiLocalStorageAdapter ()
       extends StObject
          with typings.lokijs.LokiLocalStorageAdapter {
       
@@ -221,7 +222,7 @@ object global {
         * @param callback - the callback to handle the result
         */
       /* CompleteClass */
-      override def deleteDatabase(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+      override def deleteDatabase(dbname: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
       
       /**
         * loadDatabase() - Load data from localstorage
@@ -229,7 +230,7 @@ object global {
         * @param callback - the callback to handle the result
         */
       /* CompleteClass */
-      override def loadDatabase(dbname: String, callback: js.Function1[/* dataOrError */ js.Any | Error, Unit]): Unit = js.native
+      override def loadDatabase(dbname: String, callback: js.Function1[/* dataOrError */ Any | js.Error, Unit]): Unit = js.native
       
       /**
         * saveDatabase() - save data to localstorage, will throw an error if the file can't be saved
@@ -238,12 +239,16 @@ object global {
         * @param callback - the callback to handle the result
         */
       /* CompleteClass */
-      override def saveDatabase(dbname: String, dbstring: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+      override def saveDatabase(
+        dbname: String,
+        dbstring: String,
+        callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
+      ): Unit = js.native
     }
     
     @JSGlobal("LokiConstructor.LokiMemoryAdapter")
     @js.native
-    class LokiMemoryAdapter ()
+    open class LokiMemoryAdapter ()
       extends StObject
          with typings.lokijs.LokiMemoryAdapter {
       
@@ -255,13 +260,13 @@ object global {
         */
       /* CompleteClass */
       @JSName("deleteDatabase")
-      override def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+      override def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
       
       /* CompleteClass */
       var hashStore: StringDictionary[Lastsave] = js.native
       
       /* CompleteClass */
-      override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+      override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
       
       /* CompleteClass */
       var options: AsyncResponses = js.native
@@ -275,7 +280,7 @@ object global {
         */
       /* CompleteClass */
       @JSName("saveDatabase")
-      override def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+      override def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: Any, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     }
     
     @JSGlobal("LokiConstructor.LokiOps")
@@ -285,7 +290,7 @@ object global {
     
     @JSGlobal("LokiConstructor.LokiPartitioningAdapter")
     @js.native
-    class LokiPartitioningAdapter ()
+    open class LokiPartitioningAdapter ()
       extends StObject
          with typings.lokijs.LokiPartitioningAdapter {
       
@@ -308,10 +313,14 @@ object global {
         */
       /* CompleteClass */
       @JSName("exportDatabase")
-      override def exportDatabase_MLokiPartitioningAdapter(dbname: String, dbref: typings.lokijs.Loki, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+      override def exportDatabase_MLokiPartitioningAdapter(
+        dbname: String,
+        dbref: typings.lokijs.Loki,
+        callback: js.Function1[/* err */ js.Error | Null, Unit]
+      ): Unit = js.native
       
       /* CompleteClass */
-      override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+      override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
       
       /**
         * Used to sequentially load the next page of collection partition, one at a time.
@@ -346,7 +355,7 @@ object global {
         * @param callback - adapter callback to return load result to caller
         */
       /* CompleteClass */
-      override def saveNextPage(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+      override def saveNextPage(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
       
       /**
         * Helper method used internally to save each dirty collection, one at a time.
@@ -354,16 +363,16 @@ object global {
         * @param callback - adapter callback to return load result to caller
         */
       /* CompleteClass */
-      override def saveNextPartition(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+      override def saveNextPartition(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     }
     
-    inline def aeq(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aeq")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def aeq(prop1: Any, prop2: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aeq")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def gt(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def gt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def gt(prop1: Any, prop2: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def gt(prop1: Any, prop2: Any, equal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def lt(prop1: js.Any, prop2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def lt(prop1: js.Any, prop2: js.Any, equal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def lt(prop1: Any, prop2: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def lt(prop1: Any, prop2: Any, equal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(prop1.asInstanceOf[js.Any], prop2.asInstanceOf[js.Any], equal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     object persistenceAdapters {
       
@@ -387,36 +396,32 @@ object global {
     * LokiEventEmitter is a minimalist version of EventEmitter. It enables any
     * constructor that inherits EventEmitter to emit events and trigger
     * listeners that have been added to the event through the on(event, callback) method
-    *
-    * @constructor LokiEventEmitter
     */
   @JSGlobal("LokiEventEmitter")
   @js.native
-  class LokiEventEmitter ()
+  open class LokiEventEmitter ()
     extends StObject
        with typings.lokijs.LokiEventEmitter
   
   /**
     * A loki persistence adapter which persists using node fs module
-    * @constructor LokiFsAdapter
     */
   @JSGlobal("LokiFsAdapter")
   @js.native
-  class LokiFsAdapter ()
+  open class LokiFsAdapter ()
     extends StObject
        with typings.lokijs.LokiFsAdapter {
     
     /* CompleteClass */
-    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
   }
   
   /**
     * A loki persistence adapter which persists to web browser's local storage object
-    * @constructor LokiLocalStorageAdapter
     */
   @JSGlobal("LokiLocalStorageAdapter")
   @js.native
-  class LokiLocalStorageAdapter ()
+  open class LokiLocalStorageAdapter ()
     extends StObject
        with typings.lokijs.LokiLocalStorageAdapter {
     
@@ -427,7 +432,7 @@ object global {
       * @param callback - the callback to handle the result
       */
     /* CompleteClass */
-    override def deleteDatabase(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    override def deleteDatabase(dbname: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
     /**
       * loadDatabase() - Load data from localstorage
@@ -435,7 +440,7 @@ object global {
       * @param callback - the callback to handle the result
       */
     /* CompleteClass */
-    override def loadDatabase(dbname: String, callback: js.Function1[/* dataOrError */ js.Any | Error, Unit]): Unit = js.native
+    override def loadDatabase(dbname: String, callback: js.Function1[/* dataOrError */ Any | js.Error, Unit]): Unit = js.native
     
     /**
       * saveDatabase() - save data to localstorage, will throw an error if the file can't be saved
@@ -444,7 +449,11 @@ object global {
       * @param callback - the callback to handle the result
       */
     /* CompleteClass */
-    override def saveDatabase(dbname: String, dbstring: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    override def saveDatabase(
+      dbname: String,
+      dbstring: String,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
+    ): Unit = js.native
   }
   
   /**
@@ -454,11 +463,10 @@ object global {
     * @param [options] - memory adapter options
     * @param [options.asyncResponses=false] - whether callbacks are invoked asynchronously
     * @param [options.asyncTimeout=50] - timeout in ms to queue callbacks
-    * @constructor LokiMemoryAdapter
     */
   @JSGlobal("LokiMemoryAdapter")
   @js.native
-  class LokiMemoryAdapter ()
+  open class LokiMemoryAdapter ()
     extends StObject
        with typings.lokijs.LokiMemoryAdapter {
     def this(options: AsyncResponses) = this()
@@ -471,13 +479,13 @@ object global {
       */
     /* CompleteClass */
     @JSName("deleteDatabase")
-    override def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    override def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
     /* CompleteClass */
     var hashStore: StringDictionary[Lastsave] = js.native
     
     /* CompleteClass */
-    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
     
     /* CompleteClass */
     var options: AsyncResponses = js.native
@@ -491,7 +499,7 @@ object global {
       */
     /* CompleteClass */
     @JSName("saveDatabase")
-    override def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    override def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: Any, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
   }
   
   object LokiOps {
@@ -501,77 +509,77 @@ object global {
     val ^ : js.Any = js.native
     
     // abstract/loose equality
-    inline def aeq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$aeq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def aeq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$aeq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def and(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$and")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def and(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$and")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** ex : coll.find({'orderCount': {$between: [10, 50]}}); */
-    inline def between(a: js.Any, vals: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$between")(a.asInstanceOf[js.Any], vals.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def between(a: Any, vals: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$between")(a.asInstanceOf[js.Any], vals.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def contains(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$contains")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$contains")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def containsAny(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$containsAny")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def containsAny(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$containsAny")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def containsNone(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$containsNone")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def containsNone(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$containsNone")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def containsString(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$containsString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def containsString(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$containsString")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def definedin(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$definedin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def definedin(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$definedin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     // date equality / loki abstract equality test
-    inline def dteq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$dteq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def dteq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$dteq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def eq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def eq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def finite(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$finite")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def finite(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$finite")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def gt(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$gt")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def gt(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$gt")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def gte(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$gte")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def gte(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$gte")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def in(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$in")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def in(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$in")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def jbetween(a: js.Any, vals: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jbetween")(a.asInstanceOf[js.Any], vals.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def jbetween(a: Any, vals: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jbetween")(a.asInstanceOf[js.Any], vals.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def jgt(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jgt")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def jgt(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jgt")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def jgte(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jgte")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def jgte(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jgte")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def jlt(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jlt")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def jlt(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jlt")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def jlte(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jlte")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def jlte(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$jlte")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def keyin(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$keyin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def keyin(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$keyin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def len(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$len")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def len(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$len")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def lt(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$lt")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def lt(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$lt")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def lte(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$lte")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def lte(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$lte")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def ne(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$ne")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ne(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$ne")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def nin(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$nin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def nin(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$nin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def nkeyin(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$nkeyin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def nkeyin(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$nkeyin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     // field-level logical operators
     // a is the value in the collection
     // b is the nested query operation (for '$not')
     //   or an array of nested query operations (for '$and' and '$or')
-    inline def not(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$not")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def not(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$not")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def or(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$or")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def or(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$or")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def regex(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$regex")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def regex(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$regex")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def size(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$size")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def size(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$size")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def `type`(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$type")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def `type`(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$type")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def undefinedin(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$undefinedin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def undefinedin(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$undefinedin")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def where(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$where")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def where(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$where")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -589,11 +597,10 @@ object global {
     * @param [options.paging] - (default: false) set to true to enable paging collection data.
     * @param [options.pageSize] - (default : 25MB) you can use this to limit size of strings passed to inner adapter.
     * @param [options.delimiter] - allows you to override the default delimeter
-    * @constructor LokiPartitioningAdapter
     */
   @JSGlobal("LokiPartitioningAdapter")
   @js.native
-  class LokiPartitioningAdapter protected ()
+  open class LokiPartitioningAdapter protected ()
     extends StObject
        with typings.lokijs.LokiPartitioningAdapter {
     def this(adapter: LokiPersistenceAdapter) = this()
@@ -618,10 +625,14 @@ object global {
       */
     /* CompleteClass */
     @JSName("exportDatabase")
-    override def exportDatabase_MLokiPartitioningAdapter(dbname: String, dbref: typings.lokijs.Loki, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    override def exportDatabase_MLokiPartitioningAdapter(
+      dbname: String,
+      dbref: typings.lokijs.Loki,
+      callback: js.Function1[/* err */ js.Error | Null, Unit]
+    ): Unit = js.native
     
     /* CompleteClass */
-    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
     
     /**
       * Used to sequentially load the next page of collection partition, one at a time.
@@ -656,7 +667,7 @@ object global {
       * @param callback - adapter callback to return load result to caller
       */
     /* CompleteClass */
-    override def saveNextPage(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    override def saveNextPage(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     /**
       * Helper method used internally to save each dirty collection, one at a time.
@@ -664,7 +675,7 @@ object global {
       * @param callback - adapter callback to return load result to caller
       */
     /* CompleteClass */
-    override def saveNextPartition(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    override def saveNextPartition(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
   }
   
   /**
@@ -679,7 +690,7 @@ object global {
     */
   @JSGlobal("Resultset")
   @js.native
-  class Resultset[E /* <: js.Object */] protected ()
+  open class Resultset[E /* <: js.Object */] protected ()
     extends StObject
        with typings.lokijs.Resultset[E] {
     /**
@@ -687,18 +698,18 @@ object global {
       * @param options
       */
     def this(collection: typings.lokijs.Collection[E]) = this()
-    def this(collection: typings.lokijs.Collection[E], options: js.Any) = this()
+    def this(collection: typings.lokijs.Collection[E], options: Any) = this()
   }
   
   @JSGlobal("SortedIndex")
   @js.native
-  class SortedIndex protected ()
+  open class SortedIndex protected ()
     extends StObject
        with typings.lokijs.SortedIndex {
     def this(sortedField: String) = this()
     
     /* CompleteClass */
-    override def bs(): js.Function2[/* array */ js.Array[js.Any], /* item */ js.Any, Found] = js.native
+    override def bs(): js.Function2[/* array */ js.Array[Any], /* item */ Any, Found] = js.native
     
     // clear will zap the index
     /* CompleteClass */
@@ -709,50 +720,50 @@ object global {
     
     // get all values which have a key == the given key
     /* CompleteClass */
-    override def get(key: js.Any): js.Array[js.Any] = js.native
+    override def get(key: Any): js.Array[Any] = js.native
     
     // get all vals from start to end
     /* CompleteClass */
-    override def getAll(key: js.Any, start: Double, end: Double): js.Array[js.Any] = js.native
+    override def getAll(key: Any, start: Double, end: Double): js.Array[Any] = js.native
     
     // get all values which have a key > the given key
     /* CompleteClass */
-    override def getGt(key: js.Any): js.Array[js.Any] = js.native
+    override def getGt(key: Any): js.Array[Any] = js.native
     
     // get all values which have a key < the given key
     /* CompleteClass */
-    override def getLt(key: js.Any): js.Array[js.Any] = js.native
+    override def getLt(key: Any): js.Array[Any] = js.native
     
     // just in case someone wants to do something smart with ranges
     /* CompleteClass */
-    override def getPos(key: js.Any): Found = js.native
+    override def getPos(key: Any): Found = js.native
     
     /* CompleteClass */
-    var keys: js.Array[js.Any] = js.native
+    var keys: js.Array[Any] = js.native
     
     // remove the value from the index, if the value was the last one, remove the key
     /* CompleteClass */
-    override def remove(key: js.Any, value: js.Any): Unit = js.native
+    override def remove(key: Any, value: Any): Unit = js.native
     
     // add the value you want returned  to the key in the index
     /* CompleteClass */
-    override def set(key: js.Any, value: js.Any): Unit = js.native
+    override def set(key: Any, value: Any): Unit = js.native
     
     // and allow override of the default sort
     /* CompleteClass */
-    override def setSort(fun: js.Function2[/* target */ js.Any, /* test */ js.Any, Double]): Unit = js.native
+    override def setSort(fun: js.Function2[/* target */ Any, /* test */ Any, Double]): Unit = js.native
     
     // set the default sort
     /* CompleteClass */
-    override def sort(a: js.Any, b: js.Any): `-1` | `0` | `1` = js.native
+    override def sort(a: Any, b: Any): `-1` | `0` | `1` = js.native
     
     /* CompleteClass */
-    var values: js.Array[js.Any] = js.native
+    var values: js.Array[Any] = js.native
   }
   
   @JSGlobal("UniqueIndex")
   @js.native
-  class UniqueIndex[E /* <: js.Object */] protected ()
+  open class UniqueIndex[E /* <: js.Object */] protected ()
     extends StObject
        with typings.lokijs.UniqueIndex[E] {
     def this(uniqueField: /* keyof E */ String) = this()
@@ -761,51 +772,57 @@ object global {
   // type aliases to allow the nested classes inside LokiConstructor to extend classes sharing them same name(s) as themselves
   @JSGlobal("_Collection")
   @js.native
-  class _Collection[E /* <: js.Object */] ()
+  open class _Collection[E /* <: js.Object */] ()
     extends StObject
        with typings.lokijs.Collection[E]
   
+  @JSGlobal("_DynamicView")
+  @js.native
+  open class _DynamicView[E /* <: js.Object */] ()
+    extends StObject
+       with typings.lokijs.DynamicView[E]
+  
   @JSGlobal("_KeyValueStore")
   @js.native
-  class _KeyValueStore ()
+  open class _KeyValueStore ()
     extends StObject
        with typings.lokijs.KeyValueStore {
     
     /* CompleteClass */
-    override def bs(): js.Function2[/* array */ js.Array[js.Any], /* item */ js.Any, Found] = js.native
+    override def bs(): js.Function2[/* array */ js.Array[Any], /* item */ Any, Found] = js.native
     
     /* CompleteClass */
-    override def get(key: js.Any): js.Array[js.Any] = js.native
+    override def get(key: Any): js.Array[Any] = js.native
     
     /* CompleteClass */
-    var keys: js.Array[js.Any] = js.native
+    var keys: js.Array[Any] = js.native
     
     /* CompleteClass */
-    override def set(key: js.Any, value: js.Any): Unit = js.native
+    override def set(key: Any, value: Any): Unit = js.native
     
     /* CompleteClass */
-    override def setSort(fun: js.Function2[/* target */ js.Any, /* test */ js.Any, js.Any]): Unit = js.native
+    override def setSort(fun: js.Function2[/* target */ Any, /* test */ Any, Any]): Unit = js.native
     
     /* CompleteClass */
-    override def sort(a: js.Any, b: js.Any): `-1` | `0` | `1` = js.native
+    override def sort(a: Any, b: Any): `-1` | `0` | `1` = js.native
     
     /* CompleteClass */
-    var values: js.Array[js.Any] = js.native
+    var values: js.Array[Any] = js.native
   }
   
   @JSGlobal("_LokiFsAdapter")
   @js.native
-  class _LokiFsAdapter ()
+  open class _LokiFsAdapter ()
     extends StObject
        with typings.lokijs.LokiFsAdapter {
     
     /* CompleteClass */
-    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
   }
   
   @JSGlobal("_LokiLocalStorageAdapter")
   @js.native
-  class _LokiLocalStorageAdapter ()
+  open class _LokiLocalStorageAdapter ()
     extends StObject
        with typings.lokijs.LokiLocalStorageAdapter {
     
@@ -816,7 +833,7 @@ object global {
       * @param callback - the callback to handle the result
       */
     /* CompleteClass */
-    override def deleteDatabase(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    override def deleteDatabase(dbname: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
     /**
       * loadDatabase() - Load data from localstorage
@@ -824,7 +841,7 @@ object global {
       * @param callback - the callback to handle the result
       */
     /* CompleteClass */
-    override def loadDatabase(dbname: String, callback: js.Function1[/* dataOrError */ js.Any | Error, Unit]): Unit = js.native
+    override def loadDatabase(dbname: String, callback: js.Function1[/* dataOrError */ Any | js.Error, Unit]): Unit = js.native
     
     /**
       * saveDatabase() - save data to localstorage, will throw an error if the file can't be saved
@@ -833,12 +850,16 @@ object global {
       * @param callback - the callback to handle the result
       */
     /* CompleteClass */
-    override def saveDatabase(dbname: String, dbstring: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    override def saveDatabase(
+      dbname: String,
+      dbstring: String,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
+    ): Unit = js.native
   }
   
   @JSGlobal("_LokiMemoryAdapter")
   @js.native
-  class _LokiMemoryAdapter ()
+  open class _LokiMemoryAdapter ()
     extends StObject
        with typings.lokijs.LokiMemoryAdapter {
     
@@ -850,13 +871,13 @@ object global {
       */
     /* CompleteClass */
     @JSName("deleteDatabase")
-    override def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    override def deleteDatabase_MLokiMemoryAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
     /* CompleteClass */
     var hashStore: StringDictionary[Lastsave] = js.native
     
     /* CompleteClass */
-    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
     
     /* CompleteClass */
     var options: AsyncResponses = js.native
@@ -870,12 +891,12 @@ object global {
       */
     /* CompleteClass */
     @JSName("saveDatabase")
-    override def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    override def saveDatabase_MLokiMemoryAdapter(dbname: String, dbstring: Any, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
   }
   
   @JSGlobal("_LokiPartitioningAdapter")
   @js.native
-  class _LokiPartitioningAdapter ()
+  open class _LokiPartitioningAdapter ()
     extends StObject
        with typings.lokijs.LokiPartitioningAdapter {
     
@@ -898,10 +919,14 @@ object global {
       */
     /* CompleteClass */
     @JSName("exportDatabase")
-    override def exportDatabase_MLokiPartitioningAdapter(dbname: String, dbref: typings.lokijs.Loki, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    override def exportDatabase_MLokiPartitioningAdapter(
+      dbname: String,
+      dbref: typings.lokijs.Loki,
+      callback: js.Function1[/* err */ js.Error | Null, Unit]
+    ): Unit = js.native
     
     /* CompleteClass */
-    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+    override def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
     
     /**
       * Used to sequentially load the next page of collection partition, one at a time.
@@ -936,7 +961,7 @@ object global {
       * @param callback - adapter callback to return load result to caller
       */
     /* CompleteClass */
-    override def saveNextPage(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    override def saveNextPage(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     /**
       * Helper method used internally to save each dirty collection, one at a time.
@@ -944,7 +969,7 @@ object global {
       * @param callback - adapter callback to return load result to caller
       */
     /* CompleteClass */
-    override def saveNextPartition(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    override def saveNextPartition(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
   }
   
   /** if an op is registered in this object, our 'calculateRange' can use it with our binary indices.
@@ -975,13 +1000,13 @@ object global {
     
     inline def dteq_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$dteq")(x.asInstanceOf[js.Any])
     
-    inline def eq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def eq(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("$eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSGlobal("indexedOps.$eq")
     @js.native
-    def eq_FindexedOps: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean] = js.native
+    def eq_FindexedOps: js.Function2[/* a */ Any, /* b */ Any, Boolean] = js.native
     
-    inline def eq_FindexedOps_=(x: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$eq")(x.asInstanceOf[js.Any])
+    inline def eq_FindexedOps_=(x: js.Function2[/* a */ Any, /* b */ Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$eq")(x.asInstanceOf[js.Any])
     
     @JSGlobal("indexedOps.$gt")
     @js.native

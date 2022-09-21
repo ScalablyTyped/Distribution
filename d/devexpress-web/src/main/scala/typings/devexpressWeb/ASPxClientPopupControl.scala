@@ -32,7 +32,7 @@ trait ASPxClientPopupControl
   /**
     * Returns an object that invoked the default window.
     */
-  def GetCurrentPopupElement(): js.Any = js.native
+  def GetCurrentPopupElement(): Any = js.native
   
   /**
     * Returns an index of the object that invoked the default window within the ASPxPopupControl.PopupElementID list.
@@ -42,7 +42,7 @@ trait ASPxClientPopupControl
   /**
     * Returns an object containing the information about a mouse event that invoked a default popup window.
     */
-  def GetPopUpReasonMouseEvent(): js.Any = js.native
+  def GetPopUpReasonMouseEvent(): Any = js.native
   
   /**
     * Returns a popup window specified by its index. An ASPxClientPopupWindow object representing the popup window located at the specified index within the control's ASPxPopupControl.Windows collection.
@@ -78,7 +78,7 @@ trait ASPxClientPopupControl
     * Returns an iframe object containing a web page specified via the specified popup window's PopupWindow.ContentUrl property (or the popup control's client ASPxClientPopupControl.SetWindowContentUrl method). The iframe object that contains a web page displayed within the specified popup window.
     * @param window A ASPxClientPopupWindow object representing the required popup window.
     */
-  def GetWindowContentIFrame(window: ASPxClientPopupWindow): js.Any = js.native
+  def GetWindowContentIFrame(window: ASPxClientPopupWindow): Any = js.native
   
   /**
     * Returns the URL pointing to the web page displayed within the control's specific popup window. A string value representing the URL to the web page displayed within the specified popup window.
@@ -101,7 +101,7 @@ trait ASPxClientPopupControl
     * Returns an object that invoked the specified popup window. An object that invoked the specified window.
     * @param window An ASPxClientPopupWindow object that specifies the required popup window.
     */
-  def GetWindowCurrentPopupElement(window: ASPxClientPopupWindow): js.Any = js.native
+  def GetWindowCurrentPopupElement(window: ASPxClientPopupWindow): Any = js.native
   
   /**
     * Returns an index of the object that invoked the specified popup window, within the window's PopupWindow.PopupElementID list. An Int32 value that is the zero-based position of object's ID within the PopupElementID list.
@@ -131,7 +131,7 @@ trait ASPxClientPopupControl
     * Returns an object containing the information about a mouse event that invoked the specified popup window. An object containing the information about the mouse event.
     * @param window A ASPxClientPopupWindow object that specifies the required popup window.
     */
-  def GetWindowPopUpReasonMouseEvent(window: ASPxClientPopupWindow): js.Any = js.native
+  def GetWindowPopUpReasonMouseEvent(window: ASPxClientPopupWindow): Any = js.native
   
   /**
     * Returns the width of a specific popup window. An integer value that represents the specified popup window's width.
@@ -314,7 +314,7 @@ trait ASPxClientPopupControl
     * @param window A ASPxClientPopupWindow object representing the popup window to display.
     * @param htmlElement An object specifying the HTML element relative to whose position the default popup window is invoked.
     */
-  def ShowWindowAtElement(window: ASPxClientPopupWindow, htmlElement: js.Any): Unit = js.native
+  def ShowWindowAtElement(window: ASPxClientPopupWindow, htmlElement: Any): Unit = js.native
   
   /**
     * Invokes the popup control's specific window and displays it over an HTML element specified by its unique identifier.
@@ -345,7 +345,7 @@ trait ASPxClientPopupControl
     * Updates the default popup window's position, to correctly align it at the specified HTML element.
     * @param htmlElement An object specifying the HTML element to which the default popup window is aligned using the ASPxPopupControl.PopupHorizontalAlign and ASPxPopupControl.PopupVerticalAlign properties.
     */
-  def UpdatePositionAtElement(htmlElement: js.Any): Unit = js.native
+  def UpdatePositionAtElement(htmlElement: Any): Unit = js.native
   
   /**
     * Updates the specified popup window's position, to correctly align it at either the specified element, or the center of the browser's window.
@@ -358,7 +358,7 @@ trait ASPxClientPopupControl
     * @param window An ASPxClientPopupWindow object that specifies the required popup window.
     * @param htmlElement An object specifying the HTML element to which the specified popup window is aligned using the ASPxPopupControl.PopupHorizontalAlign and ASPxPopupControl.PopupVerticalAlign properties.
     */
-  def UpdateWindowPositionAtElement(window: ASPxClientPopupWindow, htmlElement: js.Any): Unit = js.native
+  def UpdateWindowPositionAtElement(window: ASPxClientPopupWindow, htmlElement: Any): Unit = js.native
   
   /**
     * Stretches the specified popup window in adaptive mode vertically to the full height of the browser window.

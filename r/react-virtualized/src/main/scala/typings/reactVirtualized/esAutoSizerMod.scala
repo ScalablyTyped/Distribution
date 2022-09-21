@@ -11,10 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esAutoSizerMod {
   
+  @JSImport("react-virtualized/dist/es/AutoSizer", JSImport.Default)
+  @js.native
+  open class default protected () extends AutoSizer {
+    def this(props: AutoSizerProps) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/AutoSizer", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/AutoSizer", "default.defaultProps")
+    @js.native
+    def defaultProps: DisableHeight = js.native
+    inline def defaultProps_=(x: DisableHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("react-virtualized/dist/es/AutoSizer", "AutoSizer")
   @js.native
-  class AutoSizer protected ()
-    extends PureComponent[AutoSizerProps, Size, js.Any] {
+  open class AutoSizer protected () extends PureComponent[AutoSizerProps, Size, Any] {
     def this(props: AutoSizerProps) = this()
     
     @JSName("componentDidMount")
@@ -45,7 +62,7 @@ object esAutoSizerMod {
     * Check the following link if you want to know more
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Function responsible for rendering children.
@@ -82,7 +99,7 @@ object esAutoSizerMod {
     var nonce: js.UndefOr[String] = js.undefined
     
     /** Callback to be invoked on-resize: ({ height, width }) */
-    var onResize: js.UndefOr[js.Function1[/* info */ Size, js.Any]] = js.undefined
+    var onResize: js.UndefOr[js.Function1[/* info */ Size, Any]] = js.undefined
     
     /**
       * Optional custom inline style to attach to root AutoSizer element.
@@ -125,7 +142,7 @@ object esAutoSizerMod {
       
       inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      inline def setOnResize(value: /* info */ Size => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* info */ Size => Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
       inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       

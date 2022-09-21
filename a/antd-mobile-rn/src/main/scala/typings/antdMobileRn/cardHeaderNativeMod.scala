@@ -14,7 +14,7 @@ object cardHeaderNativeMod {
   
   @JSImport("antd-mobile-rn/lib/card/CardHeader.native", JSImport.Default)
   @js.native
-  class default () extends CardHeader
+  open class default () extends CardHeader
   /* static members */
   object default {
     
@@ -29,8 +29,7 @@ object cardHeaderNativeMod {
   }
   
   @js.native
-  trait CardHeader
-    extends Component[CardHeaderProps, js.Any, js.Any]
+  trait CardHeader extends Component[CardHeaderProps, Any, Any]
   
   trait CardHeaderProps
     extends StObject
@@ -38,7 +37,7 @@ object cardHeaderNativeMod {
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var thumbStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   }
@@ -57,7 +56,7 @@ object cardHeaderNativeMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

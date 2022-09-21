@@ -10,13 +10,13 @@ trait MapShapeFeatureCreatedEvent
   extends StObject
      with MapEvent {
   
-  var dataItem: js.UndefOr[js.Any] = js.undefined
+  var dataItem: js.UndefOr[Any] = js.undefined
   
   var group: js.UndefOr[Group] = js.undefined
   
   var layer: js.UndefOr[Shape] = js.undefined
   
-  var properties: js.UndefOr[js.Any] = js.undefined
+  var properties: js.UndefOr[Any] = js.undefined
 }
 object MapShapeFeatureCreatedEvent {
   
@@ -27,7 +27,7 @@ object MapShapeFeatureCreatedEvent {
   
   extension [Self <: MapShapeFeatureCreatedEvent](x: Self) {
     
-    inline def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+    inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     
     inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     
@@ -39,7 +39,7 @@ object MapShapeFeatureCreatedEvent {
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }

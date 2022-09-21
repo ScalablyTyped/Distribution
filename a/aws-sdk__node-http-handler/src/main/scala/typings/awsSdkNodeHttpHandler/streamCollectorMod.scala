@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object streamCollectorMod {
   
-  @JSImport("@aws-sdk/node-http-handler/dist/cjs/stream-collector", "streamCollector")
+  @JSImport("@aws-sdk/node-http-handler/dist-types/stream-collector", "streamCollector")
   @js.native
   val streamCollector: StreamCollector = js.native
 }

@@ -10,7 +10,7 @@ trait TimeOptions extends StObject {
     * (Highcharts, Highstock, Gantt) A custom `Date` class for advanced date
     * handling. For example, JDate can be hooked in to handle Jalali dates.
     */
-  var Date: js.UndefOr[js.Any] = js.undefined
+  var Date: js.UndefOr[Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A callback to return the time zone offset
@@ -66,7 +66,7 @@ object TimeOptions {
   
   extension [Self <: TimeOptions](x: Self) {
     
-    inline def setDate(value: js.Any): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Any): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     

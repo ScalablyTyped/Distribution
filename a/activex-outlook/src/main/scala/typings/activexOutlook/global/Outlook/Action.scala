@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Action")
 @js.native
-/* private */ class Action ()
+/* private */ open class Action ()
   extends StObject
      with typings.activexOutlook.Outlook.Action {
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Enabled: Boolean = js.native
   
   /* CompleteClass */
-  override def Execute(): js.Any = js.native
+  override def Execute(): Any = js.native
   
   /* CompleteClass */
   var MessageClass: String = js.native
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotAction_typekey: typings.activexOutlook.Outlook.Action = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Prefix: String = js.native

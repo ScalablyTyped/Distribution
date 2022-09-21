@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Shading")
 @js.native
-/* private */ class Shading ()
+/* private */ open class Shading ()
   extends StObject
      with typings.activexWord.Word.Shading {
   
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ForegroundPatternColorIndex: WdColorIndex = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Texture: WdTextureIndex = js.native

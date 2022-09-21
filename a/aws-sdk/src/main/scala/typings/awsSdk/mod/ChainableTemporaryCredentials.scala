@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new temporary credentials object.
   */
-class ChainableTemporaryCredentials ()
+open class ChainableTemporaryCredentials ()
   extends typings.awsSdk.coreMod.ChainableTemporaryCredentials {
   def this(options: ChainableTemporaryCredentialsOptions) = this()
 }

@@ -15,10 +15,10 @@ object createjs {
     
     var cancelable: Boolean
     
-    var currentTarget: js.Any
+    var currentTarget: Any
     
     // other event payloads
-    var data: js.Any
+    var data: Any
     
     // It is 'Object' type officially, but 'any' is easier to use.
     var defaultPrevented: Boolean
@@ -33,7 +33,7 @@ object createjs {
     
     var immediatePropagationStopped: Boolean
     
-    var item: js.Any
+    var item: Any
     
     var loaded: Double
     
@@ -41,7 +41,7 @@ object createjs {
     
     var next: String
     
-    var params: js.Any
+    var params: Any
     
     var paused: Boolean
     
@@ -51,13 +51,13 @@ object createjs {
     
     var propagationStopped: Boolean
     
-    var rawResult: js.Any
+    var rawResult: Any
     
     def remove(): Unit
     
     var removed: Boolean
     
-    var result: js.Any
+    var result: Any
     
     var runTime: Double
     
@@ -69,7 +69,7 @@ object createjs {
     
     def stopPropagation(): Unit
     
-    var target: js.Any
+    var target: Any
     
     var time: Double
     
@@ -85,33 +85,33 @@ object createjs {
     inline def apply(
       bubbles: Boolean,
       cancelable: Boolean,
-      currentTarget: js.Any,
-      data: js.Any,
+      currentTarget: Any,
+      data: Any,
       defaultPrevented: Boolean,
       delta: Double,
       error: String,
       eventPhase: Double,
       id: String,
       immediatePropagationStopped: Boolean,
-      item: js.Any,
+      item: Any,
       loaded: Double,
       name: String,
       next: String,
-      params: js.Any,
+      params: Any,
       paused: Boolean,
       preventDefault: () => Unit,
       progress: Double,
       propagationStopped: Boolean,
-      rawResult: js.Any,
+      rawResult: Any,
       remove: () => Unit,
       removed: Boolean,
-      result: js.Any,
+      result: Any,
       runTime: Double,
       set: js.Object => Event,
       src: String,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
-      target: js.Any,
+      target: Any,
       time: Double,
       timeStamp: Double,
       total: Double,
@@ -128,9 +128,9 @@ object createjs {
       
       inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
@@ -144,7 +144,7 @@ object createjs {
       
       inline def setImmediatePropagationStopped(value: Boolean): Self = StObject.set(x, "immediatePropagationStopped", value.asInstanceOf[js.Any])
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
@@ -152,7 +152,7 @@ object createjs {
       
       inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
@@ -162,13 +162,13 @@ object createjs {
       
       inline def setPropagationStopped(value: Boolean): Self = StObject.set(x, "propagationStopped", value.asInstanceOf[js.Any])
       
-      inline def setRawResult(value: js.Any): Self = StObject.set(x, "rawResult", value.asInstanceOf[js.Any])
+      inline def setRawResult(value: Any): Self = StObject.set(x, "rawResult", value.asInstanceOf[js.Any])
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
       inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setRunTime(value: Double): Self = StObject.set(x, "runTime", value.asInstanceOf[js.Any])
       
@@ -180,7 +180,7 @@ object createjs {
       
       inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
@@ -243,14 +243,14 @@ object createjs {
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       scope: js.Object,
       once: Boolean,
-      data: js.Any
+      data: Any
     ): js.Function = js.native
     def on(
       `type`: String,
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       scope: js.Object,
       once: Boolean,
-      data: js.Any,
+      data: Any,
       useCapture: Boolean
     ): js.Function = js.native
     def on(
@@ -266,14 +266,14 @@ object createjs {
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       scope: js.Object,
       once: Unit,
-      data: js.Any
+      data: Any
     ): js.Function = js.native
     def on(
       `type`: String,
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       scope: js.Object,
       once: Unit,
-      data: js.Any,
+      data: Any,
       useCapture: Boolean
     ): js.Function = js.native
     def on(
@@ -295,14 +295,14 @@ object createjs {
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       scope: Unit,
       once: Boolean,
-      data: js.Any
+      data: Any
     ): js.Function = js.native
     def on(
       `type`: String,
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       scope: Unit,
       once: Boolean,
-      data: js.Any,
+      data: Any,
       useCapture: Boolean
     ): js.Function = js.native
     def on(
@@ -318,14 +318,14 @@ object createjs {
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       scope: Unit,
       once: Unit,
-      data: js.Any
+      data: Any
     ): js.Function = js.native
     def on(
       `type`: String,
       listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
       scope: Unit,
       once: Unit,
-      data: js.Any,
+      data: Any,
       useCapture: Boolean
     ): js.Function = js.native
     def on(
@@ -339,13 +339,13 @@ object createjs {
     def on(`type`: String, listener: HandleEvent): js.Object = js.native
     def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = js.native
     def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
-    def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
+    def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: Any): js.Object = js.native
     def on(
       `type`: String,
       listener: HandleEvent,
       scope: js.Object,
       once: Boolean,
-      data: js.Any,
+      data: Any,
       useCapture: Boolean
     ): js.Object = js.native
     def on(
@@ -356,13 +356,13 @@ object createjs {
       data: Unit,
       useCapture: Boolean
     ): js.Object = js.native
-    def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: js.Any): js.Object = js.native
+    def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: Any): js.Object = js.native
     def on(
       `type`: String,
       listener: HandleEvent,
       scope: js.Object,
       once: Unit,
-      data: js.Any,
+      data: Any,
       useCapture: Boolean
     ): js.Object = js.native
     def on(
@@ -374,34 +374,27 @@ object createjs {
       useCapture: Boolean
     ): js.Object = js.native
     def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean): js.Object = js.native
-    def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: js.Any): js.Object = js.native
-    def on(
-      `type`: String,
-      listener: HandleEvent,
-      scope: Unit,
-      once: Boolean,
-      data: js.Any,
-      useCapture: Boolean
-    ): js.Object = js.native
+    def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Any): js.Object = js.native
+    def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Any, useCapture: Boolean): js.Object = js.native
     def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
-    def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any): js.Object = js.native
-    def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+    def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Any): js.Object = js.native
+    def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Any, useCapture: Boolean): js.Object = js.native
     def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
     def on(`type`: String, listener: `0`): js.Object = js.native
     def on(`type`: String, listener: `0`, scope: js.Object): js.Object = js.native
     def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = js.native
-    def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
-    def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
+    def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Any): js.Object = js.native
+    def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Any, useCapture: Boolean): js.Object = js.native
     def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
-    def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any): js.Object = js.native
-    def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+    def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Any): js.Object = js.native
+    def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Any, useCapture: Boolean): js.Object = js.native
     def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
     def on(`type`: String, listener: `0`, scope: Unit, once: Boolean): js.Object = js.native
-    def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any): js.Object = js.native
-    def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
+    def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Any): js.Object = js.native
+    def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Any, useCapture: Boolean): js.Object = js.native
     def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
-    def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any): js.Object = js.native
-    def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+    def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Any): js.Object = js.native
+    def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Any, useCapture: Boolean): js.Object = js.native
     def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
     
     def removeAllEventListeners(): Unit = js.native

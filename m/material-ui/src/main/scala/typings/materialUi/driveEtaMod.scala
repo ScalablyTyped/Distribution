@@ -10,10 +10,10 @@ object driveEtaMod {
   
   @JSImport("material-ui/svg-icons/notification/drive-eta", JSImport.Default)
   @js.native
-  class default () extends NotificationDriveEta
+  open class default () extends NotificationDriveEta
   
   @JSImport("material-ui/svg-icons/notification/drive-eta", "NotificationDriveEta")
   @js.native
-  class NotificationDriveEta ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationDriveEta ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

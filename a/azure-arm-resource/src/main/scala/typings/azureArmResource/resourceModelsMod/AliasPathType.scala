@@ -29,7 +29,7 @@ object AliasPathType {
     
     inline def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
     
-    inline def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
+    inline def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

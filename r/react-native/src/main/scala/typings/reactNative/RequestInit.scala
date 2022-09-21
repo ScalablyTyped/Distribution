@@ -24,7 +24,7 @@ trait RequestInit extends StObject {
   
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.undefined
+  var window: js.UndefOr[Any] = js.undefined
 }
 object RequestInit {
   
@@ -49,7 +49,7 @@ object RequestInit {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object RequestInit {
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }

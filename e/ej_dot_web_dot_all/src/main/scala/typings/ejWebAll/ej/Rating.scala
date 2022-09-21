@@ -81,7 +81,7 @@ object Rating {
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the rating model
       */
@@ -108,7 +108,7 @@ object Rating {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -134,7 +134,7 @@ object Rating {
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the rating model
       */
@@ -161,7 +161,7 @@ object Rating {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -298,7 +298,7 @@ object Rating {
     /** Specifies the list of HTML attributes to be added to rating control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value to be increased while navigating between shapes(stars) in Rating control.
       * @Default {1}
@@ -412,7 +412,7 @@ object Rating {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -482,7 +482,7 @@ object Rating {
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the rating model
       */
@@ -509,7 +509,7 @@ object Rating {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -535,7 +535,7 @@ object Rating {
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the rating model
       */
@@ -562,7 +562,7 @@ object Rating {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -588,11 +588,11 @@ object Rating {
     
     /** returns the mouse click event args values.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the current index value.
       */
-    var index: js.UndefOr[js.Any] = js.undefined
+    var index: js.UndefOr[Any] = js.undefined
     
     /** returns the rating model
       */
@@ -619,11 +619,11 @@ object Rating {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       

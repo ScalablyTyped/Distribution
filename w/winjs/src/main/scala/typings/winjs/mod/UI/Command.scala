@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSImport("winjs", "UI.Command")
 @js.native
-class Command ()
+open class Command ()
   extends StObject
      with typings.winjs.WinJS.UI.Command
 object Command {

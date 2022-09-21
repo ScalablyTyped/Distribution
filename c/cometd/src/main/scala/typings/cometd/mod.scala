@@ -1,17 +1,13 @@
 package typings.cometd
 
 import typings.cometd.anon.Hosts
+import typings.cometd.anon.Name
 import typings.cometd.cometdBooleans.`false`
 import typings.cometd.cometdBooleans.`true`
 import typings.cometd.cometdStrings.debug
 import typings.cometd.cometdStrings.error
 import typings.cometd.cometdStrings.info
 import typings.cometd.cometdStrings.warn
-import typings.std.ArrayBuffer
-import typings.std.DataView
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +16,7 @@ object mod {
   
   @JSImport("cometd", "CometD")
   @js.native
-  class CometD () extends StObject {
+  open class CometD () extends StObject {
     def this(options: Configuration) = this()
     
     /**
@@ -141,6 +137,11 @@ object mod {
     def getStatus(): Status = js.native
     
     /**
+      * Returns the transport object associated with this CometD object
+      */
+    def getTransport(): Transport | Null = js.native
+    
+    /**
       * Gets all registered transport types.
       *
       * @return an array of all registered transport types
@@ -204,7 +205,7 @@ object mod {
       * @param isListener whether it was a listener
       * @param message the message received from the Bayeux server
       */
-    def onListenerException(exception: js.Any, subscriptionHandle: SubscriptionHandle, isListener: Boolean, message: String): Unit = js.native
+    def onListenerException(exception: Any, subscriptionHandle: SubscriptionHandle, isListener: Boolean, message: String): Unit = js.native
     
     /**
       * Publishes a message on the given channel, containing the given content.
@@ -243,26 +244,50 @@ object mod {
       * @param meta an object containing meta data associated to the binary chunk
       * @param callback a function to be invoked when the publish is acknowledged by the server
       */
-    def publishBinary(channel: String, data: ArrayBuffer, last: Boolean): Unit = js.native
-    def publishBinary(channel: String, data: ArrayBuffer, last: Boolean, meta: js.Object): Unit = js.native
-    def publishBinary(channel: String, data: ArrayBuffer, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: ArrayBuffer, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: DataView, last: Boolean): Unit = js.native
-    def publishBinary(channel: String, data: DataView, last: Boolean, meta: js.Object): Unit = js.native
-    def publishBinary(channel: String, data: DataView, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: DataView, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: Uint16Array, last: Boolean): Unit = js.native
-    def publishBinary(channel: String, data: Uint16Array, last: Boolean, meta: js.Object): Unit = js.native
-    def publishBinary(channel: String, data: Uint16Array, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: Uint16Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: Uint32Array, last: Boolean): Unit = js.native
-    def publishBinary(channel: String, data: Uint32Array, last: Boolean, meta: js.Object): Unit = js.native
-    def publishBinary(channel: String, data: Uint32Array, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: Uint32Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: Uint8Array, last: Boolean): Unit = js.native
-    def publishBinary(channel: String, data: Uint8Array, last: Boolean, meta: js.Object): Unit = js.native
-    def publishBinary(channel: String, data: Uint8Array, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
-    def publishBinary(channel: String, data: Uint8Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.ArrayBuffer, last: Boolean): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.ArrayBuffer, last: Boolean, meta: js.Object): Unit = js.native
+    def publishBinary(
+      channel: String,
+      data: js.typedarray.ArrayBuffer,
+      last: Boolean,
+      meta: js.Object,
+      callback: Listener
+    ): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.ArrayBuffer, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.DataView, last: Boolean): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.DataView, last: Boolean, meta: js.Object): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.DataView, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.DataView, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint16Array, last: Boolean): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint16Array, last: Boolean, meta: js.Object): Unit = js.native
+    def publishBinary(
+      channel: String,
+      data: js.typedarray.Uint16Array,
+      last: Boolean,
+      meta: js.Object,
+      callback: Listener
+    ): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint16Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint32Array, last: Boolean): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint32Array, last: Boolean, meta: js.Object): Unit = js.native
+    def publishBinary(
+      channel: String,
+      data: js.typedarray.Uint32Array,
+      last: Boolean,
+      meta: js.Object,
+      callback: Listener
+    ): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint32Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint8Array, last: Boolean): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint8Array, last: Boolean, meta: js.Object): Unit = js.native
+    def publishBinary(
+      channel: String,
+      data: js.typedarray.Uint8Array,
+      last: Boolean,
+      meta: js.Object,
+      callback: Listener
+    ): Unit = js.native
+    def publishBinary(channel: String, data: js.typedarray.Uint8Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
     
     /**
       * Registers an extension whose callbacks are called for every incoming message (that comes from
@@ -303,6 +328,13 @@ object mod {
     def registerTransport(`type`: String, transport: js.Object, index: Double): Boolean = js.native
     
     /**
+      * Function attached to the CometD instance when the ReloadExtension is registered
+      *
+      * @param config the configuration object for the ReloadExtension
+      */
+    var reload: js.UndefOr[js.Function1[/* config */ js.UndefOr[Name], Unit]] = js.native
+    
+    /**
       * Removes the subscription obtained with a call to `addListener`.
       *
       * @param subscription the subscription to unsubscribe.
@@ -332,19 +364,12 @@ object mod {
       */
     def setBackoffIncrement(period: Double): Unit = js.native
     
-    @JSName("setLogLevel")
-    def setLogLevel_debug(level: debug): Unit = js.native
     /**
       * Sets the log level for console logging.
       *
       * @param level the log level string
       */
-    @JSName("setLogLevel")
-    def setLogLevel_error(level: error): Unit = js.native
-    @JSName("setLogLevel")
-    def setLogLevel_info(level: info): Unit = js.native
-    @JSName("setLogLevel")
-    def setLogLevel_warn(level: warn): Unit = js.native
+    def setLogLevel(level: error | warn | info | debug): Unit = js.native
     
     /**
       * Marks the start of a batch of application messages to be sent to the server in a single
@@ -446,6 +471,13 @@ object mod {
       unsubscribeProps: js.Object,
       unsubscribeCallback: SubscribeListener
     ): Unit = js.native
+    
+    /**
+      * Shorthand property to enable or disable websocket transport.
+      * Must be set before performing the initial CometD handshake.
+      * Functionally equivelant to cometd.unregisterTransport('websocket');
+      */
+    var websocketEnabled: Boolean = js.native
   }
   
   trait BaseMessage
@@ -460,11 +492,11 @@ object mod {
     
     var connectionType: js.UndefOr[ConnectionType] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var error: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[js.Any] = js.undefined
+    var ext: js.UndefOr[Any] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -499,7 +531,7 @@ object mod {
       
       inline def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -507,7 +539,7 @@ object mod {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setExt(value: js.Any): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: Any): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
       inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
@@ -531,7 +563,7 @@ object mod {
     }
   }
   
-  type Callback = js.Function1[/* data */ js.Any, Unit]
+  type Callback = js.Function1[/* data */ Any, Unit]
   
   trait Configuration extends StObject {
     
@@ -860,7 +892,7 @@ object mod {
   
   trait SubscriptionHandle extends StObject {
     
-    def callback(data: js.Any): Unit
+    def callback(data: Any): Unit
     @JSName("callback")
     var callback_Original: Callback
     
@@ -870,18 +902,18 @@ object mod {
     
     var listener: Boolean
     
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
   }
   object SubscriptionHandle {
     
-    inline def apply(callback: /* data */ js.Any => Unit, channel: String, id: Double, listener: Boolean): SubscriptionHandle = {
+    inline def apply(callback: /* data */ Any => Unit, channel: String, id: Double, listener: Boolean): SubscriptionHandle = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), channel = channel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], listener = listener.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionHandle]
     }
     
     extension [Self <: SubscriptionHandle](x: Self) {
       
-      inline def setCallback(value: /* data */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* data */ Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -889,7 +921,7 @@ object mod {
       
       inline def setListener(value: Boolean): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
@@ -942,9 +974,39 @@ object mod {
       
       inline def setSupportedConnectionTypes(value: js.Array[ConnectionType]): Self = StObject.set(x, "supportedConnectionTypes", value.asInstanceOf[js.Any])
       
-      inline def setSupportedConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "supportedConnectionTypes", js.Array(value :_*))
+      inline def setSupportedConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "supportedConnectionTypes", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Transport extends StObject {
+    
+    def abort(): Unit
+    
+    def accept(version: String, crossDomain: Boolean, url: String): Boolean
+    
+    val `type`: String
+    
+    var url: String
+  }
+  object Transport {
+    
+    inline def apply(abort: () => Unit, accept: (String, Boolean, String) => Boolean, `type`: String, url: String): Transport = {
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), accept = js.Any.fromFunction3(accept), url = url.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Transport]
+    }
+    
+    extension [Self <: Transport](x: Self) {
+      
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      
+      inline def setAccept(value: (String, Boolean, String) => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction3(value))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -982,7 +1044,7 @@ object mod {
       
       inline def setSupportedConnectionTypesUndefined: Self = StObject.set(x, "supportedConnectionTypes", js.undefined)
       
-      inline def setSupportedConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "supportedConnectionTypes", js.Array(value :_*))
+      inline def setSupportedConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "supportedConnectionTypes", js.Array(value*))
     }
   }
 }

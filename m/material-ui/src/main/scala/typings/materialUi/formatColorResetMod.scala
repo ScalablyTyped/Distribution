@@ -10,10 +10,10 @@ object formatColorResetMod {
   
   @JSImport("material-ui/svg-icons/editor/format-color-reset", JSImport.Default)
   @js.native
-  class default () extends EditorFormatColorReset
+  open class default () extends EditorFormatColorReset
   
   @JSImport("material-ui/svg-icons/editor/format-color-reset", "EditorFormatColorReset")
   @js.native
-  class EditorFormatColorReset ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatColorReset ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

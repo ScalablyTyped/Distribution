@@ -14,10 +14,9 @@ object tabMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Tab", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[TabProps, ComponentState, js.Any] {
+  open class default protected () extends Component[TabProps, ComponentState, Any] {
     def this(props: TabProps) = this()
-    def this(props: TabProps, context: js.Any) = this()
+    def this(props: TabProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Tab", JSImport.Default)
   @js.native

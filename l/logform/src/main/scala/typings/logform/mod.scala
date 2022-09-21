@@ -1,7 +1,9 @@
 package typings.logform
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.ErrorConstructor
 import typings.std.Record
+import typings.std.TypeErrorConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +16,7 @@ object mod {
   
   @JSImport("logform", "Colorizer")
   @js.native
-  class Colorizer () extends Format_ {
+  open class Colorizer () extends Format_ {
     def this(opts: js.Object) = this()
     
     def addColors(colors: Colors): Colors = js.native
@@ -27,13 +29,13 @@ object mod {
   
   @JSImport("logform", "Format")
   @js.native
-  class Format_ () extends StObject {
+  open class Format_ () extends StObject {
     def this(opts: js.Object) = this()
     
     var options: js.UndefOr[js.Object] = js.native
     
     def transform(info: TransformableInfo): TransformableInfo | Boolean = js.native
-    def transform(info: TransformableInfo, opts: js.Any): TransformableInfo | Boolean = js.native
+    def transform(info: TransformableInfo, opts: Any): TransformableInfo | Boolean = js.native
     @JSName("transform")
     var transform_Original: TransformFunction = js.native
   }
@@ -54,7 +56,7 @@ object mod {
     inline def colorize(): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[Colorizer]
     inline def colorize(opts: ColorizeOptions): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Colorizer]
     
-    inline def combine(formats: Format_ *): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def combine(formats: Format_ *): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Format_]
     
     inline def errors(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[Format_]
     inline def errors(opts: js.Object): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
@@ -156,16 +158,53 @@ object mod {
   
   type Colors = StringDictionary[String | js.Array[String]]
   
-  type FormatWrap = js.Function1[/* opts */ js.UndefOr[js.Any], Format_]
+  type FormatWrap = js.Function1[/* opts */ js.UndefOr[Any], Format_]
   
   trait JsonOptions extends StObject {
+    
+    // The following options come from safe-stable-stringify
+    // https://github.com/BridgeAR/safe-stable-stringify/blob/main/index.d.ts
+    /**
+      * If `true`, bigint values are converted to a number. Otherwise, they are ignored.
+      * This option is ignored by default as Logform stringifies BigInt in the default replacer.
+      * @default true
+      */
+    var bigint: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defines the value for circular references.
+      * Set to `undefined`, circular properties are not serialized (array entries are replaced with null).
+      * Set to `Error`, to throw on circular references.
+      * @default "[Circular]"
+      */
+    var circularValue: js.UndefOr[String | Null | TypeErrorConstructor | ErrorConstructor] = js.undefined
+    
+    /**
+      * If `true`, guarantee a deterministic key order instead of relying on the insertion order.
+      * @default true
+      */
+    var deterministic: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Maximum number of entries to serialize per object (at least one).
+      * The serialized output contains information about how many entries have not been serialized.
+      * Ignored properties are counted as well (e.g., properties with symbol values).
+      * Using the array replacer overrules this option.
+      * @default Infinity
+      */
+    var maximumBreadth: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Maximum number of object nesting levels (at least 1) that will be serialized.
+      * Objects at the maximum level are serialized as `"[Object]"` and arrays as `"[Array]"`.
+      * @default Infinity
+      */
+    var maximumDepth: js.UndefOr[Double] = js.undefined
     
     /**
       * A function that influences how the `info` is stringified.
       */
-    var replacer: js.UndefOr[
-        js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-      ] = js.undefined
+    var replacer: js.UndefOr[js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]] = js.undefined
     
     /**
       * The number of white space used to format the json.
@@ -181,7 +220,29 @@ object mod {
     
     extension [Self <: JsonOptions](x: Self) {
       
-      inline def setReplacer(value: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
+      inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      
+      inline def setBigintUndefined: Self = StObject.set(x, "bigint", js.undefined)
+      
+      inline def setCircularValue(value: String | TypeErrorConstructor | ErrorConstructor): Self = StObject.set(x, "circularValue", value.asInstanceOf[js.Any])
+      
+      inline def setCircularValueNull: Self = StObject.set(x, "circularValue", null)
+      
+      inline def setCircularValueUndefined: Self = StObject.set(x, "circularValue", js.undefined)
+      
+      inline def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
+      
+      inline def setDeterministicUndefined: Self = StObject.set(x, "deterministic", js.undefined)
+      
+      inline def setMaximumBreadth(value: Double): Self = StObject.set(x, "maximumBreadth", value.asInstanceOf[js.Any])
+      
+      inline def setMaximumBreadthUndefined: Self = StObject.set(x, "maximumBreadth", js.undefined)
+      
+      inline def setMaximumDepth(value: Double): Self = StObject.set(x, "maximumDepth", value.asInstanceOf[js.Any])
+      
+      inline def setMaximumDepthUndefined: Self = StObject.set(x, "maximumDepth", js.undefined)
+      
+      inline def setReplacer(value: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
@@ -253,13 +314,13 @@ object mod {
       
       inline def setFillExceptUndefined: Self = StObject.set(x, "fillExcept", js.undefined)
       
-      inline def setFillExceptVarargs(value: String*): Self = StObject.set(x, "fillExcept", js.Array(value :_*))
+      inline def setFillExceptVarargs(value: String*): Self = StObject.set(x, "fillExcept", js.Array(value*))
       
       inline def setFillWith(value: js.Array[String]): Self = StObject.set(x, "fillWith", value.asInstanceOf[js.Any])
       
       inline def setFillWithUndefined: Self = StObject.set(x, "fillWith", js.undefined)
       
-      inline def setFillWithVarargs(value: String*): Self = StObject.set(x, "fillWith", js.Array(value :_*))
+      inline def setFillWithVarargs(value: String*): Self = StObject.set(x, "fillWith", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -359,21 +420,21 @@ object mod {
   
   type TransformFunction = js.Function2[
     /* info */ TransformableInfo, 
-    /* opts */ js.UndefOr[js.Any], 
+    /* opts */ js.UndefOr[Any], 
     TransformableInfo | Boolean
   ]
   
   trait TransformableInfo
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var level: String
     
-    var message: String
+    var message: Any
   }
   object TransformableInfo {
     
-    inline def apply(level: String, message: String): TransformableInfo = {
+    inline def apply(level: String, message: Any): TransformableInfo = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransformableInfo]
     }
@@ -382,7 +443,7 @@ object mod {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   

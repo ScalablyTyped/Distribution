@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLanguageModelsRequest extends StObject {
   
   /**
-    * The maximum number of language models to return in the response. If there are fewer results in the list, the response contains only the actual results.
+    * The maximum number of custom language models to return in each page of results. If there are fewer results than the value you specify, only the actual results are returned. If you don't specify a value, a default of 5 is used.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.undefined
   
   /**
-    * When specified, the custom language model names returned contain the substring you've specified.
+    * Returns only the custom language models that contain the specified string. The search is not case sensitive.
     */
   var NameContains: js.UndefOr[ModelName] = js.undefined
   
   /**
-    * When included, fetches the next set of jobs if the result of the previous request was truncated.
+    * If your ListLanguageModels request returns more results than can be displayed, NextToken is displayed in the response with an associated string. To get the next page of results, copy this string and repeat your request, including NextToken with the value of the copied string. Repeat as needed to view all your results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
-    * When specified, returns only custom language models with the specified status. Language models are ordered by creation date, with the newest models first. If you don't specify a status, Amazon Transcribe returns all custom language models ordered by date.
+    * Returns only custom language models with the specified status. Language models are ordered by creation date, with the newest model first. If you don't include StatusEquals, all custom language models are returned.
     */
   var StatusEquals: js.UndefOr[ModelStatus] = js.undefined
 }

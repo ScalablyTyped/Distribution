@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SpinnerBase")
 @js.native
-class SpinnerBase protected ()
+open class SpinnerBase protected ()
   extends typings.officeUiFabricReact.mod.SpinnerBase {
   def this(props: ISpinnerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ISpinnerProps, context: js.Any) = this()
+  def this(props: ISpinnerProps, context: Any) = this()
 }
 /* static members */
 object SpinnerBase {

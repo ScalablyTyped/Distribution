@@ -20,11 +20,11 @@ trait Currency extends StObject {
   
   var photo: js.UndefOr[Url] = js.undefined
   
-  var prices: js.Array[js.Any]
+  var prices: js.Array[Any]
   
   var providerToken: String
   
-  var replyMarkup: js.UndefOr[js.Any] = js.undefined
+  var replyMarkup: js.UndefOr[Any] = js.undefined
   
   var replyToMessage: js.UndefOr[Double] = js.undefined
   
@@ -38,7 +38,7 @@ object Currency {
     currency: String,
     description: String,
     payload: String,
-    prices: js.Array[js.Any],
+    prices: js.Array[Any],
     providerToken: String,
     startParameter: String,
     title: String
@@ -71,13 +71,13 @@ object Currency {
     
     inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
-    inline def setPrices(value: js.Array[js.Any]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
+    inline def setPrices(value: js.Array[Any]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    inline def setPricesVarargs(value: js.Any*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: Any*): Self = StObject.set(x, "prices", js.Array(value*))
     
     inline def setProviderToken(value: String): Self = StObject.set(x, "providerToken", value.asInstanceOf[js.Any])
     
-    inline def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
+    inline def setReplyMarkup(value: Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
     inline def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     

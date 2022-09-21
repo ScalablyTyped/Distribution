@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a comment reply in the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.CommentReply")
 @js.native
-class CommentReply ()
+open class CommentReply ()
   extends StObject
      with typings.officeJs.Excel.CommentReply {
   

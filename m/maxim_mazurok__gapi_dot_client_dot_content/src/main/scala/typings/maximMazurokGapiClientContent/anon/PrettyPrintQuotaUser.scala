@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.LocalinventoryCustomBatchRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +25,9 @@ trait PrettyPrintQuotaUser extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /** Required. The ID of the account. */
+  var merchantId: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -35,8 +37,8 @@ trait PrettyPrintQuotaUser extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: LocalinventoryCustomBatchRequest
+  /** Required. The program region code [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). Currently only US is available. */
+  var regionCode: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -46,8 +48,8 @@ trait PrettyPrintQuotaUser extends StObject {
 }
 object PrettyPrintQuotaUser {
   
-  inline def apply(resource: LocalinventoryCustomBatchRequest): PrettyPrintQuotaUser = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+  inline def apply(merchantId: String, regionCode: String): PrettyPrintQuotaUser = {
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], regionCode = regionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintQuotaUser]
   }
   
@@ -77,6 +79,8 @@ object PrettyPrintQuotaUser {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -89,7 +93,7 @@ object PrettyPrintQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: LocalinventoryCustomBatchRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

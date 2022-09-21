@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Overlay")
 @js.native
-class Overlay protected () extends StObject {
+open class Overlay protected () extends StObject {
   def this(options: OverlayOptions) = this()
   
   def adjust(position: Point, size: Point): Unit = js.native

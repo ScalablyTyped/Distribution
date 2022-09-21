@@ -17,11 +17,10 @@ object mod {
   
   @JSImport("react-autocomplete", JSImport.Namespace)
   @js.native
-  class ^ () extends Autocomplete
+  open class ^ () extends Autocomplete
   
   @js.native
-  trait Autocomplete
-    extends Component[Props, State, js.Any] {
+  trait Autocomplete extends Component[Props, State, Any] {
     
     /**
       * Autocomplete exposes a subset of `HTMLInputElement` properties to the parent component.
@@ -58,7 +57,7 @@ object mod {
       *
       * Used to read the display value from each entry in `items`.
       */
-    def getItemValue(item: js.Any): String = js.native
+    def getItemValue(item: Any): String = js.native
     
     /**
       * Props passed to `props.renderInput`. By default these props will be
@@ -78,12 +77,12 @@ object mod {
       * determine whether the item should be selectable or not.
       * By default all items are selectable.
       */
-    var isItemSelectable: js.UndefOr[js.Function1[/* item */ js.Any, Boolean]] = js.native
+    var isItemSelectable: js.UndefOr[js.Function1[/* item */ Any, Boolean]] = js.native
     
     /**
       * The items to display in the dropdown menu
       */
-    var items: js.Array[js.Any] = js.native
+    var items: js.Array[Any] = js.native
     
     /**
       * Styles that are applied to the dropdown menu in the default `renderMenu`
@@ -112,7 +111,7 @@ object mod {
       *
       * Invoked when the user selects an item from the dropdown menu.
       */
-    var onSelect: js.UndefOr[js.Function2[/* value */ String, /* item */ js.Any, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function2[/* value */ String, /* item */ Any, Unit]] = js.native
     
     /**
       * Used to override the internal logic which displays/hides the dropdown
@@ -141,8 +140,8 @@ object mod {
       * an optional set of styles that can be applied to improve the look/feel
       * of the items in the dropdown menu.
       */
-    def renderItem(item: js.Any, isHighlighted: Boolean): ReactNode = js.native
-    def renderItem(item: js.Any, isHighlighted: Boolean, styles: CSSProperties): ReactNode = js.native
+    def renderItem(item: Any, isHighlighted: Boolean): ReactNode = js.native
+    def renderItem(item: Any, isHighlighted: Boolean, styles: CSSProperties): ReactNode = js.native
     
     /**
       * Arguments: `items: Array<Any>, value: String, styles: Object`
@@ -175,19 +174,19 @@ object mod {
       * determine whether or not it should be displayed in the dropdown menu.
       * By default all items are always rendered.
       */
-    var shouldItemRender: js.UndefOr[js.Function2[/* item */ js.Any, /* value */ String, Boolean]] = js.native
+    var shouldItemRender: js.UndefOr[js.Function2[/* item */ Any, /* value */ String, Boolean]] = js.native
     
     /**
       * Arguments: `itemA: Any, itemB: Any, value: String`
       *
       * The function which is used to sort `items` before display.
       */
-    var sortItems: js.UndefOr[js.Function3[/* a */ js.Any, /* b */ js.Any, /* value */ String, Double]] = js.native
+    var sortItems: js.UndefOr[js.Function3[/* a */ Any, /* b */ Any, /* value */ String, Double]] = js.native
     
     /**
       * The value to display in the input field
       */
-    var value: js.Any = js.native
+    var value: Any = js.native
     
     /**
       * Props that are applied to the element which wraps the `<input />` and

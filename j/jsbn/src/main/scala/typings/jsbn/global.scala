@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("jsbn.BigInteger")
     @js.native
-    class BigInteger protected ()
+    open class BigInteger protected ()
       extends typings.jsbn.mod.BigInteger {
       def this(a: String) = this()
       def this(a: js.Array[Double]) = this()

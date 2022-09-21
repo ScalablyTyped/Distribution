@@ -11,7 +11,7 @@ object screenBufferHDMod {
   
   @JSImport("terminal-kit/ScreenBufferHD", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ScreenBufferHD {
+  open class ^ protected () extends ScreenBufferHD {
     def this(options: typings.terminalKit.anon.Blending) = this()
     def this(options: Options) = this()
   }
@@ -22,13 +22,13 @@ object screenBufferHDMod {
   /* static member */
   inline def loadImage(
     url: String,
-    calback: js.Function2[/* error */ js.UndefOr[js.Any], /* image */ js.UndefOr[ScreenBufferHD], Unit]
+    calback: js.Function2[/* error */ js.UndefOr[Any], /* image */ js.UndefOr[ScreenBufferHD], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
   inline def loadImage(
     url: String,
     options: `0`,
-    callback: js.Function2[/* error */ js.Any, /* image */ ScreenBufferHD, Unit]
+    callback: js.Function2[/* error */ Any, /* image */ ScreenBufferHD, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Attributes extends StObject {

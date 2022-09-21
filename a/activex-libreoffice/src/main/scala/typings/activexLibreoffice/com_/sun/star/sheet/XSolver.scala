@@ -44,7 +44,7 @@ object XSolver {
     Success: Boolean,
     Variables: SafeArray[CellAddress],
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     solve: () => Unit
   ): XSolver = {

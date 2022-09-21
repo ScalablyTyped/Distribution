@@ -9,7 +9,7 @@ trait VolumeModification extends StObject {
   /**
     * The modification completion or failure time.
     */
-  var EndTime: js.UndefOr[DateTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current modification state. The modification state is null for unmodified volumes.
@@ -22,9 +22,19 @@ trait VolumeModification extends StObject {
   var OriginalIops: js.UndefOr[Integer] = js.undefined
   
   /**
+    * The original setting for Amazon EBS Multi-Attach.
+    */
+  var OriginalMultiAttachEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The original size of the volume, in GiB.
     */
   var OriginalSize: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * The original throughput of the volume, in MiB/s.
+    */
+  var OriginalThroughput: js.UndefOr[Integer] = js.undefined
   
   /**
     * The original EBS volume type of the volume.
@@ -39,7 +49,7 @@ trait VolumeModification extends StObject {
   /**
     * The modification start time.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A status message about the modification progress or failure.
@@ -52,9 +62,19 @@ trait VolumeModification extends StObject {
   var TargetIops: js.UndefOr[Integer] = js.undefined
   
   /**
+    * The target setting for Amazon EBS Multi-Attach.
+    */
+  var TargetMultiAttachEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The target size of the volume, in GiB.
     */
   var TargetSize: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * The target throughput of the volume, in MiB/s.
+    */
+  var TargetThroughput: js.UndefOr[Integer] = js.undefined
   
   /**
     * The target EBS volume type of the volume.
@@ -75,7 +95,7 @@ object VolumeModification {
   
   extension [Self <: VolumeModification](x: Self) {
     
-    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -87,9 +107,17 @@ object VolumeModification {
     
     inline def setOriginalIopsUndefined: Self = StObject.set(x, "OriginalIops", js.undefined)
     
+    inline def setOriginalMultiAttachEnabled(value: Boolean): Self = StObject.set(x, "OriginalMultiAttachEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalMultiAttachEnabledUndefined: Self = StObject.set(x, "OriginalMultiAttachEnabled", js.undefined)
+    
     inline def setOriginalSize(value: Integer): Self = StObject.set(x, "OriginalSize", value.asInstanceOf[js.Any])
     
     inline def setOriginalSizeUndefined: Self = StObject.set(x, "OriginalSize", js.undefined)
+    
+    inline def setOriginalThroughput(value: Integer): Self = StObject.set(x, "OriginalThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalThroughputUndefined: Self = StObject.set(x, "OriginalThroughput", js.undefined)
     
     inline def setOriginalVolumeType(value: VolumeType): Self = StObject.set(x, "OriginalVolumeType", value.asInstanceOf[js.Any])
     
@@ -99,7 +127,7 @@ object VolumeModification {
     
     inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -111,9 +139,17 @@ object VolumeModification {
     
     inline def setTargetIopsUndefined: Self = StObject.set(x, "TargetIops", js.undefined)
     
+    inline def setTargetMultiAttachEnabled(value: Boolean): Self = StObject.set(x, "TargetMultiAttachEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setTargetMultiAttachEnabledUndefined: Self = StObject.set(x, "TargetMultiAttachEnabled", js.undefined)
+    
     inline def setTargetSize(value: Integer): Self = StObject.set(x, "TargetSize", value.asInstanceOf[js.Any])
     
     inline def setTargetSizeUndefined: Self = StObject.set(x, "TargetSize", js.undefined)
+    
+    inline def setTargetThroughput(value: Integer): Self = StObject.set(x, "TargetThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setTargetThroughputUndefined: Self = StObject.set(x, "TargetThroughput", js.undefined)
     
     inline def setTargetVolumeType(value: VolumeType): Self = StObject.set(x, "TargetVolumeType", value.asInstanceOf[js.Any])
     

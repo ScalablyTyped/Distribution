@@ -6,6 +6,7 @@ import typings.rsocketFlowable.mod.Flowable
 import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
 import typings.ws.mod.Server
 import typings.ws.mod.ServerOptions
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,16 +15,20 @@ object rsocketwebsocketserverMod {
   
   @JSImport("rsocket-websocket-server/RSocketWebSocketServer", "RSocketWebSocketServer")
   @js.native
-  class RSocketWebSocketServer protected ()
+  open class RSocketWebSocketServer protected ()
     extends StObject
        with TransportServer {
     def this(options: ServerOptions) = this()
-    def this(options: ServerOptions, encoders: Encoders[js.Any]) = this()
-    def this(options: ServerOptions, encoders: Unit, factory: js.Function1[/* options */ ServerOptions, Server]) = this()
+    def this(options: ServerOptions, encoders: Encoders[Any]) = this()
     def this(
       options: ServerOptions,
-      encoders: Encoders[js.Any],
-      factory: js.Function1[/* options */ ServerOptions, Server]
+      encoders: Unit,
+      factory: js.Function1[/* options */ ServerOptions, Server[WebSocket]]
+    ) = this()
+    def this(
+      options: ServerOptions,
+      encoders: Encoders[Any],
+      factory: js.Function1[/* options */ ServerOptions, Server[WebSocket]]
     ) = this()
     
     /* CompleteClass */

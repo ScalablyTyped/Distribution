@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectLockLegalHold extends StObject {
   
   /**
-    * Indicates whether the specified object has a Legal Hold in place.
+    * Indicates whether the specified object has a legal hold in place.
     */
   var Status: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
 }

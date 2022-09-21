@@ -8,5 +8,5 @@ object getMergeConflictsOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetMergeConflictsOutput", "GetMergeConflictsOutput")
   @js.native
-  val GetMergeConflictsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetMergeConflictsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

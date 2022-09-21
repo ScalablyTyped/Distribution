@@ -29,7 +29,7 @@ object ListBundlesResult {
     
     inline def setBundleListUndefined: Self = StObject.set(x, "bundleList", js.undefined)
     
-    inline def setBundleListVarargs(value: BundleDetails*): Self = StObject.set(x, "bundleList", js.Array(value :_*))
+    inline def setBundleListVarargs(value: BundleDetails*): Self = StObject.set(x, "bundleList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

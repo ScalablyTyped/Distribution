@@ -38,7 +38,7 @@ object eitherMod {
   
   @JSImport("tsmonad/lib/src/either", "Either")
   @js.native
-  class Either_[L, R] protected ()
+  open class Either_[L, R] protected ()
     extends StObject
        with Monad[R]
        with Functor[R]
@@ -62,7 +62,7 @@ object eitherMod {
     /* CompleteClass */
     override def fmap[U](f: js.Function1[R, U]): Functor[U] = js.native
     
-    /* private */ var l: js.Any = js.native
+    /* private */ var l: Any = js.native
     
     /* CompleteClass */
     override def lift[U](f: js.Function1[R, U]): Functor[U] = js.native
@@ -73,9 +73,9 @@ object eitherMod {
     /* CompleteClass */
     override def of[U](t: U): Monad[U] = js.native
     
-    /* private */ var r: js.Any = js.native
+    /* private */ var r: Any = js.native
     
-    /* private */ var `type`: js.Any = js.native
+    /* private */ var `type`: Any = js.native
     
     /* CompleteClass */
     override def unit[U](t: U): Monad[U] = js.native

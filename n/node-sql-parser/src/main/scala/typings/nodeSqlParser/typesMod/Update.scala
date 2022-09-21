@@ -17,11 +17,11 @@ trait Update
   
   var `type`: update
   
-  var where: js.Any
+  var where: Any
 }
 object Update {
   
-  inline def apply(set: js.Array[SetList], where: js.Any): Update = {
+  inline def apply(set: js.Array[SetList], where: Any): Update = {
     val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any], db = null, table = null)
     __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[Update]
@@ -35,16 +35,16 @@ object Update {
     
     inline def setSet(value: js.Array[SetList]): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    inline def setSetVarargs(value: SetList*): Self = StObject.set(x, "set", js.Array(value :_*))
+    inline def setSetVarargs(value: SetList*): Self = StObject.set(x, "set", js.Array(value*))
     
     inline def setTable(value: js.Array[From | Dual]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     inline def setTableNull: Self = StObject.set(x, "table", null)
     
-    inline def setTableVarargs(value: (From | Dual)*): Self = StObject.set(x, "table", js.Array(value :_*))
+    inline def setTableVarargs(value: (From | Dual)*): Self = StObject.set(x, "table", js.Array(value*))
     
     inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setWhere(value: js.Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }
 }

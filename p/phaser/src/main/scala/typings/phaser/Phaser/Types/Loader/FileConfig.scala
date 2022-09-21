@@ -11,7 +11,7 @@ trait FileConfig extends StObject {
   /**
     * A config object that can be used by file types to store transitional data.
     */
-  var config: js.UndefOr[js.Any] = js.undefined
+  var config: js.UndefOr[Any] = js.undefined
   
   /**
     * The default extension this file uses.
@@ -58,7 +58,7 @@ object FileConfig {
   
   extension [Self <: FileConfig](x: Self) {
     
-    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     

@@ -1,11 +1,8 @@
 package typings.vegaLite
 
 import typings.std.Set
-import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.dataflowMod.DataFlowNode
 import typings.vegaLite.modelMod.ModelWithField
-import typings.vegaLite.srcTimeunitMod.TimeUnit
-import typings.vegaLite.srcTimeunitMod.TimeUnitParams
 import typings.vegaLite.utilMod.Dict
 import typings.vegaTypings.transformMod.TimeUnitTransform
 import org.scalablytyped.runtime.StObject
@@ -16,12 +13,12 @@ object timeunitMod {
   
   @JSImport("vega-lite/build/src/compile/data/timeunit", "TimeUnitNode")
   @js.native
-  class TimeUnitNode protected () extends DataFlowNode {
+  open class TimeUnitNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, formula: Dict[TimeUnitComponent]) = this()
     
     def assemble(): js.Array[TimeUnitTransform] = js.native
     
-    /* private */ var formula: js.Any = js.native
+    /* private */ var formula: Any = js.native
     
     /**
       * Merge together TimeUnitNodes assigning the children of `other` to `this`
@@ -46,25 +43,5 @@ object timeunitMod {
     inline def makeFromTransform(parent: DataFlowNode, t: typings.vegaLite.transformMod.TimeUnitTransform): TimeUnitNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[TimeUnitNode]
   }
   
-  trait TimeUnitComponent
-    extends StObject
-       with typings.vegaLite.transformMod.TimeUnitTransform {
-    
-    /** whether to output time unit as a band (generate two formula including start and end) */
-    var band: js.UndefOr[Boolean] = js.undefined
-  }
-  object TimeUnitComponent {
-    
-    inline def apply(as: FieldName, field: FieldName, timeUnit: TimeUnit | TimeUnitParams): TimeUnitComponent = {
-      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], timeUnit = timeUnit.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TimeUnitComponent]
-    }
-    
-    extension [Self <: TimeUnitComponent](x: Self) {
-      
-      inline def setBand(value: Boolean): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
-      
-      inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
-    }
-  }
+  type TimeUnitComponent = typings.vegaLite.transformMod.TimeUnitTransform
 }

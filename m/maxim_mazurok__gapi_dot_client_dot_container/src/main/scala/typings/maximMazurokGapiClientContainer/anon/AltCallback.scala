@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
-import typings.maximMazurokGapiClientContainer.gapi.client.container.SetNodePoolSizeRequest
+import typings.maximMazurokGapiClientContainer.gapi.client.container.SetNodePoolManagementRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,8 +39,8 @@ trait AltCallback extends StObject {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the
-    * name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the name field.
     */
   var projectId: String
   
@@ -48,7 +48,7 @@ trait AltCallback extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SetNodePoolSizeRequest
+  var resource: SetNodePoolManagementRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -68,7 +68,7 @@ object AltCallback {
     clusterId: String,
     nodePoolId: String,
     projectId: String,
-    resource: SetNodePoolSizeRequest,
+    resource: SetNodePoolManagementRequest,
     zone: String
   ): AltCallback = {
     val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any], nodePoolId = nodePoolId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
@@ -119,7 +119,7 @@ object AltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SetNodePoolSizeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SetNodePoolManagementRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

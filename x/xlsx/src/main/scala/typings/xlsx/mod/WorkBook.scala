@@ -24,7 +24,7 @@ trait WorkBook extends StObject {
   
   var Workbook: js.UndefOr[WBProps] = js.undefined
   
-  var vbaraw: js.UndefOr[js.Any] = js.undefined
+  var vbaraw: js.UndefOr[Any] = js.undefined
 }
 object WorkBook {
   
@@ -45,11 +45,11 @@ object WorkBook {
     
     inline def setSheetNames(value: js.Array[String]): Self = StObject.set(x, "SheetNames", value.asInstanceOf[js.Any])
     
-    inline def setSheetNamesVarargs(value: String*): Self = StObject.set(x, "SheetNames", js.Array(value :_*))
+    inline def setSheetNamesVarargs(value: String*): Self = StObject.set(x, "SheetNames", js.Array(value*))
     
     inline def setSheets(value: StringDictionary[WorkSheet]): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
-    inline def setVbaraw(value: js.Any): Self = StObject.set(x, "vbaraw", value.asInstanceOf[js.Any])
+    inline def setVbaraw(value: Any): Self = StObject.set(x, "vbaraw", value.asInstanceOf[js.Any])
     
     inline def setVbarawUndefined: Self = StObject.set(x, "vbaraw", js.undefined)
     

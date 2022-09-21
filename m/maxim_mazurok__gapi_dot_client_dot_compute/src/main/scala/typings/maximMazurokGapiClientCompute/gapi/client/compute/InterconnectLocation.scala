@@ -18,14 +18,7 @@ trait InterconnectLocation extends StObject {
   /** [Output Only] Metropolitan area designator that indicates which city an interconnect is located. For example: "Chicago, IL", "Amsterdam, Netherlands". */
   var city: js.UndefOr[String] = js.undefined
   
-  /**
-    * [Output Only] Continent for this location, which can take one of the following values:
-    * - AFRICA
-    * - ASIA_PAC
-    * - EUROPE
-    * - NORTH_AMERICA
-    * - SOUTH_AMERICA
-    */
+  /** [Output Only] Continent for this location, which can take one of the following values: - AFRICA - ASIA_PAC - EUROPE - NORTH_AMERICA - SOUTH_AMERICA */
   var continent: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
@@ -62,9 +55,8 @@ trait InterconnectLocation extends StObject {
   var selfLink: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output Only] The status of this InterconnectLocation, which can take one of the following values:
-    * - CLOSED: The InterconnectLocation is closed and is unavailable for provisioning new Interconnects.
-    * - AVAILABLE: The InterconnectLocation is available for provisioning new Interconnects.
+    * [Output Only] The status of this InterconnectLocation, which can take one of the following values: - CLOSED: The InterconnectLocation is closed and is unavailable for provisioning
+    * new Interconnects. - AVAILABLE: The InterconnectLocation is available for provisioning new Interconnects.
     */
   var status: js.UndefOr[String] = js.undefined
 }
@@ -129,7 +121,7 @@ object InterconnectLocation {
     
     inline def setRegionInfosUndefined: Self = StObject.set(x, "regionInfos", js.undefined)
     
-    inline def setRegionInfosVarargs(value: InterconnectLocationRegionInfo*): Self = StObject.set(x, "regionInfos", js.Array(value :_*))
+    inline def setRegionInfosVarargs(value: InterconnectLocationRegionInfo*): Self = StObject.set(x, "regionInfos", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

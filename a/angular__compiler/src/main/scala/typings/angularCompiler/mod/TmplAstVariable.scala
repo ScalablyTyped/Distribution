@@ -6,19 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "TmplAstVariable")
 @js.native
-class TmplAstVariable protected ()
-  extends typings.angularCompiler.compilerMod.TmplAstVariable {
+open class TmplAstVariable protected ()
+  extends StObject
+     with TmplAstNode {
+  def this(name: String, value: String, sourceSpan: ParseSourceSpan, keySpan: ParseSourceSpan) = this()
   def this(
     name: String,
     value: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan
   ) = this()
-  def this(
-    name: String,
-    value: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+  
+  val keySpan: ParseSourceSpan = js.native
+  
+  var name: String = js.native
+  
+  /* CompleteClass */
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  var value: String = js.native
+  
+  var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
+  
+  /* CompleteClass */
+  override def visit[Result](visitor: Visitor3[Result]): Result = js.native
 }

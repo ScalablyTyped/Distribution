@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object toDegreeMod {
   
-  @JSImport("@antv/util/lib/to-degree", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/to-degree", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

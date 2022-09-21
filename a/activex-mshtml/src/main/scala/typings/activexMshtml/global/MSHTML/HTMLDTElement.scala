@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLDTElement")
 @js.native
-/* private */ class HTMLDTElement ()
+/* private */ open class HTMLDTElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLDTElement

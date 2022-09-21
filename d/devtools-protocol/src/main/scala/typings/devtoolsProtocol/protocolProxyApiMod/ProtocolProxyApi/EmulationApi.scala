@@ -2,15 +2,19 @@ package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.virtualTimeBudgetExpired
 import typings.devtoolsProtocol.mod.Protocol.Emulation.CanEmulateResponse
+import typings.devtoolsProtocol.mod.Protocol.Emulation.SetAutoDarkModeOverrideRequest
+import typings.devtoolsProtocol.mod.Protocol.Emulation.SetAutomationOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetCPUThrottlingRateRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetDefaultBackgroundColorOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetDeviceMetricsOverrideRequest
+import typings.devtoolsProtocol.mod.Protocol.Emulation.SetDisabledImageTypesRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetDocumentCookieDisabledRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetEmitTouchEventsForMouseRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetEmulatedMediaRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetEmulatedVisionDeficiencyRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetFocusEmulationEnabledRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetGeolocationOverrideRequest
+import typings.devtoolsProtocol.mod.Protocol.Emulation.SetHardwareConcurrencyOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetIdleOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetLocaleOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetNavigatorOverridesRequest
@@ -35,12 +39,12 @@ trait EmulationApi extends StObject {
   def canEmulate(): js.Promise[CanEmulateResponse]
   
   /**
-    * Clears the overriden device metrics.
+    * Clears the overridden device metrics.
     */
   def clearDeviceMetricsOverride(): js.Promise[Unit]
   
   /**
-    * Clears the overriden Geolocation Position and Error.
+    * Clears the overridden Geolocation Position and Error.
     */
   def clearGeolocationOverride(): js.Promise[Unit]
   
@@ -61,6 +65,16 @@ trait EmulationApi extends StObject {
   def resetPageScaleFactor(): js.Promise[Unit]
   
   /**
+    * Automatically render all web contents using a dark theme.
+    */
+  def setAutoDarkModeOverride(params: SetAutoDarkModeOverrideRequest): js.Promise[Unit]
+  
+  /**
+    * Allows overriding the automation flag.
+    */
+  def setAutomationOverride(params: SetAutomationOverrideRequest): js.Promise[Unit]
+  
+  /**
     * Enables CPU throttling to emulate slow CPUs.
     */
   def setCPUThrottlingRate(params: SetCPUThrottlingRateRequest): js.Promise[Unit]
@@ -77,6 +91,8 @@ trait EmulationApi extends StObject {
     * query results).
     */
   def setDeviceMetricsOverride(params: SetDeviceMetricsOverrideRequest): js.Promise[Unit]
+  
+  def setDisabledImageTypes(params: SetDisabledImageTypesRequest): js.Promise[Unit]
   
   def setDocumentCookieDisabled(params: SetDocumentCookieDisabledRequest): js.Promise[Unit]
   
@@ -102,6 +118,8 @@ trait EmulationApi extends StObject {
     * unavailable.
     */
   def setGeolocationOverride(params: SetGeolocationOverrideRequest): js.Promise[Unit]
+  
+  def setHardwareConcurrencyOverride(params: SetHardwareConcurrencyOverrideRequest): js.Promise[Unit]
   
   /**
     * Overrides the Idle state.
@@ -167,15 +185,19 @@ object EmulationApi {
     clearIdleOverride: () => js.Promise[Unit],
     on: (virtualTimeBudgetExpired, js.Function0[Unit]) => Unit,
     resetPageScaleFactor: () => js.Promise[Unit],
+    setAutoDarkModeOverride: SetAutoDarkModeOverrideRequest => js.Promise[Unit],
+    setAutomationOverride: SetAutomationOverrideRequest => js.Promise[Unit],
     setCPUThrottlingRate: SetCPUThrottlingRateRequest => js.Promise[Unit],
     setDefaultBackgroundColorOverride: SetDefaultBackgroundColorOverrideRequest => js.Promise[Unit],
     setDeviceMetricsOverride: SetDeviceMetricsOverrideRequest => js.Promise[Unit],
+    setDisabledImageTypes: SetDisabledImageTypesRequest => js.Promise[Unit],
     setDocumentCookieDisabled: SetDocumentCookieDisabledRequest => js.Promise[Unit],
     setEmitTouchEventsForMouse: SetEmitTouchEventsForMouseRequest => js.Promise[Unit],
     setEmulatedMedia: SetEmulatedMediaRequest => js.Promise[Unit],
     setEmulatedVisionDeficiency: SetEmulatedVisionDeficiencyRequest => js.Promise[Unit],
     setFocusEmulationEnabled: SetFocusEmulationEnabledRequest => js.Promise[Unit],
     setGeolocationOverride: SetGeolocationOverrideRequest => js.Promise[Unit],
+    setHardwareConcurrencyOverride: SetHardwareConcurrencyOverrideRequest => js.Promise[Unit],
     setIdleOverride: SetIdleOverrideRequest => js.Promise[Unit],
     setLocaleOverride: SetLocaleOverrideRequest => js.Promise[Unit],
     setNavigatorOverrides: SetNavigatorOverridesRequest => js.Promise[Unit],
@@ -188,7 +210,7 @@ object EmulationApi {
     setVirtualTimePolicy: SetVirtualTimePolicyRequest => js.Promise[SetVirtualTimePolicyResponse],
     setVisibleSize: SetVisibleSizeRequest => js.Promise[Unit]
   ): EmulationApi = {
-    val __obj = js.Dynamic.literal(canEmulate = js.Any.fromFunction0(canEmulate), clearDeviceMetricsOverride = js.Any.fromFunction0(clearDeviceMetricsOverride), clearGeolocationOverride = js.Any.fromFunction0(clearGeolocationOverride), clearIdleOverride = js.Any.fromFunction0(clearIdleOverride), on = js.Any.fromFunction2(on), resetPageScaleFactor = js.Any.fromFunction0(resetPageScaleFactor), setCPUThrottlingRate = js.Any.fromFunction1(setCPUThrottlingRate), setDefaultBackgroundColorOverride = js.Any.fromFunction1(setDefaultBackgroundColorOverride), setDeviceMetricsOverride = js.Any.fromFunction1(setDeviceMetricsOverride), setDocumentCookieDisabled = js.Any.fromFunction1(setDocumentCookieDisabled), setEmitTouchEventsForMouse = js.Any.fromFunction1(setEmitTouchEventsForMouse), setEmulatedMedia = js.Any.fromFunction1(setEmulatedMedia), setEmulatedVisionDeficiency = js.Any.fromFunction1(setEmulatedVisionDeficiency), setFocusEmulationEnabled = js.Any.fromFunction1(setFocusEmulationEnabled), setGeolocationOverride = js.Any.fromFunction1(setGeolocationOverride), setIdleOverride = js.Any.fromFunction1(setIdleOverride), setLocaleOverride = js.Any.fromFunction1(setLocaleOverride), setNavigatorOverrides = js.Any.fromFunction1(setNavigatorOverrides), setPageScaleFactor = js.Any.fromFunction1(setPageScaleFactor), setScriptExecutionDisabled = js.Any.fromFunction1(setScriptExecutionDisabled), setScrollbarsHidden = js.Any.fromFunction1(setScrollbarsHidden), setTimezoneOverride = js.Any.fromFunction1(setTimezoneOverride), setTouchEmulationEnabled = js.Any.fromFunction1(setTouchEmulationEnabled), setUserAgentOverride = js.Any.fromFunction1(setUserAgentOverride), setVirtualTimePolicy = js.Any.fromFunction1(setVirtualTimePolicy), setVisibleSize = js.Any.fromFunction1(setVisibleSize))
+    val __obj = js.Dynamic.literal(canEmulate = js.Any.fromFunction0(canEmulate), clearDeviceMetricsOverride = js.Any.fromFunction0(clearDeviceMetricsOverride), clearGeolocationOverride = js.Any.fromFunction0(clearGeolocationOverride), clearIdleOverride = js.Any.fromFunction0(clearIdleOverride), on = js.Any.fromFunction2(on), resetPageScaleFactor = js.Any.fromFunction0(resetPageScaleFactor), setAutoDarkModeOverride = js.Any.fromFunction1(setAutoDarkModeOverride), setAutomationOverride = js.Any.fromFunction1(setAutomationOverride), setCPUThrottlingRate = js.Any.fromFunction1(setCPUThrottlingRate), setDefaultBackgroundColorOverride = js.Any.fromFunction1(setDefaultBackgroundColorOverride), setDeviceMetricsOverride = js.Any.fromFunction1(setDeviceMetricsOverride), setDisabledImageTypes = js.Any.fromFunction1(setDisabledImageTypes), setDocumentCookieDisabled = js.Any.fromFunction1(setDocumentCookieDisabled), setEmitTouchEventsForMouse = js.Any.fromFunction1(setEmitTouchEventsForMouse), setEmulatedMedia = js.Any.fromFunction1(setEmulatedMedia), setEmulatedVisionDeficiency = js.Any.fromFunction1(setEmulatedVisionDeficiency), setFocusEmulationEnabled = js.Any.fromFunction1(setFocusEmulationEnabled), setGeolocationOverride = js.Any.fromFunction1(setGeolocationOverride), setHardwareConcurrencyOverride = js.Any.fromFunction1(setHardwareConcurrencyOverride), setIdleOverride = js.Any.fromFunction1(setIdleOverride), setLocaleOverride = js.Any.fromFunction1(setLocaleOverride), setNavigatorOverrides = js.Any.fromFunction1(setNavigatorOverrides), setPageScaleFactor = js.Any.fromFunction1(setPageScaleFactor), setScriptExecutionDisabled = js.Any.fromFunction1(setScriptExecutionDisabled), setScrollbarsHidden = js.Any.fromFunction1(setScrollbarsHidden), setTimezoneOverride = js.Any.fromFunction1(setTimezoneOverride), setTouchEmulationEnabled = js.Any.fromFunction1(setTouchEmulationEnabled), setUserAgentOverride = js.Any.fromFunction1(setUserAgentOverride), setVirtualTimePolicy = js.Any.fromFunction1(setVirtualTimePolicy), setVisibleSize = js.Any.fromFunction1(setVisibleSize))
     __obj.asInstanceOf[EmulationApi]
   }
   
@@ -206,11 +228,17 @@ object EmulationApi {
     
     inline def setResetPageScaleFactor(value: () => js.Promise[Unit]): Self = StObject.set(x, "resetPageScaleFactor", js.Any.fromFunction0(value))
     
+    inline def setSetAutoDarkModeOverride(value: SetAutoDarkModeOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setAutoDarkModeOverride", js.Any.fromFunction1(value))
+    
+    inline def setSetAutomationOverride(value: SetAutomationOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setAutomationOverride", js.Any.fromFunction1(value))
+    
     inline def setSetCPUThrottlingRate(value: SetCPUThrottlingRateRequest => js.Promise[Unit]): Self = StObject.set(x, "setCPUThrottlingRate", js.Any.fromFunction1(value))
     
     inline def setSetDefaultBackgroundColorOverride(value: SetDefaultBackgroundColorOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setDefaultBackgroundColorOverride", js.Any.fromFunction1(value))
     
     inline def setSetDeviceMetricsOverride(value: SetDeviceMetricsOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setDeviceMetricsOverride", js.Any.fromFunction1(value))
+    
+    inline def setSetDisabledImageTypes(value: SetDisabledImageTypesRequest => js.Promise[Unit]): Self = StObject.set(x, "setDisabledImageTypes", js.Any.fromFunction1(value))
     
     inline def setSetDocumentCookieDisabled(value: SetDocumentCookieDisabledRequest => js.Promise[Unit]): Self = StObject.set(x, "setDocumentCookieDisabled", js.Any.fromFunction1(value))
     
@@ -223,6 +251,8 @@ object EmulationApi {
     inline def setSetFocusEmulationEnabled(value: SetFocusEmulationEnabledRequest => js.Promise[Unit]): Self = StObject.set(x, "setFocusEmulationEnabled", js.Any.fromFunction1(value))
     
     inline def setSetGeolocationOverride(value: SetGeolocationOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setGeolocationOverride", js.Any.fromFunction1(value))
+    
+    inline def setSetHardwareConcurrencyOverride(value: SetHardwareConcurrencyOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setHardwareConcurrencyOverride", js.Any.fromFunction1(value))
     
     inline def setSetIdleOverride(value: SetIdleOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setIdleOverride", js.Any.fromFunction1(value))
     

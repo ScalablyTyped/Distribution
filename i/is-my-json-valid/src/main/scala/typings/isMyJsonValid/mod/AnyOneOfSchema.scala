@@ -21,6 +21,6 @@ object AnyOneOfSchema {
     
     inline def setOneOf(value: js.Array[AnySchema]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     
-    inline def setOneOfVarargs(value: AnySchema*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+    inline def setOneOfVarargs(value: AnySchema*): Self = StObject.set(x, "oneOf", js.Array(value*))
   }
 }

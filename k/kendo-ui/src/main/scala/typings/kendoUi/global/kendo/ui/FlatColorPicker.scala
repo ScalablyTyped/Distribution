@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.FlatColorPicker")
 @js.native
-class FlatColorPicker protected ()
+open class FlatColorPicker protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.FlatColorPicker {
   def this(element: Element) = this()

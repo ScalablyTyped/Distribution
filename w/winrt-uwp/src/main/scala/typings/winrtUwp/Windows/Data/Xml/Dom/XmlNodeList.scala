@@ -33,7 +33,7 @@ trait XmlNodeList
     */
   def getMany(startIndex: Double): ItemsIXmlNode = js.native
   
-  def indexOf(value: IXmlNode, extra: js.Any*): Index = js.native
+  def indexOf(value: IXmlNode, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: IXmlNode): Double = js.native

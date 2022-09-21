@@ -9,12 +9,12 @@ trait NodeClickEventUIParam extends StObject {
   /**
     * Gets a reference to the node object being clicked.
     */
-  var node: js.UndefOr[js.Any] = js.undefined
+  var node: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the tree.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object NodeClickEventUIParam {
   
@@ -25,11 +25,11 @@ object NodeClickEventUIParam {
   
   extension [Self <: NodeClickEventUIParam](x: Self) {
     
-    inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

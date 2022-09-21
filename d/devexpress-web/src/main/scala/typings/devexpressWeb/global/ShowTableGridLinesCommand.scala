@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ShowTableGridLinesCommand")
 @js.native
-class ShowTableGridLinesCommand ()
+open class ShowTableGridLinesCommand ()
   extends StObject
      with typings.devexpressWeb.ShowTableGridLinesCommand {
   

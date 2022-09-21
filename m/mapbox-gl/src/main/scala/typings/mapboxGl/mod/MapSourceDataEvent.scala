@@ -24,5 +24,5 @@ trait MapSourceDataEvent
   
   var sourceId: String = js.native
   
-  var tile: js.Any = js.native
+  var tile: Any = js.native
 }

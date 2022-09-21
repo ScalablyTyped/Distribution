@@ -107,7 +107,7 @@ object updatesMod {
       
       inline def setPackages(value: js.Array[PersistedPackage]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       
-      inline def setPackagesVarargs(value: PersistedPackage*): Self = StObject.set(x, "packages", js.Array(value :_*))
+      inline def setPackagesVarargs(value: PersistedPackage*): Self = StObject.set(x, "packages", js.Array(value*))
     }
   }
 }

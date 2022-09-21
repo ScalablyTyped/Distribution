@@ -10,8 +10,8 @@ trait SasPortalListCustomersResponse extends StObject {
   var customers: js.UndefOr[js.Array[SasPortalCustomer]] = js.undefined
   
   /**
-    * A pagination token returned from a previous call to ListCustomers method that indicates from where listing should continue. If the field is missing or empty, it means there are no
-    * more customers.
+    * A pagination token returned from a previous call to ListCustomers that indicates from where listing should continue. If the field is missing or empty, it means there are no more
+    * customers.
     */
   var nextPageToken: js.UndefOr[String] = js.undefined
 }
@@ -28,7 +28,7 @@ object SasPortalListCustomersResponse {
     
     inline def setCustomersUndefined: Self = StObject.set(x, "customers", js.undefined)
     
-    inline def setCustomersVarargs(value: SasPortalCustomer*): Self = StObject.set(x, "customers", js.Array(value :_*))
+    inline def setCustomersVarargs(value: SasPortalCustomer*): Self = StObject.set(x, "customers", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

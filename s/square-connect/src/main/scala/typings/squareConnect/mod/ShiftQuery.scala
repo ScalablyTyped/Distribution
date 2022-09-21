@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ShiftQuery")
 @js.native
-class ShiftQuery () extends StObject {
+open class ShiftQuery () extends StObject {
   
   /**
     * Query filter options.

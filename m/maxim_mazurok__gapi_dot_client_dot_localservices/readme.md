@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_localservices
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220730
 
 ## Library description:
 TypeScript typings for Local Services API v1
@@ -10,10 +10,10 @@ TypeScript typings for Local Services API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.localservices |
 | Keywords           | - |
-| # releases         | 46 |
-| # dependents       | 1 |
-| # downloads        | 3050 |
-| # stars            | 0 |
+| # releases         | 368 |
+| # dependents       | 0.0 |
+| # downloads        | 2728.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

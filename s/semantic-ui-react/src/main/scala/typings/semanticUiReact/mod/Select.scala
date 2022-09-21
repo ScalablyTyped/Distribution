@@ -20,28 +20,25 @@ object Select extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Select.Divider")
   @js.native
-  class Divider protected ()
-    extends Component[DropdownDividerProps, ComponentState, js.Any] {
+  open class Divider protected () extends Component[DropdownDividerProps, ComponentState, Any] {
     def this(props: DropdownDividerProps) = this()
-    def this(props: DropdownDividerProps, context: js.Any) = this()
+    def this(props: DropdownDividerProps, context: Any) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Select.Header")
   @js.native
-  class Header protected ()
-    extends Component[DropdownHeaderProps, ComponentState, js.Any] {
+  open class Header protected () extends Component[DropdownHeaderProps, ComponentState, Any] {
     def this(props: DropdownHeaderProps) = this()
-    def this(props: DropdownHeaderProps, context: js.Any) = this()
+    def this(props: DropdownHeaderProps, context: Any) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Select.Item")
   @js.native
-  class Item protected ()
-    extends Component[DropdownItemProps, ComponentState, js.Any] {
+  open class Item protected () extends Component[DropdownItemProps, ComponentState, Any] {
     def this(props: DropdownItemProps) = this()
-    def this(props: DropdownItemProps, context: js.Any) = this()
+    def this(props: DropdownItemProps, context: Any) = this()
   }
   
   type _To = SelectComponent

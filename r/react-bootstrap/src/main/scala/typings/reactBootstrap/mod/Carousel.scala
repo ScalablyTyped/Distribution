@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Carousel")
 @js.native
-class Carousel ()
+open class Carousel ()
   extends typings.reactBootstrap.libMod.Carousel
 object Carousel {
   
@@ -18,7 +18,7 @@ object Carousel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Carousel.Caption")
   @js.native
-  class Caption ()
+  open class Caption ()
     extends typings.reactBootstrap.carouselCaptionMod.^
   /* static member */
   @JSImport("react-bootstrap", "Carousel.Caption")
@@ -29,7 +29,7 @@ object Carousel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Carousel.Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.reactBootstrap.carouselItemMod.^
   /* static member */
   @JSImport("react-bootstrap", "Carousel.Item")

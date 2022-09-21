@@ -20,6 +20,8 @@ trait ActionButton
   /**
     * Specifies the type of action.
     *
+    * @default "button"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#type)
     */
   @JSName("type")

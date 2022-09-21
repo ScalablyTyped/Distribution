@@ -16,19 +16,27 @@ object tensorListMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_list", "TensorList")
   @js.native
-  class TensorList protected () extends StObject {
+  open class TensorList protected () extends StObject {
+    def this(tensors: js.Array[Tensor[Rank]], elementShape: js.Array[Double], elementDtype: DataType) = this()
     /**
       *
       * @param tensors list of tensors
-      * @param elementShape shape of each tensor
+      * @param elementShape shape of each tensor, this can be a single number (any
+      * shape is allowed) or partial shape (dim = -1).
       * @param elementDtype data type of each tensor
       * @param maxNumElements The maximum allowed size of `tensors`. Defaults to -1
       *   meaning that the size of `tensors` is unbounded.
       */
-    def this(tensors: js.Array[Tensor[Rank]], elementShape: js.Array[Double], elementDtype: DataType) = this()
+    def this(tensors: js.Array[Tensor[Rank]], elementShape: Double, elementDtype: DataType) = this()
     def this(
       tensors: js.Array[Tensor[Rank]],
       elementShape: js.Array[Double],
+      elementDtype: DataType,
+      maxNumElements: Double
+    ) = this()
+    def this(
+      tensors: js.Array[Tensor[Rank]],
+      elementShape: Double,
       elementDtype: DataType,
       maxNumElements: Double
     ) = this()
@@ -53,7 +61,7 @@ object tensorListMod {
     
     val elementDtype: DataType = js.native
     
-    val elementShape: js.Array[Double] = js.native
+    val elementShape: Double | js.Array[Double] = js.native
     
     /**
       * Return selected values in the TensorList as a stacked Tensor. All of
@@ -95,7 +103,7 @@ object tensorListMod {
       * Update the size of the list.
       * @param size the new size of the list.
       */
-    def resize(size: Double): Unit = js.native
+    def resize(size: Double): TensorList = js.native
     
     /**
       * Set the tensor at the index
@@ -124,7 +132,12 @@ object tensorListMod {
   
   inline def fromTensor(tensor: Tensor[Rank], elementShape: js.Array[Double], elementDtype: DataType): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTensor")(tensor.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any], elementDtype.asInstanceOf[js.Any])).asInstanceOf[TensorList]
   
-  inline def reserve(elementShape: js.Array[Double], elementDtype: DataType, numElements: Double): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("reserve")(elementShape.asInstanceOf[js.Any], elementDtype.asInstanceOf[js.Any], numElements.asInstanceOf[js.Any])).asInstanceOf[TensorList]
+  inline def reserve(
+    elementShape: js.Array[Double],
+    elementDtype: DataType,
+    numElements: Double,
+    maxNumElements: Double
+  ): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("reserve")(elementShape.asInstanceOf[js.Any], elementDtype.asInstanceOf[js.Any], numElements.asInstanceOf[js.Any], maxNumElements.asInstanceOf[js.Any])).asInstanceOf[TensorList]
   
   inline def scatter(tensor: Tensor[Rank], indices: js.Array[Double], elementShape: js.Array[Double]): TensorList = (^.asInstanceOf[js.Dynamic].applyDynamic("scatter")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], elementShape.asInstanceOf[js.Any])).asInstanceOf[TensorList]
   inline def scatter(

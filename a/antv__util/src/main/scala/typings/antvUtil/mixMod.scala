@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mixMod {
   
-  @JSImport("@antv/util/lib/mix", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/mix", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

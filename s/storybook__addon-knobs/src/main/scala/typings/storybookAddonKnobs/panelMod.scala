@@ -14,7 +14,7 @@ object panelMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/Panel", JSImport.Default)
   @js.native
-  class default () extends KnobPanel
+  open class default () extends KnobPanel
   /* static members */
   object default {
     
@@ -39,7 +39,7 @@ object panelMod {
   
   @js.native
   trait KnobPanel
-    extends PureComponent[KnobPanelProps, js.Object, js.Any] {
+    extends PureComponent[KnobPanelProps, js.Object, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MKnobPanel(): Unit = js.native

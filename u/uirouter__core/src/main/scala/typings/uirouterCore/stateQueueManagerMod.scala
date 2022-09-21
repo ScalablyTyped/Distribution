@@ -15,7 +15,7 @@ object stateQueueManagerMod {
   
   @JSImport("@uirouter/core/lib/state/stateQueueManager", "StateQueueManager")
   @js.native
-  class StateQueueManager protected ()
+  open class StateQueueManager protected ()
     extends StObject
        with Disposable {
     def this(
@@ -37,7 +37,7 @@ object stateQueueManagerMod {
     
     def register(stateDecl: _StateDeclaration): StateObject = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     var states: StringDictionary[StateObject] = js.native
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.BackgroundMaterial")
 @js.native
-class BackgroundMaterial protected ()
+open class BackgroundMaterial protected ()
   extends StObject
      with typings.babylonjs.BABYLON.BackgroundMaterial {
   /**
@@ -15,6 +15,7 @@ class BackgroundMaterial protected ()
     * @param name The friendly name of the material
     * @param scene The scene to add the material to
     */
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**
@@ -37,7 +38,7 @@ object BackgroundMaterial {
     * @param rootUrl The root url of the assets the material depends upon
     * @returns the instantiated BackgroundMaterial.
     */
-  inline def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.BackgroundMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.BackgroundMaterial]
+  inline def Parse(source: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.BackgroundMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.BackgroundMaterial]
   
   /**
     * Standard reflectance value at parallel view angle.

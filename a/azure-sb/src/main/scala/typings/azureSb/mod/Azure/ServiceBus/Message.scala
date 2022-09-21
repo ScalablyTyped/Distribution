@@ -12,7 +12,7 @@ trait Message extends StObject {
   
   var contentType: js.UndefOr[String] = js.undefined
   
-  var customProperties: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var customProperties: js.UndefOr[Dictionary[Any]] = js.undefined
 }
 object Message {
   
@@ -33,7 +33,7 @@ object Message {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setCustomProperties(value: Dictionary[js.Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
+    inline def setCustomProperties(value: Dictionary[Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
     inline def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)
   }

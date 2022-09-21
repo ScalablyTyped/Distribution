@@ -24,7 +24,7 @@ trait IRadio
     * @returns Ext.field.Radio this
     */
   @JSName("setValue")
-  var setValue_IRadio: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setValue_IRadio: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], this.type]] = js.undefined
 }
 object IRadio {
   
@@ -43,7 +43,7 @@ object IRadio {
     
     inline def setSetGroupValueUndefined: Self = StObject.set(x, "setGroupValue", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => IRadio): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => IRadio): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
   }

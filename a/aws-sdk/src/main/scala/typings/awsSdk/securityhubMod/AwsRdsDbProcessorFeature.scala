@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsRdsDbProcessorFeature extends StObject {
   
   /**
-    * 
+    * The name of the processor feature. Valid values are coreCount or threadsPerCore.
     */
   var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The value of the processor feature.
     */
   var Value: js.UndefOr[NonEmptyString] = js.undefined
 }

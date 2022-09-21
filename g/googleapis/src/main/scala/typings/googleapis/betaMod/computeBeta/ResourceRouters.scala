@@ -4,98 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Routers")
 @js.native
-class ResourceRouters protected () extends StObject {
+open class ResourceRouters protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * compute.routers.aggregatedList
-    * @desc Retrieves an aggregated list of routers.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   var handlePage = function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     var itemsPage = response['items'];
-    *     if (!itemsPage) {
-    *       return;
-    *     }
-    *     Object.keys(itemsPage).forEach(function(name) {
-    *       // TODO: Change code below to process each `name` property:
-    *       console.log(name + ': ' + JSON.stringify(itemsPage[name], null,
-    * 2));
-    *     });
-    *
-    *     if (response.nextPageToken) {
-    *       request.pageToken = response.nextPageToken;
-    *       compute.routers.aggregatedList(request, handlePage);
-    *     }
-    *   };
-    *
-    *   compute.routers.aggregatedList(request, handlePage);
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.aggregatedList
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def aggregatedList(): GaxiosPromise[SchemaRouterAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaRouterAggregatedList]): Unit = js.native
   def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRouterAggregatedList] = js.native
@@ -106,8 +25,8 @@ class ResourceRouters protected () extends StObject {
   ): Unit = js.native
   def aggregatedList(
     params: ParamsResourceRoutersAggregatedlist,
-    options: BodyResponseCallback[SchemaRouterAggregatedList],
-    callback: BodyResponseCallback[SchemaRouterAggregatedList]
+    options: BodyResponseCallback[Readable | SchemaRouterAggregatedList],
+    callback: BodyResponseCallback[Readable | SchemaRouterAggregatedList]
   ): Unit = js.native
   def aggregatedList(params: ParamsResourceRoutersAggregatedlist, options: MethodOptions): GaxiosPromise[SchemaRouterAggregatedList] = js.native
   def aggregatedList(
@@ -115,83 +34,88 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRouterAggregatedList]
   ): Unit = js.native
+  /**
+    * Retrieves an aggregated list of routers.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.aggregatedList({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // Indicates whether every visible scope for each scope type (zone, region, global) should be included in the response. For new resource types added after this field, the flag has no effect as new resource types will always include every visible scope for each scope type in response. For resource types which predate this field, if this flag is omitted or false, only scopes of the scope types where the resource type is expected to be found will be included.
+    *     includeAllScopes: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": {},
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "unreachables": [],
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def aggregatedList(params: ParamsResourceRoutersAggregatedlist, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def aggregatedList(
+    params: ParamsResourceRoutersAggregatedlist,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * compute.routers.delete
-    * @desc Deletes the specified Router resource.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
-    *
-    *     // Name of the Router resource to delete.
-    *     router: 'my-router',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.routers.delete(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.router Name of the Router resource to delete.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -199,8 +123,8 @@ class ResourceRouters protected () extends StObject {
   def delete(params: ParamsResourceRoutersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
     params: ParamsResourceRoutersDelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def delete(params: ParamsResourceRoutersDelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(
@@ -208,81 +132,96 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.routers.get
-    * @desc Returns the specified Router resource. Gets a list of available
-    * routers by making a list() request.
+    * Deletes the specified Router resource.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
-    *
-    *     // Name of the Router resource to return.
-    *     router: 'my-router',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.routers.get(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.delete({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name of the Router resource to delete.
+    *     router: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.get
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {string} params.router Name of the Router resource to return.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceRoutersDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceRoutersDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaRouter] = js.native
   def get(callback: BodyResponseCallback[SchemaRouter]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRouter] = js.native
@@ -290,8 +229,8 @@ class ResourceRouters protected () extends StObject {
   def get(params: ParamsResourceRoutersGet, callback: BodyResponseCallback[SchemaRouter]): Unit = js.native
   def get(
     params: ParamsResourceRoutersGet,
-    options: BodyResponseCallback[SchemaRouter],
-    callback: BodyResponseCallback[SchemaRouter]
+    options: BodyResponseCallback[Readable | SchemaRouter],
+    callback: BodyResponseCallback[Readable | SchemaRouter]
   ): Unit = js.native
   def get(params: ParamsResourceRoutersGet, options: MethodOptions): GaxiosPromise[SchemaRouter] = js.native
   def get(
@@ -299,25 +238,85 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRouter]
   ): Unit = js.native
-  
   /**
-    * compute.routers.getNatMappingInfo
-    * @desc Retrieves runtime Nat mapping information of VM endpoints.
-    * @alias compute.routers.getNatMappingInfo
-    * @memberOf! ()
+    * Returns the specified Router resource. Gets a list of available routers by making a list() request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {string} params.router Name of the Router resource to query for Nat Mapping information of VM endpoints.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.get({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // Name of the Router resource to return.
+    *     router: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bgp": {},
+    *   //   "bgpPeers": [],
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "encryptedInterconnectRouter": false,
+    *   //   "id": "my_id",
+    *   //   "interfaces": [],
+    *   //   "kind": "my_kind",
+    *   //   "md5AuthenticationKeys": [],
+    *   //   "name": "my_name",
+    *   //   "nats": [],
+    *   //   "network": "my_network",
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceRoutersGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceRoutersGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getNatMappingInfo(): GaxiosPromise[SchemaVmEndpointNatMappingsList] = js.native
   def getNatMappingInfo(callback: BodyResponseCallback[SchemaVmEndpointNatMappingsList]): Unit = js.native
   def getNatMappingInfo(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVmEndpointNatMappingsList] = js.native
@@ -328,8 +327,8 @@ class ResourceRouters protected () extends StObject {
   ): Unit = js.native
   def getNatMappingInfo(
     params: ParamsResourceRoutersGetnatmappinginfo,
-    options: BodyResponseCallback[SchemaVmEndpointNatMappingsList],
-    callback: BodyResponseCallback[SchemaVmEndpointNatMappingsList]
+    options: BodyResponseCallback[Readable | SchemaVmEndpointNatMappingsList],
+    callback: BodyResponseCallback[Readable | SchemaVmEndpointNatMappingsList]
   ): Unit = js.native
   def getNatMappingInfo(params: ParamsResourceRoutersGetnatmappinginfo, options: MethodOptions): GaxiosPromise[SchemaVmEndpointNatMappingsList] = js.native
   def getNatMappingInfo(
@@ -337,80 +336,89 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaVmEndpointNatMappingsList]
   ): Unit = js.native
-  
   /**
-    * compute.routers.getRouterStatus
-    * @desc Retrieves runtime information of the specified router.
+    * Retrieves runtime Nat mapping information of VM endpoints.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
-    *
-    *     // Name of the Router resource to query.
-    *     router: 'my-router',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.routers.getRouterStatus(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.getNatMappingInfo({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Name of the nat service to filter the Nat Mapping information. If it is omitted, all nats for this router will be returned. Name should conform to RFC1035.
+    *     natName: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *     // Name of the Router resource to query for Nat Mapping information of VM endpoints.
+    *     router: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "result": [],
+    *   //   "selfLink": "my_selfLink",
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.getRouterStatus
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {string} params.router Name of the Router resource to query.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getNatMappingInfo(params: ParamsResourceRoutersGetnatmappinginfo, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getNatMappingInfo(
+    params: ParamsResourceRoutersGetnatmappinginfo,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getRouterStatus(): GaxiosPromise[SchemaRouterStatusResponse] = js.native
   def getRouterStatus(callback: BodyResponseCallback[SchemaRouterStatusResponse]): Unit = js.native
   def getRouterStatus(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRouterStatusResponse] = js.native
@@ -421,8 +429,8 @@ class ResourceRouters protected () extends StObject {
   ): Unit = js.native
   def getRouterStatus(
     params: ParamsResourceRoutersGetrouterstatus,
-    options: BodyResponseCallback[SchemaRouterStatusResponse],
-    callback: BodyResponseCallback[SchemaRouterStatusResponse]
+    options: BodyResponseCallback[Readable | SchemaRouterStatusResponse],
+    callback: BodyResponseCallback[Readable | SchemaRouterStatusResponse]
   ): Unit = js.native
   def getRouterStatus(params: ParamsResourceRoutersGetrouterstatus, options: MethodOptions): GaxiosPromise[SchemaRouterStatusResponse] = js.native
   def getRouterStatus(
@@ -430,83 +438,73 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRouterStatusResponse]
   ): Unit = js.native
-  
   /**
-    * compute.routers.insert
-    * @desc Creates a Router resource in the specified project and region using
-    * the data included in the request.
+    * Retrieves runtime information of the specified router.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.routers.insert(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.getRouterStatus({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // Name of the Router resource to query.
+    *     router: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind",
+    *   //   "result": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.insert
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {().Router} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getRouterStatus(params: ParamsResourceRoutersGetrouterstatus, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getRouterStatus(
+    params: ParamsResourceRoutersGetrouterstatus,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -514,8 +512,8 @@ class ResourceRouters protected () extends StObject {
   def insert(params: ParamsResourceRoutersInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
     params: ParamsResourceRoutersInsert,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def insert(params: ParamsResourceRoutersInsert, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(
@@ -523,94 +521,115 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.routers.list
-    * @desc Retrieves a list of Router resources available to the specified
-    * project.
+    * Creates a Router resource in the specified project and region using the data included in the request.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
     *
-    * authorize(function(authClient) {
-    *   var request = {
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.insert({
     *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
     *     // Name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
     *
-    *     auth: authClient,
-    *   };
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bgp": {},
+    *       //   "bgpPeers": [],
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "description": "my_description",
+    *       //   "encryptedInterconnectRouter": false,
+    *       //   "id": "my_id",
+    *       //   "interfaces": [],
+    *       //   "kind": "my_kind",
+    *       //   "md5AuthenticationKeys": [],
+    *       //   "name": "my_name",
+    *       //   "nats": [],
+    *       //   "network": "my_network",
+    *       //   "region": "my_region",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
     *
-    *   var handlePage = function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
     *
-    *     var itemsPage = response['items'];
-    *     if (!itemsPage) {
-    *       return;
-    *     }
-    *     for (var i = 0; i < itemsPage.length; i++) {
-    *       // TODO: Change code below to process each resource in `itemsPage`:
-    *       console.log(JSON.stringify(itemsPage[i], null, 2));
-    *     }
-    *
-    *     if (response.nextPageToken) {
-    *       request.pageToken = response.nextPageToken;
-    *       compute.routers.list(request, handlePage);
-    *     }
-    *   };
-    *
-    *   compute.routers.list(request, handlePage);
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.list
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceRoutersInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceRoutersInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaRouterList] = js.native
   def list(callback: BodyResponseCallback[SchemaRouterList]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRouterList] = js.native
@@ -618,8 +637,8 @@ class ResourceRouters protected () extends StObject {
   def list(params: ParamsResourceRoutersList, callback: BodyResponseCallback[SchemaRouterList]): Unit = js.native
   def list(
     params: ParamsResourceRoutersList,
-    options: BodyResponseCallback[SchemaRouterList],
-    callback: BodyResponseCallback[SchemaRouterList]
+    options: BodyResponseCallback[Readable | SchemaRouterList],
+    callback: BodyResponseCallback[Readable | SchemaRouterList]
   ): Unit = js.native
   def list(params: ParamsResourceRoutersList, options: MethodOptions): GaxiosPromise[SchemaRouterList] = js.native
   def list(
@@ -627,90 +646,85 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRouterList]
   ): Unit = js.native
-  
   /**
-    * compute.routers.patch
-    * @desc Patches the specified Router resource with the data included in the
-    * request. This method supports PATCH semantics and uses JSON merge patch
-    * format and processing rules.
+    * Retrieves a list of Router resources available to the specified project.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
-    *
-    *     // Name of the Router resource to patch.
-    *     router: 'my-router',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body. Only these
-    * properties
-    *       // will be changed.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.routers.patch(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.list({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.patch
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.router Name of the Router resource to patch.
-    * @param {().Router} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceRoutersList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceRoutersList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -718,8 +732,8 @@ class ResourceRouters protected () extends StObject {
   def patch(params: ParamsResourceRoutersPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
     params: ParamsResourceRoutersPatch,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def patch(params: ParamsResourceRoutersPatch, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(
@@ -727,86 +741,117 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.routers.preview
-    * @desc Preview fields auto-generated during router create and update
-    * operations. Calling this method does NOT create or update the router.
+    * Patches the specified Router resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
-    *
-    *     // Name of the Router resource to query.
-    *     router: 'my-router',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.routers.preview(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.patch({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name of the Router resource to patch.
+    *     router: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bgp": {},
+    *       //   "bgpPeers": [],
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "description": "my_description",
+    *       //   "encryptedInterconnectRouter": false,
+    *       //   "id": "my_id",
+    *       //   "interfaces": [],
+    *       //   "kind": "my_kind",
+    *       //   "md5AuthenticationKeys": [],
+    *       //   "name": "my_name",
+    *       //   "nats": [],
+    *       //   "network": "my_network",
+    *       //   "region": "my_region",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.preview
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {string} params.router Name of the Router resource to query.
-    * @param {().Router} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceRoutersPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceRoutersPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def preview(): GaxiosPromise[SchemaRoutersPreviewResponse] = js.native
   def preview(callback: BodyResponseCallback[SchemaRoutersPreviewResponse]): Unit = js.native
   def preview(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoutersPreviewResponse] = js.native
@@ -814,8 +859,8 @@ class ResourceRouters protected () extends StObject {
   def preview(params: ParamsResourceRoutersPreview, callback: BodyResponseCallback[SchemaRoutersPreviewResponse]): Unit = js.native
   def preview(
     params: ParamsResourceRoutersPreview,
-    options: BodyResponseCallback[SchemaRoutersPreviewResponse],
-    callback: BodyResponseCallback[SchemaRoutersPreviewResponse]
+    options: BodyResponseCallback[Readable | SchemaRoutersPreviewResponse],
+    callback: BodyResponseCallback[Readable | SchemaRoutersPreviewResponse]
   ): Unit = js.native
   def preview(params: ParamsResourceRoutersPreview, options: MethodOptions): GaxiosPromise[SchemaRoutersPreviewResponse] = js.native
   def preview(
@@ -823,85 +868,93 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoutersPreviewResponse]
   ): Unit = js.native
-  
   /**
-    * compute.routers.testIamPermissions
-    * @desc Returns permissions that a caller has on the specified resource.
+    * Preview fields auto-generated during router create and update operations. Calling this method does NOT create or update the router.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // The name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
-    *
-    *     // Name of the resource for this request.
-    *     resource_: 'my-resource',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.routers.testIamPermissions(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.preview({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // Name of the Router resource to query.
+    *     router: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bgp": {},
+    *       //   "bgpPeers": [],
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "description": "my_description",
+    *       //   "encryptedInterconnectRouter": false,
+    *       //   "id": "my_id",
+    *       //   "interfaces": [],
+    *       //   "kind": "my_kind",
+    *       //   "md5AuthenticationKeys": [],
+    *       //   "name": "my_name",
+    *       //   "nats": [],
+    *       //   "network": "my_network",
+    *       //   "region": "my_region",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "resource": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.testIamPermissions
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region The name of the region for this request.
-    * @param {string} params.resource_ Name or id of the resource for this request.
-    * @param {().TestPermissionsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def preview(params: ParamsResourceRoutersPreview, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def preview(
+    params: ParamsResourceRoutersPreview,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
   def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
@@ -912,8 +965,8 @@ class ResourceRouters protected () extends StObject {
   ): Unit = js.native
   def testIamPermissions(
     params: ParamsResourceRoutersTestiampermissions,
-    options: BodyResponseCallback[SchemaTestPermissionsResponse],
-    callback: BodyResponseCallback[SchemaTestPermissionsResponse]
+    options: BodyResponseCallback[Readable | SchemaTestPermissionsResponse],
+    callback: BodyResponseCallback[Readable | SchemaTestPermissionsResponse]
   ): Unit = js.native
   def testIamPermissions(params: ParamsResourceRoutersTestiampermissions, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
@@ -921,89 +974,80 @@ class ResourceRouters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
-  
   /**
-    * compute.routers.update
-    * @desc Updates the specified Router resource with the data included in the
-    * request.
+    * Returns permissions that a caller has on the specified resource.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Compute Engine API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/compute
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var compute = google.compute('beta');
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Project ID for this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Name of the region for this request.
-    *     region: 'my-region',  // TODO: Update placeholder value.
-    *
-    *     // Name of the Router resource to update.
-    *     router: 'my-router',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body. All existing
-    * properties
-    *       // will be replaced.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   compute.routers.update(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.testIamPermissions({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // The name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // Name or id of the resource for this request.
+    *     resource: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "permissions": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "permissions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias compute.routers.update
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.region Name of the region for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.router Name of the Router resource to update.
-    * @param {().Router} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def testIamPermissions(params: ParamsResourceRoutersTestiampermissions, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def testIamPermissions(
+    params: ParamsResourceRoutersTestiampermissions,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -1011,13 +1055,123 @@ class ResourceRouters protected () extends StObject {
   def update(params: ParamsResourceRoutersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(
     params: ParamsResourceRoutersUpdate,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def update(params: ParamsResourceRoutersUpdate, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(
     params: ParamsResourceRoutersUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Updates the specified Router resource with the data included in the request. This method conforms to PUT semantics, which requests that the state of the target resource be created or replaced with the state defined by the representation enclosed in the request message payload.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('beta');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.routers.update({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the region for this request.
+    *     region: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name of the Router resource to update.
+    *     router: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "bgp": {},
+    *       //   "bgpPeers": [],
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "description": "my_description",
+    *       //   "encryptedInterconnectRouter": false,
+    *       //   "id": "my_id",
+    *       //   "interfaces": [],
+    *       //   "kind": "my_kind",
+    *       //   "md5AuthenticationKeys": [],
+    *       //   "name": "my_name",
+    *       //   "nats": [],
+    *       //   "network": "my_network",
+    *       //   "region": "my_region",
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceRoutersUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceRoutersUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

@@ -9,10 +9,10 @@ Express 3.x Layout & Partial support.
 | ------------------ | :-------------: |
 | Full name          | express-partials |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 1234898 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 125786.0 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/publicclass/express-partials)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.LoadingElement")
 @js.native
-class LoadingElement protected () extends BoxElement {
+open class LoadingElement protected () extends BoxElement {
   def this(opts: LoadingOptions) = this()
   
   /**

@@ -91,5 +91,7 @@ object typesMod {
     }
   }
   
+  type ErrnoException = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
+  
   type Stats = typings.node.fsMod.Stats
 }

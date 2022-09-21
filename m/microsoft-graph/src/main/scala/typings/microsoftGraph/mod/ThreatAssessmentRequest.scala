@@ -19,14 +19,14 @@ trait ThreatAssessmentRequest
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
-    * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+    * midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The expected assessment from submitter. Possible values are: block, unblock.
   var expectedAssessment: js.UndefOr[ThreatExpectedAssessment] = js.undefined
   
-  // The source of the threat assessment request. Possible values are: user, administrator.
+  // The source of the threat assessment request. Possible values are: administrator.
   var requestSource: js.UndefOr[NullableOption[ThreatAssessmentRequestSource]] = js.undefined
   
   /**
@@ -85,7 +85,7 @@ object ThreatAssessmentRequest {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: ThreatAssessmentResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ThreatAssessmentResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setStatus(value: NullableOption[ThreatAssessmentStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

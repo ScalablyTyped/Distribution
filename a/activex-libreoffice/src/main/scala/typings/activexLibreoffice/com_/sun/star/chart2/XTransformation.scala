@@ -44,7 +44,7 @@ object XTransformation {
     acquire: () => Unit,
     getSourceDimension: () => Double,
     getTargetDimension: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     transform: SeqEquiv[Double] => SafeArray[Double]
   ): XTransformation = {

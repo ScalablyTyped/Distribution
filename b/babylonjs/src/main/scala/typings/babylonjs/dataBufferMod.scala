@@ -6,9 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dataBufferMod {
   
-  @JSImport("babylonjs/Meshes/dataBuffer", "DataBuffer")
+  @JSImport("babylonjs/Buffers/dataBuffer", "DataBuffer")
   @js.native
-  class DataBuffer () extends StObject {
+  /**
+    * Constructs the buffer
+    */
+  open class DataBuffer () extends StObject {
     
     /** Gets or sets the size of the underlying buffer */
     var capacity: Double = js.native
@@ -26,6 +29,23 @@ object dataBufferMod {
     /**
       * Gets the underlying buffer
       */
-    def underlyingResource: js.Any = js.native
+    def underlyingResource: Any = js.native
+    
+    /**
+      * Gets the unique id of this buffer
+      */
+    val uniqueId: Double = js.native
+  }
+  /* static members */
+  object DataBuffer {
+    
+    @JSImport("babylonjs/Buffers/dataBuffer", "DataBuffer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Buffers/dataBuffer", "DataBuffer._Counter")
+    @js.native
+    def _Counter: Any = js.native
+    inline def _Counter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Counter")(x.asInstanceOf[js.Any])
   }
 }

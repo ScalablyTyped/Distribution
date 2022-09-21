@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NodeTemplate extends StObject {
   
+  var accelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.undefined
+  
   /** CPU overcommit. */
   var cpuOvercommitType: js.UndefOr[String] = js.undefined
   
@@ -15,6 +17,8 @@ trait NodeTemplate extends StObject {
   
   /** An optional description of this resource. Provide this property when you create the resource. */
   var description: js.UndefOr[String] = js.undefined
+  
+  var disks: js.UndefOr[js.Array[LocalDisk]] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
   var id: js.UndefOr[String] = js.undefined
@@ -33,16 +37,15 @@ trait NodeTemplate extends StObject {
   var nodeAffinityLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate & TopLevel[Any]
   ] = js.undefined
   
   /** The node type to use for nodes group that are created from this template. */
   var nodeType: js.UndefOr[String] = js.undefined
   
   /**
-    * The flexible properties of the desired node type. Node groups that use this node template will create nodes of a type that matches these properties.
-    *
-    * This field is mutually exclusive with the node_type property; you can only define one or the other, but not both.
+    * The flexible properties of the desired node type. Node groups that use this node template will create nodes of a type that matches these properties. This field is mutually exclusive
+    * with the node_type property; you can only define one or the other, but not both.
     */
   var nodeTypeFlexibility: js.UndefOr[NodeTemplateNodeTypeFlexibility] = js.undefined
   
@@ -53,11 +56,8 @@ trait NodeTemplate extends StObject {
   var selfLink: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the binding properties for the physical server. Valid values include:
-    * - [Default] RESTART_NODE_ON_ANY_SERVER: Restarts VMs on any available physical server
-    * - RESTART_NODE_ON_MINIMAL_SERVER: Restarts VMs on the same physical server whenever possible
-    *
-    * See Sole-tenant node options for more information.
+    * Sets the binding properties for the physical server. Valid values include: - *[Default]* RESTART_NODE_ON_ANY_SERVER: Restarts VMs on any available physical server -
+    * RESTART_NODE_ON_MINIMAL_SERVER: Restarts VMs on the same physical server whenever possible See Sole-tenant node options for more information.
     */
   var serverBinding: js.UndefOr[ServerBinding] = js.undefined
   
@@ -76,6 +76,12 @@ object NodeTemplate {
   
   extension [Self <: NodeTemplate](x: Self) {
     
+    inline def setAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
+    
+    inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
+    
+    inline def setAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value*))
+    
     inline def setCpuOvercommitType(value: String): Self = StObject.set(x, "cpuOvercommitType", value.asInstanceOf[js.Any])
     
     inline def setCpuOvercommitTypeUndefined: Self = StObject.set(x, "cpuOvercommitType", js.undefined)
@@ -87,6 +93,12 @@ object NodeTemplate {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisks(value: js.Array[LocalDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    
+    inline def setDisksVarargs(value: LocalDisk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -103,7 +115,7 @@ object NodeTemplate {
     inline def setNodeAffinityLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate & TopLevel[Any]
     ): Self = StObject.set(x, "nodeAffinityLabels", value.asInstanceOf[js.Any])
     
     inline def setNodeAffinityLabelsUndefined: Self = StObject.set(x, "nodeAffinityLabels", js.undefined)

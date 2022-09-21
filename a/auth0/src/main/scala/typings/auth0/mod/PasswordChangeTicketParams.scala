@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PasswordChangeTicketParams extends StObject {
   
+  var client_id: js.UndefOr[String] = js.undefined
+  
   var connection_id: js.UndefOr[String] = js.undefined
   
   var email: js.UndefOr[String] = js.undefined
@@ -15,6 +17,8 @@ trait PasswordChangeTicketParams extends StObject {
   var mark_email_as_verified: js.UndefOr[Boolean] = js.undefined
   
   var new_password: js.UndefOr[String] = js.undefined
+  
+  var organization_id: js.UndefOr[String] = js.undefined
   
   var result_url: js.UndefOr[String] = js.undefined
   
@@ -30,6 +34,10 @@ object PasswordChangeTicketParams {
   }
   
   extension [Self <: PasswordChangeTicketParams](x: Self) {
+    
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
     inline def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
     
@@ -50,6 +58,10 @@ object PasswordChangeTicketParams {
     inline def setNew_password(value: String): Self = StObject.set(x, "new_password", value.asInstanceOf[js.Any])
     
     inline def setNew_passwordUndefined: Self = StObject.set(x, "new_password", js.undefined)
+    
+    inline def setOrganization_id(value: String): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
+    
+    inline def setOrganization_idUndefined: Self = StObject.set(x, "organization_id", js.undefined)
     
     inline def setResult_url(value: String): Self = StObject.set(x, "result_url", value.asInstanceOf[js.Any])
     

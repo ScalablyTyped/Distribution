@@ -8,15 +8,15 @@ trait A extends StObject {
   
   var a: Double
   
-  var b: js.Any
+  var b: Any
   
-  var g: js.Any
+  var g: Any
   
-  var r: js.Any
+  var r: Any
 }
 object A {
   
-  inline def apply(a: Double, b: js.Any, g: js.Any, r: js.Any): A = {
+  inline def apply(a: Double, b: Any, g: Any, r: Any): A = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[A]
   }
@@ -25,10 +25,10 @@ object A {
     
     inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    inline def setG(value: js.Any): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: Any): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    inline def setR(value: js.Any): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Any): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

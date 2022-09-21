@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Image extends StObject {
   
-  /** Target image opacity. Valid values: `1` (solid, default), `0` (transparent). */
+  /** Target image opacity. Valid values are from `1.0` (solid, default) to `0.0` (transparent), exclusive. Set this to a value greater than `0.0`. */
   var alpha: js.UndefOr[Double] = js.undefined
   
   /**
@@ -15,7 +15,7 @@ trait Image extends StObject {
     */
   var resolution: js.UndefOr[NormalizedCoordinate] = js.undefined
   
-  /** Required. URI of the image in Cloud Storage. For example, `gs://bucket/inputs/image.jpeg`. */
+  /** Required. URI of the JPEG image in Cloud Storage. For example, `gs://bucket/inputs/image.jpeg`. JPEG is the only supported image type. */
   var uri: js.UndefOr[String] = js.undefined
 }
 object Image {

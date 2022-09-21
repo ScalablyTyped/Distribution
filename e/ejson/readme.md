@@ -1,7 +1,7 @@
 
 # Scala.js typings for ejson
 
-Typings are for version v2.1.2
+Typings are for version v2.2.2
 
 ## Library description:
 EJSON - Extended and Extensible JSON library from Meteor made compatible for Nodejs and Browserify
@@ -10,10 +10,10 @@ EJSON - Extended and Extensible JSON library from Meteor made compatible for Nod
 | ------------------ | :-------------: |
 | Full name          | ejson |
 | Keywords           | EJSON, Extended, Extensible, JSON, Meteor, ejson, primus |
-| # releases         | 3 |
-| # dependents       | 84 |
-| # downloads        | 343517 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 240745.0 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/primus/ejson#readme)

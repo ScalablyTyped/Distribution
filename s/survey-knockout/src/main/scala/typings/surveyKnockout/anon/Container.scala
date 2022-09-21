@@ -22,7 +22,11 @@ trait Container extends StObject {
   
   var title: String
   
+  var titleCollapsed: String
+  
   var titleExpandable: String
+  
+  var titleExpanded: String
   
   var titleOnError: String
 }
@@ -37,10 +41,12 @@ object Container {
     number: String,
     requiredText: String,
     title: String,
+    titleCollapsed: String,
     titleExpandable: String,
+    titleExpanded: String,
     titleOnError: String
   ): Container = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconExpanded = iconExpanded.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleOnError = titleOnError.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconExpanded = iconExpanded.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleCollapsed = titleCollapsed.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleExpanded = titleExpanded.asInstanceOf[js.Any], titleOnError = titleOnError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
   
@@ -62,7 +68,11 @@ object Container {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
+    inline def setTitleCollapsed(value: String): Self = StObject.set(x, "titleCollapsed", value.asInstanceOf[js.Any])
+    
     inline def setTitleExpandable(value: String): Self = StObject.set(x, "titleExpandable", value.asInstanceOf[js.Any])
+    
+    inline def setTitleExpanded(value: String): Self = StObject.set(x, "titleExpanded", value.asInstanceOf[js.Any])
     
     inline def setTitleOnError(value: String): Self = StObject.set(x, "titleOnError", value.asInstanceOf[js.Any])
   }

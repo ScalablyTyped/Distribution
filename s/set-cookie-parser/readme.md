@@ -10,10 +10,10 @@ Parses set-cookie headers into objects
 | ------------------ | :-------------: |
 | Full name          | set-cookie-parser |
 | Keywords           | set-cookie, set, cookie, cookies, header, parser |
-| # releases         | 8 |
-| # dependents       | 104 |
-| # downloads        | 13253125 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7614383.0 |
+| # stars            | 122.0 |
 
 ## Links
 - [Homepage](https://github.com/nfriedly/set-cookie-parser)

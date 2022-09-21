@@ -1,31 +1,29 @@
 package typings.antDesignIconsVue
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsVue.antdIconMod.AntdIconProps
+import typings.vueRuntimeCore.mod.FunctionalComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object infoCircleTwoToneMod {
+object infoCircleTwoToneMod extends Shortcut {
   
-  object default {
+  @JSImport("@ant-design/icons-vue/lib/icons/InfoCircleTwoTone", JSImport.Default)
+  @js.native
+  val default: InfoCircleTwoToneIconType = js.native
+  
+  @js.native
+  trait InfoCircleTwoToneIconType
+    extends StObject
+       with FunctionalComponent[AntdIconProps, js.Object] {
     
-    inline def apply(
-      props: AntdIconProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/InfoCircleTwoTone", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/InfoCircleTwoTone", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-vue/lib/icons/InfoCircleTwoTone", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
+    @JSName("displayName")
+    var displayName_InfoCircleTwoToneIconType: String = js.native
   }
+  
+  type _To = InfoCircleTwoToneIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `infoCircleTwoToneMod.foo` */
+  override def _to: InfoCircleTwoToneIconType = default
 }

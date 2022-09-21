@@ -4,37 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "tableRow.toJSON()". */
+/** An interface describing the data returned by calling `tableRow.toJSON()`. */
 trait TableRowData extends StObject {
   
   /**
-    *
     * Gets the number of cells in the row. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var cellCount: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets the cells in the row. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var cells: js.UndefOr[js.Array[TableCellData]] = js.undefined
   
   /**
-    *
     * Gets the ID of the row. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the index of the row in its parent table. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var rowIndex: js.UndefOr[Double] = js.undefined
@@ -56,7 +56,7 @@ object TableRowData {
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    inline def setCellsVarargs(value: TableCellData*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: TableCellData*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

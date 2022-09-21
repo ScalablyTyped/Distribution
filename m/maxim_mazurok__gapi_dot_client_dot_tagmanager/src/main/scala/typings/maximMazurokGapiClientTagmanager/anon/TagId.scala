@@ -109,13 +109,13 @@ object TagId {
     
     inline def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
     
-    inline def setTagIdVarargs(value: String*): Self = StObject.set(x, "tagId", js.Array(value :_*))
+    inline def setTagIdVarargs(value: String*): Self = StObject.set(x, "tagId", js.Array(value*))
     
     inline def setTriggerId(value: String | js.Array[String]): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
     inline def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
     
-    inline def setTriggerIdVarargs(value: String*): Self = StObject.set(x, "triggerId", js.Array(value :_*))
+    inline def setTriggerIdVarargs(value: String*): Self = StObject.set(x, "triggerId", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
@@ -129,6 +129,6 @@ object TagId {
     
     inline def setVariableIdUndefined: Self = StObject.set(x, "variableId", js.undefined)
     
-    inline def setVariableIdVarargs(value: String*): Self = StObject.set(x, "variableId", js.Array(value :_*))
+    inline def setVariableIdVarargs(value: String*): Self = StObject.set(x, "variableId", js.Array(value*))
   }
 }

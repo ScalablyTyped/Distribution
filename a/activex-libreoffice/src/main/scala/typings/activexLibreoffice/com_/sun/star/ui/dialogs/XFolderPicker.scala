@@ -59,7 +59,7 @@ object XFolderPicker {
     execute: () => Double,
     getDirectory: () => String,
     getDisplayDirectory: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDescription: String => Unit,
     setDisplayDirectory: String => Unit,

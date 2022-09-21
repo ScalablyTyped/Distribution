@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ trait ReportingWorkItemLink extends StObject {
   
   var changedBy: IdentityRef
   
-  var changedDate: Date
+  var changedDate: js.Date
   
   var changedOperation: LinkChangeType
   
@@ -30,7 +29,7 @@ object ReportingWorkItemLink {
   
   inline def apply(
     changedBy: IdentityRef,
-    changedDate: Date,
+    changedDate: js.Date,
     changedOperation: LinkChangeType,
     comment: String,
     isActive: Boolean,
@@ -47,7 +46,7 @@ object ReportingWorkItemLink {
     
     inline def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
-    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: js.Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
     inline def setChangedOperation(value: LinkChangeType): Self = StObject.set(x, "changedOperation", value.asInstanceOf[js.Any])
     

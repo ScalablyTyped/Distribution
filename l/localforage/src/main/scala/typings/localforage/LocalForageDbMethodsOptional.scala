@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocalForageDbMethodsOptional extends StObject {
   
   def dropInstance(): js.Promise[Unit]
-  def dropInstance(dbInstanceOptions: Unit, callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit]
+  def dropInstance(dbInstanceOptions: Unit, callback: js.Function1[/* err */ Any, Unit]): js.Promise[Unit]
   def dropInstance(dbInstanceOptions: LocalForageDbInstanceOptions): js.Promise[Unit]
-  def dropInstance(dbInstanceOptions: LocalForageDbInstanceOptions, callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit]
+  def dropInstance(dbInstanceOptions: LocalForageDbInstanceOptions, callback: js.Function1[/* err */ Any, Unit]): js.Promise[Unit]
   @JSName("dropInstance")
   var dropInstance_Original: LocalForageDropInstanceFn
 }
 object LocalForageDbMethodsOptional {
   
   inline def apply(
-    dropInstance: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ js.Any, Unit]]) => js.Promise[Unit]
+    dropInstance: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ Any, Unit]]) => js.Promise[Unit]
   ): LocalForageDbMethodsOptional = {
     val __obj = js.Dynamic.literal(dropInstance = js.Any.fromFunction2(dropInstance))
     __obj.asInstanceOf[LocalForageDbMethodsOptional]
@@ -27,7 +27,7 @@ object LocalForageDbMethodsOptional {
   extension [Self <: LocalForageDbMethodsOptional](x: Self) {
     
     inline def setDropInstance(
-      value: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ js.Any, Unit]]) => js.Promise[Unit]
+      value: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ Any, Unit]]) => js.Promise[Unit]
     ): Self = StObject.set(x, "dropInstance", js.Any.fromFunction2(value))
   }
 }

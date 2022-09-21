@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListUsersInGroupResponse extends StObject {
   
   /**
-    * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+    * An identifier that you can use in a later request to return the next set of items in the list.
     */
   var NextToken: js.UndefOr[PaginationKey] = js.undefined
   
@@ -33,6 +33,6 @@ object ListUsersInGroupResponse {
     
     inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    inline def setUsersVarargs(value: UserType*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserType*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

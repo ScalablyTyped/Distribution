@@ -11,5 +11,5 @@ object getOffsetParentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(element: Element): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(element: Element): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

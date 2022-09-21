@@ -24,6 +24,6 @@ object DetectDominantLanguageResponse {
     
     inline def setLanguagesUndefined: Self = StObject.set(x, "Languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: DominantLanguage*): Self = StObject.set(x, "Languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: DominantLanguage*): Self = StObject.set(x, "Languages", js.Array(value*))
   }
 }

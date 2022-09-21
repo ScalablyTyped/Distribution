@@ -65,6 +65,7 @@ object typesMod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.DOMContentLoaded
     - typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.fullscreenchange
     - typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.fullscreenerror
     - typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.pointerlockchange

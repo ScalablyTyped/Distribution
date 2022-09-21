@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("viewport-mercator-project", "Viewport")
 @js.native
-class Viewport () extends StObject {
+open class Viewport () extends StObject {
   def this(opts: ViewportOptions) = this()
   
   def equals(viewport: Viewport): Boolean = js.native

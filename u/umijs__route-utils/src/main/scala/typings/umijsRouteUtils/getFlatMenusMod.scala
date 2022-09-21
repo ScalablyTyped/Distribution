@@ -1,6 +1,6 @@
 package typings.umijsRouteUtils
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import typings.umijsRouteUtils.typesMod.MenuDataItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,9 +12,9 @@ object getFlatMenusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): StringDictionary[MenuDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StringDictionary[MenuDataItem]]
-  inline def default(menuData: js.Array[MenuDataItem]): StringDictionary[MenuDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(menuData.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[MenuDataItem]]
+  inline def default(): Record[String, MenuDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Record[String, MenuDataItem]]
+  inline def default(menuData: js.Array[MenuDataItem]): Record[String, MenuDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(menuData.asInstanceOf[js.Any]).asInstanceOf[Record[String, MenuDataItem]]
   
-  inline def getFlatMenus(): StringDictionary[MenuDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatMenus")().asInstanceOf[StringDictionary[MenuDataItem]]
-  inline def getFlatMenus(menuData: js.Array[MenuDataItem]): StringDictionary[MenuDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatMenus")(menuData.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[MenuDataItem]]
+  inline def getFlatMenus(): Record[String, MenuDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatMenus")().asInstanceOf[Record[String, MenuDataItem]]
+  inline def getFlatMenus(menuData: js.Array[MenuDataItem]): Record[String, MenuDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatMenus")(menuData.asInstanceOf[js.Any]).asInstanceOf[Record[String, MenuDataItem]]
 }

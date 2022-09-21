@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Types.Curves.EllipseCurveConfig
 import typings.phaser.Phaser.Types.Curves.JSONCurve
 import typings.phaser.Phaser.Types.Curves.JSONEllipseCurve
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object Curves {
     */
   @JSGlobal("Phaser.Curves.CubicBezier")
   @js.native
-  class CubicBezier protected ()
+  open class CubicBezier protected ()
     extends StObject
        with typings.phaser.Phaser.Curves.CubicBezier {
     def this(p0: js.Array[Vector2], p1: Vector2, p2: Vector2, p3: Vector2) = this()
@@ -50,7 +49,7 @@ object Curves {
     */
   @JSGlobal("Phaser.Curves.Curve")
   @js.native
-  class Curve protected ()
+  open class Curve protected ()
     extends StObject
        with typings.phaser.Phaser.Curves.Curve {
     /**
@@ -67,7 +66,7 @@ object Curves {
     */
   @JSGlobal("Phaser.Curves.Ellipse")
   @js.native
-  class Ellipse protected ()
+  open class Ellipse protected ()
     extends StObject
        with typings.phaser.Phaser.Curves.Ellipse {
     /**
@@ -86,10 +85,10 @@ object Curves {
       y: js.UndefOr[Double],
       xRadius: js.UndefOr[Double],
       yRadius: js.UndefOr[Double],
-      startAngle: js.UndefOr[integer],
-      endAngle: js.UndefOr[integer],
+      startAngle: js.UndefOr[Double],
+      endAngle: js.UndefOr[Double],
       clockwise: js.UndefOr[Boolean],
-      rotation: js.UndefOr[integer]
+      rotation: js.UndefOr[Double]
     ) = this()
   }
   object Ellipse {
@@ -111,7 +110,7 @@ object Curves {
     */
   @JSGlobal("Phaser.Curves.Line")
   @js.native
-  class Line protected ()
+  open class Line protected ()
     extends StObject
        with typings.phaser.Phaser.Curves.Line {
     def this(p0: js.Array[Double]) = this()
@@ -139,16 +138,17 @@ object Curves {
   }
   
   /**
-    * A MoveTo Curve is a very simple curve consisting of only a single point. Its intended use is to move the ending point in a Path.
+    * A MoveTo Curve is a very simple curve consisting of only a single point.
+    * Its intended use is to move the ending point in a Path.
     */
   @JSGlobal("Phaser.Curves.MoveTo")
   @js.native
   /**
     * 
-    * @param x `x` pixel coordinate.
-    * @param y `y` pixel coordinate.
+    * @param x `x` pixel coordinate. Default 0.
+    * @param y `y` pixel coordinate. Default 0.
     */
-  class MoveTo ()
+  open class MoveTo ()
     extends StObject
        with typings.phaser.Phaser.Curves.MoveTo {
     def this(x: Double) = this()
@@ -170,7 +170,7 @@ object Curves {
     * @param x The X coordinate of the Path's starting point or a {@link Phaser.Types.Curves.JSONPath}. Default 0.
     * @param y The Y coordinate of the Path's starting point. Default 0.
     */
-  class Path ()
+  open class Path ()
     extends StObject
        with typings.phaser.Phaser.Curves.Path {
     def this(x: Double) = this()
@@ -183,7 +183,7 @@ object Curves {
     */
   @JSGlobal("Phaser.Curves.QuadraticBezier")
   @js.native
-  class QuadraticBezier protected ()
+  open class QuadraticBezier protected ()
     extends StObject
        with typings.phaser.Phaser.Curves.QuadraticBezier {
     def this(p0: js.Array[Double], p1: Vector2, p2: Vector2) = this()
@@ -218,7 +218,7 @@ object Curves {
     * 
     * @param points The points that configure the curve.
     */
-  class Spline ()
+  open class Spline ()
     extends StObject
        with typings.phaser.Phaser.Curves.Spline {
     def this(points: js.Array[js.Array[Double] | Double | Vector2]) = this()

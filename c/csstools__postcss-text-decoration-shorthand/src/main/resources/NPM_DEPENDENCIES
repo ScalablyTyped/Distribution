@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/postcss-text-decoration-shorthand" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/postcss-text-decoration-shorthand" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

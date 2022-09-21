@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientManagedidentities.anon
 
-import typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities.Domain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait Name extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The unique name of the domain using the form: `projects/{project_id}/locations/global/domains/{domain_name}`. */
+  /** Output only. Unique name of the peering in this scope including projects and location using the form: `projects/{project_id}/locations/global/peerings/{peering_id}`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -38,12 +37,9 @@ trait Name extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: Domain
-  
   /**
-    * Required. Mask of fields to update. At least one path must be supplied in this field. The elements of the repeated paths field may only include fields from Domain: * `labels` *
-    * `locations` * `authorized_networks`
+    * Required. Mask of fields to update. At least one path must be supplied in this field. The elements of the repeated paths field may only include these fields from Peering: *
+    * `labels`
     */
   var updateMask: js.UndefOr[String] = js.undefined
   
@@ -55,8 +51,8 @@ trait Name extends StObject {
 }
 object Name {
   
-  inline def apply(name: String, resource: Domain): Name = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(name: String): Name = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
@@ -99,8 +95,6 @@ object Name {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: Domain): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

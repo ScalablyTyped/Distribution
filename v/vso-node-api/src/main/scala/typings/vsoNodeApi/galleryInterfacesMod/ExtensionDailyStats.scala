@@ -48,7 +48,7 @@ object ExtensionDailyStats {
     
     inline def setDailyStats(value: js.Array[ExtensionDailyStat]): Self = StObject.set(x, "dailyStats", value.asInstanceOf[js.Any])
     
-    inline def setDailyStatsVarargs(value: ExtensionDailyStat*): Self = StObject.set(x, "dailyStats", js.Array(value :_*))
+    inline def setDailyStatsVarargs(value: ExtensionDailyStat*): Self = StObject.set(x, "dailyStats", js.Array(value*))
     
     inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     

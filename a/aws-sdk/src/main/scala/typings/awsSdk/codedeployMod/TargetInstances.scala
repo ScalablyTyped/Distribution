@@ -34,7 +34,7 @@ object TargetInstances {
     
     inline def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
     
-    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
+    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = StObject.set(x, "autoScalingGroups", js.Array(value*))
     
     inline def setEc2TagSet(value: EC2TagSet): Self = StObject.set(x, "ec2TagSet", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object TargetInstances {
     
     inline def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
-    inline def setTagFiltersVarargs(value: EC2TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: EC2TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value*))
   }
 }

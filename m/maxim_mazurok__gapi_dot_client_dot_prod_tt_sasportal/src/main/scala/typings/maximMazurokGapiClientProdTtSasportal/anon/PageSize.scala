@@ -28,14 +28,11 @@ trait PageSize extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of nodes to return in the response. */
+  /** The maximum number of customers to return in the response. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** A pagination token returned from a previous call to ListNodes method that indicates where this listing should continue from. */
+  /** A pagination token returned from a previous call to ListCustomers that indicates where this listing should continue from. */
   var pageToken: js.UndefOr[String] = js.undefined
-  
-  /** Required. The parent resource name, for example, "nodes/1". */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -51,8 +48,8 @@ trait PageSize extends StObject {
 }
 object PageSize {
   
-  inline def apply(parent: String): PageSize = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(): PageSize = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageSize]
   }
   
@@ -93,8 +90,6 @@ object PageSize {
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

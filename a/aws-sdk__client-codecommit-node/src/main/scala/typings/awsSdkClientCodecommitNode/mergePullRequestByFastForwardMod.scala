@@ -8,5 +8,5 @@ object mergePullRequestByFastForwardMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/MergePullRequestByFastForward", "MergePullRequestByFastForward")
   @js.native
-  val MergePullRequestByFastForward: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val MergePullRequestByFastForward: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -70,7 +70,7 @@ object UserProfile {
       * @return The iterator.
       */
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Determines whether the map view contains the specified key.
@@ -86,7 +86,7 @@ object UserProfile {
       * @return The item associated with the specified key.
       */
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /** Returns the number of elements in the map. */
     /* CompleteClass */
@@ -281,10 +281,10 @@ object UserProfile {
     inline def accountPictureChangeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountPictureChangeEnabled")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets the account picture for the user.
@@ -347,14 +347,14 @@ object UserProfile {
     /* static member */
     @JSGlobal("Windows.System.UserProfile.UserInformation.onaccountpicturechanged")
     @js.native
-    def onaccountpicturechanged: EventHandler[js.Any] = js.native
-    inline def onaccountpicturechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
+    def onaccountpicturechanged: EventHandler[Any] = js.native
+    inline def onaccountpicturechanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets the picture for the user's account using an IStorageFile object.

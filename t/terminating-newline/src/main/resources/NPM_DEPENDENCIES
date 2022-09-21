@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "terminating-newline" : "1.2.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "terminating-newline" : "1.2.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

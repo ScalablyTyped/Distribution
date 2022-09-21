@@ -22,9 +22,9 @@ trait HttpInstanceSummary extends StObject {
   var InstanceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * The name of the namespace that you specified when you registered the instance.
+    *      The HttpName name of the namespace. It's found in the HttpProperties member of the Properties member of the namespace.
     */
-  var NamespaceName: js.UndefOr[typings.awsSdk.servicediscoveryMod.NamespaceName] = js.undefined
+  var NamespaceName: js.UndefOr[NamespaceNameHttp] = js.undefined
   
   /**
     * The name of the service that you specified when you registered the instance.
@@ -52,7 +52,7 @@ object HttpInstanceSummary {
     
     inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "NamespaceName", value.asInstanceOf[js.Any])
+    inline def setNamespaceName(value: NamespaceNameHttp): Self = StObject.set(x, "NamespaceName", value.asInstanceOf[js.Any])
     
     inline def setNamespaceNameUndefined: Self = StObject.set(x, "NamespaceName", js.undefined)
     

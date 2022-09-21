@@ -6,6 +6,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Branch extends StObject {
+    
+    var branch: js.UndefOr[String] = js.undefined
+    
+    var source: js.UndefOr[String] = js.undefined
+    
+    var version: js.UndefOr[String] = js.undefined
+  }
+  object Branch {
+    
+    inline def apply(): Branch = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Branch]
+    }
+    
+    extension [Self <: Branch](x: Self) {
+      
+      inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      
+      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    }
+  }
+  
   trait Carrier extends StObject {
     
     var carrier: js.UndefOr[Boolean] = js.undefined
@@ -94,6 +125,31 @@ object anon {
       inline def setVersion_name(value: Boolean): Self = StObject.set(x, "version_name", value.asInstanceOf[js.Any])
       
       inline def setVersion_nameUndefined: Self = StObject.set(x, "version_name", js.undefined)
+    }
+  }
+  
+  trait Name extends StObject {
+    
+    var name: js.UndefOr[String] = js.undefined
+    
+    var version: js.UndefOr[String] = js.undefined
+  }
+  object Name {
+    
+    inline def apply(): Name = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Name]
+    }
+    
+    extension [Self <: Name](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

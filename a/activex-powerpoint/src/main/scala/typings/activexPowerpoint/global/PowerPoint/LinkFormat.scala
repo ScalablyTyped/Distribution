@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.LinkFormat")
 @js.native
-/* private */ class LinkFormat ()
+/* private */ open class LinkFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.LinkFormat {
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def BreakLink(): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.LinkFormat_typekey")

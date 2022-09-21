@@ -10,25 +10,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a cell value conditional format rule.
   *
-  * Represents a Cell Value Conditional Format Rule
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalTextComparisonRule extends StObject {
   
   /**
-    *
     * The operator of the text conditional format.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var operator: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith
   
   /**
+    * The text value of the conditional format.
     *
-    * The Text value of conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var text: String

@@ -22,6 +22,6 @@ object ProjectOperation {
     
     inline def setProjectedColumns(value: ProjectedColumnList): Self = StObject.set(x, "ProjectedColumns", value.asInstanceOf[js.Any])
     
-    inline def setProjectedColumnsVarargs(value: String*): Self = StObject.set(x, "ProjectedColumns", js.Array(value :_*))
+    inline def setProjectedColumnsVarargs(value: String*): Self = StObject.set(x, "ProjectedColumns", js.Array(value*))
   }
 }

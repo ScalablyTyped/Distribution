@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.vimeoPlayer.vimeoPlayerStrings.auto
   - typings.vimeoPlayer.vimeoPlayerStrings.`4K`
   - typings.vimeoPlayer.vimeoPlayerStrings.`2K`
   - typings.vimeoPlayer.vimeoPlayerStrings.`1080p`
@@ -29,4 +30,6 @@ object VimeoVideoQuality {
   inline def `540p`: typings.vimeoPlayer.vimeoPlayerStrings.`540p` = "540p".asInstanceOf[typings.vimeoPlayer.vimeoPlayerStrings.`540p`]
   
   inline def `720p`: typings.vimeoPlayer.vimeoPlayerStrings.`720p` = "720p".asInstanceOf[typings.vimeoPlayer.vimeoPlayerStrings.`720p`]
+  
+  inline def auto: typings.vimeoPlayer.vimeoPlayerStrings.auto = "auto".asInstanceOf[typings.vimeoPlayer.vimeoPlayerStrings.auto]
 }

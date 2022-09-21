@@ -42,7 +42,7 @@ object proj {
     */
   @JSImport("openlayers", "proj.Projection")
   @js.native
-  class Projection protected () extends StObject {
+  open class Projection protected () extends StObject {
     /**
       * @classdesc
       * Projection definition class. One of these is created for each projection
@@ -282,7 +282,7 @@ object proj {
     * @param proj4 Proj4.
     * @api
     */
-  inline def setProj4(proj4: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProj4")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setProj4(proj4: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProj4")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Transforms a coordinate to longitude/latitude.

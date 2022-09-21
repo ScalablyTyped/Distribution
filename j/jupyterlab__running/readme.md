@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__running
 
-Typings are for version 2.2.6
+Typings are for version 3.4.7
 
 ## Library description:
 JupyterLab - Running Sessions Panel
@@ -10,10 +10,10 @@ JupyterLab - Running Sessions Panel
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/running |
 | Keywords           | - |
-| # releases         | 126 |
-| # dependents       | 10 |
-| # downloads        | 1459331 |
-| # stars            | 0 |
+| # releases         | 146 |
+| # dependents       | 0.0 |
+| # downloads        | 191509.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

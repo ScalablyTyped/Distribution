@@ -10,10 +10,10 @@ Petfinder API Javascript Library.
 | ------------------ | :-------------: |
 | Full name          | pet-finder-api |
 | Keywords           | Petfinder, API, Pet, Dog, Cat, Luke, Angel, LukeAngel |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 599 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 52.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/drlukeangel/Pet-Finder-API-Javascript-Library)

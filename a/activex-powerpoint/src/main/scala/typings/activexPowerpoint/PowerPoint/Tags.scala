@@ -22,7 +22,7 @@ trait Tags extends StObject {
   
   def Name(Index: Double): String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Tags_typekey")
   var PowerPointDotTags_typekey: Tags
@@ -40,7 +40,7 @@ object Tags {
     Delete: String => Unit,
     Item: String => String,
     Name: Double => String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotTags_typekey: Tags,
     Value: Double => String
   ): Tags = {
@@ -67,7 +67,7 @@ object Tags {
     
     inline def setName(value: Double => String): Self = StObject.set(x, "Name", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotTags_typekey(value: Tags): Self = StObject.set(x, "PowerPoint.Tags_typekey", value.asInstanceOf[js.Any])
     

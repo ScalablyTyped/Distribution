@@ -65,7 +65,7 @@ object XSentenceCursor {
     isCollapsed: () => Boolean,
     isEndOfSentence: () => Boolean,
     isStartOfSentence: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setString: String => Unit
   ): XSentenceCursor = {

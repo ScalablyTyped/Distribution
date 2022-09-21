@@ -1,12 +1,15 @@
 package typings.activexDao.DAO
 
+import typings.activexDao.activexDaoNumbers.`0`
+import typings.activexDao.activexDaoNumbers.`1`
+import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Bookmark = typings.std.SafeArray[scala.Double]
+type Bookmark = SafeArray[Double]
 
-type CommitTransOptionsEnum = typings.activexDao.activexDaoNumbers.`1`
+type CommitTransOptionsEnum = `1`
 
-type DAOSuppHelp = typings.activexDao.activexDaoNumbers.`0`
+type DAOSuppHelp = `0`

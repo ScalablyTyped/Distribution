@@ -10,10 +10,10 @@ JsonML parse/stringify function.
 | ------------------ | :-------------: |
 | Full name          | json_ml |
 | Keywords           | jsonml, html, xml |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1865 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 99.66666666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/59naga/json-ml#readme)

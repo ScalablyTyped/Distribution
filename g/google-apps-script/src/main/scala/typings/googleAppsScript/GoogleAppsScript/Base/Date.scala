@@ -5,6 +5,35 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * This class allows the developer to write logs to the Google Cloud Platform's Stackdriver Logging service. The following
+  * shows some logging examples:
+  *
+  *     function measuringExecutionTime() {
+  *       // A simple INFO log message, using sprintf() formatting.
+  *       console.info('Timing the %s function (%d arguments)', 'myFunction', 1);
+  *
+  *       // Log a JSON object at a DEBUG level. If the object contains a property called "message",
+  *       // that is used as the summary in the log viewer, otherwise a stringified version of
+  *       // the object is used as the summary.
+  *       var parameters = {
+  *         isValid: true,
+  *         content: 'some string',
+  *         timestamp: new Date()
+  *       };
+  *       console.log(parameters);
+  *
+  *       var label = 'myFunction() time';  // Labels the timing log entry.
+  *       console.time(label);              // Starts the timer.
+  *       try {
+  *         myFunction(parameters);         // Function to time.
+  *       } catch (e) {
+  *         // Logs an ERROR message.
+  *         console.error('myFunction() yielded an error: ' + e);
+  *       }
+  *       console.timeEnd(label);      // Stops the timer, logs execution duration.
+  *     }
+  */
+/**
   * Apps Script has a non-standard Date Class
   *
   * @see https://github.com/microsoft/TypeScript/blob/master/lib/lib.es5.d.ts
@@ -213,7 +242,7 @@ trait Date extends StObject {
   
   /** Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization. */
   def toJSON(): String = js.native
-  def toJSON(key: js.Any): String = js.native
+  def toJSON(key: Any): String = js.native
   
   /** Returns a date as a string value appropriate to the host environment's current locale. */
   def toLocaleDateString(): String = js.native

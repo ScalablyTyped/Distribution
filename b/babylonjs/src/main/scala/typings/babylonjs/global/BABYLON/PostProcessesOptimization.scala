@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PostProcessesOptimization")
 @js.native
-class PostProcessesOptimization ()
+open class PostProcessesOptimization ()
   extends StObject
      with typings.babylonjs.BABYLON.PostProcessesOptimization {
   

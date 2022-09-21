@@ -46,7 +46,7 @@ object esmModalMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("react-overlays/esm/Modal", "default.Manager")
     @js.native
-    class Manager ()
+    open class Manager ()
       extends typings.reactOverlays.esmModalManagerMod.default {
       def this(hasHideSiblingNodesHandleContainerOverflow: HandleContainerOverflow) = this()
     }
@@ -83,35 +83,9 @@ object esmModalMod {
     val typeof: js.Symbol = js.native
   }
   
-  trait ModalHandle extends StObject {
-    
-    var backdrop: HTMLElement | Null
-    
-    var dialog: HTMLElement | Null
-  }
-  object ModalHandle {
-    
-    inline def apply(): ModalHandle = {
-      val __obj = js.Dynamic.literal(backdrop = null, dialog = null)
-      __obj.asInstanceOf[ModalHandle]
-    }
-    
-    extension [Self <: ModalHandle](x: Self) {
-      
-      inline def setBackdrop(value: HTMLElement): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
-      
-      inline def setBackdropNull: Self = StObject.set(x, "backdrop", null)
-      
-      inline def setDialog(value: HTMLElement): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
-      
-      inline def setDialogNull: Self = StObject.set(x, "dialog", null)
-    }
-  }
-  
-  trait ModalProps
+  trait BaseModalProps
     extends StObject
-       with TransitionCallbacks
-       with /* other */ StringDictionary[js.Any] {
+       with TransitionCallbacks {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
@@ -157,14 +131,14 @@ object esmModalMod {
     
     var transition: js.UndefOr[ModalTransitionComponent] = js.undefined
   }
-  object ModalProps {
+  object BaseModalProps {
     
-    inline def apply(): ModalProps = {
+    inline def apply(): BaseModalProps = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ModalProps]
+      __obj.asInstanceOf[BaseModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    extension [Self <: BaseModalProps](x: Self) {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -257,6 +231,43 @@ object esmModalMod {
       inline def setTransition(value: ModalTransitionComponent): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
       inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    }
+  }
+  
+  trait ModalHandle extends StObject {
+    
+    var backdrop: HTMLElement | Null
+    
+    var dialog: HTMLElement | Null
+  }
+  object ModalHandle {
+    
+    inline def apply(): ModalHandle = {
+      val __obj = js.Dynamic.literal(backdrop = null, dialog = null)
+      __obj.asInstanceOf[ModalHandle]
+    }
+    
+    extension [Self <: ModalHandle](x: Self) {
+      
+      inline def setBackdrop(value: HTMLElement): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+      
+      inline def setBackdropNull: Self = StObject.set(x, "backdrop", null)
+      
+      inline def setDialog(value: HTMLElement): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+      
+      inline def setDialogNull: Self = StObject.set(x, "dialog", null)
+    }
+  }
+  
+  trait ModalProps
+    extends StObject
+       with BaseModalProps
+       with /* other */ StringDictionary[Any]
+  object ModalProps {
+    
+    inline def apply(): ModalProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ModalProps]
     }
   }
   

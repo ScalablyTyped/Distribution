@@ -8,7 +8,7 @@ trait KeyState extends StObject {
   
   var key: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[PartialStateNavigationStaHistory] = js.undefined
+  var state: js.UndefOr[PartialStateNavigationSta] = js.undefined
 }
 object KeyState {
   
@@ -23,7 +23,7 @@ object KeyState {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setState(value: PartialStateNavigationStaHistory): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PartialStateNavigationSta): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

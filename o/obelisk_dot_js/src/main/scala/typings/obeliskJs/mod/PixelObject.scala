@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "PixelObject")
 @js.native
-class PixelObject protected () extends StObject {
+open class PixelObject protected () extends StObject {
   def this(primitive: AbstractPrimitive) = this()
   def this(primitive: AbstractPrimitive, point3D: Point3D) = this()
   

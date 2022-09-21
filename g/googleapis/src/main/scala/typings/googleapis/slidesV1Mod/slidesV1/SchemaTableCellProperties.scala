@@ -4,20 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The properties of the TableCell.
-  */
 trait SchemaTableCellProperties extends StObject {
   
   /**
-    * The alignment of the content in the table cell. The default alignment
-    * matches the alignment for newly created table cells in the Slides editor.
+    * The alignment of the content in the table cell. The default alignment matches the alignment for newly created table cells in the Slides editor.
     */
-  var contentAlignment: js.UndefOr[String] = js.undefined
+  var contentAlignment: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The background fill of the table cell. The default fill matches the fill
-    * for newly created table cells in the Slides editor.
+    * The background fill of the table cell. The default fill matches the fill for newly created table cells in the Slides editor.
     */
   var tableCellBackgroundFill: js.UndefOr[SchemaTableCellBackgroundFill] = js.undefined
 }
@@ -31,6 +26,8 @@ object SchemaTableCellProperties {
   extension [Self <: SchemaTableCellProperties](x: Self) {
     
     inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setContentAlignmentNull: Self = StObject.set(x, "contentAlignment", null)
     
     inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     

@@ -13,7 +13,7 @@ object resourceAwardEmojisMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceAwardEmojis", "ResourceAwardEmojis")
   @js.native
-  class ResourceAwardEmojis protected () extends BaseService {
+  open class ResourceAwardEmojis protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()
     
     def all(projectId: String, resourceId: String, noteId: Double): js.Promise[GetResponse] = js.native

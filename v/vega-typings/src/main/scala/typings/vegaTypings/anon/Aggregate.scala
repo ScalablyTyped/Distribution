@@ -9,7 +9,7 @@ trait Aggregate
   extends StObject
      with Facet {
   
-  var aggregate: js.UndefOr[As] = js.undefined
+  var aggregate: js.UndefOr[Cross] = js.undefined
   
   var data: String
   
@@ -26,7 +26,7 @@ object Aggregate {
   
   extension [Self <: Aggregate](x: Self) {
     
-    inline def setAggregate(value: As): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: Cross): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
     inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
@@ -34,7 +34,7 @@ object Aggregate {
     
     inline def setGroupby(value: String | js.Array[String]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

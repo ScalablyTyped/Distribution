@@ -9,9 +9,8 @@ object flexDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/flex/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends FlexExample
+  open class default () extends FlexExample
   
   @js.native
-  trait FlexExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait FlexExample extends Component[Any, Any, Any]
 }

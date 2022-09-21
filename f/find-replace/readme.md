@@ -10,10 +10,10 @@ Replace or remove multiple items in an array.
 | ------------------ | :-------------: |
 | Full name          | find-replace |
 | Keywords           | find, replace, array, remove, splice |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 21206014 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5094976.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/75lb/find-replace#readme)

@@ -3,6 +3,8 @@ package typings.blueprintjsCore
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.SVGAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,22 +13,22 @@ object spinnerMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "Spinner")
   @js.native
-  class Spinner protected ()
-    extends AbstractPureComponent2[ISpinnerProps, js.Object, js.Object] {
-    def this(props: ISpinnerProps) = this()
-    def this(props: ISpinnerProps, context: js.Any) = this()
+  open class Spinner protected ()
+    extends AbstractPureComponent2[SpinnerProps, js.Object, js.Object] {
+    def this(props: SpinnerProps) = this()
+    def this(props: SpinnerProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MSpinner(prevProps: ISpinnerProps): Unit = js.native
+    def componentDidUpdate_MSpinner(prevProps: SpinnerProps): Unit = js.native
     
     /**
       * Resolve size to a pixel value.
       * Size can be set by className, props, default, or minimum constant.
       */
-    /* private */ var getSize: js.Any = js.native
+    /* private */ var getSize: Any = js.native
     
     /** Compute viewbox such that stroked track sits exactly at edge of image frame. */
-    /* private */ var getViewBox: js.Any = js.native
+    /* private */ var getViewBox: Any = js.native
   }
   /* static members */
   object Spinner {
@@ -35,22 +37,38 @@ object spinnerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "Spinner.SIZE_LARGE")
-    @js.native
-    val SIZE_LARGE: /* 100 */ Double = js.native
-    
-    @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "Spinner.SIZE_SMALL")
-    @js.native
-    val SIZE_SMALL: /* 20 */ Double = js.native
-    
-    @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "Spinner.SIZE_STANDARD")
-    @js.native
-    val SIZE_STANDARD: /* 50 */ Double = js.native
-    
     @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "Spinner.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  sealed trait SpinnerSize extends StObject
+  @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "SpinnerSize")
+  @js.native
+  object SpinnerSize extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[SpinnerSize & Double] = js.native
+    
+    @js.native
+    sealed trait LARGE
+      extends StObject
+         with SpinnerSize
+    /* 100 */ val LARGE: typings.blueprintjsCore.spinnerMod.SpinnerSize.LARGE & Double = js.native
+    
+    @js.native
+    sealed trait SMALL
+      extends StObject
+         with SpinnerSize
+    /* 20 */ val SMALL: typings.blueprintjsCore.spinnerMod.SpinnerSize.SMALL & Double = js.native
+    
+    @js.native
+    sealed trait STANDARD
+      extends StObject
+         with SpinnerSize
+    /* 50 */ val STANDARD: typings.blueprintjsCore.spinnerMod.SpinnerSize.STANDARD & Double = js.native
   }
   
   trait ISpinnerProps
@@ -63,21 +81,22 @@ object spinnerMod {
       * 10px.
       *
       * Constants are available for common sizes:
-      * - `Spinner.SIZE_SMALL = 20px`
-      * - `Spinner.SIZE_STANDARD = 50px`
-      * - `Spinner.SIZE_LARGE = 100px`
+      * - `SpinnerSize.SMALL = 20px`
+      * - `SpinnerSize.STANDARD = 50px`
+      * - `SpinnerSize.LARGE = 100px`
       *
-      * @default Spinner.SIZE_STANDARD = 50
+      * @default SpinnerSize.STANDARD = 50
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /**
       * HTML tag for the two wrapper elements. If rendering a `<Spinner>` inside
       * an `<svg>`, change this to an SVG element like `"g"`.
+      *
       * @default "div"
       */
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
       ] = js.undefined
     
     /**
@@ -100,7 +119,7 @@ object spinnerMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
@@ -109,4 +128,6 @@ object spinnerMod {
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
+  
+  type SpinnerProps = (ISpinnerProps & HTMLAttributes[Any]) | (ISpinnerProps & SVGAttributes[Any])
 }

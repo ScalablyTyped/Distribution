@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * @OutputOnly The app type the restriction applies to for mobile device.
-  */
 trait SchemaAppContext extends StObject {
   
   /**
     * The app types this restriction applies to.
     */
-  var appTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var appTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAppContext {
   
@@ -25,8 +22,10 @@ object SchemaAppContext {
     
     inline def setAppTypes(value: js.Array[String]): Self = StObject.set(x, "appTypes", value.asInstanceOf[js.Any])
     
+    inline def setAppTypesNull: Self = StObject.set(x, "appTypes", null)
+    
     inline def setAppTypesUndefined: Self = StObject.set(x, "appTypes", js.undefined)
     
-    inline def setAppTypesVarargs(value: String*): Self = StObject.set(x, "appTypes", js.Array(value :_*))
+    inline def setAppTypesVarargs(value: String*): Self = StObject.set(x, "appTypes", js.Array(value*))
   }
 }

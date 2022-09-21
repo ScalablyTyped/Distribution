@@ -24,6 +24,6 @@ object LoggerDefinitionVersion {
     
     inline def setLoggersUndefined: Self = StObject.set(x, "Loggers", js.undefined)
     
-    inline def setLoggersVarargs(value: Logger*): Self = StObject.set(x, "Loggers", js.Array(value :_*))
+    inline def setLoggersVarargs(value: Logger*): Self = StObject.set(x, "Loggers", js.Array(value*))
   }
 }

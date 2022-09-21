@@ -26,7 +26,7 @@ object XPropertiesChangeNotifier {
   inline def apply(
     acquire: () => Unit,
     addPropertiesChangeListener: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertiesChangeListener: (SeqEquiv[String], XPropertiesChangeListener) => Unit
   ): XPropertiesChangeNotifier = {

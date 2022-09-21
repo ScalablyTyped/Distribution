@@ -1,7 +1,7 @@
 
 # Scala.js typings for swiper
 
-Typings are for version 5.4
+Typings are for version 8.4.2
 
 ## Library description:
 Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -9,11 +9,11 @@ Most modern mobile touch slider and framework with hardware accelerated transiti
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | swiper |
-| Keywords           | swiper, swipe, slider, touch, ios, mobile, cordova, phonegap, app, framework, framework7, carousel, gallery, plugin, react, vue, angular, svelte, slideshow |
-| # releases         | 69 |
-| # dependents       | 607 |
-| # downloads        | 18150750 |
-| # stars            | 33 |
+| Keywords           | swiper, swipe, slider, touch, ios, mobile, cordova, phonegap, app, framework, framework7, carousel, gallery, plugin, react, solid-js, vue, angular, svelte, slideshow |
+| # releases         | 131 |
+| # dependents       | 0.0 |
+| # downloads        | 5331081.0 |
+| # stars            | 32538.0 |
 
 ## Links
 - [Homepage](https://swiperjs.com)
@@ -24,7 +24,7 @@ Most modern mobile touch slider and framework with hardware accelerated transiti
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

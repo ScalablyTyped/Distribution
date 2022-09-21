@@ -17,7 +17,7 @@ trait IFormLayout
   var calculateOverflow: js.UndefOr[
     js.Function3[
       /* ownerContext */ js.UndefOr[IContextItem], 
-      /* containerSize */ js.UndefOr[js.Any], 
+      /* containerSize */ js.UndefOr[Any], 
       /* dimensions */ js.UndefOr[Double], 
       Unit
     ]
@@ -27,21 +27,19 @@ trait IFormLayout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IFormLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var calculate_IFormLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method if implemented is called at the end of the cycle in which this layout completes by not setting done to
     * @param ownerContext Object
     */
   @JSName("completeLayout")
-  var completeLayout_IFormLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var completeLayout_IFormLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Creates an element that makes bottom right body padding consistent across browsers
     * @param out Object
     * @param renderData Object
     */
-  var doRenderPadder: js.UndefOr[
-    js.Function2[/* out */ js.UndefOr[js.Any], /* renderData */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var doRenderPadder: js.UndefOr[js.Function2[/* out */ js.UndefOr[Any], /* renderData */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Returns the container size that of the target
     * @param ownerContext Ext.layout.ContextItem The owner's context item.
@@ -55,7 +53,7 @@ trait IFormLayout
       /* ownerContext */ js.UndefOr[IContextItem], 
       /* inDom */ js.UndefOr[Boolean], 
       /* ignoreOverflow */ js.UndefOr[Boolean], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -64,7 +62,7 @@ trait IFormLayout
     * @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
     */
   @JSName("getItemSizePolicy")
-  var getItemSizePolicy_IFormLayout: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], ISizePolicy]] = js.undefined
+  var getItemSizePolicy_IFormLayout: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], ISizePolicy]] = js.undefined
   
   /** [Method] returns the overflow x style of the render target
     * @param ownerContext Ext.layout.ContextItem
@@ -79,7 +77,7 @@ trait IFormLayout
   var getOverflowYStyle: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[IContextItem], String]] = js.undefined
   
   /** [Property] (Object) */
-  var getScrollRangeFlags: js.UndefOr[js.Any] = js.undefined
+  var getScrollRangeFlags: js.UndefOr[Any] = js.undefined
 }
 object IFormLayout {
   
@@ -90,31 +88,31 @@ object IFormLayout {
   
   extension [Self <: IFormLayout](x: Self) {
     
-    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     inline def setCalculateOverflow(
-      value: (/* ownerContext */ js.UndefOr[IContextItem], /* containerSize */ js.UndefOr[js.Any], /* dimensions */ js.UndefOr[Double]) => Unit
+      value: (/* ownerContext */ js.UndefOr[IContextItem], /* containerSize */ js.UndefOr[Any], /* dimensions */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "calculateOverflow", js.Any.fromFunction3(value))
     
     inline def setCalculateOverflowUndefined: Self = StObject.set(x, "calculateOverflow", js.undefined)
     
     inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
-    inline def setCompleteLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
+    inline def setCompleteLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
     
     inline def setCompleteLayoutUndefined: Self = StObject.set(x, "completeLayout", js.undefined)
     
-    inline def setDoRenderPadder(value: (/* out */ js.UndefOr[js.Any], /* renderData */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doRenderPadder", js.Any.fromFunction2(value))
+    inline def setDoRenderPadder(value: (/* out */ js.UndefOr[Any], /* renderData */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "doRenderPadder", js.Any.fromFunction2(value))
     
     inline def setDoRenderPadderUndefined: Self = StObject.set(x, "doRenderPadder", js.undefined)
     
     inline def setGetContainerSize(
-      value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], /* ignoreOverflow */ js.UndefOr[Boolean]) => js.Any
+      value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], /* ignoreOverflow */ js.UndefOr[Boolean]) => Any
     ): Self = StObject.set(x, "getContainerSize", js.Any.fromFunction3(value))
     
     inline def setGetContainerSizeUndefined: Self = StObject.set(x, "getContainerSize", js.undefined)
     
-    inline def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
+    inline def setGetItemSizePolicy(value: /* item */ js.UndefOr[Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
     inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
@@ -126,7 +124,7 @@ object IFormLayout {
     
     inline def setGetOverflowYStyleUndefined: Self = StObject.set(x, "getOverflowYStyle", js.undefined)
     
-    inline def setGetScrollRangeFlags(value: js.Any): Self = StObject.set(x, "getScrollRangeFlags", value.asInstanceOf[js.Any])
+    inline def setGetScrollRangeFlags(value: Any): Self = StObject.set(x, "getScrollRangeFlags", value.asInstanceOf[js.Any])
     
     inline def setGetScrollRangeFlagsUndefined: Self = StObject.set(x, "getScrollRangeFlags", js.undefined)
   }

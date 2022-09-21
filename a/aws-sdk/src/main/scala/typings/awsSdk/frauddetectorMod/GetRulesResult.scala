@@ -33,6 +33,6 @@ object GetRulesResult {
     
     inline def setRuleDetailsUndefined: Self = StObject.set(x, "ruleDetails", js.undefined)
     
-    inline def setRuleDetailsVarargs(value: RuleDetail*): Self = StObject.set(x, "ruleDetails", js.Array(value :_*))
+    inline def setRuleDetailsVarargs(value: RuleDetail*): Self = StObject.set(x, "ruleDetails", js.Array(value*))
   }
 }

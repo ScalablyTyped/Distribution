@@ -1,7 +1,7 @@
 
 # Scala.js typings for ckeditor__ckeditor5-engine
 
-Typings are for version 11.0
+Typings are for version 32.0
 
 ## Library description:
 The editing engine of CKEditor 5 – the best browser-based rich text editor.
@@ -9,11 +9,11 @@ The editing engine of CKEditor 5 – the best browser-based rich text editor.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-engine |
-| Keywords           | wysiwyg, rich text, editor, html, contentEditable, editing, operational transformation, ot, collaboration, collaborative, real-time, framework, ckeditor5-lib, ckeditor, ckeditor5, ckeditor 5 |
-| # releases         | 18 |
-| # dependents       | 122 |
-| # downloads        | 1922165 |
-| # stars            | 0 |
+| Keywords           | wysiwyg, rich text, editor, html, contentEditable, editing, operational transformation, ot, collaboration, collaborative, real-time, framework, ckeditor, ckeditor5, ckeditor 5, ckeditor5-lib, ckeditor5-dll |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 706753.6666666666 |
+| # stars            | 6266.0 |
 
 ## Links
 - [Homepage](https://ckeditor.com/ckeditor-5)

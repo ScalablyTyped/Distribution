@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gulp-pug" : "4.0.1"
+      "gulp-pug" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gulp-pug" : "4.0.1"
+      "gulp-pug" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("irc", "Client")
   @js.native
-  class Client protected () extends EventEmitter {
+  open class Client protected () extends EventEmitter {
     /**
       * Connect to an IRC server
       * @param server - server hostname
@@ -319,6 +319,18 @@ object mod {
     var realName: js.UndefOr[String] = js.undefined
     
     /**
+      * Number of times the client will try to automatically reconnect when disconnected.
+      * @default 0
+      */
+    var retryCount: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Number of milliseconds to wait before retying to automatically reconnect when disconnected.
+      * @default 2000
+      */
+    var retryDelay: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Should we use SASL authentication?
       * @default false
       */
@@ -383,7 +395,7 @@ object mod {
       
       inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -420,6 +432,14 @@ object mod {
       inline def setRealName(value: String): Self = StObject.set(x, "realName", value.asInstanceOf[js.Any])
       
       inline def setRealNameUndefined: Self = StObject.set(x, "realName", js.undefined)
+      
+      inline def setRetryCount(value: Double): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
+      
+      inline def setRetryCountUndefined: Self = StObject.set(x, "retryCount", js.undefined)
+      
+      inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+      
+      inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
       inline def setSasl(value: Boolean): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
       
@@ -475,7 +495,7 @@ object mod {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -535,7 +555,7 @@ object mod {
       
       inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

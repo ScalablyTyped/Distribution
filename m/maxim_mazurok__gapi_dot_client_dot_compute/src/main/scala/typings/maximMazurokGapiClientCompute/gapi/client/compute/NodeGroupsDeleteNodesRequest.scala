@@ -22,6 +22,6 @@ object NodeGroupsDeleteNodesRequest {
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

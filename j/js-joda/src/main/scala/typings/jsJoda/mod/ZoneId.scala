@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class ZoneId () extends StObject {
   
-  def equals(other: js.Any): Boolean = js.native
-  
   def id(): String = js.native
   
   def normalized(): ZoneId = js.native

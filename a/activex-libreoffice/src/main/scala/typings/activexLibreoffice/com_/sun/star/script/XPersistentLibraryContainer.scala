@@ -39,7 +39,7 @@ trait XPersistentLibraryContainer
     * {@link ContainerLocationName} .
     * @see ContainerLocationName
     */
-  var RootLocation: js.Any
+  var RootLocation: Any
   
   /**
     * stores the libraries to the current location.
@@ -55,12 +55,12 @@ object XPersistentLibraryContainer {
     ContainerLocationName: String,
     ElementNames: SafeArray[String],
     ElementType: `type`,
-    RootLocation: js.Any,
+    RootLocation: Any,
     acquire: () => Unit,
     addModifyListener: XModifyListener => Unit,
     createLibrary: String => XNameContainer,
     createLibraryLink: (String, String, Boolean) => XNameAccess,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     getLibraryLinkURL: String => String,
@@ -71,7 +71,7 @@ object XPersistentLibraryContainer {
     isLibraryReadOnly: String => Boolean,
     isModified: () => Boolean,
     loadLibrary: String => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeLibrary: String => Unit,
     removeModifyListener: XModifyListener => Unit,
@@ -88,7 +88,7 @@ object XPersistentLibraryContainer {
     
     inline def setContainerLocationName(value: String): Self = StObject.set(x, "ContainerLocationName", value.asInstanceOf[js.Any])
     
-    inline def setRootLocation(value: js.Any): Self = StObject.set(x, "RootLocation", value.asInstanceOf[js.Any])
+    inline def setRootLocation(value: Any): Self = StObject.set(x, "RootLocation", value.asInstanceOf[js.Any])
     
     inline def setStoreLibraries(value: () => Unit): Self = StObject.set(x, "storeLibraries", js.Any.fromFunction0(value))
   }

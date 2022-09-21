@@ -6,18 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.TupleType, 'type'> */
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait TupleType
-  extends StObject
-     with SomeType {
+trait TupleType extends StObject {
   
-  var elements: js.UndefOr[ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]]] = js.undefined
+  var elements: js.UndefOr[ModelToObject[js.Array[typings.typedoc.modelsTypesMod.SomeType]]] = js.undefined
   
-  var `type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)
+  var `type`: ToSerialized[/* "tuple" */ String]
 }
 object TupleType {
   
-  inline def apply(`type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): TupleType = {
+  inline def apply(`type`: ToSerialized[/* "tuple" */ String]): TupleType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TupleType]
@@ -25,14 +22,14 @@ object TupleType {
   
   extension [Self <: TupleType](x: Self) {
     
-    inline def setElements(value: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: ModelToObject[js.Array[typings.typedoc.modelsTypesMod.SomeType]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: (typings.typedoc.modelsTypesMod.SomeType | _ModelToObject[Any])*): Self = StObject.set(x, "elements", js.Array(value*))
     
-    inline def setType(value: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[/* "tuple" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.ColorMatrixFilter")
 @js.native
-class ColorMatrixFilter protected ()
+open class ColorMatrixFilter protected ()
   extends StObject
      with typings.easeljs.createjs.ColorMatrixFilter {
   def this(matrix: js.Array[Double]) = this()

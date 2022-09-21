@@ -1,24 +1,24 @@
 
 # Scala.js typings for snappy
 
-Typings are for version 6.3.5
+Typings are for version 7.1.2
 
 ## Library description:
-Nodejs bindings to Google's Snappy compression library
+Fastest Snappy compression library in Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | snappy |
-| Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 68 |
-| # downloads        | 4961322 |
-| # stars            | 6 |
+| Keywords           | snappy, snap, compression, compress, napi-rs, NAPI, N-API, Rust, Node-API, node-addon, node-addon-api |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2436773.3333333335 |
+| # stars            | 87.0 |
 
 ## Links
-- [Homepage](https://github.com/kesla/node-snappy)
-- [Bugs](https://github.com/kesla/node-snappy/issues)
-- [Repository](https://github.com/kesla/node-snappy)
+- [Homepage](https://github.com/Brooooooklyn/snappy#readme)
+- [Bugs](https://github.com/Brooooooklyn/snappy/issues)
+- [Repository](https://github.com/Brooooooklyn/snappy)
 - [Npm](https://www.npmjs.com/package/snappy)
     
 

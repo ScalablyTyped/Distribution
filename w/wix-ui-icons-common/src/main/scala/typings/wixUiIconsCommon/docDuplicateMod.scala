@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object docDuplicateMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/DocDuplicate", JSImport.Default)
   @js.native
-  val default: SFC[DocDuplicateProps] = js.native
+  val default: FC[DocDuplicateProps] = js.native
   
   trait DocDuplicateProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object DocDuplicateProps {
     
@@ -29,14 +29,14 @@ object docDuplicateMod extends Shortcut {
     
     extension [Self <: DocDuplicateProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[DocDuplicateProps]
+  type _To = FC[DocDuplicateProps]
   
   /* This means you don't have to write `default`, but can instead just say `docDuplicateMod.foo` */
-  override def _to: SFC[DocDuplicateProps] = default
+  override def _to: FC[DocDuplicateProps] = default
 }

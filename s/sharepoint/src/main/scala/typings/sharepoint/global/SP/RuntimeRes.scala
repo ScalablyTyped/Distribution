@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RuntimeRes")
 @js.native
-class RuntimeRes ()
+open class RuntimeRes ()
   extends StObject
      with typings.sharepoint.SP.RuntimeRes {
   

@@ -4,8 +4,4 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Defines specific information for a particular zone. Currently empty and
-  * reserved for future use only.
-  */
 trait SchemaGoogleCloudRedisV1ZoneMetadata extends StObject

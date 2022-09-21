@@ -12,11 +12,11 @@ trait Height extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var height: Double
   
@@ -56,9 +56,9 @@ object Height {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    container: js.Any,
-    events: js.Any,
-    group: js.Any,
+    container: Any,
+    events: Any,
+    group: Any,
     height: Double,
     id: String,
     isInit: Boolean,
@@ -89,11 +89,11 @@ object Height {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

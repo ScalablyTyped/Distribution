@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "UpsertCatalogObjectRequest")
 @js.native
-class UpsertCatalogObjectRequest () extends StObject {
+open class UpsertCatalogObjectRequest () extends StObject {
   
   /**
     * A value you specify that uniquely identifies this request among all your requests.

@@ -25,49 +25,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShapeFontData extends StObject {
   
   /**
+    * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
     *
-    * Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
     *
-    * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
+    * Represents the italic status of font. Returns `null` if the `TextRange` includes both italic and non-italic text fragments.
     *
-    * Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text fragments.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
     *
-    * Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
+    * Represents font size in points (e.g., 11). Returns `null` if the `TextRange` includes text fragments with different font sizes.
     *
-    * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var size: js.UndefOr[Double] = js.undefined
   
   /**
+    * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. Returns null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var underline: js.UndefOr[

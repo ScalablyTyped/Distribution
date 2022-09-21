@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FlattenTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -32,11 +32,11 @@ object FlattenTransform {
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    inline def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value*))
     
     inline def setFields(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: FieldRef*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldRef*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIndex(value: String | SignalRef): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

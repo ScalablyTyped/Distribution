@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Details about a resource which was added to a channel.
-  */
 trait SchemaActivityContentDetailsChannelItem extends StObject {
   
   /**
-    * The resourceId object contains information that identifies the resource
-    * that was added to the channel.
+    * The resourceId object contains information that identifies the resource that was added to the channel.
     */
   var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }

@@ -126,13 +126,13 @@ object ExternalProperties {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
-    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setConversion(value: Conversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
@@ -146,7 +146,7 @@ object ExternalProperties {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: ToolComponent*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: ToolComponent*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setExternalizedProperties(value: PropertyBag): Self = StObject.set(x, "externalizedProperties", value.asInstanceOf[js.Any])
     
@@ -156,7 +156,7 @@ object ExternalProperties {
     
     inline def setGraphsUndefined: Self = StObject.set(x, "graphs", js.undefined)
     
-    inline def setGraphsVarargs(value: Graph*): Self = StObject.set(x, "graphs", js.Array(value :_*))
+    inline def setGraphsVarargs(value: Graph*): Self = StObject.set(x, "graphs", js.Array(value*))
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
@@ -166,19 +166,19 @@ object ExternalProperties {
     
     inline def setInvocationsUndefined: Self = StObject.set(x, "invocations", js.undefined)
     
-    inline def setInvocationsVarargs(value: Invocation*): Self = StObject.set(x, "invocations", js.Array(value :_*))
+    inline def setInvocationsVarargs(value: Invocation*): Self = StObject.set(x, "invocations", js.Array(value*))
     
     inline def setLogicalLocations(value: js.Array[LogicalLocation]): Self = StObject.set(x, "logicalLocations", value.asInstanceOf[js.Any])
     
     inline def setLogicalLocationsUndefined: Self = StObject.set(x, "logicalLocations", js.undefined)
     
-    inline def setLogicalLocationsVarargs(value: LogicalLocation*): Self = StObject.set(x, "logicalLocations", js.Array(value :_*))
+    inline def setLogicalLocationsVarargs(value: LogicalLocation*): Self = StObject.set(x, "logicalLocations", js.Array(value*))
     
     inline def setPolicies(value: js.Array[ToolComponent]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: ToolComponent*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: ToolComponent*): Self = StObject.set(x, "policies", js.Array(value*))
     
     inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
@@ -188,7 +188,7 @@ object ExternalProperties {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setRunGuid(value: String): Self = StObject.set(x, "runGuid", value.asInstanceOf[js.Any])
     
@@ -202,19 +202,19 @@ object ExternalProperties {
     
     inline def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
     
-    inline def setTaxonomiesVarargs(value: ToolComponent*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
+    inline def setTaxonomiesVarargs(value: ToolComponent*): Self = StObject.set(x, "taxonomies", js.Array(value*))
     
     inline def setThreadFlowLocations(value: js.Array[ThreadFlowLocation]): Self = StObject.set(x, "threadFlowLocations", value.asInstanceOf[js.Any])
     
     inline def setThreadFlowLocationsUndefined: Self = StObject.set(x, "threadFlowLocations", js.undefined)
     
-    inline def setThreadFlowLocationsVarargs(value: ThreadFlowLocation*): Self = StObject.set(x, "threadFlowLocations", js.Array(value :_*))
+    inline def setThreadFlowLocationsVarargs(value: ThreadFlowLocation*): Self = StObject.set(x, "threadFlowLocations", js.Array(value*))
     
     inline def setTranslations(value: js.Array[ToolComponent]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    inline def setTranslationsVarargs(value: ToolComponent*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: ToolComponent*): Self = StObject.set(x, "translations", js.Array(value*))
     
     inline def setVersion(value: version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
@@ -224,13 +224,13 @@ object ExternalProperties {
     
     inline def setWebRequestsUndefined: Self = StObject.set(x, "webRequests", js.undefined)
     
-    inline def setWebRequestsVarargs(value: WebRequest*): Self = StObject.set(x, "webRequests", js.Array(value :_*))
+    inline def setWebRequestsVarargs(value: WebRequest*): Self = StObject.set(x, "webRequests", js.Array(value*))
     
     inline def setWebResponses(value: js.Array[WebResponse]): Self = StObject.set(x, "webResponses", value.asInstanceOf[js.Any])
     
     inline def setWebResponsesUndefined: Self = StObject.set(x, "webResponses", js.undefined)
     
-    inline def setWebResponsesVarargs(value: WebResponse*): Self = StObject.set(x, "webResponses", js.Array(value :_*))
+    inline def setWebResponsesVarargs(value: WebResponse*): Self = StObject.set(x, "webResponses", js.Array(value*))
   }
   
   type version = `2Dot1Dot0`

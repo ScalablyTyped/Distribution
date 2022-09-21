@@ -2,12 +2,9 @@ package typings.inquirer
 
 import typings.inquirer.mod.Answers
 import typings.inquirer.mod.EditorQuestionOptions
-import typings.inquirer.mod.prompts.FailedPromptStateData
-import typings.inquirer.mod.prompts.SuccessfulPromptStateData
+import typings.inquirer.mod.inquirer.prompts.FailedPromptStateData
+import typings.inquirer.mod.inquirer.prompts.SuccessfulPromptStateData
 import typings.node.readlineMod.Interface
-import typings.rxjs.mod.Subject
-import typings.rxjs.mod.Subscription
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +17,11 @@ object editorMod {
     * @template TQuestion
     * The options for the question.
     */
-  @JSImport("inquirer/lib/prompts/editor", JSImport.Namespace)
+  @JSImport("inquirer/lib/prompts/editor", JSImport.Default)
   @js.native
-  class ^[TQuestion /* <: Question */] protected () extends EditorPrompt[TQuestion] {
+  open class default[TQuestion /* <: Question */] protected () extends EditorPrompt[TQuestion] {
     /**
-      * Initializes a new instance of the `EditorPrompt<T>` class.
+      * Initializes a new instance of the {@link EditorPrompt `EditorPrompt<TQuestion>`} class.
       *
       * @param question
       * The question to prompt the user to answer.
@@ -46,7 +43,7 @@ object editorMod {
     */
   @js.native
   trait EditorPrompt[TQuestion /* <: Question */]
-    extends typings.inquirer.baseMod.^[TQuestion] {
+    extends typings.inquirer.baseMod.default[TQuestion] {
     
     /**
       * Gets or sets the initial text.
@@ -56,12 +53,12 @@ object editorMod {
     /**
       * Resolves the value of the prompt.
       */
-    /* protected */ def done(value: js.Any): Unit = js.native
+    /* protected */ def done(value: Any): Unit = js.native
     
     /**
       * Gets or sets an object for subscribing to the editor-result.
       */
-    /* protected */ var editorResult: Subject[String] = js.native
+    /* protected */ var editorResult: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<string> */ Any = js.native
     
     /**
       * Closes the external editor.
@@ -72,12 +69,12 @@ object editorMod {
       * @param result
       * The result of the editor.
       */
-    /* protected */ def endExternalEditor(error: Error, result: String): Unit = js.native
+    /* protected */ def endExternalEditor(error: js.Error, result: String): Unit = js.native
     
     /**
       * Gets or sets a subscription to the `line`-event.
       */
-    /* protected */ var lineSubscription: Subscription = js.native
+    /* protected */ var lineSubscription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscription */ Any = js.native
     
     /**
       * Handles the `success`-event of the prompt.
@@ -85,7 +82,7 @@ object editorMod {
       * @param eventArgs
       * An object which contains event-data.
       */
-    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[js.Any]): Unit = js.native
+    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[Any]): Unit = js.native
     
     /**
       * Handles the `error`-event of the prompt.
@@ -111,7 +108,7 @@ object editorMod {
   }
   
   /**
-    * The question-options for the `EditorPrompt<T>`.
+    * The question-options for the {@link EditorPrompt `EditorPrompt<TQuestion>`}.
     */
   type Question = EditorQuestionOptions[Answers]
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".highlight.js-Y75vKsj1" : "10.7.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".highlight.js-Y75vKsj1" : "10.7.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

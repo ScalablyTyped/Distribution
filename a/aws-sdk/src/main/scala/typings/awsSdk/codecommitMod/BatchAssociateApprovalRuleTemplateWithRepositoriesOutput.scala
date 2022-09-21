@@ -30,10 +30,10 @@ object BatchAssociateApprovalRuleTemplateWithRepositoriesOutput {
     
     inline def setAssociatedRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "associatedRepositoryNames", value.asInstanceOf[js.Any])
     
-    inline def setAssociatedRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "associatedRepositoryNames", js.Array(value :_*))
+    inline def setAssociatedRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "associatedRepositoryNames", js.Array(value*))
     
     inline def setErrors(value: BatchAssociateApprovalRuleTemplateWithRepositoriesErrorsList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: BatchAssociateApprovalRuleTemplateWithRepositoriesError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchAssociateApprovalRuleTemplateWithRepositoriesError*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

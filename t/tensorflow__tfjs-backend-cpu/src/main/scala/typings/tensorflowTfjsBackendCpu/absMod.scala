@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsBackendCpu
 
-import typings.std.Float32Array
 import typings.tensorflowTfjsBackendCpu.anon.Backend
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
@@ -22,5 +21,5 @@ object absMod {
   @js.native
   val absConfig: KernelConfig = js.native
   
-  inline def simpleAbsImpl(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
+  inline def simpleAbsImpl(vals: TypedArray): js.typedarray.Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array]
 }

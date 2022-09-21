@@ -10,13 +10,14 @@ import typings.vegaLite.channeldefMod.PositionFieldDef
 import typings.vegaLite.compositemarkMod.CompositeMark
 import typings.vegaLite.compositemarkMod.CompositeMarkDef
 import typings.vegaLite.encodingMod.Encoding
-import typings.vegaLite.exprMod.ExprOrSignalRef
 import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.specUnitMod.GenericUnitSpec
 import typings.vegaLite.specUnitMod.NormalizedUnitSpec
 import typings.vegaLite.srcMarkMod.ColorMixins
 import typings.vegaLite.srcMarkMod.GenericMarkDef
 import typings.vegaLite.srcMarkMod.MarkConfig
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
 import typings.vegaTypings.encodeMod.Orientation
@@ -33,12 +34,23 @@ object compositemarkCommonMod {
   val ^ : js.Any = js.native
   
   inline def compositeMarkContinuousAxis[M /* <: CompositeMark */](
-    spec: GenericUnitSpec[Encoding[String], CompositeMark | CompositeMarkDef],
+    spec: GenericUnitSpec[
+      Encoding[String], 
+      CompositeMark | CompositeMarkDef, 
+      SelectionParameter[SelectionType]
+    ],
     orient: Orientation,
     compositeMark: M
   ): ContinuousAxis = (^.asInstanceOf[js.Dynamic].applyDynamic("compositeMarkContinuousAxis")(spec.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[ContinuousAxis]
   
-  inline def compositeMarkOrient[M /* <: CompositeMark */](spec: GenericUnitSpec[Encoding[String], CompositeMark | CompositeMarkDef], compositeMark: M): Orientation = (^.asInstanceOf[js.Dynamic].applyDynamic("compositeMarkOrient")(spec.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[Orientation]
+  inline def compositeMarkOrient[M /* <: CompositeMark */](
+    spec: GenericUnitSpec[
+      Encoding[String], 
+      CompositeMark | CompositeMarkDef, 
+      SelectionParameter[SelectionType]
+    ],
+    compositeMark: M
+  ): Orientation = (^.asInstanceOf[js.Dynamic].applyDynamic("compositeMarkOrient")(spec.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[Orientation]
   
   inline def filterTooltipWithAggregatedField[F /* <: Field */](oldEncoding: Encoding[F]): CustomTooltipWithoutAggregatedField[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterTooltipWithAggregatedField")(oldEncoding.asInstanceOf[js.Any]).asInstanceOf[CustomTooltipWithoutAggregatedField[F]]
   
@@ -54,11 +66,11 @@ object compositemarkCommonMod {
     withFieldName: Boolean
   ): Encoding[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompositeMarkTooltip")(tooltipSummary.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], encodingWithoutContinuousAxis.asInstanceOf[js.Any], withFieldName.asInstanceOf[js.Any])).asInstanceOf[Encoding[String]]
   
-  inline def getTitle(continuousAxisChannelDef: PositionFieldDef[String]): String | js.Array[String] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")(continuousAxisChannelDef.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String] | SignalRef]
+  inline def getTitle(continuousAxisChannelDef: PositionFieldDef[String]): SignalRef | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")(continuousAxisChannelDef.asInstanceOf[js.Any]).asInstanceOf[SignalRef | Text]
   
-  inline def makeCompositeAggregatePartFactory_x[P /* <: PartsMixins[js.Any] */](
-    compositeMarkDef: GenericCompositeMarkDef[js.Any] & P,
-    continuousAxis: x,
+  inline def makeCompositeAggregatePartFactory[P /* <: PartsMixins[Any] */](
+    compositeMarkDef: GenericCompositeMarkDef[Any] & P,
+    continuousAxis: x | y,
     continuousAxisChannelDef: PositionFieldDef[String],
     sharedEncoding: Encoding[String],
     compositeMarkConfig: P
@@ -70,22 +82,8 @@ object compositemarkCommonMod {
     js.Array[NormalizedUnitSpec]
   ]]
   
-  inline def makeCompositeAggregatePartFactory_y[P /* <: PartsMixins[js.Any] */](
-    compositeMarkDef: GenericCompositeMarkDef[js.Any] & P,
-    continuousAxis: y,
-    continuousAxisChannelDef: PositionFieldDef[String],
-    sharedEncoding: Encoding[String],
-    compositeMarkConfig: P
-  ): js.Function1[
-    /* hasPartNameMarkPositionPrefixEndPositionPrefixExtraEncoding */ EndPositionPrefix[P], 
-    js.Array[NormalizedUnitSpec]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeCompositeAggregatePartFactory")(compositeMarkDef.asInstanceOf[js.Any], continuousAxis.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], sharedEncoding.asInstanceOf[js.Any], compositeMarkConfig.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* hasPartNameMarkPositionPrefixEndPositionPrefixExtraEncoding */ EndPositionPrefix[P], 
-    js.Array[NormalizedUnitSpec]
-  ]]
-  
-  inline def partLayerMixins[P /* <: PartsMixins[js.Any] */](
-    markDef: GenericCompositeMarkDef[js.Any] & P,
+  inline def partLayerMixins[P /* <: PartsMixins[Any] */](
+    markDef: GenericCompositeMarkDef[Any] & P,
     part: /* keyof P */ String,
     compositeMarkConfig: P,
     partBaseSpec: NormalizedUnitSpec
@@ -116,7 +114,7 @@ object compositemarkCommonMod {
       
       inline def setTitlePrefix(value: Text | SignalRef): Self = StObject.set(x, "titlePrefix", value.asInstanceOf[js.Any])
       
-      inline def setTitlePrefixVarargs(value: String*): Self = StObject.set(x, "titlePrefix", js.Array(value :_*))
+      inline def setTitlePrefixVarargs(value: String*): Self = StObject.set(x, "titlePrefix", js.Array(value*))
     }
   }
   
@@ -132,6 +130,9 @@ object compositemarkCommonMod {
     
     /**
       * The opacity (value between [0,1]) of the mark.
+      *
+      * @minimum 0
+      * @maximum 1
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -155,5 +156,5 @@ object compositemarkCommonMod {
     }
   }
   
-  type PartsMixins[P /* <: String */] = Partial[Record[P, Boolean | MarkConfig[ExprOrSignalRef]]]
+  type PartsMixins[P /* <: String */] = Partial[Record[P, Boolean | (MarkConfig[ExprRef | SignalRef])]]
 }

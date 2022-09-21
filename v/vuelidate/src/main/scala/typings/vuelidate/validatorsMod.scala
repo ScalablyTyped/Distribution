@@ -1,9 +1,6 @@
 package typings.vuelidate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
-import typings.std.RegExp
-import typings.vue.vueMod.Vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,12 +15,12 @@ object validatorsMod {
   
   inline def alphaNum(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("alphaNum")().asInstanceOf[ValidationRule]
   
-  inline def and(validators: (ValidationFunc | CustomRule)*): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def and(validators: (ValidationFunc | CustomRule)*): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(validators.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ValidationRule]
   
+  inline def between(min: js.Date, max: js.Date): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
+  inline def between(min: js.Date, max: Double): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
+  inline def between(min: Double, max: js.Date): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
   inline def between(min: Double, max: Double): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
-  inline def between(min: Double, max: Date): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
-  inline def between(min: Date, max: Double): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
-  inline def between(min: Date, max: Date): ValidationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidationRule]
   
   inline def decimal(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decimal")().asInstanceOf[ValidationRule]
   
@@ -37,57 +34,100 @@ object validatorsMod {
   
   inline def ipAddress(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("ipAddress")().asInstanceOf[ValidationRule]
   
-  inline def macAddress(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("macAddress")().asInstanceOf[ValidationRule]
+  inline def macAddress(separator: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("macAddress")(separator.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   inline def maxLength(length: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(length.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
+  inline def maxValue(max: js.Date): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxValue")(max.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   inline def maxValue(max: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxValue")(max.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  inline def maxValue(max: Date): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("maxValue")(max.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   inline def minLength(length: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(length.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
+  inline def minValue(min: js.Date): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minValue")(min.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   inline def minValue(min: Double): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minValue")(min.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  inline def minValue(min: Date): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("minValue")(min.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   inline def not(validator: CustomRule): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(validator.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   inline def not(validator: ValidationRule): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(validator.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   inline def numeric(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("numeric")().asInstanceOf[ValidationRule]
   
-  inline def or(validators: (ValidationFunc | CustomRule)*): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def or(validators: (ValidationFunc | CustomRule)*): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(validators.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ValidationRule]
   
   inline def required(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("required")().asInstanceOf[ValidationRule]
   
   inline def requiredIf(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredIf")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  inline def requiredIf(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredIf")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def requiredIf(
+    field: js.Function2[
+      /* vm */ Any, 
+      /* parentVm */ js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+      ], 
+      Any
+    ]
+  ): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredIf")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   inline def requiredUnless(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredUnless")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  inline def requiredUnless(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredUnless")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def requiredUnless(
+    field: js.Function2[
+      /* vm */ Any, 
+      /* parentVm */ js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+      ], 
+      Any
+    ]
+  ): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredUnless")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   inline def sameAs(field: String): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
-  inline def sameAs(field: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any]): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
+  inline def sameAs(
+    field: js.Function2[
+      /* vm */ Any, 
+      /* parentVm */ js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+      ], 
+      Any
+    ]
+  ): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("sameAs")(field.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   inline def url(): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[ValidationRule]
   
-  type CustomRule = js.Function2[/* value */ js.Any, /* parentVm */ js.UndefOr[js.Any], Boolean | js.Promise[Boolean]]
+  type CustomRule = js.Function2[/* value */ Any, /* parentVm */ js.UndefOr[Any], Boolean | js.Promise[Boolean]]
   
   @js.native
   trait Helpers_ extends StObject {
     
-    def len(value: js.Any): Double = js.native
+    def len(value: Any): Double = js.native
     
-    def ref(reference: String, vm: js.Any): js.Any = js.native
-    def ref(reference: String, vm: js.Any, parentVm: Vue): js.Any = js.native
-    def ref(reference: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any], vm: js.Any): js.Any = js.native
+    def ref(reference: String, vm: Any): Any = js.native
     def ref(
-      reference: js.Function2[/* vm */ js.Any, /* parentVm */ js.UndefOr[Vue], js.Any],
-      vm: js.Any,
-      parentVm: Vue
-    ): js.Any = js.native
+      reference: String,
+      vm: Any,
+      parentVm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+    ): Any = js.native
+    def ref(
+      reference: js.Function2[
+          /* vm */ Any, 
+          /* parentVm */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+          ], 
+          Any
+        ],
+      vm: Any
+    ): Any = js.native
+    def ref(
+      reference: js.Function2[
+          /* vm */ Any, 
+          /* parentVm */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+          ], 
+          Any
+        ],
+      vm: Any,
+      parentVm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+    ): Any = js.native
     
-    def regex(`type`: String, expr: RegExp): ValidationRule = js.native
+    def regex(`type`: String, expr: js.RegExp): ValidationRule = js.native
     
-    def req(value: js.Any): Boolean = js.native
+    def req(value: Any): Boolean = js.native
     
     def withParams(params: Params, rule: CustomRule): ValidationRule = js.native
     def withParams(params: Params, rule: ValidationRule): ValidationRule = js.native
@@ -95,7 +135,7 @@ object validatorsMod {
   
   trait Params
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var `type`: String
   }
@@ -138,14 +178,14 @@ object validatorsMod {
       
       inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
   @js.native
   trait ValidationRule extends StObject {
     
-    def apply(params: js.Any*): Boolean = js.native
+    def apply(params: Any*): Boolean = js.native
     
     @JSName("$params")
     def $params(): ValidationParams = js.native

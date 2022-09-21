@@ -32,6 +32,6 @@ object INxMatchingFieldInfo {
     
     inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value*))
   }
 }

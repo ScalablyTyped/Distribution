@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.AccessField")
 @js.native
-/* private */ class AccessField ()
+/* private */ open class AccessField ()
   extends StObject
      with typings.activexAccess.Access.AccessField {
   
@@ -18,5 +18,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def IsMemberSafe(dispid: Double): Boolean = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

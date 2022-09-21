@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fs-merger" : "3.1.0"
+      "fs-merger" : "3.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "fs-merger" : "3.1.0"
+      "fs-merger" : "3.2.1"
     }
   ],
   "compile-devDependencies" : [

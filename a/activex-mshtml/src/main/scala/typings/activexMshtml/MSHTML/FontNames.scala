@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FontNames extends StObject {
   
-  def apply(pvarIndex: js.Any): String = js.native
+  def apply(pvarIndex: Any): String = js.native
   
   val Count: Double = js.native
   
-  def item(pvarIndex: js.Any): String = js.native
+  def item(pvarIndex: Any): String = js.native
 }

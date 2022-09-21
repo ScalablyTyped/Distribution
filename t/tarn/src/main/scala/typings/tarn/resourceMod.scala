@@ -9,7 +9,7 @@ object resourceMod {
   
   @JSImport("tarn/dist/Resource", "Resource")
   @js.native
-  class Resource[T] protected () extends StObject {
+  open class Resource[T] protected () extends StObject {
     def this(resource: T) = this()
     
     /* protected */ var deferred: Deferred[Unit] = js.native

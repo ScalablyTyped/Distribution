@@ -25,10 +25,10 @@ object resolverMod {
     var forge: typings.forgeDi.forgeMod.default = js.native
     
     /* CompleteClass */
-    override def resolve(context: typings.forgeDi.contextMod.default, args: Arguments): js.Any = js.native
+    override def resolve(context: typings.forgeDi.contextMod.default, args: Arguments): Any = js.native
     
     /* protected */ /* CompleteClass */
-    override def resolveDependencies(context: typings.forgeDi.contextMod.default, dependencies: js.Array[Dependency], args: Arguments): js.Any = js.native
+    override def resolveDependencies(context: typings.forgeDi.contextMod.default, dependencies: js.Array[Dependency], args: Arguments): Any = js.native
   }
   
   trait Resolver extends StObject {
@@ -39,9 +39,9 @@ object resolverMod {
     
     /* protected */ var forge: typings.forgeDi.forgeMod.default
     
-    def resolve(context: typings.forgeDi.contextMod.default, args: Arguments): js.Any
+    def resolve(context: typings.forgeDi.contextMod.default, args: Arguments): Any
     
-    /* protected */ def resolveDependencies(context: typings.forgeDi.contextMod.default, dependencies: js.Array[Dependency], args: Arguments): js.Any
+    /* protected */ def resolveDependencies(context: typings.forgeDi.contextMod.default, dependencies: js.Array[Dependency], args: Arguments): Any
   }
   object Resolver {
     
@@ -49,8 +49,8 @@ object resolverMod {
       binding: typings.forgeDi.bindingMod.default,
       dependencies: js.Array[Dependency],
       forge: typings.forgeDi.forgeMod.default,
-      resolve: (typings.forgeDi.contextMod.default, Arguments) => js.Any,
-      resolveDependencies: (typings.forgeDi.contextMod.default, js.Array[Dependency], Arguments) => js.Any
+      resolve: (typings.forgeDi.contextMod.default, Arguments) => Any,
+      resolveDependencies: (typings.forgeDi.contextMod.default, js.Array[Dependency], Arguments) => Any
     ): Resolver = {
       val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], forge = forge.asInstanceOf[js.Any], resolve = js.Any.fromFunction2(resolve), resolveDependencies = js.Any.fromFunction3(resolveDependencies))
       __obj.asInstanceOf[Resolver]
@@ -62,13 +62,13 @@ object resolverMod {
       
       inline def setDependencies(value: js.Array[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      inline def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setForge(value: typings.forgeDi.forgeMod.default): Self = StObject.set(x, "forge", value.asInstanceOf[js.Any])
       
-      inline def setResolve(value: (typings.forgeDi.contextMod.default, Arguments) => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
+      inline def setResolve(value: (typings.forgeDi.contextMod.default, Arguments) => Any): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
       
-      inline def setResolveDependencies(value: (typings.forgeDi.contextMod.default, js.Array[Dependency], Arguments) => js.Any): Self = StObject.set(x, "resolveDependencies", js.Any.fromFunction3(value))
+      inline def setResolveDependencies(value: (typings.forgeDi.contextMod.default, js.Array[Dependency], Arguments) => Any): Self = StObject.set(x, "resolveDependencies", js.Any.fromFunction3(value))
     }
   }
 }

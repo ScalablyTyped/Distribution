@@ -15,7 +15,7 @@ object distMilestoneMod {
   
   @JSImport("typed-github-api/dist/milestone", "MilestoneClass")
   @js.native
-  class MilestoneClass protected ()
+  open class MilestoneClass protected ()
     extends GitHubRef
        with Milestone {
     def this(data: typings.typedGithubApi.milestoneMod.Milestone, options: OptionsOrRef) = this()

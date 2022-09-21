@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-speech-recognition
 
-Typings are for version 3.1
+Typings are for version 3.9
 
 ## Library description:
 💬Speech recognition for your React app
@@ -10,13 +10,13 @@ Typings are for version 3.1
 | ------------------ | :-------------: |
 | Full name          | react-speech-recognition |
 | Keywords           | react, reactjs, speech, recognition |
-| # releases         | 25 |
-| # dependents       | 6 |
-| # downloads        | 157405 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 52284.0 |
+| # stars            | 323.0 |
 
 ## Links
-- [Homepage](https://github.com/JamesBrill/react-speech-recognition#readme)
+- [Homepage](https://webspeechrecognition.com/)
 - [Bugs](https://github.com/JamesBrill/react-speech-recognition/issues)
 - [Repository](https://github.com/JamesBrill/react-speech-recognition)
 - [Npm](https://www.npmjs.com/package/react-speech-recognition)

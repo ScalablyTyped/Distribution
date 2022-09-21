@@ -1,5 +1,13 @@
 package typings.restify.mod.plugins
 
+import typings.node.zlibMod.ZlibOptions
+import typings.restify.anon.MaxBodySize
+import typings.restify.anon.Server
+import typings.restify.mod.Request
+import typings.restify.mod.RequestHandler
+import typings.restify.mod.Response
+import typings.restify.mod.Route
+import typings.restify.mod.plugins.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,80 +17,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Check the client's Accept header can be handled by this server.
   */
-inline def acceptParser(accepts: js.Array[java.lang.String]): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("acceptParser")(accepts.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def acceptParser(accepts: js.Array[String]): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptParser")(accepts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * An audit logger for recording all handled requests
   */
-inline def auditLogger(options: typings.restify.mod.plugins.AuditLoggerOptions): js.Function1[/* repeated */ js.Any, scala.Unit] = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("auditLogger")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, scala.Unit]]
+inline def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("auditLogger")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
 
 /**
   * Authorization header
   */
-inline def authorizationParser(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def authorizationParser(options: js.Any): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def authorizationParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")().asInstanceOf[RequestHandler]
+inline def authorizationParser(options: Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Parses POST bodies to req.body. automatically uses one of the following parsers based on content type.
   */
-inline def bodyParser(): js.Array[typings.restify.mod.RequestHandler] = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")().asInstanceOf[js.Array[typings.restify.mod.RequestHandler]]
-inline def bodyParser(options: typings.restify.mod.plugins.BodyParserOptions): js.Array[typings.restify.mod.RequestHandler] = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.restify.mod.RequestHandler]]
+inline def bodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")().asInstanceOf[js.Array[RequestHandler]]
+inline def bodyParser(options: BodyParserOptions): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
 
 /**
   * Reads the body of the request.
   */
-inline def bodyReader(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def bodyReader(options: typings.restify.anon.MaxBodySize): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def bodyReader(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")().asInstanceOf[RequestHandler]
+inline def bodyReader(options: MaxBodySize): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyReader")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
-inline def conditionalHandler(candidates: js.Array[typings.restify.mod.plugins.HandlerCandidate]): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("conditionalHandler")(candidates.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def conditionalHandler(candidates: js.Array[HandlerCandidate]): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionalHandler")(candidates.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 /**
   * Runs first handler that matches to the condition
   */
-inline def conditionalHandler(candidates: typings.restify.mod.plugins.HandlerCandidate): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("conditionalHandler")(candidates.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def conditionalHandler(candidates: HandlerCandidate): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionalHandler")(candidates.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Conditional headers (If-*)
   */
-inline def conditionalRequest(): js.Array[typings.restify.mod.RequestHandler] = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("conditionalRequest")().asInstanceOf[js.Array[typings.restify.mod.RequestHandler]]
+inline def conditionalRequest(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionalRequest")().asInstanceOf[js.Array[RequestHandler]]
 
 /**
   * Cpu Throttle middleware
   */
-inline def cpuUsageThrottle(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("cpuUsageThrottle")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def cpuUsageThrottle(opts: typings.restify.mod.plugins.CpuUsageThrottleOptions): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("cpuUsageThrottle")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def cpuUsageThrottle(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuUsageThrottle")().asInstanceOf[RequestHandler]
+inline def cpuUsageThrottle(opts: CpuUsageThrottleOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuUsageThrottle")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 // ******************** The module includes the following response plugins:
 /**
   * expires requests based on current time + delta
   * @param delta - age in seconds
   */
-inline def dateParser(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def dateParser(delta: scala.Double): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")(delta.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def dateParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")().asInstanceOf[RequestHandler]
+inline def dateParser(delta: Double): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dateParser")(delta.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Handles disappeared CORS headers
   */
-inline def fullResponse(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("fullResponse")().asInstanceOf[typings.restify.mod.RequestHandler]
+inline def fullResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fullResponse")().asInstanceOf[RequestHandler]
 
 /**
   * gzips the response if client send `accept-encoding: gzip`
   * @param options options to pass to gzlib
   */
-inline def gzipResponse(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def gzipResponse(options: typings.node.zlibMod.ZlibOptions): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def gzipResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")().asInstanceOf[RequestHandler]
+inline def gzipResponse(options: ZlibOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
-inline def inflightRequestThrottle(opts: typings.restify.mod.plugins.InflightRequestThrottleOptions): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("inflightRequestThrottle")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def inflightRequestThrottle(opts: InflightRequestThrottleOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("inflightRequestThrottle")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Parses JSON POST bodies
   */
-inline def jsonBodyParser(): js.Array[typings.restify.mod.RequestHandler] = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")().asInstanceOf[js.Array[typings.restify.mod.RequestHandler]]
-inline def jsonBodyParser(options: typings.restify.mod.plugins.JsonBodyParserOptions): js.Array[typings.restify.mod.RequestHandler] = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.restify.mod.RequestHandler]]
+inline def jsonBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")().asInstanceOf[js.Array[RequestHandler]]
+inline def jsonBodyParser(options: JsonBodyParserOptions): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
 
 /**
   * Parses JSONP callback
   */
-inline def jsonp(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")().asInstanceOf[typings.restify.mod.RequestHandler]
+inline def jsonp(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")().asInstanceOf[RequestHandler]
 
 /**
   * Listens to the server's after event and emits information about that request (5.x compatible only).
@@ -94,13 +102,13 @@ inline def jsonp(): typings.restify.mod.RequestHandler = typings.restify.mod.plu
   * }));
   * ```
   */
-inline def metrics(opts: typings.restify.anon.Server, callback: typings.restify.mod.plugins.MetricsCallback): js.Function1[/* repeated */ js.Any, scala.Unit] = (typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, scala.Unit]]
+inline def metrics(opts: Server, callback: MetricsCallback): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
 
 /**
   * Parses JSONP callback
   */
-inline def multipartBodyParser(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def multipartBodyParser(options: typings.restify.mod.plugins.MultipartBodyParser_): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def multipartBodyParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")().asInstanceOf[RequestHandler]
+inline def multipartBodyParser(options: MultipartBodyParser_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Parse the client's request for an OAUTH2 access tokensTable
@@ -112,13 +120,13 @@ inline def multipartBodyParser(options: typings.restify.mod.plugins.MultipartBod
   * }
   * ```
   */
-inline def oauth2TokenParser(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("oauth2TokenParser")().asInstanceOf[typings.restify.mod.RequestHandler]
+inline def oauth2TokenParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("oauth2TokenParser")().asInstanceOf[RequestHandler]
 
 /**
   * Parses URL query parameters into `req.query`. Many options correspond directly to option defined for the underlying [qs.parse](https://github.com/ljharb/qs)
   */
-inline def queryParser(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def queryParser(options: typings.restify.mod.plugins.QueryParserOptions): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def queryParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")().asInstanceOf[RequestHandler]
+inline def queryParser(options: QueryParserOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * A request expiry will use headers to tell if the incoming request has expired or not.
@@ -132,34 +140,34 @@ inline def queryParser(options: typings.restify.mod.plugins.QueryParserOptions):
   *     * The timeout is added to the request start time to arrive at the absolute time
   *       in which the request is considered expires
   */
-inline def requestExpiry(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def requestExpiry(options: typings.restify.mod.plugins.RequestExpiryOptions): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def requestExpiry(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")().asInstanceOf[RequestHandler]
+inline def requestExpiry(options: RequestExpiryOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestExpiry")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Adds timers for each handler in your request chain
   *
   * `options.properties` properties to pass to bunyan's `log.child()` method
   */
-inline def requestLogger(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def requestLogger(options: typings.restify.mod.plugins.RequestLogger_): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def requestLogger(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")().asInstanceOf[RequestHandler]
+inline def requestLogger(options: RequestLogger_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogger")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Used to serve static files
   */
-inline def serveStatic(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def serveStatic(options: typings.restify.mod.plugins.ServeStatic_): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def serveStatic(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")().asInstanceOf[RequestHandler]
+inline def serveStatic(options: ServeStatic_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Used to serve static files from a given directory
   */
-inline def serveStaticFiles(dir: java.lang.String): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("serveStaticFiles")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
-inline def serveStaticFiles(dir: java.lang.String, options: typings.restify.mod.plugins.ServeStaticFiles_): typings.restify.mod.RequestHandler = (typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("serveStaticFiles")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def serveStaticFiles(dir: String): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStaticFiles")(dir.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+inline def serveStaticFiles(dir: String, options: ServeStaticFiles_): RequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("serveStaticFiles")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler]
 
 /**
   *  throttles responses
   */
-inline def throttle(): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("throttle")().asInstanceOf[typings.restify.mod.RequestHandler]
-inline def throttle(options: typings.restify.mod.plugins.ThrottleOptions): typings.restify.mod.RequestHandler = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.restify.mod.RequestHandler]
+inline def throttle(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")().asInstanceOf[RequestHandler]
+inline def throttle(options: ThrottleOptions): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 
 /**
   * Parse the HTTP request body IFF the contentType is application/x-www-form-urlencoded.
@@ -167,27 +175,22 @@ inline def throttle(options: typings.restify.mod.plugins.ThrottleOptions): typin
   * If req.params already contains a given key, that key is skipped and an
   * error is logged.
   */
-inline def urlEncodedBodyParser(): js.Array[typings.restify.mod.RequestHandler] = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")().asInstanceOf[js.Array[typings.restify.mod.RequestHandler]]
-inline def urlEncodedBodyParser(options: typings.restify.mod.plugins.UrlEncodedBodyParserOptions): js.Array[typings.restify.mod.RequestHandler] = typings.restify.mod.plugins.^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.restify.mod.RequestHandler]]
+inline def urlEncodedBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")().asInstanceOf[js.Array[RequestHandler]]
+inline def urlEncodedBodyParser(options: UrlEncodedBodyParserOptions): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncodedBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
 
-type AuditLoggerContext = js.Function4[
-/* req */ typings.restify.mod.Request, 
-/* res */ typings.restify.mod.Response, 
-/* route */ js.Any, 
-/* error */ js.Any, 
-js.Any]
+type AuditLoggerContext = js.Function4[/* req */ Request, /* res */ Response, /* route */ Any, /* error */ Any, Any]
 
 type MetricsCallback = js.Function5[
-/* err */ typings.std.Error, 
-/* metrics */ typings.restify.mod.plugins.MetricsCallbackOptions, 
-/* req */ typings.restify.mod.Request, 
-/* res */ typings.restify.mod.Response, 
-/* route */ typings.restify.mod.Route, 
-scala.Unit]
+/* err */ js.Error, 
+/* metrics */ MetricsCallbackOptions, 
+/* req */ Request, 
+/* res */ Response, 
+/* route */ Route, 
+Unit]
 
 /* Rewritten from type alias, can be one of: 
   - typings.restify.restifyStrings.close
   - typings.restify.restifyStrings.aborted
   - scala.Unit
 */
-type TMetricsCallback = js.UndefOr[typings.restify.mod.plugins._TMetricsCallback]
+type TMetricsCallback = js.UndefOr[_TMetricsCallback]

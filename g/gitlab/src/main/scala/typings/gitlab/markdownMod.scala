@@ -11,7 +11,7 @@ object markdownMod {
   
   @JSImport("gitlab/dist/types/core/services/Markdown", "Markdown")
   @js.native
-  class Markdown () extends BaseService {
+  open class Markdown () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def render(text: String): js.Promise[js.Object] = js.native

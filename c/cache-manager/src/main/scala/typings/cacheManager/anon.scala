@@ -9,18 +9,18 @@ object anon {
   
   trait Create extends StObject {
     
-    def create(args: js.Any*): Store
+    def create(args: Any*): Store
   }
   object Create {
     
-    inline def apply(create: /* repeated */ js.Any => Store): Create = {
+    inline def apply(create: /* repeated */ Any => Store): Create = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
       __obj.asInstanceOf[Create]
     }
     
     extension [Self <: Create](x: Self) {
       
-      inline def setCreate(value: /* repeated */ js.Any => Store): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* repeated */ Any => Store): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
 }

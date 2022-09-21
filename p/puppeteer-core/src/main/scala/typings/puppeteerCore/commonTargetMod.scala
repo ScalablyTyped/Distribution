@@ -1,12 +1,15 @@
 package typings.puppeteerCore
 
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
-import typings.puppeteerCore.commonBrowserMod.Browser
-import typings.puppeteerCore.commonBrowserMod.BrowserContext
-import typings.puppeteerCore.commonConnectionMod.CDPSession
-import typings.puppeteerCore.commonPageMod.Page
+import typings.puppeteerCore.apiBrowserMod.Browser
+import typings.puppeteerCore.apiBrowserMod.BrowserContext
+import typings.puppeteerCore.apiBrowserMod.IsPageTargetCallback
+import typings.puppeteerCore.apiPageMod.Page
 import typings.puppeteerCore.commonPuppeteerViewportMod.Viewport
+import typings.puppeteerCore.commonTargetManagerMod.TargetManager
+import typings.puppeteerCore.commonTaskQueueMod.TaskQueue
 import typings.puppeteerCore.commonWebWorkerMod.WebWorker
+import typings.puppeteerCore.puppeteerCommonConnectionMod.CDPSession
 import typings.puppeteerCore.puppeteerCoreStrings.background_page
 import typings.puppeteerCore.puppeteerCoreStrings.browser
 import typings.puppeteerCore.puppeteerCoreStrings.other
@@ -22,34 +25,64 @@ object commonTargetMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/Target", "Target")
   @js.native
-  class Target protected () extends StObject {
+  open class Target protected () extends StObject {
+    def this(
+      targetInfo: TargetInfo,
+      session: Unit,
+      browserContext: BrowserContext,
+      targetManager: TargetManager,
+      sessionFactory: js.Function1[/* isAutoAttachEmulated */ Boolean, js.Promise[CDPSession]],
+      ignoreHTTPSErrors: Boolean,
+      defaultViewport: Null,
+      screenshotTaskQueue: TaskQueue,
+      isPageTargetCallback: IsPageTargetCallback
+    ) = this()
+    def this(
+      targetInfo: TargetInfo,
+      session: Unit,
+      browserContext: BrowserContext,
+      targetManager: TargetManager,
+      sessionFactory: js.Function1[/* isAutoAttachEmulated */ Boolean, js.Promise[CDPSession]],
+      ignoreHTTPSErrors: Boolean,
+      defaultViewport: Viewport,
+      screenshotTaskQueue: TaskQueue,
+      isPageTargetCallback: IsPageTargetCallback
+    ) = this()
+    def this(
+      targetInfo: TargetInfo,
+      session: CDPSession,
+      browserContext: BrowserContext,
+      targetManager: TargetManager,
+      sessionFactory: js.Function1[/* isAutoAttachEmulated */ Boolean, js.Promise[CDPSession]],
+      ignoreHTTPSErrors: Boolean,
+      defaultViewport: Null,
+      screenshotTaskQueue: TaskQueue,
+      isPageTargetCallback: IsPageTargetCallback
+    ) = this()
     /**
       * @internal
       */
     def this(
       targetInfo: TargetInfo,
+      session: CDPSession,
       browserContext: BrowserContext,
-      sessionFactory: js.Function0[js.Promise[CDPSession]],
-      ignoreHTTPSErrors: Boolean
-    ) = this()
-    def this(
-      targetInfo: TargetInfo,
-      browserContext: BrowserContext,
-      sessionFactory: js.Function0[js.Promise[CDPSession]],
+      targetManager: TargetManager,
+      sessionFactory: js.Function1[/* isAutoAttachEmulated */ Boolean, js.Promise[CDPSession]],
       ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport
+      defaultViewport: Viewport,
+      screenshotTaskQueue: TaskQueue,
+      isPageTargetCallback: IsPageTargetCallback
     ) = this()
-    
-    /* private */ var _browserContext: js.Any = js.native
     
     /**
       * @internal
       */
     def _closedCallback(): Unit = js.native
     
-    /* private */ var _defaultViewport: js.Any = js.native
-    
-    /* private */ var _ignoreHTTPSErrors: js.Any = js.native
+    /**
+      * @internal
+      */
+    def _getTargetInfo(): TargetInfo = js.native
     
     /**
       * @internal
@@ -71,29 +104,44 @@ object commonTargetMod {
       */
     var _isInitialized: Boolean = js.native
     
-    /* private */ var _pagePromise: js.Any = js.native
+    /**
+      * @internal
+      */
+    def _isPageTargetCallback(target: TargetInfo): Boolean = js.native
+    /**
+      * @internal
+      */
+    @JSName("_isPageTargetCallback")
+    var _isPageTargetCallback_Original: IsPageTargetCallback = js.native
     
-    /* private */ var _sessionFactory: js.Any = js.native
+    /**
+      * @internal
+      */
+    def _session(): js.UndefOr[CDPSession] = js.native
     
     /**
       * @internal
       */
     var _targetId: String = js.native
     
-    /* private */ var _targetInfo: js.Any = js.native
-    
     /**
       * @internal
       */
     def _targetInfoChanged(targetInfo: TargetInfo): Unit = js.native
     
-    /* private */ var _workerPromise: js.Any = js.native
+    /**
+      * @internal
+      */
+    def _targetManager(): TargetManager = js.native
     
     /**
       * Get the browser the target belongs to.
       */
     def browser(): Browser = js.native
     
+    /**
+      * Get the browser context the target belongs to.
+      */
     def browserContext(): BrowserContext = js.native
     
     /**
@@ -104,12 +152,14 @@ object commonTargetMod {
     /**
       * Get the target that opened this target. Top-level targets return `null`.
       */
-    def opener(): Target | Null = js.native
+    def opener(): js.UndefOr[Target] = js.native
     
     /**
       * If the target is not of type `"page"` or `"background_page"`, returns `null`.
       */
     def page(): js.Promise[Page | Null] = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     /**
       * Identifies what kind of target this is.

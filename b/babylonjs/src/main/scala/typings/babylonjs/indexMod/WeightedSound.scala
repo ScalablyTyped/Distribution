@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WeightedSound")
 @js.native
-class WeightedSound protected ()
+open class WeightedSound protected ()
   extends typings.babylonjs.audioIndexMod.WeightedSound {
   /**
     * Creates a new WeightedSound from the list of sounds given.

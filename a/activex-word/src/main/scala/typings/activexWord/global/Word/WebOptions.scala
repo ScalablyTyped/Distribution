@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.WebOptions")
 @js.native
-/* private */ class WebOptions ()
+/* private */ open class WebOptions ()
   extends StObject
      with typings.activexWord.Word.WebOptions {
   
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OrganizeInFolder: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PixelsPerInch: Double = js.native

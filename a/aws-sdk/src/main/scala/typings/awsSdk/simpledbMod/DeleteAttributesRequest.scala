@@ -39,7 +39,7 @@ object DeleteAttributesRequest {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: DeletableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: DeletableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

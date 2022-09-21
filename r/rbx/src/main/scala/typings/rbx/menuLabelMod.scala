@@ -54,7 +54,7 @@ object menuLabelMod {
   
   @JSImport("rbx/components/menu/menu-label", "MenuLabel")
   @js.native
-  val MenuLabel: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val MenuLabel: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait MenuLabelProps extends StObject {

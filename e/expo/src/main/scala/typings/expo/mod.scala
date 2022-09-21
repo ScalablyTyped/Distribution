@@ -1,6 +1,6 @@
 package typings.expo
 
-import typings.expo.appLoadingMod.default
+import typings.expo.withExpoRootTypesMod.InitialProps
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,14 +11,6 @@ object mod {
   @JSImport("expo", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  @JSImport("expo", "AppLoading")
-  @js.native
-  class AppLoading () extends default
-  
-  @JSImport("expo", "DangerZone")
-  @js.native
-  val DangerZone: typings.expo.dangerZoneMod.DangerZone = js.native
   
   object Logs {
     
@@ -31,7 +23,7 @@ object mod {
     inline def enableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableExpoCliLogging")().asInstanceOf[Unit]
   }
   
-  inline def apisAreAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("apisAreAvailable")().asInstanceOf[Boolean]
+  inline def disableErrorHandling(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableErrorHandling")().asInstanceOf[Unit]
   
-  inline def registerRootComponent[P](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRootComponent")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerRootComponent[P /* <: InitialProps */](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRootComponent")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

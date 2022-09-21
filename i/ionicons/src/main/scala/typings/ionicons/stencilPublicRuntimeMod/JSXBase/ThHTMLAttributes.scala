@@ -8,6 +8,8 @@ trait ThHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
+  var abbr: js.UndefOr[String] = js.undefined
+  
   var colSpan: js.UndefOr[Double] = js.undefined
   
   var headers: js.UndefOr[String] = js.undefined
@@ -26,6 +28,10 @@ object ThHTMLAttributes {
   }
   
   extension [Self <: ThHTMLAttributes[?], T](x: Self & ThHTMLAttributes[T]) {
+    
+    inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+    
+    inline def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     

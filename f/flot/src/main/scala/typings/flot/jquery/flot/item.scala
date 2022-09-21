@@ -42,7 +42,7 @@ object item {
     
     inline def setDatapoint(value: js.Array[Double]): Self = StObject.set(x, "datapoint", value.asInstanceOf[js.Any])
     
-    inline def setDatapointVarargs(value: Double*): Self = StObject.set(x, "datapoint", js.Array(value :_*))
+    inline def setDatapointVarargs(value: Double*): Self = StObject.set(x, "datapoint", js.Array(value*))
     
     inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     

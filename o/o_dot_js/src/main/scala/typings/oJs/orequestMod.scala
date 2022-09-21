@@ -12,7 +12,7 @@ object orequestMod {
   
   @JSImport("o.js/dist/types/ORequest", "ORequest")
   @js.native
-  class ORequest protected () extends StObject {
+  open class ORequest protected () extends StObject {
     def this(url: String, config: RequestInit) = this()
     def this(url: URL, config: RequestInit) = this()
     

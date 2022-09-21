@@ -24,6 +24,6 @@ object Lags {
     
     inline def setLagsUndefined: Self = StObject.set(x, "lags", js.undefined)
     
-    inline def setLagsVarargs(value: Lag*): Self = StObject.set(x, "lags", js.Array(value :_*))
+    inline def setLagsVarargs(value: Lag*): Self = StObject.set(x, "lags", js.Array(value*))
   }
 }

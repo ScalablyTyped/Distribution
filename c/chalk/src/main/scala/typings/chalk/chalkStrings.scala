@@ -251,6 +251,12 @@ object chalkStrings {
   inline def magentaBright: magentaBright = "magentaBright".asInstanceOf[magentaBright]
   
   @js.native
+  sealed trait overline
+    extends StObject
+       with Modifiers
+  inline def overline: overline = "overline".asInstanceOf[overline]
+  
+  @js.native
   sealed trait red
     extends StObject
        with Color

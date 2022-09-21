@@ -83,7 +83,7 @@ object DeviceAppManagement {
     
     inline def setAndroidManagedAppProtectionsUndefined: Self = StObject.set(x, "androidManagedAppProtections", js.undefined)
     
-    inline def setAndroidManagedAppProtectionsVarargs(value: AndroidManagedAppProtection*): Self = StObject.set(x, "androidManagedAppProtections", js.Array(value :_*))
+    inline def setAndroidManagedAppProtectionsVarargs(value: AndroidManagedAppProtection*): Self = StObject.set(x, "androidManagedAppProtections", js.Array(value*))
     
     inline def setDefaultManagedAppProtections(value: NullableOption[js.Array[DefaultManagedAppProtection]]): Self = StObject.set(x, "defaultManagedAppProtections", value.asInstanceOf[js.Any])
     
@@ -91,7 +91,7 @@ object DeviceAppManagement {
     
     inline def setDefaultManagedAppProtectionsUndefined: Self = StObject.set(x, "defaultManagedAppProtections", js.undefined)
     
-    inline def setDefaultManagedAppProtectionsVarargs(value: DefaultManagedAppProtection*): Self = StObject.set(x, "defaultManagedAppProtections", js.Array(value :_*))
+    inline def setDefaultManagedAppProtectionsVarargs(value: DefaultManagedAppProtection*): Self = StObject.set(x, "defaultManagedAppProtections", js.Array(value*))
     
     inline def setIosManagedAppProtections(value: NullableOption[js.Array[IosManagedAppProtection]]): Self = StObject.set(x, "iosManagedAppProtections", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object DeviceAppManagement {
     
     inline def setIosManagedAppProtectionsUndefined: Self = StObject.set(x, "iosManagedAppProtections", js.undefined)
     
-    inline def setIosManagedAppProtectionsVarargs(value: IosManagedAppProtection*): Self = StObject.set(x, "iosManagedAppProtections", js.Array(value :_*))
+    inline def setIosManagedAppProtectionsVarargs(value: IosManagedAppProtection*): Self = StObject.set(x, "iosManagedAppProtections", js.Array(value*))
     
     inline def setIsEnabledForMicrosoftStoreForBusiness(value: Boolean): Self = StObject.set(x, "isEnabledForMicrosoftStoreForBusiness", value.asInstanceOf[js.Any])
     
@@ -111,7 +111,7 @@ object DeviceAppManagement {
     
     inline def setManagedAppPoliciesUndefined: Self = StObject.set(x, "managedAppPolicies", js.undefined)
     
-    inline def setManagedAppPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "managedAppPolicies", js.Array(value :_*))
+    inline def setManagedAppPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "managedAppPolicies", js.Array(value*))
     
     inline def setManagedAppRegistrations(value: NullableOption[js.Array[ManagedAppRegistration]]): Self = StObject.set(x, "managedAppRegistrations", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object DeviceAppManagement {
     
     inline def setManagedAppRegistrationsUndefined: Self = StObject.set(x, "managedAppRegistrations", js.undefined)
     
-    inline def setManagedAppRegistrationsVarargs(value: ManagedAppRegistration*): Self = StObject.set(x, "managedAppRegistrations", js.Array(value :_*))
+    inline def setManagedAppRegistrationsVarargs(value: ManagedAppRegistration*): Self = StObject.set(x, "managedAppRegistrations", js.Array(value*))
     
     inline def setManagedAppStatuses(value: NullableOption[js.Array[ManagedAppStatus]]): Self = StObject.set(x, "managedAppStatuses", value.asInstanceOf[js.Any])
     
@@ -127,7 +127,7 @@ object DeviceAppManagement {
     
     inline def setManagedAppStatusesUndefined: Self = StObject.set(x, "managedAppStatuses", js.undefined)
     
-    inline def setManagedAppStatusesVarargs(value: ManagedAppStatus*): Self = StObject.set(x, "managedAppStatuses", js.Array(value :_*))
+    inline def setManagedAppStatusesVarargs(value: ManagedAppStatus*): Self = StObject.set(x, "managedAppStatuses", js.Array(value*))
     
     inline def setManagedEBooks(value: NullableOption[js.Array[ManagedEBook]]): Self = StObject.set(x, "managedEBooks", value.asInstanceOf[js.Any])
     
@@ -135,7 +135,7 @@ object DeviceAppManagement {
     
     inline def setManagedEBooksUndefined: Self = StObject.set(x, "managedEBooks", js.undefined)
     
-    inline def setManagedEBooksVarargs(value: ManagedEBook*): Self = StObject.set(x, "managedEBooks", js.Array(value :_*))
+    inline def setManagedEBooksVarargs(value: ManagedEBook*): Self = StObject.set(x, "managedEBooks", js.Array(value*))
     
     inline def setMdmWindowsInformationProtectionPolicies(value: NullableOption[js.Array[MdmWindowsInformationProtectionPolicy]]): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", value.asInstanceOf[js.Any])
     
@@ -143,7 +143,7 @@ object DeviceAppManagement {
     
     inline def setMdmWindowsInformationProtectionPoliciesUndefined: Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.undefined)
     
-    inline def setMdmWindowsInformationProtectionPoliciesVarargs(value: MdmWindowsInformationProtectionPolicy*): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.Array(value :_*))
+    inline def setMdmWindowsInformationProtectionPoliciesVarargs(value: MdmWindowsInformationProtectionPolicy*): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.Array(value*))
     
     inline def setMicrosoftStoreForBusinessLanguage(value: NullableOption[String]): Self = StObject.set(x, "microsoftStoreForBusinessLanguage", value.asInstanceOf[js.Any])
     
@@ -165,7 +165,7 @@ object DeviceAppManagement {
     
     inline def setMobileAppCategoriesUndefined: Self = StObject.set(x, "mobileAppCategories", js.undefined)
     
-    inline def setMobileAppCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "mobileAppCategories", js.Array(value :_*))
+    inline def setMobileAppCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "mobileAppCategories", js.Array(value*))
     
     inline def setMobileAppConfigurations(value: NullableOption[js.Array[ManagedDeviceMobileAppConfiguration]]): Self = StObject.set(x, "mobileAppConfigurations", value.asInstanceOf[js.Any])
     
@@ -173,7 +173,7 @@ object DeviceAppManagement {
     
     inline def setMobileAppConfigurationsUndefined: Self = StObject.set(x, "mobileAppConfigurations", js.undefined)
     
-    inline def setMobileAppConfigurationsVarargs(value: ManagedDeviceMobileAppConfiguration*): Self = StObject.set(x, "mobileAppConfigurations", js.Array(value :_*))
+    inline def setMobileAppConfigurationsVarargs(value: ManagedDeviceMobileAppConfiguration*): Self = StObject.set(x, "mobileAppConfigurations", js.Array(value*))
     
     inline def setMobileApps(value: NullableOption[js.Array[MobileApp]]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
     
@@ -181,7 +181,7 @@ object DeviceAppManagement {
     
     inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
     
-    inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
+    inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value*))
     
     inline def setTargetedManagedAppConfigurations(value: NullableOption[js.Array[TargetedManagedAppConfiguration]]): Self = StObject.set(x, "targetedManagedAppConfigurations", value.asInstanceOf[js.Any])
     
@@ -189,7 +189,7 @@ object DeviceAppManagement {
     
     inline def setTargetedManagedAppConfigurationsUndefined: Self = StObject.set(x, "targetedManagedAppConfigurations", js.undefined)
     
-    inline def setTargetedManagedAppConfigurationsVarargs(value: TargetedManagedAppConfiguration*): Self = StObject.set(x, "targetedManagedAppConfigurations", js.Array(value :_*))
+    inline def setTargetedManagedAppConfigurationsVarargs(value: TargetedManagedAppConfiguration*): Self = StObject.set(x, "targetedManagedAppConfigurations", js.Array(value*))
     
     inline def setVppTokens(value: NullableOption[js.Array[VppToken]]): Self = StObject.set(x, "vppTokens", value.asInstanceOf[js.Any])
     
@@ -197,7 +197,7 @@ object DeviceAppManagement {
     
     inline def setVppTokensUndefined: Self = StObject.set(x, "vppTokens", js.undefined)
     
-    inline def setVppTokensVarargs(value: VppToken*): Self = StObject.set(x, "vppTokens", js.Array(value :_*))
+    inline def setVppTokensVarargs(value: VppToken*): Self = StObject.set(x, "vppTokens", js.Array(value*))
     
     inline def setWindowsInformationProtectionPolicies(value: NullableOption[js.Array[WindowsInformationProtectionPolicy]]): Self = StObject.set(x, "windowsInformationProtectionPolicies", value.asInstanceOf[js.Any])
     
@@ -205,6 +205,6 @@ object DeviceAppManagement {
     
     inline def setWindowsInformationProtectionPoliciesUndefined: Self = StObject.set(x, "windowsInformationProtectionPolicies", js.undefined)
     
-    inline def setWindowsInformationProtectionPoliciesVarargs(value: WindowsInformationProtectionPolicy*): Self = StObject.set(x, "windowsInformationProtectionPolicies", js.Array(value :_*))
+    inline def setWindowsInformationProtectionPoliciesVarargs(value: WindowsInformationProtectionPolicy*): Self = StObject.set(x, "windowsInformationProtectionPolicies", js.Array(value*))
   }
 }

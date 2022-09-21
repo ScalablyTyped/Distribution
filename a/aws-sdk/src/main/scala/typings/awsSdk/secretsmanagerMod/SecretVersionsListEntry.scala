@@ -9,12 +9,17 @@ trait SecretVersionsListEntry extends StObject {
   /**
     * The date and time this version of the secret was created.
     */
-  var CreatedDate: js.UndefOr[CreatedDateType] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The KMS keys used to encrypt the secret version.
+    */
+  var KmsKeyIds: js.UndefOr[KmsKeyIdListType] = js.undefined
   
   /**
     * The date that this version of the secret was last accessed. Note that the resolution of this field is at the date level and does not include the time.
     */
-  var LastAccessedDate: js.UndefOr[LastAccessedDateType] = js.undefined
+  var LastAccessedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique version identifier of this version of the secret.
@@ -35,11 +40,17 @@ object SecretVersionsListEntry {
   
   extension [Self <: SecretVersionsListEntry](x: Self) {
     
-    inline def setCreatedDate(value: CreatedDateType): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    inline def setLastAccessedDate(value: LastAccessedDateType): Self = StObject.set(x, "LastAccessedDate", value.asInstanceOf[js.Any])
+    inline def setKmsKeyIds(value: KmsKeyIdListType): Self = StObject.set(x, "KmsKeyIds", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdsUndefined: Self = StObject.set(x, "KmsKeyIds", js.undefined)
+    
+    inline def setKmsKeyIdsVarargs(value: KmsKeyIdType*): Self = StObject.set(x, "KmsKeyIds", js.Array(value*))
+    
+    inline def setLastAccessedDate(value: js.Date): Self = StObject.set(x, "LastAccessedDate", value.asInstanceOf[js.Any])
     
     inline def setLastAccessedDateUndefined: Self = StObject.set(x, "LastAccessedDate", js.undefined)
     
@@ -51,6 +62,6 @@ object SecretVersionsListEntry {
     
     inline def setVersionStagesUndefined: Self = StObject.set(x, "VersionStages", js.undefined)
     
-    inline def setVersionStagesVarargs(value: SecretVersionStageType*): Self = StObject.set(x, "VersionStages", js.Array(value :_*))
+    inline def setVersionStagesVarargs(value: SecretVersionStageType*): Self = StObject.set(x, "VersionStages", js.Array(value*))
   }
 }

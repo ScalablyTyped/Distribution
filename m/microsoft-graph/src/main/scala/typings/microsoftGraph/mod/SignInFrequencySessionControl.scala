@@ -8,6 +8,12 @@ trait SignInFrequencySessionControl
   extends StObject
      with ConditionalAccessSessionControl {
   
+  // The possible values are primaryAndSecondaryAuthentication, secondaryAuthentication, unknownFutureValue.
+  var authenticationType: js.UndefOr[NullableOption[SignInFrequencyAuthenticationType]] = js.undefined
+  
+  // The possible values are timeBased, everyTime, unknownFutureValue.
+  var frequencyInterval: js.UndefOr[NullableOption[SignInFrequencyInterval]] = js.undefined
+  
   // Possible values are: days, hours.
   var `type`: js.UndefOr[NullableOption[SigninFrequencyType]] = js.undefined
   
@@ -22,6 +28,18 @@ object SignInFrequencySessionControl {
   }
   
   extension [Self <: SignInFrequencySessionControl](x: Self) {
+    
+    inline def setAuthenticationType(value: NullableOption[SignInFrequencyAuthenticationType]): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationTypeNull: Self = StObject.set(x, "authenticationType", null)
+    
+    inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
+    
+    inline def setFrequencyInterval(value: NullableOption[SignInFrequencyInterval]): Self = StObject.set(x, "frequencyInterval", value.asInstanceOf[js.Any])
+    
+    inline def setFrequencyIntervalNull: Self = StObject.set(x, "frequencyInterval", null)
+    
+    inline def setFrequencyIntervalUndefined: Self = StObject.set(x, "frequencyInterval", js.undefined)
     
     inline def setType(value: NullableOption[SigninFrequencyType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

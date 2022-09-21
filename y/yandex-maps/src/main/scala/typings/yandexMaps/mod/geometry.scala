@@ -11,7 +11,7 @@ object geometry {
   
   @JSImport("yandex-maps", "geometry.LineString")
   @js.native
-  class LineString ()
+  open class LineString ()
     extends StObject
        with ILineStringGeometry {
     def this(coordinates: js.Array[js.Array[Double]]) = this()
@@ -64,8 +64,8 @@ object geometry {
     /* CompleteClass */
     var events: IEventManager[js.Object] = js.native
     
-    def fire(`type`: String, eventobject: js.Object): this.type = js.native
-    def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
+    def fire(`type`: String, eventObject: js.Object): this.type = js.native
+    def fire(`type`: String, eventObject: IEvent[js.Object, js.Object]): this.type = js.native
     
     /* CompleteClass */
     override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
@@ -138,7 +138,7 @@ object geometry {
   
   @JSImport("yandex-maps", "geometry.Point")
   @js.native
-  class Point ()
+  open class Point ()
     extends StObject
        with IPointGeometry {
     def this(coordinates: js.Array[Double]) = this()
@@ -155,20 +155,16 @@ object geometry {
   
   @JSImport("yandex-maps", "geometry.Polygon")
   @js.native
-  class Polygon ()
+  open class Polygon ()
     extends StObject
        with IPolygonGeometry {
     def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
-    def this(coordinates: Unit, fillRule: evenOdd) = this()
-    def this(coordinates: Unit, fillRule: nonZero) = this()
+    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
+    def this(coordinates: Unit, fillRule: evenOdd | nonZero) = this()
+    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero, options: js.Object) = this()
     def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: Unit, options: js.Object) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd, options: js.Object) = this()
-    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero, options: js.Object) = this()
+    def this(coordinates: Unit, fillRule: evenOdd | nonZero, options: js.Object) = this()
     def this(coordinates: Unit, fillRule: Unit, options: js.Object) = this()
-    def this(coordinates: Unit, fillRule: evenOdd, options: js.Object) = this()
-    def this(coordinates: Unit, fillRule: nonZero, options: js.Object) = this()
     
     def add(
       types: String,
@@ -216,8 +212,8 @@ object geometry {
     /* CompleteClass */
     var events: IEventManager[js.Object] = js.native
     
-    def fire(`type`: String, eventobject: js.Object): this.type = js.native
-    def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
+    def fire(`type`: String, eventObject: js.Object): this.type = js.native
+    def fire(`type`: String, eventObject: IEvent[js.Object, js.Object]): this.type = js.native
     
     /* CompleteClass */
     override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
@@ -229,10 +225,7 @@ object geometry {
     
     def group(): IEventGroup = js.native
     
-    @JSName("setFillRule")
-    def setFillRule_evenOdd(fillRule: evenOdd): IPolygonGeometryAccess = js.native
-    @JSName("setFillRule")
-    def setFillRule_nonZero(fillRule: nonZero): IPolygonGeometryAccess = js.native
+    def setFillRule(fillRule: evenOdd | nonZero): IPolygonGeometryAccess = js.native
     
     def setParent(): this.type = js.native
     def setParent(parent: js.Object): this.type = js.native
@@ -254,7 +247,7 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.base.LineString")
     @js.native
-    class LineString ()
+    open class LineString ()
       extends StObject
          with IBaseLineStringGeometry {
       
@@ -304,8 +297,8 @@ object geometry {
       /* CompleteClass */
       var events: IEventManager[js.Object] = js.native
       
-      def fire(`type`: String, eventobject: js.Object): this.type = js.native
-      def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
+      def fire(`type`: String, eventObject: js.Object): this.type = js.native
+      def fire(`type`: String, eventObject: IEvent[js.Object, js.Object]): this.type = js.native
       
       /* CompleteClass */
       override def freeze(): IFreezable = js.native
@@ -416,7 +409,7 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.base.Point")
     @js.native
-    class Point ()
+    open class Point ()
       extends StObject
          with IBasePointGeometry {
       
@@ -432,14 +425,12 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.base.Polygon")
     @js.native
-    class Polygon ()
+    open class Polygon ()
       extends StObject
          with IBasePointGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
-      def this(coordinates: Unit, fillRule: evenOdd) = this()
-      def this(coordinates: Unit, fillRule: nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
+      def this(coordinates: Unit, fillRule: evenOdd | nonZero) = this()
       
       def contains(position: js.Array[Double]): Boolean = js.native
       
@@ -472,10 +463,7 @@ object geometry {
       
       def set(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess = js.native
       
-      @JSName("setFillRule")
-      def setFillRule_evenOdd(fillRule: evenOdd): IPolygonGeometryAccess = js.native
-      @JSName("setFillRule")
-      def setFillRule_nonZero(fillRule: nonZero): IPolygonGeometryAccess = js.native
+      def setFillRule(fillRule: evenOdd | nonZero): IPolygonGeometryAccess = js.native
       
       def splice(index: Double, number: Double): js.Array[ILinearRingGeometryAccess] = js.native
       
@@ -499,7 +487,7 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.pixel.Circle")
     @js.native
-    class Circle protected ()
+    open class Circle protected ()
       extends StObject
          with IPixelCircleGeometry {
       def this(coordinates: js.Array[Double], radius: Double) = this()
@@ -537,7 +525,7 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.pixel.LineString")
     @js.native
-    class LineString protected ()
+    open class LineString protected ()
       extends StObject
          with IPixelLineStringGeometry {
       def this(coordinates: js.Array[js.Array[Double]]) = this()
@@ -576,7 +564,7 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.pixel.MultiLineString")
     @js.native
-    class MultiLineString protected ()
+    open class MultiLineString protected ()
       extends StObject
          with IPixelMultiLineGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
@@ -615,19 +603,13 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.pixel.MultiPolygon")
     @js.native
-    class MultiPolygon protected ()
+    open class MultiPolygon protected ()
       extends StObject
          with IPixelMultiPolygonGeometry {
-      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: evenOdd) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: nonZero) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: evenOdd | nonZero) = this()
       def this(
         coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]],
-        fillRule: evenOdd,
-        metaData: js.Object
-      ) = this()
-      def this(
-        coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]],
-        fillRule: nonZero,
+        fillRule: evenOdd | nonZero,
         metaData: js.Object
       ) = this()
       
@@ -670,7 +652,7 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.pixel.Point")
     @js.native
-    class Point ()
+    open class Point ()
       extends StObject
          with IPixelPointGeometry {
       def this(position: js.Array[Double]) = this()
@@ -704,13 +686,15 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.pixel.Polygon")
     @js.native
-    class Polygon protected ()
+    open class Polygon protected ()
       extends StObject
          with IPixelPolygonGeometry {
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd, metaData: js.Object) = this()
-      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero, metaData: js.Object) = this()
+      def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd | nonZero) = this()
+      def this(
+        coordinates: js.Array[js.Array[js.Array[Double]]],
+        fillRule: evenOdd | nonZero,
+        metaData: js.Object
+      ) = this()
       
       /* CompleteClass */
       override def contains(position: js.Array[Double]): Boolean = js.native
@@ -751,7 +735,7 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.pixel.Rectangle")
     @js.native
-    class Rectangle ()
+    open class Rectangle ()
       extends StObject
          with IPixelRectangleGeometry {
       def this(coordinates: js.Array[js.Array[Double]]) = this()

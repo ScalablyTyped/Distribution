@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDockManagerCancelEventArgs")
 @js.native
-class ASPxClientDockManagerCancelEventArgs protected ()
+open class ASPxClientDockManagerCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDockManagerCancelEventArgs {
   /**
@@ -18,7 +18,7 @@ class ASPxClientDockManagerCancelEventArgs protected ()
   def this(panel: typings.devexpressWeb.ASPxClientDockPanel) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

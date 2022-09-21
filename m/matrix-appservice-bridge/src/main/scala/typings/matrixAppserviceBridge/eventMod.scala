@@ -10,7 +10,7 @@ object eventMod {
   
   @JSImport("matrix-appservice-bridge/lib/models/events/event", "StoredEvent")
   @js.native
-  class StoredEvent protected () extends StObject {
+  open class StoredEvent protected () extends StObject {
     /**
       * Create a store event.
       * @param roomId The matrix room ID
@@ -25,10 +25,10 @@ object eventMod {
       eventId: String,
       remoteRoomId: String,
       remoteEventId: String,
-      _extras: Record[String, js.Any]
+      _extras: Record[String, Any]
     ) = this()
     
-    /* private */ val _extras: js.Any = js.native
+    /* private */ val _extras: Any = js.native
     
     var eventId: String = js.native
     
@@ -87,7 +87,7 @@ object eventMod {
       * @param val The data value. This value should be serializable via
       * <code>JSON.stringify(data)</code>.
       */
-    def set(key: String, `val`: js.Any): Unit = js.native
+    def set(key: String, `val`: Any): Unit = js.native
   }
   /* static members */
   object StoredEvent {
@@ -105,7 +105,7 @@ object eventMod {
   
   trait StoredEventDoc extends StObject {
     
-    var extras: Record[String, js.Any]
+    var extras: Record[String, Any]
     
     var id: String
     
@@ -115,14 +115,14 @@ object eventMod {
   }
   object StoredEventDoc {
     
-    inline def apply(extras: Record[String, js.Any], id: String, matrix: EventId_, remote: EventId_): StoredEventDoc = {
+    inline def apply(extras: Record[String, Any], id: String, matrix: EventId_, remote: EventId_): StoredEventDoc = {
       val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoredEventDoc]
     }
     
     extension [Self <: StoredEventDoc](x: Self) {
       
-      inline def setExtras(value: Record[String, js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      inline def setExtras(value: Record[String, Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -9,10 +9,9 @@ object mod {
   
   @JSImport("react-medium-image-zoom", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ImageZoomProps, js.Any, js.Any]
+  open class default () extends Component[ImageZoomProps, Any, Any]
   
-  type ImageZoom = Component[ImageZoomProps, js.Any, js.Any]
+  type ImageZoom = Component[ImageZoomProps, Any, Any]
   
   trait ImageZoomDefaultStyles extends StObject {
     

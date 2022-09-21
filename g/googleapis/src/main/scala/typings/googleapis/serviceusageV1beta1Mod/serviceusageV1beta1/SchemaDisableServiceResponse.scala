@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for the `DisableService` method. This response message is
-  * assigned to the `response` field of the returned Operation when that
-  * operation is done.
-  */
 trait SchemaDisableServiceResponse extends StObject {
   
   /**

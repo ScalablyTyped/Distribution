@@ -60,7 +60,7 @@ object XCloseListener {
     disposing: EventObject => Unit,
     notifyClosing: EventObject => Unit,
     queryClosing: (EventObject, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCloseListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), notifyClosing = js.Any.fromFunction1(notifyClosing), queryClosing = js.Any.fromFunction2(queryClosing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

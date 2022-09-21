@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object number2colorMod {
   
-  @JSImport("@antv/util/lib/number2color", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/number2color", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

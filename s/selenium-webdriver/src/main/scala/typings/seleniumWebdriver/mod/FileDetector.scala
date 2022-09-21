@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("selenium-webdriver", "FileDetector")
 @js.native
 /** @constructor */
-class FileDetector () extends StObject {
+open class FileDetector () extends StObject {
   
   /**
     * Handles the file specified by the given path, preparing it for use with

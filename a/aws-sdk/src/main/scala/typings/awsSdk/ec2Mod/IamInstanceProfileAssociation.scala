@@ -29,7 +29,7 @@ trait IamInstanceProfileAssociation extends StObject {
   /**
     * The time the IAM instance profile was associated with the instance.
     */
-  var Timestamp: js.UndefOr[DateTime] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object IamInstanceProfileAssociation {
   
@@ -56,7 +56,7 @@ object IamInstanceProfileAssociation {
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    inline def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

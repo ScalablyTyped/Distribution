@@ -12,12 +12,12 @@ trait CreateGroupOutput extends StObject {
   var Group: js.UndefOr[typings.awsSdk.resourcegroupsMod.Group] = js.undefined
   
   /**
-    * The service configuration associated with the resource group. AWS Resource Groups supports adding service configurations for the following resource group types:    AWS::EC2::CapacityReservationPool - Amazon EC2 capacity reservation pools. For more information, see Working with capacity reservation groups in the EC2 Users Guide.  
+    * The service configuration associated with the resource group. For details about the syntax of a service configuration, see Service configurations for resource groups.
     */
   var GroupConfiguration: js.UndefOr[typings.awsSdk.resourcegroupsMod.GroupConfiguration] = js.undefined
   
   /**
-    * The resource query associated with the group.
+    * The resource query associated with the group. For more information about resource queries, see Create a tag-based group in Resource Groups. 
     */
   var ResourceQuery: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceQuery] = js.undefined
   

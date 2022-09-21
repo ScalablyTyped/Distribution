@@ -1,29 +1,38 @@
 package typings.angularCommon.anon
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.angularCommon.httpMod.HttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StatusText extends StObject {
+trait StatusText[T] extends StObject {
   
-  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
+  var body: js.UndefOr[T | Null] = js.undefined
+  
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   
   var status: js.UndefOr[Double] = js.undefined
   
   var statusText: js.UndefOr[String] = js.undefined
+  
+  var url: js.UndefOr[String] = js.undefined
 }
 object StatusText {
   
-  inline def apply(): StatusText = {
+  inline def apply[T](): StatusText[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[StatusText]
+    __obj.asInstanceOf[StatusText[T]]
   }
   
-  extension [Self <: StatusText](x: Self) {
+  extension [Self <: StatusText[?], T](x: Self & StatusText[T]) {
     
-    inline def setHeaders(value: HttpHeaders | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyNull: Self = StObject.set(x, "body", null)
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -34,5 +43,9 @@ object StatusText {
     inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

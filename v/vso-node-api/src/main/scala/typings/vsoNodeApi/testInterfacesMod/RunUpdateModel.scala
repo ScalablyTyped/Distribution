@@ -118,7 +118,7 @@ object RunUpdateModel {
     
     inline def setLogEntries(value: js.Array[TestMessageLogDetails]): Self = StObject.set(x, "logEntries", value.asInstanceOf[js.Any])
     
-    inline def setLogEntriesVarargs(value: TestMessageLogDetails*): Self = StObject.set(x, "logEntries", js.Array(value :_*))
+    inline def setLogEntriesVarargs(value: TestMessageLogDetails*): Self = StObject.set(x, "logEntries", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

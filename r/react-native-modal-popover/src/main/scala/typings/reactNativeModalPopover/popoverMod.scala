@@ -20,36 +20,35 @@ object popoverMod {
   
   @JSImport("react-native-modal-popover/lib/Popover", "Popover")
   @js.native
-  class Popover protected ()
-    extends PureComponent[PopoverProps, PopoverState, js.Any] {
+  open class Popover protected () extends PureComponent[PopoverProps, PopoverState, Any] {
     def this(props: PopoverProps) = this()
+    
+    @JSName("UNSAFE_componentWillReceiveProps")
+    def UNSAFE_componentWillReceiveProps_MPopover(nextProps: PopoverProps): Unit = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPopover(): Unit = js.native
     
-    @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MPopover(nextProps: PopoverProps): Unit = js.native
-    
     @JSName("componentWillUnmount")
     def componentWillUnmount_MPopover(): Unit = js.native
     
-    /* private */ var computeGeometry: js.Any = js.native
+    /* private */ var computeGeometry: Any = js.native
     
-    /* private */ var computeStyles: js.Any = js.native
+    /* private */ var computeStyles: Any = js.native
     
-    /* private */ var defaultDisplayArea: js.Any = js.native
+    /* private */ var defaultDisplayArea: Any = js.native
     
-    /* private */ var getTranslateOrigin: js.Any = js.native
+    /* private */ var getTranslateOrigin: Any = js.native
     
-    /* private */ var measureContent: js.Any = js.native
+    /* private */ var measureContent: Any = js.native
     
-    /* private */ var onHidden: js.Any = js.native
+    /* private */ var onHidden: Any = js.native
     
-    /* private */ var onOrientationChange: js.Any = js.native
+    /* private */ var onOrientationChange: Any = js.native
     
-    /* private */ var startAnimation: js.Any = js.native
+    /* private */ var startAnimation: Any = js.native
     
-    /* private */ var updateState: js.Any = js.native
+    /* private */ var updateState: Any = js.native
   }
   /* static members */
   object Popover {
@@ -103,6 +102,8 @@ object popoverMod {
     
     var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
+    var calculateStatusBar: js.UndefOr[Boolean] = js.undefined
+    
     var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     var displayArea: js.UndefOr[Rect] = js.undefined
@@ -152,6 +153,10 @@ object popoverMod {
       
       inline def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
       
+      inline def setCalculateStatusBar(value: Boolean): Self = StObject.set(x, "calculateStatusBar", value.asInstanceOf[js.Any])
+      
+      inline def setCalculateStatusBarUndefined: Self = StObject.set(x, "calculateStatusBar", js.undefined)
+      
       inline def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       inline def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
@@ -194,7 +199,7 @@ object popoverMod {
       
       inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
       
-      inline def setSupportedOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+      inline def setSupportedOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
       
       inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       

@@ -12,7 +12,7 @@ trait DescribeBrokerEngineTypesRequest extends StObject {
   var EngineType: js.UndefOr[string] = js.undefined
   
   /**
-    * The maximum number of engine types that Amazon MQ can return per page (20 by default). This value must be an integer from 5 to 100.
+    * The maximum number of brokers that Amazon MQ can return per page (20 by default). This value must be an integer from 5 to 100.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.mqMod.MaxResults] = js.undefined
   

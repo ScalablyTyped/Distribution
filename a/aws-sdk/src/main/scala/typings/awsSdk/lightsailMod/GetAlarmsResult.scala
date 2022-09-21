@@ -29,7 +29,7 @@ object GetAlarmsResult {
     
     inline def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
     
-    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "alarms", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

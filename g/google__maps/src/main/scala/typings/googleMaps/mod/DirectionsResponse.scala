@@ -55,15 +55,15 @@ object DirectionsResponse {
     
     inline def setAvailable_travel_modes(value: js.Array[String]): Self = StObject.set(x, "available_travel_modes", value.asInstanceOf[js.Any])
     
-    inline def setAvailable_travel_modesVarargs(value: String*): Self = StObject.set(x, "available_travel_modes", js.Array(value :_*))
+    inline def setAvailable_travel_modesVarargs(value: String*): Self = StObject.set(x, "available_travel_modes", js.Array(value*))
     
     inline def setGeocoded_waypoints(value: js.Array[GeocodedWaypoint]): Self = StObject.set(x, "geocoded_waypoints", value.asInstanceOf[js.Any])
     
-    inline def setGeocoded_waypointsVarargs(value: GeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value :_*))
+    inline def setGeocoded_waypointsVarargs(value: GeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value*))
     
     inline def setRoutes(value: js.Array[DirectionsRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStatus(value: DirectionsReponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

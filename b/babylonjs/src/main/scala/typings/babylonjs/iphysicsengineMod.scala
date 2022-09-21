@@ -19,7 +19,7 @@ object iphysicsengineMod {
     
     /**
       * Called by the scene. No need to call it.
-      * @param delta defines the timespam between frames
+      * @param delta defines the timespan between frames
       */
     def _step(delta: Double): Unit
     
@@ -55,7 +55,7 @@ object iphysicsengineMod {
       * @param body defines physics body used by the impostor
       * @returns the PhysicsImpostor or null if not found
       */
-    def getImpostorWithPhysicsBody(body: js.Any): Nullable[PhysicsImpostor]
+    def getImpostorWithPhysicsBody(body: Any): Nullable[PhysicsImpostor]
     
     /**
       * Gets the list of physic impostors
@@ -146,7 +146,7 @@ object iphysicsengineMod {
       addJoint: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit,
       dispose: () => Unit,
       getImpostorForPhysicsObject: IPhysicsEnabledObject => Nullable[PhysicsImpostor],
-      getImpostorWithPhysicsBody: js.Any => Nullable[PhysicsImpostor],
+      getImpostorWithPhysicsBody: Any => Nullable[PhysicsImpostor],
       getImpostors: () => js.Array[PhysicsImpostor],
       getPhysicsPlugin: () => IPhysicsEnginePlugin,
       getPhysicsPluginName: () => String,
@@ -174,7 +174,7 @@ object iphysicsengineMod {
       
       inline def setGetImpostorForPhysicsObject(value: IPhysicsEnabledObject => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorForPhysicsObject", js.Any.fromFunction1(value))
       
-      inline def setGetImpostorWithPhysicsBody(value: js.Any => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorWithPhysicsBody", js.Any.fromFunction1(value))
+      inline def setGetImpostorWithPhysicsBody(value: Any => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorWithPhysicsBody", js.Any.fromFunction1(value))
       
       inline def setGetImpostors(value: () => js.Array[PhysicsImpostor]): Self = StObject.set(x, "getImpostors", js.Any.fromFunction0(value))
       
@@ -325,7 +325,7 @@ object iphysicsengineMod {
     
     def wakeUpBody(impostor: PhysicsImpostor): Unit = js.native
     
-    var world: js.Any = js.native
+    var world: Any = js.native
   }
   
   trait PhysicsImpostorJoint extends StObject {

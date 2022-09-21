@@ -127,11 +127,11 @@ object ViewModel {
   object UpdateEvent {
     
     inline def apply(
-      currentTarget: js.Any,
+      currentTarget: Any,
       defaultPrevented: Boolean,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: js.Any,
+      target: Any,
       `type`: String
     ): UpdateEvent = {
       val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])

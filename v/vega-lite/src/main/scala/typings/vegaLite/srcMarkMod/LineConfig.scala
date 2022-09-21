@@ -6,11 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineConfig[ES /* <: ExprRef | SignalRef */]
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.vegaLite.srcMarkMod.AnyMarkConfig because Already inherited */ trait LineConfig[ES /* <: ExprRef | SignalRef */]
   extends StObject
      with MarkConfig[ES]
      with PointOverlayMixins[ES]
-     with _AnyMarkConfig[ES]
 object LineConfig {
   
   inline def apply[ES /* <: ExprRef | SignalRef */](): LineConfig[ES] = {

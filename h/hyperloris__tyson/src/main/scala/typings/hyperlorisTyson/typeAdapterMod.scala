@@ -10,12 +10,12 @@ object typeAdapterMod {
   @js.native
   abstract class TypeAdapter[T] () extends StObject {
     
-    /* protected */ def _fromJson(json: js.Any): T | js.Array[T] = js.native
+    /* protected */ def _fromJson(json: Any): T | js.Array[T] = js.native
     
-    /* protected */ def _toJson(src: T): js.Any = js.native
+    /* protected */ def _toJson(src: T): Any = js.native
     
-    def fromJson(json: js.Any): js.UndefOr[T | js.Array[T]] = js.native
+    def fromJson(json: Any): js.UndefOr[T | js.Array[T]] = js.native
     
-    def toJson(src: T): js.Any = js.native
+    def toJson(src: T): Any = js.native
   }
 }

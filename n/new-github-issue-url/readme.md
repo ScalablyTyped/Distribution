@@ -1,7 +1,7 @@
 
 # Scala.js typings for new-github-issue-url
 
-Typings are for version 0.2.1
+Typings are for version 1.0.0
 
 ## Library description:
 Generate a URL for opening a new GitHub issue with prefilled title, body, and other fields
@@ -11,9 +11,9 @@ Generate a URL for opening a new GitHub issue with prefilled title, body, and ot
 | Full name          | new-github-issue-url |
 | Keywords           | github, issue, new, generate, url, gh, query, search, parameters, params |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 686563 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 283032.6666666667 |
+| # stars            | 215.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/new-github-issue-url#readme)

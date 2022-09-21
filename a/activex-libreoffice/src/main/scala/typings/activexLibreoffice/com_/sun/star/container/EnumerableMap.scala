@@ -54,7 +54,7 @@ trait EnumerableMap
     * @throws com::sun::star::beans::IllegalTypeException if KeyType or ValueType are unsupported types. For values, all type classes except com::sun::star::un
     * @throws com::sun::star::lang::IllegalArgumentException if any of the given values or keys violates the [key rules]{@link url="#keyrules"} or [value rules
     */
-  def createImmutable(KeyType: `type`, ValueType: `type`, Values: SeqEquiv[Pair[js.Any, js.Any]]): Unit
+  def createImmutable(KeyType: `type`, ValueType: `type`, Values: SeqEquiv[Pair[Any, Any]]): Unit
 }
 object EnumerableMap {
   
@@ -64,20 +64,20 @@ object EnumerableMap {
     ValueType: `type`,
     acquire: () => Unit,
     clear: () => Unit,
-    containsKey: js.Any => Boolean,
-    containsValue: js.Any => Boolean,
+    containsKey: Any => Boolean,
+    containsValue: Any => Boolean,
     create: (`type`, `type`) => Unit,
     createElementEnumeration: Boolean => XEnumeration,
-    createImmutable: (`type`, `type`, SeqEquiv[Pair[js.Any, js.Any]]) => Unit,
+    createImmutable: (`type`, `type`, SeqEquiv[Pair[Any, Any]]) => Unit,
     createKeyEnumeration: Boolean => XEnumeration,
     createValueEnumeration: Boolean => XEnumeration,
-    get: js.Any => js.Any,
+    get: Any => Any,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    put: (js.Any, js.Any) => js.Any,
-    queryInterface: `type` => js.Any,
+    put: (Any, Any) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    remove: js.Any => js.Any
+    remove: Any => Any
   ): EnumerableMap = {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), containsKey = js.Any.fromFunction1(containsKey), containsValue = js.Any.fromFunction1(containsValue), create = js.Any.fromFunction2(create), createElementEnumeration = js.Any.fromFunction1(createElementEnumeration), createImmutable = js.Any.fromFunction3(createImmutable), createKeyEnumeration = js.Any.fromFunction1(createKeyEnumeration), createValueEnumeration = js.Any.fromFunction1(createValueEnumeration), get = js.Any.fromFunction1(get), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), put = js.Any.fromFunction2(put), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[EnumerableMap]
@@ -87,6 +87,6 @@ object EnumerableMap {
     
     inline def setCreate(value: (`type`, `type`) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    inline def setCreateImmutable(value: (`type`, `type`, SeqEquiv[Pair[js.Any, js.Any]]) => Unit): Self = StObject.set(x, "createImmutable", js.Any.fromFunction3(value))
+    inline def setCreateImmutable(value: (`type`, `type`, SeqEquiv[Pair[Any, Any]]) => Unit): Self = StObject.set(x, "createImmutable", js.Any.fromFunction3(value))
   }
 }

@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hiddenMod extends Shortcut {
   
+  /**
+    * Responsively hides children based on the selected implementation.
+    * Demos:
+    *
+    * - [Hidden](https://mui.com/components/hidden/)
+    *
+    * API:
+    *
+    * - [Hidden API](https://mui.com/api/hidden/)
+    */
   @JSImport("@material-ui/core/Hidden", JSImport.Default)
   @js.native
   val default: ComponentType[HiddenProps] = js.native

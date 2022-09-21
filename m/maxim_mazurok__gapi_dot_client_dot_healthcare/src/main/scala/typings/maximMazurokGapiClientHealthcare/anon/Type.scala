@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientHealthcare.anon
 
+import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.HttpBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,6 +38,9 @@ trait Type extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: HttpBody
+  
   /**
     * The FHIR resource type to create, such as Patient or Observation. For a complete list, see the FHIR Resource Index
     * ([DSTU2](http://hl7.org/implement/standards/fhir/DSTU2/resourcelist.html), [STU3](http://hl7.org/implement/standards/fhir/STU3/resourcelist.html),
@@ -52,8 +56,8 @@ trait Type extends StObject {
 }
 object Type {
   
-  inline def apply(parent: String, `type`: String): Type = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: HttpBody, `type`: String): Type = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
@@ -97,6 +101,8 @@ object Type {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: HttpBody): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

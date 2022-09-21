@@ -1,0 +1,34 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait `200ContentApplicationjsonBodytextCommitid` extends StObject {
+  
+  /** Response */
+  var `200`: ContentApplicationjsonBodytextCommitid
+  
+  var `403`: Content55
+  
+  var `422`: Content418
+}
+object `200ContentApplicationjsonBodytextCommitid` {
+  
+  inline def apply(`200`: ContentApplicationjsonBodytextCommitid, `403`: Content55, `422`: Content418): `200ContentApplicationjsonBodytextCommitid` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
+    __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`200ContentApplicationjsonBodytextCommitid`]
+  }
+  
+  extension [Self <: `200ContentApplicationjsonBodytextCommitid`](x: Self) {
+    
+    inline def set200(value: ContentApplicationjsonBodytextCommitid): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    
+    inline def set403(value: Content55): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    
+    inline def set422(value: Content418): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+  }
+}

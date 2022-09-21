@@ -1,14 +1,15 @@
 package typings.ionicUtilsSubprocess
 
 import typings.node.childProcessMod.ChildProcess
+import typings.node.childProcessMod.IOType
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.StdioOptions
-import typings.node.nodeStrings.ignore
-import typings.node.nodeStrings.inherit
+import typings.node.nodeStreamMod.Stream
 import typings.node.nodeStrings.ipc
-import typings.node.nodeStrings.pipe
+import typings.node.nodeUrlMod.URL
 import typings.node.processMod.global.NodeJS.ProcessEnv
-import typings.node.streamMod.Stream
+import typings.node.processMod.global.NodeJS.Signals
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ object anon {
   /* Inlined node.child_process.ForkOptions & std.Pick<node.child_process.SpawnOptions, 'stdio'> */
   trait ForkOptionsPickSpawnOptio extends StObject {
     
-    var cwd: js.UndefOr[String] = js.undefined
+    var cwd: js.UndefOr[String | URL] = js.undefined
     
     var detached: js.UndefOr[Boolean] = js.undefined
     
@@ -31,14 +32,30 @@ object anon {
     var gid: js.UndefOr[Double] = js.undefined
     
     /**
+      * The signal value to be used when the spawned process will be killed by the abort signal.
+      * @default 'SIGTERM'
+      */
+    var killSignal: js.UndefOr[Signals | Double] = js.undefined
+    
+    /**
       * Specify the kind of serialization used for sending messages between processes.
       * @default 'json'
       */
     var serialization: js.UndefOr[SerializationType] = js.undefined
     
+    /**
+      * When provided the corresponding `AbortController` can be used to cancel an asynchronous action.
+      */
+    var signal: js.UndefOr[AbortSignal] = js.undefined
+    
     var silent: js.UndefOr[Boolean] = js.undefined
     
     var stdio: js.UndefOr[StdioOptions] = js.undefined
+    
+    /**
+      * In milliseconds the maximum amount of time the process is allowed to run.
+      */
+    var timeout: js.UndefOr[Double] = js.undefined
     
     var uid: js.UndefOr[Double] = js.undefined
     
@@ -53,7 +70,7 @@ object anon {
     
     extension [Self <: ForkOptionsPickSpawnOptio](x: Self) {
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -69,7 +86,7 @@ object anon {
       
       inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
-      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
+      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
       
       inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
       
@@ -79,9 +96,17 @@ object anon {
       
       inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
+      inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+      
+      inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+      
       inline def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
       
       inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
@@ -91,7 +116,11 @@ object anon {
       
       inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
       
-      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[IOType | ipc | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
       inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
@@ -112,8 +141,9 @@ object anon {
       * @param onrejected The callback to execute when the Promise is rejected.
       * @returns A Promise for the completion of the callback.
       */
+    /* standard es5 */
     def `catch`[TResult](): js.Promise[Unit | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Unit | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[Unit | TResult] = js.native
     
     /**
       * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
@@ -121,6 +151,7 @@ object anon {
       * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
       * @returns A Promise for the completion of the callback.
       */
+    /* standard es2018.promise */
     def `finally`(): js.Promise[Unit] = js.native
     def `finally`(onfinally: js.Function0[Unit]): js.Promise[Unit] = js.native
     
@@ -132,15 +163,17 @@ object anon {
       * @param onrejected The callback to execute when the Promise is rejected.
       * @returns A Promise for the completion of which ever callback is executed.
       */
+    /* standard es5 */
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Unit, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ Unit, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
     
+    /* standard es2015.symbol.wellknown */
     @JSName(js.Symbol.toStringTag)
     val toStringTag: String = js.native
   }
@@ -150,7 +183,7 @@ object anon {
     
     val argv0: js.UndefOr[String] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val detached: js.UndefOr[Boolean] = js.undefined
     
@@ -158,9 +191,13 @@ object anon {
     
     val gid: js.UndefOr[Double] = js.undefined
     
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
+    
     val serialization: js.UndefOr[SerializationType] = js.undefined
     
     val shell: js.UndefOr[Boolean | String] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val stdio: js.UndefOr[StdioOptions] = js.undefined
     
@@ -185,7 +222,7 @@ object anon {
       
       inline def setArgv0Undefined: Self = StObject.set(x, "argv0", js.undefined)
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -201,6 +238,10 @@ object anon {
       
       inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
+      inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+      
+      inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+      
       inline def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
       
       inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
@@ -209,11 +250,15 @@ object anon {
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
       inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
       
-      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[IOType | ipc | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

@@ -13,20 +13,20 @@ object pointsLayerMod {
   
   @JSImport("ol/renderer/webgl/PointsLayer", JSImport.Default)
   @js.native
-  class default protected () extends WebGLPointsLayerRenderer {
+  open class default protected () extends WebGLPointsLayerRenderer {
     def this(layer: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], options: Options) = this()
   }
   
   trait CustomAttribute extends StObject {
     
-    def callback(p0: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], p1: StringDictionary[js.Any]): Double
+    def callback(p0: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], p1: StringDictionary[Any]): Double
     
     var name: String
   }
   object CustomAttribute {
     
     inline def apply(
-      callback: (typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], StringDictionary[js.Any]) => Double,
+      callback: (typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], StringDictionary[Any]) => Double,
       name: String
     ): CustomAttribute = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), name = name.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object pointsLayerMod {
     extension [Self <: CustomAttribute](x: Self) {
       
       inline def setCallback(
-        value: (typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], StringDictionary[js.Any]) => Double
+        value: (typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], StringDictionary[Any]) => Double
       ): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -49,14 +49,14 @@ object pointsLayerMod {
     
     var geometry: typings.ol.geometryMod.default
     
-    var properties: StringDictionary[js.Any]
+    var properties: StringDictionary[Any]
   }
   object FeatureCacheItem {
     
     inline def apply(
       feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],
       geometry: typings.ol.geometryMod.default,
-      properties: StringDictionary[js.Any]
+      properties: StringDictionary[Any]
     ): FeatureCacheItem = {
       val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeatureCacheItem]
@@ -68,13 +68,15 @@ object pointsLayerMod {
       
       inline def setGeometry(value: typings.ol.geometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
   trait Options extends StObject {
     
     var attributes: js.UndefOr[js.Array[CustomAttribute]] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
     
     var fragmentShader: String
     
@@ -101,7 +103,11 @@ object pointsLayerMod {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
@@ -117,7 +123,7 @@ object pointsLayerMod {
       
       inline def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
       
-      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
+      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value*))
       
       inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       

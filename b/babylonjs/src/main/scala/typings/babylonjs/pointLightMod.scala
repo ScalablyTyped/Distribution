@@ -11,7 +11,7 @@ object pointLightMod {
   
   @JSImport("babylonjs/Lights/pointLight", "PointLight")
   @js.native
-  class PointLight protected () extends ShadowLight {
+  open class PointLight protected () extends ShadowLight {
     /**
       * Creates a PointLight object from the passed name and position (Vector3) and adds it in the scene.
       * A PointLight emits the light in every direction.
@@ -27,7 +27,7 @@ object pointLightMod {
       */
     def this(name: String, position: Vector3, scene: Scene) = this()
     
-    /* private */ var _shadowAngle: js.Any = js.native
+    /* private */ var _shadowAngle: Any = js.native
     
     /**
       * Gets the direction if it has been set.

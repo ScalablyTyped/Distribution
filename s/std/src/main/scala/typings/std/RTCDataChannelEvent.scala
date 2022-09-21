@@ -9,5 +9,6 @@ trait RTCDataChannelEvent
   extends StObject
      with Event {
   
+  /* standard dom */
   val channel: RTCDataChannel = js.native
 }

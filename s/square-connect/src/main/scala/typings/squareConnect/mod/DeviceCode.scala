@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DeviceCode")
 @js.native
-class DeviceCode () extends StObject {
+open class DeviceCode () extends StObject {
   
   /**
     * The unique code that can be used to login.

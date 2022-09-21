@@ -8,5 +8,5 @@ object grantConstraintsMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/_GrantConstraints", "_GrantConstraints")
   @js.native
-  val GrantConstraints: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GrantConstraints: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

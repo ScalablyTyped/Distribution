@@ -1,7 +1,7 @@
 
 # Scala.js typings for sane-email-validation
 
-Typings are for version 1.1
+Typings are for version 3.0
 
 ## Library description:
 Sanely validate email addresses, based on HTML5's definition of email addresses
@@ -10,10 +10,10 @@ Sanely validate email addresses, based on HTML5's definition of email addresses
 | ------------------ | :-------------: |
 | Full name          | sane-email-validation |
 | Keywords           | email, validation, validate |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 94665 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10159.0 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/scottgonzalez/sane-email-validation)

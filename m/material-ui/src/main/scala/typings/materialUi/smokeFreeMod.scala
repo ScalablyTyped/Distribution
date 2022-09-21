@@ -10,10 +10,10 @@ object smokeFreeMod {
   
   @JSImport("material-ui/svg-icons/places/smoke-free", JSImport.Default)
   @js.native
-  class default () extends PlacesSmokeFree
+  open class default () extends PlacesSmokeFree
   
   @JSImport("material-ui/svg-icons/places/smoke-free", "PlacesSmokeFree")
   @js.native
-  class PlacesSmokeFree ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesSmokeFree ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

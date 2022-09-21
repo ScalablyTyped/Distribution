@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ProjectsResource extends StObject {
   
+  var schemas: SchemasResource
+  
   var snapshots: SnapshotsResource
   
   var subscriptions: SubscriptionsResource
@@ -14,12 +16,19 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  inline def apply(snapshots: SnapshotsResource, subscriptions: SubscriptionsResource, topics: TopicsResource): ProjectsResource = {
-    val __obj = js.Dynamic.literal(snapshots = snapshots.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any])
+  inline def apply(
+    schemas: SchemasResource,
+    snapshots: SnapshotsResource,
+    subscriptions: SubscriptionsResource,
+    topics: TopicsResource
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(schemas = schemas.asInstanceOf[js.Any], snapshots = snapshots.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
   extension [Self <: ProjectsResource](x: Self) {
+    
+    inline def setSchemas(value: SchemasResource): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     inline def setSnapshots(value: SnapshotsResource): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
     

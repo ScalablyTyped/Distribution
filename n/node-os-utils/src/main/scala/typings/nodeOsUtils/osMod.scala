@@ -8,7 +8,7 @@ object osMod {
   
   @JSImport("node-os-utils/lib/os", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Os {
     

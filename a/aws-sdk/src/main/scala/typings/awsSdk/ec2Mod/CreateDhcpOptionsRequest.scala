@@ -32,7 +32,7 @@ object CreateDhcpOptionsRequest {
     
     inline def setDhcpConfigurations(value: NewDhcpConfigurationList): Self = StObject.set(x, "DhcpConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setDhcpConfigurationsVarargs(value: NewDhcpConfiguration*): Self = StObject.set(x, "DhcpConfigurations", js.Array(value :_*))
+    inline def setDhcpConfigurationsVarargs(value: NewDhcpConfiguration*): Self = StObject.set(x, "DhcpConfigurations", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
@@ -42,6 +42,6 @@ object CreateDhcpOptionsRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

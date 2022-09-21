@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERUTCTime")
 @js.native
-class DERUTCTime ()
+open class DERUTCTime ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERUTCTime {
   def this(params: String) = this()
   def this(params: DateParam) = this()

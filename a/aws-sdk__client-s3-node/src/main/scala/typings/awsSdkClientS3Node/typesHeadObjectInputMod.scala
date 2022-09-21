@@ -4,7 +4,6 @@ import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.requester_
 import typings.awsSdkClientS3Node.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
 import typings.awsSdkTypes.cryptoMod.SourceData
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +48,7 @@ object typesHeadObjectInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -89,7 +88,7 @@ object typesHeadObjectInputMod {
     /**
       * <p>Return the object only if it has been modified since the specified time, otherwise return a 304 (not modified).</p>
       */
-    var IfModifiedSince: js.UndefOr[Date | String | Double] = js.undefined
+    var IfModifiedSince: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Return the object only if its entity tag (ETag) is different from the one specified, otherwise return a 304 (not modified).</p>
@@ -99,7 +98,7 @@ object typesHeadObjectInputMod {
     /**
       * <p>Return the object only if it has not been modified since the specified time, otherwise return a 412 (precondition failed).</p>
       */
-    var IfUnmodifiedSince: js.UndefOr[Date | String | Double] = js.undefined
+    var IfUnmodifiedSince: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * _ObjectKey shape
@@ -153,7 +152,7 @@ object typesHeadObjectInputMod {
       inline def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -180,7 +179,7 @@ object typesHeadObjectInputMod {
       
       inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
       
-      inline def setIfModifiedSince(value: Date | String | Double): Self = StObject.set(x, "IfModifiedSince", value.asInstanceOf[js.Any])
+      inline def setIfModifiedSince(value: js.Date | String | Double): Self = StObject.set(x, "IfModifiedSince", value.asInstanceOf[js.Any])
       
       inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "IfModifiedSince", js.undefined)
       
@@ -188,7 +187,7 @@ object typesHeadObjectInputMod {
       
       inline def setIfNoneMatchUndefined: Self = StObject.set(x, "IfNoneMatch", js.undefined)
       
-      inline def setIfUnmodifiedSince(value: Date | String | Double): Self = StObject.set(x, "IfUnmodifiedSince", value.asInstanceOf[js.Any])
+      inline def setIfUnmodifiedSince(value: js.Date | String | Double): Self = StObject.set(x, "IfUnmodifiedSince", value.asInstanceOf[js.Any])
       
       inline def setIfUnmodifiedSinceUndefined: Self = StObject.set(x, "IfUnmodifiedSince", js.undefined)
       

@@ -14,7 +14,7 @@ object global {
       */
     @JSGlobal("Slideout")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.slideout.mod.^ {
       /**
         * A touch slideout navigation menu for your mobile web apps.

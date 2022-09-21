@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientHintOptions class with default settings.
   */
-class ASPxClientHintOptions ()
+open class ASPxClientHintOptions ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHintOptions {
   
@@ -34,7 +34,7 @@ class ASPxClientHintOptions ()
     * Gets or sets whether it should use animation effects when a hint appears.
     */
   /* CompleteClass */
-  var animation: js.Any = js.native
+  var animation: Any = js.native
   
   /**
     * Gets or sets the delay in displaying the hint.

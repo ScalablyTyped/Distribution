@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EmailOptions extends StObject {
   
   /**
+    * if `true`, domains ending with a `.` character are permitted
+    *
+    * @default false
+    */
+  var allowFullyQualified: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If `true`, Unicode characters are permitted
     *
     * @default true
@@ -58,6 +65,10 @@ object EmailOptions {
   
   extension [Self <: EmailOptions](x: Self) {
     
+    inline def setAllowFullyQualified(value: Boolean): Self = StObject.set(x, "allowFullyQualified", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFullyQualifiedUndefined: Self = StObject.set(x, "allowFullyQualified", js.undefined)
+    
     inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
     
     inline def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
@@ -78,7 +89,7 @@ object EmailOptions {
     
     inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    inline def setSeparatorVarargs(value: String*): Self = StObject.set(x, "separator", js.Array(value :_*))
+    inline def setSeparatorVarargs(value: String*): Self = StObject.set(x, "separator", js.Array(value*))
     
     inline def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
     

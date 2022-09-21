@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.Face")
 @js.native
-class Face ()
+open class Face ()
   extends typings.ndnJs.mod.Face {
   def this(settings: FaceCtorOptions) = this()
   def this(

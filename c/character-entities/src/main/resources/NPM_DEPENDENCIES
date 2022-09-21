@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "character-entities" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "character-entities" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

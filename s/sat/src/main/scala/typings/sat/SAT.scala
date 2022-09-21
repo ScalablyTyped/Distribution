@@ -114,11 +114,11 @@ object SAT {
       
       inline def setCalcPoints(value: js.Array[Vector]): Self = StObject.set(x, "calcPoints", value.asInstanceOf[js.Any])
       
-      inline def setCalcPointsVarargs(value: Vector*): Self = StObject.set(x, "calcPoints", js.Array(value :_*))
+      inline def setCalcPointsVarargs(value: Vector*): Self = StObject.set(x, "calcPoints", js.Array(value*))
       
       inline def setEdges(value: js.Array[Vector]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      inline def setEdgesVarargs(value: Vector*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Vector*): Self = StObject.set(x, "edges", js.Array(value*))
       
       inline def setGetAABB(value: () => Polygon): Self = StObject.set(x, "getAABB", js.Any.fromFunction0(value))
       
@@ -126,13 +126,13 @@ object SAT {
       
       inline def setNormals(value: js.Array[Vector]): Self = StObject.set(x, "normals", value.asInstanceOf[js.Any])
       
-      inline def setNormalsVarargs(value: Vector*): Self = StObject.set(x, "normals", js.Array(value :_*))
+      inline def setNormalsVarargs(value: Vector*): Self = StObject.set(x, "normals", js.Array(value*))
       
       inline def setOffset(value: Vector): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setPoints(value: js.Array[Vector]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: Vector*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Vector*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setPos(value: Vector): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
@@ -150,11 +150,11 @@ object SAT {
   
   trait Response extends StObject {
     
-    var a: js.Any
+    var a: Any
     
     var aInB: Boolean
     
-    var b: js.Any
+    var b: Any
     
     var bInA: Boolean
     
@@ -169,9 +169,9 @@ object SAT {
   object Response {
     
     inline def apply(
-      a: js.Any,
+      a: Any,
       aInB: Boolean,
-      b: js.Any,
+      b: Any,
       bInA: Boolean,
       clear: () => Response,
       overlap: Double,
@@ -184,11 +184,11 @@ object SAT {
     
     extension [Self <: Response](x: Self) {
       
-      inline def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
       inline def setAInB(value: Boolean): Self = StObject.set(x, "aInB", value.asInstanceOf[js.Any])
       
-      inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
       inline def setBInA(value: Boolean): Self = StObject.set(x, "bInA", value.asInstanceOf[js.Any])
       

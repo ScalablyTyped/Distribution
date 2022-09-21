@@ -8,11 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VariableStatement
   extends StObject
      with Statement
-     with JSDocContainer
-     with HasJSDoc {
+     with HasJSDoc
+     with HasModifiers {
   
   val declarationList: VariableDeclarationList = js.native
   
   @JSName("kind")
   val kind_VariableStatement: typings.typescript.mod.SyntaxKind.VariableStatement = js.native
+  
+  @JSName("modifiers")
+  val modifiers_VariableStatement: js.UndefOr[NodeArray[Modifier]] = js.native
 }

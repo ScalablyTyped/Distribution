@@ -1,6 +1,5 @@
 package typings.durandal
 
-import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
@@ -30,7 +29,7 @@ trait DurandalViewEngineModule extends StObject {
     * @param {Error} requirePath The error that was returned from the attempt to locate the default view.
     * @returns {Promise} A promise for the fallback view.
     */
-  def createFallbackView(viewId: String, requirePath: String, err: Error): DurandalPromise[HTMLElement]
+  def createFallbackView(viewId: String, requirePath: String, err: js.Error): DurandalPromise[HTMLElement]
   
   /**
     * Creates the view associated with the view id.
@@ -104,7 +103,7 @@ object DurandalViewEngineModule {
   inline def apply(
     convertViewIdToRequirePath: String => String,
     convertViewUrlToViewId: String => String,
-    createFallbackView: (String, String, Error) => DurandalPromise[HTMLElement],
+    createFallbackView: (String, String, js.Error) => DurandalPromise[HTMLElement],
     createView: String => DurandalPromise[HTMLElement],
     ensureSingleElement: js.Array[Node] => HTMLElement,
     isViewUrl: String => Boolean,
@@ -126,7 +125,7 @@ object DurandalViewEngineModule {
     
     inline def setConvertViewUrlToViewId(value: String => String): Self = StObject.set(x, "convertViewUrlToViewId", js.Any.fromFunction1(value))
     
-    inline def setCreateFallbackView(value: (String, String, Error) => DurandalPromise[HTMLElement]): Self = StObject.set(x, "createFallbackView", js.Any.fromFunction3(value))
+    inline def setCreateFallbackView(value: (String, String, js.Error) => DurandalPromise[HTMLElement]): Self = StObject.set(x, "createFallbackView", js.Any.fromFunction3(value))
     
     inline def setCreateView(value: String => DurandalPromise[HTMLElement]): Self = StObject.set(x, "createView", js.Any.fromFunction1(value))
     

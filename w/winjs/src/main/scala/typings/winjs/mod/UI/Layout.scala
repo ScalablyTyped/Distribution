@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSImport("winjs", "UI.Layout")
 @js.native
-class Layout ()
+open class Layout ()
   extends StObject
      with typings.winjs.WinJS.UI.Layout
 object Layout {

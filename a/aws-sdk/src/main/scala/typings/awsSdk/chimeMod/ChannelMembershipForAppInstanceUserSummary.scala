@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChannelMembershipForAppInstanceUserSummary extends StObject {
   
-  /**
-    * Returns the channel membership data for an app instance.
-    */
   var AppInstanceUserMembershipSummary: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceUserMembershipSummary] = js.undefined
   
   var ChannelSummary: js.UndefOr[typings.awsSdk.chimeMod.ChannelSummary] = js.undefined

@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactSlickStrings {
   
   @js.native
+  sealed trait anticipated
+    extends StObject
+       with LazyLoadTypes
+  inline def anticipated: anticipated = "anticipated".asInstanceOf[anticipated]
+  
+  @js.native
   sealed trait down
     extends StObject
        with _SwipeDirection

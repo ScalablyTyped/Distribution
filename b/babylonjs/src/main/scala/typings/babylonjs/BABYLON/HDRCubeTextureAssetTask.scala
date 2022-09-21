@@ -30,8 +30,8 @@ trait HDRCubeTextureAssetTask
     */
   def onError(task: HDRCubeTextureAssetTask): Unit = js.native
   def onError(task: HDRCubeTextureAssetTask, message: String): Unit = js.native
-  def onError(task: HDRCubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
-  def onError(task: HDRCubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
+  def onError(task: HDRCubeTextureAssetTask, message: String, exception: Any): Unit = js.native
+  def onError(task: HDRCubeTextureAssetTask, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

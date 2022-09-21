@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IEventTarget")
 @js.native
-/* private */ class IEventTarget ()
+/* private */ open class IEventTarget ()
   extends StObject
      with typings.activexMshtml.MSHTML.IEventTarget {
   
@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotIEventTarget_typekey: typings.activexMshtml.MSHTML.IEventTarget = js.native
   
   /* CompleteClass */
-  override def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, listener: Any, useCapture: Boolean): Unit = js.native
   
   /* CompleteClass */
   override def dispatchEvent(evt: typings.activexMshtml.MSHTML.IDOMEvent): Boolean = js.native
   
   /* CompleteClass */
-  override def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
+  override def removeEventListener(`type`: String, listener: Any, useCapture: Boolean): Unit = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.GroupLevel")
 @js.native
-/* private */ class GroupLevel ()
+/* private */ open class GroupLevel ()
   extends StObject
      with typings.activexAccess.Access.GroupLevel {
   
@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var KeepTogether: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Properties(Index: String): typings.activexAccess.Access.AccessProperty = js.native

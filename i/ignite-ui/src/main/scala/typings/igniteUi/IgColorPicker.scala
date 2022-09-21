@@ -11,7 +11,7 @@ trait IgColorPicker
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * The event is fired when a color is selected.
@@ -33,7 +33,7 @@ trait IgColorPicker
     *             visually separated from the default colors. The array should contain the color values.
     *
     */
-  var standardColors: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var standardColors: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object IgColorPicker {
   
@@ -52,10 +52,10 @@ object IgColorPicker {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setStandardColors(value: js.Array[js.Any]): Self = StObject.set(x, "standardColors", value.asInstanceOf[js.Any])
+    inline def setStandardColors(value: js.Array[Any]): Self = StObject.set(x, "standardColors", value.asInstanceOf[js.Any])
     
     inline def setStandardColorsUndefined: Self = StObject.set(x, "standardColors", js.undefined)
     
-    inline def setStandardColorsVarargs(value: js.Any*): Self = StObject.set(x, "standardColors", js.Array(value :_*))
+    inline def setStandardColorsVarargs(value: Any*): Self = StObject.set(x, "standardColors", js.Array(value*))
   }
 }

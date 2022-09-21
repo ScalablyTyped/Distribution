@@ -66,7 +66,7 @@ object mediaItemMod {
   
   @JSImport("rbx/components/media/media-item", "MediaItem")
   @js.native
-  val MediaItem: ForwardRefAsExoticComponent[MediaItemProps, ElementType[js.Any]] = js.native
+  val MediaItem: ForwardRefAsExoticComponent[MediaItemProps, ElementType[Any]] = js.native
   
   trait MediaItemModifierProps extends StObject {
     

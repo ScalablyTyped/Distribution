@@ -1,6 +1,5 @@
 package typings.storybookCsf
 
-import typings.std.RegExp
 import typings.storybookCsf.anon.Groups
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,36 +40,36 @@ object mod {
       
       inline def setExcludeStoriesUndefined: Self = StObject.set(x, "excludeStories", js.undefined)
       
-      inline def setExcludeStoriesVarargs(value: String*): Self = StObject.set(x, "excludeStories", js.Array(value :_*))
+      inline def setExcludeStoriesVarargs(value: String*): Self = StObject.set(x, "excludeStories", js.Array(value*))
       
       inline def setIncludeStories(value: StoryDescriptor): Self = StObject.set(x, "includeStories", value.asInstanceOf[js.Any])
       
       inline def setIncludeStoriesUndefined: Self = StObject.set(x, "includeStories", js.undefined)
       
-      inline def setIncludeStoriesVarargs(value: String*): Self = StObject.set(x, "includeStories", js.Array(value :_*))
+      inline def setIncludeStoriesVarargs(value: String*): Self = StObject.set(x, "includeStories", js.Array(value*))
     }
   }
   
   trait SeparatorOptions extends StObject {
     
-    var groupSeparator: String | RegExp
+    var groupSeparator: String | js.RegExp
     
-    var rootSeparator: String | RegExp
+    var rootSeparator: String | js.RegExp
   }
   object SeparatorOptions {
     
-    inline def apply(groupSeparator: String | RegExp, rootSeparator: String | RegExp): SeparatorOptions = {
+    inline def apply(groupSeparator: String | js.RegExp, rootSeparator: String | js.RegExp): SeparatorOptions = {
       val __obj = js.Dynamic.literal(groupSeparator = groupSeparator.asInstanceOf[js.Any], rootSeparator = rootSeparator.asInstanceOf[js.Any])
       __obj.asInstanceOf[SeparatorOptions]
     }
     
     extension [Self <: SeparatorOptions](x: Self) {
       
-      inline def setGroupSeparator(value: String | RegExp): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
+      inline def setGroupSeparator(value: String | js.RegExp): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
       
-      inline def setRootSeparator(value: String | RegExp): Self = StObject.set(x, "rootSeparator", value.asInstanceOf[js.Any])
+      inline def setRootSeparator(value: String | js.RegExp): Self = StObject.set(x, "rootSeparator", value.asInstanceOf[js.Any])
     }
   }
   
-  type StoryDescriptor = js.Array[String] | RegExp
+  type StoryDescriptor = js.Array[String] | js.RegExp
 }

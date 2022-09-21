@@ -2,7 +2,6 @@ package typings.jsonschema
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +14,16 @@ object mod {
   
   @JSImport("jsonschema", "SchemaError")
   @js.native
-  class SchemaError protected ()
+  open class SchemaError protected ()
     extends StObject
        with Error {
     def this(msg: String, schema: Schema) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -31,19 +32,19 @@ object mod {
   
   @JSImport("jsonschema", "ValidationError")
   @js.native
-  class ValidationError protected () extends StObject {
+  open class ValidationError protected () extends StObject {
     def this(
       message: js.UndefOr[String],
-      instance: js.UndefOr[js.Any],
+      instance: js.UndefOr[Any],
       schema: js.UndefOr[Schema],
-      propertyPath: js.UndefOr[js.Any],
+      propertyPath: js.UndefOr[Any],
       name: js.UndefOr[String],
-      argument: js.UndefOr[js.Any]
+      argument: js.UndefOr[Any]
     ) = this()
     
-    var argument: js.Any = js.native
+    var argument: Any = js.native
     
-    var instance: js.Any = js.native
+    var instance: Any = js.native
     
     var message: String = js.native
     
@@ -60,7 +61,7 @@ object mod {
   
   @JSImport("jsonschema", "Validator")
   @js.native
-  class Validator () extends StObject {
+  open class Validator () extends StObject {
     
     def addSchema(): Schema | Unit = js.native
     def addSchema(schema: Unit, uri: String): Schema | Unit = js.native
@@ -75,16 +76,16 @@ object mod {
     
     var unresolvedRefs: js.Array[String] = js.native
     
-    def validate(instance: js.Any, schema: Schema): ValidatorResult = js.native
-    def validate(instance: js.Any, schema: Schema, options: Unit, ctx: SchemaContext): ValidatorResult = js.native
-    def validate(instance: js.Any, schema: Schema, options: Options): ValidatorResult = js.native
-    def validate(instance: js.Any, schema: Schema, options: Options, ctx: SchemaContext): ValidatorResult = js.native
+    def validate(instance: Any, schema: Schema): ValidatorResult = js.native
+    def validate(instance: Any, schema: Schema, options: Unit, ctx: SchemaContext): ValidatorResult = js.native
+    def validate(instance: Any, schema: Schema, options: Options): ValidatorResult = js.native
+    def validate(instance: Any, schema: Schema, options: Options, ctx: SchemaContext): ValidatorResult = js.native
   }
   
   @JSImport("jsonschema", "ValidatorResult")
   @js.native
-  class ValidatorResult protected () extends StObject {
-    def this(instance: js.Any, schema: Schema, options: Options, ctx: SchemaContext) = this()
+  open class ValidatorResult protected () extends StObject {
+    def this(instance: Any, schema: Schema, options: Options, ctx: SchemaContext) = this()
     
     def addError(detail: String): ValidationError = js.native
     def addError(detail: ErrorDetail): ValidationError = js.native
@@ -93,7 +94,7 @@ object mod {
     
     var errors: js.Array[ValidationError] = js.native
     
-    var instance: js.Any = js.native
+    var instance: Any = js.native
     
     var propertyPath: String = js.native
     
@@ -104,13 +105,13 @@ object mod {
     var valid: Boolean = js.native
   }
   
-  inline def validate(instance: js.Any, schema: js.Any): ValidatorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(instance.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[ValidatorResult]
-  inline def validate(instance: js.Any, schema: js.Any, options: Options): ValidatorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(instance.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidatorResult]
+  inline def validate(instance: Any, schema: Any): ValidatorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(instance.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[ValidatorResult]
+  inline def validate(instance: Any, schema: Any, options: Options): ValidatorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(instance.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidatorResult]
   
-  type CustomFormat = js.Function1[/* input */ js.Any, Boolean]
+  type CustomFormat = js.Function1[/* input */ Any, Boolean]
   
   type CustomProperty = js.Function4[
-    /* instance */ js.Any, 
+    /* instance */ Any, 
     /* schema */ Schema, 
     /* options */ Options, 
     /* ctx */ SchemaContext, 
@@ -152,6 +153,8 @@ object mod {
     
     var preValidateProperty: js.UndefOr[PreValidatePropertyFunction] = js.undefined
     
+    var required: js.UndefOr[Boolean] = js.undefined
+    
     var rewrite: js.UndefOr[RewriteFunction] = js.undefined
     
     var skipAttributes: js.UndefOr[js.Array[String]] = js.undefined
@@ -184,13 +187,17 @@ object mod {
       inline def setNestedErrorsUndefined: Self = StObject.set(x, "nestedErrors", js.undefined)
       
       inline def setPreValidateProperty(
-        value: (/* instance */ js.Any, /* key */ String, /* schema */ Schema, /* options */ Options, /* ctx */ SchemaContext) => js.Any
+        value: (/* instance */ Any, /* key */ String, /* schema */ Schema, /* options */ Options, /* ctx */ SchemaContext) => Any
       ): Self = StObject.set(x, "preValidateProperty", js.Any.fromFunction5(value))
       
       inline def setPreValidatePropertyUndefined: Self = StObject.set(x, "preValidateProperty", js.undefined)
       
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      
       inline def setRewrite(
-        value: (/* instance */ js.Any, /* schema */ Schema, /* options */ Options, /* ctx */ SchemaContext) => js.Any
+        value: (/* instance */ Any, /* schema */ Schema, /* options */ Options, /* ctx */ SchemaContext) => Any
       ): Self = StObject.set(x, "rewrite", js.Any.fromFunction4(value))
       
       inline def setRewriteUndefined: Self = StObject.set(x, "rewrite", js.undefined)
@@ -199,7 +206,7 @@ object mod {
       
       inline def setSkipAttributesUndefined: Self = StObject.set(x, "skipAttributes", js.undefined)
       
-      inline def setSkipAttributesVarargs(value: String*): Self = StObject.set(x, "skipAttributes", js.Array(value :_*))
+      inline def setSkipAttributesVarargs(value: String*): Self = StObject.set(x, "skipAttributes", js.Array(value*))
       
       inline def setThrowAll(value: Boolean): Self = StObject.set(x, "throwAll", value.asInstanceOf[js.Any])
       
@@ -216,20 +223,20 @@ object mod {
   }
   
   type PreValidatePropertyFunction = js.Function5[
-    /* instance */ js.Any, 
+    /* instance */ Any, 
     /* key */ String, 
     /* schema */ Schema, 
     /* options */ Options, 
     /* ctx */ SchemaContext, 
-    js.Any
+    Any
   ]
   
   type RewriteFunction = js.Function4[
-    /* instance */ js.Any, 
+    /* instance */ Any, 
     /* schema */ Schema, 
     /* options */ Options, 
     /* ctx */ SchemaContext, 
-    js.Any
+    Any
   ]
   
   trait Schema extends StObject {
@@ -251,7 +258,7 @@ object mod {
     
     var anyOf: js.UndefOr[js.Array[Schema]] = js.undefined
     
-    var const: js.UndefOr[js.Any] = js.undefined
+    var const: js.UndefOr[Any] = js.undefined
     
     var definitions: js.UndefOr[StringDictionary[Schema]] = js.undefined
     
@@ -261,7 +268,7 @@ object mod {
     
     var `else`: js.UndefOr[Schema] = js.undefined
     
-    var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var `enum`: js.UndefOr[js.Array[Any]] = js.undefined
     
     var exclusiveMaximum: js.UndefOr[Double | Boolean] = js.undefined
     
@@ -297,7 +304,7 @@ object mod {
     
     var oneOf: js.UndefOr[js.Array[Schema]] = js.undefined
     
-    var pattern: js.UndefOr[String | RegExp] = js.undefined
+    var pattern: js.UndefOr[String | js.RegExp] = js.undefined
     
     var patternProperties: js.UndefOr[StringDictionary[Schema]] = js.undefined
     
@@ -346,15 +353,15 @@ object mod {
       
       inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
       
-      inline def setAllOfVarargs(value: Schema*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+      inline def setAllOfVarargs(value: Schema*): Self = StObject.set(x, "allOf", js.Array(value*))
       
       inline def setAnyOf(value: js.Array[Schema]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
       
       inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
       
-      inline def setAnyOfVarargs(value: Schema*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+      inline def setAnyOfVarargs(value: Schema*): Self = StObject.set(x, "anyOf", js.Array(value*))
       
-      inline def setConst(value: js.Any): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+      inline def setConst(value: Any): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
       
       inline def setConstUndefined: Self = StObject.set(x, "const", js.undefined)
       
@@ -374,11 +381,11 @@ object mod {
       
       inline def setElseUndefined: Self = StObject.set(x, "else", js.undefined)
       
-      inline def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Array[Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: Any*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setExclusiveMaximum(value: Double | Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
       
@@ -404,7 +411,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: Schema*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Schema*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
@@ -450,9 +457,9 @@ object mod {
       
       inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
       
-      inline def setOneOfVarargs(value: Schema*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+      inline def setOneOfVarargs(value: Schema*): Self = StObject.set(x, "oneOf", js.Array(value*))
       
-      inline def setPattern(value: String | RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String | js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternProperties(value: StringDictionary[Schema]): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
       
@@ -468,7 +475,7 @@ object mod {
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
       
       inline def setThen(value: Schema): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
       
@@ -482,7 +489,7 @@ object mod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
       
@@ -493,6 +500,8 @@ object mod {
   trait SchemaContext extends StObject {
     
     var base: String
+    
+    def makeChild(schema: Schema, key: String): SchemaContext
     
     var options: Options
     
@@ -506,18 +515,21 @@ object mod {
     
     inline def apply(
       base: String,
+      makeChild: (Schema, String) => SchemaContext,
       options: Options,
       propertyPath: String,
       schema: Schema,
       schemas: StringDictionary[Schema]
     ): SchemaContext = {
-      val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], propertyPath = propertyPath.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], makeChild = js.Any.fromFunction2(makeChild), options = options.asInstanceOf[js.Any], propertyPath = propertyPath.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaContext]
     }
     
     extension [Self <: SchemaContext](x: Self) {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      
+      inline def setMakeChild(value: (Schema, String) => SchemaContext): Self = StObject.set(x, "makeChild", js.Any.fromFunction2(value))
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ object addBoxMod {
   
   @JSImport("material-ui/svg-icons/content/add-box", JSImport.Default)
   @js.native
-  class default () extends ContentAddBox
+  open class default () extends ContentAddBox
   
   @JSImport("material-ui/svg-icons/content/add-box", "ContentAddBox")
   @js.native
-  class ContentAddBox ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentAddBox ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

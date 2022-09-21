@@ -147,12 +147,12 @@ object registry {
       destroy: () => Unit,
       getRootKey: () => XRegistryKey,
       getURL: () => String,
-      initialize: SeqEquiv[js.Any] => Unit,
+      initialize: SeqEquiv[Any] => Unit,
       isReadOnly: () => Boolean,
       isValid: () => Boolean,
       mergeKey: (String, String) => Unit,
       open: (String, Boolean, Boolean) => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): NestedRegistry = {
       val __obj = js.Dynamic.literal(RootKey = RootKey.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), getRootKey = js.Any.fromFunction0(getRootKey), getURL = js.Any.fromFunction0(getURL), initialize = js.Any.fromFunction1(initialize), isReadOnly = js.Any.fromFunction0(isReadOnly), isValid = js.Any.fromFunction0(isValid), mergeKey = js.Any.fromFunction2(mergeKey), open = js.Any.fromFunction3(open), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -267,7 +267,7 @@ object registry {
       acquire: () => Unit,
       checkInstantiation: String => SafeArray[String],
       getImplementations: (String, String) => SafeArray[String],
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       registerImplementation: (String, String, XSimpleRegistry) => Unit,
       release: () => Unit,
       revokeImplementation: (String, XSimpleRegistry) => Boolean
@@ -317,7 +317,7 @@ object registry {
       acquire: () => Unit,
       checkInstantiation: String => SafeArray[String],
       getImplementations: (String, String) => SafeArray[String],
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       registerImplementation: (String, String, XSimpleRegistry) => Unit,
       registerImplementationWithLocation: (String, String, String, XSimpleRegistry) => Unit,
       release: () => Unit,
@@ -652,7 +652,7 @@ object registry {
       isValid: () => Boolean,
       openKey: String => XRegistryKey,
       openKeys: () => SafeArray[XRegistryKey],
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setAsciiListValue: SeqEquiv[String] => Unit,
       setAsciiValue: String => Unit,
@@ -830,7 +830,7 @@ object registry {
       isValid: () => Boolean,
       mergeKey: (String, String) => Unit,
       open: (String, Boolean, Boolean) => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XSimpleRegistry = {
       val __obj = js.Dynamic.literal(RootKey = RootKey.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), getRootKey = js.Any.fromFunction0(getRootKey), getURL = js.Any.fromFunction0(getURL), isReadOnly = js.Any.fromFunction0(isReadOnly), isValid = js.Any.fromFunction0(isValid), mergeKey = js.Any.fromFunction2(mergeKey), open = js.Any.fromFunction3(open), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

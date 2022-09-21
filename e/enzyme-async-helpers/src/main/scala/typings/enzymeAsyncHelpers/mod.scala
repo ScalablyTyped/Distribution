@@ -14,31 +14,31 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def waitForElement(
-    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
+    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]],
     elementSelector: EnzymeSelector
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(wrapper.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def waitForElement(
-    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
+    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]],
     elementSelector: EnzymeSelector,
     config: Config
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(wrapper.asInstanceOf[js.Any], elementSelector.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def waitForProps(
-    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
+    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]],
     propsValidationFn: js.Function1[/* props */ js.Object, Boolean]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForProps")(wrapper.asInstanceOf[js.Any], propsValidationFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def waitForProps(
-    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
+    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]],
     propsValidationFn: js.Function1[/* props */ js.Object, Boolean],
     config: Config
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForProps")(wrapper.asInstanceOf[js.Any], propsValidationFn.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def waitForState(
-    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
+    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]],
     stateValidationFn: js.Function1[/* state */ js.Object, Boolean]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForState")(wrapper.asInstanceOf[js.Any], stateValidationFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def waitForState(
-    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
+    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]],
     stateValidationFn: js.Function1[/* state */ js.Object, Boolean],
     config: Config
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForState")(wrapper.asInstanceOf[js.Any], stateValidationFn.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

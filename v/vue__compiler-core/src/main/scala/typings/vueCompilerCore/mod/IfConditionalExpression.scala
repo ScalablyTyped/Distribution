@@ -9,16 +9,16 @@ trait IfConditionalExpression
      with ConditionalExpression {
   
   @JSName("alternate")
-  var alternate_IfConditionalExpression: BlockCodegenNode | IfConditionalExpression
+  var alternate_IfConditionalExpression: BlockCodegenNode | IfConditionalExpression | MemoExpression
   
   @JSName("consequent")
-  var consequent_IfConditionalExpression: BlockCodegenNode
+  var consequent_IfConditionalExpression: BlockCodegenNode | MemoExpression
 }
 object IfConditionalExpression {
   
   inline def apply(
-    alternate: BlockCodegenNode | IfConditionalExpression,
-    consequent: BlockCodegenNode,
+    alternate: BlockCodegenNode | IfConditionalExpression | MemoExpression,
+    consequent: BlockCodegenNode | MemoExpression,
     loc: SourceLocation,
     newline: Boolean,
     test: JSChildNode
@@ -30,8 +30,8 @@ object IfConditionalExpression {
   
   extension [Self <: IfConditionalExpression](x: Self) {
     
-    inline def setAlternate(value: BlockCodegenNode | IfConditionalExpression): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: BlockCodegenNode | IfConditionalExpression | MemoExpression): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    inline def setConsequent(value: BlockCodegenNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    inline def setConsequent(value: BlockCodegenNode | MemoExpression): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
   }
 }

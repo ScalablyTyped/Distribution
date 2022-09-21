@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "SpanMultiTermQuery")
 @js.native
-class SpanMultiTermQuery protected ()
+open class SpanMultiTermQuery protected ()
   extends StObject
      with Query {
   /*
@@ -33,5 +33,5 @@ class SpanMultiTermQuery protected ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

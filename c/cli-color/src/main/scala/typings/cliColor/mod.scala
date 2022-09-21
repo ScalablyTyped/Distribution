@@ -26,8 +26,8 @@ object mod extends Shortcut {
     
     val beep: String = js.native
     
-    def columns(data: js.Array[js.Array[js.Any]]): String = js.native
-    def columns(data: js.Array[js.Array[js.Any]], options: typings.cliColor.columnsMod.ColumnsOptions): String = js.native
+    def columns(data: js.Array[js.Array[Any]]): String = js.native
+    def columns(data: js.Array[js.Array[Any]], options: typings.cliColor.columnsMod.ColumnsOptions): String = js.native
     def columns(data: Data): String = js.native
     def columns(data: Data, options: typings.cliColor.columnsMod.ColumnsOptions): String = js.native
     

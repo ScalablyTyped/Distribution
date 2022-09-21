@@ -15,7 +15,7 @@ trait SupportingWidgetDefaultsSketch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var defaultUpdateOptions: js.UndefOr[js.Any] = js.undefined
+  var defaultUpdateOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * The marker symbol used to symbolize any point feature updates.
@@ -51,7 +51,7 @@ object SupportingWidgetDefaultsSketch {
   
   extension [Self <: SupportingWidgetDefaultsSketch](x: Self) {
     
-    inline def setDefaultUpdateOptions(value: js.Any): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultUpdateOptions(value: Any): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
     
     inline def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
     

@@ -6,11 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RectConfig[ES /* <: ExprRef | SignalRef */]
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.vegaLite.srcMarkMod.AnyMarkConfig because Already inherited */ trait RectConfig[ES /* <: ExprRef | SignalRef */]
   extends StObject
      with RectBinSpacingMixins
-     with MarkConfig[ES]
-     with _AnyMarkConfig[ES] {
+     with MarkConfig[ES] {
   
   /**
     * The default size of the bars on continuous scales.
@@ -25,7 +25,7 @@ trait RectConfig[ES /* <: ExprRef | SignalRef */]
     * The default size of the bars with discrete dimensions. If unspecified, the default size is  `step-2`, which provides 2 pixel offset between bars.
     * @minimum 0
     */
-  var discreteBandSize: js.UndefOr[Double] = js.undefined
+  var discreteBandSize: js.UndefOr[Double | RelativeBandSize] = js.undefined
 }
 object RectConfig {
   
@@ -40,7 +40,7 @@ object RectConfig {
     
     inline def setContinuousBandSizeUndefined: Self = StObject.set(x, "continuousBandSize", js.undefined)
     
-    inline def setDiscreteBandSize(value: Double): Self = StObject.set(x, "discreteBandSize", value.asInstanceOf[js.Any])
+    inline def setDiscreteBandSize(value: Double | RelativeBandSize): Self = StObject.set(x, "discreteBandSize", value.asInstanceOf[js.Any])
     
     inline def setDiscreteBandSizeUndefined: Self = StObject.set(x, "discreteBandSize", js.undefined)
   }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "TYListItem")
 @js.native
-class TYListItem protected ()
-  extends Component[TYListItemProps, js.Object, js.Any] {
+open class TYListItem protected ()
+  extends Component[TYListItemProps, js.Object, Any] {
   def this(props: TYListItemProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TYListItemProps, context: js.Any) = this()
+  def this(props: TYListItemProps, context: Any) = this()
 }

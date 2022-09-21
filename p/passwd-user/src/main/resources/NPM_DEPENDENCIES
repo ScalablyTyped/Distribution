@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "passwd-user" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "passwd-user" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

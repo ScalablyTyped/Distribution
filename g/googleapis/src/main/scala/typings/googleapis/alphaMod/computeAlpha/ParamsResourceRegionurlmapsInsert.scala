@@ -1,8 +1,5 @@
 package typings.googleapis.alphaMod.computeAlpha
 
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceRegionurlmapsInsert
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Project ID for this request.
@@ -32,8 +24,7 @@ trait ParamsResourceRegionurlmapsInsert
   var requestBody: js.UndefOr[SchemaUrlMap] = js.undefined
   
   /**
-    * begin_interface: MixerMutationRequestBuilder Request ID to support
-    * idempotency.
+    * begin_interface: MixerMutationRequestBuilder Request ID to support idempotency.
     */
   var requestId: js.UndefOr[String] = js.undefined
 }
@@ -45,10 +36,6 @@ object ParamsResourceRegionurlmapsInsert {
   }
   
   extension [Self <: ParamsResourceRegionurlmapsInsert](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

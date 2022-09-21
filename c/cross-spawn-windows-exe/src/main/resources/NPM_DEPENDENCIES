@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cross-spawn-windows-exe" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cross-spawn-windows-exe" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

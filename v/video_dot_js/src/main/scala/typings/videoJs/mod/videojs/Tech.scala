@@ -71,7 +71,7 @@ trait Tech
     *
     * @return The time range object that was created.
     */
-  def buffered(): js.Any = js.native
+  def buffered(): Any = js.native
   
   /**
     * Get the percentage of the current video that is currently buffered.
@@ -81,21 +81,6 @@ trait Tech
     *
     */
   def bufferedPercent(): Double = js.native
-  
-  /**
-    * Check if the tech can support the given mime-type.
-    *
-    * The base tech does not support any type, but source handlers might
-    * overwrite this.
-    *
-    * @param type
-    *         The mimetype to check for support
-    *
-    * @return 'probably', 'maybe', or empty string
-    *
-    * @see [Spec]{@link https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canPlayType}
-    */
-  def canPlayType(`type`: String): String = js.native
   
   /**
     * Remove any TextTracks added via addRemoteTextTrack that are
@@ -231,7 +216,7 @@ trait Tech
     *
     * @return An object with supported media playback quality metrics
     */
-  def getVideoPlaybackQuality(): js.Any = js.native
+  def getVideoPlaybackQuality(): Any = js.native
   
   /**
     * Turn on listeners for {@link VideoTrackList}, {@link {AudioTrackList}, and
@@ -295,9 +280,20 @@ trait Tech
   def overrideNativeVideoTracks(`override`: Boolean): Unit = js.native
   
   /**
+    * Returns the `TimeRange`s that have been played through for the current source.
+    *
+    * > NOTE: This implementation is incomplete. It does not track the played `TimeRange`.
+    *         It only checks whether the source has played at all or not.
+    *
+    * @return - A single time range if this video has played
+    *         - An empty set of ranges if not.
+    */
+  def played(): Any = js.native
+  
+  /**
     * A method to check for the presence of the 'playsinline' <video> attribute.
     */
-  def playsinline(): js.Any = js.native
+  def playsinline(): Any = js.native
   
   /**
     * Get the remote element {@link HTMLTrackElementList}

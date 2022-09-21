@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object cordovaPluginsDiagnosticStrings {
   
   @js.native
+  sealed trait ACCEPT_HANDOVER extends StObject
+  inline def ACCEPT_HANDOVER: ACCEPT_HANDOVER = "ACCEPT_HANDOVER".asInstanceOf[ACCEPT_HANDOVER]
+  
+  @js.native
   sealed trait ACCESS_BACKGROUND_LOCATION extends StObject
   inline def ACCESS_BACKGROUND_LOCATION: ACCESS_BACKGROUND_LOCATION = "ACCESS_BACKGROUND_LOCATION".asInstanceOf[ACCESS_BACKGROUND_LOCATION]
   
@@ -19,8 +23,20 @@ object cordovaPluginsDiagnosticStrings {
   inline def ACCESS_FINE_LOCATION: ACCESS_FINE_LOCATION = "ACCESS_FINE_LOCATION".asInstanceOf[ACCESS_FINE_LOCATION]
   
   @js.native
+  sealed trait ACCESS_MEDIA_LOCATION extends StObject
+  inline def ACCESS_MEDIA_LOCATION: ACCESS_MEDIA_LOCATION = "ACCESS_MEDIA_LOCATION".asInstanceOf[ACCESS_MEDIA_LOCATION]
+  
+  @js.native
+  sealed trait ACTIVITY_RECOGNITION extends StObject
+  inline def ACTIVITY_RECOGNITION: ACTIVITY_RECOGNITION = "ACTIVITY_RECOGNITION".asInstanceOf[ACTIVITY_RECOGNITION]
+  
+  @js.native
   sealed trait ADD_VOICEMAIL extends StObject
   inline def ADD_VOICEMAIL: ADD_VOICEMAIL = "ADD_VOICEMAIL".asInstanceOf[ADD_VOICEMAIL]
+  
+  @js.native
+  sealed trait ANSWER_PHONE_CALLS extends StObject
+  inline def ANSWER_PHONE_CALLS: ANSWER_PHONE_CALLS = "ANSWER_PHONE_CALLS".asInstanceOf[ANSWER_PHONE_CALLS]
   
   @js.native
   sealed trait ARMv6 extends StObject
@@ -35,8 +51,24 @@ object cordovaPluginsDiagnosticStrings {
   inline def ARMv8: ARMv8 = "ARMv8".asInstanceOf[ARMv8]
   
   @js.native
+  sealed trait BLUETOOTH_ADVERTISE extends StObject
+  inline def BLUETOOTH_ADVERTISE: BLUETOOTH_ADVERTISE = "BLUETOOTH_ADVERTISE".asInstanceOf[BLUETOOTH_ADVERTISE]
+  
+  @js.native
+  sealed trait BLUETOOTH_CONNECT extends StObject
+  inline def BLUETOOTH_CONNECT: BLUETOOTH_CONNECT = "BLUETOOTH_CONNECT".asInstanceOf[BLUETOOTH_CONNECT]
+  
+  @js.native
+  sealed trait BLUETOOTH_SCAN extends StObject
+  inline def BLUETOOTH_SCAN: BLUETOOTH_SCAN = "BLUETOOTH_SCAN".asInstanceOf[BLUETOOTH_SCAN]
+  
+  @js.native
   sealed trait BODY_SENSORS extends StObject
   inline def BODY_SENSORS: BODY_SENSORS = "BODY_SENSORS".asInstanceOf[BODY_SENSORS]
+  
+  @js.native
+  sealed trait BODY_SENSORS_BACKGROUND extends StObject
+  inline def BODY_SENSORS_BACKGROUND: BODY_SENSORS_BACKGROUND = "BODY_SENSORS_BACKGROUND".asInstanceOf[BODY_SENSORS_BACKGROUND]
   
   @js.native
   sealed trait CALL_PHONE extends StObject
@@ -71,8 +103,16 @@ object cordovaPluginsDiagnosticStrings {
   inline def MIPS_64: MIPS_64 = "MIPS_64".asInstanceOf[MIPS_64]
   
   @js.native
+  sealed trait NEARBY_WIFI_DEVICES extends StObject
+  inline def NEARBY_WIFI_DEVICES: NEARBY_WIFI_DEVICES = "NEARBY_WIFI_DEVICES".asInstanceOf[NEARBY_WIFI_DEVICES]
+  
+  @js.native
   sealed trait NOT_REQUESTED extends StObject
   inline def NOT_REQUESTED: NOT_REQUESTED = "NOT_REQUESTED".asInstanceOf[NOT_REQUESTED]
+  
+  @js.native
+  sealed trait POST_NOTIFICATIONS extends StObject
+  inline def POST_NOTIFICATIONS: POST_NOTIFICATIONS = "POST_NOTIFICATIONS".asInstanceOf[POST_NOTIFICATIONS]
   
   @js.native
   sealed trait PROCESS_OUTGOING_CALLS extends StObject
@@ -93,6 +133,22 @@ object cordovaPluginsDiagnosticStrings {
   @js.native
   sealed trait READ_EXTERNAL_STORAGE extends StObject
   inline def READ_EXTERNAL_STORAGE: READ_EXTERNAL_STORAGE = "READ_EXTERNAL_STORAGE".asInstanceOf[READ_EXTERNAL_STORAGE]
+  
+  @js.native
+  sealed trait READ_MEDIA_AUDIO extends StObject
+  inline def READ_MEDIA_AUDIO: READ_MEDIA_AUDIO = "READ_MEDIA_AUDIO".asInstanceOf[READ_MEDIA_AUDIO]
+  
+  @js.native
+  sealed trait READ_MEDIA_IMAGES extends StObject
+  inline def READ_MEDIA_IMAGES: READ_MEDIA_IMAGES = "READ_MEDIA_IMAGES".asInstanceOf[READ_MEDIA_IMAGES]
+  
+  @js.native
+  sealed trait READ_MEDIA_VIDEO extends StObject
+  inline def READ_MEDIA_VIDEO: READ_MEDIA_VIDEO = "READ_MEDIA_VIDEO".asInstanceOf[READ_MEDIA_VIDEO]
+  
+  @js.native
+  sealed trait READ_PHONE_NUMBERS extends StObject
+  inline def READ_PHONE_NUMBERS: READ_PHONE_NUMBERS = "READ_PHONE_NUMBERS".asInstanceOf[READ_PHONE_NUMBERS]
   
   @js.native
   sealed trait READ_PHONE_STATE extends StObject
@@ -125,6 +181,10 @@ object cordovaPluginsDiagnosticStrings {
   @js.native
   sealed trait USE_SIP extends StObject
   inline def USE_SIP: USE_SIP = "USE_SIP".asInstanceOf[USE_SIP]
+  
+  @js.native
+  sealed trait UWB_RANGING extends StObject
+  inline def UWB_RANGING: UWB_RANGING = "UWB_RANGING".asInstanceOf[UWB_RANGING]
   
   @js.native
   sealed trait WRITE_CALENDAR extends StObject
@@ -183,6 +243,10 @@ object cordovaPluginsDiagnosticStrings {
   inline def device_only: device_only = "device_only".asInstanceOf[device_only]
   
   @js.native
+  sealed trait ephemeral extends StObject
+  inline def ephemeral: ephemeral = "ephemeral".asInstanceOf[ephemeral]
+  
+  @js.native
   sealed trait full extends StObject
   inline def full: full = "full".asInstanceOf[full]
   
@@ -221,6 +285,10 @@ object cordovaPluginsDiagnosticStrings {
   @js.native
   sealed trait powering_on extends StObject
   inline def powering_on: powering_on = "powering_on".asInstanceOf[powering_on]
+  
+  @js.native
+  sealed trait provisional extends StObject
+  inline def provisional: provisional = "provisional".asInstanceOf[provisional]
   
   @js.native
   sealed trait reduced extends StObject

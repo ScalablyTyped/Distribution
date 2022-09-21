@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__wordlists
 
-Typings are for version 5.0.6
+Typings are for version 5.7.0
 
 ## Library description:
 Word lists for BIP39 wallets.
@@ -10,10 +10,10 @@ Word lists for BIP39 wallets.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/wordlists |
 | Keywords           | Ethereum, ethers |
-| # releases         | 31 |
-| # dependents       | 9 |
-| # downloads        | 1152002 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 2535600.3333333335 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

@@ -33,7 +33,7 @@ object DescribeDataRepositoryTasksRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: DataRepositoryTaskFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DataRepositoryTaskFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -47,6 +47,6 @@ object DescribeDataRepositoryTasksRequest {
     
     inline def setTaskIdsUndefined: Self = StObject.set(x, "TaskIds", js.undefined)
     
-    inline def setTaskIdsVarargs(value: TaskId*): Self = StObject.set(x, "TaskIds", js.Array(value :_*))
+    inline def setTaskIdsVarargs(value: TaskId*): Self = StObject.set(x, "TaskIds", js.Array(value*))
   }
 }

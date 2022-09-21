@@ -16,12 +16,16 @@ trait MeshMaterial
   /**
     * Specifies how transparency on the object is handled.
     *
+    * @default 0.5
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaCutoff)
     */
   var alphaCutoff: Double = js.native
   
   /**
     * Specifies how transparency on the object is handled.
+    *
+    * @default "auto"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaMode)
     */
@@ -43,6 +47,8 @@ trait MeshMaterial
   
   /**
     * Specifies whether both sides of each triangle are displayed, or only the front sides.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#doubleSided)
     */

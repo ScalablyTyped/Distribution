@@ -26,6 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```javascript
   * sprite.setPipeline('Light2D');
   * ```
+  * 
+  * Note that you cannot use this pipeline on Graphics Game Objects or Shape Game Objects.
   */
 @js.native
 trait LightsPlugin

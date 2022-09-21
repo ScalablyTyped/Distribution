@@ -29,7 +29,7 @@ object anon {
       
       inline def setBrowsers(value: String | js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
-      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value*))
     }
   }
   

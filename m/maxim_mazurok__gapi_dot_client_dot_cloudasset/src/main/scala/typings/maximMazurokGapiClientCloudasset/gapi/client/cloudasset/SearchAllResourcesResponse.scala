@@ -32,6 +32,6 @@ object SearchAllResourcesResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: ResourceSearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ResourceSearchResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

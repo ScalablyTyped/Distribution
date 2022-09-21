@@ -11,9 +11,9 @@ Middleware for handling `multipart/form-data`.
 | Full name          | multer |
 | Keywords           | form, post, multipart, form-data, formdata, express, middleware |
 | # releases         | 6 |
-| # dependents       | 1867 |
-| # downloads        | 58135236 |
-| # stars            | 278 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4631601333333334E7 |
+| # stars            | 9989.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/multer#readme)

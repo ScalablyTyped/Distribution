@@ -8,11 +8,11 @@ trait CancelItem extends StObject {
   
   var Cancel: Boolean
   
-  val Item: js.Any
+  val Item: Any
 }
 object CancelItem {
   
-  inline def apply(Cancel: Boolean, Item: js.Any): CancelItem = {
+  inline def apply(Cancel: Boolean, Item: Any): CancelItem = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelItem]
   }
@@ -21,6 +21,6 @@ object CancelItem {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }
 }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for text properties.
-  */
 trait SchemaTextPropertyOptions extends StObject {
   
   /**
@@ -15,8 +12,7 @@ trait SchemaTextPropertyOptions extends StObject {
   var operatorOptions: js.UndefOr[SchemaTextOperatorOptions] = js.undefined
   
   /**
-    * Indicates the search quality importance of the tokens within the field
-    * when used for retrieval.
+    * Indicates the search quality importance of the tokens within the field when used for retrieval.
     */
   var retrievalImportance: js.UndefOr[SchemaRetrievalImportance] = js.undefined
 }

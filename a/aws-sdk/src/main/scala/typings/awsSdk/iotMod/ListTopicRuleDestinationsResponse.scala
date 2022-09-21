@@ -29,7 +29,7 @@ object ListTopicRuleDestinationsResponse {
     
     inline def setDestinationSummariesUndefined: Self = StObject.set(x, "destinationSummaries", js.undefined)
     
-    inline def setDestinationSummariesVarargs(value: TopicRuleDestinationSummary*): Self = StObject.set(x, "destinationSummaries", js.Array(value :_*))
+    inline def setDestinationSummariesVarargs(value: TopicRuleDestinationSummary*): Self = StObject.set(x, "destinationSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

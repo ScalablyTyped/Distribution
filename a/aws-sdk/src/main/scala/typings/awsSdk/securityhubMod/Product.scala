@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Product extends StObject {
   
   /**
-    * The URL used to activate the product.
+    * The URL to the service or product documentation about the integration with Security Hub, including how to activate the integration.
     */
   var ActivationUrl: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -27,12 +27,12 @@ trait Product extends StObject {
   var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The types of integration that the product supports. Available values are the following.    SEND_FINDINGS_TO_SECURITY_HUB - Indicates that the integration sends findings to Security Hub.    RECEIVE_FINDINGS_FROM_SECURITY_HUB - Indicates that the integration receives findings from Security Hub.  
+    * The types of integration that the product supports. Available values are the following.    SEND_FINDINGS_TO_SECURITY_HUB - The integration sends findings to Security Hub.    RECEIVE_FINDINGS_FROM_SECURITY_HUB - The integration receives findings from Security Hub.    UPDATE_FINDINGS_IN_SECURITY_HUB - The integration does not send new findings to Security Hub, but does make updates to the findings that it receives from Security Hub.  
     */
   var IntegrationTypes: js.UndefOr[IntegrationTypeList] = js.undefined
   
   /**
-    * The URL for the page that contains more information about the product.
+    * For integrations with Amazon Web Services services, the Amazon Web Services Console URL from which to activate the service. For integrations with third-party products, the Amazon Web Services Marketplace URL from which to subscribe to or purchase the product.
     */
   var MarketplaceUrl: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -68,7 +68,7 @@ object Product {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "Categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Categories", js.Array(value*))
     
     inline def setCompanyName(value: NonEmptyString): Self = StObject.set(x, "CompanyName", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object Product {
     
     inline def setIntegrationTypesUndefined: Self = StObject.set(x, "IntegrationTypes", js.undefined)
     
-    inline def setIntegrationTypesVarargs(value: IntegrationType*): Self = StObject.set(x, "IntegrationTypes", js.Array(value :_*))
+    inline def setIntegrationTypesVarargs(value: IntegrationType*): Self = StObject.set(x, "IntegrationTypes", js.Array(value*))
     
     inline def setMarketplaceUrl(value: NonEmptyString): Self = StObject.set(x, "MarketplaceUrl", value.asInstanceOf[js.Any])
     

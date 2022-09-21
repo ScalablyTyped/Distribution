@@ -9,7 +9,7 @@ trait publishingClient extends StObject {
   /**
     * The publishing client's bound records.
     */
-  var boundRecords: js.Any
+  var boundRecords: Any
   
   /**
     * The publishing client's unique identifier.
@@ -18,14 +18,14 @@ trait publishingClient extends StObject {
 }
 object publishingClient {
   
-  inline def apply(boundRecords: js.Any, id: String): publishingClient = {
+  inline def apply(boundRecords: Any, id: String): publishingClient = {
     val __obj = js.Dynamic.literal(boundRecords = boundRecords.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[publishingClient]
   }
   
   extension [Self <: publishingClient](x: Self) {
     
-    inline def setBoundRecords(value: js.Any): Self = StObject.set(x, "boundRecords", value.asInstanceOf[js.Any])
+    inline def setBoundRecords(value: Any): Self = StObject.set(x, "boundRecords", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

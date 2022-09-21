@@ -17,5 +17,5 @@ trait Edges3DConstructor
 Instantiable0[Edges3D]
      with Instantiable1[/* properties */ Edges3DProperties, Edges3D] {
   
-  def fromJSON(json: js.Any): Edges3D = js.native
+  def fromJSON(json: Any): Edges3D = js.native
 }

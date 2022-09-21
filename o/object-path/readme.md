@@ -10,10 +10,10 @@ Access deep object properties using a path
 | ------------------ | :-------------: |
 | Full name          | object-path |
 | Keywords           | deep, path, access, bean, get, property, dot, prop, object, obj, notation, segment, value, nested, key |
-| # releases         | 2 |
-| # dependents       | 1011 |
-| # downloads        | 198867863 |
-| # stars            | 40 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1345245666666666E7 |
+| # stars            | 989.0 |
 
 ## Links
 - [Homepage](https://github.com/mariocasciaro/object-path)

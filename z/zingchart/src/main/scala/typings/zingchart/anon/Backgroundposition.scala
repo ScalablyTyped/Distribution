@@ -1,5 +1,6 @@
 package typings.zingchart.anon
 
+import typings.zingchart.es6Mod.zingchart.highlightState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,123 +53,46 @@ trait Backgroundposition extends StObject {
     */
   var `background-repeat`: js.UndefOr[String] = js.undefined
   
-  /**
-    * Sets whether the text is displayed with bold characters or not in the Footer of the Legend. true | false | 1 | 0
-    */
-  var bold: js.UndefOr[Boolean] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.undefined
+  
+  var backgroundColor1: js.UndefOr[String] = js.undefined
+  
+  var backgroundColor2: js.UndefOr[String] = js.undefined
+  
+  var backgroundFit: js.UndefOr[String] = js.undefined
+  
+  var backgroundImage: js.UndefOr[String] = js.undefined
+  
+  var backgroundPosition: js.UndefOr[String] = js.undefined
+  
+  var backgroundRepeat: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the object's bottom border style. Accepts solid, dashed, and dotted styles. "2px solid #f00" | ...
-    */
-  var `border-bottom`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets the border color of the object, applicable on closed shapes. See also line-color for closed shapes. Defaults to 1px if border
-    * -width is not set. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
+    * Sets the border color of the object, applicable on closed shapes. See also line-color for closed shapes. "none" | "transparent" |
+    * "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
   var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the object's left border style. Accepts solid, dashed, and dotted styles. "2px solid #f00" | ...
+    * Sets the border radius of the object, for rounded corners. 4 | "6px" | "6px 10px 3px 5px" | "-10px" | ...
     */
-  var `border-left`: js.UndefOr[String] = js.undefined
+  var `border-radius`: js.UndefOr[Any] = js.undefined
   
   /**
-    * Sets the object's border radius, for rounded corners. Larger values create rounder corners, while smaller values create sharper co
-    * rners. A single value will affect all 4 corners, while multiple values will have separate effects on each corner, with the first v
-    * alue affecting the top-left corner, the second value affecting the top-right corner, and so on, in a clockwise direction. A negati
-    * ve value will cut a corner off without rounding. 4 | "6px" | "6px 10px 3px 5px" | "-10px" | ...
+    * Sets the border width of the object, applicable on closed shapes. See also line-width for closed shapes. 4 | "6px" | ...
     */
-  var `border-radius`: js.UndefOr[js.Any] = js.undefined
+  var `border-width`: js.UndefOr[Any] = js.undefined
+  
+  var borderColor: js.UndefOr[String] = js.undefined
+  
+  var borderRadius: js.UndefOr[Any] = js.undefined
+  
+  var borderWidth: js.UndefOr[Any] = js.undefined
   
   /**
-    * Sets the object's bottom-left border radius, for rounded corners. Larger values create rounder corners, while smaller values creat
-    * e sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
+    * Sets the style of the cursor when hovering over a node. "hand" | "normal"
     */
-  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the object's bottom-right border radius, for rounded corners. Larger values create rounder corners, while smaller values crea
-    * te sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
-    */
-  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the object's top-left border radius, for rounded corners. Larger values create rounder corners, while smaller values create s
-    * harper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
-    */
-  var `border-radius-top-left`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the object's top-right border radius, for rounded corners. Larger values create rounder corners, while smaller values create
-    * sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
-    */
-  var `border-radius-top-right`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the object's right border style. Accepts solid, dashed, and dotted styles. "2px solid #f00" | ...
-    */
-  var `border-right`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets the object's top border style. Values must include the border width, style, and color. Accepts solid, dashed, and dotted styl
-    * es. "2px solid #f00" | ...
-    */
-  var `border-top`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets the border width of the object, applicable on closed shapes. See also line-width for closed shapes. Defaults to dark gray if
-    * border-color is not set. 4 | "6px" | ...
-    */
-  var `border-width`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets whether an object will have a callout arrow or not. true | false | 1 | 0
-    */
-  var callout: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Sets the length of the extension that extends beyond the tip of the callout arrow. 4 | "6px" | ...
-    */
-  var `callout-extension`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the height of the object's callout arrow. A larger value will create a taller callout arrow. 4 | "6px" | ...
-    */
-  var `callout-height`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the point of the tip of the callout arrow to a specified coordinate on the chart, with the starting point of [0,0] being the
-    * top left corner of the chart. [200, 50] | ...
-    */
-  var `callout-hook`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the offset along the callout direction of the arrow's base. Positive and negative values can be used to offset the callout ar
-    * row up, down, left, or right depending on the callout-position. 4 | "6px" | ...
-    */
-  var `callout-offset`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the position for the object's callout arrow. The position is "bottom" by default. "top" | "right" | "bottom" | "left"
-    */
-  var `callout-position`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets the width of the object's callout arrow. A larger value will create a wider callout arrow. 4 | "6px" | ...
-    */
-  var `callout-width`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Clips the text to a specified width. Requires width. true | false | 1 | 0
-    */
-  var `clip-text`: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Sets the text's color in the Footer of the Legend. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15
-    * )" | ...
-    */
-  var color: js.UndefOr[String] = js.undefined
+  var cursor: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the angle of the axis along which the linear gradient is drawn. -45 | 115 | ...
@@ -176,51 +100,27 @@ trait Backgroundposition extends StObject {
   var `fill-angle`: js.UndefOr[Double] = js.undefined
   
   /**
-    * Sets an X offset to apply to the fill. Affects the angle of a linear fill or the position of a radial fill. 4 | "6px" | ...
+    * Sets an X offset to apply to the fill. 4 | "6px" | ...
     */
-  var `fill-offset-x`: js.UndefOr[js.Any] = js.undefined
+  var `fill-offset-x`: js.UndefOr[Any] = js.undefined
   
   /**
-    * Sets a Y offset to apply to the fill. Affects position of gradient stops on a linear fill or the position of a radial fill. 4 | "6
-    * px" | ...
+    * Sets an Y offset to apply to the fill. 4 | "6px" | ...
     */
-  var `fill-offset-y`: js.UndefOr[js.Any] = js.undefined
+  var `fill-offset-y`: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets the background gradient fill type to either linear or radial. "linear" | "radial"
     */
   var `fill-type`: js.UndefOr[String] = js.undefined
   
-  /**
-    * Sets the rotation angle of the Footer of the Legend. Similar with angle. -45 | 115 | ...
-    */
-  var `font-angle`: js.UndefOr[Double] = js.undefined
+  var fillAngle: js.UndefOr[Double] = js.undefined
   
-  /**
-    * Sets the text's color of the Footer of the Legend. Similar with color. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow
-    * " | "rgb(100, 15, 15)" | ...
-    */
-  var `font-color`: js.UndefOr[String] = js.undefined
+  var fillOffsetX: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Sets the text's font family. "Arial" | "Tahoma,Verdana" | ...
-    */
-  var `font-family`: js.UndefOr[String] = js.undefined
+  var fillOffsetY: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Sets the text's font size of the Footer of the Legend. 4 | "6px" | ...
-    */
-  var `font-size`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets the text's font style of the Footer of the Legend. Similar with italic. "none" | "italic" | "oblique"
-    */
-  var `font-style`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets the text's font weight of the Footer of the Legend. Similar with bold. "normal" | "bold"
-    */
-  var `font-weight`: js.UndefOr[String] = js.undefined
+  var fillType: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a set of colors for a complex background gradient consisting of 2 or more colors. To be used with gradient-stops. "#f00 #0f0
@@ -234,71 +134,51 @@ trait Backgroundposition extends StObject {
     */
   var `gradient-stops`: js.UndefOr[String] = js.undefined
   
-  /**
-    * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
-    */
-  var height: js.UndefOr[js.Any] = js.undefined
+  var gradientColors: js.UndefOr[String] = js.undefined
+  
+  var gradientStops: js.UndefOr[String] = js.undefined
+  
+  var `highlight-state`: js.UndefOr[highlightState] = js.undefined
+  
+  var highlightState: js.UndefOr[typings.zingchart.es6Mod.zingchart.highlightState] = js.undefined
   
   /**
-    * Sets whether the text of the Footer of the Legend is displayed with italic characters or not. Similar with font-weight. true | fal
-    * se | 1 | 0
+    * Sets the line color of the object, applicable on non-closed shapes. See also border-colorfor closed shapes. "none" | "transparent"
+    *  | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var italic: js.UndefOr[Boolean] = js.undefined
+  var `line-color`: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the maximum number of characters displayed by the text label of the Footer of the Legend. If value is smaller than the length
-    *  of the text, the original text will be trimmed and '...' will be appended at the end. 5 | 10 | ...
+    * Can be used to create custom dashed or dotted lines when used with line-segment-size. This will control the size of the gaps betwe
+    * en each line segment. 4 | "6px" | ...
     */
-  var `max-chars`: js.UndefOr[Double] = js.undefined
+  var `line-gap-size`: js.UndefOr[Any] = js.undefined
   
   /**
-    * Sets the maximum width of the text box. If text is longer than the max-width value, it will overlap the box or will wrap if wrap-t
-    * ext is set to true. 10 | "20px" | 0.3 | "30%" | ...
+    * Can be used to create custom dashed or dotted lines when used with line-gap-size. This will control the size of the visible segmen
+    * t of line. 4 | "6px" | ...
     */
-  var `max-width`: js.UndefOr[js.Any] = js.undefined
+  var `line-segment-size`: js.UndefOr[Any] = js.undefined
   
   /**
-    * Sets an X offset to apply when positioning the object/shape. 4 | "6px" | ...
+    * Sets the style applied to lines and borders of the object. "solid" | "dotted" | "dashed"
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.undefined
+  var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets a Y offset to apply when positioning the object/shape. 4 | "6px" | ...
+    * Sets the line width of the object, applicable on non-closed shapes. See also border-widthfor closed shapes. 4 | "6px" | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.undefined
+  var `line-width`: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Sets the object's bottom padding around the text of the Footer of the Legend. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
-    */
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var lineColor: js.UndefOr[String] = js.undefined
   
-  /**
-    * Sets the object's bottom padding around the text of the Footer of the Legend. 4 | "6px" | ...
-    */
-  var `padding-bottom`: js.UndefOr[js.Any] = js.undefined
+  var lineGapSize: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Sets the object's left padding around the text of the Footer of the Legend. padding-left here may push the text out of the contain
-    * ing legend if the number is big enough. 4 | "6px" | ...
-    */
-  var `padding-left`: js.UndefOr[js.Any] = js.undefined
+  var lineSegmentSize: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Sets the object's right padding around the text of the Footer of the Legend. padding-right here will not push the text out of the
-    * containing legend. 4 | "6px" | ...
-    */
-  var `padding-right`: js.UndefOr[js.Any] = js.undefined
+  var lineStyle: js.UndefOr[String] = js.undefined
   
-  /**
-    * Sets the object's top padding around the text of the Footer of the Legend. 4 | "6px" | ...
-    */
-  var `padding-top`: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Renders text right-to-left. Default value is false. true | false | 1 | 0
-    */
-  @JSName("rtl (right-to-left)")
-  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.undefined
+  var lineWidth: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets whether the object's shadow is visible or not. Has limited effect on HTML5 implementation. true | false | 1 | 0
@@ -319,7 +199,7 @@ trait Backgroundposition extends StObject {
   /**
     * Sets the blur effect size for the shadow of the object. Has limited effect on HTML5 implementation. 4 | "6px" | ...
     */
-  var `shadow-blur`: js.UndefOr[js.Any] = js.undefined
+  var `shadow-blur`: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets the color of the shadow of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ..
@@ -330,52 +210,49 @@ trait Backgroundposition extends StObject {
   /**
     * Sets the distance between the shadow and the object. 4 | "6px" | ...
     */
-  var `shadow-distance`: js.UndefOr[js.Any] = js.undefined
+  var `shadow-distance`: js.UndefOr[Any] = js.undefined
+  
+  var shadowAlpha: js.UndefOr[Double] = js.undefined
+  
+  var shadowAngle: js.UndefOr[Double] = js.undefined
+  
+  var shadowBlur: js.UndefOr[Any] = js.undefined
+  
+  var shadowColor: js.UndefOr[String] = js.undefined
+  
+  var shadowDistance: js.UndefOr[Any] = js.undefined
   
   /**
-    * Sets the text content of the object of the Footer of the Legend. "Some Text" | ...
+    * Sets if the legend marker has a small horizontal line through its middle. true | false | 1 | 0
     */
-  var text: js.UndefOr[String] = js.undefined
+  var `show-line`: js.UndefOr[Boolean] = js.undefined
+  
+  var showLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Sets the text's horizontal alignment relative to the box of the Footer of the Legend. "left" | "center" | "right"
+    * Sets the size of the object/shape. 4 | "6px" | ...
     */
-  var `text-align`: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[Any] = js.undefined
   
   /**
-    * Sets the text's transparency of the Footer of the Legend. 0.3 | 0.9 | ...
+    * Sets the action performed on legend item toggle: hide will simply hide the respective plot, remove will repaint the chart without
+    * considering the respective plot, disabled will not generate any action for the legend items/markers. Equivalent of legend's toggle
+    * -action. "hide" | "remove" | "disabled"
     */
-  var `text-alpha`: js.UndefOr[Double] = js.undefined
+  var `toggle-action`: js.UndefOr[String] = js.undefined
+  
+  var toggleAction: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the text's decoration of the Footer of the Legend. Similar with underline. "none" | "underline"
+    * The type of the marker object to render. square | circle | diamond | triangle | star5 | star6 | star7 | star8 | rpoly5 | gear5 | g
+    * ear6 | gear7 | gear8
     */
-  var `text-decoration`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets whether the text of the Footer of the Legend is displayed with underlined characters or not. true | false | 1 | 0
-    */
-  var underline: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Sets the text's vertical alignment relative to the object's box of the Footer of the Legend. "top" | "middle" | "bottom"
-    */
-  var `vertical-align`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
     */
   var visible: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Sets the object's width. 10 | "20px" | 0.3 | "30%" | ...
-    */
-  var width: js.UndefOr[js.Any] = js.undefined
-  
-  /**
-    * Sets whether the text will wrap, depending on the width of the object. Requires width. true | false | 1 | 0
-    */
-  var `wrap-text`: js.UndefOr[Boolean] = js.undefined
 }
 object Backgroundposition {
   
@@ -418,99 +295,71 @@ object Backgroundposition {
     
     inline def `setBackground-repeatUndefined`: Self = StObject.set(x, "background-repeat", js.undefined)
     
-    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    inline def setBackgroundColor1(value: String): Self = StObject.set(x, "backgroundColor1", value.asInstanceOf[js.Any])
     
-    inline def `setBorder-bottom`(value: String): Self = StObject.set(x, "border-bottom", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor1Undefined: Self = StObject.set(x, "backgroundColor1", js.undefined)
     
-    inline def `setBorder-bottomUndefined`: Self = StObject.set(x, "border-bottom", js.undefined)
+    inline def setBackgroundColor2(value: String): Self = StObject.set(x, "backgroundColor2", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColor2Undefined: Self = StObject.set(x, "backgroundColor2", js.undefined)
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBackgroundFit(value: String): Self = StObject.set(x, "backgroundFit", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundFitUndefined: Self = StObject.set(x, "backgroundFit", js.undefined)
+    
+    inline def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    
+    inline def setBackgroundPosition(value: String): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+    
+    inline def setBackgroundRepeat(value: String): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
     inline def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
     inline def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
-    inline def `setBorder-left`(value: String): Self = StObject.set(x, "border-left", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-leftUndefined`: Self = StObject.set(x, "border-left", js.undefined)
-    
-    inline def `setBorder-radius`(value: js.Any): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-radius-bottom-left`(value: js.Any): Self = StObject.set(x, "border-radius-bottom-left", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-radius-bottom-leftUndefined`: Self = StObject.set(x, "border-radius-bottom-left", js.undefined)
-    
-    inline def `setBorder-radius-bottom-right`(value: js.Any): Self = StObject.set(x, "border-radius-bottom-right", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-radius-bottom-rightUndefined`: Self = StObject.set(x, "border-radius-bottom-right", js.undefined)
-    
-    inline def `setBorder-radius-top-left`(value: js.Any): Self = StObject.set(x, "border-radius-top-left", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-radius-top-leftUndefined`: Self = StObject.set(x, "border-radius-top-left", js.undefined)
-    
-    inline def `setBorder-radius-top-right`(value: js.Any): Self = StObject.set(x, "border-radius-top-right", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-radius-top-rightUndefined`: Self = StObject.set(x, "border-radius-top-right", js.undefined)
+    inline def `setBorder-radius`(value: Any): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
     
     inline def `setBorder-radiusUndefined`: Self = StObject.set(x, "border-radius", js.undefined)
     
-    inline def `setBorder-right`(value: String): Self = StObject.set(x, "border-right", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-rightUndefined`: Self = StObject.set(x, "border-right", js.undefined)
-    
-    inline def `setBorder-top`(value: String): Self = StObject.set(x, "border-top", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-topUndefined`: Self = StObject.set(x, "border-top", js.undefined)
-    
-    inline def `setBorder-width`(value: js.Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
+    inline def `setBorder-width`(value: Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
     inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
-    inline def setCallout(value: Boolean): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    inline def `setCallout-extension`(value: js.Any): Self = StObject.set(x, "callout-extension", value.asInstanceOf[js.Any])
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def `setCallout-extensionUndefined`: Self = StObject.set(x, "callout-extension", js.undefined)
+    inline def setBorderRadius(value: Any): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    inline def `setCallout-height`(value: js.Any): Self = StObject.set(x, "callout-height", value.asInstanceOf[js.Any])
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    inline def `setCallout-heightUndefined`: Self = StObject.set(x, "callout-height", js.undefined)
+    inline def setBorderWidth(value: Any): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    inline def `setCallout-hook`(value: js.Any): Self = StObject.set(x, "callout-hook", value.asInstanceOf[js.Any])
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    inline def `setCallout-hookUndefined`: Self = StObject.set(x, "callout-hook", js.undefined)
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    inline def `setCallout-offset`(value: js.Any): Self = StObject.set(x, "callout-offset", value.asInstanceOf[js.Any])
-    
-    inline def `setCallout-offsetUndefined`: Self = StObject.set(x, "callout-offset", js.undefined)
-    
-    inline def `setCallout-position`(value: String): Self = StObject.set(x, "callout-position", value.asInstanceOf[js.Any])
-    
-    inline def `setCallout-positionUndefined`: Self = StObject.set(x, "callout-position", js.undefined)
-    
-    inline def `setCallout-width`(value: js.Any): Self = StObject.set(x, "callout-width", value.asInstanceOf[js.Any])
-    
-    inline def `setCallout-widthUndefined`: Self = StObject.set(x, "callout-width", js.undefined)
-    
-    inline def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
-    
-    inline def `setClip-text`(value: Boolean): Self = StObject.set(x, "clip-text", value.asInstanceOf[js.Any])
-    
-    inline def `setClip-textUndefined`: Self = StObject.set(x, "clip-text", js.undefined)
-    
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-    
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     inline def `setFill-angle`(value: Double): Self = StObject.set(x, "fill-angle", value.asInstanceOf[js.Any])
     
     inline def `setFill-angleUndefined`: Self = StObject.set(x, "fill-angle", js.undefined)
     
-    inline def `setFill-offset-x`(value: js.Any): Self = StObject.set(x, "fill-offset-x", value.asInstanceOf[js.Any])
+    inline def `setFill-offset-x`(value: Any): Self = StObject.set(x, "fill-offset-x", value.asInstanceOf[js.Any])
     
     inline def `setFill-offset-xUndefined`: Self = StObject.set(x, "fill-offset-x", js.undefined)
     
-    inline def `setFill-offset-y`(value: js.Any): Self = StObject.set(x, "fill-offset-y", value.asInstanceOf[js.Any])
+    inline def `setFill-offset-y`(value: Any): Self = StObject.set(x, "fill-offset-y", value.asInstanceOf[js.Any])
     
     inline def `setFill-offset-yUndefined`: Self = StObject.set(x, "fill-offset-y", js.undefined)
     
@@ -518,29 +367,21 @@ object Backgroundposition {
     
     inline def `setFill-typeUndefined`: Self = StObject.set(x, "fill-type", js.undefined)
     
-    inline def `setFont-angle`(value: Double): Self = StObject.set(x, "font-angle", value.asInstanceOf[js.Any])
+    inline def setFillAngle(value: Double): Self = StObject.set(x, "fillAngle", value.asInstanceOf[js.Any])
     
-    inline def `setFont-angleUndefined`: Self = StObject.set(x, "font-angle", js.undefined)
+    inline def setFillAngleUndefined: Self = StObject.set(x, "fillAngle", js.undefined)
     
-    inline def `setFont-color`(value: String): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
+    inline def setFillOffsetX(value: Any): Self = StObject.set(x, "fillOffsetX", value.asInstanceOf[js.Any])
     
-    inline def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
+    inline def setFillOffsetXUndefined: Self = StObject.set(x, "fillOffsetX", js.undefined)
     
-    inline def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
+    inline def setFillOffsetY(value: Any): Self = StObject.set(x, "fillOffsetY", value.asInstanceOf[js.Any])
     
-    inline def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
+    inline def setFillOffsetYUndefined: Self = StObject.set(x, "fillOffsetY", js.undefined)
     
-    inline def `setFont-size`(value: js.Any): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
+    inline def setFillType(value: String): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
     
-    inline def `setFont-sizeUndefined`: Self = StObject.set(x, "font-size", js.undefined)
-    
-    inline def `setFont-style`(value: String): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
-    
-    inline def `setFont-styleUndefined`: Self = StObject.set(x, "font-style", js.undefined)
-    
-    inline def `setFont-weight`(value: String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
-    
-    inline def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
+    inline def setFillTypeUndefined: Self = StObject.set(x, "fillType", js.undefined)
     
     inline def `setGradient-colors`(value: String): Self = StObject.set(x, "gradient-colors", value.asInstanceOf[js.Any])
     
@@ -550,53 +391,61 @@ object Backgroundposition {
     
     inline def `setGradient-stopsUndefined`: Self = StObject.set(x, "gradient-stops", js.undefined)
     
-    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setGradientColors(value: String): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
     
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
     
-    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    inline def setGradientStops(value: String): Self = StObject.set(x, "gradientStops", value.asInstanceOf[js.Any])
     
-    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    inline def setGradientStopsUndefined: Self = StObject.set(x, "gradientStops", js.undefined)
     
-    inline def `setMax-chars`(value: Double): Self = StObject.set(x, "max-chars", value.asInstanceOf[js.Any])
+    inline def `setHighlight-state`(value: highlightState): Self = StObject.set(x, "highlight-state", value.asInstanceOf[js.Any])
     
-    inline def `setMax-charsUndefined`: Self = StObject.set(x, "max-chars", js.undefined)
+    inline def `setHighlight-stateUndefined`: Self = StObject.set(x, "highlight-state", js.undefined)
     
-    inline def `setMax-width`(value: js.Any): Self = StObject.set(x, "max-width", value.asInstanceOf[js.Any])
+    inline def setHighlightState(value: highlightState): Self = StObject.set(x, "highlightState", value.asInstanceOf[js.Any])
     
-    inline def `setMax-widthUndefined`: Self = StObject.set(x, "max-width", js.undefined)
+    inline def setHighlightStateUndefined: Self = StObject.set(x, "highlightState", js.undefined)
     
-    inline def `setOffset-x`(value: js.Any): Self = StObject.set(x, "offset-x", value.asInstanceOf[js.Any])
+    inline def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
     
-    inline def `setOffset-xUndefined`: Self = StObject.set(x, "offset-x", js.undefined)
+    inline def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
     
-    inline def `setOffset-y`(value: js.Any): Self = StObject.set(x, "offset-y", value.asInstanceOf[js.Any])
+    inline def `setLine-gap-size`(value: Any): Self = StObject.set(x, "line-gap-size", value.asInstanceOf[js.Any])
     
-    inline def `setOffset-yUndefined`: Self = StObject.set(x, "offset-y", js.undefined)
+    inline def `setLine-gap-sizeUndefined`: Self = StObject.set(x, "line-gap-size", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def `setLine-segment-size`(value: Any): Self = StObject.set(x, "line-segment-size", value.asInstanceOf[js.Any])
     
-    inline def `setPadding-bottom`(value: js.Any): Self = StObject.set(x, "padding-bottom", value.asInstanceOf[js.Any])
+    inline def `setLine-segment-sizeUndefined`: Self = StObject.set(x, "line-segment-size", js.undefined)
     
-    inline def `setPadding-bottomUndefined`: Self = StObject.set(x, "padding-bottom", js.undefined)
+    inline def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     
-    inline def `setPadding-left`(value: js.Any): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
+    inline def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
-    inline def `setPadding-leftUndefined`: Self = StObject.set(x, "padding-left", js.undefined)
+    inline def `setLine-width`(value: Any): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     
-    inline def `setPadding-right`(value: js.Any): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
+    inline def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
     
-    inline def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    inline def `setPadding-top`(value: js.Any): Self = StObject.set(x, "padding-top", value.asInstanceOf[js.Any])
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    inline def `setPadding-topUndefined`: Self = StObject.set(x, "padding-top", js.undefined)
+    inline def setLineGapSize(value: Any): Self = StObject.set(x, "lineGapSize", value.asInstanceOf[js.Any])
     
-    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setLineGapSizeUndefined: Self = StObject.set(x, "lineGapSize", js.undefined)
     
-    inline def `setRtl Leftparenthesisright-to-leftRightparenthesis`(value: Boolean): Self = StObject.set(x, "rtl (right-to-left)", value.asInstanceOf[js.Any])
+    inline def setLineSegmentSize(value: Any): Self = StObject.set(x, "lineSegmentSize", value.asInstanceOf[js.Any])
     
-    inline def `setRtl Leftparenthesisright-to-leftRightparenthesisUndefined`: Self = StObject.set(x, "rtl (right-to-left)", js.undefined)
+    inline def setLineSegmentSizeUndefined: Self = StObject.set(x, "lineSegmentSize", js.undefined)
+    
+    inline def setLineStyle(value: String): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setLineWidth(value: Any): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
@@ -608,7 +457,7 @@ object Backgroundposition {
     
     inline def `setShadow-angleUndefined`: Self = StObject.set(x, "shadow-angle", js.undefined)
     
-    inline def `setShadow-blur`(value: js.Any): Self = StObject.set(x, "shadow-blur", value.asInstanceOf[js.Any])
+    inline def `setShadow-blur`(value: Any): Self = StObject.set(x, "shadow-blur", value.asInstanceOf[js.Any])
     
     inline def `setShadow-blurUndefined`: Self = StObject.set(x, "shadow-blur", js.undefined)
     
@@ -616,46 +465,58 @@ object Backgroundposition {
     
     inline def `setShadow-colorUndefined`: Self = StObject.set(x, "shadow-color", js.undefined)
     
-    inline def `setShadow-distance`(value: js.Any): Self = StObject.set(x, "shadow-distance", value.asInstanceOf[js.Any])
+    inline def `setShadow-distance`(value: Any): Self = StObject.set(x, "shadow-distance", value.asInstanceOf[js.Any])
     
     inline def `setShadow-distanceUndefined`: Self = StObject.set(x, "shadow-distance", js.undefined)
     
+    inline def setShadowAlpha(value: Double): Self = StObject.set(x, "shadowAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setShadowAlphaUndefined: Self = StObject.set(x, "shadowAlpha", js.undefined)
+    
+    inline def setShadowAngle(value: Double): Self = StObject.set(x, "shadowAngle", value.asInstanceOf[js.Any])
+    
+    inline def setShadowAngleUndefined: Self = StObject.set(x, "shadowAngle", js.undefined)
+    
+    inline def setShadowBlur(value: Any): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
+    
+    inline def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
+    
+    inline def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    
+    inline def setShadowDistance(value: Any): Self = StObject.set(x, "shadowDistance", value.asInstanceOf[js.Any])
+    
+    inline def setShadowDistanceUndefined: Self = StObject.set(x, "shadowDistance", js.undefined)
+    
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def `setShow-line`(value: Boolean): Self = StObject.set(x, "show-line", value.asInstanceOf[js.Any])
     
-    inline def `setText-align`(value: String): Self = StObject.set(x, "text-align", value.asInstanceOf[js.Any])
+    inline def `setShow-lineUndefined`: Self = StObject.set(x, "show-line", js.undefined)
     
-    inline def `setText-alignUndefined`: Self = StObject.set(x, "text-align", js.undefined)
+    inline def setShowLine(value: Boolean): Self = StObject.set(x, "showLine", value.asInstanceOf[js.Any])
     
-    inline def `setText-alpha`(value: Double): Self = StObject.set(x, "text-alpha", value.asInstanceOf[js.Any])
+    inline def setShowLineUndefined: Self = StObject.set(x, "showLine", js.undefined)
     
-    inline def `setText-alphaUndefined`: Self = StObject.set(x, "text-alpha", js.undefined)
+    inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def `setText-decoration`(value: String): Self = StObject.set(x, "text-decoration", value.asInstanceOf[js.Any])
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def `setText-decorationUndefined`: Self = StObject.set(x, "text-decoration", js.undefined)
+    inline def `setToggle-action`(value: String): Self = StObject.set(x, "toggle-action", value.asInstanceOf[js.Any])
     
-    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def `setToggle-actionUndefined`: Self = StObject.set(x, "toggle-action", js.undefined)
     
-    inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setToggleAction(value: String): Self = StObject.set(x, "toggleAction", value.asInstanceOf[js.Any])
     
-    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    inline def setToggleActionUndefined: Self = StObject.set(x, "toggleAction", js.undefined)
     
-    inline def `setVertical-align`(value: String): Self = StObject.set(x, "vertical-align", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def `setVertical-alignUndefined`: Self = StObject.set(x, "vertical-align", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-    
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    
-    inline def `setWrap-text`(value: Boolean): Self = StObject.set(x, "wrap-text", value.asInstanceOf[js.Any])
-    
-    inline def `setWrap-textUndefined`: Self = StObject.set(x, "wrap-text", js.undefined)
   }
 }

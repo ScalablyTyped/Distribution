@@ -3,7 +3,6 @@ package typings.javascriptTimeAgo
 import typings.javascriptTimeAgo.gradationMod.Gradation
 import typings.javascriptTimeAgo.gradationMod.Unit
 import typings.javascriptTimeAgo.localeMod.Locale
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object styleMod {
   
   trait CustomFormatterOptions extends StObject {
     
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     var elapsed: Double
     
@@ -33,7 +32,7 @@ object styleMod {
     
     extension [Self <: CustomFormatterOptions](x: Self) {
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -74,7 +73,7 @@ object styleMod {
     
     var flavour: js.UndefOr[js.Array[Flavour]] = js.undefined
     
-    var format: js.UndefOr[js.Function2[/* date */ Date | Double, /* locale */ Locale, String]] = js.undefined
+    var format: js.UndefOr[js.Function2[/* date */ js.Date | Double, /* locale */ Locale, String]] = js.undefined
     
     var gradation: js.UndefOr[js.Array[Gradation]] = js.undefined
     
@@ -97,9 +96,9 @@ object styleMod {
       
       inline def setFlavourUndefined: Self = StObject.set(x, "flavour", js.undefined)
       
-      inline def setFlavourVarargs(value: Flavour*): Self = StObject.set(x, "flavour", js.Array(value :_*))
+      inline def setFlavourVarargs(value: Flavour*): Self = StObject.set(x, "flavour", js.Array(value*))
       
-      inline def setFormat(value: (/* date */ Date | Double, /* locale */ Locale) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (/* date */ js.Date | Double, /* locale */ Locale) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -107,7 +106,7 @@ object styleMod {
       
       inline def setGradationUndefined: Self = StObject.set(x, "gradation", js.undefined)
       
-      inline def setGradationVarargs(value: Gradation*): Self = StObject.set(x, "gradation", js.Array(value :_*))
+      inline def setGradationVarargs(value: Gradation*): Self = StObject.set(x, "gradation", js.Array(value*))
       
       inline def setUnits(value: Unit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       

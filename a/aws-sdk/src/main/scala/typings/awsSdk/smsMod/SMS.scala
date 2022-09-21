@@ -29,12 +29,12 @@ trait SMS extends Service {
   ): Request[CreateAppResponse, AWSError] = js.native
   
   /**
-    * Creates a replication job. The replication job schedules periodic replication runs to replicate your server to AWS. Each replication run creates an Amazon Machine Image (AMI).
+    * Creates a replication job. The replication job schedules periodic replication runs to replicate your server to Amazon Web Services. Each replication run creates an Amazon Machine Image (AMI).
     */
   def createReplicationJob(): Request[CreateReplicationJobResponse, AWSError] = js.native
   def createReplicationJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationJobResponse, Unit]): Request[CreateReplicationJobResponse, AWSError] = js.native
   /**
-    * Creates a replication job. The replication job schedules periodic replication runs to replicate your server to AWS. Each replication run creates an Amazon Machine Image (AMI).
+    * Creates a replication job. The replication job schedules periodic replication runs to replicate your server to Amazon Web Services. Each replication run creates an Amazon Machine Image (AMI).
     */
   def createReplicationJob(params: CreateReplicationJobRequest): Request[CreateReplicationJobResponse, AWSError] = js.native
   def createReplicationJob(
@@ -43,12 +43,12 @@ trait SMS extends Service {
   ): Request[CreateReplicationJobResponse, AWSError] = js.native
   
   /**
-    * Deletes the specified application. Optionally deletes the launched stack associated with the application and all AWS SMS replication jobs for servers in the application.
+    * Deletes the specified application. Optionally deletes the launched stack associated with the application and all Server Migration Service replication jobs for servers in the application.
     */
   def deleteApp(): Request[DeleteAppResponse, AWSError] = js.native
   def deleteApp(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAppResponse, Unit]): Request[DeleteAppResponse, AWSError] = js.native
   /**
-    * Deletes the specified application. Optionally deletes the launched stack associated with the application and all AWS SMS replication jobs for servers in the application.
+    * Deletes the specified application. Optionally deletes the launched stack associated with the application and all Server Migration Service replication jobs for servers in the application.
     */
   def deleteApp(params: DeleteAppRequest): Request[DeleteAppResponse, AWSError] = js.native
   def deleteApp(
@@ -103,12 +103,12 @@ trait SMS extends Service {
   ): Request[DeleteAppValidationConfigurationResponse, AWSError] = js.native
   
   /**
-    * Deletes the specified replication job. After you delete a replication job, there are no further replication runs. AWS deletes the contents of the Amazon S3 bucket used to store AWS SMS artifacts. The AMIs created by the replication runs are not deleted.
+    * Deletes the specified replication job. After you delete a replication job, there are no further replication runs. Amazon Web Services deletes the contents of the Amazon S3 bucket used to store Server Migration Service artifacts. The AMIs created by the replication runs are not deleted.
     */
   def deleteReplicationJob(): Request[DeleteReplicationJobResponse, AWSError] = js.native
   def deleteReplicationJob(callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationJobResponse, Unit]): Request[DeleteReplicationJobResponse, AWSError] = js.native
   /**
-    * Deletes the specified replication job. After you delete a replication job, there are no further replication runs. AWS deletes the contents of the Amazon S3 bucket used to store AWS SMS artifacts. The AMIs created by the replication runs are not deleted.
+    * Deletes the specified replication job. After you delete a replication job, there are no further replication runs. Amazon Web Services deletes the contents of the Amazon S3 bucket used to store Server Migration Service artifacts. The AMIs created by the replication runs are not deleted.
     */
   def deleteReplicationJob(params: DeleteReplicationJobRequest): Request[DeleteReplicationJobResponse, AWSError] = js.native
   def deleteReplicationJob(
@@ -131,12 +131,12 @@ trait SMS extends Service {
   ): Request[DeleteServerCatalogResponse, AWSError] = js.native
   
   /**
-    * Disassociates the specified connector from AWS SMS. After you disassociate a connector, it is no longer available to support replication jobs.
+    * Disassociates the specified connector from Server Migration Service. After you disassociate a connector, it is no longer available to support replication jobs.
     */
   def disassociateConnector(): Request[DisassociateConnectorResponse, AWSError] = js.native
   def disassociateConnector(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateConnectorResponse, Unit]): Request[DisassociateConnectorResponse, AWSError] = js.native
   /**
-    * Disassociates the specified connector from AWS SMS. After you disassociate a connector, it is no longer available to support replication jobs.
+    * Disassociates the specified connector from Server Migration Service. After you disassociate a connector, it is no longer available to support replication jobs.
     */
   def disassociateConnector(params: DisassociateConnectorRequest): Request[DisassociateConnectorResponse, AWSError] = js.native
   def disassociateConnector(
@@ -159,12 +159,12 @@ trait SMS extends Service {
   ): Request[GenerateChangeSetResponse, AWSError] = js.native
   
   /**
-    * Generates an AWS CloudFormation template based on the current launch configuration and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
+    * Generates an CloudFormation template based on the current launch configuration and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
     */
   def generateTemplate(): Request[GenerateTemplateResponse, AWSError] = js.native
   def generateTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GenerateTemplateResponse, Unit]): Request[GenerateTemplateResponse, AWSError] = js.native
   /**
-    * Generates an AWS CloudFormation template based on the current launch configuration and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
+    * Generates an CloudFormation template based on the current launch configuration and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
     */
   def generateTemplate(params: GenerateTemplateRequest): Request[GenerateTemplateResponse, AWSError] = js.native
   def generateTemplate(
@@ -242,12 +242,12 @@ trait SMS extends Service {
   ): Request[GetAppValidationOutputResponse, AWSError] = js.native
   
   /**
-    * Describes the connectors registered with the AWS SMS.
+    * Describes the connectors registered with the Server Migration Service.
     */
   def getConnectors(): Request[GetConnectorsResponse, AWSError] = js.native
   def getConnectors(callback: js.Function2[/* err */ AWSError, /* data */ GetConnectorsResponse, Unit]): Request[GetConnectorsResponse, AWSError] = js.native
   /**
-    * Describes the connectors registered with the AWS SMS.
+    * Describes the connectors registered with the Server Migration Service.
     */
   def getConnectors(params: GetConnectorsRequest): Request[GetConnectorsResponse, AWSError] = js.native
   def getConnectors(
@@ -298,12 +298,12 @@ trait SMS extends Service {
   ): Request[GetServersResponse, AWSError] = js.native
   
   /**
-    * Allows application import from AWS Migration Hub.
+    * Allows application import from Migration Hub.
     */
   def importAppCatalog(): Request[ImportAppCatalogResponse, AWSError] = js.native
   def importAppCatalog(callback: js.Function2[/* err */ AWSError, /* data */ ImportAppCatalogResponse, Unit]): Request[ImportAppCatalogResponse, AWSError] = js.native
   /**
-    * Allows application import from AWS Migration Hub.
+    * Allows application import from Migration Hub.
     */
   def importAppCatalog(params: ImportAppCatalogRequest): Request[ImportAppCatalogResponse, AWSError] = js.native
   def importAppCatalog(
@@ -326,12 +326,12 @@ trait SMS extends Service {
   ): Request[ImportServerCatalogResponse, AWSError] = js.native
   
   /**
-    * Launches the specified application as a stack in AWS CloudFormation.
+    * Launches the specified application as a stack in CloudFormation.
     */
   def launchApp(): Request[LaunchAppResponse, AWSError] = js.native
   def launchApp(callback: js.Function2[/* err */ AWSError, /* data */ LaunchAppResponse, Unit]): Request[LaunchAppResponse, AWSError] = js.native
   /**
-    * Launches the specified application as a stack in AWS CloudFormation.
+    * Launches the specified application as a stack in CloudFormation.
     */
   def launchApp(params: LaunchAppRequest): Request[LaunchAppResponse, AWSError] = js.native
   def launchApp(
@@ -354,12 +354,12 @@ trait SMS extends Service {
   ): Request[ListAppsResponse, AWSError] = js.native
   
   /**
-    * Provides information to AWS SMS about whether application validation is successful.
+    * Provides information to Server Migration Service about whether application validation is successful.
     */
   def notifyAppValidationOutput(): Request[NotifyAppValidationOutputResponse, AWSError] = js.native
   def notifyAppValidationOutput(callback: js.Function2[/* err */ AWSError, /* data */ NotifyAppValidationOutputResponse, Unit]): Request[NotifyAppValidationOutputResponse, AWSError] = js.native
   /**
-    * Provides information to AWS SMS about whether application validation is successful.
+    * Provides information to Server Migration Service about whether application validation is successful.
     */
   def notifyAppValidationOutput(params: NotifyAppValidationOutputRequest): Request[NotifyAppValidationOutputResponse, AWSError] = js.native
   def notifyAppValidationOutput(

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCustomDataIdentifierRequest extends StObject {
   
   /**
-    * The unique identifier for the Amazon Macie resource or account that the request applies to.
+    * The unique identifier for the Amazon Macie resource that the request applies to.
     */
   var id: string
 }

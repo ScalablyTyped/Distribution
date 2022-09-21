@@ -97,7 +97,7 @@ trait AwsDynamoDbTableDetails extends StObject {
   var TableSizeBytes: js.UndefOr[SizeBytes] = js.undefined
   
   /**
-    * The current status of the table.
+    * The current status of the table. Valid values are as follows:    ACTIVE     ARCHIVED     ARCHIVING     CREATING     DELETING     INACCESSIBLE_ENCRYPTION_CREDENTIALS     UPDATING   
     */
   var TableStatus: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -114,7 +114,7 @@ object AwsDynamoDbTableDetails {
     
     inline def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
     
-    inline def setAttributeDefinitionsVarargs(value: AwsDynamoDbTableAttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
+    inline def setAttributeDefinitionsVarargs(value: AwsDynamoDbTableAttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value*))
     
     inline def setBillingModeSummary(value: AwsDynamoDbTableBillingModeSummary): Self = StObject.set(x, "BillingModeSummary", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object AwsDynamoDbTableDetails {
     
     inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
-    inline def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+    inline def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
     
     inline def setGlobalTableVersion(value: NonEmptyString): Self = StObject.set(x, "GlobalTableVersion", value.asInstanceOf[js.Any])
     
@@ -142,7 +142,7 @@ object AwsDynamoDbTableDetails {
     
     inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    inline def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = StObject.set(x, "KeySchema", js.Array(value*))
     
     inline def setLatestStreamArn(value: NonEmptyString): Self = StObject.set(x, "LatestStreamArn", value.asInstanceOf[js.Any])
     
@@ -156,7 +156,7 @@ object AwsDynamoDbTableDetails {
     
     inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
     
-    inline def setLocalSecondaryIndexesVarargs(value: AwsDynamoDbTableLocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+    inline def setLocalSecondaryIndexesVarargs(value: AwsDynamoDbTableLocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value*))
     
     inline def setProvisionedThroughput(value: AwsDynamoDbTableProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
@@ -166,7 +166,7 @@ object AwsDynamoDbTableDetails {
     
     inline def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
     
-    inline def setReplicasVarargs(value: AwsDynamoDbTableReplica*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
+    inline def setReplicasVarargs(value: AwsDynamoDbTableReplica*): Self = StObject.set(x, "Replicas", js.Array(value*))
     
     inline def setRestoreSummary(value: AwsDynamoDbTableRestoreSummary): Self = StObject.set(x, "RestoreSummary", value.asInstanceOf[js.Any])
     

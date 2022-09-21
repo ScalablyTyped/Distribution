@@ -14,7 +14,7 @@ trait DescribeExperimentResponse extends StObject {
   /**
     * When the experiment was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the experiment.
@@ -44,7 +44,7 @@ trait DescribeExperimentResponse extends StObject {
   /**
     * When the experiment was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the source and, optionally, the type.
@@ -64,7 +64,7 @@ object DescribeExperimentResponse {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -88,7 +88,7 @@ object DescribeExperimentResponse {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

@@ -43,7 +43,7 @@ object createResponseMod {
   /**
     * A response body, either in the form of a static string or a readable stream.
     */
-  type CreateResponseBody = String | ReadableStream[js.Any]
+  type CreateResponseBody = String | ReadableStream[Any]
   
   /**
     * Specifies headers for createResponse(). Keys are treated as header

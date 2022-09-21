@@ -42,6 +42,6 @@ object DevicePoolCompatibilityResult {
     
     inline def setIncompatibilityMessagesUndefined: Self = StObject.set(x, "incompatibilityMessages", js.undefined)
     
-    inline def setIncompatibilityMessagesVarargs(value: IncompatibilityMessage*): Self = StObject.set(x, "incompatibilityMessages", js.Array(value :_*))
+    inline def setIncompatibilityMessagesVarargs(value: IncompatibilityMessage*): Self = StObject.set(x, "incompatibilityMessages", js.Array(value*))
   }
 }

@@ -37,7 +37,7 @@ trait AwsLambdaFunctionDetails extends StObject {
   var Handler: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The KMS key that's used to encrypt the function's environment variables. This key is only returned if you've configured a customer managed CMK.
+    * The KMS key that is used to encrypt the function's environment variables. This key is only returned if you've configured a customer managed customer managed key.
     */
   var KmsKeyArn: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -57,7 +57,7 @@ trait AwsLambdaFunctionDetails extends StObject {
   var MasterArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The memory that's allocated to the function.
+    * The memory that is allocated to the function.
     */
   var MemorySize: js.UndefOr[Integer] = js.undefined
   
@@ -82,7 +82,7 @@ trait AwsLambdaFunctionDetails extends StObject {
   var Timeout: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The function's AWS X-Ray tracing configuration.
+    * The function's X-Ray tracing configuration.
     */
   var TracingConfig: js.UndefOr[AwsLambdaFunctionTracingConfig] = js.undefined
   
@@ -141,7 +141,7 @@ object AwsLambdaFunctionDetails {
     
     inline def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
     
-    inline def setLayersVarargs(value: AwsLambdaFunctionLayer*): Self = StObject.set(x, "Layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: AwsLambdaFunctionLayer*): Self = StObject.set(x, "Layers", js.Array(value*))
     
     inline def setMasterArn(value: NonEmptyString): Self = StObject.set(x, "MasterArn", value.asInstanceOf[js.Any])
     

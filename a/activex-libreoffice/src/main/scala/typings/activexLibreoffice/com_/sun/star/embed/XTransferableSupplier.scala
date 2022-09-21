@@ -14,13 +14,13 @@ trait XTransferableSupplier
   
   /**
     * allows to get access to {@link com.sun.star.datatransfer.XTransferable} implementation.
-    * @returns {@link com.sun.star.datatransfer.XTransferable} implementation
+    * @returns implementation
     */
   val Transferable: XTransferable
   
   /**
     * allows to get access to {@link com.sun.star.datatransfer.XTransferable} implementation.
-    * @returns {@link com.sun.star.datatransfer.XTransferable} implementation
+    * @returns implementation
     */
   def getTransferable(): XTransferable
 }
@@ -30,7 +30,7 @@ object XTransferableSupplier {
     Transferable: XTransferable,
     acquire: () => Unit,
     getTransferable: () => XTransferable,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTransferableSupplier = {
     val __obj = js.Dynamic.literal(Transferable = Transferable.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getTransferable = js.Any.fromFunction0(getTransferable), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -1,6 +1,5 @@
 package typings.amcharts
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object categoryAxisMod {
   
   @JSImport("amcharts/CategoryAxis", JSImport.Default)
   @js.native
-  class default () extends CategoryAxis
+  open class default () extends CategoryAxis
   
   @js.native
   trait CategoryAxis
@@ -49,13 +48,13 @@ object categoryAxisMod {
       *     {period:'YYYY',format:'YYYY'}
       * ]
       */
-    var dateFormats: js.Array[js.Any] = js.native
+    var dateFormats: js.Array[Any] = js.native
     
     /**
       * Number Returns coordinate of the date, in case parseDates is set to true.
       * If parseDates is false, use categoryToCoordinate method.
       */
-    def dateToCoordinate(date: Date): Unit = js.native
+    def dateToCoordinate(date: js.Date): Unit = js.native
     
     /**
       * In case your category axis values are Date objects and parseDates is set to true,

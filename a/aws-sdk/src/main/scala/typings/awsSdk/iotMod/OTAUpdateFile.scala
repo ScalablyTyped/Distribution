@@ -27,6 +27,11 @@ trait OTAUpdateFile extends StObject {
   var fileName: js.UndefOr[FileName] = js.undefined
   
   /**
+    * An integer value you can include in the job document to allow your devices to identify the type of file received from the cloud.
+    */
+  var fileType: js.UndefOr[FileType] = js.undefined
+  
+  /**
     * The file version.
     */
   var fileVersion: js.UndefOr[OTAUpdateFileVersion] = js.undefined
@@ -55,6 +60,10 @@ object OTAUpdateFile {
     inline def setFileName(value: FileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
     inline def setFileVersion(value: OTAUpdateFileVersion): Self = StObject.set(x, "fileVersion", value.asInstanceOf[js.Any])
     

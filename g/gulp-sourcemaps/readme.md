@@ -3,21 +3,18 @@
 
 
 ## Library description:
-Source map support for Gulp.js
+Sourcemap support for gulpjs.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gulp-sourcemaps |
 | Keywords           | gulpplugin, gulp, source maps, sourcemaps |
 | # releases         | 2 |
-| # dependents       | 1479 |
-| # downloads        | 44129848 |
-| # stars            | 308 |
+| # dependents       | 0.0 |
+| # downloads        | 3049812.6666666665 |
+| # stars            | 1091.0 |
 
 ## Links
-- [Homepage](http://github.com/gulp-sourcemaps/gulp-sourcemaps)
-- [Bugs](https://github.com/gulp-sourcemaps/gulp-sourcemaps/issues)
-- [Repository](https://github.com/gulp-sourcemaps/gulp-sourcemaps)
 - [Npm](https://www.npmjs.com/package/gulp-sourcemaps)
     
 

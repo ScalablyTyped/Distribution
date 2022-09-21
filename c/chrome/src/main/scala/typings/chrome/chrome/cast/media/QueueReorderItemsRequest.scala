@@ -27,6 +27,6 @@ object QueueReorderItemsRequest {
     
     inline def setItemIds(value: js.Array[Double]): Self = StObject.set(x, "itemIds", value.asInstanceOf[js.Any])
     
-    inline def setItemIdsVarargs(value: Double*): Self = StObject.set(x, "itemIds", js.Array(value :_*))
+    inline def setItemIdsVarargs(value: Double*): Self = StObject.set(x, "itemIds", js.Array(value*))
   }
 }

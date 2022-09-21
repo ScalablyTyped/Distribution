@@ -24,6 +24,6 @@ object IEventCollision {
     
     inline def setPairs(value: js.Array[IPair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
-    inline def setPairsVarargs(value: IPair*): Self = StObject.set(x, "pairs", js.Array(value :_*))
+    inline def setPairsVarargs(value: IPair*): Self = StObject.set(x, "pairs", js.Array(value*))
   }
 }

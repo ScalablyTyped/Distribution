@@ -9,12 +9,12 @@ object ResourceModels {
   
   @JSImport("azure-arm-resource", "ResourceModels.BaseResource")
   @js.native
-  class BaseResource ()
+  open class BaseResource ()
     extends typings.azureArmResource.resourceModelsMod.BaseResource
   
   @JSImport("azure-arm-resource", "ResourceModels.CloudError")
   @js.native
-  class CloudError protected ()
+  open class CloudError protected ()
     extends typings.azureArmResource.resourceModelsMod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }

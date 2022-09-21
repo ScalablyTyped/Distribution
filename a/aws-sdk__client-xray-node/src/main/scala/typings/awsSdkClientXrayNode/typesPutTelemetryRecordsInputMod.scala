@@ -3,7 +3,6 @@ package typings.awsSdkClientXrayNode
 import typings.awsSdkClientXrayNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientXrayNode.typesTelemetryRecordMod.TelemetryRecord
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesPutTelemetryRecordsInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -54,11 +53,11 @@ object typesPutTelemetryRecordsInputMod {
     /**
       * <p/>
       */
-    var TelemetryRecords: js.Array[TelemetryRecord] | Iterable[TelemetryRecord]
+    var TelemetryRecords: js.Array[TelemetryRecord] | js.Iterable[TelemetryRecord]
   }
   object PutTelemetryRecordsInput {
     
-    inline def apply(TelemetryRecords: js.Array[TelemetryRecord] | Iterable[TelemetryRecord]): PutTelemetryRecordsInput = {
+    inline def apply(TelemetryRecords: js.Array[TelemetryRecord] | js.Iterable[TelemetryRecord]): PutTelemetryRecordsInput = {
       val __obj = js.Dynamic.literal(TelemetryRecords = TelemetryRecords.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutTelemetryRecordsInput]
     }
@@ -70,7 +69,7 @@ object typesPutTelemetryRecordsInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -91,9 +90,9 @@ object typesPutTelemetryRecordsInputMod {
       
       inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
       
-      inline def setTelemetryRecords(value: js.Array[TelemetryRecord] | Iterable[TelemetryRecord]): Self = StObject.set(x, "TelemetryRecords", value.asInstanceOf[js.Any])
+      inline def setTelemetryRecords(value: js.Array[TelemetryRecord] | js.Iterable[TelemetryRecord]): Self = StObject.set(x, "TelemetryRecords", value.asInstanceOf[js.Any])
       
-      inline def setTelemetryRecordsVarargs(value: TelemetryRecord*): Self = StObject.set(x, "TelemetryRecords", js.Array(value :_*))
+      inline def setTelemetryRecordsVarargs(value: TelemetryRecord*): Self = StObject.set(x, "TelemetryRecords", js.Array(value*))
     }
   }
 }

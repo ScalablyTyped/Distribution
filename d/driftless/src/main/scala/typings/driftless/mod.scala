@@ -14,9 +14,9 @@ object mod {
   inline def clearDriftless(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearDriftless")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def clearDriftless(id: Double, options: CustomClearTimeout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearDriftless")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setDriftlessInterval(callback: String, delayMs: Double, params: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessInterval")(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def setDriftlessInterval(callback: js.Function1[/* repeated */ js.Any, Unit], delayMs: Double, params: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessInterval")(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setDriftlessInterval(callback: String, delayMs: Double, params: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessInterval")((List(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setDriftlessInterval(callback: js.Function1[/* repeated */ Any, Unit], delayMs: Double, params: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessInterval")((List(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
-  inline def setDriftlessTimeout(callback: String, delayMs: Double, params: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessTimeout")(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def setDriftlessTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], delayMs: Double, params: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessTimeout")(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setDriftlessTimeout(callback: String, delayMs: Double, params: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessTimeout")((List(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setDriftlessTimeout(callback: js.Function1[/* repeated */ Any, Unit], delayMs: Double, params: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessTimeout")((List(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 }

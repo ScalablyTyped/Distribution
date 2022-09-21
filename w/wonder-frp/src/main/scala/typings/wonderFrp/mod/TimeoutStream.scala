@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "TimeoutStream")
 @js.native
-class TimeoutStream protected ()
+open class TimeoutStream protected ()
   extends typings.wonderFrp.timeoutStreamMod.TimeoutStream {
   def this(time: Double, scheduler: typings.wonderFrp.schedulerMod.Scheduler) = this()
 }

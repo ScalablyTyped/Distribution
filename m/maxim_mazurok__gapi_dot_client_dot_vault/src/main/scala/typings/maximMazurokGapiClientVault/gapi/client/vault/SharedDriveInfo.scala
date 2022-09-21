@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SharedDriveInfo extends StObject {
   
-  /** List of Shared drive IDs, as provided by Drive API. */
+  /** A list of shared drive IDs, as provided by the [Drive API](https://developers.google.com/drive). */
   var sharedDriveIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SharedDriveInfo {
@@ -22,6 +22,6 @@ object SharedDriveInfo {
     
     inline def setSharedDriveIdsUndefined: Self = StObject.set(x, "sharedDriveIds", js.undefined)
     
-    inline def setSharedDriveIdsVarargs(value: String*): Self = StObject.set(x, "sharedDriveIds", js.Array(value :_*))
+    inline def setSharedDriveIdsVarargs(value: String*): Self = StObject.set(x, "sharedDriveIds", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ trait WebsocketProviderOptions extends StObject {
   
   var clientConfig: js.UndefOr[js.Object] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   var host: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait WebsocketProviderOptions extends StObject {
   
   var reconnectDelay: js.UndefOr[Double] = js.undefined
   
-  var requestOptions: js.UndefOr[js.Any] = js.undefined
+  var requestOptions: js.UndefOr[Any] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
 }
@@ -37,7 +37,7 @@ object WebsocketProviderOptions {
     
     inline def setClientConfigUndefined: Self = StObject.set(x, "clientConfig", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -61,7 +61,7 @@ object WebsocketProviderOptions {
     
     inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
     
-    inline def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
     inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     

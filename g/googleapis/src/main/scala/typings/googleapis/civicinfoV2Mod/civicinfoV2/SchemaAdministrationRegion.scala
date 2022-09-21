@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes information about a regional election administrative area.
-  */
 trait SchemaAdministrationRegion extends StObject {
   
   /**
@@ -15,26 +12,17 @@ trait SchemaAdministrationRegion extends StObject {
   var electionAdministrationBody: js.UndefOr[SchemaAdministrativeBody] = js.undefined
   
   /**
-    * An ID for this object. IDs may change in future requests and should not
-    * be cached. Access to this field requires special access that can be
-    * requested from the Request more link on the Quotas page.
-    */
-  var id: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The city or county that provides election information for this voter.
-    * This object can have the same elements as state.
+    * The city or county that provides election information for this voter. This object can have the same elements as state.
     */
   var local_jurisdiction: js.UndefOr[SchemaAdministrationRegion] = js.undefined
   
   /**
     * The name of the jurisdiction.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A list of sources for this area. If multiple sources are listed the data
-    * has been aggregated from those sources.
+    * A list of sources for this area. If multiple sources are listed the data has been aggregated from those sources.
     */
   var sources: js.UndefOr[js.Array[SchemaSource]] = js.undefined
 }
@@ -51,15 +39,13 @@ object SchemaAdministrationRegion {
     
     inline def setElectionAdministrationBodyUndefined: Self = StObject.set(x, "electionAdministrationBody", js.undefined)
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
     inline def setLocal_jurisdiction(value: SchemaAdministrationRegion): Self = StObject.set(x, "local_jurisdiction", value.asInstanceOf[js.Any])
     
     inline def setLocal_jurisdictionUndefined: Self = StObject.set(x, "local_jurisdiction", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -67,6 +53,6 @@ object SchemaAdministrationRegion {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

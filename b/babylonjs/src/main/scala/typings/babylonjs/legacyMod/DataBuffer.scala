@@ -6,5 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "DataBuffer")
 @js.native
-class DataBuffer ()
+/**
+  * Constructs the buffer
+  */
+open class DataBuffer ()
   extends typings.babylonjs.indexMod.DataBuffer
+/* static members */
+object DataBuffer {
+  
+  @JSImport("babylonjs/Legacy/legacy", "DataBuffer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs/Legacy/legacy", "DataBuffer._Counter")
+  @js.native
+  def _Counter: Any = js.native
+  inline def _Counter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Counter")(x.asInstanceOf[js.Any])
+}

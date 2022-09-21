@@ -37,6 +37,11 @@ trait TransitGatewayRequestOptions extends StObject {
   var MulticastSupport: js.UndefOr[MulticastSupportValue] = js.undefined
   
   /**
+    * One or more IPv4 or IPv6 CIDR blocks for the transit gateway. Must be a size /24 CIDR block or larger for IPv4, or a size /64 CIDR block or larger for IPv6.
+    */
+  var TransitGatewayCidrBlocks: js.UndefOr[TransitGatewayCidrBlockStringList] = js.undefined
+  
+  /**
     * Enable or disable Equal Cost Multipath Protocol support. Enabled by default.
     */
   var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.undefined
@@ -73,6 +78,12 @@ object TransitGatewayRequestOptions {
     inline def setMulticastSupport(value: MulticastSupportValue): Self = StObject.set(x, "MulticastSupport", value.asInstanceOf[js.Any])
     
     inline def setMulticastSupportUndefined: Self = StObject.set(x, "MulticastSupport", js.undefined)
+    
+    inline def setTransitGatewayCidrBlocks(value: TransitGatewayCidrBlockStringList): Self = StObject.set(x, "TransitGatewayCidrBlocks", value.asInstanceOf[js.Any])
+    
+    inline def setTransitGatewayCidrBlocksUndefined: Self = StObject.set(x, "TransitGatewayCidrBlocks", js.undefined)
+    
+    inline def setTransitGatewayCidrBlocksVarargs(value: String*): Self = StObject.set(x, "TransitGatewayCidrBlocks", js.Array(value*))
     
     inline def setVpnEcmpSupport(value: VpnEcmpSupportValue): Self = StObject.set(x, "VpnEcmpSupport", value.asInstanceOf[js.Any])
     

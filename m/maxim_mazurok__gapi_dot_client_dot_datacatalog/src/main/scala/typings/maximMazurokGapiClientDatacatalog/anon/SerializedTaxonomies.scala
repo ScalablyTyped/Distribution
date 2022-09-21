@@ -28,7 +28,7 @@ trait SerializedTaxonomies extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the project that taxonomies to be exported will share. */
+  /** Required. Resource name of the project that the exported taxonomies belong to. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -37,10 +37,10 @@ trait SerializedTaxonomies extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Export taxonomies as serialized taxonomies. */
+  /** Serialized export taxonomies that contain all the policy tags as nested protocol buffers. */
   var serializedTaxonomies: js.UndefOr[Boolean] = js.undefined
   
-  /** Required. Resource names of the taxonomies to be exported. */
+  /** Required. Resource names of the taxonomies to export. */
   var taxonomies: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -104,7 +104,7 @@ object SerializedTaxonomies {
     
     inline def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
     
-    inline def setTaxonomiesVarargs(value: String*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
+    inline def setTaxonomiesVarargs(value: String*): Self = StObject.set(x, "taxonomies", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

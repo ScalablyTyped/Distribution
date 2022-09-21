@@ -17,6 +17,16 @@ object themeMod {
     def activeTextColor: String = js.native
     inline def activeTextColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeTextColor")(x.asInstanceOf[js.Any])
     
+    @JSImport("@antv/component/lib/util/theme", "default.descriptionIconFill")
+    @js.native
+    def descriptionIconFill: String = js.native
+    inline def descriptionIconFill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("descriptionIconFill")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@antv/component/lib/util/theme", "default.descriptionIconStroke")
+    @js.native
+    def descriptionIconStroke: String = js.native
+    inline def descriptionIconStroke_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("descriptionIconStroke")(x.asInstanceOf[js.Any])
+    
     @JSImport("@antv/component/lib/util/theme", "default.fontFamily")
     @js.native
     def fontFamily: String = js.native

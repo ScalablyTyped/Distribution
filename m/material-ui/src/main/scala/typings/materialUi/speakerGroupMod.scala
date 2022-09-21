@@ -10,10 +10,10 @@ object speakerGroupMod {
   
   @JSImport("material-ui/svg-icons/hardware/speaker-group", JSImport.Default)
   @js.native
-  class default () extends HardwareSpeakerGroup
+  open class default () extends HardwareSpeakerGroup
   
   @JSImport("material-ui/svg-icons/hardware/speaker-group", "HardwareSpeakerGroup")
   @js.native
-  class HardwareSpeakerGroup ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareSpeakerGroup ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

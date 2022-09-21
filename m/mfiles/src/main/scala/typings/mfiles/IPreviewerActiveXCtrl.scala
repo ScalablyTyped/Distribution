@@ -17,7 +17,7 @@ trait IPreviewerActiveXCtrl extends StObject {
     lObjVersion: Double,
     lFile: Double,
     lFileVersion: Double,
-    pIHitHighlightingInfo: js.Any,
+    pIHitHighlightingInfo: Any,
     bstrSearchConditions: String
   ): Double
 }
@@ -26,7 +26,7 @@ object IPreviewerActiveXCtrl {
   inline def apply(
     ClearPreview: () => Double,
     ShowFilePreview: String => Double,
-    ShowHitHighlightedFilePreview: (String, Double, Double, Double, Double, Double, js.Any, String) => Double
+    ShowHitHighlightedFilePreview: (String, Double, Double, Double, Double, Double, Any, String) => Double
   ): IPreviewerActiveXCtrl = {
     val __obj = js.Dynamic.literal(ClearPreview = js.Any.fromFunction0(ClearPreview), ShowFilePreview = js.Any.fromFunction1(ShowFilePreview), ShowHitHighlightedFilePreview = js.Any.fromFunction8(ShowHitHighlightedFilePreview))
     __obj.asInstanceOf[IPreviewerActiveXCtrl]
@@ -38,6 +38,6 @@ object IPreviewerActiveXCtrl {
     
     inline def setShowFilePreview(value: String => Double): Self = StObject.set(x, "ShowFilePreview", js.Any.fromFunction1(value))
     
-    inline def setShowHitHighlightedFilePreview(value: (String, Double, Double, Double, Double, Double, js.Any, String) => Double): Self = StObject.set(x, "ShowHitHighlightedFilePreview", js.Any.fromFunction8(value))
+    inline def setShowHitHighlightedFilePreview(value: (String, Double, Double, Double, Double, Double, Any, String) => Double): Self = StObject.set(x, "ShowHitHighlightedFilePreview", js.Any.fromFunction8(value))
   }
 }

@@ -26,7 +26,7 @@ object FillAttrs {
     
     inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
     
     inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

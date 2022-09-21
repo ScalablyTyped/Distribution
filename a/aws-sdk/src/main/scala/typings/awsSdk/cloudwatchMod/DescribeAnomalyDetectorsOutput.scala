@@ -29,7 +29,7 @@ object DescribeAnomalyDetectorsOutput {
     
     inline def setAnomalyDetectorsUndefined: Self = StObject.set(x, "AnomalyDetectors", js.undefined)
     
-    inline def setAnomalyDetectorsVarargs(value: AnomalyDetector*): Self = StObject.set(x, "AnomalyDetectors", js.Array(value :_*))
+    inline def setAnomalyDetectorsVarargs(value: AnomalyDetector*): Self = StObject.set(x, "AnomalyDetectors", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

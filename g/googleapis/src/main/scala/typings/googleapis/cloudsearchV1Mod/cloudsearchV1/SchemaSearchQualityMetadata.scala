@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Additional search quality metadata of the item.
-  */
 trait SchemaSearchQualityMetadata extends StObject {
   
   /**
-    * An indication of the quality of the item, used to influence search
-    * quality. Value should be between 0.0 (lowest quality) and 1.0 (highest
-    * quality). The default value is 0.0.
+    * An indication of the quality of the item, used to influence search quality. Value should be between 0.0 (lowest quality) and 1.0 (highest quality). The default value is 0.0.
     */
-  var quality: js.UndefOr[Double] = js.undefined
+  var quality: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaSearchQualityMetadata {
   
@@ -26,6 +21,8 @@ object SchemaSearchQualityMetadata {
   extension [Self <: SchemaSearchQualityMetadata](x: Self) {
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    
+    inline def setQualityNull: Self = StObject.set(x, "quality", null)
     
     inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientTagmanager.anon
 
-import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Entity
+import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.CreateContainerVersionRequestVersionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +23,6 @@ trait PrettyPrintQuotaUser extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** When provided, this fingerprint must match the fingerprint of the entity_in_workspace in the merge conflict. */
-  var fingerprint: js.UndefOr[String] = js.undefined
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
@@ -42,7 +39,7 @@ trait PrettyPrintQuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Entity
+  var resource: CreateContainerVersionRequestVersionOptions
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait PrettyPrintQuotaUser extends StObject {
 }
 object PrettyPrintQuotaUser {
   
-  inline def apply(path: String, resource: Entity): PrettyPrintQuotaUser = {
+  inline def apply(path: String, resource: CreateContainerVersionRequestVersionOptions): PrettyPrintQuotaUser = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintQuotaUser]
   }
@@ -79,10 +76,6 @@ object PrettyPrintQuotaUser {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
-    
-    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -101,7 +94,7 @@ object PrettyPrintQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Entity): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CreateContainerVersionRequestVersionOptions): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

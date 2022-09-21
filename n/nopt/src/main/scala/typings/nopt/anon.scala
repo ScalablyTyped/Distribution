@@ -25,15 +25,15 @@ object anon {
       
       inline def setCooked(value: js.Array[String]): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       
-      inline def setCookedVarargs(value: String*): Self = StObject.set(x, "cooked", js.Array(value :_*))
+      inline def setCookedVarargs(value: String*): Self = StObject.set(x, "cooked", js.Array(value*))
       
       inline def setOriginal(value: js.Array[String]): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      inline def setOriginalVarargs(value: String*): Self = StObject.set(x, "original", js.Array(value :_*))
+      inline def setOriginalVarargs(value: String*): Self = StObject.set(x, "original", js.Array(value*))
       
       inline def setRemain(value: js.Array[String]): Self = StObject.set(x, "remain", value.asInstanceOf[js.Any])
       
-      inline def setRemainVarargs(value: String*): Self = StObject.set(x, "remain", js.Array(value :_*))
+      inline def setRemainVarargs(value: String*): Self = StObject.set(x, "remain", js.Array(value*))
     }
   }
 }

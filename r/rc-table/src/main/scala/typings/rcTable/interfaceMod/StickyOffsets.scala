@@ -27,10 +27,10 @@ object StickyOffsets {
     
     inline def setLeft(value: js.Array[Double]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    inline def setLeftVarargs(value: Double*): Self = StObject.set(x, "left", js.Array(value :_*))
+    inline def setLeftVarargs(value: Double*): Self = StObject.set(x, "left", js.Array(value*))
     
     inline def setRight(value: js.Array[Double]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setRightVarargs(value: Double*): Self = StObject.set(x, "right", js.Array(value :_*))
+    inline def setRightVarargs(value: Double*): Self = StObject.set(x, "right", js.Array(value*))
   }
 }

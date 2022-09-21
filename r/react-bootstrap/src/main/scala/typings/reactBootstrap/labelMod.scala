@@ -11,12 +11,10 @@ object labelMod {
   
   @JSImport("react-bootstrap/lib/Label", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[LabelProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[LabelProps, js.Object, Any]
   
-  @js.native
-  trait Label
-    extends Component[LabelProps, js.Object, js.Any]
+  type Label = Component[LabelProps, js.Object, Any]
   
   trait LabelProps
     extends StObject

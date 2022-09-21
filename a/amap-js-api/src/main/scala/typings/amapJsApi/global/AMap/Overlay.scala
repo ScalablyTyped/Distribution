@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 abstract class Overlay[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Overlay[ExtraData] {
-  def this(options: Options[js.Any]) = this()
+  def this(options: Options[Any]) = this()
 }

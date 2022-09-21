@@ -14,10 +14,9 @@ object dropdownDividerMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownDivider", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[DropdownDividerProps, ComponentState, js.Any] {
+  open class default protected () extends Component[DropdownDividerProps, ComponentState, Any] {
     def this(props: DropdownDividerProps) = this()
-    def this(props: DropdownDividerProps, context: js.Any) = this()
+    def this(props: DropdownDividerProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownDivider", JSImport.Default)
   @js.native
@@ -26,7 +25,7 @@ object dropdownDividerMod extends Shortcut {
   trait DropdownDividerProps
     extends StObject
        with StrictDropdownDividerProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object DropdownDividerProps {
     
     inline def apply(): DropdownDividerProps = {
@@ -38,7 +37,7 @@ object dropdownDividerMod extends Shortcut {
   trait StrictDropdownDividerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Additional classes. */
     var className: js.UndefOr[String] = js.undefined
@@ -52,7 +51,7 @@ object dropdownDividerMod extends Shortcut {
     
     extension [Self <: StrictDropdownDividerProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

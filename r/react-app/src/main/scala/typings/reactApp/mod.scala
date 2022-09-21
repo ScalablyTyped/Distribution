@@ -14,70 +14,70 @@ object mod {
   
   @JSImport("react-app", "Header")
   @js.native
-  class Header protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class Header protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   @JSImport("react-app", "Layout")
   @js.native
-  class Layout protected ()
-    extends Component[LayoutProps, js.Object, js.Any] {
+  open class Layout protected ()
+    extends Component[LayoutProps, js.Object, Any] {
     def this(props: LayoutProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LayoutProps, context: js.Any) = this()
+    def this(props: LayoutProps, context: Any) = this()
   }
   
   @JSImport("react-app", "Link")
   @js.native
-  class Link protected ()
-    extends Component[LinkProps, js.Object, js.Any] {
+  open class Link protected ()
+    extends Component[LinkProps, js.Object, Any] {
     def this(props: LinkProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LinkProps, context: js.Any) = this()
+    def this(props: LinkProps, context: Any) = this()
   }
   
   @JSImport("react-app", "Navigation")
   @js.native
-  class Navigation protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class Navigation protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   inline def createApp(createAppObject: CreateAppObject): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(createAppObject.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ChildProps extends StObject {
     
-    def action(params: js.Any): js.Any
+    def action(params: Any): Any
     
     var path: String
   }
   object ChildProps {
     
-    inline def apply(action: js.Any => js.Any, path: String): ChildProps = {
+    inline def apply(action: Any => Any, path: String): ChildProps = {
       val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChildProps]
     }
     
     extension [Self <: ChildProps](x: Self) {
       
-      inline def setAction(value: js.Any => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: Any => Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -170,7 +170,7 @@ object mod {
       
       inline def setChildren(value: js.Array[ChildProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ChildProps*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ChildProps*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

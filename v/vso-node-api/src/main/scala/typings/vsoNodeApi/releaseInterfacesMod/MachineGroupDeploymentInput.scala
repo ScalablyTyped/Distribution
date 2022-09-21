@@ -20,7 +20,7 @@ object MachineGroupDeploymentInput {
   inline def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
-    demands: js.Array[js.Any],
+    demands: js.Array[Any],
     deploymentHealthOption: String,
     enableAccessToken: Boolean,
     healthPercent: Double,
@@ -43,6 +43,6 @@ object MachineGroupDeploymentInput {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

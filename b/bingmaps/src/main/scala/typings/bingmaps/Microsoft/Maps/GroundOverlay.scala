@@ -49,7 +49,7 @@ trait GroundOverlay
   def getVisible(): Boolean
   
   /** Optional property to store any additional metadata for this layer. */
-  var metadata: js.Any
+  var metadata: Any
   
   /**
     * Sets the options used to render the ground overlay.
@@ -75,7 +75,7 @@ object GroundOverlay {
     getOpacity: () => Double,
     getRotation: () => Double,
     getVisible: () => Boolean,
-    metadata: js.Any,
+    metadata: Any,
     onAdd: () => Unit,
     onLoad: () => Unit,
     onRemove: () => Unit,
@@ -101,7 +101,7 @@ object GroundOverlay {
     
     inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setSetOptions(value: IGroundOverlayOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     

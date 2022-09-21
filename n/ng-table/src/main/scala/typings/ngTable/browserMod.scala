@@ -23,7 +23,7 @@ object browserMod {
   
   @JSImport("ng-table/src/browser", "NgTableController")
   @js.native
-  class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected ()
+  open class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected ()
     extends typings.ngTable.ngTableControllerMod.NgTableController[TParams, TCol] {
     def this(
       $scope: ITableScope[TParams],
@@ -52,7 +52,7 @@ object browserMod {
   
   @JSImport("ng-table/src/browser", "NgTableFilterConfig")
   @js.native
-  class NgTableFilterConfig protected ()
+  open class NgTableFilterConfig protected ()
     extends typings.ngTable.ngTableFilterConfigMod.NgTableFilterConfig {
     def this(/**
       * Readonly copy of the final values used to configure the service.
@@ -74,7 +74,7 @@ object browserMod {
   
   @JSImport("ng-table/src/browser", "NgTableFilterConfigProvider")
   @js.native
-  class NgTableFilterConfigProvider protected ()
+  open class NgTableFilterConfigProvider protected ()
     extends typings.ngTable.ngTableFilterConfigMod.NgTableFilterConfigProvider {
     def this($injector: IInjectorService) = this()
   }

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "StepButton")
 @js.native
-class StepButton ()
-  extends Component[StepButtonProps, js.Object, js.Any]
+open class StepButton ()
+  extends Component[StepButtonProps, js.Object, Any]

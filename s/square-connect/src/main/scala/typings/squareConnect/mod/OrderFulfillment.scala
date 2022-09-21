@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderFulfillment")
 @js.native
-class OrderFulfillment () extends StObject {
+open class OrderFulfillment () extends StObject {
   
   /**
     * Application-defined data attached to this fulfillment. Metadata fields are intended to store descriptive

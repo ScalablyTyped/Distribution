@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent recharts.recharts.Animatable */
 trait LineProps extends StObject {
   
-  var activeDot: js.UndefOr[js.Object | ReactElement | ContentRenderer[js.Any] | Boolean] = js.undefined
+  var activeDot: js.UndefOr[js.Object | ReactElement | ContentRenderer[Any] | Boolean] = js.undefined
   
   var alignmentBaseline: js.UndefOr[String] = js.undefined
   
@@ -119,8 +119,6 @@ trait LineProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -136,7 +134,7 @@ trait LineProps extends StObject {
   var kerning: js.UndefOr[Double | String] = js.undefined
   
   // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
-  var label: js.UndefOr[Boolean | js.Object | ReactElement | ContentRenderer[js.Any]] = js.undefined
+  var label: js.UndefOr[Boolean | js.Object | ReactElement | ContentRenderer[Any]] = js.undefined
   
   var layout: js.UndefOr[LayoutType] = js.undefined
   
@@ -265,9 +263,9 @@ object LineProps {
   
   extension [Self <: LineProps](x: Self) {
     
-    inline def setActiveDot(value: js.Object | ReactElement | ContentRenderer[js.Any] | Boolean): Self = StObject.set(x, "activeDot", value.asInstanceOf[js.Any])
+    inline def setActiveDot(value: js.Object | ReactElement | ContentRenderer[Any] | Boolean): Self = StObject.set(x, "activeDot", value.asInstanceOf[js.Any])
     
-    inline def setActiveDotFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "activeDot", js.Any.fromFunction1(value))
+    inline def setActiveDotFunction1(value: Any => ReactNode): Self = StObject.set(x, "activeDot", js.Any.fromFunction1(value))
     
     inline def setActiveDotUndefined: Self = StObject.set(x, "activeDot", js.undefined)
     
@@ -347,11 +345,11 @@ object LineProps {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -437,10 +435,6 @@ object LineProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -469,9 +463,9 @@ object LineProps {
     
     inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
     
-    inline def setLabel(value: Boolean | js.Object | ReactElement | ContentRenderer[js.Any]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Boolean | js.Object | ReactElement | ContentRenderer[Any]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+    inline def setLabelFunction1(value: Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
@@ -587,7 +581,7 @@ object LineProps {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

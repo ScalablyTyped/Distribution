@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("muicss/react", "Col")
 @js.native
-class Col () extends default
+open class Col () extends default

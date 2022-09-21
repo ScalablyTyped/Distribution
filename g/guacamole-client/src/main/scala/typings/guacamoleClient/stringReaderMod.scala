@@ -9,7 +9,7 @@ object stringReaderMod {
   
   @JSImport("guacamole-client/lib/StringReader", "StringReader")
   @js.native
-  class StringReader protected () extends StObject {
+  open class StringReader protected () extends StObject {
     /**
       * @param stream The stream that data will be read from.
       */

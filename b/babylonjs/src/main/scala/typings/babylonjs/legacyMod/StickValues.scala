@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "StickValues")
 @js.native
-class StickValues protected ()
+open class StickValues protected ()
   extends typings.babylonjs.indexMod.StickValues {
   /**
     * Initializes the gamepad x and y control stick values

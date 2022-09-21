@@ -11,9 +11,9 @@ Lightweight library with time-based functions for composing asynchronous and eve
 | Full name          | rx-lite-time |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 783 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 96.0 |
+| # stars            | 19624.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS)

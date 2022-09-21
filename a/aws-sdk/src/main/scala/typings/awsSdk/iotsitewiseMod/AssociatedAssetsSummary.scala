@@ -19,7 +19,12 @@ trait AssociatedAssetsSummary extends StObject {
   /**
     * The date the asset was created, in Unix epoch time.
     */
-  var creationDate: Timestamp
+  var creationDate: js.Date
+  
+  /**
+    * A description for the asset.
+    */
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * A list of asset hierarchies that each contain a hierarchyId. A hierarchy specifies allowed parent/child asset relationships.
@@ -34,7 +39,7 @@ trait AssociatedAssetsSummary extends StObject {
   /**
     * The date the asset was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: Timestamp
+  var lastUpdateDate: js.Date
   
   /**
     * The name of the asset.
@@ -51,10 +56,10 @@ object AssociatedAssetsSummary {
   inline def apply(
     arn: ARN,
     assetModelId: ID,
-    creationDate: Timestamp,
+    creationDate: js.Date,
     hierarchies: AssetHierarchies,
     id: ID,
-    lastUpdateDate: Timestamp,
+    lastUpdateDate: js.Date,
     name: Name,
     status: AssetStatus
   ): AssociatedAssetsSummary = {
@@ -68,15 +73,19 @@ object AssociatedAssetsSummary {
     
     inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setHierarchies(value: AssetHierarchies): Self = StObject.set(x, "hierarchies", value.asInstanceOf[js.Any])
     
-    inline def setHierarchiesVarargs(value: AssetHierarchy*): Self = StObject.set(x, "hierarchies", js.Array(value :_*))
+    inline def setHierarchiesVarargs(value: AssetHierarchy*): Self = StObject.set(x, "hierarchies", js.Array(value*))
     
     inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: js.Date): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

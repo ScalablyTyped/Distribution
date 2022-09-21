@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The EXT_texture_filter_anisotropic extension is part of the WebGL API and exposes two constants for anisotropic filtering (AF). */
 trait EXTTextureFilterAnisotropic extends StObject {
   
+  /* standard dom */
   val MAX_TEXTURE_MAX_ANISOTROPY_EXT: GLenum
   
+  /* standard dom */
   val TEXTURE_MAX_ANISOTROPY_EXT: GLenum
 }
 object EXTTextureFilterAnisotropic {

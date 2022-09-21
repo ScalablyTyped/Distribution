@@ -9,10 +9,10 @@ Typings are for version 4.1
 | ------------------ | :-------------: |
 | Full name          | user-event |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 2 |
-| # downloads        | 303693 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13509.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/user-event)

@@ -22,7 +22,7 @@ trait RefundRequest extends StObject {
   
   var refund_source: js.UndefOr[String] = js.undefined
   
-  var supplementary_data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var supplementary_data: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object RefundRequest {
   
@@ -49,7 +49,7 @@ object RefundRequest {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setPayer_info(value: PayerInfo): Self = StObject.set(x, "payer_info", value.asInstanceOf[js.Any])
     
@@ -67,10 +67,10 @@ object RefundRequest {
     
     inline def setRefund_sourceUndefined: Self = StObject.set(x, "refund_source", js.undefined)
     
-    inline def setSupplementary_data(value: js.Array[js.Any]): Self = StObject.set(x, "supplementary_data", value.asInstanceOf[js.Any])
+    inline def setSupplementary_data(value: js.Array[Any]): Self = StObject.set(x, "supplementary_data", value.asInstanceOf[js.Any])
     
     inline def setSupplementary_dataUndefined: Self = StObject.set(x, "supplementary_data", js.undefined)
     
-    inline def setSupplementary_dataVarargs(value: js.Any*): Self = StObject.set(x, "supplementary_data", js.Array(value :_*))
+    inline def setSupplementary_dataVarargs(value: Any*): Self = StObject.set(x, "supplementary_data", js.Array(value*))
   }
 }

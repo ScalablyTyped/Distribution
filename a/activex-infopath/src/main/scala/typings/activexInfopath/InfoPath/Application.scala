@@ -13,14 +13,14 @@ trait Application extends StObject {
   
   def CacheSolution(bstrSolutionURI: String): Unit = js.native
   
-  def FormatString(varInput: js.Any, bstrCategory: String, bstrOptions: String): String = js.native
+  def FormatString(varInput: Any, bstrCategory: String, bstrOptions: String): String = js.native
   
   /* private */ @JSName("InfoPath.Application_typekey")
   var InfoPathDotApplication_typekey: Application = js.native
   
   def IsDestinationReachable(bstrDestination: String): Boolean = js.native
   
-  val LanguageSettings: js.Any = js.native
+  val LanguageSettings: Any = js.native
   
   val MachineOnlineState: XdMachineOnlineState = js.native
   

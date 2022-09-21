@@ -10,10 +10,10 @@ The lodash method `_.uniqWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.uniqwith |
 | Keywords           | lodash-modularized, uniqwith |
-| # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 1628753 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 482140.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

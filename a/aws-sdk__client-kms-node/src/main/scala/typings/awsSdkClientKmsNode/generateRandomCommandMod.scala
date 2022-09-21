@@ -16,7 +16,7 @@ object generateRandomCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/GenerateRandomCommand", "GenerateRandomCommand")
   @js.native
-  class GenerateRandomCommand protected ()
+  open class GenerateRandomCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object generateRandomCommandMod {
     override val middlewareStack: MiddlewareStack[GenerateRandomInput, GenerateRandomOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[GenerateRandomInput, GenerateRandomOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GenerateRandomInput, GenerateRandomOutput] = js.native
   }
 }

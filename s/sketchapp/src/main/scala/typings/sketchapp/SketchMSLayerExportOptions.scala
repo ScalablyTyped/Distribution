@@ -9,9 +9,9 @@ trait SketchMSLayerExportOptions extends StObject {
   
   var _class: exportOptions
   
-  var exportFormats: js.Array[js.Any]
+  var exportFormats: js.Array[Any]
   
-  var includedLayerIds: js.Array[js.Any]
+  var includedLayerIds: js.Array[Any]
   
   var layerOptions: Double
   
@@ -20,8 +20,8 @@ trait SketchMSLayerExportOptions extends StObject {
 object SketchMSLayerExportOptions {
   
   inline def apply(
-    exportFormats: js.Array[js.Any],
-    includedLayerIds: js.Array[js.Any],
+    exportFormats: js.Array[Any],
+    includedLayerIds: js.Array[Any],
     layerOptions: Double,
     shouldTrim: Boolean
   ): SketchMSLayerExportOptions = {
@@ -31,13 +31,13 @@ object SketchMSLayerExportOptions {
   
   extension [Self <: SketchMSLayerExportOptions](x: Self) {
     
-    inline def setExportFormats(value: js.Array[js.Any]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
+    inline def setExportFormats(value: js.Array[Any]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
-    inline def setExportFormatsVarargs(value: js.Any*): Self = StObject.set(x, "exportFormats", js.Array(value :_*))
+    inline def setExportFormatsVarargs(value: Any*): Self = StObject.set(x, "exportFormats", js.Array(value*))
     
-    inline def setIncludedLayerIds(value: js.Array[js.Any]): Self = StObject.set(x, "includedLayerIds", value.asInstanceOf[js.Any])
+    inline def setIncludedLayerIds(value: js.Array[Any]): Self = StObject.set(x, "includedLayerIds", value.asInstanceOf[js.Any])
     
-    inline def setIncludedLayerIdsVarargs(value: js.Any*): Self = StObject.set(x, "includedLayerIds", js.Array(value :_*))
+    inline def setIncludedLayerIdsVarargs(value: Any*): Self = StObject.set(x, "includedLayerIds", js.Array(value*))
     
     inline def setLayerOptions(value: Double): Self = StObject.set(x, "layerOptions", value.asInstanceOf[js.Any])
     

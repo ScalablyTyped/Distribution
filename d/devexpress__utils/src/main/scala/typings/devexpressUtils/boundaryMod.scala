@@ -14,7 +14,7 @@ object boundaryMod {
   
   @JSImport("@devexpress/utils/lib/intervals/boundary", "BoundaryInterval")
   @js.native
-  class BoundaryInterval protected ()
+  open class BoundaryInterval protected ()
     extends MutableInterval
        with IEquatable[BoundaryInterval]
        with ICloneable[BoundaryInterval]
@@ -24,6 +24,9 @@ object boundaryMod {
     
     /* CompleteClass */
     override def copyFrom(obj: BoundaryInterval): Unit = js.native
+    
+    @JSName("end")
+    var end_FBoundaryInterval: Double = js.native
     
     def expand(interval: BoundaryInterval): this.type = js.native
     
@@ -35,6 +38,9 @@ object boundaryMod {
     
     /* CompleteClass */
     override def makeByStartLength(start: Double, length: Double): BoundaryInterval = js.native
+    
+    @JSName("start")
+    var start_FBoundaryInterval: Double = js.native
   }
   /* static members */
   object BoundaryInterval {

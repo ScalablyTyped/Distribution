@@ -11,7 +11,7 @@ object pushStateLocationServiceMod {
   
   @JSImport("@uirouter/core/lib/vanilla/pushStateLocationService", "PushStateLocationService")
   @js.native
-  class PushStateLocationService protected () extends BaseLocationServices {
+  open class PushStateLocationService protected () extends BaseLocationServices {
     def this(router: UIRouter) = this()
     
     var _config: LocationConfig = js.native
@@ -32,6 +32,6 @@ object pushStateLocationServiceMod {
       *
       * See: https://html.spec.whatwg.org/dev/semantics.html#the-base-element
       */
-    /* private */ var _getBasePrefix: js.Any = js.native
+    /* private */ var _getBasePrefix: Any = js.native
   }
 }

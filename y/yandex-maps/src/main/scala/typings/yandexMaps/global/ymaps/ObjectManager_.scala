@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.ObjectManager")
 @js.native
-class ObjectManager_ protected ()
+open class ObjectManager_ protected ()
   extends typings.yandexMaps.mod.ObjectManager_ {
   def this(options: IObjectManagerOptions) = this()
 }

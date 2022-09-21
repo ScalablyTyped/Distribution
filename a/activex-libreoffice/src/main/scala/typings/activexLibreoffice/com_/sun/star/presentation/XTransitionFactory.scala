@@ -44,7 +44,7 @@ object XTransitionFactory {
     acquire: () => Unit,
     createTransition: (Double, Double, XSlideShowView, XBitmap, XBitmap) => XTransition,
     hasTransition: (Double, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTransitionFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createTransition = js.Any.fromFunction5(createTransition), hasTransition = js.Any.fromFunction2(hasTransition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

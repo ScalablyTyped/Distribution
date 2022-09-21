@@ -13,7 +13,7 @@ trait RenderContextFieldInView
   /** If in grid mode (context.inGridMode == true), cast to FieldSchema_InForm, otherwise cast to FieldSchema_InView */
   var CurrentFieldSchema: FieldSchemaInForm | FieldSchemaInView
   
-  var CurrentFieldValue: js.Any
+  var CurrentFieldValue: Any
   
   var FieldControlsModes: StringDictionary[ClientControlMode]
   
@@ -31,7 +31,7 @@ object RenderContextFieldInView {
     CascadeDeleteWarningMessage: String,
     ContentTypesEnabled: Boolean,
     CurrentFieldSchema: FieldSchemaInForm | FieldSchemaInView,
-    CurrentFieldValue: js.Any,
+    CurrentFieldValue: Any,
     CurrentItem: Item,
     CurrentItemIdx: Double,
     CurrentUserId: Double,
@@ -46,50 +46,50 @@ object RenderContextFieldInView {
     HttpRoot: String,
     IsAppWeb: Boolean,
     IsClientRendering: Boolean,
-    LastRowIndexSelected: js.Any,
-    LastSelectableRowIdx: js.Any,
-    LastSelectedItemIID: js.Any,
-    LastSelectedItemId: js.Any,
+    LastRowIndexSelected: Any,
+    LastSelectableRowIdx: Any,
+    LastSelectedItemIID: Any,
+    LastSelectedItemId: Any,
     ListData: ListDataInView,
     ListDataJSONItemsKey: String,
     ListSchema: ListSchemaInView,
     ListTitle: String,
     ModerationStatus: Double,
     NavigateForFormsPages: Boolean,
-    NewWOPIDocumentEnabled: js.Any,
-    NewWOPIDocumentUrl: js.Any,
+    NewWOPIDocumentEnabled: Any,
+    NewWOPIDocumentUrl: Any,
     OfficialFileName: String,
     OfficialFileNames: String,
     PortalUrl: String,
     RecycleBinEnabled: Double,
     RegionalSettingsTimeZoneBias: String,
-    RowFocusTimerID: js.Any,
-    SelectAllCbx: js.Any,
+    RowFocusTimerID: Any,
+    SelectAllCbx: Any,
     SendToLocationName: String,
     SendToLocationUrl: String,
     SiteTitle: String,
     StateInitDone: Boolean,
-    TableCbxFocusHandler: js.Any,
-    TableMouseOverHandler: js.Any,
+    TableCbxFocusHandler: Any,
+    TableMouseOverHandler: Any,
     TotalListItems: Double,
     WorkflowAssociated: Boolean,
     WriteSecurity: String,
     bInitialRender: Boolean,
     clvp: HTMLElement,
     ctxId: Double,
-    ctxType: js.Any,
-    dictSel: js.Any,
+    ctxType: Any,
+    dictSel: Any,
     displayFormUrl: String,
     editFormUrl: String,
     enteringGridMode: Boolean,
-    existingServerFilterHash: js.Any,
+    existingServerFilterHash: Any,
     heroId: String,
     imagesPath: String,
-    inGridFullRender: js.Any,
+    inGridFullRender: Any,
     inGridMode: Boolean,
     isForceCheckout: Boolean,
     isModerated: Boolean,
-    isPortalTemplate: js.Any,
+    isPortalTemplate: Any,
     isVersions: Double,
     isWebEditorPreview: Double,
     isXslView: Boolean,
@@ -103,11 +103,11 @@ object RenderContextFieldInView {
     noGroupCollapse: Boolean,
     overrideDeleteConfirmation: String,
     overrideFilterQstring: String,
-    queryString: js.Any,
+    queryString: Any,
     recursiveView: Boolean,
     rootFolder: String,
-    rootFolderForDisplay: js.Any,
-    serverUrl: js.Any,
+    rootFolderForDisplay: Any,
+    serverUrl: Any,
     verEnabled: Double,
     view: String,
     viewTitle: String,
@@ -121,7 +121,7 @@ object RenderContextFieldInView {
     
     inline def setCurrentFieldSchema(value: FieldSchemaInForm | FieldSchemaInView): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
     
-    inline def setCurrentFieldValue(value: js.Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
+    inline def setCurrentFieldValue(value: Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
     
     inline def setFieldControlsModes(value: StringDictionary[ClientControlMode]): Self = StObject.set(x, "FieldControlsModes", value.asInstanceOf[js.Any])
     

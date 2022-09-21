@@ -11,9 +11,9 @@ Right-align the text in a string.
 | Full name          | right-align |
 | Keywords           | align, align-center, center, center-align, right, right-align, text, typography |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 135262465 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8403575.0 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/right-align)

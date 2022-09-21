@@ -10,9 +10,9 @@ A simple cache engine used to store html document with URL keys
 | Full name          | simple-url-cache |
 | Keywords           | node.js, cache, file caching, url caching, file cache, url cache, Redis, FileStorage |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 839 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 83.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/a-lucas/simple-cache#readme)

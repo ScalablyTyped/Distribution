@@ -13,7 +13,7 @@ object newsurfaceMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/newsurface", "NewSurface")
   @js.native
-  class NewSurface protected () extends SoloHelper[actionsDotintentDotNEW_SURFACE, GoogleActionsV2NewSurfaceValueSpec] {
+  open class NewSurface protected () extends SoloHelper[actionsDotintentDotNEW_SURFACE, GoogleActionsV2NewSurfaceValueSpec] {
     /**
       * @param options NewSurface options
       * @public
@@ -59,7 +59,7 @@ object newsurfaceMod {
       
       inline def setCapabilities(value: SurfaceCapability | js.Array[SurfaceCapability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      inline def setCapabilitiesVarargs(value: SurfaceCapability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: SurfaceCapability*): Self = StObject.set(x, "capabilities", js.Array(value*))
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

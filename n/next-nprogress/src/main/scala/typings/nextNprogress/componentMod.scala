@@ -10,10 +10,10 @@ object componentMod {
   
   @JSImport("next-nprogress/component", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[NProgressProps, js.Object, js.Any]
+  open class default ()
+    extends Component[NProgressProps, js.Object, Any]
   
-  type NProgress = Component[NProgressProps, js.Object, js.Any]
+  type NProgress = Component[NProgressProps, js.Object, Any]
   
   trait NProgressProps extends StObject {
     

@@ -10,10 +10,10 @@ Twitch (OAuth) authentication strategies for Passport.
 | ------------------ | :-------------: |
 | Full name          | @ottomated/passport-twitch |
 | Keywords           | passport, twitch, auth, authn, authentication, identity, oauth, oauth2, strategy |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 578 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/ottomated/passport-twitch)

@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext")
+@JSImport("apollo-reporting-protobuf/generated/protobuf", "StatsContext")
 @js.native
 /**
   * Constructs a new StatsContext.
   * @param [properties] Properties to set
   */
-class StatsContext ()
+open class StatsContext ()
   extends StObject
      with IStatsContext {
   def this(properties: IStatsContext) = this()
@@ -23,10 +22,6 @@ class StatsContext ()
   /** StatsContext clientName. */
   @JSName("clientName")
   var clientName_StatsContext: String = js.native
-  
-  /** StatsContext clientReferenceId. */
-  @JSName("clientReferenceId")
-  var clientReferenceId_StatsContext: String = js.native
   
   /** StatsContext clientVersion. */
   @JSName("clientVersion")
@@ -36,12 +31,12 @@ class StatsContext ()
     * Converts this StatsContext to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object StatsContext {
   
-  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext")
+  @JSImport("apollo-reporting-protobuf/generated/protobuf", "StatsContext")
   @js.native
   val ^ : js.Any = js.native
   
@@ -53,6 +48,8 @@ object StatsContext {
   inline def create(): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StatsContext]
   inline def create(properties: IStatsContext): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StatsContext]
   
+  inline def decode(reader: js.typedarray.Uint8Array): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StatsContext]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): StatsContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StatsContext]
   /**
     * Decodes a StatsContext message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -63,9 +60,8 @@ object StatsContext {
     */
   inline def decode(reader: Reader): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StatsContext]
   inline def decode(reader: Reader, length: Double): StatsContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StatsContext]
-  inline def decode(reader: Uint8Array): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StatsContext]
-  inline def decode(reader: Uint8Array, length: Double): StatsContext = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StatsContext]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StatsContext]
   /**
     * Decodes a StatsContext message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -74,7 +70,6 @@ object StatsContext {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StatsContext]
-  inline def decodeDelimited(reader: Uint8Array): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StatsContext]
   
   /**
     * Encodes the specified StatsContext message. Does not implicitly {@link StatsContext.verify|verify} messages.
@@ -95,25 +90,18 @@ object StatsContext {
   inline def encodeDelimited(message: IStatsContext, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
-    * Creates a StatsContext message from a plain object. Also converts values to their respective internal types.
-    * @param object Plain object
-    * @returns StatsContext
-    */
-  inline def fromObject(`object`: StringDictionary[js.Any]): StatsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StatsContext]
-  
-  /**
     * Creates a plain object from a StatsContext message. Also converts values to other types if specified.
     * @param message StatsContext
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: StatsContext): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: StatsContext, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: StatsContext): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: StatsContext, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a StatsContext message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

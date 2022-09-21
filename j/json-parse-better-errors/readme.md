@@ -10,10 +10,10 @@ JSON.parse with context information on error
 | ------------------ | :-------------: |
 | Full name          | json-parse-better-errors |
 | Keywords           | JSON, parser |
-| # releases         | 0 |
-| # dependents       | 142 |
-| # downloads        | 609806257 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.6392964E7 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/zkat/json-parse-better-errors#readme)

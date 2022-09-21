@@ -30,7 +30,7 @@ object RefsQueryResult {
     
     inline def setRefs(value: js.Array[End]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
-    inline def setRefsVarargs(value: End*): Self = StObject.set(x, "refs", js.Array(value :_*))
+    inline def setRefsVarargs(value: End*): Self = StObject.set(x, "refs", js.Array(value*))
     
     inline def setType(value: global | local): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

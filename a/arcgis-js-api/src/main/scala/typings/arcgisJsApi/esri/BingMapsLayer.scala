@@ -30,6 +30,8 @@ trait BingMapsLayer
   /**
     * Provides culture specific map labels.
     *
+    * @default "en-US"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#culture)
     */
   var culture: String = js.native
@@ -44,6 +46,8 @@ trait BingMapsLayer
   /**
     * Bing Maps Key.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#key)
     */
   var key: String = js.native
@@ -51,12 +55,16 @@ trait BingMapsLayer
   /**
     * This will alter Geopolitical disputed borders and labels to align with the specified user region.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#region)
     */
   var region: String = js.native
   
   /**
-    * For more information on Bing map styles please visit: https://docs.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata.
+    * For more information on Bing map styles please visit: https://docs.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata
+    *
+    * @default "road"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#style)
     */

@@ -17,9 +17,22 @@ trait NetworkInterface extends StObject {
   
   /**
     * Fingerprint hash of contents stored in this network interface. This field will be ignored when inserting an Instance or adding a NetworkInterface. An up-to-date fingerprint must be
-    * provided in order to update the NetworkInterface, otherwise the request will fail with error 412 conditionNotMet.
+    * provided in order to update the NetworkInterface. The request will fail with error 400 Bad Request if the fingerprint is not provided, or 412 Precondition Failed if the fingerprint
+    * is out of date.
     */
   var fingerprint: js.UndefOr[String] = js.undefined
+  
+  /**
+    * An array of IPv6 access configurations for this interface. Currently, only one IPv6 access config, DIRECT_IPV6, is supported. If there is no ipv6AccessConfig specified, then this
+    * instance will have no external IPv6 Internet access.
+    */
+  var ipv6AccessConfigs: js.UndefOr[js.Array[AccessConfig]] = js.undefined
+  
+  /**
+    * [Output Only] One of EXTERNAL, INTERNAL to indicate whether the IP can be accessed from the Internet. This field is always inherited from its subnetwork. Valid only if stackType is
+    * IPV4_IPV6.
+    */
+  var ipv6AccessType: js.UndefOr[String] = js.undefined
   
   /** [Output Only] An IPv6 internal network address for this network interface. */
   var ipv6Address: js.UndefOr[String] = js.undefined
@@ -32,24 +45,29 @@ trait NetworkInterface extends StObject {
   
   /**
     * URL of the network resource for this instance. When creating an instance, if neither the network nor the subnetwork is specified, the default network global/networks/default is
-    * used; if the network is not specified but the subnetwork is specified, the network is inferred.
-    *
-    * If you specify this property, you can specify the network as a full or partial URL. For example, the following are all valid URLs:
-    * - https://www.googleapis.com/compute/v1/projects/project/global/networks/network
-    * - projects/project/global/networks/network
-    * - global/networks/default
+    * used; if the network is not specified but the subnetwork is specified, the network is inferred. If you specify this property, you can specify the network as a full or partial URL.
+    * For example, the following are all valid URLs: - https://www.googleapis.com/compute/v1/projects/project/global/networks/ network - projects/project/global/networks/network -
+    * global/networks/default
     */
   var network: js.UndefOr[String] = js.undefined
   
   /** An IPv4 internal IP address to assign to the instance for this network interface. If not specified by the user, an unused internal IP is assigned by the system. */
   var networkIP: js.UndefOr[String] = js.undefined
   
+  /** The type of vNIC to be used on this interface. This may be gVNIC or VirtioNet. */
+  var nicType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The stack type for this network interface to identify whether the IPv6 feature is enabled or not. If not specified, IPV4_ONLY will be used. This field can be both set at instance
+    * creation and update network interface operations.
+    */
+  var stackType: js.UndefOr[String] = js.undefined
+  
   /**
     * The URL of the Subnetwork resource for this instance. If the network resource is in legacy mode, do not specify this field. If the network is in auto subnet mode, specifying the
     * subnetwork is optional. If the network is in custom subnet mode, specifying the subnetwork is required. If you specify this field, you can specify the subnetwork as a full or
-    * partial URL. For example, the following are all valid URLs:
-    * - https://www.googleapis.com/compute/v1/projects/project/regions/region/subnetworks/subnetwork
-    * - regions/region/subnetworks/subnetwork
+    * partial URL. For example, the following are all valid URLs: - https://www.googleapis.com/compute/v1/projects/project/regions/region /subnetworks/subnetwork -
+    * regions/region/subnetworks/subnetwork
     */
   var subnetwork: js.UndefOr[String] = js.undefined
 }
@@ -66,17 +84,27 @@ object NetworkInterface {
     
     inline def setAccessConfigsUndefined: Self = StObject.set(x, "accessConfigs", js.undefined)
     
-    inline def setAccessConfigsVarargs(value: AccessConfig*): Self = StObject.set(x, "accessConfigs", js.Array(value :_*))
+    inline def setAccessConfigsVarargs(value: AccessConfig*): Self = StObject.set(x, "accessConfigs", js.Array(value*))
     
     inline def setAliasIpRanges(value: js.Array[AliasIpRange]): Self = StObject.set(x, "aliasIpRanges", value.asInstanceOf[js.Any])
     
     inline def setAliasIpRangesUndefined: Self = StObject.set(x, "aliasIpRanges", js.undefined)
     
-    inline def setAliasIpRangesVarargs(value: AliasIpRange*): Self = StObject.set(x, "aliasIpRanges", js.Array(value :_*))
+    inline def setAliasIpRangesVarargs(value: AliasIpRange*): Self = StObject.set(x, "aliasIpRanges", js.Array(value*))
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    
+    inline def setIpv6AccessConfigs(value: js.Array[AccessConfig]): Self = StObject.set(x, "ipv6AccessConfigs", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6AccessConfigsUndefined: Self = StObject.set(x, "ipv6AccessConfigs", js.undefined)
+    
+    inline def setIpv6AccessConfigsVarargs(value: AccessConfig*): Self = StObject.set(x, "ipv6AccessConfigs", js.Array(value*))
+    
+    inline def setIpv6AccessType(value: String): Self = StObject.set(x, "ipv6AccessType", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6AccessTypeUndefined: Self = StObject.set(x, "ipv6AccessType", js.undefined)
     
     inline def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
@@ -97,6 +125,14 @@ object NetworkInterface {
     inline def setNetworkIPUndefined: Self = StObject.set(x, "networkIP", js.undefined)
     
     inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    
+    inline def setNicType(value: String): Self = StObject.set(x, "nicType", value.asInstanceOf[js.Any])
+    
+    inline def setNicTypeUndefined: Self = StObject.set(x, "nicType", js.undefined)
+    
+    inline def setStackType(value: String): Self = StObject.set(x, "stackType", value.asInstanceOf[js.Any])
+    
+    inline def setStackTypeUndefined: Self = StObject.set(x, "stackType", js.undefined)
     
     inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     

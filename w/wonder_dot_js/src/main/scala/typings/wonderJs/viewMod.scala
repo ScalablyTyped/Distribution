@@ -12,13 +12,13 @@ object viewMod {
   
   @JSImport("wonder.js/dist/es2015/structure/View", "ViewWebGL")
   @js.native
-  class ViewWebGL protected ()
+  open class ViewWebGL protected ()
     extends StObject
        with IView {
-    def this(dom: js.Any) = this()
+    def this(dom: Any) = this()
     
     /* CompleteClass */
-    var dom: js.Any = js.native
+    var dom: Any = js.native
     
     /* CompleteClass */
     override def getContext(contextConfig: ContextConfigData): WebGLRenderingContext = js.native
@@ -56,12 +56,12 @@ object viewMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(view: js.Any): ViewWebGL = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(view.asInstanceOf[js.Any]).asInstanceOf[ViewWebGL]
+    inline def create(view: Any): ViewWebGL = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(view.asInstanceOf[js.Any]).asInstanceOf[ViewWebGL]
   }
   
   trait IView extends StObject {
     
-    var dom: js.Any
+    var dom: Any
     
     def getContext(contextConfig: ContextConfigData): WebGLRenderingContext
     
@@ -84,7 +84,7 @@ object viewMod {
   object IView {
     
     inline def apply(
-      dom: js.Any,
+      dom: Any,
       getContext: ContextConfigData => WebGLRenderingContext,
       height: Double,
       initCanvas: () => Unit,
@@ -101,7 +101,7 @@ object viewMod {
     
     extension [Self <: IView](x: Self) {
       
-      inline def setDom(value: js.Any): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: Any): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
       inline def setGetContext(value: ContextConfigData => WebGLRenderingContext): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
       

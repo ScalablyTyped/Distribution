@@ -14,7 +14,7 @@ trait WampyOptions extends StObject {
   
   var autoReconnect: js.UndefOr[Boolean] = js.undefined
   
-  var helloCustomDetails: js.UndefOr[js.Any] = js.undefined
+  var helloCustomDetails: js.UndefOr[Any] = js.undefined
   
   var maxRetries: js.UndefOr[Double] = js.undefined
   
@@ -34,11 +34,11 @@ trait WampyOptions extends StObject {
   
   var reconnectInterval: js.UndefOr[Double] = js.undefined
   
-  var serializer: js.UndefOr[js.Any] = js.undefined
+  var serializer: js.UndefOr[Any] = js.undefined
   
-  var urlValidation: js.UndefOr[strict | loose] = js.undefined
+  var uriValidation: js.UndefOr[strict | loose] = js.undefined
   
-  var ws: js.UndefOr[js.Any] = js.undefined
+  var ws: js.UndefOr[Any] = js.undefined
 }
 object WampyOptions {
   
@@ -57,13 +57,13 @@ object WampyOptions {
     
     inline def setAuthmethodsUndefined: Self = StObject.set(x, "authmethods", js.undefined)
     
-    inline def setAuthmethodsVarargs(value: String*): Self = StObject.set(x, "authmethods", js.Array(value :_*))
+    inline def setAuthmethodsVarargs(value: String*): Self = StObject.set(x, "authmethods", js.Array(value*))
     
     inline def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
     
     inline def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
     
-    inline def setHelloCustomDetails(value: js.Any): Self = StObject.set(x, "helloCustomDetails", value.asInstanceOf[js.Any])
+    inline def setHelloCustomDetails(value: Any): Self = StObject.set(x, "helloCustomDetails", value.asInstanceOf[js.Any])
     
     inline def setHelloCustomDetailsUndefined: Self = StObject.set(x, "helloCustomDetails", js.undefined)
     
@@ -103,15 +103,15 @@ object WampyOptions {
     
     inline def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
     
-    inline def setSerializer(value: js.Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
+    inline def setSerializer(value: Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
     
     inline def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
     
-    inline def setUrlValidation(value: strict | loose): Self = StObject.set(x, "urlValidation", value.asInstanceOf[js.Any])
+    inline def setUriValidation(value: strict | loose): Self = StObject.set(x, "uriValidation", value.asInstanceOf[js.Any])
     
-    inline def setUrlValidationUndefined: Self = StObject.set(x, "urlValidation", js.undefined)
+    inline def setUriValidationUndefined: Self = StObject.set(x, "uriValidation", js.undefined)
     
-    inline def setWs(value: js.Any): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
+    inline def setWs(value: Any): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
     
     inline def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-modals", "FadeAnimation")
 @js.native
-class FadeAnimation () extends StObject {
+open class FadeAnimation () extends StObject {
   def this(params: AnimationDuration) = this()
   def this(toValue: Double) = this()
   

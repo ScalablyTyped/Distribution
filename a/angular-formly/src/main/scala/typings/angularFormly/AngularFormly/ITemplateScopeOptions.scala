@@ -28,7 +28,7 @@ object ITemplateScopeOptions {
     
     inline def setFormControl(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
     
-    inline def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value :_*))
+    inline def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value*))
     
     inline def setTemplateOptions(value: ITemplateOptions): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
     

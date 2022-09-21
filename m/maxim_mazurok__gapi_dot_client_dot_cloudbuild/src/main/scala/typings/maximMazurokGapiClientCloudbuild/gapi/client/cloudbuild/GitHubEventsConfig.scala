@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GitHubEventsConfig extends StObject {
   
+  /** Optional. The resource name of the github enterprise config that should be applied to this installation. For example: "projects/{$project_id}/githubEnterpriseConfigs/{$config_id}" */
+  var enterpriseConfigResourceName: js.UndefOr[String] = js.undefined
+  
   /** The installationID that emits the GitHub event. */
   var installationId: js.UndefOr[String] = js.undefined
   
@@ -29,6 +32,10 @@ object GitHubEventsConfig {
   }
   
   extension [Self <: GitHubEventsConfig](x: Self) {
+    
+    inline def setEnterpriseConfigResourceName(value: String): Self = StObject.set(x, "enterpriseConfigResourceName", value.asInstanceOf[js.Any])
+    
+    inline def setEnterpriseConfigResourceNameUndefined: Self = StObject.set(x, "enterpriseConfigResourceName", js.undefined)
     
     inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     

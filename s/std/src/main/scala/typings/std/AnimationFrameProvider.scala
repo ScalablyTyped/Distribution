@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AnimationFrameProvider extends StObject {
   
+  /* standard dom */
   def cancelAnimationFrame(handle: Double): Unit
   
+  /* standard dom */
   def requestAnimationFrame(callback: FrameRequestCallback): Double
 }
 object AnimationFrameProvider {

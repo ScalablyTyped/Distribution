@@ -15,7 +15,7 @@ trait LaunchOption extends StObject {
   /**
     * 启动参数
     */
-  var query: js.Any
+  var query: Any
   
   /**
     * 场景值
@@ -29,7 +29,7 @@ trait LaunchOption extends StObject {
 }
 object LaunchOption {
   
-  inline def apply(isSticky: Boolean, query: js.Any, scene: Double, shareTicket: String): LaunchOption = {
+  inline def apply(isSticky: Boolean, query: Any, scene: Double, shareTicket: String): LaunchOption = {
     val __obj = js.Dynamic.literal(isSticky = isSticky.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOption]
   }
@@ -38,7 +38,7 @@ object LaunchOption {
     
     inline def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     

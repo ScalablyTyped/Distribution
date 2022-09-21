@@ -25,11 +25,29 @@ trait ConnectionProvider
   
   def rebuildIntelliSenseCache(connectionUri: String): Thenable[Unit]
   
-  def registerOnConnectionChanged(handler: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, js.Any]): Unit
+  /**
+    * Registers a handler for ConnectionChanged events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnConnectionChanged(handler: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, Any]): Unit
   
-  def registerOnConnectionComplete(handler: js.Function1[/* connSummary */ ConnectionInfoSummary, js.Any]): Unit
+  /**
+    * Registers a handler for ConnectionComplete events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnConnectionComplete(handler: js.Function1[/* connSummary */ ConnectionInfoSummary, Any]): Unit
   
-  def registerOnIntelliSenseCacheComplete(handler: js.Function1[/* connectionUri */ String, js.Any]): Unit
+  /**
+    * Registers a handler for IntellisenseCacheComplete events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnIntelliSenseCacheComplete(handler: js.Function1[/* connectionUri */ String, Any]): Unit
 }
 object ConnectionProvider {
   
@@ -42,9 +60,9 @@ object ConnectionProvider {
     listDatabases: String => Thenable[ListDatabasesResult],
     providerId: String,
     rebuildIntelliSenseCache: String => Thenable[Unit],
-    registerOnConnectionChanged: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, js.Any] => Unit,
-    registerOnConnectionComplete: js.Function1[/* connSummary */ ConnectionInfoSummary, js.Any] => Unit,
-    registerOnIntelliSenseCacheComplete: js.Function1[/* connectionUri */ String, js.Any] => Unit
+    registerOnConnectionChanged: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, Any] => Unit,
+    registerOnConnectionComplete: js.Function1[/* connSummary */ ConnectionInfoSummary, Any] => Unit,
+    registerOnIntelliSenseCacheComplete: js.Function1[/* connectionUri */ String, Any] => Unit
   ): ConnectionProvider = {
     val __obj = js.Dynamic.literal(cancelConnect = js.Any.fromFunction1(cancelConnect), changeDatabase = js.Any.fromFunction2(changeDatabase), connect = js.Any.fromFunction2(connect), disconnect = js.Any.fromFunction1(disconnect), getConnectionString = js.Any.fromFunction2(getConnectionString), listDatabases = js.Any.fromFunction1(listDatabases), providerId = providerId.asInstanceOf[js.Any], rebuildIntelliSenseCache = js.Any.fromFunction1(rebuildIntelliSenseCache), registerOnConnectionChanged = js.Any.fromFunction1(registerOnConnectionChanged), registerOnConnectionComplete = js.Any.fromFunction1(registerOnConnectionComplete), registerOnIntelliSenseCacheComplete = js.Any.fromFunction1(registerOnIntelliSenseCacheComplete))
     __obj.asInstanceOf[ConnectionProvider]
@@ -70,10 +88,10 @@ object ConnectionProvider {
     
     inline def setRebuildIntelliSenseCache(value: String => Thenable[Unit]): Self = StObject.set(x, "rebuildIntelliSenseCache", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnConnectionChanged(value: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnConnectionChanged", js.Any.fromFunction1(value))
+    inline def setRegisterOnConnectionChanged(value: js.Function1[/* changedConnInfo */ ChangedConnectionInfo, Any] => Unit): Self = StObject.set(x, "registerOnConnectionChanged", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnConnectionComplete(value: js.Function1[/* connSummary */ ConnectionInfoSummary, js.Any] => Unit): Self = StObject.set(x, "registerOnConnectionComplete", js.Any.fromFunction1(value))
+    inline def setRegisterOnConnectionComplete(value: js.Function1[/* connSummary */ ConnectionInfoSummary, Any] => Unit): Self = StObject.set(x, "registerOnConnectionComplete", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnIntelliSenseCacheComplete(value: js.Function1[/* connectionUri */ String, js.Any] => Unit): Self = StObject.set(x, "registerOnIntelliSenseCacheComplete", js.Any.fromFunction1(value))
+    inline def setRegisterOnIntelliSenseCacheComplete(value: js.Function1[/* connectionUri */ String, Any] => Unit): Self = StObject.set(x, "registerOnIntelliSenseCacheComplete", js.Any.fromFunction1(value))
   }
 }

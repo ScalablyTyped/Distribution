@@ -14,76 +14,33 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait TypeofwebNavigation extends StObject {
   
+  def getAllFrames(details: GetAllFrameDetails): js.Promise[js.Array[GetAllFrameResultDetails] | Null] = js.native
   def getAllFrames(
     details: GetAllFrameDetails,
     callback: js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]
-  ): Unit
+  ): Unit = js.native
   
-  def getFrame(details: GetFrameDetails, callback: js.Function1[/* details */ GetFrameResultDetails | Null, Unit]): Unit
+  def getFrame(details: GetFrameDetails): js.Promise[GetFrameResultDetails | Null] = js.native
+  def getFrame(details: GetFrameDetails, callback: js.Function1[/* details */ GetFrameResultDetails | Null, Unit]): Unit = js.native
   
-  var onBeforeNavigate: WebNavigationParentedEvent
+  var onBeforeNavigate: WebNavigationParentedEvent = js.native
   
-  var onCommitted: WebNavigationTransitionalEvent
+  var onCommitted: WebNavigationTransitionalEvent = js.native
   
-  var onCompleted: WebNavigationFramedEvent
+  var onCompleted: WebNavigationFramedEvent = js.native
   
-  var onCreatedNavigationTarget: WebNavigationSourceEvent
+  var onCreatedNavigationTarget: WebNavigationSourceEvent = js.native
   
-  var onDOMContentLoaded: WebNavigationFramedEvent
+  var onDOMContentLoaded: WebNavigationFramedEvent = js.native
   
-  var onErrorOccurred: WebNavigationFramedErrorEvent
+  var onErrorOccurred: WebNavigationFramedErrorEvent = js.native
   
-  var onHistoryStateUpdated: WebNavigationTransitionalEvent
+  var onHistoryStateUpdated: WebNavigationTransitionalEvent = js.native
   
-  var onReferenceFragmentUpdated: WebNavigationTransitionalEvent
+  var onReferenceFragmentUpdated: WebNavigationTransitionalEvent = js.native
   
-  var onTabReplaced: WebNavigationReplacementEvent
-}
-object TypeofwebNavigation {
-  
-  inline def apply(
-    getAllFrames: (GetAllFrameDetails, js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]) => Unit,
-    getFrame: (GetFrameDetails, js.Function1[/* details */ GetFrameResultDetails | Null, Unit]) => Unit,
-    onBeforeNavigate: WebNavigationParentedEvent,
-    onCommitted: WebNavigationTransitionalEvent,
-    onCompleted: WebNavigationFramedEvent,
-    onCreatedNavigationTarget: WebNavigationSourceEvent,
-    onDOMContentLoaded: WebNavigationFramedEvent,
-    onErrorOccurred: WebNavigationFramedErrorEvent,
-    onHistoryStateUpdated: WebNavigationTransitionalEvent,
-    onReferenceFragmentUpdated: WebNavigationTransitionalEvent,
-    onTabReplaced: WebNavigationReplacementEvent
-  ): TypeofwebNavigation = {
-    val __obj = js.Dynamic.literal(getAllFrames = js.Any.fromFunction2(getAllFrames), getFrame = js.Any.fromFunction2(getFrame), onBeforeNavigate = onBeforeNavigate.asInstanceOf[js.Any], onCommitted = onCommitted.asInstanceOf[js.Any], onCompleted = onCompleted.asInstanceOf[js.Any], onCreatedNavigationTarget = onCreatedNavigationTarget.asInstanceOf[js.Any], onDOMContentLoaded = onDOMContentLoaded.asInstanceOf[js.Any], onErrorOccurred = onErrorOccurred.asInstanceOf[js.Any], onHistoryStateUpdated = onHistoryStateUpdated.asInstanceOf[js.Any], onReferenceFragmentUpdated = onReferenceFragmentUpdated.asInstanceOf[js.Any], onTabReplaced = onTabReplaced.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypeofwebNavigation]
-  }
-  
-  extension [Self <: TypeofwebNavigation](x: Self) {
-    
-    inline def setGetAllFrames(
-      value: (GetAllFrameDetails, js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]) => Unit
-    ): Self = StObject.set(x, "getAllFrames", js.Any.fromFunction2(value))
-    
-    inline def setGetFrame(value: (GetFrameDetails, js.Function1[/* details */ GetFrameResultDetails | Null, Unit]) => Unit): Self = StObject.set(x, "getFrame", js.Any.fromFunction2(value))
-    
-    inline def setOnBeforeNavigate(value: WebNavigationParentedEvent): Self = StObject.set(x, "onBeforeNavigate", value.asInstanceOf[js.Any])
-    
-    inline def setOnCommitted(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onCommitted", value.asInstanceOf[js.Any])
-    
-    inline def setOnCompleted(value: WebNavigationFramedEvent): Self = StObject.set(x, "onCompleted", value.asInstanceOf[js.Any])
-    
-    inline def setOnCreatedNavigationTarget(value: WebNavigationSourceEvent): Self = StObject.set(x, "onCreatedNavigationTarget", value.asInstanceOf[js.Any])
-    
-    inline def setOnDOMContentLoaded(value: WebNavigationFramedEvent): Self = StObject.set(x, "onDOMContentLoaded", value.asInstanceOf[js.Any])
-    
-    inline def setOnErrorOccurred(value: WebNavigationFramedErrorEvent): Self = StObject.set(x, "onErrorOccurred", value.asInstanceOf[js.Any])
-    
-    inline def setOnHistoryStateUpdated(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onHistoryStateUpdated", value.asInstanceOf[js.Any])
-    
-    inline def setOnReferenceFragmentUpdated(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onReferenceFragmentUpdated", value.asInstanceOf[js.Any])
-    
-    inline def setOnTabReplaced(value: WebNavigationReplacementEvent): Self = StObject.set(x, "onTabReplaced", value.asInstanceOf[js.Any])
-  }
+  var onTabReplaced: WebNavigationReplacementEvent = js.native
 }

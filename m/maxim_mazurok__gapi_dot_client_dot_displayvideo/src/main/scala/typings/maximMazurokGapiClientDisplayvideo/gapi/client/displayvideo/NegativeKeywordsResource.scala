@@ -1,6 +1,7 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientDisplayvideo.anon.FieldsKeyNegativeKeywordListId
 import typings.maximMazurokGapiClientDisplayvideo.anon.KeyNegativeKeywordListId
 import typings.maximMazurokGapiClientDisplayvideo.anon.KeywordValue
 import typings.maximMazurokGapiClientDisplayvideo.anon.NegativeKeywordListId
@@ -32,4 +33,11 @@ trait NegativeKeywordsResource extends StObject {
   /** Lists negative keywords in a negative keyword list. */
   def list(): Request[ListNegativeKeywordsResponse] = js.native
   def list(request: PageTokenPrettyPrint): Request[ListNegativeKeywordsResponse] = js.native
+  
+  /**
+    * Replaces all negative keywords in a single negative keyword list. The operation will replace the keywords in a negative keyword list with keywords provided in
+    * ReplaceNegativeKeywordsRequest.new_negative_keywords.
+    */
+  def replace(request: FieldsKeyNegativeKeywordListId): Request[ReplaceNegativeKeywordsResponse] = js.native
+  def replace(request: KeyNegativeKeywordListId, body: ReplaceNegativeKeywordsRequest): Request[ReplaceNegativeKeywordsResponse] = js.native
 }

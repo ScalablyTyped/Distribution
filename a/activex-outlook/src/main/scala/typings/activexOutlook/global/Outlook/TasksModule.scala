@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.TasksModule")
 @js.native
-/* private */ class TasksModule ()
+/* private */ open class TasksModule ()
   extends StObject
      with typings.activexOutlook.Outlook.TasksModule {
   
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotTasksModule_typekey: typings.activexOutlook.Outlook.TasksModule = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Position: Double = js.native

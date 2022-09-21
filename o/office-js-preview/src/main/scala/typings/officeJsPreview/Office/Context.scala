@@ -50,7 +50,7 @@ trait Context extends StObject {
     * An empty cell indicates that the Office host application doesn't support this enumeration.
     *
     * For more information about Office host application and server requirements, see
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
     *
     * *Supported hosts, by platform*
     *  <table>
@@ -66,6 +66,12 @@ trait Context extends StObject {
   
   /**
     * Gets information about the environment in which the add-in is running.
+    * 
+    * @remarks
+    * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.  
+    * For all Mailbox requirement sets, you can use the 
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+    * property to get similar information.
     */
   var diagnostics: ContextInformation
   
@@ -87,7 +93,7 @@ trait Context extends StObject {
     * An empty cell indicates that the Office host application doesn't support this enumeration.
     *
     * For more information about Office host application and server requirements, see
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
     *
     * *Supported hosts, by platform*
     *  <table>
@@ -108,6 +114,13 @@ trait Context extends StObject {
   
   /**
     * Contains the Office application host in which the add-in is running.
+    *
+    * @remarks
+    * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+    * `Office.context.diagnostics` property to get the host starting with requirement set 1.5. For all
+    * Mailbox requirement sets, you can use the 
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+    * property to get similar information.
     */
   var host: HostType
   
@@ -121,9 +134,9 @@ trait Context extends StObject {
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * **Key properties**:
     *
@@ -142,6 +155,13 @@ trait Context extends StObject {
   
   /**
     * Provides the platform on which the add-in is running.
+    *
+    * @remarks
+    * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+    * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
+    * Mailbox requirement sets, you can use the 
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+    * property to get similar information.
     */
   var platform: PlatformType
   
@@ -158,9 +178,9 @@ trait Context extends StObject {
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var roamingSettings: RoamingSettings
   

@@ -33,6 +33,6 @@ object GetUserDefinedFunctionsResponse {
     
     inline def setUserDefinedFunctionsUndefined: Self = StObject.set(x, "UserDefinedFunctions", js.undefined)
     
-    inline def setUserDefinedFunctionsVarargs(value: UserDefinedFunction*): Self = StObject.set(x, "UserDefinedFunctions", js.Array(value :_*))
+    inline def setUserDefinedFunctionsVarargs(value: UserDefinedFunction*): Self = StObject.set(x, "UserDefinedFunctions", js.Array(value*))
   }
 }

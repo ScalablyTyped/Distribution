@@ -1,6 +1,5 @@
 package typings.atomically
 
-import typings.atomically.anon.Fn0
 import typings.atomically.anon.FnCall
 import typings.atomically.anon.FnCallFdBufferOffsetLengthPosition
 import typings.atomically.anon.FnCallPathFlagsMode
@@ -9,12 +8,17 @@ import typings.atomically.anon.TypeofrealpathSync
 import typings.atomically.typesMod.FN
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
-import typings.node.fsMod.BigIntOptions
+import typings.node.anon.StatSyncOptionsbigintbool
+import typings.node.anon.StatSyncOptionsbigintfals
+import typings.node.anon.StatSyncOptionsbigintfalsBigint
+import typings.node.anon.StatSyncOptionsbiginttrue
+import typings.node.anon.StatSyncOptionsbiginttrueBigint
 import typings.node.fsMod.BigIntStats
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.Mode
 import typings.node.fsMod.PathLike
-import typings.node.fsMod.StatOptions
+import typings.node.fsMod.StatSyncFn
+import typings.node.fsMod.StatSyncOptions
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,9 +34,9 @@ object fsMod {
     
     @JSImport("atomically/dist/utils/fs", "default.chmodAttempt")
     @js.native
-    def chmodAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chmod.__promisify__ */ js.Any = js.native
+    def chmodAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chmod.__promisify__ */ Any = js.native
     inline def chmodAttempt_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chmod.__promisify__ */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chmod.__promisify__ */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chmodAttempt")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.chmodSyncAttempt")
@@ -43,9 +47,9 @@ object fsMod {
     
     @JSImport("atomically/dist/utils/fs", "default.chownAttempt")
     @js.native
-    def chownAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chown.__promisify__ */ js.Any = js.native
+    def chownAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chown.__promisify__ */ Any = js.native
     inline def chownAttempt_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chown.__promisify__ */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chown.__promisify__ */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chownAttempt")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.chownSyncAttempt")
@@ -56,24 +60,24 @@ object fsMod {
     
     @JSImport("atomically/dist/utils/fs", "default.closeAttempt")
     @js.native
-    def closeAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ js.Any = js.native
+    def closeAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ Any = js.native
     inline def closeAttempt_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeAttempt")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.closeRetry")
     @js.native
     def closeRetry: FN[
         js.Array[Double], 
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ Any
       ] = js.native
     inline def closeRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeRetry")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeRetry")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def closeRetry_=(
       x: FN[
           js.Array[Double], 
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeRetry")(x.asInstanceOf[js.Any])
     
@@ -93,24 +97,24 @@ object fsMod {
     
     @JSImport("atomically/dist/utils/fs", "default.fsyncAttempt")
     @js.native
-    def fsyncAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ js.Any = js.native
+    def fsyncAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ Any = js.native
     inline def fsyncAttempt_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fsyncAttempt")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.fsyncRetry")
     @js.native
     def fsyncRetry: FN[
         js.Array[Double], 
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ Any
       ] = js.native
     inline def fsyncRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncRetry")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncRetry")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def fsyncRetry_=(
       x: FN[
           js.Array[Double], 
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fsyncRetry")(x.asInstanceOf[js.Any])
     
@@ -124,16 +128,16 @@ object fsMod {
     
     @JSImport("atomically/dist/utils/fs", "default.mkdirAttempt")
     @js.native
-    def mkdirAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.mkdir.__promisify__ */ js.Any = js.native
+    def mkdirAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.mkdir.__promisify__ */ Any = js.native
     inline def mkdirAttempt_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.mkdir.__promisify__ */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.mkdir.__promisify__ */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mkdirAttempt")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.mkdirSyncAttempt")
     @js.native
     def mkdirSyncAttempt: FnCall = js.native
     inline def mkdirSyncAttempt(path: PathLike): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSyncAttempt")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-    inline def mkdirSyncAttempt(path: PathLike, options: MakeDirectoryOptionsrecur): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def mkdirSyncAttempt(path: PathLike, options: MakeDirectoryOptionsrecur): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
     inline def mkdirSyncAttempt(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def mkdirSyncAttempt(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
     inline def mkdirSyncAttempt(path: PathLike, options: Mode): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
@@ -146,15 +150,15 @@ object fsMod {
     @js.native
     def openRetry: FN[
         js.Array[Double], 
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.open.__promisify__ */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.open.__promisify__ */ Any
       ] = js.native
     inline def openRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openRetry")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openRetry")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def openRetry_=(
       x: FN[
           js.Array[Double], 
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.open.__promisify__ */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.open.__promisify__ */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openRetry")(x.asInstanceOf[js.Any])
     
@@ -170,31 +174,31 @@ object fsMod {
     @js.native
     def readFileRetry: FN[
         js.Array[Double], 
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.readFile.__promisify__ */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.readFile.__promisify__ */ Any
       ] = js.native
     inline def readFileRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileRetry")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileRetry")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def readFileRetry_=(
       x: FN[
           js.Array[Double], 
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.readFile.__promisify__ */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.readFile.__promisify__ */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readFileRetry")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.readFileSyncRetry")
     @js.native
-    def readFileSyncRetry: FN[js.Array[Double], Fn0] = js.native
+    def readFileSyncRetry: FN[js.Array[Double], FnCallPathOptions] = js.native
     inline def readFileSyncRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): Fn0 = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSyncRetry")(args.asInstanceOf[js.Any]).asInstanceOf[Fn0]
-    inline def readFileSyncRetry_=(x: FN[js.Array[Double], Fn0]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readFileSyncRetry")(x.asInstanceOf[js.Any])
+    ): FnCallPathOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSyncRetry")(args.asInstanceOf[js.Any]).asInstanceOf[FnCallPathOptions]
+    inline def readFileSyncRetry_=(x: FN[js.Array[Double], FnCallPathOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readFileSyncRetry")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.realpathAttempt")
     @js.native
-    def realpathAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.realpath.__promisify__ */ js.Any = js.native
+    def realpathAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.realpath.__promisify__ */ Any = js.native
     inline def realpathAttempt_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.realpath.__promisify__ */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.realpath.__promisify__ */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("realpathAttempt")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.realpathSyncAttempt")
@@ -206,15 +210,15 @@ object fsMod {
     @js.native
     def renameRetry: FN[
         js.Array[Double], 
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.rename.__promisify__ */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.rename.__promisify__ */ Any
       ] = js.native
     inline def renameRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("renameRetry")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("renameRetry")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def renameRetry_=(
       x: FN[
           js.Array[Double], 
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.rename.__promisify__ */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.rename.__promisify__ */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renameRetry")(x.asInstanceOf[js.Any])
     
@@ -236,48 +240,55 @@ object fsMod {
     
     @JSImport("atomically/dist/utils/fs", "default.statAttempt")
     @js.native
-    def statAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ js.Any = js.native
+    def statAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ Any = js.native
     inline def statAttempt_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statAttempt")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.statRetry")
     @js.native
     def statRetry: FN[
         js.Array[Double], 
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ Any
       ] = js.native
     inline def statRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("statRetry")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("statRetry")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def statRetry_=(
       x: FN[
           js.Array[Double], 
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statRetry")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.statSyncAttempt")
     @js.native
-    def statSyncAttempt: FnCallPathOptions = js.native
-    inline def statSyncAttempt(path: PathLike): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any]).asInstanceOf[Stats]
-    inline def statSyncAttempt(path: PathLike, options: BigIntOptions): BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigIntStats]
-    inline def statSyncAttempt(path: PathLike, options: StatOptions): Stats | BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stats | BigIntStats]
-    inline def statSyncAttempt_=(x: FnCallPathOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statSyncAttempt")(x.asInstanceOf[js.Any])
+    def statSyncAttempt: StatSyncFn = js.native
+    inline def statSyncAttempt(path: PathLike): js.UndefOr[Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Stats]]
+    inline def statSyncAttempt(path: PathLike, options: Unit): Stats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stats]
+    inline def statSyncAttempt(path: PathLike, options: StatSyncOptionsbigintbool): Stats | BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stats | BigIntStats]
+    inline def statSyncAttempt(path: PathLike, options: StatSyncOptionsbigintfals): js.UndefOr[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Stats]]
+    inline def statSyncAttempt(path: PathLike, options: StatSyncOptionsbigintfalsBigint): Stats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stats]
+    inline def statSyncAttempt(path: PathLike, options: StatSyncOptionsbiginttrue): js.UndefOr[BigIntStats] = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[BigIntStats]]
+    inline def statSyncAttempt(path: PathLike, options: StatSyncOptionsbiginttrueBigint): BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigIntStats]
+    inline def statSyncAttempt(path: PathLike, options: StatSyncOptions): js.UndefOr[Stats | BigIntStats] = (^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Stats | BigIntStats]]
+    inline def statSyncAttempt_=(x: StatSyncFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statSyncAttempt")(x.asInstanceOf[js.Any])
+    
+    inline def statSyncAttempt_Stats(path: PathLike): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("statSyncAttempt")(path.asInstanceOf[js.Any]).asInstanceOf[Stats]
     
     @JSImport("atomically/dist/utils/fs", "default.statSyncRetry")
     @js.native
-    def statSyncRetry: FN[js.Array[Double], FnCallPathOptions] = js.native
+    def statSyncRetry: FN[js.Array[Double], StatSyncFn] = js.native
     inline def statSyncRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): FnCallPathOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("statSyncRetry")(args.asInstanceOf[js.Any]).asInstanceOf[FnCallPathOptions]
-    inline def statSyncRetry_=(x: FN[js.Array[Double], FnCallPathOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statSyncRetry")(x.asInstanceOf[js.Any])
+    ): StatSyncFn = ^.asInstanceOf[js.Dynamic].applyDynamic("statSyncRetry")(args.asInstanceOf[js.Any]).asInstanceOf[StatSyncFn]
+    inline def statSyncRetry_=(x: FN[js.Array[Double], StatSyncFn]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statSyncRetry")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.unlinkAttempt")
     @js.native
-    def unlinkAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.unlink.__promisify__ */ js.Any = js.native
+    def unlinkAttempt: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.unlink.__promisify__ */ Any = js.native
     inline def unlinkAttempt_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.unlink.__promisify__ */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.unlink.__promisify__ */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unlinkAttempt")(x.asInstanceOf[js.Any])
     
     @JSImport("atomically/dist/utils/fs", "default.unlinkSyncAttempt")
@@ -290,15 +301,15 @@ object fsMod {
     @js.native
     def writeRetry: FN[
         js.Array[Double], 
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.write.__promisify__ */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.write.__promisify__ */ Any
       ] = js.native
     inline def writeRetry(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Arguments is not an array type */ args: js.Array[Double]
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("writeRetry")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("writeRetry")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def writeRetry_=(
       x: FN[
           js.Array[Double], 
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.write.__promisify__ */ js.Any
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.write.__promisify__ */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("writeRetry")(x.asInstanceOf[js.Any])
     

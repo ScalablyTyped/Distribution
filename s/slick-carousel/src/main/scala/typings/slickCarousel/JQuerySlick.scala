@@ -212,7 +212,7 @@ object JQuerySlick {
     
     inline def setBreakpoints(value: js.Array[Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    inline def setBreakpointsVarargs(value: Double*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: Double*): Self = StObject.set(x, "breakpoints", js.Array(value*))
     
     inline def setCssTransitions(value: Boolean): Self = StObject.set(x, "cssTransitions", value.asInstanceOf[js.Any])
     

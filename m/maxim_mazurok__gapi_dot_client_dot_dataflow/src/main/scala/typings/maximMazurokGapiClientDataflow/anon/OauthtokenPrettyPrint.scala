@@ -22,13 +22,13 @@ trait OauthtokenPrettyPrint extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The job to get metrics for. */
-  var jobId: String
+  /** If specified, list snapshots created from this job. */
+  var jobId: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the job specified by job_id. */
+  /** The location to list snapshots in. */
   var location: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,14 +37,11 @@ trait OauthtokenPrettyPrint extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** A project id. */
+  /** The project ID to list snapshots for. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Return only metric data that has changed since this time. Default is to return all information about all metrics for the job. */
-  var startTime: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -54,8 +51,8 @@ trait OauthtokenPrettyPrint extends StObject {
 }
 object OauthtokenPrettyPrint {
   
-  inline def apply(jobId: String, location: String, projectId: String): OauthtokenPrettyPrint = {
-    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(location: String, projectId: String): OauthtokenPrettyPrint = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenPrettyPrint]
   }
   
@@ -83,6 +80,8 @@ object OauthtokenPrettyPrint {
     
     inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -102,10 +101,6 @@ object OauthtokenPrettyPrint {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
-    
-    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

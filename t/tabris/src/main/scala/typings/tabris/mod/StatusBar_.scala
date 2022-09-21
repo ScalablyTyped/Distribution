@@ -1,7 +1,7 @@
 package typings.tabris.mod
 
 import typings.tabris.anon.OmitStatusBarset
-import typings.tabris.anon.`2`
+import typings.tabris.anon.`15`
 import typings.tabris.tabrisStrings.background
 import typings.tabris.tabrisStrings.dark
 import typings.tabris.tabrisStrings.default
@@ -17,7 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "StatusBar")
 @js.native
-/* private */ class StatusBar_ () extends NativeObject {
+/**
+  * The status bar is the area where notifications, status icons and device time are displayed. The
+  * singleton instance can be accessed via `statusBar`.
+  */
+/* private */ open class StatusBar_ () extends NativeObject {
   /* private */ def this(properties: Properties[StatusBar_, OmitStatusBarset]) = this()
   
   /**
@@ -44,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @constant
     */
   @JSName("jsxAttributes")
-  val jsxAttributes_StatusBar_ : (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `2` = js.native
+  val jsxAttributes_StatusBar_ : (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `15` = js.native
   
   /**
     * Fired when the [*background*](#background) property has changed.

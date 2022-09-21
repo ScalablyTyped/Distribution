@@ -27,11 +27,11 @@ object validation {
       
       inline def setParsed(value: js.Array[String]): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
-      inline def setParsedVarargs(value: String*): Self = StObject.set(x, "parsed", js.Array(value :_*))
+      inline def setParsedVarargs(value: String*): Self = StObject.set(x, "parsed", js.Array(value*))
       
       inline def setUnparseable(value: js.Array[String]): Self = StObject.set(x, "unparseable", value.asInstanceOf[js.Any])
       
-      inline def setUnparseableVarargs(value: String*): Self = StObject.set(x, "unparseable", js.Array(value :_*))
+      inline def setUnparseableVarargs(value: String*): Self = StObject.set(x, "unparseable", js.Array(value*))
     }
   }
   

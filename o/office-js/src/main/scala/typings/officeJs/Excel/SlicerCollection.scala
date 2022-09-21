@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of all the slicer objects in the workbook or a worksheet.
   *
-  * Represents a collection of all the slicer objects on the workbook or a worksheet.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -24,11 +24,12 @@ trait SlicerCollection
   /**
     * Adds a new slicer to the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param slicerSource The data source that the new slicer will be based on. It can be a PivotTable object, a Table object or a string. When a PivotTable object is passed, the data source is the source of the PivotTable object. When a Table object is passed, the data source is the Table object. When a string is passed, it is interpreted as the name/id of a PivotTable/Table.
-    * @param sourceField The field in the data source to filter by. It can be a PivotField object, a TableColumn object, the id of a PivotField or the id/name of TableColumn.
-    * @param slicerDestination Optional. The worksheet where the new slicer will be created in. It can be a Worksheet object or the name/id of a worksheet. This parameter can be omitted if the slicer collection is retrieved from worksheet.
+    * @param slicerSource The data source that the new slicer will be based on. It can be a `PivotTable` object, a `Table` object, or a string. When a PivotTable object is passed, the data source is the source of the `PivotTable` object. When a `Table` object is passed, the data source is the `Table` object. When a string is passed, it is interpreted as the name or ID of a PivotTable or table.
+    * @param sourceField The field in the data source to filter by. It can be a `PivotField` object, a `TableColumn` object, the ID of a `PivotField` or the name or ID of a `TableColumn`.
+    * @param slicerDestination Optional. The worksheet in which the new slicer will be created. It can be a `Worksheet` object or the name or ID of a worksheet. This parameter can be omitted if the slicer collection is retrieved from a worksheet.
     * @returns The new slicer.
     */
   def add(slicerSource: String, sourceField: String): Slicer = js.native
@@ -75,22 +76,25 @@ trait SlicerCollection
   /**
     * Returns the number of slicers in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a slicer object using its name or id.
+    * Gets a slicer object using its name or ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param key The name or id of the slicer.
+    * @param key The name or ID of the slicer.
     */
   def getItem(key: String): Slicer = js.native
   
   /**
     * Gets a slicer based on its position in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
@@ -98,11 +102,13 @@ trait SlicerCollection
   def getItemAt(index: Double): Slicer = js.native
   
   /**
-    * Gets a slicer using its name or id. If the slicer does not exist, will return a null object.
+    * Gets a slicer using its name or ID. If the slicer doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param key Name or Id of the slicer to be retrieved.
+    * @param key Name or ID of the slicer to be retrieved.
     */
   def getItemOrNullObject(key: String): Slicer = js.native
   

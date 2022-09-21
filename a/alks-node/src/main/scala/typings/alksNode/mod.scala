@@ -1,7 +1,6 @@
 package typings.alksNode
 
 import typings.moment.mod.Moment
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object mod {
     auth: Auth,
     duration: Double,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* key */ KeyData, Unit]
+    callback: js.Function2[/* err */ js.Error, /* key */ KeyData, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createIamKey")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createIamRole(
@@ -27,7 +26,7 @@ object mod {
     roleType: String,
     includeDefaultPolicies: Boolean,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error, /* body */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createIamRole")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], roleName.asInstanceOf[js.Any], roleType.asInstanceOf[js.Any], includeDefaultPolicies.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createIamTrustRole(
@@ -37,7 +36,7 @@ object mod {
     roleType: String,
     trustArn: String,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error, /* body */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createIamTrustRole")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], roleName.asInstanceOf[js.Any], roleType.asInstanceOf[js.Any], trustArn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createKey(
@@ -45,7 +44,7 @@ object mod {
     auth: Auth,
     duration: Double,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* key */ KeyData, Unit]
+    callback: js.Function2[/* err */ js.Error, /* key */ KeyData, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createLongTermKey(
@@ -53,7 +52,7 @@ object mod {
     auth: Auth,
     iamUserName: String,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* data */ LongTermKeyData, Unit]
+    callback: js.Function2[/* err */ js.Error, /* data */ LongTermKeyData, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createLongTermKey")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], iamUserName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def deleteIamRole(
@@ -61,7 +60,7 @@ object mod {
     auth: Auth,
     roleName: String,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error, /* body */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteIamRole")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], roleName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def deleteLongTermKey(
@@ -69,24 +68,24 @@ object mod {
     auth: Auth,
     iamUserName: String,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error, /* body */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteLongTermKey")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], iamUserName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def generateConsoleUrl(key: AwsKey, opts: js.Object, callback: js.Function2[/* err */ Error, /* url */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateConsoleUrl")(key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def generateConsoleUrl(key: AwsKey, opts: js.Object, callback: js.Function2[/* err */ js.Error, /* url */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateConsoleUrl")(key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getAccounts(
     server: String,
     userid: String,
     auth: Auth,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* accounts */ js.Array[AlksAccount], Unit]
+    callback: js.Function2[/* err */ js.Error, /* accounts */ js.Array[AlksAccount], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccounts")(server.asInstanceOf[js.Any], userid.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getDurations(
     account: Account,
     auth: Auth,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* duration */ js.Array[Double], Unit]
+    callback: js.Function2[/* err */ js.Error, /* duration */ js.Array[Double], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDurations")(account.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getIamRoleTypes(
@@ -94,14 +93,14 @@ object mod {
     userid: String,
     auth: Auth,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error, /* body */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getIamRoleTypes")(server.asInstanceOf[js.Any], userid.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def refreshTokenToAccessToken(
     account: Account,
     token: String,
     opts: js.Object,
-    callback: js.Function2[/* err */ Error, /* body */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error, /* body */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshTokenToAccessToken")(account.asInstanceOf[js.Any], token.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Account extends StObject {

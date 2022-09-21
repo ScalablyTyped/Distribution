@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "AnonymousObserver")
 @js.native
-class AnonymousObserver protected ()
+open class AnonymousObserver protected ()
   extends typings.wonderFrp.observerAnonymousObserverMod.AnonymousObserver {
   def this(observer: IObserver) = this()
   def this(onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()

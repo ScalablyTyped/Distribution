@@ -12,7 +12,7 @@ trait StartSpeechSynthesisTaskInput extends StObject {
   var Engine: js.UndefOr[typings.awsSdk.pollyMod.Engine] = js.undefined
   
   /**
-    * Optional language code for the Speech Synthesis request. This is only necessary if using a bilingual voice, such as Aditi, which can be used for either Indian English (en-IN) or Hindi (hi-IN).  If a bilingual voice is used and no language code is specified, Amazon Polly will use the default language of the bilingual voice. The default language for any voice is the one returned by the DescribeVoices operation for the LanguageCode parameter. For example, if no language code is specified, Aditi will use Indian English rather than Hindi.
+    * Optional language code for the Speech Synthesis request. This is only necessary if using a bilingual voice, such as Aditi, which can be used for either Indian English (en-IN) or Hindi (hi-IN).  If a bilingual voice is used and no language code is specified, Amazon Polly uses the default language of the bilingual voice. The default language for any voice is the one returned by the DescribeVoices operation for the LanguageCode parameter. For example, if no language code is specified, Aditi will use Indian English rather than Hindi.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.pollyMod.LanguageCode] = js.undefined
   
@@ -87,7 +87,7 @@ object StartSpeechSynthesisTaskInput {
     
     inline def setLexiconNamesUndefined: Self = StObject.set(x, "LexiconNames", js.undefined)
     
-    inline def setLexiconNamesVarargs(value: LexiconName*): Self = StObject.set(x, "LexiconNames", js.Array(value :_*))
+    inline def setLexiconNamesVarargs(value: LexiconName*): Self = StObject.set(x, "LexiconNames", js.Array(value*))
     
     inline def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
     
@@ -109,7 +109,7 @@ object StartSpeechSynthesisTaskInput {
     
     inline def setSpeechMarkTypesUndefined: Self = StObject.set(x, "SpeechMarkTypes", js.undefined)
     
-    inline def setSpeechMarkTypesVarargs(value: SpeechMarkType*): Self = StObject.set(x, "SpeechMarkTypes", js.Array(value :_*))
+    inline def setSpeechMarkTypesVarargs(value: SpeechMarkType*): Self = StObject.set(x, "SpeechMarkTypes", js.Array(value*))
     
     inline def setText(value: Text): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

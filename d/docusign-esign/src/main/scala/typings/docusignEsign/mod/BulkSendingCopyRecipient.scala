@@ -206,7 +206,7 @@ object BulkSendingCopyRecipient {
     
     inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    inline def setCustomFieldsVarargs(value: String*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: String*): Self = StObject.set(x, "customFields", js.Array(value*))
     
     inline def setDeliveryMethod(value: String): Self = StObject.set(x, "deliveryMethod", value.asInstanceOf[js.Any])
     
@@ -262,7 +262,7 @@ object BulkSendingCopyRecipient {
     
     inline def setRecipientSignatureProvidersUndefined: Self = StObject.set(x, "recipientSignatureProviders", js.undefined)
     
-    inline def setRecipientSignatureProvidersVarargs(value: RecipientSignatureProvider*): Self = StObject.set(x, "recipientSignatureProviders", js.Array(value :_*))
+    inline def setRecipientSignatureProvidersVarargs(value: RecipientSignatureProvider*): Self = StObject.set(x, "recipientSignatureProviders", js.Array(value*))
     
     inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
@@ -276,12 +276,12 @@ object BulkSendingCopyRecipient {
     
     inline def setSocialAuthenticationsUndefined: Self = StObject.set(x, "socialAuthentications", js.undefined)
     
-    inline def setSocialAuthenticationsVarargs(value: SocialAuthentication*): Self = StObject.set(x, "socialAuthentications", js.Array(value :_*))
+    inline def setSocialAuthenticationsVarargs(value: SocialAuthentication*): Self = StObject.set(x, "socialAuthentications", js.Array(value*))
     
     inline def setTabs(value: js.Array[BulkSendingCopyTab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     
-    inline def setTabsVarargs(value: BulkSendingCopyTab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: BulkSendingCopyTab*): Self = StObject.set(x, "tabs", js.Array(value*))
   }
 }

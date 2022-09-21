@@ -1,9 +1,5 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,13 @@ trait ParamsResourceProjectsLocationsKeyringsCryptokeysGetiampolicy
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Optional. The maximum policy version that will be used to format the policy. Valid values are 0, 1, and 3. Requests specifying an invalid value will be rejected. Requests for policies with any conditional role bindings must specify version 3. Policies with no conditional role bindings may specify any valid value or leave the field unset. The policy in the response might use the policy version that you specified, or it might use a lower policy version. For example, if you specify version 3, but the policy has no conditional role bindings, the response uses version 1. To learn which resources support conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  @JSName("options.requestedPolicyVersion")
+  var optionsDotrequestedPolicyVersion: js.UndefOr[Double] = js.undefined
   
   /**
-    * REQUIRED: The resource for which the policy is being requested. See the
-    * operation documentation for the appropriate value for this field.
+    * REQUIRED: The resource for which the policy is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.
     */
   var resource: js.UndefOr[String] = js.undefined
 }
@@ -32,9 +28,9 @@ object ParamsResourceProjectsLocationsKeyringsCryptokeysGetiampolicy {
   
   extension [Self <: ParamsResourceProjectsLocationsKeyringsCryptokeysGetiampolicy](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setOptionsDotrequestedPolicyVersion(value: Double): Self = StObject.set(x, "options.requestedPolicyVersion", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setOptionsDotrequestedPolicyVersionUndefined: Self = StObject.set(x, "options.requestedPolicyVersion", js.undefined)
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

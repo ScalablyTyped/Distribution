@@ -9,7 +9,7 @@ object permutationMod {
   
   @JSImport("samchon/library/case_generators/Permutation", "Permutation")
   @js.native
-  class Permutation protected ()
+  open class Permutation protected ()
     extends StObject
        with ICaseGenerator {
     /**
@@ -37,7 +37,7 @@ object permutationMod {
     /**
       * @hidden
       */
-    /* private */ var n_ : js.Any = js.native
+    /* private */ var n_ : Any = js.native
     
     /**
       * Get R, number of elements for each case.
@@ -47,7 +47,7 @@ object permutationMod {
     /**
       * @hidden
       */
-    /* private */ var r_ : js.Any = js.native
+    /* private */ var r_ : Any = js.native
     
     /**
       * Get size of all cases.
@@ -60,6 +60,6 @@ object permutationMod {
     /**
       * @hidden
       */
-    /* private */ var size_ : js.Any = js.native
+    /* private */ var size_ : Any = js.native
   }
 }

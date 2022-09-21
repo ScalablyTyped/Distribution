@@ -22,21 +22,21 @@ trait ExternalLinkInfo extends StObject {
     *  2. If {@link Type} is {@link ExternalLinkType.DDE} , this member shall contain a {@link DDELinkInfo} describing service name, topic, and all known
     * items of a DDE link.
     */
-  var Data: js.Any
+  var Data: Any
   
   /** Link type, one of {@link ExternalLinkType} constants. */
   var Type: Double
 }
 object ExternalLinkInfo {
   
-  inline def apply(Data: js.Any, Type: Double): ExternalLinkInfo = {
+  inline def apply(Data: Any, Type: Double): ExternalLinkInfo = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalLinkInfo]
   }
   
   extension [Self <: ExternalLinkInfo](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

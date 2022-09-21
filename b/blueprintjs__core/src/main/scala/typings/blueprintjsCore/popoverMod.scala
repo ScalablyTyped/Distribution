@@ -8,6 +8,7 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.hover
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.popoverSharedPropsMod.IPopoverSharedProps
 import typings.react.mod.HTMLProps
+import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -19,48 +20,52 @@ object popoverMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "Popover")
   @js.native
-  class Popover protected ()
+  open class Popover protected ()
     extends AbstractPureComponent2[IPopoverProps, IPopoverState, js.Object] {
     def this(props: IPopoverProps) = this()
-    def this(props: IPopoverProps, context: js.Any) = this()
+    def this(props: IPopoverProps, context: Any) = this()
     
-    /* private */ var cancelOpenTimeout: js.Any = js.native
+    /* private */ var cancelOpenTimeout: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPopover(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MPopover(props: IPopoverProps, state: IPopoverState): Unit = js.native
+    def componentDidUpdate_MPopover(prevProps: IPopoverProps, prevState: IPopoverState): Unit = js.native
     
-    /* private */ var getIsOpen: js.Any = js.native
+    /* private */ var getIsOpen: Any = js.native
     
-    /* private */ var getPopperModifiers: js.Any = js.native
+    /* private */ var getPopperModifiers: Any = js.native
     
-    /* private */ var handleMouseEnter: js.Any = js.native
+    /* private */ var handleMouseEnter: Any = js.native
     
-    /* private */ var handleMouseLeave: js.Any = js.native
+    /* private */ var handleMouseLeave: Any = js.native
     
-    /* private */ var handleOverlayClose: js.Any = js.native
+    /* private */ var handleOverlayClose: Any = js.native
     
-    /* private */ var handlePopoverClick: js.Any = js.native
+    /* private */ var handlePopoverClick: Any = js.native
     
-    /* private */ var handleTargetBlur: js.Any = js.native
+    /* private */ var handlePopoverRef: Any = js.native
     
-    /* private */ var handleTargetClick: js.Any = js.native
+    /* private */ var handleTargetBlur: Any = js.native
     
-    /* private */ var handleTargetFocus: js.Any = js.native
+    /* private */ var handleTargetClick: Any = js.native
     
-    /* private */ var isArrowEnabled: js.Any = js.native
+    /* private */ var handleTargetFocus: Any = js.native
     
-    /* private */ var isControlled: js.Any = js.native
+    /* private */ var handleTargetRef: Any = js.native
     
-    /* private */ var isElementInPopover: js.Any = js.native
+    /* private */ var isArrowEnabled: Any = js.native
     
-    /* private */ var isHoverInteractionKind: js.Any = js.native
+    /* private */ var isControlled: Any = js.native
     
-    /* private */ var isMouseInTargetOrPopover: js.Any = js.native
+    /* private */ var isElementInPopover: Any = js.native
     
-    /* private */ var lostFocusOnSamePage: js.Any = js.native
+    /* private */ var isHoverInteractionKind: Any = js.native
+    
+    /* private */ var isMouseInTargetOrPopover: Any = js.native
+    
+    /* private */ var lostFocusOnSamePage: Any = js.native
     
     /**
       * DOM element that contains the popover.
@@ -69,15 +74,13 @@ object popoverMod {
       */
     var popoverElement: HTMLElement | Null = js.native
     
-    /* private */ var popoverRef: js.Any = js.native
+    /* private */ var popoverRef: Any = js.native
     
-    /* private */ var popperScheduleUpdate: js.Any = js.native
+    /* private */ var popperScheduleUpdate: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var renderPopover: Any = js.native
     
-    /* private */ var renderPopover: js.Any = js.native
-    
-    /* private */ var renderTarget: js.Any = js.native
+    /* private */ var renderTarget: Any = js.native
     
     /**
       * Instance method to instruct the `Popover` to recompute its position.
@@ -89,17 +92,17 @@ object popoverMod {
       */
     def reposition(): js.UndefOr[Unit] = js.native
     
-    /* private */ var setOpenState: js.Any = js.native
+    /* private */ var setOpenState: Any = js.native
     
     /** DOM element that contains the target. */
     var targetElement: HTMLElement | Null = js.native
     
-    /* private */ var understandChildren: js.Any = js.native
+    /* private */ var understandChildren: Any = js.native
     
-    /* private */ var updateDarkParent: js.Any = js.native
+    /* private */ var updateDarkParent: Any = js.native
     
     /** Popper modifier that updates React state (for style properties) based on latest data. */
-    /* private */ var updatePopoverState: js.Any = js.native
+    /* private */ var updatePopoverState: Any = js.native
     
     /* protected */ def validateProps(props: IPopoverPropschildrenReac): Unit = js.native
   }
@@ -182,12 +185,14 @@ object popoverMod {
       * closed. This prop is only available when `interactionKind` is
       * `PopoverInteractionKind.CLICK`. When popovers with backdrop are opened,
       * they become focused.
+      *
       * @default false
       */
     var hasBackdrop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The kind of interaction that triggers the display of the popover.
+      *
       * @default PopoverInteractionKind.CLICK
       */
     var interactionKind: js.UndefOr[PopoverInteractionKind] = js.undefined
@@ -195,7 +200,7 @@ object popoverMod {
     /**
       * Ref supplied to the `Classes.POPOVER` element.
       */
-    var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
+    var popoverRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
     /**
       * The target to which the popover content is attached. This can instead be
@@ -232,7 +237,11 @@ object popoverMod {
       
       inline def setInteractionKindUndefined: Self = StObject.set(x, "interactionKind", js.undefined)
       
-      inline def setPopoverRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+      inline def setPopoverRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
+      
+      inline def setPopoverRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+      
+      inline def setPopoverRefNull: Self = StObject.set(x, "popoverRef", null)
       
       inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
       

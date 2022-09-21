@@ -1,40 +1,82 @@
 package typings.microsoftGraph
 
+import typings.microsoftGraph.mod.AccessPackageAssignmentFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.AccessPackageAssignmentRequestFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.AccessPackageAssignmentState
+import typings.microsoftGraph.mod.AccessPackageCatalogState
+import typings.microsoftGraph.mod.AccessPackageCatalogType
+import typings.microsoftGraph.mod.AccessPackageExternalUserLifecycleAction
+import typings.microsoftGraph.mod.AccessPackageFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.AccessPackageRequestState
+import typings.microsoftGraph.mod.AccessPackageRequestType
+import typings.microsoftGraph.mod.AccessPackageSubjectType
+import typings.microsoftGraph.mod.AccessReviewExpirationBehavior
+import typings.microsoftGraph.mod.AccessReviewHistoryDecisionFilter
+import typings.microsoftGraph.mod.AccessReviewHistoryStatus
+import typings.microsoftGraph.mod.AccessReviewInstanceDecisionItemFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.AccessReviewInstanceFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.AccessReviewScheduleDefinitionFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.AccessReviewStageFilterByCurrentUserOptions
 import typings.microsoftGraph.mod.ActionState
 import typings.microsoftGraph.mod.ActivityDomain
+import typings.microsoftGraph.mod.ActivityType
+import typings.microsoftGraph.mod.AdvancedConfigState
+import typings.microsoftGraph.mod.AgreementAcceptanceState
 import typings.microsoftGraph.mod.AlertFeedback
 import typings.microsoftGraph.mod.AlertSeverity
 import typings.microsoftGraph.mod.AlertStatus
+import typings.microsoftGraph.mod.AllowInvitesFrom
+import typings.microsoftGraph.mod.AllowedTargetScope
 import typings.microsoftGraph.mod.AndroidRequiredPasswordType
 import typings.microsoftGraph.mod.AndroidWorkProfileCrossProfileDataSharingType
 import typings.microsoftGraph.mod.AndroidWorkProfileDefaultAppPermissionPolicyType
 import typings.microsoftGraph.mod.AndroidWorkProfileRequiredPasswordType
+import typings.microsoftGraph.mod.AnswerInputType
 import typings.microsoftGraph.mod.AppListType
 import typings.microsoftGraph.mod.AppLockerApplicationControlType
 import typings.microsoftGraph.mod.ApplicationGuardBlockClipboardSharingType
 import typings.microsoftGraph.mod.ApplicationGuardBlockFileTransferType
 import typings.microsoftGraph.mod.ApplicationType
 import typings.microsoftGraph.mod.AppliedConditionalAccessPolicyResult
+import typings.microsoftGraph.mod.ApprovalFilterByCurrentUserOptions
 import typings.microsoftGraph.mod.AttachmentType
 import typings.microsoftGraph.mod.AttendeeType
+import typings.microsoftGraph.mod.AttestationLevel
+import typings.microsoftGraph.mod.AuthenticationMethodKeyStrength
+import typings.microsoftGraph.mod.AuthenticationMethodSignInState
+import typings.microsoftGraph.mod.AuthenticationMethodState
+import typings.microsoftGraph.mod.AuthenticationMethodTargetType
+import typings.microsoftGraph.mod.AuthenticationPhoneType
+import typings.microsoftGraph.mod.AuthenticationProtocol
 import typings.microsoftGraph.mod.AutomaticRepliesStatus
 import typings.microsoftGraph.mod.AutomaticUpdateMode
 import typings.microsoftGraph.mod.BitLockerEncryptionMethod
 import typings.microsoftGraph.mod.BodyType
+import typings.microsoftGraph.mod.BookingPriceType
+import typings.microsoftGraph.mod.BookingReminderRecipients
+import typings.microsoftGraph.mod.BookingStaffRole
 import typings.microsoftGraph.mod.BookingType
+import typings.microsoftGraph.mod.BookingsAvailabilityStatus
+import typings.microsoftGraph.mod.BroadcastMeetingAudience
+import typings.microsoftGraph.mod.BucketAggregationSortProperty
 import typings.microsoftGraph.mod.CalendarColor
 import typings.microsoftGraph.mod.CalendarRoleType
 import typings.microsoftGraph.mod.CalendarSharingAction
 import typings.microsoftGraph.mod.CalendarSharingActionImportance
 import typings.microsoftGraph.mod.CallDirection
+import typings.microsoftGraph.mod.CallRecordingStatus
+import typings.microsoftGraph.mod.CallRecords.AudioCodec
 import typings.microsoftGraph.mod.CallRecords.CallType
 import typings.microsoftGraph.mod.CallRecords.ClientPlatform
 import typings.microsoftGraph.mod.CallRecords.FailureStage
 import typings.microsoftGraph.mod.CallRecords.MediaStreamDirection
 import typings.microsoftGraph.mod.CallRecords.NetworkConnectionType
+import typings.microsoftGraph.mod.CallRecords.NetworkTransportProtocol
 import typings.microsoftGraph.mod.CallRecords.ProductFamily
+import typings.microsoftGraph.mod.CallRecords.PstnCallDurationSource
 import typings.microsoftGraph.mod.CallRecords.ServiceRole
 import typings.microsoftGraph.mod.CallRecords.UserFeedbackRating
+import typings.microsoftGraph.mod.CallRecords.VideoCodec
 import typings.microsoftGraph.mod.CallRecords.WifiBand
 import typings.microsoftGraph.mod.CallRecords.WifiRadioType
 import typings.microsoftGraph.mod.CallState
@@ -47,8 +89,10 @@ import typings.microsoftGraph.mod.ChatMessagePolicyViolationDlpActionTypes
 import typings.microsoftGraph.mod.ChatMessagePolicyViolationUserActionTypes
 import typings.microsoftGraph.mod.ChatMessagePolicyViolationVerdictDetailsTypes
 import typings.microsoftGraph.mod.ChatMessageType
+import typings.microsoftGraph.mod.ChatType
 import typings.microsoftGraph.mod.ClonableTeamParts
 import typings.microsoftGraph.mod.CloudAppSecuritySessionControlType
+import typings.microsoftGraph.mod.ColumnTypes
 import typings.microsoftGraph.mod.ComplianceState
 import typings.microsoftGraph.mod.ComplianceStatus
 import typings.microsoftGraph.mod.ConditionalAccessClientApp
@@ -56,9 +100,16 @@ import typings.microsoftGraph.mod.ConditionalAccessDevicePlatform
 import typings.microsoftGraph.mod.ConditionalAccessGrantControl
 import typings.microsoftGraph.mod.ConditionalAccessPolicyState
 import typings.microsoftGraph.mod.ConditionalAccessStatus
+import typings.microsoftGraph.mod.ConnectedOrganizationState
 import typings.microsoftGraph.mod.ConnectionDirection
 import typings.microsoftGraph.mod.ConnectionStatus
+import typings.microsoftGraph.mod.ConsentRequestFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.ContactRelationship
+import typings.microsoftGraph.mod.CountryLookupMethodType
+import typings.microsoftGraph.mod.CrossTenantAccessPolicyTargetConfigurationAccessType
+import typings.microsoftGraph.mod.CrossTenantAccessPolicyTargetType
 import typings.microsoftGraph.mod.DataPolicyOperationStatus
+import typings.microsoftGraph.mod.DataSubjectType
 import typings.microsoftGraph.mod.DayOfWeek
 import typings.microsoftGraph.mod.DefenderCloudBlockLevelType
 import typings.microsoftGraph.mod.DefenderMonitorFileActivity
@@ -74,26 +125,48 @@ import typings.microsoftGraph.mod.DeviceManagementExchangeAccessStateReason
 import typings.microsoftGraph.mod.DeviceManagementExchangeConnectorStatus
 import typings.microsoftGraph.mod.DeviceManagementExchangeConnectorSyncType
 import typings.microsoftGraph.mod.DeviceManagementExchangeConnectorType
+import typings.microsoftGraph.mod.DeviceManagementExportJobLocalizationType
 import typings.microsoftGraph.mod.DeviceManagementPartnerAppType
 import typings.microsoftGraph.mod.DeviceManagementPartnerTenantState
+import typings.microsoftGraph.mod.DeviceManagementReportFileFormat
+import typings.microsoftGraph.mod.DeviceManagementReportStatus
 import typings.microsoftGraph.mod.DeviceManagementSubscriptionState
 import typings.microsoftGraph.mod.DeviceRegistrationState
 import typings.microsoftGraph.mod.DeviceThreatProtectionLevel
 import typings.microsoftGraph.mod.DiagnosticDataSubmissionMode
+import typings.microsoftGraph.mod.DiskType
 import typings.microsoftGraph.mod.EdgeCookiePolicy
 import typings.microsoftGraph.mod.EdgeSearchEngineType
 import typings.microsoftGraph.mod.EditionUpgradeLicenseType
+import typings.microsoftGraph.mod.EducationAddToCalendarOptions
+import typings.microsoftGraph.mod.EducationAddedStudentAction
+import typings.microsoftGraph.mod.EducationAssignmentStatus
 import typings.microsoftGraph.mod.EducationExternalSource
 import typings.microsoftGraph.mod.EducationGender
+import typings.microsoftGraph.mod.EducationSubmissionStatus
 import typings.microsoftGraph.mod.EducationUserRole
 import typings.microsoftGraph.mod.EmailRole
 import typings.microsoftGraph.mod.Enablement
 import typings.microsoftGraph.mod.EndpointType
+import typings.microsoftGraph.mod.EnrollmentState
 import typings.microsoftGraph.mod.EntityType
 import typings.microsoftGraph.mod.EventType
 import typings.microsoftGraph.mod.ExchangeIdFormat
+import typings.microsoftGraph.mod.ExpirationPatternType
 import typings.microsoftGraph.mod.ExternalAudienceScope
+import typings.microsoftGraph.mod.ExternalConnectors.AccessType
+import typings.microsoftGraph.mod.ExternalConnectors.AclType
+import typings.microsoftGraph.mod.ExternalConnectors.ConnectionOperationStatus
+import typings.microsoftGraph.mod.ExternalConnectors.ConnectionState
+import typings.microsoftGraph.mod.ExternalConnectors.ExternalItemContentType
+import typings.microsoftGraph.mod.ExternalConnectors.IdentityType
+import typings.microsoftGraph.mod.ExternalConnectors.Label
+import typings.microsoftGraph.mod.ExternalConnectors.PropertyType
+import typings.microsoftGraph.mod.ExternalEmailOtpState
+import typings.microsoftGraph.mod.FederatedIdpMfaBehavior
+import typings.microsoftGraph.mod.Fido2RestrictionEnforcementType
 import typings.microsoftGraph.mod.FileHashType
+import typings.microsoftGraph.mod.FilterMode
 import typings.microsoftGraph.mod.FirewallCertificateRevocationListCheckMethodType
 import typings.microsoftGraph.mod.FirewallPacketQueueingMethodType
 import typings.microsoftGraph.mod.FirewallPreSharedKeyEncodingMethodType
@@ -101,8 +174,14 @@ import typings.microsoftGraph.mod.FollowupFlagStatus
 import typings.microsoftGraph.mod.FreeBusyStatus
 import typings.microsoftGraph.mod.GiphyRatingType
 import typings.microsoftGraph.mod.GroupType
+import typings.microsoftGraph.mod.IdentityUserFlowAttributeDataType
+import typings.microsoftGraph.mod.IdentityUserFlowAttributeInputType
+import typings.microsoftGraph.mod.IdentityUserFlowAttributeType
 import typings.microsoftGraph.mod.Importance
+import typings.microsoftGraph.mod.ImportedWindowsAutopilotDeviceIdentityImportStatus
+import typings.microsoftGraph.mod.ImportedWindowsAutopilotDeviceIdentityUploadStatus
 import typings.microsoftGraph.mod.InferenceClassificationType
+import typings.microsoftGraph.mod.InitiatorType
 import typings.microsoftGraph.mod.InstallIntent
 import typings.microsoftGraph.mod.InstallState
 import typings.microsoftGraph.mod.InternetSiteSecurityLevel
@@ -113,6 +192,7 @@ import typings.microsoftGraph.mod.LobbyBypassScope
 import typings.microsoftGraph.mod.LocationType
 import typings.microsoftGraph.mod.LocationUniqueIdType
 import typings.microsoftGraph.mod.LogonType
+import typings.microsoftGraph.mod.LongRunningOperationStatus
 import typings.microsoftGraph.mod.MailDestinationRoutingReason
 import typings.microsoftGraph.mod.MailTipsType
 import typings.microsoftGraph.mod.ManagedAppAvailability
@@ -130,9 +210,11 @@ import typings.microsoftGraph.mod.MdmAppConfigKeyType
 import typings.microsoftGraph.mod.MdmAuthority
 import typings.microsoftGraph.mod.MediaDirection
 import typings.microsoftGraph.mod.MediaState
+import typings.microsoftGraph.mod.MeetingChatMode
 import typings.microsoftGraph.mod.MeetingMessageType
 import typings.microsoftGraph.mod.MeetingRequestType
 import typings.microsoftGraph.mod.MessageActionFlag
+import typings.microsoftGraph.mod.MicrosoftAuthenticatorAuthenticationMode
 import typings.microsoftGraph.mod.MicrosoftStoreForBusinessLicenseType
 import typings.microsoftGraph.mod.MiracastChannel
 import typings.microsoftGraph.mod.MobileAppContentFileUploadState
@@ -154,10 +236,32 @@ import typings.microsoftGraph.mod.PermissionType
 import typings.microsoftGraph.mod.PersistentBrowserSessionMode
 import typings.microsoftGraph.mod.PhoneType
 import typings.microsoftGraph.mod.PhysicalAddressType
+import typings.microsoftGraph.mod.PlannerContainerType
 import typings.microsoftGraph.mod.PlannerPreviewType
 import typings.microsoftGraph.mod.PolicyPlatformType
+import typings.microsoftGraph.mod.PostType
 import typings.microsoftGraph.mod.PrereleaseFeatures
+import typings.microsoftGraph.mod.PrintColorMode
+import typings.microsoftGraph.mod.PrintDuplexMode
+import typings.microsoftGraph.mod.PrintEvent
+import typings.microsoftGraph.mod.PrintFinishing
+import typings.microsoftGraph.mod.PrintJobProcessingState
+import typings.microsoftGraph.mod.PrintJobStateDetail
+import typings.microsoftGraph.mod.PrintMultipageLayout
+import typings.microsoftGraph.mod.PrintOperationProcessingState
+import typings.microsoftGraph.mod.PrintOrientation
+import typings.microsoftGraph.mod.PrintQuality
+import typings.microsoftGraph.mod.PrintScaling
+import typings.microsoftGraph.mod.PrintTaskProcessingState
+import typings.microsoftGraph.mod.PrinterFeedOrientation
+import typings.microsoftGraph.mod.PrinterProcessingState
+import typings.microsoftGraph.mod.PrinterProcessingStateDetail
 import typings.microsoftGraph.mod.ProcessIntegrityLevel
+import typings.microsoftGraph.mod.PromptLoginBehavior
+import typings.microsoftGraph.mod.ProvisioningAction
+import typings.microsoftGraph.mod.ProvisioningResult
+import typings.microsoftGraph.mod.ProvisioningStatusErrorCategory
+import typings.microsoftGraph.mod.ProvisioningStepType
 import typings.microsoftGraph.mod.RatingAppsType
 import typings.microsoftGraph.mod.RatingAustraliaMoviesType
 import typings.microsoftGraph.mod.RatingAustraliaTelevisionType
@@ -189,9 +293,17 @@ import typings.microsoftGraph.mod.RemoteAssistanceOnboardingStatus
 import typings.microsoftGraph.mod.RequiredPasswordType
 import typings.microsoftGraph.mod.ResponseType
 import typings.microsoftGraph.mod.RiskDetail
+import typings.microsoftGraph.mod.RiskDetectionTimingType
 import typings.microsoftGraph.mod.RiskEventType
 import typings.microsoftGraph.mod.RiskLevel
 import typings.microsoftGraph.mod.RiskState
+import typings.microsoftGraph.mod.RoleAssignmentScheduleFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.RoleAssignmentScheduleInstanceFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.RoleAssignmentScheduleRequestFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.RoleEligibilityScheduleFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.RoleEligibilityScheduleInstanceFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.RoleEligibilityScheduleRequestFilterByCurrentUserOptions
+import typings.microsoftGraph.mod.RoutingMode
 import typings.microsoftGraph.mod.RoutingType
 import typings.microsoftGraph.mod.RunAsAccountType
 import typings.microsoftGraph.mod.SafeSearchFilterType
@@ -199,22 +311,54 @@ import typings.microsoftGraph.mod.ScheduleChangeRequestActor
 import typings.microsoftGraph.mod.ScheduleChangeState
 import typings.microsoftGraph.mod.ScheduleEntityTheme
 import typings.microsoftGraph.mod.ScreenSharingRole
+import typings.microsoftGraph.mod.SearchAlterationType
+import typings.microsoftGraph.mod.SecurityNamespace.AdditionalDataOptions
+import typings.microsoftGraph.mod.SecurityNamespace.CaseAction
+import typings.microsoftGraph.mod.SecurityNamespace.CaseOperationStatus
+import typings.microsoftGraph.mod.SecurityNamespace.CaseStatus
+import typings.microsoftGraph.mod.SecurityNamespace.ChildSelectability
+import typings.microsoftGraph.mod.SecurityNamespace.DataSourceContainerStatus
+import typings.microsoftGraph.mod.SecurityNamespace.DataSourceHoldStatus
+import typings.microsoftGraph.mod.SecurityNamespace.DataSourceScopes
+import typings.microsoftGraph.mod.SecurityNamespace.SourceType
 import typings.microsoftGraph.mod.SecurityNetworkProtocol
 import typings.microsoftGraph.mod.SecurityResourceType
 import typings.microsoftGraph.mod.SelectionLikelihoodInfo
 import typings.microsoftGraph.mod.Sensitivity
+import typings.microsoftGraph.mod.ServiceHealthClassificationType
+import typings.microsoftGraph.mod.ServiceHealthOrigin
+import typings.microsoftGraph.mod.ServiceHealthStatus
+import typings.microsoftGraph.mod.ServiceUpdateCategory
+import typings.microsoftGraph.mod.ServiceUpdateSeverity
+import typings.microsoftGraph.mod.SettingSourceType
 import typings.microsoftGraph.mod.SharedPCAccountDeletionPolicyType
 import typings.microsoftGraph.mod.SharedPCAllowedAccountType
+import typings.microsoftGraph.mod.SignInFrequencyAuthenticationType
+import typings.microsoftGraph.mod.SignInFrequencyInterval
 import typings.microsoftGraph.mod.SigninFrequencyType
 import typings.microsoftGraph.mod.SiteSecurityLevel
+import typings.microsoftGraph.mod.StagedFeatureName
 import typings.microsoftGraph.mod.StateManagementSetting
 import typings.microsoftGraph.mod.Status
+import typings.microsoftGraph.mod.SubjectRightsRequestStage
+import typings.microsoftGraph.mod.SubjectRightsRequestStageStatus
+import typings.microsoftGraph.mod.SubjectRightsRequestStatus
+import typings.microsoftGraph.mod.SubjectRightsRequestType
+import typings.microsoftGraph.mod.TargetedManagedAppGroupType
 import typings.microsoftGraph.mod.TaskStatus
 import typings.microsoftGraph.mod.TeamSpecialization
 import typings.microsoftGraph.mod.TeamVisibilityType
 import typings.microsoftGraph.mod.TeamsAppDistributionMethod
+import typings.microsoftGraph.mod.TeamsAppPublishingState
 import typings.microsoftGraph.mod.TeamsAsyncOperationStatus
 import typings.microsoftGraph.mod.TeamsAsyncOperationType
+import typings.microsoftGraph.mod.TeamworkActivityTopicSource
+import typings.microsoftGraph.mod.TeamworkApplicationIdentityType
+import typings.microsoftGraph.mod.TeamworkCallEventType
+import typings.microsoftGraph.mod.TeamworkConversationIdentityType
+import typings.microsoftGraph.mod.TeamworkUserIdentityType
+import typings.microsoftGraph.mod.TermStore.RelationType
+import typings.microsoftGraph.mod.TermStore.TermGroupScope
 import typings.microsoftGraph.mod.ThreatAssessmentContentType
 import typings.microsoftGraph.mod.ThreatAssessmentRequestSource
 import typings.microsoftGraph.mod.ThreatAssessmentResultType
@@ -223,9 +367,16 @@ import typings.microsoftGraph.mod.ThreatCategory
 import typings.microsoftGraph.mod.ThreatExpectedAssessment
 import typings.microsoftGraph.mod.TimeOffReasonIconType
 import typings.microsoftGraph.mod.TimeZoneStandard
+import typings.microsoftGraph.mod.TokenIssuerType
 import typings.microsoftGraph.mod.Tone
+import typings.microsoftGraph.mod.UnifiedRoleManagementPolicyRuleTargetOperations
+import typings.microsoftGraph.mod.UnifiedRoleScheduleRequestActions
 import typings.microsoftGraph.mod.UserAccountSecurityType
+import typings.microsoftGraph.mod.UserExperienceAnalyticsHealthState
+import typings.microsoftGraph.mod.UserFlowType
+import typings.microsoftGraph.mod.UserPurpose
 import typings.microsoftGraph.mod.VisibilitySetting
+import typings.microsoftGraph.mod.VolumeType
 import typings.microsoftGraph.mod.VppTokenAccountType
 import typings.microsoftGraph.mod.VppTokenState
 import typings.microsoftGraph.mod.VppTokenSyncStatus
@@ -235,6 +386,7 @@ import typings.microsoftGraph.mod.WeekIndex
 import typings.microsoftGraph.mod.WeeklySchedule
 import typings.microsoftGraph.mod.WelcomeScreenMeetingInformation
 import typings.microsoftGraph.mod.WellknownListName
+import typings.microsoftGraph.mod.Win32LobAppDeliveryOptimizationPriority
 import typings.microsoftGraph.mod.Win32LobAppFileSystemOperationType
 import typings.microsoftGraph.mod.Win32LobAppMsiPackageType
 import typings.microsoftGraph.mod.Win32LobAppNotification
@@ -268,10 +420,24 @@ object microsoftGraphStrings {
   @js.native
   sealed trait default
     extends StObject
+       with AdvancedConfigState
        with EdgeSearchEngineType
        with EndpointType
+       with ExternalEmailOtpState
        with LocationType
   inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait ADFederationServices
+    extends StObject
+       with TokenIssuerType
+  inline def ADFederationServices: ADFederationServices = "ADFederationServices".asInstanceOf[ADFederationServices]
+  
+  @js.native
+  sealed trait ADFederationServicesMFAAdapter
+    extends StObject
+       with TokenIssuerType
+  inline def ADFederationServicesMFAAdapter: ADFederationServicesMFAAdapter = "ADFederationServicesMFAAdapter".asInstanceOf[ADFederationServicesMFAAdapter]
   
   @js.native
   sealed trait After
@@ -284,6 +450,18 @@ object microsoftGraphStrings {
     extends StObject
        with OnenotePatchActionType
   inline def Append: Append = "Append".asInstanceOf[Append]
+  
+  @js.native
+  sealed trait AzureAD
+    extends StObject
+       with TokenIssuerType
+  inline def AzureAD: AzureAD = "AzureAD".asInstanceOf[AzureAD]
+  
+  @js.native
+  sealed trait AzureADBackupAuth
+    extends StObject
+       with TokenIssuerType
+  inline def AzureADBackupAuth: AzureADBackupAuth = "AzureADBackupAuth".asInstanceOf[AzureADBackupAuth]
   
   @js.native
   sealed trait Before
@@ -322,6 +500,18 @@ object microsoftGraphStrings {
   inline def Insert: Insert = "Insert".asInstanceOf[Insert]
   
   @js.native
+  sealed trait Many
+    extends StObject
+       with ChildSelectability
+  inline def Many: Many = "Many".asInstanceOf[Many]
+  
+  @js.native
+  sealed trait NPSExtension
+    extends StObject
+       with TokenIssuerType
+  inline def NPSExtension: NPSExtension = "NPSExtension".asInstanceOf[NPSExtension]
+  
+  @js.native
   sealed trait None
     extends StObject
        with OnenoteUserRole
@@ -338,6 +528,12 @@ object microsoftGraphStrings {
     extends StObject
        with OnenoteSourceService
   inline def OnPremOneDriveForBusiness: OnPremOneDriveForBusiness = "OnPremOneDriveForBusiness".asInstanceOf[OnPremOneDriveForBusiness]
+  
+  @js.native
+  sealed trait One
+    extends StObject
+       with ChildSelectability
+  inline def One: One = "One".asInstanceOf[One]
   
   @js.native
   sealed trait OneDrive
@@ -388,10 +584,35 @@ object microsoftGraphStrings {
   inline def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   
   @js.native
+  sealed trait UnknownFutureValue
+    extends StObject
+       with TokenIssuerType
+  inline def UnknownFutureValue: UnknownFutureValue = "UnknownFutureValue".asInstanceOf[UnknownFutureValue]
+  
+  @js.native
   sealed trait a
     extends StObject
        with Tone
   inline def a: a = "a".asInstanceOf[a]
+  
+  @js.native
+  sealed trait aadApplication
+    extends StObject
+       with TeamworkApplicationIdentityType
+  inline def aadApplication: aadApplication = "aadApplication".asInstanceOf[aadApplication]
+  
+  @js.native
+  sealed trait aadUser
+    extends StObject
+       with TeamworkUserIdentityType
+  inline def aadUser: aadUser = "aadUser".asInstanceOf[aadUser]
+  
+  @js.native
+  sealed trait aborted
+    extends StObject
+       with PrintJobProcessingState
+       with PrintTaskProcessingState
+  inline def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
   sealed trait absoluteMonthly
@@ -412,22 +633,47 @@ object microsoftGraphStrings {
   inline def accept: accept = "accept".asInstanceOf[accept]
   
   @js.native
+  sealed trait acceptAccessRecommendation
+    extends StObject
+       with AccessReviewExpirationBehavior
+  inline def acceptAccessRecommendation: acceptAccessRecommendation = "acceptAccessRecommendation".asInstanceOf[acceptAccessRecommendation]
+  
+  @js.native
   sealed trait acceptAndViewCalendar
     extends StObject
        with CalendarSharingAction
   inline def acceptAndViewCalendar: acceptAndViewCalendar = "acceptAndViewCalendar".asInstanceOf[acceptAndViewCalendar]
   
   @js.native
+  sealed trait acceptIfMfaDoneByFederatedIdp
+    extends StObject
+       with FederatedIdpMfaBehavior
+  inline def acceptIfMfaDoneByFederatedIdp: acceptIfMfaDoneByFederatedIdp = "acceptIfMfaDoneByFederatedIdp".asInstanceOf[acceptIfMfaDoneByFederatedIdp]
+  
+  @js.native
   sealed trait accepted
     extends StObject
+       with AgreementAcceptanceState
        with ResponseType
   inline def accepted: accepted = "accepted".asInstanceOf[accepted]
+  
+  @js.native
+  sealed trait access
+    extends StObject
+       with SubjectRightsRequestType
+  inline def access: access = "access".asInstanceOf[access]
   
   @js.native
   sealed trait accountValidation
     extends StObject
        with DeviceEnrollmentFailureReason
   inline def accountValidation: accountValidation = "accountValidation".asInstanceOf[accountValidation]
+  
+  @js.native
+  sealed trait activate
+    extends StObject
+       with UnifiedRoleManagementPolicyRuleTargetOperations
+  inline def activate: activate = "activate".asInstanceOf[activate]
   
   @js.native
   sealed trait activated
@@ -440,9 +686,12 @@ object microsoftGraphStrings {
     extends StObject
        with ActionState
        with CallTranscriptionState
+       with CaseStatus
+       with DataSourceContainerStatus
        with DeviceManagementSubscriptionState
        with MediaState
        with Status
+       with SubjectRightsRequestStatus
   inline def active: active = "active".asInstanceOf[active]
   
   @js.native
@@ -450,6 +699,24 @@ object microsoftGraphStrings {
     extends StObject
        with CalendarSharingAction
   inline def addThisCalendar: addThisCalendar = "addThisCalendar".asInstanceOf[addThisCalendar]
+  
+  @js.native
+  sealed trait addToReviewSet
+    extends StObject
+       with CaseAction
+  inline def addToReviewSet: addToReviewSet = "addToReviewSet".asInstanceOf[addToReviewSet]
+  
+  @js.native
+  sealed trait adminAdd
+    extends StObject
+       with AccessPackageRequestType
+  inline def adminAdd: adminAdd = "adminAdd".asInstanceOf[adminAdd]
+  
+  @js.native
+  sealed trait adminAssign
+    extends StObject
+       with UnifiedRoleScheduleRequestActions
+  inline def adminAssign: adminAssign = "adminAssign".asInstanceOf[adminAssign]
   
   @js.native
   sealed trait adminConfirmedSigninCompromised
@@ -477,17 +744,56 @@ object microsoftGraphStrings {
   inline def adminDismissedAllRiskForUser: adminDismissedAllRiskForUser = "adminDismissedAllRiskForUser".asInstanceOf[adminDismissedAllRiskForUser]
   
   @js.native
+  sealed trait adminExtend
+    extends StObject
+       with UnifiedRoleScheduleRequestActions
+  inline def adminExtend: adminExtend = "adminExtend".asInstanceOf[adminExtend]
+  
+  @js.native
   sealed trait adminGeneratedTemporaryPassword
     extends StObject
        with RiskDetail
   inline def adminGeneratedTemporaryPassword: adminGeneratedTemporaryPassword = "adminGeneratedTemporaryPassword".asInstanceOf[adminGeneratedTemporaryPassword]
   
   @js.native
+  sealed trait adminRemove
+    extends StObject
+       with AccessPackageRequestType
+       with UnifiedRoleScheduleRequestActions
+  inline def adminRemove: adminRemove = "adminRemove".asInstanceOf[adminRemove]
+  
+  @js.native
+  sealed trait adminRenew
+    extends StObject
+       with UnifiedRoleScheduleRequestActions
+  inline def adminRenew: adminRenew = "adminRenew".asInstanceOf[adminRenew]
+  
+  @js.native
+  sealed trait adminUpdate
+    extends StObject
+       with AccessPackageRequestType
+       with UnifiedRoleScheduleRequestActions
+  inline def adminUpdate: adminUpdate = "adminUpdate".asInstanceOf[adminUpdate]
+  
+  @js.native
   sealed trait administrator
     extends StObject
+       with BookingStaffRole
        with ThreatAssessmentRequestSource
        with UserAccountSecurityType
   inline def administrator: administrator = "administrator".asInstanceOf[administrator]
+  
+  @js.native
+  sealed trait adminsAndGuestInviters
+    extends StObject
+       with AllowInvitesFrom
+  inline def adminsAndGuestInviters: adminsAndGuestInviters = "adminsAndGuestInviters".asInstanceOf[adminsAndGuestInviters]
+  
+  @js.native
+  sealed trait adminsGuestInvitersAndAllMembers
+    extends StObject
+       with AllowInvitesFrom
+  inline def adminsGuestInvitersAndAllMembers: adminsGuestInvitersAndAllMembers = "adminsGuestInvitersAndAllMembers".asInstanceOf[adminsGuestInvitersAndAllMembers]
   
   @js.native
   sealed trait adults
@@ -508,6 +814,12 @@ object microsoftGraphStrings {
   inline def advancedSpamFiltering: advancedSpamFiltering = "advancedSpamFiltering".asInstanceOf[advancedSpamFiltering]
   
   @js.native
+  sealed trait advisory
+    extends StObject
+       with ServiceHealthClassificationType
+  inline def advisory: advisory = "advisory".asInstanceOf[advisory]
+  
+  @js.native
   sealed trait aesCbc128
     extends StObject
        with BitLockerEncryptionMethod
@@ -520,10 +832,22 @@ object microsoftGraphStrings {
   inline def aesCbc256: aesCbc256 = "aesCbc256".asInstanceOf[aesCbc256]
   
   @js.native
+  sealed trait afterDateTime
+    extends StObject
+       with ExpirationPatternType
+  inline def afterDateTime: afterDateTime = "afterDateTime".asInstanceOf[afterDateTime]
+  
+  @js.native
   sealed trait afterDeviceRestart
     extends StObject
        with ManagedAppDataEncryptionType
   inline def afterDeviceRestart: afterDeviceRestart = "afterDeviceRestart".asInstanceOf[afterDeviceRestart]
+  
+  @js.native
+  sealed trait afterDuration
+    extends StObject
+       with ExpirationPatternType
+  inline def afterDuration: afterDuration = "afterDuration".asInstanceOf[afterDuration]
   
   @js.native
   sealed trait agesAbove10
@@ -646,12 +970,25 @@ object microsoftGraphStrings {
   inline def aiConfirmedSigninSafe: aiConfirmedSigninSafe = "aiConfirmedSigninSafe".asInstanceOf[aiConfirmedSigninSafe]
   
   @js.native
+  sealed trait aide
+    extends StObject
+       with ContactRelationship
+  inline def aide: aide = "aide".asInstanceOf[aide]
+  
+  @js.native
+  sealed trait alertRemovalOfBinaryChangeEntry
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def alertRemovalOfBinaryChangeEntry: alertRemovalOfBinaryChangeEntry = "alertRemovalOfBinaryChangeEntry".asInstanceOf[alertRemovalOfBinaryChangeEntry]
+  
+  @js.native
   sealed trait all
     extends StObject
        with ConditionalAccessClientApp
        with ConditionalAccessDevicePlatform
        with ExternalAudienceScope
        with PolicyPlatformType
+       with UnifiedRoleManagementPolicyRuleTargetOperations
        with WindowsUpdateType
   inline def all: all = "all".asInstanceOf[all]
   
@@ -684,7 +1021,14 @@ object microsoftGraphStrings {
     extends StObject
        with ManagedAppClipboardSharingLevel
        with ManagedAppDataTransferLevel
+       with TargetedManagedAppGroupType
   inline def allApps: allApps = "allApps".asInstanceOf[allApps]
+  
+  @js.native
+  sealed trait allAttendees
+    extends StObject
+       with BookingReminderRecipients
+  inline def allAttendees: allAttendees = "allAttendees".asInstanceOf[allAttendees]
   
   @js.native
   sealed trait allBlocked
@@ -711,10 +1055,83 @@ object microsoftGraphStrings {
   inline def allBlocked: allBlocked = "allBlocked".asInstanceOf[allBlocked]
   
   @js.native
+  sealed trait allCaseCustodians
+    extends StObject
+       with DataSourceScopes
+  inline def allCaseCustodians: allCaseCustodians = "allCaseCustodians".asInstanceOf[allCaseCustodians]
+  
+  @js.native
+  sealed trait allCaseNoncustodialDataSources
+    extends StObject
+       with DataSourceScopes
+  inline def allCaseNoncustodialDataSources: allCaseNoncustodialDataSources = "allCaseNoncustodialDataSources".asInstanceOf[allCaseNoncustodialDataSources]
+  
+  @js.native
+  sealed trait allConfiguredConnectedOrganizationUsers
+    extends StObject
+       with AllowedTargetScope
+  inline def allConfiguredConnectedOrganizationUsers: allConfiguredConnectedOrganizationUsers = "allConfiguredConnectedOrganizationUsers".asInstanceOf[allConfiguredConnectedOrganizationUsers]
+  
+  @js.native
+  sealed trait allCoreMicrosoftApps
+    extends StObject
+       with TargetedManagedAppGroupType
+  inline def allCoreMicrosoftApps: allCoreMicrosoftApps = "allCoreMicrosoftApps".asInstanceOf[allCoreMicrosoftApps]
+  
+  @js.native
+  sealed trait allDirectoryServicePrincipals
+    extends StObject
+       with AllowedTargetScope
+  inline def allDirectoryServicePrincipals: allDirectoryServicePrincipals = "allDirectoryServicePrincipals".asInstanceOf[allDirectoryServicePrincipals]
+  
+  @js.native
+  sealed trait allDirectoryUsers
+    extends StObject
+       with AllowedTargetScope
+  inline def allDirectoryUsers: allDirectoryUsers = "allDirectoryUsers".asInstanceOf[allDirectoryUsers]
+  
+  @js.native
+  sealed trait allExternalUsers
+    extends StObject
+       with AllowedTargetScope
+  inline def allExternalUsers: allExternalUsers = "allExternalUsers".asInstanceOf[allExternalUsers]
+  
+  @js.native
+  sealed trait allMemberUsers
+    extends StObject
+       with AllowedTargetScope
+  inline def allMemberUsers: allMemberUsers = "allMemberUsers".asInstanceOf[allMemberUsers]
+  
+  @js.native
+  sealed trait allMicrosoftApps
+    extends StObject
+       with TargetedManagedAppGroupType
+  inline def allMicrosoftApps: allMicrosoftApps = "allMicrosoftApps".asInstanceOf[allMicrosoftApps]
+  
+  @js.native
+  sealed trait allTenantMailboxes
+    extends StObject
+       with DataSourceScopes
+  inline def allTenantMailboxes: allTenantMailboxes = "allTenantMailboxes".asInstanceOf[allTenantMailboxes]
+  
+  @js.native
+  sealed trait allTenantSites
+    extends StObject
+       with DataSourceScopes
+  inline def allTenantSites: allTenantSites = "allTenantSites".asInstanceOf[allTenantSites]
+  
+  @js.native
+  sealed trait allVersions
+    extends StObject
+       with AdditionalDataOptions
+  inline def allVersions: allVersions = "allVersions".asInstanceOf[allVersions]
+  
+  @js.native
   sealed trait allow
     extends StObject
        with DefenderThreatAction
        with EdgeCookiePolicy
+       with Fido2RestrictionEnforcementType
        with Win32LobAppRestartBehavior
        with WindowsInformationProtectionPinCharacterRequirements
   inline def allow: allow = "allow".asInstanceOf[allow]
@@ -764,10 +1181,17 @@ object microsoftGraphStrings {
   @js.native
   sealed trait allowed
     extends StObject
+       with CrossTenantAccessPolicyTargetConfigurationAccessType
        with DeviceManagementExchangeAccessState
        with StateManagementSetting
        with WindowsHelloForBusinessPinUsage
   inline def allowed: allowed = "allowed".asInstanceOf[allowed]
+  
+  @js.native
+  sealed trait allowedRequestor
+    extends StObject
+       with AccessPackageFilterByCurrentUserOptions
+  inline def allowedRequestor: allowedRequestor = "allowedRequestor".asInstanceOf[allowedRequestor]
   
   @js.native
   sealed trait alphabetic
@@ -796,6 +1220,12 @@ object microsoftGraphStrings {
   inline def alphanumericWithSymbols: alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[alphanumericWithSymbols]
   
   @js.native
+  sealed trait alternateMobile
+    extends StObject
+       with AuthenticationPhoneType
+  inline def alternateMobile: alternateMobile = "alternateMobile".asInstanceOf[alternateMobile]
+  
+  @js.native
   sealed trait always
     extends StObject
        with PersistentBrowserSessionMode
@@ -820,6 +1250,12 @@ object microsoftGraphStrings {
   inline def alwaysPrompt: alwaysPrompt = "alwaysPrompt".asInstanceOf[alwaysPrompt]
   
   @js.native
+  sealed trait amrWide
+    extends StObject
+       with AudioCodec
+  inline def amrWide: amrWide = "amrWide".asInstanceOf[amrWide]
+  
+  @js.native
   sealed trait android
     extends StObject
        with ClientPlatform
@@ -828,10 +1264,10 @@ object microsoftGraphStrings {
   inline def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait androidWorkProfile
+  sealed trait androidForWork
     extends StObject
        with PolicyPlatformType
-  inline def androidWorkProfile: androidWorkProfile = "androidWorkProfile".asInstanceOf[androidWorkProfile]
+  inline def androidForWork: androidForWork = "androidForWork".asInstanceOf[androidForWork]
   
   @js.native
   sealed trait anonymizedIPAddress
@@ -840,10 +1276,17 @@ object microsoftGraphStrings {
   inline def anonymizedIPAddress: anonymizedIPAddress = "anonymizedIPAddress".asInstanceOf[anonymizedIPAddress]
   
   @js.native
+  sealed trait anonymousGuest
+    extends StObject
+       with TeamworkUserIdentityType
+  inline def anonymousGuest: anonymousGuest = "anonymousGuest".asInstanceOf[anonymousGuest]
+  
+  @js.native
   sealed trait any
     extends StObject
        with AndroidRequiredPasswordType
        with MessageActionFlag
+       with MicrosoftAuthenticatorAuthenticationMode
   inline def any: any = "any".asInstanceOf[any]
   
   @js.native
@@ -859,16 +1302,60 @@ object microsoftGraphStrings {
   inline def appleBulkWithoutUser: appleBulkWithoutUser = "appleBulkWithoutUser".asInstanceOf[appleBulkWithoutUser]
   
   @js.native
+  sealed trait appleUserEnrollment
+    extends StObject
+       with DeviceEnrollmentType
+  inline def appleUserEnrollment: appleUserEnrollment = "appleUserEnrollment".asInstanceOf[appleUserEnrollment]
+  
+  @js.native
+  sealed trait appleUserEnrollmentWithServiceAccount
+    extends StObject
+       with DeviceEnrollmentType
+  inline def appleUserEnrollmentWithServiceAccount: appleUserEnrollmentWithServiceAccount = "appleUserEnrollmentWithServiceAccount".asInstanceOf[appleUserEnrollmentWithServiceAccount]
+  
+  @js.native
   sealed trait application
     extends StObject
+       with CrossTenantAccessPolicyTargetType
+       with InitiatorType
        with PermissionType
   inline def application: application = "application".asInstanceOf[application]
+  
+  @js.native
+  sealed trait applied
+    extends StObject
+       with DataSourceHoldStatus
+  inline def applied: applied = "applied".asInstanceOf[applied]
+  
+  @js.native
+  sealed trait applyTags
+    extends StObject
+       with CaseAction
+  inline def applyTags: applyTags = "applyTags".asInstanceOf[applyTags]
+  
+  @js.native
+  sealed trait applying
+    extends StObject
+       with DataSourceHoldStatus
+  inline def applying: applying = "applying".asInstanceOf[applying]
   
   @js.native
   sealed trait approvalPending
     extends StObject
        with DeviceRegistrationState
   inline def approvalPending: approvalPending = "approvalPending".asInstanceOf[approvalPending]
+  
+  @js.native
+  sealed trait approvalStatus
+    extends StObject
+       with ColumnTypes
+  inline def approvalStatus: approvalStatus = "approvalStatus".asInstanceOf[approvalStatus]
+  
+  @js.native
+  sealed trait approve
+    extends StObject
+       with AccessReviewHistoryDecisionFilter
+  inline def approve: approve = "approve".asInstanceOf[approve]
   
   @js.native
   sealed trait approved
@@ -881,6 +1368,15 @@ object microsoftGraphStrings {
     extends StObject
        with ConditionalAccessGrantControl
   inline def approvedApplication: approvedApplication = "approvedApplication".asInstanceOf[approvedApplication]
+  
+  @js.native
+  sealed trait approver
+    extends StObject
+       with AccessPackageAssignmentRequestFilterByCurrentUserOptions
+       with ApprovalFilterByCurrentUserOptions
+       with RoleAssignmentScheduleRequestFilterByCurrentUserOptions
+       with RoleEligibilityScheduleRequestFilterByCurrentUserOptions
+  inline def approver: approver = "approver".asInstanceOf[approver]
   
   @js.native
   sealed trait apps
@@ -911,6 +1407,24 @@ object microsoftGraphStrings {
     extends StObject
        with WindowsArchitecture
   inline def arm: arm = "arm".asInstanceOf[arm]
+  
+  @js.native
+  sealed trait assign
+    extends StObject
+       with UnifiedRoleManagementPolicyRuleTargetOperations
+  inline def assign: assign = "assign".asInstanceOf[assign]
+  
+  @js.native
+  sealed trait assignIfOpen
+    extends StObject
+       with EducationAddedStudentAction
+  inline def assignIfOpen: assignIfOpen = "assignIfOpen".asInstanceOf[assignIfOpen]
+  
+  @js.native
+  sealed trait assigned
+    extends StObject
+       with EducationAssignmentStatus
+  inline def assigned: assigned = "assigned".asInstanceOf[assigned]
   
   @js.native
   sealed trait assignedToExternalMDM
@@ -973,6 +1487,12 @@ object microsoftGraphStrings {
   inline def attendee: attendee = "attendee".asInstanceOf[attendee]
   
   @js.native
+  sealed trait attested
+    extends StObject
+       with AttestationLevel
+  inline def attested: attested = "attested".asInstanceOf[attested]
+  
+  @js.native
   sealed trait audio
     extends StObject
        with Modality
@@ -1004,6 +1524,12 @@ object microsoftGraphStrings {
   inline def authentication: authentication = "authentication".asInstanceOf[authentication]
   
   @js.native
+  sealed trait authenticatorAppGps
+    extends StObject
+       with CountryLookupMethodType
+  inline def authenticatorAppGps: authenticatorAppGps = "authenticatorAppGps".asInstanceOf[authenticatorAppGps]
+  
+  @js.native
   sealed trait authenticodeHash256
     extends StObject
        with FileHashType
@@ -1016,9 +1542,17 @@ object microsoftGraphStrings {
   inline def authorization: authorization = "authorization".asInstanceOf[authorization]
   
   @js.native
+  sealed trait authors
+    extends StObject
+       with Label
+  inline def authors: authors = "authors".asInstanceOf[authors]
+  
+  @js.native
   sealed trait auto
     extends StObject
        with CalendarColor
+       with PrintColorMode
+       with PrintScaling
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
@@ -1088,8 +1622,15 @@ object microsoftGraphStrings {
   inline def automaticReplies: automaticReplies = "automaticReplies".asInstanceOf[automaticReplies]
   
   @js.native
+  sealed trait av1
+    extends StObject
+       with VideoCodec
+  inline def av1: av1 = "av1".asInstanceOf[av1]
+  
+  @js.native
   sealed trait available
     extends StObject
+       with BookingsAvailabilityStatus
        with InstallIntent
        with IosUpdatesInstallStatus
        with MobileThreatPartnerTenantState
@@ -1102,16 +1643,22 @@ object microsoftGraphStrings {
   inline def availableWithoutEnrollment: availableWithoutEnrollment = "availableWithoutEnrollment".asInstanceOf[availableWithoutEnrollment]
   
   @js.native
-  sealed trait azureAD
-    extends StObject
-       with GroupType
-  inline def azureAD: azureAD = "azureAD".asInstanceOf[azureAD]
-  
-  @js.native
   sealed trait azureADBlockDueToAccessPolicy
     extends StObject
        with DeviceManagementExchangeAccessStateReason
   inline def azureADBlockDueToAccessPolicy: azureADBlockDueToAccessPolicy = "azureADBlockDueToAccessPolicy".asInstanceOf[azureADBlockDueToAccessPolicy]
+  
+  @js.native
+  sealed trait azureAD_
+    extends StObject
+       with GroupType
+  inline def azureAD_ : azureAD_ = "azureAD".asInstanceOf[azureAD_]
+  
+  @js.native
+  sealed trait azureCommunicationServices
+    extends StObject
+       with ProductFamily
+  inline def azureCommunicationServices: azureCommunicationServices = "azureCommunicationServices".asInstanceOf[azureCommunicationServices]
   
   @js.native
   sealed trait azureStorageUriRenewalFailed
@@ -1180,6 +1727,222 @@ object microsoftGraphStrings {
   inline def badRequest: badRequest = "badRequest".asInstanceOf[badRequest]
   
   @js.native
+  sealed trait banderAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderAdded: banderAdded = "banderAdded".asInstanceOf[banderAdded]
+  
+  @js.native
+  sealed trait banderAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderAlmostEmpty: banderAlmostEmpty = "banderAlmostEmpty".asInstanceOf[banderAlmostEmpty]
+  
+  @js.native
+  sealed trait banderAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderAlmostFull: banderAlmostFull = "banderAlmostFull".asInstanceOf[banderAlmostFull]
+  
+  @js.native
+  sealed trait banderAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderAtLimit: banderAtLimit = "banderAtLimit".asInstanceOf[banderAtLimit]
+  
+  @js.native
+  sealed trait banderClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderClosed: banderClosed = "banderClosed".asInstanceOf[banderClosed]
+  
+  @js.native
+  sealed trait banderConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderConfigurationChange: banderConfigurationChange = "banderConfigurationChange".asInstanceOf[banderConfigurationChange]
+  
+  @js.native
+  sealed trait banderCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderCoverClosed: banderCoverClosed = "banderCoverClosed".asInstanceOf[banderCoverClosed]
+  
+  @js.native
+  sealed trait banderCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderCoverOpen: banderCoverOpen = "banderCoverOpen".asInstanceOf[banderCoverOpen]
+  
+  @js.native
+  sealed trait banderEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderEmpty: banderEmpty = "banderEmpty".asInstanceOf[banderEmpty]
+  
+  @js.native
+  sealed trait banderFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderFull: banderFull = "banderFull".asInstanceOf[banderFull]
+  
+  @js.native
+  sealed trait banderInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderInterlockClosed: banderInterlockClosed = "banderInterlockClosed".asInstanceOf[banderInterlockClosed]
+  
+  @js.native
+  sealed trait banderInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderInterlockOpen: banderInterlockOpen = "banderInterlockOpen".asInstanceOf[banderInterlockOpen]
+  
+  @js.native
+  sealed trait banderJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderJam: banderJam = "banderJam".asInstanceOf[banderJam]
+  
+  @js.native
+  sealed trait banderLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderLifeAlmostOver: banderLifeAlmostOver = "banderLifeAlmostOver".asInstanceOf[banderLifeAlmostOver]
+  
+  @js.native
+  sealed trait banderLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderLifeOver: banderLifeOver = "banderLifeOver".asInstanceOf[banderLifeOver]
+  
+  @js.native
+  sealed trait banderMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderMemoryExhausted: banderMemoryExhausted = "banderMemoryExhausted".asInstanceOf[banderMemoryExhausted]
+  
+  @js.native
+  sealed trait banderMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderMissing: banderMissing = "banderMissing".asInstanceOf[banderMissing]
+  
+  @js.native
+  sealed trait banderMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderMotorFailure: banderMotorFailure = "banderMotorFailure".asInstanceOf[banderMotorFailure]
+  
+  @js.native
+  sealed trait banderNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderNearLimit: banderNearLimit = "banderNearLimit".asInstanceOf[banderNearLimit]
+  
+  @js.native
+  sealed trait banderOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderOffline: banderOffline = "banderOffline".asInstanceOf[banderOffline]
+  
+  @js.native
+  sealed trait banderOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderOpened: banderOpened = "banderOpened".asInstanceOf[banderOpened]
+  
+  @js.native
+  sealed trait banderOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderOverTemperature: banderOverTemperature = "banderOverTemperature".asInstanceOf[banderOverTemperature]
+  
+  @js.native
+  sealed trait banderPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderPowerSaver: banderPowerSaver = "banderPowerSaver".asInstanceOf[banderPowerSaver]
+  
+  @js.native
+  sealed trait banderRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderRecoverableFailure: banderRecoverableFailure = "banderRecoverableFailure".asInstanceOf[banderRecoverableFailure]
+  
+  @js.native
+  sealed trait banderRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderRecoverableStorage: banderRecoverableStorage = "banderRecoverableStorage".asInstanceOf[banderRecoverableStorage]
+  
+  @js.native
+  sealed trait banderRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderRemoved: banderRemoved = "banderRemoved".asInstanceOf[banderRemoved]
+  
+  @js.native
+  sealed trait banderResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderResourceAdded: banderResourceAdded = "banderResourceAdded".asInstanceOf[banderResourceAdded]
+  
+  @js.native
+  sealed trait banderResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderResourceRemoved: banderResourceRemoved = "banderResourceRemoved".asInstanceOf[banderResourceRemoved]
+  
+  @js.native
+  sealed trait banderThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderThermistorFailure: banderThermistorFailure = "banderThermistorFailure".asInstanceOf[banderThermistorFailure]
+  
+  @js.native
+  sealed trait banderTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderTimingFailure: banderTimingFailure = "banderTimingFailure".asInstanceOf[banderTimingFailure]
+  
+  @js.native
+  sealed trait banderTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderTurnedOff: banderTurnedOff = "banderTurnedOff".asInstanceOf[banderTurnedOff]
+  
+  @js.native
+  sealed trait banderTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderTurnedOn: banderTurnedOn = "banderTurnedOn".asInstanceOf[banderTurnedOn]
+  
+  @js.native
+  sealed trait banderUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderUnderTemperature: banderUnderTemperature = "banderUnderTemperature".asInstanceOf[banderUnderTemperature]
+  
+  @js.native
+  sealed trait banderUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderUnrecoverableFailure: banderUnrecoverableFailure = "banderUnrecoverableFailure".asInstanceOf[banderUnrecoverableFailure]
+  
+  @js.native
+  sealed trait banderUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderUnrecoverableStorageError: banderUnrecoverableStorageError = "banderUnrecoverableStorageError".asInstanceOf[banderUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait banderWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def banderWarmingUp: banderWarmingUp = "banderWarmingUp".asInstanceOf[banderWarmingUp]
+  
+  @js.native
   sealed trait banner
     extends StObject
        with IosNotificationAlertType
@@ -1216,6 +1979,228 @@ object microsoftGraphStrings {
   inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
+  sealed trait bind
+    extends StObject
+       with PrintFinishing
+  inline def bind: bind = "bind".asInstanceOf[bind]
+  
+  @js.native
+  sealed trait binderAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderAdded: binderAdded = "binderAdded".asInstanceOf[binderAdded]
+  
+  @js.native
+  sealed trait binderAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderAlmostEmpty: binderAlmostEmpty = "binderAlmostEmpty".asInstanceOf[binderAlmostEmpty]
+  
+  @js.native
+  sealed trait binderAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderAlmostFull: binderAlmostFull = "binderAlmostFull".asInstanceOf[binderAlmostFull]
+  
+  @js.native
+  sealed trait binderAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderAtLimit: binderAtLimit = "binderAtLimit".asInstanceOf[binderAtLimit]
+  
+  @js.native
+  sealed trait binderClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderClosed: binderClosed = "binderClosed".asInstanceOf[binderClosed]
+  
+  @js.native
+  sealed trait binderConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderConfigurationChange: binderConfigurationChange = "binderConfigurationChange".asInstanceOf[binderConfigurationChange]
+  
+  @js.native
+  sealed trait binderCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderCoverClosed: binderCoverClosed = "binderCoverClosed".asInstanceOf[binderCoverClosed]
+  
+  @js.native
+  sealed trait binderCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderCoverOpen: binderCoverOpen = "binderCoverOpen".asInstanceOf[binderCoverOpen]
+  
+  @js.native
+  sealed trait binderEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderEmpty: binderEmpty = "binderEmpty".asInstanceOf[binderEmpty]
+  
+  @js.native
+  sealed trait binderFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderFull: binderFull = "binderFull".asInstanceOf[binderFull]
+  
+  @js.native
+  sealed trait binderInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderInterlockClosed: binderInterlockClosed = "binderInterlockClosed".asInstanceOf[binderInterlockClosed]
+  
+  @js.native
+  sealed trait binderInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderInterlockOpen: binderInterlockOpen = "binderInterlockOpen".asInstanceOf[binderInterlockOpen]
+  
+  @js.native
+  sealed trait binderJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderJam: binderJam = "binderJam".asInstanceOf[binderJam]
+  
+  @js.native
+  sealed trait binderLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderLifeAlmostOver: binderLifeAlmostOver = "binderLifeAlmostOver".asInstanceOf[binderLifeAlmostOver]
+  
+  @js.native
+  sealed trait binderLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderLifeOver: binderLifeOver = "binderLifeOver".asInstanceOf[binderLifeOver]
+  
+  @js.native
+  sealed trait binderMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderMemoryExhausted: binderMemoryExhausted = "binderMemoryExhausted".asInstanceOf[binderMemoryExhausted]
+  
+  @js.native
+  sealed trait binderMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderMissing: binderMissing = "binderMissing".asInstanceOf[binderMissing]
+  
+  @js.native
+  sealed trait binderMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderMotorFailure: binderMotorFailure = "binderMotorFailure".asInstanceOf[binderMotorFailure]
+  
+  @js.native
+  sealed trait binderNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderNearLimit: binderNearLimit = "binderNearLimit".asInstanceOf[binderNearLimit]
+  
+  @js.native
+  sealed trait binderOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderOffline: binderOffline = "binderOffline".asInstanceOf[binderOffline]
+  
+  @js.native
+  sealed trait binderOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderOpened: binderOpened = "binderOpened".asInstanceOf[binderOpened]
+  
+  @js.native
+  sealed trait binderOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderOverTemperature: binderOverTemperature = "binderOverTemperature".asInstanceOf[binderOverTemperature]
+  
+  @js.native
+  sealed trait binderPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderPowerSaver: binderPowerSaver = "binderPowerSaver".asInstanceOf[binderPowerSaver]
+  
+  @js.native
+  sealed trait binderRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderRecoverableFailure: binderRecoverableFailure = "binderRecoverableFailure".asInstanceOf[binderRecoverableFailure]
+  
+  @js.native
+  sealed trait binderRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderRecoverableStorage: binderRecoverableStorage = "binderRecoverableStorage".asInstanceOf[binderRecoverableStorage]
+  
+  @js.native
+  sealed trait binderRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderRemoved: binderRemoved = "binderRemoved".asInstanceOf[binderRemoved]
+  
+  @js.native
+  sealed trait binderResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderResourceAdded: binderResourceAdded = "binderResourceAdded".asInstanceOf[binderResourceAdded]
+  
+  @js.native
+  sealed trait binderResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderResourceRemoved: binderResourceRemoved = "binderResourceRemoved".asInstanceOf[binderResourceRemoved]
+  
+  @js.native
+  sealed trait binderThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderThermistorFailure: binderThermistorFailure = "binderThermistorFailure".asInstanceOf[binderThermistorFailure]
+  
+  @js.native
+  sealed trait binderTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderTimingFailure: binderTimingFailure = "binderTimingFailure".asInstanceOf[binderTimingFailure]
+  
+  @js.native
+  sealed trait binderTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderTurnedOff: binderTurnedOff = "binderTurnedOff".asInstanceOf[binderTurnedOff]
+  
+  @js.native
+  sealed trait binderTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderTurnedOn: binderTurnedOn = "binderTurnedOn".asInstanceOf[binderTurnedOn]
+  
+  @js.native
+  sealed trait binderUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderUnderTemperature: binderUnderTemperature = "binderUnderTemperature".asInstanceOf[binderUnderTemperature]
+  
+  @js.native
+  sealed trait binderUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderUnrecoverableFailure: binderUnrecoverableFailure = "binderUnrecoverableFailure".asInstanceOf[binderUnrecoverableFailure]
+  
+  @js.native
+  sealed trait binderUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderUnrecoverableStorageError: binderUnrecoverableStorageError = "binderUnrecoverableStorageError".asInstanceOf[binderUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait binderWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def binderWarmingUp: binderWarmingUp = "binderWarmingUp".asInstanceOf[binderWarmingUp]
+  
+  @js.native
   sealed trait bing
     extends StObject
        with EdgeSearchEngineType
@@ -1223,11 +2208,18 @@ object microsoftGraphStrings {
   inline def bing: bing = "bing".asInstanceOf[bing]
   
   @js.native
+  sealed trait blackAndWhite
+    extends StObject
+       with PrintColorMode
+  inline def blackAndWhite: blackAndWhite = "blackAndWhite".asInstanceOf[blackAndWhite]
+  
+  @js.native
   sealed trait block
     extends StObject
        with ConditionalAccessGrantControl
        with DefenderThreatAction
        with DeviceComplianceActionType
+       with Fido2RestrictionEnforcementType
        with ThreatExpectedAssessment
   inline def block: block = "block".asInstanceOf[block]
   
@@ -1299,6 +2291,18 @@ object microsoftGraphStrings {
   inline def blockNone: blockNone = "blockNone".asInstanceOf[blockNone]
   
   @js.native
+  sealed trait blockSignIn
+    extends StObject
+       with AccessPackageExternalUserLifecycleAction
+  inline def blockSignIn: blockSignIn = "blockSignIn".asInstanceOf[blockSignIn]
+  
+  @js.native
+  sealed trait blockSignInAndDelete
+    extends StObject
+       with AccessPackageExternalUserLifecycleAction
+  inline def blockSignInAndDelete: blockSignInAndDelete = "blockSignInAndDelete".asInstanceOf[blockSignInAndDelete]
+  
+  @js.native
   sealed trait blockTextFile
     extends StObject
        with ApplicationGuardBlockFileTransferType
@@ -1314,6 +2318,7 @@ object microsoftGraphStrings {
   sealed trait blocked
     extends StObject
        with ConnectionStatus
+       with CrossTenantAccessPolicyTargetConfigurationAccessType
        with DeviceManagementExchangeAccessState
        with DeviceManagementSubscriptionState
        with ManagedAppClipboardSharingLevel
@@ -1341,6 +2346,9 @@ object microsoftGraphStrings {
   @js.native
   sealed trait boolean
     extends StObject
+       with ColumnTypes
+       with IdentityUserFlowAttributeDataType
+       with PropertyType
        with Win32LobAppPowerShellScriptRuleOperationType
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -1349,6 +2357,18 @@ object microsoftGraphStrings {
     extends StObject
        with MdmAppConfigKeyType
   inline def booleanType: booleanType = "booleanType".asInstanceOf[booleanType]
+  
+  @js.native
+  sealed trait bot
+    extends StObject
+       with TeamworkApplicationIdentityType
+  inline def bot: bot = "bot".asInstanceOf[bot]
+  
+  @js.native
+  sealed trait box
+    extends StObject
+       with ManagedAppDataStorageLocation
+  inline def box: box = "box".asInstanceOf[box]
   
   @js.native
   sealed trait browser
@@ -1361,6 +2381,12 @@ object microsoftGraphStrings {
     extends StObject
        with WebBrowserCookieSettings
   inline def browserDefault: browserDefault = "browserDefault".asInstanceOf[browserDefault]
+  
+  @js.native
+  sealed trait builtIn
+    extends StObject
+       with IdentityUserFlowAttributeType
+  inline def builtIn: builtIn = "builtIn".asInstanceOf[builtIn]
   
   @js.native
   sealed trait business
@@ -1391,6 +2417,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait busy
     extends StObject
+       with BookingsAvailabilityStatus
        with FreeBusyStatus
        with RejectReason
   inline def busy: busy = "busy".asInstanceOf[busy]
@@ -1414,6 +2441,12 @@ object microsoftGraphStrings {
   inline def cake: cake = "cake".asInstanceOf[cake]
   
   @js.native
+  sealed trait calculated
+    extends StObject
+       with ColumnTypes
+  inline def calculated: calculated = "calculated".asInstanceOf[calculated]
+  
+  @js.native
   sealed trait calendar
     extends StObject
        with TimeOffReasonIconType
@@ -1423,6 +2456,7 @@ object microsoftGraphStrings {
   sealed trait call
     extends StObject
        with MessageActionFlag
+       with TeamworkCallEventType
   inline def call: call = "call".asInstanceOf[call]
   
   @js.native
@@ -1430,6 +2464,12 @@ object microsoftGraphStrings {
     extends StObject
        with FailureStage
   inline def callSetup: callSetup = "callSetup".asInstanceOf[callSetup]
+  
+  @js.native
+  sealed trait callUs
+    extends StObject
+       with BookingPriceType
+  inline def callUs: callUs = "callUs".asInstanceOf[callUs]
   
   @js.native
   sealed trait calleeToCaller
@@ -1444,9 +2484,17 @@ object microsoftGraphStrings {
   inline def callerToCallee: callerToCallee = "callerToCallee".asInstanceOf[callerToCallee]
   
   @js.native
+  sealed trait cameraFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def cameraFailure: cameraFailure = "cameraFailure".asInstanceOf[cameraFailure]
+  
+  @js.native
   sealed trait canceled
     extends StObject
+       with AccessPackageRequestState
        with ActionState
+       with PrintJobProcessingState
   inline def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
@@ -1456,10 +2504,22 @@ object microsoftGraphStrings {
   inline def car: car = "car".asInstanceOf[car]
   
   @js.native
+  sealed trait caseResolved
+    extends StObject
+       with SubjectRightsRequestStage
+  inline def caseResolved: caseResolved = "caseResolved".asInstanceOf[caseResolved]
+  
+  @js.native
   sealed trait caution
     extends StObject
        with RatingUnitedKingdomTelevisionType
   inline def caution: caution = "caution".asInstanceOf[caution]
+  
+  @js.native
+  sealed trait certificateBasedAuthentication
+    extends StObject
+       with StagedFeatureName
+  inline def certificateBasedAuthentication: certificateBasedAuthentication = "certificateBasedAuthentication".asInstanceOf[certificateBasedAuthentication]
   
   @js.native
   sealed trait certificateReset
@@ -1468,10 +2528,52 @@ object microsoftGraphStrings {
   inline def certificateReset: certificateReset = "certificateReset".asInstanceOf[certificateReset]
   
   @js.native
+  sealed trait chamberCooling
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def chamberCooling: chamberCooling = "chamberCooling".asInstanceOf[chamberCooling]
+  
+  @js.native
+  sealed trait chamberFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def chamberFailure: chamberFailure = "chamberFailure".asInstanceOf[chamberFailure]
+  
+  @js.native
+  sealed trait chamberHeating
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def chamberHeating: chamberHeating = "chamberHeating".asInstanceOf[chamberHeating]
+  
+  @js.native
+  sealed trait chamberTemperatureHigh
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def chamberTemperatureHigh: chamberTemperatureHigh = "chamberTemperatureHigh".asInstanceOf[chamberTemperatureHigh]
+  
+  @js.native
+  sealed trait chamberTemperatureLow
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def chamberTemperatureLow: chamberTemperatureLow = "chamberTemperatureLow".asInstanceOf[chamberTemperatureLow]
+  
+  @js.native
+  sealed trait channel
+    extends StObject
+       with TeamworkConversationIdentityType
+  inline def channel: channel = "channel".asInstanceOf[channel]
+  
+  @js.native
   sealed trait channels
     extends StObject
        with ClonableTeamParts
   inline def channels: channels = "channels".asInstanceOf[channels]
+  
+  @js.native
+  sealed trait chat
+    extends StObject
+       with TeamworkConversationIdentityType
+  inline def chat: chat = "chat".asInstanceOf[chat]
   
   @js.native
   sealed trait chatEvent
@@ -1486,10 +2588,22 @@ object microsoftGraphStrings {
   inline def checkPolicy: checkPolicy = "checkPolicy".asInstanceOf[checkPolicy]
   
   @js.native
+  sealed trait checkboxMultiSelect
+    extends StObject
+       with IdentityUserFlowAttributeInputType
+  inline def checkboxMultiSelect: checkboxMultiSelect = "checkboxMultiSelect".asInstanceOf[checkboxMultiSelect]
+  
+  @js.native
   sealed trait checklist
     extends StObject
        with PlannerPreviewType
   inline def checklist: checklist = "checklist".asInstanceOf[checklist]
+  
+  @js.native
+  sealed trait child
+    extends StObject
+       with ContactRelationship
+  inline def child: child = "child".asInstanceOf[child]
   
   @js.native
   sealed trait children
@@ -1524,10 +2638,34 @@ object microsoftGraphStrings {
   inline def childrenAll: childrenAll = "childrenAll".asInstanceOf[childrenAll]
   
   @js.native
+  sealed trait choice
+    extends StObject
+       with ColumnTypes
+  inline def choice: choice = "choice".asInstanceOf[choice]
+  
+  @js.native
+  sealed trait chunkFinished
+    extends StObject
+       with CallRecordingStatus
+  inline def chunkFinished: chunkFinished = "chunkFinished".asInstanceOf[chunkFinished]
+  
+  @js.native
   sealed trait clean
     extends StObject
        with DefenderThreatAction
   inline def clean: clean = "clean".asInstanceOf[clean]
+  
+  @js.native
+  sealed trait cleanerLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def cleanerLifeAlmostOver: cleanerLifeAlmostOver = "cleanerLifeAlmostOver".asInstanceOf[cleanerLifeAlmostOver]
+  
+  @js.native
+  sealed trait cleanerLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def cleanerLifeOver: cleanerLifeOver = "cleanerLifeOver".asInstanceOf[cleanerLifeOver]
   
   @js.native
   sealed trait clientDisconnected
@@ -1536,10 +2674,40 @@ object microsoftGraphStrings {
   inline def clientDisconnected: clientDisconnected = "clientDisconnected".asInstanceOf[clientDisconnected]
   
   @js.native
+  sealed trait clientIpAddress
+    extends StObject
+       with CountryLookupMethodType
+  inline def clientIpAddress: clientIpAddress = "clientIpAddress".asInstanceOf[clientIpAddress]
+  
+  @js.native
   sealed trait clock
     extends StObject
        with TimeOffReasonIconType
   inline def clock: clock = "clock".asInstanceOf[clock]
+  
+  @js.native
+  sealed trait clockwiseFromBottomLeft
+    extends StObject
+       with PrintMultipageLayout
+  inline def clockwiseFromBottomLeft: clockwiseFromBottomLeft = "clockwiseFromBottomLeft".asInstanceOf[clockwiseFromBottomLeft]
+  
+  @js.native
+  sealed trait clockwiseFromBottomRight
+    extends StObject
+       with PrintMultipageLayout
+  inline def clockwiseFromBottomRight: clockwiseFromBottomRight = "clockwiseFromBottomRight".asInstanceOf[clockwiseFromBottomRight]
+  
+  @js.native
+  sealed trait clockwiseFromTopLeft
+    extends StObject
+       with PrintMultipageLayout
+  inline def clockwiseFromTopLeft: clockwiseFromTopLeft = "clockwiseFromTopLeft".asInstanceOf[clockwiseFromTopLeft]
+  
+  @js.native
+  sealed trait clockwiseFromTopRight
+    extends StObject
+       with PrintMultipageLayout
+  inline def clockwiseFromTopRight: clockwiseFromTopRight = "clockwiseFromTopRight".asInstanceOf[clockwiseFromTopRight]
   
   @js.native
   sealed trait cloneTeam
@@ -1548,10 +2716,41 @@ object microsoftGraphStrings {
   inline def cloneTeam: cloneTeam = "cloneTeam".asInstanceOf[cloneTeam]
   
   @js.native
+  sealed trait closed
+    extends StObject
+       with CaseStatus
+       with SubjectRightsRequestStatus
+  inline def closed: closed = "closed".asInstanceOf[closed]
+  
+  @js.native
+  sealed trait closedWithError
+    extends StObject
+       with CaseStatus
+  inline def closedWithError: closedWithError = "closedWithError".asInstanceOf[closedWithError]
+  
+  @js.native
+  sealed trait closing
+    extends StObject
+       with CaseStatus
+  inline def closing: closing = "closing".asInstanceOf[closing]
+  
+  @js.native
+  sealed trait cn
+    extends StObject
+       with AudioCodec
+  inline def cn: cn = "cn".asInstanceOf[cn]
+  
+  @js.native
   sealed trait collapse
     extends StObject
        with WindowsStartMenuAppListVisibilityType
   inline def collapse: collapse = "collapse".asInstanceOf[collapse]
+  
+  @js.native
+  sealed trait color
+    extends StObject
+       with PrintColorMode
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
   sealed trait commitFileFailed
@@ -1588,11 +2787,36 @@ object microsoftGraphStrings {
     extends StObject
        with DataPolicyOperationStatus
        with FollowupFlagStatus
+       with ImportedWindowsAutopilotDeviceIdentityImportStatus
+       with ImportedWindowsAutopilotDeviceIdentityUploadStatus
   inline def complete: complete = "complete".asInstanceOf[complete]
+  
+  @js.native
+  sealed trait completedSuccessfully
+    extends StObject
+       with PrintJobStateDetail
+  inline def completedSuccessfully: completedSuccessfully = "completedSuccessfully".asInstanceOf[completedSuccessfully]
+  
+  @js.native
+  sealed trait completedWithErrors
+    extends StObject
+       with PrintJobStateDetail
+  inline def completedWithErrors: completedWithErrors = "completedWithErrors".asInstanceOf[completedWithErrors]
+  
+  @js.native
+  sealed trait completedWithWarnings
+    extends StObject
+       with PrintJobStateDetail
+  inline def completedWithWarnings: completedWithWarnings = "completedWithWarnings".asInstanceOf[completedWithWarnings]
   
   @js.native
   sealed trait completed_
     extends StObject
+       with ConnectionOperationStatus
+       with DeviceManagementReportStatus
+       with PrintJobProcessingState
+       with PrintTaskProcessingState
+       with SubjectRightsRequestStageStatus
        with TaskStatus
        with ThreatAssessmentStatus
        with VppTokenSyncStatus
@@ -1661,6 +2885,12 @@ object microsoftGraphStrings {
   inline def configManager: configManager = "configManager".asInstanceOf[configManager]
   
   @js.native
+  sealed trait configurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def configurationChange: configurationChange = "configurationChange".asInstanceOf[configurationChange]
+  
+  @js.native
   sealed trait configurationManagerClient
     extends StObject
        with ManagementAgentType
@@ -1677,6 +2907,18 @@ object microsoftGraphStrings {
     extends StObject
        with ManagementAgentType
   inline def configurationManagerClientMdmEas: configurationManagerClientMdmEas = "configurationManagerClientMdmEas".asInstanceOf[configurationManagerClientMdmEas]
+  
+  @js.native
+  sealed trait configured
+    extends StObject
+       with ConnectedOrganizationState
+  inline def configured: configured = "configured".asInstanceOf[configured]
+  
+  @js.native
+  sealed trait confirmed
+    extends StObject
+       with ServiceHealthStatus
+  inline def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
   
   @js.native
   sealed trait confirmedCompromised
@@ -1704,6 +2946,12 @@ object microsoftGraphStrings {
   inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
+  sealed trait connectingToDevice
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def connectingToDevice: connectingToDevice = "connectingToDevice".asInstanceOf[connectingToDevice]
+  
+  @js.native
   sealed trait connectionPending
     extends StObject
        with DeviceManagementExchangeConnectorStatus
@@ -1716,10 +2964,95 @@ object microsoftGraphStrings {
   inline def contactsOnly: contactsOnly = "contactsOnly".asInstanceOf[contactsOnly]
   
   @js.native
+  sealed trait contentDeletion
+    extends StObject
+       with SubjectRightsRequestStage
+  inline def contentDeletion: contentDeletion = "contentDeletion".asInstanceOf[contentDeletion]
+  
+  @js.native
+  sealed trait contentEstimate
+    extends StObject
+       with SubjectRightsRequestStage
+  inline def contentEstimate: contentEstimate = "contentEstimate".asInstanceOf[contentEstimate]
+  
+  @js.native
+  sealed trait contentExport
+    extends StObject
+       with CaseAction
+  inline def contentExport: contentExport = "contentExport".asInstanceOf[contentExport]
+  
+  @js.native
+  sealed trait contentRetrieval
+    extends StObject
+       with SubjectRightsRequestStage
+  inline def contentRetrieval: contentRetrieval = "contentRetrieval".asInstanceOf[contentRetrieval]
+  
+  @js.native
+  sealed trait contentReview
+    extends StObject
+       with SubjectRightsRequestStage
+  inline def contentReview: contentReview = "contentReview".asInstanceOf[contentReview]
+  
+  @js.native
+  sealed trait convertToPdf
+    extends StObject
+       with CaseAction
+  inline def convertToPdf: convertToPdf = "convertToPdf".asInstanceOf[convertToPdf]
+  
+  @js.native
+  sealed trait count
+    extends StObject
+       with BucketAggregationSortProperty
+  inline def count: count = "count".asInstanceOf[count]
+  
+  @js.native
+  sealed trait counterclockwiseFromBottomLeft
+    extends StObject
+       with PrintMultipageLayout
+  inline def counterclockwiseFromBottomLeft: counterclockwiseFromBottomLeft = "counterclockwiseFromBottomLeft".asInstanceOf[counterclockwiseFromBottomLeft]
+  
+  @js.native
+  sealed trait counterclockwiseFromBottomRight
+    extends StObject
+       with PrintMultipageLayout
+  inline def counterclockwiseFromBottomRight: counterclockwiseFromBottomRight = "counterclockwiseFromBottomRight".asInstanceOf[counterclockwiseFromBottomRight]
+  
+  @js.native
+  sealed trait counterclockwiseFromTopLeft
+    extends StObject
+       with PrintMultipageLayout
+  inline def counterclockwiseFromTopLeft: counterclockwiseFromTopLeft = "counterclockwiseFromTopLeft".asInstanceOf[counterclockwiseFromTopLeft]
+  
+  @js.native
+  sealed trait counterclockwiseFromTopRight
+    extends StObject
+       with PrintMultipageLayout
+  inline def counterclockwiseFromTopRight: counterclockwiseFromTopRight = "counterclockwiseFromTopRight".asInstanceOf[counterclockwiseFromTopRight]
+  
+  @js.native
+  sealed trait cover
+    extends StObject
+       with PrintFinishing
+  inline def cover: cover = "cover".asInstanceOf[cover]
+  
+  @js.native
+  sealed trait coverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def coverOpen: coverOpen = "coverOpen".asInstanceOf[coverOpen]
+  
+  @js.native
   sealed trait create
     extends StObject
+       with ProvisioningAction
        with RegistryOperation
   inline def create: create = "create".asInstanceOf[create]
+  
+  @js.native
+  sealed trait createChannel
+    extends StObject
+       with TeamsAsyncOperationType
+  inline def createChannel: createChannel = "createChannel".asInstanceOf[createChannel]
   
   @js.native
   sealed trait createTeam
@@ -1734,10 +3067,39 @@ object microsoftGraphStrings {
   inline def created: created = "created".asInstanceOf[created]
   
   @js.native
+  sealed trait createdBy
+    extends StObject
+       with AccessPackageAssignmentFilterByCurrentUserOptions
+       with AccessPackageAssignmentRequestFilterByCurrentUserOptions
+       with ApprovalFilterByCurrentUserOptions
+       with Label
+       with RoleAssignmentScheduleRequestFilterByCurrentUserOptions
+       with RoleEligibilityScheduleRequestFilterByCurrentUserOptions
+  inline def createdBy: createdBy = "createdBy".asInstanceOf[createdBy]
+  
+  @js.native
   sealed trait createdDate
     extends StObject
        with Win32LobAppFileSystemOperationType
   inline def createdDate: createdDate = "createdDate".asInstanceOf[createdDate]
+  
+  @js.native
+  sealed trait createdDateTime
+    extends StObject
+       with Label
+  inline def createdDateTime: createdDateTime = "createdDateTime".asInstanceOf[createdDateTime]
+  
+  @js.native
+  sealed trait critical
+    extends StObject
+       with ServiceUpdateSeverity
+  inline def critical: critical = "critical".asInstanceOf[critical]
+  
+  @js.native
+  sealed trait csv
+    extends StObject
+       with DeviceManagementReportFileFormat
+  inline def csv: csv = "csv".asInstanceOf[csv]
   
   @js.native
   sealed trait ctph
@@ -1752,10 +3114,28 @@ object microsoftGraphStrings {
   inline def cup: cup = "cup".asInstanceOf[cup]
   
   @js.native
+  sealed trait currency
+    extends StObject
+       with ColumnTypes
+  inline def currency: currency = "currency".asInstanceOf[currency]
+  
+  @js.native
+  sealed trait current
+    extends StObject
+       with SubjectRightsRequestStageStatus
+  inline def current: current = "current".asInstanceOf[current]
+  
+  @js.native
   sealed trait currentConfig
     extends StObject
        with RegistryHive
   inline def currentConfig: currentConfig = "currentConfig".asInstanceOf[currentConfig]
+  
+  @js.native
+  sealed trait currentEmployee
+    extends StObject
+       with DataSubjectType
+  inline def currentEmployee: currentEmployee = "currentEmployee".asInstanceOf[currentEmployee]
   
   @js.native
   sealed trait currentUser
@@ -1767,6 +3147,7 @@ object microsoftGraphStrings {
   sealed trait custom
     extends StObject
        with CalendarRoleType
+       with IdentityUserFlowAttributeType
   inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
@@ -1780,6 +3161,14 @@ object microsoftGraphStrings {
     extends StObject
        with MailTipsType
   inline def customMailTip: customMailTip = "customMailTip".asInstanceOf[customMailTip]
+  
+  @js.native
+  sealed trait customer
+    extends StObject
+       with BookingReminderRecipients
+       with DataSubjectType
+       with ServiceHealthOrigin
+  inline def customer: customer = "customer".asInstanceOf[customer]
   
   @js.native
   sealed trait d
@@ -1833,8 +3222,23 @@ object microsoftGraphStrings {
   @js.native
   sealed trait dateTime
     extends StObject
+       with ColumnTypes
+       with IdentityUserFlowAttributeDataType
+       with PropertyType
        with Win32LobAppPowerShellScriptRuleOperationType
   inline def dateTime: dateTime = "dateTime".asInstanceOf[dateTime]
+  
+  @js.native
+  sealed trait dateTimeCollection
+    extends StObject
+       with PropertyType
+  inline def dateTimeCollection: dateTimeCollection = "dateTimeCollection".asInstanceOf[dateTimeCollection]
+  
+  @js.native
+  sealed trait dateTimeDropdown
+    extends StObject
+       with IdentityUserFlowAttributeInputType
+  inline def dateTimeDropdown: dateTimeDropdown = "dateTimeDropdown".asInstanceOf[dateTimeDropdown]
   
   @js.native
   sealed trait days
@@ -1843,14 +3247,22 @@ object microsoftGraphStrings {
   inline def days: days = "days".asInstanceOf[days]
   
   @js.native
+  sealed trait deactivate
+    extends StObject
+       with UnifiedRoleManagementPolicyRuleTargetOperations
+  inline def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
+  
+  @js.native
   sealed trait deactivated
     extends StObject
        with ManagedDevicePartnerReportedHealthState
+       with PrinterProcessingStateDetail
   inline def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
   
   @js.native
   sealed trait declined
     extends StObject
+       with AgreementAcceptanceState
        with ResponseType
        with ScheduleChangeState
   inline def declined: declined = "declined".asInstanceOf[declined]
@@ -1900,7 +3312,9 @@ object microsoftGraphStrings {
   @js.native
   sealed trait delete_
     extends StObject
+       with ProvisioningAction
        with RegistryOperation
+       with SubjectRightsRequestType
   inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
@@ -1908,8 +3322,30 @@ object microsoftGraphStrings {
     extends StObject
        with ChangeType
        with DeviceManagementSubscriptionState
+       with PrinterProcessingStateDetail
        with Status
   inline def deleted: deleted = "deleted".asInstanceOf[deleted]
+  
+  @js.native
+  sealed trait delivered
+    extends StObject
+       with AccessPackageAssignmentState
+       with AccessPackageRequestState
+  inline def delivered: delivered = "delivered".asInstanceOf[delivered]
+  
+  @js.native
+  sealed trait delivering
+    extends StObject
+       with AccessPackageAssignmentState
+       with AccessPackageRequestState
+  inline def delivering: delivering = "delivering".asInstanceOf[delivering]
+  
+  @js.native
+  sealed trait deliveryFailed
+    extends StObject
+       with AccessPackageAssignmentState
+       with AccessPackageRequestState
+  inline def deliveryFailed: deliveryFailed = "deliveryFailed".asInstanceOf[deliveryFailed]
   
   @js.native
   sealed trait deliveryRestriction
@@ -1922,6 +3358,19 @@ object microsoftGraphStrings {
     extends StObject
        with DeviceManagementExchangeConnectorSyncType
   inline def deltaSync: deltaSync = "deltaSync".asInstanceOf[deltaSync]
+  
+  @js.native
+  sealed trait denied
+    extends StObject
+       with AccessPackageRequestState
+  inline def denied: denied = "denied".asInstanceOf[denied]
+  
+  @js.native
+  sealed trait deny
+    extends StObject
+       with AccessReviewHistoryDecisionFilter
+       with AccessType
+  inline def deny: deny = "deny".asInstanceOf[deny]
   
   @js.native
   sealed trait description
@@ -1941,6 +3390,30 @@ object microsoftGraphStrings {
     extends StObject
        with Win32LobAppRuleType
   inline def detection: detection = "detection".asInstanceOf[detection]
+  
+  @js.native
+  sealed trait developerEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def developerEmpty: developerEmpty = "developerEmpty".asInstanceOf[developerEmpty]
+  
+  @js.native
+  sealed trait developerLow
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def developerLow: developerLow = "developerLow".asInstanceOf[developerLow]
+  
+  @js.native
+  sealed trait deviceBasedPush
+    extends StObject
+       with MicrosoftAuthenticatorAuthenticationMode
+  inline def deviceBasedPush: deviceBasedPush = "deviceBasedPush".asInstanceOf[deviceBasedPush]
+  
+  @js.native
+  sealed trait deviceConfiguration
+    extends StObject
+       with SettingSourceType
+  inline def deviceConfiguration: deviceConfiguration = "deviceConfiguration".asInstanceOf[deviceConfiguration]
   
   @js.native
   sealed trait deviceDefault
@@ -1964,6 +3437,12 @@ object microsoftGraphStrings {
   inline def deviceEnrollmentManager: deviceEnrollmentManager = "deviceEnrollmentManager".asInstanceOf[deviceEnrollmentManager]
   
   @js.native
+  sealed trait deviceIntent
+    extends StObject
+       with SettingSourceType
+  inline def deviceIntent: deviceIntent = "deviceIntent".asInstanceOf[deviceIntent]
+  
+  @js.native
   sealed trait deviceNotKnownWithManagedApp
     extends StObject
        with DeviceManagementExchangeAccessStateReason
@@ -1982,6 +3461,222 @@ object microsoftGraphStrings {
   inline def deviceOsHigherThanDesiredOsVersion: deviceOsHigherThanDesiredOsVersion = "deviceOsHigherThanDesiredOsVersion".asInstanceOf[deviceOsHigherThanDesiredOsVersion]
   
   @js.native
+  sealed trait dieCutterAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterAdded: dieCutterAdded = "dieCutterAdded".asInstanceOf[dieCutterAdded]
+  
+  @js.native
+  sealed trait dieCutterAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterAlmostEmpty: dieCutterAlmostEmpty = "dieCutterAlmostEmpty".asInstanceOf[dieCutterAlmostEmpty]
+  
+  @js.native
+  sealed trait dieCutterAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterAlmostFull: dieCutterAlmostFull = "dieCutterAlmostFull".asInstanceOf[dieCutterAlmostFull]
+  
+  @js.native
+  sealed trait dieCutterAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterAtLimit: dieCutterAtLimit = "dieCutterAtLimit".asInstanceOf[dieCutterAtLimit]
+  
+  @js.native
+  sealed trait dieCutterClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterClosed: dieCutterClosed = "dieCutterClosed".asInstanceOf[dieCutterClosed]
+  
+  @js.native
+  sealed trait dieCutterConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterConfigurationChange: dieCutterConfigurationChange = "dieCutterConfigurationChange".asInstanceOf[dieCutterConfigurationChange]
+  
+  @js.native
+  sealed trait dieCutterCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterCoverClosed: dieCutterCoverClosed = "dieCutterCoverClosed".asInstanceOf[dieCutterCoverClosed]
+  
+  @js.native
+  sealed trait dieCutterCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterCoverOpen: dieCutterCoverOpen = "dieCutterCoverOpen".asInstanceOf[dieCutterCoverOpen]
+  
+  @js.native
+  sealed trait dieCutterEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterEmpty: dieCutterEmpty = "dieCutterEmpty".asInstanceOf[dieCutterEmpty]
+  
+  @js.native
+  sealed trait dieCutterFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterFull: dieCutterFull = "dieCutterFull".asInstanceOf[dieCutterFull]
+  
+  @js.native
+  sealed trait dieCutterInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterInterlockClosed: dieCutterInterlockClosed = "dieCutterInterlockClosed".asInstanceOf[dieCutterInterlockClosed]
+  
+  @js.native
+  sealed trait dieCutterInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterInterlockOpen: dieCutterInterlockOpen = "dieCutterInterlockOpen".asInstanceOf[dieCutterInterlockOpen]
+  
+  @js.native
+  sealed trait dieCutterJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterJam: dieCutterJam = "dieCutterJam".asInstanceOf[dieCutterJam]
+  
+  @js.native
+  sealed trait dieCutterLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterLifeAlmostOver: dieCutterLifeAlmostOver = "dieCutterLifeAlmostOver".asInstanceOf[dieCutterLifeAlmostOver]
+  
+  @js.native
+  sealed trait dieCutterLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterLifeOver: dieCutterLifeOver = "dieCutterLifeOver".asInstanceOf[dieCutterLifeOver]
+  
+  @js.native
+  sealed trait dieCutterMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterMemoryExhausted: dieCutterMemoryExhausted = "dieCutterMemoryExhausted".asInstanceOf[dieCutterMemoryExhausted]
+  
+  @js.native
+  sealed trait dieCutterMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterMissing: dieCutterMissing = "dieCutterMissing".asInstanceOf[dieCutterMissing]
+  
+  @js.native
+  sealed trait dieCutterMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterMotorFailure: dieCutterMotorFailure = "dieCutterMotorFailure".asInstanceOf[dieCutterMotorFailure]
+  
+  @js.native
+  sealed trait dieCutterNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterNearLimit: dieCutterNearLimit = "dieCutterNearLimit".asInstanceOf[dieCutterNearLimit]
+  
+  @js.native
+  sealed trait dieCutterOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterOffline: dieCutterOffline = "dieCutterOffline".asInstanceOf[dieCutterOffline]
+  
+  @js.native
+  sealed trait dieCutterOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterOpened: dieCutterOpened = "dieCutterOpened".asInstanceOf[dieCutterOpened]
+  
+  @js.native
+  sealed trait dieCutterOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterOverTemperature: dieCutterOverTemperature = "dieCutterOverTemperature".asInstanceOf[dieCutterOverTemperature]
+  
+  @js.native
+  sealed trait dieCutterPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterPowerSaver: dieCutterPowerSaver = "dieCutterPowerSaver".asInstanceOf[dieCutterPowerSaver]
+  
+  @js.native
+  sealed trait dieCutterRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterRecoverableFailure: dieCutterRecoverableFailure = "dieCutterRecoverableFailure".asInstanceOf[dieCutterRecoverableFailure]
+  
+  @js.native
+  sealed trait dieCutterRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterRecoverableStorage: dieCutterRecoverableStorage = "dieCutterRecoverableStorage".asInstanceOf[dieCutterRecoverableStorage]
+  
+  @js.native
+  sealed trait dieCutterRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterRemoved: dieCutterRemoved = "dieCutterRemoved".asInstanceOf[dieCutterRemoved]
+  
+  @js.native
+  sealed trait dieCutterResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterResourceAdded: dieCutterResourceAdded = "dieCutterResourceAdded".asInstanceOf[dieCutterResourceAdded]
+  
+  @js.native
+  sealed trait dieCutterResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterResourceRemoved: dieCutterResourceRemoved = "dieCutterResourceRemoved".asInstanceOf[dieCutterResourceRemoved]
+  
+  @js.native
+  sealed trait dieCutterThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterThermistorFailure: dieCutterThermistorFailure = "dieCutterThermistorFailure".asInstanceOf[dieCutterThermistorFailure]
+  
+  @js.native
+  sealed trait dieCutterTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterTimingFailure: dieCutterTimingFailure = "dieCutterTimingFailure".asInstanceOf[dieCutterTimingFailure]
+  
+  @js.native
+  sealed trait dieCutterTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterTurnedOff: dieCutterTurnedOff = "dieCutterTurnedOff".asInstanceOf[dieCutterTurnedOff]
+  
+  @js.native
+  sealed trait dieCutterTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterTurnedOn: dieCutterTurnedOn = "dieCutterTurnedOn".asInstanceOf[dieCutterTurnedOn]
+  
+  @js.native
+  sealed trait dieCutterUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterUnderTemperature: dieCutterUnderTemperature = "dieCutterUnderTemperature".asInstanceOf[dieCutterUnderTemperature]
+  
+  @js.native
+  sealed trait dieCutterUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterUnrecoverableFailure: dieCutterUnrecoverableFailure = "dieCutterUnrecoverableFailure".asInstanceOf[dieCutterUnrecoverableFailure]
+  
+  @js.native
+  sealed trait dieCutterUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterUnrecoverableStorageError: dieCutterUnrecoverableStorageError = "dieCutterUnrecoverableStorageError".asInstanceOf[dieCutterUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait dieCutterWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def dieCutterWarmingUp: dieCutterWarmingUp = "dieCutterWarmingUp".asInstanceOf[dieCutterWarmingUp]
+  
+  @js.native
   sealed trait directory
     extends StObject
        with LocationUniqueIdType
@@ -1991,6 +3686,7 @@ object microsoftGraphStrings {
   sealed trait disable
     extends StObject
        with DefenderMonitorFileActivity
+       with ProvisioningAction
   inline def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
@@ -2002,12 +3698,17 @@ object microsoftGraphStrings {
   @js.native
   sealed trait disabled
     extends StObject
+       with AdvancedConfigState
+       with AuthenticationMethodState
        with AutomaticRepliesStatus
        with ConditionalAccessPolicyState
        with DefenderScanType
        with DeviceManagementSubscriptionState
        with Enablement
+       with ExternalEmailOtpState
        with FirewallPacketQueueingMethodType
+       with MeetingChatMode
+       with PromptLoginBehavior
        with WindowsSpotlightEnablementSettings
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
@@ -2051,6 +3752,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait doctor
     extends StObject
+       with ContactRelationship
        with TimeOffReasonIconType
   inline def doctor: doctor = "doctor".asInstanceOf[doctor]
   
@@ -2093,8 +3795,33 @@ object microsoftGraphStrings {
   @js.native
   sealed trait done
     extends StObject
+       with AccessReviewHistoryStatus
        with ActionState
   inline def done: done = "done".asInstanceOf[done]
+  
+  @js.native
+  sealed trait dontKnow
+    extends StObject
+       with AccessReviewHistoryDecisionFilter
+  inline def dontKnow: dontKnow = "dontKnow".asInstanceOf[dontKnow]
+  
+  @js.native
+  sealed trait doorOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def doorOpen: doorOpen = "doorOpen".asInstanceOf[doorOpen]
+  
+  @js.native
+  sealed trait double
+    extends StObject
+       with PropertyType
+  inline def double: double = "double".asInstanceOf[double]
+  
+  @js.native
+  sealed trait doubleCollection
+    extends StObject
+       with PropertyType
+  inline def doubleCollection: doubleCollection = "doubleCollection".asInstanceOf[doubleCollection]
   
   @js.native
   sealed trait downloadFailed
@@ -2133,6 +3860,13 @@ object microsoftGraphStrings {
   inline def downloading: downloading = "downloading".asInstanceOf[downloading]
   
   @js.native
+  sealed trait draft
+    extends StObject
+       with ConnectionState
+       with EducationAssignmentStatus
+  inline def draft: draft = "draft".asInstanceOf[draft]
+  
+  @js.native
   sealed trait drive
     extends StObject
        with EntityType
@@ -2143,6 +3877,12 @@ object microsoftGraphStrings {
     extends StObject
        with EntityType
   inline def driveItem: driveItem = "driveItem".asInstanceOf[driveItem]
+  
+  @js.native
+  sealed trait dropdownSingleSelect
+    extends StObject
+       with IdentityUserFlowAttributeInputType
+  inline def dropdownSingleSelect: dropdownSingleSelect = "dropdownSingleSelect".asInstanceOf[dropdownSingleSelect]
   
   @js.native
   sealed trait dualPurpose
@@ -2235,11 +3975,33 @@ object microsoftGraphStrings {
   inline def eleven: eleven = "eleven".asInstanceOf[eleven]
   
   @js.native
+  sealed trait emailAsAlternateId
+    extends StObject
+       with StagedFeatureName
+  inline def emailAsAlternateId: emailAsAlternateId = "emailAsAlternateId".asInstanceOf[emailAsAlternateId]
+  
+  @js.native
+  sealed trait emailBox
+    extends StObject
+       with IdentityUserFlowAttributeInputType
+  inline def emailBox: emailBox = "emailBox".asInstanceOf[emailBox]
+  
+  @js.native
+  sealed trait emailUser
+    extends StObject
+       with TeamworkUserIdentityType
+  inline def emailUser: emailUser = "emailUser".asInstanceOf[emailUser]
+  
+  @js.native
   sealed trait enabled
     extends StObject
+       with AdvancedConfigState
+       with AuthenticationMethodState
        with ConditionalAccessPolicyState
        with DeviceManagementPartnerTenantState
        with Enablement
+       with ExternalEmailOtpState
+       with MeetingChatMode
        with MobileThreatPartnerTenantState
        with WindowsSpotlightEnablementSettings
   inline def enabled: enabled = "enabled".asInstanceOf[enabled]
@@ -2287,16 +4049,34 @@ object microsoftGraphStrings {
   inline def enforceComponentsStoreAppsAndSmartlocker: enforceComponentsStoreAppsAndSmartlocker = "enforceComponentsStoreAppsAndSmartlocker".asInstanceOf[enforceComponentsStoreAppsAndSmartlocker]
   
   @js.native
+  sealed trait enforceMfaByFederatedIdp
+    extends StObject
+       with FederatedIdpMfaBehavior
+  inline def enforceMfaByFederatedIdp: enforceMfaByFederatedIdp = "enforceMfaByFederatedIdp".asInstanceOf[enforceMfaByFederatedIdp]
+  
+  @js.native
   sealed trait enhanced
     extends StObject
        with DiagnosticDataSubmissionMode
   inline def enhanced: enhanced = "enhanced".asInstanceOf[enhanced]
   
   @js.native
+  sealed trait enrolled
+    extends StObject
+       with EnrollmentState
+  inline def enrolled: enrolled = "enrolled".asInstanceOf[enrolled]
+  
+  @js.native
   sealed trait enrollmentRestrictionsEnforced
     extends StObject
        with DeviceEnrollmentFailureReason
   inline def enrollmentRestrictionsEnforced: enrollmentRestrictionsEnforced = "enrollmentRestrictionsEnforced".asInstanceOf[enrollmentRestrictionsEnforced]
+  
+  @js.native
+  sealed trait entityUrl
+    extends StObject
+       with TeamworkActivityTopicSource
+  inline def entityUrl: entityUrl = "entityUrl".asInstanceOf[entityUrl]
   
   @js.native
   sealed trait entryId
@@ -2311,10 +4091,19 @@ object microsoftGraphStrings {
   inline def equal: equal = "equal".asInstanceOf[equal]
   
   @js.native
+  sealed trait equipment
+    extends StObject
+       with UserPurpose
+  inline def equipment: equipment = "equipment".asInstanceOf[equipment]
+  
+  @js.native
   sealed trait error
     extends StObject
+       with AccessReviewHistoryStatus
        with ComplianceState
        with ComplianceStatus
+       with ImportedWindowsAutopilotDeviceIdentityImportStatus
+       with ImportedWindowsAutopilotDeviceIdentityUploadStatus
        with MobileAppContentFileUploadState
   inline def error: error = "error".asInstanceOf[error]
   
@@ -2331,10 +4120,22 @@ object microsoftGraphStrings {
   inline def establishing: establishing = "establishing".asInstanceOf[establishing]
   
   @js.native
+  sealed trait estimateStatistics
+    extends StObject
+       with CaseAction
+  inline def estimateStatistics: estimateStatistics = "estimateStatistics".asInstanceOf[estimateStatistics]
+  
+  @js.native
   sealed trait event
     extends StObject
        with EntityType
   inline def event: event = "event".asInstanceOf[event]
+  
+  @js.native
+  sealed trait everyTime
+    extends StObject
+       with SignInFrequencyInterval
+  inline def everyTime: everyTime = "everyTime".asInstanceOf[everyTime]
   
   @js.native
   sealed trait everyday
@@ -2345,9 +4146,18 @@ object microsoftGraphStrings {
   @js.native
   sealed trait everyone
     extends StObject
+       with AclType
+       with AllowInvitesFrom
+       with BroadcastMeetingAudience
        with LobbyBypassScope
        with OnlineMeetingPresenters
   inline def everyone: everyone = "everyone".asInstanceOf[everyone]
+  
+  @js.native
+  sealed trait everyoneExceptGuests
+    extends StObject
+       with AclType
+  inline def everyoneExceptGuests: everyoneExceptGuests = "everyoneExceptGuests".asInstanceOf[everyoneExceptGuests]
   
   @js.native
   sealed trait ewsId
@@ -2410,6 +4220,12 @@ object microsoftGraphStrings {
   inline def exchangeUpgrade: exchangeUpgrade = "exchangeUpgrade".asInstanceOf[exchangeUpgrade]
   
   @js.native
+  sealed trait exclude
+    extends StObject
+       with FilterMode
+  inline def exclude: exclude = "exclude".asInstanceOf[exclude]
+  
+  @js.native
   sealed trait exists
     extends StObject
        with Win32LobAppFileSystemOperationType
@@ -2425,6 +4241,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait expired
     extends StObject
+       with AccessPackageAssignmentState
        with VppTokenState
   inline def expired: expired = "expired".asInstanceOf[expired]
   
@@ -2435,10 +4252,42 @@ object microsoftGraphStrings {
   inline def explicitAllowed: explicitAllowed = "explicitAllowed".asInstanceOf[explicitAllowed]
   
   @js.native
+  sealed trait `export`
+    extends StObject
+       with ProvisioningStepType
+       with SubjectRightsRequestType
+  inline def `export`: `export` = "export".asInstanceOf[`export`]
+  
+  @js.native
+  sealed trait extend
+    extends StObject
+       with UnifiedRoleManagementPolicyRuleTargetOperations
+  inline def extend: extend = "extend".asInstanceOf[extend]
+  
+  @js.native
+  sealed trait extendedRecovery
+    extends StObject
+       with ServiceHealthStatus
+  inline def extendedRecovery: extendedRecovery = "extendedRecovery".asInstanceOf[extendedRecovery]
+  
+  @js.native
   sealed trait external
     extends StObject
        with RecipientScopeType
   inline def external: external = "external".asInstanceOf[external]
+  
+  @js.native
+  sealed trait externalGroup
+    extends StObject
+       with AclType
+       with IdentityType
+  inline def externalGroup: externalGroup = "externalGroup".asInstanceOf[externalGroup]
+  
+  @js.native
+  sealed trait externalGuest
+    extends StObject
+       with BookingStaffRole
+  inline def externalGuest: externalGuest = "externalGuest".asInstanceOf[externalGuest]
   
   @js.native
   sealed trait externalItem
@@ -2465,13 +4314,62 @@ object microsoftGraphStrings {
   inline def externalPartner: externalPartner = "externalPartner".asInstanceOf[externalPartner]
   
   @js.native
+  sealed trait extruderCooling
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def extruderCooling: extruderCooling = "extruderCooling".asInstanceOf[extruderCooling]
+  
+  @js.native
+  sealed trait extruderFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def extruderFailure: extruderFailure = "extruderFailure".asInstanceOf[extruderFailure]
+  
+  @js.native
+  sealed trait extruderHeating
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def extruderHeating: extruderHeating = "extruderHeating".asInstanceOf[extruderHeating]
+  
+  @js.native
+  sealed trait extruderJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def extruderJam: extruderJam = "extruderJam".asInstanceOf[extruderJam]
+  
+  @js.native
+  sealed trait extruderTemperatureHigh
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def extruderTemperatureHigh: extruderTemperatureHigh = "extruderTemperatureHigh".asInstanceOf[extruderTemperatureHigh]
+  
+  @js.native
+  sealed trait extruderTemperatureLow
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def extruderTemperatureLow: extruderTemperatureLow = "extruderTemperatureLow".asInstanceOf[extruderTemperatureLow]
+  
+  @js.native
+  sealed trait faculty
+    extends StObject
+       with DataSubjectType
+  inline def faculty: faculty = "faculty".asInstanceOf[faculty]
+  
+  @js.native
   sealed trait failed_
     extends StObject
        with ActionState
+       with CaseOperationStatus
+       with ConnectionOperationStatus
        with ConnectionStatus
        with DataPolicyOperationStatus
+       with DeviceManagementReportStatus
+       with EnrollmentState
        with InstallState
+       with LongRunningOperationStatus
+       with PrintOperationProcessingState
        with RecordingStatus
+       with SubjectRightsRequestStageStatus
        with TeamsAsyncOperationStatus
        with VppTokenSyncStatus
        with Win32LobAppReturnCodeType
@@ -2482,8 +4380,11 @@ object microsoftGraphStrings {
   sealed trait failure
     extends StObject
        with AppliedConditionalAccessPolicyResult
+       with CallRecordingStatus
        with ConditionalAccessStatus
        with OperationResult
+       with ProvisioningResult
+       with ProvisioningStatusErrorCategory
   inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
@@ -2496,13 +4397,56 @@ object microsoftGraphStrings {
   sealed trait falsePositive
     extends StObject
        with AlertFeedback
+       with ServiceHealthStatus
   inline def falsePositive: falsePositive = "falsePositive".asInstanceOf[falsePositive]
+  
+  @js.native
+  sealed trait fanFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def fanFailure: fanFailure = "fanFailure".asInstanceOf[fanFailure]
+  
+  @js.native
+  sealed trait faxModemLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def faxModemLifeAlmostOver: faxModemLifeAlmostOver = "faxModemLifeAlmostOver".asInstanceOf[faxModemLifeAlmostOver]
+  
+  @js.native
+  sealed trait faxModemLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def faxModemLifeOver: faxModemLifeOver = "faxModemLifeOver".asInstanceOf[faxModemLifeOver]
+  
+  @js.native
+  sealed trait faxModemMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def faxModemMissing: faxModemMissing = "faxModemMissing".asInstanceOf[faxModemMissing]
+  
+  @js.native
+  sealed trait faxModemTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def faxModemTurnedOff: faxModemTurnedOff = "faxModemTurnedOff".asInstanceOf[faxModemTurnedOff]
+  
+  @js.native
+  sealed trait faxModemTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def faxModemTurnedOn: faxModemTurnedOn = "faxModemTurnedOn".asInstanceOf[faxModemTurnedOn]
   
   @js.native
   sealed trait featureNotSupported
     extends StObject
        with DeviceEnrollmentFailureReason
   inline def featureNotSupported: featureNotSupported = "featureNotSupported".asInstanceOf[featureNotSupported]
+  
+  @js.native
+  sealed trait federatedUser
+    extends StObject
+       with TeamworkUserIdentityType
+  inline def federatedUser: federatedUser = "federatedUser".asInstanceOf[federatedUser]
   
   @js.native
   sealed trait female
@@ -2516,6 +4460,24 @@ object microsoftGraphStrings {
        with AttachmentType
        with ThreatAssessmentContentType
   inline def file: file = "file".asInstanceOf[file]
+  
+  @js.native
+  sealed trait fileExtension
+    extends StObject
+       with Label
+  inline def fileExtension: fileExtension = "fileExtension".asInstanceOf[fileExtension]
+  
+  @js.native
+  sealed trait fileName
+    extends StObject
+       with Label
+  inline def fileName: fileName = "fileName".asInstanceOf[fileName]
+  
+  @js.native
+  sealed trait fill
+    extends StObject
+       with PrintScaling
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait first
@@ -2536,10 +4498,28 @@ object microsoftGraphStrings {
   inline def firstTimeSender: firstTimeSender = "firstTimeSender".asInstanceOf[firstTimeSender]
   
   @js.native
+  sealed trait fit
+    extends StObject
+       with PrintScaling
+  inline def fit: fit = "fit".asInstanceOf[fit]
+  
+  @js.native
   sealed trait five
     extends StObject
        with MiracastChannel
   inline def five: five = "five".asInstanceOf[five]
+  
+  @js.native
+  sealed trait fixedDataVolume
+    extends StObject
+       with VolumeType
+  inline def fixedDataVolume: fixedDataVolume = "fixedDataVolume".asInstanceOf[fixedDataVolume]
+  
+  @js.native
+  sealed trait fixedPrice
+    extends StObject
+       with BookingPriceType
+  inline def fixedPrice: fixedPrice = "fixedPrice".asInstanceOf[fixedPrice]
   
   @js.native
   sealed trait flagged
@@ -2560,6 +4540,18 @@ object microsoftGraphStrings {
   inline def flash: flash = "flash".asInstanceOf[flash]
   
   @js.native
+  sealed trait flipOnLongEdge
+    extends StObject
+       with PrintDuplexMode
+  inline def flipOnLongEdge: flipOnLongEdge = "flipOnLongEdge".asInstanceOf[flipOnLongEdge]
+  
+  @js.native
+  sealed trait flipOnShortEdge
+    extends StObject
+       with PrintDuplexMode
+  inline def flipOnShortEdge: flipOnShortEdge = "flipOnShortEdge".asInstanceOf[flipOnShortEdge]
+  
+  @js.native
   sealed trait float
     extends StObject
        with Win32LobAppPowerShellScriptRuleOperationType
@@ -2570,6 +4562,222 @@ object microsoftGraphStrings {
     extends StObject
        with InferenceClassificationType
   inline def focused: focused = "focused".asInstanceOf[focused]
+  
+  @js.native
+  sealed trait folderAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderAdded: folderAdded = "folderAdded".asInstanceOf[folderAdded]
+  
+  @js.native
+  sealed trait folderAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderAlmostEmpty: folderAlmostEmpty = "folderAlmostEmpty".asInstanceOf[folderAlmostEmpty]
+  
+  @js.native
+  sealed trait folderAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderAlmostFull: folderAlmostFull = "folderAlmostFull".asInstanceOf[folderAlmostFull]
+  
+  @js.native
+  sealed trait folderAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderAtLimit: folderAtLimit = "folderAtLimit".asInstanceOf[folderAtLimit]
+  
+  @js.native
+  sealed trait folderClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderClosed: folderClosed = "folderClosed".asInstanceOf[folderClosed]
+  
+  @js.native
+  sealed trait folderConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderConfigurationChange: folderConfigurationChange = "folderConfigurationChange".asInstanceOf[folderConfigurationChange]
+  
+  @js.native
+  sealed trait folderCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderCoverClosed: folderCoverClosed = "folderCoverClosed".asInstanceOf[folderCoverClosed]
+  
+  @js.native
+  sealed trait folderCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderCoverOpen: folderCoverOpen = "folderCoverOpen".asInstanceOf[folderCoverOpen]
+  
+  @js.native
+  sealed trait folderEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderEmpty: folderEmpty = "folderEmpty".asInstanceOf[folderEmpty]
+  
+  @js.native
+  sealed trait folderFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderFull: folderFull = "folderFull".asInstanceOf[folderFull]
+  
+  @js.native
+  sealed trait folderInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderInterlockClosed: folderInterlockClosed = "folderInterlockClosed".asInstanceOf[folderInterlockClosed]
+  
+  @js.native
+  sealed trait folderInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderInterlockOpen: folderInterlockOpen = "folderInterlockOpen".asInstanceOf[folderInterlockOpen]
+  
+  @js.native
+  sealed trait folderJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderJam: folderJam = "folderJam".asInstanceOf[folderJam]
+  
+  @js.native
+  sealed trait folderLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderLifeAlmostOver: folderLifeAlmostOver = "folderLifeAlmostOver".asInstanceOf[folderLifeAlmostOver]
+  
+  @js.native
+  sealed trait folderLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderLifeOver: folderLifeOver = "folderLifeOver".asInstanceOf[folderLifeOver]
+  
+  @js.native
+  sealed trait folderMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderMemoryExhausted: folderMemoryExhausted = "folderMemoryExhausted".asInstanceOf[folderMemoryExhausted]
+  
+  @js.native
+  sealed trait folderMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderMissing: folderMissing = "folderMissing".asInstanceOf[folderMissing]
+  
+  @js.native
+  sealed trait folderMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderMotorFailure: folderMotorFailure = "folderMotorFailure".asInstanceOf[folderMotorFailure]
+  
+  @js.native
+  sealed trait folderNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderNearLimit: folderNearLimit = "folderNearLimit".asInstanceOf[folderNearLimit]
+  
+  @js.native
+  sealed trait folderOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderOffline: folderOffline = "folderOffline".asInstanceOf[folderOffline]
+  
+  @js.native
+  sealed trait folderOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderOpened: folderOpened = "folderOpened".asInstanceOf[folderOpened]
+  
+  @js.native
+  sealed trait folderOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderOverTemperature: folderOverTemperature = "folderOverTemperature".asInstanceOf[folderOverTemperature]
+  
+  @js.native
+  sealed trait folderPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderPowerSaver: folderPowerSaver = "folderPowerSaver".asInstanceOf[folderPowerSaver]
+  
+  @js.native
+  sealed trait folderRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderRecoverableFailure: folderRecoverableFailure = "folderRecoverableFailure".asInstanceOf[folderRecoverableFailure]
+  
+  @js.native
+  sealed trait folderRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderRecoverableStorage: folderRecoverableStorage = "folderRecoverableStorage".asInstanceOf[folderRecoverableStorage]
+  
+  @js.native
+  sealed trait folderRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderRemoved: folderRemoved = "folderRemoved".asInstanceOf[folderRemoved]
+  
+  @js.native
+  sealed trait folderResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderResourceAdded: folderResourceAdded = "folderResourceAdded".asInstanceOf[folderResourceAdded]
+  
+  @js.native
+  sealed trait folderResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderResourceRemoved: folderResourceRemoved = "folderResourceRemoved".asInstanceOf[folderResourceRemoved]
+  
+  @js.native
+  sealed trait folderThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderThermistorFailure: folderThermistorFailure = "folderThermistorFailure".asInstanceOf[folderThermistorFailure]
+  
+  @js.native
+  sealed trait folderTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderTimingFailure: folderTimingFailure = "folderTimingFailure".asInstanceOf[folderTimingFailure]
+  
+  @js.native
+  sealed trait folderTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderTurnedOff: folderTurnedOff = "folderTurnedOff".asInstanceOf[folderTurnedOff]
+  
+  @js.native
+  sealed trait folderTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderTurnedOn: folderTurnedOn = "folderTurnedOn".asInstanceOf[folderTurnedOn]
+  
+  @js.native
+  sealed trait folderUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderUnderTemperature: folderUnderTemperature = "folderUnderTemperature".asInstanceOf[folderUnderTemperature]
+  
+  @js.native
+  sealed trait folderUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderUnrecoverableFailure: folderUnrecoverableFailure = "folderUnrecoverableFailure".asInstanceOf[folderUnrecoverableFailure]
+  
+  @js.native
+  sealed trait folderUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderUnrecoverableStorageError: folderUnrecoverableStorageError = "folderUnrecoverableStorageError".asInstanceOf[folderUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait folderWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def folderWarmingUp: folderWarmingUp = "folderWarmingUp".asInstanceOf[folderWarmingUp]
   
   @js.native
   sealed trait followUp
@@ -2588,6 +4796,18 @@ object microsoftGraphStrings {
     extends StObject
        with Win32LobAppRestartBehavior
   inline def force: force = "force".asInstanceOf[force]
+  
+  @js.native
+  sealed trait foreground
+    extends StObject
+       with Win32LobAppDeliveryOptimizationPriority
+  inline def foreground: foreground = "foreground".asInstanceOf[foreground]
+  
+  @js.native
+  sealed trait formerEmployee
+    extends StObject
+       with DataSubjectType
+  inline def formerEmployee: formerEmployee = "formerEmployee".asInstanceOf[formerEmployee]
   
   @js.native
   sealed trait forty
@@ -2634,6 +4854,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait free
     extends StObject
+       with BookingPriceType
        with FreeBusyStatus
   inline def free: free = "free".asInstanceOf[free]
   
@@ -2694,10 +4915,46 @@ object microsoftGraphStrings {
   inline def fullUpdate: fullUpdate = "fullUpdate".asInstanceOf[fullUpdate]
   
   @js.native
+  sealed trait fuserOverTemp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def fuserOverTemp: fuserOverTemp = "fuserOverTemp".asInstanceOf[fuserOverTemp]
+  
+  @js.native
+  sealed trait fuserUnderTemp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def fuserUnderTemp: fuserUnderTemp = "fuserUnderTemp".asInstanceOf[fuserUnderTemp]
+  
+  @js.native
   sealed trait fyi
     extends StObject
        with MessageActionFlag
   inline def fyi: fyi = "fyi".asInstanceOf[fyi]
+  
+  @js.native
+  sealed trait g722
+    extends StObject
+       with AudioCodec
+  inline def g722: g722 = "g722".asInstanceOf[g722]
+  
+  @js.native
+  sealed trait g7221
+    extends StObject
+       with AudioCodec
+  inline def g7221: g7221 = "g7221".asInstanceOf[g7221]
+  
+  @js.native
+  sealed trait g7221c
+    extends StObject
+       with AudioCodec
+  inline def g7221c: g7221c = "g7221c".asInstanceOf[g7221c]
+  
+  @js.native
+  sealed trait g729
+    extends StObject
+       with AudioCodec
+  inline def g729: g729 = "g729".asInstanceOf[g729]
   
   @js.native
   sealed trait gateway
@@ -2725,6 +4982,12 @@ object microsoftGraphStrings {
   inline def general: general = "general".asInstanceOf[general]
   
   @js.native
+  sealed trait generateReport
+    extends StObject
+       with SubjectRightsRequestStage
+  inline def generateReport: generateReport = "generateReport".asInstanceOf[generateReport]
+  
+  @js.native
   sealed trait generic
     extends StObject
        with RiskEventType
@@ -2737,6 +5000,12 @@ object microsoftGraphStrings {
   inline def geoCoordinates: geoCoordinates = "geoCoordinates".asInstanceOf[geoCoordinates]
   
   @js.native
+  sealed trait geolocation
+    extends StObject
+       with ColumnTypes
+  inline def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
+  
+  @js.native
   sealed trait ggp
     extends StObject
        with SecurityNetworkProtocol
@@ -2746,6 +5015,7 @@ object microsoftGraphStrings {
   sealed trait global
     extends StObject
        with ManagedAppAvailability
+       with TermGroupScope
   inline def global: global = "global".asInstanceOf[global]
   
   @js.native
@@ -2767,10 +5037,22 @@ object microsoftGraphStrings {
   inline def googleCloudDevicePolicyController: googleCloudDevicePolicyController = "googleCloudDevicePolicyController".asInstanceOf[googleCloudDevicePolicyController]
   
   @js.native
+  sealed trait grant
+    extends StObject
+       with AccessType
+  inline def grant: grant = "grant".asInstanceOf[grant]
+  
+  @js.native
   sealed trait gray
     extends StObject
        with ScheduleEntityTheme
   inline def gray: gray = "gray".asInstanceOf[gray]
+  
+  @js.native
+  sealed trait grayscale
+    extends StObject
+       with PrintColorMode
+  inline def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
   
   @js.native
   sealed trait greaterThan
@@ -2791,22 +5073,76 @@ object microsoftGraphStrings {
   inline def green: green = "green".asInstanceOf[green]
   
   @js.native
+  sealed trait group
+    extends StObject
+       with AclType
+       with AuthenticationMethodTargetType
+       with ChatType
+       with CrossTenantAccessPolicyTargetType
+       with IdentityType
+       with PlannerContainerType
+  inline def group: group = "group".asInstanceOf[group]
+  
+  @js.native
   sealed trait groupCall
     extends StObject
        with CallType
   inline def groupCall: groupCall = "groupCall".asInstanceOf[groupCall]
   
   @js.native
+  sealed trait guardian
+    extends StObject
+       with ContactRelationship
+  inline def guardian: guardian = "guardian".asInstanceOf[guardian]
+  
+  @js.native
   sealed trait guest
     extends StObject
+       with BookingStaffRole
        with SharedPCAllowedAccountType
   inline def guest: guest = "guest".asInstanceOf[guest]
+  
+  @js.native
+  sealed trait h263
+    extends StObject
+       with VideoCodec
+  inline def h263: h263 = "h263".asInstanceOf[h263]
+  
+  @js.native
+  sealed trait h264
+    extends StObject
+       with VideoCodec
+  inline def h264: h264 = "h264".asInstanceOf[h264]
+  
+  @js.native
+  sealed trait h264s
+    extends StObject
+       with VideoCodec
+  inline def h264s: h264s = "h264s".asInstanceOf[h264s]
+  
+  @js.native
+  sealed trait h264uc
+    extends StObject
+       with VideoCodec
+  inline def h264uc: h264uc = "h264uc".asInstanceOf[h264uc]
+  
+  @js.native
+  sealed trait h265
+    extends StObject
+       with VideoCodec
+  inline def h265: h265 = "h265".asInstanceOf[h265]
   
   @js.native
   sealed trait hardReboot
     extends StObject
        with Win32LobAppReturnCodeType
   inline def hardReboot: hardReboot = "hardReboot".asInstanceOf[hardReboot]
+  
+  @js.native
+  sealed trait hdd
+    extends StObject
+       with DiskType
+  inline def hdd: hdd = "hdd".asInstanceOf[hdd]
   
   @js.native
   sealed trait healthcareCareCoordination
@@ -2819,6 +5155,12 @@ object microsoftGraphStrings {
     extends StObject
        with TeamSpecialization
   inline def healthcareStandard: healthcareStandard = "healthcareStandard".asInstanceOf[healthcareStandard]
+  
+  @js.native
+  sealed trait hibernate
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def hibernate: hibernate = "hibernate".asInstanceOf[hibernate]
   
   @js.native
   sealed trait hidden
@@ -2855,9 +5197,11 @@ object microsoftGraphStrings {
        with Importance
        with InternetSiteSecurityLevel
        with PermissionClassificationType
+       with PrintQuality
        with ProcessIntegrityLevel
        with RiskLevel
        with SelectionLikelihoodInfo
+       with ServiceUpdateSeverity
        with SiteSecurityLevel
   inline def high: high = "high".asInstanceOf[high]
   
@@ -2878,6 +5222,18 @@ object microsoftGraphStrings {
     extends StObject
        with CallState
   inline def hold: hold = "hold".asInstanceOf[hold]
+  
+  @js.native
+  sealed trait holdNewJobs
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def holdNewJobs: holdNewJobs = "holdNewJobs".asInstanceOf[holdNewJobs]
+  
+  @js.native
+  sealed trait holdUpdate
+    extends StObject
+       with CaseAction
+  inline def holdUpdate: holdUpdate = "holdUpdate".asInstanceOf[holdUpdate]
   
   @js.native
   sealed trait holoLens
@@ -2924,6 +5280,12 @@ object microsoftGraphStrings {
   inline def hotel: hotel = "hotel".asInstanceOf[hotel]
   
   @js.native
+  sealed trait hourly
+    extends StObject
+       with BookingPriceType
+  inline def hourly: hourly = "hourly".asInstanceOf[hourly]
+  
+  @js.native
   sealed trait hours
     extends StObject
        with SigninFrequencyType
@@ -2933,6 +5295,7 @@ object microsoftGraphStrings {
   sealed trait html
     extends StObject
        with BodyType
+       with ExternalItemContentType
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
@@ -2986,9 +5349,16 @@ object microsoftGraphStrings {
   inline def icmpV6: icmpV6 = "icmpV6".asInstanceOf[icmpV6]
   
   @js.native
+  sealed trait identifyPrinterRequested
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def identifyPrinterRequested: identifyPrinterRequested = "identifyPrinterRequested".asInstanceOf[identifyPrinterRequested]
+  
+  @js.native
   sealed trait idle
     extends StObject
        with IosUpdatesInstallStatus
+       with PrinterProcessingState
   inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
@@ -3022,6 +5392,228 @@ object microsoftGraphStrings {
   inline def immutableEntryId: immutableEntryId = "immutableEntryId".asInstanceOf[immutableEntryId]
   
   @js.native
+  sealed trait `import`
+    extends StObject
+       with ProvisioningStepType
+  inline def `import`: `import` = "import".asInstanceOf[`import`]
+  
+  @js.native
+  sealed trait imprinterAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterAdded: imprinterAdded = "imprinterAdded".asInstanceOf[imprinterAdded]
+  
+  @js.native
+  sealed trait imprinterAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterAlmostEmpty: imprinterAlmostEmpty = "imprinterAlmostEmpty".asInstanceOf[imprinterAlmostEmpty]
+  
+  @js.native
+  sealed trait imprinterAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterAlmostFull: imprinterAlmostFull = "imprinterAlmostFull".asInstanceOf[imprinterAlmostFull]
+  
+  @js.native
+  sealed trait imprinterAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterAtLimit: imprinterAtLimit = "imprinterAtLimit".asInstanceOf[imprinterAtLimit]
+  
+  @js.native
+  sealed trait imprinterClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterClosed: imprinterClosed = "imprinterClosed".asInstanceOf[imprinterClosed]
+  
+  @js.native
+  sealed trait imprinterConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterConfigurationChange: imprinterConfigurationChange = "imprinterConfigurationChange".asInstanceOf[imprinterConfigurationChange]
+  
+  @js.native
+  sealed trait imprinterCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterCoverClosed: imprinterCoverClosed = "imprinterCoverClosed".asInstanceOf[imprinterCoverClosed]
+  
+  @js.native
+  sealed trait imprinterCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterCoverOpen: imprinterCoverOpen = "imprinterCoverOpen".asInstanceOf[imprinterCoverOpen]
+  
+  @js.native
+  sealed trait imprinterEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterEmpty: imprinterEmpty = "imprinterEmpty".asInstanceOf[imprinterEmpty]
+  
+  @js.native
+  sealed trait imprinterFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterFull: imprinterFull = "imprinterFull".asInstanceOf[imprinterFull]
+  
+  @js.native
+  sealed trait imprinterInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterInterlockClosed: imprinterInterlockClosed = "imprinterInterlockClosed".asInstanceOf[imprinterInterlockClosed]
+  
+  @js.native
+  sealed trait imprinterInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterInterlockOpen: imprinterInterlockOpen = "imprinterInterlockOpen".asInstanceOf[imprinterInterlockOpen]
+  
+  @js.native
+  sealed trait imprinterJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterJam: imprinterJam = "imprinterJam".asInstanceOf[imprinterJam]
+  
+  @js.native
+  sealed trait imprinterLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterLifeAlmostOver: imprinterLifeAlmostOver = "imprinterLifeAlmostOver".asInstanceOf[imprinterLifeAlmostOver]
+  
+  @js.native
+  sealed trait imprinterLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterLifeOver: imprinterLifeOver = "imprinterLifeOver".asInstanceOf[imprinterLifeOver]
+  
+  @js.native
+  sealed trait imprinterMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterMemoryExhausted: imprinterMemoryExhausted = "imprinterMemoryExhausted".asInstanceOf[imprinterMemoryExhausted]
+  
+  @js.native
+  sealed trait imprinterMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterMissing: imprinterMissing = "imprinterMissing".asInstanceOf[imprinterMissing]
+  
+  @js.native
+  sealed trait imprinterMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterMotorFailure: imprinterMotorFailure = "imprinterMotorFailure".asInstanceOf[imprinterMotorFailure]
+  
+  @js.native
+  sealed trait imprinterNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterNearLimit: imprinterNearLimit = "imprinterNearLimit".asInstanceOf[imprinterNearLimit]
+  
+  @js.native
+  sealed trait imprinterOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterOffline: imprinterOffline = "imprinterOffline".asInstanceOf[imprinterOffline]
+  
+  @js.native
+  sealed trait imprinterOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterOpened: imprinterOpened = "imprinterOpened".asInstanceOf[imprinterOpened]
+  
+  @js.native
+  sealed trait imprinterOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterOverTemperature: imprinterOverTemperature = "imprinterOverTemperature".asInstanceOf[imprinterOverTemperature]
+  
+  @js.native
+  sealed trait imprinterPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterPowerSaver: imprinterPowerSaver = "imprinterPowerSaver".asInstanceOf[imprinterPowerSaver]
+  
+  @js.native
+  sealed trait imprinterRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterRecoverableFailure: imprinterRecoverableFailure = "imprinterRecoverableFailure".asInstanceOf[imprinterRecoverableFailure]
+  
+  @js.native
+  sealed trait imprinterRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterRecoverableStorage: imprinterRecoverableStorage = "imprinterRecoverableStorage".asInstanceOf[imprinterRecoverableStorage]
+  
+  @js.native
+  sealed trait imprinterRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterRemoved: imprinterRemoved = "imprinterRemoved".asInstanceOf[imprinterRemoved]
+  
+  @js.native
+  sealed trait imprinterResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterResourceAdded: imprinterResourceAdded = "imprinterResourceAdded".asInstanceOf[imprinterResourceAdded]
+  
+  @js.native
+  sealed trait imprinterResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterResourceRemoved: imprinterResourceRemoved = "imprinterResourceRemoved".asInstanceOf[imprinterResourceRemoved]
+  
+  @js.native
+  sealed trait imprinterThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterThermistorFailure: imprinterThermistorFailure = "imprinterThermistorFailure".asInstanceOf[imprinterThermistorFailure]
+  
+  @js.native
+  sealed trait imprinterTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterTimingFailure: imprinterTimingFailure = "imprinterTimingFailure".asInstanceOf[imprinterTimingFailure]
+  
+  @js.native
+  sealed trait imprinterTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterTurnedOff: imprinterTurnedOff = "imprinterTurnedOff".asInstanceOf[imprinterTurnedOff]
+  
+  @js.native
+  sealed trait imprinterTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterTurnedOn: imprinterTurnedOn = "imprinterTurnedOn".asInstanceOf[imprinterTurnedOn]
+  
+  @js.native
+  sealed trait imprinterUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterUnderTemperature: imprinterUnderTemperature = "imprinterUnderTemperature".asInstanceOf[imprinterUnderTemperature]
+  
+  @js.native
+  sealed trait imprinterUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterUnrecoverableFailure: imprinterUnrecoverableFailure = "imprinterUnrecoverableFailure".asInstanceOf[imprinterUnrecoverableFailure]
+  
+  @js.native
+  sealed trait imprinterUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterUnrecoverableStorageError: imprinterUnrecoverableStorageError = "imprinterUnrecoverableStorageError".asInstanceOf[imprinterUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait imprinterWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def imprinterWarmingUp: imprinterWarmingUp = "imprinterWarmingUp".asInstanceOf[imprinterWarmingUp]
+  
+  @js.native
   sealed trait inGracePeriod
     extends StObject
        with ComplianceState
@@ -3037,6 +5629,7 @@ object microsoftGraphStrings {
   sealed trait inProgress
     extends StObject
        with AlertStatus
+       with DeviceManagementReportStatus
        with TaskStatus
        with TeamsAsyncOperationStatus
        with VppTokenSyncStatus
@@ -3057,6 +5650,18 @@ object microsoftGraphStrings {
   inline def inbound: inbound = "inbound".asInstanceOf[inbound]
   
   @js.native
+  sealed trait incident
+    extends StObject
+       with ServiceHealthClassificationType
+  inline def incident: incident = "incident".asInstanceOf[incident]
+  
+  @js.native
+  sealed trait include
+    extends StObject
+       with FilterMode
+  inline def include: include = "include".asInstanceOf[include]
+  
+  @js.native
   sealed trait includeCompanyLogo
     extends StObject
        with NotificationTemplateBrandingOptions
@@ -3075,11 +5680,23 @@ object microsoftGraphStrings {
   inline def includeContactInformation: includeContactInformation = "includeContactInformation".asInstanceOf[includeContactInformation]
   
   @js.native
+  sealed trait includeDeviceDetails
+    extends StObject
+       with NotificationTemplateBrandingOptions
+  inline def includeDeviceDetails: includeDeviceDetails = "includeDeviceDetails".asInstanceOf[includeDeviceDetails]
+  
+  @js.native
   sealed trait incoming
     extends StObject
        with CallDirection
        with CallState
   inline def incoming: incoming = "incoming".asInstanceOf[incoming]
+  
+  @js.native
+  sealed trait index
+    extends StObject
+       with CaseAction
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
   sealed trait informational
@@ -3092,6 +5709,337 @@ object microsoftGraphStrings {
     extends StObject
        with MeetingRequestType
   inline def informationalUpdate: informationalUpdate = "informationalUpdate".asInstanceOf[informationalUpdate]
+  
+  @js.native
+  sealed trait initial
+    extends StObject
+       with CallRecordingStatus
+  inline def initial: initial = "initial".asInstanceOf[initial]
+  
+  @js.native
+  sealed trait inprogress_
+    extends StObject
+       with AccessReviewHistoryStatus
+       with ConnectionOperationStatus
+  inline def inprogress_ : inprogress_ = "inprogress".asInstanceOf[inprogress_]
+  
+  @js.native
+  sealed trait inputCannotFeedSizeSelected
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputCannotFeedSizeSelected: inputCannotFeedSizeSelected = "inputCannotFeedSizeSelected".asInstanceOf[inputCannotFeedSizeSelected]
+  
+  @js.native
+  sealed trait inputManualInputRequest
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputManualInputRequest: inputManualInputRequest = "inputManualInputRequest".asInstanceOf[inputManualInputRequest]
+  
+  @js.native
+  sealed trait inputMediaColorChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputMediaColorChange: inputMediaColorChange = "inputMediaColorChange".asInstanceOf[inputMediaColorChange]
+  
+  @js.native
+  sealed trait inputMediaFormPartsChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputMediaFormPartsChange: inputMediaFormPartsChange = "inputMediaFormPartsChange".asInstanceOf[inputMediaFormPartsChange]
+  
+  @js.native
+  sealed trait inputMediaSizeChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputMediaSizeChange: inputMediaSizeChange = "inputMediaSizeChange".asInstanceOf[inputMediaSizeChange]
+  
+  @js.native
+  sealed trait inputMediaTrayFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputMediaTrayFailure: inputMediaTrayFailure = "inputMediaTrayFailure".asInstanceOf[inputMediaTrayFailure]
+  
+  @js.native
+  sealed trait inputMediaTrayFeedError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputMediaTrayFeedError: inputMediaTrayFeedError = "inputMediaTrayFeedError".asInstanceOf[inputMediaTrayFeedError]
+  
+  @js.native
+  sealed trait inputMediaTrayJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputMediaTrayJam: inputMediaTrayJam = "inputMediaTrayJam".asInstanceOf[inputMediaTrayJam]
+  
+  @js.native
+  sealed trait inputMediaTypeChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputMediaTypeChange: inputMediaTypeChange = "inputMediaTypeChange".asInstanceOf[inputMediaTypeChange]
+  
+  @js.native
+  sealed trait inputMediaWeightChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputMediaWeightChange: inputMediaWeightChange = "inputMediaWeightChange".asInstanceOf[inputMediaWeightChange]
+  
+  @js.native
+  sealed trait inputPickRollerFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputPickRollerFailure: inputPickRollerFailure = "inputPickRollerFailure".asInstanceOf[inputPickRollerFailure]
+  
+  @js.native
+  sealed trait inputPickRollerLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputPickRollerLifeOver: inputPickRollerLifeOver = "inputPickRollerLifeOver".asInstanceOf[inputPickRollerLifeOver]
+  
+  @js.native
+  sealed trait inputPickRollerLifeWarn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputPickRollerLifeWarn: inputPickRollerLifeWarn = "inputPickRollerLifeWarn".asInstanceOf[inputPickRollerLifeWarn]
+  
+  @js.native
+  sealed trait inputPickRollerMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputPickRollerMissing: inputPickRollerMissing = "inputPickRollerMissing".asInstanceOf[inputPickRollerMissing]
+  
+  @js.native
+  sealed trait inputTrayElevationFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputTrayElevationFailure: inputTrayElevationFailure = "inputTrayElevationFailure".asInstanceOf[inputTrayElevationFailure]
+  
+  @js.native
+  sealed trait inputTrayMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputTrayMissing: inputTrayMissing = "inputTrayMissing".asInstanceOf[inputTrayMissing]
+  
+  @js.native
+  sealed trait inputTrayPositionFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inputTrayPositionFailure: inputTrayPositionFailure = "inputTrayPositionFailure".asInstanceOf[inputTrayPositionFailure]
+  
+  @js.native
+  sealed trait inserterAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterAdded: inserterAdded = "inserterAdded".asInstanceOf[inserterAdded]
+  
+  @js.native
+  sealed trait inserterAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterAlmostEmpty: inserterAlmostEmpty = "inserterAlmostEmpty".asInstanceOf[inserterAlmostEmpty]
+  
+  @js.native
+  sealed trait inserterAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterAlmostFull: inserterAlmostFull = "inserterAlmostFull".asInstanceOf[inserterAlmostFull]
+  
+  @js.native
+  sealed trait inserterAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterAtLimit: inserterAtLimit = "inserterAtLimit".asInstanceOf[inserterAtLimit]
+  
+  @js.native
+  sealed trait inserterClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterClosed: inserterClosed = "inserterClosed".asInstanceOf[inserterClosed]
+  
+  @js.native
+  sealed trait inserterConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterConfigurationChange: inserterConfigurationChange = "inserterConfigurationChange".asInstanceOf[inserterConfigurationChange]
+  
+  @js.native
+  sealed trait inserterCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterCoverClosed: inserterCoverClosed = "inserterCoverClosed".asInstanceOf[inserterCoverClosed]
+  
+  @js.native
+  sealed trait inserterCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterCoverOpen: inserterCoverOpen = "inserterCoverOpen".asInstanceOf[inserterCoverOpen]
+  
+  @js.native
+  sealed trait inserterEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterEmpty: inserterEmpty = "inserterEmpty".asInstanceOf[inserterEmpty]
+  
+  @js.native
+  sealed trait inserterFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterFull: inserterFull = "inserterFull".asInstanceOf[inserterFull]
+  
+  @js.native
+  sealed trait inserterInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterInterlockClosed: inserterInterlockClosed = "inserterInterlockClosed".asInstanceOf[inserterInterlockClosed]
+  
+  @js.native
+  sealed trait inserterInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterInterlockOpen: inserterInterlockOpen = "inserterInterlockOpen".asInstanceOf[inserterInterlockOpen]
+  
+  @js.native
+  sealed trait inserterJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterJam: inserterJam = "inserterJam".asInstanceOf[inserterJam]
+  
+  @js.native
+  sealed trait inserterLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterLifeAlmostOver: inserterLifeAlmostOver = "inserterLifeAlmostOver".asInstanceOf[inserterLifeAlmostOver]
+  
+  @js.native
+  sealed trait inserterLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterLifeOver: inserterLifeOver = "inserterLifeOver".asInstanceOf[inserterLifeOver]
+  
+  @js.native
+  sealed trait inserterMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterMemoryExhausted: inserterMemoryExhausted = "inserterMemoryExhausted".asInstanceOf[inserterMemoryExhausted]
+  
+  @js.native
+  sealed trait inserterMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterMissing: inserterMissing = "inserterMissing".asInstanceOf[inserterMissing]
+  
+  @js.native
+  sealed trait inserterMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterMotorFailure: inserterMotorFailure = "inserterMotorFailure".asInstanceOf[inserterMotorFailure]
+  
+  @js.native
+  sealed trait inserterNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterNearLimit: inserterNearLimit = "inserterNearLimit".asInstanceOf[inserterNearLimit]
+  
+  @js.native
+  sealed trait inserterOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterOffline: inserterOffline = "inserterOffline".asInstanceOf[inserterOffline]
+  
+  @js.native
+  sealed trait inserterOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterOpened: inserterOpened = "inserterOpened".asInstanceOf[inserterOpened]
+  
+  @js.native
+  sealed trait inserterOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterOverTemperature: inserterOverTemperature = "inserterOverTemperature".asInstanceOf[inserterOverTemperature]
+  
+  @js.native
+  sealed trait inserterPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterPowerSaver: inserterPowerSaver = "inserterPowerSaver".asInstanceOf[inserterPowerSaver]
+  
+  @js.native
+  sealed trait inserterRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterRecoverableFailure: inserterRecoverableFailure = "inserterRecoverableFailure".asInstanceOf[inserterRecoverableFailure]
+  
+  @js.native
+  sealed trait inserterRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterRecoverableStorage: inserterRecoverableStorage = "inserterRecoverableStorage".asInstanceOf[inserterRecoverableStorage]
+  
+  @js.native
+  sealed trait inserterRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterRemoved: inserterRemoved = "inserterRemoved".asInstanceOf[inserterRemoved]
+  
+  @js.native
+  sealed trait inserterResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterResourceAdded: inserterResourceAdded = "inserterResourceAdded".asInstanceOf[inserterResourceAdded]
+  
+  @js.native
+  sealed trait inserterResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterResourceRemoved: inserterResourceRemoved = "inserterResourceRemoved".asInstanceOf[inserterResourceRemoved]
+  
+  @js.native
+  sealed trait inserterThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterThermistorFailure: inserterThermistorFailure = "inserterThermistorFailure".asInstanceOf[inserterThermistorFailure]
+  
+  @js.native
+  sealed trait inserterTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterTimingFailure: inserterTimingFailure = "inserterTimingFailure".asInstanceOf[inserterTimingFailure]
+  
+  @js.native
+  sealed trait inserterTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterTurnedOff: inserterTurnedOff = "inserterTurnedOff".asInstanceOf[inserterTurnedOff]
+  
+  @js.native
+  sealed trait inserterTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterTurnedOn: inserterTurnedOn = "inserterTurnedOn".asInstanceOf[inserterTurnedOn]
+  
+  @js.native
+  sealed trait inserterUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterUnderTemperature: inserterUnderTemperature = "inserterUnderTemperature".asInstanceOf[inserterUnderTemperature]
+  
+  @js.native
+  sealed trait inserterUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterUnrecoverableFailure: inserterUnrecoverableFailure = "inserterUnrecoverableFailure".asInstanceOf[inserterUnrecoverableFailure]
+  
+  @js.native
+  sealed trait inserterUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterUnrecoverableStorageError: inserterUnrecoverableStorageError = "inserterUnrecoverableStorageError".asInstanceOf[inserterUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait inserterWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def inserterWarmingUp: inserterWarmingUp = "inserterWarmingUp".asInstanceOf[inserterWarmingUp]
   
   @js.native
   sealed trait installFailed
@@ -3130,6 +6078,25 @@ object microsoftGraphStrings {
   inline def installing: installing = "installing".asInstanceOf[installing]
   
   @js.native
+  sealed trait insufficientData
+    extends StObject
+       with UserExperienceAnalyticsHealthState
+  inline def insufficientData: insufficientData = "insufficientData".asInstanceOf[insufficientData]
+  
+  @js.native
+  sealed trait int64
+    extends StObject
+       with IdentityUserFlowAttributeDataType
+       with PropertyType
+  inline def int64: int64 = "int64".asInstanceOf[int64]
+  
+  @js.native
+  sealed trait int64Collection
+    extends StObject
+       with PropertyType
+  inline def int64Collection: int64Collection = "int64Collection".asInstanceOf[int64Collection]
+  
+  @js.native
   sealed trait integer
     extends StObject
        with Win32LobAppPowerShellScriptRuleOperationType
@@ -3149,10 +6116,76 @@ object microsoftGraphStrings {
   inline def interactive: interactive = "interactive".asInstanceOf[interactive]
   
   @js.native
+  sealed trait interlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interlockClosed: interlockClosed = "interlockClosed".asInstanceOf[interlockClosed]
+  
+  @js.native
+  sealed trait interlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interlockOpen: interlockOpen = "interlockOpen".asInstanceOf[interlockOpen]
+  
+  @js.native
   sealed trait internal
     extends StObject
        with RecipientScopeType
   inline def internal: internal = "internal".asInstanceOf[internal]
+  
+  @js.native
+  sealed trait interpreterCartridgeAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interpreterCartridgeAdded: interpreterCartridgeAdded = "interpreterCartridgeAdded".asInstanceOf[interpreterCartridgeAdded]
+  
+  @js.native
+  sealed trait interpreterCartridgeDeleted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interpreterCartridgeDeleted: interpreterCartridgeDeleted = "interpreterCartridgeDeleted".asInstanceOf[interpreterCartridgeDeleted]
+  
+  @js.native
+  sealed trait interpreterComplexPageEncountered
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interpreterComplexPageEncountered: interpreterComplexPageEncountered = "interpreterComplexPageEncountered".asInstanceOf[interpreterComplexPageEncountered]
+  
+  @js.native
+  sealed trait interpreterMemoryDecrease
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interpreterMemoryDecrease: interpreterMemoryDecrease = "interpreterMemoryDecrease".asInstanceOf[interpreterMemoryDecrease]
+  
+  @js.native
+  sealed trait interpreterMemoryIncrease
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interpreterMemoryIncrease: interpreterMemoryIncrease = "interpreterMemoryIncrease".asInstanceOf[interpreterMemoryIncrease]
+  
+  @js.native
+  sealed trait interpreterResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interpreterResourceAdded: interpreterResourceAdded = "interpreterResourceAdded".asInstanceOf[interpreterResourceAdded]
+  
+  @js.native
+  sealed trait interpreterResourceDeleted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interpreterResourceDeleted: interpreterResourceDeleted = "interpreterResourceDeleted".asInstanceOf[interpreterResourceDeleted]
+  
+  @js.native
+  sealed trait interpreterResourceUnavailable
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def interpreterResourceUnavailable: interpreterResourceUnavailable = "interpreterResourceUnavailable".asInstanceOf[interpreterResourceUnavailable]
+  
+  @js.native
+  sealed trait interpreting
+    extends StObject
+       with PrintJobStateDetail
+  inline def interpreting: interpreting = "interpreting".asInstanceOf[interpreting]
   
   @js.native
   sealed trait intune
@@ -3169,10 +6202,24 @@ object microsoftGraphStrings {
   @js.native
   sealed trait invalid
     extends StObject
+       with AudioCodec
        with TeamsAsyncOperationStatus
        with TeamsAsyncOperationType
+       with VideoCodec
        with VppTokenState
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
+  
+  @js.native
+  sealed trait investigating
+    extends StObject
+       with ServiceHealthStatus
+  inline def investigating: investigating = "investigating".asInstanceOf[investigating]
+  
+  @js.native
+  sealed trait investigationSuspended
+    extends StObject
+       with ServiceHealthStatus
+  inline def investigationSuspended: investigationSuspended = "investigationSuspended".asInstanceOf[investigationSuspended]
   
   @js.native
   sealed trait investigationsThreatIntelligence
@@ -3185,6 +6232,12 @@ object microsoftGraphStrings {
     extends StObject
        with RiskEventType
   inline def investigationsThreatIntelligenceSigninLinked: investigationsThreatIntelligenceSigninLinked = "investigationsThreatIntelligenceSigninLinked".asInstanceOf[investigationsThreatIntelligenceSigninLinked]
+  
+  @js.native
+  sealed trait invited
+    extends StObject
+       with LobbyBypassScope
+  inline def invited: invited = "invited".asInstanceOf[invited]
   
   @js.native
   sealed trait ip
@@ -3265,6 +6318,12 @@ object microsoftGraphStrings {
   inline def jamf: jamf = "jamf".asInstanceOf[jamf]
   
   @js.native
+  sealed trait jobStarted
+    extends StObject
+       with PrintEvent
+  inline def jobStarted: jobStarted = "jobStarted".asInstanceOf[jobStarted]
+  
+  @js.native
   sealed trait junk
     extends StObject
        with MailDestinationRoutingReason
@@ -3277,16 +6336,88 @@ object microsoftGraphStrings {
   inline def juryDuty: juryDuty = "juryDuty".asInstanceOf[juryDuty]
   
   @js.native
+  sealed trait keepAccess
+    extends StObject
+       with AccessReviewExpirationBehavior
+  inline def keepAccess: keepAccess = "keepAccess".asInstanceOf[keepAccess]
+  
+  @js.native
+  sealed trait keyAsNumber
+    extends StObject
+       with BucketAggregationSortProperty
+  inline def keyAsNumber: keyAsNumber = "keyAsNumber".asInstanceOf[keyAsNumber]
+  
+  @js.native
+  sealed trait keyAsString
+    extends StObject
+       with BucketAggregationSortProperty
+  inline def keyAsString: keyAsString = "keyAsString".asInstanceOf[keyAsString]
+  
+  @js.native
   sealed trait keyConflict
     extends StObject
        with DeviceRegistrationState
   inline def keyConflict: keyConflict = "keyConflict".asInstanceOf[keyConflict]
   
   @js.native
+  sealed trait lampAtEol
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def lampAtEol: lampAtEol = "lampAtEol".asInstanceOf[lampAtEol]
+  
+  @js.native
+  sealed trait lampFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def lampFailure: lampFailure = "lampFailure".asInstanceOf[lampFailure]
+  
+  @js.native
+  sealed trait lampNearEol
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def lampNearEol: lampNearEol = "lampNearEol".asInstanceOf[lampNearEol]
+  
+  @js.native
+  sealed trait landscape
+    extends StObject
+       with PrintOrientation
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @js.native
+  sealed trait laserAtEol
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def laserAtEol: laserAtEol = "laserAtEol".asInstanceOf[laserAtEol]
+  
+  @js.native
+  sealed trait laserFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def laserFailure: laserFailure = "laserFailure".asInstanceOf[laserFailure]
+  
+  @js.native
+  sealed trait laserNearEol
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def laserNearEol: laserNearEol = "laserNearEol".asInstanceOf[laserNearEol]
+  
+  @js.native
   sealed trait last
     extends StObject
        with WeekIndex
   inline def last: last = "last".asInstanceOf[last]
+  
+  @js.native
+  sealed trait lastModifiedBy
+    extends StObject
+       with Label
+  inline def lastModifiedBy: lastModifiedBy = "lastModifiedBy".asInstanceOf[lastModifiedBy]
+  
+  @js.native
+  sealed trait lastModifiedDateTime
+    extends StObject
+       with Label
+  inline def lastModifiedDateTime: lastModifiedDateTime = "lastModifiedDateTime".asInstanceOf[lastModifiedDateTime]
   
   @js.native
   sealed trait leakedCredentials
@@ -3367,6 +6498,18 @@ object microsoftGraphStrings {
   inline def lightYellow: lightYellow = "lightYellow".asInstanceOf[lightYellow]
   
   @js.native
+  sealed trait limitExceeded
+    extends StObject
+       with ConnectionState
+  inline def limitExceeded: limitExceeded = "limitExceeded".asInstanceOf[limitExceeded]
+  
+  @js.native
+  sealed trait limited
+    extends StObject
+       with MeetingChatMode
+  inline def limited: limited = "limited".asInstanceOf[limited]
+  
+  @js.native
   sealed trait limitedRead
     extends StObject
        with CalendarRoleType
@@ -3383,6 +6526,24 @@ object microsoftGraphStrings {
     extends StObject
        with RegistryValueType
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait linked
+    extends StObject
+       with UserPurpose
+  inline def linked: linked = "linked".asInstanceOf[linked]
+  
+  @js.native
+  sealed trait linkedFiles
+    extends StObject
+       with AdditionalDataOptions
+  inline def linkedFiles: linkedFiles = "linkedFiles".asInstanceOf[linkedFiles]
+  
+  @js.native
+  sealed trait linux
+    extends StObject
+       with ConditionalAccessDevicePlatform
+  inline def linux: linux = "linux".asInstanceOf[linux]
   
   @js.native
   sealed trait list
@@ -3433,6 +6594,18 @@ object microsoftGraphStrings {
   inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
+  sealed trait localizedValuesAsAdditionalColumn
+    extends StObject
+       with DeviceManagementExportJobLocalizationType
+  inline def localizedValuesAsAdditionalColumn: localizedValuesAsAdditionalColumn = "localizedValuesAsAdditionalColumn".asInstanceOf[localizedValuesAsAdditionalColumn]
+  
+  @js.native
+  sealed trait location
+    extends StObject
+       with ColumnTypes
+  inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
   sealed trait locationStore
     extends StObject
        with LocationUniqueIdType
@@ -3445,8 +6618,15 @@ object microsoftGraphStrings {
   inline def lockedOut: lockedOut = "lockedOut".asInstanceOf[lockedOut]
   
   @js.native
+  sealed trait longEdgeFirst
+    extends StObject
+       with PrinterFeedOrientation
+  inline def longEdgeFirst: longEdgeFirst = "longEdgeFirst".asInstanceOf[longEdgeFirst]
+  
+  @js.native
   sealed trait lookup
     extends StObject
+       with ColumnTypes
        with RoutingType
   inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
@@ -3457,6 +6637,7 @@ object microsoftGraphStrings {
        with DeviceThreatProtectionLevel
        with Importance
        with PermissionClassificationType
+       with PrintQuality
        with ProcessIntegrityLevel
        with RiskLevel
        with SiteSecurityLevel
@@ -3508,10 +6689,232 @@ object microsoftGraphStrings {
   inline def mailFlowRule: mailFlowRule = "mailFlowRule".asInstanceOf[mailFlowRule]
   
   @js.native
+  sealed trait mailbox
+    extends StObject
+       with SourceType
+  inline def mailbox: mailbox = "mailbox".asInstanceOf[mailbox]
+  
+  @js.native
   sealed trait mailboxFullStatus
     extends StObject
        with MailTipsType
   inline def mailboxFullStatus: mailboxFullStatus = "mailboxFullStatus".asInstanceOf[mailboxFullStatus]
+  
+  @js.native
+  sealed trait makeEnvelopeAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeAdded: makeEnvelopeAdded = "makeEnvelopeAdded".asInstanceOf[makeEnvelopeAdded]
+  
+  @js.native
+  sealed trait makeEnvelopeAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeAlmostEmpty: makeEnvelopeAlmostEmpty = "makeEnvelopeAlmostEmpty".asInstanceOf[makeEnvelopeAlmostEmpty]
+  
+  @js.native
+  sealed trait makeEnvelopeAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeAlmostFull: makeEnvelopeAlmostFull = "makeEnvelopeAlmostFull".asInstanceOf[makeEnvelopeAlmostFull]
+  
+  @js.native
+  sealed trait makeEnvelopeAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeAtLimit: makeEnvelopeAtLimit = "makeEnvelopeAtLimit".asInstanceOf[makeEnvelopeAtLimit]
+  
+  @js.native
+  sealed trait makeEnvelopeClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeClosed: makeEnvelopeClosed = "makeEnvelopeClosed".asInstanceOf[makeEnvelopeClosed]
+  
+  @js.native
+  sealed trait makeEnvelopeConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeConfigurationChange: makeEnvelopeConfigurationChange = "makeEnvelopeConfigurationChange".asInstanceOf[makeEnvelopeConfigurationChange]
+  
+  @js.native
+  sealed trait makeEnvelopeCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeCoverClosed: makeEnvelopeCoverClosed = "makeEnvelopeCoverClosed".asInstanceOf[makeEnvelopeCoverClosed]
+  
+  @js.native
+  sealed trait makeEnvelopeCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeCoverOpen: makeEnvelopeCoverOpen = "makeEnvelopeCoverOpen".asInstanceOf[makeEnvelopeCoverOpen]
+  
+  @js.native
+  sealed trait makeEnvelopeEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeEmpty: makeEnvelopeEmpty = "makeEnvelopeEmpty".asInstanceOf[makeEnvelopeEmpty]
+  
+  @js.native
+  sealed trait makeEnvelopeFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeFull: makeEnvelopeFull = "makeEnvelopeFull".asInstanceOf[makeEnvelopeFull]
+  
+  @js.native
+  sealed trait makeEnvelopeInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeInterlockClosed: makeEnvelopeInterlockClosed = "makeEnvelopeInterlockClosed".asInstanceOf[makeEnvelopeInterlockClosed]
+  
+  @js.native
+  sealed trait makeEnvelopeInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeInterlockOpen: makeEnvelopeInterlockOpen = "makeEnvelopeInterlockOpen".asInstanceOf[makeEnvelopeInterlockOpen]
+  
+  @js.native
+  sealed trait makeEnvelopeJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeJam: makeEnvelopeJam = "makeEnvelopeJam".asInstanceOf[makeEnvelopeJam]
+  
+  @js.native
+  sealed trait makeEnvelopeLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeLifeAlmostOver: makeEnvelopeLifeAlmostOver = "makeEnvelopeLifeAlmostOver".asInstanceOf[makeEnvelopeLifeAlmostOver]
+  
+  @js.native
+  sealed trait makeEnvelopeLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeLifeOver: makeEnvelopeLifeOver = "makeEnvelopeLifeOver".asInstanceOf[makeEnvelopeLifeOver]
+  
+  @js.native
+  sealed trait makeEnvelopeMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeMemoryExhausted: makeEnvelopeMemoryExhausted = "makeEnvelopeMemoryExhausted".asInstanceOf[makeEnvelopeMemoryExhausted]
+  
+  @js.native
+  sealed trait makeEnvelopeMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeMissing: makeEnvelopeMissing = "makeEnvelopeMissing".asInstanceOf[makeEnvelopeMissing]
+  
+  @js.native
+  sealed trait makeEnvelopeMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeMotorFailure: makeEnvelopeMotorFailure = "makeEnvelopeMotorFailure".asInstanceOf[makeEnvelopeMotorFailure]
+  
+  @js.native
+  sealed trait makeEnvelopeNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeNearLimit: makeEnvelopeNearLimit = "makeEnvelopeNearLimit".asInstanceOf[makeEnvelopeNearLimit]
+  
+  @js.native
+  sealed trait makeEnvelopeOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeOffline: makeEnvelopeOffline = "makeEnvelopeOffline".asInstanceOf[makeEnvelopeOffline]
+  
+  @js.native
+  sealed trait makeEnvelopeOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeOpened: makeEnvelopeOpened = "makeEnvelopeOpened".asInstanceOf[makeEnvelopeOpened]
+  
+  @js.native
+  sealed trait makeEnvelopeOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeOverTemperature: makeEnvelopeOverTemperature = "makeEnvelopeOverTemperature".asInstanceOf[makeEnvelopeOverTemperature]
+  
+  @js.native
+  sealed trait makeEnvelopePowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopePowerSaver: makeEnvelopePowerSaver = "makeEnvelopePowerSaver".asInstanceOf[makeEnvelopePowerSaver]
+  
+  @js.native
+  sealed trait makeEnvelopeRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeRecoverableFailure: makeEnvelopeRecoverableFailure = "makeEnvelopeRecoverableFailure".asInstanceOf[makeEnvelopeRecoverableFailure]
+  
+  @js.native
+  sealed trait makeEnvelopeRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeRecoverableStorage: makeEnvelopeRecoverableStorage = "makeEnvelopeRecoverableStorage".asInstanceOf[makeEnvelopeRecoverableStorage]
+  
+  @js.native
+  sealed trait makeEnvelopeRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeRemoved: makeEnvelopeRemoved = "makeEnvelopeRemoved".asInstanceOf[makeEnvelopeRemoved]
+  
+  @js.native
+  sealed trait makeEnvelopeResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeResourceAdded: makeEnvelopeResourceAdded = "makeEnvelopeResourceAdded".asInstanceOf[makeEnvelopeResourceAdded]
+  
+  @js.native
+  sealed trait makeEnvelopeResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeResourceRemoved: makeEnvelopeResourceRemoved = "makeEnvelopeResourceRemoved".asInstanceOf[makeEnvelopeResourceRemoved]
+  
+  @js.native
+  sealed trait makeEnvelopeThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeThermistorFailure: makeEnvelopeThermistorFailure = "makeEnvelopeThermistorFailure".asInstanceOf[makeEnvelopeThermistorFailure]
+  
+  @js.native
+  sealed trait makeEnvelopeTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeTimingFailure: makeEnvelopeTimingFailure = "makeEnvelopeTimingFailure".asInstanceOf[makeEnvelopeTimingFailure]
+  
+  @js.native
+  sealed trait makeEnvelopeTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeTurnedOff: makeEnvelopeTurnedOff = "makeEnvelopeTurnedOff".asInstanceOf[makeEnvelopeTurnedOff]
+  
+  @js.native
+  sealed trait makeEnvelopeTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeTurnedOn: makeEnvelopeTurnedOn = "makeEnvelopeTurnedOn".asInstanceOf[makeEnvelopeTurnedOn]
+  
+  @js.native
+  sealed trait makeEnvelopeUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeUnderTemperature: makeEnvelopeUnderTemperature = "makeEnvelopeUnderTemperature".asInstanceOf[makeEnvelopeUnderTemperature]
+  
+  @js.native
+  sealed trait makeEnvelopeUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeUnrecoverableFailure: makeEnvelopeUnrecoverableFailure = "makeEnvelopeUnrecoverableFailure".asInstanceOf[makeEnvelopeUnrecoverableFailure]
+  
+  @js.native
+  sealed trait makeEnvelopeUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeUnrecoverableStorageError: makeEnvelopeUnrecoverableStorageError = "makeEnvelopeUnrecoverableStorageError".asInstanceOf[makeEnvelopeUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait makeEnvelopeWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def makeEnvelopeWarmingUp: makeEnvelopeWarmingUp = "makeEnvelopeWarmingUp".asInstanceOf[makeEnvelopeWarmingUp]
   
   @js.native
   sealed trait male
@@ -3567,6 +6970,210 @@ object microsoftGraphStrings {
     extends StObject
        with EducationExternalSource
   inline def manual: manual = "manual".asInstanceOf[manual]
+  
+  @js.native
+  sealed trait markerAdjustingPrintQuality
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerAdjustingPrintQuality: markerAdjustingPrintQuality = "markerAdjustingPrintQuality".asInstanceOf[markerAdjustingPrintQuality]
+  
+  @js.native
+  sealed trait markerCleanerMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerCleanerMissing: markerCleanerMissing = "markerCleanerMissing".asInstanceOf[markerCleanerMissing]
+  
+  @js.native
+  sealed trait markerDeveloperAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerDeveloperAlmostEmpty: markerDeveloperAlmostEmpty = "markerDeveloperAlmostEmpty".asInstanceOf[markerDeveloperAlmostEmpty]
+  
+  @js.native
+  sealed trait markerDeveloperEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerDeveloperEmpty: markerDeveloperEmpty = "markerDeveloperEmpty".asInstanceOf[markerDeveloperEmpty]
+  
+  @js.native
+  sealed trait markerDeveloperMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerDeveloperMissing: markerDeveloperMissing = "markerDeveloperMissing".asInstanceOf[markerDeveloperMissing]
+  
+  @js.native
+  sealed trait markerFuserMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerFuserMissing: markerFuserMissing = "markerFuserMissing".asInstanceOf[markerFuserMissing]
+  
+  @js.native
+  sealed trait markerFuserThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerFuserThermistorFailure: markerFuserThermistorFailure = "markerFuserThermistorFailure".asInstanceOf[markerFuserThermistorFailure]
+  
+  @js.native
+  sealed trait markerFuserTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerFuserTimingFailure: markerFuserTimingFailure = "markerFuserTimingFailure".asInstanceOf[markerFuserTimingFailure]
+  
+  @js.native
+  sealed trait markerInkAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerInkAlmostEmpty: markerInkAlmostEmpty = "markerInkAlmostEmpty".asInstanceOf[markerInkAlmostEmpty]
+  
+  @js.native
+  sealed trait markerInkEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerInkEmpty: markerInkEmpty = "markerInkEmpty".asInstanceOf[markerInkEmpty]
+  
+  @js.native
+  sealed trait markerInkMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerInkMissing: markerInkMissing = "markerInkMissing".asInstanceOf[markerInkMissing]
+  
+  @js.native
+  sealed trait markerOpcMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerOpcMissing: markerOpcMissing = "markerOpcMissing".asInstanceOf[markerOpcMissing]
+  
+  @js.native
+  sealed trait markerPrintRibbonAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerPrintRibbonAlmostEmpty: markerPrintRibbonAlmostEmpty = "markerPrintRibbonAlmostEmpty".asInstanceOf[markerPrintRibbonAlmostEmpty]
+  
+  @js.native
+  sealed trait markerPrintRibbonEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerPrintRibbonEmpty: markerPrintRibbonEmpty = "markerPrintRibbonEmpty".asInstanceOf[markerPrintRibbonEmpty]
+  
+  @js.native
+  sealed trait markerPrintRibbonMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerPrintRibbonMissing: markerPrintRibbonMissing = "markerPrintRibbonMissing".asInstanceOf[markerPrintRibbonMissing]
+  
+  @js.native
+  sealed trait markerSupplyAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerSupplyAlmostEmpty: markerSupplyAlmostEmpty = "markerSupplyAlmostEmpty".asInstanceOf[markerSupplyAlmostEmpty]
+  
+  @js.native
+  sealed trait markerSupplyEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerSupplyEmpty: markerSupplyEmpty = "markerSupplyEmpty".asInstanceOf[markerSupplyEmpty]
+  
+  @js.native
+  sealed trait markerSupplyLow
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerSupplyLow: markerSupplyLow = "markerSupplyLow".asInstanceOf[markerSupplyLow]
+  
+  @js.native
+  sealed trait markerSupplyMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerSupplyMissing: markerSupplyMissing = "markerSupplyMissing".asInstanceOf[markerSupplyMissing]
+  
+  @js.native
+  sealed trait markerTonerCartridgeMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerTonerCartridgeMissing: markerTonerCartridgeMissing = "markerTonerCartridgeMissing".asInstanceOf[markerTonerCartridgeMissing]
+  
+  @js.native
+  sealed trait markerTonerMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerTonerMissing: markerTonerMissing = "markerTonerMissing".asInstanceOf[markerTonerMissing]
+  
+  @js.native
+  sealed trait markerWasteAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteAlmostFull: markerWasteAlmostFull = "markerWasteAlmostFull".asInstanceOf[markerWasteAlmostFull]
+  
+  @js.native
+  sealed trait markerWasteFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteFull: markerWasteFull = "markerWasteFull".asInstanceOf[markerWasteFull]
+  
+  @js.native
+  sealed trait markerWasteInkReceptacleAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteInkReceptacleAlmostFull: markerWasteInkReceptacleAlmostFull = "markerWasteInkReceptacleAlmostFull".asInstanceOf[markerWasteInkReceptacleAlmostFull]
+  
+  @js.native
+  sealed trait markerWasteInkReceptacleFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteInkReceptacleFull: markerWasteInkReceptacleFull = "markerWasteInkReceptacleFull".asInstanceOf[markerWasteInkReceptacleFull]
+  
+  @js.native
+  sealed trait markerWasteInkReceptacleMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteInkReceptacleMissing: markerWasteInkReceptacleMissing = "markerWasteInkReceptacleMissing".asInstanceOf[markerWasteInkReceptacleMissing]
+  
+  @js.native
+  sealed trait markerWasteMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteMissing: markerWasteMissing = "markerWasteMissing".asInstanceOf[markerWasteMissing]
+  
+  @js.native
+  sealed trait markerWasteTonerReceptacleAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteTonerReceptacleAlmostFull: markerWasteTonerReceptacleAlmostFull = "markerWasteTonerReceptacleAlmostFull".asInstanceOf[markerWasteTonerReceptacleAlmostFull]
+  
+  @js.native
+  sealed trait markerWasteTonerReceptacleFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteTonerReceptacleFull: markerWasteTonerReceptacleFull = "markerWasteTonerReceptacleFull".asInstanceOf[markerWasteTonerReceptacleFull]
+  
+  @js.native
+  sealed trait markerWasteTonerReceptacleMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def markerWasteTonerReceptacleMissing: markerWasteTonerReceptacleMissing = "markerWasteTonerReceptacleMissing".asInstanceOf[markerWasteTonerReceptacleMissing]
+  
+  @js.native
+  sealed trait matching
+    extends StObject
+       with ProvisioningStepType
+  inline def matching: matching = "matching".asInstanceOf[matching]
+  
+  @js.native
+  sealed trait materialEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def materialEmpty: materialEmpty = "materialEmpty".asInstanceOf[materialEmpty]
+  
+  @js.native
+  sealed trait materialLow
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def materialLow: materialLow = "materialLow".asInstanceOf[materialLow]
+  
+  @js.native
+  sealed trait materialNeeded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def materialNeeded: materialNeeded = "materialNeeded".asInstanceOf[materialNeeded]
   
   @js.native
   sealed trait mature
@@ -3626,6 +7233,138 @@ object microsoftGraphStrings {
   inline def mediaController: mediaController = "mediaController".asInstanceOf[mediaController]
   
   @js.native
+  sealed trait mediaDrying
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaDrying: mediaDrying = "mediaDrying".asInstanceOf[mediaDrying]
+  
+  @js.native
+  sealed trait mediaEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaEmpty: mediaEmpty = "mediaEmpty".asInstanceOf[mediaEmpty]
+  
+  @js.native
+  sealed trait mediaJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaJam: mediaJam = "mediaJam".asInstanceOf[mediaJam]
+  
+  @js.native
+  sealed trait mediaLow
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaLow: mediaLow = "mediaLow".asInstanceOf[mediaLow]
+  
+  @js.native
+  sealed trait mediaNeeded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaNeeded: mediaNeeded = "mediaNeeded".asInstanceOf[mediaNeeded]
+  
+  @js.native
+  sealed trait mediaPathCannotDuplexMediaSelected
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathCannotDuplexMediaSelected: mediaPathCannotDuplexMediaSelected = "mediaPathCannotDuplexMediaSelected".asInstanceOf[mediaPathCannotDuplexMediaSelected]
+  
+  @js.native
+  sealed trait mediaPathFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathFailure: mediaPathFailure = "mediaPathFailure".asInstanceOf[mediaPathFailure]
+  
+  @js.native
+  sealed trait mediaPathInputEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathInputEmpty: mediaPathInputEmpty = "mediaPathInputEmpty".asInstanceOf[mediaPathInputEmpty]
+  
+  @js.native
+  sealed trait mediaPathInputFeedError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathInputFeedError: mediaPathInputFeedError = "mediaPathInputFeedError".asInstanceOf[mediaPathInputFeedError]
+  
+  @js.native
+  sealed trait mediaPathInputJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathInputJam: mediaPathInputJam = "mediaPathInputJam".asInstanceOf[mediaPathInputJam]
+  
+  @js.native
+  sealed trait mediaPathInputRequest
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathInputRequest: mediaPathInputRequest = "mediaPathInputRequest".asInstanceOf[mediaPathInputRequest]
+  
+  @js.native
+  sealed trait mediaPathJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathJam: mediaPathJam = "mediaPathJam".asInstanceOf[mediaPathJam]
+  
+  @js.native
+  sealed trait mediaPathMediaTrayAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathMediaTrayAlmostFull: mediaPathMediaTrayAlmostFull = "mediaPathMediaTrayAlmostFull".asInstanceOf[mediaPathMediaTrayAlmostFull]
+  
+  @js.native
+  sealed trait mediaPathMediaTrayFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathMediaTrayFull: mediaPathMediaTrayFull = "mediaPathMediaTrayFull".asInstanceOf[mediaPathMediaTrayFull]
+  
+  @js.native
+  sealed trait mediaPathMediaTrayMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathMediaTrayMissing: mediaPathMediaTrayMissing = "mediaPathMediaTrayMissing".asInstanceOf[mediaPathMediaTrayMissing]
+  
+  @js.native
+  sealed trait mediaPathOutputFeedError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathOutputFeedError: mediaPathOutputFeedError = "mediaPathOutputFeedError".asInstanceOf[mediaPathOutputFeedError]
+  
+  @js.native
+  sealed trait mediaPathOutputFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathOutputFull: mediaPathOutputFull = "mediaPathOutputFull".asInstanceOf[mediaPathOutputFull]
+  
+  @js.native
+  sealed trait mediaPathOutputJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathOutputJam: mediaPathOutputJam = "mediaPathOutputJam".asInstanceOf[mediaPathOutputJam]
+  
+  @js.native
+  sealed trait mediaPathPickRollerFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathPickRollerFailure: mediaPathPickRollerFailure = "mediaPathPickRollerFailure".asInstanceOf[mediaPathPickRollerFailure]
+  
+  @js.native
+  sealed trait mediaPathPickRollerLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathPickRollerLifeOver: mediaPathPickRollerLifeOver = "mediaPathPickRollerLifeOver".asInstanceOf[mediaPathPickRollerLifeOver]
+  
+  @js.native
+  sealed trait mediaPathPickRollerLifeWarn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathPickRollerLifeWarn: mediaPathPickRollerLifeWarn = "mediaPathPickRollerLifeWarn".asInstanceOf[mediaPathPickRollerLifeWarn]
+  
+  @js.native
+  sealed trait mediaPathPickRollerMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def mediaPathPickRollerMissing: mediaPathPickRollerMissing = "mediaPathPickRollerMissing".asInstanceOf[mediaPathPickRollerMissing]
+  
+  @js.native
   sealed trait mediationServer
     extends StObject
        with ServiceRole
@@ -3644,6 +7383,7 @@ object microsoftGraphStrings {
        with DeviceThreatProtectionLevel
        with InternetSiteSecurityLevel
        with PermissionClassificationType
+       with PrintQuality
        with ProcessIntegrityLevel
        with RiskLevel
        with SiteSecurityLevel
@@ -3669,6 +7409,13 @@ object microsoftGraphStrings {
   inline def mediumSeverity: mediumSeverity = "mediumSeverity".asInstanceOf[mediumSeverity]
   
   @js.native
+  sealed trait meeting
+    extends StObject
+       with ChatType
+       with TeamworkCallEventType
+  inline def meeting: meeting = "meeting".asInstanceOf[meeting]
+  
+  @js.native
   sealed trait meetingAccepted
     extends StObject
        with MeetingMessageType
@@ -3685,6 +7432,12 @@ object microsoftGraphStrings {
     extends StObject
        with MeetingMessageType
   inline def meetingDeclined: meetingDeclined = "meetingDeclined".asInstanceOf[meetingDeclined]
+  
+  @js.native
+  sealed trait meetingGoals
+    extends StObject
+       with UserExperienceAnalyticsHealthState
+  inline def meetingGoals: meetingGoals = "meetingGoals".asInstanceOf[meetingGoals]
   
   @js.native
   sealed trait meetingRequest
@@ -3724,6 +7477,19 @@ object microsoftGraphStrings {
   inline def mfaRequired: mfaRequired = "mfaRequired".asInstanceOf[mfaRequired]
   
   @js.native
+  sealed trait microsoft
+    extends StObject
+       with PstnCallDurationSource
+       with ServiceHealthOrigin
+  inline def microsoft: microsoft = "microsoft".asInstanceOf[microsoft]
+  
+  @js.native
+  sealed trait microsoft365ManagedMdm
+    extends StObject
+       with ManagementAgentType
+  inline def microsoft365ManagedMdm: microsoft365ManagedMdm = "microsoft365ManagedMdm".asInstanceOf[microsoft365ManagedMdm]
+  
+  @js.native
   sealed trait microsoftEdge
     extends StObject
        with ManagedBrowserType
@@ -3748,8 +7514,21 @@ object microsoftGraphStrings {
   inline def missed: missed = "missed".asInstanceOf[missed]
   
   @js.native
+  sealed trait mitigated
+    extends StObject
+       with ServiceHealthStatus
+  inline def mitigated: mitigated = "mitigated".asInstanceOf[mitigated]
+  
+  @js.native
+  sealed trait mitigatedExternal
+    extends StObject
+       with ServiceHealthStatus
+  inline def mitigatedExternal: mitigatedExternal = "mitigatedExternal".asInstanceOf[mitigatedExternal]
+  
+  @js.native
   sealed trait mobile
     extends StObject
+       with AuthenticationPhoneType
        with NetworkConnectionType
        with PhoneType
        with WindowsDeviceType
@@ -3779,6 +7558,12 @@ object microsoftGraphStrings {
     extends StObject
        with MailTipsType
   inline def moderationStatus: moderationStatus = "moderationStatus".asInstanceOf[moderationStatus]
+  
+  @js.native
+  sealed trait modification
+    extends StObject
+       with SearchAlterationType
+  inline def modification: modification = "modification".asInstanceOf[modification]
   
   @js.native
   sealed trait modifiedDate
@@ -3824,6 +7609,42 @@ object microsoftGraphStrings {
   inline def monitorOutgoingFilesOnly: monitorOutgoingFilesOnly = "monitorOutgoingFilesOnly".asInstanceOf[monitorOutgoingFilesOnly]
   
   @js.native
+  sealed trait motorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def motorFailure: motorFailure = "motorFailure".asInstanceOf[motorFailure]
+  
+  @js.native
+  sealed trait movingToPaused
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def movingToPaused: movingToPaused = "movingToPaused".asInstanceOf[movingToPaused]
+  
+  @js.native
+  sealed trait msSense
+    extends StObject
+       with ManagementAgentType
+  inline def msSense: msSense = "msSense".asInstanceOf[msSense]
+  
+  @js.native
+  sealed trait muchv2
+    extends StObject
+       with AudioCodec
+  inline def muchv2: muchv2 = "muchv2".asInstanceOf[muchv2]
+  
+  @js.native
+  sealed trait multiChannelAudio
+    extends StObject
+       with AudioCodec
+  inline def multiChannelAudio: multiChannelAudio = "multiChannelAudio".asInstanceOf[multiChannelAudio]
+  
+  @js.native
+  sealed trait multiFactorAuthentication
+    extends StObject
+       with StagedFeatureName
+  inline def multiFactorAuthentication: multiFactorAuthentication = "multiFactorAuthentication".asInstanceOf[multiFactorAuthentication]
+  
+  @js.native
   sealed trait multiSz
     extends StObject
        with RegistryValueType
@@ -3836,10 +7657,46 @@ object microsoftGraphStrings {
   inline def multiTenantApp: multiTenantApp = "multiTenantApp".asInstanceOf[multiTenantApp]
   
   @js.native
+  sealed trait multicast
+    extends StObject
+       with RoutingMode
+  inline def multicast: multicast = "multicast".asInstanceOf[multicast]
+  
+  @js.native
+  sealed trait multichoice
+    extends StObject
+       with ColumnTypes
+  inline def multichoice: multichoice = "multichoice".asInstanceOf[multichoice]
+  
+  @js.native
+  sealed trait multiterm
+    extends StObject
+       with ColumnTypes
+  inline def multiterm: multiterm = "multiterm".asInstanceOf[multiterm]
+  
+  @js.native
+  sealed trait nativeSupport
+    extends StObject
+       with PromptLoginBehavior
+  inline def nativeSupport: nativeSupport = "nativeSupport".asInstanceOf[nativeSupport]
+  
+  @js.native
   sealed trait nd
     extends StObject
        with SecurityNetworkProtocol
   inline def nd: nd = "nd".asInstanceOf[nd]
+  
+  @js.native
+  sealed trait nearRealtime
+    extends StObject
+       with RiskDetectionTimingType
+  inline def nearRealtime: nearRealtime = "nearRealtime".asInstanceOf[nearRealtime]
+  
+  @js.native
+  sealed trait needsAttention
+    extends StObject
+       with UserExperienceAnalyticsHealthState
+  inline def needsAttention: needsAttention = "needsAttention".asInstanceOf[needsAttention]
   
   @js.native
   sealed trait network
@@ -3902,6 +7759,12 @@ object microsoftGraphStrings {
   inline def noEnd: noEnd = "noEnd".asInstanceOf[noEnd]
   
   @js.native
+  sealed trait noExpiration
+    extends StObject
+       with ExpirationPatternType
+  inline def noExpiration: noExpiration = "noExpiration".asInstanceOf[noExpiration]
+  
+  @js.native
   sealed trait noPreview
     extends StObject
        with PlannerPreviewType
@@ -3926,6 +7789,12 @@ object microsoftGraphStrings {
   inline def noRestrictions: noRestrictions = "noRestrictions".asInstanceOf[noRestrictions]
   
   @js.native
+  sealed trait noUpload
+    extends StObject
+       with ImportedWindowsAutopilotDeviceIdentityUploadStatus
+  inline def noUpload: noUpload = "noUpload".asInstanceOf[noUpload]
+  
+  @js.native
   sealed trait nonCompliant
     extends StObject
        with ComplianceStatus
@@ -3938,6 +7807,12 @@ object microsoftGraphStrings {
   inline def nonFullScreen: nonFullScreen = "nonFullScreen".asInstanceOf[nonFullScreen]
   
   @js.native
+  sealed trait nonServiceFailure
+    extends StObject
+       with ProvisioningStatusErrorCategory
+  inline def nonServiceFailure: nonServiceFailure = "nonServiceFailure".asInstanceOf[nonServiceFailure]
+  
+  @js.native
   sealed trait noncompliant_
     extends StObject
        with ComplianceState
@@ -3946,17 +7821,22 @@ object microsoftGraphStrings {
   @js.native
   sealed trait none_
     extends StObject
+       with AccessPackageExternalUserLifecycleAction
        with ActionState
+       with AllowInvitesFrom
        with AppListType
        with CalendarRoleType
        with CategoryColor
        with ChatMessagePolicyViolationDlpActionTypes
        with ChatMessagePolicyViolationUserActionTypes
        with ChatMessagePolicyViolationVerdictDetailsTypes
+       with DataSourceScopes
        with DeviceManagementExchangeAccessState
        with DeviceManagementExchangeAccessStateReason
        with DeviceManagementExchangeConnectorStatus
        with DiagnosticDataSubmissionMode
+       with EducationAddToCalendarOptions
+       with EducationAddedStudentAction
        with EducationUserRole
        with ExternalAudienceScope
        with FirewallCertificateRevocationListCheckMethodType
@@ -3968,6 +7848,9 @@ object microsoftGraphStrings {
        with MeetingMessageType
        with MeetingRequestType
        with NotificationTemplateBrandingOptions
+       with PrintFinishing
+       with PrintScaling
+       with PrinterProcessingStateDetail
        with RecipientScopeType
        with RegistryValueType
        with RejectReason
@@ -3987,9 +7870,11 @@ object microsoftGraphStrings {
   @js.native
   sealed trait normal
     extends StObject
+       with AuthenticationMethodKeyStrength
        with ChatMessageImportance
        with Importance
        with Sensitivity
+       with ServiceUpdateSeverity
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
@@ -4005,6 +7890,12 @@ object microsoftGraphStrings {
   inline def notAllowed: notAllowed = "notAllowed".asInstanceOf[notAllowed]
   
   @js.native
+  sealed trait notAllowedByPolicy
+    extends StObject
+       with AuthenticationMethodSignInState
+  inline def notAllowedByPolicy: notAllowedByPolicy = "notAllowedByPolicy".asInstanceOf[notAllowedByPolicy]
+  
+  @js.native
   sealed trait notApplicable
     extends StObject
        with ComplianceStatus
@@ -4016,6 +7907,7 @@ object microsoftGraphStrings {
     extends StObject
        with AppliedConditionalAccessPolicyResult
        with ConditionalAccessStatus
+       with DataSourceHoldStatus
   inline def notApplied: notApplied = "notApplied".asInstanceOf[notApplied]
   
   @js.native
@@ -4023,6 +7915,12 @@ object microsoftGraphStrings {
     extends StObject
        with ComplianceStatus
   inline def notAssigned: notAssigned = "notAssigned".asInstanceOf[notAssigned]
+  
+  @js.native
+  sealed trait notAttested
+    extends StObject
+       with AttestationLevel
+  inline def notAttested: notAttested = "notAttested".asInstanceOf[notAttested]
   
   @js.native
   sealed trait notCompliant
@@ -4036,11 +7934,13 @@ object microsoftGraphStrings {
        with AppLockerApplicationControlType
        with ApplicationGuardBlockClipboardSharingType
        with ApplicationGuardBlockFileTransferType
+       with AuthenticationMethodSignInState
        with DefenderCloudBlockLevelType
        with Enablement
        with ManagedBrowserType
        with StateManagementSetting
        with VisibilitySetting
+       with Win32LobAppDeliveryOptimizationPriority
        with Win32LobAppFileSystemOperationType
        with Win32LobAppPowerShellScriptRuleOperationType
        with Win32LobAppRegistryRuleOperationType
@@ -4049,9 +7949,22 @@ object microsoftGraphStrings {
   inline def notConfigured: notConfigured = "notConfigured".asInstanceOf[notConfigured]
   
   @js.native
+  sealed trait notContacted
+    extends StObject
+       with EnrollmentState
+  inline def notContacted: notContacted = "notContacted".asInstanceOf[notContacted]
+  
+  @js.native
+  sealed trait notDefined
+    extends StObject
+       with RiskDetectionTimingType
+  inline def notDefined: notDefined = "notDefined".asInstanceOf[notDefined]
+  
+  @js.native
   sealed trait notEnabled
     extends StObject
        with AppliedConditionalAccessPolicyResult
+       with AuthenticationMethodSignInState
   inline def notEnabled: notEnabled = "notEnabled".asInstanceOf[notEnabled]
   
   @js.native
@@ -4089,6 +8002,12 @@ object microsoftGraphStrings {
     extends StObject
        with MailDestinationRoutingReason
   inline def notJunk: notJunk = "notJunk".asInstanceOf[notJunk]
+  
+  @js.native
+  sealed trait notNotified
+    extends StObject
+       with AccessReviewHistoryDecisionFilter
+  inline def notNotified: notNotified = "notNotified".asInstanceOf[notNotified]
   
   @js.native
   sealed trait notOnboarded
@@ -4133,14 +8052,25 @@ object microsoftGraphStrings {
   inline def notResponded: notResponded = "notResponded".asInstanceOf[notResponded]
   
   @js.native
+  sealed trait notReviewed
+    extends StObject
+       with AccessReviewHistoryDecisionFilter
+  inline def notReviewed: notReviewed = "notReviewed".asInstanceOf[notReviewed]
+  
+  @js.native
   sealed trait notSet
     extends StObject
+       with BookingPriceType
        with DeviceThreatProtectionLevel
   inline def notSet: notSet = "notSet".asInstanceOf[notSet]
   
   @js.native
   sealed trait notSpecified
     extends StObject
+       with AccessPackageRequestType
+       with AccessPackageSubjectType
+       with AllowedTargetScope
+       with ExpirationPatternType
        with SelectionLikelihoodInfo
   inline def notSpecified: notSpecified = "notSpecified".asInstanceOf[notSpecified]
   
@@ -4148,7 +8078,12 @@ object microsoftGraphStrings {
   sealed trait notStarted_
     extends StObject
        with CallTranscriptionState
+       with CaseOperationStatus
        with DataPolicyOperationStatus
+       with DeviceManagementReportStatus
+       with LongRunningOperationStatus
+       with PrintOperationProcessingState
+       with SubjectRightsRequestStageStatus
        with TaskStatus
        with TeamsAsyncOperationStatus
        with WorkbookOperationStatus
@@ -4158,6 +8093,7 @@ object microsoftGraphStrings {
   sealed trait notSupported
     extends StObject
        with ActionState
+       with AuthenticationMethodSignInState
   inline def notSupported: notSupported = "notSupported".asInstanceOf[notSupported]
   
   @js.native
@@ -4171,6 +8107,12 @@ object microsoftGraphStrings {
     extends StObject
        with TimeOffReasonIconType
   inline def notWorking: notWorking = "notWorking".asInstanceOf[notWorking]
+  
+  @js.native
+  sealed trait note
+    extends StObject
+       with ColumnTypes
+  inline def note: note = "note".asInstanceOf[note]
   
   @js.native
   sealed trait notification
@@ -4203,6 +8145,12 @@ object microsoftGraphStrings {
   inline def notifySender: notifySender = "notifySender".asInstanceOf[notifySender]
   
   @js.native
+  sealed trait number
+    extends StObject
+       with ColumnTypes
+  inline def number: number = "number".asInstanceOf[number]
+  
+  @js.native
   sealed trait numbered
     extends StObject
        with RecurrenceRangeType
@@ -4224,6 +8172,12 @@ object microsoftGraphStrings {
   inline def numericComplex: numericComplex = "numericComplex".asInstanceOf[numericComplex]
   
   @js.native
+  sealed trait obsolete
+    extends StObject
+       with ConnectionState
+  inline def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
+  
+  @js.native
   sealed trait occurrence
     extends StObject
        with EventType
@@ -4236,16 +8190,41 @@ object microsoftGraphStrings {
   inline def offerShiftRequest: offerShiftRequest = "offerShiftRequest".asInstanceOf[offerShiftRequest]
   
   @js.native
+  sealed trait office
+    extends StObject
+       with AuthenticationPhoneType
+  inline def office: office = "office".asInstanceOf[office]
+  
+  @js.native
   sealed trait office365
     extends StObject
        with MdmAuthority
   inline def office365: office365 = "office365".asInstanceOf[office365]
   
   @js.native
+  sealed trait office365Connector
+    extends StObject
+       with TeamworkApplicationIdentityType
+  inline def office365Connector: office365Connector = "office365Connector".asInstanceOf[office365Connector]
+  
+  @js.native
   sealed trait offline
     extends StObject
        with MicrosoftStoreForBusinessLicenseType
+       with RiskDetectionTimingType
   inline def offline: offline = "offline".asInstanceOf[offline]
+  
+  @js.native
+  sealed trait onBehalfAdd
+    extends StObject
+       with AccessPackageRequestType
+  inline def onBehalfAdd: onBehalfAdd = "onBehalfAdd".asInstanceOf[onBehalfAdd]
+  
+  @js.native
+  sealed trait onPremiseAadUser
+    extends StObject
+       with TeamworkUserIdentityType
+  inline def onPremiseAadUser: onPremiseAadUser = "onPremiseAadUser".asInstanceOf[onPremiseAadUser]
   
   @js.native
   sealed trait onPremises
@@ -4264,12 +8243,6 @@ object microsoftGraphStrings {
     extends StObject
        with RemoteAssistanceOnboardingStatus
   inline def onboarding: onboarding = "onboarding".asInstanceOf[onboarding]
-  
-  @js.native
-  sealed trait one
-    extends StObject
-       with MiracastChannel
-  inline def one: one = "one".asInstanceOf[one]
   
   @js.native
   sealed trait oneDriveForBusiness_
@@ -4308,6 +8281,30 @@ object microsoftGraphStrings {
   inline def oneHundredSixtyOne: oneHundredSixtyOne = "oneHundredSixtyOne".asInstanceOf[oneHundredSixtyOne]
   
   @js.native
+  sealed trait oneOnOne
+    extends StObject
+       with ChatType
+  inline def oneOnOne: oneOnOne = "oneOnOne".asInstanceOf[oneOnOne]
+  
+  @js.native
+  sealed trait oneSided
+    extends StObject
+       with PrintDuplexMode
+  inline def oneSided: oneSided = "oneSided".asInstanceOf[oneSided]
+  
+  @js.native
+  sealed trait oneToOne
+    extends StObject
+       with RoutingMode
+  inline def oneToOne: oneToOne = "oneToOne".asInstanceOf[oneToOne]
+  
+  @js.native
+  sealed trait one_
+    extends StObject
+       with MiracastChannel
+  inline def one_ : one_ = "one".asInstanceOf[one_]
+  
+  @js.native
   sealed trait online
     extends StObject
        with MicrosoftStoreForBusinessLicenseType
@@ -4332,14 +8329,45 @@ object microsoftGraphStrings {
   inline def openShiftRequest: openShiftRequest = "openShiftRequest".asInstanceOf[openShiftRequest]
   
   @js.native
+  sealed trait operatingSystemVolume
+    extends StObject
+       with VolumeType
+  inline def operatingSystemVolume: operatingSystemVolume = "operatingSystemVolume".asInstanceOf[operatingSystemVolume]
+  
+  @js.native
+  sealed trait operator
+    extends StObject
+       with PstnCallDurationSource
+  inline def operator: operator = "operator".asInstanceOf[operator]
+  
+  @js.native
+  sealed trait opticalPhotoConductorLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def opticalPhotoConductorLifeOver: opticalPhotoConductorLifeOver = "opticalPhotoConductorLifeOver".asInstanceOf[opticalPhotoConductorLifeOver]
+  
+  @js.native
+  sealed trait opticalPhotoConductorNearEndOfLife
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def opticalPhotoConductorNearEndOfLife: opticalPhotoConductorNearEndOfLife = "opticalPhotoConductorNearEndOfLife".asInstanceOf[opticalPhotoConductorNearEndOfLife]
+  
+  @js.native
   sealed trait optional
     extends StObject
        with AttendeeType
   inline def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
+  sealed trait opus
+    extends StObject
+       with AudioCodec
+  inline def opus: opus = "opus".asInstanceOf[opus]
+  
+  @js.native
   sealed trait organization
     extends StObject
+       with BroadcastMeetingAudience
        with LobbyBypassScope
        with OnlineMeetingPresenters
        with TeamsAppDistributionMethod
@@ -4350,6 +8378,12 @@ object microsoftGraphStrings {
     extends StObject
        with LobbyBypassScope
   inline def organizationAndFederated: organizationAndFederated = "organizationAndFederated".asInstanceOf[organizationAndFederated]
+  
+  @js.native
+  sealed trait organizationExcludingGuests
+    extends StObject
+       with LobbyBypassScope
+  inline def organizationExcludingGuests: organizationExcludingGuests = "organizationExcludingGuests".asInstanceOf[organizationExcludingGuests]
   
   @js.native
   sealed trait organizer
@@ -4363,11 +8397,15 @@ object microsoftGraphStrings {
   sealed trait other
     extends StObject
        with ConditionalAccessClientApp
+       with ContactRelationship
+       with DataSubjectType
        with DeviceManagementExchangeAccessStateReason
        with EducationGender
        with InferenceClassificationType
        with PhoneType
        with PhysicalAddressType
+       with PrinterProcessingStateDetail
+       with ProvisioningAction
        with WebsiteType
   inline def other: other = "other".asInstanceOf[other]
   
@@ -4376,6 +8414,18 @@ object microsoftGraphStrings {
     extends StObject
        with PhoneType
   inline def otherFax: otherFax = "otherFax".asInstanceOf[otherFax]
+  
+  @js.native
+  sealed trait others
+    extends StObject
+       with UserPurpose
+  inline def others: others = "others".asInstanceOf[others]
+  
+  @js.native
+  sealed trait outOfOffice
+    extends StObject
+       with BookingsAvailabilityStatus
+  inline def outOfOffice: outOfOffice = "outOfOffice".asInstanceOf[outOfOffice]
   
   @js.native
   sealed trait outbound
@@ -4397,6 +8447,54 @@ object microsoftGraphStrings {
   inline def outgoing: outgoing = "outgoing".asInstanceOf[outgoing]
   
   @js.native
+  sealed trait outgoingWebhook
+    extends StObject
+       with TeamworkApplicationIdentityType
+  inline def outgoingWebhook: outgoingWebhook = "outgoingWebhook".asInstanceOf[outgoingWebhook]
+  
+  @js.native
+  sealed trait outputAreaAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def outputAreaAlmostFull: outputAreaAlmostFull = "outputAreaAlmostFull".asInstanceOf[outputAreaAlmostFull]
+  
+  @js.native
+  sealed trait outputAreaFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def outputAreaFull: outputAreaFull = "outputAreaFull".asInstanceOf[outputAreaFull]
+  
+  @js.native
+  sealed trait outputMailboxSelectFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def outputMailboxSelectFailure: outputMailboxSelectFailure = "outputMailboxSelectFailure".asInstanceOf[outputMailboxSelectFailure]
+  
+  @js.native
+  sealed trait outputMediaTrayFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def outputMediaTrayFailure: outputMediaTrayFailure = "outputMediaTrayFailure".asInstanceOf[outputMediaTrayFailure]
+  
+  @js.native
+  sealed trait outputMediaTrayFeedError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def outputMediaTrayFeedError: outputMediaTrayFeedError = "outputMediaTrayFeedError".asInstanceOf[outputMediaTrayFeedError]
+  
+  @js.native
+  sealed trait outputMediaTrayJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def outputMediaTrayJam: outputMediaTrayJam = "outputMediaTrayJam".asInstanceOf[outputMediaTrayJam]
+  
+  @js.native
+  sealed trait outputTrayMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def outputTrayMissing: outputTrayMissing = "outputTrayMissing".asInstanceOf[outputTrayMissing]
+  
+  @js.native
   sealed trait `override`
     extends StObject
        with ChatMessagePolicyViolationUserActionTypes
@@ -4407,6 +8505,12 @@ object microsoftGraphStrings {
     extends StObject
        with PhoneType
   inline def pager: pager = "pager".asInstanceOf[pager]
+  
+  @js.native
+  sealed trait parent
+    extends StObject
+       with ContactRelationship
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
   sealed trait parentalGuidance
@@ -4437,6 +8541,75 @@ object microsoftGraphStrings {
   inline def parentalSupervision: parentalSupervision = "parentalSupervision".asInstanceOf[parentalSupervision]
   
   @js.native
+  sealed trait partial
+    extends StObject
+       with DataSourceHoldStatus
+       with ImportedWindowsAutopilotDeviceIdentityImportStatus
+  inline def partial: partial = "partial".asInstanceOf[partial]
+  
+  @js.native
+  sealed trait partiallyDelivered
+    extends StObject
+       with AccessPackageAssignmentState
+       with AccessPackageRequestState
+  inline def partiallyDelivered: partiallyDelivered = "partiallyDelivered".asInstanceOf[partiallyDelivered]
+  
+  @js.native
+  sealed trait partiallySucceeded
+    extends StObject
+       with CaseOperationStatus
+  inline def partiallySucceeded: partiallySucceeded = "partiallySucceeded".asInstanceOf[partiallySucceeded]
+  
+  @js.native
+  sealed trait passthroughAuthentication
+    extends StObject
+       with StagedFeatureName
+  inline def passthroughAuthentication: passthroughAuthentication = "passthroughAuthentication".asInstanceOf[passthroughAuthentication]
+  
+  @js.native
+  sealed trait passwordChange
+    extends StObject
+       with ConditionalAccessGrantControl
+  inline def passwordChange: passwordChange = "passwordChange".asInstanceOf[passwordChange]
+  
+  @js.native
+  sealed trait passwordHashSync
+    extends StObject
+       with StagedFeatureName
+  inline def passwordHashSync: passwordHashSync = "passwordHashSync".asInstanceOf[passwordHashSync]
+  
+  @js.native
+  sealed trait passwordReset
+    extends StObject
+       with UserFlowType
+  inline def passwordReset: passwordReset = "passwordReset".asInstanceOf[passwordReset]
+  
+  @js.native
+  sealed trait paused
+    extends StObject
+       with PrintJobProcessingState
+       with PrinterProcessingStateDetail
+  inline def paused: paused = "paused".asInstanceOf[paused]
+  
+  @js.native
+  sealed trait pcma
+    extends StObject
+       with AudioCodec
+  inline def pcma: pcma = "pcma".asInstanceOf[pcma]
+  
+  @js.native
+  sealed trait pcmu
+    extends StObject
+       with AudioCodec
+  inline def pcmu: pcmu = "pcmu".asInstanceOf[pcmu]
+  
+  @js.native
+  sealed trait pdf
+    extends StObject
+       with DeviceManagementReportFileFormat
+  inline def pdf: pdf = "pdf".asInstanceOf[pdf]
+  
+  @js.native
   sealed trait peerToPeer
     extends StObject
        with CallType
@@ -4447,9 +8620,31 @@ object microsoftGraphStrings {
     extends StObject
        with ActionState
        with DeviceManagementSubscriptionState
+       with ImportedWindowsAutopilotDeviceIdentityImportStatus
+       with ImportedWindowsAutopilotDeviceIdentityUploadStatus
+       with PrintJobProcessingState
+       with PrintTaskProcessingState
        with ScheduleChangeState
        with ThreatAssessmentStatus
   inline def pending: pending = "pending".asInstanceOf[pending]
+  
+  @js.native
+  sealed trait pendingApproval
+    extends StObject
+       with AccessPackageRequestState
+  inline def pendingApproval: pendingApproval = "pendingApproval".asInstanceOf[pendingApproval]
+  
+  @js.native
+  sealed trait pendingDelete
+    extends StObject
+       with CaseStatus
+  inline def pendingDelete: pendingDelete = "pendingDelete".asInstanceOf[pendingDelete]
+  
+  @js.native
+  sealed trait pendingReset
+    extends StObject
+       with EnrollmentState
+  inline def pendingReset: pendingReset = "pendingReset".asInstanceOf[pendingReset]
   
   @js.native
   sealed trait perMachine
@@ -4464,12 +8659,234 @@ object microsoftGraphStrings {
   inline def perUser: perUser = "perUser".asInstanceOf[perUser]
   
   @js.native
+  sealed trait perforaterAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterAdded: perforaterAdded = "perforaterAdded".asInstanceOf[perforaterAdded]
+  
+  @js.native
+  sealed trait perforaterAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterAlmostEmpty: perforaterAlmostEmpty = "perforaterAlmostEmpty".asInstanceOf[perforaterAlmostEmpty]
+  
+  @js.native
+  sealed trait perforaterAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterAlmostFull: perforaterAlmostFull = "perforaterAlmostFull".asInstanceOf[perforaterAlmostFull]
+  
+  @js.native
+  sealed trait perforaterAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterAtLimit: perforaterAtLimit = "perforaterAtLimit".asInstanceOf[perforaterAtLimit]
+  
+  @js.native
+  sealed trait perforaterClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterClosed: perforaterClosed = "perforaterClosed".asInstanceOf[perforaterClosed]
+  
+  @js.native
+  sealed trait perforaterConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterConfigurationChange: perforaterConfigurationChange = "perforaterConfigurationChange".asInstanceOf[perforaterConfigurationChange]
+  
+  @js.native
+  sealed trait perforaterCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterCoverClosed: perforaterCoverClosed = "perforaterCoverClosed".asInstanceOf[perforaterCoverClosed]
+  
+  @js.native
+  sealed trait perforaterCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterCoverOpen: perforaterCoverOpen = "perforaterCoverOpen".asInstanceOf[perforaterCoverOpen]
+  
+  @js.native
+  sealed trait perforaterEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterEmpty: perforaterEmpty = "perforaterEmpty".asInstanceOf[perforaterEmpty]
+  
+  @js.native
+  sealed trait perforaterFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterFull: perforaterFull = "perforaterFull".asInstanceOf[perforaterFull]
+  
+  @js.native
+  sealed trait perforaterInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterInterlockClosed: perforaterInterlockClosed = "perforaterInterlockClosed".asInstanceOf[perforaterInterlockClosed]
+  
+  @js.native
+  sealed trait perforaterInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterInterlockOpen: perforaterInterlockOpen = "perforaterInterlockOpen".asInstanceOf[perforaterInterlockOpen]
+  
+  @js.native
+  sealed trait perforaterJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterJam: perforaterJam = "perforaterJam".asInstanceOf[perforaterJam]
+  
+  @js.native
+  sealed trait perforaterLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterLifeAlmostOver: perforaterLifeAlmostOver = "perforaterLifeAlmostOver".asInstanceOf[perforaterLifeAlmostOver]
+  
+  @js.native
+  sealed trait perforaterLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterLifeOver: perforaterLifeOver = "perforaterLifeOver".asInstanceOf[perforaterLifeOver]
+  
+  @js.native
+  sealed trait perforaterMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterMemoryExhausted: perforaterMemoryExhausted = "perforaterMemoryExhausted".asInstanceOf[perforaterMemoryExhausted]
+  
+  @js.native
+  sealed trait perforaterMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterMissing: perforaterMissing = "perforaterMissing".asInstanceOf[perforaterMissing]
+  
+  @js.native
+  sealed trait perforaterMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterMotorFailure: perforaterMotorFailure = "perforaterMotorFailure".asInstanceOf[perforaterMotorFailure]
+  
+  @js.native
+  sealed trait perforaterNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterNearLimit: perforaterNearLimit = "perforaterNearLimit".asInstanceOf[perforaterNearLimit]
+  
+  @js.native
+  sealed trait perforaterOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterOffline: perforaterOffline = "perforaterOffline".asInstanceOf[perforaterOffline]
+  
+  @js.native
+  sealed trait perforaterOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterOpened: perforaterOpened = "perforaterOpened".asInstanceOf[perforaterOpened]
+  
+  @js.native
+  sealed trait perforaterOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterOverTemperature: perforaterOverTemperature = "perforaterOverTemperature".asInstanceOf[perforaterOverTemperature]
+  
+  @js.native
+  sealed trait perforaterPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterPowerSaver: perforaterPowerSaver = "perforaterPowerSaver".asInstanceOf[perforaterPowerSaver]
+  
+  @js.native
+  sealed trait perforaterRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterRecoverableFailure: perforaterRecoverableFailure = "perforaterRecoverableFailure".asInstanceOf[perforaterRecoverableFailure]
+  
+  @js.native
+  sealed trait perforaterRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterRecoverableStorage: perforaterRecoverableStorage = "perforaterRecoverableStorage".asInstanceOf[perforaterRecoverableStorage]
+  
+  @js.native
+  sealed trait perforaterRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterRemoved: perforaterRemoved = "perforaterRemoved".asInstanceOf[perforaterRemoved]
+  
+  @js.native
+  sealed trait perforaterResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterResourceAdded: perforaterResourceAdded = "perforaterResourceAdded".asInstanceOf[perforaterResourceAdded]
+  
+  @js.native
+  sealed trait perforaterResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterResourceRemoved: perforaterResourceRemoved = "perforaterResourceRemoved".asInstanceOf[perforaterResourceRemoved]
+  
+  @js.native
+  sealed trait perforaterThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterThermistorFailure: perforaterThermistorFailure = "perforaterThermistorFailure".asInstanceOf[perforaterThermistorFailure]
+  
+  @js.native
+  sealed trait perforaterTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterTimingFailure: perforaterTimingFailure = "perforaterTimingFailure".asInstanceOf[perforaterTimingFailure]
+  
+  @js.native
+  sealed trait perforaterTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterTurnedOff: perforaterTurnedOff = "perforaterTurnedOff".asInstanceOf[perforaterTurnedOff]
+  
+  @js.native
+  sealed trait perforaterTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterTurnedOn: perforaterTurnedOn = "perforaterTurnedOn".asInstanceOf[perforaterTurnedOn]
+  
+  @js.native
+  sealed trait perforaterUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterUnderTemperature: perforaterUnderTemperature = "perforaterUnderTemperature".asInstanceOf[perforaterUnderTemperature]
+  
+  @js.native
+  sealed trait perforaterUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterUnrecoverableFailure: perforaterUnrecoverableFailure = "perforaterUnrecoverableFailure".asInstanceOf[perforaterUnrecoverableFailure]
+  
+  @js.native
+  sealed trait perforaterUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterUnrecoverableStorageError: perforaterUnrecoverableStorageError = "perforaterUnrecoverableStorageError".asInstanceOf[perforaterUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait perforaterWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def perforaterWarmingUp: perforaterWarmingUp = "perforaterWarmingUp".asInstanceOf[perforaterWarmingUp]
+  
+  @js.native
   sealed trait personal
     extends StObject
        with ActivityDomain
        with ManagedDeviceOwnerType
        with Sensitivity
   inline def personal: personal = "personal".asInstanceOf[personal]
+  
+  @js.native
+  sealed trait personalMicrosoftAccountUser
+    extends StObject
+       with TeamworkUserIdentityType
+  inline def personalMicrosoftAccountUser: personalMicrosoftAccountUser = "personalMicrosoftAccountUser".asInstanceOf[personalMicrosoftAccountUser]
   
   @js.native
   sealed trait phishing
@@ -4484,6 +8901,18 @@ object microsoftGraphStrings {
   inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
+  sealed trait phoneNumberNotUnique
+    extends StObject
+       with AuthenticationMethodSignInState
+  inline def phoneNumberNotUnique: phoneNumberNotUnique = "phoneNumberNotUnique".asInstanceOf[phoneNumberNotUnique]
+  
+  @js.native
+  sealed trait phoneUser
+    extends StObject
+       with TeamworkUserIdentityType
+  inline def phoneUser: phoneUser = "phoneUser".asInstanceOf[phoneUser]
+  
+  @js.native
   sealed trait piggyBank
     extends StObject
        with TimeOffReasonIconType
@@ -4492,6 +8921,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait pin
     extends StObject
+       with RelationType
        with TimeOffReasonIconType
   inline def pin: pin = "pin".asInstanceOf[pin]
   
@@ -4502,16 +8932,64 @@ object microsoftGraphStrings {
   inline def pink: pink = "pink".asInstanceOf[pink]
   
   @js.native
+  sealed trait planForChange
+    extends StObject
+       with ServiceUpdateCategory
+  inline def planForChange: planForChange = "planForChange".asInstanceOf[planForChange]
+  
+  @js.native
   sealed trait plane
     extends StObject
        with TimeOffReasonIconType
   inline def plane: plane = "plane".asInstanceOf[plane]
   
   @js.native
+  sealed trait platformCooling
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def platformCooling: platformCooling = "platformCooling".asInstanceOf[platformCooling]
+  
+  @js.native
+  sealed trait platformFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def platformFailure: platformFailure = "platformFailure".asInstanceOf[platformFailure]
+  
+  @js.native
+  sealed trait platformHeating
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def platformHeating: platformHeating = "platformHeating".asInstanceOf[platformHeating]
+  
+  @js.native
+  sealed trait platformTemperatureHigh
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def platformTemperatureHigh: platformTemperatureHigh = "platformTemperatureHigh".asInstanceOf[platformTemperatureHigh]
+  
+  @js.native
+  sealed trait platformTemperatureLow
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def platformTemperatureLow: platformTemperatureLow = "platformTemperatureLow".asInstanceOf[platformTemperatureLow]
+  
+  @js.native
   sealed trait poor
     extends StObject
        with UserFeedbackRating
   inline def poor: poor = "poor".asInstanceOf[poor]
+  
+  @js.native
+  sealed trait portrait
+    extends StObject
+       with PrintOrientation
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @js.native
+  sealed trait postIncidentReviewPublished
+    extends StObject
+       with ServiceHealthStatus
+  inline def postIncidentReviewPublished: postIncidentReviewPublished = "postIncidentReviewPublished".asInstanceOf[postIncidentReviewPublished]
   
   @js.native
   sealed trait postalAddress
@@ -4530,6 +9008,18 @@ object microsoftGraphStrings {
     extends StObject
        with UserAccountSecurityType
   inline def power: power = "power".asInstanceOf[power]
+  
+  @js.native
+  sealed trait powerDown
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def powerDown: powerDown = "powerDown".asInstanceOf[powerDown]
+  
+  @js.native
+  sealed trait powerUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def powerUp: powerUp = "powerUp".asInstanceOf[powerUp]
   
   @js.native
   sealed trait preschoolers
@@ -4700,16 +9190,63 @@ object microsoftGraphStrings {
   inline def preventAny: preventAny = "preventAny".asInstanceOf[preventAny]
   
   @js.native
+  sealed trait preventOrFixIssue
+    extends StObject
+       with ServiceUpdateCategory
+  inline def preventOrFixIssue: preventOrFixIssue = "preventOrFixIssue".asInstanceOf[preventOrFixIssue]
+  
+  @js.native
+  sealed trait priceVaries
+    extends StObject
+       with BookingPriceType
+  inline def priceVaries: priceVaries = "priceVaries".asInstanceOf[priceVaries]
+  
+  @js.native
   sealed trait primary
     extends StObject
        with CalendarSharingActionImportance
   inline def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
+  sealed trait primaryAndSecondaryAuthentication
+    extends StObject
+       with SignInFrequencyAuthenticationType
+  inline def primaryAndSecondaryAuthentication: primaryAndSecondaryAuthentication = "primaryAndSecondaryAuthentication".asInstanceOf[primaryAndSecondaryAuthentication]
+  
+  @js.native
+  sealed trait principal
+    extends StObject
+       with RoleAssignmentScheduleFilterByCurrentUserOptions
+       with RoleAssignmentScheduleInstanceFilterByCurrentUserOptions
+       with RoleAssignmentScheduleRequestFilterByCurrentUserOptions
+       with RoleEligibilityScheduleFilterByCurrentUserOptions
+       with RoleEligibilityScheduleInstanceFilterByCurrentUserOptions
+       with RoleEligibilityScheduleRequestFilterByCurrentUserOptions
+  inline def principal: principal = "principal".asInstanceOf[principal]
+  
+  @js.native
   sealed trait principalWantsCopy
     extends StObject
        with MeetingRequestType
   inline def principalWantsCopy: principalWantsCopy = "principalWantsCopy".asInstanceOf[principalWantsCopy]
+  
+  @js.native
+  sealed trait printerManualReset
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def printerManualReset: printerManualReset = "printerManualReset".asInstanceOf[printerManualReset]
+  
+  @js.native
+  sealed trait printerNmsReset
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def printerNmsReset: printerNmsReset = "printerNmsReset".asInstanceOf[printerNmsReset]
+  
+  @js.native
+  sealed trait printerReadyToPrint
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def printerReadyToPrint: printerReadyToPrint = "printerReadyToPrint".asInstanceOf[printerReadyToPrint]
   
   @js.native
   sealed trait `private`
@@ -4724,7 +9261,17 @@ object microsoftGraphStrings {
   sealed trait processing
     extends StObject
        with MobileAppPublishingState
+       with PrintJobProcessingState
+       with PrintTaskProcessingState
+       with PrinterProcessingState
+       with ProvisioningStepType
   inline def processing: processing = "processing".asInstanceOf[processing]
+  
+  @js.native
+  sealed trait producer
+    extends StObject
+       with OnlineMeetingRole
+  inline def producer: producer = "producer".asInstanceOf[producer]
   
   @js.native
   sealed trait productKey
@@ -4739,6 +9286,12 @@ object microsoftGraphStrings {
   inline def profile: profile = "profile".asInstanceOf[profile]
   
   @js.native
+  sealed trait profileUpdate
+    extends StObject
+       with UserFlowType
+  inline def profileUpdate: profileUpdate = "profileUpdate".asInstanceOf[profileUpdate]
+  
+  @js.native
   sealed trait prompt
     extends StObject
        with AndroidWorkProfileDefaultAppPermissionPolicyType
@@ -4751,6 +9304,18 @@ object microsoftGraphStrings {
   inline def promptBeforeSendingPersonalData: promptBeforeSendingPersonalData = "promptBeforeSendingPersonalData".asInstanceOf[promptBeforeSendingPersonalData]
   
   @js.native
+  sealed trait proposed
+    extends StObject
+       with ConnectedOrganizationState
+  inline def proposed: proposed = "proposed".asInstanceOf[proposed]
+  
+  @js.native
+  sealed trait prospectiveEmployee
+    extends StObject
+       with DataSubjectType
+  inline def prospectiveEmployee: prospectiveEmployee = "prospectiveEmployee".asInstanceOf[prospectiveEmployee]
+  
+  @js.native
   sealed trait public
     extends StObject
        with TeamVisibilityType
@@ -4759,8 +9324,233 @@ object microsoftGraphStrings {
   @js.native
   sealed trait published
     extends StObject
+       with AccessPackageCatalogState
+       with EducationAssignmentStatus
        with MobileAppPublishingState
+       with TeamsAppPublishingState
   inline def published: published = "published".asInstanceOf[published]
+  
+  @js.native
+  sealed trait punch
+    extends StObject
+       with PrintFinishing
+  inline def punch: punch = "punch".asInstanceOf[punch]
+  
+  @js.native
+  sealed trait puncherAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherAdded: puncherAdded = "puncherAdded".asInstanceOf[puncherAdded]
+  
+  @js.native
+  sealed trait puncherAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherAlmostEmpty: puncherAlmostEmpty = "puncherAlmostEmpty".asInstanceOf[puncherAlmostEmpty]
+  
+  @js.native
+  sealed trait puncherAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherAlmostFull: puncherAlmostFull = "puncherAlmostFull".asInstanceOf[puncherAlmostFull]
+  
+  @js.native
+  sealed trait puncherAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherAtLimit: puncherAtLimit = "puncherAtLimit".asInstanceOf[puncherAtLimit]
+  
+  @js.native
+  sealed trait puncherClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherClosed: puncherClosed = "puncherClosed".asInstanceOf[puncherClosed]
+  
+  @js.native
+  sealed trait puncherConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherConfigurationChange: puncherConfigurationChange = "puncherConfigurationChange".asInstanceOf[puncherConfigurationChange]
+  
+  @js.native
+  sealed trait puncherCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherCoverClosed: puncherCoverClosed = "puncherCoverClosed".asInstanceOf[puncherCoverClosed]
+  
+  @js.native
+  sealed trait puncherCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherCoverOpen: puncherCoverOpen = "puncherCoverOpen".asInstanceOf[puncherCoverOpen]
+  
+  @js.native
+  sealed trait puncherEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherEmpty: puncherEmpty = "puncherEmpty".asInstanceOf[puncherEmpty]
+  
+  @js.native
+  sealed trait puncherFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherFull: puncherFull = "puncherFull".asInstanceOf[puncherFull]
+  
+  @js.native
+  sealed trait puncherInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherInterlockClosed: puncherInterlockClosed = "puncherInterlockClosed".asInstanceOf[puncherInterlockClosed]
+  
+  @js.native
+  sealed trait puncherInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherInterlockOpen: puncherInterlockOpen = "puncherInterlockOpen".asInstanceOf[puncherInterlockOpen]
+  
+  @js.native
+  sealed trait puncherJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherJam: puncherJam = "puncherJam".asInstanceOf[puncherJam]
+  
+  @js.native
+  sealed trait puncherLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherLifeAlmostOver: puncherLifeAlmostOver = "puncherLifeAlmostOver".asInstanceOf[puncherLifeAlmostOver]
+  
+  @js.native
+  sealed trait puncherLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherLifeOver: puncherLifeOver = "puncherLifeOver".asInstanceOf[puncherLifeOver]
+  
+  @js.native
+  sealed trait puncherMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherMemoryExhausted: puncherMemoryExhausted = "puncherMemoryExhausted".asInstanceOf[puncherMemoryExhausted]
+  
+  @js.native
+  sealed trait puncherMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherMissing: puncherMissing = "puncherMissing".asInstanceOf[puncherMissing]
+  
+  @js.native
+  sealed trait puncherMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherMotorFailure: puncherMotorFailure = "puncherMotorFailure".asInstanceOf[puncherMotorFailure]
+  
+  @js.native
+  sealed trait puncherNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherNearLimit: puncherNearLimit = "puncherNearLimit".asInstanceOf[puncherNearLimit]
+  
+  @js.native
+  sealed trait puncherOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherOffline: puncherOffline = "puncherOffline".asInstanceOf[puncherOffline]
+  
+  @js.native
+  sealed trait puncherOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherOpened: puncherOpened = "puncherOpened".asInstanceOf[puncherOpened]
+  
+  @js.native
+  sealed trait puncherOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherOverTemperature: puncherOverTemperature = "puncherOverTemperature".asInstanceOf[puncherOverTemperature]
+  
+  @js.native
+  sealed trait puncherPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherPowerSaver: puncherPowerSaver = "puncherPowerSaver".asInstanceOf[puncherPowerSaver]
+  
+  @js.native
+  sealed trait puncherRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherRecoverableFailure: puncherRecoverableFailure = "puncherRecoverableFailure".asInstanceOf[puncherRecoverableFailure]
+  
+  @js.native
+  sealed trait puncherRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherRecoverableStorage: puncherRecoverableStorage = "puncherRecoverableStorage".asInstanceOf[puncherRecoverableStorage]
+  
+  @js.native
+  sealed trait puncherRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherRemoved: puncherRemoved = "puncherRemoved".asInstanceOf[puncherRemoved]
+  
+  @js.native
+  sealed trait puncherResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherResourceAdded: puncherResourceAdded = "puncherResourceAdded".asInstanceOf[puncherResourceAdded]
+  
+  @js.native
+  sealed trait puncherResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherResourceRemoved: puncherResourceRemoved = "puncherResourceRemoved".asInstanceOf[puncherResourceRemoved]
+  
+  @js.native
+  sealed trait puncherThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherThermistorFailure: puncherThermistorFailure = "puncherThermistorFailure".asInstanceOf[puncherThermistorFailure]
+  
+  @js.native
+  sealed trait puncherTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherTimingFailure: puncherTimingFailure = "puncherTimingFailure".asInstanceOf[puncherTimingFailure]
+  
+  @js.native
+  sealed trait puncherTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherTurnedOff: puncherTurnedOff = "puncherTurnedOff".asInstanceOf[puncherTurnedOff]
+  
+  @js.native
+  sealed trait puncherTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherTurnedOn: puncherTurnedOn = "puncherTurnedOn".asInstanceOf[puncherTurnedOn]
+  
+  @js.native
+  sealed trait puncherUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherUnderTemperature: puncherUnderTemperature = "puncherUnderTemperature".asInstanceOf[puncherUnderTemperature]
+  
+  @js.native
+  sealed trait puncherUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherUnrecoverableFailure: puncherUnrecoverableFailure = "puncherUnrecoverableFailure".asInstanceOf[puncherUnrecoverableFailure]
+  
+  @js.native
+  sealed trait puncherUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherUnrecoverableStorageError: puncherUnrecoverableStorageError = "puncherUnrecoverableStorageError".asInstanceOf[puncherUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait puncherWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def puncherWarmingUp: puncherWarmingUp = "puncherWarmingUp".asInstanceOf[puncherWarmingUp]
   
   @js.native
   sealed trait pup
@@ -4773,6 +9563,12 @@ object microsoftGraphStrings {
     extends StObject
        with ScheduleEntityTheme
   inline def purple: purple = "purple".asInstanceOf[purple]
+  
+  @js.native
+  sealed trait push
+    extends StObject
+       with MicrosoftAuthenticatorAuthenticationMode
+  inline def push: push = "push".asInstanceOf[push]
   
   @js.native
   sealed trait pushNotification
@@ -4814,6 +9610,7 @@ object microsoftGraphStrings {
   sealed trait quick
     extends StObject
        with DefenderScanType
+       with PostType
   inline def quick: quick = "quick".asInstanceOf[quick]
   
   @js.native
@@ -4835,6 +9632,18 @@ object microsoftGraphStrings {
   inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
+  sealed trait radioButton
+    extends StObject
+       with AnswerInputType
+  inline def radioButton: radioButton = "radioButton".asInstanceOf[radioButton]
+  
+  @js.native
+  sealed trait radioSingleSelect
+    extends StObject
+       with IdentityUserFlowAttributeInputType
+  inline def radioSingleSelect: radioSingleSelect = "radioSingleSelect".asInstanceOf[radioSingleSelect]
+  
+  @js.native
   sealed trait raw
     extends StObject
        with SecurityNetworkProtocol
@@ -4848,10 +9657,29 @@ object microsoftGraphStrings {
   inline def read: read = "read".asInstanceOf[read]
   
   @js.native
+  sealed trait ready
+    extends StObject
+       with AuthenticationMethodSignInState
+       with ConnectionState
+  inline def ready: ready = "ready".asInstanceOf[ready]
+  
+  @js.native
   sealed trait realType
     extends StObject
        with MdmAppConfigKeyType
   inline def realType: realType = "realType".asInstanceOf[realType]
+  
+  @js.native
+  sealed trait realtime
+    extends StObject
+       with RiskDetectionTimingType
+  inline def realtime: realtime = "realtime".asInstanceOf[realtime]
+  
+  @js.native
+  sealed trait reassigned
+    extends StObject
+       with EducationSubmissionStatus
+  inline def reassigned: reassigned = "reassigned".asInstanceOf[reassigned]
   
   @js.native
   sealed trait reauthorizationRequired
@@ -4904,15 +9732,34 @@ object microsoftGraphStrings {
   inline def reference: reference = "reference".asInstanceOf[reference]
   
   @js.native
+  sealed trait referenceResolution
+    extends StObject
+       with ProvisioningStepType
+  inline def referenceResolution: referenceResolution = "referenceResolution".asInstanceOf[referenceResolution]
+  
+  @js.native
   sealed trait registered
     extends StObject
        with DeviceRegistrationState
   inline def registered: registered = "registered".asInstanceOf[registered]
   
   @js.native
+  sealed trait regular
+    extends StObject
+       with PostType
+  inline def regular: regular = "regular".asInstanceOf[regular]
+  
+  @js.native
+  sealed trait rejectMfaByFederatedIdp
+    extends StObject
+       with FederatedIdpMfaBehavior
+  inline def rejectMfaByFederatedIdp: rejectMfaByFederatedIdp = "rejectMfaByFederatedIdp".asInstanceOf[rejectMfaByFederatedIdp]
+  
+  @js.native
   sealed trait rejected
     extends StObject
        with DeviceManagementPartnerTenantState
+       with TeamsAppPublishingState
   inline def rejected: rejected = "rejected".asInstanceOf[rejected]
   
   @js.native
@@ -4920,6 +9767,12 @@ object microsoftGraphStrings {
     extends StObject
        with SecurityResourceType
   inline def related: related = "related".asInstanceOf[related]
+  
+  @js.native
+  sealed trait relative
+    extends StObject
+       with ContactRelationship
+  inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
   sealed trait relativeMonthly
@@ -4932,6 +9785,19 @@ object microsoftGraphStrings {
     extends StObject
        with RecurrencePatternType
   inline def relativeYearly: relativeYearly = "relativeYearly".asInstanceOf[relativeYearly]
+  
+  @js.native
+  sealed trait releaseWait
+    extends StObject
+       with PrintJobStateDetail
+  inline def releaseWait: releaseWait = "releaseWait".asInstanceOf[releaseWait]
+  
+  @js.native
+  sealed trait released
+    extends StObject
+       with DataSourceContainerStatus
+       with EducationSubmissionStatus
+  inline def released: released = "released".asInstanceOf[released]
   
   @js.native
   sealed trait remediated
@@ -4947,17 +9813,48 @@ object microsoftGraphStrings {
   inline def remoteInteractive: remoteInteractive = "remoteInteractive".asInstanceOf[remoteInteractive]
   
   @js.native
+  sealed trait removableDataVolume
+    extends StObject
+       with VolumeType
+  inline def removableDataVolume: removableDataVolume = "removableDataVolume".asInstanceOf[removableDataVolume]
+  
+  @js.native
   sealed trait remove
     extends StObject
        with DefenderThreatAction
+       with UnifiedRoleManagementPolicyRuleTargetOperations
        with WindowsStartMenuAppListVisibilityType
   inline def remove: remove = "remove".asInstanceOf[remove]
+  
+  @js.native
+  sealed trait removeAccess
+    extends StObject
+       with AccessReviewExpirationBehavior
+  inline def removeAccess: removeAccess = "removeAccess".asInstanceOf[removeAccess]
   
   @js.native
   sealed trait removeResourceAccessProfiles
     extends StObject
        with DeviceComplianceActionType
   inline def removeResourceAccessProfiles: removeResourceAccessProfiles = "removeResourceAccessProfiles".asInstanceOf[removeResourceAccessProfiles]
+  
+  @js.native
+  sealed trait removing
+    extends StObject
+       with DataSourceHoldStatus
+  inline def removing: removing = "removing".asInstanceOf[removing]
+  
+  @js.native
+  sealed trait renew
+    extends StObject
+       with UnifiedRoleManagementPolicyRuleTargetOperations
+  inline def renew: renew = "renew".asInstanceOf[renew]
+  
+  @js.native
+  sealed trait replaceLocalizableValues
+    extends StObject
+       with DeviceManagementExportJobLocalizationType
+  inline def replaceLocalizableValues: replaceLocalizableValues = "replaceLocalizableValues".asInstanceOf[replaceLocalizableValues]
   
   @js.native
   sealed trait reply
@@ -4978,6 +9875,18 @@ object microsoftGraphStrings {
   inline def reportFalsePositive: reportFalsePositive = "reportFalsePositive".asInstanceOf[reportFalsePositive]
   
   @js.native
+  sealed trait reported
+    extends StObject
+       with ServiceHealthStatus
+  inline def reported: reported = "reported".asInstanceOf[reported]
+  
+  @js.native
+  sealed trait requested
+    extends StObject
+       with AccessReviewHistoryStatus
+  inline def requested: requested = "requested".asInstanceOf[requested]
+  
+  @js.native
   sealed trait require
     extends StObject
        with FirewallCertificateRevocationListCheckMethodType
@@ -4994,6 +9903,7 @@ object microsoftGraphStrings {
     extends StObject
        with AndroidWorkProfileRequiredPasswordType
        with AttendeeType
+       with IdentityUserFlowAttributeType
        with InstallIntent
        with WindowsHelloForBusinessPinUsage
   inline def required: required = "required".asInstanceOf[required]
@@ -5020,13 +9930,26 @@ object microsoftGraphStrings {
   sealed trait resolved
     extends StObject
        with AlertStatus
+       with ServiceHealthStatus
   inline def resolved: resolved = "resolved".asInstanceOf[resolved]
+  
+  @js.native
+  sealed trait resolvedExternal
+    extends StObject
+       with ServiceHealthStatus
+  inline def resolvedExternal: resolvedExternal = "resolvedExternal".asInstanceOf[resolvedExternal]
   
   @js.native
   sealed trait resource
     extends StObject
        with AttendeeType
   inline def resource: resource = "resource".asInstanceOf[resource]
+  
+  @js.native
+  sealed trait resourceOwner
+    extends StObject
+       with UserFlowType
+  inline def resourceOwner: resourceOwner = "resourceOwner".asInstanceOf[resourceOwner]
   
   @js.native
   sealed trait responseGroupService
@@ -5059,12 +9982,24 @@ object microsoftGraphStrings {
   inline def restaurant: restaurant = "restaurant".asInstanceOf[restaurant]
   
   @js.native
+  sealed trait restoringService
+    extends StObject
+       with ServiceHealthStatus
+  inline def restoringService: restoringService = "restoringService".asInstanceOf[restoringService]
+  
+  @js.native
   sealed trait restricted
     extends StObject
        with RatingCanadaMoviesType
        with RatingNewZealandMoviesType
        with RatingUnitedStatesMoviesType
   inline def restricted: restricted = "restricted".asInstanceOf[restricted]
+  
+  @js.native
+  sealed trait resuming
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def resuming: resuming = "resuming".asInstanceOf[resuming]
   
   @js.native
   sealed trait retire
@@ -5079,10 +10014,44 @@ object microsoftGraphStrings {
   inline def retry: retry = "retry".asInstanceOf[retry]
   
   @js.native
+  sealed trait returned
+    extends StObject
+       with EducationSubmissionStatus
+  inline def returned: returned = "returned".asInstanceOf[returned]
+  
+  @js.native
+  sealed trait reuse
+    extends StObject
+       with RelationType
+  inline def reuse: reuse = "reuse".asInstanceOf[reuse]
+  
+  @js.native
+  sealed trait reverseLandscape
+    extends StObject
+       with PrintOrientation
+  inline def reverseLandscape: reverseLandscape = "reverseLandscape".asInstanceOf[reverseLandscape]
+  
+  @js.native
+  sealed trait reversePortrait
+    extends StObject
+       with PrintOrientation
+  inline def reversePortrait: reversePortrait = "reversePortrait".asInstanceOf[reversePortrait]
+  
+  @js.native
   sealed trait review
     extends StObject
        with MessageActionFlag
   inline def review: review = "review".asInstanceOf[review]
+  
+  @js.native
+  sealed trait reviewer
+    extends StObject
+       with AccessReviewInstanceDecisionItemFilterByCurrentUserOptions
+       with AccessReviewInstanceFilterByCurrentUserOptions
+       with AccessReviewScheduleDefinitionFilterByCurrentUserOptions
+       with AccessReviewStageFilterByCurrentUserOptions
+       with ConsentRequestFilterByCurrentUserOptions
+  inline def reviewer: reviewer = "reviewer".asInstanceOf[reviewer]
   
   @js.native
   sealed trait revoked
@@ -5091,10 +10060,22 @@ object microsoftGraphStrings {
   inline def revoked: revoked = "revoked".asInstanceOf[revoked]
   
   @js.native
+  sealed trait roleIsAttendee
+    extends StObject
+       with BroadcastMeetingAudience
+  inline def roleIsAttendee: roleIsAttendee = "roleIsAttendee".asInstanceOf[roleIsAttendee]
+  
+  @js.native
   sealed trait roleIsPresenter
     extends StObject
        with OnlineMeetingPresenters
   inline def roleIsPresenter: roleIsPresenter = "roleIsPresenter".asInstanceOf[roleIsPresenter]
+  
+  @js.native
+  sealed trait room
+    extends StObject
+       with UserPurpose
+  inline def room: room = "room".asInstanceOf[room]
   
   @js.native
   sealed trait roomSystem
@@ -5109,12 +10090,51 @@ object microsoftGraphStrings {
   inline def rootedDevice: rootedDevice = "rootedDevice".asInstanceOf[rootedDevice]
   
   @js.native
+  sealed trait roster
+    extends StObject
+       with PlannerContainerType
+  inline def roster: roster = "roster".asInstanceOf[roster]
+  
+  @js.native
+  sealed trait rtAudio16
+    extends StObject
+       with AudioCodec
+  inline def rtAudio16: rtAudio16 = "rtAudio16".asInstanceOf[rtAudio16]
+  
+  @js.native
+  sealed trait rtAudio8
+    extends StObject
+       with AudioCodec
+  inline def rtAudio8: rtAudio8 = "rtAudio8".asInstanceOf[rtAudio8]
+  
+  @js.native
+  sealed trait rtVideo
+    extends StObject
+       with VideoCodec
+  inline def rtVideo: rtVideo = "rtVideo".asInstanceOf[rtVideo]
+  
+  @js.native
+  sealed trait rtvc1
+    extends StObject
+       with VideoCodec
+  inline def rtvc1: rtvc1 = "rtvc1".asInstanceOf[rtvc1]
+  
+  @js.native
   sealed trait running_
     extends StObject
+       with CaseOperationStatus
        with DataPolicyOperationStatus
+       with LongRunningOperationStatus
+       with PrintOperationProcessingState
        with TimeOffReasonIconType
        with WorkbookOperationStatus
   inline def running_ : running_ = "running".asInstanceOf[running_]
+  
+  @js.native
+  sealed trait saddleStitch
+    extends StObject
+       with PrintFinishing
+  inline def saddleStitch: saddleStitch = "saddleStitch".asInstanceOf[saddleStitch]
   
   @js.native
   sealed trait safeSender
@@ -5123,11 +10143,173 @@ object microsoftGraphStrings {
   inline def safeSender: safeSender = "safeSender".asInstanceOf[safeSender]
   
   @js.native
+  sealed trait saml
+    extends StObject
+       with AuthenticationProtocol
+  inline def saml: saml = "saml".asInstanceOf[saml]
+  
+  @js.native
+  sealed trait satin
+    extends StObject
+       with AudioCodec
+  inline def satin: satin = "satin".asInstanceOf[satin]
+  
+  @js.native
+  sealed trait satinFullband
+    extends StObject
+       with AudioCodec
+  inline def satinFullband: satinFullband = "satinFullband".asInstanceOf[satinFullband]
+  
+  @js.native
   sealed trait saturday
     extends StObject
        with DayOfWeek
        with WeeklySchedule
   inline def saturday: saturday = "saturday".asInstanceOf[saturday]
+  
+  @js.native
+  sealed trait scanMediaPathFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathFailure: scanMediaPathFailure = "scanMediaPathFailure".asInstanceOf[scanMediaPathFailure]
+  
+  @js.native
+  sealed trait scanMediaPathInputEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathInputEmpty: scanMediaPathInputEmpty = "scanMediaPathInputEmpty".asInstanceOf[scanMediaPathInputEmpty]
+  
+  @js.native
+  sealed trait scanMediaPathInputFeedError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathInputFeedError: scanMediaPathInputFeedError = "scanMediaPathInputFeedError".asInstanceOf[scanMediaPathInputFeedError]
+  
+  @js.native
+  sealed trait scanMediaPathInputJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathInputJam: scanMediaPathInputJam = "scanMediaPathInputJam".asInstanceOf[scanMediaPathInputJam]
+  
+  @js.native
+  sealed trait scanMediaPathInputRequest
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathInputRequest: scanMediaPathInputRequest = "scanMediaPathInputRequest".asInstanceOf[scanMediaPathInputRequest]
+  
+  @js.native
+  sealed trait scanMediaPathJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathJam: scanMediaPathJam = "scanMediaPathJam".asInstanceOf[scanMediaPathJam]
+  
+  @js.native
+  sealed trait scanMediaPathOutputFeedError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathOutputFeedError: scanMediaPathOutputFeedError = "scanMediaPathOutputFeedError".asInstanceOf[scanMediaPathOutputFeedError]
+  
+  @js.native
+  sealed trait scanMediaPathOutputFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathOutputFull: scanMediaPathOutputFull = "scanMediaPathOutputFull".asInstanceOf[scanMediaPathOutputFull]
+  
+  @js.native
+  sealed trait scanMediaPathOutputJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathOutputJam: scanMediaPathOutputJam = "scanMediaPathOutputJam".asInstanceOf[scanMediaPathOutputJam]
+  
+  @js.native
+  sealed trait scanMediaPathPickRollerFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathPickRollerFailure: scanMediaPathPickRollerFailure = "scanMediaPathPickRollerFailure".asInstanceOf[scanMediaPathPickRollerFailure]
+  
+  @js.native
+  sealed trait scanMediaPathPickRollerLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathPickRollerLifeOver: scanMediaPathPickRollerLifeOver = "scanMediaPathPickRollerLifeOver".asInstanceOf[scanMediaPathPickRollerLifeOver]
+  
+  @js.native
+  sealed trait scanMediaPathPickRollerLifeWarn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathPickRollerLifeWarn: scanMediaPathPickRollerLifeWarn = "scanMediaPathPickRollerLifeWarn".asInstanceOf[scanMediaPathPickRollerLifeWarn]
+  
+  @js.native
+  sealed trait scanMediaPathPickRollerMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathPickRollerMissing: scanMediaPathPickRollerMissing = "scanMediaPathPickRollerMissing".asInstanceOf[scanMediaPathPickRollerMissing]
+  
+  @js.native
+  sealed trait scanMediaPathTrayAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathTrayAlmostFull: scanMediaPathTrayAlmostFull = "scanMediaPathTrayAlmostFull".asInstanceOf[scanMediaPathTrayAlmostFull]
+  
+  @js.native
+  sealed trait scanMediaPathTrayFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathTrayFull: scanMediaPathTrayFull = "scanMediaPathTrayFull".asInstanceOf[scanMediaPathTrayFull]
+  
+  @js.native
+  sealed trait scanMediaPathTrayMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scanMediaPathTrayMissing: scanMediaPathTrayMissing = "scanMediaPathTrayMissing".asInstanceOf[scanMediaPathTrayMissing]
+  
+  @js.native
+  sealed trait scannerLightFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scannerLightFailure: scannerLightFailure = "scannerLightFailure".asInstanceOf[scannerLightFailure]
+  
+  @js.native
+  sealed trait scannerLightLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scannerLightLifeAlmostOver: scannerLightLifeAlmostOver = "scannerLightLifeAlmostOver".asInstanceOf[scannerLightLifeAlmostOver]
+  
+  @js.native
+  sealed trait scannerLightLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scannerLightLifeOver: scannerLightLifeOver = "scannerLightLifeOver".asInstanceOf[scannerLightLifeOver]
+  
+  @js.native
+  sealed trait scannerLightMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scannerLightMissing: scannerLightMissing = "scannerLightMissing".asInstanceOf[scannerLightMissing]
+  
+  @js.native
+  sealed trait scannerSensorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scannerSensorFailure: scannerSensorFailure = "scannerSensorFailure".asInstanceOf[scannerSensorFailure]
+  
+  @js.native
+  sealed trait scannerSensorLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scannerSensorLifeAlmostOver: scannerSensorLifeAlmostOver = "scannerSensorLifeAlmostOver".asInstanceOf[scannerSensorLifeAlmostOver]
+  
+  @js.native
+  sealed trait scannerSensorLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scannerSensorLifeOver: scannerSensorLifeOver = "scannerSensorLifeOver".asInstanceOf[scannerSensorLifeOver]
+  
+  @js.native
+  sealed trait scannerSensorMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def scannerSensorMissing: scannerSensorMissing = "scannerSensorMissing".asInstanceOf[scannerSensorMissing]
   
   @js.native
   sealed trait sccm
@@ -5138,14 +10320,33 @@ object microsoftGraphStrings {
   @js.native
   sealed trait scheduled
     extends StObject
+       with AccessPackageRequestState
        with AutomaticRepliesStatus
   inline def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
+  
+  @js.native
+  sealed trait scoping
+    extends StObject
+       with ProvisioningStepType
+  inline def scoping: scoping = "scoping".asInstanceOf[scoping]
+  
+  @js.native
+  sealed trait screenShare
+    extends StObject
+       with TeamworkCallEventType
+  inline def screenShare: screenShare = "screenShare".asInstanceOf[screenShare]
   
   @js.native
   sealed trait screenSharing
     extends StObject
        with typings.microsoftGraph.mod.CallRecords.Modality
   inline def screenSharing: screenSharing = "screenSharing".asInstanceOf[screenSharing]
+  
+  @js.native
+  sealed trait seamlessSso
+    extends StObject
+       with StagedFeatureName
+  inline def seamlessSso: seamlessSso = "seamlessSso".asInstanceOf[seamlessSso]
   
   @js.native
   sealed trait second
@@ -5160,6 +10361,12 @@ object microsoftGraphStrings {
   inline def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
+  sealed trait secondaryAuthentication
+    extends StObject
+       with SignInFrequencyAuthenticationType
+  inline def secondaryAuthentication: secondaryAuthentication = "secondaryAuthentication".asInstanceOf[secondaryAuthentication]
+  
+  @js.native
   sealed trait secured
     extends StObject
        with DeviceThreatProtectionLevel
@@ -5167,10 +10374,40 @@ object microsoftGraphStrings {
   inline def secured: secured = "secured".asInstanceOf[secured]
   
   @js.native
+  sealed trait selectedPublicApps
+    extends StObject
+       with TargetedManagedAppGroupType
+  inline def selectedPublicApps: selectedPublicApps = "selectedPublicApps".asInstanceOf[selectedPublicApps]
+  
+  @js.native
+  sealed trait selfActivate
+    extends StObject
+       with UnifiedRoleScheduleRequestActions
+  inline def selfActivate: selfActivate = "selfActivate".asInstanceOf[selfActivate]
+  
+  @js.native
+  sealed trait selfDeactivate
+    extends StObject
+       with UnifiedRoleScheduleRequestActions
+  inline def selfDeactivate: selfDeactivate = "selfDeactivate".asInstanceOf[selfDeactivate]
+  
+  @js.native
+  sealed trait selfExtend
+    extends StObject
+       with UnifiedRoleScheduleRequestActions
+  inline def selfExtend: selfExtend = "selfExtend".asInstanceOf[selfExtend]
+  
+  @js.native
   sealed trait selfFork
     extends StObject
        with RoutingType
   inline def selfFork: selfFork = "selfFork".asInstanceOf[selfFork]
+  
+  @js.native
+  sealed trait selfRenew
+    extends StObject
+       with UnifiedRoleScheduleRequestActions
+  inline def selfRenew: selfRenew = "selfRenew".asInstanceOf[selfRenew]
   
   @js.native
   sealed trait sendAllDataWithoutPrompting
@@ -5216,6 +10453,222 @@ object microsoftGraphStrings {
   inline def sender: sender = "sender".asInstanceOf[sender]
   
   @js.native
+  sealed trait separationCutterAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterAdded: separationCutterAdded = "separationCutterAdded".asInstanceOf[separationCutterAdded]
+  
+  @js.native
+  sealed trait separationCutterAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterAlmostEmpty: separationCutterAlmostEmpty = "separationCutterAlmostEmpty".asInstanceOf[separationCutterAlmostEmpty]
+  
+  @js.native
+  sealed trait separationCutterAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterAlmostFull: separationCutterAlmostFull = "separationCutterAlmostFull".asInstanceOf[separationCutterAlmostFull]
+  
+  @js.native
+  sealed trait separationCutterAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterAtLimit: separationCutterAtLimit = "separationCutterAtLimit".asInstanceOf[separationCutterAtLimit]
+  
+  @js.native
+  sealed trait separationCutterClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterClosed: separationCutterClosed = "separationCutterClosed".asInstanceOf[separationCutterClosed]
+  
+  @js.native
+  sealed trait separationCutterConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterConfigurationChange: separationCutterConfigurationChange = "separationCutterConfigurationChange".asInstanceOf[separationCutterConfigurationChange]
+  
+  @js.native
+  sealed trait separationCutterCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterCoverClosed: separationCutterCoverClosed = "separationCutterCoverClosed".asInstanceOf[separationCutterCoverClosed]
+  
+  @js.native
+  sealed trait separationCutterCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterCoverOpen: separationCutterCoverOpen = "separationCutterCoverOpen".asInstanceOf[separationCutterCoverOpen]
+  
+  @js.native
+  sealed trait separationCutterEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterEmpty: separationCutterEmpty = "separationCutterEmpty".asInstanceOf[separationCutterEmpty]
+  
+  @js.native
+  sealed trait separationCutterFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterFull: separationCutterFull = "separationCutterFull".asInstanceOf[separationCutterFull]
+  
+  @js.native
+  sealed trait separationCutterInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterInterlockClosed: separationCutterInterlockClosed = "separationCutterInterlockClosed".asInstanceOf[separationCutterInterlockClosed]
+  
+  @js.native
+  sealed trait separationCutterInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterInterlockOpen: separationCutterInterlockOpen = "separationCutterInterlockOpen".asInstanceOf[separationCutterInterlockOpen]
+  
+  @js.native
+  sealed trait separationCutterJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterJam: separationCutterJam = "separationCutterJam".asInstanceOf[separationCutterJam]
+  
+  @js.native
+  sealed trait separationCutterLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterLifeAlmostOver: separationCutterLifeAlmostOver = "separationCutterLifeAlmostOver".asInstanceOf[separationCutterLifeAlmostOver]
+  
+  @js.native
+  sealed trait separationCutterLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterLifeOver: separationCutterLifeOver = "separationCutterLifeOver".asInstanceOf[separationCutterLifeOver]
+  
+  @js.native
+  sealed trait separationCutterMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterMemoryExhausted: separationCutterMemoryExhausted = "separationCutterMemoryExhausted".asInstanceOf[separationCutterMemoryExhausted]
+  
+  @js.native
+  sealed trait separationCutterMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterMissing: separationCutterMissing = "separationCutterMissing".asInstanceOf[separationCutterMissing]
+  
+  @js.native
+  sealed trait separationCutterMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterMotorFailure: separationCutterMotorFailure = "separationCutterMotorFailure".asInstanceOf[separationCutterMotorFailure]
+  
+  @js.native
+  sealed trait separationCutterNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterNearLimit: separationCutterNearLimit = "separationCutterNearLimit".asInstanceOf[separationCutterNearLimit]
+  
+  @js.native
+  sealed trait separationCutterOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterOffline: separationCutterOffline = "separationCutterOffline".asInstanceOf[separationCutterOffline]
+  
+  @js.native
+  sealed trait separationCutterOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterOpened: separationCutterOpened = "separationCutterOpened".asInstanceOf[separationCutterOpened]
+  
+  @js.native
+  sealed trait separationCutterOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterOverTemperature: separationCutterOverTemperature = "separationCutterOverTemperature".asInstanceOf[separationCutterOverTemperature]
+  
+  @js.native
+  sealed trait separationCutterPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterPowerSaver: separationCutterPowerSaver = "separationCutterPowerSaver".asInstanceOf[separationCutterPowerSaver]
+  
+  @js.native
+  sealed trait separationCutterRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterRecoverableFailure: separationCutterRecoverableFailure = "separationCutterRecoverableFailure".asInstanceOf[separationCutterRecoverableFailure]
+  
+  @js.native
+  sealed trait separationCutterRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterRecoverableStorage: separationCutterRecoverableStorage = "separationCutterRecoverableStorage".asInstanceOf[separationCutterRecoverableStorage]
+  
+  @js.native
+  sealed trait separationCutterRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterRemoved: separationCutterRemoved = "separationCutterRemoved".asInstanceOf[separationCutterRemoved]
+  
+  @js.native
+  sealed trait separationCutterResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterResourceAdded: separationCutterResourceAdded = "separationCutterResourceAdded".asInstanceOf[separationCutterResourceAdded]
+  
+  @js.native
+  sealed trait separationCutterResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterResourceRemoved: separationCutterResourceRemoved = "separationCutterResourceRemoved".asInstanceOf[separationCutterResourceRemoved]
+  
+  @js.native
+  sealed trait separationCutterThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterThermistorFailure: separationCutterThermistorFailure = "separationCutterThermistorFailure".asInstanceOf[separationCutterThermistorFailure]
+  
+  @js.native
+  sealed trait separationCutterTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterTimingFailure: separationCutterTimingFailure = "separationCutterTimingFailure".asInstanceOf[separationCutterTimingFailure]
+  
+  @js.native
+  sealed trait separationCutterTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterTurnedOff: separationCutterTurnedOff = "separationCutterTurnedOff".asInstanceOf[separationCutterTurnedOff]
+  
+  @js.native
+  sealed trait separationCutterTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterTurnedOn: separationCutterTurnedOn = "separationCutterTurnedOn".asInstanceOf[separationCutterTurnedOn]
+  
+  @js.native
+  sealed trait separationCutterUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterUnderTemperature: separationCutterUnderTemperature = "separationCutterUnderTemperature".asInstanceOf[separationCutterUnderTemperature]
+  
+  @js.native
+  sealed trait separationCutterUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterUnrecoverableFailure: separationCutterUnrecoverableFailure = "separationCutterUnrecoverableFailure".asInstanceOf[separationCutterUnrecoverableFailure]
+  
+  @js.native
+  sealed trait separationCutterUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterUnrecoverableStorageError: separationCutterUnrecoverableStorageError = "separationCutterUnrecoverableStorageError".asInstanceOf[separationCutterUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait separationCutterWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def separationCutterWarmingUp: separationCutterWarmingUp = "separationCutterWarmingUp".asInstanceOf[separationCutterWarmingUp]
+  
+  @js.native
   sealed trait seriesMaster
     extends StObject
        with EventType
@@ -5226,6 +10679,48 @@ object microsoftGraphStrings {
     extends StObject
        with LogonType
   inline def service: service = "service".asInstanceOf[service]
+  
+  @js.native
+  sealed trait serviceDefault
+    extends StObject
+       with AccessPackageCatalogType
+  inline def serviceDefault: serviceDefault = "serviceDefault".asInstanceOf[serviceDefault]
+  
+  @js.native
+  sealed trait serviceDegradation
+    extends StObject
+       with ServiceHealthStatus
+  inline def serviceDegradation: serviceDegradation = "serviceDegradation".asInstanceOf[serviceDegradation]
+  
+  @js.native
+  sealed trait serviceInterruption
+    extends StObject
+       with ServiceHealthStatus
+  inline def serviceInterruption: serviceInterruption = "serviceInterruption".asInstanceOf[serviceInterruption]
+  
+  @js.native
+  sealed trait serviceManaged
+    extends StObject
+       with AccessPackageCatalogType
+  inline def serviceManaged: serviceManaged = "serviceManaged".asInstanceOf[serviceManaged]
+  
+  @js.native
+  sealed trait serviceOperational
+    extends StObject
+       with ServiceHealthStatus
+  inline def serviceOperational: serviceOperational = "serviceOperational".asInstanceOf[serviceOperational]
+  
+  @js.native
+  sealed trait servicePrincipal
+    extends StObject
+       with AccessPackageSubjectType
+  inline def servicePrincipal: servicePrincipal = "servicePrincipal".asInstanceOf[servicePrincipal]
+  
+  @js.native
+  sealed trait serviceRestored
+    extends StObject
+       with ServiceHealthStatus
+  inline def serviceRestored: serviceRestored = "serviceRestored".asInstanceOf[serviceRestored]
   
   @js.native
   sealed trait serviceToService
@@ -5276,6 +10771,13 @@ object microsoftGraphStrings {
   inline def sharePoint: sharePoint = "sharePoint".asInstanceOf[sharePoint]
   
   @js.native
+  sealed trait shared
+    extends StObject
+       with ChannelMembershipType
+       with UserPurpose
+  inline def shared: shared = "shared".asInstanceOf[shared]
+  
+  @js.native
   sealed trait sharedDeviceUserLoggedInError
     extends StObject
        with IosUpdatesInstallStatus
@@ -5294,10 +10796,232 @@ object microsoftGraphStrings {
   inline def sharer: sharer = "sharer".asInstanceOf[sharer]
   
   @js.native
+  sealed trait sheetRotatorAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorAdded: sheetRotatorAdded = "sheetRotatorAdded".asInstanceOf[sheetRotatorAdded]
+  
+  @js.native
+  sealed trait sheetRotatorAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorAlmostEmpty: sheetRotatorAlmostEmpty = "sheetRotatorAlmostEmpty".asInstanceOf[sheetRotatorAlmostEmpty]
+  
+  @js.native
+  sealed trait sheetRotatorAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorAlmostFull: sheetRotatorAlmostFull = "sheetRotatorAlmostFull".asInstanceOf[sheetRotatorAlmostFull]
+  
+  @js.native
+  sealed trait sheetRotatorAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorAtLimit: sheetRotatorAtLimit = "sheetRotatorAtLimit".asInstanceOf[sheetRotatorAtLimit]
+  
+  @js.native
+  sealed trait sheetRotatorClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorClosed: sheetRotatorClosed = "sheetRotatorClosed".asInstanceOf[sheetRotatorClosed]
+  
+  @js.native
+  sealed trait sheetRotatorConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorConfigurationChange: sheetRotatorConfigurationChange = "sheetRotatorConfigurationChange".asInstanceOf[sheetRotatorConfigurationChange]
+  
+  @js.native
+  sealed trait sheetRotatorCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorCoverClosed: sheetRotatorCoverClosed = "sheetRotatorCoverClosed".asInstanceOf[sheetRotatorCoverClosed]
+  
+  @js.native
+  sealed trait sheetRotatorCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorCoverOpen: sheetRotatorCoverOpen = "sheetRotatorCoverOpen".asInstanceOf[sheetRotatorCoverOpen]
+  
+  @js.native
+  sealed trait sheetRotatorEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorEmpty: sheetRotatorEmpty = "sheetRotatorEmpty".asInstanceOf[sheetRotatorEmpty]
+  
+  @js.native
+  sealed trait sheetRotatorFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorFull: sheetRotatorFull = "sheetRotatorFull".asInstanceOf[sheetRotatorFull]
+  
+  @js.native
+  sealed trait sheetRotatorInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorInterlockClosed: sheetRotatorInterlockClosed = "sheetRotatorInterlockClosed".asInstanceOf[sheetRotatorInterlockClosed]
+  
+  @js.native
+  sealed trait sheetRotatorInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorInterlockOpen: sheetRotatorInterlockOpen = "sheetRotatorInterlockOpen".asInstanceOf[sheetRotatorInterlockOpen]
+  
+  @js.native
+  sealed trait sheetRotatorJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorJam: sheetRotatorJam = "sheetRotatorJam".asInstanceOf[sheetRotatorJam]
+  
+  @js.native
+  sealed trait sheetRotatorLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorLifeAlmostOver: sheetRotatorLifeAlmostOver = "sheetRotatorLifeAlmostOver".asInstanceOf[sheetRotatorLifeAlmostOver]
+  
+  @js.native
+  sealed trait sheetRotatorLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorLifeOver: sheetRotatorLifeOver = "sheetRotatorLifeOver".asInstanceOf[sheetRotatorLifeOver]
+  
+  @js.native
+  sealed trait sheetRotatorMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorMemoryExhausted: sheetRotatorMemoryExhausted = "sheetRotatorMemoryExhausted".asInstanceOf[sheetRotatorMemoryExhausted]
+  
+  @js.native
+  sealed trait sheetRotatorMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorMissing: sheetRotatorMissing = "sheetRotatorMissing".asInstanceOf[sheetRotatorMissing]
+  
+  @js.native
+  sealed trait sheetRotatorMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorMotorFailure: sheetRotatorMotorFailure = "sheetRotatorMotorFailure".asInstanceOf[sheetRotatorMotorFailure]
+  
+  @js.native
+  sealed trait sheetRotatorNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorNearLimit: sheetRotatorNearLimit = "sheetRotatorNearLimit".asInstanceOf[sheetRotatorNearLimit]
+  
+  @js.native
+  sealed trait sheetRotatorOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorOffline: sheetRotatorOffline = "sheetRotatorOffline".asInstanceOf[sheetRotatorOffline]
+  
+  @js.native
+  sealed trait sheetRotatorOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorOpened: sheetRotatorOpened = "sheetRotatorOpened".asInstanceOf[sheetRotatorOpened]
+  
+  @js.native
+  sealed trait sheetRotatorOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorOverTemperature: sheetRotatorOverTemperature = "sheetRotatorOverTemperature".asInstanceOf[sheetRotatorOverTemperature]
+  
+  @js.native
+  sealed trait sheetRotatorPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorPowerSaver: sheetRotatorPowerSaver = "sheetRotatorPowerSaver".asInstanceOf[sheetRotatorPowerSaver]
+  
+  @js.native
+  sealed trait sheetRotatorRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorRecoverableFailure: sheetRotatorRecoverableFailure = "sheetRotatorRecoverableFailure".asInstanceOf[sheetRotatorRecoverableFailure]
+  
+  @js.native
+  sealed trait sheetRotatorRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorRecoverableStorage: sheetRotatorRecoverableStorage = "sheetRotatorRecoverableStorage".asInstanceOf[sheetRotatorRecoverableStorage]
+  
+  @js.native
+  sealed trait sheetRotatorRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorRemoved: sheetRotatorRemoved = "sheetRotatorRemoved".asInstanceOf[sheetRotatorRemoved]
+  
+  @js.native
+  sealed trait sheetRotatorResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorResourceAdded: sheetRotatorResourceAdded = "sheetRotatorResourceAdded".asInstanceOf[sheetRotatorResourceAdded]
+  
+  @js.native
+  sealed trait sheetRotatorResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorResourceRemoved: sheetRotatorResourceRemoved = "sheetRotatorResourceRemoved".asInstanceOf[sheetRotatorResourceRemoved]
+  
+  @js.native
+  sealed trait sheetRotatorThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorThermistorFailure: sheetRotatorThermistorFailure = "sheetRotatorThermistorFailure".asInstanceOf[sheetRotatorThermistorFailure]
+  
+  @js.native
+  sealed trait sheetRotatorTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorTimingFailure: sheetRotatorTimingFailure = "sheetRotatorTimingFailure".asInstanceOf[sheetRotatorTimingFailure]
+  
+  @js.native
+  sealed trait sheetRotatorTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorTurnedOff: sheetRotatorTurnedOff = "sheetRotatorTurnedOff".asInstanceOf[sheetRotatorTurnedOff]
+  
+  @js.native
+  sealed trait sheetRotatorTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorTurnedOn: sheetRotatorTurnedOn = "sheetRotatorTurnedOn".asInstanceOf[sheetRotatorTurnedOn]
+  
+  @js.native
+  sealed trait sheetRotatorUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorUnderTemperature: sheetRotatorUnderTemperature = "sheetRotatorUnderTemperature".asInstanceOf[sheetRotatorUnderTemperature]
+  
+  @js.native
+  sealed trait sheetRotatorUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorUnrecoverableFailure: sheetRotatorUnrecoverableFailure = "sheetRotatorUnrecoverableFailure".asInstanceOf[sheetRotatorUnrecoverableFailure]
+  
+  @js.native
+  sealed trait sheetRotatorUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorUnrecoverableStorageError: sheetRotatorUnrecoverableStorageError = "sheetRotatorUnrecoverableStorageError".asInstanceOf[sheetRotatorUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait sheetRotatorWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def sheetRotatorWarmingUp: sheetRotatorWarmingUp = "sheetRotatorWarmingUp".asInstanceOf[sheetRotatorWarmingUp]
+  
+  @js.native
   sealed trait shift
     extends StObject
        with WorkforceIntegrationSupportedEntities
   inline def shift: shift = "shift".asInstanceOf[shift]
+  
+  @js.native
+  sealed trait shortEdgeFirst
+    extends StObject
+       with PrinterFeedOrientation
+  inline def shortEdgeFirst: shortEdgeFirst = "shortEdgeFirst".asInstanceOf[shortEdgeFirst]
   
   @js.native
   sealed trait show
@@ -5330,16 +11054,70 @@ object microsoftGraphStrings {
   inline def showReboot: showReboot = "showReboot".asInstanceOf[showReboot]
   
   @js.native
+  sealed trait shrinkToFit
+    extends StObject
+       with PrintScaling
+  inline def shrinkToFit: shrinkToFit = "shrinkToFit".asInstanceOf[shrinkToFit]
+  
+  @js.native
+  sealed trait shutdown
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def shutdown: shutdown = "shutdown".asInstanceOf[shutdown]
+  
+  @js.native
   sealed trait sideloaded
     extends StObject
        with TeamsAppDistributionMethod
   inline def sideloaded: sideloaded = "sideloaded".asInstanceOf[sideloaded]
   
   @js.native
+  sealed trait signIn
+    extends StObject
+       with UserFlowType
+  inline def signIn: signIn = "signIn".asInstanceOf[signIn]
+  
+  @js.native
+  sealed trait signUp
+    extends StObject
+       with UserFlowType
+  inline def signUp: signUp = "signUp".asInstanceOf[signUp]
+  
+  @js.native
+  sealed trait signUpOrSignIn
+    extends StObject
+       with UserFlowType
+  inline def signUpOrSignIn: signUpOrSignIn = "signUpOrSignIn".asInstanceOf[signUpOrSignIn]
+  
+  @js.native
+  sealed trait signin_
+    extends StObject
+       with ActivityType
+  inline def signin_ : signin_ = "signin".asInstanceOf[signin_]
+  
+  @js.native
   sealed trait silentUpdate
     extends StObject
        with MeetingRequestType
   inline def silentUpdate: silentUpdate = "silentUpdate".asInstanceOf[silentUpdate]
+  
+  @js.native
+  sealed trait silk
+    extends StObject
+       with AudioCodec
+  inline def silk: silk = "silk".asInstanceOf[silk]
+  
+  @js.native
+  sealed trait silkNarrow
+    extends StObject
+       with AudioCodec
+  inline def silkNarrow: silkNarrow = "silkNarrow".asInstanceOf[silkNarrow]
+  
+  @js.native
+  sealed trait silkWide
+    extends StObject
+       with AudioCodec
+  inline def silkWide: silkWide = "silkWide".asInstanceOf[silkWide]
   
   @js.native
   sealed trait simpleDownload
@@ -5360,6 +11138,12 @@ object microsoftGraphStrings {
   inline def singleTenantApp: singleTenantApp = "singleTenantApp".asInstanceOf[singleTenantApp]
   
   @js.native
+  sealed trait siren
+    extends StObject
+       with AudioCodec
+  inline def siren: siren = "siren".asInstanceOf[siren]
+  
+  @js.native
   sealed trait sis
     extends StObject
        with EducationExternalSource
@@ -5369,7 +11153,14 @@ object microsoftGraphStrings {
   sealed trait site
     extends StObject
        with EntityType
+       with SourceType
   inline def site: site = "site".asInstanceOf[site]
+  
+  @js.native
+  sealed trait siteCollection
+    extends StObject
+       with TermGroupScope
+  inline def siteCollection: siteCollection = "siteCollection".asInstanceOf[siteCollection]
   
   @js.native
   sealed trait six
@@ -5382,6 +11173,12 @@ object microsoftGraphStrings {
     extends StObject
        with Win32LobAppFileSystemOperationType
   inline def sizeInMB: sizeInMB = "sizeInMB".asInstanceOf[sizeInMB]
+  
+  @js.native
+  sealed trait skipped
+    extends StObject
+       with ProvisioningResult
+  inline def skipped: skipped = "skipped".asInstanceOf[skipped]
   
   @js.native
   sealed trait skypeForBusiness
@@ -5452,6 +11249,234 @@ object microsoftGraphStrings {
   inline def skypeTranslator: skypeTranslator = "skypeTranslator".asInstanceOf[skypeTranslator]
   
   @js.native
+  sealed trait skypeUser
+    extends StObject
+       with TeamworkUserIdentityType
+  inline def skypeUser: skypeUser = "skypeUser".asInstanceOf[skypeUser]
+  
+  @js.native
+  sealed trait slitterAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterAdded: slitterAdded = "slitterAdded".asInstanceOf[slitterAdded]
+  
+  @js.native
+  sealed trait slitterAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterAlmostEmpty: slitterAlmostEmpty = "slitterAlmostEmpty".asInstanceOf[slitterAlmostEmpty]
+  
+  @js.native
+  sealed trait slitterAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterAlmostFull: slitterAlmostFull = "slitterAlmostFull".asInstanceOf[slitterAlmostFull]
+  
+  @js.native
+  sealed trait slitterAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterAtLimit: slitterAtLimit = "slitterAtLimit".asInstanceOf[slitterAtLimit]
+  
+  @js.native
+  sealed trait slitterClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterClosed: slitterClosed = "slitterClosed".asInstanceOf[slitterClosed]
+  
+  @js.native
+  sealed trait slitterConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterConfigurationChange: slitterConfigurationChange = "slitterConfigurationChange".asInstanceOf[slitterConfigurationChange]
+  
+  @js.native
+  sealed trait slitterCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterCoverClosed: slitterCoverClosed = "slitterCoverClosed".asInstanceOf[slitterCoverClosed]
+  
+  @js.native
+  sealed trait slitterCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterCoverOpen: slitterCoverOpen = "slitterCoverOpen".asInstanceOf[slitterCoverOpen]
+  
+  @js.native
+  sealed trait slitterEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterEmpty: slitterEmpty = "slitterEmpty".asInstanceOf[slitterEmpty]
+  
+  @js.native
+  sealed trait slitterFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterFull: slitterFull = "slitterFull".asInstanceOf[slitterFull]
+  
+  @js.native
+  sealed trait slitterInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterInterlockClosed: slitterInterlockClosed = "slitterInterlockClosed".asInstanceOf[slitterInterlockClosed]
+  
+  @js.native
+  sealed trait slitterInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterInterlockOpen: slitterInterlockOpen = "slitterInterlockOpen".asInstanceOf[slitterInterlockOpen]
+  
+  @js.native
+  sealed trait slitterJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterJam: slitterJam = "slitterJam".asInstanceOf[slitterJam]
+  
+  @js.native
+  sealed trait slitterLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterLifeAlmostOver: slitterLifeAlmostOver = "slitterLifeAlmostOver".asInstanceOf[slitterLifeAlmostOver]
+  
+  @js.native
+  sealed trait slitterLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterLifeOver: slitterLifeOver = "slitterLifeOver".asInstanceOf[slitterLifeOver]
+  
+  @js.native
+  sealed trait slitterMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterMemoryExhausted: slitterMemoryExhausted = "slitterMemoryExhausted".asInstanceOf[slitterMemoryExhausted]
+  
+  @js.native
+  sealed trait slitterMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterMissing: slitterMissing = "slitterMissing".asInstanceOf[slitterMissing]
+  
+  @js.native
+  sealed trait slitterMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterMotorFailure: slitterMotorFailure = "slitterMotorFailure".asInstanceOf[slitterMotorFailure]
+  
+  @js.native
+  sealed trait slitterNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterNearLimit: slitterNearLimit = "slitterNearLimit".asInstanceOf[slitterNearLimit]
+  
+  @js.native
+  sealed trait slitterOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterOffline: slitterOffline = "slitterOffline".asInstanceOf[slitterOffline]
+  
+  @js.native
+  sealed trait slitterOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterOpened: slitterOpened = "slitterOpened".asInstanceOf[slitterOpened]
+  
+  @js.native
+  sealed trait slitterOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterOverTemperature: slitterOverTemperature = "slitterOverTemperature".asInstanceOf[slitterOverTemperature]
+  
+  @js.native
+  sealed trait slitterPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterPowerSaver: slitterPowerSaver = "slitterPowerSaver".asInstanceOf[slitterPowerSaver]
+  
+  @js.native
+  sealed trait slitterRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterRecoverableFailure: slitterRecoverableFailure = "slitterRecoverableFailure".asInstanceOf[slitterRecoverableFailure]
+  
+  @js.native
+  sealed trait slitterRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterRecoverableStorage: slitterRecoverableStorage = "slitterRecoverableStorage".asInstanceOf[slitterRecoverableStorage]
+  
+  @js.native
+  sealed trait slitterRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterRemoved: slitterRemoved = "slitterRemoved".asInstanceOf[slitterRemoved]
+  
+  @js.native
+  sealed trait slitterResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterResourceAdded: slitterResourceAdded = "slitterResourceAdded".asInstanceOf[slitterResourceAdded]
+  
+  @js.native
+  sealed trait slitterResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterResourceRemoved: slitterResourceRemoved = "slitterResourceRemoved".asInstanceOf[slitterResourceRemoved]
+  
+  @js.native
+  sealed trait slitterThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterThermistorFailure: slitterThermistorFailure = "slitterThermistorFailure".asInstanceOf[slitterThermistorFailure]
+  
+  @js.native
+  sealed trait slitterTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterTimingFailure: slitterTimingFailure = "slitterTimingFailure".asInstanceOf[slitterTimingFailure]
+  
+  @js.native
+  sealed trait slitterTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterTurnedOff: slitterTurnedOff = "slitterTurnedOff".asInstanceOf[slitterTurnedOff]
+  
+  @js.native
+  sealed trait slitterTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterTurnedOn: slitterTurnedOn = "slitterTurnedOn".asInstanceOf[slitterTurnedOn]
+  
+  @js.native
+  sealed trait slitterUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterUnderTemperature: slitterUnderTemperature = "slitterUnderTemperature".asInstanceOf[slitterUnderTemperature]
+  
+  @js.native
+  sealed trait slitterUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterUnrecoverableFailure: slitterUnrecoverableFailure = "slitterUnrecoverableFailure".asInstanceOf[slitterUnrecoverableFailure]
+  
+  @js.native
+  sealed trait slitterUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterUnrecoverableStorageError: slitterUnrecoverableStorageError = "slitterUnrecoverableStorageError".asInstanceOf[slitterUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait slitterWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def slitterWarmingUp: slitterWarmingUp = "slitterWarmingUp".asInstanceOf[slitterWarmingUp]
+  
+  @js.native
+  sealed trait slotsAvailable
+    extends StObject
+       with BookingsAvailabilityStatus
+  inline def slotsAvailable: slotsAvailable = "slotsAvailable".asInstanceOf[slotsAvailable]
+  
+  @js.native
   sealed trait softReboot
     extends StObject
        with Win32LobAppReturnCodeType
@@ -5462,6 +11487,30 @@ object microsoftGraphStrings {
     extends StObject
        with ThreatCategory
   inline def spam: spam = "spam".asInstanceOf[spam]
+  
+  @js.native
+  sealed trait specificConnectedOrganizationUsers
+    extends StObject
+       with AllowedTargetScope
+  inline def specificConnectedOrganizationUsers: specificConnectedOrganizationUsers = "specificConnectedOrganizationUsers".asInstanceOf[specificConnectedOrganizationUsers]
+  
+  @js.native
+  sealed trait specificDirectoryServicePrincipals
+    extends StObject
+       with AllowedTargetScope
+  inline def specificDirectoryServicePrincipals: specificDirectoryServicePrincipals = "specificDirectoryServicePrincipals".asInstanceOf[specificDirectoryServicePrincipals]
+  
+  @js.native
+  sealed trait specificDirectoryUsers
+    extends StObject
+       with AllowedTargetScope
+  inline def specificDirectoryUsers: specificDirectoryUsers = "specificDirectoryUsers".asInstanceOf[specificDirectoryUsers]
+  
+  @js.native
+  sealed trait spoolAreaFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def spoolAreaFull: spoolAreaFull = "spoolAreaFull".asInstanceOf[spoolAreaFull]
   
   @js.native
   sealed trait spx
@@ -5476,6 +11525,240 @@ object microsoftGraphStrings {
   inline def spxII: spxII = "spxII".asInstanceOf[spxII]
   
   @js.native
+  sealed trait ssd
+    extends StObject
+       with DiskType
+  inline def ssd: ssd = "ssd".asInstanceOf[ssd]
+  
+  @js.native
+  sealed trait stackerAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerAdded: stackerAdded = "stackerAdded".asInstanceOf[stackerAdded]
+  
+  @js.native
+  sealed trait stackerAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerAlmostEmpty: stackerAlmostEmpty = "stackerAlmostEmpty".asInstanceOf[stackerAlmostEmpty]
+  
+  @js.native
+  sealed trait stackerAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerAlmostFull: stackerAlmostFull = "stackerAlmostFull".asInstanceOf[stackerAlmostFull]
+  
+  @js.native
+  sealed trait stackerAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerAtLimit: stackerAtLimit = "stackerAtLimit".asInstanceOf[stackerAtLimit]
+  
+  @js.native
+  sealed trait stackerClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerClosed: stackerClosed = "stackerClosed".asInstanceOf[stackerClosed]
+  
+  @js.native
+  sealed trait stackerConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerConfigurationChange: stackerConfigurationChange = "stackerConfigurationChange".asInstanceOf[stackerConfigurationChange]
+  
+  @js.native
+  sealed trait stackerCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerCoverClosed: stackerCoverClosed = "stackerCoverClosed".asInstanceOf[stackerCoverClosed]
+  
+  @js.native
+  sealed trait stackerCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerCoverOpen: stackerCoverOpen = "stackerCoverOpen".asInstanceOf[stackerCoverOpen]
+  
+  @js.native
+  sealed trait stackerEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerEmpty: stackerEmpty = "stackerEmpty".asInstanceOf[stackerEmpty]
+  
+  @js.native
+  sealed trait stackerFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerFull: stackerFull = "stackerFull".asInstanceOf[stackerFull]
+  
+  @js.native
+  sealed trait stackerInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerInterlockClosed: stackerInterlockClosed = "stackerInterlockClosed".asInstanceOf[stackerInterlockClosed]
+  
+  @js.native
+  sealed trait stackerInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerInterlockOpen: stackerInterlockOpen = "stackerInterlockOpen".asInstanceOf[stackerInterlockOpen]
+  
+  @js.native
+  sealed trait stackerJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerJam: stackerJam = "stackerJam".asInstanceOf[stackerJam]
+  
+  @js.native
+  sealed trait stackerLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerLifeAlmostOver: stackerLifeAlmostOver = "stackerLifeAlmostOver".asInstanceOf[stackerLifeAlmostOver]
+  
+  @js.native
+  sealed trait stackerLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerLifeOver: stackerLifeOver = "stackerLifeOver".asInstanceOf[stackerLifeOver]
+  
+  @js.native
+  sealed trait stackerMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerMemoryExhausted: stackerMemoryExhausted = "stackerMemoryExhausted".asInstanceOf[stackerMemoryExhausted]
+  
+  @js.native
+  sealed trait stackerMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerMissing: stackerMissing = "stackerMissing".asInstanceOf[stackerMissing]
+  
+  @js.native
+  sealed trait stackerMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerMotorFailure: stackerMotorFailure = "stackerMotorFailure".asInstanceOf[stackerMotorFailure]
+  
+  @js.native
+  sealed trait stackerNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerNearLimit: stackerNearLimit = "stackerNearLimit".asInstanceOf[stackerNearLimit]
+  
+  @js.native
+  sealed trait stackerOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerOffline: stackerOffline = "stackerOffline".asInstanceOf[stackerOffline]
+  
+  @js.native
+  sealed trait stackerOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerOpened: stackerOpened = "stackerOpened".asInstanceOf[stackerOpened]
+  
+  @js.native
+  sealed trait stackerOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerOverTemperature: stackerOverTemperature = "stackerOverTemperature".asInstanceOf[stackerOverTemperature]
+  
+  @js.native
+  sealed trait stackerPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerPowerSaver: stackerPowerSaver = "stackerPowerSaver".asInstanceOf[stackerPowerSaver]
+  
+  @js.native
+  sealed trait stackerRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerRecoverableFailure: stackerRecoverableFailure = "stackerRecoverableFailure".asInstanceOf[stackerRecoverableFailure]
+  
+  @js.native
+  sealed trait stackerRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerRecoverableStorage: stackerRecoverableStorage = "stackerRecoverableStorage".asInstanceOf[stackerRecoverableStorage]
+  
+  @js.native
+  sealed trait stackerRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerRemoved: stackerRemoved = "stackerRemoved".asInstanceOf[stackerRemoved]
+  
+  @js.native
+  sealed trait stackerResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerResourceAdded: stackerResourceAdded = "stackerResourceAdded".asInstanceOf[stackerResourceAdded]
+  
+  @js.native
+  sealed trait stackerResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerResourceRemoved: stackerResourceRemoved = "stackerResourceRemoved".asInstanceOf[stackerResourceRemoved]
+  
+  @js.native
+  sealed trait stackerThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerThermistorFailure: stackerThermistorFailure = "stackerThermistorFailure".asInstanceOf[stackerThermistorFailure]
+  
+  @js.native
+  sealed trait stackerTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerTimingFailure: stackerTimingFailure = "stackerTimingFailure".asInstanceOf[stackerTimingFailure]
+  
+  @js.native
+  sealed trait stackerTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerTurnedOff: stackerTurnedOff = "stackerTurnedOff".asInstanceOf[stackerTurnedOff]
+  
+  @js.native
+  sealed trait stackerTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerTurnedOn: stackerTurnedOn = "stackerTurnedOn".asInstanceOf[stackerTurnedOn]
+  
+  @js.native
+  sealed trait stackerUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerUnderTemperature: stackerUnderTemperature = "stackerUnderTemperature".asInstanceOf[stackerUnderTemperature]
+  
+  @js.native
+  sealed trait stackerUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerUnrecoverableFailure: stackerUnrecoverableFailure = "stackerUnrecoverableFailure".asInstanceOf[stackerUnrecoverableFailure]
+  
+  @js.native
+  sealed trait stackerUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerUnrecoverableStorageError: stackerUnrecoverableStorageError = "stackerUnrecoverableStorageError".asInstanceOf[stackerUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait stackerWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stackerWarmingUp: stackerWarmingUp = "stackerWarmingUp".asInstanceOf[stackerWarmingUp]
+  
+  @js.native
+  sealed trait staff
+    extends StObject
+       with BookingReminderRecipients
+  inline def staff: staff = "staff".asInstanceOf[staff]
+  
+  @js.native
+  sealed trait stagedDelete
+    extends StObject
+       with ProvisioningAction
+  inline def stagedDelete: stagedDelete = "stagedDelete".asInstanceOf[stagedDelete]
+  
+  @js.native
   sealed trait standard
     extends StObject
        with BookingType
@@ -5484,16 +11767,575 @@ object microsoftGraphStrings {
   inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
+  sealed trait standby
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def standby: standby = "standby".asInstanceOf[standby]
+  
+  @js.native
+  sealed trait staple
+    extends StObject
+       with PrintFinishing
+  inline def staple: staple = "staple".asInstanceOf[staple]
+  
+  @js.native
+  sealed trait stapleBottomLeft
+    extends StObject
+       with PrintFinishing
+  inline def stapleBottomLeft: stapleBottomLeft = "stapleBottomLeft".asInstanceOf[stapleBottomLeft]
+  
+  @js.native
+  sealed trait stapleBottomRight
+    extends StObject
+       with PrintFinishing
+  inline def stapleBottomRight: stapleBottomRight = "stapleBottomRight".asInstanceOf[stapleBottomRight]
+  
+  @js.native
+  sealed trait stapleDualBottom
+    extends StObject
+       with PrintFinishing
+  inline def stapleDualBottom: stapleDualBottom = "stapleDualBottom".asInstanceOf[stapleDualBottom]
+  
+  @js.native
+  sealed trait stapleDualLeft
+    extends StObject
+       with PrintFinishing
+  inline def stapleDualLeft: stapleDualLeft = "stapleDualLeft".asInstanceOf[stapleDualLeft]
+  
+  @js.native
+  sealed trait stapleDualRight
+    extends StObject
+       with PrintFinishing
+  inline def stapleDualRight: stapleDualRight = "stapleDualRight".asInstanceOf[stapleDualRight]
+  
+  @js.native
+  sealed trait stapleDualTop
+    extends StObject
+       with PrintFinishing
+  inline def stapleDualTop: stapleDualTop = "stapleDualTop".asInstanceOf[stapleDualTop]
+  
+  @js.native
+  sealed trait stapleTopLeft
+    extends StObject
+       with PrintFinishing
+  inline def stapleTopLeft: stapleTopLeft = "stapleTopLeft".asInstanceOf[stapleTopLeft]
+  
+  @js.native
+  sealed trait stapleTopRight
+    extends StObject
+       with PrintFinishing
+  inline def stapleTopRight: stapleTopRight = "stapleTopRight".asInstanceOf[stapleTopRight]
+  
+  @js.native
+  sealed trait staplerAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerAdded: staplerAdded = "staplerAdded".asInstanceOf[staplerAdded]
+  
+  @js.native
+  sealed trait staplerAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerAlmostEmpty: staplerAlmostEmpty = "staplerAlmostEmpty".asInstanceOf[staplerAlmostEmpty]
+  
+  @js.native
+  sealed trait staplerAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerAlmostFull: staplerAlmostFull = "staplerAlmostFull".asInstanceOf[staplerAlmostFull]
+  
+  @js.native
+  sealed trait staplerAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerAtLimit: staplerAtLimit = "staplerAtLimit".asInstanceOf[staplerAtLimit]
+  
+  @js.native
+  sealed trait staplerClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerClosed: staplerClosed = "staplerClosed".asInstanceOf[staplerClosed]
+  
+  @js.native
+  sealed trait staplerConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerConfigurationChange: staplerConfigurationChange = "staplerConfigurationChange".asInstanceOf[staplerConfigurationChange]
+  
+  @js.native
+  sealed trait staplerCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerCoverClosed: staplerCoverClosed = "staplerCoverClosed".asInstanceOf[staplerCoverClosed]
+  
+  @js.native
+  sealed trait staplerCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerCoverOpen: staplerCoverOpen = "staplerCoverOpen".asInstanceOf[staplerCoverOpen]
+  
+  @js.native
+  sealed trait staplerEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerEmpty: staplerEmpty = "staplerEmpty".asInstanceOf[staplerEmpty]
+  
+  @js.native
+  sealed trait staplerFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerFull: staplerFull = "staplerFull".asInstanceOf[staplerFull]
+  
+  @js.native
+  sealed trait staplerInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerInterlockClosed: staplerInterlockClosed = "staplerInterlockClosed".asInstanceOf[staplerInterlockClosed]
+  
+  @js.native
+  sealed trait staplerInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerInterlockOpen: staplerInterlockOpen = "staplerInterlockOpen".asInstanceOf[staplerInterlockOpen]
+  
+  @js.native
+  sealed trait staplerJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerJam: staplerJam = "staplerJam".asInstanceOf[staplerJam]
+  
+  @js.native
+  sealed trait staplerLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerLifeAlmostOver: staplerLifeAlmostOver = "staplerLifeAlmostOver".asInstanceOf[staplerLifeAlmostOver]
+  
+  @js.native
+  sealed trait staplerLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerLifeOver: staplerLifeOver = "staplerLifeOver".asInstanceOf[staplerLifeOver]
+  
+  @js.native
+  sealed trait staplerMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerMemoryExhausted: staplerMemoryExhausted = "staplerMemoryExhausted".asInstanceOf[staplerMemoryExhausted]
+  
+  @js.native
+  sealed trait staplerMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerMissing: staplerMissing = "staplerMissing".asInstanceOf[staplerMissing]
+  
+  @js.native
+  sealed trait staplerMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerMotorFailure: staplerMotorFailure = "staplerMotorFailure".asInstanceOf[staplerMotorFailure]
+  
+  @js.native
+  sealed trait staplerNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerNearLimit: staplerNearLimit = "staplerNearLimit".asInstanceOf[staplerNearLimit]
+  
+  @js.native
+  sealed trait staplerOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerOffline: staplerOffline = "staplerOffline".asInstanceOf[staplerOffline]
+  
+  @js.native
+  sealed trait staplerOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerOpened: staplerOpened = "staplerOpened".asInstanceOf[staplerOpened]
+  
+  @js.native
+  sealed trait staplerOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerOverTemperature: staplerOverTemperature = "staplerOverTemperature".asInstanceOf[staplerOverTemperature]
+  
+  @js.native
+  sealed trait staplerPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerPowerSaver: staplerPowerSaver = "staplerPowerSaver".asInstanceOf[staplerPowerSaver]
+  
+  @js.native
+  sealed trait staplerRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerRecoverableFailure: staplerRecoverableFailure = "staplerRecoverableFailure".asInstanceOf[staplerRecoverableFailure]
+  
+  @js.native
+  sealed trait staplerRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerRecoverableStorage: staplerRecoverableStorage = "staplerRecoverableStorage".asInstanceOf[staplerRecoverableStorage]
+  
+  @js.native
+  sealed trait staplerRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerRemoved: staplerRemoved = "staplerRemoved".asInstanceOf[staplerRemoved]
+  
+  @js.native
+  sealed trait staplerResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerResourceAdded: staplerResourceAdded = "staplerResourceAdded".asInstanceOf[staplerResourceAdded]
+  
+  @js.native
+  sealed trait staplerResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerResourceRemoved: staplerResourceRemoved = "staplerResourceRemoved".asInstanceOf[staplerResourceRemoved]
+  
+  @js.native
+  sealed trait staplerThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerThermistorFailure: staplerThermistorFailure = "staplerThermistorFailure".asInstanceOf[staplerThermistorFailure]
+  
+  @js.native
+  sealed trait staplerTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerTimingFailure: staplerTimingFailure = "staplerTimingFailure".asInstanceOf[staplerTimingFailure]
+  
+  @js.native
+  sealed trait staplerTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerTurnedOff: staplerTurnedOff = "staplerTurnedOff".asInstanceOf[staplerTurnedOff]
+  
+  @js.native
+  sealed trait staplerTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerTurnedOn: staplerTurnedOn = "staplerTurnedOn".asInstanceOf[staplerTurnedOn]
+  
+  @js.native
+  sealed trait staplerUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerUnderTemperature: staplerUnderTemperature = "staplerUnderTemperature".asInstanceOf[staplerUnderTemperature]
+  
+  @js.native
+  sealed trait staplerUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerUnrecoverableFailure: staplerUnrecoverableFailure = "staplerUnrecoverableFailure".asInstanceOf[staplerUnrecoverableFailure]
+  
+  @js.native
+  sealed trait staplerUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerUnrecoverableStorageError: staplerUnrecoverableStorageError = "staplerUnrecoverableStorageError".asInstanceOf[staplerUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait staplerWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def staplerWarmingUp: staplerWarmingUp = "staplerWarmingUp".asInstanceOf[staplerWarmingUp]
+  
+  @js.native
   sealed trait star
     extends StObject
        with Tone
   inline def star: star = "star".asInstanceOf[star]
   
   @js.native
+  sealed trait startingAt
+    extends StObject
+       with BookingPriceType
+  inline def startingAt: startingAt = "startingAt".asInstanceOf[startingAt]
+  
+  @js.native
+  sealed trait stayInformed
+    extends StObject
+       with ServiceUpdateCategory
+  inline def stayInformed: stayInformed = "stayInformed".asInstanceOf[stayInformed]
+  
+  @js.native
+  sealed trait stitchBottomEdge
+    extends StObject
+       with PrintFinishing
+  inline def stitchBottomEdge: stitchBottomEdge = "stitchBottomEdge".asInstanceOf[stitchBottomEdge]
+  
+  @js.native
+  sealed trait stitchEdge
+    extends StObject
+       with PrintFinishing
+  inline def stitchEdge: stitchEdge = "stitchEdge".asInstanceOf[stitchEdge]
+  
+  @js.native
+  sealed trait stitchLeftEdge
+    extends StObject
+       with PrintFinishing
+  inline def stitchLeftEdge: stitchLeftEdge = "stitchLeftEdge".asInstanceOf[stitchLeftEdge]
+  
+  @js.native
+  sealed trait stitchRightEdge
+    extends StObject
+       with PrintFinishing
+  inline def stitchRightEdge: stitchRightEdge = "stitchRightEdge".asInstanceOf[stitchRightEdge]
+  
+  @js.native
+  sealed trait stitchTopEdge
+    extends StObject
+       with PrintFinishing
+  inline def stitchTopEdge: stitchTopEdge = "stitchTopEdge".asInstanceOf[stitchTopEdge]
+  
+  @js.native
+  sealed trait stitcherAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherAdded: stitcherAdded = "stitcherAdded".asInstanceOf[stitcherAdded]
+  
+  @js.native
+  sealed trait stitcherAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherAlmostEmpty: stitcherAlmostEmpty = "stitcherAlmostEmpty".asInstanceOf[stitcherAlmostEmpty]
+  
+  @js.native
+  sealed trait stitcherAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherAlmostFull: stitcherAlmostFull = "stitcherAlmostFull".asInstanceOf[stitcherAlmostFull]
+  
+  @js.native
+  sealed trait stitcherAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherAtLimit: stitcherAtLimit = "stitcherAtLimit".asInstanceOf[stitcherAtLimit]
+  
+  @js.native
+  sealed trait stitcherClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherClosed: stitcherClosed = "stitcherClosed".asInstanceOf[stitcherClosed]
+  
+  @js.native
+  sealed trait stitcherConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherConfigurationChange: stitcherConfigurationChange = "stitcherConfigurationChange".asInstanceOf[stitcherConfigurationChange]
+  
+  @js.native
+  sealed trait stitcherCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherCoverClosed: stitcherCoverClosed = "stitcherCoverClosed".asInstanceOf[stitcherCoverClosed]
+  
+  @js.native
+  sealed trait stitcherCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherCoverOpen: stitcherCoverOpen = "stitcherCoverOpen".asInstanceOf[stitcherCoverOpen]
+  
+  @js.native
+  sealed trait stitcherEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherEmpty: stitcherEmpty = "stitcherEmpty".asInstanceOf[stitcherEmpty]
+  
+  @js.native
+  sealed trait stitcherFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherFull: stitcherFull = "stitcherFull".asInstanceOf[stitcherFull]
+  
+  @js.native
+  sealed trait stitcherInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherInterlockClosed: stitcherInterlockClosed = "stitcherInterlockClosed".asInstanceOf[stitcherInterlockClosed]
+  
+  @js.native
+  sealed trait stitcherInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherInterlockOpen: stitcherInterlockOpen = "stitcherInterlockOpen".asInstanceOf[stitcherInterlockOpen]
+  
+  @js.native
+  sealed trait stitcherJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherJam: stitcherJam = "stitcherJam".asInstanceOf[stitcherJam]
+  
+  @js.native
+  sealed trait stitcherLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherLifeAlmostOver: stitcherLifeAlmostOver = "stitcherLifeAlmostOver".asInstanceOf[stitcherLifeAlmostOver]
+  
+  @js.native
+  sealed trait stitcherLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherLifeOver: stitcherLifeOver = "stitcherLifeOver".asInstanceOf[stitcherLifeOver]
+  
+  @js.native
+  sealed trait stitcherMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherMemoryExhausted: stitcherMemoryExhausted = "stitcherMemoryExhausted".asInstanceOf[stitcherMemoryExhausted]
+  
+  @js.native
+  sealed trait stitcherMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherMissing: stitcherMissing = "stitcherMissing".asInstanceOf[stitcherMissing]
+  
+  @js.native
+  sealed trait stitcherMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherMotorFailure: stitcherMotorFailure = "stitcherMotorFailure".asInstanceOf[stitcherMotorFailure]
+  
+  @js.native
+  sealed trait stitcherNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherNearLimit: stitcherNearLimit = "stitcherNearLimit".asInstanceOf[stitcherNearLimit]
+  
+  @js.native
+  sealed trait stitcherOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherOffline: stitcherOffline = "stitcherOffline".asInstanceOf[stitcherOffline]
+  
+  @js.native
+  sealed trait stitcherOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherOpened: stitcherOpened = "stitcherOpened".asInstanceOf[stitcherOpened]
+  
+  @js.native
+  sealed trait stitcherOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherOverTemperature: stitcherOverTemperature = "stitcherOverTemperature".asInstanceOf[stitcherOverTemperature]
+  
+  @js.native
+  sealed trait stitcherPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherPowerSaver: stitcherPowerSaver = "stitcherPowerSaver".asInstanceOf[stitcherPowerSaver]
+  
+  @js.native
+  sealed trait stitcherRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherRecoverableFailure: stitcherRecoverableFailure = "stitcherRecoverableFailure".asInstanceOf[stitcherRecoverableFailure]
+  
+  @js.native
+  sealed trait stitcherRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherRecoverableStorage: stitcherRecoverableStorage = "stitcherRecoverableStorage".asInstanceOf[stitcherRecoverableStorage]
+  
+  @js.native
+  sealed trait stitcherRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherRemoved: stitcherRemoved = "stitcherRemoved".asInstanceOf[stitcherRemoved]
+  
+  @js.native
+  sealed trait stitcherResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherResourceAdded: stitcherResourceAdded = "stitcherResourceAdded".asInstanceOf[stitcherResourceAdded]
+  
+  @js.native
+  sealed trait stitcherResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherResourceRemoved: stitcherResourceRemoved = "stitcherResourceRemoved".asInstanceOf[stitcherResourceRemoved]
+  
+  @js.native
+  sealed trait stitcherThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherThermistorFailure: stitcherThermistorFailure = "stitcherThermistorFailure".asInstanceOf[stitcherThermistorFailure]
+  
+  @js.native
+  sealed trait stitcherTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherTimingFailure: stitcherTimingFailure = "stitcherTimingFailure".asInstanceOf[stitcherTimingFailure]
+  
+  @js.native
+  sealed trait stitcherTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherTurnedOff: stitcherTurnedOff = "stitcherTurnedOff".asInstanceOf[stitcherTurnedOff]
+  
+  @js.native
+  sealed trait stitcherTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherTurnedOn: stitcherTurnedOn = "stitcherTurnedOn".asInstanceOf[stitcherTurnedOn]
+  
+  @js.native
+  sealed trait stitcherUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherUnderTemperature: stitcherUnderTemperature = "stitcherUnderTemperature".asInstanceOf[stitcherUnderTemperature]
+  
+  @js.native
+  sealed trait stitcherUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherUnrecoverableFailure: stitcherUnrecoverableFailure = "stitcherUnrecoverableFailure".asInstanceOf[stitcherUnrecoverableFailure]
+  
+  @js.native
+  sealed trait stitcherUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherUnrecoverableStorageError: stitcherUnrecoverableStorageError = "stitcherUnrecoverableStorageError".asInstanceOf[stitcherUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait stitcherWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stitcherWarmingUp: stitcherWarmingUp = "stitcherWarmingUp".asInstanceOf[stitcherWarmingUp]
+  
+  @js.native
+  sealed trait stopped
+    extends StObject
+       with PrintJobProcessingState
+       with PrinterProcessingState
+  inline def stopped: stopped = "stopped".asInstanceOf[stopped]
+  
+  @js.native
+  sealed trait stoppedPartially
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stoppedPartially: stoppedPartially = "stoppedPartially".asInstanceOf[stoppedPartially]
+  
+  @js.native
+  sealed trait stopping
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def stopping: stopping = "stopping".asInstanceOf[stopping]
+  
+  @js.native
   sealed trait store
     extends StObject
        with TeamsAppDistributionMethod
   inline def store: store = "store".asInstanceOf[store]
+  
+  @js.native
+  sealed trait strategic
+    extends StObject
+       with PostType
+  inline def strategic: strategic = "strategic".asInstanceOf[strategic]
   
   @js.native
   sealed trait streetAddress
@@ -5511,9 +12353,18 @@ object microsoftGraphStrings {
   @js.native
   sealed trait string
     extends StObject
+       with IdentityUserFlowAttributeDataType
+       with PropertyType
        with Win32LobAppPowerShellScriptRuleOperationType
        with Win32LobAppRegistryRuleOperationType
   inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait stringCollection
+    extends StObject
+       with IdentityUserFlowAttributeDataType
+       with PropertyType
+  inline def stringCollection: stringCollection = "stringCollection".asInstanceOf[stringCollection]
   
   @js.native
   sealed trait stringType
@@ -5524,8 +12375,41 @@ object microsoftGraphStrings {
   @js.native
   sealed trait student
     extends StObject
+       with DataSubjectType
        with EducationUserRole
   inline def student: student = "student".asInstanceOf[student]
+  
+  @js.native
+  sealed trait studentsAndPublisher
+    extends StObject
+       with EducationAddToCalendarOptions
+  inline def studentsAndPublisher: studentsAndPublisher = "studentsAndPublisher".asInstanceOf[studentsAndPublisher]
+  
+  @js.native
+  sealed trait studentsAndTeamOwners
+    extends StObject
+       with EducationAddToCalendarOptions
+  inline def studentsAndTeamOwners: studentsAndTeamOwners = "studentsAndTeamOwners".asInstanceOf[studentsAndTeamOwners]
+  
+  @js.native
+  sealed trait studentsOnly
+    extends StObject
+       with EducationAddToCalendarOptions
+  inline def studentsOnly: studentsOnly = "studentsOnly".asInstanceOf[studentsOnly]
+  
+  @js.native
+  sealed trait submissionFailed
+    extends StObject
+       with CaseOperationStatus
+  inline def submissionFailed: submissionFailed = "submissionFailed".asInstanceOf[submissionFailed]
+  
+  @js.native
+  sealed trait submitted
+    extends StObject
+       with AccessPackageRequestState
+       with EducationSubmissionStatus
+       with TeamsAppPublishingState
+  inline def submitted: submitted = "submitted".asInstanceOf[submitted]
   
   @js.native
   sealed trait subscriptionRemoved
@@ -5534,9 +12418,198 @@ object microsoftGraphStrings {
   inline def subscriptionRemoved: subscriptionRemoved = "subscriptionRemoved".asInstanceOf[subscriptionRemoved]
   
   @js.native
+  sealed trait subunitAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitAdded: subunitAdded = "subunitAdded".asInstanceOf[subunitAdded]
+  
+  @js.native
+  sealed trait subunitAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitAlmostEmpty: subunitAlmostEmpty = "subunitAlmostEmpty".asInstanceOf[subunitAlmostEmpty]
+  
+  @js.native
+  sealed trait subunitAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitAlmostFull: subunitAlmostFull = "subunitAlmostFull".asInstanceOf[subunitAlmostFull]
+  
+  @js.native
+  sealed trait subunitAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitAtLimit: subunitAtLimit = "subunitAtLimit".asInstanceOf[subunitAtLimit]
+  
+  @js.native
+  sealed trait subunitClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitClosed: subunitClosed = "subunitClosed".asInstanceOf[subunitClosed]
+  
+  @js.native
+  sealed trait subunitCoolingDown
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitCoolingDown: subunitCoolingDown = "subunitCoolingDown".asInstanceOf[subunitCoolingDown]
+  
+  @js.native
+  sealed trait subunitEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitEmpty: subunitEmpty = "subunitEmpty".asInstanceOf[subunitEmpty]
+  
+  @js.native
+  sealed trait subunitFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitFull: subunitFull = "subunitFull".asInstanceOf[subunitFull]
+  
+  @js.native
+  sealed trait subunitLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitLifeAlmostOver: subunitLifeAlmostOver = "subunitLifeAlmostOver".asInstanceOf[subunitLifeAlmostOver]
+  
+  @js.native
+  sealed trait subunitLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitLifeOver: subunitLifeOver = "subunitLifeOver".asInstanceOf[subunitLifeOver]
+  
+  @js.native
+  sealed trait subunitMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitMemoryExhausted: subunitMemoryExhausted = "subunitMemoryExhausted".asInstanceOf[subunitMemoryExhausted]
+  
+  @js.native
+  sealed trait subunitMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitMissing: subunitMissing = "subunitMissing".asInstanceOf[subunitMissing]
+  
+  @js.native
+  sealed trait subunitMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitMotorFailure: subunitMotorFailure = "subunitMotorFailure".asInstanceOf[subunitMotorFailure]
+  
+  @js.native
+  sealed trait subunitNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitNearLimit: subunitNearLimit = "subunitNearLimit".asInstanceOf[subunitNearLimit]
+  
+  @js.native
+  sealed trait subunitOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitOffline: subunitOffline = "subunitOffline".asInstanceOf[subunitOffline]
+  
+  @js.native
+  sealed trait subunitOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitOpened: subunitOpened = "subunitOpened".asInstanceOf[subunitOpened]
+  
+  @js.native
+  sealed trait subunitOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitOverTemperature: subunitOverTemperature = "subunitOverTemperature".asInstanceOf[subunitOverTemperature]
+  
+  @js.native
+  sealed trait subunitPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitPowerSaver: subunitPowerSaver = "subunitPowerSaver".asInstanceOf[subunitPowerSaver]
+  
+  @js.native
+  sealed trait subunitRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitRecoverableFailure: subunitRecoverableFailure = "subunitRecoverableFailure".asInstanceOf[subunitRecoverableFailure]
+  
+  @js.native
+  sealed trait subunitRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitRecoverableStorage: subunitRecoverableStorage = "subunitRecoverableStorage".asInstanceOf[subunitRecoverableStorage]
+  
+  @js.native
+  sealed trait subunitRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitRemoved: subunitRemoved = "subunitRemoved".asInstanceOf[subunitRemoved]
+  
+  @js.native
+  sealed trait subunitResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitResourceAdded: subunitResourceAdded = "subunitResourceAdded".asInstanceOf[subunitResourceAdded]
+  
+  @js.native
+  sealed trait subunitResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitResourceRemoved: subunitResourceRemoved = "subunitResourceRemoved".asInstanceOf[subunitResourceRemoved]
+  
+  @js.native
+  sealed trait subunitThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitThermistorFailure: subunitThermistorFailure = "subunitThermistorFailure".asInstanceOf[subunitThermistorFailure]
+  
+  @js.native
+  sealed trait subunitTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitTimingFailure: subunitTimingFailure = "subunitTimingFailure".asInstanceOf[subunitTimingFailure]
+  
+  @js.native
+  sealed trait subunitTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitTurnedOff: subunitTurnedOff = "subunitTurnedOff".asInstanceOf[subunitTurnedOff]
+  
+  @js.native
+  sealed trait subunitTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitTurnedOn: subunitTurnedOn = "subunitTurnedOn".asInstanceOf[subunitTurnedOn]
+  
+  @js.native
+  sealed trait subunitUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitUnderTemperature: subunitUnderTemperature = "subunitUnderTemperature".asInstanceOf[subunitUnderTemperature]
+  
+  @js.native
+  sealed trait subunitUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitUnrecoverableFailure: subunitUnrecoverableFailure = "subunitUnrecoverableFailure".asInstanceOf[subunitUnrecoverableFailure]
+  
+  @js.native
+  sealed trait subunitUnrecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitUnrecoverableStorage: subunitUnrecoverableStorage = "subunitUnrecoverableStorage".asInstanceOf[subunitUnrecoverableStorage]
+  
+  @js.native
+  sealed trait subunitWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def subunitWarmingUp: subunitWarmingUp = "subunitWarmingUp".asInstanceOf[subunitWarmingUp]
+  
+  @js.native
   sealed trait succeeded
     extends StObject
+       with CaseOperationStatus
        with ConnectionStatus
+       with LongRunningOperationStatus
+       with PrintOperationProcessingState
        with TeamsAsyncOperationStatus
        with WorkbookOperationStatus
   inline def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
@@ -5545,12 +12618,21 @@ object microsoftGraphStrings {
   sealed trait success
     extends StObject
        with AppliedConditionalAccessPolicyResult
+       with CallRecordingStatus
        with ConditionalAccessStatus
        with IosUpdatesInstallStatus
        with MobileAppContentFileUploadState
        with OperationResult
+       with ProvisioningResult
+       with ProvisioningStatusErrorCategory
        with Win32LobAppReturnCodeType
   inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait suggestion
+    extends StObject
+       with SearchAlterationType
+  inline def suggestion: suggestion = "suggestion".asInstanceOf[suggestion]
   
   @js.native
   sealed trait sunday
@@ -5578,6 +12660,12 @@ object microsoftGraphStrings {
   inline def surfaceHub: surfaceHub = "surfaceHub".asInstanceOf[surfaceHub]
   
   @js.native
+  sealed trait suspend
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def suspend: suspend = "suspend".asInstanceOf[suspend]
+  
+  @js.native
   sealed trait suspiciousIPAddress
     extends StObject
        with RiskEventType
@@ -5592,10 +12680,36 @@ object microsoftGraphStrings {
   @js.native
   sealed trait system
     extends StObject
+       with InitiatorType
        with ProcessIntegrityLevel
        with RunAsAccountType
        with ScheduleChangeRequestActor
+       with TermGroupScope
   inline def system: system = "system".asInstanceOf[system]
+  
+  @js.native
+  sealed trait systemAdd
+    extends StObject
+       with AccessPackageRequestType
+  inline def systemAdd: systemAdd = "systemAdd".asInstanceOf[systemAdd]
+  
+  @js.native
+  sealed trait systemEventMessage
+    extends StObject
+       with ChatMessageType
+  inline def systemEventMessage: systemEventMessage = "systemEventMessage".asInstanceOf[systemEventMessage]
+  
+  @js.native
+  sealed trait systemRemove
+    extends StObject
+       with AccessPackageRequestType
+  inline def systemRemove: systemRemove = "systemRemove".asInstanceOf[systemRemove]
+  
+  @js.native
+  sealed trait systemUpdate
+    extends StObject
+       with AccessPackageRequestType
+  inline def systemUpdate: systemUpdate = "systemUpdate".asInstanceOf[systemUpdate]
   
   @js.native
   sealed trait sz
@@ -5610,22 +12724,45 @@ object microsoftGraphStrings {
   inline def tabs: tabs = "tabs".asInstanceOf[tabs]
   
   @js.native
+  sealed trait tagForAction
+    extends StObject
+       with SubjectRightsRequestType
+  inline def tagForAction: tagForAction = "tagForAction".asInstanceOf[tagForAction]
+  
+  @js.native
+  sealed trait target
+    extends StObject
+       with AccessPackageAssignmentFilterByCurrentUserOptions
+       with AccessPackageAssignmentRequestFilterByCurrentUserOptions
+       with ApprovalFilterByCurrentUserOptions
+  inline def target: target = "target".asInstanceOf[target]
+  
+  @js.native
   sealed trait tcp
     extends StObject
+       with NetworkTransportProtocol
        with SecurityNetworkProtocol
   inline def tcp: tcp = "tcp".asInstanceOf[tcp]
   
   @js.native
   sealed trait teacher
     extends StObject
+       with DataSubjectType
        with EducationUserRole
   inline def teacher: teacher = "teacher".asInstanceOf[teacher]
   
   @js.native
   sealed trait team
     extends StObject
+       with TeamworkConversationIdentityType
        with WindowsDeviceType
   inline def team: team = "team".asInstanceOf[team]
+  
+  @js.native
+  sealed trait teamifyGroup
+    extends StObject
+       with TeamsAsyncOperationType
+  inline def teamifyGroup: teamifyGroup = "teamifyGroup".asInstanceOf[teamifyGroup]
   
   @js.native
   sealed trait teams
@@ -5646,6 +12783,12 @@ object microsoftGraphStrings {
   inline def ten: ten = "ten".asInstanceOf[ten]
   
   @js.native
+  sealed trait tenantBot
+    extends StObject
+       with TeamworkApplicationIdentityType
+  inline def tenantBot: tenantBot = "tenantBot".asInstanceOf[tenantBot]
+  
+  @js.native
   sealed trait tentative
     extends StObject
        with FreeBusyStatus
@@ -5656,6 +12799,12 @@ object microsoftGraphStrings {
     extends StObject
        with ResponseType
   inline def tentativelyAccepted: tentativelyAccepted = "tentativelyAccepted".asInstanceOf[tentativelyAccepted]
+  
+  @js.native
+  sealed trait term
+    extends StObject
+       with ColumnTypes
+  inline def term: term = "term".asInstanceOf[term]
   
   @js.native
   sealed trait terminated
@@ -5671,16 +12820,38 @@ object microsoftGraphStrings {
   inline def terminating: terminating = "terminating".asInstanceOf[terminating]
   
   @js.native
+  sealed trait testing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def testing: testing = "testing".asInstanceOf[testing]
+  
+  @js.native
   sealed trait text
     extends StObject
+       with AnswerInputType
        with BodyType
+       with ColumnTypes
+       with ExternalItemContentType
+       with TeamworkActivityTopicSource
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait textBox
+    extends StObject
+       with IdentityUserFlowAttributeInputType
+  inline def textBox: textBox = "textBox".asInstanceOf[textBox]
   
   @js.native
   sealed trait third
     extends StObject
        with WeekIndex
   inline def third: third = "third".asInstanceOf[third]
+  
+  @js.native
+  sealed trait thirdParty
+    extends StObject
+       with ServiceHealthOrigin
+  inline def thirdParty: thirdParty = "thirdParty".asInstanceOf[thirdParty]
   
   @js.native
   sealed trait thirtySix
@@ -5695,6 +12866,12 @@ object microsoftGraphStrings {
   inline def three: three = "three".asInstanceOf[three]
   
   @js.native
+  sealed trait thumbnail
+    extends StObject
+       with ColumnTypes
+  inline def thumbnail: thumbnail = "thumbnail".asInstanceOf[thumbnail]
+  
+  @js.native
   sealed trait thursday
     extends StObject
        with DayOfWeek
@@ -5702,10 +12879,28 @@ object microsoftGraphStrings {
   inline def thursday: thursday = "thursday".asInstanceOf[thursday]
   
   @js.native
+  sealed trait timeBased
+    extends StObject
+       with SignInFrequencyInterval
+  inline def timeBased: timeBased = "timeBased".asInstanceOf[timeBased]
+  
+  @js.native
+  sealed trait timedOut
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def timedOut: timedOut = "timedOut".asInstanceOf[timedOut]
+  
+  @js.native
   sealed trait timeout
     extends StObject
        with OperationResult
   inline def timeout: timeout = "timeout".asInstanceOf[timeout]
+  
+  @js.native
+  sealed trait title
+    extends StObject
+       with Label
+  inline def title: title = "title".asInstanceOf[title]
   
   @js.native
   sealed trait tokenType
@@ -5774,6 +12969,18 @@ object microsoftGraphStrings {
   inline def tone9: tone9 = "tone9".asInstanceOf[tone9]
   
   @js.native
+  sealed trait tonerEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def tonerEmpty: tonerEmpty = "tonerEmpty".asInstanceOf[tonerEmpty]
+  
+  @js.native
+  sealed trait tonerLow
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def tonerLow: tonerLow = "tonerLow".asInstanceOf[tonerLow]
+  
+  @js.native
   sealed trait totalMemberCount
     extends StObject
        with MailTipsType
@@ -5798,10 +13005,238 @@ object microsoftGraphStrings {
   inline def transferring: transferring = "transferring".asInstanceOf[transferring]
   
   @js.native
+  sealed trait transforming
+    extends StObject
+       with PrintJobStateDetail
+  inline def transforming: transforming = "transforming".asInstanceOf[transforming]
+  
+  @js.native
   sealed trait transientError
     extends StObject
        with MobileAppContentFileUploadState
   inline def transientError: transientError = "transientError".asInstanceOf[transientError]
+  
+  @js.native
+  sealed trait translateToFreshPasswordAuthentication
+    extends StObject
+       with PromptLoginBehavior
+  inline def translateToFreshPasswordAuthentication: translateToFreshPasswordAuthentication = "translateToFreshPasswordAuthentication".asInstanceOf[translateToFreshPasswordAuthentication]
+  
+  @js.native
+  sealed trait trimmerAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerAdded: trimmerAdded = "trimmerAdded".asInstanceOf[trimmerAdded]
+  
+  @js.native
+  sealed trait trimmerAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerAlmostEmpty: trimmerAlmostEmpty = "trimmerAlmostEmpty".asInstanceOf[trimmerAlmostEmpty]
+  
+  @js.native
+  sealed trait trimmerAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerAlmostFull: trimmerAlmostFull = "trimmerAlmostFull".asInstanceOf[trimmerAlmostFull]
+  
+  @js.native
+  sealed trait trimmerAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerAtLimit: trimmerAtLimit = "trimmerAtLimit".asInstanceOf[trimmerAtLimit]
+  
+  @js.native
+  sealed trait trimmerClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerClosed: trimmerClosed = "trimmerClosed".asInstanceOf[trimmerClosed]
+  
+  @js.native
+  sealed trait trimmerConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerConfigurationChange: trimmerConfigurationChange = "trimmerConfigurationChange".asInstanceOf[trimmerConfigurationChange]
+  
+  @js.native
+  sealed trait trimmerCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerCoverClosed: trimmerCoverClosed = "trimmerCoverClosed".asInstanceOf[trimmerCoverClosed]
+  
+  @js.native
+  sealed trait trimmerCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerCoverOpen: trimmerCoverOpen = "trimmerCoverOpen".asInstanceOf[trimmerCoverOpen]
+  
+  @js.native
+  sealed trait trimmerEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerEmpty: trimmerEmpty = "trimmerEmpty".asInstanceOf[trimmerEmpty]
+  
+  @js.native
+  sealed trait trimmerFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerFull: trimmerFull = "trimmerFull".asInstanceOf[trimmerFull]
+  
+  @js.native
+  sealed trait trimmerInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerInterlockClosed: trimmerInterlockClosed = "trimmerInterlockClosed".asInstanceOf[trimmerInterlockClosed]
+  
+  @js.native
+  sealed trait trimmerInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerInterlockOpen: trimmerInterlockOpen = "trimmerInterlockOpen".asInstanceOf[trimmerInterlockOpen]
+  
+  @js.native
+  sealed trait trimmerJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerJam: trimmerJam = "trimmerJam".asInstanceOf[trimmerJam]
+  
+  @js.native
+  sealed trait trimmerLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerLifeAlmostOver: trimmerLifeAlmostOver = "trimmerLifeAlmostOver".asInstanceOf[trimmerLifeAlmostOver]
+  
+  @js.native
+  sealed trait trimmerLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerLifeOver: trimmerLifeOver = "trimmerLifeOver".asInstanceOf[trimmerLifeOver]
+  
+  @js.native
+  sealed trait trimmerMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerMemoryExhausted: trimmerMemoryExhausted = "trimmerMemoryExhausted".asInstanceOf[trimmerMemoryExhausted]
+  
+  @js.native
+  sealed trait trimmerMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerMissing: trimmerMissing = "trimmerMissing".asInstanceOf[trimmerMissing]
+  
+  @js.native
+  sealed trait trimmerMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerMotorFailure: trimmerMotorFailure = "trimmerMotorFailure".asInstanceOf[trimmerMotorFailure]
+  
+  @js.native
+  sealed trait trimmerNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerNearLimit: trimmerNearLimit = "trimmerNearLimit".asInstanceOf[trimmerNearLimit]
+  
+  @js.native
+  sealed trait trimmerOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerOffline: trimmerOffline = "trimmerOffline".asInstanceOf[trimmerOffline]
+  
+  @js.native
+  sealed trait trimmerOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerOpened: trimmerOpened = "trimmerOpened".asInstanceOf[trimmerOpened]
+  
+  @js.native
+  sealed trait trimmerOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerOverTemperature: trimmerOverTemperature = "trimmerOverTemperature".asInstanceOf[trimmerOverTemperature]
+  
+  @js.native
+  sealed trait trimmerPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerPowerSaver: trimmerPowerSaver = "trimmerPowerSaver".asInstanceOf[trimmerPowerSaver]
+  
+  @js.native
+  sealed trait trimmerRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerRecoverableFailure: trimmerRecoverableFailure = "trimmerRecoverableFailure".asInstanceOf[trimmerRecoverableFailure]
+  
+  @js.native
+  sealed trait trimmerRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerRecoverableStorage: trimmerRecoverableStorage = "trimmerRecoverableStorage".asInstanceOf[trimmerRecoverableStorage]
+  
+  @js.native
+  sealed trait trimmerRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerRemoved: trimmerRemoved = "trimmerRemoved".asInstanceOf[trimmerRemoved]
+  
+  @js.native
+  sealed trait trimmerResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerResourceAdded: trimmerResourceAdded = "trimmerResourceAdded".asInstanceOf[trimmerResourceAdded]
+  
+  @js.native
+  sealed trait trimmerResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerResourceRemoved: trimmerResourceRemoved = "trimmerResourceRemoved".asInstanceOf[trimmerResourceRemoved]
+  
+  @js.native
+  sealed trait trimmerThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerThermistorFailure: trimmerThermistorFailure = "trimmerThermistorFailure".asInstanceOf[trimmerThermistorFailure]
+  
+  @js.native
+  sealed trait trimmerTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerTimingFailure: trimmerTimingFailure = "trimmerTimingFailure".asInstanceOf[trimmerTimingFailure]
+  
+  @js.native
+  sealed trait trimmerTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerTurnedOff: trimmerTurnedOff = "trimmerTurnedOff".asInstanceOf[trimmerTurnedOff]
+  
+  @js.native
+  sealed trait trimmerTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerTurnedOn: trimmerTurnedOn = "trimmerTurnedOn".asInstanceOf[trimmerTurnedOn]
+  
+  @js.native
+  sealed trait trimmerUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerUnderTemperature: trimmerUnderTemperature = "trimmerUnderTemperature".asInstanceOf[trimmerUnderTemperature]
+  
+  @js.native
+  sealed trait trimmerUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerUnrecoverableFailure: trimmerUnrecoverableFailure = "trimmerUnrecoverableFailure".asInstanceOf[trimmerUnrecoverableFailure]
+  
+  @js.native
+  sealed trait trimmerUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerUnrecoverableStorageError: trimmerUnrecoverableStorageError = "trimmerUnrecoverableStorageError".asInstanceOf[trimmerUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait trimmerWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def trimmerWarmingUp: trimmerWarmingUp = "trimmerWarmingUp".asInstanceOf[trimmerWarmingUp]
   
   @js.native
   sealed trait truePositive
@@ -5837,6 +13272,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait udp
     extends StObject
+       with NetworkTransportProtocol
        with SecurityNetworkProtocol
   inline def udp: udp = "udp".asInstanceOf[udp]
   
@@ -5869,6 +13305,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait undefined
     extends StObject
+       with BookingPriceType
        with ThreatAssessmentRequestSource
        with ThreatCategory
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
@@ -5910,82 +13347,217 @@ object microsoftGraphStrings {
   inline def universalChildren: universalChildren = "universalChildren".asInstanceOf[universalChildren]
   
   @js.native
-  sealed trait unknownFutureValue
+  sealed trait unknownFutureValue_
     extends StObject
+       with AccessPackageAssignmentFilterByCurrentUserOptions
+       with AccessPackageAssignmentRequestFilterByCurrentUserOptions
+       with AccessPackageAssignmentState
+       with AccessPackageCatalogState
+       with AccessPackageCatalogType
+       with AccessPackageExternalUserLifecycleAction
+       with AccessPackageFilterByCurrentUserOptions
+       with AccessPackageRequestState
+       with AccessPackageRequestType
+       with AccessPackageSubjectType
+       with AccessReviewExpirationBehavior
+       with AccessReviewHistoryDecisionFilter
+       with AccessReviewHistoryStatus
+       with AccessReviewInstanceDecisionItemFilterByCurrentUserOptions
+       with AccessReviewInstanceFilterByCurrentUserOptions
+       with AccessReviewScheduleDefinitionFilterByCurrentUserOptions
+       with AccessReviewStageFilterByCurrentUserOptions
+       with AccessType
+       with AclType
+       with ActivityType
+       with AdditionalDataOptions
+       with AdvancedConfigState
+       with AgreementAcceptanceState
        with AlertFeedback
        with AlertSeverity
        with AlertStatus
+       with AllowInvitesFrom
+       with AllowedTargetScope
+       with AnswerInputType
        with AppliedConditionalAccessPolicyResult
+       with ApprovalFilterByCurrentUserOptions
+       with AttestationLevel
+       with AudioCodec
+       with AuthenticationMethodSignInState
+       with AuthenticationMethodTargetType
+       with AuthenticationPhoneType
+       with AuthenticationProtocol
+       with BookingPriceType
+       with BookingReminderRecipients
+       with BookingStaffRole
+       with BookingsAvailabilityStatus
+       with BroadcastMeetingAudience
+       with BucketAggregationSortProperty
+       with CallRecordingStatus
        with CallState
        with CallTranscriptionState
        with CallType
+       with CaseAction
+       with CaseOperationStatus
+       with CaseStatus
        with ChannelMembershipType
        with ChatMessageImportance
        with ChatMessageType
+       with ChatType
+       with ChildSelectability
        with ClientPlatform
        with CloudAppSecuritySessionControlType
+       with ColumnTypes
        with ConditionalAccessClientApp
        with ConditionalAccessDevicePlatform
        with ConditionalAccessGrantControl
        with ConditionalAccessStatus
+       with ConnectedOrganizationState
        with ConnectionDirection
+       with ConnectionOperationStatus
+       with ConnectionState
        with ConnectionStatus
+       with ConsentRequestFilterByCurrentUserOptions
+       with ContactRelationship
+       with CountryLookupMethodType
+       with CrossTenantAccessPolicyTargetConfigurationAccessType
+       with CrossTenantAccessPolicyTargetType
        with DataPolicyOperationStatus
+       with DataSourceContainerStatus
+       with DataSourceHoldStatus
+       with DataSourceScopes
+       with DataSubjectType
+       with DiskType
+       with EducationAddToCalendarOptions
+       with EducationAddedStudentAction
+       with EducationAssignmentStatus
        with EducationExternalSource
        with EducationGender
+       with EducationSubmissionStatus
        with EducationUserRole
        with EmailRole
        with EndpointType
+       with EntityType
+       with ExternalEmailOtpState
+       with ExternalItemContentType
        with FailureStage
+       with FederatedIdpMfaBehavior
+       with Fido2RestrictionEnforcementType
        with FileHashType
        with GiphyRatingType
        with GroupType
+       with IdentityType
+       with IdentityUserFlowAttributeDataType
+       with IdentityUserFlowAttributeType
+       with InitiatorType
+       with Label
        with LobbyBypassScope
        with LogonType
+       with LongRunningOperationStatus
        with MailDestinationRoutingReason
        with MediaState
+       with MeetingChatMode
        with Modality
        with typings.microsoftGraph.mod.CallRecords.Modality
        with NetworkConnectionType
+       with NetworkTransportProtocol
        with OnlineMeetingPresenters
        with OnlineMeetingRole
        with OperationResult
        with PermissionClassificationType
+       with PlannerContainerType
+       with PostType
+       with PrintColorMode
+       with PrintDuplexMode
+       with PrintEvent
+       with PrintFinishing
+       with PrintJobProcessingState
+       with PrintJobStateDetail
+       with PrintMultipageLayout
+       with PrintOperationProcessingState
+       with PrintOrientation
+       with PrintQuality
+       with PrintScaling
+       with PrintTaskProcessingState
+       with PrinterFeedOrientation
+       with PrinterProcessingState
+       with PrinterProcessingStateDetail
        with ProcessIntegrityLevel
        with ProductFamily
+       with PromptLoginBehavior
+       with PropertyType
+       with ProvisioningAction
+       with ProvisioningResult
+       with ProvisioningStatusErrorCategory
+       with ProvisioningStepType
        with RecordingStatus
        with RegistryHive
        with RegistryOperation
        with RegistryValueType
        with RejectReason
+       with RelationType
        with RiskDetail
+       with RiskDetectionTimingType
        with RiskEventType
        with RiskLevel
        with RiskState
+       with RoleAssignmentScheduleFilterByCurrentUserOptions
+       with RoleAssignmentScheduleInstanceFilterByCurrentUserOptions
+       with RoleAssignmentScheduleRequestFilterByCurrentUserOptions
+       with RoleEligibilityScheduleFilterByCurrentUserOptions
+       with RoleEligibilityScheduleInstanceFilterByCurrentUserOptions
+       with RoleEligibilityScheduleRequestFilterByCurrentUserOptions
+       with RoutingMode
        with RoutingType
        with ScheduleChangeRequestActor
        with ScheduleChangeState
        with ScheduleEntityTheme
+       with SearchAlterationType
        with SecurityNetworkProtocol
        with SecurityResourceType
+       with ServiceHealthClassificationType
+       with ServiceHealthOrigin
+       with ServiceHealthStatus
        with ServiceRole
+       with ServiceUpdateCategory
+       with ServiceUpdateSeverity
+       with SignInFrequencyAuthenticationType
+       with SignInFrequencyInterval
+       with SourceType
+       with StagedFeatureName
        with Status
+       with SubjectRightsRequestStage
+       with SubjectRightsRequestStageStatus
+       with SubjectRightsRequestStatus
+       with SubjectRightsRequestType
        with TeamSpecialization
        with TeamVisibilityType
        with TeamsAppDistributionMethod
+       with TeamsAppPublishingState
        with TeamsAsyncOperationStatus
        with TeamsAsyncOperationType
+       with TeamworkApplicationIdentityType
+       with TeamworkCallEventType
+       with TeamworkConversationIdentityType
+       with TeamworkUserIdentityType
+       with TermGroupScope
        with ThreatAssessmentResultType
        with ThreatCategory
        with TimeOffReasonIconType
+       with UnifiedRoleManagementPolicyRuleTargetOperations
+       with UnifiedRoleScheduleRequestActions
        with UserAccountSecurityType
+       with UserExperienceAnalyticsHealthState
        with UserFeedbackRating
+       with UserFlowType
+       with UserPurpose
+       with VideoCodec
+       with VolumeType
        with WellknownListName
        with WifiBand
        with WifiRadioType
        with WorkforceIntegrationEncryptionProtocol
        with WorkforceIntegrationSupportedEntities
-  inline def unknownFutureValue: unknownFutureValue = "unknownFutureValue".asInstanceOf[unknownFutureValue]
+  inline def unknownFutureValue_ : unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
   
   @js.native
   sealed trait unknownLocation
@@ -6001,8 +13573,11 @@ object microsoftGraphStrings {
        with AlertSeverity
        with AlertStatus
        with AppliedConditionalAccessPolicyResult
+       with AudioCodec
+       with AuthenticationMethodKeyStrength
        with BookingType
        with CallType
+       with CaseStatus
        with ClientPlatform
        with ComplianceState
        with ComplianceStatus
@@ -6014,11 +13589,15 @@ object microsoftGraphStrings {
        with DeviceManagementExchangeAccessStateReason
        with DeviceManagementPartnerAppType
        with DeviceManagementPartnerTenantState
+       with DeviceManagementReportStatus
        with DeviceRegistrationState
+       with DiskType
        with EmailRole
+       with EnrollmentState
        with FailureStage
        with FileHashType
        with FreeBusyStatus
+       with ImportedWindowsAutopilotDeviceIdentityImportStatus
        with InstallState
        with IosUpdatesInstallStatus
        with LocationUniqueIdType
@@ -6029,8 +13608,12 @@ object microsoftGraphStrings {
        with MdmAuthority
        with MobileAppContentFileUploadState
        with NetworkConnectionType
+       with NetworkTransportProtocol
        with OnlineMeetingProviderType
        with PhysicalAddressType
+       with PrintJobProcessingState
+       with PrinterProcessingState
+       with PrinterProcessingStateDetail
        with ProcessIntegrityLevel
        with ProductFamily
        with RecordingStatus
@@ -6041,22 +13624,24 @@ object microsoftGraphStrings {
        with SecurityResourceType
        with ServiceRole
        with UserAccountSecurityType
+       with UserExperienceAnalyticsHealthState
+       with VideoCodec
        with VppTokenState
        with WifiBand
        with WifiRadioType
   inline def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
   
   @js.native
-  sealed trait unknownfuturevalue_
-    extends StObject
-       with EntityType
-  inline def unknownfuturevalue_ : unknownfuturevalue_ = "unknownfuturevalue".asInstanceOf[unknownfuturevalue_]
-  
-  @js.native
   sealed trait unlikelyTravel
     extends StObject
        with RiskEventType
   inline def unlikelyTravel: unlikelyTravel = "unlikelyTravel".asInstanceOf[unlikelyTravel]
+  
+  @js.native
+  sealed trait unpublished
+    extends StObject
+       with AccessPackageCatalogState
+  inline def unpublished: unpublished = "unpublished".asInstanceOf[unpublished]
   
   @js.native
   sealed trait unresponsive
@@ -6073,10 +13658,23 @@ object microsoftGraphStrings {
   inline def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
   
   @js.native
+  sealed trait unspecified
+    extends StObject
+       with ConnectionOperationStatus
+  inline def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
+  
+  @js.native
   sealed trait untrusted
     extends StObject
        with ProcessIntegrityLevel
   inline def untrusted: untrusted = "untrusted".asInstanceOf[untrusted]
+  
+  @js.native
+  sealed trait update
+    extends StObject
+       with ProvisioningAction
+       with UnifiedRoleManagementPolicyRuleTargetOperations
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
   sealed trait updated
@@ -6084,6 +13682,12 @@ object microsoftGraphStrings {
        with ChangeType
        with Status
   inline def updated: updated = "updated".asInstanceOf[updated]
+  
+  @js.native
+  sealed trait uploadPending
+    extends StObject
+       with PrintJobStateDetail
+  inline def uploadPending: uploadPending = "uploadPending".asInstanceOf[uploadPending]
   
   @js.native
   sealed trait urgent
@@ -6094,6 +13698,8 @@ object microsoftGraphStrings {
   @js.native
   sealed trait url
     extends StObject
+       with ColumnTypes
+       with Label
        with ThreatAssessmentContentType
   inline def url: url = "url".asInstanceOf[url]
   
@@ -6106,8 +13712,17 @@ object microsoftGraphStrings {
   @js.native
   sealed trait user
     extends StObject
+       with AccessPackageSubjectType
+       with AclType
+       with ActivityType
+       with AuthenticationMethodTargetType
+       with ColumnTypes
+       with CrossTenantAccessPolicyTargetType
+       with IdentityType
+       with InitiatorType
        with RunAsAccountType
        with ThreatAssessmentRequestSource
+       with UserPurpose
   inline def user: user = "user".asInstanceOf[user]
   
   @js.native
@@ -6115,6 +13730,12 @@ object microsoftGraphStrings {
     extends StObject
        with DeviceEnrollmentFailureReason
   inline def userAbandonment: userAbandonment = "userAbandonment".asInstanceOf[userAbandonment]
+  
+  @js.native
+  sealed trait userAdd
+    extends StObject
+       with AccessPackageRequestType
+  inline def userAdd: userAdd = "userAdd".asInstanceOf[userAdd]
   
   @js.native
   sealed trait userDefined
@@ -6147,6 +13768,12 @@ object microsoftGraphStrings {
   inline def userEnrollment: userEnrollment = "userEnrollment".asInstanceOf[userEnrollment]
   
   @js.native
+  sealed trait userManaged
+    extends StObject
+       with AccessPackageCatalogType
+  inline def userManaged: userManaged = "userManaged".asInstanceOf[userManaged]
+  
+  @js.native
   sealed trait userPassedMFADrivenByRiskBasedPolicy
     extends StObject
        with RiskDetail
@@ -6165,10 +13792,22 @@ object microsoftGraphStrings {
   inline def userPerformedSecuredPasswordReset: userPerformedSecuredPasswordReset = "userPerformedSecuredPasswordReset".asInstanceOf[userPerformedSecuredPasswordReset]
   
   @js.native
+  sealed trait userRemove
+    extends StObject
+       with AccessPackageRequestType
+  inline def userRemove: userRemove = "userRemove".asInstanceOf[userRemove]
+  
+  @js.native
   sealed trait userShiftPreferences
     extends StObject
        with WorkforceIntegrationSupportedEntities
   inline def userShiftPreferences: userShiftPreferences = "userShiftPreferences".asInstanceOf[userShiftPreferences]
+  
+  @js.native
+  sealed trait userUpdate
+    extends StObject
+       with AccessPackageRequestType
+  inline def userUpdate: userUpdate = "userUpdate".asInstanceOf[userUpdate]
   
   @js.native
   sealed trait userValidation
@@ -6193,6 +13832,12 @@ object microsoftGraphStrings {
     extends StObject
        with VppTokenState
   inline def valid: valid = "valid".asInstanceOf[valid]
+  
+  @js.native
+  sealed trait verifyingService
+    extends StObject
+       with ServiceHealthStatus
+  inline def verifyingService: verifyingService = "verifyingService".asInstanceOf[verifyingService]
   
   @js.native
   sealed trait version
@@ -6225,6 +13870,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait viewer
     extends StObject
+       with BookingStaffRole
        with ScreenSharingRole
   inline def viewer: viewer = "viewer".asInstanceOf[viewer]
   
@@ -6245,7 +13891,14 @@ object microsoftGraphStrings {
   sealed trait warning
     extends StObject
        with DeviceManagementSubscriptionState
+       with ProvisioningResult
   inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait weak
+    extends StObject
+       with AuthenticationMethodKeyStrength
+  inline def weak: weak = "weak".asInstanceOf[weak]
   
   @js.native
   sealed trait weather
@@ -6437,6 +14090,12 @@ object microsoftGraphStrings {
   inline def windowsAzureADJoin: windowsAzureADJoin = "windowsAzureADJoin".asInstanceOf[windowsAzureADJoin]
   
   @js.native
+  sealed trait windowsAzureADJoinUsingDeviceAuth
+    extends StObject
+       with DeviceEnrollmentType
+  inline def windowsAzureADJoinUsingDeviceAuth: windowsAzureADJoinUsingDeviceAuth = "windowsAzureADJoinUsingDeviceAuth".asInstanceOf[windowsAzureADJoinUsingDeviceAuth]
+  
+  @js.native
   sealed trait windowsBulkAzureDomainJoin
     extends StObject
        with DeviceEnrollmentType
@@ -6504,16 +14163,244 @@ object microsoftGraphStrings {
   inline def work: work = "work".asInstanceOf[work]
   
   @js.native
+  sealed trait working
+    extends StObject
+       with EducationSubmissionStatus
+  inline def working: working = "working".asInstanceOf[working]
+  
+  @js.native
   sealed trait workingElsewhere
     extends StObject
        with FreeBusyStatus
   inline def workingElsewhere: workingElsewhere = "workingElsewhere".asInstanceOf[workingElsewhere]
   
   @js.native
+  sealed trait wrapperAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperAdded: wrapperAdded = "wrapperAdded".asInstanceOf[wrapperAdded]
+  
+  @js.native
+  sealed trait wrapperAlmostEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperAlmostEmpty: wrapperAlmostEmpty = "wrapperAlmostEmpty".asInstanceOf[wrapperAlmostEmpty]
+  
+  @js.native
+  sealed trait wrapperAlmostFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperAlmostFull: wrapperAlmostFull = "wrapperAlmostFull".asInstanceOf[wrapperAlmostFull]
+  
+  @js.native
+  sealed trait wrapperAtLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperAtLimit: wrapperAtLimit = "wrapperAtLimit".asInstanceOf[wrapperAtLimit]
+  
+  @js.native
+  sealed trait wrapperClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperClosed: wrapperClosed = "wrapperClosed".asInstanceOf[wrapperClosed]
+  
+  @js.native
+  sealed trait wrapperConfigurationChange
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperConfigurationChange: wrapperConfigurationChange = "wrapperConfigurationChange".asInstanceOf[wrapperConfigurationChange]
+  
+  @js.native
+  sealed trait wrapperCoverClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperCoverClosed: wrapperCoverClosed = "wrapperCoverClosed".asInstanceOf[wrapperCoverClosed]
+  
+  @js.native
+  sealed trait wrapperCoverOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperCoverOpen: wrapperCoverOpen = "wrapperCoverOpen".asInstanceOf[wrapperCoverOpen]
+  
+  @js.native
+  sealed trait wrapperEmpty
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperEmpty: wrapperEmpty = "wrapperEmpty".asInstanceOf[wrapperEmpty]
+  
+  @js.native
+  sealed trait wrapperFull
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperFull: wrapperFull = "wrapperFull".asInstanceOf[wrapperFull]
+  
+  @js.native
+  sealed trait wrapperInterlockClosed
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperInterlockClosed: wrapperInterlockClosed = "wrapperInterlockClosed".asInstanceOf[wrapperInterlockClosed]
+  
+  @js.native
+  sealed trait wrapperInterlockOpen
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperInterlockOpen: wrapperInterlockOpen = "wrapperInterlockOpen".asInstanceOf[wrapperInterlockOpen]
+  
+  @js.native
+  sealed trait wrapperJam
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperJam: wrapperJam = "wrapperJam".asInstanceOf[wrapperJam]
+  
+  @js.native
+  sealed trait wrapperLifeAlmostOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperLifeAlmostOver: wrapperLifeAlmostOver = "wrapperLifeAlmostOver".asInstanceOf[wrapperLifeAlmostOver]
+  
+  @js.native
+  sealed trait wrapperLifeOver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperLifeOver: wrapperLifeOver = "wrapperLifeOver".asInstanceOf[wrapperLifeOver]
+  
+  @js.native
+  sealed trait wrapperMemoryExhausted
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperMemoryExhausted: wrapperMemoryExhausted = "wrapperMemoryExhausted".asInstanceOf[wrapperMemoryExhausted]
+  
+  @js.native
+  sealed trait wrapperMissing
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperMissing: wrapperMissing = "wrapperMissing".asInstanceOf[wrapperMissing]
+  
+  @js.native
+  sealed trait wrapperMotorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperMotorFailure: wrapperMotorFailure = "wrapperMotorFailure".asInstanceOf[wrapperMotorFailure]
+  
+  @js.native
+  sealed trait wrapperNearLimit
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperNearLimit: wrapperNearLimit = "wrapperNearLimit".asInstanceOf[wrapperNearLimit]
+  
+  @js.native
+  sealed trait wrapperOffline
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperOffline: wrapperOffline = "wrapperOffline".asInstanceOf[wrapperOffline]
+  
+  @js.native
+  sealed trait wrapperOpened
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperOpened: wrapperOpened = "wrapperOpened".asInstanceOf[wrapperOpened]
+  
+  @js.native
+  sealed trait wrapperOverTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperOverTemperature: wrapperOverTemperature = "wrapperOverTemperature".asInstanceOf[wrapperOverTemperature]
+  
+  @js.native
+  sealed trait wrapperPowerSaver
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperPowerSaver: wrapperPowerSaver = "wrapperPowerSaver".asInstanceOf[wrapperPowerSaver]
+  
+  @js.native
+  sealed trait wrapperRecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperRecoverableFailure: wrapperRecoverableFailure = "wrapperRecoverableFailure".asInstanceOf[wrapperRecoverableFailure]
+  
+  @js.native
+  sealed trait wrapperRecoverableStorage
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperRecoverableStorage: wrapperRecoverableStorage = "wrapperRecoverableStorage".asInstanceOf[wrapperRecoverableStorage]
+  
+  @js.native
+  sealed trait wrapperRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperRemoved: wrapperRemoved = "wrapperRemoved".asInstanceOf[wrapperRemoved]
+  
+  @js.native
+  sealed trait wrapperResourceAdded
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperResourceAdded: wrapperResourceAdded = "wrapperResourceAdded".asInstanceOf[wrapperResourceAdded]
+  
+  @js.native
+  sealed trait wrapperResourceRemoved
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperResourceRemoved: wrapperResourceRemoved = "wrapperResourceRemoved".asInstanceOf[wrapperResourceRemoved]
+  
+  @js.native
+  sealed trait wrapperThermistorFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperThermistorFailure: wrapperThermistorFailure = "wrapperThermistorFailure".asInstanceOf[wrapperThermistorFailure]
+  
+  @js.native
+  sealed trait wrapperTimingFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperTimingFailure: wrapperTimingFailure = "wrapperTimingFailure".asInstanceOf[wrapperTimingFailure]
+  
+  @js.native
+  sealed trait wrapperTurnedOff
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperTurnedOff: wrapperTurnedOff = "wrapperTurnedOff".asInstanceOf[wrapperTurnedOff]
+  
+  @js.native
+  sealed trait wrapperTurnedOn
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperTurnedOn: wrapperTurnedOn = "wrapperTurnedOn".asInstanceOf[wrapperTurnedOn]
+  
+  @js.native
+  sealed trait wrapperUnderTemperature
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperUnderTemperature: wrapperUnderTemperature = "wrapperUnderTemperature".asInstanceOf[wrapperUnderTemperature]
+  
+  @js.native
+  sealed trait wrapperUnrecoverableFailure
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperUnrecoverableFailure: wrapperUnrecoverableFailure = "wrapperUnrecoverableFailure".asInstanceOf[wrapperUnrecoverableFailure]
+  
+  @js.native
+  sealed trait wrapperUnrecoverableStorageError
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperUnrecoverableStorageError: wrapperUnrecoverableStorageError = "wrapperUnrecoverableStorageError".asInstanceOf[wrapperUnrecoverableStorageError]
+  
+  @js.native
+  sealed trait wrapperWarmingUp
+    extends StObject
+       with PrinterProcessingStateDetail
+  inline def wrapperWarmingUp: wrapperWarmingUp = "wrapperWarmingUp".asInstanceOf[wrapperWarmingUp]
+  
+  @js.native
   sealed trait write
     extends StObject
        with CalendarRoleType
   inline def write: write = "write".asInstanceOf[write]
+  
+  @js.native
+  sealed trait wsFed
+    extends StObject
+       with AuthenticationProtocol
+  inline def wsFed: wsFed = "wsFed".asInstanceOf[wsFed]
   
   @js.native
   sealed trait x64
@@ -6526,6 +14413,18 @@ object microsoftGraphStrings {
     extends StObject
        with WindowsArchitecture
   inline def x86: x86 = "x86".asInstanceOf[x86]
+  
+  @js.native
+  sealed trait xmsRta
+    extends StObject
+       with AudioCodec
+  inline def xmsRta: xmsRta = "xmsRta".asInstanceOf[xmsRta]
+  
+  @js.native
+  sealed trait xrtvc1
+    extends StObject
+       with VideoCodec
+  inline def xrtvc1: xrtvc1 = "xrtvc1".asInstanceOf[xrtvc1]
   
   @js.native
   sealed trait xtsAes128

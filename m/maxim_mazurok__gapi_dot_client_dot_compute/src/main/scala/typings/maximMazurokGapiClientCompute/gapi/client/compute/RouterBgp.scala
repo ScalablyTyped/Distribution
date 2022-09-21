@@ -26,6 +26,13 @@ trait RouterBgp extends StObject {
     * this router will have the same local ASN.
     */
   var asn: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The interval in seconds between BGP keepalive messages that are sent to the peer. Hold time is three times the interval at which keepalive messages are sent, and the hold time is
+    * the maximum number of seconds allowed to elapse between successive keepalive messages that BGP receives from a peer. BGP will use the smaller of either the local hold time value or
+    * the peer's hold time value as the hold time for the BGP connection between the two peers. If set, this value must be between 20 and 60. The default is 20.
+    */
+  var keepaliveInterval: js.UndefOr[Double] = js.undefined
 }
 object RouterBgp {
   
@@ -44,16 +51,20 @@ object RouterBgp {
     
     inline def setAdvertisedGroupsUndefined: Self = StObject.set(x, "advertisedGroups", js.undefined)
     
-    inline def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value :_*))
+    inline def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value*))
     
     inline def setAdvertisedIpRanges(value: js.Array[RouterAdvertisedIpRange]): Self = StObject.set(x, "advertisedIpRanges", value.asInstanceOf[js.Any])
     
     inline def setAdvertisedIpRangesUndefined: Self = StObject.set(x, "advertisedIpRanges", js.undefined)
     
-    inline def setAdvertisedIpRangesVarargs(value: RouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value :_*))
+    inline def setAdvertisedIpRangesVarargs(value: RouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value*))
     
     inline def setAsn(value: Double): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
     inline def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
+    
+    inline def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
+    
+    inline def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
   }
 }

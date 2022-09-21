@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EndGroup
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var endGroup: String
   
@@ -47,11 +47,11 @@ object EndGroup {
     
     inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSelectionData(value: js.Array[GroupData]): Self = StObject.set(x, "selectionData", value.asInstanceOf[js.Any])
     
-    inline def setSelectionDataVarargs(value: GroupData*): Self = StObject.set(x, "selectionData", js.Array(value :_*))
+    inline def setSelectionDataVarargs(value: GroupData*): Self = StObject.set(x, "selectionData", js.Array(value*))
     
     inline def setStartGroup(value: String): Self = StObject.set(x, "startGroup", value.asInstanceOf[js.Any])
     

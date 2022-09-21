@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@chevrotain/gast" : "10.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@chevrotain/gast" : "10.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

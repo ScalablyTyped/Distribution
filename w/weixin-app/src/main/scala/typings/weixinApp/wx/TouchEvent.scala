@@ -33,10 +33,10 @@ object TouchEvent {
     
     inline def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
-    inline def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+    inline def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value*))
     
     inline def setTouches(value: js.Array[Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
-    inline def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value :_*))
+    inline def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value*))
   }
 }

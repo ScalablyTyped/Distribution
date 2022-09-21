@@ -50,7 +50,7 @@ object headerComponentMod {
       
       inline def setAxes(value: js.Array[Axis]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      inline def setAxesVarargs(value: Axis*): Self = StObject.set(x, "axes", js.Array(value :_*))
+      inline def setAxesVarargs(value: Axis*): Self = StObject.set(x, "axes", js.Array(value*))
       
       inline def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
@@ -107,19 +107,19 @@ object headerComponentMod {
       
       inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      inline def setFooterVarargs(value: HeaderComponent*): Self = StObject.set(x, "footer", js.Array(value :_*))
+      inline def setFooterVarargs(value: HeaderComponent*): Self = StObject.set(x, "footer", js.Array(value*))
       
       inline def setHeader(value: js.Array[HeaderComponent]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setHeaderVarargs(value: HeaderComponent*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: HeaderComponent*): Self = StObject.set(x, "header", js.Array(value*))
       
       inline def setTitle(value: Text | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     }
   }
   

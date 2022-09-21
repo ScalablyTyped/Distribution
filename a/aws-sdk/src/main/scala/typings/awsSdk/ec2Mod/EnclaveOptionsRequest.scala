@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnclaveOptionsRequest extends StObject {
   
   /**
-    * To enable the instance for AWS Nitro Enclaves, set this parameter to true.
+    * To enable the instance for Amazon Web Services Nitro Enclaves, set this parameter to true.
     */
   var Enabled: js.UndefOr[Boolean] = js.undefined
 }

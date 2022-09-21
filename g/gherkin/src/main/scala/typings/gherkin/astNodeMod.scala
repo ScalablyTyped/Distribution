@@ -10,22 +10,22 @@ object astNodeMod {
   
   @JSImport("gherkin/dist/src/AstNode", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AstNode {
     def this(ruleType: RuleType) = this()
     
     /* CompleteClass */
-    override def add(`type`: js.Any, obj: js.Any): Unit = js.native
+    override def add(`type`: Any, obj: Any): Unit = js.native
     
     /* CompleteClass */
-    override def getItems(ruleType: RuleType): js.Array[js.Any] = js.native
+    override def getItems(ruleType: RuleType): js.Array[Any] = js.native
     
     /* CompleteClass */
-    override def getSingle(ruleType: RuleType): js.Any = js.native
+    override def getSingle(ruleType: RuleType): Any = js.native
     
     /* CompleteClass */
-    override def getToken(tokenType: TokenType): js.Any = js.native
+    override def getToken(tokenType: TokenType): Any = js.native
     
     /* CompleteClass */
     override def getTokens(tokenType: TokenType): js.Array[typings.gherkin.tokenMod.default] = js.native
@@ -34,35 +34,35 @@ object astNodeMod {
     override val ruleType: RuleType = js.native
     
     /* private */ /* CompleteClass */
-    override val subItems: js.Any = js.native
+    override val subItems: Any = js.native
   }
   
   trait AstNode extends StObject {
     
-    def add(`type`: js.Any, obj: js.Any): Unit
+    def add(`type`: Any, obj: Any): Unit
     
-    def getItems(ruleType: RuleType): js.Array[js.Any]
+    def getItems(ruleType: RuleType): js.Array[Any]
     
-    def getSingle(ruleType: RuleType): js.Any
+    def getSingle(ruleType: RuleType): Any
     
-    def getToken(tokenType: TokenType): js.Any
+    def getToken(tokenType: TokenType): Any
     
     def getTokens(tokenType: TokenType): js.Array[typings.gherkin.tokenMod.default]
     
     val ruleType: RuleType
     
-    /* private */ val subItems: js.Any
+    /* private */ val subItems: Any
   }
   object AstNode {
     
     inline def apply(
-      add: (js.Any, js.Any) => Unit,
-      getItems: RuleType => js.Array[js.Any],
-      getSingle: RuleType => js.Any,
-      getToken: TokenType => js.Any,
+      add: (Any, Any) => Unit,
+      getItems: RuleType => js.Array[Any],
+      getSingle: RuleType => Any,
+      getToken: TokenType => Any,
       getTokens: TokenType => js.Array[typings.gherkin.tokenMod.default],
       ruleType: RuleType,
-      subItems: js.Any
+      subItems: Any
     ): AstNode = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), getItems = js.Any.fromFunction1(getItems), getSingle = js.Any.fromFunction1(getSingle), getToken = js.Any.fromFunction1(getToken), getTokens = js.Any.fromFunction1(getTokens), ruleType = ruleType.asInstanceOf[js.Any], subItems = subItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[AstNode]
@@ -70,19 +70,19 @@ object astNodeMod {
     
     extension [Self <: AstNode](x: Self) {
       
-      inline def setAdd(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (Any, Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      inline def setGetItems(value: RuleType => js.Array[js.Any]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
+      inline def setGetItems(value: RuleType => js.Array[Any]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      inline def setGetSingle(value: RuleType => js.Any): Self = StObject.set(x, "getSingle", js.Any.fromFunction1(value))
+      inline def setGetSingle(value: RuleType => Any): Self = StObject.set(x, "getSingle", js.Any.fromFunction1(value))
       
-      inline def setGetToken(value: TokenType => js.Any): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
+      inline def setGetToken(value: TokenType => Any): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
       
       inline def setGetTokens(value: TokenType => js.Array[typings.gherkin.tokenMod.default]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
       
       inline def setRuleType(value: RuleType): Self = StObject.set(x, "ruleType", value.asInstanceOf[js.Any])
       
-      inline def setSubItems(value: js.Any): Self = StObject.set(x, "subItems", value.asInstanceOf[js.Any])
+      inline def setSubItems(value: Any): Self = StObject.set(x, "subItems", value.asInstanceOf[js.Any])
     }
   }
 }

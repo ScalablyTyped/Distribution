@@ -11,7 +11,7 @@ trait IgTreeGridFiltering
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Defines whether to render editors in advanced [mode](ui.iggridfiltering#options:mode). If false, no editors will be rendered in the advanced [mode](ui.iggridfiltering#options:mode).
@@ -62,7 +62,7 @@ trait IgTreeGridFiltering
     * If displayMode is showWithAncestorsAndDescendants, show all records that match filtering conditions and their child records, even if child records don"t match filtering conditions. If displayMode is showWithAncestors show only those records that match filtering conditions and do not show child records(if any) that don"t match filtering conditions
     *
     */
-  var displayMode: js.UndefOr[js.Any] = js.undefined
+  var displayMode: js.UndefOr[Any] = js.undefined
   
   /**
     * Event fired after a filter column dropdown is completely closed.
@@ -310,7 +310,7 @@ trait IgTreeGridFiltering
     * string  The height of the column filter dropdowns in pixels (0px).
     * number  The height of the column filter dropdowns in pixels as a number (0).
     */
-  var filterDropDownHeight: js.UndefOr[js.Any] = js.undefined
+  var filterDropDownHeight: js.UndefOr[Any] = js.undefined
   
   /**
     * Enable/disable filter icons visibility.
@@ -491,7 +491,7 @@ object IgTreeGridFiltering {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridFilteringColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridFilteringColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setDataFiltered(value: (/* event */ Event, /* ui */ DataFilteredEventUIParam) => Unit): Self = StObject.set(x, "dataFiltered", js.Any.fromFunction2(value))
     
@@ -505,7 +505,7 @@ object IgTreeGridFiltering {
     
     inline def setDialogWidgetUndefined: Self = StObject.set(x, "dialogWidget", js.undefined)
     
-    inline def setDisplayMode(value: js.Any): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+    inline def setDisplayMode(value: Any): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
@@ -645,7 +645,7 @@ object IgTreeGridFiltering {
     
     inline def setFilterDropDownAnimationsUndefined: Self = StObject.set(x, "filterDropDownAnimations", js.undefined)
     
-    inline def setFilterDropDownHeight(value: js.Any): Self = StObject.set(x, "filterDropDownHeight", value.asInstanceOf[js.Any])
+    inline def setFilterDropDownHeight(value: Any): Self = StObject.set(x, "filterDropDownHeight", value.asInstanceOf[js.Any])
     
     inline def setFilterDropDownHeightUndefined: Self = StObject.set(x, "filterDropDownHeight", js.undefined)
     

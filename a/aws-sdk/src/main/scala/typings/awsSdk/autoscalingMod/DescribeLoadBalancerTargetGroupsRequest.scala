@@ -9,7 +9,7 @@ trait DescribeLoadBalancerTargetGroupsRequest extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * The maximum number of items to return with this call. The default value is 100 and the maximum value is 100.
@@ -23,14 +23,14 @@ trait DescribeLoadBalancerTargetGroupsRequest extends StObject {
 }
 object DescribeLoadBalancerTargetGroupsRequest {
   
-  inline def apply(AutoScalingGroupName: ResourceName): DescribeLoadBalancerTargetGroupsRequest = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255): DescribeLoadBalancerTargetGroupsRequest = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoadBalancerTargetGroupsRequest]
   }
   
   extension [Self <: DescribeLoadBalancerTargetGroupsRequest](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

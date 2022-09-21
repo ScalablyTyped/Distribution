@@ -3,6 +3,7 @@ package typings.asana.mod.resources
 import org.scalablytyped.runtime.Shortcut
 import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Webhooks.Type
+import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,10 +61,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Webhooks
   extends StObject
-     with Resource {
+     with TopLevelResource {
   
-  def create(resource: String, target: String, data: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def create(resource: String, target: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def create(resource: String, target: String, data: Any): ^[Type] = js.native
+  def create(resource: String, target: String, data: Any, dispatchOptions: Any): ^[Type] = js.native
   /**
     * * Establishing a webhook is a two-part process. First, a simple HTTP POST
     * * similar to any other resource creation. Since you could have multiple
@@ -91,8 +92,8 @@ trait Webhooks
     * @param dispatchOptions?
     * @return
     */
-  def create(resource: Double, target: String, data: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def create(resource: Double, target: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def create(resource: Double, target: String, data: Any): ^[Type] = js.native
+  def create(resource: Double, target: String, data: Any, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * This method permanently removes a webhook. Note that it may be possible
@@ -105,13 +106,13 @@ trait Webhooks
     * @param dispatchOptions?
     * @return
     */
-  def deleteById(webhook: String): typings.bluebird.mod.^[js.Any] = js.native
-  def deleteById(webhook: String, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def deleteById(webhook: String): ^[Any] = js.native
+  def deleteById(webhook: String, dispatchOptions: Any): ^[Any] = js.native
   
-  def getAll(workspace: String): typings.bluebird.mod.^[js.Any] = js.native
-  def getAll(workspace: String, params: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def getAll(workspace: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def getAll(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getAll(workspace: String): ^[Any] = js.native
+  def getAll(workspace: String, params: Any): ^[Any] = js.native
+  def getAll(workspace: String, params: Any, dispatchOptions: Any): ^[Any] = js.native
+  def getAll(workspace: String, params: Unit, dispatchOptions: Any): ^[Any] = js.native
   /**
     * * Returns the compact representation of all webhooks your app has
     * * registered for the authenticated user in the given workspace.
@@ -125,10 +126,10 @@ trait Webhooks
     * @param dispatchOptions?
     * @return
     */
-  def getAll(workspace: Double): typings.bluebird.mod.^[js.Any] = js.native
-  def getAll(workspace: Double, params: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def getAll(workspace: Double, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def getAll(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getAll(workspace: Double): ^[Any] = js.native
+  def getAll(workspace: Double, params: Any): ^[Any] = js.native
+  def getAll(workspace: Double, params: Any, dispatchOptions: Any): ^[Any] = js.native
+  def getAll(workspace: Double, params: Unit, dispatchOptions: Any): ^[Any] = js.native
   
   /**
     * * Returns the full record for the given webhook.
@@ -141,17 +142,17 @@ trait Webhooks
     * @param dispatchOptions?
     * @return
     */
-  def getById(webhook: String): typings.bluebird.mod.^[js.Any] = js.native
-  def getById(webhook: String, params: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def getById(webhook: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def getById(webhook: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getById(webhook: String): ^[Any] = js.native
+  def getById(webhook: String, params: Any): ^[Any] = js.native
+  def getById(webhook: String, params: Any, dispatchOptions: Any): ^[Any] = js.native
+  def getById(webhook: String, params: Unit, dispatchOptions: Any): ^[Any] = js.native
 }
 object Webhooks extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Webhooks")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Webhooks {
     /**
@@ -187,7 +188,7 @@ object Webhooks extends Shortcut {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
       
@@ -195,26 +196,65 @@ object Webhooks extends Shortcut {
     }
   }
   
-  @js.native
   trait Type
     extends StObject
        with Resource {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var filters: js.Array[Filter] = js.native
+    var filters: js.Array[Filter]
     
-    var last_failure_at: String = js.native
+    var last_failure_at: String
     
-    var last_failure_content: String = js.native
+    var last_failure_content: String
     
-    var last_success_at: String = js.native
+    var last_success_at: String
     
-    var resource: Resource = js.native
+    var resource: Resource
     
-    var target: String = js.native
+    var target: String
+  }
+  object Type {
+    
+    inline def apply(
+      active: Boolean,
+      created_at: String,
+      filters: js.Array[Filter],
+      gid: String,
+      last_failure_at: String,
+      last_failure_content: String,
+      last_success_at: String,
+      name: String,
+      resource: Resource,
+      resource_type: String,
+      target: String
+    ): Type = {
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], last_failure_at = last_failure_at.asInstanceOf[js.Any], last_failure_content = last_failure_content.asInstanceOf[js.Any], last_success_at = last_success_at.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      
+      inline def setFilters(value: js.Array[Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
+      
+      inline def setLast_failure_at(value: String): Self = StObject.set(x, "last_failure_at", value.asInstanceOf[js.Any])
+      
+      inline def setLast_failure_content(value: String): Self = StObject.set(x, "last_failure_content", value.asInstanceOf[js.Any])
+      
+      inline def setLast_success_at(value: String): Self = StObject.set(x, "last_success_at", value.asInstanceOf[js.Any])
+      
+      inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    }
   }
   
   type _To = WebhooksStatic

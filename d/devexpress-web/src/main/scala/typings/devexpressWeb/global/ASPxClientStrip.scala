@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientStrip")
 @js.native
-class ASPxClientStrip ()
+open class ASPxClientStrip ()
   extends StObject
      with typings.devexpressWeb.ASPxClientStrip {
   
@@ -29,13 +29,13 @@ class ASPxClientStrip ()
     * Gets the maximum value of the strip's range.
     */
   /* CompleteClass */
-  var maxValue: js.Any = js.native
+  var maxValue: Any = js.native
   
   /**
     * Gets the minimum value of the strip's range.
     */
   /* CompleteClass */
-  var minValue: js.Any = js.native
+  var minValue: Any = js.native
   
   /**
     * Gets the name of the chart element.

@@ -11,28 +11,28 @@ object walkerMod {
   
   @JSImport("flora-colossus/lib/Walker", "Walker")
   @js.native
-  class Walker protected () extends StObject {
+  open class Walker protected () extends StObject {
     def this(modulePath: String) = this()
     
-    /* private */ var cache: js.Any = js.native
+    /* private */ var cache: Any = js.native
     
-    /* private */ var detectNativeModuleType: js.Any = js.native
+    /* private */ var detectNativeModuleType: Any = js.native
     
     def getRootModule(): String = js.native
     
-    /* private */ var loadPackageJSON: js.Any = js.native
+    /* private */ var loadPackageJSON: Any = js.native
     
-    /* private */ var modules: js.Any = js.native
+    /* private */ var modules: Any = js.native
     
-    /* private */ var relativeModule: js.Any = js.native
+    /* private */ var relativeModule: Any = js.native
     
-    /* private */ var rootModule: js.Any = js.native
+    /* private */ var rootModule: Any = js.native
     
-    /* private */ var walkDependenciesForModule: js.Any = js.native
+    /* private */ var walkDependenciesForModule: Any = js.native
     
-    /* private */ var walkDependenciesForModuleInModule: js.Any = js.native
+    /* private */ var walkDependenciesForModuleInModule: Any = js.native
     
-    /* private */ var walkHistory: js.Any = js.native
+    /* private */ var walkHistory: Any = js.native
     
     def walkTree(): js.Promise[js.Array[Module]] = js.native
   }

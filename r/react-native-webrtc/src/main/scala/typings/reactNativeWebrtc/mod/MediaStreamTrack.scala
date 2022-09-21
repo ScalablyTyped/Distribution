@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-webrtc", "MediaStreamTrack")
 @js.native
-class MediaStreamTrack () extends StObject {
+open class MediaStreamTrack () extends StObject {
   
   /* private */ var _enabled: Boolean = js.native
   

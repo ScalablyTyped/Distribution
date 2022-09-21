@@ -17,7 +17,7 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.geopattern.geopatternStrings.chevrons
-    - typings.geopattern.geopatternStrings.octagons
+    - typings.geopattern.geopatternStrings.octogons
     - typings.geopattern.geopatternStrings.overlappingCircles
     - typings.geopattern.geopatternStrings.plusSigns
     - typings.geopattern.geopatternStrings.xes
@@ -48,7 +48,7 @@ object mod {
     
     inline def nestedSquares: typings.geopattern.geopatternStrings.nestedSquares = "nestedSquares".asInstanceOf[typings.geopattern.geopatternStrings.nestedSquares]
     
-    inline def octagons: typings.geopattern.geopatternStrings.octagons = "octagons".asInstanceOf[typings.geopattern.geopatternStrings.octagons]
+    inline def octogons: typings.geopattern.geopatternStrings.octogons = "octogons".asInstanceOf[typings.geopattern.geopatternStrings.octogons]
     
     inline def overlappingCircles: typings.geopattern.geopatternStrings.overlappingCircles = "overlappingCircles".asInstanceOf[typings.geopattern.geopatternStrings.overlappingCircles]
     

@@ -1,6 +1,10 @@
 package typings.restify.mod
 
-import typings.node.Buffer
+import org.scalablytyped.runtime.Instantiable1
+import typings.node.bufferMod.global.Buffer
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +27,17 @@ trait ServerOptions extends StObject {
   
   var handleUpgrades: js.UndefOr[Boolean] = js.undefined
   
-  var http2: js.UndefOr[js.Any] = js.undefined
+  var http2: js.UndefOr[Any] = js.undefined
   
-  var httpsServerOptions: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.undefined
+  var httpsServerOptions: js.UndefOr[
+    typings.node.httpsMod.ServerOptions[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.undefined
   
   var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
   
@@ -55,6 +67,8 @@ trait ServerOptions extends StObject {
   
   var spdy: js.UndefOr[typings.spdy.mod.ServerOptions] = js.undefined
   
+  var strictFormatters: js.UndefOr[Boolean] = js.undefined
+  
   var strictNext: js.UndefOr[Boolean] = js.undefined
   
   var version: js.UndefOr[String] = js.undefined
@@ -74,19 +88,19 @@ object ServerOptions {
     
     inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
-    inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+    inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
     
     inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+    inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
     
     inline def setCertificate(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    inline def setCertificateVarargs(value: (String | Buffer)*): Self = StObject.set(x, "certificate", js.Array(value :_*))
+    inline def setCertificateVarargs(value: (String | Buffer)*): Self = StObject.set(x, "certificate", js.Array(value*))
     
     inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
     
@@ -108,11 +122,19 @@ object ServerOptions {
     
     inline def setHandleUpgradesUndefined: Self = StObject.set(x, "handleUpgrades", js.undefined)
     
-    inline def setHttp2(value: js.Any): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
+    inline def setHttp2(value: Any): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
     
     inline def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
     
-    inline def setHttpsServerOptions(value: typings.node.httpsMod.ServerOptions): Self = StObject.set(x, "httpsServerOptions", value.asInstanceOf[js.Any])
+    inline def setHttpsServerOptions(
+      value: typings.node.httpsMod.ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "httpsServerOptions", value.asInstanceOf[js.Any])
     
     inline def setHttpsServerOptionsUndefined: Self = StObject.set(x, "httpsServerOptions", js.undefined)
     
@@ -124,7 +146,7 @@ object ServerOptions {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setKeyVarargs(value: (String | Buffer)*): Self = StObject.set(x, "key", js.Array(value :_*))
+    inline def setKeyVarargs(value: (String | Buffer)*): Self = StObject.set(x, "key", js.Array(value*))
     
     inline def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
@@ -174,6 +196,10 @@ object ServerOptions {
     
     inline def setSpdyUndefined: Self = StObject.set(x, "spdy", js.undefined)
     
+    inline def setStrictFormatters(value: Boolean): Self = StObject.set(x, "strictFormatters", value.asInstanceOf[js.Any])
+    
+    inline def setStrictFormattersUndefined: Self = StObject.set(x, "strictFormatters", js.undefined)
+    
     inline def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
     
     inline def setStrictNextUndefined: Self = StObject.set(x, "strictNext", js.undefined)
@@ -186,6 +212,6 @@ object ServerOptions {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

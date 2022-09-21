@@ -9,7 +9,7 @@ trait TerrainTile extends StObject {
   /** The global tile coordinates that uniquely identify this tile. */
   var coordinates: js.UndefOr[TileCoordinates] = js.undefined
   
-  /** Terrain elevation data encoded as a FirstDerivativeElevationGrid. */
+  /** Terrain elevation data encoded as a FirstDerivativeElevationGrid. cs/symbol:FirstDerivativeElevationGrid. */
   var firstDerivative: js.UndefOr[FirstDerivativeElevationGrid] = js.undefined
   
   /**
@@ -18,7 +18,7 @@ trait TerrainTile extends StObject {
     */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Terrain elevation data encoded as a SecondDerivativeElevationGrid. . */
+  /** Terrain elevation data encoded as a SecondDerivativeElevationGrid. cs/symbol:SecondDerivativeElevationGrid. See go/byte-encoded-terrain for more details. */
   var secondDerivative: js.UndefOr[SecondDerivativeElevationGrid] = js.undefined
 }
 object TerrainTile {

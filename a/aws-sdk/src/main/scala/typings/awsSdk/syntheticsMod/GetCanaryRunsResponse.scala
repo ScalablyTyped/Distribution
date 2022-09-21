@@ -29,7 +29,7 @@ object GetCanaryRunsResponse {
     
     inline def setCanaryRunsUndefined: Self = StObject.set(x, "CanaryRuns", js.undefined)
     
-    inline def setCanaryRunsVarargs(value: CanaryRun*): Self = StObject.set(x, "CanaryRuns", js.Array(value :_*))
+    inline def setCanaryRunsVarargs(value: CanaryRun*): Self = StObject.set(x, "CanaryRuns", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html)
   */
-class MapViewCls ()
+open class MapViewCls ()
   extends StObject
      with typings.arcgisJsApi.esri.MapView {
   def this(properties: MapViewProperties) = this()
@@ -53,6 +53,8 @@ class MapViewCls ()
   
   /**
     * The height of the view in pixels read from the view container element.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#height)
     */
@@ -86,6 +88,8 @@ class MapViewCls ()
   /**
     * Indicates if the view is being resized.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#resizing)
     */
   /* CompleteClass */
@@ -102,6 +106,8 @@ class MapViewCls ()
   /**
     * Indicates if the view is visible on the page.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#suspended)
     */
   /* CompleteClass */
@@ -117,6 +123,8 @@ class MapViewCls ()
   
   /**
     * The width of the view in pixels read from the view container element.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#width)
     */

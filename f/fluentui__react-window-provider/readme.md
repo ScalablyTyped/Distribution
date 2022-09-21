@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__react-window-provider
 
-Typings are for version 1.0.1
+Typings are for version 2.2.2
 
 ## Library description:
 Utilities for providing and consuming the window/document objects even across portal/iframe/child-window boundaries.
@@ -10,10 +10,10 @@ Utilities for providing and consuming the window/document objects even across po
 | ------------------ | :-------------: |
 | Full name          | @fluentui/react-window-provider |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 6 |
-| # downloads        | 726859 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 611311.3333333334 |
+| # stars            | 13903.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

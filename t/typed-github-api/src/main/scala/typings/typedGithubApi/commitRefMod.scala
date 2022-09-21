@@ -14,7 +14,7 @@ object commitRefMod {
   
   @JSImport("typed-github-api/dist/commit-ref", "CommitRefClass")
   @js.native
-  class CommitRefClass protected ()
+  open class CommitRefClass protected ()
     extends GitHubRef
        with CommitRef {
     def this(repository: RepositoryRefClass, sha: String) = this()

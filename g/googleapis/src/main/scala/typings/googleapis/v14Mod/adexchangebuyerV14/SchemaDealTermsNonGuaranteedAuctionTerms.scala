@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaDealTermsNonGuaranteedAuctionTerms extends StObject {
   
   /**
-    * True if open auction buyers are allowed to compete with invited buyers in
-    * this private auction (buyer-readonly).
+    * True if open auction buyers are allowed to compete with invited buyers in this private auction (buyer-readonly).
     */
-  var autoOptimizePrivateAuction: js.UndefOr[Boolean] = js.undefined
+  var autoOptimizePrivateAuction: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Reserve price for the specified buyer.
@@ -28,12 +27,14 @@ object SchemaDealTermsNonGuaranteedAuctionTerms {
     
     inline def setAutoOptimizePrivateAuction(value: Boolean): Self = StObject.set(x, "autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
     
+    inline def setAutoOptimizePrivateAuctionNull: Self = StObject.set(x, "autoOptimizePrivateAuction", null)
+    
     inline def setAutoOptimizePrivateAuctionUndefined: Self = StObject.set(x, "autoOptimizePrivateAuction", js.undefined)
     
     inline def setReservePricePerBuyers(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "reservePricePerBuyers", value.asInstanceOf[js.Any])
     
     inline def setReservePricePerBuyersUndefined: Self = StObject.set(x, "reservePricePerBuyers", js.undefined)
     
-    inline def setReservePricePerBuyersVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "reservePricePerBuyers", js.Array(value :_*))
+    inline def setReservePricePerBuyersVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "reservePricePerBuyers", js.Array(value*))
   }
 }

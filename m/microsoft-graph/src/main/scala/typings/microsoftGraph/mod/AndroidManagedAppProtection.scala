@@ -59,7 +59,7 @@ object AndroidManagedAppProtection {
     
     inline def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
     
-    inline def setAppsVarargs(value: ManagedMobileApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: ManagedMobileApp*): Self = StObject.set(x, "apps", js.Array(value*))
     
     inline def setCustomBrowserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "customBrowserDisplayName", value.asInstanceOf[js.Any])
     

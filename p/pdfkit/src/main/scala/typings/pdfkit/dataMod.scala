@@ -11,10 +11,10 @@ object dataMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pdfkit/js/data", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PDFData {
-    def this(data: js.Array[js.Any]) = this()
+    def this(data: js.Array[Any]) = this()
   }
   @JSImport("pdfkit/js/data", JSImport.Namespace)
   @js.native

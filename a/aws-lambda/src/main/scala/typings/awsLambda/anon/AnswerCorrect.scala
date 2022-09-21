@@ -91,7 +91,7 @@ object AnswerCorrect {
     
     inline def setDesiredDeliveryMediumsUndefined: Self = StObject.set(x, "desiredDeliveryMediums", js.undefined)
     
-    inline def setDesiredDeliveryMediumsVarargs(value: (EMAIL | SMS)*): Self = StObject.set(x, "desiredDeliveryMediums", js.Array(value :_*))
+    inline def setDesiredDeliveryMediumsVarargs(value: (EMAIL | SMS)*): Self = StObject.set(x, "desiredDeliveryMediums", js.Array(value*))
     
     inline def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
     

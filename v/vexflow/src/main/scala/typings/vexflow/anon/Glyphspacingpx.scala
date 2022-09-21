@@ -12,6 +12,8 @@ trait Glyphspacingpx extends StObject {
   
   var left_bar: js.UndefOr[Boolean] = js.undefined
   
+  var line_config: js.UndefOr[js.Array[Visible]] = js.undefined
+  
   var num_lines: js.UndefOr[Double] = js.undefined
   
   var right_bar: js.UndefOr[Boolean] = js.undefined
@@ -46,6 +48,12 @@ object Glyphspacingpx {
     inline def setLeft_bar(value: Boolean): Self = StObject.set(x, "left_bar", value.asInstanceOf[js.Any])
     
     inline def setLeft_barUndefined: Self = StObject.set(x, "left_bar", js.undefined)
+    
+    inline def setLine_config(value: js.Array[Visible]): Self = StObject.set(x, "line_config", value.asInstanceOf[js.Any])
+    
+    inline def setLine_configUndefined: Self = StObject.set(x, "line_config", js.undefined)
+    
+    inline def setLine_configVarargs(value: Visible*): Self = StObject.set(x, "line_config", js.Array(value*))
     
     inline def setNum_lines(value: Double): Self = StObject.set(x, "num_lines", value.asInstanceOf[js.Any])
     

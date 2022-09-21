@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "WebGLDepthBuffer")
 @js.native
-class WebGLDepthBuffer ()
-  extends typings.three.webGLStateMod.WebGLDepthBuffer
+open class WebGLDepthBuffer ()
+  extends typings.three.threeMod.WebGLDepthBuffer

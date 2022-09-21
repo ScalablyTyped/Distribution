@@ -22,9 +22,7 @@ import typings.nightmare.nightmareStrings.resourceReceived
 import typings.nightmare.nightmareStrings.resourceRequested
 import typings.nightmare.nightmareStrings.timeout
 import typings.nightmare.nightmareStrings.urlChanged
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +31,7 @@ object mod {
   
   @JSImport("nightmare", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Nightmare {
     def this(options: IConstructorOptions) = this()
@@ -41,7 +39,7 @@ object mod {
   
   @JSImport("nightmare", "Cookies")
   @js.native
-  class Cookies () extends StObject {
+  open class Cookies () extends StObject {
     
     def clear(): Nightmare = js.native
     def clear(name: String): Nightmare = js.native
@@ -72,7 +70,7 @@ object mod {
     
     var ignoreSslErrors: js.UndefOr[Boolean] = js.undefined
     
-    var interval: js.UndefOr[js.Any] = js.undefined
+    var interval: js.UndefOr[Any] = js.undefined
     
     var loadImages: js.UndefOr[Boolean] = js.undefined
     
@@ -99,7 +97,7 @@ object mod {
     
     var sslProtocol: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[js.Any] = js.undefined
+    var timeout: js.UndefOr[Any] = js.undefined
     
     var typeInterval: js.UndefOr[Double] = js.undefined
     
@@ -147,7 +145,7 @@ object mod {
       
       inline def setIgnoreSslErrorsUndefined: Self = StObject.set(x, "ignoreSslErrors", js.undefined)
       
-      inline def setInterval(value: js.Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
       inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
@@ -199,7 +197,7 @@ object mod {
       
       inline def setSslProtocolUndefined: Self = StObject.set(x, "sslProtocol", js.undefined)
       
-      inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
@@ -380,13 +378,13 @@ object mod {
     
     var method: String
     
-    var time: Date
+    var time: js.Date
     
     var url: String
   }
   object IRequest {
     
-    inline def apply(headers: js.Object, id: Double, method: String, time: Date, url: String): IRequest = {
+    inline def apply(headers: js.Object, id: Double, method: String, time: js.Date, url: String): IRequest = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRequest]
     }
@@ -399,7 +397,7 @@ object mod {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -452,7 +450,7 @@ object mod {
     
     var statusText: String
     
-    var time: Date
+    var time: js.Date
     
     var url: String
   }
@@ -467,7 +465,7 @@ object mod {
       stage: String,
       status: Double,
       statusText: String,
-      time: Date,
+      time: js.Date,
       url: String
     ): IResponse = {
       val __obj = js.Dynamic.literal(bodySize = bodySize.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], redirectURL = redirectURL.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -492,7 +490,7 @@ object mod {
       
       inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -539,11 +537,8 @@ object mod {
     
     val cookies: Cookies = js.native
     
+    def download(action: cancel | continue): Nightmare = js.native
     def download(path: String): Nightmare = js.native
-    @JSName("download")
-    def download_cancel(action: cancel): Nightmare = js.native
-    @JSName("download")
-    def download_continue(action: continue): Nightmare = js.native
     
     // Interact
     def end(): Nightmare = js.native
@@ -697,7 +692,7 @@ object mod {
     
     def path(): String = js.native
     
-    def pdf(cb: js.Function2[/* err */ Error, /* data */ Buffer, Unit]): Nightmare = js.native
+    def pdf(cb: js.Function2[/* err */ js.Error, /* data */ Buffer, Unit]): Nightmare = js.native
     def pdf(path: String): Nightmare = js.native
     def pdf(path: String, options: js.Object): Nightmare = js.native
     
@@ -752,17 +747,17 @@ object mod {
     def removeListener_urlChanged(event: urlChanged, cb: js.Function1[/* targetUrl */ String, Unit]): Nightmare = js.native
     
     def run(): Nightmare = js.native
-    def run(cb: js.Function2[/* err */ js.Any, /* nightmare */ this.type, Unit]): Nightmare = js.native
+    def run(cb: js.Function2[/* err */ Any, /* nightmare */ this.type, Unit]): Nightmare = js.native
     
     def screenshot(): Nightmare = js.native
     def screenshot(clip: Height): Nightmare = js.native
-    def screenshot(clip: Height, done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
-    def screenshot(done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
+    def screenshot(clip: Height, done: js.Function2[/* err */ Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
+    def screenshot(done: js.Function2[/* err */ Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
     def screenshot(path: String): Nightmare = js.native
-    def screenshot(path: String, clip: Unit, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
+    def screenshot(path: String, clip: Unit, done: js.Function1[/* err */ Any, Unit]): Nightmare = js.native
     def screenshot(path: String, clip: Height): Nightmare = js.native
-    def screenshot(path: String, clip: Height, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
-    def screenshot(path: String, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
+    def screenshot(path: String, clip: Height, done: js.Function1[/* err */ Any, Unit]): Nightmare = js.native
+    def screenshot(path: String, done: js.Function1[/* err */ Any, Unit]): Nightmare = js.native
     
     def scrollTo(top: Double, left: Double): Nightmare = js.native
     
@@ -791,28 +786,28 @@ object mod {
     def visible(selector: String): Nightmare = js.native
     def visible(selector: String, cb: js.Function1[/* result */ Boolean, Unit]): Nightmare = js.native
     
-    def wait(fn: js.Function0[js.Any]): Nightmare = js.native
-    def wait(fn: js.Function0[js.Any], value: js.Any): Nightmare = js.native
-    def wait(fn: js.Function0[js.Any], value: js.Any, delay: Double): Nightmare = js.native
+    def wait(fn: js.Function0[Any]): Nightmare = js.native
+    def wait(fn: js.Function0[Any], value: Any): Nightmare = js.native
+    def wait(fn: js.Function0[Any], value: Any, delay: Double): Nightmare = js.native
     def wait(ms: Double): Nightmare = js.native
     def wait(selector: String): Nightmare = js.native
-    def wait[T1](fn: js.Function1[/* arg1 */ T1, js.Any], value1: T1): Nightmare = js.native
-    def wait[T1, T2](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Any], value1: T1, value2: T2): Nightmare = js.native
+    def wait[T1](fn: js.Function1[/* arg1 */ T1, Any], value1: T1): Nightmare = js.native
+    def wait[T1, T2](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, Any], value1: T1, value2: T2): Nightmare = js.native
     def wait[T1, T2, T3](
-      fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Any],
+      fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Any],
       value1: T1,
       value2: T2,
       value3: T3
     ): Nightmare = js.native
     def wait[T1, T2, T3, T4](
-      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Any],
+      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Any],
       value1: T1,
       value2: T2,
       value3: T3,
       value4: T4
     ): Nightmare = js.native
     def wait[T1, T2, T3, T4, T5](
-      fn: js.Function5[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, /* arg5 */ T5, js.Any],
+      fn: js.Function5[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, /* arg5 */ T5, Any],
       value1: T1,
       value2: T2,
       value3: T3,

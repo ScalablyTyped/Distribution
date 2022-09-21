@@ -26,9 +26,198 @@ object conv2dBackpropFilterMod {
     x: Tensor[R3 | R4],
     dy: Tensor[R3 | R4],
     filterShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | ExplicitPadding | same_ | valid_,
-    dataFormat: js.UndefOr[NCHW | NHWC],
-    dimRoundingMode: js.UndefOr[ceil | floor | round]
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dataFormat: NCHW | NHWC
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dataFormat: NCHW | NHWC,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dataFormat: NCHW | NHWC
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dataFormat: NCHW | NHWC,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dataFormat: Unit,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding,
+    dataFormat: NCHW | NHWC
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding,
+    dataFormat: NCHW | NHWC,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding,
+    dataFormat: Unit,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: same_ | valid_
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: NCHW | NHWC
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: NCHW | NHWC,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: Double
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: Double,
+    dataFormat: NCHW | NHWC
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: Double,
+    dataFormat: NCHW | NHWC,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: Double,
+    dataFormat: Unit,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: ExplicitPadding
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: ExplicitPadding,
+    dataFormat: NCHW | NHWC
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: ExplicitPadding,
+    dataFormat: NCHW | NHWC,
+    dimRoundingMode: ceil | floor | round
+  ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  inline def conv2DBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double,
+    pad: ExplicitPadding,
+    dataFormat: Unit,
+    dimRoundingMode: ceil | floor | round
   ): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
 }

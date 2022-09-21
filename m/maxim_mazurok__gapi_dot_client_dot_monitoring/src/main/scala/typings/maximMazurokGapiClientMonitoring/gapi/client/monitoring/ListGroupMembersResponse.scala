@@ -31,7 +31,7 @@ object ListGroupMembersResponse {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: MonitoredResource*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: MonitoredResource*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

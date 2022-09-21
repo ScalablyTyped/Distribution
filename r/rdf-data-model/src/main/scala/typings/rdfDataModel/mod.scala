@@ -1,12 +1,12 @@
 package typings.rdfDataModel
 
-import typings.rdfJs.mod.BlankNode
-import typings.rdfJs.mod.DefaultGraph
-import typings.rdfJs.mod.Literal
-import typings.rdfJs.mod.NamedNode
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.Term
-import typings.rdfJs.mod.Variable
+import typings.rdfjsTypes.dataModelMod.BlankNode
+import typings.rdfjsTypes.dataModelMod.DefaultGraph
+import typings.rdfjsTypes.dataModelMod.Literal
+import typings.rdfjsTypes.dataModelMod.NamedNode
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.dataModelMod.Term
+import typings.rdfjsTypes.dataModelMod.Variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.IcosahedronGeometry")
 @js.native
 /**
-	 * @param [radius=1]
-	 * @param [detail=0]
-	 */
-class IcosahedronGeometry ()
+  * @param [radius=1]
+  * @param [detail=0]
+  */
+open class IcosahedronGeometry ()
   extends typings.three.mod.IcosahedronGeometry

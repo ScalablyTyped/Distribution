@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__notices
 
-Typings are for version 1.5
+Typings are for version 3.5
 
 ## Library description:
 State management for notices.
@@ -10,10 +10,10 @@ State management for notices.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/notices |
 | Keywords           | wordpress, gutenberg, notices |
-| # releases         | 41 |
-| # dependents       | 11 |
-| # downloads        | 619111 |
-| # stars            | 0 |
+| # releases         | 68 |
+| # dependents       | 0.0 |
+| # downloads        | 106598.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/notices/README.md)

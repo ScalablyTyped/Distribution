@@ -1,11 +1,5 @@
 package typings.dashjs.mod
 
-import typings.dashjs.dashjsStrings.audio
-import typings.dashjs.dashjsStrings.fragmentedText
-import typings.dashjs.dashjsStrings.image
-import typings.dashjs.dashjsStrings.stream
-import typings.dashjs.dashjsStrings.text
-import typings.dashjs.dashjsStrings.video
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLVideoElement
@@ -23,7 +17,11 @@ trait MediaPlayerClass extends StObject {
   def attachProtectionController(value: ProtectionController): Unit = js.native
   
   def attachSource(urlOrManifest: String): Unit = js.native
+  def attachSource(urlOrManifest: String, startTime: String): Unit = js.native
+  def attachSource(urlOrManifest: String, startTime: Double): Unit = js.native
   def attachSource(urlOrManifest: js.Object): Unit = js.native
+  def attachSource(urlOrManifest: js.Object, startTime: String): Unit = js.native
+  def attachSource(urlOrManifest: js.Object, startTime: Double): Unit = js.native
   
   def attachTTMLRenderingDiv(div: HTMLDivElement): Unit = js.native
   
@@ -33,25 +31,13 @@ trait MediaPlayerClass extends StObject {
   
   def convertToTimeCode(value: Double): String = js.native
   
-  def displayCaptionsOnTop(value: Boolean): Unit = js.native
+  def destroy(): Unit = js.native
   
   def duration(): Double = js.native
   
   def durationAsUTC(): Double = js.native
   
-  def enableBufferOccupancyABR(value: Boolean): Unit = js.native
-  
   def enableForcedTextStreaming(value: Boolean): Unit = js.native
-  
-  def enableLastBitrateCaching(enable: Boolean): Unit = js.native
-  def enableLastBitrateCaching(enable: Boolean, ttl: Double): Unit = js.native
-  
-  def enableLastMediaSettingsCaching(enable: Boolean): Unit = js.native
-  def enableLastMediaSettingsCaching(enable: Boolean, ttl: Double): Unit = js.native
-  
-  def enableLowLatencyCatchUp(value: Boolean): Unit = js.native
-  
-  def enableManifestDateHeaderTimeSource(value: Boolean): Unit = js.native
   
   def enableText(enable: Boolean): Unit = js.native
   
@@ -60,181 +46,55 @@ trait MediaPlayerClass extends StObject {
   def formatUTC(time: Double, locales: String, hour12: Boolean): String = js.native
   def formatUTC(time: Double, locales: String, hour12: Boolean, withDate: Boolean): String = js.native
   
-  def getABRStrategy(): String = js.native
-  
   def getActiveStream(): Stream | Null = js.native
   
   def getAutoPlay(): Boolean = js.native
   
-  def getAutoSwitchQuality(): Boolean = js.native
+  def getAverageThroughput(`type`: MediaType): Double = js.native
   
-  @JSName("getAutoSwitchQualityFor")
-  def getAutoSwitchQualityFor_audio(`type`: audio): Boolean = js.native
-  @JSName("getAutoSwitchQualityFor")
-  def getAutoSwitchQualityFor_video(`type`: video): Boolean = js.native
+  def getBitrateInfoListFor(`type`: MediaType): js.Array[BitrateInfo] = js.native
   
-  def getAverageThroughput(value: Double): Unit = js.native
-  
-  def getBandwidthSafetyFactor(): Double = js.native
-  
-  @JSName("getBitrateInfoListFor")
-  def getBitrateInfoListFor_audio(`type`: audio): js.Array[BitrateInfo] = js.native
-  @JSName("getBitrateInfoListFor")
-  def getBitrateInfoListFor_image(`type`: image): js.Array[BitrateInfo] = js.native
-  @JSName("getBitrateInfoListFor")
-  def getBitrateInfoListFor_video(`type`: video): js.Array[BitrateInfo] = js.native
-  
-  @JSName("getBufferLength")
-  def getBufferLength_audio(`type`: audio): Double = js.native
-  @JSName("getBufferLength")
-  def getBufferLength_fragmentedText(`type`: fragmentedText): Double = js.native
-  @JSName("getBufferLength")
-  def getBufferLength_video(`type`: video): Double = js.native
-  
-  def getBufferTimeAtTopQuality(): Double = js.native
-  
-  def getBufferTimeAtTopQualityLongForm(): Double = js.native
+  def getBufferLength(`type`: MediaType): Double = js.native
   
   def getCurrentLiveLatency(): Double = js.native
   
   def getCurrentTextTrackIndex(): Double = js.native
   
-  @JSName("getCurrentTrackFor")
-  def getCurrentTrackFor_audio(`type`: audio): MediaInfo | Null = js.native
-  @JSName("getCurrentTrackFor")
-  def getCurrentTrackFor_fragmentedText(`type`: fragmentedText): MediaInfo | Null = js.native
-  @JSName("getCurrentTrackFor")
-  def getCurrentTrackFor_text(`type`: text): MediaInfo | Null = js.native
-  @JSName("getCurrentTrackFor")
-  def getCurrentTrackFor_video(`type`: video): MediaInfo | Null = js.native
+  def getCurrentTrackFor(`type`: MediaType): MediaInfo | Null = js.native
   
   def getDVRSeekOffset(value: Double): Double = js.native
   
   def getDVRWindowSize(): Double = js.native
   
+  def getDashAdapter(): DashAdapter = js.native
+  
   def getDashMetrics(): DashMetrics = js.native
   
   def getDebug(): Debug = js.native
   
-  def getFastSwitchEnabled(): Boolean = js.native
+  def getInitialMediaSettingsFor(`type`: MediaType): MediaSettings = js.native
   
-  @JSName("getInitialBitrateFor")
-  def getInitialBitrateFor_audio(`type`: audio): Double = js.native
-  @JSName("getInitialBitrateFor")
-  def getInitialBitrateFor_video(`type`: video): Double = js.native
-  
-  @JSName("getInitialMediaSettingsFor")
-  def getInitialMediaSettingsFor_audio(`type`: audio): MediaSettings = js.native
-  @JSName("getInitialMediaSettingsFor")
-  def getInitialMediaSettingsFor_video(`type`: video): MediaSettings = js.native
-  
-  @JSName("getInitialRepresentationRatioFor")
-  def getInitialRepresentationRatioFor_audio(`type`: audio): Double = js.native
-  @JSName("getInitialRepresentationRatioFor")
-  def getInitialRepresentationRatioFor_video(`type`: video): Double = js.native
-  
-  def getJumpGaps(): Boolean = js.native
-  
-  def getLimitBitrateByPortal(): js.Any = js.native
-  
-  def getLiveDelay(): js.UndefOr[Double] = js.native
-  
-  def getLowLatencyEnabled(): Boolean = js.native
-  
-  def getLowLatencyMaxDriftBeforeSeeking(): Double = js.native
-  
-  def getLowLatencyMinDrift(): Double = js.native
-  
-  def getManifestUpdateRetryInterval(): Double = js.native
-  
-  @JSName("getMaxAllowedBitrateFor")
-  def getMaxAllowedBitrateFor_audio(`type`: audio): Double = js.native
-  @JSName("getMaxAllowedBitrateFor")
-  def getMaxAllowedBitrateFor_video(`type`: video): Double = js.native
-  
-  @JSName("getMaxAllowedRepresentationRatioFor")
-  def getMaxAllowedRepresentationRatioFor_audio(`type`: audio): Double = js.native
-  @JSName("getMaxAllowedRepresentationRatioFor")
-  def getMaxAllowedRepresentationRatioFor_video(`type`: video): Double = js.native
-  
-  @JSName("getMetricsFor")
-  def getMetricsFor_audio(`type`: audio): MetricsList | Null = js.native
-  @JSName("getMetricsFor")
-  def getMetricsFor_stream(`type`: stream): MetricsList | Null = js.native
-  @JSName("getMetricsFor")
-  def getMetricsFor_text(`type`: text): MetricsList | Null = js.native
-  @JSName("getMetricsFor")
-  def getMetricsFor_video(`type`: video): MetricsList | Null = js.native
-  
-  @JSName("getMinAllowedBitrateFor")
-  def getMinAllowedBitrateFor_audio(`type`: audio): Double = js.native
-  @JSName("getMinAllowedBitrateFor")
-  def getMinAllowedBitrateFor_video(`type`: video): Double = js.native
-  
-  def getMovingAverageMethod(): String = js.native
+  def getOfflineController(): OfflineController = js.native
   
   def getPlaybackRate(): Double = js.native
   
   def getProtectionController(): ProtectionController = js.native
   
-  @JSName("getQualityFor")
-  def getQualityFor_audio(`type`: audio): Double = js.native
-  @JSName("getQualityFor")
-  def getQualityFor_image(`type`: image): Double = js.native
-  @JSName("getQualityFor")
-  def getQualityFor_video(`type`: video): Double = js.native
+  def getQualityFor(`type`: MediaType): Double = js.native
   
-  def getScheduleWhilePaused(): Boolean = js.native
-  
-  def getSelectionModeForInitialTrack(): TrackSelectionMode = js.native
-  
-  def getSmallGapLimit(): Double = js.native
+  def getSettings(): MediaPlayerSettingClass = js.native
   
   def getSource(): String | js.Object = js.native
-  
-  def getStableBufferTime(): Double = js.native
   
   def getStreamsFromManifest(manifest: js.Object): js.Array[StreamInfo] = js.native
   
   def getTTMLRenderingDiv(): HTMLDivElement | Null = js.native
   
-  def getTextDefaultEnabled(): js.UndefOr[Boolean] = js.native
+  def getTopBitrateInfoFor(`type`: MediaType): BitrateInfo = js.native
   
-  def getTextDefaultLanguage(): js.UndefOr[String] = js.native
+  def getTracksFor(`type`: MediaType): js.Array[MediaInfo] = js.native
   
-  def getThumbnail(time: Double): Thumbnail = js.native
-  
-  @JSName("getTopBitrateInfoFor")
-  def getTopBitrateInfoFor_audio(`type`: audio): BitrateInfo = js.native
-  @JSName("getTopBitrateInfoFor")
-  def getTopBitrateInfoFor_video(`type`: video): BitrateInfo = js.native
-  
-  @JSName("getTrackSwitchModeFor")
-  def getTrackSwitchModeFor_audio(`type`: audio): TrackSwitchMode = js.native
-  @JSName("getTrackSwitchModeFor")
-  def getTrackSwitchModeFor_video(`type`: video): TrackSwitchMode = js.native
-  
-  @JSName("getTracksForTypeFromManifest")
-  def getTracksForTypeFromManifest_audio(`type`: audio, manifest: js.Object, streamInfo: StreamInfo): js.Array[MediaInfo] = js.native
-  @JSName("getTracksForTypeFromManifest")
-  def getTracksForTypeFromManifest_fragmentedText(`type`: fragmentedText, manifest: js.Object, streamInfo: StreamInfo): js.Array[MediaInfo] = js.native
-  @JSName("getTracksForTypeFromManifest")
-  def getTracksForTypeFromManifest_text(`type`: text, manifest: js.Object, streamInfo: StreamInfo): js.Array[MediaInfo] = js.native
-  @JSName("getTracksForTypeFromManifest")
-  def getTracksForTypeFromManifest_video(`type`: video, manifest: js.Object, streamInfo: StreamInfo): js.Array[MediaInfo] = js.native
-  
-  @JSName("getTracksFor")
-  def getTracksFor_audio(`type`: audio): js.Array[MediaInfo] = js.native
-  @JSName("getTracksFor")
-  def getTracksFor_fragmentedText(`type`: fragmentedText): js.Array[MediaInfo] = js.native
-  @JSName("getTracksFor")
-  def getTracksFor_text(`type`: text): js.Array[MediaInfo] = js.native
-  @JSName("getTracksFor")
-  def getTracksFor_video(`type`: video): js.Array[MediaInfo] = js.native
-  
-  def getUseDeadTimeLatencyForAbr(): Boolean = js.native
-  
-  def getUsePixelRatioInLimitBitrateByPortal(): js.Any = js.native
+  def getTracksForTypeFromManifest(`type`: MediaType, manifest: js.Object, streamInfo: StreamInfo): js.Array[MediaInfo] = js.native
   
   def getVersion(): String = js.native
   
@@ -249,11 +109,27 @@ trait MediaPlayerClass extends StObject {
   def initialize(): Unit = js.native
   def initialize(view: Unit, source: String): Unit = js.native
   def initialize(view: Unit, source: String, autoPlay: Boolean): Unit = js.native
+  def initialize(view: Unit, source: String, autoPlay: Boolean, startTime: String): Unit = js.native
+  def initialize(view: Unit, source: String, autoPlay: Boolean, startTime: Double): Unit = js.native
+  def initialize(view: Unit, source: String, autoPlay: Unit, startTime: String): Unit = js.native
+  def initialize(view: Unit, source: String, autoPlay: Unit, startTime: Double): Unit = js.native
   def initialize(view: Unit, source: Unit, autoPlay: Boolean): Unit = js.native
+  def initialize(view: Unit, source: Unit, autoPlay: Boolean, startTime: String): Unit = js.native
+  def initialize(view: Unit, source: Unit, autoPlay: Boolean, startTime: Double): Unit = js.native
+  def initialize(view: Unit, source: Unit, autoPlay: Unit, startTime: String): Unit = js.native
+  def initialize(view: Unit, source: Unit, autoPlay: Unit, startTime: Double): Unit = js.native
   def initialize(view: HTMLElement): Unit = js.native
   def initialize(view: HTMLElement, source: String): Unit = js.native
   def initialize(view: HTMLElement, source: String, autoPlay: Boolean): Unit = js.native
+  def initialize(view: HTMLElement, source: String, autoPlay: Boolean, startTime: String): Unit = js.native
+  def initialize(view: HTMLElement, source: String, autoPlay: Boolean, startTime: Double): Unit = js.native
+  def initialize(view: HTMLElement, source: String, autoPlay: Unit, startTime: String): Unit = js.native
+  def initialize(view: HTMLElement, source: String, autoPlay: Unit, startTime: Double): Unit = js.native
   def initialize(view: HTMLElement, source: Unit, autoPlay: Boolean): Unit = js.native
+  def initialize(view: HTMLElement, source: Unit, autoPlay: Boolean, startTime: String): Unit = js.native
+  def initialize(view: HTMLElement, source: Unit, autoPlay: Boolean, startTime: Double): Unit = js.native
+  def initialize(view: HTMLElement, source: Unit, autoPlay: Unit, startTime: String): Unit = js.native
+  def initialize(view: HTMLElement, source: Unit, autoPlay: Unit, startTime: Double): Unit = js.native
   
   def isDynamic(): Boolean = js.native
   
@@ -267,26 +143,35 @@ trait MediaPlayerClass extends StObject {
   
   def isTextEnabled(): Boolean = js.native
   
-  def keepProtectionMediaKeys(value: Boolean): Unit = js.native
-  
-  def off(`type`: String, listener: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
-  def off(`type`: String, listener: js.Function1[/* e */ js.Any, Unit], scope: js.Object): Unit = js.native
+  def off(`type`: String, listener: js.Function1[/* e */ Any, Unit]): Unit = js.native
+  def off(`type`: String, listener: js.Function1[/* e */ Any, Unit], scope: js.Object): Unit = js.native
   
   def on(`type`: String, listener: js.Function1[/* e */ Event, Unit]): Unit = js.native
   def on(`type`: String, listener: js.Function1[/* e */ Event, Unit], scope: js.Object): Unit = js.native
   def on(
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['BUFFER_EMPTY' | 'BUFFER_LOADED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['KEY_SESSION_CLOSED' | 'KEY_SESSION_REMOVED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['METRIC_ADDED' | 'METRIC_UPDATED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['PERIOD_SWITCH_COMPLETED' | 'PERIOD_SWITCH_STARTED'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['BUFFER_EMPTY' | 'BUFFER_LOADED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['KEY_SESSION_CLOSED' | 'KEY_SESSION_REMOVED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['METRIC_ADDED' | 'METRIC_UPDATED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['OFFLINE_RECORD_FINISHED' | 'OFFLINE_RECORD_STARTED' | 'OFFLINE_RECORD_STOPPED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['PERIOD_SWITCH_COMPLETED' | 'PERIOD_SWITCH_STARTED'] */ js.Any,
     listener: js.Function1[
-      (/* e */ BufferEvent) | (/* e */ KeySessionClosedEvent) | (/* e */ MetricEvent) | (/* e */ PeriodSwitchEvent), 
+      (/* e */ BufferEvent) | (/* e */ KeySessionClosedEvent) | (/* e */ MetricEvent) | (/* e */ OfflineRecordEvent) | (/* e */ PeriodSwitchEvent), 
       Unit
     ]
   ): Unit = js.native
   def on(
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['BUFFER_EMPTY' | 'BUFFER_LOADED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['KEY_SESSION_CLOSED' | 'KEY_SESSION_REMOVED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['METRIC_ADDED' | 'METRIC_UPDATED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['PERIOD_SWITCH_COMPLETED' | 'PERIOD_SWITCH_STARTED'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['BUFFER_EMPTY' | 'BUFFER_LOADED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['KEY_SESSION_CLOSED' | 'KEY_SESSION_REMOVED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['METRIC_ADDED' | 'METRIC_UPDATED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['OFFLINE_RECORD_FINISHED' | 'OFFLINE_RECORD_STARTED' | 'OFFLINE_RECORD_STOPPED'] */ /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['PERIOD_SWITCH_COMPLETED' | 'PERIOD_SWITCH_STARTED'] */ js.Any,
     listener: js.Function1[
-      (/* e */ BufferEvent) | (/* e */ KeySessionClosedEvent) | (/* e */ MetricEvent) | (/* e */ PeriodSwitchEvent), 
+      (/* e */ BufferEvent) | (/* e */ KeySessionClosedEvent) | (/* e */ MetricEvent) | (/* e */ OfflineRecordEvent) | (/* e */ PeriodSwitchEvent), 
       Unit
     ],
+    scope: js.Object
+  ): Unit = js.native
+  @JSName("on")
+  def on_ADAPTATIONSETREMOVEDNOCAPABILITIES(
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['ADAPTATION_SET_REMOVED_NO_CAPABILITIES'] */ js.Any,
+    listener: js.Function1[/* e */ AdaptationSetRemovedNoCapabilitiesEvent, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ADAPTATIONSETREMOVEDNOCAPABILITIES(
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['ADAPTATION_SET_REMOVED_NO_CAPABILITIES'] */ js.Any,
+    listener: js.Function1[/* e */ AdaptationSetRemovedNoCapabilitiesEvent, Unit],
     scope: js.Object
   ): Unit = js.native
   @JSName("on")
@@ -320,6 +205,17 @@ trait MediaPlayerClass extends StObject {
   def on_CAPTIONRENDERED(
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['CAPTION_RENDERED'] */ js.Any,
     listener: js.Function1[/* e */ CaptionRenderedEvent, Unit],
+    scope: js.Object
+  ): Unit = js.native
+  @JSName("on")
+  def on_DYNAMICTOSTATIC(
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['DYNAMIC_TO_STATIC'] */ js.Any,
+    listener: js.Function1[/* e */ DynamicToStaticEvent, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_DYNAMICTOSTATIC(
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['DYNAMIC_TO_STATIC'] */ js.Any,
+    listener: js.Function1[/* e */ DynamicToStaticEvent, Unit],
     scope: js.Object
   ): Unit = js.native
   @JSName("on")
@@ -452,6 +348,17 @@ trait MediaPlayerClass extends StObject {
   def on_METRICCHANGED(
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['METRIC_CHANGED'] */ js.Any,
     listener: js.Function1[/* e */ MetricChangedEvent, Unit],
+    scope: js.Object
+  ): Unit = js.native
+  @JSName("on")
+  def on_OFFLINERECORDLOADEDMETADATA(
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['OFFLINE_RECORD_LOADEDMETADATA'] */ js.Any,
+    listener: js.Function1[/* e */ OfflineRecordLoademetadataEvent, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_OFFLINERECORDLOADEDMETADATA(
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: dashjs.dashjs.MediaPlayerEvents['OFFLINE_RECORD_LOADEDMETADATA'] */ js.Any,
+    listener: js.Function1[/* e */ OfflineRecordLoademetadataEvent, Unit],
     scope: js.Object
   ): Unit = js.native
   @JSName("on")
@@ -624,7 +531,13 @@ trait MediaPlayerClass extends StObject {
   
   def play(): Unit = js.native
   
-  def preload(): Unit = js.native
+  def provideThumbnail(time: Double, callback: js.Function1[/* thumbnail */ Thumbnail | Null, Unit]): Unit = js.native
+  
+  def registerCustomCapabilitiesFilter(filter: CapabilitiesFilter): Unit = js.native
+  
+  def registerLicenseRequestFilter(filter: RequestFilter): Unit = js.native
+  
+  def registerLicenseResponseFilter(filter: ResponseFilter): Unit = js.native
   
   def removeABRCustomRule(rulename: String): Unit = js.native
   
@@ -634,141 +547,34 @@ trait MediaPlayerClass extends StObject {
   
   def reset(): Unit = js.native
   
+  def resetCustomInitialTrackSelectionFunction(fn: TrackSelectionFunction): Unit = js.native
+  
+  def resetSettings(): Unit = js.native
+  
   def restoreDefaultUTCTimingSources(): Unit = js.native
   
-  def retrieveManifest(url: String, callback: js.Function2[/* manifest */ js.Object | Null, /* error */ js.Any, Unit]): Unit = js.native
+  def retrieveManifest(url: String, callback: js.Function2[/* manifest */ js.Object | Null, /* error */ Any, Unit]): Unit = js.native
   
   def seek(value: Double): Unit = js.native
   
-  def setABRStrategy(value: String): Unit = js.native
-  
-  def setAbandonLoadTimeout(value: Double): Unit = js.native
-  
   def setAutoPlay(value: Boolean): Unit = js.native
-  
-  def setAutoSwitchQuality(value: Boolean): Unit = js.native
-  
-  @JSName("setAutoSwitchQualityFor")
-  def setAutoSwitchQualityFor_audio(`type`: audio, value: Boolean): Unit = js.native
-  @JSName("setAutoSwitchQualityFor")
-  def setAutoSwitchQualityFor_video(`type`: video, value: Boolean): Unit = js.native
-  
-  def setBandwidthSafetyFactor(value: Double): Unit = js.native
-  
-  def setBufferAheadToKeep(value: Double): Unit = js.native
-  
-  def setBufferPruningInterval(value: Double): Unit = js.native
-  
-  def setBufferTimeAtTopQuality(value: Double): Unit = js.native
-  
-  def setBufferTimeAtTopQualityLongForm(value: Double): Unit = js.native
-  
-  def setBufferToKeep(value: Double): Unit = js.native
-  
-  @JSName("setCacheLoadThresholdForType")
-  def setCacheLoadThresholdForType_audio(`type`: audio, value: Double): Unit = js.native
-  @JSName("setCacheLoadThresholdForType")
-  def setCacheLoadThresholdForType_video(`type`: video, value: Double): Unit = js.native
   
   def setCurrentTrack(track: MediaInfo): Unit = js.native
   
-  def setFastSwitchEnabled(value: Boolean): Unit = js.native
+  def setCustomInitialTrackSelectionFunction(fn: TrackSelectionFunction): Unit = js.native
   
-  def setFragmentLoaderRetryAttempts(value: Double): Unit = js.native
-  
-  def setFragmentLoaderRetryInterval(value: Double): Unit = js.native
-  
-  @JSName("setInitialBitrateFor")
-  def setInitialBitrateFor_audio(`type`: audio, value: Double): Unit = js.native
-  @JSName("setInitialBitrateFor")
-  def setInitialBitrateFor_video(`type`: video, value: Double): Unit = js.native
-  
-  @JSName("setInitialMediaSettingsFor")
-  def setInitialMediaSettingsFor_audio(`type`: audio, value: MediaSettings): Unit = js.native
-  @JSName("setInitialMediaSettingsFor")
-  def setInitialMediaSettingsFor_video(`type`: video, value: MediaSettings): Unit = js.native
-  
-  @JSName("setInitialRepresentationRatioFor")
-  def setInitialRepresentationRatioFor_audio(`type`: audio, value: Double): Unit = js.native
-  @JSName("setInitialRepresentationRatioFor")
-  def setInitialRepresentationRatioFor_video(`type`: video, value: Double): Unit = js.native
-  
-  def setJumpGaps(value: Boolean): Unit = js.native
-  
-  def setLimitBitrateByPortal(value: Boolean): Unit = js.native
-  
-  def setLiveDelay(value: Double): Unit = js.native
-  
-  def setLiveDelayFragmentCount(value: Double): Unit = js.native
-  
-  def setLongFormContentDurationThreshold(value: Double): Unit = js.native
-  
-  def setLowLatencyEnabled(value: Boolean): Unit = js.native
-  
-  def setLowLatencyMaxDriftBeforeSeeking(value: Double): Unit = js.native
-  
-  def setLowLatencyMinDrift(value: Double): Unit = js.native
-  
-  def setManifestLoaderRetryAttempts(value: Double): Unit = js.native
-  
-  def setManifestLoaderRetryInterval(value: Double): Unit = js.native
-  
-  def setManifestUpdateRetryInterval(value: Double): Unit = js.native
-  
-  @JSName("setMaxAllowedBitrateFor")
-  def setMaxAllowedBitrateFor_audio(`type`: audio, value: Double): Unit = js.native
-  @JSName("setMaxAllowedBitrateFor")
-  def setMaxAllowedBitrateFor_video(`type`: video, value: Double): Unit = js.native
-  
-  @JSName("setMaxAllowedRepresentationRatioFor")
-  def setMaxAllowedRepresentationRatioFor_audio(`type`: audio, value: Double): Unit = js.native
-  @JSName("setMaxAllowedRepresentationRatioFor")
-  def setMaxAllowedRepresentationRatioFor_video(`type`: video, value: Double): Unit = js.native
-  
-  @JSName("setMinAllowedBitrateFor")
-  def setMinAllowedBitrateFor_audio(`type`: audio, value: Double): js.Any = js.native
-  @JSName("setMinAllowedBitrateFor")
-  def setMinAllowedBitrateFor_video(`type`: video, value: Double): js.Any = js.native
-  
-  def setMovingAverageMethod(value: String): Unit = js.native
+  def setInitialMediaSettingsFor(`type`: MediaType, value: MediaSettings): Unit = js.native
   
   def setMute(value: Boolean): Unit = js.native
   
   def setPlaybackRate(value: Double): Unit = js.native
   
-  def setProtectionData(value: ProtectionData): Unit = js.native
+  def setProtectionData(value: ProtectionDataSet): Unit = js.native
   
-  @JSName("setQualityFor")
-  def setQualityFor_audio(`type`: audio, value: Double): Unit = js.native
-  @JSName("setQualityFor")
-  def setQualityFor_image(`type`: image, value: Double): Unit = js.native
-  @JSName("setQualityFor")
-  def setQualityFor_video(`type`: video, value: Double): Unit = js.native
-  
-  def setScheduleWhilePaused(value: Boolean): Unit = js.native
-  
-  def setSegmentOverlapToleranceTime(value: Double): Unit = js.native
-  
-  def setSelectionModeForInitialTrack(mode: TrackSelectionMode): Unit = js.native
-  
-  def setSmallGapLimit(value: Double): Unit = js.native
-  
-  def setStableBufferTime(value: Double): Unit = js.native
-  
-  def setTextDefaultEnabled(enable: Boolean): Unit = js.native
-  
-  def setTextDefaultLanguage(lang: String): Unit = js.native
+  def setQualityFor(`type`: MediaType, value: Double): Unit = js.native
+  def setQualityFor(`type`: MediaType, value: Double, replace: Boolean): Unit = js.native
   
   def setTextTrack(idx: Double): Unit = js.native
-  
-  @JSName("setTrackSwitchModeFor")
-  def setTrackSwitchModeFor_audio(`type`: audio, mode: TrackSwitchMode): Unit = js.native
-  @JSName("setTrackSwitchModeFor")
-  def setTrackSwitchModeFor_video(`type`: video, mode: TrackSwitchMode): Unit = js.native
-  
-  def setUseDeadTimeLatencyForAbr(value: Boolean): Unit = js.native
-  
-  def setUsePixelRatioInLimitBitrateByPortal(value: Boolean): Unit = js.native
   
   def setVolume(value: Double): Unit = js.native
   
@@ -779,9 +585,16 @@ trait MediaPlayerClass extends StObject {
   
   def timeAsUTC(): Double = js.native
   
+  def unregisterCustomCapabilitiesFilter(filter: CapabilitiesFilter): Unit = js.native
+  
+  def unregisterLicenseRequestFilter(filter: RequestFilter): Unit = js.native
+  
+  def unregisterLicenseResponseFilter(filter: ResponseFilter): Unit = js.native
+  
   def updatePortalSize(): Unit = js.native
   
-  def useDefaultABRRules(value: Boolean): Unit = js.native
+  def updateSettings(settings: MediaPlayerSettingClass): Unit = js.native
   
-  def useSuggestedPresentationDelay(value: Boolean): Unit = js.native
+  def updateSource(urlOrManifest: String): Unit = js.native
+  def updateSource(urlOrManifest: js.Object): Unit = js.native
 }

@@ -4,40 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for Schema resource in Directory API.
-  */
 trait SchemaSchema extends StObject {
   
   /**
     * Display name for the schema.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * ETag of the resource.
+    * The ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Fields of Schema
+    * A list of fields in the schema.
     */
   var fields: js.UndefOr[js.Array[SchemaSchemaFieldSpec]] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Unique identifier of Schema (Read-only)
+    * The unique identifier of the schema (Read-only)
     */
-  var schemaId: js.UndefOr[String] = js.undefined
+  var schemaId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Schema name
+    * The schema's name. Each `schema_name` must be unique within a customer. Reusing a name results in a `409: Entity already exists` error.
     */
-  var schemaName: js.UndefOr[String] = js.undefined
+  var schemaName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSchema {
   
@@ -50,9 +47,13 @@ object SchemaSchema {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
@@ -60,17 +61,23 @@ object SchemaSchema {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: SchemaSchemaFieldSpec*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaSchemaFieldSpec*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setSchemaId(value: String): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
     
+    inline def setSchemaIdNull: Self = StObject.set(x, "schemaId", null)
+    
     inline def setSchemaIdUndefined: Self = StObject.set(x, "schemaId", js.undefined)
     
     inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaNameNull: Self = StObject.set(x, "schemaName", null)
     
     inline def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PurchaseHostReservationResult extends StObject {
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object PurchaseHostReservationResult {
     
     inline def setPurchaseUndefined: Self = StObject.set(x, "Purchase", js.undefined)
     
-    inline def setPurchaseVarargs(value: Purchase*): Self = StObject.set(x, "Purchase", js.Array(value :_*))
+    inline def setPurchaseVarargs(value: Purchase*): Self = StObject.set(x, "Purchase", js.Array(value*))
     
     inline def setTotalHourlyPrice(value: String): Self = StObject.set(x, "TotalHourlyPrice", value.asInstanceOf[js.Any])
     

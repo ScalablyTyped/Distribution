@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTableCellPreferredWidthCommand")
 @js.native
-class ChangeTableCellPreferredWidthCommand ()
+open class ChangeTableCellPreferredWidthCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTableCellPreferredWidthCommand {
   

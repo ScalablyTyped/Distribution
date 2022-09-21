@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A mask that indicates which of the fields on the base
-  * LinkedContentReference have been changed in this suggestion. For any field
-  * set to true, there is a new suggested value.
-  */
 trait SchemaLinkedContentReferenceSuggestionState extends StObject {
   
   /**
-    * A mask that indicates which of the fields in sheets_chart_reference have
-    * been changed in this suggestion.
+    * A mask that indicates which of the fields in sheets_chart_reference have been changed in this suggestion.
     */
   var sheetsChartReferenceSuggestionState: js.UndefOr[SchemaSheetsChartReferenceSuggestionState] = js.undefined
 }

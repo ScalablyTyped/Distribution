@@ -26,7 +26,7 @@ object UploadAccountResponse {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setErrorVarargs(value: Index*): Self = StObject.set(x, "error", js.Array(value :_*))
+    inline def setErrorVarargs(value: Index*): Self = StObject.set(x, "error", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

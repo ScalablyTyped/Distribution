@@ -12,7 +12,7 @@ object Compass {
   inline def apply(
     getCurrentReading: () => CompassReading,
     minimumReportInterval: Double,
-    onreadingchanged: js.Any,
+    onreadingchanged: Any,
     reportInterval: Double
   ): Compass = {
     val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])

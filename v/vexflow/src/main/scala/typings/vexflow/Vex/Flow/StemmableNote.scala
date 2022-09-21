@@ -18,7 +18,7 @@ trait StemmableNote
   
   var flag: Glyph = js.native
   
-  def getAttribute(attr: String): js.Any = js.native
+  def getAttribute(attr: String): Any = js.native
   
   def getBeamCount(): Double = js.native
   

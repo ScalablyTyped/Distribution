@@ -9,8 +9,8 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import typings.react.mod.TouchList
 import typings.reactMdStates.anon.CSSPropertiesleftnumberto
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
 import typings.reactMdTransition.typesMod.TransitionTimeout
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -244,13 +244,13 @@ object typesMod {
     
     /**
       * Boolean if the ripple effect should not occur after a programmatic trigger
-      * of a click event. This would normally happen if using `aria-activedescendat`
+      * of a click event. This would normally happen if using `aria-activedescendant`
       * movement and the user "presses" the current active element.
       */
     var disableProgrammaticRipple: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Boolean if the ripple effeect should be disabled. This will make the `useRipples`
+      * Boolean if the ripple effect should be disabled. This will make the `useRipples`
       * hook not provide any additional logic for the provided handlers.
       */
     var disableRipple: js.UndefOr[Boolean] = js.undefined

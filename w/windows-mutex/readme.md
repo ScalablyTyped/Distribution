@@ -10,15 +10,12 @@ Expose the Windows CreateMutex API to Node.JS
 | ------------------ | :-------------: |
 | Full name          | windows-mutex |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 426689 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 15819.0 |
+| # stars            | 20.0 |
 
 ## Links
-- [Homepage](https://github.com/Microsoft/node-windows-mutex)
-- [Bugs](https://github.com/Microsoft/node-windows-mutex/issues)
-- [Repository](https://github.com/Microsoft/node-windows-mutex)
 - [Npm](https://www.npmjs.com/package/windows-mutex)
     
 

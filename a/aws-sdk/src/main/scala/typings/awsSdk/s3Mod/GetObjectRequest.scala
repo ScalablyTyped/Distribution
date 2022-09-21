@@ -7,34 +7,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetObjectRequest extends StObject {
   
   /**
-    * The bucket name containing the object.  When using this API with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this operation with an access point through the AWS SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using Access Points in the Amazon Simple Storage Service Developer Guide. When using this API with Amazon S3 on Outposts, you must direct requests to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When using this operation using S3 on Outposts through the AWS SDKs, you provide the Outposts bucket ARN in place of the bucket name. For more information about S3 on Outposts ARNs, see Using S3 on Outposts in the Amazon Simple Storage Service Developer Guide.
+    * The bucket name containing the object.  When using this action with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this action with an access point through the Amazon Web Services SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using access points in the Amazon S3 User Guide. When using an Object Lambda access point the hostname takes the form AccessPointName-AccountId.s3-object-lambda.Region.amazonaws.com. When using this action with Amazon S3 on Outposts, you must direct requests to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form  AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When using this action with S3 on Outposts through the Amazon Web Services SDKs, you provide the Outposts bucket ARN in place of the bucket name. For more information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts in the Amazon S3 User Guide.
     */
   var Bucket: BucketName
   
   /**
-    * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
+    * To retrieve the checksum, this mode must be enabled.
+    */
+  var ChecksumMode: js.UndefOr[typings.awsSdk.s3Mod.ChecksumMode] = js.undefined
+  
+  /**
+    * The account ID of the expected bucket owner. If the bucket is owned by a different account, the request fails with the HTTP status code 403 Forbidden (access denied).
     */
   var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
-    * Return the object only if its entity tag (ETag) is the same as the one specified, otherwise return a 412 (precondition failed).
+    * Return the object only if its entity tag (ETag) is the same as the one specified; otherwise, return a 412 (precondition failed) error.
     */
   var IfMatch: js.UndefOr[typings.awsSdk.s3Mod.IfMatch] = js.undefined
   
   /**
-    * Return the object only if it has been modified since the specified time, otherwise return a 304 (not modified).
+    * Return the object only if it has been modified since the specified time; otherwise, return a 304 (not modified) error.
     */
-  var IfModifiedSince: js.UndefOr[typings.awsSdk.s3Mod.IfModifiedSince] = js.undefined
+  var IfModifiedSince: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Return the object only if its entity tag (ETag) is different from the one specified, otherwise return a 304 (not modified).
+    * Return the object only if its entity tag (ETag) is different from the one specified; otherwise, return a 304 (not modified) error.
     */
   var IfNoneMatch: js.UndefOr[typings.awsSdk.s3Mod.IfNoneMatch] = js.undefined
   
   /**
-    * Return the object only if it has not been modified since the specified time, otherwise return a 412 (precondition failed).
+    * Return the object only if it has not been modified since the specified time; otherwise, return a 412 (precondition failed) error.
     */
-  var IfUnmodifiedSince: js.UndefOr[typings.awsSdk.s3Mod.IfUnmodifiedSince] = js.undefined
+  var IfUnmodifiedSince: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Key of the object to get.
@@ -81,15 +86,15 @@ trait GetObjectRequest extends StObject {
   /**
     * Sets the Expires header of the response.
     */
-  var ResponseExpires: js.UndefOr[typings.awsSdk.s3Mod.ResponseExpires] = js.undefined
+  var ResponseExpires: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Specifies the algorithm to use to when encrypting the object (for example, AES256).
+    * Specifies the algorithm to use to when decrypting the object (for example, AES256).
     */
   var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.undefined
   
   /**
-    * Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.
+    * Specifies the customer-provided encryption key for Amazon S3 used to encrypt the data. This value is used to decrypt the object when recovering it and must match the one used when storing the data. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.
     */
   var SSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKey] = js.undefined
   
@@ -114,6 +119,10 @@ object GetObjectRequest {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
+    inline def setChecksumMode(value: ChecksumMode): Self = StObject.set(x, "ChecksumMode", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumModeUndefined: Self = StObject.set(x, "ChecksumMode", js.undefined)
+    
     inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
@@ -122,7 +131,7 @@ object GetObjectRequest {
     
     inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
     
-    inline def setIfModifiedSince(value: IfModifiedSince): Self = StObject.set(x, "IfModifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfModifiedSince(value: js.Date): Self = StObject.set(x, "IfModifiedSince", value.asInstanceOf[js.Any])
     
     inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "IfModifiedSince", js.undefined)
     
@@ -130,7 +139,7 @@ object GetObjectRequest {
     
     inline def setIfNoneMatchUndefined: Self = StObject.set(x, "IfNoneMatch", js.undefined)
     
-    inline def setIfUnmodifiedSince(value: IfUnmodifiedSince): Self = StObject.set(x, "IfUnmodifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfUnmodifiedSince(value: js.Date): Self = StObject.set(x, "IfUnmodifiedSince", value.asInstanceOf[js.Any])
     
     inline def setIfUnmodifiedSinceUndefined: Self = StObject.set(x, "IfUnmodifiedSince", js.undefined)
     
@@ -168,7 +177,7 @@ object GetObjectRequest {
     
     inline def setResponseContentTypeUndefined: Self = StObject.set(x, "ResponseContentType", js.undefined)
     
-    inline def setResponseExpires(value: ResponseExpires): Self = StObject.set(x, "ResponseExpires", value.asInstanceOf[js.Any])
+    inline def setResponseExpires(value: js.Date): Self = StObject.set(x, "ResponseExpires", value.asInstanceOf[js.Any])
     
     inline def setResponseExpiresUndefined: Self = StObject.set(x, "ResponseExpires", js.undefined)
     

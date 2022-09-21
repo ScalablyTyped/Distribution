@@ -52,7 +52,7 @@ object style {
     * @api
     * @param opt_options Options.
     */
-  class AtlasManager () extends StObject {
+  open class AtlasManager () extends StObject {
     def this(opt_options: AtlasManagerOptions) = this()
   }
   
@@ -72,7 +72,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Circle ()
+  open class Circle ()
     extends typings.openlayers.mod.style.Image {
     def this(opt_options: CircleOptions) = this()
     
@@ -130,7 +130,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Fill () extends StObject {
+  open class Fill () extends StObject {
     def this(opt_options: FillOptions) = this()
     
     /**
@@ -166,7 +166,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Icon ()
+  open class Icon ()
     extends typings.openlayers.mod.style.Image {
     def this(opt_options: IconOptions) = this()
     
@@ -224,7 +224,7 @@ object style {
     */
   @JSImport("openlayers", "style.Image")
   @js.native
-  class Image protected () extends StObject {
+  open class Image protected () extends StObject {
     /**
       * @classdesc
       * A base class used for creating subclasses and not instantiated in
@@ -307,7 +307,7 @@ object style {
     */
   @JSImport("openlayers", "style.RegularShape")
   @js.native
-  class RegularShape protected ()
+  open class RegularShape protected ()
     extends typings.openlayers.mod.style.Image {
     /**
       * @classdesc
@@ -409,7 +409,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Stroke () extends StObject {
+  open class Stroke () extends StObject {
     def this(opt_options: StrokeOptions) = this()
     
     /**
@@ -547,7 +547,7 @@ object style {
     * @param opt_options Style options.
     * @api
     */
-  class Style () extends StObject {
+  open class Style () extends StObject {
     def this(opt_options: StyleOptions) = this()
     
     /**
@@ -666,7 +666,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Text () extends StObject {
+  open class Text () extends StObject {
     def this(opt_options: TextOptions) = this()
     
     /**

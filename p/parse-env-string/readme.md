@@ -10,10 +10,10 @@ Parse a string containing environment variables to a key/value object
 | ------------------ | :-------------: |
 | Full name          | parse-env-string |
 | Keywords           | parse, parser, env, environment, variable |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 1074 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4706.333333333333 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/watson/parse-env-string#readme)

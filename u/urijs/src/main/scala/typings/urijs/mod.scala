@@ -1,7 +1,7 @@
 package typings.urijs
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
+import typings.std.Partial
+import typings.std.Record
 import typings.urijs.anon.Hostname
 import typings.urijs.anon.Password
 import typings.urijs.anon.Port
@@ -29,8 +29,16 @@ object mod {
   
   inline def apply(): URI = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[URI]
   inline def apply(value: String): URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[URI]
+  inline def apply(value: String, base: String): URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[URI]
+  inline def apply(value: String, base: URI): URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[URI]
+  inline def apply(value: Unit, base: String): URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[URI]
+  inline def apply(value: Unit, base: URI): URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[URI]
   inline def apply(value: typings.urijs.mod.HTMLElement): URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[URI]
+  inline def apply(value: typings.urijs.mod.HTMLElement, base: String): URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[URI]
+  inline def apply(value: typings.urijs.mod.HTMLElement, base: URI): URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[URI]
   inline def apply(value: URIOptions): URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[URI]
+  inline def apply(value: URIOptions, base: String): URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[URI]
+  inline def apply(value: URIOptions, base: URI): URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[URI]
   
   @JSImport("urijs", JSImport.Namespace)
   @js.native
@@ -39,16 +47,24 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("urijs", JSImport.Namespace)
   @js.native
-  class Class ()
+  open class Class ()
     extends StObject
        with URI {
     def this(value: String) = this()
     def this(value: typings.urijs.mod.HTMLElement) = this()
     def this(value: URIOptions) = this()
+    def this(value: String, base: String) = this()
+    def this(value: String, base: URI) = this()
+    def this(value: Unit, base: String) = this()
+    def this(value: Unit, base: URI) = this()
+    def this(value: typings.urijs.mod.HTMLElement, base: String) = this()
+    def this(value: typings.urijs.mod.HTMLElement, base: URI) = this()
+    def this(value: URIOptions, base: String) = this()
+    def this(value: URIOptions, base: URI) = this()
   }
   
-  inline def addQuery(data: js.Object, prop: String, value: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  inline def addQuery(data: js.Object, qryObj: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], qryObj.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def addQuery(data: QueryDataMap, prop: String, value: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def addQuery(data: QueryDataMap, qryObj: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], qryObj.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def build(parts: URIOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -56,8 +72,10 @@ object mod {
   
   inline def buildHost(parts: Port): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildHost")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def buildQuery(qry: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(qry.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def buildQuery(qry: js.Object, duplicates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(qry.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildQuery(data: QueryDataMap): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buildQuery(data: QueryDataMap, duplicateQueryParameters: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(data.asInstanceOf[js.Any], duplicateQueryParameters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildQuery(data: QueryDataMap, duplicateQueryParameters: Boolean, escapeQuerySpace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(data.asInstanceOf[js.Any], duplicateQueryParameters.asInstanceOf[js.Any], escapeQuerySpace.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildQuery(data: QueryDataMap, duplicateQueryParameters: Unit, escapeQuerySpace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(data.asInstanceOf[js.Any], duplicateQueryParameters.asInstanceOf[js.Any], escapeQuerySpace.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def buildUserinfo(parts: Password): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildUserinfo")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -94,7 +112,7 @@ object mod {
   
   inline def iso8859(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8859")().asInstanceOf[Unit]
   
-  inline def joinPaths(paths: (String | URI)*): URI = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPaths")(paths.asInstanceOf[js.Any]).asInstanceOf[URI]
+  inline def joinPaths(paths: (String | URI)*): URI = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPaths")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[URI]
   
   inline def parse(url: String): Parts = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[Parts]
   
@@ -117,7 +135,10 @@ object mod {
   
   inline def unicode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unicode")().asInstanceOf[Unit]
   
-  inline def withinString(source: String, func: js.Function1[/* url */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("withinString")(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def withinString(
+    source: String,
+    func: js.Function4[/* url */ String, /* start */ Double, /* end */ Double, /* source */ String, String]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("withinString")(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[String]
   
   // Compatability with node.js
   // tslint:disable-next-line:no-empty-interface
@@ -150,7 +171,115 @@ object mod {
     }
   }
   
-  type QueryDataMap = StringDictionary[String | Null | (js.Array[String | Null])]
+  type QueryDataMap = Partial[Record[String, Any]]
+  
+  @js.native
+  trait ReadonlyURI extends StObject {
+    
+    def authority(): String = js.native
+    
+    def directory(): String = js.native
+    def directory(dir: Boolean): String = js.native
+    
+    def domain(): String = js.native
+    def domain(domain: Boolean): String = js.native
+    
+    def equals(): Boolean = js.native
+    def equals(url: String): Boolean = js.native
+    def equals(url: ReadonlyURI): Boolean = js.native
+    def equals(url: URI): Boolean = js.native
+    
+    def filename(): String = js.native
+    def filename(file: Boolean): String = js.native
+    
+    def fragment(): String = js.native
+    
+    def hasQuery(name: /*string | */ Any): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: String): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: String, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.Array[Boolean | Double | String], withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.Function1[/* repeated */ Any, Any]): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.Function1[/* repeated */ Any, Any], withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.RegExp): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.RegExp, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Boolean, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Double): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Double, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Unit, withinArray: Boolean): Boolean = js.native
+    
+    def hasSearch(name: /*string | */ Any): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: String): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: String, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.Array[Boolean | Double | String], withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.Function1[/* repeated */ Any, Any]): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.Function1[/* repeated */ Any, Any], withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.RegExp): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.RegExp, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Boolean, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Double): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Double, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Unit, withinArray: Boolean): Boolean = js.native
+    
+    def hash(): String = js.native
+    
+    def host(): String = js.native
+    
+    def hostname(): String = js.native
+    
+    def href(): String = js.native
+    
+    def is(
+      qry: relative | absolute | urn | url | domain | name | sld | idn | punycode | ip | ip4 | ipv4 | inet4 | ip6 | ipv6 | inet6
+    ): Boolean = js.native
+    
+    def origin(): String = js.native
+    
+    def password(): String = js.native
+    
+    def path(): String = js.native
+    def path(path: Boolean): String = js.native
+    
+    def pathname(): String = js.native
+    def pathname(path: Boolean): String = js.native
+    
+    def port(): String = js.native
+    
+    def protocol(): String = js.native
+    
+    def query(): String = js.native
+    def query(v: Boolean): QueryDataMap = js.native
+    
+    def readable(): String = js.native
+    
+    def resource(): String = js.native
+    
+    def scheme(): String = js.native
+    
+    def search(): String = js.native
+    def search(v: Boolean): QueryDataMap = js.native
+    
+    def segment(): js.Array[String] = js.native
+    def segment(position: Double): js.UndefOr[String] = js.native
+    
+    def segmentCoded(): js.Array[String] = js.native
+    def segmentCoded(position: Double): String = js.native
+    
+    def subdomain(): String = js.native
+    
+    def suffix(): String = js.native
+    def suffix(suffix: Boolean): String = js.native
+    
+    def tld(): String = js.native
+    def tld(tld: Boolean): String = js.native
+    
+    def userinfo(): String = js.native
+    
+    def username(): String = js.native
+  }
   
   @js.native
   trait URI extends StObject {
@@ -161,12 +290,12 @@ object mod {
     def addFragment(fragment: String): URI = js.native
     
     def addQuery(qry: String): URI = js.native
-    def addQuery(qry: String, value: js.Any): URI = js.native
-    def addQuery(qry: js.Object): URI = js.native
+    def addQuery(qry: String, value: Any): URI = js.native
+    def addQuery(qry: QueryDataMap): URI = js.native
     
-    def addSearch(key: String, value: js.Any): URI = js.native
+    def addSearch(key: String, value: Any): URI = js.native
     def addSearch(qry: String): URI = js.native
-    def addSearch(qry: js.Object): URI = js.native
+    def addSearch(qry: QueryDataMap): URI = js.native
     
     def authority(): String = js.native
     def authority(authority: String): URI = js.native
@@ -196,43 +325,35 @@ object mod {
     
     def fragmentPrefix(prefix: String): URI = js.native
     
-    def hasQuery(name: /*string | */ js.Any): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: String): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: String, withinArray: Boolean): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String], withinArray: Boolean): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, js.Any]): Boolean = js.native
-    def hasQuery(
-      name: /*string | */ js.Any,
-      value: js.Function1[/* repeated */ js.Any, js.Any],
-      withinArray: Boolean
-    ): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: Boolean): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: Boolean, withinArray: Boolean): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: Double): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: Double, withinArray: Boolean): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: Unit, withinArray: Boolean): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: RegExp): Boolean = js.native
-    def hasQuery(name: /*string | */ js.Any, value: RegExp, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: String): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: String, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.Array[Boolean | Double | String], withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.Function1[/* repeated */ Any, Any]): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.Function1[/* repeated */ Any, Any], withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.RegExp): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: js.RegExp, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Boolean, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Double): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Double, withinArray: Boolean): Boolean = js.native
+    def hasQuery(name: /*string | */ Any, value: Unit, withinArray: Boolean): Boolean = js.native
     
-    def hasSearch(name: /*string | */ js.Any): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: String): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: String, withinArray: Boolean): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String], withinArray: Boolean): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, js.Any]): Boolean = js.native
-    def hasSearch(
-      name: /*string | */ js.Any,
-      value: js.Function1[/* repeated */ js.Any, js.Any],
-      withinArray: Boolean
-    ): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: Boolean): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: Boolean, withinArray: Boolean): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: Double): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: Double, withinArray: Boolean): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: Unit, withinArray: Boolean): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: RegExp): Boolean = js.native
-    def hasSearch(name: /*string | */ js.Any, value: RegExp, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: String): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: String, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.Array[Boolean | Double | String], withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.Function1[/* repeated */ Any, Any]): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.Function1[/* repeated */ Any, Any], withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.RegExp): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: js.RegExp, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Boolean, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Double): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Double, withinArray: Boolean): Boolean = js.native
+    def hasSearch(name: /*string | */ Any, value: Unit, withinArray: Boolean): Boolean = js.native
     
     def hash(): String = js.native
     def hash(hash: String): URI = js.native
@@ -246,38 +367,9 @@ object mod {
     def href(): String = js.native
     def href(url: String): Unit = js.native
     
-    @JSName("is")
-    def is_absolute(qry: absolute): Boolean = js.native
-    @JSName("is")
-    def is_domain(qry: domain): Boolean = js.native
-    @JSName("is")
-    def is_idn(qry: idn): Boolean = js.native
-    @JSName("is")
-    def is_inet4(qry: inet4): Boolean = js.native
-    @JSName("is")
-    def is_inet6(qry: inet6): Boolean = js.native
-    @JSName("is")
-    def is_ip(qry: ip): Boolean = js.native
-    @JSName("is")
-    def is_ip4(qry: ip4): Boolean = js.native
-    @JSName("is")
-    def is_ip6(qry: ip6): Boolean = js.native
-    @JSName("is")
-    def is_ipv4(qry: ipv4): Boolean = js.native
-    @JSName("is")
-    def is_ipv6(qry: ipv6): Boolean = js.native
-    @JSName("is")
-    def is_name(qry: name): Boolean = js.native
-    @JSName("is")
-    def is_punycode(qry: punycode): Boolean = js.native
-    @JSName("is")
-    def is_relative(qry: relative): Boolean = js.native
-    @JSName("is")
-    def is_sld(qry: sld): Boolean = js.native
-    @JSName("is")
-    def is_url(qry: url): Boolean = js.native
-    @JSName("is")
-    def is_urn(qry: urn): Boolean = js.native
+    def is(
+      qry: relative | absolute | urn | url | domain | name | sld | idn | punycode | ip | ip4 | ipv4 | inet4 | ip6 | ipv6 | inet6
+    ): Boolean = js.native
     
     def iso8859(): URI = js.native
     
@@ -337,11 +429,11 @@ object mod {
     
     def removeQuery(name: String, value: String): URI = js.native
     def removeQuery(qry: String): URI = js.native
-    def removeQuery(qry: js.Object): URI = js.native
+    def removeQuery(qry: QueryDataMap): URI = js.native
     
     def removeSearch(name: String, value: String): URI = js.native
     def removeSearch(qry: String): URI = js.native
-    def removeSearch(qry: js.Object): URI = js.native
+    def removeSearch(qry: QueryDataMap): URI = js.native
     
     def resource(): String = js.native
     def resource(resource: String): URI = js.native
@@ -368,11 +460,11 @@ object mod {
     def segmentCoded(segments: String): URI = js.native
     def segmentCoded(segments: js.Array[String]): URI = js.native
     
-    def setQuery(key: String, value: String): URI = js.native
-    def setQuery(qry: js.Object): URI = js.native
+    def setQuery(key: String, value: Any): URI = js.native
+    def setQuery(qry: QueryDataMap): URI = js.native
     
-    def setSearch(key: String, value: String): URI = js.native
-    def setSearch(qry: js.Object): URI = js.native
+    def setSearch(key: String, value: Any): URI = js.native
+    def setSearch(qry: QueryDataMap): URI = js.native
     
     def subdomain(): String = js.native
     def subdomain(subdomain: String): URI = js.native

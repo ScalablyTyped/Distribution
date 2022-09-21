@@ -31,4 +31,25 @@ object anon {
       inline def setGcd(value: BN): Self = StObject.set(x, "gcd", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait Div extends StObject {
+    
+    var div: BN
+    
+    var mod: BN
+  }
+  object Div {
+    
+    inline def apply(div: BN, mod: BN): Div = {
+      val __obj = js.Dynamic.literal(div = div.asInstanceOf[js.Any], mod = mod.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Div]
+    }
+    
+    extension [Self <: Div](x: Self) {
+      
+      inline def setDiv(value: BN): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+      
+      inline def setMod(value: BN): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+    }
+  }
 }

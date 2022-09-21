@@ -150,7 +150,7 @@ object docPageTypesMod {
       
       inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
       
-      inline def setExamplesVarargs(value: IExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
+      inline def setExamplesVarargs(value: IExample*): Self = StObject.set(x, "examples", js.Array(value*))
       
       inline def setIsFeedbackVisible(value: Boolean): Self = StObject.set(x, "isFeedbackVisible", value.asInstanceOf[js.Any])
       
@@ -166,13 +166,13 @@ object docPageTypesMod {
       
       inline def setNativePropsElementUndefined: Self = StObject.set(x, "nativePropsElement", js.undefined)
       
-      inline def setNativePropsElementVarargs(value: String*): Self = StObject.set(x, "nativePropsElement", js.Array(value :_*))
+      inline def setNativePropsElementVarargs(value: String*): Self = StObject.set(x, "nativePropsElement", js.Array(value*))
       
       inline def setOtherSections(value: js.Array[Section]): Self = StObject.set(x, "otherSections", value.asInstanceOf[js.Any])
       
       inline def setOtherSectionsUndefined: Self = StObject.set(x, "otherSections", js.undefined)
       
-      inline def setOtherSectionsVarargs(value: Section*): Self = StObject.set(x, "otherSections", js.Array(value :_*))
+      inline def setOtherSectionsVarargs(value: Section*): Self = StObject.set(x, "otherSections", js.Array(value*))
       
       inline def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
       
@@ -182,7 +182,7 @@ object docPageTypesMod {
       
       inline def setPropertiesTablesSourcesUndefined: Self = StObject.set(x, "propertiesTablesSources", js.undefined)
       
-      inline def setPropertiesTablesSourcesVarargs(value: String*): Self = StObject.set(x, "propertiesTablesSources", js.Array(value :_*))
+      inline def setPropertiesTablesSourcesVarargs(value: String*): Self = StObject.set(x, "propertiesTablesSources", js.Array(value*))
       
       inline def setRelated(value: Element): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
       
@@ -300,7 +300,7 @@ object docPageTypesMod {
       
       inline def setTables(value: js.Array[ITableJson]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
-      inline def setTablesVarargs(value: ITableJson*): Self = StObject.set(x, "tables", js.Array(value :_*))
+      inline def setTablesVarargs(value: ITableJson*): Self = StObject.set(x, "tables", js.Array(value*))
     }
   }
   
@@ -345,7 +345,7 @@ object docPageTypesMod {
       
       inline def setExtendsTokens(value: js.Array[ILinkToken]): Self = StObject.set(x, "extendsTokens", value.asInstanceOf[js.Any])
       
-      inline def setExtendsTokensVarargs(value: ILinkToken*): Self = StObject.set(x, "extendsTokens", js.Array(value :_*))
+      inline def setExtendsTokensVarargs(value: ILinkToken*): Self = StObject.set(x, "extendsTokens", js.Array(value*))
       
       inline def setKind(value: ApiKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -353,7 +353,7 @@ object docPageTypesMod {
       
       inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      inline def setMembersVarargs(value: (IEnumTableRowJson | ITableRowJson)*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: (IEnumTableRowJson | ITableRowJson)*): Self = StObject.set(x, "members", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -415,7 +415,7 @@ object docPageTypesMod {
       
       inline def setTypeTokens(value: js.Array[ILinkToken]): Self = StObject.set(x, "typeTokens", value.asInstanceOf[js.Any])
       
-      inline def setTypeTokensVarargs(value: ILinkToken*): Self = StObject.set(x, "typeTokens", js.Array(value :_*))
+      inline def setTypeTokensVarargs(value: ILinkToken*): Self = StObject.set(x, "typeTokens", js.Array(value*))
     }
   }
   

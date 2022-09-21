@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Represents an individual control or command and the state it should have.
+  * 
+  * For code samples showing how to use a `Control` object and its properties, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
+  *
+  * @remarks
+  *
+  * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
   */
 trait Control extends StObject {
   
@@ -18,11 +24,6 @@ trait Control extends StObject {
     * Identifier of the control as specified in the manifest.
     */
   var id: String
-  
-  /**
-    * Indicates whether the control should be visible or hidden. The default is true.
-    */
-  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Control {
   
@@ -38,9 +39,5 @@ object Control {
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-    
-    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -18,8 +18,6 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.requester_
 import typings.awsSdkClientS3Browser.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
 import typings.awsSdkTypes.cryptoMod.SourceData
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +62,7 @@ object typesCreateMultipartUploadInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -131,7 +129,7 @@ object typesCreateMultipartUploadInputMod {
     /**
       * <p>The date and time at which the object is no longer cacheable.</p>
       */
-    var Expires: js.UndefOr[Date | String | Double] = js.undefined
+    var Expires: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Gives the grantee READ, READ_ACP, and WRITE_ACP permissions on the object.</p>
@@ -161,7 +159,7 @@ object typesCreateMultipartUploadInputMod {
     /**
       * <p>A map of metadata to store with the object in S3.</p>
       */
-    var Metadata: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Metadata: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * <p>Confirms that the requester knows that she or he will be charged for the request. Bucket owners need not specify this parameter in their requests. Documentation on downloading objects from requester pays buckets can be found at http://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html</p>
@@ -220,7 +218,7 @@ object typesCreateMultipartUploadInputMod {
       inline def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -269,7 +267,7 @@ object typesCreateMultipartUploadInputMod {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
       
-      inline def setExpires(value: Date | String | Double): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date | String | Double): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
       
@@ -291,7 +289,7 @@ object typesCreateMultipartUploadInputMod {
       
       inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      inline def setMetadata(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
       

@@ -25,11 +25,11 @@ trait DrawerOptions extends StObject {
   
   var swipeToOpen: js.UndefOr[Boolean] = js.undefined
   
-  var swipeToOpenViews: js.UndefOr[js.Any] = js.undefined
+  var swipeToOpenViews: js.UndefOr[Any] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
-  var views: js.UndefOr[js.Any] = js.undefined
+  var views: js.UndefOr[Any] = js.undefined
 }
 object DrawerOptions {
   
@@ -76,7 +76,7 @@ object DrawerOptions {
     
     inline def setSwipeToOpenUndefined: Self = StObject.set(x, "swipeToOpen", js.undefined)
     
-    inline def setSwipeToOpenViews(value: js.Any): Self = StObject.set(x, "swipeToOpenViews", value.asInstanceOf[js.Any])
+    inline def setSwipeToOpenViews(value: Any): Self = StObject.set(x, "swipeToOpenViews", value.asInstanceOf[js.Any])
     
     inline def setSwipeToOpenViewsUndefined: Self = StObject.set(x, "swipeToOpenViews", js.undefined)
     
@@ -84,7 +84,7 @@ object DrawerOptions {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
   }

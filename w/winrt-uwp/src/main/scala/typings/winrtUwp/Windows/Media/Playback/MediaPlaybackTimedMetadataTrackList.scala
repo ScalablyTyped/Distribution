@@ -19,7 +19,7 @@ trait MediaPlaybackTimedMetadataTrackList
   extends StObject
      with Array[TimedMetadataTrack] {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_presentationmodechanged(
     `type`: presentationmodechanged,
@@ -52,7 +52,7 @@ trait MediaPlaybackTimedMetadataTrackList
     */
   def getPresentationMode(index: Double): TimedMetadataTrackPresentationMode = js.native
   
-  def indexOf(value: TimedMetadataTrack, extra: js.Any*): Index = js.native
+  def indexOf(value: TimedMetadataTrack, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: TimedMetadataTrack): Double = js.native
@@ -65,7 +65,7 @@ trait MediaPlaybackTimedMetadataTrackList
   @JSName("onpresentationmodechanged")
   var onpresentationmodechanged_Original: TypedEventHandler[MediaPlaybackTimedMetadataTrackList, TimedMetadataPresentationModeChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_presentationmodechanged(
     `type`: presentationmodechanged,

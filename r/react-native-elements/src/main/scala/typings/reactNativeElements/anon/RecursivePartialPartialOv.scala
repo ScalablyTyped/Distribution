@@ -1,22 +1,22 @@
 package typings.reactNativeElements.anon
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.Instantiable1
+import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.RecursivePartial
+import typings.reactNativeElements.reactNativeElementsStrings.ModalComponent
 import typings.reactNativeElements.reactNativeElementsStrings.`box-none`
 import typings.reactNativeElements.reactNativeElementsStrings.`box-only`
 import typings.reactNativeElements.reactNativeElementsStrings.`landscape-left`
@@ -25,7 +25,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendan
 import typings.reactNativeElements.reactNativeElementsStrings.`portrait-upside-down`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto
-import typings.reactNativeElements.reactNativeElementsStrings.button
 import typings.reactNativeElements.reactNativeElementsStrings.fade
 import typings.reactNativeElements.reactNativeElementsStrings.formSheet
 import typings.reactNativeElements.reactNativeElementsStrings.fullScreen
@@ -36,24 +35,32 @@ import typings.reactNativeElements.reactNativeElementsStrings.overFullScreen
 import typings.reactNativeElements.reactNativeElementsStrings.pageSheet
 import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.portrait
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_checked
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_unchecked
 import typings.reactNativeElements.reactNativeElementsStrings.slide
 import typings.reactNativeElements.reactNativeElementsStrings.yes
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.OverlayProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/overlay/Overlay.OverlayProps>> */
 trait RecursivePartialPartialOv extends StObject {
   
-  var ModalComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
+  var ModalComponent: js.UndefOr[
+    RecursivePartial[
+      js.UndefOr[
+        TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          Component[
+            typings.reactNativeElements.reactNativeElementsStrings.ModalComponent, 
+            js.Object, 
+            js.Object
+          ]
+        ])
+      ]
+    ]
+  ] = js.undefined
   
   var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[
-    RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]
-  ] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -63,13 +70,15 @@ trait RecursivePartialPartialOv extends StObject {
   
   var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[RecursivePartial[js.UndefOr[String | js.Array[String]]]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.undefined
   
   var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.undefined
   
   var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.undefined
   
   var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.undefined
   
@@ -83,7 +92,7 @@ trait RecursivePartialPartialOv extends StObject {
   
   var backdropStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var children: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
+  var children: js.UndefOr[RecursivePartial[js.UndefOr[ReactNode]]] = js.undefined
   
   var collapsable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -132,10 +141,36 @@ trait RecursivePartialPartialOv extends StObject {
   ] = js.undefined
   
   var onOrientationChange: js.UndefOr[
-    RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]]]
+    RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]]]
   ] = js.undefined
   
-  var onRequestClose: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
+  var onPointerCancel: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerCancelCapture: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerDown: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerDownCapture: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerEnter: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerEnterCapture: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerLeave: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerLeaveCapture: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerMove: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerMoveCapture: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerUp: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onPointerUpCapture: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]] = js.undefined
+  
+  var onRequestClose: js.UndefOr[
+    RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]]]
+  ] = js.undefined
   
   var onResponderEnd: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
@@ -170,7 +205,7 @@ trait RecursivePartialPartialOv extends StObject {
   ] = js.undefined
   
   var onShow: js.UndefOr[
-    RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]]]
+    RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]]]
   ] = js.undefined
   
   var onStartShouldSetResponder: js.UndefOr[
@@ -258,10 +293,6 @@ object RecursivePartialPartialOv {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityComponentType(value: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
-    
     inline def setAccessibilityElementsHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
@@ -278,6 +309,14 @@ object RecursivePartialPartialOv {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: RecursivePartial[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLanguage(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: RecursivePartial[js.UndefOr[none | polite | assertive]]): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -289,10 +328,6 @@ object RecursivePartialPartialOv {
     inline def setAccessibilityState(value: RecursivePartial[js.UndefOr[AccessibilityState]]): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
     
     inline def setAccessibilityValue(value: RecursivePartial[js.UndefOr[AccessibilityValue]]): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -318,7 +353,7 @@ object RecursivePartialPartialOv {
     
     inline def setBackdropStyleUndefined: Self = StObject.set(x, "backdropStyle", js.undefined)
     
-    inline def setChildren(value: RecursivePartial[js.UndefOr[ReactElement]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: RecursivePartial[js.UndefOr[ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -358,7 +393,16 @@ object RecursivePartialPartialOv {
     
     inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
-    inline def setModalComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "ModalComponent", value.asInstanceOf[js.Any])
+    inline def setModalComponent(
+      value: RecursivePartial[
+          js.UndefOr[
+            TypeofComponent & (Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+              Component[ModalComponent, js.Object, js.Object]
+            ])
+          ]
+        ]
+    ): Self = StObject.set(x, "ModalComponent", value.asInstanceOf[js.Any])
     
     inline def setModalComponentUndefined: Self = StObject.set(x, "ModalComponent", js.undefined)
     
@@ -406,11 +450,59 @@ object RecursivePartialPartialOv {
     
     inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
     
-    inline def setOnOrientationChange(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]]]): Self = StObject.set(x, "onOrientationChange", value.asInstanceOf[js.Any])
+    inline def setOnOrientationChange(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]]]): Self = StObject.set(x, "onOrientationChange", value.asInstanceOf[js.Any])
     
     inline def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
     
-    inline def setOnRequestClose(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onRequestClose", value.asInstanceOf[js.Any])
+    inline def setOnPointerCancel(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerCancel", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerCancelCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
+    
+    inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+    
+    inline def setOnPointerDown(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerDown", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerDownCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
+    
+    inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+    
+    inline def setOnPointerEnter(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerEnter", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerEnterCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
+    
+    inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+    
+    inline def setOnPointerLeave(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerLeave", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerLeaveCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
+    
+    inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+    
+    inline def setOnPointerMove(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerMove", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerMoveCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
+    
+    inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+    
+    inline def setOnPointerUp(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerUp", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerUpCapture(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]]]): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
+    
+    inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+    
+    inline def setOnRequestClose(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]]]): Self = StObject.set(x, "onRequestClose", value.asInstanceOf[js.Any])
     
     inline def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
     
@@ -446,7 +538,7 @@ object RecursivePartialPartialOv {
     
     inline def setOnResponderTerminationRequestUndefined: Self = StObject.set(x, "onResponderTerminationRequest", js.undefined)
     
-    inline def setOnShow(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]]]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
+    inline def setOnShow(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]]]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     

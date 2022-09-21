@@ -64,7 +64,7 @@ object XBufferController {
     acquire: () => Unit,
     createBuffers: Double => Double,
     destroyBuffers: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     showBuffer: Boolean => Boolean,
     switchBuffer: Boolean => Boolean

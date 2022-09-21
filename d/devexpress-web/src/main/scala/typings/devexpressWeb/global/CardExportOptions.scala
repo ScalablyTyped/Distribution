@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CardExportOptions")
 @js.native
-class CardExportOptions ()
+open class CardExportOptions ()
   extends StObject
      with typings.devexpressWeb.CardExportOptions {
   

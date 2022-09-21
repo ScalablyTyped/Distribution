@@ -1,9 +1,5 @@
 package typings.googleapis.v1Dot4Mod.adsenseV14
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,13 +14,7 @@ trait ParamsResourceReportsGenerate
   var accountId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional currency to use when reporting on monetary metrics. Defaults to
-    * the account's currency if not set.
+    * Optional currency to use when reporting on monetary metrics. Defaults to the account's currency if not set.
     */
   var currency: js.UndefOr[String] = js.undefined
   
@@ -44,8 +34,7 @@ trait ParamsResourceReportsGenerate
   var filter: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Optional locale to use for translating report output to a local language.
-    * Defaults to "en_US" if not specified.
+    * Optional locale to use for translating report output to a local language. Defaults to "en_US" if not specified.
     */
   var locale: js.UndefOr[String] = js.undefined
   
@@ -60,9 +49,7 @@ trait ParamsResourceReportsGenerate
   var metric: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The name of a dimension or metric to sort the resulting report on,
-    * optionally prefixed with "+" to sort ascending or "-" to sort descending.
-    * If no prefix is specified, the column is sorted ascending.
+    * The name of a dimension or metric to sort the resulting report on, optionally prefixed with "+" to sort ascending or "-" to sort descending. If no prefix is specified, the column is sorted ascending.
     */
   var sort: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -77,8 +64,7 @@ trait ParamsResourceReportsGenerate
   var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether the report should be generated in the AdSense account's local
-    * timezone. If false default PST/PDT timezone will be used.
+    * Whether the report should be generated in the AdSense account's local timezone. If false default PST/PDT timezone will be used.
     */
   var useTimezoneReporting: js.UndefOr[Boolean] = js.undefined
 }
@@ -95,11 +81,7 @@ object ParamsResourceReportsGenerate {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    inline def setAccountIdVarargs(value: String*): Self = StObject.set(x, "accountId", js.Array(value :_*))
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAccountIdVarargs(value: String*): Self = StObject.set(x, "accountId", js.Array(value*))
     
     inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
@@ -109,7 +91,7 @@ object ParamsResourceReportsGenerate {
     
     inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    inline def setDimensionVarargs(value: String*): Self = StObject.set(x, "dimension", js.Array(value :_*))
+    inline def setDimensionVarargs(value: String*): Self = StObject.set(x, "dimension", js.Array(value*))
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
@@ -119,7 +101,7 @@ object ParamsResourceReportsGenerate {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
@@ -133,13 +115,13 @@ object ParamsResourceReportsGenerate {
     
     inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value*))
     
     inline def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     

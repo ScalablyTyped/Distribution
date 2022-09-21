@@ -19,7 +19,7 @@ trait ReviewActionDetail extends StObject {
   /**
     *  The date when the action was completed.
     */
-  var CompleteTime: js.UndefOr[Timestamp] = js.undefined
+  var CompleteTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Present only when the Results have a FAILED Status.
@@ -63,7 +63,7 @@ object ReviewActionDetail {
     
     inline def setActionNameUndefined: Self = StObject.set(x, "ActionName", js.undefined)
     
-    inline def setCompleteTime(value: Timestamp): Self = StObject.set(x, "CompleteTime", value.asInstanceOf[js.Any])
+    inline def setCompleteTime(value: js.Date): Self = StObject.set(x, "CompleteTime", value.asInstanceOf[js.Any])
     
     inline def setCompleteTimeUndefined: Self = StObject.set(x, "CompleteTime", js.undefined)
     

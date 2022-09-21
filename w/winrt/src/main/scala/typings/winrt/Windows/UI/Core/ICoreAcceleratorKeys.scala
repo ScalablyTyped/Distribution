@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ICoreAcceleratorKeys extends StObject {
   
-  var onacceleratorkeyactivated: js.Any
+  var onacceleratorkeyactivated: Any
 }
 object ICoreAcceleratorKeys {
   
-  inline def apply(onacceleratorkeyactivated: js.Any): ICoreAcceleratorKeys = {
+  inline def apply(onacceleratorkeyactivated: Any): ICoreAcceleratorKeys = {
     val __obj = js.Dynamic.literal(onacceleratorkeyactivated = onacceleratorkeyactivated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoreAcceleratorKeys]
   }
   
   extension [Self <: ICoreAcceleratorKeys](x: Self) {
     
-    inline def setOnacceleratorkeyactivated(value: js.Any): Self = StObject.set(x, "onacceleratorkeyactivated", value.asInstanceOf[js.Any])
+    inline def setOnacceleratorkeyactivated(value: Any): Self = StObject.set(x, "onacceleratorkeyactivated", value.asInstanceOf[js.Any])
   }
 }

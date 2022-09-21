@@ -29,7 +29,7 @@ object ListEntitlementsResponse {
     
     inline def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
     
-    inline def setEntitlementsVarargs(value: ListedEntitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: ListedEntitlement*): Self = StObject.set(x, "Entitlements", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

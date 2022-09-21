@@ -10,9 +10,9 @@ trait IgPathFinder
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[Any] = js.undefined
 }
 object IgPathFinder {
   
@@ -23,7 +23,7 @@ object IgPathFinder {
   
   extension [Self <: IgPathFinder](x: Self) {
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
   }

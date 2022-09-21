@@ -6,14 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCDataChannelEventMap extends StObject {
   
+  /* standard dom */
   var bufferedamountlow: Event
   
+  /* standard dom */
   var close: Event
   
-  var error: RTCErrorEvent
+  /* standard dom */
+  var closing: Event
   
-  var message: MessageEvent[js.Any]
+  /* standard dom */
+  var error: Event
   
+  /* standard dom */
+  var message: MessageEvent[Any]
+  
+  /* standard dom */
   var open: Event
 }
 object RTCDataChannelEventMap {
@@ -21,11 +29,12 @@ object RTCDataChannelEventMap {
   inline def apply(
     bufferedamountlow: Event,
     close: Event,
-    error: RTCErrorEvent,
-    message: MessageEvent[js.Any],
+    closing: Event,
+    error: Event,
+    message: MessageEvent[Any],
     open: Event
   ): RTCDataChannelEventMap = {
-    val __obj = js.Dynamic.literal(bufferedamountlow = bufferedamountlow.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bufferedamountlow = bufferedamountlow.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], closing = closing.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDataChannelEventMap]
   }
   
@@ -35,9 +44,11 @@ object RTCDataChannelEventMap {
     
     inline def setClose(value: Event): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    inline def setError(value: RTCErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setClosing(value: Event): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: MessageEvent[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }

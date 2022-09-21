@@ -41,6 +41,6 @@ object CodeFlow {
     
     inline def setThreadFlows(value: js.Array[ThreadFlow]): Self = StObject.set(x, "threadFlows", value.asInstanceOf[js.Any])
     
-    inline def setThreadFlowsVarargs(value: ThreadFlow*): Self = StObject.set(x, "threadFlows", js.Array(value :_*))
+    inline def setThreadFlowsVarargs(value: ThreadFlow*): Self = StObject.set(x, "threadFlows", js.Array(value*))
   }
 }

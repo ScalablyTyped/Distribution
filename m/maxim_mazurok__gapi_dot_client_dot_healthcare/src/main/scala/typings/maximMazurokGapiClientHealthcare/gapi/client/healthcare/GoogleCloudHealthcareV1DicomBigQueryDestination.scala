@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleCloudHealthcareV1DicomBigQueryDestination extends StObject {
   
   /**
-    * If the destination table already exists and this flag is `TRUE`, the table is overwritten by the contents of the DICOM store. If the flag is not set and the destination table
-    * already exists, the export call returns an error.
+    * Use `write_disposition` instead. If `write_disposition` is specified, this parameter is ignored. force=false is equivalent to write_disposition=WRITE_EMPTY and force=true is
+    * equivalent to write_disposition=WRITE_TRUNCATE.
     */
   var force: js.UndefOr[Boolean] = js.undefined
   
   /** BigQuery URI to a table, up to 2000 characters long, in the format `bq://projectId.bqDatasetId.tableId` */
   var tableUri: js.UndefOr[String] = js.undefined
+  
+  /** Determines whether the existing table in the destination is to be overwritten or appended to. If a write_disposition is specified, the `force` parameter is ignored. */
+  var writeDisposition: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudHealthcareV1DicomBigQueryDestination {
   
@@ -31,5 +34,9 @@ object GoogleCloudHealthcareV1DicomBigQueryDestination {
     inline def setTableUri(value: String): Self = StObject.set(x, "tableUri", value.asInstanceOf[js.Any])
     
     inline def setTableUriUndefined: Self = StObject.set(x, "tableUri", js.undefined)
+    
+    inline def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
+    
+    inline def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
   }
 }

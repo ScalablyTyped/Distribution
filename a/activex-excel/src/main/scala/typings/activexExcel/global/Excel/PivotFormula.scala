@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotFormula")
 @js.native
-/* private */ class PivotFormula ()
+/* private */ open class PivotFormula ()
   extends StObject
      with typings.activexExcel.Excel.PivotFormula {
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Index: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var StandardFormula: String = js.native

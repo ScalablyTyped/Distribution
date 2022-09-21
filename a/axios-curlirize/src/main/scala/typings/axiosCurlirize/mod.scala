@@ -1,7 +1,6 @@
 package typings.axiosCurlirize
 
 import typings.axios.mod.AxiosInstance
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* result */ Result, /* error */ Error, Unit]
+  type Callback = js.Function2[/* result */ Result, /* error */ js.Error, Unit]
   
   trait Result extends StObject {
     

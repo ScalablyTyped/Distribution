@@ -51,7 +51,7 @@ trait IStorageFolder
     * Gets the files from the current folder.
     * @return When this method completes successfully, it returns a list of the files (type IVectorView ) in the folder. Each file in the list is represented by a StorageFile object.
     */
-  def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets the specified folder from the current folder.
@@ -64,7 +64,7 @@ trait IStorageFolder
     * Gets the folders in the current folder.
     * @return When this method completes successfully, it returns a list of the files (type IVectorView ). Each folder in the list is represented by a StorageFolder .
     */
-  def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets the specified item from the IStorageFolder .
@@ -77,7 +77,7 @@ trait IStorageFolder
     * Gets the items from the current folder.
     * @return When this method completes successfully, it returns a list of the files and folders (type IVectorView ). The files and folders in the list are represented by objects of type IStorageItem .
     */
-  def getItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Try to get a single file or sub-folder from the current folder by using the name of the item.

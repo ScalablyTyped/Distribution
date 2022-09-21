@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptureOption extends StObject {
   
   /**
-    * 
+    * Specify the boundary of data to capture.
     */
   var CaptureMode: typings.awsSdk.sagemakerMod.CaptureMode
 }

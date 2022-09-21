@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-webrtc", "RTCSessionDescription")
 @js.native
-class RTCSessionDescription protected () extends RTCSessionDescriptionType {
+open class RTCSessionDescription protected () extends RTCSessionDescriptionType {
   def this(info: RTCSessionDescriptionType) = this()
   
   def toJSON(): RTCSessionDescriptionType = js.native

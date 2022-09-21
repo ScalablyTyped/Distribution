@@ -8,7 +8,7 @@ object transitionsMod {
   
   @JSImport("famous/transitions", "Curves")
   @js.native
-  class Curves () extends StObject
+  open class Curves () extends StObject
   /* static members */
   object Curves {
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-modals", "ModalFooter")
 @js.native
-class ModalFooter protected ()
-  extends Component[ModalFooterProps, js.Object, js.Any] {
+open class ModalFooter protected ()
+  extends Component[ModalFooterProps, js.Object, Any] {
   def this(props: ModalFooterProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ModalFooterProps, context: js.Any) = this()
+  def this(props: ModalFooterProps, context: Any) = this()
 }

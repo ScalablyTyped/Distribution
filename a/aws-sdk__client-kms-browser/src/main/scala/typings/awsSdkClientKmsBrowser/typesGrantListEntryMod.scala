@@ -11,8 +11,6 @@ import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.ReEncryptTo
 import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.RetireGrant
 import typings.awsSdkClientKmsBrowser.typesGrantConstraintsMod.GrantConstraints
 import typings.awsSdkClientKmsBrowser.typesGrantConstraintsMod.UnmarshalledGrantConstraints
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +27,7 @@ object typesGrantListEntryMod {
     /**
       * <p>The date and time when the grant was created.</p>
       */
-    var CreationDate: js.UndefOr[Date | String | Double] = js.undefined
+    var CreationDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The unique identifier for the grant.</p>
@@ -62,7 +60,7 @@ object typesGrantListEntryMod {
     var Operations: js.UndefOr[
         (js.Array[
           Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
         ])
       ] = js.undefined
@@ -85,7 +83,7 @@ object typesGrantListEntryMod {
       
       inline def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
       
-      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
@@ -112,7 +110,7 @@ object typesGrantListEntryMod {
       inline def setOperations(
         value: (js.Array[
               Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
-            ]) | (Iterable[
+            ]) | (js.Iterable[
               Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
             ])
       ): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
@@ -121,7 +119,7 @@ object typesGrantListEntryMod {
       
       inline def setOperationsVarargs(
         value: (Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String)*
-      ): Self = StObject.set(x, "Operations", js.Array(value :_*))
+      ): Self = StObject.set(x, "Operations", js.Array(value*))
       
       inline def setRetiringPrincipal(value: String): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
       
@@ -143,7 +141,7 @@ object typesGrantListEntryMod {
       * <p>The date and time when the grant was created.</p>
       */
     @JSName("CreationDate")
-    var CreationDate_UnmarshalledGrantListEntry: js.UndefOr[Date] = js.undefined
+    var CreationDate_UnmarshalledGrantListEntry: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The list of operations permitted by the grant.</p>
@@ -168,7 +166,7 @@ object typesGrantListEntryMod {
       
       inline def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
       
-      inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
@@ -182,7 +180,7 @@ object typesGrantListEntryMod {
       
       inline def setOperationsVarargs(
         value: (Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String)*
-      ): Self = StObject.set(x, "Operations", js.Array(value :_*))
+      ): Self = StObject.set(x, "Operations", js.Array(value*))
     }
   }
 }

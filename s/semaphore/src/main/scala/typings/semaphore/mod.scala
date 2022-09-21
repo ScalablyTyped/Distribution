@@ -20,6 +20,8 @@ object mod {
     
     var capacity: Double = js.native
     
+    var current: Double = js.native
+    
     def leave(): Unit = js.native
     def leave(n: Double): Unit = js.native
     

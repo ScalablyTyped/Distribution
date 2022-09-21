@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.UI
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.UI.Notifications.BadgeTemplateType
@@ -20,7 +19,7 @@ object Notifications {
   /** Defines the content, associated metadata, and expiration time of an update to a tile's badge overlay. A badge can display a number from 1 to 99 or a status glyph. */
   @JSGlobal("Windows.UI.Notifications.BadgeNotification")
   @js.native
-  class BadgeNotification protected ()
+  open class BadgeNotification protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.BadgeNotification {
     /**
@@ -35,7 +34,7 @@ object Notifications {
     
     /** Gets or sets the time that Windows will remove the badge from the tile. By default, local badge notifications do not expire and push, periodic, and scheduled badge notifications expire after three days. It is a best practice to explicitly set an expiration time to avoid stale content. */
     /* CompleteClass */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
   }
   
   /** Specifies the template to use for a tile's badge overlay. Used by BadgeUpdateManager.getTemplateContent . */
@@ -142,7 +141,7 @@ object Notifications {
   /** Defines the visual content and timing for a single, non-recurring scheduled update to a tile. */
   @JSGlobal("Windows.UI.Notifications.ScheduledTileNotification")
   @js.native
-  class ScheduledTileNotification protected ()
+  open class ScheduledTileNotification protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ScheduledTileNotification {
     /**
@@ -150,7 +149,7 @@ object Notifications {
       * @param content The object that provides the content for the tile notification.
       * @param deliveryTime The time at which the tile should be updated with the notification information.
       */
-    def this(content: XmlDocument, deliveryTime: Date) = this()
+    def this(content: XmlDocument, deliveryTime: js.Date) = this()
     
     /** Gets the XML description of the content of the scheduled tile update. */
     /* CompleteClass */
@@ -158,11 +157,11 @@ object Notifications {
     
     /** Gets the time at which the tile is scheduled to be updated. */
     /* CompleteClass */
-    var deliveryTime: Date = js.native
+    var deliveryTime: js.Date = js.native
     
     /** Gets or sets the time after which the tile notification should no longer be shown. By default, a tile notification does not expire. It is a best practice to explicitly set an expiration time to avoid stale content. */
     /* CompleteClass */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
     
     /** Gets or sets the unique ID that is used to identify the scheduled tile in the schedule. */
     /* CompleteClass */
@@ -176,7 +175,7 @@ object Notifications {
   /** Contains the XML that defines the toast notification that will display at the scheduled time. */
   @JSGlobal("Windows.UI.Notifications.ScheduledToastNotification")
   @js.native
-  class ScheduledToastNotification protected ()
+  open class ScheduledToastNotification protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ScheduledToastNotification {
     /**
@@ -184,7 +183,7 @@ object Notifications {
       * @param content The XML that defines the toast notification content.
       * @param deliveryTime The date and time that Windows should display the toast notification. You must call AddToSchedule before this time.
       */
-    def this(content: XmlDocument, deliveryTime: Date) = this()
+    def this(content: XmlDocument, deliveryTime: js.Date) = this()
     /**
       * Creates and initializes a new instance of a recurring ScheduledToastNotification .
       * @param content The XML that defines the toast notification content.
@@ -192,7 +191,7 @@ object Notifications {
       * @param snoozeInterval The amount of time between occurrences of the notification. To be valid, this value must be no less than 60 seconds and no more than 60 minutes.
       * @param maximumSnoozeCount The maximum number of times to display this notification. Valid values range from 1 to 5.
       */
-    def this(content: XmlDocument, deliveryTime: Date, snoozeInterval: Double, maximumSnoozeCount: Double) = this()
+    def this(content: XmlDocument, deliveryTime: js.Date, snoozeInterval: Double, maximumSnoozeCount: Double) = this()
     
     /** Gets the XML that defines this scheduled toast notification. */
     /* CompleteClass */
@@ -200,7 +199,7 @@ object Notifications {
     
     /** Gets the time that this toast notification is scheduled to be displayed. */
     /* CompleteClass */
-    var deliveryTime: Date = js.native
+    var deliveryTime: js.Date = js.native
     
     /** Gets or sets the group identifier for the notification. */
     /* CompleteClass */
@@ -234,11 +233,11 @@ object Notifications {
        with typings.winrtUwp.Windows.UI.Notifications.TileFlyoutNotification {
     
     /* CompleteClass */
-    var content: js.Any = js.native
+    var content: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var expirationTime: js.Any = js.native
+    var expirationTime: Any = js.native
   }
   
   object TileFlyoutTemplateType {
@@ -249,8 +248,8 @@ object Notifications {
     
     @JSGlobal("Windows.UI.Notifications.TileFlyoutTemplateType.tileFlyoutTemplate01")
     @js.native
-    def tileFlyoutTemplate01: js.Any = js.native
-    inline def tileFlyoutTemplate01_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tileFlyoutTemplate01")(x.asInstanceOf[js.Any])
+    def tileFlyoutTemplate01: Any = js.native
+    inline def tileFlyoutTemplate01_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tileFlyoutTemplate01")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager")
@@ -267,22 +266,22 @@ object Notifications {
     /* static member */
     @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager.createTileFlyoutUpdaterForApplication")
     @js.native
-    def createTileFlyoutUpdaterForApplication: js.Any = js.native
-    inline def createTileFlyoutUpdaterForApplication_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTileFlyoutUpdaterForApplication")(x.asInstanceOf[js.Any])
+    def createTileFlyoutUpdaterForApplication: Any = js.native
+    inline def createTileFlyoutUpdaterForApplication_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTileFlyoutUpdaterForApplication")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager.createTileFlyoutUpdaterForSecondaryTile")
     @js.native
-    def createTileFlyoutUpdaterForSecondaryTile: js.Any = js.native
-    inline def createTileFlyoutUpdaterForSecondaryTile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTileFlyoutUpdaterForSecondaryTile")(x.asInstanceOf[js.Any])
+    def createTileFlyoutUpdaterForSecondaryTile: Any = js.native
+    inline def createTileFlyoutUpdaterForSecondaryTile_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTileFlyoutUpdaterForSecondaryTile")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager.getTemplateContent")
     @js.native
-    def getTemplateContent: js.Any = js.native
-    inline def getTemplateContent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTemplateContent")(x.asInstanceOf[js.Any])
+    def getTemplateContent: Any = js.native
+    inline def getTemplateContent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTemplateContent")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdater")
@@ -292,29 +291,29 @@ object Notifications {
        with typings.winrtUwp.Windows.UI.Notifications.TileFlyoutUpdater {
     
     /* CompleteClass */
-    var clear: js.Any = js.native
+    var clear: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var setting: js.Any = js.native
+    var setting: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var startPeriodicUpdate: js.Any = js.native
+    var startPeriodicUpdate: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var stopPeriodicUpdate: js.Any = js.native
+    var stopPeriodicUpdate: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var update: js.Any = js.native
+    var update: Any = js.native
   }
   
   /** Defines an update to a tile, including its visuals, identification tag, and expiration time. */
   @JSGlobal("Windows.UI.Notifications.TileNotification")
   @js.native
-  class TileNotification protected ()
+  open class TileNotification protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.TileNotification {
     /**
@@ -329,7 +328,7 @@ object Notifications {
     
     /** Gets or sets the time that Windows will remove the notification from the tile. By default, a tile update does not expire. It is a best practice to explicitly set an expiration time to avoid stale content. */
     /* CompleteClass */
-    var expirationTime: Date = js.native
+    var expirationTime: js.Date = js.native
     
     /** Gets or sets a string that Windows can use to prevent duplicate notification content from appearing in the queue. */
     /* CompleteClass */
@@ -718,7 +717,7 @@ object Notifications {
   /** Defines the content, associated metadata and events, and expiration time of a toast notification. */
   @JSGlobal("Windows.UI.Notifications.ToastNotification")
   @js.native
-  class ToastNotification protected ()
+  open class ToastNotification protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Notifications.ToastNotification {
     /**
@@ -735,11 +734,11 @@ object Notifications {
        with typings.winrtUwp.Windows.UI.Notifications.ToastNotificationActionTriggerDetail {
     
     /* CompleteClass */
-    var argument: js.Any = js.native
+    var argument: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var userInput: js.Any = js.native
+    var userInput: Any = js.native
   }
   
   /** Manages the toast notifications for an app including the ability the clear all toast history and removing individual toasts. */

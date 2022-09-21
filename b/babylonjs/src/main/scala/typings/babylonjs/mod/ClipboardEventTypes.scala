@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "ClipboardEventTypes")
 @js.native
-class ClipboardEventTypes ()
+open class ClipboardEventTypes ()
   extends typings.babylonjs.legacyMod.ClipboardEventTypes
 /* static members */
 object ClipboardEventTypes {

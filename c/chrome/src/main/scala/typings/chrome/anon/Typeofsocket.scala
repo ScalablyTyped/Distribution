@@ -7,7 +7,6 @@ import typings.chrome.chrome.socket.ReadInfo
 import typings.chrome.chrome.socket.RecvFromInfo
 import typings.chrome.chrome.socket.SocketInfo
 import typings.chrome.chrome.socket.WriteInfo
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,10 +70,10 @@ trait Typeofsocket extends StObject {
   ): Unit = js.native
   def recvFrom(socketId: Double, bufferSize: Unit, callback: js.Function1[/* recvFromInfo */ RecvFromInfo, Unit]): Unit = js.native
   
-  def sendTo(socketId: Double, data: ArrayBuffer, address: String, port: Double): Unit = js.native
+  def sendTo(socketId: Double, data: js.typedarray.ArrayBuffer, address: String, port: Double): Unit = js.native
   def sendTo(
     socketId: Double,
-    data: ArrayBuffer,
+    data: js.typedarray.ArrayBuffer,
     address: String,
     port: Double,
     callback: js.Function1[/* writeInfo */ WriteInfo, Unit]
@@ -93,6 +92,10 @@ trait Typeofsocket extends StObject {
   def setNoDelay(socketId: Double, noDelay: Boolean): Unit = js.native
   def setNoDelay(socketId: Double, noDelay: Boolean, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
   
-  def write(socketId: Double, data: ArrayBuffer): Unit = js.native
-  def write(socketId: Double, data: ArrayBuffer, callback: js.Function1[/* writeInfo */ WriteInfo, Unit]): Unit = js.native
+  def write(socketId: Double, data: js.typedarray.ArrayBuffer): Unit = js.native
+  def write(
+    socketId: Double,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function1[/* writeInfo */ WriteInfo, Unit]
+  ): Unit = js.native
 }

@@ -10,8 +10,6 @@ import typings.awsSdkClientKinesisBrowser.typesEnhancedMetricsMod.EnhancedMetric
 import typings.awsSdkClientKinesisBrowser.typesEnhancedMetricsMod.UnmarshalledEnhancedMetrics
 import typings.awsSdkClientKinesisBrowser.typesShardMod.Shard
 import typings.awsSdkClientKinesisBrowser.typesShardMod.UnmarshalledShard
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +26,7 @@ object typesStreamDescriptionMod {
     /**
       * <p>Represents the current enhanced monitoring settings of the stream.</p>
       */
-    var EnhancedMonitoring: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics]
+    var EnhancedMonitoring: js.Array[EnhancedMetrics] | js.Iterable[EnhancedMetrics]
     
     /**
       * <p>If set to <code>true</code>, more shards in the stream are available to describe.</p>
@@ -48,7 +46,7 @@ object typesStreamDescriptionMod {
     /**
       * <p>The shards that comprise the stream.</p>
       */
-    var Shards: js.Array[Shard] | Iterable[Shard]
+    var Shards: js.Array[Shard] | js.Iterable[Shard]
     
     /**
       * <p>The Amazon Resource Name (ARN) for the stream being described.</p>
@@ -58,7 +56,7 @@ object typesStreamDescriptionMod {
     /**
       * <p>The approximate time that the stream was created.</p>
       */
-    var StreamCreationTimestamp: Date | String | Double
+    var StreamCreationTimestamp: js.Date | String | Double
     
     /**
       * <p>The name of the stream being described.</p>
@@ -73,12 +71,12 @@ object typesStreamDescriptionMod {
   object StreamDescription {
     
     inline def apply(
-      EnhancedMonitoring: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics],
+      EnhancedMonitoring: js.Array[EnhancedMetrics] | js.Iterable[EnhancedMetrics],
       HasMoreShards: Boolean,
       RetentionPeriodHours: Double,
-      Shards: js.Array[Shard] | Iterable[Shard],
+      Shards: js.Array[Shard] | js.Iterable[Shard],
       StreamARN: String,
-      StreamCreationTimestamp: Date | String | Double,
+      StreamCreationTimestamp: js.Date | String | Double,
       StreamName: String,
       StreamStatus: CREATING | DELETING | ACTIVE | UPDATING | String
     ): StreamDescription = {
@@ -92,9 +90,9 @@ object typesStreamDescriptionMod {
       
       inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
       
-      inline def setEnhancedMonitoring(value: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnhancedMonitoring(value: js.Array[EnhancedMetrics] | js.Iterable[EnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       
-      inline def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+      inline def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value*))
       
       inline def setHasMoreShards(value: Boolean): Self = StObject.set(x, "HasMoreShards", value.asInstanceOf[js.Any])
       
@@ -104,13 +102,13 @@ object typesStreamDescriptionMod {
       
       inline def setRetentionPeriodHours(value: Double): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
       
-      inline def setShards(value: js.Array[Shard] | Iterable[Shard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
+      inline def setShards(value: js.Array[Shard] | js.Iterable[Shard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
       
-      inline def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
+      inline def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value*))
       
       inline def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
       
-      inline def setStreamCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
       
       inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
@@ -138,7 +136,7 @@ object typesStreamDescriptionMod {
       * <p>The approximate time that the stream was created.</p>
       */
     @JSName("StreamCreationTimestamp")
-    var StreamCreationTimestamp_UnmarshalledStreamDescription: Date
+    var StreamCreationTimestamp_UnmarshalledStreamDescription: js.Date
   }
   object UnmarshalledStreamDescription {
     
@@ -148,7 +146,7 @@ object typesStreamDescriptionMod {
       RetentionPeriodHours: Double,
       Shards: js.Array[UnmarshalledShard],
       StreamARN: String,
-      StreamCreationTimestamp: Date,
+      StreamCreationTimestamp: js.Date,
       StreamName: String,
       StreamStatus: CREATING | DELETING | ACTIVE | UPDATING | String
     ): UnmarshalledStreamDescription = {
@@ -160,13 +158,13 @@ object typesStreamDescriptionMod {
       
       inline def setEnhancedMonitoring(value: js.Array[UnmarshalledEnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       
-      inline def setEnhancedMonitoringVarargs(value: UnmarshalledEnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+      inline def setEnhancedMonitoringVarargs(value: UnmarshalledEnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value*))
       
       inline def setShards(value: js.Array[UnmarshalledShard]): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
       
-      inline def setShardsVarargs(value: UnmarshalledShard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
+      inline def setShardsVarargs(value: UnmarshalledShard*): Self = StObject.set(x, "Shards", js.Array(value*))
       
-      inline def setStreamCreationTimestamp(value: Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: js.Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     }
   }
 }

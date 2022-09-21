@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteEnvironmentRequest extends StObject {
   
   /**
-    * The application ID that includes the environment you want to delete.
+    * The application ID that includes the environment that you want to delete.
     */
   var ApplicationId: Id
   
   /**
-    * The ID of the environment you want to delete.
+    * The ID of the environment that you want to delete.
     */
   var EnvironmentId: Id
 }

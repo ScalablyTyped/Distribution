@@ -4,6 +4,7 @@ import typings.atlassianConnectJs.atlassianConnectJsStrings.`version-at-save`
 import typings.atlassianConnectJs.atlassianConnectJsStrings.blogpost
 import typings.atlassianConnectJs.atlassianConnectJsStrings.current
 import typings.atlassianConnectJs.atlassianConnectJsStrings.page
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,147 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object navigator {
   
-  @js.native
-  sealed trait NavigatorTargetConfluence extends StObject
-  @JSGlobal("AP.navigator.NavigatorTargetConfluence")
-  @js.native
-  object NavigatorTargetConfluence extends StObject {
-    
-    /**
-      * The module page within a specific add-on. Takes an `addonKey` and a `moduleKey` to identify the correct module.
-      */
-    @js.native
-    sealed trait addonModule
-      extends StObject
-         with NavigatorTargetConfluence
-    
-    /**
-      * The edit page for pages, blogs and custom content. Takes a `contentId` to identify the content.
-      */
-    @js.native
-    sealed trait contentedit
-      extends StObject
-         with NavigatorTargetConfluence
-    
-    /**
-      * The list/collector page for pages, blogs and custom content contained in a space. Takes a `spaceKey` and a `contentType` to identify the content type.
-      */
-    @js.native
-    sealed trait contentlist
-      extends StObject
-         with NavigatorTargetConfluence
-    
-    /**
-      * The view page for pages, blogs and custom content. Takes a `contentId` to identify the content.
-      */
-    @js.native
-    sealed trait contentview
-      extends StObject
-         with NavigatorTargetConfluence
-    
-    /**
-      * The dashboard of Confluence.
-      */
-    @js.native
-    sealed trait dashboard
-      extends StObject
-         with NavigatorTargetConfluence
-    
-    /**
-      * A specific location contained within a site. Takes a `relativeUrl` to identify the path.
-      */
-    @js.native
-    sealed trait site
-      extends StObject
-         with NavigatorTargetConfluence
-    
-    /**
-      * The space tools page. Takes a `spaceKey` to identify the space.
-      */
-    @js.native
-    sealed trait spacetools
-      extends StObject
-         with NavigatorTargetConfluence
-    
-    /**
-      * The space view page. Takes a `spaceKey` to identify the space.
-      */
-    @js.native
-    sealed trait spaceview
-      extends StObject
-         with NavigatorTargetConfluence
-    
-    /**
-      * The profile page for a specific user. Takes a `username` or `userAccountId` to identify the user.
-      */
-    @js.native
-    sealed trait userProfile
-      extends StObject
-         with NavigatorTargetConfluence
-  }
+  type CustomDataBasicValue = js.UndefOr[String | Double | Boolean | Null]
   
-  @js.native
-  sealed trait NavigatorTargetJira extends StObject
-  @JSGlobal("AP.navigator.NavigatorTargetJira")
-  @js.native
-  object NavigatorTargetJira extends StObject {
-    
-    /**
-      * The module page within a specific add-on. Takes an `addonKey` and a `moduleKey` to identify the correct module.
-      */
-    @js.native
-    sealed trait addonModule
-      extends StObject
-         with NavigatorTargetJira
-    
-    /**
-      * A specific dashboard in Jira. Takes a `dashboardId` to identify the dashboard.
-      */
-    @js.native
-    sealed trait dashboard
-      extends StObject
-         with NavigatorTargetJira
-    
-    /**
-      * A specific Issue in Jira. Takes an `issueKey` to identify the issue.
-      */
-    @js.native
-    sealed trait issue
-      extends StObject
-         with NavigatorTargetJira
-    
-    /**
-      * The admin details of a specific Jira Project. Takes a `projectKey` to identify the project. Only accessible to administrators.
-      */
-    @js.native
-    sealed trait projectAdminSummary
-      extends StObject
-         with NavigatorTargetJira
-    
-    /**
-      * The admin panel definted by a connect addon. Takes an `addonKey`, `adminPageKey`, `projectKey` and `projectId`. Only accessible to administrators.
-      */
-    @js.native
-    sealed trait projectAdminTabPanel
-      extends StObject
-         with NavigatorTargetJira
-    
-    /**
-      * A specific location contained within the site. Takes either a `relativeUrl` or `absoluteUrl` to identify the path.
-      */
-    @js.native
-    sealed trait site
-      extends StObject
-         with NavigatorTargetJira
-    
-    /**
-      * The profile page for a Jira User. Takes a `username` or `userAccountId` to identify the user.
-      */
-    @js.native
-    sealed trait userProfile
-      extends StObject
-         with NavigatorTargetJira
-  }
+  type CustomDataValue = CustomDataBasicValue | js.Array[CustomDataBasicValue]
   
   trait NavigatorContext extends StObject {
     
@@ -185,8 +48,10 @@ object navigator {
     /**
       * Contains parameters that will be added as query parameters to the product url with "ac." prepended.
       * Used only in `addonModule` target. See Add-on specific context parameters for more info.
+      * @example Passing { foo: 'bar' } here causes your iframe to be called with "...?ac.foo=bar"
+      * @see {@link https://developer.atlassian.com/cloud/confluence/context-parameters#apps}
       */
-    var customData: String
+    var customData: Record[String, CustomDataValue]
     
     /**
       * Identifies a Jira dashboard. Required for the `dashboard` target in Jira.
@@ -256,7 +121,7 @@ object navigator {
       adminPageKey: String,
       contentId: String,
       contentType: page | blogpost,
-      customData: String,
+      customData: Record[String, CustomDataValue],
       dashboardId: String,
       issueKey: String,
       moduleKey: String,
@@ -284,7 +149,7 @@ object navigator {
       
       inline def setContentType(value: page | blogpost): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      inline def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Record[String, CustomDataValue]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setDashboardId(value: String): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
       
@@ -310,5 +175,65 @@ object navigator {
       
       inline def setVersionOverride(value: String): Self = StObject.set(x, "versionOverride", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.contentview
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.contentedit
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.spaceview
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.spacetools
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.dashboard
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.userProfile
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.addonModule
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.contentlist
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.site
+  */
+  trait NavigatorTargetConfluence extends StObject
+  object NavigatorTargetConfluence {
+    
+    inline def addonModule: typings.atlassianConnectJs.atlassianConnectJsStrings.addonModule = "addonModule".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.addonModule]
+    
+    inline def contentedit: typings.atlassianConnectJs.atlassianConnectJsStrings.contentedit = "contentedit".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.contentedit]
+    
+    inline def contentlist: typings.atlassianConnectJs.atlassianConnectJsStrings.contentlist = "contentlist".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.contentlist]
+    
+    inline def contentview: typings.atlassianConnectJs.atlassianConnectJsStrings.contentview = "contentview".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.contentview]
+    
+    inline def dashboard: typings.atlassianConnectJs.atlassianConnectJsStrings.dashboard = "dashboard".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.dashboard]
+    
+    inline def site: typings.atlassianConnectJs.atlassianConnectJsStrings.site = "site".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.site]
+    
+    inline def spacetools: typings.atlassianConnectJs.atlassianConnectJsStrings.spacetools = "spacetools".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.spacetools]
+    
+    inline def spaceview: typings.atlassianConnectJs.atlassianConnectJsStrings.spaceview = "spaceview".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.spaceview]
+    
+    inline def userProfile: typings.atlassianConnectJs.atlassianConnectJsStrings.userProfile = "userProfile".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.userProfile]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.dashboard
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.issue
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.addonModule
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.userProfile
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.projectAdminSummary
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.projectAdminTabPanel
+    - typings.atlassianConnectJs.atlassianConnectJsStrings.site
+  */
+  trait NavigatorTargetJira extends StObject
+  object NavigatorTargetJira {
+    
+    inline def addonModule: typings.atlassianConnectJs.atlassianConnectJsStrings.addonModule = "addonModule".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.addonModule]
+    
+    inline def dashboard: typings.atlassianConnectJs.atlassianConnectJsStrings.dashboard = "dashboard".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.dashboard]
+    
+    inline def issue: typings.atlassianConnectJs.atlassianConnectJsStrings.issue = "issue".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.issue]
+    
+    inline def projectAdminSummary: typings.atlassianConnectJs.atlassianConnectJsStrings.projectAdminSummary = "projectAdminSummary".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.projectAdminSummary]
+    
+    inline def projectAdminTabPanel: typings.atlassianConnectJs.atlassianConnectJsStrings.projectAdminTabPanel = "projectAdminTabPanel".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.projectAdminTabPanel]
+    
+    inline def site: typings.atlassianConnectJs.atlassianConnectJsStrings.site = "site".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.site]
+    
+    inline def userProfile: typings.atlassianConnectJs.atlassianConnectJsStrings.userProfile = "userProfile".asInstanceOf[typings.atlassianConnectJs.atlassianConnectJsStrings.userProfile]
   }
 }

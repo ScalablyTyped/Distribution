@@ -44,58 +44,35 @@ trait PlotlyHTMLElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
-  @JSName("on")
-  def on_plotlyafterexport(event: plotly_afterexport, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyafterplot(event: plotly_afterplot, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyanimated(event: plotly_animated, callback: js.Function0[Unit]): Unit = js.native
+  def on(
+    event: plotly_afterexport | plotly_afterplot | plotly_animated | plotly_animationinterrupted | plotly_autosize | plotly_beforeexport | plotly_deselect | plotly_doubleclick | plotly_framework | plotly_redraw | plotly_transitioning | plotly_transitioninterrupted,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def on(
+    event: plotly_click | plotly_legendclick | plotly_legenddoubleclick | plotly_relayout | plotly_relayouting | plotly_selected | plotly_selecting | plotly_unhover,
+    callback: js.Function1[
+      (/* event */ LegendClickEvent) | (/* event */ PlotMouseEvent) | (/* event */ PlotRelayoutEvent) | (/* event */ PlotSelectionEvent), 
+      Boolean | Unit
+    ]
+  ): Unit = js.native
   @JSName("on")
   def on_plotlyanimatingframe(event: plotly_animatingframe, callback: js.Function1[/* event */ FrameAnimationEvent, Unit]): Unit = js.native
   @JSName("on")
-  def on_plotlyanimationinterrupted(event: plotly_animationinterrupted, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyautosize(event: plotly_autosize, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlybeforeexport(event: plotly_beforeexport, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
   def on_plotlybeforeplot(event: plotly_beforeplot, callback: js.Function1[/* event */ BeforePlotEvent, Boolean]): Unit = js.native
-  @JSName("on")
-  def on_plotlyclick(event: plotly_click, callback: js.Function1[/* event */ PlotMouseEvent, Unit]): Unit = js.native
   @JSName("on")
   def on_plotlyclickannotation(event: plotly_clickannotation, callback: js.Function1[/* event */ ClickAnnotationEvent, Unit]): Unit = js.native
   @JSName("on")
-  def on_plotlydeselect(event: plotly_deselect, callback: js.Function0[Unit]): Unit = js.native
+  def on_plotlyevent(event: plotly_event, callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
   @JSName("on")
-  def on_plotlydoubleclick(event: plotly_doubleclick, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyevent(event: plotly_event, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyframework(event: plotly_framework, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyhover(event: plotly_hover, callback: js.Function1[/* event */ PlotMouseEvent, Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlylegendclick(event: plotly_legendclick, callback: js.Function1[/* event */ LegendClickEvent, Boolean]): Unit = js.native
-  @JSName("on")
-  def on_plotlylegenddoubleclick(event: plotly_legenddoubleclick, callback: js.Function1[/* event */ LegendClickEvent, Boolean]): Unit = js.native
-  @JSName("on")
-  def on_plotlyredraw(event: plotly_redraw, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyrelayout(event: plotly_relayout, callback: js.Function1[/* event */ PlotRelayoutEvent, Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyrelayouting(event: plotly_relayouting, callback: js.Function1[/* event */ PlotRelayoutEvent, Unit]): Unit = js.native
+  def on_plotlyhover(event: plotly_hover, callback: js.Function1[/* event */ PlotHoverEvent, Unit]): Unit = js.native
   @JSName("on")
   def on_plotlyrestyle(event: plotly_restyle, callback: js.Function1[/* data */ PlotRestyleEvent, Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyselected(event: plotly_selected, callback: js.Function1[/* event */ PlotSelectionEvent, Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyselecting(event: plotly_selecting, callback: js.Function1[/* event */ PlotSelectionEvent, Unit]): Unit = js.native
   @JSName("on")
   def on_plotlysliderchange(event: plotly_sliderchange, callback: js.Function1[/* event */ SliderChangeEvent, Unit]): Unit = js.native
   @JSName("on")
@@ -104,12 +81,6 @@ trait PlotlyHTMLElement
   def on_plotlysliderstart(event: plotly_sliderstart, callback: js.Function1[/* event */ SliderStartEvent, Unit]): Unit = js.native
   @JSName("on")
   def on_plotlysunburstclick(event: plotly_sunburstclick, callback: js.Function1[/* event */ SunburstClickEvent, Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlytransitioning(event: plotly_transitioning, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlytransitioninterrupted(event: plotly_transitioninterrupted, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_plotlyunhover(event: plotly_unhover, callback: js.Function1[/* event */ PlotMouseEvent, Unit]): Unit = js.native
   
   def removeAllListeners(handler: String): Unit = js.native
   

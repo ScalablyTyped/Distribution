@@ -27,7 +27,7 @@ trait CreateAnalyzerRequest extends StObject {
   var tags: js.UndefOr[TagsMap] = js.undefined
   
   /**
-    * The type of analyzer to create. Only ACCOUNT analyzers are supported. You can create only one analyzer per account per Region.
+    * The type of analyzer to create. Only ACCOUNT and ORGANIZATION analyzers are supported. You can create only one analyzer per account per Region. You can create up to 5 analyzers per organization per Region.
     */
   var `type`: Type
 }
@@ -47,7 +47,7 @@ object CreateAnalyzerRequest {
     
     inline def setArchiveRulesUndefined: Self = StObject.set(x, "archiveRules", js.undefined)
     
-    inline def setArchiveRulesVarargs(value: InlineArchiveRule*): Self = StObject.set(x, "archiveRules", js.Array(value :_*))
+    inline def setArchiveRulesVarargs(value: InlineArchiveRule*): Self = StObject.set(x, "archiveRules", js.Array(value*))
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

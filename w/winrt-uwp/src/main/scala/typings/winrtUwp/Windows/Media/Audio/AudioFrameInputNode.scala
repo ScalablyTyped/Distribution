@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AudioFrameInputNode extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_audioframecompleted(
     `type`: audioframecompleted,
@@ -99,7 +99,7 @@ trait AudioFrameInputNode extends StObject {
   /** Gets the queued sample count for the audio frame input node. */
   var queuedSampleCount: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_audioframecompleted(
     `type`: audioframecompleted,

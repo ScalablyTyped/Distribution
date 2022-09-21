@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stylable/code-formatter" : "5.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stylable/code-formatter" : "5.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

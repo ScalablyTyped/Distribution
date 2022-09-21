@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "comma-separated-tokens" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "comma-separated-tokens" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

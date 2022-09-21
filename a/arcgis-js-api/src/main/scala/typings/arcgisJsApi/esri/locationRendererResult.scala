@@ -32,7 +32,7 @@ trait locationRendererResult
   var locationScheme: LocationScheme
   
   /**
-    * A simple renderer configured with a single color best suited to match the given basemap.
+    * A simple renderer configured with a single color best suited to match the background of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html#RendererResult)
     */

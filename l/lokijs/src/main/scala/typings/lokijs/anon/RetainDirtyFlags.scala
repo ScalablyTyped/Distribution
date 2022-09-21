@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RetainDirtyFlags
   extends StObject
-     with /* collName */ StringDictionary[js.Any | Inflate] {
+     with /* collName */ StringDictionary[Any | Inflate] {
   
   var retainDirtyFlags: js.UndefOr[Boolean] = js.undefined
   

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object rtrimMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, charlist: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(str: Any): Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(str: Any, charlist: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, charlist: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], charlist.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/rtrim", JSImport.Namespace)
   @js.native

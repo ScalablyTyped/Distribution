@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cordova-plugin-file" : "6.0.2"
+      "cordova-plugin-file" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cordova-plugin-file" : "6.0.2"
+      "cordova-plugin-file" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

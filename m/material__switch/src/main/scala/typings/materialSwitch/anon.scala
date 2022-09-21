@@ -52,7 +52,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@material/switch.@material/switch/adapter.MDCSwitchAdapter> */
+  /* Inlined std.Partial<@material/switch.@material/switch/deprecated/adapter.MDCSwitchAdapter> */
   trait PartialMDCSwitchAdapter extends StObject {
     
     var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined

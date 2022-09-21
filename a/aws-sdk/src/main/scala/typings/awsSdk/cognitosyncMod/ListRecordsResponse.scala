@@ -84,7 +84,7 @@ object ListRecordsResponse {
     
     inline def setMergedDatasetNamesUndefined: Self = StObject.set(x, "MergedDatasetNames", js.undefined)
     
-    inline def setMergedDatasetNamesVarargs(value: String*): Self = StObject.set(x, "MergedDatasetNames", js.Array(value :_*))
+    inline def setMergedDatasetNamesVarargs(value: String*): Self = StObject.set(x, "MergedDatasetNames", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object ListRecordsResponse {
     
     inline def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
     
-    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value*))
     
     inline def setSyncSessionToken(value: String): Self = StObject.set(x, "SyncSessionToken", value.asInstanceOf[js.Any])
     

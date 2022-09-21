@@ -27,7 +27,7 @@ object ActiveXObject {
   
   inline def apply(
     on: (DeviceManager, OnEvent, js.Tuple3[EventID, DeviceID, ItemID], js.ThisFunction1[/* this */ DeviceManager, /* parameter */ typings.activexWia.anon.DeviceID, Unit]) => Unit,
-    set: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit
+    set: (Vector[Any], Item, js.Array[Double], Any) => Unit
   ): ActiveXObject = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on), set = js.Any.fromFunction4(set))
     __obj.asInstanceOf[ActiveXObject]
@@ -39,6 +39,6 @@ object ActiveXObject {
       value: (DeviceManager, OnEvent, js.Tuple3[EventID, DeviceID, ItemID], js.ThisFunction1[/* this */ DeviceManager, /* parameter */ typings.activexWia.anon.DeviceID, Unit]) => Unit
     ): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
     
-    inline def setSet(value: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    inline def setSet(value: (Vector[Any], Item, js.Array[Double], Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
   }
 }

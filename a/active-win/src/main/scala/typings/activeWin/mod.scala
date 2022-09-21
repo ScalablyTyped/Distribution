@@ -15,9 +15,9 @@ object mod {
   	@returns The active window metadata.
   	@example
   	```
-  	import activeWin = require('active-win');
+  	import activeWindow = require('active-win');
   	(async () => {
-  		const result = await activeWin();
+  		const result = await activeWindow();
   		if (!result) {
   			return;
   		}
@@ -33,6 +33,7 @@ object mod {
   	```
   	*/
   inline def apply(): js.Promise[js.UndefOr[Result]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[Result]]]
+  inline def apply(options: Options): js.Promise[js.UndefOr[Result]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Result]]]
   
   @JSImport("active-win", JSImport.Namespace)
   @js.native
@@ -43,8 +44,8 @@ object mod {
   	@returns The active window metadata.
   	@example
   	```
-  	import activeWin = require('active-win');
-  	const result = activeWin.sync();
+  	import activeWindow = require('active-win');
+  	const result = activeWindow.sync();
   	if (result) {
   		if (result.platform === 'macos') {
   			// Among other fields, result.owner.bundleId is available on macOS.
@@ -58,6 +59,7 @@ object mod {
   	```
   	*/
   inline def sync(): js.UndefOr[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[Result]]
+  inline def sync(options: Options): js.UndefOr[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Result]]
   
   trait BaseOwner extends StObject {
     
@@ -169,18 +171,18 @@ object mod {
     /**
     		Bundle identifier.
     		*/
-    var bundleId: Double
+    var bundleId: String
   }
   object MacOSOwner {
     
-    inline def apply(bundleId: Double, name: String, path: String, processId: Double): MacOSOwner = {
+    inline def apply(bundleId: String, name: String, path: String, processId: Double): MacOSOwner = {
       val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any])
       __obj.asInstanceOf[MacOSOwner]
     }
     
     extension [Self <: MacOSOwner](x: Self) {
       
-      inline def setBundleId(value: Double): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,7 +197,7 @@ object mod {
     var platform: macos
     
     /**
-    		URL of the active browser tab if the active window is Safari, Chrome, Edge, or Brave.
+    		URL of the active browser tab if the active window is Safari (includes Technology Preview), Chrome (includes Beta, Dev, and Canary), Edge (includes Beta, Dev, and Canary), Brave (includes Beta and Nightly), Mighty, Ghost Browser, WaveBox, Sidekick, Opera (includes Beta and Developer), or Vivaldi.
     		*/
     var url: js.UndefOr[String] = js.undefined
   }
@@ -215,6 +217,28 @@ object mod {
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    }
+  }
+  
+  trait Options extends StObject {
+    
+    /**
+    		Enable the screen recording permission check. _(macOS)_
+    		Setting this to `false` will prevent the screen recording permission prompt on macOS versions 10.15 and newer. The `title` property in the result will always be set to an empty string.
+    		@default true
+    		*/
+    val screenRecordingPermission: Boolean
+  }
+  object Options {
+    
+    inline def apply(screenRecordingPermission: Boolean): Options = {
+      val __obj = js.Dynamic.literal(screenRecordingPermission = screenRecordingPermission.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setScreenRecordingPermission(value: Boolean): Self = StObject.set(x, "screenRecordingPermission", value.asInstanceOf[js.Any])
     }
   }
   

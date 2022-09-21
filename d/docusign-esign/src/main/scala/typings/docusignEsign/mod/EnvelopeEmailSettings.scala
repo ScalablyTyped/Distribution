@@ -47,7 +47,7 @@ object EnvelopeEmailSettings {
     
     inline def setBccEmailAddressesUndefined: Self = StObject.set(x, "bccEmailAddresses", js.undefined)
     
-    inline def setBccEmailAddressesVarargs(value: (/* Contains information about the BCC email address. */ BccEmailAddress)*): Self = StObject.set(x, "bccEmailAddresses", js.Array(value :_*))
+    inline def setBccEmailAddressesVarargs(value: (/* Contains information about the BCC email address. */ BccEmailAddress)*): Self = StObject.set(x, "bccEmailAddresses", js.Array(value*))
     
     inline def setReplyEmailAddressOverride(value: String): Self = StObject.set(x, "replyEmailAddressOverride", value.asInstanceOf[js.Any])
     

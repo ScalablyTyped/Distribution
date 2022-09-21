@@ -22,7 +22,7 @@ trait Width extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color
     */
-  var color: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var color: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Opacity of the component.
@@ -91,11 +91,11 @@ object Width {
   
   extension [Self <: Width](x: Self) {
     
-    inline def setColor(value: js.Array[js.Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Array[Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: js.Any*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Any*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

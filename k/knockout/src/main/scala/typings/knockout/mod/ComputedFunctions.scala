@@ -14,7 +14,7 @@ trait ComputedFunctions[T] extends SubscribableFunctions[T] {
   def equalityComparer(a: T, b: T): Boolean = js.native
   def equalityComparer(a: Unit, b: T): Boolean = js.native
   
-  def getDependencies(): js.Array[Subscribable_[js.Any]] = js.native
+  def getDependencies(): js.Array[Subscribable_[Any]] = js.native
   
   def getDependenciesCount(): Double = js.native
   

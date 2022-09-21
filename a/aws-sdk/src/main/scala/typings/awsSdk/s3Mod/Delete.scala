@@ -27,7 +27,7 @@ object Delete {
     
     inline def setObjects(value: ObjectIdentifierList): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
     
-    inline def setObjectsVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value*))
     
     inline def setQuiet(value: Quiet): Self = StObject.set(x, "Quiet", value.asInstanceOf[js.Any])
     

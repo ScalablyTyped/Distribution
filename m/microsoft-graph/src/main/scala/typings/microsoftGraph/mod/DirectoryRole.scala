@@ -8,22 +8,23 @@ trait DirectoryRole
   extends StObject
      with DirectoryObject {
   
-  // The description for the directory role. Read-only.
+  // The description for the directory role. Read-only. Supports $filter (eq), $search, $select.
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The display name for the directory role. Read-only.
+  // The display name for the directory role. Read-only. Supports $filter (eq), $search, $select.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable.
+  // Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
   var members: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * The id of the directoryRoleTemplate that this role is based on. The property must be specified when activating a
     * directory role in a tenant with a POST operation. After the directory role has been activated, the property is read
-    * only.
+    * only. Supports $filter (eq), $select.
     */
   var roleTemplateId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Members of this directory role that are scoped to administrative units. Read-only. Nullable.
   var scopedMembers: js.UndefOr[NullableOption[js.Array[ScopedRoleMembership]]] = js.undefined
 }
 object DirectoryRole {
@@ -53,7 +54,7 @@ object DirectoryRole {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setRoleTemplateId(value: NullableOption[String]): Self = StObject.set(x, "roleTemplateId", value.asInstanceOf[js.Any])
     
@@ -67,6 +68,6 @@ object DirectoryRole {
     
     inline def setScopedMembersUndefined: Self = StObject.set(x, "scopedMembers", js.undefined)
     
-    inline def setScopedMembersVarargs(value: ScopedRoleMembership*): Self = StObject.set(x, "scopedMembers", js.Array(value :_*))
+    inline def setScopedMembersVarargs(value: ScopedRoleMembership*): Self = StObject.set(x, "scopedMembers", js.Array(value*))
   }
 }

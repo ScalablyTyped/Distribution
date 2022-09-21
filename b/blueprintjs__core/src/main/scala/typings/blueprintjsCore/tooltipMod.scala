@@ -1,6 +1,6 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.anon.PartialITooltipProps
+import typings.blueprintjsCore.anon.PartialTooltipProps
 import typings.blueprintjsCore.blueprintjsCoreStrings.`hover-target`
 import typings.blueprintjsCore.blueprintjsCoreStrings.hover
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
@@ -15,12 +15,12 @@ object tooltipMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/tooltip/tooltip", "Tooltip")
   @js.native
-  class Tooltip protected ()
-    extends AbstractPureComponent2[ITooltipProps, js.Object, js.Object] {
-    def this(props: ITooltipProps) = this()
-    def this(props: ITooltipProps, context: js.Any) = this()
+  open class Tooltip protected ()
+    extends AbstractPureComponent2[TooltipProps, js.Object, js.Object] {
+    def this(props: TooltipProps) = this()
+    def this(props: TooltipProps, context: Any) = this()
     
-    /* private */ var popover: js.Any = js.native
+    /* private */ var popover: Any = js.native
     
     def reposition(): Unit = js.native
   }
@@ -33,8 +33,8 @@ object tooltipMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/tooltip/tooltip", "Tooltip.defaultProps")
     @js.native
-    def defaultProps: PartialITooltipProps = js.native
-    inline def defaultProps_=(x: PartialITooltipProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialTooltipProps = js.native
+    inline def defaultProps_=(x: PartialTooltipProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/tooltip/tooltip", "Tooltip.displayName")
     @js.native
@@ -55,6 +55,7 @@ object tooltipMod {
     /**
       * The kind of hover interaction that triggers the display of the tooltip.
       * Tooltips do not support click interactions.
+      *
       * @default PopoverInteractionKind.HOVER_TARGET_ONLY
       */
     var interactionKind: js.UndefOr[hover | `hover-target`] = js.undefined
@@ -75,4 +76,6 @@ object tooltipMod {
       inline def setInteractionKindUndefined: Self = StObject.set(x, "interactionKind", js.undefined)
     }
   }
+  
+  type TooltipProps = ITooltipProps
 }

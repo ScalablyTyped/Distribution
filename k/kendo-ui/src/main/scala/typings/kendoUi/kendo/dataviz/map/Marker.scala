@@ -11,7 +11,7 @@ trait Marker
      with Observable {
   
   def location(): Location = js.native
-  def location(location: js.Any): Unit = js.native
+  def location(location: Any): Unit = js.native
   def location(location: Location): Unit = js.native
   
   var options: MarkerOptions = js.native

@@ -11,9 +11,9 @@ Support for representing 64-bit integers in JavaScript
 | Full name          | node-int64 |
 | Keywords           | math, integer, int64 |
 | # releases         | 1 |
-| # dependents       | 191 |
-| # downloads        | 378869748 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4575221666666664E7 |
+| # stars            | 199.0 |
 
 ## Links
 - [Homepage](https://github.com/broofa/node-int64)

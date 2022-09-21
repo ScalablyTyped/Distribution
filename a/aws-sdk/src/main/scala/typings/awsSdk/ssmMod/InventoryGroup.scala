@@ -27,7 +27,7 @@ object InventoryGroup {
     
     inline def setFilters(value: InventoryFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: InventoryFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: InventoryFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setName(value: InventoryGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

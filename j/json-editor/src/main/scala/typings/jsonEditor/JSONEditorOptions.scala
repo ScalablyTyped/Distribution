@@ -89,7 +89,7 @@ trait JSONEditorOptions[TValue] extends StObject {
   /**
     * An object containing schema definitions for URLs. Allows you to pre-define external schemas.
     */
-  var refs: js.UndefOr[js.Any] = js.undefined
+  var refs: js.UndefOr[Any] = js.undefined
   
   /**
     * If true, all schemas that don't explicitly set the required property will be required.
@@ -99,7 +99,7 @@ trait JSONEditorOptions[TValue] extends StObject {
   /**
     * A valid JSON Schema to use for the editor. Version 3 and Version 4 of the draft specification are supported.
     */
-  var schema: js.UndefOr[js.Any] = js.undefined
+  var schema: js.UndefOr[Any] = js.undefined
   
   /**
     * When to show validation errors in the UI. Valid values are interaction, change, always, and never.
@@ -182,7 +182,7 @@ object JSONEditorOptions {
     
     inline def setNo_additional_propertiesUndefined: Self = StObject.set(x, "no_additional_properties", js.undefined)
     
-    inline def setRefs(value: js.Any): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+    inline def setRefs(value: Any): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
     inline def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
     
@@ -190,7 +190,7 @@ object JSONEditorOptions {
     
     inline def setRequired_by_defaultUndefined: Self = StObject.set(x, "required_by_default", js.undefined)
     
-    inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     

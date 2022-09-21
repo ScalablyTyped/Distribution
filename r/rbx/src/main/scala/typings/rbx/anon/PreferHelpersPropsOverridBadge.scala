@@ -83,7 +83,7 @@ trait PreferHelpersPropsOverridBadge extends StObject {
   
   var relative: js.UndefOr[Boolean] = js.undefined
   
-  var responsive: js.UndefOr[typings.rbx.rbxStrings.PreferHelpersPropsOverridBadge & TopLevel[js.Any]] = js.undefined
+  var responsive: js.UndefOr[typings.rbx.rbxStrings.PreferHelpersPropsOverridBadge & TopLevel[Any]] = js.undefined
   
   var shadowless: js.UndefOr[Boolean] = js.undefined
   
@@ -118,7 +118,7 @@ trait PreferHelpersPropsOverridBadge extends StObject {
   var tooltipResponsive: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-    */ typings.rbx.rbxStrings.PreferHelpersPropsOverridBadge & TopLevel[js.Any]
+    */ typings.rbx.rbxStrings.PreferHelpersPropsOverridBadge & TopLevel[Any]
   ] = js.undefined
   
   var unselectable: js.UndefOr[Boolean] = js.undefined
@@ -206,7 +206,7 @@ object PreferHelpersPropsOverridBadge {
     
     inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
     
-    inline def setResponsive(value: typings.rbx.rbxStrings.PreferHelpersPropsOverridBadge & TopLevel[js.Any]): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    inline def setResponsive(value: typings.rbx.rbxStrings.PreferHelpersPropsOverridBadge & TopLevel[Any]): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
@@ -263,7 +263,7 @@ object PreferHelpersPropsOverridBadge {
     inline def setTooltipResponsive(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-      */ typings.rbx.rbxStrings.PreferHelpersPropsOverridBadge & TopLevel[js.Any]
+      */ typings.rbx.rbxStrings.PreferHelpersPropsOverridBadge & TopLevel[Any]
     ): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
     
     inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)

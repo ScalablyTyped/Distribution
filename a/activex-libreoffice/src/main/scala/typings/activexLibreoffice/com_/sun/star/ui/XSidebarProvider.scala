@@ -57,7 +57,7 @@ object XSidebarProvider {
     getFrame: () => XFrame,
     getSidebar: () => XSidebar,
     isVisible: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setVisible: Boolean => Unit,
     showDecks: Boolean => Unit

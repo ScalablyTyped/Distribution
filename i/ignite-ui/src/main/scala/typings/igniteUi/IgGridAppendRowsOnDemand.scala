@@ -11,7 +11,7 @@ trait IgGridAppendRowsOnDemand
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Denotes the name of the encoded URL parameter that will state what is the currently requested chunk index

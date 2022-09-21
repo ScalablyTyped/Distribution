@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.anon
 
-import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaIosAppDataStream
+import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaCustomDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait NameOauthtoken extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. Resource name of this Data Stream. Format: properties/{property_id}/iosAppDataStreams/{stream_id} Example: "properties/1000/iosAppDataStreams/2000" */
+  /** Output only. Resource name for this CustomDimension resource. Format: properties/{property}/customDimensions/{customDimension} */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,9 +39,9 @@ trait NameOauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleAnalyticsAdminV1alphaIosAppDataStream
+  var resource: GoogleAnalyticsAdminV1alphaCustomDimension
   
-  /** The list of fields to be updated. Omitted fields will not be updated. */
+  /** Required. The list of fields to be updated. Omitted fields will not be updated. To replace the entire entity, use one path with the string "*" to match all fields. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -52,7 +52,7 @@ trait NameOauthtoken extends StObject {
 }
 object NameOauthtoken {
   
-  inline def apply(name: String, resource: GoogleAnalyticsAdminV1alphaIosAppDataStream): NameOauthtoken = {
+  inline def apply(name: String, resource: GoogleAnalyticsAdminV1alphaCustomDimension): NameOauthtoken = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameOauthtoken]
   }
@@ -97,7 +97,7 @@ object NameOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleAnalyticsAdminV1alphaIosAppDataStream): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleAnalyticsAdminV1alphaCustomDimension): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

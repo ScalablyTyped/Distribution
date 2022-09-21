@@ -58,7 +58,7 @@ trait Matrix extends StObject {
     *
     * @return {any} An object { rows: , cols: }.
     */
-  def dimensions(): js.Any = js.native
+  def dimensions(): Any = js.native
   
   /**
     * Returns a copy of the matrix.
@@ -71,7 +71,7 @@ trait Matrix extends StObject {
     * @param {number} i The row index.
     * @param {number} j The column index.
     */
-  def e(i: Double, j: Double): js.Any = js.native
+  def e(i: Double, j: Double): Any = js.native
   
   /**
     * Gets a nested array containing the matrix's elements.
@@ -94,7 +94,7 @@ trait Matrix extends StObject {
     *
     * @return {any} The element indeces i.e: { row:1, col:1 }
     */
-  def indexOf(x: Double): js.Any = js.native
+  def indexOf(x: Double): Any = js.native
   
   /**
     * Returns a string representation of the matrix.
@@ -130,7 +130,7 @@ trait Matrix extends StObject {
     *
     * @param {Function} fn The function.
     */
-  def map(fn: js.Function3[/* x */ Double, /* i */ Double, /* j */ Double, js.Any]): Matrix = js.native
+  def map(fn: js.Function3[/* x */ Double, /* i */ Double, /* j */ Double, Any]): Matrix = js.native
   
   /**
     * Returns the (absolute) largest element of the matrix.

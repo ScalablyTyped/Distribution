@@ -9,7 +9,7 @@ trait ICodeEditorViewState
   extends StObject
      with IEditorViewState {
   
-  var contributionsState: StringDictionary[js.Any]
+  var contributionsState: StringDictionary[Any]
   
   var cursorState: js.Array[ICursorState]
   
@@ -18,7 +18,7 @@ trait ICodeEditorViewState
 object ICodeEditorViewState {
   
   inline def apply(
-    contributionsState: StringDictionary[js.Any],
+    contributionsState: StringDictionary[Any],
     cursorState: js.Array[ICursorState],
     viewState: IViewState
   ): ICodeEditorViewState = {
@@ -28,11 +28,11 @@ object ICodeEditorViewState {
   
   extension [Self <: ICodeEditorViewState](x: Self) {
     
-    inline def setContributionsState(value: StringDictionary[js.Any]): Self = StObject.set(x, "contributionsState", value.asInstanceOf[js.Any])
+    inline def setContributionsState(value: StringDictionary[Any]): Self = StObject.set(x, "contributionsState", value.asInstanceOf[js.Any])
     
     inline def setCursorState(value: js.Array[ICursorState]): Self = StObject.set(x, "cursorState", value.asInstanceOf[js.Any])
     
-    inline def setCursorStateVarargs(value: ICursorState*): Self = StObject.set(x, "cursorState", js.Array(value :_*))
+    inline def setCursorStateVarargs(value: ICursorState*): Self = StObject.set(x, "cursorState", js.Array(value*))
     
     inline def setViewState(value: IViewState): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
   }

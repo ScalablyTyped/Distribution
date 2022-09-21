@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object weekdayMod {
   
-  @JSImport("rrule/dist/esm/src/weekday", "ALL_WEEKDAYS")
+  @JSImport("rrule/dist/esm/weekday", "ALL_WEEKDAYS")
   @js.native
   val ALL_WEEKDAYS: js.Array[WeekdayStr] = js.native
   
-  @JSImport("rrule/dist/esm/src/weekday", "Weekday")
+  @JSImport("rrule/dist/esm/weekday", "Weekday")
   @js.native
-  class Weekday protected ()
+  open class Weekday protected ()
     extends StObject
        with _ByWeekday {
     def this(weekday: Double) = this()
@@ -32,7 +32,7 @@ object weekdayMod {
   /* static members */
   object Weekday {
     
-    @JSImport("rrule/dist/esm/src/weekday", "Weekday")
+    @JSImport("rrule/dist/esm/weekday", "Weekday")
     @js.native
     val ^ : js.Any = js.native
     

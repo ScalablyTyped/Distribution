@@ -16,7 +16,7 @@ object previewerMod {
   
   @JSImport("@wordpress/customize-browser/Previewer", "Previewer")
   @js.native
-  class Previewer[T] protected () extends Messenger[T] {
+  open class Previewer[T] protected () extends Messenger[T] {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
@@ -35,7 +35,7 @@ object previewerMod {
     
     def keepPreviewAlive(): Unit = js.native
     
-    def login(): Promise[js.Any, js.Any, js.Any] = js.native
+    def login(): Promise[Any, Any, Any] = js.native
     
     var previewUrl: Value[String] = js.native
     
@@ -47,35 +47,35 @@ object previewerMod {
     
     var refreshBuffer: Null | Double = js.native
     
-    def refreshNonces(): Deferred[js.Any, js.Any, js.Any] = js.native
+    def refreshNonces(): Deferred[Any, Any, Any] = js.native
   }
   
   trait PreviewerData extends StObject {
     
     // TODO
-    var activeControls: js.Any
+    var activeControls: Any
     
-    var activePanels: js.Any
+    var activePanels: Any
     
     // TODO
-    var activeSections: js.Any
+    var activeSections: Any
     
     var currentUrl: String
   }
   object PreviewerData {
     
-    inline def apply(activeControls: js.Any, activePanels: js.Any, activeSections: js.Any, currentUrl: String): PreviewerData = {
+    inline def apply(activeControls: Any, activePanels: Any, activeSections: Any, currentUrl: String): PreviewerData = {
       val __obj = js.Dynamic.literal(activeControls = activeControls.asInstanceOf[js.Any], activePanels = activePanels.asInstanceOf[js.Any], activeSections = activeSections.asInstanceOf[js.Any], currentUrl = currentUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviewerData]
     }
     
     extension [Self <: PreviewerData](x: Self) {
       
-      inline def setActiveControls(value: js.Any): Self = StObject.set(x, "activeControls", value.asInstanceOf[js.Any])
+      inline def setActiveControls(value: Any): Self = StObject.set(x, "activeControls", value.asInstanceOf[js.Any])
       
-      inline def setActivePanels(value: js.Any): Self = StObject.set(x, "activePanels", value.asInstanceOf[js.Any])
+      inline def setActivePanels(value: Any): Self = StObject.set(x, "activePanels", value.asInstanceOf[js.Any])
       
-      inline def setActiveSections(value: js.Any): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
+      inline def setActiveSections(value: Any): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
       
       inline def setCurrentUrl(value: String): Self = StObject.set(x, "currentUrl", value.asInstanceOf[js.Any])
     }
@@ -83,18 +83,18 @@ object previewerMod {
   
   trait PreviewerDeferred extends StObject {
     
-    var active: Deferred[js.Any, js.Any, js.Any]
+    var active: Deferred[Any, Any, Any]
   }
   object PreviewerDeferred {
     
-    inline def apply(active: Deferred[js.Any, js.Any, js.Any]): PreviewerDeferred = {
+    inline def apply(active: Deferred[Any, Any, Any]): PreviewerDeferred = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviewerDeferred]
     }
     
     extension [Self <: PreviewerDeferred](x: Self) {
       
-      inline def setActive(value: Deferred[js.Any, js.Any, js.Any]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Deferred[Any, Any, Any]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,7 +102,7 @@ object previewerMod {
     extends StObject
        with MessengerParams {
     
-    var allowedUrls: js.Array[js.Any]
+    var allowedUrls: js.Array[Any]
     
     // TODO
     var container: String
@@ -114,7 +114,7 @@ object previewerMod {
   object PreviewerParams {
     
     inline def apply(
-      allowedUrls: js.Array[js.Any],
+      allowedUrls: js.Array[Any],
       channel: String,
       container: String,
       form: String,
@@ -128,9 +128,9 @@ object previewerMod {
     
     extension [Self <: PreviewerParams](x: Self) {
       
-      inline def setAllowedUrls(value: js.Array[js.Any]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
+      inline def setAllowedUrls(value: js.Array[Any]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
       
-      inline def setAllowedUrlsVarargs(value: js.Any*): Self = StObject.set(x, "allowedUrls", js.Array(value :_*))
+      inline def setAllowedUrlsVarargs(value: Any*): Self = StObject.set(x, "allowedUrls", js.Array(value*))
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

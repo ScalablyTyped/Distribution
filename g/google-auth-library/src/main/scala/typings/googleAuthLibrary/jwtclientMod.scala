@@ -3,12 +3,12 @@ package typings.googleAuthLibrary
 import typings.googleAuthLibrary.credentialsMod.CredentialBody
 import typings.googleAuthLibrary.credentialsMod.Credentials
 import typings.googleAuthLibrary.credentialsMod.JWTInput
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleAuthLibrary.idtokenclientMod.IdTokenProvider
 import typings.googleAuthLibrary.oauth2clientMod.OAuth2Client
 import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
 import typings.gtoken.mod.GoogleToken
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +17,10 @@ object jwtclientMod {
   
   @JSImport("google-auth-library/build/src/auth/jwtclient", "JWT")
   @js.native
-  class JWT protected ()
+  open class JWT protected ()
     extends OAuth2Client
-       with IdTokenProvider {
+       with IdTokenProvider
+       with JSONClient {
     /**
       * JWT service account credentials.
       *
@@ -42,7 +43,7 @@ object jwtclientMod {
       keyId: js.UndefOr[String]
     ) = this()
     
-    /* private */ var access: js.Any = js.native
+    /* private */ var access: Any = js.native
     
     var additionalClaims: js.UndefOr[js.Object] = js.native
     
@@ -52,14 +53,14 @@ object jwtclientMod {
       * @returns Promise that resolves with credentials
       */
     def authorize(): js.Promise[Credentials] = js.native
-    def authorize(callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[Credentials], Unit]): Unit = js.native
+    def authorize(callback: js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Credentials], Unit]): Unit = js.native
     
-    /* private */ var authorizeAsync: js.Any = js.native
+    /* private */ var authorizeAsync: Any = js.native
     
     /**
       * Create a gToken if it doesn't already exist.
       */
-    /* private */ var createGToken: js.Any = js.native
+    /* private */ var createGToken: Any = js.native
     
     /**
       * Creates a copy of the credential with the specified scopes.
@@ -71,6 +72,8 @@ object jwtclientMod {
     def createScoped(scopes: js.Array[String]): JWT = js.native
     
     var defaultScopes: js.UndefOr[String | js.Array[String]] = js.native
+    
+    var defaultServicePath: js.UndefOr[String] = js.native
     
     var email: js.UndefOr[String] = js.native
     
@@ -95,9 +98,9 @@ object jwtclientMod {
       * @param callback Optional callback.
       */
     def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
-    def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
-    /* private */ var fromStreamAsync: js.Any = js.native
+    /* private */ var fromStreamAsync: Any = js.native
     
     /**
       * Using the key or keyFile on the JWT client, obtain an object that contains
@@ -110,12 +113,12 @@ object jwtclientMod {
     /**
       * Are there any default or user scopes defined.
       */
-    /* private */ var hasAnyScopes: js.Any = js.native
+    /* private */ var hasAnyScopes: Any = js.native
     
     /**
       * Determine if there are currently scopes available.
       */
-    /* private */ var hasUserScopes: js.Any = js.native
+    /* private */ var hasUserScopes: Any = js.native
     
     var key: js.UndefOr[String] = js.native
     
@@ -128,6 +131,8 @@ object jwtclientMod {
     var scopes: js.UndefOr[String | js.Array[String]] = js.native
     
     var subject: js.UndefOr[String] = js.native
+    
+    var useJWTAccessWithScope: js.UndefOr[Boolean] = js.native
   }
   
   trait JWTOptions
@@ -181,7 +186,7 @@ object jwtclientMod {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       

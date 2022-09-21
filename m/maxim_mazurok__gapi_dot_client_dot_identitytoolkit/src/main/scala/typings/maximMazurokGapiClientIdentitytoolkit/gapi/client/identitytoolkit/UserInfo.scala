@@ -129,7 +129,7 @@ object UserInfo {
     
     inline def setProviderUserInfoUndefined: Self = StObject.set(x, "providerUserInfo", js.undefined)
     
-    inline def setProviderUserInfoVarargs(value: Email*): Self = StObject.set(x, "providerUserInfo", js.Array(value :_*))
+    inline def setProviderUserInfoVarargs(value: Email*): Self = StObject.set(x, "providerUserInfo", js.Array(value*))
     
     inline def setRawPassword(value: String): Self = StObject.set(x, "rawPassword", value.asInstanceOf[js.Any])
     

@@ -3,7 +3,6 @@ package typings.rsocketCore
 import typings.rsocketFlowable.mod.Flowable
 import typings.rsocketTypes.reactiveSocketTypesMod.Encodable
 import typings.rsocketTypes.reactiveSocketTypesMod.LeaseFrame
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object rsocketleaseMod {
   
   @JSImport("rsocket-core/RSocketLease", "Lease")
   @js.native
-  class Lease protected () extends StObject {
+  open class Lease protected () extends StObject {
     def this(timeToLiveMillis: Double, allowedRequests: Double) = this()
     def this(timeToLiveMillis: Double, allowedRequests: Double, metadata: Encodable) = this()
     
@@ -33,7 +32,7 @@ object rsocketleaseMod {
   
   @JSImport("rsocket-core/RSocketLease", "Leases")
   @js.native
-  class Leases[T /* <: LeaseStats */] () extends StObject {
+  open class Leases[T /* <: LeaseStats */] () extends StObject {
     
     def receiver(receiver: js.Function1[/* flowable */ Flowable[Lease], Unit]): Leases[T] = js.native
     
@@ -44,7 +43,7 @@ object rsocketleaseMod {
   
   @JSImport("rsocket-core/RSocketLease", "RequesterLeaseHandler")
   @js.native
-  class RequesterLeaseHandler protected ()
+  open class RequesterLeaseHandler protected ()
     extends StObject
        with LeaseHandler
        with Disposable {
@@ -69,7 +68,7 @@ object rsocketleaseMod {
   
   @JSImport("rsocket-core/RSocketLease", "ResponderLeaseHandler")
   @js.native
-  class ResponderLeaseHandler protected ()
+  open class ResponderLeaseHandler protected ()
     extends StObject
        with LeaseHandler {
     def this(leaseSender: js.Function1[/* leaseStats */ js.UndefOr[LeaseStats], Flowable[Lease]]) = this()
@@ -80,12 +79,12 @@ object rsocketleaseMod {
     def this(
       leaseSender: js.Function1[/* leaseStats */ js.UndefOr[LeaseStats], Flowable[Lease]],
       stats: Unit,
-      errorConsumer: js.Function1[/* e */ Error, Unit]
+      errorConsumer: js.Function1[/* e */ js.Error, Unit]
     ) = this()
     def this(
       leaseSender: js.Function1[/* leaseStats */ js.UndefOr[LeaseStats], Flowable[Lease]],
       stats: LeaseStats,
-      errorConsumer: js.Function1[/* e */ Error, Unit]
+      errorConsumer: js.Function1[/* e */ js.Error, Unit]
     ) = this()
     
     /* CompleteClass */

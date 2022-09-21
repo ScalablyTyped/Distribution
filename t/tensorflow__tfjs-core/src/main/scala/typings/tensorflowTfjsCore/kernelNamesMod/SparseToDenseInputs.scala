@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'sparseIndices' | 'sparseValues' | 'defaultValue'> */
 trait SparseToDenseInputs extends StObject {
   
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[scala.Any] = js.undefined
   
-  var sparseIndices: js.UndefOr[js.Any] = js.undefined
+  var sparseIndices: js.UndefOr[scala.Any] = js.undefined
   
-  var sparseValues: js.UndefOr[js.Any] = js.undefined
+  var sparseValues: js.UndefOr[scala.Any] = js.undefined
 }
 object SparseToDenseInputs {
   
@@ -22,15 +22,15 @@ object SparseToDenseInputs {
   
   extension [Self <: SparseToDenseInputs](x: Self) {
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: scala.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setSparseIndices(value: js.Any): Self = StObject.set(x, "sparseIndices", value.asInstanceOf[js.Any])
+    inline def setSparseIndices(value: scala.Any): Self = StObject.set(x, "sparseIndices", value.asInstanceOf[js.Any])
     
     inline def setSparseIndicesUndefined: Self = StObject.set(x, "sparseIndices", js.undefined)
     
-    inline def setSparseValues(value: js.Any): Self = StObject.set(x, "sparseValues", value.asInstanceOf[js.Any])
+    inline def setSparseValues(value: scala.Any): Self = StObject.set(x, "sparseValues", value.asInstanceOf[js.Any])
     
     inline def setSparseValuesUndefined: Self = StObject.set(x, "sparseValues", js.undefined)
   }

@@ -9,7 +9,7 @@ object retryStrategyMod {
   
   @JSImport("babylonjs/Misc/retryStrategy", "RetryStrategy")
   @js.native
-  class RetryStrategy () extends StObject
+  open class RetryStrategy () extends StObject
   /* static members */
   object RetryStrategy {
     

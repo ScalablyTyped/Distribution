@@ -1,11 +1,9 @@
 package typings.node.tlsMod
 
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
-import typings.node.netMod.Socket
-import typings.std.Error
+import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +14,9 @@ trait ConnectionOptions
      with CommonConnectionOptions {
   
   // Establish secure connection on a given socket rather than creating a new socket
-  var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.undefined
+  var checkServerIdentity: js.UndefOr[
+    js.Function2[/* hostname */ String, /* cert */ PeerCertificate, js.UndefOr[js.Error]]
+  ] = js.undefined
   
   var host: js.UndefOr[String] = js.undefined
   
@@ -53,7 +53,7 @@ trait ConnectionOptions
   var session: js.UndefOr[Buffer] = js.undefined
   
   // Creates unix socket connection to path. If this option is specified, `host` and `port` are ignored.
-  var socket: js.UndefOr[Socket] = js.undefined
+  var socket: js.UndefOr[Duplex] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
 }
@@ -66,7 +66,7 @@ object ConnectionOptions {
   
   extension [Self <: ConnectionOptions](x: Self) {
     
-    inline def setCheckServerIdentity(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+    inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
     
     inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
     
@@ -75,7 +75,12 @@ object ConnectionOptions {
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* address */ String, 
+          /* family */ Double, 
+          Unit
+        ]) => Unit
     ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
@@ -104,7 +109,7 @@ object ConnectionOptions {
     
     inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: Duplex): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
     

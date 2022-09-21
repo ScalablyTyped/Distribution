@@ -10,10 +10,10 @@ object trendingFlatMod {
   
   @JSImport("material-ui/svg-icons/action/trending-flat", JSImport.Default)
   @js.native
-  class default () extends ActionTrendingFlat
+  open class default () extends ActionTrendingFlat
   
   @JSImport("material-ui/svg-icons/action/trending-flat", "ActionTrendingFlat")
   @js.native
-  class ActionTrendingFlat ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTrendingFlat ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.Polygon")
 @js.native
-class Polygon protected ()
+open class Polygon protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.Polygon {
   def this(points: js.Array[typings.baidumapWebSdk.BMap.Point]) = this()

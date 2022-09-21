@@ -32,13 +32,13 @@ object StageDeclaration {
     
     inline def setActions(value: StageActionDeclarationList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: ActionDeclaration*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ActionDeclaration*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setBlockers(value: StageBlockerDeclarationList): Self = StObject.set(x, "blockers", value.asInstanceOf[js.Any])
     
     inline def setBlockersUndefined: Self = StObject.set(x, "blockers", js.undefined)
     
-    inline def setBlockersVarargs(value: BlockerDeclaration*): Self = StObject.set(x, "blockers", js.Array(value :_*))
+    inline def setBlockersVarargs(value: BlockerDeclaration*): Self = StObject.set(x, "blockers", js.Array(value*))
     
     inline def setName(value: StageName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

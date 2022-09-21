@@ -17,10 +17,10 @@ object circularLoaderMod {
   
   @JSImport("@catho/quantum/CircularLoader", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CircularLoaderProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CircularLoaderProps, js.Object, Any]
   
-  type CircularLoader = Component[CircularLoaderProps, js.Object, js.Any]
+  type CircularLoader = Component[CircularLoaderProps, js.Object, Any]
   
   trait CircularLoaderProps extends StObject {
     

@@ -11,7 +11,7 @@ object listViewDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/list-view/demo/basic", JSImport.Default)
   @js.native
-  class default () extends BasicListExample
+  open class default () extends BasicListExample
   
   @JSImport("@ant-design/react-native/lib/list-view/demo/basic", "description")
   @js.native
@@ -22,8 +22,7 @@ object listViewDemoBasicMod {
   val title: /* "ListView" */ String = js.native
   
   @js.native
-  trait BasicListExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicListExample extends Component[Any, Any, Any] {
     
     def onFetch(
       page: Double,
@@ -36,9 +35,9 @@ object listViewDemoBasicMod {
       abortFetch: js.Function0[Unit]
     ): js.Promise[Unit] = js.native
     
-    def renderItem(item: js.Any): Element = js.native
+    def renderItem(item: Any): Element = js.native
     
-    def sleep(time: js.Any): js.Promise[js.Any] = js.native
+    def sleep(time: Any): js.Promise[Any] = js.native
     
     @JSName("state")
     var state_BasicListExample: Layout = js.native

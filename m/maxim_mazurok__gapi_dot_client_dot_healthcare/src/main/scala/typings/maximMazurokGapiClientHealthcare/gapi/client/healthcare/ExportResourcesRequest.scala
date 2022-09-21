@@ -7,8 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportResourcesRequest extends StObject {
   
   /**
+    * If provided, only resources updated after this time are exported. The time uses the format YYYY-MM-DDThh:mm:ss.sss+zz:zz. For example, `2015-02-07T13:28:17.239+02:00` or
+    * `2017-01-01T00:00:00Z`. The time must be specified to the second and include a time zone.
+    */
+  var _since: js.UndefOr[String] = js.undefined
+  
+  /** String of comma-delimited FHIR resource types. If provided, only resources of the specified resource type(s) are exported. */
+  var _type: js.UndefOr[String] = js.undefined
+  
+  /**
     * The BigQuery output destination. The Cloud Healthcare Service Agent requires two IAM roles on the BigQuery location: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`. The
-    * output is one BigQuery table per resource type.
+    * output is one BigQuery table per resource type. Unlike when setting `BigQueryDestination` for `StreamConfig`, `ExportResources` does not create BigQuery views.
     */
   var bigqueryDestination: js.UndefOr[GoogleCloudHealthcareV1FhirBigQueryDestination] = js.undefined
   
@@ -34,5 +43,13 @@ object ExportResourcesRequest {
     inline def setGcsDestination(value: GoogleCloudHealthcareV1FhirGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
     inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    
+    inline def set_since(value: String): Self = StObject.set(x, "_since", value.asInstanceOf[js.Any])
+    
+    inline def set_sinceUndefined: Self = StObject.set(x, "_since", js.undefined)
+    
+    inline def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

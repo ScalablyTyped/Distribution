@@ -7,13 +7,16 @@ import typings.domHelpers.domHelpersStrings.animationend
 import typings.domHelpers.domHelpersStrings.animationiteration
 import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
+import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
-import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
 import typings.domHelpers.domHelpersStrings.click
 import typings.domHelpers.domHelpersStrings.close
+import typings.domHelpers.domHelpersStrings.compositionend
+import typings.domHelpers.domHelpersStrings.compositionstart
+import typings.domHelpers.domHelpersStrings.compositionupdate
 import typings.domHelpers.domHelpersStrings.contextmenu
 import typings.domHelpers.domHelpersStrings.copy
 import typings.domHelpers.domHelpersStrings.cuechange
@@ -22,7 +25,6 @@ import typings.domHelpers.domHelpersStrings.dblclick
 import typings.domHelpers.domHelpersStrings.drag
 import typings.domHelpers.domHelpersStrings.dragend
 import typings.domHelpers.domHelpersStrings.dragenter
-import typings.domHelpers.domHelpersStrings.dragexit
 import typings.domHelpers.domHelpersStrings.dragleave
 import typings.domHelpers.domHelpersStrings.dragover
 import typings.domHelpers.domHelpersStrings.dragstart
@@ -34,6 +36,7 @@ import typings.domHelpers.domHelpersStrings.error
 import typings.domHelpers.domHelpersStrings.focus
 import typings.domHelpers.domHelpersStrings.focusin
 import typings.domHelpers.domHelpersStrings.focusout
+import typings.domHelpers.domHelpersStrings.formdata
 import typings.domHelpers.domHelpersStrings.fullscreenchange
 import typings.domHelpers.domHelpersStrings.fullscreenerror
 import typings.domHelpers.domHelpersStrings.gotpointercapture
@@ -77,6 +80,7 @@ import typings.domHelpers.domHelpersStrings.seeking
 import typings.domHelpers.domHelpersStrings.select
 import typings.domHelpers.domHelpersStrings.selectionchange
 import typings.domHelpers.domHelpersStrings.selectstart
+import typings.domHelpers.domHelpersStrings.slotchange
 import typings.domHelpers.domHelpersStrings.stalled
 import typings.domHelpers.domHelpersStrings.submit
 import typings.domHelpers.domHelpersStrings.suspend
@@ -92,6 +96,10 @@ import typings.domHelpers.domHelpersStrings.transitionrun
 import typings.domHelpers.domHelpersStrings.transitionstart
 import typings.domHelpers.domHelpersStrings.volumechange
 import typings.domHelpers.domHelpersStrings.waiting
+import typings.domHelpers.domHelpersStrings.webkitanimationend
+import typings.domHelpers.domHelpersStrings.webkitanimationiteration
+import typings.domHelpers.domHelpersStrings.webkitanimationstart
+import typings.domHelpers.domHelpersStrings.webkittransitionend
 import typings.domHelpers.domHelpersStrings.wheel
 import typings.std.AddEventListenerOptions
 import typings.std.HTMLElement
@@ -174,18 +182,18 @@ object listenMod {
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
+  inline def default_beforeinput(node: HTMLElement, eventName: beforeinput, handler: EventHandler[beforeinput]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_beforeinput(node: HTMLElement, eventName: beforeinput, handler: EventHandler[beforeinput], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_beforeinput(
+    node: HTMLElement,
+    eventName: beforeinput,
+    handler: EventHandler[beforeinput],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   inline def default_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def default_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def default_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: AddEventListenerOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  
-  inline def default_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def default_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def default_cancel(
-    node: HTMLElement,
-    eventName: cancel,
-    handler: EventHandler[cancel],
-    options: AddEventListenerOptions
-  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def default_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def default_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
@@ -234,6 +242,48 @@ object listenMod {
     node: HTMLElement,
     eventName: close,
     handler: EventHandler[close],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def default_compositionend(node: HTMLElement, eventName: compositionend, handler: EventHandler[compositionend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_compositionend(
+    node: HTMLElement,
+    eventName: compositionend,
+    handler: EventHandler[compositionend],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_compositionend(
+    node: HTMLElement,
+    eventName: compositionend,
+    handler: EventHandler[compositionend],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def default_compositionstart(node: HTMLElement, eventName: compositionstart, handler: EventHandler[compositionstart]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_compositionstart(
+    node: HTMLElement,
+    eventName: compositionstart,
+    handler: EventHandler[compositionstart],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_compositionstart(
+    node: HTMLElement,
+    eventName: compositionstart,
+    handler: EventHandler[compositionstart],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def default_compositionupdate(node: HTMLElement, eventName: compositionupdate, handler: EventHandler[compositionupdate]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_compositionupdate(
+    node: HTMLElement,
+    eventName: compositionupdate,
+    handler: EventHandler[compositionupdate],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_compositionupdate(
+    node: HTMLElement,
+    eventName: compositionupdate,
+    handler: EventHandler[compositionupdate],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
@@ -291,15 +341,6 @@ object listenMod {
     node: HTMLElement,
     eventName: dragenter,
     handler: EventHandler[dragenter],
-    options: AddEventListenerOptions
-  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  
-  inline def default_dragexit(node: HTMLElement, eventName: dragexit, handler: EventHandler[dragexit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def default_dragexit(node: HTMLElement, eventName: dragexit, handler: EventHandler[dragexit], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def default_dragexit(
-    node: HTMLElement,
-    eventName: dragexit,
-    handler: EventHandler[dragexit],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
@@ -399,6 +440,15 @@ object listenMod {
     node: HTMLElement,
     eventName: focusout,
     handler: EventHandler[focusout],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def default_formdata(node: HTMLElement, eventName: formdata, handler: EventHandler[formdata]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_formdata(node: HTMLElement, eventName: formdata, handler: EventHandler[formdata], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_formdata(
+    node: HTMLElement,
+    eventName: formdata,
+    handler: EventHandler[formdata],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
@@ -823,6 +873,15 @@ object listenMod {
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
+  inline def default_slotchange(node: HTMLElement, eventName: slotchange, handler: EventHandler[slotchange]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_slotchange(node: HTMLElement, eventName: slotchange, handler: EventHandler[slotchange], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_slotchange(
+    node: HTMLElement,
+    eventName: slotchange,
+    handler: EventHandler[slotchange],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   inline def default_stalled(node: HTMLElement, eventName: stalled, handler: EventHandler[stalled]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def default_stalled(node: HTMLElement, eventName: stalled, handler: EventHandler[stalled], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def default_stalled(
@@ -975,6 +1034,66 @@ object listenMod {
     node: HTMLElement,
     eventName: waiting,
     handler: EventHandler[waiting],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def default_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, handler: EventHandler[webkitanimationend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_webkitanimationend(
+    node: HTMLElement,
+    eventName: webkitanimationend,
+    handler: EventHandler[webkitanimationend],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_webkitanimationend(
+    node: HTMLElement,
+    eventName: webkitanimationend,
+    handler: EventHandler[webkitanimationend],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def default_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: EventHandler[webkitanimationiteration]
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: EventHandler[webkitanimationiteration],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: EventHandler[webkitanimationiteration],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def default_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, handler: EventHandler[webkitanimationstart]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: EventHandler[webkitanimationstart],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: EventHandler[webkitanimationstart],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def default_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, handler: EventHandler[webkittransitionend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: EventHandler[webkittransitionend],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: EventHandler[webkittransitionend],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   

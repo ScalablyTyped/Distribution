@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Xcode version that an iOS version is compatible with.
-  */
 trait SchemaXcodeVersion extends StObject {
   
   /**
-    * Tags for this Xcode version. Example: &quot;default&quot;.
+    * Tags for this Xcode version. Example: "default".
     */
-  var tags: js.UndefOr[js.Array[String]] = js.undefined
+  var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The id for this version. Example: &quot;9.2&quot;.
+    * The id for this version. Example: "9.2".
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaXcodeVersion {
   
@@ -30,11 +27,15 @@ object SchemaXcodeVersion {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
+    inline def setTagsNull: Self = StObject.set(x, "tags", null)
+    
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }

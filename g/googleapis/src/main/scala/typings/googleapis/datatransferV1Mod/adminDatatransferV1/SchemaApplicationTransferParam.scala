@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Template for application transfer parameters.
-  */
 trait SchemaApplicationTransferParam extends StObject {
   
   /**
-    * The type of the transfer parameter. eg: &#39;PRIVACY_LEVEL&#39;
+    * The type of the transfer parameter. eg: 'PRIVACY_LEVEL'
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The value of the coressponding transfer parameter. eg: &#39;PRIVATE&#39;
-    * or &#39;SHARED&#39;
+    * The value of the corresponding transfer parameter. eg: 'PRIVATE' or 'SHARED'
     */
-  var value: js.UndefOr[js.Array[String]] = js.undefined
+  var value: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaApplicationTransferParam {
   
@@ -31,12 +27,16 @@ object SchemaApplicationTransferParam {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.Time")
 @js.native
-class Time ()
+open class Time ()
   extends typings.jsrsasign.mod.KJUR.asn1.Time {
   def this(params: StringParamtypegenundefin) = this()
 }

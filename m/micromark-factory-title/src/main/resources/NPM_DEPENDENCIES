@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "micromark-factory-title" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "micromark-factory-title" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -13,5 +13,5 @@ object erroRecoveryStoreMod {
   
   inline def getRecoveryPropsToSave(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecoveryPropsToSave")().asInstanceOf[String | Null]
   
-  inline def setRecoveryPropsToSave(props: StringDictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecoveryPropsToSave")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRecoveryPropsToSave(props: StringDictionary[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecoveryPropsToSave")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

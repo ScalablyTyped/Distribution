@@ -13,7 +13,7 @@ object linkLayerWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/widgets/layers/LinkLayerWidget", "LinkLayerWidget")
   @js.native
-  class LinkLayerWidget protected () extends BaseWidget[LinkLayerProps, LinkLayerState] {
+  open class LinkLayerWidget protected () extends BaseWidget[LinkLayerProps, LinkLayerState] {
     def this(props: LinkLayerProps) = this()
   }
   
@@ -23,11 +23,11 @@ object linkLayerWidgetMod {
     
     var diagramEngine: DiagramEngine
     
-    def pointAdded(point: PointModel, event: MouseEvent): js.Any
+    def pointAdded(point: PointModel, event: MouseEvent): Any
   }
   object LinkLayerProps {
     
-    inline def apply(diagramEngine: DiagramEngine, pointAdded: (PointModel, MouseEvent) => js.Any): LinkLayerProps = {
+    inline def apply(diagramEngine: DiagramEngine, pointAdded: (PointModel, MouseEvent) => Any): LinkLayerProps = {
       val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], pointAdded = js.Any.fromFunction2(pointAdded))
       __obj.asInstanceOf[LinkLayerProps]
     }
@@ -36,7 +36,7 @@ object linkLayerWidgetMod {
       
       inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
-      inline def setPointAdded(value: (PointModel, MouseEvent) => js.Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
+      inline def setPointAdded(value: (PointModel, MouseEvent) => Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
     }
   }
   

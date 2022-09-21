@@ -12,9 +12,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -24,12 +24,13 @@ trait TableCollection
   
   def add(address: String, hasHeaders: Boolean): Table = js.native
   /**
-    * Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
+    * Creates a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
-    * @param address A Range object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3.  Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]
-    * @param hasHeaders Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.
+    * @param address A `Range` object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3.  Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]
+    * @param hasHeaders A boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e., when this property set to `false`), Excel will automatically generate a header and shift the data down by one row.
     */
   def add(address: Range, hasHeaders: Boolean): Table = js.native
   
@@ -38,9 +39,9 @@ trait TableCollection
   var context_TableCollection: RequestContext = js.native
   
   /**
-    *
     * Returns the number of tables in the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val count: Double = js.native
@@ -48,13 +49,15 @@ trait TableCollection
   /**
     * Gets the number of tables in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a table by Name or ID.
+    * Gets a table by name or ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
     * @param key Name or ID of the table to be retrieved.
@@ -64,6 +67,7 @@ trait TableCollection
   /**
     * Gets a table based on its position in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
@@ -71,8 +75,10 @@ trait TableCollection
   def getItemAt(index: Double): Table = js.native
   
   /**
-    * Gets a table by Name or ID. If the table does not exist, will return a null object.
+    * Gets a table by name or ID. If the table doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
     * @param key Name or ID of the table to be retrieved.
@@ -94,9 +100,9 @@ trait TableCollection
   def load(propertyNames: js.Array[String]): TableCollection = js.native
   
   /**
+    * Occurs when a new table is added in a workbook.
     *
-    * Occurs when new table is added in a workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
@@ -104,9 +110,9 @@ trait TableCollection
   val onAdded: EventHandlers[TableAddedEventArgs] = js.native
   
   /**
-    *
     * Occurs when data changes on any table in a workbook, or a worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @eventproperty
@@ -114,9 +120,9 @@ trait TableCollection
   val onChanged: EventHandlers[TableChangedEventArgs] = js.native
   
   /**
-    *
     * Occurs when the specified table is deleted in a workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
@@ -124,9 +130,9 @@ trait TableCollection
   val onDeleted: EventHandlers[TableDeletedEventArgs] = js.native
   
   /**
+    * Occurs when a filter is applied on any table in a workbook, or a worksheet.
     *
-    * Occurs when filter is applied on any table in a workbook, or a worksheet.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
     * @eventproperty

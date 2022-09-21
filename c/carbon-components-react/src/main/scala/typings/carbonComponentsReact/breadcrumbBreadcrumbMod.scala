@@ -1,7 +1,7 @@
 package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.FC
+import typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ object breadcrumbBreadcrumbMod extends Shortcut {
   
   @JSImport("carbon-components-react/lib/components/Breadcrumb/Breadcrumb", JSImport.Default)
   @js.native
-  val default: FC[BreadcrumbProps] = js.native
+  val default: ForwardRefReturn[HTMLElement, BreadcrumbProps] = js.native
   
   trait BreadcrumbProps
     extends StObject
@@ -35,8 +35,8 @@ object breadcrumbBreadcrumbMod extends Shortcut {
     }
   }
   
-  type _To = FC[BreadcrumbProps]
+  type _To = ForwardRefReturn[HTMLElement, BreadcrumbProps]
   
   /* This means you don't have to write `default`, but can instead just say `breadcrumbBreadcrumbMod.foo` */
-  override def _to: FC[BreadcrumbProps] = default
+  override def _to: ForwardRefReturn[HTMLElement, BreadcrumbProps] = default
 }

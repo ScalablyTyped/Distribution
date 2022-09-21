@@ -20,7 +20,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.ElementClickInterceptedError")
   @js.native
-  class ElementClickInterceptedError () extends WebDriverError {
+  open class ElementClickInterceptedError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -32,7 +32,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.ElementNotInteractableError")
   @js.native
-  class ElementNotInteractableError () extends WebDriverError {
+  open class ElementNotInteractableError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -41,7 +41,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.ElementNotSelectableError")
   @js.native
-  class ElementNotSelectableError () extends WebDriverError {
+  open class ElementNotSelectableError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -51,14 +51,16 @@ object error {
   
   @JSImport("selenium-webdriver", "error.IError")
   @js.native
-  class IError ()
+  open class IError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -69,7 +71,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.InsecureCertificateError")
   @js.native
-  class InsecureCertificateError () extends WebDriverError {
+  open class InsecureCertificateError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -78,7 +80,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.InvalidArgumentError")
   @js.native
-  class InvalidArgumentError () extends WebDriverError {
+  open class InvalidArgumentError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -88,7 +90,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.InvalidCookieDomainError")
   @js.native
-  class InvalidCookieDomainError () extends WebDriverError {
+  open class InvalidCookieDomainError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -97,7 +99,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.InvalidCoordinatesError")
   @js.native
-  class InvalidCoordinatesError () extends WebDriverError {
+  open class InvalidCoordinatesError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -108,7 +110,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.InvalidElementStateError")
   @js.native
-  class InvalidElementStateError () extends WebDriverError {
+  open class InvalidElementStateError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -117,7 +119,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.InvalidSelectorError")
   @js.native
-  class InvalidSelectorError () extends WebDriverError {
+  open class InvalidSelectorError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -126,7 +128,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.JavascriptError")
   @js.native
-  class JavascriptError () extends WebDriverError {
+  open class JavascriptError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -136,7 +138,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.MoveTargetOutOfBoundsError")
   @js.native
-  class MoveTargetOutOfBoundsError () extends WebDriverError {
+  open class MoveTargetOutOfBoundsError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -145,7 +147,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.NoSuchAlertError")
   @js.native
-  class NoSuchAlertError () extends WebDriverError {
+  open class NoSuchAlertError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -155,7 +157,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.NoSuchCookieError")
   @js.native
-  class NoSuchCookieError () extends WebDriverError {
+  open class NoSuchCookieError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -165,7 +167,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.NoSuchElementError")
   @js.native
-  class NoSuchElementError () extends WebDriverError {
+  open class NoSuchElementError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -175,7 +177,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.NoSuchFrameError")
   @js.native
-  class NoSuchFrameError () extends WebDriverError {
+  open class NoSuchFrameError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -184,7 +186,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.NoSuchSessionError")
   @js.native
-  class NoSuchSessionError () extends WebDriverError {
+  open class NoSuchSessionError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -194,7 +196,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.NoSuchWindowError")
   @js.native
-  class NoSuchWindowError () extends WebDriverError {
+  open class NoSuchWindowError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -203,7 +205,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.ScriptTimeoutError")
   @js.native
-  class ScriptTimeoutError () extends WebDriverError {
+  open class ScriptTimeoutError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -212,7 +214,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.SessionNotCreatedError")
   @js.native
-  class SessionNotCreatedError () extends WebDriverError {
+  open class SessionNotCreatedError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -222,7 +224,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.StaleElementReferenceError")
   @js.native
-  class StaleElementReferenceError () extends WebDriverError {
+  open class StaleElementReferenceError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -231,7 +233,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.TimeoutError")
   @js.native
-  class TimeoutError () extends WebDriverError {
+  open class TimeoutError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -240,7 +242,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.UnableToCaptureScreenError")
   @js.native
-  class UnableToCaptureScreenError () extends WebDriverError {
+  open class UnableToCaptureScreenError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -249,7 +251,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.UnableToSetCookieError")
   @js.native
-  class UnableToSetCookieError () extends WebDriverError {
+  open class UnableToSetCookieError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -258,7 +260,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.UnexpectedAlertOpenError")
   @js.native
-  class UnexpectedAlertOpenError () extends WebDriverError {
+  open class UnexpectedAlertOpenError () extends WebDriverError {
     def this(message: String) = this()
     def this(message: String, openAlertText: String) = this()
     def this(message: Unit, openAlertText: String) = this()
@@ -275,7 +277,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.UnknownCommandError")
   @js.native
-  class UnknownCommandError () extends WebDriverError {
+  open class UnknownCommandError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -285,7 +287,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.UnknownMethodError")
   @js.native
-  class UnknownMethodError () extends WebDriverError {
+  open class UnknownMethodError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -294,7 +296,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.UnsupportedOperationError")
   @js.native
-  class UnsupportedOperationError () extends WebDriverError {
+  open class UnsupportedOperationError () extends WebDriverError {
     def this(message: String) = this()
   }
   
@@ -304,7 +306,7 @@ object error {
     */
   @JSImport("selenium-webdriver", "error.WebDriverError")
   @js.native
-  class WebDriverError () extends IError {
+  open class WebDriverError () extends IError {
     def this(message: String) = this()
     
     var remoteStacktrace: js.UndefOr[String] = js.native
@@ -324,7 +326,7 @@ object error {
   /**
     * Lookup the err in table of errors.
     */
-  inline def encodeError(err: js.Any): typings.seleniumWebdriver.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeError")(err.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.anon.Error]
+  inline def encodeError(err: Any): typings.seleniumWebdriver.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeError")(err.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.anon.Error]
   
   inline def throwDecodedError(data: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   /**

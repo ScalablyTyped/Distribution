@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Input extends StObject {
   
   /**
-    * Specifies set of audio selectors within an input to combine. An input may have multiple audio selector groups. See "Audio Selector Group":#inputs-audio_selector_group for more information.
+    * Use audio selector groups to combine multiple sidecar audio inputs so that you can assign them to a single output audio tab (AudioDescription). Note that, if you're working with embedded audio, it's simpler to assign multiple input tracks into a single audio selector rather than use an audio selector group.
     */
   var AudioSelectorGroups: js.UndefOr[mapOfAudioSelectorGroup] = js.undefined
   
@@ -42,10 +42,15 @@ trait Input extends StObject {
   var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
   
   /**
+    * Use this setting only when your video source has Dolby Vision studio mastering metadata that is carried in a separate XML file. Specify the Amazon S3 location for the metadata XML file. MediaConvert uses this file to provide global and frame-level metadata for Dolby Vision preprocessing. When you specify a file here and your input also has interleaved global and frame level metadata, MediaConvert ignores the interleaved metadata and uses only the the metadata from this external XML file. Note that your IAM service role must grant MediaConvert read permissions to this file. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html.
+    */
+  var DolbyVisionMetadataXml: js.UndefOr[stringMin14PatternS3XmlXMLHttpsXmlXML] = js.undefined
+  
+  /**
     * Specify the source file for your transcoding job. You can use multiple inputs in a single job. The service concatenates these inputs, in the order that you specify them in the job, to create the outputs. If your input format is IMF, specify your input by providing the path to your CPL. For example, "s3://bucket/vf/cpl.xml". If the CPL is in an incomplete IMP, make sure to use *Supplemental IMPs* (SupplementalImps) to specify any supplemental IMPs that contain assets referenced by the CPL.
     */
   var FileInput: js.UndefOr[
-    stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEE
+    stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLOOGGGGaAAATTMMOOSSHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1
   ] = js.undefined
   
   /**
@@ -104,7 +109,12 @@ trait Input extends StObject {
   var TimecodeStart: js.UndefOr[stringMin11Max11Pattern01D20305D205D] = js.undefined
   
   /**
-    * Selector for video.
+    * When you include Video generator, MediaConvert creates a video input with black frames. Use this setting if you do not have a video input or if you want to add black video frames before, or after, other inputs. You can specify Video generator, or you can specify an Input file, but you cannot specify both. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/video-generator.html
+    */
+  var VideoGenerator: js.UndefOr[InputVideoGenerator] = js.undefined
+  
+  /**
+    * Input video selectors contain the video settings for the input. Each of your inputs can have up to one video selector.
     */
   var VideoSelector: js.UndefOr[typings.awsSdk.mediaconvertMod.VideoSelector] = js.undefined
 }
@@ -145,8 +155,12 @@ object Input {
     
     inline def setDenoiseFilterUndefined: Self = StObject.set(x, "DenoiseFilter", js.undefined)
     
+    inline def setDolbyVisionMetadataXml(value: stringMin14PatternS3XmlXMLHttpsXmlXML): Self = StObject.set(x, "DolbyVisionMetadataXml", value.asInstanceOf[js.Any])
+    
+    inline def setDolbyVisionMetadataXmlUndefined: Self = StObject.set(x, "DolbyVisionMetadataXml", js.undefined)
+    
     inline def setFileInput(
-      value: stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEE
+      value: stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLOOGGGGaAAATTMMOOSSHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1
     ): Self = StObject.set(x, "FileInput", value.asInstanceOf[js.Any])
     
     inline def setFileInputUndefined: Self = StObject.set(x, "FileInput", js.undefined)
@@ -167,7 +181,7 @@ object Input {
     
     inline def setInputClippingsUndefined: Self = StObject.set(x, "InputClippings", js.undefined)
     
-    inline def setInputClippingsVarargs(value: InputClipping*): Self = StObject.set(x, "InputClippings", js.Array(value :_*))
+    inline def setInputClippingsVarargs(value: InputClipping*): Self = StObject.set(x, "InputClippings", js.Array(value*))
     
     inline def setInputScanType(value: InputScanType): Self = StObject.set(x, "InputScanType", value.asInstanceOf[js.Any])
     
@@ -189,7 +203,7 @@ object Input {
     
     inline def setSupplementalImpsUndefined: Self = StObject.set(x, "SupplementalImps", js.undefined)
     
-    inline def setSupplementalImpsVarargs(value: stringPatternS3ASSETMAPXml*): Self = StObject.set(x, "SupplementalImps", js.Array(value :_*))
+    inline def setSupplementalImpsVarargs(value: stringPatternS3ASSETMAPXml*): Self = StObject.set(x, "SupplementalImps", js.Array(value*))
     
     inline def setTimecodeSource(value: InputTimecodeSource): Self = StObject.set(x, "TimecodeSource", value.asInstanceOf[js.Any])
     
@@ -198,6 +212,10 @@ object Input {
     inline def setTimecodeStart(value: stringMin11Max11Pattern01D20305D205D): Self = StObject.set(x, "TimecodeStart", value.asInstanceOf[js.Any])
     
     inline def setTimecodeStartUndefined: Self = StObject.set(x, "TimecodeStart", js.undefined)
+    
+    inline def setVideoGenerator(value: InputVideoGenerator): Self = StObject.set(x, "VideoGenerator", value.asInstanceOf[js.Any])
+    
+    inline def setVideoGeneratorUndefined: Self = StObject.set(x, "VideoGenerator", js.undefined)
     
     inline def setVideoSelector(value: VideoSelector): Self = StObject.set(x, "VideoSelector", value.asInstanceOf[js.Any])
     

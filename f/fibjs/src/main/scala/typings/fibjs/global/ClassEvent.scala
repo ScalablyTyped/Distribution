@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassEvent ()
+open class ClassEvent ()
   extends StObject
      with typings.fibjs.ClassEvent {
   def this(value: Boolean) = this()

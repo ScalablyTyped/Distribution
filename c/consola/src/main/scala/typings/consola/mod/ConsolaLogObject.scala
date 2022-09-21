@@ -1,6 +1,5 @@
 package typings.consola.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,9 @@ trait ConsolaLogObject extends StObject {
   
   var additional: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var args: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   var level: js.UndefOr[LogLevel] = js.undefined
   
@@ -34,15 +33,15 @@ object ConsolaLogObject {
     
     inline def setAdditionalUndefined: Self = StObject.set(x, "additional", js.undefined)
     
-    inline def setAdditionalVarargs(value: String*): Self = StObject.set(x, "additional", js.Array(value :_*))
+    inline def setAdditionalVarargs(value: String*): Self = StObject.set(x, "additional", js.Array(value*))
     
-    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     

@@ -3,7 +3,6 @@ package typings.nivoTooltip
 import typings.react.mod.NamedExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object basicTooltipMod {
     var enableChip: js.UndefOr[Boolean] = js.undefined
     
     var format: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataFormatter */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueFormat<number | string | Date> */ Any
       ] = js.undefined
     
     var id: ReactNode
@@ -31,7 +30,7 @@ object basicTooltipMod {
       */
     var renderContent: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var value: js.UndefOr[Double | String | Date] = js.undefined
+    var value: js.UndefOr[Double | String | js.Date] = js.undefined
   }
   object BasicTooltipProps {
     
@@ -51,7 +50,7 @@ object basicTooltipMod {
       inline def setEnableChipUndefined: Self = StObject.set(x, "enableChip", js.undefined)
       
       inline def setFormat(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataFormatter */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueFormat<number | string | Date> */ Any
       ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -64,7 +63,7 @@ object basicTooltipMod {
       
       inline def setRenderContentUndefined: Self = StObject.set(x, "renderContent", js.undefined)
       
-      inline def setValue(value: Double | String | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

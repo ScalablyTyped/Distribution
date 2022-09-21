@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A time-stamped annotation or message event in the Span.
-  */
 trait SchemaTimeEvent extends StObject {
   
   /**
@@ -22,7 +19,7 @@ trait SchemaTimeEvent extends StObject {
   /**
     * The timestamp indicating the time the event occurred.
     */
-  var time: js.UndefOr[String] = js.undefined
+  var time: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTimeEvent {
   
@@ -42,6 +39,8 @@ object SchemaTimeEvent {
     inline def setMessageEventUndefined: Self = StObject.set(x, "messageEvent", js.undefined)
     
     inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeNull: Self = StObject.set(x, "time", null)
     
     inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }

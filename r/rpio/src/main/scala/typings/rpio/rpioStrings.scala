@@ -49,4 +49,8 @@ object rpioStrings {
   @js.native
   sealed trait `raspi-zero-w` extends StObject
   inline def `raspi-zero-w`: `raspi-zero-w` = "raspi-zero-w".asInstanceOf[`raspi-zero-w`]
+  
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }

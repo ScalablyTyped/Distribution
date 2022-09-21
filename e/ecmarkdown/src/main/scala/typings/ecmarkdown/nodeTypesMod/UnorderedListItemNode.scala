@@ -1,5 +1,6 @@
 package typings.ecmarkdown.nodeTypesMod
 
+import typings.ecmarkdown.anon.Key
 import typings.ecmarkdown.ecmarkdownStrings.`unordered-list-item`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,9 +10,9 @@ trait UnorderedListItemNode
   extends StObject
      with Node {
   
-  var contents: js.Array[FragmentNode]
+  var attrs: js.Array[Key]
   
-  var id: String | Null
+  var contents: js.Array[FragmentNode]
   
   var location: LocationRange
   
@@ -21,20 +22,20 @@ trait UnorderedListItemNode
 }
 object UnorderedListItemNode {
   
-  inline def apply(contents: js.Array[FragmentNode], location: LocationRange): UnorderedListItemNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "unordered-list-item", id = null, sublist = null)
+  inline def apply(attrs: js.Array[Key], contents: js.Array[FragmentNode], location: LocationRange): UnorderedListItemNode = {
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "unordered-list-item", sublist = null)
     __obj.asInstanceOf[UnorderedListItemNode]
   }
   
   extension [Self <: UnorderedListItemNode](x: Self) {
     
+    inline def setAttrs(value: js.Array[Key]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    
+    inline def setAttrsVarargs(value: Key*): Self = StObject.set(x, "attrs", js.Array(value*))
+    
     inline def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    inline def setContentsVarargs(value: FragmentNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setContentsVarargs(value: FragmentNode*): Self = StObject.set(x, "contents", js.Array(value*))
     
     inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

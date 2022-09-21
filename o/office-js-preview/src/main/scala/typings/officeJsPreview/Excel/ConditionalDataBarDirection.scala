@@ -7,25 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ConditionalDataBarDirection extends StObject
 /**
+  * Represents the data bar direction within a cell.
   *
-  * Represents the Data Bar direction within a cell.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalDataBarDirection")
 @js.native
 object ConditionalDataBarDirection extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
   sealed trait context
     extends StObject
        with ConditionalDataBarDirection
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
   sealed trait leftToRight
     extends StObject
        with ConditionalDataBarDirection
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
   sealed trait rightToLeft
     extends StObject

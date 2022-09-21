@@ -31,7 +31,7 @@ object XWebDAVCommandEnvironment {
     getInteractionHandler: () => XInteractionHandler,
     getProgressHandler: () => XProgressHandler,
     getUserRequestHeaders: (String, WebDAVHTTPMethod) => SafeArray[StringPair],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XWebDAVCommandEnvironment = {
     val __obj = js.Dynamic.literal(InteractionHandler = InteractionHandler.asInstanceOf[js.Any], ProgressHandler = ProgressHandler.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getInteractionHandler = js.Any.fromFunction0(getInteractionHandler), getProgressHandler = js.Any.fromFunction0(getProgressHandler), getUserRequestHeaders = js.Any.fromFunction2(getUserRequestHeaders), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

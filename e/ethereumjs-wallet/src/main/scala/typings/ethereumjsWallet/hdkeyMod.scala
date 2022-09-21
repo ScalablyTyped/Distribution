@@ -1,6 +1,6 @@
 package typings.ethereumjsWallet
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +9,13 @@ object hdkeyMod {
   
   @JSImport("ethereumjs-wallet/dist/hdkey", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with EthereumHDKey {
-    def this(_hdkey: js.Any) = this()
+    def this(_hdkey: Any) = this()
     
     /* private */ /* CompleteClass */
-    override val _hdkey: js.Any = js.native
+    override val _hdkey: Any = js.native
     
     /**
       * Derive a node based on a child index
@@ -70,7 +70,7 @@ object hdkeyMod {
   
   trait EthereumHDKey extends StObject {
     
-    /* private */ val _hdkey: js.Any
+    /* private */ val _hdkey: Any
     
     /**
       * Derive a node based on a child index
@@ -100,7 +100,7 @@ object hdkeyMod {
   object EthereumHDKey {
     
     inline def apply(
-      _hdkey: js.Any,
+      _hdkey: Any,
       deriveChild: Double => EthereumHDKey,
       derivePath: String => EthereumHDKey,
       getWallet: () => typings.ethereumjsWallet.mod.default,
@@ -123,7 +123,7 @@ object hdkeyMod {
       
       inline def setPublicExtendedKey(value: () => Buffer): Self = StObject.set(x, "publicExtendedKey", js.Any.fromFunction0(value))
       
-      inline def set_hdkey(value: js.Any): Self = StObject.set(x, "_hdkey", value.asInstanceOf[js.Any])
+      inline def set_hdkey(value: Any): Self = StObject.set(x, "_hdkey", value.asInstanceOf[js.Any])
     }
   }
 }

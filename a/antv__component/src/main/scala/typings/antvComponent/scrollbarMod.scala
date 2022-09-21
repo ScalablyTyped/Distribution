@@ -13,6 +13,6 @@ object scrollbarMod {
   
   @JSImport("@antv/component/lib/scrollbar", "Scrollbar")
   @js.native
-  class Scrollbar ()
+  open class Scrollbar ()
     extends typings.antvComponent.scrollbarScrollbarMod.Scrollbar
 }

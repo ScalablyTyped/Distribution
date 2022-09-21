@@ -5,11 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration for an automated build in response to source repository
-  * changes.
-  */
 trait SchemaBuildTrigger extends StObject {
+  
+  /**
+    * Configuration for manual approval to start a build invocation of this BuildTrigger.
+    */
+  var approvalConfig: js.UndefOr[SchemaApprovalConfig] = js.undefined
+  
+  /**
+    * Autodetect build configuration. The following precedence is used (case insensitive): 1. cloudbuild.yaml 2. cloudbuild.yml 3. cloudbuild.json 4. Dockerfile Currently only available for GitHub App Triggers.
+    */
+  var autodetect: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * BitbucketServerTriggerConfig describes the configuration of a trigger that creates a build whenever a Bitbucket Server event is received.
+    */
+  var bitbucketServerTriggerConfig: js.UndefOr[SchemaBitbucketServerTriggerConfig] = js.undefined
   
   /**
     * Contents of the build template.
@@ -19,68 +30,107 @@ trait SchemaBuildTrigger extends StObject {
   /**
     * Output only. Time when the trigger was created.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Human-readable description of this trigger.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * If true, the trigger will never result in a build.
+    * If true, the trigger will never automatically execute a build.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Path, from the source root, to a file whose contents is used for the
-    * template.
+    * EventType allows the user to explicitly set the type of event to which this BuildTrigger should respond. This field will be validated against the rest of the configuration if it is set.
     */
-  var filename: js.UndefOr[String] = js.undefined
+  var eventType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * GitHubEventsConfig describes the configuration of a trigger that creates
-    * a build whenever a GitHub event is received.
+    * Path, from the source root, to the build configuration file (i.e. cloudbuild.yaml).
+    */
+  var filename: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * A Common Expression Language string.
+    */
+  var filter: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The file source describing the local or remote Build template.
+    */
+  var gitFileSource: js.UndefOr[SchemaGitFileSource] = js.undefined
+  
+  /**
+    * GitHubEventsConfig describes the configuration of a trigger that creates a build whenever a GitHub event is received. Mutually exclusive with `trigger_template`.
     */
   var github: js.UndefOr[SchemaGitHubEventsConfig] = js.undefined
   
   /**
     * Output only. Unique identifier of the trigger.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * ignored_files and included_files are file glob matches using
-    * http://godoc/pkg/path/filepath#Match extended with support for
-    * &quot;**&quot;.  If ignored_files and changed files are both empty, then
-    * they are not used to determine whether or not to trigger a build.  If
-    * ignored_files is not empty, then we ignore any files that match any of
-    * the ignored_file globs. If the change has no files that are outside of
-    * the ignored_files globs, then we do not trigger a build.
+    * ignored_files and included_files are file glob matches using https://golang.org/pkg/path/filepath/#Match extended with support for "**". If ignored_files and changed files are both empty, then they are not used to determine whether or not to trigger a build. If ignored_files is not empty, then we ignore any files that match any of the ignored_file globs. If the change has no files that are outside of the ignored_files globs, then we do not trigger a build.
     */
-  var ignoredFiles: js.UndefOr[js.Array[String]] = js.undefined
+  var ignoredFiles: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * If any of the files altered in the commit pass the ignored_files filter
-    * and included_files is empty, then as far as this filter is concerned, we
-    * should trigger the build.  If any of the files altered in the commit pass
-    * the ignored_files filter and included_files is not empty, then we make
-    * sure that at least one of those files matches a included_files glob. If
-    * not, then we do not trigger a build.
+    * If set to INCLUDE_BUILD_LOGS_WITH_STATUS, log url will be shown on GitHub page when build status is final. Setting this field to INCLUDE_BUILD_LOGS_WITH_STATUS for non GitHub triggers results in INVALID_ARGUMENT error.
     */
-  var includedFiles: js.UndefOr[js.Array[String]] = js.undefined
+  var includeBuildLogs: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Substitutions data for Build resource.
+    * If any of the files altered in the commit pass the ignored_files filter and included_files is empty, then as far as this filter is concerned, we should trigger the build. If any of the files altered in the commit pass the ignored_files filter and included_files is not empty, then we make sure that at least one of those files matches a included_files glob. If not, then we do not trigger a build.
     */
-  var substitutions: js.UndefOr[StringDictionary[String]] = js.undefined
+  var includedFiles: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Template describing the types of source changes to trigger a build.
-    * Branch and tag names in trigger templates are interpreted as regular
-    * expressions. Any branch or tag change that matches that regular
-    * expression will trigger a build.
+    * User-assigned name of the trigger. Must be unique within the project. Trigger names must meet the following requirements: + They must contain only alphanumeric characters and dashes. + They can be 1-64 characters long. + They must begin and end with an alphanumeric character.
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * PubsubConfig describes the configuration of a trigger that creates a build whenever a Pub/Sub message is published.
+    */
+  var pubsubConfig: js.UndefOr[SchemaPubsubConfig] = js.undefined
+  
+  /**
+    * The `Trigger` name with format: `projects/{project\}/locations/{location\}/triggers/{trigger\}`, where {trigger\} is a unique identifier generated by the service.
+    */
+  var resourceName: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The service account used for all user-controlled operations including UpdateBuildTrigger, RunBuildTrigger, CreateBuild, and CancelBuild. If no service account is set, then the standard Cloud Build service account ([PROJECT_NUM]@system.gserviceaccount.com) will be used instead. Format: `projects/{PROJECT_ID\}/serviceAccounts/{ACCOUNT_ID_OR_EMAIL\}`
+    */
+  var serviceAccount: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The repo and ref of the repository from which to build. This field is used only for those triggers that do not respond to SCM events. Triggers that respond to such events build source at whatever commit caused the event. This field is currently only used by Webhook, Pub/Sub, Manual, and Cron triggers.
+    */
+  var sourceToBuild: js.UndefOr[SchemaGitRepoSource] = js.undefined
+  
+  /**
+    * Substitutions for Build resource. The keys must match the following regular expression: `^_[A-Z0-9_]+$`.
+    */
+  var substitutions: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  
+  /**
+    * Tags for annotation of a `BuildTrigger`
+    */
+  var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Template describing the types of source changes to trigger a build. Branch and tag names in trigger templates are interpreted as regular expressions. Any branch or tag change that matches that regular expression will trigger a build. Mutually exclusive with `github`.
     */
   var triggerTemplate: js.UndefOr[SchemaRepoSource] = js.undefined
+  
+  /**
+    * WebhookConfig describes the configuration of a trigger that creates a build whenever a webhook is sent to a trigger's webhook URL.
+    */
+  var webhookConfig: js.UndefOr[SchemaWebhookConfig] = js.undefined
 }
 object SchemaBuildTrigger {
   
@@ -91,25 +141,63 @@ object SchemaBuildTrigger {
   
   extension [Self <: SchemaBuildTrigger](x: Self) {
     
+    inline def setApprovalConfig(value: SchemaApprovalConfig): Self = StObject.set(x, "approvalConfig", value.asInstanceOf[js.Any])
+    
+    inline def setApprovalConfigUndefined: Self = StObject.set(x, "approvalConfig", js.undefined)
+    
+    inline def setAutodetect(value: Boolean): Self = StObject.set(x, "autodetect", value.asInstanceOf[js.Any])
+    
+    inline def setAutodetectNull: Self = StObject.set(x, "autodetect", null)
+    
+    inline def setAutodetectUndefined: Self = StObject.set(x, "autodetect", js.undefined)
+    
+    inline def setBitbucketServerTriggerConfig(value: SchemaBitbucketServerTriggerConfig): Self = StObject.set(x, "bitbucketServerTriggerConfig", value.asInstanceOf[js.Any])
+    
+    inline def setBitbucketServerTriggerConfigUndefined: Self = StObject.set(x, "bitbucketServerTriggerConfig", js.undefined)
+    
     inline def setBuild(value: SchemaBuild): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
+    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
+    
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    
+    inline def setEventTypeNull: Self = StObject.set(x, "eventType", null)
+    
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
+    inline def setFilenameNull: Self = StObject.set(x, "filename", null)
+    
     inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterNull: Self = StObject.set(x, "filter", null)
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setGitFileSource(value: SchemaGitFileSource): Self = StObject.set(x, "gitFileSource", value.asInstanceOf[js.Any])
+    
+    inline def setGitFileSourceUndefined: Self = StObject.set(x, "gitFileSource", js.undefined)
     
     inline def setGithub(value: SchemaGitHubEventsConfig): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
     
@@ -117,26 +205,78 @@ object SchemaBuildTrigger {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setIgnoredFiles(value: js.Array[String]): Self = StObject.set(x, "ignoredFiles", value.asInstanceOf[js.Any])
     
+    inline def setIgnoredFilesNull: Self = StObject.set(x, "ignoredFiles", null)
+    
     inline def setIgnoredFilesUndefined: Self = StObject.set(x, "ignoredFiles", js.undefined)
     
-    inline def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value :_*))
+    inline def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value*))
+    
+    inline def setIncludeBuildLogs(value: String): Self = StObject.set(x, "includeBuildLogs", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeBuildLogsNull: Self = StObject.set(x, "includeBuildLogs", null)
+    
+    inline def setIncludeBuildLogsUndefined: Self = StObject.set(x, "includeBuildLogs", js.undefined)
     
     inline def setIncludedFiles(value: js.Array[String]): Self = StObject.set(x, "includedFiles", value.asInstanceOf[js.Any])
     
+    inline def setIncludedFilesNull: Self = StObject.set(x, "includedFiles", null)
+    
     inline def setIncludedFilesUndefined: Self = StObject.set(x, "includedFiles", js.undefined)
     
-    inline def setIncludedFilesVarargs(value: String*): Self = StObject.set(x, "includedFiles", js.Array(value :_*))
+    inline def setIncludedFilesVarargs(value: String*): Self = StObject.set(x, "includedFiles", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPubsubConfig(value: SchemaPubsubConfig): Self = StObject.set(x, "pubsubConfig", value.asInstanceOf[js.Any])
+    
+    inline def setPubsubConfigUndefined: Self = StObject.set(x, "pubsubConfig", js.undefined)
+    
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNameNull: Self = StObject.set(x, "resourceName", null)
+    
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountNull: Self = StObject.set(x, "serviceAccount", null)
+    
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    
+    inline def setSourceToBuild(value: SchemaGitRepoSource): Self = StObject.set(x, "sourceToBuild", value.asInstanceOf[js.Any])
+    
+    inline def setSourceToBuildUndefined: Self = StObject.set(x, "sourceToBuild", js.undefined)
     
     inline def setSubstitutions(value: StringDictionary[String]): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
+    inline def setSubstitutionsNull: Self = StObject.set(x, "substitutions", null)
+    
     inline def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsNull: Self = StObject.set(x, "tags", null)
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTriggerTemplate(value: SchemaRepoSource): Self = StObject.set(x, "triggerTemplate", value.asInstanceOf[js.Any])
     
     inline def setTriggerTemplateUndefined: Self = StObject.set(x, "triggerTemplate", js.undefined)
+    
+    inline def setWebhookConfig(value: SchemaWebhookConfig): Self = StObject.set(x, "webhookConfig", value.asInstanceOf[js.Any])
+    
+    inline def setWebhookConfigUndefined: Self = StObject.set(x, "webhookConfig", js.undefined)
   }
 }

@@ -12,7 +12,7 @@ trait IAnchorScrollProvider
 }
 object IAnchorScrollProvider {
   
-  inline def apply($get: js.Any, disableAutoScrolling: () => Unit): IAnchorScrollProvider = {
+  inline def apply($get: Any, disableAutoScrolling: () => Unit): IAnchorScrollProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], disableAutoScrolling = js.Any.fromFunction0(disableAutoScrolling))
     __obj.asInstanceOf[IAnchorScrollProvider]
   }

@@ -9,7 +9,7 @@ object gherkinLineMod {
   
   @JSImport("gherkin/dist/src/GherkinLine", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with GherkinLine {
     def this(lineText: String, lineNumber: Double) = this()
@@ -36,10 +36,10 @@ object gherkinLineMod {
     var isEmpty: Boolean = js.native
     
     /* private */ /* CompleteClass */
-    override val lineNumber: js.Any = js.native
+    override val lineNumber: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val lineText: js.Any = js.native
+    override val lineText: Any = js.native
     
     /* CompleteClass */
     override def startsWith(prefix: String): Boolean = js.native
@@ -70,9 +70,9 @@ object gherkinLineMod {
     
     var isEmpty: Boolean
     
-    /* private */ val lineNumber: js.Any
+    /* private */ val lineNumber: Any
     
-    /* private */ val lineText: js.Any
+    /* private */ val lineText: Any
     
     def startsWith(prefix: String): Boolean
     
@@ -92,8 +92,8 @@ object gherkinLineMod {
       getTags: () => js.Array[Column],
       indent: Double,
       isEmpty: Boolean,
-      lineNumber: js.Any,
-      lineText: js.Any,
+      lineNumber: Any,
+      lineText: Any,
       startsWith: String => Boolean,
       startsWithTitleKeyword: String => Boolean,
       text: String,
@@ -119,9 +119,9 @@ object gherkinLineMod {
       
       inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      inline def setLineNumber(value: js.Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      inline def setLineText(value: js.Any): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
+      inline def setLineText(value: Any): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
       
       inline def setStartsWith(value: String => Boolean): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
       

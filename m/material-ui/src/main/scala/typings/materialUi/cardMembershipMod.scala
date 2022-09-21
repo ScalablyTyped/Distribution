@@ -10,10 +10,10 @@ object cardMembershipMod {
   
   @JSImport("material-ui/svg-icons/action/card-membership", JSImport.Default)
   @js.native
-  class default () extends ActionCardMembership
+  open class default () extends ActionCardMembership
   
   @JSImport("material-ui/svg-icons/action/card-membership", "ActionCardMembership")
   @js.native
-  class ActionCardMembership ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionCardMembership ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

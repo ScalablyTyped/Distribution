@@ -10,10 +10,10 @@ object lastPageMod {
   
   @JSImport("material-ui/svg-icons/navigation/last-page", JSImport.Default)
   @js.native
-  class default () extends NavigationLastPage
+  open class default () extends NavigationLastPage
   
   @JSImport("material-ui/svg-icons/navigation/last-page", "NavigationLastPage")
   @js.native
-  class NavigationLastPage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationLastPage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(text: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(text: String): Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("jsonic", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def stringify(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(`val`: js.Any, opts: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(`val`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(`val`: Any, opts: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -44,7 +44,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setMaxchars(value: Double): Self = StObject.set(x, "maxchars", value.asInstanceOf[js.Any])
       
@@ -58,7 +58,7 @@ object mod {
       
       inline def setOmitUndefined: Self = StObject.set(x, "omit", js.undefined)
       
-      inline def setOmitVarargs(value: String*): Self = StObject.set(x, "omit", js.Array(value :_*))
+      inline def setOmitVarargs(value: String*): Self = StObject.set(x, "omit", js.Array(value*))
     }
   }
 }

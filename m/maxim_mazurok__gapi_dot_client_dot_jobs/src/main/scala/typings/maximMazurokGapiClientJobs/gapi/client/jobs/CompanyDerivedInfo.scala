@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompanyDerivedInfo extends StObject {
   
-  /** A structured headquarters location of the company, resolved from Company.hq_location if provided. */
+  /** A structured headquarters location of the company, resolved from Company.headquarters_address if provided. */
   var headquartersLocation: js.UndefOr[Location] = js.undefined
 }
 object CompanyDerivedInfo {

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ComponentCollection")
 @js.native
-class ComponentCollection () extends StObject {
+open class ComponentCollection () extends StObject {
   
-  def add(json: js.Any): Unit = js.native
+  def add(json: ICustomQuestionTypeConfiguration): Unit = js.native
   
   def clear(): Unit = js.native
   
@@ -18,9 +18,11 @@ class ComponentCollection () extends StObject {
   
   def createQuestion(name: String, questionJSON: ComponentQuestionJSON): Question = js.native
   
+  var customQuestionValues: Any = js.native
+  
   def getCustomQuestionByName(name: String): ComponentQuestionJSON = js.native
   
-  val items: js.Array[ComponentQuestionJSON] = js.native
+  def items: Any = js.native
   
   def onAddingJson(name: String, isComposite: Boolean): Unit = js.native
   

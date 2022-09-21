@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.AllJoyn
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
@@ -17,7 +16,7 @@ trait AllJoynAboutData extends StObject {
   var appNames: IMap[String, String]
   
   /** The date of manufacture. */
-  var dateOfManufacture: Date
+  var dateOfManufacture: js.Date
   
   /** The default app name assigned by the manufacturer- either the developer or the OEM. This property is a shortcut to the entry in the AppNames property for the DefaultLanguage . */
   var defaultAppName: String
@@ -51,7 +50,7 @@ object AllJoynAboutData {
   inline def apply(
     appId: String,
     appNames: IMap[String, String],
-    dateOfManufacture: Date,
+    dateOfManufacture: js.Date,
     defaultAppName: String,
     defaultDescription: String,
     defaultManufacturer: String,
@@ -72,7 +71,7 @@ object AllJoynAboutData {
     
     inline def setAppNames(value: IMap[String, String]): Self = StObject.set(x, "appNames", value.asInstanceOf[js.Any])
     
-    inline def setDateOfManufacture(value: Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
+    inline def setDateOfManufacture(value: js.Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
     
     inline def setDefaultAppName(value: String): Self = StObject.set(x, "defaultAppName", value.asInstanceOf[js.Any])
     

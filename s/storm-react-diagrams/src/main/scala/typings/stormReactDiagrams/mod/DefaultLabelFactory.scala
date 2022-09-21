@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "DefaultLabelFactory")
 @js.native
-class DefaultLabelFactory ()
+open class DefaultLabelFactory ()
   extends typings.stormReactDiagrams.defaultLabelFactoryMod.DefaultLabelFactory

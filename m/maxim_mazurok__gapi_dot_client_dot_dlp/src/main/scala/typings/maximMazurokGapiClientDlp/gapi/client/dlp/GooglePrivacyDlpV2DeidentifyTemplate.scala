@@ -9,7 +9,7 @@ trait GooglePrivacyDlpV2DeidentifyTemplate extends StObject {
   /** Output only. The creation timestamp of an inspectTemplate. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** ///////////// // The core content of the template // /////////////// */
+  /** The core content of the template. */
   var deidentifyConfig: js.UndefOr[GooglePrivacyDlpV2DeidentifyConfig] = js.undefined
   
   /** Short description (max 256 chars). */

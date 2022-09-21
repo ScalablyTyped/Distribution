@@ -9,17 +9,17 @@ trait PullTypeAliasSymbol
   extends StObject
      with PullTypeSymbol {
   
-  /* private */ var _assignedContainer: js.Any = js.native
+  /* private */ var _assignedContainer: Any = js.native
   
-  /* private */ var _assignedType: js.Any = js.native
+  /* private */ var _assignedType: Any = js.native
   
-  /* private */ var _assignedValue: js.Any = js.native
+  /* private */ var _assignedValue: Any = js.native
   
-  /* private */ var _isUsedAsValue: js.Any = js.native
+  /* private */ var _isUsedAsValue: Any = js.native
   
-  /* private */ var _isUsedInExportAlias: js.Any = js.native
+  /* private */ var _isUsedInExportAlias: Any = js.native
   
-  /* private */ var _typeUsedExternally: js.Any = js.native
+  /* private */ var _typeUsedExternally: Any = js.native
   
   def addLinkedAliasSymbol(contingentValueSymbol: PullTypeAliasSymbol): Unit = js.native
   
@@ -44,9 +44,9 @@ trait PullTypeAliasSymbol
   
   def isUsedInExportedAlias(): Boolean = js.native
   
-  /* private */ var linkedAliasSymbols: js.Any = js.native
+  /* private */ var linkedAliasSymbols: Any = js.native
   
-  /* private */ var retrievingExportAssignment: js.Any = js.native
+  /* private */ var retrievingExportAssignment: Any = js.native
   
   def setAssignedContainerSymbol(container: PullContainerSymbol): Unit = js.native
   

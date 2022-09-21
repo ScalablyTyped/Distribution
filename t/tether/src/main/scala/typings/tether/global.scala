@@ -12,7 +12,7 @@ object global {
     // global Tether constructor
     @JSGlobal("Tether")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.tether.mod.^ {
       def this(options: ITetherOptions) = this()
     }

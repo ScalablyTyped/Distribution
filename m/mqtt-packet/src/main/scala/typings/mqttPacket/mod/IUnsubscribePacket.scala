@@ -1,6 +1,5 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.unsubscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ trait IUnsubscribePacket
   @JSName("cmd")
   var cmd_IUnsubscribePacket: unsubscribe
   
-  var properties: js.UndefOr[ReasonString] = js.undefined
+  var properties: js.UndefOr[typings.mqttPacket.anon.UserProperties] = js.undefined
   
   var unsubscriptions: js.Array[String]
 }
@@ -29,12 +28,12 @@ object IUnsubscribePacket {
     
     inline def setCmd(value: unsubscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: typings.mqttPacket.anon.UserProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     inline def setUnsubscriptions(value: js.Array[String]): Self = StObject.set(x, "unsubscriptions", value.asInstanceOf[js.Any])
     
-    inline def setUnsubscriptionsVarargs(value: String*): Self = StObject.set(x, "unsubscriptions", js.Array(value :_*))
+    inline def setUnsubscriptionsVarargs(value: String*): Self = StObject.set(x, "unsubscriptions", js.Array(value*))
   }
 }

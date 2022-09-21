@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ChangeAlert")
 @js.native
-class ChangeAlert ()
+open class ChangeAlert ()
   extends StObject
      with typings.sharepoint.SP.ChangeAlert

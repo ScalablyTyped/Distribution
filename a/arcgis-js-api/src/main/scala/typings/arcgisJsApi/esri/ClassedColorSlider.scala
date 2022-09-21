@@ -28,8 +28,8 @@ trait ClassedColorSlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider.html#updateFromRendererResult)
     */
-  def updateFromRendererResult(rendererResult: ClassBreaksRendererResult): Unit = js.native
-  def updateFromRendererResult(rendererResult: ClassBreaksRendererResult, histogramResult: HistogramResult): Unit = js.native
+  def updateFromRendererResult(rendererResult: ClassBreaksRendererResult): scala.Unit = js.native
+  def updateFromRendererResult(rendererResult: ClassBreaksRendererResult, histogramResult: HistogramResult): scala.Unit = js.native
   
   /**
     * The view model for the ClassedColorSlider widget.

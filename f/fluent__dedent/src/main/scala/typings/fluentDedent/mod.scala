@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(strings: TemplateStringsArray, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("@fluent/dedent", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(strings: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

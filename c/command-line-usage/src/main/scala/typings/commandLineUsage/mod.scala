@@ -27,7 +27,7 @@ object mod {
       *     consistent throughout the array.
       *  4. An object with two properties - data and options. In this case, the data and options will be passed directly to the underlying table layout module for rendering.
       */
-    var content: js.UndefOr[String | (js.Array[js.Any | String]) | Data] = js.undefined
+    var content: js.UndefOr[String | (js.Array[Any | String]) | Data] = js.undefined
     
     /** The section header, always bold and underlined. */
     var header: js.UndefOr[String] = js.undefined
@@ -44,11 +44,11 @@ object mod {
     
     extension [Self <: Content](x: Self) {
       
-      inline def setContent(value: String | (js.Array[js.Any | String]) | Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | (js.Array[Any | String]) | Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: (js.Any | String)*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: (Any | String)*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -70,7 +70,7 @@ object mod {
     var defaultOption: js.UndefOr[Boolean] = js.undefined
     
     /** An initial value for the option. */
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     /** A string describing the option. */
     var description: js.UndefOr[String] = js.undefined
@@ -95,7 +95,7 @@ object mod {
       *
       * The most common values used are String (the default), Number and Boolean but you can use a custom function.
       */
-    var `type`: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[Any] = js.undefined
     
     /** A string to replace the default type string (e.g. <string>). It's often more useful to set a more descriptive type label, like <ms>, <files>, <command>, etc.. */
     var typeLabel: js.UndefOr[String] = js.undefined
@@ -117,7 +117,7 @@ object mod {
       
       inline def setDefaultOptionUndefined: Self = StObject.set(x, "defaultOption", js.undefined)
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -129,7 +129,7 @@ object mod {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setLazyMultiple(value: Boolean): Self = StObject.set(x, "lazyMultiple", value.asInstanceOf[js.Any])
       
@@ -141,7 +141,7 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeLabel(value: String): Self = StObject.set(x, "typeLabel", value.asInstanceOf[js.Any])
       
@@ -171,7 +171,7 @@ object mod {
     var reverseNameOrder: js.UndefOr[Boolean] = js.undefined
     
     /** An options object suitable for passing into table-layout. */
-    var tableOptions: js.UndefOr[js.Any] = js.undefined
+    var tableOptions: js.UndefOr[Any] = js.undefined
   }
   object OptionList {
     
@@ -186,7 +186,7 @@ object mod {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -196,19 +196,19 @@ object mod {
       
       inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
+      inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value*))
       
       inline def setOptionList(value: js.Array[OptionDefinition]): Self = StObject.set(x, "optionList", value.asInstanceOf[js.Any])
       
       inline def setOptionListUndefined: Self = StObject.set(x, "optionList", js.undefined)
       
-      inline def setOptionListVarargs(value: OptionDefinition*): Self = StObject.set(x, "optionList", js.Array(value :_*))
+      inline def setOptionListVarargs(value: OptionDefinition*): Self = StObject.set(x, "optionList", js.Array(value*))
       
       inline def setReverseNameOrder(value: Boolean): Self = StObject.set(x, "reverseNameOrder", value.asInstanceOf[js.Any])
       
       inline def setReverseNameOrderUndefined: Self = StObject.set(x, "reverseNameOrder", js.undefined)
       
-      inline def setTableOptions(value: js.Any): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
+      inline def setTableOptions(value: Any): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
       
       inline def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
     }

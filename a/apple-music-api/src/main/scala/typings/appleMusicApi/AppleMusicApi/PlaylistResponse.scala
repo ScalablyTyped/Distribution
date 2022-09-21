@@ -20,6 +20,6 @@ object PlaylistResponse {
     
     inline def setData(value: js.Array[Playlist]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Playlist*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Playlist*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

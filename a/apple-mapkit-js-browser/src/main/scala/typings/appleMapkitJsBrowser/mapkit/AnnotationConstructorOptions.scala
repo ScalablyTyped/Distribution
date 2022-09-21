@@ -59,7 +59,7 @@ trait AnnotationConstructorOptions extends StObject {
   /**
     * Data you define that is assigned to the annotation.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * A hint the map uses to prioritize displaying the annotation.
@@ -153,7 +153,7 @@ object AnnotationConstructorOptions {
     
     inline def setCollisionModeUndefined: Self = StObject.set(x, "collisionMode", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

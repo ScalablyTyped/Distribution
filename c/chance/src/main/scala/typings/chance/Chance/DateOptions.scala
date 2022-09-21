@@ -1,6 +1,5 @@
 package typings.chance.Chance
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +10,9 @@ trait DateOptions extends StObject {
   
   var day: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Date] = js.undefined
+  var max: js.UndefOr[js.Date] = js.undefined
   
-  var min: js.UndefOr[Date] = js.undefined
+  var min: js.UndefOr[js.Date] = js.undefined
   
   var month: js.UndefOr[Double] = js.undefined
   
@@ -38,11 +37,11 @@ object DateOptions {
     
     inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    inline def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     

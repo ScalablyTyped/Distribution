@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.RegExp
 import typings.uirouterCore.paramMod.Param
 import typings.uirouterCore.paramTypesMod.ParamTypes
 import typings.uirouterCore.routerMod.UIRouter
@@ -15,7 +14,7 @@ object libUrlMod {
   
   @JSImport("@uirouter/core/lib/url", "BaseUrlRule")
   @js.native
-  class BaseUrlRule protected ()
+  open class BaseUrlRule protected ()
     extends typings.uirouterCore.urlRuleMod.BaseUrlRule {
     def this(`match`: UrlRuleMatchFn) = this()
     def this(`match`: UrlRuleMatchFn, handler: UrlRuleHandlerFn) = this()
@@ -23,21 +22,21 @@ object libUrlMod {
   
   @JSImport("@uirouter/core/lib/url", "ParamFactory")
   @js.native
-  class ParamFactory protected ()
+  open class ParamFactory protected ()
     extends typings.uirouterCore.urlMatcherFactoryMod.ParamFactory {
     def this(router: UIRouter) = this()
   }
   
   @JSImport("@uirouter/core/lib/url", "UrlConfig")
   @js.native
-  class UrlConfig protected ()
+  open class UrlConfig protected ()
     extends typings.uirouterCore.urlConfigMod.UrlConfig {
     /** @internal */ def this(/** @internal */ router: UIRouter) = this()
   }
   
   @JSImport("@uirouter/core/lib/url", "UrlMatcher")
   @js.native
-  class UrlMatcher protected ()
+  open class UrlMatcher protected ()
     extends typings.uirouterCore.urlMatcherMod.UrlMatcher {
     /**
       * @param pattern The pattern to compile into a matcher.
@@ -81,11 +80,11 @@ object libUrlMod {
     /** @internal */
     @JSImport("@uirouter/core/lib/url", "UrlMatcher.nameValidator")
     @js.native
-    def nameValidator: RegExp = js.native
-    inline def nameValidator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
+    def nameValidator: js.RegExp = js.native
+    inline def nameValidator_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
     
     /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-    inline def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** @internal Given a matcher, return an array with the matcher's query params */
     inline def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[Param]]
@@ -93,14 +92,14 @@ object libUrlMod {
   
   @JSImport("@uirouter/core/lib/url", "UrlMatcherFactory")
   @js.native
-  class UrlMatcherFactory protected ()
+  open class UrlMatcherFactory protected ()
     extends typings.uirouterCore.urlMatcherFactoryMod.UrlMatcherFactory {
     def this(/** @internal */ router: UIRouter) = this()
   }
   
   @JSImport("@uirouter/core/lib/url", "UrlRouter")
   @js.native
-  class UrlRouter protected ()
+  open class UrlRouter protected ()
     extends typings.uirouterCore.urlRouterMod.UrlRouter {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
@@ -108,7 +107,7 @@ object libUrlMod {
   
   @JSImport("@uirouter/core/lib/url", "UrlRuleFactory")
   @js.native
-  class UrlRuleFactory protected ()
+  open class UrlRuleFactory protected ()
     extends typings.uirouterCore.urlRuleMod.UrlRuleFactory {
     def this(router: UIRouter) = this()
   }
@@ -119,12 +118,12 @@ object libUrlMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isUrlRule(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isUrlRule(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("@uirouter/core/lib/url", "UrlRules")
   @js.native
-  class UrlRules protected ()
+  open class UrlRules protected ()
     extends typings.uirouterCore.urlRulesMod.UrlRules {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
@@ -132,7 +131,7 @@ object libUrlMod {
   
   @JSImport("@uirouter/core/lib/url", "UrlService")
   @js.native
-  class UrlService protected ()
+  open class UrlService protected ()
     extends typings.uirouterCore.urlServiceMod.UrlService {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sjcl", "SjclECDSASecretKey")
 @js.native
-class SjclECDSASecretKey () extends SjclECCSecretKey {
+open class SjclECDSASecretKey () extends SjclECCSecretKey {
   
   def sign(hash: BitArray_, paranoia: Double, fakeLegacyVersion: Boolean): BitArray_ = js.native
   def sign(hash: BitArray_, paranoia: Double, fakeLegacyVersion: Boolean, fixedKForTesting: BigNumber): BitArray_ = js.native

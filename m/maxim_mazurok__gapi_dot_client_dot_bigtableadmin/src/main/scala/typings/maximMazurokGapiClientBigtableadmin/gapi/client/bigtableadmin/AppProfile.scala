@@ -17,7 +17,7 @@ trait AppProfile extends StObject {
   var etag: js.UndefOr[String] = js.undefined
   
   /** Use a multi-cluster routing policy. */
-  var multiClusterRoutingUseAny: js.UndefOr[js.Any] = js.undefined
+  var multiClusterRoutingUseAny: js.UndefOr[MultiClusterRoutingUseAny] = js.undefined
   
   /** The unique name of the app profile. Values are of the form `projects/{project}/instances/{instance}/appProfiles/_a-zA-Z0-9*`. */
   var name: js.UndefOr[String] = js.undefined
@@ -42,7 +42,7 @@ object AppProfile {
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    inline def setMultiClusterRoutingUseAny(value: js.Any): Self = StObject.set(x, "multiClusterRoutingUseAny", value.asInstanceOf[js.Any])
+    inline def setMultiClusterRoutingUseAny(value: MultiClusterRoutingUseAny): Self = StObject.set(x, "multiClusterRoutingUseAny", value.asInstanceOf[js.Any])
     
     inline def setMultiClusterRoutingUseAnyUndefined: Self = StObject.set(x, "multiClusterRoutingUseAny", js.undefined)
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access._ChildLabel")
 @js.native
-/* private */ class ChildLabel ()
+/* private */ open class ChildLabel ()
   extends StObject
      with typings.activexAccess.Access.ChildLabel

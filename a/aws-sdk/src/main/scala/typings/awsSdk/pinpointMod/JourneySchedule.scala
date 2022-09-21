@@ -9,12 +9,12 @@ trait JourneySchedule extends StObject {
   /**
     * The scheduled time, in ISO 8601 format, when the journey ended or will end.
     */
-  var EndTime: js.UndefOr[timestampIso8601] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The scheduled time, in ISO 8601 format, when the journey began or will begin.
     */
-  var StartTime: js.UndefOr[timestampIso8601] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The starting UTC offset for the journey schedule, if the value of the journey's LocalTime property is true. Valid values are: UTC,
@@ -35,11 +35,11 @@ object JourneySchedule {
   
   extension [Self <: JourneySchedule](x: Self) {
     
-    inline def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    inline def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

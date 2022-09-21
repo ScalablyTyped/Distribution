@@ -131,7 +131,7 @@ object Search {
   
   @JSGlobal("Windows.Storage.Search.QueryOptions")
   @js.native
-  class QueryOptions ()
+  open class QueryOptions ()
     extends StObject
        with typings.winrt.Windows.Storage.Search.QueryOptions {
     def this(query: CommonFolderQuery) = this()
@@ -179,7 +179,7 @@ object Search {
   
   @JSGlobal("Windows.Storage.Search.SortEntryVector")
   @js.native
-  class SortEntryVector ()
+  open class SortEntryVector ()
     extends StObject
        with typings.winrt.Windows.Storage.Search.SortEntryVector {
     
@@ -189,7 +189,7 @@ object Search {
   
   @JSGlobal("Windows.Storage.Search.StorageFileQueryResult")
   @js.native
-  class StorageFileQueryResult ()
+  open class StorageFileQueryResult ()
     extends StObject
        with typings.winrt.Windows.Storage.Search.StorageFileQueryResult {
     
@@ -197,7 +197,7 @@ object Search {
     override def applyNewQueryOptions(newQueryOptions: typings.winrt.Windows.Storage.Search.QueryOptions): Unit = js.native
     
     /* CompleteClass */
-    override def findStartIndexAsync(value: js.Any): IAsyncOperation[Double] = js.native
+    override def findStartIndexAsync(value: Any): IAsyncOperation[Double] = js.native
     
     /* CompleteClass */
     var folder: typings.winrt.Windows.Storage.StorageFolder = js.native
@@ -209,15 +209,15 @@ object Search {
     override def getItemCountAsync(): IAsyncOperation[Double] = js.native
     
     /* CompleteClass */
-    var oncontentschanged: js.Any = js.native
+    var oncontentschanged: Any = js.native
     
     /* CompleteClass */
-    var onoptionschanged: js.Any = js.native
+    var onoptionschanged: Any = js.native
   }
   
   @JSGlobal("Windows.Storage.Search.StorageFolderQueryResult")
   @js.native
-  class StorageFolderQueryResult ()
+  open class StorageFolderQueryResult ()
     extends StObject
        with typings.winrt.Windows.Storage.Search.StorageFolderQueryResult {
     
@@ -225,7 +225,7 @@ object Search {
     override def applyNewQueryOptions(newQueryOptions: typings.winrt.Windows.Storage.Search.QueryOptions): Unit = js.native
     
     /* CompleteClass */
-    override def findStartIndexAsync(value: js.Any): IAsyncOperation[Double] = js.native
+    override def findStartIndexAsync(value: Any): IAsyncOperation[Double] = js.native
     
     /* CompleteClass */
     var folder: typings.winrt.Windows.Storage.StorageFolder = js.native
@@ -237,15 +237,15 @@ object Search {
     override def getItemCountAsync(): IAsyncOperation[Double] = js.native
     
     /* CompleteClass */
-    var oncontentschanged: js.Any = js.native
+    var oncontentschanged: Any = js.native
     
     /* CompleteClass */
-    var onoptionschanged: js.Any = js.native
+    var onoptionschanged: Any = js.native
   }
   
   @JSGlobal("Windows.Storage.Search.StorageItemQueryResult")
   @js.native
-  class StorageItemQueryResult ()
+  open class StorageItemQueryResult ()
     extends StObject
        with typings.winrt.Windows.Storage.Search.StorageItemQueryResult {
     
@@ -253,7 +253,7 @@ object Search {
     override def applyNewQueryOptions(newQueryOptions: typings.winrt.Windows.Storage.Search.QueryOptions): Unit = js.native
     
     /* CompleteClass */
-    override def findStartIndexAsync(value: js.Any): IAsyncOperation[Double] = js.native
+    override def findStartIndexAsync(value: Any): IAsyncOperation[Double] = js.native
     
     /* CompleteClass */
     var folder: typings.winrt.Windows.Storage.StorageFolder = js.native
@@ -265,9 +265,9 @@ object Search {
     override def getItemCountAsync(): IAsyncOperation[Double] = js.native
     
     /* CompleteClass */
-    var oncontentschanged: js.Any = js.native
+    var oncontentschanged: Any = js.native
     
     /* CompleteClass */
-    var onoptionschanged: js.Any = js.native
+    var onoptionschanged: Any = js.native
   }
 }

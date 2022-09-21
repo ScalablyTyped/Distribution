@@ -37,7 +37,7 @@ object mod {
     extends StObject
        with ProtectionInstance {
     
-    def apply(req: js.Object, res: js.Object, next: js.Function0[js.Any]): js.Any = js.native
+    def apply(req: js.Object, res: js.Object, next: js.Function0[Any]): Any = js.native
   }
   
   type KoaFrameworkSelection = koa
@@ -47,7 +47,7 @@ object mod {
     extends StObject
        with ProtectionInstance {
     
-    def apply(ctx: js.Object, next: js.Function0[js.Any]): js.Any = js.native
+    def apply(ctx: js.Object, next: js.Function0[Any]): Any = js.native
   }
   
   trait ProtectionConfig extends StObject {

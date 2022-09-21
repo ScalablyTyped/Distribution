@@ -122,7 +122,7 @@ object proxy {
       
       inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
       
-      inline def setRequestHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+      inline def setRequestHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
       
       inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
@@ -150,7 +150,10 @@ object proxy {
     /** Do not prompt for authentication if password is saved. */
     var autoLogin: js.UndefOr[Boolean] = js.undefined
     
-    /** The address of the ftp proxy, can include a port. */
+    /**
+      * The address of the ftp proxy, can include a port. Deprecated since Firefox 88.
+      * @deprecated The address of the ftp proxy, can include a port. Deprecated since Firefox 88.
+      */
     var ftp: js.UndefOr[String] = js.undefined
     
     /** The address of the http proxy, can include a port. */

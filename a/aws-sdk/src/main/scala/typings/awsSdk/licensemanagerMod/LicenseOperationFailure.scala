@@ -14,7 +14,7 @@ trait LicenseOperationFailure extends StObject {
   /**
     * Failure time.
     */
-  var FailureTime: js.UndefOr[DateTime] = js.undefined
+  var FailureTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Reserved.
@@ -37,7 +37,7 @@ trait LicenseOperationFailure extends StObject {
   var ResourceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * ID of the AWS account that owns the resource.
+    * ID of the Amazon Web Services account that owns the resource.
     */
   var ResourceOwnerId: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ object LicenseOperationFailure {
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    inline def setFailureTime(value: DateTime): Self = StObject.set(x, "FailureTime", value.asInstanceOf[js.Any])
+    inline def setFailureTime(value: js.Date): Self = StObject.set(x, "FailureTime", value.asInstanceOf[js.Any])
     
     inline def setFailureTimeUndefined: Self = StObject.set(x, "FailureTime", js.undefined)
     
@@ -67,7 +67,7 @@ object LicenseOperationFailure {
     
     inline def setMetadataListUndefined: Self = StObject.set(x, "MetadataList", js.undefined)
     
-    inline def setMetadataListVarargs(value: Metadata*): Self = StObject.set(x, "MetadataList", js.Array(value :_*))
+    inline def setMetadataListVarargs(value: Metadata*): Self = StObject.set(x, "MetadataList", js.Array(value*))
     
     inline def setOperationName(value: String): Self = StObject.set(x, "OperationName", value.asInstanceOf[js.Any])
     

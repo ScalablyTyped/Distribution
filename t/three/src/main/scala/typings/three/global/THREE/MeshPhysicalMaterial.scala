@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.MeshPhysicalMaterial")
 @js.native
-class MeshPhysicalMaterial protected ()
+open class MeshPhysicalMaterial ()
   extends typings.three.mod.MeshPhysicalMaterial {
   def this(parameters: MeshPhysicalMaterialParameters) = this()
 }

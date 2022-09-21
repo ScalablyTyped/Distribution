@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-process
 
-Typings are for version 1.4.4
+Typings are for version 1.4.7
 
 ## Library description:
 find process info by port/pid/name etc.
@@ -10,10 +10,10 @@ find process info by port/pid/name etc.
 | ------------------ | :-------------: |
 | Full name          | find-process |
 | Keywords           | node, process, pid, port |
-| # releases         | 10 |
-| # dependents       | 98 |
-| # downloads        | 18527068 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2640593.6666666665 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/yibn2008/find-process#readme)

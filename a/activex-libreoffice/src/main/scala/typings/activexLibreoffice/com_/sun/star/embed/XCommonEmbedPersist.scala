@@ -46,7 +46,7 @@ object XCommonEmbedPersist {
   inline def apply(
     acquire: () => Unit,
     isReadonly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reload: (SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit,
     storeOwn: () => Unit

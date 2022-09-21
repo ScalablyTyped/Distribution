@@ -5,7 +5,6 @@ import typings.awsSdkClientPinpointBrowser.typesEndpointItemResponseMod.Endpoint
 import typings.awsSdkClientPinpointBrowser.typesEndpointItemResponseMod.UnmarshalledEndpointItemResponse
 import typings.awsSdkClientPinpointBrowser.typesEventItemResponseMod.EventItemResponse
 import typings.awsSdkClientPinpointBrowser.typesEventItemResponseMod.UnmarshalledEventItemResponse
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object typesItemResponseMod {
       * A multipart response object that contains a key and value for each event ID in the request. In each object, the event ID is the key, and an EventItemResponse object is the value.
       */
     var EventsItemResponse: js.UndefOr[
-        StringDictionary[EventItemResponse] | (Iterable[js.Tuple2[String, EventItemResponse]])
+        StringDictionary[EventItemResponse] | (js.Iterable[js.Tuple2[String, EventItemResponse]])
       ] = js.undefined
   }
   object ItemResponse {
@@ -41,7 +40,7 @@ object typesItemResponseMod {
       
       inline def setEndpointItemResponseUndefined: Self = StObject.set(x, "EndpointItemResponse", js.undefined)
       
-      inline def setEventsItemResponse(value: StringDictionary[EventItemResponse] | (Iterable[js.Tuple2[String, EventItemResponse]])): Self = StObject.set(x, "EventsItemResponse", value.asInstanceOf[js.Any])
+      inline def setEventsItemResponse(value: StringDictionary[EventItemResponse] | (js.Iterable[js.Tuple2[String, EventItemResponse]])): Self = StObject.set(x, "EventsItemResponse", value.asInstanceOf[js.Any])
       
       inline def setEventsItemResponseUndefined: Self = StObject.set(x, "EventsItemResponse", js.undefined)
     }

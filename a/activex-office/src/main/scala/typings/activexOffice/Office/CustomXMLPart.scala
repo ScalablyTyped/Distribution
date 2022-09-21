@@ -207,7 +207,7 @@ trait CustomXMLPart extends StObject {
     NodeValue: String
   ): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val BuiltIn: Boolean = js.native
   
@@ -237,7 +237,7 @@ trait CustomXMLPart extends StObject {
   /* private */ @JSName("Office.CustomXMLPart_typekey")
   var OfficeDotCustomXMLPart_typekey: CustomXMLPart = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SchemaCollection(Index: String): CustomXMLSchema = js.native
   def SchemaCollection(Index: Double): CustomXMLSchema = js.native

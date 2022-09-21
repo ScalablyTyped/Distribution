@@ -10,15 +10,15 @@ Determine if the JS environment has Symbol support. Supports spec, or shams.
 | ------------------ | :-------------: |
 | Full name          | has-symbols |
 | Keywords           | Symbol, symbols, typeof, sham, polyfill, native, core-js, ES6 |
-| # releases         | 2 |
-| # dependents       | 111 |
-| # downloads        | 811116377 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4671486E8 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/ljharb/has-symbols#readme)
 - [Bugs](https://github.com/ljharb/has-symbols/issues)
-- [Repository](https://github.com/ljharb/has-symbols)
+- [Repository](https://github.com/inspect-js/has-symbols)
 - [Npm](https://www.npmjs.com/package/has-symbols)
     
 

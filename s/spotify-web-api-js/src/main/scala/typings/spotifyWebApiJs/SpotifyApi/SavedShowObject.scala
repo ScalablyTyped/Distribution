@@ -12,12 +12,12 @@ trait SavedShowObject extends StObject {
   
   var added_at: String
   
-  var album: ShowObjectFull
+  var show: ShowObjectSimplified
 }
 object SavedShowObject {
   
-  inline def apply(added_at: String, album: ShowObjectFull): SavedShowObject = {
-    val __obj = js.Dynamic.literal(added_at = added_at.asInstanceOf[js.Any], album = album.asInstanceOf[js.Any])
+  inline def apply(added_at: String, show: ShowObjectSimplified): SavedShowObject = {
+    val __obj = js.Dynamic.literal(added_at = added_at.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedShowObject]
   }
   
@@ -25,6 +25,6 @@ object SavedShowObject {
     
     inline def setAdded_at(value: String): Self = StObject.set(x, "added_at", value.asInstanceOf[js.Any])
     
-    inline def setAlbum(value: ShowObjectFull): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    inline def setShow(value: ShowObjectSimplified): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

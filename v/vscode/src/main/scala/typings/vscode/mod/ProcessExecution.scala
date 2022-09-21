@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "ProcessExecution")
 @js.native
-class ProcessExecution protected () extends StObject {
+open class ProcessExecution protected () extends StObject {
   /**
     * Creates a process execution.
     *

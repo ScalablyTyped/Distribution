@@ -6,7 +6,7 @@ import typings.openfin.utilsMod.ViewComponent
 import typings.openfin.v2MainMod.Fin
 import typings.openfin.v2MainMod.View
 import typings.openfin.viewViewMod.ViewCreationOptions
-import typings.resizeObserverBrowser.ResizeObserver
+import typings.std.ResizeObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,18 +15,18 @@ object resizableViewMod {
   
   @JSImport("openfin/_v2/api/platform/resizable-view", "ResizableView")
   @js.native
-  class ResizableView protected () extends StObject {
+  open class ResizableView protected () extends StObject {
     def this(fin: Fin, hasContainerComponentState: ViewComponent, viewObserver: ResizeObserver) = this()
     
     var container: Container = js.native
     
     def createOrAttachView(): js.Promise[Unit] = js.native
     
-    /* private */ var fin: js.Any = js.native
+    /* private */ var fin: Any = js.native
     
     var ofView: View = js.native
     
-    var options: js.Any = js.native
+    var options: Any = js.native
     
     def renderIntoComponent(): js.Promise[Unit] = js.native
     

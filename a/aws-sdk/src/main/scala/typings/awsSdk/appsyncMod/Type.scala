@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Type extends StObject {
   
   /**
-    * The type ARN.
+    * The type Amazon Resource Name (ARN).
     */
   var arn: js.UndefOr[String] = js.undefined
   

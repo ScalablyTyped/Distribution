@@ -10,10 +10,10 @@ An integration test framework for React Native.
 | ------------------ | :-------------: |
 | Full name          | cavy |
 | Keywords           | react, react native, ios, android, integration tests, testing, test, specs |
-| # releases         | 18 |
-| # dependents       | 2 |
-| # downloads        | 57830 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4382.333333333333 |
+| # stars            | 1352.0 |
 
 ## Links
 - [Homepage](https://github.com/pixielabs/cavy#readme)

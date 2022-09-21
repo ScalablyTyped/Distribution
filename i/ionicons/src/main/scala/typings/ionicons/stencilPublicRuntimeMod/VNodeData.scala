@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VNodeData
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /* prop */ StringDictionary[Any] {
   
   var `class`: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[Any] = js.undefined
 }
 object VNodeData {
   
@@ -26,7 +26,7 @@ object VNodeData {
     
     inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

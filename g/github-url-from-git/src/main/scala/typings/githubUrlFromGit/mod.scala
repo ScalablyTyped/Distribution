@@ -1,6 +1,5 @@
 package typings.githubUrlFromGit
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,8 +25,8 @@ object mod {
     *
     * @param opts options for regular expression generator
     */
-  inline def re(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")().asInstanceOf[RegExp]
-  inline def re(opts: githubUrlFromGitOptions): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")(opts.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def re(): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")().asInstanceOf[js.RegExp]
+  inline def re(opts: githubUrlFromGitOptions): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")(opts.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
   trait githubUrlFromGitOptions extends StObject {
     
@@ -49,7 +48,7 @@ object mod {
       
       inline def setExtraBaseUrlsUndefined: Self = StObject.set(x, "extraBaseUrls", js.undefined)
       
-      inline def setExtraBaseUrlsVarargs(value: String*): Self = StObject.set(x, "extraBaseUrls", js.Array(value :_*))
+      inline def setExtraBaseUrlsVarargs(value: String*): Self = StObject.set(x, "extraBaseUrls", js.Array(value*))
     }
   }
 }

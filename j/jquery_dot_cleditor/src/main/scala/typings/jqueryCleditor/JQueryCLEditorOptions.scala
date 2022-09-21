@@ -73,7 +73,7 @@ object JQueryCLEditorOptions {
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: js.Array[String]*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: js.Array[String]*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setUseCSS(value: Boolean): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
     

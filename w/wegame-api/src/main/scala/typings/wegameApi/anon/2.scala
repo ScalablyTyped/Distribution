@@ -20,6 +20,6 @@ object `2` {
     
     inline def setData(value: js.Array[UserGameData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: UserGameData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: UserGameData*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

@@ -12,43 +12,43 @@ trait NumberAggregateResult[T, Keys /* <: /* keyof T */ String */]
   var avg: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? number}
-    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
   ] = js.undefined
   
   var stddev: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? number}
-    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
   ] = js.undefined
   
   var stddev_pop: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? number}
-    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
   ] = js.undefined
   
   var stddev_samp: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? number}
-    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
   ] = js.undefined
   
   var sum: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? number}
-    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
   ] = js.undefined
   
   var var_pop: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? number}
-    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
   ] = js.undefined
   
   var variance: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? number}
-    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
   ] = js.undefined
 }
 object NumberAggregateResult {
@@ -63,7 +63,7 @@ object NumberAggregateResult {
     inline def setAvg(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
-      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
     ): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
     inline def setAvgUndefined: Self = StObject.set(x, "avg", js.undefined)
@@ -71,7 +71,7 @@ object NumberAggregateResult {
     inline def setStddev(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
-      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
     ): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
     inline def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
@@ -79,7 +79,7 @@ object NumberAggregateResult {
     inline def setStddev_pop(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
-      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
     ): Self = StObject.set(x, "stddev_pop", value.asInstanceOf[js.Any])
     
     inline def setStddev_popUndefined: Self = StObject.set(x, "stddev_pop", js.undefined)
@@ -87,7 +87,7 @@ object NumberAggregateResult {
     inline def setStddev_samp(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
-      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
     ): Self = StObject.set(x, "stddev_samp", value.asInstanceOf[js.Any])
     
     inline def setStddev_sampUndefined: Self = StObject.set(x, "stddev_samp", js.undefined)
@@ -95,7 +95,7 @@ object NumberAggregateResult {
     inline def setSum(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
-      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
     ): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
@@ -103,7 +103,7 @@ object NumberAggregateResult {
     inline def setVar_pop(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
-      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
     ): Self = StObject.set(x, "var_pop", value.asInstanceOf[js.Any])
     
     inline def setVar_popUndefined: Self = StObject.set(x, "var_pop", js.undefined)
@@ -111,7 +111,7 @@ object NumberAggregateResult {
     inline def setVariance(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? number}
-      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberAggregateResult & TopLevel[Any]
     ): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
     inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)

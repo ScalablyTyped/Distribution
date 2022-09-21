@@ -8,28 +8,28 @@ trait NumericLiteral
   extends StObject
      with IASTToken {
   
-  /* private */ var _text: js.Any
+  /* private */ var _text: Any
   
-  /* private */ var _value: js.Any
+  /* private */ var _value: Any
   
-  /* private */ var _valueText: js.Any
+  /* private */ var _valueText: Any
   
   def structuralEquals(ast: NumericLiteral, includingPosition: Boolean): Boolean
   
-  def value(): js.Any
+  def value(): Any
 }
 object NumericLiteral {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
-    _text: js.Any,
+    _text: Any,
     _trailingTriviaWidth: Double,
-    _value: js.Any,
-    _valueText: js.Any,
+    _value: Any,
+    _valueText: Any,
     end: () => Double,
     fileName: () => String,
     isExpression: () => Boolean,
@@ -44,7 +44,7 @@ object NumericLiteral {
     syntaxID: () => Double,
     text: () => String,
     trailingTriviaWidth: () => Double,
-    value: () => js.Any,
+    value: () => Any,
     valueText: () => String,
     width: () => Double
   ): NumericLiteral = {
@@ -56,12 +56,12 @@ object NumericLiteral {
     
     inline def setStructuralEquals(value: (NumericLiteral, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    inline def setValue(value: () => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+    inline def setValue(value: () => Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     
-    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    inline def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

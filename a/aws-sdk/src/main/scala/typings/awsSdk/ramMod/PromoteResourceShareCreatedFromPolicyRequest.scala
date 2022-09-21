@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PromoteResourceShareCreatedFromPolicyRequest extends StObject {
   
   /**
-    * The ARN of the resource share to promote.
+    * Specifies the Amazon Resoure Name (ARN) of the resource share to promote.
     */
   var resourceShareArn: String
 }

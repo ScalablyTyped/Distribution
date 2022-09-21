@@ -14,7 +14,7 @@ trait AngularFireObjectService extends StObject {
     * @returns {FirebaseObject}
     */
   def apply(
-    firebase: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
+    firebase: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ Any
   ): AngularFireObject = js.native
   
   @JSName("$extend")

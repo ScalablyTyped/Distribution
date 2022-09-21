@@ -16,7 +16,7 @@ object linkedListMod {
     * which together represent a sequence.
     * @constructor
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with LinkedList[T]
   
@@ -86,7 +86,7 @@ object linkedListMod {
     /**
       * @private
       */
-    /* private */ def createNode(item: js.Any): js.Any = js.native
+    /* private */ def createNode(item: Any): Any = js.native
     
     /**
       * Returns the element at the specified position in this list.
@@ -96,23 +96,12 @@ object linkedListMod {
       */
     def elementAtIndex(index: Double): js.UndefOr[T] = js.native
     
-    /**
-      * Returns true if this list is equal to the given list.
-      * Two lists are equal if they have the same elements in the same order.
-      * @param {LinkedList} other the other list.
-      * @param {function(Object,Object):boolean=} equalsFunction optional
-      * function used to check if two elements are equal. If the elements in the lists
-      * are custom objects you should provide a function, otherwise
-      * the === operator is used to check equality between elements.
-      * @return {boolean} true if this list is equal to the given list.
-      */
-    def equals(other: js.Any): Boolean = js.native
-    def equals(other: js.Any, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+    def equals(other: Any, equalsFunction: IEqualsFunction[T]): Boolean = js.native
     
     /**
       * @private
       */
-    /* private */ def equalsAux(n1: js.Any, n2: js.Any, eqF: js.Any): js.Any = js.native
+    /* private */ def equalsAux(n1: Any, n2: Any, eqF: Any): Any = js.native
     
     /**
       * Returns the first element in this list.
@@ -177,19 +166,19 @@ object linkedListMod {
       * @type {Object}
       * @private
       */
-    /* private */ var lastNode: js.Any = js.native
+    /* private */ var lastNode: Any = js.native
     
     /**
       * Number of elements in the list
       * @type {number}
       * @private
       */
-    /* private */ var nElements: js.Any = js.native
+    /* private */ var nElements: Any = js.native
     
     /**
       * @private
       */
-    /* private */ def nodeAtIndex(index: js.Any): js.Any = js.native
+    /* private */ def nodeAtIndex(index: Any): Any = js.native
     
     /**
       * Removes the first occurrence of the specified element in this list.

@@ -8,5 +8,5 @@ object localSecondaryIndexDescriptionListMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_LocalSecondaryIndexDescriptionList", "_LocalSecondaryIndexDescriptionList")
   @js.native
-  val LocalSecondaryIndexDescriptionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val LocalSecondaryIndexDescriptionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

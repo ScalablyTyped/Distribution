@@ -30,7 +30,7 @@ object cordovaBaseMod {
   abstract class CordovaCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
-    /* private */ var _integration: js.Any = js.native
+    /* private */ var _integration: Any = js.native
     
     /* protected */ def checkCordova(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     

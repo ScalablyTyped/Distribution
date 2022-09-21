@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SetSesquialteralParagraphSpacingCommand")
 @js.native
-class SetSesquialteralParagraphSpacingCommand ()
+open class SetSesquialteralParagraphSpacingCommand ()
   extends StObject
      with typings.devexpressWeb.SetSesquialteralParagraphSpacingCommand {
   

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SmartMappingSliderBaseConstructor
   extends StObject
-     with Instantiable0[SmartMappingSliderBase]
+     with /**
+  * The base class for all Smart Mapping slider widgets.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html)
+  */
+Instantiable0[SmartMappingSliderBase]
      with Instantiable1[/* properties */ SmartMappingSliderBaseProperties, SmartMappingSliderBase]

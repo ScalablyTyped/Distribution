@@ -1,10 +1,21 @@
 package typings.maximMazurokGapiClientDatafusion.gapi.client.datafusion
 
+import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OperationMetadata extends StObject {
+  
+  /**
+    * Map to hold any additional status info for the operation If there is an accelerator being enabled/disabled/deleted, this will be populated with accelerator name as key and status as
+    * ENABLING, DISABLING or DELETING
+    */
+  var additionalStatus: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.maximMazurokGapiClientDatafusion.maximMazurokGapiClientDatafusionStrings.OperationMetadata & TopLevel[Any]
+  ] = js.undefined
   
   /** API version used to start the operation. */
   var apiVersion: js.UndefOr[String] = js.undefined
@@ -38,6 +49,14 @@ object OperationMetadata {
   }
   
   extension [Self <: OperationMetadata](x: Self) {
+    
+    inline def setAdditionalStatus(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.maximMazurokGapiClientDatafusion.maximMazurokGapiClientDatafusionStrings.OperationMetadata & TopLevel[Any]
+    ): Self = StObject.set(x, "additionalStatus", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalStatusUndefined: Self = StObject.set(x, "additionalStatus", js.undefined)
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

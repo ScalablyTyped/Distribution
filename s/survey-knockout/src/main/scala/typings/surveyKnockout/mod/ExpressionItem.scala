@@ -6,28 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ExpressionItem")
 @js.native
-class ExpressionItem ()
+open class ExpressionItem ()
   extends Base
      with ILocalizableOwner {
   def this(expression: String) = this()
   
-  /**
+  /*
     * The expression property. If this expression returns true, then survey will use html property to show on complete page.
     */
-  var expression: String = js.native
+  def expression: String = js.native
+  def expression_=(`val`: String): Unit = js.native
   
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override def getLocale(): String = js.native
   
   /* CompleteClass */
-  override def getMarkdownHtml(text: String): String = js.native
+  override def getMarkdownHtml(text: String, name: String): String = js.native
   
   /* CompleteClass */
   override def getProcessedText(text: String): String = js.native
   
-  val locHtml: LocalizableString = js.native
+  /* CompleteClass */
+  override def getRenderer(name: String): String = js.native
+  
+  /* CompleteClass */
+  override def getRendererContext(locStr: LocalizableString): Any = js.native
+  
+  def locHtml: LocalizableString = js.native
   
   var locOwner: ILocalizableOwner = js.native
   
-  def runCondition(values: js.Any, properties: js.Any): Boolean = js.native
+  def runCondition(values: Any, properties: Any): Boolean = js.native
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jest/schemas" : "29.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jest/schemas" : "29.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

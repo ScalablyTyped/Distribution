@@ -30,6 +30,11 @@ trait WxConfig extends StObject {
   var nonceStr: String
   
   /**
+    * 可选，需要使用的开放标签列表
+    */
+  var openTagList: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * 签名
     */
   var signature: String
@@ -56,9 +61,15 @@ object WxConfig {
     
     inline def setJsApiList(value: js.Array[String]): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
     
-    inline def setJsApiListVarargs(value: String*): Self = StObject.set(x, "jsApiList", js.Array(value :_*))
+    inline def setJsApiListVarargs(value: String*): Self = StObject.set(x, "jsApiList", js.Array(value*))
     
     inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    
+    inline def setOpenTagList(value: js.Array[String]): Self = StObject.set(x, "openTagList", value.asInstanceOf[js.Any])
+    
+    inline def setOpenTagListUndefined: Self = StObject.set(x, "openTagList", js.undefined)
+    
+    inline def setOpenTagListVarargs(value: String*): Self = StObject.set(x, "openTagList", js.Array(value*))
     
     inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     

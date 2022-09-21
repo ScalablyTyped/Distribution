@@ -41,6 +41,6 @@ object SetWifiListOption {
     
     inline def setWifiList(value: js.Array[WifiData]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
-    inline def setWifiListVarargs(value: WifiData*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
+    inline def setWifiListVarargs(value: WifiData*): Self = StObject.set(x, "wifiList", js.Array(value*))
   }
 }

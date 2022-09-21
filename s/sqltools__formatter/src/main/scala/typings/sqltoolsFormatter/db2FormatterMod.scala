@@ -8,7 +8,7 @@ object db2FormatterMod {
   
   @JSImport("@sqltools/formatter/lib/languages/Db2Formatter", JSImport.Default)
   @js.native
-  class default () extends Db2Formatter
+  open class default () extends Db2Formatter
   
   @js.native
   trait Db2Formatter

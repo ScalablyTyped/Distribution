@@ -10,10 +10,10 @@ Clamp a value between two other values
 | ------------------ | :-------------: |
 | Full name          | clamp |
 | Keywords           | clamp, math, greater, less, than, between |
-| # releases         | 0 |
-| # dependents       | 204 |
-| # downloads        | 12294998 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1692011.0 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/clamp)

@@ -8,5 +8,5 @@ object getOpenIdTokenMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/GetOpenIdToken", "GetOpenIdToken")
   @js.native
-  val GetOpenIdToken: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetOpenIdToken: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

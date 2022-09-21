@@ -191,35 +191,30 @@ object Meteor {
   
   trait LocalStorage extends StObject {
     
-    var _data: js.Any
+    var _data: Any
     
-    def getItem(key: js.Any): js.Any
+    def getItem(key: Any): Any
     
-    def removeItem(key: js.Any): Unit
+    def removeItem(key: Any): Unit
     
-    def setItem(key: js.Any, value: js.Any): js.Any
+    def setItem(key: Any, value: Any): Any
   }
   object LocalStorage {
     
-    inline def apply(
-      _data: js.Any,
-      getItem: js.Any => js.Any,
-      removeItem: js.Any => Unit,
-      setItem: (js.Any, js.Any) => js.Any
-    ): LocalStorage = {
+    inline def apply(_data: Any, getItem: Any => Any, removeItem: Any => Unit, setItem: (Any, Any) => Any): LocalStorage = {
       val __obj = js.Dynamic.literal(_data = _data.asInstanceOf[js.Any], getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
       __obj.asInstanceOf[LocalStorage]
     }
     
     extension [Self <: LocalStorage](x: Self) {
       
-      inline def setGetItem(value: js.Any => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: Any => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      inline def setRemoveItem(value: js.Any => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: Any => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      inline def setSetItem(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (Any, Any) => Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
       
-      inline def set_data(value: js.Any): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
+      inline def set_data(value: Any): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,7 +272,7 @@ object Meteor {
       
       inline def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
       
-      inline def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value :_*))
+      inline def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value*))
     }
   }
   
@@ -285,20 +280,20 @@ object Meteor {
   /** Settings **/
   trait Settings
     extends StObject
-       with /* id */ StringDictionary[js.Any] {
+       with /* id */ StringDictionary[Any] {
     
-    var public: StringDictionary[js.Any]
+    var public: StringDictionary[Any]
   }
   object Settings {
     
-    inline def apply(public: StringDictionary[js.Any]): Settings = {
+    inline def apply(public: StringDictionary[Any]): Settings = {
       val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
     extension [Self <: Settings](x: Self) {
       
-      inline def setPublic(value: StringDictionary[js.Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: StringDictionary[Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     }
   }
   
@@ -333,9 +328,9 @@ object Meteor {
     
     var emails: js.UndefOr[js.Array[UserEmail]] = js.undefined
     
-    var profile: js.UndefOr[js.Any] = js.undefined
+    var profile: js.UndefOr[Any] = js.undefined
     
-    var services: js.UndefOr[js.Any] = js.undefined
+    var services: js.UndefOr[Any] = js.undefined
     
     var username: js.UndefOr[String] = js.undefined
   }
@@ -356,13 +351,13 @@ object Meteor {
       
       inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
       
-      inline def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value :_*))
+      inline def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value*))
       
-      inline def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
       inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      inline def setServices(value: js.Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+      inline def setServices(value: Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
       inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
       

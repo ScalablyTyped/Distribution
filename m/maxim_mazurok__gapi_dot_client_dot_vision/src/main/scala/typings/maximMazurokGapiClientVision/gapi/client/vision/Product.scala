@@ -58,6 +58,6 @@ object Product {
     
     inline def setProductLabelsUndefined: Self = StObject.set(x, "productLabels", js.undefined)
     
-    inline def setProductLabelsVarargs(value: KeyValue*): Self = StObject.set(x, "productLabels", js.Array(value :_*))
+    inline def setProductLabelsVarargs(value: KeyValue*): Self = StObject.set(x, "productLabels", js.Array(value*))
   }
 }

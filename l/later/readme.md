@@ -11,9 +11,9 @@ Determine later (or previous) occurrences of recurring schedules
 | Full name          | later |
 | Keywords           | schedule, occurrences, recur, cron |
 | # releases         | 1 |
-| # dependents       | 117 |
-| # downloads        | 1787431 |
-| # stars            | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 160144.0 |
+| # stars            | 2382.0 |
 
 ## Links
 - [Homepage](https://github.com/bunkat/later#readme)

@@ -221,7 +221,12 @@ object contextualMenuTypesMod {
        with /**
     * (Optional) Any additional properties to apply to the rendered links.
     */
-  /* propertyName */ StringDictionary[js.Any] {
+  /* propertyName */ StringDictionary[Any] {
+    
+    /**
+      * Detailed description of the menu item for the benefit of screen readers.
+      */
+    var ariaDescription: js.UndefOr[String] = js.undefined
     
     /**
       * Custom accessible label for the element.
@@ -262,7 +267,7 @@ object contextualMenuTypesMod {
     /**
       * Any custom data the developer wishes to associate with the menu item.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Whether the menu item is disabled
@@ -322,6 +327,11 @@ object contextualMenuTypesMod {
     var itemType: js.UndefOr[ContextualMenuItemType] = js.undefined
     
     /**
+      * @deprecated Use subMenuProps.items instead.
+      */
+    var items: js.UndefOr[js.Array[IContextualMenuItem]] = js.undefined
+    
+    /**
       * Unique id to identify the item
       */
     var key: String
@@ -373,8 +383,8 @@ object contextualMenuTypesMod {
       */
     var onRender: js.UndefOr[
         js.Function2[
-          /* item */ js.Any, 
-          /* dismissMenu */ js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit], 
+          /* item */ Any, 
+          /* dismissMenu */ js.Function2[/* ev */ js.UndefOr[Any], /* dismissAll */ js.UndefOr[Boolean], Unit], 
           ReactNode
         ]
       ] = js.undefined
@@ -397,6 +407,14 @@ object contextualMenuTypesMod {
       * Custom render function for the menu item icon
       */
     var onRenderIcon: js.UndefOr[IRenderFunction[IContextualMenuItemProps]] = js.undefined
+    
+    /**
+      * Flag which indicates that, when the item is clicked, the 'target' for the click event should be
+      * overridden to reflect the launch target from the root menu.
+      * This avoids a situation where the 'target' of the event may wind up detached from the DOM
+      * when the menu is dismissed in response to the click.
+      */
+    var preferMenuTargetAsEventTarget: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the menu item is a split button, this prop disables purely the primary action of the button.
@@ -483,6 +501,10 @@ object contextualMenuTypesMod {
     
     extension [Self <: IContextualMenuItem](x: Self) {
       
+      inline def setAriaDescription(value: String): Self = StObject.set(x, "ariaDescription", value.asInstanceOf[js.Any])
+      
+      inline def setAriaDescriptionUndefined: Self = StObject.set(x, "ariaDescription", js.undefined)
+      
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
       inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
@@ -509,7 +531,7 @@ object contextualMenuTypesMod {
       
       inline def setCustomOnRenderListLengthUndefined: Self = StObject.set(x, "customOnRenderListLength", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -547,6 +569,12 @@ object contextualMenuTypesMod {
       
       inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
+      inline def setItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      
+      inline def setItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
+      
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
@@ -568,7 +596,7 @@ object contextualMenuTypesMod {
       inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
       inline def setOnRender(
-        value: (/* item */ js.Any, /* dismissMenu */ js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit]) => ReactNode
+        value: (/* item */ Any, /* dismissMenu */ js.Function2[/* ev */ js.UndefOr[Any], /* dismissAll */ js.UndefOr[Boolean], Unit]) => ReactNode
       ): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
       
       inline def setOnRenderContent(
@@ -584,6 +612,10 @@ object contextualMenuTypesMod {
       inline def setOnRenderIconUndefined: Self = StObject.set(x, "onRenderIcon", js.undefined)
       
       inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+      
+      inline def setPreferMenuTargetAsEventTarget(value: Boolean): Self = StObject.set(x, "preferMenuTargetAsEventTarget", value.asInstanceOf[js.Any])
+      
+      inline def setPreferMenuTargetAsEventTargetUndefined: Self = StObject.set(x, "preferMenuTargetAsEventTarget", js.undefined)
       
       inline def setPrimaryDisabled(value: Boolean): Self = StObject.set(x, "primaryDisabled", value.asInstanceOf[js.Any])
       
@@ -683,6 +715,8 @@ object contextualMenuTypesMod {
   
   trait IContextualMenuListProps extends StObject {
     
+    var ariaLabel: js.UndefOr[String] = js.undefined
+    
     def defaultMenuItemRenderer(item: IContextualMenuItemRenderProps): ReactNode
     
     var hasCheckmarks: Boolean
@@ -690,6 +724,8 @@ object contextualMenuTypesMod {
     var hasIcons: Boolean
     
     var items: js.Array[IContextualMenuItem]
+    
+    var labelElementId: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[String] = js.undefined
     
@@ -710,6 +746,10 @@ object contextualMenuTypesMod {
     
     extension [Self <: IContextualMenuListProps](x: Self) {
       
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      
       inline def setDefaultMenuItemRenderer(value: IContextualMenuItemRenderProps => ReactNode): Self = StObject.set(x, "defaultMenuItemRenderer", js.Any.fromFunction1(value))
       
       inline def setHasCheckmarks(value: Boolean): Self = StObject.set(x, "hasCheckmarks", value.asInstanceOf[js.Any])
@@ -718,7 +758,11 @@ object contextualMenuTypesMod {
       
       inline def setItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
+      
+      inline def setLabelElementId(value: String): Self = StObject.set(x, "labelElementId", value.asInstanceOf[js.Any])
+      
+      inline def setLabelElementIdUndefined: Self = StObject.set(x, "labelElementId", js.undefined)
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1088,7 +1132,7 @@ object contextualMenuTypesMod {
       
       inline def setItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLabelElementId(value: String): Self = StObject.set(x, "labelElementId", value.asInstanceOf[js.Any])
       
@@ -1180,7 +1224,7 @@ object contextualMenuTypesMod {
   
   trait IContextualMenuSection
     extends StObject
-       with ClassAttributes[js.Any] {
+       with ClassAttributes[Any] {
     
     /**
       * If set to true, the section will display a divider at the bottom of the section.
@@ -1217,7 +1261,7 @@ object contextualMenuTypesMod {
       
       inline def setItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setTitle(value: String | IContextualMenuItem): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -1330,16 +1374,16 @@ object contextualMenuTypesMod {
   trait IContextualMenuSubComponentStyles extends StObject {
     
     /** Styles for the callout that hosts the ContextualMenu options. */
-    var callout: IStyleFunctionOrObject[ICalloutContentStyleProps, js.Any]
+    var callout: IStyleFunctionOrObject[ICalloutContentStyleProps, Any]
     
     /** Styles for each menu item. */
-    var menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, js.Any]
+    var menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, Any]
   }
   object IContextualMenuSubComponentStyles {
     
     inline def apply(
-      callout: IStyleFunctionOrObject[ICalloutContentStyleProps, js.Any],
-      menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, js.Any]
+      callout: IStyleFunctionOrObject[ICalloutContentStyleProps, Any],
+      menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, Any]
     ): IContextualMenuSubComponentStyles = {
       val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], menuItem = menuItem.asInstanceOf[js.Any])
       __obj.asInstanceOf[IContextualMenuSubComponentStyles]
@@ -1347,13 +1391,13 @@ object contextualMenuTypesMod {
     
     extension [Self <: IContextualMenuSubComponentStyles](x: Self) {
       
-      inline def setCallout(value: IStyleFunctionOrObject[ICalloutContentStyleProps, js.Any]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+      inline def setCallout(value: IStyleFunctionOrObject[ICalloutContentStyleProps, Any]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
-      inline def setCalloutFunction1(value: ICalloutContentStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "callout", js.Any.fromFunction1(value))
+      inline def setCalloutFunction1(value: ICalloutContentStyleProps => DeepPartial[Any]): Self = StObject.set(x, "callout", js.Any.fromFunction1(value))
       
-      inline def setMenuItem(value: IStyleFunctionOrObject[IContextualMenuItemStyleProps, js.Any]): Self = StObject.set(x, "menuItem", value.asInstanceOf[js.Any])
+      inline def setMenuItem(value: IStyleFunctionOrObject[IContextualMenuItemStyleProps, Any]): Self = StObject.set(x, "menuItem", value.asInstanceOf[js.Any])
       
-      inline def setMenuItemFunction1(value: IContextualMenuItemStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "menuItem", js.Any.fromFunction1(value))
+      inline def setMenuItemFunction1(value: IContextualMenuItemStyleProps => DeepPartial[Any]): Self = StObject.set(x, "menuItem", js.Any.fromFunction1(value))
     }
   }
   
@@ -1364,37 +1408,37 @@ object contextualMenuTypesMod {
     /**
       * Styles for a menu item that is an anchor link.
       */
-    var anchorLink: IStyle
+    var anchorLink: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Default style for checkmark icons.
       */
-    var checkmarkIcon: IStyle
+    var checkmarkIcon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for a divider item of a ConextualMenu.
       */
-    var divider: IStyle
+    var divider: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Default icon color style for known icons.
       */
-    var iconColor: IStyle
+    var iconColor: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for a menu item that is an anchor link.
       */
-    var item: IStyle
+    var item: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for the content inside the button/link of the menuItem.
       */
-    var linkContent: IStyle
+    var linkContent: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles for the submenu icon of a menu item.
       */
-    var subMenuIcon: IStyle
+    var subMenuIcon: js.UndefOr[IStyle] = js.undefined
   }
   object IMenuItemStyles {
     

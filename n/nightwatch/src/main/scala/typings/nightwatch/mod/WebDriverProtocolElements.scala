@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.anon.ELEMENT
+import typings.nightwatch.anon.ELEMENTKEY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +36,7 @@ trait WebDriverProtocolElements extends StObject {
   def element(
     `using`: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
   ): this.type = js.native
   
   /**
@@ -53,7 +53,18 @@ trait WebDriverProtocolElements extends StObject {
     */
   def elementActive(): this.type = js.native
   def elementActive(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
+  ): this.type = js.native
+  
+  /**
+    * Move to the element and performs a double-click in the middle of the given element if
+    * element is given else double-clicks at the current mouse coordinates (set by `.moveTo()`).
+    *
+    */
+  def elementIdDoubleClick(webElementId: String): this.type = js.native
+  def elementIdDoubleClick(
+    webElementId: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   
   /**
@@ -81,7 +92,7 @@ trait WebDriverProtocolElements extends StObject {
     id: String,
     `using`: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
   ): this.type = js.native
   
   /**
@@ -108,7 +119,7 @@ trait WebDriverProtocolElements extends StObject {
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[ELEMENT]], 
+      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
       Unit
     ]
   ): this.type = js.native
@@ -132,6 +143,18 @@ trait WebDriverProtocolElements extends StObject {
     id: String,
     otherId: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
+  ): this.type = js.native
+  
+  /**
+    *
+    * Retrieve the value of a specified DOM property for the given element.
+    * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
+    */
+  def elementIdProperty(webElementId: String, DOMPropertyName: String): this.type = js.native
+  def elementIdProperty(
+    webElementId: String,
+    DOMPropertyName: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
   
   /**
@@ -177,7 +200,7 @@ trait WebDriverProtocolElements extends StObject {
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[ELEMENT]], 
+      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
       Unit
     ]
   ): this.type = js.native

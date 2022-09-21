@@ -31,7 +31,7 @@ trait ExecutableSpecification extends StObject {
   var singleValue: Boolean
   
   /** A function invocation statement or a pg-promise QueryFile. */
-  var sql: js.Any
+  var sql: Any
 }
 object ExecutableSpecification {
   
@@ -44,7 +44,7 @@ object ExecutableSpecification {
     schema: String,
     singleRow: Boolean,
     singleValue: Boolean,
-    sql: js.Any
+    sql: Any
   ): ExecutableSpecification = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], enhancedFunctions = enhancedFunctions.asInstanceOf[js.Any], isVariadic = isVariadic.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paramCount = paramCount.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], singleRow = singleRow.asInstanceOf[js.Any], singleValue = singleValue.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutableSpecification]
@@ -68,6 +68,6 @@ object ExecutableSpecification {
     
     inline def setSingleValue(value: Boolean): Self = StObject.set(x, "singleValue", value.asInstanceOf[js.Any])
     
-    inline def setSql(value: js.Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
   }
 }

@@ -33,6 +33,6 @@ object GetPartitionsResponse {
     
     inline def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
     
-    inline def setPartitionsVarargs(value: Partition*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: Partition*): Self = StObject.set(x, "Partitions", js.Array(value*))
   }
 }

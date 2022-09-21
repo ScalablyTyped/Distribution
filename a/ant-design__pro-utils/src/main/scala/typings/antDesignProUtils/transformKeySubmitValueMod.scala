@@ -1,16 +1,25 @@
 package typings.antDesignProUtils
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignProUtils.typingMod.SearchTransformKeyFn
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformKeySubmitValueMod {
   
-  @JSImport("@ant-design/pro-utils/lib/transformKeySubmitValue", JSImport.Namespace)
+  @JSImport("@ant-design/pro-utils/es/transformKeySubmitValue", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](values: T, dataFormatMap: StringDictionary[js.UndefOr[SearchTransformKeyFn]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any], dataFormatMap.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def isPlainObj(itemValue: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObj")(itemValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def transformKeySubmitValue[T /* <: js.Object */](values: T, dataFormatMapRaw: Record[String, js.UndefOr[SearchTransformKeyFn | DataFormatMapType]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transformKeySubmitValue")(values.asInstanceOf[js.Any], dataFormatMapRaw.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transformKeySubmitValue[T /* <: js.Object */](
+    values: T,
+    dataFormatMapRaw: Record[String, js.UndefOr[SearchTransformKeyFn | DataFormatMapType]],
+    omit: Boolean
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transformKeySubmitValue")(values.asInstanceOf[js.Any], dataFormatMapRaw.asInstanceOf[js.Any], omit.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  type DataFormatMapType = Record[String, js.UndefOr[SearchTransformKeyFn]]
 }

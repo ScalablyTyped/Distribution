@@ -24,6 +24,6 @@ object DescribeMatchmakingOutput {
     
     inline def setTicketListUndefined: Self = StObject.set(x, "TicketList", js.undefined)
     
-    inline def setTicketListVarargs(value: MatchmakingTicket*): Self = StObject.set(x, "TicketList", js.Array(value :_*))
+    inline def setTicketListVarargs(value: MatchmakingTicket*): Self = StObject.set(x, "TicketList", js.Array(value*))
   }
 }

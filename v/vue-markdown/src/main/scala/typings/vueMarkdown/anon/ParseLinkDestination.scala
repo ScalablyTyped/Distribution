@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ParseLinkDestination extends StObject {
   
-  var parseLinkDestination: js.Any
+  var parseLinkDestination: scala.Any
   
-  var parseLinkLabel: js.Any
+  var parseLinkLabel: scala.Any
   
-  var parseLinkTitle: js.Any
+  var parseLinkTitle: scala.Any
 }
 object ParseLinkDestination {
   
-  inline def apply(parseLinkDestination: js.Any, parseLinkLabel: js.Any, parseLinkTitle: js.Any): ParseLinkDestination = {
+  inline def apply(parseLinkDestination: scala.Any, parseLinkLabel: scala.Any, parseLinkTitle: scala.Any): ParseLinkDestination = {
     val __obj = js.Dynamic.literal(parseLinkDestination = parseLinkDestination.asInstanceOf[js.Any], parseLinkLabel = parseLinkLabel.asInstanceOf[js.Any], parseLinkTitle = parseLinkTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseLinkDestination]
   }
   
   extension [Self <: ParseLinkDestination](x: Self) {
     
-    inline def setParseLinkDestination(value: js.Any): Self = StObject.set(x, "parseLinkDestination", value.asInstanceOf[js.Any])
+    inline def setParseLinkDestination(value: scala.Any): Self = StObject.set(x, "parseLinkDestination", value.asInstanceOf[js.Any])
     
-    inline def setParseLinkLabel(value: js.Any): Self = StObject.set(x, "parseLinkLabel", value.asInstanceOf[js.Any])
+    inline def setParseLinkLabel(value: scala.Any): Self = StObject.set(x, "parseLinkLabel", value.asInstanceOf[js.Any])
     
-    inline def setParseLinkTitle(value: js.Any): Self = StObject.set(x, "parseLinkTitle", value.asInstanceOf[js.Any])
+    inline def setParseLinkTitle(value: scala.Any): Self = StObject.set(x, "parseLinkTitle", value.asInstanceOf[js.Any])
   }
 }

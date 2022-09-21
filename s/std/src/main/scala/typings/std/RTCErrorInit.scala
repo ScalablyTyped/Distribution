@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCErrorInit extends StObject {
   
+  /* standard dom */
   var errorDetail: RTCErrorDetailType
   
+  /* standard dom */
   var httpRequestStatusCode: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var receivedAlert: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var sctpCauseCode: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var sdpLineNumber: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var sentAlert: js.UndefOr[Double] = js.undefined
 }
 object RTCErrorInit {

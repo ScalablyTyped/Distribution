@@ -9,7 +9,7 @@ trait CellSelectionChangingEventUIParam extends StObject {
   /**
     * Gets reference to the cell object.
     */
-  var cell: js.UndefOr[js.Any] = js.undefined
+  var cell: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the column index for the first cell in a range selection.
@@ -34,12 +34,12 @@ trait CellSelectionChangingEventUIParam extends StObject {
   /**
     * Gets reference to GridSelection.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to selected cells object array.
     */
-  var selectedCells: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var selectedCells: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object CellSelectionChangingEventUIParam {
   
@@ -50,7 +50,7 @@ object CellSelectionChangingEventUIParam {
   
   extension [Self <: CellSelectionChangingEventUIParam](x: Self) {
     
-    inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
@@ -70,14 +70,14 @@ object CellSelectionChangingEventUIParam {
     
     inline def setLastRowIndexUndefined: Self = StObject.set(x, "lastRowIndex", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setSelectedCells(value: js.Array[js.Any]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
+    inline def setSelectedCells(value: js.Array[Any]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
     
     inline def setSelectedCellsUndefined: Self = StObject.set(x, "selectedCells", js.undefined)
     
-    inline def setSelectedCellsVarargs(value: js.Any*): Self = StObject.set(x, "selectedCells", js.Array(value :_*))
+    inline def setSelectedCellsVarargs(value: Any*): Self = StObject.set(x, "selectedCells", js.Array(value*))
   }
 }

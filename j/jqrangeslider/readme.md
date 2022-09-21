@@ -10,10 +10,10 @@ jQRangeSlider, jQDateRangeSlider & jQEditRangeSlider [![Build Status](https://tr
 | ------------------ | :-------------: |
 | Full name          | jqrangeslider |
 | Keywords           | jqrangeslider, jqueryui-range, selection-slider, dates-slider |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 61589 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1442.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/ghusse/jQRangeSlider#readme)

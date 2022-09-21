@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object validationUtilsMod {
   
+  @JSImport("class-validator/types/validation/ValidationUtils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("class-validator/types/validation/ValidationUtils", "ValidationUtils")
   @js.native
-  class ValidationUtils () extends StObject
+  open class ValidationUtils () extends StObject
   /* static members */
   object ValidationUtils {
     
@@ -23,4 +27,6 @@ object validationUtilsMod {
       validationArguments: ValidationArguments
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceMessageSpecialTokens")(message.asInstanceOf[js.Any], validationArguments.asInstanceOf[js.Any])).asInstanceOf[String]
   }
+  
+  inline def constraintToString(constraint: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("constraintToString")(constraint.asInstanceOf[js.Any]).asInstanceOf[String]
 }

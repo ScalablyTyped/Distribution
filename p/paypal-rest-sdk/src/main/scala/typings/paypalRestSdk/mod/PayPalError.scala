@@ -35,7 +35,7 @@ object PayPalError {
     
     inline def setDetails(value: js.Array[ErrorDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    inline def setDetailsVarargs(value: ErrorDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ErrorDetails*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setInformation_link(value: String): Self = StObject.set(x, "information_link", value.asInstanceOf[js.Any])
     

@@ -1,10 +1,9 @@
 package typings.blueprintjsSelect
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
-import typings.blueprintjsCore.propsMod.HTMLInputProps
-import typings.blueprintjsSelect.anon.PartialIOverlayProps
-import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
+import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
+import typings.blueprintjsSelect.anon.PartialOverlayProps
+import typings.blueprintjsSelect.listItemsPropsMod.ListItemsProps
 import typings.react.mod.PureComponent
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
@@ -17,20 +16,20 @@ object omnibarMod {
   
   @JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", "Omnibar")
   @js.native
-  class Omnibar[T] protected ()
-    extends PureComponent[IOmnibarProps[T], js.Object, js.Any] {
-    def this(props: IOmnibarProps[T]) = this()
+  open class Omnibar[T] protected ()
+    extends PureComponent[OmnibarProps[T], js.Object, Any] {
+    def this(props: OmnibarProps[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IOmnibarProps[T], context: js.Any) = this()
+    def this(props: OmnibarProps[T], context: Any) = this()
     
-    /* private */ var TypedQueryList: js.Any = js.native
+    /* private */ var TypedQueryList: Any = js.native
     
-    /* private */ var handleOverlayClose: js.Any = js.native
+    /* private */ var handleOverlayClose: Any = js.native
     
-    /* private */ var renderQueryList: js.Any = js.native
+    /* private */ var renderQueryList: Any = js.native
   }
   /* static members */
   object Omnibar {
@@ -44,20 +43,20 @@ object omnibarMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ OmnibarProps[U], Omnibar[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ OmnibarProps[U], Omnibar[U]]]
   }
   
   @js.native
   trait IOmnibarProps[T]
     extends StObject
-       with IListItemsProps[T] {
+       with ListItemsProps[T] {
     
     /**
       * Props to spread to the query `InputGroup`. Use `query` and
       * `onQueryChange` instead of `inputProps.value` and `inputProps.onChange`
       * to control this input.
       */
-    var inputProps: js.UndefOr[IInputGroupProps & HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[InputGroupProps2] = js.native
     
     /**
       * Toggles the visibility of the omnibar.
@@ -78,6 +77,8 @@ object omnibarMod {
     var onClose: js.UndefOr[js.Function1[/* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.native
     
     /** Props to spread to `Overlay`. */
-    var overlayProps: js.UndefOr[PartialIOverlayProps] = js.native
+    var overlayProps: js.UndefOr[PartialOverlayProps] = js.native
   }
+  
+  type OmnibarProps[T] = IOmnibarProps[T]
 }

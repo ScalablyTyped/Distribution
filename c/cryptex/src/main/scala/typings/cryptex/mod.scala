@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("cryptex", "Cryptex")
   @js.native
-  class Cryptex protected () extends StObject {
+  open class Cryptex protected () extends StObject {
     def this(opts: CryptexOpts) = this()
     
     def decrypt(data: String): String = js.native

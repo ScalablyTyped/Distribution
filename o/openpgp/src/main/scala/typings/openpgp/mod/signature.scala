@@ -1,7 +1,6 @@
 package typings.openpgp.mod
 
 import typings.openpgp.mod.packet.List
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object signature {
     */
   @JSImport("openpgp", "signature.Signature")
   @js.native
-  class Signature protected () extends StObject {
+  open class Signature protected () extends StObject {
     /**
       * @param packetlist The signature packets
       */
@@ -32,13 +31,13 @@ object signature {
     var packets: List = js.native
   }
   
-  inline def read(input: ReadableStream[Uint8Array]): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
   /**
     * reads an OpenPGP signature as byte array and returns a signature object
     * @param input binary signature
     * @returns new signature object
     */
-  inline def read(input: Uint8Array): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  inline def read(input: js.typedarray.Uint8Array): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  inline def read(input: ReadableStream[js.typedarray.Uint8Array]): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
   
   /**
     * reads an OpenPGP armored signature and returns a signature object

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Data Layer
 @JSGlobal("naver.maps.Data")
 @js.native
-class Data ()
+open class Data ()
   extends StObject
      with typings.navermaps.naver.maps.Data

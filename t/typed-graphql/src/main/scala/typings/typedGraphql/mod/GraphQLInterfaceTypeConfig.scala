@@ -33,9 +33,7 @@ object GraphQLInterfaceTypeConfig {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setResolveType(
-      value: (/* value */ js.Any, /* context */ js.Any, /* info */ GraphQLResolveInfo) => GraphQLObjectType
-    ): Self = StObject.set(x, "resolveType", js.Any.fromFunction3(value))
+    inline def setResolveType(value: (/* value */ Any, /* context */ Any, /* info */ GraphQLResolveInfo) => GraphQLObjectType): Self = StObject.set(x, "resolveType", js.Any.fromFunction3(value))
     
     inline def setResolveTypeUndefined: Self = StObject.set(x, "resolveType", js.undefined)
   }

@@ -8,13 +8,13 @@ trait CoerceObject extends StObject {
   
   var from: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  def method(value: js.Any, helpers: CustomHelpers[js.Any]): CoerceResult
+  def method(value: Any, helpers: CustomHelpers[Any]): CoerceResult
   @JSName("method")
   var method_Original: CoerceFunction
 }
 object CoerceObject {
   
-  inline def apply(method: (/* value */ js.Any, /* helpers */ CustomHelpers[js.Any]) => CoerceResult): CoerceObject = {
+  inline def apply(method: (/* value */ Any, /* helpers */ CustomHelpers[Any]) => CoerceResult): CoerceObject = {
     val __obj = js.Dynamic.literal(method = js.Any.fromFunction2(method))
     __obj.asInstanceOf[CoerceObject]
   }
@@ -25,8 +25,8 @@ object CoerceObject {
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value*))
     
-    inline def setMethod(value: (/* value */ js.Any, /* helpers */ CustomHelpers[js.Any]) => CoerceResult): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
+    inline def setMethod(value: (/* value */ Any, /* helpers */ CustomHelpers[Any]) => CoerceResult): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
   }
 }

@@ -1,40 +1,40 @@
 package typings.rxjs
 
+import typings.rxjs.internalTypesMod.TimestampProvider
 import typings.rxjs.subjectMod.Subject
-import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replaySubjectMod {
   
-  @JSImport("rxjs/internal/ReplaySubject", "ReplaySubject")
+  @JSImport("rxjs/dist/types/internal/ReplaySubject", "ReplaySubject")
   @js.native
-  class ReplaySubject[T] () extends Subject[T] {
-    def this(bufferSize: Double) = this()
-    def this(bufferSize: Double, windowTime: Double) = this()
-    def this(bufferSize: Unit, windowTime: Double) = this()
-    def this(bufferSize: Double, windowTime: Double, scheduler: SchedulerLike) = this()
-    def this(bufferSize: Double, windowTime: Unit, scheduler: SchedulerLike) = this()
-    def this(bufferSize: Unit, windowTime: Double, scheduler: SchedulerLike) = this()
-    def this(bufferSize: Unit, windowTime: Unit, scheduler: SchedulerLike) = this()
+  /**
+    * @param bufferSize The size of the buffer to replay on subscription
+    * @param windowTime The amount of time the buffered items will say buffered
+    * @param timestampProvider An object with a `now()` method that provides the current timestamp. This is used to
+    * calculate the amount of time something has been buffered.
+    */
+  open class ReplaySubject[T] () extends Subject[T] {
+    def this(_bufferSize: Double) = this()
+    def this(_bufferSize: Double, _windowTime: Double) = this()
+    def this(_bufferSize: Unit, _windowTime: Double) = this()
+    def this(_bufferSize: Double, _windowTime: Double, _timestampProvider: TimestampProvider) = this()
+    def this(_bufferSize: Double, _windowTime: Unit, _timestampProvider: TimestampProvider) = this()
+    def this(_bufferSize: Unit, _windowTime: Double, _timestampProvider: TimestampProvider) = this()
+    def this(_bufferSize: Unit, _windowTime: Unit, _timestampProvider: TimestampProvider) = this()
     
-    /* private */ var _bufferSize: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _bufferSize: Any = js.native
     
-    def _getNow(): Double = js.native
+    /* private */ var _infiniteTimeWindow: Any = js.native
     
-    /* private */ var _infiniteTimeWindow: js.Any = js.native
+    /* private */ var _timestampProvider: Any = js.native
     
-    /* private */ var _trimBufferThenGetEvents: js.Any = js.native
+    /* private */ var _trimBuffer: Any = js.native
     
-    /* private */ var _windowTime: js.Any = js.native
-    
-    /* private */ var nextInfiniteTimeWindow: js.Any = js.native
-    
-    /* private */ var nextTimeWindow: js.Any = js.native
-    
-    /* private */ var scheduler: js.Any = js.native
+    /* private */ var _windowTime: Any = js.native
   }
 }

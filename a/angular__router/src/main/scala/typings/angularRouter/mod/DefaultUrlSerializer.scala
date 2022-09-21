@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "DefaultUrlSerializer")
 @js.native
-class DefaultUrlSerializer () extends UrlSerializer
+open class DefaultUrlSerializer () extends UrlSerializer

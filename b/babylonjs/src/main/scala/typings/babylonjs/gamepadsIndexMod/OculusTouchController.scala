@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Gamepads/index", "OculusTouchController")
 @js.native
-class OculusTouchController protected ()
+open class OculusTouchController protected ()
   extends typings.babylonjs.controllersIndexMod.OculusTouchController {
   /**
     * Creates a new OculusTouchController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from
     */
-  def this(vrGamepad: js.Any) = this()
+  def this(vrGamepad: Any) = this()
 }
 /* static members */
 object OculusTouchController {

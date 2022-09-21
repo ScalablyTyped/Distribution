@@ -10,7 +10,7 @@ object vrMultiviewToSingleviewPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/vrMultiviewToSingleviewPostProcess", "VRMultiviewToSingleviewPostProcess")
   @js.native
-  class VRMultiviewToSingleviewPostProcess protected () extends PostProcess {
+  open class VRMultiviewToSingleviewPostProcess protected () extends PostProcess {
     /**
       * Initializes a VRMultiviewToSingleview
       * @param name name of the post process

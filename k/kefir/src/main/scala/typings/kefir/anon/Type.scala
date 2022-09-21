@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Type[V]
   extends StObject
-     with Event[V, js.Any] {
+     with Event[V, Any] {
   
   var `type`: value
   

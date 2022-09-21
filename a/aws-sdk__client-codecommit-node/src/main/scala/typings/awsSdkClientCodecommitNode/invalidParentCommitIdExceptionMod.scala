@@ -8,5 +8,5 @@ object invalidParentCommitIdExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidParentCommitIdException", "InvalidParentCommitIdException")
   @js.native
-  val InvalidParentCommitIdException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidParentCommitIdException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

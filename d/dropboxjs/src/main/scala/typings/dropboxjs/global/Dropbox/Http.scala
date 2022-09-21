@@ -1,7 +1,6 @@
 package typings.dropboxjs.global.Dropbox
 
 import typings.dropboxjs.Dropbox.File.Stat
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object Http {
   
   @JSGlobal("Dropbox.Http.AppInfo")
   @js.native
-  class AppInfo ()
+  open class AppInfo ()
     extends StObject
        with typings.dropboxjs.Dropbox.Http.AppInfo
   object AppInfo {
@@ -38,7 +37,7 @@ object Http {
   
   @JSGlobal("Dropbox.Http.PollResult")
   @js.native
-  class PollResult ()
+  open class PollResult ()
     extends StObject
        with typings.dropboxjs.Dropbox.Http.PollResult {
     
@@ -60,7 +59,7 @@ object Http {
   
   @JSGlobal("Dropbox.Http.PulledChange")
   @js.native
-  class PulledChange ()
+  open class PulledChange ()
     extends StObject
        with typings.dropboxjs.Dropbox.Http.PulledChange {
     
@@ -85,7 +84,7 @@ object Http {
   
   @JSGlobal("Dropbox.Http.PulledChanges")
   @js.native
-  class PulledChanges ()
+  open class PulledChanges ()
     extends StObject
        with typings.dropboxjs.Dropbox.Http.PulledChanges {
     
@@ -116,7 +115,7 @@ object Http {
   
   @JSGlobal("Dropbox.Http.RangeInfo")
   @js.native
-  class RangeInfo ()
+  open class RangeInfo ()
     extends StObject
        with typings.dropboxjs.Dropbox.Http.RangeInfo {
     
@@ -141,14 +140,14 @@ object Http {
   
   @JSGlobal("Dropbox.Http.UploadCursor")
   @js.native
-  class UploadCursor protected ()
+  open class UploadCursor protected ()
     extends StObject
        with typings.dropboxjs.Dropbox.Http.UploadCursor {
     def this(cursorData: String) = this()
     def this(cursorData: js.Object) = this()
     
     /* CompleteClass */
-    var expiresAt: Date = js.native
+    var expiresAt: js.Date = js.native
     
     /* CompleteClass */
     var offset: Double = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathAutoCorrect")
 @js.native
-/* private */ class OMathAutoCorrect ()
+/* private */ open class OMathAutoCorrect ()
   extends StObject
      with typings.activexWord.Word.OMathAutoCorrect {
   
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Functions: typings.activexWord.Word.OMathRecognizedFunctions = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ReplaceText: Boolean = js.native

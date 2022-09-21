@@ -1,7 +1,6 @@
 package typings.novaEditorNode
 
 import typings.novaEditorNode.anon.CURRENT
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,11 +28,11 @@ trait FileSystem extends StObject {
   
   def copy(src: String, dest: String): Unit = js.native
   
-  def copyAsync(src: String, dest: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def copyAsync(src: String, dest: String, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   def copyAsync[T](
     src: String,
     dest: String,
-    callback: js.ThisFunction1[/* this */ T, /* err */ js.UndefOr[Error], Unit],
+    callback: js.ThisFunction1[/* this */ T, /* err */ js.UndefOr[js.Error], Unit],
     thisValue: T
   ): Unit = js.native
   
@@ -45,11 +44,11 @@ trait FileSystem extends StObject {
   
   def move(src: String, dest: String): Unit = js.native
   
-  def moveAsync(src: String, dest: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def moveAsync(src: String, dest: String, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   def moveAsync[T](
     src: String,
     dest: String,
-    callback: js.ThisFunction1[/* this */ T, /* err */ js.UndefOr[Error], Unit],
+    callback: js.ThisFunction1[/* this */ T, /* err */ js.UndefOr[js.Error], Unit],
     thisValue: T
   ): Unit = js.native
   

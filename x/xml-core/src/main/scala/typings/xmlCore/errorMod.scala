@@ -133,16 +133,18 @@ object errorMod {
   
   @JSImport("xml-core/dist/types/error", "XmlError")
   @js.native
-  class XmlError protected ()
+  open class XmlError protected ()
     extends StObject
        with Error {
-    def this(code: XE, args: js.Any*) = this()
+    def this(code: XE, args: Any*) = this()
     
     var code: Double = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

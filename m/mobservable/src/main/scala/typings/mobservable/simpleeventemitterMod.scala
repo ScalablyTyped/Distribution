@@ -9,40 +9,40 @@ object simpleeventemitterMod {
   
   @JSImport("mobservable/lib/simpleeventemitter", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with SimpleEventEmitter {
     
     /* CompleteClass */
-    override def emit(data: js.Any*): js.Any = js.native
+    override def emit(data: Any*): Any = js.native
     
     /* CompleteClass */
-    var listeners: js.Array[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var listeners: js.Array[js.Function1[/* repeated */ Any, Unit]] = js.native
     
     /* CompleteClass */
-    override def on(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda = js.native
+    override def on(listener: js.Function1[/* repeated */ Any, Unit]): Lambda = js.native
     
     /* CompleteClass */
-    override def once(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda = js.native
+    override def once(listener: js.Function1[/* repeated */ Any, Unit]): Lambda = js.native
   }
   
   trait SimpleEventEmitter extends StObject {
     
-    def emit(data: js.Any*): js.Any
+    def emit(data: Any*): Any
     
-    var listeners: js.Array[js.Function1[/* repeated */ js.Any, Unit]]
+    var listeners: js.Array[js.Function1[/* repeated */ Any, Unit]]
     
-    def on(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda
+    def on(listener: js.Function1[/* repeated */ Any, Unit]): Lambda
     
-    def once(listener: js.Function1[/* repeated */ js.Any, Unit]): Lambda
+    def once(listener: js.Function1[/* repeated */ Any, Unit]): Lambda
   }
   object SimpleEventEmitter {
     
     inline def apply(
-      emit: /* repeated */ js.Any => js.Any,
-      listeners: js.Array[js.Function1[/* repeated */ js.Any, Unit]],
-      on: js.Function1[/* repeated */ js.Any, Unit] => Lambda,
-      once: js.Function1[/* repeated */ js.Any, Unit] => Lambda
+      emit: /* repeated */ Any => Any,
+      listeners: js.Array[js.Function1[/* repeated */ Any, Unit]],
+      on: js.Function1[/* repeated */ Any, Unit] => Lambda,
+      once: js.Function1[/* repeated */ Any, Unit] => Lambda
     ): SimpleEventEmitter = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), listeners = listeners.asInstanceOf[js.Any], on = js.Any.fromFunction1(on), once = js.Any.fromFunction1(once))
       __obj.asInstanceOf[SimpleEventEmitter]
@@ -50,15 +50,15 @@ object simpleeventemitterMod {
     
     extension [Self <: SimpleEventEmitter](x: Self) {
       
-      inline def setEmit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      inline def setEmit(value: /* repeated */ Any => Any): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
-      inline def setListeners(value: js.Array[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: js.Array[js.Function1[/* repeated */ Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      inline def setListenersVarargs(value: (js.Function1[/* repeated */ js.Any, Unit])*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: (js.Function1[/* repeated */ Any, Unit])*): Self = StObject.set(x, "listeners", js.Array(value*))
       
-      inline def setOn(value: js.Function1[/* repeated */ js.Any, Unit] => Lambda): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+      inline def setOn(value: js.Function1[/* repeated */ Any, Unit] => Lambda): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
       
-      inline def setOnce(value: js.Function1[/* repeated */ js.Any, Unit] => Lambda): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
+      inline def setOnce(value: js.Function1[/* repeated */ Any, Unit] => Lambda): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
     }
   }
 }

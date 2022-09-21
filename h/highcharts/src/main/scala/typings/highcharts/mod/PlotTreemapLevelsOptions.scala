@@ -99,7 +99,7 @@ object PlotTreemapLevelsOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: PlotTreemapLevelsDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: PlotTreemapLevelsDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setLayoutAlgorithm(value: OptionsLayoutAlgorithmValue): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
     

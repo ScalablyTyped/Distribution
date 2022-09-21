@@ -10,10 +10,10 @@ object schoolMod {
   
   @JSImport("material-ui/svg-icons/social/school", JSImport.Default)
   @js.native
-  class default () extends SocialSchool
+  open class default () extends SocialSchool
   
   @JSImport("material-ui/svg-icons/social/school", "SocialSchool")
   @js.native
-  class SocialSchool ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialSchool ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

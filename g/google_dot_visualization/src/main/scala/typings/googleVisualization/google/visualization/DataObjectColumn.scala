@@ -10,7 +10,7 @@ trait DataObjectColumn extends StObject {
   
   var label: js.UndefOr[String] = js.undefined
   
-  var p: js.UndefOr[js.Any] = js.undefined
+  var p: js.UndefOr[Any] = js.undefined
   
   var pattern: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ object DataObjectColumn {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     

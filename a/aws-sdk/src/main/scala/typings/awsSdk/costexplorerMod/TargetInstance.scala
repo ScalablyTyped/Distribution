@@ -7,32 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TargetInstance extends StObject {
   
   /**
-    *  The currency code that AWS used to calculate the costs for this instance.
+    * The currency code that Amazon Web Services used to calculate the costs for this instance.
     */
   var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Indicates whether this recommendation is the defaulted AWS recommendation.
+    * Determines whether this recommendation is the defaulted Amazon Web Services recommendation.
     */
   var DefaultTargetInstance: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
-    *  Expected cost to operate this instance type on a monthly basis.
+    * The expected cost to operate this instance type on a monthly basis.
     */
   var EstimatedMonthlyCost: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Estimated savings resulting from modification, on a monthly basis.
+    * The estimated savings that result from modification, on a monthly basis.
     */
   var EstimatedMonthlySavings: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Expected utilization metrics for target instance type.
+    * The expected utilization metrics for target instance type.
     */
   var ExpectedResourceUtilization: js.UndefOr[ResourceUtilization] = js.undefined
   
   /**
-    *  Details on the target instance type. 
+    * Explains the actions that you might need to take to successfully migrate your workloads from the current instance type to the recommended instance type. 
+    */
+  var PlatformDifferences: js.UndefOr[typings.awsSdk.costexplorerMod.PlatformDifferences] = js.undefined
+  
+  /**
+    * Details on the target instance type. 
     */
   var ResourceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.ResourceDetails] = js.undefined
 }
@@ -64,6 +69,12 @@ object TargetInstance {
     inline def setExpectedResourceUtilization(value: ResourceUtilization): Self = StObject.set(x, "ExpectedResourceUtilization", value.asInstanceOf[js.Any])
     
     inline def setExpectedResourceUtilizationUndefined: Self = StObject.set(x, "ExpectedResourceUtilization", js.undefined)
+    
+    inline def setPlatformDifferences(value: PlatformDifferences): Self = StObject.set(x, "PlatformDifferences", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformDifferencesUndefined: Self = StObject.set(x, "PlatformDifferences", js.undefined)
+    
+    inline def setPlatformDifferencesVarargs(value: PlatformDifference*): Self = StObject.set(x, "PlatformDifferences", js.Array(value*))
     
     inline def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
     

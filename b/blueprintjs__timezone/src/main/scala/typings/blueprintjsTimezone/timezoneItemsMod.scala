@@ -1,7 +1,6 @@
 package typings.blueprintjsTimezone
 
-import typings.blueprintjsIcons.iconNameMod.IconName
-import typings.std.Date
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +11,16 @@ object timezoneItemsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInitialTimezoneItems(date: Date, includeLocalTimezone: Boolean): js.Array[ITimezoneItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialTimezoneItems")(date.asInstanceOf[js.Any], includeLocalTimezone.asInstanceOf[js.Any])).asInstanceOf[js.Array[ITimezoneItem]]
+  inline def getInitialTimezoneItems(date: js.Date, includeLocalTimezone: Boolean): js.Array[TimezoneItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialTimezoneItems")(date.asInstanceOf[js.Any], includeLocalTimezone.asInstanceOf[js.Any])).asInstanceOf[js.Array[TimezoneItem]]
   
-  inline def getLocalTimezoneItem(date: Date): js.UndefOr[ITimezoneItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimezoneItem")(date.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ITimezoneItem]]
+  inline def getLocalTimezoneItem(date: js.Date): js.UndefOr[TimezoneItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimezoneItem")(date.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TimezoneItem]]
   
-  inline def getTimezoneItems(date: Date): js.Array[ITimezoneItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneItems")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[ITimezoneItem]]
+  inline def getTimezoneItems(date: js.Date): js.Array[TimezoneItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneItems")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[TimezoneItem]]
   
   trait ITimezoneItem extends StObject {
     
     /** Optional icon for the timezone. */
-    var iconName: js.UndefOr[IconName] = js.undefined
+    var iconName: js.UndefOr[BlueprintIcons16Id] = js.undefined
     
     /** Key to be used as the rendered react key. */
     var key: String
@@ -44,7 +43,7 @@ object timezoneItemsMod {
     
     extension [Self <: ITimezoneItem](x: Self) {
       
-      inline def setIconName(value: IconName): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
+      inline def setIconName(value: BlueprintIcons16Id): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
       
       inline def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
       
@@ -57,4 +56,6 @@ object timezoneItemsMod {
       inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }
   }
+  
+  type TimezoneItem = ITimezoneItem
 }

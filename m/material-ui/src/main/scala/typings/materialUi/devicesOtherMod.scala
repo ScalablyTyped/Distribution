@@ -10,10 +10,10 @@ object devicesOtherMod {
   
   @JSImport("material-ui/svg-icons/hardware/devices-other", JSImport.Default)
   @js.native
-  class default () extends HardwareDevicesOther
+  open class default () extends HardwareDevicesOther
   
   @JSImport("material-ui/svg-icons/hardware/devices-other", "HardwareDevicesOther")
   @js.native
-  class HardwareDevicesOther ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareDevicesOther ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

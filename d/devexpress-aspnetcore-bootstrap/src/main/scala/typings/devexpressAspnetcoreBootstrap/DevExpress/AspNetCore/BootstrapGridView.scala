@@ -75,7 +75,7 @@ trait BootstrapGridView
   // tslint:disable-line:unified-signatures
   def deleteRow(visibleIndex: Double): Unit = js.native
   
-  def deleteRowByKey(key: js.Any): Unit = js.native
+  def deleteRowByKey(key: Any): Unit = js.native
   
   def expandAll(): Unit = js.native
   
@@ -95,10 +95,10 @@ trait BootstrapGridView
   def focusEditor(column: BootstrapGridViewColumn): Unit = js.native
   
   // tslint:disable-line:unified-signatures
-  def getAutoFilterEditor(columnFieldNameOrId: String): js.Any = js.native
-  def getAutoFilterEditor(columnIndex: Double): js.Any = js.native
+  def getAutoFilterEditor(columnFieldNameOrId: String): Any = js.native
+  def getAutoFilterEditor(columnIndex: Double): Any = js.native
   // tslint:disable-line:unified-signatures unified-signatures
-  def getAutoFilterEditor(column: BootstrapGridViewColumn): js.Any = js.native
+  def getAutoFilterEditor(column: BootstrapGridViewColumn): Any = js.native
   
   // tslint:disable-line:unified-signatures unified-signatures
   def getColumn(columnIndex: Double): BootstrapGridViewColumn | Null = js.native
@@ -109,7 +109,7 @@ trait BootstrapGridView
   
   def getColumnCount(): Double = js.native
   
-  def getColumnLayout(): js.Any = js.native
+  def getColumnLayout(): Any = js.native
   
   // tslint:disable-line:unified-signatures
   def getEditValue(columnFieldNameOrId: String): String = js.native
@@ -139,7 +139,7 @@ trait BootstrapGridView
   
   def getRowKey(visibleIndex: Double): String = js.native
   
-  def getSelectedKeysOnPage(): js.Array[js.Any] = js.native
+  def getSelectedKeysOnPage(): js.Array[Any] = js.native
   
   def getSelectedRowCount(): Double = js.native
   
@@ -880,8 +880,8 @@ trait BootstrapGridView
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[GridViewSelectionEventArgs], Unit]
   ): this.type = js.native
   
-  def performCallback(data: js.Any): js.Promise[Unit] = js.native
-  def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  def performCallback(data: Any): js.Promise[Unit] = js.native
+  def performCallback(data: Any, onSuccess: js.Function0[Unit]): Unit = js.native
   
   def prevPage(): Unit = js.native
   
@@ -895,15 +895,15 @@ trait BootstrapGridView
   // tslint:disable-line:unified-signatures
   def selectRows(): Unit = js.native
   
-  def selectRowsByKey(key: js.Any): Unit = js.native
+  def selectRowsByKey(key: Any): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def selectRowsByKey(key: js.Any, selected: Boolean): Unit = js.native
-  def selectRowsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def selectRowsByKey(key: Any, selected: Boolean): Unit = js.native
+  def selectRowsByKey(keys: js.Array[Any]): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def selectRowsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
+  def selectRowsByKey(keys: js.Array[Any], selected: Boolean): Unit = js.native
   
   // tslint:disable-line:unified-signatures unified-signatures
-  def setColumnLayout(columnLayout: js.Any): Unit = js.native
+  def setColumnLayout(columnLayout: Any): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def setEditValue(columnFieldNameOrId: String, value: String): Unit = js.native
@@ -913,7 +913,7 @@ trait BootstrapGridView
   // tslint:disable-line:unified-signatures unified-signatures
   def setFilterEnabled(isFilterEnabled: Boolean): Unit = js.native
   
-  def setFixedColumnScrollableRows(scrollableRowSettings: js.Any): Unit = js.native
+  def setFixedColumnScrollableRows(scrollableRowSettings: Any): Unit = js.native
   
   def setFocusedCell(rowVisibleIndex: Double, columnIndex: Double): Unit = js.native
   
@@ -957,7 +957,7 @@ trait BootstrapGridView
   // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def startEditRow(visibleIndex: Double): Unit = js.native
   
-  def startEditRowByKey(key: js.Any): Unit = js.native
+  def startEditRowByKey(key: Any): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def ungroup(columnFieldNameOrId: String): Unit = js.native
@@ -973,8 +973,8 @@ trait BootstrapGridView
   
   def unselectRows(): Unit = js.native
   
-  def unselectRowsByKey(key: js.Any): Unit = js.native
-  def unselectRowsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def unselectRowsByKey(key: Any): Unit = js.native
+  def unselectRowsByKey(keys: js.Array[Any]): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def updateEdit(): Unit = js.native

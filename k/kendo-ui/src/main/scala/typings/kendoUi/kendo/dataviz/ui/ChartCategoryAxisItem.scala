@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.dataviz.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +8,15 @@ trait ChartCategoryAxisItem extends StObject {
   
   var autoBaseUnitSteps: js.UndefOr[ChartCategoryAxisItemAutoBaseUnitSteps] = js.undefined
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
+  var axisCrossingValue: js.UndefOr[Any | js.Date] = js.undefined
   
   var background: js.UndefOr[String] = js.undefined
   
   var baseUnit: js.UndefOr[String] = js.undefined
   
-  var baseUnitStep: js.UndefOr[js.Any] = js.undefined
+  var baseUnitStep: js.UndefOr[Any] = js.undefined
   
-  var categories: js.UndefOr[js.Any] = js.undefined
+  var categories: js.UndefOr[Any] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
   
@@ -35,13 +34,13 @@ trait ChartCategoryAxisItem extends StObject {
   
   var majorTicks: js.UndefOr[ChartCategoryAxisItemMajorTicks] = js.undefined
   
-  var max: js.UndefOr[js.Any] = js.undefined
+  var max: js.UndefOr[Any] = js.undefined
   
   var maxDateGroups: js.UndefOr[Double] = js.undefined
   
   var maxDivisions: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[js.Any] = js.undefined
+  var min: js.UndefOr[Any] = js.undefined
   
   var minorGridLines: js.UndefOr[ChartCategoryAxisItemMinorGridLines] = js.undefined
   
@@ -84,7 +83,7 @@ object ChartCategoryAxisItem {
     
     inline def setAutoBaseUnitStepsUndefined: Self = StObject.set(x, "autoBaseUnitSteps", js.undefined)
     
-    inline def setAxisCrossingValue(value: js.Any | Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
+    inline def setAxisCrossingValue(value: Any | js.Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
     
     inline def setAxisCrossingValueUndefined: Self = StObject.set(x, "axisCrossingValue", js.undefined)
     
@@ -94,13 +93,13 @@ object ChartCategoryAxisItem {
     
     inline def setBaseUnit(value: String): Self = StObject.set(x, "baseUnit", value.asInstanceOf[js.Any])
     
-    inline def setBaseUnitStep(value: js.Any): Self = StObject.set(x, "baseUnitStep", value.asInstanceOf[js.Any])
+    inline def setBaseUnitStep(value: Any): Self = StObject.set(x, "baseUnitStep", value.asInstanceOf[js.Any])
     
     inline def setBaseUnitStepUndefined: Self = StObject.set(x, "baseUnitStep", js.undefined)
     
     inline def setBaseUnitUndefined: Self = StObject.set(x, "baseUnit", js.undefined)
     
-    inline def setCategories(value: js.Any): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: Any): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
@@ -136,7 +135,7 @@ object ChartCategoryAxisItem {
     
     inline def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
     
-    inline def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxDateGroups(value: Double): Self = StObject.set(x, "maxDateGroups", value.asInstanceOf[js.Any])
     
@@ -148,7 +147,7 @@ object ChartCategoryAxisItem {
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
@@ -176,7 +175,7 @@ object ChartCategoryAxisItem {
     
     inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
-    inline def setPlotBandsVarargs(value: ChartCategoryAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
+    inline def setPlotBandsVarargs(value: ChartCategoryAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value*))
     
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     

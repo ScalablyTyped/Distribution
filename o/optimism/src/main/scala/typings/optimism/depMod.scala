@@ -24,8 +24,15 @@ object depMod {
        with Set[AnyEntry]
        with Unsubscribable {
     
-    var subscribe: js.UndefOr[js.Function1[/* args */ js.Array[TKey], Unit | js.Function0[js.Any]]] = js.native
+    var subscribe: js.UndefOr[js.Function1[/* args */ js.Array[TKey], Unit | js.Function0[Any]]] = js.native
   }
+  
+  /* keyof optimism.anon.Dispose */ /* Rewritten from type alias, can be one of: 
+    - typings.optimism.optimismStrings.setDirty
+    - typings.optimism.optimismStrings.dispose
+    - typings.optimism.optimismStrings.forget
+  */
+  trait EntryMethodName extends StObject
   
   type OptimisticDependencyFunction[TKey] = (js.Function1[/* key */ TKey, Unit]) & Dirty[TKey]
 }

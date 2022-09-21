@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Event")
 @js.native
-class Event_[OriginalEvent, TargetGeometry] protected ()
+open class Event_[OriginalEvent, TargetGeometry] protected ()
   extends typings.yandexMaps.mod.Event_[OriginalEvent, TargetGeometry] {
   def this(originalEvent: js.Object, sourceEvent: IEvent[js.Object, js.Object]) = this()
 }

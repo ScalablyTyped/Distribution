@@ -1,10 +1,10 @@
 package typings.googleAuthLibrary
 
 import typings.googleAuthLibrary.credentialsMod.JWTInput
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleAuthLibrary.oauth2clientMod.OAuth2Client
 import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,9 @@ object refreshclientMod {
     * @param clientSecret The authentication client secret.
     * @param refreshToken The authentication refresh token.
     */
-  class UserRefreshClient () extends OAuth2Client {
+  open class UserRefreshClient ()
+    extends OAuth2Client
+       with JSONClient {
     def this(clientId: String) = this()
     def this(options: UserRefreshClientOptions) = this()
     def this(clientId: String, clientSecret: String) = this()
@@ -46,9 +48,9 @@ object refreshclientMod {
       * @param callback Optional callback.
       */
     def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
-    def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    /* private */ var fromStreamAsync: js.Any = js.native
+    /* private */ var fromStreamAsync: Any = js.native
   }
   
   trait UserRefreshClientOptions

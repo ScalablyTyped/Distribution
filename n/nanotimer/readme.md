@@ -10,10 +10,10 @@ A much higher accuracy timer object that makes use of the node.js hrtime functio
 | ------------------ | :-------------: |
 | Full name          | nanotimer |
 | Keywords           | timer, nanotimer, nano, nanoseconds, micro, microseconds, stopwatch |
-| # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 3332780 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 540381.6666666666 |
+| # stars            | 141.0 |
 
 ## Links
 - [Homepage](https://github.com/Krb686/nanotimer#readme)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "colorette" : "1.2.1"
+      "colorette" : "2.0.19"
     }
   ],
   "test-dependencies" : [
     {
-      "colorette" : "1.2.1"
+      "colorette" : "2.0.19"
     }
   ],
   "compile-devDependencies" : [

@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class TopoJSON () extends JSONFeature {
+open class TopoJSON () extends JSONFeature {
   def this(opt_options: TopoJSONOptions) = this()
   
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native

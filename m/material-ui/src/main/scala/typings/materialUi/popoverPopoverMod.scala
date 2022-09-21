@@ -10,10 +10,10 @@ object popoverPopoverMod {
   
   @JSImport("material-ui/Popover/Popover", JSImport.Default)
   @js.native
-  class default () extends Popover
+  open class default () extends Popover
   
   @JSImport("material-ui/Popover/Popover", "Popover")
   @js.native
-  class Popover ()
-    extends Component[PopoverProps, js.Object, js.Any]
+  open class Popover ()
+    extends Component[PopoverProps, js.Object, Any]
 }

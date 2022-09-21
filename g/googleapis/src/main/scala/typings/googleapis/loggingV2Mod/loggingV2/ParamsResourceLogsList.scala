@@ -1,9 +1,5 @@
 package typings.googleapis.loggingV2Mod.loggingV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,31 +9,24 @@ trait ParamsResourceLogsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional. The maximum number of results to return from this request.
-    * Non-positive values are ignored. The presence of nextPageToken in the
-    * response indicates that more results might be available.
+    * Optional. The maximum number of results to return from this request. Non-positive values are ignored. The presence of nextPageToken in the response indicates that more results might be available.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. If present, then retrieve the next batch of results from the
-    * preceding call to this method. pageToken must be the value of
-    * nextPageToken from the previous response. The values of other method
-    * parameters should be identical to those in the previous call.
+    * Optional. If present, then retrieve the next batch of results from the preceding call to this method. pageToken must be the value of nextPageToken from the previous response. The values of other method parameters should be identical to those in the previous call.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The resource name that owns the logs: "projects/[PROJECT_ID]"
-    * "organizations/[ORGANIZATION_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]"
-    * "folders/[FOLDER_ID]"
+    * Required. The resource name that owns the logs: projects/[PROJECT_ID] organizations/[ORGANIZATION_ID] billingAccounts/[BILLING_ACCOUNT_ID] folders/[FOLDER_ID]
     */
   var parent: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. The resource name that owns the logs: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] organizations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]To support legacy queries, it could also be: projects/[PROJECT_ID] organizations/[ORGANIZATION_ID] billingAccounts/[BILLING_ACCOUNT_ID] folders/[FOLDER_ID]
+    */
+  var resourceNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceLogsList {
   
@@ -47,10 +36,6 @@ object ParamsResourceLogsList {
   }
   
   extension [Self <: ParamsResourceLogsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
@@ -63,5 +48,11 @@ object ParamsResourceLogsList {
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
+    
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value*))
   }
 }

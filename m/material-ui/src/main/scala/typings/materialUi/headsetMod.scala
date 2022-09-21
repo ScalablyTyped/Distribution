@@ -10,10 +10,10 @@ object headsetMod {
   
   @JSImport("material-ui/svg-icons/hardware/headset", JSImport.Default)
   @js.native
-  class default () extends HardwareHeadset
+  open class default () extends HardwareHeadset
   
   @JSImport("material-ui/svg-icons/hardware/headset", "HardwareHeadset")
   @js.native
-  class HardwareHeadset ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareHeadset ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

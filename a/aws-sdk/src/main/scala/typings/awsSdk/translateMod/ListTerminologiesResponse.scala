@@ -33,6 +33,6 @@ object ListTerminologiesResponse {
     
     inline def setTerminologyPropertiesListUndefined: Self = StObject.set(x, "TerminologyPropertiesList", js.undefined)
     
-    inline def setTerminologyPropertiesListVarargs(value: TerminologyProperties*): Self = StObject.set(x, "TerminologyPropertiesList", js.Array(value :_*))
+    inline def setTerminologyPropertiesListVarargs(value: TerminologyProperties*): Self = StObject.set(x, "TerminologyPropertiesList", js.Array(value*))
   }
 }

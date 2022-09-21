@@ -12,13 +12,13 @@ trait FlowNetwork extends StObject {
   
   def adj(v: Double): js.Array[FlowEdge]
   
-  /* private */ var adjList: js.Any
+  /* private */ var adjList: Any
   
   def edge(v: Double, w: Double): FlowEdge | Null
   
   def node(v: Double): Node
   
-  /* private */ var nodeInfo: js.Any
+  /* private */ var nodeInfo: Any
 }
 object FlowNetwork {
   
@@ -26,10 +26,10 @@ object FlowNetwork {
     V: Double,
     addEdge: FlowEdge => Unit,
     adj: Double => js.Array[FlowEdge],
-    adjList: js.Any,
+    adjList: Any,
     edge: (Double, Double) => FlowEdge | Null,
     node: Double => Node,
-    nodeInfo: js.Any
+    nodeInfo: Any
   ): FlowNetwork = {
     val __obj = js.Dynamic.literal(V = V.asInstanceOf[js.Any], addEdge = js.Any.fromFunction1(addEdge), adj = js.Any.fromFunction1(adj), adjList = adjList.asInstanceOf[js.Any], edge = js.Any.fromFunction2(edge), node = js.Any.fromFunction1(node), nodeInfo = nodeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowNetwork]
@@ -41,13 +41,13 @@ object FlowNetwork {
     
     inline def setAdj(value: Double => js.Array[FlowEdge]): Self = StObject.set(x, "adj", js.Any.fromFunction1(value))
     
-    inline def setAdjList(value: js.Any): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
+    inline def setAdjList(value: Any): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
     
     inline def setEdge(value: (Double, Double) => FlowEdge | Null): Self = StObject.set(x, "edge", js.Any.fromFunction2(value))
     
     inline def setNode(value: Double => Node): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
     
-    inline def setNodeInfo(value: js.Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
+    inline def setNodeInfo(value: Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
     
     inline def setV(value: Double): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
   }

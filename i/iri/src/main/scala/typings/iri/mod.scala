@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("iri", "IRI")
   @js.native
-  class IRI protected () extends StObject {
+  open class IRI protected () extends StObject {
     /**
       * The constructor takes a single argument, a URI or IRI string:
       */

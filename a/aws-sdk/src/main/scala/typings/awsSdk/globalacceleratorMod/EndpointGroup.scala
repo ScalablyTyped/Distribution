@@ -17,7 +17,7 @@ trait EndpointGroup extends StObject {
   var EndpointGroupArn: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The AWS Region where the endpoint group is located.
+    * The Amazon Web Services Region where the endpoint group is located.
     */
   var EndpointGroupRegion: js.UndefOr[GenericString] = js.undefined
   
@@ -29,7 +29,7 @@ trait EndpointGroup extends StObject {
   /**
     * If the protocol is HTTP/S, then this value provides the ping path that Global Accelerator uses for the destination on the endpoints for health checks. The default is slash (/).
     */
-  var HealthCheckPath: js.UndefOr[GenericString] = js.undefined
+  var HealthCheckPath: js.UndefOr[typings.awsSdk.globalacceleratorMod.HealthCheckPath] = js.undefined
   
   /**
     * The port that Global Accelerator uses to perform health checks on endpoints that are part of this endpoint group.  The default port is the port for the listener that this endpoint group is associated with. If the listener port is a list, Global Accelerator uses the first specified port in the list of ports.
@@ -42,7 +42,7 @@ trait EndpointGroup extends StObject {
   var HealthCheckProtocol: js.UndefOr[typings.awsSdk.globalacceleratorMod.HealthCheckProtocol] = js.undefined
   
   /**
-    * Allows you to override the destination ports used to route traffic to an endpoint. Using a port override lets you to map a list of external destination ports (that your users send traffic to) to a list of internal destination ports that you want an application endpoint to receive traffic on. 
+    * Allows you to override the destination ports used to route traffic to an endpoint. Using a port override lets you map a list of external destination ports (that your users send traffic to) to a list of internal destination ports that you want an application endpoint to receive traffic on. 
     */
   var PortOverrides: js.UndefOr[typings.awsSdk.globalacceleratorMod.PortOverrides] = js.undefined
   
@@ -52,7 +52,7 @@ trait EndpointGroup extends StObject {
   var ThresholdCount: js.UndefOr[typings.awsSdk.globalacceleratorMod.ThresholdCount] = js.undefined
   
   /**
-    * The percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener.  Use this action to increase (dial up) or decrease (dial down) traffic to a specific Region. The percentage is applied to the traffic that would otherwise have been routed to the Region based on optimal routing. The default value is 100.
+    * The percentage of traffic to send to an Amazon Web Services Region. Additional traffic is distributed to other endpoint groups for this listener.  Use this action to increase (dial up) or decrease (dial down) traffic to a specific Region. The percentage is applied to the traffic that would otherwise have been routed to the Region based on optimal routing. The default value is 100.
     */
   var TrafficDialPercentage: js.UndefOr[typings.awsSdk.globalacceleratorMod.TrafficDialPercentage] = js.undefined
 }
@@ -69,7 +69,7 @@ object EndpointGroup {
     
     inline def setEndpointDescriptionsUndefined: Self = StObject.set(x, "EndpointDescriptions", js.undefined)
     
-    inline def setEndpointDescriptionsVarargs(value: EndpointDescription*): Self = StObject.set(x, "EndpointDescriptions", js.Array(value :_*))
+    inline def setEndpointDescriptionsVarargs(value: EndpointDescription*): Self = StObject.set(x, "EndpointDescriptions", js.Array(value*))
     
     inline def setEndpointGroupArn(value: GenericString): Self = StObject.set(x, "EndpointGroupArn", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object EndpointGroup {
     
     inline def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "HealthCheckIntervalSeconds", js.undefined)
     
-    inline def setHealthCheckPath(value: GenericString): Self = StObject.set(x, "HealthCheckPath", value.asInstanceOf[js.Any])
+    inline def setHealthCheckPath(value: HealthCheckPath): Self = StObject.set(x, "HealthCheckPath", value.asInstanceOf[js.Any])
     
     inline def setHealthCheckPathUndefined: Self = StObject.set(x, "HealthCheckPath", js.undefined)
     
@@ -99,7 +99,7 @@ object EndpointGroup {
     
     inline def setPortOverridesUndefined: Self = StObject.set(x, "PortOverrides", js.undefined)
     
-    inline def setPortOverridesVarargs(value: PortOverride*): Self = StObject.set(x, "PortOverrides", js.Array(value :_*))
+    inline def setPortOverridesVarargs(value: PortOverride*): Self = StObject.set(x, "PortOverrides", js.Array(value*))
     
     inline def setThresholdCount(value: ThresholdCount): Self = StObject.set(x, "ThresholdCount", value.asInstanceOf[js.Any])
     

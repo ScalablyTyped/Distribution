@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.Notification")
 @js.native
-class Notification () extends StObject {
+open class Notification () extends StObject {
   
   var android: AndroidNotification = js.native
   
@@ -21,7 +21,7 @@ class Notification () extends StObject {
   
   def setBody(body: String): Notification = js.native
   
-  def setData(data: js.Any): Notification = js.native
+  def setData(data: Any): Notification = js.native
   
   def setNotificationId(notificationId: String): Notification = js.native
   

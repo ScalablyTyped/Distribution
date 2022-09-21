@@ -41,7 +41,7 @@ object interpolateMod {
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      inline def setEaseVarargs(value: Easing*): Self = StObject.set(x, "ease", js.Array(value :_*))
+      inline def setEaseVarargs(value: Easing*): Self = StObject.set(x, "ease", js.Array(value*))
       
       inline def setMixer(value: (T, T) => Mix[T]): Self = StObject.set(x, "mixer", js.Any.fromFunction2(value))
       

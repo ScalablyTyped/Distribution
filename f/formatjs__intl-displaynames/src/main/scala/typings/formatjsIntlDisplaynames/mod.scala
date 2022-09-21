@@ -24,14 +24,14 @@ object mod {
   
   @JSImport("@formatjs/intl-displaynames", "DisplayNames")
   @js.native
-  class DisplayNames protected () extends StObject {
+  open class DisplayNames protected () extends StObject {
     def this(locales: String, options: DisplayNamesOptions) = this()
     def this(locales: js.Array[String], options: DisplayNamesOptions) = this()
     def this(locales: Unit, options: DisplayNamesOptions) = this()
     
     def of(code: String): js.UndefOr[String] = js.native
-    def of(code: js.Object): js.UndefOr[String] = js.native
     def of(code: Double): js.UndefOr[String] = js.native
+    def of(code: Record[String, Any]): js.UndefOr[String] = js.native
     
     def resolvedOptions(): DisplayNamesResolvedOptions = js.native
   }
@@ -42,22 +42,22 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def __addLocaleData(data: DisplayNamesLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def __addLocaleData(data: DisplayNamesLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
     @JSImport("@formatjs/intl-displaynames", "DisplayNames.__defaultLocale")
     @js.native
-    def __defaultLocale: js.Any = js.native
-    inline def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
+    def __defaultLocale: Any = js.native
+    inline def __defaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-displaynames", "DisplayNames.availableLocales")
     @js.native
-    def availableLocales: js.Any = js.native
-    inline def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
+    def availableLocales: Any = js.native
+    inline def availableLocales_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-displaynames", "DisplayNames.getDefaultLocale")
     @js.native
-    def getDefaultLocale: js.Any = js.native
-    inline def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
+    def getDefaultLocale: Any = js.native
+    inline def getDefaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-displaynames", "DisplayNames.localeData")
     @js.native
@@ -124,8 +124,13 @@ object mod {
   }
   object DisplayNamesResolvedOptions {
     
-    inline def apply(locale: String, `type`: NonNullable[language | region | script | currency]): DisplayNamesResolvedOptions = {
-      val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
+    inline def apply(
+      fallback: NonNullable[js.UndefOr[code | none]],
+      locale: String,
+      style: NonNullable[js.UndefOr[narrow | short | long]],
+      `type`: NonNullable[language | region | script | currency]
+    ): DisplayNamesResolvedOptions = {
+      val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayNamesResolvedOptions]
     }
@@ -134,13 +139,9 @@ object mod {
       
       inline def setFallback(value: NonNullable[js.UndefOr[code | none]]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
-      
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setStyle(value: NonNullable[js.UndefOr[narrow | short | long]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setType(value: NonNullable[language | region | script | currency]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

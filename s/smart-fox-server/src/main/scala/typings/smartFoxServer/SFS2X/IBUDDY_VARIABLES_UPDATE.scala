@@ -26,7 +26,7 @@ object IBUDDY_VARIABLES_UPDATE {
     
     inline def setChangedVars(value: js.Array[String]): Self = StObject.set(x, "changedVars", value.asInstanceOf[js.Any])
     
-    inline def setChangedVarsVarargs(value: String*): Self = StObject.set(x, "changedVars", js.Array(value :_*))
+    inline def setChangedVarsVarargs(value: String*): Self = StObject.set(x, "changedVars", js.Array(value*))
     
     inline def setIsItMe(value: Boolean): Self = StObject.set(x, "isItMe", value.asInstanceOf[js.Any])
   }

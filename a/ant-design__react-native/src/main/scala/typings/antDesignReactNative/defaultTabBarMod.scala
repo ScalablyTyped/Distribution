@@ -7,11 +7,13 @@ import typings.antDesignReactNative.tabsPropsTypeMod.TabBarPropsType
 import typings.antDesignReactNative.tabsPropsTypeMod.TabData
 import typings.antDesignReactNative.tabsStyleMod.TabBarStyle
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.Animated.Value
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.ScrollView
 import typings.reactNative.mod.ViewStyle
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +22,29 @@ object defaultTabBarMod {
   
   @JSImport("@ant-design/react-native/lib/tabs/DefaultTabBar", "DefaultTabBar")
   @js.native
-  class DefaultTabBar protected ()
-    extends PureComponent[PropsType, StateType, js.Any] {
+  open class DefaultTabBar protected () extends PureComponent[PropsType, StateType, Any] {
     def this(props: PropsType) = this()
     
-    var _containerMeasurements: js.Any = js.native
+    var _containerMeasurements: Any = js.native
+    
+    var _newLineLeft: Double = js.native
     
     var _scrollView: ScrollView = js.native
     
-    var _tabContainerMeasurements: js.Any = js.native
+    var _tabContainerMeasurements: Any = js.native
     
-    var _tabsMeasurements: js.Array[js.Any] = js.native
+    var _tabsMeasurements: js.Array[Any] = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDefaultTabBar(): Unit = js.native
     
-    def measureTab(page: Double, event: js.Any): Unit = js.native
+    def getTabs(styles: TabBarStyle, theme: Theme): js.Array[Element] = js.native
     
-    def necessarilyMeasurementsCompleted(position: Double, isLastTab: Boolean): js.Any = js.native
+    def getUnderLine(styles: TabBarStyle): ReactNode = js.native
+    
+    def measureTab(page: Double, event: Any): Unit = js.native
+    
+    def necessarilyMeasurementsCompleted(position: Double, isLastTab: Boolean): Any = js.native
     
     def onContainerLayout(e: LayoutChangeEvent): Unit = js.native
     
@@ -49,8 +56,8 @@ object defaultTabBarMod {
       tab: TabData,
       index: Double,
       width: Double,
-      onLayoutHandler: js.Any,
-      styles: TabBarStyle,
+      onLayoutHandler: Any,
+      styles: ReturnType[js.Function1[/* theme */ Theme, TabBarStyle]],
       theme: Theme
     ): Element = js.native
     
@@ -58,7 +65,7 @@ object defaultTabBarMod {
     
     def updateTabUnderline(position: Double, pageOffset: Double, tabCount: Double): Unit = js.native
     
-    def updateView(offset: js.Any): Unit = js.native
+    def updateView(offset: Any): Unit = js.native
   }
   /* static members */
   object DefaultTabBar {
@@ -78,12 +85,9 @@ object defaultTabBarMod {
        with TabBarPropsType
        with WithThemeStyles[TabBarStyle] {
     
-    /** default: false */
-    var dynamicTabUnderlineWidth: js.UndefOr[Boolean] = js.undefined
-    
     var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.undefined
     
-    var scrollValue: js.UndefOr[js.Any] = js.undefined
+    var scrollValue: js.UndefOr[Any] = js.undefined
     
     var tabStyle: js.UndefOr[ViewStyle] = js.undefined
     
@@ -104,15 +108,11 @@ object defaultTabBarMod {
     
     extension [Self <: PropsType](x: Self) {
       
-      inline def setDynamicTabUnderlineWidth(value: Boolean): Self = StObject.set(x, "dynamicTabUnderlineWidth", value.asInstanceOf[js.Any])
-      
-      inline def setDynamicTabUnderlineWidthUndefined: Self = StObject.set(x, "dynamicTabUnderlineWidth", js.undefined)
-      
       inline def setKeyboardShouldPersistTaps(value: Boolean): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
       
       inline def setKeyboardShouldPersistTapsUndefined: Self = StObject.set(x, "keyboardShouldPersistTaps", js.undefined)
       
-      inline def setScrollValue(value: js.Any): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
+      inline def setScrollValue(value: Any): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
       
       inline def setScrollValueUndefined: Self = StObject.set(x, "scrollValue", js.undefined)
       

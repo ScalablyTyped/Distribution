@@ -40,7 +40,7 @@ object CandidateInferenceInfo {
     
     inline def setInferenceCandidates(value: js.Array[PullTypeSymbol]): Self = StObject.set(x, "inferenceCandidates", value.asInstanceOf[js.Any])
     
-    inline def setInferenceCandidatesVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "inferenceCandidates", js.Array(value :_*))
+    inline def setInferenceCandidatesVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "inferenceCandidates", js.Array(value*))
     
     inline def setIsFixed(value: () => Boolean): Self = StObject.set(x, "isFixed", js.Any.fromFunction0(value))
     

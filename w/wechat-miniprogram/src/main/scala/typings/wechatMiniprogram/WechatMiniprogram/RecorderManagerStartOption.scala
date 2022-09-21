@@ -33,7 +33,7 @@ trait RecorderManagerStartOption extends StObject {
     * 可选值：
     * - 'auto': 自动设置，默认使用手机麦克风，插上耳麦后自动切换使用耳机麦克风，所有平台适用;
     * - 'buildInMic': 手机麦克风，仅限 iOS;
-    * - 'headsetMic': 耳机麦克风，仅限 iOS;
+    * - 'headsetMic': 有线耳机麦克风，仅限 iOS;
     * - 'mic': 麦克风（没插耳麦时是手机麦克风，插耳麦时是耳机麦克风），仅限 Android;
     * - 'camcorder': 同 mic，适用于录制音视频内容，仅限 Android;
     * - 'voice_communication': 同 mic，适用于实时沟通，仅限 Android;
@@ -59,7 +59,7 @@ trait RecorderManagerStartOption extends StObject {
     * - 'PCM': pcm 格式; */
   var format: js.UndefOr[mp3 | aac | wav | PCM] = js.undefined
   
-  /** 指定帧大小，单位 KB。传入 frameSize 后，每录制指定帧大小的内容后，会回调录制的文件内容，不指定则不会回调。暂仅支持 mp3 格式。 */
+  /** 指定帧大小，单位 KB。传入 frameSize 后，每录制指定帧大小的内容后，会回调录制的文件内容，不指定则不会回调。暂仅支持 mp3、pcm 格式。 */
   var frameSize: js.UndefOr[Double] = js.undefined
   
   /** 录音通道数
@@ -69,7 +69,7 @@ trait RecorderManagerStartOption extends StObject {
     * - 2: 2 个通道; */
   var numberOfChannels: js.UndefOr[`1` | `2`] = js.undefined
   
-  /** 采样率
+  /** 采样率（pc不支持）
     *
     * 可选值：
     * - 8000: 8000 采样率;

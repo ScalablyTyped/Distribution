@@ -25,7 +25,7 @@ object UnionType {
     
     inline def setElements(value: js.Array[Type_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: Type_ *): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Type_ *): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setType(value: typings.doctrine.doctrineStrings.UnionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

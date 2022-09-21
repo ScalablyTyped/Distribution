@@ -1,10 +1,10 @@
 package typings.blueprintjsTable
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsTable.anon.IsActive
-import typings.blueprintjsTable.anon.ValidationMapIColumnInter
-import typings.blueprintjsTable.contextMod.IColumnInteractionBarContextTypes
+import typings.blueprintjsTable.anon.ValidationMapColumnIntera
+import typings.blueprintjsTable.contextMod.ColumnInteractionBarContextTypes_
 import typings.blueprintjsTable.headerCellMod.IHeaderCellProps
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
@@ -21,23 +21,23 @@ object columnHeaderCellMod {
   
   @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell")
   @js.native
-  class ColumnHeaderCell protected ()
+  open class ColumnHeaderCell protected ()
     extends AbstractPureComponent2[IColumnHeaderCellProps, IColumnHeaderCellState, js.Object] {
     def this(props: IColumnHeaderCellProps) = this()
-    def this(props: IColumnHeaderCellProps, context: js.Any) = this()
+    def this(props: IColumnHeaderCellProps, context: Any) = this()
     
     @JSName("context")
-    var context_ColumnHeaderCell: IColumnInteractionBarContextTypes = js.native
+    var context_ColumnHeaderCell: ColumnInteractionBarContextTypes_ = js.native
     
-    /* private */ var handlePopoverClosing: js.Any = js.native
+    /* private */ var handlePopoverClosing: Any = js.native
     
-    /* private */ var handlePopoverOpened: js.Any = js.native
+    /* private */ var handlePopoverOpened: Any = js.native
     
-    /* private */ var maybeRenderContent: js.Any = js.native
+    /* private */ var maybeRenderContent: Any = js.native
     
-    /* private */ var maybeRenderDropdownMenu: js.Any = js.native
+    /* private */ var maybeRenderDropdownMenu: Any = js.native
     
-    /* private */ var renderName: js.Any = js.native
+    /* private */ var renderName: Any = js.native
     
     @JSName("state")
     var state_ColumnHeaderCell: IsActive = js.native
@@ -51,13 +51,18 @@ object columnHeaderCellMod {
     
     @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell.contextTypes")
     @js.native
-    def contextTypes: ValidationMapIColumnInter = js.native
-    inline def contextTypes_=(x: ValidationMapIColumnInter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: ValidationMapColumnIntera = js.native
+    inline def contextTypes_=(x: ValidationMapColumnIntera): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell.defaultProps")
     @js.native
     def defaultProps: IColumnHeaderCellProps = js.native
     inline def defaultProps_=(x: IColumnHeaderCellProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/table/lib/esm/headers/columnHeaderCell", "ColumnHeaderCell.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     /**
       * This method determines if a `MouseEvent` was triggered on a target that
@@ -70,6 +75,8 @@ object columnHeaderCellMod {
   }
   
   inline def HorizontalCellDivider(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HorizontalCellDivider")().asInstanceOf[Element]
+  
+  type ColumnHeaderCellProps = IColumnHeaderCellProps
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.blueprintjsTable.columnHeaderCellMod.IColumnNameProps because var conflicts: name. Inlined nameRenderer */ trait IColumnHeaderCellProps
@@ -88,13 +95,14 @@ object columnHeaderCellMod {
     
     /**
       * The icon name or element for the header's menu button.
+      *
       * @default "chevron-down"
       */
-    var menuIcon: js.UndefOr[IconName | Element] = js.undefined
+    var menuIcon: js.UndefOr[BlueprintIcons16Id | Element] = js.undefined
     
     /**
       * A callback to override the default name rendering behavior. The default
-      * behavior is to simply use the `ColumnHeaderCell`s name prop.
+      * behavior is to simply use the `ColumnHeaderCell2`s name prop.
       *
       * This render callback can be used, for example, to provide a
       * `EditableName` component for editing column names.
@@ -124,7 +132,7 @@ object columnHeaderCellMod {
       
       inline def setIsColumnSelectedUndefined: Self = StObject.set(x, "isColumnSelected", js.undefined)
       
-      inline def setMenuIcon(value: IconName | Element): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
+      inline def setMenuIcon(value: BlueprintIcons16Id | Element): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
       
       inline def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
       
@@ -162,7 +170,7 @@ object columnHeaderCellMod {
     
     /**
       * A callback to override the default name rendering behavior. The default
-      * behavior is to simply use the `ColumnHeaderCell`s name prop.
+      * behavior is to simply use the `ColumnHeaderCell2`s name prop.
       *
       * This render callback can be used, for example, to provide a
       * `EditableName` component for editing column names.

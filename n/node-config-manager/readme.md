@@ -10,10 +10,10 @@ A configuration manager for NodeJS. It helps you to organize your project and th
 | ------------------ | :-------------: |
 | Full name          | node-config-manager |
 | Keywords           | util, config, environment, manager |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 21771 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 564.6666666666666 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/Valko54/node-config-manager#readme)

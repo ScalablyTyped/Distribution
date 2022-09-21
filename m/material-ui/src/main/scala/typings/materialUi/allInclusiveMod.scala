@@ -10,10 +10,10 @@ object allInclusiveMod {
   
   @JSImport("material-ui/svg-icons/places/all-inclusive", JSImport.Default)
   @js.native
-  class default () extends PlacesAllInclusive
+  open class default () extends PlacesAllInclusive
   
   @JSImport("material-ui/svg-icons/places/all-inclusive", "PlacesAllInclusive")
   @js.native
-  class PlacesAllInclusive ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesAllInclusive ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

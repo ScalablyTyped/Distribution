@@ -25,12 +25,12 @@ object Csv {
     
     inline def setDataRowsUndefined: Self = StObject.set(x, "dataRows", js.undefined)
     
-    inline def setDataRowsVarargs(value: CsvRow*): Self = StObject.set(x, "dataRows", js.Array(value :_*))
+    inline def setDataRowsVarargs(value: CsvRow*): Self = StObject.set(x, "dataRows", js.Array(value*))
     
     inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "zapier-platform-core" : "10.1.2"
+      "zapier-platform-core" : "12.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "zapier-platform-core" : "10.1.2"
+      "zapier-platform-core" : "12.0.3"
     }
   ],
   "compile-devDependencies" : [

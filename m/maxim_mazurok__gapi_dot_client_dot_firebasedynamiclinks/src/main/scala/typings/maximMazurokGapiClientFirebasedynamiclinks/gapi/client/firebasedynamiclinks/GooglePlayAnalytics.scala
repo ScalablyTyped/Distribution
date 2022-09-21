@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GooglePlayAnalytics extends StObject {
   
-  /**
-    * [AdWords autotagging parameter](https://support.google.com/analytics/answer/1033981?hl=en); used to measure Google AdWords ads. This value is generated dynamically and should never
-    * be modified.
-    */
+  /** Deprecated; FDL SDK does not process nor log it. */
   var gclid: js.UndefOr[String] = js.undefined
   
   /** Campaign name; used for keyword analysis to identify a specific product promotion or strategic campaign. */

@@ -11,9 +11,9 @@ Lightweight library with asynchronous functions for composing asynchronous and e
 | Full name          | rx-lite-async |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 841 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 82.0 |
+| # stars            | 19624.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS)

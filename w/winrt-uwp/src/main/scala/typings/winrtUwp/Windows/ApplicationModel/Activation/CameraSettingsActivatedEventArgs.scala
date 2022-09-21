@@ -17,10 +17,10 @@ trait CameraSettingsActivatedEventArgs extends StObject {
   var splashScreen: SplashScreen
   
   /** Gets the object that controls device settings on the camera. */
-  var videoDeviceController: js.Any
+  var videoDeviceController: Any
   
   /** Gets the object that implements additional extended settings for the camera. */
-  var videoDeviceExtension: js.Any
+  var videoDeviceExtension: Any
 }
 object CameraSettingsActivatedEventArgs {
   
@@ -28,8 +28,8 @@ object CameraSettingsActivatedEventArgs {
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen,
-    videoDeviceController: js.Any,
-    videoDeviceExtension: js.Any
+    videoDeviceController: Any,
+    videoDeviceExtension: Any
   ): CameraSettingsActivatedEventArgs = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], videoDeviceController = videoDeviceController.asInstanceOf[js.Any], videoDeviceExtension = videoDeviceExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraSettingsActivatedEventArgs]
@@ -43,8 +43,8 @@ object CameraSettingsActivatedEventArgs {
     
     inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    inline def setVideoDeviceController(value: js.Any): Self = StObject.set(x, "videoDeviceController", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceController(value: Any): Self = StObject.set(x, "videoDeviceController", value.asInstanceOf[js.Any])
     
-    inline def setVideoDeviceExtension(value: js.Any): Self = StObject.set(x, "videoDeviceExtension", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceExtension(value: Any): Self = StObject.set(x, "videoDeviceExtension", value.asInstanceOf[js.Any])
   }
 }

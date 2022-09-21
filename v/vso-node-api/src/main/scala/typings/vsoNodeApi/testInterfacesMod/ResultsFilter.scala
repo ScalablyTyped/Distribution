@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait ResultsFilter extends StObject {
   
   var groupBy: String
   
-  var maxCompleteDate: Date
+  var maxCompleteDate: js.Date
   
   var resultsCount: Double
   
@@ -29,7 +28,7 @@ object ResultsFilter {
     automatedTestName: String,
     branch: String,
     groupBy: String,
-    maxCompleteDate: Date,
+    maxCompleteDate: js.Date,
     resultsCount: Double,
     testCaseReferenceIds: js.Array[Double],
     testResultsContext: TestResultsContext,
@@ -47,13 +46,13 @@ object ResultsFilter {
     
     inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    inline def setMaxCompleteDate(value: Date): Self = StObject.set(x, "maxCompleteDate", value.asInstanceOf[js.Any])
+    inline def setMaxCompleteDate(value: js.Date): Self = StObject.set(x, "maxCompleteDate", value.asInstanceOf[js.Any])
     
     inline def setResultsCount(value: Double): Self = StObject.set(x, "resultsCount", value.asInstanceOf[js.Any])
     
     inline def setTestCaseReferenceIds(value: js.Array[Double]): Self = StObject.set(x, "testCaseReferenceIds", value.asInstanceOf[js.Any])
     
-    inline def setTestCaseReferenceIdsVarargs(value: Double*): Self = StObject.set(x, "testCaseReferenceIds", js.Array(value :_*))
+    inline def setTestCaseReferenceIdsVarargs(value: Double*): Self = StObject.set(x, "testCaseReferenceIds", js.Array(value*))
     
     inline def setTestResultsContext(value: TestResultsContext): Self = StObject.set(x, "testResultsContext", value.asInstanceOf[js.Any])
     

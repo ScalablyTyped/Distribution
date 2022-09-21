@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reflectDeletePropertyMod {
   
   /* was `typeof core.Reflect.deleteProperty` */
-  inline def apply(target: js.Any, propertyKey: PropertyKey): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: Any, propertyKey: PropertyKey): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("core-js/library/fn/reflect/delete-property", JSImport.Namespace)
   @js.native

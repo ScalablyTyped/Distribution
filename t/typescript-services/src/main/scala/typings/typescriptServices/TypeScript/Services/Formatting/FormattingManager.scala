@@ -19,15 +19,15 @@ trait FormattingManager extends StObject {
   
   def formatSelection(minChar: Double, limChar: Double): js.Array[TextEdit]
   
-  /* private */ def formatSpan(span: js.Any, formattingRequestKind: js.Any): js.Any
+  /* private */ def formatSpan(span: Any, formattingRequestKind: Any): Any
   
-  /* private */ var options: js.Any
+  /* private */ var options: Any
   
-  /* private */ var rulesProvider: js.Any
+  /* private */ var rulesProvider: Any
   
-  /* private */ var snapshot: js.Any
+  /* private */ var snapshot: Any
   
-  /* private */ var syntaxTree: js.Any
+  /* private */ var syntaxTree: Any
 }
 object FormattingManager {
   
@@ -38,11 +38,11 @@ object FormattingManager {
     formatOnPaste: (Double, Double) => js.Array[TextEdit],
     formatOnSemicolon: Double => js.Array[TextEdit],
     formatSelection: (Double, Double) => js.Array[TextEdit],
-    formatSpan: (js.Any, js.Any) => js.Any,
-    options: js.Any,
-    rulesProvider: js.Any,
-    snapshot: js.Any,
-    syntaxTree: js.Any
+    formatSpan: (Any, Any) => Any,
+    options: Any,
+    rulesProvider: Any,
+    snapshot: Any,
+    syntaxTree: Any
   ): FormattingManager = {
     val __obj = js.Dynamic.literal(formatDocument = js.Any.fromFunction2(formatDocument), formatOnClosingCurlyBrace = js.Any.fromFunction1(formatOnClosingCurlyBrace), formatOnEnter = js.Any.fromFunction1(formatOnEnter), formatOnPaste = js.Any.fromFunction2(formatOnPaste), formatOnSemicolon = js.Any.fromFunction1(formatOnSemicolon), formatSelection = js.Any.fromFunction2(formatSelection), formatSpan = js.Any.fromFunction2(formatSpan), options = options.asInstanceOf[js.Any], rulesProvider = rulesProvider.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any], syntaxTree = syntaxTree.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormattingManager]
@@ -62,14 +62,14 @@ object FormattingManager {
     
     inline def setFormatSelection(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatSelection", js.Any.fromFunction2(value))
     
-    inline def setFormatSpan(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "formatSpan", js.Any.fromFunction2(value))
+    inline def setFormatSpan(value: (Any, Any) => Any): Self = StObject.set(x, "formatSpan", js.Any.fromFunction2(value))
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setRulesProvider(value: js.Any): Self = StObject.set(x, "rulesProvider", value.asInstanceOf[js.Any])
+    inline def setRulesProvider(value: Any): Self = StObject.set(x, "rulesProvider", value.asInstanceOf[js.Any])
     
-    inline def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    inline def setSyntaxTree(value: js.Any): Self = StObject.set(x, "syntaxTree", value.asInstanceOf[js.Any])
+    inline def setSyntaxTree(value: Any): Self = StObject.set(x, "syntaxTree", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Parameter Classes
 @JSGlobal("tableau.Parameter")
 @js.native
-class Parameter ()
+open class Parameter ()
   extends StObject
      with typings.tableau.tableau.Parameter {
   

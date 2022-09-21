@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Undocumented
   */
-type AddPrinterUriCallback = js.Function1[/* printerUri */ java.lang.String, js.Any]
+type AddPrinterUriCallback = js.Function1[/* printerUri */ String, Any]

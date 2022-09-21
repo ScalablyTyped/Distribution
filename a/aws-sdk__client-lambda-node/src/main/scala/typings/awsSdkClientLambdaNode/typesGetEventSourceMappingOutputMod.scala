@@ -2,7 +2,6 @@ package typings.awsSdkClientLambdaNode
 
 import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ object typesGetEventSourceMappingOutputMod {
     /**
       * <p>The UTC time string indicating the last time the event mapping was updated.</p>
       */
-    var LastModified: js.UndefOr[Date] = js.undefined
+    var LastModified: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The result of the last AWS Lambda invocation of your Lambda function. This value will be null if an SQS queue is the event source.</p>
@@ -82,7 +81,7 @@ object typesGetEventSourceMappingOutputMod {
       
       inline def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
       
-      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       

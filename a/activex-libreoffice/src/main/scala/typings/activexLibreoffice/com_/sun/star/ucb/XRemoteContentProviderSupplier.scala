@@ -28,7 +28,7 @@ object XRemoteContentProviderSupplier {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryRemoteContentProvider: String => XMultiServiceFactory,
     release: () => Unit
   ): XRemoteContentProviderSupplier = {

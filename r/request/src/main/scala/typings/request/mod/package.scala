@@ -1,5 +1,7 @@
 package typings.request.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type Cookie = typings.toughCookie.mod.Cookie
 
-type Headers = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Headers = StringDictionary[Any]
 
-type MultipartBody = java.lang.String | typings.node.Buffer | typings.std.ArrayBuffer | typings.std.Uint8Array
+type MultipartBody = String | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array
 
-type OptionalUriUrl = typings.request.mod.RequiredUriUrl | js.Object
+type OptionalUriUrl = RequiredUriUrl | js.Object
 
-type RequestCallback = js.Function3[
-/* error */ js.Any, 
-/* response */ typings.request.mod.Response, 
-/* body */ js.Any, 
-scala.Unit]
+type RequestCallback = js.Function3[/* error */ Any, /* response */ Response, /* body */ Any, Unit]
 
-type RequestResponse = typings.request.mod.Response
+type RequestResponse = Response
 
 // aliases for backwards compatibility
-type ResponseRequest = typings.request.mod.Request
+type ResponseRequest = Request

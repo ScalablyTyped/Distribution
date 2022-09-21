@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyClusterIamRolesMessage extends StObject {
   
   /**
-    * Zero or more IAM roles to associate with the cluster. The roles must be in their Amazon Resource Name (ARN) format. You can associate up to 10 IAM roles with a single cluster in a single request.
+    * Zero or more IAM roles to associate with the cluster. The roles must be in their Amazon Resource Name (ARN) format. 
     */
   var AddIamRoles: js.UndefOr[IamRoleArnList] = js.undefined
   
@@ -17,7 +17,12 @@ trait ModifyClusterIamRolesMessage extends StObject {
   var ClusterIdentifier: String
   
   /**
-    * Zero or more IAM roles in ARN format to disassociate from the cluster. You can disassociate up to 10 IAM roles from a single cluster in a single request.
+    * The Amazon Resource Name (ARN) for the IAM role that was set as default for the cluster when the cluster was last modified.
+    */
+  var DefaultIamRoleArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Zero or more IAM roles in ARN format to disassociate from the cluster. 
     */
   var RemoveIamRoles: js.UndefOr[IamRoleArnList] = js.undefined
 }
@@ -34,14 +39,18 @@ object ModifyClusterIamRolesMessage {
     
     inline def setAddIamRolesUndefined: Self = StObject.set(x, "AddIamRoles", js.undefined)
     
-    inline def setAddIamRolesVarargs(value: String*): Self = StObject.set(x, "AddIamRoles", js.Array(value :_*))
+    inline def setAddIamRolesVarargs(value: String*): Self = StObject.set(x, "AddIamRoles", js.Array(value*))
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultIamRoleArn(value: String): Self = StObject.set(x, "DefaultIamRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultIamRoleArnUndefined: Self = StObject.set(x, "DefaultIamRoleArn", js.undefined)
     
     inline def setRemoveIamRoles(value: IamRoleArnList): Self = StObject.set(x, "RemoveIamRoles", value.asInstanceOf[js.Any])
     
     inline def setRemoveIamRolesUndefined: Self = StObject.set(x, "RemoveIamRoles", js.undefined)
     
-    inline def setRemoveIamRolesVarargs(value: String*): Self = StObject.set(x, "RemoveIamRoles", js.Array(value :_*))
+    inline def setRemoveIamRolesVarargs(value: String*): Self = StObject.set(x, "RemoveIamRoles", js.Array(value*))
   }
 }

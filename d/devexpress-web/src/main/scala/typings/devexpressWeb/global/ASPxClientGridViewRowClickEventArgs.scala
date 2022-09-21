@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewRowClickEventArgs")
 @js.native
-class ASPxClientGridViewRowClickEventArgs protected ()
+open class ASPxClientGridViewRowClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewRowClickEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientGridViewRowClickEventArgs protected ()
     * @param visibleIndex A zero-based integer index that identifies the clicked row.
     * @param htmlEvent An object that contains parameters associated with the event. This value is assigned to the ASPxClientGridViewRowClickEventArgs.htmlEvent property.
     */
-  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+  def this(visibleIndex: Double, htmlEvent: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -29,7 +29,7 @@ class ASPxClientGridViewRowClickEventArgs protected ()
     * Provides access to the parameters associated with the ASPxClientGridView.RowClick event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the processed row's visible index.

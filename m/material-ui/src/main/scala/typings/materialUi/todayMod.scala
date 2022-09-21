@@ -10,10 +10,10 @@ object todayMod {
   
   @JSImport("material-ui/svg-icons/action/today", JSImport.Default)
   @js.native
-  class default () extends ActionToday
+  open class default () extends ActionToday
   
   @JSImport("material-ui/svg-icons/action/today", "ActionToday")
   @js.native
-  class ActionToday ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionToday ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

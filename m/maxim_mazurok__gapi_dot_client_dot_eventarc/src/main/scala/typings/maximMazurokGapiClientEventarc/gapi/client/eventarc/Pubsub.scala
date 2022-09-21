@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Pubsub extends StObject {
   
   /**
-    * The name of the Pub/Sub subscription created and managed by Eventarc system as a transport for the event delivery. The value must be in the form of
-    * `projects/{PROJECT_ID}/subscriptions/{SUBSCRIPTION_NAME}
+    * Output only. The name of the Pub/Sub subscription created and managed by Eventarc as a transport for the event delivery. Format:
+    * `projects/{PROJECT_ID}/subscriptions/{SUBSCRIPTION_NAME}`.
     */
   var subscription: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the Pub/Sub topic created and managed by Eventarc system as a transport for the event delivery. The value must be in the form of
-    * `projects/{PROJECT_ID}/topics/{TOPIC_NAME}
+    * Optional. The name of the Pub/Sub topic created and managed by Eventarc as a transport for the event delivery. Format: `projects/{PROJECT_ID}/topics/{TOPIC_NAME}`. You can set an
+    * existing topic for triggers of the type `google.cloud.pubsub.topic.v1.messagePublished`. The topic you provide here is not deleted by Eventarc at trigger deletion.
     */
   var topic: js.UndefOr[String] = js.undefined
 }

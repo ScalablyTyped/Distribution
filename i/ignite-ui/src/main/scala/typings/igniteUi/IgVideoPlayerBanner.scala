@@ -10,7 +10,7 @@ trait IgVideoPlayerBanner
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets whether to apply animation effects when showing or hiding the banner. If set to true, the animation is played for banner.duration in milliseconds.
@@ -70,7 +70,7 @@ trait IgVideoPlayerBanner
     * Gets/Sets an array of numbers. Each number specifies on which second in the movie the banner will pop.
     *
     */
-  var times: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var times: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets/Sets whether the banner is visible or not.
@@ -129,11 +129,11 @@ object IgVideoPlayerBanner {
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    inline def setTimes(value: js.Array[js.Any]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+    inline def setTimes(value: js.Array[Any]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
     inline def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
     
-    inline def setTimesVarargs(value: js.Any*): Self = StObject.set(x, "times", js.Array(value :_*))
+    inline def setTimesVarargs(value: Any*): Self = StObject.set(x, "times", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

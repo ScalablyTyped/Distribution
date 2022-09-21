@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxDesignerToolboxItem")
 @js.native
-class ASPxDesignerToolboxItem ()
+open class ASPxDesignerToolboxItem ()
   extends StObject
      with typings.devexpressWeb.ASPxDesignerToolboxItem {
   
   /* CompleteClass */
-  var defaultVal: js.Any = js.native
+  var defaultVal: Any = js.native
   
   /* CompleteClass */
   var info: js.Array[typings.devexpressWeb.ASPxDesignerElementSerializationInfo] = js.native
@@ -23,11 +23,11 @@ class ASPxDesignerToolboxItem ()
   var popularProperties: js.Array[String] = js.native
   
   /* CompleteClass */
-  var surfaceType: js.Any = js.native
+  var surfaceType: Any = js.native
   
   /* CompleteClass */
   var toolboxIndex: Double = js.native
   
   /* CompleteClass */
-  var `type`: js.Any = js.native
+  var `type`: Any = js.native
 }

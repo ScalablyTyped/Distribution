@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyDBClusterMessage extends StObject {
   
   /**
-    * A value that specifies whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is set to false, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter only affects the NewDBClusterIdentifier and MasterUserPassword values. If you set the ApplyImmediately parameter value to false, then changes to the NewDBClusterIdentifier and MasterUserPassword values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. Default: false 
+    * A value that indicates whether upgrades between different major versions are allowed. Constraints: You must set the allow-major-version-upgrade flag when providing an EngineVersion parameter that uses a different major version than the DB cluster's current version.
+    */
+  var AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A value that specifies whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is set to false, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter only affects NewDBClusterIdentifier values. If you set the ApplyImmediately parameter value to false, then changes to NewDBClusterIdentifier values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. Default: false 
     */
   var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
   
@@ -22,6 +27,11 @@ trait ModifyDBClusterMessage extends StObject {
   var CloudwatchLogsExportConfiguration: js.UndefOr[typings.awsSdk.neptuneMod.CloudwatchLogsExportConfiguration] = js.undefined
   
   /**
+    *  If set to true, tags are copied to any snapshot of the DB cluster that is created. 
+    */
+  var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * The DB cluster identifier for the cluster being modified. This parameter is not case-sensitive. Constraints:   Must match the identifier of an existing DBCluster.  
     */
   var DBClusterIdentifier: String
@@ -32,12 +42,17 @@ trait ModifyDBClusterMessage extends StObject {
   var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
   
   /**
+    * The name of the DB parameter group to apply to all instances of the DB cluster.   When you apply a parameter group using DBInstanceParameterGroupName, parameter changes aren't applied during the next maintenance window but instead are applied immediately.  Default: The existing name setting Constraints:   The DB parameter group must be in the same DB parameter group family as the target DB cluster version.   The DBInstanceParameterGroupName parameter is only valid in combination with the AllowMajorVersionUpgrade parameter.  
+    */
+  var DBInstanceParameterGroupName: js.UndefOr[String] = js.undefined
+  
+  /**
     * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
+    * True to enable mapping of Amazon Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -47,7 +62,7 @@ trait ModifyDBClusterMessage extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The new password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints: Must contain from 8 to 41 characters.
+    * Not supported by Neptune.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   
@@ -57,7 +72,7 @@ trait ModifyDBClusterMessage extends StObject {
   var NewDBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    *  (Not supported by Neptune) 
+    *  Not supported by Neptune. 
     */
   var OptionGroupName: js.UndefOr[String] = js.undefined
   
@@ -67,12 +82,12 @@ trait ModifyDBClusterMessage extends StObject {
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The daily time range during which automated backups are created if automated backups are enabled, using the BackupRetentionPeriod parameter. The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region. Constraints:   Must be in the format hh24:mi-hh24:mi.   Must be in Universal Coordinated Time (UTC).   Must not conflict with the preferred maintenance window.   Must be at least 30 minutes.  
+    * The daily time range during which automated backups are created if automated backups are enabled, using the BackupRetentionPeriod parameter. The default is a 30-minute window selected at random from an 8-hour block of time for each Amazon Region. Constraints:   Must be in the format hh24:mi-hh24:mi.   Must be in Universal Coordinated Time (UTC).   Must not conflict with the preferred maintenance window.   Must be at least 30 minutes.  
     */
   var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   
   /**
-    * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC). Format: ddd:hh24:mi-ddd:hh24:mi  The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region, occurring on a random day of the week. Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Constraints: Minimum 30-minute window.
+    * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC). Format: ddd:hh24:mi-ddd:hh24:mi  The default is a 30-minute window selected at random from an 8-hour block of time for each Amazon Region, occurring on a random day of the week. Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Constraints: Minimum 30-minute window.
     */
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
@@ -90,6 +105,10 @@ object ModifyDBClusterMessage {
   
   extension [Self <: ModifyDBClusterMessage](x: Self) {
     
+    inline def setAllowMajorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AllowMajorVersionUpgrade", value.asInstanceOf[js.Any])
+    
+    inline def setAllowMajorVersionUpgradeUndefined: Self = StObject.set(x, "AllowMajorVersionUpgrade", js.undefined)
+    
     inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
     inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "ApplyImmediately", js.undefined)
@@ -102,11 +121,19 @@ object ModifyDBClusterMessage {
     
     inline def setCloudwatchLogsExportConfigurationUndefined: Self = StObject.set(x, "CloudwatchLogsExportConfiguration", js.undefined)
     
+    inline def setCopyTagsToSnapshot(value: BooleanOptional): Self = StObject.set(x, "CopyTagsToSnapshot", value.asInstanceOf[js.Any])
+    
+    inline def setCopyTagsToSnapshotUndefined: Self = StObject.set(x, "CopyTagsToSnapshot", js.undefined)
+    
     inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     inline def setDBClusterParameterGroupName(value: String): Self = StObject.set(x, "DBClusterParameterGroupName", value.asInstanceOf[js.Any])
     
     inline def setDBClusterParameterGroupNameUndefined: Self = StObject.set(x, "DBClusterParameterGroupName", js.undefined)
+    
+    inline def setDBInstanceParameterGroupName(value: String): Self = StObject.set(x, "DBInstanceParameterGroupName", value.asInstanceOf[js.Any])
+    
+    inline def setDBInstanceParameterGroupNameUndefined: Self = StObject.set(x, "DBInstanceParameterGroupName", js.undefined)
     
     inline def setDeletionProtection(value: BooleanOptional): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
     
@@ -148,6 +175,6 @@ object ModifyDBClusterMessage {
     
     inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
     
-    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
+    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value*))
   }
 }

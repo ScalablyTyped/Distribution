@@ -14,20 +14,20 @@ object nodeModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/models/NodeModel", "NodeModel")
   @js.native
-  class NodeModel () extends BaseModel[DiagramModel, BaseModelListener] {
+  open class NodeModel () extends BaseModel[DiagramModel, BaseModelListener] {
     def this(nodeType: String) = this()
     def this(nodeType: String, id: String) = this()
     def this(nodeType: Unit, id: String) = this()
     
     def addPort[T /* <: PortModel */](port: T): T = js.native
     
-    def doClone(lookupTable: js.Object, clone: js.Any): Unit = js.native
+    def doClone(lookupTable: js.Object, clone: Any): Unit = js.native
     
-    var extras: js.Any = js.native
+    var extras: Any = js.native
     
     def getPort(name: String): PortModel | Null = js.native
     
-    def getPortFromID(id: js.Any): PortModel | Null = js.native
+    def getPortFromID(id: Any): PortModel | Null = js.native
     
     def getPorts(): StringDictionary[PortModel] = js.native
     
@@ -37,7 +37,7 @@ object nodeModelMod {
     
     def removePort(port: PortModel): Unit = js.native
     
-    def setPosition(x: js.Any, y: js.Any): Unit = js.native
+    def setPosition(x: Any, y: Any): Unit = js.native
     
     def updateDimensions(hasWidthHeight: Width): Unit = js.native
     

@@ -28,7 +28,7 @@ object Sub {
     
     inline def setComponents(value: js.Array[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

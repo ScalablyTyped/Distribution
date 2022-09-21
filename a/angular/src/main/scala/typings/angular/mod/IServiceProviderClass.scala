@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IServiceProviderClass
   extends StObject
-     with Instantiable1[/* args (repeated) */ js.Any, IServiceProvider]
+     with Instantiable1[/* args (repeated) */ Any, IServiceProvider]

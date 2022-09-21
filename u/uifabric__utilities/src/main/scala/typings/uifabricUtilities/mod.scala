@@ -172,23 +172,23 @@ object mod {
   
   @JSImport("@uifabric/utilities", "Async")
   @js.native
-  class Async ()
+  open class Async ()
     extends typings.uifabricUtilities.asyncMod.Async {
     def this(parent: js.Object) = this()
-    def this(parent: js.Object, onError: js.Function1[/* e */ js.Any, Unit]) = this()
-    def this(parent: Unit, onError: js.Function1[/* e */ js.Any, Unit]) = this()
+    def this(parent: js.Object, onError: js.Function1[/* e */ Any, Unit]) = this()
+    def this(parent: Unit, onError: js.Function1[/* e */ Any, Unit]) = this()
   }
   
   @JSImport("@uifabric/utilities", "AutoScroll")
   @js.native
-  class AutoScroll protected ()
+  open class AutoScroll protected ()
     extends typings.uifabricUtilities.autoScrollMod.AutoScroll {
     def this(element: HTMLElement) = this()
   }
   
   @JSImport("@uifabric/utilities", "BaseComponent")
   @js.native
-  class BaseComponent[TProps /* <: IBaseProps[js.Any] */, TState] protected ()
+  open class BaseComponent[TProps /* <: IBaseProps[Any] */, TState] protected ()
     extends typings.uifabricUtilities.baseComponentMod.BaseComponent[TProps, TState] {
     /**
       * BaseComponent constructor
@@ -196,7 +196,7 @@ object mod {
       * @param context - The context for the component.
       */
     def this(props: TProps) = this()
-    def this(props: TProps, context: js.Any) = this()
+    def this(props: TProps, context: Any) = this()
   }
   /* static members */
   object BaseComponent {
@@ -210,13 +210,13 @@ object mod {
       */
     inline def onError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")().asInstanceOf[Unit]
     inline def onError(errorMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def onError(errorMessage: String, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def onError(errorMessage: Unit, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def onError(errorMessage: String, ex: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def onError(errorMessage: Unit, ex: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("@uifabric/utilities", "Customizations")
   @js.native
-  class Customizations ()
+  open class Customizations ()
     extends typings.uifabricUtilities.customizationsMod.Customizations
   /* static members */
   object Customizations {
@@ -227,13 +227,13 @@ object mod {
     
     @JSImport("@uifabric/utilities", "Customizations._raiseChange")
     @js.native
-    def _raiseChange: js.Any = js.native
-    inline def _raiseChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_raiseChange")(x.asInstanceOf[js.Any])
+    def _raiseChange: Any = js.native
+    inline def _raiseChange_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_raiseChange")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/utilities", "Customizations._suppressUpdates")
     @js.native
-    def _suppressUpdates: js.Any = js.native
-    inline def _suppressUpdates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_suppressUpdates")(x.asInstanceOf[js.Any])
+    def _suppressUpdates: Any = js.native
+    inline def _suppressUpdates_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_suppressUpdates")(x.asInstanceOf[js.Any])
     
     /** Used to run some code that sets Customizations without triggering an update until the end.
       * Useful for applying Customizations that don't affect anything currently rendered, or for
@@ -253,10 +253,10 @@ object mod {
       */
     inline def applySettings(settings: ISettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def getSettings(properties: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def getSettings(properties: js.Array[String], scopeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def getSettings(properties: js.Array[String], scopeName: Unit, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getSettings(properties: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def getSettings(properties: js.Array[String], scopeName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def getSettings(properties: js.Array[String], scopeName: Unit, localSettings: ICustomizations): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def observe(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -267,14 +267,14 @@ object mod {
   
   @JSImport("@uifabric/utilities", "Customizer")
   @js.native
-  class Customizer protected ()
+  open class Customizer protected ()
     extends typings.uifabricUtilities.customizerMod.Customizer {
     def this(props: ICustomizerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ICustomizerProps, context: js.Any) = this()
+    def this(props: ICustomizerProps, context: Any) = this()
   }
   
   @JSImport("@uifabric/utilities", "CustomizerContext")
@@ -291,7 +291,7 @@ object mod {
   
   @JSImport("@uifabric/utilities", "DelayedRender")
   @js.native
-  class DelayedRender protected ()
+  open class DelayedRender protected ()
     extends typings.uifabricUtilities.delayedRenderMod.DelayedRender {
     def this(props: IDelayedRenderProps) = this()
   }
@@ -310,10 +310,10 @@ object mod {
   
   @JSImport("@uifabric/utilities", "EventGroup")
   @js.native
-  class EventGroup protected ()
+  open class EventGroup protected ()
     extends typings.uifabricUtilities.eventGroupMod.EventGroup {
     /** parent: the context in which events attached to non-HTMLElements are called */
-    def this(parent: js.Any) = this()
+    def this(parent: Any) = this()
   }
   /* static members */
   object EventGroup {
@@ -324,18 +324,18 @@ object mod {
     
     @JSImport("@uifabric/utilities", "EventGroup._isElement")
     @js.native
-    def _isElement: js.Any = js.native
-    inline def _isElement_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isElement")(x.asInstanceOf[js.Any])
+    def _isElement: Any = js.native
+    inline def _isElement_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isElement")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/utilities", "EventGroup._uniqueId")
     @js.native
-    def _uniqueId: js.Any = js.native
-    inline def _uniqueId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueId")(x.asInstanceOf[js.Any])
+    def _uniqueId: Any = js.native
+    inline def _uniqueId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueId")(x.asInstanceOf[js.Any])
     
     /** Check to see if the target has declared support of the given event. */
-    inline def isDeclared(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDeclared")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isDeclared(target: Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDeclared")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def isObserved(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObserved")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isObserved(target: Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObserved")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
       *  Events raised here by default have bubbling set to false and cancelable set to true.
@@ -343,17 +343,17 @@ object mod {
       *  which may lead to unexpected behavior if it differs from the defaults.
       *
       */
-    inline def raise(target: js.Any, eventName: String): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-    inline def raise(target: js.Any, eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-    inline def raise(target: js.Any, eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-    inline def raise(target: js.Any, eventName: String, eventArgs: Unit, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+    inline def raise(target: Any, eventName: String): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+    inline def raise(target: Any, eventName: String, eventArgs: Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+    inline def raise(target: Any, eventName: String, eventArgs: Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+    inline def raise(target: Any, eventName: String, eventArgs: Unit, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
     
-    inline def stopPropagation(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopPropagation(event: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@uifabric/utilities", "FabricPerformance")
   @js.native
-  class FabricPerformance ()
+  open class FabricPerformance ()
     extends typings.uifabricUtilities.fabricPerformanceMod.FabricPerformance
   /* static members */
   object FabricPerformance {
@@ -364,8 +364,8 @@ object mod {
     
     @JSImport("@uifabric/utilities", "FabricPerformance._timeoutId")
     @js.native
-    def _timeoutId: js.Any = js.native
-    inline def _timeoutId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_timeoutId")(x.asInstanceOf[js.Any])
+    def _timeoutId: Any = js.native
+    inline def _timeoutId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_timeoutId")(x.asInstanceOf[js.Any])
     
     /**
       * Measures execution time of the given syncronous function. If the same logic is executed multiple times,
@@ -391,7 +391,7 @@ object mod {
   
   @JSImport("@uifabric/utilities", "GlobalSettings")
   @js.native
-  class GlobalSettings ()
+  open class GlobalSettings ()
     extends typings.uifabricUtilities.globalSettingsMod.GlobalSettings
   /* static members */
   object GlobalSettings {
@@ -943,7 +943,7 @@ object mod {
   
   @JSImport("@uifabric/utilities", "Rectangle")
   @js.native
-  class Rectangle ()
+  open class Rectangle ()
     extends typings.uifabricUtilities.rectangleMod.Rectangle {
     def this(left: Double) = this()
     def this(left: Double, right: Double) = this()
@@ -966,16 +966,20 @@ object mod {
   @js.native
   val SELECTION_CHANGE: /* "change" */ String = js.native
   
+  @JSImport("@uifabric/utilities", "SELECTION_ITEMS_CHANGE")
+  @js.native
+  val SELECTION_ITEMS_CHANGE: /* "items-change" */ String = js.native
+  
   @JSImport("@uifabric/utilities", "Selection")
   @js.native
-  class Selection[TItem] protected ()
+  open class Selection[TItem] protected ()
     extends typings.uifabricUtilities.selectionMod.Selection[TItem] {
     /**
       * Create a new Selection. If `TItem` does not have a `key` property, you must provide an options
       * object with a `getKey` implementation. Providing options is optional otherwise.
       * (At most one `options` object is accepted.)
       */
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[js.Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
   }
   
   @JSImport("@uifabric/utilities", "SelectionDirection")
@@ -1018,7 +1022,7 @@ object mod {
   @js.native
   val anchorProperties: Record[String, Double] = js.native
   
-  inline def appendFunction(parent: js.Any, functions: js.Any*): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(parent.asInstanceOf[js.Any], functions.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def appendFunction(parent: Any, functions: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(List(parent.asInstanceOf[js.Any]).`++`(functions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
   
   inline def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -1030,7 +1034,7 @@ object mod {
   
   inline def assertNever(x: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(x.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  inline def assign(target: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def assign(target: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("@uifabric/utilities", "audioProperties")
   @js.native
@@ -1084,7 +1088,7 @@ object mod {
   
   inline def createArray[T](size: Double, getItem: js.Function1[/* index */ Double, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(size.asInstanceOf[js.Any], getItem.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def createMemoizer[F /* <: js.Function1[/* input */ js.Any, js.Any] */](getValue: F): F = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoizer")(getValue.asInstanceOf[js.Any]).asInstanceOf[F]
+  inline def createMemoizer[F /* <: js.Function1[/* input */ Any, Any] */](getValue: F): F = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoizer")(getValue.asInstanceOf[js.Any]).asInstanceOf[F]
   
   inline def createMergedRef[TType, TValue](): js.Function1[
     /* repeated */ js.UndefOr[
@@ -1109,10 +1113,10 @@ object mod {
     js.Function1[/* newValue */ TType | TValue | Null, Unit]
   ]]
   
-  inline def css(args: ICssInput*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def css(args: ICssInput*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
-  inline def customizable(scope: String, fields: js.Array[String]): js.Function1[/* ComposedComponent */ ComponentType[js.Any], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("customizable")(scope.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ComposedComponent */ ComponentType[js.Any], js.Any]]
-  inline def customizable(scope: String, fields: js.Array[String], concatStyles: Boolean): js.Function1[/* ComposedComponent */ ComponentType[js.Any], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("customizable")(scope.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], concatStyles.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ComposedComponent */ ComponentType[js.Any], js.Any]]
+  inline def customizable(scope: String, fields: js.Array[String]): js.Function1[/* ComposedComponent */ ComponentType[Any], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("customizable")(scope.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ComposedComponent */ ComponentType[Any], Any]]
+  inline def customizable(scope: String, fields: js.Array[String], concatStyles: Boolean): js.Function1[/* ComposedComponent */ ComponentType[Any], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("customizable")(scope.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], concatStyles.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ComposedComponent */ ComponentType[Any], Any]]
   
   inline def disableBodyScroll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")().asInstanceOf[Unit]
   
@@ -1135,14 +1139,14 @@ object mod {
   
   inline def enableBodyScroll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")().asInstanceOf[Unit]
   
-  inline def extendComponent[T /* <: Component[js.Object, js.Object, js.Any] */](
+  inline def extendComponent[T /* <: Component[js.Object, js.Object, Any] */](
     parent: T,
     methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? T[key]}
     */ typings.uifabricUtilities.uifabricUtilitiesStrings.extendComponent & TopLevel[T]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendComponent")(parent.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")((List(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def find[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
@@ -1169,7 +1173,7 @@ object mod {
   @js.native
   val formProperties: Record[String, Double] = js.native
   
-  inline def format(s: String, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(s: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(s.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def getChildren(parent: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
   inline def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any], allowVirtualChildren.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
@@ -1212,12 +1216,7 @@ object mod {
   inline def getInitials(displayName: Unit, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getLanguage(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[String | Null]
-  
-  inline def getLanguage_localStorage(persistenceType: localStorage): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(persistenceType.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  
-  inline def getLanguage_none(persistenceType: none): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(persistenceType.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  
-  inline def getLanguage_sessionStorage(persistenceType: sessionStorage): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(persistenceType.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getLanguage(persistenceType: localStorage | sessionStorage | none): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(persistenceType.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   inline def getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
   inline def getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
@@ -1237,18 +1236,18 @@ object mod {
     checkNode: Boolean
   ): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
   
-  inline def getNativeElementProps[TAttributes /* <: HTMLAttributes[js.Any] */](tagName: String, props: js.Object): TAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeElementProps")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[TAttributes]
-  inline def getNativeElementProps[TAttributes /* <: HTMLAttributes[js.Any] */](tagName: String, props: js.Object, excludedPropNames: js.Array[String]): TAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeElementProps")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[TAttributes]
+  inline def getNativeElementProps[TAttributes /* <: HTMLAttributes[Any] */](tagName: String, props: js.Object): TAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeElementProps")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[TAttributes]
+  inline def getNativeElementProps[TAttributes /* <: HTMLAttributes[Any] */](tagName: String, props: js.Object, excludedPropNames: js.Array[String]): TAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeElementProps")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[TAttributes]
   
-  inline def getNativeProps[T /* <: Record[String, js.Any] */](props: Record[String, js.Any], allowedPropNames: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def getNativeProps[T /* <: Record[String, js.Any] */](
-    props: Record[String, js.Any],
+  inline def getNativeProps[T /* <: Record[String, Any] */](props: Record[String, Any], allowedPropNames: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def getNativeProps[T /* <: Record[String, Any] */](
+    props: Record[String, Any],
     allowedPropNames: js.Array[String],
     excludedPropNames: js.Array[String]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def getNativeProps[T /* <: Record[String, js.Any] */](props: Record[String, js.Any], allowedPropNames: Record[String, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def getNativeProps[T /* <: Record[String, js.Any] */](
-    props: Record[String, js.Any],
+  inline def getNativeProps[T /* <: Record[String, Any] */](props: Record[String, Any], allowedPropNames: Record[String, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def getNativeProps[T /* <: Record[String, Any] */](
+    props: Record[String, Any],
     allowedPropNames: Record[String, Double],
     excludedPropNames: js.Array[String]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -1305,8 +1304,8 @@ object mod {
   
   inline def hasVerticalOverflow(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasVerticalOverflow")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def hoistMethods(destination: js.Any, source: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def hoistMethods(destination: js.Any, source: js.Any, exclusions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def hoistMethods(destination: Any, source: Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def hoistMethods(destination: Any, source: Any, exclusions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def hoistStatics[TSource /* <: js.Object */, TDest](source: TSource, dest: TDest): TDest = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[TDest]
   
@@ -1326,7 +1325,7 @@ object mod {
   @js.native
   val imgProperties: Record[String, Double] = js.native
   
-  inline def initializeComponentRef[TProps /* <: IBaseProps[js.Any] */, TState](obj: Component[TProps, TState, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeComponentRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initializeComponentRef[TProps /* <: IBaseProps[Any] */, TState](obj: Component[TProps, TState, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeComponentRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def initializeFocusRects(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")().asInstanceOf[Unit]
   inline def initializeFocusRects(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1370,7 +1369,7 @@ object mod {
   val liProperties: Record[String, Double] = js.native
   
   inline def mapEnumByName[T](
-    theEnum: js.Any,
+    theEnum: Any,
     callback: js.Function2[
       /* name */ js.UndefOr[String], 
       /* value */ js.UndefOr[String | Double], 
@@ -1378,14 +1377,14 @@ object mod {
     ]
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapEnumByName")(theEnum.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[js.UndefOr[T]]]]
   
-  inline def memoize[T /* <: js.Function */](target: js.Any, key: String, descriptor: TypedPropertyDescriptor[T]): Configurable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Configurable[T]]
+  inline def memoize[T /* <: js.Function */](target: Any, key: String, descriptor: TypedPropertyDescriptor[T]): Configurable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Configurable[T]]
   
-  inline def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Double, ignoreNullOrUndefinedResult: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Unit, ignoreNullOrUndefinedResult: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def memoizeFunction[T /* <: js.Function1[/* repeated */ Any, RetType] */, RetType](cb: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def memoizeFunction[T /* <: js.Function1[/* repeated */ Any, RetType] */, RetType](cb: T, maxCacheSize: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def memoizeFunction[T /* <: js.Function1[/* repeated */ Any, RetType] */, RetType](cb: T, maxCacheSize: Double, ignoreNullOrUndefinedResult: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def memoizeFunction[T /* <: js.Function1[/* repeated */ Any, RetType] */, RetType](cb: T, maxCacheSize: Unit, ignoreNullOrUndefinedResult: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAriaAttributeValues")(ariaAttributes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAriaAttributeValues")(ariaAttributes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.UndefOr[String]]
   
   inline def mergeCustomizations(props: ICustomizerProps, parentContext: ICustomizerContext): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeCustomizations")(props.asInstanceOf[js.Any], parentContext.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
   
@@ -1403,7 +1402,7 @@ object mod {
   inline def mergeSettings(oldSettings: ISettings, newSettings: ISettings): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
   inline def mergeSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
   
-  inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def modalize(target: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("modalize")(target.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
@@ -1413,7 +1412,7 @@ object mod {
   @js.native
   val olProperties: Record[String, Double] = js.native
   
-  inline def omit[TObj /* <: Record[String, js.Any] */](obj: TObj, exclusions: js.Array[/* keyof TObj */ String]): TObj = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[TObj]
+  inline def omit[TObj /* <: Record[String, Any] */](obj: TObj, exclusions: js.Array[/* keyof TObj */ String]): TObj = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[TObj]
   
   inline def on(element: Document, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def on(
@@ -1455,9 +1454,9 @@ object mod {
   
   inline def resetMemoizations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetMemoizations")().asInstanceOf[Unit]
   
-  inline def safeRequestAnimationFrame(component: Component[js.Object, js.Object, js.Any]): js.Function1[/* cb */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequestAnimationFrame")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* cb */ js.Function, Unit]]
+  inline def safeRequestAnimationFrame(component: Component[js.Object, js.Object, Any]): js.Function1[/* cb */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequestAnimationFrame")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* cb */ js.Function, Unit]]
   
-  inline def safeSetTimeout(component: Component[js.Object, js.Object, js.Any]): js.Function2[/* cb */ js.Function, /* duration */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeSetTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* cb */ js.Function, /* duration */ Double, Unit]]
+  inline def safeSetTimeout(component: Component[js.Object, js.Object, Any]): js.Function2[/* cb */ js.Function, /* duration */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeSetTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* cb */ js.Function, /* duration */ Double, Unit]]
   
   @JSImport("@uifabric/utilities", "selectProperties")
   @js.native
@@ -1470,14 +1469,9 @@ object mod {
   
   inline def setLanguage(language: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setLanguage(language: String, avoidPersisting: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], avoidPersisting.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLanguage(language: String, persistenceType: localStorage | sessionStorage | none): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], persistenceType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setLanguage_localStorage(language: String, persistenceType: localStorage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], persistenceType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def setLanguage_none(language: String, persistenceType: none): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], persistenceType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def setLanguage_sessionStorage(language: String, persistenceType: sessionStorage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], persistenceType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def setMemoizeWeakMap(weakMap: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMemoizeWeakMap")(weakMap.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMemoizeWeakMap(weakMap: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMemoizeWeakMap")(weakMap.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setPortalAttribute(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPortalAttribute")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -1492,11 +1486,9 @@ object mod {
   inline def setWarningCallback(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWarningCallback")().asInstanceOf[Unit]
   inline def setWarningCallback(warningCallback: js.Function1[/* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWarningCallback")(warningCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def shallowCompare[TA /* <: js.Any */, TB /* <: js.Any */](a: TA, b: TB): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shallowCompare[TA /* <: Any */, TB /* <: Any */](a: TA, b: TB): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def shouldWrapFocus_datanohorizontalwrap(element: HTMLElement, noWrapDataAttribute: `data-no-horizontal-wrap`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def shouldWrapFocus_datanoverticalwrap(element: HTMLElement, noWrapDataAttribute: `data-no-vertical-wrap`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shouldWrapFocus(element: HTMLElement, noWrapDataAttribute: `data-no-vertical-wrap` | `data-no-horizontal-wrap`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
@@ -1718,7 +1710,7 @@ object mod {
   @js.native
   val trProperties: Record[String, Double] = js.native
   
-  inline def unhoistMethods(source: js.Any, methodNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unhoistMethods")(source.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unhoistMethods(source: Any, methodNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unhoistMethods")(source.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useCustomizationSettings(properties: js.Array[String]): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[ISettings]
   inline def useCustomizationSettings(properties: js.Array[String], scopeName: String): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[ISettings]
@@ -1726,7 +1718,7 @@ object mod {
   inline def useFocusRects(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusRects")().asInstanceOf[Unit]
   inline def useFocusRects(rootRef: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusRects")(rootRef.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def values[T](obj: js.Any): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def values[T](obj: Any): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   @JSImport("@uifabric/utilities", "videoProperties")
   @js.native

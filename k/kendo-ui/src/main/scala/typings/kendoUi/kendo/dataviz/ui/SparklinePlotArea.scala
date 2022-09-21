@@ -10,7 +10,7 @@ trait SparklinePlotArea extends StObject {
   
   var border: js.UndefOr[SparklinePlotAreaBorder] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Any] = js.undefined
+  var margin: js.UndefOr[Double | Any] = js.undefined
   
   var opacity: js.UndefOr[Double] = js.undefined
 }
@@ -31,7 +31,7 @@ object SparklinePlotArea {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setMargin(value: Double | js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double | Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-safe-parser
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Fault-tolerant CSS parser for PostCSS
@@ -10,10 +10,10 @@ Fault-tolerant CSS parser for PostCSS
 | ------------------ | :-------------: |
 | Full name          | postcss-safe-parser |
 | Keywords           | css, postcss, postcss-syntax, parser, fault tolerant |
-| # releases         | 3 |
-| # dependents       | 1919 |
-| # downloads        | 164764669 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6777520666666668E7 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/postcss-safe-parser#readme)

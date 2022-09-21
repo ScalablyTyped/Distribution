@@ -2,7 +2,6 @@ package typings.mysql2
 
 import typings.mysql2.mysql2Strings.connection
 import typings.mysql2.mysql2Strings.remove
-import typings.node.NodeJS.ErrnoException
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ object poolClusterMod {
   
   @JSImport("mysql2/typings/mysql/lib/PoolCluster", JSImport.Namespace)
   @js.native
-  class ^ () extends PoolCluster
+  open class ^ () extends PoolCluster
   
   @js.native
   trait PoolCluster extends EventEmitter {
@@ -26,7 +25,7 @@ object poolClusterMod {
     
     def getConnection(
       callback: js.Function2[
-          /* err */ ErrnoException | Null, 
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
           /* connection */ typings.mysql2.poolConnectionMod.^, 
           Unit
         ]
@@ -34,7 +33,7 @@ object poolClusterMod {
     def getConnection(
       group: String,
       callback: js.Function2[
-          /* err */ ErrnoException | Null, 
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
           /* connection */ typings.mysql2.poolConnectionMod.^, 
           Unit
         ]
@@ -43,7 +42,7 @@ object poolClusterMod {
       group: String,
       selector: String,
       callback: js.Function2[
-          /* err */ ErrnoException | Null, 
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
           /* connection */ typings.mysql2.poolConnectionMod.^, 
           Unit
         ]

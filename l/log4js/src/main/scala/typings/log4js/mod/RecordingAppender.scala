@@ -1,15 +1,12 @@
 package typings.log4js.mod
 
-import typings.log4js.log4jsStrings.recording
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RecordingAppender
-  extends StObject
-     with Appender {
+trait RecordingAppender extends StObject {
   
-  var `type`: recording
+  var `type`: typings.log4js.log4jsStrings.recording
 }
 object RecordingAppender {
   
@@ -21,6 +18,6 @@ object RecordingAppender {
   
   extension [Self <: RecordingAppender](x: Self) {
     
-    inline def setType(value: recording): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.log4js.log4jsStrings.recording): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

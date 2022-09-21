@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A rule describing a conditional format.
-  */
 trait SchemaConditionalFormatRule extends StObject {
   
   /**
-    * The formatting is either &quot;on&quot; or &quot;off&quot; according to
-    * the rule.
+    * The formatting is either "on" or "off" according to the rule.
     */
   var booleanRule: js.UndefOr[SchemaBooleanRule] = js.undefined
   
@@ -21,8 +17,7 @@ trait SchemaConditionalFormatRule extends StObject {
   var gradientRule: js.UndefOr[SchemaGradientRule] = js.undefined
   
   /**
-    * The ranges that are formatted if the condition is true. All the ranges
-    * must be on the same grid.
+    * The ranges that are formatted if the condition is true. All the ranges must be on the same grid.
     */
   var ranges: js.UndefOr[js.Array[SchemaGridRange]] = js.undefined
 }
@@ -47,6 +42,6 @@ object SchemaConditionalFormatRule {
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: SchemaGridRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: SchemaGridRange*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

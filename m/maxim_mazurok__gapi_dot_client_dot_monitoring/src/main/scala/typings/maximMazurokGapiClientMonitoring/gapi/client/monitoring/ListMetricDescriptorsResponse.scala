@@ -28,7 +28,7 @@ object ListMetricDescriptorsResponse {
     
     inline def setMetricDescriptorsUndefined: Self = StObject.set(x, "metricDescriptors", js.undefined)
     
-    inline def setMetricDescriptorsVarargs(value: MetricDescriptor*): Self = StObject.set(x, "metricDescriptors", js.Array(value :_*))
+    inline def setMetricDescriptorsVarargs(value: MetricDescriptor*): Self = StObject.set(x, "metricDescriptors", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

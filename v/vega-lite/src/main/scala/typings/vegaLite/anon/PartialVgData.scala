@@ -18,7 +18,7 @@ trait PartialVgData extends StObject {
   
   var url: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
 }
 object PartialVgData {
   
@@ -45,13 +45,13 @@ object PartialVgData {
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

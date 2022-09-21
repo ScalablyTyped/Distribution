@@ -81,26 +81,26 @@ object anon {
   
   trait Edges extends StObject {
     
-    var edges: js.Array[js.Any]
+    var edges: js.Array[Any]
     
-    var nodes: js.Array[js.Any]
+    var nodes: js.Array[Any]
   }
   object Edges {
     
-    inline def apply(edges: js.Array[js.Any], nodes: js.Array[js.Any]): Edges = {
+    inline def apply(edges: js.Array[Any], nodes: js.Array[Any]): Edges = {
       val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Edges]
     }
     
     extension [Self <: Edges](x: Self) {
       
-      inline def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      inline def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Any*): Self = StObject.set(x, "edges", js.Array(value*))
       
-      inline def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: js.Any*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Any*): Self = StObject.set(x, "nodes", js.Array(value*))
     }
   }
   
@@ -149,7 +149,7 @@ object anon {
       
       inline def setSTATISTICS_METHODS(value: js.Array[String]): Self = StObject.set(x, "STATISTICS_METHODS", value.asInstanceOf[js.Any])
       
-      inline def setSTATISTICS_METHODSVarargs(value: String*): Self = StObject.set(x, "STATISTICS_METHODS", js.Array(value :_*))
+      inline def setSTATISTICS_METHODSVarargs(value: String*): Self = StObject.set(x, "STATISTICS_METHODS", js.Array(value*))
       
       inline def setTABLE(value: String): Self = StObject.set(x, "TABLE", value.asInstanceOf[js.Any])
     }
@@ -207,7 +207,7 @@ object anon {
     /**
       * 注册的 Connector（key-value 对）
       */
-    var connectors: Record[String, js.Any] = js.native
+    var connectors: Record[String, Any] = js.native
     
     def getConnector(name: String): js.Function = js.native
     
@@ -219,22 +219,19 @@ object anon {
       * @param name - 类型
       * @param connector - 解析逻辑
       */
-    def registerConnector(
-      name: String,
-      connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ View, js.Any]
-    ): Unit = js.native
+    def registerConnector(name: String, connector: js.Function3[/* data */ Any, /* options */ Any, /* view */ View, Any]): Unit = js.native
     
     /**
       * 注册一个数据处理函数，注册后所有数据视图都可以使用 name 来引用这个数据处理函数，从而进行某种数据处理
       * @param name - transform 类型
       * @param transform - transform逻辑
       */
-    def registerTransform(name: String, transform: js.Any): Unit = js.native
+    def registerTransform(name: String, transform: Any): Unit = js.native
     
     /**
       * 已注册的 Transform（key-value 对）
       */
-    var transforms: Record[String, js.Any] = js.native
+    var transforms: Record[String, Any] = js.native
     
     var version: String = js.native
   }
@@ -253,7 +250,7 @@ object anon {
     /**
       * 注册的 Connector（key-value 对）
       */
-    var connectors: Record[String, js.Any] = js.native
+    var connectors: Record[String, Any] = js.native
     
     def getConnector(name: String): js.Function = js.native
     
@@ -267,7 +264,7 @@ object anon {
       */
     def registerConnector(
       name: String,
-      connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ this.type, js.Any]
+      connector: js.Function3[/* data */ Any, /* options */ Any, /* view */ this.type, Any]
     ): Unit = js.native
     
     /**
@@ -275,12 +272,12 @@ object anon {
       * @param name - transform 类型
       * @param transform - transform逻辑
       */
-    def registerTransform(name: String, transform: js.Any): Unit = js.native
+    def registerTransform(name: String, transform: Any): Unit = js.native
     
     /**
       * 已注册的 Transform（key-value 对）
       */
-    var transforms: Record[String, js.Any] = js.native
+    var transforms: Record[String, Any] = js.native
     
     var version: String = js.native
   }

@@ -13,7 +13,7 @@ abstract class LockScreenActivatedEventArgs ()
   
   /** Gets an object that allows an app that is activated as the lock screen to get the same data that the default lock screen can access, and to register for updates to that data. */
   /* CompleteClass */
-  var info: js.Any = js.native
+  var info: Any = js.native
   
   /** Gets the reason for the activation of the app for this event. */
   /* CompleteClass */

@@ -28,7 +28,7 @@ object CounterOptions {
     
     inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    inline def setCustomFieldsVarargs(value: CustomField*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: CustomField*): Self = StObject.set(x, "customFields", js.Array(value*))
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -11,14 +11,11 @@ SAX based evented streaming JSON parser in JavaScript (browser and node)
 | Full name          | clarinet |
 | Keywords           | sax, json, parser, stream, streaming, event, events, emitter, async, streamer, browser |
 | # releases         | 2 |
-| # dependents       | 29 |
-| # downloads        | 387644 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 54299.333333333336 |
+| # stars            | 416.0 |
 
 ## Links
-- [Homepage](https://github.com/dscape/clarinet)
-- [Bugs](http://github.com/dscape/clarinet/issues)
-- [Repository](https://github.com/dscape/clarinet)
 - [Npm](https://www.npmjs.com/package/clarinet)
     
 

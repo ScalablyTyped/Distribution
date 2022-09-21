@@ -33,7 +33,7 @@ object XDigestContext {
   inline def apply(
     acquire: () => Unit,
     finalizeDigestAndDispose: () => SafeArray[Double],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     updateDigest: SeqEquiv[Double] => Unit
   ): XDigestContext = {

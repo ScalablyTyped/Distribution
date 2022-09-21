@@ -10,10 +10,10 @@ Gherkin parser
 | ------------------ | :-------------: |
 | Full name          | gherkin |
 | Keywords           | gherkin, cucumber |
-| # releases         | 12 |
-| # dependents       | 107 |
-| # downloads        | 29179414 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5331824.666666667 |
+| # stars            | 85.0 |
 
 ## Links
 - [Homepage](https://github.com/cucumber/gherkin-javascript)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ProcessingFee")
 @js.native
-class ProcessingFee () extends StObject {
+open class ProcessingFee () extends StObject {
   
   /**
     * The fee amount assessed or adjusted by Square. May be negative.

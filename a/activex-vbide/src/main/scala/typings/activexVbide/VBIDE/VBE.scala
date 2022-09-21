@@ -14,11 +14,11 @@ trait VBE extends StObject {
   
   val ActiveWindow: Window
   
-  def Addins(index: js.Any): AddIn
+  def Addins(index: Any): AddIn
   @JSName("Addins")
   val Addins_Original: Addins
   
-  def CodePanes(index: js.Any): CodePane
+  def CodePanes(index: Any): CodePane
   @JSName("CodePanes")
   val CodePanes_Original: CodePanes
   
@@ -36,13 +36,13 @@ trait VBE extends StObject {
   /* private */ @JSName("VBIDE.VBE_typekey")
   var VBIDEDotVBE_typekey: VBE
   
-  def VBProjects(index: js.Any): VBProject
+  def VBProjects(index: Any): VBProject
   @JSName("VBProjects")
   val VBProjects_Original: VBProjects
   
   val Version: String
   
-  def Windows(index: js.Any): Window
+  def Windows(index: Any): Window
   @JSName("Windows")
   val Windows_Original: Windows
 }

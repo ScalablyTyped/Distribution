@@ -1,35 +1,36 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`text-area`
-import typings.arcgisJsApi.arcgisJsApiStrings.`text-box`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextInput
-  extends StObject
-     with Input {
+trait TextInput extends StObject {
   
   /**
-    * When set, defines the input's maximum length.
+    * When set, defines the text input's maximum length.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#maxLength)
     */
-  var maxLength: Double = js.native
+  var maxLength: Double
   
   /**
-    * When set, defines the input's minimum length.
+    * When set, defines the text input's minimum length.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#minLength)
     */
-  var minLength: Double = js.native
+  var minLength: Double
+}
+object TextInput {
   
-  /**
-    * Indicates the type of form element [input](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-Input.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#type)
-    */
-  @JSName("type")
-  val type_TextInput: `text-area` | `text-box` = js.native
+  inline def apply(maxLength: Double, minLength: Double): TextInput = {
+    val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextInput]
+  }
+  
+  extension [Self <: TextInput](x: Self) {
+    
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+  }
 }

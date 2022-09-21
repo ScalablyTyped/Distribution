@@ -16,7 +16,7 @@ object getIdentityPoolRolesCommandMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/commands/GetIdentityPoolRolesCommand", "GetIdentityPoolRolesCommand")
   @js.native
-  class GetIdentityPoolRolesCommand protected ()
+  open class GetIdentityPoolRolesCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getIdentityPoolRolesCommandMod {
     override val middlewareStack: MiddlewareStack[GetIdentityPoolRolesInput, GetIdentityPoolRolesOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[GetIdentityPoolRolesInput, GetIdentityPoolRolesOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CognitoIdentityResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetIdentityPoolRolesInput, GetIdentityPoolRolesOutput] = js.native
   }
 }

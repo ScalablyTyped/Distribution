@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogicalTableSource extends StObject {
   
   /**
+    * The Amazon Resource Number (ARN) of the parent dataset.
+    */
+  var DataSetArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
     * Specifies the result of a join of two logical tables.
     */
   var JoinInstruction: js.UndefOr[typings.awsSdk.quicksightMod.JoinInstruction] = js.undefined
@@ -24,6 +29,10 @@ object LogicalTableSource {
   }
   
   extension [Self <: LogicalTableSource](x: Self) {
+    
+    inline def setDataSetArn(value: Arn): Self = StObject.set(x, "DataSetArn", value.asInstanceOf[js.Any])
+    
+    inline def setDataSetArnUndefined: Self = StObject.set(x, "DataSetArn", js.undefined)
     
     inline def setJoinInstruction(value: JoinInstruction): Self = StObject.set(x, "JoinInstruction", value.asInstanceOf[js.Any])
     

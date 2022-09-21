@@ -1,8 +1,13 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.Data
-import typings.gestalt.gestaltStrings.MasonryDefaultLayout
-import typings.gestalt.gestaltStrings.MasonryUniformRowLayout
+import typings.gestalt.anon.From
+import typings.gestalt.gestaltBooleans.`false`
+import typings.gestalt.gestaltStrings.basic
+import typings.gestalt.gestaltStrings.basicCentered
+import typings.gestalt.gestaltStrings.flexible
+import typings.gestalt.gestaltStrings.serverRenderedFlexible
+import typings.gestalt.gestaltStrings.uniformRow
 import typings.react.mod.ComponentType
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -21,11 +26,13 @@ trait MasonryProps[T] extends StObject {
   
   var items: js.Array[T]
   
-  var layout: js.UndefOr[MasonryDefaultLayout | MasonryUniformRowLayout] = js.undefined
+  var layout: js.UndefOr[basic | basicCentered | flexible | serverRenderedFlexible | uniformRow] = js.undefined
   
-  var loadItems: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var loadItems: js.UndefOr[
+    `false` | (js.Function1[/* _arg */ js.UndefOr[From], js.UndefOr[Boolean | js.Object]])
+  ] = js.undefined
   
-  var measurementStore: js.UndefOr[js.Any] = js.undefined
+  var measurementStore: js.UndefOr[Any] = js.undefined
   
   var minCols: js.UndefOr[Double] = js.undefined
   
@@ -62,17 +69,19 @@ object MasonryProps {
     
     inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setLayout(value: MasonryDefaultLayout | MasonryUniformRowLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: basic | basicCentered | flexible | serverRenderedFlexible | uniformRow): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    inline def setLoadItems(value: () => Unit): Self = StObject.set(x, "loadItems", js.Any.fromFunction0(value))
+    inline def setLoadItems(value: `false` | (js.Function1[/* _arg */ js.UndefOr[From], js.UndefOr[Boolean | js.Object]])): Self = StObject.set(x, "loadItems", value.asInstanceOf[js.Any])
+    
+    inline def setLoadItemsFunction1(value: /* _arg */ js.UndefOr[From] => js.UndefOr[Boolean | js.Object]): Self = StObject.set(x, "loadItems", js.Any.fromFunction1(value))
     
     inline def setLoadItemsUndefined: Self = StObject.set(x, "loadItems", js.undefined)
     
-    inline def setMeasurementStore(value: js.Any): Self = StObject.set(x, "measurementStore", value.asInstanceOf[js.Any])
+    inline def setMeasurementStore(value: Any): Self = StObject.set(x, "measurementStore", value.asInstanceOf[js.Any])
     
     inline def setMeasurementStoreUndefined: Self = StObject.set(x, "measurementStore", js.undefined)
     

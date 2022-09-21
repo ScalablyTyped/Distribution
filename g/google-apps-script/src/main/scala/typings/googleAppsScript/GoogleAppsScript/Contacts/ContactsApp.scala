@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ContactsApp extends StObject {
   
-  var ExtendedField: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ js.Any = js.native
+  var ExtendedField: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ Any = js.native
   
-  var Field: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any = js.native
+  var Field: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any = js.native
   
-  var Gender: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gender */ js.Any = js.native
+  var Gender: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gender */ Any = js.native
   
-  var Month: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Month */ js.Any = js.native
+  var Month: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Month */ Any = js.native
   
-  var Priority: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Priority */ js.Any = js.native
+  var Priority: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Priority */ Any = js.native
   
-  var Sensitivity: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Sensitivity */ js.Any = js.native
+  var Sensitivity: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Sensitivity */ Any = js.native
   
   def createContact(givenName: String, familyName: String, email: String): Contact = js.native
   
@@ -59,7 +59,7 @@ trait ContactsApp extends StObject {
   
   def getContactsByCustomField(query: String, label: ExtendedField): js.Array[Contact] = js.native
   def getContactsByCustomField(
-    query: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ js.Any,
+    query: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ Any,
     label: ExtendedField
   ): js.Array[Contact] = js.native
   

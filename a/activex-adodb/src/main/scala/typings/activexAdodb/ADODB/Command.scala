@@ -18,7 +18,7 @@ trait Command extends StObject {
   
   def Cancel(): Unit = js.native
   
-  var CommandStream: js.Any = js.native
+  var CommandStream: Any = js.native
   
   var CommandText: String = js.native
   
@@ -35,35 +35,35 @@ trait Command extends StObject {
   def CreateParameter(): Parameter = js.native
   def CreateParameter(Name: String): Parameter = js.native
   def CreateParameter(Name: String, Type: Unit, Direction: Unit, Size: Double): Parameter = js.native
-  def CreateParameter(Name: String, Type: Unit, Direction: Unit, Size: Double, Value: js.Any): Parameter = js.native
-  def CreateParameter(Name: String, Type: Unit, Direction: Unit, Size: Unit, Value: js.Any): Parameter = js.native
+  def CreateParameter(Name: String, Type: Unit, Direction: Unit, Size: Double, Value: Any): Parameter = js.native
+  def CreateParameter(Name: String, Type: Unit, Direction: Unit, Size: Unit, Value: Any): Parameter = js.native
   def CreateParameter(Name: String, Type: Unit, Direction: ParameterDirectionEnum): Parameter = js.native
   def CreateParameter(Name: String, Type: Unit, Direction: ParameterDirectionEnum, Size: Double): Parameter = js.native
-  def CreateParameter(Name: String, Type: Unit, Direction: ParameterDirectionEnum, Size: Double, Value: js.Any): Parameter = js.native
-  def CreateParameter(Name: String, Type: Unit, Direction: ParameterDirectionEnum, Size: Unit, Value: js.Any): Parameter = js.native
+  def CreateParameter(Name: String, Type: Unit, Direction: ParameterDirectionEnum, Size: Double, Value: Any): Parameter = js.native
+  def CreateParameter(Name: String, Type: Unit, Direction: ParameterDirectionEnum, Size: Unit, Value: Any): Parameter = js.native
   def CreateParameter(Name: String, Type: DataTypeEnum): Parameter = js.native
   def CreateParameter(Name: String, Type: DataTypeEnum, Direction: Unit, Size: Double): Parameter = js.native
-  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: Unit, Size: Double, Value: js.Any): Parameter = js.native
-  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: Unit, Size: Unit, Value: js.Any): Parameter = js.native
+  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: Unit, Size: Double, Value: Any): Parameter = js.native
+  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: Unit, Size: Unit, Value: Any): Parameter = js.native
   def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum): Parameter = js.native
   def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Double): Parameter = js.native
-  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Double, Value: js.Any): Parameter = js.native
-  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Unit, Value: js.Any): Parameter = js.native
+  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Double, Value: Any): Parameter = js.native
+  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Unit, Value: Any): Parameter = js.native
   def CreateParameter(Name: Unit, Type: Unit, Direction: Unit, Size: Double): Parameter = js.native
-  def CreateParameter(Name: Unit, Type: Unit, Direction: Unit, Size: Double, Value: js.Any): Parameter = js.native
-  def CreateParameter(Name: Unit, Type: Unit, Direction: Unit, Size: Unit, Value: js.Any): Parameter = js.native
+  def CreateParameter(Name: Unit, Type: Unit, Direction: Unit, Size: Double, Value: Any): Parameter = js.native
+  def CreateParameter(Name: Unit, Type: Unit, Direction: Unit, Size: Unit, Value: Any): Parameter = js.native
   def CreateParameter(Name: Unit, Type: Unit, Direction: ParameterDirectionEnum): Parameter = js.native
   def CreateParameter(Name: Unit, Type: Unit, Direction: ParameterDirectionEnum, Size: Double): Parameter = js.native
-  def CreateParameter(Name: Unit, Type: Unit, Direction: ParameterDirectionEnum, Size: Double, Value: js.Any): Parameter = js.native
-  def CreateParameter(Name: Unit, Type: Unit, Direction: ParameterDirectionEnum, Size: Unit, Value: js.Any): Parameter = js.native
+  def CreateParameter(Name: Unit, Type: Unit, Direction: ParameterDirectionEnum, Size: Double, Value: Any): Parameter = js.native
+  def CreateParameter(Name: Unit, Type: Unit, Direction: ParameterDirectionEnum, Size: Unit, Value: Any): Parameter = js.native
   def CreateParameter(Name: Unit, Type: DataTypeEnum): Parameter = js.native
   def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: Unit, Size: Double): Parameter = js.native
-  def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: Unit, Size: Double, Value: js.Any): Parameter = js.native
-  def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: Unit, Size: Unit, Value: js.Any): Parameter = js.native
+  def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: Unit, Size: Double, Value: Any): Parameter = js.native
+  def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: Unit, Size: Unit, Value: Any): Parameter = js.native
   def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: ParameterDirectionEnum): Parameter = js.native
   def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Double): Parameter = js.native
-  def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Double, Value: js.Any): Parameter = js.native
-  def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Unit, Value: js.Any): Parameter = js.native
+  def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Double, Value: Any): Parameter = js.native
+  def CreateParameter(Name: Unit, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Unit, Value: Any): Parameter = js.native
   
   var Dialect: String = js.native
   
@@ -80,8 +80,8 @@ trait Command extends StObject {
     */
   def Execute(): Recordset | Null = js.native
   def Execute(RecordsAffected: Unit, Parameters: Unit, Options: Double): Recordset | Null = js.native
-  def Execute(RecordsAffected: Unit, Parameters: SafeArray[js.Any]): Recordset | Null = js.native
-  def Execute(RecordsAffected: Unit, Parameters: SafeArray[js.Any], Options: Double): Recordset | Null = js.native
+  def Execute(RecordsAffected: Unit, Parameters: SafeArray[Any]): Recordset | Null = js.native
+  def Execute(RecordsAffected: Unit, Parameters: SafeArray[Any], Options: Double): Recordset | Null = js.native
   
   var Name: String = js.native
   

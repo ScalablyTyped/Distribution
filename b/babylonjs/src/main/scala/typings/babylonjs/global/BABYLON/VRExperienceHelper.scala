@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.VRExperienceHelper")
 @js.native
-class VRExperienceHelper protected ()
+open class VRExperienceHelper protected ()
   extends StObject
      with typings.babylonjs.BABYLON.VRExperienceHelper {
   /**
@@ -31,12 +31,12 @@ object VRExperienceHelper {
     */
   @JSGlobal("BABYLON.VRExperienceHelper.TELEPORTATIONMODE_CONSTANTSPEED")
   @js.native
-  val TELEPORTATIONMODE_CONSTANTSPEED: Double = js.native
+  val TELEPORTATIONMODE_CONSTANTSPEED: /* 1 */ Double = js.native
   
   /**
     * Time Constant Teleportation Mode
     */
   @JSGlobal("BABYLON.VRExperienceHelper.TELEPORTATIONMODE_CONSTANTTIME")
   @js.native
-  val TELEPORTATIONMODE_CONSTANTTIME: Double = js.native
+  val TELEPORTATIONMODE_CONSTANTTIME: /* 0 */ Double = js.native
 }

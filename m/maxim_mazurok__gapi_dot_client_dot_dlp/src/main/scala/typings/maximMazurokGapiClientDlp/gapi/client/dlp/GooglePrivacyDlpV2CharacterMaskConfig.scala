@@ -18,7 +18,12 @@ trait GooglePrivacyDlpV2CharacterMaskConfig extends StObject {
     */
   var maskingCharacter: js.UndefOr[String] = js.undefined
   
-  /** Number of characters to mask. If not set, all matching chars will be masked. Skipped characters do not count towards this tally. */
+  /**
+    * Number of characters to mask. If not set, all matching chars will be masked. Skipped characters do not count towards this tally. If `number_to_mask` is negative, this denotes
+    * inverse masking. Cloud DLP masks all but a number of characters. For example, suppose you have the following values: - `masking_character` is `*` - `number_to_mask` is `-4` -
+    * `reverse_order` is `false` - `CharsToIgnore` includes `-` - Input string is `1234-5678-9012-3456` The resulting de-identified string is `****-****-****-3456`. Cloud DLP masks all
+    * but the last four characters. If `reverse_order` is `true`, all but the first four characters are masked as `1234-****-****-****`.
+    */
   var numberToMask: js.UndefOr[Double] = js.undefined
   
   /**
@@ -40,7 +45,7 @@ object GooglePrivacyDlpV2CharacterMaskConfig {
     
     inline def setCharactersToIgnoreUndefined: Self = StObject.set(x, "charactersToIgnore", js.undefined)
     
-    inline def setCharactersToIgnoreVarargs(value: GooglePrivacyDlpV2CharsToIgnore*): Self = StObject.set(x, "charactersToIgnore", js.Array(value :_*))
+    inline def setCharactersToIgnoreVarargs(value: GooglePrivacyDlpV2CharsToIgnore*): Self = StObject.set(x, "charactersToIgnore", js.Array(value*))
     
     inline def setMaskingCharacter(value: String): Self = StObject.set(x, "maskingCharacter", value.asInstanceOf[js.Any])
     

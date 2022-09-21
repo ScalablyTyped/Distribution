@@ -6,15 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SecretVersion extends StObject {
   
+  /** Output only. True if payload checksum specified in SecretPayload object has been received by SecretManagerService on SecretManagerService.AddSecretVersion. */
+  var clientSpecifiedPayloadChecksum: js.UndefOr[Boolean] = js.undefined
+  
   /** Output only. The time at which the SecretVersion was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this SecretVersion was destroyed. Only present if state is DESTROYED. */
   var destroyTime: js.UndefOr[String] = js.undefined
   
+  /** Output only. Etag of the currently stored SecretVersion. */
+  var etag: js.UndefOr[String] = js.undefined
+  
   /**
-    * Output only. The resource name of the SecretVersion in the format `projects/∗/secrets/∗/versions/ *`. SecretVersion IDs in a Secret start at 1 and are incremented for each subsequent
-    * version of the secret.
+    * Output only. The resource name of the SecretVersion in the format `projects/ *‍/secrets/ *‍/versions/ *`. SecretVersion IDs in a Secret start at 1 and are incremented for each
+    * subsequent version of the secret.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -33,6 +39,10 @@ object SecretVersion {
   
   extension [Self <: SecretVersion](x: Self) {
     
+    inline def setClientSpecifiedPayloadChecksum(value: Boolean): Self = StObject.set(x, "clientSpecifiedPayloadChecksum", value.asInstanceOf[js.Any])
+    
+    inline def setClientSpecifiedPayloadChecksumUndefined: Self = StObject.set(x, "clientSpecifiedPayloadChecksum", js.undefined)
+    
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
@@ -40,6 +50,10 @@ object SecretVersion {
     inline def setDestroyTime(value: String): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
     
     inline def setDestroyTimeUndefined: Self = StObject.set(x, "destroyTime", js.undefined)
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

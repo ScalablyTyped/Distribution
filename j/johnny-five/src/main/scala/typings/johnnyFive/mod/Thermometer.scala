@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Thermometer")
 @js.native
-class Thermometer protected () extends StObject {
+open class Thermometer protected () extends StObject {
   def this(option: ThermometerOption) = this()
   
   val C: Double = js.native
@@ -29,7 +29,7 @@ class Thermometer protected () extends StObject {
   @JSName("on")
   def on_change(event: change, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_data(event: data, cb: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+  def on_data(event: data, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
   
   var pin: Double | String = js.native
 }

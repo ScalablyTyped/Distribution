@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClaimedMagneticStripeReader extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_aamvacarddatareceived(
     `type`: aamvacarddatareceived,
@@ -38,7 +38,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     listener: TypedEventHandler[ClaimedMagneticStripeReader, MagneticStripeReaderErrorOccurredEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_vendorspecificdatareceived(
     `type`: vendorspecificdatareceived,
@@ -52,7 +52,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     * Puts the device into an authenticated state.
     * @param responseToken A buffer containing the response token generated from the challenge token retrieved from a previous call to the RetrieveDeviceAuthenticationDataAsync method.
     */
-  def authenticateDeviceAsync(responseToken: js.Array[Double]): js.Any = js.native
+  def authenticateDeviceAsync(responseToken: js.Array[Double]): Any = js.native
   
   /* unmapped return type */
   /** Releases the exclusive claim to the magnetic strip reader. */
@@ -65,7 +65,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     * Puts the device into an unauthenticated state.
     * @param responseToken A buffer containing the response token generated from the challenge token retrieved from a previous call to the RetrieveDeviceAuthenticationDataAsync method.
     */
-  def deAuthenticateDeviceAsync(responseToken: js.Array[Double]): js.Any = js.native
+  def deAuthenticateDeviceAsync(responseToken: js.Array[Double]): Any = js.native
   
   /* unmapped return type */
   /** Gets the DeviceInformation.Id of the claimed magnetic stripe reader. */
@@ -117,10 +117,10 @@ trait ClaimedMagneticStripeReader extends StObject {
   var onerroroccurred_Original: TypedEventHandler[ClaimedMagneticStripeReader, MagneticStripeReaderErrorOccurredEventArgs] = js.native
   
   /** Occurs when the device gets a request to release its exclusive claim. */
-  def onreleasedevicerequested(ev: js.Any & WinRTEvent[js.Any]): Unit = js.native
+  def onreleasedevicerequested(ev: Any & WinRTEvent[Any]): Unit = js.native
   /** Occurs when the device gets a request to release its exclusive claim. */
   @JSName("onreleasedevicerequested")
-  var onreleasedevicerequested_Original: EventHandler[js.Any] = js.native
+  var onreleasedevicerequested_Original: EventHandler[Any] = js.native
   
   /** Occurs when a vendor-specific card is swiped. */
   def onvendorspecificdatareceived(
@@ -133,7 +133,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs
   ] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_aamvacarddatareceived(
     `type`: aamvacarddatareceived,
@@ -150,7 +150,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     listener: TypedEventHandler[ClaimedMagneticStripeReader, MagneticStripeReaderErrorOccurredEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener_releasedevicerequested(`type`: releasedevicerequested, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_vendorspecificdatareceived(
     `type`: vendorspecificdatareceived,
@@ -190,7 +190,7 @@ trait ClaimedMagneticStripeReader extends StObject {
     * @param key The HEX-ASCII or base64-encoded value for the new key.
     * @param keyName The name used to identify the key.
     */
-  def updateKeyAsync(key: String, keyName: String): js.Any = js.native
+  def updateKeyAsync(key: String, keyName: String): Any = js.native
   
   /* unmapped return type */
   /**
@@ -198,5 +198,5 @@ trait ClaimedMagneticStripeReader extends StObject {
     * @param statistics The list of key-value pairs of statistics to update.
     * @return No object or value is returned by this method when it completes.
     */
-  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
+  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncAction = js.native
 }

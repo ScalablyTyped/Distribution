@@ -12,12 +12,12 @@ trait UpdateApiCacheRequest extends StObject {
   var apiCachingBehavior: ApiCachingBehavior
   
   /**
-    * The GraphQL API Id.
+    * The GraphQL API ID.
     */
   var apiId: String
   
   /**
-    * TTL in seconds for cache entries. Valid values are between 1 and 3600 seconds.
+    * TTL in seconds for cache entries. Valid values are 1–3,600 seconds.
     */
   var ttl: Long
   

@@ -10,6 +10,12 @@ sealed trait NodeMaterialSystemValues extends StObject
 @js.native
 object NodeMaterialSystemValues extends StObject {
   
+  /** Camera parameters */
+  @js.native
+  sealed trait CameraParameters
+    extends StObject
+       with NodeMaterialSystemValues
+  
   /** CameraPosition */
   @js.native
   sealed trait CameraPosition
@@ -25,6 +31,12 @@ object NodeMaterialSystemValues extends StObject {
   /** Fog Color */
   @js.native
   sealed trait FogColor
+    extends StObject
+       with NodeMaterialSystemValues
+  
+  /** Material alpha */
+  @js.native
+  sealed trait MaterialAlpha
     extends StObject
        with NodeMaterialSystemValues
   

@@ -1,5 +1,6 @@
 package typings.humanSignals
 
+import typings.humanSignals.humanSignalsStrings.SIG$LeftcurlybracketstringRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,24 +15,28 @@ object mod {
     var action: SignalAction
     
     /**
-      * Human-friendly description for the signal, for example 'User interruption with CTRL-C'.
+      * Human-friendly description for the signal, for example
+      * 'User interruption with CTRL-C'.
       */
     var description: String
     
     /**
-      * Whether the signal's default action cannot be prevented. This is true for SIGTERM, SIGKILL and SIGSTOP.
+      * Whether the signal's default action cannot be prevented.
+      * This is true for SIGTERM, SIGKILL and SIGSTOP.
       */
     var forced: Boolean
     
     /**
       * Standard name of the signal, for example 'SIGINT'.
       */
-    var name: String
+    var name: SignalName
     
     /**
-      * Code number of the signal, for example 2. While most number are cross-platform, some are different between different OS.
+      * Code number of the signal, for example 2.
+      * While most number are cross-platform, some are different between different
+      * OS.
       */
-    var number: Double
+    var number: SignalNumber
     
     /**
       * Which standard defined that signal.
@@ -39,7 +44,8 @@ object mod {
     var standard: SignalStandard
     
     /**
-      * Whether the current OS can handle this signal in Node.js using process.on(name, handler). The list of supported signals is OS-specific.
+      * Whether the current OS can handle this signal in Node.js using
+      * `process.on(name, handler)`. The list of supported signals is OS-specific.
       */
     var supported: Boolean
   }
@@ -49,8 +55,8 @@ object mod {
       action: SignalAction,
       description: String,
       forced: Boolean,
-      name: String,
-      number: Double,
+      name: SignalName,
+      number: SignalNumber,
       standard: SignalStandard,
       supported: Boolean
     ): Signal = {
@@ -66,9 +72,9 @@ object mod {
       
       inline def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: SignalName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: SignalNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
       inline def setStandard(value: SignalStandard): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
       
@@ -96,6 +102,10 @@ object mod {
     
     inline def unpause: typings.humanSignals.humanSignalsStrings.unpause = "unpause".asInstanceOf[typings.humanSignals.humanSignalsStrings.unpause]
   }
+  
+  type SignalName = SIG$LeftcurlybracketstringRightcurlybracket
+  
+  type SignalNumber = Double
   
   /* Rewritten from type alias, can be one of: 
     - typings.humanSignals.humanSignalsStrings.ansi

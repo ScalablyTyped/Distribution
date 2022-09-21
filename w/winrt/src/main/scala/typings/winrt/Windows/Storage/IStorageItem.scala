@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Storage
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.FileProperties.BasicProperties
@@ -13,7 +12,7 @@ trait IStorageItem extends StObject {
   
   var attributes: FileAttributes = js.native
   
-  var dateCreated: Date = js.native
+  var dateCreated: js.Date = js.native
   
   def deleteAsync(): IAsyncAction = js.native
   def deleteAsync(option: StorageDeleteOption): IAsyncAction = js.native

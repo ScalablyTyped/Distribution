@@ -5,52 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create an instance of a pc.ElementSelectEvent.
-  * @property inputSource - The XR input source that this event was originally raised from.
-  * @param event - The XRInputSourceEvent that was originally raised.
-  * @param element - The ElementComponent that this event was originally raised on.
-  * @param camera - The CameraComponent that this event was originally raised via.
-  * @param inputSource - The XR input source that this event was originally raised from.
+  * Represents a XRInputSourceEvent fired on a {@link ElementComponent}.
+  *
+  * @augments ElementInputEvent
   */
 @JSGlobal("pc.ElementSelectEvent")
 @js.native
-class ElementSelectEvent protected ()
-  extends StObject
-     with typings.playcanvas.pc.ElementSelectEvent {
+open class ElementSelectEvent protected ()
+  extends typings.playcanvas.mod.ElementSelectEvent {
+  /**
+    * Create an instance of a ElementSelectEvent.
+    *
+    * @param {object} event - The XRInputSourceEvent that was originally raised.
+    * @param {ElementComponent} element - The ElementComponent that this event was originally
+    * raised on.
+    * @param {CameraComponent} camera - The CameraComponent that this event was originally raised
+    * via.
+    * @param {XrInputSource} inputSource - The XR input source that this event was originally
+    * raised from.
+    */
   def this(
-    event: js.Any,
-    element: typings.playcanvas.pc.ElementComponent,
-    camera: typings.playcanvas.pc.CameraComponent,
-    inputSource: typings.playcanvas.pc.XrInputSource
+    event: js.Object,
+    element: typings.playcanvas.mod.ElementComponent,
+    camera: typings.playcanvas.mod.CameraComponent,
+    inputSource: typings.playcanvas.mod.XrInputSource
   ) = this()
-  
-  /**
-    * The CameraComponent that this event was originally raised via.
-    */
-  /* CompleteClass */
-  var camera: typings.playcanvas.pc.CameraComponent = js.native
-  
-  /**
-    * The ElementComponent that this event was originally raised on.
-    */
-  /* CompleteClass */
-  var element: typings.playcanvas.pc.ElementComponent = js.native
-  
-  /**
-    * The MouseEvent or TouchEvent that was originally raised.
-    */
-  /* CompleteClass */
-  var event: typings.playcanvas.pc.MouseEvent | typings.playcanvas.pc.TouchEvent = js.native
-  
-  /**
-    * The XR input source that this event was originally raised from.
-    */
-  /* CompleteClass */
-  var inputSource: typings.playcanvas.pc.XrInputSource = js.native
-  
-  /**
-    * Stop propagation of the event to parent {@link pc.ElementComponent}s. This also stops propagation of the event to other event listeners of the original DOM Event.
-    */
-  /* CompleteClass */
-  override def stopPropagation(): Unit = js.native
 }

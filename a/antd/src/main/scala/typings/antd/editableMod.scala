@@ -5,6 +5,7 @@ import typings.antd.configProviderContextMod.DirectionType
 import typings.rcTextarea.resizableTextAreaMod.AutoSizeType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,11 +24,17 @@ object editableMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var component: js.UndefOr[String] = js.undefined
+    
     var direction: js.UndefOr[DirectionType] = js.undefined
+    
+    var enterIcon: js.UndefOr[ReactNode] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
     def onCancel(): Unit
+    
+    var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     def onSave(value: String): Unit
     
@@ -58,15 +65,27 @@ object editableMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      
       inline def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setEnterIcon(value: ReactNode): Self = StObject.set(x, "enterIcon", value.asInstanceOf[js.Any])
+      
+      inline def setEnterIconUndefined: Self = StObject.set(x, "enterIcon", js.undefined)
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
       inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      
+      inline def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
+      
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
       inline def setOnSave(value: String => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
       

@@ -14,6 +14,24 @@ object ElementFlags extends StObject {
   def apply(value: Double): js.UndefOr[ElementFlags & Double] = js.native
   
   @js.native
+  sealed trait Fixed
+    extends StObject
+       with ElementFlags
+  /* 3 */ val Fixed: typings.typescript.mod.ElementFlags.Fixed & Double = js.native
+  
+  @js.native
+  sealed trait NonRequired
+    extends StObject
+       with ElementFlags
+  /* 14 */ val NonRequired: typings.typescript.mod.ElementFlags.NonRequired & Double = js.native
+  
+  @js.native
+  sealed trait NonRest
+    extends StObject
+       with ElementFlags
+  /* 11 */ val NonRest: typings.typescript.mod.ElementFlags.NonRest & Double = js.native
+  
+  @js.native
   sealed trait Optional
     extends StObject
        with ElementFlags

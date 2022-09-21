@@ -11,7 +11,7 @@ object mockEventTargetMod {
   
   @JSImport("xhr-mock/lib/MockEventTarget", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with MockEventTarget
   
@@ -23,7 +23,7 @@ object mockEventTargetMod {
     def addEventListener(`type`: String, listener: Unit, options: Boolean): Unit = js.native
     def addEventListener(`type`: String, listener: Unit, options: AddEventListenerOptions): Unit = js.native
     
-    /* private */ var listeners: js.Any = js.native
+    /* private */ var listeners: Any = js.native
     
     def removeEventListener(`type`: String, listener: Unit, options: Boolean): Unit = js.native
     def removeEventListener(`type`: String, listener: Unit, options: EventListenerOptions): Unit = js.native

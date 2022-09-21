@@ -8,7 +8,7 @@ trait LabelOptionsWithThreshold
   extends StObject
      with LabelOptions {
   
-  var ratio: js.UndefOr[js.Any] = js.undefined
+  var ratio: js.UndefOr[Any] = js.undefined
   
   /**
     * Set threshold to show/hide labels.
@@ -25,7 +25,7 @@ object LabelOptionsWithThreshold {
   
   extension [Self <: LabelOptionsWithThreshold](x: Self) {
     
-    inline def setRatio(value: js.Any): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Any): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     

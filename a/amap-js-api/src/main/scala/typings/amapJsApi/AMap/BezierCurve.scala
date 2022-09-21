@@ -219,7 +219,7 @@ object BezierCurve {
       
       inline def setInterpolateNumLimitUndefined: Self = StObject.set(x, "interpolateNumLimit", js.undefined)
       
-      inline def setInterpolateNumLimitVarargs(value: Double*): Self = StObject.set(x, "interpolateNumLimit", js.Array(value :_*))
+      inline def setInterpolateNumLimitVarargs(value: Double*): Self = StObject.set(x, "interpolateNumLimit", js.Array(value*))
       
       inline def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
       
@@ -257,7 +257,7 @@ object BezierCurve {
       
       inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
       
-      inline def setStrokeDasharrayVarargs(value: Double*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
+      inline def setStrokeDasharrayVarargs(value: Double*): Self = StObject.set(x, "strokeDasharray", js.Array(value*))
       
       inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       

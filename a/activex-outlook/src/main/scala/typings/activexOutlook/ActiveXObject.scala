@@ -246,23 +246,18 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: AdvancedSearchComplete,
-    argNames: js.Array[SearchObject],
+    event: AdvancedSearchComplete | AdvancedSearchStopped | ItemLoad | Reminder,
+    argNames: js.Array[Item | SearchObject],
     handler: js.ThisFunction1[
       /* this */ Application, 
-      /* parameter */ typings.activexOutlook.anon.SearchObject, 
+      (/* parameter */ typings.activexOutlook.anon.Item) | (/* parameter */ typings.activexOutlook.anon.SearchObject), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: Application,
-    event: AdvancedSearchStopped,
-    argNames: js.Array[SearchObject],
-    handler: js.ThisFunction1[
-      /* this */ Application, 
-      /* parameter */ typings.activexOutlook.anon.SearchObject, 
-      Unit
-    ]
+    event: MAPILogonComplete | NewMail | Quit | Startup,
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -304,12 +299,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: ItemLoad,
-    argNames: js.Array[Item],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexOutlook.anon.Item, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: ItemSend,
     argNames: js.Tuple2[Item, Cancel],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ CancelItem, Unit]
@@ -332,12 +321,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: Reminder,
-    argNames: js.Array[Item],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexOutlook.anon.Item, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: ShortcutContextMenuDisplay,
     argNames: js.Tuple2[CommandBar, Shortcut],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexOutlook.anon.Shortcut, Unit]
@@ -356,75 +339,28 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
       /* this */ AppointmentItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ AppointmentItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[
-      /* this */ AppointmentItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
@@ -434,21 +370,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: AppointmentItem,
@@ -461,108 +385,29 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: AppointmentItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
+    obj: ContactItem,
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
-      /* this */ AppointmentItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
+      /* this */ ContactItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
-    obj: AppointmentItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
+    obj: ContactItem,
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
     handler: js.ThisFunction1[
-      /* this */ AppointmentItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
+      /* this */ ContactItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
       Unit
     ]
   ): Unit = js.native
   def on(
-    obj: AppointmentItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: AppointmentItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: ContactItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: ContactItem,
@@ -572,21 +417,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: ContactItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: ContactItem,
@@ -595,112 +428,29 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: ContactItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ContactItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: DistListItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
       /* this */ DistListItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: DistListItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ DistListItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: DistListItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[
-      /* this */ DistListItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: DistListItem,
@@ -710,21 +460,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: DistListItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: DistListItem,
@@ -733,112 +471,29 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: DistListItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DistListItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: DocumentItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
       /* this */ DocumentItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: DocumentItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ DocumentItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: DocumentItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[
-      /* this */ DocumentItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: DocumentItem,
@@ -848,21 +503,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: DocumentItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: DocumentItem,
@@ -871,58 +514,21 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: DocumentItem,
-    event: Open,
+    obj: Explorer,
+    event: BeforeItemCopy | BeforeItemCut | BeforeMaximize | BeforeMinimize | BeforeMove | BeforeSize,
     argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ CancelBoolean, Unit]
+    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
-    obj: DocumentItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DocumentItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ CancelBoolean, Unit]
+    obj: Explorer,
+    event: Activate | AttachmentSelectionChange | Close | Deactivate | FolderSwitch | SelectionChange | ViewSwitch,
+    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: Explorer,
     event: BeforeFolderSwitch,
     argNames: js.Tuple2[NewFolder, Cancel],
     handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ typings.activexOutlook.anon.NewFolder, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Explorer,
-    event: BeforeItemCopy,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Explorer,
-    event: BeforeItemCut,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: Explorer,
@@ -933,30 +539,6 @@ trait ActiveXObject extends StObject {
       /* parameter */ typings.activexOutlook.anon.ClipboardContent, 
       Unit
     ]
-  ): Unit = js.native
-  def on(
-    obj: Explorer,
-    event: BeforeMaximize,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Explorer,
-    event: BeforeMinimize,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Explorer,
-    event: BeforeMove,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Explorer,
-    event: BeforeSize,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: Explorer,
@@ -988,13 +570,7 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Folders,
-    event: FolderAdd,
-    argNames: js.Array[Folder],
-    handler: js.ThisFunction1[/* this */ Folders, /* parameter */ typings.activexOutlook.anon.Folder, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Folders,
-    event: FolderChange,
+    event: FolderAdd | FolderChange,
     argNames: js.Array[Folder],
     handler: js.ThisFunction1[/* this */ Folders, /* parameter */ typings.activexOutlook.anon.Folder, Unit]
   ): Unit = js.native
@@ -1006,27 +582,14 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Inspector,
-    event: BeforeMaximize,
+    event: BeforeMaximize | BeforeMinimize | BeforeMove | BeforeSize,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: Inspector,
-    event: BeforeMinimize,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Inspector,
-    event: BeforeMove,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Inspector,
-    event: BeforeSize,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ CancelBoolean, Unit]
+    event: Activate | AttachmentSelectionChange | Close | Deactivate,
+    handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: Inspector,
@@ -1046,75 +609,34 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Items,
-    event: ItemAdd,
-    argNames: js.Array[Item],
-    handler: js.ThisFunction1[/* this */ Items, /* parameter */ typings.activexOutlook.anon.Item, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Items,
-    event: ItemChange,
+    event: ItemAdd | ItemChange,
     argNames: js.Array[Item],
     handler: js.ThisFunction1[/* this */ Items, /* parameter */ typings.activexOutlook.anon.Item, Unit]
   ): Unit = js.native
   def on(
     obj: JournalItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
+    handler: js.ThisFunction1[
+      /* this */ JournalItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: JournalItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ JournalItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: JournalItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: JournalItem,
@@ -1124,21 +646,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: JournalItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: JournalItem,
@@ -1147,100 +657,29 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: JournalItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: JournalItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ CancelBoolean, Unit]
+    obj: MailItem,
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
+    handler: js.ThisFunction1[
+      /* this */ MailItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: MailItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ MailItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: MailItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: MailItem,
@@ -1250,21 +689,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: MailItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: MailItem,
@@ -1273,100 +700,29 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: MailItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MailItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ CancelBoolean, Unit]
+    obj: MeetingItem,
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
+    handler: js.ThisFunction1[
+      /* this */ MeetingItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: MeetingItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ MeetingItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: MeetingItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: MeetingItem,
@@ -1376,21 +732,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: MeetingItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: MeetingItem,
@@ -1399,100 +743,29 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: MeetingItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MeetingItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ CancelBoolean, Unit]
+    obj: MobileItem,
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
+    handler: js.ThisFunction1[
+      /* this */ MobileItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: MobileItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ MobileItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: MobileItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: MobileItem,
@@ -1502,63 +775,15 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: MobileItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
   ): Unit = js.native
   def on(
     obj: MobileItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
     handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: MobileItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: NameSpace,
@@ -1568,17 +793,7 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: NavigationGroups,
-    event: NavigationFolderAdd,
-    argNames: js.Array[NavigationFolder],
-    handler: js.ThisFunction1[
-      /* this */ NavigationGroups, 
-      /* parameter */ typings.activexOutlook.anon.NavigationFolder, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: NavigationGroups,
-    event: SelectedChange,
+    event: NavigationFolderAdd | SelectedChange,
     argNames: js.Array[NavigationFolder],
     handler: js.ThisFunction1[
       /* this */ NavigationGroups, 
@@ -1598,7 +813,7 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: OlkBusinessCardControl,
-    event: MouseDown,
+    event: MouseDown | MouseMove | MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
     handler: js.ThisFunction1[
       /* this */ OlkBusinessCardControl, 
@@ -1608,23 +823,25 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: OlkBusinessCardControl,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ OlkBusinessCardControl, 
-      /* parameter */ typings.activexOutlook.anon.Button, 
-      Unit
-    ]
+    event: Click | DoubleClick,
+    handler: js.ThisFunction1[/* this */ OlkBusinessCardControl, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
-    obj: OlkBusinessCardControl,
-    event: MouseUp,
+    obj: OlkCategory,
+    event: KeyDown | KeyUp,
+    argNames: js.Tuple2[KeyCode, Shift],
+    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkCategory,
+    event: MouseDown | MouseMove | MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ OlkBusinessCardControl, 
-      /* parameter */ typings.activexOutlook.anon.Button, 
-      Unit
-    ]
+    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkCategory,
+    event: Change | Click | DoubleClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCategory,
@@ -1634,57 +851,32 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: OlkCategory,
-    event: KeyDown,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCategory,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
     handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ typings.activexOutlook.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
-    obj: OlkCategory,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCategory,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCategory,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCategory,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkCheckBox,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCheckBox,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCheckBox,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkCheckBox,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkCheckBox,
+    event: AfterUpdate | Change | Click | DoubleClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCheckBox,
@@ -1693,46 +885,27 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ typings.activexOutlook.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
-    obj: OlkCheckBox,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCheckBox,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCheckBox,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCheckBox,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkComboBox,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkComboBox,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkComboBox,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkComboBox,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkComboBox,
+    event: AfterUpdate | Change | Click | DoubleClick | DropButtonClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkComboBox,
@@ -1741,50 +914,35 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ typings.activexOutlook.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
-    obj: OlkComboBox,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkComboBox,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkComboBox,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkComboBox,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkCommandButton,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCommandButton,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkCommandButton,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[
       /* this */ OlkCommandButton, 
       /* parameter */ typings.activexOutlook.anon.KeyCode, 
       Unit
     ]
+  ): Unit = js.native
+  def on(
+    obj: OlkCommandButton,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[
+      /* this */ OlkCommandButton, 
+      /* parameter */ typings.activexOutlook.anon.Button, 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: OlkCommandButton,
+    event: AfterUpdate | Click | DoubleClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkCommandButton,
@@ -1797,44 +955,25 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: OlkCommandButton,
-    event: KeyUp,
+    obj: OlkContactPhoto,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[
-      /* this */ OlkCommandButton, 
+      /* this */ OlkContactPhoto, 
       /* parameter */ typings.activexOutlook.anon.KeyCode, 
       Unit
     ]
   ): Unit = js.native
   def on(
-    obj: OlkCommandButton,
-    event: MouseDown,
+    obj: OlkContactPhoto,
+    event: MouseDown | MouseMove | MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ OlkCommandButton, 
-      /* parameter */ typings.activexOutlook.anon.Button, 
-      Unit
-    ]
+    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ typings.activexOutlook.anon.Button, Unit]
   ): Unit = js.native
   def on(
-    obj: OlkCommandButton,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ OlkCommandButton, 
-      /* parameter */ typings.activexOutlook.anon.Button, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: OlkCommandButton,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ OlkCommandButton, 
-      /* parameter */ typings.activexOutlook.anon.Button, 
-      Unit
-    ]
+    obj: OlkContactPhoto,
+    event: Change | Click | DoubleClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkContactPhoto,
@@ -1844,16 +983,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: OlkContactPhoto,
-    event: KeyDown,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[
-      /* this */ OlkContactPhoto, 
-      /* parameter */ typings.activexOutlook.anon.KeyCode, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: OlkContactPhoto,
     event: KeyPress,
     argNames: js.Array[KeyAscii],
     handler: js.ThisFunction1[
@@ -1863,50 +992,27 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: OlkContactPhoto,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[
-      /* this */ OlkContactPhoto, 
-      /* parameter */ typings.activexOutlook.anon.KeyCode, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: OlkContactPhoto,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkContactPhoto,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkContactPhoto,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkDateControl,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkDateControl,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkDateControl,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkDateControl,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkDateControl,
+    event: AfterUpdate | Change | Click | DoubleClick | DropButtonClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkDateControl,
@@ -1919,82 +1025,49 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: OlkDateControl,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkDateControl,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkDateControl,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkDateControl,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkInfoBar,
-    event: MouseDown,
+    event: MouseDown | MouseMove | MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
     handler: js.ThisFunction1[/* this */ OlkInfoBar, /* parameter */ typings.activexOutlook.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: OlkInfoBar,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkInfoBar, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkInfoBar,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkInfoBar, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+    event: Click | DoubleClick,
+    handler: js.ThisFunction1[/* this */ OlkInfoBar, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkLabel,
-    event: MouseDown,
+    event: MouseDown | MouseMove | MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
     handler: js.ThisFunction1[/* this */ OlkLabel, /* parameter */ typings.activexOutlook.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: OlkLabel,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkLabel, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkLabel,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkLabel, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+    event: Click | DoubleClick,
+    handler: js.ThisFunction1[/* this */ OlkLabel, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkListBox,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkListBox,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkListBox,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkListBox,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkListBox,
+    event: AfterUpdate | Change | Click | DoubleClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkListBox,
@@ -2003,50 +1076,31 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ typings.activexOutlook.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
-    obj: OlkListBox,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkListBox,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkListBox,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkListBox,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkOptionButton,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkOptionButton,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkOptionButton,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[
       /* this */ OlkOptionButton, 
       /* parameter */ typings.activexOutlook.anon.KeyCode, 
       Unit
     ]
+  ): Unit = js.native
+  def on(
+    obj: OlkOptionButton,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkOptionButton,
+    event: AfterUpdate | Change | Click | DoubleClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkOptionButton,
@@ -2059,68 +1113,38 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: OlkOptionButton,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[
-      /* this */ OlkOptionButton, 
-      /* parameter */ typings.activexOutlook.anon.KeyCode, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: OlkOptionButton,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkOptionButton,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkOptionButton,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkSenderPhoto,
-    event: MouseDown,
+    event: MouseDown | MouseMove | MouseUp,
     argNames: js.Tuple4[Button, Shift, X, Y],
     handler: js.ThisFunction1[/* this */ OlkSenderPhoto, /* parameter */ typings.activexOutlook.anon.Button, Unit]
   ): Unit = js.native
   def on(
     obj: OlkSenderPhoto,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkSenderPhoto, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkSenderPhoto,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkSenderPhoto, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+    event: Change | Click | DoubleClick,
+    handler: js.ThisFunction1[/* this */ OlkSenderPhoto, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTextBox,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTextBox,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTextBox,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkTextBox,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkTextBox,
+    event: AfterUpdate | Change | Click | DoubleClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTextBox,
@@ -2129,46 +1153,27 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ typings.activexOutlook.anon.KeyAscii, Unit]
   ): Unit = js.native
   def on(
-    obj: OlkTextBox,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTextBox,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTextBox,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTextBox,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkTimeControl,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTimeControl,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeControl,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkTimeControl,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ typings.activexOutlook.anon.Button, Unit]
+  ): Unit = js.native
+  def on(
+    obj: OlkTimeControl,
+    event: AfterUpdate | Change | Click | DoubleClick | DropButtonClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTimeControl,
@@ -2181,50 +1186,35 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: OlkTimeControl,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ typings.activexOutlook.anon.KeyCode, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeControl,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeControl,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeControl,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ typings.activexOutlook.anon.Button, Unit]
-  ): Unit = js.native
-  def on(
     obj: OlkTimeZoneControl,
-    event: BeforeUpdate,
+    event: BeforeUpdate | Exit,
     argNames: js.Array[Cancel],
     handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ `0`, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTimeZoneControl,
-    event: Exit,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ `0`, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeZoneControl,
-    event: KeyDown,
+    event: KeyDown | KeyUp,
     argNames: js.Tuple2[KeyCode, Shift],
     handler: js.ThisFunction1[
       /* this */ OlkTimeZoneControl, 
       /* parameter */ typings.activexOutlook.anon.KeyCode, 
       Unit
     ]
+  ): Unit = js.native
+  def on(
+    obj: OlkTimeZoneControl,
+    event: MouseDown | MouseMove | MouseUp,
+    argNames: js.Tuple4[Button, Shift, X, Y],
+    handler: js.ThisFunction1[
+      /* this */ OlkTimeZoneControl, 
+      /* parameter */ typings.activexOutlook.anon.Button, 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: OlkTimeZoneControl,
+    event: AfterUpdate | Change | Click | DoubleClick | DropButtonClick | Enter,
+    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OlkTimeZoneControl,
@@ -2233,46 +1223,6 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[
       /* this */ OlkTimeZoneControl, 
       /* parameter */ typings.activexOutlook.anon.KeyAscii, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeZoneControl,
-    event: KeyUp,
-    argNames: js.Tuple2[KeyCode, Shift],
-    handler: js.ThisFunction1[
-      /* this */ OlkTimeZoneControl, 
-      /* parameter */ typings.activexOutlook.anon.KeyCode, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeZoneControl,
-    event: MouseDown,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ OlkTimeZoneControl, 
-      /* parameter */ typings.activexOutlook.anon.Button, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeZoneControl,
-    event: MouseMove,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ OlkTimeZoneControl, 
-      /* parameter */ typings.activexOutlook.anon.Button, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: OlkTimeZoneControl,
-    event: MouseUp,
-    argNames: js.Tuple4[Button, Shift, X, Y],
-    handler: js.ThisFunction1[
-      /* this */ OlkTimeZoneControl, 
-      /* parameter */ typings.activexOutlook.anon.Button, 
       Unit
     ]
   ): Unit = js.native
@@ -2334,63 +1284,28 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: PostItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
+    handler: js.ThisFunction1[
+      /* this */ PostItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: PostItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ PostItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: PostItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: PostItem,
@@ -2400,21 +1315,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: PostItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: PostItem,
@@ -2423,40 +1326,14 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: PostItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: PostItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ CancelBoolean, Unit]
+    obj: Reminders,
+    event: ReminderAdd | ReminderChange | ReminderFire | Snooze,
+    argNames: js.Array[ReminderObject],
+    handler: js.ThisFunction1[
+      /* this */ Reminders, 
+      /* parameter */ typings.activexOutlook.anon.ReminderObject, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Reminders,
@@ -2465,104 +1342,29 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ Reminders, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
-    obj: Reminders,
-    event: ReminderAdd,
-    argNames: js.Array[ReminderObject],
+    obj: RemoteItem,
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
-      /* this */ Reminders, 
-      /* parameter */ typings.activexOutlook.anon.ReminderObject, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: Reminders,
-    event: ReminderChange,
-    argNames: js.Array[ReminderObject],
-    handler: js.ThisFunction1[
-      /* this */ Reminders, 
-      /* parameter */ typings.activexOutlook.anon.ReminderObject, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: Reminders,
-    event: ReminderFire,
-    argNames: js.Array[ReminderObject],
-    handler: js.ThisFunction1[
-      /* this */ Reminders, 
-      /* parameter */ typings.activexOutlook.anon.ReminderObject, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: Reminders,
-    event: Snooze,
-    argNames: js.Array[ReminderObject],
-    handler: js.ThisFunction1[
-      /* this */ Reminders, 
-      /* parameter */ typings.activexOutlook.anon.ReminderObject, 
+      /* this */ RemoteItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: RemoteItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ RemoteItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: RemoteItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: RemoteItem,
@@ -2572,21 +1374,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: RemoteItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: RemoteItem,
@@ -2595,100 +1385,29 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: RemoteItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: RemoteItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ CancelBoolean, Unit]
+    obj: ReportItem,
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
+    handler: js.ThisFunction1[
+      /* this */ ReportItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ReportItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ ReportItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ReportItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: ReportItem,
@@ -2698,21 +1417,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: ReportItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: ReportItem,
@@ -2721,112 +1428,35 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: ReportItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReportItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: Results,
-    event: ItemAdd,
-    argNames: js.Array[Item],
-    handler: js.ThisFunction1[/* this */ Results, /* parameter */ typings.activexOutlook.anon.Item, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Results,
-    event: ItemChange,
+    event: ItemAdd | ItemChange,
     argNames: js.Array[Item],
     handler: js.ThisFunction1[/* this */ Results, /* parameter */ typings.activexOutlook.anon.Item, Unit]
   ): Unit = js.native
   def on(
     obj: SharingItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
+    handler: js.ThisFunction1[
+      /* this */ SharingItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: SharingItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ SharingItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: SharingItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SharingItem,
@@ -2836,63 +1466,15 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: SharingItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
   ): Unit = js.native
   def on(
     obj: SharingItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
     handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: SharingItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: Stores,
@@ -2908,6 +1490,11 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: SyncObject,
+    event: SyncEnd | SyncStart,
+    handler: js.ThisFunction1[/* this */ SyncObject, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: SyncObject,
     event: OnError,
     argNames: js.Tuple2[Code, Description],
     handler: js.ThisFunction1[/* this */ SyncObject, /* parameter */ typings.activexOutlook.anon.Code, Unit]
@@ -2920,63 +1507,28 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: TaskItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
+    handler: js.ThisFunction1[
+      /* this */ TaskItem, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: TaskItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
+    handler: js.ThisFunction1[
+      /* this */ TaskItem, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: TaskItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Attachment, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: TaskItem,
@@ -2986,21 +1538,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: TaskItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: TaskItem,
@@ -3009,112 +1549,29 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Forward, Unit]
   ): Unit = js.native
   def on(
-    obj: TaskItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ typings.activexOutlook.anon.Response, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: TaskRequestAcceptItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
       /* this */ TaskRequestAcceptItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: TaskRequestAcceptItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ TaskRequestAcceptItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: TaskRequestAcceptItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestAcceptItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestAcceptItem,
@@ -3124,27 +1581,11 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: TaskRequestAcceptItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ TaskRequestAcceptItem, 
       /* parameter */ typings.activexOutlook.anon.Action, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestAcceptItem, 
-      /* parameter */ typings.activexOutlook.anon.Name, 
       Unit
     ]
   ): Unit = js.native
@@ -3159,124 +1600,29 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: TaskRequestAcceptItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestAcceptItem, 
-      /* parameter */ typings.activexOutlook.anon.Name, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestAcceptItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestAcceptItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestAcceptItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: TaskRequestDeclineItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
       /* this */ TaskRequestDeclineItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: TaskRequestDeclineItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ TaskRequestDeclineItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: TaskRequestDeclineItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestDeclineItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestDeclineItem,
@@ -3286,27 +1632,11 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: TaskRequestDeclineItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ TaskRequestDeclineItem, 
       /* parameter */ typings.activexOutlook.anon.Action, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestDeclineItem, 
-      /* parameter */ typings.activexOutlook.anon.Name, 
       Unit
     ]
   ): Unit = js.native
@@ -3321,124 +1651,29 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: TaskRequestDeclineItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestDeclineItem, 
-      /* parameter */ typings.activexOutlook.anon.Name, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestDeclineItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestDeclineItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestDeclineItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: TaskRequestItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
       /* this */ TaskRequestItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: TaskRequestItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ TaskRequestItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: TaskRequestItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestItem,
@@ -3448,21 +1683,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: TaskRequestItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
     event: CustomAction,
     argNames: js.Tuple3[Action, Response, Cancel],
     handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ typings.activexOutlook.anon.Action, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestItem,
@@ -3475,132 +1698,35 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: TaskRequestItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ typings.activexOutlook.anon.Name, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: TaskRequestUpdateItem,
-    event: AttachmentAdd,
-    argNames: js.Array[Attachment],
+    event: AttachmentAdd | AttachmentRead | AttachmentRemove | BeforeAutoSave | BeforeCheckNames | Close | CustomPropertyChange | Open | PropertyChange | Send | Write,
+    argNames: js.Array[Attachment | Cancel | Name],
     handler: js.ThisFunction1[
       /* this */ TaskRequestUpdateItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ typings.activexOutlook.anon.Attachment) | (/* parameter */ CancelBoolean) | (/* parameter */ typings.activexOutlook.anon.Name), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: TaskRequestUpdateItem,
-    event: AttachmentRead,
-    argNames: js.Array[Attachment],
+    event: BeforeAttachmentAdd | BeforeAttachmentPreview | BeforeAttachmentRead | BeforeAttachmentSave | BeforeAttachmentWriteToTempFile | Reply | ReplyAll,
+    argNames: js.Tuple2[Attachment | Response, Cancel],
     handler: js.ThisFunction1[
       /* this */ TaskRequestUpdateItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
+      (/* parameter */ AttachmentCancel) | (/* parameter */ typings.activexOutlook.anon.Response), 
       Unit
     ]
   ): Unit = js.native
   def on(
     obj: TaskRequestUpdateItem,
-    event: AttachmentRemove,
-    argNames: js.Array[Attachment],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestUpdateItem, 
-      /* parameter */ typings.activexOutlook.anon.Attachment, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: BeforeAttachmentAdd,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: BeforeAttachmentPreview,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: BeforeAttachmentRead,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: BeforeAttachmentSave,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: BeforeAttachmentWriteToTempFile,
-    argNames: js.Tuple2[Attachment, Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ AttachmentCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: BeforeAutoSave,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: BeforeCheckNames,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ CancelBoolean, Unit]
+    event: AfterWrite | BeforeRead | Read | Unload,
+    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestUpdateItem,
     event: BeforeDelete,
     argNames: js.Tuple2[Item, Cancel],
     handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ CancelItem, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: Close,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
     obj: TaskRequestUpdateItem,
@@ -3614,16 +1740,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: TaskRequestUpdateItem,
-    event: CustomPropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestUpdateItem, 
-      /* parameter */ typings.activexOutlook.anon.Name, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
     event: Forward,
     argNames: js.Tuple2[Forward, Cancel],
     handler: js.ThisFunction1[
@@ -3633,244 +1749,10 @@ trait ActiveXObject extends StObject {
     ]
   ): Unit = js.native
   def on(
-    obj: TaskRequestUpdateItem,
-    event: Open,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: PropertyChange,
-    argNames: js.Array[Name],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestUpdateItem, 
-      /* parameter */ typings.activexOutlook.anon.Name, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: ReplyAll,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestUpdateItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: Reply,
-    argNames: js.Tuple2[Response, Cancel],
-    handler: js.ThisFunction1[
-      /* this */ TaskRequestUpdateItem, 
-      /* parameter */ typings.activexOutlook.anon.Response, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: Send,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
-    obj: TaskRequestUpdateItem,
-    event: Write,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ CancelBoolean, Unit]
-  ): Unit = js.native
-  def on(
     obj: Views,
-    event: ViewAdd,
+    event: ViewAdd | ViewRemove,
     argNames: js.Array[View],
     handler: js.ThisFunction1[/* this */ Views, /* parameter */ ViewView, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Views,
-    event: ViewRemove,
-    argNames: js.Array[View],
-    handler: js.ThisFunction1[/* this */ Views, /* parameter */ ViewView, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Activate(
-    obj: Explorer,
-    event: Activate,
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Activate(
-    obj: Inspector,
-    event: Activate,
-    handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkCheckBox,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkComboBox,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkCommandButton,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkDateControl,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkListBox,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkOptionButton,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkTextBox,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkTimeControl,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterUpdate(
-    obj: OlkTimeZoneControl,
-    event: AfterUpdate,
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: AppointmentItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: ContactItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: DistListItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: DocumentItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: JournalItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: MailItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: MeetingItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: MobileItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: PostItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: RemoteItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: ReportItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: SharingItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: TaskItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: TaskRequestAcceptItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: TaskRequestDeclineItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: TaskRequestItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AfterWrite(
-    obj: TaskRequestUpdateItem,
-    event: AfterWrite,
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AttachmentSelectionChange(
-    obj: Explorer,
-    event: AttachmentSelectionChange,
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AttachmentSelectionChange(
-    obj: Inspector,
-    event: AttachmentSelectionChange,
-    handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_AutoDiscoverComplete(
@@ -3879,484 +1761,16 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ NameSpace, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_BeforeRead(
-    obj: AppointmentItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: ContactItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: DistListItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: DocumentItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: JournalItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: MailItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: MeetingItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: MobileItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: PostItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: RemoteItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: ReportItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: SharingItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: TaskItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: TaskRequestAcceptItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: TaskRequestDeclineItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: TaskRequestItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_BeforeRead(
-    obj: TaskRequestUpdateItem,
-    event: BeforeRead,
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkCategory,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkCheckBox,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkComboBox,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkContactPhoto,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkDateControl,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkListBox,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkOptionButton,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkSenderPhoto,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkSenderPhoto, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkTextBox,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkTimeControl,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Change(
-    obj: OlkTimeZoneControl,
-    event: Change,
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkBusinessCardControl,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkBusinessCardControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkCategory,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkCheckBox,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkComboBox,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkCommandButton,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkContactPhoto,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkDateControl,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkInfoBar,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkInfoBar, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkLabel,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkLabel, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkListBox,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkOptionButton,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkSenderPhoto,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkSenderPhoto, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkTextBox,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkTimeControl,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Click(
-    obj: OlkTimeZoneControl,
-    event: Click,
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Close(
-    obj: Explorer,
-    event: Close,
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
   def on_Close(
     obj: FormRegion,
     event: Close,
     handler: js.ThisFunction1[/* this */ FormRegion, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_Close(
-    obj: Inspector,
-    event: Close,
-    handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Deactivate(
-    obj: Explorer,
-    event: Deactivate,
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Deactivate(
-    obj: Inspector,
-    event: Deactivate,
-    handler: js.ThisFunction1[/* this */ Inspector, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkBusinessCardControl,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkBusinessCardControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkCategory,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkCheckBox,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkComboBox,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkCommandButton,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkContactPhoto,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkDateControl,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkInfoBar,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkInfoBar, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkLabel,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkLabel, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkListBox,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkOptionButton,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkSenderPhoto,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkSenderPhoto, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkTextBox,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkTimeControl,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DoubleClick(
-    obj: OlkTimeZoneControl,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DropButtonClick(
-    obj: OlkComboBox,
-    event: DropButtonClick,
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DropButtonClick(
-    obj: OlkDateControl,
-    event: DropButtonClick,
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DropButtonClick(
-    obj: OlkTimeControl,
-    event: DropButtonClick,
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DropButtonClick(
-    obj: OlkTimeZoneControl,
-    event: DropButtonClick,
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkCategory,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkCategory, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkCheckBox,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkCheckBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkComboBox,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkComboBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkCommandButton,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkCommandButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkContactPhoto,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkContactPhoto, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkDateControl,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkDateControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkListBox,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkListBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkOptionButton,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkOptionButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkTextBox,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkTextBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkTimeControl,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkTimeControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Enter(
-    obj: OlkTimeZoneControl,
-    event: Enter,
-    handler: js.ThisFunction1[/* this */ OlkTimeZoneControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
   def on_FolderRemove(
     obj: Folders,
     event: FolderRemove,
     handler: js.ThisFunction1[/* this */ Folders, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_FolderSwitch(
-    obj: Explorer,
-    event: FolderSwitch,
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_ItemRemove(
@@ -4371,267 +1785,15 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ Results, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_MAPILogonComplete(
-    obj: Application,
-    event: MAPILogonComplete,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
   def on_NavigationFolderRemove(
     obj: NavigationGroups,
     event: NavigationFolderRemove,
     handler: js.ThisFunction1[/* this */ NavigationGroups, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_NewMail(
-    obj: Application,
-    event: NewMail,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Quit(
-    obj: Application,
-    event: Quit,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: AppointmentItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: ContactItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: DistListItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: DocumentItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: JournalItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: MailItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: MeetingItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: MobileItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: PostItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: RemoteItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: ReportItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: SharingItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: TaskItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: TaskRequestAcceptItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: TaskRequestDeclineItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: TaskRequestItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Read(
-    obj: TaskRequestUpdateItem,
-    event: Read,
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
   def on_ReminderRemove(
     obj: Reminders,
     event: ReminderRemove,
     handler: js.ThisFunction1[/* this */ Reminders, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_SelectionChange(
-    obj: Explorer,
-    event: SelectionChange,
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Startup(
-    obj: Application,
-    event: Startup,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_SyncEnd(
-    obj: SyncObject,
-    event: SyncEnd,
-    handler: js.ThisFunction1[/* this */ SyncObject, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_SyncStart(
-    obj: SyncObject,
-    event: SyncStart,
-    handler: js.ThisFunction1[/* this */ SyncObject, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: AppointmentItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ AppointmentItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: ContactItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ ContactItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: DistListItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ DistListItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: DocumentItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ DocumentItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: JournalItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ JournalItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: MailItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ MailItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: MeetingItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ MeetingItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: MobileItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ MobileItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: PostItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ PostItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: RemoteItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ RemoteItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: ReportItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ ReportItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: SharingItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ SharingItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: TaskItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ TaskItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: TaskRequestAcceptItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ TaskRequestAcceptItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: TaskRequestDeclineItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ TaskRequestDeclineItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: TaskRequestItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ TaskRequestItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Unload(
-    obj: TaskRequestUpdateItem,
-    event: Unload,
-    handler: js.ThisFunction1[/* this */ TaskRequestUpdateItem, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_ViewSwitch(
-    obj: Explorer,
-    event: ViewSwitch,
-    handler: js.ThisFunction1[/* this */ Explorer, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }

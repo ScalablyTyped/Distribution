@@ -11,7 +11,7 @@ object binaryOperationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(operator: Operator, left: js.Any, right: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(operator: Operator, left: Any, right: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(operator.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.constantinople.constantinopleStrings.Plussign

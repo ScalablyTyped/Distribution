@@ -19,12 +19,12 @@ trait Stack extends StObject {
   /**
     * The time at which the stack was created.
     */
-  var CreationTime: typings.awsSdk.cloudformationMod.CreationTime
+  var CreationTime: js.Date
   
   /**
     * The time the stack was deleted.
     */
-  var DeletionTime: js.UndefOr[typings.awsSdk.cloudformationMod.DeletionTime] = js.undefined
+  var DeletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A user-defined description associated with the stack.
@@ -32,27 +32,27 @@ trait Stack extends StObject {
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
-    * Boolean to enable or disable rollback on stack creation failures:    true: disable rollback    false: enable rollback  
+    * Boolean to enable or disable rollback on stack creation failures:    true: disable rollback.    false: enable rollback.  
     */
   var DisableRollback: js.UndefOr[typings.awsSdk.cloudformationMod.DisableRollback] = js.undefined
   
   /**
-    * Information on whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
+    * Information about whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
     */
   var DriftInformation: js.UndefOr[StackDriftInformation] = js.undefined
   
   /**
-    * Whether termination protection is enabled for the stack.  For nested stacks, termination protection is set on the root stack and cannot be changed directly on the nested stack. For more information, see Protecting a Stack From Being Deleted in the AWS CloudFormation User Guide.
+    * Whether termination protection is enabled for the stack. For nested stacks, termination protection is set on the root stack and can't be changed directly on the nested stack. For more information, see Protecting a Stack From Being Deleted in the CloudFormation User Guide.
     */
   var EnableTerminationProtection: js.UndefOr[typings.awsSdk.cloudformationMod.EnableTerminationProtection] = js.undefined
   
   /**
     * The time the stack was last updated. This field will only be returned if the stack has been updated at least once.
     */
-  var LastUpdatedTime: js.UndefOr[typings.awsSdk.cloudformationMod.LastUpdatedTime] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * SNS topic ARNs to which stack related events are published.
+    * Amazon SNS topic Amazon Resource Names (ARNs) to which stack related events are published.
     */
   var NotificationARNs: js.UndefOr[typings.awsSdk.cloudformationMod.NotificationARNs] = js.undefined
   
@@ -67,22 +67,22 @@ trait Stack extends StObject {
   var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.undefined
   
   /**
-    * For nested stacks--stacks created as resources for another stack--the stack ID of the direct parent of this stack. For the first level of nested stacks, the root stack is also the parent stack. For more information, see Working with Nested Stacks in the AWS CloudFormation User Guide.
+    * For nested stacks--stacks created as resources for another stack--the stack ID of the direct parent of this stack. For the first level of nested stacks, the root stack is also the parent stack. For more information, see Working with Nested Stacks in the CloudFormation User Guide.
     */
   var ParentId: js.UndefOr[StackId] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that is associated with the stack. During a stack operation, AWS CloudFormation uses this role's credentials to make calls on your behalf.
+    * The Amazon Resource Name (ARN) of an Identity and Access Management (IAM) role that's associated with the stack. During a stack operation, CloudFormation uses this role's credentials to make calls on your behalf.
     */
   var RoleARN: js.UndefOr[RoleARN_] = js.undefined
   
   /**
-    * The rollback triggers for AWS CloudFormation to monitor during stack creation and updating operations, and for the specified monitoring period afterwards.
+    * The rollback triggers for CloudFormation to monitor during stack creation and updating operations, and for the specified monitoring period afterwards.
     */
   var RollbackConfiguration: js.UndefOr[typings.awsSdk.cloudformationMod.RollbackConfiguration] = js.undefined
   
   /**
-    * For nested stacks--stacks created as resources for another stack--the stack ID of the top-level stack to which the nested stack ultimately belongs. For more information, see Working with Nested Stacks in the AWS CloudFormation User Guide.
+    * For nested stacks--stacks created as resources for another stack--the stack ID of the top-level stack to which the nested stack ultimately belongs. For more information, see Working with Nested Stacks in the CloudFormation User Guide.
     */
   var RootId: js.UndefOr[StackId] = js.undefined
   
@@ -118,7 +118,7 @@ trait Stack extends StObject {
 }
 object Stack {
   
-  inline def apply(CreationTime: CreationTime, StackName: StackName, StackStatus: StackStatus): Stack = {
+  inline def apply(CreationTime: js.Date, StackName: StackName, StackStatus: StackStatus): Stack = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], StackStatus = StackStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stack]
   }
@@ -129,15 +129,15 @@ object Stack {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value*))
     
     inline def setChangeSetId(value: ChangeSetId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
     inline def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setDeletionTime(value: DeletionTime): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
+    inline def setDeletionTime(value: js.Date): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
     
     inline def setDeletionTimeUndefined: Self = StObject.set(x, "DeletionTime", js.undefined)
     
@@ -157,7 +157,7 @@ object Stack {
     
     inline def setEnableTerminationProtectionUndefined: Self = StObject.set(x, "EnableTerminationProtection", js.undefined)
     
-    inline def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
@@ -165,19 +165,19 @@ object Stack {
     
     inline def setNotificationARNsUndefined: Self = StObject.set(x, "NotificationARNs", js.undefined)
     
-    inline def setNotificationARNsVarargs(value: NotificationARN*): Self = StObject.set(x, "NotificationARNs", js.Array(value :_*))
+    inline def setNotificationARNsVarargs(value: NotificationARN*): Self = StObject.set(x, "NotificationARNs", js.Array(value*))
     
     inline def setOutputs(value: Outputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
     
     inline def setParentId(value: StackId): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
@@ -211,7 +211,7 @@ object Stack {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTimeoutInMinutes(value: TimeoutMinutes): Self = StObject.set(x, "TimeoutInMinutes", value.asInstanceOf[js.Any])
     

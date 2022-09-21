@@ -23,7 +23,7 @@ trait MathMenu extends StObject {
     * "application/x-tex"] will map an annotation with an encoding of "TeX", "LaTeX", or "application/x-tex" to the
     * "TeX" menu.
     */
-  var semanticsAnnotations: js.UndefOr[js.Any] = js.undefined
+  var semanticsAnnotations: js.UndefOr[Any] = js.undefined
   
   /*This controls whether the “Contextual Menu” item will be displayed in the “Math Settings” submenu of the MathJax
     * contextual menu. It allows the user to decide whether the MathJax menu or the browser’s default contextual menu
@@ -65,12 +65,12 @@ trait MathMenu extends StObject {
     * extensions/MathMenu.js for details of what are defined by default. See CSS Style Objects for details on how
     * to specify CSS style in a JavaScript object.
     */
-  var styles: js.UndefOr[js.Any] = js.undefined
+  var styles: js.UndefOr[Any] = js.undefined
   
   /*These are the settings for the window.open() call that creates the Show Source window. The initial width and
     * height will be reset after the source is shown in an attempt to make the window fit the output better.
     */
-  var windowSettings: js.UndefOr[js.Any] = js.undefined
+  var windowSettings: js.UndefOr[Any] = js.undefined
 }
 object MathMenu {
   
@@ -89,7 +89,7 @@ object MathMenu {
     
     inline def setHelpURLUndefined: Self = StObject.set(x, "helpURL", js.undefined)
     
-    inline def setSemanticsAnnotations(value: js.Any): Self = StObject.set(x, "semanticsAnnotations", value.asInstanceOf[js.Any])
+    inline def setSemanticsAnnotations(value: Any): Self = StObject.set(x, "semanticsAnnotations", value.asInstanceOf[js.Any])
     
     inline def setSemanticsAnnotationsUndefined: Self = StObject.set(x, "semanticsAnnotations", js.undefined)
     
@@ -113,11 +113,11 @@ object MathMenu {
     
     inline def setShowRendererUndefined: Self = StObject.set(x, "showRenderer", js.undefined)
     
-    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setWindowSettings(value: js.Any): Self = StObject.set(x, "windowSettings", value.asInstanceOf[js.Any])
+    inline def setWindowSettings(value: Any): Self = StObject.set(x, "windowSettings", value.asInstanceOf[js.Any])
     
     inline def setWindowSettingsUndefined: Self = StObject.set(x, "windowSettings", js.undefined)
   }

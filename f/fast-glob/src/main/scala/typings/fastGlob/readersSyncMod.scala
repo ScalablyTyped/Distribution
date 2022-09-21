@@ -13,15 +13,15 @@ object readersSyncMod {
   
   @JSImport("fast-glob/out/readers/sync", JSImport.Default)
   @js.native
-  class default () extends ReaderSync
+  open class default () extends ReaderSync
   
   @js.native
   trait ReaderSync
     extends typings.fastGlob.readerMod.default[js.Array[Entry]] {
     
-    /* private */ var _getEntry: js.Any = js.native
+    /* private */ var _getEntry: Any = js.native
     
-    /* private */ var _getStat: js.Any = js.native
+    /* private */ var _getStat: Any = js.native
     
     /* protected */ def _statSync(path: String): Stats = js.native
     /* protected */ def _statSync(path: String, optionsOrSettings: Options): Stats = js.native

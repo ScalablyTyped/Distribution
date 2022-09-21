@@ -15,7 +15,6 @@ import typings.rmcCalendar.rmcCalendarStrings.one
 import typings.rmcCalendar.rmcCalendarStrings.range
 import typings.rmcCalendar.rmcCalendarStrings.vertical
 import typings.rmcCalendar.rmcCalendarStrings.xl
-import typings.std.Date
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -67,9 +66,9 @@ object anon {
   
   trait EndDate extends StObject {
     
-    var endDate: js.UndefOr[Date] = js.undefined
+    var endDate: js.UndefOr[js.Date] = js.undefined
     
-    var startDate: js.UndefOr[Date] = js.undefined
+    var startDate: js.UndefOr[js.Date] = js.undefined
   }
   object EndDate {
     
@@ -80,11 +79,11 @@ object anon {
     
     extension [Self <: EndDate](x: Self) {
       
-      inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     }
@@ -92,22 +91,22 @@ object anon {
   
   trait FirstDate extends StObject {
     
-    var firstDate: Date
+    var firstDate: js.Date
     
-    var lastDate: Date
+    var lastDate: js.Date
   }
   object FirstDate {
     
-    inline def apply(firstDate: Date, lastDate: Date): FirstDate = {
+    inline def apply(firstDate: js.Date, lastDate: js.Date): FirstDate = {
       val __obj = js.Dynamic.literal(firstDate = firstDate.asInstanceOf[js.Any], lastDate = lastDate.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirstDate]
     }
     
     extension [Self <: FirstDate](x: Self) {
       
-      inline def setFirstDate(value: Date): Self = StObject.set(x, "firstDate", value.asInstanceOf[js.Any])
+      inline def setFirstDate(value: js.Date): Self = StObject.set(x, "firstDate", value.asInstanceOf[js.Any])
       
-      inline def setLastDate(value: Date): Self = StObject.set(x, "lastDate", value.asInstanceOf[js.Any])
+      inline def setLastDate(value: js.Date): Self = StObject.set(x, "lastDate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,15 +154,15 @@ object anon {
     
     val children: js.UndefOr[ReactNode] = js.undefined
     
-    val defaultDate: js.UndefOr[Date] = js.undefined
+    val defaultDate: js.UndefOr[js.Date] = js.undefined
     
-    val defaultTimeValue: js.UndefOr[Date] = js.undefined
+    val defaultTimeValue: js.UndefOr[js.Date] = js.undefined
     
     val defaultValue: js.UndefOr[SelectDateType] = js.undefined
     
     val enterDirection: js.UndefOr[horizontal | vertical] = js.undefined
     
-    val getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.undefined
+    val getDateExtra: js.UndefOr[js.Function1[/* date */ js.Date, ExtraData]] = js.undefined
     
     val infiniteOpt: js.UndefOr[Boolean] = js.undefined
     
@@ -171,27 +170,27 @@ object anon {
     
     val locale: js.UndefOr[Locale] = js.undefined
     
-    val maxDate: js.UndefOr[Date] = js.undefined
+    val maxDate: js.UndefOr[js.Date] = js.undefined
     
-    val minDate: js.UndefOr[Date] = js.undefined
+    val minDate: js.UndefOr[js.Date] = js.undefined
     
     val onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     val onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     val onConfirm: js.UndefOr[
-        js.Function2[/* startDateTime */ js.UndefOr[Date], /* endDateTime */ js.UndefOr[Date], Unit]
+        js.Function2[/* startDateTime */ js.UndefOr[js.Date], /* endDateTime */ js.UndefOr[js.Date], Unit]
       ] = js.undefined
     
     val onSelect: js.UndefOr[
         js.Function2[
-          /* date */ Date, 
-          /* state */ js.UndefOr[js.Tuple2[js.UndefOr[Date], js.UndefOr[Date]]], 
+          /* date */ js.Date, 
+          /* state */ js.UndefOr[js.Tuple2[js.UndefOr[js.Date], js.UndefOr[js.Date]]], 
           SelectDateType | Unit
         ]
       ] = js.undefined
     
-    val onSelectHasDisableDate: js.UndefOr[js.Function1[/* date */ js.Array[Date], Unit]] = js.undefined
+    val onSelectHasDisableDate: js.UndefOr[js.Function1[/* date */ js.Array[js.Date], Unit]] = js.undefined
     
     val pickTime: js.UndefOr[Boolean] = js.undefined
     
@@ -201,7 +200,7 @@ object anon {
     
     val renderShortcut: js.UndefOr[
         js.Function1[
-          /* select */ js.Function2[/* startDate */ js.UndefOr[Date], /* endDate */ js.UndefOr[Date], Unit], 
+          /* select */ js.Function2[/* startDate */ js.UndefOr[js.Date], /* endDate */ js.UndefOr[js.Date], Unit], 
           ReactNode
         ]
       ] = js.undefined
@@ -235,11 +234,11 @@ object anon {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+      inline def setDefaultDate(value: js.Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
       
       inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
       
-      inline def setDefaultTimeValue(value: Date): Self = StObject.set(x, "defaultTimeValue", value.asInstanceOf[js.Any])
+      inline def setDefaultTimeValue(value: js.Date): Self = StObject.set(x, "defaultTimeValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultTimeValueUndefined: Self = StObject.set(x, "defaultTimeValue", js.undefined)
       
@@ -247,13 +246,13 @@ object anon {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: Date*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: js.Date*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setEnterDirection(value: horizontal | vertical): Self = StObject.set(x, "enterDirection", value.asInstanceOf[js.Any])
       
       inline def setEnterDirectionUndefined: Self = StObject.set(x, "enterDirection", js.undefined)
       
-      inline def setGetDateExtra(value: /* date */ Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
+      inline def setGetDateExtra(value: /* date */ js.Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
       
       inline def setGetDateExtraUndefined: Self = StObject.set(x, "getDateExtra", js.undefined)
       
@@ -269,11 +268,11 @@ object anon {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -285,15 +284,15 @@ object anon {
       
       inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      inline def setOnConfirm(value: (/* startDateTime */ js.UndefOr[Date], /* endDateTime */ js.UndefOr[Date]) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+      inline def setOnConfirm(value: (/* startDateTime */ js.UndefOr[js.Date], /* endDateTime */ js.UndefOr[js.Date]) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
       
       inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
       
       inline def setOnSelect(
-        value: (/* date */ Date, /* state */ js.UndefOr[js.Tuple2[js.UndefOr[Date], js.UndefOr[Date]]]) => SelectDateType | Unit
+        value: (/* date */ js.Date, /* state */ js.UndefOr[js.Tuple2[js.UndefOr[js.Date], js.UndefOr[js.Date]]]) => SelectDateType | Unit
       ): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
-      inline def setOnSelectHasDisableDate(value: /* date */ js.Array[Date] => Unit): Self = StObject.set(x, "onSelectHasDisableDate", js.Any.fromFunction1(value))
+      inline def setOnSelectHasDisableDate(value: /* date */ js.Array[js.Date] => Unit): Self = StObject.set(x, "onSelectHasDisableDate", js.Any.fromFunction1(value))
       
       inline def setOnSelectHasDisableDateUndefined: Self = StObject.set(x, "onSelectHasDisableDate", js.undefined)
       
@@ -312,7 +311,7 @@ object anon {
       inline def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
       
       inline def setRenderShortcut(
-        value: /* select */ js.Function2[/* startDate */ js.UndefOr[Date], /* endDate */ js.UndefOr[Date], Unit] => ReactNode
+        value: /* select */ js.Function2[/* startDate */ js.UndefOr[js.Date], /* endDate */ js.UndefOr[js.Date], Unit] => ReactNode
       ): Self = StObject.set(x, "renderShortcut", js.Any.fromFunction1(value))
       
       inline def setRenderShortcutUndefined: Self = StObject.set(x, "renderShortcut", js.undefined)
@@ -374,7 +373,7 @@ object anon {
       
       inline def setWeekComponents(value: js.Array[ReactNode]): Self = StObject.set(x, "weekComponents", value.asInstanceOf[js.Any])
       
-      inline def setWeekComponentsVarargs(value: ReactNode*): Self = StObject.set(x, "weekComponents", js.Array(value :_*))
+      inline def setWeekComponentsVarargs(value: ReactNode*): Self = StObject.set(x, "weekComponents", js.Array(value*))
     }
   }
 }

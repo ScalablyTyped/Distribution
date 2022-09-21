@@ -16,10 +16,10 @@ trait ManagedPolicyDetail extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the policy was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier for the version of the policy that is set as the default (operative) version. For more information about policy versions, see Versioning for Managed Policies in the IAM User Guide. 
+    * The identifier for the version of the policy that is set as the default (operative) version. For more information about policy versions, see Versioning for managed policies in the IAM User Guide. 
     */
   var DefaultVersionId: js.UndefOr[policyVersionIdType] = js.undefined
   
@@ -34,17 +34,17 @@ trait ManagedPolicyDetail extends StObject {
   var IsAttachable: js.UndefOr[booleanType] = js.undefined
   
   /**
-    * The path to the policy. For more information about paths, see IAM Identifiers in the IAM User Guide.
+    * The path to the policy. For more information about paths, see IAM identifiers in the IAM User Guide.
     */
   var Path: js.UndefOr[policyPathType] = js.undefined
   
   /**
-    * The number of entities (users and roles) for which the policy is used as the permissions boundary.  For more information about permissions boundaries, see Permissions Boundaries for IAM Identities  in the IAM User Guide.
+    * The number of entities (users and roles) for which the policy is used as the permissions boundary.  For more information about permissions boundaries, see Permissions boundaries for IAM identities  in the IAM User Guide.
     */
   var PermissionsBoundaryUsageCount: js.UndefOr[attachmentCountType] = js.undefined
   
   /**
-    * The stable and unique string identifying the policy. For more information about IDs, see IAM Identifiers in the IAM User Guide.
+    * The stable and unique string identifying the policy. For more information about IDs, see IAM identifiers in the IAM User Guide.
     */
   var PolicyId: js.UndefOr[idType] = js.undefined
   
@@ -61,7 +61,7 @@ trait ManagedPolicyDetail extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the policy was last updated. When a policy has only one version, this field contains the date and time when the policy was created. When a policy has more than one version, this field contains the date and time when the most recent policy version was created.
     */
-  var UpdateDate: js.UndefOr[dateType] = js.undefined
+  var UpdateDate: js.UndefOr[js.Date] = js.undefined
 }
 object ManagedPolicyDetail {
   
@@ -80,7 +80,7 @@ object ManagedPolicyDetail {
     
     inline def setAttachmentCountUndefined: Self = StObject.set(x, "AttachmentCount", js.undefined)
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -116,9 +116,9 @@ object ManagedPolicyDetail {
     
     inline def setPolicyVersionListUndefined: Self = StObject.set(x, "PolicyVersionList", js.undefined)
     
-    inline def setPolicyVersionListVarargs(value: PolicyVersion*): Self = StObject.set(x, "PolicyVersionList", js.Array(value :_*))
+    inline def setPolicyVersionListVarargs(value: PolicyVersion*): Self = StObject.set(x, "PolicyVersionList", js.Array(value*))
     
-    inline def setUpdateDate(value: dateType): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
+    inline def setUpdateDate(value: js.Date): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
     inline def setUpdateDateUndefined: Self = StObject.set(x, "UpdateDate", js.undefined)
   }

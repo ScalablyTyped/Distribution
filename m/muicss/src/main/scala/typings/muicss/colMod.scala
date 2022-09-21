@@ -10,8 +10,8 @@ object colMod {
   
   @JSImport("muicss/lib/react/col", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ColProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ColProps, js.Object, Any]
   
-  type Col = Component[ColProps, js.Object, js.Any]
+  type Col = Component[ColProps, js.Object, Any]
 }

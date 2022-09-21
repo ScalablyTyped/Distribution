@@ -17,7 +17,7 @@ trait InternetGateway extends StObject {
   var InternetGatewayId: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the internet gateway.
+    * The ID of the Amazon Web Services account that owns the internet gateway.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object InternetGateway {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: InternetGatewayAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: InternetGatewayAttachment*): Self = StObject.set(x, "Attachments", js.Array(value*))
     
     inline def setInternetGatewayId(value: String): Self = StObject.set(x, "InternetGatewayId", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object InternetGateway {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -14,7 +14,7 @@ trait CustomDataIdentifierSummary extends StObject {
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the custom data identifier was created.
     */
-  var createdAt: js.UndefOr[timestampIso8601] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The custom description of the custom data identifier.
@@ -44,7 +44,7 @@ object CustomDataIdentifierSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Storage
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
@@ -30,7 +29,7 @@ object Pickers {
   @js.native
   /* unmapped type */
   /** Creates a new instance of a FileOpenPicker . */
-  class FileOpenPicker ()
+  open class FileOpenPicker ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Pickers.FileOpenPicker
   object FileOpenPicker {
@@ -42,8 +41,8 @@ object Pickers {
     /* static member */
     @JSGlobal("Windows.Storage.Pickers.FileOpenPicker.resumePickSingleFileAsync")
     @js.native
-    def resumePickSingleFileAsync: js.Any = js.native
-    inline def resumePickSingleFileAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resumePickSingleFileAsync")(x.asInstanceOf[js.Any])
+    def resumePickSingleFileAsync: Any = js.native
+    inline def resumePickSingleFileAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resumePickSingleFileAsync")(x.asInstanceOf[js.Any])
   }
   
   /** Represents a collection of display names mapped to the associated file types (extensions). Each element in this collection maps a display name to a corresponding collection of file name extensions. The key is a single string, the value is a list/vector of strings representing one or more extension choices. */
@@ -62,7 +61,7 @@ object Pickers {
       * @return The iterator.
       */
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Returns an immutable view of the collection of display names and associated file types.
@@ -119,7 +118,7 @@ object Pickers {
   @JSGlobal("Windows.Storage.Pickers.FileSavePicker")
   @js.native
   /** Creates a new instance of a FileSavePicker . */
-  class FileSavePicker ()
+  open class FileSavePicker ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Pickers.FileSavePicker {
     
@@ -175,7 +174,7 @@ object Pickers {
   @JSGlobal("Windows.Storage.Pickers.FolderPicker")
   @js.native
   /** Creates a new instance of a FolderPicker . */
-  class FolderPicker ()
+  open class FolderPicker ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Pickers.FolderPicker {
     
@@ -353,7 +352,7 @@ object Pickers {
       
       /** Gets a dateTime object that indicates when the system will shut down the app that is providing files through the file picker without further notice. */
       /* CompleteClass */
-      var deadline: Date = js.native
+      var deadline: js.Date = js.native
       
       /**
         * Gets a pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.

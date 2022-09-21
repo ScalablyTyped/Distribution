@@ -75,7 +75,7 @@ trait DynaTreeNode extends StObject {
   def reload(force: Boolean): Unit = js.native
   
   def reloadChildren(): Unit = js.native
-  def reloadChildren(callback: js.Function2[/* node */ this.type, /* isOk */ Boolean, js.Any]): Unit = js.native
+  def reloadChildren(callback: js.Function2[/* node */ this.type, /* isOk */ Boolean, Any]): Unit = js.native
   
   def remove(): Unit = js.native
   
@@ -98,8 +98,8 @@ trait DynaTreeNode extends StObject {
   def sortChildren(cmp: js.Function2[/* a */ this.type, /* b */ this.type, Double], deep: Boolean): Unit = js.native
   def sortChildren(cmp: Unit, deep: Boolean): Unit = js.native
   
-  def toDict(recursive: Boolean): js.Any = js.native
-  def toDict(recursive: Boolean, callback: js.Function1[/* node */ js.Any, js.Any]): js.Any = js.native
+  def toDict(recursive: Boolean): Any = js.native
+  def toDict(recursive: Boolean, callback: js.Function1[/* node */ Any, Any]): Any = js.native
   
   def toggleExpand(): Unit = js.native
   

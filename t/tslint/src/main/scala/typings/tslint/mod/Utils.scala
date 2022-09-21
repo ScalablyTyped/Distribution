@@ -1,6 +1,6 @@
 package typings.tslint.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.TemplateStringsArray
 import typings.tslint.libUtilsMod.Encoding
 import typings.tslint.libUtilsMod.Equal
@@ -27,7 +27,7 @@ object Utils {
   
   inline def camelize(stringWithHyphens: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelize")(stringWithHyphens.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def dedent(strings: TemplateStringsArray, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dedent(strings: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def denormalizeWinPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("denormalizeWinPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -63,7 +63,7 @@ object Utils {
   inline def newLineWithIndentation(node: Node, sourceFile: SourceFile): String = (^.asInstanceOf[js.Dynamic].applyDynamic("newLineWithIndentation")(node.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def newLineWithIndentation(node: Node, sourceFile: SourceFile, linesCount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("newLineWithIndentation")(node.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any], linesCount.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def objectify(arg: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("objectify")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def objectify(arg: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("objectify")(arg.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def readBufferWithDetectedEncoding(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readBufferWithDetectedEncoding")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   

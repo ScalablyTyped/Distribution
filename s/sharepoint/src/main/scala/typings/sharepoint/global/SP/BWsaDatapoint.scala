@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.BWsaDatapoint")
 @js.native
-class BWsaDatapoint ()
+open class BWsaDatapoint ()
   extends StObject
      with typings.sharepoint.SP.BWsaDatapoint

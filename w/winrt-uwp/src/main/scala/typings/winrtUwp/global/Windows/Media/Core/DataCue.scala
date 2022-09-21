@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Core.DataCue")
 @js.native
 /** Initializes a new instance of the DataCue class. */
-class DataCue ()
+open class DataCue ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.DataCue {
   

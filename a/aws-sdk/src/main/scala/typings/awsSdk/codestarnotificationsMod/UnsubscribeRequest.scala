@@ -12,7 +12,7 @@ trait UnsubscribeRequest extends StObject {
   var Arn: NotificationRuleArn
   
   /**
-    * The ARN of the SNS topic to unsubscribe from the notification rule.
+    * The ARN of the Chatbot topic to unsubscribe from the notification rule.
     */
   var TargetAddress: typings.awsSdk.codestarnotificationsMod.TargetAddress
 }

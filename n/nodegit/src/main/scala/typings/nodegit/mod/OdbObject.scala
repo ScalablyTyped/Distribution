@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "OdbObject")
 @js.native
-class OdbObject ()
+open class OdbObject ()
   extends typings.nodegit.odbObjectMod.OdbObject

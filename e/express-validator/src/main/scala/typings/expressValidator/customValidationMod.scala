@@ -12,18 +12,18 @@ object customValidationMod {
   
   @JSImport("express-validator/src/context-items/custom-validation", "CustomValidation")
   @js.native
-  class CustomValidation protected ()
+  open class CustomValidation protected ()
     extends StObject
        with ContextItem {
     def this(validator: CustomValidator, negated: Boolean) = this()
     
-    var message: js.Any = js.native
+    var message: Any = js.native
     
-    /* private */ val negated: js.Any = js.native
+    /* private */ val negated: Any = js.native
     
     /* CompleteClass */
-    override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
+    override def run(context: Context, value: Any, meta: Meta): js.Promise[Unit] = js.native
     
-    /* private */ val validator: js.Any = js.native
+    /* private */ val validator: Any = js.native
   }
 }

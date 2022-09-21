@@ -63,8 +63,8 @@ object Navigation {
     **/
   @JSGlobal("WinJS.Navigation.history")
   @js.native
-  def history: js.Any = js.native
-  inline def history_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
+  def history: Any = js.native
+  inline def history_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
   
   /**
     * Gets or sets the current location.
@@ -80,8 +80,8 @@ object Navigation {
     * @param initialState A user-defined object that represents the navigation state that may be accessed through state.
     * @returns A promise that is completed with a value that indicates whether or not the navigation was successful (true if successful, otherwise false).
     **/
-  inline def navigate(location: js.Any): typings.winjs.WinJS.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(location.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
-  inline def navigate(location: js.Any, initialState: js.Any): typings.winjs.WinJS.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(location.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
+  inline def navigate(location: Any): typings.winjs.WinJS.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(location.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
+  inline def navigate(location: Any, initialState: Any): typings.winjs.WinJS.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(location.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Boolean]]
   
   //#endregion Functions
   //#region Events
@@ -89,19 +89,19 @@ object Navigation {
     * Occurs before navigation.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: location, state.
     **/
-  inline def onbeforenavigate(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onbeforenavigate")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onbeforenavigate(eventInfo: CustomEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onbeforenavigate")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Occurs after navigation has taken place.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: location, state.
     **/
-  inline def onnavigated(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onnavigated")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onnavigated(eventInfo: CustomEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onnavigated")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Occurs when navigation is taking place.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: location, state.
     **/
-  inline def onnavigating(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onnavigating")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onnavigating(eventInfo: CustomEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onnavigating")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes an event listener from the control.
@@ -117,6 +117,6 @@ object Navigation {
     **/
   @JSGlobal("WinJS.Navigation.state")
   @js.native
-  def state: js.Any = js.native
-  inline def state_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
+  def state: Any = js.native
+  inline def state_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
 }

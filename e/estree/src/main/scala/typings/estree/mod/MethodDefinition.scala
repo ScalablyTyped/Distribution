@@ -10,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MethodDefinition
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
   var computed: Boolean
   
-  var key: Expression
+  var key: Expression | PrivateIdentifier
   
   var kind: constructor | method | get | set
   
@@ -30,7 +29,7 @@ object MethodDefinition {
   
   inline def apply(
     computed: Boolean,
-    key: Expression,
+    key: Expression | PrivateIdentifier,
     kind: constructor | method | get | set,
     static: Boolean,
     value: FunctionExpression
@@ -44,7 +43,7 @@ object MethodDefinition {
     
     inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Expression | PrivateIdentifier): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKind(value: constructor | method | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

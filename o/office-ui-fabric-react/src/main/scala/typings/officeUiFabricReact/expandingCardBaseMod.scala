@@ -11,23 +11,22 @@ object expandingCardBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/HoverCard/ExpandingCard.base", "ExpandingCardBase")
   @js.native
-  class ExpandingCardBase protected ()
-    extends Component[IExpandingCardProps, IExpandingCardState, js.Any] {
+  open class ExpandingCardBase protected () extends Component[IExpandingCardProps, IExpandingCardState, Any] {
     def this(props: IExpandingCardProps) = this()
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _checkNeedsScroll: js.Any = js.native
+    /* private */ var _checkNeedsScroll: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _expandedElem: js.Any = js.native
+    /* private */ var _expandedElem: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _onRenderCompactCard: js.Any = js.native
+    /* private */ var _onRenderCompactCard: Any = js.native
     
-    /* private */ var _onRenderExpandedCard: js.Any = js.native
+    /* private */ var _onRenderExpandedCard: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MExpandingCardBase(): Unit = js.native

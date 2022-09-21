@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpeechRecognitionSemanticInterpretation extends StObject {
   
   /** Gets a dictionary of the semantic properties. */
-  var properties: IMapView[String, IVectorView[js.Any]]
+  var properties: IMapView[String, IVectorView[Any]]
 }
 object SpeechRecognitionSemanticInterpretation {
   
-  inline def apply(properties: IMapView[String, IVectorView[js.Any]]): SpeechRecognitionSemanticInterpretation = {
+  inline def apply(properties: IMapView[String, IVectorView[Any]]): SpeechRecognitionSemanticInterpretation = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionSemanticInterpretation]
   }
   
   extension [Self <: SpeechRecognitionSemanticInterpretation](x: Self) {
     
-    inline def setProperties(value: IMapView[String, IVectorView[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, IVectorView[Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

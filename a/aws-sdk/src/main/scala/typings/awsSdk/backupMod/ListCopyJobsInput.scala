@@ -12,14 +12,24 @@ trait ListCopyJobsInput extends StObject {
   var ByAccountId: js.UndefOr[AccountId] = js.undefined
   
   /**
+    * Returns only copy jobs completed after a date expressed in Unix format and Coordinated Universal Time (UTC).
+    */
+  var ByCompleteAfter: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Returns only copy jobs completed before a date expressed in Unix format and Coordinated Universal Time (UTC).
+    */
+  var ByCompleteBefore: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * Returns only copy jobs that were created after the specified date.
     */
-  var ByCreatedAfter: js.UndefOr[timestamp] = js.undefined
+  var ByCreatedAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Returns only copy jobs that were created before the specified date.
     */
-  var ByCreatedBefore: js.UndefOr[timestamp] = js.undefined
+  var ByCreatedBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a source backup vault to copy from; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault. 
@@ -32,7 +42,7 @@ trait ListCopyJobsInput extends StObject {
   var ByResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * Returns only backup jobs for the specified resources:    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EC2 for Amazon Elastic Compute Cloud    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
+    * Returns only backup jobs for the specified resources:    Aurora for Amazon Aurora    DocumentDB for Amazon DocumentDB (with MongoDB compatibility)    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EC2 for Amazon Elastic Compute Cloud    EFS for Amazon Elastic File System    FSx for Amazon FSx    Neptune for Amazon Neptune    RDS for Amazon Relational Database Service    Storage Gateway for Storage Gateway    S3 for Amazon S3    VirtualMachine for virtual machines  
     */
   var ByResourceType: js.UndefOr[ResourceType] = js.undefined
   
@@ -64,11 +74,19 @@ object ListCopyJobsInput {
     
     inline def setByAccountIdUndefined: Self = StObject.set(x, "ByAccountId", js.undefined)
     
-    inline def setByCreatedAfter(value: timestamp): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
+    inline def setByCompleteAfter(value: js.Date): Self = StObject.set(x, "ByCompleteAfter", value.asInstanceOf[js.Any])
+    
+    inline def setByCompleteAfterUndefined: Self = StObject.set(x, "ByCompleteAfter", js.undefined)
+    
+    inline def setByCompleteBefore(value: js.Date): Self = StObject.set(x, "ByCompleteBefore", value.asInstanceOf[js.Any])
+    
+    inline def setByCompleteBeforeUndefined: Self = StObject.set(x, "ByCompleteBefore", js.undefined)
+    
+    inline def setByCreatedAfter(value: js.Date): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
     
     inline def setByCreatedAfterUndefined: Self = StObject.set(x, "ByCreatedAfter", js.undefined)
     
-    inline def setByCreatedBefore(value: timestamp): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
+    inline def setByCreatedBefore(value: js.Date): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
     
     inline def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
     

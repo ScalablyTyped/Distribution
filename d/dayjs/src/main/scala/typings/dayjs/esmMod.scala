@@ -1,14 +1,21 @@
 package typings.dayjs
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.dayjs.anon.Format
+import typings.dayjs.anon.D
 import typings.dayjs.anon.PartialILocale
+import typings.dayjs.dayjsStrings.LeftparenthesisRightparenthesis
+import typings.dayjs.dayjsStrings.`Leftparenthesis]`
+import typings.dayjs.dayjsStrings.`[Rightparenthesis`
+import typings.dayjs.dayjsStrings.`[]`
+import typings.dayjs.dayjsStrings.d_
+import typings.dayjs.dayjsStrings.long
 import typings.dayjs.dayjsStrings.m_
+import typings.dayjs.dayjsStrings.short
+import typings.dayjs.durationMod.CreateDurationType
 import typings.dayjs.durationMod.Duration
-import typings.dayjs.durationMod.DurationInputType
 import typings.dayjs.isoWeekMod.ISOUnitType
 import typings.dayjs.toObjectMod.DayjsObject
-import typings.std.Date
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,10 +49,13 @@ object esmMod {
   
   @JSImport("dayjs/esm", "Dayjs")
   @js.native
-  class Dayjs () extends StObject {
+  open class Dayjs ()
+    extends StObject
+       with _ConfigType {
     def this(config: ConfigType) = this()
     
     def add(argument: js.Object): typings.dayjs.objectSupportMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def add(duration: Duration): typings.dayjs.durationMod.dayjsEsmAugmentingMod.Dayjs = js.native
     /**
       * Returns a cloned Day.js object with a specified amount of time added.
       * ```
@@ -56,9 +66,8 @@ object esmMod {
       * Docs: https://day.js.org/docs/en/manipulate/add
       */
     def add(value: Double): Dayjs = js.native
-    def add(value: Double, unit: OpUnitType): Dayjs = js.native
+    def add(value: Double, unit: ManipulateType): Dayjs = js.native
     def add(value: Double, unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def add(value: Duration): typings.dayjs.durationMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def calendar(): String = js.native
     def calendar(referenceTime: Unit, formats: js.Object): String = js.native
@@ -76,7 +85,7 @@ object esmMod {
     /**
       * Set the date of the month.
       *
-      * Accepts numbers from 1 to 31. If the range is exceeded, it will bubble up to the months.
+      * Accepts numbers from 1 to 31. If the range is exceeded, it will bubble up to the next months.
       * ```
       * dayjs().date(1)// => Dayjs
       * ```
@@ -100,7 +109,7 @@ object esmMod {
     /**
       * Set the day of the week.
       *
-      * Accepts numbers from 0 (Sunday) to 6 (Saturday). If the range is exceeded, it will bubble up to other weeks.
+      * Accepts numbers from 0 (Sunday) to 6 (Saturday). If the range is exceeded, it will bubble up to next weeks.
       * ```
       * dayjs().day(0)// => Dayjs
       * ```
@@ -131,7 +140,9 @@ object esmMod {
       * const date1 = dayjs('2019-01-25')
       * const date2 = dayjs('2018-06-05')
       * date1.diff(date2) // 20214000000 default milliseconds
+      * date1.diff() // milliseconds to current time
       * ```
+      *
       * To get the difference in another unit of measurement, pass that measurement as the second argument.
       * ```
       * const date1 = dayjs('2019-01-25')
@@ -141,6 +152,12 @@ object esmMod {
       *
       * Docs: https://day.js.org/docs/en/display/difference
       */
+    def diff(): Double = js.native
+    def diff(date: Unit, unit: Unit, float: Boolean): Double = js.native
+    def diff(date: Unit, unit: OpUnitType): Double = js.native
+    def diff(date: Unit, unit: OpUnitType, float: Boolean): Double = js.native
+    def diff(date: Unit, unit: QUnitType): Double = js.native
+    def diff(date: Unit, unit: QUnitType, float: Boolean): Double = js.native
     def diff(date: ConfigType): Double = js.native
     def diff(date: ConfigType, unit: Unit, float: Boolean): Double = js.native
     def diff(date: ConfigType, unit: OpUnitType): Double = js.native
@@ -160,6 +177,8 @@ object esmMod {
     def endOf(unit: OpUnitType): Dayjs = js.native
     def endOf(unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def endOf(unit: ISOUnitType): typings.dayjs.isoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    @JSName("endOf")
+    def endOf_Dayjs(unit: OpUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the formatted date according to the string of tokens passed in.
@@ -209,7 +228,7 @@ object esmMod {
     /**
       * Set the hour.
       *
-      * Accepts numbers from 0 to 23. If the range is exceeded, it will bubble up to the day.
+      * Accepts numbers from 0 to 23. If the range is exceeded, it will bubble up to the next day.
       * ```
       * dayjs().hour(12)// => Dayjs
       * ```
@@ -257,10 +276,25 @@ object esmMod {
     def isBefore(date: ConfigType, unit: ISOUnitType): Boolean = js.native
     
     def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: Null, d: String): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: String): Boolean = js.native
+    def isBetween(
+      a: ConfigType,
+      b: ConfigType,
+      c: Null,
+      d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
+    ): Boolean = js.native
+    def isBetween(
+      a: ConfigType,
+      b: ConfigType,
+      c: Unit,
+      d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
+    ): Boolean = js.native
     def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String): Boolean = js.native
+    def isBetween(
+      a: ConfigType,
+      b: ConfigType,
+      c: OpUnitType,
+      d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
+    ): Boolean = js.native
     
     def isLeapYear(): Boolean = js.native
     
@@ -334,7 +368,7 @@ object esmMod {
     /**
       * Set the milliseconds.
       *
-      * Accepts numbers from 0 to 999. If the range is exceeded, it will bubble up to the seconds.
+      * Accepts numbers from 0 to 999. If the range is exceeded, it will bubble up to the next seconds.
       * ```
       * dayjs().millisecond(1)// => Dayjs
       * ```
@@ -356,7 +390,7 @@ object esmMod {
     /**
       * Set the minutes.
       *
-      * Accepts numbers from 0 to 59. If the range is exceeded, it will bubble up to the hour.
+      * Accepts numbers from 0 to 59. If the range is exceeded, it will bubble up to the next hour.
       * ```
       * dayjs().minute(59)// => Dayjs
       * ```
@@ -382,7 +416,7 @@ object esmMod {
       *
       * Months are zero indexed, so January is month 0.
       *
-      * Accepts numbers from 0 to 11. If the range is exceeded, it will bubble up to the year.
+      * Accepts numbers from 0 to 11. If the range is exceeded, it will bubble up to the next year.
       * ```
       * dayjs().month(0)// => Dayjs
       * ```
@@ -392,6 +426,9 @@ object esmMod {
     
     def months(): Double = js.native
     def months(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    
+    def offsetName(): js.UndefOr[String] = js.native
+    def offsetName(`type`: short | long): js.UndefOr[String] = js.native
     
     def quarter(): Double = js.native
     def quarter(quarter: Double): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
@@ -407,7 +444,7 @@ object esmMod {
     /**
       * Set the seconds.
       *
-      * Accepts numbers from 0 to 59. If the range is exceeded, it will bubble up to the minutes.
+      * Accepts numbers from 0 to 59. If the range is exceeded, it will bubble up to the next minutes.
       * ```
       * dayjs().second(1)// Dayjs
       * ```
@@ -447,8 +484,11 @@ object esmMod {
     def startOf(unit: OpUnitType): Dayjs = js.native
     def startOf(unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def startOf(unit: ISOUnitType): typings.dayjs.isoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    @JSName("startOf")
+    def startOf_Dayjs(unit: OpUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def subtract(argument: js.Object): typings.dayjs.objectSupportMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def subtract(duration: Duration): typings.dayjs.durationMod.dayjsEsmAugmentingMod.Dayjs = js.native
     /**
       * Returns a cloned Day.js object with a specified amount of time subtracted.
       * ```
@@ -459,9 +499,8 @@ object esmMod {
       * Docs: https://day.js.org/docs/en/manipulate/subtract
       */
     def subtract(value: Double): Dayjs = js.native
-    def subtract(value: Double, unit: OpUnitType): Dayjs = js.native
+    def subtract(value: Double, unit: ManipulateType): Dayjs = js.native
     def subtract(value: Double, unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def subtract(value: Duration): typings.dayjs.durationMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def to(compared: ConfigType): String = js.native
     def to(compared: ConfigType, withoutSuffix: Boolean): String = js.native
@@ -474,7 +513,7 @@ object esmMod {
       * dayjs('2019-01-25').toDate()// => Date
       * ```
       */
-    def toDate(): Date = js.native
+    def toDate(): js.Date = js.native
     
     /**
       * To format as an ISO 8601 string.
@@ -526,6 +565,8 @@ object esmMod {
       * Docs: https://day.js.org/docs/en/manipulate/utc-offset
       */
     def utcOffset(): Double = js.native
+    def utcOffset(offset: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def utcOffset(offset: String, keepLocalTime: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def utcOffset(offset: Double): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def utcOffset(offset: Double, keepLocalTime: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
@@ -561,19 +602,18 @@ object esmMod {
     def years(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
   }
   
-  inline def duration(): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")().asInstanceOf[Duration]
-  inline def duration(input: Unit, unit: String): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(input.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration]
-  inline def duration(input: DurationInputType): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")(input.asInstanceOf[js.Any]).asInstanceOf[Duration]
-  inline def duration(input: DurationInputType, unit: String): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(input.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration]
+  @JSImport("dayjs/esm", "duration")
+  @js.native
+  val duration: CreateDurationType = js.native
   
   inline def extend[T](plugin: PluginFunc[T]): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugin.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   inline def extend[T](plugin: PluginFunc[T], option: T): Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugin.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
   
-  inline def isDayjs(d: js.Any): /* is dayjs.dayjs/esm.Dayjs */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDayjs")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs/esm.Dayjs */ Boolean]
+  inline def isDayjs(d: Any): /* is dayjs.dayjs/esm.Dayjs */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDayjs")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs/esm.Dayjs */ Boolean]
   
-  inline def isDuration(d: js.Any): /* is dayjs.dayjs/esm/plugin/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs/esm/plugin/duration.Duration */ Boolean]
+  inline def isDuration(d: Any): /* is dayjs.dayjs/esm/plugin/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs/esm/plugin/duration.Duration */ Boolean]
   
-  inline def isMoment(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMoment(input: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
   inline def locale(preset: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -590,10 +630,10 @@ object esmMod {
   
   inline def localeData(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn]
   
-  inline def max(dayjs: Dayjs*): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
+  inline def max(dayjs: Dayjs*): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Dayjs]
   inline def max(dayjs: js.Array[Dayjs]): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
-  inline def min(dayjs: Dayjs*): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
+  inline def min(dayjs: Dayjs*): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Dayjs]
   inline def min(dayjs: js.Array[Dayjs]): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
   inline def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames]
@@ -602,12 +642,16 @@ object esmMod {
   
   inline def unix(t: Double): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(t.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
-  inline def updateLocale(localeName: String, customConfig: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(localeName.asInstanceOf[js.Any], customConfig.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def updateLocale(localeName: String, customConfig: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(localeName.asInstanceOf[js.Any], customConfig.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   
   inline def utc(): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
   inline def utc(config: Unit, format: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: Unit, format: String, strict: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: Unit, format: Unit, strict: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
   inline def utc(config: ConfigType): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
   inline def utc(config: ConfigType, format: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: ConfigType, format: String, strict: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: ConfigType, format: Unit, strict: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
   
   inline def weekdays(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   inline def weekdays(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
@@ -618,7 +662,92 @@ object esmMod {
   inline def weekdaysShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   inline def weekdaysShort(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   
-  type ConfigType = String | Double | Date | Dayjs
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - scala.Double
+    - js.Date
+    - typings.dayjs.esmMod.Dayjs
+    - scala.Null
+    - scala.Unit
+    - js.Tuple7[
+  js.UndefOr[scala.Double], 
+  js.UndefOr[scala.Double], 
+  js.UndefOr[scala.Double], 
+  js.UndefOr[scala.Double], 
+  js.UndefOr[scala.Double], 
+  js.UndefOr[scala.Double], 
+  js.UndefOr[scala.Double]]
+    - typings.dayjs.anon.D
+  */
+  type ConfigType = js.UndefOr[
+    _ConfigType | (js.Tuple7[
+      js.UndefOr[Double], 
+      js.UndefOr[Double], 
+      js.UndefOr[Double], 
+      js.UndefOr[Double], 
+      js.UndefOr[Double], 
+      js.UndefOr[Double], 
+      js.UndefOr[Double]
+    ]) | String | Double | js.Date | Null
+  ]
+  
+  trait ConfigTypeMap extends StObject {
+    
+    var default: js.UndefOr[String | Double | js.Date | Dayjs | Null] = js.undefined
+    
+    var arraySupport: js.Tuple7[
+        js.UndefOr[Double], 
+        js.UndefOr[Double], 
+        js.UndefOr[Double], 
+        js.UndefOr[Double], 
+        js.UndefOr[Double], 
+        js.UndefOr[Double], 
+        js.UndefOr[Double]
+      ]
+    
+    var objectSupport: D
+  }
+  object ConfigTypeMap {
+    
+    inline def apply(
+      arraySupport: js.Tuple7[
+          js.UndefOr[Double], 
+          js.UndefOr[Double], 
+          js.UndefOr[Double], 
+          js.UndefOr[Double], 
+          js.UndefOr[Double], 
+          js.UndefOr[Double], 
+          js.UndefOr[Double]
+        ],
+      objectSupport: D
+    ): ConfigTypeMap = {
+      val __obj = js.Dynamic.literal(arraySupport = arraySupport.asInstanceOf[js.Any], objectSupport = objectSupport.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConfigTypeMap]
+    }
+    
+    extension [Self <: ConfigTypeMap](x: Self) {
+      
+      inline def setArraySupport(
+        value: js.Tuple7[
+              js.UndefOr[Double], 
+              js.UndefOr[Double], 
+              js.UndefOr[Double], 
+              js.UndefOr[Double], 
+              js.UndefOr[Double], 
+              js.UndefOr[Double], 
+              js.UndefOr[Double]
+            ]
+      ): Self = StObject.set(x, "arraySupport", value.asInstanceOf[js.Any])
+      
+      inline def setDefault(value: String | Double | js.Date | Dayjs): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultNull: Self = StObject.set(x, "default", null)
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      
+      inline def setObjectSupport(value: D): Self = StObject.set(x, "objectSupport", value.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait DayjsTimezone extends StObject {
@@ -631,6 +760,37 @@ object esmMod {
     
     def setDefault(): Unit = js.native
     def setDefault(timezone: String): Unit = js.native
+  }
+  
+  trait FormatObject extends StObject {
+    
+    var format: js.UndefOr[String] = js.undefined
+    
+    var locale: js.UndefOr[String] = js.undefined
+    
+    var utc: js.UndefOr[Boolean] = js.undefined
+  }
+  object FormatObject {
+    
+    inline def apply(): FormatObject = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FormatObject]
+    }
+    
+    extension [Self <: FormatObject](x: Self) {
+      
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+    }
   }
   
   @js.native
@@ -652,6 +812,8 @@ object esmMod {
     def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     
     def monthsShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+    
+    def ordinal(n: Double): String = js.native
     
     def weekdays(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
     
@@ -682,6 +844,8 @@ object esmMod {
     def monthsShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     def monthsShort(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     
+    def ordinal(n: Double): String = js.native
+    
     def weekdays(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
     def weekdays(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
     
@@ -692,10 +856,93 @@ object esmMod {
     def weekdaysShort(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
   }
   
+  /* Inlined std.Exclude<dayjs.dayjs/esm.OpUnitType, 'date' | 'dates'> */
+  /* Rewritten from type alias, can be one of: 
+    - typings.dayjs.dayjsStrings.hours
+    - typings.dayjs.dayjsStrings.d_
+    - typings.dayjs.dayjsStrings.w
+    - typings.dayjs.dayjsStrings.y
+    - typings.dayjs.dayjsStrings.M
+    - typings.dayjs.dayjsStrings.years
+    - typings.dayjs.dayjsStrings.seconds
+    - typings.dayjs.dayjsStrings.m_
+    - typings.dayjs.dayjsStrings.second
+    - typings.dayjs.dayjsStrings.day
+    - typings.dayjs.dayjsStrings.s
+    - typings.dayjs.dayjsStrings.hour
+    - typings.dayjs.dayjsStrings.days
+    - typings.dayjs.dayjsStrings.week
+    - typings.dayjs.dayjsStrings.minutes
+    - typings.dayjs.dayjsStrings.minute
+    - typings.dayjs.dayjsStrings.year
+    - typings.dayjs.dayjsStrings.months
+    - typings.dayjs.dayjsStrings.month
+    - typings.dayjs.dayjsStrings.weeks
+    - typings.dayjs.dayjsStrings.D
+    - typings.dayjs.dayjsStrings.ms
+    - typings.dayjs.dayjsStrings.milliseconds
+    - typings.dayjs.dayjsStrings.h
+    - typings.dayjs.dayjsStrings.millisecond
+  */
+  trait ManipulateType extends StObject
+  object ManipulateType {
+    
+    inline def D: typings.dayjs.dayjsStrings.D = "D".asInstanceOf[typings.dayjs.dayjsStrings.D]
+    
+    inline def M: typings.dayjs.dayjsStrings.M = "M".asInstanceOf[typings.dayjs.dayjsStrings.M]
+    
+    inline def d: d_ = "d".asInstanceOf[d_]
+    
+    inline def day: typings.dayjs.dayjsStrings.day = "day".asInstanceOf[typings.dayjs.dayjsStrings.day]
+    
+    inline def days: typings.dayjs.dayjsStrings.days = "days".asInstanceOf[typings.dayjs.dayjsStrings.days]
+    
+    inline def h: typings.dayjs.dayjsStrings.h = "h".asInstanceOf[typings.dayjs.dayjsStrings.h]
+    
+    inline def hour: typings.dayjs.dayjsStrings.hour = "hour".asInstanceOf[typings.dayjs.dayjsStrings.hour]
+    
+    inline def hours: typings.dayjs.dayjsStrings.hours = "hours".asInstanceOf[typings.dayjs.dayjsStrings.hours]
+    
+    inline def m: m_ = "m".asInstanceOf[m_]
+    
+    inline def millisecond: typings.dayjs.dayjsStrings.millisecond = "millisecond".asInstanceOf[typings.dayjs.dayjsStrings.millisecond]
+    
+    inline def milliseconds: typings.dayjs.dayjsStrings.milliseconds = "milliseconds".asInstanceOf[typings.dayjs.dayjsStrings.milliseconds]
+    
+    inline def minute: typings.dayjs.dayjsStrings.minute = "minute".asInstanceOf[typings.dayjs.dayjsStrings.minute]
+    
+    inline def minutes: typings.dayjs.dayjsStrings.minutes = "minutes".asInstanceOf[typings.dayjs.dayjsStrings.minutes]
+    
+    inline def month: typings.dayjs.dayjsStrings.month = "month".asInstanceOf[typings.dayjs.dayjsStrings.month]
+    
+    inline def months: typings.dayjs.dayjsStrings.months = "months".asInstanceOf[typings.dayjs.dayjsStrings.months]
+    
+    inline def ms: typings.dayjs.dayjsStrings.ms = "ms".asInstanceOf[typings.dayjs.dayjsStrings.ms]
+    
+    inline def s: typings.dayjs.dayjsStrings.s = "s".asInstanceOf[typings.dayjs.dayjsStrings.s]
+    
+    inline def second: typings.dayjs.dayjsStrings.second = "second".asInstanceOf[typings.dayjs.dayjsStrings.second]
+    
+    inline def seconds: typings.dayjs.dayjsStrings.seconds = "seconds".asInstanceOf[typings.dayjs.dayjsStrings.seconds]
+    
+    inline def w: typings.dayjs.dayjsStrings.w = "w".asInstanceOf[typings.dayjs.dayjsStrings.w]
+    
+    inline def week: typings.dayjs.dayjsStrings.week = "week".asInstanceOf[typings.dayjs.dayjsStrings.week]
+    
+    inline def weeks: typings.dayjs.dayjsStrings.weeks = "weeks".asInstanceOf[typings.dayjs.dayjsStrings.weeks]
+    
+    inline def y: typings.dayjs.dayjsStrings.y = "y".asInstanceOf[typings.dayjs.dayjsStrings.y]
+    
+    inline def year: typings.dayjs.dayjsStrings.year = "year".asInstanceOf[typings.dayjs.dayjsStrings.year]
+    
+    inline def years: typings.dayjs.dayjsStrings.years = "years".asInstanceOf[typings.dayjs.dayjsStrings.years]
+  }
+  
   type MonthNames = js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.dayjs.dayjsStrings.week
+    - typings.dayjs.dayjsStrings.weeks
     - typings.dayjs.dayjsStrings.w
     - typings.dayjs.dayjsStrings.millisecond
     - typings.dayjs.dayjsStrings.second
@@ -705,7 +952,16 @@ object esmMod {
     - typings.dayjs.dayjsStrings.month
     - typings.dayjs.dayjsStrings.year
     - typings.dayjs.dayjsStrings.date
-    - typings.dayjs.dayjsStrings.d
+    - typings.dayjs.dayjsStrings.milliseconds
+    - typings.dayjs.dayjsStrings.seconds
+    - typings.dayjs.dayjsStrings.minutes
+    - typings.dayjs.dayjsStrings.hours
+    - typings.dayjs.dayjsStrings.days
+    - typings.dayjs.dayjsStrings.months
+    - typings.dayjs.dayjsStrings.years
+    - typings.dayjs.dayjsStrings.dates
+    - typings.dayjs.dayjsStrings.d_
+    - typings.dayjs.dayjsStrings.D
     - typings.dayjs.dayjsStrings.M
     - typings.dayjs.dayjsStrings.y
     - typings.dayjs.dayjsStrings.h
@@ -716,25 +972,39 @@ object esmMod {
   trait OpUnitType extends StObject
   object OpUnitType {
     
+    inline def D: typings.dayjs.dayjsStrings.D = "D".asInstanceOf[typings.dayjs.dayjsStrings.D]
+    
     inline def M: typings.dayjs.dayjsStrings.M = "M".asInstanceOf[typings.dayjs.dayjsStrings.M]
     
-    inline def d: typings.dayjs.dayjsStrings.d = "d".asInstanceOf[typings.dayjs.dayjsStrings.d]
+    inline def d: d_ = "d".asInstanceOf[d_]
     
     inline def date: typings.dayjs.dayjsStrings.date = "date".asInstanceOf[typings.dayjs.dayjsStrings.date]
     
+    inline def dates: typings.dayjs.dayjsStrings.dates = "dates".asInstanceOf[typings.dayjs.dayjsStrings.dates]
+    
     inline def day: typings.dayjs.dayjsStrings.day = "day".asInstanceOf[typings.dayjs.dayjsStrings.day]
+    
+    inline def days: typings.dayjs.dayjsStrings.days = "days".asInstanceOf[typings.dayjs.dayjsStrings.days]
     
     inline def h: typings.dayjs.dayjsStrings.h = "h".asInstanceOf[typings.dayjs.dayjsStrings.h]
     
     inline def hour: typings.dayjs.dayjsStrings.hour = "hour".asInstanceOf[typings.dayjs.dayjsStrings.hour]
     
+    inline def hours: typings.dayjs.dayjsStrings.hours = "hours".asInstanceOf[typings.dayjs.dayjsStrings.hours]
+    
     inline def m: m_ = "m".asInstanceOf[m_]
     
     inline def millisecond: typings.dayjs.dayjsStrings.millisecond = "millisecond".asInstanceOf[typings.dayjs.dayjsStrings.millisecond]
     
+    inline def milliseconds: typings.dayjs.dayjsStrings.milliseconds = "milliseconds".asInstanceOf[typings.dayjs.dayjsStrings.milliseconds]
+    
     inline def minute: typings.dayjs.dayjsStrings.minute = "minute".asInstanceOf[typings.dayjs.dayjsStrings.minute]
     
+    inline def minutes: typings.dayjs.dayjsStrings.minutes = "minutes".asInstanceOf[typings.dayjs.dayjsStrings.minutes]
+    
     inline def month: typings.dayjs.dayjsStrings.month = "month".asInstanceOf[typings.dayjs.dayjsStrings.month]
+    
+    inline def months: typings.dayjs.dayjsStrings.months = "months".asInstanceOf[typings.dayjs.dayjsStrings.months]
     
     inline def ms: typings.dayjs.dayjsStrings.ms = "ms".asInstanceOf[typings.dayjs.dayjsStrings.ms]
     
@@ -742,26 +1012,33 @@ object esmMod {
     
     inline def second: typings.dayjs.dayjsStrings.second = "second".asInstanceOf[typings.dayjs.dayjsStrings.second]
     
+    inline def seconds: typings.dayjs.dayjsStrings.seconds = "seconds".asInstanceOf[typings.dayjs.dayjsStrings.seconds]
+    
     inline def w: typings.dayjs.dayjsStrings.w = "w".asInstanceOf[typings.dayjs.dayjsStrings.w]
     
     inline def week: typings.dayjs.dayjsStrings.week = "week".asInstanceOf[typings.dayjs.dayjsStrings.week]
     
+    inline def weeks: typings.dayjs.dayjsStrings.weeks = "weeks".asInstanceOf[typings.dayjs.dayjsStrings.weeks]
+    
     inline def y: typings.dayjs.dayjsStrings.y = "y".asInstanceOf[typings.dayjs.dayjsStrings.y]
     
     inline def year: typings.dayjs.dayjsStrings.year = "year".asInstanceOf[typings.dayjs.dayjsStrings.year]
+    
+    inline def years: typings.dayjs.dayjsStrings.years = "years".asInstanceOf[typings.dayjs.dayjsStrings.years]
   }
   
-  type OptionType = Format | String | js.Array[String]
+  type OptionType = FormatObject | String | js.Array[String]
   
   type PluginFunc[T] = js.Function3[
     /* option */ T, 
     /* c */ Instantiable1[/* config */ js.UndefOr[ConfigType], Dayjs], 
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dayjs */ /* d */ js.Any, 
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dayjs */ /* d */ Any, 
     Unit
   ]
   
   /* Rewritten from type alias, can be one of: 
     - typings.dayjs.dayjsStrings.quarter
+    - typings.dayjs.dayjsStrings.quarters
     - typings.dayjs.dayjsStrings.Q
     - typings.dayjs.dayjsStrings.millisecond
     - typings.dayjs.dayjsStrings.second
@@ -771,7 +1048,16 @@ object esmMod {
     - typings.dayjs.dayjsStrings.month
     - typings.dayjs.dayjsStrings.year
     - typings.dayjs.dayjsStrings.date
-    - typings.dayjs.dayjsStrings.d
+    - typings.dayjs.dayjsStrings.milliseconds
+    - typings.dayjs.dayjsStrings.seconds
+    - typings.dayjs.dayjsStrings.minutes
+    - typings.dayjs.dayjsStrings.hours
+    - typings.dayjs.dayjsStrings.days
+    - typings.dayjs.dayjsStrings.months
+    - typings.dayjs.dayjsStrings.years
+    - typings.dayjs.dayjsStrings.dates
+    - typings.dayjs.dayjsStrings.d_
+    - typings.dayjs.dayjsStrings.D
     - typings.dayjs.dayjsStrings.M
     - typings.dayjs.dayjsStrings.y
     - typings.dayjs.dayjsStrings.h
@@ -782,39 +1068,59 @@ object esmMod {
   trait QUnitType extends StObject
   object QUnitType {
     
+    inline def D: typings.dayjs.dayjsStrings.D = "D".asInstanceOf[typings.dayjs.dayjsStrings.D]
+    
     inline def M: typings.dayjs.dayjsStrings.M = "M".asInstanceOf[typings.dayjs.dayjsStrings.M]
     
     inline def Q: typings.dayjs.dayjsStrings.Q = "Q".asInstanceOf[typings.dayjs.dayjsStrings.Q]
     
-    inline def d: typings.dayjs.dayjsStrings.d = "d".asInstanceOf[typings.dayjs.dayjsStrings.d]
+    inline def d: d_ = "d".asInstanceOf[d_]
     
     inline def date: typings.dayjs.dayjsStrings.date = "date".asInstanceOf[typings.dayjs.dayjsStrings.date]
     
+    inline def dates: typings.dayjs.dayjsStrings.dates = "dates".asInstanceOf[typings.dayjs.dayjsStrings.dates]
+    
     inline def day: typings.dayjs.dayjsStrings.day = "day".asInstanceOf[typings.dayjs.dayjsStrings.day]
+    
+    inline def days: typings.dayjs.dayjsStrings.days = "days".asInstanceOf[typings.dayjs.dayjsStrings.days]
     
     inline def h: typings.dayjs.dayjsStrings.h = "h".asInstanceOf[typings.dayjs.dayjsStrings.h]
     
     inline def hour: typings.dayjs.dayjsStrings.hour = "hour".asInstanceOf[typings.dayjs.dayjsStrings.hour]
     
+    inline def hours: typings.dayjs.dayjsStrings.hours = "hours".asInstanceOf[typings.dayjs.dayjsStrings.hours]
+    
     inline def m: m_ = "m".asInstanceOf[m_]
     
     inline def millisecond: typings.dayjs.dayjsStrings.millisecond = "millisecond".asInstanceOf[typings.dayjs.dayjsStrings.millisecond]
     
+    inline def milliseconds: typings.dayjs.dayjsStrings.milliseconds = "milliseconds".asInstanceOf[typings.dayjs.dayjsStrings.milliseconds]
+    
     inline def minute: typings.dayjs.dayjsStrings.minute = "minute".asInstanceOf[typings.dayjs.dayjsStrings.minute]
     
+    inline def minutes: typings.dayjs.dayjsStrings.minutes = "minutes".asInstanceOf[typings.dayjs.dayjsStrings.minutes]
+    
     inline def month: typings.dayjs.dayjsStrings.month = "month".asInstanceOf[typings.dayjs.dayjsStrings.month]
+    
+    inline def months: typings.dayjs.dayjsStrings.months = "months".asInstanceOf[typings.dayjs.dayjsStrings.months]
     
     inline def ms: typings.dayjs.dayjsStrings.ms = "ms".asInstanceOf[typings.dayjs.dayjsStrings.ms]
     
     inline def quarter: typings.dayjs.dayjsStrings.quarter = "quarter".asInstanceOf[typings.dayjs.dayjsStrings.quarter]
     
+    inline def quarters: typings.dayjs.dayjsStrings.quarters = "quarters".asInstanceOf[typings.dayjs.dayjsStrings.quarters]
+    
     inline def s: typings.dayjs.dayjsStrings.s = "s".asInstanceOf[typings.dayjs.dayjsStrings.s]
     
     inline def second: typings.dayjs.dayjsStrings.second = "second".asInstanceOf[typings.dayjs.dayjsStrings.second]
     
+    inline def seconds: typings.dayjs.dayjsStrings.seconds = "seconds".asInstanceOf[typings.dayjs.dayjsStrings.seconds]
+    
     inline def y: typings.dayjs.dayjsStrings.y = "y".asInstanceOf[typings.dayjs.dayjsStrings.y]
     
     inline def year: typings.dayjs.dayjsStrings.year = "year".asInstanceOf[typings.dayjs.dayjsStrings.year]
+    
+    inline def years: typings.dayjs.dayjsStrings.years = "years".asInstanceOf[typings.dayjs.dayjsStrings.years]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -826,7 +1132,16 @@ object esmMod {
     - typings.dayjs.dayjsStrings.month
     - typings.dayjs.dayjsStrings.year
     - typings.dayjs.dayjsStrings.date
-    - typings.dayjs.dayjsStrings.d
+    - typings.dayjs.dayjsStrings.milliseconds
+    - typings.dayjs.dayjsStrings.seconds
+    - typings.dayjs.dayjsStrings.minutes
+    - typings.dayjs.dayjsStrings.hours
+    - typings.dayjs.dayjsStrings.days
+    - typings.dayjs.dayjsStrings.months
+    - typings.dayjs.dayjsStrings.years
+    - typings.dayjs.dayjsStrings.dates
+    - typings.dayjs.dayjsStrings.d_
+    - typings.dayjs.dayjsStrings.D
     - typings.dayjs.dayjsStrings.M
     - typings.dayjs.dayjsStrings.y
     - typings.dayjs.dayjsStrings.h
@@ -837,25 +1152,39 @@ object esmMod {
   trait UnitType extends StObject
   object UnitType {
     
+    inline def D: typings.dayjs.dayjsStrings.D = "D".asInstanceOf[typings.dayjs.dayjsStrings.D]
+    
     inline def M: typings.dayjs.dayjsStrings.M = "M".asInstanceOf[typings.dayjs.dayjsStrings.M]
     
-    inline def d: typings.dayjs.dayjsStrings.d = "d".asInstanceOf[typings.dayjs.dayjsStrings.d]
+    inline def d: d_ = "d".asInstanceOf[d_]
     
     inline def date: typings.dayjs.dayjsStrings.date = "date".asInstanceOf[typings.dayjs.dayjsStrings.date]
     
+    inline def dates: typings.dayjs.dayjsStrings.dates = "dates".asInstanceOf[typings.dayjs.dayjsStrings.dates]
+    
     inline def day: typings.dayjs.dayjsStrings.day = "day".asInstanceOf[typings.dayjs.dayjsStrings.day]
+    
+    inline def days: typings.dayjs.dayjsStrings.days = "days".asInstanceOf[typings.dayjs.dayjsStrings.days]
     
     inline def h: typings.dayjs.dayjsStrings.h = "h".asInstanceOf[typings.dayjs.dayjsStrings.h]
     
     inline def hour: typings.dayjs.dayjsStrings.hour = "hour".asInstanceOf[typings.dayjs.dayjsStrings.hour]
     
+    inline def hours: typings.dayjs.dayjsStrings.hours = "hours".asInstanceOf[typings.dayjs.dayjsStrings.hours]
+    
     inline def m: m_ = "m".asInstanceOf[m_]
     
     inline def millisecond: typings.dayjs.dayjsStrings.millisecond = "millisecond".asInstanceOf[typings.dayjs.dayjsStrings.millisecond]
     
+    inline def milliseconds: typings.dayjs.dayjsStrings.milliseconds = "milliseconds".asInstanceOf[typings.dayjs.dayjsStrings.milliseconds]
+    
     inline def minute: typings.dayjs.dayjsStrings.minute = "minute".asInstanceOf[typings.dayjs.dayjsStrings.minute]
     
+    inline def minutes: typings.dayjs.dayjsStrings.minutes = "minutes".asInstanceOf[typings.dayjs.dayjsStrings.minutes]
+    
     inline def month: typings.dayjs.dayjsStrings.month = "month".asInstanceOf[typings.dayjs.dayjsStrings.month]
+    
+    inline def months: typings.dayjs.dayjsStrings.months = "months".asInstanceOf[typings.dayjs.dayjsStrings.months]
     
     inline def ms: typings.dayjs.dayjsStrings.ms = "ms".asInstanceOf[typings.dayjs.dayjsStrings.ms]
     
@@ -863,13 +1192,78 @@ object esmMod {
     
     inline def second: typings.dayjs.dayjsStrings.second = "second".asInstanceOf[typings.dayjs.dayjsStrings.second]
     
+    inline def seconds: typings.dayjs.dayjsStrings.seconds = "seconds".asInstanceOf[typings.dayjs.dayjsStrings.seconds]
+    
     inline def y: typings.dayjs.dayjsStrings.y = "y".asInstanceOf[typings.dayjs.dayjsStrings.y]
+    
+    inline def year: typings.dayjs.dayjsStrings.year = "year".asInstanceOf[typings.dayjs.dayjsStrings.year]
+    
+    inline def years: typings.dayjs.dayjsStrings.years = "years".asInstanceOf[typings.dayjs.dayjsStrings.years]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.dayjs.dayjsStrings.millisecond
+    - typings.dayjs.dayjsStrings.second
+    - typings.dayjs.dayjsStrings.minute
+    - typings.dayjs.dayjsStrings.hour
+    - typings.dayjs.dayjsStrings.day
+    - typings.dayjs.dayjsStrings.month
+    - typings.dayjs.dayjsStrings.year
+    - typings.dayjs.dayjsStrings.date
+  */
+  trait UnitTypeLong extends StObject
+  object UnitTypeLong {
+    
+    inline def date: typings.dayjs.dayjsStrings.date = "date".asInstanceOf[typings.dayjs.dayjsStrings.date]
+    
+    inline def day: typings.dayjs.dayjsStrings.day = "day".asInstanceOf[typings.dayjs.dayjsStrings.day]
+    
+    inline def hour: typings.dayjs.dayjsStrings.hour = "hour".asInstanceOf[typings.dayjs.dayjsStrings.hour]
+    
+    inline def millisecond: typings.dayjs.dayjsStrings.millisecond = "millisecond".asInstanceOf[typings.dayjs.dayjsStrings.millisecond]
+    
+    inline def minute: typings.dayjs.dayjsStrings.minute = "minute".asInstanceOf[typings.dayjs.dayjsStrings.minute]
+    
+    inline def month: typings.dayjs.dayjsStrings.month = "month".asInstanceOf[typings.dayjs.dayjsStrings.month]
+    
+    inline def second: typings.dayjs.dayjsStrings.second = "second".asInstanceOf[typings.dayjs.dayjsStrings.second]
     
     inline def year: typings.dayjs.dayjsStrings.year = "year".asInstanceOf[typings.dayjs.dayjsStrings.year]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.dayjs.dayjsStrings.d
+    - typings.dayjs.dayjsStrings.milliseconds
+    - typings.dayjs.dayjsStrings.seconds
+    - typings.dayjs.dayjsStrings.minutes
+    - typings.dayjs.dayjsStrings.hours
+    - typings.dayjs.dayjsStrings.days
+    - typings.dayjs.dayjsStrings.months
+    - typings.dayjs.dayjsStrings.years
+    - typings.dayjs.dayjsStrings.dates
+  */
+  trait UnitTypeLongPlural extends StObject
+  object UnitTypeLongPlural {
+    
+    inline def dates: typings.dayjs.dayjsStrings.dates = "dates".asInstanceOf[typings.dayjs.dayjsStrings.dates]
+    
+    inline def days: typings.dayjs.dayjsStrings.days = "days".asInstanceOf[typings.dayjs.dayjsStrings.days]
+    
+    inline def hours: typings.dayjs.dayjsStrings.hours = "hours".asInstanceOf[typings.dayjs.dayjsStrings.hours]
+    
+    inline def milliseconds: typings.dayjs.dayjsStrings.milliseconds = "milliseconds".asInstanceOf[typings.dayjs.dayjsStrings.milliseconds]
+    
+    inline def minutes: typings.dayjs.dayjsStrings.minutes = "minutes".asInstanceOf[typings.dayjs.dayjsStrings.minutes]
+    
+    inline def months: typings.dayjs.dayjsStrings.months = "months".asInstanceOf[typings.dayjs.dayjsStrings.months]
+    
+    inline def seconds: typings.dayjs.dayjsStrings.seconds = "seconds".asInstanceOf[typings.dayjs.dayjsStrings.seconds]
+    
+    inline def years: typings.dayjs.dayjsStrings.years = "years".asInstanceOf[typings.dayjs.dayjsStrings.years]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.dayjs.dayjsStrings.d_
+    - typings.dayjs.dayjsStrings.D
     - typings.dayjs.dayjsStrings.M
     - typings.dayjs.dayjsStrings.y
     - typings.dayjs.dayjsStrings.h
@@ -880,9 +1274,11 @@ object esmMod {
   trait UnitTypeShort extends StObject
   object UnitTypeShort {
     
+    inline def D: typings.dayjs.dayjsStrings.D = "D".asInstanceOf[typings.dayjs.dayjsStrings.D]
+    
     inline def M: typings.dayjs.dayjsStrings.M = "M".asInstanceOf[typings.dayjs.dayjsStrings.M]
     
-    inline def d: typings.dayjs.dayjsStrings.d = "d".asInstanceOf[typings.dayjs.dayjsStrings.d]
+    inline def d: d_ = "d".asInstanceOf[d_]
     
     inline def h: typings.dayjs.dayjsStrings.h = "h".asInstanceOf[typings.dayjs.dayjsStrings.h]
     
@@ -896,4 +1292,6 @@ object esmMod {
   }
   
   type WeekdayNames = js.Tuple7[String, String, String, String, String, String, String]
+  
+  trait _ConfigType extends StObject
 }

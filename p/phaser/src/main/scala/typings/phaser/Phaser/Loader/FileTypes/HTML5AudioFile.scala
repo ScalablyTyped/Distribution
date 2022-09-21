@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Loader.MultiFile
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
-import typings.phaser.integer
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,8 +44,8 @@ object HTML5AudioFile {
     bytesLoaded: Double,
     bytesTotal: Double,
     cache: BaseCache | TextureManager,
-    config: js.Any,
-    data: js.Any,
+    config: Any,
+    data: Any,
     destroy: () => Unit,
     hasCacheConflict: () => Boolean,
     key: String,
@@ -65,7 +64,7 @@ object HTML5AudioFile {
     resetXHR: () => Unit,
     setLink: File => Unit,
     src: String,
-    state: integer,
+    state: Double,
     `type`: String,
     url: js.Object | String,
     xhrLoader: XMLHttpRequest,

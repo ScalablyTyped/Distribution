@@ -25,7 +25,7 @@ object XDataTransferEventListener {
     cancelled: DataTransferEvent => Unit,
     disposing: EventObject => Unit,
     finished: DataTransferEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataTransferEventListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancelled = js.Any.fromFunction1(cancelled), disposing = js.Any.fromFunction1(disposing), finished = js.Any.fromFunction1(finished), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

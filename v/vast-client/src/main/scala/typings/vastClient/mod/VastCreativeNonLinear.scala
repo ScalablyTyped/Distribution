@@ -22,6 +22,6 @@ object VastCreativeNonLinear {
     
     inline def setVariations(value: js.Array[VastNonLinearAd]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
     
-    inline def setVariationsVarargs(value: VastNonLinearAd*): Self = StObject.set(x, "variations", js.Array(value :_*))
+    inline def setVariationsVarargs(value: VastNonLinearAd*): Self = StObject.set(x, "variations", js.Array(value*))
   }
 }

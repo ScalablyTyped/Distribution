@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "WebGLUniforms")
 @js.native
-class WebGLUniforms protected ()
-  extends typings.three.webGLUniformsMod.WebGLUniforms {
+open class WebGLUniforms protected ()
+  extends typings.three.threeMod.WebGLUniforms {
   def this(gl: WebGLRenderingContext, program: typings.three.webGLProgramMod.WebGLProgram) = this()
 }
 /* static members */
@@ -18,12 +18,12 @@ object WebGLUniforms {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def seqWithValue(seq: js.Any, values: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqWithValue")(seq.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def seqWithValue(seq: Any, values: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqWithValue")(seq.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def upload(
     gl: WebGLRenderingContext,
-    seq: js.Any,
-    values: js.Array[js.Any],
+    seq: Any,
+    values: js.Array[Any],
     textures: typings.three.webGLTexturesMod.WebGLTextures
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(gl.asInstanceOf[js.Any], seq.asInstanceOf[js.Any], values.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

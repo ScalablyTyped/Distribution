@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fetch-blob", "RNFetchBlobStat")
 @js.native
-class RNFetchBlobStat () extends StObject {
+open class RNFetchBlobStat () extends StObject {
   
   var filename: String = js.native
   

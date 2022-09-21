@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("slonik", "InvalidConfigurationError")
 @js.native
-class InvalidConfigurationError () extends SlonikError
+open class InvalidConfigurationError () extends SlonikError

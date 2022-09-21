@@ -10,10 +10,10 @@ key=value logger and parser
 | ------------------ | :-------------: |
 | Full name          | logfmt |
 | Keywords           | log, parser, logfmt |
-| # releases         | 3 |
-| # dependents       | 47 |
-| # downloads        | 2787451 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 151987.33333333334 |
+| # stars            | 139.0 |
 
 ## Links
 - [Homepage](https://github.com/csquared/node-logfmt#readme)

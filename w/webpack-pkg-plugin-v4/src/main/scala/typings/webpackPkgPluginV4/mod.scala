@@ -1,17 +1,15 @@
 package typings.webpackPkgPluginV4
 
-import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-pkg-plugin-v4", "WebpackPkgPlugin")
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("webpack-pkg-plugin-v4", "WebpackPkgPlugin")
   @js.native
-  class WebpackPkgPlugin protected ()
-    extends StObject
-       with Plugin {
+  open class WebpackPkgPlugin protected () extends StObject {
     def this(config: Configuration) = this()
   }
   
@@ -36,7 +34,7 @@ object mod {
       
       inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
     }
   }
 }

@@ -1,6 +1,7 @@
 
 # Scala.js typings for json5
 
+Typings are for version 2.2.1
 
 ## Library description:
 JSON for humans.
@@ -10,9 +11,9 @@ JSON for humans.
 | Full name          | json5 |
 | Keywords           | json, json5, es5, es2015, ecmascript |
 | # releases         | 3 |
-| # dependents       | 1459 |
-| # downloads        | 1504523499 |
-| # stars            | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5813381833333334E8 |
+| # stars            | 5159.0 |
 
 ## Links
 - [Homepage](http://json5.org/)
@@ -23,7 +24,7 @@ JSON for humans.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

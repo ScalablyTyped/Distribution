@@ -6,23 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatteryData extends StObject {
   
-  var acconnected: Boolean
+  var acConnected: Boolean
+  
+  var additionalBatteries: js.UndefOr[js.Array[BatteryData]] = js.undefined
   
   var capacityUnit: String
   
-  var currentcapacity: Double
+  var currentCapacity: Double
   
-  var cyclecount: Double
+  var cycleCount: Double
   
-  var designedcapacity: Double
+  var designedCapacity: Double
   
-  var hasbattery: Boolean
+  var hasBattery: Boolean
   
-  var ischarging: Boolean
+  var isCharging: Boolean
   
   var manufacturer: String
   
-  var maxcapacity: Double
+  var maxCapacity: Double
   
   var model: String
   
@@ -30,7 +32,7 @@ trait BatteryData extends StObject {
   
   var serial: String
   
-  var timeremaining: Double
+  var timeRemaining: Double
   
   var `type`: String
   
@@ -39,46 +41,52 @@ trait BatteryData extends StObject {
 object BatteryData {
   
   inline def apply(
-    acconnected: Boolean,
+    acConnected: Boolean,
     capacityUnit: String,
-    currentcapacity: Double,
-    cyclecount: Double,
-    designedcapacity: Double,
-    hasbattery: Boolean,
-    ischarging: Boolean,
+    currentCapacity: Double,
+    cycleCount: Double,
+    designedCapacity: Double,
+    hasBattery: Boolean,
+    isCharging: Boolean,
     manufacturer: String,
-    maxcapacity: Double,
+    maxCapacity: Double,
     model: String,
     percent: Double,
     serial: String,
-    timeremaining: Double,
+    timeRemaining: Double,
     `type`: String,
     voltage: Double
   ): BatteryData = {
-    val __obj = js.Dynamic.literal(acconnected = acconnected.asInstanceOf[js.Any], capacityUnit = capacityUnit.asInstanceOf[js.Any], currentcapacity = currentcapacity.asInstanceOf[js.Any], cyclecount = cyclecount.asInstanceOf[js.Any], designedcapacity = designedcapacity.asInstanceOf[js.Any], hasbattery = hasbattery.asInstanceOf[js.Any], ischarging = ischarging.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], maxcapacity = maxcapacity.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], timeremaining = timeremaining.asInstanceOf[js.Any], voltage = voltage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(acConnected = acConnected.asInstanceOf[js.Any], capacityUnit = capacityUnit.asInstanceOf[js.Any], currentCapacity = currentCapacity.asInstanceOf[js.Any], cycleCount = cycleCount.asInstanceOf[js.Any], designedCapacity = designedCapacity.asInstanceOf[js.Any], hasBattery = hasBattery.asInstanceOf[js.Any], isCharging = isCharging.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], maxCapacity = maxCapacity.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], timeRemaining = timeRemaining.asInstanceOf[js.Any], voltage = voltage.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatteryData]
   }
   
   extension [Self <: BatteryData](x: Self) {
     
-    inline def setAcconnected(value: Boolean): Self = StObject.set(x, "acconnected", value.asInstanceOf[js.Any])
+    inline def setAcConnected(value: Boolean): Self = StObject.set(x, "acConnected", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalBatteries(value: js.Array[BatteryData]): Self = StObject.set(x, "additionalBatteries", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalBatteriesUndefined: Self = StObject.set(x, "additionalBatteries", js.undefined)
+    
+    inline def setAdditionalBatteriesVarargs(value: BatteryData*): Self = StObject.set(x, "additionalBatteries", js.Array(value*))
     
     inline def setCapacityUnit(value: String): Self = StObject.set(x, "capacityUnit", value.asInstanceOf[js.Any])
     
-    inline def setCurrentcapacity(value: Double): Self = StObject.set(x, "currentcapacity", value.asInstanceOf[js.Any])
+    inline def setCurrentCapacity(value: Double): Self = StObject.set(x, "currentCapacity", value.asInstanceOf[js.Any])
     
-    inline def setCyclecount(value: Double): Self = StObject.set(x, "cyclecount", value.asInstanceOf[js.Any])
+    inline def setCycleCount(value: Double): Self = StObject.set(x, "cycleCount", value.asInstanceOf[js.Any])
     
-    inline def setDesignedcapacity(value: Double): Self = StObject.set(x, "designedcapacity", value.asInstanceOf[js.Any])
+    inline def setDesignedCapacity(value: Double): Self = StObject.set(x, "designedCapacity", value.asInstanceOf[js.Any])
     
-    inline def setHasbattery(value: Boolean): Self = StObject.set(x, "hasbattery", value.asInstanceOf[js.Any])
+    inline def setHasBattery(value: Boolean): Self = StObject.set(x, "hasBattery", value.asInstanceOf[js.Any])
     
-    inline def setIscharging(value: Boolean): Self = StObject.set(x, "ischarging", value.asInstanceOf[js.Any])
+    inline def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
     
     inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    inline def setMaxcapacity(value: Double): Self = StObject.set(x, "maxcapacity", value.asInstanceOf[js.Any])
+    inline def setMaxCapacity(value: Double): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
     
     inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
@@ -86,7 +94,7 @@ object BatteryData {
     
     inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
-    inline def setTimeremaining(value: Double): Self = StObject.set(x, "timeremaining", value.asInstanceOf[js.Any])
+    inline def setTimeRemaining(value: Double): Self = StObject.set(x, "timeRemaining", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

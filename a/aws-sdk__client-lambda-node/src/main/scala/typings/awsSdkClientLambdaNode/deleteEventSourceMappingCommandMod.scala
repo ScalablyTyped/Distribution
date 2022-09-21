@@ -16,7 +16,7 @@ object deleteEventSourceMappingCommandMod {
   
   @JSImport("@aws-sdk/client-lambda-node/commands/DeleteEventSourceMappingCommand", "DeleteEventSourceMappingCommand")
   @js.native
-  class DeleteEventSourceMappingCommand protected ()
+  open class DeleteEventSourceMappingCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteEventSourceMappingCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteEventSourceMappingInput, DeleteEventSourceMappingOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[DeleteEventSourceMappingInput, DeleteEventSourceMappingOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: LambdaResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteEventSourceMappingInput, DeleteEventSourceMappingOutput] = js.native
   }
 }

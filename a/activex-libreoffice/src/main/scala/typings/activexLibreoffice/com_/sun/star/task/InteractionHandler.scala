@@ -92,7 +92,7 @@ object InteractionHandler {
     createWithParentAndContext: (XWindow, String) => Unit,
     handle: XInteractionRequest => Unit,
     handleInteractionRequest: XInteractionRequest => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): InteractionHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createWithParent = js.Any.fromFunction1(createWithParent), createWithParentAndContext = js.Any.fromFunction2(createWithParentAndContext), handle = js.Any.fromFunction1(handle), handleInteractionRequest = js.Any.fromFunction1(handleInteractionRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

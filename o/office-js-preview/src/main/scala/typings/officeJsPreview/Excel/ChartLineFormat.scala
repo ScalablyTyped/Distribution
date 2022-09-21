@@ -22,9 +22,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the formatting options for line elements.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -33,16 +33,17 @@ trait ChartLineFormat
      with ClientObject {
   
   /**
-    * Clear the line format of a chart element.
+    * Clears the line format of a chart element.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def clear(): Unit = js.native
   
   /**
-    *
     * HTML color code representing the color of lines in the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: String = js.native
@@ -52,9 +53,9 @@ trait ChartLineFormat
   var context_ChartLineFormat: RequestContext = js.native
   
   /**
+    * Represents the line style. See `Excel.ChartLineStyle` for details.
     *
-    * Represents the line style. See Excel.ChartLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var lineStyle: ChartLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Grey25 | Grey50 | Grey75 | Automatic | RoundDot = js.native
@@ -72,14 +73,8 @@ trait ChartLineFormat
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartLineFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartLineFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -93,9 +88,9 @@ trait ChartLineFormat
   def toJSON(): ChartLineFormatData = js.native
   
   /**
-    *
     * Represents weight of the line, in points.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var weight: Double = js.native

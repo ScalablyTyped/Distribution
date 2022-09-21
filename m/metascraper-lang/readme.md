@@ -10,15 +10,15 @@ Get lang property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-lang |
 | Keywords           | lang, metascraper |
-| # releases         | 103 |
-| # dependents       | 8 |
-| # downloads        | 75622 |
-| # stars            | 0 |
+| # releases         | 84 |
+| # dependents       | 0.0 |
+| # downloads        | 7503.666666666667 |
+| # stars            | 1802.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-lang)
+- [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)
 - [Bugs](https://github.com/microlinkhq/metascraper/issues)
-- [Repository](https://github.com/microlinkhq/metascraper)
+- [Repository](https://github.com/microlinkhq/metascraper/tree/master)
 - [Npm](https://www.npmjs.com/package/metascraper-lang)
     
 

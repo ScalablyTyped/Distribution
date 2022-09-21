@@ -63,7 +63,7 @@ object ShellExecutionOptions {
     
     inline def setShellArgsUndefined: Self = StObject.set(x, "shellArgs", js.undefined)
     
-    inline def setShellArgsVarargs(value: String*): Self = StObject.set(x, "shellArgs", js.Array(value :_*))
+    inline def setShellArgsVarargs(value: String*): Self = StObject.set(x, "shellArgs", js.Array(value*))
     
     inline def setShellQuoting(value: ShellQuotingOptions): Self = StObject.set(x, "shellQuoting", value.asInstanceOf[js.Any])
     

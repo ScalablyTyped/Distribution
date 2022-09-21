@@ -1,9 +1,8 @@
 package typings.reactMdUtils
 
-import typings.std.AddEventListenerOptions
+import typings.std.AbortSignal
 import typings.std.Event
 import typings.std.EventListener
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +15,18 @@ object scrollListenerMod {
   
   inline def ScrollListener(props: ScrollListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollListener")(props.asInstanceOf[js.Any]).asInstanceOf[Null]
   
-  /* Inlined std.Omit<@react-md/utils.@react-md/utils/types/events/useScrollListener.Options<std.HTMLElement>, 'enabled'> */
+  /* Inlined std.Omit<@react-md/utils.@react-md/utils/types/events/useScrollListener.ScrollListenerHookOptions, 'enabled'> */
   trait ScrollListenerProps extends StObject {
     
-    var element: js.UndefOr[HTMLElement | Null] = js.undefined
+    var capture: js.UndefOr[Boolean] = js.undefined
     
     var onScroll: EventListener
     
-    var options: js.UndefOr[AddEventListenerOptions | Boolean] = js.undefined
+    var once: js.UndefOr[Boolean] = js.undefined
+    
+    var passive: js.UndefOr[Boolean] = js.undefined
+    
+    var signal: js.UndefOr[AbortSignal] = js.undefined
   }
   object ScrollListenerProps {
     
@@ -34,17 +37,23 @@ object scrollListenerMod {
     
     extension [Self <: ScrollListenerProps](x: Self) {
       
-      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
-      inline def setElementNull: Self = StObject.set(x, "element", null)
-      
-      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
       inline def setOnScroll(value: /* evt */ Event => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      inline def setOptions(value: AddEventListenerOptions | Boolean): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      
+      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     }
   }
 }

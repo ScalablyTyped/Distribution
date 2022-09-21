@@ -91,14 +91,14 @@ object anon {
     
     var keepScores: js.UndefOr[Boolean] = js.undefined
     
-    var searchQuery: T
+    var results: js.Array[T]
     
-    var searchResults: js.Array[T]
+    var searchQuery: T
   }
   object KeepScores {
     
-    inline def apply[T](searchQuery: T, searchResults: js.Array[T]): KeepScores[T] = {
-      val __obj = js.Dynamic.literal(searchQuery = searchQuery.asInstanceOf[js.Any], searchResults = searchResults.asInstanceOf[js.Any])
+    inline def apply[T](results: js.Array[T], searchQuery: T): KeepScores[T] = {
+      val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], searchQuery = searchQuery.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeepScores[T]]
     }
     
@@ -108,11 +108,34 @@ object anon {
       
       inline def setKeepScoresUndefined: Self = StObject.set(x, "keepScores", js.undefined)
       
+      inline def setResults(value: js.Array[T]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      
+      inline def setResultsVarargs(value: T*): Self = StObject.set(x, "results", js.Array(value*))
+      
       inline def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Results[T] extends StObject {
+    
+    var results: js.Array[T]
+    
+    var searchQuery: T
+  }
+  object Results {
+    
+    inline def apply[T](results: js.Array[T], searchQuery: T): Results[T] = {
+      val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], searchQuery = searchQuery.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Results[T]]
+    }
+    
+    extension [Self <: Results[?], T](x: Self & Results[T]) {
       
-      inline def setSearchResults(value: js.Array[T]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[T]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setSearchResultsVarargs(value: T*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
+      inline def setResultsVarargs(value: T*): Self = StObject.set(x, "results", js.Array(value*))
+      
+      inline def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,29 +157,6 @@ object anon {
       inline def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
       
       inline def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait SearchResults[T] extends StObject {
-    
-    var searchQuery: T
-    
-    var searchResults: js.Array[T]
-  }
-  object SearchResults {
-    
-    inline def apply[T](searchQuery: T, searchResults: js.Array[T]): SearchResults[T] = {
-      val __obj = js.Dynamic.literal(searchQuery = searchQuery.asInstanceOf[js.Any], searchResults = searchResults.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SearchResults[T]]
-    }
-    
-    extension [Self <: SearchResults[?], T](x: Self & SearchResults[T]) {
-      
-      inline def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
-      
-      inline def setSearchResults(value: js.Array[T]): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
-      
-      inline def setSearchResultsVarargs(value: T*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
     }
   }
 }

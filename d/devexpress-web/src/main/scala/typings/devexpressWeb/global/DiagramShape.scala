@@ -9,9 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DiagramShape")
 @js.native
-class DiagramShape ()
+open class DiagramShape ()
   extends StObject
      with typings.devexpressWeb.DiagramShape {
+  
+  /**
+    * Gets an array of attached connector identifiers.
+    */
+  /* CompleteClass */
+  var attachedConnectorIds: js.Array[String] = js.native
   
   /**
     * Gets the item's internal identifier.
@@ -23,7 +29,19 @@ class DiagramShape ()
     * Gets the item's key from a data source.
     */
   /* CompleteClass */
-  var key: js.Any = js.native
+  var key: Any = js.native
+  
+  /**
+    * Specifies the shape position (x- and y-coordinates) in units.
+    */
+  /* CompleteClass */
+  var position: Any = js.native
+  
+  /**
+    * Specifies the shape size in units.
+    */
+  /* CompleteClass */
+  var size: Any = js.native
   
   /**
     * Gets the shape's text.

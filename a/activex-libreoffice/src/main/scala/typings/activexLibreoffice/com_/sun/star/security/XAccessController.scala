@@ -36,7 +36,7 @@ trait XAccessController
     * @see com.sun.star.connection.SocketPermission
     * @throws AccessControlException thrown if access is denied
     */
-  def checkPermission(perm: js.Any): Unit
+  def checkPermission(perm: Any): Unit
   
   /**
     * Perform the specified action adding a set of permissions defined by the given {@link XAccessControlContext} . The action is performed with the union
@@ -50,7 +50,7 @@ trait XAccessController
     * @returns result
     * @throws com::sun::star::uno::Exception any UNO exception may be thrown
     */
-  def doPrivileged(action: XAction, restriction: XAccessControlContext): js.Any
+  def doPrivileged(action: XAction, restriction: XAccessControlContext): Any
   
   /**
     * Perform the specified action restricting permissions to the given {@link XAccessControlContext} . The action is performed with the intersection of the
@@ -63,7 +63,7 @@ trait XAccessController
     * @returns result
     * @throws com::sun::star::uno::Exception any UNO exception may be thrown
     */
-  def doRestricted(action: XAction, restriction: XAccessControlContext): js.Any
+  def doRestricted(action: XAction, restriction: XAccessControlContext): Any
   
   /**
     * This method takes a "snapshot" of the current calling context and returns it.
@@ -78,11 +78,11 @@ object XAccessController {
   inline def apply(
     Context: XAccessControlContext,
     acquire: () => Unit,
-    checkPermission: js.Any => Unit,
-    doPrivileged: (XAction, XAccessControlContext) => js.Any,
-    doRestricted: (XAction, XAccessControlContext) => js.Any,
+    checkPermission: Any => Unit,
+    doPrivileged: (XAction, XAccessControlContext) => Any,
+    doRestricted: (XAction, XAccessControlContext) => Any,
     getContext: () => XAccessControlContext,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessController = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), checkPermission = js.Any.fromFunction1(checkPermission), doPrivileged = js.Any.fromFunction2(doPrivileged), doRestricted = js.Any.fromFunction2(doRestricted), getContext = js.Any.fromFunction0(getContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -91,13 +91,13 @@ object XAccessController {
   
   extension [Self <: XAccessController](x: Self) {
     
-    inline def setCheckPermission(value: js.Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
+    inline def setCheckPermission(value: Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
     
     inline def setContext(value: XAccessControlContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
-    inline def setDoPrivileged(value: (XAction, XAccessControlContext) => js.Any): Self = StObject.set(x, "doPrivileged", js.Any.fromFunction2(value))
+    inline def setDoPrivileged(value: (XAction, XAccessControlContext) => Any): Self = StObject.set(x, "doPrivileged", js.Any.fromFunction2(value))
     
-    inline def setDoRestricted(value: (XAction, XAccessControlContext) => js.Any): Self = StObject.set(x, "doRestricted", js.Any.fromFunction2(value))
+    inline def setDoRestricted(value: (XAction, XAccessControlContext) => Any): Self = StObject.set(x, "doRestricted", js.Any.fromFunction2(value))
     
     inline def setGetContext(value: () => XAccessControlContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
   }

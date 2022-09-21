@@ -10,15 +10,12 @@ A WebAudio Context singleton
 | ------------------ | :-------------: |
 | Full name          | audio-context |
 | Keywords           | webaudio, audio, audiojs, context, singleton |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 130346 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15182.666666666666 |
+| # stars            | 31.0 |
 
 ## Links
-- [Homepage](https://github.com/audiojs/audio-context)
-- [Bugs](https://github.com/audiojs/audio-context/issues)
-- [Repository](https://github.com/audiojs/audio-context)
 - [Npm](https://www.npmjs.com/package/audio-context)
     
 

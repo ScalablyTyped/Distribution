@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LineOfSightTargetConstructor
   extends StObject
-     with Instantiable0[LineOfSightTarget]
+     with /**
+  * This class represents a target point for a [LineOfSight](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html) analysis.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightTarget.html)
+  */
+Instantiable0[LineOfSightTarget]
      with Instantiable1[/* properties */ LineOfSightTargetProperties, LineOfSightTarget]

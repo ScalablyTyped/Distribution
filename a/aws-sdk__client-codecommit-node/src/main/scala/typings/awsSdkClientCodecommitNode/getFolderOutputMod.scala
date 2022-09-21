@@ -8,5 +8,5 @@ object getFolderOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetFolderOutput", "GetFolderOutput")
   @js.native
-  val GetFolderOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetFolderOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

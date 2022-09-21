@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for creating notes in batch.
-  */
 trait SchemaBatchCreateNotesResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBatchCreateNotesResponse {
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: SchemaNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: SchemaNote*): Self = StObject.set(x, "notes", js.Array(value*))
   }
 }

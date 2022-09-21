@@ -13,11 +13,11 @@ trait ojMenuButton
      with ojButton[ojMenuButtonSettableProperties] {
   
   @JSName("onOjAction")
-  var onOjAction_ojMenuButton: (js.Function1[/* event */ ojAction, js.Any]) | Null = js.native
+  var onOjAction_ojMenuButton: (js.Function1[/* event */ ojAction, Any]) | Null = js.native
   
   def setProperties(properties: ojMenuButtonSettablePropertiesLenient): Unit = js.native
 }
 object ojMenuButton {
   
-  type ojAction = CustomEvent[StringDictionary[js.Any]]
+  type ojAction = CustomEvent[StringDictionary[Any]]
 }

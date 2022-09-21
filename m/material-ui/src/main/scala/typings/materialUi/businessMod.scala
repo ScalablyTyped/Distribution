@@ -10,10 +10,10 @@ object businessMod {
   
   @JSImport("material-ui/svg-icons/communication/business", JSImport.Default)
   @js.native
-  class default () extends CommunicationBusiness
+  open class default () extends CommunicationBusiness
   
   @JSImport("material-ui/svg-icons/communication/business", "CommunicationBusiness")
   @js.native
-  class CommunicationBusiness ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationBusiness ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -43,7 +43,7 @@ object Label {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object Label {
     
     inline def setParentsUndefined: Self = StObject.set(x, "Parents", js.undefined)
     
-    inline def setParentsVarargs(value: Parent*): Self = StObject.set(x, "Parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: Parent*): Self = StObject.set(x, "Parents", js.Array(value*))
   }
 }

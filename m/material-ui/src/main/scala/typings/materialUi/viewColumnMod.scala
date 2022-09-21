@@ -10,10 +10,10 @@ object viewColumnMod {
   
   @JSImport("material-ui/svg-icons/action/view-column", JSImport.Default)
   @js.native
-  class default () extends ActionViewColumn
+  open class default () extends ActionViewColumn
   
   @JSImport("material-ui/svg-icons/action/view-column", "ActionViewColumn")
   @js.native
-  class ActionViewColumn ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionViewColumn ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ShaderDefineExpression")
 @js.native
-class ShaderDefineExpression ()
+open class ShaderDefineExpression ()
   extends StObject
      with typings.babylonjs.BABYLON.ShaderDefineExpression {
   
@@ -22,13 +22,13 @@ object ShaderDefineExpression {
   
   @JSGlobal("BABYLON.ShaderDefineExpression._OperatorPriority")
   @js.native
-  def _OperatorPriority: js.Any = js.native
-  inline def _OperatorPriority_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OperatorPriority")(x.asInstanceOf[js.Any])
+  def _OperatorPriority: Any = js.native
+  inline def _OperatorPriority_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OperatorPriority")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.ShaderDefineExpression._Stack")
   @js.native
-  def _Stack: js.Any = js.native
-  inline def _Stack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Stack")(x.asInstanceOf[js.Any])
+  def _Stack: Any = js.native
+  inline def _Stack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Stack")(x.asInstanceOf[js.Any])
   
   inline def infixToPostfix(infix: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("infixToPostfix")(infix.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   

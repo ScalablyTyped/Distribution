@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Promise")
 @js.native
-class Promise[T] protected ()
+open class Promise[T] protected ()
   extends StObject
      with typings.minappEnv.Promise[T] {
   /**
@@ -20,7 +20,7 @@ class Promise[T] protected ()
     */
   def this(executor: js.Function2[
         /* resolve */ js.Function1[/* value */ js.UndefOr[T | PromiseLike[T]], Unit], 
-        /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+        /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
         Unit
       ]) = this()
 }

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single inspection rule to be applied to infoTypes, specified in
-  * `InspectionRuleSet`.
-  */
 trait SchemaGooglePrivacyDlpV2InspectionRule extends StObject {
   
   /**

@@ -9,7 +9,6 @@ import typings.sqlite.sqliteStrings.error
 import typings.sqlite.sqliteStrings.open
 import typings.sqlite.sqliteStrings.profile
 import typings.sqlite.sqliteStrings.trace
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,28 +21,28 @@ object sqlite3Mod {
   
   @JSImport("sqlite3", "Database")
   @js.native
-  class Database protected () extends EventEmitter {
+  open class Database protected () extends EventEmitter {
     def this(filename: String) = this()
-    def this(filename: String, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
+    def this(filename: String, callback: js.Function1[/* err */ js.Error | Null, Unit]) = this()
     def this(filename: String, mode: Double) = this()
-    def this(filename: String, mode: Double, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
-    def this(filename: String, mode: Unit, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
+    def this(filename: String, mode: Double, callback: js.Function1[/* err */ js.Error | Null, Unit]) = this()
+    def this(filename: String, mode: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]) = this()
     
     def all(sql: String): this.type = js.native
     def all(
       sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* rows */ js.Array[js.Any], Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* rows */ js.Array[Any], Unit]
     ): this.type = js.native
-    def all(sql: String, params: js.Any*): this.type = js.native
-    def all(sql: String, params: js.Any): this.type = js.native
+    def all(sql: String, params: Any*): this.type = js.native
+    def all(sql: String, params: Any): this.type = js.native
     def all(
       sql: String,
-      params: js.Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* rows */ js.Array[js.Any], Unit]
+      params: Any,
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* rows */ js.Array[Any], Unit]
     ): this.type = js.native
     
     def close(): Unit = js.native
-    def close(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def close(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     @JSName("configure")
     def configure_busyTimeout(option: busyTimeout, value: Double): Unit = js.native
@@ -51,65 +50,62 @@ object sqlite3Mod {
     def each(sql: String): this.type = js.native
     def each(
       sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit]
     ): this.type = js.native
     def each(
       sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit],
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit],
+      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
     def each(
       sql: String,
       callback: Unit,
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
-    def each(sql: String, params: js.Any*): this.type = js.native
-    def each(sql: String, params: js.Any): this.type = js.native
+    def each(sql: String, params: Any*): this.type = js.native
+    def each(sql: String, params: Any): this.type = js.native
     def each(
       sql: String,
-      params: js.Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit]
-    ): this.type = js.native
-    def each(
-      sql: String,
-      params: js.Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit],
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+      params: Any,
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit]
     ): this.type = js.native
     def each(
       sql: String,
-      params: js.Any,
+      params: Any,
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit],
+      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
+    ): this.type = js.native
+    def each(
+      sql: String,
+      params: Any,
       callback: Unit,
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
     
     def exec(sql: String): this.type = js.native
-    def exec(sql: String, callback: js.ThisFunction1[/* this */ Statement, /* err */ Error | Null, Unit]): this.type = js.native
+    def exec(sql: String, callback: js.ThisFunction1[/* this */ Statement, /* err */ js.Error | Null, Unit]): this.type = js.native
     
     def get(sql: String): this.type = js.native
     def get(
       sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit]
     ): this.type = js.native
-    def get(sql: String, params: js.Any*): this.type = js.native
-    def get(sql: String, params: js.Any): this.type = js.native
+    def get(sql: String, params: Any*): this.type = js.native
+    def get(sql: String, params: Any): this.type = js.native
     def get(
       sql: String,
-      params: js.Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit]
+      params: Any,
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit]
     ): this.type = js.native
     
     def interrupt(): Unit = js.native
     
     def loadExtension(path: String): Unit = js.native
-    def loadExtension(path: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def loadExtension(path: String, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
+    def on(event: open | close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_open(event: open, listener: js.Function0[Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_profile(event: profile, listener: js.Function2[/* sql */ String, /* time */ Double, Unit]): this.type = js.native
     @JSName("on")
@@ -119,23 +115,23 @@ object sqlite3Mod {
     def parallelize(callback: js.Function0[Unit]): Unit = js.native
     
     def prepare(sql: String): Statement = js.native
-    def prepare(sql: String, callback: js.ThisFunction1[/* this */ Statement, /* err */ Error | Null, Unit]): Statement = js.native
-    def prepare(sql: String, params: js.Any*): Statement = js.native
-    def prepare(sql: String, params: js.Any): Statement = js.native
+    def prepare(sql: String, callback: js.ThisFunction1[/* this */ Statement, /* err */ js.Error | Null, Unit]): Statement = js.native
+    def prepare(sql: String, params: Any*): Statement = js.native
+    def prepare(sql: String, params: Any): Statement = js.native
     def prepare(
       sql: String,
-      params: js.Any,
-      callback: js.ThisFunction1[/* this */ Statement, /* err */ Error | Null, Unit]
+      params: Any,
+      callback: js.ThisFunction1[/* this */ Statement, /* err */ js.Error | Null, Unit]
     ): Statement = js.native
     
     def run(sql: String): this.type = js.native
-    def run(sql: String, callback: js.ThisFunction1[/* this */ RunResult, /* err */ Error | Null, Unit]): this.type = js.native
-    def run(sql: String, params: js.Any*): this.type = js.native
-    def run(sql: String, params: js.Any): this.type = js.native
+    def run(sql: String, callback: js.ThisFunction1[/* this */ RunResult, /* err */ js.Error | Null, Unit]): this.type = js.native
+    def run(sql: String, params: Any*): this.type = js.native
+    def run(sql: String, params: Any): this.type = js.native
     def run(
       sql: String,
-      params: js.Any,
-      callback: js.ThisFunction1[/* this */ RunResult, /* err */ Error | Null, Unit]
+      params: Any,
+      callback: js.ThisFunction1[/* this */ RunResult, /* err */ js.Error | Null, Unit]
     ): this.type = js.native
     
     def serialize(): Unit = js.native
@@ -168,64 +164,64 @@ object sqlite3Mod {
   
   @JSImport("sqlite3", "Statement")
   @js.native
-  class Statement () extends StObject {
+  open class Statement () extends StObject {
     
     def all(): this.type = js.native
-    def all(callback: js.Function2[/* err */ Error | Null, /* rows */ js.Array[js.Any], Unit]): this.type = js.native
-    def all(params: js.Any*): this.type = js.native
-    def all(params: js.Any): this.type = js.native
+    def all(callback: js.Function2[/* err */ js.Error | Null, /* rows */ js.Array[Any], Unit]): this.type = js.native
+    def all(params: Any*): this.type = js.native
+    def all(params: Any): this.type = js.native
     def all(
-      params: js.Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ Error | Null, /* rows */ js.Array[js.Any], Unit]
+      params: Any,
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* rows */ js.Array[Any], Unit]
     ): this.type = js.native
     
     def bind(): this.type = js.native
-    def bind(callback: js.Function1[/* err */ Error | Null, Unit]): this.type = js.native
-    def bind(params: js.Any*): this.type = js.native
+    def bind(callback: js.Function1[/* err */ js.Error | Null, Unit]): this.type = js.native
+    def bind(params: Any*): this.type = js.native
     
     def each(): this.type = js.native
-    def each(callback: js.Function2[/* err */ Error | Null, /* row */ js.Any, Unit]): this.type = js.native
+    def each(callback: js.Function2[/* err */ js.Error | Null, /* row */ Any, Unit]): this.type = js.native
     def each(
-      callback: js.Function2[/* err */ Error | Null, /* row */ js.Any, Unit],
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* row */ Any, Unit],
+      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
-    def each(callback: Unit, complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]): this.type = js.native
-    def each(params: js.Any*): this.type = js.native
-    def each(params: js.Any): this.type = js.native
+    def each(callback: Unit, complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]): this.type = js.native
+    def each(params: Any*): this.type = js.native
+    def each(params: Any): this.type = js.native
     def each(
-      params: js.Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ Error | Null, /* row */ js.Any, Unit]
-    ): this.type = js.native
-    def each(
-      params: js.Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ Error | Null, /* row */ js.Any, Unit],
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+      params: Any,
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ Any, Unit]
     ): this.type = js.native
     def each(
-      params: js.Any,
+      params: Any,
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ Any, Unit],
+      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
+    ): this.type = js.native
+    def each(
+      params: Any,
       callback: Unit,
-      complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
     
-    def finalize(callback: js.Function1[/* err */ Error, Unit]): Database = js.native
+    def finalize(callback: js.Function1[/* err */ js.Error, Unit]): Database = js.native
     
     def get(): this.type = js.native
-    def get(callback: js.Function2[/* err */ Error | Null, /* row */ js.UndefOr[js.Any], Unit]): this.type = js.native
-    def get(params: js.Any*): this.type = js.native
-    def get(params: js.Any): this.type = js.native
+    def get(callback: js.Function2[/* err */ js.Error | Null, /* row */ js.UndefOr[Any], Unit]): this.type = js.native
+    def get(params: Any*): this.type = js.native
+    def get(params: Any): this.type = js.native
     def get(
-      params: js.Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ Error | Null, /* row */ js.UndefOr[js.Any], Unit]
+      params: Any,
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     
     def reset(): this.type = js.native
     def reset(callback: js.Function1[/* err */ Null, Unit]): this.type = js.native
     
     def run(): this.type = js.native
-    def run(callback: js.Function1[/* err */ Error | Null, Unit]): this.type = js.native
-    def run(params: js.Any*): this.type = js.native
-    def run(params: js.Any): this.type = js.native
-    def run(params: js.Any, callback: js.ThisFunction1[/* this */ RunResult, /* err */ Error | Null, Unit]): this.type = js.native
+    def run(callback: js.Function1[/* err */ js.Error | Null, Unit]): this.type = js.native
+    def run(params: Any*): this.type = js.native
+    def run(params: Any): this.type = js.native
+    def run(params: Any, callback: js.ThisFunction1[/* this */ RunResult, /* err */ js.Error | Null, Unit]): this.type = js.native
   }
   
   object cached {
@@ -237,18 +233,18 @@ object sqlite3Mod {
     inline def Database(filename: String): typings.sqlite.sqlite3Mod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
     inline def Database(
       filename: String,
-      callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
+      callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ js.Error | Null, Unit]
     ): typings.sqlite.sqlite3Mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
     inline def Database(filename: String, mode: Double): typings.sqlite.sqlite3Mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
     inline def Database(
       filename: String,
       mode: Double,
-      callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
+      callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ js.Error | Null, Unit]
     ): typings.sqlite.sqlite3Mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
     inline def Database(
       filename: String,
       mode: Unit,
-      callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
+      callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ js.Error | Null, Unit]
     ): typings.sqlite.sqlite3Mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite.sqlite3Mod.Database]
   }
   
@@ -266,7 +262,7 @@ object sqlite3Mod {
     
     var Database: Instantiable2[
         /* filename */ String, 
-        /* callback */ js.UndefOr[js.Function1[/* err */ Error | Null, Unit]], 
+        /* callback */ js.UndefOr[js.Function1[/* err */ js.Error | Null, Unit]], 
         typings.sqlite.sqlite3Mod.Database
       ]
     
@@ -295,7 +291,7 @@ object sqlite3Mod {
     inline def apply(
       Database: Instantiable2[
           /* filename */ String, 
-          /* callback */ js.UndefOr[js.Function1[/* err */ Error | Null, Unit]], 
+          /* callback */ js.UndefOr[js.Function1[/* err */ js.Error | Null, Unit]], 
           Database
         ],
       OPEN_CREATE: Double,
@@ -320,7 +316,7 @@ object sqlite3Mod {
       inline def setDatabase(
         value: Instantiable2[
               /* filename */ String, 
-              /* callback */ js.UndefOr[js.Function1[/* err */ Error | Null, Unit]], 
+              /* callback */ js.UndefOr[js.Function1[/* err */ js.Error | Null, Unit]], 
               Database
             ]
       ): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])

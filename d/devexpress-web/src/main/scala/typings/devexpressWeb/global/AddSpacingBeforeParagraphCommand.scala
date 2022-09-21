@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("AddSpacingBeforeParagraphCommand")
 @js.native
-class AddSpacingBeforeParagraphCommand ()
+open class AddSpacingBeforeParagraphCommand ()
   extends StObject
      with typings.devexpressWeb.AddSpacingBeforeParagraphCommand {
   

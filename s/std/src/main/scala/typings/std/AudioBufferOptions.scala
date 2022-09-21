@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AudioBufferOptions extends StObject {
   
+  /* standard dom */
   var length: Double
   
+  /* standard dom */
   var numberOfChannels: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var sampleRate: Double
 }
 object AudioBufferOptions {

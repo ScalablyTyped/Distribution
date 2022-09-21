@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "PlaySoundAction")
 @js.native
-class PlaySoundAction protected ()
+open class PlaySoundAction protected ()
   extends typings.babylonjs.legacyMod.PlaySoundAction {
   /**
     * Instantiate the action
@@ -14,9 +14,9 @@ class PlaySoundAction protected ()
     * @param sound defines the sound to play
     * @param condition defines the trigger related conditions
     */
-  def this(triggerOptions: js.Any, sound: typings.babylonjs.soundMod.Sound) = this()
+  def this(triggerOptions: Any, sound: typings.babylonjs.soundMod.Sound) = this()
   def this(
-    triggerOptions: js.Any,
+    triggerOptions: Any,
     sound: typings.babylonjs.soundMod.Sound,
     condition: typings.babylonjs.conditionMod.Condition
   ) = this()

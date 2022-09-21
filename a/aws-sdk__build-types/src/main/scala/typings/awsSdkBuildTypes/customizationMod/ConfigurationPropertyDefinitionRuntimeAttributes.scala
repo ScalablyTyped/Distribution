@@ -76,7 +76,7 @@ object ConfigurationPropertyDefinitionRuntimeAttributes {
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setNormalize(value: String): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     

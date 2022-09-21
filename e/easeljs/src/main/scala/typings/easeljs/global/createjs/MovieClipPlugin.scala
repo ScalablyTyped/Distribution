@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.MovieClipPlugin")
 @js.native
-class MovieClipPlugin ()
+open class MovieClipPlugin ()
   extends StObject
      with typings.easeljs.createjs.MovieClipPlugin

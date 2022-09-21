@@ -10,10 +10,10 @@ object callMadeMod {
   
   @JSImport("material-ui/svg-icons/communication/call-made", JSImport.Default)
   @js.native
-  class default () extends CommunicationCallMade
+  open class default () extends CommunicationCallMade
   
   @JSImport("material-ui/svg-icons/communication/call-made", "CommunicationCallMade")
   @js.native
-  class CommunicationCallMade ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationCallMade ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

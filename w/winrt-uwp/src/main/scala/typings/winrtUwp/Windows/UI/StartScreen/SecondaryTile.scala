@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SecondaryTile extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_visualelementsrequested(
     `type`: visualelementsrequested,
@@ -55,7 +55,7 @@ trait SecondaryTile extends StObject {
   /** Gets or sets a phonetic version of the secondary tile name. Used with character-based languages for UI sorting purposes. */
   var phoneticName: String = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_visualelementsrequested(
     `type`: visualelementsrequested,

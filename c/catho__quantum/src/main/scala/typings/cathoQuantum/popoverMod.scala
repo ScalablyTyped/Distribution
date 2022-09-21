@@ -19,10 +19,10 @@ object popoverMod {
   
   @JSImport("@catho/quantum/Popover", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PopoverProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PopoverProps, js.Object, Any]
   
-  type Popover = Component[PopoverProps, js.Object, js.Any]
+  type Popover = Component[PopoverProps, js.Object, Any]
   
   trait PopoverProps extends StObject {
     
@@ -53,7 +53,7 @@ object popoverMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       

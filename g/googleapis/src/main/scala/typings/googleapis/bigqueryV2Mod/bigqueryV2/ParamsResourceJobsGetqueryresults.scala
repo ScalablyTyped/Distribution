@@ -1,9 +1,5 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceJobsGetqueryresults
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * [Required] Job ID of the query job
     */
   var jobId: js.UndefOr[String] = js.undefined
   
   /**
-    * The geographic location where the job should run. Required except for US
-    * and EU. See details at
-    * https://cloud.google.com/bigquery/docs/locations#specifying_your_location.
+    * The geographic location where the job should run. Required except for US and EU. See details at https://cloud.google.com/bigquery/docs/locations#specifying_your_location.
     */
   var location: js.UndefOr[String] = js.undefined
   
@@ -35,8 +24,7 @@ trait ParamsResourceJobsGetqueryresults
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Page token, returned by a previous call, to request the next page of
-    * results
+    * Page token, returned by a previous call, to request the next page of results
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -51,9 +39,7 @@ trait ParamsResourceJobsGetqueryresults
   var startIndex: js.UndefOr[String] = js.undefined
   
   /**
-    * How long to wait for the query to complete, in milliseconds, before
-    * returning. Default is 10 seconds. If the timeout passes before the job
-    * completes, the 'jobComplete' field in the response will be false
+    * How long to wait for the query to complete, in milliseconds, before returning. Default is 10 seconds. If the timeout passes before the job completes, the 'jobComplete' field in the response will be false
     */
   var timeoutMs: js.UndefOr[Double] = js.undefined
 }
@@ -65,10 +51,6 @@ object ParamsResourceJobsGetqueryresults {
   }
   
   extension [Self <: ParamsResourceJobsGetqueryresults](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

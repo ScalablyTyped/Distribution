@@ -1,5 +1,6 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
+import typings.winrtUwp.Windows.WinRTEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /** Represents a method that handles the cancellation of a background task. */
 type BackgroundTaskCanceledEventHandler = js.Function1[
-/* ev */ typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason & typings.winrtUwp.Windows.WinRTEvent[typings.winrtUwp.Windows.ApplicationModel.Background.IBackgroundTaskInstance], 
-scala.Unit]
+/* ev */ BackgroundTaskCancellationReason & WinRTEvent[IBackgroundTaskInstance], 
+Unit]
 
 /** Represents a method that handles completion events for a background task. */
 type BackgroundTaskCompletedEventHandler = js.Function1[
-/* ev */ typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs & typings.winrtUwp.Windows.WinRTEvent[typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskRegistration], 
-scala.Unit]
+/* ev */ BackgroundTaskCompletedEventArgs & WinRTEvent[BackgroundTaskRegistration], 
+Unit]
 
 /** Represents a method that handles progress update events for a background task. */
 type BackgroundTaskProgressEventHandler = js.Function1[
-/* ev */ typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs & typings.winrtUwp.Windows.WinRTEvent[typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskRegistration], 
-scala.Unit]
+/* ev */ BackgroundTaskProgressEventArgs & WinRTEvent[BackgroundTaskRegistration], 
+Unit]

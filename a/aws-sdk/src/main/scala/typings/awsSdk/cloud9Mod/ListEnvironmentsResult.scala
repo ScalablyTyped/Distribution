@@ -29,7 +29,7 @@ object ListEnvironmentsResult {
     
     inline def setEnvironmentIdsUndefined: Self = StObject.set(x, "environmentIds", js.undefined)
     
-    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "environmentIds", js.Array(value :_*))
+    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "environmentIds", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

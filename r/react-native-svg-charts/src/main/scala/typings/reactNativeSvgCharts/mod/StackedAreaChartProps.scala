@@ -2,8 +2,8 @@ package typings.reactNativeSvgCharts.mod
 
 import typings.d3Shape.mod.Series
 import typings.react.mod.Component
-import typings.reactNativeSvg.mod.LinearGradientProps
-import typings.reactNativeSvg.mod.RadialGradientProps
+import typings.reactNativeSvg.linearGradientMod.LinearGradientProps
+import typings.reactNativeSvg.radialGradientMod.RadialGradientProps
 import typings.reactNativeSvgCharts.anon.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait StackedAreaChartProps[T]
   
   var colors: js.Array[String]
   
-  var extras: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var extras: js.UndefOr[js.Array[Any]] = js.undefined
   
   var keys: js.Array[/* keyof T */ String]
   
@@ -28,7 +28,7 @@ trait StackedAreaChartProps[T]
   var renderGradient: js.UndefOr[
     js.Function1[
       /* props */ Color[T], 
-      Component[LinearGradientProps | RadialGradientProps, js.Object, js.Any]
+      Component[LinearGradientProps | RadialGradientProps, js.Object, Any]
     ]
   ] = js.undefined
   
@@ -45,23 +45,23 @@ object StackedAreaChartProps {
     
     inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setExtras(value: js.Array[js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: js.Array[Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
     
-    inline def setExtrasVarargs(value: js.Any*): Self = StObject.set(x, "extras", js.Array(value :_*))
+    inline def setExtrasVarargs(value: Any*): Self = StObject.set(x, "extras", js.Array(value*))
     
     inline def setKeys(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    inline def setKeysVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "keys", js.Array(value*))
     
-    inline def setOffset(value: (/* series */ Series[js.Any, js.Any], /* order */ js.Array[Double]) => Unit): Self = StObject.set(x, "offset", js.Any.fromFunction2(value))
+    inline def setOffset(value: (/* series */ Series[Any, Any], /* order */ js.Array[Double]) => Unit): Self = StObject.set(x, "offset", js.Any.fromFunction2(value))
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOrder(value: /* series */ Series[js.Any, js.Any] => js.Array[Double]): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
+    inline def setOrder(value: /* series */ Series[Any, Any] => js.Array[Double]): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
@@ -70,7 +70,7 @@ object StackedAreaChartProps {
     inline def setRenderDecoratorUndefined: Self = StObject.set(x, "renderDecorator", js.undefined)
     
     inline def setRenderGradient(
-      value: /* props */ Color[T] => Component[LinearGradientProps | RadialGradientProps, js.Object, js.Any]
+      value: /* props */ Color[T] => Component[LinearGradientProps | RadialGradientProps, js.Object, Any]
     ): Self = StObject.set(x, "renderGradient", js.Any.fromFunction1(value))
     
     inline def setRenderGradientUndefined: Self = StObject.set(x, "renderGradient", js.undefined)

@@ -10,10 +10,10 @@ object rvHookupMod {
   
   @JSImport("material-ui/svg-icons/notification/rv-hookup", JSImport.Default)
   @js.native
-  class default () extends NotificationRvHookup
+  open class default () extends NotificationRvHookup
   
   @JSImport("material-ui/svg-icons/notification/rv-hookup", "NotificationRvHookup")
   @js.native
-  class NotificationRvHookup ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationRvHookup ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -10,10 +10,10 @@ react-mailchimp-subscribe React component
 | ------------------ | :-------------: |
 | Full name          | react-mailchimp-subscribe |
 | Keywords           | react-component |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 521894 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 71686.0 |
+| # stars            | 214.0 |
 
 ## Links
 - [Homepage](https://revolunet.github.io/react-mailchimp-subscribe/)

@@ -9,12 +9,12 @@ trait ListModelsInput extends StObject {
   /**
     * A filter that returns only models with a creation time greater than or equal to the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only models created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of models to return in the response.
@@ -22,7 +22,7 @@ trait ListModelsInput extends StObject {
   var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
-    * A string in the training job name. This filter returns only models in the training job whose name contains the specified string.
+    * A string in the model name. This filter returns only models whose name contains the specified string.
     */
   var NameContains: js.UndefOr[ModelNameContains] = js.undefined
   
@@ -50,11 +50,11 @@ object ListModelsInput {
   
   extension [Self <: ListModelsInput](x: Self) {
     
-    inline def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     

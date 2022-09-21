@@ -2,8 +2,7 @@ package typings.ariClient.mod
 
 import typings.ariClient.anon.DestinationRecordingName
 import typings.ariClient.anon.RecordingName
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait Recordings extends StObject {
     *
     * @param params.recordingName - The name of the recording.
     */
-  def cancel(params: RecordingName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def cancel(params: RecordingName, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Copy a stored recording.
@@ -39,7 +38,7 @@ trait Recordings extends StObject {
     */
   def copyStored(
     params: DestinationRecordingName,
-    callback: js.Function2[/* err */ Error, /* storedrecording */ StoredRecording, Unit]
+    callback: js.Function2[/* err */ js.Error, /* storedrecording */ StoredRecording, Unit]
   ): Unit = js.native
   
   /**
@@ -53,7 +52,7 @@ trait Recordings extends StObject {
     *
     * @param params.recordingName - The name of the recording.
     */
-  def deleteStored(params: RecordingName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def deleteStored(params: RecordingName, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * List live recordings.
@@ -68,7 +67,7 @@ trait Recordings extends StObject {
     */
   def getLive(
     params: RecordingName,
-    callback: js.Function2[/* err */ Error, /* liverecording */ LiveRecording, Unit]
+    callback: js.Function2[/* err */ js.Error, /* liverecording */ LiveRecording, Unit]
   ): Unit = js.native
   
   /**
@@ -84,7 +83,7 @@ trait Recordings extends StObject {
     */
   def getStored(
     params: RecordingName,
-    callback: js.Function2[/* err */ Error, /* storedrecording */ StoredRecording, Unit]
+    callback: js.Function2[/* err */ js.Error, /* storedrecording */ StoredRecording, Unit]
   ): Unit = js.native
   
   /**
@@ -98,7 +97,7 @@ trait Recordings extends StObject {
     *
     * @param params.recordingName - The name of the recording.
     */
-  def getStoredFile(params: RecordingName, callback: js.Function2[/* err */ Error, /* binary */ Buffer, Unit]): Unit = js.native
+  def getStoredFile(params: RecordingName, callback: js.Function2[/* err */ js.Error, /* binary */ Buffer, Unit]): Unit = js.native
   
   /**
     * List recordings that are complete.
@@ -107,7 +106,7 @@ trait Recordings extends StObject {
   /**
     * List recordings that are complete.
     */
-  def listStored(callback: js.Function2[/* err */ Error, /* storedrecordings */ js.Array[StoredRecording], Unit]): Unit = js.native
+  def listStored(callback: js.Function2[/* err */ js.Error, /* storedrecordings */ js.Array[StoredRecording], Unit]): Unit = js.native
   
   /**
     * Mute a live recording.
@@ -122,7 +121,7 @@ trait Recordings extends StObject {
     *
     * @param params.recordingName - The name of the recording.
     */
-  def mute(params: RecordingName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def mute(params: RecordingName, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Pause a live recording.
@@ -137,7 +136,7 @@ trait Recordings extends StObject {
     *
     * @param params.recordingName - The name of the recording.
     */
-  def pause(params: RecordingName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def pause(params: RecordingName, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Stop a live recording and store it.
@@ -150,7 +149,7 @@ trait Recordings extends StObject {
     *
     * @param params.recordingName - The name of the recording.
     */
-  def stop(params: RecordingName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def stop(params: RecordingName, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Unmute a live recording.
@@ -163,7 +162,7 @@ trait Recordings extends StObject {
     *
     * @param params.recordingName - The name of the recording.
     */
-  def unmute(params: RecordingName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def unmute(params: RecordingName, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Unpause a live recording.
@@ -176,5 +175,5 @@ trait Recordings extends StObject {
     *
     * @param params.recordingName - The name of the recording.
     */
-  def unpause(params: RecordingName, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def unpause(params: RecordingName, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

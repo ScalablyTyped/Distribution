@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "sequelize-fixtures"
-version := "0.6.0-dt-20201002Z-a1f0bf"
-scalaVersion := "3.0.1"
+version := "0.6.0-dt-20220818Z-75a529"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20201028Z-8f0838",
-  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20201002Z-54b202",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20201105Z-a2958c",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20201002Z-aff8dc",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "validator" % "13.1-dt-20200624Z-9d2024")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220819Z-8ddcaa",
+  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20211223Z-d83ad0",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20220911Z-fe2852",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20220819Z-886282",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "validator" % "13.7-dt-20220827Z-258dc3")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -10,10 +10,10 @@ object ondemandVideoMod {
   
   @JSImport("material-ui/svg-icons/notification/ondemand-video", JSImport.Default)
   @js.native
-  class default () extends NotificationOndemandVideo
+  open class default () extends NotificationOndemandVideo
   
   @JSImport("material-ui/svg-icons/notification/ondemand-video", "NotificationOndemandVideo")
   @js.native
-  class NotificationOndemandVideo ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationOndemandVideo ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

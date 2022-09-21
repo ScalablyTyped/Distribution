@@ -41,7 +41,7 @@ object XModeChangeBroadcaster {
     acquire: () => Unit,
     addModeChangeApproveListener: XModeChangeApproveListener => Unit,
     addModeChangeListener: XModeChangeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeModeChangeApproveListener: XModeChangeApproveListener => Unit,
     removeModeChangeListener: XModeChangeListener => Unit

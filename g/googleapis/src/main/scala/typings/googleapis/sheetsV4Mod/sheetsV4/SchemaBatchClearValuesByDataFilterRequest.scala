@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for clearing more than one range selected by a DataFilter in a
-  * spreadsheet.
-  */
 trait SchemaBatchClearValuesByDataFilterRequest extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaBatchClearValuesByDataFilterRequest {
     
     inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    inline def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
   }
 }

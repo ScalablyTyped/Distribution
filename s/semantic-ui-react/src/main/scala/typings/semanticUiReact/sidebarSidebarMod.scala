@@ -5,11 +5,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.semanticUiReactStrings.`scale down`
 import typings.semanticUiReact.semanticUiReactStrings.`slide along`
@@ -39,10 +39,9 @@ object sidebarSidebarMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Sidebar/Sidebar", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[SidebarProps, ComponentState, js.Any] {
+  open class default protected () extends Component[SidebarProps, ComponentState, Any] {
     def this(props: SidebarProps) = this()
-    def this(props: SidebarProps, context: js.Any) = this()
+    def this(props: SidebarProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Sidebar/Sidebar", JSImport.Default)
   @js.native
@@ -53,15 +52,15 @@ object sidebarSidebarMod extends Shortcut {
     extends StObject
        with ComponentClass[SidebarProps, ComponentState] {
     
-    var Pushable: StatelessComponent[SidebarPushableProps] = js.native
+    var Pushable: FC[SidebarPushableProps] = js.native
     
-    var Pusher: StatelessComponent[SidebarPusherProps] = js.native
+    var Pusher: FC[SidebarPusherProps] = js.native
   }
   
   trait SidebarProps
     extends StObject
        with StrictSidebarProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object SidebarProps {
     
     inline def apply(): SidebarProps = {
@@ -76,7 +75,7 @@ object sidebarSidebarMod extends Shortcut {
     var animation: js.UndefOr[overlay | push | (`scale down`) | uncover | (`slide out`) | (`slide along`)] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -152,7 +151,7 @@ object sidebarSidebarMod extends Shortcut {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

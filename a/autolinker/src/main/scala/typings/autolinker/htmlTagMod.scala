@@ -1,7 +1,6 @@
 package typings.autolinker
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object htmlTagMod {
     * @method constructor
     * @param {Object} [cfg] The configuration properties for this class, in an Object (map)
     */
-  class HtmlTag () extends StObject {
+  open class HtmlTag () extends StObject {
     def this(cfg: HtmlTagCfg) = this()
     
     /**
@@ -31,7 +30,7 @@ object htmlTagMod {
       * An key/value Object (map) of attributes to create the tag with. The keys are the attribute names, and the
       * values are the attribute values.
       */
-    /* private */ var attrs: js.Any = js.native
+    /* private */ var attrs: Any = js.native
     
     /**
       * Support method for {@link #toAnchorString}, returns the string space-separated key="value" pairs, used to populate
@@ -91,7 +90,7 @@ object htmlTagMod {
       *
       * The inner HTML for the tag.
       */
-    /* private */ var innerHTML: js.Any = js.native
+    /* private */ var innerHTML: Any = js.native
     
     /**
       * Convenience method to remove one or more CSS classes from the HtmlTag.
@@ -158,22 +157,14 @@ object htmlTagMod {
       * Not required at instantiation time, but should be set using {@link #setTagName} before {@link #toAnchorString}
       * is executed.
       */
-    /* private */ var tagName: js.Any = js.native
+    /* private */ var tagName: Any = js.native
     
     /**
-      * Override of superclass method used to generate the HTML string for the tag.
+      * Generates the HTML string for the tag.
       *
       * @return {String}
       */
     def toAnchorString(): String = js.native
-    
-    /**
-      * @protected
-      * @property {RegExp} whitespaceRegex
-      *
-      * Regular expression used to match whitespace in a string of CSS classes.
-      */
-    /* protected */ var whitespaceRegex: RegExp = js.native
   }
   
   trait HtmlTagCfg extends StObject {

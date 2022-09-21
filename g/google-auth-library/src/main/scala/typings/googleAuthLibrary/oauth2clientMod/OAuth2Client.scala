@@ -6,7 +6,6 @@ import typings.gaxios.commonMod.GaxiosResponse
 import typings.googleAuthLibrary.authclientMod.AuthClient
 import typings.googleAuthLibrary.loginticketMod.LoginTicket
 import typings.googleAuthLibrary.transportersMod.BodyResponseCallback
-import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opts optional options for overriding the given parameters.
   * @constructor
   */
-class OAuth2Client () extends AuthClient {
+open class OAuth2Client () extends AuthClient {
   def this(clientId: String) = this()
   def this(options: OAuth2ClientOptions) = this()
   def this(clientId: String, clientSecret: String) = this()
@@ -40,15 +39,11 @@ class OAuth2Client () extends AuthClient {
   
   var apiKey: js.UndefOr[String] = js.native
   
-  /* private */ var certificateCache: js.Any = js.native
+  /* private */ var certificateCache: Any = js.native
   
-  /* private */ var certificateCacheFormat: js.Any = js.native
+  /* private */ var certificateCacheFormat: Any = js.native
   
-  /* private */ var certificateExpiry: js.Any = js.native
-  
-  var eagerRefreshThresholdMillis: Double = js.native
-  
-  var forceRefreshOnFailure: Boolean = js.native
+  /* private */ var certificateExpiry: Any = js.native
   
   /**
     * Generates URL for consent page landing.
@@ -66,19 +61,13 @@ class OAuth2Client () extends AuthClient {
     * code_challenge_method.
     *
     * For a full example see:
-    * https://github.com/googleapis/google-auth-library-nodejs/blob/master/samples/oauth2-codeVerifier.js
+    * https://github.com/googleapis/google-auth-library-nodejs/blob/main/samples/oauth2-codeVerifier.js
     */
   def generateCodeVerifierAsync(): js.Promise[CodeVerifierResults] = js.native
   
-  /**
-    * Get a non-expired access token, after refreshing if necessary
-    *
-    * @param callback Callback to call with the access token
-    */
-  def getAccessToken(): js.Promise[GetAccessTokenResponse] = js.native
   def getAccessToken(callback: GetAccessTokenCallback): Unit = js.native
   
-  /* private */ var getAccessTokenAsync: js.Any = js.native
+  /* private */ var getAccessTokenAsync: Any = js.native
   
   /**
     * Gets federated sign-on certificates to use for verifying identity tokens.
@@ -102,18 +91,6 @@ class OAuth2Client () extends AuthClient {
   
   def getIapPublicKeysAsync(): js.Promise[IapPublicKeysResponse] = js.native
   
-  /**
-    * The main authentication interface.  It takes an optional url which when
-    * present is the endpoint being accessed, and returns a Promise which
-    * resolves with authorization header fields.
-    *
-    * In OAuth2Client, the result has the form:
-    * { Authorization: 'Bearer <access_token_value>' }
-    * @param url The optional url being authorized
-    */
-  def getRequestHeaders(): js.Promise[Headers] = js.native
-  def getRequestHeaders(url: String): js.Promise[Headers] = js.native
-  
   /* protected */ def getRequestMetadataAsync(): js.Promise[RequestMetadataResponse] = js.native
   /* protected */ def getRequestMetadataAsync(url: String): js.Promise[RequestMetadataResponse] = js.native
   
@@ -127,7 +104,7 @@ class OAuth2Client () extends AuthClient {
   def getToken(options: GetTokenOptions): js.Promise[GetTokenResponse] = js.native
   def getToken(options: GetTokenOptions, callback: GetTokenCallback): Unit = js.native
   
-  /* private */ var getTokenAsync: js.Any = js.native
+  /* private */ var getTokenAsync: Any = js.native
   
   /**
     * Obtains information about the provisioned access token.  Especially useful
@@ -145,20 +122,29 @@ class OAuth2Client () extends AuthClient {
     */
   /* protected */ def isTokenExpiring(): Boolean = js.native
   
-  var projectId: js.UndefOr[String] = js.native
+  /**
+    * Returns a promise that resolves with AccessTokenResponse type if
+    * refreshHandler is defined.
+    * If not, nothing is returned.
+    */
+  /* private */ var processAndValidateRefreshHandler: Any = js.native
   
-  /* private */ var redirectUri: js.Any = js.native
+  @JSName("projectId")
+  var projectId_OAuth2Client: js.UndefOr[String] = js.native
+  
+  /* private */ var redirectUri: Any = js.native
   
   /**
     * Retrieves the access token using refresh token
     *
-    * @deprecated use getRequestHeaders instead.
     * @param callback callback
     */
   def refreshAccessToken(): js.Promise[RefreshAccessTokenResponse] = js.native
   def refreshAccessToken(callback: RefreshAccessTokenCallback): Unit = js.native
   
-  /* private */ var refreshAccessTokenAsync: js.Any = js.native
+  /* private */ var refreshAccessTokenAsync: Any = js.native
+  
+  var refreshHandler: js.UndefOr[GetRefreshHandlerCallback] = js.native
   
   /**
     * Refreshes the access token.
@@ -185,7 +171,7 @@ class OAuth2Client () extends AuthClient {
   def revokeCredentials(): GaxiosPromise[RevokeCredentialsResult] = js.native
   def revokeCredentials(callback: BodyResponseCallback[RevokeCredentialsResult]): Unit = js.native
   
-  /* private */ var revokeCredentialsAsync: js.Any = js.native
+  /* private */ var revokeCredentialsAsync: Any = js.native
   
   /**
     * Revokes the access given to token.
@@ -203,10 +189,10 @@ class OAuth2Client () extends AuthClient {
   def verifyIdToken(options: VerifyIdTokenOptions): js.Promise[LoginTicket] = js.native
   def verifyIdToken(
     options: VerifyIdTokenOptions,
-    callback: js.Function2[/* err */ Error | Null, /* login */ js.UndefOr[LoginTicket], Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* login */ js.UndefOr[LoginTicket], Unit]
   ): Unit = js.native
   
-  /* private */ var verifyIdTokenAsync: js.Any = js.native
+  /* private */ var verifyIdTokenAsync: Any = js.native
   
   def verifySignedJwtWithCerts(): Unit = js.native
   
@@ -286,49 +272,49 @@ object OAuth2Client {
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.CLOCK_SKEW_SECS_")
   @js.native
-  val CLOCK_SKEW_SECS_ : js.Any = js.native
+  val CLOCK_SKEW_SECS_ : Any = js.native
   
   /**
     * The base URL for auth endpoints.
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_AUTH_BASE_URL_")
   @js.native
-  val GOOGLE_OAUTH2_AUTH_BASE_URL_ : js.Any = js.native
+  val GOOGLE_OAUTH2_AUTH_BASE_URL_ : Any = js.native
   
   /**
     * Google Sign on certificates in JWK format.
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_")
   @js.native
-  val GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_ : js.Any = js.native
+  val GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_ : Any = js.native
   
   /**
     * Google Sign on certificates in PEM format.
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_")
   @js.native
-  val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : js.Any = js.native
+  val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : Any = js.native
   
   /**
     * Google Sign on certificates in JWK format.
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_")
   @js.native
-  val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : js.Any = js.native
+  val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : Any = js.native
   
   /**
     * The base endpoint to revoke tokens.
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_REVOKE_URL_")
   @js.native
-  val GOOGLE_OAUTH2_REVOKE_URL_ : js.Any = js.native
+  val GOOGLE_OAUTH2_REVOKE_URL_ : Any = js.native
   
   /**
     * The base endpoint for token retrieval.
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_TOKEN_URL_")
   @js.native
-  val GOOGLE_OAUTH2_TOKEN_URL_ : js.Any = js.native
+  val GOOGLE_OAUTH2_TOKEN_URL_ : Any = js.native
   
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_TOKEN_INFO_URL")
   @js.native
@@ -339,14 +325,14 @@ object OAuth2Client {
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.ISSUERS_")
   @js.native
-  val ISSUERS_ : js.Any = js.native
+  val ISSUERS_ : Any = js.native
   
   /**
     * Max Token Lifetime is one day in seconds
     */
   @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.MAX_TOKEN_LIFETIME_SECS_")
   @js.native
-  val MAX_TOKEN_LIFETIME_SECS_ : js.Any = js.native
+  val MAX_TOKEN_LIFETIME_SECS_ : Any = js.native
   
   /**
     * Generates an URL to revoke the given token.

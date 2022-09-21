@@ -57,7 +57,7 @@ object Schedule {
     
     inline def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     
-    inline def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
+    inline def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value*))
     
     inline def setDaysToBuild(value: ScheduleDays): Self = StObject.set(x, "daysToBuild", value.asInstanceOf[js.Any])
     

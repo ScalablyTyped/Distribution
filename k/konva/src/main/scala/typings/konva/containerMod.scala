@@ -2,11 +2,11 @@ package typings.konva
 
 import typings.konva.canvasMod.HitCanvas
 import typings.konva.canvasMod.SceneCanvas
+import typings.konva.contextMod.SceneContext
 import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
 import typings.konva.typesMod.GetSet
 import typings.konva.typesMod.IRect
-import typings.konva.utilMod.Collection
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,17 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object containerMod {
   
-  @JSImport("konva/types/Container", "Container")
+  @JSImport("konva/lib/Container", "Container")
   @js.native
   abstract class Container[ChildType /* <: Node[NodeConfig] */] () extends Node[ContainerConfig] {
     def this(config: ContainerConfig) = this()
     
-    /* private */ var _descendants: js.Any = js.native
+    /* private */ var _descendants: Any = js.native
     
-    def _drawChildren(drawMethod: js.Any, canvas: js.Any, top: js.Any): Unit = js.native
+    def _drawChildren(drawMethod: Any, canvas: Any, top: Any): Unit = js.native
     
-    def _generalFind[ChildNode /* <: Node[NodeConfig] */](selector: String, findOne: Boolean): Collection[ChildNode] = js.native
-    def _generalFind[ChildNode /* <: Node[NodeConfig] */](selector: js.Function, findOne: Boolean): Collection[ChildNode] = js.native
+    def _generalFind[ChildNode /* <: Node[NodeConfig] */](selector: String, findOne: Boolean): js.Array[ChildNode] = js.native
+    def _generalFind[ChildNode /* <: Node[NodeConfig] */](selector: js.Function, findOne: Boolean): js.Array[ChildNode] = js.native
     
     def _setChildrenIndices(): Unit = js.native
     
@@ -32,8 +32,7 @@ object containerMod {
     
     def add(children: ChildType*): this.type = js.native
     
-    @JSName("children")
-    var children_Container: Collection[ChildType] = js.native
+    var children: js.UndefOr[js.Array[ChildType]] = js.native
     
     def clip(): IRect = js.native
     def clip(v: IRect): this.type = js.native
@@ -77,18 +76,15 @@ object containerMod {
     def drawScene(can: SceneCanvas): this.type = js.native
     def drawScene(can: SceneCanvas, top: Node[NodeConfig]): this.type = js.native
     
-    def find[ChildNode /* <: Node[NodeConfig] */](selector: js.Any): Collection[ChildNode] = js.native
+    def find[ChildNode /* <: Node[NodeConfig] */](selector: Any): js.Array[ChildNode] = js.native
     
     def findOne[ChildNode /* <: Node[NodeConfig] */](selector: String): ChildNode = js.native
     def findOne[ChildNode /* <: Node[NodeConfig] */](selector: js.Function): ChildNode = js.native
     
-    def get(selector: js.Any): Collection[Node[NodeConfig]] = js.native
+    def getAllIntersections(pos: Any): js.Array[Any] = js.native
     
-    def getAllIntersections(pos: js.Any): js.Array[js.Any] = js.native
-    
-    def getChildren(filterFunc: js.Function1[/* item */ Node[NodeConfig], Boolean]): Collection[Node[NodeConfig]] = js.native
-    
-    def isAncestorOf(node: Node[NodeConfig]): Boolean = js.native
+    def getChildren(): js.Array[ChildType] = js.native
+    def getChildren(filterFunc: js.Function1[/* item */ Node[NodeConfig], Boolean]): js.Array[ChildType] = js.native
     
     def removeChildren(): this.type = js.native
   }
@@ -99,7 +95,7 @@ object containerMod {
     
     var clearBeforeDraw: js.UndefOr[Boolean] = js.undefined
     
-    var clipFunc: js.UndefOr[js.Function1[/* ctx */ CanvasRenderingContext2D, Unit]] = js.undefined
+    var clipFunc: js.UndefOr[js.Function1[/* ctx */ SceneContext, Unit]] = js.undefined
     
     var clipHeight: js.UndefOr[Double] = js.undefined
     
@@ -122,7 +118,7 @@ object containerMod {
       
       inline def setClearBeforeDrawUndefined: Self = StObject.set(x, "clearBeforeDraw", js.undefined)
       
-      inline def setClipFunc(value: /* ctx */ CanvasRenderingContext2D => Unit): Self = StObject.set(x, "clipFunc", js.Any.fromFunction1(value))
+      inline def setClipFunc(value: /* ctx */ SceneContext => Unit): Self = StObject.set(x, "clipFunc", js.Any.fromFunction1(value))
       
       inline def setClipFuncUndefined: Self = StObject.set(x, "clipFunc", js.undefined)
       

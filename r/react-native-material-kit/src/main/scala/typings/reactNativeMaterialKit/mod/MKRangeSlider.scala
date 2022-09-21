@@ -6,12 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-kit", "MKRangeSlider")
 @js.native
-class MKRangeSlider protected ()
-  extends MKComponent[MKRangeSliderProperties, js.Any] {
+open class MKRangeSlider protected () extends MKComponent[MKRangeSliderProperties, Any] {
   def this(props: MKRangeSliderProperties) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MKRangeSliderProperties, context: js.Any) = this()
+  def this(props: MKRangeSliderProperties, context: Any) = this()
 }

@@ -1,6 +1,6 @@
 package typings.rollup.mod
 
-import typings.rollup.anon.Define
+import typings.rollup.rollupBooleans.`false`
 import typings.rollup.rollupStrings.`inline`
 import typings.rollup.rollupStrings.auto
 import typings.rollup.rollupStrings.default
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OutputOptions extends StObject {
   
-  var amd: js.UndefOr[Define] = js.undefined
+  var amd: js.UndefOr[AmdOptions] = js.undefined
   
   var assetFileNames: js.UndefOr[String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String])] = js.undefined
   
@@ -48,6 +48,8 @@ trait OutputOptions extends StObject {
   
   var freeze: js.UndefOr[Boolean] = js.undefined
   
+  var generatedCode: js.UndefOr[GeneratedCodePreset | GeneratedCodeOptions] = js.undefined
+  
   var globals: js.UndefOr[GlobalsOption] = js.undefined
   
   var hoistTransitiveImports: js.UndefOr[Boolean] = js.undefined
@@ -66,6 +68,7 @@ trait OutputOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
+  /** @deprecated Use "generatedCode.symbols" instead. */
   var namespaceToStringTag: js.UndefOr[Boolean] = js.undefined
   
   var noConflict: js.UndefOr[Boolean] = js.undefined
@@ -74,15 +77,20 @@ trait OutputOptions extends StObject {
   
   var paths: js.UndefOr[OptionsPaths] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[OutputPlugin]] = js.undefined
+  var plugins: js.UndefOr[js.Array[js.UndefOr[OutputPlugin | Null | `false`]]] = js.undefined
   
+  /** @deprecated Use "generatedCode.constBindings" instead. */
   var preferConst: js.UndefOr[Boolean] = js.undefined
   
   var preserveModules: js.UndefOr[Boolean] = js.undefined
   
   var preserveModulesRoot: js.UndefOr[String] = js.undefined
   
+  var sanitizeFileName: js.UndefOr[Boolean | (js.Function1[/* fileName */ String, String])] = js.undefined
+  
   var sourcemap: js.UndefOr[Boolean | `inline` | hidden] = js.undefined
+  
+  var sourcemapBaseUrl: js.UndefOr[String] = js.undefined
   
   var sourcemapExcludeSources: js.UndefOr[Boolean] = js.undefined
   
@@ -93,6 +101,8 @@ trait OutputOptions extends StObject {
   var strict: js.UndefOr[Boolean] = js.undefined
   
   var systemNullSetters: js.UndefOr[Boolean] = js.undefined
+  
+  var validate: js.UndefOr[Boolean] = js.undefined
 }
 object OutputOptions {
   
@@ -103,7 +113,7 @@ object OutputOptions {
   
   extension [Self <: OutputOptions](x: Self) {
     
-    inline def setAmd(value: Define): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
+    inline def setAmd(value: AmdOptions): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     
     inline def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
     
@@ -177,6 +187,10 @@ object OutputOptions {
     
     inline def setFreezeUndefined: Self = StObject.set(x, "freeze", js.undefined)
     
+    inline def setGeneratedCode(value: GeneratedCodePreset | GeneratedCodeOptions): Self = StObject.set(x, "generatedCode", value.asInstanceOf[js.Any])
+    
+    inline def setGeneratedCodeUndefined: Self = StObject.set(x, "generatedCode", js.undefined)
+    
     inline def setGlobals(value: GlobalsOption): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     inline def setGlobalsFunction1(value: /* name */ String => String): Self = StObject.set(x, "globals", js.Any.fromFunction1(value))
@@ -209,7 +223,7 @@ object OutputOptions {
     
     inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => String | Null | Unit): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
     inline def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
     
@@ -241,11 +255,11 @@ object OutputOptions {
     
     inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    inline def setPlugins(value: js.Array[OutputPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[js.UndefOr[OutputPlugin | Null | `false`]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: OutputPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: (js.UndefOr[OutputPlugin | Null | `false`])*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPreferConst(value: Boolean): Self = StObject.set(x, "preferConst", value.asInstanceOf[js.Any])
     
@@ -259,7 +273,17 @@ object OutputOptions {
     
     inline def setPreserveModulesUndefined: Self = StObject.set(x, "preserveModules", js.undefined)
     
+    inline def setSanitizeFileName(value: Boolean | (js.Function1[/* fileName */ String, String])): Self = StObject.set(x, "sanitizeFileName", value.asInstanceOf[js.Any])
+    
+    inline def setSanitizeFileNameFunction1(value: /* fileName */ String => String): Self = StObject.set(x, "sanitizeFileName", js.Any.fromFunction1(value))
+    
+    inline def setSanitizeFileNameUndefined: Self = StObject.set(x, "sanitizeFileName", js.undefined)
+    
     inline def setSourcemap(value: Boolean | `inline` | hidden): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
+    
+    inline def setSourcemapBaseUrl(value: String): Self = StObject.set(x, "sourcemapBaseUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSourcemapBaseUrlUndefined: Self = StObject.set(x, "sourcemapBaseUrl", js.undefined)
     
     inline def setSourcemapExcludeSources(value: Boolean): Self = StObject.set(x, "sourcemapExcludeSources", value.asInstanceOf[js.Any])
     
@@ -282,5 +306,9 @@ object OutputOptions {
     inline def setSystemNullSetters(value: Boolean): Self = StObject.set(x, "systemNullSetters", value.asInstanceOf[js.Any])
     
     inline def setSystemNullSettersUndefined: Self = StObject.set(x, "systemNullSetters", js.undefined)
+    
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

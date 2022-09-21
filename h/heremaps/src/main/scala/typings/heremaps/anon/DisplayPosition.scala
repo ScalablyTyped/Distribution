@@ -46,6 +46,6 @@ object DisplayPosition {
     
     inline def setNavigationPosition(value: js.Array[Longitude]): Self = StObject.set(x, "NavigationPosition", value.asInstanceOf[js.Any])
     
-    inline def setNavigationPositionVarargs(value: Longitude*): Self = StObject.set(x, "NavigationPosition", js.Array(value :_*))
+    inline def setNavigationPositionVarargs(value: Longitude*): Self = StObject.set(x, "NavigationPosition", js.Array(value*))
   }
 }

@@ -19,6 +19,6 @@ object WorkerRegistrationUpdatedEvent {
     
     inline def setRegistrations(value: js.Array[ServiceWorkerRegistration]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
     
-    inline def setRegistrationsVarargs(value: ServiceWorkerRegistration*): Self = StObject.set(x, "registrations", js.Array(value :_*))
+    inline def setRegistrationsVarargs(value: ServiceWorkerRegistration*): Self = StObject.set(x, "registrations", js.Array(value*))
   }
 }

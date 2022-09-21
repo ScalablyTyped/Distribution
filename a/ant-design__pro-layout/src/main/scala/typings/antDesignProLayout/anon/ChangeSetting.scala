@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChangeSetting extends StObject {
   
-  def changeSetting(key: String, value: js.Any): Unit = js.native
-  def changeSetting(key: String, value: js.Any, hideLoading: Boolean): Unit = js.native
+  def changeSetting(key: String, value: Any): Unit = js.native
+  def changeSetting(key: String, value: Any, hideLoading: Boolean): Unit = js.native
+  
+  var hashId: String = js.native
   
   var settings: PartialProSettings = js.native
 }

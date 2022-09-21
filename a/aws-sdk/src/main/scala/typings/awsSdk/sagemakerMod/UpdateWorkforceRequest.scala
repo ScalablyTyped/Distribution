@@ -20,6 +20,11 @@ trait UpdateWorkforceRequest extends StObject {
     * The name of the private workforce that you want to update. You can find your workforce name by using the operation.
     */
   var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName
+  
+  /**
+    * Use this parameter to update your VPC configuration for a workforce.
+    */
+  var WorkforceVpcConfig: js.UndefOr[WorkforceVpcConfigRequest] = js.undefined
 }
 object UpdateWorkforceRequest {
   
@@ -39,5 +44,9 @@ object UpdateWorkforceRequest {
     inline def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
     inline def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
+    
+    inline def setWorkforceVpcConfig(value: WorkforceVpcConfigRequest): Self = StObject.set(x, "WorkforceVpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setWorkforceVpcConfigUndefined: Self = StObject.set(x, "WorkforceVpcConfig", js.undefined)
   }
 }

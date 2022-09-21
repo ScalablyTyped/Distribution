@@ -1,9 +1,5 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,49 +9,32 @@ trait ParamsResourceCommentsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Returns the comments with the given IDs for One Platform.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var id: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The id parameter specifies a comma-separated list of comment IDs for the
-    * resources that are being retrieved. In a comment resource, the id
-    * property specifies the comment's ID.
-    */
-  var id: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The maxResults parameter specifies the maximum number of items that
-    * should be returned in the result set.  Note: This parameter is not
-    * supported for use in conjunction with the id parameter.
+    * The *maxResults* parameter specifies the maximum number of items that should be returned in the result set.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * The pageToken parameter identifies a specific page in the result set that
-    * should be returned. In an API response, the nextPageToken property
-    * identifies the next page of the result that can be retrieved.  Note: This
-    * parameter is not supported for use in conjunction with the id parameter.
+    * The *pageToken* parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The parentId parameter specifies the ID of the comment for which replies
-    * should be retrieved.  Note: YouTube currently supports replies only for
-    * top-level comments. However, replies to replies may be supported in the
-    * future.
+    * Returns replies to the specified comment. Note, currently YouTube features only one level of replies (ie replies to top level comments). However replies to replies may be supported in the future.
     */
   var parentId: js.UndefOr[String] = js.undefined
   
   /**
-    * The part parameter specifies a comma-separated list of one or more
-    * comment resource properties that the API response will include.
+    * The *part* parameter specifies a comma-separated list of one or more comment resource properties that the API response will include.
     */
-  var part: js.UndefOr[String] = js.undefined
+  var part: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * This parameter indicates whether the API should return comments formatted
-    * as HTML or as plain text.
+    * The requested text format for the returned comments.
     */
   var textFormat: js.UndefOr[String] = js.undefined
 }
@@ -68,13 +47,11 @@ object ParamsResourceCommentsList {
   
   extension [Self <: ParamsResourceCommentsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -88,9 +65,11 @@ object ParamsResourceCommentsList {
     
     inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setTextFormat(value: String): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     

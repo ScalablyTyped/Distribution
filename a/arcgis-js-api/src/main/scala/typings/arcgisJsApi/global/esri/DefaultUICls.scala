@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-DefaultUI.html)
   */
-class DefaultUICls ()
+open class DefaultUICls ()
   extends StObject
      with typings.arcgisJsApi.esri.DefaultUI {
   def this(properties: DefaultUIProperties) = this()

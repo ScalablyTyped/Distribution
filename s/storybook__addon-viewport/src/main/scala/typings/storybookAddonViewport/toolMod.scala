@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object toolMod {
   
-  @JSImport("@storybook/addon-viewport/dist/Tool", "ViewportTool")
+  @JSImport("@storybook/addon-viewport/dist/ts3.9/Tool", "ViewportTool")
   @js.native
   val ViewportTool: FunctionComponent[js.Object] = js.native
 }

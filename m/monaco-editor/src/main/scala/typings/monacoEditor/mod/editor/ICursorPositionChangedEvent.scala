@@ -47,7 +47,7 @@ object ICursorPositionChangedEvent {
     
     inline def setSecondaryPositions(value: js.Array[Position]): Self = StObject.set(x, "secondaryPositions", value.asInstanceOf[js.Any])
     
-    inline def setSecondaryPositionsVarargs(value: Position*): Self = StObject.set(x, "secondaryPositions", js.Array(value :_*))
+    inline def setSecondaryPositionsVarargs(value: Position*): Self = StObject.set(x, "secondaryPositions", js.Array(value*))
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

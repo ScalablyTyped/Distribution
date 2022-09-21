@@ -81,13 +81,13 @@ object ChampionSpellDto {
     
     inline def setAltimages(value: js.Array[ImageDto]): Self = StObject.set(x, "altimages", value.asInstanceOf[js.Any])
     
-    inline def setAltimagesVarargs(value: ImageDto*): Self = StObject.set(x, "altimages", js.Array(value :_*))
+    inline def setAltimagesVarargs(value: ImageDto*): Self = StObject.set(x, "altimages", js.Array(value*))
     
     inline def setCooldown(value: js.Array[Double]): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     inline def setCooldownBurn(value: String): Self = StObject.set(x, "cooldownBurn", value.asInstanceOf[js.Any])
     
-    inline def setCooldownVarargs(value: Double*): Self = StObject.set(x, "cooldown", js.Array(value :_*))
+    inline def setCooldownVarargs(value: Double*): Self = StObject.set(x, "cooldown", js.Array(value*))
     
     inline def setCost(value: js.Array[Double]): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
@@ -95,7 +95,7 @@ object ChampionSpellDto {
     
     inline def setCostType(value: String): Self = StObject.set(x, "costType", value.asInstanceOf[js.Any])
     
-    inline def setCostVarargs(value: Double*): Self = StObject.set(x, "cost", js.Array(value :_*))
+    inline def setCostVarargs(value: Double*): Self = StObject.set(x, "cost", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -103,9 +103,9 @@ object ChampionSpellDto {
     
     inline def setEffectBurn(value: js.Array[String]): Self = StObject.set(x, "effectBurn", value.asInstanceOf[js.Any])
     
-    inline def setEffectBurnVarargs(value: String*): Self = StObject.set(x, "effectBurn", js.Array(value :_*))
+    inline def setEffectBurnVarargs(value: String*): Self = StObject.set(x, "effectBurn", js.Array(value*))
     
-    inline def setEffectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "effect", js.Array(value :_*))
+    inline def setEffectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "effect", js.Array(value*))
     
     inline def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
@@ -121,7 +121,7 @@ object ChampionSpellDto {
     
     inline def setRangeBurn(value: String): Self = StObject.set(x, "rangeBurn", value.asInstanceOf[js.Any])
     
-    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
@@ -133,6 +133,6 @@ object ChampionSpellDto {
     
     inline def setVars(value: js.Array[SpellVarsDto]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     
-    inline def setVarsVarargs(value: SpellVarsDto*): Self = StObject.set(x, "vars", js.Array(value :_*))
+    inline def setVarsVarargs(value: SpellVarsDto*): Self = StObject.set(x, "vars", js.Array(value*))
   }
 }

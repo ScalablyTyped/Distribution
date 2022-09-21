@@ -38,10 +38,28 @@ object ModuleKind extends StObject {
   /* 6 */ val ES2020: typings.typescript.mod.ModuleKind.ES2020 & Double = js.native
   
   @js.native
+  sealed trait ES2022
+    extends StObject
+       with ModuleKind
+  /* 7 */ val ES2022: typings.typescript.mod.ModuleKind.ES2022 & Double = js.native
+  
+  @js.native
   sealed trait ESNext
     extends StObject
        with ModuleKind
   /* 99 */ val ESNext: typings.typescript.mod.ModuleKind.ESNext & Double = js.native
+  
+  @js.native
+  sealed trait Node16
+    extends StObject
+       with ModuleKind
+  /* 100 */ val Node16: typings.typescript.mod.ModuleKind.Node16 & Double = js.native
+  
+  @js.native
+  sealed trait NodeNext
+    extends StObject
+       with ModuleKind
+  /* 199 */ val NodeNext: typings.typescript.mod.ModuleKind.NodeNext & Double = js.native
   
   @js.native
   sealed trait None

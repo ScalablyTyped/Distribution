@@ -40,6 +40,6 @@ object DelegationSet {
     
     inline def setNameServers(value: DelegationSetNameServers): Self = StObject.set(x, "NameServers", value.asInstanceOf[js.Any])
     
-    inline def setNameServersVarargs(value: DNSName*): Self = StObject.set(x, "NameServers", js.Array(value :_*))
+    inline def setNameServersVarargs(value: DNSName*): Self = StObject.set(x, "NameServers", js.Array(value*))
   }
 }

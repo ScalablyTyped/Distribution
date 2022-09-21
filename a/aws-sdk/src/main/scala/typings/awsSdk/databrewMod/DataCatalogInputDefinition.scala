@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataCatalogInputDefinition extends StObject {
   
   /**
-    * The unique identifier of the AWS account that holds the Data Catalog that stores the data.
+    * The unique identifier of the Amazon Web Services account that holds the Data Catalog that stores the data.
     */
   var CatalogId: js.UndefOr[typings.awsSdk.databrewMod.CatalogId] = js.undefined
   
@@ -22,7 +22,7 @@ trait DataCatalogInputDefinition extends StObject {
   var TableName: typings.awsSdk.databrewMod.TableName
   
   /**
-    * An Amazon location that AWS Glue Data Catalog can use as a temporary directory.
+    * Represents an Amazon location where DataBrew can store intermediate results.
     */
   var TempDirectory: js.UndefOr[S3Location] = js.undefined
 }

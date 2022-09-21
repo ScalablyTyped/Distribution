@@ -40,7 +40,7 @@ object IFunctionDef {
     
     inline def setNodeDefUndefined: Self = StObject.set(x, "nodeDef", js.undefined)
     
-    inline def setNodeDefVarargs(value: INodeDef*): Self = StObject.set(x, "nodeDef", js.Array(value :_*))
+    inline def setNodeDefVarargs(value: INodeDef*): Self = StObject.set(x, "nodeDef", js.Array(value*))
     
     inline def setRet(value: StringDictionary[String]): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
     

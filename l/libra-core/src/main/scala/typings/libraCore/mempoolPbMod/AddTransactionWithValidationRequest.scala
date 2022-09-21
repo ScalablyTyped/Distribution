@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.transactionPbMod.SignedTransaction
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest")
 @js.native
-class AddTransactionWithValidationRequest () extends Message {
+open class AddTransactionWithValidationRequest () extends Message {
   
   def clearSignedTxn(): Unit = js.native
   
@@ -44,7 +43,7 @@ object AddTransactionWithValidationRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): AddTransactionWithValidationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AddTransactionWithValidationRequest]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): AddTransactionWithValidationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AddTransactionWithValidationRequest]
   
   inline def deserializeBinaryFromReader(message: AddTransactionWithValidationRequest, reader: BinaryReader): AddTransactionWithValidationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AddTransactionWithValidationRequest]
   

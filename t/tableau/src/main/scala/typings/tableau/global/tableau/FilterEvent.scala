@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.FilterEvent")
 @js.native
-class FilterEvent ()
+open class FilterEvent ()
   extends StObject
      with typings.tableau.tableau.FilterEvent {
   

@@ -13,7 +13,7 @@ object radioMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/types/Radio", JSImport.Default)
   @js.native
-  class default () extends RadiosType
+  open class default () extends RadiosType
   object default {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Radio", JSImport.Default)
@@ -70,11 +70,11 @@ object radioMod {
   
   @js.native
   trait RadiosType
-    extends Component[RadiosTypeProps, js.Object, js.Any] {
+    extends Component[RadiosTypeProps, js.Object, Any] {
     
-    /* private */ var renderRadioButton: js.Any = js.native
+    /* private */ var renderRadioButton: Any = js.native
     
-    /* private */ var renderRadioButtonList: js.Any = js.native
+    /* private */ var renderRadioButtonList: Any = js.native
   }
   
   trait RadiosTypeKnob

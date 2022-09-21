@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.PullInstantiatedTypeParameterSymbol")
 @js.native
-class PullInstantiatedTypeParameterSymbol protected ()
+open class PullInstantiatedTypeParameterSymbol protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullInstantiatedTypeParameterSymbol {
   def this(

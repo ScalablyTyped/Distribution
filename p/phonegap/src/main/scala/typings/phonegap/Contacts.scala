@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Contacts extends StObject {
   
   def create(): Contact = js.native
-  def create(properties: js.Any): Contact = js.native
+  def create(properties: Any): Contact = js.native
   
   def find(
     contactFields: js.Array[String],

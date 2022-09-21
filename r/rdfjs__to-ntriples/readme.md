@@ -1,19 +1,19 @@
 
 # Scala.js typings for rdfjs__to-ntriples
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
-Converts RDFJS Terms and Quads to N-Triple strings
+Converts RDF/JS Terms, Quads and Datasets to N-Triple strings
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/to-ntriples |
 | Keywords           | rdf, rdfjs, ntriples, string |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 53683 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 36275.666666666664 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/to-ntriples)

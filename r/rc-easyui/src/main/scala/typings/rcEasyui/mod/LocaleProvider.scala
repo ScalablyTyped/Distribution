@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rc-easyui", "LocaleProvider")
 @js.native
-class LocaleProvider protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(e: js.Any, args: js.Any*) = this()
+open class LocaleProvider protected ()
+  extends Component[Any, js.Object, Any] {
+  def this(e: Any, args: Any*) = this()
   
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MLocaleProvider(e: js.Any): Unit = js.native
+  def componentDidUpdate_MLocaleProvider(e: Any): Unit = js.native
   
-  def getChildContext(): js.Any = js.native
+  def getChildContext(): Any = js.native
 }
 object LocaleProvider {
   
@@ -22,7 +22,7 @@ object LocaleProvider {
     
     object locale {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "LocaleProvider.childContextTypes.locale")
       @js.native
@@ -31,12 +31,12 @@ object LocaleProvider {
       // Circular reference from rc_easyui.LocaleProvider.childContextTypes.locale
       @JSImport("rc-easyui", "LocaleProvider.childContextTypes.locale.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object t {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "LocaleProvider.childContextTypes.t")
       @js.native
@@ -45,7 +45,7 @@ object LocaleProvider {
       // Circular reference from rc_easyui.LocaleProvider.childContextTypes.t
       @JSImport("rc-easyui", "LocaleProvider.childContextTypes.t.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
 }

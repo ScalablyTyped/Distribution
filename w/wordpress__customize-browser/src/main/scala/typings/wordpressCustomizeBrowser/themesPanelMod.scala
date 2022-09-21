@@ -11,7 +11,7 @@ object themesPanelMod {
   
   @JSImport("@wordpress/customize-browser/ThemesPanel", "ThemesPanel")
   @js.native
-  class ThemesPanel protected () extends Panel {
+  open class ThemesPanel protected () extends Panel {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
@@ -20,11 +20,11 @@ object themesPanelMod {
     
     def deleteTheme(event: Event): Unit = js.native
     
-    def installTheme(event: Event): Promise[js.Any, js.Any, js.Any] = js.native
+    def installTheme(event: Event): Promise[Any, Any, Any] = js.native
     
     var installingThemes: js.Array[String] = js.native
     
-    def loadThemePreview(themeId: String): Promise[js.Any, js.Any, js.Any] = js.native
+    def loadThemePreview(themeId: String): Promise[Any, Any, Any] = js.native
     
     def updateTheme(event: Event): Unit = js.native
   }

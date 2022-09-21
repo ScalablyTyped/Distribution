@@ -12,7 +12,7 @@ object hashSigMod {
   
   @JSImport("nodegit/hash-sig", "Hashsig")
   @js.native
-  class Hashsig () extends StObject {
+  open class Hashsig () extends StObject {
     
     def compare(b: Hashsig): Double = js.native
     

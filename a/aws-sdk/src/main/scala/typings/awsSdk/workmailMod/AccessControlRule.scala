@@ -14,12 +14,12 @@ trait AccessControlRule extends StObject {
   /**
     * The date that the rule was created.
     */
-  var DateCreated: js.UndefOr[Timestamp] = js.undefined
+  var DateCreated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date that the rule was modified.
     */
-  var DateModified: js.UndefOr[Timestamp] = js.undefined
+  var DateModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The rule description.
@@ -74,13 +74,13 @@ object AccessControlRule {
     
     inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    inline def setActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "Actions", js.Array(value*))
     
-    inline def setDateCreated(value: Timestamp): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    inline def setDateModified(value: Timestamp): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
+    inline def setDateModified(value: js.Date): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
     
     inline def setDateModifiedUndefined: Self = StObject.set(x, "DateModified", js.undefined)
     
@@ -96,7 +96,7 @@ object AccessControlRule {
     
     inline def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
     
-    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
+    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "IpRanges", js.Array(value*))
     
     inline def setName(value: AccessControlRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -106,24 +106,24 @@ object AccessControlRule {
     
     inline def setNotActionsUndefined: Self = StObject.set(x, "NotActions", js.undefined)
     
-    inline def setNotActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "NotActions", js.Array(value :_*))
+    inline def setNotActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "NotActions", js.Array(value*))
     
     inline def setNotIpRanges(value: IpRangeList): Self = StObject.set(x, "NotIpRanges", value.asInstanceOf[js.Any])
     
     inline def setNotIpRangesUndefined: Self = StObject.set(x, "NotIpRanges", js.undefined)
     
-    inline def setNotIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "NotIpRanges", js.Array(value :_*))
+    inline def setNotIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "NotIpRanges", js.Array(value*))
     
     inline def setNotUserIds(value: UserIdList): Self = StObject.set(x, "NotUserIds", value.asInstanceOf[js.Any])
     
     inline def setNotUserIdsUndefined: Self = StObject.set(x, "NotUserIds", js.undefined)
     
-    inline def setNotUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "NotUserIds", js.Array(value :_*))
+    inline def setNotUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "NotUserIds", js.Array(value*))
     
     inline def setUserIds(value: UserIdList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
     inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    inline def setUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "UserIds", js.Array(value*))
   }
 }

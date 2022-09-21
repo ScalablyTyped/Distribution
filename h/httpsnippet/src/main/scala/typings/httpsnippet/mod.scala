@@ -14,7 +14,7 @@ object mod {
   /*~ Write your module's methods and properties in this class */
   @JSImport("httpsnippet", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with HTTPSnippet {
     def this(data: Data) = this()

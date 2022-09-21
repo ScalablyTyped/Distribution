@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List Folders Response.
-  */
 trait SchemaListFoldersResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListFoldersResponse {
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: SchemaFolder*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: SchemaFolder*): Self = StObject.set(x, "folders", js.Array(value*))
   }
 }

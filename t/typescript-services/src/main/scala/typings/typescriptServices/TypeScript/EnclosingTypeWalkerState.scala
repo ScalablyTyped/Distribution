@@ -21,7 +21,7 @@ object EnclosingTypeWalkerState {
     
     inline def set_currentSymbols(value: js.Array[PullSymbol]): Self = StObject.set(x, "_currentSymbols", value.asInstanceOf[js.Any])
     
-    inline def set_currentSymbolsVarargs(value: PullSymbol*): Self = StObject.set(x, "_currentSymbols", js.Array(value :_*))
+    inline def set_currentSymbolsVarargs(value: PullSymbol*): Self = StObject.set(x, "_currentSymbols", js.Array(value*))
     
     inline def set_hasSetEnclosingType(value: Boolean): Self = StObject.set(x, "_hasSetEnclosingType", value.asInstanceOf[js.Any])
   }

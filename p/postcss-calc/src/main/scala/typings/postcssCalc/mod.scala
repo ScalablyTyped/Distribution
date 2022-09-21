@@ -1,24 +1,42 @@
 package typings.postcssCalc
 
-import org.scalablytyped.runtime.Shortcut
-import typings.postcss.mod.Plugin_
+import typings.postcss.mod.Plugin
+import typings.postcssCalc.postcssCalcBooleans.`false`
+import typings.postcssCalc.postcssCalcBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  /**
+    * @typedef {{precision?: number | false,
+    *          preserve?: boolean,
+    *          warnWhenCannotResolve?: boolean,
+    *          mediaQueries?: boolean,
+    *          selectors?: boolean}} PostCssCalcOptions
+    */
+  /**
+    * @type {import('postcss').PluginCreator<PostCssCalcOptions>}
+    * @param {PostCssCalcOptions} opts
+    * @return {import('postcss').Plugin}
+    */
+  inline def apply(opts: PostCssCalcOptions): Plugin = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   @JSImport("postcss-calc", JSImport.Namespace)
   @js.native
-  val ^ : Calc = js.native
+  val ^ : js.Any = js.native
   
-  type Calc = Plugin_[Options]
+  @JSImport("postcss-calc", "postcss")
+  @js.native
+  def postcss: `true` = js.native
+  inline def postcss_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("postcss")(x.asInstanceOf[js.Any])
   
-  trait Options extends StObject {
+  trait PostCssCalcOptions extends StObject {
     
     var mediaQueries: js.UndefOr[Boolean] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.undefined
+    var precision: js.UndefOr[Double | `false`] = js.undefined
     
     var preserve: js.UndefOr[Boolean] = js.undefined
     
@@ -26,20 +44,20 @@ object mod extends Shortcut {
     
     var warnWhenCannotResolve: js.UndefOr[Boolean] = js.undefined
   }
-  object Options {
+  object PostCssCalcOptions {
     
-    inline def apply(): Options = {
+    inline def apply(): PostCssCalcOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[PostCssCalcOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: PostCssCalcOptions](x: Self) {
       
       inline def setMediaQueries(value: Boolean): Self = StObject.set(x, "mediaQueries", value.asInstanceOf[js.Any])
       
       inline def setMediaQueriesUndefined: Self = StObject.set(x, "mediaQueries", js.undefined)
       
-      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double | `false`): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
       inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
@@ -56,9 +74,4 @@ object mod extends Shortcut {
       inline def setWarnWhenCannotResolveUndefined: Self = StObject.set(x, "warnWhenCannotResolve", js.undefined)
     }
   }
-  
-  type _To = Calc
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Calc = ^
 }

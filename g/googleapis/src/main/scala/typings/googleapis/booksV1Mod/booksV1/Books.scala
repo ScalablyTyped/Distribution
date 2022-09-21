@@ -7,24 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Books API
-  *
-  * Searches for books and manages your Google Books library.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const books = google.books('v1');
-  *
-  * @namespace books
-  * @type {Function}
-  * @version v1
-  * @variation v1
-  * @param {object=} options Options for Books
-  */
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Books")
 @js.native
-class Books protected () extends StObject {
+open class Books protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   

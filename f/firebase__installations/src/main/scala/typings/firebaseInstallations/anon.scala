@@ -32,7 +32,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@firebase/installations.@firebase/installations/dist/src/interfaces/app-config.AppConfig> */
+  /* Inlined std.Partial<@firebase/installations.@firebase/installations/dist/src/interfaces/installation-impl.AppConfig> */
   trait PartialAppConfig extends StObject {
     
     var apiKey: js.UndefOr[String] = js.undefined

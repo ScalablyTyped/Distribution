@@ -27,6 +27,10 @@ object levelupStrings {
   inline def del: del = "del".asInstanceOf[del]
   
   @js.native
+  sealed trait `new` extends StObject
+  inline def `new`: `new` = "new".asInstanceOf[`new`]
+  
+  @js.native
   sealed trait open extends StObject
   inline def open: open = "open".asInstanceOf[open]
   

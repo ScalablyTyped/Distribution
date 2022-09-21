@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateMembersRequest extends StObject {
   
   /**
-    * A list of account ID and email address pairs of the accounts that you want to associate with the master GuardDuty account.
+    * A list of account ID and email address pairs of the accounts that you want to associate with the GuardDuty administrator account.
     */
   var AccountDetails: typings.awsSdk.guarddutyMod.AccountDetails
   
@@ -27,7 +27,7 @@ object CreateMembersRequest {
     
     inline def setAccountDetails(value: AccountDetails): Self = StObject.set(x, "AccountDetails", value.asInstanceOf[js.Any])
     
-    inline def setAccountDetailsVarargs(value: AccountDetail*): Self = StObject.set(x, "AccountDetails", js.Array(value :_*))
+    inline def setAccountDetailsVarargs(value: AccountDetail*): Self = StObject.set(x, "AccountDetails", js.Array(value*))
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }

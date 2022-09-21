@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CheckboxSettings extends StObject {
   
   //Events
-  var change: js.UndefOr[js.Function2[/* e */ js.Any, /* state */ String, js.Any]] = js.undefined
+  var change: js.UndefOr[js.Function2[/* e */ Any, /* state */ String, Any]] = js.undefined
   
   var iconsLibrary: js.UndefOr[String] = js.undefined
   
@@ -23,7 +23,7 @@ object CheckboxSettings {
   
   extension [Self <: CheckboxSettings](x: Self) {
     
-    inline def setChange(value: (/* e */ js.Any, /* state */ String) => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
+    inline def setChange(value: (/* e */ Any, /* state */ String) => Any): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     

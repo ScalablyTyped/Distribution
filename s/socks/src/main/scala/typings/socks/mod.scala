@@ -1,6 +1,6 @@
 package typings.socks
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.socks.constantsMod.SocksClientChainOptions
 import typings.socks.constantsMod.SocksClientEstablishedEvent
 import typings.socks.constantsMod.SocksClientOptions
@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("socks", "SocksClient")
   @js.native
-  class SocksClient protected ()
+  open class SocksClient protected ()
     extends typings.socks.socksclientMod.SocksClient {
     def this(options: SocksClientOptions) = this()
   }
@@ -33,7 +33,14 @@ object mod {
       */
     /* static member */
     inline def createConnection(options: SocksClientOptions): js.Promise[SocksClientEstablishedEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
-    inline def createConnection(options: SocksClientOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
+    inline def createConnection(
+      options: SocksClientOptions,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* info */ js.UndefOr[SocksClientEstablishedEvent], 
+          Unit
+        ]
+    ): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
     
     /**
       * Creates a new SOCKS connection chain to a destination host through 2 or more SOCKS proxies.
@@ -46,7 +53,14 @@ object mod {
       */
     /* static member */
     inline def createConnectionChain(options: SocksClientChainOptions): js.Promise[SocksClientEstablishedEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
-    inline def createConnectionChain(options: SocksClientChainOptions, callback: js.Function): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
+    inline def createConnectionChain(
+      options: SocksClientChainOptions,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* socket */ js.UndefOr[SocksClientEstablishedEvent], 
+          Unit
+        ]
+    ): js.Promise[SocksClientEstablishedEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnectionChain")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocksClientEstablishedEvent]]
     
     /**
       * Creates a SOCKS UDP Frame.
@@ -68,7 +82,7 @@ object mod {
     */
   @JSImport("socks", "SocksClientError")
   @js.native
-  class SocksClientError protected ()
+  open class SocksClientError protected ()
     extends typings.socks.socksclientMod.SocksClientError {
     def this(message: String, options: SocksClientChainOptions) = this()
     def this(message: String, options: SocksClientOptions) = this()

@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Image ArcGIS Rest Options.
   * @api
   */
-class ImageArcGISRest () extends Image {
+open class ImageArcGISRest () extends Image {
   def this(opt_options: ImageArcGISRestOptions) = this()
   
   /**

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("calidation", "ValidatorsProvider")
 @js.native
-class ValidatorsProvider[T /* <: js.Object */] protected ()
-  extends Component[ValidatorsProviderProps[T], js.Object, js.Any] {
+open class ValidatorsProvider[T /* <: js.Object */] protected ()
+  extends Component[ValidatorsProviderProps[T], js.Object, Any] {
   def this(props: ValidatorsProviderProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ValidatorsProviderProps[T], context: js.Any) = this()
+  def this(props: ValidatorsProviderProps[T], context: Any) = this()
 }

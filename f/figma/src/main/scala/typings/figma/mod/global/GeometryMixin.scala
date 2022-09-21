@@ -54,13 +54,13 @@ object GeometryMixin {
     
     inline def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     
-    inline def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
+    inline def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value*))
     
     inline def setFillStyleId(value: String | js.Symbol): Self = StObject.set(x, "fillStyleId", value.asInstanceOf[js.Any])
     
     inline def setFills(value: js.Array[Paint] | js.Symbol): Self = StObject.set(x, "fills", value.asInstanceOf[js.Any])
     
-    inline def setFillsVarargs(value: Paint*): Self = StObject.set(x, "fills", js.Array(value :_*))
+    inline def setFillsVarargs(value: Paint*): Self = StObject.set(x, "fills", js.Array(value*))
     
     inline def setOutlineStroke(value: () => VectorNode | Null): Self = StObject.set(x, "outlineStroke", js.Any.fromFunction0(value))
     
@@ -78,6 +78,6 @@ object GeometryMixin {
     
     inline def setStrokes(value: js.Array[Paint]): Self = StObject.set(x, "strokes", value.asInstanceOf[js.Any])
     
-    inline def setStrokesVarargs(value: Paint*): Self = StObject.set(x, "strokes", js.Array(value :_*))
+    inline def setStrokesVarargs(value: Paint*): Self = StObject.set(x, "strokes", js.Array(value*))
   }
 }

@@ -17,7 +17,7 @@ trait CreateCapacityReservationRequest extends StObject {
   var AvailabilityZoneId: js.UndefOr[String] = js.undefined
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensure Idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ trait CreateCapacityReservationRequest extends StObject {
   /**
     * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time. You must provide an EndDate value if EndDateType is limited. Omit EndDate if EndDateType is unlimited. If the EndDateType is limited, the Capacity Reservation is cancelled within an hour from the specified time. For example, if you specify 5/31/2019, 13:30:55, the Capacity Reservation is guaranteed to end between 13:30:55 and 14:30:55 on 5/31/2019.
     */
-  var EndDate: js.UndefOr[DateTime] = js.undefined
+  var EndDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates the way in which the Capacity Reservation ends. A Capacity Reservation can have one of the following end types:    unlimited - The Capacity Reservation remains active until you explicitly cancel it. Do not provide an EndDate if the EndDateType is unlimited.    limited - The Capacity Reservation expires automatically at a specified date and time. You must provide an EndDate value if the EndDateType value is limited.  
@@ -42,12 +42,12 @@ trait CreateCapacityReservationRequest extends StObject {
   var EndDateType: js.UndefOr[typings.awsSdk.ec2Mod.EndDateType] = js.undefined
   
   /**
-    * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+    *  Deprecated. 
     */
   var EphemeralStorage: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The number of instances for which to reserve capacity.
+    * The number of instances for which to reserve capacity. Valid range: 1 - 1000
     */
   var InstanceCount: Integer
   
@@ -62,9 +62,19 @@ trait CreateCapacityReservationRequest extends StObject {
   var InstancePlatform: CapacityReservationInstancePlatform
   
   /**
-    * The instance type for which to reserve capacity. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
+    * The instance type for which to reserve capacity. For more information, see Instance types in the Amazon EC2 User Guide.
     */
   var InstanceType: String
+  
+  /**
+    * The Amazon Resource Name (ARN) of the Outpost on which to create the Capacity Reservation.
+    */
+  var OutpostArn: js.UndefOr[typings.awsSdk.ec2Mod.OutpostArn] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the cluster placement group in which to create the Capacity Reservation. For more information, see  Capacity Reservations for cluster placement groups in the Amazon EC2 User Guide.
+    */
+  var PlacementGroupArn: js.UndefOr[typings.awsSdk.ec2Mod.PlacementGroupArn] = js.undefined
   
   /**
     * The tags to apply to the Capacity Reservation during launch.
@@ -72,7 +82,7 @@ trait CreateCapacityReservationRequest extends StObject {
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
-    * Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:    default - The Capacity Reservation is created on hardware that is shared with other AWS accounts.    dedicated - The Capacity Reservation is created on single-tenant hardware that is dedicated to a single AWS account.  
+    * Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:    default - The Capacity Reservation is created on hardware that is shared with other Amazon Web Services accounts.    dedicated - The Capacity Reservation is created on single-tenant hardware that is dedicated to a single Amazon Web Services account.  
     */
   var Tenancy: js.UndefOr[CapacityReservationTenancy] = js.undefined
 }
@@ -109,7 +119,7 @@ object CreateCapacityReservationRequest {
     
     inline def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
     
-    inline def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateType(value: EndDateType): Self = StObject.set(x, "EndDateType", value.asInstanceOf[js.Any])
     
@@ -131,11 +141,19 @@ object CreateCapacityReservationRequest {
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
+    inline def setOutpostArn(value: OutpostArn): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    
+    inline def setPlacementGroupArn(value: PlacementGroupArn): Self = StObject.set(x, "PlacementGroupArn", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementGroupArnUndefined: Self = StObject.set(x, "PlacementGroupArn", js.undefined)
+    
     inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setTenancy(value: CapacityReservationTenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     

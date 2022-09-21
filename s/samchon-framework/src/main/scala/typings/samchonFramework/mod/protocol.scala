@@ -4,7 +4,6 @@ import typings.samchon.ientityMod.IEntity
 import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.iserverMod.IServer
 import typings.std.MessagePort
-import typings.std.Uint8Array
 import typings.sxml.mod.XML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,12 +13,12 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.ClientDriver")
   @js.native
-  class ClientDriver protected ()
+  open class ClientDriver protected ()
     extends typings.samchon.mod.protocol.ClientDriver {
     /**
       * Construct from a socket.
       */
-    def this(socket: js.Any) = this()
+    def this(socket: Any) = this()
   }
   
   @JSImport("samchon-framework", "protocol.DedicatedWorkerClientDriver")
@@ -27,7 +26,7 @@ object protocol {
   /**
     * Default Constructor.
     */
-  class DedicatedWorkerClientDriver ()
+  open class DedicatedWorkerClientDriver ()
     extends typings.samchon.mod.protocol.DedicatedWorkerClientDriver
   
   @JSImport("samchon-framework", "protocol.DedicatedWorkerServer")
@@ -37,7 +36,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.DedicatedWorkerServerBase")
   @js.native
-  class DedicatedWorkerServerBase protected ()
+  open class DedicatedWorkerServerBase protected ()
     extends typings.samchon.mod.protocol.DedicatedWorkerServerBase {
     /**
       * Construct from a *hooker*.
@@ -49,7 +48,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.DedicatedWorkerServerConnector")
   @js.native
-  class DedicatedWorkerServerConnector protected ()
+  open class DedicatedWorkerServerConnector protected ()
     extends typings.samchon.mod.protocol.DedicatedWorkerServerConnector {
     /**
       * Construct from *listener*.
@@ -104,9 +103,9 @@ object protocol {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def construct(entity: typings.samchon.ientityMod.IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def construct(entity: typings.samchon.ientityMod.IEntity, xml: XML, prohibited_names: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")((List(entity.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
     
-    inline def toXML(entity: typings.samchon.ientityMod.IEntity, prohibited_names: String*): XML = (^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(entity.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[XML]
+    inline def toXML(entity: typings.samchon.ientityMod.IEntity, prohibited_names: String*): XML = ^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(List(entity.asInstanceOf[js.Any]).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[XML]
   }
   
   object IEntityGroup {
@@ -118,34 +117,34 @@ object protocol {
     /**
       * @hidden
       */
-    inline def construct[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
+    inline def construct[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
       entityGroup: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
       xml: XML,
       prohibited_names: String*
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(entityGroup.asInstanceOf[js.Any], xml.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")((List(entityGroup.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
     
-    inline def count[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
+    inline def count[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
       entityGroup: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
-      key: js.Any
+      key: Any
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(entityGroup.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def get[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
+    inline def get[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
       entityGroup: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
-      key: js.Any
+      key: Any
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(entityGroup.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    inline def has[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
+    inline def has[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
       entityGroup: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
-      key: js.Any
+      key: Any
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(entityGroup.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * @hidden
       */
-    inline def toXML[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
+    inline def toXML[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](
       group: typings.samchon.ientitygroupMod.IEntityGroup[T, SourceT, IteratorT, ReverseT],
       prohibited_names: String*
-    ): XML = (^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(group.asInstanceOf[js.Any], prohibited_names.asInstanceOf[js.Any])).asInstanceOf[XML]
+    ): XML = ^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(List(group.asInstanceOf[js.Any]).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[XML]
   }
   
   @JSImport("samchon-framework", "protocol.Invoke")
@@ -153,7 +152,7 @@ object protocol {
   /**
     * Default Constructor.
     */
-  class Invoke ()
+  open class Invoke ()
     extends typings.samchon.mod.protocol.Invoke {
     /**
       * Copy Constructor.
@@ -168,7 +167,7 @@ object protocol {
       * @param listener
       * @param parameters
       */
-    def this(listener: String, parameters: (Boolean | Double | String | XML | Uint8Array)*) = this()
+    def this(listener: String, parameters: (Boolean | Double | String | XML | js.typedarray.Uint8Array)*) = this()
   }
   
   @JSImport("samchon-framework", "protocol.InvokeParameter")
@@ -176,14 +175,15 @@ object protocol {
   /**
     * Default Constructor.
     */
-  class InvokeParameter ()
+  open class InvokeParameter ()
     extends typings.samchon.mod.protocol.InvokeParameter {
     def this(`val`: String) = this()
+    def this(`val`: js.typedarray.Uint8Array) = this()
     def this(`val`: Boolean) = this()
     def this(`val`: Double) = this()
-    def this(`val`: Uint8Array) = this()
     def this(`val`: XML) = this()
     def this(name: String, `val`: String) = this()
+    def this(name: String, `val`: js.typedarray.Uint8Array) = this()
     /**
       * Construct from variable name and number value.
       *
@@ -192,7 +192,6 @@ object protocol {
       */
     def this(name: String, `val`: Boolean) = this()
     def this(name: String, `val`: Double) = this()
-    def this(name: String, `val`: Uint8Array) = this()
     def this(name: String, `val`: XML) = this()
   }
   
@@ -203,7 +202,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.ServerBase")
   @js.native
-  class ServerBase protected ()
+  open class ServerBase protected ()
     extends typings.samchon.mod.protocol.ServerBase {
     /**
       * Construct from a *hooker*.
@@ -215,7 +214,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.ServerConnector")
   @js.native
-  class ServerConnector protected ()
+  open class ServerConnector protected ()
     extends typings.samchon.mod.protocol.ServerConnector {
     /**
       * Construct from *listener*.
@@ -228,7 +227,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.SharedWorkerClientDriver")
   @js.native
-  class SharedWorkerClientDriver protected ()
+  open class SharedWorkerClientDriver protected ()
     extends typings.samchon.mod.protocol.SharedWorkerClientDriver {
     /**
       * Construct from a MessagePort object.
@@ -243,7 +242,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.SharedWorkerServerBase")
   @js.native
-  class SharedWorkerServerBase protected ()
+  open class SharedWorkerServerBase protected ()
     extends typings.samchon.mod.protocol.SharedWorkerServerBase {
     /**
       * Construct from a *hooker*.
@@ -255,7 +254,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.SharedWorkerServerConnector")
   @js.native
-  class SharedWorkerServerConnector protected ()
+  open class SharedWorkerServerConnector protected ()
     extends typings.samchon.mod.protocol.SharedWorkerServerConnector {
     /**
       * Construct from *listener*.
@@ -268,7 +267,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.WebClientDriver")
   @js.native
-  class WebClientDriver protected ()
+  open class WebClientDriver protected ()
     extends typings.samchon.mod.protocol.WebClientDriver {
     /**
       * Initialization Constructor.
@@ -277,7 +276,7 @@ object protocol {
       * @param path Requested path.
       * @param session_id Session ID, an identifier of the remote client.
       */
-    def this(connection: js.Any, path: String, session_id: String) = this()
+    def this(connection: Any, path: String, session_id: String) = this()
   }
   
   @JSImport("samchon-framework", "protocol.WebServer")
@@ -290,7 +289,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.WebServerBase")
   @js.native
-  class WebServerBase protected ()
+  open class WebServerBase protected ()
     extends typings.samchon.mod.protocol.WebServerBase {
     /**
       * Construct from a *hooker*.
@@ -302,7 +301,7 @@ object protocol {
   
   @JSImport("samchon-framework", "protocol.WebServerConnector")
   @js.native
-  class WebServerConnector protected ()
+  open class WebServerConnector protected ()
     extends typings.samchon.mod.protocol.WebServerConnector {
     /**
       * Construct from *listener*.

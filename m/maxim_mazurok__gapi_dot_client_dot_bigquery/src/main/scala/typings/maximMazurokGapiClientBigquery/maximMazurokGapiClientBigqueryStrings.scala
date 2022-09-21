@@ -43,6 +43,14 @@ object maximMazurokGapiClientBigqueryStrings {
   inline def QueryRequest: QueryRequest = "QueryRequest".asInstanceOf[QueryRequest]
   
   @js.native
+  sealed trait RemoteFunctionOptions extends StObject
+  inline def RemoteFunctionOptions: RemoteFunctionOptions = "RemoteFunctionOptions".asInstanceOf[RemoteFunctionOptions]
+  
+  @js.native
+  sealed trait SparkOptions extends StObject
+  inline def SparkOptions: SparkOptions = "SparkOptions".asInstanceOf[SparkOptions]
+  
+  @js.native
   sealed trait Table extends StObject
   inline def Table: Table = "Table".asInstanceOf[Table]
   

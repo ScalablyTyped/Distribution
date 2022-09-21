@@ -33,7 +33,7 @@ object XIndirectTypeDescription {
     getName: () => String,
     getReferencedType: () => XTypeDescription,
     getTypeClass: () => TypeClass,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XIndirectTypeDescription = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ReferencedType = ReferencedType.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getName = js.Any.fromFunction0(getName), getReferencedType = js.Any.fromFunction0(getReferencedType), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

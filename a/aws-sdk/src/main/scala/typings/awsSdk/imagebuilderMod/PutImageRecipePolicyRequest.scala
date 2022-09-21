@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutImageRecipePolicyRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the image recipe that this policy should be applied to. 
+    * The Amazon Resource Name (ARN) of the image recipe that this policy should be applied to.
     */
   var imageRecipeArn: ImageRecipeArn
   
   /**
-    * The policy to apply. 
+    * The policy to apply.
     */
   var policy: ResourcePolicyDocument
 }

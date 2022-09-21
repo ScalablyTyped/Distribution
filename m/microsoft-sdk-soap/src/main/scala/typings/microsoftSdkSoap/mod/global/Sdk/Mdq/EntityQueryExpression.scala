@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Mdq.EntityQueryExpression")
 @js.native
-class EntityQueryExpression protected () extends StObject {
+open class EntityQueryExpression protected () extends StObject {
   def this(criteria: MetadataFilterExpression, properties: MetadataPropertiesExpression) = this()
   def this(
     criteria: MetadataFilterExpression,

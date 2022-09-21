@@ -201,6 +201,22 @@ trait Budgets extends Service {
   ): Request[DescribeBudgetActionsForBudgetResponse, AWSError] = js.native
   
   /**
+    *  Lists the budget names and notifications that are associated with an account. 
+    */
+  def describeBudgetNotificationsForAccount(): Request[DescribeBudgetNotificationsForAccountResponse, AWSError] = js.native
+  def describeBudgetNotificationsForAccount(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetNotificationsForAccountResponse, Unit]
+  ): Request[DescribeBudgetNotificationsForAccountResponse, AWSError] = js.native
+  /**
+    *  Lists the budget names and notifications that are associated with an account. 
+    */
+  def describeBudgetNotificationsForAccount(params: DescribeBudgetNotificationsForAccountRequest): Request[DescribeBudgetNotificationsForAccountResponse, AWSError] = js.native
+  def describeBudgetNotificationsForAccount(
+    params: DescribeBudgetNotificationsForAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBudgetNotificationsForAccountResponse, Unit]
+  ): Request[DescribeBudgetNotificationsForAccountResponse, AWSError] = js.native
+  
+  /**
     * Describes the history for DAILY, MONTHLY, and QUARTERLY budgets. Budget history isn't available for ANNUAL budgets.
     */
   def describeBudgetPerformanceHistory(): Request[DescribeBudgetPerformanceHistoryResponse, AWSError] = js.native
@@ -277,12 +293,12 @@ trait Budgets extends Service {
   ): Request[ExecuteBudgetActionResponse, AWSError] = js.native
   
   /**
-    * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.  Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
+    * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until Amazon Web Services has new usage data to use for forecasting.  Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def updateBudget(): Request[UpdateBudgetResponse, AWSError] = js.native
   def updateBudget(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBudgetResponse, Unit]): Request[UpdateBudgetResponse, AWSError] = js.native
   /**
-    * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.  Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
+    * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until Amazon Web Services has new usage data to use for forecasting.  Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def updateBudget(params: UpdateBudgetRequest): Request[UpdateBudgetResponse, AWSError] = js.native
   def updateBudget(

@@ -168,7 +168,7 @@ object Tasks {
         
         inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
         
-        inline def setLinksVarargs(value: TaskLinks*): Self = StObject.set(x, "links", js.Array(value :_*))
+        inline def setLinksVarargs(value: TaskLinks*): Self = StObject.set(x, "links", js.Array(value*))
         
         inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
@@ -307,7 +307,7 @@ object Tasks {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: TaskList*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: TaskList*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -346,7 +346,7 @@ object Tasks {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Task*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Task*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

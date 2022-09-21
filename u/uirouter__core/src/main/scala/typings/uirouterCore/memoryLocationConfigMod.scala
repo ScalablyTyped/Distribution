@@ -9,7 +9,7 @@ object memoryLocationConfigMod {
   
   @JSImport("@uirouter/core/lib/vanilla/memoryLocationConfig", "MemoryLocationConfig")
   @js.native
-  class MemoryLocationConfig ()
+  open class MemoryLocationConfig ()
     extends StObject
        with LocationConfig {
     
@@ -24,8 +24,8 @@ object memoryLocationConfigMod {
     var _protocol: String = js.native
     
     @JSName("dispose")
-    var dispose_Original: js.Function0[js.Any] = js.native
+    var dispose_Original: js.Function0[Any] = js.native
     
-    def hashPrefix(newval: js.Any): js.Any = js.native
+    def hashPrefix(newval: Any): Any = js.native
   }
 }

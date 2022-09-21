@@ -1,9 +1,8 @@
 package typings.webpackPluginServe
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.connectHistoryApiFallback.mod.Options
-import typings.globby.mod.GlobbyOptions
-import typings.httpProxyMiddleware.mod.Config
-import typings.httpProxyMiddleware.mod.Proxy
+import typings.httpProxyMiddleware.typesMod.RequestHandler
 import typings.koa.mod.Context
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
@@ -11,6 +10,9 @@ import typings.koa.mod.^
 import typings.koaCompress.mod.CompressOptions
 import typings.node.http2Mod.SecureServerOptions
 import typings.node.http2Mod.ServerOptions
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.webpackPluginServe.anon.Address
 import typings.webpackPluginServe.anon.App
 import typings.webpackPluginServe.anon.Apply
@@ -25,7 +27,7 @@ object mod {
   
   @JSImport("webpack-plugin-serve", "WebpackPluginServe")
   @js.native
-  class WebpackPluginServe[Compiler] () extends StObject {
+  open class WebpackPluginServe[Compiler] () extends StObject {
     def this(opts: WebpackPluginServeOptions) = this()
     
     @JSName("apply")
@@ -46,7 +48,7 @@ object mod {
     
     def historyFallback(opts: Options): Unit = js.native
     
-    def proxy(args: Config): Proxy = js.native
+    def proxy(args: typings.httpProxyMiddleware.typesMod.Options): RequestHandler = js.native
     
     def static(paths: js.Array[String]): Unit = js.native
     def static(paths: js.Array[String], opts: typings.koaStatic.mod.Options): Unit = js.native
@@ -58,7 +60,9 @@ object mod {
     
     var glob: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var options: js.UndefOr[GlobbyOptions] = js.undefined
+    var options: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobbyOptions */ Any
+      ] = js.undefined
   }
   object StaticObject {
     
@@ -73,9 +77,11 @@ object mod {
       
       inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      inline def setGlobVarargs(value: String*): Self = StObject.set(x, "glob", js.Array(value :_*))
+      inline def setGlobVarargs(value: String*): Self = StObject.set(x, "glob", js.Array(value*))
       
-      inline def setOptions(value: GlobbyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobbyOptions */ Any
+      ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
@@ -95,7 +101,15 @@ object mod {
     
     var http2: js.UndefOr[Boolean | ServerOptions | SecureServerOptions] = js.undefined
     
-    var https: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.undefined
+    var https: js.UndefOr[
+        typings.node.httpsMod.ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+      ] = js.undefined
     
     var liveReload: js.UndefOr[Boolean] = js.undefined
     
@@ -150,7 +164,15 @@ object mod {
       
       inline def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
       
-      inline def setHttps(value: typings.node.httpsMod.ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(
+        value: typings.node.httpsMod.ServerOptions[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[typings.node.httpMod.IncomingMessage]
+              ]
+            ]
+      ): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
       inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
@@ -182,7 +204,7 @@ object mod {
       
       inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
       
-      inline def setStaticVarargs(value: String*): Self = StObject.set(x, "static", js.Array(value :_*))
+      inline def setStaticVarargs(value: String*): Self = StObject.set(x, "static", js.Array(value*))
       
       inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       

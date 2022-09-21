@@ -10,7 +10,7 @@ object parserBlockMod {
   
   @JSImport("markdown-it/lib/parser_block", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ParserBlock {
     
@@ -18,7 +18,7 @@ object parserBlockMod {
     var State: Instantiable4[
         /* src */ String, 
         /* md */ MarkdownIt, 
-        /* env */ js.Any, 
+        /* env */ Any, 
         /* tokens */ js.Array[typings.markdownIt.tokenMod.^], 
         typings.markdownIt.stateBlockMod.^
       ] = js.native
@@ -27,7 +27,7 @@ object parserBlockMod {
       * Process input string and push block tokens into `outTokens`
       */
     /* CompleteClass */
-    override def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit = js.native
+    override def parse(str: String, md: MarkdownIt, env: Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit = js.native
     
     /**
       * [[Ruler]] instance. Keep configuration of block rules.
@@ -47,7 +47,7 @@ object parserBlockMod {
     var State: Instantiable4[
         /* src */ String, 
         /* md */ MarkdownIt, 
-        /* env */ js.Any, 
+        /* env */ Any, 
         /* tokens */ js.Array[typings.markdownIt.tokenMod.^], 
         typings.markdownIt.stateBlockMod.^
       ]
@@ -55,7 +55,7 @@ object parserBlockMod {
     /**
       * Process input string and push block tokens into `outTokens`
       */
-    def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit
+    def parse(str: String, md: MarkdownIt, env: Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit
     
     /**
       * [[Ruler]] instance. Keep configuration of block rules.
@@ -73,11 +73,11 @@ object parserBlockMod {
       State: Instantiable4[
           /* src */ String, 
           /* md */ MarkdownIt, 
-          /* env */ js.Any, 
+          /* env */ Any, 
           /* tokens */ js.Array[typings.markdownIt.tokenMod.^], 
           typings.markdownIt.stateBlockMod.^
         ],
-      parse: (String, MarkdownIt, js.Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit,
+      parse: (String, MarkdownIt, Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit,
       ruler: typings.markdownIt.rulerMod.^[RuleBlock],
       tokenize: (typings.markdownIt.stateBlockMod.^, Double, Double) => Unit
     ): ParserBlock = {
@@ -87,7 +87,7 @@ object parserBlockMod {
     
     extension [Self <: ParserBlock](x: Self) {
       
-      inline def setParse(value: (String, MarkdownIt, js.Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
+      inline def setParse(value: (String, MarkdownIt, Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
       
       inline def setRuler(value: typings.markdownIt.rulerMod.^[RuleBlock]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
       
@@ -95,7 +95,7 @@ object parserBlockMod {
         value: Instantiable4[
               /* src */ String, 
               /* md */ MarkdownIt, 
-              /* env */ js.Any, 
+              /* env */ Any, 
               /* tokens */ js.Array[typings.markdownIt.tokenMod.^], 
               typings.markdownIt.stateBlockMod.^
             ]

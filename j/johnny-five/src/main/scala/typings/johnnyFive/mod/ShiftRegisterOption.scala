@@ -8,11 +8,11 @@ trait ShiftRegisterOption extends StObject {
   
   var isAnode: js.UndefOr[Boolean] = js.undefined
   
-  var pins: js.Any
+  var pins: Any
 }
 object ShiftRegisterOption {
   
-  inline def apply(pins: js.Any): ShiftRegisterOption = {
+  inline def apply(pins: Any): ShiftRegisterOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShiftRegisterOption]
   }
@@ -23,6 +23,6 @@ object ShiftRegisterOption {
     
     inline def setIsAnodeUndefined: Self = StObject.set(x, "isAnode", js.undefined)
     
-    inline def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    inline def setPins(value: Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
   }
 }

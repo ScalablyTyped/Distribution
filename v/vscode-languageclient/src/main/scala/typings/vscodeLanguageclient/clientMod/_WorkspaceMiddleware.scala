@@ -7,17 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait _WorkspaceMiddleware extends StObject {
   
-  var didChangeConfiguration: js.UndefOr[
+  var didChangeWatchedFile: js.UndefOr[
     js.ThisFunction2[
       /* this */ Unit, 
-      /* sections */ js.UndefOr[js.Array[String]], 
-      /* next */ DidChangeConfigurationSignature, 
-      Unit
+      /* event */ FileEvent, 
+      /* next */ DidChangeWatchedFileSignature, 
+      js.Promise[Unit]
     ]
-  ] = js.undefined
-  
-  var didChangeWatchedFile: js.UndefOr[
-    js.ThisFunction2[/* this */ Unit, /* event */ FileEvent, /* next */ DidChangeWatchedFileSignature, Unit]
   ] = js.undefined
 }
 object _WorkspaceMiddleware {
@@ -29,19 +25,13 @@ object _WorkspaceMiddleware {
   
   extension [Self <: _WorkspaceMiddleware](x: Self) {
     
-    inline def setDidChangeConfiguration(
+    inline def setDidChangeWatchedFile(
       value: js.ThisFunction2[
           /* this */ Unit, 
-          /* sections */ js.UndefOr[js.Array[String]], 
-          /* next */ DidChangeConfigurationSignature, 
-          Unit
+          /* event */ FileEvent, 
+          /* next */ DidChangeWatchedFileSignature, 
+          js.Promise[Unit]
         ]
-    ): Self = StObject.set(x, "didChangeConfiguration", value.asInstanceOf[js.Any])
-    
-    inline def setDidChangeConfigurationUndefined: Self = StObject.set(x, "didChangeConfiguration", js.undefined)
-    
-    inline def setDidChangeWatchedFile(
-      value: js.ThisFunction2[/* this */ Unit, /* event */ FileEvent, /* next */ DidChangeWatchedFileSignature, Unit]
     ): Self = StObject.set(x, "didChangeWatchedFile", value.asInstanceOf[js.Any])
     
     inline def setDidChangeWatchedFileUndefined: Self = StObject.set(x, "didChangeWatchedFile", js.undefined)

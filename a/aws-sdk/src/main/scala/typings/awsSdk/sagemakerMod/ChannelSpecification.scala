@@ -59,14 +59,14 @@ object ChannelSpecification {
     
     inline def setSupportedCompressionTypesUndefined: Self = StObject.set(x, "SupportedCompressionTypes", js.undefined)
     
-    inline def setSupportedCompressionTypesVarargs(value: CompressionType*): Self = StObject.set(x, "SupportedCompressionTypes", js.Array(value :_*))
+    inline def setSupportedCompressionTypesVarargs(value: CompressionType*): Self = StObject.set(x, "SupportedCompressionTypes", js.Array(value*))
     
     inline def setSupportedContentTypes(value: ContentTypes): Self = StObject.set(x, "SupportedContentTypes", value.asInstanceOf[js.Any])
     
-    inline def setSupportedContentTypesVarargs(value: ContentType*): Self = StObject.set(x, "SupportedContentTypes", js.Array(value :_*))
+    inline def setSupportedContentTypesVarargs(value: ContentType*): Self = StObject.set(x, "SupportedContentTypes", js.Array(value*))
     
     inline def setSupportedInputModes(value: InputModes): Self = StObject.set(x, "SupportedInputModes", value.asInstanceOf[js.Any])
     
-    inline def setSupportedInputModesVarargs(value: TrainingInputMode*): Self = StObject.set(x, "SupportedInputModes", js.Array(value :_*))
+    inline def setSupportedInputModesVarargs(value: TrainingInputMode*): Self = StObject.set(x, "SupportedInputModes", js.Array(value*))
   }
 }

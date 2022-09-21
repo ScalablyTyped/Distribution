@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object favoriteMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Favorite", JSImport.Default)
   @js.native
-  val default: SFC[FavoriteProps] = js.native
+  val default: FC[FavoriteProps] = js.native
   
   trait FavoriteProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object FavoriteProps {
     
@@ -29,14 +29,14 @@ object favoriteMod extends Shortcut {
     
     extension [Self <: FavoriteProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[FavoriteProps]
+  type _To = FC[FavoriteProps]
   
   /* This means you don't have to write `default`, but can instead just say `favoriteMod.foo` */
-  override def _to: SFC[FavoriteProps] = default
+  override def _to: FC[FavoriteProps] = default
 }

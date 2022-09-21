@@ -7,7 +7,6 @@ import typings.awsSdkClientPinpointBrowser.typesDirectMessageConfigurationMod.Di
 import typings.awsSdkClientPinpointBrowser.typesDirectMessageConfigurationMod.UnmarshalledDirectMessageConfiguration
 import typings.awsSdkClientPinpointBrowser.typesEndpointSendConfigurationMod.EndpointSendConfiguration
 import typings.awsSdkClientPinpointBrowser.typesEndpointSendConfigurationMod.UnmarshalledEndpointSendConfiguration
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,19 +19,19 @@ object typesMessageRequestMod {
       * A map of key-value pairs, where each key is an address and each value is an AddressConfiguration object. An address can be a push notification token, a phone number, or an email address.
       */
     var Addresses: js.UndefOr[
-        StringDictionary[AddressConfiguration] | (Iterable[js.Tuple2[String, AddressConfiguration]])
+        StringDictionary[AddressConfiguration] | (js.Iterable[js.Tuple2[String, AddressConfiguration]])
       ] = js.undefined
     
     /**
       * A map of custom attributes to attributes to be attached to the message. This payload is added to the push notification's 'data.pinpoint' object or added to the email/sms delivery receipt event attributes.
       */
-    var Context: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Context: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * A map of key-value pairs, where each key is an endpoint ID and each value is an EndpointSendConfiguration object. Within an EndpointSendConfiguration object, you can tailor the message for an endpoint by specifying message overrides or substitutions.
       */
     var Endpoints: js.UndefOr[
-        StringDictionary[EndpointSendConfiguration] | (Iterable[js.Tuple2[String, EndpointSendConfiguration]])
+        StringDictionary[EndpointSendConfiguration] | (js.Iterable[js.Tuple2[String, EndpointSendConfiguration]])
       ] = js.undefined
     
     /**
@@ -55,17 +54,17 @@ object typesMessageRequestMod {
     extension [Self <: MessageRequest](x: Self) {
       
       inline def setAddresses(
-        value: StringDictionary[AddressConfiguration] | (Iterable[js.Tuple2[String, AddressConfiguration]])
+        value: StringDictionary[AddressConfiguration] | (js.Iterable[js.Tuple2[String, AddressConfiguration]])
       ): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
       
       inline def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
       
-      inline def setContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
       
       inline def setEndpoints(
-        value: StringDictionary[EndpointSendConfiguration] | (Iterable[js.Tuple2[String, EndpointSendConfiguration]])
+        value: StringDictionary[EndpointSendConfiguration] | (js.Iterable[js.Tuple2[String, EndpointSendConfiguration]])
       ): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
       inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)

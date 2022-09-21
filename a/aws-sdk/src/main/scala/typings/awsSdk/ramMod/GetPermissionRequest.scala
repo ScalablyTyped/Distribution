@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPermissionRequest extends StObject {
   
   /**
-    * The ARN of the permission.
+    * Specifies the Amazon Resoure Name (ARN) of the permission whose contents you want to retrieve. To find the ARN for a permission, use either the ListPermissions operation or go to the Permissions library page in the RAM console and then choose the name of the permission. The ARN is displayed on the detail page.
     */
   var permissionArn: String
   
   /**
-    * The identifier for the version of the permission.
+    * Specifies identifier for the version of the RAM permission to retrieve. If you don't specify this parameter, the operation retrieves the default version.
     */
   var permissionVersion: js.UndefOr[Integer] = js.undefined
 }

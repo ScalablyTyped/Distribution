@@ -13,12 +13,12 @@ object radioButtonMod extends Shortcut {
   
   @JSImport("antd/lib/radio/radioButton", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[Any]] = js.native
   
   type RadioButtonProps = AbstractCheckboxProps[RadioChangeEvent]
   
-  type _To = ForwardRefExoticComponent[RadioButtonProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[RadioButtonProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `radioButtonMod.foo` */
-  override def _to: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[Any]] = default
 }

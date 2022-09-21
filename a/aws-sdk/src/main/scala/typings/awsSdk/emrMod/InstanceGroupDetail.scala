@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceGroupDetail extends StObject {
   
   /**
-    * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
+    * If specified, indicates that the instance group uses Spot Instances. This is the maximum price you are willing to pay for Spot Instances. Specify OnDemandPrice to set the amount equal to the On-Demand price, or specify an amount in USD.
     */
   var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The date/time the instance group was created.
     */
-  var CreationDateTime: Date
+  var CreationDateTime: js.Date
+  
+  /**
+    * The custom AMI ID to use for the provisioned instance group.
+    */
+  var CustomAmiId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The date/time the instance group was terminated.
     */
-  var EndDateTime: js.UndefOr[Date] = js.undefined
+  var EndDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Unique identifier for the instance group.
@@ -64,22 +69,22 @@ trait InstanceGroupDetail extends StObject {
   /**
     * The date/time the instance group was available to the cluster.
     */
-  var ReadyDateTime: js.UndefOr[Date] = js.undefined
+  var ReadyDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date/time the instance group was started.
     */
-  var StartDateTime: js.UndefOr[Date] = js.undefined
+  var StartDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * State of instance group. The following values are deprecated: STARTING, TERMINATED, and FAILED.
+    * State of instance group. The following values are no longer supported: STARTING, TERMINATED, and FAILED.
     */
   var State: InstanceGroupState
 }
 object InstanceGroupDetail {
   
   inline def apply(
-    CreationDateTime: Date,
+    CreationDateTime: js.Date,
     InstanceRequestCount: Integer,
     InstanceRole: InstanceRoleType,
     InstanceRunningCount: Integer,
@@ -97,9 +102,13 @@ object InstanceGroupDetail {
     
     inline def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    inline def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setCustomAmiId(value: XmlStringMaxLen256): Self = StObject.set(x, "CustomAmiId", value.asInstanceOf[js.Any])
+    
+    inline def setCustomAmiIdUndefined: Self = StObject.set(x, "CustomAmiId", js.undefined)
+    
+    inline def setEndDateTime(value: js.Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
     inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
@@ -125,11 +134,11 @@ object InstanceGroupDetail {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
+    inline def setReadyDateTime(value: js.Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
     
     inline def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
     
-    inline def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: js.Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
     inline def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
     

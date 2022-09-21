@@ -59,11 +59,11 @@ object geometryMod {
       
       inline def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
       
-      inline def setFacesVarargs(value: Face3*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Face3*): Self = StObject.set(x, "faces", js.Array(value*))
       
       inline def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value*))
     }
   }
 }

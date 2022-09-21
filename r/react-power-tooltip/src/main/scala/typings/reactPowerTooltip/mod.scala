@@ -8,6 +8,6 @@ object mod {
   
   @JSImport("react-power-tooltip", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.reactPowerTooltip.toolTipMod.default
 }

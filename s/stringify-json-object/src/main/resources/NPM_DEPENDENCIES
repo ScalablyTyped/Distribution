@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stringify-json-object" : "1.0.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stringify-json-object" : "1.0.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

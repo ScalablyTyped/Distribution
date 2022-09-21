@@ -16,27 +16,29 @@ object mod {
   
   @JSImport("sumchecker", "ChecksumMismatchError")
   @js.native
-  class ChecksumMismatchError protected () extends ErrorWithFilename {
+  open class ChecksumMismatchError protected () extends ErrorWithFilename {
     def this(filename: String) = this()
   }
   
   @JSImport("sumchecker", "ChecksumParseError")
   @js.native
-  class ChecksumParseError protected ()
+  open class ChecksumParseError protected ()
     extends StObject
        with Error {
     def this(lineNumber: Double, line: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sumchecker", "ChecksumValidator")
   @js.native
-  class ChecksumValidator protected () extends StObject {
+  open class ChecksumValidator protected () extends StObject {
     def this(algorithm: String, checksumFilename: String) = this()
     def this(algorithm: String, checksumFilename: String, options: ChecksumOptions) = this()
     
@@ -56,21 +58,23 @@ object mod {
   
   @JSImport("sumchecker", "ErrorWithFilename")
   @js.native
-  class ErrorWithFilename protected ()
+  open class ErrorWithFilename protected ()
     extends StObject
        with Error {
     def this(filename: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sumchecker", "NoChecksumFoundError")
   @js.native
-  class NoChecksumFoundError protected () extends ErrorWithFilename {
+  open class NoChecksumFoundError protected () extends ErrorWithFilename {
     def this(filename: String) = this()
   }
   

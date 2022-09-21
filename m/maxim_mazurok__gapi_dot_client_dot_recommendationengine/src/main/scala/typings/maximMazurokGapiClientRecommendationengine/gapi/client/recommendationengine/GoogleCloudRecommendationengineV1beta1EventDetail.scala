@@ -56,7 +56,7 @@ object GoogleCloudRecommendationengineV1beta1EventDetail {
     
     inline def setExperimentIdsUndefined: Self = StObject.set(x, "experimentIds", js.undefined)
     
-    inline def setExperimentIdsVarargs(value: String*): Self = StObject.set(x, "experimentIds", js.Array(value :_*))
+    inline def setExperimentIdsVarargs(value: String*): Self = StObject.set(x, "experimentIds", js.Array(value*))
     
     inline def setPageViewId(value: String): Self = StObject.set(x, "pageViewId", value.asInstanceOf[js.Any])
     

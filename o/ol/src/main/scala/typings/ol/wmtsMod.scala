@@ -1,11 +1,14 @@
 package typings.ol
 
+import org.scalablytyped.runtime.Instantiable6
 import typings.ol.olTileMod.LoadFunction
 import typings.ol.olTileMod.Tile
 import typings.ol.olTileMod.UrlFunction
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
+import typings.ol.tileStateMod.TileState
+import typings.ol.tilecoordMod.TileCoord
 import typings.ol.wmtsrequestencodingMod.WMTSRequestEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,11 +22,11 @@ object wmtsMod {
   
   @JSImport("ol/source/WMTS", JSImport.Default)
   @js.native
-  class default protected () extends WMTS {
+  open class default protected () extends WMTS {
     def this(options: Options) = this()
   }
   
-  inline def optionsFromCapabilities(wmtsCap: js.Any, config: js.Any): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsFromCapabilities")(wmtsCap.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Options]
+  inline def optionsFromCapabilities(wmtsCap: Any, config: Any): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsFromCapabilities")(wmtsCap.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Options]
   
   trait Options extends StObject {
     
@@ -31,9 +34,9 @@ object wmtsMod {
     
     var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
-    var dimensions: js.UndefOr[js.Any] = js.undefined
+    var dimensions: js.UndefOr[Any] = js.undefined
     
     var format: js.UndefOr[String] = js.undefined
     
@@ -51,7 +54,17 @@ object wmtsMod {
     
     var style: String
     
-    var tileClass: js.UndefOr[typings.ol.imageTileMod.default] = js.undefined
+    var tileClass: js.UndefOr[
+        Instantiable6[
+          /* tileCoord */ TileCoord, 
+          /* state */ TileState, 
+          /* src */ String, 
+          /* crossOrigin */ String, 
+          /* tileLoadFunction */ LoadFunction, 
+          /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
+          typings.ol.imageTileMod.default
+        ]
+      ] = js.undefined
     
     var tileGrid: typings.ol.tilegridWmtsMod.default
     
@@ -84,7 +97,7 @@ object wmtsMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
@@ -92,9 +105,11 @@ object wmtsMod {
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
+      
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      inline def setDimensions(value: js.Any): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: Any): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
@@ -124,7 +139,17 @@ object wmtsMod {
       
       inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      inline def setTileClass(value: typings.ol.imageTileMod.default): Self = StObject.set(x, "tileClass", value.asInstanceOf[js.Any])
+      inline def setTileClass(
+        value: Instantiable6[
+              /* tileCoord */ TileCoord, 
+              /* state */ TileState, 
+              /* src */ String, 
+              /* crossOrigin */ String, 
+              /* tileLoadFunction */ LoadFunction, 
+              /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
+              typings.ol.imageTileMod.default
+            ]
+      ): Self = StObject.set(x, "tileClass", value.asInstanceOf[js.Any])
       
       inline def setTileClassUndefined: Self = StObject.set(x, "tileClass", js.undefined)
       
@@ -150,7 +175,7 @@ object wmtsMod {
       
       inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -173,7 +198,7 @@ object wmtsMod {
       * "dimensions" option, and possibly updated using the updateDimensions
       * method.
       */
-    def getDimensions(): js.Any = js.native
+    def getDimensions(): Any = js.native
     
     /**
       * Return the image format of the WMTS source.
@@ -208,6 +233,6 @@ object wmtsMod {
     /**
       * Update the dimensions.
       */
-    def updateDimensions(dimensions: js.Any): Unit = js.native
+    def updateDimensions(dimensions: Any): Unit = js.native
   }
 }

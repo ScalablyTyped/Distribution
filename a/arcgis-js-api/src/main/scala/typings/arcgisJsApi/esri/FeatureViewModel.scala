@@ -1,5 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.disabled
+import typings.arcgisJsApi.arcgisJsApiStrings.error
+import typings.arcgisJsApi.arcgisJsApiStrings.loading
+import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +15,16 @@ trait FeatureViewModel
      with Accessor {
   
   /**
+    * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) and [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widgets should use when querying and displaying its content.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#abilities)
+    */
+  var abilities: FeatureViewModelAbilities = js.native
+  
+  /**
     * The [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content) of the feature.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#content)
     */
@@ -20,6 +33,8 @@ trait FeatureViewModel
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#defaultPopupTemplateEnabled)
     */
   var defaultPopupTemplateEnabled: Boolean = js.native
@@ -27,12 +42,16 @@ trait FeatureViewModel
   /**
     * The formatted attributes calculated from `fieldInfo` [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) content.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#formattedAttributes)
     */
   val formattedAttributes: FeatureViewModelFormattedAttributes = js.native
   
   /**
     * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic)
     */
@@ -48,6 +67,8 @@ trait FeatureViewModel
   /**
     * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#map)
     */
   var map: Map = js.native
@@ -57,28 +78,39 @@ trait FeatureViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#nextMedia)
     */
-  def nextMedia(contentElementIndex: Double): Unit = js.native
+  def nextMedia(contentElementIndex: Double): scala.Unit = js.native
   
   /**
     * Paginates to the previous [media](esri-popup-content-MediaContent.html) info in the specified [media](esri-popup-content-MediaContent.html) content element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#previousMedia)
     */
-  def previousMedia(contentElementIndex: Double): Unit = js.native
+  def previousMedia(contentElementIndex: Double): scala.Unit = js.native
   
   /**
     * Paginates to a specified [media](esri-popup-content-MediaContent.html) info object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#setActiveMedia)
     */
-  def setActiveMedia(contentElementIndex: Double, mediaInfoIndex: Double): Unit = js.native
+  def setActiveMedia(contentElementIndex: Double, mediaInfoIndex: Double): scala.Unit = js.native
   
   /**
     * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#spatialReference)
     */
   var spatialReference: SpatialReference = js.native
+  
+  /**
+    * The view model's state.
+    *
+    * @default disabled
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#state)
+    */
+  val state: ready | disabled | error | loading = js.native
   
   /**
     * The title for the feature.

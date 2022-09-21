@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IssuerMetadata
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var authorization_endpoint: js.UndefOr[String] = js.undefined
   
@@ -62,13 +62,13 @@ object IssuerMetadata {
     
     inline def setIntrospection_endpoint_auth_methods_supportedUndefined: Self = StObject.set(x, "introspection_endpoint_auth_methods_supported", js.undefined)
     
-    inline def setIntrospection_endpoint_auth_methods_supportedVarargs(value: String*): Self = StObject.set(x, "introspection_endpoint_auth_methods_supported", js.Array(value :_*))
+    inline def setIntrospection_endpoint_auth_methods_supportedVarargs(value: String*): Self = StObject.set(x, "introspection_endpoint_auth_methods_supported", js.Array(value*))
     
     inline def setIntrospection_endpoint_auth_signing_alg_values_supported(value: js.Array[String]): Self = StObject.set(x, "introspection_endpoint_auth_signing_alg_values_supported", value.asInstanceOf[js.Any])
     
     inline def setIntrospection_endpoint_auth_signing_alg_values_supportedUndefined: Self = StObject.set(x, "introspection_endpoint_auth_signing_alg_values_supported", js.undefined)
     
-    inline def setIntrospection_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "introspection_endpoint_auth_signing_alg_values_supported", js.Array(value :_*))
+    inline def setIntrospection_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "introspection_endpoint_auth_signing_alg_values_supported", js.Array(value*))
     
     inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object IssuerMetadata {
     
     inline def setRequest_object_signing_alg_values_supportedUndefined: Self = StObject.set(x, "request_object_signing_alg_values_supported", js.undefined)
     
-    inline def setRequest_object_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "request_object_signing_alg_values_supported", js.Array(value :_*))
+    inline def setRequest_object_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "request_object_signing_alg_values_supported", js.Array(value*))
     
     inline def setRevocation_endpoint(value: String): Self = StObject.set(x, "revocation_endpoint", value.asInstanceOf[js.Any])
     
@@ -98,13 +98,13 @@ object IssuerMetadata {
     
     inline def setRevocation_endpoint_auth_methods_supportedUndefined: Self = StObject.set(x, "revocation_endpoint_auth_methods_supported", js.undefined)
     
-    inline def setRevocation_endpoint_auth_methods_supportedVarargs(value: String*): Self = StObject.set(x, "revocation_endpoint_auth_methods_supported", js.Array(value :_*))
+    inline def setRevocation_endpoint_auth_methods_supportedVarargs(value: String*): Self = StObject.set(x, "revocation_endpoint_auth_methods_supported", js.Array(value*))
     
     inline def setRevocation_endpoint_auth_signing_alg_values_supported(value: js.Array[String]): Self = StObject.set(x, "revocation_endpoint_auth_signing_alg_values_supported", value.asInstanceOf[js.Any])
     
     inline def setRevocation_endpoint_auth_signing_alg_values_supportedUndefined: Self = StObject.set(x, "revocation_endpoint_auth_signing_alg_values_supported", js.undefined)
     
-    inline def setRevocation_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "revocation_endpoint_auth_signing_alg_values_supported", js.Array(value :_*))
+    inline def setRevocation_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "revocation_endpoint_auth_signing_alg_values_supported", js.Array(value*))
     
     inline def setToken_endpoint(value: String): Self = StObject.set(x, "token_endpoint", value.asInstanceOf[js.Any])
     
@@ -114,13 +114,13 @@ object IssuerMetadata {
     
     inline def setToken_endpoint_auth_methods_supportedUndefined: Self = StObject.set(x, "token_endpoint_auth_methods_supported", js.undefined)
     
-    inline def setToken_endpoint_auth_methods_supportedVarargs(value: String*): Self = StObject.set(x, "token_endpoint_auth_methods_supported", js.Array(value :_*))
+    inline def setToken_endpoint_auth_methods_supportedVarargs(value: String*): Self = StObject.set(x, "token_endpoint_auth_methods_supported", js.Array(value*))
     
     inline def setToken_endpoint_auth_signing_alg_values_supported(value: js.Array[String]): Self = StObject.set(x, "token_endpoint_auth_signing_alg_values_supported", value.asInstanceOf[js.Any])
     
     inline def setToken_endpoint_auth_signing_alg_values_supportedUndefined: Self = StObject.set(x, "token_endpoint_auth_signing_alg_values_supported", js.undefined)
     
-    inline def setToken_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "token_endpoint_auth_signing_alg_values_supported", js.Array(value :_*))
+    inline def setToken_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = StObject.set(x, "token_endpoint_auth_signing_alg_values_supported", js.Array(value*))
     
     inline def setUserinfo_endpoint(value: String): Self = StObject.set(x, "userinfo_endpoint", value.asInstanceOf[js.Any])
     

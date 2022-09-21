@@ -8,5 +8,5 @@ object updateShardCountMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/UpdateShardCount", "UpdateShardCount")
   @js.native
-  val UpdateShardCount: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UpdateShardCount: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

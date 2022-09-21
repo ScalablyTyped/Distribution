@@ -15,7 +15,7 @@ trait FilterBackend_ extends StObject {
     sourceWidth: Double,
     sourceHeight: Double,
     targetCanvas: HTMLCanvasElement
-  ): js.Any = js.native
+  ): Any = js.native
   def applyFilters(
     filters: js.Array[IBaseFilter],
     sourceElement: HTMLCanvasElement,
@@ -23,14 +23,14 @@ trait FilterBackend_ extends StObject {
     sourceHeight: Double,
     targetCanvas: HTMLCanvasElement,
     cacheKey: String
-  ): js.Any = js.native
+  ): Any = js.native
   def applyFilters(
     filters: js.Array[IBaseFilter],
     sourceElement: HTMLImageElement,
     sourceWidth: Double,
     sourceHeight: Double,
     targetCanvas: HTMLCanvasElement
-  ): js.Any = js.native
+  ): Any = js.native
   def applyFilters(
     filters: js.Array[IBaseFilter],
     sourceElement: HTMLImageElement,
@@ -38,7 +38,7 @@ trait FilterBackend_ extends StObject {
     sourceHeight: Double,
     targetCanvas: HTMLCanvasElement,
     cacheKey: String
-  ): js.Any = js.native
+  ): Any = js.native
   
   def clearWebGLCaches(): Unit = js.native
   

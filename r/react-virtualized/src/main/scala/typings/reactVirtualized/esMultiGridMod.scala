@@ -16,16 +16,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esMultiGridMod {
   
-  @JSImport("react-virtualized/dist/es/MultiGrid", "MultiGrid")
+  @JSImport("react-virtualized/dist/es/MultiGrid", JSImport.Default)
   @js.native
-  class MultiGrid protected ()
-    extends PureComponent[MultiGridProps, MultiGridState, js.Any] {
+  open class default protected () extends MultiGrid {
     def this(props: MultiGridProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MultiGridProps, context: js.Any) = this()
+    def this(props: MultiGridProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/MultiGrid", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/MultiGrid", "default.defaultProps")
+    @js.native
+    def defaultProps: ClassNameBottomRightGrid = js.native
+    inline def defaultProps_=(x: ClassNameBottomRightGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    inline def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MultiGridState | Null]
+    
+    @JSImport("react-virtualized/dist/es/MultiGrid", "default.propTypes")
+    @js.native
+    def propTypes: ClassNameBottomLeftGrid = js.native
+    inline def propTypes_=(x: ClassNameBottomLeftGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/es/MultiGrid", "MultiGrid")
+  @js.native
+  open class MultiGrid protected () extends PureComponent[MultiGridProps, MultiGridState, Any] {
+    def this(props: MultiGridProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: MultiGridProps, context: Any) = this()
     
     def forceUpdateGrids(): Unit = js.native
     

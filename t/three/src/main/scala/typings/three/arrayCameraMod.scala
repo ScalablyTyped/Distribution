@@ -10,12 +10,12 @@ object arrayCameraMod {
   
   @JSImport("three/src/cameras/ArrayCamera", "ArrayCamera")
   @js.native
-  class ArrayCamera () extends PerspectiveCamera {
+  open class ArrayCamera () extends PerspectiveCamera {
     def this(cameras: js.Array[PerspectiveCamera]) = this()
     
     /**
-    	 * @default []
-    	 */
+      * @default []
+      */
     var cameras: js.Array[PerspectiveCamera] = js.native
     
     val isArrayCamera: `true` = js.native

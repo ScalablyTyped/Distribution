@@ -8,7 +8,7 @@ trait ServicePrincipal
   extends StObject
      with DirectoryObject {
   
-  // true if the service principal account is enabled; otherwise, false.
+  // true if the service principal account is enabled; otherwise, false. Supports $filter (eq, ne, not, in).
   var accountEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
@@ -20,34 +20,39 @@ trait ServicePrincipal
   
   /**
     * Used to retrieve service principals by subscription, identify resource group and full resource ids for managed
-    * identities.
+    * identities. Supports $filter (eq, not, ge, le, startsWith).
     */
   var alternativeNames: js.UndefOr[js.Array[String]] = js.undefined
   
+  // The description exposed by the associated application.
   var appDescription: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display name exposed by the associated application.
   var appDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The unique identifier for the associated application (its appId property).
+  /**
+    * The unique identifier for the associated application (its appId property). Supports $filter (eq, ne, not, in,
+    * startsWith).
+    */
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Contains the tenant id where the application is registered. This is applicable only to service principals backed by
-    * applications.
+    * applications. Supports $filter (eq, ne, NOT, ge, le).
     */
   var appOwnerOrganizationId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Principals (users, groups, and service principals) that are assigned to this service principal. Read-only.
+  // App role assignments for this app or service, granted to users, groups, and other service principals. Supports $expand.
   var appRoleAssignedTo: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.undefined
   
   /**
     * Specifies whether users or other service principals need to be granted an app role assignment for this service
-    * principal before users can sign in or apps can get tokens. The default value is false. Not nullable.
+    * principal before users can sign in or apps can get tokens. The default value is false. Not nullable. Supports $filter
+    * (eq, ne, NOT).
     */
   var appRoleAssignmentRequired: js.UndefOr[Boolean] = js.undefined
   
-  // Applications that this service principal is assigned to. Read-only. Nullable.
+  // App role assignment for another app or service, granted to this service principal. Supports $expand.
   var appRoleAssignments: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.undefined
   
   /**
@@ -56,10 +61,13 @@ trait ServicePrincipal
     */
   var appRoles: js.UndefOr[js.Array[AppRole]] = js.undefined
   
-  // Unique identifier of the applicationTemplate that the servicePrincipal was created from. Read-only.
+  /**
+    * Unique identifier of the applicationTemplate that the servicePrincipal was created from. Read-only. Supports $filter
+    * (eq, ne, NOT, startsWith).
+    */
   var applicationTemplateId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The claimsMappingPolicies assigned to this service principal.
+  // The claimsMappingPolicies assigned to this service principal. Supports $expand.
   var claimsMappingPolicies: js.UndefOr[NullableOption[js.Array[ClaimsMappingPolicy]]] = js.undefined
   
   // Directory objects created by this service principal. Read-only. Nullable.
@@ -67,18 +75,35 @@ trait ServicePrincipal
   
   var delegatedPermissionClassifications: js.UndefOr[NullableOption[js.Array[DelegatedPermissionClassification]]] = js.undefined
   
+  /**
+    * Free text field to provide an internal end-user facing description of the service principal. End-user portals such
+    * MyApps will display the application description in this field. The maximum allowed size is 1024 characters. Supports
+    * $filter (eq, ne, not, ge, le, startsWith) and $search.
+    */
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The display name for the service principal.
-  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  /**
+    * Specifies whether Microsoft has disabled the registered application. Possible values are: null (default value),
+    * NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious
+    * activity, or a violation of the Microsoft Services Agreement). Supports $filter (eq, ne, not).
+    */
+  var disabledByMicrosoftStatus: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Endpoints available for discovery. Services like Sharepoint populate this property with a tenant specific SharePoint
-    * endpoints that other applications can discover and use in their experiences.
+    * The display name for the service principal. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null
+    * values), $search, and $orderBy.
     */
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   var endpoints: js.UndefOr[NullableOption[js.Array[Endpoint]]] = js.undefined
   
-  // The homeRealmDiscoveryPolicies assigned to this service principal.
+  /**
+    * Federated identities for a specific type of service principal - managed identity. Supports $expand and $filter (eq when
+    * counting empty collections).
+    */
+  var federatedIdentityCredentials: js.UndefOr[NullableOption[js.Array[FederatedIdentityCredential]]] = js.undefined
+  
+  // The homeRealmDiscoveryPolicies assigned to this service principal. Supports $expand.
   var homeRealmDiscoveryPolicies: js.UndefOr[NullableOption[js.Array[HomeRealmDiscoveryPolicy]]] = js.undefined
   
   // Home page or landing page of the application.
@@ -87,11 +112,15 @@ trait ServicePrincipal
   /**
     * Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy
     * statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience.
-    * For more info, see How to: Add Terms of service and privacy statement for registered Azure AD apps.
+    * For more info, see How to: Add Terms of service and privacy statement for registered Azure AD apps. Supports $filter
+    * (eq, ne, not, ge, le, and eq on null values).
     */
   var info: js.UndefOr[NullableOption[InformationalUrl]] = js.undefined
   
-  // The collection of key credentials associated with the service principal. Not nullable.
+  /**
+    * The collection of key credentials associated with the service principal. Not nullable. Supports $filter (eq, not, ge,
+    * le).
+    */
   var keyCredentials: js.UndefOr[js.Array[KeyCredential]] = js.undefined
   
   /**
@@ -108,9 +137,13 @@ trait ServicePrincipal
     */
   var logoutUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable.
+  // Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable. Supports $expand.
   var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
+  /**
+    * Free text field to capture information about the service principal, typically used for operational purposes. Maximum
+    * allowed size is 1024 characters.
+    */
   var notes: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
@@ -132,25 +165,26 @@ trait ServicePrincipal
     */
   var oauth2PermissionScopes: js.UndefOr[js.Array[PermissionScope]] = js.undefined
   
-  // Directory objects that are owned by this service principal. Read-only. Nullable.
+  // Directory objects that are owned by this service principal. Read-only. Nullable. Supports $expand.
   var ownedObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or
-    * servicePrincipals who are allowed to modify this object. Read-only. Nullable.
+    * servicePrincipals who are allowed to modify this object. Read-only. Nullable. Supports $expand.
     */
   var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
-  // The collection of password credentials associated with the service principal. Not nullable.
+  // The collection of password credentials associated with the application. Not nullable.
   var passwordCredentials: js.UndefOr[js.Array[PasswordCredential]] = js.undefined
   
   /**
     * Specifies the single sign-on mode configured for this application. Azure AD uses the preferred single sign-on mode to
-    * launch the application from Microsoft 365 or the Azure AD My Apps. The supported values are password, saml, external,
-    * and oidc.
+    * launch the application from Microsoft 365 or the Azure AD My Apps. The supported values are password, saml,
+    * notSupported, and oidc.
     */
   var preferredSingleSignOnMode: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.
   var preferredTokenSigningKeyThumbprint: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
@@ -158,6 +192,12 @@ trait ServicePrincipal
     * authorization codes and access tokens are sent to for the associated application. Not nullable.
     */
   var replyUrls: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * The resource-specific application permissions exposed by this application. Currently, resource-specific permissions are
+    * only supported for Teams apps accessing to specific chats and teams using Microsoft Graph. Read-only.
+    */
+  var resourceSpecificApplicationPermissions: js.UndefOr[js.Array[ResourceSpecificPermission]] = js.undefined
   
   // The collection for settings related to saml single sign-on.
   var samlSingleSignOnSettings: js.UndefOr[NullableOption[SamlSingleSignOnSettings]] = js.undefined
@@ -167,20 +207,38 @@ trait ServicePrincipal
     * hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD. For
     * example,Client apps can specify a resource URI which is based on the values of this property to acquire an access
     * token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued
-    * properties. Not nullable.
+    * properties. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
     */
   var servicePrincipalNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Identifies if the service principal represents an application or a managed identity. This is set by Azure AD
-    * internally. For a service principal that represents an application this is set as Application. For a service principal
-    * that represent a managed identity this is set as ManagedIdentity.
+    * Identifies whether the service principal represents an application, a managed identity, or a legacy application. This
+    * is set by Azure AD internally. The servicePrincipalType property can be set to three different values: __Application -
+    * A service principal that represents an application or service. The appId property identifies the associated app
+    * registration, and matches the appId of an application, possibly from a different tenant. If the associated app
+    * registration is missing, tokens are not issued for the service principal.__ManagedIdentity - A service principal that
+    * represents a managed identity. Service principals representing managed identities can be granted access and
+    * permissions, but cannot be updated or modified directly.__Legacy - A service principal that represents an app created
+    * before app registrations, or through legacy experiences. Legacy service principal can have credentials, service
+    * principal names, reply URLs, and other properties which are editable by an authorized user, but does not have an
+    * associated app registration. The appId value does not associate the service principal with an app registration. The
+    * service principal can only be used in the tenant where it was created.__SocialIdp - For internal use.
     */
   var servicePrincipalType: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * Specifies the Microsoft accounts that are supported for the current application. Read-only. Supported values
+    * are:AzureADMyOrg: Users with a Microsoft work or school account in my organization’s Azure AD tenant
+    * (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization’s Azure AD
+    * tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school
+    * account in any organization’s Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
+    */
   var signInAudience: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Custom strings that can be used to categorize and identify the service principal. Not nullable.
+  /**
+    * Custom strings that can be used to categorize and identify the service principal. Not nullable. Supports $filter (eq,
+    * not, ge, le, startsWith).
+    */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
@@ -197,6 +255,9 @@ trait ServicePrincipal
   var tokenLifetimePolicies: js.UndefOr[NullableOption[js.Array[TokenLifetimePolicy]]] = js.undefined
   
   var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
+  
+  // Specifies the verified publisher of the application which this service principal represents.
+  var verifiedPublisher: js.UndefOr[NullableOption[VerifiedPublisher]] = js.undefined
 }
 object ServicePrincipal {
   
@@ -217,13 +278,13 @@ object ServicePrincipal {
     
     inline def setAddInsUndefined: Self = StObject.set(x, "addIns", js.undefined)
     
-    inline def setAddInsVarargs(value: AddIn*): Self = StObject.set(x, "addIns", js.Array(value :_*))
+    inline def setAddInsVarargs(value: AddIn*): Self = StObject.set(x, "addIns", js.Array(value*))
     
     inline def setAlternativeNames(value: js.Array[String]): Self = StObject.set(x, "alternativeNames", value.asInstanceOf[js.Any])
     
     inline def setAlternativeNamesUndefined: Self = StObject.set(x, "alternativeNames", js.undefined)
     
-    inline def setAlternativeNamesVarargs(value: String*): Self = StObject.set(x, "alternativeNames", js.Array(value :_*))
+    inline def setAlternativeNamesVarargs(value: String*): Self = StObject.set(x, "alternativeNames", js.Array(value*))
     
     inline def setAppDescription(value: NullableOption[String]): Self = StObject.set(x, "appDescription", value.asInstanceOf[js.Any])
     
@@ -255,7 +316,7 @@ object ServicePrincipal {
     
     inline def setAppRoleAssignedToUndefined: Self = StObject.set(x, "appRoleAssignedTo", js.undefined)
     
-    inline def setAppRoleAssignedToVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignedTo", js.Array(value :_*))
+    inline def setAppRoleAssignedToVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignedTo", js.Array(value*))
     
     inline def setAppRoleAssignmentRequired(value: Boolean): Self = StObject.set(x, "appRoleAssignmentRequired", value.asInstanceOf[js.Any])
     
@@ -267,13 +328,13 @@ object ServicePrincipal {
     
     inline def setAppRoleAssignmentsUndefined: Self = StObject.set(x, "appRoleAssignments", js.undefined)
     
-    inline def setAppRoleAssignmentsVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignments", js.Array(value :_*))
+    inline def setAppRoleAssignmentsVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignments", js.Array(value*))
     
     inline def setAppRoles(value: js.Array[AppRole]): Self = StObject.set(x, "appRoles", value.asInstanceOf[js.Any])
     
     inline def setAppRolesUndefined: Self = StObject.set(x, "appRoles", js.undefined)
     
-    inline def setAppRolesVarargs(value: AppRole*): Self = StObject.set(x, "appRoles", js.Array(value :_*))
+    inline def setAppRolesVarargs(value: AppRole*): Self = StObject.set(x, "appRoles", js.Array(value*))
     
     inline def setApplicationTemplateId(value: NullableOption[String]): Self = StObject.set(x, "applicationTemplateId", value.asInstanceOf[js.Any])
     
@@ -287,7 +348,7 @@ object ServicePrincipal {
     
     inline def setClaimsMappingPoliciesUndefined: Self = StObject.set(x, "claimsMappingPolicies", js.undefined)
     
-    inline def setClaimsMappingPoliciesVarargs(value: ClaimsMappingPolicy*): Self = StObject.set(x, "claimsMappingPolicies", js.Array(value :_*))
+    inline def setClaimsMappingPoliciesVarargs(value: ClaimsMappingPolicy*): Self = StObject.set(x, "claimsMappingPolicies", js.Array(value*))
     
     inline def setCreatedObjects(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "createdObjects", value.asInstanceOf[js.Any])
     
@@ -295,7 +356,7 @@ object ServicePrincipal {
     
     inline def setCreatedObjectsUndefined: Self = StObject.set(x, "createdObjects", js.undefined)
     
-    inline def setCreatedObjectsVarargs(value: DirectoryObject*): Self = StObject.set(x, "createdObjects", js.Array(value :_*))
+    inline def setCreatedObjectsVarargs(value: DirectoryObject*): Self = StObject.set(x, "createdObjects", js.Array(value*))
     
     inline def setDelegatedPermissionClassifications(value: NullableOption[js.Array[DelegatedPermissionClassification]]): Self = StObject.set(x, "delegatedPermissionClassifications", value.asInstanceOf[js.Any])
     
@@ -303,13 +364,19 @@ object ServicePrincipal {
     
     inline def setDelegatedPermissionClassificationsUndefined: Self = StObject.set(x, "delegatedPermissionClassifications", js.undefined)
     
-    inline def setDelegatedPermissionClassificationsVarargs(value: DelegatedPermissionClassification*): Self = StObject.set(x, "delegatedPermissionClassifications", js.Array(value :_*))
+    inline def setDelegatedPermissionClassificationsVarargs(value: DelegatedPermissionClassification*): Self = StObject.set(x, "delegatedPermissionClassifications", js.Array(value*))
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisabledByMicrosoftStatus(value: NullableOption[String]): Self = StObject.set(x, "disabledByMicrosoftStatus", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledByMicrosoftStatusNull: Self = StObject.set(x, "disabledByMicrosoftStatus", null)
+    
+    inline def setDisabledByMicrosoftStatusUndefined: Self = StObject.set(x, "disabledByMicrosoftStatus", js.undefined)
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -323,7 +390,15 @@ object ServicePrincipal {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
+    
+    inline def setFederatedIdentityCredentials(value: NullableOption[js.Array[FederatedIdentityCredential]]): Self = StObject.set(x, "federatedIdentityCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setFederatedIdentityCredentialsNull: Self = StObject.set(x, "federatedIdentityCredentials", null)
+    
+    inline def setFederatedIdentityCredentialsUndefined: Self = StObject.set(x, "federatedIdentityCredentials", js.undefined)
+    
+    inline def setFederatedIdentityCredentialsVarargs(value: FederatedIdentityCredential*): Self = StObject.set(x, "federatedIdentityCredentials", js.Array(value*))
     
     inline def setHomeRealmDiscoveryPolicies(value: NullableOption[js.Array[HomeRealmDiscoveryPolicy]]): Self = StObject.set(x, "homeRealmDiscoveryPolicies", value.asInstanceOf[js.Any])
     
@@ -331,7 +406,7 @@ object ServicePrincipal {
     
     inline def setHomeRealmDiscoveryPoliciesUndefined: Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.undefined)
     
-    inline def setHomeRealmDiscoveryPoliciesVarargs(value: HomeRealmDiscoveryPolicy*): Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.Array(value :_*))
+    inline def setHomeRealmDiscoveryPoliciesVarargs(value: HomeRealmDiscoveryPolicy*): Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.Array(value*))
     
     inline def setHomepage(value: NullableOption[String]): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     
@@ -349,7 +424,7 @@ object ServicePrincipal {
     
     inline def setKeyCredentialsUndefined: Self = StObject.set(x, "keyCredentials", js.undefined)
     
-    inline def setKeyCredentialsVarargs(value: KeyCredential*): Self = StObject.set(x, "keyCredentials", js.Array(value :_*))
+    inline def setKeyCredentialsVarargs(value: KeyCredential*): Self = StObject.set(x, "keyCredentials", js.Array(value*))
     
     inline def setLoginUrl(value: NullableOption[String]): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
     
@@ -369,7 +444,7 @@ object ServicePrincipal {
     
     inline def setMemberOfUndefined: Self = StObject.set(x, "memberOf", js.undefined)
     
-    inline def setMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
+    inline def setMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "memberOf", js.Array(value*))
     
     inline def setNotes(value: NullableOption[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
@@ -381,7 +456,7 @@ object ServicePrincipal {
     
     inline def setNotificationEmailAddressesUndefined: Self = StObject.set(x, "notificationEmailAddresses", js.undefined)
     
-    inline def setNotificationEmailAddressesVarargs(value: String*): Self = StObject.set(x, "notificationEmailAddresses", js.Array(value :_*))
+    inline def setNotificationEmailAddressesVarargs(value: String*): Self = StObject.set(x, "notificationEmailAddresses", js.Array(value*))
     
     inline def setOauth2PermissionGrants(value: NullableOption[js.Array[OAuth2PermissionGrant]]): Self = StObject.set(x, "oauth2PermissionGrants", value.asInstanceOf[js.Any])
     
@@ -389,13 +464,13 @@ object ServicePrincipal {
     
     inline def setOauth2PermissionGrantsUndefined: Self = StObject.set(x, "oauth2PermissionGrants", js.undefined)
     
-    inline def setOauth2PermissionGrantsVarargs(value: OAuth2PermissionGrant*): Self = StObject.set(x, "oauth2PermissionGrants", js.Array(value :_*))
+    inline def setOauth2PermissionGrantsVarargs(value: OAuth2PermissionGrant*): Self = StObject.set(x, "oauth2PermissionGrants", js.Array(value*))
     
     inline def setOauth2PermissionScopes(value: js.Array[PermissionScope]): Self = StObject.set(x, "oauth2PermissionScopes", value.asInstanceOf[js.Any])
     
     inline def setOauth2PermissionScopesUndefined: Self = StObject.set(x, "oauth2PermissionScopes", js.undefined)
     
-    inline def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value :_*))
+    inline def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value*))
     
     inline def setOwnedObjects(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "ownedObjects", value.asInstanceOf[js.Any])
     
@@ -403,7 +478,7 @@ object ServicePrincipal {
     
     inline def setOwnedObjectsUndefined: Self = StObject.set(x, "ownedObjects", js.undefined)
     
-    inline def setOwnedObjectsVarargs(value: DirectoryObject*): Self = StObject.set(x, "ownedObjects", js.Array(value :_*))
+    inline def setOwnedObjectsVarargs(value: DirectoryObject*): Self = StObject.set(x, "ownedObjects", js.Array(value*))
     
     inline def setOwners(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
@@ -411,13 +486,13 @@ object ServicePrincipal {
     
     inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    inline def setOwnersVarargs(value: DirectoryObject*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: DirectoryObject*): Self = StObject.set(x, "owners", js.Array(value*))
     
     inline def setPasswordCredentials(value: js.Array[PasswordCredential]): Self = StObject.set(x, "passwordCredentials", value.asInstanceOf[js.Any])
     
     inline def setPasswordCredentialsUndefined: Self = StObject.set(x, "passwordCredentials", js.undefined)
     
-    inline def setPasswordCredentialsVarargs(value: PasswordCredential*): Self = StObject.set(x, "passwordCredentials", js.Array(value :_*))
+    inline def setPasswordCredentialsVarargs(value: PasswordCredential*): Self = StObject.set(x, "passwordCredentials", js.Array(value*))
     
     inline def setPreferredSingleSignOnMode(value: NullableOption[String]): Self = StObject.set(x, "preferredSingleSignOnMode", value.asInstanceOf[js.Any])
     
@@ -435,7 +510,13 @@ object ServicePrincipal {
     
     inline def setReplyUrlsUndefined: Self = StObject.set(x, "replyUrls", js.undefined)
     
-    inline def setReplyUrlsVarargs(value: String*): Self = StObject.set(x, "replyUrls", js.Array(value :_*))
+    inline def setReplyUrlsVarargs(value: String*): Self = StObject.set(x, "replyUrls", js.Array(value*))
+    
+    inline def setResourceSpecificApplicationPermissions(value: js.Array[ResourceSpecificPermission]): Self = StObject.set(x, "resourceSpecificApplicationPermissions", value.asInstanceOf[js.Any])
+    
+    inline def setResourceSpecificApplicationPermissionsUndefined: Self = StObject.set(x, "resourceSpecificApplicationPermissions", js.undefined)
+    
+    inline def setResourceSpecificApplicationPermissionsVarargs(value: ResourceSpecificPermission*): Self = StObject.set(x, "resourceSpecificApplicationPermissions", js.Array(value*))
     
     inline def setSamlSingleSignOnSettings(value: NullableOption[SamlSingleSignOnSettings]): Self = StObject.set(x, "samlSingleSignOnSettings", value.asInstanceOf[js.Any])
     
@@ -447,7 +528,7 @@ object ServicePrincipal {
     
     inline def setServicePrincipalNamesUndefined: Self = StObject.set(x, "servicePrincipalNames", js.undefined)
     
-    inline def setServicePrincipalNamesVarargs(value: String*): Self = StObject.set(x, "servicePrincipalNames", js.Array(value :_*))
+    inline def setServicePrincipalNamesVarargs(value: String*): Self = StObject.set(x, "servicePrincipalNames", js.Array(value*))
     
     inline def setServicePrincipalType(value: NullableOption[String]): Self = StObject.set(x, "servicePrincipalType", value.asInstanceOf[js.Any])
     
@@ -465,7 +546,7 @@ object ServicePrincipal {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTokenEncryptionKeyId(value: NullableOption[String]): Self = StObject.set(x, "tokenEncryptionKeyId", value.asInstanceOf[js.Any])
     
@@ -479,7 +560,7 @@ object ServicePrincipal {
     
     inline def setTokenIssuancePoliciesUndefined: Self = StObject.set(x, "tokenIssuancePolicies", js.undefined)
     
-    inline def setTokenIssuancePoliciesVarargs(value: TokenIssuancePolicy*): Self = StObject.set(x, "tokenIssuancePolicies", js.Array(value :_*))
+    inline def setTokenIssuancePoliciesVarargs(value: TokenIssuancePolicy*): Self = StObject.set(x, "tokenIssuancePolicies", js.Array(value*))
     
     inline def setTokenLifetimePolicies(value: NullableOption[js.Array[TokenLifetimePolicy]]): Self = StObject.set(x, "tokenLifetimePolicies", value.asInstanceOf[js.Any])
     
@@ -487,7 +568,7 @@ object ServicePrincipal {
     
     inline def setTokenLifetimePoliciesUndefined: Self = StObject.set(x, "tokenLifetimePolicies", js.undefined)
     
-    inline def setTokenLifetimePoliciesVarargs(value: TokenLifetimePolicy*): Self = StObject.set(x, "tokenLifetimePolicies", js.Array(value :_*))
+    inline def setTokenLifetimePoliciesVarargs(value: TokenLifetimePolicy*): Self = StObject.set(x, "tokenLifetimePolicies", js.Array(value*))
     
     inline def setTransitiveMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "transitiveMemberOf", value.asInstanceOf[js.Any])
     
@@ -495,6 +576,12 @@ object ServicePrincipal {
     
     inline def setTransitiveMemberOfUndefined: Self = StObject.set(x, "transitiveMemberOf", js.undefined)
     
-    inline def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMemberOf", js.Array(value :_*))
+    inline def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMemberOf", js.Array(value*))
+    
+    inline def setVerifiedPublisher(value: NullableOption[VerifiedPublisher]): Self = StObject.set(x, "verifiedPublisher", value.asInstanceOf[js.Any])
+    
+    inline def setVerifiedPublisherNull: Self = StObject.set(x, "verifiedPublisher", null)
+    
+    inline def setVerifiedPublisherUndefined: Self = StObject.set(x, "verifiedPublisher", js.undefined)
   }
 }

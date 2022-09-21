@@ -30,13 +30,13 @@ object panel {
       * @param pos Number The index at which the Component will be added
       * @returns Ext.Component[] The added components.
       */
-    var addDocked: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[Double], Array]] = js.undefined
+    var addDocked: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Double], Array]] = js.undefined
     
     /** [Method] inherit docs
       * @param cls Object
       */
     @JSName("addUIClsToElement")
-    var addUIClsToElement_IAbstractPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var addUIClsToElement_IAbstractPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Property] (Ext.dom.Element) */
     var body: js.UndefOr[typings.extjs.Ext.dom.IElement] = js.undefined
@@ -45,25 +45,25 @@ object panel {
     var bodyBorder: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var bodyCls: js.UndefOr[js.Any] = js.undefined
+    var bodyCls: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var bodyPadding: js.UndefOr[js.Any] = js.undefined
+    var bodyPadding: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String/Object/Function) */
-    var bodyStyle: js.UndefOr[js.Any] = js.undefined
+    var bodyStyle: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var defaultDockWeights: js.UndefOr[js.Any] = js.undefined
+    var defaultDockWeights: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object/Object[]) */
-    var dockedItems: js.UndefOr[js.Any] = js.undefined
+    var dockedItems: js.UndefOr[Any] = js.undefined
     
     /** [Method] Finds a docked component by id itemId or position
       * @param comp String/Number The id, itemId or position of the docked component (see getComponent for details)
       * @returns Ext.Component The docked component (if found)
       */
-    var getDockedComponent: js.UndefOr[js.Function1[js.UndefOr[js.Any], IComponent]] = js.undefined
+    var getDockedComponent: js.UndefOr[js.Function1[js.UndefOr[Any], IComponent]] = js.undefined
     
     /** [Method] Retrieves an array of all currently docked Components
       * @param selector String A ComponentQuery selector string to filter the returned items.
@@ -76,7 +76,7 @@ object panel {
       * @param pos Number The index at which the Component will be inserted
       * @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' paramater on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
       */
-    var insertDocked: js.UndefOr[js.Function2[js.UndefOr[Double], js.UndefOr[js.Any], Unit]] = js.undefined
+    var insertDocked: js.UndefOr[js.Function2[js.UndefOr[Double], js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Property] (Boolean) */
     var isPanel: js.UndefOr[Boolean] = js.undefined
@@ -109,7 +109,7 @@ object panel {
       * @param cls Object
       */
     @JSName("removeUIClsFromElement")
-    var removeUIClsFromElement_IAbstractPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var removeUIClsFromElement_IAbstractPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the body style according to the passed parameters
       * @param style Mixed A full style specification string, or object, or the name of a style property to set.
@@ -118,14 +118,14 @@ object panel {
       */
     var setBodyStyle: js.UndefOr[
         js.Function2[
-          /* style */ js.UndefOr[js.Any], 
+          /* style */ js.UndefOr[Any], 
           /* value */ js.UndefOr[java.lang.String], 
           typings.extjs.Ext.panel.IPanel
         ]
       ] = js.undefined
     
     /** [Config Option] (Boolean/Number) */
-    var shrinkWrapDock: js.UndefOr[js.Any] = js.undefined
+    var shrinkWrapDock: js.UndefOr[Any] = js.undefined
   }
   object IAbstractPanel {
     
@@ -140,11 +140,11 @@ object panel {
       
       inline def setAddBodyClsUndefined: Self = StObject.set(x, "addBodyCls", js.undefined)
       
-      inline def setAddDocked(value: (js.UndefOr[js.Any], js.UndefOr[Double]) => Array): Self = StObject.set(x, "addDocked", js.Any.fromFunction2(value))
+      inline def setAddDocked(value: (js.UndefOr[Any], js.UndefOr[Double]) => Array): Self = StObject.set(x, "addDocked", js.Any.fromFunction2(value))
       
       inline def setAddDockedUndefined: Self = StObject.set(x, "addDocked", js.undefined)
       
-      inline def setAddUIClsToElement(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addUIClsToElement", js.Any.fromFunction1(value))
+      inline def setAddUIClsToElement(value: /* cls */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addUIClsToElement", js.Any.fromFunction1(value))
       
       inline def setAddUIClsToElementUndefined: Self = StObject.set(x, "addUIClsToElement", js.undefined)
       
@@ -154,29 +154,29 @@ object panel {
       
       inline def setBodyBorderUndefined: Self = StObject.set(x, "bodyBorder", js.undefined)
       
-      inline def setBodyCls(value: js.Any): Self = StObject.set(x, "bodyCls", value.asInstanceOf[js.Any])
+      inline def setBodyCls(value: Any): Self = StObject.set(x, "bodyCls", value.asInstanceOf[js.Any])
       
       inline def setBodyClsUndefined: Self = StObject.set(x, "bodyCls", js.undefined)
       
-      inline def setBodyPadding(value: js.Any): Self = StObject.set(x, "bodyPadding", value.asInstanceOf[js.Any])
+      inline def setBodyPadding(value: Any): Self = StObject.set(x, "bodyPadding", value.asInstanceOf[js.Any])
       
       inline def setBodyPaddingUndefined: Self = StObject.set(x, "bodyPadding", js.undefined)
       
-      inline def setBodyStyle(value: js.Any): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
+      inline def setBodyStyle(value: Any): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
       
       inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      inline def setDefaultDockWeights(value: js.Any): Self = StObject.set(x, "defaultDockWeights", value.asInstanceOf[js.Any])
+      inline def setDefaultDockWeights(value: Any): Self = StObject.set(x, "defaultDockWeights", value.asInstanceOf[js.Any])
       
       inline def setDefaultDockWeightsUndefined: Self = StObject.set(x, "defaultDockWeights", js.undefined)
       
-      inline def setDockedItems(value: js.Any): Self = StObject.set(x, "dockedItems", value.asInstanceOf[js.Any])
+      inline def setDockedItems(value: Any): Self = StObject.set(x, "dockedItems", value.asInstanceOf[js.Any])
       
       inline def setDockedItemsUndefined: Self = StObject.set(x, "dockedItems", js.undefined)
       
-      inline def setGetDockedComponent(value: js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
+      inline def setGetDockedComponent(value: js.UndefOr[Any] => IComponent): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
       
       inline def setGetDockedComponentUndefined: Self = StObject.set(x, "getDockedComponent", js.undefined)
       
@@ -184,7 +184,7 @@ object panel {
       
       inline def setGetDockedItemsUndefined: Self = StObject.set(x, "getDockedItems", js.undefined)
       
-      inline def setInsertDocked(value: (js.UndefOr[Double], js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "insertDocked", js.Any.fromFunction2(value))
+      inline def setInsertDocked(value: (js.UndefOr[Double], js.UndefOr[Any]) => Unit): Self = StObject.set(x, "insertDocked", js.Any.fromFunction2(value))
       
       inline def setInsertDockedUndefined: Self = StObject.set(x, "insertDocked", js.undefined)
       
@@ -208,17 +208,17 @@ object panel {
       
       inline def setRemoveDockedUndefined: Self = StObject.set(x, "removeDocked", js.undefined)
       
-      inline def setRemoveUIClsFromElement(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeUIClsFromElement", js.Any.fromFunction1(value))
+      inline def setRemoveUIClsFromElement(value: /* cls */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "removeUIClsFromElement", js.Any.fromFunction1(value))
       
       inline def setRemoveUIClsFromElementUndefined: Self = StObject.set(x, "removeUIClsFromElement", js.undefined)
       
       inline def setSetBodyStyle(
-        value: (/* style */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.panel.IPanel
+        value: (/* style */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.panel.IPanel
       ): Self = StObject.set(x, "setBodyStyle", js.Any.fromFunction2(value))
       
       inline def setSetBodyStyleUndefined: Self = StObject.set(x, "setBodyStyle", js.undefined)
       
-      inline def setShrinkWrapDock(value: js.Any): Self = StObject.set(x, "shrinkWrapDock", value.asInstanceOf[js.Any])
+      inline def setShrinkWrapDock(value: Any): Self = StObject.set(x, "shrinkWrapDock", value.asInstanceOf[js.Any])
       
       inline def setShrinkWrapDockUndefined: Self = StObject.set(x, "shrinkWrapDock", js.undefined)
     }
@@ -233,7 +233,7 @@ object panel {
       * @returns HTMLElement the html element
       */
     @JSName("getDragEl")
-    var getDragEl_IDD: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], HTMLElement]] = js.undefined
+    var getDragEl_IDD: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], HTMLElement]] = js.undefined
   }
   object IDD {
     
@@ -244,7 +244,7 @@ object panel {
     
     extension [Self <: IDD](x: Self) {
       
-      inline def setGetDragEl(value: /* e */ js.UndefOr[js.Any] => HTMLElement): Self = StObject.set(x, "getDragEl", js.Any.fromFunction1(value))
+      inline def setGetDragEl(value: /* e */ js.UndefOr[Any] => HTMLElement): Self = StObject.set(x, "getDragEl", js.Any.fromFunction1(value))
       
       inline def setGetDragElUndefined: Self = StObject.set(x, "getDragEl", js.undefined)
     }
@@ -257,13 +257,13 @@ object panel {
     /** [Method] Add a tool to the header
       * @param tool Object
       */
-    var addTool: js.UndefOr[js.Function1[/* tool */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var addTool: js.UndefOr[js.Function1[/* tool */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] inherit docs
       * @param cls Object
       */
     @JSName("addUIClsToElement")
-    var addUIClsToElement_IHeader: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var addUIClsToElement_IHeader: js.UndefOr[js.Function1[/* cls */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Invoked after the Container has laid out and rendered if necessary its child Components  */
     @JSName("afterLayout")
@@ -275,7 +275,7 @@ object panel {
     var getTools: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var glyph: js.UndefOr[js.Any] = js.undefined
+    var glyph: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var icon: js.UndefOr[java.lang.String] = js.undefined
@@ -291,20 +291,18 @@ object panel {
       * @param index Object
       */
     @JSName("onAdd")
-    var onAdd_IHeader: js.UndefOr[
-        js.Function2[/* component */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var onAdd_IHeader: js.UndefOr[js.Function2[/* component */ js.UndefOr[Any], /* index */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] inherit docs
       * @param cls Object
       */
     @JSName("removeUIClsFromElement")
-    var removeUIClsFromElement_IHeader: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var removeUIClsFromElement_IHeader: js.UndefOr[js.Function1[/* cls */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets glyph that provides the icon image for this header
       * @param glyph Number/String the numeric charCode or string charCode/font-family. This parameter expects a format consistent with that of glyph
       */
-    var setGlyph: js.UndefOr[js.Function1[/* glyph */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setGlyph: js.UndefOr[js.Function1[/* glyph */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the image path that provides the icon image for this header
       * @param icon String The new icon path
@@ -339,11 +337,11 @@ object panel {
     
     extension [Self <: IHeader](x: Self) {
       
-      inline def setAddTool(value: /* tool */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
+      inline def setAddTool(value: /* tool */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
       
       inline def setAddToolUndefined: Self = StObject.set(x, "addTool", js.undefined)
       
-      inline def setAddUIClsToElement(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addUIClsToElement", js.Any.fromFunction1(value))
+      inline def setAddUIClsToElement(value: /* cls */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addUIClsToElement", js.Any.fromFunction1(value))
       
       inline def setAddUIClsToElementUndefined: Self = StObject.set(x, "addUIClsToElement", js.undefined)
       
@@ -355,7 +353,7 @@ object panel {
       
       inline def setGetToolsUndefined: Self = StObject.set(x, "getTools", js.undefined)
       
-      inline def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
       inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
@@ -371,15 +369,15 @@ object panel {
       
       inline def setIsHeaderUndefined: Self = StObject.set(x, "isHeader", js.undefined)
       
-      inline def setOnAdd(value: (/* component */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
+      inline def setOnAdd(value: (/* component */ js.UndefOr[Any], /* index */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
       
       inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      inline def setRemoveUIClsFromElement(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeUIClsFromElement", js.Any.fromFunction1(value))
+      inline def setRemoveUIClsFromElement(value: /* cls */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "removeUIClsFromElement", js.Any.fromFunction1(value))
       
       inline def setRemoveUIClsFromElementUndefined: Self = StObject.set(x, "removeUIClsFromElement", js.undefined)
       
-      inline def setSetGlyph(value: /* glyph */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setGlyph", js.Any.fromFunction1(value))
+      inline def setSetGlyph(value: /* glyph */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setGlyph", js.Any.fromFunction1(value))
       
       inline def setSetGlyphUndefined: Self = StObject.set(x, "setGlyph", js.undefined)
       
@@ -416,7 +414,7 @@ object panel {
     /** [Method] Add tools to this panel
       * @param tools Object[]/Ext.panel.Tool[] The tools to add
       */
-    var addTool: js.UndefOr[js.Function1[/* tools */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var addTool: js.UndefOr[js.Function1[/* tools */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Invoked after the Panel is Collapsed
       * @param animated Boolean
@@ -432,13 +430,13 @@ object panel {
     var animCollapse: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object/Object[]) */
-    var bbar: js.UndefOr[js.Any] = js.undefined
+    var bbar: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var buttonAlign: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object/Object[]) */
-    var buttons: js.UndefOr[js.Any] = js.undefined
+    var buttons: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var closable: js.UndefOr[Boolean] = js.undefined
@@ -486,10 +484,10 @@ object panel {
     /** [Method] converts a collapsdDir into an anchor argument for Element slideIn overridden in rtl mode to switch l and r
       * @param collapseDir Object
       */
-    var convertCollapseDir: js.UndefOr[js.Function1[/* collapseDir */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var convertCollapseDir: js.UndefOr[js.Function1[/* collapseDir */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Property] (Ext.dd.DragSource/Ext.util.ComponentDragger) */
-    var dd: js.UndefOr[js.Any] = js.undefined
+    var dd: js.UndefOr[Any] = js.undefined
     
     /** [Method] Expands the panel body so that it becomes visible
       * @param animate Boolean True to animate the transition, else false (defaults to the value of the animCollapse panel config). May also be specified as the animation duration in milliseconds.
@@ -498,7 +496,7 @@ object panel {
     var expand: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.undefined
     
     /** [Config Option] (Object/Object[]) */
-    var fbar: js.UndefOr[js.Any] = js.undefined
+    var fbar: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var floatable: js.UndefOr[Boolean] = js.undefined
@@ -509,7 +507,7 @@ object panel {
     /** [Method] Returns the current collapsed state of the panel
       * @returns Boolean/String False when not collapsed, otherwise the value of collapseDirection.
       */
-    var getCollapsed: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getCollapsed: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Gets the Header for this panel  */
     var getHeader: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -518,13 +516,13 @@ object panel {
       * @returns Object
       */
     @JSName("getState")
-    var getState_IPanel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getState_IPanel: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var glyph: js.UndefOr[js.Any] = js.undefined
+    var glyph: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var header: js.UndefOr[js.Any] = js.undefined
+    var header: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var headerOverCls: js.UndefOr[java.lang.String] = js.undefined
@@ -546,10 +544,10 @@ object panel {
       * @returns Boolean true if this component is visible, false otherwise.
       */
     @JSName("isVisible")
-    var isVisible_IPanel: js.UndefOr[js.Function1[/* deep */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var isVisible_IPanel: js.UndefOr[js.Function1[/* deep */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Config Option] (Object/Object[]) */
-    var lbar: js.UndefOr[js.Any] = js.undefined
+    var lbar: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var manageHeight: js.UndefOr[Boolean] = js.undefined
@@ -565,7 +563,7 @@ object panel {
       * @param destroying Object
       */
     @JSName("onRemoved")
-    var onRemoved_IPanel: js.UndefOr[js.Function1[/* destroying */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onRemoved_IPanel: js.UndefOr[js.Function1[/* destroying */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Allows addition of behavior to the show operation  */
     @JSName("onShow")
@@ -575,7 +573,7 @@ object panel {
     var overlapHeader: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.Component/Object) */
-    var placeholder: js.UndefOr[js.Any] = js.undefined
+    var placeholder: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var placeholderCollapseHideMode: js.UndefOr[Double] = js.undefined
@@ -584,21 +582,19 @@ object panel {
     var preventHeader: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object/Object[]) */
-    var rbar: js.UndefOr[js.Any] = js.undefined
+    var rbar: js.UndefOr[Any] = js.undefined
     
     /** [Method]
       * @param border Object
       * @param targetEl Object
       */
     @JSName("setBorder")
-    var setBorder_IPanel: js.UndefOr[
-        js.Function2[/* border */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var setBorder_IPanel: js.UndefOr[js.Function2[/* border */ js.UndefOr[Any], /* targetEl */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Set the glyph for the panel s header
       * @param newGlyph Number/String The new glyph This parameter expects a format consistent with that of glyph
       */
-    var setGlyph: js.UndefOr[js.Function1[/* newGlyph */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setGlyph: js.UndefOr[js.Function1[/* newGlyph */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Set the icon for the panel s header
       * @param newIcon String The new icon path
@@ -619,13 +615,13 @@ object panel {
       * @param ui Object
       */
     @JSName("setUI")
-    var setUI_IPanel: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setUI_IPanel: js.UndefOr[js.Function1[/* ui */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var simpleDrag: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object/Object[]) */
-    var tbar: js.UndefOr[js.Any] = js.undefined
+    var tbar: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var title: js.UndefOr[java.lang.String] = js.undefined
@@ -642,7 +638,7 @@ object panel {
     var toggleCollapse: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Config Option] (Object[]/Ext.panel.Tool[]) */
-    var tools: js.UndefOr[js.Any] = js.undefined
+    var tools: js.UndefOr[Any] = js.undefined
   }
   object IPanel {
     
@@ -653,7 +649,7 @@ object panel {
     
     extension [Self <: typings.extjs.Ext.panel.IPanel](x: Self) {
       
-      inline def setAddTool(value: /* tools */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
+      inline def setAddTool(value: /* tools */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
       
       inline def setAddToolUndefined: Self = StObject.set(x, "addTool", js.undefined)
       
@@ -669,7 +665,7 @@ object panel {
       
       inline def setAnimCollapseUndefined: Self = StObject.set(x, "animCollapse", js.undefined)
       
-      inline def setBbar(value: js.Any): Self = StObject.set(x, "bbar", value.asInstanceOf[js.Any])
+      inline def setBbar(value: Any): Self = StObject.set(x, "bbar", value.asInstanceOf[js.Any])
       
       inline def setBbarUndefined: Self = StObject.set(x, "bbar", js.undefined)
       
@@ -677,7 +673,7 @@ object panel {
       
       inline def setButtonAlignUndefined: Self = StObject.set(x, "buttonAlign", js.undefined)
       
-      inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
@@ -727,11 +723,11 @@ object panel {
       
       inline def setConstrainHeaderUndefined: Self = StObject.set(x, "constrainHeader", js.undefined)
       
-      inline def setConvertCollapseDir(value: /* collapseDir */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "convertCollapseDir", js.Any.fromFunction1(value))
+      inline def setConvertCollapseDir(value: /* collapseDir */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "convertCollapseDir", js.Any.fromFunction1(value))
       
       inline def setConvertCollapseDirUndefined: Self = StObject.set(x, "convertCollapseDir", js.undefined)
       
-      inline def setDd(value: js.Any): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+      inline def setDd(value: Any): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
       
       inline def setDdUndefined: Self = StObject.set(x, "dd", js.undefined)
       
@@ -739,7 +735,7 @@ object panel {
       
       inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      inline def setFbar(value: js.Any): Self = StObject.set(x, "fbar", value.asInstanceOf[js.Any])
+      inline def setFbar(value: Any): Self = StObject.set(x, "fbar", value.asInstanceOf[js.Any])
       
       inline def setFbarUndefined: Self = StObject.set(x, "fbar", js.undefined)
       
@@ -751,7 +747,7 @@ object panel {
       
       inline def setFrameHeaderUndefined: Self = StObject.set(x, "frameHeader", js.undefined)
       
-      inline def setGetCollapsed(value: () => js.Any): Self = StObject.set(x, "getCollapsed", js.Any.fromFunction0(value))
+      inline def setGetCollapsed(value: () => Any): Self = StObject.set(x, "getCollapsed", js.Any.fromFunction0(value))
       
       inline def setGetCollapsedUndefined: Self = StObject.set(x, "getCollapsed", js.undefined)
       
@@ -759,15 +755,15 @@ object panel {
       
       inline def setGetHeaderUndefined: Self = StObject.set(x, "getHeader", js.undefined)
       
-      inline def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
       inline def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
       
-      inline def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
       inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
-      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderOverCls(value: java.lang.String): Self = StObject.set(x, "headerOverCls", value.asInstanceOf[js.Any])
       
@@ -791,11 +787,11 @@ object panel {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setIsVisible(value: /* deep */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
+      inline def setIsVisible(value: /* deep */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
       
       inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
       
-      inline def setLbar(value: js.Any): Self = StObject.set(x, "lbar", value.asInstanceOf[js.Any])
+      inline def setLbar(value: Any): Self = StObject.set(x, "lbar", value.asInstanceOf[js.Any])
       
       inline def setLbarUndefined: Self = StObject.set(x, "lbar", js.undefined)
       
@@ -811,7 +807,7 @@ object panel {
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      inline def setOnRemoved(value: /* destroying */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onRemoved", js.Any.fromFunction1(value))
+      inline def setOnRemoved(value: /* destroying */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onRemoved", js.Any.fromFunction1(value))
       
       inline def setOnRemovedUndefined: Self = StObject.set(x, "onRemoved", js.undefined)
       
@@ -823,7 +819,7 @@ object panel {
       
       inline def setOverlapHeaderUndefined: Self = StObject.set(x, "overlapHeader", js.undefined)
       
-      inline def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderCollapseHideMode(value: Double): Self = StObject.set(x, "placeholderCollapseHideMode", value.asInstanceOf[js.Any])
       
@@ -835,15 +831,15 @@ object panel {
       
       inline def setPreventHeaderUndefined: Self = StObject.set(x, "preventHeader", js.undefined)
       
-      inline def setRbar(value: js.Any): Self = StObject.set(x, "rbar", value.asInstanceOf[js.Any])
+      inline def setRbar(value: Any): Self = StObject.set(x, "rbar", value.asInstanceOf[js.Any])
       
       inline def setRbarUndefined: Self = StObject.set(x, "rbar", js.undefined)
       
-      inline def setSetBorder(value: (/* border */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setBorder", js.Any.fromFunction2(value))
+      inline def setSetBorder(value: (/* border */ js.UndefOr[Any], /* targetEl */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setBorder", js.Any.fromFunction2(value))
       
       inline def setSetBorderUndefined: Self = StObject.set(x, "setBorder", js.undefined)
       
-      inline def setSetGlyph(value: /* newGlyph */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setGlyph", js.Any.fromFunction1(value))
+      inline def setSetGlyph(value: /* newGlyph */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setGlyph", js.Any.fromFunction1(value))
       
       inline def setSetGlyphUndefined: Self = StObject.set(x, "setGlyph", js.undefined)
       
@@ -859,7 +855,7 @@ object panel {
       
       inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
       
-      inline def setSetUI(value: /* ui */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUI", js.Any.fromFunction1(value))
+      inline def setSetUI(value: /* ui */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUI", js.Any.fromFunction1(value))
       
       inline def setSetUIUndefined: Self = StObject.set(x, "setUI", js.undefined)
       
@@ -867,7 +863,7 @@ object panel {
       
       inline def setSimpleDragUndefined: Self = StObject.set(x, "simpleDrag", js.undefined)
       
-      inline def setTbar(value: js.Any): Self = StObject.set(x, "tbar", value.asInstanceOf[js.Any])
+      inline def setTbar(value: Any): Self = StObject.set(x, "tbar", value.asInstanceOf[js.Any])
       
       inline def setTbarUndefined: Self = StObject.set(x, "tbar", js.undefined)
       
@@ -887,7 +883,7 @@ object panel {
       
       inline def setToggleCollapseUndefined: Self = StObject.set(x, "toggleCollapse", js.undefined)
       
-      inline def setTools(value: js.Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+      inline def setTools(value: Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
       inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
     }
@@ -1004,13 +1000,13 @@ object panel {
       * @param state Object
       */
     @JSName("applyState")
-    var applyState_ITable: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var applyState_ITable: js.UndefOr[js.Function1[/* state */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var columnLines: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.grid.column.Column[]/Object) */
-    var columns: js.UndefOr[js.Any] = js.undefined
+    var columns: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var deferRowRender: js.UndefOr[Boolean] = js.undefined
@@ -1037,7 +1033,7 @@ object panel {
     var enableLocking: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.grid.feature.Feature[]/Object[]/Ext.enums.Feature[]) */
-    var features: js.UndefOr[js.Any] = js.undefined
+    var features: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var forceFit: js.UndefOr[Boolean] = js.undefined
@@ -1067,19 +1063,19 @@ object panel {
     var invalidateScroller: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var lockedGridConfig: js.UndefOr[js.Any] = js.undefined
+    var lockedGridConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var lockedViewConfig: js.UndefOr[js.Any] = js.undefined
+    var lockedViewConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var multiSelect: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var normalGridConfig: js.UndefOr[js.Any] = js.undefined
+    var normalGridConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var normalViewConfig: js.UndefOr[js.Any] = js.undefined
+    var normalViewConfig: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var optimizedColumnMove: js.UndefOr[Boolean] = js.undefined
@@ -1088,7 +1084,7 @@ object panel {
     var rowLines: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Boolean) */
-    var scroll: js.UndefOr[js.Any] = js.undefined
+    var scroll: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var scrollDelta: js.UndefOr[Double] = js.undefined
@@ -1097,7 +1093,7 @@ object panel {
     var sealedColumns: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.selection.Model/Object) */
-    var selModel: js.UndefOr[js.Any] = js.undefined
+    var selModel: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var selType: js.UndefOr[java.lang.String] = js.undefined
@@ -1121,13 +1117,13 @@ object panel {
     var syncRowHeights: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var verticalScroller: js.UndefOr[js.Any] = js.undefined
+    var verticalScroller: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Ext.view.Table) */
     var view: js.UndefOr[typings.extjs.Ext.view.ITable] = js.undefined
     
     /** [Config Option] (Object) */
-    var viewConfig: js.UndefOr[js.Any] = js.undefined
+    var viewConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var viewType: js.UndefOr[java.lang.String] = js.undefined
@@ -1153,7 +1149,7 @@ object panel {
       
       inline def setAllowDeselectUndefined: Self = StObject.set(x, "allowDeselect", js.undefined)
       
-      inline def setApplyState(value: /* state */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
+      inline def setApplyState(value: /* state */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
       
       inline def setApplyStateUndefined: Self = StObject.set(x, "applyState", js.undefined)
       
@@ -1161,7 +1157,7 @@ object panel {
       
       inline def setColumnLinesUndefined: Self = StObject.set(x, "columnLines", js.undefined)
       
-      inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
@@ -1197,7 +1193,7 @@ object panel {
       
       inline def setEnableLockingUndefined: Self = StObject.set(x, "enableLocking", js.undefined)
       
-      inline def setFeatures(value: js.Any): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: Any): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
       inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
@@ -1229,11 +1225,11 @@ object panel {
       
       inline def setInvalidateScrollerUndefined: Self = StObject.set(x, "invalidateScroller", js.undefined)
       
-      inline def setLockedGridConfig(value: js.Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
+      inline def setLockedGridConfig(value: Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
       
       inline def setLockedGridConfigUndefined: Self = StObject.set(x, "lockedGridConfig", js.undefined)
       
-      inline def setLockedViewConfig(value: js.Any): Self = StObject.set(x, "lockedViewConfig", value.asInstanceOf[js.Any])
+      inline def setLockedViewConfig(value: Any): Self = StObject.set(x, "lockedViewConfig", value.asInstanceOf[js.Any])
       
       inline def setLockedViewConfigUndefined: Self = StObject.set(x, "lockedViewConfig", js.undefined)
       
@@ -1241,11 +1237,11 @@ object panel {
       
       inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
       
-      inline def setNormalGridConfig(value: js.Any): Self = StObject.set(x, "normalGridConfig", value.asInstanceOf[js.Any])
+      inline def setNormalGridConfig(value: Any): Self = StObject.set(x, "normalGridConfig", value.asInstanceOf[js.Any])
       
       inline def setNormalGridConfigUndefined: Self = StObject.set(x, "normalGridConfig", js.undefined)
       
-      inline def setNormalViewConfig(value: js.Any): Self = StObject.set(x, "normalViewConfig", value.asInstanceOf[js.Any])
+      inline def setNormalViewConfig(value: Any): Self = StObject.set(x, "normalViewConfig", value.asInstanceOf[js.Any])
       
       inline def setNormalViewConfigUndefined: Self = StObject.set(x, "normalViewConfig", js.undefined)
       
@@ -1257,7 +1253,7 @@ object panel {
       
       inline def setRowLinesUndefined: Self = StObject.set(x, "rowLines", js.undefined)
       
-      inline def setScroll(value: js.Any): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Any): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
       inline def setScrollDelta(value: Double): Self = StObject.set(x, "scrollDelta", value.asInstanceOf[js.Any])
       
@@ -1269,7 +1265,7 @@ object panel {
       
       inline def setSealedColumnsUndefined: Self = StObject.set(x, "sealedColumns", js.undefined)
       
-      inline def setSelModel(value: js.Any): Self = StObject.set(x, "selModel", value.asInstanceOf[js.Any])
+      inline def setSelModel(value: Any): Self = StObject.set(x, "selModel", value.asInstanceOf[js.Any])
       
       inline def setSelModelUndefined: Self = StObject.set(x, "selModel", js.undefined)
       
@@ -1301,13 +1297,13 @@ object panel {
       
       inline def setSyncRowHeightsUndefined: Self = StObject.set(x, "syncRowHeights", js.undefined)
       
-      inline def setVerticalScroller(value: js.Any): Self = StObject.set(x, "verticalScroller", value.asInstanceOf[js.Any])
+      inline def setVerticalScroller(value: Any): Self = StObject.set(x, "verticalScroller", value.asInstanceOf[js.Any])
       
       inline def setVerticalScrollerUndefined: Self = StObject.set(x, "verticalScroller", js.undefined)
       
       inline def setView(value: typings.extjs.Ext.view.ITable): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def setViewConfig(value: js.Any): Self = StObject.set(x, "viewConfig", value.asInstanceOf[js.Any])
+      inline def setViewConfig(value: Any): Self = StObject.set(x, "viewConfig", value.asInstanceOf[js.Any])
       
       inline def setViewConfigUndefined: Self = StObject.set(x, "viewConfig", js.undefined)
       
@@ -1324,16 +1320,16 @@ object panel {
        with IComponent {
     
     /** [Config Option] (Function) */
-    var callback: js.UndefOr[js.Any] = js.undefined
+    var callback: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.undefined
+    var handler: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var isTool: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the type of the tool
       * @param type String The new type. See the type config.
@@ -1348,7 +1344,7 @@ object panel {
     var toolOwner: js.UndefOr[IComponent] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var tooltipType: js.UndefOr[java.lang.String] = js.undefined
@@ -1365,11 +1361,11 @@ object panel {
     
     extension [Self <: ITool](x: Self) {
       
-      inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
@@ -1377,7 +1373,7 @@ object panel {
       
       inline def setIsToolUndefined: Self = StObject.set(x, "isTool", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
@@ -1393,7 +1389,7 @@ object panel {
       
       inline def setToolOwnerUndefined: Self = StObject.set(x, "toolOwner", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipType(value: java.lang.String): Self = StObject.set(x, "tooltipType", value.asInstanceOf[js.Any])
       

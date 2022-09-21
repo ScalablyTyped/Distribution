@@ -32,7 +32,7 @@ object MobileAppsListResponse {
     
     inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
     
-    inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
+    inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

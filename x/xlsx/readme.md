@@ -1,7 +1,7 @@
 
 # Scala.js typings for xlsx
 
-Typings are for version 0.16.9
+Typings are for version 0.18.5
 
 ## Library description:
 SheetJS Spreadsheet data parser and writer
@@ -10,14 +10,14 @@ SheetJS Spreadsheet data parser and writer
 | ------------------ | :-------------: |
 | Full name          | xlsx |
 | Keywords           | excel, xls, xlsx, xlsb, xlsm, ods, csv, dbf, dif, sylk, office, spreadsheet |
-| # releases         | 22 |
-| # dependents       | 1571 |
-| # downloads        | 38021155 |
-| # stars            | 165 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 6140653.0 |
+| # stars            | 30669.0 |
 
 ## Links
 - [Homepage](https://sheetjs.com/)
-- [Bugs](https://github.com/SheetJS/js-xlsx/issues)
+- [Bugs](https://github.com/SheetJS/sheetjs/issues)
 - [Repository](https://github.com/SheetJS/sheetjs)
 - [Npm](https://www.npmjs.com/package/xlsx)
     

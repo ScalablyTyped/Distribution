@@ -23,6 +23,10 @@ object hotShotsStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
+  sealed trait stream extends StObject
+  inline def stream: stream = "stream".asInstanceOf[stream]
+  
+  @js.native
   sealed trait success extends StObject
   inline def success: success = "success".asInstanceOf[success]
   

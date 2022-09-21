@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Ajax_ extends StObject {
   
-  def bind(master: js.Any): Ajax_ = js.native
+  def bind(master: Any): Ajax_ = js.native
   
-  def del(url: String): js.Promise[js.Any] = js.native
-  def del(url: String, params: js.Any): js.Promise[js.Any] = js.native
-  def del(url: String, params: js.Any, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def del(url: String, params: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def del(url: String): js.Promise[Any] = js.native
+  def del(url: String, params: Any): js.Promise[Any] = js.native
+  def del(url: String, params: Any, callback: WebixCallback): js.Promise[Any] = js.native
+  def del(url: String, params: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def get(url: String): js.Promise[js.Any] = js.native
-  def get(url: String, params: js.Any): js.Promise[js.Any] = js.native
-  def get(url: String, params: js.Any, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def get(url: String, params: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def get(url: String): js.Promise[Any] = js.native
+  def get(url: String, params: Any): js.Promise[Any] = js.native
+  def get(url: String, params: Any, callback: WebixCallback): js.Promise[Any] = js.native
+  def get(url: String, params: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def getXHR(): js.Any = js.native
+  def getXHR(): Any = js.native
   
-  def headers(values: js.Any): Ajax_ = js.native
+  def headers(values: Any): Ajax_ = js.native
   
-  var master: js.Any = js.native
+  var master: Any = js.native
   
-  def post(url: String): js.Promise[js.Any] = js.native
-  def post(url: String, params: js.Any): js.Promise[js.Any] = js.native
-  def post(url: String, params: js.Any, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def post(url: String, params: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def post(url: String): js.Promise[Any] = js.native
+  def post(url: String, params: Any): js.Promise[Any] = js.native
+  def post(url: String, params: Any, callback: WebixCallback): js.Promise[Any] = js.native
+  def post(url: String, params: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def put(url: String): js.Promise[js.Any] = js.native
-  def put(url: String, params: js.Any): js.Promise[js.Any] = js.native
-  def put(url: String, params: js.Any, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def put(url: String, params: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def put(url: String): js.Promise[Any] = js.native
+  def put(url: String, params: Any): js.Promise[Any] = js.native
+  def put(url: String, params: Any, callback: WebixCallback): js.Promise[Any] = js.native
+  def put(url: String, params: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
   def response(`type`: String): Ajax_ = js.native
   
-  def stringify(data: js.Any): String = js.native
+  def stringify(data: Any): String = js.native
   
   def sync(): Ajax_ = js.native
 }

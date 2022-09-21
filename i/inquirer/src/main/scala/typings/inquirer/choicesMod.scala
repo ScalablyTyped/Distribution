@@ -17,19 +17,19 @@ object choicesMod {
     * @template T
     * The type of the answers.
     */
-  @JSImport("inquirer/lib/objects/choices", JSImport.Namespace)
+  @JSImport("inquirer/lib/objects/choices", JSImport.Default)
   @js.native
-  class ^[T /* <: Answers */] protected ()
+  open class default[T /* <: Answers */] protected ()
     extends StObject
        with Choices[T] {
     /**
-      * Initializes a new instance of the `Choices` class.
+      * Initializes a new instance of the {@link Choices `Choices<T>`} class.
       *
       * @param choices
       * The choices to add to the collection.
       *
       * @param answers
-      * The `answers`-object.
+      * The {@link Answers `Answers`}-object.
       */
     def this(choices: js.Array[DistinctChoice[T]], answers: T) = this()
   }
@@ -40,7 +40,7 @@ object choicesMod {
     * @template T
     * The type of the answers.
     */
-  type ChoiceProperty[T] = KeyUnion[UnionToIntersection[RealChoice[T]]]
+  type ChoiceProperty[T /* <: Answers */] = KeyUnion[UnionToIntersection[RealChoice[T]]]
   
   /**
     * A collection of multiple `Choice`-objects.
@@ -62,65 +62,65 @@ object choicesMod {
       * @param callbackfn
       * A function that accepts up to three arguments.
       *
-      * The filter method calls the `callbackfn` function one time for each element in the array.
+      * The filter method calls the {@link callbackfn `callbackfn`} function one time for each element in the array.
       *
       * @param thisArg
-      * An object to which the `this` keyword can refer in the callbackfn function.
+      * An object to which the `this` keyword can refer in the {@link callbackfn `callbackfn`} function.
       *
-      * If `thisArg` is omitted, undefined is used as the this value.
+      * If {@link thisArg `thisArg`} is omitted, undefined is used as the this value.
       *
       * @returns
       * The elements in the collection which meet the conditions.
       */
-    def filter[TElement /* <: typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^ */](
+    def filter[TElement /* <: typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default */](
       callbackfn: js.Function3[
-          /* value */ typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^, 
+          /* value */ typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default, 
           /* index */ Double, 
-          /* array */ js.Array[typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^], 
+          /* array */ js.Array[typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default], 
           /* is TElement */ Boolean
         ]
     ): js.Array[TElement] = js.native
-    def filter[TElement /* <: typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^ */](
+    def filter[TElement /* <: typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default */](
       callbackfn: js.Function3[
-          /* value */ typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^, 
+          /* value */ typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default, 
           /* index */ Double, 
-          /* array */ js.Array[typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^], 
+          /* array */ js.Array[typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default], 
           /* is TElement */ Boolean
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): js.Array[TElement] = js.native
     
     /**
-      * Returns the value of the first element in the array where predicate is true, and `undefined` otherwise.
+      * Returns the value of the first element in the array where predicate is `true`, and `undefined` otherwise.
       *
       * @param predicate
-      * `find` calls `predicate` once for each element of the array, in ascending order, until it finds one where predicate returns `true`.
+      * {@link find `find`} calls {@link predicate `predicate`} once for each element of the array, in ascending order, until it finds one where predicate returns `true`.
       *
-      * If such an element is found, `find` immediately returns that element value.
-      * Otherwise, find returns undefined.
+      * If such an element is found, {@link find `find`} immediately returns that element value.
+      * Otherwise, find returns `undefined`.
       *
       * @param thisArg
-      * If provided, it will be used as the `this` value for each invocation of `predicate`.
+      * If provided, it will be used as the `this` value for each invocation of {@link predicate `predicate`}.
       *
-      * If it is not provided, undefined is used instead.
+      * If it is not provided, `undefined` is used instead.
       */
     def find(
       predicate: js.Function3[
-          /* value */ typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^, 
+          /* value */ typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default, 
           /* index */ Double, 
-          /* obj */ js.Array[typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^], 
+          /* obj */ js.Array[typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default], 
           Boolean
         ]
-    ): typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^ = js.native
+    ): typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default = js.native
     def find(
       predicate: js.Function3[
-          /* value */ typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^, 
+          /* value */ typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default, 
           /* index */ Double, 
-          /* obj */ js.Array[typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^], 
+          /* obj */ js.Array[typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default], 
           Boolean
         ],
-      thisArg: js.Any
-    ): typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^ = js.native
+      thisArg: Any
+    ): typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default = js.native
     
     /**
       * Performs the specified action for each element in an array.
@@ -128,29 +128,29 @@ object choicesMod {
       * @param callbackfn
       * A function that accepts up to three arguments.
       *
-      * `forEach` calls the callbackfn function one time for each element in the array.
+      * {@link forEach `forEach`} calls the {@link callbackfn `callbackfn`} function one time for each element in the array.
       *
       * @param thisArg
-      * An object to which the this keyword can refer in the callbackfn function.
+      * An object to which the `this` keyword can refer in the {@link callbackfn `callbackfn`} function.
       *
-      * If `thisArg` is omitted, undefined is used as the this value.
+      * If {@link thisArg `thisArg`} is omitted, `undefined` is used as the `this` value.
       */
     def forEach(
       callbackfn: js.Function3[
-          /* value */ typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^, 
+          /* value */ typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default, 
           /* index */ Double, 
-          /* array */ js.Array[typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^], 
+          /* array */ js.Array[typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default], 
           Unit
         ]
     ): Unit = js.native
     def forEach(
       callbackfn: js.Function3[
-          /* value */ typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^, 
+          /* value */ typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default, 
           /* index */ Double, 
-          /* array */ js.Array[typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^], 
+          /* array */ js.Array[typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default], 
           Unit
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     /**
@@ -184,15 +184,15 @@ object choicesMod {
       * @param fromIndex
       * The array index at which to begin the search.
       *
-      * If fromIndex is omitted, the search starts at index 0.
+      * If {@link fromIndex `fromIndex`} is omitted, the search starts at index 0.
       *
       * @returns
-      * The index of the specified `searchElement`.
+      * The index of the specified {@link searchElement `searchElement`}.
       */
-    def indexOf(searchElement: typings.inquirer.choiceMod.^[T]): Double = js.native
-    def indexOf(searchElement: typings.inquirer.choiceMod.^[T], fromIndex: Double): Double = js.native
-    def indexOf(searchElement: typings.inquirer.separatorMod.^): Double = js.native
-    def indexOf(searchElement: typings.inquirer.separatorMod.^, fromIndex: Double): Double = js.native
+    def indexOf(searchElement: typings.inquirer.choiceMod.default[T]): Double = js.native
+    def indexOf(searchElement: typings.inquirer.choiceMod.default[T], fromIndex: Double): Double = js.native
+    def indexOf(searchElement: typings.inquirer.separatorMod.default): Double = js.native
+    def indexOf(searchElement: typings.inquirer.separatorMod.default, fromIndex: Double): Double = js.native
     
     /**
       * The number of choices.
@@ -200,7 +200,7 @@ object choicesMod {
     var length: Double = js.native
     
     /**
-      * Retrieves the specified `property` from all choices.
+      * Retrieves the specified {@link property `property`} from all choices.
       *
       * @template TProperty
       * The name of the property to get.
@@ -219,7 +219,7 @@ object choicesMod {
       ] = js.native
     
     /**
-      * Appends new elements to an array, and returns the new length of the array.
+      * Appends new elements to the array, and returns the new length of the array.
       *
       * @param items
       * The elements to add to the array.
@@ -227,7 +227,7 @@ object choicesMod {
       * @returns
       * The new length of the array.
       */
-    def push(items: (typings.inquirer.choiceMod.^[T] | typings.inquirer.separatorMod.^)*): Double = js.native
+    def push(items: (typings.inquirer.choiceMod.default[T] | typings.inquirer.separatorMod.default)*): Double = js.native
     
     /**
       * The selectable choices.
@@ -252,18 +252,18 @@ object choicesMod {
   }
   
   /**
-    * Represents a valid choice for the `Choices` class.
+    * Represents a valid choice for the {@link Choices `Choices<T>`} class.
     *
     * @template T
     * The type of the answers.
     */
-  type DistinctChoice[T] = /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.BaseChoiceMap<T>[keyof inquirer.inquirer.BaseChoiceMap<T>] */ js.Any
+  type DistinctChoice[T /* <: Answers */] = /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.BaseChoiceMap<T>[keyof inquirer.inquirer.BaseChoiceMap<T>] */ js.Any
   
   /**
-    * Represents a valid real choice for the `Choices` class.
+    * Represents a valid real choice for the {@link Choices `Choices<T>`} class.
     *
     * @template T
     * The type of the answers.
     */
-  type RealChoice[T] = Exclude[DistinctChoice[T], Type]
+  type RealChoice[T /* <: Answers */] = Exclude[DistinctChoice[T], Type]
 }

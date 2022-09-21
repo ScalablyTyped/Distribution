@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__internal-guards
 
-Typings are for version 1.0.0-pre.11
+Typings are for version 1.0.0-pre.23
 
 ## Library description:
 This package provides internal utilities for @esfx and is not intended for use in user-code.
@@ -10,15 +10,13 @@ This package provides internal utilities for @esfx and is not intended for use i
 | ------------------ | :-------------: |
 | Full name          | @esfx/internal-guards |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 43 |
-| # downloads        | 197880 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 21706.666666666668 |
+| # stars            | 161.0 |
 
 ## Links
-- [Homepage](https://github.com/esfx/esfx#readme)
 - [Bugs](https://github.com/esfx/esfx/issues)
-- [Repository](https://github.com/esfx/esfx)
 - [Npm](https://www.npmjs.com/package/%40esfx%2Finternal-guards)
     
 

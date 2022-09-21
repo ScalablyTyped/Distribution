@@ -9,7 +9,7 @@ trait InternalResizedEventUIParam extends StObject {
   /**
     * Used to get a reference to the layout manager performing resizing.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object InternalResizedEventUIParam {
   
@@ -20,7 +20,7 @@ object InternalResizedEventUIParam {
   
   extension [Self <: InternalResizedEventUIParam](x: Self) {
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

@@ -126,30 +126,30 @@ trait OpenFinClipboard extends StObject {
   /**
     * Writes data into the clipboard
     */
-  def write(data: js.Any): Unit = js.native
-  def write(data: js.Any, `type`: String): Unit = js.native
-  def write(data: js.Any, `type`: String, callback: js.Function0[Unit]): Unit = js.native
+  def write(data: Any): Unit = js.native
+  def write(data: Any, `type`: String): Unit = js.native
+  def write(data: Any, `type`: String, callback: js.Function0[Unit]): Unit = js.native
   def write(
-    data: js.Any,
+    data: Any,
     `type`: String,
     callback: js.Function0[Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
   def write(
-    data: js.Any,
+    data: Any,
     `type`: String,
     callback: Unit,
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
-  def write(data: js.Any, `type`: Null, callback: js.Function0[Unit]): Unit = js.native
+  def write(data: Any, `type`: Null, callback: js.Function0[Unit]): Unit = js.native
   def write(
-    data: js.Any,
+    data: Any,
     `type`: Null,
     callback: js.Function0[Unit],
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
   def write(
-    data: js.Any,
+    data: Any,
     `type`: Null,
     callback: Unit,
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]

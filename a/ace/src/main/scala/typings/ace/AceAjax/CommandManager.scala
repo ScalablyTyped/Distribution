@@ -1,49 +1,76 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.ace.aceStrings.afterExec
+import typings.ace.aceStrings.exec
+import typings.ace.anon.Command
+import typings.ace.anon.HashId
+import typings.ace.anon.Mac
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait CommandManager extends StObject {
   
-  def addCommand(command: EditorCommand): Unit
+  def addCommand(command: EditorCommand): Unit = js.native
   
-  def addCommands(commands: js.Array[EditorCommand]): Unit
+  def addCommands(commands: js.Array[EditorCommand]): Unit = js.native
   
-  var byName: js.Any
+  def addEventListener(name: String, callback: js.Function): Unit = js.native
+  def addEventListener(name: String, callback: js.Function, capturing: Boolean): Unit = js.native
   
-  var commands: js.Any
+  def bindKey(key: String, command: CommandLike): Unit = js.native
+  def bindKey(key: String, command: CommandLike, position: Double): Unit = js.native
+  def bindKey(key: Mac, command: CommandLike): Unit = js.native
+  def bindKey(key: Mac, command: CommandLike, position: Double): Unit = js.native
   
-  def exec(name: String, editor: Editor, args: js.Any): Unit
+  def bindKeys(keys: StringDictionary[js.Function]): Unit = js.native
   
-  var platform: String
-}
-object CommandManager {
+  var byName: CommandMap = js.native
   
-  inline def apply(
-    addCommand: EditorCommand => Unit,
-    addCommands: js.Array[EditorCommand] => Unit,
-    byName: js.Any,
-    commands: js.Any,
-    exec: (String, Editor, js.Any) => Unit,
-    platform: String
-  ): CommandManager = {
-    val __obj = js.Dynamic.literal(addCommand = js.Any.fromFunction1(addCommand), addCommands = js.Any.fromFunction1(addCommands), byName = byName.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], exec = js.Any.fromFunction3(exec), platform = platform.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CommandManager]
-  }
+  var commands: CommandMap = js.native
   
-  extension [Self <: CommandManager](x: Self) {
-    
-    inline def setAddCommand(value: EditorCommand => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
-    
-    inline def setAddCommands(value: js.Array[EditorCommand] => Unit): Self = StObject.set(x, "addCommands", js.Any.fromFunction1(value))
-    
-    inline def setByName(value: js.Any): Self = StObject.set(x, "byName", value.asInstanceOf[js.Any])
-    
-    inline def setCommands(value: js.Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
-    
-    inline def setExec(value: (String, Editor, js.Any) => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))
-    
-    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
-  }
+  def exec(command: String, editor: Editor, args: Any): Boolean = js.native
+  
+  def findKeyCommand(hashId: Double, keyString: String): js.UndefOr[String] = js.native
+  
+  def getStatusText(editor: Editor, data: js.Object): String = js.native
+  
+  def handleKeyboard(data: js.Object, hashId: Double, keyString: String, keyCode: String): Unit | Command = js.native
+  def handleKeyboard(data: js.Object, hashId: Double, keyString: String, keyCode: Double): Unit | Command = js.native
+  
+  def off(name: String, callback: js.Function): Unit = js.native
+  
+  def on(name: String, callback: js.Function): js.Function = js.native
+  def on(name: String, callback: js.Function, capturing: Boolean): js.Function = js.native
+  @JSName("on")
+  def on_afterExec(name: afterExec, callback: execEventHandler): js.Function = js.native
+  @JSName("on")
+  def on_exec(name: exec, callback: execEventHandler): js.Function = js.native
+  
+  def once(name: String, callback: js.Function): Unit = js.native
+  
+  def parseKeys(keyPart: String): HashId = js.native
+  
+  var platform: String = js.native
+  
+  def removeCommand(command: String): Unit = js.native
+  def removeCommand(command: String, keepCommand: Boolean): Unit = js.native
+  def removeCommand(command: EditorCommand): Unit = js.native
+  def removeCommand(command: EditorCommand, keepCommand: Boolean): Unit = js.native
+  
+  def removeCommands(command: js.Array[EditorCommand]): Unit = js.native
+  
+  def removeDefaultHandler(name: String, callback: js.Function): Unit = js.native
+  
+  def removeEventListener(name: String, callback: js.Function): Unit = js.native
+  
+  def removeListener(name: String, callback: js.Function): Unit = js.native
+  
+  def replay(editor: Editor): Unit = js.native
+  
+  def setDefaultHandler(name: String, callback: js.Function): Unit = js.native
+  
+  def toggleRecording(editor: Editor): Unit = js.native
 }

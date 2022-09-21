@@ -28,7 +28,7 @@ object GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse {
     
     inline def setErrorSamplesUndefined: Self = StObject.set(x, "errorSamples", js.undefined)
     
-    inline def setErrorSamplesVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "errorSamples", js.Array(value :_*))
+    inline def setErrorSamplesVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "errorSamples", js.Array(value*))
     
     inline def setErrorsConfig(value: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig): Self = StObject.set(x, "errorsConfig", value.asInstanceOf[js.Any])
     

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DefaultCollisionCoordinator")
 @js.native
-class DefaultCollisionCoordinator ()
+open class DefaultCollisionCoordinator ()
   extends StObject
      with typings.babylonjs.BABYLON.DefaultCollisionCoordinator {
   
   /* private */ /* CompleteClass */
-  var _collideWithWorld: js.Any = js.native
+  var _collideWithWorld: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _finalPosition: js.Any = js.native
+  var _finalPosition: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _scaledPosition: js.Any = js.native
+  var _scaledPosition: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _scaledVelocity: js.Any = js.native
+  var _scaledVelocity: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _scene: js.Any = js.native
+  var _scene: Any = js.native
   
   /* CompleteClass */
   override def createCollider(): typings.babylonjs.BABYLON.Collider = js.native

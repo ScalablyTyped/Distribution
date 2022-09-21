@@ -24,6 +24,6 @@ object ListVolumeInitiatorsOutput {
     
     inline def setInitiatorsUndefined: Self = StObject.set(x, "Initiators", js.undefined)
     
-    inline def setInitiatorsVarargs(value: Initiator*): Self = StObject.set(x, "Initiators", js.Array(value :_*))
+    inline def setInitiatorsVarargs(value: Initiator*): Self = StObject.set(x, "Initiators", js.Array(value*))
   }
 }

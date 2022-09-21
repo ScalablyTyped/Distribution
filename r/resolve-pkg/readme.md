@@ -10,10 +10,10 @@ Resolve the path of a package regardless of it having an entry point
 | ------------------ | :-------------: |
 | Full name          | resolve-pkg |
 | Keywords           | require, resolve, path, module, from, like, path, cwd, current, working, directory, grunt, main, entry, point |
-| # releases         | 2 |
-| # dependents       | 104 |
-| # downloads        | 9389421 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2184689.3333333335 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/resolve-pkg#readme)

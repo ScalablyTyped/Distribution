@@ -25,7 +25,7 @@ object CompleteQueryResponse {
     
     inline def setCompletionResultsUndefined: Self = StObject.set(x, "completionResults", js.undefined)
     
-    inline def setCompletionResultsVarargs(value: CompletionResult*): Self = StObject.set(x, "completionResults", js.Array(value :_*))
+    inline def setCompletionResultsVarargs(value: CompletionResult*): Self = StObject.set(x, "completionResults", js.Array(value*))
     
     inline def setMetadata(value: ResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait Flat extends StObject {
   
   var fragmentShaderSource: js.UndefOr[String] = js.undefined
   
-  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.undefined
+  var renderState: js.UndefOr[Any] = js.undefined
   
   var translucent: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +45,7 @@ object Flat {
     
     inline def setFragmentShaderSourceUndefined: Self = StObject.set(x, "fragmentShaderSource", js.undefined)
     
-    inline def setRenderState(value: typings.cesium.mod.RenderState): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
+    inline def setRenderState(value: Any): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
     
     inline def setRenderStateUndefined: Self = StObject.set(x, "renderState", js.undefined)
     

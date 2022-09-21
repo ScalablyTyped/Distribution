@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait History extends StObject {
   
   // tslint:disable-next-line no-redundant-undefined
-  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var history: js.UndefOr[js.Array[Any]] = js.undefined
   
   var index: Double
   
@@ -39,11 +39,11 @@ object History {
   
   extension [Self <: History](x: Self) {
     
-    inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -51,11 +51,11 @@ object History {
     
     inline def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
     
-    inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+    inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value*))
     
     inline def setRoutes(value: js.Array[KeyName & `0` & `1`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: (KeyName & `0` & `1`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: (KeyName & `0` & `1`)*): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     

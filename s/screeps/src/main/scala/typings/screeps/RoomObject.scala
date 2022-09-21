@@ -38,7 +38,7 @@ object RoomObject {
     
     inline def setEffects(value: js.Array[RoomObjectEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    inline def setEffectsVarargs(value: RoomObjectEffect*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: RoomObjectEffect*): Self = StObject.set(x, "effects", js.Array(value*))
     
     inline def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     

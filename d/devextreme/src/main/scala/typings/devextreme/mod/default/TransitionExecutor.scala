@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("devextreme", "default.TransitionExecutor")
 @js.native
-class TransitionExecutor ()
+open class TransitionExecutor ()
   extends StObject
      with typings.devextreme.mod.DevExpress.TransitionExecutor

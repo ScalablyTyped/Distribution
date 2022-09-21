@@ -8,23 +8,23 @@ object Migration {
   
   @JSImport("orientjs", "Migration.Manager")
   @js.native
-  class Manager protected () extends MigrationManager {
+  open class Manager protected () extends MigrationManager {
     def this(config: MigrationManagerConfig) = this()
   }
   
   @JSImport("orientjs", "Migration.Migration")
   @js.native
-  class Migration () extends StObject {
+  open class Migration () extends StObject {
     
     var db: ODB = js.native
     
-    def down(): js.Promise[js.Any] = js.native
+    def down(): js.Promise[Any] = js.native
     
     var name: String = js.native
     
     var server: OServer = js.native
     
-    def up(): js.Promise[js.Any] = js.native
+    def up(): js.Promise[Any] = js.native
   }
   
   @JSImport("orientjs", "Migration.MigrationManager")
@@ -34,7 +34,7 @@ object Migration {
     *
     * @param config The configuration for the migration manager.
     */
-  class MigrationManager () extends StObject {
+  open class MigrationManager () extends StObject {
     def this(config: MigrationManagerConfig) = this()
     
     /**
@@ -43,7 +43,7 @@ object Migration {
       * @param   name The name of the migation.
       * @promise {Mixed} The result of the migration.
       */
-    def applyMigration(name: String): js.Promise[js.Any] = js.native
+    def applyMigration(name: String): js.Promise[Any] = js.native
     
     var className: String = js.native
     
@@ -65,8 +65,8 @@ object Migration {
       * @param   limit The maximum number of migrations to revert, if any.
       * @promise {Mixed} The result of the migration.
       */
-    def down(): js.Promise[js.Any] = js.native
-    def down(limit: Double): js.Promise[js.Any] = js.native
+    def down(): js.Promise[Any] = js.native
+    def down(limit: Double): js.Promise[Any] = js.native
     
     /**
       * Ensure the migration class exists.
@@ -80,7 +80,7 @@ object Migration {
       * @param  config The configuration object.
       * @return        The generated JavaScript source code.
       */
-    def generateMigration(config: js.Any): String = js.native
+    def generateMigration(config: Any): String = js.native
     
     /**
       * List the migrations that have not yet been applied.
@@ -94,7 +94,7 @@ object Migration {
       *
       * @promise {Object[]} The applied migrations.
       */
-    def listApplied(): js.Promise[js.Array[js.Any]] = js.native
+    def listApplied(): js.Promise[js.Array[Any]] = js.native
     
     /**
       * List all the available migrations.
@@ -119,7 +119,7 @@ object Migration {
       * @param   name The name of the migation.
       * @promise {Mixed} The result of the migration.
       */
-    def revertMigration(name: String): js.Promise[js.Any] = js.native
+    def revertMigration(name: String): js.Promise[Any] = js.native
     
     var server: OServer = js.native
     
@@ -129,8 +129,8 @@ object Migration {
       * @param   limit The maximum number of migrations to apply, if any.
       * @promise {Mixed} The result of the migration.
       */
-    def up(): js.Promise[js.Any] = js.native
-    def up(limit: Double): js.Promise[js.Any] = js.native
+    def up(): js.Promise[Any] = js.native
+    def up(limit: Double): js.Promise[Any] = js.native
   }
   
   trait MigrationManagerConfig extends StObject {

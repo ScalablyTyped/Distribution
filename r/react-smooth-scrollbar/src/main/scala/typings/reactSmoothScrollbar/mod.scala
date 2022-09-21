@@ -2,6 +2,7 @@ package typings.reactSmoothScrollbar
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.smoothScrollbar.mod.default
 import typings.smoothScrollbar.scrollbarMod.ScrollStatus
 import typings.std.EventTarget
@@ -13,11 +14,11 @@ object mod {
   
   @JSImport("react-smooth-scrollbar", JSImport.Namespace)
   @js.native
-  class ^ () extends Scrollbar
+  open class ^ () extends Scrollbar
   
   @js.native
   trait Scrollbar
-    extends Component[ScrollbarProps, js.Object, js.Any] {
+    extends Component[ScrollbarProps, js.Object, Any] {
     
     /**
       * Scrollbar instance
@@ -33,6 +34,8 @@ object mod {
       * @default false
       */
     var alwaysShowTracks: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Optional class name
@@ -50,7 +53,7 @@ object mod {
       */
     var onScroll: js.UndefOr[js.Function2[/* status */ ScrollStatus, /* scrollbarInstance */ default, Unit]] = js.undefined
     
-    var plugins: js.UndefOr[js.Any] = js.undefined
+    var plugins: js.UndefOr[Any] = js.undefined
     
     var renderByPixels: js.UndefOr[Boolean] = js.undefined
     
@@ -76,6 +79,10 @@ object mod {
       
       inline def setAlwaysShowTracksUndefined: Self = StObject.set(x, "alwaysShowTracks", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -98,7 +105,7 @@ object mod {
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       

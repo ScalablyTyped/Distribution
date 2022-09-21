@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Font")
 @js.native
-/* private */ class Font ()
+/* private */ open class Font ()
   extends StObject
      with typings.activexExcel.Excel.Font {
   
@@ -53,13 +53,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Name: String = js.native
   
   /* CompleteClass */
-  var OutlineFont: js.Any = js.native
+  var OutlineFont: Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  var Shadow: js.Any = js.native
+  var Shadow: Any = js.native
   
   /* CompleteClass */
   var Size: Double = js.native

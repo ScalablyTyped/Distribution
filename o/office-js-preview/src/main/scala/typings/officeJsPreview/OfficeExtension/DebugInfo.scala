@@ -34,7 +34,7 @@ trait DebugInfo extends StObject {
     * This statement will never contain any potentially-sensitive data and may not match the code exactly as written,
     * but will be a close approximation.
     */
-  var statements: js.UndefOr[String] = js.undefined
+  var statement: js.UndefOr[String] = js.undefined
   
   /**
     * The statements that closely precede and follow the statement that caused the error, if available.
@@ -63,7 +63,7 @@ object DebugInfo {
     
     inline def setFullStatementsUndefined: Self = StObject.set(x, "fullStatements", js.undefined)
     
-    inline def setFullStatementsVarargs(value: String*): Self = StObject.set(x, "fullStatements", js.Array(value :_*))
+    inline def setFullStatementsVarargs(value: String*): Self = StObject.set(x, "fullStatements", js.Array(value*))
     
     inline def setInnerError(value: DebugInfo | String): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
     
@@ -71,14 +71,14 @@ object DebugInfo {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setStatements(value: String): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatement(value: String): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
-    inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+    inline def setStatementUndefined: Self = StObject.set(x, "statement", js.undefined)
     
     inline def setSurroundingStatements(value: js.Array[String]): Self = StObject.set(x, "surroundingStatements", value.asInstanceOf[js.Any])
     
     inline def setSurroundingStatementsUndefined: Self = StObject.set(x, "surroundingStatements", js.undefined)
     
-    inline def setSurroundingStatementsVarargs(value: String*): Self = StObject.set(x, "surroundingStatements", js.Array(value :_*))
+    inline def setSurroundingStatementsVarargs(value: String*): Self = StObject.set(x, "surroundingStatements", js.Array(value*))
   }
 }

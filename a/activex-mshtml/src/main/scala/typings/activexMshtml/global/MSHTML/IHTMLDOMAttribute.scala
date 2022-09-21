@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDOMAttribute")
 @js.native
-/* private */ class IHTMLDOMAttribute ()
+/* private */ open class IHTMLDOMAttribute ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDOMAttribute {
   
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val nodeName: String = js.native
   
   /* CompleteClass */
-  var nodeValue: js.Any = js.native
+  var nodeValue: Any = js.native
   
   /* CompleteClass */
   override val specified: Boolean = js.native

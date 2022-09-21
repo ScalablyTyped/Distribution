@@ -87,13 +87,13 @@ object ExpandRowProps {
     
     inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    inline def setExpandedVarargs(value: K*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+    inline def setExpandedVarargs(value: K*): Self = StObject.set(x, "expanded", js.Array(value*))
     
     inline def setNonExpandable(value: js.Array[K]): Self = StObject.set(x, "nonExpandable", value.asInstanceOf[js.Any])
     
     inline def setNonExpandableUndefined: Self = StObject.set(x, "nonExpandable", js.undefined)
     
-    inline def setNonExpandableVarargs(value: K*): Self = StObject.set(x, "nonExpandable", js.Array(value :_*))
+    inline def setNonExpandableVarargs(value: K*): Self = StObject.set(x, "nonExpandable", js.Array(value*))
     
     inline def setOnExpand(
       value: (/* row */ T, /* isExpand */ Boolean, /* rowIndex */ Double, /* e */ SyntheticEvent[typings.std.Element, Event]) => Unit

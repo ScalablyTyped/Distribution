@@ -19,12 +19,12 @@ trait KeyPhrasesDetectionJobFilter extends StObject {
   /**
     * Filters the list of jobs based on the time that the job was submitted for processing. Returns only jobs submitted after the specified time. Jobs are returned in descending order, newest to oldest.
     */
-  var SubmitTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var SubmitTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Filters the list of jobs based on the time that the job was submitted for processing. Returns only jobs submitted before the specified time. Jobs are returned in ascending order, oldest to newest.
     */
-  var SubmitTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var SubmitTimeBefore: js.UndefOr[js.Date] = js.undefined
 }
 object KeyPhrasesDetectionJobFilter {
   
@@ -43,11 +43,11 @@ object KeyPhrasesDetectionJobFilter {
     
     inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
-    inline def setSubmitTimeAfter(value: Timestamp): Self = StObject.set(x, "SubmitTimeAfter", value.asInstanceOf[js.Any])
+    inline def setSubmitTimeAfter(value: js.Date): Self = StObject.set(x, "SubmitTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setSubmitTimeAfterUndefined: Self = StObject.set(x, "SubmitTimeAfter", js.undefined)
     
-    inline def setSubmitTimeBefore(value: Timestamp): Self = StObject.set(x, "SubmitTimeBefore", value.asInstanceOf[js.Any])
+    inline def setSubmitTimeBefore(value: js.Date): Self = StObject.set(x, "SubmitTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setSubmitTimeBeforeUndefined: Self = StObject.set(x, "SubmitTimeBefore", js.undefined)
   }

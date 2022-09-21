@@ -9,7 +9,7 @@ trait BillingRecord extends StObject {
   /**
     * The date that the operation was billed, in Unix format.
     */
-  var BillDate: js.UndefOr[Timestamp] = js.undefined
+  var BillDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the domain that the billing record applies to. If the domain name contains characters other than a-z, 0-9, and - (hyphen), such as an internationalized domain name, then this value is in Punycode. For more information, see DNS Domain Name Format in the Amazon Route 53 Developer Guide.
@@ -40,7 +40,7 @@ object BillingRecord {
   
   extension [Self <: BillingRecord](x: Self) {
     
-    inline def setBillDate(value: Timestamp): Self = StObject.set(x, "BillDate", value.asInstanceOf[js.Any])
+    inline def setBillDate(value: js.Date): Self = StObject.set(x, "BillDate", value.asInstanceOf[js.Any])
     
     inline def setBillDateUndefined: Self = StObject.set(x, "BillDate", js.undefined)
     

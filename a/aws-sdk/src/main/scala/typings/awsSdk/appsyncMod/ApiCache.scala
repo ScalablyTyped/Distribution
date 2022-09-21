@@ -12,7 +12,7 @@ trait ApiCache extends StObject {
   var apiCachingBehavior: js.UndefOr[ApiCachingBehavior] = js.undefined
   
   /**
-    * At rest encryption flag for cache. This setting cannot be updated after creation.
+    * At-rest encryption flag for cache. You cannot update this setting after creation.
     */
   var atRestEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -22,12 +22,12 @@ trait ApiCache extends StObject {
   var status: js.UndefOr[ApiCacheStatus] = js.undefined
   
   /**
-    * Transit encryption flag when connecting to cache. This setting cannot be updated after creation.
+    * Transit encryption flag when connecting to cache. You cannot update this setting after creation.
     */
   var transitEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * TTL in seconds for cache entries. Valid values are between 1 and 3600 seconds.
+    * TTL in seconds for cache entries. Valid values are 1–3,600 seconds.
     */
   var ttl: js.UndefOr[Long] = js.undefined
   

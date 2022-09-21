@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class Graticule () extends StObject {
+open class Graticule () extends StObject {
   def this(opt_options: GraticuleOptions) = this()
   
   /**

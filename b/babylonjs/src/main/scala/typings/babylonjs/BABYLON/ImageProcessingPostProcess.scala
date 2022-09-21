@@ -12,6 +12,7 @@ trait ImageProcessingPostProcess
   /**
     * Attaches a new image processing configuration to the PBR Material.
     * @param configuration
+    * @param doNotBuild
     */
   /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
   /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration], doNotBuild: Boolean): Unit = js.native
@@ -19,9 +20,9 @@ trait ImageProcessingPostProcess
   /**
     * Defines cache preventing GC.
     */
-  /* private */ var _defines: js.Any = js.native
+  /* private */ var _defines: Any = js.native
   
-  /* private */ var _fromLinearSpace: js.Any = js.native
+  /* private */ var _fromLinearSpace: Any = js.native
   
   /**
     * Default configuration related to image processing available in the PBR Material.
@@ -31,7 +32,7 @@ trait ImageProcessingPostProcess
   /**
     * Keep track of the image processing observer to allow dispose and replace.
     */
-  /* private */ var _imageProcessingObserver: js.Any = js.native
+  /* private */ var _imageProcessingObserver: Any = js.native
   
   /**
     * @hidden
@@ -44,11 +45,11 @@ trait ImageProcessingPostProcess
   def colorCurves: Nullable[ColorCurves] = js.native
   
   /**
-    * Gets wether the color curves effect is enabled.
+    * Gets whether the color curves effect is enabled.
     */
   def colorCurvesEnabled: Boolean = js.native
   /**
-    * Sets wether the color curves effect is enabled.
+    * Sets whether the color curves effect is enabled.
     */
   def colorCurvesEnabled_=(value: Boolean): Unit = js.native
   
@@ -58,11 +59,11 @@ trait ImageProcessingPostProcess
   def colorCurves_=(value: Nullable[ColorCurves]): Unit = js.native
   
   /**
-    * Gets wether the color grading effect is enabled.
+    * Gets whether the color grading effect is enabled.
     */
   def colorGradingEnabled: Boolean = js.native
   /**
-    * Gets wether the color grading effect is enabled.
+    * Gets whether the color grading effect is enabled.
     */
   def colorGradingEnabled_=(value: Boolean): Unit = js.native
   
@@ -85,6 +86,24 @@ trait ImageProcessingPostProcess
   def contrast_=(value: Double): Unit = js.native
   
   /**
+    * Gets whether the dithering effect is enabled.
+    */
+  def ditheringEnabled: Boolean = js.native
+  /**
+    * Sets whether the dithering effect is enabled.
+    */
+  def ditheringEnabled_=(value: Boolean): Unit = js.native
+  
+  /**
+    * Gets intensity of the dithering effect.
+    */
+  def ditheringIntensity: Double = js.native
+  /**
+    * Sets intensity of the dithering effect.
+    */
+  def ditheringIntensity_=(value: Double): Unit = js.native
+  
+  /**
     * Gets exposure used in the effect.
     */
   def exposure: Double = js.native
@@ -94,11 +113,11 @@ trait ImageProcessingPostProcess
   def exposure_=(value: Double): Unit = js.native
   
   /**
-    * Gets wether the input of the processing is in Gamma or Linear Space.
+    * Gets whether the input of the processing is in Gamma or Linear Space.
     */
   def fromLinearSpace: Boolean = js.native
   /**
-    * Sets wether the input of the processing is in Gamma or Linear Space.
+    * Sets whether the input of the processing is in Gamma or Linear Space.
     */
   def fromLinearSpace_=(value: Boolean): Unit = js.native
   
@@ -114,11 +133,11 @@ trait ImageProcessingPostProcess
   def imageProcessingConfiguration_=(value: ImageProcessingConfiguration): Unit = js.native
   
   /**
-    * Gets wether tonemapping is enabled or not.
+    * Gets whether tonemapping is enabled or not.
     */
   def toneMappingEnabled: Boolean = js.native
   /**
-    * Sets wether tonemapping is enabled or not
+    * Sets whether tonemapping is enabled or not
     */
   def toneMappingEnabled_=(value: Boolean): Unit = js.native
   
@@ -179,11 +198,11 @@ trait ImageProcessingPostProcess
   def vignetteColor_=(value: Color4): Unit = js.native
   
   /**
-    * Gets wether the vignette effect is enabled.
+    * Gets whether the vignette effect is enabled.
     */
   def vignetteEnabled: Boolean = js.native
   /**
-    * Sets wether the vignette effect is enabled.
+    * Sets whether the vignette effect is enabled.
     */
   def vignetteEnabled_=(value: Boolean): Unit = js.native
   

@@ -8,20 +8,20 @@ object anon {
   
   trait Buffer extends StObject {
     
-    var buffer: typings.node.Buffer
+    var buffer: typings.node.bufferMod.global.Buffer
     
     var parsed: DNS
   }
   object Buffer {
     
-    inline def apply(buffer: typings.node.Buffer, parsed: DNS): Buffer = {
+    inline def apply(buffer: typings.node.bufferMod.global.Buffer, parsed: DNS): Buffer = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buffer]
     }
     
     extension [Self <: Buffer](x: Self) {
       
-      inline def setBuffer(value: typings.node.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setParsed(value: DNS): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     }

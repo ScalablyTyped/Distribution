@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientDocumentPreviewTab")
 @js.native
-class ASPxClientDocumentPreviewTab ()
+open class ASPxClientDocumentPreviewTab ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDocumentPreviewTab {
   
   /* CompleteClass */
-  var active: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var active: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
   
   /* CompleteClass */
-  var model: js.Any = js.native
+  var model: Any = js.native
   
   /* CompleteClass */
   var template: String = js.native
@@ -23,5 +23,5 @@ class ASPxClientDocumentPreviewTab ()
   var text: String = js.native
   
   /* CompleteClass */
-  var visible: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var visible: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
 }

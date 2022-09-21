@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait IDateTimeFormatter extends StObject {
   
   var clock: String
   
-  def format(value: Date): String
+  def format(value: js.Date): String
   
   var geographicRegion: String
   
@@ -47,7 +46,7 @@ object IDateTimeFormatter {
   inline def apply(
     calendar: String,
     clock: String,
-    format: Date => String,
+    format: js.Date => String,
     geographicRegion: String,
     includeDay: DayFormat,
     includeDayOfWeek: DayOfWeekFormat,
@@ -73,7 +72,7 @@ object IDateTimeFormatter {
     
     inline def setClock(value: String): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
-    inline def setFormat(value: Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: js.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setGeographicRegion(value: String): Self = StObject.set(x, "geographicRegion", value.asInstanceOf[js.Any])
     

@@ -14,10 +14,10 @@ object tasks {
   
   inline def runEarly(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runEarly")().asInstanceOf[Unit]
   
-  inline def schedule(callback: js.Function0[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def schedule(callback: js.Function0[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("knockout", "tasks.scheduler")
   @js.native
-  def scheduler: js.Function1[/* callback */ js.Function0[js.Any], Unit] = js.native
-  inline def scheduler_=(x: js.Function1[/* callback */ js.Function0[js.Any], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scheduler")(x.asInstanceOf[js.Any])
+  def scheduler: js.Function1[/* callback */ js.Function0[Any], Unit] = js.native
+  inline def scheduler_=(x: js.Function1[/* callback */ js.Function0[Any], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scheduler")(x.asInstanceOf[js.Any])
 }

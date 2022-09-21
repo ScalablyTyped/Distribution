@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetServiceQuotaRequest extends StObject {
   
   /**
-    * Identifies the service quota you want to select.
+    * The quota identifier.
     */
   var QuotaCode: typings.awsSdk.servicequotasMod.QuotaCode
   
   /**
-    * Specifies the service that you want to use.
+    * The service identifier.
     */
   var ServiceCode: typings.awsSdk.servicequotasMod.ServiceCode
 }

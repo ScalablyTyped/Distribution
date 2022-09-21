@@ -8,6 +8,7 @@ trait ClipboardEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var clipboardData: js.UndefOr[DataTransfer | Null] = js.undefined
 }
 object ClipboardEventInit {

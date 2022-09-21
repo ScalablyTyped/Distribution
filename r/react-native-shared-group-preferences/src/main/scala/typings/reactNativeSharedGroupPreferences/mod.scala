@@ -12,13 +12,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getItem(key: String, appGroup: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def getItem(key: String, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def getItem(key: String, appGroup: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    inline def getItem(key: String, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def isAppInstalledAndroid(packageName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAppInstalledAndroid")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    inline def setItem(key: String, value: js.Any, appGroup: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    inline def setItem(key: String, value: js.Any, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def setItem(key: String, value: Any, appGroup: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def setItem(key: String, value: Any, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   object SharedGroupPreferences {
@@ -27,13 +27,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getItem(key: String, appGroup: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    inline def getItem(key: String, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def getItem(key: String, appGroup: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+    inline def getItem(key: String, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     inline def isAppInstalledAndroid(packageName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAppInstalledAndroid")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    inline def setItem(key: String, value: js.Any, appGroup: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    inline def setItem(key: String, value: js.Any, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def setItem(key: String, value: Any, appGroup: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def setItem(key: String, value: Any, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   trait SharedGroupPreferenceOptions extends StObject {

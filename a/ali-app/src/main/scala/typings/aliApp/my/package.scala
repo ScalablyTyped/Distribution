@@ -1,16 +1,17 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Color = java.lang.String | js.Array[scala.Double] | scala.Double | typings.aliApp.my.CanvasAction
+type Color = String | js.Array[Double] | Double | CanvasAction
 
-type RemoveSavedFileOptions = typings.aliApp.my.GetSavedFileInfoOptions
+type RemoveSavedFileOptions = GetSavedFileInfoOptions
 
 //#region 网络 https://docs.alipay.com/mini/api/network
-type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type RequestHeader = StringDictionary[String]
 
 //#endregion
 //#region 文本风险识别 https://docs.alipay.com/mini/api/text-identification
@@ -22,6 +23,6 @@ type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String
   - typings.aliApp.aliAppStrings.`3`
   - java.lang.String
 */
-type TextRiskIdentificationType = typings.aliApp.my._TextRiskIdentificationType | java.lang.String
+type TextRiskIdentificationType = _TextRiskIdentificationType | String
 
-type onMessageFun = js.Function1[/* p */ js.Any, scala.Unit]
+type onMessageFun = js.Function1[/* p */ Any, Unit]

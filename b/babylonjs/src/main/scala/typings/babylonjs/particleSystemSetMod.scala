@@ -3,9 +3,9 @@ package typings.babylonjs
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.ColorDiameter
 import typings.babylonjs.iparticlesystemMod.IParticleSystem
+import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,13 +15,15 @@ object particleSystemSetMod {
   
   @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet")
   @js.native
-  class ParticleSystemSet ()
+  open class ParticleSystemSet ()
     extends StObject
        with IDisposable {
     
-    /* private */ var _emitterCreationOptions: js.Any = js.native
+    /* private */ var _emitterCreationOptions: Any = js.native
     
-    /* private */ var _emitterNode: js.Any = js.native
+    /* private */ var _emitterNode: Any = js.native
+    
+    /* private */ var _emitterNodeIsOwned: Any = js.native
     
     /**
       * Releases all held resources
@@ -30,21 +32,25 @@ object particleSystemSetMod {
     override def dispose(): Unit = js.native
     
     /**
-      * Gets the emitter node used with this set
+      * Gets or sets the emitter node used with this set
       */
-    def emitterNode: Nullable[TransformNode] = js.native
+    def emitterNode: Nullable[AbstractMesh | Vector3] = js.native
+    def emitterNode_=(value: Nullable[AbstractMesh | Vector3]): Unit = js.native
     
     /**
       * Serialize the set into a JSON compatible object
       * @param serializeTexture defines if the texture must be serialized as well
       * @returns a JSON compatible representation of the set
       */
-    def serialize(): js.Any = js.native
-    def serialize(serializeTexture: Boolean): js.Any = js.native
+    def serialize(): Any = js.native
+    def serialize(serializeTexture: Boolean): Any = js.native
     
     /**
       * Creates a new emitter mesh as a sphere
       * @param options defines the options used to create the sphere
+      * @param options.diameter
+      * @param options.segments
+      * @param options.color
       * @param renderingGroupId defines the renderingGroupId to use for the sphere
       * @param scene defines the hosting scene
       */
@@ -82,9 +88,12 @@ object particleSystemSetMod {
       * @param data defines a JSON compatible representation of the set
       * @param scene defines the hosting scene
       * @param gpu defines if we want GPU particles or CPU particles
+      * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
       * @returns a new ParticleSystemSet
       */
-    inline def Parse(data: js.Any, scene: Scene): ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ParticleSystemSet]
-    inline def Parse(data: js.Any, scene: Scene, gpu: Boolean): ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[ParticleSystemSet]
+    inline def Parse(data: Any, scene: Scene): ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ParticleSystemSet]
+    inline def Parse(data: Any, scene: Scene, gpu: Boolean): ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any])).asInstanceOf[ParticleSystemSet]
+    inline def Parse(data: Any, scene: Scene, gpu: Boolean, capacity: Double): ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[ParticleSystemSet]
+    inline def Parse(data: Any, scene: Scene, gpu: Unit, capacity: Double): ParticleSystemSet = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(data.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], gpu.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[ParticleSystemSet]
   }
 }

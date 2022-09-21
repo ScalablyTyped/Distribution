@@ -9,13 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "VideoDome")
 @js.native
-class VideoDome protected ()
+open class VideoDome protected ()
   extends typings.babylonjs.indexMod.VideoDome {
   /**
     * Create an instance of this class and pass through the parameters to the relevant classes- Texture, StandardMaterial, and Mesh.
     * @param name Element's name, child elements will append suffixes for their own names.
     * @param textureUrlOrElement defines the url(s) or the (video) HTML element to use
     * @param options An object containing optional or exposed sub element properties
+    * @param options.resolution
+    * @param options.clickToPlay
+    * @param options.autoPlay
+    * @param options.loop
+    * @param options.size
+    * @param options.poster
+    * @param options.faceForward
+    * @param options.useDirectMapping
+    * @param options.halfDomeMode
+    * @param options.crossEyeMode
+    * @param options.generateMipMaps
+    * @param options.mesh
+    * @param scene
+    * @param onError
     */
   def this(
     name: String,
@@ -41,7 +55,7 @@ class VideoDome protected ()
     options: AutoPlay,
     scene: typings.babylonjs.sceneMod.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -50,7 +64,7 @@ class VideoDome protected ()
     options: AutoPlay,
     scene: typings.babylonjs.sceneMod.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -59,7 +73,7 @@ class VideoDome protected ()
     options: AutoPlay,
     scene: typings.babylonjs.sceneMod.Scene,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
 }

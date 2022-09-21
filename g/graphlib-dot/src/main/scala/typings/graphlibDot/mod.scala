@@ -24,7 +24,7 @@ object mod {
         */
       @JSGlobal("graphlibDot.graphlib")
       @js.native
-      val graphlib: js.Any = js.native
+      val graphlib: Any = js.native
       
       /**
         * Reads a single DOT graph from the str and returns it a Graph representation.
@@ -48,7 +48,7 @@ object mod {
   
   @JSImport("graphlib-dot", "graphlib")
   @js.native
-  val graphlib: js.Any = js.native
+  val graphlib: Any = js.native
   
   inline def read(str: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[Graph]
   

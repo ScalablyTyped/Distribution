@@ -1,6 +1,5 @@
 package typings.std.global
 
-import typings.std.Iterable
 import typings.std.WeakSetConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,10 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("WeakSet")
 @js.native
-class WeakSet[T /* <: js.Object */] ()
+/* standard es2015.collection */
+open class WeakSet[T /* <: js.Object */] ()
   extends StObject
      with typings.std.WeakSet[T] {
-  def this(iterable: Iterable[T]) = this()
+  /* standard es2015.iterable */
+  def this(iterable: js.Iterable[T]) = this()
   def this(values: js.Array[T]) = this()
 }
 object WeakSet {

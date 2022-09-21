@@ -12,7 +12,7 @@ trait IgValidator
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets Credit Card number validation rule options.Note: This rule will only validate the checksum of the number using Luhn algorithm irregardless of card type.
@@ -164,13 +164,13 @@ trait IgValidator
     * "array" An array of two numbers, where the first value is the minimum and the second is the maximum. (e.g. lengthRange: [ 1, 10] )
     * "object" A configuration object with optional error message. Message strings can contain format items for min and max respectively (e.g. lengthRange: { min: 6, max: 20, errorMessage: "Password must be at least {0} long and no more than {1}." } )
     */
-  var lengthRange: js.UndefOr[js.Array[js.Any] | js.Object] = js.undefined
+  var lengthRange: js.UndefOr[js.Array[Any] | js.Object] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets a custom jQuery element to be used for validation messages. That inner HTML of the target is modified, can be a SPAN, LABEL or DIV.
@@ -182,7 +182,7 @@ trait IgValidator
     * Gets/Sets the options for the [igNotifier](ui.ignotifier#options) used to show error messages.
     *
     */
-  var notificationOptions: js.UndefOr[js.Any] = js.undefined
+  var notificationOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets number validation rule options.Default separators for decimals and thousands are '.' and ',' respectively and are defined in the "$.ui.igValidator.defaults" object.
@@ -327,7 +327,7 @@ trait IgValidator
     * "array" An array of two numbers or dates, where the first is the minimum and the second is the maximum. (e.g. valueRange: [ 1, 10] )
     * "object" A configuration object with optional error message. Message strings can contain format items for min and max respectively (e.g. lengthRange: { min: 6, max: 20, errorMessage: "Value must be between {0} and {1}." } )
     */
-  var valueRange: js.UndefOr[js.Array[js.Any] | js.Object] = js.undefined
+  var valueRange: js.UndefOr[js.Array[Any] | js.Object] = js.undefined
 }
 object IgValidator {
   
@@ -390,7 +390,7 @@ object IgValidator {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: IgValidatorField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: IgValidatorField*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFormError(value: (/* event */ Event, /* ui */ FormErrorEventUIParam) => Unit): Self = StObject.set(x, "formError", js.Any.fromFunction2(value))
     
@@ -412,13 +412,13 @@ object IgValidator {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLengthRange(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "lengthRange", value.asInstanceOf[js.Any])
+    inline def setLengthRange(value: js.Array[Any] | js.Object): Self = StObject.set(x, "lengthRange", value.asInstanceOf[js.Any])
     
     inline def setLengthRangeUndefined: Self = StObject.set(x, "lengthRange", js.undefined)
     
-    inline def setLengthRangeVarargs(value: js.Any*): Self = StObject.set(x, "lengthRange", js.Array(value :_*))
+    inline def setLengthRangeVarargs(value: Any*): Self = StObject.set(x, "lengthRange", js.Array(value*))
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -426,7 +426,7 @@ object IgValidator {
     
     inline def setMessageTargetUndefined: Self = StObject.set(x, "messageTarget", js.undefined)
     
-    inline def setNotificationOptions(value: js.Any): Self = StObject.set(x, "notificationOptions", value.asInstanceOf[js.Any])
+    inline def setNotificationOptions(value: Any): Self = StObject.set(x, "notificationOptions", value.asInstanceOf[js.Any])
     
     inline def setNotificationOptionsUndefined: Self = StObject.set(x, "notificationOptions", js.undefined)
     
@@ -502,10 +502,10 @@ object IgValidator {
     
     inline def setValidatingUndefined: Self = StObject.set(x, "validating", js.undefined)
     
-    inline def setValueRange(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
+    inline def setValueRange(value: js.Array[Any] | js.Object): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
     inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
     
-    inline def setValueRangeVarargs(value: js.Any*): Self = StObject.set(x, "valueRange", js.Array(value :_*))
+    inline def setValueRangeVarargs(value: Any*): Self = StObject.set(x, "valueRange", js.Array(value*))
   }
 }

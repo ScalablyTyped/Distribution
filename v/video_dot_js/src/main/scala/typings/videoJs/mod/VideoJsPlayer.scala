@@ -1,16 +1,22 @@
 package typings.videoJs.mod
 
+import typings.std.CanPlayTypeResult
 import typings.std.Element
 import typings.std.HTMLTrackElement
 import typings.std.MediaError
 import typings.std.TextTrackList
 import typings.std.TimeRanges
+import typings.videoJs.anon.PartialBreakpoint
+import typings.videoJs.mod.videojs.AudioTrackList
+import typings.videoJs.mod.videojs.Autoplay
+import typings.videoJs.mod.videojs.Breakpoint
 import typings.videoJs.mod.videojs.Button
 import typings.videoJs.mod.videojs.Component
 import typings.videoJs.mod.videojs.ControlBar
 import typings.videoJs.mod.videojs.LiveTracker
 import typings.videoJs.mod.videojs.ModalDialog
 import typings.videoJs.mod.videojs.NetworkState
+import typings.videoJs.mod.videojs.PictureInPictureWindow
 import typings.videoJs.mod.videojs.Player
 import typings.videoJs.mod.videojs.Player.MediaObject
 import typings.videoJs.mod.videojs.PlayerOptions
@@ -19,9 +25,9 @@ import typings.videoJs.mod.videojs.Tech
 import typings.videoJs.mod.videojs.Tech.SourceObject
 import typings.videoJs.mod.videojs.TextTrackOptions
 import typings.videoJs.mod.videojs.TimeRange
-import typings.videoJs.videoJsStrings._empty
-import typings.videoJs.videoJsStrings.maybe
-import typings.videoJs.videoJsStrings.probably
+import typings.videoJs.videoJsBooleans.`true`
+import typings.videoJs.videoJsStrings.`use-credentials`
+import typings.videoJs.videoJsStrings.anonymous
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,9 +95,40 @@ trait VideoJsPlayer
     */
   def aspectRatio(ratio: String): Unit = js.native
   
-  def autoplay(): Boolean | String = js.native
-  def autoplay(value: String): Unit = js.native
-  def autoplay(value: Boolean): Unit = js.native
+  def audioOnlyMode(): Boolean = js.native
+  /**
+    * Get the current audioOnlyMode state or set audioOnlyMode to true or false.
+    *
+    * Setting this to `true` will hide all player components except the control bar,
+    * as well as control bar components needed only for video.
+    *
+    * @param [value]
+    *         The value to set audioOnlyMode to.
+    *
+    * @return A Promise is returned when setting the state, and a boolean when getting
+    *         the present state
+    */
+  def audioOnlyMode(value: Boolean): js.Promise[Unit] = js.native
+  
+  def audioPosterMode(): Boolean = js.native
+  /**
+    * Get the current audioPosterMode state or set audioPosterMode to true or false
+    *
+    * @param [value]
+    *         The value to set audioPosterMode to.
+    *
+    * @return A Promise is returned when setting the state, and a boolean when getting
+    *         the present state
+    */
+  def audioPosterMode(value: Boolean): js.Promise[Unit] = js.native
+  
+  /**
+    * Get the remote {@link videojs.AudioTrackList}
+    * @return The current remote audio track list
+    */
+  def audioTracks(): AudioTrackList = js.native
+  
+  def autoplay(): Autoplay = js.native
   /**
     * Get or set the autoplay option. When this is a boolean it will
     * modify the attribute on the tech. When this is a string the attribute on
@@ -107,10 +144,49 @@ trait VideoJsPlayer
     *
     * @return The current value of autoplay when getting
     */
-  @JSName("autoplay")
-  def autoplay_Unit(): Unit = js.native
+  def autoplay(value: Autoplay): Unit = js.native
   
   var bigPlayButton: Button = js.native
+  
+  def breakpoints(): Breakpoint = js.native
+  /**
+    * Get or set breakpoints on the player.
+    *
+    * Calling this method with an object or `true` will remove any previous
+    * custom breakpoints and start from the defaults again.
+    *
+    * @param  [breakpoints]
+    *         If an object is given, it can be used to provide custom
+    *         breakpoints. If `true` is given, will set default breakpoints.
+    *         If this argument is not given, will simply return the current
+    *         breakpoints.
+    *
+    * @param  [breakpoints.tiny]
+    *         The maximum width for the "vjs-layout-tiny" class.
+    *
+    * @param  [breakpoints.xsmall]
+    *         The maximum width for the "vjs-layout-x-small" class.
+    *
+    * @param  [breakpoints.small]
+    *         The maximum width for the "vjs-layout-small" class.
+    *
+    * @param  [breakpoints.medium]
+    *         The maximum width for the "vjs-layout-medium" class.
+    *
+    * @param  [breakpoints.large]
+    *         The maximum width for the "vjs-layout-large" class.
+    *
+    * @param  [breakpoints.xlarge]
+    *         The maximum width for the "vjs-layout-x-large" class.
+    *
+    * @param  [breakpoints.huge]
+    *         The maximum width for the "vjs-layout-huge" class.
+    *
+    * @return An object mapping breakpoint names to maximum width values.
+    */
+  def breakpoints(breakpoints: PartialBreakpoint): Unit = js.native
+  @JSName("breakpoints")
+  def breakpoints_true(breakpoints: `true`): Unit = js.native
   
   /**
     * Get a TimeRange object with an array of the times of the video
@@ -150,14 +226,13 @@ trait VideoJsPlayer
     *
     * @return 'probably', 'maybe', or '' (empty string)
     */
-  def canPlayType(`type`: String): probably | maybe | _empty = js.native
+  def canPlayType(`type`: String): CanPlayTypeResult = js.native
   
   def cancelFullScreen(): Player = js.native
   
   var controlBar: ControlBar = js.native
   
   def controls(): Boolean = js.native
-  def controls(bool: Boolean): Unit = js.native
   /**
     * Get or set whether or not the controls are showing.
     *
@@ -169,8 +244,7 @@ trait VideoJsPlayer
     *
     * @return The current value of controls when getting
     */
-  @JSName("controls")
-  def controls_Unit(): Unit = js.native
+  def controls(bool: Boolean): Unit = js.native
   
   /**
     * Creates a simple modal dialog (an instance of the {@link ModalDialog}
@@ -187,10 +261,42 @@ trait VideoJsPlayer
     * @check
     * @return the {@link ModalDialog} that was created
     */
-  def createModal(content: String, options: js.Any): ModalDialog = js.native
-  def createModal(content: js.Array[js.Any], options: js.Any): ModalDialog = js.native
-  def createModal(content: js.Function0[js.Any], options: js.Any): ModalDialog = js.native
-  def createModal(content: Element, options: js.Any): ModalDialog = js.native
+  def createModal(content: String, options: Any): ModalDialog = js.native
+  def createModal(content: js.Array[Any], options: Any): ModalDialog = js.native
+  def createModal(content: js.Function0[Any], options: Any): ModalDialog = js.native
+  def createModal(content: Element, options: Any): ModalDialog = js.native
+  
+  def crossOrigin(): String = js.native
+  /**
+    * Get or set the `Player`'s crossOrigin option. For the HTML5 player, this
+    * sets the `crossOrigin` property on the `<video>` tag to control the CORS
+    * behavior.
+    *
+    * @param [value]
+    *        The value to set the `Player`'s crossOrigin to. If an argument is
+    *        given, must be one of `anonymous` or `use-credentials`.
+    *
+    * @return - The current crossOrigin value of the `Player` when getting.
+    *         - undefined when setting
+    */
+  def crossOrigin(value: anonymous | `use-credentials`): Unit = js.native
+  
+  /**
+    * Get current breakpoint name, if any.
+    *
+    * @return If there is currently a breakpoint set, returns a the key from the
+    *         breakpoints object matching it. Otherwise, returns an empty string.
+    */
+  def currentBreakpoint(): String = js.native
+  
+  /**
+    * Get the current breakpoint class name.
+    *
+    * @return The matching class name (e.g. `"vjs-layout-tiny"` or
+    *         `"vjs-layout-large"`) for the current breakpoint. Empty string if
+    *         there is no current breakpoint.
+    */
+  def currentBreakpointClass(): String = js.native
   
   /**
     * Returns the current source object.
@@ -233,6 +339,13 @@ trait VideoJsPlayer
     * @return The source MIME type
     */
   def currentType(): String = js.native
+  
+  /**
+    * Set debug mode to enable/disable logs at info level.
+    *
+    * @param enabled
+    */
+  def debug(enabled: Boolean): Unit = js.native
   
   def defaultMuted(): Boolean = js.native
   /**
@@ -278,6 +391,15 @@ trait VideoJsPlayer
     *         - the player when setting
     */
   def defaultPlaybackRate(rate: Double): Player = js.native
+  
+  /**
+    * Disable Picture-in-Picture mode.
+    *
+    * @param value
+    *        - true will disable Picture-in-Picture mode
+    *        - false will enable Picture-in-Picture mode
+    */
+  def disablePictureInPicture(value: Boolean): Unit = js.native
   
   def duration(): Double = js.native
   /**
@@ -353,6 +475,26 @@ trait VideoJsPlayer
     */
   def exitFullscreen(): Player = js.native
   
+  /**
+    * Exit Picture-in-Picture mode.
+    *
+    * @see [Spec]{@link https://wicg.github.io/picture-in-picture}
+    *
+    * @fires Player#leavepictureinpicture
+    */
+  def exitPictureInPicture(): js.Promise[Unit] = js.native
+  
+  def fill(): Boolean = js.native
+  /**
+    * Get or set a flag indicating whether or not this player should fill out its container.
+    *
+    * @param [bool] Should be `true` if the player should fill its container; otherwise it should be false.
+    *
+    * @return Will be `true` if this player should fill its container;
+    * otherwise, will be `false`.
+    */
+  def fill(bool: Boolean): Unit = js.native
+  
   def fluid(): Boolean = js.native
   /**
     * A getter/setter/toggler for the vjs-fluid `className` on the `Player`.
@@ -372,7 +514,7 @@ trait VideoJsPlayer
     *
     * @return get the current object cache
     */
-  def getCache(): js.Any = js.native
+  def getCache(): Any = js.native
   
   /**
     * Get a clone of the current Player~MediaObject for this player.
@@ -389,7 +531,7 @@ trait VideoJsPlayer
     * @return An object with supported media playback quality metrics or undefined if there
     *         is no tech or the tech does not support it.
     */
-  def getVideoPlaybackQuality(): js.Any = js.native
+  def getVideoPlaybackQuality(): Any = js.native
   
   /**
     * Reports whether or not a player has a plugin available.
@@ -447,6 +589,19 @@ trait VideoJsPlayer
     */
   def isFullscreen(isFS: Boolean): Unit = js.native
   
+  def isInPictureInPicture(): Boolean = js.native
+  /**
+    * Check if the player is in Picture-in-Picture mode or tell the player that it
+    * is or is not in Picture-in-Picture mode.
+    *
+    * @param  [isPiP]
+    *         Set the players current Picture-in-Picture state
+    *
+    * @return - true if Picture-in-Picture is on and getting
+    *         - false if Picture-in-Picture is off and getting
+    */
+  def isInPictureInPicture(isPiP: Boolean): Unit = js.native
+  
   def language(): String = js.native
   /**
     * The player's language code
@@ -461,7 +616,7 @@ trait VideoJsPlayer
     */
   def language(code: String): Unit = js.native
   
-  def languageSwitch(options: js.Any): Unit = js.native
+  def languageSwitch(options: Any): Unit = js.native
   
   /**
     * Get the player's language dictionary
@@ -482,12 +637,11 @@ trait VideoJsPlayer
   /**
     * Populate the player using a MediaObject.
     */
-  def loadMedia(media: MediaObject, ready: js.Function0[js.Any]): Unit = js.native
+  def loadMedia(media: MediaObject, ready: js.Function0[Any]): Unit = js.native
   
   var loadingSpinner: Component = js.native
   
   def loop(): Boolean = js.native
-  def loop(value: Boolean): Unit = js.native
   /**
     * Get or set the loop attribute on the video element.
     *
@@ -497,8 +651,7 @@ trait VideoJsPlayer
     *
     * @return The current value of loop when getting
     */
-  @JSName("loop")
-  def loop_Unit(): Unit = js.native
+  def loop(value: Boolean): Unit = js.native
   
   def muted(): Boolean = js.native
   /**
@@ -561,6 +714,23 @@ trait VideoJsPlayer
     * @return The current playback rate when getting or 1.0
     */
   def playbackRate(rate: Double): Unit = js.native
+  
+  def playbackRates(): js.Array[Double] = js.native
+  /**
+    * Set or get current playback rates.
+    * Takes an array and updates the playback rates menu with the new items.
+    * Pass in an empty array to hide the menu.
+    */
+  def playbackRates(rates: js.Array[Double]): Unit = js.native
+  
+  /**
+    * Get a TimeRange object representing the current ranges of time that the user
+    * has played.
+    * @check
+    * @return A time range object that represents all the increments of time that have
+    *         been played.
+    */
+  def played(): TimeRanges = js.native
   
   def playsinline(): String = js.native
   /**
@@ -650,7 +820,7 @@ trait VideoJsPlayer
     * @param event
     *        Event object
     */
-  def reportUserActivity(event: js.Any): Unit = js.native
+  def reportUserActivity(event: Any): Unit = js.native
   
   /**
     * Increase the size of the video to full screen
@@ -666,10 +836,34 @@ trait VideoJsPlayer
   def requestFullscreen(): Player = js.native
   
   /**
+    * Create a floating video window always on top of other windows so that
+    * users may continue consuming media while they interact with other
+    * content sites, or applications on their device.
+    *
+    * @see [Spec]{@link https://wicg.github.io/picture-in-picture}
+    *
+    * @fires Player#enterpictureinpicture
+    */
+  def requestPictureInPicture(): js.Promise[PictureInPictureWindow] = js.native
+  
+  /**
     * Reset the player. Loads the first tech in the techOrder,
     * and calls `reset` on the tech`.
     */
   def reset(): Unit = js.native
+  
+  def responsive(): Boolean = js.native
+  /**
+    * Get or set a flag indicating whether or not this player should adjust its
+    * UI based on its dimensions.
+    *
+    * @param [value] Should be `true` if the player should adjust its UI based
+    * on its dimensions; otherwise, should be `false`.
+    *
+    * @return Will be `true` if this player should adjust its UI based on its
+    * dimensions; otherwise, will be `false`.
+    */
+  def responsive(value: Boolean): Unit = js.native
   
   def scrubbing(): Boolean = js.native
   /**
@@ -708,7 +902,7 @@ trait VideoJsPlayer
     *
     * @return Object of source and tech order or false
     */
-  def selectSource(sources: js.Array[js.Any]): js.Any = js.native
+  def selectSource(sources: js.Array[Any]): Any = js.native
   
   def src(): String = js.native
   /**
@@ -748,7 +942,7 @@ trait VideoJsPlayer
     * @return The Tech
     */
   def tech(): Tech = js.native
-  def tech(safety: js.Any): Tech = js.native
+  def tech(safety: Any): Tech = js.native
   
   /**
     * Get the remote {@link TextTrackList}
@@ -762,7 +956,7 @@ trait VideoJsPlayer
     *
     * @return Object representing the current of track info
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   def userActive(): Boolean = js.native
   /**

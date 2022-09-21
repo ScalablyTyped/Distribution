@@ -33,18 +33,18 @@ object VastTrackingEvents {
     
     inline def setComplete(value: js.Array[String]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    inline def setCompleteVarargs(value: String*): Self = StObject.set(x, "complete", js.Array(value :_*))
+    inline def setCompleteVarargs(value: String*): Self = StObject.set(x, "complete", js.Array(value*))
     
     inline def setFirstQuartile(value: js.Array[String]): Self = StObject.set(x, "firstQuartile", value.asInstanceOf[js.Any])
     
-    inline def setFirstQuartileVarargs(value: String*): Self = StObject.set(x, "firstQuartile", js.Array(value :_*))
+    inline def setFirstQuartileVarargs(value: String*): Self = StObject.set(x, "firstQuartile", js.Array(value*))
     
     inline def setMidpoint(value: js.Array[String]): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
     
-    inline def setMidpointVarargs(value: String*): Self = StObject.set(x, "midpoint", js.Array(value :_*))
+    inline def setMidpointVarargs(value: String*): Self = StObject.set(x, "midpoint", js.Array(value*))
     
     inline def setThirdQuartile(value: js.Array[String]): Self = StObject.set(x, "thirdQuartile", value.asInstanceOf[js.Any])
     
-    inline def setThirdQuartileVarargs(value: String*): Self = StObject.set(x, "thirdQuartile", js.Array(value :_*))
+    inline def setThirdQuartileVarargs(value: String*): Self = StObject.set(x, "thirdQuartile", js.Array(value*))
   }
 }

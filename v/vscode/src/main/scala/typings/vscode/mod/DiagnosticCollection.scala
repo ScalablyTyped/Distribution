@@ -1,11 +1,14 @@
 package typings.vscode.mod
 
+import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagnosticCollection extends StObject {
+trait DiagnosticCollection
+  extends StObject
+     with Iterable[js.Tuple2[/* uri */ Uri, /* diagnostics */ js.Array[Diagnostic]]] {
   
   /**
     * Remove all diagnostics from this collection. The same
@@ -23,7 +26,7 @@ trait DiagnosticCollection extends StObject {
   
   /**
     * Dispose and free associated resources. Calls
-    * [clear](#DiagnosticCollection.clear).
+    * {@link DiagnosticCollection.clear clear}.
     */
   def dispose(): Unit = js.native
   
@@ -34,21 +37,11 @@ trait DiagnosticCollection extends StObject {
     * @param thisArg The `this` context used when invoking the handler function.
     */
   def forEach(
-    callback: js.Function3[
-      /* uri */ Uri, 
-      /* diagnostics */ js.Array[Diagnostic], 
-      /* collection */ this.type, 
-      js.Any
-    ]
+    callback: js.Function3[/* uri */ Uri, /* diagnostics */ js.Array[Diagnostic], /* collection */ this.type, Any]
   ): Unit = js.native
   def forEach(
-    callback: js.Function3[
-      /* uri */ Uri, 
-      /* diagnostics */ js.Array[Diagnostic], 
-      /* collection */ this.type, 
-      js.Any
-    ],
-    thisArg: js.Any
+    callback: js.Function3[/* uri */ Uri, /* diagnostics */ js.Array[Diagnostic], /* collection */ this.type, Any],
+    thisArg: Any
   ): Unit = js.native
   
   /**
@@ -56,7 +49,7 @@ trait DiagnosticCollection extends StObject {
     * modify the diagnostics-array returned from this call.
     *
     * @param uri A resource identifier.
-    * @returns An immutable array of [diagnostics](#Diagnostic) or `undefined`.
+    * @returns An immutable array of {@link Diagnostic diagnostics} or `undefined`.
     */
   def get(uri: Uri): js.UndefOr[js.Array[Diagnostic]] = js.native
   
@@ -77,9 +70,9 @@ trait DiagnosticCollection extends StObject {
   val name: String = js.native
   
   /**
-    * Replace all entries in this collection.
+    * Replace diagnostics for multiple resources in this collection.
     *
-    * Diagnostics of multiple tuples of the same uri will be merged, e.g
+    *  _Note_ that multiple tuples of the same uri will be merged, e.g
     * `[[file1, [d1]], [file1, [d2]]]` is equivalent to `[[file1, [d1, d2]]]`.
     * If a diagnostics item is `undefined` as in `[file1, undefined]`
     * all previous but not subsequent diagnostics are removed.

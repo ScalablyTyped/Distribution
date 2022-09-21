@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sharingState
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.status
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.title
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url
 */
 trait UpdatePropertyName extends StObject
 object UpdatePropertyName {
@@ -42,4 +43,6 @@ object UpdatePropertyName {
   inline def status: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.status = "status".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.status]
   
   inline def title: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.title = "title".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.title]
+  
+  inline def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
 }

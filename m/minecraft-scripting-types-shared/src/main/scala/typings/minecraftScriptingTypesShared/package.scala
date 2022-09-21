@@ -5,22 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Dimension = typings.minecraftScriptingTypesShared.MinecraftDimension | java.lang.String
+type Dimension = MinecraftDimension | String
 
-type EntityId = scala.Double
+type EntityId = Double
 
 /* Rewritten from type alias, can be one of: 
-  - typings.minecraftScriptingTypesShared.IEventData[js.Any]
+  - typings.minecraftScriptingTypesShared.IEventData[scala.Any]
   - typings.minecraftScriptingTypesShared.IEntity
   - typings.minecraftScriptingTypesShared.ILevel
-  - typings.minecraftScriptingTypesShared.IComponent[js.Any]
+  - typings.minecraftScriptingTypesShared.IComponent[scala.Any]
   - typings.minecraftScriptingTypesShared.IQuery
   - typings.minecraftScriptingTypesShared.IItemStack
   - typings.minecraftScriptingTypesShared.IBlock
   - typings.minecraftScriptingTypesShared.ITickingArea
 */
-type IMinecraftObject = typings.minecraftScriptingTypesShared._IMinecraftObject | typings.minecraftScriptingTypesShared.IEventData[js.Any] | typings.minecraftScriptingTypesShared.IComponent[js.Any]
+type IMinecraftObject = _IMinecraftObject | IEventData[Any] | IComponent[Any]
 
-type ParticleEffect = typings.minecraftScriptingTypesShared.MinecraftParticleEffect | java.lang.String
+type ParticleEffect = MinecraftParticleEffect | String
 
-type VectorArray = js.Tuple3[scala.Double, scala.Double, scala.Double]
+type VectorArray = js.Tuple3[Double, Double, Double]

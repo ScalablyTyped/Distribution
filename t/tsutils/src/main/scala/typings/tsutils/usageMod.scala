@@ -134,7 +134,7 @@ object usageMod {
       
       inline def setDeclarations(value: js.Array[Identifier]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
-      inline def setDeclarationsVarargs(value: Identifier*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+      inline def setDeclarationsVarargs(value: Identifier*): Self = StObject.set(x, "declarations", js.Array(value*))
       
       inline def setDomain(value: DeclarationDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -144,7 +144,7 @@ object usageMod {
       
       inline def setUses(value: js.Array[VariableUse]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
       
-      inline def setUsesVarargs(value: VariableUse*): Self = StObject.set(x, "uses", js.Array(value :_*))
+      inline def setUsesVarargs(value: VariableUse*): Self = StObject.set(x, "uses", js.Array(value*))
     }
   }
   

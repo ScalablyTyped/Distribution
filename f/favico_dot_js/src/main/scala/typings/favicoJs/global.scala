@@ -11,7 +11,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Favico")
   @js.native
-  class Favico ()
+  open class Favico ()
     extends StObject
        with typings.favicoJs.favicojs.Favico {
     def this(opt: FavicoJsOptions) = this()

@@ -1,13 +1,10 @@
 package typings.webrtc
 
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.Blob
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.MessageEvent
 import typings.std.RTCDataChannelState
-import typings.std.RTCErrorEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +14,11 @@ trait RTCDataChannel
   extends StObject
      with EventTarget {
   
-  var binaryType: String = js.native
-  
   val bufferedAmount: Double = js.native
   
   var bufferedAmountLowThreshold: Double = js.native
   
+  // binaryType: string;
   def close(): Unit = js.native
   
   val id: Double | Null = js.native
@@ -37,11 +33,10 @@ trait RTCDataChannel
   
   var onbufferedamountlow: DataChannelEventHandler[Event] = js.native
   
+  // onerror: DataChannelEventHandler<RTCErrorEvent>;
   var onclose: DataChannelEventHandler[Event] = js.native
   
-  var onerror: DataChannelEventHandler[RTCErrorEvent] = js.native
-  
-  var onmessage: DataChannelEventHandler[MessageEvent[js.Any]] = js.native
+  var onmessage: DataChannelEventHandler[MessageEvent[Any]] = js.native
   
   var onopen: DataChannelEventHandler[Event] = js.native
   
@@ -52,7 +47,7 @@ trait RTCDataChannel
   val readyState: RTCDataChannelState = js.native
   
   def send(data: String): Unit = js.native
-  def send(data: ArrayBuffer): Unit = js.native
-  def send(data: ArrayBufferView): Unit = js.native
+  def send(data: js.typedarray.ArrayBuffer): Unit = js.native
+  def send(data: js.typedarray.ArrayBufferView): Unit = js.native
   def send(data: Blob): Unit = js.native
 }

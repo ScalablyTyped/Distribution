@@ -10,10 +10,10 @@ object dnsMod {
   
   @JSImport("material-ui/svg-icons/action/dns", JSImport.Default)
   @js.native
-  class default () extends ActionDns
+  open class default () extends ActionDns
   
   @JSImport("material-ui/svg-icons/action/dns", "ActionDns")
   @js.native
-  class ActionDns ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionDns ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

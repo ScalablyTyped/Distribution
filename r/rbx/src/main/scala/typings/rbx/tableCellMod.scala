@@ -54,7 +54,7 @@ object tableCellMod {
   
   @JSImport("rbx/elements/table/table-cell", "TableCell")
   @js.native
-  val TableCell: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val TableCell: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait TableCellProps extends StObject {

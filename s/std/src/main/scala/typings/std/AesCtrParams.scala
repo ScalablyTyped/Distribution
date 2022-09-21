@@ -8,26 +8,22 @@ trait AesCtrParams
   extends StObject
      with Algorithm {
   
-  var counter: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+  /* standard dom */
+  var counter: BufferSource
   
+  /* standard dom */
   var length: Double
 }
 object AesCtrParams {
   
-  inline def apply(
-    counter: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    length: Double,
-    name: java.lang.String
-  ): AesCtrParams = {
+  inline def apply(counter: BufferSource, length: Double, name: java.lang.String): AesCtrParams = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesCtrParams]
   }
   
   extension [Self <: AesCtrParams](x: Self) {
     
-    inline def setCounter(
-      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-    ): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    inline def setCounter(value: BufferSource): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

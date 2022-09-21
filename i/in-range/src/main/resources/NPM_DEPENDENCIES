@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "in-range" : "2.0.0"
+      "in-range" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "in-range" : "2.0.0"
+      "in-range" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

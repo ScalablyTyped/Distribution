@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdarea" : "2.0.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdarea" : "2.0.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

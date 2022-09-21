@@ -5,14 +5,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.rascal.rascalStrings.`return`
 import typings.rascal.rascalStrings.error
 import typings.rascal.rascalStrings.success
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rascal", "PublicationSession")
 @js.native
-class PublicationSession protected () extends EventEmitter {
+open class PublicationSession protected () extends EventEmitter {
   def this(vhost: Vhost, messageId: String) = this()
   
   def abort(): Unit = js.native
@@ -22,7 +21,7 @@ class PublicationSession protected () extends EventEmitter {
   def isAborted(): Boolean = js.native
   
   @JSName("on")
-  def on_error(event: error, cb: js.Function2[/* err */ Error, /* messageId */ String, Unit]): this.type = js.native
+  def on_error(event: error, cb: js.Function2[/* err */ js.Error, /* messageId */ String, Unit]): this.type = js.native
   @JSName("on")
   def on_return(event: `return`, cb: js.Function1[/* message */ Message, Unit]): this.type = js.native
   @JSName("on")

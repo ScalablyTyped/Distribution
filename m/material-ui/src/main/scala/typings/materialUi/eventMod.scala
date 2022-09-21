@@ -10,10 +10,10 @@ object eventMod {
   
   @JSImport("material-ui/svg-icons/action/event", JSImport.Default)
   @js.native
-  class default () extends ActionEvent
+  open class default () extends ActionEvent
   
   @JSImport("material-ui/svg-icons/action/event", "ActionEvent")
   @js.native
-  class ActionEvent ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionEvent ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

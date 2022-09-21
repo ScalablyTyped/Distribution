@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This Web Speech API interface represents a voice that the system supports. Every SpeechSynthesisVoice has its own relative speech service including information about language, name and URI. */
 trait SpeechSynthesisVoice extends StObject {
   
+  /* standard dom */
   val default: scala.Boolean
   
+  /* standard dom */
   val lang: java.lang.String
   
+  /* standard dom */
   val localService: scala.Boolean
   
+  /* standard dom */
   val name: java.lang.String
   
+  /* standard dom */
   val voiceURI: java.lang.String
 }
 object SpeechSynthesisVoice {

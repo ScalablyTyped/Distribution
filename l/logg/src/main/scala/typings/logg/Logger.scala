@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Logger extends StObject {
   
-  def error(var_args: js.Any*): Unit
+  def error(var_args: Any*): Unit
   
-  def fine(var_args: js.Any*): Unit
+  def fine(var_args: Any*): Unit
   
   def getLogLevel(): Double
   
@@ -16,11 +16,11 @@ trait Logger extends StObject {
   
   def getWatchers(): js.Array[js.Function]
   
-  def info(var_args: js.Any*): Unit
+  def info(var_args: Any*): Unit
   
   def isLoggable(level: Double): Boolean
   
-  def log(level: Double, var_args: js.Any*): Unit
+  def log(level: Double, var_args: Any*): Unit
   
   def registerWatcher(watcher: js.Function1[/* logRecord */ String, Unit]): Unit
   
@@ -28,23 +28,23 @@ trait Logger extends StObject {
   
   def setParent(logger: Logger): Unit
   
-  def warn(var_args: js.Any*): Unit
+  def warn(var_args: Any*): Unit
 }
 object Logger {
   
   inline def apply(
-    error: /* repeated */ js.Any => Unit,
-    fine: /* repeated */ js.Any => Unit,
+    error: /* repeated */ Any => Unit,
+    fine: /* repeated */ Any => Unit,
     getLogLevel: () => Double,
     getParent: () => Logger,
     getWatchers: () => js.Array[js.Function],
-    info: /* repeated */ js.Any => Unit,
+    info: /* repeated */ Any => Unit,
     isLoggable: Double => Boolean,
-    log: (Double, /* repeated */ js.Any) => Unit,
+    log: (Double, /* repeated */ Any) => Unit,
     registerWatcher: js.Function1[/* logRecord */ String, Unit] => Unit,
     setLogLevel: Double => Unit,
     setParent: Logger => Unit,
-    warn: /* repeated */ js.Any => Unit
+    warn: /* repeated */ Any => Unit
   ): Logger = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), fine = js.Any.fromFunction1(fine), getLogLevel = js.Any.fromFunction0(getLogLevel), getParent = js.Any.fromFunction0(getParent), getWatchers = js.Any.fromFunction0(getWatchers), info = js.Any.fromFunction1(info), isLoggable = js.Any.fromFunction1(isLoggable), log = js.Any.fromFunction2(log), registerWatcher = js.Any.fromFunction1(registerWatcher), setLogLevel = js.Any.fromFunction1(setLogLevel), setParent = js.Any.fromFunction1(setParent), warn = js.Any.fromFunction1(warn))
     __obj.asInstanceOf[Logger]
@@ -52,9 +52,9 @@ object Logger {
   
   extension [Self <: Logger](x: Self) {
     
-    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    inline def setFine(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fine", js.Any.fromFunction1(value))
+    inline def setFine(value: /* repeated */ Any => Unit): Self = StObject.set(x, "fine", js.Any.fromFunction1(value))
     
     inline def setGetLogLevel(value: () => Double): Self = StObject.set(x, "getLogLevel", js.Any.fromFunction0(value))
     
@@ -62,11 +62,11 @@ object Logger {
     
     inline def setGetWatchers(value: () => js.Array[js.Function]): Self = StObject.set(x, "getWatchers", js.Any.fromFunction0(value))
     
-    inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
     inline def setIsLoggable(value: Double => Boolean): Self = StObject.set(x, "isLoggable", js.Any.fromFunction1(value))
     
-    inline def setLog(value: (Double, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+    inline def setLog(value: (Double, /* repeated */ Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
     inline def setRegisterWatcher(value: js.Function1[/* logRecord */ String, Unit] => Unit): Self = StObject.set(x, "registerWatcher", js.Any.fromFunction1(value))
     
@@ -74,6 +74,6 @@ object Logger {
     
     inline def setSetParent(value: Logger => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
     
-    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GraphkeystringCollectiona
   extends StObject
-     with /* key */ StringDictionary[js.UndefOr[Collection[js.Any]]] {
+     with /* key */ StringDictionary[js.UndefOr[Collection[Any]]] {
   
   def _absoluteBetweenness(vertexExample: Example): Betweenness = js.native
   def _absoluteBetweenness(vertexExample: Example, options: BetweennessOptions): Betweenness = js.native
@@ -106,17 +106,17 @@ trait GraphkeystringCollectiona
   
   def _extendEdgeDefinitions(edgeDefinition: EdgeDefinition): Unit = js.native
   
-  def _fromVertex(edgeId: String): Document[js.Any] = js.native
+  def _fromVertex(edgeId: String): Document[Any] = js.native
   
-  def _getConnectingEdges(vertexExample1: Example, vertexExample2: Example, options: ConnectingEdgesOptions): Edge[js.Any] = js.native
+  def _getConnectingEdges(vertexExample1: Example, vertexExample2: Example, options: ConnectingEdgesOptions): Edge[Any] = js.native
   
   def _neighbors(vertexExample: Example): js.Array[String] = js.native
   def _neighbors(vertexExample: Example, options: NeighborsOptions): js.Array[String] = js.native
   
   def _orphanCollections(): js.Array[String] = js.native
   
-  def _paths(): js.Array[Path[js.Any, js.Any, js.Any, scala.Nothing]] = js.native
-  def _paths(options: PathsOptions): js.Array[Path[js.Any, js.Any, js.Any, scala.Nothing]] = js.native
+  def _paths(): js.Array[Path[Any, Any, Any, scala.Nothing]] = js.native
+  def _paths(options: PathsOptions): js.Array[Path[Any, Any, Any, scala.Nothing]] = js.native
   
   def _radius(vertexExample: Example): Double = js.native
   def _radius(vertexExample: Example, options: RadiusOptions): Double = js.native
@@ -124,8 +124,8 @@ trait GraphkeystringCollectiona
   def _removeVertexCollection(orphanCollectionName: String): Unit = js.native
   def _removeVertexCollection(orphanCollectionName: String, dropCollection: Boolean): Unit = js.native
   
-  def _shortestPath(startVertexExample: Example, endVertexExample: Example): js.Array[ShortestPath[js.Any]] = js.native
-  def _shortestPath(startVertexExample: Example, endVertexExample: Example, options: ShortestPathOptions): js.Array[ShortestPath[js.Any]] = js.native
+  def _shortestPath(startVertexExample: Example, endVertexExample: Example): js.Array[ShortestPath[Any]] = js.native
+  def _shortestPath(startVertexExample: Example, endVertexExample: Example, options: ShortestPathOptions): js.Array[ShortestPath[Any]] = js.native
   
-  def _toVertex(edgeId: String): Document[js.Any] = js.native
+  def _toVertex(edgeId: String): Document[Any] = js.native
 }

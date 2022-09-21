@@ -56,6 +56,11 @@ trait StopChannelResponse extends StObject {
   var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.undefined
   
   /**
+    * Maintenance settings for this channel.
+    */
+  var Maintenance: js.UndefOr[MaintenanceStatus] = js.undefined
+  
+  /**
     * The name of the channel. (user-mutable)
     */
   var Name: js.UndefOr[string] = js.undefined
@@ -81,6 +86,11 @@ trait StopChannelResponse extends StObject {
     * A collection of key-value pairs.
     */
   var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
+  
+  /**
+    * Settings for VPC output
+    */
+  var Vpc: js.UndefOr[VpcOutputSettingsDescription] = js.undefined
 }
 object StopChannelResponse {
   
@@ -107,13 +117,13 @@ object StopChannelResponse {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setEgressEndpoints(value: listOfChannelEgressEndpoint): Self = StObject.set(x, "EgressEndpoints", value.asInstanceOf[js.Any])
     
     inline def setEgressEndpointsUndefined: Self = StObject.set(x, "EgressEndpoints", js.undefined)
     
-    inline def setEgressEndpointsVarargs(value: ChannelEgressEndpoint*): Self = StObject.set(x, "EgressEndpoints", js.Array(value :_*))
+    inline def setEgressEndpointsVarargs(value: ChannelEgressEndpoint*): Self = StObject.set(x, "EgressEndpoints", js.Array(value*))
     
     inline def setEncoderSettings(value: EncoderSettings): Self = StObject.set(x, "EncoderSettings", value.asInstanceOf[js.Any])
     
@@ -127,7 +137,7 @@ object StopChannelResponse {
     
     inline def setInputAttachmentsUndefined: Self = StObject.set(x, "InputAttachments", js.undefined)
     
-    inline def setInputAttachmentsVarargs(value: InputAttachment*): Self = StObject.set(x, "InputAttachments", js.Array(value :_*))
+    inline def setInputAttachmentsVarargs(value: InputAttachment*): Self = StObject.set(x, "InputAttachments", js.Array(value*))
     
     inline def setInputSpecification(value: InputSpecification): Self = StObject.set(x, "InputSpecification", value.asInstanceOf[js.Any])
     
@@ -137,6 +147,10 @@ object StopChannelResponse {
     
     inline def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
     
+    inline def setMaintenance(value: MaintenanceStatus): Self = StObject.set(x, "Maintenance", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceUndefined: Self = StObject.set(x, "Maintenance", js.undefined)
+    
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
@@ -145,7 +159,7 @@ object StopChannelResponse {
     
     inline def setPipelineDetailsUndefined: Self = StObject.set(x, "PipelineDetails", js.undefined)
     
-    inline def setPipelineDetailsVarargs(value: PipelineDetail*): Self = StObject.set(x, "PipelineDetails", js.Array(value :_*))
+    inline def setPipelineDetailsVarargs(value: PipelineDetail*): Self = StObject.set(x, "PipelineDetails", js.Array(value*))
     
     inline def setPipelinesRunningCount(value: integer): Self = StObject.set(x, "PipelinesRunningCount", value.asInstanceOf[js.Any])
     
@@ -162,5 +176,9 @@ object StopChannelResponse {
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setVpc(value: VpcOutputSettingsDescription): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
+    
+    inline def setVpcUndefined: Self = StObject.set(x, "Vpc", js.undefined)
   }
 }

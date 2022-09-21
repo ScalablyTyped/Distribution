@@ -14,7 +14,7 @@ object media {
     /** [Method] Returns the value of src
       * @returns Object
       */
-    var getSrc: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getSrc: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -23,13 +23,13 @@ object media {
       */
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Method] Sets the value of src
       * @param src Object The new value.
       */
-    var setSrc: js.UndefOr[js.Function1[/* src */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setSrc: js.UndefOr[js.Function1[/* src */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -40,15 +40,15 @@ object media {
     
     extension [Self <: IAbstract](x: Self) {
       
-      inline def setGetSrc(value: () => js.Any): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
+      inline def setGetSrc(value: () => Any): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
       
       inline def setGetSrcUndefined: Self = StObject.set(x, "getSrc", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      inline def setSetSrc(value: /* src */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
+      inline def setSetSrc(value: /* src */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
       
       inline def setSetSrcUndefined: Self = StObject.set(x, "setSrc", js.undefined)
     }

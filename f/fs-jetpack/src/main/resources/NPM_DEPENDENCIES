@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fs-jetpack" : "4.1.0"
+      "fs-jetpack" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "fs-jetpack" : "4.1.0"
+      "fs-jetpack" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

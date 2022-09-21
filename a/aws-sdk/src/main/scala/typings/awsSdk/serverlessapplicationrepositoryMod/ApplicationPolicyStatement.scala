@@ -38,17 +38,17 @@ object ApplicationPolicyStatement {
     
     inline def setActions(value: listOfString): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: string*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: string*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setPrincipalOrgIDs(value: listOfString): Self = StObject.set(x, "PrincipalOrgIDs", value.asInstanceOf[js.Any])
     
     inline def setPrincipalOrgIDsUndefined: Self = StObject.set(x, "PrincipalOrgIDs", js.undefined)
     
-    inline def setPrincipalOrgIDsVarargs(value: string*): Self = StObject.set(x, "PrincipalOrgIDs", js.Array(value :_*))
+    inline def setPrincipalOrgIDsVarargs(value: string*): Self = StObject.set(x, "PrincipalOrgIDs", js.Array(value*))
     
     inline def setPrincipals(value: listOfString): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
-    inline def setPrincipalsVarargs(value: string*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: string*): Self = StObject.set(x, "Principals", js.Array(value*))
     
     inline def setStatementId(value: string): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     

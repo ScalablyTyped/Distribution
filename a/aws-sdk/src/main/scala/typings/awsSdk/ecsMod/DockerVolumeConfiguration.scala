@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DockerVolumeConfiguration extends StObject {
   
   /**
-    * If this value is true, the Docker volume is created if it does not already exist.  This field is only used if the scope is shared. 
+    * If this value is true, the Docker volume is created if it doesn't already exist.  This field is only used if the scope is shared. 
     */
   var autoprovision: js.UndefOr[BoxedBoolean] = js.undefined
   

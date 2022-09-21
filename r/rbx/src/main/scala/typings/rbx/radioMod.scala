@@ -54,7 +54,7 @@ object radioMod {
   
   @JSImport("rbx/elements/form/radio", "Radio")
   @js.native
-  val Radio: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Radio: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait RadioProps extends StObject {

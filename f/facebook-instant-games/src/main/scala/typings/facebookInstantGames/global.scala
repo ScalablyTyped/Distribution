@@ -5,12 +5,15 @@ import typings.facebookInstantGames.FBInstant.APIError
 import typings.facebookInstantGames.FBInstant.AdInstance
 import typings.facebookInstantGames.FBInstant.Context
 import typings.facebookInstantGames.FBInstant.CustomUpdatePayload
+import typings.facebookInstantGames.FBInstant.InvitePayload
 import typings.facebookInstantGames.FBInstant.Leaderboard
 import typings.facebookInstantGames.FBInstant.LeaderboardUpdatePayload
 import typings.facebookInstantGames.FBInstant.Payments
 import typings.facebookInstantGames.FBInstant.Platform
 import typings.facebookInstantGames.FBInstant.Player
 import typings.facebookInstantGames.FBInstant.SharePayload
+import typings.facebookInstantGames.FBInstant.Tournament
+import typings.facebookInstantGames.FBInstant.Tournaments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,7 +79,7 @@ object global {
       *
       * @returns Data associated with the current entry point.
       */
-    inline def getEntryPointData(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntryPointData")().asInstanceOf[js.Any]
+    inline def getEntryPointData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntryPointData")().asInstanceOf[Any]
     
     /**
       * Attempt to create an instance of interstitial ad. This instance can then be preloaded and presented.
@@ -137,12 +140,51 @@ object global {
     inline def getSupportedAPIs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedAPIs")().asInstanceOf[js.Array[String]]
     
     /**
+      * Fetch the instant tournament out of the current context the user is playing.
+      *
+      * This will reject if there is no instant tournament link to the current context.
+      * The instant tournament returned can be either active or expired (An instant tournament is expired if its end time is in the past).
+      * For each instant tournament, there is only one unique context ID linked to it, and that ID doesn't change.
+      *
+      * @returns Promise<Tournament>
+      * @throws PENDING_REQUEST
+      * @throws NETWORK_FAILURE
+      * @throws INVALID_OPERATION
+      * @throws TOURNAMENT_NOT_FOUND
+      * @example
+      * FBInstant.getTournamentAsync()
+      *   .then((tournament) => {
+      *      console.log(tournament.getContextID());
+      *      console.log(tournament.getEndTime());
+      *   });
+      */
+    inline def getTournamentAsync(): js.Promise[Tournament] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTournamentAsync")().asInstanceOf[js.Promise[Tournament]]
+    
+    /**
       * Initializes the SDK library. This should be called before any other SDK functions.
       *
       * @returns A promise that resolves when the SDK is ready to use.
       * @throws INVALID_OPERATION
       */
     inline def initializeAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAsync")().asInstanceOf[js.Promise[Unit]]
+    
+    /**
+      * This invokes a dialog to let the user invite one or more people to the game.
+      *
+      * A blob of data can be attached to the share which every game session launched from the invite will be able to access from FBInstant.getEntryPointData().
+      * This data must be less than or equal to 1000 characters when stringified.
+      * The user may choose to cancel the action and close the dialog, and the returned promise will resolve when the dialog is closed regardless if
+      * the user actually invited people or not.
+      *
+      * @param payload Specify what to share. See example for details.
+      * @returns A promise that resolves when the share is completed or cancelled.
+      * @throws INVALID_PARAM
+      * @throws NETWORK_FAILURE
+      * @throws PENDING_REQUEST
+      * @throws CLIENT_UNSUPPORTED_OPERATION
+      * @throws INVALID_OPERATION
+      */
+    inline def inviteAsync(payload: InvitePayload): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("inviteAsync")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Log an app event with FB Analytics. See https://developers.facebook.com/docs/javascript/reference/v2.8#app_events for more details about FB Analytics.
@@ -202,6 +244,17 @@ object global {
     inline def payments_=(x: Payments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("payments")(x.asInstanceOf[js.Any])
     
     /**
+      * Requests and performs haptic feedback on supported devices.
+      *
+      * @returns haptic feedback requested successfully
+      * @throws CLIENT_UNSUPPORTED_OPERATION
+      * @throws INVALID_OPERATION
+      * @example
+      * FBInstant.performHapticFeedbackAsync();
+      */
+    inline def performHapticFeedbackAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("performHapticFeedbackAsync")().asInstanceOf[js.Promise[Unit]]
+    
+    /**
       * Contains functions and properties related to the current player.
       */
     @JSGlobal("FBInstant.player")
@@ -210,14 +263,18 @@ object global {
     inline def player_=(x: Player): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("player")(x.asInstanceOf[js.Any])
     
     /**
-      * Posts the player's best score for the session to Facebook.
-      * This API should be called whenever the player achieves their best score in a session, preferably at the end of an activity
-      * Scores posted using this API should be consistent & comparable across game sessions.
+      * Posts a player's score to Facebook and resolves when score has been posted.
       *
-      * @param score An integer value representing the player's best score in a session.
-      * @returns void
+      * This API should only be called at the end of an activity (example: when the player doesn't have "lives" to continue the game).
+      * This API will be rate-limited when called too frequently. Scores posted using this API should be consistent and comparable across game sessions.
+      * For example, if Player A achieves 200 points in a session, and Player B achieves 320 points in a session, those two scores should be generated
+      * from activities where the scores are fair to be compared and ranked against each other.
+      *
+      * @param score An integer value representing the player's score at the end of an activity.
+      * @returns A promise that resolves when all platform behavior (such as dialogs) generated from the posted score has completed, and the game should resume.
+      * If the behavior resulted in a social context change, that will be reflected by the time the Promise resolves.
       */
-    inline def postSessionScore(score: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("postSessionScore")(score.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def postSessionScoreAsync(score: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("postSessionScoreAsync")(score.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Quits the game.
@@ -239,7 +296,7 @@ object global {
       *
       * @param sessionData An arbitrary data object, which must be less than or equal to 1000 characters when stringified.
       */
-    inline def setSessionData(sessionData: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSessionData")(sessionData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setSessionData(sessionData: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSessionData")(sessionData.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * This invokes a dialog to let the user share specified content, either as a message in Messenger or as a post on the user's timeline.
@@ -279,7 +336,15 @@ object global {
       * @throws CLIENT_REQUIRES_UPDATE
       */
     inline def switchGameAsync(appID: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchGameAsync")(appID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def switchGameAsync(appID: String, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchGameAsync")(appID.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def switchGameAsync(appID: String, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchGameAsync")(appID.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    /**
+      * Contains functions and properties related to tournaments.
+      */
+    @JSGlobal("FBInstant.tournament")
+    @js.native
+    def tournament: Tournaments = js.native
+    inline def tournament_=(x: Tournaments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tournament")(x.asInstanceOf[js.Any])
     
     /**
       * Informs Facebook of an update that occurred in the game. This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.

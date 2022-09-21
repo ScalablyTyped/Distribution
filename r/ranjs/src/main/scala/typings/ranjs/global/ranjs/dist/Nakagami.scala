@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Nakagami")
 @js.native
-class Nakagami ()
+open class Nakagami ()
   extends typings.ranjs.mod.dist.Nakagami {
   def this(m: Double) = this()
   def this(m: Double, omega: Double) = this()

@@ -12,7 +12,7 @@ object directionalLightShadowMod {
   
   @JSImport("three/src/lights/DirectionalLightShadow", "DirectionalLightShadow")
   @js.native
-  class DirectionalLightShadow protected () extends LightShadow {
+  open class DirectionalLightShadow protected () extends LightShadow {
     def this(camera: Camera) = this()
     
     @JSName("camera")

@@ -28,7 +28,7 @@ object APIResponseErrorError {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: APIResponseErrorDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: APIResponseErrorDetails*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

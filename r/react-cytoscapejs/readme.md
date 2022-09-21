@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-cytoscapejs
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 React-based network visualization component, using Cytoscape
@@ -10,10 +10,10 @@ React-based network visualization component, using Cytoscape
 | ------------------ | :-------------: |
 | Full name          | react-cytoscapejs |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 183720 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 68477.0 |
+| # stars            | 353.0 |
 
 ## Links
 - [Homepage](https://github.com/plotly/react-cytoscapejs)

@@ -10,10 +10,10 @@ Wrapper around fetch capable of graceful authentication token refreshing.
 | ------------------ | :-------------: |
 | Full name          | refresh-fetch |
 | Keywords           | api, fetch, auth, token, refresh |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 121658 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 10158.666666666666 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/vlki/refresh-fetch)

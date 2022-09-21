@@ -7,30 +7,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-templating", "ViewLocator")
 @js.native
-class ViewLocator () extends StObject {
+open class ViewLocator () extends StObject {
   
   /**
-    * Conventionally converts a view model origin to a view url.
-    * Used by the ConventionalViewStrategy.
-    * @param origin The origin of the view model to convert.
-    * @return The view url.
-    */
+  	* Conventionally converts a view model origin to a view url.
+  	* Used by the ConventionalViewStrategy.
+  	* @param origin The origin of the view model to convert.
+  	* @return The view url.
+  	*/
   def convertOriginToViewUrl(origin: Origin): String = js.native
   
   /**
-    * Creates a fallback View Strategy. Used when unable to locate a configured strategy.
-    * The default implementation returns and instance of ConventionalViewStrategy.
-    * @param origin The origin of the view model to return the strategy for.
-    * @return The fallback ViewStrategy.
-    */
+  	* Creates a fallback View Strategy. Used when unable to locate a configured strategy.
+  	* The default implementation returns and instance of ConventionalViewStrategy.
+  	* @param origin The origin of the view model to return the strategy for.
+  	* @return The fallback ViewStrategy.
+  	*/
   def createFallbackViewStrategy(origin: Origin): ViewStrategy_ = js.native
   
   /**
-    * Gets the view strategy for the value.
-    * @param value The value to locate the view strategy for.
-    * @return The located ViewStrategy instance.
-    */
-  def getViewStrategy(value: js.Any): ViewStrategy_ = js.native
+  	* Gets the view strategy for the value.
+  	* @param value The value to locate the view strategy for.
+  	* @return The located ViewStrategy instance.
+  	*/
+  def getViewStrategy(value: Any): ViewStrategy_ = js.native
 }
 /* static members */
 object ViewLocator {
@@ -40,10 +40,10 @@ object ViewLocator {
   val ^ : js.Any = js.native
   
   /**
-    * The metadata key for storing/finding view strategies associated with an class/object.
-    */
+  	* The metadata key for storing/finding view strategies associated with an class/object.
+  	*/
   @JSImport("aurelia-templating", "ViewLocator.viewStrategyMetadataKey")
   @js.native
-  def viewStrategyMetadataKey: js.Any = js.native
-  inline def viewStrategyMetadataKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("viewStrategyMetadataKey")(x.asInstanceOf[js.Any])
+  def viewStrategyMetadataKey: String = js.native
+  inline def viewStrategyMetadataKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("viewStrategyMetadataKey")(x.asInstanceOf[js.Any])
 }

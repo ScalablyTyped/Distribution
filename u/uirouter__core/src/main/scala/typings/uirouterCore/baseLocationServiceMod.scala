@@ -31,9 +31,9 @@ object baseLocationServiceMod {
     
     var _history: HistoryLike = js.native
     
-    def _listener(evt: js.Any): Unit = js.native
+    def _listener(evt: Any): Unit = js.native
     
-    /* private */ var _listeners: js.Any = js.native
+    /* private */ var _listeners: Any = js.native
     
     var _location: LocationLike = js.native
     
@@ -50,7 +50,7 @@ object baseLocationServiceMod {
       * However, after this function completes, the browser URL should reflect the entire (fully qualified)
       * HREF including those data.
       */
-    /* protected */ def _set(state: js.Any, title: String, url: String, replace: Boolean): js.Any = js.native
+    /* protected */ def _set(state: Any, title: String, url: String, replace: Boolean): Any = js.native
     
     var fireAfterUpdate: Boolean = js.native
   }

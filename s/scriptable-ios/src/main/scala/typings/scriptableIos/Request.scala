@@ -94,7 +94,7 @@ trait Request extends StObject {
     * Be aware that this property is ignored if you convert the request to a multipart request using `addParameterToMultipart`, `addFileToMultipart` or `addFileDataToMultipart`.
     * @see https://docs.scriptable.app/request/#body
     */
-  var body: js.Any = js.native
+  var body: Any = js.native
   
   /**
     * _HTTP headers to send with the request._
@@ -126,7 +126,7 @@ trait Request extends StObject {
     * Call to send the configured request to the specified URL. The response is expected to be a valid JSON string and is parsed into an object.
     * @see https://docs.scriptable.app/request/#-loadjson
     */
-  def loadJSON(): js.Promise[js.Any] = js.native
+  def loadJSON(): js.Promise[Any] = js.native
   
   /**
     * _Sends request and parses response as a string._
@@ -179,7 +179,7 @@ trait Request extends StObject {
     *     }
     * @see https://docs.scriptable.app/request/#response
     */
-  var response: StringDictionary[js.Any] = js.native
+  var response: StringDictionary[Any] = js.native
   
   /**
     * _Timeout interval of the request._

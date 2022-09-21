@@ -26,7 +26,7 @@ object mod extends Shortcut {
     
     var subColor: String | js.Array[String]
     
-    var usageFilter: js.UndefOr[js.Function1[/* output */ js.Any, js.Any]] = js.undefined
+    var usageFilter: js.UndefOr[js.Function1[/* output */ Any, Any]] = js.undefined
     
     var value: js.UndefOr[String] = js.undefined
     
@@ -47,7 +47,7 @@ object mod extends Shortcut {
       
       inline def setMainColor(value: String | js.Array[String]): Self = StObject.set(x, "mainColor", value.asInstanceOf[js.Any])
       
-      inline def setMainColorVarargs(value: String*): Self = StObject.set(x, "mainColor", js.Array(value :_*))
+      inline def setMainColorVarargs(value: String*): Self = StObject.set(x, "mainColor", js.Array(value*))
       
       inline def setMinimist(value: MinimistOptions): Self = StObject.set(x, "minimist", value.asInstanceOf[js.Any])
       
@@ -61,9 +61,9 @@ object mod extends Shortcut {
       
       inline def setSubColor(value: String | js.Array[String]): Self = StObject.set(x, "subColor", value.asInstanceOf[js.Any])
       
-      inline def setSubColorVarargs(value: String*): Self = StObject.set(x, "subColor", js.Array(value :_*))
+      inline def setSubColorVarargs(value: String*): Self = StObject.set(x, "subColor", js.Array(value*))
       
-      inline def setUsageFilter(value: /* output */ js.Any => js.Any): Self = StObject.set(x, "usageFilter", js.Any.fromFunction1(value))
+      inline def setUsageFilter(value: /* output */ Any => Any): Self = StObject.set(x, "usageFilter", js.Any.fromFunction1(value))
       
       inline def setUsageFilterUndefined: Self = StObject.set(x, "usageFilter", js.undefined)
       
@@ -100,7 +100,7 @@ object mod extends Shortcut {
   
   trait MinimistOptions extends StObject {
     
-    var default: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var default: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var `--`: js.UndefOr[Boolean] = js.undefined
     
@@ -135,9 +135,9 @@ object mod extends Shortcut {
       
       inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value*))
       
-      inline def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: StringDictionary[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -149,7 +149,7 @@ object mod extends Shortcut {
       
       inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value*))
       
       inline def setUnknown(value: /* param */ String => Boolean): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
       
@@ -159,7 +159,7 @@ object mod extends Shortcut {
   
   trait MriOptions extends StObject {
     
-    var default: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var default: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
@@ -188,15 +188,15 @@ object mod extends Shortcut {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setBoolean(value: String | js.Array[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
       inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value*))
       
-      inline def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: StringDictionary[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -204,7 +204,7 @@ object mod extends Shortcut {
       
       inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value*))
       
       inline def setUnknown(value: /* param */ String => Boolean): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
       
@@ -214,7 +214,7 @@ object mod extends Shortcut {
   
   trait Option extends StObject {
     
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     var description: String
     
@@ -231,13 +231,13 @@ object mod extends Shortcut {
     
     extension [Self <: Option](x: Self) {
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      inline def setInit(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* value */ Any => Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
@@ -245,7 +245,7 @@ object mod extends Shortcut {
     }
   }
   
-  type OptionInitFunction = js.Function1[/* value */ js.Any, js.Any]
+  type OptionInitFunction = js.Function1[/* value */ Any, Any]
   
   type _To = typings.args.mod.args
   
@@ -284,25 +284,22 @@ object mod extends Shortcut {
     def examples(list: js.Array[Example]): typings.args.mod.args = js.native
     
     def option(name: String, description: String): typings.args.mod.args = js.native
-    def option(name: String, description: String, defaultValue: js.Any): typings.args.mod.args = js.native
-    def option(name: String, description: String, defaultValue: js.Any, init: OptionInitFunction): typings.args.mod.args = js.native
+    def option(name: String, description: String, defaultValue: Any): typings.args.mod.args = js.native
+    def option(name: String, description: String, defaultValue: Any, init: OptionInitFunction): typings.args.mod.args = js.native
     def option(name: String, description: String, defaultValue: Unit, init: OptionInitFunction): typings.args.mod.args = js.native
     def option(name: js.Tuple2[String, String], description: String): typings.args.mod.args = js.native
-    def option(name: js.Tuple2[String, String], description: String, defaultValue: js.Any): typings.args.mod.args = js.native
-    def option(
-      name: js.Tuple2[String, String],
-      description: String,
-      defaultValue: js.Any,
-      init: OptionInitFunction
-    ): typings.args.mod.args = js.native
+    def option(name: js.Tuple2[String, String], description: String, defaultValue: Any): typings.args.mod.args = js.native
+    def option(name: js.Tuple2[String, String], description: String, defaultValue: Any, init: OptionInitFunction): typings.args.mod.args = js.native
     def option(name: js.Tuple2[String, String], description: String, defaultValue: Unit, init: OptionInitFunction): typings.args.mod.args = js.native
     
     def options(list: js.Array[Option]): typings.args.mod.args = js.native
     
-    def parse(argv: js.Array[String]): StringDictionary[js.Any] = js.native
-    def parse(argv: js.Array[String], options: ConfigurationOptions): StringDictionary[js.Any] = js.native
+    def parse(argv: js.Array[String]): StringDictionary[Any] = js.native
+    def parse(argv: js.Array[String], options: ConfigurationOptions): StringDictionary[Any] = js.native
     
     def showHelp(): Unit = js.native
+    
+    def showVersion(): Unit = js.native
     
     var sub: js.Array[String] = js.native
   }

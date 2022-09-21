@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.socialButtonFacebookMod.SocialButtonFacebookProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object systemSocialButtonFacebookMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/system/SocialButtonFacebook", JSImport.Default)
   @js.native
-  val default: SFC[SocialButtonFacebookProps] = js.native
+  val default: FC[SocialButtonFacebookProps] = js.native
   
-  type _To = SFC[SocialButtonFacebookProps]
+  type _To = FC[SocialButtonFacebookProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemSocialButtonFacebookMod.foo` */
-  override def _to: SFC[SocialButtonFacebookProps] = default
+  override def _to: FC[SocialButtonFacebookProps] = default
 }

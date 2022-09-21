@@ -10,10 +10,10 @@ Convert a camelcase or space-separated string to a dash-separated string. ~12 sl
 | ------------------ | :-------------: |
 | Full name          | dashify |
 | Keywords           | dash, dashcase, dasherize, dashify, slug, slugify |
-| # releases         | 0 |
-| # dependents       | 103 |
-| # downloads        | 8577970 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1042623.0 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/dashify)

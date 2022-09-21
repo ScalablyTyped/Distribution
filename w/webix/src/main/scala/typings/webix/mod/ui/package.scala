@@ -1,31 +1,34 @@
 package typings.webix.mod.ui
 
+import typings.webix.mod.ui.^
+import typings.webix.webixStrings.onScroll
+import typings.webix.webixStrings.onViewShow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(config: js.Any): typings.webix.webix.ui.baseview = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.webix.webix.ui.baseview]
-inline def apply(config: js.Any, parent: js.Any): typings.webix.webix.ui.baseview = (typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.webix.webix.ui.baseview]
-inline def apply(config: js.Any, parent: js.Any, replacement: js.Any): typings.webix.webix.ui.baseview = (typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[typings.webix.webix.ui.baseview]
-inline def apply(config: js.Any, parent: scala.Unit, replacement: js.Any): typings.webix.webix.ui.baseview = (typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[typings.webix.webix.ui.baseview]
+inline def apply(config: Any): typings.webix.webix.ui.baseview = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.webix.webix.ui.baseview]
+inline def apply(config: Any, parent: Any): typings.webix.webix.ui.baseview = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.webix.webix.ui.baseview]
+inline def apply(config: Any, parent: Any, replacement: Any): typings.webix.webix.ui.baseview = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[typings.webix.webix.ui.baseview]
+inline def apply(config: Any, parent: Unit, replacement: Any): typings.webix.webix.ui.baseview = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[typings.webix.webix.ui.baseview]
 
-inline def delay(config: js.Any): scala.Unit = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].applyDynamic("delay")(config.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def delay(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def fullScreen(): scala.Unit = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].applyDynamic("fullScreen")().asInstanceOf[scala.Unit]
+inline def fullScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fullScreen")().asInstanceOf[Unit]
 
-inline def hasMethod(name: java.lang.String, method_name: java.lang.String): scala.Boolean = (typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].applyDynamic("hasMethod")(name.asInstanceOf[js.Any], method_name.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def hasMethod(name: String, method_name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMethod")(name.asInstanceOf[js.Any], method_name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def resize(): scala.Unit = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].applyDynamic("resize")().asInstanceOf[scala.Unit]
+inline def resize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resize")().asInstanceOf[Unit]
 
-inline def scrollSize: scala.Double = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].selectDynamic("scrollSize").asInstanceOf[scala.Double]
-inline def scrollSize_=(x: scala.Double): scala.Unit = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].updateDynamic("scrollSize")(x.asInstanceOf[js.Any])
+inline def scrollSize: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("scrollSize").asInstanceOf[Double]
+inline def scrollSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollSize")(x.asInstanceOf[js.Any])
 
-inline def zIndex(): scala.Double = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].applyDynamic("zIndex")().asInstanceOf[scala.Double]
+inline def zIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zIndex")().asInstanceOf[Double]
 
-inline def zIndexBase: scala.Double = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].selectDynamic("zIndexBase").asInstanceOf[scala.Double]
-inline def zIndexBase_=(x: scala.Double): scala.Unit = typings.webix.mod.ui.^.asInstanceOf[js.Dynamic].updateDynamic("zIndexBase")(x.asInstanceOf[js.Any])
+inline def zIndexBase: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("zIndexBase").asInstanceOf[Double]
+inline def zIndexBase_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zIndexBase")(x.asInstanceOf[js.Any])
 
-type resizerEventName = typings.webix.webixStrings.onViewShow
+type resizerEventName = onViewShow
 
-type vscrollEventName = typings.webix.webixStrings.onScroll
+type vscrollEventName = onScroll

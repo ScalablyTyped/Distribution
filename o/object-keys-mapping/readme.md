@@ -10,15 +10,12 @@ mapping object keys
 | ------------------ | :-------------: |
 | Full name          | object-keys-mapping |
 | Keywords           | mapping, object, keys |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 899 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75.33333333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/coderhaoxin/object-keys-mapping#readme)
-- [Bugs](https://github.com/coderhaoxin/object-keys-mapping/issues)
-- [Repository](https://github.com/coderhaoxin/object-keys-mapping)
 - [Npm](https://www.npmjs.com/package/object-keys-mapping)
     
 

@@ -67,6 +67,10 @@ trait DocumentsResource extends StObject {
   /** Lists all the collection IDs underneath a document. */
   def listCollectionIds(request: Parent): Request[ListCollectionIdsResponse] = js.native
   
+  /** Lists documents. */
+  def listDocuments(): Request[ListDocumentsResponse] = js.native
+  def listDocuments(request: OrderBy): Request[ListDocumentsResponse] = js.native
+  
   def listen(request: PrettyPrint, body: ListenRequest): Request[ListenResponse] = js.native
   /** Listens to changes. */
   def listen(request: Uploadprotocol): Request[ListenResponse] = js.native

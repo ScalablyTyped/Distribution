@@ -9,7 +9,7 @@ object lastNewlineMod {
   
   @JSImport("nodemailer/lib/mime-node/last-newline", JSImport.Namespace)
   @js.native
-  class ^ () extends LastNewline
+  open class ^ () extends LastNewline
   
   @js.native
   trait LastNewline extends Transform {

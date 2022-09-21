@@ -27,10 +27,10 @@ trait JQueryTotalStorage extends StObject {
     * @param value Value to set for key. If ommited, current value for key is returned.
     * @param options Not implemented.
     */
-  def apply(key: String): js.Any = js.native
-  def apply(key: String, value: js.Any): js.Any = js.native
-  def apply(key: String, value: js.Any, options: JQueryTotalStorageOptions): js.Any = js.native
-  def apply(key: String, value: Unit, options: JQueryTotalStorageOptions): js.Any = js.native
+  def apply(key: String): Any = js.native
+  def apply(key: String, value: Any): Any = js.native
+  def apply(key: String, value: Any, options: JQueryTotalStorageOptions): Any = js.native
+  def apply(key: String, value: Unit, options: JQueryTotalStorageOptions): Any = js.native
   
   /**
     * @desc Delete item by key
@@ -41,18 +41,18 @@ trait JQueryTotalStorage extends StObject {
   /**
     * @desc Get all set values
     */
-  def getAll(): js.Array[js.Any] = js.native
+  def getAll(): js.Array[Any] = js.native
   
   /**
     * @desc Get a key's value
     * @param key Key to get.
     */
-  def getItem(key: String): js.Any = js.native
+  def getItem(key: String): Any = js.native
   
   /**
     * @desc Set a key's value
     * @param key Key to set.
     * @param value Value to set for key.
     */
-  def setItem(key: String, value: js.Any): js.Any = js.native
+  def setItem(key: String, value: Any): Any = js.native
 }

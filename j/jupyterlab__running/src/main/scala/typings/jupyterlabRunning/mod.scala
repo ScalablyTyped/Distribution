@@ -2,6 +2,7 @@ package typings.jupyterlabRunning
 
 import typings.jupyterlabApputils.mod.ReactWidget
 import typings.jupyterlabRunning.mod.IRunningSessions.IManager
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import typings.jupyterlabUiComponents.mod.LabIcon
 import typings.luminoCoreutils.mod.Token
 import typings.luminoDisposable.mod.IDisposable
@@ -43,11 +44,11 @@ object mod {
   
   @JSImport("@jupyterlab/running", "RunningSessionManagers")
   @js.native
-  class RunningSessionManagers ()
+  open class RunningSessionManagers ()
     extends StObject
        with IRunningSessionManagers {
     
-    /* private */ var _managers: js.Any = js.native
+    /* private */ var _managers: Any = js.native
     
     /**
       * Add a running item manager.
@@ -67,13 +68,16 @@ object mod {
   
   @JSImport("@jupyterlab/running", "RunningSessions")
   @js.native
-  class RunningSessions protected () extends ReactWidget {
+  open class RunningSessions protected () extends ReactWidget {
     /**
       * Construct a new running widget.
       */
     def this(managers: IRunningSessionManagers) = this()
+    def this(managers: IRunningSessionManagers, translator: ITranslator) = this()
     
-    /* private */ var managers: js.Any = js.native
+    /* private */ var managers: Any = js.native
+    
+    /* protected */ var translator: ITranslator = js.native
   }
   
   object IRunningSessions {
@@ -89,9 +93,17 @@ object mod {
       
       def running(): js.Array[IRunningItem]
       
-      var runningChanged: ISignal[js.Any, js.Any]
+      var runningChanged: ISignal[Any, Any]
       
       def shutdownAll(): Unit
+      
+      var shutdownAllConfirmationText: js.UndefOr[String] = js.undefined
+      
+      var shutdownAllLabel: js.UndefOr[String] = js.undefined
+      
+      var shutdownItemIcon: js.UndefOr[LabIcon] = js.undefined
+      
+      var shutdownLabel: js.UndefOr[String] = js.undefined
     }
     object IManager {
       
@@ -99,7 +111,7 @@ object mod {
         name: String,
         refreshRunning: () => Unit,
         running: () => js.Array[IRunningItem],
-        runningChanged: ISignal[js.Any, js.Any],
+        runningChanged: ISignal[Any, Any],
         shutdownAll: () => Unit
       ): IManager = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], refreshRunning = js.Any.fromFunction0(refreshRunning), running = js.Any.fromFunction0(running), runningChanged = runningChanged.asInstanceOf[js.Any], shutdownAll = js.Any.fromFunction0(shutdownAll))
@@ -114,9 +126,25 @@ object mod {
         
         inline def setRunning(value: () => js.Array[IRunningItem]): Self = StObject.set(x, "running", js.Any.fromFunction0(value))
         
-        inline def setRunningChanged(value: ISignal[js.Any, js.Any]): Self = StObject.set(x, "runningChanged", value.asInstanceOf[js.Any])
+        inline def setRunningChanged(value: ISignal[Any, Any]): Self = StObject.set(x, "runningChanged", value.asInstanceOf[js.Any])
         
         inline def setShutdownAll(value: () => Unit): Self = StObject.set(x, "shutdownAll", js.Any.fromFunction0(value))
+        
+        inline def setShutdownAllConfirmationText(value: String): Self = StObject.set(x, "shutdownAllConfirmationText", value.asInstanceOf[js.Any])
+        
+        inline def setShutdownAllConfirmationTextUndefined: Self = StObject.set(x, "shutdownAllConfirmationText", js.undefined)
+        
+        inline def setShutdownAllLabel(value: String): Self = StObject.set(x, "shutdownAllLabel", value.asInstanceOf[js.Any])
+        
+        inline def setShutdownAllLabelUndefined: Self = StObject.set(x, "shutdownAllLabel", js.undefined)
+        
+        inline def setShutdownItemIcon(value: LabIcon): Self = StObject.set(x, "shutdownItemIcon", value.asInstanceOf[js.Any])
+        
+        inline def setShutdownItemIconUndefined: Self = StObject.set(x, "shutdownItemIcon", js.undefined)
+        
+        inline def setShutdownLabel(value: String): Self = StObject.set(x, "shutdownLabel", value.asInstanceOf[js.Any])
+        
+        inline def setShutdownLabelUndefined: Self = StObject.set(x, "shutdownLabel", js.undefined)
       }
     }
     
@@ -124,6 +152,8 @@ object mod {
       * A running item.
       */
     trait IRunningItem extends StObject {
+      
+      var detail: js.UndefOr[js.Function0[String]] = js.undefined
       
       def icon(): LabIcon
       
@@ -143,6 +173,10 @@ object mod {
       }
       
       extension [Self <: IRunningItem](x: Self) {
+        
+        inline def setDetail(value: () => String): Self = StObject.set(x, "detail", js.Any.fromFunction0(value))
+        
+        inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
         
         inline def setIcon(value: () => LabIcon): Self = StObject.set(x, "icon", js.Any.fromFunction0(value))
         

@@ -27,7 +27,7 @@ object ContentProviderProxy {
     deregisterInstance: (String, String) => XContentProvider,
     getContentProvider: () => XContentProvider,
     queryContent: XContentIdentifier => XContent,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerInstance: (String, String, Boolean) => XContentProvider,
     release: () => Unit
   ): ContentProviderProxy = {

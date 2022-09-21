@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActivationKey = java.lang.String
+type ActivationKey = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
@@ -17,15 +17,15 @@ type ActivationKey = java.lang.String
   - typings.awsSdk.awsSdkStrings.UNKNOWN_ERROR
   - java.lang.String
 */
-type ActiveDirectoryStatus = typings.awsSdk.storagegatewayMod._ActiveDirectoryStatus | java.lang.String
+type ActiveDirectoryStatus = _ActiveDirectoryStatus | String
 
-type AuditDestinationARN = java.lang.String
+type AuditDestinationARN = String
 
-type Authentication = java.lang.String
+type Authentication = String
 
-type AutomaticTapeCreationPolicyInfos = js.Array[typings.awsSdk.storagegatewayMod.AutomaticTapeCreationPolicyInfo]
+type AutomaticTapeCreationPolicyInfos = js.Array[AutomaticTapeCreationPolicyInfo]
 
-type AutomaticTapeCreationRules = js.Array[typings.awsSdk.storagegatewayMod.AutomaticTapeCreationRule]
+type AutomaticTapeCreationRules = js.Array[AutomaticTapeCreationRule]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETE
@@ -33,125 +33,149 @@ type AutomaticTapeCreationRules = js.Array[typings.awsSdk.storagegatewayMod.Auto
   - typings.awsSdk.awsSdkStrings.PENDING
   - java.lang.String
 */
-type AvailabilityMonitorTestStatus = typings.awsSdk.storagegatewayMod._AvailabilityMonitorTestStatus | java.lang.String
+type AvailabilityMonitorTestStatus = _AvailabilityMonitorTestStatus | String
 
-type BandwidthDownloadRateLimit = scala.Double
+type BandwidthDownloadRateLimit = Double
 
-type BandwidthRateLimitIntervals = js.Array[typings.awsSdk.storagegatewayMod.BandwidthRateLimitInterval]
+type BandwidthRateLimitIntervals = js.Array[BandwidthRateLimitInterval]
 
-type BandwidthType = java.lang.String
+type BandwidthType = String
 
-type BandwidthUploadRateLimit = scala.Double
+type BandwidthUploadRateLimit = Double
 
 type Boolean = scala.Boolean
 
-type CacheStaleTimeoutInSeconds = scala.Double
+type CacheStaleTimeoutInSeconds = Double
 
-type CachediSCSIVolumes = js.Array[typings.awsSdk.storagegatewayMod.CachediSCSIVolume]
+type CachediSCSIVolumes = js.Array[CachediSCSIVolume]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ClientSpecified
   - typings.awsSdk.awsSdkStrings.CaseSensitive
   - java.lang.String
 */
-type CaseSensitivity = typings.awsSdk.storagegatewayMod._CaseSensitivity | java.lang.String
+type CaseSensitivity = _CaseSensitivity | String
 
-type ChapCredentials = js.Array[typings.awsSdk.storagegatewayMod.ChapInfo]
+type ChapCredentials = js.Array[ChapInfo]
 
-type ChapSecret = java.lang.String
+type ChapSecret = String
 
-type ClientToken = java.lang.String
+type ClientToken = String
 
-type CloudWatchLogGroupARN = java.lang.String
+type CloudWatchLogGroupARN = String
 
-type CreatedDate = typings.std.Date
+type CreatedDate = js.Date
 
-type DayOfMonth = scala.Double
+type DNSHostName = String
 
-type DayOfWeek = scala.Double
+type DayOfMonth = Double
 
-type DaysOfWeek = js.Array[typings.awsSdk.storagegatewayMod.DayOfWeek]
+type DayOfWeek = Double
 
-type DeprecationDate = java.lang.String
+type DaysOfWeek = js.Array[DayOfWeek]
 
-type Description = java.lang.String
+type DeprecationDate = String
 
-type DeviceType = java.lang.String
+type Description = String
 
-type DiskAllocationType = java.lang.String
+type DeviceType = String
 
-type DiskAttribute = java.lang.String
+type DiskAllocationType = String
 
-type DiskAttributeList = js.Array[typings.awsSdk.storagegatewayMod.DiskAttribute]
+type DiskAttribute = String
 
-type DiskId = java.lang.String
+type DiskAttributeList = js.Array[DiskAttribute]
 
-type DiskIds = js.Array[typings.awsSdk.storagegatewayMod.DiskId]
+type DiskId = String
 
-type Disks = js.Array[typings.awsSdk.storagegatewayMod.Disk]
+type DiskIds = js.Array[DiskId]
 
-type DomainName = java.lang.String
+type Disks = js.Array[Disk]
 
-type DomainUserName = java.lang.String
+type DomainName = String
 
-type DomainUserPassword = java.lang.String
+type DomainUserName = String
 
-type DoubleObject = scala.Double
+type DomainUserPassword = String
 
-type Ec2InstanceId = java.lang.String
+type DoubleObject = Double
 
-type Ec2InstanceRegion = java.lang.String
+type Ec2InstanceId = String
 
-type EndpointType = java.lang.String
+type Ec2InstanceRegion = String
 
-type FileShareARN = java.lang.String
+type EndpointType = String
 
-type FileShareARNList = js.Array[typings.awsSdk.storagegatewayMod.FileShareARN]
+type FileShareARN = String
 
-type FileShareClientList = js.Array[typings.awsSdk.storagegatewayMod.IPV4AddressCIDR]
+type FileShareARNList = js.Array[FileShareARN]
 
-type FileShareId = java.lang.String
+type FileShareClientList = js.Array[IPV4AddressCIDR]
 
-type FileShareInfoList = js.Array[typings.awsSdk.storagegatewayMod.FileShareInfo]
+type FileShareId = String
 
-type FileShareName = java.lang.String
+type FileShareInfoList = js.Array[FileShareInfo]
 
-type FileShareStatus = java.lang.String
+type FileShareName = String
+
+type FileShareStatus = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NFS
   - typings.awsSdk.awsSdkStrings.SMB
   - java.lang.String
 */
-type FileShareType = typings.awsSdk.storagegatewayMod._FileShareType | java.lang.String
+type FileShareType = _FileShareType | String
 
-type FileShareUser = java.lang.String
+type FileSystemAssociationARN = String
 
-type FileShareUserList = js.Array[typings.awsSdk.storagegatewayMod.FileShareUser]
+type FileSystemAssociationARNList = js.Array[FileSystemAssociationARN]
 
-type Folder = java.lang.String
+type FileSystemAssociationId = String
 
-type FolderList = js.Array[typings.awsSdk.storagegatewayMod.Folder]
+type FileSystemAssociationInfoList = js.Array[FileSystemAssociationInfo]
 
-type GatewayARN = java.lang.String
+type FileSystemAssociationStatus = String
 
-type GatewayId = java.lang.String
+type FileSystemAssociationStatusDetails = js.Array[FileSystemAssociationStatusDetail]
 
-type GatewayName = java.lang.String
+type FileSystemAssociationSummaryList = js.Array[FileSystemAssociationSummary]
 
-type GatewayNetworkInterfaces = js.Array[typings.awsSdk.storagegatewayMod.NetworkInterface]
+type FileSystemAssociationSyncErrorCode = String
 
-type GatewayOperationalState = java.lang.String
+type FileSystemLocationARN = String
 
-type GatewayState = java.lang.String
+type Folder = String
 
-type GatewayTimezone = java.lang.String
+type FolderList = js.Array[Folder]
 
-type GatewayType = java.lang.String
+type GatewayARN = String
 
-type Gateways = js.Array[typings.awsSdk.storagegatewayMod.GatewayInfo]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Small_
+  - typings.awsSdk.awsSdkStrings.Medium_
+  - typings.awsSdk.awsSdkStrings.Large_
+  - java.lang.String
+*/
+type GatewayCapacity = _GatewayCapacity | String
 
-type Host = java.lang.String
+type GatewayId = String
+
+type GatewayName = String
+
+type GatewayNetworkInterfaces = js.Array[NetworkInterface]
+
+type GatewayOperationalState = String
+
+type GatewayState = String
+
+type GatewayTimezone = String
+
+type GatewayType = String
+
+type Gateways = js.Array[GatewayInfo]
+
+type Host = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VMWARE
@@ -159,49 +183,56 @@ type Host = java.lang.String
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.KVM
   - typings.awsSdk.awsSdkStrings.OTHER
+  - typings.awsSdk.awsSdkStrings.SNOWBALL
   - java.lang.String
 */
-type HostEnvironment = typings.awsSdk.storagegatewayMod._HostEnvironment | java.lang.String
+type HostEnvironment = _HostEnvironment | String
 
-type Hosts = js.Array[typings.awsSdk.storagegatewayMod.Host]
+type HostEnvironmentId = String
 
-type HourOfDay = scala.Double
+type Hosts = js.Array[Host]
 
-type IPV4AddressCIDR = java.lang.String
+type HourOfDay = Double
 
-type Initiator = java.lang.String
+type IPV4Address = String
 
-type Initiators = js.Array[typings.awsSdk.storagegatewayMod.Initiator]
+type IPV4AddressCIDR = String
 
-type IqnName = java.lang.String
+type Initiator = String
 
-type KMSKey = java.lang.String
+type Initiators = js.Array[Initiator]
 
-type LastSoftwareUpdate = java.lang.String
+type IpAddressList = js.Array[IPV4Address]
 
-type LocalConsolePassword = java.lang.String
+type IqnName = String
 
-type LocationARN = java.lang.String
+type KMSKey = String
 
-type Marker = java.lang.String
+type LastSoftwareUpdate = String
 
-type MediumChangerType = java.lang.String
+type LocalConsolePassword = String
 
-type MinimumNumTapes = scala.Double
+type LocationARN = String
 
-type MinuteOfHour = scala.Double
+type Marker = String
 
-type NFSFileShareInfoList = js.Array[typings.awsSdk.storagegatewayMod.NFSFileShareInfo]
+type MediumChangerType = String
 
-type NetworkInterfaceId = java.lang.String
+type MinimumNumTapes = Double
 
-type NextUpdateAvailabilityDate = java.lang.String
+type MinuteOfHour = Double
 
-type NotificationId = java.lang.String
+type NFSFileShareInfoList = js.Array[NFSFileShareInfo]
 
-type NotificationPolicy = java.lang.String
+type NetworkInterfaceId = String
 
-type NumTapesToCreate = scala.Double
+type NextUpdateAvailabilityDate = String
+
+type NotificationId = String
+
+type NotificationPolicy = String
+
+type NumTapesToCreate = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.private__
@@ -213,42 +244,42 @@ type NumTapesToCreate = scala.Double
   - typings.awsSdk.awsSdkStrings.`aws-exec-read`
   - java.lang.String
 */
-type ObjectACL = typings.awsSdk.storagegatewayMod._ObjectACL | java.lang.String
+type ObjectACL = _ObjectACL | String
 
-type OrganizationalUnit = java.lang.String
+type OrganizationalUnit = String
 
-type Path = java.lang.String
+type Path = String
 
-type PermissionId = scala.Double
+type PermissionId = Double
 
-type PermissionMode = java.lang.String
+type PermissionMode = String
 
-type PoolARN = java.lang.String
+type PoolARN = String
 
-type PoolARNs = js.Array[typings.awsSdk.storagegatewayMod.PoolARN]
+type PoolARNs = js.Array[PoolARN]
 
-type PoolId = java.lang.String
+type PoolId = String
 
-type PoolInfos = js.Array[typings.awsSdk.storagegatewayMod.PoolInfo]
+type PoolInfos = js.Array[PoolInfo]
 
-type PoolName = java.lang.String
+type PoolName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type PoolStatus = typings.awsSdk.storagegatewayMod._PoolStatus | java.lang.String
+type PoolStatus = _PoolStatus | String
 
-type PositiveIntObject = scala.Double
+type PositiveIntObject = Double
 
-type RecurrenceInHours = scala.Double
+type RecurrenceInHours = Double
 
-type RegionId = java.lang.String
+type RegionId = String
 
-type ResourceARN = java.lang.String
+type ResourceARN = String
 
-type RetentionLockTimeInDays = scala.Double
+type RetentionLockTimeInDays = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLIANCE
@@ -256,13 +287,13 @@ type RetentionLockTimeInDays = scala.Double
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type RetentionLockType = typings.awsSdk.storagegatewayMod._RetentionLockType | java.lang.String
+type RetentionLockType = _RetentionLockType | String
 
-type Role = java.lang.String
+type Role = String
 
-type SMBFileShareInfoList = js.Array[typings.awsSdk.storagegatewayMod.SMBFileShareInfo]
+type SMBFileShareInfoList = js.Array[SMBFileShareInfo]
 
-type SMBGuestPassword = java.lang.String
+type SMBGuestPassword = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ClientSpecified
@@ -270,110 +301,116 @@ type SMBGuestPassword = java.lang.String
   - typings.awsSdk.awsSdkStrings.MandatoryEncryption
   - java.lang.String
 */
-type SMBSecurityStrategy = typings.awsSdk.storagegatewayMod._SMBSecurityStrategy | java.lang.String
+type SMBSecurityStrategy = _SMBSecurityStrategy | String
 
-type SnapshotDescription = java.lang.String
+type SnapshotDescription = String
 
-type SnapshotId = java.lang.String
+type SnapshotId = String
 
-type SoftwareUpdatesEndDate = java.lang.String
+type SoftwareUpdatesEndDate = String
 
-type Squash = java.lang.String
+type Squash = String
 
-type StorageClass = java.lang.String
+type StorageClass = String
 
-type StorediSCSIVolumes = js.Array[typings.awsSdk.storagegatewayMod.StorediSCSIVolume]
+type StorediSCSIVolumes = js.Array[StorediSCSIVolume]
 
-type TagKey = java.lang.String
+type SupportedGatewayCapacities = js.Array[GatewayCapacity]
 
-type TagKeys = js.Array[typings.awsSdk.storagegatewayMod.TagKey]
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagKeys = js.Array[TagKey]
 
-type Tags = js.Array[typings.awsSdk.storagegatewayMod.Tag]
+type TagValue = String
 
-type TapeARN = java.lang.String
+type Tags = js.Array[Tag]
 
-type TapeARNs = js.Array[typings.awsSdk.storagegatewayMod.TapeARN]
+type TapeARN = String
 
-type TapeArchiveStatus = java.lang.String
+type TapeARNs = js.Array[TapeARN]
 
-type TapeArchives = js.Array[typings.awsSdk.storagegatewayMod.TapeArchive]
+type TapeArchiveStatus = String
 
-type TapeBarcode = java.lang.String
+type TapeArchives = js.Array[TapeArchive]
 
-type TapeBarcodePrefix = java.lang.String
+type TapeBarcode = String
 
-type TapeDriveType = java.lang.String
+type TapeBarcodePrefix = String
 
-type TapeInfos = js.Array[typings.awsSdk.storagegatewayMod.TapeInfo]
+type TapeDriveType = String
 
-type TapeRecoveryPointInfos = js.Array[typings.awsSdk.storagegatewayMod.TapeRecoveryPointInfo]
+type TapeInfos = js.Array[TapeInfo]
 
-type TapeRecoveryPointStatus = java.lang.String
+type TapeRecoveryPointInfos = js.Array[TapeRecoveryPointInfo]
 
-type TapeSize = scala.Double
+type TapeRecoveryPointStatus = String
 
-type TapeStatus = java.lang.String
+type TapeSize = Double
+
+type TapeStatus = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
   - typings.awsSdk.awsSdkStrings.GLACIER
   - java.lang.String
 */
-type TapeStorageClass = typings.awsSdk.storagegatewayMod._TapeStorageClass | java.lang.String
+type TapeStorageClass = _TapeStorageClass | String
 
-type TapeUsage = scala.Double
+type TapeUsage = Double
 
-type Tapes = js.Array[typings.awsSdk.storagegatewayMod.Tape]
+type Tapes = js.Array[Tape]
 
-type TargetARN = java.lang.String
+type TargetARN = String
 
-type TargetName = java.lang.String
+type TargetName = String
 
-type Time = typings.std.Date
+type Time = js.Date
 
-type TimeoutInSeconds = scala.Double
+type TimeoutInSeconds = Double
 
-type VTLDeviceARN = java.lang.String
+type UserList = js.Array[UserListUser]
 
-type VTLDeviceARNs = js.Array[typings.awsSdk.storagegatewayMod.VTLDeviceARN]
+type UserListUser = String
 
-type VTLDeviceProductIdentifier = java.lang.String
+type VTLDeviceARN = String
 
-type VTLDeviceType = java.lang.String
+type VTLDeviceARNs = js.Array[VTLDeviceARN]
 
-type VTLDeviceVendor = java.lang.String
+type VTLDeviceProductIdentifier = String
 
-type VTLDevices = js.Array[typings.awsSdk.storagegatewayMod.VTLDevice]
+type VTLDeviceType = String
 
-type VolumeARN = java.lang.String
+type VTLDeviceVendor = String
 
-type VolumeARNs = js.Array[typings.awsSdk.storagegatewayMod.VolumeARN]
+type VTLDevices = js.Array[VTLDevice]
 
-type VolumeAttachmentStatus = java.lang.String
+type VolumeARN = String
 
-type VolumeId = java.lang.String
+type VolumeARNs = js.Array[VolumeARN]
 
-type VolumeInfos = js.Array[typings.awsSdk.storagegatewayMod.VolumeInfo]
+type VolumeAttachmentStatus = String
 
-type VolumeRecoveryPointInfos = js.Array[typings.awsSdk.storagegatewayMod.VolumeRecoveryPointInfo]
+type VolumeId = String
 
-type VolumeStatus = java.lang.String
+type VolumeInfos = js.Array[VolumeInfo]
 
-type VolumeType = java.lang.String
+type VolumeRecoveryPointInfos = js.Array[VolumeRecoveryPointInfo]
 
-type VolumeUsedInBytes = scala.Double
+type VolumeStatus = String
+
+type VolumeType = String
+
+type VolumeUsedInBytes = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2013-06-30`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.storagegatewayMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type double = scala.Double
+type double = Double
 
-type integer = scala.Double
+type integer = Double
 
-type long = scala.Double
+type long = Double

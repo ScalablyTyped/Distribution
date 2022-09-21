@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GESchemaObjectContainer")
 @js.native
-class GESchemaObjectContainer[T /* <: typings.googleEarth.google.earth.KmlObject */] ()
+open class GESchemaObjectContainer[T /* <: typings.googleEarth.google.earth.KmlObject */] ()
   extends StObject
      with typings.googleEarth.google.earth.GESchemaObjectContainer[T] {
   

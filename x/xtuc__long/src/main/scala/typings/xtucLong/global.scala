@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("Long")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.xtucLong.mod.^ {
       /**
         * Constructs a 64 bit two's-complement integer, given its low and high 32 bit values as signed integers. See the from* functions below for more convenient ways of constructing Longs.
@@ -170,6 +170,6 @@ object global {
       * Tests if the specified object is a Long.
       */
     /* static member */
-    inline def isLong(obj: js.Any): /* is @xtuc/long.@xtuc/long.Long */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLong")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @xtuc/long.@xtuc/long.Long */ Boolean]
+    inline def isLong(obj: Any): /* is @xtuc/long.@xtuc/long.Long */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLong")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @xtuc/long.@xtuc/long.Long */ Boolean]
   }
 }

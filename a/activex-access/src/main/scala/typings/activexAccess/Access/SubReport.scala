@@ -15,7 +15,7 @@ trait SubReport extends StObject {
   
   def IsMemberSafe(dispid: Double): Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Report: typings.activexAccess.Access.Report
 }
@@ -26,7 +26,7 @@ object SubReport {
     Application: Application,
     Form: Form,
     IsMemberSafe: Double => Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Report: Report
   ): SubReport = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Form = Form.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Parent = Parent.asInstanceOf[js.Any], Report = Report.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object SubReport {
     
     inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReport(value: Report): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
   }

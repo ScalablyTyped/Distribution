@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sparqljs", "Wildcard")
 @js.native
-class Wildcard () extends StObject {
+open class Wildcard () extends StObject {
   
   def equals(): Boolean = js.native
-  def equals(other: typings.rdfJs.mod.Term): Boolean = js.native
+  def equals(other: typings.rdfjsTypes.dataModelMod.Term): Boolean = js.native
   
   val termType: typings.sparqljs.sparqljsStrings.Wildcard = js.native
   

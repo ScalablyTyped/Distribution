@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackgroundLayer
   extends StObject
-     with LayerBase
-     with Layer {
+     with Layer
+     with AnyLayer {
   
-  var layout: js.UndefOr[BackgroundLayout] = js.undefined
+  @JSName("layout")
+  var layout_BackgroundLayer: js.UndefOr[BackgroundLayout] = js.undefined
   
-  var paint: js.UndefOr[BackgroundPaint] = js.undefined
+  @JSName("paint")
+  var paint_BackgroundLayer: js.UndefOr[BackgroundPaint] = js.undefined
   
-  var `type`: background
+  @JSName("type")
+  var type_BackgroundLayer: background
 }
 object BackgroundLayer {
   

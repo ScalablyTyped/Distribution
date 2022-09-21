@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ShapeNode")
 @js.native
-/* private */ class ShapeNode ()
+/* private */ open class ShapeNode ()
   extends StObject
      with typings.activexWord.Word.ShapeNode {
   
@@ -22,10 +22,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val EditingType: MsoEditingType = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override val Points: js.Any = js.native
+  override val Points: Any = js.native
   
   /* CompleteClass */
   override val SegmentType: MsoSegmentType = js.native

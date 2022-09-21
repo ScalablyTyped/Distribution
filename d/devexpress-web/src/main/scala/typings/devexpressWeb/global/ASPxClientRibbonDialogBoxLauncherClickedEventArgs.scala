@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRibbonDialogBoxLauncherClickedEventArgs")
 @js.native
-class ASPxClientRibbonDialogBoxLauncherClickedEventArgs protected ()
+open class ASPxClientRibbonDialogBoxLauncherClickedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRibbonDialogBoxLauncherClickedEventArgs {
   /**

@@ -23,7 +23,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("cli-table3", JSImport.Namespace)
   @js.native
-  class Class ()
+  open class Class ()
     extends StObject
        with GenericTable[HorizontalTableRow | VerticalTableRow | CrossTableRow] {
     def this(options: TableConstructorOptions) = this()
@@ -204,6 +204,8 @@ object mod extends Shortcut {
     var truncate: js.UndefOr[String] = js.undefined
     
     var wordWrap: js.UndefOr[Boolean] = js.undefined
+    
+    var wrapOnWordBoundary: js.UndefOr[Boolean] = js.undefined
   }
   object TableConstructorOptions {
     
@@ -222,31 +224,31 @@ object mod extends Shortcut {
       
       inline def setColAlignsUndefined: Self = StObject.set(x, "colAligns", js.undefined)
       
-      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value*))
       
       inline def setColWidths(value: js.Array[Double | Null]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
       inline def setColWidthsUndefined: Self = StObject.set(x, "colWidths", js.undefined)
       
-      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value*))
       
       inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
       inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def setRowAligns(value: js.Array[VerticalAlignment]): Self = StObject.set(x, "rowAligns", value.asInstanceOf[js.Any])
       
       inline def setRowAlignsUndefined: Self = StObject.set(x, "rowAligns", js.undefined)
       
-      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value :_*))
+      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value*))
       
       inline def setRowHeights(value: js.Array[Double | Null]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
       
       inline def setRowHeightsUndefined: Self = StObject.set(x, "rowHeights", js.undefined)
       
-      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
+      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value*))
       
       inline def setStyle(value: Partial[Border]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -259,6 +261,10 @@ object mod extends Shortcut {
       inline def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
       
       inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+      
+      inline def setWrapOnWordBoundary(value: Boolean): Self = StObject.set(x, "wrapOnWordBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setWrapOnWordBoundaryUndefined: Self = StObject.set(x, "wrapOnWordBoundary", js.undefined)
     }
   }
   
@@ -281,9 +287,10 @@ object mod extends Shortcut {
       rowHeights: js.Array[Double | Null],
       style: Border,
       truncate: String,
-      wordWrap: Boolean
+      wordWrap: Boolean,
+      wrapOnWordBoundary: Boolean
     ): TableInstanceOptions = {
-      val __obj = js.Dynamic.literal(chars = chars.asInstanceOf[js.Any], colAligns = colAligns.asInstanceOf[js.Any], colWidths = colWidths.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], rowAligns = rowAligns.asInstanceOf[js.Any], rowHeights = rowHeights.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(chars = chars.asInstanceOf[js.Any], colAligns = colAligns.asInstanceOf[js.Any], colWidths = colWidths.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], rowAligns = rowAligns.asInstanceOf[js.Any], rowHeights = rowHeights.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any], wrapOnWordBoundary = wrapOnWordBoundary.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableInstanceOptions]
     }
     
@@ -310,6 +317,8 @@ object mod extends Shortcut {
     var truncate: String
     
     var wordWrap: Boolean
+    
+    var wrapOnWordBoundary: Boolean
   }
   object TableOptions {
     
@@ -320,9 +329,10 @@ object mod extends Shortcut {
       rowAligns: js.Array[VerticalAlignment],
       rowHeights: js.Array[Double | Null],
       truncate: String,
-      wordWrap: Boolean
+      wordWrap: Boolean,
+      wrapOnWordBoundary: Boolean
     ): TableOptions = {
-      val __obj = js.Dynamic.literal(colAligns = colAligns.asInstanceOf[js.Any], colWidths = colWidths.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], rowAligns = rowAligns.asInstanceOf[js.Any], rowHeights = rowHeights.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colAligns = colAligns.asInstanceOf[js.Any], colWidths = colWidths.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], rowAligns = rowAligns.asInstanceOf[js.Any], rowHeights = rowHeights.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any], wrapOnWordBoundary = wrapOnWordBoundary.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableOptions]
     }
     
@@ -330,27 +340,29 @@ object mod extends Shortcut {
       
       inline def setColAligns(value: js.Array[HorizontalAlignment]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
       
-      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value*))
       
       inline def setColWidths(value: js.Array[Double | Null]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
-      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value*))
       
       inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def setRowAligns(value: js.Array[VerticalAlignment]): Self = StObject.set(x, "rowAligns", value.asInstanceOf[js.Any])
       
-      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value :_*))
+      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value*))
       
       inline def setRowHeights(value: js.Array[Double | Null]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
       
-      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
+      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value*))
       
       inline def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
       inline def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+      
+      inline def setWrapOnWordBoundary(value: Boolean): Self = StObject.set(x, "wrapOnWordBoundary", value.asInstanceOf[js.Any])
     }
   }
   

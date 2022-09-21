@@ -19,7 +19,7 @@ trait DescribeSpotPriceHistoryRequest extends StObject {
   /**
     * The date and time, up to the current date, from which to stop retrieving the price history data, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var EndTime: js.UndefOr[DateTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * One or more filters.    availability-zone - The Availability Zone for which prices should be returned.    instance-type - The type of instance (for example, m3.medium).    product-description - The product description for the Spot price (Linux/UNIX | Red Hat Enterprise Linux | SUSE Linux | Windows | Linux/UNIX (Amazon VPC) | Red Hat Enterprise Linux (Amazon VPC) | SUSE Linux (Amazon VPC) | Windows (Amazon VPC)).    spot-price - The Spot price. The value must match exactly (or use wildcards; greater than or less than comparison is not supported).    timestamp - The time stamp of the Spot price history, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). You can use wildcards (* and ?). Greater than or less than comparison is not supported.  
@@ -49,7 +49,7 @@ trait DescribeSpotPriceHistoryRequest extends StObject {
   /**
     * The date and time, up to the past 90 days, from which to start retrieving the price history data, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeSpotPriceHistoryRequest {
   
@@ -68,7 +68,7 @@ object DescribeSpotPriceHistoryRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -76,13 +76,13 @@ object DescribeSpotPriceHistoryRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setInstanceTypes(value: InstanceTypeList): Self = StObject.set(x, "InstanceTypes", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypesUndefined: Self = StObject.set(x, "InstanceTypes", js.undefined)
     
-    inline def setInstanceTypesVarargs(value: InstanceType*): Self = StObject.set(x, "InstanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: InstanceType*): Self = StObject.set(x, "InstanceTypes", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -96,9 +96,9 @@ object DescribeSpotPriceHistoryRequest {
     
     inline def setProductDescriptionsUndefined: Self = StObject.set(x, "ProductDescriptions", js.undefined)
     
-    inline def setProductDescriptionsVarargs(value: String*): Self = StObject.set(x, "ProductDescriptions", js.Array(value :_*))
+    inline def setProductDescriptionsVarargs(value: String*): Self = StObject.set(x, "ProductDescriptions", js.Array(value*))
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

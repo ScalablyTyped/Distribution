@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticFLOATS
 import typings.semanticUiReact.genericMod.SemanticTEXTALIGNMENTS
@@ -17,12 +17,12 @@ object gridColumnMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Grid/GridColumn", JSImport.Default)
   @js.native
-  val default: StatelessComponent[GridColumnProps] = js.native
+  val default: FC[GridColumnProps] = js.native
   
   trait GridColumnProps
     extends StObject
        with StrictGridColumnProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object GridColumnProps {
     
     inline def apply(): GridColumnProps = {
@@ -45,7 +45,7 @@ object gridColumnMod extends Shortcut {
   trait StrictGridColumnProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -71,13 +71,13 @@ object gridColumnMod extends Shortcut {
     /** A column can appear only for a specific device, or screen sizes. */
     var only: js.UndefOr[GridOnlyProp] = js.undefined
     
-    /** An can stretch its contents to take up the entire grid or row height. */
+    /** A column can stretch its contents to take up the entire grid or row height. */
     var stretched: js.UndefOr[Boolean] = js.undefined
     
     /** A column can specify a width for a tablet device. */
     var tablet: js.UndefOr[SemanticWIDTHS] = js.undefined
     
-    /** A row can specify its text alignment. */
+    /** A column can specify its text alignment. */
     var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.undefined
     
     /** A column can specify its vertical alignment to have all its columns vertically centered. */
@@ -98,7 +98,7 @@ object gridColumnMod extends Shortcut {
     
     extension [Self <: StrictGridColumnProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -162,8 +162,8 @@ object gridColumnMod extends Shortcut {
   
   trait _GridOnlyProp extends StObject
   
-  type _To = StatelessComponent[GridColumnProps]
+  type _To = FC[GridColumnProps]
   
   /* This means you don't have to write `default`, but can instead just say `gridColumnMod.foo` */
-  override def _to: StatelessComponent[GridColumnProps] = default
+  override def _to: FC[GridColumnProps] = default
 }

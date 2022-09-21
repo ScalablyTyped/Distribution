@@ -9,15 +9,15 @@ trait ILine
   extends StObject
      with IShape {
   
-  def getDashArray(): js.Any = js.native
+  def getDashArray(): Any = js.native
   
-  def getLineCap(): js.Any = js.native
+  def getLineCap(): Any = js.native
   
-  def getPoints(): js.Any = js.native
+  def getPoints(): Any = js.native
   
-  def setDashArray(dashArray: js.Any): js.Any = js.native
+  def setDashArray(dashArray: Any): Any = js.native
   
-  def setLineCap(lineCap: String): js.Any = js.native
+  def setLineCap(lineCap: String): Any = js.native
   
-  def setPoints(can: js.Array[js.Any]): js.Any = js.native
+  def setPoints(can: js.Array[Any]): Any = js.native
 }

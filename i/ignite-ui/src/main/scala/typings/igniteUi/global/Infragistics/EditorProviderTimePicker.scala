@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.EditorProviderTimePicker")
 @js.native
-class EditorProviderTimePicker ()
+open class EditorProviderTimePicker ()
   extends StObject
      with typings.igniteUi.Infragistics.EditorProviderTimePicker {
   

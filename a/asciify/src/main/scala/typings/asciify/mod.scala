@@ -1,6 +1,5 @@
 package typings.asciify
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,5 +14,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getFonts(callback: js.Function2[/* err */ Error, /* fonts */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFonts")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getFonts(callback: js.Function2[/* err */ js.Error, /* fonts */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFonts")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

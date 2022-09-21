@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NodeSummary extends StObject {
   
   /**
+    * The Amazon Resource Name (ARN) of the node. For more information about ARNs and their format, see Amazon Resource Names (ARNs) in the AWS General Reference.
+    */
+  var Arn: js.UndefOr[ArnString] = js.undefined
+  
+  /**
     * The Availability Zone in which the node exists.
     */
   var AvailabilityZone: js.UndefOr[AvailabilityZoneString] = js.undefined
@@ -14,7 +19,7 @@ trait NodeSummary extends StObject {
   /**
     * The date and time that the node was created.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique identifier of the node.
@@ -40,11 +45,15 @@ object NodeSummary {
   
   extension [Self <: NodeSummary](x: Self) {
     
+    inline def setArn(value: ArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    
     inline def setAvailabilityZone(value: AvailabilityZoneString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

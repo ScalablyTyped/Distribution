@@ -14,7 +14,7 @@ trait OMathFrac extends StObject {
   
   val Num: OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Type: WdOMathFracType
   
@@ -28,7 +28,7 @@ object OMathFrac {
     Creator: Double,
     Den: OMath,
     Num: OMath,
-    Parent: js.Any,
+    Parent: Any,
     Type: WdOMathFracType,
     WordDotOMathFrac_typekey: OMathFrac
   ): OMathFrac = {
@@ -47,7 +47,7 @@ object OMathFrac {
     
     inline def setNum(value: OMath): Self = StObject.set(x, "Num", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setType(value: WdOMathFracType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

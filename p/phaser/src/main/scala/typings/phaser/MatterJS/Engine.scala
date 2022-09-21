@@ -53,7 +53,7 @@ trait Engine extends StObject {
   /**
     * Collision pair set for this `Engine`.
     */
-  var pairs: js.Any
+  var pairs: Any
   
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.
@@ -99,7 +99,7 @@ object Engine {
     constraintIterations: Double,
     enableSleeping: Boolean,
     enabled: Boolean,
-    pairs: js.Any,
+    pairs: Any,
     positionIterations: Double,
     timing: IEngineTimingOptions,
     velocityIterations: Double,
@@ -119,7 +119,7 @@ object Engine {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    inline def setPairs(value: js.Any): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
+    inline def setPairs(value: Any): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
     inline def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,7 @@ trait Cascade extends StObject {
   
   var prefixCls: String
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
   
   var title: String
   
@@ -35,7 +35,7 @@ object Cascade {
     pickerPrefixCls: String,
     popupPrefixCls: String,
     prefixCls: String,
-    styles: StringDictionary[RegisteredStyle[js.Any]],
+    styles: StringDictionary[RegisteredStyle[Any]],
     title: String,
     triggerType: String
   ): Cascade = {
@@ -57,7 +57,7 @@ object Cascade {
     
     inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

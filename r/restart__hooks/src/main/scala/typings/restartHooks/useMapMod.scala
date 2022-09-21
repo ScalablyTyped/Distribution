@@ -1,6 +1,5 @@
 package typings.restartHooks
 
-import typings.std.Iterable
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,16 +34,16 @@ object useMapMod {
     * @param init initial Map entries
     */
   inline def default[K, V](): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ObservableMap[K, V]]
-  inline def default[K, V](init: Iterable[js.Tuple2[K, V]]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(init.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
+  inline def default[K, V](init: js.Iterable[js.Tuple2[K, V]]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(init.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
   
   @JSImport("@restart/hooks/cjs/useMap", "ObservableMap")
   @js.native
-  class ObservableMap[K, V] protected ()
+  open class ObservableMap[K, V] protected ()
     extends StObject
        with Map[K, V] {
     def this(listener: js.Function1[/* map */ ObservableMap[K, V], Unit]) = this()
-    def this(listener: js.Function1[/* map */ ObservableMap[K, V], Unit], init: Iterable[js.Tuple2[K, V]]) = this()
+    def this(listener: js.Function1[/* map */ ObservableMap[K, V], Unit], init: js.Iterable[js.Tuple2[K, V]]) = this()
     
-    /* private */ val listener: js.Any = js.native
+    /* private */ val listener: Any = js.native
   }
 }

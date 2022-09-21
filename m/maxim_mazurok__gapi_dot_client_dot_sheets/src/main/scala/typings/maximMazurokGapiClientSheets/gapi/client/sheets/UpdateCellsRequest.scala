@@ -42,7 +42,7 @@ object UpdateCellsRequest {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setStart(value: GridCoordinate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

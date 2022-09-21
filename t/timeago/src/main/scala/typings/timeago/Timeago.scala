@@ -1,6 +1,5 @@
 package typings.timeago
 
-import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -108,7 +107,7 @@ object Timeago {
       
       inline def setNumbers(value: js.Array[String]): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
-      inline def setNumbersVarargs(value: String*): Self = StObject.set(x, "numbers", js.Array(value :_*))
+      inline def setNumbersVarargs(value: String*): Self = StObject.set(x, "numbers", js.Array(value*))
       
       inline def setPrefixAgo(value: String): Self = StObject.set(x, "prefixAgo", value.asInstanceOf[js.Any])
       
@@ -195,17 +194,17 @@ object Timeago {
   trait TimeagoStatic extends StObject {
     
     def apply(timestamp: String): String = js.native
+    def apply(timestamp: js.Date): String = js.native
     def apply(timestamp: Double): String = js.native
-    def apply(timestamp: Date): String = js.native
     def apply(timestamp: Element): String = js.native
     
-    def datetime(elem: Element): Date = js.native
+    def datetime(elem: Element): js.Date = js.native
     
     def inWords(distanceMillis: Double): String = js.native
     
     def isTime(elem: Element): Boolean = js.native
     
-    def parse(timestamp: String): Date = js.native
+    def parse(timestamp: String): js.Date = js.native
     
     var settings: Settings = js.native
   }

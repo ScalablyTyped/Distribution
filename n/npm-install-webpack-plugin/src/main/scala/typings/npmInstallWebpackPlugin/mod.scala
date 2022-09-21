@@ -1,6 +1,6 @@
 package typings.npmInstallWebpackPlugin
 
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +10,10 @@ object mod {
   /**
     * Speed up development by automatically installing & saving dependencies with Webpack.
     */
-  @JSImport("npm-install-webpack-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("npm-install-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   

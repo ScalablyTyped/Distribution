@@ -15,12 +15,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def CreateSharedLink(
     SharedLinkCreationInfo: ISharedLinkInfo,
     successCallback: js.Function1[/* result */ ISharedLinkInfo, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateSharedLink(
     SharedLinkCreationInfo: ISharedLinkInfo,
     successCallback: js.Function1[/* result */ ISharedLinkInfo, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateSharedLink(
@@ -32,12 +32,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def CreateSharedLink(
     SharedLinkCreationInfo: ISharedLinkInfo,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateSharedLink(
     SharedLinkCreationInfo: ISharedLinkInfo,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateSharedLink(
@@ -52,12 +52,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def DeleteSharedLink(
     AccessKey: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DeleteSharedLink(
     AccessKey: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DeleteSharedLink(
@@ -69,12 +69,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def DeleteSharedLink(
     AccessKey: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DeleteSharedLink(
     AccessKey: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DeleteSharedLink(AccessKey: String, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -84,12 +84,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def GetSharedLink(
     AccessKey: String,
     successCallback: js.Function1[/* result */ ISharedLinkInfo, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSharedLink(
     AccessKey: String,
     successCallback: js.Function1[/* result */ ISharedLinkInfo, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSharedLink(
@@ -101,12 +101,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def GetSharedLink(
     AccessKey: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSharedLink(
     AccessKey: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSharedLink(AccessKey: String, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -116,12 +116,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def GetSharedLinks(
     CreatedByUser: Double,
     successCallback: js.Function1[/* result */ ISharedLinkInfos, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSharedLinks(
     CreatedByUser: Double,
     successCallback: js.Function1[/* result */ ISharedLinkInfos, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSharedLinks(
@@ -133,12 +133,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def GetSharedLinks(
     CreatedByUser: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSharedLinks(
     CreatedByUser: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSharedLinks(
@@ -153,12 +153,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def GetSharedLinksByObject(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ ISharedLinkInfos, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSharedLinksByObject(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ ISharedLinkInfos, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSharedLinksByObject(
@@ -170,12 +170,12 @@ trait IVaultSharedLinkOperationsAsync extends StObject {
   def GetSharedLinksByObject(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSharedLinksByObject(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSharedLinksByObject(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native

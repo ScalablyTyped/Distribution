@@ -53,7 +53,7 @@ trait PageSize extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** The view to be applied to the returned tables' fields. Only NAME_ONLY view (default) and REPLICATION_VIEW are supported. */
+  /** The view to be applied to the returned tables' fields. Only NAME_ONLY view (default), REPLICATION_VIEW and ENCRYPTION_VIEW are supported. */
   var view: js.UndefOr[String] = js.undefined
 }
 object PageSize {

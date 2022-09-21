@@ -8,9 +8,10 @@ trait EasingFunction
   extends StObject
      with IEasingFunction {
   
-  /* private */ var _easingMode: js.Any
+  /* private */ var _easingMode: Any
   
   /**
+    * @param gradient
     * @hidden
     */
   def easeInCore(gradient: Double): Double
@@ -30,7 +31,7 @@ trait EasingFunction
 object EasingFunction {
   
   inline def apply(
-    _easingMode: js.Any,
+    _easingMode: Any,
     ease: Double => Double,
     easeInCore: Double => Double,
     getEasingMode: () => Double,
@@ -48,6 +49,6 @@ object EasingFunction {
     
     inline def setSetEasingMode(value: Double => Unit): Self = StObject.set(x, "setEasingMode", js.Any.fromFunction1(value))
     
-    inline def set_easingMode(value: js.Any): Self = StObject.set(x, "_easingMode", value.asInstanceOf[js.Any])
+    inline def set_easingMode(value: Any): Self = StObject.set(x, "_easingMode", value.asInstanceOf[js.Any])
   }
 }

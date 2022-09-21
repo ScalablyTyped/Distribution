@@ -1,14 +1,13 @@
 package typings.gulpRevReplace
 
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  inline def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(options: Options): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("gulp-rev-replace", JSImport.Namespace)
   @js.native
@@ -18,7 +17,9 @@ object mod {
     
     var canonicalUris: js.UndefOr[Boolean] = js.undefined
     
-    var manifest: js.UndefOr[ReadWriteStream] = js.undefined
+    var manifest: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+      ] = js.undefined
     
     var modifyReved: js.UndefOr[js.Function] = js.undefined
     
@@ -41,7 +42,9 @@ object mod {
       
       inline def setCanonicalUrisUndefined: Self = StObject.set(x, "canonicalUris", js.undefined)
       
-      inline def setManifest(value: ReadWriteStream): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+      inline def setManifest(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+      ): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
       inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
       
@@ -61,7 +64,7 @@ object mod {
       
       inline def setReplaceInExtensionsUndefined: Self = StObject.set(x, "replaceInExtensions", js.undefined)
       
-      inline def setReplaceInExtensionsVarargs(value: String*): Self = StObject.set(x, "replaceInExtensions", js.Array(value :_*))
+      inline def setReplaceInExtensionsVarargs(value: String*): Self = StObject.set(x, "replaceInExtensions", js.Array(value*))
     }
   }
 }

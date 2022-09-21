@@ -5,9 +5,7 @@ import typings.lgtv2.lgtv2Strings.connect
 import typings.lgtv2.lgtv2Strings.connecting
 import typings.lgtv2.lgtv2Strings.error
 import typings.lgtv2.lgtv2Strings.prompt
-import typings.node.NodeJS.ErrnoException
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ object mod {
   
   @JSImport("lgtv2", JSImport.Namespace)
   @js.native
-  class ^ () extends LGTV {
+  open class ^ () extends LGTV {
     def this(config: Config) = this()
   }
   @JSImport("lgtv2", JSImport.Namespace)
@@ -37,7 +35,12 @@ object mod {
     var saveKey: js.UndefOr[
         js.Function2[
           /* key */ String, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[ErrnoException | Null], Unit], 
+          /* callback */ js.Function1[
+            /* error */ js.UndefOr[
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
+            ], 
+            Unit
+          ], 
           Unit
         ]
       ] = js.undefined
@@ -68,7 +71,12 @@ object mod {
       inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
       
       inline def setSaveKey(
-        value: (/* key */ String, /* callback */ js.Function1[/* error */ js.UndefOr[ErrnoException | Null], Unit]) => Unit
+        value: (/* key */ String, /* callback */ js.Function1[
+              /* error */ js.UndefOr[
+                (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null
+              ], 
+              Unit
+            ]) => Unit
       ): Self = StObject.set(x, "saveKey", js.Any.fromFunction2(value))
       
       inline def setSaveKeyUndefined: Self = StObject.set(x, "saveKey", js.undefined)
@@ -94,68 +102,65 @@ object mod {
     
     def getSocket(
       url: String,
-      callback: js.Function2[/* error */ Error | Null, /* socket */ SpecializedSocket, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* socket */ SpecializedSocket, Unit]
     ): Unit = js.native
     
+    def on(event: connect | prompt, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
     def on_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
     @JSName("on")
-    def on_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
     def on_connecting(event: connecting, listener: js.Function1[/* host */ String, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_prompt(event: prompt, listener: js.Function0[Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     
     /* private */ def register(): Unit = js.native
     
     def request(uri: String): Unit = js.native
-    def request(uri: String, callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]): Unit = js.native
-    def request(uri: String, payload: js.Any): Unit = js.native
+    def request(uri: String, callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]): Unit = js.native
+    def request(uri: String, payload: Any): Unit = js.native
     def request(
       uri: String,
-      payload: js.Any,
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+      payload: Any,
+      callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]
     ): Unit = js.native
     def request(
       uri: String,
       payload: Unit,
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]
     ): Unit = js.native
     
     /* private */ def send(`type`: String, uri: String): Unit = js.native
     /* private */ def send(
       `type`: String,
       uri: String,
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]
     ): Unit = js.native
-    /* private */ def send(`type`: String, uri: String, payload: js.Any): Unit = js.native
+    /* private */ def send(`type`: String, uri: String, payload: Any): Unit = js.native
     /* private */ def send(
       `type`: String,
       uri: String,
-      payload: js.Any,
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+      payload: Any,
+      callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]
     ): Unit = js.native
     /* private */ def send(
       `type`: String,
       uri: String,
       payload: Unit,
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]
     ): Unit = js.native
     
     def subscribe(uri: String): Unit = js.native
-    def subscribe(uri: String, callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]): Unit = js.native
-    def subscribe(uri: String, payload: js.Any): Unit = js.native
+    def subscribe(uri: String, callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]): Unit = js.native
+    def subscribe(uri: String, payload: Any): Unit = js.native
     def subscribe(
       uri: String,
-      payload: js.Any,
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+      payload: Any,
+      callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]
     ): Unit = js.native
     def subscribe(
       uri: String,
       payload: Unit,
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]
     ): Unit = js.native
   }
   
@@ -165,6 +170,6 @@ object mod {
     def close(): Unit = js.native
     
     def send(`type`: String): Unit = js.native
-    def send(`type`: String, payload: js.Any): Unit = js.native
+    def send(`type`: String, payload: Any): Unit = js.native
   }
 }

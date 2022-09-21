@@ -10,10 +10,10 @@ ES2015 (ES6) Number.isInteger polyfill
 | ------------------ | :-------------: |
 | Full name          | is-integer |
 | Keywords           | es2015, es6, Number, isInteger, polyfill |
-| # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 11969927 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1519198.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/parshap/js-is-integer#readme)

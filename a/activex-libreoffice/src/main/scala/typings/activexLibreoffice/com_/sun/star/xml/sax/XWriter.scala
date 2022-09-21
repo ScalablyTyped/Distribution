@@ -29,7 +29,7 @@ object XWriter {
     getOutputStream: () => XOutputStream,
     ignorableWhitespace: String => Unit,
     processingInstruction: (String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDocumentLocator: XLocator => Unit,
     setOutputStream: XOutputStream => Unit,

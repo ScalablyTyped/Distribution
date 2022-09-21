@@ -14,13 +14,13 @@ trait DataView extends StObject {
   
   def getColumnPattern(columnIndex: Double): String = js.native
   
-  def getColumnProperty(columnIndex: Double, name: String): js.Any = js.native
+  def getColumnProperty(columnIndex: Double, name: String): Any = js.native
   
   def getColumnRange(columnIndex: Double): Max = js.native
   
   def getColumnType(columnIndex: Double): String = js.native
   
-  def getDistinctValues(columnIndex: Double): js.Array[js.Any] = js.native
+  def getDistinctValues(columnIndex: Double): js.Array[Any] = js.native
   
   def getFilteredRows(filters: js.Array[DataTableCellFilter]): js.Array[Double] = js.native
   
@@ -32,9 +32,9 @@ trait DataView extends StObject {
   
   def getProperties(rowIndex: Double, columnIndex: Double): Properties = js.native
   
-  def getProperty(rowIndex: Double, columnIndex: Double, name: String): js.Any = js.native
+  def getProperty(rowIndex: Double, columnIndex: Double, name: String): Any = js.native
   
-  def getRowProperty(rowIndex: Double, name: String): js.Any = js.native
+  def getRowProperty(rowIndex: Double, name: String): Any = js.native
   
   def getSortedRows(sortColumn: Double): js.Array[Double] = js.native
   def getSortedRows(sortColumns: js.Array[Double | SortByColumn]): js.Array[Double] = js.native
@@ -42,11 +42,11 @@ trait DataView extends StObject {
   
   def getTableColumnIndex(viewColumnIndex: Double): Double = js.native
   
-  def getTableProperty(name: String): js.Any = js.native
+  def getTableProperty(name: String): Any = js.native
   
   def getTableRowIndex(viewRowIndex: Double): Double = js.native
   
-  def getValue(rowIndex: Double, columnIndex: Double): js.Any = js.native
+  def getValue(rowIndex: Double, columnIndex: Double): Any = js.native
   
   def getViewColumnIndex(tableColumnIndex: Double): Double = js.native
   
@@ -61,7 +61,7 @@ trait DataView extends StObject {
   def hideRows(min: Double, max: Double): Unit = js.native
   def hideRows(rowIndexes: js.Array[Double]): Unit = js.native
   
-  def setColumns(columnIndexes: js.Array[js.Any | ColumnSpec | Double]): Unit = js.native
+  def setColumns(columnIndexes: js.Array[Any | ColumnSpec | Double]): Unit = js.native
   
   def setRows(min: Double, max: Double): Unit = js.native
   def setRows(rowIndexes: js.Array[Double]): Unit = js.native

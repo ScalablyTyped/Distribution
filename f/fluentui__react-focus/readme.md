@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__react-focus
 
-Typings are for version 7.16.18
+Typings are for version 8.8.5
 
 ## Library description:
 Focus helpers to be used in React applications.
@@ -10,10 +10,10 @@ Focus helpers to be used in React applications.
 | ------------------ | :-------------: |
 | Full name          | @fluentui/react-focus |
 | Keywords           | - |
-| # releases         | 137 |
-| # dependents       | 9 |
-| # downloads        | 2370498 |
-| # stars            | 0 |
+| # releases         | 138 |
+| # dependents       | 0.0 |
+| # downloads        | 617778.3333333334 |
+| # stars            | 13904.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

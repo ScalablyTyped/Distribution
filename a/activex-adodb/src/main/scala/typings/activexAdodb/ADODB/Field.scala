@@ -11,22 +11,22 @@ trait Field extends StObject {
   
   val ActualSize: Double
   
-  def AppendChunk(Data: js.Any): Unit
+  def AppendChunk(Data: Any): Unit
   
   /** Sum of one or more of the values in the **FieldAttributeEnum** enum */
   var Attributes: FieldAttributeEnum
   
-  var DataFormat: js.Any
+  var DataFormat: Any
   
   var DefinedSize: Double
   
-  def GetChunk(Length: Double): js.Any
+  def GetChunk(Length: Double): Any
   
   val Name: String
   
   var NumericScale: Double
   
-  val OriginalValue: js.Any
+  val OriginalValue: Any
   
   var Precision: Double
   
@@ -39,29 +39,29 @@ trait Field extends StObject {
   
   var Type: DataTypeEnum
   
-  val UnderlyingValue: js.Any
+  val UnderlyingValue: Any
   
-  var Value: js.Any
+  var Value: Any
 }
 object Field {
   
   inline def apply(
     ADODBDotField_typekey: Field,
     ActualSize: Double,
-    AppendChunk: js.Any => Unit,
+    AppendChunk: Any => Unit,
     Attributes: FieldAttributeEnum,
-    DataFormat: js.Any,
+    DataFormat: Any,
     DefinedSize: Double,
-    GetChunk: Double => js.Any,
+    GetChunk: Double => Any,
     Name: String,
     NumericScale: Double,
-    OriginalValue: js.Any,
+    OriginalValue: Any,
     Precision: Double,
     Properties: Properties,
     Status: Double,
     Type: DataTypeEnum,
-    UnderlyingValue: js.Any,
-    Value: js.Any
+    UnderlyingValue: Any,
+    Value: Any
   ): Field = {
     val __obj = js.Dynamic.literal(ActualSize = ActualSize.asInstanceOf[js.Any], AppendChunk = js.Any.fromFunction1(AppendChunk), Attributes = Attributes.asInstanceOf[js.Any], DataFormat = DataFormat.asInstanceOf[js.Any], DefinedSize = DefinedSize.asInstanceOf[js.Any], GetChunk = js.Any.fromFunction1(GetChunk), Name = Name.asInstanceOf[js.Any], NumericScale = NumericScale.asInstanceOf[js.Any], OriginalValue = OriginalValue.asInstanceOf[js.Any], Precision = Precision.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UnderlyingValue = UnderlyingValue.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("ADODB.Field_typekey")(ADODBDotField_typekey.asInstanceOf[js.Any])
@@ -74,21 +74,21 @@ object Field {
     
     inline def setActualSize(value: Double): Self = StObject.set(x, "ActualSize", value.asInstanceOf[js.Any])
     
-    inline def setAppendChunk(value: js.Any => Unit): Self = StObject.set(x, "AppendChunk", js.Any.fromFunction1(value))
+    inline def setAppendChunk(value: Any => Unit): Self = StObject.set(x, "AppendChunk", js.Any.fromFunction1(value))
     
     inline def setAttributes(value: FieldAttributeEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    inline def setDataFormat(value: js.Any): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: Any): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
     inline def setDefinedSize(value: Double): Self = StObject.set(x, "DefinedSize", value.asInstanceOf[js.Any])
     
-    inline def setGetChunk(value: Double => js.Any): Self = StObject.set(x, "GetChunk", js.Any.fromFunction1(value))
+    inline def setGetChunk(value: Double => Any): Self = StObject.set(x, "GetChunk", js.Any.fromFunction1(value))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNumericScale(value: Double): Self = StObject.set(x, "NumericScale", value.asInstanceOf[js.Any])
     
-    inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "OriginalValue", value.asInstanceOf[js.Any])
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "OriginalValue", value.asInstanceOf[js.Any])
     
     inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
@@ -98,8 +98,8 @@ object Field {
     
     inline def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setUnderlyingValue(value: js.Any): Self = StObject.set(x, "UnderlyingValue", value.asInstanceOf[js.Any])
+    inline def setUnderlyingValue(value: Any): Self = StObject.set(x, "UnderlyingValue", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

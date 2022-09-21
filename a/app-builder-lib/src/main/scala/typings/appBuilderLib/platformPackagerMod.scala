@@ -1,5 +1,6 @@
 package typings.appBuilderLib
 
+import typings.appBuilderLib.anon.IsUserForced
 import typings.appBuilderLib.appInfoMod.AppInfo
 import typings.appBuilderLib.configurationMod.AfterPackContext
 import typings.appBuilderLib.configurationMod.Configuration
@@ -32,48 +33,246 @@ object platformPackagerMod {
   abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protected () extends StObject {
     /* protected */ def this(info: Packager, platform: Platform) = this()
     
-    /* private */ val _resourceList: js.Any = js.native
+    /* private */ val _resourceList: Any = js.native
     
     val appInfo: AppInfo = js.native
     
+    def artifactPatternConfig(): IsUserForced = js.native
+    def artifactPatternConfig(targetSpecificOptions: Null, defaultPattern: String): IsUserForced = js.native
+    def artifactPatternConfig(targetSpecificOptions: Unit, defaultPattern: String): IsUserForced = js.native
+    def artifactPatternConfig(targetSpecificOptions: TargetSpecificOptions): IsUserForced = js.native
+    def artifactPatternConfig(targetSpecificOptions: TargetSpecificOptions, defaultPattern: String): IsUserForced = js.native
+    
     def buildResourcesDir: String = js.native
     
-    /* private */ var checkFileInPackage: js.Any = js.native
+    /* private */ var checkFileInPackage: Any = js.native
     
     def compression: CompressionLevel = js.native
     
     /* protected */ def computeAppOutDir(outDir: String, arch: Arch): String = js.native
     
-    /* private */ var computeArtifactName: js.Any = js.native
+    /* private */ var computeArtifactName: Any = js.native
     
-    /* private */ var computeAsarOptions: js.Any = js.native
+    /* private */ var computeAsarOptions: Any = js.native
     
     def computeSafeArtifactName(suggestedName: String, ext: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipArchIfX64: Boolean): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipArchIfX64: Boolean): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipDefaultArch: Boolean): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipDefaultArch: Boolean, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Null,
+      skipDefaultArch: Boolean,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Null,
+      skipDefaultArch: Boolean,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipDefaultArch: Unit, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Null,
+      skipDefaultArch: Unit,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Null,
+      skipDefaultArch: Unit,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipDefaultArch: Boolean): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipDefaultArch: Boolean, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Unit,
+      skipDefaultArch: Boolean,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Unit,
+      skipDefaultArch: Boolean,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipDefaultArch: Unit, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Unit,
+      skipDefaultArch: Unit,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Unit,
+      skipDefaultArch: Unit,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
     def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipArchIfX64: Boolean): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipDefaultArch: Boolean): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipDefaultArch: Boolean, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Arch,
+      skipDefaultArch: Boolean,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Arch,
+      skipDefaultArch: Boolean,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipDefaultArch: Unit, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Arch,
+      skipDefaultArch: Unit,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: String,
+      ext: String,
+      arch: Arch,
+      skipDefaultArch: Unit,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
     def computeSafeArtifactName(suggestedName: Null, ext: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipArchIfX64: Boolean): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipArchIfX64: Boolean): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipDefaultArch: Boolean): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipDefaultArch: Boolean, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Null,
+      skipDefaultArch: Boolean,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Null,
+      skipDefaultArch: Boolean,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipDefaultArch: Unit, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Null,
+      skipDefaultArch: Unit,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Null,
+      skipDefaultArch: Unit,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipDefaultArch: Boolean): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipDefaultArch: Boolean, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Unit,
+      skipDefaultArch: Boolean,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Unit,
+      skipDefaultArch: Boolean,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipDefaultArch: Unit, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Unit,
+      skipDefaultArch: Unit,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Unit,
+      skipDefaultArch: Unit,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
     def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipArchIfX64: Boolean): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipDefaultArch: Boolean): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipDefaultArch: Boolean, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Arch,
+      skipDefaultArch: Boolean,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Arch,
+      skipDefaultArch: Boolean,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipDefaultArch: Unit, defaultArch: String): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Arch,
+      skipDefaultArch: Unit,
+      defaultArch: String,
+      safePattern: String
+    ): String | Null = js.native
+    def computeSafeArtifactName(
+      suggestedName: Null,
+      ext: String,
+      arch: Arch,
+      skipDefaultArch: Unit,
+      defaultArch: Unit,
+      safePattern: String
+    ): String | Null = js.native
     
     def config: Configuration = js.native
     
-    /* private */ var copyAppFiles: js.Any = js.native
+    /* private */ var copyAppFiles: Any = js.native
     
     def createGetFileMatchersOptions(outDir: String, arch: Arch, customBuildOptions: PlatformSpecificBuildOptions): GetFileMatchersOptions = js.native
     
@@ -107,6 +306,44 @@ object platformPackagerMod {
       platformSpecificBuildOptions: DC,
       targets: js.Array[Target]
     ): js.Promise[Unit] = js.native
+    /* protected */ def doPack(
+      outDir: String,
+      appOutDir: String,
+      platformName: ElectronPlatformName,
+      arch: Arch,
+      platformSpecificBuildOptions: DC,
+      targets: js.Array[Target],
+      sign: Boolean
+    ): js.Promise[Unit] = js.native
+    /* protected */ def doPack(
+      outDir: String,
+      appOutDir: String,
+      platformName: ElectronPlatformName,
+      arch: Arch,
+      platformSpecificBuildOptions: DC,
+      targets: js.Array[Target],
+      sign: Boolean,
+      disableAsarIntegrity: Boolean
+    ): js.Promise[Unit] = js.native
+    /* protected */ def doPack(
+      outDir: String,
+      appOutDir: String,
+      platformName: ElectronPlatformName,
+      arch: Arch,
+      platformSpecificBuildOptions: DC,
+      targets: js.Array[Target],
+      sign: Unit,
+      disableAsarIntegrity: Boolean
+    ): js.Promise[Unit] = js.native
+    
+    /* protected */ def doSignAfterPack(
+      outDir: String,
+      appOutDir: String,
+      platformName: ElectronPlatformName,
+      arch: Arch,
+      platformSpecificBuildOptions: DC,
+      targets: js.Array[Target]
+    ): js.Promise[Unit] = js.native
     
     def expandArtifactBeautyNamePattern(targetSpecificOptions: Null, ext: String): String = js.native
     def expandArtifactBeautyNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch): String = js.native
@@ -115,122 +352,25 @@ object platformPackagerMod {
     def expandArtifactBeautyNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String): String = js.native
     def expandArtifactBeautyNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch): String = js.native
     
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Null, defaultPattern: String): String = js.native
     def expandArtifactNamePattern(
-      targetSpecificOptions: Null,
+      targetSpecificOptions: js.UndefOr[TargetSpecificOptions | Null],
       ext: String,
-      arch: Null,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Null, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Unit, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: Null,
-      ext: String,
-      arch: Unit,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Unit, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: Null,
-      ext: String,
-      arch: Arch,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Null, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: Unit,
-      ext: String,
-      arch: Null,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Null, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Unit, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: Unit,
-      ext: String,
-      arch: Unit,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Unit, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Arch): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Arch, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: Unit,
-      ext: String,
-      arch: Arch,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Arch, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Null, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
-      ext: String,
-      arch: Null,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
-      ext: String,
-      arch: Null,
-      defaultPattern: Unit,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Unit, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
-      ext: String,
-      arch: Unit,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
-      ext: String,
-      arch: Unit,
-      defaultPattern: Unit,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
-      ext: String,
-      arch: Arch,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
-      ext: String,
-      arch: Arch,
-      defaultPattern: Unit,
-      skipArchIfX64: Boolean
+      arch: js.UndefOr[Arch | Null],
+      defaultPattern: js.UndefOr[String],
+      skipDefaultArch: js.UndefOr[Boolean],
+      defaultArch: js.UndefOr[String]
     ): String = js.native
     
     def expandMacro(pattern: String): String = js.native
     def expandMacro(pattern: String, arch: String): String = js.native
-    def expandMacro(pattern: String, arch: String, extra: js.Any): String = js.native
-    def expandMacro(pattern: String, arch: String, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
+    def expandMacro(pattern: String, arch: String, extra: Any): String = js.native
+    def expandMacro(pattern: String, arch: String, extra: Any, isProductNameSanitized: Boolean): String = js.native
     def expandMacro(pattern: String, arch: String, extra: Unit, isProductNameSanitized: Boolean): String = js.native
-    def expandMacro(pattern: String, arch: Null, extra: js.Any): String = js.native
-    def expandMacro(pattern: String, arch: Null, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
+    def expandMacro(pattern: String, arch: Null, extra: Any): String = js.native
+    def expandMacro(pattern: String, arch: Null, extra: Any, isProductNameSanitized: Boolean): String = js.native
     def expandMacro(pattern: String, arch: Null, extra: Unit, isProductNameSanitized: Boolean): String = js.native
-    def expandMacro(pattern: String, arch: Unit, extra: js.Any): String = js.native
-    def expandMacro(pattern: String, arch: Unit, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
+    def expandMacro(pattern: String, arch: Unit, extra: Any): String = js.native
+    def expandMacro(pattern: String, arch: Unit, extra: Any, isProductNameSanitized: Boolean): String = js.native
     def expandMacro(pattern: String, arch: Unit, extra: Unit, isProductNameSanitized: Boolean): String = js.native
     
     def fileAssociations: js.Array[FileAssociation] = js.native
@@ -255,7 +395,7 @@ object platformPackagerMod {
     
     def getElectronSrcDir(dist: String): String = js.native
     
-    /* private */ var getExtraFileMatchers: js.Any = js.native
+    /* private */ var getExtraFileMatchers: Any = js.native
     
     def getIconPath(): js.Promise[String | Null] = js.native
     
@@ -273,7 +413,7 @@ object platformPackagerMod {
     
     val info: Packager = js.native
     
-    def pack(outDir: String, arch: Arch, targets: js.Array[Target], taskManager: AsyncTaskManager): js.Promise[js.Any] = js.native
+    def pack(outDir: String, arch: Arch, targets: js.Array[Target], taskManager: AsyncTaskManager): js.Promise[Any] = js.native
     
     /* protected */ def packageInDistributableFormat(appOutDir: String, arch: Arch, targets: js.Array[Target], taskManager: AsyncTaskManager): Unit = js.native
     
@@ -291,9 +431,9 @@ object platformPackagerMod {
     
     def resourceList: js.Promise[js.Array[String]] = js.native
     
-    /* private */ var sanityCheckPackage: js.Any = js.native
+    /* private */ var sanityCheckPackage: Any = js.native
     
-    /* protected */ def signApp(packContext: AfterPackContext, isAsar: Boolean): js.Promise[js.Any] = js.native
+    /* protected */ def signApp(packContext: AfterPackContext, isAsar: Boolean): js.Promise[Any] = js.native
   }
   /* static members */
   object PlatformPackager {
@@ -304,13 +444,13 @@ object platformPackagerMod {
     
     @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager.buildAsyncTargets")
     @js.native
-    def buildAsyncTargets: js.Any = js.native
-    inline def buildAsyncTargets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildAsyncTargets")(x.asInstanceOf[js.Any])
+    def buildAsyncTargets: Any = js.native
+    inline def buildAsyncTargets_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildAsyncTargets")(x.asInstanceOf[js.Any])
     
     @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager.normalizePlatformSpecificBuildOptions")
     @js.native
-    def normalizePlatformSpecificBuildOptions: js.Any = js.native
-    inline def normalizePlatformSpecificBuildOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
+    def normalizePlatformSpecificBuildOptions: Any = js.native
+    inline def normalizePlatformSpecificBuildOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
   }
   
   inline def chooseNotNull(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")().asInstanceOf[js.UndefOr[String | Null]]
@@ -324,7 +464,7 @@ object platformPackagerMod {
   
   inline def isSafeGithubName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeGithubName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isSafeToUnpackElectronOnRemoteBuildServer(packager: PlatformPackager[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeToUnpackElectronOnRemoteBuildServer")(packager.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSafeToUnpackElectronOnRemoteBuildServer(packager: PlatformPackager[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeToUnpackElectronOnRemoteBuildServer")(packager.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def normalizeExt(ext: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExt")(ext.asInstanceOf[js.Any]).asInstanceOf[String]
   

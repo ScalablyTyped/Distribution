@@ -4,51 +4,98 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A legacy interface kept for backwards compatibility and contains properties that offer performance timing information for various events which occur during the loading and use of the current page. You get a PerformanceTiming object describing your page using the window.performance.timing property. */
+/**
+  * A legacy interface kept for backwards compatibility and contains properties that offer performance timing information for various events which occur during the loading and use of the current page. You get a PerformanceTiming object describing your page using the window.performance.timing property.
+  * @deprecated This interface is deprecated in the Navigation Timing Level 2 specification. Please use the PerformanceNavigationTiming interface instead.
+  */
 trait PerformanceTiming extends StObject {
   
+  /** @deprecated */
+  /* standard dom */
   val connectEnd: Double
   
+  /** @deprecated */
+  /* standard dom */
   val connectStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val domComplete: Double
   
+  /** @deprecated */
+  /* standard dom */
   val domContentLoadedEventEnd: Double
   
+  /** @deprecated */
+  /* standard dom */
   val domContentLoadedEventStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val domInteractive: Double
   
+  /** @deprecated */
+  /* standard dom */
   val domLoading: Double
   
+  /** @deprecated */
+  /* standard dom */
   val domainLookupEnd: Double
   
+  /** @deprecated */
+  /* standard dom */
   val domainLookupStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val fetchStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val loadEventEnd: Double
   
+  /** @deprecated */
+  /* standard dom */
   val loadEventStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val navigationStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val redirectEnd: Double
   
+  /** @deprecated */
+  /* standard dom */
   val redirectStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val requestStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val responseEnd: Double
   
+  /** @deprecated */
+  /* standard dom */
   val responseStart: Double
   
+  /** @deprecated */
+  /* standard dom */
   val secureConnectionStart: Double
   
-  def toJSON(): js.Any
+  /** @deprecated */
+  /* standard dom */
+  def toJSON(): Any
   
+  /** @deprecated */
+  /* standard dom */
   val unloadEventEnd: Double
   
+  /** @deprecated */
+  /* standard dom */
   val unloadEventStart: Double
 }
 object PerformanceTiming {
@@ -73,7 +120,7 @@ object PerformanceTiming {
     responseEnd: Double,
     responseStart: Double,
     secureConnectionStart: Double,
-    toJSON: () => js.Any,
+    toJSON: () => Any,
     unloadEventEnd: Double,
     unloadEventStart: Double
   ): PerformanceTiming = {
@@ -121,7 +168,7 @@ object PerformanceTiming {
     
     inline def setSecureConnectionStart(value: Double): Self = StObject.set(x, "secureConnectionStart", value.asInstanceOf[js.Any])
     
-    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     inline def setUnloadEventEnd(value: Double): Self = StObject.set(x, "unloadEventEnd", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.HeatMapLayer")
 @js.native
-class HeatMapLayer protected ()
+open class HeatMapLayer protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.HeatMapLayer {
   /**

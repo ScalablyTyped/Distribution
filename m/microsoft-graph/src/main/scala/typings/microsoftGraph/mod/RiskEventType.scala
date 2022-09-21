@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.mcasSuspiciousInboxManipulationRules
   - typings.microsoftGraph.microsoftGraphStrings.investigationsThreatIntelligenceSigninLinked
   - typings.microsoftGraph.microsoftGraphStrings.maliciousIPAddressValidCredentialsBlockedIP
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait RiskEventType extends StObject
 object RiskEventType {
@@ -50,7 +51,7 @@ object RiskEventType {
   
   inline def unfamiliarFeatures: typings.microsoftGraph.microsoftGraphStrings.unfamiliarFeatures = "unfamiliarFeatures".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unfamiliarFeatures]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
   
   inline def unlikelyTravel: typings.microsoftGraph.microsoftGraphStrings.unlikelyTravel = "unlikelyTravel".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unlikelyTravel]
 }

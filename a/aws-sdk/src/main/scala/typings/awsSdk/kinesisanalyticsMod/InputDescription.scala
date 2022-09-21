@@ -64,7 +64,7 @@ object InputDescription {
     
     inline def setInAppStreamNamesUndefined: Self = StObject.set(x, "InAppStreamNames", js.undefined)
     
-    inline def setInAppStreamNamesVarargs(value: InAppStreamName*): Self = StObject.set(x, "InAppStreamNames", js.Array(value :_*))
+    inline def setInAppStreamNamesVarargs(value: InAppStreamName*): Self = StObject.set(x, "InAppStreamNames", js.Array(value*))
     
     inline def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     

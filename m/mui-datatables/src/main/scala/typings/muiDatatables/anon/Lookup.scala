@@ -22,7 +22,7 @@ object Lookup {
     
     inline def setData(value: js.Array[DataIndex]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: DataIndex*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: DataIndex*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setLookup(value: NumberDictionary[Boolean]): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
   }

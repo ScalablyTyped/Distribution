@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSGlobal("WinJS.UI.TabContainer")
 @js.native
-class TabContainer protected ()
+open class TabContainer protected ()
   extends StObject
      with typings.winjs.WinJS.UI.TabContainer {
   //#region Constructors
@@ -21,7 +21,7 @@ class TabContainer protected ()
     * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
     **/
   def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
   
   //#endregion Methods
   //#region Properties

@@ -8,5 +8,5 @@ object getCommitInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetCommitInput", "GetCommitInput")
   @js.native
-  val GetCommitInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetCommitInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

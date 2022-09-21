@@ -54,7 +54,7 @@ trait ISchema extends StObject {
   
   val version: String
   
-  def writeAnnotation(annotationSink: js.Any): Boolean
+  def writeAnnotation(annotationSink: Any): Boolean
 }
 object ISchema {
   
@@ -75,7 +75,7 @@ object ISchema {
     types: ISchemaItemCollection,
     unhandledAttributes: IVBSAXAttributes,
     version: String,
-    writeAnnotation: js.Any => Boolean
+    writeAnnotation: Any => Boolean
   ): ISchema = {
     val __obj = js.Dynamic.literal(attributeGroups = attributeGroups.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], modelGroups = modelGroups.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespaceURI = namespaceURI.asInstanceOf[js.Any], notations = notations.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], schemaLocations = schemaLocations.asInstanceOf[js.Any], targetNamespace = targetNamespace.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], unhandledAttributes = unhandledAttributes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], writeAnnotation = js.Any.fromFunction1(writeAnnotation))
     __obj.updateDynamic("MSXML2.ISchema_typekey")(MSXML2DotISchema_typekey.asInstanceOf[js.Any])
@@ -116,6 +116,6 @@ object ISchema {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def setWriteAnnotation(value: js.Any => Boolean): Self = StObject.set(x, "writeAnnotation", js.Any.fromFunction1(value))
+    inline def setWriteAnnotation(value: Any => Boolean): Self = StObject.set(x, "writeAnnotation", js.Any.fromFunction1(value))
   }
 }

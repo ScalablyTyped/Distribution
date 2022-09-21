@@ -10,10 +10,10 @@ object hotelMod {
   
   @JSImport("material-ui/svg-icons/maps/hotel", JSImport.Default)
   @js.native
-  class default () extends MapsHotel
+  open class default () extends MapsHotel
   
   @JSImport("material-ui/svg-icons/maps/hotel", "MapsHotel")
   @js.native
-  class MapsHotel ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsHotel ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

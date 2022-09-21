@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CashDrawer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[CashDrawer, CashDrawerStatusUpdatedEventArgs]): Unit = js.native
   
@@ -56,7 +56,7 @@ trait CashDrawer extends StObject {
   @JSName("onstatusupdated")
   var onstatusupdated_Original: TypedEventHandler[CashDrawer, CashDrawerStatusUpdatedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[CashDrawer, CashDrawerStatusUpdatedEventArgs]): Unit = js.native
   

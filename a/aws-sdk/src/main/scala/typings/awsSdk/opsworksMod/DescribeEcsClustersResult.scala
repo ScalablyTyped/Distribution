@@ -29,7 +29,7 @@ object DescribeEcsClustersResult {
     
     inline def setEcsClustersUndefined: Self = StObject.set(x, "EcsClusters", js.undefined)
     
-    inline def setEcsClustersVarargs(value: EcsCluster*): Self = StObject.set(x, "EcsClusters", js.Array(value :_*))
+    inline def setEcsClustersVarargs(value: EcsCluster*): Self = StObject.set(x, "EcsClusters", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

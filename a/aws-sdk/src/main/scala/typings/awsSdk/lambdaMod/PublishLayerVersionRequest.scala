@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PublishLayerVersionRequest extends StObject {
   
   /**
+    * A list of compatible instruction set architectures.
+    */
+  var CompatibleArchitectures: js.UndefOr[typings.awsSdk.lambdaMod.CompatibleArchitectures] = js.undefined
+  
+  /**
     * A list of compatible function runtimes. Used for filtering with ListLayers and ListLayerVersions.
     */
   var CompatibleRuntimes: js.UndefOr[typings.awsSdk.lambdaMod.CompatibleRuntimes] = js.undefined
@@ -40,11 +45,17 @@ object PublishLayerVersionRequest {
   
   extension [Self <: PublishLayerVersionRequest](x: Self) {
     
+    inline def setCompatibleArchitectures(value: CompatibleArchitectures): Self = StObject.set(x, "CompatibleArchitectures", value.asInstanceOf[js.Any])
+    
+    inline def setCompatibleArchitecturesUndefined: Self = StObject.set(x, "CompatibleArchitectures", js.undefined)
+    
+    inline def setCompatibleArchitecturesVarargs(value: Architecture*): Self = StObject.set(x, "CompatibleArchitectures", js.Array(value*))
+    
     inline def setCompatibleRuntimes(value: CompatibleRuntimes): Self = StObject.set(x, "CompatibleRuntimes", value.asInstanceOf[js.Any])
     
     inline def setCompatibleRuntimesUndefined: Self = StObject.set(x, "CompatibleRuntimes", js.undefined)
     
-    inline def setCompatibleRuntimesVarargs(value: Runtime*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value :_*))
+    inline def setCompatibleRuntimesVarargs(value: Runtime*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value*))
     
     inline def setContent(value: LayerVersionContentInput): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

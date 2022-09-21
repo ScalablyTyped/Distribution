@@ -1,9 +1,5 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,24 +9,17 @@ trait ParamsResourceGroupsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Immutable ID of the G Suite account. In case of multi-domain, to fetch
-    * all groups for a customer, fill this field instead of domain.
+    * The unique ID for the customer's Google Workspace account. In case of a multi-domain account, to fetch all groups for a customer, fill in this field instead of `domain`. You can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users](/admin-sdk/directory/v1/reference/users) resource. Either the `customer` or the `domain` parameter must be provided.
     */
   var customer: js.UndefOr[String] = js.undefined
   
   /**
-    * Name of the domain. Fill this field to get groups from only this domain.
-    * To return all groups in a multi-domain fill customer field instead.
+    * The domain name. Use this field to get groups from only one domain. To return all domains for a customer account, use the `customer` query parameter instead.
     */
   var domain: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of results to return. Default is 200
+    * Maximum number of results to return. Max allowed value is 200.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
@@ -45,22 +34,17 @@ trait ParamsResourceGroupsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Query string search. Should be of the form "". Complete documentation is
-    * at
-    * https://developers.google.com/admin-sdk/directory/v1/guides/search-groups
+    * Query string search. Should be of the form "". Complete documentation is at https: //developers.google.com/admin-sdk/directory/v1/guides/search-groups
     */
   var query: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to return results in ascending or descending order. Only of use
-    * when orderBy is also used
+    * Whether to return results in ascending or descending order. Only of use when orderBy is also used
     */
   var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
-    * Email or immutable Id of the user if only those groups are to be listed,
-    * the given user is a member of. If Id, it should match with id of user
-    * object
+    * Email or immutable ID of the user if only those groups are to be listed, the given user is a member of. If it's an ID, it should match with the ID of the user object.
     */
   var userKey: js.UndefOr[String] = js.undefined
 }
@@ -72,10 +56,6 @@ object ParamsResourceGroupsList {
   }
   
   extension [Self <: ParamsResourceGroupsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,6 @@ package typings.angularLocalStorage
 
 import typings.angular.mod.IScope
 import typings.angular.mod.IServiceProvider
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object mod {
           /**
             * Remove all data for this app from cookie.
             */
-          def clearAll(): js.Any = js.native
+          def clearAll(): Any = js.native
           
           /**
             * Directly get a value from a cookie.
@@ -65,10 +64,10 @@ object mod {
             * Returns: deregistration function for this listener.
             */
           def bind(scope: IScope, property: String): js.Function0[Unit] = js.native
-          def bind(scope: IScope, property: String, value: js.Any): js.Function0[Unit] = js.native
-          def bind(scope: IScope, property: String, value: js.Any, key: String): js.Function0[Unit] = js.native
-          def bind(scope: IScope, property: String, value: js.Any, key: String, storageType: StorageType): js.Function0[Unit] = js.native
-          def bind(scope: IScope, property: String, value: js.Any, key: Unit, storageType: StorageType): js.Function0[Unit] = js.native
+          def bind(scope: IScope, property: String, value: Any): js.Function0[Unit] = js.native
+          def bind(scope: IScope, property: String, value: Any, key: String): js.Function0[Unit] = js.native
+          def bind(scope: IScope, property: String, value: Any, key: String, storageType: StorageType): js.Function0[Unit] = js.native
+          def bind(scope: IScope, property: String, value: Any, key: Unit, storageType: StorageType): js.Function0[Unit] = js.native
           def bind(scope: IScope, property: String, value: Unit, key: String): js.Function0[Unit] = js.native
           def bind(scope: IScope, property: String, value: Unit, key: String, storageType: StorageType): js.Function0[Unit] = js.native
           def bind(scope: IScope, property: String, value: Unit, key: Unit, storageType: StorageType): js.Function0[Unit] = js.native
@@ -84,9 +83,9 @@ object mod {
             * Note: Optionally takes a regular expression string and removes matching.
             */
           def clearAll(): Boolean = js.native
+          def clearAll(regularExpression: js.RegExp): Boolean = js.native
+          def clearAll(regularExpression: js.RegExp, storageType: StorageType): Boolean = js.native
           def clearAll(regularExpression: Unit, storageType: StorageType): Boolean = js.native
-          def clearAll(regularExpression: RegExp): Boolean = js.native
-          def clearAll(regularExpression: RegExp, storageType: StorageType): Boolean = js.native
           
           /**
             * Deal with browser's cookies directly.
@@ -103,8 +102,8 @@ object mod {
             * If local storage is not supported, use cookies instead.
             * Returns: value from local storage
             */
-          def get(key: String): js.Any = js.native
-          def get(key: String, storageType: StorageType): js.Any = js.native
+          def get(key: String): Any = js.native
+          def get(key: String, storageType: StorageType): Any = js.native
           
           /**
             * Returns: String
@@ -146,8 +145,8 @@ object mod {
             * Directly adds a value to local storage.
             * If local storage is not supported, use cookies instead.
             */
-          def set(key: String, value: js.Any): Boolean = js.native
-          def set(key: String, value: js.Any, storageType: StorageType): Boolean = js.native
+          def set(key: String, value: Any): Boolean = js.native
+          def set(key: String, value: Any, storageType: StorageType): Boolean = js.native
         }
         
         // tslint:disable-next-line interface-name
@@ -206,7 +205,7 @@ object mod {
         object ILocalStorageServiceProvider {
           
           inline def apply(
-            $get: js.Any,
+            $get: Any,
             setDefaultToCookie: Boolean => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider,
             setNotify: (Boolean, Boolean) => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider,
             setPrefix: String => typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider,

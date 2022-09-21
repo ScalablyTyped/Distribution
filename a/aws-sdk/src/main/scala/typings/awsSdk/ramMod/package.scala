@@ -7,36 +7,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type Boolean = scala.Boolean
 
-type DateTime = typings.std.Date
+type DateTime = js.Date
 
-type Integer = scala.Double
+type Integer = Double
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type PermissionArnList = js.Array[typings.awsSdk.ramMod.String]
+type PermissionArnList = js.Array[String]
 
 type Policy = java.lang.String
 
-type PolicyList = js.Array[typings.awsSdk.ramMod.Policy]
+type PolicyList = js.Array[Policy]
 
-type PrincipalArnOrIdList = js.Array[typings.awsSdk.ramMod.String]
+type PrincipalArnOrIdList = js.Array[String]
 
-type PrincipalList = js.Array[typings.awsSdk.ramMod.Principal]
+type PrincipalList = js.Array[Principal]
 
-type ResourceArnList = js.Array[typings.awsSdk.ramMod.String]
+type ResourceArnList = js.Array[String]
 
-type ResourceList = js.Array[typings.awsSdk.ramMod.Resource]
+type ResourceList = js.Array[Resource]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SELF
   - typings.awsSdk.awsSdkStrings.`OTHER-ACCOUNTS`
   - java.lang.String
 */
-type ResourceOwner = typings.awsSdk.ramMod._ResourceOwner | java.lang.String
+type ResourceOwner = _ResourceOwner | java.lang.String
 
-type ResourceShareArnList = js.Array[typings.awsSdk.ramMod.String]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REGIONAL
+  - typings.awsSdk.awsSdkStrings.GLOBAL
+  - java.lang.String
+*/
+type ResourceRegionScope = _ResourceRegionScope | java.lang.String
 
-type ResourceShareAssociationList = js.Array[typings.awsSdk.ramMod.ResourceShareAssociation]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.REGIONAL
+  - typings.awsSdk.awsSdkStrings.GLOBAL
+  - java.lang.String
+*/
+type ResourceRegionScopeFilter = _ResourceRegionScopeFilter | java.lang.String
+
+type ResourceShareArnList = js.Array[String]
+
+type ResourceShareAssociationList = js.Array[ResourceShareAssociation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASSOCIATING
@@ -46,14 +61,14 @@ type ResourceShareAssociationList = js.Array[typings.awsSdk.ramMod.ResourceShare
   - typings.awsSdk.awsSdkStrings.DISASSOCIATED
   - java.lang.String
 */
-type ResourceShareAssociationStatus = typings.awsSdk.ramMod._ResourceShareAssociationStatus | java.lang.String
+type ResourceShareAssociationStatus = _ResourceShareAssociationStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PRINCIPAL
   - typings.awsSdk.awsSdkStrings.RESOURCE
   - java.lang.String
 */
-type ResourceShareAssociationType = typings.awsSdk.ramMod._ResourceShareAssociationType | java.lang.String
+type ResourceShareAssociationType = _ResourceShareAssociationType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED_FROM_POLICY
@@ -61,11 +76,11 @@ type ResourceShareAssociationType = typings.awsSdk.ramMod._ResourceShareAssociat
   - typings.awsSdk.awsSdkStrings.STANDARD
   - java.lang.String
 */
-type ResourceShareFeatureSet = typings.awsSdk.ramMod._ResourceShareFeatureSet | java.lang.String
+type ResourceShareFeatureSet = _ResourceShareFeatureSet | java.lang.String
 
-type ResourceShareInvitationArnList = js.Array[typings.awsSdk.ramMod.String]
+type ResourceShareInvitationArnList = js.Array[String]
 
-type ResourceShareInvitationList = js.Array[typings.awsSdk.ramMod.ResourceShareInvitation]
+type ResourceShareInvitationList = js.Array[ResourceShareInvitation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -74,11 +89,11 @@ type ResourceShareInvitationList = js.Array[typings.awsSdk.ramMod.ResourceShareI
   - typings.awsSdk.awsSdkStrings.EXPIRED
   - java.lang.String
 */
-type ResourceShareInvitationStatus = typings.awsSdk.ramMod._ResourceShareInvitationStatus | java.lang.String
+type ResourceShareInvitationStatus = _ResourceShareInvitationStatus | java.lang.String
 
-type ResourceShareList = js.Array[typings.awsSdk.ramMod.ResourceShare]
+type ResourceShareList = js.Array[ResourceShare]
 
-type ResourceSharePermissionList = js.Array[typings.awsSdk.ramMod.ResourceSharePermissionSummary]
+type ResourceSharePermissionList = js.Array[ResourceSharePermissionSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -88,7 +103,7 @@ type ResourceSharePermissionList = js.Array[typings.awsSdk.ramMod.ResourceShareP
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type ResourceShareStatus = typings.awsSdk.ramMod._ResourceShareStatus | java.lang.String
+type ResourceShareStatus = _ResourceShareStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
@@ -98,27 +113,27 @@ type ResourceShareStatus = typings.awsSdk.ramMod._ResourceShareStatus | java.lan
   - typings.awsSdk.awsSdkStrings.PENDING
   - java.lang.String
 */
-type ResourceStatus = typings.awsSdk.ramMod._ResourceStatus | java.lang.String
+type ResourceStatus = _ResourceStatus | java.lang.String
 
-type ServiceNameAndResourceTypeList = js.Array[typings.awsSdk.ramMod.ServiceNameAndResourceType]
+type ServiceNameAndResourceTypeList = js.Array[ServiceNameAndResourceType]
 
 type String = java.lang.String
 
-type TagFilters = js.Array[typings.awsSdk.ramMod.TagFilter]
+type TagFilters = js.Array[TagFilter]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.ramMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.ramMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type TagValueList = js.Array[typings.awsSdk.ramMod.TagValue]
+type TagValueList = js.Array[TagValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-01-04`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.ramMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

@@ -41,11 +41,11 @@ object accessibilityFeatures {
     var levelOfControl: LevelOfControl
     
     /** The value of the setting. */
-    var value: js.Any
+    var value: Any
   }
   object AccessibilityFeaturesCallbackArg {
     
-    inline def apply(levelOfControl: LevelOfControl, value: js.Any): AccessibilityFeaturesCallbackArg = {
+    inline def apply(levelOfControl: LevelOfControl, value: Any): AccessibilityFeaturesCallbackArg = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessibilityFeaturesCallbackArg]
     }
@@ -58,7 +58,7 @@ object accessibilityFeatures {
       
       inline def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,11 +123,11 @@ object accessibilityFeatures {
       * The value of the setting.
       * Note that every setting has a specific value type, which is described together with the setting. An extension should not set a value of a different type.
       */
-    var value: js.Any
+    var value: Any
   }
   object AccessibilityFeaturesSetArg {
     
-    inline def apply(value: js.Any): AccessibilityFeaturesSetArg = {
+    inline def apply(value: Any): AccessibilityFeaturesSetArg = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessibilityFeaturesSetArg]
     }
@@ -138,7 +138,7 @@ object accessibilityFeatures {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

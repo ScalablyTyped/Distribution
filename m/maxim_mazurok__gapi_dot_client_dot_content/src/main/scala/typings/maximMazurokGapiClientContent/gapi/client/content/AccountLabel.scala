@@ -6,14 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccountLabel extends StObject {
   
-  /** Output only. Immutable. The ID of account this label belongs to. */
+  /** Immutable. The ID of account this label belongs to. */
   var accountId: js.UndefOr[String] = js.undefined
   
-  /** Description for this label. */
+  /** The description of this label. */
   var description: js.UndefOr[String] = js.undefined
   
-  /** Output only. Immutable. The ID of the label. */
+  /** Output only. The ID of the label. */
   var labelId: js.UndefOr[String] = js.undefined
+  
+  /** Output only. The type of this label. */
+  var labelType: js.UndefOr[String] = js.undefined
   
   /** The display name of this label. */
   var name: js.UndefOr[String] = js.undefined
@@ -38,6 +41,10 @@ object AccountLabel {
     inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
     
     inline def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
+    
+    inline def setLabelType(value: String): Self = StObject.set(x, "labelType", value.asInstanceOf[js.Any])
+    
+    inline def setLabelTypeUndefined: Self = StObject.set(x, "labelType", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

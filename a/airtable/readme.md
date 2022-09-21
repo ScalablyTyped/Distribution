@@ -1,7 +1,7 @@
 
 # Scala.js typings for airtable
 
-Typings are for version 0.8
+Typings are for version 0.11.4
 
 ## Library description:
 The official Airtable JavaScript library.
@@ -10,10 +10,10 @@ The official Airtable JavaScript library.
 | ------------------ | :-------------: |
 | Full name          | airtable |
 | Keywords           | airtable, productivity, database, spreadsheet |
-| # releases         | 11 |
-| # dependents       | 71 |
-| # downloads        | 2272412 |
-| # stars            | 6 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 426686.3333333333 |
+| # stars            | 1558.0 |
 
 ## Links
 - [Homepage](https://github.com/airtable/airtable.js)
@@ -24,7 +24,7 @@ The official Airtable JavaScript library.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

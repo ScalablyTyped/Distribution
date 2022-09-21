@@ -12,12 +12,17 @@ trait StartActivityStreamResponse extends StObject {
   var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates whether engine-native audit fields are included in the database activity stream.
+    */
+  var EngineNativeAuditFieldsIncluded: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * The name of the Amazon Kinesis data stream to be used for the database activity stream.
     */
   var KinesisStreamName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS KMS key identifier for encryption of messages in the database activity stream.
+    * The Amazon Web Services KMS key identifier for encryption of messages in the database activity stream.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -43,6 +48,10 @@ object StartActivityStreamResponse {
     inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
     inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "ApplyImmediately", js.undefined)
+    
+    inline def setEngineNativeAuditFieldsIncluded(value: BooleanOptional): Self = StObject.set(x, "EngineNativeAuditFieldsIncluded", value.asInstanceOf[js.Any])
+    
+    inline def setEngineNativeAuditFieldsIncludedUndefined: Self = StObject.set(x, "EngineNativeAuditFieldsIncluded", js.undefined)
     
     inline def setKinesisStreamName(value: String): Self = StObject.set(x, "KinesisStreamName", value.asInstanceOf[js.Any])
     

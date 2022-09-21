@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BatchChangeInventoryRequest")
 @js.native
-class BatchChangeInventoryRequest () extends StObject {
+open class BatchChangeInventoryRequest () extends StObject {
   
   /**
     * The set of physical counts and inventory adjustments to be made.

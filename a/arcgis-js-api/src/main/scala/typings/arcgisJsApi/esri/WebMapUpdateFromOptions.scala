@@ -44,6 +44,13 @@ trait WebMapUpdateFromOptions
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
   var viewpointExcluded: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When `true`, the webmap's [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#widgets) property will not be updated.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+    */
+  var widgetsExcluded: js.UndefOr[Boolean] = js.undefined
 }
 object WebMapUpdateFromOptions {
   
@@ -77,5 +84,9 @@ object WebMapUpdateFromOptions {
     inline def setViewpointExcluded(value: Boolean): Self = StObject.set(x, "viewpointExcluded", value.asInstanceOf[js.Any])
     
     inline def setViewpointExcludedUndefined: Self = StObject.set(x, "viewpointExcluded", js.undefined)
+    
+    inline def setWidgetsExcluded(value: Boolean): Self = StObject.set(x, "widgetsExcluded", value.asInstanceOf[js.Any])
+    
+    inline def setWidgetsExcludedUndefined: Self = StObject.set(x, "widgetsExcluded", js.undefined)
   }
 }

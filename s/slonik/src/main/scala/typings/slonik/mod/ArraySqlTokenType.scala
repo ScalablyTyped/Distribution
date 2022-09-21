@@ -34,6 +34,6 @@ object ArraySqlTokenType {
     
     inline def setValues(value: js.Array[ValueExpressionType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: ValueExpressionType*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ValueExpressionType*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

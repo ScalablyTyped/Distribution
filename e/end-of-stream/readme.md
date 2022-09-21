@@ -10,10 +10,10 @@ Call a callback when a readable/writable/duplex stream has completed or failed.
 | ------------------ | :-------------: |
 | Full name          | end-of-stream |
 | Keywords           | stream, streams, callback, finish, close, end, wait |
-| # releases         | 4 |
-| # dependents       | 472 |
-| # downloads        | 905631559 |
-| # stars            | 18 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.16365551E8 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/end-of-stream)

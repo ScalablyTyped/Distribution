@@ -10,31 +10,31 @@ trait WebXRAnchorSystem
   extends StObject
      with WebXRAbstractFeature {
   
-  /* private */ var _createAnchorAtTransformation: js.Any = js.native
+  /* private */ var _createAnchorAtTransformation: Any = js.native
   
   /**
     * avoiding using Array.find for global support.
     * @param xrAnchor the plane to find in the array
     */
-  /* private */ var _findIndexInAnchorArray: js.Any = js.native
+  /* private */ var _findIndexInAnchorArray: Any = js.native
   
-  /* private */ var _futureAnchors: js.Any = js.native
+  /* private */ var _futureAnchors: Any = js.native
   
-  /* private */ var _lastFrameDetected: js.Any = js.native
+  /* private */ var _lastFrameDetected: Any = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
-  /* private */ var _populateTmpTransformation: js.Any = js.native
+  /* private */ var _populateTmpTransformation: Any = js.native
   
-  /* private */ var _referenceSpaceForFrameAnchors: js.Any = js.native
+  /* private */ var _referenceSpaceForFrameAnchors: Any = js.native
   
-  /* private */ var _tmpQuaternion: js.Any = js.native
+  /* private */ var _tmpQuaternion: Any = js.native
   
-  /* private */ var _tmpVector: js.Any = js.native
+  /* private */ var _tmpVector: Any = js.native
   
-  /* private */ var _trackedAnchors: js.Any = js.native
+  /* private */ var _trackedAnchors: Any = js.native
   
-  /* private */ var _updateAnchorWithXRFrame: js.Any = js.native
+  /* private */ var _updateAnchorWithXRFrame: Any = js.native
   
   /**
     * Add a new anchor at a specific position and rotation

@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("nano-cache", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with NanoCache {
     def this(options: Options) = this()
@@ -118,7 +118,7 @@ object mod {
     
     var updated: Double
     
-    var value: js.Any
+    var value: Any
   }
   object Info {
     
@@ -133,7 +133,7 @@ object mod {
       limit: Double,
       ttl: Double,
       updated: Double,
-      value: js.Any
+      value: Any
     ): Info = {
       val __obj = js.Dynamic.literal(accessed = accessed.asInstanceOf[js.Any], bytes = bytes.asInstanceOf[js.Any], compressed = compressed.asInstanceOf[js.Any], cost = cost.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Info]
@@ -161,7 +161,7 @@ object mod {
       
       inline def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,18 +172,18 @@ object mod {
     
     def clearExpired(): Unit = js.native
     
-    def delete(key: js.Any): js.Any = js.native
+    def del(key: Any): Any = js.native
     
-    def get(key: js.Any): js.Any = js.native
+    def get(key: Any): Any = js.native
     
-    def info(key: js.Any): Info = js.native
+    def info(key: Any): Info = js.native
     
-    def isLimitReached(key: js.Any): Boolean = js.native
+    def isLimitReached(key: Any): Boolean = js.native
     
-    def isTTLExpired(key: js.Any): Boolean = js.native
+    def isTTLExpired(key: Any): Boolean = js.native
     
-    def set(key: js.Any, value: js.Any): Unit = js.native
-    def set(key: js.Any, value: js.Any, options: Options): Unit = js.native
+    def set(key: Any, value: Any): Unit = js.native
+    def set(key: Any, value: Any, options: Options): Unit = js.native
     
     def stats(): Stats = js.native
   }

@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "LocalConstructedValueBlock")
 @js.native
-class LocalConstructedValueBlock () extends LocalValueBlock {
-  def this(params: LocalBaseBlockParams) = this()
+trait LocalConstructedValueBlock
+  extends ValueBlock
+     with ILocalConstructedValueBlock {
   
-  var isIndefiniteForm: scala.Boolean = js.native
-  
-  var value: js.Array[LocalValueBlock] = js.native
+  @JSName("value")
+  var value_LocalConstructedValueBlock: js.Array[BaseBlock[ValueBlock, ValueBlockJson]] = js.native
 }

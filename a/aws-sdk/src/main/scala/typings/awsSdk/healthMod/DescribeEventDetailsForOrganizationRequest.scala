@@ -31,6 +31,6 @@ object DescribeEventDetailsForOrganizationRequest {
     
     inline def setOrganizationEventDetailFilters(value: OrganizationEventDetailFiltersList): Self = StObject.set(x, "organizationEventDetailFilters", value.asInstanceOf[js.Any])
     
-    inline def setOrganizationEventDetailFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEventDetailFilters", js.Array(value :_*))
+    inline def setOrganizationEventDetailFiltersVarargs(value: EventAccountFilter*): Self = StObject.set(x, "organizationEventDetailFilters", js.Array(value*))
   }
 }

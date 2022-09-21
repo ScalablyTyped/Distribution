@@ -22,7 +22,7 @@ trait GetPercentilesRequest extends StObject {
   var percents: js.UndefOr[PercentList] = js.undefined
   
   /**
-    * The query string.
+    * The search query string.
     */
   var queryString: QueryString
   
@@ -52,7 +52,7 @@ object GetPercentilesRequest {
     
     inline def setPercentsUndefined: Self = StObject.set(x, "percents", js.undefined)
     
-    inline def setPercentsVarargs(value: Percent*): Self = StObject.set(x, "percents", js.Array(value :_*))
+    inline def setPercentsVarargs(value: Percent*): Self = StObject.set(x, "percents", js.Array(value*))
     
     inline def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     

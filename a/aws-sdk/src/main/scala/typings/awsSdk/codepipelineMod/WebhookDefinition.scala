@@ -58,7 +58,7 @@ object WebhookDefinition {
     
     inline def setFilters(value: WebhookFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: WebhookFilterRule*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: WebhookFilterRule*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setName(value: WebhookName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

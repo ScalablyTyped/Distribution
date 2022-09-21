@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zipkin", "ExplicitContext")
 @js.native
-class ExplicitContext ()
+open class ExplicitContext ()
   extends StObject
      with Context[TraceId] {
   

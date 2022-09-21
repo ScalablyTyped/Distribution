@@ -23,9 +23,9 @@ trait FileCreationInformation
 object FileCreationInformation {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_content: () => Base64EncodedByteArray,
     get_overwrite: () => Boolean,
     get_typeId: () => String,

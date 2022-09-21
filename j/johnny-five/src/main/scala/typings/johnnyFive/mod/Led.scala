@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Led")
 @js.native
-class Led protected () extends StObject {
+open class Led protected () extends StObject {
   def this(option: Double) = this()
   def this(option: LedOption) = this()
   
@@ -41,7 +41,7 @@ object Led {
   
   @JSImport("johnny-five", "Led.Digits")
   @js.native
-  class Digits protected () extends StObject {
+  open class Digits protected () extends StObject {
     def this(option: DigitsOption) = this()
     
     def brightness(index: Double, value: Double): Unit = js.native
@@ -68,7 +68,7 @@ object Led {
   
   @JSImport("johnny-five", "Led.Matrix")
   @js.native
-  class Matrix protected () extends StObject {
+  open class Matrix protected () extends StObject {
     def this(option: MatrixIC2Option) = this()
     def this(option: MatrixOption) = this()
     
@@ -88,8 +88,8 @@ object Led {
     
     val isMatrix: Boolean = js.native
     
-    def led(index: Double, row: Double, col: Double, state: js.Any): Unit = js.native
-    def led(row: Double, col: Double, state: js.Any): Unit = js.native
+    def led(index: Double, row: Double, col: Double, state: Any): Unit = js.native
+    def led(row: Double, col: Double, state: Any): Unit = js.native
     
     def off(): Unit = js.native
     def off(index: Double): Unit = js.native
@@ -103,7 +103,7 @@ object Led {
   
   @JSImport("johnny-five", "Led.RGB")
   @js.native
-  class RGB protected () extends StObject {
+  open class RGB protected () extends StObject {
     def this(option: RGBOption) = this()
     
     var blue: Led = js.native
@@ -141,11 +141,11 @@ object Led {
     
     var devices: js.UndefOr[Double] = js.undefined
     
-    var pins: js.Any
+    var pins: Any
   }
   object DigitsOption {
     
-    inline def apply(pins: js.Any): DigitsOption = {
+    inline def apply(pins: Any): DigitsOption = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[DigitsOption]
     }
@@ -160,17 +160,17 @@ object Led {
       
       inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
       
-      inline def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     }
   }
   
   trait MatrixIC2Option extends StObject {
     
-    var addresses: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var addresses: js.UndefOr[js.Array[Any]] = js.undefined
     
     var controller: String
     
-    var dims: js.UndefOr[js.Any] = js.undefined
+    var dims: js.UndefOr[Any] = js.undefined
     
     var isBicolor: js.UndefOr[Boolean] = js.undefined
     
@@ -185,15 +185,15 @@ object Led {
     
     extension [Self <: MatrixIC2Option](x: Self) {
       
-      inline def setAddresses(value: js.Array[js.Any]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+      inline def setAddresses(value: js.Array[Any]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
       inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
       
-      inline def setAddressesVarargs(value: js.Any*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: Any*): Self = StObject.set(x, "addresses", js.Array(value*))
       
       inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      inline def setDims(value: js.Any): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
+      inline def setDims(value: Any): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
       
       inline def setDimsUndefined: Self = StObject.set(x, "dims", js.undefined)
       
@@ -211,11 +211,11 @@ object Led {
     
     var devices: js.UndefOr[Double] = js.undefined
     
-    var pins: js.Any
+    var pins: Any
   }
   object MatrixOption {
     
-    inline def apply(pins: js.Any): MatrixOption = {
+    inline def apply(pins: Any): MatrixOption = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatrixOption]
     }
@@ -226,7 +226,7 @@ object Led {
       
       inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
       
-      inline def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,7 +257,7 @@ object Led {
       
       inline def setPins(value: js.Array[Double]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      inline def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value :_*))
+      inline def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value*))
     }
   }
 }

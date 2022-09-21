@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutPermissionRequest extends StObject {
   
   /**
-    * The action that you are enabling the other account to perform. Currently, this must be events:PutEvents.
+    * The action that you are enabling the other account to perform.
     */
   var Action: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.Action] = js.undefined
   
   /**
-    * This parameter enables you to limit the permission to accounts that fulfill a certain condition, such as being a member of a certain AWS organization. For more information about AWS Organizations, see What Is AWS Organizations in the AWS Organizations User Guide. If you specify Condition with an AWS organization ID, and specify "*" as the value for Principal, you grant permission to all the accounts in the named organization. The Condition is a JSON string which must contain Type, Key, and Value fields.
+    * This parameter enables you to limit the permission to accounts that fulfill a certain condition, such as being a member of a certain Amazon Web Services organization. For more information about Amazon Web Services Organizations, see What Is Amazon Web Services Organizations in the Amazon Web Services Organizations User Guide. If you specify Condition with an Amazon Web Services organization ID, and specify "*" as the value for Principal, you grant permission to all the accounts in the named organization. The Condition is a JSON string which must contain Type, Key, and Value fields.
     */
   var Condition: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.Condition] = js.undefined
   
@@ -27,7 +27,7 @@ trait PutPermissionRequest extends StObject {
   var Policy: js.UndefOr[String] = js.undefined
   
   /**
-    * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify "*" to permit any account to put events to your default event bus. If you specify "*" without specifying Condition, avoid creating rules that may match undesirable events. To create more secure rules, make sure that the event pattern for each rule contains an account field with a specific account ID from which to receive events. Rules with an account field do not match any events sent from other accounts.
+    * The 12-digit Amazon Web Services account ID that you are permitting to put events to your default event bus. Specify "*" to permit any account to put events to your default event bus. If you specify "*" without specifying Condition, avoid creating rules that may match undesirable events. To create more secure rules, make sure that the event pattern for each rule contains an account field with a specific account ID from which to receive events. Rules with an account field do not match any events sent from other accounts.
     */
   var Principal: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.Principal] = js.undefined
   

@@ -14,7 +14,7 @@ object colorCorrectionPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/colorCorrectionPostProcess", "ColorCorrectionPostProcess")
   @js.native
-  class ColorCorrectionPostProcess protected () extends PostProcess {
+  open class ColorCorrectionPostProcess protected () extends PostProcess {
     def this(name: String, colorTableUrl: String, options: Double, camera: Camera) = this()
     def this(name: String, colorTableUrl: String, options: PostProcessOptions, camera: Camera) = this()
     def this(name: String, colorTableUrl: String, options: Double, camera: Camera, samplingMode: Double) = this()
@@ -130,7 +130,7 @@ object colorCorrectionPostProcessMod {
       reusable: Boolean
     ) = this()
     
-    /* private */ var _colorTableTexture: js.Any = js.native
+    /* private */ var _colorTableTexture: Any = js.native
     
     /**
       * Gets the color table url used to create the LUT texture
@@ -144,7 +144,13 @@ object colorCorrectionPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[ColorCorrectionPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[ColorCorrectionPostProcess]]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[ColorCorrectionPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[ColorCorrectionPostProcess]]
   }
 }

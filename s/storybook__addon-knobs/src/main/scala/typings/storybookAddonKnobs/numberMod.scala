@@ -12,7 +12,7 @@ object numberMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/types/Number", JSImport.Default)
   @js.native
-  class default () extends NumberType
+  open class default () extends NumberType
   /* static members */
   object default {
     
@@ -38,9 +38,9 @@ object numberMod {
   
   @js.native
   trait NumberType
-    extends Component[NumberTypeProps, js.Object, js.Any] {
+    extends Component[NumberTypeProps, js.Object, Any] {
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MNumberType(nextProps: NumberTypeProps): Boolean = js.native

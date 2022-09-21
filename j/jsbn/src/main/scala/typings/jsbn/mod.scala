@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("jsbn", "BigInteger")
   @js.native
-  class BigInteger protected () extends StObject {
+  open class BigInteger protected () extends StObject {
     def this(a: String) = this()
     def this(a: js.Array[Double]) = this()
     def this(a: BigInteger) = this()

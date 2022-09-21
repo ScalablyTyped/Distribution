@@ -8,5 +8,5 @@ object tagResourceInputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/TagResourceInput", "TagResourceInput")
   @js.native
-  val TagResourceInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val TagResourceInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -1,7 +1,6 @@
 package typings.rxLiteTime
 
 import typings.rxCore.Rx.IScheduler
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,8 +31,8 @@ object Rx {
     
     def skipUntilWithTime(duration: Double): Observable[T] = js.native
     def skipUntilWithTime(duration: Double, scheduler: IScheduler): Observable[T] = js.native
-    def skipUntilWithTime(startTime: Date): Observable[T] = js.native
-    def skipUntilWithTime(startTime: Date, scheduler: IScheduler): Observable[T] = js.native
+    def skipUntilWithTime(startTime: js.Date): Observable[T] = js.native
+    def skipUntilWithTime(startTime: js.Date, scheduler: IScheduler): Observable[T] = js.native
     
     def skipWithTime(duration: Double): Observable[T] = js.native
     def skipWithTime(duration: Double, scheduler: IScheduler): Observable[T] = js.native
@@ -48,8 +47,8 @@ object Rx {
     
     def takeUntilWithTime(duration: Double): Observable[T] = js.native
     def takeUntilWithTime(duration: Double, scheduler: IScheduler): Observable[T] = js.native
-    def takeUntilWithTime(endTime: Date): Observable[T] = js.native
-    def takeUntilWithTime(endTime: Date, scheduler: IScheduler): Observable[T] = js.native
+    def takeUntilWithTime(endTime: js.Date): Observable[T] = js.native
+    def takeUntilWithTime(endTime: js.Date, scheduler: IScheduler): Observable[T] = js.native
     
     def takeWithTime(duration: Double): Observable[T] = js.native
     def takeWithTime(duration: Double, scheduler: IScheduler): Observable[T] = js.native
@@ -88,14 +87,14 @@ object Rx {
       condition: js.Function1[/* state */ TState, Boolean],
       iterate: js.Function1[/* state */ TState, TState],
       resultSelector: js.Function1[/* state */ TState, TResult],
-      timeSelector: js.Function1[/* state */ TState, Date]
+      timeSelector: js.Function1[/* state */ TState, js.Date]
     ): Observable[TResult] = js.native
     def generateWithAbsoluteTime[TState, TResult](
       initialState: TState,
       condition: js.Function1[/* state */ TState, Boolean],
       iterate: js.Function1[/* state */ TState, TState],
       resultSelector: js.Function1[/* state */ TState, TResult],
-      timeSelector: js.Function1[/* state */ TState, Date],
+      timeSelector: js.Function1[/* state */ TState, js.Date],
       scheduler: IScheduler
     ): Observable[TResult] = js.native
     
@@ -115,9 +114,9 @@ object Rx {
       scheduler: IScheduler
     ): Observable[TResult] = js.native
     
-    def timer(dueTime: Date): Observable[Double] = js.native
-    def timer(dueTime: Date, period: Double): Observable[Double] = js.native
-    def timer(dueTime: Date, period: Double, scheduler: IScheduler): Observable[Double] = js.native
-    def timer(dueTime: Date, scheduler: IScheduler): Observable[Double] = js.native
+    def timer(dueTime: js.Date): Observable[Double] = js.native
+    def timer(dueTime: js.Date, period: Double): Observable[Double] = js.native
+    def timer(dueTime: js.Date, period: Double, scheduler: IScheduler): Observable[Double] = js.native
+    def timer(dueTime: js.Date, scheduler: IScheduler): Observable[Double] = js.native
   }
 }

@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.analyserMod.Analyser
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.soundMod.Sound
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,38 +12,39 @@ object soundTrackMod {
   
   @JSImport("babylonjs/Audio/soundTrack", "SoundTrack")
   @js.native
-  class SoundTrack protected () extends StObject {
-    /**
-      * Creates a new sound track.
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-sound-tracks
-      * @param scene Define the scene the sound track belongs to
-      * @param options
-      */
-    def this(scene: Scene) = this()
-    def this(scene: Scene, options: ISoundTrackOptions) = this()
+  /**
+    * Creates a new sound track.
+    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-sound-tracks
+    * @param scene Define the scene the sound track belongs to
+    * @param options
+    */
+  open class SoundTrack () extends StObject {
+    def this(scene: Nullable[Scene]) = this()
+    def this(scene: Unit, options: ISoundTrackOptions) = this()
+    def this(scene: Nullable[Scene], options: ISoundTrackOptions) = this()
     
-    /* private */ var _connectedAnalyser: js.Any = js.native
+    /* private */ var _connectedAnalyser: Any = js.native
     
-    /* private */ var _initializeSoundTrackAudioGraph: js.Any = js.native
+    /* private */ var _initializeSoundTrackAudioGraph: Any = js.native
     
-    /* private */ var _isInitialized: js.Any = js.native
+    /* private */ var _isInitialized: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _outputAudioNode: js.Any = js.native
+    /* private */ var _outputAudioNode: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /**
       * Adds a sound to this sound track
-      * @param sound define the cound to add
+      * @param sound define the sound to add
       * @ignoreNaming
       */
     def addSound(sound: Sound): Unit = js.native
     
     /**
       * Connect the sound track to an audio analyser allowing some amazing
-      * synchornization between the sounds/music and your visualization (VuMeter for instance).
+      * synchronization between the sounds/music and your visualization (VuMeter for instance).
       * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-the-analyser
       * @param analyser The analyser to connect to the engine
       */
@@ -60,7 +62,7 @@ object soundTrackMod {
     
     /**
       * Removes a sound to this sound track
-      * @param sound define the cound to remove
+      * @param sound define the sound to remove
       * @ignoreNaming
       */
     def removeSound(sound: Sound): Unit = js.native

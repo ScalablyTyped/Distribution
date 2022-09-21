@@ -43,7 +43,7 @@ object anon {
       
       inline def setErrors(value: js.Array[Domain]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: Domain*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Domain*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -160,7 +160,7 @@ object anon {
       
       inline def setAlt_idsUndefined: Self = StObject.set(x, "alt_ids", js.undefined)
       
-      inline def setAlt_idsVarargs(value: AlternativePlaceId*): Self = StObject.set(x, "alt_ids", js.Array(value :_*))
+      inline def setAlt_idsVarargs(value: AlternativePlaceId*): Self = StObject.set(x, "alt_ids", js.Array(value*))
       
       inline def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
       
@@ -190,7 +190,7 @@ object anon {
       
       inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
       
-      inline def setPhotosVarargs(value: PlacePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: PlacePhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
       
@@ -216,7 +216,7 @@ object anon {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: (PlaceType1 | PlaceType2)*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: (PlaceType1 | PlaceType2)*): Self = StObject.set(x, "types", js.Array(value*))
       
       inline def setVicinity(value: String): Self = StObject.set(x, "vicinity", value.asInstanceOf[js.Any])
       

@@ -2,7 +2,6 @@ package typings.limeJs
 
 import typings.limeJs.mod.Session
 import typings.limeJs.mod.Transport
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object global {
     
     @JSGlobal("Lime.Authentication")
     @js.native
-    class Authentication ()
+    open class Authentication ()
       extends typings.limeJs.mod.Authentication
     object Authentication {
       
@@ -48,14 +47,14 @@ object global {
     
     @JSGlobal("Lime.Channel")
     @js.native
-    class Channel protected ()
+    open class Channel protected ()
       extends typings.limeJs.mod.Channel {
       def this(transport: Transport, autoReplyPings: Boolean, autoNotifyReceipt: Boolean) = this()
     }
     
     @JSGlobal("Lime.ClientChannel")
     @js.native
-    class ClientChannel protected ()
+    open class ClientChannel protected ()
       extends typings.limeJs.mod.ClientChannel {
       def this(transport: Transport) = this()
       def this(transport: Transport, autoReplyPings: Boolean) = this()
@@ -65,7 +64,7 @@ object global {
     
     @JSGlobal("Lime.ClientChannelExtensions")
     @js.native
-    class ClientChannelExtensions ()
+    open class ClientChannelExtensions ()
       extends typings.limeJs.mod.ClientChannelExtensions
     object ClientChannelExtensions {
       
@@ -81,13 +80,13 @@ object global {
         identity: String,
         authentication: typings.limeJs.mod.Authentication,
         instance: String,
-        callback: js.Function2[/* error */ Error, /* session */ Session, js.Any]
+        callback: js.Function2[/* error */ js.Error, /* session */ Session, Any]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("establishSession")(clientChannel.asInstanceOf[js.Any], compression.asInstanceOf[js.Any], encryption.asInstanceOf[js.Any], identity.asInstanceOf[js.Any], authentication.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSGlobal("Lime.CommandMethod")
     @js.native
-    class CommandMethod ()
+    open class CommandMethod ()
       extends typings.limeJs.mod.CommandMethod
     object CommandMethod {
       
@@ -128,7 +127,7 @@ object global {
     
     @JSGlobal("Lime.CommandStatus")
     @js.native
-    class CommandStatus ()
+    open class CommandStatus ()
       extends typings.limeJs.mod.CommandStatus
     object CommandStatus {
       
@@ -151,17 +150,17 @@ object global {
     
     @JSGlobal("Lime.GuestAuthentication")
     @js.native
-    class GuestAuthentication ()
+    open class GuestAuthentication ()
       extends typings.limeJs.mod.GuestAuthentication
     
     @JSGlobal("Lime.KeyAuthentication")
     @js.native
-    class KeyAuthentication ()
+    open class KeyAuthentication ()
       extends typings.limeJs.mod.KeyAuthentication
     
     @JSGlobal("Lime.NotificationEvent")
     @js.native
-    class NotificationEvent ()
+    open class NotificationEvent ()
       extends typings.limeJs.mod.NotificationEvent
     object NotificationEvent {
       
@@ -208,12 +207,12 @@ object global {
     
     @JSGlobal("Lime.PlainAuthentication")
     @js.native
-    class PlainAuthentication ()
+    open class PlainAuthentication ()
       extends typings.limeJs.mod.PlainAuthentication
     
     @JSGlobal("Lime.SessionCompression")
     @js.native
-    class SessionCompression ()
+    open class SessionCompression ()
       extends typings.limeJs.mod.SessionCompression
     object SessionCompression {
       
@@ -236,7 +235,7 @@ object global {
     
     @JSGlobal("Lime.SessionEncryption")
     @js.native
-    class SessionEncryption ()
+    open class SessionEncryption ()
       extends typings.limeJs.mod.SessionEncryption
     object SessionEncryption {
       
@@ -259,7 +258,7 @@ object global {
     
     @JSGlobal("Lime.SessionState")
     @js.native
-    class SessionState ()
+    open class SessionState ()
       extends typings.limeJs.mod.SessionState
     object SessionState {
       
@@ -311,12 +310,12 @@ object global {
     
     @JSGlobal("Lime.TransportAuthentication")
     @js.native
-    class TransportAuthentication ()
+    open class TransportAuthentication ()
       extends typings.limeJs.mod.TransportAuthentication
     
     @JSGlobal("Lime.WebSocketTransport")
     @js.native
-    class WebSocketTransport ()
+    open class WebSocketTransport ()
       extends typings.limeJs.mod.WebSocketTransport {
       def this(traceEnabled: Boolean) = this()
     }

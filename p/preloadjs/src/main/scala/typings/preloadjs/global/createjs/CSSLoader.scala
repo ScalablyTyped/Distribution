@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.CSSLoader")
 @js.native
-class CSSLoader protected ()
+open class CSSLoader protected ()
   extends StObject
      with typings.preloadjs.createjs.CSSLoader {
   def this(loadItem: js.Object, preferXHR: Boolean) = this()

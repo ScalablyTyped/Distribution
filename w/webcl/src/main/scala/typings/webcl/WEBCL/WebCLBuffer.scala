@@ -15,7 +15,7 @@ object WebCLBuffer {
   
   inline def apply(
     createSubBuffer: (MemFlagsBits, Double, Double) => WebCLBuffer,
-    getInfo: MemInfo => js.Any,
+    getInfo: MemInfo => Any,
     release: () => Unit
   ): WebCLBuffer = {
     val __obj = js.Dynamic.literal(createSubBuffer = js.Any.fromFunction3(createSubBuffer), getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))

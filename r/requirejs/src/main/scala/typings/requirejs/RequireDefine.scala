@@ -12,7 +12,7 @@ trait RequireDefine extends StObject {
     * Define Simple Name/Value Pairs
     * @param config Dictionary of Named/Value pairs for the config.
     **/
-  def apply(config: StringDictionary[js.Any]): Unit = js.native
+  def apply(config: StringDictionary[Any]): Unit = js.native
   /**
     * Define function with dependencies.
     * @param deps List of dependencies module IDs.
@@ -25,7 +25,7 @@ trait RequireDefine extends StObject {
     * Define function.
     * @param func: The function module.
     **/
-  def apply(func: js.Function0[js.Any]): Unit = js.native
+  def apply(func: js.Function0[Any]): Unit = js.native
   /**
     * Define a module with a name and dependencies.
     * @param name The name of the module.
@@ -53,9 +53,9 @@ trait RequireDefine extends StObject {
   def apply(
     ready: js.Function3[
       /* require */ Require, 
-      /* exports */ StringDictionary[js.Any], 
+      /* exports */ StringDictionary[Any], 
       /* module */ RequireModule, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   

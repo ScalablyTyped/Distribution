@@ -1,7 +1,7 @@
 package typings.nodeTlv
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeTlv.anon.Clazz
 import typings.nodeTlv.nodeTlvNumbers.`0`
 import typings.nodeTlv.nodeTlvNumbers.`1`
@@ -23,7 +23,7 @@ object mod {
   
   @JSImport("node-tlv", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with TLV {
     // @param value Source code docs say "string" only but can support a "Buffer" as well
@@ -67,7 +67,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("node-tlv", "DOL")
   @js.native
-  class DOLCls protected ()
+  open class DOLCls protected ()
     extends StObject
        with DOLConstructed {
     def this(dolData: String) = this()
@@ -78,7 +78,7 @@ object mod {
     override def count(): Double = js.native
     
     /* CompleteClass */
-    override def find(args: js.Any*): TL = js.native
+    override def find(args: Any*): TL = js.native
     
     /* CompleteClass */
     override def getDolRelatedDataLength(): Double = js.native
@@ -93,7 +93,7 @@ object mod {
     override def print(): Unit = js.native
     
     /* CompleteClass */
-    override def setValue(args: js.Any*): js.Array[TLV] = js.native
+    override def setValue(args: Any*): js.Array[TLV] = js.native
   }
   
   inline def DOL_=(x: DOL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOL")(x.asInstanceOf[js.Any])
@@ -300,12 +300,9 @@ object mod {
       * Return the value of the value field of the TLV.
       */
     def getValue(): String = js.native
-    @JSName("getValue")
-    def getValue_ascii(encoding: ascii): String = js.native
+    def getValue(encoding: hex | ascii): String = js.native
     @JSName("getValue")
     def getValue_buffer(encoding: buffer): Buffer = js.native
-    @JSName("getValue")
-    def getValue_hex(encoding: hex): String = js.native
     
     var info: Clazz = js.native
     
@@ -434,7 +431,7 @@ object mod {
     
     def count(): Double
     
-    def find(args: js.Any*): TL
+    def find(args: Any*): TL
     
     def getDolRelatedDataLength(): Double
     
@@ -444,18 +441,18 @@ object mod {
     
     def print(): Unit
     
-    def setValue(args: js.Any*): js.Array[TLV]
+    def setValue(args: Any*): js.Array[TLV]
   }
   object DOLConstructed {
     
     inline def apply(
       count: () => Double,
-      find: /* repeated */ js.Any => TL,
+      find: /* repeated */ Any => TL,
       getDolRelatedDataLength: () => Double,
       getList: () => js.Array[TL],
       list: js.Array[TL],
       print: () => Unit,
-      setValue: /* repeated */ js.Any => js.Array[TLV]
+      setValue: /* repeated */ Any => js.Array[TLV]
     ): DOLConstructed = {
       val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), find = js.Any.fromFunction1(find), getDolRelatedDataLength = js.Any.fromFunction0(getDolRelatedDataLength), getList = js.Any.fromFunction0(getList), list = list.asInstanceOf[js.Any], print = js.Any.fromFunction0(print), setValue = js.Any.fromFunction1(setValue))
       __obj.asInstanceOf[DOLConstructed]
@@ -465,7 +462,7 @@ object mod {
       
       inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      inline def setFind(value: /* repeated */ js.Any => TL): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: /* repeated */ Any => TL): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
       inline def setGetDolRelatedDataLength(value: () => Double): Self = StObject.set(x, "getDolRelatedDataLength", js.Any.fromFunction0(value))
       
@@ -473,11 +470,11 @@ object mod {
       
       inline def setList(value: js.Array[TL]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      inline def setListVarargs(value: TL*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: TL*): Self = StObject.set(x, "list", js.Array(value*))
       
       inline def setPrint(value: () => Unit): Self = StObject.set(x, "print", js.Any.fromFunction0(value))
       
-      inline def setSetValue(value: /* repeated */ js.Any => js.Array[TLV]): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: /* repeated */ Any => js.Array[TLV]): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
 }

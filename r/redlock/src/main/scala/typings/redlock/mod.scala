@@ -15,7 +15,7 @@ object mod {
     */
   @JSImport("redlock", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Redlock {
+  open class ^ protected () extends Redlock {
     /**
       * A redlock object is instantiated with an array of at least one redis client and an optional
       * `options` object. Properties of the Redlock object should NOT be changed after it is first
@@ -35,7 +35,7 @@ object mod {
     */
   @JSImport("redlock", "Lock")
   @js.native
-  class Lock protected () extends StObject {
+  open class Lock protected () extends StObject {
     def this(redlock: Redlock, resource: String, value: String, expiration: Double, attempts: Double) = this()
     def this(redlock: Redlock, resource: String, value: Null, expiration: Double, attempts: Double) = this()
     
@@ -61,29 +61,31 @@ object mod {
     */
   @JSImport("redlock", "LockError")
   @js.native
-  class LockError ()
+  open class LockError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
     var attempts: Double = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
     val name_LockError: typings.redlock.redlockStrings.LockError = js.native
   }
   
-  type Callback[T] = js.Function2[/* err */ js.Any, /* value */ js.UndefOr[T], Unit]
+  type Callback[T] = js.Function2[/* err */ Any, /* value */ js.UndefOr[T], Unit]
   
   @js.native
   trait CompatibleRedisClient extends StObject {
     
-    def eval(args: js.Array[EvalArg]): js.Any = js.native
-    def eval(args: js.Array[EvalArg], callback: js.Function2[/* err */ Error | Null, /* res */ js.Any, Unit]): js.Any = js.native
+    def eval(args: js.Array[EvalArg]): Any = js.native
+    def eval(args: js.Array[EvalArg], callback: js.Function2[/* err */ js.Error | Null, /* res */ Any, Unit]): Any = js.native
   }
   
   type EvalArg = String | Double
@@ -219,12 +221,12 @@ object mod {
     /**
       * Attach a reference to Lock, which allows the application to use instanceof to ensure type.
       */
-    var Lock: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Redlock.Lock */ js.Any = js.native
+    var Lock: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Redlock.Lock */ Any = js.native
     
     /**
       * Attach a reference to LockError, which allows the application to use instanceof to ensure type.
       */
-    var LockError: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Redlock.LockError */ js.Any = js.native
+    var LockError: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Redlock.LockError */ Any = js.native
     
     /**
       * This method locks a resource using the redlock algorithm.
@@ -256,7 +258,7 @@ object mod {
       * Alias for `on(event, listener)` function.
       */
     @JSName("addListener")
-    def addListener_clientError(event: clientError, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def addListener_clientError(event: clientError, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /**
       * This method locks a resource using the redlock algorithm,
@@ -319,14 +321,14 @@ object mod {
       * Your callback is invoked every time this event is emitted.
       */
     @JSName("on")
-    def on_clientError(event: clientError, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def on_clientError(event: clientError, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /**
       * Subscribe to `clientError` events.
       * Your callback is invoked only once for this event.
       */
     @JSName("once")
-    def once_clientError(event: clientError, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def once_clientError(event: clientError, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /**
       * This method runs `.quit()` on all client connections.
@@ -350,7 +352,7 @@ object mod {
       * Unsubscribe from the `clientError` event.
       */
     @JSName("removeListener")
-    def removeListener_clientError(event: clientError, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def removeListener_clientError(event: clientError, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     var retryCount: Double = js.native
     

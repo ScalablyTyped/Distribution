@@ -4,8 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.loaderUtils.loaderUtilsBooleans.`false`
 import typings.loaderUtils.loaderUtilsBooleans.`true`
-import typings.node.Buffer
-import typings.std.RegExp
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,27 +16,27 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def getCurrentRequest(
-    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ js.Any
+    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ Any
   ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentRequest")(loaderContext.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getHashDigest(buffer: Buffer, hashType: HashType, digestType: DigestType, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHashDigest")(buffer.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], digestType.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getOptions(
-    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ js.Any
+    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ Any
   ): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")(loaderContext.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   inline def getRemainingRequest(
-    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ js.Any
+    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ Any
   ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRemainingRequest")(loaderContext.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def interpolateName(
-    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ js.Any,
+    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ Any,
     name: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateName")(loaderContext.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def interpolateName(
-    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ js.Any,
+    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ Any,
     name: String,
-    options: js.Any
+    options: Any
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateName")(loaderContext.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def isUrlRequest(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRequest")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -48,7 +47,7 @@ object mod {
   inline def parseString(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def stringifyRequest(
-    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ js.Any,
+    loaderContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.LoaderContext */ Any,
     resource: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyRequest")(loaderContext.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -115,7 +114,7 @@ object mod {
     
     var context: js.UndefOr[String] = js.undefined
     
-    var regExp: js.UndefOr[String | RegExp] = js.undefined
+    var regExp: js.UndefOr[String | js.RegExp] = js.undefined
   }
   object InterpolateOption {
     
@@ -134,7 +133,7 @@ object mod {
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setRegExp(value: String | RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+      inline def setRegExp(value: String | js.RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
       
       inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAnomaliesResponse extends StObject {
   
   /**
-    *  A list of cost anomalies. 
+    * A list of cost anomalies. 
     */
   var Anomalies: typings.awsSdk.costexplorerMod.Anomalies
   
   /**
-    *  The token to retrieve the next set of results. AWS provides the token when the response from a previous call has more results than the maximum page size. 
+    * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size. 
     */
   var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
 }
@@ -27,7 +27,7 @@ object GetAnomaliesResponse {
     
     inline def setAnomalies(value: Anomalies): Self = StObject.set(x, "Anomalies", value.asInstanceOf[js.Any])
     
-    inline def setAnomaliesVarargs(value: Anomaly*): Self = StObject.set(x, "Anomalies", js.Array(value :_*))
+    inline def setAnomaliesVarargs(value: Anomaly*): Self = StObject.set(x, "Anomalies", js.Array(value*))
     
     inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

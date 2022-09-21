@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojchart.ojChartItemSettableProperties> */
 trait ojChartItemSettablePropertiesLenient
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -147,7 +147,7 @@ object ojChartItemSettablePropertiesLenient {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
@@ -165,7 +165,7 @@ object ojChartItemSettablePropertiesLenient {
     
     inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    inline def setGroupIdVarargs(value: (String | Double)*): Self = StObject.set(x, "groupId", js.Array(value :_*))
+    inline def setGroupIdVarargs(value: (String | Double)*): Self = StObject.set(x, "groupId", js.Array(value*))
     
     inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
@@ -175,7 +175,7 @@ object ojChartItemSettablePropertiesLenient {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: (Double | js.Object)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (Double | js.Object)*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLabel(value: String | js.Array[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -189,11 +189,11 @@ object ojChartItemSettablePropertiesLenient {
     
     inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
-    inline def setLabelStyleVarargs(value: js.Object*): Self = StObject.set(x, "labelStyle", js.Array(value :_*))
+    inline def setLabelStyleVarargs(value: js.Object*): Self = StObject.set(x, "labelStyle", js.Array(value*))
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
+    inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value*))
     
     inline def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     

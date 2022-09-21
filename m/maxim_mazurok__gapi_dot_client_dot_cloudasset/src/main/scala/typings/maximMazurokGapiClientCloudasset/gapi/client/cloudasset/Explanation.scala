@@ -15,7 +15,7 @@ trait Explanation extends StObject {
   var matchedPermissions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Permissions}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Explanation & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Explanation & TopLevel[Any]
   ] = js.undefined
 }
 object Explanation {
@@ -30,7 +30,7 @@ object Explanation {
     inline def setMatchedPermissions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Permissions}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Explanation & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Explanation & TopLevel[Any]
     ): Self = StObject.set(x, "matchedPermissions", value.asInstanceOf[js.Any])
     
     inline def setMatchedPermissionsUndefined: Self = StObject.set(x, "matchedPermissions", js.undefined)

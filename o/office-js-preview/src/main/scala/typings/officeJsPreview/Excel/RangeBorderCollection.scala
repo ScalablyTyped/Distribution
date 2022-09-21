@@ -18,9 +18,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border objects that make up the range border.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -33,9 +33,9 @@ trait RangeBorderCollection
   var context_RangeBorderCollection: RequestContext = js.native
   
   /**
-    *
     * Number of border objects in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val count: Double = js.native
@@ -43,44 +43,33 @@ trait RangeBorderCollection
   /**
     * Gets a border object using its name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
-    * @param index Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+    * @param index Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
+    */
+  def getItem(
+    index: EdgeTop | EdgeBottom | EdgeLeft | EdgeRight | InsideVertical | InsideHorizontal | DiagonalDown | DiagonalUp
+  ): RangeBorder = js.native
+  /**
+    * Gets a border object using its name.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    *
+    * @param index Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
     */
   def getItem(index: BorderIndex): RangeBorder = js.native
   
   /**
     * Gets a border object using its index.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
     */
   def getItemAt(index: Double): RangeBorder = js.native
-  
-  @JSName("getItem")
-  def getItem_DiagonalDown(index: DiagonalDown): RangeBorder = js.native
-  @JSName("getItem")
-  def getItem_DiagonalUp(index: DiagonalUp): RangeBorder = js.native
-  @JSName("getItem")
-  def getItem_EdgeBottom(index: EdgeBottom): RangeBorder = js.native
-  @JSName("getItem")
-  def getItem_EdgeLeft(index: EdgeLeft): RangeBorder = js.native
-  @JSName("getItem")
-  def getItem_EdgeRight(index: EdgeRight): RangeBorder = js.native
-  /**
-    * Gets a border object using its name.
-    *
-    * [Api set: ExcelApi 1.1]
-    *
-    * @param index Index value of the border object to be retrieved. See Excel.BorderIndex for details.
-    */
-  @JSName("getItem")
-  def getItem_EdgeTop(index: EdgeTop): RangeBorder = js.native
-  @JSName("getItem")
-  def getItem_InsideHorizontal(index: InsideHorizontal): RangeBorder = js.native
-  @JSName("getItem")
-  def getItem_InsideVertical(index: InsideVertical): RangeBorder = js.native
   
   /** Gets the loaded child items in this collection. */
   val items: js.Array[RangeBorder] = js.native
@@ -97,10 +86,10 @@ trait RangeBorderCollection
   def load(propertyNames: js.Array[String]): RangeBorderCollection = js.native
   
   /**
+    * Specifies a double that lightens or darkens a color for range borders. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the entire border collection doesn't have a uniform `tintAndShade` setting.
     *
-    * Specifies a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    A null value indicates that the entire border collections don't have uniform tintAndShade setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: Double = js.native

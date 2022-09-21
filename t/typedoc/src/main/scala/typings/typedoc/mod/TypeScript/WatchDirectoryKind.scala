@@ -13,6 +13,8 @@ object WatchDirectoryKind extends StObject {
   
   /* 2 */ val DynamicPriorityPolling: typings.typescript.mod.WatchDirectoryKind.DynamicPriorityPolling & Double = js.native
   
+  /* 3 */ val FixedChunkSizePolling: typings.typescript.mod.WatchDirectoryKind.FixedChunkSizePolling & Double = js.native
+  
   /* 1 */ val FixedPollingInterval: typings.typescript.mod.WatchDirectoryKind.FixedPollingInterval & Double = js.native
   
   /* 0 */ val UseFsEvents: typings.typescript.mod.WatchDirectoryKind.UseFsEvents & Double = js.native

@@ -29,11 +29,11 @@ object MomentCreationData {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setFormatVarargs(value: (String | MomentBuiltinFormat)*): Self = StObject.set(x, "format", js.Array(value :_*))
+    inline def setFormatVarargs(value: (String | MomentBuiltinFormat)*): Self = StObject.set(x, "format", js.Array(value*))
     
     inline def setInput(value: MomentInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setInputVarargs(value: (Double | String)*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: (Double | String)*): Self = StObject.set(x, "input", js.Array(value*))
     
     inline def setIsUTC(value: Boolean): Self = StObject.set(x, "isUTC", value.asInstanceOf[js.Any])
     

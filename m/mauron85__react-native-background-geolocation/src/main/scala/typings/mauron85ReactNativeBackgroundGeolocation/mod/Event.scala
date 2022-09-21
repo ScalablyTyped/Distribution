@@ -1,0 +1,45 @@
+package typings.mauron85ReactNativeBackgroundGeolocation.mod
+
+import typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.error_
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.location
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stationary
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.activity
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.start
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stop
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.error_
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.authorization
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.foreground
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.background
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.abort_requested
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.http_authorization
+*/
+trait Event extends StObject
+object Event {
+  
+  inline def abort_requested: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.abort_requested = "abort_requested".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.abort_requested]
+  
+  inline def activity: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.activity = "activity".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.activity]
+  
+  inline def authorization: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.authorization = "authorization".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.authorization]
+  
+  inline def background: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.background = "background".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.background]
+  
+  inline def error: error_ = "error".asInstanceOf[error_]
+  
+  inline def foreground: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.foreground = "foreground".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.foreground]
+  
+  inline def http_authorization: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.http_authorization = "http_authorization".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.http_authorization]
+  
+  inline def location: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.location = "location".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.location]
+  
+  inline def start: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.start = "start".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.start]
+  
+  inline def stationary: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stationary = "stationary".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stationary]
+  
+  inline def stop: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stop = "stop".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stop]
+}

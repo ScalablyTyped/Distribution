@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.EmailOptions")
 @js.native
-/* private */ class EmailOptions ()
+/* private */ open class EmailOptions ()
   extends StObject
      with typings.activexWord.Word.EmailOptions {
   
@@ -114,7 +114,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var NewColorOnReply: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PlainTextStyle: typings.activexWord.Word.Style = js.native

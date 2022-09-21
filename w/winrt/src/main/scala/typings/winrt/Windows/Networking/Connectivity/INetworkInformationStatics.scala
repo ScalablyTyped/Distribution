@@ -25,7 +25,7 @@ trait INetworkInformationStatics extends StObject {
   
   def getSortedEndpointPairs(destinationList: IIterable[EndpointPair], sortOptions: HostNameSortOptions): IVectorView[EndpointPair]
   
-  var onnetworkstatuschanged: js.Any
+  var onnetworkstatuschanged: Any
 }
 object INetworkInformationStatics {
   
@@ -36,7 +36,7 @@ object INetworkInformationStatics {
     getLanIdentifiers: () => IVectorView[LanIdentifier],
     getProxyConfigurationAsync: Uri => IAsyncOperation[ProxyConfiguration],
     getSortedEndpointPairs: (IIterable[EndpointPair], HostNameSortOptions) => IVectorView[EndpointPair],
-    onnetworkstatuschanged: js.Any
+    onnetworkstatuschanged: Any
   ): INetworkInformationStatics = {
     val __obj = js.Dynamic.literal(getConnectionProfiles = js.Any.fromFunction0(getConnectionProfiles), getHostNames = js.Any.fromFunction0(getHostNames), getInternetConnectionProfile = js.Any.fromFunction0(getInternetConnectionProfile), getLanIdentifiers = js.Any.fromFunction0(getLanIdentifiers), getProxyConfigurationAsync = js.Any.fromFunction1(getProxyConfigurationAsync), getSortedEndpointPairs = js.Any.fromFunction2(getSortedEndpointPairs), onnetworkstatuschanged = onnetworkstatuschanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[INetworkInformationStatics]
@@ -56,6 +56,6 @@ object INetworkInformationStatics {
     
     inline def setGetSortedEndpointPairs(value: (IIterable[EndpointPair], HostNameSortOptions) => IVectorView[EndpointPair]): Self = StObject.set(x, "getSortedEndpointPairs", js.Any.fromFunction2(value))
     
-    inline def setOnnetworkstatuschanged(value: js.Any): Self = StObject.set(x, "onnetworkstatuschanged", value.asInstanceOf[js.Any])
+    inline def setOnnetworkstatuschanged(value: Any): Self = StObject.set(x, "onnetworkstatuschanged", value.asInstanceOf[js.Any])
   }
 }

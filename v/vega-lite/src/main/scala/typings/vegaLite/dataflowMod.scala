@@ -15,11 +15,11 @@ object dataflowMod {
     def this(parent: DataFlowNode) = this()
     def this(parent: DataFlowNode, debugName: String) = this()
     
-    /* private */ var _children: js.Any = js.native
+    /* private */ var _children: Any = js.native
     
     /* protected */ var _hash: String | Double = js.native
     
-    /* private */ var _parent: js.Any = js.native
+    /* private */ var _parent: Any = js.native
     
     def addChild(child: DataFlowNode): Unit = js.native
     def addChild(child: DataFlowNode, loc: Double): Unit = js.native
@@ -68,7 +68,7 @@ object dataflowMod {
   
   @JSImport("vega-lite/build/src/compile/data/dataflow", "OutputNode")
   @js.native
-  class OutputNode protected () extends DataFlowNode {
+  open class OutputNode protected () extends DataFlowNode {
     /**
       * @param source The name of the source. Will change in assemble.
       * @param type The type of the output node.
@@ -76,9 +76,9 @@ object dataflowMod {
       */
     def this(parent: DataFlowNode, source: String, `type`: DataSourceType, refCounts: Dict[Double]) = this()
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Request the datasource name and increase the ref counter.
@@ -93,7 +93,7 @@ object dataflowMod {
     
     def isRequired(): Boolean = js.native
     
-    /* private */ val refCounts: js.Any = js.native
+    /* private */ val refCounts: Any = js.native
     
     def setSource(source: String): Unit = js.native
     

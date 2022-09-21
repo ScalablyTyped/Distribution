@@ -10,15 +10,12 @@ compute the closest common parent for file paths
 | ------------------ | :-------------: |
 | Full name          | commondir |
 | Keywords           | common, path, directory, file, parent, root |
-| # releases         | 0 |
-| # dependents       | 164 |
-| # downloads        | 521253713 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.349997766666667E7 |
+| # stars            | 45.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-commondir)
-- [Bugs](https://github.com/substack/node-commondir/issues)
-- [Repository](https://github.com/substack/node-commondir)
 - [Npm](https://www.npmjs.com/package/commondir)
     
 

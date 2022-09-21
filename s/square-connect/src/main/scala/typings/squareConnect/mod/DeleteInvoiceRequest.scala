@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DeleteInvoiceRequest")
 @js.native
-class DeleteInvoiceRequest () extends StObject {
+open class DeleteInvoiceRequest () extends StObject {
   
   /**
     * The version of the `invoice` to delete. If you do not know the version, you can call `GetInvoice` or `ListInvoices`.

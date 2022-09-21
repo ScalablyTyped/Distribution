@@ -14,7 +14,7 @@ trait CreateSchemaResponse extends StObject {
   /**
     * The date and time that schema was modified.
     */
-  var LastModified: js.UndefOr[timestampIso8601] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the schema.
@@ -41,7 +41,7 @@ trait CreateSchemaResponse extends StObject {
   /**
     * The date the schema version was created.
     */
-  var VersionCreatedDate: js.UndefOr[timestampIso8601] = js.undefined
+  var VersionCreatedDate: js.UndefOr[js.Date] = js.undefined
 }
 object CreateSchemaResponse {
   
@@ -56,7 +56,7 @@ object CreateSchemaResponse {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setLastModified(value: timestampIso8601): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
@@ -80,7 +80,7 @@ object CreateSchemaResponse {
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    inline def setVersionCreatedDate(value: timestampIso8601): Self = StObject.set(x, "VersionCreatedDate", value.asInstanceOf[js.Any])
+    inline def setVersionCreatedDate(value: js.Date): Self = StObject.set(x, "VersionCreatedDate", value.asInstanceOf[js.Any])
     
     inline def setVersionCreatedDateUndefined: Self = StObject.set(x, "VersionCreatedDate", js.undefined)
   }

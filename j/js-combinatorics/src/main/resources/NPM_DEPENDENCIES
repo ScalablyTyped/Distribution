@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "js-combinatorics" : "2.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "js-combinatorics" : "2.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -60,7 +60,7 @@ object FunctionDefinition {
     
     inline def setModifiers(value: js.Array[ModifierInvocation]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    inline def setModifiersVarargs(value: ModifierInvocation*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: ModifierInvocation*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -68,13 +68,13 @@ object FunctionDefinition {
     
     inline def setParameters(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setReturnParameters(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "returnParameters", value.asInstanceOf[js.Any])
     
     inline def setReturnParametersUndefined: Self = StObject.set(x, "returnParameters", js.undefined)
     
-    inline def setReturnParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "returnParameters", js.Array(value :_*))
+    inline def setReturnParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "returnParameters", js.Array(value*))
     
     inline def setStateMutability(value: pure | constant | payable | view): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
     

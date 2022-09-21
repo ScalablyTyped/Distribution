@@ -15,29 +15,29 @@ trait IHTMLDOMNode3 extends StObject {
   def compareDocumentPosition(otherNode: IHTMLDOMNode): Double = js.native
   
   def insertBefore(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
-  def insertBefore(newChild: IHTMLDOMNode, refChild: js.Any): IHTMLDOMNode = js.native
+  def insertBefore(newChild: IHTMLDOMNode, refChild: Any): IHTMLDOMNode = js.native
   
-  def isDefaultNamespace(pvarNamespace: js.Any): Boolean = js.native
+  def isDefaultNamespace(pvarNamespace: Any): Boolean = js.native
   
   def isEqualNode(otherNode: IHTMLDOMNode3): Boolean = js.native
   
   def isSameNode(otherNode: IHTMLDOMNode3): Boolean = js.native
   
-  def isSupported(feature: String, version: js.Any): Boolean = js.native
+  def isSupported(feature: String, version: Any): Boolean = js.native
   
-  val localName: js.Any = js.native
+  val localName: Any = js.native
   
-  def lookupNamespaceURI(pvarPrefix: js.Any): js.Any = js.native
+  def lookupNamespaceURI(pvarPrefix: Any): Any = js.native
   
-  def lookupPrefix(pvarNamespaceURI: js.Any): js.Any = js.native
+  def lookupPrefix(pvarNamespaceURI: Any): Any = js.native
   
-  val namespaceURI: js.Any = js.native
+  val namespaceURI: Any = js.native
   
-  var prefix: js.Any = js.native
+  var prefix: Any = js.native
   
   def removeChild(oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
   def replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
-  var textContent: js.Any = js.native
+  var textContent: Any = js.native
 }

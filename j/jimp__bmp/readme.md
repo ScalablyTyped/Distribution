@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__bmp
 
-Typings are for version 0.16.1
+Typings are for version 0.16.2
 
 ## Library description:
 Default Jimp bmp encoder/decoder.
@@ -10,10 +10,10 @@ Default Jimp bmp encoder/decoder.
 | ------------------ | :-------------: |
 | Full name          | @jimp/bmp |
 | Keywords           | - |
-| # releases         | 102 |
-| # dependents       | 3 |
-| # downloads        | 43222544 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 5256876.666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40jimp%2Fbmp)

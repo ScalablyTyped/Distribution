@@ -6,15 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "Duration")
 @js.native
-/* private */ class Duration () extends TemporalAmount {
+/* private */ open class Duration () extends TemporalAmount {
   
   def abs(): Duration = js.native
   
   def compareTo(otherDuration: Duration): Double = js.native
   
   def dividedBy(divisor: Double): Duration = js.native
-  
-  def equals(otherDuration: js.Any): Boolean = js.native
   
   def isNegative(): Boolean = js.native
   

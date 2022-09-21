@@ -9,7 +9,7 @@ object rotateMod {
   
   @JSImport("ol/control/Rotate", JSImport.Default)
   @js.native
-  class default () extends Rotate {
+  open class default () extends Rotate {
     def this(opt_options: Options) = this()
   }
   
@@ -18,6 +18,8 @@ object rotateMod {
     var autoHide: js.UndefOr[Boolean] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
+    
+    var compassClassName: js.UndefOr[String] = js.undefined
     
     var duration: js.UndefOr[Double] = js.undefined
     
@@ -47,6 +49,10 @@ object rotateMod {
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setCompassClassName(value: String): Self = StObject.set(x, "compassClassName", value.asInstanceOf[js.Any])
+      
+      inline def setCompassClassNameUndefined: Self = StObject.set(x, "compassClassName", js.undefined)
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

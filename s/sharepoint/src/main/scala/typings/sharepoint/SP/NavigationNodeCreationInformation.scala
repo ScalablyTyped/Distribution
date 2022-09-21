@@ -31,9 +31,9 @@ trait NavigationNodeCreationInformation
 object NavigationNodeCreationInformation {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_asLastNode: () => Boolean,
     get_isExternal: () => Boolean,
     get_previousNode: () => NavigationNode,

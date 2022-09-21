@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
@@ -49,13 +48,13 @@ trait HttpContentHeaderCollection extends StObject {
   var contentType: HttpMediaTypeHeaderValue = js.native
   
   /** Gets or sets the DateTime object that represents the value of an HTTP Expires header on the HTTP content. */
-  var expires: Date = js.native
+  var expires: js.Date = js.native
   
   /**
     * Retrieves an iterator to the first item in the HttpContentHeaderCollection .
     * @return An object that can be used to enumerate the items in the collection. The iterator points to the first item in the HttpContentHeaderCollection .
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+  def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
   
   /**
     * Returns an immutable view of the HttpContentHeaderCollection .
@@ -79,7 +78,7 @@ trait HttpContentHeaderCollection extends StObject {
   def insert(key: String, value: String): Boolean = js.native
   
   /** Gets or sets the DateTime object that represents the value of an HTTP Last-Modified header on the HTTP content. */
-  var lastModified: Date = js.native
+  var lastModified: js.Date = js.native
   
   /**
     * Finds an item in the HttpContentHeaderCollection if it exists.

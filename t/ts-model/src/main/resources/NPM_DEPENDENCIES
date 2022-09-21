@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-model" : "0.0.18"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-model" : "0.0.18"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

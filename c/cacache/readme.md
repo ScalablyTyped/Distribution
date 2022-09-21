@@ -1,7 +1,7 @@
 
 # Scala.js typings for cacache
 
-Typings are for version 12.0
+Typings are for version 15.0
 
 ## Library description:
 Fast, fault-tolerant, cross-platform, disk-based, data-agnostic, content-addressable cache.
@@ -10,10 +10,10 @@ Fast, fault-tolerant, cross-platform, disk-based, data-agnostic, content-address
 | ------------------ | :-------------: |
 | Full name          | cacache |
 | Keywords           | cache, caching, content-addressable, sri, sri hash, subresource integrity, cache, storage, store, file store, filesystem, disk cache, disk storage |
-| # releases         | 16 |
-| # dependents       | 184 |
-| # downloads        | 979593718 |
-| # stars            | 9 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1791089433333333E8 |
+| # stars            | 194.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/cacache#readme)

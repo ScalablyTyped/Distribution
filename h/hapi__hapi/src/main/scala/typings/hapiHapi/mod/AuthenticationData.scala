@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AuthenticationData extends StObject {
   
-  var artifacts: js.UndefOr[js.Object] = js.undefined
+  var artifacts: js.UndefOr[AuthArtifacts] = js.undefined
   
   var credentials: AuthCredentials
 }
@@ -19,7 +19,7 @@ object AuthenticationData {
   
   extension [Self <: AuthenticationData](x: Self) {
     
-    inline def setArtifacts(value: js.Object): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: AuthArtifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     

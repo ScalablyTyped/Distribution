@@ -1,7 +1,7 @@
 package typings.nodeExpat
 
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,21 +15,21 @@ object mod {
   
   @JSImport("node-expat", "Parser")
   @js.native
-  class Parser () extends Stream {
+  open class Parser () extends Stream {
     def this(encoding: String) = this()
     
     def _getNewParser(): Parser = js.native
     
-    def destroy(): Unit = js.native
+    def destroy(): Any = js.native
     
     def destroySoon(): Unit = js.native
     
-    def end(): Unit = js.native
-    def end(cb: js.Function0[Unit]): Unit = js.native
-    def end(chunk: js.Any): Unit = js.native
-    def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-    def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
-    def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
+    def end(): Any = js.native
+    def end(cb: js.Function0[Unit]): Any = js.native
+    def end(chunk: Any): Any = js.native
+    def end(chunk: Any, cb: js.Function0[Unit]): Any = js.native
+    def end(chunk: Any, encoding: BufferEncoding): Any = js.native
+    def end(chunk: Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Any = js.native
     
     def getCurrentByteIndex(): Double = js.native
     
@@ -69,5 +69,5 @@ object mod {
   }
   
   inline def createParser(): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")().asInstanceOf[Parser]
-  inline def createParser(cb: js.Function1[/* repeated */ js.Any, Unit]): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(cb.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  inline def createParser(cb: js.Function1[/* repeated */ Any, Unit]): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(cb.asInstanceOf[js.Any]).asInstanceOf[Parser]
 }

@@ -10,15 +10,12 @@ A batch converter for multipage tiff files to png (or any imagemagick supported 
 | ------------------ | :-------------: |
 | Full name          | tiff-to-png |
 | Keywords           | multipage, conversion, batch, tiff, png, imagemagick, convert |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 5517 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1859.6666666666667 |
+| # stars            | 17.0 |
 
 ## Links
-- [Homepage](https://github.com/RickCraig/node-tiff-to-png)
-- [Bugs](https://github.com/RickCraig/node-tiff-to-png/issues)
-- [Repository](https://github.com/RickCraig/node-tiff-to-png)
 - [Npm](https://www.npmjs.com/package/tiff-to-png)
     
 

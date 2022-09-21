@@ -6,49 +6,49 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Provides information about the left-clicked/tapped event and its related worksheet.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait WorksheetSingleClickedEventArgs extends StObject {
   
   /**
-    *
     * Gets the address that represents the cell which was left-clicked/tapped for a specific worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var address: String
   
   /**
-    *
     * The distance, in points, from the left-clicked/tapped point to the left (or right for right-to-left languages) gridline edge of the left-clicked/tapped cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var offsetX: Double
   
   /**
-    *
     * The distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var offsetY: Double
   
   /**
-    *
     * Gets the type of the event.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var `type`: WorksheetSingleClicked
   
   /**
+    * Gets the ID of the worksheet in which the cell was left-clicked/tapped.
     *
-    * Gets the id of the worksheet in which the cell was left-clicked/tapped.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var worksheetId: String

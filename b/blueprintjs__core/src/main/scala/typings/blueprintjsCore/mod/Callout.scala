@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.calloutMod.ICalloutProps
+import typings.blueprintjsCore.calloutMod.CalloutProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Callout")
 @js.native
-class Callout protected ()
+open class Callout protected ()
   extends typings.blueprintjsCore.componentsMod.Callout {
-  def this(props: ICalloutProps) = this()
-  def this(props: ICalloutProps, context: js.Any) = this()
+  def this(props: CalloutProps) = this()
+  def this(props: CalloutProps, context: Any) = this()
 }
 /* static members */
 object Callout {

@@ -27,10 +27,10 @@ object CompositingReasonsResponse {
     
     inline def setCompositingReasonIds(value: js.Array[String]): Self = StObject.set(x, "compositingReasonIds", value.asInstanceOf[js.Any])
     
-    inline def setCompositingReasonIdsVarargs(value: String*): Self = StObject.set(x, "compositingReasonIds", js.Array(value :_*))
+    inline def setCompositingReasonIdsVarargs(value: String*): Self = StObject.set(x, "compositingReasonIds", js.Array(value*))
     
     inline def setCompositingReasons(value: js.Array[String]): Self = StObject.set(x, "compositingReasons", value.asInstanceOf[js.Any])
     
-    inline def setCompositingReasonsVarargs(value: String*): Self = StObject.set(x, "compositingReasons", js.Array(value :_*))
+    inline def setCompositingReasonsVarargs(value: String*): Self = StObject.set(x, "compositingReasons", js.Array(value*))
   }
 }

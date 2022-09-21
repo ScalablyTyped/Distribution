@@ -16,7 +16,7 @@ object createSamplingRuleCommandMod {
   
   @JSImport("@aws-sdk/client-xray-node/commands/CreateSamplingRuleCommand", "CreateSamplingRuleCommand")
   @js.native
-  class CreateSamplingRuleCommand protected ()
+  open class CreateSamplingRuleCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object createSamplingRuleCommandMod {
     override val middlewareStack: MiddlewareStack[CreateSamplingRuleInput, CreateSamplingRuleOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: XRayResolvedConfiguration
     ): Handler[CreateSamplingRuleInput, CreateSamplingRuleOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: XRayResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[CreateSamplingRuleInput, CreateSamplingRuleOutput] = js.native
   }
 }

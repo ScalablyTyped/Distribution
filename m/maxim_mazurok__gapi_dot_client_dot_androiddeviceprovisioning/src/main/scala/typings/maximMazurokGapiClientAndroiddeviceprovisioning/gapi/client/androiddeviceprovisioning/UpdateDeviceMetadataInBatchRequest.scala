@@ -22,6 +22,6 @@ object UpdateDeviceMetadataInBatchRequest {
     
     inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
-    inline def setUpdatesVarargs(value: UpdateMetadataArguments*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: UpdateMetadataArguments*): Self = StObject.set(x, "updates", js.Array(value*))
   }
 }

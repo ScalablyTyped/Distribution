@@ -18,7 +18,7 @@ object UserStore {
   
   @JSImport("evernote", "UserStore.AuthenticationResult")
   @js.native
-  class AuthenticationResult () extends StObject {
+  open class AuthenticationResult () extends StObject {
     def this(args: AuthenticationToken) = this()
     
     var authenticationToken: js.UndefOr[String] = js.native
@@ -44,7 +44,7 @@ object UserStore {
   
   @JSImport("evernote", "UserStore.BootstrapInfo")
   @js.native
-  class BootstrapInfo () extends StObject {
+  open class BootstrapInfo () extends StObject {
     def this(args: Profiles) = this()
     
     var profiles: js.UndefOr[js.Array[BootstrapProfile]] = js.native
@@ -52,7 +52,7 @@ object UserStore {
   
   @JSImport("evernote", "UserStore.BootstrapProfile")
   @js.native
-  class BootstrapProfile () extends StObject {
+  open class BootstrapProfile () extends StObject {
     def this(args: Name) = this()
     
     var name: js.UndefOr[String] = js.native
@@ -62,7 +62,7 @@ object UserStore {
   
   @JSImport("evernote", "UserStore.BootstrapSettings")
   @js.native
-  class BootstrapSettings () extends StObject {
+  open class BootstrapSettings () extends StObject {
     def this(args: AccountEmailDomain) = this()
     
     var accountEmailDomain: js.UndefOr[String] = js.native
@@ -104,7 +104,7 @@ object UserStore {
   
   @JSImport("evernote", "UserStore.PublicUserInfo")
   @js.native
-  class PublicUserInfo () extends StObject {
+  open class PublicUserInfo () extends StObject {
     def this(args: NoteStoreUrl) = this()
     
     var noteStoreUrl: js.UndefOr[String] = js.native
@@ -120,7 +120,7 @@ object UserStore {
   
   @JSImport("evernote", "UserStore.UserUrls")
   @js.native
-  class UserUrls () extends StObject {
+  open class UserUrls () extends StObject {
     def this(args: MessageStoreUrl) = this()
     
     var messageStoreUrl: js.UndefOr[String] = js.native

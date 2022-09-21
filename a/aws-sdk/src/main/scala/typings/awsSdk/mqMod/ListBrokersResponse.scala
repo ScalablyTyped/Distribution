@@ -29,7 +29,7 @@ object ListBrokersResponse {
     
     inline def setBrokerSummariesUndefined: Self = StObject.set(x, "BrokerSummaries", js.undefined)
     
-    inline def setBrokerSummariesVarargs(value: BrokerSummary*): Self = StObject.set(x, "BrokerSummaries", js.Array(value :_*))
+    inline def setBrokerSummariesVarargs(value: BrokerSummary*): Self = StObject.set(x, "BrokerSummaries", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

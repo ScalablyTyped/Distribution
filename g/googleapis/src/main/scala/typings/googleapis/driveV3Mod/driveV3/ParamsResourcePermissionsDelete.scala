@@ -1,9 +1,5 @@
 package typings.googleapis.driveV3Mod.driveV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +9,7 @@ trait ParamsResourcePermissionsDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The ID of the file or Team Drive.
+    * The ID of the file or shared drive.
     */
   var fileId: js.UndefOr[String] = js.undefined
   
@@ -28,14 +19,17 @@ trait ParamsResourcePermissionsDelete
   var permissionId: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether the requesting application supports Team Drives.
+    * Whether the requesting application supports both My Drives and shared drives.
+    */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Deprecated use supportsAllDrives instead.
     */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Issue the request as a domain administrator; if set to true, then the
-    * requester will be granted access if they are an administrator of the
-    * domain to which the item belongs.
+    * Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
     */
   var useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined
 }
@@ -48,10 +42,6 @@ object ParamsResourcePermissionsDelete {
   
   extension [Self <: ParamsResourcePermissionsDelete](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
     inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
@@ -59,6 +49,10 @@ object ParamsResourcePermissionsDelete {
     inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
     inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+    
+    inline def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsAllDrivesUndefined: Self = StObject.set(x, "supportsAllDrives", js.undefined)
     
     inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     

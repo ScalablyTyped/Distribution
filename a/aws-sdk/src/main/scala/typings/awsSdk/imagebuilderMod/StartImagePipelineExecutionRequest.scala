@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartImagePipelineExecutionRequest extends StObject {
   
   /**
-    * The idempotency token used to make this request idempotent. 
+    * The idempotency token used to make this request idempotent.
     */
   var clientToken: ClientToken
   
   /**
-    * The Amazon Resource Name (ARN) of the image pipeline that you want to manually invoke. 
+    * The Amazon Resource Name (ARN) of the image pipeline that you want to manually invoke.
     */
   var imagePipelineArn: ImagePipelineArn
 }

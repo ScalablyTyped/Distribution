@@ -9,17 +9,17 @@ trait RenewOfferingRequest extends StObject {
   /**
     * The ID of a request to renew an offering.
     */
-  var offeringId: js.UndefOr[OfferingIdentifier] = js.undefined
+  var offeringId: OfferingIdentifier
   
   /**
     * The quantity requested in an offering renewal.
     */
-  var quantity: js.UndefOr[Integer] = js.undefined
+  var quantity: Integer
 }
 object RenewOfferingRequest {
   
-  inline def apply(): RenewOfferingRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(offeringId: OfferingIdentifier, quantity: Integer): RenewOfferingRequest = {
+    val __obj = js.Dynamic.literal(offeringId = offeringId.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewOfferingRequest]
   }
   
@@ -27,10 +27,6 @@ object RenewOfferingRequest {
     
     inline def setOfferingId(value: OfferingIdentifier): Self = StObject.set(x, "offeringId", value.asInstanceOf[js.Any])
     
-    inline def setOfferingIdUndefined: Self = StObject.set(x, "offeringId", js.undefined)
-    
     inline def setQuantity(value: Integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
-    
-    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

@@ -10,8 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deepMapValues(`object`: js.Any, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def deepMapValues(`object`: js.Any, callback: js.Any, propertyPath: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deepMapValues(`object`: Any, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def deepMapValues(`object`: Any, callback: Any, propertyPath: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* augmented module */
   object lodashAugmentingMod {
@@ -19,8 +19,8 @@ object mod {
     @js.native
     trait LoDashStatic extends StObject {
       
-      def deepMapValues(`object`: js.Any, callback: js.Any): js.Any = js.native
-      def deepMapValues(`object`: js.Any, callback: js.Any, propertyPath: js.Any): js.Any = js.native
+      def deepMapValues(`object`: Any, callback: Any): Any = js.native
+      def deepMapValues(`object`: Any, callback: Any, propertyPath: Any): Any = js.native
     }
   }
 }

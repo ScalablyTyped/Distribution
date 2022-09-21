@@ -10,10 +10,10 @@ object phonelinkSetupMod {
   
   @JSImport("material-ui/svg-icons/communication/phonelink-setup", JSImport.Default)
   @js.native
-  class default () extends CommunicationPhonelinkSetup
+  open class default () extends CommunicationPhonelinkSetup
   
   @JSImport("material-ui/svg-icons/communication/phonelink-setup", "CommunicationPhonelinkSetup")
   @js.native
-  class CommunicationPhonelinkSetup ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationPhonelinkSetup ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

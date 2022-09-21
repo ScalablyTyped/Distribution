@@ -12,12 +12,17 @@ trait UserGroup extends StObject {
   var ARN: js.UndefOr[String] = js.undefined
   
   /**
-    * Must be Redis. 
+    * The current supported value is Redis. 
     */
   var Engine: js.UndefOr[EngineType] = js.undefined
   
   /**
-    * A list of updates being applied to the user groups.
+    * The minimum engine version required, which is Redis 6.0
+    */
+  var MinimumEngineVersion: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A list of updates being applied to the user group.
     */
   var PendingChanges: js.UndefOr[UserGroupPendingChanges] = js.undefined
   
@@ -58,6 +63,10 @@ object UserGroup {
     
     inline def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
+    inline def setMinimumEngineVersion(value: String): Self = StObject.set(x, "MinimumEngineVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumEngineVersionUndefined: Self = StObject.set(x, "MinimumEngineVersion", js.undefined)
+    
     inline def setPendingChanges(value: UserGroupPendingChanges): Self = StObject.set(x, "PendingChanges", value.asInstanceOf[js.Any])
     
     inline def setPendingChangesUndefined: Self = StObject.set(x, "PendingChanges", js.undefined)
@@ -66,7 +75,7 @@ object UserGroup {
     
     inline def setReplicationGroupsUndefined: Self = StObject.set(x, "ReplicationGroups", js.undefined)
     
-    inline def setReplicationGroupsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroups", js.Array(value :_*))
+    inline def setReplicationGroupsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroups", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -80,6 +89,6 @@ object UserGroup {
     
     inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    inline def setUserIdsVarargs(value: UserId*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: UserId*): Self = StObject.set(x, "UserIds", js.Array(value*))
   }
 }

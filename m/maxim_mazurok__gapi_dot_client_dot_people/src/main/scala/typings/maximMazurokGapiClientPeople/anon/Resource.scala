@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientPeople.anon
 
-import typings.maximMazurokGapiClientPeople.gapi.client.people.Person
+import typings.maximMazurokGapiClientPeople.gapi.client.people.BatchCreateContactsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,14 +29,6 @@ trait Resource extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Optional. A field mask to restrict which fields on each person are returned. Multiple fields can be specified by separating them with commas. Defaults to all fields if not set.
-    * Valid values are: * addresses * ageRanges * biographies * birthdays * calendarUrls * clientData * coverPhotos * emailAddresses * events * externalIds * genders * imClients *
-    * interests * locales * locations * memberships * metadata * miscKeywords * names * nicknames * occupations * organizations * phoneNumbers * photos * relations * sipAddresses *
-    * skills * urls * userDefined
-    */
-  var personFields: js.UndefOr[String] = js.undefined
-  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
@@ -44,20 +36,7 @@ trait Resource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Person
-  
-  /** The resource name for the person, assigned by the server. An ASCII string with a max length of 27 characters, in the form of `people/{person_id}`. */
-  var resourceName: String
-  
-  /** Optional. A mask of what source types to return. Defaults to READ_SOURCE_TYPE_CONTACT and READ_SOURCE_TYPE_PROFILE if not set. */
-  var sources: js.UndefOr[String | js.Array[String]] = js.undefined
-  
-  /**
-    * Required. A field mask to restrict which fields on the person are updated. Multiple fields can be specified by separating them with commas. All updated fields will be replaced.
-    * Valid values are: * addresses * biographies * birthdays * calendarUrls * clientData * emailAddresses * events * externalIds * genders * imClients * interests * locales *
-    * locations * memberships * miscKeywords * names * nicknames * occupations * organizations * phoneNumbers * relations * sipAddresses * urls * userDefined
-    */
-  var updatePersonFields: js.UndefOr[String] = js.undefined
+  var resource: BatchCreateContactsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -67,8 +46,8 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  inline def apply(resource: Person, resourceName: String): Resource = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
+  inline def apply(resource: BatchCreateContactsRequest): Resource = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
   
@@ -102,10 +81,6 @@ object Resource {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setPersonFields(value: String): Self = StObject.set(x, "personFields", value.asInstanceOf[js.Any])
-    
-    inline def setPersonFieldsUndefined: Self = StObject.set(x, "personFields", js.undefined)
-    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -114,19 +89,7 @@ object Resource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Person): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
-    
-    inline def setSources(value: String | js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
-    
-    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
-    
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
-    
-    inline def setUpdatePersonFields(value: String): Self = StObject.set(x, "updatePersonFields", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatePersonFieldsUndefined: Self = StObject.set(x, "updatePersonFields", js.undefined)
+    inline def setResource(value: BatchCreateContactsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

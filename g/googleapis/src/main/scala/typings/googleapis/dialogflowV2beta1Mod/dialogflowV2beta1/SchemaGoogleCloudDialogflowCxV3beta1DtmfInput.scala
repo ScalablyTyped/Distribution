@@ -1,0 +1,40 @@
+package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleCloudDialogflowCxV3beta1DtmfInput extends StObject {
+  
+  /**
+    * The dtmf digits.
+    */
+  var digits: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The finish digit (if any).
+    */
+  var finishDigit: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaGoogleCloudDialogflowCxV3beta1DtmfInput {
+  
+  inline def apply(): SchemaGoogleCloudDialogflowCxV3beta1DtmfInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleCloudDialogflowCxV3beta1DtmfInput]
+  }
+  
+  extension [Self <: SchemaGoogleCloudDialogflowCxV3beta1DtmfInput](x: Self) {
+    
+    inline def setDigits(value: String): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    
+    inline def setDigitsNull: Self = StObject.set(x, "digits", null)
+    
+    inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+    
+    inline def setFinishDigit(value: String): Self = StObject.set(x, "finishDigit", value.asInstanceOf[js.Any])
+    
+    inline def setFinishDigitNull: Self = StObject.set(x, "finishDigit", null)
+    
+    inline def setFinishDigitUndefined: Self = StObject.set(x, "finishDigit", js.undefined)
+  }
+}

@@ -12,12 +12,12 @@ trait ListRecipesRequest extends StObject {
   var MaxResults: js.UndefOr[MaxResults100] = js.undefined
   
   /**
-    * A pagination token that can be used in a subsequent request.
+    * The token returned by a previous call to retrieve the next set of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.databrewMod.NextToken] = js.undefined
   
   /**
-    * A version identifier. Using this parameter indicates to return only those recipes that have this version identifier.
+    * Return only those recipes with a version identifier of LATEST_WORKING or LATEST_PUBLISHED. If RecipeVersion is omitted, ListRecipes returns all of the LATEST_PUBLISHED recipe versions. Valid values: LATEST_WORKING | LATEST_PUBLISHED 
     */
   var RecipeVersion: js.UndefOr[typings.awsSdk.databrewMod.RecipeVersion] = js.undefined
 }

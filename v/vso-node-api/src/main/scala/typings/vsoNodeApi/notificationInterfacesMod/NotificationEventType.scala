@@ -91,11 +91,11 @@ object NotificationEventType {
     
     inline def setRoles(value: js.Array[NotificationEventRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    inline def setRolesVarargs(value: NotificationEventRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: NotificationEventRole*): Self = StObject.set(x, "roles", js.Array(value*))
     
     inline def setSupportedScopes(value: js.Array[String]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
     
-    inline def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
+    inline def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

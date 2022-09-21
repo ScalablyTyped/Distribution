@@ -8,7 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RatingOptions extends StObject {
+trait RatingOptions
+  extends StObject
+     with AllEditorOptions {
   
   var change: js.UndefOr[js.Function1[/* e */ RatingChangeEvent, Unit]] = js.undefined
   

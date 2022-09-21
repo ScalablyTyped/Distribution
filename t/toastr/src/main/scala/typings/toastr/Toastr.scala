@@ -25,6 +25,10 @@ trait Toastr extends StObject {
   def error(message: String, title: String): JQuery[HTMLElement] = js.native
   def error(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def error(message: String, title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def error(message: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
+  def error(message: JQuery[HTMLElement], title: String): JQuery[HTMLElement] = js.native
+  def error(message: JQuery[HTMLElement], title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def error(message: JQuery[HTMLElement], title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create an error toast
     */
@@ -48,6 +52,10 @@ trait Toastr extends StObject {
   def info(message: String, title: String): JQuery[HTMLElement] = js.native
   def info(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def info(message: String, title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def info(message: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
+  def info(message: JQuery[HTMLElement], title: String): JQuery[HTMLElement] = js.native
+  def info(message: JQuery[HTMLElement], title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def info(message: JQuery[HTMLElement], title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create an info toast
     */
@@ -82,6 +90,10 @@ trait Toastr extends StObject {
   def success(message: String, title: String): JQuery[HTMLElement] = js.native
   def success(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def success(message: String, title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def success(message: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
+  def success(message: JQuery[HTMLElement], title: String): JQuery[HTMLElement] = js.native
+  def success(message: JQuery[HTMLElement], title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def success(message: JQuery[HTMLElement], title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create a success toast
     */
@@ -100,6 +112,10 @@ trait Toastr extends StObject {
   def warning(message: String, title: String): JQuery[HTMLElement] = js.native
   def warning(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def warning(message: String, title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def warning(message: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
+  def warning(message: JQuery[HTMLElement], title: String): JQuery[HTMLElement] = js.native
+  def warning(message: JQuery[HTMLElement], title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def warning(message: JQuery[HTMLElement], title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create a warning toast
     */

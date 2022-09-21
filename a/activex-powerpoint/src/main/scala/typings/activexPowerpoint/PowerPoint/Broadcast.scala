@@ -14,7 +14,7 @@ trait Broadcast extends StObject {
   
   val IsBroadcasting: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Broadcast_typekey")
   var PowerPointDotBroadcast_typekey: Broadcast
@@ -28,7 +28,7 @@ object Broadcast {
     AttendeeUrl: String,
     End: () => Unit,
     IsBroadcasting: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotBroadcast_typekey: Broadcast,
     Start: String => Unit
   ): Broadcast = {
@@ -47,7 +47,7 @@ object Broadcast {
     
     inline def setIsBroadcasting(value: Boolean): Self = StObject.set(x, "IsBroadcasting", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotBroadcast_typekey(value: Broadcast): Self = StObject.set(x, "PowerPoint.Broadcast_typekey", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,7 @@ object gapi {
             
             inline def setItems(value: js.Array[Person]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
             
-            inline def setItemsVarargs(value: Person*): Self = StObject.set(x, "items", js.Array(value :_*))
+            inline def setItemsVarargs(value: Person*): Self = StObject.set(x, "items", js.Array(value*))
             
             inline def setKind(value: plusNumbersignpeopleFeed): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
             
@@ -207,7 +207,7 @@ object gapi {
             
             inline def setEmails(value: js.Array[Type]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
             
-            inline def setEmailsVarargs(value: Type*): Self = StObject.set(x, "emails", js.Array(value :_*))
+            inline def setEmailsVarargs(value: Type*): Self = StObject.set(x, "emails", js.Array(value*))
             
             inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
             
@@ -233,11 +233,11 @@ object gapi {
             
             inline def setOrganizations(value: js.Array[Department]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
             
-            inline def setOrganizationsVarargs(value: Department*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+            inline def setOrganizationsVarargs(value: Department*): Self = StObject.set(x, "organizations", js.Array(value*))
             
             inline def setPlacesLived(value: js.Array[Primary]): Self = StObject.set(x, "placesLived", value.asInstanceOf[js.Any])
             
-            inline def setPlacesLivedVarargs(value: Primary*): Self = StObject.set(x, "placesLived", js.Array(value :_*))
+            inline def setPlacesLivedVarargs(value: Primary*): Self = StObject.set(x, "placesLived", js.Array(value*))
             
             inline def setPlusOneCount(value: Double): Self = StObject.set(x, "plusOneCount", value.asInstanceOf[js.Any])
             
@@ -251,7 +251,7 @@ object gapi {
             
             inline def setUrls(value: js.Array[Label]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
             
-            inline def setUrlsVarargs(value: Label*): Self = StObject.set(x, "urls", js.Array(value :_*))
+            inline def setUrlsVarargs(value: Label*): Self = StObject.set(x, "urls", js.Array(value*))
             
             inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
           }

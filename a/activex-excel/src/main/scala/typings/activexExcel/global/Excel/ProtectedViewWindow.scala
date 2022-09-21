@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ProtectedViewWindow")
 @js.native
-/* private */ class ProtectedViewWindow ()
+/* private */ open class ProtectedViewWindow ()
   extends StObject
      with typings.activexExcel.Excel.ProtectedViewWindow

@@ -9,34 +9,34 @@ object wrapperMod {
   
   @JSImport("typesettable/build/src/wrappers/wrapper", "Wrapper")
   @js.native
-  class Wrapper () extends StObject {
+  open class Wrapper () extends StObject {
     
-    /* private */ var _allowBreakingWords: js.Any = js.native
+    /* private */ var _allowBreakingWords: Any = js.native
     
     var _breakingCharacter: String = js.native
     
-    /* private */ var _maxLines: js.Any = js.native
+    /* private */ var _maxLines: Any = js.native
     
-    /* private */ var _textTrimming: js.Any = js.native
+    /* private */ var _textTrimming: Any = js.native
     
-    /* private */ var _tokenizer: js.Any = js.native
+    /* private */ var _tokenizer: Any = js.native
     
-    /* private */ def addEllipsis(line: js.Any, width: js.Any, measurer: js.Any): js.Any = js.native
+    /* private */ def addEllipsis(line: Any, width: Any, measurer: Any): Any = js.native
     
     def allowBreakingWords(): Boolean = js.native
     def allowBreakingWords(allow: Boolean): Wrapper = js.native
     
-    /* private */ def breakLineToFitWidth(state: js.Any, line: js.Any, hasNextLine: js.Any, measurer: js.Any): js.Any = js.native
+    /* private */ def breakLineToFitWidth(state: Any, line: Any, hasNextLine: Any, measurer: Any): Any = js.native
     
     /**
       * Breaks single token to fit current line.
       * If token contains only whitespaces then they will not be populated to next line.
       */
-    /* private */ def breakTokenToFitInWidth(token: js.Any, line: js.Any, availableWidth: js.Any, measurer: js.Any, breakingCharacter: js.Any): js.Any = js.native
+    /* private */ def breakTokenToFitInWidth(token: Any, line: Any, availableWidth: Any, measurer: Any, breakingCharacter: Any): Any = js.native
     
-    /* private */ def canFitToken(token: js.Any, width: js.Any, measurer: js.Any): js.Any = js.native
+    /* private */ def canFitToken(token: Any, width: Any, measurer: Any): Any = js.native
     
-    /* private */ def finishWrapping(token: js.Any, state: js.Any, measurer: js.Any): js.Any = js.native
+    /* private */ def finishWrapping(token: Any, state: Any, measurer: Any): Any = js.native
     
     def maxLines(): Double = js.native
     def maxLines(noLines: Double): Wrapper = js.native
@@ -47,7 +47,7 @@ object wrapperMod {
     def wrap(text: String, measurer: AbstractMeasurer, width: Double): IWrappingResult = js.native
     def wrap(text: String, measurer: AbstractMeasurer, width: Double, height: Double): IWrappingResult = js.native
     
-    /* private */ def wrapNextToken(token: js.Any, state: js.Any, measurer: js.Any): js.Any = js.native
+    /* private */ def wrapNextToken(token: Any, state: Any, measurer: Any): Any = js.native
   }
   
   trait IWrappingResult extends StObject {

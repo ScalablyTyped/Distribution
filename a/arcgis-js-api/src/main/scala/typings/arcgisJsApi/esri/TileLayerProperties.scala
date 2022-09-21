@@ -12,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with RefreshableLayerProperties
      with ScaleRangeLayerProperties
      with PortalLayerProperties
-     with BlendLayerProperties {
+     with BlendLayerProperties
+     with CustomParametersMixinProperties
+     with APIKeyMixinProperties {
   
   /**
     * The copyright text as defined by the service.
@@ -24,12 +26,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
     */
@@ -40,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * Contains information about the tiling scheme for the layer.
@@ -84,7 +90,7 @@ object TileLayerProperties {
     
     inline def setResamplingUndefined: Self = StObject.set(x, "resampling", js.undefined)
     
-    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
@@ -96,7 +102,7 @@ object TileLayerProperties {
     
     inline def setTileServersUndefined: Self = StObject.set(x, "tileServers", js.undefined)
     
-    inline def setTileServersVarargs(value: String*): Self = StObject.set(x, "tileServers", js.Array(value :_*))
+    inline def setTileServersVarargs(value: String*): Self = StObject.set(x, "tileServers", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

@@ -8,11 +8,11 @@ trait SpacingStyle extends StObject {
   
   var spacing: Double
   
-  var style: R
+  var style: LineHeight
 }
 object SpacingStyle {
   
-  inline def apply(spacing: Double, style: R): SpacingStyle = {
+  inline def apply(spacing: Double, style: LineHeight): SpacingStyle = {
     val __obj = js.Dynamic.literal(spacing = spacing.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpacingStyle]
   }
@@ -21,6 +21,6 @@ object SpacingStyle {
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: R): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: LineHeight): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

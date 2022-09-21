@@ -12,7 +12,7 @@ trait Auth0User[T] extends StObject {
   
   var emailVerified: Boolean
   
-  var identities: js.Array[js.Any]
+  var identities: js.Array[Any]
   
   var last_ip: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ object Auth0User {
     created_at: String,
     email: String,
     emailVerified: Boolean,
-    identities: js.Array[js.Any],
+    identities: js.Array[Any],
     logins_count: Double,
     name: String,
     nickname: String,
@@ -57,9 +57,9 @@ object Auth0User {
     
     inline def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
     
-    inline def setIdentities(value: js.Array[js.Any]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+    inline def setIdentities(value: js.Array[Any]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
-    inline def setIdentitiesVarargs(value: js.Any*): Self = StObject.set(x, "identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: Any*): Self = StObject.set(x, "identities", js.Array(value*))
     
     inline def setLast_ip(value: String): Self = StObject.set(x, "last_ip", value.asInstanceOf[js.Any])
     

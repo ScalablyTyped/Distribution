@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DiagramNodeChildren")
 @js.native
-/* private */ class DiagramNodeChildren ()
+/* private */ open class DiagramNodeChildren ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DiagramNodeChildren

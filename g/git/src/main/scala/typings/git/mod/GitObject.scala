@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "GitObject")
 @js.native
-class GitObject () extends StObject
+open class GitObject () extends StObject
 /* static members */
 object GitObject {
   
@@ -14,5 +14,5 @@ object GitObject {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def from_raw(rawObject: js.Any, repository: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("from_raw")(rawObject.asInstanceOf[js.Any], repository.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def from_raw(rawObject: Any, repository: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("from_raw")(rawObject.asInstanceOf[js.Any], repository.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

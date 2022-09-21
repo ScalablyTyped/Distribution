@@ -14,7 +14,7 @@ object viewMod {
   
   @JSImport("@uirouter/core/lib/view", "ViewService")
   @js.native
-  class ViewService protected ()
+  open class ViewService protected ()
     extends typings.uirouterCore.viewViewMod.ViewService {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()

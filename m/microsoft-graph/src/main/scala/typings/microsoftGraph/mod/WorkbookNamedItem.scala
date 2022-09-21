@@ -24,7 +24,7 @@ trait WorkbookNamedItem
   var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.
-  var value: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var value: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // Specifies whether the object is visible or not.
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -66,7 +66,7 @@ object WorkbookNamedItem {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValue(value: NullableOption[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Clock")
 @js.native
 /**
-	 * @param [autoStart=true] Automatically start the clock.
-	 */
-class Clock ()
-  extends typings.three.clockMod.Clock {
+  * @param [autoStart=true] Automatically start the clock.
+  */
+open class Clock ()
+  extends typings.three.threeMod.Clock {
   def this(autoStart: Boolean) = this()
 }

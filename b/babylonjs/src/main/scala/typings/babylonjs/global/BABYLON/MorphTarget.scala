@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.MorphTarget")
 @js.native
-class MorphTarget protected ()
+open class MorphTarget protected ()
   extends StObject
      with typings.babylonjs.BABYLON.MorphTarget {
   /**
@@ -61,7 +61,9 @@ object MorphTarget {
   /**
     * Creates a new target from serialized data
     * @param serializationObject defines the serialized data to use
+    * @param scene defines the hosting scene
     * @returns a new MorphTarget
     */
-  inline def Parse(serializationObject: js.Any): typings.babylonjs.BABYLON.MorphTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.MorphTarget]
+  inline def Parse(serializationObject: Any): typings.babylonjs.BABYLON.MorphTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.MorphTarget]
+  inline def Parse(serializationObject: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.MorphTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.MorphTarget]
 }

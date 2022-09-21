@@ -3,7 +3,7 @@ package typings.refArray
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.ref.mod.Type
 import typings.refArray.anon.Dicti
 import org.scalablytyped.runtime.StObject
@@ -29,7 +29,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ref-array", JSImport.Namespace)
   @js.native
-  class Class[T] protected ()
+  open class Class[T] protected ()
     extends StObject
        with ArrayType[T] {
     def this(`type`: String) = this()
@@ -39,7 +39,7 @@ object mod {
     
     /** To invoke when `ref.get` is invoked on a buffer of this type. */
     /* CompleteClass */
-    override def get(buffer: Buffer, offset: Double): js.Any = js.native
+    override def get(buffer: Buffer, offset: Double): Any = js.native
     
     /** The current level of indirection of the buffer. */
     /* CompleteClass */
@@ -47,7 +47,7 @@ object mod {
     
     /** To invoke when `ref.set` is invoked on a buffer of this type. */
     /* CompleteClass */
-    override def set(buffer: Buffer, offset: Double, value: js.Any): Unit = js.native
+    override def set(buffer: Buffer, offset: Double, value: Any): Unit = js.native
     
     /** The size in bytes required to hold this datatype. */
     /* CompleteClass */

@@ -6,20 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "MatrixRowModel")
 @js.native
-class MatrixRowModel protected () extends Base {
-  def this(item: ItemValue, fullName: String, data: IMatrixData, value: js.Any) = this()
+open class MatrixRowModel protected () extends Base {
+  def this(item: ItemValue, fullName: String, data: IMatrixData, value: Any) = this()
   
-  var cellClick: js.Any = js.native
+  var cellClick: Any = js.native
+  
+  var data: IMatrixData = js.native
   
   var fullName: String = js.native
   
-  val locText: LocalizableString = js.native
+  var item: ItemValue = js.native
   
-  val name: String = js.native
+  def locText: LocalizableString = js.native
   
-  val rowClasses: String = js.native
+  def name: String = js.native
   
-  val text: String = js.native
+  def rowClasses: String = js.native
   
-  var value: js.Any = js.native
+  def text: String = js.native
+  
+  def value: Any = js.native
+  def value_=(`val`: Any): Unit = js.native
 }

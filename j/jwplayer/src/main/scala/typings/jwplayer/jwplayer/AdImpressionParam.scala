@@ -25,13 +25,13 @@ trait AdImpressionParam extends StObject {
   
   var linear: String
   
-  var mediafile: js.Any
+  var mediafile: Any
   
   var tag: String
   
   var vastversion: Double
   
-  var wrapper: js.Array[js.Any]
+  var wrapper: js.Array[Any]
 }
 object AdImpressionParam {
   
@@ -43,10 +43,10 @@ object AdImpressionParam {
     client: vast | googima,
     creativetype: String,
     linear: String,
-    mediafile: js.Any,
+    mediafile: Any,
     tag: String,
     vastversion: Double,
-    wrapper: js.Array[js.Any]
+    wrapper: js.Array[Any]
   ): AdImpressionParam = {
     val __obj = js.Dynamic.literal(adposition = adposition.asInstanceOf[js.Any], adsystem = adsystem.asInstanceOf[js.Any], adtitle = adtitle.asInstanceOf[js.Any], clickThroughUrl = clickThroughUrl.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], creativetype = creativetype.asInstanceOf[js.Any], linear = linear.asInstanceOf[js.Any], mediafile = mediafile.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], vastversion = vastversion.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdImpressionParam]
@@ -68,14 +68,14 @@ object AdImpressionParam {
     
     inline def setLinear(value: String): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
-    inline def setMediafile(value: js.Any): Self = StObject.set(x, "mediafile", value.asInstanceOf[js.Any])
+    inline def setMediafile(value: Any): Self = StObject.set(x, "mediafile", value.asInstanceOf[js.Any])
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     inline def setVastversion(value: Double): Self = StObject.set(x, "vastversion", value.asInstanceOf[js.Any])
     
-    inline def setWrapper(value: js.Array[js.Any]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: js.Array[Any]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
-    inline def setWrapperVarargs(value: js.Any*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
+    inline def setWrapperVarargs(value: Any*): Self = StObject.set(x, "wrapper", js.Array(value*))
   }
 }

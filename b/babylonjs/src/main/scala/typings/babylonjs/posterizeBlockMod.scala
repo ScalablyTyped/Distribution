@@ -10,7 +10,7 @@ object posterizeBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/posterizeBlock", "PosterizeBlock")
   @js.native
-  class PosterizeBlock protected () extends NodeMaterialBlock {
+  open class PosterizeBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new PosterizeBlock
       * @param name defines the block name

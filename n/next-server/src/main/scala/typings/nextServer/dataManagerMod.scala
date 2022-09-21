@@ -9,17 +9,17 @@ object dataManagerMod {
   
   @JSImport("next-server/dist/lib/data-manager", "DataManager")
   @js.native
-  class DataManager () extends StObject {
-    def this(data: js.Any) = this()
+  open class DataManager () extends StObject {
+    def this(data: Any) = this()
     
-    var data: Map[String, js.Any] = js.native
+    var data: Map[String, Any] = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
-    def getData(): Map[String, js.Any] = js.native
+    def getData(): Map[String, Any] = js.native
     
-    def overwrite(data: js.Any): Unit = js.native
+    def overwrite(data: Any): Unit = js.native
     
-    def set(key: String, value: js.Any): Unit = js.native
+    def set(key: String, value: Any): Unit = js.native
   }
 }

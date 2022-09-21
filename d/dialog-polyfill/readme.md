@@ -1,7 +1,7 @@
 
 # Scala.js typings for dialog-polyfill
 
-Typings are for version 0.5
+Typings are for version 0.5.6
 
 ## Library description:
 Polyfill for the dialog element
@@ -10,10 +10,10 @@ Polyfill for the dialog element
 | ------------------ | :-------------: |
 | Full name          | dialog-polyfill |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 123 |
-| # downloads        | 2947270 |
-| # stars            | 4 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 429318.6666666667 |
+| # stars            | 2298.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/dialog-polyfill)
@@ -24,7 +24,7 @@ Polyfill for the dialog element
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

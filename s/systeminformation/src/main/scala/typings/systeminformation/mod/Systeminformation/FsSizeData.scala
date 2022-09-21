@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 5. File System
 trait FsSizeData extends StObject {
   
+  var available: Double
+  
   var fs: String
   
   var mount: String
@@ -21,13 +23,23 @@ trait FsSizeData extends StObject {
 }
 object FsSizeData {
   
-  inline def apply(fs: String, mount: String, size: Double, `type`: String, use: Double, used: Double): FsSizeData = {
-    val __obj = js.Dynamic.literal(fs = fs.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
+  inline def apply(
+    available: Double,
+    fs: String,
+    mount: String,
+    size: Double,
+    `type`: String,
+    use: Double,
+    used: Double
+  ): FsSizeData = {
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FsSizeData]
   }
   
   extension [Self <: FsSizeData](x: Self) {
+    
+    inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     inline def setFs(value: String): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     

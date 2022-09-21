@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.geolib.typesMod.AltitudeKeys
 import typings.geolib.typesMod.LatitudeKeys
 import typings.geolib.typesMod.LongitudeKeys
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +52,7 @@ object constantsMod {
   
   @JSImport("geolib/es/constants", "sexagesimalPattern")
   @js.native
-  val sexagesimalPattern: RegExp = js.native
+  val sexagesimalPattern: js.RegExp = js.native
   
   @JSImport("geolib/es/constants", "timeConversion")
   @js.native

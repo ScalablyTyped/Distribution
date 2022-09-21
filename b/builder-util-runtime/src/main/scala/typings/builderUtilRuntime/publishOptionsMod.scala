@@ -1,5 +1,6 @@
 package typings.builderUtilRuntime
 
+import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.AES256
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.REDUCED_REDUNDANCY
@@ -7,17 +8,25 @@ import typings.builderUtilRuntime.builderUtilRuntimeStrings.STANDARD
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.STANDARD_IA
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.`private`
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.`public-read`
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.alpha
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.awsColonkms
-import typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.beta
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.bitbucket
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.custom
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.dev
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.draft
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.generic
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.github
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.http
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.https
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.keygen
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.prerelease
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.rc
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.release
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.s3
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces
+import typings.builderUtilRuntime.builderUtilRuntimeStrings.stable
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,8 +49,10 @@ object publishOptionsMod {
     - typings.builderUtilRuntime.publishOptionsMod.S3Options
     - typings.builderUtilRuntime.publishOptionsMod.SpacesOptions
     - typings.builderUtilRuntime.publishOptionsMod.GenericServerOptions
-    - typings.builderUtilRuntime.publishOptionsMod.BintrayOptions
     - typings.builderUtilRuntime.publishOptionsMod.CustomPublishOptions
+    - typings.builderUtilRuntime.publishOptionsMod.KeygenOptions
+    - typings.builderUtilRuntime.publishOptionsMod.SnapStoreOptions
+    - typings.builderUtilRuntime.publishOptionsMod.BitbucketOptions
   */
   type AllPublishOptions = _AllPublishOptions | String
   
@@ -97,86 +108,63 @@ object publishOptionsMod {
     }
   }
   
-  trait BintrayOptions
+  trait BitbucketOptions
     extends StObject
        with PublishConfiguration
        with _AllPublishOptions {
     
     /**
-      * The Bintray package name.
+      * The channel.
+      * @default latest
       */
-    @JSName("package")
-    val _package: js.UndefOr[String | Null] = js.undefined
+    val channel: js.UndefOr[String | Null] = js.undefined
     
     /**
-      * The Bintray component (Debian only).
+      * Repository owner
       */
-    val component: js.UndefOr[String | Null] = js.undefined
+    val owner: String
     
     /**
-      * The Bintray distribution (Debian only).
-      * @default stable
-      */
-    val distribution: js.UndefOr[String | Null] = js.undefined
-    
-    /**
-      * The owner.
-      */
-    val owner: js.UndefOr[String | Null] = js.undefined
-    
-    /**
-      * The provider. Must be `bintray`.
+      * The provider. Must be `bitbucket`.
       */
     @JSName("provider")
-    val provider_BintrayOptions: bintray
+    val provider_BitbucketOptions: bitbucket
     
     /**
-      * The Bintray repository name.
-      * @default generic
+      * Repository slug/name
       */
-    val repo: js.UndefOr[String | Null] = js.undefined
+    val slug: String
     
+    /**
+      * The access token to support auto-update from private bitbucket repositories.
+      */
     val token: js.UndefOr[String | Null] = js.undefined
     
     /**
-      * The Bintray user account. Used in cases where the owner is an organization.
+      * The user name to support auto-update from private bitbucket repositories.
       */
-    val user: js.UndefOr[String | Null] = js.undefined
+    val username: js.UndefOr[String | Null] = js.undefined
   }
-  object BintrayOptions {
+  object BitbucketOptions {
     
-    inline def apply(): BintrayOptions = {
-      val __obj = js.Dynamic.literal(provider = "bintray")
-      __obj.asInstanceOf[BintrayOptions]
+    inline def apply(owner: String, slug: String): BitbucketOptions = {
+      val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], provider = "bitbucket", slug = slug.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BitbucketOptions]
     }
     
-    extension [Self <: BintrayOptions](x: Self) {
+    extension [Self <: BitbucketOptions](x: Self) {
       
-      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      inline def setComponentNull: Self = StObject.set(x, "component", null)
+      inline def setChannelNull: Self = StObject.set(x, "channel", null)
       
-      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
-      
-      inline def setDistribution(value: String): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
-      
-      inline def setDistributionNull: Self = StObject.set(x, "distribution", null)
-      
-      inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
       inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      inline def setOwnerNull: Self = StObject.set(x, "owner", null)
+      inline def setProvider(value: bitbucket): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
-      
-      inline def setProvider(value: bintray): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
-      
-      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
-      
-      inline def setRepoNull: Self = StObject.set(x, "repo", null)
-      
-      inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -184,30 +172,50 @@ object publishOptionsMod {
       
       inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      inline def setUserNull: Self = StObject.set(x, "user", null)
+      inline def setUsernameNull: Self = StObject.set(x, "username", null)
       
-      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
-      
-      inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
-      
-      inline def set_packageNull: Self = StObject.set(x, "package", null)
-      
-      inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
   trait CustomPublishOptions
     extends StObject
        with PublishConfiguration
-       with /* index */ StringDictionary[js.Any]
-       with _AllPublishOptions
+       with /* index */ StringDictionary[Any]
+       with _AllPublishOptions {
+    
+    /**
+      * The provider. Must be `custom`.
+      */
+    @JSName("provider")
+    val provider_CustomPublishOptions: custom
+    
+    /**
+      * The Provider to provide UpdateInfo regarding available updates.  Required
+      * to use custom providers with electron-updater.
+      */
+    var updateProvider: js.UndefOr[
+        Instantiable3[/* options */ CustomPublishOptions, /* updater */ Any, /* runtimeOptions */ Any, Any]
+      ] = js.undefined
+  }
   object CustomPublishOptions {
     
-    inline def apply(provider: PublishProvider): CustomPublishOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    inline def apply(): CustomPublishOptions = {
+      val __obj = js.Dynamic.literal(provider = "custom")
       __obj.asInstanceOf[CustomPublishOptions]
+    }
+    
+    extension [Self <: CustomPublishOptions](x: Self) {
+      
+      inline def setProvider(value: custom): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateProvider(
+        value: Instantiable3[/* options */ CustomPublishOptions, /* updater */ Any, /* runtimeOptions */ Any, Any]
+      ): Self = StObject.set(x, "updateProvider", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateProviderUndefined: Self = StObject.set(x, "updateProvider", js.undefined)
     }
   }
   
@@ -267,6 +275,12 @@ object publishOptionsMod {
     extends StObject
        with PublishConfiguration
        with _AllPublishOptions {
+    
+    /**
+      * The channel.
+      * @default latest
+      */
+    val channel: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The host (including the port if need).
@@ -329,6 +343,12 @@ object publishOptionsMod {
     
     extension [Self <: GithubOptions](x: Self) {
       
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      
+      inline def setChannelNull: Self = StObject.set(x, "channel", null)
+      
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
       inline def setHostNull: Self = StObject.set(x, "host", null)
@@ -379,6 +399,67 @@ object publishOptionsMod {
     }
   }
   
+  trait KeygenOptions
+    extends StObject
+       with PublishConfiguration
+       with _AllPublishOptions {
+    
+    /**
+      * Keygen account's UUID
+      */
+    val account: String
+    
+    /**
+      * The channel.
+      * @default stable
+      */
+    val channel: js.UndefOr[stable | rc | beta | alpha | dev | Null] = js.undefined
+    
+    /**
+      * The target Platform. Is set programmatically explicitly during publishing.
+      */
+    val platform: js.UndefOr[String | Null] = js.undefined
+    
+    /**
+      * Keygen product's UUID
+      */
+    val product: String
+    
+    /**
+      * The provider. Must be `keygen`.
+      */
+    @JSName("provider")
+    val provider_KeygenOptions: keygen
+  }
+  object KeygenOptions {
+    
+    inline def apply(account: String, product: String): KeygenOptions = {
+      val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], provider = "keygen")
+      __obj.asInstanceOf[KeygenOptions]
+    }
+    
+    extension [Self <: KeygenOptions](x: Self) {
+      
+      inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      
+      inline def setChannel(value: stable | rc | beta | alpha | dev): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      
+      inline def setChannelNull: Self = StObject.set(x, "channel", null)
+      
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      
+      inline def setPlatformNull: Self = StObject.set(x, "platform", null)
+      
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      
+      inline def setProvider(value: keygen): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait PublishConfiguration extends StObject {
     
     /**
@@ -408,6 +489,13 @@ object publishOptionsMod {
     val requestHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
     /**
+      * Request timeout in milliseconds. (Default is 2 minutes; O is ignored)
+      *
+      * @default 60000
+      */
+    val timeout: js.UndefOr[Double | Null] = js.undefined
+    
+    /**
       * @private
       * win-only
       */
@@ -434,11 +522,17 @@ object publishOptionsMod {
       
       inline def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
       
-      inline def setPublisherNameVarargs(value: String*): Self = StObject.set(x, "publisherName", js.Array(value :_*))
+      inline def setPublisherNameVarargs(value: String*): Self = StObject.set(x, "publisherName", js.Array(value*))
       
       inline def setRequestHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
       inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutNull: Self = StObject.set(x, "timeout", null)
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
       inline def setUpdaterCacheDirName(value: String): Self = StObject.set(x, "updaterCacheDirName", value.asInstanceOf[js.Any])
       
@@ -450,23 +544,26 @@ object publishOptionsMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.builderUtilRuntime.builderUtilRuntimeStrings.github
-    - typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray
     - typings.builderUtilRuntime.builderUtilRuntimeStrings.s3
     - typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces
     - typings.builderUtilRuntime.builderUtilRuntimeStrings.generic
     - typings.builderUtilRuntime.builderUtilRuntimeStrings.custom
     - typings.builderUtilRuntime.builderUtilRuntimeStrings.snapStore
+    - typings.builderUtilRuntime.builderUtilRuntimeStrings.keygen
+    - typings.builderUtilRuntime.builderUtilRuntimeStrings.bitbucket
   */
   trait PublishProvider extends StObject
   object PublishProvider {
     
-    inline def bintray: typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray = "bintray".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.bintray]
+    inline def bitbucket: typings.builderUtilRuntime.builderUtilRuntimeStrings.bitbucket = "bitbucket".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.bitbucket]
     
     inline def custom: typings.builderUtilRuntime.builderUtilRuntimeStrings.custom = "custom".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.custom]
     
     inline def generic: typings.builderUtilRuntime.builderUtilRuntimeStrings.generic = "generic".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.generic]
     
     inline def github: typings.builderUtilRuntime.builderUtilRuntimeStrings.github = "github".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.github]
+    
+    inline def keygen: typings.builderUtilRuntime.builderUtilRuntimeStrings.keygen = "keygen".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.keygen]
     
     inline def s3: typings.builderUtilRuntime.builderUtilRuntimeStrings.s3 = "s3".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.s3]
     
@@ -552,6 +649,53 @@ object publishOptionsMod {
     }
   }
   
+  trait SnapStoreOptions
+    extends StObject
+       with PublishConfiguration
+       with _AllPublishOptions {
+    
+    /**
+      * The list of channels the snap would be released.
+      * @default ["edge"]
+      */
+    val channels: js.UndefOr[String | js.Array[String] | Null] = js.undefined
+    
+    /**
+      * The provider. Must be `snapStore`.
+      */
+    @JSName("provider")
+    val provider_SnapStoreOptions: snapStore
+    
+    /**
+      * snapcraft repo name
+      */
+    val repo: js.UndefOr[String] = js.undefined
+  }
+  object SnapStoreOptions {
+    
+    inline def apply(): SnapStoreOptions = {
+      val __obj = js.Dynamic.literal(provider = "snapStore")
+      __obj.asInstanceOf[SnapStoreOptions]
+    }
+    
+    extension [Self <: SnapStoreOptions](x: Self) {
+      
+      inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      
+      inline def setChannelsNull: Self = StObject.set(x, "channels", null)
+      
+      inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+      
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
+      
+      inline def setProvider(value: snapStore): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      
+      inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+    }
+  }
+  
   trait SpacesOptions
     extends StObject
        with BaseS3Options
@@ -593,13 +737,13 @@ object publishOptionsMod {
   trait _AllPublishOptions extends StObject
   object _AllPublishOptions {
     
-    inline def BintrayOptions(): typings.builderUtilRuntime.publishOptionsMod.BintrayOptions = {
-      val __obj = js.Dynamic.literal(provider = "bintray")
-      __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.BintrayOptions]
+    inline def BitbucketOptions(owner: String, slug: String): typings.builderUtilRuntime.publishOptionsMod.BitbucketOptions = {
+      val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], provider = "bitbucket", slug = slug.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.BitbucketOptions]
     }
     
-    inline def CustomPublishOptions(provider: PublishProvider): typings.builderUtilRuntime.publishOptionsMod.CustomPublishOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    inline def CustomPublishOptions(): typings.builderUtilRuntime.publishOptionsMod.CustomPublishOptions = {
+      val __obj = js.Dynamic.literal(provider = "custom")
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.CustomPublishOptions]
     }
     
@@ -613,9 +757,19 @@ object publishOptionsMod {
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.GithubOptions]
     }
     
+    inline def KeygenOptions(account: String, product: String): typings.builderUtilRuntime.publishOptionsMod.KeygenOptions = {
+      val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], provider = "keygen")
+      __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.KeygenOptions]
+    }
+    
     inline def S3Options(bucket: String): typings.builderUtilRuntime.publishOptionsMod.S3Options = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = "s3")
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.S3Options]
+    }
+    
+    inline def SnapStoreOptions(): typings.builderUtilRuntime.publishOptionsMod.SnapStoreOptions = {
+      val __obj = js.Dynamic.literal(provider = "snapStore")
+      __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.SnapStoreOptions]
     }
     
     inline def SpacesOptions(name: String, region: String): typings.builderUtilRuntime.publishOptionsMod.SpacesOptions = {

@@ -39,11 +39,11 @@ object ASPxClientCrosshairElementGroup {
     
     inline def setCrosshairElements(value: js.Array[ASPxClientCrosshairElement]): Self = StObject.set(x, "CrosshairElements", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairElementsVarargs(value: ASPxClientCrosshairElement*): Self = StObject.set(x, "CrosshairElements", js.Array(value :_*))
+    inline def setCrosshairElementsVarargs(value: ASPxClientCrosshairElement*): Self = StObject.set(x, "CrosshairElements", js.Array(value*))
     
     inline def setCrosshairIndicatorElements(value: js.Array[ASPxClientCrosshairIndicatorElement]): Self = StObject.set(x, "CrosshairIndicatorElements", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairIndicatorElementsVarargs(value: ASPxClientCrosshairIndicatorElement*): Self = StObject.set(x, "CrosshairIndicatorElements", js.Array(value :_*))
+    inline def setCrosshairIndicatorElementsVarargs(value: ASPxClientCrosshairIndicatorElement*): Self = StObject.set(x, "CrosshairIndicatorElements", js.Array(value*))
     
     inline def setHeaderElement(value: ASPxClientCrosshairGroupHeaderElement): Self = StObject.set(x, "HeaderElement", value.asInstanceOf[js.Any])
   }

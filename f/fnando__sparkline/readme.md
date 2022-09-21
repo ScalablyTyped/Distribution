@@ -10,10 +10,10 @@ Generate SVG sparklines with JavaScript without any external dependency.
 | ------------------ | :-------------: |
 | Full name          | @fnando/sparkline |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 84049 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12199.666666666666 |
+| # stars            | 426.0 |
 
 ## Links
 - [Homepage](https://github.com/fnando/sparkline#readme)

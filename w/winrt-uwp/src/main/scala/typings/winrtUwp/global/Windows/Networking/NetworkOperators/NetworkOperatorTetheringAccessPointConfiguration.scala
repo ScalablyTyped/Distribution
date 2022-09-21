@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringAccessPointConfiguration")
 @js.native
 /** Creates an instance of the NetworkOperatorTetheringAccessPointConfiguration . */
-class NetworkOperatorTetheringAccessPointConfiguration ()
+open class NetworkOperatorTetheringAccessPointConfiguration ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringAccessPointConfiguration {
   

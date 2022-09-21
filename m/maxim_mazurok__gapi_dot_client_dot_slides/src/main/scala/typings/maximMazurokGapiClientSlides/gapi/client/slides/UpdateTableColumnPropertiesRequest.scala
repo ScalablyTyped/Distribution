@@ -38,7 +38,7 @@ object UpdateTableColumnPropertiesRequest {
     
     inline def setColumnIndicesUndefined: Self = StObject.set(x, "columnIndices", js.undefined)
     
-    inline def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value :_*))
+    inline def setColumnIndicesVarargs(value: Double*): Self = StObject.set(x, "columnIndices", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

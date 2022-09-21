@@ -77,7 +77,7 @@ object anon {
     var currentlyHoveredDroppableId: js.UndefOr[Id] = js.undefined
     
     /** Data from the data property of the <Draggable/> which is currently active. null if not dragging. */
-    var data: js.Any
+    var data: Any
     
     var events: OnMouseDown
     
@@ -105,7 +105,7 @@ object anon {
   object StateisActivebooleanevent {
     
     inline def apply(
-      data: js.Any,
+      data: Any,
       events: OnMouseDown,
       isActive: Boolean,
       isDragging: Boolean,
@@ -128,13 +128,13 @@ object anon {
       
       inline def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
       
-      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
+      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value*))
       
       inline def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
       
       inline def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setEvents(value: OnMouseDown): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -169,7 +169,7 @@ object anon {
     var currentlyHoveredDroppableId: js.UndefOr[Id] = js.undefined
     
     /** Data from the data property of the <Draggable/> which is currently active. null if not dragging. */
-    var data: js.Any
+    var data: Any
     
     /** A boolean representing whether the user is currently dragging. */
     var isDragging: Boolean
@@ -195,7 +195,7 @@ object anon {
   object StateisOverAcceptedboolea {
     
     inline def apply(
-      data: js.Any,
+      data: Any,
       isDragging: Boolean,
       isOverAccepted: Boolean,
       startingX: Double,
@@ -217,13 +217,13 @@ object anon {
       
       inline def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
       
-      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
+      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value*))
       
       inline def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
       
       inline def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       
@@ -256,7 +256,7 @@ object anon {
     var currentlyHoveredDroppableId: js.UndefOr[Id] = js.undefined
     
     /** Data from the data property of the <Draggable/> which is currently active. null if not dragging. */
-    var data: js.Any
+    var data: Any
     
     var events: OnMouseEnter
     
@@ -287,7 +287,7 @@ object anon {
   object StateisOverbooleanwillAcc {
     
     inline def apply(
-      data: js.Any,
+      data: Any,
       events: OnMouseEnter,
       isDragging: Boolean,
       isOver: Boolean,
@@ -311,13 +311,13 @@ object anon {
       
       inline def setCurrentlyHoveredDroppableAcceptsUndefined: Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.undefined)
       
-      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value :_*))
+      inline def setCurrentlyHoveredDroppableAcceptsVarargs(value: String*): Self = StObject.set(x, "currentlyHoveredDroppableAccepts", js.Array(value*))
       
       inline def setCurrentlyHoveredDroppableId(value: Id): Self = StObject.set(x, "currentlyHoveredDroppableId", value.asInstanceOf[js.Any])
       
       inline def setCurrentlyHoveredDroppableIdUndefined: Self = StObject.set(x, "currentlyHoveredDroppableId", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setEvents(value: OnMouseEnter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       

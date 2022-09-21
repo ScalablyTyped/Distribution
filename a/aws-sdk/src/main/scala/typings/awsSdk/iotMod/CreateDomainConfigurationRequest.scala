@@ -22,12 +22,12 @@ trait CreateDomainConfigurationRequest extends StObject {
   var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
-    * The ARNs of the certificates that AWS IoT passes to the device during the TLS handshake. Currently you can specify only one certificate ARN. This value is not required for AWS-managed domains.
+    * The ARNs of the certificates that IoT passes to the device during the TLS handshake. Currently you can specify only one certificate ARN. This value is not required for Amazon Web Services-managed domains.
     */
   var serverCertificateArns: js.UndefOr[ServerCertificateArns] = js.undefined
   
   /**
-    * The type of service delivered by the endpoint.  AWS IoT Core currently supports only the DATA service type. 
+    * The type of service delivered by the endpoint.  Amazon Web Services IoT Core currently supports only the DATA service type. 
     */
   var serviceType: js.UndefOr[ServiceType] = js.undefined
   
@@ -37,7 +37,7 @@ trait CreateDomainConfigurationRequest extends StObject {
   var tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The certificate used to validate the server certificate and prove domain name ownership. This certificate must be signed by a public certificate authority. This value is not required for AWS-managed domains.
+    * The certificate used to validate the server certificate and prove domain name ownership. This certificate must be signed by a public certificate authority. This value is not required for Amazon Web Services-managed domains.
     */
   var validationCertificateArn: js.UndefOr[AcmCertificateArn] = js.undefined
 }
@@ -64,7 +64,7 @@ object CreateDomainConfigurationRequest {
     
     inline def setServerCertificateArnsUndefined: Self = StObject.set(x, "serverCertificateArns", js.undefined)
     
-    inline def setServerCertificateArnsVarargs(value: AcmCertificateArn*): Self = StObject.set(x, "serverCertificateArns", js.Array(value :_*))
+    inline def setServerCertificateArnsVarargs(value: AcmCertificateArn*): Self = StObject.set(x, "serverCertificateArns", js.Array(value*))
     
     inline def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
@@ -74,7 +74,7 @@ object CreateDomainConfigurationRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setValidationCertificateArn(value: AcmCertificateArn): Self = StObject.set(x, "validationCertificateArn", value.asInstanceOf[js.Any])
     

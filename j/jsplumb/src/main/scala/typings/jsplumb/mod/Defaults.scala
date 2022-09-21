@@ -16,7 +16,7 @@ trait Defaults extends StObject {
   
   var Connector: js.UndefOr[ConnectorSpec] = js.undefined
   
-  var Container: js.UndefOr[js.Any] = js.undefined
+  var Container: js.UndefOr[Any] = js.undefined
   
   // string(selector or id) or element
   var DragOptions: js.UndefOr[typings.jsplumb.mod.DragOptions] = js.undefined
@@ -48,7 +48,7 @@ object Defaults {
     
     inline def setAnchorUndefined: Self = StObject.set(x, "Anchor", js.undefined)
     
-    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "Anchor", js.Array(value :_*))
+    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "Anchor", js.Array(value*))
     
     inline def setAnchors(value: js.Tuple2[AnchorSpec, AnchorSpec]): Self = StObject.set(x, "Anchors", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object Defaults {
     
     inline def setConnectionOverlaysUndefined: Self = StObject.set(x, "ConnectionOverlays", js.undefined)
     
-    inline def setConnectionOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "ConnectionOverlays", js.Array(value :_*))
+    inline def setConnectionOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "ConnectionOverlays", js.Array(value*))
     
     inline def setConnectionsDetachable(value: Boolean): Self = StObject.set(x, "ConnectionsDetachable", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object Defaults {
     
     inline def setConnectorUndefined: Self = StObject.set(x, "Connector", js.undefined)
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
     

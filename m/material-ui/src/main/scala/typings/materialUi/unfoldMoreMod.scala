@@ -10,10 +10,10 @@ object unfoldMoreMod {
   
   @JSImport("material-ui/svg-icons/navigation/unfold-more", JSImport.Default)
   @js.native
-  class default () extends NavigationUnfoldMore
+  open class default () extends NavigationUnfoldMore
   
   @JSImport("material-ui/svg-icons/navigation/unfold-more", "NavigationUnfoldMore")
   @js.native
-  class NavigationUnfoldMore ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationUnfoldMore ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -86,6 +86,12 @@ object typescriptStrings {
   inline def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
+  sealed trait Space
+    extends StObject
+       with CompletionsTriggerCharacter
+  inline def Space: Space = (" ").asInstanceOf[Space]
+  
+  @js.native
   sealed trait UpdateGraph extends StObject
   inline def UpdateGraph: UpdateGraph = "UpdateGraph".asInstanceOf[UpdateGraph]
   
@@ -102,6 +108,10 @@ object typescriptStrings {
   inline def actionColonColonset: actionColonColonset = "action::set".asInstanceOf[actionColonColonset]
   
   @js.native
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
@@ -116,6 +126,10 @@ object typescriptStrings {
     extends StObject
        with TypeOfTag
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @js.native
+  sealed trait braces extends StObject
+  inline def braces: braces = "braces".asInstanceOf[braces]
   
   @js.native
   sealed trait camelCase extends StObject
@@ -196,12 +210,20 @@ object typescriptStrings {
   inline def js_ : js_ = "js".asInstanceOf[js_]
   
   @js.native
+  sealed trait literals extends StObject
+  inline def literals: literals = "literals".asInstanceOf[literals]
+  
+  @js.native
   sealed trait minimal extends StObject
   inline def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
   sealed trait `non-relative` extends StObject
   inline def `non-relative`: `non-relative` = "non-relative".asInstanceOf[`non-relative`]
+  
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait number
@@ -228,6 +250,10 @@ object typescriptStrings {
   inline def prefix: prefix = "prefix".asInstanceOf[prefix]
   
   @js.native
+  sealed trait `project-relative` extends StObject
+  inline def `project-relative`: `project-relative` = "project-relative".asInstanceOf[`project-relative`]
+  
+  @js.native
   sealed trait quit extends StObject
   inline def quit: quit = "quit".asInstanceOf[quit]
   
@@ -238,6 +264,10 @@ object typescriptStrings {
   @js.native
   sealed trait retrigger extends StObject
   inline def retrigger: retrigger = "retrigger".asInstanceOf[retrigger]
+  
+  @js.native
+  sealed trait shortest extends StObject
+  inline def shortest: shortest = "shortest".asInstanceOf[shortest]
   
   @js.native
   sealed trait single extends StObject

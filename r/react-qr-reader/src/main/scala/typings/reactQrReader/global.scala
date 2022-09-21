@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("QrReader")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactQrReader.mod.^
   }
 }

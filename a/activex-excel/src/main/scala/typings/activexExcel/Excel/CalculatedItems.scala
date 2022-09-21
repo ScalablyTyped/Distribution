@@ -25,7 +25,7 @@ trait CalculatedItems extends StObject {
   def Item(Index: String): PivotItem = js.native
   def Item(Index: Double): PivotItem = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Add(Name: String, Formula: String): PivotItem = js.native
   

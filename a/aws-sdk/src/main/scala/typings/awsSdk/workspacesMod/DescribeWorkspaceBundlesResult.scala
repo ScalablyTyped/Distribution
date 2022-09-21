@@ -12,7 +12,7 @@ trait DescribeWorkspaceBundlesResult extends StObject {
   var Bundles: js.UndefOr[BundleList] = js.undefined
   
   /**
-    * The token to use to retrieve the next set of results, or null if there are no more results available. This token is valid for one day and must be used within that time frame.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. This token is valid for one day and must be used within that time frame.
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeWorkspaceBundlesResult {
     
     inline def setBundlesUndefined: Self = StObject.set(x, "Bundles", js.undefined)
     
-    inline def setBundlesVarargs(value: WorkspaceBundle*): Self = StObject.set(x, "Bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: WorkspaceBundle*): Self = StObject.set(x, "Bundles", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

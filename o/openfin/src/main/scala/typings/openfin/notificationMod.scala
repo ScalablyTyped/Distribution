@@ -13,11 +13,11 @@ object notificationMod {
   
   @JSImport("openfin/_v2/api/notification/notification", JSImport.Default)
   @js.native
-  class default () extends NotificationModule
+  open class default () extends NotificationModule
   
   @JSImport("openfin/_v2/api/notification/notification", "_Notification")
   @js.native
-  class Notification protected () extends EmitterBase[NotificationEvents] {
+  open class Notification protected () extends EmitterBase[NotificationEvents] {
     def this(wire: typings.openfin.transportMod.default, options: NotificationOptions) = this()
     
     /**
@@ -27,11 +27,11 @@ object notificationMod {
       */
     def close(): js.Promise[Unit] = js.native
     
-    /* protected */ def generalListener(msg: js.Any): Unit = js.native
+    /* protected */ def generalListener(msg: Any): Unit = js.native
     
-    /* private */ var listenerList: js.Any = js.native
+    /* private */ var listenerList: Any = js.native
     
-    var message: js.Any = js.native
+    var message: Any = js.native
     
     /* protected */ var notificationId: Double = js.native
     
@@ -46,7 +46,7 @@ object notificationMod {
       * @return {Promise.<void>}
       * @tutorial Notification.sendMessage
       */
-    def sendMessage(message: js.Any): js.Promise[Unit] = js.native
+    def sendMessage(message: Any): js.Promise[Unit] = js.native
     
     /**
       * Invoked when the notification is shown
@@ -57,15 +57,15 @@ object notificationMod {
     
     var timeout: Double | String = js.native
     
-    /* private */ var unhookAllListeners: js.Any = js.native
+    /* private */ var unhookAllListeners: Any = js.native
     
     var url: String = js.native
   }
   
   @JSImport("openfin/_v2/api/notification/notification", "NotificationOptions")
   @js.native
-  class NotificationOptions protected () extends StObject {
-    def this(options: js.Any, identity: Identity, notificationId: Double) = this()
+  open class NotificationOptions protected () extends StObject {
+    def this(options: Any, identity: Identity, notificationId: Double) = this()
     
     var ignoreMouseOver: Boolean = js.native
     
@@ -82,7 +82,7 @@ object notificationMod {
   
   trait NotificationCallback extends StObject {
     
-    var message: js.UndefOr[js.Any] = js.undefined
+    var message: js.UndefOr[Any] = js.undefined
   }
   object NotificationCallback {
     
@@ -93,7 +93,7 @@ object notificationMod {
     
     extension [Self <: NotificationCallback](x: Self) {
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
@@ -109,12 +109,12 @@ object notificationMod {
       * @tutorial Notification.create
       * @static
       */
-    def create(options: js.Any): Notification = js.native
+    def create(options: Any): Notification = js.native
     
     var events: Click = js.native
     
-    /* private */ var genNoteId: js.Any = js.native
+    /* private */ var genNoteId: Any = js.native
     
-    /* private */ var nextNoteId: js.Any = js.native
+    /* private */ var nextNoteId: Any = js.native
   }
 }

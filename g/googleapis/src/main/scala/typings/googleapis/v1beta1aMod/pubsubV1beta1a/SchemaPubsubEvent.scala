@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An event indicating a received message or truncation event.
-  */
 trait SchemaPubsubEvent extends StObject {
   
   /**
-    * Indicates that this subscription has been deleted. (Note that pull
-    * subscribers will always receive NOT_FOUND in response in their pull
-    * request on the subscription, rather than seeing this boolean.)
+    * Indicates that this subscription has been deleted. (Note that pull subscribers will always receive NOT_FOUND in response in their pull request on the subscription, rather than seeing this boolean.)
     */
-  var deleted: js.UndefOr[Boolean] = js.undefined
+  var deleted: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * A received message.
@@ -24,12 +19,12 @@ trait SchemaPubsubEvent extends StObject {
   /**
     * The subscription that received the event.
     */
-  var subscription: js.UndefOr[String] = js.undefined
+  var subscription: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Indicates that this subscription has been truncated.
     */
-  var truncated: js.UndefOr[Boolean] = js.undefined
+  var truncated: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaPubsubEvent {
   
@@ -42,6 +37,8 @@ object SchemaPubsubEvent {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
+    inline def setDeletedNull: Self = StObject.set(x, "deleted", null)
+    
     inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     inline def setMessage(value: SchemaPubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
@@ -50,9 +47,13 @@ object SchemaPubsubEvent {
     
     inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
+    inline def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    
     inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+    
+    inline def setTruncatedNull: Self = StObject.set(x, "truncated", null)
     
     inline def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
   }

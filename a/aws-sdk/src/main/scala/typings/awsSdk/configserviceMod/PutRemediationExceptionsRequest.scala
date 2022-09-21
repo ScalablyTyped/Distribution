@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutRemediationExceptionsRequest extends StObject {
   
   /**
-    * The name of the AWS Config rule for which you want to create remediation exception.
+    * The name of the Config rule for which you want to create remediation exception.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
     * The exception is automatically deleted after the expiration date.
     */
-  var ExpirationTime: js.UndefOr[Date] = js.undefined
+  var ExpirationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The message contains an explanation of the exception.
@@ -22,7 +22,7 @@ trait PutRemediationExceptionsRequest extends StObject {
   var Message: js.UndefOr[StringWithCharLimit1024] = js.undefined
   
   /**
-    * An exception list of resource exception keys to be processed with the current request. AWS Config adds exception for each resource key. For example, AWS Config adds 3 exceptions for 3 resource keys. 
+    * An exception list of resource exception keys to be processed with the current request. Config adds exception for each resource key. For example, Config adds 3 exceptions for 3 resource keys. 
     */
   var ResourceKeys: RemediationExceptionResourceKeys
 }
@@ -37,7 +37,7 @@ object PutRemediationExceptionsRequest {
     
     inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    inline def setExpirationTime(value: Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: js.Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
@@ -47,6 +47,6 @@ object PutRemediationExceptionsRequest {
     
     inline def setResourceKeys(value: RemediationExceptionResourceKeys): Self = StObject.set(x, "ResourceKeys", value.asInstanceOf[js.Any])
     
-    inline def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value :_*))
+    inline def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value*))
   }
 }

@@ -4,7 +4,6 @@ import typings.grunt.grunt.config.IProjectConfig
 import typings.grunt.grunt.file.IFileMap
 import typings.grunt.grunt.file.IFilesArray
 import typings.grunt.grunt.file.IFilesConfig
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,8 +14,8 @@ object task {
   trait AsyncResultCatcher extends StObject {
     
     def apply(): Unit = js.native
-    def apply(error: Error): Unit = js.native
-    def apply(result: js.Any): Unit = js.native
+    def apply(error: js.Error): Unit = js.native
+    def apply(result: Any): Unit = js.native
     /**
       * Either false or an Error object may be passed to the done function
       * to instruct Grunt that the task has failed.
@@ -40,7 +39,7 @@ object task {
     def registerMultiTask(
       taskName: String,
       taskDescription: String,
-      taskFunction: js.ThisFunction1[/* this */ IMultiTask[js.Any], /* repeated */ js.Any, Unit]
+      taskFunction: js.ThisFunction1[/* this */ IMultiTask[Any], /* repeated */ Any, Unit]
     ): Unit = js.native
     /**
       * Register a "multi task." A multi task is a task that implicitly iterates over all of its
@@ -52,13 +51,13 @@ object task {
       */
     def registerMultiTask(
       taskName: String,
-      taskFunction: js.ThisFunction1[/* this */ IMultiTask[js.Any], /* repeated */ js.Any, Unit]
+      taskFunction: js.ThisFunction1[/* this */ IMultiTask[Any], /* repeated */ Any, Unit]
     ): Unit = js.native
     
     def registerTask(
       taskName: String,
       description: String,
-      taskFunction: js.ThisFunction1[/* this */ ITask, /* repeated */ js.Any, Unit]
+      taskFunction: js.ThisFunction1[/* this */ ITask, /* repeated */ Any, Unit]
     ): Unit = js.native
     def registerTask(taskName: String, description: String, taskList: js.Array[String]): Unit = js.native
     /**
@@ -71,7 +70,7 @@ object task {
       *
       * @note taskFunction.apply(scope: grunt.task.ITask, args: any[])
       */
-    def registerTask(taskName: String, taskFunction: js.ThisFunction1[/* this */ ITask, /* repeated */ js.Any, Unit]): Unit = js.native
+    def registerTask(taskName: String, taskFunction: js.ThisFunction1[/* this */ ITask, /* repeated */ Any, Unit]): Unit = js.native
     /**
       * If a task list is specified, the new task will be an alias for one or more other tasks.
       * Whenever this "alias task" is run, every specified task in taskList will be run, in the order specified.
@@ -200,14 +199,15 @@ object task {
       */
     var nameArgs: String = js.native
     
-    def options(defaultsObj: js.Any): ITaskOptions = js.native
+    def options(defaultsObj: Any): ITaskOptions = js.native
     /**
       * Returns an options object.
       * Properties of the optional defaultsObj argument will be overridden by any task-level options
       * object properties, which will be further overridden in multi tasks by any target-level
       * options object properties.
       */
-    def options[T](defaultsObj: T): T = js.native
+    @JSName("options")
+    def options_T_T[T](defaultsObj: T): T = js.native
     
     def requires(tasks: String, otherTasks: String*): Unit = js.native
     /**
@@ -255,9 +255,9 @@ object task {
     
     // files?: grunt.file.IFilesArray
     // files?: grunt.file.IFilesMap
-    var files: js.UndefOr[js.Any] = js.undefined
+    var files: js.UndefOr[Any] = js.undefined
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
   }
   object ITaskOptions {
     
@@ -268,11 +268,11 @@ object task {
     
     extension [Self <: ITaskOptions](x: Self) {
       
-      inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
@@ -295,7 +295,7 @@ object task {
       * The currently running task or multitask.
       * @see http://gruntjs.com/api/inside-tasks
       */
-    var current: IMultiTask[js.Any] = js.native
+    var current: IMultiTask[Any] = js.native
     
     /**
       * Normalizes a task target configuration object into an array of src-dest file mappings.

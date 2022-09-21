@@ -11,8 +11,8 @@ trait Certificates extends StObject {
   val Count: Double = js.native
   
   def Find(findType: ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE]): Certificates = js.native
-  def Find(findType: ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], varCriteria: js.Any): Certificates = js.native
-  def Find(findType: ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], varCriteria: js.Any, bFindValidOnly: Boolean): Certificates = js.native
+  def Find(findType: ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], varCriteria: Any): Certificates = js.native
+  def Find(findType: ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], varCriteria: Any, bFindValidOnly: Boolean): Certificates = js.native
   def Find(findType: ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], varCriteria: Unit, bFindValidOnly: Boolean): Certificates = js.native
   
   def Item(index: Double): Certificate = js.native

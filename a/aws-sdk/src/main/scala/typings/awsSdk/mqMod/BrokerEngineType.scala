@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BrokerEngineType extends StObject {
   
   /**
-    * The type of broker engine.
+    * The broker's engine type.
     */
   var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
   
@@ -33,6 +33,6 @@ object BrokerEngineType {
     
     inline def setEngineVersionsUndefined: Self = StObject.set(x, "EngineVersions", js.undefined)
     
-    inline def setEngineVersionsVarargs(value: EngineVersion*): Self = StObject.set(x, "EngineVersions", js.Array(value :_*))
+    inline def setEngineVersionsVarargs(value: EngineVersion*): Self = StObject.set(x, "EngineVersions", js.Array(value*))
   }
 }

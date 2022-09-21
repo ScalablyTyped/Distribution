@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionComposite")
 @js.native
-class QuestionComposite protected () extends QuestionCompositeModel {
-  def this(name: String, questionJSON: ComponentQuestionJSON) = this()
+open class QuestionComposite protected () extends QuestionCompositeModel {
+  def this(name: String, questionJSON: Any) = this()
+  
+  var _implementor: QuestionImplementor = js.native
 }

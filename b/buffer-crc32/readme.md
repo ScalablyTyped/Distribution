@@ -10,10 +10,10 @@ A pure javascript CRC32 algorithm that plays nice with binary data
 | ------------------ | :-------------: |
 | Full name          | buffer-crc32 |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 251 |
-| # downloads        | 340395807 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.4856491666666664E7 |
+| # stars            | 89.0 |
 
 ## Links
 - [Homepage](https://github.com/brianloveswords/buffer-crc32)

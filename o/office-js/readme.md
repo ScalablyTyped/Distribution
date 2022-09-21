@@ -11,9 +11,9 @@ Utility for office cloud services.
 | Full name          | office-js |
 | Keywords           | office, googleapps, office365, word, excel |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 5460 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 728.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/office-js)

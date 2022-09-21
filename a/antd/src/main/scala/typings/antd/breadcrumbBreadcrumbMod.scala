@@ -29,19 +29,21 @@ object breadcrumbBreadcrumbMod extends Shortcut {
   
   trait BreadcrumbProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var itemRender: js.UndefOr[
         js.Function4[
           /* route */ Route, 
-          /* params */ js.Any, 
+          /* params */ Any, 
           /* routes */ js.Array[Route], 
           /* paths */ js.Array[String], 
           ReactNode
         ]
       ] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -60,17 +62,21 @@ object breadcrumbBreadcrumbMod extends Shortcut {
     
     extension [Self <: BreadcrumbProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setItemRender(
-        value: (/* route */ Route, /* params */ js.Any, /* routes */ js.Array[Route], /* paths */ js.Array[String]) => ReactNode
+        value: (/* route */ Route, /* params */ Any, /* routes */ js.Array[Route], /* paths */ js.Array[String]) => ReactNode
       ): Self = StObject.set(x, "itemRender", js.Any.fromFunction4(value))
       
       inline def setItemRenderUndefined: Self = StObject.set(x, "itemRender", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -82,7 +88,7 @@ object breadcrumbBreadcrumbMod extends Shortcut {
       
       inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setSeparator(value: ReactNode): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
@@ -117,7 +123,7 @@ object breadcrumbBreadcrumbMod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: OmitRoutechildren*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: OmitRoutechildren*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

@@ -8,9 +8,9 @@ trait Npv extends StObject {
   
   var npv: js.UndefOr[Decimals] = js.undefined
   
-  var title: js.UndefOr[Fontfamily] = js.undefined
+  var title: js.UndefOr[FontStyle] = js.undefined
   
-  var value: js.UndefOr[Fontfamily] = js.undefined
+  var value: js.UndefOr[FontStyle] = js.undefined
   
   /**
     * To set the visibility of the object. true | false
@@ -30,11 +30,11 @@ object Npv {
     
     inline def setNpvUndefined: Self = StObject.set(x, "npv", js.undefined)
     
-    inline def setTitle(value: Fontfamily): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: FontStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setValue(value: Fontfamily): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FontStyle): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

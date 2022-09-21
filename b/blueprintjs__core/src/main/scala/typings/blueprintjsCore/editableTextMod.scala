@@ -11,10 +11,10 @@ object editableTextMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/editable-text/editableText", "EditableText")
   @js.native
-  class EditableText protected ()
-    extends AbstractPureComponent2[IEditableTextProps, IEditableTextState, js.Object] {
-    def this(props: IEditableTextProps) = this()
-    def this(props: IEditableTextProps, context: js.Any) = this()
+  open class EditableText protected ()
+    extends AbstractPureComponent2[EditableTextProps, IEditableTextState, js.Object] {
+    def this(props: EditableTextProps) = this()
+    def this(props: EditableTextProps, context: Any) = this()
     
     def cancelEditing(): Unit = js.native
     
@@ -22,25 +22,25 @@ object editableTextMod {
     def componentDidMount_MEditableText(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MEditableText(prevProps: IEditableTextProps, prevState: IEditableTextState): Unit = js.native
+    def componentDidUpdate_MEditableText(prevProps: EditableTextProps, prevState: IEditableTextState): Unit = js.native
     
-    /* private */ var handleFocus: js.Any = js.native
+    /* private */ var handleFocus: Any = js.native
     
-    /* private */ var handleKeyEvent: js.Any = js.native
+    /* private */ var handleKeyEvent: Any = js.native
     
-    /* private */ var handleTextChange: js.Any = js.native
+    /* private */ var handleTextChange: Any = js.native
     
-    /* private */ var inputElement: js.Any = js.native
+    /* private */ var inputElement: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: Any = js.native
     
-    /* private */ var renderInput: js.Any = js.native
+    /* private */ var renderInput: Any = js.native
     
     def toggleEditing(): Unit = js.native
     
-    /* private */ var updateInputDimensions: js.Any = js.native
+    /* private */ var updateInputDimensions: Any = js.native
     
-    /* private */ var valueElement: js.Any = js.native
+    /* private */ var valueElement: Any = js.native
   }
   /* static members */
   object EditableText {
@@ -51,14 +51,16 @@ object editableTextMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/editable-text/editableText", "EditableText.defaultProps")
     @js.native
-    def defaultProps: IEditableTextProps = js.native
-    inline def defaultProps_=(x: IEditableTextProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: EditableTextProps = js.native
+    inline def defaultProps_=(x: EditableTextProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/editable-text/editableText", "EditableText.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
+  
+  type EditableTextProps = IEditableTextProps
   
   trait IEditableTextProps
     extends StObject
@@ -74,6 +76,7 @@ object editableTextMod {
       *
       * This behavior can help in certain applications where, for example, a custom right-click
       * context menu is used to supply clipboard copy and paste functionality.
+      *
       * @default false
       */
     var alwaysRenderInput: js.UndefOr[Boolean] = js.undefined
@@ -82,15 +85,20 @@ object editableTextMod {
       * If `true` and in multiline mode, the `enter` key will trigger onConfirm and `mod+enter`
       * will insert a newline. If `false`, the key bindings are inverted such that `enter`
       * adds a newline.
+      *
       * @default false
       */
     var confirmOnEnterKey: js.UndefOr[Boolean] = js.undefined
+    
+    /** ID attribute to pass to the underlying element that contains the text contents. This allows for referencing via aria attributes */
+    var contentId: js.UndefOr[String] = js.undefined
     
     /** Default text value of uncontrolled input. */
     var defaultValue: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the text can be edited.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -108,6 +116,7 @@ object editableTextMod {
     
     /**
       * Minimum number of lines (essentially minimum height), when `multiline`.
+      *
       * @default 1
       */
     var minLines: js.UndefOr[Double] = js.undefined
@@ -118,6 +127,7 @@ object editableTextMod {
     /**
       * Whether the component supports multiple lines of text.
       * This prop should not be changed during the component's lifetime.
+      *
       * @default false
       */
     var multiline: js.UndefOr[Boolean] = js.undefined
@@ -136,6 +146,7 @@ object editableTextMod {
     
     /**
       * Placeholder text when there is no value.
+      *
       * @default "Click to Edit"
       */
     var placeholder: js.UndefOr[String] = js.undefined
@@ -144,6 +155,7 @@ object editableTextMod {
       * Whether the entire text field should be selected on focus.
       * If `false`, the cursor is placed at the end of the text.
       * This prop is ignored on inputs with type other then text, search, url, tel and password. See https://html.spec.whatwg.org/multipage/input.html#do-not-apply for details.
+      *
       * @default false
       */
     var selectAllOnFocus: js.UndefOr[Boolean] = js.undefined
@@ -172,6 +184,10 @@ object editableTextMod {
       inline def setConfirmOnEnterKey(value: Boolean): Self = StObject.set(x, "confirmOnEnterKey", value.asInstanceOf[js.Any])
       
       inline def setConfirmOnEnterKeyUndefined: Self = StObject.set(x, "confirmOnEnterKey", js.undefined)
+      
+      inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+      
+      inline def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

@@ -12,6 +12,11 @@ trait CreateTransitGatewayMulticastDomainRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The options for the transit gateway multicast domain.
+    */
+  var Options: js.UndefOr[CreateTransitGatewayMulticastDomainRequestOptions] = js.undefined
+  
+  /**
     * The tags for the transit gateway multicast domain.
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
@@ -34,11 +39,15 @@ object CreateTransitGatewayMulticastDomainRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
+    inline def setOptions(value: CreateTransitGatewayMulticastDomainRequestOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    
     inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
   }

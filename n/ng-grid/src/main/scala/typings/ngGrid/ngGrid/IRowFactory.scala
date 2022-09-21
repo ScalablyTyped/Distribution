@@ -8,11 +8,11 @@ trait IRowFactory extends StObject {
   
   def UpdateViewableRange(newRange: IRenderedRange): Unit
   
-  var aggCache: js.Any
+  var aggCache: Any
   
-  def buildAggregateRow(aggEntity: js.Any, rowIndex: Double): IAggregate
+  def buildAggregateRow(aggEntity: Any, rowIndex: Double): IAggregate
   
-  def buildEntityRow(entity: js.Any, rowIndex: Double): IRow
+  def buildEntityRow(entity: Any, rowIndex: Double): IRow
   
   var dataChanged: Boolean
   
@@ -20,17 +20,17 @@ trait IRowFactory extends StObject {
   
   def fixRowCache(): Unit
   
-  def getGrouping(groups: js.Any): Unit
+  def getGrouping(groups: Any): Unit
   
-  var groupedData: js.Any
+  var groupedData: Any
   
   var numberOfAggregates: Double
   
-  var parentCache: js.Array[js.Any]
+  var parentCache: js.Array[Any]
   
-  def parseGroupData(groupData: js.Any): Unit
+  def parseGroupData(groupData: Any): Unit
   
-  var parsedData: js.Array[js.Any]
+  var parsedData: js.Array[Any]
   
   def renderedChange(): Unit
   
@@ -48,18 +48,18 @@ object IRowFactory {
   
   inline def apply(
     UpdateViewableRange: IRenderedRange => Unit,
-    aggCache: js.Any,
-    buildAggregateRow: (js.Any, Double) => IAggregate,
-    buildEntityRow: (js.Any, Double) => IRow,
+    aggCache: Any,
+    buildAggregateRow: (Any, Double) => IAggregate,
+    buildEntityRow: (Any, Double) => IRow,
     dataChanged: Boolean,
     filteredRowsChanged: () => Unit,
     fixRowCache: () => Unit,
-    getGrouping: js.Any => Unit,
-    groupedData: js.Any,
+    getGrouping: Any => Unit,
+    groupedData: Any,
     numberOfAggregates: Double,
-    parentCache: js.Array[js.Any],
-    parseGroupData: js.Any => Unit,
-    parsedData: js.Array[js.Any],
+    parentCache: js.Array[Any],
+    parseGroupData: Any => Unit,
+    parsedData: js.Array[Any],
     renderedChange: () => Unit,
     renderedChangeNoGroups: () => Unit,
     renderedRange: IRenderedRange,
@@ -73,11 +73,11 @@ object IRowFactory {
   
   extension [Self <: IRowFactory](x: Self) {
     
-    inline def setAggCache(value: js.Any): Self = StObject.set(x, "aggCache", value.asInstanceOf[js.Any])
+    inline def setAggCache(value: Any): Self = StObject.set(x, "aggCache", value.asInstanceOf[js.Any])
     
-    inline def setBuildAggregateRow(value: (js.Any, Double) => IAggregate): Self = StObject.set(x, "buildAggregateRow", js.Any.fromFunction2(value))
+    inline def setBuildAggregateRow(value: (Any, Double) => IAggregate): Self = StObject.set(x, "buildAggregateRow", js.Any.fromFunction2(value))
     
-    inline def setBuildEntityRow(value: (js.Any, Double) => IRow): Self = StObject.set(x, "buildEntityRow", js.Any.fromFunction2(value))
+    inline def setBuildEntityRow(value: (Any, Double) => IRow): Self = StObject.set(x, "buildEntityRow", js.Any.fromFunction2(value))
     
     inline def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
     
@@ -85,21 +85,21 @@ object IRowFactory {
     
     inline def setFixRowCache(value: () => Unit): Self = StObject.set(x, "fixRowCache", js.Any.fromFunction0(value))
     
-    inline def setGetGrouping(value: js.Any => Unit): Self = StObject.set(x, "getGrouping", js.Any.fromFunction1(value))
+    inline def setGetGrouping(value: Any => Unit): Self = StObject.set(x, "getGrouping", js.Any.fromFunction1(value))
     
-    inline def setGroupedData(value: js.Any): Self = StObject.set(x, "groupedData", value.asInstanceOf[js.Any])
+    inline def setGroupedData(value: Any): Self = StObject.set(x, "groupedData", value.asInstanceOf[js.Any])
     
     inline def setNumberOfAggregates(value: Double): Self = StObject.set(x, "numberOfAggregates", value.asInstanceOf[js.Any])
     
-    inline def setParentCache(value: js.Array[js.Any]): Self = StObject.set(x, "parentCache", value.asInstanceOf[js.Any])
+    inline def setParentCache(value: js.Array[Any]): Self = StObject.set(x, "parentCache", value.asInstanceOf[js.Any])
     
-    inline def setParentCacheVarargs(value: js.Any*): Self = StObject.set(x, "parentCache", js.Array(value :_*))
+    inline def setParentCacheVarargs(value: Any*): Self = StObject.set(x, "parentCache", js.Array(value*))
     
-    inline def setParseGroupData(value: js.Any => Unit): Self = StObject.set(x, "parseGroupData", js.Any.fromFunction1(value))
+    inline def setParseGroupData(value: Any => Unit): Self = StObject.set(x, "parseGroupData", js.Any.fromFunction1(value))
     
-    inline def setParsedData(value: js.Array[js.Any]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
+    inline def setParsedData(value: js.Array[Any]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
     
-    inline def setParsedDataVarargs(value: js.Any*): Self = StObject.set(x, "parsedData", js.Array(value :_*))
+    inline def setParsedDataVarargs(value: Any*): Self = StObject.set(x, "parsedData", js.Array(value*))
     
     inline def setRenderedChange(value: () => Unit): Self = StObject.set(x, "renderedChange", js.Any.fromFunction0(value))
     

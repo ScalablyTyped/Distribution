@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_HttpHandler")
 @js.native
-class ClassHttpHandler protected ()
+open class ClassHttpHandler protected ()
   extends StObject
      with typings.fibjs.ClassHttpHandler {
   /**

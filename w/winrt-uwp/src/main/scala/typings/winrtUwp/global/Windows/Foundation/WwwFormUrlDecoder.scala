@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Parses a URL query string, and exposes the results as a read-only vector (list) of name-value pairs from the query string. */
 @JSGlobal("Windows.Foundation.WwwFormUrlDecoder")
 @js.native
-class WwwFormUrlDecoder protected ()
+open class WwwFormUrlDecoder protected ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.WwwFormUrlDecoder {
   /**

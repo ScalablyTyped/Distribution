@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "StereoCamera")
 @js.native
-class StereoCamera ()
-  extends typings.three.stereoCameraMod.StereoCamera
+open class StereoCamera ()
+  extends typings.three.threeMod.StereoCamera

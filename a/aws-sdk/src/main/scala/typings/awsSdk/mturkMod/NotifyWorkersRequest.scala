@@ -36,6 +36,6 @@ object NotifyWorkersRequest {
     
     inline def setWorkerIds(value: CustomerIdList): Self = StObject.set(x, "WorkerIds", value.asInstanceOf[js.Any])
     
-    inline def setWorkerIdsVarargs(value: CustomerId*): Self = StObject.set(x, "WorkerIds", js.Array(value :_*))
+    inline def setWorkerIdsVarargs(value: CustomerId*): Self = StObject.set(x, "WorkerIds", js.Array(value*))
   }
 }

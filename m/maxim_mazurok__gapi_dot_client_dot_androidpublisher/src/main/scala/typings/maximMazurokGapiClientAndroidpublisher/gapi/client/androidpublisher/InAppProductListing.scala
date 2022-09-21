@@ -28,7 +28,7 @@ object InAppProductListing {
     
     inline def setBenefitsUndefined: Self = StObject.set(x, "benefits", js.undefined)
     
-    inline def setBenefitsVarargs(value: String*): Self = StObject.set(x, "benefits", js.Array(value :_*))
+    inline def setBenefitsVarargs(value: String*): Self = StObject.set(x, "benefits", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

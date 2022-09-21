@@ -24,7 +24,7 @@ object GitTreeDiffResponse {
     
     inline def setContinuationToken(value: js.Array[String]): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
-    inline def setContinuationTokenVarargs(value: String*): Self = StObject.set(x, "continuationToken", js.Array(value :_*))
+    inline def setContinuationTokenVarargs(value: String*): Self = StObject.set(x, "continuationToken", js.Array(value*))
     
     inline def setTreeDiff(value: GitTreeDiff): Self = StObject.set(x, "treeDiff", value.asInstanceOf[js.Any])
   }

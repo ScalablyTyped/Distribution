@@ -10,15 +10,15 @@ The Next Generation of CSS-in-JS.
 | ------------------ | :-------------: |
 | Full name          | @emotion/css |
 | Keywords           | styles, emotion, react, css, css-in-js |
-| # releases         | 25 |
-| # dependents       | 91 |
-| # downloads        | 139108241 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9209023666666668E7 |
+| # stars            | 15226.0 |
 
 ## Links
 - [Homepage](https://emotion.sh)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
-- [Repository](https://github.com/emotion-js/emotion)
+- [Repository](https://github.com/emotion-js/emotion/tree/main)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Fcss)
     
 

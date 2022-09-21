@@ -6,7 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Range extends StObject {
   
-  var range: js.UndefOr[Double] = js.undefined
+  var acceptEncoding: js.UndefOr[String] = js.undefined
+  
+  var ifModifiedSince: js.UndefOr[String] = js.undefined
+  
+  var ifNoneMatch: js.UndefOr[String] = js.undefined
+  
+  var range: js.UndefOr[String] = js.undefined
+  
+  var region: js.UndefOr[String] = js.undefined
 }
 object Range {
   
@@ -17,8 +25,24 @@ object Range {
   
   extension [Self <: Range](x: Self) {
     
-    inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
+    
+    inline def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
+    
+    inline def setIfModifiedSince(value: String): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
+    
+    inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
+    
+    inline def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
+    
+    inline def setIfNoneMatchUndefined: Self = StObject.set(x, "ifNoneMatch", js.undefined)
+    
+    inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

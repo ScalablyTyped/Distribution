@@ -10,10 +10,10 @@ The lodash method `_.values` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.values |
 | Keywords           | lodash-modularized, values |
-| # releases         | 0 |
-| # dependents       | 254 |
-| # downloads        | 39712358 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4145779.6666666665 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -9,6 +9,12 @@ trait AttachmentItem extends StObject {
   // The type of attachment. Possible values are: file, item, reference. Required.
   var attachmentType: js.UndefOr[NullableOption[AttachmentType]] = js.undefined
   
+  /**
+    * The CID or Content-Id of the attachment for referencing in case of in-line attachments using &amp;lt;img
+    * src='cid:contentId'&amp;gt; tag in HTML messages. Optional.
+    */
+  var contentId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The nature of the data in the attachment. Optional.
   var contentType: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -38,6 +44,12 @@ object AttachmentItem {
     inline def setAttachmentTypeNull: Self = StObject.set(x, "attachmentType", null)
     
     inline def setAttachmentTypeUndefined: Self = StObject.set(x, "attachmentType", js.undefined)
+    
+    inline def setContentId(value: NullableOption[String]): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+    
+    inline def setContentIdNull: Self = StObject.set(x, "contentId", null)
+    
+    inline def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
     
     inline def setContentType(value: NullableOption[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

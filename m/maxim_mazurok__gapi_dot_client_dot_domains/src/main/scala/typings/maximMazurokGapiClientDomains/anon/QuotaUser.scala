@@ -25,7 +25,7 @@ trait QuotaUser extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. Name of the `Registration` resource, in the format `projects/∗/locations/∗/registrations/`. */
+  /** Output only. Name of the `Registration` resource, in the format `projects/ *‍/locations/ *‍/registrations/`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,7 +37,10 @@ trait QuotaUser extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The field mask describing which fields to update as a comma-separated list. For example, if only the labels are being updated, the `update_mask` would be `"labels"`. */
+  /** Request body */
+  var resource: typings.maximMazurokGapiClientDomains.gapi.client.domains.Registration
+  
+  /** Required. The field mask describing which fields to update as a comma-separated list. For example, if only the labels are being updated, the `update_mask` is `"labels"`. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -48,8 +51,8 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(name: String): QuotaUser = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: typings.maximMazurokGapiClientDomains.gapi.client.domains.Registration): QuotaUser = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
   
@@ -92,6 +95,8 @@ object QuotaUser {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: typings.maximMazurokGapiClientDomains.gapi.client.domains.Registration): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ object stepper {
   
   @JSGlobal("kendo.stepper.Step")
   @js.native
-  class Step ()
+  open class Step ()
     extends StObject
        with typings.kendoUi.kendo.stepper.Step {
     def this(options: StepOptions) = this()

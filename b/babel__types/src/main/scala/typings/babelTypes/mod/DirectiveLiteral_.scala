@@ -5,10 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectiveLiteral_
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babelTypes.mod._Node because Already inherited */ trait DirectiveLiteral_
   extends StObject
      with BaseNode
-     with _Node {
+     with Standardized {
   
   @JSName("type")
   var type_DirectiveLiteral_ : DirectiveLiteral

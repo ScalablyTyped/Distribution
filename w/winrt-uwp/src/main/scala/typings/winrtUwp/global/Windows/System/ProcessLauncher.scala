@@ -18,6 +18,6 @@ object ProcessLauncher {
   /* static member */
   @JSGlobal("Windows.System.ProcessLauncher.runToCompletionAsync")
   @js.native
-  def runToCompletionAsync: js.Any = js.native
-  inline def runToCompletionAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runToCompletionAsync")(x.asInstanceOf[js.Any])
+  def runToCompletionAsync: Any = js.native
+  inline def runToCompletionAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runToCompletionAsync")(x.asInstanceOf[js.Any])
 }

@@ -1,6 +1,5 @@
 package typings.jsqrcode
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,13 +36,13 @@ trait Detector extends StObject {
     allowanceFactor: Double
   ): AlignmentPattern
   
-  var image: Uint8Array
+  var image: js.typedarray.Uint8Array
   
   def processFinderPatternInfo(info: FinderPatternInfo): DetectorResult
   
   var resultPointCallback: ResultPointCallback
   
-  def sampleGrid(image: Uint8Array, transform: PerspectiveTransform, dimension: Double): BitMatrix
+  def sampleGrid(image: js.typedarray.Uint8Array, transform: PerspectiveTransform, dimension: Double): BitMatrix
   
   def sizeOfBlackWhiteBlackRun(fromX: Double, fromY: Double, toX: Double, toY: Double): Double
   
@@ -59,10 +58,10 @@ object Detector {
     detect: () => DetectorResult,
     distance: (AlignmentPattern, AlignmentPattern) => Double,
     findAlignmentInRegion: (Double, Double, Double, Double) => AlignmentPattern,
-    image: Uint8Array,
+    image: js.typedarray.Uint8Array,
     processFinderPatternInfo: FinderPatternInfo => DetectorResult,
     resultPointCallback: ResultPointCallback,
-    sampleGrid: (Uint8Array, PerspectiveTransform, Double) => BitMatrix,
+    sampleGrid: (js.typedarray.Uint8Array, PerspectiveTransform, Double) => BitMatrix,
     sizeOfBlackWhiteBlackRun: (Double, Double, Double, Double) => Double,
     sizeOfBlackWhiteBlackRunBothWays: (Double, Double, Double, Double) => Double
   ): Detector = {
@@ -88,13 +87,13 @@ object Detector {
     
     inline def setFindAlignmentInRegion(value: (Double, Double, Double, Double) => AlignmentPattern): Self = StObject.set(x, "findAlignmentInRegion", js.Any.fromFunction4(value))
     
-    inline def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.typedarray.Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setProcessFinderPatternInfo(value: FinderPatternInfo => DetectorResult): Self = StObject.set(x, "processFinderPatternInfo", js.Any.fromFunction1(value))
     
     inline def setResultPointCallback(value: ResultPointCallback): Self = StObject.set(x, "resultPointCallback", value.asInstanceOf[js.Any])
     
-    inline def setSampleGrid(value: (Uint8Array, PerspectiveTransform, Double) => BitMatrix): Self = StObject.set(x, "sampleGrid", js.Any.fromFunction3(value))
+    inline def setSampleGrid(value: (js.typedarray.Uint8Array, PerspectiveTransform, Double) => BitMatrix): Self = StObject.set(x, "sampleGrid", js.Any.fromFunction3(value))
     
     inline def setSizeOfBlackWhiteBlackRun(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "sizeOfBlackWhiteBlackRun", js.Any.fromFunction4(value))
     

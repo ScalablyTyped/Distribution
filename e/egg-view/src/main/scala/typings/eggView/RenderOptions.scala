@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject * / any */ trait RenderOptions extends StObject {
   
   var locals: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ Any
   ] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object RenderOptions {
   extension [Self <: RenderOptions](x: Self) {
     
     inline def setLocals(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ Any
     ): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)

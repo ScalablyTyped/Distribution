@@ -1,6 +1,12 @@
 package typings.bootstrap
 
-import typings.std.Element
+import typings.bootstrap.baseComponentMod.ComponentOptions
+import typings.bootstrap.baseComponentMod.GetInstanceFactory
+import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.bootstrapStrings.dispose
+import typings.bootstrap.bootstrapStrings.show
+import typings.bootstrap.mod.global.JQuery
+import typings.bootstrap.tabMod.Tab.jQueryInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,27 +15,7 @@ object tabMod {
   
   @JSImport("bootstrap/js/dist/tab", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Tab {
-    def this(element: Element) = this()
-    
-    /**
-      * Destroys an element’s tab.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    
-    /**
-      * Selects the given list item and shows its associated pane. Any other
-      * list item that was previously selected becomes unselected and its
-      * associated pane is hidden. Returns to the caller before the tab pane
-      * has actually been shown (for example, before the shown.bs.tab event
-      * occurs).
-      */
-    /* CompleteClass */
-    override def show(): Unit = js.native
-  }
+  open class default () extends Tab
   object default {
     
     @JSImport("bootstrap/js/dist/tab", JSImport.Default)
@@ -57,15 +43,31 @@ object tabMod {
       * DOM element
       */
     /* static member */
-    inline def getInstance(element: Element): Tab = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Tab]
-  }
-  
-  trait Tab extends StObject {
+    @JSImport("bootstrap/js/dist/tab", "default.getInstance")
+    @js.native
+    def getInstance: GetInstanceFactory[Tab] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[Tab]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
-      * Destroys an element’s tab.
+      * Static method which allows you to get the tab instance associated with a
+      * DOM element, or create a new one in case it wasn’t initialised
       */
-    def dispose(): Unit
+    /* static member */
+    @JSImport("bootstrap/js/dist/tab", "default.getOrCreateInstance")
+    @js.native
+    def getOrCreateInstance: GetOrCreateInstanceFactory[Tab, ComponentOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[Tab, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/tab", "default.jQueryInterface")
+    @js.native
+    def jQueryInterface: typings.bootstrap.tabMod.Tab.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait Tab
+    extends typings.bootstrap.baseComponentMod.default {
     
     /**
       * Selects the given list item and shows its associated pane. Any other
@@ -74,14 +76,9 @@ object tabMod {
       * has actually been shown (for example, before the shown.bs.tab event
       * occurs).
       */
-    def show(): Unit
+    def show(): Unit = js.native
   }
   object Tab {
-    
-    inline def apply(dispose: () => Unit, show: () => Unit): Tab = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), show = js.Any.fromFunction0(show))
-      __obj.asInstanceOf[Tab]
-    }
     
     @js.native
     sealed trait Events extends StObject
@@ -131,11 +128,6 @@ object tabMod {
            with Events
     }
     
-    extension [Self <: Tab](x: Self) {
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-      
-      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
-    }
+    type jQueryInterface = js.Function1[/* config */ js.UndefOr[show | dispose], JQuery]
   }
 }

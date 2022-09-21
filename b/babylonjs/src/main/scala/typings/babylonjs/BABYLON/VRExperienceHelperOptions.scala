@@ -59,7 +59,7 @@ object VRExperienceHelperOptions {
     
     inline def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
     
-    inline def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
+    inline def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value*))
     
     inline def setLaserToggle(value: Boolean): Self = StObject.set(x, "laserToggle", value.asInstanceOf[js.Any])
     

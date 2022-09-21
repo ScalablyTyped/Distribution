@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClientStorageAPI extends StObject {
   
-  def getAsync(key: String): js.Promise[js.Any]
+  def getAsync(key: String): js.Promise[Any]
   
-  def setAsync(key: String, value: js.Any): js.Promise[Unit]
+  def setAsync(key: String, value: Any): js.Promise[Unit]
 }
 object ClientStorageAPI {
   
-  inline def apply(getAsync: String => js.Promise[js.Any], setAsync: (String, js.Any) => js.Promise[Unit]): ClientStorageAPI = {
+  inline def apply(getAsync: String => js.Promise[Any], setAsync: (String, Any) => js.Promise[Unit]): ClientStorageAPI = {
     val __obj = js.Dynamic.literal(getAsync = js.Any.fromFunction1(getAsync), setAsync = js.Any.fromFunction2(setAsync))
     __obj.asInstanceOf[ClientStorageAPI]
   }
   
   extension [Self <: ClientStorageAPI](x: Self) {
     
-    inline def setGetAsync(value: String => js.Promise[js.Any]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
+    inline def setGetAsync(value: String => js.Promise[Any]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
     
-    inline def setSetAsync(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "setAsync", js.Any.fromFunction2(value))
+    inline def setSetAsync(value: (String, Any) => js.Promise[Unit]): Self = StObject.set(x, "setAsync", js.Any.fromFunction2(value))
   }
 }

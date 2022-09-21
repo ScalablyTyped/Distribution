@@ -8,7 +8,7 @@ trait Align extends StObject {
   
   var align: String
   
-  var content: js.Any
+  var content: Any
   
   var offset: Double
   
@@ -16,7 +16,7 @@ trait Align extends StObject {
 }
 object Align {
   
-  inline def apply(align: String, content: js.Any, offset: Double, position: String): Align = {
+  inline def apply(align: String, content: Any, offset: Double, position: String): Align = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Align]
   }
@@ -25,7 +25,7 @@ object Align {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

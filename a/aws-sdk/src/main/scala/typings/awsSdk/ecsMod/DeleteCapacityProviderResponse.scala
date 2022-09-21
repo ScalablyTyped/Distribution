@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteCapacityProviderResponse extends StObject {
   
+  /**
+    * The details of the capacity provider.
+    */
   var capacityProvider: js.UndefOr[CapacityProvider] = js.undefined
 }
 object DeleteCapacityProviderResponse {

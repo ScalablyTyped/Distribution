@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomerSessionStats extends StObject {
   
-  /** Date for which session stats were calculated. Stats calculated on the next day close to midnight are returned. */
+  /** The date for which session stats were calculated. Stats are calculated on the following day, close to midnight PST, and then returned. */
   var date: js.UndefOr[Date] = js.undefined
   
   /** The count of search sessions on the day */

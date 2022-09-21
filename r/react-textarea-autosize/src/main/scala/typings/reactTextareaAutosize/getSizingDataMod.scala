@@ -20,6 +20,7 @@ import typings.reactTextareaAutosize.reactTextareaAutosizeStrings.textIndent
 import typings.reactTextareaAutosize.reactTextareaAutosizeStrings.textRendering
 import typings.reactTextareaAutosize.reactTextareaAutosizeStrings.textTransform
 import typings.reactTextareaAutosize.reactTextareaAutosizeStrings.width
+import typings.reactTextareaAutosize.reactTextareaAutosizeStrings.wordBreak
 import typings.std.CSSStyleDeclaration
 import typings.std.Extract
 import typings.std.HTMLElement
@@ -62,8 +63,8 @@ object getSizingDataMod {
   }
   
   type SizingProps = Extract[
-    borderBottomWidth | borderLeftWidth | borderRightWidth | borderTopWidth | boxSizing | fontFamily | fontSize | fontStyle | fontWeight | letterSpacing | lineHeight | paddingBottom | paddingLeft | paddingRight | paddingTop | tabSize | textIndent | textRendering | textTransform | width, 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 388 */ js.Any
+    borderBottomWidth | borderLeftWidth | borderRightWidth | borderTopWidth | boxSizing | fontFamily | fontSize | fontStyle | fontWeight | letterSpacing | lineHeight | paddingBottom | paddingLeft | paddingRight | paddingTop | tabSize | textIndent | textRendering | textTransform | width | wordBreak, 
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ Any
   ]
   
   type SizingStyle = Pick[CSSStyleDeclaration, SizingProps]

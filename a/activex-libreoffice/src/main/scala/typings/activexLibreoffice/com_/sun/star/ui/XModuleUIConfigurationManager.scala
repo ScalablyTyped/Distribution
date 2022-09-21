@@ -41,7 +41,7 @@ object XModuleUIConfigurationManager {
     acquire: () => Unit,
     getDefaultSettings: String => XIndexAccess,
     isDefaultSettings: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XModuleUIConfigurationManager = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultSettings = js.Any.fromFunction1(getDefaultSettings), isDefaultSettings = js.Any.fromFunction1(isDefaultSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

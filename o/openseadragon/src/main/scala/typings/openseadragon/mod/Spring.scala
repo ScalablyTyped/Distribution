@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Spring")
 @js.native
-class Spring protected () extends StObject {
+open class Spring protected () extends StObject {
   def this(options: AnimationTime) = this()
   
   var animationTime: Double = js.native

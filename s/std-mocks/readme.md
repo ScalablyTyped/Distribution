@@ -11,14 +11,11 @@ Mock node stdout and stderr without pain.
 | Full name          | std-mocks |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 433085 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 19142.0 |
+| # stars            | 25.0 |
 
 ## Links
-- [Homepage](https://github.com/neoziro/std-mocks#readme)
-- [Bugs](https://github.com/neoziro/std-mocks/issues)
-- [Repository](https://github.com/neoziro/std-mocks)
 - [Npm](https://www.npmjs.com/package/std-mocks)
     
 

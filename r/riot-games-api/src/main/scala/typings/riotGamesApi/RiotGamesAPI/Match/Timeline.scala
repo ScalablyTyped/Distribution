@@ -23,6 +23,6 @@ object Timeline {
     
     inline def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value*))
   }
 }

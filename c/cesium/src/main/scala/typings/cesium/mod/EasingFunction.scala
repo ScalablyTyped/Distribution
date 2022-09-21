@@ -4,201 +4,236 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line no-unnecessary-class
-@JSImport("cesium", "EasingFunction")
-@js.native
-class EasingFunction () extends StObject
 object EasingFunction {
   
-  @JSImport("cesium", "EasingFunction")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
+  /**
+    * Back in.
+    */
   @JSImport("cesium", "EasingFunction.BACK_IN")
   @js.native
-  def BACK_IN: Callback = js.native
-  inline def BACK_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK_IN")(x.asInstanceOf[js.Any])
+  val BACK_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Back in then out.
+    */
   @JSImport("cesium", "EasingFunction.BACK_IN_OUT")
   @js.native
-  def BACK_IN_OUT: Callback = js.native
-  inline def BACK_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK_IN_OUT")(x.asInstanceOf[js.Any])
+  val BACK_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Back out.
+    */
   @JSImport("cesium", "EasingFunction.BACK_OUT")
   @js.native
-  def BACK_OUT: Callback = js.native
-  inline def BACK_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK_OUT")(x.asInstanceOf[js.Any])
+  val BACK_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Bounce in.
+    */
   @JSImport("cesium", "EasingFunction.BOUNCE_IN")
   @js.native
-  def BOUNCE_IN: Callback = js.native
-  inline def BOUNCE_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNCE_IN")(x.asInstanceOf[js.Any])
+  val BOUNCE_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Bounce in then out.
+    */
   @JSImport("cesium", "EasingFunction.BOUNCE_IN_OUT")
   @js.native
-  def BOUNCE_IN_OUT: Callback = js.native
-  inline def BOUNCE_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNCE_IN_OUT")(x.asInstanceOf[js.Any])
+  val BOUNCE_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Bounce out.
+    */
   @JSImport("cesium", "EasingFunction.BOUNCE_OUT")
   @js.native
-  def BOUNCE_OUT: Callback = js.native
-  inline def BOUNCE_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNCE_OUT")(x.asInstanceOf[js.Any])
+  val BOUNCE_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Circular in.
+    */
   @JSImport("cesium", "EasingFunction.CIRCULAR_IN")
   @js.native
-  def CIRCULAR_IN: Callback = js.native
-  inline def CIRCULAR_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCULAR_IN")(x.asInstanceOf[js.Any])
+  val CIRCULAR_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Circular in then out.
+    */
   @JSImport("cesium", "EasingFunction.CIRCULAR_IN_OUT")
   @js.native
-  def CIRCULAR_IN_OUT: Callback = js.native
-  inline def CIRCULAR_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCULAR_IN_OUT")(x.asInstanceOf[js.Any])
+  val CIRCULAR_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Circular out.
+    */
   @JSImport("cesium", "EasingFunction.CIRCULAR_OUT")
   @js.native
-  def CIRCULAR_OUT: Callback = js.native
-  inline def CIRCULAR_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCULAR_OUT")(x.asInstanceOf[js.Any])
+  val CIRCULAR_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Cubic in.
+    */
   @JSImport("cesium", "EasingFunction.CUBIC_IN")
   @js.native
-  def CUBIC_IN: Callback = js.native
-  inline def CUBIC_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CUBIC_IN")(x.asInstanceOf[js.Any])
+  val CUBIC_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Cubic in then out.
+    */
   @JSImport("cesium", "EasingFunction.CUBIC_IN_OUT")
   @js.native
-  def CUBIC_IN_OUT: Callback = js.native
-  inline def CUBIC_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CUBIC_IN_OUT")(x.asInstanceOf[js.Any])
+  val CUBIC_IN_OUT: Callback = js.native
   
-  /* static member */
-  @JSImport("cesium", "EasingFunction.CUBIR_OUT")
+  /**
+    * Cubic out.
+    */
+  @JSImport("cesium", "EasingFunction.CUBIC_OUT")
   @js.native
-  def CUBIR_OUT: Callback = js.native
-  inline def CUBIR_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CUBIR_OUT")(x.asInstanceOf[js.Any])
+  val CUBIC_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Elastic in.
+    */
   @JSImport("cesium", "EasingFunction.ELASTIC_IN")
   @js.native
-  def ELASTIC_IN: Callback = js.native
-  inline def ELASTIC_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELASTIC_IN")(x.asInstanceOf[js.Any])
+  val ELASTIC_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Elastic in then out.
+    */
   @JSImport("cesium", "EasingFunction.ELASTIC_IN_OUT")
   @js.native
-  def ELASTIC_IN_OUT: Callback = js.native
-  inline def ELASTIC_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELASTIC_IN_OUT")(x.asInstanceOf[js.Any])
+  val ELASTIC_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Elastic out.
+    */
   @JSImport("cesium", "EasingFunction.ELASTIC_OUT")
   @js.native
-  def ELASTIC_OUT: Callback = js.native
-  inline def ELASTIC_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELASTIC_OUT")(x.asInstanceOf[js.Any])
+  val ELASTIC_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Exponential in.
+    */
   @JSImport("cesium", "EasingFunction.EXPONENTIAL_IN")
   @js.native
-  def EXPONENTIAL_IN: Callback = js.native
-  inline def EXPONENTIAL_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPONENTIAL_IN")(x.asInstanceOf[js.Any])
+  val EXPONENTIAL_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Exponential in then out.
+    */
   @JSImport("cesium", "EasingFunction.EXPONENTIAL_IN_OUT")
   @js.native
-  def EXPONENTIAL_IN_OUT: Callback = js.native
-  inline def EXPONENTIAL_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPONENTIAL_IN_OUT")(x.asInstanceOf[js.Any])
+  val EXPONENTIAL_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Exponential out.
+    */
   @JSImport("cesium", "EasingFunction.EXPONENTIAL_OUT")
   @js.native
-  def EXPONENTIAL_OUT: Callback = js.native
-  inline def EXPONENTIAL_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPONENTIAL_OUT")(x.asInstanceOf[js.Any])
+  val EXPONENTIAL_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Linear easing.
+    */
   @JSImport("cesium", "EasingFunction.LINEAR_NONE")
   @js.native
-  def LINEAR_NONE: Callback = js.native
-  inline def LINEAR_NONE_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_NONE")(x.asInstanceOf[js.Any])
+  val LINEAR_NONE: Callback = js.native
   
-  /* static member */
+  /**
+    * Quadratic in.
+    */
   @JSImport("cesium", "EasingFunction.QUADRATIC_IN")
   @js.native
-  def QUADRATIC_IN: Callback = js.native
-  inline def QUADRATIC_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUADRATIC_IN")(x.asInstanceOf[js.Any])
+  val QUADRATIC_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Quadratic in then out.
+    */
   @JSImport("cesium", "EasingFunction.QUADRATIC_IN_OUT")
   @js.native
-  def QUADRATIC_IN_OUT: Callback = js.native
-  inline def QUADRATIC_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUADRATIC_IN_OUT")(x.asInstanceOf[js.Any])
+  val QUADRATIC_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Quadratic out.
+    */
   @JSImport("cesium", "EasingFunction.QUADRATIC_OUT")
   @js.native
-  def QUADRATIC_OUT: Callback = js.native
-  inline def QUADRATIC_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUADRATIC_OUT")(x.asInstanceOf[js.Any])
+  val QUADRATIC_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Quartic in.
+    */
   @JSImport("cesium", "EasingFunction.QUARTIC_IN")
   @js.native
-  def QUARTIC_IN: Callback = js.native
-  inline def QUARTIC_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUARTIC_IN")(x.asInstanceOf[js.Any])
+  val QUARTIC_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Quartic in then out.
+    */
   @JSImport("cesium", "EasingFunction.QUARTIC_IN_OUT")
   @js.native
-  def QUARTIC_IN_OUT: Callback = js.native
-  inline def QUARTIC_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUARTIC_IN_OUT")(x.asInstanceOf[js.Any])
+  val QUARTIC_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Quartic out.
+    */
   @JSImport("cesium", "EasingFunction.QUARTIC_OUT")
   @js.native
-  def QUARTIC_OUT: Callback = js.native
-  inline def QUARTIC_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUARTIC_OUT")(x.asInstanceOf[js.Any])
+  val QUARTIC_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Quintic in.
+    */
   @JSImport("cesium", "EasingFunction.QUINTIC_IN")
   @js.native
-  def QUINTIC_IN: Callback = js.native
-  inline def QUINTIC_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUINTIC_IN")(x.asInstanceOf[js.Any])
+  val QUINTIC_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Quintic in then out.
+    */
   @JSImport("cesium", "EasingFunction.QUINTIC_IN_OUT")
   @js.native
-  def QUINTIC_IN_OUT: Callback = js.native
-  inline def QUINTIC_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUINTIC_IN_OUT")(x.asInstanceOf[js.Any])
+  val QUINTIC_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Quintic out.
+    */
   @JSImport("cesium", "EasingFunction.QUINTIC_OUT")
   @js.native
-  def QUINTIC_OUT: Callback = js.native
-  inline def QUINTIC_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUINTIC_OUT")(x.asInstanceOf[js.Any])
+  val QUINTIC_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Sinusoidal in.
+    */
   @JSImport("cesium", "EasingFunction.SINUSOIDAL_IN")
   @js.native
-  def SINUSOIDAL_IN: Callback = js.native
-  inline def SINUSOIDAL_IN_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SINUSOIDAL_IN")(x.asInstanceOf[js.Any])
+  val SINUSOIDAL_IN: Callback = js.native
   
-  /* static member */
+  /**
+    * Sinusoidal in then out.
+    */
   @JSImport("cesium", "EasingFunction.SINUSOIDAL_IN_OUT")
   @js.native
-  def SINUSOIDAL_IN_OUT: Callback = js.native
-  inline def SINUSOIDAL_IN_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SINUSOIDAL_IN_OUT")(x.asInstanceOf[js.Any])
+  val SINUSOIDAL_IN_OUT: Callback = js.native
   
-  /* static member */
+  /**
+    * Sinusoidal out.
+    */
   @JSImport("cesium", "EasingFunction.SINUSOIDAL_OUT")
   @js.native
-  def SINUSOIDAL_OUT: Callback = js.native
-  inline def SINUSOIDAL_OUT_=(x: Callback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SINUSOIDAL_OUT")(x.asInstanceOf[js.Any])
+  val SINUSOIDAL_OUT: Callback = js.native
   
+  /**
+    * Function interface for implementing a custom easing function.
+    * @example
+    * function quadraticIn(time) {
+    *     return time * time;
+    * }
+    * @example
+    * function quadraticOut(time) {
+    *     return time * (2.0 - time);
+    * }
+    * @param time - The time in the range <code>[0, 1]</code>.
+    */
   type Callback = js.Function1[/* time */ Double, Double]
 }

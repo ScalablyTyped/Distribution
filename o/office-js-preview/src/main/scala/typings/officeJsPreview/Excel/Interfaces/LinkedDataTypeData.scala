@@ -5,7 +5,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Manual
 import typings.officeJsPreview.officeJsPreviewStrings.OnLoad
 import typings.officeJsPreview.officeJsPreviewStrings.Periodic
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,64 +13,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LinkedDataTypeData extends StObject {
   
   /**
-    *
     * The name of the data provider for the linked data type. This may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var dataProvider: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
     Returns `undefined` if the linked data type has not been refreshed.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var lastRefreshed: js.UndefOr[Date] = js.undefined
+  var lastRefreshed: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *
     * The name of the linked data type. This may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var periodicRefreshInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The mechanism by which the data for the linked data type is retrieved.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var refreshMode: js.UndefOr[LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic] = js.undefined
   
   /**
+    * The unique ID of the linked data type.
     *
-    * The unique id of the linked data type.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var serviceId: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Returns an array with all the refresh modes supported by the linked data type. The contents of the array may change when information is retrieved from the service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
@@ -90,7 +89,7 @@ object LinkedDataTypeData {
     
     inline def setDataProviderUndefined: Self = StObject.set(x, "dataProvider", js.undefined)
     
-    inline def setLastRefreshed(value: Date): Self = StObject.set(x, "lastRefreshed", value.asInstanceOf[js.Any])
+    inline def setLastRefreshed(value: js.Date): Self = StObject.set(x, "lastRefreshed", value.asInstanceOf[js.Any])
     
     inline def setLastRefreshedUndefined: Self = StObject.set(x, "lastRefreshed", js.undefined)
     
@@ -114,6 +113,6 @@ object LinkedDataTypeData {
     
     inline def setSupportedRefreshModesUndefined: Self = StObject.set(x, "supportedRefreshModes", js.undefined)
     
-    inline def setSupportedRefreshModesVarargs(value: LinkedDataTypeRefreshMode*): Self = StObject.set(x, "supportedRefreshModes", js.Array(value :_*))
+    inline def setSupportedRefreshModesVarargs(value: LinkedDataTypeRefreshMode*): Self = StObject.set(x, "supportedRefreshModes", js.Array(value*))
   }
 }

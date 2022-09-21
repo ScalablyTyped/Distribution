@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "editor.BareFontInfo")
 @js.native
-class BareFontInfo () extends StObject {
+open class BareFontInfo () extends StObject {
   
   val _bareFontInfoBrand: Unit = js.native
   
@@ -22,5 +22,5 @@ class BareFontInfo () extends StObject {
   
   val lineHeight: Double = js.native
   
-  val zoomLevel: Double = js.native
+  val pixelRatio: Double = js.native
 }

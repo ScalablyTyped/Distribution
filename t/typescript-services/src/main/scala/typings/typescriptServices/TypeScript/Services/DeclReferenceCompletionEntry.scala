@@ -11,7 +11,7 @@ trait DeclReferenceCompletionEntry
   
   var decl: PullDecl
   
-  /* private */ var hasBeenResolved: js.Any
+  /* private */ var hasBeenResolved: Any
   
   def resolve(`type`: String, fullSymbolName: String, docComments: String): Unit
 }
@@ -21,7 +21,7 @@ object DeclReferenceCompletionEntry {
     decl: PullDecl,
     docComment: String,
     fullSymbolName: String,
-    hasBeenResolved: js.Any,
+    hasBeenResolved: Any,
     isResolved: () => Boolean,
     kind: String,
     kindModifiers: String,
@@ -38,7 +38,7 @@ object DeclReferenceCompletionEntry {
     
     inline def setDecl(value: PullDecl): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
     
-    inline def setHasBeenResolved(value: js.Any): Self = StObject.set(x, "hasBeenResolved", value.asInstanceOf[js.Any])
+    inline def setHasBeenResolved(value: Any): Self = StObject.set(x, "hasBeenResolved", value.asInstanceOf[js.Any])
     
     inline def setResolve(value: (String, String, String) => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
   }

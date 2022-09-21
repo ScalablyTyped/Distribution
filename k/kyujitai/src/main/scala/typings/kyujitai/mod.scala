@@ -1,7 +1,6 @@
 package typings.kyujitai
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
     */
   @JSImport("kyujitai", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Kyujitai {
     def this(callback: InitializeCallback) = this()
@@ -23,7 +22,7 @@ object mod {
   }
   
   /** unused */
-  type DecodeOptions = StringDictionary[js.Any]
+  type DecodeOptions = StringDictionary[Any]
   
   trait EncodeOptions extends StObject {
     
@@ -51,7 +50,7 @@ object mod {
   /**
     * Called when construction completed
     */
-  type InitializeCallback = js.Function1[/* error */ Error | Null, Unit]
+  type InitializeCallback = js.Function1[/* error */ js.Error | Null, Unit]
   
   /**
     * Utility collections for making Japanese text old-fashioned.

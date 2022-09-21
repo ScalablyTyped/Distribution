@@ -2,10 +2,9 @@ package typings.expressFrappe
 
 import typings.bodyParser.mod.OptionsJson
 import typings.bodyParser.mod.OptionsUrlencoded
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.serveStatic.mod.ServeStaticOptions
-import typings.socketIo.mod.Server
-import typings.socketIo.mod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ object anon {
   
   trait Options extends StObject {
     
-    var options: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.undefined
+    var options: js.UndefOr[ServeStaticOptions[ServerResponse[IncomingMessage]]] = js.undefined
     
     var root: String
   }
@@ -52,7 +51,7 @@ object anon {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setOptions(value: ServeStaticOptions[ServerResponse]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ServeStaticOptions[ServerResponse[IncomingMessage]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -60,41 +59,57 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<{use (io : socket.io.socket.io.Server, socket : socket.io.socket.io.Socket, next : (err : any | undefined): void): void, onConnect (io : socket.io.socket.io.Server, socket : socket.io.socket.io.Socket): void, onDisconnect (io : socket.io.socket.io.Server, socket : socket.io.socket.io.Socket): void, [eventHandler: string] : (io : socket.io.socket.io.Server, socket : socket.io.socket.io.Socket, data : any, cb : std.Function): void}> */
-  trait PartialuseioServersocketS extends StObject {
+  /* Inlined std.Partial<{use (io : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server * / any, socket : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket * / any, next : (err : any | undefined): void): void, onConnect (io : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server * / any, socket : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket * / any): void, onDisconnect (io : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server * / any, socket : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket * / any): void, [eventHandler: string] : (io : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server * / any, socket : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket * / any, data : any, cb : std.Function): void}> */
+  trait Partialuseioanysocketanyn extends StObject {
     
-    var onConnect: js.UndefOr[js.Function2[/* io */ Server, /* socket */ Socket, Unit]] = js.undefined
+    var onConnect: js.UndefOr[
+        js.Function2[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server */ /* io */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any, 
+          Unit
+        ]
+      ] = js.undefined
     
-    var onDisconnect: js.UndefOr[js.Function2[/* io */ Server, /* socket */ Socket, Unit]] = js.undefined
+    var onDisconnect: js.UndefOr[
+        js.Function2[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server */ /* io */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any, 
+          Unit
+        ]
+      ] = js.undefined
     
     var use: js.UndefOr[
         js.Function3[
-          /* io */ Server, 
-          /* socket */ Socket, 
-          /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server */ /* io */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any, 
+          /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
           Unit
         ]
       ] = js.undefined
   }
-  object PartialuseioServersocketS {
+  object Partialuseioanysocketanyn {
     
-    inline def apply(): PartialuseioServersocketS = {
+    inline def apply(): Partialuseioanysocketanyn = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialuseioServersocketS]
+      __obj.asInstanceOf[Partialuseioanysocketanyn]
     }
     
-    extension [Self <: PartialuseioServersocketS](x: Self) {
+    extension [Self <: Partialuseioanysocketanyn](x: Self) {
       
-      inline def setOnConnect(value: (/* io */ Server, /* socket */ Socket) => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction2(value))
+      inline def setOnConnect(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server */ /* io */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any) => Unit
+      ): Self = StObject.set(x, "onConnect", js.Any.fromFunction2(value))
       
       inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      inline def setOnDisconnect(value: (/* io */ Server, /* socket */ Socket) => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction2(value))
+      inline def setOnDisconnect(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server */ /* io */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any) => Unit
+      ): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction2(value))
       
       inline def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
       
       inline def setUse(
-        value: (/* io */ Server, /* socket */ Socket, /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server */ /* io */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any, /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit]) => Unit
       ): Self = StObject.set(x, "use", js.Any.fromFunction3(value))
       
       inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)

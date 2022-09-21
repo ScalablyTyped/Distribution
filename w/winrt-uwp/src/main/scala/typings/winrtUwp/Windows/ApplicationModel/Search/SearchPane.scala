@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SearchPane extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_querychanged(`type`: querychanged, listener: TypedEventHandler[SearchPane, SearchPaneQueryChangedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -76,7 +76,7 @@ trait SearchPane extends StObject {
   /** The current text in the search box of the search pane. */
   var queryText: String = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_querychanged(`type`: querychanged, listener: TypedEventHandler[SearchPane, SearchPaneQueryChangedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

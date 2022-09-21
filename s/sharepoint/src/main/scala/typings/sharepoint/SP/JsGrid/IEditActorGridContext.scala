@@ -10,11 +10,11 @@ trait IEditActorGridContext extends StObject {
   
   def OnKeyDown(domEvent: DomEvent): Unit
   
-  var RTL: js.Any
+  var RTL: Any
   
   var bLightFocus: Boolean
   
-  var emptyValue: js.Any
+  var emptyValue: Any
   
   var jsGridObj: JsGridControl
   
@@ -26,9 +26,9 @@ object IEditActorGridContext {
   
   inline def apply(
     OnKeyDown: DomEvent => Unit,
-    RTL: js.Any,
+    RTL: Any,
     bLightFocus: Boolean,
-    emptyValue: js.Any,
+    emptyValue: Any,
     jsGridObj: JsGridControl,
     parentNode: HTMLElement,
     styleManager: IStyleManager
@@ -41,7 +41,7 @@ object IEditActorGridContext {
     
     inline def setBLightFocus(value: Boolean): Self = StObject.set(x, "bLightFocus", value.asInstanceOf[js.Any])
     
-    inline def setEmptyValue(value: js.Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
+    inline def setEmptyValue(value: Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
     
     inline def setJsGridObj(value: JsGridControl): Self = StObject.set(x, "jsGridObj", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object IEditActorGridContext {
     
     inline def setParentNode(value: HTMLElement): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    inline def setRTL(value: js.Any): Self = StObject.set(x, "RTL", value.asInstanceOf[js.Any])
+    inline def setRTL(value: Any): Self = StObject.set(x, "RTL", value.asInstanceOf[js.Any])
     
     inline def setStyleManager(value: IStyleManager): Self = StObject.set(x, "styleManager", value.asInstanceOf[js.Any])
   }

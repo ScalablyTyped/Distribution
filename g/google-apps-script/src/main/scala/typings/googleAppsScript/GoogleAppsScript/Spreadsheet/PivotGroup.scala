@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait PivotGroup extends StObject {
   
-  def addManualGroupingRule(groupName: String, groupMembers: js.Array[js.Any]): PivotGroup
+  def addManualGroupingRule(groupName: String, groupMembers: js.Array[Any]): PivotGroup
   
   def areLabelsRepeated(): Boolean
   
@@ -48,7 +48,7 @@ trait PivotGroup extends StObject {
   
   def sortAscending(): PivotGroup
   
-  def sortBy(value: PivotValue, oppositeGroupValues: js.Array[js.Any]): PivotGroup
+  def sortBy(value: PivotValue, oppositeGroupValues: js.Array[Any]): PivotGroup
   
   def sortDescending(): PivotGroup
   
@@ -57,7 +57,7 @@ trait PivotGroup extends StObject {
 object PivotGroup {
   
   inline def apply(
-    addManualGroupingRule: (String, js.Array[js.Any]) => PivotGroup,
+    addManualGroupingRule: (String, js.Array[Any]) => PivotGroup,
     areLabelsRepeated: () => Boolean,
     clearGroupingRule: () => PivotGroup,
     clearSort: () => PivotGroup,
@@ -76,7 +76,7 @@ object PivotGroup {
     showRepeatedLabels: () => PivotGroup,
     showTotals: Boolean => PivotGroup,
     sortAscending: () => PivotGroup,
-    sortBy: (PivotValue, js.Array[js.Any]) => PivotGroup,
+    sortBy: (PivotValue, js.Array[Any]) => PivotGroup,
     sortDescending: () => PivotGroup,
     totalsAreShown: () => Boolean
   ): PivotGroup = {
@@ -86,7 +86,7 @@ object PivotGroup {
   
   extension [Self <: PivotGroup](x: Self) {
     
-    inline def setAddManualGroupingRule(value: (String, js.Array[js.Any]) => PivotGroup): Self = StObject.set(x, "addManualGroupingRule", js.Any.fromFunction2(value))
+    inline def setAddManualGroupingRule(value: (String, js.Array[Any]) => PivotGroup): Self = StObject.set(x, "addManualGroupingRule", js.Any.fromFunction2(value))
     
     inline def setAreLabelsRepeated(value: () => Boolean): Self = StObject.set(x, "areLabelsRepeated", js.Any.fromFunction0(value))
     
@@ -124,7 +124,7 @@ object PivotGroup {
     
     inline def setSortAscending(value: () => PivotGroup): Self = StObject.set(x, "sortAscending", js.Any.fromFunction0(value))
     
-    inline def setSortBy(value: (PivotValue, js.Array[js.Any]) => PivotGroup): Self = StObject.set(x, "sortBy", js.Any.fromFunction2(value))
+    inline def setSortBy(value: (PivotValue, js.Array[Any]) => PivotGroup): Self = StObject.set(x, "sortBy", js.Any.fromFunction2(value))
     
     inline def setSortDescending(value: () => PivotGroup): Self = StObject.set(x, "sortDescending", js.Any.fromFunction0(value))
     

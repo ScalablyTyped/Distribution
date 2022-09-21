@@ -10,10 +10,10 @@ Sort array of semver string even which is exist in a strings.
 | ------------------ | :-------------: |
 | Full name          | semver-sort |
 | Keywords           | sort, semver, sort semver |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 352855 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 59331.333333333336 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/ragingwind/semver-sort#readme)

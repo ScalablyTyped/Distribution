@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FeatureConstructor
   extends StObject
-     with Instantiable0[Feature]
+     with /**
+  * The Feature widget displays a graphic according to its [PopupTemplate](esri-PopupTemplate.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html)
+  */
+Instantiable0[Feature]
      with Instantiable1[/* properties */ FeatureProperties, Feature]

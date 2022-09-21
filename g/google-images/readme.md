@@ -10,15 +10,12 @@ Search images using Google Custom Search Engine API
 | ------------------ | :-------------: |
 | Full name          | google-images |
 | Keywords           | google, images, google images, image search |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 46445 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3915.6666666666665 |
+| # stars            | 279.0 |
 
 ## Links
-- [Homepage](https://github.com/vadimdemedes/google-images#readme)
-- [Bugs](https://github.com/vadimdemedes/google-images/issues)
-- [Repository](https://github.com/vadimdemedes/google-images)
 - [Npm](https://www.npmjs.com/package/google-images)
     
 

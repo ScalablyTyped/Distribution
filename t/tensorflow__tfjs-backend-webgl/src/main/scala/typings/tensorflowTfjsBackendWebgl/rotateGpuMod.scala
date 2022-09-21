@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
+import typings.tensorflowTfjsBackendWebgl.anon.Name
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,33 +10,17 @@ object rotateGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/rotate_gpu", "RotateProgram")
   @js.native
-  class RotateProgram protected ()
+  open class RotateProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(
       imageShape: js.Tuple4[Double, Double, Double, Double],
-      radians: Double,
-      fillValue: js.Tuple3[Double, Double, Double],
-      center: js.Tuple2[Double, Double]
+      fillValue: js.Tuple3[Double, Double, Double]
     ) = this()
-    def this(
-      imageShape: js.Tuple4[Double, Double, Double, Double],
-      radians: Double,
-      fillValue: js.Tuple3[Double, Double, Double],
-      center: Double
-    ) = this()
-    def this(
-      imageShape: js.Tuple4[Double, Double, Double, Double],
-      radians: Double,
-      fillValue: Double,
-      center: js.Tuple2[Double, Double]
-    ) = this()
-    def this(
-      imageShape: js.Tuple4[Double, Double, Double, Double],
-      radians: Double,
-      fillValue: Double,
-      center: Double
-    ) = this()
+    def this(imageShape: js.Tuple4[Double, Double, Double, Double], fillValue: Double) = this()
+    
+    @JSName("customUniforms")
+    var customUniforms_RotateProgram: js.Array[Name] = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

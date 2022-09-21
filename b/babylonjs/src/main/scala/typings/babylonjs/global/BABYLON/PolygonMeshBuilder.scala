@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PolygonMeshBuilder")
 @js.native
-class PolygonMeshBuilder protected ()
+open class PolygonMeshBuilder protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PolygonMeshBuilder {
-  def this(name: String, contours: js.Any) = this()
   def this(name: String, contours: js.Array[typings.babylonjs.BABYLON.Vector2]) = this()
+  def this(name: String, contours: Any) = this()
   /**
     * Creates a PolygonMeshBuilder
     * @param name name of the builder
@@ -19,32 +19,32 @@ class PolygonMeshBuilder protected ()
     * @param earcutInjection can be used to inject your own earcut reference
     */
   def this(name: String, contours: typings.babylonjs.BABYLON.Path2) = this()
-  def this(name: String, contours: js.Any, scene: typings.babylonjs.BABYLON.Scene) = this()
   def this(
     name: String,
     contours: js.Array[typings.babylonjs.BABYLON.Vector2],
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
+  def this(name: String, contours: Any, scene: typings.babylonjs.BABYLON.Scene) = this()
   def this(name: String, contours: typings.babylonjs.BABYLON.Path2, scene: typings.babylonjs.BABYLON.Scene) = this()
-  def this(name: String, contours: js.Any, scene: Unit, earcutInjection: js.Any) = this()
-  def this(name: String, contours: js.Any, scene: typings.babylonjs.BABYLON.Scene, earcutInjection: js.Any) = this()
   def this(
     name: String,
     contours: js.Array[typings.babylonjs.BABYLON.Vector2],
     scene: Unit,
-    earcutInjection: js.Any
+    earcutInjection: Any
   ) = this()
   def this(
     name: String,
     contours: js.Array[typings.babylonjs.BABYLON.Vector2],
     scene: typings.babylonjs.BABYLON.Scene,
-    earcutInjection: js.Any
+    earcutInjection: Any
   ) = this()
-  def this(name: String, contours: typings.babylonjs.BABYLON.Path2, scene: Unit, earcutInjection: js.Any) = this()
+  def this(name: String, contours: Any, scene: Unit, earcutInjection: Any) = this()
+  def this(name: String, contours: Any, scene: typings.babylonjs.BABYLON.Scene, earcutInjection: Any) = this()
+  def this(name: String, contours: typings.babylonjs.BABYLON.Path2, scene: Unit, earcutInjection: Any) = this()
   def this(
     name: String,
     contours: typings.babylonjs.BABYLON.Path2,
     scene: typings.babylonjs.BABYLON.Scene,
-    earcutInjection: js.Any
+    earcutInjection: Any
   ) = this()
 }

@@ -8,7 +8,7 @@ trait SaveOptions
   extends StObject
      with CreateWriteStreamOptions {
   
-  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
+  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ Any, Unit]] = js.undefined
 }
 object SaveOptions {
   
@@ -19,7 +19,7 @@ object SaveOptions {
   
   extension [Self <: SaveOptions](x: Self) {
     
-    inline def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+    inline def setOnUploadProgress(value: /* progressEvent */ Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
     inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
   }

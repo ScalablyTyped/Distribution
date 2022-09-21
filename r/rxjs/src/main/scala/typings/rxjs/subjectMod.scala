@@ -1,28 +1,37 @@
 package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
-import typings.rxjs.subscriberMod.Subscriber
-import typings.rxjs.typesMod.Observer
-import typings.rxjs.typesMod.SubscriptionLike
+import typings.rxjs.internalTypesMod.Observer
+import typings.rxjs.internalTypesMod.SubscriptionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subjectMod {
   
-  @JSImport("rxjs/internal/Subject", "AnonymousSubject")
+  @JSImport("rxjs/dist/types/internal/Subject", "AnonymousSubject")
   @js.native
-  class AnonymousSubject[T] () extends Subject[T] {
-    def this(destination: Observer[T]) = this()
-    def this(destination: Unit, source: Observable[T]) = this()
-    def this(destination: Observer[T], source: Observable[T]) = this()
+  open class AnonymousSubject[T] () extends Subject[T] {
+    def this(/** @deprecated Internal implementation detail, do not use directly. Will be made internal in v8. */
+    destination: Observer[T]) = this()
+    def this(
+      /** @deprecated Internal implementation detail, do not use directly. Will be made internal in v8. */
+    destination: Unit,
+      source: Observable[T]
+    ) = this()
+    def this(
+      /** @deprecated Internal implementation detail, do not use directly. Will be made internal in v8. */
+    destination: Observer[T],
+      source: Observable[T]
+    ) = this()
     
-    /* protected */ var destination: js.UndefOr[Observer[T]] = js.native
+    /** @deprecated Internal implementation detail, do not use directly. Will be made internal in v8. */
+    var destination: js.UndefOr[Observer[T]] = js.native
   }
   
-  @JSImport("rxjs/internal/Subject", "Subject")
+  @JSImport("rxjs/dist/types/internal/Subject", "Subject")
   @js.native
-  class Subject[T] ()
+  open class Subject[T] ()
     extends Observable[T]
        with SubscriptionLike {
     
@@ -39,18 +48,25 @@ object subjectMod {
     
     def complete(): Unit = js.native
     
-    def error(err: js.Any): Unit = js.native
+    /* private */ var currentObservers: Any = js.native
     
+    def error(err: Any): Unit = js.native
+    
+    /** @deprecated Internal implementation detail, do not use directly. Will be made internal in v8. */
     var hasError: Boolean = js.native
     
+    /** @deprecated Internal implementation detail, do not use directly. Will be made internal in v8. */
     var isStopped: Boolean = js.native
     
-    def next(): Unit = js.native
     def next(value: T): Unit = js.native
     
+    def observed: Boolean = js.native
+    
+    /** @deprecated Internal implementation detail, do not use directly. Will be made internal in v8. */
     var observers: js.Array[Observer[T]] = js.native
     
-    var thrownError: js.Any = js.native
+    /** @deprecated Internal implementation detail, do not use directly. Will be made internal in v8. */
+    var thrownError: Any = js.native
     
     /* CompleteClass */
     override def unsubscribe(): Unit = js.native
@@ -58,25 +74,16 @@ object subjectMod {
   /* static members */
   object Subject {
     
-    @JSImport("rxjs/internal/Subject", "Subject")
+    @JSImport("rxjs/dist/types/internal/Subject", "Subject")
     @js.native
     val ^ : js.Any = js.native
     
-    /**@nocollapse
-      * @deprecated use new Subject() instead
+    /**
+      * Creates a "subject" by basically gluing an observer to an observable.
+      *
+      * @nocollapse
+      * @deprecated Recommended you do not use. Will be removed at some point in the future. Plans for replacement still under discussion.
       */
-    @JSImport("rxjs/internal/Subject", "Subject.create")
-    @js.native
-    def create: js.Function = js.native
-    inline def create_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("rxjs/internal/Subject", "SubjectSubscriber")
-  @js.native
-  class SubjectSubscriber[T] protected () extends Subscriber[T] {
-    def this(destination: Subject[T]) = this()
-    
-    /* protected */ @JSName("destination")
-    var destination_SubjectSubscriber: Subject[T] = js.native
+    inline def create(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   }
 }

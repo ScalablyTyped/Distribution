@@ -8,6 +8,8 @@ trait Call
   extends StObject
      with Entity {
   
+  var audioRoutingGroups: js.UndefOr[NullableOption[js.Array[AudioRoutingGroup]]] = js.undefined
+  
   /**
     * A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a
     * P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
@@ -41,10 +43,8 @@ trait Call
   
   var myParticipantId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Read-only. Nullable.
   var operations: js.UndefOr[NullableOption[js.Array[CommsOperation]]] = js.undefined
   
-  // Read-only. Nullable.
   var participants: js.UndefOr[NullableOption[js.Array[Participant]]] = js.undefined
   
   var requestedModalities: js.UndefOr[NullableOption[js.Array[Modality]]] = js.undefined
@@ -74,6 +74,14 @@ object Call {
   
   extension [Self <: Call](x: Self) {
     
+    inline def setAudioRoutingGroups(value: NullableOption[js.Array[AudioRoutingGroup]]): Self = StObject.set(x, "audioRoutingGroups", value.asInstanceOf[js.Any])
+    
+    inline def setAudioRoutingGroupsNull: Self = StObject.set(x, "audioRoutingGroups", null)
+    
+    inline def setAudioRoutingGroupsUndefined: Self = StObject.set(x, "audioRoutingGroups", js.undefined)
+    
+    inline def setAudioRoutingGroupsVarargs(value: AudioRoutingGroup*): Self = StObject.set(x, "audioRoutingGroups", js.Array(value*))
+    
     inline def setCallChainId(value: NullableOption[String]): Self = StObject.set(x, "callChainId", value.asInstanceOf[js.Any])
     
     inline def setCallChainIdNull: Self = StObject.set(x, "callChainId", null)
@@ -92,7 +100,7 @@ object Call {
     
     inline def setCallRoutesUndefined: Self = StObject.set(x, "callRoutes", js.undefined)
     
-    inline def setCallRoutesVarargs(value: CallRoute*): Self = StObject.set(x, "callRoutes", js.Array(value :_*))
+    inline def setCallRoutesVarargs(value: CallRoute*): Self = StObject.set(x, "callRoutes", js.Array(value*))
     
     inline def setCallbackUri(value: String): Self = StObject.set(x, "callbackUri", value.asInstanceOf[js.Any])
     
@@ -146,7 +154,7 @@ object Call {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: CommsOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: CommsOperation*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setParticipants(value: NullableOption[js.Array[Participant]]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
@@ -154,7 +162,7 @@ object Call {
     
     inline def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
-    inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value*))
     
     inline def setRequestedModalities(value: NullableOption[js.Array[Modality]]): Self = StObject.set(x, "requestedModalities", value.asInstanceOf[js.Any])
     
@@ -162,7 +170,7 @@ object Call {
     
     inline def setRequestedModalitiesUndefined: Self = StObject.set(x, "requestedModalities", js.undefined)
     
-    inline def setRequestedModalitiesVarargs(value: Modality*): Self = StObject.set(x, "requestedModalities", js.Array(value :_*))
+    inline def setRequestedModalitiesVarargs(value: Modality*): Self = StObject.set(x, "requestedModalities", js.Array(value*))
     
     inline def setResultInfo(value: NullableOption[ResultInfo]): Self = StObject.set(x, "resultInfo", value.asInstanceOf[js.Any])
     
@@ -194,7 +202,7 @@ object Call {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    inline def setTargetsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setTenantId(value: NullableOption[String]): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     

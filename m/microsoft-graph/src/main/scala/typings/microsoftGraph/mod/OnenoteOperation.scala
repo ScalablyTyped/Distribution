@@ -11,7 +11,7 @@ trait OnenoteOperation
   // The error returned by the operation.
   var error: js.UndefOr[NullableOption[OnenoteOperationError]] = js.undefined
   
-  // The operation percent complete if the operation is still in running status
+  // The operation percent complete if the operation is still in running status.
   var percentComplete: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The resource id.

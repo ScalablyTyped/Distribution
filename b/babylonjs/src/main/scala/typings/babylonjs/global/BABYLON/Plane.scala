@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Plane")
 @js.native
-class Plane protected ()
+open class Plane protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Plane {
   /**
@@ -28,9 +28,9 @@ class Plane protected ()
   
   /**
     * Updates the current Plane from the plane defined by the three given points.
-    * @param point1 one of the points used to contruct the plane
-    * @param point2 one of the points used to contruct the plane
-    * @param point3 one of the points used to contruct the plane
+    * @param point1 one of the points used to construct the plane
+    * @param point2 one of the points used to construct the plane
+    * @param point3 one of the points used to construct the plane
     * @returns the updated Plane.
     */
   /* CompleteClass */
@@ -161,6 +161,6 @@ object Plane {
   
   @JSGlobal("BABYLON.Plane._TmpMatrix")
   @js.native
-  def _TmpMatrix: js.Any = js.native
-  inline def _TmpMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMatrix")(x.asInstanceOf[js.Any])
+  def _TmpMatrix: Any = js.native
+  inline def _TmpMatrix_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMatrix")(x.asInstanceOf[js.Any])
 }

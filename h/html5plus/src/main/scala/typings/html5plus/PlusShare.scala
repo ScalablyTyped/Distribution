@@ -86,9 +86,9 @@ trait PlusShare extends StObject {
   def getServices(successCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def getServices(
     successCB: js.Function1[/* result */ js.Array[this.type], Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def getServices(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getServices(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 使用系统组件发送分享
@@ -99,14 +99,14 @@ trait PlusShare extends StObject {
     */
   def sendWithSystem(): Unit = js.native
   def sendWithSystem(msg: Unit, successCB: js.Function0[Unit]): Unit = js.native
-  def sendWithSystem(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def sendWithSystem(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def sendWithSystem(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def sendWithSystem(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def sendWithSystem(msg: PlusShareShareMessage): Unit = js.native
   def sendWithSystem(msg: PlusShareShareMessage, successCB: js.Function0[Unit]): Unit = js.native
   def sendWithSystem(
     msg: PlusShareShareMessage,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def sendWithSystem(msg: PlusShareShareMessage, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def sendWithSystem(msg: PlusShareShareMessage, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
 }

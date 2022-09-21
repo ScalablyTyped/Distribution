@@ -67,7 +67,7 @@ object DataSourceParameter {
     
     inline def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
     
-    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value*))
     
     inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
@@ -85,7 +85,7 @@ object DataSourceParameter {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: DataSourceParameter*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: DataSourceParameter*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
     

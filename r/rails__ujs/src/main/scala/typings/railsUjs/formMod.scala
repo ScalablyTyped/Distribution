@@ -14,5 +14,5 @@ object formMod {
   
   inline def formElements(form: Element, selector: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("formElements")(form.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   
-  inline def serializeElement(element: Element, additionalParam: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeElement")(element.asInstanceOf[js.Any], additionalParam.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serializeElement(element: Element, additionalParam: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeElement")(element.asInstanceOf[js.Any], additionalParam.asInstanceOf[js.Any])).asInstanceOf[String]
 }

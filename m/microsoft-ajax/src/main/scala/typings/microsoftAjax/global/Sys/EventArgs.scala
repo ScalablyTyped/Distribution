@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the EventArgs class.
   */
-class EventArgs ()
+open class EventArgs ()
   extends StObject
      with typings.microsoftAjax.Sys.EventArgs {
   

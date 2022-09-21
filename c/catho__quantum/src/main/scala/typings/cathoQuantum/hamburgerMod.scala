@@ -9,10 +9,10 @@ object hamburgerMod {
   
   @JSImport("@catho/quantum/Hamburger", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[HamburgerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[HamburgerProps, js.Object, Any]
   
-  type Hamburger = Component[HamburgerProps, js.Object, js.Any]
+  type Hamburger = Component[HamburgerProps, js.Object, Any]
   
   trait HamburgerProps extends StObject {
     

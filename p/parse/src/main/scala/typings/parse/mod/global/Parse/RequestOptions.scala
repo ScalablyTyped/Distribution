@@ -35,7 +35,7 @@ object RequestOptions {
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     

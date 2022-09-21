@@ -9,7 +9,7 @@ object stackMod {
   
   @JSImport("ethereumjs-vm/dist/evm/stack", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Stack
   

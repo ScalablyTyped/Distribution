@@ -19,13 +19,19 @@ object mod {
   @js.native
   trait JsonEditor extends StObject {
     
+    /** Appends a value/object to a specific path. */
+    def append(path: String, value: Any): JsonEditor = js.native
+    
     /** Empty the JSON file. */
     def empty(): JsonEditor = js.native
     def empty(cb: NoParamCallback): JsonEditor = js.native
     
     /** Get value at path. */
-    def get(): js.Any = js.native
-    def get(path: String): js.Any = js.native
+    def get(): Any = js.native
+    def get(path: String): Any = js.native
+    
+    /** Pop an array from a specific path. */
+    def pop(path: String): JsonEditor = js.native
     
     /** Read the JSON file. */
     def read(): js.Object = js.native
@@ -36,7 +42,8 @@ object mod {
     def save(cb: NoParamCallback): JsonEditor = js.native
     
     /** Set value at path. */
-    def set(path: String, value: js.Any): JsonEditor = js.native
+    def set(path: String, value: Any): JsonEditor = js.native
+    def set(path: String, value: Any, options: typings.setValue.mod.Options): JsonEditor = js.native
     
     /** Get full object. */
     def toObject(): js.Object = js.native
@@ -53,6 +60,8 @@ object mod {
   trait Options extends StObject {
     
     var autosave: js.UndefOr[Boolean] = js.undefined
+    
+    var ignore_dots: js.UndefOr[Boolean] = js.undefined
     
     var stringify_eol: js.UndefOr[Boolean] = js.undefined
     
@@ -72,6 +81,10 @@ object mod {
       inline def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
       
       inline def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
+      
+      inline def setIgnore_dots(value: Boolean): Self = StObject.set(x, "ignore_dots", value.asInstanceOf[js.Any])
+      
+      inline def setIgnore_dotsUndefined: Self = StObject.set(x, "ignore_dots", js.undefined)
       
       inline def setStringify_eol(value: Boolean): Self = StObject.set(x, "stringify_eol", value.asInstanceOf[js.Any])
       

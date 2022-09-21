@@ -39,7 +39,7 @@ object ListAssessmentRunsRequest {
     
     inline def setAssessmentTemplateArnsUndefined: Self = StObject.set(x, "assessmentTemplateArns", js.undefined)
     
-    inline def setAssessmentTemplateArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentTemplateArns", js.Array(value :_*))
+    inline def setAssessmentTemplateArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentTemplateArns", js.Array(value*))
     
     inline def setFilter(value: AssessmentRunFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ object grantTokenListMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/_GrantTokenList", "_GrantTokenList")
   @js.native
-  val GrantTokenList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val GrantTokenList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

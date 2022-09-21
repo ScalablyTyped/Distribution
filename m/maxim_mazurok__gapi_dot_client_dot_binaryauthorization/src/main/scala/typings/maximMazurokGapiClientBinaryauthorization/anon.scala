@@ -234,7 +234,7 @@ object anon {
     /** Data format for response. */
     var alt: js.UndefOr[String] = js.undefined
     
-    /** Required. The resource name of the Attestor of the occurrence, in the format `projects/∗/attestors/ *`. */
+    /** Required. The resource name of the Attestor of the occurrence, in the format `projects/ *‍/attestors/ *`. */
     var attestor: String
     
     /** JSONP */
@@ -344,7 +344,7 @@ object anon {
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
     var key: js.UndefOr[String] = js.undefined
     
-    /** Output only. The resource name, in the format `projects/∗/policy`. There is at most one policy per project. */
+    /** Required. The resource name, in the format `locations/ *‍/policy`. Note that the system policy is not associated with a project. */
     var name: String
     
     /** OAuth 2.0 token for the current user. */
@@ -444,9 +444,11 @@ object anon {
     var oauth_token: js.UndefOr[String] = js.undefined
     
     /**
-      * Optional. The policy format version to be returned. Valid values are 0, 1, and 3. Requests specifying an invalid value will be rejected. Requests for policies with any
-      * conditional bindings must specify version 3. Policies without any conditional bindings may specify any valid value or leave the field unset. To learn which resources support
-      * conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
+      * Optional. The maximum policy version that will be used to format the policy. Valid values are 0, 1, and 3. Requests specifying an invalid value will be rejected. Requests for
+      * policies with any conditional role bindings must specify version 3. Policies with no conditional role bindings may specify any valid value or leave the field unset. The policy
+      * in the response might use the policy version that you specified, or it might use a lower policy version. For example, if you specify version 3, but the policy has no conditional
+      * role bindings, the response uses version 1. To learn which resources support conditions in their IAM policies, see the [IAM
+      * documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
       */
     @JSName("options.requestedPolicyVersion")
     var optionsDotrequestedPolicyVersion: js.UndefOr[Double] = js.undefined
@@ -457,7 +459,10 @@ object anon {
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
     var quotaUser: js.UndefOr[String] = js.undefined
     
-    /** REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field. */
+    /**
+      * REQUIRED: The resource for which the policy is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this
+      * field.
+      */
     var resource: String
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -661,7 +666,7 @@ object anon {
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
     var key: js.UndefOr[String] = js.undefined
     
-    /** Required. The resource name, in the format: `projects/∗/attestors/ *`. This field may not be updated. */
+    /** Required. The resource name, in the format: `projects/ *‍/attestors/ *`. This field may not be updated. */
     var name: String
     
     /** OAuth 2.0 token for the current user. */
@@ -774,7 +779,10 @@ object anon {
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
     var quotaUser: js.UndefOr[String] = js.undefined
     
-    /** REQUIRED: The resource for which the policy detail is being requested. See the operation documentation for the appropriate value for this field. */
+    /**
+      * REQUIRED: The resource for which the policy detail is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for
+      * this field.
+      */
     var resource: String
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -852,7 +860,7 @@ object anon {
     /** Data format for response. */
     var alt: js.UndefOr[String] = js.undefined
     
-    /** Required. The resource name of the Attestor of the occurrence, in the format `projects/∗/attestors/ *`. */
+    /** Required. The resource name of the Attestor of the occurrence, in the format `projects/ *‍/attestors/ *`. */
     var attestor: String
     
     /** JSONP */
@@ -957,7 +965,7 @@ object anon {
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
     var key: js.UndefOr[String] = js.undefined
     
-    /** Output only. The resource name, in the format `projects/∗/policy`. There is at most one policy per project. */
+    /** Output only. The resource name, in the format `projects/ *‍/policy`. There is at most one policy per project. */
     var name: String
     
     /** OAuth 2.0 token for the current user. */

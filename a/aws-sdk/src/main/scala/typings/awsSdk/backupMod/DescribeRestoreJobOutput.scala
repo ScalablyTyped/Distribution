@@ -19,7 +19,7 @@ trait DescribeRestoreJobOutput extends StObject {
   /**
     * The date and time that a job to restore a recovery point is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CompletionDate: js.UndefOr[timestamp] = js.undefined
+  var CompletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a resource whose recovery point is being restored. The format of the ARN depends on the resource type of the backed-up resource.
@@ -29,7 +29,7 @@ trait DescribeRestoreJobOutput extends StObject {
   /**
     * The date and time that a restore job is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The amount of time in minutes that a job restoring a recovery point is expected to take.
@@ -62,7 +62,7 @@ trait DescribeRestoreJobOutput extends StObject {
   var RestoreJobId: js.UndefOr[String] = js.undefined
   
   /**
-    * Status code specifying the state of the job that is initiated by AWS Backup to restore a recovery point.
+    * Status code specifying the state of the job that is initiated by Backup to restore a recovery point.
     */
   var Status: js.UndefOr[RestoreJobStatus] = js.undefined
   
@@ -88,7 +88,7 @@ object DescribeRestoreJobOutput {
     
     inline def setBackupSizeInBytesUndefined: Self = StObject.set(x, "BackupSizeInBytes", js.undefined)
     
-    inline def setCompletionDate(value: timestamp): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
@@ -96,7 +96,7 @@ object DescribeRestoreJobOutput {
     
     inline def setCreatedResourceArnUndefined: Self = StObject.set(x, "CreatedResourceArn", js.undefined)
     
-    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

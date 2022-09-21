@@ -23,7 +23,7 @@ trait SlideShowTransition extends StObject {
   
   var LoopSoundUntilNext: MsoTriState
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.SlideShowTransition_typekey")
   var PowerPointDotSlideShowTransition_typekey: SlideShowTransition
@@ -43,7 +43,7 @@ object SlideShowTransition {
     EntryEffect: PpEntryEffect,
     Hidden: MsoTriState,
     LoopSoundUntilNext: MsoTriState,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotSlideShowTransition_typekey: SlideShowTransition,
     SoundEffect: SoundEffect,
     Speed: PpTransitionSpeed
@@ -71,7 +71,7 @@ object SlideShowTransition {
     
     inline def setLoopSoundUntilNext(value: MsoTriState): Self = StObject.set(x, "LoopSoundUntilNext", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotSlideShowTransition_typekey(value: SlideShowTransition): Self = StObject.set(x, "PowerPoint.SlideShowTransition_typekey", value.asInstanceOf[js.Any])
     

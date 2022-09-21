@@ -36,7 +36,7 @@ object XConfirmDeleteBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addConfirmDeleteListener: XConfirmDeleteListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeConfirmDeleteListener: XConfirmDeleteListener => Unit
   ): XConfirmDeleteBroadcaster = {

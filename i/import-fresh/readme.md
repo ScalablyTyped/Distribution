@@ -1,7 +1,7 @@
 
 # Scala.js typings for import-fresh
 
-Typings are for version 3.2.2
+Typings are for version 3.3.0
 
 ## Library description:
 Import a module while bypassing the cache
@@ -10,15 +10,12 @@ Import a module while bypassing the cache
 | ------------------ | :-------------: |
 | Full name          | import-fresh |
 | Keywords           | require, cache, uncache, uncached, module, fresh, bypass |
-| # releases         | 6 |
-| # dependents       | 188 |
-| # downloads        | 930764868 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4112606066666666E8 |
+| # stars            | 261.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/import-fresh#readme)
-- [Bugs](https://github.com/sindresorhus/import-fresh/issues)
-- [Repository](https://github.com/sindresorhus/import-fresh)
 - [Npm](https://www.npmjs.com/package/import-fresh)
     
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Delaporte")
 @js.native
-class Delaporte ()
+open class Delaporte ()
   extends typings.ranjs.mod.dist.Delaporte {
   def this(alpha: Double) = this()
   def this(alpha: Double, beta: Double) = this()

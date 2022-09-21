@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.AutoCaption")
 @js.native
-/* private */ class AutoCaption ()
+/* private */ open class AutoCaption ()
   extends StObject
      with typings.activexWord.Word.AutoCaption {
   
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var AutoInsert: Boolean = js.native
   
   /* CompleteClass */
-  var CaptionLabel: js.Any = js.native
+  var CaptionLabel: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.AutoCaption_typekey")

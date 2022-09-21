@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
-import typings.formatjsEcma402Abstract.typesRelativeTimeMod.IntlRelativeTimeFormatOptions
-import typings.formatjsEcma402Abstract.typesRelativeTimeMod.LocaleFieldsData
-import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeLocaleData
-import typings.formatjsIntlRelativetimeformat.anon.PickIntlRelativeTimeForma
 import typings.intlRelativeformat.anon.Locale
 import typings.intlRelativeformat.anon.Now
 import typings.intlRelativeformat.typesMod.LocaleData
@@ -23,7 +19,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("intl-relativeformat", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with IntlRelativeFormat {
     def this(locales: String) = this()
@@ -40,61 +36,16 @@ object mod extends Shortcut {
     
     object Intl {
       
-      /* was `typeof IntlRelativeTimeFormat` */
+      @JSGlobal("Intl")
+      @js.native
+      val ^ : js.Any = js.native
+      
       @JSGlobal("Intl.RelativeTimeFormat")
       @js.native
-      class RelativeTimeFormat ()
-        extends typings.formatjsIntlRelativetimeformat.mod.default {
-        def this(locales: String) = this()
-        def this(locales: js.Array[String]) = this()
-        def this(locales: String, options: IntlRelativeTimeFormatOptions) = this()
-        def this(locales: js.Array[String], options: IntlRelativeTimeFormatOptions) = this()
-        def this(locales: Unit, options: IntlRelativeTimeFormatOptions) = this()
-      }
-      /* static members */
-      object RelativeTimeFormat {
-        
-        @JSGlobal("Intl.RelativeTimeFormat")
-        @js.native
-        val ^ : js.Any = js.native
-        
-        inline def __addLocaleData(data: RelativeTimeLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-        
-        @JSGlobal("Intl.RelativeTimeFormat.__defaultLocale")
-        @js.native
-        def __defaultLocale: js.Any = js.native
-        inline def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
-        
-        @JSGlobal("Intl.RelativeTimeFormat.availableLocales")
-        @js.native
-        def availableLocales: js.Any = js.native
-        inline def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
-        
-        @JSGlobal("Intl.RelativeTimeFormat.getDefaultLocale")
-        @js.native
-        def getDefaultLocale: js.Any = js.native
-        inline def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
-        
-        @JSGlobal("Intl.RelativeTimeFormat.localeData")
-        @js.native
-        def localeData: Record[String, LocaleFieldsData] = js.native
-        inline def localeData_=(x: Record[String, LocaleFieldsData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localeData")(x.asInstanceOf[js.Any])
-        
-        @JSGlobal("Intl.RelativeTimeFormat.polyfilled")
-        @js.native
-        def polyfilled: Boolean = js.native
-        inline def polyfilled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyfilled")(x.asInstanceOf[js.Any])
-        
-        @JSGlobal("Intl.RelativeTimeFormat.relevantExtensionKeys")
-        @js.native
-        def relevantExtensionKeys: js.Any = js.native
-        inline def relevantExtensionKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
-        
-        inline def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-        inline def supportedLocalesOf(locales: String, options: PickIntlRelativeTimeForma): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-        inline def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-        inline def supportedLocalesOf(locales: js.Array[String], options: PickIntlRelativeTimeForma): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-      }
+      def RelativeTimeFormat: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof IntlRelativeTimeFormat */ Any = js.native
+      inline def RelativeTimeFormat_=(
+        x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof IntlRelativeTimeFormat */ Any
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RelativeTimeFormat")(x.asInstanceOf[js.Any])
     }
   }
   

@@ -27,7 +27,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.ControlChannelTrigger")
   @js.native
-  class ControlChannelTrigger protected ()
+  open class ControlChannelTrigger protected ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.ControlChannelTrigger {
     def this(channelId: String, serverKeepAliveIntervalInMinutes: Double) = this()
@@ -65,10 +65,10 @@ object Sockets {
     var serverKeepAliveIntervalInMinutes: Double = js.native
     
     /* CompleteClass */
-    var transportObject: js.Any = js.native
+    var transportObject: Any = js.native
     
     /* CompleteClass */
-    override def usingTransport(transport: js.Any): Unit = js.native
+    override def usingTransport(transport: Any): Unit = js.native
     
     /* CompleteClass */
     override def waitForPushEnabled(): ControlChannelTriggerStatus = js.native
@@ -126,7 +126,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.DatagramSocket")
   @js.native
-  class DatagramSocket ()
+  open class DatagramSocket ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.DatagramSocket {
     
@@ -150,7 +150,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.DatagramSocketControl")
   @js.native
-  class DatagramSocketControl ()
+  open class DatagramSocketControl ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.DatagramSocketControl {
     
@@ -163,7 +163,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.DatagramSocketInformation")
   @js.native
-  class DatagramSocketInformation ()
+  open class DatagramSocketInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.DatagramSocketInformation {
     
@@ -182,7 +182,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs")
   @js.native
-  class DatagramSocketMessageReceivedEventArgs ()
+  open class DatagramSocketMessageReceivedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs {
     
@@ -204,7 +204,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.MessageWebSocket")
   @js.native
-  class MessageWebSocket ()
+  open class MessageWebSocket ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.MessageWebSocket {
     
@@ -214,7 +214,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.MessageWebSocketControl")
   @js.native
-  class MessageWebSocketControl ()
+  open class MessageWebSocketControl ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.MessageWebSocketControl {
     
@@ -239,7 +239,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.MessageWebSocketInformation")
   @js.native
-  class MessageWebSocketInformation ()
+  open class MessageWebSocketInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.MessageWebSocketInformation {
     
@@ -255,7 +255,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.MessageWebSocketMessageReceivedEventArgs")
   @js.native
-  class MessageWebSocketMessageReceivedEventArgs ()
+  open class MessageWebSocketMessageReceivedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.MessageWebSocketMessageReceivedEventArgs {
     
@@ -271,7 +271,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.SocketError")
   @js.native
-  class SocketError ()
+  open class SocketError ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.SocketError
   /* static members */
@@ -394,7 +394,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamSocket")
   @js.native
-  class StreamSocket ()
+  open class StreamSocket ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamSocket {
     
@@ -404,7 +404,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamSocketControl")
   @js.native
-  class StreamSocketControl ()
+  open class StreamSocketControl ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamSocketControl {
     
@@ -426,7 +426,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamSocketInformation")
   @js.native
-  class StreamSocketInformation ()
+  open class StreamSocketInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamSocketInformation {
     
@@ -463,7 +463,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamSocketListener")
   @js.native
-  class StreamSocketListener ()
+  open class StreamSocketListener ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamSocketListener {
     
@@ -486,12 +486,12 @@ object Sockets {
     var information: typings.winrt.Windows.Networking.Sockets.StreamSocketListenerInformation = js.native
     
     /* CompleteClass */
-    var onconnectionreceived: js.Any = js.native
+    var onconnectionreceived: Any = js.native
   }
   
   @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerConnectionReceivedEventArgs")
   @js.native
-  class StreamSocketListenerConnectionReceivedEventArgs ()
+  open class StreamSocketListenerConnectionReceivedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamSocketListenerConnectionReceivedEventArgs {
     
@@ -501,7 +501,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerControl")
   @js.native
-  class StreamSocketListenerControl ()
+  open class StreamSocketListenerControl ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamSocketListenerControl {
     
@@ -511,7 +511,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerInformation")
   @js.native
-  class StreamSocketListenerInformation ()
+  open class StreamSocketListenerInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamSocketListenerInformation {
     
@@ -521,7 +521,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamWebSocket")
   @js.native
-  class StreamWebSocket ()
+  open class StreamWebSocket ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamWebSocket {
     
@@ -531,7 +531,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamWebSocketControl")
   @js.native
-  class StreamWebSocketControl ()
+  open class StreamWebSocketControl ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamWebSocketControl {
     
@@ -553,7 +553,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.StreamWebSocketInformation")
   @js.native
-  class StreamWebSocketInformation ()
+  open class StreamWebSocketInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.StreamWebSocketInformation {
     
@@ -569,7 +569,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.WebSocketClosedEventArgs")
   @js.native
-  class WebSocketClosedEventArgs ()
+  open class WebSocketClosedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.WebSocketClosedEventArgs {
     
@@ -582,7 +582,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.WebSocketError")
   @js.native
-  class WebSocketError ()
+  open class WebSocketError ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.WebSocketError
   /* static members */
@@ -597,7 +597,7 @@ object Sockets {
   
   @JSGlobal("Windows.Networking.Sockets.WebSocketKeepAlive")
   @js.native
-  class WebSocketKeepAlive ()
+  open class WebSocketKeepAlive ()
     extends StObject
        with typings.winrt.Windows.Networking.Sockets.WebSocketKeepAlive {
     

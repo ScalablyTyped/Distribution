@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLDivisions extends StObject {
   
   def Add(): HTMLDivision = js.native
-  def Add(Range: js.Any): HTMLDivision = js.native
+  def Add(Range: Any): HTMLDivision = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -20,7 +20,7 @@ trait HTMLDivisions extends StObject {
   
   val NestingLevel: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.HTMLDivisions_typekey")
   var WordDotHTMLDivisions_typekey: HTMLDivisions = js.native

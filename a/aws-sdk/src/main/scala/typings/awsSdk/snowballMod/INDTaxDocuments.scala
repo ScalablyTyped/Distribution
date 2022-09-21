@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait INDTaxDocuments extends StObject {
   
   /**
-    * The Goods and Services Tax (GST) documents required in AWS Regions in India.
+    * The Goods and Services Tax (GST) documents required in Amazon Web Services Region in India.
     */
   var GSTIN: js.UndefOr[typings.awsSdk.snowballMod.GSTIN] = js.undefined
 }

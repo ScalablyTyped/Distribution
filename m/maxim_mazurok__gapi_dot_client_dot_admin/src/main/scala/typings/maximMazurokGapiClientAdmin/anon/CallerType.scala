@@ -12,10 +12,13 @@ trait CallerType extends StObject {
   /** The primary email address of the actor. May be absent if there is no email address associated with the actor. */
   var email: js.UndefOr[String] = js.undefined
   
-  /** Only present when callerType is KEY. Can be the consumer_key of the requestor for OAuth 2LO API requests or an identifier for robot accounts. */
+  /** Only present when `callerType` is `KEY`. Can be the `consumer_key` of the requestor for OAuth 2LO API requests or an identifier for robot accounts. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The unique G Suite profile ID of the actor. May be absent if the actor is not a G Suite user. */
+  /**
+    * The unique Google Workspace profile ID of the actor. This value might be absent if the actor is not a Google Workspace user, or may be the number 105250506097979753968 which
+    * acts as a placeholder ID.
+    */
   var profileId: js.UndefOr[String] = js.undefined
 }
 object CallerType {

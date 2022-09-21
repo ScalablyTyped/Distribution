@@ -6,58 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(startOrOptions: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(startOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def apply(startOrOptions: ProcessCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(startOrOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def apply(workers: WorkerCount, start: ProcessCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(workers.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(startOrOptions: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(startOrOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(startOrOptions: WorkerCallback): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(startOrOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(workers: WorkerCount, start: WorkerCallback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(workers.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("throng", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait Options extends StObject {
-    
-    var grace: js.UndefOr[Double] = js.undefined
-    
-    var lifetime: js.UndefOr[Double] = js.undefined
-    
-    var master: js.UndefOr[ProcessCallback] = js.undefined
-    
-    def start(id: Double): js.Any
-    @JSName("start")
-    var start_Original: ProcessCallback
-    
-    var workers: js.UndefOr[WorkerCount] = js.undefined
-  }
+  type MasterCallback = js.Function0[Unit]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.throng.anon.startWorkerCallbacksignal
+    - typings.throng.anon.workerWorkerCallbacksigna
+  */
+  trait Options extends StObject
   object Options {
     
-    inline def apply(start: /* id */ Double => js.Any): Options = {
-      val __obj = js.Dynamic.literal(start = js.Any.fromFunction1(start))
-      __obj.asInstanceOf[Options]
+    inline def startWorkerCallbacksignal(start: (/* id */ Double, /* disconnect */ js.Function0[Unit]) => Unit): typings.throng.anon.startWorkerCallbacksignal = {
+      val __obj = js.Dynamic.literal(start = js.Any.fromFunction2(start))
+      __obj.asInstanceOf[typings.throng.anon.startWorkerCallbacksignal]
     }
     
-    extension [Self <: Options](x: Self) {
-      
-      inline def setGrace(value: Double): Self = StObject.set(x, "grace", value.asInstanceOf[js.Any])
-      
-      inline def setGraceUndefined: Self = StObject.set(x, "grace", js.undefined)
-      
-      inline def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
-      
-      inline def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
-      
-      inline def setMaster(value: /* id */ Double => js.Any): Self = StObject.set(x, "master", js.Any.fromFunction1(value))
-      
-      inline def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
-      
-      inline def setStart(value: /* id */ Double => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
-      
-      inline def setWorkers(value: WorkerCount): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
-      
-      inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
+    inline def workerWorkerCallbacksigna(worker: (/* id */ Double, /* disconnect */ js.Function0[Unit]) => Unit): typings.throng.anon.workerWorkerCallbacksigna = {
+      val __obj = js.Dynamic.literal(worker = js.Any.fromFunction2(worker))
+      __obj.asInstanceOf[typings.throng.anon.workerWorkerCallbacksigna]
     }
   }
   
-  type ProcessCallback = js.Function1[/* id */ Double, js.Any]
+  type WorkerCallback = js.Function2[/* id */ Double, /* disconnect */ js.Function0[Unit], Unit]
   
   type WorkerCount = Double | String
 }

@@ -26,7 +26,7 @@ object SslCertificatesScopedList {
     
     inline def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
     
-    inline def setSslCertificatesVarargs(value: SslCertificate*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
+    inline def setSslCertificatesVarargs(value: SslCertificate*): Self = StObject.set(x, "sslCertificates", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

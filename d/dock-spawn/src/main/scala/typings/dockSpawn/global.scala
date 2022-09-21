@@ -13,7 +13,7 @@ object global {
     
     @JSGlobal("dockspawn.Dialog")
     @js.native
-    class Dialog protected ()
+    open class Dialog protected ()
       extends StObject
          with typings.dockSpawn.dockspawn.Dialog {
       def this(
@@ -53,7 +53,7 @@ object global {
       */
     @JSGlobal("dockspawn.DockManager")
     @js.native
-    class DockManager protected ()
+    open class DockManager protected ()
       extends StObject
          with typings.dockSpawn.dockspawn.DockManager {
       def this(element: HTMLDivElement) = this()
@@ -159,7 +159,7 @@ object global {
     
     @JSGlobal("dockspawn.DockManagerContext")
     @js.native
-    class DockManagerContext protected ()
+    open class DockManagerContext protected ()
       extends StObject
          with typings.dockSpawn.dockspawn.DockManagerContext {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
@@ -176,7 +176,7 @@ object global {
     
     @JSGlobal("dockspawn.DockModel")
     @js.native
-    class DockModel ()
+    open class DockModel ()
       extends StObject
          with typings.dockSpawn.dockspawn.DockModel {
       
@@ -189,7 +189,7 @@ object global {
     
     @JSGlobal("dockspawn.DockNode")
     @js.native
-    class DockNode protected ()
+    open class DockNode protected ()
       extends StObject
          with typings.dockSpawn.dockspawn.DockNode {
       def this(container: typings.dockSpawn.dockspawn.PanelContainer) = this()
@@ -205,7 +205,7 @@ object global {
       */
     @JSGlobal("dockspawn.DocumentManagerContainer")
     @js.native
-    class DocumentManagerContainer protected ()
+    open class DocumentManagerContainer protected ()
       extends StObject
          with typings.dockSpawn.dockspawn.DocumentManagerContainer {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
@@ -240,7 +240,7 @@ object global {
     
     @JSGlobal("dockspawn.FillDockContainer")
     @js.native
-    class FillDockContainer protected ()
+    open class FillDockContainer protected ()
       extends StObject
          with typings.dockSpawn.dockspawn.FillDockContainer {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
@@ -270,7 +270,7 @@ object global {
     
     @JSGlobal("dockspawn.PanelContainer")
     @js.native
-    class PanelContainer protected ()
+    open class PanelContainer protected ()
       extends StObject
          with typings.dockSpawn.dockspawn.PanelContainer {
       def this(element: HTMLElement, dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
@@ -295,7 +295,7 @@ object global {
       */
     @JSGlobal("dockspawn.TabHost")
     @js.native
-    class TabHost ()
+    open class TabHost ()
       extends StObject
          with typings.dockSpawn.dockspawn.TabHost {
       def this(tabStripDirection: TabStripDirection) = this()
@@ -336,7 +336,7 @@ object global {
     
     @JSGlobal("dockspawn.TabPage")
     @js.native
-    class TabPage protected ()
+    open class TabPage protected ()
       extends StObject
          with typings.dockSpawn.dockspawn.TabPage {
       def this(host: typings.dockSpawn.dockspawn.TabHost, container: typings.dockSpawn.dockspawn.PanelContainer) = this()

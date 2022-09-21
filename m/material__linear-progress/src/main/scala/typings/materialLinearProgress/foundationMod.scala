@@ -12,16 +12,20 @@ object foundationMod {
   
   @JSImport("@material/linear-progress/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCLinearProgressFoundation {
+  open class default () extends MDCLinearProgressFoundation {
     def this(adapter: PartialMDCLinearProgressA) = this()
   }
   
   @JSImport("@material/linear-progress/foundation", "MDCLinearProgressFoundation")
   @js.native
-  class MDCLinearProgressFoundation ()
+  open class MDCLinearProgressFoundation ()
     extends MDCFoundation[MDCLinearProgressAdapter]
        with MDCProgressIndicatorFoundation {
     def this(adapter: PartialMDCLinearProgressA) = this()
+    
+    /* private */ var buffer: Any = js.native
+    
+    /* private */ var calculateAndSetDimensions: Any = js.native
     
     /**
       * Puts the component in the closed state.
@@ -29,9 +33,15 @@ object foundationMod {
     /* CompleteClass */
     override def close(): Unit = js.native
     
-    def getDeterminate(): Boolean = js.native
+    /* private */ var determinate: Any = js.native
     
-    def getProgress(): Double = js.native
+    def getBuffer(): Double = js.native
+    
+    /**
+      * @return the current progress value [0,1];
+      */
+    /* CompleteClass */
+    override def getProgress(): Double = js.native
     
     /**
       * Handles the transitionend event emitted after `close()` is called and the
@@ -41,12 +51,32 @@ object foundationMod {
     def handleTransitionEnd(): Unit = js.native
     
     /**
+      * @return Whether the component is closed.
+      */
+    /* CompleteClass */
+    override def isClosed(): Boolean = js.native
+    
+    /**
+      * @return Whether the component is determinate.
+      */
+    /* CompleteClass */
+    override def isDeterminate(): Boolean = js.native
+    
+    /* private */ var observer: Any = js.native
+    
+    /**
       * Puts the component in the open state.
       */
     /* CompleteClass */
     override def open(): Unit = js.native
     
+    /* private */ var progress: Any = js.native
+    
+    def restartAnimation(): Unit = js.native
+    
     def setBuffer(value: Double): Unit = js.native
+    
+    /* private */ var setBufferBarProgress: Any = js.native
     
     /**
       * Toggles the component between the determinate and indeterminate state.
@@ -56,6 +86,8 @@ object foundationMod {
     /* CompleteClass */
     override def setDeterminate(isDeterminate: Boolean): Unit = js.native
     
+    /* private */ var setPrimaryBarProgress: Any = js.native
+    
     /**
       * Sets the current progress value.
       *
@@ -63,7 +95,5 @@ object foundationMod {
       */
     /* CompleteClass */
     override def setProgress(value: Double): Unit = js.native
-    
-    def setReverse(isReversed: Boolean): Unit = js.native
   }
 }

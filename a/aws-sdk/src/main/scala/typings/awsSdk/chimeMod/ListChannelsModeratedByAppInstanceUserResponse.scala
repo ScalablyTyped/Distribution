@@ -29,7 +29,7 @@ object ListChannelsModeratedByAppInstanceUserResponse {
     
     inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    inline def setChannelsVarargs(value: ChannelModeratedByAppInstanceUserSummary*): Self = StObject.set(x, "Channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: ChannelModeratedByAppInstanceUserSummary*): Self = StObject.set(x, "Channels", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

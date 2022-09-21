@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".fast-xml-parser-SoMrbExG" : "3.19.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".fast-xml-parser-SoMrbExG" : "3.19.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

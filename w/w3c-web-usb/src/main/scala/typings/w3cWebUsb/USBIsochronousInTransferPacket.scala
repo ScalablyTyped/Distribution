@@ -1,13 +1,12 @@
 package typings.w3cWebUsb
 
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait USBIsochronousInTransferPacket extends StObject {
   
-  val data: js.UndefOr[DataView] = js.undefined
+  val data: js.UndefOr[js.typedarray.DataView] = js.undefined
   
   val status: js.UndefOr[USBTransferStatus] = js.undefined
 }
@@ -20,7 +19,7 @@ object USBIsochronousInTransferPacket {
   
   extension [Self <: USBIsochronousInTransferPacket](x: Self) {
     
-    inline def setData(value: DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

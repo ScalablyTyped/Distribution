@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnshareDirectoryRequest extends StObject {
   
   /**
-    * The identifier of the AWS Managed Microsoft AD directory that you want to stop sharing.
+    * The identifier of the Managed Microsoft AD directory that you want to stop sharing.
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   

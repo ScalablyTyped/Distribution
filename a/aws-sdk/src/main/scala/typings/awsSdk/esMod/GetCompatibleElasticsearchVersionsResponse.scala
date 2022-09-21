@@ -24,6 +24,6 @@ object GetCompatibleElasticsearchVersionsResponse {
     
     inline def setCompatibleElasticsearchVersionsUndefined: Self = StObject.set(x, "CompatibleElasticsearchVersions", js.undefined)
     
-    inline def setCompatibleElasticsearchVersionsVarargs(value: CompatibleVersionsMap*): Self = StObject.set(x, "CompatibleElasticsearchVersions", js.Array(value :_*))
+    inline def setCompatibleElasticsearchVersionsVarargs(value: CompatibleVersionsMap*): Self = StObject.set(x, "CompatibleElasticsearchVersions", js.Array(value*))
   }
 }

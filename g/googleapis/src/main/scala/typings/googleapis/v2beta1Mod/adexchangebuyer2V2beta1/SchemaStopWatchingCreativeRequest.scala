@@ -4,7 +4,4 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request for stopping notifications for changes to creative Status.
-  */
 trait SchemaStopWatchingCreativeRequest extends StObject

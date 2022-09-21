@@ -1,9 +1,9 @@
 package typings.node.http2Mod
 
+import typings.node.nodeStreamMod.Duplex
 import typings.node.nodeStrings.httpColon
 import typings.node.nodeStrings.httpsColon
-import typings.node.streamMod.Duplex
-import typings.node.urlMod.URL_
+import typings.node.nodeUrlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait ClientSessionOptions
      with SessionOptions {
   
   @JSName("createConnection")
-  var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ SessionOptions, Duplex]] = js.undefined
+  var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL, /* option */ SessionOptions, Duplex]] = js.undefined
   
   var maxReservedRemoteStreams: js.UndefOr[Double] = js.undefined
   
@@ -28,7 +28,7 @@ object ClientSessionOptions {
   
   extension [Self <: ClientSessionOptions](x: Self) {
     
-    inline def setCreateConnection(value: (/* authority */ URL_, /* option */ SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
+    inline def setCreateConnection(value: (/* authority */ URL, /* option */ SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
     
     inline def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
     

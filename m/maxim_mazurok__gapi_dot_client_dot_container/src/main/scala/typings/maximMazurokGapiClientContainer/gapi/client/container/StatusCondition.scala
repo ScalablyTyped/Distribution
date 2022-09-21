@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StatusCondition extends StObject {
   
-  /** Machine-friendly representation of the condition */
+  /** Canonical code of the condition. */
+  var canonicalCode: js.UndefOr[String] = js.undefined
+  
+  /** Machine-friendly representation of the condition Deprecated. Use canonical_code instead. */
   var code: js.UndefOr[String] = js.undefined
   
   /** Human-friendly representation of the condition */
@@ -20,6 +23,10 @@ object StatusCondition {
   }
   
   extension [Self <: StatusCondition](x: Self) {
+    
+    inline def setCanonicalCode(value: String): Self = StObject.set(x, "canonicalCode", value.asInstanceOf[js.Any])
+    
+    inline def setCanonicalCodeUndefined: Self = StObject.set(x, "canonicalCode", js.undefined)
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

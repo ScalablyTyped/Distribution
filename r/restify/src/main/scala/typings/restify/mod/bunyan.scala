@@ -20,11 +20,11 @@ object bunyan {
     */
   @JSImport("restify", "bunyan.RequestCaptureStream")
   @js.native
-  class RequestCaptureStream protected () extends Stream {
+  open class RequestCaptureStream protected () extends Stream {
     def this(opts: RequestCaptureOptions) = this()
     
     /** write to the stream */
-    def write(record: js.Any): Unit = js.native
+    def write(record: Any): Unit = js.native
   }
   
   /** create a bunyan logger */
@@ -41,32 +41,32 @@ object bunyan {
     @js.native
     def clientReq: Serializer = js.native
     
-    inline def clientReq(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("client_req")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def clientReq(input: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("client_req")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def clientReq_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("client_req")(x.asInstanceOf[js.Any])
     
     @JSImport("restify", "bunyan.serializers.client_res")
     @js.native
     def clientRes: Serializer = js.native
     
-    inline def clientRes(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("client_res")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def clientRes(input: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("client_res")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def clientRes_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("client_res")(x.asInstanceOf[js.Any])
     
     @JSImport("restify", "bunyan.serializers.err")
     @js.native
     def err: Serializer = js.native
-    inline def err(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def err(input: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def err_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
     
     @JSImport("restify", "bunyan.serializers.req")
     @js.native
     def req: Serializer = js.native
-    inline def req(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def req(input: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def req_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
     
     @JSImport("restify", "bunyan.serializers.res")
     @js.native
     def res: Serializer = js.native
-    inline def res(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def res(input: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def res_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("res")(x.asInstanceOf[js.Any])
   }
   
@@ -133,7 +133,7 @@ object bunyan {
       
       inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
       
-      inline def setStreamsVarargs(value: typings.bunyan.mod.Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: typings.bunyan.mod.Stream*): Self = StObject.set(x, "streams", js.Array(value*))
     }
   }
 }

@@ -46,6 +46,6 @@ object IThemeConfig {
     
     inline def setRegisteredStyles(value: js.Array[String]): Self = StObject.set(x, "registeredStyles", value.asInstanceOf[js.Any])
     
-    inline def setRegisteredStylesVarargs(value: String*): Self = StObject.set(x, "registeredStyles", js.Array(value :_*))
+    inline def setRegisteredStylesVarargs(value: String*): Self = StObject.set(x, "registeredStyles", js.Array(value*))
   }
 }

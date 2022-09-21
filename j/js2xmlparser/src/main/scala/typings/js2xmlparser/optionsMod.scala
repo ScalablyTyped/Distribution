@@ -9,7 +9,7 @@ object optionsMod {
   
   @JSImport("js2xmlparser/lib/options", "DeclarationOptions")
   @js.native
-  class DeclarationOptions ()
+  open class DeclarationOptions ()
     extends StObject
        with IDeclarationOptions {
     def this(declarationOptions: IDeclarationOptions) = this()
@@ -20,7 +20,7 @@ object optionsMod {
   
   @JSImport("js2xmlparser/lib/options", "DtdOptions")
   @js.native
-  class DtdOptions protected ()
+  open class DtdOptions protected ()
     extends StObject
        with IDtdOptions {
     def this(validation: Boolean) = this()
@@ -32,7 +32,7 @@ object optionsMod {
   
   @JSImport("js2xmlparser/lib/options", "FormatOptions")
   @js.native
-  class FormatOptions ()
+  open class FormatOptions ()
     extends StObject
        with IFormatOptions {
     def this(formatOptions: IFormatOptions) = this()
@@ -40,7 +40,7 @@ object optionsMod {
   
   @JSImport("js2xmlparser/lib/options", "Options")
   @js.native
-  class Options ()
+  open class Options ()
     extends StObject
        with IOptions {
     def this(options: IOptions) = this()
@@ -89,7 +89,7 @@ object optionsMod {
   - org.scalablytyped.runtime.StObject because Already inherited
   - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("js2xmlparser/lib/options", "TypeHandlers")
   @js.native
-  class TypeHandlers ()
+  open class TypeHandlers ()
     extends StObject
        with ITypeHandlers {
     def this(typeHandlers: ITypeHandlers) = this()
@@ -99,7 +99,7 @@ object optionsMod {
   - org.scalablytyped.runtime.StObject because Already inherited
   - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("js2xmlparser/lib/options", "WrapHandlers")
   @js.native
-  class WrapHandlers ()
+  open class WrapHandlers ()
     extends StObject
        with IWrapHandlers {
     def this(wrapHandlers: IWrapHandlers) = this()
@@ -580,7 +580,7 @@ object optionsMod {
       
       inline def setCdataKeysUndefined: Self = StObject.set(x, "cdataKeys", js.undefined)
       
-      inline def setCdataKeysVarargs(value: String*): Self = StObject.set(x, "cdataKeys", js.Array(value :_*))
+      inline def setCdataKeysVarargs(value: String*): Self = StObject.set(x, "cdataKeys", js.Array(value*))
       
       inline def setDeclaration(value: IDeclarationOptions): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
@@ -624,7 +624,7 @@ object optionsMod {
     * Mapping between the type of a value in an object to a function taking
     * this value and returning a replacement value.
     */
-  StringDictionary[js.Function1[/* value */ js.Any, js.Any]]
+  StringDictionary[js.Function1[/* value */ Any, Any]]
   
   type IWrapHandlers = /**
     * Mapping between the string version of a key in an object or map with a
@@ -635,5 +635,5 @@ object optionsMod {
     * XML element for each item in the array or set, or `null` to indicate that
     * wrapping should not occur.
     */
-  StringDictionary[js.Function2[/* key */ String, /* value */ js.Any, String | Null]]
+  StringDictionary[js.Function2[/* key */ String, /* value */ Any, String | Null]]
 }

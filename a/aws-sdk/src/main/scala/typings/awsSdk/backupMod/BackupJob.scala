@@ -12,12 +12,12 @@ trait BackupJob extends StObject {
   var AccountId: js.UndefOr[typings.awsSdk.backupMod.AccountId] = js.undefined
   
   /**
-    * Uniquely identifies a request to AWS Backup to back up a resource.
+    * Uniquely identifies a request to Backup to back up a resource.
     */
   var BackupJobId: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the backup option for a selected resource. This option is only available for Windows VSS backup jobs. Valid values: Set to "WindowsVSS”:“enabled" to enable WindowsVSS backup option and create a VSS Windows backup. Set to “WindowsVSS”:”disabled” to create a regular backup. If you specify an invalid option, you get an InvalidParameterValueException exception.
+    * Specifies the backup option for a selected resource. This option is only available for Windows Volume Shadow Copy Service (VSS) backup jobs. Valid values: Set to "WindowsVSS":"enabled" to enable the WindowsVSS backup option and create a Windows VSS backup. Set to "WindowsVSS":"disabled" to create a regular backup. If you specify an invalid option, you get an InvalidParameterValueException exception.
     */
   var BackupOptions: js.UndefOr[typings.awsSdk.backupMod.BackupOptions] = js.undefined
   
@@ -37,7 +37,7 @@ trait BackupJob extends StObject {
   var BackupVaultArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
+    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Amazon Web Services Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
   var BackupVaultName: js.UndefOr[typings.awsSdk.backupMod.BackupVaultName] = js.undefined
   
@@ -49,7 +49,7 @@ trait BackupJob extends StObject {
   /**
     * The date and time a job to create a backup job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CompletionDate: js.UndefOr[timestamp] = js.undefined
+  var CompletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Contains identifying information about the creation of a backup job, including the BackupPlanArn, BackupPlanId, BackupPlanVersion, and BackupRuleId of the backup plan used to create it.
@@ -59,15 +59,15 @@ trait BackupJob extends StObject {
   /**
     * The date and time a backup job is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time a job to back up resources is expected to be completed, in Unix format and Coordinated Universal Time (UTC). The value of ExpectedCompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var ExpectedCompletionDate: js.UndefOr[timestamp] = js.undefined
+  var ExpectedCompletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Specifies the IAM role ARN used to create the target recovery point; for example, arn:aws:iam::123456789012:role/S3Access.
+    * Specifies the IAM role ARN used to create the target recovery point. IAM roles other than the default role must include either AWSBackup or AwsBackup in the role name. For example, arn:aws:iam::123456789012:role/AWSBackupRDSAccess. Role names without those strings lack permissions to perform backup jobs.
     */
   var IamRoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
@@ -87,14 +87,14 @@ trait BackupJob extends StObject {
   var ResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The type of AWS resource to be backed up; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. For VSS Windows backups, the only supported resource type is Amazon EC2.
+    * The type of Amazon Web Services resource to be backed up; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. For Windows Volume Shadow Copy Service (VSS) backups, the only supported resource type is Amazon EC2.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.undefined
   
   /**
     * Specifies the time in Unix format and Coordinated Universal Time (UTC) when a backup job must be started before it is canceled. The value is calculated by adding the start window to the scheduled time. So if the scheduled time were 6:00 PM and the start window is 2 hours, the StartBy time would be 8:00 PM on the date specified. The value of StartBy is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var StartBy: js.UndefOr[timestamp] = js.undefined
+  var StartBy: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current state of a resource recovery point.
@@ -147,7 +147,7 @@ object BackupJob {
     
     inline def setBytesTransferredUndefined: Self = StObject.set(x, "BytesTransferred", js.undefined)
     
-    inline def setCompletionDate(value: timestamp): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
@@ -155,11 +155,11 @@ object BackupJob {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    inline def setExpectedCompletionDate(value: timestamp): Self = StObject.set(x, "ExpectedCompletionDate", value.asInstanceOf[js.Any])
+    inline def setExpectedCompletionDate(value: js.Date): Self = StObject.set(x, "ExpectedCompletionDate", value.asInstanceOf[js.Any])
     
     inline def setExpectedCompletionDateUndefined: Self = StObject.set(x, "ExpectedCompletionDate", js.undefined)
     
@@ -183,7 +183,7 @@ object BackupJob {
     
     inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    inline def setStartBy(value: timestamp): Self = StObject.set(x, "StartBy", value.asInstanceOf[js.Any])
+    inline def setStartBy(value: js.Date): Self = StObject.set(x, "StartBy", value.asInstanceOf[js.Any])
     
     inline def setStartByUndefined: Self = StObject.set(x, "StartBy", js.undefined)
     

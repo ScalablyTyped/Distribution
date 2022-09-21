@@ -7560,7 +7560,7 @@ object mod {
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emojify")(str.asInstanceOf[js.Any], on_missing.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def emojify(str: String, on_missing: Unit, format: js.Function2[/* code */ String, /* name */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emojify")(str.asInstanceOf[js.Any], on_missing.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def find(emoji: String): Emoji_ = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(emoji.asInstanceOf[js.Any]).asInstanceOf[Emoji_]
+  inline def find(emoji: String): js.UndefOr[Emoji_] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(emoji.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Emoji_]]
   
   inline def get(emoji: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(emoji.asInstanceOf[js.Any]).asInstanceOf[String]
   

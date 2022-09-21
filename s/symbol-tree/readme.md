@@ -10,10 +10,10 @@ Turn any collection of objects into its own efficient tree or linked list using 
 | ------------------ | :-------------: |
 | Full name          | symbol-tree |
 | Keywords           | list, queue, stack, linked-list, tree, es6, dom, symbol |
-| # releases         | 3 |
-| # dependents       | 102 |
-| # downloads        | 418051466 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6.6444408666666664E7 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/js-symbol-tree#symbol-tree)

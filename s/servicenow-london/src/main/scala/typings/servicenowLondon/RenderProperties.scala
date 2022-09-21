@@ -8,7 +8,7 @@ trait RenderProperties extends StObject {
   
   def getEncodedQuery(): String
   
-  def getListControl(): js.Any
+  def getListControl(): Any
   
   def getParameterValue(value: String): String
   
@@ -18,7 +18,7 @@ trait RenderProperties extends StObject {
   
   def getViewName(): String
   
-  def getWindowProperties(): js.Any
+  def getWindowProperties(): Any
   
   def isInDevStudio(): Boolean
   
@@ -32,12 +32,12 @@ object RenderProperties {
   
   inline def apply(
     getEncodedQuery: () => String,
-    getListControl: () => js.Any,
+    getListControl: () => Any,
     getParameterValue: String => String,
     getParameters: () => js.Array[String],
     getReferringURL: () => String,
     getViewName: () => String,
-    getWindowProperties: () => js.Any,
+    getWindowProperties: () => Any,
     isInDevStudio: () => Boolean,
     isInteractive: () => Boolean,
     isManyToMany: () => Boolean,
@@ -51,7 +51,7 @@ object RenderProperties {
     
     inline def setGetEncodedQuery(value: () => String): Self = StObject.set(x, "getEncodedQuery", js.Any.fromFunction0(value))
     
-    inline def setGetListControl(value: () => js.Any): Self = StObject.set(x, "getListControl", js.Any.fromFunction0(value))
+    inline def setGetListControl(value: () => Any): Self = StObject.set(x, "getListControl", js.Any.fromFunction0(value))
     
     inline def setGetParameterValue(value: String => String): Self = StObject.set(x, "getParameterValue", js.Any.fromFunction1(value))
     
@@ -61,7 +61,7 @@ object RenderProperties {
     
     inline def setGetViewName(value: () => String): Self = StObject.set(x, "getViewName", js.Any.fromFunction0(value))
     
-    inline def setGetWindowProperties(value: () => js.Any): Self = StObject.set(x, "getWindowProperties", js.Any.fromFunction0(value))
+    inline def setGetWindowProperties(value: () => Any): Self = StObject.set(x, "getWindowProperties", js.Any.fromFunction0(value))
     
     inline def setIsInDevStudio(value: () => Boolean): Self = StObject.set(x, "isInDevStudio", js.Any.fromFunction0(value))
     

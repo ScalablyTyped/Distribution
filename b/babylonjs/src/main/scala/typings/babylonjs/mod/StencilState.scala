@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "StencilState")
 @js.native
-class StencilState ()
+open class StencilState ()
   extends typings.babylonjs.legacyMod.StencilState
 /* static members */
 object StencilState {

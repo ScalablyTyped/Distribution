@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "entities" : "4.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "entities" : "4.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

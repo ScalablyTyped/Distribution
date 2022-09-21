@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetServiceQuotaIncreaseRequestFromTemplateRequest extends StObject {
   
   /**
-    * Specifies the AWS Region for the quota that you want to use.
+    * The AWS Region.
     */
   var AwsRegion: typings.awsSdk.servicequotasMod.AwsRegion
   
   /**
-    * Specifies the quota you want.
+    * The quota identifier.
     */
   var QuotaCode: typings.awsSdk.servicequotasMod.QuotaCode
   
   /**
-    * Specifies the service that you want to use.
+    * The service identifier.
     */
   var ServiceCode: typings.awsSdk.servicequotasMod.ServiceCode
 }

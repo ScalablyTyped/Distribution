@@ -1,45 +1,36 @@
 package typings.reactBigCalendar.anon
 
-import typings.reactBigCalendar.mod.stringOrDate
-import typings.reactBigCalendar.reactBigCalendarStrings.click
-import typings.reactBigCalendar.reactBigCalendarStrings.doubleClick
-import typings.reactBigCalendar.reactBigCalendarStrings.select
+import typings.reactBigCalendar.reactBigCalendarStrings.DOWN
+import typings.reactBigCalendar.reactBigCalendarStrings.LEFT
+import typings.reactBigCalendar.reactBigCalendarStrings.RIGHT
+import typings.reactBigCalendar.reactBigCalendarStrings.UP
+import typings.reactBigCalendar.reactBigCalendarStrings.move
+import typings.reactBigCalendar.reactBigCalendarStrings.resize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Action extends StObject {
+trait Action[TEvent /* <: js.Object */] extends StObject {
   
-  var action: select | click | doubleClick
+  var action: resize | move
   
-  var end: stringOrDate
+  var direction: UP | DOWN | LEFT | RIGHT
   
-  var slots: js.Array[typings.std.Date | String]
-  
-  var start: stringOrDate
+  var event: TEvent
 }
 object Action {
   
-  inline def apply(
-    action: select | click | doubleClick,
-    end: stringOrDate,
-    slots: js.Array[typings.std.Date | String],
-    start: stringOrDate
-  ): Action = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Action]
+  inline def apply[TEvent /* <: js.Object */](action: resize | move, direction: UP | DOWN | LEFT | RIGHT, event: TEvent): Action[TEvent] = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action[TEvent]]
   }
   
-  extension [Self <: Action](x: Self) {
+  extension [Self <: Action[?], TEvent /* <: js.Object */](x: Self & Action[TEvent]) {
     
-    inline def setAction(value: select | click | doubleClick): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: resize | move): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setEnd(value: stringOrDate): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setDirection(value: UP | DOWN | LEFT | RIGHT): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    inline def setSlots(value: js.Array[typings.std.Date | String]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
-    
-    inline def setSlotsVarargs(value: (typings.std.Date | String)*): Self = StObject.set(x, "slots", js.Array(value :_*))
-    
-    inline def setStart(value: stringOrDate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

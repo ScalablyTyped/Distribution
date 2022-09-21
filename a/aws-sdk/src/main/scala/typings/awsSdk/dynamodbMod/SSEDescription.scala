@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SSEDescription extends StObject {
   
   /**
-    * Indicates the time, in UNIX epoch date format, when DynamoDB detected that the table's AWS KMS key was inaccessible. This attribute will automatically be cleared when DynamoDB detects that the table's AWS KMS key is accessible again. DynamoDB will initiate the table archival process when table's AWS KMS key remains inaccessible for more than seven days from this date.
+    * Indicates the time, in UNIX epoch date format, when DynamoDB detected that the table's KMS key was inaccessible. This attribute will automatically be cleared when DynamoDB detects that the table's KMS key is accessible again. DynamoDB will initiate the table archival process when table's KMS key remains inaccessible for more than seven days from this date.
     */
-  var InaccessibleEncryptionDateTime: js.UndefOr[Date] = js.undefined
+  var InaccessibleEncryptionDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS KMS customer master key (CMK) ARN used for the AWS KMS encryption.
+    * The KMS key ARN used for the KMS encryption.
     */
   var KMSMasterKeyArn: js.UndefOr[typings.awsSdk.dynamodbMod.KMSMasterKeyArn] = js.undefined
   
   /**
-    * Server-side encryption type. The only supported value is:    KMS - Server-side encryption that uses AWS Key Management Service. The key is stored in your account and is managed by AWS KMS (AWS KMS charges apply).  
+    * Server-side encryption type. The only supported value is:    KMS - Server-side encryption that uses Key Management Service. The key is stored in your account and is managed by KMS (KMS charges apply).  
     */
   var SSEType: js.UndefOr[typings.awsSdk.dynamodbMod.SSEType] = js.undefined
   
@@ -35,7 +35,7 @@ object SSEDescription {
   
   extension [Self <: SSEDescription](x: Self) {
     
-    inline def setInaccessibleEncryptionDateTime(value: Date): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
+    inline def setInaccessibleEncryptionDateTime(value: js.Date): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
     
     inline def setInaccessibleEncryptionDateTimeUndefined: Self = StObject.set(x, "InaccessibleEncryptionDateTime", js.undefined)
     

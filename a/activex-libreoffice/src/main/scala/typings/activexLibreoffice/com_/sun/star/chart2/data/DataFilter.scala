@@ -21,7 +21,7 @@ object DataFilter {
     DataSequences: SafeArray[XLabeledDataSequence],
     acquire: () => Unit,
     getDataSequences: () => SafeArray[XLabeledDataSequence],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setData: SeqEquiv[XLabeledDataSequence] => Unit
   ): DataFilter = {

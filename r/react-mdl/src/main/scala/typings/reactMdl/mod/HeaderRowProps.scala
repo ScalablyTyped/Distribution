@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeaderRowProps
   extends StObject
-     with HTMLProps[js.Any] {
+     with HTMLProps[Any] {
   
   // string | JSX.Element
   var hideSpacer: js.UndefOr[Boolean] = js.undefined
   
   @JSName("title")
-  var title_HeaderRowProps: js.UndefOr[js.Any] = js.undefined
+  var title_HeaderRowProps: js.UndefOr[Any] = js.undefined
 }
 object HeaderRowProps {
   
@@ -28,7 +28,7 @@ object HeaderRowProps {
     
     inline def setHideSpacerUndefined: Self = StObject.set(x, "hideSpacer", js.undefined)
     
-    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

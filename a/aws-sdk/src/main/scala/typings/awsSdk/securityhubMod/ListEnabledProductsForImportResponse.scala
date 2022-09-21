@@ -33,6 +33,6 @@ object ListEnabledProductsForImportResponse {
     
     inline def setProductSubscriptionsUndefined: Self = StObject.set(x, "ProductSubscriptions", js.undefined)
     
-    inline def setProductSubscriptionsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ProductSubscriptions", js.Array(value :_*))
+    inline def setProductSubscriptionsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ProductSubscriptions", js.Array(value*))
   }
 }

@@ -10,11 +10,11 @@ object ie11Sha256Mod {
   
   @JSImport("@aws-crypto/sha256-browser/build/ie11Sha256", "Sha256")
   @js.native
-  class Sha256 ()
+  open class Sha256 ()
     extends StObject
        with Hash {
     def this(secret: SourceData) = this()
     
-    /* private */ var operation: js.Any = js.native
+    /* private */ var operation: Any = js.native
   }
 }

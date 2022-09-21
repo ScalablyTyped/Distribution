@@ -171,7 +171,7 @@ object styleIconMod {
         
         inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
         
-        inline def setStylesheetVarargs(value: ISheetResolvable*): Self = StObject.set(x, "stylesheet", js.Array(value :_*))
+        inline def setStylesheetVarargs(value: ISheetResolvable*): Self = StObject.set(x, "stylesheet", js.Array(value*))
       }
     }
     

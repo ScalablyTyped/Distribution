@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LightMap extends StObject {
   
-  var lightMap: IUniform
+  var lightMap: IUniform[Any]
   
-  var lightMapIntensity: IUniform
+  var lightMapIntensity: IUniform[Any]
 }
 object LightMap {
   
-  inline def apply(lightMap: IUniform, lightMapIntensity: IUniform): LightMap = {
+  inline def apply(lightMap: IUniform[Any], lightMapIntensity: IUniform[Any]): LightMap = {
     val __obj = js.Dynamic.literal(lightMap = lightMap.asInstanceOf[js.Any], lightMapIntensity = lightMapIntensity.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightMap]
   }
   
   extension [Self <: LightMap](x: Self) {
     
-    inline def setLightMap(value: IUniform): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
+    inline def setLightMap(value: IUniform[Any]): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
     
-    inline def setLightMapIntensity(value: IUniform): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
+    inline def setLightMapIntensity(value: IUniform[Any]): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
   }
 }

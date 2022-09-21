@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaLocalizedProperty extends StObject {
   
-  var default: js.UndefOr[String] = js.undefined
+  var default: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The language of the default property.
@@ -30,12 +30,14 @@ object SchemaLocalizedProperty {
     
     inline def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
     
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
+    
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     inline def setLocalized(value: js.Array[SchemaLocalizedString]): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
     inline def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
     
-    inline def setLocalizedVarargs(value: SchemaLocalizedString*): Self = StObject.set(x, "localized", js.Array(value :_*))
+    inline def setLocalizedVarargs(value: SchemaLocalizedString*): Self = StObject.set(x, "localized", js.Array(value*))
   }
 }

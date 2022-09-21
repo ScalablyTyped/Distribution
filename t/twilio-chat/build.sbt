@@ -1,17 +1,18 @@
 organization := "org.scalablytyped"
 name := "twilio-chat"
-version := "4.0.0-d1de2c"
-scalaVersion := "3.0.1"
+version := "6.0.0-3ea973"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "loglevel" % "1.7.0-18e3de",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "twilio-mcs-client" % "0.3.3-f425dc",
-  "org.scalablytyped" %%% "twilio-notifications" % "0.5.11-0ff1cf",
-  "org.scalablytyped" %%% "twilio-sync" % "0.12.4-04654b",
-  "org.scalablytyped" %%% "twilsock" % "0.5.14-99e948")
+  "org.scalablytyped" %%% "loglevel" % "1.8.0-e2e7b2",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "twilio-sync" % "3.1.0-821485",
+  "org.scalablytyped" %%% "twilio__mcs-client" % "0.5.3-29d7c3",
+  "org.scalablytyped" %%% "twilio__notifications" % "1.0.5-5d1846",
+  "org.scalablytyped" %%% "twilio__replay-event-emitter" % "0.2.4-b9f70d",
+  "org.scalablytyped" %%% "twilsock" % "0.12.2-5b9193")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

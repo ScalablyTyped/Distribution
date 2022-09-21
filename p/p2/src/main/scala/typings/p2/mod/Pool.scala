@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Pool")
 @js.native
-class Pool () extends StObject {
+open class Pool () extends StObject {
   def this(options: PoolOptions) = this()
   
-  def get(): js.Any = js.native
+  def get(): Any = js.native
   
-  var objects: js.Array[js.Any] = js.native
+  var objects: js.Array[Any] = js.native
   
-  def release(`object`: js.Any): Pool = js.native
+  def release(`object`: Any): Pool = js.native
   
   def resize(size: Double): Pool = js.native
 }

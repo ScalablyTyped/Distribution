@@ -17,7 +17,7 @@ object Core {
   /** Represents the intrinsics that describe the camera distortion model. */
   @JSGlobal("Windows.Media.Devices.Core.CameraIntrinsics")
   @js.native
-  class CameraIntrinsics protected ()
+  open class CameraIntrinsics protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.CameraIntrinsics {
     /**
@@ -131,7 +131,7 @@ object Core {
   @JSGlobal("Windows.Media.Devices.Core.FrameController")
   @js.native
   /** Initializes a new instance of the FrameController class. */
-  class FrameController ()
+  open class FrameController ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Devices.Core.FrameController {
     

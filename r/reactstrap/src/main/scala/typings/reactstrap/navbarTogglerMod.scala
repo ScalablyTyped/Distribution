@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.Component
 import typings.react.mod.ElementType
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,21 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object navbarTogglerMod {
   
-  @JSImport("reactstrap/lib/NavbarToggler", JSImport.Default)
+  @JSImport("reactstrap/types/lib/NavbarToggler", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[NavbarTogglerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[NavbarTogglerProps, js.Object, Any]
   
-  type NavbarToggler = Component[NavbarTogglerProps, js.Object, js.Any]
+  type NavbarToggler = Component[NavbarTogglerProps, js.Object, Any]
   
   trait NavbarTogglerProps
     extends StObject
        with ButtonHTMLAttributes[HTMLButtonElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object NavbarTogglerProps {
     
@@ -41,7 +41,7 @@ object navbarTogglerMod {
       
       inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

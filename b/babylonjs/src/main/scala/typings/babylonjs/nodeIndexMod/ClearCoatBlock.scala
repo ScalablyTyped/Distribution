@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "ClearCoatBlock")
 @js.native
-class ClearCoatBlock protected ()
+open class ClearCoatBlock protected ()
   extends typings.babylonjs.blocksIndexMod.ClearCoatBlock {
   /**
     * Create a new ClearCoatBlock

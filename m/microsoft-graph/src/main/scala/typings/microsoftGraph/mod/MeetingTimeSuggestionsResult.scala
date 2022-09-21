@@ -37,6 +37,6 @@ object MeetingTimeSuggestionsResult {
     
     inline def setMeetingTimeSuggestionsUndefined: Self = StObject.set(x, "meetingTimeSuggestions", js.undefined)
     
-    inline def setMeetingTimeSuggestionsVarargs(value: MeetingTimeSuggestion*): Self = StObject.set(x, "meetingTimeSuggestions", js.Array(value :_*))
+    inline def setMeetingTimeSuggestionsVarargs(value: MeetingTimeSuggestion*): Self = StObject.set(x, "meetingTimeSuggestions", js.Array(value*))
   }
 }

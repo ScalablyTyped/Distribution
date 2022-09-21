@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_Stat")
 @js.native
-class ClassStat ()
+open class ClassStat ()
   extends StObject
      with typings.fibjs.ClassStat

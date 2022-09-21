@@ -29,7 +29,7 @@ object ListInputDeviceTransfersResponse {
     
     inline def setInputDeviceTransfersUndefined: Self = StObject.set(x, "InputDeviceTransfers", js.undefined)
     
-    inline def setInputDeviceTransfersVarargs(value: TransferringInputDeviceSummary*): Self = StObject.set(x, "InputDeviceTransfers", js.Array(value :_*))
+    inline def setInputDeviceTransfersVarargs(value: TransferringInputDeviceSummary*): Self = StObject.set(x, "InputDeviceTransfers", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

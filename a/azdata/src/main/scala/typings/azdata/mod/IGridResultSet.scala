@@ -23,7 +23,7 @@ object IGridResultSet {
     
     inline def setColumns(value: js.Array[IDbColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: IDbColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: IDbColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setNumberOfRows(value: Double): Self = StObject.set(x, "numberOfRows", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,7 @@ trait SerialisedIndexData[T] extends StObject {
   
   var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-    */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[js.Any]
+    */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[Any]
   
   var pipeline: SerialisedPipeline
   
@@ -28,7 +28,7 @@ object SerialisedIndexData {
     fields: js.Array[/* keyof T */ String],
     index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-    */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[js.Any],
+    */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[Any],
     pipeline: SerialisedPipeline,
     ref: /* keyof T */ String,
     version: String
@@ -43,17 +43,17 @@ object SerialisedIndexData {
     
     inline def setFields(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIndex(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-      */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[js.Any]
+      */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData & TopLevel[Any]
     ): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setPipeline(value: SerialisedPipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
-    inline def setPipelineVarargs(value: String*): Self = StObject.set(x, "pipeline", js.Array(value :_*))
+    inline def setPipelineVarargs(value: String*): Self = StObject.set(x, "pipeline", js.Array(value*))
     
     inline def setRef(value: /* keyof T */ String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

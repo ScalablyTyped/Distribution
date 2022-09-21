@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSImport("winjs", "UI.VirtualizedDataSource")
 @js.native
-class VirtualizedDataSource[T] protected ()
+open class VirtualizedDataSource[T] protected ()
   extends StObject
      with typings.winjs.WinJS.UI.VirtualizedDataSource[T] {
   //#region Constructors
@@ -21,7 +21,7 @@ class VirtualizedDataSource[T] protected ()
     * @param options An object that can contain properties that specify additional options for the VirtualizedDataSource. It supports these properties: cacheSize.
     **/
   def this(listDataAdapter: IListDataAdapter[T]) = this()
-  def this(listDataAdapter: IListDataAdapter[T], options: js.Any) = this()
+  def this(listDataAdapter: IListDataAdapter[T], options: Any) = this()
 }
 object VirtualizedDataSource {
   

@@ -49,7 +49,7 @@ object NavigationTabRouterConfig {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setPaths(value: NavigationPathsConfig): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

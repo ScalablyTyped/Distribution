@@ -4,25 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Input only.  Use this field to specify bucketing option for the histogram
-  * search response.
-  */
 trait SchemaNumericBucketingOption extends StObject {
   
   /**
-    * Required.  Two adjacent values form a histogram bucket. Values should be
-    * in ascending order. For example, if [5, 10, 15] are provided, four
-    * buckets are created: (-inf, 5), 5, 10), [10, 15), [15, inf). At most 20
-    * [buckets_bound is supported.
+    * Required. Two adjacent values form a histogram bucket. Values should be in ascending order. For example, if [5, 10, 15] are provided, four buckets are created: (-inf, 5), 5, 10), [10, 15), [15, inf). At most 20 [buckets_bound is supported.
     */
-  var bucketBounds: js.UndefOr[js.Array[Double]] = js.undefined
+  var bucketBounds: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
-    * Optional.  If set to true, the histogram result includes minimum/maximum
-    * value of the numeric field.
+    * Optional. If set to true, the histogram result includes minimum/maximum value of the numeric field.
     */
-  var requiresMinMax: js.UndefOr[Boolean] = js.undefined
+  var requiresMinMax: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaNumericBucketingOption {
   
@@ -35,11 +27,15 @@ object SchemaNumericBucketingOption {
     
     inline def setBucketBounds(value: js.Array[Double]): Self = StObject.set(x, "bucketBounds", value.asInstanceOf[js.Any])
     
+    inline def setBucketBoundsNull: Self = StObject.set(x, "bucketBounds", null)
+    
     inline def setBucketBoundsUndefined: Self = StObject.set(x, "bucketBounds", js.undefined)
     
-    inline def setBucketBoundsVarargs(value: Double*): Self = StObject.set(x, "bucketBounds", js.Array(value :_*))
+    inline def setBucketBoundsVarargs(value: Double*): Self = StObject.set(x, "bucketBounds", js.Array(value*))
     
     inline def setRequiresMinMax(value: Boolean): Self = StObject.set(x, "requiresMinMax", value.asInstanceOf[js.Any])
+    
+    inline def setRequiresMinMaxNull: Self = StObject.set(x, "requiresMinMax", null)
     
     inline def setRequiresMinMaxUndefined: Self = StObject.set(x, "requiresMinMax", js.undefined)
   }

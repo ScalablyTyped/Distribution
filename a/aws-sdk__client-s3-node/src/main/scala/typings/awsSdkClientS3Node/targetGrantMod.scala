@@ -8,5 +8,5 @@ object targetGrantMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_TargetGrant", "_TargetGrant")
   @js.native
-  val TargetGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val TargetGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

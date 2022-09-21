@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.FileManagerDataSource")
 @js.native
-class FileManagerDataSource ()
+open class FileManagerDataSource ()
   extends StObject
      with typings.kendoUi.kendo.data.FileManagerDataSource {
   def this(options: FileManagerDataSourceOptions) = this()

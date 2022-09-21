@@ -11,7 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Headers")
 @js.native
-class Headers ()
+/**
+  * Represents a set of HTTP headers as used by `fetch()`.
+  */
+open class Headers ()
   extends StObject
      with typings.tabris.Headers {
   def this(headers: js.Array[js.Tuple2[String, String]]) = this()

@@ -5,11 +5,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.KeyboardEvent
+import typings.react.mod.FC
+import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.react.mod.SyntheticEvent
 import typings.semanticUiReact.dropdownDividerMod.DropdownDividerProps
 import typings.semanticUiReact.dropdownHeaderMod.DropdownHeaderProps
@@ -25,6 +25,7 @@ import typings.semanticUiReact.semanticUiReactStrings.bottom
 import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.semanticUiReact.semanticUiReactStrings.top
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -36,10 +37,9 @@ object dropdownDropdownMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[DropdownProps, ComponentState, js.Any] {
+  open class default protected () extends Component[DropdownProps, ComponentState, Any] {
     def this(props: DropdownProps) = this()
-    def this(props: DropdownProps, context: js.Any) = this()
+    def this(props: DropdownProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -50,37 +50,33 @@ object dropdownDropdownMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown", "default.Divider")
     @js.native
-    class Divider protected ()
-      extends Component[DropdownDividerProps, ComponentState, js.Any] {
+    open class Divider protected () extends Component[DropdownDividerProps, ComponentState, Any] {
       def this(props: DropdownDividerProps) = this()
-      def this(props: DropdownDividerProps, context: js.Any) = this()
+      def this(props: DropdownDividerProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown", "default.Header")
     @js.native
-    class Header protected ()
-      extends Component[DropdownHeaderProps, ComponentState, js.Any] {
+    open class Header protected () extends Component[DropdownHeaderProps, ComponentState, Any] {
       def this(props: DropdownHeaderProps) = this()
-      def this(props: DropdownHeaderProps, context: js.Any) = this()
+      def this(props: DropdownHeaderProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown", "default.Item")
     @js.native
-    class Item protected ()
-      extends Component[DropdownItemProps, ComponentState, js.Any] {
+    open class Item protected () extends Component[DropdownItemProps, ComponentState, Any] {
       def this(props: DropdownItemProps) = this()
-      def this(props: DropdownItemProps, context: js.Any) = this()
+      def this(props: DropdownItemProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown", "default.SearchInput")
     @js.native
-    class SearchInput protected ()
-      extends Component[DropdownSearchInputProps, ComponentState, js.Any] {
+    open class SearchInput protected () extends Component[DropdownSearchInputProps, ComponentState, Any] {
       def this(props: DropdownSearchInputProps) = this()
-      def this(props: DropdownSearchInputProps, context: js.Any) = this()
+      def this(props: DropdownSearchInputProps, context: Any) = this()
     }
     
     type _To = DropdownComponent
@@ -100,7 +96,7 @@ object dropdownDropdownMod {
     
     var Item: ComponentClass[DropdownItemProps, ComponentState] = js.native
     
-    var Menu: StatelessComponent[DropdownMenuProps] = js.native
+    var Menu: FC[DropdownMenuProps] = js.native
     
     var SearchInput: ComponentClass[DropdownSearchInputProps, ComponentState] = js.native
   }
@@ -128,7 +124,7 @@ object dropdownDropdownMod {
   trait DropdownProps
     extends StObject
        with StrictDropdownProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object DropdownProps {
     
     inline def apply(): DropdownProps = {
@@ -152,7 +148,7 @@ object dropdownDropdownMod {
     var allowAdditions: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A Dropdown can reduce its complexity. */
     var basic: js.UndefOr[Boolean] = js.undefined
@@ -222,7 +218,7 @@ object dropdownDropdownMod {
     var header: js.UndefOr[ReactNode] = js.undefined
     
     /** Shorthand for Icon. */
-    var icon: js.UndefOr[js.Any] = js.undefined
+    var icon: js.UndefOr[Any] = js.undefined
     
     /** A dropdown can be formatted to appear inline in other content. */
     var `inline`: js.UndefOr[Boolean] = js.undefined
@@ -255,7 +251,7 @@ object dropdownDropdownMod {
       * @param {object} data - All props and the new item's value.
       */
     var onAddItem: js.UndefOr[
-        js.Function2[/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps, Unit]
+        js.Function2[/* event */ SyntheticEvent[HTMLElement, Event], /* data */ DropdownProps, Unit]
       ] = js.undefined
     
     /**
@@ -265,7 +261,7 @@ object dropdownDropdownMod {
       * @param {object} data - All props.
       */
     var onBlur: js.UndefOr[
-        js.Function2[/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps, Unit]
+        js.Function2[/* event */ FocusEvent[HTMLElement, Element], /* data */ DropdownProps, Unit]
       ] = js.undefined
     
     /**
@@ -285,7 +281,11 @@ object dropdownDropdownMod {
       * @param {object} data - All props.
       */
     var onClick: js.UndefOr[
-        js.Function2[/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps, Unit]
+        js.Function2[
+          /* event */ MouseEvent[HTMLElement, NativeMouseEvent], 
+          /* data */ DropdownProps, 
+          Unit
+        ]
       ] = js.undefined
     
     /**
@@ -305,7 +305,7 @@ object dropdownDropdownMod {
       * @param {object} data - All props.
       */
     var onFocus: js.UndefOr[
-        js.Function2[/* event */ SyntheticEvent[HTMLElement, Event], /* data */ DropdownProps, Unit]
+        js.Function2[/* event */ FocusEvent[HTMLElement, Element], /* data */ DropdownProps, Unit]
       ] = js.undefined
     
     /**
@@ -387,7 +387,7 @@ object dropdownDropdownMod {
           /* item */ DropdownItemProps, 
           /* index */ Double, 
           /* defaultLabelProps */ LabelProps, 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -407,7 +407,7 @@ object dropdownDropdownMod {
       ] = js.undefined
     
     /** A shorthand for a search input. */
-    var searchInput: js.UndefOr[js.Any] = js.undefined
+    var searchInput: js.UndefOr[Any] = js.undefined
     
     /** Current value of searchQuery. Creates a controlled component. */
     var searchQuery: js.UndefOr[String] = js.undefined
@@ -422,7 +422,7 @@ object dropdownDropdownMod {
     var selectedLabel: js.UndefOr[Double | String] = js.undefined
     
     /** A dropdown can be used to select between choices in a form. */
-    var selection: js.UndefOr[js.Any] = js.undefined
+    var selection: js.UndefOr[Any] = js.undefined
     
     /** A simple dropdown can open without Javascript. */
     var simple: js.UndefOr[Boolean] = js.undefined
@@ -469,7 +469,7 @@ object dropdownDropdownMod {
       
       inline def setAllowAdditionsUndefined: Self = StObject.set(x, "allowAdditions", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -533,7 +533,7 @@ object dropdownDropdownMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: (Double | String | Boolean)*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: (Double | String | Boolean)*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDirection(value: left | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -559,7 +559,7 @@ object dropdownDropdownMod {
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -595,11 +595,11 @@ object dropdownDropdownMod {
       
       inline def setNoResultsMessageUndefined: Self = StObject.set(x, "noResultsMessage", js.undefined)
       
-      inline def setOnAddItem(value: (/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onAddItem", js.Any.fromFunction2(value))
+      inline def setOnAddItem(value: (/* event */ SyntheticEvent[HTMLElement, Event], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onAddItem", js.Any.fromFunction2(value))
       
       inline def setOnAddItemUndefined: Self = StObject.set(x, "onAddItem", js.undefined)
       
-      inline def setOnBlur(value: (/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
+      inline def setOnBlur(value: (/* event */ FocusEvent[HTMLElement, Element], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -607,7 +607,7 @@ object dropdownDropdownMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClick(value: (/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -615,7 +615,7 @@ object dropdownDropdownMod {
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnFocus(value: (/* event */ SyntheticEvent[HTMLElement, Event], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (/* event */ FocusEvent[HTMLElement, Element], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -649,7 +649,7 @@ object dropdownDropdownMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: DropdownItemProps*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: DropdownItemProps*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -662,7 +662,7 @@ object dropdownDropdownMod {
       inline def setPointingUndefined: Self = StObject.set(x, "pointing", js.undefined)
       
       inline def setRenderLabel(
-        value: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => js.Any
+        value: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => Any
       ): Self = StObject.set(x, "renderLabel", js.Any.fromFunction3(value))
       
       inline def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
@@ -683,7 +683,7 @@ object dropdownDropdownMod {
         value: (/* options */ js.Array[DropdownItemProps], /* value */ String) => js.Array[DropdownItemProps]
       ): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
       
-      inline def setSearchInput(value: js.Any): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
+      inline def setSearchInput(value: Any): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
       
       inline def setSearchInputUndefined: Self = StObject.set(x, "searchInput", js.undefined)
       
@@ -705,7 +705,7 @@ object dropdownDropdownMod {
       
       inline def setSelectedLabelUndefined: Self = StObject.set(x, "selectedLabel", js.undefined)
       
-      inline def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
       inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
@@ -733,7 +733,7 @@ object dropdownDropdownMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (Boolean | Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Boolean | Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setWrapSelection(value: Boolean): Self = StObject.set(x, "wrapSelection", value.asInstanceOf[js.Any])
       

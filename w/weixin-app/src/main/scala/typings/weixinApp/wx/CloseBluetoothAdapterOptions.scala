@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CloseBluetoothAdapterOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   @JSName("success")
-  def success_MCloseBluetoothAdapterOptions(res: js.Any): Unit
+  def success_MCloseBluetoothAdapterOptions(res: Any): Unit
 }
 object CloseBluetoothAdapterOptions {
   
-  inline def apply(success: js.Any => Unit): CloseBluetoothAdapterOptions = {
+  inline def apply(success: Any => Unit): CloseBluetoothAdapterOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[CloseBluetoothAdapterOptions]
   }
   
   extension [Self <: CloseBluetoothAdapterOptions](x: Self) {
     
-    inline def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

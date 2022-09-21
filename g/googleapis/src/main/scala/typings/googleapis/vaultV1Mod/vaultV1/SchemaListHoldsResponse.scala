@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The holds for a matter.
-  */
 trait SchemaListHoldsResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaListHoldsResponse extends StObject {
   var holds: js.UndefOr[js.Array[SchemaHold]] = js.undefined
   
   /**
-    * Page token to retrieve the next page of results in the list. If this is
-    * empty, then there are no more holds to list.
+    * Page token to retrieve the next page of results in the list. If this is empty, then there are no more holds to list.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListHoldsResponse {
   
@@ -33,9 +29,11 @@ object SchemaListHoldsResponse {
     
     inline def setHoldsUndefined: Self = StObject.set(x, "holds", js.undefined)
     
-    inline def setHoldsVarargs(value: SchemaHold*): Self = StObject.set(x, "holds", js.Array(value :_*))
+    inline def setHoldsVarargs(value: SchemaHold*): Self = StObject.set(x, "holds", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

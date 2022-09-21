@@ -24,7 +24,7 @@ trait PublishObject extends StObject {
   
   var HtmlType: XlHtmlType = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Publish(): Unit = js.native
   def Publish(Create: Boolean): Unit = js.native

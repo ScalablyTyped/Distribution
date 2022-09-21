@@ -1,25 +1,27 @@
 package typings.reactNavigationRouters.anon
 
-import typings.reactNavigationRouters.typesMod.InitialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `1` extends StObject {
+trait `1`[Params /* <: js.UndefOr[js.Object] */] extends StObject {
   
-  var state: js.UndefOr[InitialState] = js.undefined
+  /**
+    * Params for this route
+    */
+  var params: js.UndefOr[Params] = js.undefined
 }
 object `1` {
   
-  inline def apply(): `1` = {
+  inline def apply[Params /* <: js.UndefOr[js.Object] */](): `1`[Params] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`1`]
+    __obj.asInstanceOf[`1`[Params]]
   }
   
-  extension [Self <: `1`](x: Self) {
+  extension [Self <: `1`[?], Params /* <: js.UndefOr[js.Object] */](x: Self & `1`[Params]) {
     
-    inline def setState(value: InitialState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

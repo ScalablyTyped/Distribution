@@ -1,6 +1,5 @@
 package typings.roads
 
-import typings.std.Document
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement
 import typings.std.HTMLFormElement
@@ -14,23 +13,26 @@ object pjaxMod {
   
   @JSImport("roads/types/client/pjax", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RoadsPjax {
     /**
-      * Creates a new RoadsPjax instance. The road provided to this constructor will be the backbone of your PJAX requests.
+      * Creates a new RoadsPjax instance. PJAX looks in the containerElement at each
+      * anchor tag with the  `data-roads-pjax="link"` attribute and changes it from a
+      * normal link into a link that uses the road.
       *
-      * @param {Road} road - The road that will turn your pjax requests into HTML
-      * @param {HTMLElement} container_element - The element that will be filled with your roads output
-      * @param {Window} window - The pages window object to help set page title and other items
+      * @param {Road} road - The road that will be used when clicking links
+      * @param {HTMLElement} containerElement - The element that will be filled with your roads output
+      * @param {Window} window - The page's window object to help set page title url
       */
-    def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window) = this()
+    def this(road: typings.roads.roadMod.default, containerElement: HTMLElement, window: Window) = this()
     
     /* protected */ /* CompleteClass */
     var _container_element: HTMLElement = js.native
     
     /**
       * Handles all click events, and directs
+      *
       * @param {MouseEvent} event
       */
     /* protected */ /* CompleteClass */
@@ -59,30 +61,35 @@ object pjaxMod {
     var _window: Window = js.native
     
     /**
-      * Assigns the cookie middlware to the road to properly handle cookies
+      * There are a couple of steps required to get page titles working properly with
+      * 	PJAX.
       *
-      * @param {Document} document - The pages document object to properly parse and set cookies
-      * @returns {RoadsPjax} this object, useful for chaining
+      * First you must use the `storeVals` middleware to manage your page title. In
+      * 	the following example we are storing a page title of `"Homepage"`.
+      *
+      * Second you should have your server-side rendering put this value into the
+      * 	`<title>` element of your layout. Check the typescript example for how that
+      * 	could work with the Handlebars templating engine.
+      *
+      * Third you need to create your `RoadsPJAX` object and configure it to look for
+      *  your `page-title` value.
+      *
+      * @param {titleKey} string - The key of the title as stored in the "storeVals" middleware.
+      * @returns {RoadsPjax} Returns the PJAX object. This is provided to allow for easy function chaining.
       */
     /* CompleteClass */
-    override def addCookieMiddleware(document: Document): RoadsPjax = js.native
+    override def addTitleMiddleware(titleKey: String): RoadsPjax = js.native
     
     /**
-      * Adds middleware to the assigned road whcih will adds setTitle to the PJAX object (as opposed to the request object like the setTitle middlweare does).
-      * This allows you to easily update the page title.
-      *
-      * @returns {RoadsPjax} this, useful for chaining
-      */
-    /* CompleteClass */
-    override def addTitleMiddleware(): RoadsPjax = js.native
-    
-    /**
-      * Hooks up the PJAX functionality to the information provided via the constructor.
+      * This function call enables PJAX on the current page.
       */
     /* CompleteClass */
     override def register(): Unit = js.native
     
     /**
+      * If you would like PJAX to work on links that are not within the container
+      * 	you must call this function. Additionally this function must be called
+      * 	before `register`
       *
       * @param {HTMLAnchorElement} element
       */
@@ -90,7 +97,7 @@ object pjaxMod {
     override def registerAdditionalElement(element: HTMLAnchorElement): Unit = js.native
     
     /**
-      * The response from the roads request
+      * Renders the response into the container
       *
       * @param {Response} response_object
       */
@@ -106,6 +113,7 @@ object pjaxMod {
     
     /**
       * Handles all click events, and directs
+      *
       * @param {MouseEvent} event
       */
     /* protected */ def _pjaxEventMonitor(event: MouseEvent): Unit
@@ -129,34 +137,40 @@ object pjaxMod {
     /* protected */ var _window: Window
     
     /**
-      * Assigns the cookie middlware to the road to properly handle cookies
+      * There are a couple of steps required to get page titles working properly with
+      * 	PJAX.
       *
-      * @param {Document} document - The pages document object to properly parse and set cookies
-      * @returns {RoadsPjax} this object, useful for chaining
+      * First you must use the `storeVals` middleware to manage your page title. In
+      * 	the following example we are storing a page title of `"Homepage"`.
+      *
+      * Second you should have your server-side rendering put this value into the
+      * 	`<title>` element of your layout. Check the typescript example for how that
+      * 	could work with the Handlebars templating engine.
+      *
+      * Third you need to create your `RoadsPJAX` object and configure it to look for
+      *  your `page-title` value.
+      *
+      * @param {titleKey} string - The key of the title as stored in the "storeVals" middleware.
+      * @returns {RoadsPjax} Returns the PJAX object. This is provided to allow for easy function chaining.
       */
-    def addCookieMiddleware(document: Document): RoadsPjax
+    def addTitleMiddleware(titleKey: String): RoadsPjax
     
     /**
-      * Adds middleware to the assigned road whcih will adds setTitle to the PJAX object (as opposed to the request object like the setTitle middlweare does).
-      * This allows you to easily update the page title.
-      *
-      * @returns {RoadsPjax} this, useful for chaining
-      */
-    def addTitleMiddleware(): RoadsPjax
-    
-    /**
-      * Hooks up the PJAX functionality to the information provided via the constructor.
+      * This function call enables PJAX on the current page.
       */
     def register(): Unit
     
     /**
+      * If you would like PJAX to work on links that are not within the container
+      * 	you must call this function. Additionally this function must be called
+      * 	before `register`
       *
       * @param {HTMLAnchorElement} element
       */
     def registerAdditionalElement(element: HTMLAnchorElement): Unit
     
     /**
-      * The response from the roads request
+      * Renders the response into the container
       *
       * @param {Response} response_object
       */
@@ -171,21 +185,18 @@ object pjaxMod {
       _roadsFormEvent: HTMLFormElement => Unit,
       _roadsLinkEvent: HTMLAnchorElement => Unit,
       _window: Window,
-      addCookieMiddleware: Document => RoadsPjax,
-      addTitleMiddleware: () => RoadsPjax,
+      addTitleMiddleware: String => RoadsPjax,
       register: () => Unit,
       registerAdditionalElement: HTMLAnchorElement => Unit,
       render: typings.roads.responseMod.default => Unit
     ): RoadsPjax = {
-      val __obj = js.Dynamic.literal(_container_element = _container_element.asInstanceOf[js.Any], _pjaxEventMonitor = js.Any.fromFunction1(_pjaxEventMonitor), _road = _road.asInstanceOf[js.Any], _roadsFormEvent = js.Any.fromFunction1(_roadsFormEvent), _roadsLinkEvent = js.Any.fromFunction1(_roadsLinkEvent), _window = _window.asInstanceOf[js.Any], addCookieMiddleware = js.Any.fromFunction1(addCookieMiddleware), addTitleMiddleware = js.Any.fromFunction0(addTitleMiddleware), register = js.Any.fromFunction0(register), registerAdditionalElement = js.Any.fromFunction1(registerAdditionalElement), render = js.Any.fromFunction1(render))
+      val __obj = js.Dynamic.literal(_container_element = _container_element.asInstanceOf[js.Any], _pjaxEventMonitor = js.Any.fromFunction1(_pjaxEventMonitor), _road = _road.asInstanceOf[js.Any], _roadsFormEvent = js.Any.fromFunction1(_roadsFormEvent), _roadsLinkEvent = js.Any.fromFunction1(_roadsLinkEvent), _window = _window.asInstanceOf[js.Any], addTitleMiddleware = js.Any.fromFunction1(addTitleMiddleware), register = js.Any.fromFunction0(register), registerAdditionalElement = js.Any.fromFunction1(registerAdditionalElement), render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[RoadsPjax]
     }
     
     extension [Self <: RoadsPjax](x: Self) {
       
-      inline def setAddCookieMiddleware(value: Document => RoadsPjax): Self = StObject.set(x, "addCookieMiddleware", js.Any.fromFunction1(value))
-      
-      inline def setAddTitleMiddleware(value: () => RoadsPjax): Self = StObject.set(x, "addTitleMiddleware", js.Any.fromFunction0(value))
+      inline def setAddTitleMiddleware(value: String => RoadsPjax): Self = StObject.set(x, "addTitleMiddleware", js.Any.fromFunction1(value))
       
       inline def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
       

@@ -7,8 +7,9 @@ import typings.hibp.anon.Truncate
 import typings.hibp.anon.UserAgent
 import typings.hibp.mod.Breach_
 import typings.hibp.mod.Paste
-import typings.hibp.mod.PwnedPasswordSuffix
+import typings.hibp.mod.PwnedPasswordSuffixes
 import typings.hibp.mod.SearchResults
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +21,21 @@ object global {
     @JSGlobal("hibp")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSGlobal("hibp.RateLimitError")
+    @js.native
+    open class RateLimitError protected ()
+      extends typings.hibp.mod.RateLimitError {
+      def this(
+        retryAfter: ReturnType[js.Function1[/* name */ String, String | Null]],
+        message: /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['message'] */ js.Any
+      ) = this()
+      def this(
+        retryAfter: ReturnType[js.Function1[/* name */ String, String | Null]],
+        message: /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['message'] */ js.Any,
+        options: /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['options'] */ js.Any
+      ) = this()
+    }
     
     inline def breach(breachName: String): js.Promise[Breach_ | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("breach")(breachName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Breach_ | Null]]
     inline def breach(breachName: String, options: BaseUrl): js.Promise[Breach_ | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("breach")(breachName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Breach_ | Null]]
@@ -39,8 +55,8 @@ object global {
     inline def pwnedPassword(password: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPassword")(password.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     inline def pwnedPassword(password: String, options: BaseUrl): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPassword")(password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    inline def pwnedPasswordRange(prefix: String): js.Promise[js.Array[PwnedPasswordSuffix]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PwnedPasswordSuffix]]]
-    inline def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[js.Array[PwnedPasswordSuffix]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[PwnedPasswordSuffix]]]
+    inline def pwnedPasswordRange(prefix: String): js.Promise[PwnedPasswordSuffixes] = ^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PwnedPasswordSuffixes]]
+    inline def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[PwnedPasswordSuffixes] = (^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PwnedPasswordSuffixes]]
     
     inline def search(account: String): js.Promise[SearchResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(account.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchResults]]
     inline def search(account: String, breachOptions: Truncate): js.Promise[SearchResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(account.asInstanceOf[js.Any], breachOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchResults]]

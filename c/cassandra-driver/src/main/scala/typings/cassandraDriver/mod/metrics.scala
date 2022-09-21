@@ -8,6 +8,6 @@ object metrics {
   
   @JSImport("cassandra-driver", "metrics.DefaultMetrics")
   @js.native
-  class DefaultMetrics ()
+  open class DefaultMetrics ()
     extends typings.cassandraDriver.metricsMod.metrics.DefaultMetrics
 }

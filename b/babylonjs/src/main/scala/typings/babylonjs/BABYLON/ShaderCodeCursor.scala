@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ShaderCodeCursor extends StObject {
   
-  /* private */ var _lines: js.Any = js.native
+  /* private */ var _lines: Any = js.native
   
   def canRead: Boolean = js.native
   

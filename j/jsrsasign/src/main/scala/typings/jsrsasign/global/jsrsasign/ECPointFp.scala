@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("jsrsasign.ECPointFp")
 @js.native
-class ECPointFp protected ()
+open class ECPointFp protected ()
   extends typings.jsrsasign.mod.ECPointFp {
   def this(
     curve: typings.jsrsasign.jsrsasign.ECFieldElementFp,

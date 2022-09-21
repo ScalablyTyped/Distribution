@@ -1,13 +1,12 @@
 package typings.monacoEditor.mod.languages
 
-import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SemanticTokensEdit extends StObject {
   
-  val data: js.UndefOr[Uint32Array] = js.undefined
+  val data: js.UndefOr[js.typedarray.Uint32Array] = js.undefined
   
   val deleteCount: Double
   
@@ -22,7 +21,7 @@ object SemanticTokensEdit {
   
   extension [Self <: SemanticTokensEdit](x: Self) {
     
-    inline def setData(value: Uint32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

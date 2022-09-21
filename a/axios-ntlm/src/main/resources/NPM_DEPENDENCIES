@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "axios-ntlm" : "1.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "axios-ntlm" : "1.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

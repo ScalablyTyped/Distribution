@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-jsonschema-parameters" : "7.0.2"
+      "openapi-jsonschema-parameters" : "12.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-jsonschema-parameters" : "7.0.2"
+      "openapi-jsonschema-parameters" : "12.0.2"
     }
   ],
   "compile-devDependencies" : [

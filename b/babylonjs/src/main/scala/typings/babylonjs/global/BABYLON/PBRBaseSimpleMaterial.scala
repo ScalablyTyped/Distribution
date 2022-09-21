@@ -16,6 +16,7 @@ abstract class PBRBaseSimpleMaterial protected ()
     * @param name The material name
     * @param scene The scene the material will be use in.
     */
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**

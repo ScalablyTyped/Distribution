@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "SuggestionsController")
 @js.native
-class SuggestionsController[T] ()
+open class SuggestionsController[T] ()
   extends typings.officeUiFabricReact.libPickersMod.SuggestionsController[T]

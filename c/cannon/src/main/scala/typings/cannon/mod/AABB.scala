@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "AABB")
 @js.native
-class AABB ()
+open class AABB ()
   extends StObject
      with typings.cannon.CANNON.AABB {
   def this(options: IAABBOptions) = this()

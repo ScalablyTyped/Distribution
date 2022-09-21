@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SubscriptionCadence")
 @js.native
-class SubscriptionCadence () extends StObject
+open class SubscriptionCadence () extends StObject

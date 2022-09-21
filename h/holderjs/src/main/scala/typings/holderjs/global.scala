@@ -13,6 +13,7 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def run(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")().asInstanceOf[Unit]
     inline def run(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

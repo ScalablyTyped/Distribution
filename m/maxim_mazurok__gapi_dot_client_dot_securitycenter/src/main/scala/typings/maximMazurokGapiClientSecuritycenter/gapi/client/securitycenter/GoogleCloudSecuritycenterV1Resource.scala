@@ -6,6 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudSecuritycenterV1Resource extends StObject {
   
+  /** The human readable name of the resource. */
+  var displayName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Output only. Contains a Folder message for each folder in the assets ancestry. The first folder is the deepest nested folder, and the last folder is the folder directly under the
+    * Organization.
+    */
+  var folders: js.UndefOr[js.Array[Folder]] = js.undefined
+  
   /** The full resource name of the resource. See: https://cloud.google.com/apis/design/resource_names#full_resource_name */
   var name: js.UndefOr[String] = js.undefined
   
@@ -18,8 +27,11 @@ trait GoogleCloudSecuritycenterV1Resource extends StObject {
   /** The full resource name of project that the resource belongs to. */
   var project: js.UndefOr[String] = js.undefined
   
-  /** The human readable name of project that the resource belongs to. */
+  /** The project ID that the resource belongs to. */
   var projectDisplayName: js.UndefOr[String] = js.undefined
+  
+  /** The full resource type of the resource. */
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudSecuritycenterV1Resource {
   
@@ -29,6 +41,16 @@ object GoogleCloudSecuritycenterV1Resource {
   }
   
   extension [Self <: GoogleCloudSecuritycenterV1Resource](x: Self) {
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setFolders(value: js.Array[Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+    
+    inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+    
+    inline def setFoldersVarargs(value: Folder*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -49,5 +71,9 @@ object GoogleCloudSecuritycenterV1Resource {
     inline def setProjectDisplayNameUndefined: Self = StObject.set(x, "projectDisplayName", js.undefined)
     
     inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

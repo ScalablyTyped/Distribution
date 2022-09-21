@@ -1,24 +1,21 @@
 
 # Scala.js typings for fastify-error
 
-Typings are for version 0.2.0
+Typings are for version 0.3.1
 
 ## Library description:
-A small utility, used by Fastify itself, for generating consistent error objects across your codebase and plugins.
+`fastify-error@1.2.0` has been deprecated. Please use `@fastify/error@2.0.0` instead.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fastify-error |
 | Keywords           | fastify, error, utility, plugin |
-| # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 1369313 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1315220.6666666667 |
+| # stars            | 50.0 |
 
 ## Links
-- [Homepage](https://github.com/fastify/fastify-error#readme)
-- [Bugs](https://github.com/fastify/fastify-error/issues)
-- [Repository](https://github.com/fastify/fastify-error)
 - [Npm](https://www.npmjs.com/package/fastify-error)
     
 

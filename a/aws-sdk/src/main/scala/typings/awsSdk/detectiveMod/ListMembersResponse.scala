@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListMembersResponse extends StObject {
   
   /**
-    * The list of member accounts in the behavior graph. The results include member accounts that did not pass verification and member accounts that have not yet accepted the invitation to the behavior graph. The results do not include member accounts that were removed from the behavior graph.
+    * The list of member accounts in the behavior graph. For invited accounts, the results include member accounts that did not pass verification and member accounts that have not yet accepted the invitation to the behavior graph. The results do not include member accounts that were removed from the behavior graph. For the organization behavior graph, the results do not include organization accounts that the Detective administrator account has not enabled as member accounts.
     */
   var MemberDetails: js.UndefOr[MemberDetailList] = js.undefined
   
   /**
-    * If there are more member accounts remaining in the results, then this is the pagination token to use to request the next page of member accounts.
+    * If there are more member accounts remaining in the results, then use this pagination token to request the next page of member accounts.
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListMembersResponse {
     
     inline def setMemberDetailsUndefined: Self = StObject.set(x, "MemberDetails", js.undefined)
     
-    inline def setMemberDetailsVarargs(value: MemberDetail*): Self = StObject.set(x, "MemberDetails", js.Array(value :_*))
+    inline def setMemberDetailsVarargs(value: MemberDetail*): Self = StObject.set(x, "MemberDetails", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

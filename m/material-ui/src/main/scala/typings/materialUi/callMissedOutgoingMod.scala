@@ -10,10 +10,10 @@ object callMissedOutgoingMod {
   
   @JSImport("material-ui/svg-icons/communication/call-missed-outgoing", JSImport.Default)
   @js.native
-  class default () extends CommunicationCallMissedOutgoing
+  open class default () extends CommunicationCallMissedOutgoing
   
   @JSImport("material-ui/svg-icons/communication/call-missed-outgoing", "CommunicationCallMissedOutgoing")
   @js.native
-  class CommunicationCallMissedOutgoing ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationCallMissedOutgoing ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

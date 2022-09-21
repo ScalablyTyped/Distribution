@@ -12,7 +12,7 @@ object Debug {
   
   @JSGlobal("BABYLON.Debug.AxesViewer")
   @js.native
-  class AxesViewer protected ()
+  open class AxesViewer protected ()
     extends StObject
        with typings.babylonjs.BABYLON.Debug.AxesViewer {
     /**
@@ -23,218 +23,16 @@ object Debug {
       * @param xAxis defines the node hierarchy used to render the x-axis
       * @param yAxis defines the node hierarchy used to render the y-axis
       * @param zAxis defines the node hierarchy used to render the z-axis
+      * @param lineThickness The line thickness to use when creating the arrow. defaults to 1.
       */
-    def this(scene: typings.babylonjs.BABYLON.Scene) = this()
-    def this(scene: typings.babylonjs.BABYLON.Scene, scaleLines: Double) = this()
-    def this(scene: typings.babylonjs.BABYLON.Scene, scaleLines: Double, renderingGroupId: Nullable[Double]) = this()
-    def this(scene: typings.babylonjs.BABYLON.Scene, scaleLines: Unit, renderingGroupId: Nullable[Double]) = this()
     def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: typings.babylonjs.BABYLON.TransformNode,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: Unit,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: typings.babylonjs.BABYLON.TransformNode,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: typings.babylonjs.BABYLON.TransformNode,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: Unit,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: typings.babylonjs.BABYLON.TransformNode,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: typings.babylonjs.BABYLON.TransformNode,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: Unit,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: typings.babylonjs.BABYLON.TransformNode,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: typings.babylonjs.BABYLON.TransformNode,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: Unit,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
-    ) = this()
-    def this(
-      scene: typings.babylonjs.BABYLON.Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: typings.babylonjs.BABYLON.TransformNode,
-      yAxis: typings.babylonjs.BABYLON.TransformNode,
-      zAxis: typings.babylonjs.BABYLON.TransformNode
+      scene: js.UndefOr[typings.babylonjs.BABYLON.Scene],
+      scaleLines: js.UndefOr[Double],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[typings.babylonjs.BABYLON.TransformNode],
+      yAxis: js.UndefOr[typings.babylonjs.BABYLON.TransformNode],
+      zAxis: js.UndefOr[typings.babylonjs.BABYLON.TransformNode],
+      lineThickness: js.UndefOr[Double]
     ) = this()
   }
   /* static members */
@@ -246,13 +44,13 @@ object Debug {
     
     @JSGlobal("BABYLON.Debug.AxesViewer._SetRenderingGroupId")
     @js.native
-    def _SetRenderingGroupId: js.Any = js.native
-    inline def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
+    def _SetRenderingGroupId: Any = js.native
+    inline def _SetRenderingGroupId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("BABYLON.Debug.BoneAxesViewer")
   @js.native
-  class BoneAxesViewer protected ()
+  open class BoneAxesViewer protected ()
     extends StObject
        with typings.babylonjs.BABYLON.Debug.BoneAxesViewer {
     /**
@@ -277,19 +75,19 @@ object Debug {
   
   @JSGlobal("BABYLON.Debug.PhysicsViewer")
   @js.native
-  class PhysicsViewer protected ()
+  /**
+    * Creates a new PhysicsViewer
+    * @param scene defines the hosting scene
+    */
+  open class PhysicsViewer ()
     extends StObject
        with typings.babylonjs.BABYLON.Debug.PhysicsViewer {
-    /**
-      * Creates a new PhysicsViewer
-      * @param scene defines the hosting scene
-      */
     def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   }
   
   @JSGlobal("BABYLON.Debug.SkeletonViewer")
   @js.native
-  class SkeletonViewer protected ()
+  open class SkeletonViewer protected ()
     extends StObject
        with typings.babylonjs.BABYLON.Debug.SkeletonViewer {
     /**
@@ -425,17 +223,17 @@ object Debug {
     /** public Display constants BABYLON.SkeletonViewer.DISPLAY_LINES */
     @JSGlobal("BABYLON.Debug.SkeletonViewer.DISPLAY_LINES")
     @js.native
-    val DISPLAY_LINES: Double = js.native
+    val DISPLAY_LINES: /* 0 */ Double = js.native
     
     /** public Display constants BABYLON.SkeletonViewer.DISPLAY_SPHERES */
     @JSGlobal("BABYLON.Debug.SkeletonViewer.DISPLAY_SPHERES")
     @js.native
-    val DISPLAY_SPHERES: Double = js.native
+    val DISPLAY_SPHERES: /* 1 */ Double = js.native
     
     /** public Display constants BABYLON.SkeletonViewer.DISPLAY_SPHERE_AND_SPURS */
     @JSGlobal("BABYLON.Debug.SkeletonViewer.DISPLAY_SPHERE_AND_SPURS")
     @js.native
-    val DISPLAY_SPHERE_AND_SPURS: Double = js.native
+    val DISPLAY_SPHERE_AND_SPURS: /* 2 */ Double = js.native
     
     /** private static method to create a BoneWeight Shader
       * @param size The size of the buffer to create (usually the bone count)
@@ -445,7 +243,7 @@ object Debug {
       */
     @JSGlobal("BABYLON.Debug.SkeletonViewer._CreateBoneMapColorBuffer")
     @js.native
-    def _CreateBoneMapColorBuffer: js.Any = js.native
-    inline def _CreateBoneMapColorBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
+    def _CreateBoneMapColorBuffer: Any = js.native
+    inline def _CreateBoneMapColorBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
   }
 }

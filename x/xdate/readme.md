@@ -11,14 +11,12 @@ A Modern JavaScript Date Library
 | Full name          | xdate |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 105 |
-| # downloads        | 2710458 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 386710.6666666667 |
+| # stars            | 678.0 |
 
 ## Links
 - [Homepage](http://arshaw.com/xdate/)
-- [Bugs](https://github.com/arshaw/xdate/issues)
-- [Repository](https://github.com/arshaw/xdate)
 - [Npm](https://www.npmjs.com/package/xdate)
     
 

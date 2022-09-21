@@ -44,7 +44,7 @@ object Computetype {
     
     inline def `setEnvironment-variables`(value: js.Array[Name]): Self = StObject.set(x, "environment-variables", value.asInstanceOf[js.Any])
     
-    inline def `setEnvironment-variablesVarargs`(value: Name*): Self = StObject.set(x, "environment-variables", js.Array(value :_*))
+    inline def `setEnvironment-variablesVarargs`(value: Name*): Self = StObject.set(x, "environment-variables", js.Array(value*))
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

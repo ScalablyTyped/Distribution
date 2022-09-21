@@ -68,81 +68,81 @@ object utilsMod {
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.alignX")
     @js.native
-    def alignX: Requireable[js.Any] = js.native
-    inline def alignX_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignX")(x.asInstanceOf[js.Any])
+    def alignX: Requireable[Any] = js.native
+    inline def alignX_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignX")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.alignY")
     @js.native
-    def alignY: Requireable[js.Any] = js.native
-    inline def alignY_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignY")(x.asInstanceOf[js.Any])
+    def alignY: Requireable[Any] = js.native
+    inline def alignY_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignY")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.centerAlign")
     @js.native
-    def centerAlign: Requireable[js.Any] = js.native
-    inline def centerAlign_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("centerAlign")(x.asInstanceOf[js.Any])
+    def centerAlign: Requireable[Any] = js.native
+    inline def centerAlign_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("centerAlign")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexChild")
     @js.native
-    def flexChild: Requireable[js.Any] = js.native
-    inline def flexChild_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexChild")(x.asInstanceOf[js.Any])
+    def flexChild: Requireable[Any] = js.native
+    inline def flexChild_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexChild")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexContainer")
     @js.native
-    def flexContainer: Requireable[js.Any] = js.native
-    inline def flexContainer_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexContainer")(x.asInstanceOf[js.Any])
+    def flexContainer: Requireable[Any] = js.native
+    inline def flexContainer_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexDirCol")
     @js.native
-    def flexDirCol: Requireable[js.Any] = js.native
+    def flexDirCol: Requireable[Any] = js.native
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexDirColRev")
     @js.native
-    def flexDirColRev: Requireable[js.Any] = js.native
-    inline def flexDirColRev_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirColRev")(x.asInstanceOf[js.Any])
+    def flexDirColRev: Requireable[Any] = js.native
+    inline def flexDirColRev_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirColRev")(x.asInstanceOf[js.Any])
     
-    inline def flexDirCol_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirCol")(x.asInstanceOf[js.Any])
+    inline def flexDirCol_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirCol")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexDirRow")
     @js.native
-    def flexDirRow: Requireable[js.Any] = js.native
+    def flexDirRow: Requireable[Any] = js.native
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexDirRowRev")
     @js.native
-    def flexDirRowRev: Requireable[js.Any] = js.native
-    inline def flexDirRowRev_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirRowRev")(x.asInstanceOf[js.Any])
+    def flexDirRowRev: Requireable[Any] = js.native
+    inline def flexDirRowRev_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirRowRev")(x.asInstanceOf[js.Any])
     
-    inline def flexDirRow_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirRow")(x.asInstanceOf[js.Any])
+    inline def flexDirRow_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexDirRow")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexOrder")
     @js.native
-    def flexOrder: Requireable[js.Any] = js.native
+    def flexOrder: Requireable[Any] = js.native
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexOrderLarge")
     @js.native
-    def flexOrderLarge: Requireable[js.Any] = js.native
-    inline def flexOrderLarge_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderLarge")(x.asInstanceOf[js.Any])
+    def flexOrderLarge: Requireable[Any] = js.native
+    inline def flexOrderLarge_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderLarge")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexOrderMedium")
     @js.native
-    def flexOrderMedium: Requireable[js.Any] = js.native
-    inline def flexOrderMedium_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderMedium")(x.asInstanceOf[js.Any])
+    def flexOrderMedium: Requireable[Any] = js.native
+    inline def flexOrderMedium_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderMedium")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.flexOrderSmall")
     @js.native
-    def flexOrderSmall: Requireable[js.Any] = js.native
-    inline def flexOrderSmall_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderSmall")(x.asInstanceOf[js.Any])
+    def flexOrderSmall: Requireable[Any] = js.native
+    inline def flexOrderSmall_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrderSmall")(x.asInstanceOf[js.Any])
     
-    inline def flexOrder_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrder")(x.asInstanceOf[js.Any])
+    inline def flexOrder_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flexOrder")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.selfAlignX")
     @js.native
-    def selfAlignX: Requireable[js.Any] = js.native
-    inline def selfAlignX_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignX")(x.asInstanceOf[js.Any])
+    def selfAlignX: Requireable[Any] = js.native
+    inline def selfAlignX_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignX")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "FlexboxPropTypes.selfAlignY")
     @js.native
-    def selfAlignY: Requireable[js.Any] = js.native
-    inline def selfAlignY_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignY")(x.asInstanceOf[js.Any])
+    def selfAlignY: Requireable[Any] = js.native
+    inline def selfAlignY_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignY")(x.asInstanceOf[js.Any])
     
     extension [Self <: FlexboxPropTypes](x: Self) {
       
@@ -249,64 +249,64 @@ object utilsMod {
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.float")
     @js.native
-    def float: Requireable[js.Any] = js.native
-    inline def float_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("float")(x.asInstanceOf[js.Any])
+    def float: Requireable[Any] = js.native
+    inline def float_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("float")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.hideFor")
     @js.native
-    def hideFor: Requireable[js.Any] = js.native
-    inline def hideFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideFor")(x.asInstanceOf[js.Any])
+    def hideFor: Requireable[Any] = js.native
+    inline def hideFor_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideFor")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.hideOnlyFor")
     @js.native
-    def hideOnlyFor: Requireable[js.Any] = js.native
-    inline def hideOnlyFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideOnlyFor")(x.asInstanceOf[js.Any])
+    def hideOnlyFor: Requireable[Any] = js.native
+    inline def hideOnlyFor_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hideOnlyFor")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.isClearfix")
     @js.native
-    def isClearfix: Requireable[js.Any] = js.native
-    inline def isClearfix_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isClearfix")(x.asInstanceOf[js.Any])
+    def isClearfix: Requireable[Any] = js.native
+    inline def isClearfix_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isClearfix")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.isHidden")
     @js.native
-    def isHidden: Requireable[js.Any] = js.native
-    inline def isHidden_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isHidden")(x.asInstanceOf[js.Any])
+    def isHidden: Requireable[Any] = js.native
+    inline def isHidden_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isHidden")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.isInvisible")
     @js.native
-    def isInvisible: Requireable[js.Any] = js.native
-    inline def isInvisible_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInvisible")(x.asInstanceOf[js.Any])
+    def isInvisible: Requireable[Any] = js.native
+    inline def isInvisible_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInvisible")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showFor")
     @js.native
-    def showFor: Requireable[js.Any] = js.native
+    def showFor: Requireable[Any] = js.native
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showForLandscape")
     @js.native
-    def showForLandscape: Requireable[js.Any] = js.native
-    inline def showForLandscape_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForLandscape")(x.asInstanceOf[js.Any])
+    def showForLandscape: Requireable[Any] = js.native
+    inline def showForLandscape_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForLandscape")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showForPortrait")
     @js.native
-    def showForPortrait: Requireable[js.Any] = js.native
-    inline def showForPortrait_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForPortrait")(x.asInstanceOf[js.Any])
+    def showForPortrait: Requireable[Any] = js.native
+    inline def showForPortrait_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForPortrait")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showForSr")
     @js.native
-    def showForSr: Requireable[js.Any] = js.native
-    inline def showForSr_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForSr")(x.asInstanceOf[js.Any])
+    def showForSr: Requireable[Any] = js.native
+    inline def showForSr_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showForSr")(x.asInstanceOf[js.Any])
     
-    inline def showFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showFor")(x.asInstanceOf[js.Any])
+    inline def showFor_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showFor")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showOnFocus")
     @js.native
-    def showOnFocus: Requireable[js.Any] = js.native
-    inline def showOnFocus_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnFocus")(x.asInstanceOf[js.Any])
+    def showOnFocus: Requireable[Any] = js.native
+    inline def showOnFocus_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnFocus")(x.asInstanceOf[js.Any])
     
     @JSImport("react-foundation/utils", "GeneralPropTypes.showOnlyFor")
     @js.native
-    def showOnlyFor: Requireable[js.Any] = js.native
-    inline def showOnlyFor_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnlyFor")(x.asInstanceOf[js.Any])
+    def showOnlyFor: Requireable[Any] = js.native
+    inline def showOnlyFor_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnlyFor")(x.asInstanceOf[js.Any])
     
     extension [Self <: GeneralPropTypes](x: Self) {
       
@@ -362,17 +362,17 @@ object utilsMod {
   
   inline def addBreakpoint(prop: String, size: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addBreakpoint")(prop.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def createClassName(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createClassName")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createClassName(args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createClassName")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   inline def flexboxClassNames(props: FlexboxPropTypes): StringDictionary[js.UndefOr[Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flexboxClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[Boolean]]]
   
   inline def generalClassNames(props: GeneralPropTypes): Clearfix = ^.asInstanceOf[js.Dynamic].applyDynamic("generalClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[Clearfix]
   
-  inline def isDefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDefined(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def objectKeys(`object`: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def objectValues(`object`: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def objectValues(`object`: js.Object): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def removeProps(`object`: js.Object, remove: js.Array[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeProps")(`object`.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   

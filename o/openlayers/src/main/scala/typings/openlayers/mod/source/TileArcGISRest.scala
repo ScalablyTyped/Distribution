@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     options.
   * @api
   */
-class TileArcGISRest () extends TileImage {
+open class TileArcGISRest () extends TileImage {
   def this(opt_options: TileArcGISRestOptions) = this()
   
   /**

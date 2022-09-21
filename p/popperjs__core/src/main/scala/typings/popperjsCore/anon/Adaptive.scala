@@ -1,6 +1,9 @@
 package typings.popperjsCore.anon
 
+import typings.popperjsCore.computeStylesMod.RoundOffsets
 import typings.popperjsCore.enumsMod.BasePlacement
+import typings.popperjsCore.enumsMod.Variation
+import typings.popperjsCore.typesMod.Offsets
 import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.popperjsCore.typesMod.Rect
 import typings.std.HTMLElement
@@ -14,6 +17,8 @@ trait Adaptive extends StObject {
   
   var gpuAcceleration: Boolean
   
+  var isFixed: Boolean
+  
   var offsets: Partialxnumberynumbercent
   
   var placement: BasePlacement
@@ -23,19 +28,25 @@ trait Adaptive extends StObject {
   var popperRect: Rect
   
   var position: PositioningStrategy
+  
+  var roundOffsets: Boolean | RoundOffsets
+  
+  var variation: js.UndefOr[Variation | Null] = js.undefined
 }
 object Adaptive {
   
   inline def apply(
     adaptive: Boolean,
     gpuAcceleration: Boolean,
+    isFixed: Boolean,
     offsets: Partialxnumberynumbercent,
     placement: BasePlacement,
     popper: HTMLElement,
     popperRect: Rect,
-    position: PositioningStrategy
+    position: PositioningStrategy,
+    roundOffsets: Boolean | RoundOffsets
   ): Adaptive = {
-    val __obj = js.Dynamic.literal(adaptive = adaptive.asInstanceOf[js.Any], gpuAcceleration = gpuAcceleration.asInstanceOf[js.Any], offsets = offsets.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], popperRect = popperRect.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adaptive = adaptive.asInstanceOf[js.Any], gpuAcceleration = gpuAcceleration.asInstanceOf[js.Any], isFixed = isFixed.asInstanceOf[js.Any], offsets = offsets.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], popperRect = popperRect.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], roundOffsets = roundOffsets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Adaptive]
   }
   
@@ -44,6 +55,8 @@ object Adaptive {
     inline def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
     
     inline def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
+    
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
     inline def setOffsets(value: Partialxnumberynumbercent): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     
@@ -54,5 +67,15 @@ object Adaptive {
     inline def setPopperRect(value: Rect): Self = StObject.set(x, "popperRect", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: PositioningStrategy): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setRoundOffsets(value: Boolean | RoundOffsets): Self = StObject.set(x, "roundOffsets", value.asInstanceOf[js.Any])
+    
+    inline def setRoundOffsetsFunction1(value: /* offsets */ Partialxnumberynumbercent => Offsets): Self = StObject.set(x, "roundOffsets", js.Any.fromFunction1(value))
+    
+    inline def setVariation(value: Variation): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
+    
+    inline def setVariationNull: Self = StObject.set(x, "variation", null)
+    
+    inline def setVariationUndefined: Self = StObject.set(x, "variation", js.undefined)
   }
 }

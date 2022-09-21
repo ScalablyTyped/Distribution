@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectAbsoluteSizeCommand")
 @js.native
-class ChangeFloatingObjectAbsoluteSizeCommand ()
+open class ChangeFloatingObjectAbsoluteSizeCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectAbsoluteSizeCommand {
   

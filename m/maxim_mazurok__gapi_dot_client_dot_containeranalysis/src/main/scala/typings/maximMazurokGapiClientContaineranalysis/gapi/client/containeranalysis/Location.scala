@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Location extends StObject {
   
-  /** Required. The CPE URI in [CPE format](https://cpe.mitre.org/specification/) denoting the package manager version distributing a package. */
+  /** Deprecated. The CPE URI in [CPE format](https://cpe.mitre.org/specification/) */
   var cpeUri: js.UndefOr[String] = js.undefined
   
   /** The path from which we gathered that this package/version is installed. */
   var path: js.UndefOr[String] = js.undefined
   
-  /** The version installed at this location. */
+  /** Deprecated. The version installed at this location. */
   var version: js.UndefOr[Version] = js.undefined
 }
 object Location {

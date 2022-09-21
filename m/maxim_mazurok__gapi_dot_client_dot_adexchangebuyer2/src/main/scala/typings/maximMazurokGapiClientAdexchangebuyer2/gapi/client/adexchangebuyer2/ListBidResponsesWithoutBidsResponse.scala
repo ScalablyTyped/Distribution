@@ -28,7 +28,7 @@ object ListBidResponsesWithoutBidsResponse {
     
     inline def setBidResponseWithoutBidsStatusRowsUndefined: Self = StObject.set(x, "bidResponseWithoutBidsStatusRows", js.undefined)
     
-    inline def setBidResponseWithoutBidsStatusRowsVarargs(value: BidResponseWithoutBidsStatusRow*): Self = StObject.set(x, "bidResponseWithoutBidsStatusRows", js.Array(value :_*))
+    inline def setBidResponseWithoutBidsStatusRowsVarargs(value: BidResponseWithoutBidsStatusRow*): Self = StObject.set(x, "bidResponseWithoutBidsStatusRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,5 @@
 package typings.googleapis.accesscontextmanagerV1Mod.accesscontextmanagerV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceAccesspoliciesAccesslevelsPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Required. Resource name for the Access Level. The `short_name` component
-    * must begin with a letter and only include alphanumeric and '_'. Format:
-    * `accessPolicies/{policy_id}/accessLevels/{short_name}`
+    * Required. Resource name for the Access Level. The `short_name` component must begin with a letter and only include alphanumeric and '_'. Format: `accessPolicies/{access_policy\}/accessLevels/{access_level\}`. The maximum length of the `access_level` component is 50 characters.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -30,7 +19,7 @@ trait ParamsResourceAccesspoliciesAccesslevelsPatch
   var requestBody: js.UndefOr[SchemaAccessLevel] = js.undefined
   
   /**
-    * Required.  Mask to control which fields get updated. Must be non-empty.
+    * Required. Mask to control which fields get updated. Must be non-empty.
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -42,10 +31,6 @@ object ParamsResourceAccesspoliciesAccesslevelsPatch {
   }
   
   extension [Self <: ParamsResourceAccesspoliciesAccesslevelsPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

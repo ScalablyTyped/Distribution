@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ConditionValue")
 @js.native
-/* private */ class ConditionValue ()
+/* private */ open class ConditionValue ()
   extends StObject
      with typings.activexExcel.Excel.ConditionValue

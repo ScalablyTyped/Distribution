@@ -1,8 +1,8 @@
 package typings.googleCloudCommon.utilMod
 
+import typings.googleAuthLibrary.authclientMod.AuthClient
 import typings.googleAuthLibrary.credentialsMod.CredentialBody
 import typings.googleAuthLibrary.mod.GoogleAuth
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +14,11 @@ trait MakeAuthenticatedRequest extends StObject {
   def apply(reqOpts: DecorateRequestOptions, callback: BodyResponseCallback): Unit | Abortable = js.native
   def apply(reqOpts: DecorateRequestOptions, options: MakeAuthenticatedRequestOptions): Unit | Abortable = js.native
   
-  var authClient: GoogleAuth = js.native
+  var authClient: GoogleAuth[AuthClient] = js.native
   
   def getCredentials(
     callback: js.Function2[
-      /* err */ js.UndefOr[Error | Null], 
+      /* err */ js.UndefOr[js.Error | Null], 
       /* credentials */ js.UndefOr[CredentialBody], 
       Unit
     ]

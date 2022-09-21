@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Material")
 @js.native
-class Material () extends StObject {
+open class Material () extends StObject {
   def this(id: Double) = this()
   
   var id: Double = js.native

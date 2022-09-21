@@ -12,7 +12,7 @@ trait CutoffTime extends StObject {
   /** Minute of the cutoff time until which an order has to be placed to be processed in the same day. Required. */
   var minute: js.UndefOr[Double] = js.undefined
   
-  /** Timezone identifier for the cutoff time. A list of identifiers can be found in the AdWords API documentation. E.g. "Europe/Zurich". Required. */
+  /** Timezone identifier for the cutoff time (for example, "Europe/Zurich"). List of identifiers. Required. */
   var timezone: js.UndefOr[String] = js.undefined
 }
 object CutoffTime {

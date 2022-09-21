@@ -17,7 +17,7 @@ trait ListAggregateDiscoveredResourcesRequest extends StObject {
   var Filters: js.UndefOr[ResourceFilters] = js.undefined
   
   /**
-    * The maximum number of resource identifiers returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
+    * The maximum number of resource identifiers returned on each page. You cannot specify a number greater than 100. If you specify 0, Config uses the default.
     */
   var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
@@ -27,7 +27,7 @@ trait ListAggregateDiscoveredResourcesRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
   
   /**
-    * The type of resources that you want AWS Config to list in the response.
+    * The type of resources that you want Config to list in the response.
     */
   var ResourceType: typings.awsSdk.configserviceMod.ResourceType
 }

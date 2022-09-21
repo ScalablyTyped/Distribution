@@ -10,12 +10,12 @@ trait ZoombarProviderDefaultSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Contains the target component's instance
     */
-  var targetObject: js.UndefOr[js.Any] = js.undefined
+  var targetObject: js.UndefOr[Any] = js.undefined
   
   /**
     * Expects two parameters
@@ -29,7 +29,7 @@ trait ZoombarProviderDefaultSettings
     * }
     * The values should represent the fractions of the total width of the zoomed component in a number ranging from 0 to 1
     */
-  var zoomChangedCallback: js.UndefOr[js.Any] = js.undefined
+  var zoomChangedCallback: js.UndefOr[Any] = js.undefined
 }
 object ZoombarProviderDefaultSettings {
   
@@ -40,11 +40,11 @@ object ZoombarProviderDefaultSettings {
   
   extension [Self <: ZoombarProviderDefaultSettings](x: Self) {
     
-    inline def setTargetObject(value: js.Any): Self = StObject.set(x, "targetObject", value.asInstanceOf[js.Any])
+    inline def setTargetObject(value: Any): Self = StObject.set(x, "targetObject", value.asInstanceOf[js.Any])
     
     inline def setTargetObjectUndefined: Self = StObject.set(x, "targetObject", js.undefined)
     
-    inline def setZoomChangedCallback(value: js.Any): Self = StObject.set(x, "zoomChangedCallback", value.asInstanceOf[js.Any])
+    inline def setZoomChangedCallback(value: Any): Self = StObject.set(x, "zoomChangedCallback", value.asInstanceOf[js.Any])
     
     inline def setZoomChangedCallbackUndefined: Self = StObject.set(x, "zoomChangedCallback", js.undefined)
   }

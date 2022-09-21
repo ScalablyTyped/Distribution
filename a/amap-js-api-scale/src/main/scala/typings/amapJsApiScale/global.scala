@@ -14,7 +14,7 @@ object global {
       */
     @JSGlobal("AMap.Scale")
     @js.native
-    class Scale ()
+    open class Scale ()
       extends StObject
          with typings.amapJsApiScale.AMap.Scale {
       def this(options: Options) = this()

@@ -10,7 +10,7 @@ object UI {
   
   @JSGlobal("PlayerFramework.UI.Button")
   @js.native
-  class Button ()
+  open class Button ()
     extends StObject
        with typings.playerframework.PlayerFramework.UI.Button {
     
@@ -44,7 +44,7 @@ object UI {
   
   @JSGlobal("PlayerFramework.UI.ControlPanel")
   @js.native
-  class ControlPanel ()
+  open class ControlPanel ()
     extends StObject
        with typings.playerframework.PlayerFramework.UI.ControlPanel {
     
@@ -144,7 +144,7 @@ object UI {
   
   @JSGlobal("PlayerFramework.UI.Indicator")
   @js.native
-  class Indicator ()
+  open class Indicator ()
     extends StObject
        with typings.playerframework.PlayerFramework.UI.Indicator {
     
@@ -169,7 +169,7 @@ object UI {
   
   @JSGlobal("PlayerFramework.UI.Meter")
   @js.native
-  class Meter ()
+  open class Meter ()
     extends StObject
        with typings.playerframework.PlayerFramework.UI.Meter {
     
@@ -194,7 +194,7 @@ object UI {
   
   @JSGlobal("PlayerFramework.UI.Slider")
   @js.native
-  class Slider ()
+  open class Slider ()
     extends StObject
        with typings.playerframework.PlayerFramework.UI.Slider {
     
@@ -223,7 +223,7 @@ object UI {
     var label: String = js.native
     
     /* CompleteClass */
-    var markers: js.Array[js.Any] = js.native
+    var markers: js.Array[Any] = js.native
     
     /* CompleteClass */
     var max: Double = js.native

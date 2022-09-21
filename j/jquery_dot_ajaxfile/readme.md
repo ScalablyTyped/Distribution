@@ -10,15 +10,12 @@ Allow to upload file with old browser
 | ------------------ | :-------------: |
 | Full name          | jquery.ajaxfile |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 168 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 25.666666666666668 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/fpellet/jquery.ajaxFile)
-- [Bugs](https://github.com/fpellet/jquery.ajaxFile/issues)
-- [Repository](https://github.com/fpellet/jquery.ajaxFile)
 - [Npm](https://www.npmjs.com/package/jquery.ajaxfile)
     
 

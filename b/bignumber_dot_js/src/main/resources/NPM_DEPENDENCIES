@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bignumber.js" : "9.0.1"
+      "bignumber.js" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "bignumber.js" : "9.0.1"
+      "bignumber.js" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -2,7 +2,6 @@ package typings.intlRelativeformat
 
 import typings.intlRelativeformat.typesMod.STYLE
 import typings.intlRelativeformat.typesMod.SUPPORTED_FIELD
-import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -91,7 +90,7 @@ object anon {
   
   trait Now extends StObject {
     
-    var now: js.UndefOr[Date | Double | Null] = js.undefined
+    var now: js.UndefOr[js.Date | Double | Null] = js.undefined
   }
   object Now {
     
@@ -102,7 +101,7 @@ object anon {
     
     extension [Self <: Now](x: Self) {
       
-      inline def setNow(value: Date | Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: js.Date | Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
       inline def setNowNull: Self = StObject.set(x, "now", null)
       

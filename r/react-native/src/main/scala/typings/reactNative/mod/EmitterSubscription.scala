@@ -25,14 +25,14 @@ trait EmitterSubscription
 Instantiable4[
       /* emitter */ EventEmitter, 
       /* subscriber */ EventSubscriptionVendor, 
-      /* listener */ js.Function0[js.Any], 
-      /* context */ js.Any, 
+      /* listener */ js.Function0[Any], 
+      /* context */ Any, 
       EmitterSubscription
     ] {
   
-  var context: js.Any = js.native
+  var context: Any = js.native
   
   var emitter: EventEmitter = js.native
   
-  def listener(): js.Any = js.native
+  def listener(): Any = js.native
 }

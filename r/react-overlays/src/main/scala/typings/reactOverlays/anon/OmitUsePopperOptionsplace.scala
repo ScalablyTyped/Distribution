@@ -34,7 +34,7 @@ object OmitUsePopperOptionsplace {
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    inline def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
     

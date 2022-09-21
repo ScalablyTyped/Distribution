@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.abstractSceneMod.AbstractScene
 import typings.babylonjs.animatableMod.Animatable
 import typings.babylonjs.animationGroupMod.AnimationGroup
+import typings.babylonjs.anon.DoNotInstantiate
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.sceneMod.Scene
@@ -17,21 +18,30 @@ object assetContainerMod {
   
   @JSImport("babylonjs/assetContainer", "AssetContainer")
   @js.native
-  class AssetContainer protected () extends AbstractScene {
-    /**
-      * Instantiates an AssetContainer.
-      * @param scene The scene the AssetContainer belongs to.
-      */
-    def this(scene: Scene) = this()
+  /**
+    * Instantiates an AssetContainer.
+    * @param scene The scene the AssetContainer belongs to.
+    */
+  open class AssetContainer () extends AbstractScene {
+    def this(scene: Nullable[Scene]) = this()
     
-    /* private */ var _moveAssets: js.Any = js.native
+    /* private */ var _moveAssets: Any = js.native
     
-    /* private */ var _wasAddedToScene: js.Any = js.native
+    /* private */ var _onContextRestoredObserver: Any = js.native
+    
+    /* private */ var _wasAddedToScene: Any = js.native
     
     /**
       * Adds all the assets from the container to the scene.
       */
     def addAllToScene(): Unit = js.native
+    
+    /**
+      * Adds assets from the container to the scene.
+      * @param predicate defines a predicate used to select which entity will be added (can be null)
+      */
+    def addToScene(): Unit = js.native
+    def addToScene(predicate: Nullable[js.Function1[/* entity */ Any, Boolean]]): Unit = js.native
     
     /**
       * Adds all meshes in the asset container to a root mesh that can be used to position all the contained meshes. The root mesh is then added to the front of the meshes in the assetContainer.
@@ -49,24 +59,33 @@ object assetContainerMod {
       * Skeletons and animation groups will all be cloned
       * @param nameFunction defines an optional function used to get new names for clones
       * @param cloneMaterials defines an optional boolean that defines if materials must be cloned as well (false by default)
-      * @returns a list of rootNodes, skeletons and aniamtion groups that were duplicated
+      * @param options defines an optional list of options to control how to instantiate / clone models
+      * @param options.doNotInstantiate defines if the model must be instantiated or just cloned
+      * @param options.predicate defines a predicate used to filter whih mesh to instantiate/clone
+      * @returns a list of rootNodes, skeletons and animation groups that were duplicated
       */
     def instantiateModelsToScene(): InstantiatedEntries = js.native
     def instantiateModelsToScene(nameFunction: js.Function1[/* sourceName */ String, String]): InstantiatedEntries = js.native
     def instantiateModelsToScene(nameFunction: js.Function1[/* sourceName */ String, String], cloneMaterials: Boolean): InstantiatedEntries = js.native
+    def instantiateModelsToScene(
+      nameFunction: js.Function1[/* sourceName */ String, String],
+      cloneMaterials: Boolean,
+      options: DoNotInstantiate
+    ): InstantiatedEntries = js.native
+    def instantiateModelsToScene(
+      nameFunction: js.Function1[/* sourceName */ String, String],
+      cloneMaterials: Unit,
+      options: DoNotInstantiate
+    ): InstantiatedEntries = js.native
     def instantiateModelsToScene(nameFunction: Unit, cloneMaterials: Boolean): InstantiatedEntries = js.native
+    def instantiateModelsToScene(nameFunction: Unit, cloneMaterials: Boolean, options: DoNotInstantiate): InstantiatedEntries = js.native
+    def instantiateModelsToScene(nameFunction: Unit, cloneMaterials: Unit, options: DoNotInstantiate): InstantiatedEntries = js.native
     
-    def mergeAnimationsTo(scene: Null, animatables: js.Array[Animatable]): js.Array[AnimationGroup] = js.native
-    def mergeAnimationsTo(
-      scene: Null,
-      animatables: js.Array[Animatable],
-      targetConverter: Nullable[js.Function1[/* target */ js.Any, Nullable[Node]]]
-    ): js.Array[AnimationGroup] = js.native
     def mergeAnimationsTo(scene: Unit, animatables: js.Array[Animatable]): js.Array[AnimationGroup] = js.native
     def mergeAnimationsTo(
       scene: Unit,
       animatables: js.Array[Animatable],
-      targetConverter: Nullable[js.Function1[/* target */ js.Any, Nullable[Node]]]
+      targetConverter: Nullable[js.Function1[/* target */ Any, Nullable[Node]]]
     ): js.Array[AnimationGroup] = js.native
     /**
       * Merge animations (direct and animation groups) from this asset container into a scene
@@ -75,11 +94,11 @@ object assetContainerMod {
       * @param targetConverter defines a function used to convert animation targets from the asset container to the scene (default: search node by name)
       * @returns an array of the new AnimationGroup added to the scene (empty array if none)
       */
-    def mergeAnimationsTo(scene: Scene, animatables: js.Array[Animatable]): js.Array[AnimationGroup] = js.native
+    def mergeAnimationsTo(scene: Nullable[Scene], animatables: js.Array[Animatable]): js.Array[AnimationGroup] = js.native
     def mergeAnimationsTo(
-      scene: Scene,
+      scene: Nullable[Scene],
       animatables: js.Array[Animatable],
-      targetConverter: Nullable[js.Function1[/* target */ js.Any, Nullable[Node]]]
+      targetConverter: Nullable[js.Function1[/* target */ Any, Nullable[Node]]]
     ): js.Array[AnimationGroup] = js.native
     
     /**
@@ -95,6 +114,13 @@ object assetContainerMod {
     def removeAllFromScene(): Unit = js.native
     
     /**
+      * Removes assets in the container from the scene
+      * @param predicate defines a predicate used to select which entity will be added (can be null)
+      */
+    def removeFromScene(): Unit = js.native
+    def removeFromScene(predicate: Nullable[js.Function1[/* entity */ Any, Boolean]]): Unit = js.native
+    
+    /**
       * The scene the AssetContainer belongs to.
       */
     var scene: Scene = js.native
@@ -102,7 +128,7 @@ object assetContainerMod {
   
   @JSImport("babylonjs/assetContainer", "InstantiatedEntries")
   @js.native
-  class InstantiatedEntries () extends StObject {
+  open class InstantiatedEntries () extends StObject {
     
     /**
       * List of new animation groups
@@ -122,5 +148,5 @@ object assetContainerMod {
   
   @JSImport("babylonjs/assetContainer", "KeepAssets")
   @js.native
-  class KeepAssets () extends AbstractScene
+  open class KeepAssets () extends AbstractScene
 }

@@ -11,9 +11,9 @@ Squire.js is a dependency injector for Require.js users to make mocking dependen
 | Full name          | squirejs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1156747 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 39829.0 |
+| # stars            | 475.0 |
 
 ## Links
 - [Homepage](https://github.com/iammerrick/Squire.js)

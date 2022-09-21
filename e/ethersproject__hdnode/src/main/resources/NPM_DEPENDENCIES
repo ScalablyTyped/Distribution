@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/hdnode" : "5.0.6"
+      "@ethersproject/hdnode" : "5.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/hdnode" : "5.0.6"
+      "@ethersproject/hdnode" : "5.7.0"
     }
   ],
   "compile-devDependencies" : [

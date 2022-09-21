@@ -8,34 +8,34 @@ object commonMod {
   
   @JSImport("@devexpress/utils/lib/sequence-comparison/common", "SequenceComparator")
   @js.native
-  class SequenceComparator[T] protected () extends StObject {
+  open class SequenceComparator[T] protected () extends StObject {
     def this(a: ISequenceComparatorItertor[T], b: ISequenceComparatorItertor[T]) = this()
     
-    /* private */ var a: js.Any = js.native
+    /* private */ var a: Any = js.native
     
-    /* private */ var b: js.Any = js.native
+    /* private */ var b: Any = js.native
     
     def calculate(): js.Array[SesElem[T]] = js.native
     
-    /* private */ val comparer: js.Any = js.native
+    /* private */ val comparer: Any = js.native
     
     var editDistance: Double | Null = js.native
     
     var lcs: String = js.native
     
-    /* private */ var m: js.Any = js.native
+    /* private */ var m: Any = js.native
     
-    /* private */ var n: js.Any = js.native
+    /* private */ var n: Any = js.native
     
-    /* private */ val offset: js.Any = js.native
+    /* private */ val offset: Any = js.native
     
-    /* private */ val path: js.Any = js.native
+    /* private */ val path: Any = js.native
     
-    /* private */ val pathposi: js.Any = js.native
+    /* private */ val pathposi: Any = js.native
     
     /* protected */ def recordSeq(epc: js.Array[PathElem]): Unit = js.native
     
-    /* private */ val reverse: js.Any = js.native
+    /* private */ val reverse: Any = js.native
     
     var ses: js.Array[SesElem[T]] = js.native
     
@@ -44,7 +44,7 @@ object commonMod {
   
   @JSImport("@devexpress/utils/lib/sequence-comparison/common", "SesElem")
   @js.native
-  class SesElem[T] protected () extends StObject {
+  open class SesElem[T] protected () extends StObject {
     def this(elem: T, `type`: SesType) = this()
     
     var elem: T = js.native

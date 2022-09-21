@@ -2,16 +2,19 @@ package typings.googleapisCommon
 
 import typings.gaxios.commonMod.GaxiosOptions
 import typings.gaxios.commonMod.GaxiosResponse
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.mod.BaseExternalAccountClient
+import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapisCommon.endpointMod.Endpoint
-import typings.std.Error
+import typings.googleapisCommon.googleapisCommonStrings.stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMod {
   
-  type APIEndpoint = Endpoint & js.Any
+  type APIEndpoint = Endpoint & Any
   
   trait APIRequestContext extends StObject {
     
@@ -79,21 +82,21 @@ object apiMod {
       
       inline def setPathParams(value: js.Array[String]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
       
-      inline def setPathParamsVarargs(value: String*): Self = StObject.set(x, "pathParams", js.Array(value :_*))
+      inline def setPathParamsVarargs(value: String*): Self = StObject.set(x, "pathParams", js.Array(value*))
       
       inline def setRequiredParams(value: js.Array[String]): Self = StObject.set(x, "requiredParams", value.asInstanceOf[js.Any])
       
-      inline def setRequiredParamsVarargs(value: String*): Self = StObject.set(x, "requiredParams", js.Array(value :_*))
+      inline def setRequiredParamsVarargs(value: String*): Self = StObject.set(x, "requiredParams", js.Array(value*))
     }
   }
   
-  type BodyResponseCallback[T] = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[GaxiosResponse[T] | Null], Unit]
+  type BodyResponseCallback[T] = js.Function2[/* err */ js.Error | Null, /* res */ js.UndefOr[GaxiosResponse[T] | Null], Unit]
   
   trait GlobalOptions
     extends StObject
        with MethodOptions {
     
-    var auth: js.UndefOr[OAuth2Client | String] = js.undefined
+    var auth: js.UndefOr[GoogleAuth[JSONClient] | OAuth2Client | BaseExternalAccountClient | String] = js.undefined
   }
   object GlobalOptions {
     
@@ -104,7 +107,7 @@ object apiMod {
     
     extension [Self <: GlobalOptions](x: Self) {
       
-      inline def setAuth(value: OAuth2Client | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: GoogleAuth[JSONClient] | OAuth2Client | BaseExternalAccountClient | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     }
@@ -131,6 +134,8 @@ object apiMod {
     extends StObject
        with GaxiosOptions {
     
+    var http2: js.UndefOr[Boolean] = js.undefined
+    
     var rootUrl: js.UndefOr[String] = js.undefined
     
     var userAgentDirectives: js.UndefOr[js.Array[UserAgentDirective]] = js.undefined
@@ -144,6 +149,10 @@ object apiMod {
     
     extension [Self <: MethodOptions](x: Self) {
       
+      inline def setHttp2(value: Boolean): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
+      
+      inline def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
+      
       inline def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
       
       inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
@@ -152,7 +161,7 @@ object apiMod {
       
       inline def setUserAgentDirectivesUndefined: Self = StObject.set(x, "userAgentDirectives", js.undefined)
       
-      inline def setUserAgentDirectivesVarargs(value: UserAgentDirective*): Self = StObject.set(x, "userAgentDirectives", js.Array(value :_*))
+      inline def setUserAgentDirectivesVarargs(value: UserAgentDirective*): Self = StObject.set(x, "userAgentDirectives", js.Array(value*))
     }
   }
   
@@ -174,6 +183,26 @@ object apiMod {
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    }
+  }
+  
+  trait StreamMethodOptions
+    extends StObject
+       with MethodOptions {
+    
+    @JSName("responseType")
+    var responseType_StreamMethodOptions: stream
+  }
+  object StreamMethodOptions {
+    
+    inline def apply(): StreamMethodOptions = {
+      val __obj = js.Dynamic.literal(responseType = "stream")
+      __obj.asInstanceOf[StreamMethodOptions]
+    }
+    
+    extension [Self <: StreamMethodOptions](x: Self) {
+      
+      inline def setResponseType(value: stream): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     }
   }
   

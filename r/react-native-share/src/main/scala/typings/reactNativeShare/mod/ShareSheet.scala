@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-share", "ShareSheet")
 @js.native
-class ShareSheet protected ()
-  extends Component[ShareSheetProps, js.Object, js.Any] {
+open class ShareSheet protected ()
+  extends Component[ShareSheetProps, js.Object, Any] {
   def this(props: ShareSheetProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ShareSheetProps, context: js.Any) = this()
+  def this(props: ShareSheetProps, context: Any) = this()
   
   def backButtonHandler(): Boolean = js.native
   

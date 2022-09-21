@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response of signing out user.
-  */
 trait SchemaIdentitytoolkitRelyingpartySignOutUserResponse extends StObject {
   
   /**
     * The local ID of the user.
     */
-  var localId: js.UndefOr[String] = js.undefined
+  var localId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaIdentitytoolkitRelyingpartySignOutUserResponse {
   
@@ -24,6 +21,8 @@ object SchemaIdentitytoolkitRelyingpartySignOutUserResponse {
   extension [Self <: SchemaIdentitytoolkitRelyingpartySignOutUserResponse](x: Self) {
     
     inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    
+    inline def setLocalIdNull: Self = StObject.set(x, "localId", null)
     
     inline def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
   }

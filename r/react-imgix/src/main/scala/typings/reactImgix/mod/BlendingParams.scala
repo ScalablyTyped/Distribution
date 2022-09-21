@@ -16,11 +16,15 @@ trait BlendingParams extends StObject {
   
   var `blend-fit`: js.UndefOr[ImgixParamType] = js.undefined
   
+  var `blend-h`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `blend-mode`: js.UndefOr[ImgixParamType] = js.undefined
   
   var `blend-pad`: js.UndefOr[ImgixParamType] = js.undefined
   
   var `blend-size`: js.UndefOr[ImgixParamType] = js.undefined
+  
+  var `blend-w`: js.UndefOr[ImgixParamType] = js.undefined
   
   var `blend-x`: js.UndefOr[ImgixParamType] = js.undefined
   
@@ -53,6 +57,10 @@ object BlendingParams {
     
     inline def `setBlend-fitUndefined`: Self = StObject.set(x, "blend-fit", js.undefined)
     
+    inline def `setBlend-h`(value: ImgixParamType): Self = StObject.set(x, "blend-h", value.asInstanceOf[js.Any])
+    
+    inline def `setBlend-hUndefined`: Self = StObject.set(x, "blend-h", js.undefined)
+    
     inline def `setBlend-mode`(value: ImgixParamType): Self = StObject.set(x, "blend-mode", value.asInstanceOf[js.Any])
     
     inline def `setBlend-modeUndefined`: Self = StObject.set(x, "blend-mode", js.undefined)
@@ -64,6 +72,10 @@ object BlendingParams {
     inline def `setBlend-size`(value: ImgixParamType): Self = StObject.set(x, "blend-size", value.asInstanceOf[js.Any])
     
     inline def `setBlend-sizeUndefined`: Self = StObject.set(x, "blend-size", js.undefined)
+    
+    inline def `setBlend-w`(value: ImgixParamType): Self = StObject.set(x, "blend-w", value.asInstanceOf[js.Any])
+    
+    inline def `setBlend-wUndefined`: Self = StObject.set(x, "blend-w", js.undefined)
     
     inline def `setBlend-x`(value: ImgixParamType): Self = StObject.set(x, "blend-x", value.asInstanceOf[js.Any])
     

@@ -4,32 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Sslcertificates")
 @js.native
-class ResourceSslcertificates protected () extends StObject {
+open class ResourceSslcertificates protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * compute.sslCertificates.aggregatedList
-    * @desc Retrieves the list of all SslCertificate resources, regional and
-    * global, available to the specified project.
-    * @alias compute.sslCertificates.aggregatedList
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Name of the project scoping this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def aggregatedList(): GaxiosPromise[SchemaSslCertificateAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaSslCertificateAggregatedList]): Unit = js.native
   def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSslCertificateAggregatedList] = js.native
@@ -40,8 +25,8 @@ class ResourceSslcertificates protected () extends StObject {
   ): Unit = js.native
   def aggregatedList(
     params: ParamsResourceSslcertificatesAggregatedlist,
-    options: BodyResponseCallback[SchemaSslCertificateAggregatedList],
-    callback: BodyResponseCallback[SchemaSslCertificateAggregatedList]
+    options: BodyResponseCallback[Readable | SchemaSslCertificateAggregatedList],
+    callback: BodyResponseCallback[Readable | SchemaSslCertificateAggregatedList]
   ): Unit = js.native
   def aggregatedList(params: ParamsResourceSslcertificatesAggregatedlist, options: MethodOptions): GaxiosPromise[SchemaSslCertificateAggregatedList] = js.native
   def aggregatedList(
@@ -49,23 +34,88 @@ class ResourceSslcertificates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCertificateAggregatedList]
   ): Unit = js.native
+  /**
+    * Retrieves the list of all SslCertificate resources, regional and global, available to the specified project.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.sslCertificates.aggregatedList({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // Indicates whether every visible scope for each scope type (zone, region, global) should be included in the response. For new resource types added after this field, the flag has no effect as new resource types will always include every visible scope for each scope type in response. For resource types which predate this field, if this flag is omitted or false, only scopes of the scope types where the resource type is expected to be found will be included.
+    *     includeAllScopes: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Name of the project scoping this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": {},
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "unreachables": [],
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def aggregatedList(params: ParamsResourceSslcertificatesAggregatedlist, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def aggregatedList(
+    params: ParamsResourceSslcertificatesAggregatedlist,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * compute.sslCertificates.delete
-    * @desc Deletes the specified SslCertificate resource.
-    * @alias compute.sslCertificates.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.sslCertificate Name of the SslCertificate resource to delete.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -73,8 +123,8 @@ class ResourceSslcertificates protected () extends StObject {
   def delete(params: ParamsResourceSslcertificatesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
     params: ParamsResourceSslcertificatesDelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def delete(params: ParamsResourceSslcertificatesDelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(
@@ -82,21 +132,96 @@ class ResourceSslcertificates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.sslCertificates.get
-    * @desc Returns the specified SslCertificate resource. Gets a list of
-    * available SSL certificates by making a list() request.
-    * @alias compute.sslCertificates.get
-    * @memberOf! ()
+    * Deletes the specified SslCertificate resource.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.sslCertificate Name of the SslCertificate resource to return.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.sslCertificates.delete({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name of the SslCertificate resource to delete.
+    *     sslCertificate: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "selfLinkWithId": "my_selfLinkWithId",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceSslcertificatesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceSslcertificatesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaSslCertificate] = js.native
   def get(callback: BodyResponseCallback[SchemaSslCertificate]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSslCertificate] = js.native
@@ -104,8 +229,8 @@ class ResourceSslcertificates protected () extends StObject {
   def get(params: ParamsResourceSslcertificatesGet, callback: BodyResponseCallback[SchemaSslCertificate]): Unit = js.native
   def get(
     params: ParamsResourceSslcertificatesGet,
-    options: BodyResponseCallback[SchemaSslCertificate],
-    callback: BodyResponseCallback[SchemaSslCertificate]
+    options: BodyResponseCallback[Readable | SchemaSslCertificate],
+    callback: BodyResponseCallback[Readable | SchemaSslCertificate]
   ): Unit = js.native
   def get(params: ParamsResourceSslcertificatesGet, options: MethodOptions): GaxiosPromise[SchemaSslCertificate] = js.native
   def get(
@@ -113,22 +238,84 @@ class ResourceSslcertificates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCertificate]
   ): Unit = js.native
-  
   /**
-    * compute.sslCertificates.insert
-    * @desc Creates a SslCertificate resource in the specified project using
-    * the data included in the request.
-    * @alias compute.sslCertificates.insert
-    * @memberOf! ()
+    * Returns the specified SslCertificate resource. Gets a list of available SSL certificates by making a list() request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {().SslCertificate} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.sslCertificates.get({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the SslCertificate resource to return.
+    *     sslCertificate: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "certificate": "my_certificate",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "expireTime": "my_expireTime",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "managed": {},
+    *   //   "name": "my_name",
+    *   //   "privateKey": "my_privateKey",
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "selfLinkWithId": "my_selfLinkWithId",
+    *   //   "selfManaged": {},
+    *   //   "subjectAlternativeNames": [],
+    *   //   "type": "my_type"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceSslcertificatesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceSslcertificatesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -136,8 +323,8 @@ class ResourceSslcertificates protected () extends StObject {
   def insert(params: ParamsResourceSslcertificatesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
     params: ParamsResourceSslcertificatesInsert,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def insert(params: ParamsResourceSslcertificatesInsert, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(
@@ -145,24 +332,116 @@ class ResourceSslcertificates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.sslCertificates.list
-    * @desc Retrieves the list of SslCertificate resources available to the
-    * specified project.
-    * @alias compute.sslCertificates.list
-    * @memberOf! ()
+    * Creates a SslCertificate resource in the specified project using the data included in the request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.sslCertificates.insert({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "certificate": "my_certificate",
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "description": "my_description",
+    *       //   "expireTime": "my_expireTime",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "managed": {},
+    *       //   "name": "my_name",
+    *       //   "privateKey": "my_privateKey",
+    *       //   "region": "my_region",
+    *       //   "selfLink": "my_selfLink",
+    *       //   "selfLinkWithId": "my_selfLinkWithId",
+    *       //   "selfManaged": {},
+    *       //   "subjectAlternativeNames": [],
+    *       //   "type": "my_type"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "selfLinkWithId": "my_selfLinkWithId",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceSslcertificatesInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceSslcertificatesInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaSslCertificateList] = js.native
   def list(callback: BodyResponseCallback[SchemaSslCertificateList]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSslCertificateList] = js.native
@@ -173,8 +452,8 @@ class ResourceSslcertificates protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceSslcertificatesList,
-    options: BodyResponseCallback[SchemaSslCertificateList],
-    callback: BodyResponseCallback[SchemaSslCertificateList]
+    options: BodyResponseCallback[Readable | SchemaSslCertificateList],
+    callback: BodyResponseCallback[Readable | SchemaSslCertificateList]
   ): Unit = js.native
   def list(params: ParamsResourceSslcertificatesList, options: MethodOptions): GaxiosPromise[SchemaSslCertificateList] = js.native
   def list(
@@ -182,21 +461,83 @@ class ResourceSslcertificates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSslCertificateList]
   ): Unit = js.native
-  
   /**
-    * compute.sslCertificates.testIamPermissions
-    * @desc Returns permissions that a caller has on the specified resource.
-    * @alias compute.sslCertificates.testIamPermissions
-    * @memberOf! ()
+    * Retrieves the list of SslCertificate resources available to the specified project.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.resource_ Name or id of the resource for this request.
-    * @param {().TestPermissionsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.sslCertificates.list({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceSslcertificatesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceSslcertificatesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
   def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
@@ -207,13 +548,84 @@ class ResourceSslcertificates protected () extends StObject {
   ): Unit = js.native
   def testIamPermissions(
     params: ParamsResourceSslcertificatesTestiampermissions,
-    options: BodyResponseCallback[SchemaTestPermissionsResponse],
-    callback: BodyResponseCallback[SchemaTestPermissionsResponse]
+    options: BodyResponseCallback[Readable | SchemaTestPermissionsResponse],
+    callback: BodyResponseCallback[Readable | SchemaTestPermissionsResponse]
   ): Unit = js.native
   def testIamPermissions(params: ParamsResourceSslcertificatesTestiampermissions, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceSslcertificatesTestiampermissions,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
+  ): Unit = js.native
+  /**
+    * Returns permissions that a caller has on the specified resource.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.sslCertificates.testIamPermissions({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name or id of the resource for this request.
+    *     resource: '[a-z](?:[-a-z0-9_]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "permissions": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "permissions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def testIamPermissions(params: ParamsResourceSslcertificatesTestiampermissions, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def testIamPermissions(
+    params: ParamsResourceSslcertificatesTestiampermissions,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

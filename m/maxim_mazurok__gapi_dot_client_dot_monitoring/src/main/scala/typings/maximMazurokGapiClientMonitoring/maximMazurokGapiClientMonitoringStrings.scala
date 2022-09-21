@@ -27,6 +27,10 @@ object maximMazurokGapiClientMonitoringStrings {
   inline def HttpCheck: HttpCheck = "HttpCheck".asInstanceOf[HttpCheck]
   
   @js.native
+  sealed trait LogMatch extends StObject
+  inline def LogMatch: LogMatch = "LogMatch".asInstanceOf[LogMatch]
+  
+  @js.native
   sealed trait Metric extends StObject
   inline def Metric: Metric = "Metric".asInstanceOf[Metric]
   
@@ -47,8 +51,20 @@ object maximMazurokGapiClientMonitoringStrings {
   inline def Option: Option = "Option".asInstanceOf[Option]
   
   @js.native
+  sealed trait Service extends StObject
+  inline def Service: Service = "Service".asInstanceOf[Service]
+  
+  @js.native
+  sealed trait ServiceLevelObjective extends StObject
+  inline def ServiceLevelObjective: ServiceLevelObjective = "ServiceLevelObjective".asInstanceOf[ServiceLevelObjective]
+  
+  @js.native
   sealed trait Status extends StObject
   inline def Status: Status = "Status".asInstanceOf[Status]
+  
+  @js.native
+  sealed trait UptimeCheckConfig extends StObject
+  inline def UptimeCheckConfig: UptimeCheckConfig = "UptimeCheckConfig".asInstanceOf[UptimeCheckConfig]
   
   @js.native
   sealed trait monitoring extends StObject

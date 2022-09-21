@@ -8,5 +8,5 @@ object enhancedMonitoringListMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/_EnhancedMonitoringList", "_EnhancedMonitoringList")
   @js.native
-  val EnhancedMonitoringList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val EnhancedMonitoringList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Exception extends StObject {
   
-  var exception: js.UndefOr[js.Any] = js.undefined
+  var exception: js.UndefOr[Any] = js.undefined
   
   var message: js.UndefOr[String] = js.undefined
 }
@@ -19,7 +19,7 @@ object Exception {
   
   extension [Self <: Exception](x: Self) {
     
-    inline def setException(value: js.Any): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    inline def setException(value: Any): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     

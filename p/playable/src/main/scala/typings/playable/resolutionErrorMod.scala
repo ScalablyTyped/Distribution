@@ -8,7 +8,7 @@ object resolutionErrorMod {
   
   @JSImport("playable/dist/src/core/dependency-container/errors/ResolutionError", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.playable.extendableErrorMod.default {
     def this(name: String, resolutionStack: js.Array[String]) = this()
     def this(name: String, resolutionStack: js.Array[String], message: String) = this()

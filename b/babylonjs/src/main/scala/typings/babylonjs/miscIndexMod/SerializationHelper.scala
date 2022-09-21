@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Misc/index", "SerializationHelper")
 @js.native
-class SerializationHelper ()
+open class SerializationHelper ()
   extends typings.babylonjs.decoratorsMod.SerializationHelper
 /* static members */
 object SerializationHelper {
@@ -23,11 +23,19 @@ object SerializationHelper {
   val ^ : js.Any = js.native
   
   /**
+    * Gets or sets a boolean to indicate if the UniqueId property should be serialized
+    */
+  @JSImport("babylonjs/Misc/index", "SerializationHelper.AllowLoadingUniqueId")
+  @js.native
+  def AllowLoadingUniqueId: Boolean = js.native
+  inline def AllowLoadingUniqueId_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllowLoadingUniqueId")(x.asInstanceOf[js.Any])
+  
+  /**
     * Appends the serialized animations from the source animations
     * @param source Source containing the animations
     * @param destination Target to store the animations
     */
-  inline def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendSerializedAnimations")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AppendSerializedAnimations(source: IAnimatable, destination: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendSerializedAnimations")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Clones an object
@@ -53,32 +61,41 @@ object SerializationHelper {
     * @param rootUrl defines the root url for resources
     * @returns a new entity
     */
-  inline def Parse[T](creationFunction: js.Function0[T], source: js.Any, scene: Nullable[Scene]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def Parse[T](
-    creationFunction: js.Function0[T],
-    source: js.Any,
-    scene: Nullable[Scene],
-    rootUrl: Nullable[String]
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def Parse[T](creationFunction: js.Function0[T], source: Any, scene: Nullable[Scene]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def Parse[T](creationFunction: js.Function0[T], source: Any, scene: Nullable[Scene], rootUrl: Nullable[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Static function used to serialized a specific entity
     * @param entity defines the entity to serialize
-    * @param serializationObject defines the optional target obecjt where serialization data will be stored
+    * @param serializationObject defines the optional target object where serialization data will be stored
     * @returns a JSON compatible object representing the serialization of the entity
     */
-  inline def Serialize[T](entity: T): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Serialize")(entity.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def Serialize[T](entity: T, serializationObject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Serialize")(entity.asInstanceOf[js.Any], serializationObject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def Serialize[T](entity: T): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Serialize")(entity.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def Serialize[T](entity: T, serializationObject: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Serialize")(entity.asInstanceOf[js.Any], serializationObject.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  /** @hidden */
-  inline def _ColorCurvesParser(sourceProperty: js.Any): ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("_ColorCurvesParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[ColorCurves]
+  /**
+    * @param sourceProperty
+    * @hidden
+    */
+  inline def _ColorCurvesParser(sourceProperty: Any): ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("_ColorCurvesParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[ColorCurves]
   
-  /** @hidden */
-  inline def _FresnelParametersParser(sourceProperty: js.Any): FresnelParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("_FresnelParametersParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[FresnelParameters]
+  /**
+    * @param sourceProperty
+    * @hidden
+    */
+  inline def _FresnelParametersParser(sourceProperty: Any): FresnelParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("_FresnelParametersParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[FresnelParameters]
   
-  /** @hidden */
-  inline def _ImageProcessingConfigurationParser(sourceProperty: js.Any): ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("_ImageProcessingConfigurationParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[ImageProcessingConfiguration]
+  /**
+    * @param sourceProperty
+    * @hidden
+    */
+  inline def _ImageProcessingConfigurationParser(sourceProperty: Any): ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("_ImageProcessingConfigurationParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[ImageProcessingConfiguration]
   
-  /** @hidden */
-  inline def _TextureParser(sourceProperty: js.Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("_TextureParser")(sourceProperty.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BaseTexture]]
+  /**
+    * @param sourceProperty
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
+  inline def _TextureParser(sourceProperty: Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("_TextureParser")(sourceProperty.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BaseTexture]]
 }

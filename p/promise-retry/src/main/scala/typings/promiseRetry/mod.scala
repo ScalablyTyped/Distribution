@@ -32,7 +32,7 @@ object mod {
     * @returns A Promise for anything (eg. a HTTP response).
     */
   type RetryableFn[ResolutionType] = js.Function2[
-    /* retry */ js.Function1[/* error */ js.Any, scala.Nothing], 
+    /* retry */ js.Function1[/* error */ Any, scala.Nothing], 
     /* attempt */ Double, 
     js.Promise[ResolutionType]
   ]

@@ -1,5 +1,6 @@
 package typings.materialMenu
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialList.componentMod.MDCListFactory
 import typings.materialList.typesMod.MDCListIndex
@@ -8,7 +9,6 @@ import typings.materialMenu.constantsMod.DefaultFocusState
 import typings.materialMenu.foundationMod.MDCMenuFoundation
 import typings.materialMenuSurface.componentMod.MDCMenuSurfaceFactory
 import typings.materialMenuSurface.constantsMod.Corner
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,20 +17,26 @@ object componentMod {
   
   @JSImport("@material/menu/component", "MDCMenu")
   @js.native
-  class MDCMenu protected () extends MDCComponent[MDCMenuFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCMenuFoundation, args: js.Any*) = this()
+  open class MDCMenu protected () extends MDCComponent[MDCMenuFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCMenuFoundation, args: Any*) = this()
     
     /**
       * @return The item within the menu at the index specified.
       */
-    def getOptionByIndex(index: Double): Element | Null = js.native
+    def getOptionByIndex(index: Double): typings.std.Element | Null = js.native
     
     /**
       * @param index A menu item's index.
       * @return The primary text within the menu at the index specified.
       */
     def getPrimaryTextAtIndex(index: Double): String = js.native
+    
+    /* private */ var handleItemAction: Any = js.native
+    
+    /* private */ var handleKeydown: Any = js.native
+    
+    /* private */ var handleMenuSurfaceOpened: Any = js.native
     
     /**
       * Sets whether the menu has typeahead functionality.
@@ -48,13 +54,21 @@ object componentMod {
       * the items container that are proper list items, and not supplemental / presentational DOM
       * elements.
       */
-    def items: js.Array[Element] = js.native
+    def items: js.Array[typings.std.Element] = js.native
     
     /**
       * Layout the underlying list element in the case of any dynamic updates
       * to its structure.
       */
     def layout(): Unit = js.native
+    
+    /* private */ var list: Any = js.native
+    
+    /* private */ var listFactory: Any = js.native
+    
+    /* private */ var menuSurface: Any = js.native
+    
+    /* private */ var menuSurfaceFactory: Any = js.native
     
     def open: Boolean = js.native
     def open_=(value: Boolean): Unit = js.native
@@ -84,7 +98,7 @@ object componentMod {
     /**
       * Sets the element that the menu-surface is anchored to.
       */
-    def setAnchorElement(element: Element): Unit = js.native
+    def setAnchorElement(element: typings.std.Element): Unit = js.native
     
     def setAnchorMargin(margin: PartialMDCMenuDistance): Unit = js.native
     
@@ -152,8 +166,12 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCMenu]
+    inline def attachTo(root: typings.std.Element): MDCMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCMenu]
   }
   
-  type MDCMenuFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCMenuFoundation], MDCMenu]
+  type MDCMenuFactory = js.Function2[
+    /* el */ typings.std.Element, 
+    /* foundation */ js.UndefOr[MDCMenuFoundation], 
+    MDCMenu
+  ]
 }

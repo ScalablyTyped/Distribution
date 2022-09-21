@@ -25,7 +25,7 @@ object Document {
     
     inline def setDefinitions(value: js.Array[Definition]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
-    inline def setDefinitionsVarargs(value: Definition*): Self = StObject.set(x, "definitions", js.Array(value :_*))
+    inline def setDefinitionsVarargs(value: Definition*): Self = StObject.set(x, "definitions", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

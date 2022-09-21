@@ -67,7 +67,7 @@ trait EmbeddedBarChartBuilder extends StObject {
   
   def setNumHeaders(headers: Integer): EmbeddedChartBuilder
   
-  def setOption(option: String, value: js.Any): EmbeddedChartBuilder
+  def setOption(option: String, value: Any): EmbeddedChartBuilder
   
   def setPosition(anchorRowPos: Integer, anchorColPos: Integer, offsetX: Integer, offsetY: Integer): EmbeddedChartBuilder
   
@@ -124,7 +124,7 @@ object EmbeddedBarChartBuilder {
     setLegendTextStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle => EmbeddedBarChartBuilder,
     setMergeStrategy: ChartMergeStrategy => EmbeddedChartBuilder,
     setNumHeaders: Integer => EmbeddedChartBuilder,
-    setOption: (String, js.Any) => EmbeddedChartBuilder,
+    setOption: (String, Any) => EmbeddedChartBuilder,
     setPosition: (Integer, Integer, Integer, Integer) => EmbeddedChartBuilder,
     setRange: (Double, Double) => EmbeddedBarChartBuilder,
     setStacked: () => EmbeddedBarChartBuilder,
@@ -197,7 +197,7 @@ object EmbeddedBarChartBuilder {
     
     inline def setSetNumHeaders(value: Integer => EmbeddedChartBuilder): Self = StObject.set(x, "setNumHeaders", js.Any.fromFunction1(value))
     
-    inline def setSetOption(value: (String, js.Any) => EmbeddedChartBuilder): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
+    inline def setSetOption(value: (String, Any) => EmbeddedChartBuilder): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
     
     inline def setSetPosition(value: (Integer, Integer, Integer, Integer) => EmbeddedChartBuilder): Self = StObject.set(x, "setPosition", js.Any.fromFunction4(value))
     

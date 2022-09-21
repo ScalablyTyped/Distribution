@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Constructor[T /* <: ClientOptions */] extends StObject {
   
-  var constructor: EnginePrototype[js.Any]
+  var constructor: EnginePrototype[Any]
   
   var options: js.UndefOr[T] = js.undefined
 }
 object Constructor {
   
-  inline def apply[T /* <: ClientOptions */](constructor: EnginePrototype[js.Any]): Constructor[T] = {
+  inline def apply[T /* <: ClientOptions */](constructor: EnginePrototype[Any]): Constructor[T] = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constructor[T]]
   }
   
   extension [Self <: Constructor[?], T /* <: ClientOptions */](x: Self & Constructor[T]) {
     
-    inline def setConstructor(value: EnginePrototype[js.Any]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: EnginePrototype[Any]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     inline def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

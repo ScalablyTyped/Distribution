@@ -11,28 +11,12 @@ object semanticUiSearchStrings {
   inline def `add results`: `add results` = ("add results").asInstanceOf[`add results`]
   
   @js.native
-  sealed trait apiSettings extends StObject
-  inline def apiSettings: apiSettings = "apiSettings".asInstanceOf[apiSettings]
-  
-  @js.native
-  sealed trait cache extends StObject
-  inline def cache: cache = "cache".asInstanceOf[cache]
-  
-  @js.native
   sealed trait `cancel query` extends StObject
   inline def `cancel query`: `cancel query` = ("cancel query").asInstanceOf[`cancel query`]
   
   @js.native
-  sealed trait className extends StObject
-  inline def className: className = "className".asInstanceOf[className]
-  
-  @js.native
   sealed trait `clear cache` extends StObject
   inline def `clear cache`: `clear cache` = ("clear cache").asInstanceOf[`clear cache`]
-  
-  @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait destroy extends StObject
@@ -41,22 +25,6 @@ object semanticUiSearchStrings {
   @js.native
   sealed trait `display message` extends StObject
   inline def `display message`: `display message` = ("display message").asInstanceOf[`display message`]
-  
-  @js.native
-  sealed trait duration extends StObject
-  inline def duration: duration = "duration".asInstanceOf[duration]
-  
-  @js.native
-  sealed trait easing extends StObject
-  inline def easing: easing = "easing".asInstanceOf[easing]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
-  
-  @js.native
-  sealed trait fields extends StObject
-  inline def fields: fields = "fields".asInstanceOf[fields]
   
   @js.native
   sealed trait `generate results` extends StObject
@@ -79,10 +47,6 @@ object semanticUiSearchStrings {
   inline def `hide results`: `hide results` = ("hide results").asInstanceOf[`hide results`]
   
   @js.native
-  sealed trait hideDelay extends StObject
-  inline def hideDelay: hideDelay = "hideDelay".asInstanceOf[hideDelay]
-  
-  @js.native
   sealed trait `is empty` extends StObject
   inline def `is empty`: `is empty` = ("is empty").asInstanceOf[`is empty`]
   
@@ -95,64 +59,12 @@ object semanticUiSearchStrings {
   inline def `is visible`: `is visible` = ("is visible").asInstanceOf[`is visible`]
   
   @js.native
-  sealed trait maxResults extends StObject
-  inline def maxResults: maxResults = "maxResults".asInstanceOf[maxResults]
-  
-  @js.native
-  sealed trait metadata extends StObject
-  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
-  
-  @js.native
-  sealed trait minCharacters extends StObject
-  inline def minCharacters: minCharacters = "minCharacters".asInstanceOf[minCharacters]
-  
-  @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
-  
-  @js.native
-  sealed trait namespace extends StObject
-  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
-  
-  @js.native
-  sealed trait onResults extends StObject
-  inline def onResults: onResults = "onResults".asInstanceOf[onResults]
-  
-  @js.native
-  sealed trait onResultsAdd extends StObject
-  inline def onResultsAdd: onResultsAdd = "onResultsAdd".asInstanceOf[onResultsAdd]
-  
-  @js.native
-  sealed trait onResultsClose extends StObject
-  inline def onResultsClose: onResultsClose = "onResultsClose".asInstanceOf[onResultsClose]
-  
-  @js.native
-  sealed trait onResultsOpen extends StObject
-  inline def onResultsOpen: onResultsOpen = "onResultsOpen".asInstanceOf[onResultsOpen]
-  
-  @js.native
-  sealed trait onSearchQuery extends StObject
-  inline def onSearchQuery: onSearchQuery = "onSearchQuery".asInstanceOf[onSearchQuery]
-  
-  @js.native
-  sealed trait onSelect extends StObject
-  inline def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
-  
-  @js.native
-  sealed trait performance extends StObject
-  inline def performance: performance = "performance".asInstanceOf[performance]
-  
-  @js.native
   sealed trait query extends StObject
   inline def query: query = "query".asInstanceOf[query]
   
   @js.native
   sealed trait `read cache` extends StObject
   inline def `read cache`: `read cache` = ("read cache").asInstanceOf[`read cache`]
-  
-  @js.native
-  sealed trait regExp extends StObject
-  inline def regExp: regExp = "regExp".asInstanceOf[regExp]
   
   @js.native
   sealed trait `search local` extends StObject
@@ -167,26 +79,6 @@ object semanticUiSearchStrings {
   inline def `search remote`: `search remote` = ("search remote").asInstanceOf[`search remote`]
   
   @js.native
-  sealed trait searchDelay extends StObject
-  inline def searchDelay: searchDelay = "searchDelay".asInstanceOf[searchDelay]
-  
-  @js.native
-  sealed trait searchFields extends StObject
-  inline def searchFields: searchFields = "searchFields".asInstanceOf[searchFields]
-  
-  @js.native
-  sealed trait searchFullText extends StObject
-  inline def searchFullText: searchFullText = "searchFullText".asInstanceOf[searchFullText]
-  
-  @js.native
-  sealed trait selectFirstResult extends StObject
-  inline def selectFirstResult: selectFirstResult = "selectFirstResult".asInstanceOf[selectFirstResult]
-  
-  @js.native
-  sealed trait selector extends StObject
-  inline def selector: selector = "selector".asInstanceOf[selector]
-  
-  @js.native
   sealed trait `set value` extends StObject
   inline def `set value`: `set value` = ("set value").asInstanceOf[`set value`]
   
@@ -197,34 +89,6 @@ object semanticUiSearchStrings {
   @js.native
   sealed trait `show results` extends StObject
   inline def `show results`: `show results` = ("show results").asInstanceOf[`show results`]
-  
-  @js.native
-  sealed trait showNoResults extends StObject
-  inline def showNoResults: showNoResults = "showNoResults".asInstanceOf[showNoResults]
-  
-  @js.native
-  sealed trait silent extends StObject
-  inline def silent: silent = "silent".asInstanceOf[silent]
-  
-  @js.native
-  sealed trait source extends StObject
-  inline def source: source = "source".asInstanceOf[source]
-  
-  @js.native
-  sealed trait templates extends StObject
-  inline def templates: templates = "templates".asInstanceOf[templates]
-  
-  @js.native
-  sealed trait transition extends StObject
-  inline def transition: transition = "transition".asInstanceOf[transition]
-  
-  @js.native
-  sealed trait `type` extends StObject
-  inline def `type`: `type` = "type".asInstanceOf[`type`]
-  
-  @js.native
-  sealed trait verbose extends StObject
-  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
   
   @js.native
   sealed trait `write cache` extends StObject

@@ -1,7 +1,7 @@
 
 # Scala.js typings for url-assembler
 
-Typings are for version 1.2
+Typings are for version 2.1
 
 ## Library description:
 Assemble urls from route-like templates (/path/:param)
@@ -10,10 +10,10 @@ Assemble urls from route-like templates (/path/:param)
 | ------------------ | :-------------: |
 | Full name          | url-assembler |
 | Keywords           | url, builder, urlBuilder, url-builder, template, assemble, assembler, route, routing, parameters, query-builder, query |
-| # releases         | 4 |
-| # dependents       | 17 |
-| # downloads        | 140149 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 14977.0 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/Floby/node-url-assembler)

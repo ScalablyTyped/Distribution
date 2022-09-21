@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("TerminalRenderer")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.markedTerminal.mod.^ {
       def this(options: TerminalRendererOptions) = this()
     }

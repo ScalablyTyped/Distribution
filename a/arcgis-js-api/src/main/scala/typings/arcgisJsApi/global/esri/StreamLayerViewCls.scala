@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html)
   */
-class StreamLayerViewCls ()
+open class StreamLayerViewCls ()
   extends StObject
      with typings.arcgisJsApi.esri.StreamLayerView {
   def this(properties: StreamLayerViewProperties) = this()

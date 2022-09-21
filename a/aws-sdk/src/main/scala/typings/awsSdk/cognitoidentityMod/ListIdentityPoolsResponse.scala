@@ -29,7 +29,7 @@ object ListIdentityPoolsResponse {
     
     inline def setIdentityPoolsUndefined: Self = StObject.set(x, "IdentityPools", js.undefined)
     
-    inline def setIdentityPoolsVarargs(value: IdentityPoolShortDescription*): Self = StObject.set(x, "IdentityPools", js.Array(value :_*))
+    inline def setIdentityPoolsVarargs(value: IdentityPoolShortDescription*): Self = StObject.set(x, "IdentityPools", js.Array(value*))
     
     inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

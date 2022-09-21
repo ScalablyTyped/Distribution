@@ -9,7 +9,7 @@ trait BalloonCheckboxes extends StObject {
   
   def apply(Index: Double): BalloonCheckbox = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   var Count: Double = js.native
   
@@ -19,5 +19,5 @@ trait BalloonCheckboxes extends StObject {
   
   val Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

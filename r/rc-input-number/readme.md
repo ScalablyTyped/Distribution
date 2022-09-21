@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-input-number
 
-Typings are for version 6.1.1
+Typings are for version 7.3.9
 
 ## Library description:
 React input-number component
@@ -10,10 +10,10 @@ React input-number component
 | ------------------ | :-------------: |
 | Full name          | rc-input-number |
 | Keywords           | react, react-component, react-input-number, input-number |
-| # releases         | 33 |
-| # dependents       | 267 |
-| # downloads        | 24909212 |
-| # stars            | 1 |
+| # releases         | 39 |
+| # dependents       | 0.0 |
+| # downloads        | 3753238.6666666665 |
+| # stars            | 272.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/input-number)

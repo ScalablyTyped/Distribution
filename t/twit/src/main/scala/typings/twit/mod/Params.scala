@@ -1,6 +1,6 @@
 package typings.twit.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.twit.anon.Text
 import typings.twit.mod.Twitter.ResultType
 import typings.twit.twitStrings.`private`
@@ -172,7 +172,7 @@ object Params {
     
     inline def setExclude_reply_user_idsUndefined: Self = StObject.set(x, "exclude_reply_user_ids", js.undefined)
     
-    inline def setExclude_reply_user_idsVarargs(value: String*): Self = StObject.set(x, "exclude_reply_user_ids", js.Array(value :_*))
+    inline def setExclude_reply_user_idsVarargs(value: String*): Self = StObject.set(x, "exclude_reply_user_ids", js.Array(value*))
     
     inline def setFail_dmcommands(value: Boolean): Self = StObject.set(x, "fail_dmcommands", value.asInstanceOf[js.Any])
     
@@ -182,7 +182,7 @@ object Params {
     
     inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
-    inline def setFollowVarargs(value: String*): Self = StObject.set(x, "follow", js.Array(value :_*))
+    inline def setFollowVarargs(value: String*): Self = StObject.set(x, "follow", js.Array(value*))
     
     inline def setGeocode(value: String): Self = StObject.set(x, "geocode", value.asInstanceOf[js.Any])
     
@@ -248,7 +248,7 @@ object Params {
     
     inline def setMedia_idsUndefined: Self = StObject.set(x, "media_ids", js.undefined)
     
-    inline def setMedia_idsVarargs(value: String*): Self = StObject.set(x, "media_ids", js.Array(value :_*))
+    inline def setMedia_idsVarargs(value: String*): Self = StObject.set(x, "media_ids", js.Array(value*))
     
     inline def setMode(value: public | `private`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
@@ -326,7 +326,7 @@ object Params {
     
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
-    inline def setTrackVarargs(value: String*): Self = StObject.set(x, "track", js.Array(value :_*))
+    inline def setTrackVarargs(value: String*): Self = StObject.set(x, "track", js.Array(value*))
     
     inline def setTrim_user(value: Boolean): Self = StObject.set(x, "trim_user", value.asInstanceOf[js.Any])
     

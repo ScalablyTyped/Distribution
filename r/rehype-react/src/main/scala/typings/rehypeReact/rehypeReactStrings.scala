@@ -23,6 +23,14 @@ object rehypeReactStrings {
   inline def animate: animate = "animate".asInstanceOf[animate]
   
   @js.native
+  sealed trait animateMotion extends StObject
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
+  sealed trait animateTransform extends StObject
+  inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
+  
+  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
@@ -439,8 +447,16 @@ object rehypeReactStrings {
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
+  sealed trait mpath extends StObject
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
   sealed trait nav extends StObject
   inline def nav: nav = "nav".asInstanceOf[nav]
+  
+  @js.native
+  sealed trait noindex extends StObject
+  inline def noindex: noindex = "noindex".asInstanceOf[noindex]
   
   @js.native
   sealed trait noscript extends StObject

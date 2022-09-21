@@ -11,12 +11,10 @@ object wellMod {
   
   @JSImport("react-bootstrap/lib/Well", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[WellProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[WellProps, js.Object, Any]
   
-  @js.native
-  trait Well
-    extends Component[WellProps, js.Object, js.Any]
+  type Well = Component[WellProps, js.Object, Any]
   
   trait WellProps
     extends StObject

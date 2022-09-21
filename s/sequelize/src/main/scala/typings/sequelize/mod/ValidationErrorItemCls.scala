@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("sequelize", "ValidationErrorItem")
 @js.native
-class ValidationErrorItemCls protected ()
+open class ValidationErrorItemCls protected ()
   extends StObject
      with ValidationErrorItem {
   /**
@@ -21,9 +21,11 @@ class ValidationErrorItemCls protected ()
     */
   def this(message: String, `type`: String, path: String, value: String) = this()
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }

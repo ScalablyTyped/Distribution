@@ -2,8 +2,8 @@ package typings.dkimSigner
 
 import typings.dkimSigner.anon.FieldNames
 import typings.dkimSigner.anon.Key
-import typings.node.Buffer
-import typings.node.cryptoMod.HexBase64Latin1Encoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.cryptoMod.BinaryToTextEncoding
 import typings.node.cryptoMod.KeyLike
 import typings.node.cryptoMod.SignPrivateKeyInput
 import org.scalablytyped.runtime.StObject
@@ -42,7 +42,7 @@ object mod {
   inline def generateDKIMHeader(domainName: String, keySelector: String, headerFieldNames: String, headers: String, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDKIMHeader")(domainName.asInstanceOf[js.Any], keySelector.asInstanceOf[js.Any], headerFieldNames.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def sha256(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def sha256(str: String, encoding: HexBase64Latin1Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sha256(str: String, encoding: BinaryToTextEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait DKIMSignOptions extends StObject {
     

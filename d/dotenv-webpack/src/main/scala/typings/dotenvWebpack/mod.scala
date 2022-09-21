@@ -1,5 +1,6 @@
 package typings.dotenvWebpack
 
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,44 +13,35 @@ object mod {
     */
   @JSImport("dotenv-webpack", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with DotenvWebpackPlugin {
     def this(options: Options) = this()
     
     /* CompleteClass */
     @JSName("apply")
-    override def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
   /**
     * A secure webpack plugin that supports dotenv and other environment variables
     * and only exposes what you choose and use.
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackPluginInstance * / any */ trait DotenvWebpackPlugin extends StObject {
+  trait DotenvWebpackPlugin extends StObject {
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit
+    def apply(compiler: Compiler): Unit
   }
   object DotenvWebpackPlugin {
     
-    inline def apply(
-      apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-    ): DotenvWebpackPlugin = {
+    inline def apply(apply: Compiler => Unit): DotenvWebpackPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[DotenvWebpackPlugin]
     }
     
     extension [Self <: DotenvWebpackPlugin](x: Self) {
       
-      inline def setApply(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-      ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
   }
   
@@ -74,6 +66,12 @@ object mod {
       * @default false
       */
     var expand: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Override the automatic check whether to stub `process.env`.
+      * @dfault false
+      */
+    var ignoreStub: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to your environment variables.
@@ -119,6 +117,10 @@ object mod {
       inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
       inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      
+      inline def setIgnoreStub(value: Boolean): Self = StObject.set(x, "ignoreStub", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreStubUndefined: Self = StObject.set(x, "ignoreStub", js.undefined)
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

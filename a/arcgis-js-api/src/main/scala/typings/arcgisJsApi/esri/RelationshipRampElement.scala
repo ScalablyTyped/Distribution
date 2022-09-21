@@ -30,7 +30,7 @@ trait RelationshipRampElement
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
     */
-  var infos: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var infos: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * The labels for each corner of the legend.
@@ -89,15 +89,15 @@ object RelationshipRampElement {
     
     inline def setColors(value: js.Array[js.Array[Color_]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: js.Array[Color_]*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: js.Array[Color_]*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    inline def setInfos(value: js.Array[js.Any]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    inline def setInfos(value: js.Array[Any]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
     inline def setInfosUndefined: Self = StObject.set(x, "infos", js.undefined)
     
-    inline def setInfosVarargs(value: js.Any*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: Any*): Self = StObject.set(x, "infos", js.Array(value*))
     
     inline def setLabels(value: RelationshipLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

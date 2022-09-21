@@ -1,6 +1,5 @@
 package typings.node.cryptoMod
 
-import typings.node.NodeJS.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,9 @@ trait RsaPrivateKey extends StObject {
     */
   var oaepHash: js.UndefOr[String] = js.undefined
   
-  var oaepLabel: js.UndefOr[TypedArray] = js.undefined
+  var oaepLabel: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any
+  ] = js.undefined
   
   var padding: js.UndefOr[Double] = js.undefined
   
@@ -35,7 +36,9 @@ object RsaPrivateKey {
     
     inline def setOaepHashUndefined: Self = StObject.set(x, "oaepHash", js.undefined)
     
-    inline def setOaepLabel(value: TypedArray): Self = StObject.set(x, "oaepLabel", value.asInstanceOf[js.Any])
+    inline def setOaepLabel(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any
+    ): Self = StObject.set(x, "oaepLabel", value.asInstanceOf[js.Any])
     
     inline def setOaepLabelUndefined: Self = StObject.set(x, "oaepLabel", js.undefined)
     

@@ -55,13 +55,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var expand: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Object) */
-  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
+  var fieldDefaults: js.UndefOr[Any] = js.undefined
   
   /** [Method] The supplied default state gathering method for the AbstractComponent class
     * @returns Object
     */
   @JSName("getState")
-  var getState_IFieldSet: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getState_IFieldSet: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
   var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -150,11 +150,11 @@ object IFieldSet {
     
     inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    inline def setFieldDefaults(value: js.Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
+    inline def setFieldDefaults(value: Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
     
     inline def setFieldDefaultsUndefined: Self = StObject.set(x, "fieldDefaults", js.undefined)
     
-    inline def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     inline def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     

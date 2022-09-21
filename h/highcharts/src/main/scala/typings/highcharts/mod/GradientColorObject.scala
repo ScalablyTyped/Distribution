@@ -46,6 +46,6 @@ object GradientColorObject {
     
     inline def setStops(value: js.Array[GradientColorStopObject]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    inline def setStopsVarargs(value: GradientColorStopObject*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: GradientColorStopObject*): Self = StObject.set(x, "stops", js.Array(value*))
   }
 }

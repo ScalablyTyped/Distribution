@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientPubsub.anon
 
-import typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.PublishRequest
+import typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.PullRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,10 +36,10 @@ trait FieldsKey extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: PublishRequest
+  var resource: PullRequest
   
-  /** Required. The messages in the request will be published on this topic. Format is `projects/{project}/topics/{topic}`. */
-  var topic: String
+  /** Required. The subscription from which messages should be pulled. Format is `projects/{project}/subscriptions/{sub}`. */
+  var subscription: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +49,8 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(resource: PublishRequest, topic: String): FieldsKey = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
+  inline def apply(resource: PullRequest, subscription: String): FieldsKey = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
   
@@ -92,9 +92,9 @@ object FieldsKey {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: PublishRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: PullRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

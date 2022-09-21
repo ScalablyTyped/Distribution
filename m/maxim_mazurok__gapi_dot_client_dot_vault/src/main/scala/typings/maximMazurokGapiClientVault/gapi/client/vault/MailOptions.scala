@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MailOptions extends StObject {
   
-  /** Set to true to exclude drafts. */
+  /** Set to **true** to exclude drafts. */
   var excludeDrafts: js.UndefOr[Boolean] = js.undefined
 }
 object MailOptions {

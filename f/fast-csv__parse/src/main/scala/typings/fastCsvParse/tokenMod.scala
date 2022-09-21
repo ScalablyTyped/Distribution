@@ -9,7 +9,7 @@ object tokenMod {
   
   @JSImport("@fast-csv/parse/build/src/parser/Token", "Token")
   @js.native
-  class Token protected () extends StObject {
+  open class Token protected () extends StObject {
     def this(tokenArgs: TokenArgs) = this()
     
     val endCursor: Double = js.native

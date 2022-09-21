@@ -9,9 +9,9 @@ trait UncaughtPromiseError
   extends StObject
      with Error {
   
-  var promise: js.Promise[js.Any]
+  var promise: js.Promise[Any]
   
-  var rejection: js.Any
+  var rejection: Any
   
   var task: Task
   
@@ -21,23 +21,16 @@ trait UncaughtPromiseError
 }
 object UncaughtPromiseError {
   
-  inline def apply(
-    message: String,
-    name: String,
-    promise: js.Promise[js.Any],
-    rejection: js.Any,
-    task: Task,
-    zone: Zone
-  ): UncaughtPromiseError = {
+  inline def apply(message: String, name: String, promise: js.Promise[Any], rejection: Any, task: Task, zone: Zone): UncaughtPromiseError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], rejection = rejection.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncaughtPromiseError]
   }
   
   extension [Self <: UncaughtPromiseError](x: Self) {
     
-    inline def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    inline def setRejection(value: js.Any): Self = StObject.set(x, "rejection", value.asInstanceOf[js.Any])
+    inline def setRejection(value: Any): Self = StObject.set(x, "rejection", value.asInstanceOf[js.Any])
     
     inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ trait GetShardIteratorInput extends StObject {
   /**
     * The time stamp of the data record from which to start reading. Used with shard iterator type AT_TIMESTAMP. A time stamp is the Unix epoch date with precision in milliseconds. For example, 2016-04-04T19:58:46.480-00:00 or 1459799926.480. If a record with this exact time stamp does not exist, the iterator returned is for the next (later) record. If the time stamp is older than the current trim horizon, the iterator returned is for the oldest untrimmed data record (TRIM_HORIZON).
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.kinesisMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object GetShardIteratorInput {
   
@@ -50,7 +50,7 @@ object GetShardIteratorInput {
     
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

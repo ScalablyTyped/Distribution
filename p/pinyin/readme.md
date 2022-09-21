@@ -1,7 +1,7 @@
 
 # Scala.js typings for pinyin
 
-Typings are for version 2.8
+Typings are for version 2.10
 
 ## Library description:
 汉语拼音转换工具。
@@ -10,13 +10,13 @@ Typings are for version 2.8
 | ------------------ | :-------------: |
 | Full name          | pinyin |
 | Keywords           | 拼音, 汉语, 汉字, 中文, Pinyin |
-| # releases         | 3 |
-| # dependents       | 108 |
-| # downloads        | 858727 |
-| # stars            | 36 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 63165.333333333336 |
+| # stars            | 6480.0 |
 
 ## Links
-- [Homepage](https://github.com/hotoo/pinyin#readme)
+- [Homepage](https://pinyin.js.org/)
 - [Bugs](https://github.com/hotoo/pinyin/issues)
 - [Repository](https://github.com/hotoo/pinyin)
 - [Npm](https://www.npmjs.com/package/pinyin)

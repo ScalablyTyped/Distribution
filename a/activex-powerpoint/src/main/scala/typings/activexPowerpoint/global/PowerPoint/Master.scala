@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Master")
 @js.native
-/* private */ class Master ()
+/* private */ open class Master ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Master {
   
@@ -54,14 +54,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.Master_typekey")
   var PowerPointDotMaster_typekey: typings.activexPowerpoint.PowerPoint.Master = js.native
   
   /* CompleteClass */
-  override def Scripts(Index: js.Any): Script = js.native
+  override def Scripts(Index: Any): Script = js.native
   /* CompleteClass */
   @JSName("Scripts")
   override val Scripts_Original: Scripts = js.native

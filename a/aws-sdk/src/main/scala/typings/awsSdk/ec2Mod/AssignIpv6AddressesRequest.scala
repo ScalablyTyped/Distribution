@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssignIpv6AddressesRequest extends StObject {
   
   /**
-    * The number of IPv6 addresses to assign to the network interface. Amazon EC2 automatically selects the IPv6 addresses from the subnet range. You can't use this option if specifying specific IPv6 addresses.
+    * The number of additional IPv6 addresses to assign to the network interface. The specified number of IPv6 addresses are assigned in addition to the existing IPv6 addresses that are already assigned to the network interface. Amazon EC2 automatically selects the IPv6 addresses from the subnet range. You can't use this option if specifying specific IPv6 addresses.
     */
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   
@@ -15,6 +15,16 @@ trait AssignIpv6AddressesRequest extends StObject {
     * One or more specific IPv6 addresses to be assigned to the network interface. You can't use this option if you're specifying a number of IPv6 addresses.
     */
   var Ipv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
+  
+  /**
+    * The number of IPv6 prefixes that Amazon Web Services automatically assigns to the network interface. You cannot use this option if you use the Ipv6Prefixes option.
+    */
+  var Ipv6PrefixCount: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * One or more IPv6 prefixes assigned to the network interface. You cannot use this option if you use the Ipv6PrefixCount option.
+    */
+  var Ipv6Prefixes: js.UndefOr[IpPrefixList] = js.undefined
   
   /**
     * The ID of the network interface.
@@ -38,7 +48,17 @@ object AssignIpv6AddressesRequest {
     
     inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
     
-    inline def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+    inline def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value*))
+    
+    inline def setIpv6PrefixCount(value: Integer): Self = StObject.set(x, "Ipv6PrefixCount", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6PrefixCountUndefined: Self = StObject.set(x, "Ipv6PrefixCount", js.undefined)
+    
+    inline def setIpv6Prefixes(value: IpPrefixList): Self = StObject.set(x, "Ipv6Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6PrefixesUndefined: Self = StObject.set(x, "Ipv6Prefixes", js.undefined)
+    
+    inline def setIpv6PrefixesVarargs(value: String*): Self = StObject.set(x, "Ipv6Prefixes", js.Array(value*))
     
     inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
   }

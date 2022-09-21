@@ -14,7 +14,7 @@ object cubeTextureLoaderMod {
   
   @JSImport("three/src/loaders/CubeTextureLoader", "CubeTextureLoader")
   @js.native
-  class CubeTextureLoader () extends Loader {
+  open class CubeTextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(urls: js.Array[String]): CubeTexture = js.native

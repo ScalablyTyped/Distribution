@@ -9,6 +9,12 @@ trait LocalVideoStats
      with SentMediaStats
      with VideoStats {
   
+  /** 视频高度 */
+  var frameHeight: Double
+  
+  /** 视频宽度 */
+  var frameWidth: Double
+  
   /** 已编码帧数 */
   var framesEncoded: Double
   
@@ -19,17 +25,23 @@ object LocalVideoStats {
   
   inline def apply(
     bytesSent: Double,
+    frameHeight: Double,
+    frameWidth: Double,
     framesEncoded: Double,
     framesHeight: Double,
     framesSent: Double,
     framesWidth: Double,
     packetsSent: Double
   ): LocalVideoStats = {
-    val __obj = js.Dynamic.literal(bytesSent = bytesSent.asInstanceOf[js.Any], framesEncoded = framesEncoded.asInstanceOf[js.Any], framesHeight = framesHeight.asInstanceOf[js.Any], framesSent = framesSent.asInstanceOf[js.Any], framesWidth = framesWidth.asInstanceOf[js.Any], packetsSent = packetsSent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bytesSent = bytesSent.asInstanceOf[js.Any], frameHeight = frameHeight.asInstanceOf[js.Any], frameWidth = frameWidth.asInstanceOf[js.Any], framesEncoded = framesEncoded.asInstanceOf[js.Any], framesHeight = framesHeight.asInstanceOf[js.Any], framesSent = framesSent.asInstanceOf[js.Any], framesWidth = framesWidth.asInstanceOf[js.Any], packetsSent = packetsSent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalVideoStats]
   }
   
   extension [Self <: LocalVideoStats](x: Self) {
+    
+    inline def setFrameHeight(value: Double): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
+    
+    inline def setFrameWidth(value: Double): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
     
     inline def setFramesEncoded(value: Double): Self = StObject.set(x, "framesEncoded", value.asInstanceOf[js.Any])
     

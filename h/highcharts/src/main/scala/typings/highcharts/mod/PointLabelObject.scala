@@ -54,7 +54,7 @@ trait PointLabelObject extends StObject {
   /**
     * The y value of the point.
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double | Null] = js.undefined
 }
 object PointLabelObject {
   
@@ -90,6 +90,8 @@ object PointLabelObject {
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYNull: Self = StObject.set(x, "y", null)
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }

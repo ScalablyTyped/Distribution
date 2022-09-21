@@ -1,26 +1,35 @@
 package typings.grommet
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.grommet.anon.Actions
+import typings.grommet.anon.AlignSelf
 import typings.grommet.anon.Analog
 import typings.grommet.anon.Animation
 import typings.grommet.anon.AnimationDisabled
 import typings.grommet.anon.Baseline
 import typings.grommet.anon.BodyContainer
+import typings.grommet.anon.Button
 import typings.grommet.anon.Captions
 import typings.grommet.anon.Check
+import typings.grommet.anon.CheckBox
+import typings.grommet.anon.Clear
 import typings.grommet.anon.ColorExtend
 import typings.grommet.anon.Colors
+import typings.grommet.anon.ColumnName
 import typings.grommet.anon.Container
-import typings.grommet.anon.Content
+import typings.grommet.anon.ContainerDisabled
+import typings.grommet.anon.ContainerIcon
+import typings.grommet.anon.ContainerLabel
+import typings.grommet.anon.ContentDrop
 import typings.grommet.anon.Continent
-import typings.grommet.anon.Control
 import typings.grommet.anon.Day
 import typings.grommet.anon.DeepReadonlyThemeType
-import typings.grommet.anon.Default
 import typings.grommet.anon.DisabledExtend
+import typings.grommet.anon.DragOver
+import typings.grommet.anon.Drop
 import typings.grommet.anon.Edge
 import typings.grommet.anon.Extend
 import typings.grommet.anon.FontWeight
-import typings.grommet.anon.Footer
 import typings.grommet.anon.GroupEnd
 import typings.grommet.anon.Header
 import typings.grommet.anon.Hover
@@ -29,18 +38,22 @@ import typings.grommet.anon.Item
 import typings.grommet.anon.Line
 import typings.grommet.anon.MaxHeight
 import typings.grommet.anon.Overlay
-import typings.grommet.anon.Panel
-import typings.grommet.anon.Position
+import typings.grommet.anon.Pair
+import typings.grommet.anon.Parent
+import typings.grommet.anon.Placeholder
 import typings.grommet.anon.ResponsiveBreakpoint
+import typings.grommet.anon.Round
+import typings.grommet.anon.Row
 import typings.grommet.anon.SizeText
-import typings.grommet.anon.Thumb
+import typings.grommet.anon.Sticky
 import typings.grommet.anon.Toggle
+import typings.grommet.anon.Track
 import typings.grommet.anon.Xlarge
-import typings.grommet.anon.Xsmall
-import typings.grommet.anon.`13`
 import typings.grommet.anon.`14`
-import typings.grommet.anon.`22`
-import typings.grommet.anon.`25`
+import typings.grommet.anon.`15`
+import typings.grommet.anon.`2xl`
+import typings.grommet.anon.`30`
+import typings.grommet.baseMod.ButtonType
 import typings.grommet.baseMod.ThemeType
 import typings.grommet.utilsMod.DeepReadonly
 import org.scalablytyped.runtime.StObject
@@ -58,7 +71,7 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.accordion")
     @js.native
-    val accordion: js.UndefOr[Panel | DeepReadonly[js.UndefOr[Panel]]] = js.native
+    val accordion: js.UndefOr[Icons | DeepReadonly[js.UndefOr[Icons]]] = js.native
     
     @JSImport("grommet/themes", "base.anchor")
     @js.native
@@ -74,7 +87,7 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.button")
     @js.native
-    val button: js.UndefOr[Default | DeepReadonly[js.UndefOr[Default]]] = js.native
+    val button: js.UndefOr[ButtonType | DeepReadonly[js.UndefOr[ButtonType]]] = js.native
     
     @JSImport("grommet/themes", "base.calendar")
     @js.native
@@ -96,6 +109,10 @@ object themesMod {
     @js.native
     val checkBox: js.UndefOr[Toggle | DeepReadonly[js.UndefOr[Toggle]]] = js.native
     
+    @JSImport("grommet/themes", "base.checkBoxGroup")
+    @js.native
+    val checkBoxGroup: js.UndefOr[Container | DeepReadonly[js.UndefOr[Container]]] = js.native
+    
     @JSImport("grommet/themes", "base.clock")
     @js.native
     val clock: js.UndefOr[Analog | DeepReadonly[js.UndefOr[Analog]]] = js.native
@@ -110,7 +127,7 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.dateInput")
     @js.native
-    val dateInput: js.UndefOr[`13` | DeepReadonly[js.UndefOr[`13`]]] = js.native
+    val dateInput: js.UndefOr[`14` | DeepReadonly[js.UndefOr[`14`]]] = js.native
     
     @JSImport("grommet/themes", "base.diagram")
     @js.native
@@ -120,9 +137,13 @@ object themesMod {
     @js.native
     val drop: js.UndefOr[MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]]] = js.native
     
+    @JSImport("grommet/themes", "base.fileInput")
+    @js.native
+    val fileInput: js.UndefOr[DragOver | DeepReadonly[js.UndefOr[DragOver]]] = js.native
+    
     @JSImport("grommet/themes", "base.formField")
     @js.native
-    val formField: js.UndefOr[Content | DeepReadonly[js.UndefOr[Content]]] = js.native
+    val formField: js.UndefOr[CheckBox | DeepReadonly[js.UndefOr[CheckBox]]] = js.native
     
     @JSImport("grommet/themes", "base.global")
     @js.native
@@ -130,7 +151,11 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.grommet")
     @js.native
-    val grommet: js.UndefOr[`14` | DeepReadonly[js.UndefOr[`14`]]] = js.native
+    val grommet: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.native
+    
+    @JSImport("grommet/themes", "base.header")
+    @js.native
+    val header: js.UndefOr[Sticky | DeepReadonly[js.UndefOr[Sticky]]] = js.native
     
     @JSImport("grommet/themes", "base.heading")
     @js.native
@@ -138,7 +163,7 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.icon")
     @js.native
-    val icon: js.UndefOr[`25` | DeepReadonly[js.UndefOr[`25`]]] = js.native
+    val icon: js.UndefOr[`30` | DeepReadonly[js.UndefOr[`30`]]] = js.native
     
     @JSImport("grommet/themes", "base.layer")
     @js.native
@@ -150,15 +175,41 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.maskedInput")
     @js.native
-    val maskedInput: js.UndefOr[`22` | DeepReadonly[js.UndefOr[`22`]]] = js.native
+    val maskedInput: js.UndefOr[ContainerDisabled | DeepReadonly[js.UndefOr[ContainerDisabled]]] = js.native
     
     @JSImport("grommet/themes", "base.menu")
     @js.native
-    val menu: js.UndefOr[Icons | DeepReadonly[js.UndefOr[Icons]]] = js.native
+    val menu: js.UndefOr[Drop | DeepReadonly[js.UndefOr[Drop]]] = js.native
     
     @JSImport("grommet/themes", "base.meter")
     @js.native
     val meter: js.UndefOr[Colors | DeepReadonly[js.UndefOr[Colors]]] = js.native
+    
+    @JSImport("grommet/themes", "base.nameValueList")
+    @js.native
+    val nameValueList: js.UndefOr[Pair | DeepReadonly[js.UndefOr[Pair]]] = js.native
+    
+    @JSImport("grommet/themes", "base.nameValuePair")
+    @js.native
+    val nameValuePair: js.UndefOr[ColumnName | DeepReadonly[js.UndefOr[ColumnName]]] = js.native
+    
+    @JSImport("grommet/themes", "base.notification")
+    @js.native
+    val notification: js.UndefOr[Actions | DeepReadonly[js.UndefOr[Actions]]] = js.native
+    
+    @JSImport("grommet/themes", "base.page")
+    @js.native
+    val page: js.UndefOr[
+        StringDictionary[AlignSelf] | DeepReadonly[js.UndefOr[StringDictionary[AlignSelf]]]
+      ] = js.native
+    
+    @JSImport("grommet/themes", "base.pageHeader")
+    @js.native
+    val pageHeader: js.UndefOr[Parent | DeepReadonly[js.UndefOr[Parent]]] = js.native
+    
+    @JSImport("grommet/themes", "base.pagination")
+    @js.native
+    val pagination: js.UndefOr[Button | DeepReadonly[js.UndefOr[Button]]] = js.native
     
     @JSImport("grommet/themes", "base.paragraph")
     @js.native
@@ -174,7 +225,7 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.rangeInput")
     @js.native
-    val rangeInput: js.UndefOr[Thumb | DeepReadonly[js.UndefOr[Thumb]]] = js.native
+    val rangeInput: js.UndefOr[Track | DeepReadonly[js.UndefOr[Track]]] = js.native
     
     @JSImport("grommet/themes", "base.rangeSelector")
     @js.native
@@ -182,11 +233,15 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.select")
     @js.native
-    val select: js.UndefOr[Control | DeepReadonly[js.UndefOr[Control]]] = js.native
+    val select: js.UndefOr[Clear | DeepReadonly[js.UndefOr[Clear]]] = js.native
     
     @JSImport("grommet/themes", "base.skipLinks")
     @js.native
-    val skipLinks: js.UndefOr[Position | DeepReadonly[js.UndefOr[Position]]] = js.native
+    val skipLinks: js.UndefOr[ContainerLabel | DeepReadonly[js.UndefOr[ContainerLabel]]] = js.native
+    
+    @JSImport("grommet/themes", "base.spinner")
+    @js.native
+    val spinner: js.UndefOr[ContainerIcon | DeepReadonly[js.UndefOr[ContainerIcon]]] = js.native
     
     @JSImport("grommet/themes", "base.tab")
     @js.native
@@ -194,15 +249,19 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.table")
     @js.native
-    val table: js.UndefOr[Footer | DeepReadonly[js.UndefOr[Footer]]] = js.native
+    val table: js.UndefOr[Row | DeepReadonly[js.UndefOr[Row]]] = js.native
     
     @JSImport("grommet/themes", "base.tabs")
     @js.native
     val tabs: js.UndefOr[Header | DeepReadonly[js.UndefOr[Header]]] = js.native
     
+    @JSImport("grommet/themes", "base.tag")
+    @js.native
+    val tag: js.UndefOr[Round | DeepReadonly[js.UndefOr[Round]]] = js.native
+    
     @JSImport("grommet/themes", "base.text")
     @js.native
-    val text: js.UndefOr[Xsmall | DeepReadonly[js.UndefOr[Xsmall]]] = js.native
+    val text: js.UndefOr[`2xl` | DeepReadonly[js.UndefOr[`2xl`]]] = js.native
     
     @JSImport("grommet/themes", "base.textArea")
     @js.native
@@ -210,7 +269,11 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.textInput")
     @js.native
-    val textInput: js.UndefOr[DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]] = js.native
+    val textInput: js.UndefOr[Placeholder | DeepReadonly[js.UndefOr[Placeholder]]] = js.native
+    
+    @JSImport("grommet/themes", "base.tip")
+    @js.native
+    val tip: js.UndefOr[ContentDrop | DeepReadonly[js.UndefOr[ContentDrop]]] = js.native
     
     @JSImport("grommet/themes", "base.video")
     @js.native

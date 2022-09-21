@@ -32,7 +32,7 @@ object PipelineObject {
     
     inline def setFields(value: fieldList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

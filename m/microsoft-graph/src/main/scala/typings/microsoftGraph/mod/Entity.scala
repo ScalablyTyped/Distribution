@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Entity extends StObject {
   
-  // Read-only.
   var id: js.UndefOr[String] = js.undefined
 }
 object Entity {

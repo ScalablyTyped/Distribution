@@ -12,7 +12,7 @@ trait IDateColumn
     * @param value Object
     */
   @JSName("defaultRenderer")
-  var defaultRenderer_IDateColumn: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var defaultRenderer_IDateColumn: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var format: js.UndefOr[String] = js.undefined
@@ -26,7 +26,7 @@ object IDateColumn {
   
   extension [Self <: IDateColumn](x: Self) {
     
-    inline def setDefaultRenderer(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "defaultRenderer", js.Any.fromFunction1(value))
+    inline def setDefaultRenderer(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "defaultRenderer", js.Any.fromFunction1(value))
     
     inline def setDefaultRendererUndefined: Self = StObject.set(x, "defaultRenderer", js.undefined)
     

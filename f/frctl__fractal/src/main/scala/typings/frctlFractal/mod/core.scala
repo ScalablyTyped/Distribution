@@ -14,7 +14,7 @@ object core {
   /* was `typeof fractal.api.components.Component` */
   @JSImport("@frctl/fractal", "core.Component")
   @js.native
-  class Component protected ()
+  open class Component protected ()
     extends typings.frctlFractal.mod.fractal.api.components.Component {
     def this(config: js.Object, files: FileCollection, resources: AssetCollection, parent: Entity) = this()
   }
@@ -36,9 +36,9 @@ object core {
   /* was `typeof fractal.api.docs.Doc` */
   @JSImport("@frctl/fractal", "core.Doc")
   @js.native
-  class Doc protected ()
+  open class Doc protected ()
     extends typings.frctlFractal.mod.fractal.api.docs.Doc {
-    def this(config: js.Any, content: String, parent: Entity) = this()
+    def this(config: Any, content: String, parent: Entity) = this()
   }
   /* was `typeof fractal.api.docs.Doc` */
   object Doc {
@@ -48,17 +48,17 @@ object core {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def create(config: js.Any, content: String, parent: Entity): typings.frctlFractal.mod.fractal.api.docs.Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], content.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.frctlFractal.mod.fractal.api.docs.Doc]
+    inline def create(config: Any, content: String, parent: Entity): typings.frctlFractal.mod.fractal.api.docs.Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], content.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.frctlFractal.mod.fractal.api.docs.Doc]
   }
   
   /* was `typeof fractal.api.variants.Variant` */
   @JSImport("@frctl/fractal", "core.Variant")
   @js.native
-  class Variant protected ()
+  open class Variant protected ()
     extends typings.frctlFractal.mod.fractal.api.variants.Variant {
     def this(
       config: js.Object,
-      view: js.Any,
+      view: Any,
       resources: AssetCollection,
       parent: typings.frctlFractal.mod.fractal.api.components.Component
     ) = this()
@@ -73,7 +73,7 @@ object core {
     /* static member */
     inline def create(
       config: js.Object,
-      view: js.Any,
+      view: Any,
       resources: AssetCollection,
       parent: typings.frctlFractal.mod.fractal.api.components.Component
     ): typings.frctlFractal.mod.fractal.api.variants.Variant = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], view.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.frctlFractal.mod.fractal.api.variants.Variant]

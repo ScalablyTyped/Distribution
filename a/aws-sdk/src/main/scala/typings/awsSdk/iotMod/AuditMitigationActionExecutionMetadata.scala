@@ -19,7 +19,7 @@ trait AuditMitigationActionExecutionMetadata extends StObject {
   /**
     * The date and time when the task was completed or canceled. Blank if the task is still running.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If an error occurred, the code that indicates which type of error occurred.
@@ -39,7 +39,7 @@ trait AuditMitigationActionExecutionMetadata extends StObject {
   /**
     * The date and time when the task was started.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current status of the task being executed.
@@ -49,7 +49,7 @@ trait AuditMitigationActionExecutionMetadata extends StObject {
   /**
     * The unique identifier for the task that applies the mitigation action.
     */
-  var taskId: js.UndefOr[AuditMitigationActionsTaskId] = js.undefined
+  var taskId: js.UndefOr[MitigationActionsTaskId] = js.undefined
 }
 object AuditMitigationActionExecutionMetadata {
   
@@ -68,7 +68,7 @@ object AuditMitigationActionExecutionMetadata {
     
     inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -84,7 +84,7 @@ object AuditMitigationActionExecutionMetadata {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
@@ -92,7 +92,7 @@ object AuditMitigationActionExecutionMetadata {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: MitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }

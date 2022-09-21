@@ -1,13 +1,12 @@
 package typings.multerS3
 
 import org.scalablytyped.runtime.Shortcut
-import typings.awsSdk.mod.S3
-import typings.expressServeStaticCore.mod.global.Express.Request
+import typings.expressServeStaticCore.Express.Request
 import typings.multer.mod.StorageEngine
 import typings.multer.mod.global.Express.Multer.File
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object mod extends Shortcut {
         (js.Function3[
           /* req */ Request, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ js.Any, /* acl */ js.UndefOr[String], Unit], 
+          /* callback */ js.Function2[/* error */ Any, /* acl */ js.UndefOr[String], Unit], 
           Unit
         ]) | String
       ] = js.undefined
@@ -32,7 +31,7 @@ object mod extends Shortcut {
     var bucket: (js.Function3[
         /* req */ Request, 
         /* file */ File, 
-        /* callback */ js.Function2[/* error */ js.Any, /* bucket */ js.UndefOr[String], Unit], 
+        /* callback */ js.Function2[/* error */ Any, /* bucket */ js.UndefOr[String], Unit], 
         Unit
       ]) | String
     
@@ -40,7 +39,16 @@ object mod extends Shortcut {
         (js.Function3[
           /* req */ Request, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ js.Any, /* cacheControl */ js.UndefOr[String], Unit], 
+          /* callback */ js.Function2[/* error */ Any, /* cacheControl */ js.UndefOr[String], Unit], 
+          Unit
+        ]) | String
+      ] = js.undefined
+    
+    var contentDisposition: js.UndefOr[
+        (js.Function3[
+          /* req */ Request, 
+          /* file */ File, 
+          /* callback */ js.Function2[/* error */ Any, /* contentDisposition */ js.UndefOr[String], Unit], 
           Unit
         ]) | String
       ] = js.undefined
@@ -50,9 +58,9 @@ object mod extends Shortcut {
           /* req */ Request, 
           /* file */ File, 
           /* callback */ js.Function3[
-            /* error */ js.Any, 
+            /* error */ Any, 
             /* mime */ js.UndefOr[String], 
-            /* stream */ js.UndefOr[ReadableStream], 
+            /* stream */ js.UndefOr[ReadableStream[Any]], 
             Unit
           ], 
           Unit
@@ -63,7 +71,7 @@ object mod extends Shortcut {
         js.Function3[
           /* req */ Request, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ js.Any, /* key */ js.UndefOr[String], Unit], 
+          /* callback */ js.Function2[/* error */ Any, /* key */ js.UndefOr[String], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -72,18 +80,18 @@ object mod extends Shortcut {
         js.Function3[
           /* req */ Request, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ js.Any, /* metadata */ js.UndefOr[js.Any], Unit], 
+          /* callback */ js.Function2[/* error */ Any, /* metadata */ js.UndefOr[Any], Unit], 
           Unit
         ]
       ] = js.undefined
     
-    var s3: S3
+    var s3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify S3Client */ Any
     
     var serverSideEncryption: js.UndefOr[
         (js.Function3[
           /* req */ Request, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ js.Any, /* serverSideEncryption */ js.UndefOr[String], Unit], 
+          /* callback */ js.Function2[/* error */ Any, /* serverSideEncryption */ js.UndefOr[String], Unit], 
           Unit
         ]) | String
       ] = js.undefined
@@ -94,10 +102,10 @@ object mod extends Shortcut {
       bucket: (js.Function3[
           /* req */ Request, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ js.Any, /* bucket */ js.UndefOr[String], Unit], 
+          /* callback */ js.Function2[/* error */ Any, /* bucket */ js.UndefOr[String], Unit], 
           Unit
         ]) | String,
-      s3: S3
+      s3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify S3Client */ Any
     ): Options = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], s3 = s3.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
@@ -109,13 +117,13 @@ object mod extends Shortcut {
         value: (js.Function3[
               /* req */ Request, 
               /* file */ File, 
-              /* callback */ js.Function2[/* error */ js.Any, /* acl */ js.UndefOr[String], Unit], 
+              /* callback */ js.Function2[/* error */ Any, /* acl */ js.UndefOr[String], Unit], 
               Unit
             ]) | String
       ): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
       inline def setAclFunction3(
-        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* acl */ js.UndefOr[String], Unit]) => Unit
+        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Any, /* acl */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "acl", js.Any.fromFunction3(value))
       
       inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
@@ -124,35 +132,50 @@ object mod extends Shortcut {
         value: (js.Function3[
               /* req */ Request, 
               /* file */ File, 
-              /* callback */ js.Function2[/* error */ js.Any, /* bucket */ js.UndefOr[String], Unit], 
+              /* callback */ js.Function2[/* error */ Any, /* bucket */ js.UndefOr[String], Unit], 
               Unit
             ]) | String
       ): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
       inline def setBucketFunction3(
-        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* bucket */ js.UndefOr[String], Unit]) => Unit
+        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Any, /* bucket */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "bucket", js.Any.fromFunction3(value))
       
       inline def setCacheControl(
         value: (js.Function3[
               /* req */ Request, 
               /* file */ File, 
-              /* callback */ js.Function2[/* error */ js.Any, /* cacheControl */ js.UndefOr[String], Unit], 
+              /* callback */ js.Function2[/* error */ Any, /* cacheControl */ js.UndefOr[String], Unit], 
               Unit
             ]) | String
       ): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
       inline def setCacheControlFunction3(
-        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* cacheControl */ js.UndefOr[String], Unit]) => Unit
+        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Any, /* cacheControl */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "cacheControl", js.Any.fromFunction3(value))
       
       inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
       
+      inline def setContentDisposition(
+        value: (js.Function3[
+              /* req */ Request, 
+              /* file */ File, 
+              /* callback */ js.Function2[/* error */ Any, /* contentDisposition */ js.UndefOr[String], Unit], 
+              Unit
+            ]) | String
+      ): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+      
+      inline def setContentDispositionFunction3(
+        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Any, /* contentDisposition */ js.UndefOr[String], Unit]) => Unit
+      ): Self = StObject.set(x, "contentDisposition", js.Any.fromFunction3(value))
+      
+      inline def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
+      
       inline def setContentType(
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function3[
-              /* error */ js.Any, 
+              /* error */ Any, 
               /* mime */ js.UndefOr[String], 
-              /* stream */ js.UndefOr[ReadableStream], 
+              /* stream */ js.UndefOr[ReadableStream[Any]], 
               Unit
             ]) => Unit
       ): Self = StObject.set(x, "contentType", js.Any.fromFunction3(value))
@@ -160,30 +183,32 @@ object mod extends Shortcut {
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
       inline def setKey(
-        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* key */ js.UndefOr[String], Unit]) => Unit
+        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Any, /* key */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "key", js.Any.fromFunction3(value))
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       inline def setMetadata(
-        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* metadata */ js.UndefOr[js.Any], Unit]) => Unit
+        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Any, /* metadata */ js.UndefOr[Any], Unit]) => Unit
       ): Self = StObject.set(x, "metadata", js.Any.fromFunction3(value))
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      inline def setS3(value: S3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+      inline def setS3(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify S3Client */ Any
+      ): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
       
       inline def setServerSideEncryption(
         value: (js.Function3[
               /* req */ Request, 
               /* file */ File, 
-              /* callback */ js.Function2[/* error */ js.Any, /* serverSideEncryption */ js.UndefOr[String], Unit], 
+              /* callback */ js.Function2[/* error */ Any, /* serverSideEncryption */ js.UndefOr[String], Unit], 
               Unit
             ]) | String
       ): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
       inline def setServerSideEncryptionFunction3(
-        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* serverSideEncryption */ js.UndefOr[String], Unit]) => Unit
+        value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Any, /* serverSideEncryption */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "serverSideEncryption", js.Any.fromFunction3(value))
       
       inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
@@ -200,9 +225,9 @@ object mod extends Shortcut {
       req: Request,
       file: File,
       callback: js.Function3[
-          /* error */ js.Any, 
+          /* error */ Any, 
           /* mime */ js.UndefOr[String], 
-          /* stream */ js.UndefOr[ReadableStream], 
+          /* stream */ js.UndefOr[ReadableStream[Any]], 
           Unit
         ]
     ): Unit = js.native
@@ -210,7 +235,7 @@ object mod extends Shortcut {
     def DEFAULT_CONTENT_TYPE(
       req: Request,
       file: File,
-      callback: js.Function2[/* error */ js.Any, /* mime */ js.UndefOr[String], Unit]
+      callback: js.Function2[/* error */ Any, /* mime */ js.UndefOr[String], Unit]
     ): Unit = js.native
   }
   
@@ -243,7 +268,7 @@ object mod extends Shortcut {
           
           var location: String
           
-          var metadata: js.Any
+          var metadata: Any
           
           var serverSideEncryption: Null
           
@@ -264,7 +289,7 @@ object mod extends Shortcut {
             filename: String,
             key: String,
             location: String,
-            metadata: js.Any,
+            metadata: Any,
             mimetype: String,
             originalname: String,
             path: String,
@@ -293,7 +318,7 @@ object mod extends Shortcut {
             
             inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
             
-            inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+            inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
             
             inline def setServerSideEncryption(value: Null): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
             

@@ -20,6 +20,6 @@ object ContactsDicArray {
     
     inline def setContactsDicArray(value: js.Array[ContactsDic]): Self = StObject.set(x, "contactsDicArray", value.asInstanceOf[js.Any])
     
-    inline def setContactsDicArrayVarargs(value: ContactsDic*): Self = StObject.set(x, "contactsDicArray", js.Array(value :_*))
+    inline def setContactsDicArrayVarargs(value: ContactsDic*): Self = StObject.set(x, "contactsDicArray", js.Array(value*))
   }
 }

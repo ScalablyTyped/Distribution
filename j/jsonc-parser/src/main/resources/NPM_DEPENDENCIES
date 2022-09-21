@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jsonc-parser" : "3.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jsonc-parser" : "3.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,5 +8,5 @@ object createGrantInputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/CreateGrantInput", "CreateGrantInput")
   @js.native
-  val CreateGrantInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CreateGrantInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

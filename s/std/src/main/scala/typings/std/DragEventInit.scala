@@ -8,6 +8,7 @@ trait DragEventInit
   extends StObject
      with MouseEventInit {
   
+  /* standard dom */
   var dataTransfer: js.UndefOr[DataTransfer | Null] = js.undefined
 }
 object DragEventInit {

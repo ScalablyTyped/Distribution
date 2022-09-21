@@ -8,7 +8,7 @@ object searchMod {
   
   @JSImport("@devexpress/utils/lib/utils/search", "SearchUtils")
   @js.native
-  class SearchUtils () extends StObject
+  open class SearchUtils () extends StObject
   /* static members */
   object SearchUtils {
     

@@ -167,9 +167,9 @@ object ContentRestrictions {
   @js.native
   trait RatedContentRestrictions extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_restrictionschanged(`type`: restrictionschanged, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener_restrictionschanged(`type`: restrictionschanged, listener: EventHandler[Any]): Unit = js.native
     
     /**
       * Gets information that is used filter an app's content catalog.
@@ -185,14 +185,14 @@ object ContentRestrictions {
     def getRestrictionLevelAsync(RatedContentDescription: RatedContentDescription): IPromiseWithIAsyncOperation[ContentAccessRestrictionLevel] = js.native
     
     /** An event handler to notify apps when there are changes to the user's content settings. */
-    def onrestrictionschanged(ev: js.Any & WinRTEvent[js.Any]): Unit = js.native
+    def onrestrictionschanged(ev: Any & WinRTEvent[Any]): Unit = js.native
     /** An event handler to notify apps when there are changes to the user's content settings. */
     @JSName("onrestrictionschanged")
-    var onrestrictionschanged_Original: EventHandler[js.Any] = js.native
+    var onrestrictionschanged_Original: EventHandler[Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_restrictionschanged(`type`: restrictionschanged, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener_restrictionschanged(`type`: restrictionschanged, listener: EventHandler[Any]): Unit = js.native
     
     /**
       * Determines whether the user is allowed to consume a piece of content.

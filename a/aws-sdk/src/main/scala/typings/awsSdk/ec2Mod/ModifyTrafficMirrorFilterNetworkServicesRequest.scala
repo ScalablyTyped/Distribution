@@ -39,7 +39,7 @@ object ModifyTrafficMirrorFilterNetworkServicesRequest {
     
     inline def setAddNetworkServicesUndefined: Self = StObject.set(x, "AddNetworkServices", js.undefined)
     
-    inline def setAddNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = StObject.set(x, "AddNetworkServices", js.Array(value :_*))
+    inline def setAddNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = StObject.set(x, "AddNetworkServices", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object ModifyTrafficMirrorFilterNetworkServicesRequest {
     
     inline def setRemoveNetworkServicesUndefined: Self = StObject.set(x, "RemoveNetworkServices", js.undefined)
     
-    inline def setRemoveNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = StObject.set(x, "RemoveNetworkServices", js.Array(value :_*))
+    inline def setRemoveNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = StObject.set(x, "RemoveNetworkServices", js.Array(value*))
     
     inline def setTrafficMirrorFilterId(value: TrafficMirrorFilterId): Self = StObject.set(x, "TrafficMirrorFilterId", value.asInstanceOf[js.Any])
   }

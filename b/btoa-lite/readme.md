@@ -10,10 +10,10 @@ Smallest/simplest possible means of using btoa with both Node and browserify
 | ------------------ | :-------------: |
 | Full name          | btoa-lite |
 | Keywords           | btoa, base64, isomorphic, browser, node, shared |
-| # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 87147932 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6618767.666666667 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/btoa-lite)

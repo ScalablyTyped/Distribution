@@ -19,7 +19,7 @@ trait CountryCode extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** CLDR country code (e.g. "US"), used as a filter on repricing rules. */
+  /** [CLDR country code](http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) (e.g. "US"), used as a filter on repricing rules. */
   var countryCode: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */

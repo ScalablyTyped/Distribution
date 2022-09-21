@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColorVisible extends StObject {
   
+  /**
+    * Specifies the color a node&apos;s border changes to when the node is hovered over or pressed.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies whether a node&apos;s border is visible when the node is hovered over or pressed.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the width a node&apos;s border changes to when the node is hovered over or pressed.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object ColorVisible {

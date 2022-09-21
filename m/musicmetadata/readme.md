@@ -10,10 +10,10 @@ Streaming music metadata parser for node and the browser.
 | ------------------ | :-------------: |
 | Full name          | musicmetadata |
 | Keywords           | id3, id3v1, id3v2, m4a, mp4, vorbis, ogg, flac, asf, wma, wmv, tags, tag |
-| # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 17547 |
-| # stars            | 22 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4497.333333333333 |
+| # stars            | 556.0 |
 
 ## Links
 - [Homepage](https://github.com/leetreveil/musicmetadata#readme)

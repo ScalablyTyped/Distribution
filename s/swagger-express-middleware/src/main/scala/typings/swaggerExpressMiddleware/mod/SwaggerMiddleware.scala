@@ -3,8 +3,7 @@ package typings.swaggerExpressMiddleware.mod
 import typings.express.mod.Application_
 import typings.express.mod.RequestHandler
 import typings.express.mod.Router
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,13 @@ trait SwaggerMiddleware extends StObject {
   /**
     * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
     */
-  def CORS(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  def CORS(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   /**
     * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
     */
@@ -24,11 +29,23 @@ trait SwaggerMiddleware extends StObject {
   /**
     * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
     */
-  def files(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  def files(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def files(/**
     * Options for how the files are served
     */
-  options: FilesOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  options: FilesOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   /**
     * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
     */
@@ -37,7 +54,13 @@ trait SwaggerMiddleware extends StObject {
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
   router: Application_
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def files(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
@@ -47,13 +70,25 @@ trait SwaggerMiddleware extends StObject {
     * Options for how the files are served
     */
   options: FilesOptions
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def files(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
   router: Router
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def files(
     /**
     * If an Express Application or Router is passed, then its routing settings will be used.
@@ -63,7 +98,13 @@ trait SwaggerMiddleware extends StObject {
     * Options for how the files are served
     */
   options: FilesOptions
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   /**
     * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
     */
@@ -74,9 +115,27 @@ trait SwaggerMiddleware extends StObject {
     * Annotates the HTTP request (the `req` object) with Swagger metadata.
     * This middleware populates Request.swagger
     */
-  def metadata(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
-  def metadata(router: Application_): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
-  def metadata(router: Router): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  def metadata(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
+  def metadata(router: Application_): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
+  def metadata(router: Router): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   /**
     * Annotates the HTTP request (the `req` object) with Swagger metadata.
     * This middleware populates Request.swagger
@@ -87,7 +146,13 @@ trait SwaggerMiddleware extends StObject {
   /**
     * Implements mock behavior for HTTP requests, based on the Swagger API.
     */
-  def mock(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  def mock(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def mock(
     /**
     * Express routing options (e.g. `caseSensitive`, `strict`).
@@ -99,15 +164,27 @@ trait SwaggerMiddleware extends StObject {
     * If `router` is an Express Application, then you can set/get the data store
     * using `router.get("mock data store")
     */
-  datastore: js.Any
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  datastore: Any
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def mock(
     /**
     * Express routing options (e.g. `caseSensitive`, `strict`).
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
   router: Application_
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def mock(
     /**
     * Express routing options (e.g. `caseSensitive`, `strict`).
@@ -119,15 +196,27 @@ trait SwaggerMiddleware extends StObject {
     * If `router` is an Express Application, then you can set/get the data store
     * using `router.get("mock data store")
     */
-  datastore: js.Any
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  datastore: Any
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def mock(
     /**
     * Express routing options (e.g. `caseSensitive`, `strict`).
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
   router: Router
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def mock(
     /**
     * Express routing options (e.g. `caseSensitive`, `strict`).
@@ -139,8 +228,14 @@ trait SwaggerMiddleware extends StObject {
     * If `router` is an Express Application, then you can set/get the data store
     * using `router.get("mock data store")
     */
-  datastore: js.Any
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  datastore: Any
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   /**
     * Implements mock behavior for HTTP requests, based on the Swagger API.
     */
@@ -150,11 +245,23 @@ trait SwaggerMiddleware extends StObject {
   /**
     * Parses the HTTP request into typed values.
     */
-  def parseRequest(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  def parseRequest(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def parseRequest(/**
     * Options for each of the request-parsing middleware
     */
-  options: ParseRequestOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  options: ParseRequestOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   /**
     * Parses the HTTP request into typed values.
     */
@@ -164,7 +271,13 @@ trait SwaggerMiddleware extends StObject {
     * If provided, this will be used to register path-param middleware via Router.Param
     */
   router: Application_
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def parseRequest(
     /**
     * An Express Application or Router.
@@ -175,14 +288,26 @@ trait SwaggerMiddleware extends StObject {
     * Options for each of the request-parsing middleware
     */
   options: ParseRequestOptions
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def parseRequest(
     /**
     * An Express Application or Router.
     * If provided, this will be used to register path-param middleware via Router.Param
     */
   router: Router
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   def parseRequest(
     /**
     * An Express Application or Router.
@@ -193,7 +318,13 @@ trait SwaggerMiddleware extends StObject {
     * Options for each of the request-parsing middleware
     */
   options: ParseRequestOptions
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
   /**
     * Parses the HTTP request into typed values.
     */
@@ -204,17 +335,47 @@ trait SwaggerMiddleware extends StObject {
     * Validates the HTTP request against the Swagger API.
     * An error is sent downstream if the request is invalid for any reason.
     */
-  def validateRequest(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  def validateRequest(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
 }
 object SwaggerMiddleware {
   
   inline def apply(
-    CORS: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+    CORS: () => RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
     files: FilesSignature,
-    metadata: /* router */ js.UndefOr[Application_ | Router] => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
-    mock: (/* router */ js.UndefOr[Application_ | Router], /* datastore */ js.UndefOr[js.Any]) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+    metadata: /* router */ js.UndefOr[Application_ | Router] => RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
+    mock: (/* router */ js.UndefOr[Application_ | Router], /* datastore */ js.UndefOr[Any]) => RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
     parseRequest: ParseRequestSignature,
-    validateRequest: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+    validateRequest: () => RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
   ): SwaggerMiddleware = {
     val __obj = js.Dynamic.literal(CORS = js.Any.fromFunction0(CORS), files = files.asInstanceOf[js.Any], metadata = js.Any.fromFunction1(metadata), mock = js.Any.fromFunction2(mock), parseRequest = parseRequest.asInstanceOf[js.Any], validateRequest = js.Any.fromFunction0(validateRequest))
     __obj.asInstanceOf[SwaggerMiddleware]
@@ -222,20 +383,48 @@ object SwaggerMiddleware {
   
   extension [Self <: SwaggerMiddleware](x: Self) {
     
-    inline def setCORS(value: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "CORS", js.Any.fromFunction0(value))
+    inline def setCORS(
+      value: () => RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Self = StObject.set(x, "CORS", js.Any.fromFunction0(value))
     
     inline def setFiles(value: FilesSignature): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setMetadata(
-      value: /* router */ js.UndefOr[Application_ | Router] => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+      value: /* router */ js.UndefOr[Application_ | Router] => RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Self = StObject.set(x, "metadata", js.Any.fromFunction1(value))
     
     inline def setMock(
-      value: (/* router */ js.UndefOr[Application_ | Router], /* datastore */ js.UndefOr[js.Any]) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+      value: (/* router */ js.UndefOr[Application_ | Router], /* datastore */ js.UndefOr[Any]) => RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
     ): Self = StObject.set(x, "mock", js.Any.fromFunction2(value))
     
     inline def setParseRequest(value: ParseRequestSignature): Self = StObject.set(x, "parseRequest", value.asInstanceOf[js.Any])
     
-    inline def setValidateRequest(value: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "validateRequest", js.Any.fromFunction0(value))
+    inline def setValidateRequest(
+      value: () => RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Self = StObject.set(x, "validateRequest", js.Any.fromFunction0(value))
   }
 }

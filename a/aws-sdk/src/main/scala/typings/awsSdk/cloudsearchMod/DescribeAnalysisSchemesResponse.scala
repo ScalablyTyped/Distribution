@@ -22,6 +22,6 @@ object DescribeAnalysisSchemesResponse {
     
     inline def setAnalysisSchemes(value: AnalysisSchemeStatusList): Self = StObject.set(x, "AnalysisSchemes", value.asInstanceOf[js.Any])
     
-    inline def setAnalysisSchemesVarargs(value: AnalysisSchemeStatus*): Self = StObject.set(x, "AnalysisSchemes", js.Array(value :_*))
+    inline def setAnalysisSchemesVarargs(value: AnalysisSchemeStatus*): Self = StObject.set(x, "AnalysisSchemes", js.Array(value*))
   }
 }

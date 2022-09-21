@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type AmazonResourceName = java.lang.String
+type AmazonResourceName = String
 
-type ConnectionArn = java.lang.String
+type ConnectionArn = String
 
-type ConnectionList = js.Array[typings.awsSdk.codestarconnectionsMod.Connection]
+type ConnectionList = js.Array[Connection]
 
-type ConnectionName = java.lang.String
+type ConnectionName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -21,21 +21,21 @@ type ConnectionName = java.lang.String
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type ConnectionStatus = typings.awsSdk.codestarconnectionsMod._ConnectionStatus | java.lang.String
+type ConnectionStatus = _ConnectionStatus | String
 
-type HostArn = java.lang.String
+type HostArn = String
 
-type HostList = js.Array[typings.awsSdk.codestarconnectionsMod.Host]
+type HostList = js.Array[Host]
 
-type HostName = java.lang.String
+type HostName = String
 
-type HostStatus = java.lang.String
+type HostStatus = String
 
-type HostStatusMessage = java.lang.String
+type HostStatusMessage = String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Bitbucket_
@@ -43,33 +43,33 @@ type NextToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.GitHubEnterpriseServer
   - java.lang.String
 */
-type ProviderType = typings.awsSdk.codestarconnectionsMod._ProviderType | java.lang.String
+type ProviderType = _ProviderType | String
 
-type SecurityGroupId = java.lang.String
+type SecurityGroupId = String
 
-type SecurityGroupIds = js.Array[typings.awsSdk.codestarconnectionsMod.SecurityGroupId]
+type SecurityGroupIds = js.Array[SecurityGroupId]
 
-type SubnetId = java.lang.String
+type SubnetId = String
 
-type SubnetIds = js.Array[typings.awsSdk.codestarconnectionsMod.SubnetId]
+type SubnetIds = js.Array[SubnetId]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.codestarconnectionsMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.codestarconnectionsMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TlsCertificate = java.lang.String
+type TlsCertificate = String
 
-type Url = java.lang.String
+type Url = String
 
-type VpcId = java.lang.String
+type VpcId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-12-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.codestarconnectionsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

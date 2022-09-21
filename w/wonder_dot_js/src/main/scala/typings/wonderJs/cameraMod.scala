@@ -32,7 +32,7 @@ object cameraMod {
     
     def update(elapsed: Double): Unit = js.native
     
-    /* protected */ def updateProjectionMatrix(): js.Any = js.native
+    /* protected */ def updateProjectionMatrix(): Any = js.native
     
     var worldToCameraMatrix: Matrix4 = js.native
   }

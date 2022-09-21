@@ -26,7 +26,11 @@ object mod {
   // TODO: Remove this for the next major release
   @JSImport("cli-spinners", "default")
   @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliSpinners */ js.Any = js.native
+  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliSpinners */ Any = js.native
+  
+  @JSImport("cli-spinners", "aesthetic")
+  @js.native
+  val aesthetic: Spinner = js.native
   
   @JSImport("cli-spinners", "arc")
   @js.native
@@ -55,6 +59,10 @@ object mod {
   @JSImport("cli-spinners", "betaWave")
   @js.native
   val betaWave: Spinner = js.native
+  
+  @JSImport("cli-spinners", "bluePulse")
+  @js.native
+  val bluePulse: Spinner = js.native
   
   @JSImport("cli-spinners", "bounce")
   @js.native
@@ -96,7 +104,7 @@ object mod {
   @js.native
   val clock: Spinner = js.native
   
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliSpinners */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliSpinners */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @JSImport("cli-spinners", "dots")
   @js.native
@@ -158,6 +166,14 @@ object mod {
   @js.native
   val earth: Spinner = js.native
   
+  @JSImport("cli-spinners", "fingerDance")
+  @js.native
+  val fingerDance: Spinner = js.native
+  
+  @JSImport("cli-spinners", "fistBump")
+  @js.native
+  val fistBump: Spinner = js.native
+  
   @JSImport("cli-spinners", "flip")
   @js.native
   val flip: Spinner = js.native
@@ -198,6 +214,10 @@ object mod {
   @js.native
   val material: Spinner = js.native
   
+  @JSImport("cli-spinners", "mindblown")
+  @js.native
+  val mindblown: Spinner = js.native
+  
   @JSImport("cli-spinners", "monkey")
   @js.native
   val monkey: Spinner = js.native
@@ -209,6 +229,14 @@ object mod {
   @JSImport("cli-spinners", "noise")
   @js.native
   val noise: Spinner = js.native
+  
+  @JSImport("cli-spinners", "orangeBluePulse")
+  @js.native
+  val orangeBluePulse: Spinner = js.native
+  
+  @JSImport("cli-spinners", "orangePulse")
+  @js.native
+  val orangePulse: Spinner = js.native
   
   @JSImport("cli-spinners", "pipe")
   @js.native
@@ -249,6 +277,14 @@ object mod {
   @js.native
   val smiley: Spinner = js.native
   
+  @JSImport("cli-spinners", "soccerHeader")
+  @js.native
+  val soccerHeader: Spinner = js.native
+  
+  @JSImport("cli-spinners", "speaker")
+  @js.native
+  val speaker: Spinner = js.native
+  
   @JSImport("cli-spinners", "squareCorners")
   @js.native
   val squareCorners: Spinner = js.native
@@ -264,6 +300,10 @@ object mod {
   @JSImport("cli-spinners", "star2")
   @js.native
   val star2: Spinner = js.native
+  
+  @JSImport("cli-spinners", "timeTravel")
+  @js.native
+  val timeTravel: Spinner = js.native
   
   @JSImport("cli-spinners", "toggle")
   @js.native
@@ -348,7 +388,7 @@ object mod {
       
       inline def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      inline def setFramesVarargs(value: String*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: String*): Self = StObject.set(x, "frames", js.Array(value*))
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     }
@@ -427,9 +467,21 @@ object mod {
     - typings.cliSpinners.cliSpinnersStrings.point
     - typings.cliSpinners.cliSpinnersStrings.layer
     - typings.cliSpinners.cliSpinnersStrings.betaWave
+    - typings.cliSpinners.cliSpinnersStrings.fingerDance
+    - typings.cliSpinners.cliSpinnersStrings.fistBump
+    - typings.cliSpinners.cliSpinnersStrings.soccerHeader
+    - typings.cliSpinners.cliSpinnersStrings.mindblown
+    - typings.cliSpinners.cliSpinnersStrings.speaker
+    - typings.cliSpinners.cliSpinnersStrings.orangePulse
+    - typings.cliSpinners.cliSpinnersStrings.bluePulse
+    - typings.cliSpinners.cliSpinnersStrings.orangeBluePulse
+    - typings.cliSpinners.cliSpinnersStrings.timeTravel
+    - typings.cliSpinners.cliSpinnersStrings.aesthetic
   */
   trait SpinnerName extends StObject
   object SpinnerName {
+    
+    inline def aesthetic: typings.cliSpinners.cliSpinnersStrings.aesthetic = "aesthetic".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.aesthetic]
     
     inline def arc: typings.cliSpinners.cliSpinnersStrings.arc = "arc".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.arc]
     
@@ -444,6 +496,8 @@ object mod {
     inline def balloon2: typings.cliSpinners.cliSpinnersStrings.balloon2 = "balloon2".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.balloon2]
     
     inline def betaWave: typings.cliSpinners.cliSpinnersStrings.betaWave = "betaWave".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.betaWave]
+    
+    inline def bluePulse: typings.cliSpinners.cliSpinnersStrings.bluePulse = "bluePulse".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.bluePulse]
     
     inline def bounce: typings.cliSpinners.cliSpinnersStrings.bounce = "bounce".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.bounce]
     
@@ -495,6 +549,10 @@ object mod {
     
     inline def earth: typings.cliSpinners.cliSpinnersStrings.earth = "earth".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.earth]
     
+    inline def fingerDance: typings.cliSpinners.cliSpinnersStrings.fingerDance = "fingerDance".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.fingerDance]
+    
+    inline def fistBump: typings.cliSpinners.cliSpinnersStrings.fistBump = "fistBump".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.fistBump]
+    
     inline def flip: typings.cliSpinners.cliSpinnersStrings.flip = "flip".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.flip]
     
     inline def grenade: typings.cliSpinners.cliSpinnersStrings.grenade = "grenade".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.grenade]
@@ -515,11 +573,17 @@ object mod {
     
     inline def material: typings.cliSpinners.cliSpinnersStrings.material = "material".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.material]
     
+    inline def mindblown: typings.cliSpinners.cliSpinnersStrings.mindblown = "mindblown".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.mindblown]
+    
     inline def monkey: typings.cliSpinners.cliSpinnersStrings.monkey = "monkey".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.monkey]
     
     inline def moon: typings.cliSpinners.cliSpinnersStrings.moon = "moon".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.moon]
     
     inline def noise: typings.cliSpinners.cliSpinnersStrings.noise = "noise".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.noise]
+    
+    inline def orangeBluePulse: typings.cliSpinners.cliSpinnersStrings.orangeBluePulse = "orangeBluePulse".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.orangeBluePulse]
+    
+    inline def orangePulse: typings.cliSpinners.cliSpinnersStrings.orangePulse = "orangePulse".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.orangePulse]
     
     inline def pipe: typings.cliSpinners.cliSpinnersStrings.pipe = "pipe".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.pipe]
     
@@ -537,6 +601,10 @@ object mod {
     
     inline def smiley: typings.cliSpinners.cliSpinnersStrings.smiley = "smiley".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.smiley]
     
+    inline def soccerHeader: typings.cliSpinners.cliSpinnersStrings.soccerHeader = "soccerHeader".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.soccerHeader]
+    
+    inline def speaker: typings.cliSpinners.cliSpinnersStrings.speaker = "speaker".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.speaker]
+    
     inline def squareCorners: typings.cliSpinners.cliSpinnersStrings.squareCorners = "squareCorners".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.squareCorners]
     
     inline def squish: typings.cliSpinners.cliSpinnersStrings.squish = "squish".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.squish]
@@ -544,6 +612,8 @@ object mod {
     inline def star: typings.cliSpinners.cliSpinnersStrings.star = "star".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.star]
     
     inline def star2: typings.cliSpinners.cliSpinnersStrings.star2 = "star2".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.star2]
+    
+    inline def timeTravel: typings.cliSpinners.cliSpinnersStrings.timeTravel = "timeTravel".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.timeTravel]
     
     inline def toggle: typings.cliSpinners.cliSpinnersStrings.toggle = "toggle".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.toggle]
     

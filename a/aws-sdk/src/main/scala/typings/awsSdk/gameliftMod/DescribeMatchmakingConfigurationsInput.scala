@@ -12,7 +12,7 @@ trait DescribeMatchmakingConfigurationsInput extends StObject {
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * A unique identifier for a matchmaking configuration(s) to retrieve. You can use either the configuration name or ARN value. To request all existing configurations, leave this parameter empty.
+    * A unique identifier for the matchmaking configuration(s) to retrieve. You can use either the configuration name or ARN value. To request all existing configurations, leave this parameter empty.
     */
   var Names: js.UndefOr[MatchmakingConfigurationNameList] = js.undefined
   
@@ -22,7 +22,7 @@ trait DescribeMatchmakingConfigurationsInput extends StObject {
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * A unique identifier for a matchmaking rule set. You can use either the rule set name or ARN value. Use this parameter to retrieve all matchmaking configurations that use this rule set.
+    * A unique identifier for the matchmaking rule set. You can use either the rule set name or ARN value. Use this parameter to retrieve all matchmaking configurations that use this rule set.
     */
   var RuleSetName: js.UndefOr[MatchmakingRuleSetName] = js.undefined
 }
@@ -43,7 +43,7 @@ object DescribeMatchmakingConfigurationsInput {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: MatchmakingConfigurationName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: MatchmakingConfigurationName*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

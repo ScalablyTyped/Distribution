@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrderBy extends StObject {
   
-  var expr: js.Any
+  var expr: Any
   
   var `type`: ASC | DESC
 }
 object OrderBy {
   
-  inline def apply(expr: js.Any, `type`: ASC | DESC): OrderBy = {
+  inline def apply(expr: Any, `type`: ASC | DESC): OrderBy = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderBy]
@@ -22,7 +22,7 @@ object OrderBy {
   
   extension [Self <: OrderBy](x: Self) {
     
-    inline def setExpr(value: js.Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     inline def setType(value: ASC | DESC): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

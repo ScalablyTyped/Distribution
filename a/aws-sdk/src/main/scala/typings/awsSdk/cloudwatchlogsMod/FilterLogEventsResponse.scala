@@ -34,7 +34,7 @@ object FilterLogEventsResponse {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: FilteredLogEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: FilteredLogEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object FilterLogEventsResponse {
     
     inline def setSearchedLogStreamsUndefined: Self = StObject.set(x, "searchedLogStreams", js.undefined)
     
-    inline def setSearchedLogStreamsVarargs(value: SearchedLogStream*): Self = StObject.set(x, "searchedLogStreams", js.Array(value :_*))
+    inline def setSearchedLogStreamsVarargs(value: SearchedLogStream*): Self = StObject.set(x, "searchedLogStreams", js.Array(value*))
   }
 }

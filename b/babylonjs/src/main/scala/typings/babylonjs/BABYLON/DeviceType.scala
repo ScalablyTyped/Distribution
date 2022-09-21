@@ -10,6 +10,12 @@ sealed trait DeviceType extends StObject
 @js.native
 object DeviceType extends StObject {
   
+  /** PS5 DualSense */
+  @js.native
+  sealed trait DualSense
+    extends StObject
+       with DeviceType
+  
   /** PS4 Dual Shock */
   @js.native
   sealed trait DualShock

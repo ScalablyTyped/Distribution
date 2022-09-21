@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.Transition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TransitionProps[TLength] extends StObject {
   
-  val transition: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val transition: js.UndefOr[ResponsiveValue[Transition[TLength]]] = js.undefined
 }
 object TransitionProps {
   
@@ -21,16 +18,10 @@ object TransitionProps {
   
   extension [Self <: TransitionProps[?], TLength](x: Self & TransitionProps[TLength]) {
     
-    inline def setTransition(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: ResponsiveValue[Transition[TLength]]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    inline def setTransitionVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "transition", js.Array(value :_*))
+    inline def setTransitionVarargs(value: Transition[TLength]*): Self = StObject.set(x, "transition", js.Array(value*))
   }
 }

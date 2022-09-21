@@ -15,10 +15,9 @@ object routedButtonMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/RoutedButton", "RoutedButton")
   @js.native
-  class RoutedButton protected ()
-    extends Component[RoutedButtonProps & ButtonProps, ComponentState, js.Any] {
+  open class RoutedButton protected () extends Component[RoutedButtonProps & ButtonProps, ComponentState, Any] {
     def this(props: RoutedButtonProps & ButtonProps) = this()
-    def this(props: RoutedButtonProps & ButtonProps, context: js.Any) = this()
+    def this(props: RoutedButtonProps & ButtonProps, context: Any) = this()
   }
   @JSImport("grommet/components/RoutedButton", "RoutedButton")
   @js.native

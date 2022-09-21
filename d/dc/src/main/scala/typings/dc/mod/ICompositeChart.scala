@@ -19,19 +19,19 @@ trait ICompositeChart[T]
   @JSName("childOptions")
   var childOptions_Original: IGetSet[js.Object, ICompositeChart[T]] = js.native
   
-  def children(): js.Array[BaseMixin[js.Any]] = js.native
+  def children(): js.Array[BaseMixin[Any]] = js.native
   
-  def compose(): js.Array[BaseMixin[js.Any]] = js.native
-  def compose(t: js.Array[BaseMixin[js.Any]]): ICompositeChart[T] = js.native
+  def compose(): js.Array[BaseMixin[Any]] = js.native
+  def compose(t: js.Array[BaseMixin[Any]]): ICompositeChart[T] = js.native
   @JSName("compose")
-  var compose_Original: IGetSet[js.Array[BaseMixin[js.Any]], ICompositeChart[T]] = js.native
+  var compose_Original: IGetSet[js.Array[BaseMixin[Any]], ICompositeChart[T]] = js.native
   
-  def rightY(): js.Function1[/* n */ js.Any, js.Any] = js.native
-  def rightY(t: js.Function1[/* n */ js.Any, js.Any]): ICompositeChart[T] = js.native
+  def rightY(): js.Function1[/* n */ Any, Any] = js.native
+  def rightY(t: js.Function1[/* n */ Any, Any]): ICompositeChart[T] = js.native
   
-  def rightYAxis(): js.Any = js.native
+  def rightYAxis(): Any = js.native
   def rightYAxis(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
   ): ICompositeChart[T] = js.native
   
   def rightYAxisLabel(): IGetSet[String, ICompositeChart[T]] = js.native
@@ -41,12 +41,12 @@ trait ICompositeChart[T]
   
   @JSName("rightYAxis")
   var rightYAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any, 
     ICompositeChart[T]
   ] = js.native
   
   @JSName("rightY")
-  var rightY_Original: IGetSet[js.Function1[/* n */ js.Any, js.Any], ICompositeChart[T]] = js.native
+  var rightY_Original: IGetSet[js.Function1[/* n */ Any, Any], ICompositeChart[T]] = js.native
   
   def shareColors(): Boolean = js.native
   def shareColors(t: Boolean): ICompositeChart[T] = js.native

@@ -27,7 +27,7 @@ object XToolbarControllerListener {
   inline def apply(
     acquire: () => Unit,
     functionSelected: (String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XToolbarControllerListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), functionSelected = js.Any.fromFunction2(functionSelected), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

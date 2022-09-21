@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "has-yarn" : "2.1.0"
+      "has-yarn" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "has-yarn" : "2.1.0"
+      "has-yarn" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

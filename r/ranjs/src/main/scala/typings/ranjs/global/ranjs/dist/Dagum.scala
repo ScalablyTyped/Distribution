@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Dagum")
 @js.native
-class Dagum ()
+open class Dagum ()
   extends typings.ranjs.mod.dist.Dagum {
   def this(p: Double) = this()
   def this(p: Double, a: Double) = this()

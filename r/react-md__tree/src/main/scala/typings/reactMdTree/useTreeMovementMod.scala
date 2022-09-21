@@ -1,9 +1,11 @@
 package typings.reactMdTree
 
+import typings.react.mod.Dispatch
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.SetStateAction
 import typings.reactMdList.listMod.ListElement
 import typings.reactMdTree.anon.NestedTreeItemUnknownTree
 import typings.reactMdTree.typesMod.ExpandedIds
@@ -13,6 +15,7 @@ import typings.reactMdTree.typesMod.TreeItemId
 import typings.reactMdTree.typesMod.TreeItemSorter
 import typings.reactMdTree.typesMod.UnknownTreeItem
 import typings.reactMdTree.useFlattenedTreeListMod.MetadataRecord
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +53,7 @@ object useTreeMovementMod {
     
     var onKeyDown: js.UndefOr[KeyboardEventHandler[ListElement]] = js.undefined
     
-    var onMultiItemExpansion: js.Function1[/* itemIds */ ExpandedIds, Unit]
+    var onMultiItemExpansion: Dispatch[SetStateAction[ExpandedIds]]
     
     var onMultiItemSelect: js.Function1[/* itemIds */ SelectedIds, Unit]
     
@@ -71,7 +74,7 @@ object useTreeMovementMod {
       id: String,
       onItemExpansion: (/* itemId */ TreeItemId, /* expanded */ Boolean) => Unit,
       onItemSelect: /* itemId */ TreeItemId => Unit,
-      onMultiItemExpansion: /* itemIds */ ExpandedIds => Unit,
+      onMultiItemExpansion: SetStateAction[ExpandedIds] => Unit,
       onMultiItemSelect: /* itemIds */ SelectedIds => Unit,
       rootId: TreeItemId,
       selectedIds: SelectedIds,
@@ -87,7 +90,7 @@ object useTreeMovementMod {
       
       inline def setExpandedIds(value: ExpandedIds): Self = StObject.set(x, "expandedIds", value.asInstanceOf[js.Any])
       
-      inline def setExpandedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "expandedIds", js.Array(value :_*))
+      inline def setExpandedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "expandedIds", js.Array(value*))
       
       inline def setGetItemValue(value: (/* item */ UnknownTreeItem, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
       
@@ -97,11 +100,11 @@ object useTreeMovementMod {
       
       inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[ListElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[ListElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[ListElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[ListElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -113,7 +116,7 @@ object useTreeMovementMod {
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnMultiItemExpansion(value: /* itemIds */ ExpandedIds => Unit): Self = StObject.set(x, "onMultiItemExpansion", js.Any.fromFunction1(value))
+      inline def setOnMultiItemExpansion(value: SetStateAction[ExpandedIds] => Unit): Self = StObject.set(x, "onMultiItemExpansion", js.Any.fromFunction1(value))
       
       inline def setOnMultiItemSelect(value: /* itemIds */ SelectedIds => Unit): Self = StObject.set(x, "onMultiItemSelect", js.Any.fromFunction1(value))
       
@@ -121,7 +124,7 @@ object useTreeMovementMod {
       
       inline def setSelectedIds(value: SelectedIds): Self = StObject.set(x, "selectedIds", value.asInstanceOf[js.Any])
       
-      inline def setSelectedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "selectedIds", js.Array(value :_*))
+      inline def setSelectedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "selectedIds", js.Array(value*))
       
       inline def setSort(value: /* items */ js.Array[UnknownTreeItem] => js.Array[UnknownTreeItem]): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
       
@@ -185,8 +188,8 @@ object useTreeMovementMod {
     
     inline def apply(
       activeId: String,
-      handleBlur: FocusEvent[ListElement] => Unit,
-      handleFocus: FocusEvent[ListElement] => Unit,
+      handleBlur: FocusEvent[ListElement, Element] => Unit,
+      handleFocus: FocusEvent[ListElement, Element] => Unit,
       handleKeyDown: KeyboardEvent[ListElement] => Unit,
       itemIdRefs: MetadataRecord,
       items: js.Array[NestedTreeItemUnknownTree],
@@ -200,9 +203,9 @@ object useTreeMovementMod {
       
       inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
-      inline def setHandleBlur(value: FocusEvent[ListElement] => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction1(value))
+      inline def setHandleBlur(value: FocusEvent[ListElement, Element] => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction1(value))
       
-      inline def setHandleFocus(value: FocusEvent[ListElement] => Unit): Self = StObject.set(x, "handleFocus", js.Any.fromFunction1(value))
+      inline def setHandleFocus(value: FocusEvent[ListElement, Element] => Unit): Self = StObject.set(x, "handleFocus", js.Any.fromFunction1(value))
       
       inline def setHandleKeyDown(value: KeyboardEvent[ListElement] => Unit): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
       
@@ -210,7 +213,7 @@ object useTreeMovementMod {
       
       inline def setItems(value: js.Array[NestedTreeItemUnknownTree]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: NestedTreeItemUnknownTree*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: NestedTreeItemUnknownTree*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setSetActiveId(value: TreeItemId => Unit): Self = StObject.set(x, "setActiveId", js.Any.fromFunction1(value))
     }

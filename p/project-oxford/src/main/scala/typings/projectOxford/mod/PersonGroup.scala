@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("project-oxford", "PersonGroup")
 @js.native
-class PersonGroup () extends StObject {
+open class PersonGroup () extends StObject {
   
   /**
     * Creates a new person group with a user-specified ID.

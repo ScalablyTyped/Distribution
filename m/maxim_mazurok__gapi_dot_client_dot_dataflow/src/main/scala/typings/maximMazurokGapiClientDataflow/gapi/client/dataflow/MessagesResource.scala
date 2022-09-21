@@ -2,7 +2,7 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDataflow.anon.EndTime
-import typings.maximMazurokGapiClientDataflow.anon.MinimumImportance
+import typings.maximMazurokGapiClientDataflow.anon.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,5 +17,5 @@ trait MessagesResource extends StObject {
     */
   def list(): Request[ListJobMessagesResponse] = js.native
   def list(request: EndTime): Request[ListJobMessagesResponse] = js.native
-  def list(request: MinimumImportance): Request[ListJobMessagesResponse] = js.native
+  def list(request: Location): Request[ListJobMessagesResponse] = js.native
 }

@@ -31,12 +31,12 @@ object ResourceLocation {
     
     inline def setCurrentLocationsUndefined: Self = StObject.set(x, "currentLocations", js.undefined)
     
-    inline def setCurrentLocationsVarargs(value: String*): Self = StObject.set(x, "currentLocations", js.Array(value :_*))
+    inline def setCurrentLocationsVarargs(value: String*): Self = StObject.set(x, "currentLocations", js.Array(value*))
     
     inline def setOriginalLocations(value: js.Array[String]): Self = StObject.set(x, "originalLocations", value.asInstanceOf[js.Any])
     
     inline def setOriginalLocationsUndefined: Self = StObject.set(x, "originalLocations", js.undefined)
     
-    inline def setOriginalLocationsVarargs(value: String*): Self = StObject.set(x, "originalLocations", js.Array(value :_*))
+    inline def setOriginalLocationsVarargs(value: String*): Self = StObject.set(x, "originalLocations", js.Array(value*))
   }
 }

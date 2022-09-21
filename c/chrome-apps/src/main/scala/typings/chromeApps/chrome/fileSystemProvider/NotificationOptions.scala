@@ -81,7 +81,7 @@ object NotificationOptions {
     
     inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     
-    inline def setChangesVarargs(value: NotificationChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: NotificationChange*): Self = StObject.set(x, "changes", js.Array(value*))
     
     inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     

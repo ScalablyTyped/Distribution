@@ -1,6 +1,5 @@
 package typings.rollup.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,9 @@ trait WatcherOptions extends StObject {
   
   var clearScreen: js.UndefOr[Boolean] = js.undefined
   
-  var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+  var exclude: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
   
-  var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+  var include: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
   
   var skipWrite: js.UndefOr[Boolean] = js.undefined
 }
@@ -40,17 +39,17 @@ object WatcherOptions {
     
     inline def setClearScreenUndefined: Self = StObject.set(x, "clearScreen", js.undefined)
     
-    inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
     
-    inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setSkipWrite(value: Boolean): Self = StObject.set(x, "skipWrite", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Configuration mixin
 | ------------------ | :-------------: |
 | Full name          | configurable |
 | Keywords           | configuration |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 307589 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30869.666666666668 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/configurable)

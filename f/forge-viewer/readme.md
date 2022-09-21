@@ -1,7 +1,7 @@
 
 # Scala.js typings for forge-viewer
 
-Typings are for version 7.5
+Typings are for version 7.69
 
 
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Client")
 @js.native
-class Client protected () extends default {
+open class Client protected () extends default {
   /**
     * Create a client.
     *

@@ -1,7 +1,5 @@
 package typings.rsmq
 
-import typings.redis.mod.ClientOpts
-import typings.redis.mod.RedisClient
 import typings.rsmq.rsmqNumbers.`0`
 import typings.rsmq.rsmqNumbers.`1`
 import org.scalablytyped.runtime.StObject
@@ -13,7 +11,7 @@ object mod {
   /*~ Write your module's methods and properties in this class */
   @JSImport("rsmq", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RedisSMQ {
     def this(options: ConstructorOptions) = this()
@@ -63,7 +61,7 @@ object mod {
     override def popMessageAsync(opts: PopMessageOptions): js.Promise[QueueMessage | js.Object] = js.native
     
     /* CompleteClass */
-    override def quit(): Unit = js.native
+    override def quit(cb: Callback[String]): Unit = js.native
     
     /* CompleteClass */
     override def receiveMessage(opts: ReceiveMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit = js.native
@@ -108,7 +106,7 @@ object mod {
     }
   }
   
-  type Callback[T] = js.Function2[/* err */ js.Any, /* response */ T, Unit]
+  type Callback[T] = js.Function2[/* err */ Any, /* response */ T, Unit]
   
   trait ChangeMessageVisibilityOptions
     extends StObject
@@ -148,13 +146,17 @@ object mod {
   
   trait ConstructorOptions extends StObject {
     
-    var client: js.UndefOr[RedisClient] = js.undefined
+    var client: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any
+      ] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
     
     var ns: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[ClientOpts] = js.undefined
+    var options: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts */ Any
+      ] = js.undefined
     
     var password: js.UndefOr[String] = js.undefined
     
@@ -171,7 +173,9 @@ object mod {
     
     extension [Self <: ConstructorOptions](x: Self) {
       
-      inline def setClient(value: RedisClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any
+      ): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
@@ -183,7 +187,9 @@ object mod {
       
       inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
       
-      inline def setOptions(value: ClientOpts): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts */ Any
+      ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -529,7 +535,7 @@ object mod {
     
     def popMessageAsync(opts: PopMessageOptions): js.Promise[QueueMessage | js.Object]
     
-    def quit(): Unit
+    def quit(cb: Callback[String]): Unit
     
     def receiveMessage(opts: ReceiveMessageOptions, cb: Callback[QueueMessage | js.Object]): Unit
     
@@ -560,7 +566,7 @@ object mod {
       listQueuesAsync: () => js.Promise[js.Array[String]],
       popMessage: (PopMessageOptions, Callback[QueueMessage | js.Object]) => Unit,
       popMessageAsync: PopMessageOptions => js.Promise[QueueMessage | js.Object],
-      quit: () => Unit,
+      quit: Callback[String] => Unit,
       receiveMessage: (ReceiveMessageOptions, Callback[QueueMessage | js.Object]) => Unit,
       receiveMessageAsync: ReceiveMessageOptions => js.Promise[QueueMessage | js.Object],
       sendMessage: (SendMessageOptions, Callback[String]) => Unit,
@@ -568,7 +574,7 @@ object mod {
       setQueueAttributes: (SetQueueAttributesOptions, Callback[QueueAttributes]) => Unit,
       setQueueAttributesAsync: SetQueueAttributesOptions => js.Promise[QueueAttributes]
     ): RedisSMQ = {
-      val __obj = js.Dynamic.literal(changeMessageVisibility = js.Any.fromFunction2(changeMessageVisibility), changeMessageVisibilityAsync = js.Any.fromFunction1(changeMessageVisibilityAsync), createQueue = js.Any.fromFunction2(createQueue), createQueueAsync = js.Any.fromFunction1(createQueueAsync), deleteMessage = js.Any.fromFunction2(deleteMessage), deleteMessageAsync = js.Any.fromFunction1(deleteMessageAsync), deleteQueue = js.Any.fromFunction2(deleteQueue), deleteQueueAsync = js.Any.fromFunction1(deleteQueueAsync), getQueueAttributes = js.Any.fromFunction2(getQueueAttributes), getQueueAttributesAsync = js.Any.fromFunction1(getQueueAttributesAsync), listQueues = js.Any.fromFunction1(listQueues), listQueuesAsync = js.Any.fromFunction0(listQueuesAsync), popMessage = js.Any.fromFunction2(popMessage), popMessageAsync = js.Any.fromFunction1(popMessageAsync), quit = js.Any.fromFunction0(quit), receiveMessage = js.Any.fromFunction2(receiveMessage), receiveMessageAsync = js.Any.fromFunction1(receiveMessageAsync), sendMessage = js.Any.fromFunction2(sendMessage), sendMessageAsync = js.Any.fromFunction1(sendMessageAsync), setQueueAttributes = js.Any.fromFunction2(setQueueAttributes), setQueueAttributesAsync = js.Any.fromFunction1(setQueueAttributesAsync))
+      val __obj = js.Dynamic.literal(changeMessageVisibility = js.Any.fromFunction2(changeMessageVisibility), changeMessageVisibilityAsync = js.Any.fromFunction1(changeMessageVisibilityAsync), createQueue = js.Any.fromFunction2(createQueue), createQueueAsync = js.Any.fromFunction1(createQueueAsync), deleteMessage = js.Any.fromFunction2(deleteMessage), deleteMessageAsync = js.Any.fromFunction1(deleteMessageAsync), deleteQueue = js.Any.fromFunction2(deleteQueue), deleteQueueAsync = js.Any.fromFunction1(deleteQueueAsync), getQueueAttributes = js.Any.fromFunction2(getQueueAttributes), getQueueAttributesAsync = js.Any.fromFunction1(getQueueAttributesAsync), listQueues = js.Any.fromFunction1(listQueues), listQueuesAsync = js.Any.fromFunction0(listQueuesAsync), popMessage = js.Any.fromFunction2(popMessage), popMessageAsync = js.Any.fromFunction1(popMessageAsync), quit = js.Any.fromFunction1(quit), receiveMessage = js.Any.fromFunction2(receiveMessage), receiveMessageAsync = js.Any.fromFunction1(receiveMessageAsync), sendMessage = js.Any.fromFunction2(sendMessage), sendMessageAsync = js.Any.fromFunction1(sendMessageAsync), setQueueAttributes = js.Any.fromFunction2(setQueueAttributes), setQueueAttributesAsync = js.Any.fromFunction1(setQueueAttributesAsync))
       __obj.asInstanceOf[RedisSMQ]
     }
     
@@ -602,7 +608,7 @@ object mod {
       
       inline def setPopMessageAsync(value: PopMessageOptions => js.Promise[QueueMessage | js.Object]): Self = StObject.set(x, "popMessageAsync", js.Any.fromFunction1(value))
       
-      inline def setQuit(value: () => Unit): Self = StObject.set(x, "quit", js.Any.fromFunction0(value))
+      inline def setQuit(value: Callback[String] => Unit): Self = StObject.set(x, "quit", js.Any.fromFunction1(value))
       
       inline def setReceiveMessage(value: (ReceiveMessageOptions, Callback[QueueMessage | js.Object]) => Unit): Self = StObject.set(x, "receiveMessage", js.Any.fromFunction2(value))
       

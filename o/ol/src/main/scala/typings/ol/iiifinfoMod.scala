@@ -10,7 +10,7 @@ object iiifinfoMod {
   
   @JSImport("ol/format/IIIFInfo", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with IIIFInfo {
     def this(imageInfo: String) = this()
@@ -90,7 +90,7 @@ object iiifinfoMod {
       
       inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value*))
       
       inline def setMaxArea(value: Double): Self = StObject.set(x, "maxArea", value.asInstanceOf[js.Any])
       
@@ -108,13 +108,13 @@ object iiifinfoMod {
       
       inline def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
       
-      inline def setQualitiesVarargs(value: String*): Self = StObject.set(x, "qualities", js.Array(value :_*))
+      inline def setQualitiesVarargs(value: String*): Self = StObject.set(x, "qualities", js.Array(value*))
       
       inline def setSupports(value: js.Array[String]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
       
       inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
       
-      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
+      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value*))
     }
   }
   
@@ -168,19 +168,19 @@ object iiifinfoMod {
       
       inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value*))
       
       inline def setQualities(value: js.Array[String]): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
       
       inline def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
       
-      inline def setQualitiesVarargs(value: String*): Self = StObject.set(x, "qualities", js.Array(value :_*))
+      inline def setQualitiesVarargs(value: String*): Self = StObject.set(x, "qualities", js.Array(value*))
       
       inline def setSupports(value: js.Array[String]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
       
       inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
       
-      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
+      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value*))
     }
   }
   
@@ -207,7 +207,7 @@ object iiifinfoMod {
       
       inline def setScaleFactors(value: js.Array[Double]): Self = StObject.set(x, "scaleFactors", value.asInstanceOf[js.Any])
       
-      inline def setScaleFactorsVarargs(value: Double*): Self = StObject.set(x, "scaleFactors", js.Array(value :_*))
+      inline def setScaleFactorsVarargs(value: Double*): Self = StObject.set(x, "scaleFactors", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }

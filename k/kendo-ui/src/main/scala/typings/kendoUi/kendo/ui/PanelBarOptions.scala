@@ -17,17 +17,17 @@ trait PanelBarOptions extends StObject {
   
   var contentLoad: js.UndefOr[js.Function1[/* e */ PanelBarContentLoadEvent, Unit]] = js.undefined
   
-  var contentUrls: js.UndefOr[js.Any] = js.undefined
+  var contentUrls: js.UndefOr[Any] = js.undefined
   
   var dataBound: js.UndefOr[js.Function1[/* e */ PanelBarDataBoundEvent, Unit]] = js.undefined
   
   var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | HierarchicalDataSource] = js.undefined
   
   var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
   
-  var dataTextField: js.UndefOr[String | js.Any] = js.undefined
+  var dataTextField: js.UndefOr[String | Any] = js.undefined
   
   var dataUrlField: js.UndefOr[String] = js.undefined
   
@@ -76,7 +76,7 @@ object PanelBarOptions {
     
     inline def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
     
-    inline def setContentUrls(value: js.Any): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
+    inline def setContentUrls(value: Any): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
     
     inline def setContentUrlsUndefined: Self = StObject.set(x, "contentUrls", js.undefined)
     
@@ -88,7 +88,7 @@ object PanelBarOptions {
     
     inline def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
-    inline def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -96,7 +96,7 @@ object PanelBarOptions {
     
     inline def setDataSpriteCssClassFieldUndefined: Self = StObject.set(x, "dataSpriteCssClassField", js.undefined)
     
-    inline def setDataTextField(value: String | js.Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    inline def setDataTextField(value: String | Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
     inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     

@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WordInfo extends StObject {
   
   /**
+    * The confidence estimate between 0.0 and 1.0. A higher number indicates an estimated greater likelihood that the recognized words are correct. This field is set only for the top
+    * alternative of a non-streaming result or, of a streaming result where `is_final=true`. This field is not guaranteed to be accurate and users should not rely on it to be always
+    * provided. The default of 0.0 is a sentinel value indicating `confidence` was not set.
+    */
+  var confidence: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Time offset relative to the beginning of the audio, and corresponding to the end of the spoken word. This field is only set if `enable_word_time_offsets=true` and only in the top
     * hypothesis. This is an experimental feature and the accuracy of the time offset can vary.
     */
@@ -35,6 +42,10 @@ object WordInfo {
   }
   
   extension [Self <: WordInfo](x: Self) {
+    
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

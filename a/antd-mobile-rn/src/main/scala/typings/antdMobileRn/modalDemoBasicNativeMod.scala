@@ -9,13 +9,12 @@ object modalDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/modal/demo/basic.native", JSImport.Default)
   @js.native
-  class default protected () extends BasicModalExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicModalExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicModalExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicModalExample extends Component[Any, Any, Any] {
     
     def onButtonClick(): Unit = js.native
     

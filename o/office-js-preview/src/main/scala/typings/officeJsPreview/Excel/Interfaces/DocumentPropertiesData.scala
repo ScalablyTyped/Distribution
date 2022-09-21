@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel.Interfaces
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,97 +8,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentPropertiesData extends StObject {
   
   /**
-    *
     * The author of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var author: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The category of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var category: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The comments of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var comments: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The company of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var company: js.UndefOr[String] = js.undefined
   
   /**
+    * Gets the creation date of the workbook.
     *
-    * Gets the creation date of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var creationDate: js.UndefOr[Date] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * Gets the collection of custom properties of the workbook.
     *
-    * Gets the collection of custom properties of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var custom: js.UndefOr[js.Array[CustomPropertyData]] = js.undefined
   
   /**
-    *
     * The keywords of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var keywords: js.UndefOr[String] = js.undefined
   
   /**
+    * Gets the last author of the workbook.
     *
-    * Gets the last author of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var lastAuthor: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The manager of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var manager: js.UndefOr[String] = js.undefined
   
   /**
+    * Gets the revision number of the workbook.
     *
-    * Gets the revision number of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var revisionNumber: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The subject of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var subject: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The title of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var title: js.UndefOr[String] = js.undefined
@@ -129,7 +128,7 @@ object DocumentPropertiesData {
     
     inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
-    inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -137,7 +136,7 @@ object DocumentPropertiesData {
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    inline def setCustomVarargs(value: CustomPropertyData*): Self = StObject.set(x, "custom", js.Array(value :_*))
+    inline def setCustomVarargs(value: CustomPropertyData*): Self = StObject.set(x, "custom", js.Array(value*))
     
     inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     

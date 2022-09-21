@@ -1,7 +1,6 @@
 package typings.phaser.phaserMod
 
 import typings.phaser.Phaser.GameObjects.RenderTexture
-import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
@@ -33,7 +32,7 @@ object Textures {
     */
   @JSImport("phaser", "Textures.CanvasTexture")
   @js.native
-  class CanvasTexture protected ()
+  open class CanvasTexture protected ()
     extends StObject
        with typings.phaser.Phaser.Textures.CanvasTexture {
     /**
@@ -48,8 +47,8 @@ object Textures {
       manager: typings.phaser.Phaser.Textures.TextureManager,
       key: String,
       source: HTMLCanvasElement,
-      width: integer,
-      height: integer
+      width: Double,
+      height: Double
     ) = this()
   }
   
@@ -64,7 +63,7 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.ADD")
     @js.native
-    val ADD: js.Any = js.native
+    val ADD: Any = js.native
     
     /**
       * The Texture Load Error Event.
@@ -76,7 +75,7 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.ERROR")
     @js.native
-    val ERROR: js.Any = js.native
+    val ERROR: Any = js.native
     
     /**
       * The Texture Load Event.
@@ -90,7 +89,7 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.LOAD")
     @js.native
-    val LOAD: js.Any = js.native
+    val LOAD: Any = js.native
     
     /**
       * This internal event signifies that the Texture Manager is now ready and the Game can continue booting.
@@ -101,7 +100,7 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.READY")
     @js.native
-    val READY: js.Any = js.native
+    val READY: Any = js.native
     
     /**
       * The Texture Remove Event.
@@ -115,7 +114,7 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.REMOVE")
     @js.native
-    val REMOVE: js.Any = js.native
+    val REMOVE: Any = js.native
   }
   
   /**
@@ -138,13 +137,13 @@ object Textures {
     */
   @JSImport("phaser", "Textures.Frame")
   @js.native
-  class Frame protected ()
+  open class Frame protected ()
     extends StObject
        with typings.phaser.Phaser.Textures.Frame {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       name: String,
-      sourceIndex: integer,
+      sourceIndex: Double,
       x: Double,
       y: Double,
       width: Double,
@@ -162,8 +161,8 @@ object Textures {
       */
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      name: integer,
-      sourceIndex: integer,
+      name: Double,
+      sourceIndex: Double,
       x: Double,
       y: Double,
       width: Double,
@@ -176,14 +175,14 @@ object Textures {
     */
   @JSImport("phaser", "Textures.LINEAR")
   @js.native
-  val LINEAR: integer = js.native
+  val LINEAR: Double = js.native
   
   /**
     * Nearest Neighbor filter type.
     */
   @JSImport("phaser", "Textures.NEAREST")
   @js.native
-  val NEAREST: integer = js.native
+  val NEAREST: Double = js.native
   
   /**
     * A Texture consists of a source, usually an Image from the Cache, and a collection of Frames.
@@ -201,7 +200,7 @@ object Textures {
     */
   @JSImport("phaser", "Textures.Texture")
   @js.native
-  class Texture protected ()
+  open class Texture protected ()
     extends StObject
        with typings.phaser.Phaser.Textures.Texture {
     def this(
@@ -291,7 +290,7 @@ object Textures {
     */
   @JSImport("phaser", "Textures.TextureManager")
   @js.native
-  class TextureManager protected ()
+  open class TextureManager protected ()
     extends StObject
        with typings.phaser.Phaser.Textures.TextureManager {
     /**
@@ -310,7 +309,7 @@ object Textures {
     */
   @JSImport("phaser", "Textures.TextureSource")
   @js.native
-  class TextureSource protected ()
+  open class TextureSource protected ()
     extends StObject
        with typings.phaser.Phaser.Textures.TextureSource {
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: RenderTexture) = this()
@@ -326,75 +325,77 @@ object Textures {
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLImageElement) = this()
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLVideoElement) = this()
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: RenderTexture, width: integer) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLCanvasElement, width: integer) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLImageElement, width: integer) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLVideoElement, width: integer) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture, width: integer) = this()
+    def this(texture: typings.phaser.Phaser.Textures.Texture, source: RenderTexture, width: Double) = this()
+    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLCanvasElement, width: Double) = this()
+    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLImageElement, width: Double) = this()
+    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLVideoElement, width: Double) = this()
+    def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture, width: Double) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
-      width: Unit,
-      height: integer
+      width: Double,
+      height: Double
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
-      width: integer,
-      height: integer
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLCanvasElement,
+      width: Double,
+      height: Double
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLCanvasElement,
       width: Unit,
-      height: integer
+      height: Double
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLCanvasElement,
-      width: integer,
-      height: integer
+      source: HTMLImageElement,
+      width: Double,
+      height: Double
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLImageElement,
       width: Unit,
-      height: integer
+      height: Double
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: integer,
-      height: integer
+      source: HTMLVideoElement,
+      width: Double,
+      height: Double
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLVideoElement,
       width: Unit,
-      height: integer
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: integer,
-      height: integer
+      height: Double
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
-      width: Unit,
-      height: integer
+      width: Double,
+      height: Double
     ) = this()
+    def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture, width: Unit, height: Double) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      source: WebGLTexture,
-      width: integer,
-      height: integer
+      source: RenderTexture,
+      width: Double,
+      height: Double,
+      flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
-      width: Unit,
+      width: Double,
       height: Unit,
       flipY: Boolean
     ) = this()
@@ -402,26 +403,12 @@ object Textures {
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
       width: Unit,
-      height: integer,
+      height: Double,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
-      width: integer,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: RenderTexture,
-      width: integer,
-      height: integer,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLCanvasElement,
       width: Unit,
       height: Unit,
       flipY: Boolean
@@ -429,22 +416,50 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLCanvasElement,
-      width: Unit,
-      height: integer,
+      width: Double,
+      height: Double,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLCanvasElement,
-      width: integer,
+      width: Double,
       height: Unit,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLCanvasElement,
-      width: integer,
-      height: integer,
+      width: Unit,
+      height: Double,
+      flipY: Boolean
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLCanvasElement,
+      width: Unit,
+      height: Unit,
+      flipY: Boolean
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLImageElement,
+      width: Double,
+      height: Double,
+      flipY: Boolean
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLImageElement,
+      width: Double,
+      height: Unit,
+      flipY: Boolean
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLImageElement,
+      width: Unit,
+      height: Double,
       flipY: Boolean
     ) = this()
     def this(
@@ -456,23 +471,23 @@ object Textures {
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: Unit,
-      height: integer,
+      source: HTMLVideoElement,
+      width: Double,
+      height: Double,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: integer,
+      source: HTMLVideoElement,
+      width: Double,
       height: Unit,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: integer,
-      height: integer,
+      source: HTMLVideoElement,
+      width: Unit,
+      height: Double,
       flipY: Boolean
     ) = this()
     def this(
@@ -484,29 +499,15 @@ object Textures {
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: Unit,
-      height: integer,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: integer,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: integer,
-      height: integer,
+      source: WebGLTexture,
+      width: Double,
+      height: Double,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
-      width: Unit,
+      width: Double,
       height: Unit,
       flipY: Boolean
     ) = this()
@@ -514,21 +515,14 @@ object Textures {
       texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
       width: Unit,
-      height: integer,
+      height: Double,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
-      width: integer,
+      width: Unit,
       height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: WebGLTexture,
-      width: integer,
-      height: integer,
       flipY: Boolean
     ) = this()
   }

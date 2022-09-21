@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(`object`: StringDictionary[js.Any], keys: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  inline def apply(`object`: StringDictionary[js.Any], keys: js.Array[String], shallow: Boolean): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], shallow.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def apply(`object`: StringDictionary[Any], keys: js.Array[String]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def apply(`object`: StringDictionary[Any], keys: js.Array[String], shallow: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], shallow.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   @JSImport("whitelist-object", JSImport.Namespace)
   @js.native

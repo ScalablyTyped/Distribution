@@ -47,19 +47,19 @@ object coreservicesMod {
   @js.native
   trait InjectorLike extends StObject {
     
-    def annotate(fn: IInjectable): js.Array[js.Any] = js.native
-    def annotate(fn: IInjectable, strictDi: Boolean): js.Array[js.Any] = js.native
+    def annotate(fn: IInjectable): js.Array[Any] = js.native
+    def annotate(fn: IInjectable, strictDi: Boolean): js.Array[Any] = js.native
     
-    def get(token: js.Any): js.Any = js.native
+    def get(token: Any): Any = js.native
     @JSName("get")
-    def get_T_T[T](token: js.Any): T = js.native
+    def get_T_T[T](token: Any): T = js.native
     
-    def has(token: js.Any): Boolean = js.native
+    def has(token: Any): Boolean = js.native
     
-    def invoke(fn: IInjectable): js.Any = js.native
-    def invoke(fn: IInjectable, context: js.Any): js.Any = js.native
-    def invoke(fn: IInjectable, context: js.Any, locals: Obj): js.Any = js.native
-    def invoke(fn: IInjectable, context: Unit, locals: Obj): js.Any = js.native
+    def invoke(fn: IInjectable): Any = js.native
+    def invoke(fn: IInjectable, context: Any): Any = js.native
+    def invoke(fn: IInjectable, context: Any, locals: Obj): Any = js.native
+    def invoke(fn: IInjectable, context: Unit, locals: Obj): Any = js.native
     
     var strictDi: js.UndefOr[Boolean] = js.native
   }
@@ -112,23 +112,23 @@ object coreservicesMod {
     /** See: [[UrlService.path]] */ @JSName("path")
     var path_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['path'] */ js.Any) & js.Function0[String] = js.native
     
-    /** See: [[UrlService.search]] */ def search(): StringDictionary[js.Any] = js.native
+    /** See: [[UrlService.search]] */ def search(): StringDictionary[Any] = js.native
     /** See: [[UrlService.search]] */ @JSName("search")
-    var search_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['search'] */ js.Any) & js.Function0[StringDictionary[js.Any]] = js.native
+    var search_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['search'] */ js.Any) & js.Function0[StringDictionary[Any]] = js.native
     
     /** See: [[UrlService.url]] */ def url(): String = js.native
     def url(newurl: String): String = js.native
     def url(newurl: String, replace: Boolean): String = js.native
-    def url(newurl: String, replace: Boolean, state: js.Any): String = js.native
-    def url(newurl: String, replace: Unit, state: js.Any): String = js.native
+    def url(newurl: String, replace: Boolean, state: Any): String = js.native
+    def url(newurl: String, replace: Unit, state: Any): String = js.native
     def url(newurl: Unit, replace: Boolean): String = js.native
-    def url(newurl: Unit, replace: Boolean, state: js.Any): String = js.native
-    def url(newurl: Unit, replace: Unit, state: js.Any): String = js.native
+    def url(newurl: Unit, replace: Boolean, state: Any): String = js.native
+    def url(newurl: Unit, replace: Unit, state: Any): String = js.native
     /** See: [[UrlService.url]] */ @JSName("url")
     var url_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['url'] */ js.Any) & (js.Function3[
         /* newurl */ js.UndefOr[String], 
         /* replace */ js.UndefOr[Boolean], 
-        /* state */ js.UndefOr[js.Any], 
+        /* state */ js.UndefOr[Any], 
         String
       ]) = js.native
   }
@@ -136,12 +136,12 @@ object coreservicesMod {
   @js.native
   trait QLike extends StObject {
     
-    def all(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Array[js.Any]] = js.native
-    def all(promises: StringDictionary[js.Promise[js.Any]]): js.Promise[js.Any] = js.native
+    def all(promises: js.Array[js.Promise[Any]]): js.Promise[js.Array[Any]] = js.native
+    def all(promises: StringDictionary[js.Promise[Any]]): js.Promise[Any] = js.native
     
     def defer(): QLikeDeferred = js.native
     
-    def reject[T](reason: js.Any): js.Promise[T] = js.native
+    def reject[T](reason: Any): js.Promise[T] = js.native
     
     def when[T](): js.Promise[T] = js.native
     def when[T](value: T): js.Promise[T] = js.native
@@ -151,12 +151,12 @@ object coreservicesMod {
   @js.native
   trait QLikeDeferred extends StObject {
     
-    var promise: js.Promise[js.Any] = js.native
+    var promise: js.Promise[Any] = js.native
     
     def reject(): Unit = js.native
-    def reject(reason: js.Any): Unit = js.native
+    def reject(reason: Any): Unit = js.native
     
     def resolve(): Unit = js.native
-    def resolve(`val`: js.Any): Unit = js.native
+    def resolve(`val`: Any): Unit = js.native
   }
 }

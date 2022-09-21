@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Date
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -14,16 +13,16 @@ trait QueryParameterValues
   /**
     * The parameter name.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#parameterValues)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#parameterValues)
     */
   var name: String
   
   /**
     * Single value or array of values.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#parameterValues)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#parameterValues)
     */
-  var value: String | (js.Array[Date | Double | String]) | Double | Date
+  var value: String | (js.Array[js.Date | Double | String]) | Double | js.Date
 }
 object QueryParameterValues {
   
@@ -32,7 +31,7 @@ object QueryParameterValues {
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
     propertyIsEnumerable: PropertyKey => Boolean,
-    value: String | (js.Array[Date | Double | String]) | Double | Date
+    value: String | (js.Array[js.Date | Double | String]) | Double | js.Date
   ): QueryParameterValues = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameterValues]
@@ -42,8 +41,8 @@ object QueryParameterValues {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String | (js.Array[Date | Double | String]) | Double | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | (js.Array[js.Date | Double | String]) | Double | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (js.Date | Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

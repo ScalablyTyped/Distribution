@@ -21,6 +21,6 @@ object PlaylistData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: PlaylistItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PlaylistItem*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

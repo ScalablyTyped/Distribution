@@ -24,6 +24,6 @@ object ChooseMessageFileSuccessCallbackResult {
     
     inline def setTempFiles(value: js.Array[ChooseFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
-    inline def setTempFilesVarargs(value: ChooseFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
+    inline def setTempFilesVarargs(value: ChooseFile*): Self = StObject.set(x, "tempFiles", js.Array(value*))
   }
 }

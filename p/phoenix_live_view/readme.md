@@ -1,7 +1,7 @@
 
 # Scala.js typings for phoenix_live_view
 
-Typings are for version 0.14
+Typings are for version 0.15
 
 ## Library description:
 The Phoenix LiveView JavaScript client.
@@ -10,10 +10,10 @@ The Phoenix LiveView JavaScript client.
 | ------------------ | :-------------: |
 | Full name          | phoenix_live_view |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 1 |
-| # downloads        | 104447 |
-| # stars            | 0 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 12307.0 |
+| # stars            | 4674.0 |
 
 ## Links
 - [Homepage](https://github.com/phoenixframework/phoenix_live_view#readme)

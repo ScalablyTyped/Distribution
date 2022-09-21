@@ -1,10 +1,11 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.exprMod.ExprOrSignalRef
+import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.titleMod.TitleParams
 import typings.vegaLite.transformMod.Transform
 import typings.vegaLite.vegaLiteStrings.container
 import typings.vegaTypings.encodeMod.Text
+import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ trait Height extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[Text | TitleParams[ExprOrSignalRef]] = js.undefined
+  var title: js.UndefOr[Text | (TitleParams[ExprRef | SignalRef])] = js.undefined
   
   var transform: js.UndefOr[js.Array[Transform]] = js.undefined
   
@@ -50,17 +51,17 @@ object Height {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setTitle(value: Text | TitleParams[ExprOrSignalRef]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Text | (TitleParams[ExprRef | SignalRef])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     
     inline def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setWidth(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

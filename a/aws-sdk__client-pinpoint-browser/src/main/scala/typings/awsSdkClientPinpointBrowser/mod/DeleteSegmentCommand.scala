@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "DeleteSegmentCommand")
 @js.native
-class DeleteSegmentCommand protected ()
+open class DeleteSegmentCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.deleteSegmentCommandMod.DeleteSegmentCommand {
   def this(input: DeleteSegmentInput) = this()
 }

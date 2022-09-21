@@ -35,7 +35,7 @@ object BinaryClassificationMetrics {
     
     inline def setBinaryConfusionMatrixListUndefined: Self = StObject.set(x, "binaryConfusionMatrixList", js.undefined)
     
-    inline def setBinaryConfusionMatrixListVarargs(value: BinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value :_*))
+    inline def setBinaryConfusionMatrixListVarargs(value: BinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value*))
     
     inline def setNegativeLabel(value: String): Self = StObject.set(x, "negativeLabel", value.asInstanceOf[js.Any])
     

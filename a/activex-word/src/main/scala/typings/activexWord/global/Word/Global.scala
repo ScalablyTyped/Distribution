@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Global")
 @js.native
-/* private */ class Global ()
+/* private */ open class Global ()
   extends StObject
      with typings.activexWord.Word.Global

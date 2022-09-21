@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Creates a [WhereClause](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html) expression that adheres to standardized SQL expressions.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql.html)
+  */
 trait sql extends StObject {
   
   /**

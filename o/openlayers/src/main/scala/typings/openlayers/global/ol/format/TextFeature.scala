@@ -20,5 +20,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Base class for text feature formats.
   *
   */
-class TextFeature ()
+open class TextFeature ()
   extends typings.openlayers.mod.format.TextFeature

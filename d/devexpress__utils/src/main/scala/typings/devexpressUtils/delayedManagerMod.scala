@@ -8,18 +8,18 @@ object delayedManagerMod {
   
   @JSImport("@devexpress/utils/lib/class/delayed-manager", "DelayedActionManager")
   @js.native
-  class DelayedActionManager protected () extends StObject {
+  open class DelayedActionManager protected () extends StObject {
     def this(action: js.Function0[Unit]) = this()
     
-    /* private */ var action: js.Any = js.native
+    /* private */ var action: Any = js.native
     
-    val actionExecuted: Boolean = js.native
+    def actionExecuted: Boolean = js.native
     
-    /* private */ var actionStartTime: js.Any = js.native
+    /* private */ var actionStartTime: Any = js.native
     
-    /* private */ var actionTimeout: js.Any = js.native
+    /* private */ var actionTimeout: Any = js.native
     
-    /* private */ var actionTimeoutId: js.Any = js.native
+    /* private */ var actionTimeoutId: Any = js.native
     
     def executeAction(): Unit = js.native
     

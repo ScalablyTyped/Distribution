@@ -8,15 +8,15 @@ trait cookie extends StObject {
   
   def clear(): Unit
   
-  def get(name: String): js.Any
+  def get(name: String): Any
   
-  def put(name: String, value: js.Any): Unit
+  def put(name: String, value: Any): Unit
   
   def remove(name: String): Unit
 }
 object cookie {
   
-  inline def apply(clear: () => Unit, get: String => js.Any, put: (String, js.Any) => Unit, remove: String => Unit): cookie = {
+  inline def apply(clear: () => Unit, get: String => Any, put: (String, Any) => Unit, remove: String => Unit): cookie = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), put = js.Any.fromFunction2(put), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[cookie]
   }
@@ -25,9 +25,9 @@ object cookie {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setPut(value: (String, js.Any) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
+    inline def setPut(value: (String, Any) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
     
     inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }

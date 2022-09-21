@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait XLSXUtils extends StObject {
   
-  def aoa_to_sheet(data: js.Array[js.Array[js.Any]]): WorkSheet = js.native
-  def aoa_to_sheet(data: js.Array[js.Array[js.Any]], opts: AOA2SheetOpts): WorkSheet = js.native
+  def aoa_to_sheet(data: js.Array[js.Array[Any]]): WorkSheet = js.native
+  def aoa_to_sheet(data: js.Array[js.Array[Any]], opts: AOA2SheetOpts): WorkSheet = js.native
   /* --- Import Functions --- */
   /** Converts an array of arrays of JS data to a worksheet. */
   @JSName("aoa_to_sheet")
@@ -19,6 +19,8 @@ trait XLSXUtils extends StObject {
   /** Append a worksheet to a workbook */
   def book_append_sheet(workbook: WorkBook, worksheet: WorkSheet): Unit = js.native
   def book_append_sheet(workbook: WorkBook, worksheet: WorkSheet, name: String): Unit = js.native
+  def book_append_sheet(workbook: WorkBook, worksheet: WorkSheet, name: String, roll: Boolean): Unit = js.native
+  def book_append_sheet(workbook: WorkBook, worksheet: WorkSheet, name: Unit, roll: Boolean): Unit = js.native
   
   /* --- General Utilities --- */
   /** Creates a new workbook */
@@ -74,40 +76,42 @@ trait XLSXUtils extends StObject {
   
   /** Format cell */
   def format_cell(cell: CellObject): String = js.native
-  def format_cell(cell: CellObject, v: js.Any): String = js.native
-  def format_cell(cell: CellObject, v: js.Any, opts: js.Any): String = js.native
-  def format_cell(cell: CellObject, v: Unit, opts: js.Any): String = js.native
+  def format_cell(cell: CellObject, v: Any): String = js.native
+  def format_cell(cell: CellObject, v: Any, opts: Any): String = js.native
+  def format_cell(cell: CellObject, v: Unit, opts: Any): String = js.native
   
-  def json_to_sheet(data: js.Array[js.Any]): WorkSheet = js.native
-  def json_to_sheet(data: js.Array[js.Any], opts: JSON2SheetOpts): WorkSheet = js.native
+  def json_to_sheet(data: js.Array[Any]): WorkSheet = js.native
+  def json_to_sheet(data: js.Array[Any], opts: JSON2SheetOpts): WorkSheet = js.native
   /** Converts an array of JS objects to a worksheet. */
   @JSName("json_to_sheet")
   def json_to_sheet_T[T](data: js.Array[T]): WorkSheet = js.native
   @JSName("json_to_sheet")
   def json_to_sheet_T[T](data: js.Array[T], opts: JSON2SheetOpts): WorkSheet = js.native
   
-  def sheet_add_aoa(ws: WorkSheet, data: js.Array[js.Array[js.Any]]): WorkSheet = js.native
-  def sheet_add_aoa(ws: WorkSheet, data: js.Array[js.Array[js.Any]], opts: SheetAOAOpts): WorkSheet = js.native
+  def sheet_add_aoa(ws: WorkSheet, data: js.Array[js.Array[Any]]): WorkSheet = js.native
+  def sheet_add_aoa(ws: WorkSheet, data: js.Array[js.Array[Any]], opts: SheetAOAOpts): WorkSheet = js.native
   /** Add an array of arrays of JS data to a worksheet */
   @JSName("sheet_add_aoa")
   def sheet_add_aoa_T[T](ws: WorkSheet, data: js.Array[js.Array[T]]): WorkSheet = js.native
   @JSName("sheet_add_aoa")
   def sheet_add_aoa_T[T](ws: WorkSheet, data: js.Array[js.Array[T]], opts: SheetAOAOpts): WorkSheet = js.native
   
-  def sheet_add_dom(ws: WorkSheet, data: js.Any): WorkSheet = js.native
-  def sheet_add_dom(ws: WorkSheet, data: js.Any, opts: Table2SheetOpts): WorkSheet = js.native
+  def sheet_add_dom(ws: WorkSheet, data: Any): WorkSheet = js.native
+  def sheet_add_dom(ws: WorkSheet, data: Any, opts: Table2SheetOpts): WorkSheet = js.native
   
   /** Add an array of JS objects to a worksheet */
-  def sheet_add_json(ws: WorkSheet, data: js.Array[js.Any]): WorkSheet = js.native
-  def sheet_add_json(ws: WorkSheet, data: js.Array[js.Any], opts: SheetJSONOpts): WorkSheet = js.native
+  def sheet_add_json(ws: WorkSheet, data: js.Array[Any]): WorkSheet = js.native
+  def sheet_add_json(ws: WorkSheet, data: js.Array[Any], opts: SheetJSONOpts): WorkSheet = js.native
   @JSName("sheet_add_json")
   def sheet_add_json_T[T](ws: WorkSheet, data: js.Array[T]): WorkSheet = js.native
   @JSName("sheet_add_json")
   def sheet_add_json_T[T](ws: WorkSheet, data: js.Array[T], opts: SheetJSONOpts): WorkSheet = js.native
   
   def sheet_set_array_formula(ws: WorkSheet, range: String, formula: String): WorkSheet = js.native
+  def sheet_set_array_formula(ws: WorkSheet, range: String, formula: String, dynamic: Boolean): WorkSheet = js.native
   /** Assign an Array Formula to a range */
   def sheet_set_array_formula(ws: WorkSheet, range: Range, formula: String): WorkSheet = js.native
+  def sheet_set_array_formula(ws: WorkSheet, range: Range, formula: String, dynamic: Boolean): WorkSheet = js.native
   
   /** Generates delimiter-separated-values output */
   def sheet_to_csv(worksheet: WorkSheet): String = js.native
@@ -128,8 +132,8 @@ trait XLSXUtils extends StObject {
   def sheet_to_html(worksheet: WorkSheet): String = js.native
   def sheet_to_html(worksheet: WorkSheet, options: Sheet2HTMLOpts): String = js.native
   
-  def sheet_to_json(worksheet: WorkSheet): js.Array[js.Array[js.Any]] = js.native
-  def sheet_to_json(worksheet: WorkSheet, opts: Sheet2JSONOpts): js.Array[js.Array[js.Any]] = js.native
+  def sheet_to_json(worksheet: WorkSheet): js.Array[js.Array[Any]] = js.native
+  def sheet_to_json(worksheet: WorkSheet, opts: Sheet2JSONOpts): js.Array[js.Array[Any]] = js.native
   /* --- Export Functions --- */
   /** Converts a worksheet object to an array of JSON objects */
   @JSName("sheet_to_json")
@@ -145,10 +149,10 @@ trait XLSXUtils extends StObject {
   def sheet_to_txt(worksheet: WorkSheet): String = js.native
   def sheet_to_txt(worksheet: WorkSheet, options: Sheet2CSVOpts): String = js.native
   
-  def table_to_book(data: js.Any): WorkBook = js.native
-  def table_to_book(data: js.Any, opts: Table2SheetOpts): WorkBook = js.native
+  def table_to_book(data: Any): WorkBook = js.native
+  def table_to_book(data: Any, opts: Table2SheetOpts): WorkBook = js.native
   
   /** BROWSER ONLY! Converts a TABLE DOM element to a worksheet. */
-  def table_to_sheet(data: js.Any): WorkSheet = js.native
-  def table_to_sheet(data: js.Any, opts: Table2SheetOpts): WorkSheet = js.native
+  def table_to_sheet(data: Any): WorkSheet = js.native
+  def table_to_sheet(data: Any, opts: Table2SheetOpts): WorkSheet = js.native
 }

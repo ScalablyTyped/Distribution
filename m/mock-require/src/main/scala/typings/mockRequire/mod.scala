@@ -17,7 +17,7 @@ object mod extends Shortcut {
     def apply(path: String, mockExport: String): Unit = js.native
     def apply(path: String, mockExport: Stub): Unit = js.native
     
-    def reRequire(path: String): js.Any = js.native
+    def reRequire(path: String): Any = js.native
     
     def stop(path: String): Unit = js.native
     
@@ -29,7 +29,7 @@ object mod extends Shortcut {
   @js.native
   trait StubFunction extends StObject {
     
-    def apply(params: js.Any*): js.Any = js.native
+    def apply(params: Any*): Any = js.native
   }
   
   type _To = Mock

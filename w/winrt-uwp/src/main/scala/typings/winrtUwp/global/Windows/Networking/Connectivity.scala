@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Networking
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
@@ -75,7 +74,7 @@ object Connectivity {
   @JSGlobal("Windows.Networking.Connectivity.CellularApnContext")
   @js.native
   /** Creates an instance of CellularApnContext . */
-  class CellularApnContext ()
+  open class CellularApnContext ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.CellularApnContext {
     
@@ -143,7 +142,7 @@ object Connectivity {
   @JSGlobal("Windows.Networking.Connectivity.ConnectionProfileFilter")
   @js.native
   /** Creates an instance of ConnectionProfileFilter , which contains a set of properties that are used to improve the relevance of FindConnectionProfilesAsync results. */
-  class ConnectionProfileFilter ()
+  open class ConnectionProfileFilter ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfileFilter {
     
@@ -213,7 +212,7 @@ object Connectivity {
     
     /** Indicates when the connection was initially established. */
     /* CompleteClass */
-    var startTime: Date = js.native
+    var startTime: js.Date = js.native
   }
   
   /** Methods defined by the ConnectivityManager class enable enforcement of traffic routing on a specific network adapter for the specified destination suffix. Once a policy is set using AddHttpRoutePolicy , traffic that matches the policy will either be routed or dropped. */
@@ -276,7 +275,7 @@ object Connectivity {
     
     /** Gets a value indicating the date and time of the next billing cycle. */
     /* CompleteClass */
-    var nextBillingCycle: Date = js.native
+    var nextBillingCycle: js.Date = js.native
     
     /** Gets a value indicating the nominal rate of the outbound data transfer. */
     /* CompleteClass */
@@ -292,7 +291,7 @@ object Connectivity {
     
     /** Gets a DateTime object indicating the date and time when the MegabytesUsed property was last updated. */
     /* CompleteClass */
-    var lastSyncTime: Date = js.native
+    var lastSyncTime: js.Date = js.native
     
     /** Gets a value indicating the total amount of data transferred, in megabytes, over the connection. */
     /* CompleteClass */
@@ -545,7 +544,7 @@ object Connectivity {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def addEventListener_networkstatuschanged(`type`: networkstatuschanged, listener: NetworkStatusChangedEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -556,7 +555,7 @@ object Connectivity {
       * @return An array of ConnectionProfile objects.
       */
     /* static member */
-    inline def findConnectionProfilesAsync(pProfileFilter: typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfileFilter): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findConnectionProfilesAsync")(pProfileFilter.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findConnectionProfilesAsync(pProfileFilter: typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfileFilter): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findConnectionProfilesAsync")(pProfileFilter.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets a list of profiles for connections, active or otherwise, on the local machine.
@@ -614,7 +613,7 @@ object Connectivity {
     inline def onnetworkstatuschanged_=(x: NetworkStatusChangedEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnetworkstatuschanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def removeEventListener_networkstatuschanged(`type`: networkstatuschanged, listener: NetworkStatusChangedEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -764,7 +763,7 @@ object Connectivity {
   /** The RoutePolicy class is used to represent the traffic routing policy for a special PDP Context/APN. */
   @JSGlobal("Windows.Networking.Connectivity.RoutePolicy")
   @js.native
-  class RoutePolicy protected ()
+  open class RoutePolicy protected ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Connectivity.RoutePolicy {
     /**

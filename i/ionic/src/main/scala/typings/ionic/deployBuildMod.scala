@@ -11,7 +11,7 @@ object deployBuildMod {
   
   @JSImport("ionic/commands/deploy/build", "BuildCommand")
   @js.native
-  class BuildCommand protected () extends Command {
+  open class BuildCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def createDeployBuild(appflowId: String, token: String, options: CommandLineOptions): js.Promise[DeployBuild] = js.native
@@ -29,7 +29,7 @@ object deployBuildMod {
     
     var caller_id: Double
     
-    var commit: js.Any
+    var commit: Any
     
     var created: String
     
@@ -41,7 +41,7 @@ object deployBuildMod {
     
     var id: String
     
-    var job: js.Any
+    var job: Any
     
     var job_id: Double
     
@@ -57,13 +57,13 @@ object deployBuildMod {
       automation_id: Double,
       automation_name: String,
       caller_id: Double,
-      commit: js.Any,
+      commit: Any,
       created: String,
       environment_id: Double,
       environment_name: String,
       finished: String,
       id: String,
-      job: js.Any,
+      job: Any,
       job_id: Double,
       native_config_id: Double,
       pending_channels: js.Array[String],
@@ -81,7 +81,7 @@ object deployBuildMod {
       
       inline def setCaller_id(value: Double): Self = StObject.set(x, "caller_id", value.asInstanceOf[js.Any])
       
-      inline def setCommit(value: js.Any): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: Any): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
       inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -93,7 +93,7 @@ object deployBuildMod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setJob(value: js.Any): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+      inline def setJob(value: Any): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
       
       inline def setJob_id(value: Double): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
       
@@ -101,7 +101,7 @@ object deployBuildMod {
       
       inline def setPending_channels(value: js.Array[String]): Self = StObject.set(x, "pending_channels", value.asInstanceOf[js.Any])
       
-      inline def setPending_channelsVarargs(value: String*): Self = StObject.set(x, "pending_channels", js.Array(value :_*))
+      inline def setPending_channelsVarargs(value: String*): Self = StObject.set(x, "pending_channels", js.Array(value*))
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

@@ -25,6 +25,11 @@ trait ReplicaSettingsUpdate extends StObject {
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException. For more information, see Specifying Read and Write Requirements in the Amazon DynamoDB Developer Guide. 
     */
   var ReplicaProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  
+  /**
+    * Replica-specific table class. If not specified, uses the source table's table class.
+    */
+  var ReplicaTableClass: js.UndefOr[TableClass] = js.undefined
 }
 object ReplicaSettingsUpdate {
   
@@ -41,7 +46,7 @@ object ReplicaSettingsUpdate {
     
     inline def setReplicaGlobalSecondaryIndexSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.undefined)
     
-    inline def setReplicaGlobalSecondaryIndexSettingsUpdateVarargs(value: ReplicaGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
+    inline def setReplicaGlobalSecondaryIndexSettingsUpdateVarargs(value: ReplicaGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.Array(value*))
     
     inline def setReplicaProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
     
@@ -50,5 +55,9 @@ object ReplicaSettingsUpdate {
     inline def setReplicaProvisionedReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
     
     inline def setReplicaProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", js.undefined)
+    
+    inline def setReplicaTableClass(value: TableClass): Self = StObject.set(x, "ReplicaTableClass", value.asInstanceOf[js.Any])
+    
+    inline def setReplicaTableClassUndefined: Self = StObject.set(x, "ReplicaTableClass", js.undefined)
   }
 }

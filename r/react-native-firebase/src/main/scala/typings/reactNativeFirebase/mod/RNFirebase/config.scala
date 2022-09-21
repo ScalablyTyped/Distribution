@@ -67,11 +67,11 @@ object config {
     
     var source: String
     
-    def `val`(): js.Any
+    def `val`(): Any
   }
   object ConfigSnapshot {
     
-    inline def apply(source: String, `val`: () => js.Any): ConfigSnapshot = {
+    inline def apply(source: String, `val`: () => Any): ConfigSnapshot = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
       __obj.asInstanceOf[ConfigSnapshot]
@@ -81,7 +81,7 @@ object config {
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      inline def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
+      inline def setVal(value: () => Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
     }
   }
   

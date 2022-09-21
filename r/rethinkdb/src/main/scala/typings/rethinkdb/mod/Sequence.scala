@@ -13,8 +13,8 @@ trait Sequence
      with Operation[Cursor]
      with Writeable {
   
-  def between(lower: js.Any, upper: js.Any): Sequence = js.native
-  def between(lower: js.Any, upper: js.Any, index: Index): Sequence = js.native
+  def between(lower: Any, upper: Any): Sequence = js.native
+  def between(lower: Any, upper: Any, index: Index): Sequence = js.native
   
   /**
     * Turn a query into a changefeed, an infinite stream of objects representing
@@ -35,11 +35,11 @@ trait Sequence
     * See: https://www.rethinkdb.com/api/javascript/coerce_to/
     */
   @JSName("coerceTo")
-  def coerceTo_array(key: array): Expression[js.Array[js.Any]] = js.native
+  def coerceTo_array(key: array): Expression[js.Array[Any]] = js.native
   @JSName("coerceTo")
   def coerceTo_object(key: `object`): Expression[js.Object] = js.native
   
-  def concatMap(transform: ExpressionFunction[js.Any]): Sequence = js.native
+  def concatMap(transform: ExpressionFunction[Any]): Sequence = js.native
   
   // TODO: reduction object
   def contains(prop: String): Expression[Boolean] = js.native
@@ -51,10 +51,10 @@ trait Sequence
   
   def eqJoin(leftAttribute: String, rightSequence: Sequence): Sequence = js.native
   def eqJoin(leftAttribute: String, rightSequence: Sequence, index: Index): Sequence = js.native
-  def eqJoin(leftAttribute: ExpressionFunction[js.Any], rightSequence: Sequence): Sequence = js.native
-  def eqJoin(leftAttribute: ExpressionFunction[js.Any], rightSequence: Sequence, index: Index): Sequence = js.native
+  def eqJoin(leftAttribute: ExpressionFunction[Any], rightSequence: Sequence): Sequence = js.native
+  def eqJoin(leftAttribute: ExpressionFunction[Any], rightSequence: Sequence, index: Index): Sequence = js.native
   
-  def filter(obj: StringDictionary[js.Any]): Sequence = js.native
+  def filter(obj: StringDictionary[Any]): Sequence = js.native
   def filter(rql: Expression[Boolean]): Sequence = js.native
   def filter(rql: ExpressionFunction[Boolean]): Sequence = js.native
   
@@ -62,15 +62,15 @@ trait Sequence
   
   def groupBy(aggregators: Aggregator*): Expression[js.Object] = js.native
   
-  def groupedMapReduce(group: ExpressionFunction[js.Any], map: ExpressionFunction[js.Any], reduce: ReduceFunction[js.Any]): Sequence = js.native
+  def groupedMapReduce(group: ExpressionFunction[Any], map: ExpressionFunction[Any], reduce: ReduceFunction[Any]): Sequence = js.native
   def groupedMapReduce(
-    group: ExpressionFunction[js.Any],
-    map: ExpressionFunction[js.Any],
-    reduce: ReduceFunction[js.Any],
-    base: js.Any
+    group: ExpressionFunction[Any],
+    map: ExpressionFunction[Any],
+    reduce: ReduceFunction[Any],
+    base: Any
   ): Sequence = js.native
   
-  def indexesOf(obj: js.Any): Sequence = js.native
+  def indexesOf(obj: Any): Sequence = js.native
   
   // Join
   // these return left, right
@@ -81,12 +81,12 @@ trait Sequence
   def limit(n: Double): Sequence = js.native
   
   // Transform
-  def map(transform: ExpressionFunction[js.Any]): Sequence = js.native
+  def map(transform: ExpressionFunction[Any]): Sequence = js.native
   
-  def merge(cb: ExpressionFunction[Expression[js.Any]]): Sequence = js.native
+  def merge(cb: ExpressionFunction[Expression[Any]]): Sequence = js.native
   def merge(`object`: js.Object): Sequence = js.native
   
-  def nth(n: Double): Expression[js.Any] = js.native
+  def nth(n: Double): Expression[Any] = js.native
   
   def orderBy(keys: (Sort | String)*): Sequence = js.native
   
@@ -96,8 +96,8 @@ trait Sequence
   def pluck(props: String*): Sequence = js.native
   
   // Aggregate
-  def reduce(r: ReduceFunction[js.Any]): Expression[js.Any] = js.native
-  def reduce(r: ReduceFunction[js.Any], base: js.Any): Expression[js.Any] = js.native
+  def reduce(r: ReduceFunction[Any]): Expression[Any] = js.native
+  def reduce(r: ReduceFunction[Any], base: Any): Expression[Any] = js.native
   
   def sample(n: Double): Sequence = js.native
   
@@ -108,7 +108,7 @@ trait Sequence
   
   def union(sequence: Sequence): Sequence = js.native
   
-  def withFields(selectors: js.Any*): Sequence = js.native
+  def withFields(selectors: Any*): Sequence = js.native
   
   def without(props: String*): Sequence = js.native
   

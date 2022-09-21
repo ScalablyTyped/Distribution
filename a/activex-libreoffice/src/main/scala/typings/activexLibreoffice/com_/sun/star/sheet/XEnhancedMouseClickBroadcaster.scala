@@ -37,7 +37,7 @@ object XEnhancedMouseClickBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addEnhancedMouseClickHandler: XEnhancedMouseClickHandler => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEnhancedMouseClickHandler: XEnhancedMouseClickHandler => Unit
   ): XEnhancedMouseClickBroadcaster = {

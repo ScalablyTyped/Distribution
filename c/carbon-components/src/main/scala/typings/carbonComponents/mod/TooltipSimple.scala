@@ -1,5 +1,7 @@
 package typings.carbonComponents.mod
 
+import typings.carbonComponents.anon.PartialTooltipSimpleOptio
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,9 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("carbon-components", "TooltipSimple")
 @js.native
-class TooltipSimple protected ()
+open class TooltipSimple protected ()
   extends typings.carbonComponents.componentsMod.TooltipSimple {
-  def this(element: js.Any, options: js.Any) = this()
+  def this(element: HTMLElement) = this()
+  def this(element: HTMLElement, options: PartialTooltipSimpleOptio) = this()
 }
 /* static members */
 object TooltipSimple {
@@ -20,6 +23,6 @@ object TooltipSimple {
   
   @JSImport("carbon-components", "TooltipSimple.components")
   @js.native
-  def components: WeakMap[js.Object, js.Any] = js.native
-  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  def components: WeakMap[js.Object, Any] = js.native
+  inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

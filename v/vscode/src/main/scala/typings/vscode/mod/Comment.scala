@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Comment extends StObject {
   
   /**
-    * The [author information](#CommentAuthorInformation) of the comment
+    * The {@link CommentAuthorInformation author information} of the comment
     */
   var author: CommentAuthorInformation
   
@@ -21,36 +21,42 @@ trait Comment extends StObject {
     * For example, a comment is given a context value as `editable`. When contributing actions to `comments/comment/title`
     * using `menus` extension point, you can specify context value for key `comment` in `when` expression like `comment == editable`.
     * ```json
-    *    "contributes": {
-    *        "menus": {
-    *            "comments/comment/title": [
-    *                {
-    *                    "command": "extension.deleteComment",
-    *                    "when": "comment == editable"
-    *                }
-    *            ]
-    *        }
-    *    }
+    *	"contributes": {
+    *		"menus": {
+    *			"comments/comment/title": [
+    *				{
+    *					"command": "extension.deleteComment",
+    *					"when": "comment == editable"
+    *				}
+    *			]
+    *		}
+    *	}
     * ```
     * This will show action `extension.deleteComment` only for comments with `contextValue` is `editable`.
     */
   var contextValue: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional label describing the [Comment](#Comment)
+    * Optional label describing the {@link Comment}
     * Label will be rendered next to authorName if exists.
     */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * [Comment mode](#CommentMode) of the comment
+    * {@link CommentMode Comment mode} of the comment
     */
   var mode: CommentMode
   
   /**
-    * Optional reactions of the [comment](#Comment)
+    * Optional reactions of the {@link Comment}
     */
   var reactions: js.UndefOr[js.Array[CommentReaction]] = js.undefined
+  
+  /**
+    * Optional timestamp that will be displayed in comments.
+    * The date will be formatted according to the user's locale and settings.
+    */
+  var timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object Comment {
   
@@ -79,6 +85,10 @@ object Comment {
     
     inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     
-    inline def setReactionsVarargs(value: CommentReaction*): Self = StObject.set(x, "reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: CommentReaction*): Self = StObject.set(x, "reactions", js.Array(value*))
+    
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

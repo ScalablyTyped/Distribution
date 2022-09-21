@@ -9,6 +9,6 @@ trait JQuery extends StObject {
   
   def timepicker(): JQuery = js.native
   def timepicker(methodName: String): JQuery = js.native
-  def timepicker(methodName: String, params: js.Any): JQuery = js.native
+  def timepicker(methodName: String, params: Any): JQuery = js.native
   def timepicker(options: TimepickerOptions): JQuery = js.native
 }

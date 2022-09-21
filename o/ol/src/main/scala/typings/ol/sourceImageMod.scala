@@ -27,7 +27,7 @@ object sourceImageMod {
   
   @JSImport("ol/source/Image", "ImageSourceEvent")
   @js.native
-  class ImageSourceEvent protected ()
+  open class ImageSourceEvent protected ()
     extends typings.ol.eventMod.default {
     def this(`type`: String, image: typings.ol.olImageMod.default) = this()
     
@@ -141,7 +141,7 @@ object sourceImageMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setImageSmoothing(value: Boolean): Self = StObject.set(x, "imageSmoothing", value.asInstanceOf[js.Any])
       
@@ -155,7 +155,7 @@ object sourceImageMod {
       
       inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
       
       inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

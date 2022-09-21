@@ -13,7 +13,7 @@ trait XmlNamespace extends StObject {
   /* private */ @JSName("Excel.XmlNamespace_typekey")
   var ExcelDotXmlNamespace_typekey: XmlNamespace
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Prefix: String
   
@@ -27,7 +27,7 @@ object XmlNamespace {
     Application: Application,
     Creator: XlCreator,
     ExcelDotXmlNamespace_typekey: XmlNamespace,
-    Parent: js.Any,
+    Parent: Any,
     Prefix: String,
     Uri: String,
     _Default: String
@@ -45,7 +45,7 @@ object XmlNamespace {
     
     inline def setExcelDotXmlNamespace_typekey(value: XmlNamespace): Self = StObject.set(x, "Excel.XmlNamespace_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     

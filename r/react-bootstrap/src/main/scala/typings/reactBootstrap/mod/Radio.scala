@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Radio")
 @js.native
-class Radio ()
+open class Radio ()
   extends typings.reactBootstrap.libMod.Radio

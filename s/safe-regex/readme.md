@@ -10,10 +10,10 @@ detect possibly catastrophic, exponential-time regular expressions
 | ------------------ | :-------------: |
 | Full name          | safe-regex |
 | Keywords           | catastrophic, exponential, regex, safe, sandbox |
-| # releases         | 4 |
-| # dependents       | 157 |
-| # downloads        | 650677229 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8.010599566666667E7 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/davisjam/safe-regex)

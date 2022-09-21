@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-obj
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a value is an object
@@ -11,9 +11,9 @@ Check if a value is an object
 | Full name          | is-obj |
 | Keywords           | object, is, check, test, type |
 | # releases         | 2 |
-| # dependents       | 125 |
-| # downloads        | 797994864 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9.959484266666667E7 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-obj#readme)

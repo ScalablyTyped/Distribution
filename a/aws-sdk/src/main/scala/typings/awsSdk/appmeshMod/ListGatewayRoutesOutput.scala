@@ -27,7 +27,7 @@ object ListGatewayRoutesOutput {
     
     inline def setGatewayRoutes(value: GatewayRouteList): Self = StObject.set(x, "gatewayRoutes", value.asInstanceOf[js.Any])
     
-    inline def setGatewayRoutesVarargs(value: GatewayRouteRef*): Self = StObject.set(x, "gatewayRoutes", js.Array(value :_*))
+    inline def setGatewayRoutesVarargs(value: GatewayRouteRef*): Self = StObject.set(x, "gatewayRoutes", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

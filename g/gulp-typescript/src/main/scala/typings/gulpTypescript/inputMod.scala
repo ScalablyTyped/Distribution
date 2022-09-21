@@ -66,7 +66,7 @@ object inputMod {
   
   @JSImport("gulp-typescript/release/input", "FileCache")
   @js.native
-  class FileCache protected () extends StObject {
+  open class FileCache protected () extends StObject {
     def this(typescript: Typeofts, options: CompilerOptions, caseSensitive: Boolean) = this()
     
     def addContent(fileName: String, content: String): File = js.native
@@ -79,7 +79,7 @@ object inputMod {
     
     var commonSourceDirectory: String = js.native
     
-    /* private */ var createDictionary: js.Any = js.native
+    /* private */ var createDictionary: Any = js.native
     
     var current: FileDictionary = js.native
     
@@ -92,7 +92,7 @@ object inputMod {
     def getFileNames(): js.Array[String] = js.native
     def getFileNames(onlyGulp: Boolean): js.Array[String] = js.native
     
-    /* private */ var initTypeScriptSourceFile: js.Any = js.native
+    /* private */ var initTypeScriptSourceFile: Any = js.native
     
     def isChanged(): Boolean = js.native
     def isChanged(onlyGulp: Boolean): Boolean = js.native
@@ -152,12 +152,12 @@ object inputMod {
   
   @JSImport("gulp-typescript/release/input", "FileDictionary")
   @js.native
-  class FileDictionary protected () extends StObject {
+  open class FileDictionary protected () extends StObject {
     def this(caseSensitive: Boolean, typescript: Typeofts) = this()
     
     def addContent(fileName: String, content: String): File = js.native
     
-    /* private */ var addFile: js.Any = js.native
+    /* private */ var addFile: Any = js.native
     
     def addGulp(gFile: VinylFile): File = js.native
     
@@ -176,7 +176,7 @@ object inputMod {
     def getFileNames(): js.Array[String] = js.native
     def getFileNames(onlyGulp: Boolean): js.Array[String] = js.native
     
-    /* private */ var getSourceFileNames: js.Any = js.native
+    /* private */ var getSourceFileNames: Any = js.native
     
     def initTypeScriptSourceFile(file: File): Unit = js.native
     

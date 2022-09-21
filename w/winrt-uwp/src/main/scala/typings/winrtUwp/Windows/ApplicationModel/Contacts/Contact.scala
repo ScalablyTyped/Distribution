@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
@@ -33,7 +32,7 @@ trait Contact extends StObject {
   var displayNameOverride: String
   
   /** Gets or sets the last time the user updated their display picture. */
-  var displayPictureUserUpdateTime: Date
+  var displayPictureUserUpdateTime: js.Date
   
   /** Gets the email addresses for a contact. */
   var emails: IVector[ContactEmail]
@@ -116,7 +115,7 @@ trait Contact extends StObject {
   /** Gets or puts the path to the audio file to play when an SMS/MMS message is received from the Contact . */
   var textToneToken: String
   
-  var thumbnail: js.Any
+  var thumbnail: Any
   
   /* unmapped type */
   /** Gets the Web sites for a contact. */
@@ -141,7 +140,7 @@ object Contact {
     dataSuppliers: IVector[String],
     displayName: String,
     displayNameOverride: String,
-    displayPictureUserUpdateTime: Date,
+    displayPictureUserUpdateTime: js.Date,
     emails: IVector[ContactEmail],
     fields: IVector[IContactField],
     firstName: String,
@@ -169,7 +168,7 @@ object Contact {
     sortName: String,
     sourceDisplayPicture: IRandomAccessStreamReference,
     textToneToken: String,
-    thumbnail: js.Any,
+    thumbnail: Any,
     websites: IVector[ContactWebsite],
     yomiDisplayName: String,
     yomiFamilyName: String,
@@ -195,7 +194,7 @@ object Contact {
     
     inline def setDisplayNameOverride(value: String): Self = StObject.set(x, "displayNameOverride", value.asInstanceOf[js.Any])
     
-    inline def setDisplayPictureUserUpdateTime(value: Date): Self = StObject.set(x, "displayPictureUserUpdateTime", value.asInstanceOf[js.Any])
+    inline def setDisplayPictureUserUpdateTime(value: js.Date): Self = StObject.set(x, "displayPictureUserUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setEmails(value: IVector[ContactEmail]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
@@ -251,7 +250,7 @@ object Contact {
     
     inline def setTextToneToken(value: String): Self = StObject.set(x, "textToneToken", value.asInstanceOf[js.Any])
     
-    inline def setThumbnail(value: js.Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     inline def setWebsites(value: IVector[ContactWebsite]): Self = StObject.set(x, "websites", value.asInstanceOf[js.Any])
     

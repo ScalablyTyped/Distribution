@@ -10,10 +10,10 @@ The semantic version parser used by npm.
 | ------------------ | :-------------: |
 | Full name          | semver |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 12481 |
-| # downloads        | 3248538660 |
-| # stars            | 175 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 8.001145296666666E8 |
+| # stars            | 4263.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/node-semver#readme)

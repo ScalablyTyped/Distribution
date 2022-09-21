@@ -10,10 +10,10 @@ basic preset for otplib
 | ------------------ | :-------------: |
 | Full name          | @otplib/preset-default |
 | Keywords           | otplib-preset, node |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 1474934 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 715975.3333333334 |
+| # stars            | 1410.0 |
 
 ## Links
 - [Homepage](https://github.com/yeojz/otplib#readme)

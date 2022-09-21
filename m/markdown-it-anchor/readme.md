@@ -1,7 +1,7 @@
 
 # Scala.js typings for markdown-it-anchor
 
-Typings are for version 4.0
+Typings are for version 8.6.5
 
 ## Library description:
 Header anchors for markdown-it.
@@ -10,13 +10,13 @@ Header anchors for markdown-it.
 | ------------------ | :-------------: |
 | Full name          | markdown-it-anchor |
 | Keywords           | markdown, markdown-it, markdown-it-plugin, header, anchor |
-| # releases         | 13 |
-| # dependents       | 387 |
-| # downloads        | 22015926 |
-| # stars            | 5 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 3665751.3333333335 |
+| # stars            | 202.0 |
 
 ## Links
-- [Homepage](https://github.com/valeriangalliat/markdown-it-anchor)
+- [Homepage](https://github.com/valeriangalliat/markdown-it-anchor#readme)
 - [Bugs](https://github.com/valeriangalliat/markdown-it-anchor/issues)
 - [Repository](https://github.com/valeriangalliat/markdown-it-anchor)
 - [Npm](https://www.npmjs.com/package/markdown-it-anchor)
@@ -24,7 +24,7 @@ Header anchors for markdown-it.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

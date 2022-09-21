@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined storm-react-diagrams.storm-react-diagrams/dist/src/BaseEntity.BaseEvent<storm-react-diagrams.storm-react-diagrams/dist/src/models/DiagramModel.DiagramModel> & {  size :number} */
 trait BaseEventDiagramModelsize extends StObject {
   
-  var entity: BaseEntity[BaseListener[js.Any]]
+  var entity: BaseEntity[BaseListener[Any]]
   
   var firing: Boolean
   
@@ -17,16 +17,16 @@ trait BaseEventDiagramModelsize extends StObject {
   
   var size: Double
   
-  def stopPropagation(): js.Any
+  def stopPropagation(): Any
 }
 object BaseEventDiagramModelsize {
   
   inline def apply(
-    entity: BaseEntity[BaseListener[js.Any]],
+    entity: BaseEntity[BaseListener[Any]],
     firing: Boolean,
     id: String,
     size: Double,
-    stopPropagation: () => js.Any
+    stopPropagation: () => Any
   ): BaseEventDiagramModelsize = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], firing = firing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
     __obj.asInstanceOf[BaseEventDiagramModelsize]
@@ -34,7 +34,7 @@ object BaseEventDiagramModelsize {
   
   extension [Self <: BaseEventDiagramModelsize](x: Self) {
     
-    inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: BaseEntity[BaseListener[Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
     
@@ -42,6 +42,6 @@ object BaseEventDiagramModelsize {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

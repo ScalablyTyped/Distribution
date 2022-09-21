@@ -12,7 +12,7 @@ trait DescribeIAMPolicyAssignmentRequest extends StObject {
   var AssignmentName: IAMPolicyAssignmentName
   
   /**
-    * The ID of the AWS account that contains the assignment that you want to describe.
+    * The ID of the Amazon Web Services account that contains the assignment that you want to describe.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

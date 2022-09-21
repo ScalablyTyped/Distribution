@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Effect")
 @js.native
-class Effect protected () extends StObject {
+open class Effect protected () extends StObject {
   /**
     * This the class constructor. Default options are:
     *
@@ -27,9 +27,9 @@ class Effect protected () extends StObject {
     * This method can be overridden but the super should always be calle first
     */
   def process(ctx: RenderingContext): Boolean = js.native
-  def process(ctx: RenderingContext, fxCtx: Unit, obj: js.Any): Boolean = js.native
+  def process(ctx: RenderingContext, fxCtx: Unit, obj: Any): Boolean = js.native
   def process(ctx: RenderingContext, fxCtx: RenderingContext): Boolean = js.native
-  def process(ctx: RenderingContext, fxCtx: RenderingContext, obj: js.Any): Boolean = js.native
+  def process(ctx: RenderingContext, fxCtx: RenderingContext, obj: Any): Boolean = js.native
   
   /**
     * Changes the easing function used for the ffect
@@ -58,7 +58,7 @@ class Effect protected () extends StObject {
   /**
     * called when the effect is stopped
     */
-  def stop(`object`: js.Any, setEndValue: js.Any): Unit = js.native
+  def stop(`object`: Any, setEndValue: Any): Unit = js.native
   
   var width: Double = js.native
 }

@@ -63,6 +63,6 @@ object BulkCreateOptions {
     
     inline def setUpdateOnDuplicateUndefined: Self = StObject.set(x, "updateOnDuplicate", js.undefined)
     
-    inline def setUpdateOnDuplicateVarargs(value: String*): Self = StObject.set(x, "updateOnDuplicate", js.Array(value :_*))
+    inline def setUpdateOnDuplicateVarargs(value: String*): Self = StObject.set(x, "updateOnDuplicate", js.Array(value*))
   }
 }

@@ -34,7 +34,7 @@ object XVclContainer {
     acquire: () => Unit,
     addVclContainerListener: XVclContainerListener => Unit,
     getWindows: () => SafeArray[XWindow],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeVclContainerListener: XVclContainerListener => Unit
   ): XVclContainer = {

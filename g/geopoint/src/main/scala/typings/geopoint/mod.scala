@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("geopoint", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with GeoPoint {
     def this(lat: Double, lon: Double) = this()

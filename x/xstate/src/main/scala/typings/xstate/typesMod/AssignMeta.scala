@@ -1,7 +1,8 @@
 package typings.xstate.typesMod
 
-import typings.xstate.anon.ContextTContext
+import typings.xstate.anon.Context
 import typings.xstate.stateMod.State
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ trait AssignMeta[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var action: AssignAction[TContext, TEvent]
   
-  var state: js.UndefOr[State[TContext, TEvent, js.Any, ContextTContext[TContext]]] = js.undefined
+  var state: js.UndefOr[State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]] = js.undefined
 }
 object AssignMeta {
   
@@ -25,7 +26,7 @@ object AssignMeta {
     
     inline def setAction(value: AssignAction[TContext, TEvent]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

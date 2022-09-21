@@ -14,6 +14,11 @@ object numberInputMod extends Shortcut {
   @js.native
   val default: ForwardRefReturn[HTMLInputElement, NumberInputProps] = js.native
   
+  @JSImport("carbon-components-react/lib/components/NumberInput", "NumberInput")
+  @js.native
+  open class NumberInput ()
+    extends typings.carbonComponentsReact.numberInputNumberInputMod.NumberInput
+  
   type _To = ForwardRefReturn[HTMLInputElement, NumberInputProps]
   
   /* This means you don't have to write `default`, but can instead just say `numberInputMod.foo` */

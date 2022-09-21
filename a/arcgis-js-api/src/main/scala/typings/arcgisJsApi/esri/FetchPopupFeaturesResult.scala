@@ -59,7 +59,7 @@ object FetchPopupFeaturesResult {
     
     inline def setClientOnlyGraphicsUndefined: Self = StObject.set(x, "clientOnlyGraphics", js.undefined)
     
-    inline def setClientOnlyGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "clientOnlyGraphics", js.Array(value :_*))
+    inline def setClientOnlyGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "clientOnlyGraphics", js.Array(value*))
     
     inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -69,6 +69,6 @@ object FetchPopupFeaturesResult {
     
     inline def setPromisesPerLayerViewUndefined: Self = StObject.set(x, "promisesPerLayerView", js.undefined)
     
-    inline def setPromisesPerLayerViewVarargs(value: FetchPopupFeaturesPromisesPerLayerView*): Self = StObject.set(x, "promisesPerLayerView", js.Array(value :_*))
+    inline def setPromisesPerLayerViewVarargs(value: FetchPopupFeaturesPromisesPerLayerView*): Self = StObject.set(x, "promisesPerLayerView", js.Array(value*))
   }
 }

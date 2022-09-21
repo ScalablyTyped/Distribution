@@ -45,7 +45,7 @@ object ItemColor {
     
     inline def setItemList(value: js.Array[String]): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
     
-    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value :_*))
+    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value*))
     
     inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     

@@ -1,33 +1,25 @@
 package typings.natural.mod
 
+import typings.natural.anon.DamerauLevenshteinDistanc
+import typings.natural.anon.DamerauLevenshteinDistancDeletioncost
+import typings.natural.anon.DamerauLevenshteinDistancInsertioncost
+import typings.natural.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def DamerauLevenshteinDistance(source: java.lang.String, target: java.lang.String): scala.Double = (typings.natural.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def DamerauLevenshteinDistance(
-  source: java.lang.String,
-  target: java.lang.String,
-  options: typings.natural.anon.DamerauLevenshteinDistanc
-): typings.natural.mod.SubstringDistanceResult = (typings.natural.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.natural.mod.SubstringDistanceResult]
-inline def DamerauLevenshteinDistance(
-  source: java.lang.String,
-  target: java.lang.String,
-  options: typings.natural.anon.DamerauLevenshteinDistancDeletioncost
-): scala.Double = (typings.natural.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def DamerauLevenshteinDistance(
-  source: java.lang.String,
-  target: java.lang.String,
-  options: typings.natural.anon.DamerauLevenshteinDistancInsertioncost
-): scala.Double | typings.natural.mod.SubstringDistanceResult = (typings.natural.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double | typings.natural.mod.SubstringDistanceResult]
+inline def DamerauLevenshteinDistance(source: String, target: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def DamerauLevenshteinDistance(source: String, target: String, options: DamerauLevenshteinDistanc): SubstringDistanceResult = (^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SubstringDistanceResult]
+inline def DamerauLevenshteinDistance(source: String, target: String, options: DamerauLevenshteinDistancDeletioncost): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def DamerauLevenshteinDistance(source: String, target: String, options: DamerauLevenshteinDistancInsertioncost): Double | SubstringDistanceResult = (^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | SubstringDistanceResult]
 
-type BayesClassifierCallback = js.Function2[/* err */ js.Any, /* classifier */ js.Any, scala.Unit]
+type BayesClassifierCallback = js.Function2[/* err */ Any, /* classifier */ Any, Unit]
 
-type LogisticRegressionClassifierCallback = js.Function2[/* err */ js.Any, /* classifier */ js.Any, scala.Unit]
+type LogisticRegressionClassifierCallback = js.Function2[/* err */ Any, /* classifier */ Any, Unit]
 
-type TfIdfCallback = js.Function2[/* i */ scala.Double, /* measure */ scala.Double, scala.Unit]
+type TfIdfCallback = js.Function2[/* i */ Double, /* measure */ Double, Unit]
 
-type WordNetGetCallback = js.Function1[/* results */ typings.natural.mod.WordNetLookupResults, scala.Unit]
+type WordNetGetCallback = js.Function1[/* results */ WordNetLookupResults, Unit]
 
-type WordNetLookupCallback = js.Function1[/* results */ js.Array[typings.natural.mod.WordNetLookupResults], scala.Unit]
+type WordNetLookupCallback = js.Function1[/* results */ js.Array[WordNetLookupResults], Unit]

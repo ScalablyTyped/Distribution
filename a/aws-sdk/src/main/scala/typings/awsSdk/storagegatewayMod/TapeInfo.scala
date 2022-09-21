@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TapeInfo extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
+    * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and Amazon Web Services Region.
     */
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * The date that the tape entered the custom tape pool with tape retention lock enabled.
     */
-  var PoolEntryDate: js.UndefOr[Time] = js.undefined
+  var PoolEntryDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid Values: GLACIER | DEEP_ARCHIVE 
+    * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool.
     */
   var PoolId: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolId] = js.undefined
   
   /**
     * The date that the tape became subject to tape retention lock.
     */
-  var RetentionStartDate: js.UndefOr[Time] = js.undefined
+  var RetentionStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of a virtual tape.
@@ -59,7 +59,7 @@ object TapeInfo {
     
     inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    inline def setPoolEntryDate(value: Time): Self = StObject.set(x, "PoolEntryDate", value.asInstanceOf[js.Any])
+    inline def setPoolEntryDate(value: js.Date): Self = StObject.set(x, "PoolEntryDate", value.asInstanceOf[js.Any])
     
     inline def setPoolEntryDateUndefined: Self = StObject.set(x, "PoolEntryDate", js.undefined)
     
@@ -67,7 +67,7 @@ object TapeInfo {
     
     inline def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
-    inline def setRetentionStartDate(value: Time): Self = StObject.set(x, "RetentionStartDate", value.asInstanceOf[js.Any])
+    inline def setRetentionStartDate(value: js.Date): Self = StObject.set(x, "RetentionStartDate", value.asInstanceOf[js.Any])
     
     inline def setRetentionStartDateUndefined: Self = StObject.set(x, "RetentionStartDate", js.undefined)
     

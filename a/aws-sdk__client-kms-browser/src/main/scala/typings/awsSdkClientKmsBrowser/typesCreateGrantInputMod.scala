@@ -12,7 +12,6 @@ import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.RetireGrant
 import typings.awsSdkClientKmsBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesGrantConstraintsMod.GrantConstraints
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ object typesCreateGrantInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -53,7 +52,7 @@ object typesCreateGrantInputMod {
     /**
       * <p>A list of grant tokens.</p> <p>For more information, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token">Grant Tokens</a> in the <i>AWS Key Management Service Developer Guide</i>.</p>
       */
-    var GrantTokens: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var GrantTokens: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>The principal that is given permission to perform the operations that the grant permits.</p> <p>To specify the principal, use the <a href="http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">Amazon Resource Name (ARN)</a> of an AWS principal. Valid AWS principals include AWS accounts (root), IAM users, IAM roles, federated users, and assumed role users. For examples of the ARN syntax to use for specifying a principal, see <a href="http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-iam">AWS Identity and Access Management (IAM)</a> in the Example ARNs section of the <i>AWS General Reference</i>.</p>
@@ -75,7 +74,7 @@ object typesCreateGrantInputMod {
       */
     var Operations: (js.Array[
         Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
-      ]) | (Iterable[
+      ]) | (js.Iterable[
         Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
       ])
     
@@ -91,7 +90,7 @@ object typesCreateGrantInputMod {
       KeyId: String,
       Operations: (js.Array[
           Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
         ])
     ): CreateGrantInput = {
@@ -106,7 +105,7 @@ object typesCreateGrantInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -119,11 +118,11 @@ object typesCreateGrantInputMod {
       
       inline def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
       
-      inline def setGrantTokens(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
+      inline def setGrantTokens(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
       
       inline def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
       
-      inline def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
+      inline def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "GrantTokens", js.Array(value*))
       
       inline def setGranteePrincipal(value: String): Self = StObject.set(x, "GranteePrincipal", value.asInstanceOf[js.Any])
       
@@ -136,14 +135,14 @@ object typesCreateGrantInputMod {
       inline def setOperations(
         value: (js.Array[
               Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
-            ]) | (Iterable[
+            ]) | (js.Iterable[
               Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
             ])
       ): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
       
       inline def setOperationsVarargs(
         value: (Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String)*
-      ): Self = StObject.set(x, "Operations", js.Array(value :_*))
+      ): Self = StObject.set(x, "Operations", js.Array(value*))
       
       inline def setRetiringPrincipal(value: String): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
       

@@ -11,12 +11,16 @@ trait ExtentProperties
   /**
     * The maximum possible `m` value in an extent envelope.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmax)
     */
   var mmax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum possible `m` value of an extent envelope.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmin)
     */
@@ -25,12 +29,16 @@ trait ExtentProperties
   /**
     * The maximum X-coordinate of an extent envelope.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmax)
     */
   var xmax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum X-coordinate of an extent envelope.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmin)
     */
@@ -39,12 +47,16 @@ trait ExtentProperties
   /**
     * The maximum Y-coordinate of an extent envelope.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymax)
     */
   var ymax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum Y-coordinate of an extent envelope.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymin)
     */
@@ -53,12 +65,16 @@ trait ExtentProperties
   /**
     * The maximum possible `z`, or elevation, value in an extent envelope.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmax)
     */
   var zmax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum possible `z`, or elevation, value of an extent envelope.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmin)
     */

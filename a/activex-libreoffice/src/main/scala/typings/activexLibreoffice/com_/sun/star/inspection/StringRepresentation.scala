@@ -18,8 +18,8 @@ trait StringRepresentation
 object StringRepresentation {
   
   inline def apply(
-    convertToControlValue: js.Any => String,
-    convertToPropertyValue: (String, `type`) => js.Any,
+    convertToControlValue: Any => String,
+    convertToPropertyValue: (String, `type`) => Any,
     create: XTypeConverter => Unit,
     createConstant: (XTypeConverter, String, SeqEquiv[String]) => Unit
   ): StringRepresentation = {

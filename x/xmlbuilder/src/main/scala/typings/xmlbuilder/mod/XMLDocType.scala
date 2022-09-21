@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("xmlbuilder", "XMLDocType")
 @js.native
-class XMLDocType () extends StObject {
+open class XMLDocType () extends StObject {
   
   def att(elementName: String, attributeName: String, attributeType: String, defaultValueType: String): XMLDocType = js.native
   def att(
@@ -19,7 +19,7 @@ class XMLDocType () extends StObject {
     attributeName: String,
     attributeType: String,
     defaultValueType: String,
-    defaultValue: js.Any
+    defaultValue: Any
   ): XMLDocType = js.native
   
   /**
@@ -43,7 +43,7 @@ class XMLDocType () extends StObject {
     attributeName: String,
     attributeType: String,
     defaultValueType: String,
-    defaultValue: js.Any
+    defaultValue: Any
   ): XMLDocType = js.native
   
   /**
@@ -129,11 +129,11 @@ class XMLDocType () extends StObject {
   def entity(name: String, value: String): XMLDocType = js.native
   def entity(name: String, value: NData): XMLDocType = js.native
   
-  def ins(array: js.Array[js.Any]): XMLDocType = js.native
+  def ins(array: js.Array[Any]): XMLDocType = js.native
   def ins(obj: js.Object): XMLDocType = js.native
-  def ins(target: String, value: js.Any): XMLDocType = js.native
+  def ins(target: String, value: Any): XMLDocType = js.native
   
-  def instruction(array: js.Array[js.Any]): XMLDocType = js.native
+  def instruction(array: js.Array[Any]): XMLDocType = js.native
   def instruction(obj: js.Object): XMLDocType = js.native
   /**
     * Creates a new processing instruction node and appends it to the list 
@@ -146,7 +146,7 @@ class XMLDocType () extends StObject {
     * 
     * @returns the DOCTYPE node
     */
-  def instruction(target: String, value: js.Any): XMLDocType = js.native
+  def instruction(target: String, value: Any): XMLDocType = js.native
   
   def not(name: String, value: PubID): XMLDocType = js.native
   

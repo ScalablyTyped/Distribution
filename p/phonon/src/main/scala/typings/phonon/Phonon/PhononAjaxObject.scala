@@ -11,19 +11,19 @@ trait PhononAjaxObject extends StObject {
   
   var crossDomain: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dataType: String
   
   var error: js.UndefOr[
-    js.Function3[/* res */ js.Any, /* flagError */ PhononAjaxErrorFlag, /* xhr */ XMLHttpRequest, Unit]
+    js.Function3[/* res */ Any, /* flagError */ PhononAjaxErrorFlag, /* xhr */ XMLHttpRequest, Unit]
   ] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   var method: String
   
-  def success(res: js.Any, xhr: XMLHttpRequest): Unit
+  def success(res: Any, xhr: XMLHttpRequest): Unit
   
   var timeout: js.UndefOr[Double] = js.undefined
   
@@ -31,7 +31,7 @@ trait PhononAjaxObject extends StObject {
 }
 object PhononAjaxObject {
   
-  inline def apply(dataType: String, method: String, success: (js.Any, XMLHttpRequest) => Unit, url: String): PhononAjaxObject = {
+  inline def apply(dataType: String, method: String, success: (Any, XMLHttpRequest) => Unit, url: String): PhononAjaxObject = {
     val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], success = js.Any.fromFunction2(success), url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhononAjaxObject]
   }
@@ -46,23 +46,23 @@ object PhononAjaxObject {
     
     inline def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setError(value: (/* res */ js.Any, /* flagError */ PhononAjaxErrorFlag, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(value: (/* res */ Any, /* flagError */ PhononAjaxErrorFlag, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setSuccess(value: (js.Any, XMLHttpRequest) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+    inline def setSuccess(value: (Any, XMLHttpRequest) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

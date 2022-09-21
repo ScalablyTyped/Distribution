@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object idMod {
   
-  @JSImport("inversify/dts/utils/id", JSImport.Namespace)
+  @JSImport("inversify/lib/utils/id", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

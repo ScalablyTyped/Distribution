@@ -56,7 +56,7 @@ object HistogramChartSpec {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: HistogramSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: HistogramSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setShowItemDividers(value: Boolean): Self = StObject.set(x, "showItemDividers", value.asInstanceOf[js.Any])
     

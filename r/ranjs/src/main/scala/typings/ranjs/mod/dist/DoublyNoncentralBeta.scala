@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.DoublyNoncentralBeta")
 @js.native
-class DoublyNoncentralBeta ()
+open class DoublyNoncentralBeta ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.DoublyNoncentralBeta] {
   def this(alpha: Double) = this()

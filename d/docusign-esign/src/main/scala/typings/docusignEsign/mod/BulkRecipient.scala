@@ -116,7 +116,7 @@ object BulkRecipient {
     
     inline def setErrorDetailsVarargs(
       value: (/* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails)*
-    ): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
+    ): Self = StObject.set(x, "errorDetails", js.Array(value*))
     
     inline def setIdentification(value: String): Self = StObject.set(x, "identification", value.asInstanceOf[js.Any])
     
@@ -138,7 +138,7 @@ object BulkRecipient {
     
     inline def setRecipientSignatureProviderInfoUndefined: Self = StObject.set(x, "recipientSignatureProviderInfo", js.undefined)
     
-    inline def setRecipientSignatureProviderInfoVarargs(value: BulkRecipientSignatureProvider*): Self = StObject.set(x, "recipientSignatureProviderInfo", js.Array(value :_*))
+    inline def setRecipientSignatureProviderInfoVarargs(value: BulkRecipientSignatureProvider*): Self = StObject.set(x, "recipientSignatureProviderInfo", js.Array(value*))
     
     inline def setRowNumber(value: String): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
     
@@ -148,6 +148,6 @@ object BulkRecipient {
     
     inline def setTabLabelsUndefined: Self = StObject.set(x, "tabLabels", js.undefined)
     
-    inline def setTabLabelsVarargs(value: BulkRecipientTabLabel*): Self = StObject.set(x, "tabLabels", js.Array(value :_*))
+    inline def setTabLabelsVarargs(value: BulkRecipientTabLabel*): Self = StObject.set(x, "tabLabels", js.Array(value*))
   }
 }

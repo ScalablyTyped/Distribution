@@ -12,7 +12,7 @@ object subscriptionClientMod {
   
   @JSImport("ms-rest-azure/lib/subscriptionManagement/subscriptionClient", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SubscriptionClient {
     /**

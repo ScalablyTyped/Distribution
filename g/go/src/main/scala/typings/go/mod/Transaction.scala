@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Construct an object holding an empty list of ChangedEvents and no .name.
   */
-class Transaction () extends StObject {
+open class Transaction () extends StObject {
   
   /**
     * This predicate returns true if you can call .redo, namely when .isComplete is true.

@@ -7,22 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaZoneSetPolicyRequest extends StObject {
   
   /**
-    * Flatten Policy to create a backwacd compatible wire-format. Deprecated.
-    * Use &#39;policy&#39; to specify bindings.
+    * Flatten Policy to create a backwacd compatible wire-format. Deprecated. Use 'policy' to specify bindings.
     */
   var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.undefined
   
   /**
-    * Flatten Policy to create a backward compatible wire-format. Deprecated.
-    * Use &#39;policy&#39; to specify the etag.
+    * Flatten Policy to create a backward compatible wire-format. Deprecated. Use 'policy' to specify the etag.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * REQUIRED: The complete policy to be applied to the &#39;resource&#39;.
-    * The size of the policy is limited to a few 10s of KB. An empty policy is
-    * in general a valid policy but certain services (like Projects) might
-    * reject them.
+    * REQUIRED: The complete policy to be applied to the 'resource'. The size of the policy is limited to a few 10s of KB. An empty policy is in general a valid policy but certain services (like Projects) might reject them.
     */
   var policy: js.UndefOr[SchemaPolicy] = js.undefined
 }
@@ -39,9 +34,11 @@ object SchemaZoneSetPolicyRequest {
     
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    inline def setBindingsVarargs(value: SchemaBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: SchemaBinding*): Self = StObject.set(x, "bindings", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     

@@ -14,10 +14,10 @@ trait DataSource
   def add(model: js.Object): Model = js.native
   def add(model: Model): Model = js.native
   
-  def aggregate(): js.Any = js.native
-  def aggregate(`val`: js.Any): Unit = js.native
+  def aggregate(): Any = js.native
+  def aggregate(`val`: Any): Unit = js.native
   
-  def aggregates(): js.Any = js.native
+  def aggregates(): Any = js.native
   
   def at(index: Double): ObservableObject = js.native
   
@@ -25,22 +25,22 @@ trait DataSource
   def cancelChanges(model: Model): Unit = js.native
   
   def data(): ObservableArray = js.native
-  def data(value: js.Any): Unit = js.native
+  def data(value: Any): Unit = js.native
   
-  def fetch(): JQueryPromise[js.Any] = js.native
-  def fetch(callback: js.Function): JQueryPromise[js.Any] = js.native
+  def fetch(): JQueryPromise[Any] = js.native
+  def fetch(callback: js.Function): JQueryPromise[Any] = js.native
   
   def filter(): DataSourceFilters = js.native
   def filter(filters: js.Array[DataSourceFilterItem]): Unit = js.native
   def filter(filters: DataSourceFilterItem): Unit = js.native
   def filter(filters: DataSourceFilters): Unit = js.native
   
-  def get(id: js.Any): Model = js.native
+  def get(id: Any): Model = js.native
   
   def getByUid(uid: String): Model = js.native
   
-  def group(): js.Any = js.native
-  def group(groups: js.Any): Unit = js.native
+  def group(): Any = js.native
+  def group(groups: Any): Unit = js.native
   
   def hasChanges(): Boolean = js.native
   
@@ -52,8 +52,8 @@ trait DataSource
   def insert(index: Double, model: js.Object): Model = js.native
   def insert(index: Double, model: Model): Model = js.native
   
-  def offlineData(): js.Array[js.Any] = js.native
-  def offlineData(data: js.Array[js.Any]): Unit = js.native
+  def offlineData(): js.Array[Any] = js.native
+  def offlineData(data: js.Array[Any]): Unit = js.native
   
   def online(): Boolean = js.native
   def online(value: Boolean): Unit = js.native
@@ -67,22 +67,22 @@ trait DataSource
   def pageSize(size: Double): Unit = js.native
   
   def pushCreate(model: js.Object): Unit = js.native
-  def pushCreate(models: js.Array[js.Any]): Unit = js.native
+  def pushCreate(models: js.Array[Any]): Unit = js.native
   
   def pushDestroy(model: js.Object): Unit = js.native
-  def pushDestroy(models: js.Array[js.Any]): Unit = js.native
+  def pushDestroy(models: js.Array[Any]): Unit = js.native
   
   def pushInsert(index: Double, model: js.Object): Unit = js.native
-  def pushInsert(index: Double, models: js.Array[js.Any]): Unit = js.native
+  def pushInsert(index: Double, models: js.Array[Any]): Unit = js.native
   
   def pushUpdate(model: js.Object): Unit = js.native
-  def pushUpdate(models: js.Array[js.Any]): Unit = js.native
+  def pushUpdate(models: js.Array[Any]): Unit = js.native
   
-  def query(): JQueryPromise[js.Any] = js.native
-  def query(options: js.Any): JQueryPromise[js.Any] = js.native
+  def query(): JQueryPromise[Any] = js.native
+  def query(options: Any): JQueryPromise[Any] = js.native
   
-  def read(): JQueryPromise[js.Any] = js.native
-  def read(data: js.Any): JQueryPromise[js.Any] = js.native
+  def read(): JQueryPromise[Any] = js.native
+  def read(data: Any): JQueryPromise[Any] = js.native
   
   def remove(model: ObservableObject): Unit = js.native
   
@@ -92,7 +92,7 @@ trait DataSource
   def sort(sort: js.Array[DataSourceSortItem]): Unit = js.native
   def sort(sort: DataSourceSortItem): Unit = js.native
   
-  def sync(): JQueryPromise[js.Any] = js.native
+  def sync(): JQueryPromise[Any] = js.native
   
   def total(): Double = js.native
   

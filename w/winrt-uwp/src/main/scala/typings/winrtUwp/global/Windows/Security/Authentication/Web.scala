@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Security.Authentication
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
@@ -126,7 +125,7 @@ object Web {
     /** Represents an error from a web account provider. */
     @JSGlobal("Windows.Security.Authentication.Web.Core.WebProviderError")
     @js.native
-    class WebProviderError protected ()
+    open class WebProviderError protected ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError {
       /**
@@ -152,7 +151,7 @@ object Web {
     /** Represents a request to an online identity provider for an authentication token. */
     @JSGlobal("Windows.Security.Authentication.Web.Core.WebTokenRequest")
     @js.native
-    class WebTokenRequest protected ()
+    open class WebTokenRequest protected ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest {
       /**
@@ -188,7 +187,7 @@ object Web {
       ) = this()
       
       /* CompleteClass */
-      var appProperties: js.Any = js.native
+      var appProperties: Any = js.native
       
       /* unmapped type */
       /** Gets the Id of the client making the request. */
@@ -281,7 +280,7 @@ object Web {
     @JSGlobal("Windows.Security.Authentication.Web.Core.WebTokenResponse")
     @js.native
     /** Initializes a new instance of the WebTokenResponse class. */
-    class WebTokenResponse ()
+    open class WebTokenResponse ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenResponse {
       /**
@@ -331,7 +330,7 @@ object Web {
     /** Represents the client view for a web account. Use this to control what information about an account from a provider is available to the client. */
     @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountClientView")
     @js.native
-    class WebAccountClientView protected ()
+    open class WebAccountClientView protected ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebAccountClientView {
       /**
@@ -443,7 +442,7 @@ object Web {
         * @return When this method completes, it returns all provider web accounts.
         */
       /* static member */
-      inline def findAllProviderWebAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllProviderWebAccountsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      inline def findAllProviderWebAccountsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllProviderWebAccountsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
       
       /**
         * Gets the scope of the web account.
@@ -459,7 +458,7 @@ object Web {
         * @return When this method completes, it returns the views for the web account.
         */
       /* static member */
-      inline def getViewsAsync(webAccount: WebAccount): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewsAsync")(webAccount.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      inline def getViewsAsync(webAccount: WebAccount): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewsAsync")(webAccount.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
       
       /**
         * Pulls cookies asynchronously. Use this to enable single sign-on in an app after a user has entered their credentials into a web browser.
@@ -624,7 +623,7 @@ object Web {
       
       /** Gets or sets the cache expiration time. */
       /* CompleteClass */
-      var cacheExpirationTime: Date = js.native
+      var cacheExpirationTime: js.Date = js.native
       
       /** Gets the kind of web account provider operation. */
       /* CompleteClass */
@@ -808,7 +807,7 @@ object Web {
     /** Represents a web provider token response. */
     @JSGlobal("Windows.Security.Authentication.Web.Provider.WebProviderTokenResponse")
     @js.native
-    class WebProviderTokenResponse protected ()
+    open class WebProviderTokenResponse protected ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Authentication.Web.Provider.WebProviderTokenResponse {
       /**

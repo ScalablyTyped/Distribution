@@ -29,7 +29,7 @@ object ListGatewaysOutput {
     
     inline def setGatewaysUndefined: Self = StObject.set(x, "Gateways", js.undefined)
     
-    inline def setGatewaysVarargs(value: GatewayInfo*): Self = StObject.set(x, "Gateways", js.Array(value :_*))
+    inline def setGatewaysVarargs(value: GatewayInfo*): Self = StObject.set(x, "Gateways", js.Array(value*))
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

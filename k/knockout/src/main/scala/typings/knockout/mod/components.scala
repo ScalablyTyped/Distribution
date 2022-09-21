@@ -24,8 +24,8 @@ object components {
   inline def get(
     componentName: String,
     callback: js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ /* definition */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Config */ /* config */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ /* definition */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Config */ /* config */ Any, 
       Unit
     ]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(componentName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -64,7 +64,7 @@ object components {
       
       inline def setTemplate(value: js.Array[Node]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value :_*))
+      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value*))
     }
   }
   
@@ -87,7 +87,7 @@ object components {
       
       inline def setTemplateNodes(value: js.Array[Node]): Self = StObject.set(x, "templateNodes", value.asInstanceOf[js.Any])
       
-      inline def setTemplateNodesVarargs(value: Node*): Self = StObject.set(x, "templateNodes", js.Array(value :_*))
+      inline def setTemplateNodesVarargs(value: Node*): Self = StObject.set(x, "templateNodes", js.Array(value*))
     }
   }
   
@@ -97,9 +97,9 @@ object components {
     
     var synchronous: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[RequireConfig | TemplateConfig | js.Any] = js.undefined
+    var template: js.UndefOr[RequireConfig | TemplateConfig | Any] = js.undefined
     
-    var viewModel: js.UndefOr[RequireConfig | ViewModelConfig | js.Any] = js.undefined
+    var viewModel: js.UndefOr[RequireConfig | ViewModelConfig | Any] = js.undefined
   }
   object Config {
     
@@ -118,13 +118,13 @@ object components {
       
       inline def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
       
-      inline def setTemplate(value: RequireConfig | TemplateConfig | js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: RequireConfig | TemplateConfig | Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value :_*))
+      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value*))
       
-      inline def setViewModel(value: RequireConfig | ViewModelConfig | js.Any): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+      inline def setViewModel(value: RequireConfig | ViewModelConfig | Any): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
       
       inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     }
@@ -204,7 +204,7 @@ object components {
     var loadTemplate: js.UndefOr[
         js.Function3[
           /* componentName */ String, 
-          /* config */ TemplateConfig | js.Any, 
+          /* config */ TemplateConfig | Any, 
           /* callback */ js.Function1[/* resolvedTemplate */ js.Array[Node] | Null, Unit], 
           Unit
         ]
@@ -213,7 +213,7 @@ object components {
     var loadViewModel: js.UndefOr[
         js.Function3[
           /* componentName */ String, 
-          /* config */ ViewModelConfig | js.Any, 
+          /* config */ ViewModelConfig | Any, 
           /* callback */ js.Function1[/* resolvedViewModel */ CreateViewModel | Null, Unit], 
           Unit
         ]
@@ -241,13 +241,13 @@ object components {
       inline def setLoadComponentUndefined: Self = StObject.set(x, "loadComponent", js.undefined)
       
       inline def setLoadTemplate(
-        value: (/* componentName */ String, /* config */ TemplateConfig | js.Any, /* callback */ js.Function1[/* resolvedTemplate */ js.Array[Node] | Null, Unit]) => Unit
+        value: (/* componentName */ String, /* config */ TemplateConfig | Any, /* callback */ js.Function1[/* resolvedTemplate */ js.Array[Node] | Null, Unit]) => Unit
       ): Self = StObject.set(x, "loadTemplate", js.Any.fromFunction3(value))
       
       inline def setLoadTemplateUndefined: Self = StObject.set(x, "loadTemplate", js.undefined)
       
       inline def setLoadViewModel(
-        value: (/* componentName */ String, /* config */ ViewModelConfig | js.Any, /* callback */ js.Function1[/* resolvedViewModel */ CreateViewModel | Null, Unit]) => Unit
+        value: (/* componentName */ String, /* config */ ViewModelConfig | Any, /* callback */ js.Function1[/* resolvedViewModel */ CreateViewModel | Null, Unit]) => Unit
       ): Self = StObject.set(x, "loadViewModel", js.Any.fromFunction3(value))
       
       inline def setLoadViewModelUndefined: Self = StObject.set(x, "loadViewModel", js.undefined)
@@ -350,24 +350,24 @@ object components {
     }
   }
   
-  type ViewModelParams = StringDictionary[js.Any]
+  type ViewModelParams = StringDictionary[Any]
   
   trait ViewModelStatic
     extends StObject
        with ViewModelConfig {
     
-    var instance: js.Any
+    var instance: Any
   }
   object ViewModelStatic {
     
-    inline def apply(instance: js.Any): ViewModelStatic = {
+    inline def apply(instance: Any): ViewModelStatic = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewModelStatic]
     }
     
     extension [Self <: ViewModelStatic](x: Self) {
       
-      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -9,12 +9,12 @@ trait TimestampRange extends StObject {
   /**
     * The minimum value of the timestamp range.
     */
-  var beginDate: js.UndefOr[Timestamp] = js.undefined
+  var beginDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum value of the timestamp range.
     */
-  var endDate: js.UndefOr[Timestamp] = js.undefined
+  var endDate: js.UndefOr[js.Date] = js.undefined
 }
 object TimestampRange {
   
@@ -25,11 +25,11 @@ object TimestampRange {
   
   extension [Self <: TimestampRange](x: Self) {
     
-    inline def setBeginDate(value: Timestamp): Self = StObject.set(x, "beginDate", value.asInstanceOf[js.Any])
+    inline def setBeginDate(value: js.Date): Self = StObject.set(x, "beginDate", value.asInstanceOf[js.Any])
     
     inline def setBeginDateUndefined: Self = StObject.set(x, "beginDate", js.undefined)
     
-    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
   }

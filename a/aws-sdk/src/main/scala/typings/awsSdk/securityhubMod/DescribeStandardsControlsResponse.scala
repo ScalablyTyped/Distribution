@@ -29,7 +29,7 @@ object DescribeStandardsControlsResponse {
     
     inline def setControlsUndefined: Self = StObject.set(x, "Controls", js.undefined)
     
-    inline def setControlsVarargs(value: StandardsControl*): Self = StObject.set(x, "Controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: StandardsControl*): Self = StObject.set(x, "Controls", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

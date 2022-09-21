@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListStartDragNodeEventArgs")
 @js.native
-class ASPxClientTreeListStartDragNodeEventArgs ()
+open class ASPxClientTreeListStartDragNodeEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListStartDragNodeEventArgs {
   
@@ -23,7 +23,7 @@ class ASPxClientTreeListStartDragNodeEventArgs ()
     * Provides access to the parameters associated with the ASPxClientTreeList.NodeClick and ASPxClientTreeList.NodeDblClick events.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the processed node's key value.
@@ -35,5 +35,5 @@ class ASPxClientTreeListStartDragNodeEventArgs ()
     * Gets an array of targets where a node can be dragged.
     */
   /* CompleteClass */
-  var targets: js.Array[js.Any] = js.native
+  var targets: js.Array[Any] = js.native
 }

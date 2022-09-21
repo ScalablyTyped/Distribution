@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rc-easyui", "FormField")
 @js.native
-class FormField protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(e: js.Any) = this()
+open class FormField protected ()
+  extends Component[Any, js.Object, Any] {
+  def this(e: Any) = this()
   
-  def renderError(e: js.Any): js.Any = js.native
+  def renderError(e: Any): Any = js.native
   
-  def renderField(e: js.Any): js.Any = js.native
+  def renderField(e: Any): Any = js.native
   
-  def renderInput(e: js.Any, t: js.Any): js.Any = js.native
+  def renderInput(e: Any, t: Any): Any = js.native
   
-  def renderLabel(e: js.Any): js.Any = js.native
+  def renderLabel(e: Any): Any = js.native
 }
 /* static members */
 object FormField {
@@ -30,7 +30,7 @@ object FormField {
     
     object floatingLabel {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.contextTypes.floatingLabel")
       @js.native
@@ -39,12 +39,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.contextTypes.floatingLabel
       @JSImport("rc-easyui", "FormField.contextTypes.floatingLabel.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object labelAlign {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.contextTypes.labelAlign")
       @js.native
@@ -53,12 +53,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.contextTypes.labelAlign
       @JSImport("rc-easyui", "FormField.contextTypes.labelAlign.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object labelPosition {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.contextTypes.labelPosition")
       @js.native
@@ -67,12 +67,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.contextTypes.labelPosition
       @JSImport("rc-easyui", "FormField.contextTypes.labelPosition.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object labelWidth {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.contextTypes.labelWidth")
       @js.native
@@ -81,12 +81,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.contextTypes.labelWidth
       @JSImport("rc-easyui", "FormField.contextTypes.labelWidth.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object locale {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.contextTypes.locale")
       @js.native
@@ -95,12 +95,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.contextTypes.locale
       @JSImport("rc-easyui", "FormField.contextTypes.locale.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object t {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.contextTypes.t")
       @js.native
@@ -109,7 +109,7 @@ object FormField {
       // Circular reference from rc_easyui.FormField.contextTypes.t
       @JSImport("rc-easyui", "FormField.contextTypes.t.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
   
@@ -122,7 +122,7 @@ object FormField {
     
     object className {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.propTypes.className")
       @js.native
@@ -131,12 +131,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.propTypes.className
       @JSImport("rc-easyui", "FormField.propTypes.className.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object label {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.propTypes.label")
       @js.native
@@ -145,12 +145,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.propTypes.label
       @JSImport("rc-easyui", "FormField.propTypes.label.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object labelAlign {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.propTypes.labelAlign")
       @js.native
@@ -159,12 +159,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.propTypes.labelAlign
       @JSImport("rc-easyui", "FormField.propTypes.labelAlign.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object labelPosition {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.propTypes.labelPosition")
       @js.native
@@ -173,12 +173,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.propTypes.labelPosition
       @JSImport("rc-easyui", "FormField.propTypes.labelPosition.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object labelWidth {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.propTypes.labelWidth")
       @js.native
@@ -187,12 +187,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.propTypes.labelWidth
       @JSImport("rc-easyui", "FormField.propTypes.labelWidth.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object name {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.propTypes.name")
       @js.native
@@ -201,12 +201,12 @@ object FormField {
       // Circular reference from rc_easyui.FormField.propTypes.name
       @JSImport("rc-easyui", "FormField.propTypes.name.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object style {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "FormField.propTypes.style")
       @js.native
@@ -215,7 +215,7 @@ object FormField {
       // Circular reference from rc_easyui.FormField.propTypes.style
       @JSImport("rc-easyui", "FormField.propTypes.style.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
 }

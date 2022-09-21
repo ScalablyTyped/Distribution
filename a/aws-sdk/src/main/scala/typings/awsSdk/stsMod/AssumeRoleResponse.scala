@@ -20,6 +20,11 @@ trait AssumeRoleResponse extends StObject {
     * A percentage value that indicates the packed size of the session policies and session tags combined passed in the request. The request fails if the packed size is greater than 100 percent, which means the policies and tags exceeded the allowed space.
     */
   var PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined
+  
+  /**
+    * The source identity specified by the principal that is calling the AssumeRole operation. You can require users to specify a source identity when they assume a role. You do this by using the sts:SourceIdentity condition key in a role trust policy. You can use source identity information in CloudTrail logs to determine who took actions with a role. You can use the aws:SourceIdentity condition key to further control access to Amazon Web Services resources based on the value of source identity. For more information about using source identity, see Monitor and control actions taken with assumed roles in the IAM User Guide. The regex used to validate this parameter is a string of characters consisting of upper- and lower-case alphanumeric characters with no spaces. You can also include underscores or any of the following characters: =,.@-
+    */
+  var SourceIdentity: js.UndefOr[sourceIdentityType] = js.undefined
 }
 object AssumeRoleResponse {
   
@@ -41,5 +46,9 @@ object AssumeRoleResponse {
     inline def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
     
     inline def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
+    
+    inline def setSourceIdentity(value: sourceIdentityType): Self = StObject.set(x, "SourceIdentity", value.asInstanceOf[js.Any])
+    
+    inline def setSourceIdentityUndefined: Self = StObject.set(x, "SourceIdentity", js.undefined)
   }
 }

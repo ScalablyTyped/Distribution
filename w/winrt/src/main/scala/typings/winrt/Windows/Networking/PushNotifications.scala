@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Networking
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.UI.Notifications.BadgeNotification
 import typings.winrt.Windows.UI.Notifications.TileNotification
@@ -42,15 +41,15 @@ object PushNotifications {
     
     def close(): Unit
     
-    var expirationTime: Date
+    var expirationTime: js.Date
     
-    var onpushnotificationreceived: js.Any
+    var onpushnotificationreceived: Any
     
     var uri: String
   }
   object IPushNotificationChannel {
     
-    inline def apply(close: () => Unit, expirationTime: Date, onpushnotificationreceived: js.Any, uri: String): IPushNotificationChannel = {
+    inline def apply(close: () => Unit, expirationTime: js.Date, onpushnotificationreceived: Any, uri: String): IPushNotificationChannel = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), expirationTime = expirationTime.asInstanceOf[js.Any], onpushnotificationreceived = onpushnotificationreceived.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPushNotificationChannel]
     }
@@ -59,9 +58,9 @@ object PushNotifications {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      inline def setExpirationTime(value: Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+      inline def setExpirationTime(value: js.Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
       
-      inline def setOnpushnotificationreceived(value: js.Any): Self = StObject.set(x, "onpushnotificationreceived", value.asInstanceOf[js.Any])
+      inline def setOnpushnotificationreceived(value: Any): Self = StObject.set(x, "onpushnotificationreceived", value.asInstanceOf[js.Any])
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
@@ -142,7 +141,7 @@ object PushNotifications {
        with IPushNotificationChannel
   object PushNotificationChannel {
     
-    inline def apply(close: () => Unit, expirationTime: Date, onpushnotificationreceived: js.Any, uri: String): PushNotificationChannel = {
+    inline def apply(close: () => Unit, expirationTime: js.Date, onpushnotificationreceived: Any, uri: String): PushNotificationChannel = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), expirationTime = expirationTime.asInstanceOf[js.Any], onpushnotificationreceived = onpushnotificationreceived.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[PushNotificationChannel]
     }

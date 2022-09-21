@@ -94,7 +94,7 @@ object anon {
       
       inline def setInputRangeUndefined: Self = StObject.set(x, "inputRange", js.undefined)
       
-      inline def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value :_*))
+      inline def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value*))
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -108,7 +108,7 @@ object anon {
       
       inline def setOutputRangeUndefined: Self = StObject.set(x, "outputRange", js.undefined)
       
-      inline def setOutputRangeVarargs(value: Double*): Self = StObject.set(x, "outputRange", js.Array(value :_*))
+      inline def setOutputRangeVarargs(value: Double*): Self = StObject.set(x, "outputRange", js.Array(value*))
       
       inline def setSlider(value: Boolean): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
       
@@ -124,7 +124,7 @@ object anon {
       
       inline def setUnits(value: js.Array[Number]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      inline def setUnitsVarargs(value: Number*): Self = StObject.set(x, "units", js.Array(value :_*))
+      inline def setUnitsVarargs(value: Number*): Self = StObject.set(x, "units", js.Array(value*))
     }
   }
   

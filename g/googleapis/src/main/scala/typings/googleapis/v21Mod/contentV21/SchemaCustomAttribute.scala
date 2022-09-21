@@ -7,21 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaCustomAttribute extends StObject {
   
   /**
-    * Subattributes within this attribute group. Exactly one of value or
-    * groupValues must be provided.
+    * Subattributes within this attribute group. Exactly one of value or groupValues must be provided.
     */
   var groupValues: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.undefined
   
   /**
-    * The name of the attribute. Underscores will be replaced by spaces upon
-    * insertion.
+    * The name of the attribute. Underscores will be replaced by spaces upon insertion.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The value of the attribute.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCustomAttribute {
   
@@ -36,13 +34,17 @@ object SchemaCustomAttribute {
     
     inline def setGroupValuesUndefined: Self = StObject.set(x, "groupValues", js.undefined)
     
-    inline def setGroupValuesVarargs(value: SchemaCustomAttribute*): Self = StObject.set(x, "groupValues", js.Array(value :_*))
+    inline def setGroupValuesVarargs(value: SchemaCustomAttribute*): Self = StObject.set(x, "groupValues", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

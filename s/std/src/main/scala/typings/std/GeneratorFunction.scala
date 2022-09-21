@@ -12,24 +12,29 @@ trait GeneratorFunction
   * Creates a new Generator object.
   * @param args A list of arguments the function accepts.
   */
-Instantiable1[/* args (repeated) */ js.Any, Generator[js.Any, js.Any, js.Any]] {
+/* standard es2015.generator */
+Instantiable1[/* args (repeated) */ Any, Generator[Any, Any, Any]] {
   
   /**
     * Creates a new Generator object.
     * @param args A list of arguments the function accepts.
     */
-  def apply(args: js.Any*): Generator[js.Any, js.Any, js.Any] = js.native
+  /* standard es2015.generator */
+  def apply(args: Any*): Generator[Any, Any, Any] = js.native
   
   /**
     * The length of the arguments.
     */
+  /* standard es2015.generator */
   val length: Double = js.native
   
   /**
     * Returns the name of the function.
     */
+  /* standard es2015.generator */
   val name: java.lang.String = js.native
   
+  /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
 }

@@ -1,7 +1,7 @@
 package typings.unzip
 
-import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.PassThrough
+import typings.std.WritableStream
 import typings.unzip.anon.Path
 import typings.unzip.unzipStrings.Directory
 import typings.unzip.unzipStrings.File
@@ -15,9 +15,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Extract(options: Path): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
+  inline def Extract(options: Path): WritableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream[Any]]
   
-  inline def Parse(): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[WritableStream]
+  inline def Parse(): WritableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[WritableStream[Any]]
   
   @js.native
   trait Entry extends PassThrough {

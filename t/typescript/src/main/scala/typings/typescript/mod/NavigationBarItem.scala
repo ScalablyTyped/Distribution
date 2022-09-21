@@ -50,7 +50,7 @@ object NavigationBarItem {
     
     inline def setChildItems(value: js.Array[NavigationBarItem]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
     
-    inline def setChildItemsVarargs(value: NavigationBarItem*): Self = StObject.set(x, "childItems", js.Array(value :_*))
+    inline def setChildItemsVarargs(value: NavigationBarItem*): Self = StObject.set(x, "childItems", js.Array(value*))
     
     inline def setGrayed(value: Boolean): Self = StObject.set(x, "grayed", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object NavigationBarItem {
     
     inline def setSpans(value: js.Array[TextSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
-    inline def setSpansVarargs(value: TextSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
+    inline def setSpansVarargs(value: TextSpan*): Self = StObject.set(x, "spans", js.Array(value*))
     
     inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

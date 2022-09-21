@@ -13,7 +13,7 @@ trait FaxDocument extends StObject {
   var AttachFaxToReceipt: Boolean
   
   /** Full paths to the fax document body files */
-  var Bodies: js.Any
+  var Bodies: Any
   
   /** Full path to the fax document body file */
   var Body: String
@@ -79,16 +79,16 @@ trait FaxDocument extends StObject {
   def Submit(bstrFaxServerName: String): SafeArray[Double]
   
   /** Connect to server, submit the fax document, disconnect */
-  def Submit2(bstrFaxServerName: String, pvFaxOutgoingJobIDs: js.Any): Double
+  def Submit2(bstrFaxServerName: String, pvFaxOutgoingJobIDs: Any): Double
   
   /** Tapi connection */
-  var TapiConnection: js.Any
+  var TapiConnection: Any
 }
 object FaxDocument {
   
   inline def apply(
     AttachFaxToReceipt: Boolean,
-    Bodies: js.Any,
+    Bodies: Any,
     Body: String,
     CallHandle: Double,
     ConnectedSubmit: IFaxServer => SafeArray[String],
@@ -109,8 +109,8 @@ object FaxDocument {
     Subject: String,
     SubmissionId: String,
     Submit: String => SafeArray[Double],
-    Submit2: (String, js.Any) => Double,
-    TapiConnection: js.Any
+    Submit2: (String, Any) => Double,
+    TapiConnection: Any
   ): FaxDocument = {
     val __obj = js.Dynamic.literal(AttachFaxToReceipt = AttachFaxToReceipt.asInstanceOf[js.Any], Bodies = Bodies.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], CallHandle = CallHandle.asInstanceOf[js.Any], ConnectedSubmit = js.Any.fromFunction1(ConnectedSubmit), ConnectedSubmit2 = js.Any.fromFunction2(ConnectedSubmit2), CoverPage = CoverPage.asInstanceOf[js.Any], CoverPageType = CoverPageType.asInstanceOf[js.Any], DocumentName = DocumentName.asInstanceOf[js.Any], GroupBroadcastReceipts = GroupBroadcastReceipts.asInstanceOf[js.Any], Note = Note.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], ReceiptAddress = ReceiptAddress.asInstanceOf[js.Any], ReceiptType = ReceiptType.asInstanceOf[js.Any], Recipients = Recipients.asInstanceOf[js.Any], ScheduleTime = ScheduleTime.asInstanceOf[js.Any], ScheduleType = ScheduleType.asInstanceOf[js.Any], Sender = Sender.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], SubmissionId = SubmissionId.asInstanceOf[js.Any], Submit = js.Any.fromFunction1(Submit), Submit2 = js.Any.fromFunction2(Submit2), TapiConnection = TapiConnection.asInstanceOf[js.Any])
     __obj.updateDynamic("FAXCOMEXLib.FaxDocument_typekey")(FAXCOMEXLibDotFaxDocument_typekey.asInstanceOf[js.Any])
@@ -121,7 +121,7 @@ object FaxDocument {
     
     inline def setAttachFaxToReceipt(value: Boolean): Self = StObject.set(x, "AttachFaxToReceipt", value.asInstanceOf[js.Any])
     
-    inline def setBodies(value: js.Any): Self = StObject.set(x, "Bodies", value.asInstanceOf[js.Any])
+    inline def setBodies(value: Any): Self = StObject.set(x, "Bodies", value.asInstanceOf[js.Any])
     
     inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
@@ -163,8 +163,8 @@ object FaxDocument {
     
     inline def setSubmit(value: String => SafeArray[Double]): Self = StObject.set(x, "Submit", js.Any.fromFunction1(value))
     
-    inline def setSubmit2(value: (String, js.Any) => Double): Self = StObject.set(x, "Submit2", js.Any.fromFunction2(value))
+    inline def setSubmit2(value: (String, Any) => Double): Self = StObject.set(x, "Submit2", js.Any.fromFunction2(value))
     
-    inline def setTapiConnection(value: js.Any): Self = StObject.set(x, "TapiConnection", value.asInstanceOf[js.Any])
+    inline def setTapiConnection(value: Any): Self = StObject.set(x, "TapiConnection", value.asInstanceOf[js.Any])
   }
 }

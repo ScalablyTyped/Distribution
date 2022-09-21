@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a slicer style, which defines style elements by region of the slicer.
   *
-  * Represents a Slicer Style, which defines style elements by region of the slicer.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerStyle")
 @js.native
-class SlicerStyle ()
+open class SlicerStyle ()
   extends StObject
      with typings.officeJs.Excel.SlicerStyle {
   

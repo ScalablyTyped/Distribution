@@ -9,6 +9,21 @@ trait ListSitesInput extends StObject {
   var MaxResults: js.UndefOr[MaxResults1000] = js.undefined
   
   var NextToken: js.UndefOr[Token] = js.undefined
+  
+  /**
+    *  A filter for the city of the Outpost site.  Filter values are case sensitive. If you specify multiple values for a filter, the values are joined with an OR, and the request returns all results that match any of the specified values.
+    */
+  var OperatingAddressCityFilter: js.UndefOr[CityList] = js.undefined
+  
+  /**
+    *  A filter for the country code of the Outpost site.  Filter values are case sensitive. If you specify multiple values for a filter, the values are joined with an OR, and the request returns all results that match any of the specified values.
+    */
+  var OperatingAddressCountryCodeFilter: js.UndefOr[CountryCodeList] = js.undefined
+  
+  /**
+    *  A filter for the state/region of the Outpost site.  Filter values are case sensitive. If you specify multiple values for a filter, the values are joined with an OR, and the request returns all results that match any of the specified values.
+    */
+  var OperatingAddressStateOrRegionFilter: js.UndefOr[StateOrRegionList] = js.undefined
 }
 object ListSitesInput {
   
@@ -26,5 +41,23 @@ object ListSitesInput {
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setOperatingAddressCityFilter(value: CityList): Self = StObject.set(x, "OperatingAddressCityFilter", value.asInstanceOf[js.Any])
+    
+    inline def setOperatingAddressCityFilterUndefined: Self = StObject.set(x, "OperatingAddressCityFilter", js.undefined)
+    
+    inline def setOperatingAddressCityFilterVarargs(value: City*): Self = StObject.set(x, "OperatingAddressCityFilter", js.Array(value*))
+    
+    inline def setOperatingAddressCountryCodeFilter(value: CountryCodeList): Self = StObject.set(x, "OperatingAddressCountryCodeFilter", value.asInstanceOf[js.Any])
+    
+    inline def setOperatingAddressCountryCodeFilterUndefined: Self = StObject.set(x, "OperatingAddressCountryCodeFilter", js.undefined)
+    
+    inline def setOperatingAddressCountryCodeFilterVarargs(value: CountryCode*): Self = StObject.set(x, "OperatingAddressCountryCodeFilter", js.Array(value*))
+    
+    inline def setOperatingAddressStateOrRegionFilter(value: StateOrRegionList): Self = StObject.set(x, "OperatingAddressStateOrRegionFilter", value.asInstanceOf[js.Any])
+    
+    inline def setOperatingAddressStateOrRegionFilterUndefined: Self = StObject.set(x, "OperatingAddressStateOrRegionFilter", js.undefined)
+    
+    inline def setOperatingAddressStateOrRegionFilterVarargs(value: StateOrRegion*): Self = StObject.set(x, "OperatingAddressStateOrRegionFilter", js.Array(value*))
   }
 }

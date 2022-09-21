@@ -42,7 +42,7 @@ object GooglePrivacyDlpV2CategoricalStatsHistogramBucket {
     
     inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    inline def setBucketValuesVarargs(value: GooglePrivacyDlpV2ValueFrequency*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: GooglePrivacyDlpV2ValueFrequency*): Self = StObject.set(x, "bucketValues", js.Array(value*))
     
     inline def setValueFrequencyLowerBound(value: String): Self = StObject.set(x, "valueFrequencyLowerBound", value.asInstanceOf[js.Any])
     

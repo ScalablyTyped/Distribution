@@ -1,12 +1,14 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientAnalyticsadmin.anon.Account
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.Name
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.PageToken
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.QuotaUser
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.Resource
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.UpdateMask
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.UploadType
+import typings.maximMazurokGapiClientAnalyticsadmin.anon.Uploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +24,7 @@ trait AccountsResource extends StObject {
   def delete(): Request[js.Object] = js.native
   def delete(request: Name): Request[js.Object] = js.native
   
-  /** Lookup for a single Account. Throws "Target not found" if no such account found, or if caller does not have permissions to access it. */
+  /** Lookup for a single Account. */
   def get(): Request[GoogleAnalyticsAdminV1alphaAccount] = js.native
   def get(request: Name): Request[GoogleAnalyticsAdminV1alphaAccount] = js.native
   
@@ -44,6 +46,10 @@ trait AccountsResource extends StObject {
   /** Requests a ticket for creating an account. */
   def provisionAccountTicket(request: Resource): Request[GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse] = js.native
   def provisionAccountTicket(request: UploadType, body: GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest): Request[GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse] = js.native
+  
+  /** Searches through all changes to an account or its children given the specified set of filters. */
+  def searchChangeHistoryEvents(request: Account): Request[GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsResponse] = js.native
+  def searchChangeHistoryEvents(request: Uploadprotocol, body: GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsRequest): Request[GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsResponse] = js.native
   
   var userLinks: UserLinksResource = js.native
 }

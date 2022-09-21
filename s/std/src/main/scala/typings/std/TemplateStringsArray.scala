@@ -9,5 +9,6 @@ trait TemplateStringsArray
   extends StObject
      with ReadonlyArray[java.lang.String] {
   
+  /* standard es5 */
   val raw: js.Array[java.lang.String] = js.native
 }

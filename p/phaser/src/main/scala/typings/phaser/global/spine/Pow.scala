@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Pow")
 @js.native
-class Pow protected ()
+open class Pow protected ()
   extends StObject
      with typings.phaser.spine.Pow {
   def this(power: Double) = this()

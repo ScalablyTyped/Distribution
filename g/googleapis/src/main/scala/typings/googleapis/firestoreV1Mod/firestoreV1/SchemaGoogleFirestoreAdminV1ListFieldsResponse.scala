@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for FirestoreAdmin.ListFields.
-  */
 trait SchemaGoogleFirestoreAdminV1ListFieldsResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaGoogleFirestoreAdminV1ListFieldsResponse extends StObject {
   var fields: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1Field]] = js.undefined
   
   /**
-    * A page token that may be used to request another page of results. If
-    * blank, this is the last page.
+    * A page token that may be used to request another page of results. If blank, this is the last page.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1ListFieldsResponse {
   
@@ -33,9 +29,11 @@ object SchemaGoogleFirestoreAdminV1ListFieldsResponse {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: SchemaGoogleFirestoreAdminV1Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaGoogleFirestoreAdminV1Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

@@ -1,7 +1,6 @@
 package typings.webgme
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.webgme.Blobs.ObjectBlob
 import typings.webgme.GmeCommon.Dictionary
 import typings.webgme.GmeCommon.Name
@@ -113,7 +112,7 @@ object GmeConfig {
     
     // a regular expression limiting the values allowed.
     // e.g. '^[a-zA-Z]+$'
-    var regex: js.UndefOr[RegExp] = js.undefined
+    var regex: js.UndefOr[js.RegExp] = js.undefined
     
     // a description of the regex grammar
     // e.g. 'Name can only contain English characters!'
@@ -147,7 +146,7 @@ object GmeConfig {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setRegexMessage(value: String): Self = StObject.set(x, "regexMessage", value.asInstanceOf[js.Any])
       
@@ -161,7 +160,7 @@ object GmeConfig {
       
       inline def setValueItemsUndefined: Self = StObject.set(x, "valueItems", js.undefined)
       
-      inline def setValueItemsVarargs(value: String*): Self = StObject.set(x, "valueItems", js.Array(value :_*))
+      inline def setValueItemsVarargs(value: String*): Self = StObject.set(x, "valueItems", js.Array(value*))
       
       inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     }
@@ -222,7 +221,7 @@ object GmeConfig {
       * @returns {*} 
       * @memberOf GmeConfig
       */
-    def serialize(): js.Any
+    def serialize(): Any
     
     /** Server related settings. */
     var server: BehindSecureProxy
@@ -254,7 +253,7 @@ object GmeConfig {
       requirejsPaths: Dictionary[String],
       rest: Components,
       seedProjects: AllowDuplication,
-      serialize: () => js.Any,
+      serialize: () => Any,
       server: BehindSecureProxy,
       socketIO: typings.webgme.anon.ClientOptions,
       storage: AutoMerge,
@@ -293,7 +292,7 @@ object GmeConfig {
       
       inline def setSeedProjects(value: AllowDuplication): Self = StObject.set(x, "seedProjects", value.asInstanceOf[js.Any])
       
-      inline def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+      inline def setSerialize(value: () => Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
       
       inline def setServer(value: BehindSecureProxy): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
@@ -327,7 +326,7 @@ object GmeConfig {
   trait PluginConfig
     extends StObject
        with typings.webgme.GmeConfig.GmeConfig
-       with /* propName */ StringDictionary[js.Any]
+       with /* propName */ StringDictionary[Any]
   object PluginConfig {
     
     inline def apply(
@@ -344,7 +343,7 @@ object GmeConfig {
       requirejsPaths: Dictionary[String],
       rest: Components,
       seedProjects: AllowDuplication,
-      serialize: () => js.Any,
+      serialize: () => Any,
       server: BehindSecureProxy,
       socketIO: typings.webgme.anon.ClientOptions,
       storage: AutoMerge,

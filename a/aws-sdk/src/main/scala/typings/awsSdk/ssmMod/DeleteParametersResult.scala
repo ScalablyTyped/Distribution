@@ -12,7 +12,7 @@ trait DeleteParametersResult extends StObject {
   var DeletedParameters: js.UndefOr[ParameterNameList] = js.undefined
   
   /**
-    * The names of parameters that weren't deleted because the parameters are not valid.
+    * The names of parameters that weren't deleted because the parameters aren't valid.
     */
   var InvalidParameters: js.UndefOr[ParameterNameList] = js.undefined
 }
@@ -29,12 +29,12 @@ object DeleteParametersResult {
     
     inline def setDeletedParametersUndefined: Self = StObject.set(x, "DeletedParameters", js.undefined)
     
-    inline def setDeletedParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "DeletedParameters", js.Array(value :_*))
+    inline def setDeletedParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "DeletedParameters", js.Array(value*))
     
     inline def setInvalidParameters(value: ParameterNameList): Self = StObject.set(x, "InvalidParameters", value.asInstanceOf[js.Any])
     
     inline def setInvalidParametersUndefined: Self = StObject.set(x, "InvalidParameters", js.undefined)
     
-    inline def setInvalidParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "InvalidParameters", js.Array(value :_*))
+    inline def setInvalidParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "InvalidParameters", js.Array(value*))
   }
 }

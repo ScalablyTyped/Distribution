@@ -1,8 +1,8 @@
 package typings.reactBootstrap
 
 import typings.react.mod.Component
+import typings.react.mod.ElementType
 import typings.react.mod.HTMLProps
-import typings.react.mod.ReactType
 import typings.reactBootstrap.mod.SelectCallback
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
@@ -13,12 +13,10 @@ object navItemMod {
   
   @JSImport("react-bootstrap/lib/NavItem", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[NavItemProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[NavItemProps, js.Object, Any]
   
-  @js.native
-  trait NavItem
-    extends Component[NavItemProps, js.Object, js.Any]
+  type NavItem = Component[NavItemProps, js.Object, Any]
   
   trait NavItemProps
     extends StObject
@@ -26,18 +24,18 @@ object navItemMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var brand: js.UndefOr[js.Any] = js.undefined
+    var brand: js.UndefOr[Any] = js.undefined
     
     // TODO: Add more specific type
     var bsSize: js.UndefOr[Sizes] = js.undefined
     
     var bsStyle: js.UndefOr[String] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var componentClass: js.UndefOr[ElementType[Any]] = js.undefined
     
     var defaultNavExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var fixedBottom: js.UndefOr[Boolean] = js.undefined
     
@@ -58,7 +56,7 @@ object navItemMod {
     
     var staticTop: js.UndefOr[Boolean] = js.undefined
     
-    var toggleButton: js.UndefOr[js.Any] = js.undefined
+    var toggleButton: js.UndefOr[Any] = js.undefined
     
     // TODO: Add more specific type
     var toggleNavKey: js.UndefOr[String | Double] = js.undefined
@@ -76,7 +74,7 @@ object navItemMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setBrand(value: js.Any): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+      inline def setBrand(value: Any): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
       inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
       
@@ -88,7 +86,7 @@ object navItemMod {
       
       inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
       
@@ -96,7 +94,7 @@ object navItemMod {
       
       inline def setDefaultNavExpandedUndefined: Self = StObject.set(x, "defaultNavExpanded", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       
@@ -136,7 +134,7 @@ object navItemMod {
       
       inline def setStaticTopUndefined: Self = StObject.set(x, "staticTop", js.undefined)
       
-      inline def setToggleButton(value: js.Any): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
+      inline def setToggleButton(value: Any): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
       
       inline def setToggleButtonUndefined: Self = StObject.set(x, "toggleButton", js.undefined)
       

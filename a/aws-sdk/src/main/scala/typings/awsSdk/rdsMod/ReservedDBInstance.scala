@@ -32,7 +32,7 @@ trait ReservedDBInstance extends StObject {
   var FixedPrice: js.UndefOr[Double] = js.undefined
   
   /**
-    * The unique identifier for the lease associated with the reserved DB instance.  AWS Support might request the lease ID for an issue related to a reserved DB instance. 
+    * The unique identifier for the lease associated with the reserved DB instance.  Amazon Web Services Support might request the lease ID for an issue related to a reserved DB instance. 
     */
   var LeaseId: js.UndefOr[String] = js.undefined
   
@@ -74,7 +74,7 @@ trait ReservedDBInstance extends StObject {
   /**
     * The time the reservation started.
     */
-  var StartTime: js.UndefOr[TStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the reserved DB instance.
@@ -135,7 +135,7 @@ object ReservedDBInstance {
     
     inline def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
     
-    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
+    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value*))
     
     inline def setReservedDBInstanceArn(value: String): Self = StObject.set(x, "ReservedDBInstanceArn", value.asInstanceOf[js.Any])
     
@@ -149,7 +149,7 @@ object ReservedDBInstance {
     
     inline def setReservedDBInstancesOfferingIdUndefined: Self = StObject.set(x, "ReservedDBInstancesOfferingId", js.undefined)
     
-    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

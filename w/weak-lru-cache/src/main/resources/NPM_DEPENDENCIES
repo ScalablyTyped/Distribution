@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "weak-lru-cache" : "1.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "weak-lru-cache" : "1.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

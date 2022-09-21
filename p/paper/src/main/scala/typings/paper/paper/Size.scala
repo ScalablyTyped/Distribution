@@ -144,7 +144,7 @@ trait Size extends StObject {
     * that is supported by the various {@link Size} constructors also work
     * for calls of `set()`.
     */
-  def set(values: js.Any*): Size = js.native
+  def set(values: Any*): Size = js.native
   
   /** 
     * Returns the subtraction of the supplied value from the width and height

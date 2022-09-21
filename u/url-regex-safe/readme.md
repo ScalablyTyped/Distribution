@@ -10,10 +10,10 @@ Regular expression matching for URL's. Maintained, safe, and browser-friendly ve
 | ------------------ | :-------------: |
 | Full name          | url-regex-safe |
 | Keywords           | 2020, 7661, CVE-2020-7661, cve, detect, email, emails, expresion, expression, from, get, html, mail, mails, maintained, parse, parser, parsing, regex, regexer, regexer, regexes, regexing, regexp, safe, scan, sniff, str, string, text, url, urls |
-| # releases         | 14 |
-| # dependents       | 17 |
-| # downloads        | 400136 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 731058.6666666666 |
+| # stars            | 54.0 |
 
 ## Links
 - [Homepage](https://github.com/niftylettuce/url-regex-safe)

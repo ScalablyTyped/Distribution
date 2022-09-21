@@ -1,72 +1,65 @@
 package typings.fortawesomeFontawesomeSvgCore.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
+import typings.fortawesomeFontawesomeCommonTypes.mod.IconLookup
+import typings.fortawesomeFontawesomeCommonTypes.mod.IconName
+import typings.fortawesomeFontawesomeCommonTypes.mod.IconPack
+import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
+import typings.fortawesomeFontawesomeSvgCore.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def config: typings.fortawesomeFontawesomeSvgCore.mod.Config_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("config").asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Config_]
+inline def config: Config_ = ^.asInstanceOf[js.Dynamic].selectDynamic("config").asInstanceOf[Config_]
 
-inline def counter(content: java.lang.String): typings.fortawesomeFontawesomeSvgCore.mod.Counter_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("counter")(content.asInstanceOf[js.Any]).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Counter_]
-inline def counter(content: java.lang.String, params: typings.fortawesomeFontawesomeSvgCore.mod.CounterParams): typings.fortawesomeFontawesomeSvgCore.mod.Counter_ = (typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("counter")(content.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Counter_]
-inline def counter(content: scala.Double): typings.fortawesomeFontawesomeSvgCore.mod.Counter_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("counter")(content.asInstanceOf[js.Any]).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Counter_]
-inline def counter(content: scala.Double, params: typings.fortawesomeFontawesomeSvgCore.mod.CounterParams): typings.fortawesomeFontawesomeSvgCore.mod.Counter_ = (typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("counter")(content.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Counter_]
+inline def counter(content: String): Counter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("counter")(content.asInstanceOf[js.Any]).asInstanceOf[Counter_]
+inline def counter(content: String, params: CounterParams): Counter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("counter")(content.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Counter_]
+inline def counter(content: Double): Counter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("counter")(content.asInstanceOf[js.Any]).asInstanceOf[Counter_]
+inline def counter(content: Double, params: CounterParams): Counter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("counter")(content.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Counter_]
 
-inline def dom: typings.fortawesomeFontawesomeSvgCore.mod.DOM_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.DOM_]
+inline def dom: DOM_ = ^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[DOM_]
 
-inline def findIconDefinition(iconLookup: typings.fortawesomeFontawesomeCommonTypes.mod.IconLookup): typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findIconDefinition")(iconLookup.asInstanceOf[js.Any]).asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition]
+inline def findIconDefinition(iconLookup: IconLookup): IconDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("findIconDefinition")(iconLookup.asInstanceOf[js.Any]).asInstanceOf[IconDefinition]
 
-inline def icon(icon: typings.fortawesomeFontawesomeCommonTypes.mod.IconLookup): typings.fortawesomeFontawesomeSvgCore.mod.Icon_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("icon")(icon.asInstanceOf[js.Any]).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Icon_]
-inline def icon(
-  icon: typings.fortawesomeFontawesomeCommonTypes.mod.IconLookup,
-  params: typings.fortawesomeFontawesomeSvgCore.mod.IconParams
-): typings.fortawesomeFontawesomeSvgCore.mod.Icon_ = (typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("icon")(icon.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Icon_]
-inline def icon(icon: typings.fortawesomeFontawesomeCommonTypes.mod.IconName): typings.fortawesomeFontawesomeSvgCore.mod.Icon_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("icon")(icon.asInstanceOf[js.Any]).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Icon_]
-inline def icon(
-  icon: typings.fortawesomeFontawesomeCommonTypes.mod.IconName,
-  params: typings.fortawesomeFontawesomeSvgCore.mod.IconParams
-): typings.fortawesomeFontawesomeSvgCore.mod.Icon_ = (typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("icon")(icon.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Icon_]
+inline def icon(icon: IconLookup): Icon_ = ^.asInstanceOf[js.Dynamic].applyDynamic("icon")(icon.asInstanceOf[js.Any]).asInstanceOf[Icon_]
+inline def icon(icon: IconLookup, params: IconParams): Icon_ = (^.asInstanceOf[js.Dynamic].applyDynamic("icon")(icon.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Icon_]
+inline def icon(icon: IconName): Icon_ = ^.asInstanceOf[js.Dynamic].applyDynamic("icon")(icon.asInstanceOf[js.Any]).asInstanceOf[Icon_]
+inline def icon(icon: IconName, params: IconParams): Icon_ = (^.asInstanceOf[js.Dynamic].applyDynamic("icon")(icon.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Icon_]
 
 inline def layer(
   assembler: js.Function1[
-  /* addLayerCallback */ js.Function1[
-    /* layerToAdd */ typings.fortawesomeFontawesomeSvgCore.mod.IconOrText | js.Array[typings.fortawesomeFontawesomeSvgCore.mod.IconOrText], 
-    scala.Unit
-  ], 
-  scala.Unit
+  /* addLayerCallback */ js.Function1[/* layerToAdd */ IconOrText | js.Array[IconOrText], Unit], 
+  Unit
 ]
-): typings.fortawesomeFontawesomeSvgCore.mod.Layer_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("layer")(assembler.asInstanceOf[js.Any]).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Layer_]
+): Layer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("layer")(assembler.asInstanceOf[js.Any]).asInstanceOf[Layer_]
 inline def layer(
   assembler: js.Function1[
-  /* addLayerCallback */ js.Function1[
-    /* layerToAdd */ typings.fortawesomeFontawesomeSvgCore.mod.IconOrText | js.Array[typings.fortawesomeFontawesomeSvgCore.mod.IconOrText], 
-    scala.Unit
-  ], 
-  scala.Unit
+  /* addLayerCallback */ js.Function1[/* layerToAdd */ IconOrText | js.Array[IconOrText], Unit], 
+  Unit
 ],
-  params: typings.fortawesomeFontawesomeSvgCore.mod.LayerParams
-): typings.fortawesomeFontawesomeSvgCore.mod.Layer_ = (typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("layer")(assembler.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Layer_]
+  params: LayerParams
+): Layer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("layer")(assembler.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Layer_]
 
-inline def library: typings.fortawesomeFontawesomeSvgCore.mod.Library_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("library").asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Library_]
+inline def library: Library_ = ^.asInstanceOf[js.Dynamic].selectDynamic("library").asInstanceOf[Library_]
 
-inline def noAuto(): scala.Unit = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("noAuto")().asInstanceOf[scala.Unit]
+inline def noAuto(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noAuto")().asInstanceOf[Unit]
 
-inline def text(content: java.lang.String): typings.fortawesomeFontawesomeSvgCore.mod.Text_ = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("text")(content.asInstanceOf[js.Any]).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Text_]
-inline def text(content: java.lang.String, params: typings.fortawesomeFontawesomeSvgCore.mod.TextParams): typings.fortawesomeFontawesomeSvgCore.mod.Text_ = (typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("text")(content.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.fortawesomeFontawesomeSvgCore.mod.Text_]
+inline def text(content: String): Text_ = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(content.asInstanceOf[js.Any]).asInstanceOf[Text_]
+inline def text(content: String, params: TextParams): Text_ = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(content.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Text_]
 
-inline def toHtml(abstractNodes: typings.fortawesomeFontawesomeSvgCore.mod.AbstractElement): java.lang.String = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("toHtml")(abstractNodes.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def toHtml(content: js.Any): java.lang.String = typings.fortawesomeFontawesomeSvgCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("toHtml")(content.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def toHtml(abstractNodes: AbstractElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHtml")(abstractNodes.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def toHtml(content: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHtml")(content.asInstanceOf[js.Any]).asInstanceOf[String]
 
-type Attributes = org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]
+type Attributes = StringDictionary[Double | String]
 
-type CounterParams = typings.fortawesomeFontawesomeSvgCore.mod.Params
+type CounterParams = Params
 
-type FaSymbol = java.lang.String | scala.Boolean
+type FaSymbol = String | Boolean
 
-type IconDefinitionOrPack = typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition | typings.fortawesomeFontawesomeCommonTypes.mod.IconPack
+type IconDefinitionOrPack = IconDefinition | IconPack
 
-type IconProp = typings.fortawesomeFontawesomeCommonTypes.mod.IconName | (js.Tuple2[
-typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix, 
-typings.fortawesomeFontawesomeCommonTypes.mod.IconName]) | typings.fortawesomeFontawesomeCommonTypes.mod.IconLookup
+type IconProp = IconName | (js.Tuple2[IconPrefix, IconName]) | IconLookup
 
-type Styles = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Styles = StringDictionary[String]

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListTriggersResponse extends StObject {
   
-  /** A page token that can be sent to ListTriggers to request the next page. If this is empty, then there are no more pages. */
+  /** A page token that can be sent to `ListTriggers` to request the next page. If this is empty, then there are no more pages. */
   var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The requested triggers, up to the number specified in `page_size`. */
@@ -32,12 +32,12 @@ object ListTriggersResponse {
     
     inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "triggers", js.Array(value*))
     
     inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

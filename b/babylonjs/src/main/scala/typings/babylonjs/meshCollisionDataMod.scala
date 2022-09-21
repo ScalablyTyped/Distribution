@@ -13,7 +13,7 @@ object meshCollisionDataMod {
   
   @JSImport("babylonjs/Collisions/meshCollisionData", "_MeshCollisionData")
   @js.native
-  class MeshCollisionData () extends StObject {
+  open class MeshCollisionData () extends StObject {
     
     var _checkCollisions: Boolean = js.native
     

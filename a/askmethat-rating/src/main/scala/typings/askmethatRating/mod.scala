@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("askmethat-rating", "AskmethatRating")
   @js.native
-  class AskmethatRating protected () extends StObject {
+  open class AskmethatRating protected () extends StObject {
     /**
       * constructor with div element, default rating value & default options
       *
@@ -21,15 +21,15 @@ object mod {
       */
     def this(element: HTMLDivElement) = this()
     def this(element: HTMLDivElement, defaultValue: Double) = this()
-    def this(element: HTMLDivElement, defaultValue: Double, options: js.Any) = this()
-    def this(element: HTMLDivElement, defaultValue: Unit, options: js.Any) = this()
+    def this(element: HTMLDivElement, defaultValue: Double, options: Any) = this()
+    def this(element: HTMLDivElement, defaultValue: Unit, options: Any) = this()
     
     /**
       * Default option base on @type IAskmethatRatingOptions
       */
-    /* private */ var _defaultOptions: js.Any = js.native
+    /* private */ var _defaultOptions: Any = js.native
     
-    /* private */ var changeEvent: js.Any = js.native
+    /* private */ var changeEvent: Any = js.native
     
     /**
       * @function get the default option for the rating
@@ -53,9 +53,9 @@ object mod {
     /**
       * Init popover if needed
       */
-    /* private */ def initPopover(): js.Any = js.native
+    /* private */ def initPopover(): Any = js.native
     
-    /* private */ var mouseMove: js.Any = js.native
+    /* private */ var mouseMove: Any = js.native
     
     /**
       * This is fired by mutation observer when an attribute changed in the hidden input
@@ -69,31 +69,31 @@ object mod {
       * Check if disabled attribute is added or removed from the input
       * Update readonly status if needed for the rating
       */
-    /* private */ def mutationEvent(): js.Any = js.native
+    /* private */ def mutationEvent(): Any = js.native
     
     /**
       * @function mouse out event in rating
       * @param  {type} event?: Event {event}
       */
-    /* private */ def onMouseLeave(event: js.Any): js.Any = js.native
+    /* private */ def onMouseLeave(event: Any): Any = js.native
     
     /**
       * @function mouse event enter in rating
       * @param  {type} event?: Event {event}
       */
-    /* private */ def onMouseMove(event: js.Any): js.Any = js.native
+    /* private */ def onMouseMove(event: Any): Any = js.native
     
     /**
       * @function when a rating is clicked
       * @param  {type} event : Event {event object}
       */
-    /* private */ def onRatingClick(event: js.Any): js.Any = js.native
+    /* private */ def onRatingClick(event: Any): Any = js.native
     
-    /* private */ var pValue: js.Any = js.native
+    /* private */ var pValue: Any = js.native
     
-    /* private */ var parentElement: js.Any = js.native
+    /* private */ var parentElement: Any = js.native
     
-    /* private */ var ratingClick: js.Any = js.native
+    /* private */ var ratingClick: Any = js.native
     
     /**
       * render a new rating, by default value is the minRating
@@ -110,7 +110,7 @@ object mod {
       */
     /* protected */ def setOrUnsetActive(value: Double): Unit = js.native
     
-    /* private */ var styleSheet: js.Any = js.native
+    /* private */ var styleSheet: Any = js.native
     
     /**
       * @function get the current value for the rating

@@ -19,7 +19,7 @@ trait Selection extends StObject {
   
   val HasChildShapeRange: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Selection_typekey")
   var PowerPointDotSelection_typekey: Selection
@@ -45,7 +45,7 @@ object Selection {
     Cut: () => Unit,
     Delete: () => Unit,
     HasChildShapeRange: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotSelection_typekey: Selection,
     ShapeRange: ShapeRange,
     SlideRange: SlideRange,
@@ -73,7 +73,7 @@ object Selection {
     
     inline def setHasChildShapeRange(value: Boolean): Self = StObject.set(x, "HasChildShapeRange", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotSelection_typekey(value: Selection): Self = StObject.set(x, "PowerPoint.Selection_typekey", value.asInstanceOf[js.Any])
     

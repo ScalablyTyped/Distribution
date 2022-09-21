@@ -11,14 +11,11 @@ SharePoint client for Node.js
 | Full name          | sharepoint |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 4213 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 652.3333333333334 |
+| # stars            | 104.0 |
 
 ## Links
-- [Homepage](https://github.com/lstak/node-sharepoint)
-- [Bugs](https://github.com/lstak/node-sharepoint/issues)
-- [Repository](https://github.com/lstak/node-sharepoint)
 - [Npm](https://www.npmjs.com/package/sharepoint)
     
 

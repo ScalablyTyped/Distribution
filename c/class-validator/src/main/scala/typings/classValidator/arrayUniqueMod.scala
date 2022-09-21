@@ -16,8 +16,15 @@ object arrayUniqueMod {
   @js.native
   val ARRAY_UNIQUE: /* "arrayUnique" */ String = js.native
   
-  inline def ArrayUnique_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")().asInstanceOf[PropertyDecorator]
-  inline def ArrayUnique_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def ArrayUnique_[T](): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")().asInstanceOf[PropertyDecorator]
+  inline def ArrayUnique_[T](identifierOrOptions: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")(identifierOrOptions.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def ArrayUnique_[T](identifierOrOptions: ArrayUniqueIdentifier[T]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")(identifierOrOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def ArrayUnique_[T](identifierOrOptions: ArrayUniqueIdentifier[T], validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")(identifierOrOptions.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def ArrayUnique_[T](identifierOrOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")(identifierOrOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def ArrayUnique_[T](identifierOrOptions: ValidationOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayUnique")(identifierOrOptions.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  inline def arrayUnique(array: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnique")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def arrayUnique(array: js.Array[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnique")(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def arrayUnique(array: js.Array[Any], identifier: ArrayUniqueIdentifier[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnique")(array.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  type ArrayUniqueIdentifier[T] = js.Function1[/* o */ T, Any]
 }

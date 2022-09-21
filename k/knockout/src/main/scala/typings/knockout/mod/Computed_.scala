@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Computed_[T]
   extends ComputedFunctions[T]
-     with _ComputedReadFunction[T, js.Any] {
+     with _ComputedReadFunction[T, Any] {
   
   def apply(): T = js.native
   def apply(value: T): this.type = js.native

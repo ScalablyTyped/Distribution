@@ -1,15 +1,15 @@
 package typings.three
 
-import typings.std.ArrayBufferView
+import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderingContext
 import typings.three.anon.Stencil
-import typings.three.constantsMod.Blending
-import typings.three.constantsMod.BlendingDstFactor
-import typings.three.constantsMod.BlendingEquation
-import typings.three.constantsMod.BlendingSrcFactor
-import typings.three.constantsMod.CullFace
-import typings.three.constantsMod.DepthModes
 import typings.three.materialMod.Material
+import typings.three.srcConstantsMod.Blending
+import typings.three.srcConstantsMod.BlendingDstFactor
+import typings.three.srcConstantsMod.BlendingEquation
+import typings.three.srcConstantsMod.BlendingSrcFactor
+import typings.three.srcConstantsMod.CullFace
+import typings.three.srcConstantsMod.DepthModes
 import typings.three.vector4Mod.Vector4
 import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import typings.three.webGLExtensionsMod.WebGLExtensions
@@ -21,7 +21,7 @@ object webGLStateMod {
   
   @JSImport("three/src/renderers/webgl/WebGLState", "WebGLColorBuffer")
   @js.native
-  class WebGLColorBuffer () extends StObject {
+  open class WebGLColorBuffer () extends StObject {
     
     def reset(): Unit = js.native
     
@@ -34,7 +34,7 @@ object webGLStateMod {
   
   @JSImport("three/src/renderers/webgl/WebGLState", "WebGLDepthBuffer")
   @js.native
-  class WebGLDepthBuffer () extends StObject {
+  open class WebGLDepthBuffer () extends StObject {
     
     def reset(): Unit = js.native
     
@@ -51,12 +51,18 @@ object webGLStateMod {
   
   @JSImport("three/src/renderers/webgl/WebGLState", "WebGLState")
   @js.native
-  class WebGLState protected () extends StObject {
+  open class WebGLState protected () extends StObject {
     def this(gl: WebGLRenderingContext, extensions: WebGLExtensions, capabilities: WebGLCapabilities) = this()
     
     def activeTexture(webglSlot: Double): Unit = js.native
     
-    def bindTexture(webglType: Double, webglTexture: js.Any): Unit = js.native
+    def bindFramebuffer(target: Double): Unit = js.native
+    def bindFramebuffer(target: Double, framebuffer: WebGLFramebuffer): Unit = js.native
+    
+    def bindTexture(webglType: Double, webglTexture: Any): Unit = js.native
+    
+    def bindXRFramebuffer(): Unit = js.native
+    def bindXRFramebuffer(framebuffer: WebGLFramebuffer): Unit = js.native
     
     var buffers: Stencil = js.native
     
@@ -68,7 +74,7 @@ object webGLStateMod {
       width: Double,
       height: Double,
       border: Double,
-      data: ArrayBufferView
+      data: js.typedarray.ArrayBufferView
     ): Unit = js.native
     
     def disable(id: Double): Unit = js.native
@@ -113,14 +119,7 @@ object webGLStateMod {
     
     def setScissorTest(scissorTest: Boolean): Unit = js.native
     
-    def texImage2D(
-      target: Double,
-      level: Double,
-      internalformat: Double,
-      format: Double,
-      `type`: Double,
-      source: js.Any
-    ): Unit = js.native
+    def texImage2D(target: Double, level: Double, internalformat: Double, format: Double, `type`: Double, source: Any): Unit = js.native
     // Same interface as https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texImage2D
     def texImage2D(
       target: Double,
@@ -141,7 +140,7 @@ object webGLStateMod {
       border: Double,
       format: Double,
       `type`: Double,
-      pixels: ArrayBufferView
+      pixels: js.typedarray.ArrayBufferView
     ): Unit = js.native
     
     def texImage3D(
@@ -154,12 +153,12 @@ object webGLStateMod {
       border: Double,
       format: Double,
       `type`: Double,
-      pixels: js.Any
+      pixels: Any
     ): Unit = js.native
     
     def unbindTexture(): Unit = js.native
     
-    def useProgram(program: js.Any): Boolean = js.native
+    def useProgram(program: Any): Boolean = js.native
     
     def vertexAttribPointer(index: Double, size: Double, `type`: Double, normalized: Boolean, stride: Double, offset: Double): Unit = js.native
     
@@ -168,7 +167,7 @@ object webGLStateMod {
   
   @JSImport("three/src/renderers/webgl/WebGLState", "WebGLStencilBuffer")
   @js.native
-  class WebGLStencilBuffer () extends StObject {
+  open class WebGLStencilBuffer () extends StObject {
     
     def reset(): Unit = js.native
     

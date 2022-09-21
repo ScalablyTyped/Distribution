@@ -15,11 +15,11 @@ trait OpenDataContext extends StObject {
     * 向开放数据域发送消息
     * @param message 要发送的消息，message 中及嵌套对象中 key 的 value 只能是 primitive value。即 number、string、boolean、null、undefined。
     */
-  def postMessage(message: js.Any): Unit
+  def postMessage(message: Any): Unit
 }
 object OpenDataContext {
   
-  inline def apply(canvas: Canvas, postMessage: js.Any => Unit): OpenDataContext = {
+  inline def apply(canvas: Canvas, postMessage: Any => Unit): OpenDataContext = {
     val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], postMessage = js.Any.fromFunction1(postMessage))
     __obj.asInstanceOf[OpenDataContext]
   }
@@ -28,6 +28,6 @@ object OpenDataContext {
     
     inline def setCanvas(value: Canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    inline def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+    inline def setPostMessage(value: Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
   }
 }

@@ -8,5 +8,5 @@ object invalidOrderExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidOrderException", "InvalidOrderException")
   @js.native
-  val InvalidOrderException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidOrderException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

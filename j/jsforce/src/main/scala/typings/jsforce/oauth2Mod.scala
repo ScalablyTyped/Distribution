@@ -1,7 +1,6 @@
 package typings.jsforce
 
 import typings.jsforce.anon.Scope
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +9,14 @@ object oauth2Mod {
   
   @JSImport("jsforce/oauth2", "OAuth2")
   @js.native
-  class OAuth2 () extends StObject {
+  open class OAuth2 () extends StObject {
     def this(options: OAuth2Options) = this()
     
     def authenticate(username: String, password: String): js.Promise[TokenResponse] = js.native
     def authenticate(
       username: String,
       password: String,
-      callback: js.Function2[/* err */ Error, /* tokenResponse */ TokenResponse, Unit]
+      callback: js.Function2[/* err */ js.Error, /* tokenResponse */ TokenResponse, Unit]
     ): js.Promise[TokenResponse] = js.native
     
     var authzServiceUrl: String = js.native
@@ -33,15 +32,15 @@ object oauth2Mod {
     var redirectUri: String = js.native
     
     def refreshToken(code: String): js.Promise[TokenResponse] = js.native
-    def refreshToken(code: String, callback: js.Function2[/* err */ Error, /* tokenResponse */ TokenResponse, Unit]): js.Promise[TokenResponse] = js.native
+    def refreshToken(code: String, callback: js.Function2[/* err */ js.Error, /* tokenResponse */ TokenResponse, Unit]): js.Promise[TokenResponse] = js.native
     
     def requestToken(code: String): js.Promise[TokenResponse] = js.native
-    def requestToken(code: String, callback: js.Function2[/* err */ Error, /* tokenResponse */ TokenResponse, Unit]): js.Promise[TokenResponse] = js.native
+    def requestToken(code: String, callback: js.Function2[/* err */ js.Error, /* tokenResponse */ TokenResponse, Unit]): js.Promise[TokenResponse] = js.native
     
     var revokeServiceUrl: String = js.native
     
     def revokeToken(accessToken: String): js.Promise[Unit] = js.native
-    def revokeToken(accessToken: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] = js.native
+    def revokeToken(accessToken: String, callback: js.Function1[/* err */ js.Error, Unit]): js.Promise[Unit] = js.native
     
     var tokenServiceUrl: String = js.native
   }

@@ -1,6 +1,6 @@
 package typings.uuidParse
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +12,8 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def parse(id: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  inline def parse(id: String, buffer: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  inline def parse(id: String, buffer: js.Array[js.Any], offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def parse(id: String, buffer: js.Array[Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def parse(id: String, buffer: js.Array[Any], offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def parse(id: String, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def parse(id: String, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def parse(id: String, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]

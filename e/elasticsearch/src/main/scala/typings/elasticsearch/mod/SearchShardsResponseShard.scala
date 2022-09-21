@@ -15,9 +15,9 @@ trait SearchShardsResponseShard extends StObject {
   
   var primary: Boolean
   
-  var relocating_node: js.Any
+  var relocating_node: Any
   
-  var share: Double
+  var shard: Double
   
   var state: String
 }
@@ -28,11 +28,11 @@ object SearchShardsResponseShard {
     index: String,
     node: String,
     primary: Boolean,
-    relocating_node: js.Any,
-    share: Double,
+    relocating_node: Any,
+    shard: Double,
     state: String
   ): SearchShardsResponseShard = {
-    val __obj = js.Dynamic.literal(allocation_id = allocation_id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], relocating_node = relocating_node.asInstanceOf[js.Any], share = share.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allocation_id = allocation_id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], relocating_node = relocating_node.asInstanceOf[js.Any], shard = shard.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchShardsResponseShard]
   }
   
@@ -46,9 +46,9 @@ object SearchShardsResponseShard {
     
     inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    inline def setRelocating_node(value: js.Any): Self = StObject.set(x, "relocating_node", value.asInstanceOf[js.Any])
+    inline def setRelocating_node(value: Any): Self = StObject.set(x, "relocating_node", value.asInstanceOf[js.Any])
     
-    inline def setShare(value: Double): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+    inline def setShard(value: Double): Self = StObject.set(x, "shard", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

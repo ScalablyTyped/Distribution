@@ -10,12 +10,18 @@ trait SCREENSAVEROFF extends StObject {
   
   /**
     * Screensaver off
+    *
+    * @version 1.0
+    *
     * @since 2.3
     */
   var SCREEN_SAVER_OFF: `0`
   
   /**
     * Screensaver on
+    *
+    * @version 1.0
+    *
     * @since 2.3
     */
   var SCREEN_SAVER_ON: `1`

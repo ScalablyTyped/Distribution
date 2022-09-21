@@ -22,7 +22,7 @@ object XAutoTextEntry {
   inline def apply(
     acquire: () => Unit,
     applyTo: XTextRange => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAutoTextEntry = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), applyTo = js.Any.fromFunction1(applyTo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

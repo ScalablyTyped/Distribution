@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.OverlapKeeper")
 @js.native
-class OverlapKeeper ()
+open class OverlapKeeper ()
   extends typings.p2.mod.OverlapKeeper

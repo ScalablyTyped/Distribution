@@ -10,12 +10,10 @@ object panelToggleMod {
   
   @JSImport("react-bootstrap/lib/PanelToggle", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PanelToggleProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PanelToggleProps, js.Object, Any]
   
-  @js.native
-  trait PanelToggle
-    extends Component[PanelToggleProps, js.Object, js.Any]
+  type PanelToggle = Component[PanelToggleProps, js.Object, Any]
   
   trait PanelToggleProps
     extends StObject

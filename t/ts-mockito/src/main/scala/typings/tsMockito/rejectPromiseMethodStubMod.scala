@@ -11,27 +11,27 @@ object rejectPromiseMethodStubMod {
   
   @JSImport("ts-mockito/lib/stub/RejectPromiseMethodStub", "RejectPromiseMethodStub")
   @js.native
-  class RejectPromiseMethodStub protected ()
+  open class RejectPromiseMethodStub protected ()
     extends AbstractMethodStub
        with MethodStub {
-    def this(groupIndex: Double, matchers: js.Array[Matcher], value: js.Any) = this()
+    def this(groupIndex: Double, matchers: js.Array[Matcher], value: Any) = this()
     
     /* CompleteClass */
-    override def execute(args: js.Array[js.Any]): Unit = js.native
+    override def execute(args: js.Array[Any]): Unit = js.native
     
     /* InferMemberOverrides */
     override def getGroupIndex(): Double = js.native
     
     /* CompleteClass */
-    override def getValue(): js.Any = js.native
+    override def getValue(): Any = js.native
     
     /* CompleteClass */
-    override def isApplicable(args: js.Array[js.Any]): Boolean = js.native
+    override def isApplicable(args: js.Array[Any]): Boolean = js.native
     
-    /* private */ var matchers: js.Any = js.native
+    /* private */ var matchers: Any = js.native
     
-    /* private */ var validator: js.Any = js.native
+    /* private */ var validator: Any = js.native
     
-    /* private */ var value: js.Any = js.native
+    /* private */ var value: Any = js.native
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BalloonCheckbox extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var Checked: Boolean
   
@@ -19,20 +19,20 @@ trait BalloonCheckbox extends StObject {
   /* private */ @JSName("Office.BalloonCheckbox_typekey")
   var OfficeDotBalloonCheckbox_typekey: BalloonCheckbox
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Text: String
 }
 object BalloonCheckbox {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Checked: Boolean,
     Creator: Double,
     Item: String,
     Name: String,
     OfficeDotBalloonCheckbox_typekey: BalloonCheckbox,
-    Parent: js.Any,
+    Parent: Any,
     Text: String
   ): BalloonCheckbox = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Checked = Checked.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object BalloonCheckbox {
   
   extension [Self <: BalloonCheckbox](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object BalloonCheckbox {
     
     inline def setOfficeDotBalloonCheckbox_typekey(value: BalloonCheckbox): Self = StObject.set(x, "Office.BalloonCheckbox_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }

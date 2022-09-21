@@ -11,9 +11,9 @@ RTP packets parser
 | Full name          | rtp-parser |
 | Keywords           | rtp, parser |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2362 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 215.66666666666666 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/fleg/rtp-parser#readme)

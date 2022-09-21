@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object indexedFilterMod {
   
-  @JSImport("@firebase/database/dist/src/core/view/filter/IndexedFilter", "IndexedFilter")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/filter/IndexedFilter", "IndexedFilter")
   @js.native
-  class IndexedFilter protected ()
+  open class IndexedFilter protected ()
     extends StObject
        with NodeFilter {
     def this(index_ : Index) = this()
     
-    /* private */ val index_ : js.Any = js.native
+    /* private */ val index_ : Any = js.native
   }
 }

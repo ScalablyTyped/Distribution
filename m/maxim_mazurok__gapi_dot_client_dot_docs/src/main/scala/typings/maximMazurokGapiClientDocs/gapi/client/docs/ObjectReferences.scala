@@ -22,6 +22,6 @@ object ObjectReferences {
     
     inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value*))
   }
 }

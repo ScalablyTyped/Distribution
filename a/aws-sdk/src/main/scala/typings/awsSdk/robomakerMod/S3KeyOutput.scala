@@ -14,7 +14,7 @@ trait S3KeyOutput extends StObject {
   /**
     * The S3 key.
     */
-  var s3Key: js.UndefOr[S3Key] = js.undefined
+  var s3Key: js.UndefOr[S3KeyOrPrefix] = js.undefined
 }
 object S3KeyOutput {
   
@@ -29,7 +29,7 @@ object S3KeyOutput {
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    inline def setS3Key(value: S3Key): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: S3KeyOrPrefix): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
     
     inline def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
   }

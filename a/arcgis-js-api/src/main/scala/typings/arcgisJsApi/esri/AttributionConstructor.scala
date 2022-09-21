@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttributionConstructor
   extends StObject
      with /**
-  * The Attribution displays attribution text for the layers in a map.
+  * The Attribution widget displays attribution text for the layers in a map.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html)
   */

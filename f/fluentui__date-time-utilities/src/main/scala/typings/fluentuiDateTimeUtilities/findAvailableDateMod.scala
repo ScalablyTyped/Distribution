@@ -1,7 +1,6 @@
 package typings.fluentuiDateTimeUtilities
 
 import typings.fluentuiDateTimeUtilities.dateGridTypesMod.IAvailableDateOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +11,5 @@ object findAvailableDateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def findAvailableDate(options: IAvailableDateOptions): js.UndefOr[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAvailableDate")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Date]]
+  inline def findAvailableDate(options: IAvailableDateOptions): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAvailableDate")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
 }

@@ -25,7 +25,7 @@ object DevicesLongRunningOperationResponse {
     
     inline def setPerDeviceStatusUndefined: Self = StObject.set(x, "perDeviceStatus", js.undefined)
     
-    inline def setPerDeviceStatusVarargs(value: OperationPerDevice*): Self = StObject.set(x, "perDeviceStatus", js.Array(value :_*))
+    inline def setPerDeviceStatusVarargs(value: OperationPerDevice*): Self = StObject.set(x, "perDeviceStatus", js.Array(value*))
     
     inline def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     

@@ -15,11 +15,14 @@ trait MappedTypeNode
   @JSName("kind")
   val kind_MappedTypeNode: MappedType = js.native
   
+  /** Used only to produce grammar errors */
+  val members: js.UndefOr[NodeArray[TypeElement]] = js.native
+  
   val nameType: js.UndefOr[TypeNode] = js.native
   
   val questionToken: js.UndefOr[QuestionToken | PlusToken | MinusToken] = js.native
   
-  val readonlyToken: js.UndefOr[ReadonlyToken | PlusToken | MinusToken] = js.native
+  val readonlyToken: js.UndefOr[ReadonlyKeyword | PlusToken | MinusToken] = js.native
   
   val `type`: js.UndefOr[TypeNode] = js.native
   

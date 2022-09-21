@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.ProgressBar")
 @js.native
-class ProgressBar protected ()
+open class ProgressBar protected ()
   extends StObject
      with typings.ejWebAll.ej.ProgressBar {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object ProgressBar {
   /* static member */
   @JSGlobal("ej.ProgressBar.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.ProgressBar.fn")

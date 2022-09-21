@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "EntityObjectManager")
 @js.native
-class EntityObjectManager protected ()
+open class EntityObjectManager protected ()
   extends typings.wonderJs.entityObjectManagerMod.EntityObjectManager {
   def this(entityObject: typings.wonderJs.entityObjectMod.EntityObject) = this()
 }

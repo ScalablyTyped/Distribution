@@ -17,12 +17,17 @@ trait AwsEc2VolumeDetails extends StObject {
   var CreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Whether the volume is encrypted.
+    * The device name for the volume that is attached to the instance. 
+    */
+  var DeviceName: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * Specifies whether the volume is encrypted.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the volume.
+    * The ARN of the KMS key that was used to protect the volume encryption key for the volume.
     */
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -37,9 +42,24 @@ trait AwsEc2VolumeDetails extends StObject {
   var SnapshotId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The volume state.
+    * The volume state. Valid values are as follows:    available     creating     deleted     deleting     error     in-use   
     */
   var Status: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * The ID of the volume. 
+    */
+  var VolumeId: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * Indicates whether the volume was scanned or skipped. 
+    */
+  var VolumeScanStatus: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * The volume type. 
+    */
+  var VolumeType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2VolumeDetails {
   
@@ -54,11 +74,15 @@ object AwsEc2VolumeDetails {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: AwsEc2VolumeAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: AwsEc2VolumeAttachment*): Self = StObject.set(x, "Attachments", js.Array(value*))
     
     inline def setCreateTime(value: NonEmptyString): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    
+    inline def setDeviceName(value: NonEmptyString): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
     
     inline def setEncrypted(value: Boolean): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
@@ -79,5 +103,17 @@ object AwsEc2VolumeDetails {
     inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setVolumeId(value: NonEmptyString): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
+    
+    inline def setVolumeScanStatus(value: NonEmptyString): Self = StObject.set(x, "VolumeScanStatus", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeScanStatusUndefined: Self = StObject.set(x, "VolumeScanStatus", js.undefined)
+    
+    inline def setVolumeType(value: NonEmptyString): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
   }
 }

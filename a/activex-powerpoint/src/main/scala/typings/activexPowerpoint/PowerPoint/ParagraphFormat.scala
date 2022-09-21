@@ -25,7 +25,7 @@ trait ParagraphFormat extends StObject {
   
   var LineRuleWithin: MsoTriState
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ParagraphFormat_typekey")
   var PowerPointDotParagraphFormat_typekey: ParagraphFormat
@@ -52,7 +52,7 @@ object ParagraphFormat {
     LineRuleAfter: MsoTriState,
     LineRuleBefore: MsoTriState,
     LineRuleWithin: MsoTriState,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotParagraphFormat_typekey: ParagraphFormat,
     SpaceAfter: Double,
     SpaceBefore: Double,
@@ -85,7 +85,7 @@ object ParagraphFormat {
     
     inline def setLineRuleWithin(value: MsoTriState): Self = StObject.set(x, "LineRuleWithin", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotParagraphFormat_typekey(value: ParagraphFormat): Self = StObject.set(x, "PowerPoint.ParagraphFormat_typekey", value.asInstanceOf[js.Any])
     

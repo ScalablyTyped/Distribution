@@ -8,5 +8,5 @@ object keySchemaMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_KeySchema", "_KeySchema")
   @js.native
-  val KeySchema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val KeySchema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

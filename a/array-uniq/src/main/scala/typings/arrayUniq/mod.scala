@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[ValueType](array: js.Array[ValueType]): js.Array[ValueType] = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[ValueType]]
-  
   @JSImport("array-uniq", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default[ValueType](array: js.Array[ValueType]): js.Array[ValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[ValueType]]
 }

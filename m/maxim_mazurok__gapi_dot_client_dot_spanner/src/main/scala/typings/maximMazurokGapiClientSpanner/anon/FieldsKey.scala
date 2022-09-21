@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSpanner.anon
 
-import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.ReadRequest
+import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.PartitionReadRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +36,9 @@ trait FieldsKey extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ReadRequest
+  var resource: PartitionReadRequest
   
-  /** Required. The session in which the read should be performed. */
+  /** Required. The session used to create the partitions. */
   var session: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -49,7 +49,7 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(resource: ReadRequest, session: String): FieldsKey = {
+  inline def apply(resource: PartitionReadRequest, session: String): FieldsKey = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
@@ -92,7 +92,7 @@ object FieldsKey {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ReadRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: PartitionReadRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

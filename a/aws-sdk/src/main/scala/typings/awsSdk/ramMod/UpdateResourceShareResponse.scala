@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateResourceShareResponse extends StObject {
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * The idempotency identifier associated with this request. If you want to repeat the same operation in an idempotent manner then you must include this value in the clientToken request parameter of that later call. All other parameters must also have the same values that you used in the first call.
     */
   var clientToken: js.UndefOr[String] = js.undefined
   

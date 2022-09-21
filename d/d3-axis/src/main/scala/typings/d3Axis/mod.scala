@@ -3,7 +3,6 @@ package typings.d3Axis
 import typings.d3Axis.anon.ValueOf
 import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.TransitionLike
-import typings.std.Date
 import typings.std.SVGGElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
@@ -30,15 +29,22 @@ object mod {
     /**
       * Render the axis to the given context.
       *
-      * @param context A selection of SVG containers (either SVG or G elements).
+      * @param context A selection of or a transition defined on SVG containers (either SVG or G elements).
       */
-    def apply(context: Selection_[SVGGElement | SVGSVGElement, js.Any, js.Any, js.Any]): Unit = js.native
+    def apply(context: Selection_[SVGGElement | SVGSVGElement, Any, Any, Any]): Unit = js.native
+    def apply(context: TransitionLike[SVGGElement | SVGSVGElement, Any]): Unit = js.native
+    
     /**
-      * Render the axis to the given context.
-      *
-      * @param context A transition defined on SVG containers (either SVG or G elements).
+      * Returns the current offset which defaults to 0 on devices with a devicePixelRatio greater than 1, and 0.5px otherwise.
+      * This default offset ensures crisp edges on low-resolution devices.
       */
-    def apply(context: TransitionLike[SVGGElement | SVGSVGElement, js.Any]): Unit = js.native
+    def offset(): Double = js.native
+    /**
+      * Sets the offset to the specified value in pixels and returns the axis.
+      * Defaults to 0 on devices with a devicePixelRatio greater than 1, and 0.5px otherwise.
+      * This default offset ensures crisp edges on low-resolution devices.
+      */
+    def offset(offset: Double): this.type = js.native
     
     /**
       * Sets the scale and returns the axis.
@@ -49,12 +55,13 @@ object mod {
     /**
       * Gets the current scale underlying the axis.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def scale[A /* <: AxisScale[Domain] */](): A = js.native
     
     /**
       * Get an array containing the currently set arguments to be passed into scale.ticks and scale.tickFormat, which defaults to the empty array.
       */
-    def tickArguments(): js.Array[js.Any] = js.native
+    def tickArguments(): js.Array[Any] = js.native
     /**
       * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
       *
@@ -63,50 +70,11 @@ object mod {
       *
       * See also axis.ticks.
       *
-      * @param args An array containing a single element representing the count, i.e. number of ticks to be rendered.
+      * @param args The meaning of the arguments depends on the axis’ scale type: most commonly, the arguments are a
+      * suggested count for the number of ticks (or a time interval for time scales), and an optional format specifier to
+      * customize how the tick values are formatted.
       */
-    /**
-      * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
-      * Use with a TIME SCALE ONLY.
-      *
-      * See also axis.ticks.
-      *
-      * @param args An array containing a single element representing a time interval used to generate date-based ticks.
-      * This is typically a TimeInterval/CountableTimeInterval as defined in d3-time. E.g. as obtained by passing in d3.timeMinute.every(15).
-      */
-    /**
-      * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
-      *
-      * This method has no effect if the scale does not implement scale.ticks, as with band and point scales.
-      * To set the tick values explicitly, use axis.tickValues. To set the tick format explicitly, use axis.tickFormat.
-      *
-      * See also axis.ticks.
-      *
-      * @param args An array with arguments suitable for the scale to be used for tick generation.
-      */
-    def tickArguments(args: js.Array[js.Any | AxisTimeInterval | Double]): this.type = js.native
-    /**
-      * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
-      *
-      * This method has no effect if the scale does not implement scale.ticks, as with band and point scales.
-      * To set the tick values explicitly, use axis.tickValues. To set the tick format explicitly, use axis.tickFormat.
-      *
-      * See also axis.ticks.
-      *
-      * @param args An array containing two elements. The first element represents the count, i.e. number of ticks to be rendered. The second
-      * element is a string representing the format specifier to customize how the tick values are formatted.
-      */
-    /**
-      * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
-      * Use with a TIME SCALE ONLY.
-      *
-      * See also axis.ticks.
-      *
-      * @param args An array containing two elements. The first element represents a time interval used to generate date-based ticks.
-      * This is typically a TimeInterval/CountableTimeInterval as defined in d3-time. E.g. as obtained by passing in d3.timeMinute.every(15).
-      * The second element is a string representing the format specifier to customize how the tick values are formatted.
-      */
-    def tickArguments(args: js.Tuple2[AxisTimeInterval | Double, String]): this.type = js.native
+    def tickArguments(args: js.Array[Any]): this.type = js.native
     
     /**
       * Returns the currently set tick format function, which defaults to null.
@@ -200,9 +168,9 @@ object mod {
       * However, any tick arguments will still be passed to the scale’s tickFormat function if a
       * tick format is not also set.
       *
-      * @param values An array with values from the Domain of the scale underlying the axis.
+      * @param values An iterable with values from the Domain of the scale underlying the axis.
       */
-    def tickValues(values: js.Array[Domain]): this.type = js.native
+    def tickValues(values: js.Iterable[Domain]): this.type = js.native
     /**
       * Clears any previously-set explicit tick values and reverts back to the scale’s tick generator.
       *
@@ -222,7 +190,7 @@ object mod {
       *
       * This method is also a convenience function for axis.tickArguments.
       */
-    def ticks(arg0: js.Any, args: js.Any*): this.type = js.native
+    def ticks(arg0: Any, args: Any*): this.type = js.native
     /**
       * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
       *
@@ -245,13 +213,14 @@ object mod {
       * in d3-time. E.g. as obtained by passing in d3.timeMinute.every(15).
       * @param specifier An optional format specifier to customize how the tick values are formatted.
       */
+    // tslint:disable-next-line:unified-signatures
     def ticks(interval: AxisTimeInterval): this.type = js.native
     def ticks(interval: AxisTimeInterval, specifier: String): this.type = js.native
   }
   
   type AxisContainerElement = SVGSVGElement | SVGGElement
   
-  type AxisDomain = Double | String | Date | ValueOf
+  type AxisDomain = Double | String | js.Date | ValueOf
   
   @js.native
   trait AxisScale[Domain] extends StObject {
@@ -270,7 +239,7 @@ object mod {
   @js.native
   trait AxisTimeInterval extends StObject {
     
-    def range(start: Date, stop: Date): js.Array[Date] = js.native
-    def range(start: Date, stop: Date, step: Double): js.Array[Date] = js.native
+    def range(start: js.Date, stop: js.Date): js.Array[js.Date] = js.native
+    def range(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = js.native
   }
 }

@@ -14,11 +14,11 @@ object chomecastApiMockMod {
   
   @JSImport("playable/dist/src/testkit/chomecast-api-mock", "CastTestFramework")
   @js.native
-  class CastTestFramework () extends StObject {
+  open class CastTestFramework () extends StObject {
     
     def CastContext: GetInstance = js.native
     
-    def CastContextEventType: js.Any = js.native
+    def CastContextEventType: Any = js.native
     
     var RemotePlayer: Instantiable0[typings.playable.chomecastApiMockMod.RemotePlayer] = js.native
     
@@ -27,15 +27,15 @@ object chomecastApiMockMod {
         typings.playable.chomecastApiMockMod.RemotePlayerController
       ] = js.native
     
-    def RemotePlayerEventType: js.Any = js.native
+    def RemotePlayerEventType: Any = js.native
     
-    def SessionState: js.Any = js.native
+    def SessionState: Any = js.native
     
-    /* private */ var _context: js.Any = js.native
+    /* private */ var _context: Any = js.native
     
     def context: CastContext = js.native
     
-    def trigger(`type`: eventType, event: js.Any): Unit = js.native
+    def trigger(`type`: eventType, event: Any): Unit = js.native
   }
   
   @js.native
@@ -109,7 +109,7 @@ object chomecastApiMockMod {
   
   @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowCastAPIMock")
   @js.native
-  class WindowCastAPIMock () extends StObject {
+  open class WindowCastAPIMock () extends StObject {
     
     var framework: CastTestFramework = js.native
   }
@@ -128,7 +128,7 @@ object chomecastApiMockMod {
   
   @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowChromeAPIMock")
   @js.native
-  class WindowChromeAPIMock () extends StObject {
+  open class WindowChromeAPIMock () extends StObject {
     
     def cast: AutoJoinPolicy = js.native
   }
@@ -175,14 +175,14 @@ object chomecastApiMockMod {
     
     def addEventListener(`type`: eventType, func: js.Function): Unit
     
-    def trigger(`type`: eventType, event: js.Any): Unit
+    def trigger(`type`: eventType, event: Any): Unit
   }
   object Publisher {
     
     inline def apply(
       _listeners: StringDictionary[js.Array[js.Function]],
       addEventListener: (eventType, js.Function) => Unit,
-      trigger: (eventType, js.Any) => Unit
+      trigger: (eventType, Any) => Unit
     ): Publisher = {
       val __obj = js.Dynamic.literal(_listeners = _listeners.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), trigger = js.Any.fromFunction2(trigger))
       __obj.asInstanceOf[Publisher]
@@ -192,7 +192,7 @@ object chomecastApiMockMod {
       
       inline def setAddEventListener(value: (eventType, js.Function) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      inline def setTrigger(value: (eventType, js.Any) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
+      inline def setTrigger(value: (eventType, Any) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
       
       inline def set_listeners(value: StringDictionary[js.Array[js.Function]]): Self = StObject.set(x, "_listeners", value.asInstanceOf[js.Any])
     }
@@ -233,7 +233,7 @@ object chomecastApiMockMod {
       player: RemotePlayer,
       seek: () => Unit,
       setVolumeLevel: () => Unit,
-      trigger: (eventType, js.Any) => Unit
+      trigger: (eventType, Any) => Unit
     ): RemotePlayerController = {
       val __obj = js.Dynamic.literal(_listeners = _listeners.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), player = player.asInstanceOf[js.Any], seek = js.Any.fromFunction0(seek), setVolumeLevel = js.Any.fromFunction0(setVolumeLevel), trigger = js.Any.fromFunction2(trigger))
       __obj.asInstanceOf[RemotePlayerController]

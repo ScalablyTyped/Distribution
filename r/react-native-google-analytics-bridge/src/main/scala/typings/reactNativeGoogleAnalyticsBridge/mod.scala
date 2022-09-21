@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings")
   @js.native
-  class GoogleAnalyticsSettings () extends default
+  open class GoogleAnalyticsSettings () extends default
   object GoogleAnalyticsSettings {
     
     @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings")
@@ -68,7 +68,7 @@ object mod {
     */
   @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsTracker")
   @js.native
-  class GoogleAnalyticsTracker protected ()
+  open class GoogleAnalyticsTracker protected ()
     extends typings.reactNativeGoogleAnalyticsBridge.googleAnalyticsTrackerMod.default {
     /**
       * Save all tracker related data that is needed to call native methods with proper data.
@@ -91,7 +91,7 @@ object mod {
     */
   @JSImport("react-native-google-analytics-bridge", "GoogleTagManager")
   @js.native
-  class GoogleTagManager ()
+  open class GoogleTagManager ()
     extends typings.reactNativeGoogleAnalyticsBridge.googleTagManagerMod.default
   object GoogleTagManager {
     
@@ -115,7 +115,7 @@ object mod {
       * @returns {Promise<number>}
       */
     /* static member */
-    inline def doubleForKey(key: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def doubleForKey(key: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Call once to open the container for all subsequent static calls.
@@ -157,7 +157,7 @@ object mod {
       * @param {Function} handler
       */
     /* static member */
-    inline def registerFunctionCallTagHandler(functionName: js.Any, handler: js.Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctionCallTagHandler")(functionName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def registerFunctionCallTagHandler(functionName: Any, handler: Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctionCallTagHandler")(functionName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Sets logger to verbose, default is warning

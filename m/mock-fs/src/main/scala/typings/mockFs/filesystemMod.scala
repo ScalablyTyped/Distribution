@@ -1,8 +1,7 @@
 package typings.mockFs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object filesystemMod {
     * @param options.createTmp Create a directory for `os.tmpdir()` (defaults
     *                          to `true`).
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with FileSystem {
     def this(options: Options) = this()
@@ -110,18 +109,18 @@ object filesystemMod {
     /**
       * The last directory access time. Defaults to `new Date()`.
       */
-    var atime: js.UndefOr[Date] = js.undefined
+    var atime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The time of directory creation. Defaults to `new Date()`.
       */
-    var birthtime: js.UndefOr[Date] = js.undefined
+    var birthtime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The last directory change time. Defaults to `new Date()`. Updated
       * when owner or permissions change.
       */
-    var ctime: js.UndefOr[Date] = js.undefined
+    var ctime: js.UndefOr[js.Date] = js.undefined
     
     /** The group id. Defaults to `process.getgid()`. */
     var gid: js.UndefOr[Double] = js.undefined
@@ -139,7 +138,7 @@ object filesystemMod {
       * The last directory modification time. Defaults to `new Date()`.
       * Updated when an item is added, removed, or renamed.
       */
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
     
     /** The user id. Defaults to `process.getuid()`. */
     var uid: js.UndefOr[Double] = js.undefined
@@ -153,15 +152,15 @@ object filesystemMod {
     
     extension [Self <: DirectoryOptions](x: Self) {
       
-      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
       inline def setAtimeUndefined: Self = StObject.set(x, "atime", js.undefined)
       
-      inline def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
+      inline def setBirthtime(value: js.Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
       
       inline def setBirthtimeUndefined: Self = StObject.set(x, "birthtime", js.undefined)
       
-      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
       inline def setCtimeUndefined: Self = StObject.set(x, "ctime", js.undefined)
       
@@ -177,7 +176,7 @@ object filesystemMod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
@@ -193,12 +192,12 @@ object filesystemMod {
       * The last file access time. Defaults to `new Date()`. Updated when
       * file contents are accessed.
       */
-    var atime: js.UndefOr[Date] = js.undefined
+    var atime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The time of file creation. Defaults to `new Date()`.
       */
-    var birthtime: js.UndefOr[Date] = js.undefined
+    var birthtime: js.UndefOr[js.Date] = js.undefined
     
     /** File contents */
     var content: js.UndefOr[String | Buffer] = js.undefined
@@ -207,7 +206,7 @@ object filesystemMod {
       * The last file change time. Defaults to `new Date()`. Updated when
       * file owner or permissions change.
       */
-    var ctime: js.UndefOr[Date] = js.undefined
+    var ctime: js.UndefOr[js.Date] = js.undefined
     
     /** The group id. Defaults to `process.getgid()`. */
     var gid: js.UndefOr[Double] = js.undefined
@@ -219,7 +218,7 @@ object filesystemMod {
       * The last file modification time. Defaults to `new Date()`. Updated
       * when file contents change.
       */
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
     
     /** The user id. Defaults to `process.getuid()`. */
     var uid: js.UndefOr[Double] = js.undefined
@@ -233,11 +232,11 @@ object filesystemMod {
     
     extension [Self <: FileOptions](x: Self) {
       
-      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
       inline def setAtimeUndefined: Self = StObject.set(x, "atime", js.undefined)
       
-      inline def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
+      inline def setBirthtime(value: js.Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
       
       inline def setBirthtimeUndefined: Self = StObject.set(x, "birthtime", js.undefined)
       
@@ -245,7 +244,7 @@ object filesystemMod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
       inline def setCtimeUndefined: Self = StObject.set(x, "ctime", js.undefined)
       
@@ -257,7 +256,7 @@ object filesystemMod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
@@ -356,13 +355,13 @@ object filesystemMod {
   trait SymlinkOptions extends StObject {
     
     /** The last symlink access time. Defaults to `new Date()`. */
-    var atime: js.UndefOr[Date] = js.undefined
+    var atime: js.UndefOr[js.Date] = js.undefined
     
     /** The time of symlink creation. Defaults to `new Date()`. */
-    var birthtime: js.UndefOr[Date] = js.undefined
+    var birthtime: js.UndefOr[js.Date] = js.undefined
     
     /** The last symlink change time. Defaults to `new Date()`. */
-    var ctime: js.UndefOr[Date] = js.undefined
+    var ctime: js.UndefOr[js.Date] = js.undefined
     
     /** The group id. Defaults to `process.getgid()`. */
     var gid: js.UndefOr[Double] = js.undefined
@@ -371,7 +370,7 @@ object filesystemMod {
     var mode: js.UndefOr[Double] = js.undefined
     
     /** The last symlink modification time. Defaults to `new Date()`. */
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
     
     /** Path to the source (required). */
     var path: String
@@ -388,15 +387,15 @@ object filesystemMod {
     
     extension [Self <: SymlinkOptions](x: Self) {
       
-      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
       inline def setAtimeUndefined: Self = StObject.set(x, "atime", js.undefined)
       
-      inline def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
+      inline def setBirthtime(value: js.Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
       
       inline def setBirthtimeUndefined: Self = StObject.set(x, "birthtime", js.undefined)
       
-      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
       inline def setCtimeUndefined: Self = StObject.set(x, "ctime", js.undefined)
       
@@ -408,7 +407,7 @@ object filesystemMod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Auth0Challenge
   extends StObject
-     with /* other */ StringDictionary[js.Any] {
+     with /* other */ StringDictionary[Any] {
   
   var image: String
   

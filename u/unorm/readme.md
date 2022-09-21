@@ -10,10 +10,10 @@ JavaScript Unicode 8.0 Normalization - NFC, NFD, NFKC, NFKD. Read <http://unicod
 | ------------------ | :-------------: |
 | Full name          | unorm |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 229 |
-| # downloads        | 14623065 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2147189.3333333335 |
+| # stars            | 360.0 |
 
 ## Links
 - [Homepage](https://github.com/walling/unorm#readme)

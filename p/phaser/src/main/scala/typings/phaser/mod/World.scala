@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("matter", "World")
 @js.native
-class World ()
+open class World ()
   extends StObject
      with typings.phaser.MatterJS.World {
   

@@ -6,35 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Reliably get the terminal window size.
-  @example
-  ```
-  import terminalSize = require('term-size');
-  terminalSize();
-  //=> {columns: 143, rows: 24}
-  ```
-  */
-  inline def apply(): Size = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Size]
-  
   @JSImport("term-size", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait Size extends StObject {
+  inline def default(): TerminalSize = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TerminalSize]
+  
+  trait TerminalSize extends StObject {
     
     var columns: Double
     
     var rows: Double
   }
-  object Size {
+  object TerminalSize {
     
-    inline def apply(columns: Double, rows: Double): Size = {
+    inline def apply(columns: Double, rows: Double): TerminalSize = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Size]
+      __obj.asInstanceOf[TerminalSize]
     }
     
-    extension [Self <: Size](x: Self) {
+    extension [Self <: TerminalSize](x: Self) {
       
       inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

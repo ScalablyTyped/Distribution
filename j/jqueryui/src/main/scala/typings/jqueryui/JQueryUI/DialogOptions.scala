@@ -45,7 +45,7 @@ trait DialogOptions
   
   var modal: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[Any] = js.undefined
   
   // object, string or []
   var resizable: js.UndefOr[Boolean] = js.undefined
@@ -56,7 +56,7 @@ trait DialogOptions
   
   var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[Any] = js.undefined
   
   // number or string
   var zIndex: js.UndefOr[Double] = js.undefined
@@ -84,7 +84,7 @@ object DialogOptions {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: DialogButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: DialogButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setClasses(value: DialogClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
@@ -138,7 +138,7 @@ object DialogOptions {
     
     inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
@@ -158,7 +158,7 @@ object DialogOptions {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     

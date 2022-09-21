@@ -22,6 +22,6 @@ object Notifications {
     
     inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
-    inline def setNotificationsVarargs(value: SchemaCalendarNotification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: SchemaCalendarNotification*): Self = StObject.set(x, "notifications", js.Array(value*))
   }
 }

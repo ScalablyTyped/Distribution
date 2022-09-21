@@ -14,7 +14,7 @@ trait ExportSnapshotRecordSourceInfo extends StObject {
   /**
     * The date when the source instance or disk snapshot was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of objects describing a disk snapshot.
@@ -59,7 +59,7 @@ object ExportSnapshotRecordSourceInfo {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

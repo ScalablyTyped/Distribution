@@ -19,7 +19,7 @@ trait TemplateName extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** The country of the template to retrieve. Defaults to `US`. */
+  /** The country of the template to retrieve. Defaults to "`US`". */
   var country: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */

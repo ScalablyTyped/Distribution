@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listTagsForResourceCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/ListTagsForResourceCommand", "ListTagsForResourceCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/ListTagsForResourceCommand", "ListTagsForResourceCommand")
   @js.native
-  class ListTagsForResourceCommand protected ()
-    extends Command[
+  open class ListTagsForResourceCommand protected () extends Command[
           ListTagsForResourceCommandInput, 
           ListTagsForResourceCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: ListTagsForResourceCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +44,7 @@ object listTagsForResourceCommandMod {
       options: HttpHandlerOptions
     ): Handler[ListTagsForResourceCommandInput, ListTagsForResourceCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type ListTagsForResourceCommandInput = ListTagsForResourceInput

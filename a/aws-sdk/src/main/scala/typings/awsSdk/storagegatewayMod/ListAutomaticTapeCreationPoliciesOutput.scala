@@ -24,6 +24,6 @@ object ListAutomaticTapeCreationPoliciesOutput {
     
     inline def setAutomaticTapeCreationPolicyInfosUndefined: Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", js.undefined)
     
-    inline def setAutomaticTapeCreationPolicyInfosVarargs(value: AutomaticTapeCreationPolicyInfo*): Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", js.Array(value :_*))
+    inline def setAutomaticTapeCreationPolicyInfosVarargs(value: AutomaticTapeCreationPolicyInfo*): Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", js.Array(value*))
   }
 }

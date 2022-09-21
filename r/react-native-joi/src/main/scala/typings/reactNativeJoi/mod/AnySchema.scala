@@ -1,6 +1,5 @@
 package typings.reactNativeJoi.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,15 +29,15 @@ trait AnySchema
     *  second parameter is required.
     */
   def default(): this.type = js.native
-  def default(value: js.Any): this.type = js.native
-  def default(value: js.Any, description: String): this.type = js.native
+  def default(value: Any): this.type = js.native
+  def default(value: Any, description: String): this.type = js.native
   def default(value: Unit, description: String): this.type = js.native
   
   /**
     * Whitelists a value
     */
-  def allow(values: js.Any*): this.type = js.native
-  def allow(values: js.Array[js.Any]): this.type = js.native
+  def allow(values: Any*): this.type = js.native
+  def allow(values: js.Array[Any]): this.type = js.native
   
   /**
     * By default, some Joi methods to function properly need to rely on the Joi instance they are attached to because
@@ -63,8 +62,8 @@ trait AnySchema
     */
   def description(desc: String): this.type = js.native
   
-  def disallow(values: js.Any*): this.type = js.native
-  def disallow(values: js.Array[js.Any]): this.type = js.native
+  def disallow(values: Any*): this.type = js.native
+  def disallow(values: js.Array[Any]): this.type = js.native
   
   /**
     * Considers anything that matches the schema to be empty (undefined).
@@ -73,11 +72,9 @@ trait AnySchema
   def empty(): this.type = js.native
   def empty(schema: SchemaLike): this.type = js.native
   
-  def equal(values: js.Any*): this.type = js.native
-  def equal(values: js.Array[js.Any]): this.type = js.native
+  def equal(values: Any*): this.type = js.native
+  def equal(values: js.Array[Any]): this.type = js.native
   
-  def error(err: ValidationErrorFunction): this.type = js.native
-  def error(err: ValidationErrorFunction, options: ErrorOptions): this.type = js.native
   /**
     * Overrides the default joi error with a custom error if the rule fails where:
     * @param err - can be:
@@ -96,13 +93,15 @@ trait AnySchema
     * override, that error will be returned and the override will be ignored (unless the `abortEarly`
     * option has been set to `false`).
     */
-  def error(err: Error): this.type = js.native
-  def error(err: Error, options: ErrorOptions): this.type = js.native
+  def error(err: js.Error): this.type = js.native
+  def error(err: js.Error, options: ErrorOptions): this.type = js.native
+  def error(err: ValidationErrorFunction): this.type = js.native
+  def error(err: ValidationErrorFunction, options: ErrorOptions): this.type = js.native
   
   /**
     * Annotates the key with an example value, must be valid.
     */
-  def example(value: js.Any): this.type = js.native
+  def example(value: Any): this.type = js.native
   
   def exist(): this.type = js.native
   
@@ -114,8 +113,8 @@ trait AnySchema
   /**
     * Blacklists a value
     */
-  def invalid(values: js.Any*): this.type = js.native
-  def invalid(values: js.Array[js.Any]): this.type = js.native
+  def invalid(values: Any*): this.type = js.native
+  def invalid(values: js.Array[Any]): this.type = js.native
   
   /**
     * Overrides the key name in error messages.
@@ -127,8 +126,8 @@ trait AnySchema
     */
   def meta(meta: js.Object): this.type = js.native
   
-  def not(values: js.Any*): this.type = js.native
-  def not(values: js.Array[js.Any]): this.type = js.native
+  def not(values: Any*): this.type = js.native
+  def not(values: js.Array[Any]): this.type = js.native
   
   /**
     * Annotates the key
@@ -136,8 +135,8 @@ trait AnySchema
   def notes(notes: String): this.type = js.native
   def notes(notes: js.Array[String]): this.type = js.native
   
-  def only(values: js.Any*): this.type = js.native
-  def only(values: js.Array[js.Any]): this.type = js.native
+  def only(values: Any*): this.type = js.native
+  def only(values: js.Array[Any]): this.type = js.native
   
   /**
     * Marks a key as optional which will allow undefined as values. Used to annotate the schema for readability as all keys are optional by default.
@@ -187,8 +186,8 @@ trait AnySchema
   /**
     * Adds the provided values into the allowed whitelist and marks them as the only valid values allowed.
     */
-  def valid(values: js.Any*): this.type = js.native
-  def valid(values: js.Array[js.Any]): this.type = js.native
+  def valid(values: Any*): this.type = js.native
+  def valid(values: js.Array[Any]): this.type = js.native
   
   /**
     * Validates a value using the schema and options.

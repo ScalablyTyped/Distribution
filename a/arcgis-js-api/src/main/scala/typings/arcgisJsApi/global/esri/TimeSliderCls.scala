@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html)
   */
-class TimeSliderCls ()
+open class TimeSliderCls ()
   extends StObject
      with typings.arcgisJsApi.esri.TimeSlider {
   def this(properties: TimeSliderProperties) = this()

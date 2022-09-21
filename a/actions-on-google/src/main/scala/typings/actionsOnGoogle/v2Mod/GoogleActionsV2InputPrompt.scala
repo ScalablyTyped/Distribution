@@ -35,13 +35,13 @@ object GoogleActionsV2InputPrompt {
     
     inline def setInitialPromptsUndefined: Self = StObject.set(x, "initialPrompts", js.undefined)
     
-    inline def setInitialPromptsVarargs(value: GoogleActionsV2SpeechResponse*): Self = StObject.set(x, "initialPrompts", js.Array(value :_*))
+    inline def setInitialPromptsVarargs(value: GoogleActionsV2SpeechResponse*): Self = StObject.set(x, "initialPrompts", js.Array(value*))
     
     inline def setNoInputPrompts(value: js.Array[GoogleActionsV2SimpleResponse]): Self = StObject.set(x, "noInputPrompts", value.asInstanceOf[js.Any])
     
     inline def setNoInputPromptsUndefined: Self = StObject.set(x, "noInputPrompts", js.undefined)
     
-    inline def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value :_*))
+    inline def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value*))
     
     inline def setRichInitialPrompt(value: GoogleActionsV2RichResponse): Self = StObject.set(x, "richInitialPrompt", value.asInstanceOf[js.Any])
     

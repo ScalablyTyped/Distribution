@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.gridsuggest because var conflicts: $enterKey_Original, $height, $scope, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.gridsuggest")
+- typings.webix.webix.ui.gridsuggest because var conflicts: $dragCreate_Original, $dragDestroy_Original, $dragPos_Original, $enterKey_Original, $height, $scope, $setNode, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.gridsuggest")
 @js.native
-class gridsuggest ()
+open class gridsuggest ()
   extends typings.webix.mod.ui.gridsuggest

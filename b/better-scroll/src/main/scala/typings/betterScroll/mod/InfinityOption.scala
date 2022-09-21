@@ -11,11 +11,11 @@ trait InfinityOption extends StObject {
   
   def fetch(count: Double): Unit
   
-  def render(item: js.Any, div: Element): Element
+  def render(item: Any, div: Element): Element
 }
 object InfinityOption {
   
-  inline def apply(createTombstone: () => Element, fetch: Double => Unit, render: (js.Any, Element) => Element): InfinityOption = {
+  inline def apply(createTombstone: () => Element, fetch: Double => Unit, render: (Any, Element) => Element): InfinityOption = {
     val __obj = js.Dynamic.literal(createTombstone = js.Any.fromFunction0(createTombstone), fetch = js.Any.fromFunction1(fetch), render = js.Any.fromFunction2(render))
     __obj.asInstanceOf[InfinityOption]
   }
@@ -26,6 +26,6 @@ object InfinityOption {
     
     inline def setFetch(value: Double => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     
-    inline def setRender(value: (js.Any, Element) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (Any, Element) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
   }
 }

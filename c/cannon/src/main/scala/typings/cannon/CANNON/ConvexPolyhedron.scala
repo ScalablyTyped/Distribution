@@ -18,7 +18,7 @@ trait ConvexPolyhedron
     separatingNormal: Vec3,
     minDist: Double,
     maxDist: Double,
-    result: js.Array[js.Any]
+    result: js.Array[Any]
   ): Unit
   
   def clipFaceAgainstHull(
@@ -28,7 +28,7 @@ trait ConvexPolyhedron
     worldVertsB1: js.Array[Vec3],
     minDist: Double,
     maxDist: Double,
-    result: js.Array[js.Any]
+    result: js.Array[Any]
   ): Unit
   
   def clipFaceAgainstPlane(inVertices: js.Array[Vec3], outVertices: js.Array[Vec3], planeNormal: Vec3, planeConstant: Double): Vec3
@@ -54,8 +54,8 @@ trait ConvexPolyhedron
     posB: Vec3,
     quatB: Quaternion,
     target: Vec3,
-    faceListA: js.Array[js.Any],
-    faceListB: js.Array[js.Any]
+    faceListA: js.Array[Any],
+    faceListB: js.Array[Any]
   ): Boolean
   
   def getAveragePointLocal(target: Vec3): Vec3
@@ -84,8 +84,8 @@ object ConvexPolyhedron {
     boundingSphereRadius: Double,
     calculateLocalInertia: (Double, Vec3) => Vec3,
     calculateWorldAABB: (Vec3, Quaternion, Vec3, Vec3) => Unit,
-    clipAgainstHull: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[js.Any]) => Unit,
-    clipFaceAgainstHull: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[js.Any]) => Unit,
+    clipAgainstHull: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[Any]) => Unit,
+    clipFaceAgainstHull: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[Any]) => Unit,
     clipFaceAgainstPlane: (js.Array[Vec3], js.Array[Vec3], Vec3, Double) => Vec3,
     collisionResponse: Boolean,
     computeEdges: () => Unit,
@@ -95,10 +95,11 @@ object ConvexPolyhedron {
     computeWorldVertices: (Vec3, Quaternion) => Unit,
     faceNormals: js.Array[Vec3],
     faces: js.Array[js.Array[Double]],
-    findSaparatingAxis: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[js.Any], js.Array[js.Any]) => Boolean,
+    findSaparatingAxis: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[Any], js.Array[Any]) => Boolean,
     getAveragePointLocal: Vec3 => Vec3,
     getFaceNormal: (Double, Vec3) => Vec3,
     getPlaneConstantOfFace: Double => Double,
+    id: Double,
     pointIsInside: Vec3 => Boolean,
     testSepAxis: (Vec3, ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion) => Double,
     transformAllPoints: (Vec3, Quaternion) => Unit,
@@ -110,7 +111,7 @@ object ConvexPolyhedron {
     worldVertices: js.Array[Vec3],
     worldVerticesNeedsUpdate: Boolean
   ): ConvexPolyhedron = {
-    val __obj = js.Dynamic.literal(boundingSphereRadius = boundingSphereRadius.asInstanceOf[js.Any], calculateLocalInertia = js.Any.fromFunction2(calculateLocalInertia), calculateWorldAABB = js.Any.fromFunction4(calculateWorldAABB), clipAgainstHull = js.Any.fromFunction8(clipAgainstHull), clipFaceAgainstHull = js.Any.fromFunction7(clipFaceAgainstHull), clipFaceAgainstPlane = js.Any.fromFunction4(clipFaceAgainstPlane), collisionResponse = collisionResponse.asInstanceOf[js.Any], computeEdges = js.Any.fromFunction0(computeEdges), computeLocalAABB = js.Any.fromFunction2(computeLocalAABB), computeNormals = js.Any.fromFunction0(computeNormals), computeWorldFaceNormals = js.Any.fromFunction1(computeWorldFaceNormals), computeWorldVertices = js.Any.fromFunction2(computeWorldVertices), faceNormals = faceNormals.asInstanceOf[js.Any], faces = faces.asInstanceOf[js.Any], findSaparatingAxis = js.Any.fromFunction8(findSaparatingAxis), getAveragePointLocal = js.Any.fromFunction1(getAveragePointLocal), getFaceNormal = js.Any.fromFunction2(getFaceNormal), getPlaneConstantOfFace = js.Any.fromFunction1(getPlaneConstantOfFace), pointIsInside = js.Any.fromFunction1(pointIsInside), testSepAxis = js.Any.fromFunction6(testSepAxis), transformAllPoints = js.Any.fromFunction2(transformAllPoints), uniqueEdges = uniqueEdges.asInstanceOf[js.Any], updateBoundingSphereRadius = js.Any.fromFunction0(updateBoundingSphereRadius), vertices = vertices.asInstanceOf[js.Any], volume = js.Any.fromFunction0(volume), worldVertices = worldVertices.asInstanceOf[js.Any], worldVerticesNeedsUpdate = worldVerticesNeedsUpdate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(boundingSphereRadius = boundingSphereRadius.asInstanceOf[js.Any], calculateLocalInertia = js.Any.fromFunction2(calculateLocalInertia), calculateWorldAABB = js.Any.fromFunction4(calculateWorldAABB), clipAgainstHull = js.Any.fromFunction8(clipAgainstHull), clipFaceAgainstHull = js.Any.fromFunction7(clipFaceAgainstHull), clipFaceAgainstPlane = js.Any.fromFunction4(clipFaceAgainstPlane), collisionResponse = collisionResponse.asInstanceOf[js.Any], computeEdges = js.Any.fromFunction0(computeEdges), computeLocalAABB = js.Any.fromFunction2(computeLocalAABB), computeNormals = js.Any.fromFunction0(computeNormals), computeWorldFaceNormals = js.Any.fromFunction1(computeWorldFaceNormals), computeWorldVertices = js.Any.fromFunction2(computeWorldVertices), faceNormals = faceNormals.asInstanceOf[js.Any], faces = faces.asInstanceOf[js.Any], findSaparatingAxis = js.Any.fromFunction8(findSaparatingAxis), getAveragePointLocal = js.Any.fromFunction1(getAveragePointLocal), getFaceNormal = js.Any.fromFunction2(getFaceNormal), getPlaneConstantOfFace = js.Any.fromFunction1(getPlaneConstantOfFace), id = id.asInstanceOf[js.Any], pointIsInside = js.Any.fromFunction1(pointIsInside), testSepAxis = js.Any.fromFunction6(testSepAxis), transformAllPoints = js.Any.fromFunction2(transformAllPoints), uniqueEdges = uniqueEdges.asInstanceOf[js.Any], updateBoundingSphereRadius = js.Any.fromFunction0(updateBoundingSphereRadius), vertices = vertices.asInstanceOf[js.Any], volume = js.Any.fromFunction0(volume), worldVertices = worldVertices.asInstanceOf[js.Any], worldVerticesNeedsUpdate = worldVerticesNeedsUpdate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvexPolyhedron]
   }
@@ -119,9 +120,9 @@ object ConvexPolyhedron {
     
     inline def setCalculateWorldAABB(value: (Vec3, Quaternion, Vec3, Vec3) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
     
-    inline def setClipAgainstHull(value: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "clipAgainstHull", js.Any.fromFunction8(value))
+    inline def setClipAgainstHull(value: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[Any]) => Unit): Self = StObject.set(x, "clipAgainstHull", js.Any.fromFunction8(value))
     
-    inline def setClipFaceAgainstHull(value: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "clipFaceAgainstHull", js.Any.fromFunction7(value))
+    inline def setClipFaceAgainstHull(value: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[Any]) => Unit): Self = StObject.set(x, "clipFaceAgainstHull", js.Any.fromFunction7(value))
     
     inline def setClipFaceAgainstPlane(value: (js.Array[Vec3], js.Array[Vec3], Vec3, Double) => Vec3): Self = StObject.set(x, "clipFaceAgainstPlane", js.Any.fromFunction4(value))
     
@@ -137,14 +138,14 @@ object ConvexPolyhedron {
     
     inline def setFaceNormals(value: js.Array[Vec3]): Self = StObject.set(x, "faceNormals", value.asInstanceOf[js.Any])
     
-    inline def setFaceNormalsVarargs(value: Vec3*): Self = StObject.set(x, "faceNormals", js.Array(value :_*))
+    inline def setFaceNormalsVarargs(value: Vec3*): Self = StObject.set(x, "faceNormals", js.Array(value*))
     
     inline def setFaces(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
-    inline def setFacesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "faces", js.Array(value :_*))
+    inline def setFacesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "faces", js.Array(value*))
     
     inline def setFindSaparatingAxis(
-      value: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[js.Any], js.Array[js.Any]) => Boolean
+      value: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[Any], js.Array[Any]) => Boolean
     ): Self = StObject.set(x, "findSaparatingAxis", js.Any.fromFunction8(value))
     
     inline def setGetAveragePointLocal(value: Vec3 => Vec3): Self = StObject.set(x, "getAveragePointLocal", js.Any.fromFunction1(value))
@@ -161,16 +162,16 @@ object ConvexPolyhedron {
     
     inline def setUniqueEdges(value: js.Array[Vec3]): Self = StObject.set(x, "uniqueEdges", value.asInstanceOf[js.Any])
     
-    inline def setUniqueEdgesVarargs(value: Vec3*): Self = StObject.set(x, "uniqueEdges", js.Array(value :_*))
+    inline def setUniqueEdgesVarargs(value: Vec3*): Self = StObject.set(x, "uniqueEdges", js.Array(value*))
     
     inline def setVertices(value: js.Array[Vec3]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    inline def setVerticesVarargs(value: Vec3*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: Vec3*): Self = StObject.set(x, "vertices", js.Array(value*))
     
     inline def setWorldVertices(value: js.Array[Vec3]): Self = StObject.set(x, "worldVertices", value.asInstanceOf[js.Any])
     
     inline def setWorldVerticesNeedsUpdate(value: Boolean): Self = StObject.set(x, "worldVerticesNeedsUpdate", value.asInstanceOf[js.Any])
     
-    inline def setWorldVerticesVarargs(value: Vec3*): Self = StObject.set(x, "worldVertices", js.Array(value :_*))
+    inline def setWorldVerticesVarargs(value: Vec3*): Self = StObject.set(x, "worldVertices", js.Array(value*))
   }
 }

@@ -12,6 +12,11 @@ trait CreateChannelBanRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
     * The ARN of the member being banned.
     */
   var MemberArn: ChimeArn
@@ -26,6 +31,10 @@ object CreateChannelBanRequest {
   extension [Self <: CreateChannelBanRequest](x: Self) {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setMemberArn(value: ChimeArn): Self = StObject.set(x, "MemberArn", value.asInstanceOf[js.Any])
   }

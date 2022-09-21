@@ -10,10 +10,10 @@ a node port of Lazar Laszlo's `jsqrcode` qr code decoder
 | ------------------ | :-------------: |
 | Full name          | jsqrcode |
 | Keywords           | qr, code, qrcode, jsqrcode, decode, decoder, read, reader |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 8221 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 388.6666666666667 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/vicapow/jsqrcode#readme)

@@ -28,6 +28,11 @@ trait Condition extends StObject {
   val context: js.UndefOr[String] = js.undefined
   
   /**
+    * Apply this rule only when the filter matches.
+    */
+  val filters: js.UndefOr[String] = js.undefined
+  
+  /**
     * Query patterns are expressed as a string with a specific syntax. A pattern is a sequence of tokens.
     */
   val pattern: js.UndefOr[String] = js.undefined
@@ -52,6 +57,10 @@ object Condition {
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

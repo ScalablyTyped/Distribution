@@ -1,7 +1,7 @@
 
 # Scala.js typings for configstore
 
-Typings are for version 4.0
+Typings are for version 6.0
 
 ## Library description:
 Easily load and save config without having to think about where and how
@@ -10,10 +10,10 @@ Easily load and save config without having to think about where and how
 | ------------------ | :-------------: |
 | Full name          | configstore |
 | Keywords           | config, store, storage, configuration, settings, preferences, json, data, persist, persistent, save |
-| # releases         | 6 |
-| # dependents       | 1236 |
-| # downloads        | 394787400 |
-| # stars            | 36 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 4.7853252E7 |
+| # stars            | 783.0 |
 
 ## Links
 - [Homepage](https://github.com/yeoman/configstore#readme)

@@ -25,12 +25,12 @@ object AndroidRuntimeConfiguration {
     
     inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    inline def setLocalesVarargs(value: Locale*): Self = StObject.set(x, "locales", js.Array(value :_*))
+    inline def setLocalesVarargs(value: Locale*): Self = StObject.set(x, "locales", js.Array(value*))
     
     inline def setOrientations(value: js.Array[Orientation]): Self = StObject.set(x, "orientations", value.asInstanceOf[js.Any])
     
     inline def setOrientationsUndefined: Self = StObject.set(x, "orientations", js.undefined)
     
-    inline def setOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "orientations", js.Array(value :_*))
+    inline def setOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "orientations", js.Array(value*))
   }
 }

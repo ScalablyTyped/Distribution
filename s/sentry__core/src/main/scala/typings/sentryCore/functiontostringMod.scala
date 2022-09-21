@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object functiontostringMod {
   
-  @JSImport("@sentry/core/dist/integrations/functiontostring", "FunctionToString")
+  @JSImport("@sentry/core/types/integrations/functiontostring", "FunctionToString")
   @js.native
-  class FunctionToString ()
+  open class FunctionToString ()
     extends StObject
        with Integration {
     
@@ -38,14 +38,14 @@ object functiontostringMod {
   /* static members */
   object FunctionToString {
     
-    @JSImport("@sentry/core/dist/integrations/functiontostring", "FunctionToString")
+    @JSImport("@sentry/core/types/integrations/functiontostring", "FunctionToString")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/core/dist/integrations/functiontostring", "FunctionToString.id")
+    @JSImport("@sentry/core/types/integrations/functiontostring", "FunctionToString.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])

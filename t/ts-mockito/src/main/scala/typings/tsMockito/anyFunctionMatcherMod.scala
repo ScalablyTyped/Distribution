@@ -9,5 +9,5 @@ object anyFunctionMatcherMod {
   
   @JSImport("ts-mockito/lib/matcher/type/AnyFunctionMatcher", "AnyFunctionMatcher")
   @js.native
-  class AnyFunctionMatcher () extends Matcher
+  open class AnyFunctionMatcher () extends Matcher
 }

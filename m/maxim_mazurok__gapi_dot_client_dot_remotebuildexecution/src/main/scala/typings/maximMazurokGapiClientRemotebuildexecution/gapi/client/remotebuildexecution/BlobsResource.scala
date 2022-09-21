@@ -35,7 +35,7 @@ trait BlobsResource extends StObject {
   def findMissing(request: InstanceName, body: BuildBazelRemoteExecutionV2FindMissingBlobsRequest): Request[BuildBazelRemoteExecutionV2FindMissingBlobsResponse] = js.native
   /**
     * Determine if blobs are present in the CAS. Clients can use this API before uploading blobs to determine which ones are already present in the CAS and do not need to be uploaded
-    * again. Servers SHOULD increase the TTLs of the referenced blobs if necessary and applicable. There are no method-specific errors.
+    * again. Servers SHOULD increase the lifetimes of the referenced blobs if necessary and applicable. There are no method-specific errors.
     */
   def findMissing(request: PrettyPrint): Request[BuildBazelRemoteExecutionV2FindMissingBlobsResponse] = js.native
   

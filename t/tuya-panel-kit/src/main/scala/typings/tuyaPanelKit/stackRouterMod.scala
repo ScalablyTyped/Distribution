@@ -134,7 +134,7 @@ object stackRouterMod {
   /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationState<ParamList> & {  type :'stack'} */
   trait StackNavigationState[ParamList /* <: ParamListBase */] extends StObject {
     
-    val history: js.UndefOr[js.Array[js.Any]] = js.undefined
+    val history: js.UndefOr[js.Array[Any]] = js.undefined
     
     val index: Double
     
@@ -167,11 +167,11 @@ object stackRouterMod {
     
     extension [Self <: StackNavigationState[?], ParamList /* <: ParamListBase */](x: Self & StackNavigationState[ParamList]) {
       
-      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -179,11 +179,11 @@ object stackRouterMod {
       
       inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       

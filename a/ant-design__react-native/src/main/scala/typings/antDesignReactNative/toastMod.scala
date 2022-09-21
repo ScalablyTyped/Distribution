@@ -1,6 +1,7 @@
 package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.Duration
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -202,18 +203,20 @@ object toastMod {
     extends StObject
        with IToastConfigurable {
     
-    var content: String
+    var content: String | ReactNode
   }
   object IToastProps {
     
-    inline def apply(content: String): IToastProps = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    inline def apply(): IToastProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IToastProps]
     }
     
     extension [Self <: IToastProps](x: Self) {
       
-      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     }
   }
 }

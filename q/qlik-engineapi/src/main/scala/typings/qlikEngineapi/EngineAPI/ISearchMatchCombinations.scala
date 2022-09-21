@@ -25,6 +25,6 @@ object ISearchMatchCombinations {
     
     inline def setQSearchMatchCombinations(value: js.Array[ISerachMatchCombination]): Self = StObject.set(x, "qSearchMatchCombinations", value.asInstanceOf[js.Any])
     
-    inline def setQSearchMatchCombinationsVarargs(value: ISerachMatchCombination*): Self = StObject.set(x, "qSearchMatchCombinations", js.Array(value :_*))
+    inline def setQSearchMatchCombinationsVarargs(value: ISerachMatchCombination*): Self = StObject.set(x, "qSearchMatchCombinations", js.Array(value*))
   }
 }

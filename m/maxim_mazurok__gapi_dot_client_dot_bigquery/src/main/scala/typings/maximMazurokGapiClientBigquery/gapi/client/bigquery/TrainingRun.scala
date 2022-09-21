@@ -6,14 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TrainingRun extends StObject {
   
+  /** Global explanation contains the explanation of top features on the class level. Applies to classification models only. */
+  var classLevelGlobalExplanations: js.UndefOr[js.Array[GlobalExplanation]] = js.undefined
+  
   /** Data split result of the training run. Only set when the input data is actually split. */
   var dataSplitResult: js.UndefOr[DataSplitResult] = js.undefined
   
   /** The evaluation metrics over training/eval data that were computed at the end of training. */
   var evaluationMetrics: js.UndefOr[EvaluationMetrics] = js.undefined
   
-  /** Global explanations for important features of the model. For multi-class models, there is one entry for each label class. For other models, there is only one entry in the list. */
-  var globalExplanations: js.UndefOr[js.Array[GlobalExplanation]] = js.undefined
+  /** Global explanation contains the explanation of top features on the model level. Applies to both regression and classification models. */
+  var modelLevelGlobalExplanation: js.UndefOr[GlobalExplanation] = js.undefined
   
   /** Output of each iteration run, results.size() <= max_iterations. */
   var results: js.UndefOr[js.Array[IterationResult]] = js.undefined
@@ -23,6 +26,15 @@ trait TrainingRun extends StObject {
   
   /** Options that were used for this training run, includes user specified and default options that were used. */
   var trainingOptions: js.UndefOr[TrainingOptions] = js.undefined
+  
+  /** The start time of this training run, in milliseconds since epoch. */
+  var trainingStartTime: js.UndefOr[String] = js.undefined
+  
+  /** The model id in Vertex AI Model Registry for this training run */
+  var vertexAiModelId: js.UndefOr[String] = js.undefined
+  
+  /** The model version in Vertex AI Model Registry for this training run */
+  var vertexAiModelVersion: js.UndefOr[String] = js.undefined
 }
 object TrainingRun {
   
@@ -33,6 +45,12 @@ object TrainingRun {
   
   extension [Self <: TrainingRun](x: Self) {
     
+    inline def setClassLevelGlobalExplanations(value: js.Array[GlobalExplanation]): Self = StObject.set(x, "classLevelGlobalExplanations", value.asInstanceOf[js.Any])
+    
+    inline def setClassLevelGlobalExplanationsUndefined: Self = StObject.set(x, "classLevelGlobalExplanations", js.undefined)
+    
+    inline def setClassLevelGlobalExplanationsVarargs(value: GlobalExplanation*): Self = StObject.set(x, "classLevelGlobalExplanations", js.Array(value*))
+    
     inline def setDataSplitResult(value: DataSplitResult): Self = StObject.set(x, "dataSplitResult", value.asInstanceOf[js.Any])
     
     inline def setDataSplitResultUndefined: Self = StObject.set(x, "dataSplitResult", js.undefined)
@@ -41,17 +59,15 @@ object TrainingRun {
     
     inline def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
     
-    inline def setGlobalExplanations(value: js.Array[GlobalExplanation]): Self = StObject.set(x, "globalExplanations", value.asInstanceOf[js.Any])
+    inline def setModelLevelGlobalExplanation(value: GlobalExplanation): Self = StObject.set(x, "modelLevelGlobalExplanation", value.asInstanceOf[js.Any])
     
-    inline def setGlobalExplanationsUndefined: Self = StObject.set(x, "globalExplanations", js.undefined)
-    
-    inline def setGlobalExplanationsVarargs(value: GlobalExplanation*): Self = StObject.set(x, "globalExplanations", js.Array(value :_*))
+    inline def setModelLevelGlobalExplanationUndefined: Self = StObject.set(x, "modelLevelGlobalExplanation", js.undefined)
     
     inline def setResults(value: js.Array[IterationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: IterationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: IterationResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
@@ -60,5 +76,17 @@ object TrainingRun {
     inline def setTrainingOptions(value: TrainingOptions): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
     
     inline def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
+    
+    inline def setTrainingStartTime(value: String): Self = StObject.set(x, "trainingStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setTrainingStartTimeUndefined: Self = StObject.set(x, "trainingStartTime", js.undefined)
+    
+    inline def setVertexAiModelId(value: String): Self = StObject.set(x, "vertexAiModelId", value.asInstanceOf[js.Any])
+    
+    inline def setVertexAiModelIdUndefined: Self = StObject.set(x, "vertexAiModelId", js.undefined)
+    
+    inline def setVertexAiModelVersion(value: String): Self = StObject.set(x, "vertexAiModelVersion", value.asInstanceOf[js.Any])
+    
+    inline def setVertexAiModelVersionUndefined: Self = StObject.set(x, "vertexAiModelVersion", js.undefined)
   }
 }

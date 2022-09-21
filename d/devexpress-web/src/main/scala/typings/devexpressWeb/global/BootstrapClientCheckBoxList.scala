@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientCheckBoxList")
 @js.native
-class BootstrapClientCheckBoxList ()
+open class BootstrapClientCheckBoxList ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCheckBoxList {
   
@@ -61,10 +61,10 @@ class BootstrapClientCheckBoxList ()
   override def GetHeight(): Double = js.native
   
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
   /* CompleteClass */
-  override def GetInputElement(): js.Any = js.native
+  override def GetInputElement(): Any = js.native
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
@@ -89,13 +89,13 @@ class BootstrapClientCheckBoxList ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value indicating whether the editor's state is read-only on the client-side.
@@ -131,13 +131,13 @@ class BootstrapClientCheckBoxList ()
     * Returns an array of the check box list editor's selected items values.
     */
   /* CompleteClass */
-  override def GetSelectedValues(): js.Array[js.Any] = js.native
+  override def GetSelectedValues(): js.Array[Any] = js.native
   
   /**
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -200,7 +200,7 @@ class BootstrapClientCheckBoxList ()
     * @param values An array of Object[] objects that are the item values.
     */
   /* CompleteClass */
-  override def SelectValues(values: js.Array[js.Any]): Unit = js.native
+  override def SelectValues(values: js.Array[Any]): Unit = js.native
   
   /**
     * Occurs on the client side after a different item in the list has been selected (focus has been moved from one item to another).
@@ -291,7 +291,7 @@ class BootstrapClientCheckBoxList ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.
@@ -332,7 +332,7 @@ class BootstrapClientCheckBoxList ()
     * @param values An array of Object[] objects that are the item values.
     */
   /* CompleteClass */
-  override def UnselectValues(values: js.Array[js.Any]): Unit = js.native
+  override def UnselectValues(values: js.Array[Any]): Unit = js.native
   
   /**
     * Performs the editor's validation.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Anim")
 @js.native
-class Anim ()
+open class Anim ()
   extends StObject
      with typings.senchaTouch.Ext.Anim
 /* static members */
@@ -20,8 +20,8 @@ object Anim {
   /** [Config Option] (Function) */
   @JSGlobal("Ext.Anim.after")
   @js.native
-  def after: js.Any = js.native
-  inline def after_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("after")(x.asInstanceOf[js.Any])
+  def after: Any = js.native
+  inline def after_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("after")(x.asInstanceOf[js.Any])
   
   /** [Config Option] (Boolean) */
   @JSGlobal("Ext.Anim.autoClear")
@@ -32,29 +32,29 @@ object Anim {
   /** [Config Option] (Function) */
   @JSGlobal("Ext.Anim.before")
   @js.native
-  def before: js.Any = js.native
-  inline def before_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("before")(x.asInstanceOf[js.Any])
+  def before: Any = js.native
+  inline def before_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("before")(x.asInstanceOf[js.Any])
   
   /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-  inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+  inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-  inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+  inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-  inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+  inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Config Option] (Number) */
   @JSGlobal("Ext.Anim.delay")
@@ -92,25 +92,25 @@ object Anim {
   /** [Config Option] (Object) */
   @JSGlobal("Ext.Anim.from")
   @js.native
-  def from: js.Any = js.native
-  inline def from_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("from")(x.asInstanceOf[js.Any])
+  def from: Any = js.native
+  inline def from_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("from")(x.asInstanceOf[js.Any])
   
   /** [Method] Returns the initial configuration passed to constructor
     * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
     * @returns Object/Mixed
     */
-  inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-  inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+  inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Initialize configuration for this class
     * @param el Object
     * @param runConfig Object
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
-  inline def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
-  inline def initConfig(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def initConfig(el: js.Any, runConfig: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(el.asInstanceOf[js.Any], runConfig.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def initConfig(el: Unit, runConfig: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(el.asInstanceOf[js.Any], runConfig.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def initConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[Any]
+  inline def initConfig(el: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(el.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def initConfig(el: Any, runConfig: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(el.asInstanceOf[js.Any], runConfig.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def initConfig(el: Unit, runConfig: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(el.asInstanceOf[js.Any], runConfig.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Config Option] (Boolean) */
   @JSGlobal("Ext.Anim.out")
@@ -130,19 +130,19 @@ object Anim {
     * @param config Object The config object for the animation.
     */
   inline def run(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")().asInstanceOf[Unit]
-  inline def run(el: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def run(el: js.Any, anim: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def run(el: js.Any, anim: java.lang.String, config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def run(el: js.Any, anim: Unit, config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def run(el: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def run(el: Any, anim: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def run(el: Any, anim: java.lang.String, config: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def run(el: Any, anim: Unit, config: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def run(el: Unit, anim: java.lang.String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def run(el: Unit, anim: java.lang.String, config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def run(el: Unit, anim: Unit, config: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def run(el: Unit, anim: java.lang.String, config: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def run(el: Unit, anim: Unit, config: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(el.asInstanceOf[js.Any], anim.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Config Option] (Object) */
   @JSGlobal("Ext.Anim.scope")
   @js.native
-  def scope: js.Any = js.native
-  inline def scope_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
+  def scope: Any = js.native
+  inline def scope_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.Anim.self")
@@ -158,6 +158,6 @@ object Anim {
   /** [Config Option] (Object) */
   @JSGlobal("Ext.Anim.to")
   @js.native
-  def to: js.Any = js.native
-  inline def to_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("to")(x.asInstanceOf[js.Any])
+  def to: Any = js.native
+  inline def to_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("to")(x.asInstanceOf[js.Any])
 }

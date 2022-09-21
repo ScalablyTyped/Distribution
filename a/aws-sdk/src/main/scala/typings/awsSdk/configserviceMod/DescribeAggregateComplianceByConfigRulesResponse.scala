@@ -29,7 +29,7 @@ object DescribeAggregateComplianceByConfigRulesResponse {
     
     inline def setAggregateComplianceByConfigRulesUndefined: Self = StObject.set(x, "AggregateComplianceByConfigRules", js.undefined)
     
-    inline def setAggregateComplianceByConfigRulesVarargs(value: AggregateComplianceByConfigRule*): Self = StObject.set(x, "AggregateComplianceByConfigRules", js.Array(value :_*))
+    inline def setAggregateComplianceByConfigRulesVarargs(value: AggregateComplianceByConfigRule*): Self = StObject.set(x, "AggregateComplianceByConfigRules", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

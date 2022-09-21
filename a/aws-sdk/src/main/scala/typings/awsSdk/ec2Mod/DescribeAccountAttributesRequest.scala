@@ -29,7 +29,7 @@ object DescribeAccountAttributesRequest {
     
     inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
-    inline def setAttributeNamesVarargs(value: AccountAttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: AccountAttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

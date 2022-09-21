@@ -12,17 +12,17 @@ abstract class FindAppointmentsOptions ()
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.FindAppointmentsOptions {
   
   /* CompleteClass */
-  var calendarIds: js.Any = js.native
+  var calendarIds: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var fetchProperties: js.Any = js.native
+  var fetchProperties: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var includeHidden: js.Any = js.native
+  var includeHidden: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var maxCount: js.Any = js.native
+  var maxCount: Any = js.native
 }

@@ -10,10 +10,10 @@ cjson - Commented JavaScript Object Notation. It is a json loader, which parses 
 | ------------------ | :-------------: |
 | Full name          | cjson |
 | Keywords           | json, parser, comments, config, loader |
-| # releases         | 0 |
-| # dependents       | 133 |
-| # downloads        | 19802162 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1817148.6666666667 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/kof/node-cjson#readme)

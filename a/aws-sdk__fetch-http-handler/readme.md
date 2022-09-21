@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__fetch-http-handler
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 Provides a way to make requests
@@ -10,10 +10,10 @@ Provides a way to make requests
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/fetch-http-handler |
 | Keywords           | - |
-| # releases         | 46 |
-| # dependents       | 248 |
-| # downloads        | 6771165 |
-| # stars            | 0 |
+| # releases         | 58 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5025259E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/fetch-http-handler)

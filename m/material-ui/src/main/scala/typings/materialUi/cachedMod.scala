@@ -10,10 +10,10 @@ object cachedMod {
   
   @JSImport("material-ui/svg-icons/action/cached", JSImport.Default)
   @js.native
-  class default () extends ActionCached
+  open class default () extends ActionCached
   
   @JSImport("material-ui/svg-icons/action/cached", "ActionCached")
   @js.native
-  class ActionCached ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionCached ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

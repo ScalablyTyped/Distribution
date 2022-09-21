@@ -11,9 +11,9 @@ Automatically reboot workers when code changes.
 | Full name          | sc-hot-reboot |
 | Keywords           | socketcluter, reboot, reload, monitor, debugging |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 15995 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1631.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/sc-hot-reboot)

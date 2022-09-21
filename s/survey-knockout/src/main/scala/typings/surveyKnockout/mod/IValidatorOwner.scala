@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IValidatorOwner extends StObject {
   
-  def getDataFilteredProperties(): js.Any
+  def getDataFilteredProperties(): Any
   
-  def getDataFilteredValues(): js.Any
+  def getDataFilteredValues(): Any
   
   def getValidatorTitle(): String
   
   def getValidators(): js.Array[SurveyValidator]
   
-  var validatedValue: js.Any
+  var validatedValue: Any
 }
 object IValidatorOwner {
   
   inline def apply(
-    getDataFilteredProperties: () => js.Any,
-    getDataFilteredValues: () => js.Any,
+    getDataFilteredProperties: () => Any,
+    getDataFilteredValues: () => Any,
     getValidatorTitle: () => String,
     getValidators: () => js.Array[SurveyValidator],
-    validatedValue: js.Any
+    validatedValue: Any
   ): IValidatorOwner = {
     val __obj = js.Dynamic.literal(getDataFilteredProperties = js.Any.fromFunction0(getDataFilteredProperties), getDataFilteredValues = js.Any.fromFunction0(getDataFilteredValues), getValidatorTitle = js.Any.fromFunction0(getValidatorTitle), getValidators = js.Any.fromFunction0(getValidators), validatedValue = validatedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidatorOwner]
@@ -31,14 +31,14 @@ object IValidatorOwner {
   
   extension [Self <: IValidatorOwner](x: Self) {
     
-    inline def setGetDataFilteredProperties(value: () => js.Any): Self = StObject.set(x, "getDataFilteredProperties", js.Any.fromFunction0(value))
+    inline def setGetDataFilteredProperties(value: () => Any): Self = StObject.set(x, "getDataFilteredProperties", js.Any.fromFunction0(value))
     
-    inline def setGetDataFilteredValues(value: () => js.Any): Self = StObject.set(x, "getDataFilteredValues", js.Any.fromFunction0(value))
+    inline def setGetDataFilteredValues(value: () => Any): Self = StObject.set(x, "getDataFilteredValues", js.Any.fromFunction0(value))
     
     inline def setGetValidatorTitle(value: () => String): Self = StObject.set(x, "getValidatorTitle", js.Any.fromFunction0(value))
     
     inline def setGetValidators(value: () => js.Array[SurveyValidator]): Self = StObject.set(x, "getValidators", js.Any.fromFunction0(value))
     
-    inline def setValidatedValue(value: js.Any): Self = StObject.set(x, "validatedValue", value.asInstanceOf[js.Any])
+    inline def setValidatedValue(value: Any): Self = StObject.set(x, "validatedValue", value.asInstanceOf[js.Any])
   }
 }

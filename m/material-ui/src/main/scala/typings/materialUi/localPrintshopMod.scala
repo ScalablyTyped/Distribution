@@ -10,10 +10,10 @@ object localPrintshopMod {
   
   @JSImport("material-ui/svg-icons/maps/local-printshop", JSImport.Default)
   @js.native
-  class default () extends MapsLocalPrintshop
+  open class default () extends MapsLocalPrintshop
   
   @JSImport("material-ui/svg-icons/maps/local-printshop", "MapsLocalPrintshop")
   @js.native
-  class MapsLocalPrintshop ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalPrintshop ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

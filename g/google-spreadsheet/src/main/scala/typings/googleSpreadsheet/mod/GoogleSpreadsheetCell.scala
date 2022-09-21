@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheetCell")
 @js.native
-class GoogleSpreadsheetCell protected ()
+open class GoogleSpreadsheetCell protected ()
   extends StObject
      with CellFormat {
-  def this(parentSheet: GoogleSpreadsheetWorksheet, rowIndex: Double, columnIndex: Double, cellData: js.Any) = this()
+  def this(parentSheet: GoogleSpreadsheetWorksheet, rowIndex: Double, columnIndex: Double, cellData: Any) = this()
   
   /**
     * @description
@@ -80,7 +80,7 @@ class GoogleSpreadsheetCell protected ()
     * @description
     * value after formatting rules are applied
     */
-  val formattedValue: js.Any = js.native
+  val formattedValue: Any = js.native
   
   /**
     * @description

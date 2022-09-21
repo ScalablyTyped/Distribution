@@ -10,10 +10,10 @@ object eventHandlerMod {
   @js.native
   abstract class EventHandler () extends StObject {
     
-    def off(args: js.Any*): js.Any = js.native
+    def off(args: Any*): Any = js.native
     
-    def on(args: js.Any*): js.Any = js.native
+    def on(args: Any*): Any = js.native
     
-    def trigger(args: js.Any*): js.Any = js.native
+    def trigger(args: Any*): Any = js.native
   }
 }

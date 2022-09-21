@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "PasswordAuthenticator")
 @js.native
-class PasswordAuthenticator protected ()
+open class PasswordAuthenticator protected ()
   extends StObject
      with Authenticator {
   /**

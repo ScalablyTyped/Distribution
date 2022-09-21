@@ -1,6 +1,7 @@
 package typings.yargsInteractive
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.yargs.mod.Argv
 import typings.yargsInteractive.anon.Default
 import typings.yargsInteractive.yargsInteractiveStrings.`if-empty`
 import typings.yargsInteractive.yargsInteractiveStrings.`if-no-arg`
@@ -27,42 +28,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv * / any */ trait Interactive extends StObject {
+  @js.native
+  trait Interactive
+    extends StObject
+       with Argv[js.Object] {
     
-    def interactive(options: Option): Interactive
+    def interactive(options: Option): Interactive = js.native
     
-    def `then`(callback: js.Function1[/* result */ js.Any, js.Any]): Interactive
-    
-    def usage(usage: String): Interactive
-  }
-  object Interactive {
-    
-    inline def apply(
-      interactive: Option => Interactive,
-      `then`: js.Function1[/* result */ js.Any, js.Any] => Interactive,
-      usage: String => Interactive
-    ): Interactive = {
-      val __obj = js.Dynamic.literal(interactive = js.Any.fromFunction1(interactive), usage = js.Any.fromFunction1(usage))
-      __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
-      __obj.asInstanceOf[Interactive]
-    }
-    
-    extension [Self <: Interactive](x: Self) {
-      
-      inline def setInteractive(value: Option => Interactive): Self = StObject.set(x, "interactive", js.Any.fromFunction1(value))
-      
-      inline def setThen(value: js.Function1[/* result */ js.Any, js.Any] => Interactive): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
-      
-      inline def setUsage(value: String => Interactive): Self = StObject.set(x, "usage", js.Any.fromFunction1(value))
-    }
+    def `then`(callback: js.Function1[/* result */ Any, Any]): Interactive = js.native
   }
   
   type Option = StringDictionary[OptionData | Default]
   
   trait OptionData extends StObject {
     
-    var default: js.UndefOr[String | Double | Boolean | js.Array[js.Any]] = js.undefined
+    var default: js.UndefOr[String | Double | Boolean | js.Array[Any]] = js.undefined
     
     var choices: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -89,13 +69,13 @@ object mod {
       
       inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
       
-      inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value*))
       
-      inline def setDefault(value: String | Double | Boolean | js.Array[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String | Double | Boolean | js.Array[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefaultVarargs(value: js.Any*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: Any*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       

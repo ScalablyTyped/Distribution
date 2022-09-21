@@ -32,6 +32,6 @@ object ListReportTypesResponse {
     
     inline def setReportTypesUndefined: Self = StObject.set(x, "reportTypes", js.undefined)
     
-    inline def setReportTypesVarargs(value: ReportType*): Self = StObject.set(x, "reportTypes", js.Array(value :_*))
+    inline def setReportTypesVarargs(value: ReportType*): Self = StObject.set(x, "reportTypes", js.Array(value*))
   }
 }

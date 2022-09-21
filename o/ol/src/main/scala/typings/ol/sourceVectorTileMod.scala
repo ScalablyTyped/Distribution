@@ -1,5 +1,6 @@
 package typings.ol
 
+import org.scalablytyped.runtime.Instantiable6
 import typings.ol.extentMod.Extent
 import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.olTileMod.LoadFunction
@@ -10,6 +11,7 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.stateMod.State
+import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +25,7 @@ object sourceVectorTileMod {
   
   @JSImport("ol/source/VectorTile", JSImport.Default)
   @js.native
-  class default protected () extends VectorTile {
+  open class default protected () extends VectorTile {
     def this(options: Options) = this()
   }
   
@@ -53,7 +55,17 @@ object sourceVectorTileMod {
     
     var state: js.UndefOr[State] = js.undefined
     
-    var tileClass: js.UndefOr[typings.ol.olVectorTileMod.default] = js.undefined
+    var tileClass: js.UndefOr[
+        Instantiable6[
+          /* tileCoord */ TileCoord, 
+          /* state */ TileState, 
+          /* src */ String, 
+          /* format */ typings.ol.featureMod.default, 
+          /* tileLoadFunction */ LoadFunction, 
+          /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
+          typings.ol.olVectorTileMod.default
+        ]
+      ] = js.undefined
     
     var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.undefined
     
@@ -92,7 +104,7 @@ object sourceVectorTileMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
@@ -130,7 +142,17 @@ object sourceVectorTileMod {
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      inline def setTileClass(value: typings.ol.olVectorTileMod.default): Self = StObject.set(x, "tileClass", value.asInstanceOf[js.Any])
+      inline def setTileClass(
+        value: Instantiable6[
+              /* tileCoord */ TileCoord, 
+              /* state */ TileState, 
+              /* src */ String, 
+              /* format */ typings.ol.featureMod.default, 
+              /* tileLoadFunction */ LoadFunction, 
+              /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
+              typings.ol.olVectorTileMod.default
+            ]
+      ): Self = StObject.set(x, "tileClass", value.asInstanceOf[js.Any])
       
       inline def setTileClassUndefined: Self = StObject.set(x, "tileClass", js.undefined)
       
@@ -164,7 +186,7 @@ object sourceVectorTileMod {
       
       inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
       
       inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
@@ -197,6 +219,14 @@ object sourceVectorTileMod {
       tile: typings.ol.vectorRenderTileMod.default
     ): js.Array[typings.ol.olVectorTileMod.default] = js.native
     
-    /* protected */ var tileClass: typings.ol.olVectorTileMod.default = js.native
+    /* protected */ var tileClass: Instantiable6[
+        /* tileCoord */ TileCoord, 
+        /* state */ TileState, 
+        /* src */ String, 
+        /* format */ typings.ol.featureMod.default, 
+        /* tileLoadFunction */ LoadFunction, 
+        /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
+        typings.ol.olVectorTileMod.default
+      ] = js.native
   }
 }

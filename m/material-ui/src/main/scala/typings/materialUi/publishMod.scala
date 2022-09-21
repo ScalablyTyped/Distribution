@@ -10,10 +10,10 @@ object publishMod {
   
   @JSImport("material-ui/svg-icons/editor/publish", JSImport.Default)
   @js.native
-  class default () extends EditorPublish
+  open class default () extends EditorPublish
   
   @JSImport("material-ui/svg-icons/editor/publish", "EditorPublish")
   @js.native
-  class EditorPublish ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorPublish ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

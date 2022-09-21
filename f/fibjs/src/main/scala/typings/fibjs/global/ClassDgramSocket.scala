@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_DgramSocket")
 @js.native
-class ClassDgramSocket ()
+open class ClassDgramSocket ()
   extends StObject
      with typings.fibjs.ClassDgramSocket

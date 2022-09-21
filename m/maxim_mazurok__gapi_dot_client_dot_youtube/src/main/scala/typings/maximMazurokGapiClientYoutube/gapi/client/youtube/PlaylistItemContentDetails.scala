@@ -24,7 +24,7 @@ trait PlaylistItemContentDetails extends StObject {
   /** The ID that YouTube uses to uniquely identify a video. To retrieve the video resource, set the id query parameter to this value in your API request. */
   var videoId: js.UndefOr[String] = js.undefined
   
-  /** The date and time that the video was published to YouTube. The value is specified in ISO 8601 format. */
+  /** The date and time that the video was published to YouTube. */
   var videoPublishedAt: js.UndefOr[String] = js.undefined
 }
 object PlaylistItemContentDetails {

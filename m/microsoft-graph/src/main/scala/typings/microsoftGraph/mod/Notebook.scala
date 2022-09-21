@@ -80,7 +80,7 @@ object Notebook {
     
     inline def setSectionGroupsUrlUndefined: Self = StObject.set(x, "sectionGroupsUrl", js.undefined)
     
-    inline def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value :_*))
+    inline def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value*))
     
     inline def setSections(value: NullableOption[js.Array[OnenoteSection]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object Notebook {
     
     inline def setSectionsUrlUndefined: Self = StObject.set(x, "sectionsUrl", js.undefined)
     
-    inline def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value*))
     
     inline def setUserRole(value: NullableOption[OnenoteUserRole]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
     

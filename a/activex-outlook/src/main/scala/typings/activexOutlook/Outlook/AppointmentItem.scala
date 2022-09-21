@@ -46,7 +46,7 @@ trait AppointmentItem extends StObject {
   
   val ConversationTopic: String = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   def CopyTo(DestinationFolder: Folder, CopyOptions: OlAppointmentCopyOptions): AppointmentItem = js.native
   
@@ -55,7 +55,7 @@ trait AppointmentItem extends StObject {
   def Delete(): Unit = js.native
   
   def Display(): Unit = js.native
-  def Display(Modal: js.Any): Unit = js.native
+  def Display(Modal: Any): Unit = js.native
   
   val DownloadState: OlDownloadState = js.native
   
@@ -105,7 +105,7 @@ trait AppointmentItem extends StObject {
   
   var Location: String = js.native
   
-  val MAPIOBJECT: js.Any = js.native
+  val MAPIOBJECT: Any = js.native
   
   var MarkForDownload: OlRemoteStatus = js.native
   
@@ -117,7 +117,7 @@ trait AppointmentItem extends StObject {
   
   var Mileage: String = js.native
   
-  def Move(DestFldr: Folder): js.Any = js.native
+  def Move(DestFldr: Folder): Any = js.native
   
   var NetMeetingAutoStart: Boolean = js.native
   
@@ -144,13 +144,13 @@ trait AppointmentItem extends StObject {
   
   val OutlookVersion: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrintOut(): Unit = js.native
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
   
-  var RTFBody: js.Any = js.native
+  var RTFBody: Any = js.native
   
   val Recipients: typings.activexOutlook.Outlook.Recipients = js.native
   
@@ -173,9 +173,9 @@ trait AppointmentItem extends StObject {
   var Resources: String = js.native
   
   def Respond(Response: OlMeetingResponse): MeetingItem = js.native
-  def Respond(Response: OlMeetingResponse, fNoUI: js.Any): MeetingItem = js.native
-  def Respond(Response: OlMeetingResponse, fNoUI: js.Any, fAdditionalTextDialog: js.Any): MeetingItem = js.native
-  def Respond(Response: OlMeetingResponse, fNoUI: Unit, fAdditionalTextDialog: js.Any): MeetingItem = js.native
+  def Respond(Response: OlMeetingResponse, fNoUI: Any): MeetingItem = js.native
+  def Respond(Response: OlMeetingResponse, fNoUI: Any, fAdditionalTextDialog: Any): MeetingItem = js.native
+  def Respond(Response: OlMeetingResponse, fNoUI: Unit, fAdditionalTextDialog: Any): MeetingItem = js.native
   
   var ResponseRequested: Boolean = js.native
   
@@ -184,7 +184,7 @@ trait AppointmentItem extends StObject {
   def Save(): Unit = js.native
   
   def SaveAs(Path: String): Unit = js.native
-  def SaveAs(Path: String, Type: js.Any): Unit = js.native
+  def SaveAs(Path: String, Type: Any): Unit = js.native
   
   val Saved: Boolean = js.native
   

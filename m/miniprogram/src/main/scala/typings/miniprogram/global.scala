@@ -12,9 +12,9 @@ object global {
   
   inline def Page(obj: dataanyundefinedonLoadque): Unit = js.Dynamic.global.applyDynamic("Page")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def getApp(): js.Any = js.Dynamic.global.applyDynamic("getApp")().asInstanceOf[js.Any]
+  inline def getApp(): Any = js.Dynamic.global.applyDynamic("getApp")().asInstanceOf[Any]
   
-  inline def getCurrentPages(): js.Array[js.Any] = js.Dynamic.global.applyDynamic("getCurrentPages")().asInstanceOf[js.Array[js.Any]]
+  inline def getCurrentPages(): js.Array[Any] = js.Dynamic.global.applyDynamic("getCurrentPages")().asInstanceOf[js.Array[Any]]
   
   @JSGlobal("my")
   @js.native

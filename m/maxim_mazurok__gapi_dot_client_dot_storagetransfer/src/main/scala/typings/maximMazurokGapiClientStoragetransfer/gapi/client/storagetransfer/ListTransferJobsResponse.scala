@@ -29,6 +29,6 @@ object ListTransferJobsResponse {
     
     inline def setTransferJobsUndefined: Self = StObject.set(x, "transferJobs", js.undefined)
     
-    inline def setTransferJobsVarargs(value: TransferJob*): Self = StObject.set(x, "transferJobs", js.Array(value :_*))
+    inline def setTransferJobsVarargs(value: TransferJob*): Self = StObject.set(x, "transferJobs", js.Array(value*))
   }
 }

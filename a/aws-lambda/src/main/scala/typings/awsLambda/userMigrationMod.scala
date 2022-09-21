@@ -51,7 +51,7 @@ object userMigrationMod {
   
   type UserMigrationTriggerEvent = UserMigrationAuthenticationTriggerEvent | UserMigrationForgotPasswordTriggerEvent
   
-  type UserMigrationTriggerHandler = Handler[UserMigrationTriggerEvent, js.Any]
+  type UserMigrationTriggerHandler = Handler[UserMigrationTriggerEvent, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsLambda.awsLambdaStrings.UNCONFIRMED

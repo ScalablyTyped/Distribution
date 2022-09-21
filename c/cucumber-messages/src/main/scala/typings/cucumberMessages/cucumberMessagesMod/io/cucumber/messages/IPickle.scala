@@ -56,7 +56,7 @@ object IPickle {
     
     inline def setAstNodeIdsUndefined: Self = StObject.set(x, "astNodeIds", js.undefined)
     
-    inline def setAstNodeIdsVarargs(value: String*): Self = StObject.set(x, "astNodeIds", js.Array(value :_*))
+    inline def setAstNodeIdsVarargs(value: String*): Self = StObject.set(x, "astNodeIds", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object IPickle {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: IPickleStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: IPickleStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setTags(value: js.Array[IPickleTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
@@ -90,7 +90,7 @@ object IPickle {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: IPickleTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: IPickleTag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

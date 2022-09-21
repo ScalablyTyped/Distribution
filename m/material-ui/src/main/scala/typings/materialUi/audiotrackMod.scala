@@ -10,10 +10,10 @@ object audiotrackMod {
   
   @JSImport("material-ui/svg-icons/image/audiotrack", JSImport.Default)
   @js.native
-  class default () extends ImageAudiotrack
+  open class default () extends ImageAudiotrack
   
   @JSImport("material-ui/svg-icons/image/audiotrack", "ImageAudiotrack")
   @js.native
-  class ImageAudiotrack ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageAudiotrack ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

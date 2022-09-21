@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "CertificateV2")
 @js.native
-class CertificateV2 ()
+open class CertificateV2 ()
   extends typings.ndnJs.keyChainMod.CertificateV2

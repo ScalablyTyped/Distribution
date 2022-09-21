@@ -11,17 +11,17 @@ trait FnCallThisPredicateThisArg extends StObject {
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
       Boolean
     ]
-  ): js.Any = js.native
+  ): Any = js.native
   def apply[T](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
       Boolean
     ],
-    thisArg: js.Any
-  ): js.Any = js.native
+    thisArg: Any
+  ): Any = js.native
 }

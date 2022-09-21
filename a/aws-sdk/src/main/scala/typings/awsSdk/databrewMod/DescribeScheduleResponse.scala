@@ -9,7 +9,7 @@ trait DescribeScheduleResponse extends StObject {
   /**
     * The date and time that the schedule was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier (user name) of the user who created the schedule. 
@@ -17,7 +17,7 @@ trait DescribeScheduleResponse extends StObject {
   var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
   /**
-    * The date or dates and time or times, in cron format, when the jobs are to be run for the schedule.
+    * The date or dates and time or times when the jobs are to be run for the schedule. For more information, see Cron expressions in the Glue DataBrew Developer Guide.
     */
   var CronExpression: js.UndefOr[typings.awsSdk.databrewMod.CronExpression] = js.undefined
   
@@ -34,7 +34,7 @@ trait DescribeScheduleResponse extends StObject {
   /**
     * The date and time that the schedule was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the schedule.
@@ -60,7 +60,7 @@ object DescribeScheduleResponse {
   
   extension [Self <: DescribeScheduleResponse](x: Self) {
     
-    inline def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -76,13 +76,13 @@ object DescribeScheduleResponse {
     
     inline def setJobNamesUndefined: Self = StObject.set(x, "JobNames", js.undefined)
     
-    inline def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
+    inline def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value*))
     
     inline def setLastModifiedBy(value: LastModifiedBy): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

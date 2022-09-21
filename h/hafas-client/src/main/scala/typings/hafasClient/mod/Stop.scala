@@ -33,6 +33,8 @@ trait Stop extends StObject {
   
   var reisezentrumOpeningHours: js.UndefOr[ReisezentrumOpeningHours] = js.undefined
   
+  var station: js.UndefOr[Station] = js.undefined
+  
   var transitAuthority: js.UndefOr[String] = js.undefined
   
   var `type`: stop
@@ -55,7 +57,7 @@ object Stop {
     
     inline def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
-    inline def setEntrancesVarargs(value: Location*): Self = StObject.set(x, "entrances", js.Array(value :_*))
+    inline def setEntrancesVarargs(value: Location*): Self = StObject.set(x, "entrances", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -73,7 +75,7 @@ object Stop {
     
     inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def setLoadFactor(value: String): Self = StObject.set(x, "loadFactor", value.asInstanceOf[js.Any])
     
@@ -94,6 +96,10 @@ object Stop {
     inline def setReisezentrumOpeningHours(value: ReisezentrumOpeningHours): Self = StObject.set(x, "reisezentrumOpeningHours", value.asInstanceOf[js.Any])
     
     inline def setReisezentrumOpeningHoursUndefined: Self = StObject.set(x, "reisezentrumOpeningHours", js.undefined)
+    
+    inline def setStation(value: Station): Self = StObject.set(x, "station", value.asInstanceOf[js.Any])
+    
+    inline def setStationUndefined: Self = StObject.set(x, "station", js.undefined)
     
     inline def setTransitAuthority(value: String): Self = StObject.set(x, "transitAuthority", value.asInstanceOf[js.Any])
     

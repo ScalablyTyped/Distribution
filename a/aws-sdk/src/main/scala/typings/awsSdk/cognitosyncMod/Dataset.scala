@@ -9,7 +9,7 @@ trait Dataset extends StObject {
   /**
     * Date on which the dataset was created.
     */
-  var CreationDate: js.UndefOr[Date] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Total size in bytes of the records in this dataset.
@@ -34,7 +34,7 @@ trait Dataset extends StObject {
   /**
     * Date when the dataset was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Number of records in this dataset.
@@ -50,7 +50,7 @@ object Dataset {
   
   extension [Self <: Dataset](x: Self) {
     
-    inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -70,7 +70,7 @@ object Dataset {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

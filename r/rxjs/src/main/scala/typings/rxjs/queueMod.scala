@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object queueMod {
   
-  @JSImport("rxjs/internal/scheduler/queue", "queue")
+  @JSImport("rxjs/dist/types/internal/scheduler/queue", "queue")
   @js.native
   val queue: QueueScheduler = js.native
   
-  @JSImport("rxjs/internal/scheduler/queue", "queueScheduler")
+  @JSImport("rxjs/dist/types/internal/scheduler/queue", "queueScheduler")
   @js.native
   val queueScheduler: QueueScheduler = js.native
 }

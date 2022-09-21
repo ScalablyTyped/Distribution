@@ -5,7 +5,6 @@ import typings.mapboxMapboxSdk.directionsMod.DirectionsClass
 import typings.mapboxMapboxSdk.directionsMod.DirectionsGeometry
 import typings.mapboxMapboxSdk.directionsMod.DirectionsMode
 import typings.mapboxMapboxSdk.directionsMod.DirectionsOverview
-import typings.mapboxMapboxSdk.directionsMod.DirectionsProfile
 import typings.mapboxMapboxSdk.directionsMod.DirectionsSide
 import typings.mapboxMapboxSdk.directionsMod.DirectionsUnits
 import typings.mapboxMapboxSdk.directionsMod.ManeuverModifier
@@ -14,6 +13,7 @@ import typings.mapboxMapboxSdk.geocodingMod.GeocodeMode
 import typings.mapboxMapboxSdk.geocodingMod.GeocodeQueryType
 import typings.mapboxMapboxSdk.mapiRequestMod.DirectionsApproach
 import typings.mapboxMapboxSdk.mapiRequestMod.MapboxProfile
+import typings.mapboxMapboxSdk.optimizationMod.OptimizationAnnotation
 import typings.mapboxMapboxSdk.tilequeryMod.GeometryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,10 +22,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mapboxMapboxSdkStrings {
   
   @js.native
+  sealed trait Feature extends StObject
+  inline def Feature: Feature = "Feature".asInstanceOf[Feature]
+  
+  @js.native
+  sealed trait FeatureCollection extends StObject
+  inline def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
+  
+  @js.native
+  sealed trait Point extends StObject
+  inline def Point: Point = "Point".asInstanceOf[Point]
+  
+  @js.native
   sealed trait address
     extends StObject
        with GeocodeQueryType
   inline def address: address = "address".asInstanceOf[address]
+  
+  @js.native
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait any extends StObject
@@ -61,6 +77,10 @@ object mapboxMapboxSdkStrings {
   inline def country: country = "country".asInstanceOf[country]
   
   @js.native
+  sealed trait created extends StObject
+  inline def created: created = "created".asInstanceOf[created]
+  
+  @js.native
   sealed trait curb
     extends StObject
        with DirectionsApproach
@@ -70,9 +90,12 @@ object mapboxMapboxSdkStrings {
   sealed trait cycling
     extends StObject
        with DirectionsMode
-       with DirectionsProfile
        with MapboxProfile
   inline def cycling: cycling = "cycling".asInstanceOf[cycling]
+  
+  @js.native
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait depart
@@ -85,6 +108,7 @@ object mapboxMapboxSdkStrings {
   sealed trait distance
     extends StObject
        with DirectionsAnnotation
+       with OptimizationAnnotation
   inline def distance: distance = "distance".asInstanceOf[distance]
   
   @js.native
@@ -97,20 +121,20 @@ object mapboxMapboxSdkStrings {
   sealed trait driving
     extends StObject
        with DirectionsMode
-       with DirectionsProfile
        with MapboxProfile
   inline def driving: driving = "driving".asInstanceOf[driving]
   
   @js.native
   sealed trait `driving-traffic`
     extends StObject
-       with DirectionsProfile
+       with MapboxProfile
   inline def `driving-traffic`: `driving-traffic` = "driving-traffic".asInstanceOf[`driving-traffic`]
   
   @js.native
   sealed trait duration
     extends StObject
        with DirectionsAnnotation
+       with OptimizationAnnotation
   inline def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
@@ -132,7 +156,13 @@ object mapboxMapboxSdkStrings {
   inline def `exit roundabout`: `exit roundabout` = ("exit roundabout").asInstanceOf[`exit roundabout`]
   
   @js.native
-  sealed trait `false` extends StObject
+  sealed trait failed extends StObject
+  inline def failed: failed = "failed".asInstanceOf[failed]
+  
+  @js.native
+  sealed trait `false`
+    extends StObject
+       with DirectionsOverview
   inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
@@ -151,6 +181,10 @@ object mapboxMapboxSdkStrings {
     extends StObject
        with ManeuverType
   inline def fork: fork = "fork".asInstanceOf[fork]
+  
+  @js.native
+  sealed trait form extends StObject
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
   sealed trait full
@@ -226,6 +260,10 @@ object mapboxMapboxSdkStrings {
   inline def metric: metric = "metric".asInstanceOf[metric]
   
   @js.native
+  sealed trait modified extends StObject
+  inline def modified: modified = "modified".asInstanceOf[modified]
+  
+  @js.native
   sealed trait motorway
     extends StObject
        with DirectionsClass
@@ -284,10 +322,10 @@ object mapboxMapboxSdkStrings {
   inline def poiDotlandmark: poiDotlandmark = "poi.landmark".asInstanceOf[poiDotlandmark]
   
   @js.native
-  sealed trait point
+  sealed trait point_
     extends StObject
        with GeometryType
-  inline def point: point = "point".asInstanceOf[point]
+  inline def point_ : point_ = "point".asInstanceOf[point_]
   
   @js.native
   sealed trait polygon
@@ -312,6 +350,26 @@ object mapboxMapboxSdkStrings {
     extends StObject
        with GeocodeQueryType
   inline def postcode: postcode = "postcode".asInstanceOf[postcode]
+  
+  @js.native
+  sealed trait `private` extends StObject
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
+  
+  @js.native
+  sealed trait processing extends StObject
+  inline def processing: processing = "processing".asInstanceOf[processing]
+  
+  @js.native
+  sealed trait public extends StObject
+  inline def public: public = "public".asInstanceOf[public]
+  
+  @js.native
+  sealed trait queued extends StObject
+  inline def queued: queued = "queued".asInstanceOf[queued]
+  
+  @js.native
+  sealed trait raster extends StObject
+  inline def raster: raster = "raster".asInstanceOf[raster]
   
   @js.native
   sealed trait region
@@ -388,6 +446,7 @@ object mapboxMapboxSdkStrings {
   sealed trait speed
     extends StObject
        with DirectionsAnnotation
+       with OptimizationAnnotation
   inline def speed: speed = "speed".asInstanceOf[speed]
   
   @js.native
@@ -395,6 +454,10 @@ object mapboxMapboxSdkStrings {
     extends StObject
        with ManeuverModifier
   inline def straight: straight = "straight".asInstanceOf[straight]
+  
+  @js.native
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait toll
@@ -443,10 +506,13 @@ object mapboxMapboxSdkStrings {
   inline def uturn: uturn = "uturn".asInstanceOf[uturn]
   
   @js.native
+  sealed trait vector extends StObject
+  inline def vector: vector = "vector".asInstanceOf[vector]
+  
+  @js.native
   sealed trait walking
     extends StObject
        with DirectionsMode
-       with DirectionsProfile
        with MapboxProfile
   inline def walking: walking = "walking".asInstanceOf[walking]
 }

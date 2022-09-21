@@ -24,6 +24,6 @@ object ListResourcesForWebACLResponse {
     
     inline def setResourceArnsUndefined: Self = StObject.set(x, "ResourceArns", js.undefined)
     
-    inline def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value*))
   }
 }

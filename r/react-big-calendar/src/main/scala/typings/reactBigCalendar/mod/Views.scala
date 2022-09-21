@@ -9,35 +9,34 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Views extends StObject {
-  
-  var AGENDA: agenda_
-  
-  var DAY: day_
-  
-  var MONTH: month_
-  
-  var WEEK: week_
-  
-  var WORK_WEEK: work_week_
-}
 object Views {
   
-  inline def apply(): Views = {
-    val __obj = js.Dynamic.literal(AGENDA = "agenda", DAY = "day", MONTH = "month", WEEK = "week", WORK_WEEK = "work_week")
-    __obj.asInstanceOf[Views]
-  }
+  @JSImport("react-big-calendar", "Views")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: Views](x: Self) {
-    
-    inline def setAGENDA(value: agenda_): Self = StObject.set(x, "AGENDA", value.asInstanceOf[js.Any])
-    
-    inline def setDAY(value: day_): Self = StObject.set(x, "DAY", value.asInstanceOf[js.Any])
-    
-    inline def setMONTH(value: month_): Self = StObject.set(x, "MONTH", value.asInstanceOf[js.Any])
-    
-    inline def setWEEK(value: week_): Self = StObject.set(x, "WEEK", value.asInstanceOf[js.Any])
-    
-    inline def setWORK_WEEK(value: work_week_): Self = StObject.set(x, "WORK_WEEK", value.asInstanceOf[js.Any])
-  }
+  @JSImport("react-big-calendar", "Views.AGENDA")
+  @js.native
+  def AGENDA: agenda_ = js.native
+  inline def AGENDA_=(x: agenda_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AGENDA")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-big-calendar", "Views.DAY")
+  @js.native
+  def DAY: day_ = js.native
+  inline def DAY_=(x: day_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-big-calendar", "Views.MONTH")
+  @js.native
+  def MONTH: month_ = js.native
+  inline def MONTH_=(x: month_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MONTH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-big-calendar", "Views.WEEK")
+  @js.native
+  def WEEK: week_ = js.native
+  inline def WEEK_=(x: week_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEEK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-big-calendar", "Views.WORK_WEEK")
+  @js.native
+  def WORK_WEEK: work_week_ = js.native
+  inline def WORK_WEEK_=(x: work_week_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORK_WEEK")(x.asInstanceOf[js.Any])
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "AbstractPrimitive")
 @js.native
-class AbstractPrimitive () extends StObject {
+open class AbstractPrimitive () extends StObject {
   
   var bitmapData: BitmapData = js.native
   

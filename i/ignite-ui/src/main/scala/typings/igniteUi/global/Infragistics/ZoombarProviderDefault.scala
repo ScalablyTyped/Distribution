@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.ZoombarProviderDefault")
 @js.native
-class ZoombarProviderDefault protected ()
+open class ZoombarProviderDefault protected ()
   extends StObject
      with typings.igniteUi.Infragistics.ZoombarProviderDefault {
   def this(settings: ZoombarProviderDefaultSettings) = this()

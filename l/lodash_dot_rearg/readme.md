@@ -10,10 +10,10 @@ The lodash method `_.rearg` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.rearg |
 | Keywords           | lodash-modularized, rearg |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 83522 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1126.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -23,8 +23,8 @@ object densityMod {
     
     @JSImport("@antv/data-set/lib/transform/kernel-smooth/density", "default.KERNEL_METHODS")
     @js.native
-    def KERNEL_METHODS: js.Array[js.Any] = js.native
-    inline def KERNEL_METHODS_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KERNEL_METHODS")(x.asInstanceOf[js.Any])
+    def KERNEL_METHODS: js.Array[Any] = js.native
+    inline def KERNEL_METHODS_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KERNEL_METHODS")(x.asInstanceOf[js.Any])
   }
   
   trait Options extends StObject {

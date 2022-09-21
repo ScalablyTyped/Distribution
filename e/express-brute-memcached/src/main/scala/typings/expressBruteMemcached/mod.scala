@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("express-brute-memcached", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with MemcachedStore {
     /**
@@ -37,7 +37,7 @@ object mod {
       * @summary An array of  server_locations  to replace servers that fail and that are removed from the consistent hashing scheme.
       * @type {Array}
       */
-    var failOverServers: js.Array[js.Any]
+    var failOverServers: js.Array[Any]
     
     /**
       * @summary Number of failed-attempts to a server before it is regarded as 'dead'.
@@ -117,7 +117,7 @@ object mod {
     
     inline def apply(
       algorithm: String,
-      failOverServers: js.Array[js.Any],
+      failOverServers: js.Array[Any],
       failures: Double,
       idle: Double,
       keyCompression: Boolean,
@@ -140,9 +140,9 @@ object mod {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      inline def setFailOverServers(value: js.Array[js.Any]): Self = StObject.set(x, "failOverServers", value.asInstanceOf[js.Any])
+      inline def setFailOverServers(value: js.Array[Any]): Self = StObject.set(x, "failOverServers", value.asInstanceOf[js.Any])
       
-      inline def setFailOverServersVarargs(value: js.Any*): Self = StObject.set(x, "failOverServers", js.Array(value :_*))
+      inline def setFailOverServersVarargs(value: Any*): Self = StObject.set(x, "failOverServers", js.Array(value*))
       
       inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       

@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A filter that merges multiple other filters using the given operator.
-  */
 trait SchemaCompositeFilter extends StObject {
   
   /**
-    * The list of filters to combine. Must contain at least one filter.
+    * The list of filters to combine. Requires: * At least one filter is present.
     */
   var filters: js.UndefOr[js.Array[SchemaFilter]] = js.undefined
   
   /**
     * The operator for combining multiple filters.
     */
-  var op: js.UndefOr[String] = js.undefined
+  var op: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCompositeFilter {
   
@@ -32,9 +29,11 @@ object SchemaCompositeFilter {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: SchemaFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SchemaFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    
+    inline def setOpNull: Self = StObject.set(x, "op", null)
     
     inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
   }

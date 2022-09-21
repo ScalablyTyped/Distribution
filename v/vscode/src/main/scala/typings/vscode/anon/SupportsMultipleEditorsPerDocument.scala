@@ -13,7 +13,7 @@ trait SupportsMultipleEditorsPerDocument extends StObject {
     * Indicates that the provider allows multiple editor instances to be open at the same time for
     * the same resource.
     *
-    * By default, VS Code only allows one editor instance to be open at a time for each resource. If the
+    * By default, the editor only allows one editor instance to be open at a time for each resource. If the
     * user tries to open a second editor instance for the resource, the first one is instead moved to where
     * the second one was to be opened.
     *

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "RefractionBlock")
 @js.native
-class RefractionBlock protected ()
+open class RefractionBlock protected ()
   extends typings.babylonjs.nodeIndexMod.RefractionBlock {
   /**
     * Create a new RefractionBlock

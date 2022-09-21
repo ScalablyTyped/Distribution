@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("semantic-ui-react", "AccordionPanel")
 @js.native
-class AccordionPanel () extends default
+open class AccordionPanel () extends default

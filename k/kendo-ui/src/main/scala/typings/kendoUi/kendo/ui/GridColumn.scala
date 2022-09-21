@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GridColumn extends StObject {
   
-  var aggregates: js.UndefOr[js.Any] = js.undefined
+  var aggregates: js.UndefOr[Any] = js.undefined
   
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
   
-  var columns: js.UndefOr[js.Any] = js.undefined
+  var columns: js.UndefOr[Any] = js.undefined
   
   var command: js.UndefOr[String | (js.Array[GridColumnCommandItem | String]) | GridColumnCommandItem] = js.undefined
   
@@ -31,11 +31,13 @@ trait GridColumn extends StObject {
   
   var encoded: js.UndefOr[Boolean] = js.undefined
   
+  var exportable: js.UndefOr[Boolean | GridColumnExportable] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
   
   var filterable: js.UndefOr[Boolean | GridColumnFilterable] = js.undefined
   
-  var footerAttributes: js.UndefOr[js.Any] = js.undefined
+  var footerAttributes: js.UndefOr[Any] = js.undefined
   
   var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
@@ -49,7 +51,7 @@ trait GridColumn extends StObject {
   
   var groupable: js.UndefOr[Boolean | GridColumnGroupable] = js.undefined
   
-  var headerAttributes: js.UndefOr[js.Any] = js.undefined
+  var headerAttributes: js.UndefOr[Any] = js.undefined
   
   var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
@@ -79,7 +81,7 @@ trait GridColumn extends StObject {
   
   var title: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
   
   var width: js.UndefOr[String | Double] = js.undefined
 }
@@ -92,15 +94,15 @@ object GridColumn {
   
   extension [Self <: GridColumn](x: Self) {
     
-    inline def setAggregates(value: js.Any): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    inline def setAggregates(value: Any): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
     inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
@@ -108,7 +110,7 @@ object GridColumn {
     
     inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    inline def setCommandVarargs(value: (GridColumnCommandItem | String)*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: (GridColumnCommandItem | String)*): Self = StObject.set(x, "command", js.Array(value*))
     
     inline def setDataSource(value: DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
@@ -134,6 +136,10 @@ object GridColumn {
     
     inline def setEncodedUndefined: Self = StObject.set(x, "encoded", js.undefined)
     
+    inline def setExportable(value: Boolean | GridColumnExportable): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
+    
+    inline def setExportableUndefined: Self = StObject.set(x, "exportable", js.undefined)
+    
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
@@ -142,7 +148,7 @@ object GridColumn {
     
     inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
-    inline def setFooterAttributes(value: js.Any): Self = StObject.set(x, "footerAttributes", value.asInstanceOf[js.Any])
+    inline def setFooterAttributes(value: Any): Self = StObject.set(x, "footerAttributes", value.asInstanceOf[js.Any])
     
     inline def setFooterAttributesUndefined: Self = StObject.set(x, "footerAttributes", js.undefined)
     
@@ -170,7 +176,7 @@ object GridColumn {
     
     inline def setGroupableUndefined: Self = StObject.set(x, "groupable", js.undefined)
     
-    inline def setHeaderAttributes(value: js.Any): Self = StObject.set(x, "headerAttributes", value.asInstanceOf[js.Any])
+    inline def setHeaderAttributes(value: Any): Self = StObject.set(x, "headerAttributes", value.asInstanceOf[js.Any])
     
     inline def setHeaderAttributesUndefined: Self = StObject.set(x, "headerAttributes", js.undefined)
     
@@ -230,7 +236,7 @@ object GridColumn {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     

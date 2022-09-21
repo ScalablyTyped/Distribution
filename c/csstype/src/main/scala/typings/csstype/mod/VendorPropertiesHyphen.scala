@@ -4,14 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VendorPropertiesHyphen[TLength]
+trait VendorPropertiesHyphen[TLength, TTime]
   extends StObject
-     with VendorLonghandPropertiesHyphen[TLength]
-     with VendorShorthandPropertiesHyphen[TLength]
+     with VendorLonghandPropertiesHyphen[TLength, TTime]
+     with VendorShorthandPropertiesHyphen[TLength, TTime]
 object VendorPropertiesHyphen {
   
-  inline def apply[TLength](): VendorPropertiesHyphen[TLength] = {
+  inline def apply[TLength, TTime](): VendorPropertiesHyphen[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[VendorPropertiesHyphen[TLength]]
+    __obj.asInstanceOf[VendorPropertiesHyphen[TLength, TTime]]
   }
 }

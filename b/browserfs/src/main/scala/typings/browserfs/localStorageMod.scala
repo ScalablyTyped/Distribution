@@ -5,7 +5,7 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.keyValueFilesystemMod.SimpleSyncStore
 import typings.browserfs.keyValueFilesystemMod.SyncKeyValueFileSystem
 import typings.browserfs.keyValueFilesystemMod.SyncKeyValueStore
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object localStorageMod {
   /**
     * Creates a new LocalStorage file system using the contents of `localStorage`.
     */
-  class default () extends SyncKeyValueFileSystem
+  open class default () extends SyncKeyValueFileSystem
   /* static members */
   object default {
     
@@ -28,7 +28,7 @@ object localStorageMod {
     /**
       * Creates a LocalStorageFileSystem instance.
       */
-    inline def Create(options: js.Any, cb: BFSCallback[LocalStorageFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(options: Any, cb: BFSCallback[LocalStorageFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/LocalStorage", "default.Name")
     @js.native
@@ -43,7 +43,7 @@ object localStorageMod {
   
   @JSImport("browserfs/dist/node/backend/LocalStorage", "LocalStorageStore")
   @js.native
-  class LocalStorageStore ()
+  open class LocalStorageStore ()
     extends StObject
        with SyncKeyValueStore
        with SimpleSyncStore {

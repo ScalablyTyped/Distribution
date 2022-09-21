@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AudioBufferSourceOptions extends StObject {
   
+  /* standard dom */
   var buffer: js.UndefOr[AudioBuffer | Null] = js.undefined
   
+  /* standard dom */
   var detune: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var loop: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var loopEnd: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var loopStart: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var playbackRate: js.UndefOr[Double] = js.undefined
 }
 object AudioBufferSourceOptions {

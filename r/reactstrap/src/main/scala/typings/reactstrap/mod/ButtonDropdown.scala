@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "ButtonDropdown")
+@JSImport("reactstrap", "ButtonDropdown")
 @js.native
-class ButtonDropdown () extends default
+open class ButtonDropdown () extends default

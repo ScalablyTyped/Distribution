@@ -40,13 +40,13 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
@@ -66,13 +66,13 @@ object mod {
     
     def load(id: String): String
     
-    def resolveId(importee: String, importer: String): js.Any
+    def resolveId(importee: String, importer: String): Any
     
     def transform(code: String, id: String): Code
   }
   object RollupPlugin {
     
-    inline def apply(load: String => String, resolveId: (String, String) => js.Any, transform: (String, String) => Code): RollupPlugin = {
+    inline def apply(load: String => String, resolveId: (String, String) => Any, transform: (String, String) => Code): RollupPlugin = {
       val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load), resolveId = js.Any.fromFunction2(resolveId), transform = js.Any.fromFunction2(transform))
       __obj.asInstanceOf[RollupPlugin]
     }
@@ -81,7 +81,7 @@ object mod {
       
       inline def setLoad(value: String => String): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      inline def setResolveId(value: (String, String) => js.Any): Self = StObject.set(x, "resolveId", js.Any.fromFunction2(value))
+      inline def setResolveId(value: (String, String) => Any): Self = StObject.set(x, "resolveId", js.Any.fromFunction2(value))
       
       inline def setTransform(value: (String, String) => Code): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     }

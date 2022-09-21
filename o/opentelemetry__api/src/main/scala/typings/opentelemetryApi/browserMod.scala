@@ -8,5 +8,5 @@ object browserMod {
   
   @JSImport("@opentelemetry/api/build/src/platform/browser", "_globalThis")
   @js.native
-  val globalThis: /* globalThis */ js.Any = js.native
+  val globalThis: /* globalThis */ Any = js.native
 }

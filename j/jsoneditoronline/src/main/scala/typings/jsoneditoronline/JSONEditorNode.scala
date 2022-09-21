@@ -34,7 +34,7 @@ trait JSONEditorNode extends StObject {
   
   def getParent(): JSONEditorNode
   
-  def getValue(): js.Any
+  def getValue(): Any
   
   def hide(): Unit
   
@@ -60,7 +60,7 @@ trait JSONEditorNode extends StObject {
   
   def setParent(parent: JSONEditorNode): Unit
   
-  def setValue(value: js.Any): Unit
+  def setValue(value: Any): Unit
   
   def showChilds(): Unit
   
@@ -70,7 +70,7 @@ trait JSONEditorNode extends StObject {
   
   def updateField(field: String): Unit
   
-  def updateValue(value: js.Any): Unit
+  def updateValue(value: Any): Unit
 }
 object JSONEditorNode {
   
@@ -88,7 +88,7 @@ object JSONEditorNode {
     getField: () => String,
     getLevel: () => Double,
     getParent: () => JSONEditorNode,
-    getValue: () => js.Any,
+    getValue: () => Any,
     hide: () => Unit,
     hideChilds: () => Unit,
     insertBefore: (JSONEditorNode, JSONEditorNode) => Unit,
@@ -101,12 +101,12 @@ object JSONEditorNode {
     setField: (String, Boolean) => Unit,
     setHighlight: Boolean => Unit,
     setParent: JSONEditorNode => Unit,
-    setValue: js.Any => Unit,
+    setValue: Any => Unit,
     showChilds: () => Unit,
     types: js.Array[JSONEditorNodeType],
     updateDom: () => Unit,
     updateField: String => Unit,
-    updateValue: js.Any => Unit
+    updateValue: Any => Unit
   ): JSONEditorNode = {
     val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), blur = js.Any.fromFunction0(blur), changeType = js.Any.fromFunction1(changeType), clearDom = js.Any.fromFunction0(clearDom), collapse = js.Any.fromFunction1(collapse), containsNode = js.Any.fromFunction1(containsNode), expand = js.Any.fromFunction1(expand), focus = js.Any.fromFunction0(focus), getAppend = js.Any.fromFunction0(getAppend), getDom = js.Any.fromFunction0(getDom), getField = js.Any.fromFunction0(getField), getLevel = js.Any.fromFunction0(getLevel), getParent = js.Any.fromFunction0(getParent), getValue = js.Any.fromFunction0(getValue), hide = js.Any.fromFunction0(hide), hideChilds = js.Any.fromFunction0(hideChilds), insertBefore = js.Any.fromFunction2(insertBefore), moveBefore = js.Any.fromFunction2(moveBefore), moveTo = js.Any.fromFunction2(moveTo), onEvent = js.Any.fromFunction1(onEvent), removeChild = js.Any.fromFunction1(removeChild), scrollTo = js.Any.fromFunction0(scrollTo), search = js.Any.fromFunction1(search), setField = js.Any.fromFunction2(setField), setHighlight = js.Any.fromFunction1(setHighlight), setParent = js.Any.fromFunction1(setParent), setValue = js.Any.fromFunction1(setValue), showChilds = js.Any.fromFunction0(showChilds), types = types.asInstanceOf[js.Any], updateDom = js.Any.fromFunction0(updateDom), updateField = js.Any.fromFunction1(updateField), updateValue = js.Any.fromFunction1(updateValue))
     __obj.asInstanceOf[JSONEditorNode]
@@ -140,7 +140,7 @@ object JSONEditorNode {
     
     inline def setGetParent(value: () => JSONEditorNode): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
@@ -166,18 +166,18 @@ object JSONEditorNode {
     
     inline def setSetParent(value: JSONEditorNode => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
     
-    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setShowChilds(value: () => Unit): Self = StObject.set(x, "showChilds", js.Any.fromFunction0(value))
     
     inline def setTypes(value: js.Array[JSONEditorNodeType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: JSONEditorNodeType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: JSONEditorNodeType*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUpdateDom(value: () => Unit): Self = StObject.set(x, "updateDom", js.Any.fromFunction0(value))
     
     inline def setUpdateField(value: String => Unit): Self = StObject.set(x, "updateField", js.Any.fromFunction1(value))
     
-    inline def setUpdateValue(value: js.Any => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction1(value))
+    inline def setUpdateValue(value: Any => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction1(value))
   }
 }

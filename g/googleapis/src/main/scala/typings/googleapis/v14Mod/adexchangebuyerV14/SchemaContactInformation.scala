@@ -9,12 +9,12 @@ trait SchemaContactInformation extends StObject {
   /**
     * Email address of the contact.
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The name of the contact.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaContactInformation {
   
@@ -27,9 +27,13 @@ object SchemaContactInformation {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
+    
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

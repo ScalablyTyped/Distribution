@@ -8,17 +8,17 @@ trait ChartArea extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Border: ChartBorder
   
-  def Clear(): js.Any
+  def Clear(): Any
   
-  def ClearContents(): js.Any
+  def ClearContents(): Any
   
-  def ClearFormats(): js.Any
+  def ClearFormats(): Any
   
-  def Copy(): js.Any
+  def Copy(): Any
   
   val Creator: Double
   
@@ -36,12 +36,12 @@ trait ChartArea extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ChartArea_typekey")
   var PowerPointDotChartArea_typekey: ChartArea
   
-  def Select(): js.Any
+  def Select(): Any
   
   var Shadow: Boolean
   
@@ -53,12 +53,12 @@ object ChartArea {
   
   inline def apply(
     Application: Application,
-    AutoScaleFont: js.Any,
+    AutoScaleFont: Any,
     Border: ChartBorder,
-    Clear: () => js.Any,
-    ClearContents: () => js.Any,
-    ClearFormats: () => js.Any,
-    Copy: () => js.Any,
+    Clear: () => Any,
+    ClearContents: () => Any,
+    ClearFormats: () => Any,
+    Copy: () => Any,
     Creator: Double,
     Fill: ChartFillFormat,
     Font: ChartFont,
@@ -67,9 +67,9 @@ object ChartArea {
     Interior: Interior,
     Left: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotChartArea_typekey: ChartArea,
-    Select: () => js.Any,
+    Select: () => Any,
     Shadow: Boolean,
     Top: Double,
     Width: Double
@@ -83,17 +83,17 @@ object ChartArea {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: ChartBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    inline def setClear(value: () => js.Any): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Any): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    inline def setClearContents(value: () => js.Any): Self = StObject.set(x, "ClearContents", js.Any.fromFunction0(value))
+    inline def setClearContents(value: () => Any): Self = StObject.set(x, "ClearContents", js.Any.fromFunction0(value))
     
-    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
-    inline def setCopy(value: () => js.Any): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Any): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -111,11 +111,11 @@ object ChartArea {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotChartArea_typekey(value: ChartArea): Self = StObject.set(x, "PowerPoint.ChartArea_typekey", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     

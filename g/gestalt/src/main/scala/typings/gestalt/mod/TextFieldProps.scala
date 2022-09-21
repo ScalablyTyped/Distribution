@@ -1,67 +1,93 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.EventSyntheticEventValueString
-import typings.gestalt.anon.`1`
-import typings.gestalt.anon.`2`
+import typings.gestalt.anon.EventFocusEvent
+import typings.gestalt.anon.EventKeyboardEvent
+import typings.gestalt.anon.Value
 import typings.gestalt.gestaltStrings.`current-password`
 import typings.gestalt.gestaltStrings.`new-password`
+import typings.gestalt.gestaltStrings.bday
 import typings.gestalt.gestaltStrings.date
 import typings.gestalt.gestaltStrings.email
+import typings.gestalt.gestaltStrings.hidden
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
-import typings.gestalt.gestaltStrings.number
 import typings.gestalt.gestaltStrings.off
 import typings.gestalt.gestaltStrings.on
 import typings.gestalt.gestaltStrings.password
+import typings.gestalt.gestaltStrings.tel
 import typings.gestalt.gestaltStrings.text
 import typings.gestalt.gestaltStrings.url
 import typings.gestalt.gestaltStrings.username
+import typings.gestalt.gestaltStrings.visible
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TextFieldProps extends StObject {
   
-  var autoComplete: js.UndefOr[`current-password` | on | off | username | `new-password`] = js.undefined
+  var autoComplete: js.UndefOr[bday | `current-password` | email | `new-password` | on | off | username] = js.undefined
   
+  /**
+    * @default false
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var errorMessage: js.UndefOr[String] = js.undefined
+  var errorMessage: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * More information about how to complete the form field
+    */
   var helperText: js.UndefOr[String] = js.undefined
   
   var id: String
   
   var label: js.UndefOr[String] = js.undefined
   
+  var labelDisplay: js.UndefOr[visible | hidden] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* args */ `1`, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* args */ EventFocusEvent, Unit]] = js.undefined
   
-  def onChange(args: EventSyntheticEventValueString): Unit
+  def onChange(args: Value): Unit
   
-  var onFocus: js.UndefOr[js.Function1[/* args */ `1`, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* args */ EventFocusEvent, Unit]] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Function1[/* args */ `2`, Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* args */ EventKeyboardEvent, Unit]] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
+  /**
+    * md: 40px, lg: 48px
+    *
+    * @default "md"
+    */
   var size: js.UndefOr[md | lg] = js.undefined
   
-  var `type`: js.UndefOr[date | email | number | password | text | url] = js.undefined
+  /**
+    * List of tags to display in the component
+    */
+  var tags: js.UndefOr[js.Array[ReactElement]] = js.undefined
+  
+  /**
+    * @default "text"
+    */
+  var `type`: js.UndefOr[date | email | password | text | url | tel] = js.undefined
   
   var value: js.UndefOr[String] = js.undefined
 }
 object TextFieldProps {
   
-  inline def apply(id: String, onChange: EventSyntheticEventValueString => Unit): TextFieldProps = {
+  inline def apply(id: String, onChange: Value => Unit): TextFieldProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[TextFieldProps]
   }
   
   extension [Self <: TextFieldProps](x: Self) {
     
-    inline def setAutoComplete(value: `current-password` | on | off | username | `new-password`): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(value: bday | `current-password` | email | `new-password` | on | off | username): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
@@ -69,7 +95,7 @@ object TextFieldProps {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ReactNode): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
@@ -81,23 +107,27 @@ object TextFieldProps {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
+    inline def setLabelDisplay(value: visible | hidden): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDisplayUndefined: Self = StObject.set(x, "labelDisplay", js.undefined)
+    
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnBlur(value: /* args */ `1` => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: /* args */ EventFocusEvent => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnChange(value: EventSyntheticEventValueString => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    inline def setOnFocus(value: /* args */ `1` => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: /* args */ EventFocusEvent => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnKeyDown(value: /* args */ `2` => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: /* args */ EventKeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
@@ -109,7 +139,13 @@ object TextFieldProps {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setType(value: date | email | number | password | text | url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[ReactElement]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: ReactElement*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setType(value: date | email | password | text | url | tel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

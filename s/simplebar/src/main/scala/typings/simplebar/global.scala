@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("SimpleBar")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.simplebar.mod.^ {
       def this(element: HTMLElement) = this()
       def this(element: HTMLElement, options: Options) = this()

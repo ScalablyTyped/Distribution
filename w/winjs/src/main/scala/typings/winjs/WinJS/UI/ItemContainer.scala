@@ -29,7 +29,7 @@ trait ItemContainer extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this ItemContainer. Call this method when the ItemContainer is no longer needed. After calling this method, the ItemContainer becomes unusable.
@@ -59,19 +59,19 @@ trait ItemContainer extends StObject {
     * Raised when the item is invoked. (You can use the tapBehavior property to specify whether taps and clicks invoke the item.)
     * @param eventInfo An object that contains information about the event.
     **/
-  def oninvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def oninvoked(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised after the item is selected or deselected.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onselectionchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onselectionchanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised just before the current selection changes.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onselectionchanging(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onselectionchanging(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Removes an event handler that the addEventListener method registered.

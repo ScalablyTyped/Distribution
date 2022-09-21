@@ -62,7 +62,7 @@ object Application {
     
     inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
-    inline def setAssetsVarargs(value: ImageAsset*): Self = StObject.set(x, "assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: ImageAsset*): Self = StObject.set(x, "assets", js.Array(value*))
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object Application {
     
     inline def setEnabledFeaturesUndefined: Self = StObject.set(x, "enabledFeatures", js.undefined)
     
-    inline def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value :_*))
+    inline def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -90,7 +90,7 @@ object Application {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

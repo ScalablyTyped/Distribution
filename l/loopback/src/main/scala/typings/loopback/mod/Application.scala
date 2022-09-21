@@ -1,8 +1,6 @@
 package typings.loopback.mod
 
 import typings.loopback.anon.Apns
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,8 +48,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Application")
 @js.native
-class Application protected () extends PersistedModel {
-  def this(data: js.Any) = this()
+open class Application protected () extends PersistedModel {
+  def this(data: Any) = this()
   
   var anonymousAllowed: Boolean = js.native
   
@@ -63,7 +61,7 @@ class Application protected () extends PersistedModel {
   var callBackUrl: js.Array[String] = js.native
   
   /** Date Application object was created.  Default: current date. */
-  var created: Date = js.native
+  var created: js.Date = js.native
   
   /** Text description */
   var description: String = js.native
@@ -81,7 +79,7 @@ class Application protected () extends PersistedModel {
   var id: String = js.native
   
   /** modified Date Application object was modified.  Default: current date. */
-  var modified: Date = js.native
+  var modified: js.Date = js.native
   
   /** Name; required. */
   var name: String = js.native
@@ -114,7 +112,7 @@ class Application protected () extends PersistedModel {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resetKeys(appId: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def resetKeys(appId: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /** Status of the application; Either `production`, `sandbox` (default), or `disabled`. */
   var status: String = js.native
@@ -142,7 +140,7 @@ object Application {
     * - masterKe
     */
   /* static member */
-  inline def authenticate(appId: js.Any, key: String, callback: js.Function2[/* err */ Error, /* matched */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(appId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def authenticate(appId: Any, key: String, callback: js.Function2[/* err */ js.Error, /* matched */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(appId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Register a new application
@@ -152,7 +150,7 @@ object Application {
     * @param {() => void} callback  Callback function
     */
   /* static member */
-  inline def register(owner: String, name: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(owner.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(owner: String, name: String, options: Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(owner.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Reset keys for the application instance
@@ -160,5 +158,5 @@ object Application {
     * @param {Error} err
     */
   /* static member */
-  inline def resetKeys(callback: js.Function1[/* err */ Error, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeys")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resetKeys(callback: js.Function1[/* err */ js.Error, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeys")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

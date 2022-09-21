@@ -7,24 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Dataflow API
-  *
-  * Manages Google Cloud Dataflow projects on Google Cloud Platform.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const dataflow = google.dataflow('v1b3');
-  *
-  * @namespace dataflow
-  * @type {Function}
-  * @version v1b3
-  * @variation v1b3
-  * @param {object=} options Options for Dataflow
-  */
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Dataflow")
 @js.native
-class Dataflow protected () extends StObject {
+open class Dataflow protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   

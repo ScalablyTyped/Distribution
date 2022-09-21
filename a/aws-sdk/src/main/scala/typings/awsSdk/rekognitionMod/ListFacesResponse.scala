@@ -38,7 +38,7 @@ object ListFacesResponse {
     
     inline def setFacesUndefined: Self = StObject.set(x, "Faces", js.undefined)
     
-    inline def setFacesVarargs(value: Face*): Self = StObject.set(x, "Faces", js.Array(value :_*))
+    inline def setFacesVarargs(value: Face*): Self = StObject.set(x, "Faces", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

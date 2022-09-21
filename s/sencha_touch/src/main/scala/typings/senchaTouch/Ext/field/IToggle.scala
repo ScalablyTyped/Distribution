@@ -69,12 +69,12 @@ trait IToggle
     * @returns Object this
     */
   @JSName("setValue")
-  var setValue_IToggle: js.UndefOr[js.Function1[/* newValue */ js.UndefOr[Double], js.Any]] = js.undefined
+  var setValue_IToggle: js.UndefOr[js.Function1[/* newValue */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Toggles the value of this toggle field
     * @returns Object this
     */
-  var toggle: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var toggle: js.UndefOr[js.Function0[Any]] = js.undefined
 }
 object IToggle {
   
@@ -137,11 +137,11 @@ object IToggle {
     
     inline def setSetMinValueClsUndefined: Self = StObject.set(x, "setMinValueCls", js.undefined)
     
-    inline def setSetValue(value: /* newValue */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* newValue */ js.UndefOr[Double] => Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    inline def setToggle(value: () => js.Any): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Any): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
     inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }

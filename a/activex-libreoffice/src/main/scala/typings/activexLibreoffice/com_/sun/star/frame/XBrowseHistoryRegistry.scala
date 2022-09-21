@@ -17,16 +17,16 @@ trait XBrowseHistoryRegistry
   def createNewEntry(URL: String, Arguments: SeqEquiv[PropertyValue], Title: String): Unit
   
   /** @deprecated Deprecated */
-  def updateViewData(Value: js.Any): Unit
+  def updateViewData(Value: Any): Unit
 }
 object XBrowseHistoryRegistry {
   
   inline def apply(
     acquire: () => Unit,
     createNewEntry: (String, SeqEquiv[PropertyValue], String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    updateViewData: js.Any => Unit
+    updateViewData: Any => Unit
   ): XBrowseHistoryRegistry = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createNewEntry = js.Any.fromFunction3(createNewEntry), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), updateViewData = js.Any.fromFunction1(updateViewData))
     __obj.asInstanceOf[XBrowseHistoryRegistry]
@@ -36,6 +36,6 @@ object XBrowseHistoryRegistry {
     
     inline def setCreateNewEntry(value: (String, SeqEquiv[PropertyValue], String) => Unit): Self = StObject.set(x, "createNewEntry", js.Any.fromFunction3(value))
     
-    inline def setUpdateViewData(value: js.Any => Unit): Self = StObject.set(x, "updateViewData", js.Any.fromFunction1(value))
+    inline def setUpdateViewData(value: Any => Unit): Self = StObject.set(x, "updateViewData", js.Any.fromFunction1(value))
   }
 }

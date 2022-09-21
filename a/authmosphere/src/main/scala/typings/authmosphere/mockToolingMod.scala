@@ -30,7 +30,7 @@ object mockToolingMod {
   inline def mockAccessTokenEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
   
   inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
-  inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String, js.Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String | Double | js.Symbol, Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   /**
     * Creates a __very basic__ mock of a token validation endpoint.
@@ -41,8 +41,8 @@ object mockToolingMod {
     * @throws on parse error of options.url
     */
   inline def mockTokeninfoEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
-  inline def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[Token[Record[String, js.Any]]]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[Token[Record[String | Double | js.Symbol, Any]]]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
-  inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String, js.Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String | Double | js.Symbol, Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
 }

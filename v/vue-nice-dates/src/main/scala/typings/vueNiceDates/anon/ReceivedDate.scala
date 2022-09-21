@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReceivedDate extends StObject {
   
-  var receivedDate: String | typings.std.Date | Null
+  var receivedDate: String | js.Date | Null
 }
 object ReceivedDate {
   
@@ -17,7 +17,7 @@ object ReceivedDate {
   
   extension [Self <: ReceivedDate](x: Self) {
     
-    inline def setReceivedDate(value: String | typings.std.Date): Self = StObject.set(x, "receivedDate", value.asInstanceOf[js.Any])
+    inline def setReceivedDate(value: String | js.Date): Self = StObject.set(x, "receivedDate", value.asInstanceOf[js.Any])
     
     inline def setReceivedDateNull: Self = StObject.set(x, "receivedDate", null)
   }

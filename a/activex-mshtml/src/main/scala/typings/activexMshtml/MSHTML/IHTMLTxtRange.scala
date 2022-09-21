@@ -21,8 +21,8 @@ trait IHTMLTxtRange extends StObject {
   /** @param showUI [showUI=false] */
   def execCommand(cmdID: String): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean): Boolean = js.native
-  def execCommand(cmdID: String, showUI: Boolean, value: js.Any): Boolean = js.native
-  def execCommand(cmdID: String, showUI: Unit, value: js.Any): Boolean = js.native
+  def execCommand(cmdID: String, showUI: Boolean, value: Any): Boolean = js.native
+  def execCommand(cmdID: String, showUI: Unit, value: Any): Boolean = js.native
   
   def execCommandShowHelp(cmdID: String): Boolean = js.native
   
@@ -77,7 +77,7 @@ trait IHTMLTxtRange extends StObject {
   
   def queryCommandText(cmdID: String): String = js.native
   
-  def queryCommandValue(cmdID: String): js.Any = js.native
+  def queryCommandValue(cmdID: String): Any = js.native
   
   /** @param fStart [fStart=true] */
   def scrollIntoView(): Unit = js.native

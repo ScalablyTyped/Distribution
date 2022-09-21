@@ -25,11 +25,11 @@ object anon {
       
       inline def setImportedBy(value: js.Array[String]): Self = StObject.set(x, "importedBy", value.asInstanceOf[js.Any])
       
-      inline def setImportedByVarargs(value: String*): Self = StObject.set(x, "importedBy", js.Array(value :_*))
+      inline def setImportedByVarargs(value: String*): Self = StObject.set(x, "importedBy", js.Array(value*))
       
       inline def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
-      inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
+      inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value*))
       
       inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     }

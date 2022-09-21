@@ -10,10 +10,10 @@ Adding jQuery Deferred support to the amplify.request component as a Node.js mod
 | ------------------ | :-------------: |
 | Full name          | amplify-deferred |
 | Keywords           | amplify, Amplify, amplifyJS, AmplifyJS, request, amplify-request, amplify-deferred, deferred |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 116 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/laurentiustamate94/amplify-deferred)

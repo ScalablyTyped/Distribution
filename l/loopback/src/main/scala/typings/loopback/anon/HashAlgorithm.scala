@@ -26,7 +26,7 @@ object HashAlgorithm {
     
     inline def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     
-    inline def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
+    inline def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value*))
     
     inline def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

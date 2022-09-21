@@ -11,5 +11,5 @@ trait IHTMLDOMImplementation extends StObject {
   var MSHTMLDotIHTMLDOMImplementation_typekey: IHTMLDOMImplementation = js.native
   
   def hasFeature(bstrfeature: String): Boolean = js.native
-  def hasFeature(bstrfeature: String, version: js.Any): Boolean = js.native
+  def hasFeature(bstrfeature: String, version: Any): Boolean = js.native
 }

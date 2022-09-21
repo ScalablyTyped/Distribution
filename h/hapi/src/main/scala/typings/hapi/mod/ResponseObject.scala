@@ -78,22 +78,7 @@ trait ResponseObject
     * @return Return value: the current response object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseencodingencoding)
     */
-  @JSName("encoding")
-  def encoding_ascii(encoding: ascii): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_base64(encoding: base64): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_binary(encoding: binary): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_hex(encoding: hex): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_latin1(encoding: latin1): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_ucs2(encoding: ucs2): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_utf16le(encoding: utf16le): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_utf8(encoding: utf8): ResponseObject = js.native
+  def encoding(encoding: ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex): ResponseObject = js.native
   
   /**
     * Sets the representation entity tag where:

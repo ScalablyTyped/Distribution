@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdast-util-find-and-replace" : "2.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdast-util-find-and-replace" : "2.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

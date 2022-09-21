@@ -10,15 +10,12 @@ Parse e-mail addresses
 | ------------------ | :-------------: |
 | Full name          | addressparser |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 23765404 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1860307.6666666667 |
+| # stars            | 37.0 |
 
 ## Links
-- [Homepage](https://github.com/andris9/addressparser#readme)
-- [Bugs](https://github.com/andris9/addressparser/issues)
-- [Repository](https://github.com/andris9/addressparser)
 - [Npm](https://www.npmjs.com/package/addressparser)
     
 

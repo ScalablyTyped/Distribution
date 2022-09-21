@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "MinBlock")
 @js.native
-class MinBlock protected ()
+open class MinBlock protected ()
   extends typings.babylonjs.indexMod.MinBlock {
   /**
     * Creates a new MinBlock

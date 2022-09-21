@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_reseller
 
-Typings are for version 1.0.20191008
+Typings are for version 1.0.20220808
 
 ## Library description:
 TypeScript typings for Google Workspace Reseller API v1
@@ -10,10 +10,10 @@ TypeScript typings for Google Workspace Reseller API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.reseller |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 1 |
-| # downloads        | 1591 |
-| # stars            | 0 |
+| # releases         | 139 |
+| # dependents       | 0.0 |
+| # downloads        | 1261.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

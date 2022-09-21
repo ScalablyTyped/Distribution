@@ -10,10 +10,10 @@ The lodash method `_.nth` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.nth |
 | Keywords           | lodash-modularized, nth |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 53047 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2751.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

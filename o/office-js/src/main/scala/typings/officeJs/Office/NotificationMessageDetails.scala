@@ -8,15 +8,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
   *
-  * [Api set: Mailbox 1.3]
-  *
   * @remarks
+  * [Api set: Mailbox 1.3]
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait NotificationMessageDetails extends StObject {
+  
+  /**
+    * Specifies actions for the message. Limit: 1 action. This limit doesn't count the "Dismiss" action which is included by default.
+    * Only applicable when the type is `InsightMessage`.
+    * Specifying this property for an unsupported type or including too many actions throws an error.
+    *
+    * **Important**: In modern Outlook on the web, the `actions` property is available in Compose mode only.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.10]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    */
+  var actions: js.UndefOr[js.Array[NotificationMessageAction]] = js.undefined
   
   /**
     * A reference to an icon that is defined in the manifest in the `Resources` section. It appears in the infobar area.
@@ -66,6 +79,12 @@ object NotificationMessageDetails {
   }
   
   extension [Self <: NotificationMessageDetails](x: Self) {
+    
+    inline def setActions(value: js.Array[NotificationMessageAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setActionsVarargs(value: NotificationMessageAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

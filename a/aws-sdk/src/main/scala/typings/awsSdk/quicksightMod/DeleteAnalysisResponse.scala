@@ -19,10 +19,10 @@ trait DeleteAnalysisResponse extends StObject {
   /**
     * The date and time that the analysis is scheduled to be deleted.
     */
-  var DeletionTime: js.UndefOr[Timestamp_] = js.undefined
+  var DeletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -48,7 +48,7 @@ object DeleteAnalysisResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setDeletionTime(value: Timestamp_): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
+    inline def setDeletionTime(value: js.Date): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
     
     inline def setDeletionTimeUndefined: Self = StObject.set(x, "DeletionTime", js.undefined)
     

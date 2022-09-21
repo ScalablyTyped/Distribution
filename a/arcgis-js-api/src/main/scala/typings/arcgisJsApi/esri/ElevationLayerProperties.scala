@@ -15,7 +15,7 @@ trait ElevationLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * URL pointing to the Elevation layer resource on an ArcGIS Image Server.
@@ -33,7 +33,7 @@ object ElevationLayerProperties {
   
   extension [Self <: ElevationLayerProperties](x: Self) {
     
-    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     

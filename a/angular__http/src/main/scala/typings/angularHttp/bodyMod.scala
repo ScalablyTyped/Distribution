@@ -2,7 +2,6 @@ package typings.angularHttp
 
 import typings.angularHttp.angularHttpStrings.`iso-8859`
 import typings.angularHttp.angularHttpStrings.legacy
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ object bodyMod {
     /**
       * Return the body as an ArrayBuffer
       */
-    def arrayBuffer(): ArrayBuffer = js.native
+    def arrayBuffer(): js.typedarray.ArrayBuffer = js.native
     
     /**
       * Returns the request's body as a Blob, assuming that body exists.
@@ -27,7 +26,7 @@ object bodyMod {
     /**
       * Attempts to return body as parsed `JSON` object, or raises an exception.
       */
-    def json(): js.Any = js.native
+    def json(): Any = js.native
     
     /**
       * Returns the body as a string, presuming `toString()` can be called on the response body.
@@ -44,9 +43,6 @@ object bodyMod {
       * - `iso-8859` - interpret the bytes as ISO-8859 (which can be used for ASCII encoded text).
       */
     def text(): String = js.native
-    @JSName("text")
-    def text_iso8859(encodingHint: `iso-8859`): String = js.native
-    @JSName("text")
-    def text_legacy(encodingHint: legacy): String = js.native
+    def text(encodingHint: legacy | `iso-8859`): String = js.native
   }
 }

@@ -10,7 +10,7 @@ object analyticsMod {
   
   @JSImport("jsforce/api/analytics", "Analytics")
   @js.native
-  class Analytics () extends StObject {
+  open class Analytics () extends StObject {
     
     def dashboard(id: String): js.Promise[Dashboard] = js.native
     
@@ -25,38 +25,42 @@ object analyticsMod {
   
   @JSImport("jsforce/api/analytics", "Dashboard")
   @js.native
-  class Dashboard () extends StObject {
+  open class Dashboard () extends StObject {
     
-    def clone(name: String, folderid: String): js.Promise[js.Any] = js.native
-    def clone(name: String, folderid: String, callback: Callback[js.Object]): js.Promise[js.Any] = js.native
-    def clone(name: js.Object, folderid: String): js.Promise[js.Any] = js.native
-    def clone(name: js.Object, folderid: String, callback: Callback[js.Object]): js.Promise[js.Any] = js.native
+    def clone(name: String, folderid: String): js.Promise[Any] = js.native
+    def clone(name: String, folderid: String, callback: Callback[js.Object]): js.Promise[Any] = js.native
+    def clone(name: js.Object, folderid: String): js.Promise[Any] = js.native
+    def clone(name: js.Object, folderid: String, callback: Callback[js.Object]): js.Promise[Any] = js.native
     
-    def components(componentIds: js.Function0[js.Any | js.Array[String] | String]): js.Promise[js.Any] = js.native
-    def components(componentIds: js.Function0[js.Any | js.Array[String] | String], callback: Callback[js.Object]): js.Promise[js.Any] = js.native
+    def components(componentIds: String): js.Promise[Any] = js.native
+    def components(componentIds: String, callback: Callback[js.Object]): js.Promise[Any] = js.native
+    def components(componentIds: js.Array[String]): js.Promise[Any] = js.native
+    def components(componentIds: js.Array[String], callback: Callback[js.Object]): js.Promise[Any] = js.native
+    def components(componentIds: Callback[js.Object]): js.Promise[Any] = js.native
+    def components(componentIds: Callback[js.Object], callback: Callback[js.Object]): js.Promise[Any] = js.native
     
-    def del(): js.Promise[js.Any] = js.native
-    def del(callback: Callback[js.Object]): js.Promise[js.Any] = js.native
+    def del(): js.Promise[Any] = js.native
+    def del(callback: Callback[js.Object]): js.Promise[Any] = js.native
     
-    def delete(): js.Promise[js.Any] = js.native
-    def delete(callback: Callback[js.Object]): js.Promise[js.Any] = js.native
+    def delete(): js.Promise[Any] = js.native
+    def delete(callback: Callback[js.Object]): js.Promise[Any] = js.native
     
-    def describe(): js.Promise[js.Any] = js.native
-    def describe(callback: Callback[js.Object]): js.Promise[js.Any] = js.native
+    def describe(): js.Promise[Any] = js.native
+    def describe(callback: Callback[js.Object]): js.Promise[Any] = js.native
     
-    def destory(): js.Promise[js.Any] = js.native
-    def destory(callback: Callback[js.Object]): js.Promise[js.Any] = js.native
+    def destory(): js.Promise[Any] = js.native
+    def destory(callback: Callback[js.Object]): js.Promise[Any] = js.native
     
-    def refresh(): js.Promise[js.Any] = js.native
-    def refresh(callback: Callback[js.Object]): js.Promise[js.Any] = js.native
+    def refresh(): js.Promise[Any] = js.native
+    def refresh(callback: Callback[js.Object]): js.Promise[Any] = js.native
     
-    def status(): js.Promise[js.Any] = js.native
-    def status(callback: Callback[js.Object]): js.Promise[js.Any] = js.native
+    def status(): js.Promise[Any] = js.native
+    def status(callback: Callback[js.Object]): js.Promise[Any] = js.native
   }
   
   @JSImport("jsforce/api/analytics", "Report")
   @js.native
-  class Report () extends StObject {
+  open class Report () extends StObject {
     
     def clone(name: String): js.Promise[ReportResult] = js.native
     def clone(name: String, callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
@@ -73,14 +77,20 @@ object analyticsMod {
     def destory(): js.Promise[ReportResult] = js.native
     def destory(callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
     
-    def exec(options: js.Function0[js.Any | js.Object]): js.Promise[ReportResult] = js.native
-    def exec(options: js.Function0[js.Any | js.Object], callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def exec(options: js.Object): js.Promise[ReportResult] = js.native
+    def exec(options: js.Object, callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def exec(options: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def exec(options: Callback[ReportResult], callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
     
-    def execute(options: js.Function0[js.Any | js.Object]): js.Promise[ReportResult] = js.native
-    def execute(options: js.Function0[js.Any | js.Object], callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def execute(options: js.Object): js.Promise[ReportResult] = js.native
+    def execute(options: js.Object, callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def execute(options: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def execute(options: Callback[ReportResult], callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
     
-    def executeAsync(options: js.Function0[js.Any | js.Object]): js.Promise[ReportInstanceAttrs] = js.native
-    def executeAsync(options: js.Function0[js.Any | js.Object], callback: Callback[ReportInstanceAttrs]): js.Promise[ReportInstanceAttrs] = js.native
+    def executeAsync(options: js.Object): js.Promise[ReportInstanceAttrs] = js.native
+    def executeAsync(options: js.Object, callback: Callback[ReportInstanceAttrs]): js.Promise[ReportInstanceAttrs] = js.native
+    def executeAsync(options: Callback[ReportInstanceAttrs]): js.Promise[ReportInstanceAttrs] = js.native
+    def executeAsync(options: Callback[ReportInstanceAttrs], callback: Callback[ReportInstanceAttrs]): js.Promise[ReportInstanceAttrs] = js.native
     
     def explain(): js.Promise[ExplainInfo] = js.native
     def explain(callback: Callback[ExplainInfo]): js.Promise[ExplainInfo] = js.native
@@ -90,13 +100,15 @@ object analyticsMod {
     def instances(): js.Promise[js.Array[ReportInstance]] = js.native
     def instances(callback: Callback[js.Array[ReportInstance]]): js.Promise[js.Array[ReportInstance]] = js.native
     
-    def run(options: js.Function0[js.Any | js.Object]): js.Promise[ReportResult] = js.native
-    def run(options: js.Function0[js.Any | js.Object], callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def run(options: js.Object): js.Promise[ReportResult] = js.native
+    def run(options: js.Object, callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def run(options: Callback[ReportResult]): js.Promise[ReportResult] = js.native
+    def run(options: Callback[ReportResult], callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native
   }
   
   @JSImport("jsforce/api/analytics", "ReportInstance")
   @js.native
-  class ReportInstance protected () extends StObject {
+  open class ReportInstance protected () extends StObject {
     def this(report: Report, id: String) = this()
     
     def retrieve(callback: Callback[ReportResult]): js.Promise[ReportResult] = js.native

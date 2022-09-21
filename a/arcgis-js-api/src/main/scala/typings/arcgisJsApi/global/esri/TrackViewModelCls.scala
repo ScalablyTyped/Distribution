@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track-TrackViewModel.html)
   */
-class TrackViewModelCls ()
+open class TrackViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.TrackViewModel {
   def this(properties: TrackViewModelProperties) = this()
@@ -22,13 +22,17 @@ class TrackViewModelCls ()
   /**
     * The HTML5 Geolocation Position options for locating.
     *
+    * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
     */
   /* CompleteClass */
-  var geolocationOptions: js.Any = js.native
+  var geolocationOptions: Any = js.native
   
   /**
     * Indicates whether to navigate the view to the position and scale of the geolocated result.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
     */
@@ -41,9 +45,9 @@ class TrackViewModelCls ()
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GoTo.html#goToOverride)
     */
   /* CompleteClass */
-  override def goToOverride(view: typings.arcgisJsApi.esri.MapView, goToParameters: js.Any): Unit = js.native
+  override def goToOverride(view: typings.arcgisJsApi.esri.MapView, goToParameters: Any): Unit = js.native
   /* CompleteClass */
-  override def goToOverride(view: typings.arcgisJsApi.esri.SceneView, goToParameters: js.Any): Unit = js.native
+  override def goToOverride(view: typings.arcgisJsApi.esri.SceneView, goToParameters: Any): Unit = js.native
   /**
     * This function provides the ability to override either the [MapView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo) or [SceneView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo) methods.
     *
@@ -63,6 +67,8 @@ class TrackViewModelCls ()
   
   /**
     * The scale to set on the view when navigating to the position of the geolocated result.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
     */

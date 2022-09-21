@@ -27,7 +27,7 @@ object ListDirectoriesResponse {
     
     inline def setDirectories(value: DirectoryList): Self = StObject.set(x, "Directories", value.asInstanceOf[js.Any])
     
-    inline def setDirectoriesVarargs(value: Directory*): Self = StObject.set(x, "Directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: Directory*): Self = StObject.set(x, "Directories", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

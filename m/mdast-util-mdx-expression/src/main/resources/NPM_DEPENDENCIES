@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdast-util-mdx-expression" : "1.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdast-util-mdx-expression" : "1.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

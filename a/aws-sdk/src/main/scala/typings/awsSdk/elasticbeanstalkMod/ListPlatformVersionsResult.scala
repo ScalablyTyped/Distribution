@@ -33,6 +33,6 @@ object ListPlatformVersionsResult {
     
     inline def setPlatformSummaryListUndefined: Self = StObject.set(x, "PlatformSummaryList", js.undefined)
     
-    inline def setPlatformSummaryListVarargs(value: PlatformSummary*): Self = StObject.set(x, "PlatformSummaryList", js.Array(value :_*))
+    inline def setPlatformSummaryListVarargs(value: PlatformSummary*): Self = StObject.set(x, "PlatformSummaryList", js.Array(value*))
   }
 }

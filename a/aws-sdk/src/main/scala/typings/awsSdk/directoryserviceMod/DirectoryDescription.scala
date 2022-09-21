@@ -37,7 +37,7 @@ trait DirectoryDescription extends StObject {
   var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
-    * The IP addresses of the DNS servers for the directory. For a Simple AD or Microsoft AD directory, these are the IP addresses of the Simple AD or Microsoft AD directory servers. For an AD Connector directory, these are the IP addresses of the DNS servers or domain controllers in the on-premises directory to which the AD Connector is connected.
+    * The IP addresses of the DNS servers for the directory. For a Simple AD or Microsoft AD directory, these are the IP addresses of the Simple AD or Microsoft AD directory servers. For an AD Connector directory, these are the IP addresses of the DNS servers or domain controllers in your self-managed directory to which the AD Connector is connected.
     */
   var DnsIpAddrs: js.UndefOr[typings.awsSdk.directoryserviceMod.DnsIpAddrs] = js.undefined
   
@@ -49,7 +49,7 @@ trait DirectoryDescription extends StObject {
   /**
     * Specifies when the directory was created.
     */
-  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.undefined
+  var LaunchTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The fully qualified name of the directory.
@@ -57,7 +57,7 @@ trait DirectoryDescription extends StObject {
   var Name: js.UndefOr[DirectoryName] = js.undefined
   
   /**
-    * Describes the AWS Managed Microsoft AD directory in the directory owner account.
+    * Describes the Managed Microsoft AD directory in the directory owner account.
     */
   var OwnerDirectoryDescription: js.UndefOr[typings.awsSdk.directoryserviceMod.OwnerDirectoryDescription] = js.undefined
   
@@ -77,7 +77,7 @@ trait DirectoryDescription extends StObject {
   var RegionsInfo: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionsInfo] = js.undefined
   
   /**
-    * The method used when sharing a directory to determine whether the directory should be shared within your AWS organization (ORGANIZATIONS) or with any AWS account by sending a shared directory request (HANDSHAKE).
+    * The method used when sharing a directory to determine whether the directory should be shared within your Amazon Web Services organization (ORGANIZATIONS) or with any Amazon Web Services account by sending a shared directory request (HANDSHAKE).
     */
   var ShareMethod: js.UndefOr[typings.awsSdk.directoryserviceMod.ShareMethod] = js.undefined
   
@@ -87,7 +87,7 @@ trait DirectoryDescription extends StObject {
   var ShareNotes: js.UndefOr[Notes] = js.undefined
   
   /**
-    * Current directory status of the shared AWS Managed Microsoft AD directory.
+    * Current directory status of the shared Managed Microsoft AD directory.
     */
   var ShareStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.ShareStatus] = js.undefined
   
@@ -114,7 +114,7 @@ trait DirectoryDescription extends StObject {
   /**
     * The date and time that the stage was last updated.
     */
-  var StageLastUpdatedDateTime: js.UndefOr[LastUpdatedDateTime] = js.undefined
+  var StageLastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Additional information about the directory stage.
@@ -127,7 +127,7 @@ trait DirectoryDescription extends StObject {
   var Type: js.UndefOr[DirectoryType] = js.undefined
   
   /**
-    * A DirectoryVpcSettingsDescription object that contains additional information about a directory. This member is only present if the directory is a Simple AD or Managed AD directory.
+    * A DirectoryVpcSettingsDescription object that contains additional information about a directory. This member is only present if the directory is a Simple AD or Managed Microsoft AD directory.
     */
   var VpcSettings: js.UndefOr[DirectoryVpcSettingsDescription] = js.undefined
 }
@@ -168,13 +168,13 @@ object DirectoryDescription {
     
     inline def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
     
-    inline def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
+    inline def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value*))
     
     inline def setEdition(value: DirectoryEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
     inline def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
-    inline def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
+    inline def setLaunchTime(value: js.Date): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
     
     inline def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
     
@@ -224,7 +224,7 @@ object DirectoryDescription {
     
     inline def setStage(value: DirectoryStage): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
     
-    inline def setStageLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "StageLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setStageLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "StageLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setStageLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StageLastUpdatedDateTime", js.undefined)
     

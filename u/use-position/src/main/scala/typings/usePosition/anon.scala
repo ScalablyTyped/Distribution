@@ -10,11 +10,15 @@ object anon {
     
     var accuracy: js.UndefOr[Double] = js.undefined
     
-    var errorMessage: js.UndefOr[String] = js.undefined
+    var error: js.UndefOr[String] = js.undefined
+    
+    var heading: js.UndefOr[Double] = js.undefined
     
     var latitude: js.UndefOr[Double] = js.undefined
     
     var longitude: js.UndefOr[Double] = js.undefined
+    
+    var speed: js.UndefOr[Double] = js.undefined
     
     var timestamp: js.UndefOr[Double] = js.undefined
   }
@@ -31,9 +35,13 @@ object anon {
       
       inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
       
-      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+      
+      inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -42,6 +50,10 @@ object anon {
       inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
       inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+      
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       

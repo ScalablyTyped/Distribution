@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object p2pkMod {
   
-  @JSImport("bitcoinjs-lib/types/payments/p2pk", JSImport.Namespace)
+  @JSImport("bitcoinjs-lib/src/payments/p2pk", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

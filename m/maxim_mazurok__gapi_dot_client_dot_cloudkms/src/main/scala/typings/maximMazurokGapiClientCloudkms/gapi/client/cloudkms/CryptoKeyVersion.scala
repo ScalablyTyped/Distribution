@@ -24,26 +24,32 @@ trait CryptoKeyVersion extends StObject {
   /** Output only. The time this CryptoKeyVersion's key material is scheduled for destruction. Only present if state is DESTROY_SCHEDULED. */
   var destroyTime: js.UndefOr[String] = js.undefined
   
-  /** ExternalProtectionLevelOptions stores a group of additional fields for configuring a CryptoKeyVersion that are specific to the EXTERNAL protection level. */
+  /**
+    * ExternalProtectionLevelOptions stores a group of additional fields for configuring a CryptoKeyVersion that are specific to the EXTERNAL protection level and EXTERNAL_VPC protection
+    * levels.
+    */
   var externalProtectionLevelOptions: js.UndefOr[ExternalProtectionLevelOptions] = js.undefined
   
   /** Output only. The time this CryptoKeyVersion's key material was generated. */
   var generateTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The root cause of an import failure. Only present if state is IMPORT_FAILED. */
+  /** Output only. The root cause of the most recent import failure. Only present if state is IMPORT_FAILED. */
   var importFailureReason: js.UndefOr[String] = js.undefined
   
-  /** Output only. The name of the ImportJob used to import this CryptoKeyVersion. Only present if the underlying key material was imported. */
+  /** Output only. The name of the ImportJob used in the most recent import of this CryptoKeyVersion. Only present if the underlying key material was imported. */
   var importJob: js.UndefOr[String] = js.undefined
   
-  /** Output only. The time at which this CryptoKeyVersion's key material was imported. */
+  /** Output only. The time at which this CryptoKeyVersion's key material was most recently imported. */
   var importTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The resource name for this CryptoKeyVersion in the format `projects/∗/locations/∗/keyRings/∗/cryptoKeys/∗/cryptoKeyVersions/ *`. */
+  /** Output only. The resource name for this CryptoKeyVersion in the format `projects/ *‍/locations/ *‍/keyRings/ *‍/cryptoKeys/ *‍/cryptoKeyVersions/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The ProtectionLevel describing how crypto operations are performed with this CryptoKeyVersion. */
   var protectionLevel: js.UndefOr[String] = js.undefined
+  
+  /** Output only. Whether or not this key version is eligible for reimport, by being specified as a target in ImportCryptoKeyVersionRequest.crypto_key_version. */
+  var reimportEligible: js.UndefOr[Boolean] = js.undefined
   
   /** The current state of the CryptoKeyVersion. */
   var state: js.UndefOr[String] = js.undefined
@@ -104,6 +110,10 @@ object CryptoKeyVersion {
     inline def setProtectionLevel(value: String): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
     inline def setProtectionLevelUndefined: Self = StObject.set(x, "protectionLevel", js.undefined)
+    
+    inline def setReimportEligible(value: Boolean): Self = StObject.set(x, "reimportEligible", value.asInstanceOf[js.Any])
+    
+    inline def setReimportEligibleUndefined: Self = StObject.set(x, "reimportEligible", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

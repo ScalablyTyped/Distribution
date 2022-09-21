@@ -34,7 +34,7 @@ trait TeamProjectReference extends StObject {
   /**
     * Project state.
     */
-  var state: js.Any
+  var state: Any
   
   /**
     * Url to the full version of the object.
@@ -54,7 +54,7 @@ object TeamProjectReference {
     id: String,
     name: String,
     revision: Double,
-    state: js.Any,
+    state: Any,
     url: String,
     visibility: ProjectVisibility
   ): TeamProjectReference = {
@@ -74,7 +74,7 @@ object TeamProjectReference {
     
     inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

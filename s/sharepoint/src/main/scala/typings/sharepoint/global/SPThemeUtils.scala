@@ -17,5 +17,5 @@ object SPThemeUtils {
   
   inline def UseClientSideTheming(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UseClientSideTheming")().asInstanceOf[Boolean]
   
-  inline def WithCurrentTheme(resultCallback: js.Function1[/* themesCache */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WithCurrentTheme")(resultCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def WithCurrentTheme(resultCallback: js.Function1[/* themesCache */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WithCurrentTheme")(resultCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

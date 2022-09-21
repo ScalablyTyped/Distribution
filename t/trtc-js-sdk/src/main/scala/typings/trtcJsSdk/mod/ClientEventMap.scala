@@ -1,17 +1,21 @@
 package typings.trtcJsSdk.mod
 
-import typings.trtcJsSdk.anon.CurState
+import typings.trtcJsSdk.anon.PrevState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClientEventMap extends StObject {
   
-  /** 用户被踢出房间通知，被踢原因有 */
+  /**
+    * 用户被踢出房间通知，被踢原因有：
+    *  - 同名用户登录，注意：同名用户同时登陆是不允许的行为，可能会导致双方音视频通话异常，此乃应用业务逻辑错误！
+    *  - 被账户管理员主动踢出房间
+    */
   var `client-banned`: RtcError
   
   /** 信令通道连接状态变化事件 */
-  var `connection-state-changed`: CurState
+  var `connection-state-changed`: PrevState
   
   /** 客户端错误事件 */
   var error: RtcError
@@ -21,6 +25,9 @@ trait ClientEventMap extends StObject {
   
   /** 远端用户禁用视频通知。 */
   var `mute-video`: RemoteUserInfo
+  
+  /** 网络质量统计数据事件，进房后开始统计，每两秒触发一次，包括上行（uplinkNetworkQuality）和下行（downlinkNetworkQuality）的质量统计数据。 */
+  var `network-quality`: NetworkQuality
   
   /** 远端用户进房通知，只有主动推流的远端用户进房才会收到该通知。 */
   var `peer-join`: RemoteUserInfo
@@ -50,10 +57,11 @@ object ClientEventMap {
   
   inline def apply(
     `client-banned`: RtcError,
-    `connection-state-changed`: CurState,
+    `connection-state-changed`: PrevState,
     error: RtcError,
     `mute-audio`: RemoteUserInfo,
     `mute-video`: RemoteUserInfo,
+    `network-quality`: NetworkQuality,
     `peer-join`: RemoteUserInfo,
     `peer-leave`: RemoteUserInfo,
     `stream-added`: RemoteStreamInfo,
@@ -68,6 +76,7 @@ object ClientEventMap {
     __obj.updateDynamic("connection-state-changed")(`connection-state-changed`.asInstanceOf[js.Any])
     __obj.updateDynamic("mute-audio")(`mute-audio`.asInstanceOf[js.Any])
     __obj.updateDynamic("mute-video")(`mute-video`.asInstanceOf[js.Any])
+    __obj.updateDynamic("network-quality")(`network-quality`.asInstanceOf[js.Any])
     __obj.updateDynamic("peer-join")(`peer-join`.asInstanceOf[js.Any])
     __obj.updateDynamic("peer-leave")(`peer-leave`.asInstanceOf[js.Any])
     __obj.updateDynamic("stream-added")(`stream-added`.asInstanceOf[js.Any])
@@ -83,13 +92,15 @@ object ClientEventMap {
     
     inline def `setClient-banned`(value: RtcError): Self = StObject.set(x, "client-banned", value.asInstanceOf[js.Any])
     
-    inline def `setConnection-state-changed`(value: CurState): Self = StObject.set(x, "connection-state-changed", value.asInstanceOf[js.Any])
+    inline def `setConnection-state-changed`(value: PrevState): Self = StObject.set(x, "connection-state-changed", value.asInstanceOf[js.Any])
     
     inline def setError(value: RtcError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def `setMute-audio`(value: RemoteUserInfo): Self = StObject.set(x, "mute-audio", value.asInstanceOf[js.Any])
     
     inline def `setMute-video`(value: RemoteUserInfo): Self = StObject.set(x, "mute-video", value.asInstanceOf[js.Any])
+    
+    inline def `setNetwork-quality`(value: NetworkQuality): Self = StObject.set(x, "network-quality", value.asInstanceOf[js.Any])
     
     inline def `setPeer-join`(value: RemoteUserInfo): Self = StObject.set(x, "peer-join", value.asInstanceOf[js.Any])
     

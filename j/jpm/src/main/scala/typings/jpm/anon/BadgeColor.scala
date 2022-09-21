@@ -22,9 +22,9 @@ trait BadgeColor extends StObject {
   
   var label: String
   
-  var onChange: js.UndefOr[js.Function1[/* state */ ToggleButtonState, js.Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* state */ ToggleButtonState, Any]] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* state */ ToggleButtonState, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* state */ ToggleButtonState, Any]] = js.undefined
 }
 object BadgeColor {
   
@@ -57,11 +57,11 @@ object BadgeColor {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setOnChange(value: /* state */ ToggleButtonState => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* state */ ToggleButtonState => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: /* state */ ToggleButtonState => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* state */ ToggleButtonState => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }

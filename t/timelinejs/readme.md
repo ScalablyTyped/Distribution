@@ -10,9 +10,9 @@ A Storytelling Timeline built in JavaScript.
 | Full name          | timelinejs |
 | Keywords           | timeline, storytelling, timelinejs, timeline.js, history, googledocs, storify |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1702 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 81.33333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://timeline.knightlab.com)

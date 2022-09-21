@@ -34,7 +34,7 @@ object Layer {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value*))
     
     inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

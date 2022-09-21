@@ -15,7 +15,7 @@ object mod {
       /* b */ B, 
       /* index */ js.UndefOr[Double], 
       /* haystack */ js.UndefOr[js.Array[A]], 
-      js.Any
+      Any
     ]
   ): Double = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def apply[A, B](
@@ -26,7 +26,7 @@ object mod {
       /* b */ B, 
       /* index */ js.UndefOr[Double], 
       /* haystack */ js.UndefOr[js.Array[A]], 
-      js.Any
+      Any
     ],
     // Notes about comparator return value:
   // * when a<b the comparator's returned value should be:
@@ -48,7 +48,7 @@ object mod {
       /* b */ B, 
       /* index */ js.UndefOr[Double], 
       /* haystack */ js.UndefOr[js.Array[A]], 
-      js.Any
+      Any
     ],
     // Notes about comparator return value:
   // * when a<b the comparator's returned value should be:
@@ -71,7 +71,7 @@ object mod {
       /* b */ B, 
       /* index */ js.UndefOr[Double], 
       /* haystack */ js.UndefOr[js.Array[A]], 
-      js.Any
+      Any
     ],
     // Notes about comparator return value:
   // * when a<b the comparator's returned value should be:

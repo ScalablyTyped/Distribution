@@ -21,6 +21,20 @@ trait Options extends StObject {
     */
   var annotations: js.UndefOr[js.Array[AnnotationsOptions]] = js.undefined
   
+  /**
+    * (Highcharts, Highstock) Options for the Boost module. The Boost module
+    * allows certain series types to be rendered by WebGL instead of the
+    * default SVG. This allows hundreds of thousands of data points to be
+    * rendered in milliseconds. In addition to the WebGL rendering it saves
+    * time by skipping processing and inspection of the data wherever possible.
+    * This introduces some limitations to what features are available in boost
+    * mode. See the docs for details.
+    *
+    * In addition to the global `boost` option, each series has a
+    * boostThreshold that defines when the boost should kick in.
+    *
+    * Requires the `modules/boost.js` module.
+    */
   var boost: js.UndefOr[BoostOptions] = js.undefined
   
   /**
@@ -86,7 +100,7 @@ trait Options extends StObject {
     * In Highcharts 2.x, the default colors were: (see online documentation for
     * example)
     */
-  var colors: js.UndefOr[js.Array[ColorString]] = js.undefined
+  var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   
   /**
     * (Gantt) The Pathfinder module allows you to define connections between
@@ -125,7 +139,7 @@ trait Options extends StObject {
     *
     * An example of the arrow marker: (see online documentation for example)
     */
-  var defs: js.UndefOr[DefsOptions | Dictionary[SVGDefinitionObject]] = js.undefined
+  var defs: js.UndefOr[DefsOptions | Dictionary[ASTNode]] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Options for drill down, the concept of inspecting
@@ -176,11 +190,23 @@ trait Options extends StObject {
     */
   var loading: js.UndefOr[LoadingOptions] = js.undefined
   
+  /**
+    * (Highmaps) The `mapNavigation` option handles buttons for navigation in
+    * addition to mousewheel and doubleclick handlers for map zooming.
+    */
   var mapNavigation: js.UndefOr[MapNavigationOptions] = js.undefined
   
   /**
+    * (Highmaps) The `mapView` options control the initial view of the chart,
+    * and how projection is set up for raw geoJSON maps (beta as of v9.3).
+    *
+    * To set the view dynamically after chart generation, see mapView.setView.
+    */
+  var mapView: js.UndefOr[MapViewOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) A collection of options for
-    * buttons and menus appearing in the exporting module.
+    * buttons and menus appearing in the exporting module or in Stock Tools.
     */
   var navigation: js.UndefOr[NavigationOptions] = js.undefined
   
@@ -275,8 +301,8 @@ trait Options extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Time options that can apply
     * globally or to individual charts. These settings affect how `datetime`
     * axes are laid out, how tooltips are formatted, how series
-    * pointIntervalUnit works and how the Highstock range selector handles
-    * time.
+    * pointIntervalUnit works and how the Highcharts Stock range selector
+    * handles time.
     *
     * The common use case is that all charts in the same Highcharts object
     * share the same time settings, in which case the global settings are set
@@ -342,7 +368,7 @@ object Options {
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: AnnotationsOptions*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: AnnotationsOptions*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setBoost(value: BoostOptions): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     
@@ -360,13 +386,13 @@ object Options {
     
     inline def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
     
-    inline def setColorAxisVarargs(value: ColorAxisOptions*): Self = StObject.set(x, "colorAxis", js.Array(value :_*))
+    inline def setColorAxisVarargs(value: ColorAxisOptions*): Self = StObject.set(x, "colorAxis", js.Array(value*))
     
-    inline def setColors(value: js.Array[ColorString]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[ColorString | GradientColorObject | PatternObject]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: ColorString*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setConnectors(value: ConnectorsOptions): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
     
@@ -380,7 +406,7 @@ object Options {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDefs(value: DefsOptions | Dictionary[SVGDefinitionObject]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+    inline def setDefs(value: DefsOptions | Dictionary[ASTNode]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     
     inline def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
     
@@ -411,6 +437,10 @@ object Options {
     inline def setMapNavigation(value: MapNavigationOptions): Self = StObject.set(x, "mapNavigation", value.asInstanceOf[js.Any])
     
     inline def setMapNavigationUndefined: Self = StObject.set(x, "mapNavigation", js.undefined)
+    
+    inline def setMapView(value: MapViewOptions): Self = StObject.set(x, "mapView", value.asInstanceOf[js.Any])
+    
+    inline def setMapViewUndefined: Self = StObject.set(x, "mapView", js.undefined)
     
     inline def setNavigation(value: NavigationOptions): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
@@ -448,7 +478,7 @@ object Options {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setStockTools(value: StockToolsOptions): Self = StObject.set(x, "stockTools", value.asInstanceOf[js.Any])
     
@@ -474,18 +504,18 @@ object Options {
     
     inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    inline def setXAxisVarargs(value: XAxisOptions*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
+    inline def setXAxisVarargs(value: XAxisOptions*): Self = StObject.set(x, "xAxis", js.Array(value*))
     
     inline def setYAxis(value: YAxisOptions | js.Array[YAxisOptions]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
-    inline def setYAxisVarargs(value: YAxisOptions*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
+    inline def setYAxisVarargs(value: YAxisOptions*): Self = StObject.set(x, "yAxis", js.Array(value*))
     
     inline def setZAxis(value: ZAxisOptions | js.Array[ZAxisOptions]): Self = StObject.set(x, "zAxis", value.asInstanceOf[js.Any])
     
     inline def setZAxisUndefined: Self = StObject.set(x, "zAxis", js.undefined)
     
-    inline def setZAxisVarargs(value: ZAxisOptions*): Self = StObject.set(x, "zAxis", js.Array(value :_*))
+    inline def setZAxisVarargs(value: ZAxisOptions*): Self = StObject.set(x, "zAxis", js.Array(value*))
   }
 }

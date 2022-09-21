@@ -8,35 +8,35 @@ trait IOwlCarouselOptions extends StObject {
   
   var addClassActive: js.UndefOr[Boolean] = js.undefined
   
-  var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
-  var afterInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
-  var afterLazyLoad: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterLazyLoad: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
-  var afterMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
-  var afterUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
   var autoHeight: js.UndefOr[Boolean] = js.undefined
   
-  var autoPlay: js.UndefOr[js.Any] = js.undefined
+  var autoPlay: js.UndefOr[Any] = js.undefined
   
   var baseClass: js.UndefOr[String] = js.undefined
   
-  var beforeInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beforeInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
-  var beforeMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beforeMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
   // callbacks
-  var beforeUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beforeUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
   var dragBeforeAnimFinish: js.UndefOr[Boolean] = js.undefined
   
   // options
   var items: js.UndefOr[Double] = js.undefined
   
-  var itemsCustom: js.UndefOr[js.Any] = js.undefined
+  var itemsCustom: js.UndefOr[Any] = js.undefined
   
   var itemsDesktop: js.UndefOr[js.Array[Double]] = js.undefined
   
@@ -48,13 +48,13 @@ trait IOwlCarouselOptions extends StObject {
   
   var itemsTablet: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var itemsTabletSmall: js.UndefOr[js.Any] = js.undefined
+  var itemsTabletSmall: js.UndefOr[Any] = js.undefined
   
-  var jsonPath: js.UndefOr[js.Any] = js.undefined
+  var jsonPath: js.UndefOr[Any] = js.undefined
   
-  var jsonSuccess: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
+  var jsonSuccess: js.UndefOr[js.Function1[/* data */ Any, Unit]] = js.undefined
   
-  var lazyEffect: js.UndefOr[js.Any] = js.undefined
+  var lazyEffect: js.UndefOr[Any] = js.undefined
   
   var lazyFollow: js.UndefOr[Boolean] = js.undefined
   
@@ -68,7 +68,7 @@ trait IOwlCarouselOptions extends StObject {
   
   var navigation: js.UndefOr[Boolean] = js.undefined
   
-  var navigationText: js.UndefOr[js.Any] = js.undefined
+  var navigationText: js.UndefOr[Any] = js.undefined
   
   var pagination: js.UndefOr[Boolean] = js.undefined
   
@@ -92,7 +92,7 @@ trait IOwlCarouselOptions extends StObject {
   
   var slideSpeed: js.UndefOr[Double] = js.undefined
   
-  var startDragging: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var startDragging: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
   var stopOnHover: js.UndefOr[Boolean] = js.undefined
   
@@ -100,7 +100,7 @@ trait IOwlCarouselOptions extends StObject {
   
   var touchDrag: js.UndefOr[Boolean] = js.undefined
   
-  var transitionStyle: js.UndefOr[js.Any] = js.undefined
+  var transitionStyle: js.UndefOr[Any] = js.undefined
 }
 object IOwlCarouselOptions {
   
@@ -115,23 +115,23 @@ object IOwlCarouselOptions {
     
     inline def setAddClassActiveUndefined: Self = StObject.set(x, "addClassActive", js.undefined)
     
-    inline def setAfterAction(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterAction", js.Any.fromFunction1(value))
+    inline def setAfterAction(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterAction", js.Any.fromFunction1(value))
     
     inline def setAfterActionUndefined: Self = StObject.set(x, "afterAction", js.undefined)
     
-    inline def setAfterInit(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
+    inline def setAfterInit(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
     
     inline def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
     
-    inline def setAfterLazyLoad(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterLazyLoad", js.Any.fromFunction1(value))
+    inline def setAfterLazyLoad(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterLazyLoad", js.Any.fromFunction1(value))
     
     inline def setAfterLazyLoadUndefined: Self = StObject.set(x, "afterLazyLoad", js.undefined)
     
-    inline def setAfterMove(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterMove", js.Any.fromFunction1(value))
+    inline def setAfterMove(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterMove", js.Any.fromFunction1(value))
     
     inline def setAfterMoveUndefined: Self = StObject.set(x, "afterMove", js.undefined)
     
-    inline def setAfterUpdate(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction1(value))
+    inline def setAfterUpdate(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction1(value))
     
     inline def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
     
@@ -139,7 +139,7 @@ object IOwlCarouselOptions {
     
     inline def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
     
-    inline def setAutoPlay(value: js.Any): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    inline def setAutoPlay(value: Any): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
     inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
@@ -147,15 +147,15 @@ object IOwlCarouselOptions {
     
     inline def setBaseClassUndefined: Self = StObject.set(x, "baseClass", js.undefined)
     
-    inline def setBeforeInit(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeInit", js.Any.fromFunction1(value))
+    inline def setBeforeInit(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beforeInit", js.Any.fromFunction1(value))
     
     inline def setBeforeInitUndefined: Self = StObject.set(x, "beforeInit", js.undefined)
     
-    inline def setBeforeMove(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeMove", js.Any.fromFunction1(value))
+    inline def setBeforeMove(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beforeMove", js.Any.fromFunction1(value))
     
     inline def setBeforeMoveUndefined: Self = StObject.set(x, "beforeMove", js.undefined)
     
-    inline def setBeforeUpdate(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction1(value))
+    inline def setBeforeUpdate(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction1(value))
     
     inline def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
     
@@ -165,7 +165,7 @@ object IOwlCarouselOptions {
     
     inline def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsCustom(value: js.Any): Self = StObject.set(x, "itemsCustom", value.asInstanceOf[js.Any])
+    inline def setItemsCustom(value: Any): Self = StObject.set(x, "itemsCustom", value.asInstanceOf[js.Any])
     
     inline def setItemsCustomUndefined: Self = StObject.set(x, "itemsCustom", js.undefined)
     
@@ -175,17 +175,17 @@ object IOwlCarouselOptions {
     
     inline def setItemsDesktopSmallUndefined: Self = StObject.set(x, "itemsDesktopSmall", js.undefined)
     
-    inline def setItemsDesktopSmallVarargs(value: Double*): Self = StObject.set(x, "itemsDesktopSmall", js.Array(value :_*))
+    inline def setItemsDesktopSmallVarargs(value: Double*): Self = StObject.set(x, "itemsDesktopSmall", js.Array(value*))
     
     inline def setItemsDesktopUndefined: Self = StObject.set(x, "itemsDesktop", js.undefined)
     
-    inline def setItemsDesktopVarargs(value: Double*): Self = StObject.set(x, "itemsDesktop", js.Array(value :_*))
+    inline def setItemsDesktopVarargs(value: Double*): Self = StObject.set(x, "itemsDesktop", js.Array(value*))
     
     inline def setItemsMobile(value: js.Array[Double]): Self = StObject.set(x, "itemsMobile", value.asInstanceOf[js.Any])
     
     inline def setItemsMobileUndefined: Self = StObject.set(x, "itemsMobile", js.undefined)
     
-    inline def setItemsMobileVarargs(value: Double*): Self = StObject.set(x, "itemsMobile", js.Array(value :_*))
+    inline def setItemsMobileVarargs(value: Double*): Self = StObject.set(x, "itemsMobile", js.Array(value*))
     
     inline def setItemsScaleUp(value: Boolean): Self = StObject.set(x, "itemsScaleUp", value.asInstanceOf[js.Any])
     
@@ -193,25 +193,25 @@ object IOwlCarouselOptions {
     
     inline def setItemsTablet(value: js.Array[Double]): Self = StObject.set(x, "itemsTablet", value.asInstanceOf[js.Any])
     
-    inline def setItemsTabletSmall(value: js.Any): Self = StObject.set(x, "itemsTabletSmall", value.asInstanceOf[js.Any])
+    inline def setItemsTabletSmall(value: Any): Self = StObject.set(x, "itemsTabletSmall", value.asInstanceOf[js.Any])
     
     inline def setItemsTabletSmallUndefined: Self = StObject.set(x, "itemsTabletSmall", js.undefined)
     
     inline def setItemsTabletUndefined: Self = StObject.set(x, "itemsTablet", js.undefined)
     
-    inline def setItemsTabletVarargs(value: Double*): Self = StObject.set(x, "itemsTablet", js.Array(value :_*))
+    inline def setItemsTabletVarargs(value: Double*): Self = StObject.set(x, "itemsTablet", js.Array(value*))
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setJsonPath(value: js.Any): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
+    inline def setJsonPath(value: Any): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
     
     inline def setJsonPathUndefined: Self = StObject.set(x, "jsonPath", js.undefined)
     
-    inline def setJsonSuccess(value: /* data */ js.Any => Unit): Self = StObject.set(x, "jsonSuccess", js.Any.fromFunction1(value))
+    inline def setJsonSuccess(value: /* data */ Any => Unit): Self = StObject.set(x, "jsonSuccess", js.Any.fromFunction1(value))
     
     inline def setJsonSuccessUndefined: Self = StObject.set(x, "jsonSuccess", js.undefined)
     
-    inline def setLazyEffect(value: js.Any): Self = StObject.set(x, "lazyEffect", value.asInstanceOf[js.Any])
+    inline def setLazyEffect(value: Any): Self = StObject.set(x, "lazyEffect", value.asInstanceOf[js.Any])
     
     inline def setLazyEffectUndefined: Self = StObject.set(x, "lazyEffect", js.undefined)
     
@@ -237,7 +237,7 @@ object IOwlCarouselOptions {
     
     inline def setNavigation(value: Boolean): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    inline def setNavigationText(value: js.Any): Self = StObject.set(x, "navigationText", value.asInstanceOf[js.Any])
+    inline def setNavigationText(value: Any): Self = StObject.set(x, "navigationText", value.asInstanceOf[js.Any])
     
     inline def setNavigationTextUndefined: Self = StObject.set(x, "navigationText", js.undefined)
     
@@ -287,7 +287,7 @@ object IOwlCarouselOptions {
     
     inline def setSlideSpeedUndefined: Self = StObject.set(x, "slideSpeed", js.undefined)
     
-    inline def setStartDragging(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "startDragging", js.Any.fromFunction1(value))
+    inline def setStartDragging(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "startDragging", js.Any.fromFunction1(value))
     
     inline def setStartDraggingUndefined: Self = StObject.set(x, "startDragging", js.undefined)
     
@@ -303,7 +303,7 @@ object IOwlCarouselOptions {
     
     inline def setTouchDragUndefined: Self = StObject.set(x, "touchDrag", js.undefined)
     
-    inline def setTransitionStyle(value: js.Any): Self = StObject.set(x, "transitionStyle", value.asInstanceOf[js.Any])
+    inline def setTransitionStyle(value: Any): Self = StObject.set(x, "transitionStyle", value.asInstanceOf[js.Any])
     
     inline def setTransitionStyleUndefined: Self = StObject.set(x, "transitionStyle", js.undefined)
   }

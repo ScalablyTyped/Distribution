@@ -22,7 +22,7 @@ trait ITreeStore
     * @returns Ext.data.Model/undefined The Record with the passed id. Returns undefined if not found.
     */
   @JSName("getById")
-  var getById_ITreeStore: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getById_ITreeStore: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the value of clearOnLoad
     * @returns Boolean
@@ -43,7 +43,7 @@ trait ITreeStore
     * @param id Object
     * @returns Ext.data.NodeInterface
     */
-  var getNodeById: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
+  var getNodeById: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], INodeInterface]] = js.undefined
   
   /** [Method] Returns the value of nodeParam
     * @returns String
@@ -53,20 +53,20 @@ trait ITreeStore
   /** [Method] Returns the value of root
     * @returns Ext.data.Model/Ext.data.NodeInterface/Object
     */
-  var getRoot: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getRoot: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the root node for this tree
     * @param node Object
     * @returns Ext.data.Model
     */
-  var getRootNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], IModel]] = js.undefined
+  var getRootNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[Any], IModel]] = js.undefined
   
   /** [Method] Loads the Store using its configured proxy
     * @param options Object config object. This is passed into the Operation object that is created and then sent to the proxy's Ext.data.proxy.Proxy.read function. The options can also contain a node, which indicates which node is to be loaded. If not specified, it will default to the root node.
     * @returns Object
     */
   @JSName("load")
-  var load_ITreeStore: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var load_ITreeStore: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (String) */
   var nodeParam: js.UndefOr[String] = js.undefined
@@ -74,10 +74,10 @@ trait ITreeStore
   /** [Method] Called internally when a Proxy has completed a load request
     * @param operation Object
     */
-  var onProxyLoad: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onProxyLoad: js.UndefOr[js.Function1[/* operation */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
-  var root: js.UndefOr[js.Any] = js.undefined
+  var root: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of clearOnLoad
     * @param clearOnLoad Boolean The new value.
@@ -102,7 +102,7 @@ trait ITreeStore
   /** [Method] Sets the value of root
     * @param root Ext.data.Model/Ext.data.NodeInterface/Object The new value.
     */
-  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the root node for this tree
     * @param node Ext.data.Model
@@ -131,7 +131,7 @@ object ITreeStore {
     
     inline def setDefaultRootPropertyUndefined: Self = StObject.set(x, "defaultRootProperty", js.undefined)
     
-    inline def setGetById(value: /* id */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
+    inline def setGetById(value: /* id */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
     
     inline def setGetByIdUndefined: Self = StObject.set(x, "getById", js.undefined)
     
@@ -147,7 +147,7 @@ object ITreeStore {
     
     inline def setGetDefaultRootPropertyUndefined: Self = StObject.set(x, "getDefaultRootProperty", js.undefined)
     
-    inline def setGetNodeById(value: /* id */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
+    inline def setGetNodeById(value: /* id */ js.UndefOr[Any] => INodeInterface): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
     
     inline def setGetNodeByIdUndefined: Self = StObject.set(x, "getNodeById", js.undefined)
     
@@ -155,15 +155,15 @@ object ITreeStore {
     
     inline def setGetNodeParamUndefined: Self = StObject.set(x, "getNodeParam", js.undefined)
     
-    inline def setGetRoot(value: () => js.Any): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+    inline def setGetRoot(value: () => Any): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
     
-    inline def setGetRootNode(value: /* node */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "getRootNode", js.Any.fromFunction1(value))
+    inline def setGetRootNode(value: /* node */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "getRootNode", js.Any.fromFunction1(value))
     
     inline def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
     
     inline def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
     
-    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[Any] => Any): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
@@ -171,11 +171,11 @@ object ITreeStore {
     
     inline def setNodeParamUndefined: Self = StObject.set(x, "nodeParam", js.undefined)
     
-    inline def setOnProxyLoad(value: /* operation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onProxyLoad", js.Any.fromFunction1(value))
+    inline def setOnProxyLoad(value: /* operation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onProxyLoad", js.Any.fromFunction1(value))
     
     inline def setOnProxyLoadUndefined: Self = StObject.set(x, "onProxyLoad", js.undefined)
     
-    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
@@ -195,7 +195,7 @@ object ITreeStore {
     
     inline def setSetNodeParamUndefined: Self = StObject.set(x, "setNodeParam", js.undefined)
     
-    inline def setSetRoot(value: /* root */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
+    inline def setSetRoot(value: /* root */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
     
     inline def setSetRootNode(value: /* node */ js.UndefOr[IModel] => IModel): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
     

@@ -1,7 +1,10 @@
 package typings.officeUiFabricReact
 
 import typings.fluentuiTheme.ithemeMod.ITheme
+import typings.officeUiFabricReact.anon.Target
 import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
+import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemStyleProps
+import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemStyles
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
 import typings.officeUiFabricReact.contextualMenuTypesMod.IMenuItemStyles
@@ -36,7 +39,7 @@ object libContextualMenuMod {
   
   @JSImport("office-ui-fabric-react/lib/ContextualMenu", "ContextualMenuBase")
   @js.native
-  class ContextualMenuBase protected ()
+  open class ContextualMenuBase protected ()
     extends typings.officeUiFabricReact.contextualMenuMod.ContextualMenuBase {
     def this(props: IContextualMenuProps) = this()
   }
@@ -59,7 +62,7 @@ object libContextualMenuMod {
   
   @JSImport("office-ui-fabric-react/lib/ContextualMenu", "ContextualMenuItemBase")
   @js.native
-  class ContextualMenuItemBase protected ()
+  open class ContextualMenuItemBase protected ()
     extends typings.officeUiFabricReact.contextualMenuMod.ContextualMenuItemBase {
     def this(props: IContextualMenuItemProps) = this()
   }
@@ -205,7 +208,25 @@ object libContextualMenuMod {
   
   inline def canAnyMenuItemsCheck(items: js.Array[IContextualMenuItem]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canAnyMenuItemsCheck")(items.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def getContextualMenuItemClassNames(
+    theme: ITheme,
+    disabled: Boolean,
+    expanded: Boolean,
+    checked: Boolean,
+    isAnchorLink: Boolean,
+    knownIcon: Boolean,
+    itemClassName: js.UndefOr[String],
+    dividerClassName: js.UndefOr[String],
+    iconClassName: js.UndefOr[String],
+    subMenuClassName: js.UndefOr[String],
+    primaryDisabled: js.UndefOr[Boolean],
+    className: js.UndefOr[String]
+  ): IContextualMenuItemStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getContextualMenuItemClassNames")(theme.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], isAnchorLink.asInstanceOf[js.Any], knownIcon.asInstanceOf[js.Any], itemClassName.asInstanceOf[js.Any], dividerClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], subMenuClassName.asInstanceOf[js.Any], primaryDisabled.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[IContextualMenuItemStyles]
+  
+  inline def getContextualMenuItemStyles(props: IContextualMenuItemStyleProps): IContextualMenuItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getContextualMenuItemStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IContextualMenuItemStyles]
+  
   inline def getMenuItemStyles(theme: ITheme): IMenuItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IMenuItemStyles]
   
   inline def getSubmenuItems(item: IContextualMenuItem): js.UndefOr[js.Array[IContextualMenuItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubmenuItems")(item.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[IContextualMenuItem]]]
+  inline def getSubmenuItems(item: IContextualMenuItem, options: Target): js.UndefOr[js.Array[IContextualMenuItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubmenuItems")(item.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[IContextualMenuItem]]]
 }

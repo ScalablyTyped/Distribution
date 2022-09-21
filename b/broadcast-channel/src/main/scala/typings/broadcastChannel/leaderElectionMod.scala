@@ -1,6 +1,7 @@
 package typings.broadcastChannel
 
 import typings.broadcastChannel.broadcastChannelMod.BroadcastChannel
+import typings.broadcastChannel.broadcastChannelMod.OnMessageHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +10,27 @@ object leaderElectionMod {
   
   @JSImport("broadcast-channel/types/leader-election", "LeaderElector")
   @js.native
-  class LeaderElector () extends StObject {
+  open class LeaderElector () extends StObject {
     
     def applyOnce(): js.Promise[Boolean] = js.native
+    def applyOnce(isFromFallbackInterval: Boolean): js.Promise[Boolean] = js.native
     
     def awaitLeadership(): js.Promise[Unit] = js.native
     
+    /**
+      * The broadcastChannel with which the
+      * leader elector was created.
+      */
+    val broadcastChannel: BroadcastChannel[Any] = js.native
+    
     def die(): js.Promise[Unit] = js.native
+    
+    /**
+      * True if this or another instance is leader.
+      * False if there is not leader at the moment
+      * and we must wait for the election cycle.
+      */
+    val hasLeader: Boolean = js.native
     
     val isDead: Boolean = js.native
     
@@ -26,6 +41,12 @@ object leaderElectionMod {
       */
     val isLeader: Boolean = js.native
     
+    /**
+      * Add an event handler that is run
+      * when it is detected that there are duplicate leaders
+      */
+    var onduplicate: OnMessageHandler[Any] = js.native
+    
     val token: String = js.native
   }
   
@@ -34,7 +55,7 @@ object leaderElectionMod {
   val createLeaderElection: CreateFunction = js.native
   
   type CreateFunction = js.Function2[
-    /* channel */ BroadcastChannel[js.Any], 
+    /* broadcastChannel */ BroadcastChannel[Any], 
     /* options */ js.UndefOr[LeaderElectionOptions], 
     LeaderElector
   ]
@@ -42,8 +63,12 @@ object leaderElectionMod {
   trait LeaderElectionOptions extends StObject {
     
     /**
-      * This value decides how often instances will renegotiate who is leader.
-      * Probably should be at least 2x bigger than responseTime.
+      * Normally, when the leading JavaScript process dies, it will send an I-am-dead
+      * message to the other LeaderElectors, so that they can elect a new leader.
+      * On rare cases, when the JavaScript process exits ungracefully, it can happen
+      * that the other electors do not get a dead-message.
+      * So we have to also run the election cycle in an interval to ensure
+      * we never stuck on a state where noone is leader and noone is trying to get elected.
       */
     var fallbackInterval: js.UndefOr[Double] = js.undefined
     

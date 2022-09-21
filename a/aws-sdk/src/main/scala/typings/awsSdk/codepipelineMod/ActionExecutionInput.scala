@@ -59,7 +59,7 @@ object ActionExecutionInput {
     
     inline def setInputArtifactsUndefined: Self = StObject.set(x, "inputArtifacts", js.undefined)
     
-    inline def setInputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
+    inline def setInputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "inputArtifacts", js.Array(value*))
     
     inline def setNamespace(value: ActionNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

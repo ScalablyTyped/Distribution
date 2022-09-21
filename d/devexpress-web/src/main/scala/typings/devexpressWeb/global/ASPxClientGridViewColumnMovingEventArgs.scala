@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewColumnMovingEventArgs")
 @js.native
-class ASPxClientGridViewColumnMovingEventArgs protected ()
+open class ASPxClientGridViewColumnMovingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewColumnMovingEventArgs {
   /**

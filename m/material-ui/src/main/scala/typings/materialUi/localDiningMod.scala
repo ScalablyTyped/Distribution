@@ -10,10 +10,10 @@ object localDiningMod {
   
   @JSImport("material-ui/svg-icons/maps/local-dining", JSImport.Default)
   @js.native
-  class default () extends MapsLocalDining
+  open class default () extends MapsLocalDining
   
   @JSImport("material-ui/svg-icons/maps/local-dining", "MapsLocalDining")
   @js.native
-  class MapsLocalDining ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalDining ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

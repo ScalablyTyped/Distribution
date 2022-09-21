@@ -22,7 +22,7 @@ object objectMod {
   
   @JSImport("nodegit/object", "Object")
   @js.native
-  class Object () extends StObject {
+  open class Object () extends StObject {
     
     def dup(): js.Promise[Object] = js.native
     

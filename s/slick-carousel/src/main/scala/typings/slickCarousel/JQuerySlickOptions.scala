@@ -78,7 +78,7 @@ trait JQuerySlickOptions extends StObject {
     * Custom paging templates. See source for use example.
     * Default: n/a
     */
-  var customPaging: js.UndefOr[js.Function2[/* slider */ js.Any, /* i */ Double, String]] = js.undefined
+  var customPaging: js.UndefOr[js.Function2[/* slider */ Any, /* i */ Double, String]] = js.undefined
   
   /**
     * Show dot indicators
@@ -325,13 +325,13 @@ object JQuerySlickOptions {
     
     inline def setAppendArrowsUndefined: Self = StObject.set(x, "appendArrows", js.undefined)
     
-    inline def setAppendArrowsVarargs(value: Element*): Self = StObject.set(x, "appendArrows", js.Array(value :_*))
+    inline def setAppendArrowsVarargs(value: Element*): Self = StObject.set(x, "appendArrows", js.Array(value*))
     
     inline def setAppendDots(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "appendDots", value.asInstanceOf[js.Any])
     
     inline def setAppendDotsUndefined: Self = StObject.set(x, "appendDots", js.undefined)
     
-    inline def setAppendDotsVarargs(value: Element*): Self = StObject.set(x, "appendDots", js.Array(value :_*))
+    inline def setAppendDotsVarargs(value: Element*): Self = StObject.set(x, "appendDots", js.Array(value*))
     
     inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
     
@@ -361,7 +361,7 @@ object JQuerySlickOptions {
     
     inline def setCssEaseUndefined: Self = StObject.set(x, "cssEase", js.undefined)
     
-    inline def setCustomPaging(value: (/* slider */ js.Any, /* i */ Double) => String): Self = StObject.set(x, "customPaging", js.Any.fromFunction2(value))
+    inline def setCustomPaging(value: (/* slider */ Any, /* i */ Double) => String): Self = StObject.set(x, "customPaging", js.Any.fromFunction2(value))
     
     inline def setCustomPagingUndefined: Self = StObject.set(x, "customPaging", js.undefined)
     

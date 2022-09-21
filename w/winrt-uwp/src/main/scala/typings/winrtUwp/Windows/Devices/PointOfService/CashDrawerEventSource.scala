@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CashDrawerEventSource extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_drawerclosed(
     `type`: drawerclosed,
@@ -37,7 +37,7 @@ trait CashDrawerEventSource extends StObject {
   @JSName("ondraweropened")
   var ondraweropened_Original: TypedEventHandler[CashDrawerEventSource, CashDrawerOpenedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_drawerclosed(
     `type`: drawerclosed,

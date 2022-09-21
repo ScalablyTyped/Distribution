@@ -2,7 +2,6 @@ package typings.web3EthContract
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bnJs.mod.^
-import typings.std.Error
 import typings.web3Core.mod.BlockNumber
 import typings.web3Core.mod.Common
 import typings.web3Core.mod.LogsOptions
@@ -10,6 +9,8 @@ import typings.web3Core.mod.PastLogsOptions
 import typings.web3Core.mod.PromiEvent
 import typings.web3Core.mod.chain
 import typings.web3Core.mod.hardfork
+import typings.web3Core.mod.provider
+import typings.web3EthAccounts.mod.Accounts
 import typings.web3EthContract.anon.Data
 import typings.web3Utils.mod.AbiItem
 import org.scalablytyped.runtime.StObject
@@ -20,7 +21,7 @@ object mod {
   
   @JSImport("web3-eth-contract", "Contract")
   @js.native
-  class Contract protected () extends StObject {
+  open class Contract protected () extends StObject {
     def this(jsonInterface: js.Array[AbiItem]) = this()
     def this(jsonInterface: js.Array[AbiItem], address: String) = this()
     def this(jsonInterface: js.Array[AbiItem], address: String, options: ContractOptions) = this()
@@ -42,26 +43,26 @@ object mod {
     
     def deploy(options: DeployOptions): ContractSendMethod = js.native
     
-    var events: js.Any = js.native
+    var events: Any = js.native
     
     def getPastEvents(event: String): js.Promise[js.Array[EventData]] = js.native
-    def getPastEvents(event: String, callback: js.Function2[/* error */ Error, /* event */ EventData, Unit]): js.Promise[js.Array[EventData]] = js.native
+    def getPastEvents(event: String, callback: js.Function2[/* error */ js.Error, /* event */ EventData, Unit]): js.Promise[js.Array[EventData]] = js.native
     def getPastEvents(event: String, options: PastEventOptions): js.Promise[js.Array[EventData]] = js.native
     def getPastEvents(
       event: String,
       options: PastEventOptions,
-      callback: js.Function2[/* error */ Error, /* event */ EventData, Unit]
+      callback: js.Function2[/* error */ js.Error, /* event */ EventData, Unit]
     ): js.Promise[js.Array[EventData]] = js.native
     
     var handleRevert: Boolean = js.native
     
-    var methods: js.Any = js.native
+    var methods: Any = js.native
     
-    def once(event: String, callback: js.Function2[/* error */ Error, /* event */ EventData, Unit]): Unit = js.native
+    def once(event: String, callback: js.Function2[/* error */ js.Error, /* event */ EventData, Unit]): Unit = js.native
     def once(
       event: String,
       options: EventOptions,
-      callback: js.Function2[/* error */ Error, /* event */ EventData, Unit]
+      callback: js.Function2[/* error */ js.Error, /* event */ EventData, Unit]
     ): Unit = js.native
     
     var options: Options = js.native
@@ -71,6 +72,16 @@ object mod {
     var transactionConfirmationBlocks: Double = js.native
     
     var transactionPollingTimeout: Double = js.native
+  }
+  /* static members */
+  object Contract {
+    
+    @JSImport("web3-eth-contract", "Contract")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def setProvider(provider: provider): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setProvider(provider: provider, accounts: Accounts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProvider")(provider.asInstanceOf[js.Any], accounts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   trait CallOptions extends StObject {
@@ -148,25 +159,28 @@ object mod {
   @js.native
   trait ContractSendMethod extends StObject {
     
-    def call(): js.Promise[js.Any] = js.native
-    def call(options: Unit, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
-    def call(options: CallOptions): js.Promise[js.Any] = js.native
-    def call(options: CallOptions, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    def call(): js.Promise[Any] = js.native
+    def call(options: Unit, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): js.Promise[Any] = js.native
+    def call(options: CallOptions): js.Promise[Any] = js.native
+    def call(options: CallOptions, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): js.Promise[Any] = js.native
     
     def encodeABI(): String = js.native
     
     def estimateGas(): js.Promise[Double] = js.native
-    def estimateGas(callback: js.Function2[/* err */ Error, /* gas */ Double, Unit]): js.Promise[Double] = js.native
+    def estimateGas(callback: js.Function2[/* err */ js.Error, /* gas */ Double, Unit]): js.Promise[Double] = js.native
     def estimateGas(options: EstimateGasOptions): js.Promise[Double] = js.native
-    def estimateGas(options: EstimateGasOptions, callback: js.Function2[/* err */ Error, /* gas */ Double, Unit]): js.Promise[Double] = js.native
+    def estimateGas(options: EstimateGasOptions, callback: js.Function2[/* err */ js.Error, /* gas */ Double, Unit]): js.Promise[Double] = js.native
     
     def send(options: SendOptions): PromiEvent[Contract] = js.native
-    def send(options: SendOptions, callback: js.Function2[/* err */ Error, /* transactionHash */ String, Unit]): PromiEvent[Contract] = js.native
+    def send(
+      options: SendOptions,
+      callback: js.Function2[/* err */ js.Error, /* transactionHash */ String, Unit]
+    ): PromiEvent[Contract] = js.native
   }
   
   trait DeployOptions extends StObject {
     
-    var arguments: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var arguments: js.UndefOr[js.Array[Any]] = js.undefined
     
     var data: String
   }
@@ -179,11 +193,11 @@ object mod {
     
     extension [Self <: DeployOptions](x: Self) {
       
-      inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
-      inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: Any*): Self = StObject.set(x, "arguments", js.Array(value*))
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -234,7 +248,7 @@ object mod {
     
     var raw: Data
     
-    var returnValues: StringDictionary[js.Any]
+    var returnValues: StringDictionary[Any]
     
     var signature: String
     
@@ -251,7 +265,7 @@ object mod {
       event: String,
       logIndex: Double,
       raw: Data,
-      returnValues: StringDictionary[js.Any],
+      returnValues: StringDictionary[Any],
       signature: String,
       transactionHash: String,
       transactionIndex: Double
@@ -274,7 +288,7 @@ object mod {
       
       inline def setRaw(value: Data): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      inline def setReturnValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
+      inline def setReturnValues(value: StringDictionary[Any]): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
       
       inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
@@ -328,7 +342,7 @@ object mod {
       
       inline def setJsonInterface(value: js.Array[AbiItem]): Self = StObject.set(x, "jsonInterface", value.asInstanceOf[js.Any])
       
-      inline def setJsonInterfaceVarargs(value: AbiItem*): Self = StObject.set(x, "jsonInterface", js.Array(value :_*))
+      inline def setJsonInterfaceVarargs(value: AbiItem*): Self = StObject.set(x, "jsonInterface", js.Array(value*))
     }
   }
   
@@ -361,6 +375,8 @@ object mod {
     
     var gasPrice: js.UndefOr[String] = js.undefined
     
+    var nonce: js.UndefOr[Double] = js.undefined
+    
     var value: js.UndefOr[Double | String | ^] = js.undefined
   }
   object SendOptions {
@@ -381,6 +397,10 @@ object mod {
       inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
       inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+      
+      inline def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setValue(value: Double | String | ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

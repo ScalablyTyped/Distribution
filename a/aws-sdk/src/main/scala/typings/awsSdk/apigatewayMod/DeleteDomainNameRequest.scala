@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteDomainNameRequest extends StObject {
   
   /**
-    * [Required] The name of the DomainName resource to be deleted.
+    * The name of the DomainName resource to be deleted.
     */
   var domainName: String
 }

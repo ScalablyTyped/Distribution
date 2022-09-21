@@ -1,6 +1,5 @@
 package typings.jqueryMockjax
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait MockJaxSettings extends StObject {
   
   var contentType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dataType: js.UndefOr[String] = js.undefined
   
@@ -39,7 +38,7 @@ trait MockJaxSettings extends StObject {
   
   var proxyType: js.UndefOr[String] = js.undefined
   
-  var response: js.UndefOr[js.Function2[/* settings */ js.Any, /* done */ js.UndefOr[js.Function], Unit]] = js.undefined
+  var response: js.UndefOr[js.Function2[/* settings */ Any, /* done */ js.UndefOr[js.Function], Unit]] = js.undefined
   
   var responseText: js.UndefOr[String | js.Object] = js.undefined
   
@@ -57,7 +56,7 @@ trait MockJaxSettings extends StObject {
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String | RegExp] = js.undefined
+  var url: js.UndefOr[String | js.RegExp] = js.undefined
   
   var urlParams: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -74,7 +73,7 @@ object MockJaxSettings {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
@@ -102,7 +101,7 @@ object MockJaxSettings {
     
     inline def setLogLevelMethodsUndefined: Self = StObject.set(x, "logLevelMethods", js.undefined)
     
-    inline def setLogLevelMethodsVarargs(value: String*): Self = StObject.set(x, "logLevelMethods", js.Array(value :_*))
+    inline def setLogLevelMethodsVarargs(value: String*): Self = StObject.set(x, "logLevelMethods", js.Array(value*))
     
     inline def setLogger(value: MockJaxStandardLogger | MockJaxCustomLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
@@ -136,7 +135,7 @@ object MockJaxSettings {
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setResponse(value: (/* settings */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
+    inline def setResponse(value: (/* settings */ Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
     
     inline def setResponseText(value: String | js.Object): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
     
@@ -172,13 +171,13 @@ object MockJaxSettings {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: String | RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | js.RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlParams(value: js.Array[String]): Self = StObject.set(x, "urlParams", value.asInstanceOf[js.Any])
     
     inline def setUrlParamsUndefined: Self = StObject.set(x, "urlParams", js.undefined)
     
-    inline def setUrlParamsVarargs(value: String*): Self = StObject.set(x, "urlParams", js.Array(value :_*))
+    inline def setUrlParamsVarargs(value: String*): Self = StObject.set(x, "urlParams", js.Array(value*))
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

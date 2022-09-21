@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InventoryCount")
 @js.native
-class InventoryCount () extends StObject {
+open class InventoryCount () extends StObject {
   
   /**
     * A read-only timestamp in RFC 3339 format that indicates when Square received the most recent physical count or

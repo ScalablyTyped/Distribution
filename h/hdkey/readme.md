@@ -1,7 +1,7 @@
 
 # Scala.js typings for hdkey
 
-Typings are for version 0.7
+Typings are for version 2.0
 
 ## Library description:
 Bitcoin BIP32 hierarchical deterministic keys
@@ -10,15 +10,12 @@ Bitcoin BIP32 hierarchical deterministic keys
 | ------------------ | :-------------: |
 | Full name          | hdkey |
 | Keywords           | bitcoin, bip32, bip, key, hierarchical, deterministic, crypto |
-| # releases         | 5 |
-| # dependents       | 191 |
-| # downloads        | 2430983 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 233565.66666666666 |
+| # stars            | 169.0 |
 
 ## Links
-- [Homepage](https://github.com/cryptocoinjs/hdkey)
-- [Bugs](https://github.com/cryptocoinjs/hdkey/issues)
-- [Repository](https://github.com/cryptocoinjs/hdkey)
 - [Npm](https://www.npmjs.com/package/hdkey)
     
 

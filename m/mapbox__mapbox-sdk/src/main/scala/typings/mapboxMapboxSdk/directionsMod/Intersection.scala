@@ -65,17 +65,17 @@ object Intersection {
     
     inline def setBearings(value: js.Array[Double]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
     
-    inline def setBearingsVarargs(value: Double*): Self = StObject.set(x, "bearings", js.Array(value :_*))
+    inline def setBearingsVarargs(value: Double*): Self = StObject.set(x, "bearings", js.Array(value*))
     
     inline def setClasses(value: js.Array[DirectionsClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setClassesVarargs(value: DirectionsClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: DirectionsClass*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setEntry(value: js.Array[Boolean]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    inline def setEntryVarargs(value: Boolean*): Self = StObject.set(x, "entry", js.Array(value :_*))
+    inline def setEntryVarargs(value: Boolean*): Self = StObject.set(x, "entry", js.Array(value*))
     
     inline def setIn(value: Double): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
@@ -83,11 +83,11 @@ object Intersection {
     
     inline def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
     
-    inline def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
+    inline def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value*))
     
     inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setOut(value: Double): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     

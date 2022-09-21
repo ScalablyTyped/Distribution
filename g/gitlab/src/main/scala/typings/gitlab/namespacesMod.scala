@@ -13,7 +13,7 @@ object namespacesMod {
   
   @JSImport("gitlab/dist/types/core/services/Namespaces", "Namespaces")
   @js.native
-  class Namespaces () extends BaseService {
+  open class Namespaces () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native

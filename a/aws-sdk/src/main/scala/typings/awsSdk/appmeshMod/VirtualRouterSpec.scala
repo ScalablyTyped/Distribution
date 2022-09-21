@@ -24,6 +24,6 @@ object VirtualRouterSpec {
     
     inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
-    inline def setListenersVarargs(value: VirtualRouterListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: VirtualRouterListener*): Self = StObject.set(x, "listeners", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResponsesObject
   extends StObject
-     with /* index */ StringDictionary[Response | js.Any] {
+     with /* index */ StringDictionary[js.UndefOr[Response]] {
   
   var default: js.UndefOr[Response] = js.undefined
 }

@@ -19,7 +19,7 @@ trait StaticIp extends StObject {
   /**
     * The timestamp when the static IP was created (e.g., 1479735304.222).
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The static IP address.
@@ -68,7 +68,7 @@ object StaticIp {
     
     inline def setAttachedToUndefined: Self = StObject.set(x, "attachedTo", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

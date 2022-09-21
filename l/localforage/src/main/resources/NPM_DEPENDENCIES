@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "localforage" : "1.9.0"
+      "localforage" : "1.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "localforage" : "1.9.0"
+      "localforage" : "1.10.0"
     }
   ],
   "compile-devDependencies" : [

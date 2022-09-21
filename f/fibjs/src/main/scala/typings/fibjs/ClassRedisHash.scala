@@ -22,7 +22,7 @@ trait ClassRedisHash
     * 
     * 
     */
-  def del(fields: js.Any*): Double = js.native
+  def del(fields: Any*): Double = js.native
   /**
     * 
     * @brief 删除哈希表中的一个或多个指定域，不存在的域将被忽略
@@ -31,7 +31,7 @@ trait ClassRedisHash
     * 
     * 
     */
-  def del(fields: js.Array[js.Any]): Double = js.native
+  def del(fields: js.Array[Any]): Double = js.native
   
   /**
     * 
@@ -60,7 +60,7 @@ trait ClassRedisHash
     * 
     * 
     */
-  def getAll(): js.Array[js.Any] = js.native
+  def getAll(): js.Array[Any] = js.native
   
   /**
     * 
@@ -81,7 +81,7 @@ trait ClassRedisHash
     * 
     * 
     */
-  def keys(): js.Array[js.Any] = js.native
+  def keys(): js.Array[Any] = js.native
   
   /**
     * 
@@ -100,7 +100,7 @@ trait ClassRedisHash
     * 
     * 
     */
-  def mget(fields: js.Any*): js.Array[js.Any] = js.native
+  def mget(fields: Any*): js.Array[Any] = js.native
   /**
     * 
     * @brief 返回哈希表中，一个或多个给定域的值
@@ -109,7 +109,7 @@ trait ClassRedisHash
     * 
     * 
     */
-  def mget(fields: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def mget(fields: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * 
@@ -118,7 +118,7 @@ trait ClassRedisHash
     * 
     * 
     */
-  def mset(kvs: js.Any*): Unit = js.native
+  def mset(kvs: Any*): Unit = js.native
   /**
     * 
     * @brief 同时将多个 field-value (域-值)对设置到哈希表中，此命令会覆盖哈希表中已存在的域

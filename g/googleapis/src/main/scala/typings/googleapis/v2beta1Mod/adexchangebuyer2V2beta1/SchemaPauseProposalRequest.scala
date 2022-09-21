@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message to pause serving for an already-finalized proposal.
-  */
 trait SchemaPauseProposalRequest extends StObject {
   
   /**
-    * The reason why the proposal is being paused. This human readable message
-    * will be displayed in the seller&#39;s UI. (Max length: 1000 unicode code
-    * units.)
+    * The reason why the proposal is being paused. This human readable message will be displayed in the seller's UI. (Max length: 1000 unicode code units.)
     */
-  var reason: js.UndefOr[String] = js.undefined
+  var reason: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPauseProposalRequest {
   
@@ -26,6 +21,8 @@ object SchemaPauseProposalRequest {
   extension [Self <: SchemaPauseProposalRequest](x: Self) {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
     
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }

@@ -10,10 +10,10 @@ HTTP status codes as JavaScript errors.
 | ------------------ | :-------------: |
 | Full name          | httperr |
 | Keywords           | http, errors, error, request, response, errorclass |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 19998 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13577.0 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/pluma/httperr)

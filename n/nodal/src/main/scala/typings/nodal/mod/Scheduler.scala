@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "Scheduler")
 @js.native
-class Scheduler ()
+open class Scheduler ()
   extends typings.fxn.mod.Scheduler

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A transformation to apply to text that is identified as a specific
-  * info_type.
-  */
 trait SchemaInfoTypeTransformation extends StObject {
   
   /**
@@ -26,10 +22,9 @@ trait SchemaInfoTypeTransformation extends StObject {
   var dateShiftConfig: js.UndefOr[SchemaDateShiftConfig] = js.undefined
   
   /**
-    * InfoTypes to apply this transformation to. If this is not specified, the
-    * transformation applies to any info_type.
+    * InfoTypes to apply this transformation to. If this is not specified, this transformation becomes the default transformation, and is used for any info_type that is not specified in another transformation.
     */
-  var infoTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var infoTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Config for text redaction.
@@ -64,9 +59,11 @@ object SchemaInfoTypeTransformation {
     
     inline def setInfoTypes(value: js.Array[String]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
     
+    inline def setInfoTypesNull: Self = StObject.set(x, "infoTypes", null)
+    
     inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    inline def setInfoTypesVarargs(value: String*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: String*): Self = StObject.set(x, "infoTypes", js.Array(value*))
     
     inline def setRedactConfig(value: SchemaRedactConfig): Self = StObject.set(x, "redactConfig", value.asInstanceOf[js.Any])
     

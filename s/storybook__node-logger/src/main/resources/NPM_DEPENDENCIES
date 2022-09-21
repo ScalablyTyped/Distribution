@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/node-logger" : "6.1.2"
+      "@storybook/node-logger" : "6.5.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/node-logger" : "6.1.2"
+      "@storybook/node-logger" : "6.5.12"
     }
   ],
   "compile-devDependencies" : [

@@ -13,7 +13,7 @@ object global {
       */
     @JSGlobal("AMap.CitySearch")
     @js.native
-    class CitySearch ()
+    open class CitySearch ()
       extends StObject
          with typings.amapJsApiCitySearch.AMap.CitySearch
   }

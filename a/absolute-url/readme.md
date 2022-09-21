@@ -10,15 +10,12 @@ Attaches .absoluteUrl() function to req
 | ------------------ | :-------------: |
 | Full name          | absolute-url |
 | Keywords           | absolute, url |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 19213 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1195.3333333333333 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/zazukoians/absolute-url)
-- [Bugs](https://github.com/zazukoians/absolute-url/issues)
-- [Repository](https://github.com/zazukoians/absolute-url)
 - [Npm](https://www.npmjs.com/package/absolute-url)
     
 

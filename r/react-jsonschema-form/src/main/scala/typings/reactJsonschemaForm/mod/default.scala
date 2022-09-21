@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-jsonschema-form", JSImport.Default)
 @js.native
-class default[T] () extends Form[T]
+open class default[T] () extends Form[T]

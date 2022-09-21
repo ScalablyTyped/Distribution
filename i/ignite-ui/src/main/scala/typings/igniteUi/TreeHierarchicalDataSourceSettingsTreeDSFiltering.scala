@@ -10,12 +10,12 @@ trait TreeHierarchicalDataSourceSettingsTreeDSFiltering
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * If displayMode is showWithAncestorsAndDescendants, show all records that match filtering conditions and their child records, even if child records don't match filtering conditions. If displayMode is showWithAncestors show only those records that match filtering conditions and do not show child records(if any) that don't match filtering conditions
     */
-  var displayMode: js.UndefOr[js.Any] = js.undefined
+  var displayMode: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies from which data bound level to be applied filtering - 0 is the first level
@@ -41,7 +41,7 @@ object TreeHierarchicalDataSourceSettingsTreeDSFiltering {
   
   extension [Self <: TreeHierarchicalDataSourceSettingsTreeDSFiltering](x: Self) {
     
-    inline def setDisplayMode(value: js.Any): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+    inline def setDisplayMode(value: Any): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     

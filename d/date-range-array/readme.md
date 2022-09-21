@@ -10,10 +10,10 @@ Create an array of dates.
 | ------------------ | :-------------: |
 | Full name          | date-range-array |
 | Keywords           | date, date range, array, time |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 8867 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1169.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/davidguttman/date-range-array#readme)

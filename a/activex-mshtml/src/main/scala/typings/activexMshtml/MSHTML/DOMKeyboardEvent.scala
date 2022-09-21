@@ -31,7 +31,7 @@ trait DOMKeyboardEvent extends StObject {
   
   def getModifierState(keyArg: String): Boolean
   
-  val ie9_char: js.Any
+  val ie9_char: Any
   
   def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit
   
@@ -79,7 +79,7 @@ trait DOMKeyboardEvent extends StObject {
   
   val `type`: String
   
-  def view(pvarIndex: js.Any): js.Any
+  def view(pvarIndex: Any): Any
   @JSName("view")
   val view_Original: IHTMLWindow2
   
@@ -100,7 +100,7 @@ object DOMKeyboardEvent {
     detail: Double,
     eventPhase: Double,
     getModifierState: String => Boolean,
-    ie9_char: js.Any,
+    ie9_char: Any,
     initEvent: (String, Boolean, Boolean) => Unit,
     initKeyboardEvent: (String, Boolean, Boolean, IHTMLWindow2, String, Double, String, Boolean, String) => Unit,
     initUIEvent: (String, Boolean, Boolean, IHTMLWindow2, Double) => Unit,
@@ -152,7 +152,7 @@ object DOMKeyboardEvent {
     
     inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
     
-    inline def setIe9_char(value: js.Any): Self = StObject.set(x, "ie9_char", value.asInstanceOf[js.Any])
+    inline def setIe9_char(value: Any): Self = StObject.set(x, "ie9_char", value.asInstanceOf[js.Any])
     
     inline def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
     

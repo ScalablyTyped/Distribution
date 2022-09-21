@@ -21,7 +21,7 @@ trait NavigationPane extends StObject {
   /* private */ @JSName("Outlook.NavigationPane_typekey")
   var OutlookDotNavigationPane_typekey: NavigationPane
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -35,7 +35,7 @@ object NavigationPane {
     IsCollapsed: Boolean,
     Modules: NavigationModules,
     OutlookDotNavigationPane_typekey: NavigationPane,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): NavigationPane = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], CurrentModule = CurrentModule.asInstanceOf[js.Any], DisplayedModuleCount = DisplayedModuleCount.asInstanceOf[js.Any], IsCollapsed = IsCollapsed.asInstanceOf[js.Any], Modules = Modules.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object NavigationPane {
     
     inline def setOutlookDotNavigationPane_typekey(value: NavigationPane): Self = StObject.set(x, "Outlook.NavigationPane_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

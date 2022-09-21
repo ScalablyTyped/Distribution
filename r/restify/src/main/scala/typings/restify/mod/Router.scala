@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("restify", "Router")
 @js.native
-class Router protected () extends StObject {
+open class Router protected () extends StObject {
   def this(options: RouterOptions) = this()
   
   /**
@@ -18,7 +18,7 @@ class Router protected () extends StObject {
     * Return information about the routes registered in the router.
     * @returns The routes in the router.
     */
-  def getDebugInfo(): js.Any = js.native
+  def getDebugInfo(): Any = js.native
   
   /**
     * Return mounted routes.
@@ -42,7 +42,7 @@ class Router protected () extends StObject {
     * @param    options an options object
     * @returns  returns the route name if creation is successful.
     */
-  def mount(options: RouteOptions, handlers: RequestHandlerType*): String = js.native
+  def mount(options: MountOptions, handlers: RequestHandlerType*): String = js.native
   
   var name: String = js.native
   

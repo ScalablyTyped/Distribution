@@ -69,11 +69,11 @@ object anon {
     
     var response: Body
     
-    var xhr: js.Any
+    var xhr: Any
   }
   object Response {
     
-    inline def apply(response: Body, xhr: js.Any): Response = {
+    inline def apply(response: Body, xhr: Any): Response = {
       val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
@@ -82,7 +82,7 @@ object anon {
       
       inline def setResponse(value: Body): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     }
   }
 }

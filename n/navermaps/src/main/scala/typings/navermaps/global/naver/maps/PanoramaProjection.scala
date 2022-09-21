@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Sub module: panorama
 @JSGlobal("naver.maps.PanoramaProjection")
 @js.native
-class PanoramaProjection ()
+open class PanoramaProjection ()
   extends StObject
      with typings.navermaps.naver.maps.PanoramaProjection

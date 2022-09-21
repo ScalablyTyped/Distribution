@@ -1,9 +1,8 @@
 package typings.formatjsEcma402Abstract
 
-import typings.formatjsEcma402Abstract.dateTimeMod.RangePatternType
+import typings.formatjsEcma402Abstract.dateTimeMod.IntlDateTimeFormatPartType
 import typings.formatjsEcma402Abstract.dateTimeMod.TABLE_2
 import typings.formatjsEcma402Abstract.dateTimeMod.TABLE_6
-import typings.formatjsEcma402Abstract.dateTimeMod._IntlDateTimeFormatPartType
 import typings.formatjsEcma402Abstract.numberMod.DecimalFormatNum
 import typings.formatjsEcma402Abstract.numberMod.NumberFormatNotation
 import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptionsCompactDisplay
@@ -16,9 +15,7 @@ import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptionsUnitDisplay
 import typings.formatjsEcma402Abstract.numberMod.NumberFormatRoundingType
 import typings.formatjsEcma402Abstract.numberMod._NumberFormatPartTypes
 import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeField
-import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeFormattableUnit
-import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeUnit
-import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeUnits
+import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeFormatSingularUnit
 import typings.formatjsEcma402Abstract.typesPluralRulesMod.LDMLPluralRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -135,10 +132,6 @@ object formatjsEcma402AbstractStrings {
   inline def Object: Object = "Object".asInstanceOf[Object]
   
   @js.native
-  sealed trait ResolveLocale extends StObject
-  inline def ResolveLocale: ResolveLocale = "ResolveLocale".asInstanceOf[ResolveLocale]
-  
-  @js.native
   sealed trait String extends StObject
   inline def String: String = "String".asInstanceOf[String]
   
@@ -167,10 +160,10 @@ object formatjsEcma402AbstractStrings {
   @js.native
   sealed trait ampm
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with TABLE_2
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
-       with _IntlDateTimeFormatPartType
-       with typings.formatjsEcma402Abstract.typesDateTimeMod._IntlDateTimeFormatPartType
   inline def ampm: ampm = "ampm".asInstanceOf[ampm]
   
   @js.native
@@ -192,16 +185,8 @@ object formatjsEcma402AbstractStrings {
   inline def boolean_ : boolean_ = "boolean".asInstanceOf[boolean_]
   
   @js.native
-  sealed trait buddhist extends StObject
-  inline def buddhist: buddhist = "buddhist".asInstanceOf[buddhist]
-  
-  @js.native
   sealed trait cardinal extends StObject
   inline def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
-  
-  @js.native
-  sealed trait chinese extends StObject
-  inline def chinese: chinese = "chinese".asInstanceOf[chinese]
   
   @js.native
   sealed trait code
@@ -227,10 +212,6 @@ object formatjsEcma402AbstractStrings {
   inline def compactRounding: compactRounding = "compactRounding".asInstanceOf[compactRounding]
   
   @js.native
-  sealed trait coptic extends StObject
-  inline def coptic: coptic = "coptic".asInstanceOf[coptic]
-  
-  @js.native
   sealed trait currency
     extends StObject
        with NumberFormatOptionsStyle
@@ -240,12 +221,12 @@ object formatjsEcma402AbstractStrings {
   @js.native
   sealed trait day
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with RelativeTimeField
        with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeField
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
+       with RelativeTimeFormatSingularUnit
+       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatSingularUnit
        with TABLE_2
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
        with TABLE_6
@@ -267,13 +248,13 @@ object formatjsEcma402AbstractStrings {
   inline def `day-short`: `day-short` = "day-short".asInstanceOf[`day-short`]
   
   @js.native
-  sealed trait days
+  sealed trait dayPeriod
     extends StObject
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnits
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnits
-  inline def days: days = "days".asInstanceOf[days]
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
+       with TABLE_2
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
+  inline def dayPeriod: dayPeriod = "dayPeriod".asInstanceOf[dayPeriod]
   
   @js.native
   sealed trait decimal
@@ -281,13 +262,6 @@ object formatjsEcma402AbstractStrings {
        with NumberFormatOptionsStyle
        with typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsStyle
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
-  
-  @js.native
-  sealed trait endRange
-    extends StObject
-       with RangePatternType
-       with typings.formatjsEcma402Abstract.typesDateTimeMod.RangePatternType
-  inline def endRange: endRange = "endRange".asInstanceOf[endRange]
   
   @js.native
   sealed trait engineering
@@ -299,19 +273,13 @@ object formatjsEcma402AbstractStrings {
   @js.native
   sealed trait era
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with TABLE_2
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
        with TABLE_6
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_6
   inline def era: era = "era".asInstanceOf[era]
-  
-  @js.native
-  sealed trait ethiopia extends StObject
-  inline def ethiopia: ethiopia = "ethiopia".asInstanceOf[ethiopia]
-  
-  @js.native
-  sealed trait ethiopic extends StObject
-  inline def ethiopic: ethiopic = "ethiopic".asInstanceOf[ethiopic]
   
   @js.native
   sealed trait exceptZero
@@ -356,42 +324,36 @@ object formatjsEcma402AbstractStrings {
   inline def fractionDigits: fractionDigits = "fractionDigits".asInstanceOf[fractionDigits]
   
   @js.native
+  sealed trait fractionalSecond
+    extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
+  inline def fractionalSecond: fractionalSecond = "fractionalSecond".asInstanceOf[fractionalSecond]
+  
+  @js.native
+  sealed trait fractionalSecondDigits
+    extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
+       with TABLE_2
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
+       with TABLE_6
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_6
+  inline def fractionalSecondDigits: fractionalSecondDigits = "fractionalSecondDigits".asInstanceOf[fractionalSecondDigits]
+  
+  @js.native
   sealed trait full extends StObject
   inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait gregory extends StObject
-  inline def gregory: gregory = "gregory".asInstanceOf[gregory]
-  
-  @js.native
-  sealed trait h11 extends StObject
-  inline def h11: h11 = "h11".asInstanceOf[h11]
-  
-  @js.native
-  sealed trait h12 extends StObject
-  inline def h12: h12 = "h12".asInstanceOf[h12]
-  
-  @js.native
-  sealed trait h23 extends StObject
-  inline def h23: h23 = "h23".asInstanceOf[h23]
-  
-  @js.native
-  sealed trait h24 extends StObject
-  inline def h24: h24 = "h24".asInstanceOf[h24]
-  
-  @js.native
-  sealed trait hebrew extends StObject
-  inline def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
-  
-  @js.native
   sealed trait hour
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with RelativeTimeField
        with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeField
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
+       with RelativeTimeFormatSingularUnit
+       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatSingularUnit
        with TABLE_2
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
        with TABLE_6
@@ -413,37 +375,14 @@ object formatjsEcma402AbstractStrings {
   inline def `hour-short`: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
   
   @js.native
-  sealed trait hours
-    extends StObject
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnits
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnits
-  inline def hours: hours = "hours".asInstanceOf[hours]
-  
-  @js.native
-  sealed trait indian extends StObject
-  inline def indian: indian = "indian".asInstanceOf[indian]
-  
-  @js.native
-  sealed trait islamic extends StObject
-  inline def islamic: islamic = "islamic".asInstanceOf[islamic]
-  
-  @js.native
-  sealed trait iso8601 extends StObject
-  inline def iso8601: iso8601 = "iso8601".asInstanceOf[iso8601]
-  
-  @js.native
-  sealed trait japanese extends StObject
-  inline def japanese: japanese = "japanese".asInstanceOf[japanese]
-  
-  @js.native
-  sealed trait language extends StObject
-  inline def language: language = "language".asInstanceOf[language]
+  sealed trait lessPrecision extends StObject
+  inline def lessPrecision: lessPrecision = "lessPrecision".asInstanceOf[lessPrecision]
   
   @js.native
   sealed trait literal
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with _NumberFormatPartTypes
        with typings.formatjsEcma402Abstract.typesNumberMod._NumberFormatPartTypes
   inline def literal: literal = "literal".asInstanceOf[literal]
@@ -456,6 +395,14 @@ object formatjsEcma402AbstractStrings {
        with NumberFormatOptionsUnitDisplay
        with typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsUnitDisplay
   inline def long: long = "long".asInstanceOf[long]
+  
+  @js.native
+  sealed trait longGeneric extends StObject
+  inline def longGeneric: longGeneric = "longGeneric".asInstanceOf[longGeneric]
+  
+  @js.native
+  sealed trait longOffset extends StObject
+  inline def longOffset: longOffset = "longOffset".asInstanceOf[longOffset]
   
   @js.native
   sealed trait lookup
@@ -478,12 +425,12 @@ object formatjsEcma402AbstractStrings {
   @js.native
   sealed trait minute
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with RelativeTimeField
        with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeField
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
+       with RelativeTimeFormatSingularUnit
+       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatSingularUnit
        with TABLE_2
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
        with TABLE_6
@@ -505,23 +452,14 @@ object formatjsEcma402AbstractStrings {
   inline def `minute-short`: `minute-short` = "minute-short".asInstanceOf[`minute-short`]
   
   @js.native
-  sealed trait minutes
-    extends StObject
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnits
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnits
-  inline def minutes: minutes = "minutes".asInstanceOf[minutes]
-  
-  @js.native
   sealed trait month
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with RelativeTimeField
        with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeField
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
+       with RelativeTimeFormatSingularUnit
+       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatSingularUnit
        with TABLE_2
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
        with TABLE_6
@@ -543,13 +481,8 @@ object formatjsEcma402AbstractStrings {
   inline def `month-short`: `month-short` = "month-short".asInstanceOf[`month-short`]
   
   @js.native
-  sealed trait months
-    extends StObject
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnits
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnits
-  inline def months: months = "months".asInstanceOf[months]
+  sealed trait morePrecision extends StObject
+  inline def morePrecision: morePrecision = "morePrecision".asInstanceOf[morePrecision]
   
   @js.native
   sealed trait name
@@ -609,18 +542,12 @@ object formatjsEcma402AbstractStrings {
   inline def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
-  sealed trait persian extends StObject
-  inline def persian: persian = "persian".asInstanceOf[persian]
-  
-  @js.native
   sealed trait quarter
     extends StObject
        with RelativeTimeField
        with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeField
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
+       with RelativeTimeFormatSingularUnit
+       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatSingularUnit
   inline def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
@@ -638,28 +565,11 @@ object formatjsEcma402AbstractStrings {
   inline def `quarter-short`: `quarter-short` = "quarter-short".asInstanceOf[`quarter-short`]
   
   @js.native
-  sealed trait quarters
-    extends StObject
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnits
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnits
-  inline def quarters: quarters = "quarters".asInstanceOf[quarters]
-  
-  @js.native
-  sealed trait region extends StObject
-  inline def region: region = "region".asInstanceOf[region]
-  
-  @js.native
   sealed trait relatedYear
     extends StObject
-       with _IntlDateTimeFormatPartType
-       with typings.formatjsEcma402Abstract.typesDateTimeMod._IntlDateTimeFormatPartType
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
   inline def relatedYear: relatedYear = "relatedYear".asInstanceOf[relatedYear]
-  
-  @js.native
-  sealed trait roc extends StObject
-  inline def roc: roc = "roc".asInstanceOf[roc]
   
   @js.native
   sealed trait scientific
@@ -669,18 +579,14 @@ object formatjsEcma402AbstractStrings {
   inline def scientific: scientific = "scientific".asInstanceOf[scientific]
   
   @js.native
-  sealed trait script extends StObject
-  inline def script: script = "script".asInstanceOf[script]
-  
-  @js.native
   sealed trait second
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with RelativeTimeField
        with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeField
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
+       with RelativeTimeFormatSingularUnit
+       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatSingularUnit
        with TABLE_2
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
        with TABLE_6
@@ -702,22 +608,6 @@ object formatjsEcma402AbstractStrings {
   inline def `second-short`: `second-short` = "second-short".asInstanceOf[`second-short`]
   
   @js.native
-  sealed trait seconds
-    extends StObject
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnits
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnits
-  inline def seconds: seconds = "seconds".asInstanceOf[seconds]
-  
-  @js.native
-  sealed trait shared
-    extends StObject
-       with RangePatternType
-       with typings.formatjsEcma402Abstract.typesDateTimeMod.RangePatternType
-  inline def shared: shared = "shared".asInstanceOf[shared]
-  
-  @js.native
   sealed trait short
     extends StObject
        with NumberFormatOptionsCompactDisplay
@@ -725,6 +615,14 @@ object formatjsEcma402AbstractStrings {
        with NumberFormatOptionsUnitDisplay
        with typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsUnitDisplay
   inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
+  sealed trait shortGeneric extends StObject
+  inline def shortGeneric: shortGeneric = "shortGeneric".asInstanceOf[shortGeneric]
+  
+  @js.native
+  sealed trait shortOffset extends StObject
+  inline def shortOffset: shortOffset = "shortOffset".asInstanceOf[shortOffset]
   
   @js.native
   sealed trait significantDigits
@@ -743,15 +641,12 @@ object formatjsEcma402AbstractStrings {
   inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
-  sealed trait startRange
-    extends StObject
-       with RangePatternType
-       with typings.formatjsEcma402Abstract.typesDateTimeMod.RangePatternType
-  inline def startRange: startRange = "startRange".asInstanceOf[startRange]
-  
-  @js.native
   sealed trait string_ extends StObject
   inline def string_ : string_ = "string".asInstanceOf[string_]
+  
+  @js.native
+  sealed trait stripIfInteger extends StObject
+  inline def stripIfInteger: stripIfInteger = "stripIfInteger".asInstanceOf[stripIfInteger]
   
   @js.native
   sealed trait symbol_
@@ -763,6 +658,8 @@ object formatjsEcma402AbstractStrings {
   @js.native
   sealed trait timeZoneName
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with TABLE_6
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_6
   inline def timeZoneName: timeZoneName = "timeZoneName".asInstanceOf[timeZoneName]
@@ -786,8 +683,8 @@ object formatjsEcma402AbstractStrings {
   @js.native
   sealed trait unknown
     extends StObject
-       with _IntlDateTimeFormatPartType
-       with typings.formatjsEcma402Abstract.typesDateTimeMod._IntlDateTimeFormatPartType
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
   inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
@@ -795,10 +692,8 @@ object formatjsEcma402AbstractStrings {
     extends StObject
        with RelativeTimeField
        with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeField
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
+       with RelativeTimeFormatSingularUnit
+       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatSingularUnit
   inline def week: week = "week".asInstanceOf[week]
   
   @js.native
@@ -818,28 +713,21 @@ object formatjsEcma402AbstractStrings {
   @js.native
   sealed trait weekday
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with TABLE_6
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_6
   inline def weekday: weekday = "weekday".asInstanceOf[weekday]
   
   @js.native
-  sealed trait weeks
-    extends StObject
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnits
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnits
-  inline def weeks: weeks = "weeks".asInstanceOf[weeks]
-  
-  @js.native
   sealed trait year
     extends StObject
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
        with RelativeTimeField
        with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeField
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnit
+       with RelativeTimeFormatSingularUnit
+       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatSingularUnit
        with TABLE_2
        with typings.formatjsEcma402Abstract.typesDateTimeMod.TABLE_2
        with TABLE_6
@@ -863,18 +751,9 @@ object formatjsEcma402AbstractStrings {
   @js.native
   sealed trait yearName
     extends StObject
-       with _IntlDateTimeFormatPartType
-       with typings.formatjsEcma402Abstract.typesDateTimeMod._IntlDateTimeFormatPartType
+       with IntlDateTimeFormatPartType
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatPartType
   inline def yearName: yearName = "yearName".asInstanceOf[yearName]
-  
-  @js.native
-  sealed trait years
-    extends StObject
-       with RelativeTimeFormattableUnit
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormattableUnit
-       with RelativeTimeUnits
-       with typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeUnits
-  inline def years: years = "years".asInstanceOf[years]
   
   @js.native
   sealed trait zero

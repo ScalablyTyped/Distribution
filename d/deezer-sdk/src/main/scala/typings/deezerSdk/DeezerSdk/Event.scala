@@ -28,21 +28,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Event extends StObject {
   
+  /**
+    * See: {@link https://developers.deezer.com/sdk/javascript/events | List of events}
+    */
+  def subscribe(
+    event: player_loaded | player_play | player_paused | tracklist_changed,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   @JSName("subscribe")
   def subscribe_currenttrack(event: current_track, callback: js.Function1[/* currentTrackInfo */ Index, Unit]): Unit = js.native
   @JSName("subscribe")
   def subscribe_mutechanged(event: mute_changed, callback: js.Function1[/* mute */ Boolean, Unit]): Unit = js.native
   @JSName("subscribe")
   def subscribe_playerbuffering(event: player_buffering, callback: js.Function1[/* loadedPercentInt */ Double, Unit]): Unit = js.native
-  /**
-    * See: {@link https://developers.deezer.com/sdk/javascript/events | List of events}
-    */
-  @JSName("subscribe")
-  def subscribe_playerloaded(event: player_loaded, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("subscribe")
-  def subscribe_playerpaused(event: player_paused, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("subscribe")
-  def subscribe_playerplay(event: player_play, callback: js.Function0[Unit]): Unit = js.native
   @JSName("subscribe")
   def subscribe_playerposition(
     event: player_position,
@@ -54,8 +52,6 @@ trait Event extends StObject {
   def subscribe_shufflechanged(event: shuffle_changed, callback: js.Function1[/* shuffle */ Boolean, Unit]): Unit = js.native
   @JSName("subscribe")
   def subscribe_trackend(event: track_end, callback: js.Function1[/* trackPosition */ Double, Unit]): Unit = js.native
-  @JSName("subscribe")
-  def subscribe_tracklistchanged(event: tracklist_changed, callback: js.Function0[Unit]): Unit = js.native
   @JSName("subscribe")
   def subscribe_volumechanged(event: volume_changed, callback: js.Function1[/* volumePercentInt */ Double, Unit]): Unit = js.native
 }

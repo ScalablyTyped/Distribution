@@ -4,7 +4,6 @@ import typings.angularBootstrapCalendar.anon.Angular
 import typings.angularBootstrapCalendar.anon.CalendarDayView
 import typings.angularBootstrapCalendar.anon.WeekNumber
 import typings.moment.momentMod.Moment
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +60,7 @@ object mod {
           
           inline def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
           
-          inline def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+          inline def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value*))
           
           inline def setInMonth(value: Boolean): Self = StObject.set(x, "inMonth", value.asInstanceOf[js.Any])
           
@@ -213,7 +212,7 @@ object mod {
         /**
           * Optional - a javascript date object for when the event ends
           */
-        var endsAt: js.UndefOr[Date] = js.undefined
+        var endsAt: js.UndefOr[js.Date] = js.undefined
         
         /**
           * If set to false then will not count towards the badge total amount on the month and year view
@@ -233,7 +232,7 @@ object mod {
         /**
           * A javascript date object for when the event starts
           */
-        var startsAt: Date
+        var startsAt: js.Date
         
         /**
           * The title of the event
@@ -247,7 +246,7 @@ object mod {
       }
       object IEvent {
         
-        inline def apply(startsAt: Date, title: String): IEvent = {
+        inline def apply(startsAt: js.Date, title: String): IEvent = {
           val __obj = js.Dynamic.literal(startsAt = startsAt.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
           __obj.asInstanceOf[IEvent]
         }
@@ -258,7 +257,7 @@ object mod {
           
           inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
           
-          inline def setActionsVarargs(value: IEventAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+          inline def setActionsVarargs(value: IEventAction*): Self = StObject.set(x, "actions", js.Array(value*))
           
           inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
           
@@ -284,7 +283,7 @@ object mod {
           
           inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
           
-          inline def setEndsAt(value: Date): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
+          inline def setEndsAt(value: js.Date): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
           
           inline def setEndsAtUndefined: Self = StObject.set(x, "endsAt", js.undefined)
           
@@ -300,7 +299,7 @@ object mod {
           
           inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
           
-          inline def setStartsAt(value: Date): Self = StObject.set(x, "startsAt", value.asInstanceOf[js.Any])
+          inline def setStartsAt(value: js.Date): Self = StObject.set(x, "startsAt", value.asInstanceOf[js.Any])
           
           inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
@@ -326,11 +325,11 @@ object mod {
           * The action that occurs when it's clicked
           * @param args - the IEvent whose action was clicked
           */
-        def onClick(args: js.Any): Unit
+        def onClick(args: Any): Unit
       }
       object IEventAction {
         
-        inline def apply(label: String, onClick: js.Any => Unit): IEventAction = {
+        inline def apply(label: String, onClick: Any => Unit): IEventAction = {
           val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
           __obj.asInstanceOf[IEventAction]
         }
@@ -343,7 +342,7 @@ object mod {
           
           inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
           
-          inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+          inline def setOnClick(value: Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
         }
       }
       
@@ -434,14 +433,14 @@ object mod {
         
         type IOnEventTimesChanged = js.Function3[
                 /* calendarEvent */ IEvent, 
-                /* calendarNewEventStart */ Date, 
-                /* calendarNewEventEnd */ Date, 
+                /* calendarNewEventStart */ js.Date, 
+                /* calendarNewEventEnd */ js.Date, 
                 Unit
               ]
         
-        type IOnTimespanClick = js.Function2[/* calendarDate */ Date, /* calendarCell */ ICalendarCell, Unit]
+        type IOnTimespanClick = js.Function2[/* calendarDate */ js.Date, /* calendarCell */ ICalendarCell, Unit]
         
-        type IOnViewChangeClick = js.Function2[/* calendarDate */ Date, /* calendarNextView */ String, Boolean]
+        type IOnViewChangeClick = js.Function2[/* calendarDate */ js.Date, /* calendarNextView */ String, Boolean]
       }
     }
   }

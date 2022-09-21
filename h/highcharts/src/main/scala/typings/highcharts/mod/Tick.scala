@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "Tick")
 @js.native
-class Tick protected () extends StObject {
+open class Tick protected () extends StObject {
   /**
     * The Tick class.
     *

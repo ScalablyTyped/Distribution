@@ -124,7 +124,7 @@ object IObjectType {
     
     inline def setIcon(value: js.Array[Double]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    inline def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value :_*))
+    inline def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value*))
     
     inline def setIsAddingAllowedForUser(value: ISessionInfo => Boolean): Self = StObject.set(x, "IsAddingAllowedForUser", js.Any.fromFunction1(value))
     

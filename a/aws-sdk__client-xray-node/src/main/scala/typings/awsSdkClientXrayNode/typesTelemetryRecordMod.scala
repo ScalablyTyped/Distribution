@@ -2,7 +2,6 @@ package typings.awsSdkClientXrayNode
 
 import typings.awsSdkClientXrayNode.typesBackendConnectionErrorsMod.BackendConnectionErrors
 import typings.awsSdkClientXrayNode.typesBackendConnectionErrorsMod.UnmarshalledBackendConnectionErrors
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,11 +40,11 @@ object typesTelemetryRecordMod {
     /**
       * <p/>
       */
-    var Timestamp: Date | String | Double
+    var Timestamp: js.Date | String | Double
   }
   object TelemetryRecord {
     
-    inline def apply(Timestamp: Date | String | Double): TelemetryRecord = {
+    inline def apply(Timestamp: js.Date | String | Double): TelemetryRecord = {
       val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[TelemetryRecord]
     }
@@ -72,7 +71,7 @@ object typesTelemetryRecordMod {
       
       inline def setSegmentsSpilloverCountUndefined: Self = StObject.set(x, "SegmentsSpilloverCount", js.undefined)
       
-      inline def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,11 +89,11 @@ object typesTelemetryRecordMod {
       * <p/>
       */
     @JSName("Timestamp")
-    var Timestamp_UnmarshalledTelemetryRecord: Date
+    var Timestamp_UnmarshalledTelemetryRecord: js.Date
   }
   object UnmarshalledTelemetryRecord {
     
-    inline def apply(Timestamp: Date): UnmarshalledTelemetryRecord = {
+    inline def apply(Timestamp: js.Date): UnmarshalledTelemetryRecord = {
       val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledTelemetryRecord]
     }
@@ -105,7 +104,7 @@ object typesTelemetryRecordMod {
       
       inline def setBackendConnectionErrorsUndefined: Self = StObject.set(x, "BackendConnectionErrors", js.undefined)
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "PBRMetallicRoughnessBlock")
 @js.native
-class PBRMetallicRoughnessBlock protected ()
+open class PBRMetallicRoughnessBlock protected ()
   extends typings.babylonjs.indexMod.PBRMetallicRoughnessBlock {
   /**
     * Create a new ReflectionBlock

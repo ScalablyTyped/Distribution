@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.UpdateList")
 @js.native
-class UpdateList protected ()
+open class UpdateList protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.UpdateList {
   /**

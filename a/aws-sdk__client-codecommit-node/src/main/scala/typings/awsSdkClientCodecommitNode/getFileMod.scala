@@ -8,5 +8,5 @@ object getFileMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetFile", "GetFile")
   @js.native
-  val GetFile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetFile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

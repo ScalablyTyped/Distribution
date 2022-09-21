@@ -9,7 +9,7 @@ object win32Mod {
   
   @JSImport("devcert/dist/platforms/win32", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with WindowsPlatform
   
@@ -18,10 +18,10 @@ object win32Mod {
     extends StObject
        with Platform {
     
-    /* private */ var HOST_FILE_PATH: js.Any = js.native
+    /* private */ var HOST_FILE_PATH: Any = js.native
     
-    /* private */ var decrypt: js.Any = js.native
+    /* private */ var decrypt: Any = js.native
     
-    /* private */ var encrypt: js.Any = js.native
+    /* private */ var encrypt: Any = js.native
   }
 }

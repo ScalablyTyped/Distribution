@@ -8,7 +8,7 @@ object hexMod {
   
   @JSImport("rot-js/lib/display/hex", JSImport.Default)
   @js.native
-  class default () extends Hex
+  open class default () extends Hex
   
   @js.native
   trait Hex

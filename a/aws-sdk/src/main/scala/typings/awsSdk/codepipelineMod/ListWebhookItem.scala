@@ -29,7 +29,7 @@ trait ListWebhookItem extends StObject {
   /**
     * The date and time a webhook was last successfully triggered, in timestamp format.
     */
-  var lastTriggered: js.UndefOr[WebhookLastTriggered] = js.undefined
+  var lastTriggered: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies the tags applied to the webhook.
@@ -64,7 +64,7 @@ object ListWebhookItem {
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    inline def setLastTriggered(value: WebhookLastTriggered): Self = StObject.set(x, "lastTriggered", value.asInstanceOf[js.Any])
+    inline def setLastTriggered(value: js.Date): Self = StObject.set(x, "lastTriggered", value.asInstanceOf[js.Any])
     
     inline def setLastTriggeredUndefined: Self = StObject.set(x, "lastTriggered", js.undefined)
     
@@ -72,7 +72,7 @@ object ListWebhookItem {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUrl(value: WebhookUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

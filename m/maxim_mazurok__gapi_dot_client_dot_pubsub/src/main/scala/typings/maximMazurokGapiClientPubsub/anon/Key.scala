@@ -28,20 +28,27 @@ trait Key extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Maximum number of topics to return. */
-  var pageSize: js.UndefOr[Double] = js.undefined
-  
-  /** The value returned by the last `ListTopicsResponse`; indicates that this is a continuation of a prior `ListTopics` call, and that the system should return the next page of data. */
-  var pageToken: js.UndefOr[String] = js.undefined
+  /**
+    * Optional. The maximum policy version that will be used to format the policy. Valid values are 0, 1, and 3. Requests specifying an invalid value will be rejected. Requests for
+    * policies with any conditional role bindings must specify version 3. Policies with no conditional role bindings may specify any valid value or leave the field unset. The policy
+    * in the response might use the policy version that you specified, or it might use a lower policy version. For example, if you specify version 3, but the policy has no conditional
+    * role bindings, the response uses version 1. To learn which resources support conditions in their IAM policies, see the [IAM
+    * documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
+    */
+  @JSName("options.requestedPolicyVersion")
+  var optionsDotrequestedPolicyVersion: js.UndefOr[Double] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Required. The name of the project in which to list topics. Format is `projects/{project-id}`. */
-  var project: String
-  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /**
+    * REQUIRED: The resource for which the policy is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this
+    * field.
+    */
+  var resource: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +58,8 @@ trait Key extends StObject {
 }
 object Key {
   
-  inline def apply(project: String): Key = {
-    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
+  inline def apply(resource: String): Key = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -86,23 +93,19 @@ object Key {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setOptionsDotrequestedPolicyVersion(value: Double): Self = StObject.set(x, "options.requestedPolicyVersion", value.asInstanceOf[js.Any])
     
-    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-    
-    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
-    
-    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setOptionsDotrequestedPolicyVersionUndefined: Self = StObject.set(x, "options.requestedPolicyVersion", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

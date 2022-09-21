@@ -15,7 +15,7 @@ object canvasMod {
   
   @JSImport("typesettable/build/src/contexts/canvas", "CanvasContext")
   @js.native
-  class CanvasContext protected ()
+  open class CanvasContext protected ()
     extends StObject
        with ITypesetterContext[CanvasRenderingContext2D] {
     def this(ctx: CanvasRenderingContext2D) = this()
@@ -23,7 +23,7 @@ object canvasMod {
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Unit, style: ICanvasFontStyle) = this()
     
-    /* private */ def createCanvasPen(ctx: js.Any): js.Any = js.native
+    /* private */ def createCanvasPen(ctx: Any): Any = js.native
     
     /* CompleteClass */
     override def createPen(text: String, transform: ITransform): IPen = js.native
@@ -39,11 +39,11 @@ object canvasMod {
     @JSName("createRuler")
     var createRuler_Original: IRulerFactory = js.native
     
-    /* private */ var ctx: js.Any = js.native
+    /* private */ var ctx: Any = js.native
     
-    /* private */ var lineHeight: js.Any = js.native
+    /* private */ var lineHeight: Any = js.native
     
-    /* private */ var style: js.Any = js.native
+    /* private */ var style: Any = js.native
   }
   
   trait ICanvasFontStyle extends StObject {

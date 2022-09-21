@@ -10,15 +10,12 @@ AngularJS provider, filter and directive for i18next (i18next by Jan Mühlemann)
 | ------------------ | :-------------: |
 | Full name          | ng-i18next |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 196574 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 22269.666666666668 |
+| # stars            | 160.0 |
 
 ## Links
-- [Homepage](https://github.com/i18next/ng-i18next#readme)
-- [Bugs](https://github.com/i18next/ng-i18next/issues)
-- [Repository](https://github.com/i18next/ng-i18next)
 - [Npm](https://www.npmjs.com/package/ng-i18next)
     
 

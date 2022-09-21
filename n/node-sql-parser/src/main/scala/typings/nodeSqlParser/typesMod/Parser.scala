@@ -1,13 +1,12 @@
 package typings.nodeSqlParser.typesMod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-sql-parser/types", "Parser")
 @js.native
-class Parser () extends StObject {
+open class Parser () extends StObject {
   
   def astify(sql: String): js.Array[AST] | AST = js.native
   def astify(sql: String, opt: Option): js.Array[AST] | AST = js.native
@@ -26,6 +25,6 @@ class Parser () extends StObject {
   def tableList(sql: String): js.Array[String] = js.native
   def tableList(sql: String, opt: Option): js.Array[String] = js.native
   
-  def whiteListCheck(sql: String, whiteList: js.Array[String]): js.UndefOr[Error] = js.native
-  def whiteListCheck(sql: String, whiteList: js.Array[String], opt: Option): js.UndefOr[Error] = js.native
+  def whiteListCheck(sql: String, whiteList: js.Array[String]): js.UndefOr[js.Error] = js.native
+  def whiteListCheck(sql: String, whiteList: js.Array[String], opt: Option): js.UndefOr[js.Error] = js.native
 }

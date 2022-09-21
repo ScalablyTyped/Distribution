@@ -11,13 +11,13 @@ trait GoogleCloudRecommenderV1MarkRecommendationFailedRequest extends StObject {
   var etag: js.UndefOr[String] = js.undefined
   
   /**
-    * State properties to include with this state. Overwrites any existing `state_metadata`. Keys must match the regex /^a-z0-9{0,62}$/. Values must match the regex
-    * /^[a-zA-Z0-9_./-]{0,255}$/.
+    * State properties to include with this state. Overwrites any existing `state_metadata`. Keys must match the regex `/^a-z0-9{0,62}$/`. Values must match the regex
+    * `/^[a-zA-Z0-9_./-]{0,255}$/`.
     */
   var stateMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkRecommendationFailedRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkRecommendationFailedRequest & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudRecommenderV1MarkRecommendationFailedRequest {
@@ -36,7 +36,7 @@ object GoogleCloudRecommenderV1MarkRecommendationFailedRequest {
     inline def setStateMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkRecommendationFailedRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkRecommendationFailedRequest & TopLevel[Any]
     ): Self = StObject.set(x, "stateMetadata", value.asInstanceOf[js.Any])
     
     inline def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)

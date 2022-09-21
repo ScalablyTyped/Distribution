@@ -2,13 +2,7 @@ package typings.krakenJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Express
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
-import typings.qs.mod.ParsedQs
-import typings.std.Error
+import typings.expressServeStaticCore.mod.Application
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,14 +22,7 @@ object mod {
   trait Kraken
     extends typings.expressServeStaticCore.mod.Express {
     
-    /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    def kraken(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
-    def kraken(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
-    def kraken(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
-    def kraken(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def kraken(): Application = js.native
     @JSName("kraken")
     var kraken_Original: Kraken = js.native
   }
@@ -52,9 +39,9 @@ object mod {
     
     var onconfig: js.UndefOr[
         js.Function2[
-          /* config */ Map[String, js.Any], 
-          /* next */ js.Function2[/* err */ Error | Null, /* config */ js.UndefOr[js.Object], js.Any], 
-          js.Any
+          /* config */ Map[String, Any], 
+          /* next */ js.Function2[/* err */ js.Error | Null, /* config */ js.UndefOr[js.Object], Any], 
+          Any
         ]
       ] = js.undefined
     
@@ -62,7 +49,7 @@ object mod {
     
     var startupHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var uncaughtException: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
+    var uncaughtException: js.UndefOr[js.Function1[/* err */ js.Error, Any]] = js.undefined
   }
   object Options {
     
@@ -90,7 +77,7 @@ object mod {
       inline def setMountpathUndefined: Self = StObject.set(x, "mountpath", js.undefined)
       
       inline def setOnconfig(
-        value: (/* config */ Map[String, js.Any], /* next */ js.Function2[/* err */ Error | Null, /* config */ js.UndefOr[js.Object], js.Any]) => js.Any
+        value: (/* config */ Map[String, Any], /* next */ js.Function2[/* err */ js.Error | Null, /* config */ js.UndefOr[js.Object], Any]) => Any
       ): Self = StObject.set(x, "onconfig", js.Any.fromFunction2(value))
       
       inline def setOnconfigUndefined: Self = StObject.set(x, "onconfig", js.undefined)
@@ -103,7 +90,7 @@ object mod {
       
       inline def setStartupHeadersUndefined: Self = StObject.set(x, "startupHeaders", js.undefined)
       
-      inline def setUncaughtException(value: /* err */ Error => js.Any): Self = StObject.set(x, "uncaughtException", js.Any.fromFunction1(value))
+      inline def setUncaughtException(value: /* err */ js.Error => Any): Self = StObject.set(x, "uncaughtException", js.Any.fromFunction1(value))
       
       inline def setUncaughtExceptionUndefined: Self = StObject.set(x, "uncaughtException", js.undefined)
     }

@@ -9,10 +9,10 @@ object faMod extends Shortcut {
   
   @JSImport("@angular/common/locales/extra/fa", JSImport.Default)
   @js.native
-  val default: js.Array[js.UndefOr[js.Array[js.UndefOr[js.Array[String]]]]] = js.native
+  val default: js.Array[js.Array[js.UndefOr[js.Array[String]]]] = js.native
   
-  type _To = js.Array[js.UndefOr[js.Array[js.UndefOr[js.Array[String]]]]]
+  type _To = js.Array[js.Array[js.UndefOr[js.Array[String]]]]
   
   /* This means you don't have to write `default`, but can instead just say `faMod.foo` */
-  override def _to: js.Array[js.UndefOr[js.Array[js.UndefOr[js.Array[String]]]]] = default
+  override def _to: js.Array[js.Array[js.UndefOr[js.Array[String]]]] = default
 }

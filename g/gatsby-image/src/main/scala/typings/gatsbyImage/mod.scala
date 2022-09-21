@@ -13,8 +13,7 @@ object mod {
   
   @JSImport("gatsby-image", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[GatsbyImageProps, js.Any, js.Any]
+  open class default () extends Component[GatsbyImageProps, Any, Any]
   
   trait FixedObject extends StObject {
     
@@ -134,7 +133,7 @@ object mod {
     }
   }
   
-  type GatsbyImage = Component[GatsbyImageProps, js.Any, js.Any]
+  type GatsbyImage = Component[GatsbyImageProps, Any, Any]
   
   trait GatsbyImageFixedProps
     extends StObject
@@ -154,7 +153,7 @@ object mod {
       
       inline def setFixed(value: FixedObject | js.Array[FixedObject]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      inline def setFixedVarargs(value: FixedObject*): Self = StObject.set(x, "fixed", js.Array(value :_*))
+      inline def setFixedVarargs(value: FixedObject*): Self = StObject.set(x, "fixed", js.Array(value*))
     }
   }
   
@@ -176,7 +175,7 @@ object mod {
       
       inline def setFluid(value: FluidObject | js.Array[FluidObject]): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
-      inline def setFluidVarargs(value: FluidObject*): Self = StObject.set(x, "fluid", js.Array(value :_*))
+      inline def setFluidVarargs(value: FluidObject*): Self = StObject.set(x, "fluid", js.Array(value*))
     }
   }
   
@@ -206,7 +205,7 @@ object mod {
     
     var loading: js.UndefOr[auto | `lazy` | eager] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
     var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -283,7 +282,7 @@ object mod {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setOnError(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* event */ Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

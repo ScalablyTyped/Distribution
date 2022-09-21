@@ -1,238 +1,149 @@
 package typings.reactInstantsearchCore.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
+import typings.react.mod.FunctionComponent
+import typings.reactInstantsearchCore.anon.CreateURL
+import typings.reactInstantsearchCore.anon.OmitConnectHitInsightsPro
+import typings.reactInstantsearchCore.anon.PartialCurrentRefinements
+import typings.reactInstantsearchCore.anon.PartialDynamicWidgetsProv
+import typings.reactInstantsearchCore.anon.PartialInsightsClientPayl
+import typings.reactInstantsearchCore.anon.PartialMenuProvided
+import typings.reactInstantsearchCore.anon.PartialNumericMenuProvide
+import typings.reactInstantsearchCore.anon.PartialRefinementListProv
+import typings.reactInstantsearchCore.anon.PartialSearchBoxProvided
+import typings.reactInstantsearchCore.anon.PartialStateResultsProvid
+import typings.reactInstantsearchCore.anon.PartialStatsProvided
+import typings.reactInstantsearchCore.mod.^
+import typings.std.Exclude
+import typings.std.Partial
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def EXPERIMENTALConnectConfigureRelatedItems(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("EXPERIMENTAL_connectConfigureRelatedItems")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def EXPERIMENTALConnectConfigureRelatedItems(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("EXPERIMENTAL_connectConfigureRelatedItems")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
 inline def connectAutoComplete[TDoc](
-  stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.AutocompleteProvided[TDoc]]
-): typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.AutocompleteExposed, 
-typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectAutoComplete")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.AutocompleteExposed, 
-typings.react.mod.ComponentState]]
-inline def connectAutoComplete[Props /* <: typings.reactInstantsearchCore.mod.AutocompleteProvided[TDoc] */, TDoc](Composed: typings.react.mod.ComponentType[Props]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-Props, 
-typings.reactInstantsearchCore.mod.AutocompleteProvided[TDoc], 
-typings.reactInstantsearchCore.mod.AutocompleteExposed] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectAutoComplete")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-Props, 
-typings.reactInstantsearchCore.mod.AutocompleteProvided[TDoc], 
-typings.reactInstantsearchCore.mod.AutocompleteExposed]]
+  // tslint:disable-next-line:no-unnecessary-generics
+stateless: FunctionComponent[AutocompleteProvided[TDoc]]
+): ComponentClass[AutocompleteExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectAutoComplete")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[AutocompleteExposed, ComponentState]]
+inline def connectAutoComplete[Props /* <: AutocompleteProvided[TDoc] */, TDoc](Composed: ComponentType[Props]): ConnectedComponentClass[Props, AutocompleteProvided[TDoc], AutocompleteExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectAutoComplete")(Composed.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[Props, AutocompleteProvided[TDoc], AutocompleteExposed]]
 
-inline def connectBreadcrumb(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectBreadcrumb")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectBreadcrumb(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectBreadcrumb")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectConfigure(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectConfigure")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectConfigure(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectConfigure")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectCurrentRefinements(
-  stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.CurrentRefinementsProvided]
-): typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.CurrentRefinementsExposed, 
-typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectCurrentRefinements")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.CurrentRefinementsExposed, 
-typings.react.mod.ComponentState]]
-inline def connectCurrentRefinements[TProps /* <: typings.reactInstantsearchCore.anon.PartialCurrentRefinements */](Composed: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.CurrentRefinementsProvided, 
-typings.reactInstantsearchCore.mod.CurrentRefinementsExposed] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectCurrentRefinements")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.CurrentRefinementsProvided, 
-typings.reactInstantsearchCore.mod.CurrentRefinementsExposed]]
+inline def connectCurrentRefinements(stateless: FunctionComponent[CurrentRefinementsProvided]): ComponentClass[CurrentRefinementsExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectCurrentRefinements")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[CurrentRefinementsExposed, ComponentState]]
+inline def connectCurrentRefinements[TProps /* <: PartialCurrentRefinements */](Composed: ComponentType[TProps]): ConnectedComponentClass[TProps, CurrentRefinementsProvided, CurrentRefinementsExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectCurrentRefinements")(Composed.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, CurrentRefinementsProvided, CurrentRefinementsExposed]]
 
-inline def connectGeoSearch(
-  stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.GeoSearchProvided[js.Any]]
-): typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.GeoSearchExposed, 
-typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectGeoSearch")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.GeoSearchExposed, 
-typings.react.mod.ComponentState]]
-inline def connectGeoSearch[TProps /* <: typings.std.Partial[typings.reactInstantsearchCore.mod.GeoSearchProvided[THit]] */, THit](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.GeoSearchProvided[THit], 
-typings.reactInstantsearchCore.mod.GeoSearchExposed] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectGeoSearch")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.GeoSearchProvided[THit], 
-typings.reactInstantsearchCore.mod.GeoSearchExposed]]
+inline def connectDynamicWidgets(stateless: FunctionComponent[DynamicWidgetsProvided]): ComponentClass[DynamicWidgetsExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectDynamicWidgets")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[DynamicWidgetsExposed, ComponentState]]
+inline def connectDynamicWidgets[TProps /* <: PartialDynamicWidgetsProv */](Composed: ComponentType[TProps]): ConnectedComponentClass[TProps, DynamicWidgetsProvided, DynamicWidgetsExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectDynamicWidgets")(Composed.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, DynamicWidgetsProvided, DynamicWidgetsExposed]]
 
-inline def connectHierarchicalMenu(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectHierarchicalMenu")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectGeoSearch(stateless: FunctionComponent[GeoSearchProvided[Any]]): ComponentClass[GeoSearchExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectGeoSearch")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[GeoSearchExposed, ComponentState]]
+inline def connectGeoSearch[TProps /* <: Partial[GeoSearchProvided[THit]] */, THit](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, GeoSearchProvided[THit], GeoSearchExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectGeoSearch")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, GeoSearchProvided[THit], GeoSearchExposed]]
 
-inline def connectHighlight[TDoc](
-  stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.HighlightProps[TDoc]]
-): typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.HighlightPassedThru[TDoc], 
-typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectHighlight")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.HighlightPassedThru[TDoc], 
-typings.react.mod.ComponentState]]
-inline def connectHighlight[TProps /* <: typings.std.Partial[typings.reactInstantsearchCore.mod.HighlightProps[TDoc]] */, TDoc](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[TProps, typings.reactInstantsearchCore.mod.HighlightProvided[TDoc], js.Object] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectHighlight")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[TProps, typings.reactInstantsearchCore.mod.HighlightProvided[TDoc], js.Object]]
+inline def connectHierarchicalMenu(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHierarchicalMenu")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectHitInsights(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectHitInsights")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectHighlight[TDoc](stateless: FunctionComponent[HighlightProps[TDoc]]): ComponentClass[HighlightPassedThru[TDoc], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHighlight")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[HighlightPassedThru[TDoc], ComponentState]]
+inline def connectHighlight[TProps /* <: Partial[HighlightProps[TDoc]] */, TDoc](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, HighlightProvided[TDoc], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHighlight")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, HighlightProvided[TDoc], js.Object]]
+
+inline def connectHitInsights(insightsClient: InsightsClient): js.Function1[/* hitComponent */ ComponentType[Any], ComponentType[OmitConnectHitInsightsPro]] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHitInsights")(insightsClient.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hitComponent */ ComponentType[Any], ComponentType[OmitConnectHitInsightsPro]]]
 
 inline def connectHits[THit](
-  stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.HitsProvided[THit]]
-): typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectHits")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState]]
-inline def connectHits[TProps /* <: typings.reactInstantsearchCore.mod.HitsProvided[THit] */, THit](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[TProps, typings.reactInstantsearchCore.mod.HitsProvided[THit], js.Object] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectHits")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[TProps, typings.reactInstantsearchCore.mod.HitsProvided[THit], js.Object]]
+  // tslint:disable-next-line:no-unnecessary-generics
+stateless: FunctionComponent[HitsProvided[THit]]
+): ComponentClass[js.Object, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHits")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Object, ComponentState]]
+inline def connectHits[TProps /* <: HitsProvided[THit] */, THit](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, HitsProvided[THit], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHits")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, HitsProvided[THit], js.Object]]
 
-inline def connectHitsPerPage(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectHitsPerPage")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectHitsPerPage(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHitsPerPage")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectInfiniteHits(
-  Composed: typings.react.mod.ComponentType[typings.reactInstantsearchCore.mod.InfiniteHitsProvided[js.Any]]
-): typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectInfiniteHits")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState]]
+inline def connectInfiniteHits(Composed: ComponentType[InfiniteHitsProvided[Any]]): ComponentClass[js.Object, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectInfiniteHits")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Object, ComponentState]]
 
-inline def connectInfiniteHits_TProps_PartialInfiniteHitsProvidedTHitTHit_ConnectedComponentClass[TProps /* <: typings.std.Partial[typings.reactInstantsearchCore.mod.InfiniteHitsProvided[THit]] */, THit](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[TProps, typings.reactInstantsearchCore.mod.InfiniteHitsProvided[THit], js.Object] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectInfiniteHits")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[TProps, typings.reactInstantsearchCore.mod.InfiniteHitsProvided[THit], js.Object]]
+inline def connectInfiniteHits_TProps_PartialInfiniteHitsProvidedTHitTHit_ConnectedComponentClass[TProps /* <: Partial[InfiniteHitsProvided[THit]] */, THit](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, InfiniteHitsProvided[THit], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectInfiniteHits")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, InfiniteHitsProvided[THit], js.Object]]
 
-inline def connectMenu(stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.MenuProvided]): typings.react.mod.ComponentClass[typings.reactInstantsearchCore.mod.MenuExposed, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectMenu")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[typings.reactInstantsearchCore.mod.MenuExposed, typings.react.mod.ComponentState]]
-inline def connectMenu[TProps /* <: typings.reactInstantsearchCore.anon.PartialMenuProvided */](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.MenuProvided, 
-typings.reactInstantsearchCore.mod.MenuExposed] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectMenu")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.MenuProvided, 
-typings.reactInstantsearchCore.mod.MenuExposed]]
+inline def connectMenu(stateless: FunctionComponent[MenuProvided]): ComponentClass[MenuExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectMenu")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[MenuExposed, ComponentState]]
+inline def connectMenu[TProps /* <: PartialMenuProvided */](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, MenuProvided, MenuExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectMenu")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, MenuProvided, MenuExposed]]
 
-inline def connectNumericMenu(
-  stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.NumericMenuProvided]
-): typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.NumericMenuExposed, 
-typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectNumericMenu")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.NumericMenuExposed, 
-typings.react.mod.ComponentState]]
-inline def connectNumericMenu[TProps /* <: typings.reactInstantsearchCore.anon.PartialNumericMenuProvide */](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.NumericMenuProvided, 
-typings.reactInstantsearchCore.mod.NumericMenuExposed] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectNumericMenu")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.NumericMenuProvided, 
-typings.reactInstantsearchCore.mod.NumericMenuExposed]]
+inline def connectNumericMenu(stateless: FunctionComponent[NumericMenuProvided]): ComponentClass[NumericMenuExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectNumericMenu")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[NumericMenuExposed, ComponentState]]
+inline def connectNumericMenu[TProps /* <: PartialNumericMenuProvide */](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, NumericMenuProvided, NumericMenuExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectNumericMenu")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, NumericMenuProvided, NumericMenuExposed]]
 
-inline def connectPagination(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectPagination")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectPagination(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectPagination")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectPoweredBy(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectPoweredBy")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectPoweredBy(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectPoweredBy")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectQueryRules(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectQueryRules")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectQueryRules(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectQueryRules")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectRange(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectRange")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectRange(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectRange")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectRefinementList(
-  stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.RefinementListProvided]
-): typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.RefinementListExposed, 
-typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectRefinementList")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.RefinementListExposed, 
-typings.react.mod.ComponentState]]
-inline def connectRefinementList[TProps /* <: typings.reactInstantsearchCore.anon.PartialRefinementListProv */](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.RefinementListProvided, 
-typings.reactInstantsearchCore.mod.RefinementListExposed] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectRefinementList")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.RefinementListProvided, 
-typings.reactInstantsearchCore.mod.RefinementListExposed]]
+inline def connectRefinementList(stateless: FunctionComponent[RefinementListProvided]): ComponentClass[RefinementListExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectRefinementList")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[RefinementListExposed, ComponentState]]
+inline def connectRefinementList[TProps /* <: PartialRefinementListProv */](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, RefinementListProvided, RefinementListExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectRefinementList")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, RefinementListProvided, RefinementListExposed]]
 
-inline def connectScrollTo(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectScrollTo")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectRelevantSort(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectRelevantSort")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectSearchBox(
-  stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.SearchBoxProvided]
-): typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.SearchBoxExposed, 
-typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectSearchBox")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[
-typings.reactInstantsearchCore.mod.SearchBoxExposed, 
-typings.react.mod.ComponentState]]
-inline def connectSearchBox[TProps /* <: typings.reactInstantsearchCore.anon.PartialSearchBoxProvided */](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.SearchBoxProvided, 
-typings.reactInstantsearchCore.mod.SearchBoxExposed] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectSearchBox")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.SearchBoxProvided, 
-typings.reactInstantsearchCore.mod.SearchBoxExposed]]
+inline def connectScrollTo(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectScrollTo")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectSortBy(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectSortBy")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectSearchBox(stateless: FunctionComponent[SearchBoxProvided]): ComponentClass[SearchBoxExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectSearchBox")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[SearchBoxExposed, ComponentState]]
+inline def connectSearchBox[TProps /* <: PartialSearchBoxProvided */](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, SearchBoxProvided, SearchBoxExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectSearchBox")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, SearchBoxProvided, SearchBoxExposed]]
 
-inline def connectStateResults(
-  stateless: typings.react.mod.FunctionComponent[
-  typings.reactInstantsearchCore.mod.StateResultsProvided[typings.reactInstantsearchCore.mod.BasicDoc]
-]
-): typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectStateResults")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState]]
-inline def connectStateResults[TProps /* <: typings.reactInstantsearchCore.anon.PartialStateResultsProvid */](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.StateResultsProvided[typings.reactInstantsearchCore.mod.BasicDoc], 
-js.Object] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectStateResults")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-TProps, 
-typings.reactInstantsearchCore.mod.StateResultsProvided[typings.reactInstantsearchCore.mod.BasicDoc], 
-js.Object]]
+inline def connectSortBy(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectSortBy")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def connectStats(stateless: typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.StatsProvided]): typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectStats")(stateless.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState]]
-inline def connectStats[TProps /* <: typings.reactInstantsearchCore.anon.PartialStatsProvided */](ctor: typings.react.mod.ComponentType[TProps]): typings.reactInstantsearchCore.mod.ConnectedComponentClass[TProps, typings.reactInstantsearchCore.mod.StatsProvided, js.Object] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectStats")(ctor.asInstanceOf[js.Any]).asInstanceOf[typings.reactInstantsearchCore.mod.ConnectedComponentClass[TProps, typings.reactInstantsearchCore.mod.StatsProvided, js.Object]]
+inline def connectStateResults(stateless: FunctionComponent[StateResultsProvided[BasicDoc]]): ComponentClass[js.Object, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectStateResults")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Object, ComponentState]]
+inline def connectStateResults[TProps /* <: PartialStateResultsProvid */](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, StateResultsProvided[BasicDoc], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectStateResults")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, StateResultsProvided[BasicDoc], js.Object]]
 
-inline def connectToggleRefinement(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectToggleRefinement")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectStats(stateless: FunctionComponent[StatsProvided]): ComponentClass[js.Object, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectStats")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Object, ComponentState]]
+inline def connectStats[TProps /* <: PartialStatsProvided */](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, StatsProvided, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectStats")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, StatsProvided, js.Object]]
 
-inline def connectVoiceSearch(Composed: typings.react.mod.ComponentType[js.Any]): typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectVoiceSearch")(Composed.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[js.Any, typings.react.mod.ComponentState]]
+inline def connectToggleRefinement(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectToggleRefinement")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def createConnector[TProvided, TExposed](connectorDesc: typings.reactInstantsearchCore.mod.ConnectorDescription[TProvided, TExposed]): (js.Function1[
-/* stateless */ typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.ConnectorProvided[TProvided]], 
-typings.react.mod.ComponentClass[TExposed, typings.react.mod.ComponentState]]) & (js.Function1[
-/* Composed */ typings.react.mod.ComponentType[
-  typings.std.Partial[typings.reactInstantsearchCore.mod.ConnectorProvided[TProvided]]
-], 
-typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-  typings.std.Partial[typings.reactInstantsearchCore.mod.ConnectorProvided[TProvided]], 
-  typings.reactInstantsearchCore.mod.ConnectorProvided[TProvided], 
-  TExposed
-]]) = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnector")(connectorDesc.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[
-/* stateless */ typings.react.mod.FunctionComponent[typings.reactInstantsearchCore.mod.ConnectorProvided[TProvided]], 
-typings.react.mod.ComponentClass[TExposed, typings.react.mod.ComponentState]]) & (js.Function1[
-/* Composed */ typings.react.mod.ComponentType[
-  typings.std.Partial[typings.reactInstantsearchCore.mod.ConnectorProvided[TProvided]]
-], 
-typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-  typings.std.Partial[typings.reactInstantsearchCore.mod.ConnectorProvided[TProvided]], 
-  typings.reactInstantsearchCore.mod.ConnectorProvided[TProvided], 
-  TExposed
-]])]
+inline def connectVoiceSearch(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectVoiceSearch")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
-inline def translatable(
-  defaultTranslations: org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Function1[/* repeated */ js.Any, java.lang.String])]
-): js.Function1[
-/* ctor */ typings.react.mod.ComponentType[typings.reactInstantsearchCore.mod.TranslatableProvided], 
-typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-  typings.reactInstantsearchCore.mod.TranslatableProvided, 
-  typings.reactInstantsearchCore.mod.TranslatableProvided, 
-  typings.reactInstantsearchCore.mod.TranslatableExposed
-]] = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("translatable")(defaultTranslations.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* ctor */ typings.react.mod.ComponentType[typings.reactInstantsearchCore.mod.TranslatableProvided], 
-typings.reactInstantsearchCore.mod.ConnectedComponentClass[
-  typings.reactInstantsearchCore.mod.TranslatableProvided, 
-  typings.reactInstantsearchCore.mod.TranslatableProvided, 
-  typings.reactInstantsearchCore.mod.TranslatableExposed
-]]]
+inline def createConnector[TProvided, TExposed](connectorDesc: ConnectorDescription[TProvided, TExposed]): (js.Function2[
+/* stateless */ FunctionComponent[ConnectorProvided[TProvided]], 
+/* additionalWidgetProperties */ js.UndefOr[AdditionalWidgetProperties], 
+ComponentClass[TExposed, ComponentState]]) & (js.Function2[
+/* Composed */ ComponentType[Partial[ConnectorProvided[TProvided]]], 
+/* additionalWidgetProperties */ js.UndefOr[AdditionalWidgetProperties], 
+ConnectedComponentClass[Partial[ConnectorProvided[TProvided]], ConnectorProvided[TProvided], TExposed]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnector")(connectorDesc.asInstanceOf[js.Any]).asInstanceOf[(js.Function2[
+/* stateless */ FunctionComponent[ConnectorProvided[TProvided]], 
+/* additionalWidgetProperties */ js.UndefOr[AdditionalWidgetProperties], 
+ComponentClass[TExposed, ComponentState]]) & (js.Function2[
+/* Composed */ ComponentType[Partial[ConnectorProvided[TProvided]]], 
+/* additionalWidgetProperties */ js.UndefOr[AdditionalWidgetProperties], 
+ConnectedComponentClass[Partial[ConnectorProvided[TProvided]], ConnectorProvided[TProvided], TExposed]])]
 
-inline def version: java.lang.String = typings.reactInstantsearchCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def translatable(defaultTranslations: StringDictionary[String | (js.Function1[/* repeated */ Any, String])]): js.Function1[
+/* ctor */ ComponentType[TranslatableProvided], 
+ConnectedComponentClass[TranslatableProvided, TranslatableProvided, TranslatableExposed]] = ^.asInstanceOf[js.Dynamic].applyDynamic("translatable")(defaultTranslations.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* ctor */ ComponentType[TranslatableProvided], 
+ConnectedComponentClass[TranslatableProvided, TranslatableProvided, TranslatableExposed]]]
 
-type BasicDoc = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-type ConnectedComponentClass[TProps, TProvidedProps, TExposedProps] = typings.react.mod.ComponentClass[
-(typings.reactInstantsearchCore.mod.Omit[TProps, TProvidedProps]) & TExposedProps, 
-typings.react.mod.ComponentState]
+type BasicDoc = StringDictionary[String]
 
-type ConnectorProvided[TProvided] = typings.reactInstantsearchCore.anon.CreateURL & TProvided
+type ConnectedComponentClass[TProps, TProvidedProps, TExposedProps] = ComponentClass[(Omit[TProps, TProvidedProps]) & TExposedProps, ComponentState]
+
+type ConnectorProvided[TProvided] = CreateURL & TProvided
 
 type HighlightResult[TDoc] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof TDoc ]:? react-instantsearch-core.react-instantsearch-core.HighlightResultField<TDoc[K]>}
-  */ typings.reactInstantsearchCore.reactInstantsearchCoreStrings.HighlightResult & org.scalablytyped.runtime.TopLevel[TDoc]
+  */ typings.reactInstantsearchCore.reactInstantsearchCoreStrings.HighlightResult & TopLevel[TDoc]
 
-type HighlightResultArray[TItem] = js.Array[
-typings.reactInstantsearchCore.mod.HighlightResult[TItem] | typings.reactInstantsearchCore.mod.HighlightResultPrimitive]
+type HighlightResultArray[TItem] = js.Array[HighlightResult[TItem] | HighlightResultPrimitive]
 
-type HighlightResultField[TField] = typings.reactInstantsearchCore.mod.HighlightResult[TField] | typings.reactInstantsearchCore.mod.HighlightResultPrimitive | typings.reactInstantsearchCore.mod.HighlightResultArray[js.Any]
+type HighlightResultField[TField] = HighlightResult[TField] | HighlightResultPrimitive | HighlightResultArray[Any]
 
 type Hit[TDoc] = TDoc & typings.reactInstantsearchCore.anon.HighlightResult[TDoc]
 
-type Omit[T1, T2] = typings.std.Pick[
-T1, 
-typings.std.Exclude[/* keyof T1 */ java.lang.String, /* keyof T2 */ java.lang.String]]
+type InsightsClient = js.Function2[/* method */ InsightsClientMethod, /* payload */ InsightsClientPayload, Unit]
 
-type Refinement = typings.reactInstantsearchCore.anon.Attribute & (typings.reactInstantsearchCore.anon.CurrentRefinement | typings.reactInstantsearchCore.anon.Items)
+type Omit[T1, T2] = Pick[T1, Exclude[/* keyof T1 */ String, /* keyof T2 */ String]]
 
-type RefinementValue = js.Function1[
-/* searchState */ typings.reactInstantsearchCore.mod.SearchState, 
-typings.reactInstantsearchCore.mod.SearchState]
+type RefinementValue = js.Function1[/* searchState */ SearchState, SearchState]
+
+type WrappedInsightsClient = js.Function2[/* method */ InsightsClientMethod, /* payload */ PartialInsightsClientPayl, Unit]

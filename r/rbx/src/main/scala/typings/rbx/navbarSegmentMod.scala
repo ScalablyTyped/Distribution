@@ -67,7 +67,7 @@ object navbarSegmentMod {
   
   @JSImport("rbx/components/navbar/navbar-segment", "NavbarSegment")
   @js.native
-  val NavbarSegment: ForwardRefAsExoticComponent[NavbarSegmentProps, ElementType[js.Any]] = js.native
+  val NavbarSegment: ForwardRefAsExoticComponent[NavbarSegmentProps, ElementType[Any]] = js.native
   
   trait NavbarSegmentModifierProps extends StObject {
     

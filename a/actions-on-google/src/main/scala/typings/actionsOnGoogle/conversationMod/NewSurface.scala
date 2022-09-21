@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "NewSurface")
 @js.native
-class NewSurface protected ()
+open class NewSurface protected ()
   extends typings.actionsOnGoogle.helperMod.NewSurface {
   /**
     * @param options NewSurface options

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListComponentBuildVersionsRequest extends StObject {
   
   /**
-    * The component version Amazon Resource Name (ARN) whose versions you want to list. 
+    * The component version Amazon Resource Name (ARN) whose versions you want to list.
     */
   var componentVersionArn: ComponentVersionArn
   
   /**
-    * The maximum items to return in a request. 
+    * The maximum items to return in a request.
     */
   var maxResults: js.UndefOr[RestrictedInteger] = js.undefined
   
   /**
-    * A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
+    * A token to specify where to start paginating. This is the NextToken from a previously truncated response.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }

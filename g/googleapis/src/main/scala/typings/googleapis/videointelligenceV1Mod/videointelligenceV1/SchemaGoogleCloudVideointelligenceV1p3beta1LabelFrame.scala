@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video frame level annotation results for label detection.
-  */
 trait SchemaGoogleCloudVideointelligenceV1p3beta1LabelFrame extends StObject {
   
   /**
     * Confidence that the label is accurate. Range: [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.undefined
+  var confidence: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Time-offset, relative to the beginning of the video, corresponding to the
-    * video frame for this location.
+    * Time-offset, relative to the beginning of the video, corresponding to the video frame for this location.
     */
-  var timeOffset: js.UndefOr[String] = js.undefined
+  var timeOffset: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1LabelFrame {
   
@@ -31,9 +27,13 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1LabelFrame {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
+    inline def setConfidenceNull: Self = StObject.set(x, "confidence", null)
+    
     inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOffsetNull: Self = StObject.set(x, "timeOffset", null)
     
     inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }

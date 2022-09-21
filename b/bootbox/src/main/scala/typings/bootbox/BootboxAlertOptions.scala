@@ -18,12 +18,12 @@ trait BootboxAlertOptions
   var buttons_BootboxAlertOptions: js.UndefOr[BootboxAlertButtonMap] = js.undefined
   
   @JSName("callback")
-  var callback_BootboxAlertOptions: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var callback_BootboxAlertOptions: js.UndefOr[js.Function0[Any]] = js.undefined
 }
 object BootboxAlertOptions {
   
   inline def apply(
-    message: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+    message: JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   ): BootboxAlertOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxAlertOptions]
@@ -35,7 +35,7 @@ object BootboxAlertOptions {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
   }

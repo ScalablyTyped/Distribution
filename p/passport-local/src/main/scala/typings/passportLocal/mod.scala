@@ -1,10 +1,9 @@
 package typings.passportLocal
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passportLocal.passportLocalBooleans.`false`
 import typings.passportLocal.passportLocalBooleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("passport-local", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends typings.passportStrategy.mod.Strategy {
     def this(verify: VerifyFunction) = this()
     def this(options: IStrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
@@ -113,8 +112,8 @@ object mod {
     /* username */ String, 
     /* password */ String, 
     /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* user */ js.UndefOr[js.Any], 
+      /* error */ Any, 
+      /* user */ js.UndefOr[Any], 
       /* options */ js.UndefOr[IVerifyOptions], 
       Unit
     ], 
@@ -122,12 +121,18 @@ object mod {
   ]
   
   type VerifyFunctionWithRequest = js.Function4[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* username */ String, 
     /* password */ String, 
     /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* user */ js.UndefOr[js.Any], 
+      /* error */ Any, 
+      /* user */ js.UndefOr[Any], 
       /* options */ js.UndefOr[IVerifyOptions], 
       Unit
     ], 

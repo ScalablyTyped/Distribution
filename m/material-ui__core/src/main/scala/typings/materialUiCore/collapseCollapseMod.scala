@@ -1,37 +1,40 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.PartialClassNameMapCollap
-import typings.materialUiCore.createMuiThemeMod.Theme
 import typings.materialUiCore.materialUiCoreStrings.auto
+import typings.materialUiCore.transitionMod.TransitionProps
 import typings.react.mod.CSSProperties
-import typings.react.mod.ComponentType
+import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object collapseCollapseMod extends Shortcut {
+object collapseCollapseMod {
   
-  @JSImport("@material-ui/core/Collapse/Collapse", JSImport.Default)
+  @JSImport("@material-ui/core/Collapse/Collapse", JSImport.Namespace)
   @js.native
-  val default: ComponentType[CollapseProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(props: CollapseProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.container
+    - typings.materialUiCore.materialUiCoreStrings.root
     - typings.materialUiCore.materialUiCoreStrings.entered
+    - typings.materialUiCore.materialUiCoreStrings.hidden
     - typings.materialUiCore.materialUiCoreStrings.wrapper
     - typings.materialUiCore.materialUiCoreStrings.wrapperInner
   */
   trait CollapseClassKey extends StObject
   object CollapseClassKey {
     
-    inline def container: typings.materialUiCore.materialUiCoreStrings.container = "container".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.container]
-    
     inline def entered: typings.materialUiCore.materialUiCoreStrings.entered = "entered".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.entered]
+    
+    inline def hidden: typings.materialUiCore.materialUiCoreStrings.hidden = "hidden".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.hidden]
+    
+    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
     
     inline def wrapper: typings.materialUiCore.materialUiCoreStrings.wrapper = "wrapper".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.wrapper]
     
@@ -41,49 +44,84 @@ object collapseCollapseMod extends Shortcut {
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/transitions/transition.TransitionProps, @material-ui/core.@material-ui/core/Collapse/Collapse.CollapseClassKey, 'timeout'> */
   trait CollapseProps extends StObject {
     
-    var addEndListener: js.UndefOr[js.Any] = js.undefined
+    var addEndListener: js.UndefOr[Any] = js.undefined
     
     var appear: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The content node to be collapsed.
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Override or extend the styles applied to the component.
+      */
     var classes: js.UndefOr[PartialClassNameMapCollap] = js.undefined
     
-    var collapsedHeight: js.UndefOr[String] = js.undefined
+    /**
+      * The height of the container when collapsed.
+      * @deprecated The prop was renamed to support the addition of horizontal orientation, use `collapsedSize` instead.
+      */
+    var collapsedHeight: js.UndefOr[String | Double] = js.undefined
     
-    var component: js.UndefOr[ReactType[CollapseProps]] = js.undefined
+    /**
+      * The height of the container when collapsed.
+      */
+    var collapsedSize: js.UndefOr[String | Double] = js.undefined
+    
+    /**
+      * The component used for the root node.
+      * Either a string to use a HTML element or a component.
+      */
+    var component: js.UndefOr[ElementType[TransitionProps]] = js.undefined
+    
+    /**
+      * Enable this prop if you encounter 'Function components cannot be given refs',
+      * use `unstable_createStrictModeTheme`,
+      * and can't forward the ref in the passed `Component`.
+      */
+    var disableStrictModeCompat: js.UndefOr[Boolean] = js.undefined
     
     var enter: js.UndefOr[Boolean] = js.undefined
     
     var exit: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[js.Any] = js.undefined
+    /**
+      * If `true`, the component will transition in.
+      */
+    var in: js.UndefOr[Boolean] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
-    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
+    var mountOnEnter: js.UndefOr[Any] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.undefined
+    var onEnter: js.UndefOr[Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.undefined
+    var onEntered: js.UndefOr[Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.undefined
+    var onEntering: js.UndefOr[Any] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.undefined
+    var onExit: js.UndefOr[Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.undefined
+    var onExited: js.UndefOr[Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.undefined
+    var onExiting: js.UndefOr[Any] = js.undefined
+    
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var theme: js.UndefOr[Theme] = js.undefined
+    /**
+      * The duration for the transition, in milliseconds.
+      * You may specify a single timeout for all transitions, or individually with an object.
+      *
+      * Set to 'auto' to automatically calculate transition time based on height.
+      */
+    var timeout: js.UndefOr[Any | auto] = js.undefined
     
-    var timeout: js.UndefOr[js.Any | auto] = js.undefined
-    
-    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
+    var unmountOnExit: js.UndefOr[Any] = js.undefined
   }
   object CollapseProps {
     
@@ -94,7 +132,7 @@ object collapseCollapseMod extends Shortcut {
     
     extension [Self <: CollapseProps](x: Self) {
       
-      inline def setAddEndListener(value: js.Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
+      inline def setAddEndListener(value: Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
       
       inline def setAddEndListenerUndefined: Self = StObject.set(x, "addEndListener", js.undefined)
       
@@ -114,13 +152,21 @@ object collapseCollapseMod extends Shortcut {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setCollapsedHeight(value: String): Self = StObject.set(x, "collapsedHeight", value.asInstanceOf[js.Any])
+      inline def setCollapsedHeight(value: String | Double): Self = StObject.set(x, "collapsedHeight", value.asInstanceOf[js.Any])
       
       inline def setCollapsedHeightUndefined: Self = StObject.set(x, "collapsedHeight", js.undefined)
       
-      inline def setComponent(value: ReactType[CollapseProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setCollapsedSize(value: String | Double): Self = StObject.set(x, "collapsedSize", value.asInstanceOf[js.Any])
+      
+      inline def setCollapsedSizeUndefined: Self = StObject.set(x, "collapsedSize", js.undefined)
+      
+      inline def setComponent(value: ElementType[TransitionProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      
+      inline def setDisableStrictModeCompat(value: Boolean): Self = StObject.set(x, "disableStrictModeCompat", value.asInstanceOf[js.Any])
+      
+      inline def setDisableStrictModeCompatUndefined: Self = StObject.set(x, "disableStrictModeCompat", js.undefined)
       
       inline def setEnter(value: Boolean): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
@@ -130,66 +176,65 @@ object collapseCollapseMod extends Shortcut {
       
       inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
       
-      inline def setIn(value: js.Any): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
       inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      inline def setMountOnEnter(value: js.Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
+      inline def setMountOnEnter(value: Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
       
       inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
       
-      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+      inline def setOnEntered(value: Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
       
       inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
       
-      inline def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+      inline def setOnEntering(value: Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
       
       inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
       
-      inline def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
       
       inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      inline def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      inline def setOnExited(value: Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
       
       inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
       
-      inline def setOnExiting(value: js.Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+      inline def setOnExiting(value: Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
       
       inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
+      
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
-      
-      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
-      
-      inline def setTimeout(value: js.Any | auto): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Any | auto): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setUnmountOnExit(value: js.Any): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
+      inline def setUnmountOnExit(value: Any): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
       
       inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
     }
   }
-  
-  type _To = ComponentType[CollapseProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `collapseCollapseMod.foo` */
-  override def _to: ComponentType[CollapseProps] = default
 }

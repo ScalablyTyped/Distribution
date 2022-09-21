@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SparklineSeriesDefaults extends StObject {
   
-  var area: js.UndefOr[js.Any] = js.undefined
+  var area: js.UndefOr[Any] = js.undefined
   
-  var bar: js.UndefOr[js.Any] = js.undefined
+  var bar: js.UndefOr[Any] = js.undefined
   
   var border: js.UndefOr[SparklineSeriesDefaultsBorder] = js.undefined
   
-  var column: js.UndefOr[js.Any] = js.undefined
+  var column: js.UndefOr[Any] = js.undefined
   
   var gap: js.UndefOr[Double] = js.undefined
   
   var labels: js.UndefOr[SparklineSeriesDefaultsLabels] = js.undefined
   
-  var line: js.UndefOr[js.Any] = js.undefined
+  var line: js.UndefOr[Any] = js.undefined
   
-  var overlay: js.UndefOr[js.Any] = js.undefined
+  var overlay: js.UndefOr[Any] = js.undefined
   
-  var pie: js.UndefOr[js.Any] = js.undefined
+  var pie: js.UndefOr[Any] = js.undefined
   
   var spacing: js.UndefOr[Double] = js.undefined
   
@@ -41,11 +41,11 @@ object SparklineSeriesDefaults {
   
   extension [Self <: SparklineSeriesDefaults](x: Self) {
     
-    inline def setArea(value: js.Any): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Any): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    inline def setBar(value: js.Any): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: Any): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
@@ -53,7 +53,7 @@ object SparklineSeriesDefaults {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
@@ -65,15 +65,15 @@ object SparklineSeriesDefaults {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    inline def setOverlay(value: js.Any): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: Any): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
-    inline def setPie(value: js.Any): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
+    inline def setPie(value: Any): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     
     inline def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
     

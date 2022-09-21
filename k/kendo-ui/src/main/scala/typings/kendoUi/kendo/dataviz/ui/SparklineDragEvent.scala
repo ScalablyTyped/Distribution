@@ -8,9 +8,9 @@ trait SparklineDragEvent
   extends StObject
      with SparklineEvent {
   
-  var axisRanges: js.UndefOr[js.Any] = js.undefined
+  var axisRanges: js.UndefOr[Any] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+  var originalEvent: js.UndefOr[Any] = js.undefined
 }
 object SparklineDragEvent {
   
@@ -21,11 +21,11 @@ object SparklineDragEvent {
   
   extension [Self <: SparklineDragEvent](x: Self) {
     
-    inline def setAxisRanges(value: js.Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
+    inline def setAxisRanges(value: Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
     
     inline def setAxisRangesUndefined: Self = StObject.set(x, "axisRanges", js.undefined)
     
-    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
   }

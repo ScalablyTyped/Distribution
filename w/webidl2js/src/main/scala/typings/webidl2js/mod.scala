@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("webidl2js", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Transformer {
     def this(opts: Options) = this()

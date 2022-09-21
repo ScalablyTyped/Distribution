@@ -24,6 +24,6 @@ object DescribeUserProfilesResult {
     
     inline def setUserProfilesUndefined: Self = StObject.set(x, "UserProfiles", js.undefined)
     
-    inline def setUserProfilesVarargs(value: UserProfile*): Self = StObject.set(x, "UserProfiles", js.Array(value :_*))
+    inline def setUserProfilesVarargs(value: UserProfile*): Self = StObject.set(x, "UserProfiles", js.Array(value*))
   }
 }

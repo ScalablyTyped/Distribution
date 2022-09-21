@@ -72,14 +72,14 @@ trait MouseEvent
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
     once: Boolean,
-    data: js.Any
+    data: Any
   ): js.Function = js.native
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
     once: Boolean,
-    data: js.Any,
+    data: Any,
     useCapture: Boolean
   ): js.Function = js.native
   def on(
@@ -95,14 +95,14 @@ trait MouseEvent
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
     once: Unit,
-    data: js.Any
+    data: Any
   ): js.Function = js.native
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
     once: Unit,
-    data: js.Any,
+    data: Any,
     useCapture: Boolean
   ): js.Function = js.native
   def on(
@@ -124,14 +124,14 @@ trait MouseEvent
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: Unit,
     once: Boolean,
-    data: js.Any
+    data: Any
   ): js.Function = js.native
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: Unit,
     once: Boolean,
-    data: js.Any,
+    data: Any,
     useCapture: Boolean
   ): js.Function = js.native
   def on(
@@ -147,14 +147,14 @@ trait MouseEvent
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: Unit,
     once: Unit,
-    data: js.Any
+    data: Any
   ): js.Function = js.native
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: Unit,
     once: Unit,
-    data: js.Any,
+    data: Any,
     useCapture: Boolean
   ): js.Function = js.native
   def on(
@@ -168,13 +168,13 @@ trait MouseEvent
   def on(`type`: String, listener: HandleEvent): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
-  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: Any): js.Object = js.native
   def on(
     `type`: String,
     listener: HandleEvent,
     scope: js.Object,
     once: Boolean,
-    data: js.Any,
+    data: Any,
     useCapture: Boolean
   ): js.Object = js.native
   def on(
@@ -185,13 +185,13 @@ trait MouseEvent
     data: Unit,
     useCapture: Boolean
   ): js.Object = js.native
-  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: js.Any): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: Any): js.Object = js.native
   def on(
     `type`: String,
     listener: HandleEvent,
     scope: js.Object,
     once: Unit,
-    data: js.Any,
+    data: Any,
     useCapture: Boolean
   ): js.Object = js.native
   def on(
@@ -203,34 +203,27 @@ trait MouseEvent
     useCapture: Boolean
   ): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean): js.Object = js.native
-  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: js.Any): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: Unit,
-    once: Boolean,
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Any): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Any, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
-  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any): js.Object = js.native
-  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Any): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Any, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: `0`): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Any): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Any, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Any): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Any, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: Unit, once: Boolean): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Any): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Any, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Any): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Any, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
   
   var pointerID: Double = js.native

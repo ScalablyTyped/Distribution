@@ -6,20 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCCertificate extends StObject {
   
-  val expires: Double
+  /* standard dom */
+  val expires: EpochTimeStamp
   
+  /* standard dom */
   def getFingerprints(): js.Array[RTCDtlsFingerprint]
 }
 object RTCCertificate {
   
-  inline def apply(expires: Double, getFingerprints: () => js.Array[RTCDtlsFingerprint]): RTCCertificate = {
+  inline def apply(expires: EpochTimeStamp, getFingerprints: () => js.Array[RTCDtlsFingerprint]): RTCCertificate = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], getFingerprints = js.Any.fromFunction0(getFingerprints))
     __obj.asInstanceOf[RTCCertificate]
   }
   
   extension [Self <: RTCCertificate](x: Self) {
     
-    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: EpochTimeStamp): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setGetFingerprints(value: () => js.Array[RTCDtlsFingerprint]): Self = StObject.set(x, "getFingerprints", js.Any.fromFunction0(value))
   }

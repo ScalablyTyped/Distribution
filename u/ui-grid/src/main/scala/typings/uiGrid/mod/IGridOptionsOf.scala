@@ -212,10 +212,10 @@ trait IGridOptionsOf[TEntity]
     *
     * By default it returns the `$$hashKey` property but can be overridden to use any property
     * or set of properties you want.
-    * @param {IGridRow} row The row for which you want the unique id
-    * @returns {string} row uid
+    * @param row The row for which you want the unique id
+    * @returns row uid
     */
-  var getRowIdentity: js.UndefOr[js.Function1[/* row */ IGridRowOf[TEntity], js.Any]] = js.undefined
+  var getRowIdentity: js.UndefOr[js.Function1[/* row */ IGridRowOf[TEntity], Any]] = js.undefined
   
   /**
     * (optional) ui-grid/ui-grid-grid-footer by default. This template by default shows the
@@ -296,15 +296,15 @@ trait IGridOptionsOf[TEntity]
     * Note that the gridApi.core.renderingComplete event is identical to this
     * callback, but has the advantage that it can be called from multiple places
     * if needed
-    * @param {IGridApi} gridApi
+    * @param gridApi
     */
   var onRegisterApi: js.UndefOr[js.Function1[/* gridApi */ IGridApiOf[TEntity], Unit]] = js.undefined
   
   /**
     * By default, rows are compared using object equality.  This option can be overridden
     * to compare on any data item property or function
-    * @param {TEntity} entityA First Data Item to compare
-    * @param {TEntity} entityB Second Data Item to compare
+    * @param entityA First Data Item to compare
+    * @param entityB Second Data Item to compare
     */
   var rowEquality: js.UndefOr[js.Function2[/* entityA */ TEntity, /* entityB */ TEntity, Boolean]] = js.undefined
   
@@ -321,7 +321,7 @@ trait IGridOptionsOf[TEntity]
     * By default it returns the `$$hashKey` property if it exists. If it doesn't it uses gridUtil.nextUid()
     * to generate one
     */
-  var rowIdentity: js.UndefOr[js.Function1[/* row */ IGridRowOf[TEntity], js.Any]] = js.undefined
+  var rowIdentity: js.UndefOr[js.Function1[/* row */ IGridRowOf[TEntity], Any]] = js.undefined
   
   /**
     * 'ui-grid/ui-grid-row' by default. When provided, this setting uses a
@@ -418,7 +418,7 @@ object IGridOptionsOf {
     
     inline def setColumnDefsUndefined: Self = StObject.set(x, "columnDefs", js.undefined)
     
-    inline def setColumnDefsVarargs(value: IColumnDefOf[TEntity]*): Self = StObject.set(x, "columnDefs", js.Array(value :_*))
+    inline def setColumnDefsVarargs(value: IColumnDefOf[TEntity]*): Self = StObject.set(x, "columnDefs", js.Array(value*))
     
     inline def setColumnFooterHeight(value: Double): Self = StObject.set(x, "columnFooterHeight", value.asInstanceOf[js.Any])
     
@@ -432,7 +432,7 @@ object IGridOptionsOf {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: TEntity*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: TEntity*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setEnableColumnMenus(value: Boolean): Self = StObject.set(x, "enableColumnMenus", value.asInstanceOf[js.Any])
     
@@ -478,7 +478,7 @@ object IGridOptionsOf {
     
     inline def setExcludePropertiesUndefined: Self = StObject.set(x, "excludeProperties", js.undefined)
     
-    inline def setExcludePropertiesVarargs(value: String*): Self = StObject.set(x, "excludeProperties", js.Array(value :_*))
+    inline def setExcludePropertiesVarargs(value: String*): Self = StObject.set(x, "excludeProperties", js.Array(value*))
     
     inline def setFastWatch(value: Boolean): Self = StObject.set(x, "fastWatch", value.asInstanceOf[js.Any])
     
@@ -492,7 +492,7 @@ object IGridOptionsOf {
     
     inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
     
-    inline def setGetRowIdentity(value: /* row */ IGridRowOf[TEntity] => js.Any): Self = StObject.set(x, "getRowIdentity", js.Any.fromFunction1(value))
+    inline def setGetRowIdentity(value: /* row */ IGridRowOf[TEntity] => Any): Self = StObject.set(x, "getRowIdentity", js.Any.fromFunction1(value))
     
     inline def setGetRowIdentityUndefined: Self = StObject.set(x, "getRowIdentity", js.undefined)
     
@@ -544,7 +544,7 @@ object IGridOptionsOf {
     
     inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
-    inline def setRowIdentity(value: /* row */ IGridRowOf[TEntity] => js.Any): Self = StObject.set(x, "rowIdentity", js.Any.fromFunction1(value))
+    inline def setRowIdentity(value: /* row */ IGridRowOf[TEntity] => Any): Self = StObject.set(x, "rowIdentity", js.Any.fromFunction1(value))
     
     inline def setRowIdentityUndefined: Self = StObject.set(x, "rowIdentity", js.undefined)
     

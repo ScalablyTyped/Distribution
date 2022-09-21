@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab", "GroupVariables")
 @js.native
-class GroupVariables protected ()
+open class GroupVariables protected ()
   extends typings.gitlab.servicesMod.GroupVariables {
   def this(options: BaseServiceOptions) = this()
 }

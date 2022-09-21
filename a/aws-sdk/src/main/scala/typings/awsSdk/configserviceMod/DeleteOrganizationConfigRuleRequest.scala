@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteOrganizationConfigRuleRequest extends StObject {
   
   /**
-    * The name of organization config rule that you want to delete.
+    * The name of organization Config rule that you want to delete.
     */
   var OrganizationConfigRuleName: typings.awsSdk.configserviceMod.OrganizationConfigRuleName
 }

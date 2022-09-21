@@ -10,10 +10,10 @@ object tableFooterMod {
   
   @JSImport("material-ui/Table/TableFooter", JSImport.Default)
   @js.native
-  class default () extends TableFooter
+  open class default () extends TableFooter
   
   @JSImport("material-ui/Table/TableFooter", "TableFooter")
   @js.native
-  class TableFooter ()
-    extends Component[TableFooterProps, js.Object, js.Any]
+  open class TableFooter ()
+    extends Component[TableFooterProps, js.Object, Any]
 }

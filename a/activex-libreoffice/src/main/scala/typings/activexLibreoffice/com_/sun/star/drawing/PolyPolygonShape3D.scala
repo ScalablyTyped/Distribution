@@ -28,14 +28,14 @@ object PolyPolygonShape3D {
     
     inline def setSequenceX(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceX", value.asInstanceOf[js.Any])
     
-    inline def setSequenceXVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceX", js.Array(value :_*))
+    inline def setSequenceXVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceX", js.Array(value*))
     
     inline def setSequenceY(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceY", value.asInstanceOf[js.Any])
     
-    inline def setSequenceYVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceY", js.Array(value :_*))
+    inline def setSequenceYVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceY", js.Array(value*))
     
     inline def setSequenceZ(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceZ", value.asInstanceOf[js.Any])
     
-    inline def setSequenceZVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceZ", js.Array(value :_*))
+    inline def setSequenceZVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceZ", js.Array(value*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
@@ -11,16 +12,18 @@ object screenSizeBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/screenSizeBlock", "ScreenSizeBlock")
   @js.native
-  class ScreenSizeBlock protected () extends NodeMaterialBlock {
+  open class ScreenSizeBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new ScreenSizeBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _varName: js.Any = js.native
+    /* private */ var _varName: Any = js.native
+    
+    def bind(effect: Effect): Unit = js.native
     
     /* protected */ def writeOutputs(state: NodeMaterialBuildState, varName: String): String = js.native
     

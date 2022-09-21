@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "MatrixUser")
 @js.native
-class MatrixUser protected ()
+open class MatrixUser protected ()
   extends typings.matrixAppserviceBridge.usersMatrixMod.MatrixUser {
   /**
     * Construct a Matrix user.
@@ -17,9 +17,9 @@ class MatrixUser protected ()
     *               to change the default value.
     */
   def this(userId: String) = this()
-  def this(userId: String, _data: Record[String, js.Any]) = this()
+  def this(userId: String, _data: Record[String, Any]) = this()
   def this(userId: String, _data: Unit, escape: Boolean) = this()
-  def this(userId: String, _data: Record[String, js.Any], escape: Boolean) = this()
+  def this(userId: String, _data: Record[String, Any], escape: Boolean) = this()
 }
 /* static members */
 object MatrixUser {

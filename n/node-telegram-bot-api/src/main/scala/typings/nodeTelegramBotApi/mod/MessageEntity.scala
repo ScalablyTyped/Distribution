@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MessageEntity extends StObject {
   
+  var language: js.UndefOr[String] = js.undefined
+  
   var length: Double
   
   var offset: Double
@@ -25,6 +27,10 @@ object MessageEntity {
   }
   
   extension [Self <: MessageEntity](x: Self) {
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

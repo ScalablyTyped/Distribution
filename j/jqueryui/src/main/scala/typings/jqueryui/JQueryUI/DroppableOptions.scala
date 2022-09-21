@@ -8,7 +8,7 @@ trait DroppableOptions
   extends StObject
      with DroppableEvents {
   
-  var accept: js.UndefOr[js.Any] = js.undefined
+  var accept: js.UndefOr[Any] = js.undefined
   
   var activeClass: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ object DroppableOptions {
   
   extension [Self <: DroppableOptions](x: Self) {
     
-    inline def setAccept(value: js.Any): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: Any): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     

@@ -14,7 +14,7 @@ trait SchemaEditAllOrderDealsResponse extends StObject {
   /**
     * The latest revision number after the update has been applied.
     */
-  var orderRevisionNumber: js.UndefOr[String] = js.undefined
+  var orderRevisionNumber: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaEditAllOrderDealsResponse {
   
@@ -29,9 +29,11 @@ object SchemaEditAllOrderDealsResponse {
     
     inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    inline def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value*))
     
     inline def setOrderRevisionNumber(value: String): Self = StObject.set(x, "orderRevisionNumber", value.asInstanceOf[js.Any])
+    
+    inline def setOrderRevisionNumberNull: Self = StObject.set(x, "orderRevisionNumber", null)
     
     inline def setOrderRevisionNumberUndefined: Self = StObject.set(x, "orderRevisionNumber", js.undefined)
   }

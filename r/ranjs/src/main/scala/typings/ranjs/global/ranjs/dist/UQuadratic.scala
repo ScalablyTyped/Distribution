@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.UQuadratic")
 @js.native
-class UQuadratic ()
+open class UQuadratic ()
   extends typings.ranjs.mod.dist.UQuadratic {
   def this(a: Double) = this()
   def this(a: Double, b: Double) = this()

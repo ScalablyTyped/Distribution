@@ -63,13 +63,9 @@ object anon {
     
     var classes: js.UndefOr[Boolean] = js.undefined
     
-    var collections: js.UndefOr[Boolean] = js.undefined
-    
     var computedProperty: js.UndefOr[Boolean] = js.undefined
     
     var conciseMethodProperty: js.UndefOr[Boolean] = js.undefined
-    
-    var constLoop: js.UndefOr[Boolean] = js.undefined
     
     var dangerousForOf: js.UndefOr[Boolean] = js.undefined
     
@@ -78,6 +74,8 @@ object anon {
     var defaultParameter: js.UndefOr[Boolean] = js.undefined
     
     var destructuring: js.UndefOr[Boolean] = js.undefined
+    
+    var exponentiation: js.UndefOr[Boolean] = js.undefined
     
     var forOf: js.UndefOr[Boolean] = js.undefined
     
@@ -89,15 +87,17 @@ object anon {
     
     var numericLiteral: js.UndefOr[Boolean] = js.undefined
     
+    var objectRestSpread: js.UndefOr[Boolean] = js.undefined
+    
     var parameterDestructuring: js.UndefOr[Boolean] = js.undefined
     
     var reservedProperties: js.UndefOr[Boolean] = js.undefined
     
     var spreadRest: js.UndefOr[Boolean] = js.undefined
     
-    var stickyRegExp: js.UndefOr[Boolean] = js.undefined
-    
     var templateString: js.UndefOr[Boolean] = js.undefined
+    
+    var trailingFunctionCommas: js.UndefOr[Boolean] = js.undefined
     
     var unicodeRegExp: js.UndefOr[Boolean] = js.undefined
   }
@@ -118,10 +118,6 @@ object anon {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setCollections(value: Boolean): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
-      
-      inline def setCollectionsUndefined: Self = StObject.set(x, "collections", js.undefined)
-      
       inline def setComputedProperty(value: Boolean): Self = StObject.set(x, "computedProperty", value.asInstanceOf[js.Any])
       
       inline def setComputedPropertyUndefined: Self = StObject.set(x, "computedProperty", js.undefined)
@@ -129,10 +125,6 @@ object anon {
       inline def setConciseMethodProperty(value: Boolean): Self = StObject.set(x, "conciseMethodProperty", value.asInstanceOf[js.Any])
       
       inline def setConciseMethodPropertyUndefined: Self = StObject.set(x, "conciseMethodProperty", js.undefined)
-      
-      inline def setConstLoop(value: Boolean): Self = StObject.set(x, "constLoop", value.asInstanceOf[js.Any])
-      
-      inline def setConstLoopUndefined: Self = StObject.set(x, "constLoop", js.undefined)
       
       inline def setDangerousForOf(value: Boolean): Self = StObject.set(x, "dangerousForOf", value.asInstanceOf[js.Any])
       
@@ -149,6 +141,10 @@ object anon {
       inline def setDestructuring(value: Boolean): Self = StObject.set(x, "destructuring", value.asInstanceOf[js.Any])
       
       inline def setDestructuringUndefined: Self = StObject.set(x, "destructuring", js.undefined)
+      
+      inline def setExponentiation(value: Boolean): Self = StObject.set(x, "exponentiation", value.asInstanceOf[js.Any])
+      
+      inline def setExponentiationUndefined: Self = StObject.set(x, "exponentiation", js.undefined)
       
       inline def setForOf(value: Boolean): Self = StObject.set(x, "forOf", value.asInstanceOf[js.Any])
       
@@ -170,6 +166,10 @@ object anon {
       
       inline def setNumericLiteralUndefined: Self = StObject.set(x, "numericLiteral", js.undefined)
       
+      inline def setObjectRestSpread(value: Boolean): Self = StObject.set(x, "objectRestSpread", value.asInstanceOf[js.Any])
+      
+      inline def setObjectRestSpreadUndefined: Self = StObject.set(x, "objectRestSpread", js.undefined)
+      
       inline def setParameterDestructuring(value: Boolean): Self = StObject.set(x, "parameterDestructuring", value.asInstanceOf[js.Any])
       
       inline def setParameterDestructuringUndefined: Self = StObject.set(x, "parameterDestructuring", js.undefined)
@@ -182,13 +182,13 @@ object anon {
       
       inline def setSpreadRestUndefined: Self = StObject.set(x, "spreadRest", js.undefined)
       
-      inline def setStickyRegExp(value: Boolean): Self = StObject.set(x, "stickyRegExp", value.asInstanceOf[js.Any])
-      
-      inline def setStickyRegExpUndefined: Self = StObject.set(x, "stickyRegExp", js.undefined)
-      
       inline def setTemplateString(value: Boolean): Self = StObject.set(x, "templateString", value.asInstanceOf[js.Any])
       
       inline def setTemplateStringUndefined: Self = StObject.set(x, "templateString", js.undefined)
+      
+      inline def setTrailingFunctionCommas(value: Boolean): Self = StObject.set(x, "trailingFunctionCommas", value.asInstanceOf[js.Any])
+      
+      inline def setTrailingFunctionCommasUndefined: Self = StObject.set(x, "trailingFunctionCommas", js.undefined)
       
       inline def setUnicodeRegExp(value: Boolean): Self = StObject.set(x, "unicodeRegExp", value.asInstanceOf[js.Any])
       

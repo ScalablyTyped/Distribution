@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListNotebookInstanceLifecycleConfigsOutput extends StObject {
   
   /**
-    * If the response is truncated, Amazon SageMaker returns this token. To get the next set of lifecycle configurations, use it in the next request. 
+    * If the response is truncated, SageMaker returns this token. To get the next set of lifecycle configurations, use it in the next request. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
@@ -33,6 +33,6 @@ object ListNotebookInstanceLifecycleConfigsOutput {
     
     inline def setNotebookInstanceLifecycleConfigsUndefined: Self = StObject.set(x, "NotebookInstanceLifecycleConfigs", js.undefined)
     
-    inline def setNotebookInstanceLifecycleConfigsVarargs(value: NotebookInstanceLifecycleConfigSummary*): Self = StObject.set(x, "NotebookInstanceLifecycleConfigs", js.Array(value :_*))
+    inline def setNotebookInstanceLifecycleConfigsVarargs(value: NotebookInstanceLifecycleConfigSummary*): Self = StObject.set(x, "NotebookInstanceLifecycleConfigs", js.Array(value*))
   }
 }

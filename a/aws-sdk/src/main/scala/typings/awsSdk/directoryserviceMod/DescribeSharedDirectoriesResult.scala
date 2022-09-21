@@ -33,6 +33,6 @@ object DescribeSharedDirectoriesResult {
     
     inline def setSharedDirectoriesUndefined: Self = StObject.set(x, "SharedDirectories", js.undefined)
     
-    inline def setSharedDirectoriesVarargs(value: SharedDirectory*): Self = StObject.set(x, "SharedDirectories", js.Array(value :_*))
+    inline def setSharedDirectoriesVarargs(value: SharedDirectory*): Self = StObject.set(x, "SharedDirectories", js.Array(value*))
   }
 }

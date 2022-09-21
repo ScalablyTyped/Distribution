@@ -22,7 +22,7 @@ trait UpdateClusterRequest extends StObject {
   var NotificationTopicArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The current state of the topic.
+    * The current state of the topic. A value of “active” means that notifications will be sent to the topic. A value of “inactive” means that notifications will not be sent to the topic.
     */
   var NotificationTopicStatus: js.UndefOr[String] = js.undefined
   
@@ -76,6 +76,6 @@ object UpdateClusterRequest {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
   }
 }

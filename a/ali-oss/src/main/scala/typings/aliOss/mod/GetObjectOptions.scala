@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetObjectOptions extends StObject {
   
-  // image process params, will send with x-oss-process e.g.: {process: 'image/resize,w_200'}
   var headers: js.UndefOr[js.Object] = js.undefined
   
+  /** The Content-Type of the callback requests initiatiated, It supports application/x-www-form-urlencoded and application/json, and the former is the default value. */
   var process: js.UndefOr[String] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined

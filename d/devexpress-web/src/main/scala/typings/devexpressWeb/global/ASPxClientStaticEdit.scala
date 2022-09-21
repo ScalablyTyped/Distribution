@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientStaticEdit")
 @js.native
-class ASPxClientStaticEdit ()
+open class ASPxClientStaticEdit ()
   extends StObject
      with typings.devexpressWeb.ASPxClientStaticEdit {
   
@@ -56,19 +56,19 @@ class ASPxClientStaticEdit ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -134,7 +134,7 @@ class ASPxClientStaticEdit ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.

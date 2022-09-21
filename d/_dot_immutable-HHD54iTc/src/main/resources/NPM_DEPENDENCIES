@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".immutable-HHD54iTc" : "3.7.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".immutable-HHD54iTc" : "3.7.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

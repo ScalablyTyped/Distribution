@@ -1,6 +1,6 @@
 package typings.broadcastChannel
 
-import typings.broadcastChannel.broadcastChannelMod.EventType
+import typings.broadcastChannel.broadcastChannelMod.EventContext
 import typings.broadcastChannel.broadcastChannelMod.MethodType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,8 +17,14 @@ object broadcastChannelStrings {
   @js.native
   sealed trait internal
     extends StObject
-       with EventType
+       with EventContext
   inline def internal: internal = "internal".asInstanceOf[internal]
+  
+  @js.native
+  sealed trait leader
+    extends StObject
+       with EventContext
+  inline def leader: leader = "leader".asInstanceOf[leader]
   
   @js.native
   sealed trait localstorage
@@ -29,7 +35,7 @@ object broadcastChannelStrings {
   @js.native
   sealed trait message
     extends StObject
-       with EventType
+       with EventContext
   inline def message: message = "message".asInstanceOf[message]
   
   @js.native

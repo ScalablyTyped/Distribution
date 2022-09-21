@@ -15,7 +15,7 @@ object photoswipeUiDefaultMod {
     */
   @JSImport("photoswipe/dist/photoswipe-ui-default", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PhotoSwipeUIDefault {
     def this(pswp: typings.photoswipe.mod.^[Options], framework: UIFramework) = this()
@@ -322,7 +322,7 @@ object photoswipeUiDefaultMod {
       
       inline def setCloseElClassesUndefined: Self = StObject.set(x, "closeElClasses", js.undefined)
       
-      inline def setCloseElClassesVarargs(value: String*): Self = StObject.set(x, "closeElClasses", js.Array(value :_*))
+      inline def setCloseElClassesVarargs(value: String*): Self = StObject.set(x, "closeElClasses", js.Array(value*))
       
       inline def setCloseElUndefined: Self = StObject.set(x, "closeEl", js.undefined)
       
@@ -366,7 +366,7 @@ object photoswipeUiDefaultMod {
       
       inline def setShareButtonsUndefined: Self = StObject.set(x, "shareButtons", js.undefined)
       
-      inline def setShareButtonsVarargs(value: ShareButtonData*): Self = StObject.set(x, "shareButtons", js.Array(value :_*))
+      inline def setShareButtonsVarargs(value: ShareButtonData*): Self = StObject.set(x, "shareButtons", js.Array(value*))
       
       inline def setShareEl(value: Boolean): Self = StObject.set(x, "shareEl", value.asInstanceOf[js.Any])
       

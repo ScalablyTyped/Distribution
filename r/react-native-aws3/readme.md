@@ -10,15 +10,12 @@ Pure JavaScript react native library for uploading to AWS S3
 | ------------------ | :-------------: |
 | Full name          | react-native-aws3 |
 | Keywords           | react, react-native, react-component, aws, s3, image, upload, ios, android |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 126907 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10404.333333333334 |
+| # stars            | 392.0 |
 
 ## Links
-- [Homepage](https://github.com/benjreinhart/react-native-aws3#readme)
-- [Bugs](https://github.com/benjreinhart/react-native-aws3/issues)
-- [Repository](https://github.com/benjreinhart/react-native-aws3)
 - [Npm](https://www.npmjs.com/package/react-native-aws3)
     
 

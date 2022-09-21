@@ -21,5 +21,5 @@ object Renderer {
     * that returns valid HTML as a string from the data parameter passed to
     * the function.
     */
-  inline def render(template: js.Any, data: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def render(template: Any, data: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object defineLazyPropStrings {
   
   @js.native
-  sealed trait ^ extends StObject
-  inline def ^ : ^ = "^".asInstanceOf[^]
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
 }

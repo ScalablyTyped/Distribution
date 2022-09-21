@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "KeepAssets")
 @js.native
-class KeepAssets ()
+open class KeepAssets ()
   extends typings.babylonjs.legacyMod.KeepAssets

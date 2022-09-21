@@ -47,7 +47,7 @@ object DocumentFormatDetails {
     
     inline def `setDocument-natural-languageUndefined`: Self = StObject.set(x, "document-natural-language", js.undefined)
     
-    inline def `setDocument-natural-languageVarargs`(value: String*): Self = StObject.set(x, "document-natural-language", js.Array(value :_*))
+    inline def `setDocument-natural-languageVarargs`(value: String*): Self = StObject.set(x, "document-natural-language", js.Array(value*))
     
     inline def `setDocument-source-application-name`(value: String): Self = StObject.set(x, "document-source-application-name", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,10 @@
 package typings.maxmind
 
-import typings.node.anon.Interval
+import typings.node.anon.WatchFileOptionsbigintfal
+import typings.node.anon.WatchFileOptionsbiginttru
+import typings.node.fsMod.BigIntStats
 import typings.node.fsMod.PathLike
+import typings.node.fsMod.StatWatcher
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +15,26 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
+    def apply(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): StatWatcher = js.native
     def apply(
       filename: PathLike,
       options: Unit,
-      listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-    ): Unit = js.native
+      listener: js.Function2[
+          (/* curr */ BigIntStats) | (/* curr */ Stats), 
+          (/* prev */ BigIntStats) | (/* prev */ Stats), 
+          Unit
+        ]
+    ): StatWatcher = js.native
     def apply(
       filename: PathLike,
-      options: Interval,
+      options: WatchFileOptionsbigintfal,
       listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-    ): Unit = js.native
+    ): StatWatcher = js.native
+    def apply(
+      filename: PathLike,
+      options: WatchFileOptionsbiginttru,
+      listener: js.Function2[/* curr */ BigIntStats, /* prev */ BigIntStats, Unit]
+    ): StatWatcher = js.native
   }
   
   trait Max extends StObject {

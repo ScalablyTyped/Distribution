@@ -75,38 +75,18 @@ object mod {
       * Returns the current threshold generator, which by default generates about twenty nicely-rounded density thresholds.
       */
     def thresholds(): ThresholdCountGenerator[Double] | ThresholdNumberArrayGenerator[Double] = js.native
-    /**
-      * Sets the threshold generator to use the specified count and returns this density contour estimator.
-      * Approximately count uniformly-spaced nicely-rounded thresholds will be generated.
-      *
-      * @param count Expected number of thresholds.
-      */
-    def thresholds(count: Double): this.type = js.native
-    /**
-      * Sets the threshold generator to the specified function and returns this density contour estimator.
-      *
-      * Thresholds are defined as an array of values [x0, x1, …]. The first generated density contour corresponds to the area
-      * where the estimated density is greater than or equal to x0; the second contour corresponds to the area
-      * where the estimated density is greater than or equal to x1, and so on.
-      * Thus, there is exactly one generated MultiPolygon geometry object for each specified threshold value;
-      *  the threshold value is exposed as geometry.value. The first value x0 should typically be greater than zero.
-      *
-      * @param thresholds A threshold generator function. The threshold generator function is passed the array of input values
-      * as its argument and returns either an array of calculated thresholds, or the count of thresholds to use.
-      */
     def thresholds(thresholds: ThresholdCountGenerator[Double] | ThresholdNumberArrayGenerator[Double]): this.type = js.native
-    /**
-      * Sets the threshold generator to the specified array and returns this density contour estimator.
-      *
-      * Thresholds are defined as an array of values [x0, x1, …]. The first generated density contour corresponds to the area
-      * where the estimated density is greater than or equal to x0; the second contour corresponds to the area
-      * where the estimated density is greater than or equal to x1, and so on.
-      * Thus, there is exactly one generated MultiPolygon geometry object for each specified threshold value;
-      *  the threshold value is exposed as geometry.value. The first value x0 should typically be greater than zero.
-      *
-      * @param thresholds Array of thresholds to use.
-      */
     def thresholds(thresholds: js.Array[Double]): this.type = js.native
+    /**
+      * Sets the threshold generator to the specified function or array and returns this contour generator.
+      * Thresholds are defined as an array of values [x0, x1, …].
+      * The first generated density contour corresponds to the area where the estimated density is greater than or equal to x0;
+      * the second contour corresponds to the area where the estimated density is greater than or equal to x1, and so on.
+      * Thus, there is exactly one generated MultiPolygon geometry object for each specified threshold value; the threshold value is exposed as geometry.value.
+      * The first value x0 should typically be greater than zero.
+      * If a count is specified instead of an array of thresholds, then approximately count uniformly-spaced nicely-rounded thresholds will be generated; see d3.ticks.
+      */
+    def thresholds(thresholds: Double): this.type = js.native
     
     /**
       * Returns the current point weight accessor.
@@ -225,37 +205,16 @@ object mod {
       * Returns the current threshold generator, which by default implements Sturges’ formula.
       */
     def thresholds(): ThresholdCountGenerator[Double] | ThresholdNumberArrayGenerator[Double] = js.native
-    /**
-      * Sets the threshold generator to use the specified count and returns this contour generator.
-      * The input values’ extent will be uniformly divided into approximately count bins.
-      *
-      * @param count Expected number of threshold bins.
-      */
-    def thresholds(count: Double): this.type = js.native
-    /**
-      * Sets the threshold generator to the specified function and returns this contour generator.
-      *
-      * Thresholds are defined as an array of values [x0, x1, …].
-      * The first generated contour corresponds to the area where the input values are greater than or equal to x0;
-      * the second contour corresponds to the area where the input values are greater than or equal to x1, and so on.
-      * Thus, there is exactly one generated MultiPolygon geometry object for each specified threshold value;
-      * the threshold value is exposed as geometry.value.
-      *
-      * @param thresholds A threshold generator function. The threshold generator function is passed the array of input values
-      * as its argument and returns either an array of calculated thresholds, or the count of thresholds to use.
-      */
     def thresholds(thresholds: ThresholdCountGenerator[Double] | ThresholdNumberArrayGenerator[Double]): this.type = js.native
+    def thresholds(thresholds: js.Array[Double]): this.type = js.native
     /**
-      * Sets the threshold generator to the specified array and returns this contour generator.
-      *
+      * Sets the threshold generator to the specified function or array and returns this contour generator.
       * Thresholds are defined as an array of values [x0, x1, …].
       * The first generated contour corresponds to the area where the input values are greater than or equal to x0;
       * the second contour corresponds to the area where the input values are greater than or equal to x1, and so on.
-      * Thus, there is exactly one generated MultiPolygon geometry object for each specified threshold value;
-      * the threshold value is exposed as geometry.value.
-      *
-      * @param thresholds Array of thresholds to use.
+      * Thus, there is exactly one generated MultiPolygon geometry object for each specified threshold value; the threshold value is exposed as geometry.value.
+      * If a count is specified instead of an array of thresholds, then the input values’ extent will be uniformly divided into approximately count bins; see d3.ticks.
       */
-    def thresholds(thresholds: js.Array[Double]): this.type = js.native
+    def thresholds(thresholds: Double): this.type = js.native
   }
 }

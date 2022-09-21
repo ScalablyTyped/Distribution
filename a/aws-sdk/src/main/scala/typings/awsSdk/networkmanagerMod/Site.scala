@@ -9,17 +9,17 @@ trait Site extends StObject {
   /**
     * The date and time that the site was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the site.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[ConstrainedString] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.undefined
+  var GlobalNetworkId: js.UndefOr[typings.awsSdk.networkmanagerMod.GlobalNetworkId] = js.undefined
   
   /**
     * The location of the site.
@@ -29,12 +29,12 @@ trait Site extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the site.
     */
-  var SiteArn: js.UndefOr[String] = js.undefined
+  var SiteArn: js.UndefOr[typings.awsSdk.networkmanagerMod.SiteArn] = js.undefined
   
   /**
     * The ID of the site.
     */
-  var SiteId: js.UndefOr[String] = js.undefined
+  var SiteId: js.UndefOr[typings.awsSdk.networkmanagerMod.SiteId] = js.undefined
   
   /**
     * The state of the site.
@@ -55,15 +55,15 @@ object Site {
   
   extension [Self <: Site](x: Self) {
     
-    inline def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ConstrainedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
@@ -71,11 +71,11 @@ object Site {
     
     inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    inline def setSiteArn(value: String): Self = StObject.set(x, "SiteArn", value.asInstanceOf[js.Any])
+    inline def setSiteArn(value: SiteArn): Self = StObject.set(x, "SiteArn", value.asInstanceOf[js.Any])
     
     inline def setSiteArnUndefined: Self = StObject.set(x, "SiteArn", js.undefined)
     
-    inline def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
     inline def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
     
@@ -87,6 +87,6 @@ object Site {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

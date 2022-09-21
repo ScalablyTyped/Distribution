@@ -1,7 +1,7 @@
 
 # Scala.js typings for mixpanel-browser
 
-Typings are for version 2.35
+Typings are for version 2.38
 
 ## Library description:
 The official Mixpanel JavaScript browser client library
@@ -10,10 +10,10 @@ The official Mixpanel JavaScript browser client library
 | ------------------ | :-------------: |
 | Full name          | mixpanel-browser |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 56 |
-| # downloads        | 7027745 |
-| # stars            | 2 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1302440.6666666667 |
+| # stars            | 756.0 |
 
 ## Links
 - [Homepage](https://github.com/mixpanel/mixpanel-js)

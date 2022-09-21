@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object hotObservableMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.rxjs.subscriptionLoggableMod.SubscriptionLoggable because Inheritance from two classes. Inlined subscriptions, scheduler, logSubscribedFrame, logUnsubscribedFrame */ @JSImport("rxjs/internal/testing/HotObservable", "HotObservable")
+  - typings.rxjs.subscriptionLoggableMod.SubscriptionLoggable because Inheritance from two classes. Inlined subscriptions, scheduler, logSubscribedFrame, logUnsubscribedFrame */ @JSImport("rxjs/dist/types/internal/testing/HotObservable", "HotObservable")
   @js.native
-  class HotObservable[T] protected () extends Subject[T] {
+  open class HotObservable[T] protected () extends Subject[T] {
     def this(messages: js.Array[TestMessage], scheduler: Scheduler) = this()
     
     def logSubscribedFrame(): Double = js.native

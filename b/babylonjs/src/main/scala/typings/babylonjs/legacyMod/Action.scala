@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "Action")
 @js.native
-class Action protected ()
+open class Action protected ()
   extends typings.babylonjs.indexMod.Action {
   /**
     * Creates a new Action
@@ -15,10 +15,10 @@ class Action protected ()
     * @param condition an optional determinant of action
     */
   def this(/** the trigger, with or without parameters, for the action */
-  triggerOptions: js.Any) = this()
+  triggerOptions: Any) = this()
   def this(
     /** the trigger, with or without parameters, for the action */
-  triggerOptions: js.Any,
+  triggerOptions: Any,
     condition: typings.babylonjs.conditionMod.Condition
   ) = this()
 }
@@ -32,13 +32,15 @@ object Action {
   inline def _GetTargetProperty(target: typings.babylonjs.nodeMod.Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   /**
     * Internal only
+    * @param target
     * @hidden
     */
   inline def _GetTargetProperty(target: typings.babylonjs.sceneMod.Scene): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   /**
     * Internal only
+    * @param value
     * @hidden
     */
-  inline def _SerializeValueAsString(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def _SerializeValueAsString(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

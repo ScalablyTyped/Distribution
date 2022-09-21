@@ -6,17 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CorpusQuery extends StObject {
   
-  /** Details pertaining to Drive holds. If set, corpus must be Drive. */
+  /** Service-specific options for Drive holds. If set, **CorpusType** must be **DRIVE**. */
   var driveQuery: js.UndefOr[HeldDriveQuery] = js.undefined
   
-  /** Details pertaining to Groups holds. If set, corpus must be Groups. */
+  /** Service-specific options for Groups holds. If set, **CorpusType** must be **GROUPS**. */
   var groupsQuery: js.UndefOr[HeldGroupsQuery] = js.undefined
   
-  /** Details pertaining to Hangouts Chat holds. If set, corpus must be Hangouts Chat. */
+  /** Service-specific options for Chat holds. If set, **CorpusType** must be **HANGOUTS_CHAT**. */
   var hangoutsChatQuery: js.UndefOr[HeldHangoutsChatQuery] = js.undefined
   
-  /** Details pertaining to mail holds. If set, corpus must be mail. */
+  /** Service-specific options for Gmail holds. If set, **CorpusType** must be **MAIL**. */
   var mailQuery: js.UndefOr[HeldMailQuery] = js.undefined
+  
+  /** Service-specific options for Voice holds. If set, **CorpusType** must be **VOICE**. */
+  var voiceQuery: js.UndefOr[HeldVoiceQuery] = js.undefined
 }
 object CorpusQuery {
   
@@ -42,5 +45,9 @@ object CorpusQuery {
     inline def setMailQuery(value: HeldMailQuery): Self = StObject.set(x, "mailQuery", value.asInstanceOf[js.Any])
     
     inline def setMailQueryUndefined: Self = StObject.set(x, "mailQuery", js.undefined)
+    
+    inline def setVoiceQuery(value: HeldVoiceQuery): Self = StObject.set(x, "voiceQuery", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceQueryUndefined: Self = StObject.set(x, "voiceQuery", js.undefined)
   }
 }

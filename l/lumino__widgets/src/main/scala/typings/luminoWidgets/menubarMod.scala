@@ -1,14 +1,17 @@
 package typings.luminoWidgets
 
+import typings.luminoVirtualdom.mod.ElementARIAAttrs
 import typings.luminoVirtualdom.mod.ElementDataset
 import typings.luminoVirtualdom.mod.VirtualElement
 import typings.luminoVirtualdom.mod.h.Child
 import typings.luminoWidgets.menuMod.Menu
+import typings.luminoWidgets.menuMod.Menu.IOpenOptions
 import typings.luminoWidgets.menubarMod.MenuBar.IOptions
 import typings.luminoWidgets.menubarMod.MenuBar.IRenderer
 import typings.luminoWidgets.titleMod.Title
 import typings.luminoWidgets.widgetMod.Widget
 import typings.std.Event
+import typings.std.FocusEvent
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,56 +26,58 @@ object menubarMod {
     *
     * @param options - The options for initializing the menu bar.
     */
-  class MenuBar () extends Widget {
+  open class MenuBar () extends Widget {
     def this(options: IOptions) = this()
     
-    /* private */ var _activeIndex: js.Any = js.native
+    /* private */ var _activeIndex: Any = js.native
     
-    /* private */ var _childMenu: js.Any = js.native
+    /* private */ var _childMenu: Any = js.native
     
     /**
       * Close the child menu immediately.
       *
       * This is a no-op if a child menu is not open.
       */
-    /* private */ var _closeChildMenu: js.Any = js.native
+    /* private */ var _closeChildMenu: Any = js.native
     
     /**
       * Handle the `'keydown'` event for the menu bar.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the menu bar.
       */
-    /* private */ var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: Any = js.native
     
     /**
       * Handle the `'mouseleave'` event for the menu bar.
       */
-    /* private */ var _evtMouseLeave: js.Any = js.native
+    /* private */ var _evtMouseLeave: Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the menu bar.
       */
-    /* private */ var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: Any = js.native
     
-    /* private */ var _menus: js.Any = js.native
+    /* private */ var _forceItemsPosition: Any = js.native
+    
+    /* private */ var _menus: Any = js.native
     
     /**
       * Handle the `aboutToClose` signal of a menu.
       */
-    /* private */ var _onMenuAboutToClose: js.Any = js.native
+    /* private */ var _onMenuAboutToClose: Any = js.native
     
     /**
       * Handle the `menuRequested` signal of a child menu.
       */
-    /* private */ var _onMenuMenuRequested: js.Any = js.native
+    /* private */ var _onMenuMenuRequested: Any = js.native
     
     /**
       * Handle the `changed` signal of a title object.
       */
-    /* private */ var _onTitleChanged: js.Any = js.native
+    /* private */ var _onTitleChanged: Any = js.native
     
     /**
       * Open the child menu at the active index immediately.
@@ -80,7 +85,7 @@ object menubarMod {
       * If a different child menu is already open, it will be closed,
       * even if there is no active menu.
       */
-    /* private */ var _openChildMenu: js.Any = js.native
+    /* private */ var _openChildMenu: Any = js.native
     
     /**
       * Get the index of the currently active menu.
@@ -214,10 +219,7 @@ object menubarMod {
       */
     @JSImport("@lumino/widgets/types/menubar", "MenuBar.Renderer")
     @js.native
-    /**
-      * Construct a new renderer.
-      */
-    class Renderer ()
+    open class Renderer ()
       extends StObject
          with IRenderer {
       
@@ -229,6 +231,15 @@ object menubarMod {
         * @returns The full class name for the item icon.
         */
       def createIconClass(data: IRenderData): String = js.native
+      
+      /**
+        * Create the aria attributes for menu bar item.
+        *
+        * @param data - The data to use for the aria attributes.
+        *
+        * @returns The aria attributes object for the item.
+        */
+      def createItemARIA(data: IRenderData): ElementARIAAttrs = js.native
       
       /**
         * Create the class name for the menu bar item.
@@ -299,6 +310,17 @@ object menubarMod {
     trait IOptions extends StObject {
       
       /**
+        * Whether to force the position of the menu. The MenuBar forces the
+        * coordinates of its menus by default. With this option you can disable it.
+        *
+        * Setting to `false` will enable the logic which repositions the
+        * coordinates of the menu if it will not fit entirely on screen.
+        *
+        * The default is `true`.
+        */
+      var forceItemsPosition: js.UndefOr[IOpenOptions] = js.undefined
+      
+      /**
         * A custom renderer for creating menu bar content.
         *
         * The default is a shared renderer instance.
@@ -313,6 +335,10 @@ object menubarMod {
       }
       
       extension [Self <: IOptions](x: Self) {
+        
+        inline def setForceItemsPosition(value: IOpenOptions): Self = StObject.set(x, "forceItemsPosition", value.asInstanceOf[js.Any])
+        
+        inline def setForceItemsPositionUndefined: Self = StObject.set(x, "forceItemsPosition", js.undefined)
         
         inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
@@ -330,6 +356,8 @@ object menubarMod {
         */
       val active: Boolean
       
+      val onfocus: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
+      
       /**
         * The title to be rendered.
         */
@@ -345,6 +373,10 @@ object menubarMod {
       extension [Self <: IRenderData](x: Self) {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        
+        inline def setOnfocus(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onfocus", js.Any.fromFunction1(value))
+        
+        inline def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
         
         inline def setTitle(value: Title[Widget]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }

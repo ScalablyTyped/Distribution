@@ -22,14 +22,14 @@ trait Oauthtoken extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /** Required. Build ID of the original build. */
+  var id: String
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** The parent resource where this build will be created. Format: `projects/{project}/locations/{location}` */
-  var parent: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -48,8 +48,8 @@ trait Oauthtoken extends StObject {
 }
 object Oauthtoken {
   
-  inline def apply(projectId: String): Oauthtoken = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(id: String, projectId: String): Oauthtoken = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Oauthtoken]
   }
   
@@ -75,6 +75,8 @@ object Oauthtoken {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -82,10 +84,6 @@ object Oauthtoken {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-    
-    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

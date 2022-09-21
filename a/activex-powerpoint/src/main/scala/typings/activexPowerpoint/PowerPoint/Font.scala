@@ -35,7 +35,7 @@ trait Font extends StObject {
   
   var NameOther: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Font_typekey")
   var PowerPointDotFont_typekey: Font
@@ -67,7 +67,7 @@ object Font {
     NameComplexScript: String,
     NameFarEast: String,
     NameOther: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotFont_typekey: Font,
     Shadow: MsoTriState,
     Size: Double,
@@ -110,7 +110,7 @@ object Font {
     
     inline def setNameOther(value: String): Self = StObject.set(x, "NameOther", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotFont_typekey(value: Font): Self = StObject.set(x, "PowerPoint.Font_typekey", value.asInstanceOf[js.Any])
     

@@ -32,6 +32,6 @@ object ListQueuesResponse {
     
     inline def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
     
-    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "queues", js.Array(value*))
   }
 }

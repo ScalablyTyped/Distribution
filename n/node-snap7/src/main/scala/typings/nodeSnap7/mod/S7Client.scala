@@ -1,8 +1,7 @@
 package typings.nodeSnap7.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeSnap7.mod.^
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
   def ABRead(start: Double, size: Double): Buffer | Boolean = js.native
-  def ABRead(start: Double, size: Double, callback: js.Function2[/* err */ js.Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
+  def ABRead(start: Double, size: Double, callback: js.Function2[/* err */ Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
   
   /**
     * This is a lean function of WriteArea() to write PLC process outputs.
@@ -33,7 +32,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def ABWrite(start: Double, size: Double, buffer: Buffer): Boolean = js.native
-  def ABWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def ABWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * This is a lean function of ReadArea() to read PLC Counters.
@@ -45,7 +44,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
   def CTRead(start: Double, size: Double): Buffer | Boolean = js.native
-  def CTRead(start: Double, size: Double, callback: js.Function2[/* err */ js.Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
+  def CTRead(start: Double, size: Double, callback: js.Function2[/* err */ Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
   
   /**
     * This is a lean function of WriteArea() to write PLC Counters.
@@ -58,7 +57,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def CTWrite(start: Double, size: Double, buffer: Buffer): Boolean = js.native
-  def CTWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def CTWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Clears the password set for the current session (logout).
@@ -67,7 +66,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def ClearSessionPassword(): Boolean = js.native
-  def ClearSessionPassword(callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def ClearSessionPassword(callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Performs the Memory compress action.
@@ -77,7 +76,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def Compress(timeout: Double): Boolean = js.native
-  def Compress(timeout: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def Compress(timeout: Double, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   //Instance members here
   //API - Control functions
@@ -88,7 +87,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def Connect(): Boolean = js.native
-  def Connect(callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def Connect(callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /** 
     * Connects the client to the hardware at ip, rack, slot coordinates.
@@ -100,12 +99,12 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def ConnectTo(ip: String, rack: Double, slot: Double): Boolean = js.native
-  def ConnectTo(ip: String, rack: Double, slot: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def ConnectTo(ip: String, rack: Double, slot: Double, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Returns the connection status.
     */
-  def Connected(): js.Any = js.native
+  def Connected(): Any = js.native
   
   /**
     * Performs the Copy Ram to Rom action.
@@ -116,7 +115,7 @@ trait S7Client extends StObject {
     * Not all CPUs support this operation. The CPU must be in STOP mode.
     */
   def CopyRamToRom(timeout: Double): Boolean = js.native
-  def CopyRamToRom(timeout: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def CopyRamToRom(timeout: Double, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Fills a DB in AG with a given byte without the need of specifying its size.
@@ -127,7 +126,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def DBFill(dbNumber: Double, fillChar: String): Boolean = js.native
-  def DBFill(dbNumber: Double, fillChar: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def DBFill(dbNumber: Double, fillChar: String, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Uploads a DB from AG. This function is equivalent to Upload() with BlockType = Block_DB but it uses a different approach 
@@ -140,7 +139,7 @@ trait S7Client extends StObject {
     * This function first gathers the DB size via GetAgBlockInfo() then calls DBRead().
     */
   def DBGet(dbNumber: Double): Buffer | Boolean = js.native
-  def DBGet(dbNumber: Double, callback: js.Function2[/* err */ js.Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
+  def DBGet(dbNumber: Double, callback: js.Function2[/* err */ Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
   
   /**
     * This is a lean function of ReadArea() to read PLC DB.
@@ -157,7 +156,7 @@ trait S7Client extends StObject {
     dbNumber: Double,
     start: Double,
     size: Double,
-    callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
+    callback: js.Function2[/* err */ Any, /* data */ Any, Unit]
   ): Buffer | Boolean = js.native
   
   /**
@@ -177,7 +176,7 @@ trait S7Client extends StObject {
     start: Double,
     size: Double,
     buffer: Buffer,
-    callback: js.Function1[/* err */ js.Any, Unit]
+    callback: js.Function1[/* err */ Any, Unit]
   ): Boolean = js.native
   
   /**
@@ -190,7 +189,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def Delete(blockType: BlockType, blockNum: Double): Boolean = js.native
-  def Delete(blockType: BlockType, blockNum: Double, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def Delete(blockType: BlockType, blockNum: Double, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Disconnects “gracefully” the Client from the PLC.
@@ -208,7 +207,7 @@ trait S7Client extends StObject {
     * If the parameter blockNum is -1, the block number is not changed else the block is downloaded with the provided number (just like a “Download As…”).
     */
   def Download(blockNum: Double, buffer: Buffer): Boolean = js.native
-  def Download(blockNum: Double, buffer: Buffer, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def Download(blockNum: Double, buffer: Buffer, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * This is a lean function of ReadArea() to read PLC process inputs.
@@ -220,7 +219,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
   def EBRead(start: Double, size: Double): Buffer | Boolean = js.native
-  def EBRead(start: Double, size: Double, callback: js.Function2[/* err */ js.Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
+  def EBRead(start: Double, size: Double, callback: js.Function2[/* err */ Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
   
   /**
     * This is a lean function of WriteArea() to write PLC process inputs.
@@ -233,7 +232,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def EBWrite(start: Double, size: Double, buffer: Buffer): Boolean = js.native
-  def EBWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def EBWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Returns a textual explanation of a given error number.
@@ -260,7 +259,7 @@ trait S7Client extends StObject {
   def FullUpload(
     blockType: BlockType,
     blockNum: Double,
-    callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]
+    callback: js.Function2[/* err */ Any, /* data */ js.Object, Unit]
   ): js.Object | Boolean = js.native
   
   /**
@@ -272,12 +271,12 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns an object (see below) on success or false on error. 
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
-  def GetAgBlockInfo(blockType: BlockType, blockNum: Double): js.Any | Boolean = js.native
+  def GetAgBlockInfo(blockType: BlockType, blockNum: Double): Any | Boolean = js.native
   def GetAgBlockInfo(
     blockType: BlockType,
     blockNum: Double,
-    callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
-  ): js.Any | Boolean = js.native
+    callback: js.Function2[/* err */ Any, /* data */ Any, Unit]
+  ): Any | Boolean = js.native
   
   /**
     * Gets CP (communication processor) info.
@@ -285,8 +284,8 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns an object on success or false on error. 
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
-  def GetCpInfo(): js.Any | Boolean = js.native
-  def GetCpInfo(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): js.Any | Boolean = js.native
+  def GetCpInfo(): Any | Boolean = js.native
+  def GetCpInfo(callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Any | Boolean = js.native
   
   /**
     * Gets CPU module name, serial number and other info.
@@ -294,8 +293,8 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns an object on success or false on error. 
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
-  def GetCpuInfo(): js.Any | Boolean = js.native
-  def GetCpuInfo(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): js.Any | Boolean = js.native
+  def GetCpuInfo(): Any | Boolean = js.native
+  def GetCpuInfo(callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Any | Boolean = js.native
   
   /**
     * Gets CPU order code and version info.
@@ -303,14 +302,14 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns an object on success or false on error. 
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
-  def GetOrderCode(): js.Any | Boolean = js.native
-  def GetOrderCode(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): js.Any | Boolean = js.native
+  def GetOrderCode(): Any | Boolean = js.native
+  def GetOrderCode(callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Any | Boolean = js.native
   
   /** 
     * Reads an internal Client object parameter.
     * Returns the parameter value on success or false on error.
     */
-  def GetParam(paramNumber: ParamNumber): js.Any = js.native
+  def GetParam(paramNumber: ParamNumber): Any = js.native
   
   /**
     * Returns detailed information about a block present in a user buffer. This function is usually used in conjunction with FullUpload(). 
@@ -327,8 +326,8 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns a javascript Date() object on success or false on error. 
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
-  def GetPlcDateTime(): js.Any | Boolean = js.native
-  def GetPlcDateTime(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): js.Any | Boolean = js.native
+  def GetPlcDateTime(): Any | Boolean = js.native
+  def GetPlcDateTime(callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Any | Boolean = js.native
   
   /**
     * Gets the CPU protection level info.
@@ -336,13 +335,13 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns the protection object on success or false on error. 
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
-  def GetProtection(): js.Any | Boolean = js.native
-  def GetProtection(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): js.Any | Boolean = js.native
+  def GetProtection(): Any | Boolean = js.native
+  def GetProtection(callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Any | Boolean = js.native
   
   /**
     * Returns the last job result.
     */
-  def LastError(): js.Any = js.native
+  def LastError(): Any = js.native
   
   //API - Directory functions
   /**
@@ -352,7 +351,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
   def ListBlocks(): js.Object | Boolean = js.native
-  def ListBlocks(callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]): js.Object | Boolean = js.native
+  def ListBlocks(callback: js.Function2[/* err */ Any, /* data */ js.Object, Unit]): js.Object | Boolean = js.native
   
   /**
     * This function returns an array of the AG list of a specified block type.
@@ -361,8 +360,8 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns an array on success or false on error. 
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
-  def ListBlocksOfType(blockType: BlockType): js.Any | Boolean = js.native
-  def ListBlocksOfType(blockType: BlockType, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): js.Any | Boolean = js.native
+  def ListBlocksOfType(blockType: BlockType): Any | Boolean = js.native
+  def ListBlocksOfType(blockType: BlockType, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Any | Boolean = js.native
   
   /**
     * This is a lean function of ReadArea() to read PLC Merkers.
@@ -374,7 +373,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
   def MBRead(start: Double, size: Double): Buffer | Boolean = js.native
-  def MBRead(start: Double, size: Double, callback: js.Function2[/* err */ js.Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
+  def MBRead(start: Double, size: Double, callback: js.Function2[/* err */ Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
   
   /**
     * This is a lean function of WriteArea() to write PLC Merkers.
@@ -387,7 +386,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def MBWrite(start: Double, size: Double, buffer: Buffer): Boolean = js.native
-  def MBWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def MBWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Returns the PDU length negotiated between the client and the PLC during the connection or false on error.
@@ -408,7 +407,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def PlcColdStart(): Boolean = js.native
-  def PlcColdStart(callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def PlcColdStart(callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   //API - PLC control functions
   /**
@@ -418,7 +417,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def PlcHotStart(): Boolean = js.native
-  def PlcHotStart(callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def PlcHotStart(callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Returns the CPU status (running/stopped).
@@ -427,7 +426,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
   def PlcStatus(): Status | Boolean = js.native
-  def PlcStatus(callback: js.Function2[/* err */ js.Any, /* data */ Status, Unit]): Status | Boolean = js.native
+  def PlcStatus(callback: js.Function2[/* err */ Any, /* data */ Status, Unit]): Status | Boolean = js.native
   
   /**
     * Puts the CPU in STOP mode.
@@ -436,7 +435,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def PlcStop(): Boolean = js.native
-  def PlcStop(callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def PlcStop(callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   //API - Data I/O functions
   /**
@@ -457,7 +456,7 @@ trait S7Client extends StObject {
     start: Double,
     amount: Double,
     wordLen: WordLen,
-    callback: js.Function2[/* err */ js.Any, /* data */ Buffer, Unit]
+    callback: js.Function2[/* err */ Any, /* data */ Buffer, Unit]
   ): Buffer | Boolean = js.native
   
   /**
@@ -471,7 +470,7 @@ trait S7Client extends StObject {
   def ReadMultiVars(multiVars: js.Array[MultiVarRead]): js.Array[MultiVarsReadResult] | Boolean = js.native
   def ReadMultiVars(
     multiVars: js.Array[MultiVarRead],
-    callback: js.Function2[/* err */ js.Any, /* data */ js.Array[MultiVarsReadResult], Unit]
+    callback: js.Function2[/* err */ Any, /* data */ js.Array[MultiVarsReadResult], Unit]
   ): js.Array[MultiVarsReadResult] | Boolean = js.native
   
   //API - System info functions
@@ -482,7 +481,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
   def ReadSZL(id: Double, index: Double): Buffer | Boolean = js.native
-  def ReadSZL(id: Double, index: Double, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Buffer | Boolean = js.native
+  def ReadSZL(id: Double, index: Double, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Buffer | Boolean = js.native
   
   /**
     * Reads the directory of the partial lists.
@@ -490,8 +489,8 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns an array on success or false on error. 
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
-  def ReadSZLList(): js.Any | Boolean = js.native
-  def ReadSZLList(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): js.Any | Boolean = js.native
+  def ReadSZLList(): Any | Boolean = js.native
+  def ReadSZLList(callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Any | Boolean = js.native
   
   /** 
     * Sets internally ip, localTSAP, remoteTSAP coordinates.
@@ -500,7 +499,7 @@ trait S7Client extends StObject {
     * - remoteTSAP Remote TSAP (PLC TSAP)
     * Returns true on success or false on error. 
     */
-  def SetConnectionParams(ip: String, localTSAP: js.Any, remoteTSAP: js.Any): Boolean = js.native
+  def SetConnectionParams(ip: String, localTSAP: Any, remoteTSAP: Any): Boolean = js.native
   
   /**
     * Sets the connection resource type, i.e the way in which the Clients connects to a PLC.
@@ -513,7 +512,7 @@ trait S7Client extends StObject {
     * value New parameter value
     * Returns true on success or false on error.
     */
-  def SetParam(paramNumber: ParamNumber, value: js.Any): Boolean = js.native
+  def SetParam(paramNumber: ParamNumber, value: Any): Boolean = js.native
   
   /**
     * Sets the PLC date and time.
@@ -531,8 +530,8 @@ trait S7Client extends StObject {
     * If callback is not set the function is blocking and returns a true on success or false on error. 
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
-  def SetPlcDateTime(dateTime: Date): Boolean = js.native
-  def SetPlcDateTime(dateTime: Date, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def SetPlcDateTime(dateTime: js.Date): Boolean = js.native
+  def SetPlcDateTime(dateTime: js.Date, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Sets the PLC date and time in accord to the PC system Date/Time.
@@ -541,7 +540,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def SetPlcSystemDateTime(): Boolean = js.native
-  def SetPlcSystemDateTime(callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def SetPlcSystemDateTime(callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   //API - Security functions
   /**
@@ -553,7 +552,7 @@ trait S7Client extends StObject {
     * A password accepted by a PLC is an 8 chars string, a longer password will be trimmed, and a shorter one will be "right space padded".
     */
   def SetSessionPassword(password: String): Boolean = js.native
-  def SetSessionPassword(password: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def SetSessionPassword(password: String, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * This is a lean function of ReadArea() to read PLC Timers.
@@ -565,7 +564,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error and result argument is given to the callback.
     */
   def TMRead(start: Double, size: Double): Buffer | Boolean = js.native
-  def TMRead(start: Double, size: Double, callback: js.Function2[/* err */ js.Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
+  def TMRead(start: Double, size: Double, callback: js.Function2[/* err */ Any, /* data */ Buffer, Unit]): Buffer | Boolean = js.native
   
   /**
     * This is a lean function of WriteArea() to write PLC Timers.
@@ -578,7 +577,7 @@ trait S7Client extends StObject {
     * If callback is set the function is non-blocking and an error argument is given to the callback.
     */
   def TMWrite(start: Double, size: Double, buffer: Buffer): Boolean = js.native
-  def TMWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  def TMWrite(start: Double, size: Double, buffer: Buffer, callback: js.Function1[/* err */ Any, Unit]): Boolean = js.native
   
   /**
     * Uploads a block body from AG. Only the block body (but header and footer) is copied into the user buffer.
@@ -592,7 +591,7 @@ trait S7Client extends StObject {
   def Upload(
     blockType: BlockType,
     blockNum: Double,
-    callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]
+    callback: js.Function2[/* err */ Any, /* data */ js.Object, Unit]
   ): js.Object | Boolean = js.native
   
   /**
@@ -615,7 +614,7 @@ trait S7Client extends StObject {
     amount: Double,
     wordLen: WordLen,
     buffer: Buffer,
-    callback: js.Function1[/* err */ js.Any, Unit]
+    callback: js.Function1[/* err */ Any, Unit]
   ): Boolean = js.native
   
   /**
@@ -629,7 +628,7 @@ trait S7Client extends StObject {
   def WriteMultiVars(multiVars: js.Array[MultiVarWrite]): js.Array[MultiVarsWriteResult] | Boolean = js.native
   def WriteMultiVars(
     multiVars: js.Array[MultiVarWrite],
-    callback: js.Function2[/* err */ js.Any, /* data */ js.Array[MultiVarsWriteResult], Unit]
+    callback: js.Function2[/* err */ Any, /* data */ js.Array[MultiVarsWriteResult], Unit]
   ): js.Array[MultiVarsWriteResult] | Boolean = js.native
 }
 object S7Client {

@@ -6,7 +6,6 @@ import typings.babelPluginReactHtmlAttrs.mod.ExoticComponent
 import typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor
 import typings.babelPluginReactHtmlAttrs.mod.ReactElement
 import typings.std.Exclude
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +52,7 @@ object experimentalMod {
     object DirectionalSuspenseListProps {
       
       inline def apply(
-        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]]),
+        children: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]]),
         revealOrder: forwards | backwards
       ): DirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
@@ -89,7 +88,7 @@ object experimentalMod {
     object NonDirectionalSuspenseListProps {
       
       inline def apply(
-        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
+        children: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
       ): NonDirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[NonDirectionalSuspenseListProps]
@@ -139,12 +138,12 @@ object experimentalMod {
         * It does, however, allow those children to be wrapped inside a single
         * level of `<React.Fragment>`.
         */
-      var children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
+      var children: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
     }
     object SuspenseListCommonProps {
       
       inline def apply(
-        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
+        children: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
       ): SuspenseListCommonProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[SuspenseListCommonProps]
@@ -153,7 +152,7 @@ object experimentalMod {
       extension [Self <: SuspenseListCommonProps](x: Self) {
         
         inline def setChildren(
-          value: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
+          value: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
         ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       }
     }
@@ -166,7 +165,7 @@ object experimentalMod {
     object SuspenseListProps {
       
       inline def DirectionalSuspenseListProps(
-        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]]),
+        children: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]]),
         revealOrder: forwards | backwards
       ): typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.DirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
@@ -174,7 +173,7 @@ object experimentalMod {
       }
       
       inline def NonDirectionalSuspenseListProps(
-        children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
+        children: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
       ): typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.NonDirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.NonDirectionalSuspenseListProps]

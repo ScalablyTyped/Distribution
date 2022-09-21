@@ -32,6 +32,11 @@ trait CreateConnectionRequest extends StObject {
   var providerName: js.UndefOr[ProviderName] = js.undefined
   
   /**
+    * Indicates whether you want the connection to support MAC Security (MACsec). MAC Security (MACsec) is only available on dedicated connections. For information about MAC Security (MACsec) prerequisties, see MACsec prerequisties in the Direct Connect User Guide.
+    */
+  var requestMACSec: js.UndefOr[RequestMACSec] = js.undefined
+  
+  /**
     * The tags to associate with the lag.
     */
   var tags: js.UndefOr[TagList] = js.undefined
@@ -59,10 +64,14 @@ object CreateConnectionRequest {
     
     inline def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
     
+    inline def setRequestMACSec(value: RequestMACSec): Self = StObject.set(x, "requestMACSec", value.asInstanceOf[js.Any])
+    
+    inline def setRequestMACSecUndefined: Self = StObject.set(x, "requestMACSec", js.undefined)
+    
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

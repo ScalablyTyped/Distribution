@@ -5,7 +5,7 @@ import typings.arangodb.ArangoDB.HttpMethod
 import typings.arangodb.anon.Algorithm
 import typings.arangodb.anon.Basic
 import typings.arangodb.arangodbBooleans.`false`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +33,7 @@ trait Request extends StObject {
   
   var baseUrl: String = js.native
   
-  var body: js.Any = js.native
+  var body: Any = js.native
   
   var context: Context = js.native
   
@@ -53,7 +53,7 @@ trait Request extends StObject {
   def is(types: String*): String = js.native
   def is(types: js.Array[String]): String = js.native
   
-  def json(): js.Any = js.native
+  def json(): Any = js.native
   
   def makeAbsolute(path: String): String = js.native
   def makeAbsolute(path: String, query: String): String = js.native
@@ -63,17 +63,17 @@ trait Request extends StObject {
   
   var originalUrl: String = js.native
   
-  def param(name: String): js.Any = js.native
+  def param(name: String): Any = js.native
   
   var path: String = js.native
   
-  var pathParams: StringDictionary[js.Any] = js.native
+  var pathParams: StringDictionary[Any] = js.native
   
   var port: Double = js.native
   
   var protocol: String = js.native
   
-  var queryParams: StringDictionary[js.Any] = js.native
+  var queryParams: StringDictionary[Any] = js.native
   
   def range(): Ranges | Double = js.native
   def range(size: Double): Ranges | Double = js.native

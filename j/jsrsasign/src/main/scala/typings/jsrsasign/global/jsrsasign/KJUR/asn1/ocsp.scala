@@ -59,7 +59,7 @@ object ocsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.ocsp.CertID")
   @js.native
-  class CertID ()
+  open class CertID ()
     extends typings.jsrsasign.mod.KJUR.asn1.ocsp.CertID {
     def this(params: Keyhash) = this()
     def this(params: CertificateRequest) = this()
@@ -88,7 +88,7 @@ object ocsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.ocsp.OCSPRequest")
   @js.native
-  class OCSPRequest ()
+  open class OCSPRequest ()
     extends typings.jsrsasign.mod.KJUR.asn1.ocsp.OCSPRequest {
     def this(params: CertificateRequestList) = this()
   }
@@ -164,7 +164,7 @@ object ocsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.ocsp.Request")
   @js.native
-  class Request ()
+  open class Request ()
     extends typings.jsrsasign.mod.KJUR.asn1.ocsp.Request {
     def this(params: Namehash) = this()
     def this(params: CertificateRequest) = this()
@@ -194,7 +194,7 @@ object ocsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.ocsp.TBSRequest")
   @js.native
-  class TBSRequest ()
+  open class TBSRequest ()
     extends typings.jsrsasign.mod.KJUR.asn1.ocsp.TBSRequest {
     def this(params: CertificateRequestList) = this()
   }

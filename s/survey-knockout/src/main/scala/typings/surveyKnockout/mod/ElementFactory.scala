@@ -6,13 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ElementFactory")
 @js.native
-class ElementFactory () extends StObject {
+open class ElementFactory () extends StObject {
   
   def clear(): Unit = js.native
   
   def createElement(elementType: String, name: String): IElement = js.native
   
-  def getAllTypes(): js.Array[String] = js.native
+  var creatorHash: Any = js.native
+  
+  def getAllTypes(): js.Array[Any] = js.native
   
   def registerElement(elementType: String, elementCreator: js.Function1[/* name */ String, IElement]): Unit = js.native
   

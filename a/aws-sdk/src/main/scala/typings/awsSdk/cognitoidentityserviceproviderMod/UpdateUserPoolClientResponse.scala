@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateUserPoolClientResponse extends StObject {
   
   /**
-    * The user pool client value from the response from the server when an update user pool client request is made.
+    * The user pool client value from the response from the server when you request to update the user pool client.
     */
   var UserPoolClient: js.UndefOr[UserPoolClientType] = js.undefined
 }

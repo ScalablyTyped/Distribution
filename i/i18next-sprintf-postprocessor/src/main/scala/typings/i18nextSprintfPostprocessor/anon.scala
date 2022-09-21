@@ -26,7 +26,7 @@ object anon {
       
       inline def setSprintf(value: js.Array[String]): Self = StObject.set(x, "sprintf", value.asInstanceOf[js.Any])
       
-      inline def setSprintfVarargs(value: String*): Self = StObject.set(x, "sprintf", js.Array(value :_*))
+      inline def setSprintfVarargs(value: String*): Self = StObject.set(x, "sprintf", js.Array(value*))
     }
   }
 }

@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VirtualGatewayTlsValidationContext extends StObject {
   
   /**
-    * A reference to an object that represents a TLS validation context trust.
+    * A reference to an object that represents the SANs for a virtual gateway's listener's Transport Layer Security (TLS) validation context.
+    */
+  var subjectAlternativeNames: js.UndefOr[SubjectAlternativeNames] = js.undefined
+  
+  /**
+    * A reference to where to retrieve the trust chain when validating a peer’s Transport Layer Security (TLS) certificate.
     */
   var trust: VirtualGatewayTlsValidationContextTrust
 }
@@ -19,6 +24,10 @@ object VirtualGatewayTlsValidationContext {
   }
   
   extension [Self <: VirtualGatewayTlsValidationContext](x: Self) {
+    
+    inline def setSubjectAlternativeNames(value: SubjectAlternativeNames): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "subjectAlternativeNames", js.undefined)
     
     inline def setTrust(value: VirtualGatewayTlsValidationContextTrust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
   }

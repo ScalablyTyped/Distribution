@@ -16,6 +16,8 @@ trait Container extends StObject {
   
   var offsetScroll: Double
   
+  var offsetSummary: Double
+  
   var stickyClassName: String
 }
 object Container {
@@ -25,9 +27,10 @@ object Container {
     isSticky: Boolean,
     offsetHeader: Double,
     offsetScroll: Double,
+    offsetSummary: Double,
     stickyClassName: String
   ): Container = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], isSticky = isSticky.asInstanceOf[js.Any], offsetHeader = offsetHeader.asInstanceOf[js.Any], offsetScroll = offsetScroll.asInstanceOf[js.Any], stickyClassName = stickyClassName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], isSticky = isSticky.asInstanceOf[js.Any], offsetHeader = offsetHeader.asInstanceOf[js.Any], offsetScroll = offsetScroll.asInstanceOf[js.Any], offsetSummary = offsetSummary.asInstanceOf[js.Any], stickyClassName = stickyClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
   
@@ -40,6 +43,8 @@ object Container {
     inline def setOffsetHeader(value: Double): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
     
     inline def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetSummary(value: Double): Self = StObject.set(x, "offsetSummary", value.asInstanceOf[js.Any])
     
     inline def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
   }

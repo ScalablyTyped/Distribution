@@ -13,23 +13,27 @@ trait Enumerator[T] extends StObject {
     * Returns true if the current item is the last one in the collection, or the collection is empty,
     * or the current item is undefined.
     */
+  /* standard scripthost */
   def atEnd(): scala.Boolean
   
   /**
     * Returns the current item in the collection
     */
+  /* standard scripthost */
   def item(): T
   
   /**
     * Resets the current item in the collection to the first item. If there are no items in the collection,
     * the current item is set to undefined.
     */
+  /* standard scripthost */
   def moveFirst(): Unit
   
   /**
     * Moves the current item to the next item in the collection. If the enumerator is at the end of
     * the collection or the collection is empty, the current item is set to undefined.
     */
+  /* standard scripthost */
   def moveNext(): Unit
 }
 object Enumerator {

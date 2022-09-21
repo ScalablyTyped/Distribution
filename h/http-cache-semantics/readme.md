@@ -10,10 +10,10 @@ Parses Cache-Control and other headers. Helps building correct HTTP caches and p
 | ------------------ | :-------------: |
 | Full name          | http-cache-semantics |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 66 |
-| # downloads        | 507590984 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.1587345E7 |
+| # stars            | 199.0 |
 
 ## Links
 - [Homepage](https://github.com/kornelski/http-cache-semantics#readme)

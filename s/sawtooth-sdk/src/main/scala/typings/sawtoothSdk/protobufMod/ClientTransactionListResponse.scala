@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ClientTransactionListResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientTransactionListResponse.
   * @param [properties] Properties to set
   */
-class ClientTransactionListResponse ()
+open class ClientTransactionListResponse ()
   extends StObject
      with IClientTransactionListResponse {
   def this(properties: IClientTransactionListResponse) = this()
@@ -33,7 +32,7 @@ class ClientTransactionListResponse ()
     * Converts this ClientTransactionListResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** ClientTransactionListResponse transactions. */
   @JSName("transactions")
@@ -119,6 +118,8 @@ object ClientTransactionListResponse {
   inline def create(): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientTransactionListResponse]
   inline def create(properties: IClientTransactionListResponse): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ClientTransactionListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientTransactionListResponse]
   /**
     * Decodes a ClientTransactionListResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -129,9 +130,8 @@ object ClientTransactionListResponse {
     */
   inline def decode(reader: Reader): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
   inline def decode(reader: Reader, length: Double): ClientTransactionListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientTransactionListResponse]
-  inline def decode(reader: Uint8Array): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
-  inline def decode(reader: Uint8Array, length: Double): ClientTransactionListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientTransactionListResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
   /**
     * Decodes a ClientTransactionListResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -140,7 +140,6 @@ object ClientTransactionListResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
-  inline def decodeDelimited(reader: Uint8Array): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
   
   /**
     * Encodes the specified ClientTransactionListResponse message. Does not implicitly {@link ClientTransactionListResponse.verify|verify} messages.
@@ -165,7 +164,7 @@ object ClientTransactionListResponse {
     * @param object Plain object
     * @returns ClientTransactionListResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ClientTransactionListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListResponse]
   
   /**
     * Creates a plain object from a ClientTransactionListResponse message. Also converts values to other types if specified.
@@ -173,13 +172,13 @@ object ClientTransactionListResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ClientTransactionListResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ClientTransactionListResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientTransactionListResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ClientTransactionListResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ClientTransactionListResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

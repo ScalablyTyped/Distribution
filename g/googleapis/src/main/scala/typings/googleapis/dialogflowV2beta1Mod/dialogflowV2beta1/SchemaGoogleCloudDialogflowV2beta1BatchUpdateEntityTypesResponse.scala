@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response message for EntityTypes.BatchUpdateEntityTypes.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse {
     
     inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    inline def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value*))
   }
 }

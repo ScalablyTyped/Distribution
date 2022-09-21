@@ -16,7 +16,7 @@ object mod {
   
   inline def defaultOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[Options]
   
-  type Formatter = js.Function1[/* powerAssertContext */ js.Any, String]
+  type Formatter = js.Function1[/* powerAssertContext */ Any, String]
   
   trait Options extends StObject {
     
@@ -36,7 +36,7 @@ object mod {
     
     var outputOffset: js.UndefOr[Double] = js.undefined
     
-    var renderers: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var renderers: js.UndefOr[js.Array[Any]] = js.undefined
     
     var stringify: js.UndefOr[js.Function] = js.undefined
     
@@ -85,11 +85,11 @@ object mod {
       
       inline def setOutputOffsetUndefined: Self = StObject.set(x, "outputOffset", js.undefined)
       
-      inline def setRenderers(value: js.Array[js.Any]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
+      inline def setRenderers(value: js.Array[Any]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
       
       inline def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
       
-      inline def setRenderersVarargs(value: js.Any*): Self = StObject.set(x, "renderers", js.Array(value :_*))
+      inline def setRenderersVarargs(value: Any*): Self = StObject.set(x, "renderers", js.Array(value*))
       
       inline def setStringify(value: js.Function): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,7 @@ object DatabaseWithObjectStores {
     
     inline def setObjectStores(value: js.Array[ObjectStore]): Self = StObject.set(x, "objectStores", value.asInstanceOf[js.Any])
     
-    inline def setObjectStoresVarargs(value: ObjectStore*): Self = StObject.set(x, "objectStores", js.Array(value :_*))
+    inline def setObjectStoresVarargs(value: ObjectStore*): Self = StObject.set(x, "objectStores", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

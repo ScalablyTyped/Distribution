@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.Alt
+import typings.maximMazurokGapiClientCompute.anon.Accesstoken
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait GlobalOperationsResource extends StObject {
   
   /** Retrieves an aggregated list of all operations. */
   def aggregatedList(): Request[OperationAggregatedList] = js.native
-  def aggregatedList(request: Alt): Request[OperationAggregatedList] = js.native
+  def aggregatedList(request: Accesstoken): Request[OperationAggregatedList] = js.native
   
   /** Deletes the specified Operations resource. */
   def delete(): Request[Unit] = js.native

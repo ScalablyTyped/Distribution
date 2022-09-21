@@ -14,11 +14,16 @@ trait TerminalExitStatus extends StObject {
     *   without providing an exit code.
     */
   val code: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The reason that triggered the exit of a terminal.
+    */
+  val reason: TerminalExitReason
 }
 object TerminalExitStatus {
   
-  inline def apply(): TerminalExitStatus = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(reason: TerminalExitReason): TerminalExitStatus = {
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalExitStatus]
   }
   
@@ -27,5 +32,7 @@ object TerminalExitStatus {
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setReason(value: TerminalExitReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

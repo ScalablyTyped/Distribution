@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Views")
 @js.native
-/* private */ class Views ()
+/* private */ open class Views ()
   extends StObject
      with typings.activexOutlook.Outlook.Views {
   
@@ -26,17 +26,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.View = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.View = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.Views_typekey")
   var OutlookDotViews_typekey: typings.activexOutlook.Outlook.Views = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override def Remove(Index: js.Any): Unit = js.native
+  override def Remove(Index: Any): Unit = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

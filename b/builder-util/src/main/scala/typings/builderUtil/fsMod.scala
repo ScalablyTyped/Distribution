@@ -1,7 +1,7 @@
 package typings.builderUtil
 
-import typings.fsExtra.mod.Stats
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object fsMod {
   
   @JSImport("builder-util/out/fs", "CopyFileTransformer")
   @js.native
-  class CopyFileTransformer protected () extends StObject {
+  open class CopyFileTransformer protected () extends StObject {
     def this(afterCopyTransformer: AfterCopyFileTransformer) = this()
     
     def afterCopyTransformer(file: String): js.Promise[Unit] = js.native
@@ -36,7 +36,7 @@ object fsMod {
   
   @JSImport("builder-util/out/fs", "FileCopier")
   @js.native
-  class FileCopier () extends StObject {
+  open class FileCopier () extends StObject {
     def this(isUseHardLinkFunction: js.Function1[/* file */ String, Boolean]) = this()
     def this(isUseHardLinkFunction: js.Function1[/* file */ String, Boolean], transformer: FileTransformer) = this()
     def this(isUseHardLinkFunction: Null, transformer: FileTransformer) = this()
@@ -47,9 +47,9 @@ object fsMod {
     
     var isUseHardLink: Boolean = js.native
     
-    /* private */ val isUseHardLinkFunction: js.Any = js.native
+    /* private */ val isUseHardLinkFunction: Any = js.native
     
-    /* private */ val transformer: js.Any = js.native
+    /* private */ val transformer: Any = js.native
   }
   
   @JSImport("builder-util/out/fs", "MAX_FILE_REQUESTS")
@@ -58,59 +58,59 @@ object fsMod {
   
   inline def USE_HARD_LINKS(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("USE_HARD_LINKS")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def copyDir(src: String, destination: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def copyDir(src: String, destination: String, options: CopyDirOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def copyDir(src: String, destination: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def copyDir(src: String, destination: String, options: CopyDirOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def copyFile(src: String, dest: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def copyFile(src: String, dest: String, isEnsureDir: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], isEnsureDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def copyFile(src: String, dest: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def copyFile(src: String, dest: String, isEnsureDir: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], isEnsureDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def copyOrLinkFile(src: String, dest: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def copyOrLinkFile(src: String, dest: String, stats: Null, isUseHardLink: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def copyOrLinkFile(src: String, dest: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def copyOrLinkFile(src: String, dest: String, stats: Null, isUseHardLink: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def copyOrLinkFile(
     src: String,
     dest: String,
     stats: Null,
     isUseHardLink: Boolean,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def copyOrLinkFile(
     src: String,
     dest: String,
     stats: Null,
     isUseHardLink: Unit,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def copyOrLinkFile(src: String, dest: String, stats: Unit, isUseHardLink: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def copyOrLinkFile(src: String, dest: String, stats: Unit, isUseHardLink: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def copyOrLinkFile(
     src: String,
     dest: String,
     stats: Unit,
     isUseHardLink: Boolean,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def copyOrLinkFile(
     src: String,
     dest: String,
     stats: Unit,
     isUseHardLink: Unit,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def copyOrLinkFile(src: String, dest: String, stats: Stats): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def copyOrLinkFile(src: String, dest: String, stats: Stats, isUseHardLink: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def copyOrLinkFile(src: String, dest: String, stats: Stats): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def copyOrLinkFile(src: String, dest: String, stats: Stats, isUseHardLink: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def copyOrLinkFile(
     src: String,
     dest: String,
     stats: Stats,
     isUseHardLink: Boolean,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def copyOrLinkFile(
     src: String,
     dest: String,
     stats: Stats,
     isUseHardLink: Unit,
     exDevErrorHandler: js.Function0[Boolean]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOrLinkFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], stats.asInstanceOf[js.Any], isUseHardLink.asInstanceOf[js.Any], exDevErrorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def exists(file: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
@@ -167,7 +167,7 @@ object fsMod {
   
   trait FileConsumer extends StObject {
     
-    def consume(file: String, fileStat: Stats, parent: String, siblingNames: js.Array[String]): js.Any
+    def consume(file: String, fileStat: Stats, parent: String, siblingNames: js.Array[String]): Any
     
     /**
       * @default false
@@ -176,14 +176,14 @@ object fsMod {
   }
   object FileConsumer {
     
-    inline def apply(consume: (String, Stats, String, js.Array[String]) => js.Any): FileConsumer = {
+    inline def apply(consume: (String, Stats, String, js.Array[String]) => Any): FileConsumer = {
       val __obj = js.Dynamic.literal(consume = js.Any.fromFunction4(consume))
       __obj.asInstanceOf[FileConsumer]
     }
     
     extension [Self <: FileConsumer](x: Self) {
       
-      inline def setConsume(value: (String, Stats, String, js.Array[String]) => js.Any): Self = StObject.set(x, "consume", js.Any.fromFunction4(value))
+      inline def setConsume(value: (String, Stats, String, js.Array[String]) => Any): Self = StObject.set(x, "consume", js.Any.fromFunction4(value))
       
       inline def setIsIncludeDir(value: Boolean): Self = StObject.set(x, "isIncludeDir", value.asInstanceOf[js.Any])
       

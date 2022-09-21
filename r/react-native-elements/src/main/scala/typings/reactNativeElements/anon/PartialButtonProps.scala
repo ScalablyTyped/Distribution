@@ -1,14 +1,15 @@
 package typings.reactNativeElements.anon
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import org.scalablytyped.runtime.Instantiable1
+import typings.react.mod.Component
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
-import typings.reactNative.mod.ActivityIndicatorProperties
+import typings.reactNative.mod.ActivityIndicatorProps
 import typings.reactNative.mod.BackgroundPropType
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Insets
@@ -17,37 +18,56 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TargetedEvent
-import typings.reactNative.mod.TextProperties
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.IconNode
+import typings.reactNativeElements.iconMod.IconNode
+import typings.reactNativeElements.reactNativeElementsStrings.TouchableComponent
+import typings.reactNativeElements.reactNativeElementsStrings.ViewComponent
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto
-import typings.reactNativeElements.reactNativeElementsStrings.button
+import typings.reactNativeElements.reactNativeElementsStrings.bottom
 import typings.reactNativeElements.reactNativeElementsStrings.clear
+import typings.reactNativeElements.reactNativeElementsStrings.left
 import typings.reactNativeElements.reactNativeElementsStrings.no
 import typings.reactNativeElements.reactNativeElementsStrings.none
 import typings.reactNativeElements.reactNativeElementsStrings.outline
 import typings.reactNativeElements.reactNativeElementsStrings.polite
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_checked
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_unchecked
+import typings.reactNativeElements.reactNativeElementsStrings.right
 import typings.reactNativeElements.reactNativeElementsStrings.solid
+import typings.reactNativeElements.reactNativeElementsStrings.top
 import typings.reactNativeElements.reactNativeElementsStrings.yes
+import typings.reactNativeElements.textMod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-native-elements.react-native-elements.ButtonProps> */
+/* Inlined std.Partial<react-native-elements.react-native-elements/dist/buttons/Button.ButtonProps> */
 trait PartialButtonProps extends StObject {
   
-  var TouchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
+  var TouchableComponent: js.UndefOr[
+    TypeofComponent & (Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+      Component[
+        typings.reactNativeElements.reactNativeElementsStrings.TouchableComponent, 
+        js.Object, 
+        js.Object
+      ]
+    ])
+  ] = js.undefined
   
-  var ViewComponent: js.UndefOr[ComponentClass[js.Any, ComponentState]] = js.undefined
+  var ViewComponent: js.UndefOr[
+    TypeofComponent & (Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+      Component[
+        typings.reactNativeElements.reactNativeElementsStrings.ViewComponent, 
+        js.Object, 
+        js.Object
+      ]
+    ])
+  ] = js.undefined
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -57,13 +77,15 @@ trait PartialButtonProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
   var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
@@ -76,6 +98,8 @@ trait PartialButtonProps extends StObject {
   var background: js.UndefOr[BackgroundPropType] = js.undefined
   
   var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -99,6 +123,8 @@ trait PartialButtonProps extends StObject {
   
   var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  var iconPosition: js.UndefOr[left | right | top | bottom] = js.undefined
+  
   var iconRight: js.UndefOr[Boolean] = js.undefined
   
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
@@ -107,9 +133,19 @@ trait PartialButtonProps extends StObject {
   
   var loading: js.UndefOr[Boolean] = js.undefined
   
-  var loadingProps: js.UndefOr[ActivityIndicatorProperties] = js.undefined
+  var loadingProps: js.UndefOr[ActivityIndicatorProps] = js.undefined
   
   var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  var nextFocusDown: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusForward: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusLeft: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusRight: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusUp: js.UndefOr[Double] = js.undefined
   
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
@@ -141,9 +177,9 @@ trait PartialButtonProps extends StObject {
   
   var testID: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | ReactElement] = js.undefined
   
-  var titleProps: js.UndefOr[TextProperties] = js.undefined
+  var titleProps: js.UndefOr[TextProps] = js.undefined
   
   var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
@@ -168,11 +204,7 @@ object PartialButtonProps {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -190,6 +222,16 @@ object PartialButtonProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -201,12 +243,6 @@ object PartialButtonProps {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -233,6 +269,10 @@ object PartialButtonProps {
     inline def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
     
     inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
@@ -284,6 +324,10 @@ object PartialButtonProps {
     
     inline def setIconContainerStyleUndefined: Self = StObject.set(x, "iconContainerStyle", js.undefined)
     
+    inline def setIconPosition(value: left | right | top | bottom): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+    
+    inline def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
+    
     inline def setIconRight(value: Boolean): Self = StObject.set(x, "iconRight", value.asInstanceOf[js.Any])
     
     inline def setIconRightUndefined: Self = StObject.set(x, "iconRight", js.undefined)
@@ -300,7 +344,7 @@ object PartialButtonProps {
     
     inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    inline def setLoadingProps(value: ActivityIndicatorProperties): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
+    inline def setLoadingProps(value: ActivityIndicatorProps): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
     
     inline def setLoadingPropsUndefined: Self = StObject.set(x, "loadingProps", js.undefined)
     
@@ -311,6 +355,26 @@ object PartialButtonProps {
     inline def setLoadingStyleUndefined: Self = StObject.set(x, "loadingStyle", js.undefined)
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    
+    inline def setNextFocusDown(value: Double): Self = StObject.set(x, "nextFocusDown", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusDownUndefined: Self = StObject.set(x, "nextFocusDown", js.undefined)
+    
+    inline def setNextFocusForward(value: Double): Self = StObject.set(x, "nextFocusForward", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusForwardUndefined: Self = StObject.set(x, "nextFocusForward", js.undefined)
+    
+    inline def setNextFocusLeft(value: Double): Self = StObject.set(x, "nextFocusLeft", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusLeftUndefined: Self = StObject.set(x, "nextFocusLeft", js.undefined)
+    
+    inline def setNextFocusRight(value: Double): Self = StObject.set(x, "nextFocusRight", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusRightUndefined: Self = StObject.set(x, "nextFocusRight", js.undefined)
+    
+    inline def setNextFocusUp(value: Double): Self = StObject.set(x, "nextFocusUp", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusUpUndefined: Self = StObject.set(x, "nextFocusUp", js.undefined)
     
     inline def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
     
@@ -374,9 +438,9 @@ object PartialButtonProps {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | ReactElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTitleProps(value: TextProperties): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
+    inline def setTitleProps(value: TextProps): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
     
     inline def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
     
@@ -394,7 +458,12 @@ object PartialButtonProps {
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     
-    inline def setTouchableComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "TouchableComponent", value.asInstanceOf[js.Any])
+    inline def setTouchableComponent(
+      value: TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          Component[TouchableComponent, js.Object, js.Object]
+        ])
+    ): Self = StObject.set(x, "TouchableComponent", value.asInstanceOf[js.Any])
     
     inline def setTouchableComponentUndefined: Self = StObject.set(x, "TouchableComponent", js.undefined)
     
@@ -410,7 +479,12 @@ object PartialButtonProps {
     
     inline def setUseForegroundUndefined: Self = StObject.set(x, "useForeground", js.undefined)
     
-    inline def setViewComponent(value: ComponentClass[js.Any, ComponentState]): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
+    inline def setViewComponent(
+      value: TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          Component[ViewComponent, js.Object, js.Object]
+        ])
+    ): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
     
     inline def setViewComponentUndefined: Self = StObject.set(x, "ViewComponent", js.undefined)
   }

@@ -10,10 +10,10 @@ fast-csv formatting module
 | ------------------ | :-------------: |
 | Full name          | @fast-csv/format |
 | Keywords           | csv, format, write |
-| # releases         | 17 |
-| # dependents       | 3 |
-| # downloads        | 3306234 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3053716.0 |
+| # stars            | 1312.0 |
 
 ## Links
 - [Homepage](https://github.com/C2FO/fast-csv#readme)

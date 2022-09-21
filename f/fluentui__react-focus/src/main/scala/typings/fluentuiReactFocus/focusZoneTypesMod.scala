@@ -3,17 +3,18 @@ package typings.fluentuiReactFocus
 import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`0`
 import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`1`
 import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`2`
-import typings.fluentuiReactFocus.focusZoneFocusZoneMod.FocusZone
+import typings.fluentuiUtilities.createRefMod.IRefObject
+import typings.fluentuiUtilities.pointMod.Point
 import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.Ref
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.pointMod.Point
+import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,10 +101,13 @@ object focusZoneTypesMod {
       * Sets focus to the first tabbable item in the zone.
       * @param forceIntoFirstElement - If true, focus will be forced into the first element, even
       * if focus is already in the focus zone.
+      * @param bypassHiddenElements - If true, focus will be not be set on hidden elements.
       * @returns True if focus could be set to an active element, false if no operation was taken.
       */
     def focus(): Boolean = js.native
     def focus(forceIntoFirstElement: Boolean): Boolean = js.native
+    def focus(forceIntoFirstElement: Boolean, bypassHiddenElements: Boolean): Boolean = js.native
+    def focus(forceIntoFirstElement: Unit, bypassHiddenElements: Boolean): Boolean = js.native
     
     /**
       * Sets focus to a specific child element within the zone. This can be used in conjunction with
@@ -134,7 +138,7 @@ object focusZoneTypesMod {
   
   trait IFocusZoneProps
     extends StObject
-       with HTMLAttributes[HTMLElement | FocusZone] {
+       with HTMLAttributes[HTMLElement] {
     
     /** Allows focus to park on root when focus is in the `FocusZone` at render time. */
     var allowFocusRoot: js.UndefOr[Boolean] = js.undefined
@@ -163,7 +167,7 @@ object focusZoneTypesMod {
     /**
       * A component that should be used as the root element of the FocusZone component.
       */
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     /**
       * Determines whether to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes
@@ -217,9 +221,9 @@ object focusZoneTypesMod {
     
     /**
       * Element type the root element will use. Default is "div".
-      * @deprecated Use 'as' instead.
+      * @deprecated Use `as` instead.
       */
-    var elementType: js.UndefOr[js.Any] = js.undefined
+    var elementType: js.UndefOr[Any] = js.undefined
     
     /**
       * Allows tab key to be handled to tab through a list of items in the focus zone,
@@ -249,7 +253,7 @@ object focusZoneTypesMod {
     var onActiveElementChanged: js.UndefOr[
         js.Function2[
           /* element */ js.UndefOr[HTMLElement], 
-          /* ev */ js.UndefOr[FocusEvent[HTMLElement]], 
+          /* ev */ js.UndefOr[FocusEvent[HTMLElement, Element]], 
           Unit
         ]
       ] = js.undefined
@@ -273,7 +277,7 @@ object focusZoneTypesMod {
       * @param event - React's original FocusEvent.
       */
     @JSName("onFocus")
-    var onFocus_IFocusZoneProps: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement | FocusZone], Unit]] = js.undefined
+    var onFocus_IFocusZoneProps: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement, Element], Unit]] = js.undefined
     
     /**
       * Determines whether to disable the paging support for Page Up and Page Down keyboard scenarios.
@@ -295,8 +299,8 @@ object focusZoneTypesMod {
     var preventFocusRestoration: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Deprecated at v1.12.1. DIV props provided to the FocusZone will be mixed into the root element.
-      * @deprecated DIV props provided to the FocusZone will be mixed into the root element.
+      * @deprecated Div props provided to the FocusZone will be mixed into the root element.
+      * Deprecated at v1.12.1.
       */
     var rootProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
@@ -320,11 +324,11 @@ object focusZoneTypesMod {
     var shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * A callback method to determine if the input element should lose focus on arrow keys
-      *  @param inputElement - The input element which is to loose focus.
+      * A callback method to determine if an input or textarea element should lose focus on arrow keys
+      *  @param inputElement - The input or textarea element which is to lose focus.
       *  @returns True if input element should loose focus or false otherwise.
       */
-    var shouldInputLoseFocusOnArrowKey: js.UndefOr[js.Function1[/* inputElement */ HTMLInputElement, Boolean]] = js.undefined
+    var shouldInputLoseFocusOnArrowKey: js.UndefOr[js.Function1[/* inputElement */ HTMLInputElement | HTMLTextAreaElement, Boolean]] = js.undefined
     
     /**
       * Determines whether the FocusZone will walk up the DOM trying to invoke click callbacks on focusable elements on
@@ -332,6 +336,20 @@ object focusZoneTypesMod {
       * @defaultvalue true
       */
     var shouldRaiseClicks: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Relates to `shouldRaiseClicks`.
+      * Allows the click event raising for the "Enter" key to be set independently from `shouldRaiseClicks`.
+      * Inherits the value of `shouldRaiseClicks` if not set explicitly.
+      */
+    var shouldRaiseClicksOnEnter: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Relates to `shouldRaiseClicks`.
+      * Allows the click event raising for the "Space" key to be set independently from `shouldRaiseClicks`.
+      * Inherits the value of `shouldRaiseClicks` if not set explicitly.
+      */
+    var shouldRaiseClicksOnSpace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback method for determining if focus should indeed be set on the given element.
@@ -376,7 +394,7 @@ object focusZoneTypesMod {
       
       inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -420,7 +438,7 @@ object focusZoneTypesMod {
       
       inline def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
       
-      inline def setElementType(value: js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+      inline def setElementType(value: Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
       inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
       
@@ -437,7 +455,7 @@ object focusZoneTypesMod {
       inline def setIsInnerZoneKeystrokeUndefined: Self = StObject.set(x, "isInnerZoneKeystroke", js.undefined)
       
       inline def setOnActiveElementChanged(
-        value: (/* element */ js.UndefOr[HTMLElement], /* ev */ js.UndefOr[FocusEvent[HTMLElement]]) => Unit
+        value: (/* element */ js.UndefOr[HTMLElement], /* ev */ js.UndefOr[FocusEvent[HTMLElement, Element]]) => Unit
       ): Self = StObject.set(x, "onActiveElementChanged", js.Any.fromFunction2(value))
       
       inline def setOnActiveElementChangedUndefined: Self = StObject.set(x, "onActiveElementChanged", js.undefined)
@@ -446,7 +464,7 @@ object focusZoneTypesMod {
       
       inline def setOnBeforeFocusUndefined: Self = StObject.set(x, "onBeforeFocus", js.undefined)
       
-      inline def setOnFocus(value: /* event */ FocusEvent[HTMLElement | FocusZone] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* event */ FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusNotification(value: () => Unit): Self = StObject.set(x, "onFocusNotification", js.Any.fromFunction0(value))
       
@@ -482,11 +500,19 @@ object focusZoneTypesMod {
       
       inline def setShouldFocusOnMountUndefined: Self = StObject.set(x, "shouldFocusOnMount", js.undefined)
       
-      inline def setShouldInputLoseFocusOnArrowKey(value: /* inputElement */ HTMLInputElement => Boolean): Self = StObject.set(x, "shouldInputLoseFocusOnArrowKey", js.Any.fromFunction1(value))
+      inline def setShouldInputLoseFocusOnArrowKey(value: /* inputElement */ HTMLInputElement | HTMLTextAreaElement => Boolean): Self = StObject.set(x, "shouldInputLoseFocusOnArrowKey", js.Any.fromFunction1(value))
       
       inline def setShouldInputLoseFocusOnArrowKeyUndefined: Self = StObject.set(x, "shouldInputLoseFocusOnArrowKey", js.undefined)
       
       inline def setShouldRaiseClicks(value: Boolean): Self = StObject.set(x, "shouldRaiseClicks", value.asInstanceOf[js.Any])
+      
+      inline def setShouldRaiseClicksOnEnter(value: Boolean): Self = StObject.set(x, "shouldRaiseClicksOnEnter", value.asInstanceOf[js.Any])
+      
+      inline def setShouldRaiseClicksOnEnterUndefined: Self = StObject.set(x, "shouldRaiseClicksOnEnter", js.undefined)
+      
+      inline def setShouldRaiseClicksOnSpace(value: Boolean): Self = StObject.set(x, "shouldRaiseClicksOnSpace", value.asInstanceOf[js.Any])
+      
+      inline def setShouldRaiseClicksOnSpaceUndefined: Self = StObject.set(x, "shouldRaiseClicksOnSpace", js.undefined)
       
       inline def setShouldRaiseClicksUndefined: Self = StObject.set(x, "shouldRaiseClicks", js.undefined)
       

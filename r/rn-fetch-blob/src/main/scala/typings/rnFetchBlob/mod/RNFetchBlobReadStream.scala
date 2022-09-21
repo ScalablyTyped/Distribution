@@ -16,7 +16,7 @@ trait RNFetchBlobReadStream extends StObject {
   
   def onEnd(fn: js.Function0[Unit]): Unit
   
-  def onError(fn: js.Function1[/* err */ js.Any, Unit]): Unit
+  def onError(fn: js.Function1[/* err */ Any, Unit]): Unit
   
   def open(): Unit
   
@@ -31,7 +31,7 @@ object RNFetchBlobReadStream {
     encoding: Encoding,
     onData: js.Function1[/* chunk */ String | js.Array[Double], Unit] => Unit,
     onEnd: js.Function0[Unit] => Unit,
-    onError: js.Function1[/* err */ js.Any, Unit] => Unit,
+    onError: js.Function1[/* err */ Any, Unit] => Unit,
     open: () => Unit,
     path: String,
     tick: Double
@@ -54,7 +54,7 @@ object RNFetchBlobReadStream {
     
     inline def setOnEnd(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
-    inline def setOnError(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: js.Function1[/* err */ Any, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     

@@ -19,7 +19,7 @@ object libTelemetryMod {
   
   @JSImport("ionic/lib/telemetry", "Telemetry")
   @js.native
-  class Telemetry protected ()
+  open class Telemetry protected ()
     extends StObject
        with ITelemetry {
     def this(hasConfigClientGetInfoCtxProjectSession: TelemetryDeps) = this()

@@ -20,9 +20,7 @@ trait ITreePanel
     * @param callback Function A function to execute when the collapse finishes.
     * @param scope Object The scope of the callback function
     */
-  var collapseAll: js.UndefOr[
-    js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var collapseAll: js.UndefOr[js.Function2[/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Collapses a record that is loaded in the tree
     * @param record Ext.data.Model The record to collapse
@@ -34,8 +32,8 @@ trait ITreePanel
     js.Function4[
       /* record */ js.UndefOr[IModel], 
       /* deep */ js.UndefOr[Boolean], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -47,9 +45,7 @@ trait ITreePanel
     * @param callback Function A function to execute when the expand finishes.
     * @param scope Object The scope of the callback function
     */
-  var expandAll: js.UndefOr[
-    js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var expandAll: js.UndefOr[js.Function2[/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Expands a record that is loaded in the tree
     * @param record Ext.data.Model The record to expand
@@ -61,8 +57,8 @@ trait ITreePanel
     js.Function4[
       /* record */ js.UndefOr[IModel], 
       /* deep */ js.UndefOr[Boolean], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -79,8 +75,8 @@ trait ITreePanel
       /* path */ js.UndefOr[java.lang.String], 
       /* field */ js.UndefOr[java.lang.String], 
       /* separator */ js.UndefOr[java.lang.String], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -102,7 +98,7 @@ trait ITreePanel
   var lines: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
-  var root: js.UndefOr[js.Any] = js.undefined
+  var root: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var rootVisible: js.UndefOr[Boolean] = js.undefined
@@ -119,8 +115,8 @@ trait ITreePanel
       /* path */ js.UndefOr[java.lang.String], 
       /* field */ js.UndefOr[java.lang.String], 
       /* separator */ js.UndefOr[java.lang.String], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -129,7 +125,7 @@ trait ITreePanel
     * @param root Ext.data.Model/Ext.data.NodeInterface/Object
     * @returns Ext.data.NodeInterface The new root
     */
-  var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
+  var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[Any], INodeInterface]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var singleExpand: js.UndefOr[Boolean] = js.undefined
@@ -154,12 +150,12 @@ object ITreePanel {
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setCollapseAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction2(value))
+    inline def setCollapseAll(value: (/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction2(value))
     
     inline def setCollapseAllUndefined: Self = StObject.set(x, "collapseAll", js.undefined)
     
     inline def setCollapseNode(
-      value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "collapseNode", js.Any.fromFunction4(value))
     
     inline def setCollapseNodeUndefined: Self = StObject.set(x, "collapseNode", js.undefined)
@@ -168,18 +164,18 @@ object ITreePanel {
     
     inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
-    inline def setExpandAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction2(value))
+    inline def setExpandAll(value: (/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction2(value))
     
     inline def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
     
     inline def setExpandNode(
-      value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "expandNode", js.Any.fromFunction4(value))
     
     inline def setExpandNodeUndefined: Self = StObject.set(x, "expandNode", js.undefined)
     
     inline def setExpandPath(
-      value: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "expandPath", js.Any.fromFunction5(value))
     
     inline def setExpandPathUndefined: Self = StObject.set(x, "expandPath", js.undefined)
@@ -200,7 +196,7 @@ object ITreePanel {
     
     inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
@@ -209,12 +205,12 @@ object ITreePanel {
     inline def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
     
     inline def setSelectPath(
-      value: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "selectPath", js.Any.fromFunction5(value))
     
     inline def setSelectPathUndefined: Self = StObject.set(x, "selectPath", js.undefined)
     
-    inline def setSetRootNode(value: /* root */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
+    inline def setSetRootNode(value: /* root */ js.UndefOr[Any] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
     
     inline def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
     

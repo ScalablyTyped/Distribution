@@ -21,6 +21,6 @@ object ColProps {
     
     inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
     
-    inline def setColVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "col", js.Array(value :_*))
+    inline def setColVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "col", js.Array(value*))
   }
 }

@@ -8,22 +8,20 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`short-dash-dot-dot`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-dash-dot`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-dash`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-dot`
-import typings.arcgisJsApi.arcgisJsApiStrings.bevel
-import typings.arcgisJsApi.arcgisJsApiStrings.butt
+import typings.arcgisJsApi.arcgisJsApiStrings.bevel_
+import typings.arcgisJsApi.arcgisJsApiStrings.butt_
 import typings.arcgisJsApi.arcgisJsApiStrings.dash
 import typings.arcgisJsApi.arcgisJsApiStrings.dot
-import typings.arcgisJsApi.arcgisJsApiStrings.miter
-import typings.arcgisJsApi.arcgisJsApiStrings.none
-import typings.arcgisJsApi.arcgisJsApiStrings.round
+import typings.arcgisJsApi.arcgisJsApiStrings.miter_
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
+import typings.arcgisJsApi.arcgisJsApiStrings.round_
 import typings.arcgisJsApi.arcgisJsApiStrings.solid
-import typings.arcgisJsApi.arcgisJsApiStrings.square
+import typings.arcgisJsApi.arcgisJsApiStrings.square_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.Symbol2D3D because Already inherited
-- typings.arcgisJsApi.esri.symbols.Symbol2D3D because Already inherited */ @js.native
+@js.native
 trait SimpleLineSymbol
   extends StObject
      with LineSymbol
@@ -33,16 +31,20 @@ trait SimpleLineSymbol
   /**
     * Specifies the cap style.
     *
+    * @default round
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#cap)
     */
-  var cap: butt | round | square = js.native
+  var cap: butt_ | round_ | square_ = js.native
   
   /**
     * Specifies the join style.
     *
+    * @default round
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#join)
     */
-  var join: miter | round | bevel = js.native
+  var join: miter_ | round_ | bevel_ = js.native
   
   /**
     * Specifies the color, style, and placement of a symbol marker on the line.
@@ -54,6 +56,8 @@ trait SimpleLineSymbol
   /**
     * Maximum allowed ratio of the width of a miter join to the line width.
     *
+    * @default 2
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#miterLimit)
     */
   var miterLimit: Double = js.native
@@ -61,7 +65,9 @@ trait SimpleLineSymbol
   /**
     * Specifies the line style.
     *
+    * @default solid
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#style)
     */
-  var style: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid = js.native
+  var style: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none_ | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid = js.native
 }

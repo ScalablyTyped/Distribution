@@ -9,7 +9,7 @@ trait SchemaAcl extends StObject {
   /**
     * Description of the access granted, suitable for display.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of access entries.
@@ -17,10 +17,9 @@ trait SchemaAcl extends StObject {
   var items: js.UndefOr[js.Array[SchemaPlusAclentryResource]] = js.undefined
   
   /**
-    * Identifies this resource as a collection of access controls. Value:
-    * &quot;plus#acl&quot;.
+    * Identifies this resource as a collection of access controls. Value: &quot;plus#acl&quot;.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAcl {
   
@@ -33,15 +32,19 @@ object SchemaAcl {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setItems(value: js.Array[SchemaPlusAclentryResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaPlusAclentryResource*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaPlusAclentryResource*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

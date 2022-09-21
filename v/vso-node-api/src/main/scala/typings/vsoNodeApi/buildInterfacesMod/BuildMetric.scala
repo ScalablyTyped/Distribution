@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait BuildMetric extends StObject {
   /**
     * The date for the scope.
     */
-  var date: Date
+  var date: js.Date
   
   /**
     * The value.
@@ -29,14 +28,14 @@ trait BuildMetric extends StObject {
 }
 object BuildMetric {
   
-  inline def apply(date: Date, intValue: Double, name: String, scope: String): BuildMetric = {
+  inline def apply(date: js.Date, intValue: Double, name: String, scope: String): BuildMetric = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], intValue = intValue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildMetric]
   }
   
   extension [Self <: BuildMetric](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setIntValue(value: Double): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     

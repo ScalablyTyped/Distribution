@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object queryableStringMod {
   
-  @JSImport("inversify/dts/planning/queryable_string", "QueryableString")
+  @JSImport("inversify/lib/planning/queryable_string", "QueryableString")
   @js.native
-  class QueryableString protected ()
+  open class QueryableString protected ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.QueryableString {
     def this(str: String) = this()
@@ -25,7 +25,7 @@ object queryableStringMod {
     /* CompleteClass */
     override def startsWith(searchString: String): Boolean = js.native
     
-    /* private */ var str: js.Any = js.native
+    /* private */ var str: Any = js.native
     
     /* CompleteClass */
     override def value(): String = js.native

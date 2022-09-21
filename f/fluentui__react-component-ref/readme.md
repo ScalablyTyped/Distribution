@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__react-component-ref
 
-Typings are for version 0.51.2
+Typings are for version 0.64.0
 
 ## Library description:
 A set of components and utils to deal with React refs.
@@ -10,10 +10,10 @@ A set of components and utils to deal with React refs.
 | ------------------ | :-------------: |
 | Full name          | @fluentui/react-component-ref |
 | Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 7 |
-| # downloads        | 984182 |
-| # stars            | 0 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 506767.0 |
+| # stars            | 13783.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui/tree/master/packages/fluentui/react-component-ref)

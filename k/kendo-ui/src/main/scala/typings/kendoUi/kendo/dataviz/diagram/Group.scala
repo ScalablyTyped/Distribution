@@ -10,7 +10,7 @@ trait Group
   extends StObject
      with Observable {
   
-  def append(element: js.Any): Unit = js.native
+  def append(element: Any): Unit = js.native
   
   def clear(): Unit = js.native
   
@@ -21,7 +21,7 @@ trait Group
   def position(): Unit = js.native
   def position(offset: Point): Unit = js.native
   
-  def remove(element: js.Any): Unit = js.native
+  def remove(element: Any): Unit = js.native
   
   def rotate(angle: Double, center: Point): Unit = js.native
   

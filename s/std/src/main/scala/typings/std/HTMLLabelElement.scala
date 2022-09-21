@@ -11,26 +11,26 @@ trait HTMLLabelElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** Returns the form control that is associated with this element. */
+  /* standard dom */
   val control: HTMLElement | Null = js.native
   
-  /**
-    * Retrieves a reference to the form that the object is embedded in.
-    */
+  /** Retrieves a reference to the form that the object is embedded in. */
+  /* standard dom */
   val form: HTMLFormElement | Null = js.native
   
-  /**
-    * Sets or retrieves the object to which the given label object is assigned.
-    */
+  /** Sets or retrieves the object to which the given label object is assigned. */
+  /* standard dom */
   var htmlFor: java.lang.String = js.native
   
   /* InferMemberOverrides */

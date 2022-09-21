@@ -1,7 +1,7 @@
 
 # Scala.js typings for xterm
 
-Typings are for version 4.9.0
+Typings are for version 5.0.0
 
 ## Library description:
 Full xterm terminal, in your browser
@@ -9,11 +9,11 @@ Full xterm terminal, in your browser
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | xterm |
-| Keywords           | - |
-| # releases         | 455 |
-| # dependents       | 149 |
-| # downloads        | 7191189 |
-| # stars            | 10 |
+| Keywords           | cli, command-line, console, pty, shell, ssh, styles, terminal-emulator, terminal, tty, vt100, webgl, xterm |
+| # releases         | 347 |
+| # dependents       | 0.0 |
+| # downloads        | 1019020.6666666666 |
+| # stars            | 13706.0 |
 
 ## Links
 - [Homepage](https://github.com/xtermjs/xterm.js#readme)

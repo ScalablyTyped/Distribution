@@ -2,7 +2,6 @@ package typings.awsSdkClientPinpointBrowser
 
 import typings.awsSdkClientPinpointBrowser.typesActivityResponseMod.ActivityResponse
 import typings.awsSdkClientPinpointBrowser.typesActivityResponseMod.UnmarshalledActivityResponse
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesActivitiesResponseMod {
     /**
       * List of campaign activities
       */
-    var Item: js.UndefOr[js.Array[ActivityResponse] | Iterable[ActivityResponse]] = js.undefined
+    var Item: js.UndefOr[js.Array[ActivityResponse] | js.Iterable[ActivityResponse]] = js.undefined
     
     /**
       * The string that you use in a subsequent request to get the next page of results in a paginated response.
@@ -30,11 +29,11 @@ object typesActivitiesResponseMod {
     
     extension [Self <: ActivitiesResponse](x: Self) {
       
-      inline def setItem(value: js.Array[ActivityResponse] | Iterable[ActivityResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[ActivityResponse] | js.Iterable[ActivityResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: ActivityResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: ActivityResponse*): Self = StObject.set(x, "Item", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -65,7 +64,7 @@ object typesActivitiesResponseMod {
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: UnmarshalledActivityResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledActivityResponse*): Self = StObject.set(x, "Item", js.Array(value*))
     }
   }
 }

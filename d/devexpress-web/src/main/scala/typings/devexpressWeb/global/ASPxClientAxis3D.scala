@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAxis3D")
 @js.native
-class ASPxClientAxis3D ()
+open class ASPxClientAxis3D ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAxisBase {
   

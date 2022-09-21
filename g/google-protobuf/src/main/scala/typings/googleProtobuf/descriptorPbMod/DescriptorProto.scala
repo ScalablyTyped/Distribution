@@ -8,14 +8,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto")
 @js.native
-class DescriptorProto () extends Message {
+open class DescriptorProto () extends Message {
   
   def addEnumType(): EnumDescriptorProto = js.native
   def addEnumType(value: Unit, index: Double): EnumDescriptorProto = js.native
@@ -129,7 +128,7 @@ object DescriptorProto {
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ExtensionRange")
   @js.native
-  class ExtensionRange () extends Message {
+  open class ExtensionRange () extends Message {
     
     def clearEnd(): ExtensionRange = js.native
     
@@ -163,7 +162,7 @@ object DescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
     
     inline def deserializeBinaryFromReader(message: ExtensionRange, reader: BinaryReader): ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ExtensionRange]
     
@@ -216,7 +215,7 @@ object DescriptorProto {
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ReservedRange")
   @js.native
-  class ReservedRange () extends Message {
+  open class ReservedRange () extends Message {
     
     def clearEnd(): ReservedRange = js.native
     
@@ -241,7 +240,7 @@ object DescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
     
     inline def deserializeBinaryFromReader(message: ReservedRange, reader: BinaryReader): ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ReservedRange]
     
@@ -286,7 +285,7 @@ object DescriptorProto {
     }
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
   
   inline def deserializeBinaryFromReader(message: DescriptorProto, reader: BinaryReader): DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[DescriptorProto]
   
@@ -347,19 +346,19 @@ object DescriptorProto {
       
       inline def setEnumTypeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject]): Self = StObject.set(x, "enumTypeList", value.asInstanceOf[js.Any])
       
-      inline def setEnumTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject*): Self = StObject.set(x, "enumTypeList", js.Array(value :_*))
+      inline def setEnumTypeListVarargs(value: typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject*): Self = StObject.set(x, "enumTypeList", js.Array(value*))
       
       inline def setExtensionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "extensionList", value.asInstanceOf[js.Any])
       
-      inline def setExtensionListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "extensionList", js.Array(value :_*))
+      inline def setExtensionListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "extensionList", js.Array(value*))
       
       inline def setExtensionRangeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject]): Self = StObject.set(x, "extensionRangeList", value.asInstanceOf[js.Any])
       
-      inline def setExtensionRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject*): Self = StObject.set(x, "extensionRangeList", js.Array(value :_*))
+      inline def setExtensionRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject*): Self = StObject.set(x, "extensionRangeList", js.Array(value*))
       
       inline def setFieldList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]): Self = StObject.set(x, "fieldList", value.asInstanceOf[js.Any])
       
-      inline def setFieldListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "fieldList", js.Array(value :_*))
+      inline def setFieldListVarargs(value: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject*): Self = StObject.set(x, "fieldList", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -367,11 +366,11 @@ object DescriptorProto {
       
       inline def setNestedTypeList(value: js.Array[AsObject]): Self = StObject.set(x, "nestedTypeList", value.asInstanceOf[js.Any])
       
-      inline def setNestedTypeListVarargs(value: AsObject*): Self = StObject.set(x, "nestedTypeList", js.Array(value :_*))
+      inline def setNestedTypeListVarargs(value: AsObject*): Self = StObject.set(x, "nestedTypeList", js.Array(value*))
       
       inline def setOneofDeclList(value: js.Array[typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject]): Self = StObject.set(x, "oneofDeclList", value.asInstanceOf[js.Any])
       
-      inline def setOneofDeclListVarargs(value: typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject*): Self = StObject.set(x, "oneofDeclList", js.Array(value :_*))
+      inline def setOneofDeclListVarargs(value: typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject*): Self = StObject.set(x, "oneofDeclList", js.Array(value*))
       
       inline def setOptions(value: typings.googleProtobuf.descriptorPbMod.MessageOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -379,11 +378,11 @@ object DescriptorProto {
       
       inline def setReservedNameList(value: js.Array[String]): Self = StObject.set(x, "reservedNameList", value.asInstanceOf[js.Any])
       
-      inline def setReservedNameListVarargs(value: String*): Self = StObject.set(x, "reservedNameList", js.Array(value :_*))
+      inline def setReservedNameListVarargs(value: String*): Self = StObject.set(x, "reservedNameList", js.Array(value*))
       
       inline def setReservedRangeList(value: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject]): Self = StObject.set(x, "reservedRangeList", value.asInstanceOf[js.Any])
       
-      inline def setReservedRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject*): Self = StObject.set(x, "reservedRangeList", js.Array(value :_*))
+      inline def setReservedRangeListVarargs(value: typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject*): Self = StObject.set(x, "reservedRangeList", js.Array(value*))
     }
   }
 }

@@ -31,17 +31,22 @@ trait MeshAssetTask
   var loadedSkeletons: js.Array[Skeleton] = js.native
   
   /**
+    * Gets the list of loaded transforms
+    */
+  var loadedTransformNodes: js.Array[TransformNode] = js.native
+  
+  /**
     * Defines the list of mesh's names you want to load
     */
-  var meshesNames: js.Any = js.native
+  var meshesNames: Any = js.native
   
   /**
     * Callback called when the task is successful
     */
   def onError(task: MeshAssetTask): Unit = js.native
   def onError(task: MeshAssetTask, message: String): Unit = js.native
-  def onError(task: MeshAssetTask, message: String, exception: js.Any): Unit = js.native
-  def onError(task: MeshAssetTask, message: Unit, exception: js.Any): Unit = js.native
+  def onError(task: MeshAssetTask, message: String, exception: Any): Unit = js.native
+  def onError(task: MeshAssetTask, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

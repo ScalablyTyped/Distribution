@@ -96,7 +96,7 @@ object Slot {
     
     inline def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
     
-    inline def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
+    inline def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "sampleUtterances", js.Array(value*))
     
     inline def setSlotConstraint(value: SlotConstraint): Self = StObject.set(x, "slotConstraint", value.asInstanceOf[js.Any])
     

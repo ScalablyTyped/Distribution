@@ -68,20 +68,14 @@ object networkStatus {
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.usb
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wifi
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wimax
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`2g`
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`3g`
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`4g`
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mobile
   */
   trait NetworkLinkInfoType extends StObject
   object NetworkLinkInfoType {
     
-    inline def `2g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`2g` = "2g".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`2g`]
-    
-    inline def `3g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`3g` = "3g".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`3g`]
-    
-    inline def `4g`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`4g` = "4g".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`4g`]
-    
     inline def ethernet: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ethernet = "ethernet".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ethernet]
+    
+    inline def mobile: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mobile = "mobile".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mobile]
     
     inline def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
     

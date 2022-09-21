@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "PanelImplementorBase")
 @js.native
-class PanelImplementorBase protected () extends ImplementorBase {
-  def this(panel: PanelModelBase) = this()
+open class PanelImplementorBase protected () extends ImplementorBase {
+  def this(panel: Any) = this()
   
-  var panel: PanelModelBase = js.native
+  var panel: Any = js.native
 }

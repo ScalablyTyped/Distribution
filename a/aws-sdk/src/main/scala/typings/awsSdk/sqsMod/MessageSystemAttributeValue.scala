@@ -17,7 +17,7 @@ trait MessageSystemAttributeValue extends StObject {
   var BinaryValue: js.UndefOr[Binary] = js.undefined
   
   /**
-    * Amazon SQS supports the following logical data types: String, Number, and Binary. For the Number data type, you must use StringValue. You can also append custom labels. For more information, see Amazon SQS Message Attributes in the Amazon Simple Queue Service Developer Guide.
+    * Amazon SQS supports the following logical data types: String, Number, and Binary. For the Number data type, you must use StringValue. You can also append custom labels. For more information, see Amazon SQS Message Attributes in the Amazon SQS Developer Guide.
     */
   var DataType: String
   
@@ -44,7 +44,7 @@ object MessageSystemAttributeValue {
     
     inline def setBinaryListValuesUndefined: Self = StObject.set(x, "BinaryListValues", js.undefined)
     
-    inline def setBinaryListValuesVarargs(value: Binary*): Self = StObject.set(x, "BinaryListValues", js.Array(value :_*))
+    inline def setBinaryListValuesVarargs(value: Binary*): Self = StObject.set(x, "BinaryListValues", js.Array(value*))
     
     inline def setBinaryValue(value: Binary): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object MessageSystemAttributeValue {
     
     inline def setStringListValuesUndefined: Self = StObject.set(x, "StringListValues", js.undefined)
     
-    inline def setStringListValuesVarargs(value: String*): Self = StObject.set(x, "StringListValues", js.Array(value :_*))
+    inline def setStringListValuesVarargs(value: String*): Self = StObject.set(x, "StringListValues", js.Array(value*))
     
     inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     

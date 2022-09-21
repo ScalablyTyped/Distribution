@@ -74,14 +74,14 @@ trait IDatepickerConfig extends StObject {
     *
     * @default null
     */
-  var initDate: js.UndefOr[js.Any] = js.undefined
+  var initDate: js.UndefOr[Any] = js.undefined
   
   /**
     * Defines the maximum available date.
     *
     * @default null
     */
-  var maxDate: js.UndefOr[js.Any] = js.undefined
+  var maxDate: js.UndefOr[Any] = js.undefined
   
   /**
     * Set an upper limit for mode.
@@ -95,7 +95,7 @@ trait IDatepickerConfig extends StObject {
     *
     * @default null
     */
-  var minDate: js.UndefOr[js.Any] = js.undefined
+  var minDate: js.UndefOr[Any] = js.undefined
   
   /**
     * Set a lower limit for mode.
@@ -205,11 +205,11 @@ object IDatepickerConfig {
     
     inline def setFormatYearUndefined: Self = StObject.set(x, "formatYear", js.undefined)
     
-    inline def setInitDate(value: js.Any): Self = StObject.set(x, "initDate", value.asInstanceOf[js.Any])
+    inline def setInitDate(value: Any): Self = StObject.set(x, "initDate", value.asInstanceOf[js.Any])
     
     inline def setInitDateUndefined: Self = StObject.set(x, "initDate", js.undefined)
     
-    inline def setMaxDate(value: js.Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
@@ -217,7 +217,7 @@ object IDatepickerConfig {
     
     inline def setMaxModeUndefined: Self = StObject.set(x, "maxMode", js.undefined)
     
-    inline def setMinDate(value: js.Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     

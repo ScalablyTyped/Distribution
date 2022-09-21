@@ -96,12 +96,12 @@ trait GetBatchStatus extends StObject {
     *
     * @returns The documentation results
     */
-  def getDocumentation(): ResultsPromise[js.Any] = js.native
+  def getDocumentation(): ResultsPromise[Any] = js.native
   /**
     * Lists descriptions of the events, event types, and event fields that could be included in a Webhooks post to your target URL.
     * @param callback The request callback containing documentation results
     */
-  def getDocumentation(callback: ResultsCallback[js.Any]): Unit = js.native
+  def getDocumentation(callback: ResultsCallback[Any]): Unit = js.native
   
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
@@ -109,19 +109,19 @@ trait GetBatchStatus extends StObject {
     * @param options [event types]{@link https://support.sparkpost.com/customer/portal/articles/1976204} for which to get a sample payload
     * Default: all event types returned
     */
-  def getSamples(): js.Promise[Response[js.Any]] = js.native
+  def getSamples(): js.Promise[Response[Any]] = js.native
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
     * @param callback The request callback containing examples
     */
-  def getSamples(callback: Callback[js.Any]): Unit = js.native
-  def getSamples(options: Events): js.Promise[Response[js.Any]] = js.native
+  def getSamples(callback: Callback[Any]): Unit = js.native
+  def getSamples(options: Events): js.Promise[Response[Any]] = js.native
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
     * @param options The optional event name
     * @param callback The request callback containing examples
     */
-  def getSamples(options: Events, callback: Callback[js.Any]): Unit = js.native
+  def getSamples(options: Events, callback: Callback[Any]): Unit = js.native
   
   /**
     * List currently existing webhooks.the timezone to use for the last_successful and last_failure properties | Default: UTC

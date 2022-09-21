@@ -10,10 +10,10 @@ The lodash method `_.split` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.split |
 | Keywords           | lodash-modularized, split |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 784959 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 64832.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

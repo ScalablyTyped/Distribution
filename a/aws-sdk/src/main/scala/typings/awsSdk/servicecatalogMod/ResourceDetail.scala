@@ -14,7 +14,7 @@ trait ResourceDetail extends StObject {
   /**
     * The creation time of the resource.
     */
-  var CreatedTime: js.UndefOr[ResourceDetailCreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the resource.
@@ -44,7 +44,7 @@ object ResourceDetail {
     
     inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    inline def setCreatedTime(value: ResourceDetailCreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

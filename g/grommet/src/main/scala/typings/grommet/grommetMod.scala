@@ -1,16 +1,14 @@
 package typings.grommet
 
+import typings.grommet.anon.Format
+import typings.grommet.anon.Layer
 import typings.grommet.baseMod.ThemeType
 import typings.grommet.grommetStrings.dark
 import typings.grommet.grommetStrings.light
+import typings.grommet.grommetStrings.min
 import typings.grommet.grommetStrings.rtl
 import typings.grommet.utilsMod.BackgroundType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.DetailedHTMLProps
-import typings.react.mod.HTMLAttributes
-import typings.std.HTMLDivElement
+import typings.react.mod.FC
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,27 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object grommetMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/Grommet", "Grommet")
   @js.native
-  class Grommet protected ()
-    extends Component[
-          GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
-    def this(
-      props: GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
-      context: js.Any
-    ) = this()
+  val Grommet: FC[GrommetExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'dir'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait GrommetExtendedProps
+    extends StObject
+       with GrommetProps
+  object GrommetExtendedProps {
+    
+    inline def apply(): GrommetExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GrommetExtendedProps]
+    }
   }
-  @JSImport("grommet/components/Grommet", "Grommet")
-  @js.native
-  val Grommet: ComponentClass[
-    GrommetProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-    ComponentState
-  ] = js.native
   
   trait GrommetProps extends StObject {
     
@@ -50,7 +42,13 @@ object grommetMod {
     
     var dir: js.UndefOr[rtl] = js.undefined
     
-    var full: js.UndefOr[Boolean] = js.undefined
+    var full: js.UndefOr[Boolean | min] = js.undefined
+    
+    var messages: js.UndefOr[Format] = js.undefined
+    
+    var onAnalytics: js.UndefOr[js.Function1[/* data */ Any, Unit]] = js.undefined
+    
+    var options: js.UndefOr[Layer] = js.undefined
     
     var plain: js.UndefOr[Boolean] = js.undefined
     
@@ -85,9 +83,21 @@ object grommetMod {
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: Boolean | min): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
       inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+      
+      inline def setMessages(value: Format): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      
+      inline def setOnAnalytics(value: /* data */ Any => Unit): Self = StObject.set(x, "onAnalytics", js.Any.fromFunction1(value))
+      
+      inline def setOnAnalyticsUndefined: Self = StObject.set(x, "onAnalytics", js.undefined)
+      
+      inline def setOptions(value: Layer): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       

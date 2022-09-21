@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "Conditional")
 @js.native
-class Conditional protected () extends Expression {
+open class Conditional protected () extends Expression {
   def this(condition: Expression, yes: Expression, no: Expression) = this()
   
   var condition: Expression = js.native

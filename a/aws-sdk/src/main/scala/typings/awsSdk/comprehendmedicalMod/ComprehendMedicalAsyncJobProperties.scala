@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComprehendMedicalAsyncJobProperties extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that gives Amazon Comprehend Medical read access to your input data.
+    * The Amazon Resource Name (ARN) that gives Comprehend Medical; read access to your input data.
     */
   var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
   /**
     * The time that the detection job completed.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time that job metadata is deleted from the server. Output files in your S3 bucket will not be deleted. After the metadata is deleted, the job will no longer appear in the results of the ListEntitiesDetectionV2Job or the ListPHIDetectionJobs operation.
     */
-  var ExpirationTime: js.UndefOr[Timestamp] = js.undefined
+  var ExpirationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The input data configuration that you supplied when you created the detection job.
@@ -74,7 +74,7 @@ trait ComprehendMedicalAsyncJobProperties extends StObject {
   /**
     * The time that the detection job was submitted for processing.
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+  var SubmitTime: js.UndefOr[js.Date] = js.undefined
 }
 object ComprehendMedicalAsyncJobProperties {
   
@@ -89,11 +89,11 @@ object ComprehendMedicalAsyncJobProperties {
     
     inline def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    inline def setExpirationTime(value: Timestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: js.Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
@@ -137,7 +137,7 @@ object ComprehendMedicalAsyncJobProperties {
     
     inline def setOutputDataConfigUndefined: Self = StObject.set(x, "OutputDataConfig", js.undefined)
     
-    inline def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: js.Date): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
     inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
   }

@@ -42,6 +42,6 @@ object RegexMatchSet {
     
     inline def setRegexMatchTuplesUndefined: Self = StObject.set(x, "RegexMatchTuples", js.undefined)
     
-    inline def setRegexMatchTuplesVarargs(value: RegexMatchTuple*): Self = StObject.set(x, "RegexMatchTuples", js.Array(value :_*))
+    inline def setRegexMatchTuplesVarargs(value: RegexMatchTuple*): Self = StObject.set(x, "RegexMatchTuples", js.Array(value*))
   }
 }

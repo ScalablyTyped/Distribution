@@ -17,24 +17,34 @@ trait PutAnomalyDetectorInput extends StObject {
   var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.undefined
   
   /**
+    * The metric math anomaly detector to be created. When using MetricMathAnomalyDetector, you cannot include the following parameters in the same operation:    Dimensions     MetricName     Namespace     Stat    the SingleMetricAnomalyDetector parameters of PutAnomalyDetectorInput    Instead, specify the metric math anomaly detector attributes as part of the property MetricMathAnomalyDetector.
+    */
+  var MetricMathAnomalyDetector: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricMathAnomalyDetector] = js.undefined
+  
+  /**
     * The name of the metric to create the anomaly detection model for.
     */
-  var MetricName: typings.awsSdk.cloudwatchMod.MetricName
+  var MetricName: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricName] = js.undefined
   
   /**
     * The namespace of the metric to create the anomaly detection model for.
     */
-  var Namespace: typings.awsSdk.cloudwatchMod.Namespace
+  var Namespace: js.UndefOr[typings.awsSdk.cloudwatchMod.Namespace] = js.undefined
+  
+  /**
+    * A single metric anomaly detector to be created. When using SingleMetricAnomalyDetector, you cannot include the following parameters in the same operation:    Dimensions     MetricName     Namespace     Stat    the MetricMatchAnomalyDetector parameters of PutAnomalyDetectorInput    Instead, specify the single metric anomaly detector attributes as part of the property SingleMetricAnomalyDetector.
+    */
+  var SingleMetricAnomalyDetector: js.UndefOr[typings.awsSdk.cloudwatchMod.SingleMetricAnomalyDetector] = js.undefined
   
   /**
     * The statistic to use for the metric and the anomaly detection model.
     */
-  var Stat: AnomalyDetectorMetricStat
+  var Stat: js.UndefOr[AnomalyDetectorMetricStat] = js.undefined
 }
 object PutAnomalyDetectorInput {
   
-  inline def apply(MetricName: MetricName, Namespace: Namespace, Stat: AnomalyDetectorMetricStat): PutAnomalyDetectorInput = {
-    val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Stat = Stat.asInstanceOf[js.Any])
+  inline def apply(): PutAnomalyDetectorInput = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAnomalyDetectorInput]
   }
   
@@ -48,12 +58,26 @@ object PutAnomalyDetectorInput {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
+    
+    inline def setMetricMathAnomalyDetector(value: MetricMathAnomalyDetector): Self = StObject.set(x, "MetricMathAnomalyDetector", value.asInstanceOf[js.Any])
+    
+    inline def setMetricMathAnomalyDetectorUndefined: Self = StObject.set(x, "MetricMathAnomalyDetector", js.undefined)
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    
     inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    
+    inline def setSingleMetricAnomalyDetector(value: SingleMetricAnomalyDetector): Self = StObject.set(x, "SingleMetricAnomalyDetector", value.asInstanceOf[js.Any])
+    
+    inline def setSingleMetricAnomalyDetectorUndefined: Self = StObject.set(x, "SingleMetricAnomalyDetector", js.undefined)
+    
     inline def setStat(value: AnomalyDetectorMetricStat): Self = StObject.set(x, "Stat", value.asInstanceOf[js.Any])
+    
+    inline def setStatUndefined: Self = StObject.set(x, "Stat", js.undefined)
   }
 }

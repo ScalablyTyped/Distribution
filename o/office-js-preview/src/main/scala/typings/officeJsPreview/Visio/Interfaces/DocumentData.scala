@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "document.toJSON()". */
+/** An interface describing the data returned by calling `document.toJSON()`. */
 trait DocumentData extends StObject {
   
   /**
@@ -48,7 +48,7 @@ object DocumentData {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: PageData*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: PageData*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setView(value: DocumentViewData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

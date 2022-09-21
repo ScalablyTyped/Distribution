@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SubMesh")
 @js.native
-class SubMesh protected ()
+open class SubMesh protected ()
   extends typings.babylonjs.babylonjsIndexMod.SubMesh {
   /**
     * Creates a new submesh
@@ -206,6 +206,7 @@ object SubMesh {
     * @param indexCount the number of indices to copy then from the startIndex
     * @param mesh the main mesh to create the submesh from
     * @param renderingMesh the optional rendering mesh
+    * @param createBoundingBox defines if bounding box should be created for this submesh
     * @returns a new submesh
     */
   inline def CreateFromIndices(
@@ -219,6 +220,22 @@ object SubMesh {
     startIndex: Double,
     indexCount: Double,
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: Unit,
+    createBoundingBox: Boolean
+  ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
+  inline def CreateFromIndices(
+    materialIndex: Double,
+    startIndex: Double,
+    indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     renderingMesh: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
+  inline def CreateFromIndices(
+    materialIndex: Double,
+    startIndex: Double,
+    indexCount: Double,
+    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    renderingMesh: typings.babylonjs.meshMod.Mesh,
+    createBoundingBox: Boolean
+  ): typings.babylonjs.subMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.subMeshMod.SubMesh]
 }

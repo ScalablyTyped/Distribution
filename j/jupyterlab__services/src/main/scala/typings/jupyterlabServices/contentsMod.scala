@@ -26,12 +26,12 @@ object contentsMod {
     val ^ : js.Any = js.native
     
     /**
-      * Validates an ICheckpointModel, thowing an error if it does not pass.
+      * Validates an ICheckpointModel, throwing an error if it does not pass.
       */
     inline def validateCheckpointModel(checkpoint: ICheckpointModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateCheckpointModel")(checkpoint.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * Validates an IModel, thowing an error if it does not pass.
+      * Validates an IModel, throwing an error if it does not pass.
       */
     inline def validateContentsModel(contents: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateContentsModel")(contents.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -60,16 +60,9 @@ object contentsMod {
       - typings.jupyterlabServices.jupyterlabServicesStrings.json
       - typings.jupyterlabServices.jupyterlabServicesStrings.text
       - typings.jupyterlabServices.jupyterlabServicesStrings.base64
+      - scala.Null
     */
-    trait FileFormat extends StObject
-    object FileFormat {
-      
-      inline def base64: typings.jupyterlabServices.jupyterlabServicesStrings.base64 = "base64".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.base64]
-      
-      inline def json: typings.jupyterlabServices.jupyterlabServicesStrings.json = "json".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.json]
-      
-      inline def text: typings.jupyterlabServices.jupyterlabServicesStrings.text = "text".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.text]
-    }
+    type FileFormat = _FileFormat | Null
     
     /**
       * The change args for a file change.
@@ -380,6 +373,8 @@ object contentsMod {
         
         inline def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
+        inline def setFormatNull: Self = StObject.set(x, "format", null)
+        
         inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
         inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -599,7 +594,7 @@ object contentsMod {
       /**
         * The optional file content.
         */
-      val content: js.Any
+      val content: Any
       
       /**
         * File creation timestamp.
@@ -613,6 +608,11 @@ object contentsMod {
         * Only relevant for type: 'file'
         */
       val format: FileFormat
+      
+      /**
+        * The indices of the matched characters in the name.
+        */
+      var indices: js.UndefOr[js.Array[Double] | Null] = js.undefined
       
       /**
         * Last modified timestamp.
@@ -661,9 +661,8 @@ object contentsMod {
     object IModel {
       
       inline def apply(
-        content: js.Any,
+        content: Any,
         created: String,
-        format: FileFormat,
         last_modified: String,
         mimetype: String,
         name: String,
@@ -671,7 +670,7 @@ object contentsMod {
         `type`: ContentType,
         writable: Boolean
       ): IModel = {
-        val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], last_modified = last_modified.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], last_modified = last_modified.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any], format = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IModel]
       }
@@ -682,11 +681,21 @@ object contentsMod {
         
         inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
         
-        inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
         inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
         
         inline def setFormat(value: FileFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        
+        inline def setFormatNull: Self = StObject.set(x, "format", null)
+        
+        inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+        
+        inline def setIndicesNull: Self = StObject.set(x, "indices", null)
+        
+        inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+        
+        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
         
         inline def setLast_modified(value: String): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
         
@@ -705,6 +714,8 @@ object contentsMod {
         inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
       }
     }
+    
+    trait _FileFormat extends StObject
   }
   
   @JSImport("@jupyterlab/services/lib/contents", "ContentsManager")
@@ -714,14 +725,14 @@ object contentsMod {
     *
     * @param options - The options used to initialize the object.
     */
-  class ContentsManager ()
+  open class ContentsManager ()
     extends StObject
        with IManager {
     def this(options: IOptions) = this()
     
-    /* private */ var _additionalDrives: js.Any = js.native
+    /* private */ var _additionalDrives: Any = js.native
     
-    /* private */ var _defaultDrive: js.Any = js.native
+    /* private */ var _defaultDrive: Any = js.native
     
     /**
       * Given a path, get the `IDrive to which it refers,
@@ -734,18 +745,18 @@ object contentsMod {
       * @returns A tuple containing an `IDrive` object for the path,
       * and a local path for that drive.
       */
-    /* private */ var _driveForPath: js.Any = js.native
+    /* private */ var _driveForPath: Any = js.native
     
-    /* private */ var _fileChanged: js.Any = js.native
+    /* private */ var _fileChanged: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /**
       * Respond to fileChanged signals from the drives attached to
       * the manager. This prepends the drive name to the path if necessary,
       * and then forwards the signal.
       */
-    /* private */ var _onFileChanged: js.Any = js.native
+    /* private */ var _onFileChanged: Any = js.native
     
     /**
       * Given a drive and a local path, construct a fully qualified
@@ -757,7 +768,7 @@ object contentsMod {
       *
       * @returns the fully qualified path.
       */
-    /* private */ var _toGlobalPath: js.Any = js.native
+    /* private */ var _toGlobalPath: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -837,21 +848,21 @@ object contentsMod {
     *
     * @param options - The options used to initialize the object.
     */
-  class Drive ()
+  open class Drive ()
     extends StObject
        with IDrive {
     def this(options: typings.jupyterlabServices.contentsMod.Drive.IOptions) = this()
     
-    /* private */ var _apiEndpoint: js.Any = js.native
+    /* private */ var _apiEndpoint: Any = js.native
     
-    /* private */ var _fileChanged: js.Any = js.native
+    /* private */ var _fileChanged: Any = js.native
     
     /**
       * Get a REST url for a file given a path.
       */
-    /* private */ var _getUrl: js.Any = js.native
+    /* private */ var _getUrl: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /**
       * Dispose of the resources held by the object.

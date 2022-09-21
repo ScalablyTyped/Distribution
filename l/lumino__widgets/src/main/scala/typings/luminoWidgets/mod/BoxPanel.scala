@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the box panel.
   */
-class BoxPanel ()
+open class BoxPanel ()
   extends typings.luminoWidgets.boxpanelMod.BoxPanel {
   def this(options: IOptions) = this()
 }

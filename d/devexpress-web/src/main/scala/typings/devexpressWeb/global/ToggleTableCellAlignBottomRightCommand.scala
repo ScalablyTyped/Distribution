@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleTableCellAlignBottomRightCommand")
 @js.native
-class ToggleTableCellAlignBottomRightCommand ()
+open class ToggleTableCellAlignBottomRightCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleTableCellAlignBottomRightCommand {
   

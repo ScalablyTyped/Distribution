@@ -38,7 +38,7 @@ object Ext {
     
     inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
-    inline def setExtVarargs(value: SubjectAltName*): Self = StObject.set(x, "ext", js.Array(value :_*))
+    inline def setExtVarargs(value: SubjectAltName*): Self = StObject.set(x, "ext", js.Array(value*))
     
     inline def setSbjprvkey(value: RSAKey | ECDSA | DSA | JsonWebKey | E | String): Self = StObject.set(x, "sbjprvkey", value.asInstanceOf[js.Any])
     

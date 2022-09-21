@@ -6,23 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OnCellQuestionUpdate extends StObject {
   
-  def onCellQuestionUpdate(cellQuestion: js.Any, column: js.Any, question: js.Any, data: js.Any): Unit
-  
-  var properties: js.Array[String]
+  def onCellQuestionUpdate(cellQuestion: Any, column: Any, question: Any, data: Any): Unit
 }
 object OnCellQuestionUpdate {
   
-  inline def apply(onCellQuestionUpdate: (js.Any, js.Any, js.Any, js.Any) => Unit, properties: js.Array[String]): OnCellQuestionUpdate = {
-    val __obj = js.Dynamic.literal(onCellQuestionUpdate = js.Any.fromFunction4(onCellQuestionUpdate), properties = properties.asInstanceOf[js.Any])
+  inline def apply(onCellQuestionUpdate: (Any, Any, Any, Any) => Unit): OnCellQuestionUpdate = {
+    val __obj = js.Dynamic.literal(onCellQuestionUpdate = js.Any.fromFunction4(onCellQuestionUpdate))
     __obj.asInstanceOf[OnCellQuestionUpdate]
   }
   
   extension [Self <: OnCellQuestionUpdate](x: Self) {
     
-    inline def setOnCellQuestionUpdate(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onCellQuestionUpdate", js.Any.fromFunction4(value))
-    
-    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
-    
-    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setOnCellQuestionUpdate(value: (Any, Any, Any, Any) => Unit): Self = StObject.set(x, "onCellQuestionUpdate", js.Any.fromFunction4(value))
   }
 }

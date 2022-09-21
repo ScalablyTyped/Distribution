@@ -52,7 +52,7 @@ object GalleriaJS {
     
     def loadTheme(url: String): GalleriaFactory = js.native
     
-    def ready(method: js.Function0[js.Any]): Unit = js.native
+    def ready(method: js.Function0[Any]): Unit = js.native
     
     def refreshImage(): GalleriaFactory = js.native
     
@@ -88,7 +88,7 @@ object GalleriaJS {
       
       inline def setDataSource(value: js.Array[GalleriaEntry]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
-      inline def setDataSourceVarargs(value: GalleriaEntry*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: GalleriaEntry*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setLightbox(value: Boolean): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
       

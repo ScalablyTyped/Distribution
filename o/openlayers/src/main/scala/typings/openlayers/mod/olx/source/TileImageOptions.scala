@@ -42,7 +42,7 @@ trait TileImageOptions extends StObject {
       /* s1 */ String, 
       /* s2 */ String, 
       /* type */ TileLoadFunctionType, 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -75,7 +75,7 @@ object TileImageOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object TileImageOptions {
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setTileClass(
-      value: (/* n */ ImageTile, /* coords */ TileCoord, /* state */ typings.openlayers.mod.Tile.State, /* s1 */ String, /* s2 */ String, /* type */ TileLoadFunctionType) => js.Any
+      value: (/* n */ ImageTile, /* coords */ TileCoord, /* state */ typings.openlayers.mod.Tile.State, /* s1 */ String, /* s2 */ String, /* type */ TileLoadFunctionType) => Any
     ): Self = StObject.set(x, "tileClass", js.Any.fromFunction6(value))
     
     inline def setTileClassUndefined: Self = StObject.set(x, "tileClass", js.undefined)
@@ -139,7 +139,7 @@ object TileImageOptions {
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
     
     inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     

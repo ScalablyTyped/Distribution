@@ -40,7 +40,7 @@ trait WwwFormUrlDecoder
     */
   def getMany(startIndex: Double): ReturnValue = js.native
   
-  def indexOf(value: IWwwFormUrlDecoderEntry, extra: js.Any*): Index = js.native
+  def indexOf(value: IWwwFormUrlDecoderEntry, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: IWwwFormUrlDecoderEntry): Double = js.native

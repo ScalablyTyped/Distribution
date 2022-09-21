@@ -11,7 +11,7 @@ object gatewayRegistryMod {
   
   @JSImport("react-gateway/GatewayRegistry", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with GatewayRegistry {
     
@@ -19,7 +19,7 @@ object gatewayRegistryMod {
     var _children: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]] = js.native
     
     /* CompleteClass */
-    var _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]] = js.native
+    var _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, Any]) | Null]] = js.native
     
     /* CompleteClass */
     var _currentId: Double = js.native
@@ -31,7 +31,7 @@ object gatewayRegistryMod {
     override def addChild(name: String, gatewayId: String, child: ReactNode): Unit = js.native
     
     /* CompleteClass */
-    override def addContainer(name: String, container: Component[js.Object, js.Object, js.Any]): Unit = js.native
+    override def addContainer(name: String, container: Component[js.Object, js.Object, Any]): Unit = js.native
     
     /* CompleteClass */
     override def clearChild(name: String, gatewayId: String): Unit = js.native
@@ -50,7 +50,7 @@ object gatewayRegistryMod {
     
     var _children: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]]
     
-    var _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]]
+    var _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, Any]) | Null]]
     
     var _currentId: Double
     
@@ -58,7 +58,7 @@ object gatewayRegistryMod {
     
     def addChild(name: String, gatewayId: String, child: ReactNode): Unit
     
-    def addContainer(name: String, container: Component[js.Object, js.Object, js.Any]): Unit
+    def addContainer(name: String, container: Component[js.Object, js.Object, Any]): Unit
     
     def clearChild(name: String, gatewayId: String): Unit
     
@@ -72,11 +72,11 @@ object gatewayRegistryMod {
     
     inline def apply(
       _children: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]],
-      _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]],
+      _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, Any]) | Null]],
       _currentId: Double,
       _renderContainer: String => Unit,
       addChild: (String, String, ReactNode) => Unit,
-      addContainer: (String, Component[js.Object, js.Object, js.Any]) => Unit,
+      addContainer: (String, Component[js.Object, js.Object, Any]) => Unit,
       clearChild: (String, String) => Unit,
       register: (String, ReactNode) => String,
       removeContainer: String => Unit,
@@ -90,7 +90,7 @@ object gatewayRegistryMod {
       
       inline def setAddChild(value: (String, String, ReactNode) => Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction3(value))
       
-      inline def setAddContainer(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "addContainer", js.Any.fromFunction2(value))
+      inline def setAddContainer(value: (String, Component[js.Object, js.Object, Any]) => Unit): Self = StObject.set(x, "addContainer", js.Any.fromFunction2(value))
       
       inline def setClearChild(value: (String, String) => Unit): Self = StObject.set(x, "clearChild", js.Any.fromFunction2(value))
       
@@ -102,7 +102,7 @@ object gatewayRegistryMod {
       
       inline def set_children(value: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
       
-      inline def set_containers(value: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]]): Self = StObject.set(x, "_containers", value.asInstanceOf[js.Any])
+      inline def set_containers(value: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, Any]) | Null]]): Self = StObject.set(x, "_containers", value.asInstanceOf[js.Any])
       
       inline def set_currentId(value: Double): Self = StObject.set(x, "_currentId", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-stream-zip
 
-Typings are for version 1.12.0
+Typings are for version 1.15.0
 
 ## Library description:
 node.js library for reading and extraction of ZIP archives
@@ -10,10 +10,10 @@ node.js library for reading and extraction of ZIP archives
 | ------------------ | :-------------: |
 | Full name          | node-stream-zip |
 | Keywords           | zip, archive, unzip, stream |
-| # releases         | 18 |
-| # dependents       | 107 |
-| # downloads        | 15150824 |
-| # stars            | 3 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 3757661.0 |
+| # stars            | 368.0 |
 
 ## Links
 - [Homepage](https://github.com/antelle/node-stream-zip)

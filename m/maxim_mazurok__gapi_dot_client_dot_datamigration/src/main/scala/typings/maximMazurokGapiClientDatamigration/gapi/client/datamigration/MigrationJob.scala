@@ -19,7 +19,10 @@ trait MigrationJob extends StObject {
   /** The migration job display name. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** The path to the dump file in Google Cloud Storage, in the format: (gs://[BUCKET_NAME]/[OBJECT_NAME]). */
+  /** The initial dump flags. This field and the "dump_path" field are mutually exclusive. */
+  var dumpFlags: js.UndefOr[DumpFlags] = js.undefined
+  
+  /** The path to the dump file in Google Cloud Storage, in the format: (gs://[BUCKET_NAME]/[OBJECT_NAME]). This field and the "dump_flags" field are mutually exclusive. */
   var dumpPath: js.UndefOr[String] = js.undefined
   
   /** Output only. The duration of the migration job (in seconds). A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s". */
@@ -38,10 +41,10 @@ trait MigrationJob extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob & TopLevel[Any]
   ] = js.undefined
   
-  /** The name (URI) of this migration job resource, in the form of: projects/{project}/locations/{location}/instances/{instance}. */
+  /** The name (URI) of this migration job resource, in the form of: projects/{project}/locations/{location}/migrationJobs/{migrationJob}. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The current migration job phase. */
@@ -60,7 +63,7 @@ trait MigrationJob extends StObject {
   var state: js.UndefOr[String] = js.undefined
   
   /** static ip connectivity data (default, no additional details needed). */
-  var staticIpConnectivity: js.UndefOr[js.Any] = js.undefined
+  var staticIpConnectivity: js.UndefOr[Any] = js.undefined
   
   /** Required. The migration job type. */
   var `type`: js.UndefOr[String] = js.undefined
@@ -99,6 +102,10 @@ object MigrationJob {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
+    inline def setDumpFlags(value: DumpFlags): Self = StObject.set(x, "dumpFlags", value.asInstanceOf[js.Any])
+    
+    inline def setDumpFlagsUndefined: Self = StObject.set(x, "dumpFlags", js.undefined)
+    
     inline def setDumpPath(value: String): Self = StObject.set(x, "dumpPath", value.asInstanceOf[js.Any])
     
     inline def setDumpPathUndefined: Self = StObject.set(x, "dumpPath", js.undefined)
@@ -118,7 +125,7 @@ object MigrationJob {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -147,7 +154,7 @@ object MigrationJob {
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    inline def setStaticIpConnectivity(value: js.Any): Self = StObject.set(x, "staticIpConnectivity", value.asInstanceOf[js.Any])
+    inline def setStaticIpConnectivity(value: Any): Self = StObject.set(x, "staticIpConnectivity", value.asInstanceOf[js.Any])
     
     inline def setStaticIpConnectivityUndefined: Self = StObject.set(x, "staticIpConnectivity", js.undefined)
     

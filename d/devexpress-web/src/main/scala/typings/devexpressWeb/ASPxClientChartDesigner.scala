@@ -18,7 +18,7 @@ trait ASPxClientChartDesigner
   
   var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientChartDesigner]] = js.native
   
-  def GetDesignerModel(): js.Any = js.native
+  def GetDesignerModel(): Any = js.native
   
   def GetJsonChartModel(): String = js.native
   

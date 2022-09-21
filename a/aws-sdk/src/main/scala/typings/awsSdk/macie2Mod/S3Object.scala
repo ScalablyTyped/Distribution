@@ -29,7 +29,7 @@ trait S3Object extends StObject {
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the object was last modified.
     */
-  var lastModified: js.UndefOr[timestampIso8601] = js.undefined
+  var lastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The path to the object, including the full key (name).
@@ -42,7 +42,7 @@ trait S3Object extends StObject {
   var publicAccess: js.UndefOr[boolean] = js.undefined
   
   /**
-    * The type of server-side encryption that's used for the object.
+    * The type of server-side encryption that's used to encrypt the object.
     */
   var serverSideEncryption: js.UndefOr[ServerSideEncryption] = js.undefined
   
@@ -91,7 +91,7 @@ object S3Object {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLastModified(value: timestampIso8601): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
@@ -119,7 +119,7 @@ object S3Object {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: KeyValuePair*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: KeyValuePair*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVersionId(value: string): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HtmlDlgSafeHelper")
 @js.native
-/* private */ class HtmlDlgSafeHelper ()
+/* private */ open class HtmlDlgSafeHelper ()
   extends StObject
      with typings.activexMshtml.MSHTML.HtmlDlgSafeHelper

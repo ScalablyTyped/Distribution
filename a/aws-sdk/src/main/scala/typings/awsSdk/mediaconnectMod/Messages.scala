@@ -22,6 +22,6 @@ object Messages {
     
     inline def setErrors(value: listOfString): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: string*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: string*): Self = StObject.set(x, "Errors", js.Array(value*))
   }
 }

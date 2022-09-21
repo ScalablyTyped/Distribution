@@ -144,7 +144,7 @@ object KnockoutValidationConfiguration {
     
     inline def setHtml5InputTypesUndefined: Self = StObject.set(x, "html5InputTypes", js.undefined)
     
-    inline def setHtml5InputTypesVarargs(value: String*): Self = StObject.set(x, "html5InputTypes", js.Array(value :_*))
+    inline def setHtml5InputTypesVarargs(value: String*): Self = StObject.set(x, "html5InputTypes", js.Array(value*))
     
     inline def setInsertMessages(value: Boolean): Self = StObject.set(x, "insertMessages", value.asInstanceOf[js.Any])
     

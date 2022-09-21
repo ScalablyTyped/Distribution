@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientValidationSummaryVisibilityChangedEventArgs")
 @js.native
-class ASPxClientValidationSummaryVisibilityChangedEventArgs protected ()
+open class ASPxClientValidationSummaryVisibilityChangedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientValidationSummaryVisibilityChangedEventArgs {
   /**

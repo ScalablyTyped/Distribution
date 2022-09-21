@@ -9,10 +9,10 @@ A wrapper around the imagemagick cli
 | ------------------ | :-------------: |
 | Full name          | imagemagick |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 224 |
-| # downloads        | 1163014 |
-| # stars            | 45 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 277789.3333333333 |
+| # stars            | 1774.0 |
 
 ## Links
 - [Homepage](https://github.com/rsms/node-imagemagick#readme)

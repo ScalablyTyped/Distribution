@@ -26,25 +26,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a cell icon.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait Icon extends StObject {
   
   /**
-    *
     * Specifies the index of the icon in the given set.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var index: Double
   
   /**
-    *
     * Specifies the set that the icon is part of.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var set: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes

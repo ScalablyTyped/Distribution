@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSpanner.anon
 
-import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.CreateSessionRequest
+import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.CommitRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +20,6 @@ trait Uploadprotocol extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Required. The database in which the new session is created. */
-  var database: String
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -39,7 +36,10 @@ trait Uploadprotocol extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CreateSessionRequest
+  var resource: CommitRequest
+  
+  /** Required. The session in which the transaction to be committed is running. */
+  var session: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +49,8 @@ trait Uploadprotocol extends StObject {
 }
 object Uploadprotocol {
   
-  inline def apply(database: String, resource: CreateSessionRequest): Uploadprotocol = {
-    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(resource: CommitRequest, session: String): Uploadprotocol = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uploadprotocol]
   }
   
@@ -72,8 +72,6 @@ object Uploadprotocol {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
-    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -94,7 +92,9 @@ object Uploadprotocol {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CreateSessionRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CommitRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

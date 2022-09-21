@@ -4,52 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A liveBroadcast resource represents an event that will be streamed, via
-  * live video, on YouTube.
-  */
 trait SchemaLiveBroadcast extends StObject {
   
   /**
-    * The contentDetails object contains information about the event&#39;s
-    * video content, such as whether the content can be shown in an embedded
-    * video player or if it will be archived and therefore available for
-    * viewing after the event has concluded.
+    * The contentDetails object contains information about the event's video content, such as whether the content can be shown in an embedded video player or if it will be archived and therefore available for viewing after the event has concluded.
     */
   var contentDetails: js.UndefOr[SchemaLiveBroadcastContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID that YouTube assigns to uniquely identify the broadcast.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;youtube#liveBroadcast&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "youtube#liveBroadcast".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The snippet object contains basic details about the event, including its
-    * title, description, start time, and end time.
+    * The snippet object contains basic details about the event, including its title, description, start time, and end time.
     */
   var snippet: js.UndefOr[SchemaLiveBroadcastSnippet] = js.undefined
   
   /**
-    * The statistics object contains info about the event&#39;s current stats.
-    * These include concurrent viewers and total chat count. Statistics can
-    * change (in either direction) during the lifetime of an event. Statistics
-    * are only returned while the event is live.
+    * The statistics object contains info about the event's current stats. These include concurrent viewers and total chat count. Statistics can change (in either direction) during the lifetime of an event. Statistics are only returned while the event is live.
     */
   var statistics: js.UndefOr[SchemaLiveBroadcastStatistics] = js.undefined
   
   /**
-    * The status object contains information about the event&#39;s status.
+    * The status object contains information about the event's status.
     */
   var status: js.UndefOr[SchemaLiveBroadcastStatus] = js.undefined
 }
@@ -68,13 +56,19 @@ object SchemaLiveBroadcast {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

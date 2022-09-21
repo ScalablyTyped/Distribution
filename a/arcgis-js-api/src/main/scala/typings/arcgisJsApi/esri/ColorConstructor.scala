@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColorConstructor
   extends StObject
-     with Instantiable1[
-      (/* color */ js.Any) | (/* color */ js.Array[Double]) | (/* color */ String), 
-      Color_
-    ] {
+     with Instantiable1[(/* color */ Any) | (/* color */ js.Array[Double]) | (/* color */ String), Color_] {
   
   /**
     * Creates a new color object by passing either a hex, rgb(a), hsl(a) or [named color value](https://www.w3.org/wiki/CSS/Properties/color/keywords).
@@ -47,7 +44,7 @@ trait ColorConstructor
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html#fromJSON)
     */
-  def fromJSON(json: js.Any): Color_ = js.native
+  def fromJSON(json: Any): Color_ = js.native
   
   /**
     * Creates a Color instance from a string of the form "rgb()" or "rgba()".

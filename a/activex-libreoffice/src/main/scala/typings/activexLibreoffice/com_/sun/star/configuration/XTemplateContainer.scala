@@ -46,7 +46,7 @@ object XTemplateContainer {
     ElementTemplateName: String,
     acquire: () => Unit,
     getElementTemplateName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTemplateContainer = {
     val __obj = js.Dynamic.literal(ElementTemplateName = ElementTemplateName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getElementTemplateName = js.Any.fromFunction0(getElementTemplateName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

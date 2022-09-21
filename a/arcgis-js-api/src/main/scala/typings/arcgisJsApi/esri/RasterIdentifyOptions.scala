@@ -42,7 +42,7 @@ object RasterIdentifyOptions {
     
     inline def setMultidimensionalDefinitionUndefined: Self = StObject.set(x, "multidimensionalDefinition", js.undefined)
     
-    inline def setMultidimensionalDefinitionVarargs(value: DimensionalDefinition*): Self = StObject.set(x, "multidimensionalDefinition", js.Array(value :_*))
+    inline def setMultidimensionalDefinitionVarargs(value: DimensionalDefinition*): Self = StObject.set(x, "multidimensionalDefinition", js.Array(value*))
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

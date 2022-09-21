@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "MapObserver")
 @js.native
-class MapObserver protected ()
+open class MapObserver protected ()
   extends typings.wonderFrp.mapObserverMod.MapObserver {
   def this(currentObserver: IObserver, selector: js.Function) = this()
 }

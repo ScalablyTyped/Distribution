@@ -28,7 +28,7 @@ object XInputSequenceChecker {
   inline def apply(
     acquire: () => Unit,
     checkInputSequence: (String, Double, String, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XInputSequenceChecker = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), checkInputSequence = js.Any.fromFunction4(checkInputSequence), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

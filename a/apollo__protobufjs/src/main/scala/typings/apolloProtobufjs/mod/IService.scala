@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with INamespace {
   
   /** Method descriptors */
-  var methods: StringDictionary[js.UndefOr[IMethod]]
+  var methods: StringDictionary[IMethod]
 }
 object IService {
   
-  inline def apply(methods: StringDictionary[js.UndefOr[IMethod]]): IService = {
+  inline def apply(methods: StringDictionary[IMethod]): IService = {
     val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[IService]
   }
   
   extension [Self <: IService](x: Self) {
     
-    inline def setMethods(value: StringDictionary[js.UndefOr[IMethod]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: StringDictionary[IMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
   }
 }

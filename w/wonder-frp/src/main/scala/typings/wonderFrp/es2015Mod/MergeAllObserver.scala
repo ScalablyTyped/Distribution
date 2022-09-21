@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "MergeAllObserver")
 @js.native
-class MergeAllObserver protected ()
+open class MergeAllObserver protected ()
   extends typings.wonderFrp.observerMergeAllObserverMod.MergeAllObserver {
   def this(
     currentObserver: IObserver,

@@ -23,6 +23,6 @@ object Location {
     
     inline def setPokemon(value: js.Array[LocationPokemon]): Self = StObject.set(x, "pokemon", value.asInstanceOf[js.Any])
     
-    inline def setPokemonVarargs(value: LocationPokemon*): Self = StObject.set(x, "pokemon", js.Array(value :_*))
+    inline def setPokemonVarargs(value: LocationPokemon*): Self = StObject.set(x, "pokemon", js.Array(value*))
   }
 }

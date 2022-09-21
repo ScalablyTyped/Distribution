@@ -264,7 +264,7 @@ trait XColumn
     * @returns the column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getObject(typeMap: XNameAccess): js.Any
+  def getObject(typeMap: XNameAccess): Any
   
   /**
     * gets a REF(<structured-type&gt) column value from the current row.
@@ -344,13 +344,13 @@ object XColumn {
     getFloat: () => Double,
     getInt: () => Double,
     getLong: () => Double,
-    getObject: XNameAccess => js.Any,
+    getObject: XNameAccess => Any,
     getRef: () => XRef,
     getShort: () => Double,
     getString: () => String,
     getTime: () => Time,
     getTimestamp: () => DateTime,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     wasNull: () => Boolean
   ): XColumn = {
@@ -408,7 +408,7 @@ object XColumn {
     
     inline def setGetLong(value: () => Double): Self = StObject.set(x, "getLong", js.Any.fromFunction0(value))
     
-    inline def setGetObject(value: XNameAccess => js.Any): Self = StObject.set(x, "getObject", js.Any.fromFunction1(value))
+    inline def setGetObject(value: XNameAccess => Any): Self = StObject.set(x, "getObject", js.Any.fromFunction1(value))
     
     inline def setGetRef(value: () => XRef): Self = StObject.set(x, "getRef", js.Any.fromFunction0(value))
     

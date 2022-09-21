@@ -1,10 +1,9 @@
 package typings.passportAuthToken
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passportAuthToken.passportAuthTokenBooleans.`false`
 import typings.passportAuthToken.passportAuthTokenBooleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("passport-auth-token", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Strategy {
+  open class ^ protected () extends Strategy {
     def this(verify: VerifyFunction) = this()
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
@@ -56,7 +55,7 @@ object mod {
       
       inline def setHeaderFieldsUndefined: Self = StObject.set(x, "headerFields", js.undefined)
       
-      inline def setHeaderFieldsVarargs(value: String*): Self = StObject.set(x, "headerFields", js.Array(value :_*))
+      inline def setHeaderFieldsVarargs(value: String*): Self = StObject.set(x, "headerFields", js.Array(value*))
       
       inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
@@ -78,7 +77,7 @@ object mod {
       
       inline def setTokenFieldsUndefined: Self = StObject.set(x, "tokenFields", js.undefined)
       
-      inline def setTokenFieldsVarargs(value: String*): Self = StObject.set(x, "tokenFields", js.Array(value :_*))
+      inline def setTokenFieldsVarargs(value: String*): Self = StObject.set(x, "tokenFields", js.Array(value*))
     }
   }
   
@@ -115,7 +114,7 @@ object mod {
       
       inline def setHeaderFieldsUndefined: Self = StObject.set(x, "headerFields", js.undefined)
       
-      inline def setHeaderFieldsVarargs(value: String*): Self = StObject.set(x, "headerFields", js.Array(value :_*))
+      inline def setHeaderFieldsVarargs(value: String*): Self = StObject.set(x, "headerFields", js.Array(value*))
       
       inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
@@ -135,15 +134,15 @@ object mod {
       
       inline def setTokenFieldsUndefined: Self = StObject.set(x, "tokenFields", js.undefined)
       
-      inline def setTokenFieldsVarargs(value: String*): Self = StObject.set(x, "tokenFields", js.Array(value :_*))
+      inline def setTokenFieldsVarargs(value: String*): Self = StObject.set(x, "tokenFields", js.Array(value*))
     }
   }
   
   type VerifyFunction = js.Function2[
     /* token */ String, 
     /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* user */ js.UndefOr[js.Any], 
+      /* error */ Any, 
+      /* user */ js.UndefOr[Any], 
       /* options */ js.UndefOr[VerifyOptions], 
       Unit
     ], 
@@ -151,11 +150,17 @@ object mod {
   ]
   
   type VerifyFunctionWithRequest = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* token */ String, 
     /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* user */ js.UndefOr[js.Any], 
+      /* error */ Any, 
+      /* user */ js.UndefOr[Any], 
       /* options */ js.UndefOr[VerifyOptions], 
       Unit
     ], 

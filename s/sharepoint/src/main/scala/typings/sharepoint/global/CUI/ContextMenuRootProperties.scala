@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.ContextMenuRootProperties")
 @js.native
-class ContextMenuRootProperties ()
+open class ContextMenuRootProperties ()
   extends StObject
      with typings.sharepoint.CUI.RootProperties

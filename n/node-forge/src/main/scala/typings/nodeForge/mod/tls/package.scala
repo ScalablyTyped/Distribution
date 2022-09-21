@@ -1,46 +1,37 @@
 package typings.nodeForge.mod.tls
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.nodeForge.anon.CaStore
+import typings.nodeForge.mod.Byte
+import typings.nodeForge.mod.Bytes
+import typings.nodeForge.mod.tls.^
+import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def MaxFragment: scala.Double = typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].selectDynamic("MaxFragment").asInstanceOf[scala.Double]
+inline def MaxFragment: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxFragment").asInstanceOf[Double]
 
-inline def SupportedVersions: js.Array[typings.nodeForge.mod.tls.ProtocolVersion] = typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].selectDynamic("SupportedVersions").asInstanceOf[js.Array[typings.nodeForge.mod.tls.ProtocolVersion]]
+inline def SupportedVersions: js.Array[ProtocolVersion] = ^.asInstanceOf[js.Dynamic].selectDynamic("SupportedVersions").asInstanceOf[js.Array[ProtocolVersion]]
 
-inline def Version: typings.nodeForge.mod.tls.ProtocolVersion = typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].selectDynamic("Version").asInstanceOf[typings.nodeForge.mod.tls.ProtocolVersion]
+inline def Version: ProtocolVersion = ^.asInstanceOf[js.Dynamic].selectDynamic("Version").asInstanceOf[ProtocolVersion]
 
-inline def Versions: js.Array[typings.nodeForge.mod.tls.ProtocolVersion] = typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].selectDynamic("Versions").asInstanceOf[js.Array[typings.nodeForge.mod.tls.ProtocolVersion]]
+inline def Versions: js.Array[ProtocolVersion] = ^.asInstanceOf[js.Dynamic].selectDynamic("Versions").asInstanceOf[js.Array[ProtocolVersion]]
 
-inline def createConnection(options: typings.nodeForge.anon.CaStore): typings.nodeForge.mod.tls.Connection = typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.tls.Connection]
+inline def createConnection(options: CaStore): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Connection]
 
-inline def createSessionCache(): typings.nodeForge.mod.tls.SessionCache = typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")().asInstanceOf[typings.nodeForge.mod.tls.SessionCache]
-inline def createSessionCache(cache: org.scalablytyped.runtime.StringDictionary[typings.nodeForge.mod.tls.Session]): typings.nodeForge.mod.tls.SessionCache = typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.tls.SessionCache]
-inline def createSessionCache(
-  cache: org.scalablytyped.runtime.StringDictionary[typings.nodeForge.mod.tls.Session],
-  capacity: scala.Double
-): typings.nodeForge.mod.tls.SessionCache = (typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.tls.SessionCache]
-inline def createSessionCache(cache: scala.Unit, capacity: scala.Double): typings.nodeForge.mod.tls.SessionCache = (typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.tls.SessionCache]
-inline def createSessionCache(cache: typings.nodeForge.mod.tls.SessionCache): typings.nodeForge.mod.tls.SessionCache = typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.tls.SessionCache]
-inline def createSessionCache(cache: typings.nodeForge.mod.tls.SessionCache, capacity: scala.Double): typings.nodeForge.mod.tls.SessionCache = (typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.tls.SessionCache]
+inline def createSessionCache(): SessionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")().asInstanceOf[SessionCache]
+inline def createSessionCache(cache: StringDictionary[Session]): SessionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any]).asInstanceOf[SessionCache]
+inline def createSessionCache(cache: StringDictionary[Session], capacity: Double): SessionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[SessionCache]
+inline def createSessionCache(cache: Unit, capacity: Double): SessionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[SessionCache]
+inline def createSessionCache(cache: SessionCache): SessionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any]).asInstanceOf[SessionCache]
+inline def createSessionCache(cache: SessionCache, capacity: Double): SessionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createSessionCache")(cache.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[SessionCache]
 
-inline def hmacSha1(
-  key: java.lang.String,
-  seqNum: js.Tuple2[scala.Double, scala.Double],
-  record: typings.nodeForge.mod.tls.Record
-): typings.nodeForge.mod.Bytes = (typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha1")(key.asInstanceOf[js.Any], seqNum.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.Bytes]
-inline def hmacSha1(
-  key: js.Array[typings.nodeForge.mod.Byte],
-  seqNum: js.Tuple2[scala.Double, scala.Double],
-  record: typings.nodeForge.mod.tls.Record
-): typings.nodeForge.mod.Bytes = (typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha1")(key.asInstanceOf[js.Any], seqNum.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.Bytes]
-inline def hmacSha1(
-  key: typings.nodeForge.mod.util.ByteBuffer,
-  seqNum: js.Tuple2[scala.Double, scala.Double],
-  record: typings.nodeForge.mod.tls.Record
-): typings.nodeForge.mod.Bytes = (typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha1")(key.asInstanceOf[js.Any], seqNum.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.Bytes]
+inline def hmacSha1(key: String, seqNum: js.Tuple2[Double, Double], record: Record): Bytes = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha1")(key.asInstanceOf[js.Any], seqNum.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[Bytes]
+inline def hmacSha1(key: js.Array[Byte], seqNum: js.Tuple2[Double, Double], record: Record): Bytes = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha1")(key.asInstanceOf[js.Any], seqNum.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[Bytes]
+inline def hmacSha1(key: ByteBuffer, seqNum: js.Tuple2[Double, Double], record: Record): Bytes = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha1")(key.asInstanceOf[js.Any], seqNum.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[Bytes]
 
-inline def prfTls1(secret: java.lang.String, label: java.lang.String, seed: java.lang.String, length: scala.Double): typings.nodeForge.mod.util.ByteBuffer = (typings.nodeForge.mod.tls.^.asInstanceOf[js.Dynamic].applyDynamic("prf_tls1")(secret.asInstanceOf[js.Any], label.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.util.ByteBuffer]
+inline def prfTls1(secret: String, label: String, seed: String, length: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("prf_tls1")(secret.asInstanceOf[js.Any], label.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
 
-type ConnectionState = js.Any
+type ConnectionState = Any

@@ -11,5 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(expression: String): js.Function1[/* variables */ js.UndefOr[StringDictionary[js.Any]], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* variables */ js.UndefOr[StringDictionary[js.Any]], js.Any]]
+  inline def default(expression: String): js.Function1[/* variables */ js.UndefOr[StringDictionary[Any]], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* variables */ js.UndefOr[StringDictionary[Any]], Any]]
 }

@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus")
 @js.native
-class ExecutionStatus () extends Message {
+open class ExecutionStatus () extends Message {
   
   def clearArithmeticError(): Unit = js.native
   
@@ -100,7 +99,7 @@ object ExecutionStatus {
     /* 1 */ val RUNTIME_STATUS: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.RUNTIME_STATUS & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): ExecutionStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExecutionStatus]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): ExecutionStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExecutionStatus]
   
   inline def deserializeBinaryFromReader(message: ExecutionStatus, reader: BinaryReader): ExecutionStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ExecutionStatus]
   

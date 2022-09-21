@@ -17,5 +17,5 @@ trait PopupTemplateConstructor
 Instantiable0[PopupTemplate]
      with Instantiable1[/* properties */ PopupTemplateProperties, PopupTemplate] {
   
-  def fromJSON(json: js.Any): PopupTemplate = js.native
+  def fromJSON(json: Any): PopupTemplate = js.native
 }

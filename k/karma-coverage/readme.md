@@ -1,7 +1,7 @@
 
 # Scala.js typings for karma-coverage
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 A Karma plugin. Generate code coverage.
@@ -11,14 +11,11 @@ A Karma plugin. Generate code coverage.
 | Full name          | karma-coverage |
 | Keywords           | karma-plugin, karma-preprocessor, karma-reporter, coverage, istanbul |
 | # releases         | 5 |
-| # dependents       | 315 |
-| # downloads        | 18250821 |
-| # stars            | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 4604247.666666667 |
+| # stars            | 776.0 |
 
 ## Links
-- [Homepage](https://github.com/karma-runner/karma-coverage#readme)
-- [Bugs](https://github.com/karma-runner/karma-coverage/issues)
-- [Repository](https://github.com/karma-runner/karma-coverage)
 - [Npm](https://www.npmjs.com/package/karma-coverage)
     
 

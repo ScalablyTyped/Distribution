@@ -22,21 +22,17 @@ trait Component
   /**
     * Event fired to notify that the component's validity has changed
     */
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any]): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onValidityChanged(
-    listener: js.Function1[/* e */ Boolean, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Any): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Updates the specified CSS Styles and notifies the UI
     * @param cssStyles The styles to update
     * @returns Thenable that completes once the update has been applied to the UI
     */
-  def updateCssStyles(cssStyles: StringDictionary[String]): Thenable[Unit] = js.native
+  def updateCssStyles(cssStyles: CssStyles): Thenable[Unit] = js.native
   
   /**
     * Sends any updated properties of the component to the UI
@@ -44,7 +40,7 @@ trait Component
     * @returns Thenable that completes once the update
     * has been applied in the UI
     */
-  def updateProperties(properties: StringDictionary[js.Any]): Thenable[Unit] = js.native
+  def updateProperties(properties: StringDictionary[Any]): Thenable[Unit] = js.native
   
   /**
     * Sends an updated property of the component to the UI
@@ -52,7 +48,7 @@ trait Component
     * @returns Thenable that completes once the update
     * has been applied in the UI
     */
-  def updateProperty(key: String, value: js.Any): Thenable[Unit] = js.native
+  def updateProperty(key: String, value: Any): Thenable[Unit] = js.native
   
   /**
     * Whether the component is valid or not

@@ -1,5 +1,6 @@
 package typings.hdrHistogramJs
 
+import typings.hdrHistogramJs.histogramMod.BitBucketSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,9 @@ object hdrHistogramJsNumbers {
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `16` extends StObject
+  sealed trait `16`
+    extends StObject
+       with BitBucketSize
   inline def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
@@ -23,7 +26,9 @@ object hdrHistogramJsNumbers {
   inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
-  sealed trait `32` extends StObject
+  sealed trait `32`
+    extends StObject
+       with BitBucketSize
   inline def `32`: `32` = 32.asInstanceOf[`32`]
   
   @js.native
@@ -35,10 +40,14 @@ object hdrHistogramJsNumbers {
   inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
-  sealed trait `64` extends StObject
+  sealed trait `64`
+    extends StObject
+       with BitBucketSize
   inline def `64`: `64` = 64.asInstanceOf[`64`]
   
   @js.native
-  sealed trait `8` extends StObject
+  sealed trait `8`
+    extends StObject
+       with BitBucketSize
   inline def `8`: `8` = 8.asInstanceOf[`8`]
 }

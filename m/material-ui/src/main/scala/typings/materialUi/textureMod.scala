@@ -10,10 +10,10 @@ object textureMod {
   
   @JSImport("material-ui/svg-icons/image/texture", JSImport.Default)
   @js.native
-  class default () extends ImageTexture
+  open class default () extends ImageTexture
   
   @JSImport("material-ui/svg-icons/image/texture", "ImageTexture")
   @js.native
-  class ImageTexture ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageTexture ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

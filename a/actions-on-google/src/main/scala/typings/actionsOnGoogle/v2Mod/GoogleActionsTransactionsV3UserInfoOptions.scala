@@ -24,6 +24,6 @@ object GoogleActionsTransactionsV3UserInfoOptions {
     
     inline def setUserInfoPropertiesUndefined: Self = StObject.set(x, "userInfoProperties", js.undefined)
     
-    inline def setUserInfoPropertiesVarargs(value: GoogleActionsTransactionsV3UserInfoOptionsUserInfoProperties*): Self = StObject.set(x, "userInfoProperties", js.Array(value :_*))
+    inline def setUserInfoPropertiesVarargs(value: GoogleActionsTransactionsV3UserInfoOptionsUserInfoProperties*): Self = StObject.set(x, "userInfoProperties", js.Array(value*))
   }
 }

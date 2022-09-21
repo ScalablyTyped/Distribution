@@ -8,5 +8,5 @@ object consumerDescriptionMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/_ConsumerDescription", "_ConsumerDescription")
   @js.native
-  val ConsumerDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ConsumerDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

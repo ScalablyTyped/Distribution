@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Patch extends StObject {
   
   /**
-    * The Advisory ID of the patch. For example, RHSA-2020:3779. Applies to Linux-based instances only.
+    * The Advisory ID of the patch. For example, RHSA-2020:3779. Applies to Linux-based managed nodes only.
     */
   var AdvisoryIds: js.UndefOr[PatchAdvisoryIdList] = js.undefined
   
   /**
-    * The architecture of the patch. For example, in example-pkg-0.710.10-2.7.abcd.x86_64, the architecture is indicated by x86_64. Applies to Linux-based instances only.
+    * The architecture of the patch. For example, in example-pkg-0.710.10-2.7.abcd.x86_64, the architecture is indicated by x86_64. Applies to Linux-based managed nodes only.
     */
   var Arch: js.UndefOr[PatchArch] = js.undefined
   
   /**
-    * The Bugzilla ID of the patch. For example, 1600646. Applies to Linux-based instances only.
+    * The Bugzilla ID of the patch. For example, 1600646. Applies to Linux-based managed nodes only.
     */
   var BugzillaIds: js.UndefOr[PatchBugzillaIdList] = js.undefined
   
   /**
-    * The Common Vulnerabilities and Exposures (CVE) ID of the patch. For example, CVE-1999-0067. Applies to Linux-based instances only.
+    * The Common Vulnerabilities and Exposures (CVE) ID of the patch. For example, CVE-2011-3192. Applies to Linux-based managed nodes only.
     */
   var CVEIds: js.UndefOr[PatchCVEIdList] = js.undefined
   
@@ -42,12 +42,12 @@ trait Patch extends StObject {
   var Description: js.UndefOr[PatchDescription] = js.undefined
   
   /**
-    * The epoch of the patch. For example in pkg-example-EE-20180914-2.2.amzn1.noarch, the epoch value is 20180914-2. Applies to Linux-based instances only.
+    * The epoch of the patch. For example in pkg-example-EE-20180914-2.2.amzn1.noarch, the epoch value is 20180914-2. Applies to Linux-based managed nodes only.
     */
   var Epoch: js.UndefOr[PatchEpoch] = js.undefined
   
   /**
-    * The ID of the patch. Applies to Windows patches only.  This ID is not the same as the Microsoft Knowledge Base ID. 
+    * The ID of the patch. Applies to Windows patches only.  This ID isn't the same as the Microsoft Knowledge Base ID. 
     */
   var Id: js.UndefOr[PatchId] = js.undefined
   
@@ -72,7 +72,7 @@ trait Patch extends StObject {
   var MsrcSeverity: js.UndefOr[PatchMsrcSeverity] = js.undefined
   
   /**
-    * The name of the patch. Applies to Linux-based instances only.
+    * The name of the patch. Applies to Linux-based managed nodes only.
     */
   var Name: js.UndefOr[PatchName] = js.undefined
   
@@ -87,17 +87,17 @@ trait Patch extends StObject {
   var ProductFamily: js.UndefOr[PatchProductFamily] = js.undefined
   
   /**
-    * The particular release of a patch. For example, in pkg-example-EE-20180914-2.2.amzn1.noarch, the release is 2.amaz1. Applies to Linux-based instances only.
+    * The particular release of a patch. For example, in pkg-example-EE-20180914-2.2.amzn1.noarch, the release is 2.amaz1. Applies to Linux-based managed nodes only.
     */
   var Release: js.UndefOr[PatchRelease] = js.undefined
   
   /**
     * The date the patch was released.
     */
-  var ReleaseDate: js.UndefOr[DateTime] = js.undefined
+  var ReleaseDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The source patch repository for the operating system and version, such as trusty-security for Ubuntu Server 14.04 LTE and focal-security for Ubuntu Server 20.04 LTE. Applies to Linux-based instances only.
+    * The source patch repository for the operating system and version, such as trusty-security for Ubuntu Server 14.04 LTE and focal-security for Ubuntu Server 20.04 LTE. Applies to Linux-based managed nodes only.
     */
   var Repository: js.UndefOr[PatchRepository] = js.undefined
   
@@ -117,7 +117,7 @@ trait Patch extends StObject {
   var Vendor: js.UndefOr[PatchVendor] = js.undefined
   
   /**
-    * The version number of the patch. For example, in example-pkg-1.710.10-2.7.abcd.x86_64, the version number is indicated by -1. Applies to Linux-based instances only.
+    * The version number of the patch. For example, in example-pkg-1.710.10-2.7.abcd.x86_64, the version number is indicated by -1. Applies to Linux-based managed nodes only.
     */
   var Version: js.UndefOr[PatchVersion] = js.undefined
 }
@@ -134,7 +134,7 @@ object Patch {
     
     inline def setAdvisoryIdsUndefined: Self = StObject.set(x, "AdvisoryIds", js.undefined)
     
-    inline def setAdvisoryIdsVarargs(value: PatchAdvisoryId*): Self = StObject.set(x, "AdvisoryIds", js.Array(value :_*))
+    inline def setAdvisoryIdsVarargs(value: PatchAdvisoryId*): Self = StObject.set(x, "AdvisoryIds", js.Array(value*))
     
     inline def setArch(value: PatchArch): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
     
@@ -144,13 +144,13 @@ object Patch {
     
     inline def setBugzillaIdsUndefined: Self = StObject.set(x, "BugzillaIds", js.undefined)
     
-    inline def setBugzillaIdsVarargs(value: PatchBugzillaId*): Self = StObject.set(x, "BugzillaIds", js.Array(value :_*))
+    inline def setBugzillaIdsVarargs(value: PatchBugzillaId*): Self = StObject.set(x, "BugzillaIds", js.Array(value*))
     
     inline def setCVEIds(value: PatchCVEIdList): Self = StObject.set(x, "CVEIds", value.asInstanceOf[js.Any])
     
     inline def setCVEIdsUndefined: Self = StObject.set(x, "CVEIds", js.undefined)
     
-    inline def setCVEIdsVarargs(value: PatchCVEId*): Self = StObject.set(x, "CVEIds", js.Array(value :_*))
+    inline def setCVEIdsVarargs(value: PatchCVEId*): Self = StObject.set(x, "CVEIds", js.Array(value*))
     
     inline def setClassification(value: PatchClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
@@ -202,7 +202,7 @@ object Patch {
     
     inline def setRelease(value: PatchRelease): Self = StObject.set(x, "Release", value.asInstanceOf[js.Any])
     
-    inline def setReleaseDate(value: DateTime): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: js.Date): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
     
     inline def setReleaseDateUndefined: Self = StObject.set(x, "ReleaseDate", js.undefined)
     

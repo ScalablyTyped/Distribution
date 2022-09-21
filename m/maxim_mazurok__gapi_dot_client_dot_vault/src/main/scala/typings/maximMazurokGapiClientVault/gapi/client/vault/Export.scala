@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Export extends StObject {
   
-  /** Output only. Export sink for cloud storage files. */
+  /** Output only. The sink for export files in Cloud Storage. */
   var cloudStorageSink: js.UndefOr[CloudStorageSink] = js.undefined
   
   /** Output only. The time when the export was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Advanced options of the export. */
+  /** Additional export options. */
   var exportOptions: js.UndefOr[ExportOptions] = js.undefined
   
   /** Output only. The generated export ID. */
@@ -21,19 +21,19 @@ trait Export extends StObject {
   /** Output only. The matter ID. */
   var matterId: js.UndefOr[String] = js.undefined
   
-  /** The export name. */
+  /** The export name. Don't use special characters (~!$'(),;@:/?) in the name, they can prevent you from downloading exports. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** The search query being exported. */
+  /** The query parameters used to create the export. */
   var query: js.UndefOr[Query] = js.undefined
   
   /** Output only. The requester of the export. */
   var requester: js.UndefOr[UserInfo] = js.undefined
   
-  /** Output only. Export statistics. */
+  /** Output only. Details about the export progress and size. */
   var stats: js.UndefOr[ExportStats] = js.undefined
   
-  /** Output only. The export status. */
+  /** Output only. The status of the export. */
   var status: js.UndefOr[String] = js.undefined
 }
 object Export {

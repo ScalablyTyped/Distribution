@@ -36,6 +36,6 @@ object GalleryProfile {
     
     inline def setTrophies(value: js.Array[Trophy]): Self = StObject.set(x, "trophies", value.asInstanceOf[js.Any])
     
-    inline def setTrophiesVarargs(value: Trophy*): Self = StObject.set(x, "trophies", js.Array(value :_*))
+    inline def setTrophiesVarargs(value: Trophy*): Self = StObject.set(x, "trophies", js.Array(value*))
   }
 }

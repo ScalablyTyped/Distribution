@@ -144,7 +144,7 @@ object mockModelMod {
       
       inline def setLocksUndefined: Self = StObject.set(x, "locks", js.undefined)
       
-      inline def setLocksVarargs(value: Lock*): Self = StObject.set(x, "locks", js.Array(value :_*))
+      inline def setLocksVarargs(value: Lock*): Self = StObject.set(x, "locks", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -152,7 +152,7 @@ object mockModelMod {
       
       inline def setNestedResourcesUndefined: Self = StObject.set(x, "nestedResources", js.undefined)
       
-      inline def setNestedResourcesVarargs(value: NestedResource*): Self = StObject.set(x, "nestedResources", js.Array(value :_*))
+      inline def setNestedResourcesVarargs(value: NestedResource*): Self = StObject.set(x, "nestedResources", js.Array(value*))
       
       inline def setTags(value: StringMap[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
@@ -209,7 +209,7 @@ object mockModelMod {
       
       inline def setLocksUndefined: Self = StObject.set(x, "locks", js.undefined)
       
-      inline def setLocksVarargs(value: Lock*): Self = StObject.set(x, "locks", js.Array(value :_*))
+      inline def setLocksVarargs(value: Lock*): Self = StObject.set(x, "locks", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -219,7 +219,7 @@ object mockModelMod {
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
       
       inline def setTags(value: StringMap[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
@@ -301,13 +301,13 @@ object mockModelMod {
       
       inline def setLocksUndefined: Self = StObject.set(x, "locks", js.undefined)
       
-      inline def setLocksVarargs(value: Lock*): Self = StObject.set(x, "locks", js.Array(value :_*))
+      inline def setLocksVarargs(value: Lock*): Self = StObject.set(x, "locks", js.Array(value*))
       
       inline def setResourceGroups(value: js.Array[ResourceGroup]): Self = StObject.set(x, "resourceGroups", value.asInstanceOf[js.Any])
       
       inline def setResourceGroupsUndefined: Self = StObject.set(x, "resourceGroups", js.undefined)
       
-      inline def setResourceGroupsVarargs(value: ResourceGroup*): Self = StObject.set(x, "resourceGroups", js.Array(value :_*))
+      inline def setResourceGroupsVarargs(value: ResourceGroup*): Self = StObject.set(x, "resourceGroups", js.Array(value*))
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

@@ -29,6 +29,6 @@ object UserRolePermissionGroupsListResponse {
     
     inline def setUserRolePermissionGroupsUndefined: Self = StObject.set(x, "userRolePermissionGroups", js.undefined)
     
-    inline def setUserRolePermissionGroupsVarargs(value: UserRolePermissionGroup*): Self = StObject.set(x, "userRolePermissionGroups", js.Array(value :_*))
+    inline def setUserRolePermissionGroupsVarargs(value: UserRolePermissionGroup*): Self = StObject.set(x, "userRolePermissionGroups", js.Array(value*))
   }
 }

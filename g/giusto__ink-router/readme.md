@@ -10,10 +10,10 @@ Implementation of react-router for ink
 | ------------------ | :-------------: |
 | Full name          | @giusto/ink-router |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 1051 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 70.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/jimmed/ink-router)

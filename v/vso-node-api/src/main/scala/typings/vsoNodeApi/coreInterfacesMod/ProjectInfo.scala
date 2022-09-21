@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.coreInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait ProjectInfo extends StObject {
   
   var id: String
   
-  var lastUpdateTime: Date
+  var lastUpdateTime: js.Date
   
   var name: String
   
@@ -24,7 +23,7 @@ trait ProjectInfo extends StObject {
     */
   var revision: Double
   
-  var state: js.Any
+  var state: Any
   
   var uri: String
   
@@ -38,11 +37,11 @@ object ProjectInfo {
     abbreviation: String,
     description: String,
     id: String,
-    lastUpdateTime: Date,
+    lastUpdateTime: js.Date,
     name: String,
     properties: js.Array[ProjectProperty],
     revision: Double,
-    state: js.Any,
+    state: Any,
     uri: String,
     version: Double,
     visibility: ProjectVisibility
@@ -59,17 +58,17 @@ object ProjectInfo {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateTime(value: Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: js.Array[ProjectProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: ProjectProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: ProjectProperty*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

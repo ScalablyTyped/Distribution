@@ -8,13 +8,13 @@ trait Path extends StObject {
   
   var path: String
   
-  var previousValue: js.Any
+  var previousValue: Any
   
-  var value: js.Any
+  var value: Any
 }
 object Path {
   
-  inline def apply(path: String, previousValue: js.Any, value: js.Any): Path = {
+  inline def apply(path: String, previousValue: Any, value: Any): Path = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Path]
   }
@@ -23,8 +23,8 @@ object Path {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+    inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

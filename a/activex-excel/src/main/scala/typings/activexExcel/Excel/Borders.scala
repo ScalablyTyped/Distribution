@@ -23,7 +23,7 @@ trait Borders extends StObject {
   
   var LineStyle: typings.activexExcel.Excel.LineStyle = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var ThemeColor: XlThemeColor = js.native
   

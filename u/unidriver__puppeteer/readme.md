@@ -1,7 +1,7 @@
 
 # Scala.js typings for unidriver__puppeteer
 
-Typings are for version 1.2.1
+Typings are for version 2.2.7
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 1.2.1
 | ------------------ | :-------------: |
 | Full name          | @unidriver/puppeteer |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 1 |
-| # downloads        | 43433 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 3672.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40unidriver%2Fpuppeteer)

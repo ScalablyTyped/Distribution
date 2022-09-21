@@ -12,22 +12,42 @@ trait DBInstanceAutomatedBackup extends StObject {
   var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The Availability Zone that the automated backup was created in. For information on AWS Regions and Availability Zones, see Regions and Availability Zones.
+    * The Availability Zone that the automated backup was created in. For information on Amazon Web Services Regions and Availability Zones, see Regions and Availability Zones.
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for the automated backup.
+    * The retention period for the automated backups.
+    */
+  var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * Specifies where automated backups are stored: Amazon Web Services Outposts or the Amazon Web Services Region.
+    */
+  var BackupTarget: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) for the automated backups.
     */
   var DBInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The customer id of the instance that is/was associated with the automated backup. 
+    * The Amazon Resource Name (ARN) for the replicated automated backups.
+    */
+  var DBInstanceAutomatedBackupsArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The list of replications to different Amazon Web Services Regions associated with the automated backup.
+    */
+  var DBInstanceAutomatedBackupsReplications: js.UndefOr[DBInstanceAutomatedBackupsReplicationList] = js.undefined
+  
+  /**
+    * The customer id of the instance that is/was associated with the automated backup.
     */
   var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier for the source DB instance, which can't be changed and which is unique to an AWS Region.
+    * The identifier for the source DB instance, which can't be changed and which is unique to an Amazon Web Services Region.
     */
   var DbiResourceId: js.UndefOr[String] = js.undefined
   
@@ -47,22 +67,22 @@ trait DBInstanceAutomatedBackup extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
+    * True if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Provides the date and time that the DB instance was created. 
+    * Provides the date and time that the DB instance was created.
     */
-  var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
+  var InstanceCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The IOPS (I/O operations per second) value for the automated backup. 
+    * The IOPS (I/O operations per second) value for the automated backup.
     */
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The AWS KMS key ID for an automated backup. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key. 
+    * The Amazon Web Services KMS key ID for an automated backup. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -87,7 +107,7 @@ trait DBInstanceAutomatedBackup extends StObject {
   var Port: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The AWS Region associated with the automated backup.
+    * The Amazon Web Services Region associated with the automated backup.
     */
   var Region: js.UndefOr[String] = js.undefined
   
@@ -138,9 +158,27 @@ object DBInstanceAutomatedBackup {
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
+    inline def setBackupRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setBackupRetentionPeriodUndefined: Self = StObject.set(x, "BackupRetentionPeriod", js.undefined)
+    
+    inline def setBackupTarget(value: String): Self = StObject.set(x, "BackupTarget", value.asInstanceOf[js.Any])
+    
+    inline def setBackupTargetUndefined: Self = StObject.set(x, "BackupTarget", js.undefined)
+    
     inline def setDBInstanceArn(value: String): Self = StObject.set(x, "DBInstanceArn", value.asInstanceOf[js.Any])
     
     inline def setDBInstanceArnUndefined: Self = StObject.set(x, "DBInstanceArn", js.undefined)
+    
+    inline def setDBInstanceAutomatedBackupsArn(value: String): Self = StObject.set(x, "DBInstanceAutomatedBackupsArn", value.asInstanceOf[js.Any])
+    
+    inline def setDBInstanceAutomatedBackupsArnUndefined: Self = StObject.set(x, "DBInstanceAutomatedBackupsArn", js.undefined)
+    
+    inline def setDBInstanceAutomatedBackupsReplications(value: DBInstanceAutomatedBackupsReplicationList): Self = StObject.set(x, "DBInstanceAutomatedBackupsReplications", value.asInstanceOf[js.Any])
+    
+    inline def setDBInstanceAutomatedBackupsReplicationsUndefined: Self = StObject.set(x, "DBInstanceAutomatedBackupsReplications", js.undefined)
+    
+    inline def setDBInstanceAutomatedBackupsReplicationsVarargs(value: DBInstanceAutomatedBackupsReplication*): Self = StObject.set(x, "DBInstanceAutomatedBackupsReplications", js.Array(value*))
     
     inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
@@ -166,7 +204,7 @@ object DBInstanceAutomatedBackup {
     
     inline def setIAMDatabaseAuthenticationEnabledUndefined: Self = StObject.set(x, "IAMDatabaseAuthenticationEnabled", js.undefined)
     
-    inline def setInstanceCreateTime(value: TStamp): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
+    inline def setInstanceCreateTime(value: js.Date): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
     
     inline def setInstanceCreateTimeUndefined: Self = StObject.set(x, "InstanceCreateTime", js.undefined)
     

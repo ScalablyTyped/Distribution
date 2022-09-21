@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +12,6 @@ trait ParamsResourceCreativegroupsList
     * Select only creative groups that belong to these advertisers.
     */
   var advertiserIds: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only creative groups that belong to this subgroup.
@@ -48,13 +39,7 @@ trait ParamsResourceCreativegroupsList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for creative groups by name or ID. Wildcards (*) are
-    * allowed. For example, "creativegroup*2015" will return creative groups
-    * with names like "creativegroup June 2015", "creativegroup April 2015", or
-    * simply "creativegroup 2015". Most of the searches also add wild-cards
-    * implicitly at the start and the end of the search string. For example, a
-    * search string of "creativegroup" will match creative groups with the name
-    * "my creativegroup", "creativegroup 2015", or simply "creativegroup".
+    * Allows searching for creative groups by name or ID. Wildcards (*) are allowed. For example, "creativegroup*2015" will return creative groups with names like "creativegroup June 2015", "creativegroup April 2015", or simply "creativegroup 2015". Most of the searches also add wild-cards implicitly at the start and the end of the search string. For example, a search string of "creativegroup" will match creative groups with the name "my creativegroup", "creativegroup 2015", or simply "creativegroup".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -81,11 +66,7 @@ object ParamsResourceCreativegroupsList {
     
     inline def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
     
-    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value*))
     
     inline def setGroupNumber(value: Double): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
     
@@ -95,7 +76,7 @@ object ParamsResourceCreativegroupsList {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

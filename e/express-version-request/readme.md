@@ -10,10 +10,10 @@ versions an incoming request to Express based on header or URL
 | ------------------ | :-------------: |
 | Full name          | express-version-request |
 | Keywords           | express, api, version, versioned, versioning, routing, router, api versioning, api version, header |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 25262 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5153.666666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/lirantal/express-version-request#readme)

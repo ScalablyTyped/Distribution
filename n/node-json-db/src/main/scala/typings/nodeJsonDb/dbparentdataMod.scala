@@ -10,15 +10,15 @@ object dbparentdataMod {
   
   @JSImport("node-json-db/dist/lib/DBParentData", "DBParentData")
   @js.native
-  class DBParentData protected () extends StObject {
-    def this(data: js.Any, db: JsonDB, dataPath: String) = this()
-    def this(data: js.Any, db: JsonDB, dataPath: String, parent: String) = this()
+  open class DBParentData protected () extends StObject {
+    def this(data: Any, db: JsonDB, dataPath: String) = this()
+    def this(data: Any, db: JsonDB, dataPath: String, parent: String) = this()
     
     /**
       * Check if it's an array
       * @param deletion
       */
-    /* private */ var checkArray: js.Any = js.native
+    /* private */ var checkArray: Any = js.native
     
     val data: KeyValue = js.native
     
@@ -34,7 +34,7 @@ object dbparentdataMod {
     /**
       * Get the data linked to this path
       */
-    def getData(): js.Any = js.native
+    def getData(): Any = js.native
     
     val parent: js.UndefOr[String] = js.native
     
@@ -42,6 +42,6 @@ object dbparentdataMod {
       * Set the data to the wanted path
       * @param toSet
       */
-    def setData(toSet: js.Any): Unit = js.native
+    def setData(toSet: Any): Unit = js.native
   }
 }

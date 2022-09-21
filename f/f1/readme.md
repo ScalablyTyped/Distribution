@@ -10,10 +10,10 @@ A stateful ui library
 | ------------------ | :-------------: |
 | Full name          | f1 |
 | Keywords           | state,stateful,ui,ease,tween |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1783 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 250.0 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/jam3/f1)

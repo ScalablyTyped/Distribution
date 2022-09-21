@@ -72,7 +72,7 @@ object InventoryConfiguration {
     
     inline def setOptionalFieldsUndefined: Self = StObject.set(x, "OptionalFields", js.undefined)
     
-    inline def setOptionalFieldsVarargs(value: InventoryOptionalField*): Self = StObject.set(x, "OptionalFields", js.Array(value :_*))
+    inline def setOptionalFieldsVarargs(value: InventoryOptionalField*): Self = StObject.set(x, "OptionalFields", js.Array(value*))
     
     inline def setSchedule(value: InventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
   }

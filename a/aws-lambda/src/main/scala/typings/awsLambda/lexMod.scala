@@ -5,7 +5,6 @@ import typings.awsLambda.anon.Alias
 import typings.awsLambda.anon.ConfirmationStatus
 import typings.awsLambda.anon.Content
 import typings.awsLambda.anon.ContentType
-import typings.awsLambda.anon.OriginalValue
 import typings.awsLambda.awsLambdaStrings.Close
 import typings.awsLambda.awsLambdaStrings.ConfirmIntent
 import typings.awsLambda.awsLambdaStrings.Delegate
@@ -249,9 +248,9 @@ object lexMod {
     
     var outputDialogMode: Text | Voice_
     
-    var requestAttributes: StringDictionary[String] | Null
+    var requestAttributes: LexEventRequestAttributes | Null
     
-    var sessionAttributes: StringDictionary[String]
+    var sessionAttributes: LexEventSessionAttributes
     
     var userId: String
   }
@@ -263,7 +262,7 @@ object lexMod {
       inputTranscript: String,
       invocationSource: DialogCodeHook | FulfillmentCodeHook,
       outputDialogMode: Text | Voice_,
-      sessionAttributes: StringDictionary[String],
+      sessionAttributes: LexEventSessionAttributes,
       userId: String
     ): LexEvent = {
       val __obj = js.Dynamic.literal(bot = bot.asInstanceOf[js.Any], currentIntent = currentIntent.asInstanceOf[js.Any], inputTranscript = inputTranscript.asInstanceOf[js.Any], invocationSource = invocationSource.asInstanceOf[js.Any], messageVersion = "1.0", outputDialogMode = outputDialogMode.asInstanceOf[js.Any], sessionAttributes = sessionAttributes.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], requestAttributes = null)
@@ -284,15 +283,21 @@ object lexMod {
       
       inline def setOutputDialogMode(value: Text | Voice_): Self = StObject.set(x, "outputDialogMode", value.asInstanceOf[js.Any])
       
-      inline def setRequestAttributes(value: StringDictionary[String]): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
+      inline def setRequestAttributes(value: LexEventRequestAttributes): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
       
       inline def setRequestAttributesNull: Self = StObject.set(x, "requestAttributes", null)
       
-      inline def setSessionAttributes(value: StringDictionary[String]): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
+      inline def setSessionAttributes(value: LexEventSessionAttributes): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
       
       inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
+  
+  type LexEventRequestAttributes = StringDictionary[js.UndefOr[String]]
+  
+  type LexEventSessionAttributes = StringDictionary[js.UndefOr[String]]
+  
+  type LexEventSlots = StringDictionary[js.UndefOr[String | Null]]
   
   trait LexGenericAttachment extends StObject {
     
@@ -325,7 +330,7 @@ object lexMod {
       
       inline def setButtons(value: js.Array[typings.awsLambda.anon.Text]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      inline def setButtonsVarargs(value: typings.awsLambda.anon.Text*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: typings.awsLambda.anon.Text*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
@@ -360,7 +365,52 @@ object lexMod {
     }
   }
   
-  type LexSlotDetails = StringDictionary[OriginalValue]
+  trait LexSlotDetail extends StObject {
+    
+    var originalValue: String
+    
+    // "at least 1 but no more than 5 items"
+    var resolutions: js.Tuple5[
+        LexSlotResolution, 
+        js.UndefOr[LexSlotResolution], 
+        js.UndefOr[LexSlotResolution], 
+        js.UndefOr[LexSlotResolution], 
+        js.UndefOr[LexSlotResolution]
+      ]
+  }
+  object LexSlotDetail {
+    
+    inline def apply(
+      originalValue: String,
+      resolutions: js.Tuple5[
+          LexSlotResolution, 
+          js.UndefOr[LexSlotResolution], 
+          js.UndefOr[LexSlotResolution], 
+          js.UndefOr[LexSlotResolution], 
+          js.UndefOr[LexSlotResolution]
+        ]
+    ): LexSlotDetail = {
+      val __obj = js.Dynamic.literal(originalValue = originalValue.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LexSlotDetail]
+    }
+    
+    extension [Self <: LexSlotDetail](x: Self) {
+      
+      inline def setOriginalValue(value: String): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+      
+      inline def setResolutions(
+        value: js.Tuple5[
+              LexSlotResolution, 
+              js.UndefOr[LexSlotResolution], 
+              js.UndefOr[LexSlotResolution], 
+              js.UndefOr[LexSlotResolution], 
+              js.UndefOr[LexSlotResolution]
+            ]
+      ): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type LexSlotDetails = StringDictionary[LexSlotDetail]
   
   trait LexSlotResolution extends StObject {
     

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ApplyMemoizedBindingsToNextSibling extends StObject {
   
-  def applyMemoizedBindingsToNextSibling(bindings: js.Any, nodeName: String): String = js.native
+  def applyMemoizedBindingsToNextSibling(bindings: Any, nodeName: String): String = js.native
   
-  def ensureTemplateIsRewritten(template: String, templateEngine: KnockoutTemplateEngine, templateDocument: Document): js.Any = js.native
-  def ensureTemplateIsRewritten(template: Node, templateEngine: KnockoutTemplateEngine, templateDocument: Document): js.Any = js.native
+  def ensureTemplateIsRewritten(template: String, templateEngine: KnockoutTemplateEngine, templateDocument: Document): Any = js.native
+  def ensureTemplateIsRewritten(template: Node, templateEngine: KnockoutTemplateEngine, templateDocument: Document): Any = js.native
   
-  def memoizeBindingAttributeSyntax(htmlString: String, templateEngine: KnockoutTemplateEngine): js.Any = js.native
+  def memoizeBindingAttributeSyntax(htmlString: String, templateEngine: KnockoutTemplateEngine): Any = js.native
 }

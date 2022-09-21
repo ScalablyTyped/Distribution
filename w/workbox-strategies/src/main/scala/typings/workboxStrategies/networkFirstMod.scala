@@ -17,7 +17,7 @@ object networkFirstMod {
   
   @JSImport("workbox-strategies/NetworkFirst", "NetworkFirst")
   @js.native
-  class NetworkFirst ()
+  open class NetworkFirst ()
     extends StObject
        with RouteHandlerObject {
     def this(options: NetworkFirstOptions) = this()
@@ -74,7 +74,7 @@ object networkFirstMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

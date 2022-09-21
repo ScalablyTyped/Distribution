@@ -30,7 +30,7 @@ object OptionalClaims {
     
     inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    inline def setAccessTokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "accessToken", js.Array(value :_*))
+    inline def setAccessTokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "accessToken", js.Array(value*))
     
     inline def setIdToken(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
@@ -38,7 +38,7 @@ object OptionalClaims {
     
     inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    inline def setIdTokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "idToken", js.Array(value :_*))
+    inline def setIdTokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "idToken", js.Array(value*))
     
     inline def setSaml2Token(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "saml2Token", value.asInstanceOf[js.Any])
     
@@ -46,6 +46,6 @@ object OptionalClaims {
     
     inline def setSaml2TokenUndefined: Self = StObject.set(x, "saml2Token", js.undefined)
     
-    inline def setSaml2TokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "saml2Token", js.Array(value :_*))
+    inline def setSaml2TokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "saml2Token", js.Array(value*))
   }
 }

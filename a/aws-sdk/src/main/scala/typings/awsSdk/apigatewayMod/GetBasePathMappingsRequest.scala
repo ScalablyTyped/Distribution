@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetBasePathMappingsRequest extends StObject {
   
   /**
-    * [Required] The domain name of a BasePathMapping resource.
+    * The domain name of a BasePathMapping resource.
     */
   var domainName: String
   

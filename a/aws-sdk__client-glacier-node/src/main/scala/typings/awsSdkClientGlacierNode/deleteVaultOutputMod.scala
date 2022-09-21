@@ -8,5 +8,5 @@ object deleteVaultOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/DeleteVaultOutput", "DeleteVaultOutput")
   @js.native
-  val DeleteVaultOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteVaultOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -8,19 +8,19 @@ object Global {
   
   @JSGlobal("Global.KeyboardManager")
   @js.native
-  class KeyboardManager ()
+  open class KeyboardManager ()
     extends StObject
        with typings.webgme.Global_.KeyboardManager
   
   @JSGlobal("Global.State")
   @js.native
-  class State ()
+  open class State ()
     extends StObject
        with typings.webgme.Global_.State
   
   @JSGlobal("Global.UserInfo")
   @js.native
-  class UserInfo ()
+  open class UserInfo ()
     extends StObject
        with typings.webgme.Global_.UserInfo {
     

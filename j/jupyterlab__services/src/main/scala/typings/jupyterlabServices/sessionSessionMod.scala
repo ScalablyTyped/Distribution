@@ -4,7 +4,7 @@ import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
 import typings.jupyterlabServices.anon.OmitIOptionsconnectToKern
 import typings.jupyterlabServices.anon.OmitIOptionsmodelconnectT
 import typings.jupyterlabServices.anon.OmitIOptionsmodelusername
-import typings.jupyterlabServices.anon.PartialIModelId
+import typings.jupyterlabServices.anon.PartialIModelConnections
 import typings.jupyterlabServices.anon.PartialPickIModelname
 import typings.jupyterlabServices.jupyterlabServicesStrings.`type`
 import typings.jupyterlabServices.jupyterlabServicesStrings.kernel
@@ -211,7 +211,7 @@ object sessionSessionMod {
       *
       * To start now kernel, pass an empty dictionary.
       */
-    def changeKernel(options: PartialIModelId): js.Promise[IKernelConnection | Null]
+    def changeKernel(options: PartialIModelConnections): js.Promise[IKernelConnection | Null]
     
     /**
       * The kernel connectionStatusChanged signal, proxied from the current
@@ -266,6 +266,12 @@ object sessionSessionMod {
       * The current path associated with the session.
       */
     val path: String
+    
+    /**
+      * The kernel pendingInput signal, proxied from the current
+      * kernel.
+      */
+    var pendingInput: ISignal[this.type, Boolean]
     
     /**
       * A signal emitted when a session property changes.
@@ -345,7 +351,7 @@ object sessionSessionMod {
     
     inline def apply(
       anyMessage: ISignal[ISessionConnection, IAnyMessageArgs],
-      changeKernel: PartialIModelId => js.Promise[IKernelConnection | Null],
+      changeKernel: PartialIModelConnections => js.Promise[IKernelConnection | Null],
       connectionStatusChanged: ISignal[ISessionConnection, ConnectionStatus],
       dispose: () => Unit,
       disposed: ISignal[ISessionConnection, Unit],
@@ -359,6 +365,7 @@ object sessionSessionMod {
       model: IModel,
       name: String,
       path: String,
+      pendingInput: ISignal[ISessionConnection, Boolean],
       propertyChanged: ISignal[ISessionConnection, path | name | `type`],
       serverSettings: ISettings,
       setName: String => js.Promise[Unit],
@@ -369,7 +376,7 @@ object sessionSessionMod {
       `type`: String,
       unhandledMessage: ISignal[ISessionConnection, IMessage[MessageType]]
     ): ISessionConnection = {
-      val __obj = js.Dynamic.literal(anyMessage = anyMessage.asInstanceOf[js.Any], changeKernel = js.Any.fromFunction1(changeKernel), connectionStatusChanged = connectionStatusChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), disposed = disposed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iopubMessage = iopubMessage.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], kernelChanged = kernelChanged.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], propertyChanged = propertyChanged.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], setName = js.Any.fromFunction1(setName), setPath = js.Any.fromFunction1(setPath), setType = js.Any.fromFunction1(setType), shutdown = js.Any.fromFunction0(shutdown), statusChanged = statusChanged.asInstanceOf[js.Any], unhandledMessage = unhandledMessage.asInstanceOf[js.Any], kernel = null)
+      val __obj = js.Dynamic.literal(anyMessage = anyMessage.asInstanceOf[js.Any], changeKernel = js.Any.fromFunction1(changeKernel), connectionStatusChanged = connectionStatusChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), disposed = disposed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iopubMessage = iopubMessage.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], kernelChanged = kernelChanged.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pendingInput = pendingInput.asInstanceOf[js.Any], propertyChanged = propertyChanged.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], setName = js.Any.fromFunction1(setName), setPath = js.Any.fromFunction1(setPath), setType = js.Any.fromFunction1(setType), shutdown = js.Any.fromFunction0(shutdown), statusChanged = statusChanged.asInstanceOf[js.Any], unhandledMessage = unhandledMessage.asInstanceOf[js.Any], kernel = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISessionConnection]
     }
@@ -452,7 +459,7 @@ object sessionSessionMod {
       
       inline def setAnyMessage(value: ISignal[ISessionConnection, IAnyMessageArgs]): Self = StObject.set(x, "anyMessage", value.asInstanceOf[js.Any])
       
-      inline def setChangeKernel(value: PartialIModelId => js.Promise[IKernelConnection | Null]): Self = StObject.set(x, "changeKernel", js.Any.fromFunction1(value))
+      inline def setChangeKernel(value: PartialIModelConnections => js.Promise[IKernelConnection | Null]): Self = StObject.set(x, "changeKernel", js.Any.fromFunction1(value))
       
       inline def setConnectionStatusChanged(value: ISignal[ISessionConnection, ConnectionStatus]): Self = StObject.set(x, "connectionStatusChanged", value.asInstanceOf[js.Any])
       
@@ -476,6 +483,8 @@ object sessionSessionMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPendingInput(value: ISignal[ISessionConnection, Boolean]): Self = StObject.set(x, "pendingInput", value.asInstanceOf[js.Any])
       
       inline def setPropertyChanged(value: ISignal[ISessionConnection, path | name | `type`]): Self = StObject.set(x, "propertyChanged", value.asInstanceOf[js.Any])
       

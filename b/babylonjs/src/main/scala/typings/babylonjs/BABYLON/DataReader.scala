@@ -1,15 +1,14 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DataReader extends StObject {
   
-  /* private */ var _dataByteOffset: js.Any
+  /* private */ var _dataByteOffset: Any
   
-  /* private */ var _dataView: js.Any
+  /* private */ var _dataView: Any
   
   /**
     * The data buffer associated with this data reader.
@@ -46,7 +45,7 @@ trait DataReader extends StObject {
     * @param byteLength The byte length to read
     * @returns The byte array read
     */
-  def readUint8Array(byteLength: Double): Uint8Array
+  def readUint8Array(byteLength: Double): js.typedarray.Uint8Array
   
   /**
     * Skips the given byte length the currently loaded data range.
@@ -57,14 +56,14 @@ trait DataReader extends StObject {
 object DataReader {
   
   inline def apply(
-    _dataByteOffset: js.Any,
-    _dataView: js.Any,
+    _dataByteOffset: Any,
+    _dataView: Any,
     buffer: IDataBuffer,
     byteOffset: Double,
     loadAsync: Double => js.Promise[Unit],
     readString: Double => String,
     readUint32: () => Double,
-    readUint8Array: Double => Uint8Array,
+    readUint8Array: Double => js.typedarray.Uint8Array,
     skipBytes: Double => Unit
   ): DataReader = {
     val __obj = js.Dynamic.literal(_dataByteOffset = _dataByteOffset.asInstanceOf[js.Any], _dataView = _dataView.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], byteOffset = byteOffset.asInstanceOf[js.Any], loadAsync = js.Any.fromFunction1(loadAsync), readString = js.Any.fromFunction1(readString), readUint32 = js.Any.fromFunction0(readUint32), readUint8Array = js.Any.fromFunction1(readUint8Array), skipBytes = js.Any.fromFunction1(skipBytes))
@@ -83,12 +82,12 @@ object DataReader {
     
     inline def setReadUint32(value: () => Double): Self = StObject.set(x, "readUint32", js.Any.fromFunction0(value))
     
-    inline def setReadUint8Array(value: Double => Uint8Array): Self = StObject.set(x, "readUint8Array", js.Any.fromFunction1(value))
+    inline def setReadUint8Array(value: Double => js.typedarray.Uint8Array): Self = StObject.set(x, "readUint8Array", js.Any.fromFunction1(value))
     
     inline def setSkipBytes(value: Double => Unit): Self = StObject.set(x, "skipBytes", js.Any.fromFunction1(value))
     
-    inline def set_dataByteOffset(value: js.Any): Self = StObject.set(x, "_dataByteOffset", value.asInstanceOf[js.Any])
+    inline def set_dataByteOffset(value: Any): Self = StObject.set(x, "_dataByteOffset", value.asInstanceOf[js.Any])
     
-    inline def set_dataView(value: js.Any): Self = StObject.set(x, "_dataView", value.asInstanceOf[js.Any])
+    inline def set_dataView(value: Any): Self = StObject.set(x, "_dataView", value.asInstanceOf[js.Any])
   }
 }

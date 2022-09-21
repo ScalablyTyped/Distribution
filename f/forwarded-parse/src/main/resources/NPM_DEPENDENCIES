@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "forwarded-parse" : "2.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "forwarded-parse" : "2.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

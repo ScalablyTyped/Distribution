@@ -1,9 +1,9 @@
 package typings.reactGeosuggest
 
-import typings.googlemaps.google.maps.GeocoderResult
-import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.LatLngBounds
-import typings.googlemaps.google.maps.places.AutocompletePrediction
+import typings.googleMaps.google.maps.GeocoderResult
+import typings.googleMaps.google.maps.LatLng
+import typings.googleMaps.google.maps.LatLngBounds
+import typings.googleMaps.google.maps.places.AutocompletePrediction
 import typings.react.mod.Component
 import typings.reactGeosuggest.anon.Lat
 import typings.reactGeosuggest.anon.Typeofmaps
@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("react-geosuggest", JSImport.Default)
   @js.native
-  class default () extends Geosuggest
+  open class default () extends Geosuggest
   
   trait Fixture extends StObject {
     
@@ -50,7 +50,7 @@ object mod {
   
   @js.native
   trait Geosuggest
-    extends Component[GeosuggestProps, js.Object, js.Any] {
+    extends Component[GeosuggestProps, js.Object, Any] {
     
     def blur(): Unit = js.native
     
@@ -105,21 +105,23 @@ object mod {
     
     var onActivateSuggest: js.UndefOr[js.Function1[/* suggest */ Suggest, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+    var onBlur: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+    var onFocus: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var onKeyDown: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
-    var onKeyPress: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var onKeyPress: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
     var onSuggestNoResults: js.UndefOr[js.Function1[/* userInput */ String, Unit]] = js.undefined
     
     var onSuggestSelect: js.UndefOr[js.Function1[/* suggest */ Suggest, Unit]] = js.undefined
     
-    var onUpdateSuggests: js.UndefOr[js.Function2[/* suggests */ js.Any, /* activeSuggest */ js.Any, Unit]] = js.undefined
+    var onUpdateSuggests: js.UndefOr[js.Function2[/* suggests */ Any, /* activeSuggest */ Any, Unit]] = js.undefined
+    
+    var placeDetailFields: js.UndefOr[js.Array[String]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -127,7 +129,7 @@ object mod {
     
     var radius: js.UndefOr[Double] = js.undefined
     
-    var renderSuggestItem: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, js.Any]] = js.undefined
+    var renderSuggestItem: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, Any]] = js.undefined
     
     var skipSuggest: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, Boolean]] = js.undefined
     
@@ -172,7 +174,7 @@ object mod {
       
       inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      inline def setCountryVarargs(value: String*): Self = StObject.set(x, "country", js.Array(value :_*))
+      inline def setCountryVarargs(value: String*): Self = StObject.set(x, "country", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,7 @@ object mod {
       
       inline def setFixturesUndefined: Self = StObject.set(x, "fixtures", js.undefined)
       
-      inline def setFixturesVarargs(value: Fixture*): Self = StObject.set(x, "fixtures", js.Array(value :_*))
+      inline def setFixturesVarargs(value: Fixture*): Self = StObject.set(x, "fixtures", js.Array(value*))
       
       inline def setGetSuggestLabel(value: /* googleSuggest */ AutocompletePrediction => String): Self = StObject.set(x, "getSuggestLabel", js.Any.fromFunction1(value))
       
@@ -232,23 +234,23 @@ object mod {
       
       inline def setOnActivateSuggestUndefined: Self = StObject.set(x, "onActivateSuggest", js.undefined)
       
-      inline def setOnBlur(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* value */ Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnFocus(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* value */ Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnKeyDown(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* event */ Any => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnKeyPress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: /* event */ Any => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
       inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
@@ -260,9 +262,15 @@ object mod {
       
       inline def setOnSuggestSelectUndefined: Self = StObject.set(x, "onSuggestSelect", js.undefined)
       
-      inline def setOnUpdateSuggests(value: (/* suggests */ js.Any, /* activeSuggest */ js.Any) => Unit): Self = StObject.set(x, "onUpdateSuggests", js.Any.fromFunction2(value))
+      inline def setOnUpdateSuggests(value: (/* suggests */ Any, /* activeSuggest */ Any) => Unit): Self = StObject.set(x, "onUpdateSuggests", js.Any.fromFunction2(value))
       
       inline def setOnUpdateSuggestsUndefined: Self = StObject.set(x, "onUpdateSuggests", js.undefined)
+      
+      inline def setPlaceDetailFields(value: js.Array[String]): Self = StObject.set(x, "placeDetailFields", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceDetailFieldsUndefined: Self = StObject.set(x, "placeDetailFields", js.undefined)
+      
+      inline def setPlaceDetailFieldsVarargs(value: String*): Self = StObject.set(x, "placeDetailFields", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -276,7 +284,7 @@ object mod {
       
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      inline def setRenderSuggestItem(value: /* googleSuggest */ AutocompletePrediction => js.Any): Self = StObject.set(x, "renderSuggestItem", js.Any.fromFunction1(value))
+      inline def setRenderSuggestItem(value: /* googleSuggest */ AutocompletePrediction => Any): Self = StObject.set(x, "renderSuggestItem", js.Any.fromFunction1(value))
       
       inline def setRenderSuggestItemUndefined: Self = StObject.set(x, "renderSuggestItem", js.undefined)
       
@@ -308,7 +316,7 @@ object mod {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: QueryType*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: QueryType*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   
@@ -340,11 +348,11 @@ object mod {
   
   trait Styles extends StObject {
     
-    var input: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var input: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var suggestItem: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var suggestItem: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var suggests: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var suggests: js.UndefOr[Record[String, Any]] = js.undefined
   }
   object Styles {
     
@@ -355,15 +363,15 @@ object mod {
     
     extension [Self <: Styles](x: Self) {
       
-      inline def setInput(value: Record[String, js.Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Record[String, Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      inline def setSuggestItem(value: Record[String, js.Any]): Self = StObject.set(x, "suggestItem", value.asInstanceOf[js.Any])
+      inline def setSuggestItem(value: Record[String, Any]): Self = StObject.set(x, "suggestItem", value.asInstanceOf[js.Any])
       
       inline def setSuggestItemUndefined: Self = StObject.set(x, "suggestItem", js.undefined)
       
-      inline def setSuggests(value: Record[String, js.Any]): Self = StObject.set(x, "suggests", value.asInstanceOf[js.Any])
+      inline def setSuggests(value: Record[String, Any]): Self = StObject.set(x, "suggests", value.asInstanceOf[js.Any])
       
       inline def setSuggestsUndefined: Self = StObject.set(x, "suggests", js.undefined)
     }

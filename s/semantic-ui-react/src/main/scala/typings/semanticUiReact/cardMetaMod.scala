@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.semanticUiReactStrings.center
 import typings.semanticUiReact.semanticUiReactStrings.left
@@ -16,12 +16,12 @@ object cardMetaMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Card/CardMeta", JSImport.Default)
   @js.native
-  val default: StatelessComponent[CardMetaProps] = js.native
+  val default: FC[CardMetaProps] = js.native
   
   trait CardMetaProps
     extends StObject
        with StrictCardMetaProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object CardMetaProps {
     
     inline def apply(): CardMetaProps = {
@@ -33,7 +33,7 @@ object cardMetaMod extends Shortcut {
   trait StrictCardMetaProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -56,7 +56,7 @@ object cardMetaMod extends Shortcut {
     
     extension [Self <: StrictCardMetaProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -78,8 +78,8 @@ object cardMetaMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[CardMetaProps]
+  type _To = FC[CardMetaProps]
   
   /* This means you don't have to write `default`, but can instead just say `cardMetaMod.foo` */
-  override def _to: StatelessComponent[CardMetaProps] = default
+  override def _to: FC[CardMetaProps] = default
 }

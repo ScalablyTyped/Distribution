@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAccountSettingsRequest extends StObject {
   
   /**
-    * The ID for the AWS account that contains the QuickSight settings that you want to list.
+    * The ID for the Amazon Web Services account that contains the Amazon QuickSight settings that you want to list.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The default namespace for this AWS account. Currently, the default is default. AWS Identity and Access Management (IAM) users that register for the first time with QuickSight provide an email that becomes associated with the default namespace.
+    * The default namespace for this Amazon Web Services account. Currently, the default is default. Identity and Access Management (IAM) users that register for the first time with Amazon QuickSight provide an email address that becomes associated with the default namespace. 
     */
   var DefaultNamespace: Namespace
   
   /**
-    * The email address that you want QuickSight to send notifications to regarding your AWS account or QuickSight subscription.
+    * The email address that you want Amazon QuickSight to send notifications to regarding your Amazon Web Services account or Amazon QuickSight subscription.
     */
   var NotificationEmail: js.UndefOr[String] = js.undefined
 }

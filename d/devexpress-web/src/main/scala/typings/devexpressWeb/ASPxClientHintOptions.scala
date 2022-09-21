@@ -22,7 +22,7 @@ trait ASPxClientHintOptions extends StObject {
   /**
     * Gets or sets whether it should use animation effects when a hint appears.
     */
-  var animation: js.Any
+  var animation: Any
   
   /**
     * Gets or sets the delay in displaying the hint.
@@ -129,7 +129,7 @@ object ASPxClientHintOptions {
   inline def apply(
     allowFlip: Boolean,
     allowShift: Boolean,
-    animation: js.Any,
+    animation: Any,
     appearAfter: Double,
     className: String,
     container: String,
@@ -161,7 +161,7 @@ object ASPxClientHintOptions {
     
     inline def setAllowShift(value: Boolean): Self = StObject.set(x, "allowShift", value.asInstanceOf[js.Any])
     
-    inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAppearAfter(value: Double): Self = StObject.set(x, "appearAfter", value.asInstanceOf[js.Any])
     

@@ -33,6 +33,6 @@ object DescribeTransitGatewayAttachmentsResult {
     
     inline def setTransitGatewayAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayAttachments", js.undefined)
     
-    inline def setTransitGatewayAttachmentsVarargs(value: TransitGatewayAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value :_*))
+    inline def setTransitGatewayAttachmentsVarargs(value: TransitGatewayAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value*))
   }
 }

@@ -9,53 +9,53 @@ trait DualShockPad
   extends StObject
      with Gamepad {
   
-  /* private */ var _buttonCircle: js.Any = js.native
+  /* private */ var _buttonCircle: Any = js.native
   
-  /* private */ var _buttonCross: js.Any = js.native
+  /* private */ var _buttonCross: Any = js.native
   
-  /* private */ var _buttonL1: js.Any = js.native
+  /* private */ var _buttonL1: Any = js.native
   
-  /* private */ var _buttonLeftStick: js.Any = js.native
+  /* private */ var _buttonLeftStick: Any = js.native
   
-  /* private */ var _buttonOptions: js.Any = js.native
+  /* private */ var _buttonOptions: Any = js.native
   
-  /* private */ var _buttonR1: js.Any = js.native
+  /* private */ var _buttonR1: Any = js.native
   
-  /* private */ var _buttonRightStick: js.Any = js.native
+  /* private */ var _buttonRightStick: Any = js.native
   
-  /* private */ var _buttonShare: js.Any = js.native
+  /* private */ var _buttonShare: Any = js.native
   
-  /* private */ var _buttonSquare: js.Any = js.native
+  /* private */ var _buttonSquare: Any = js.native
   
-  /* private */ var _buttonTriangle: js.Any = js.native
+  /* private */ var _buttonTriangle: Any = js.native
   
-  /* private */ var _dPadDown: js.Any = js.native
+  /* private */ var _dPadDown: Any = js.native
   
-  /* private */ var _dPadLeft: js.Any = js.native
+  /* private */ var _dPadLeft: Any = js.native
   
-  /* private */ var _dPadRight: js.Any = js.native
+  /* private */ var _dPadRight: Any = js.native
   
-  /* private */ var _dPadUp: js.Any = js.native
+  /* private */ var _dPadUp: Any = js.native
   
-  /* private */ var _leftTrigger: js.Any = js.native
+  /* private */ var _leftTrigger: Any = js.native
   
-  /* private */ var _onbuttondown: js.Any = js.native
+  /* private */ var _onbuttondown: Any = js.native
   
-  /* private */ var _onbuttonup: js.Any = js.native
+  /* private */ var _onbuttonup: Any = js.native
   
-  /* private */ var _ondpaddown: js.Any = js.native
+  /* private */ var _ondpaddown: Any = js.native
   
-  /* private */ var _ondpadup: js.Any = js.native
+  /* private */ var _ondpadup: Any = js.native
   
-  /* private */ var _onlefttriggerchanged: js.Any = js.native
+  /* private */ var _onlefttriggerchanged: Any = js.native
   
-  /* private */ var _onrighttriggerchanged: js.Any = js.native
+  /* private */ var _onrighttriggerchanged: Any = js.native
   
-  /* private */ var _rightTrigger: js.Any = js.native
+  /* private */ var _rightTrigger: Any = js.native
   
-  /* private */ var _setButtonValue: js.Any = js.native
+  /* private */ var _setButtonValue: Any = js.native
   
-  /* private */ var _setDPadValue: js.Any = js.native
+  /* private */ var _setDPadValue: Any = js.native
   
   /**
     * Gets the value of the `Circle` button

@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.SharedAssetManager")
 @js.native
-class SharedAssetManager ()
+open class SharedAssetManager ()
   extends StObject
      with typings.phaser.spine.SharedAssetManager {
   def this(pathPrefix: String) = this()
   
   /* private */ /* CompleteClass */
-  var clientAssets: js.Any = js.native
+  var clientAssets: Any = js.native
   
   /* CompleteClass */
   override def dispose(): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var errors: js.Any = js.native
+  var errors: Any = js.native
   
   /* CompleteClass */
-  override def get(clientId: String, path: String): js.Any = js.native
+  override def get(clientId: String, path: String): Any = js.native
   
   /* CompleteClass */
   override def getErrors(): Map[String] = js.native
@@ -41,20 +41,20 @@ class SharedAssetManager ()
   override def loadText(clientId: String, path: String): Unit = js.native
   
   /* CompleteClass */
-  override def loadTexture(clientId: String, textureLoader: js.Function1[/* image */ HTMLImageElement, js.Any], path: String): Unit = js.native
+  override def loadTexture(clientId: String, textureLoader: js.Function1[/* image */ HTMLImageElement, Any], path: String): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var pathPrefix: js.Any = js.native
+  var pathPrefix: Any = js.native
   
   /* private */ /* CompleteClass */
-  var queueAsset: js.Any = js.native
+  var queueAsset: Any = js.native
   
   /* private */ /* CompleteClass */
-  var queuedAssets: js.Any = js.native
+  var queuedAssets: Any = js.native
   
   /* private */ /* CompleteClass */
-  var rawAssets: js.Any = js.native
+  var rawAssets: Any = js.native
   
   /* private */ /* CompleteClass */
-  var updateClientAssets: js.Any = js.native
+  var updateClientAssets: Any = js.native
 }

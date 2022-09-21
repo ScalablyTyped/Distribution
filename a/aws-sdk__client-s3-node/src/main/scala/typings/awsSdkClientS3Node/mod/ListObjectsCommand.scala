@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "ListObjectsCommand")
 @js.native
-class ListObjectsCommand protected ()
+open class ListObjectsCommand protected ()
   extends typings.awsSdkClientS3Node.listObjectsCommandMod.ListObjectsCommand {
   def this(input: ListObjectsInput) = this()
 }

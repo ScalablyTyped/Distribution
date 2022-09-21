@@ -17,7 +17,7 @@ trait AttemptContainerDetail extends StObject {
   var exitCode: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The name of the CloudWatch Logs log stream associated with the container. The log group for AWS Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
+    * The name of the CloudWatch Logs log stream associated with the container. The log group for Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
     */
   var logStreamName: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait AttemptContainerDetail extends StObject {
   var reason: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the Amazon ECS task that is associated with the job attempt. Each container attempt receives a task ARN when they reach the STARTING status.
+    * The Amazon Resource Name (ARN) of the Amazon ECS task that's associated with the job attempt. Each container attempt receives a task ARN when they reach the STARTING status.
     */
   var taskArn: js.UndefOr[String] = js.undefined
 }
@@ -61,7 +61,7 @@ object AttemptContainerDetail {
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value*))
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

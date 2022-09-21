@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Identity extends StObject {
   
   /**
-    * An AWS SSO group identity.
+    * An Amazon Web Services SSO group identity.
     */
   var group: js.UndefOr[GroupIdentity] = js.undefined
+  
+  /**
+    * An IAM role identity.
+    */
+  var iamRole: js.UndefOr[IAMRoleIdentity] = js.undefined
   
   /**
     * An IAM user identity.
@@ -17,7 +22,7 @@ trait Identity extends StObject {
   var iamUser: js.UndefOr[IAMUserIdentity] = js.undefined
   
   /**
-    * An AWS SSO user identity.
+    * An Amazon Web Services SSO user identity.
     */
   var user: js.UndefOr[UserIdentity] = js.undefined
 }
@@ -33,6 +38,10 @@ object Identity {
     inline def setGroup(value: GroupIdentity): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setIamRole(value: IAMRoleIdentity): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
+    
+    inline def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
     
     inline def setIamUser(value: IAMUserIdentity): Self = StObject.set(x, "iamUser", value.asInstanceOf[js.Any])
     

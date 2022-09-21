@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "HtmlParser")
 @js.native
-class HtmlParser ()
-  extends typings.angularCompiler.compilerMod.HtmlParser
+open class HtmlParser ()
+  extends StObject
+     with Parser2

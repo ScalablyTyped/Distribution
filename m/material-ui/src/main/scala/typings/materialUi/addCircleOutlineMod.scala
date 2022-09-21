@@ -10,10 +10,10 @@ object addCircleOutlineMod {
   
   @JSImport("material-ui/svg-icons/content/add-circle-outline", JSImport.Default)
   @js.native
-  class default () extends ContentAddCircleOutline
+  open class default () extends ContentAddCircleOutline
   
   @JSImport("material-ui/svg-icons/content/add-circle-outline", "ContentAddCircleOutline")
   @js.native
-  class ContentAddCircleOutline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentAddCircleOutline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

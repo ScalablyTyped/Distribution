@@ -17,7 +17,7 @@ trait PhysicsUpdraftEventOptions extends StObject {
   var radius: Double
   
   /**
-    * The strenth of the updraft.
+    * The strength of the updraft.
     */
   var strength: Double
   

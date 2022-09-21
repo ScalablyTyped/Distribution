@@ -9,13 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(options: Options): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-static-server", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   trait Options extends StObject {
+    
+    /**
+      * Try to serve the brotli version of a file automatically when brotli is supported by a client and in the requested
+      */
+    var brotli: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Try to serve the gzipped version of a file automatically when gzip is supported by a client and if the requested
@@ -67,6 +72,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setBrotli(value: Boolean): Self = StObject.set(x, "brotli", value.asInstanceOf[js.Any])
+      
+      inline def setBrotliUndefined: Self = StObject.set(x, "brotli", js.undefined)
       
       inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       

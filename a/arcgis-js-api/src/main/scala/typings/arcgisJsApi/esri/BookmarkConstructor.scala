@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BookmarkConstructor
   extends StObject
-     with Instantiable0[Bookmark]
+     with /**
+  * A bookmark is a saved map extent that allows end users to quickly navigate to a particular area of interest using the [Bookmarks](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)
+  */
+Instantiable0[Bookmark]
      with Instantiable1[/* properties */ BookmarkProperties, Bookmark]

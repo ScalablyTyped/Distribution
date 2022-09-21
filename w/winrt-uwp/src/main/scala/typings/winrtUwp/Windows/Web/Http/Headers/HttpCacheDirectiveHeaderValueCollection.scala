@@ -49,7 +49,7 @@ trait HttpCacheDirectiveHeaderValueCollection
     */
   def getView(): IVectorView[HttpNameValueHeaderValue] = js.native
   
-  def indexOf(value: HttpNameValueHeaderValue, extra: js.Any*): Index = js.native
+  def indexOf(value: HttpNameValueHeaderValue, extra: Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

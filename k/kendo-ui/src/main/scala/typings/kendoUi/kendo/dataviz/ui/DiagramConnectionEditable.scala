@@ -21,6 +21,6 @@ object DiagramConnectionEditable {
     
     inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
     
-    inline def setToolsVarargs(value: DiagramConnectionEditableTool*): Self = StObject.set(x, "tools", js.Array(value :_*))
+    inline def setToolsVarargs(value: DiagramConnectionEditableTool*): Self = StObject.set(x, "tools", js.Array(value*))
   }
 }

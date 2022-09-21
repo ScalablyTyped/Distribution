@@ -1,7 +1,7 @@
 
 # Scala.js typings for browser-image-compression
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Compress images in the browser
@@ -10,10 +10,10 @@ Compress images in the browser
 | ------------------ | :-------------: |
 | Full name          | browser-image-compression |
 | Keywords           | image compression, browser, image processing, reduce resolution, reduce size |
-| # releases         | 16 |
-| # dependents       | 11 |
-| # downloads        | 840733 |
-| # stars            | 2 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 300364.3333333333 |
+| # stars            | 676.0 |
 
 ## Links
 - [Homepage](https://github.com/Donaldcwl/browser-image-compression#readme)
@@ -24,7 +24,7 @@ Compress images in the browser
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

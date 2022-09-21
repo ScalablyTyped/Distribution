@@ -9,7 +9,7 @@ object processorMod {
   
   @JSImport("sawtooth-sdk/processor", "TransactionProcessor")
   @js.native
-  class TransactionProcessor protected () extends StObject {
+  open class TransactionProcessor protected () extends StObject {
     /** Constructs a new TransactionProcessor */
     def this(url: String) = this()
     

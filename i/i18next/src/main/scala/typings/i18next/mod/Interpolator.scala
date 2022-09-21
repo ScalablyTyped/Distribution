@@ -10,7 +10,7 @@ trait Interpolator extends StObject {
   
   def interpolate(str: String, data: js.Object, lng: String, options: InterpolationOptions): String
   
-  def nest(str: String, fc: js.Function1[/* repeated */ js.Any, js.Any], options: InterpolationOptions): String
+  def nest(str: String, fc: js.Function1[/* repeated */ Any, Any], options: InterpolationOptions): String
   
   def reset(): Unit
   
@@ -21,7 +21,7 @@ object Interpolator {
   inline def apply(
     init: (InterpolationOptions, Boolean) => Unit,
     interpolate: (String, js.Object, String, InterpolationOptions) => String,
-    nest: (String, js.Function1[/* repeated */ js.Any, js.Any], InterpolationOptions) => String,
+    nest: (String, js.Function1[/* repeated */ Any, Any], InterpolationOptions) => String,
     reset: () => Unit,
     resetRegExp: () => Unit
   ): Interpolator = {
@@ -35,7 +35,7 @@ object Interpolator {
     
     inline def setInterpolate(value: (String, js.Object, String, InterpolationOptions) => String): Self = StObject.set(x, "interpolate", js.Any.fromFunction4(value))
     
-    inline def setNest(value: (String, js.Function1[/* repeated */ js.Any, js.Any], InterpolationOptions) => String): Self = StObject.set(x, "nest", js.Any.fromFunction3(value))
+    inline def setNest(value: (String, js.Function1[/* repeated */ Any, Any], InterpolationOptions) => String): Self = StObject.set(x, "nest", js.Any.fromFunction3(value))
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

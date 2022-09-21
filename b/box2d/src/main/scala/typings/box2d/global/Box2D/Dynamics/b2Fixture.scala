@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Box2D.Dynamics.b2Fixture")
 @js.native
-class b2Fixture ()
+open class b2Fixture ()
   extends StObject
      with typings.box2d.Box2D.Dynamics.b2Fixture

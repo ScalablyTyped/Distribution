@@ -13,7 +13,7 @@ trait WMSLayerProperties
      with RefreshableLayerProperties {
   
   /**
-    * A flattened collection of all [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s.
+    * A flattened collection of all [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s based on the [`sublayers`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#sublayers) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#allSublayers)
     */
@@ -31,14 +31,14 @@ trait WMSLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#customLayerParameters)
     */
-  var customLayerParameters: js.UndefOr[js.Any] = js.undefined
+  var customLayerParameters: js.UndefOr[Any] = js.undefined
   
   /**
     * Use this to append custom parameters to all WMS requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#customParameters)
     */
-  var customParameters: js.UndefOr[js.Any] = js.undefined
+  var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
     * Description for the WMS layer.
@@ -78,12 +78,16 @@ trait WMSLayerProperties
   /**
     * Indicates the maximum height of the image exported by the service.
     *
+    * @default 2048
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageMaxHeight)
     */
   var imageMaxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the maximum width of the image exported by the service.
+    *
+    * @default 2048
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageMaxWidth)
     */
@@ -92,12 +96,16 @@ trait WMSLayerProperties
   /**
     * Indicates whether the background of the image exported by the service is transparent.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageTransparency)
     */
   var imageTransparency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#legendEnabled)
     */
@@ -118,7 +126,7 @@ trait WMSLayerProperties
   var spatialReferences: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * A collection of [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s.
+    * A subset of the layer's [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s that will be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#sublayers)
     */
@@ -134,12 +142,16 @@ trait WMSLayerProperties
   /**
     * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#timeInfo)
     */
   var timeInfo: js.UndefOr[TimeInfoProperties] = js.undefined
   
   /**
     * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#timeOffset)
     */
@@ -154,6 +166,8 @@ trait WMSLayerProperties
   
   /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#useViewTime)
     */
@@ -179,17 +193,17 @@ object WMSLayerProperties {
     
     inline def setAllSublayersUndefined: Self = StObject.set(x, "allSublayers", js.undefined)
     
-    inline def setAllSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "allSublayers", js.Array(value :_*))
+    inline def setAllSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "allSublayers", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    inline def setCustomLayerParameters(value: js.Any): Self = StObject.set(x, "customLayerParameters", value.asInstanceOf[js.Any])
+    inline def setCustomLayerParameters(value: Any): Self = StObject.set(x, "customLayerParameters", value.asInstanceOf[js.Any])
     
     inline def setCustomLayerParametersUndefined: Self = StObject.set(x, "customLayerParameters", js.undefined)
     
-    inline def setCustomParameters(value: js.Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
+    inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     
     inline def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
     
@@ -209,7 +223,7 @@ object WMSLayerProperties {
     
     inline def setFullExtentsUndefined: Self = StObject.set(x, "fullExtents", js.undefined)
     
-    inline def setFullExtentsVarargs(value: ExtentProperties*): Self = StObject.set(x, "fullExtents", js.Array(value :_*))
+    inline def setFullExtentsVarargs(value: ExtentProperties*): Self = StObject.set(x, "fullExtents", js.Array(value*))
     
     inline def setImageFormat(value: String): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
     
@@ -239,13 +253,13 @@ object WMSLayerProperties {
     
     inline def setSpatialReferencesUndefined: Self = StObject.set(x, "spatialReferences", js.undefined)
     
-    inline def setSpatialReferencesVarargs(value: Double*): Self = StObject.set(x, "spatialReferences", js.Array(value :_*))
+    inline def setSpatialReferencesVarargs(value: Double*): Self = StObject.set(x, "spatialReferences", js.Array(value*))
     
     inline def setSublayers(value: CollectionProperties[WMSSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
     inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
-    inline def setSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
+    inline def setSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value*))
     
     inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     

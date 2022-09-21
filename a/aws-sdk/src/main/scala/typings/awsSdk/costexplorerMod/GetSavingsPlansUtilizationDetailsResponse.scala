@@ -38,7 +38,7 @@ object GetSavingsPlansUtilizationDetailsResponse {
     
     inline def setSavingsPlansUtilizationDetails(value: SavingsPlansUtilizationDetails): Self = StObject.set(x, "SavingsPlansUtilizationDetails", value.asInstanceOf[js.Any])
     
-    inline def setSavingsPlansUtilizationDetailsVarargs(value: SavingsPlansUtilizationDetail*): Self = StObject.set(x, "SavingsPlansUtilizationDetails", js.Array(value :_*))
+    inline def setSavingsPlansUtilizationDetailsVarargs(value: SavingsPlansUtilizationDetail*): Self = StObject.set(x, "SavingsPlansUtilizationDetails", js.Array(value*))
     
     inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     

@@ -6,11 +6,12 @@ import typings.fsJetpack.fsJetpackStrings.buffer
 import typings.fsJetpack.fsJetpackStrings.json
 import typings.fsJetpack.fsJetpackStrings.jsonWithDates
 import typings.fsJetpack.fsJetpackStrings.utf8
-import typings.node.Buffer
-import typings.node.anon.AutoClose
-import typings.node.anon.EmitClose
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.ReadStream
+import typings.node.fsMod.ReadStreamOptions
+import typings.node.fsMod.StreamOptions
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -66,11 +67,11 @@ trait FSJetpack extends StObject {
   /**
     * Just an alias to vanilla [fs.createReadStream](http://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options).
     */
-  def createReadStream(path: PathLike, options: String): ReadStream = js.native
+  def createReadStream(path: PathLike, options: BufferEncoding): ReadStream = js.native
   /**
     * Just an alias to vanilla [fs.createReadStream](http://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options).
     */
-  def createReadStream(path: PathLike, options: AutoClose): ReadStream = js.native
+  def createReadStream(path: PathLike, options: ReadStreamOptions): ReadStream = js.native
   /**
     * Just an alias to vanilla [fs.createReadStream](http://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options).
     */
@@ -84,11 +85,11 @@ trait FSJetpack extends StObject {
   /**
     * Just an alias to vanilla [fs.createWriteStream](http://nodejs.org/api/fs.html#fs_fs_createwritestream_path_options).
     */
-  def createWriteStream(path: PathLike, options: String): WriteStream = js.native
+  def createWriteStream(path: PathLike, options: BufferEncoding): WriteStream = js.native
   /**
     * Just an alias to vanilla [fs.createWriteStream](http://nodejs.org/api/fs.html#fs_fs_createwritestream_path_options).
     */
-  def createWriteStream(path: PathLike, options: EmitClose): WriteStream = js.native
+  def createWriteStream(path: PathLike, options: StreamOptions): WriteStream = js.native
   /**
     * Just an alias to vanilla [fs.createWriteStream](http://nodejs.org/api/fs.html#fs_fs_createwritestream_path_options).
     */
@@ -291,6 +292,7 @@ trait FSJetpack extends StObject {
     * @param returnAs a custom return types
     */
   def read(path: String): js.UndefOr[String] = js.native
+  def read(path: String, returnAs: json | jsonWithDates): js.UndefOr[Any] = js.native
   
   /**
     * Reads content of file.
@@ -299,21 +301,14 @@ trait FSJetpack extends StObject {
     * @param returnAs a custom return types
     */
   def readAsync(path: String): js.Promise[js.UndefOr[String]] = js.native
+  def readAsync(path: String, returnAs: json | jsonWithDates): js.Promise[js.UndefOr[Any]] = js.native
   @JSName("readAsync")
   def readAsync_buffer(path: String, returnAs: buffer): js.Promise[js.UndefOr[Buffer]] = js.native
-  @JSName("readAsync")
-  def readAsync_json(path: String, returnAs: json): js.Promise[js.UndefOr[js.Any]] = js.native
-  @JSName("readAsync")
-  def readAsync_jsonWithDates(path: String, returnAs: jsonWithDates): js.Promise[js.UndefOr[js.Any]] = js.native
   @JSName("readAsync")
   def readAsync_utf8(path: String, returnAs: utf8): js.Promise[js.UndefOr[String]] = js.native
   
   @JSName("read")
   def read_buffer(path: String, returnAs: buffer): js.UndefOr[Buffer] = js.native
-  @JSName("read")
-  def read_json(path: String, returnAs: json): js.UndefOr[js.Any] = js.native
-  @JSName("read")
-  def read_jsonWithDates(path: String, returnAs: jsonWithDates): js.UndefOr[js.Any] = js.native
   @JSName("read")
   def read_utf8(path: String, returnAs: utf8): js.UndefOr[String] = js.native
   

@@ -11,6 +11,11 @@ object invitationAcceptOptionsMod {
   trait InvitationAcceptOptions extends StObject {
     
     /**
+      * Array of extra headers added to the response.
+      */
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
       * Modifiers to pass to SessionDescriptionHandler during the initial INVITE transaction.
       */
     var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.undefined
@@ -29,11 +34,17 @@ object invitationAcceptOptionsMod {
     
     extension [Self <: InvitationAcceptOptions](x: Self) {
       
+      inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value*))
+      
       inline def setSessionDescriptionHandlerModifiers(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", value.asInstanceOf[js.Any])
       
       inline def setSessionDescriptionHandlerModifiersUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.undefined)
       
-      inline def setSessionDescriptionHandlerModifiersVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.Array(value :_*))
+      inline def setSessionDescriptionHandlerModifiersVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.Array(value*))
       
       inline def setSessionDescriptionHandlerOptions(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptions", value.asInstanceOf[js.Any])
       

@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webix", "ui.treetable")
 @js.native
-class treetable ()
+open class treetable ()
   extends StObject
      with typings.webix.webix.ui.baseview {
   
   @JSName("$customPrint")
-  def $customPrint(args: js.Any*): js.Any = js.native
+  def $customPrint(args: Any*): Any = js.native
   @JSName("$customPrint")
   var $customPrint_Original: WebixCallback = js.native
   
@@ -25,7 +25,7 @@ class treetable ()
   def $drag(source: HTMLElement, ev: Event): String = js.native
   
   @JSName("$dragHTML")
-  def $dragHTML(args: js.Any*): js.Any = js.native
+  def $dragHTML(args: Any*): Any = js.native
   @JSName("$dragHTML")
   var $dragHTML_Original: WebixCallback = js.native
   
@@ -33,7 +33,7 @@ class treetable ()
   def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement = js.native
   
   @JSName("$dragMark")
-  def $dragMark(context: js.Any, ev: Event): Boolean = js.native
+  def $dragMark(context: Any, ev: Event): Boolean = js.native
   
   @JSName("$dragOut")
   def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit = js.native
@@ -42,17 +42,17 @@ class treetable ()
   def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit = js.native
   
   @JSName("$dropAllow")
-  def $dropAllow(args: js.Any*): js.Any = js.native
+  def $dropAllow(args: Any*): Any = js.native
   @JSName("$dropAllow")
   var $dropAllow_Original: WebixCallback = js.native
   
   @JSName("$dropHTML")
-  def $dropHTML(args: js.Any*): js.Any = js.native
+  def $dropHTML(args: Any*): Any = js.native
   @JSName("$dropHTML")
   var $dropHTML_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("$skin")
   var $skin_Original_treetable: WebixCallback = js.native
@@ -67,16 +67,16 @@ class treetable ()
   def $tooltipOut(): Unit = js.native
   
   @JSName("$touch")
-  def $touch(args: js.Any*): js.Any = js.native
+  def $touch(args: Any*): Any = js.native
   @JSName("$touch")
   var $touch_Original: WebixCallback = js.native
   
-  def add(obj: js.Any): String = js.native
-  def add(obj: js.Any, index: Double): String = js.native
-  def add(obj: js.Any, index: Double, parentId: String): String = js.native
-  def add(obj: js.Any, index: Unit, parentId: String): String = js.native
+  def add(obj: Any): String = js.native
+  def add(obj: Any, index: Double): String = js.native
+  def add(obj: Any, index: Double, parentId: String): String = js.native
+  def add(obj: Any, index: Unit, parentId: String): String = js.native
   
-  def addCellCss(id: String, name: String, css: String): Unit = js.native
+  def addCellCss(id: String, name: String, css: String, silent: Boolean): Unit = js.native
   
   def addCss(id: String, css: String): Unit = js.native
   def addCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -85,19 +85,19 @@ class treetable ()
   
   def addRowCss(id: String, css: String): Unit = js.native
   
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean): Unit = js.native
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String): Unit = js.native
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String, css: String): Unit = js.native
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String, css: String, handle: Boolean): Unit = js.native
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String, css: Unit, handle: Boolean): Unit = js.native
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: Unit, css: String): Unit = js.native
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: Unit, css: String, handle: Boolean): Unit = js.native
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: Unit, css: Unit, handle: Boolean): Unit = js.native
+  def addSelectArea(start: Any, end: Any, preserve: Boolean): Unit = js.native
+  def addSelectArea(start: Any, end: Any, preserve: Boolean, area_name: String): Unit = js.native
+  def addSelectArea(start: Any, end: Any, preserve: Boolean, area_name: String, css: String): Unit = js.native
+  def addSelectArea(start: Any, end: Any, preserve: Boolean, area_name: String, css: String, handle: Boolean): Unit = js.native
+  def addSelectArea(start: Any, end: Any, preserve: Boolean, area_name: String, css: Unit, handle: Boolean): Unit = js.native
+  def addSelectArea(start: Any, end: Any, preserve: Boolean, area_name: Unit, css: String): Unit = js.native
+  def addSelectArea(start: Any, end: Any, preserve: Boolean, area_name: Unit, css: String, handle: Boolean): Unit = js.native
+  def addSelectArea(start: Any, end: Any, preserve: Boolean, area_name: Unit, css: Unit, handle: Boolean): Unit = js.native
   
-  def addSpan(id: js.Any, column: String, width: Double, height: Double): Unit = js.native
-  def addSpan(id: js.Any, column: String, width: Double, height: Double, value: String): Unit = js.native
-  def addSpan(id: js.Any, column: String, width: Double, height: Double, value: String, css: String): Unit = js.native
-  def addSpan(id: js.Any, column: String, width: Double, height: Double, value: Unit, css: String): Unit = js.native
+  def addSpan(id: Any, column: String, width: Double, height: Double): Unit = js.native
+  def addSpan(id: Any, column: String, width: Double, height: Double, value: String): Unit = js.native
+  def addSpan(id: Any, column: String, width: Double, height: Double, value: String, css: String): Unit = js.native
+  def addSpan(id: Any, column: String, width: Double, height: Double, value: Unit, css: String): Unit = js.native
   
   def adjustColumn(id: String): Unit = js.native
   def adjustColumn(id: String, mode: String): Unit = js.native
@@ -112,12 +112,12 @@ class treetable ()
   def attachEvent(`type`: treetableEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: treetableEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   def checkAll(): Unit = js.native
   def checkAll(id: String): Unit = js.native
@@ -143,8 +143,8 @@ class treetable ()
   def closeSub(id: String): Unit = js.native
   def closeSub(id: Double): Unit = js.native
   
-  def collectValues(id: String, mode: js.Any): js.Array[js.Any] = js.native
-  def collectValues(id: Double, mode: js.Any): js.Array[js.Any] = js.native
+  def collectValues(id: String, mode: Any): js.Array[Any] = js.native
+  def collectValues(id: Double, mode: Any): js.Array[Any] = js.native
   
   def columnId(index: Double): String | Double = js.native
   
@@ -152,13 +152,13 @@ class treetable ()
   var config_treetable: treetableConfig = js.native
   
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: Any): Double = js.native
   def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: Any): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: Any): Double = js.native
   
   def count(): Double = js.native
   
@@ -171,7 +171,7 @@ class treetable ()
   
   def eachRow(handler: WebixCallback): Unit = js.native
   
-  def edit(id: js.Any): Unit = js.native
+  def edit(id: Any): Unit = js.native
   
   def editCancel(): Unit = js.native
   
@@ -218,12 +218,12 @@ class treetable ()
   
   def filterByAll(): Unit = js.native
   
-  def find(criterion: WebixCallback): js.Any = js.native
-  def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
+  def find(criterion: WebixCallback): Any = js.native
+  def find(criterion: WebixCallback, first: Boolean): Any = js.native
   
-  def focusEditor(id: js.Any): Unit = js.native
+  def focusEditor(id: Any): Unit = js.native
   
-  def getAllSelectAreas(): js.Any = js.native
+  def getAllSelectAreas(): Any = js.native
   
   def getBranchIndex(id: String): Double = js.native
   def getBranchIndex(id: String, parent: String): Double = js.native
@@ -232,9 +232,9 @@ class treetable ()
   def getBranchIndex(id: Double, parent: String): Double = js.native
   def getBranchIndex(id: Double, parent: Double): Double = js.native
   
-  def getChecked(): js.Array[js.Any] = js.native
+  def getChecked(): js.Array[Any] = js.native
   
-  def getColumnConfig(id: String): js.Any = js.native
+  def getColumnConfig(id: String): Any = js.native
   
   def getColumnIndex(id: String): Double = js.native
   def getColumnIndex(id: Double): Double = js.native
@@ -244,19 +244,19 @@ class treetable ()
   def getCss(rowId: Double, columnId: String): String = js.native
   def getCss(rowId: Double, columnId: Double): String = js.native
   
-  def getEditState(): js.Any = js.native
+  def getEditState(): Any = js.native
   
-  def getEditor(): js.Any = js.native
-  def getEditor(row: js.Any): js.Any = js.native
-  def getEditor(row: js.Any, column: String): js.Any = js.native
-  def getEditor(row: js.Any, column: Double): js.Any = js.native
-  def getEditor(row: Unit, column: String): js.Any = js.native
-  def getEditor(row: Unit, column: Double): js.Any = js.native
+  def getEditor(): Any = js.native
+  def getEditor(row: Any): Any = js.native
+  def getEditor(row: Any, column: String): Any = js.native
+  def getEditor(row: Any, column: Double): Any = js.native
+  def getEditor(row: Unit, column: String): Any = js.native
+  def getEditor(row: Unit, column: Double): Any = js.native
   
   def getEditorValue(): String = js.native
   
-  def getFilter(columnID: String): js.Any = js.native
-  def getFilter(columnID: Double): js.Any = js.native
+  def getFilter(columnID: String): Any = js.native
+  def getFilter(columnID: Double): Any = js.native
   
   def getFirstChildId(id: String): String = js.native
   def getFirstChildId(id: Double): String = js.native
@@ -266,8 +266,8 @@ class treetable ()
   def getFooterNode(columnId: String): HTMLElement = js.native
   def getFooterNode(columnId: String, rowIndex: Double): HTMLElement = js.native
   
-  def getHeaderContent(id: String): StringDictionary[js.Any] = js.native
-  def getHeaderContent(id: Double): StringDictionary[js.Any] = js.native
+  def getHeaderContent(id: String): StringDictionary[Any] = js.native
+  def getHeaderContent(id: Double): StringDictionary[Any] = js.native
   
   def getHeaderNode(columnId: String): HTMLElement = js.native
   def getHeaderNode(columnId: String, rowIndex: Double): HTMLElement = js.native
@@ -278,8 +278,8 @@ class treetable ()
   def getIndexById(id: String): Double = js.native
   def getIndexById(id: Double): Double = js.native
   
-  def getItem(id: String): js.Any = js.native
-  def getItem(id: Double): js.Any = js.native
+  def getItem(id: String): Any = js.native
+  def getItem(id: Double): Any = js.native
   
   def getItemNode(id: String): HTMLElement = js.native
   def getItemNode(id: Double): HTMLElement = js.native
@@ -292,11 +292,11 @@ class treetable ()
   def getNextSiblingId(id: String): String | Double = js.native
   def getNextSiblingId(id: Double): String | Double = js.native
   
-  def getOpenItems(): js.Array[js.Any] = js.native
+  def getOpenItems(): js.Array[Any] = js.native
   
   def getPage(): Double = js.native
   
-  def getPager(): js.Any = js.native
+  def getPager(): Any = js.native
   
   def getParentId(id: String): String | Double = js.native
   def getParentId(id: Double): String | Double = js.native
@@ -307,23 +307,23 @@ class treetable ()
   def getPrevSiblingId(id: String): String | Double = js.native
   def getPrevSiblingId(id: Double): String | Double = js.native
   
-  def getScrollState(): js.Any = js.native
+  def getScrollState(): Any = js.native
   
-  def getSelectArea(area_name: String): js.Any = js.native
+  def getSelectArea(area_name: String): Any = js.native
   
-  def getSelectedId(asArray: Boolean, asString: Boolean): js.Any = js.native
+  def getSelectedId(asArray: Boolean, asString: Boolean): Any = js.native
   
-  def getSelectedItem(): js.Any = js.native
-  def getSelectedItem(as_array: Boolean): js.Any = js.native
+  def getSelectedItem(): Any = js.native
+  def getSelectedItem(as_array: Boolean): Any = js.native
   
-  def getSpan(): js.Array[js.Any] = js.native
+  def getSpan(): js.Array[Any] = js.native
   
-  def getSpanNode(id: js.Any): HTMLElement = js.native
+  def getSpanNode(id: Any): HTMLElement = js.native
   
-  def getState(): js.Any = js.native
+  def getState(): Any = js.native
   
-  def getSubView(id: String): js.Any = js.native
-  def getSubView(id: Double): js.Any = js.native
+  def getSubView(id: String): Any = js.native
+  def getSubView(id: Double): Any = js.native
   
   def getText(rowid: String, colid: String): String = js.native
   def getText(rowid: String, colid: Double): String = js.native
@@ -332,30 +332,30 @@ class treetable ()
   
   def getVisibleCount(): Double = js.native
   
-  def group(config: js.Any): Unit = js.native
-  def group(config: js.Any, target: String): Unit = js.native
-  def group(config: js.Any, target: Double): Unit = js.native
+  def group(config: Any): Unit = js.native
+  def group(config: Any, target: String): Unit = js.native
+  def group(config: Any, target: Double): Unit = js.native
   
   def hasCss(id: String, css: String): Boolean = js.native
   def hasCss(id: Double, css: String): Boolean = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  var headerContent: js.Any = js.native
+  var headerContent: Any = js.native
   
   def hideColumn(id: String): Unit = js.native
-  def hideColumn(id: String, options: js.Any): Unit = js.native
-  def hideColumn(id: String, options: js.Any, silent: Boolean): Unit = js.native
-  def hideColumn(id: String, options: js.Any, silent: Boolean, mode: Boolean): Unit = js.native
-  def hideColumn(id: String, options: js.Any, silent: Unit, mode: Boolean): Unit = js.native
+  def hideColumn(id: String, options: Any): Unit = js.native
+  def hideColumn(id: String, options: Any, silent: Boolean): Unit = js.native
+  def hideColumn(id: String, options: Any, silent: Boolean, mode: Boolean): Unit = js.native
+  def hideColumn(id: String, options: Any, silent: Unit, mode: Boolean): Unit = js.native
   def hideColumn(id: String, options: Unit, silent: Boolean): Unit = js.native
   def hideColumn(id: String, options: Unit, silent: Boolean, mode: Boolean): Unit = js.native
   def hideColumn(id: String, options: Unit, silent: Unit, mode: Boolean): Unit = js.native
   def hideColumn(id: Double): Unit = js.native
-  def hideColumn(id: Double, options: js.Any): Unit = js.native
-  def hideColumn(id: Double, options: js.Any, silent: Boolean): Unit = js.native
-  def hideColumn(id: Double, options: js.Any, silent: Boolean, mode: Boolean): Unit = js.native
-  def hideColumn(id: Double, options: js.Any, silent: Unit, mode: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: Any): Unit = js.native
+  def hideColumn(id: Double, options: Any, silent: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: Any, silent: Boolean, mode: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: Any, silent: Unit, mode: Boolean): Unit = js.native
   def hideColumn(id: Double, options: Unit, silent: Boolean): Unit = js.native
   def hideColumn(id: Double, options: Unit, silent: Boolean, mode: Boolean): Unit = js.native
   def hideColumn(id: Double, options: Unit, silent: Unit, mode: Boolean): Unit = js.native
@@ -379,35 +379,42 @@ class treetable ()
   def isSelected(id: String): Unit = js.native
   def isSelected(id: Double): Unit = js.native
   
-  def load(url: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
-  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
+  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[Any] = js.native
+  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[Any] = js.native
   
-  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[js.Any] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[Any] = js.native
   
-  def locate(node: Event): js.Any = js.native
-  def locate(node: HTMLElement): js.Any = js.native
+  def locate(node: Event): Any = js.native
+  def locate(node: HTMLElement): Any = js.native
   
   def mapCells(startrow: Double, startcol: String, numrows: Double, numcols: Double, callback: WebixCallback): Unit = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def mapSelection(callback: WebixCallback): Unit = js.native
   
+  def markSorting(): Unit = js.native
+  def markSorting(column_id: String): Unit = js.native
   def markSorting(column_id: String, direction: String): Unit = js.native
+  def markSorting(column_id: String, direction: String, preserve: Boolean): Unit = js.native
+  def markSorting(column_id: String, direction: Unit, preserve: Boolean): Unit = js.native
+  def markSorting(column_id: Unit, direction: String): Unit = js.native
+  def markSorting(column_id: Unit, direction: String, preserve: Boolean): Unit = js.native
+  def markSorting(column_id: Unit, direction: Unit, preserve: Boolean): Unit = js.native
   
   def move(sid: String, tindex: Double): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: Unit, details: js.Any): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: Any): String | Double = js.native
   def move(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: Any): String | Double = js.native
   def move(sid: Double, tindex: Double): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: Unit, details: js.Any): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: Unit, details: Any): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: Any): String | Double = js.native
   
   def moveBottom(id: String): Unit = js.native
   def moveBottom(id: Double): Unit = js.native
@@ -425,17 +432,17 @@ class treetable ()
   def moveUp(id: String, step: Double): Unit = js.native
   def moveUp(id: Double, step: Double): Unit = js.native
   
-  def on_click(args: js.Any*): js.Any = js.native
+  def on_click(args: Any*): Any = js.native
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
-  var on_context: StringDictionary[js.Any] = js.native
+  var on_context: StringDictionary[Any] = js.native
   
-  def on_dblclick(args: js.Any*): js.Any = js.native
+  def on_dblclick(args: Any*): Any = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: WebixCallback = js.native
   
-  def on_mouse_move(args: js.Any*): js.Any = js.native
+  def on_mouse_move(args: Any*): Any = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: WebixCallback = js.native
   
@@ -449,15 +456,15 @@ class treetable ()
   def openSub(id: String): Unit = js.native
   def openSub(id: Double): Unit = js.native
   
-  def parse(data: js.Any, `type`: String): Unit = js.native
+  def parse(data: Any, `type`: String): Unit = js.native
   
   def refresh(): Unit = js.native
   def refresh(id: String): Unit = js.native
   def refresh(id: Double): Unit = js.native
   
   def refreshColumns(): Unit = js.native
-  def refreshColumns(config: js.Array[js.Any]): Unit = js.native
-  def refreshColumns(config: js.Array[js.Any], reset: Boolean): Unit = js.native
+  def refreshColumns(config: js.Array[Any]): Unit = js.native
+  def refreshColumns(config: js.Array[Any], reset: Boolean): Unit = js.native
   def refreshColumns(config: Unit, reset: Boolean): Unit = js.native
   
   def refreshFilter(id: String): Unit = js.native
@@ -465,13 +472,13 @@ class treetable ()
   
   def refreshSelectArea(): Unit = js.native
   
-  def registerFilter(`object`: js.Any, config: js.Any, controller: js.Any): Unit = js.native
+  def registerFilter(`object`: Any, config: Any, controller: Any): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[js.Any]): Unit = js.native
+  def remove(id: js.Array[Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
-  def removeCellCss(id: String, name: String, css_name: String): Unit = js.native
+  def removeCellCss(id: String, name: String, css_name: String, silent: Boolean): Unit = js.native
   
   def removeCss(id: String, css: String): Unit = js.native
   def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -487,8 +494,8 @@ class treetable ()
   
   def removeUndo(id: String): Unit = js.native
   
-  def render(id: String, data: js.Any, operation: String): Unit = js.native
-  def render(id: Double, data: js.Any, operation: String): Unit = js.native
+  def render(id: String, data: Any, operation: String): Unit = js.native
+  def render(id: Double, data: Any, operation: String): Unit = js.native
   
   def resizeSubView(id: String): Unit = js.native
   def resizeSubView(id: Double): Unit = js.native
@@ -509,12 +516,12 @@ class treetable ()
   def selectRange(row_id: Double, end_row_id: Double): Unit = js.native
   def selectRange(row_id: Double, end_row_id: Double, preserve: Boolean): Unit = js.native
   
-  def serialize(): js.Array[js.Any] = js.native
-  def serialize(id: String): js.Array[js.Any] = js.native
-  def serialize(id: String, all: Boolean): js.Array[js.Any] = js.native
-  def serialize(id: Double): js.Array[js.Any] = js.native
-  def serialize(id: Double, all: Boolean): js.Array[js.Any] = js.native
-  def serialize(id: Unit, all: Boolean): js.Array[js.Any] = js.native
+  def serialize(): js.Array[Any] = js.native
+  def serialize(id: String): js.Array[Any] = js.native
+  def serialize(id: String, all: Boolean): js.Array[Any] = js.native
+  def serialize(id: Double): js.Array[Any] = js.native
+  def serialize(id: Double, all: Boolean): js.Array[Any] = js.native
+  def serialize(id: Unit, all: Boolean): js.Array[Any] = js.native
   
   def setColumnWidth(id: String, width: Double): Unit = js.native
   def setColumnWidth(id: Double, width: Double): Unit = js.native
@@ -524,7 +531,7 @@ class treetable ()
   def setRowHeight(id: String, height: Double): Unit = js.native
   def setRowHeight(id: Double, height: Double): Unit = js.native
   
-  def setState(state: js.Any): Unit = js.native
+  def setState(state: Any): Unit = js.native
   
   def showCell(row: String, column: String): Unit = js.native
   
@@ -546,7 +553,7 @@ class treetable ()
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unblockEvent(): Unit = js.native
   
@@ -565,8 +572,8 @@ class treetable ()
   
   def unselectAll(): Unit = js.native
   
-  def updateItem(id: String, data: js.Any): Unit = js.native
-  def updateItem(id: Double, data: js.Any): Unit = js.native
+  def updateItem(id: String, data: Any): Unit = js.native
+  def updateItem(id: Double, data: Any): Unit = js.native
   
   def validate(): Boolean = js.native
   def validate(id: String): Boolean = js.native
@@ -575,7 +582,7 @@ class treetable ()
   def validateEditor(id: String): Boolean = js.native
   def validateEditor(id: Double): Boolean = js.native
   
-  var waitData: js.Promise[js.Any] = js.native
+  var waitData: js.Promise[Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[Any] = js.native
 }

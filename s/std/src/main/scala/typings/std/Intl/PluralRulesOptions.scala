@@ -8,18 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PluralRulesOptions extends StObject {
   
+  /* standard es2018.intl */
   var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.undefined
   
+  /* standard es2018.intl */
   var maximumFractionDigits: js.UndefOr[Double] = js.undefined
   
+  /* standard es2018.intl */
   var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
+  /* standard es2018.intl */
   var minimumFractionDigits: js.UndefOr[Double] = js.undefined
   
+  /* standard es2018.intl */
   var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
   
+  /* standard es2018.intl */
   var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
+  /* standard es2018.intl */
   var `type`: js.UndefOr[PluralRuleType] = js.undefined
 }
 object PluralRulesOptions {

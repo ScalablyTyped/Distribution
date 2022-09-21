@@ -13,7 +13,7 @@ trait OauthtokenPrettyPrintQuotaUser extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the advertiser. Assigned by the system. */
+  /** Required. Immutable. The unique ID of the advertiser that the manual trigger belongs to. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -37,6 +37,9 @@ trait OauthtokenPrettyPrintQuotaUser extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Output only. The unique ID of the manual trigger. */
+  var triggerId: String
+  
   /** Required. The mask to control which fields to update. */
   var updateMask: js.UndefOr[String] = js.undefined
   
@@ -48,8 +51,8 @@ trait OauthtokenPrettyPrintQuotaUser extends StObject {
 }
 object OauthtokenPrettyPrintQuotaUser {
   
-  inline def apply(advertiserId: String): OauthtokenPrettyPrintQuotaUser = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, triggerId: String): OauthtokenPrettyPrintQuotaUser = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], triggerId = triggerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenPrettyPrintQuotaUser]
   }
   
@@ -92,6 +95,8 @@ object OauthtokenPrettyPrintQuotaUser {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

@@ -1,29 +1,33 @@
 package typings.grommet
 
-import typings.grommet.grommetStrings.`12`
-import typings.grommet.grommetStrings.`24`
+import typings.grommet.grommetNumbers.`12`
+import typings.grommet.grommetNumbers.`24`
+import typings.grommet.grommetStrings.`type`
 import typings.grommet.grommetStrings.analog
 import typings.grommet.grommetStrings.backward
 import typings.grommet.grommetStrings.digital
 import typings.grommet.grommetStrings.forward
 import typings.grommet.grommetStrings.hours
+import typings.grommet.grommetStrings.huge
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.minutes
+import typings.grommet.grommetStrings.onChange
 import typings.grommet.grommetStrings.seconds
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.xlarge
+import typings.grommet.grommetStrings.xsmall
+import typings.grommet.grommetStrings.xxlarge
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.SVGProps
 import typings.std.HTMLDivElement
+import typings.std.Omit
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,27 +35,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object clockMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/Clock", "Clock")
   @js.native
-  class Clock protected ()
-    extends Component[
-          ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement])) = this()
-    def this(
-      props: ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]),
-      context: js.Any
-    ) = this()
-  }
-  @JSImport("grommet/components/Clock", "Clock")
-  @js.native
-  val Clock: ComponentClass[
-    ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
-    ComponentState
-  ] = js.native
+  val Clock: FC[ClockExtendedProps] = js.native
+  
+  type ClockExtendedProps = ((Omit[SVGProps[SVGSVGElement], onChange | `type`]) & ClockProps) | ((Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], onChange]) & ClockProps)
   
   trait ClockProps extends StObject {
     
@@ -61,7 +49,9 @@ object clockMod {
     
     var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var hourLimit: js.UndefOr[`12` | `24`] = js.undefined
+    var hourLimit: js.UndefOr[
+        `12` | `24` | typings.grommet.grommetStrings.`12` | typings.grommet.grommetStrings.`24`
+      ] = js.undefined
     
     var margin: js.UndefOr[MarginType] = js.undefined
     
@@ -71,7 +61,7 @@ object clockMod {
     
     var run: js.UndefOr[Boolean | backward | forward] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | huge | String] = js.undefined
     
     var time: js.UndefOr[String] = js.undefined
     
@@ -98,7 +88,7 @@ object clockMod {
       
       inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
-      inline def setHourLimit(value: `12` | `24`): Self = StObject.set(x, "hourLimit", value.asInstanceOf[js.Any])
+      inline def setHourLimit(value: `12` | `24` | typings.grommet.grommetStrings.`12` | typings.grommet.grommetStrings.`24`): Self = StObject.set(x, "hourLimit", value.asInstanceOf[js.Any])
       
       inline def setHourLimitUndefined: Self = StObject.set(x, "hourLimit", js.undefined)
       
@@ -118,7 +108,7 @@ object clockMod {
       
       inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
       
-      inline def setSize(value: small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: xsmall | small | medium | large | xlarge | xxlarge | huge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

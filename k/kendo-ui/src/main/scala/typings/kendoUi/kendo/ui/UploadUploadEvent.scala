@@ -8,13 +8,13 @@ trait UploadUploadEvent
   extends StObject
      with UploadEvent {
   
-  var XMLHttpRequest: js.UndefOr[js.Any] = js.undefined
+  var XMLHttpRequest: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
-  var files: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
 }
 object UploadUploadEvent {
   
@@ -25,21 +25,21 @@ object UploadUploadEvent {
   
   extension [Self <: UploadUploadEvent](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    inline def setXMLHttpRequest(value: js.Any): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
+    inline def setXMLHttpRequest(value: Any): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
     
     inline def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
   }

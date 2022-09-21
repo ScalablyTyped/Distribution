@@ -1,7 +1,6 @@
 package typings.namedRegexpGroups
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,14 +10,14 @@ object mod {
   
   @JSImport("named-regexp-groups", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with NamedRegExp {
     def this(pattern: String) = this()
-    def this(pattern: RegExp) = this()
+    def this(pattern: js.RegExp) = this()
     def this(pattern: String, flags: String) = this()
+    def this(pattern: js.RegExp, flags: String) = this()
     def this(pattern: Unit, flags: String) = this()
-    def this(pattern: RegExp, flags: String) = this()
   }
   
   @js.native

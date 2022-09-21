@@ -1,20 +1,23 @@
 package typings.xmppXml
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.eventsMod.EventEmitter
-import typings.node.eventsMod.EventEmitterOptions
+import typings.ltx.srcElementMod.default
+import typings.ltx.srcParserMod.ParserOptions
 import typings.std.Error
+import typings.std.Parameters
+import typings.std.ReturnType
+import typings.xmppXml.anon.TypeofcreateElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(name: String, attrs: String, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  inline def apply(name: String, attrs: StringDictionary[js.Any], children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  inline def apply(name: String, attrs: Unit, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof ltx.createElement> is not an array type */ args: Parameters[TypeofcreateElement]
+  ): ReturnType[TypeofcreateElement] = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[TypeofcreateElement]]
   
   @JSImport("@xmpp/xml", JSImport.Namespace)
   @js.native
@@ -22,42 +25,71 @@ object mod {
   
   @JSImport("@xmpp/xml", "Element")
   @js.native
-  class Element protected ()
+  val Element: Instantiable1[/* name */ String, typings.ltx.mod.Element] = js.native
+  type Element = typings.ltx.mod.Element
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@xmpp/xml", "Element")
+  @js.native
+  open class ElementCls protected ()
     extends typings.ltx.mod.Element {
     def this(name: String) = this()
-    def this(name: String, attrs: String) = this()
-    def this(name: String, attrs: StringDictionary[js.Any]) = this()
-    
-    def append(nodes: ElementChild): Element = js.native
-    
-    def prepend(nodes: ElementChild): Element = js.native
   }
   
   @JSImport("@xmpp/xml", "Parser")
   @js.native
-  class Parser () extends EventEmitter {
-    def this(options: EventEmitterOptions) = this()
+  open class Parser ()
+    extends typings.ltx.mod.Parser {
+    def this(options: ParserOptions) = this()
     
-    val XMLError: Instantiable0[typings.xmppXml.mod.XMLError] = js.native
-    
-    var cursor: Element | Null = js.native
-    
-    def end(data: Buffer): Unit = js.native
+    var cursor: typings.xmppXml.mod.Element | Null = js.native
     
     def onEndElement(name: String): Unit = js.native
     
     def onStartElement(name: String): Unit = js.native
     def onStartElement(name: String, attrs: String): Unit = js.native
-    def onStartElement(name: String, attrs: StringDictionary[js.Any]): Unit = js.native
+    def onStartElement(name: String, attrs: StringDictionary[Any]): Unit = js.native
     
     def onText(str: String): Unit = js.native
     
-    val parser: typings.ltx.mod.Parser = js.native
+    val parser: typings.ltx.parsersLtxMod.^ = js.native
     
-    var root: Element | Null = js.native
-    
-    def write(data: Buffer): Unit = js.native
+    var root: typings.xmppXml.mod.Element | Null = js.native
   }
+  object Parser {
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@xmpp/xml", "Parser.XMLError")
+    @js.native
+    open class XMLError ()
+      extends typings.xmppXml.mod.XMLError
+    /* static member */
+    /* was `typeof XMLError` */
+    @JSImport("@xmpp/xml", "Parser.XMLError")
+    @js.native
+    val XMLError: Instantiable0[typings.xmppXml.mod.XMLError] = js.native
+  }
+  
+  @JSImport("@xmpp/xml", "XMLError")
+  @js.native
+  open class XMLError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    @JSName("name")
+    val name_XMLError: typings.xmppXml.xmppXmlStrings.XMLError = js.native
+  }
+  
+  inline def createElement(name: String, attrs: String, children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: StringDictionary[Any], children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: Unit, children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
   
   @JSImport("@xmpp/xml", "escapeXML")
   @js.native
@@ -75,39 +107,15 @@ object mod {
   @js.native
   val unescapeXMLText: js.Function1[/* s */ String, String] = js.native
   
-  inline def x(name: String, attrs: String, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  inline def x(name: String, attrs: StringDictionary[js.Any], children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  inline def x(name: String, attrs: Unit, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  
-  type ElementChild = Element | js.Array[Element] | String | Double | Boolean
-  
-  trait XMLError
-    extends StObject
-       with Error {
-    
-    @JSName("name")
-    val name_XMLError: typings.xmppXml.xmppXmlStrings.XMLError
-  }
-  object XMLError {
-    
-    inline def apply(message: String): XMLError = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "XMLError")
-      __obj.asInstanceOf[XMLError]
-    }
-    
-    extension [Self <: XMLError](x: Self) {
-      
-      inline def setName(value: typings.xmppXml.xmppXmlStrings.XMLError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
+  type Node = typings.ltx.srcElementMod.Node
   
   object global {
     
     object JSX {
       
-      type Element = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Element */ js.Any
+      type Element = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Element */ Any
       
-      type IntrinsicElements = StringDictionary[js.Any]
+      type IntrinsicElements = StringDictionary[Any]
     }
   }
 }

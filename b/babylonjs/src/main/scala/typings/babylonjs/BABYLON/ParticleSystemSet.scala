@@ -10,26 +10,32 @@ trait ParticleSystemSet
   extends StObject
      with IDisposable {
   
-  /* private */ var _emitterCreationOptions: js.Any = js.native
+  /* private */ var _emitterCreationOptions: Any = js.native
   
-  /* private */ var _emitterNode: js.Any = js.native
+  /* private */ var _emitterNode: Any = js.native
+  
+  /* private */ var _emitterNodeIsOwned: Any = js.native
   
   /**
-    * Gets the emitter node used with this set
+    * Gets or sets the emitter node used with this set
     */
-  def emitterNode: Nullable[TransformNode] = js.native
+  def emitterNode: Nullable[AbstractMesh | Vector3] = js.native
+  def emitterNode_=(value: Nullable[AbstractMesh | Vector3]): Unit = js.native
   
   /**
     * Serialize the set into a JSON compatible object
     * @param serializeTexture defines if the texture must be serialized as well
     * @returns a JSON compatible representation of the set
     */
-  def serialize(): js.Any = js.native
-  def serialize(serializeTexture: Boolean): js.Any = js.native
+  def serialize(): Any = js.native
+  def serialize(serializeTexture: Boolean): Any = js.native
   
   /**
     * Creates a new emitter mesh as a sphere
     * @param options defines the options used to create the sphere
+    * @param options.diameter
+    * @param options.segments
+    * @param options.color
     * @param renderingGroupId defines the renderingGroupId to use for the sphere
     * @param scene defines the hosting scene
     */

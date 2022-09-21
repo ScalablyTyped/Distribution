@@ -7,7 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SizeSliderViewModel
   extends StObject
-     with SmartMappingSliderViewModel {
+     with SmartMappingPrimaryHandleSliderViewModel {
+  
+  /**
+    * This property is typically used in diverging, or `above-and-below` renderer configurations.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html#persistSizeRangeEnabled)
+    */
+  var persistSizeRangeEnabled: Boolean = js.native
   
   /**
     * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.

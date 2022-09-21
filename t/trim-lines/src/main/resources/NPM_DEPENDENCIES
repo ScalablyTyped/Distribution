@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "trim-lines" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "trim-lines" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

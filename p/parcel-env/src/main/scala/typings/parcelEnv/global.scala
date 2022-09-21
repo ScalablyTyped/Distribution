@@ -1,7 +1,5 @@
 package typings.parcelEnv
 
-import typings.node.NodeModule
-import typings.node.NodeRequire
 import typings.parcelEnv.NodeJS.Process
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

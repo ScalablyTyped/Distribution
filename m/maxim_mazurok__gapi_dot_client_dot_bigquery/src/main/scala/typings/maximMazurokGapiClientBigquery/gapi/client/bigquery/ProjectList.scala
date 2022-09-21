@@ -47,7 +47,7 @@ object ProjectList {
     
     inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    inline def setProjectsVarargs(value: FriendlyName*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: FriendlyName*): Self = StObject.set(x, "projects", js.Array(value*))
     
     inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     

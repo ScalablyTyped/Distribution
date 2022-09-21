@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IGlowLayerOptions extends StObject {
   
   /**
+    * Defines the blend mode used by the merge
+    */
+  var alphaBlendingMode: js.UndefOr[Double] = js.undefined
+  
+  /**
     * How big is the kernel of the blur texture.
     */
   var blurKernelSize: Double
@@ -17,7 +22,12 @@ trait IGlowLayerOptions extends StObject {
   var camera: Nullable[Camera]
   
   /**
-    * Enforces a fixed size texture to ensure resize independant blur.
+    * Forces the merge step to be done in ldr (clamp values > 1)
+    */
+  var ldrMerge: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Enforces a fixed size texture to ensure resize independent blur.
     */
   var mainTextureFixedSize: js.UndefOr[Double] = js.undefined
   
@@ -28,7 +38,7 @@ trait IGlowLayerOptions extends StObject {
   var mainTextureRatio: Double
   
   /**
-    * Enable MSAA by chosing the number of samples.
+    * Enable MSAA by choosing the number of samples.
     */
   var mainTextureSamples: js.UndefOr[Double] = js.undefined
   
@@ -46,11 +56,19 @@ object IGlowLayerOptions {
   
   extension [Self <: IGlowLayerOptions](x: Self) {
     
+    inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaBlendingModeUndefined: Self = StObject.set(x, "alphaBlendingMode", js.undefined)
+    
     inline def setBlurKernelSize(value: Double): Self = StObject.set(x, "blurKernelSize", value.asInstanceOf[js.Any])
     
     inline def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     inline def setCameraNull: Self = StObject.set(x, "camera", null)
+    
+    inline def setLdrMerge(value: Boolean): Self = StObject.set(x, "ldrMerge", value.asInstanceOf[js.Any])
+    
+    inline def setLdrMergeUndefined: Self = StObject.set(x, "ldrMerge", js.undefined)
     
     inline def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
     

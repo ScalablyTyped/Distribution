@@ -6,6 +6,7 @@ import typings.react.mod.Ref
 import typings.react.mod.RefObject
 import typings.reactFocusLock.anon.ChildrenChildrenType
 import typings.reactFocusLock.reactFocusLockStrings.tail
+import typings.std.Element
 import typings.std.FocusOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -47,6 +48,8 @@ object interfacesMod {
   
   trait FreeFocusProps extends StObject {
     
+    var children: ReactNode
+    
     var className: js.UndefOr[String] = js.undefined
   }
   object FreeFocusProps {
@@ -57,6 +60,10 @@ object interfacesMod {
     }
     
     extension [Self <: FreeFocusProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -119,9 +126,29 @@ object interfacesMod {
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * used to control behavior or "returning focus back to the lock"
+      *
+      * @deprecated Can lead to a wrong user experience. Use this option only if you known what you are doing
+      * @see {@link https://github.com/theKashey/react-focus-lock/issues/162}
+      * @example
+      * prevent scroll example
+      * ```tsx
+      * <FocusLock focusOptions={{preventScroll: true}} />
+      * ```
+      */
+    var focusOptions: js.UndefOr[FocusOptions] = js.undefined
+    
+    /**
       * named focus group for focus scattering aka combined lock targets
       */
     var group: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Controls support a focus lock behavior when any elements tabIndex greater than 0.
+      * @default false
+      * @see - https://github.com/theKashey/react-focus-lock/issues/32
+      */
+    var hasPositiveIndices: js.UndefOr[Boolean] = js.undefined
     
     var lockProps: js.UndefOr[LockProps] = js.undefined
     
@@ -155,13 +182,18 @@ object interfacesMod {
       * if true, will return focus to the previous position on trap disable.
       * Optionally, can pass focus options instead of `true` to control the focus
       * more precisely (ie. `{ preventScroll: true }`)
+      *
+      * can also accept a function with the first argument equals to element focus will be returned to
+      * in order to provide full control to the user space
       */
-    var returnFocus: js.UndefOr[Boolean | FocusOptions] = js.undefined
+    var returnFocus: js.UndefOr[
+        Boolean | FocusOptions | (js.Function1[/* returnTo */ Element, Boolean | FocusOptions])
+      ] = js.undefined
     
     /**
       * Shards forms a scattered lock, same as `group` does, but in more "low" and controlled way
       */
-    var shards: js.UndefOr[js.Array[RefObject[js.Any] | HTMLElement]] = js.undefined
+    var shards: js.UndefOr[js.Array[RefObject[Any] | HTMLElement]] = js.undefined
     
     /**
       * Controls focus lock working areas. Lock will silently ignore all the events from `not allowed` areas
@@ -207,9 +239,17 @@ object interfacesMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
+      inline def setFocusOptions(value: FocusOptions): Self = StObject.set(x, "focusOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFocusOptionsUndefined: Self = StObject.set(x, "focusOptions", js.undefined)
+      
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      
+      inline def setHasPositiveIndices(value: Boolean): Self = StObject.set(x, "hasPositiveIndices", value.asInstanceOf[js.Any])
+      
+      inline def setHasPositiveIndicesUndefined: Self = StObject.set(x, "hasPositiveIndices", js.undefined)
       
       inline def setLockProps(value: LockProps): Self = StObject.set(x, "lockProps", value.asInstanceOf[js.Any])
       
@@ -239,15 +279,17 @@ object interfacesMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      inline def setReturnFocus(value: Boolean | FocusOptions): Self = StObject.set(x, "returnFocus", value.asInstanceOf[js.Any])
+      inline def setReturnFocus(value: Boolean | FocusOptions | (js.Function1[/* returnTo */ Element, Boolean | FocusOptions])): Self = StObject.set(x, "returnFocus", value.asInstanceOf[js.Any])
+      
+      inline def setReturnFocusFunction1(value: /* returnTo */ Element => Boolean | FocusOptions): Self = StObject.set(x, "returnFocus", js.Any.fromFunction1(value))
       
       inline def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
       
-      inline def setShards(value: js.Array[RefObject[js.Any] | HTMLElement]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
+      inline def setShards(value: js.Array[RefObject[Any] | HTMLElement]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
       
       inline def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
       
-      inline def setShardsVarargs(value: (RefObject[js.Any] | HTMLElement)*): Self = StObject.set(x, "shards", js.Array(value :_*))
+      inline def setShardsVarargs(value: (RefObject[Any] | HTMLElement)*): Self = StObject.set(x, "shards", js.Array(value*))
       
       inline def setWhiteList(value: /* activeElement */ HTMLElement => Boolean): Self = StObject.set(x, "whiteList", js.Any.fromFunction1(value))
       

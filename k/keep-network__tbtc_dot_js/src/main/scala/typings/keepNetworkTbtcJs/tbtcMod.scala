@@ -15,7 +15,7 @@ object tbtcMod {
   
   @JSImport("@keep-network/tbtc.js/src/TBTC", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TBTC {
     def this(depositFactory: DepositFactory, constants: Constants, config: TBTCConfig) = this()
@@ -46,6 +46,6 @@ object tbtcMod {
     
     var depositFactory: DepositFactory = js.native
     
-    var satoshisPerTbtc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+    var satoshisPerTbtc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any = js.native
   }
 }

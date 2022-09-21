@@ -17,27 +17,27 @@ trait BluetoothRemoteGATTService
      with ServiceEventHandlers {
   
   @JSName("addEventListener")
-  def addEventListener_serviceadded(`type`: serviceadded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_serviceadded(`type`: serviceadded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_serviceadded(
     `type`: serviceadded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_servicechanged(`type`: servicechanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_servicechanged(`type`: servicechanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_servicechanged(
     `type`: servicechanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_serviceremoved(`type`: serviceremoved, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_serviceremoved(`type`: serviceremoved, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_serviceremoved(
     `type`: serviceremoved,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   

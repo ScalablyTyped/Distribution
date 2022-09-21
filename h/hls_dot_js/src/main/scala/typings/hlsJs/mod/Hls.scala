@@ -1,584 +1,372 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.anon.PartialHlsConfig
 import typings.std.HTMLMediaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * @module Hls
+  * @class
+  * @constructor
+  */
 @js.native
-trait Hls extends StObject {
+trait Hls
+  extends StObject
+     with HlsEventEmitter {
+  
+  /* private */ var _autoLevelCapping: Any = js.native
+  
+  /* private */ var _emitter: Any = js.native
+  
+  /* private */ var _media: Any = js.native
+  
+  /* private */ var abrController: Any = js.native
   
   /**
-    * calling this method will:
-    *      bind mediaElement (of type HTMLMediaElement, aka. HTMLVideoElement or HTMLAudioElement) and hls instances
-    *      create MediaSource and set it as video or audio source
-    *      once MediaSource object is successfully created, MEDIA_ATTACHED event will be fired
+    * Attaches Hls.js to a media element
+    * @param {HTMLMediaElement} media
     */
-  def attachMedia(mediaElement: HTMLMediaElement): Unit = js.native
+  def attachMedia(media: HTMLMediaElement): Unit = js.native
   
   /**
-    * get/set : audio track id (returned by).
-    * Returns -1 if no track is selected.
-    * Set to -1 to play default audio track.
+    * index of the selected audio track (index in audio track lists)
+    * @type {number}
     */
-  var audioTrack: Double = js.native
+  def audioTrack: Double = js.native
+  
+  /* private */ var audioTrackController: Any = js.native
   
   /**
-    * get : array of audio tracks exposed in manifest
+    * selects an audio track, based on its index in audio track lists
+    * @type {number}
     */
-  val audioTracks: js.Array[HlsAudioTrack] = js.native
+  def audioTrack_=(audioTrackId: Double): Unit = js.native
   
   /**
-    * capping/max level (index of level) that could be used by ABR Controller. Defaults to -1
-    * which means no limit
-    * set: max level value that could be used by the ABR Controller
+    * @type {AudioTrack[]}
     */
-  var autoLevelCapping: Double = js.native
+  def audioTracks: js.Array[MediaPlaylist] = js.native
   
   /**
-    * tell whether auto level selection is enabled or not
+    * Capping/max level value that should be used by automatic level selection algorithm (`ABRController`)
+    * @type {number}
     */
-  val autoLevelEnabled: Boolean = js.native
-  
+  def autoLevelCapping: Double = js.native
   /**
-    *  hls.js config
+    * Capping/max level value that should be used by automatic level selection algorithm (`ABRController`)
+    * @type {number}
     */
-  var config: Config = js.native
+  def autoLevelCapping_=(newLevel: Double): Unit = js.native
   
   /**
-    * get: return current playback quality level
-    * set:  trigger an immediate quality level switch to new quality level
-    * this will pause the video if it was playing, flush the whole buffer,
-    * and fetch fragment matching with current position and requested quality level
-    * then resume the video if needed once fetched fragment will have been buffered
+    * True when automatic level selection enabled
+    * @type {boolean}
+    */
+  def autoLevelEnabled: Boolean = js.native
+  
+  /**
+    * get bandwidth estimate
+    * @type {number}
+    */
+  def bandwidthEstimate: Double = js.native
+  
+  /* private */ var bufferController: Any = js.native
+  
+  /* private */ var capLevelController: Any = js.native
+  
+  /**
+    * Get the current setting for capLevelToPlayerSize
     *
-    * set to -1 for automatic level selection
+    * @type {boolean}
     */
-  var currentLevel: Double = js.native
+  def capLevelToPlayerSize: Boolean = js.native
+  /**
+    * set  dynamically set capLevelToPlayerSize against (`CapLevelController`)
+    *
+    * @type {boolean}
+    */
+  def capLevelToPlayerSize_=(shouldStartCapping: Boolean): Unit = js.native
+  
+  /* private */ var cmcdController: Any = js.native
+  
+  val config: HlsConfig = js.native
+  
+  /* private */ var coreComponents: Any = js.native
+  
+  def createController(ControllerClass: Any, fragmentTracker: Any, components: Any): Any = js.native
   
   /**
-    * should be called to free used resources and destroy hls context
+    * Index of quality level currently played
+    * @type {number}
+    */
+  def currentLevel: Double = js.native
+  /**
+    * Set quality level index immediately .
+    * This will flush the current buffer to replace the quality asap.
+    * That means playback will interrupt at least shortly to re-buffer and re-sync eventually.
+    * @type {number} -1 for automatic level selection
+    */
+  def currentLevel_=(newLevel: Double): Unit = js.native
+  
+  /**
+    * Dispose of the instance
     */
   def destroy(): Unit = js.native
   
   /**
-    * calling this method will:
-    *      unbind HTMLMediaElement (aka. HTMLVideoElement or HTMLAudioElement) from hls instance
-    *      signal the end of the stream on MediaSource
-    *      resets media source ( media.src = '',  )
+    * Detach Hls.js from the media
     */
   def detachMedia(): Unit = js.native
   
   /**
-    * first level index (index of first level appearing in Manifest. it is usually defined as start level hint for player)
+    * the rate at which the edge of the current live playlist is advancing or 1 if there is none
+    * @type {number}
     */
-  var firstLevel: Double = js.native
+  def drift: Double | Null = js.native
+  
+  /* private */ var emeController: Any = js.native
   
   /**
-    * return array of available quality levels
+    * Return "first level": like a default level, if not set,
+    * falls back to index of first level referenced in manifest
+    * @type {number}
     */
-  val levels: js.Array[Level] = js.native
+  def firstLevel: Double = js.native
+  /**
+    * Sets "first-level", see getter.
+    * @type {number}
+    */
+  def firstLevel_=(newLevel: Double): Unit = js.native
   
   /**
-    * position of live sync point (ie edge of live position minus safety delay defined by hls.config.liveSyncDuration)
+    * set to true when startLoad is called before MANIFEST_PARSED event
+    * @type {boolean}
     */
-  val liveSyncPosition: Double = js.native
+  def forceStartLoad: Boolean = js.native
   
   /**
-    * get: return last loaded fragment quality level
-    * set: quality level for next loaded fragment
-    * set to -1 for automatic level selection
+    * estimated position (in seconds) of live edge (ie edge of live playlist plus time sync playlist advanced)
+    * returns 0 before first playlist is loaded
+    * @type {number}
     */
-  var loadLevel: Double = js.native
+  def latency: Double = js.native
+  
+  /* private */ var latencyController: Any = js.native
+  
+  /* private */ var levelController: Any = js.native
   
   /**
-    * loads provided url as media source
+    * @type {Level[]}
     */
-  def loadSource(source: String): Unit = js.native
+  def levels: js.Array[Level] = js.native
   
   /**
-    * get: Return the bound mediaElement (of type HTMLMediaElement, aka. HTMLVideoElement or HTMLAudioElement) from the hls instance
+    * position (in seconds) of live sync point (ie edge of live position minus safety delay defined by ```hls.config.liveSyncDuration```)
+    * @type {number}
     */
-  val media: js.UndefOr[HTMLMediaElement | Null] = js.native
+  def liveSyncPosition: Double | Null = js.native
   
   /**
-    * get: return next playback quality level (playback quality level for next buffered fragment)
-    * return -1 if next fragment not buffered yet
-    * set: trigger a quality level switch for next fragment
-    * this could eventually flush already buffered next fragment
+    * Return the quality level of the currently or last (of none is loaded currently) segment
+    * @type {number}
+    */
+  def loadLevel: Double = js.native
+  /**
+    * Set quality level index for next loaded data in a conservative way.
+    * This will switch the quality without flushing, but interrupt current loading.
+    * Thus the moment when the quality switch will appear in effect will only be after the already existing buffer.
+    * @type {number} newLevel -1 for automatic level selection
+    */
+  def loadLevel_=(newLevel: Double): Unit = js.native
+  
+  /**
+    * Set the source URL. Can be relative or absolute.
+    * @param {string} url
+    */
+  def loadSource(url: String): Unit = js.native
+  
+  /**
+    * get mode for Low-Latency HLS loading
+    * @type {boolean}
+    */
+  def lowLatencyMode: Boolean = js.native
+  /**
+    * Enable/disable Low-Latency HLS part playlist and segment loading, and start live streams at playlist PART-HOLD-BACK rather than HOLD-BACK.
+    * @type {boolean}
+    */
+  def lowLatencyMode_=(mode: Boolean): Unit = js.native
+  
+  /**
+    * Level set manually (if any)
+    * @type {number}
+    */
+  def manualLevel: Double = js.native
+  
+  /**
+    * max level selectable in auto mode according to autoLevelCapping
+    * @type {number}
+    */
+  def maxAutoLevel: Double = js.native
+  
+  /**
+    * maximum distance from the edge before the player seeks forward to ```hls.liveSyncPosition```
+    * configured using ```liveMaxLatencyDurationCount``` (multiple of target duration) or ```liveMaxLatencyDuration```
+    * returns 0 before first playlist is loaded
+    * @type {number}
+    */
+  def maxLatency: Double = js.native
+  
+  def media: HTMLMediaElement | Null = js.native
+  
+  /**
+    * min level selectable in auto mode according to config.minAutoBitrate
+    * @type {number}
+    */
+  def minAutoLevel: Double = js.native
+  
+  /* private */ var networkControllers: Any = js.native
+  
+  /**
+    * next automatically selected quality level
+    * @type {number}
+    */
+  def nextAutoLevel: Double = js.native
+  /**
+    * this setter is used to force next auto level.
+    * this is useful to force a switch down in auto mode:
+    * in case of load error on level N, hls.js can set nextAutoLevel to N-1 for example)
+    * forced value is valid for one fragment. upon successful frag loading at forced level,
+    * this value will be resetted to -1 by ABR controller.
+    * @type {number}
+    */
+  def nextAutoLevel_=(nextLevel: Double): Unit = js.native
+  
+  /**
+    * Index of next quality level loaded as scheduled by stream controller.
+    * @type {number}
+    */
+  def nextLevel: Double = js.native
+  /**
+    * Set quality level index for next loaded data.
+    * This will switch the video quality asap, without interrupting playback.
+    * May abort current loading of data, and flush parts of buffer (outside currently played fragment region).
+    * @type {number} -1 for automatic level selection
+    */
+  def nextLevel_=(newLevel: Double): Unit = js.native
+  
+  /**
+    * get next quality level loaded
+    * @type {number}
+    */
+  def nextLoadLevel: Double = js.native
+  /**
+    * Set quality level of next loaded segment in a fully "non-destructive" way.
+    * Same as `loadLevel` but will wait for next switch (until current loading is done).
+    * @type {number} level
+    */
+  def nextLoadLevel_=(level: Double): Unit = js.native
+  
+  /**
+    * get the datetime value relative to media.currentTime for the active level Program Date Time if present
+    * @type {Date}
+    */
+  def playingDate: js.Date | Null = js.native
+  
+  /**
+    * When the media-element fails, this allows to detach and then re-attach it
+    * as one call (convenience method).
     *
-    * set to -1 for automatic level selection
-    */
-  var nextLevel: Double = js.native
-  
-  /**
-    * get: return quality level that will be used to load next fragment
-    * set: force quality level for next loaded fragment
-    * quality level will be forced only for that fragment
-    * after a fragment at this quality level has been loaded, hls.loadLevel will prevail
-    */
-  var nextLoadLevel: Double = js.native
-  
-  /**
-    * remove hls.js event listener
-    */
-  def off(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  
-  def on(
-    event: K_AUDIO_TRACKS_UPDATED,
-    callback: js.Function2[/* event */ K_AUDIO_TRACKS_UPDATED, /* data */ audioTracksUpdatedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_AUDIO_TRACK_LOADED,
-    callback: js.Function2[/* event */ K_AUDIO_TRACK_LOADED, /* data */ audioTrackLoadedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_AUDIO_TRACK_LOADING,
-    callback: js.Function2[/* event */ K_AUDIO_TRACK_LOADING, /* data */ audioTrackLoadingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_AUDIO_TRACK_SWITCHED,
-    callback: js.Function2[/* event */ K_AUDIO_TRACK_SWITCHED, /* data */ audioTrackSwitchedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_AUDIO_TRACK_SWITCHING,
-    callback: js.Function2[/* event */ K_AUDIO_TRACK_SWITCHING, /* data */ audioTrackSwitchingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_BUFFER_APPENDED,
-    callback: js.Function2[/* event */ K_BUFFER_APPENDED, /* data */ bufferAppendedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_BUFFER_APPENDING,
-    callback: js.Function2[/* event */ K_BUFFER_APPENDING, /* data */ bufferAppendingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_BUFFER_CODECS,
-    callback: js.Function2[/* event */ K_BUFFER_CODECS, /* data */ bufferCodecsData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_BUFFER_CREATED,
-    callback: js.Function2[/* event */ K_BUFFER_CREATED, /* data */ bufferCreatedData, Unit]
-  ): Unit = js.native
-  def on(event: K_BUFFER_EOS, callback: js.Function2[/* event */ K_BUFFER_EOS, /* data */ js.Object, Unit]): Unit = js.native
-  def on(
-    event: K_BUFFER_FLUSHED,
-    callback: js.Function2[/* event */ K_BUFFER_FLUSHED, /* data */ bufferFlushedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_BUFFER_FLUSHING,
-    callback: js.Function2[/* event */ K_BUFFER_FLUSHING, /* data */ bufferFlushingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_BUFFER_RESET,
-    callback: js.Function2[/* event */ K_BUFFER_RESET, /* data */ js.Object, Unit]
-  ): Unit = js.native
-  def on(event: K_DESTROYING, callback: js.Function2[/* event */ K_DESTROYING, /* data */ js.Object, Unit]): Unit = js.native
-  def on(event: K_ERROR, callback: js.Function2[/* event */ K_ERROR, /* data */ errorData, Unit]): Unit = js.native
-  def on(
-    event: K_FPS_DROP_LEVEL_CAPPING,
-    callback: js.Function2[/* event */ K_FPS_DROP_LEVEL_CAPPING, /* data */ fpsDropLevelCappingData, Unit]
-  ): Unit = js.native
-  def on(event: K_FPS_DROP, callback: js.Function2[/* event */ K_FPS_DROP, /* data */ fpsDropData, Unit]): Unit = js.native
-  def on(
-    event: K_FRAG_BUFFERED,
-    callback: js.Function2[/* event */ K_FRAG_BUFFERED, /* data */ fragBufferedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_CHANGED,
-    callback: js.Function2[/* event */ K_FRAG_CHANGED, /* data */ fragChangedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_DECRYPTED,
-    callback: js.Function2[/* event */ K_FRAG_DECRYPTED, /* data */ fragDecryptedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_LOADED,
-    callback: js.Function2[/* event */ K_FRAG_LOADED, /* data */ fragLoadedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_LOADING,
-    callback: js.Function2[/* event */ K_FRAG_LOADING, /* data */ fragLoadingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_LOAD_EMERGENCY_ABORTED,
-    callback: js.Function2[
-      /* event */ K_FRAG_LOAD_EMERGENCY_ABORTED, 
-      /* data */ fragLoadEmergencyAbortedData, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_LOAD_PROGRESS,
-    callback: js.Function2[/* event */ K_FRAG_LOAD_PROGRESS, /* data */ fragLoadProgressData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_PARSED,
-    callback: js.Function2[/* event */ K_FRAG_PARSED, /* data */ fragParsedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_PARSING_DATA,
-    callback: js.Function2[/* event */ K_FRAG_PARSING_DATA, /* data */ fragParsingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_PARSING_INIT_SEGMENT,
-    callback: js.Function2[/* event */ K_FRAG_PARSING_INIT_SEGMENT, /* data */ fragParsingInitSegmentData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_PARSING_METADATA,
-    callback: js.Function2[/* event */ K_FRAG_PARSING_METADATA, /* data */ fragParsingMetadata, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_FRAG_PARSING_USERDATA,
-    callback: js.Function2[/* event */ K_FRAG_PARSING_USERDATA, /* data */ fragParsingUserData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_INIT_PTS_FOUND,
-    callback: js.Function2[/* event */ K_INIT_PTS_FOUND, /* data */ initPtsFoundData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_KEY_LOADED,
-    callback: js.Function2[/* event */ K_KEY_LOADED, /* data */ keyLoadedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_KEY_LOADING,
-    callback: js.Function2[/* event */ K_KEY_LOADING, /* data */ keyLoadingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_LEVEL_LOADED,
-    callback: js.Function2[/* event */ K_LEVEL_LOADED, /* data */ levelLoadedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_LEVEL_LOADING,
-    callback: js.Function2[/* event */ K_LEVEL_LOADING, /* data */ levelLoadingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_LEVEL_PTS_UPDATED,
-    callback: js.Function2[/* event */ K_LEVEL_PTS_UPDATED, /* data */ levelPtsUpdatedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_LEVEL_SWITCHED,
-    callback: js.Function2[/* event */ K_LEVEL_SWITCHED, /* data */ levelSwitchedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_LEVEL_SWITCHING,
-    callback: js.Function2[/* event */ K_LEVEL_SWITCHING, /* data */ levelSwitchingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_LEVEL_UPDATED,
-    callback: js.Function2[/* event */ K_LEVEL_UPDATED, /* data */ levelUpdatedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_MANIFEST_LOADED,
-    callback: js.Function2[/* event */ K_MANIFEST_LOADED, /* data */ manifestLoadedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_MANIFEST_LOADING,
-    callback: js.Function2[/* event */ K_MANIFEST_LOADING, /* data */ manifestLoadingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_MANIFEST_PARSED,
-    callback: js.Function2[/* event */ K_MANIFEST_PARSED, /* data */ manifestParsedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_MEDIA_ATTACHED,
-    callback: js.Function2[/* event */ K_MEDIA_ATTACHED, /* data */ mediaAttachedData, Unit]
-  ): Unit = js.native
-  /**
-    * hls.js event listener
-    */
-  def on(
-    event: K_MEDIA_ATTACHING,
-    callback: js.Function2[/* event */ K_MEDIA_ATTACHING, /* data */ mediaAttachingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_MEDIA_DETACHED,
-    callback: js.Function2[/* event */ K_MEDIA_DETACHED, /* data */ js.Object, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_MEDIA_DETACHING,
-    callback: js.Function2[/* event */ K_MEDIA_DETACHING, /* data */ js.Object, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_STREAM_STATE_TRANSITION,
-    callback: js.Function2[/* event */ K_STREAM_STATE_TRANSITION, /* data */ streamStateTransitionData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_SUBTITLE_FRAG_PROCESSED,
-    callback: js.Function2[/* event */ K_SUBTITLE_FRAG_PROCESSED, /* data */ subtitleFragProcessedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_SUBTITLE_TRACKS_UPDATED,
-    callback: js.Function2[/* event */ K_SUBTITLE_TRACKS_UPDATED, /* data */ subtitleTracksUpdatedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_SUBTITLE_TRACK_LOADED,
-    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_LOADED, /* data */ subtitleTrackLoadedData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_SUBTITLE_TRACK_LOADING,
-    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_LOADING, /* data */ subtitleTrackLoadingData, Unit]
-  ): Unit = js.native
-  def on(
-    event: K_SUBTITLE_TRACK_SWITCH,
-    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_SWITCH, /* data */ subtitleTrackSwitchData, Unit]
-  ): Unit = js.native
-  
-  def once(
-    event: K_AUDIO_TRACKS_UPDATED,
-    callback: js.Function2[/* event */ K_AUDIO_TRACKS_UPDATED, /* data */ audioTracksUpdatedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_AUDIO_TRACK_LOADED,
-    callback: js.Function2[/* event */ K_AUDIO_TRACK_LOADED, /* data */ audioTrackLoadedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_AUDIO_TRACK_LOADING,
-    callback: js.Function2[/* event */ K_AUDIO_TRACK_LOADING, /* data */ audioTrackLoadingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_AUDIO_TRACK_SWITCHED,
-    callback: js.Function2[/* event */ K_AUDIO_TRACK_SWITCHED, /* data */ audioTrackSwitchedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_AUDIO_TRACK_SWITCHING,
-    callback: js.Function2[/* event */ K_AUDIO_TRACK_SWITCHING, /* data */ audioTrackSwitchingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_BUFFER_APPENDED,
-    callback: js.Function2[/* event */ K_BUFFER_APPENDED, /* data */ bufferAppendedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_BUFFER_APPENDING,
-    callback: js.Function2[/* event */ K_BUFFER_APPENDING, /* data */ bufferAppendingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_BUFFER_CODECS,
-    callback: js.Function2[/* event */ K_BUFFER_CODECS, /* data */ bufferCodecsData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_BUFFER_CREATED,
-    callback: js.Function2[/* event */ K_BUFFER_CREATED, /* data */ bufferCreatedData, Unit]
-  ): Unit = js.native
-  def once(event: K_BUFFER_EOS, callback: js.Function2[/* event */ K_BUFFER_EOS, /* data */ js.Object, Unit]): Unit = js.native
-  def once(
-    event: K_BUFFER_FLUSHED,
-    callback: js.Function2[/* event */ K_BUFFER_FLUSHED, /* data */ bufferFlushedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_BUFFER_FLUSHING,
-    callback: js.Function2[/* event */ K_BUFFER_FLUSHING, /* data */ bufferFlushingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_BUFFER_RESET,
-    callback: js.Function2[/* event */ K_BUFFER_RESET, /* data */ js.Object, Unit]
-  ): Unit = js.native
-  def once(event: K_DESTROYING, callback: js.Function2[/* event */ K_DESTROYING, /* data */ js.Object, Unit]): Unit = js.native
-  def once(event: K_ERROR, callback: js.Function2[/* event */ K_ERROR, /* data */ errorData, Unit]): Unit = js.native
-  def once(
-    event: K_FPS_DROP_LEVEL_CAPPING,
-    callback: js.Function2[/* event */ K_FPS_DROP_LEVEL_CAPPING, /* data */ fpsDropLevelCappingData, Unit]
-  ): Unit = js.native
-  def once(event: K_FPS_DROP, callback: js.Function2[/* event */ K_FPS_DROP, /* data */ fpsDropData, Unit]): Unit = js.native
-  def once(
-    event: K_FRAG_BUFFERED,
-    callback: js.Function2[/* event */ K_FRAG_BUFFERED, /* data */ fragBufferedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_CHANGED,
-    callback: js.Function2[/* event */ K_FRAG_CHANGED, /* data */ fragChangedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_DECRYPTED,
-    callback: js.Function2[/* event */ K_FRAG_DECRYPTED, /* data */ fragDecryptedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_LOADED,
-    callback: js.Function2[/* event */ K_FRAG_LOADED, /* data */ fragLoadedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_LOADING,
-    callback: js.Function2[/* event */ K_FRAG_LOADING, /* data */ fragLoadingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_LOAD_EMERGENCY_ABORTED,
-    callback: js.Function2[
-      /* event */ K_FRAG_LOAD_EMERGENCY_ABORTED, 
-      /* data */ fragLoadEmergencyAbortedData, 
-      Unit
-    ]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_LOAD_PROGRESS,
-    callback: js.Function2[/* event */ K_FRAG_LOAD_PROGRESS, /* data */ fragLoadProgressData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_PARSED,
-    callback: js.Function2[/* event */ K_FRAG_PARSED, /* data */ fragParsedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_PARSING_DATA,
-    callback: js.Function2[/* event */ K_FRAG_PARSING_DATA, /* data */ fragParsingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_PARSING_INIT_SEGMENT,
-    callback: js.Function2[/* event */ K_FRAG_PARSING_INIT_SEGMENT, /* data */ fragParsingInitSegmentData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_PARSING_METADATA,
-    callback: js.Function2[/* event */ K_FRAG_PARSING_METADATA, /* data */ fragParsingMetadata, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_FRAG_PARSING_USERDATA,
-    callback: js.Function2[/* event */ K_FRAG_PARSING_USERDATA, /* data */ fragParsingUserData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_INIT_PTS_FOUND,
-    callback: js.Function2[/* event */ K_INIT_PTS_FOUND, /* data */ initPtsFoundData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_KEY_LOADED,
-    callback: js.Function2[/* event */ K_KEY_LOADED, /* data */ keyLoadedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_KEY_LOADING,
-    callback: js.Function2[/* event */ K_KEY_LOADING, /* data */ keyLoadingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_LEVEL_LOADED,
-    callback: js.Function2[/* event */ K_LEVEL_LOADED, /* data */ levelLoadedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_LEVEL_LOADING,
-    callback: js.Function2[/* event */ K_LEVEL_LOADING, /* data */ levelLoadingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_LEVEL_PTS_UPDATED,
-    callback: js.Function2[/* event */ K_LEVEL_PTS_UPDATED, /* data */ levelPtsUpdatedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_LEVEL_SWITCHED,
-    callback: js.Function2[/* event */ K_LEVEL_SWITCHED, /* data */ levelSwitchedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_LEVEL_SWITCHING,
-    callback: js.Function2[/* event */ K_LEVEL_SWITCHING, /* data */ levelSwitchingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_LEVEL_UPDATED,
-    callback: js.Function2[/* event */ K_LEVEL_UPDATED, /* data */ levelUpdatedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_MANIFEST_LOADED,
-    callback: js.Function2[/* event */ K_MANIFEST_LOADED, /* data */ manifestLoadedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_MANIFEST_LOADING,
-    callback: js.Function2[/* event */ K_MANIFEST_LOADING, /* data */ manifestLoadingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_MANIFEST_PARSED,
-    callback: js.Function2[/* event */ K_MANIFEST_PARSED, /* data */ manifestParsedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_MEDIA_ATTACHED,
-    callback: js.Function2[/* event */ K_MEDIA_ATTACHED, /* data */ mediaAttachedData, Unit]
-  ): Unit = js.native
-  /**
-    * hls.js single event listener
-    */
-  def once(
-    event: K_MEDIA_ATTACHING,
-    callback: js.Function2[/* event */ K_MEDIA_ATTACHING, /* data */ mediaAttachedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_MEDIA_DETACHED,
-    callback: js.Function2[/* event */ K_MEDIA_DETACHED, /* data */ js.Object, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_MEDIA_DETACHING,
-    callback: js.Function2[/* event */ K_MEDIA_DETACHING, /* data */ js.Object, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_STREAM_STATE_TRANSITION,
-    callback: js.Function2[/* event */ K_STREAM_STATE_TRANSITION, /* data */ streamStateTransitionData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_SUBTITLE_FRAG_PROCESSED,
-    callback: js.Function2[/* event */ K_SUBTITLE_FRAG_PROCESSED, /* data */ subtitleFragProcessedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_SUBTITLE_TRACKS_UPDATED,
-    callback: js.Function2[/* event */ K_SUBTITLE_TRACKS_UPDATED, /* data */ subtitleTracksUpdatedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_SUBTITLE_TRACK_LOADED,
-    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_LOADED, /* data */ subtitleTrackLoadedData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_SUBTITLE_TRACK_LOADING,
-    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_LOADING, /* data */ subtitleTrackLoadingData, Unit]
-  ): Unit = js.native
-  def once(
-    event: K_SUBTITLE_TRACK_SWITCH,
-    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_SWITCH, /* data */ subtitleTrackSwitchData, Unit]
-  ): Unit = js.native
-  
-  /**
-    * should be invoked to recover media error.
+    * Automatic recovery of media-errors by this process is configurable.
     */
   def recoverMediaError(): Unit = js.native
   
-  /**
-    * return start level index (level of first fragment that will be played back)
-    *      if not overrided by user: first level appearing in manifest will be used as start level
-    *      if -1: automatic start level selection, playback will start from level matching download bandwidth (determined from download of first segment)
-    *
-    *  default valus is hls.firstLevel
-    */
-  var startLevel: Double = js.native
+  def removeLevel(levelIndex: Any): Unit = js.native
+  def removeLevel(levelIndex: Any, urlId: Double): Unit = js.native
   
   /**
-    * by default, hls.js will automatically start loading quality level playlists, and fragments after Hls.Events.MANIFEST_PARSED event has been triggered (and video element has been attached)
-    * however if config.autoStartLoad is set to false, hls.startLoad() needs to be called to manually start playlist and fragments loading
+    * Return start level (level of first fragment that will be played back)
+    * if not overrided by user, first level appearing in manifest will be used as start level
+    * if -1 : automatic start level selection, playback will start from level matching download bandwidth
+    * (determined from download of first segment)
+    * @type {number}
+    */
+  def startLevel: Double = js.native
+  /**
+    * set  start level (level of first fragment that will be played back)
+    * if not overrided by user, first level appearing in manifest will be used as start level
+    * if -1 : automatic start level selection, playback will start from level matching download bandwidth
+    * (determined from download of first segment)
+    * @type {number} newLevel
+    */
+  def startLevel_=(newLevel: Double): Unit = js.native
+  
+  /**
+    * Start loading data from the stream source.
+    * Depending on default config, client starts loading automatically when a source is set.
     *
-    * start/restart playlist/fragment loading. this is only effective if MANIFEST_PARSED event has been triggered and video element has been attached to hls object
-    * startPosition is the initial position in the playlist
-    * ff startPosition is not set to -1, it allows to override default startPosition to the one you want
-    * (it will bypass hls.config.liveSync* config params for Live for example, so that user can start playback from whatever position)
+    * @param {number} startPosition Set the start position to stream from
+    * @default -1 None (from earliest point)
     */
   def startLoad(): Unit = js.native
   def startLoad(startPosition: Double): Unit = js.native
   
   /**
-    * stop playlist/fragment loading. could be resumed later on by calling hls.startLoad()
+    * Stop loading of any stream data.
     */
   def stopLoad(): Unit = js.native
   
-  /**
-    * (default: false)
-    * get/set : if set to true the active subtitle track mode will be set to showing and the browser will display the active subtitles.
-    * If set to false, the mode will be set to hidden.
-    */
-  var subtitleDisplay: Boolean = js.native
+  /* private */ var streamController: Any = js.native
   
   /**
-    * get/set : subtitle track id (returned by).
-    * Returns -1 if no track is visible.
-    * Set to -1 to hide all subtitle tracks.
+    * @type {boolean}
     */
-  var subtitleTrack: Double = js.native
+  def subtitleDisplay: Boolean = js.native
+  /**
+    * Enable/disable subtitle display rendering
+    * @type {boolean}
+    */
+  def subtitleDisplay_=(value: Boolean): Unit = js.native
   
   /**
-    * get : array of subtitle tracks exposed in manifest
+    * index of the selected subtitle track (index in subtitle track lists)
+    * @type {number}
     */
-  val subtitleTracks: js.Array[SubtitleTrack] = js.native
+  def subtitleTrack: Double = js.native
+  
+  /* private */ var subtitleTrackController: Any = js.native
   
   /**
-    * if media error are still raised after calling hls.recoverMediaError(), calling this method, could be useful to workaround audio codec mismatch.
-    * the workflow should be:
-    *  on First Media Error : call hls.recoverMediaError()
-    *  if another Media Error is raised 'quickly' after this first Media Error : first call hls.swapAudioCodec(), then call hls.recoverMediaError()
+    * select an subtitle track, based on its index in subtitle track lists
+    * @type {number}
+    */
+  def subtitleTrack_=(subtitleTrackId: Double): Unit = js.native
+  
+  /**
+    * get alternate subtitle tracks list from playlist
+    * @type {MediaPlaylist[]}
+    */
+  def subtitleTracks: js.Array[MediaPlaylist] = js.native
+  
+  /**
+    * Swap through possible audio codecs in the stream (for example to switch from stereo to 5.1)
     */
   def swapAudioCodec(): Unit = js.native
+  
+  /**
+    * target distance from the edge as calculated by the latency controller
+    * @type {number}
+    */
+  def targetLatency: Double | Null = js.native
+  
+  @JSName("trigger")
+  def trigger_1[E /* <: /* keyof hls.js.hls.js.HlsListeners */ String */](
+    event: E,
+    eventObject: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<hls.js.hls.js.HlsListeners[E]>[1] */ js.Any
+  ): Boolean = js.native
+  
+  /* private */ var url: Any = js.native
+  
+  val userConfig: PartialHlsConfig = js.native
 }

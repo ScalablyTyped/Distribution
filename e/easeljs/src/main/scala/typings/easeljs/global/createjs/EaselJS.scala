@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.EaselJS")
 @js.native
-class EaselJS ()
+open class EaselJS ()
   extends StObject
      with typings.easeljs.createjs.EaselJS
 /* static members */

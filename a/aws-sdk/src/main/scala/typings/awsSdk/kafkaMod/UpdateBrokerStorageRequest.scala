@@ -42,6 +42,6 @@ object UpdateBrokerStorageRequest {
     
     inline def setTargetBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
     
-    inline def setTargetBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", js.Array(value :_*))
+    inline def setTargetBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", js.Array(value*))
   }
 }

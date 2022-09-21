@@ -13,7 +13,7 @@ object cardFooterNativeMod {
   
   @JSImport("antd-mobile-rn/lib/card/CardFooter.native", JSImport.Default)
   @js.native
-  class default () extends CardFooter
+  open class default () extends CardFooter
   /* static members */
   object default {
     
@@ -28,8 +28,7 @@ object cardFooterNativeMod {
   }
   
   @js.native
-  trait CardFooter
-    extends Component[CardFooterProps, js.Any, js.Any]
+  trait CardFooter extends Component[CardFooterProps, Any, Any]
   
   trait CardFooterProps
     extends StObject
@@ -37,7 +36,7 @@ object cardFooterNativeMod {
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
   }
   object CardFooterProps {
     
@@ -54,7 +53,7 @@ object cardFooterNativeMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }

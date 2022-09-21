@@ -61,7 +61,7 @@ object ScheduleInformation {
     
     inline def setScheduleItemsUndefined: Self = StObject.set(x, "scheduleItems", js.undefined)
     
-    inline def setScheduleItemsVarargs(value: ScheduleItem*): Self = StObject.set(x, "scheduleItems", js.Array(value :_*))
+    inline def setScheduleItemsVarargs(value: ScheduleItem*): Self = StObject.set(x, "scheduleItems", js.Array(value*))
     
     inline def setWorkingHours(value: NullableOption[WorkingHours]): Self = StObject.set(x, "workingHours", value.asInstanceOf[js.Any])
     

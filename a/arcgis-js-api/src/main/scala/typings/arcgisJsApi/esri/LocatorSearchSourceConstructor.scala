@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LocatorSearchSourceConstructor
   extends StObject
-     with Instantiable0[LocatorSearchSource]
+     with /**
+  * The following properties define a [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources) pointing to a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#url) that represents a locator service, which may be used to geocode locations with a [Search](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html) widget instance.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html)
+  */
+Instantiable0[LocatorSearchSource]
      with Instantiable1[/* properties */ LocatorSearchSourceProperties, LocatorSearchSource] {
   
-  def fromJSON(json: js.Any): LocatorSearchSource = js.native
+  def fromJSON(json: Any): LocatorSearchSource = js.native
 }

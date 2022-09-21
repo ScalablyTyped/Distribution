@@ -2,13 +2,13 @@ package typings.serveIndex
 
 import typings.express.mod.Handler
 import typings.node.fsMod.Stats
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  /** Serves pages that contain directory listings for a given path. */
   inline def apply(path: String): Handler = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Handler]
   inline def apply(path: String, options: Options): Handler = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
@@ -79,7 +79,7 @@ object mod {
       
       inline def setFileList(value: js.Array[File]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
       
-      inline def setFileListVarargs(value: File*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+      inline def setFileListVarargs(value: File*): Self = StObject.set(x, "fileList", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -112,7 +112,7 @@ object mod {
     var stylesheet: js.UndefOr[String] = js.undefined
     
     var template: js.UndefOr[
-        String | (js.Function2[/* locals */ Locals, /* callback */ templateCallback, Unit])
+        String | (js.Function2[/* locals */ Locals, /* callback */ TemplateCallback, Unit])
       ] = js.undefined
     
     var view: js.UndefOr[String] = js.undefined
@@ -144,9 +144,9 @@ object mod {
       
       inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
       
-      inline def setTemplate(value: String | (js.Function2[/* locals */ Locals, /* callback */ templateCallback, Unit])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String | (js.Function2[/* locals */ Locals, /* callback */ TemplateCallback, Unit])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setTemplateFunction2(value: (/* locals */ Locals, /* callback */ templateCallback) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+      inline def setTemplateFunction2(value: (/* locals */ Locals, /* callback */ TemplateCallback) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
@@ -156,5 +156,5 @@ object mod {
     }
   }
   
-  type templateCallback = js.Function2[/* error */ Error, /* htmlString */ js.UndefOr[String], Unit]
+  type TemplateCallback = js.Function2[/* error */ js.Error | Null, /* htmlString */ js.UndefOr[String], Unit]
 }

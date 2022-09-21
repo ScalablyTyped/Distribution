@@ -19,11 +19,14 @@ trait SetDetails extends StObject {
   var secondaryPattern: js.UndefOr[String] = js.undefined
   
   /** The setting applied by this rule. See the description of the individual ContentSetting objects for the possible values. */
-  var setting: js.Any
+  var setting: typings.chrome.chrome.contentSettings.DefaultContentSettingDetails
 }
 object SetDetails {
   
-  inline def apply(primaryPattern: String, setting: js.Any): SetDetails = {
+  inline def apply(
+    primaryPattern: String,
+    setting: typings.chrome.chrome.contentSettings.DefaultContentSettingDetails
+  ): SetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDetails]
   }
@@ -44,6 +47,6 @@ object SetDetails {
     
     inline def setSecondaryPatternUndefined: Self = StObject.set(x, "secondaryPattern", js.undefined)
     
-    inline def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: typings.chrome.chrome.contentSettings.DefaultContentSettingDetails): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

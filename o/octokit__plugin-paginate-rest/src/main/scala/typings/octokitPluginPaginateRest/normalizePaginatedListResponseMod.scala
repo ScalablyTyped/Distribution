@@ -11,5 +11,5 @@ object normalizePaginatedListResponseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def normalizePaginatedListResponse(response: OctokitResponse[js.Any]): OctokitResponse[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePaginatedListResponse")(response.asInstanceOf[js.Any]).asInstanceOf[OctokitResponse[js.Any]]
+  inline def normalizePaginatedListResponse(response: OctokitResponse[Any, Double]): OctokitResponse[Any, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePaginatedListResponse")(response.asInstanceOf[js.Any]).asInstanceOf[OctokitResponse[Any, Double]]
 }

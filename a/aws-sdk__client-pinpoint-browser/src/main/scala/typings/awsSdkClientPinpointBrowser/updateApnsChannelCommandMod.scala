@@ -16,7 +16,7 @@ object updateApnsChannelCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateApnsChannelCommand", "UpdateApnsChannelCommand")
   @js.native
-  class UpdateApnsChannelCommand protected ()
+  open class UpdateApnsChannelCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateApnsChannelCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateApnsChannelInput, UpdateApnsChannelOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateApnsChannelInput, UpdateApnsChannelOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateApnsChannelInput, UpdateApnsChannelOutput] = js.native
   }
 }

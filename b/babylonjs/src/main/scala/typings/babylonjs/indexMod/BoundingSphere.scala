@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "BoundingSphere")
 @js.native
-class BoundingSphere protected ()
+open class BoundingSphere protected ()
   extends typings.babylonjs.cullingIndexMod.BoundingSphere {
   /**
     * Creates a new bounding sphere
@@ -33,17 +33,31 @@ object BoundingSphere {
   val ^ : js.Any = js.native
   
   /**
-    * Checks if two sphere intersct
+    * Creates a sphere from a center and a radius
+    * @param center The center
+    * @param radius radius
+    * @param matrix Optional worldMatrix
+    * @returns The sphere
+    */
+  inline def CreateFromCenterAndRadius(center: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3], radius: Double): typings.babylonjs.boundingSphereMod.BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.boundingSphereMod.BoundingSphere]
+  inline def CreateFromCenterAndRadius(
+    center: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
+    radius: Double,
+    matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]
+  ): typings.babylonjs.boundingSphereMod.BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.boundingSphereMod.BoundingSphere]
+  
+  /**
+    * Checks if two sphere intersect
     * @param sphere0 sphere 0
     * @param sphere1 sphere 1
-    * @returns true if the speres intersect
+    * @returns true if the spheres intersect
     */
   inline def Intersects(
     sphere0: DeepImmutable[typings.babylonjs.boundingSphereMod.BoundingSphere],
     sphere1: DeepImmutable[typings.babylonjs.boundingSphereMod.BoundingSphere]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(sphere0.asInstanceOf[js.Any], sphere1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("babylonjs/index", "BoundingSphere.TmpVector3")
+  @JSImport("babylonjs/index", "BoundingSphere._TmpVector3")
   @js.native
-  val TmpVector3: js.Any = js.native
+  val _TmpVector3: Any = js.native
 }

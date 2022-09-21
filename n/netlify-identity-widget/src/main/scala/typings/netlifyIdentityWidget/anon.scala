@@ -36,14 +36,14 @@ object anon {
   
   trait Avatarurl extends StObject {
     
-    var avatar_url: String
+    var avatar_url: js.UndefOr[String] = js.undefined
     
-    var full_name: String
+    var full_name: js.UndefOr[String] = js.undefined
   }
   object Avatarurl {
     
-    inline def apply(avatar_url: String, full_name: String): Avatarurl = {
-      val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any])
+    inline def apply(): Avatarurl = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Avatarurl]
     }
     
@@ -51,7 +51,11 @@ object anon {
       
       inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
+      inline def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
+      
       inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      
+      inline def setFull_nameUndefined: Self = StObject.set(x, "full_name", js.undefined)
     }
   }
   
@@ -74,7 +78,7 @@ object anon {
       
       inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
     }
   }
 }

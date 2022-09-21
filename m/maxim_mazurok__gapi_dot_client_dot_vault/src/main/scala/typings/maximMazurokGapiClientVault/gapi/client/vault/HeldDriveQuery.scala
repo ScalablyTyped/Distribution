@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeldDriveQuery extends StObject {
   
-  /** If true, include files in shared drives in the hold. */
+  /** To include files in shared drives in the hold, set to **true**. */
   var includeSharedDriveFiles: js.UndefOr[Boolean] = js.undefined
   
-  /** If true, include files in Team Drives in the hold. */
+  /** To include files in Team Drives in the hold, set to **true**. */
   var includeTeamDriveFiles: js.UndefOr[Boolean] = js.undefined
 }
 object HeldDriveQuery {

@@ -14,7 +14,7 @@ object emitterMapMod {
   
   @JSImport("openfin/_v2/api/events/emitterMap", "EmitterMap")
   @js.native
-  class EmitterMap () extends StObject {
+  open class EmitterMap () extends StObject {
     
     def delete(keys: EmitterAccessor): Boolean = js.native
     
@@ -22,9 +22,9 @@ object emitterMapMod {
     
     def has(keys: EmitterAccessor): Boolean = js.native
     
-    /* private */ var hashKeys: js.Any = js.native
+    /* private */ var hashKeys: Any = js.native
     
-    /* private */ var storage: js.Any = js.native
+    /* private */ var storage: Any = js.native
   }
   
   type ApplicationEmitterAccessor = js.Tuple2[application, String]

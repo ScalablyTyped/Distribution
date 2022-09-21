@@ -8,7 +8,7 @@ trait CodeActionContext extends StObject {
   
   /**
     * An array of diagnostics known on the client side overlapping the range provided to the
-    * `textDocument/codeAction` request. They are provied so that the server knows which
+    * `textDocument/codeAction` request. They are provided so that the server knows which
     * errors are currently presented to the user for the given range. There is no guarantee
     * that these accurately reflect the error state of the resource. The primary parameter
     * to compute code actions is the provided range.
@@ -22,6 +22,13 @@ trait CodeActionContext extends StObject {
     * can omit computing them.
     */
   var only: js.UndefOr[js.Array[CodeActionKind]] = js.undefined
+  
+  /**
+    * The reason why code actions were requested.
+    *
+    * @since 3.17.0
+    */
+  var triggerKind: js.UndefOr[CodeActionTriggerKind] = js.undefined
 }
 object CodeActionContext {
   
@@ -39,22 +46,32 @@ object CodeActionContext {
     */
   inline def create(diagnostics: js.Array[Diagnostic]): CodeActionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any]).asInstanceOf[CodeActionContext]
   inline def create(diagnostics: js.Array[Diagnostic], only: js.Array[CodeActionKind]): CodeActionContext = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any], only.asInstanceOf[js.Any])).asInstanceOf[CodeActionContext]
+  inline def create(
+    diagnostics: js.Array[Diagnostic],
+    only: js.Array[CodeActionKind],
+    triggerKind: CodeActionTriggerKind
+  ): CodeActionContext = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any], only.asInstanceOf[js.Any], triggerKind.asInstanceOf[js.Any])).asInstanceOf[CodeActionContext]
+  inline def create(diagnostics: js.Array[Diagnostic], only: Unit, triggerKind: CodeActionTriggerKind): CodeActionContext = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any], only.asInstanceOf[js.Any], triggerKind.asInstanceOf[js.Any])).asInstanceOf[CodeActionContext]
   
   /**
     * Checks whether the given literal conforms to the [CodeActionContext](#CodeActionContext) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean]
   
   extension [Self <: CodeActionContext](x: Self) {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setOnly(value: js.Array[CodeActionKind]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
     inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
-    inline def setOnlyVarargs(value: CodeActionKind*): Self = StObject.set(x, "only", js.Array(value :_*))
+    inline def setOnlyVarargs(value: CodeActionKind*): Self = StObject.set(x, "only", js.Array(value*))
+    
+    inline def setTriggerKind(value: CodeActionTriggerKind): Self = StObject.set(x, "triggerKind", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerKindUndefined: Self = StObject.set(x, "triggerKind", js.undefined)
   }
 }

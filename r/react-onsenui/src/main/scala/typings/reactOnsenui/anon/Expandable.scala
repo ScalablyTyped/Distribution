@@ -3,11 +3,14 @@ package typings.reactOnsenui.anon
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Expandable extends StObject {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var expandable: js.UndefOr[Boolean] = js.undefined
   
@@ -17,7 +20,7 @@ trait Expandable extends StObject {
   
   var modifier: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[Any]] = js.undefined
   
   var tapBackgroundColor: js.UndefOr[String] = js.undefined
   
@@ -31,6 +34,10 @@ object Expandable {
   }
   
   extension [Self <: Expandable](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     
@@ -48,7 +55,7 @@ object Expandable {
     
     inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    inline def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     

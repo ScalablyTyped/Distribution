@@ -1,34 +1,77 @@
 package typings.reactNavigationNative
 
-import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.ForwardRefExoticComponent
-import typings.reactNavigationNative.anon.NavigationContainerPropst
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
+import typings.reactNavigationCore.typesMod.NavigationContainerProps
+import typings.reactNavigationCore.typesMod.NavigationContainerRef
+import typings.reactNavigationNative.anon.DocumentTitle
+import typings.reactNavigationNative.anon.Linking
+import typings.reactNavigationNative.typesMod.DocumentTitleOptions
+import typings.reactNavigationNative.typesMod.LinkingOptions
+import typings.reactNavigationNative.typesMod.Theme
+import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object navigationContainerMod extends Shortcut {
+object navigationContainerMod {
   
-  /**
-    * Container component which holds the navigation state designed for React Native apps.
-    * This should be rendered at the root wrapping the whole app.
-    *
-    * @param props.initialState Initial state object for the navigation tree. When deep link handling is enabled, this will override deep links when specified. Make sure that you don't specify an `initialState` when there's a deep link (`Linking.getInitialURL()`).
-    * @param props.onReady Callback which is called after the navigation tree mounts.
-    * @param props.onStateChange Callback which is called with the latest navigation state when it changes.
-    * @param props.theme Theme object for the navigators.
-    * @param props.linking Options for deep linking. Deep link handling is enabled when this prop is provided, unless `linking.enabled` is `false`.
-    * @param props.fallback Fallback component to render until we have finished getting initial state when linking is enabled. Defaults to `null`.
-    * @param props.documentTitle Options to configure the document title on Web. Updating document title is handled by default unless `documentTitle.enabled` is `false`.
-    * @param props.children Child elements to render the content.
-    * @param props.ref Ref object which refers to the navigation object containing helper methods.
-    */
-  @JSImport("@react-navigation/native/lib/typescript/src/NavigationContainer", JSImport.Default)
+  @JSImport("@react-navigation/native/lib/typescript/src/NavigationContainer", JSImport.Namespace)
   @js.native
-  val default: ForwardRefExoticComponent[NavigationContainerPropst] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ForwardRefExoticComponent[NavigationContainerPropst]
+  inline def default[RootParamList /* <: js.Object */](props: DocumentTitle[RootParamList] & NavigationContainerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  /* This means you don't have to write `default`, but can instead just say `navigationContainerMod.foo` */
-  override def _to: ForwardRefExoticComponent[NavigationContainerPropst] = default
+  object global {
+    
+    @JSGlobal("REACT_NAVIGATION_DEVTOOLS")
+    @js.native
+    def REACT_NAVIGATION_DEVTOOLS: WeakMap[NavigationContainerRef[Any], Linking] = js.native
+    inline def REACT_NAVIGATION_DEVTOOLS_=(x: WeakMap[NavigationContainerRef[Any], Linking]): Unit = js.Dynamic.global.updateDynamic("REACT_NAVIGATION_DEVTOOLS")(x.asInstanceOf[js.Any])
+  }
+  
+  trait Props[ParamList /* <: js.Object */]
+    extends StObject
+       with NavigationContainerProps {
+    
+    var documentTitle: js.UndefOr[DocumentTitleOptions] = js.undefined
+    
+    var fallback: js.UndefOr[ReactNode] = js.undefined
+    
+    var linking: js.UndefOr[LinkingOptions[ParamList]] = js.undefined
+    
+    var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var theme: js.UndefOr[Theme] = js.undefined
+  }
+  object Props {
+    
+    inline def apply[ParamList /* <: js.Object */](): Props[ParamList] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Props[ParamList]]
+    }
+    
+    extension [Self <: Props[?], ParamList /* <: js.Object */](x: Self & Props[ParamList]) {
+      
+      inline def setDocumentTitle(value: DocumentTitleOptions): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentTitleUndefined: Self = StObject.set(x, "documentTitle", js.undefined)
+      
+      inline def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      
+      inline def setLinking(value: LinkingOptions[ParamList]): Self = StObject.set(x, "linking", value.asInstanceOf[js.Any])
+      
+      inline def setLinkingUndefined: Self = StObject.set(x, "linking", js.undefined)
+      
+      inline def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+      
+      inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+      
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    }
+  }
 }

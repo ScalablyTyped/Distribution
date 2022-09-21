@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "MinRowCountError")
 @js.native
-class MinRowCountError protected () extends SurveyError {
+open class MinRowCountError protected () extends SurveyError {
   def this(minRowCount: Double) = this()
   def this(minRowCount: Double, errorOwner: ISurveyErrorOwner) = this()
   

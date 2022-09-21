@@ -32,7 +32,10 @@ trait DeviceCompliancePolicy
   // DateTime the object was last modified.
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
-  // The list of scheduled action for this rule
+  /**
+    * The list of scheduled action per rule for this compliance policy. This is a required property when creating any
+    * individual per-platform compliance policies.
+    */
   var scheduledActionsForRule: js.UndefOr[NullableOption[js.Array[DeviceComplianceScheduledActionForRule]]] = js.undefined
   
   // Device compliance users status overview
@@ -59,7 +62,7 @@ object DeviceCompliancePolicy {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: DeviceCompliancePolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: DeviceCompliancePolicyAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
@@ -77,7 +80,7 @@ object DeviceCompliancePolicy {
     
     inline def setDeviceSettingStateSummariesUndefined: Self = StObject.set(x, "deviceSettingStateSummaries", js.undefined)
     
-    inline def setDeviceSettingStateSummariesVarargs(value: SettingStateDeviceSummary*): Self = StObject.set(x, "deviceSettingStateSummaries", js.Array(value :_*))
+    inline def setDeviceSettingStateSummariesVarargs(value: SettingStateDeviceSummary*): Self = StObject.set(x, "deviceSettingStateSummaries", js.Array(value*))
     
     inline def setDeviceStatusOverview(value: NullableOption[DeviceComplianceDeviceOverview]): Self = StObject.set(x, "deviceStatusOverview", value.asInstanceOf[js.Any])
     
@@ -91,7 +94,7 @@ object DeviceCompliancePolicy {
     
     inline def setDeviceStatusesUndefined: Self = StObject.set(x, "deviceStatuses", js.undefined)
     
-    inline def setDeviceStatusesVarargs(value: DeviceComplianceDeviceStatus*): Self = StObject.set(x, "deviceStatuses", js.Array(value :_*))
+    inline def setDeviceStatusesVarargs(value: DeviceComplianceDeviceStatus*): Self = StObject.set(x, "deviceStatuses", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -107,7 +110,7 @@ object DeviceCompliancePolicy {
     
     inline def setScheduledActionsForRuleUndefined: Self = StObject.set(x, "scheduledActionsForRule", js.undefined)
     
-    inline def setScheduledActionsForRuleVarargs(value: DeviceComplianceScheduledActionForRule*): Self = StObject.set(x, "scheduledActionsForRule", js.Array(value :_*))
+    inline def setScheduledActionsForRuleVarargs(value: DeviceComplianceScheduledActionForRule*): Self = StObject.set(x, "scheduledActionsForRule", js.Array(value*))
     
     inline def setUserStatusOverview(value: NullableOption[DeviceComplianceUserOverview]): Self = StObject.set(x, "userStatusOverview", value.asInstanceOf[js.Any])
     
@@ -121,7 +124,7 @@ object DeviceCompliancePolicy {
     
     inline def setUserStatusesUndefined: Self = StObject.set(x, "userStatuses", js.undefined)
     
-    inline def setUserStatusesVarargs(value: DeviceComplianceUserStatus*): Self = StObject.set(x, "userStatuses", js.Array(value :_*))
+    inline def setUserStatusesVarargs(value: DeviceComplianceUserStatus*): Self = StObject.set(x, "userStatuses", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

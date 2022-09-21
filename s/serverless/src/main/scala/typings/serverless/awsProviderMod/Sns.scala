@@ -1,6 +1,6 @@
 package typings.serverless.awsProviderMod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait Sns extends StObject {
   
   var displayName: js.UndefOr[String] = js.undefined
   
-  var filterPolicy: js.UndefOr[js.Array[String] | StringDictionary[String]] = js.undefined
+  var filterPolicy: js.UndefOr[Record[String, Any]] = js.undefined
   
   var redrivePolicy: js.UndefOr[RedrivePolicy] = js.undefined
   
@@ -34,11 +34,9 @@ object Sns {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    inline def setFilterPolicy(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "filterPolicy", value.asInstanceOf[js.Any])
+    inline def setFilterPolicy(value: Record[String, Any]): Self = StObject.set(x, "filterPolicy", value.asInstanceOf[js.Any])
     
     inline def setFilterPolicyUndefined: Self = StObject.set(x, "filterPolicy", js.undefined)
-    
-    inline def setFilterPolicyVarargs(value: String*): Self = StObject.set(x, "filterPolicy", js.Array(value :_*))
     
     inline def setRedrivePolicy(value: RedrivePolicy): Self = StObject.set(x, "redrivePolicy", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object DBInstanceMessage {
     
     inline def setDBInstancesUndefined: Self = StObject.set(x, "DBInstances", js.undefined)
     
-    inline def setDBInstancesVarargs(value: DBInstance*): Self = StObject.set(x, "DBInstances", js.Array(value :_*))
+    inline def setDBInstancesVarargs(value: DBInstance*): Self = StObject.set(x, "DBInstances", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

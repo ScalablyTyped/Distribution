@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrdersUpdateMerchantOrderIdRequest extends StObject {
   
   /**
-    * The merchant order id to be assigned to the order. Must be unique per
-    * merchant.
+    * The merchant order id to be assigned to the order. Must be unique per merchant.
     */
-  var merchantOrderId: js.UndefOr[String] = js.undefined
+  var merchantOrderId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the operation. Unique across all operations for a given order.
     */
-  var operationId: js.UndefOr[String] = js.undefined
+  var operationId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrdersUpdateMerchantOrderIdRequest {
   
@@ -28,9 +27,13 @@ object SchemaOrdersUpdateMerchantOrderIdRequest {
     
     inline def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
     
+    inline def setMerchantOrderIdNull: Self = StObject.set(x, "merchantOrderId", null)
+    
     inline def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    
+    inline def setOperationIdNull: Self = StObject.set(x, "operationId", null)
     
     inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
   }

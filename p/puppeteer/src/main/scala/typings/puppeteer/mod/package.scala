@@ -1,68 +1,74 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
+import typings.puppeteer.mod.^
+import typings.std.Capitalize
+import typings.std.Element
+import typings.std.Lowercase
+import typings.std.Uppercase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def clearCustomQueryHandlers(): scala.Unit = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearCustomQueryHandlers")().asInstanceOf[scala.Unit]
+inline def DEFAULT_INTERCEPT_RESOLUTION_PRIORITY: /* 0 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_INTERCEPT_RESOLUTION_PRIORITY").asInstanceOf[/* 0 */ Double]
 
-inline def connect(): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
-inline def connect(options: typings.puppeteer.mod.ConnectOptions): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
+inline def EVALUATION_SCRIPT_URL: /* "pptr://__puppeteer_evaluation_script__" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("EVALUATION_SCRIPT_URL").asInstanceOf[/* "pptr://__puppeteer_evaluation_script__" */ String]
 
-inline def createBrowserFetcher(): typings.puppeteer.mod.BrowserFetcher = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")().asInstanceOf[typings.puppeteer.mod.BrowserFetcher]
-inline def createBrowserFetcher(options: typings.puppeteer.mod.FetcherOptions): typings.puppeteer.mod.BrowserFetcher = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")(options.asInstanceOf[js.Any]).asInstanceOf[typings.puppeteer.mod.BrowserFetcher]
+inline def clearCustomQueryHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCustomQueryHandlers")().asInstanceOf[Unit]
 
-inline def customQueryHandlerNames(): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("customQueryHandlerNames")().asInstanceOf[js.Array[java.lang.String]]
+inline def connect(options: ConnectOptions): js.Promise[Browser] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Browser]]
 
-inline def defaultArgs(): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")().asInstanceOf[js.Array[java.lang.String]]
-inline def defaultArgs(options: typings.puppeteer.mod.ChromeArgOptions): js.Array[java.lang.String] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
+inline def createBrowserFetcher(options: BrowserFetcherOptions): BrowserFetcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserFetcher]
 
-inline def executablePath(): java.lang.String = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")().asInstanceOf[java.lang.String]
+inline def customQueryHandlerNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("customQueryHandlerNames")().asInstanceOf[js.Array[String]]
 
-inline def launch(): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
-inline def launch(options: typings.puppeteer.mod.LaunchOptions): js.Promise[typings.puppeteer.mod.Browser] = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("launch")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.puppeteer.mod.Browser]]
+inline def defaultArgs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")().asInstanceOf[js.Array[String]]
+inline def defaultArgs(options: BrowserLaunchArgumentOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 
-inline def product: typings.puppeteer.mod.Product_ = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].selectDynamic("product").asInstanceOf[typings.puppeteer.mod.Product_]
+inline def devices: DevicesMap = ^.asInstanceOf[js.Dynamic].selectDynamic("devices").asInstanceOf[DevicesMap]
 
-inline def registerCustomQueryHandler(name: java.lang.String, queryHandler: typings.puppeteer.mod.CustomQueryHandler): scala.Unit = (typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerCustomQueryHandler")(name.asInstanceOf[js.Any], queryHandler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def executablePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")().asInstanceOf[String]
+inline def executablePath(channel: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def unregisterCustomQueryHandler(name: java.lang.String): scala.Unit = typings.puppeteer.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCustomQueryHandler")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def launch(): js.Promise[Browser] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[Browser]]
+inline def launch(options: PuppeteerLaunchOptions): js.Promise[Browser] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Browser]]
 
-type CustomError = typings.std.Error
+inline def registerCustomQueryHandler(name: String, handler: CustomQueryHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustomQueryHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-type EvaluateFn[T] = java.lang.String | (js.Function2[/* arg1 */ T, /* repeated */ js.Any, js.Any])
+inline def unregisterCustomQueryHandler(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCustomQueryHandler")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-type EvaluateFnReturnType[T /* <: typings.puppeteer.mod.EvaluateFn[js.Any] */] = js.Any
+type Awaitable[T] = T | js.Thenable[T]
 
-type EventType = java.lang.String | js.Symbol
+type DevicesMap = StringDictionary[Device]
 
-type Handler[T] = js.Function1[/* event */ js.UndefOr[T], scala.Unit]
+type EvaluateFunc[T /* <: js.Array[Any] */] = js.Function1[/* params */ InnerParams[T], Awaitable[Any]]
 
-type Headers = typings.std.Record[java.lang.String, java.lang.String]
+type EventType = String | js.Symbol
 
-type LayoutDimension = java.lang.String | scala.Double
+type FlattenHandle[T] = Any
 
 /* Rewritten from type alias, can be one of: 
-  - scala.Double
-  - java.lang.String
-  - scala.Boolean
-  - scala.Null
-  - typings.puppeteer.mod.JSONArray
-  - typings.puppeteer.mod.JSONObject
+  - typings.puppeteer.mod.HandleFor[T]
+  - typings.puppeteer.mod.JSHandle[T]
+  - T
 */
-type Serializable = typings.puppeteer.mod._Serializable | scala.Double | java.lang.String | scala.Boolean | scala.Null
+type HandleOr[T] = _HandleOr[T] | T
 
-type SerializableOrJSHandle = typings.puppeteer.mod.Serializable | typings.puppeteer.mod.JSHandle[js.Any]
+type Handler[T] = js.Function1[/* event */ js.UndefOr[T], Unit]
 
-/**
-  * TimeoutError is emitted whenever certain operations are terminated due to timeout.
-  *
-  * Example operations are {@link Page.waitForSelector | page.waitForSelector}
-  * or {@link PuppeteerNode.launch | puppeteer.launch}.
-  */
-type TimeoutError = typings.puppeteer.mod.CustomError
+type InnerParams[T /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ K in keyof T ]: puppeteer.puppeteer.FlattenHandle<T[K]>}
+  */ typings.puppeteer.puppeteerStrings.InnerParams & TopLevel[T]
 
-type UnwrapElementHandle[X] = X
+type InterceptResolutionStrategy = InterceptResolutionAction
 
-type WrapElementHandle[X] = X | typings.puppeteer.mod.ElementHandle[X]
+type NodeFor[Selector /* <: String */] = Element | (/* import warning: importer.ImportType#apply Failed type conversion: std.SVGElementTagNameMap[Selector] */ js.Any)
+
+type PaperFormat = Uppercase[LowerCasePaperFormat] | Capitalize[LowerCasePaperFormat] | LowerCasePaperFormat
+
+type ResourceType = Lowercase[typings.devtoolsProtocol.mod.Protocol.Network.ResourceType]
+
+type TargetFilterCallback = js.Function1[/* target */ TargetInfo, Boolean]

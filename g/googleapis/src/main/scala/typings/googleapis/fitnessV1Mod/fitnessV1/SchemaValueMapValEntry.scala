@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaValueMapValEntry extends StObject {
   
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Null] = js.undefined
   
   var value: js.UndefOr[SchemaMapValue] = js.undefined
 }
@@ -20,6 +20,8 @@ object SchemaValueMapValEntry {
   extension [Self <: SchemaValueMapValEntry](x: Self) {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     

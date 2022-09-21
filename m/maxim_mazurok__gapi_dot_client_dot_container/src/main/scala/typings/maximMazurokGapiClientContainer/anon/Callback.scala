@@ -25,11 +25,11 @@ trait Callback extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /** The name (project, location, operation id) of the operation to cancel. Specified in the format `projects/ *‍/locations/ *‍/operations/ *`. */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** The cluster (project, location, cluster id) to get keys for. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -45,8 +45,8 @@ trait Callback extends StObject {
 }
 object Callback {
   
-  inline def apply(parent: String): Callback = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(name: String): Callback = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Callback]
   }
   
@@ -76,11 +76,11 @@ object Callback {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

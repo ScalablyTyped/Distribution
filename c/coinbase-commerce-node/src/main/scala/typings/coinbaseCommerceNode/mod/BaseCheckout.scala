@@ -52,6 +52,6 @@ object BaseCheckout {
     
     inline def setRequested_infoUndefined: Self = StObject.set(x, "requested_info", js.undefined)
     
-    inline def setRequested_infoVarargs(value: (email | name)*): Self = StObject.set(x, "requested_info", js.Array(value :_*))
+    inline def setRequested_infoVarargs(value: (email | name)*): Self = StObject.set(x, "requested_info", js.Array(value*))
   }
 }

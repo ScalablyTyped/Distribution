@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  inline def apply(): Links | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Links | Null]
   inline def apply(linkHeader: String): Links | Null = ^.asInstanceOf[js.Dynamic].apply(linkHeader.asInstanceOf[js.Any]).asInstanceOf[Links | Null]
   
   @JSImport("parse-link-header", JSImport.Namespace)

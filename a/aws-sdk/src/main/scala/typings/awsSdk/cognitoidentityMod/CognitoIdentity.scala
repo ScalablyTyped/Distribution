@@ -124,12 +124,12 @@ trait CognitoIdentity extends Service {
   ): Request[GetIdentityPoolRolesResponse, AWSError] = js.native
   
   /**
-    * Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by GetId. You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link. The OpenId token is valid for 10 minutes. This is a public API. You do not need any credentials to call this API.
+    * Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by GetId. You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link. The OpenID token is valid for 10 minutes. This is a public API. You do not need any credentials to call this API.
     */
   def getOpenIdToken(): Request[GetOpenIdTokenResponse, AWSError] = js.native
   def getOpenIdToken(callback: js.Function2[/* err */ AWSError, /* data */ GetOpenIdTokenResponse, Unit]): Request[GetOpenIdTokenResponse, AWSError] = js.native
   /**
-    * Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by GetId. You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link. The OpenId token is valid for 10 minutes. This is a public API. You do not need any credentials to call this API.
+    * Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by GetId. You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link. The OpenID token is valid for 10 minutes. This is a public API. You do not need any credentials to call this API.
     */
   def getOpenIdToken(params: GetOpenIdTokenInput): Request[GetOpenIdTokenResponse, AWSError] = js.native
   def getOpenIdToken(
@@ -152,6 +152,20 @@ trait CognitoIdentity extends Service {
     params: GetOpenIdTokenForDeveloperIdentityInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOpenIdTokenForDeveloperIdentityResponse, Unit]
   ): Request[GetOpenIdTokenForDeveloperIdentityResponse, AWSError] = js.native
+  
+  /**
+    * Use GetPrincipalTagAttributeMap to list all mappings between PrincipalTags and user attributes.
+    */
+  def getPrincipalTagAttributeMap(): Request[GetPrincipalTagAttributeMapResponse, AWSError] = js.native
+  def getPrincipalTagAttributeMap(callback: js.Function2[/* err */ AWSError, /* data */ GetPrincipalTagAttributeMapResponse, Unit]): Request[GetPrincipalTagAttributeMapResponse, AWSError] = js.native
+  /**
+    * Use GetPrincipalTagAttributeMap to list all mappings between PrincipalTags and user attributes.
+    */
+  def getPrincipalTagAttributeMap(params: GetPrincipalTagAttributeMapInput): Request[GetPrincipalTagAttributeMapResponse, AWSError] = js.native
+  def getPrincipalTagAttributeMap(
+    params: GetPrincipalTagAttributeMapInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPrincipalTagAttributeMapResponse, Unit]
+  ): Request[GetPrincipalTagAttributeMapResponse, AWSError] = js.native
   
   /**
     * Lists the identities in an identity pool. You must use AWS Developer credentials to call this API.
@@ -238,12 +252,26 @@ trait CognitoIdentity extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Assigns a set of tags to an Amazon Cognito identity pool. A tag is a label that you can use to categorize and manage identity pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of an identity pool, one for testing and another for production, you might assign an Environment tag key to both identity pools. The value of this key might be Test for one identity pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your identity pools. In an IAM policy, you can constrain permissions for identity pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. An identity pool can have as many as 50 tags.
+    * You can use this operation to use default (username and clientID) attribute or custom attribute mappings.
+    */
+  def setPrincipalTagAttributeMap(): Request[SetPrincipalTagAttributeMapResponse, AWSError] = js.native
+  def setPrincipalTagAttributeMap(callback: js.Function2[/* err */ AWSError, /* data */ SetPrincipalTagAttributeMapResponse, Unit]): Request[SetPrincipalTagAttributeMapResponse, AWSError] = js.native
+  /**
+    * You can use this operation to use default (username and clientID) attribute or custom attribute mappings.
+    */
+  def setPrincipalTagAttributeMap(params: SetPrincipalTagAttributeMapInput): Request[SetPrincipalTagAttributeMapResponse, AWSError] = js.native
+  def setPrincipalTagAttributeMap(
+    params: SetPrincipalTagAttributeMapInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ SetPrincipalTagAttributeMapResponse, Unit]
+  ): Request[SetPrincipalTagAttributeMapResponse, AWSError] = js.native
+  
+  /**
+    * Assigns a set of tags to the specified Amazon Cognito identity pool. A tag is a label that you can use to categorize and manage identity pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of an identity pool, one for testing and another for production, you might assign an Environment tag key to both identity pools. The value of this key might be Test for one identity pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your identity pools. In an IAM policy, you can constrain permissions for identity pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. An identity pool can have as many as 50 tags.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Assigns a set of tags to an Amazon Cognito identity pool. A tag is a label that you can use to categorize and manage identity pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of an identity pool, one for testing and another for production, you might assign an Environment tag key to both identity pools. The value of this key might be Test for one identity pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your identity pools. In an IAM policy, you can constrain permissions for identity pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. An identity pool can have as many as 50 tags.
+    * Assigns a set of tags to the specified Amazon Cognito identity pool. A tag is a label that you can use to categorize and manage identity pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of an identity pool, one for testing and another for production, you might assign an Environment tag key to both identity pools. The value of this key might be Test for one identity pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your identity pools. In an IAM policy, you can constrain permissions for identity pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. An identity pool can have as many as 50 tags.
     */
   def tagResource(params: TagResourceInput): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -280,12 +308,12 @@ trait CognitoIdentity extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Removes the specified tags from an Amazon Cognito identity pool. You can use this action up to 5 times per second, per account
+    * Removes the specified tags from the specified Amazon Cognito identity pool. You can use this action up to 5 times per second, per account
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes the specified tags from an Amazon Cognito identity pool. You can use this action up to 5 times per second, per account
+    * Removes the specified tags from the specified Amazon Cognito identity pool. You can use this action up to 5 times per second, per account
     */
   def untagResource(params: UntagResourceInput): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(

@@ -12,7 +12,7 @@ trait GetThreatIntelSetResponse extends StObject {
   var Format: ThreatIntelSetFormat
   
   /**
-    * The URI of the file that contains the ThreatIntelSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
+    * The URI of the file that contains the ThreatIntelSet. 
     */
   var Location: typings.awsSdk.guarddutyMod.Location
   

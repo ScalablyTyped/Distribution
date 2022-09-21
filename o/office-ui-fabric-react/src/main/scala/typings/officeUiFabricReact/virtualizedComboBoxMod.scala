@@ -12,16 +12,16 @@ object virtualizedComboBoxMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ComboBox/VirtualizedComboBox", "VirtualizedComboBox")
   @js.native
-  class VirtualizedComboBox protected ()
-    extends Component[IComboBoxProps, js.Object, js.Any]
+  open class VirtualizedComboBox protected ()
+    extends Component[IComboBoxProps, js.Object, Any]
        with IComboBox {
     def this(props: IComboBoxProps) = this()
     
     /** The combo box element */
-    /* private */ var _comboBox: js.Any = js.native
+    /* private */ var _comboBox: Any = js.native
     
     /** The virtualized list element */
-    /* private */ var _list: js.Any = js.native
+    /* private */ var _list: Any = js.native
     
     /* protected */ def _onRenderList(props: IComboBoxProps): Element = js.native
     

@@ -44,15 +44,15 @@ object ExternalRenderer {
   
   extension [Self <: ExternalRenderer](x: Self) {
     
-    inline def setDispose(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
+    inline def setDispose(value: /* context */ js.UndefOr[RenderContext] => scala.Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
     inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
-    inline def setRender(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* context */ js.UndefOr[RenderContext] => scala.Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    inline def setSetup(value: /* context */ js.UndefOr[RenderContext] => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
+    inline def setSetup(value: /* context */ js.UndefOr[RenderContext] => scala.Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
     
     inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
   }

@@ -9,7 +9,7 @@ trait MorphTargetsBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _repeatableContentAnchor: js.Any = js.native
+  /* private */ var _repeatableContentAnchor: Any = js.native
   
   /**
     * Gets the normal input component

@@ -29,7 +29,7 @@ object GetCommentsForPullRequestOutput {
     
     inline def setCommentsForPullRequestDataUndefined: Self = StObject.set(x, "commentsForPullRequestData", js.undefined)
     
-    inline def setCommentsForPullRequestDataVarargs(value: CommentsForPullRequest*): Self = StObject.set(x, "commentsForPullRequestData", js.Array(value :_*))
+    inline def setCommentsForPullRequestDataVarargs(value: CommentsForPullRequest*): Self = StObject.set(x, "commentsForPullRequestData", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

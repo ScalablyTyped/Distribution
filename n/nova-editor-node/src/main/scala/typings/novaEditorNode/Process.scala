@@ -1,11 +1,13 @@
 package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/process/
+/// https://docs.nova.app/api-reference/process/
 // This could be improved to split into automatic pipe and jsonrpc types with
 // the appropriate methods enabled, but because stdio is configured within
 // options it feels like overkill
@@ -22,19 +24,13 @@ trait Process extends StObject {
   
   // see no-unnecessary-generics for why these aren't stricter
   def notify(methodName: String): Unit = js.native
-  def notify(methodName: String, params: js.Any): Unit = js.native
+  def notify(methodName: String, params: Any): Unit = js.native
   
   def onDidExit(callback: js.Function1[/* status */ Double, Unit]): Disposable = js.native
   
-  def onNotify(
-    methodName: String,
-    callback: js.Function1[/* message */ ProcessMessage[js.Any, js.Any, js.Any], Unit]
-  ): Disposable = js.native
+  def onNotify(methodName: String, callback: js.Function1[/* message */ ProcessMessage[Any, Any, Any], Unit]): Disposable = js.native
   
-  def onRequest(
-    methodName: String,
-    callback: js.Function1[/* message */ ProcessMessage[js.Any, js.Any, js.Any], js.Any]
-  ): Disposable = js.native
+  def onRequest(methodName: String, callback: js.Function1[/* message */ ProcessMessage[Any, Any, Any], Any]): Disposable = js.native
   
   def onStderr(callback: js.Function1[/* line */ String, Unit]): Disposable = js.native
   
@@ -42,27 +38,21 @@ trait Process extends StObject {
   
   val pid: Double = js.native
   
-  def request(methodName: String): js.Promise[js.Any] = js.native
-  def request(methodName: String, params: js.Any): js.Promise[js.Any] = js.native
+  def request(methodName: String): js.Promise[Any] = js.native
+  def request(methodName: String, params: Any): js.Promise[Any] = js.native
   
   def signal(signal: String): Unit = js.native
   def signal(signal: Double): Unit = js.native
   
   def start(): Unit = js.native
   
-  val stderr: js.UndefOr[ReadableStream[js.Any] | WritableStream[js.Any] | Null] = js.native
+  val stderr: ReadableStream[Any] | Null = js.native
   
-  val stdin: js.UndefOr[ReadableStream[js.Any] | WritableStream[js.Any] | Null] = js.native
+  val stdin: WritableStream[Any] | Null = js.native
   
-  val stdio: js.UndefOr[
-    js.Tuple3[
-      ReadableStream[js.Any] | WritableStream[js.Any] | Null, 
-      ReadableStream[js.Any] | WritableStream[js.Any] | Null, 
-      ReadableStream[js.Any] | WritableStream[js.Any] | Null
-    ]
-  ] = js.native
+  val stdio: js.Tuple3[WritableStream[Any] | Null, ReadableStream[Any] | Null, ReadableStream[Any] | Null] = js.native
   
-  val stdout: js.UndefOr[ReadableStream[js.Any] | WritableStream[js.Any] | Null] = js.native
+  val stdout: ReadableStream[Any] | Null = js.native
   
   def terminate(): Unit = js.native
 }

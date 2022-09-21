@@ -31,7 +31,7 @@ object GoogleCloudDatalabelingV1beta1OperatorMetadata {
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setLabelVotes(value: Double): Self = StObject.set(x, "labelVotes", value.asInstanceOf[js.Any])
     

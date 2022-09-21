@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/translation" : "3.4.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/translation" : "3.4.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

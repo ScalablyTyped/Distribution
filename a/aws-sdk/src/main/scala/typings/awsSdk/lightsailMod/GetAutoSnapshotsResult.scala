@@ -34,7 +34,7 @@ object GetAutoSnapshotsResult {
     
     inline def setAutoSnapshotsUndefined: Self = StObject.set(x, "autoSnapshots", js.undefined)
     
-    inline def setAutoSnapshotsVarargs(value: AutoSnapshotDetails*): Self = StObject.set(x, "autoSnapshots", js.Array(value :_*))
+    inline def setAutoSnapshotsVarargs(value: AutoSnapshotDetails*): Self = StObject.set(x, "autoSnapshots", js.Array(value*))
     
     inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

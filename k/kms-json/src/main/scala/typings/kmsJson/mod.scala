@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("kms-json", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with KmsJson {
     def this(options: KmsJsonOptions) = this()

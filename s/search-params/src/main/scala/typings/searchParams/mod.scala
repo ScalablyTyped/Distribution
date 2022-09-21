@@ -12,8 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def build[T /* <: Record[String, js.Any] */](params: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(params.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def build[T /* <: Record[String, js.Any] */](params: T, opts: IOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(params.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def build[T /* <: Record[String, Any] */](params: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def build[T /* <: Record[String, Any] */](params: T, opts: IOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(params.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def keep(path: String, paramsToKeep: js.Array[String]): IKeepResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(path.asInstanceOf[js.Any], paramsToKeep.asInstanceOf[js.Any])).asInstanceOf[IKeepResponse]
   inline def keep(path: String, paramsToKeep: js.Array[String], opts: IOptions): IKeepResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(path.asInstanceOf[js.Any], paramsToKeep.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IKeepResponse]
@@ -21,8 +21,8 @@ object mod {
   inline def omit(path: String, paramsToOmit: js.Array[String]): IOmitResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(path.asInstanceOf[js.Any], paramsToOmit.asInstanceOf[js.Any])).asInstanceOf[IOmitResponse]
   inline def omit(path: String, paramsToOmit: js.Array[String], opts: IOptions): IOmitResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(path.asInstanceOf[js.Any], paramsToOmit.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IOmitResponse]
   
-  inline def parse[T /* <: Record[String, js.Any] */](path: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def parse[T /* <: Record[String, js.Any] */](path: String, opts: IOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def parse[T /* <: Record[String, Any] */](path: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def parse[T /* <: Record[String, Any] */](path: String, opts: IOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
   
   trait IKeepResponse extends StObject {
     

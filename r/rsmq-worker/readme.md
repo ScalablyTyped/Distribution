@@ -11,9 +11,9 @@ RSMQ helper to simply implement a worker around the message queue
 | Full name          | rsmq-worker |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 419696 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 38331.333333333336 |
+| # stars            | 115.0 |
 
 ## Links
 - [Homepage](https://github.com/mpneuried/rsmq-worker)

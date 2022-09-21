@@ -10,7 +10,7 @@ object fresnelBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/fresnelBlock", "FresnelBlock")
   @js.native
-  class FresnelBlock protected () extends NodeMaterialBlock {
+  open class FresnelBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new FresnelBlock
       * @param name defines the block name

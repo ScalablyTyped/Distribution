@@ -8,11 +8,11 @@ trait cast extends StObject {
   
   var `type`: String
   
-  var `val`: js.Any
+  var `val`: Any
 }
 object cast {
   
-  inline def apply(`type`: String, `val`: js.Any): cast = {
+  inline def apply(`type`: String, `val`: Any): cast = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
@@ -23,6 +23,6 @@ object cast {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

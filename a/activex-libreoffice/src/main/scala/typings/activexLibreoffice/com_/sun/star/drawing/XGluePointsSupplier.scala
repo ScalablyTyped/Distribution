@@ -24,7 +24,7 @@ object XGluePointsSupplier {
     GluePoints: XIndexContainer,
     acquire: () => Unit,
     getGluePoints: () => XIndexContainer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XGluePointsSupplier = {
     val __obj = js.Dynamic.literal(GluePoints = GluePoints.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getGluePoints = js.Any.fromFunction0(getGluePoints), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

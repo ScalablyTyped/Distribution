@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutConfigurationSetReputationOptionsRequest extends StObject {
   
   /**
-    * The name of the configuration set that you want to enable or disable reputation metric tracking for.
+    * The name of the configuration set.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   

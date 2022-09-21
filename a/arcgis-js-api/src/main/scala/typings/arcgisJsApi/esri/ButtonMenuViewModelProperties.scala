@@ -16,6 +16,8 @@ trait ButtonMenuViewModelProperties extends StObject {
   /**
     * Indicates if the menu content is visible.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuViewModel.html#open)
     */
   var open: js.UndefOr[Boolean] = js.undefined
@@ -33,7 +35,7 @@ object ButtonMenuViewModelProperties {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

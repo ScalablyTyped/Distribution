@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WindowOptions extends StObject {
   
-  var actions: js.UndefOr[js.Any] = js.undefined
+  var actions: js.UndefOr[Any] = js.undefined
   
   var activate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
   var animation: js.UndefOr[Boolean | WindowAnimation] = js.undefined
   
-  var appendTo: js.UndefOr[js.Any | String] = js.undefined
+  var appendTo: js.UndefOr[Any | String] = js.undefined
   
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
@@ -81,7 +81,7 @@ object WindowOptions {
   
   extension [Self <: WindowOptions](x: Self) {
     
-    inline def setActions(value: js.Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
@@ -93,7 +93,7 @@ object WindowOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setAppendTo(value: js.Any | String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: Any | String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
     inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     

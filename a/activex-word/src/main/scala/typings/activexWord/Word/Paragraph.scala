@@ -101,7 +101,7 @@ trait Paragraph extends StObject {
   var MirrorIndents: Double = js.native
   
   def Next(): Paragraph = js.native
-  def Next(Count: js.Any): Paragraph = js.native
+  def Next(Count: Any): Paragraph = js.native
   
   var NoLineNumber: Double = js.native
   
@@ -123,10 +123,10 @@ trait Paragraph extends StObject {
   
   val ParaID: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Previous(): Paragraph = js.native
-  def Previous(Count: js.Any): Paragraph = js.native
+  def Previous(Count: Any): Paragraph = js.native
   
   val Range: typings.activexWord.Word.Range = js.native
   
@@ -158,7 +158,7 @@ trait Paragraph extends StObject {
   
   var SpaceBeforeAuto: Double = js.native
   
-  var Style: js.Any = js.native
+  var Style: Any = js.native
   
   def TabHangingIndent(Count: Double): Unit = js.native
   

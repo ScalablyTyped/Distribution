@@ -1,17 +1,19 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
-import typings.mangopay2NodejsSdk.mod.kycDocument.KYCDocumentRefusedReasonType
-import typings.mangopay2NodejsSdk.mod.kycDocument.KycDocumentType
+import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.DocumentStatus
+import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KYCDocumentRefusedReasonType
+import typings.mangopay2NodejsSdk.kycDocumentMod.kycDocument.KycDocumentType
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.kycDocument.KycDocumentData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/kycDocument.kycDocument.KycDocumentData> */
 trait PartialKycDocumentData extends StObject {
   
   var CreationDate: js.UndefOr[Double] = js.undefined
+  
+  var Flags: js.UndefOr[js.Array[String]] = js.undefined
   
   var Id: js.UndefOr[String] = js.undefined
   
@@ -41,6 +43,12 @@ object PartialKycDocumentData {
     inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    
+    inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    
+    inline def setFlagsUndefined: Self = StObject.set(x, "Flags", js.undefined)
+    
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "Flags", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

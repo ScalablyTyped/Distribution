@@ -89,7 +89,7 @@ object Advertiser {
     
     inline def setImpressionTrackingUrlUndefined: Self = StObject.set(x, "impressionTrackingUrl", js.undefined)
     
-    inline def setImpressionTrackingUrlVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrl", js.Array(value :_*))
+    inline def setImpressionTrackingUrlVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrl", js.Array(value*))
     
     inline def setLogo(value: Height): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     

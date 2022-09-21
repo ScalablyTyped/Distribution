@@ -1,7 +1,7 @@
 
 # Scala.js typings for smooth-scrollbar
 
-Typings are for version 8.5.3
+Typings are for version 8.8.1
 
 ## Library description:
 Customize scrollbar in modern browsers with smooth scrolling experience.
@@ -10,10 +10,10 @@ Customize scrollbar in modern browsers with smooth scrolling experience.
 | ------------------ | :-------------: |
 | Full name          | smooth-scrollbar |
 | Keywords           | scrollbar, customize, acceleration, performance |
-| # releases         | 6 |
-| # dependents       | 61 |
-| # downloads        | 613306 |
-| # stars            | 5 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 85788.0 |
+| # stars            | 2925.0 |
 
 ## Links
 - [Homepage](https://github.com/idiotWu/smooth-scrollbar#readme)

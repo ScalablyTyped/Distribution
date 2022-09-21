@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapsjs", "point")
 @js.native
-class point protected () extends StObject {
+open class point protected () extends StObject {
   def this(x: Double, y: Double) = this()
   
   /**

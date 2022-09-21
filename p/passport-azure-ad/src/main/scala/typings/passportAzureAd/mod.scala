@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("passport-azure-ad", "BearerStrategy")
   @js.native
-  class BearerStrategy protected ()
+  open class BearerStrategy protected ()
     extends typings.passportAzureAd.bearerStrategyMod.BearerStrategy {
     def this(options: IBearerStrategyOptionWithRequest, verify: VerifyBearerFunctionWithReq) = this()
     def this(options: IBearerStrategyOption, verify: VerifyBearerFunction) = this()
@@ -24,7 +24,7 @@ object mod {
   
   @JSImport("passport-azure-ad", "OIDCStrategy")
   @js.native
-  class OIDCStrategy protected ()
+  open class OIDCStrategy protected ()
     extends typings.passportAzureAd.oidcStrategyMod.OIDCStrategy {
     def this(options: IOIDCStrategyOptionWithRequest, verify: VerifyOIDCFunctionWithReq) = this()
     def this(options: IOIDCStrategyOptionWithoutRequest, verify: VerifyOIDCFunction) = this()

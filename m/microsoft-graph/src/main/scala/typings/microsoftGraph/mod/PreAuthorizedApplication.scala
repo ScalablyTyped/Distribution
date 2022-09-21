@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PreAuthorizedApplication extends StObject {
   
-  // The unique identifier for the application.
+  // The unique identifier for the client application.
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier for the oauth2PermissionScopes the application requires.
@@ -31,6 +31,6 @@ object PreAuthorizedApplication {
     
     inline def setDelegatedPermissionIdsUndefined: Self = StObject.set(x, "delegatedPermissionIds", js.undefined)
     
-    inline def setDelegatedPermissionIdsVarargs(value: String*): Self = StObject.set(x, "delegatedPermissionIds", js.Array(value :_*))
+    inline def setDelegatedPermissionIdsVarargs(value: String*): Self = StObject.set(x, "delegatedPermissionIds", js.Array(value*))
   }
 }

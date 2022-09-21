@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("pinyin-engine", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PinyinEngine {
     def this(dataList: js.Array[String | js.Object]) = this()

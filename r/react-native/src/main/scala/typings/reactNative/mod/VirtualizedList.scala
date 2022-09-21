@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "VirtualizedList")
 @js.native
-class VirtualizedList[ItemT] protected ()
-  extends Component[VirtualizedListProps[ItemT], js.Object, js.Any] {
+open class VirtualizedList[ItemT] protected ()
+  extends Component[VirtualizedListProps[ItemT], js.Object, Any] {
   def this(props: VirtualizedListProps[ItemT]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: VirtualizedListProps[ItemT], context: js.Any) = this()
+  def this(props: VirtualizedListProps[ItemT], context: Any) = this()
   
   def recordInteraction(): Unit = js.native
   

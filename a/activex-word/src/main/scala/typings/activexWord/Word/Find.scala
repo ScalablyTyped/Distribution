@@ -88,26 +88,26 @@ trait Find[TParent] extends StObject {
   var Highlight: Double
   
   def HitHighlight(
-    FindText: js.Any,
-    HighlightColor: js.UndefOr[js.Any],
-    TextColor: js.UndefOr[js.Any],
-    MatchCase: js.UndefOr[js.Any],
-    MatchWholeWord: js.UndefOr[js.Any],
-    MatchPrefix: js.UndefOr[js.Any],
-    MatchSuffix: js.UndefOr[js.Any],
-    MatchPhrase: js.UndefOr[js.Any],
-    MatchWildcards: js.UndefOr[js.Any],
-    MatchSoundsLike: js.UndefOr[js.Any],
-    MatchAllWordForms: js.UndefOr[js.Any],
-    MatchByte: js.UndefOr[js.Any],
-    MatchFuzzy: js.UndefOr[js.Any],
-    MatchKashida: js.UndefOr[js.Any],
-    MatchDiacritics: js.UndefOr[js.Any],
-    MatchAlefHamza: js.UndefOr[js.Any],
-    MatchControl: js.UndefOr[js.Any],
-    IgnoreSpace: js.UndefOr[js.Any],
-    IgnorePunct: js.UndefOr[js.Any],
-    HanjaPhoneticHangul: js.UndefOr[js.Any]
+    FindText: Any,
+    HighlightColor: js.UndefOr[Any],
+    TextColor: js.UndefOr[Any],
+    MatchCase: js.UndefOr[Any],
+    MatchWholeWord: js.UndefOr[Any],
+    MatchPrefix: js.UndefOr[Any],
+    MatchSuffix: js.UndefOr[Any],
+    MatchPhrase: js.UndefOr[Any],
+    MatchWildcards: js.UndefOr[Any],
+    MatchSoundsLike: js.UndefOr[Any],
+    MatchAllWordForms: js.UndefOr[Any],
+    MatchByte: js.UndefOr[Any],
+    MatchFuzzy: js.UndefOr[Any],
+    MatchKashida: js.UndefOr[Any],
+    MatchDiacritics: js.UndefOr[Any],
+    MatchAlefHamza: js.UndefOr[Any],
+    MatchControl: js.UndefOr[Any],
+    IgnoreSpace: js.UndefOr[Any],
+    IgnorePunct: js.UndefOr[Any],
+    HanjaPhoneticHangul: js.UndefOr[Any]
   ): Boolean
   
   var IgnorePunct: Boolean
@@ -158,7 +158,7 @@ trait Find[TParent] extends StObject {
   
   def SetAllFuzzyOptions(): Unit
   
-  var Style: js.Any
+  var Style: Any
   
   var Text: String
   
@@ -186,7 +186,7 @@ object Find {
     Frame: Frame,
     HanjaPhoneticHangul: Boolean,
     Highlight: Double,
-    HitHighlight: (js.Any, js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Boolean,
+    HitHighlight: (Any, js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Boolean,
     IgnorePunct: Boolean,
     IgnoreSpace: Boolean,
     LanguageID: WdLanguageID,
@@ -211,7 +211,7 @@ object Find {
     Parent: TParent,
     Replacement: Replacement,
     SetAllFuzzyOptions: () => Unit,
-    Style: js.Any,
+    Style: Any,
     Text: String,
     WordDotFind_typekey: Find[Range | Selection],
     Wrap: WdFindWrap
@@ -262,7 +262,7 @@ object Find {
     inline def setHighlight(value: Double): Self = StObject.set(x, "Highlight", value.asInstanceOf[js.Any])
     
     inline def setHitHighlight(
-      value: (js.Any, js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Boolean
+      value: (Any, js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Boolean
     ): Self = StObject.set(x, "HitHighlight", js.Any.fromFunction20(value))
     
     inline def setIgnorePunct(value: Boolean): Self = StObject.set(x, "IgnorePunct", value.asInstanceOf[js.Any])
@@ -313,7 +313,7 @@ object Find {
     
     inline def setSetAllFuzzyOptions(value: () => Unit): Self = StObject.set(x, "SetAllFuzzyOptions", js.Any.fromFunction0(value))
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

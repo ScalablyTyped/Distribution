@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.Height
+import typings.babylonjs.anon.Layers
 import typings.babylonjs.anon.PartialINodeMaterialOptio
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.currentScreenBlockMod.CurrentScreenBlock
@@ -8,9 +8,11 @@ import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.imageProcessingConfigurationMod.IImageProcessingConfigurationDefines
 import typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration
+import typings.babylonjs.imageSourceBlockMod.ImageSourceBlock
 import typings.babylonjs.inputBlockMod.InputBlock
 import typings.babylonjs.iparticlesystemMod.IParticleSystem
 import typings.babylonjs.materialDefinesMod.MaterialDefines
+import typings.babylonjs.materialMod.Material
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes
 import typings.babylonjs.nodeMaterialOptimizerMod.NodeMaterialOptimizer
@@ -33,7 +35,7 @@ object nodeMaterialMod {
   
   @JSImport("babylonjs/Materials/Node/nodeMaterial", "NodeMaterial")
   @js.native
-  class NodeMaterial protected () extends PushMaterial {
+  open class NodeMaterial protected () extends PushMaterial {
     /**
       * Create a new node based material
       * @param name defines the material name
@@ -45,13 +47,13 @@ object nodeMaterialMod {
     def this(name: String, scene: Unit, options: PartialINodeMaterialOptio) = this()
     def this(name: String, scene: Scene, options: PartialINodeMaterialOptio) = this()
     
-    /* private */ var BJSNODEMATERIALEDITOR: js.Any = js.native
+    /* private */ var BJSNODEMATERIALEDITOR: Any = js.native
     
-    /* private */ var _addFragmentOutputNode: js.Any = js.native
+    /* private */ var _addFragmentOutputNode: Any = js.native
     
-    /* private */ var _addVertexOutputNode: js.Any = js.native
+    /* private */ var _addVertexOutputNode: Any = js.native
     
-    /* private */ var _animationFrame: js.Any = js.native
+    /* private */ var _animationFrame: Any = js.native
     
     /**
       * Attaches a new image processing configuration to the Standard Material.
@@ -59,34 +61,34 @@ object nodeMaterialMod {
       */
     /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
     
-    /* private */ var _buildId: js.Any = js.native
+    /* private */ var _buildId: Any = js.native
     
-    /* private */ var _buildWasSuccessful: js.Any = js.native
+    /* private */ var _buildWasSuccessful: Any = js.native
     
-    /* private */ var _cachedWorldViewMatrix: js.Any = js.native
+    /* private */ var _cachedWorldViewMatrix: Any = js.native
     
-    /* private */ var _cachedWorldViewProjectionMatrix: js.Any = js.native
+    /* private */ var _cachedWorldViewProjectionMatrix: Any = js.native
     
-    /* private */ var _checkInternals: js.Any = js.native
+    /* private */ var _checkInternals: Any = js.native
     
-    /* private */ var _createEffectForParticles: js.Any = js.native
+    /* private */ var _createEffectForParticles: Any = js.native
     
-    /* private */ var _createEffectForPostProcess: js.Any = js.native
+    /* private */ var _createEffectForPostProcess: Any = js.native
     
     /** Creates the node editor window. */
-    /* private */ var _createNodeEditor: js.Any = js.native
+    /* private */ var _createNodeEditor: Any = js.native
     
-    /* private */ var _fragmentCompilationState: js.Any = js.native
+    /* private */ var _fragmentCompilationState: Any = js.native
     
     /**
       * Gets or sets the root nodes of the material fragment (pixel) shader
       */
     var _fragmentOutputNodes: js.Array[NodeMaterialBlock] = js.native
     
-    /* private */ var _gatherBlocks: js.Any = js.native
+    /* private */ var _gatherBlocks: Any = js.native
     
     /** Get the inspector from bundle or global */
-    /* private */ var _getGlobalNodeMaterialEditor: js.Any = js.native
+    /* private */ var _getGlobalNodeMaterialEditor: Any = js.native
     
     /**
       * Default configuration related to image processing available in the standard Material.
@@ -96,9 +98,9 @@ object nodeMaterialMod {
     /**
       * Keep track of the image processing observer to allow dispose and replace.
       */
-    /* private */ var _imageProcessingObserver: js.Any = js.native
+    /* private */ var _imageProcessingObserver: Any = js.native
     
-    /* private */ var _initializeBlock: js.Any = js.native
+    /* private */ var _initializeBlock: Any = js.native
     
     /**
       * Specifies the mode of the node material
@@ -106,25 +108,25 @@ object nodeMaterialMod {
       */
     var _mode: NodeMaterialModes = js.native
     
-    /* private */ var _optimizers: js.Any = js.native
+    /* private */ var _optimizers: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _prepareDefinesForAttributes: js.Any = js.native
+    /* private */ var _prepareDefinesForAttributes: Any = js.native
     
-    /* private */ var _processDefines: js.Any = js.native
+    /* private */ var _processDefines: Any = js.native
     
-    /* private */ var _removeFragmentOutputNode: js.Any = js.native
+    /* private */ var _removeFragmentOutputNode: Any = js.native
     
-    /* private */ var _removeVertexOutputNode: js.Any = js.native
+    /* private */ var _removeVertexOutputNode: Any = js.native
     
-    /* private */ var _resetDualBlocks: js.Any = js.native
+    /* private */ var _resetDualBlocks: Any = js.native
     
-    /* private */ var _restoreConnections: js.Any = js.native
+    /* private */ var _restoreConnections: Any = js.native
     
-    /* private */ var _sharedData: js.Any = js.native
+    /* private */ var _sharedData: Any = js.native
     
-    /* private */ var _vertexCompilationState: js.Any = js.native
+    /* private */ var _vertexCompilationState: Any = js.native
     
     /**
       * Gets or sets the root nodes of the material vertex shader
@@ -146,14 +148,28 @@ object nodeMaterialMod {
     /**
       * Build the material and generates the inner effect
       * @param verbose defines if the build should log activity
+      * @param updateBuildId defines if the internal build Id should be updated (default is true)
+      * @param autoConfigure defines if the autoConfigure method should be called when initializing blocks (default is true)
       */
     def build(): Unit = js.native
     def build(verbose: Boolean): Unit = js.native
+    def build(verbose: Boolean, updateBuildId: Boolean): Unit = js.native
+    def build(verbose: Boolean, updateBuildId: Boolean, autoConfigure: Boolean): Unit = js.native
+    def build(verbose: Boolean, updateBuildId: Unit, autoConfigure: Boolean): Unit = js.native
+    def build(verbose: Unit, updateBuildId: Boolean): Unit = js.native
+    def build(verbose: Unit, updateBuildId: Boolean, autoConfigure: Boolean): Unit = js.native
+    def build(verbose: Unit, updateBuildId: Unit, autoConfigure: Boolean): Unit = js.native
+    
+    /** Gets or sets the unique identifier used to identified the effect associated with the material */
+    def buildId: Double = js.native
+    def buildId_=(value: Double): Unit = js.native
     
     /**
       * Clear the current material
       */
     def clear(): Unit = js.native
+    
+    def clone(name: String, shareEffect: Boolean): NodeMaterial = js.native
     
     /**
       * A free comment about the material
@@ -164,6 +180,12 @@ object nodeMaterialMod {
       * Get a string representing the shaders built by the current node graph
       */
     def compiledShaders: String = js.native
+    
+    /**
+      * Use this material as the shadow depth wrapper of a target material
+      * @param targetMaterial defines the target material
+      */
+    def createAsShadowDepthWrapper(targetMaterial: Material): Unit = js.native
     
     /**
       * Create the effect to be used as the custom effect for a particle system
@@ -218,12 +240,12 @@ object nodeMaterialMod {
       * @returns the new procedural texture attached to this node material
       */
     def createProceduralTexture(size: Double, scene: Scene): Nullable[ProceduralTexture] = js.native
-    def createProceduralTexture(size: Height, scene: Scene): Nullable[ProceduralTexture] = js.native
+    def createProceduralTexture(size: Layers, scene: Scene): Nullable[ProceduralTexture] = js.native
     
     /**
       * Launch the node material editor
       * @param config Define the configuration of the editor
-      * @return a promise fulfilled when the node editor is visible
+      * @returns a promise fulfilled when the node editor is visible
       */
     def edit(): js.Promise[Unit] = js.native
     def edit(config: INodeMaterialEditorOptions): js.Promise[Unit] = js.native
@@ -232,7 +254,12 @@ object nodeMaterialMod {
       * Gets or sets data used by visual editor
       * @see https://nme.babylonjs.com
       */
-    var editorData: js.Any = js.native
+    var editorData: Any = js.native
+    
+    /**
+      * Gets or sets a boolean indicating that alpha blending must be enabled no matter what alpha value or alpha channel of the FragmentBlock are
+      */
+    var forceAlphaBlending: Boolean = js.native
     
     /**
       * Generate a string containing the code declaration required to create an equivalent of this material
@@ -245,14 +272,14 @@ object nodeMaterialMod {
       * @param name defines the name of the block to retrieve
       * @returns the required block or null if not found
       */
-    def getBlockByName(name: String): Nullable[NodeMaterialBlock] = js.native
+    def getBlockByName(name: String): NodeMaterialBlock | Null = js.native
     
     /**
       * Get a block by its name
       * @param predicate defines the predicate used to find the good candidate
       * @returns the required block or null if not found
       */
-    def getBlockByPredicate(predicate: js.Function1[/* block */ NodeMaterialBlock, Boolean]): Nullable[NodeMaterialBlock] = js.native
+    def getBlockByPredicate(predicate: js.Function1[/* block */ NodeMaterialBlock, Boolean]): NodeMaterialBlock | Null = js.native
     
     /**
       * Get an input block by its name
@@ -272,7 +299,7 @@ object nodeMaterialMod {
       * @returns an array of texture blocks
       */
     def getTextureBlocks(): js.Array[
-        TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
+        TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock | ImageSourceBlock
       ] = js.native
     
     /**
@@ -293,21 +320,25 @@ object nodeMaterialMod {
     
     /**
       * Loads the current Node Material from a url pointing to a file save by the Node Material Editor
+      * @deprecated Please use NodeMaterial.ParseFromFileAsync instead
       * @param url defines the url to load from
-      * @returns a promise that will fullfil when the material is fully loaded
+      * @param rootUrl defines the root URL for nested url in the node material
+      * @returns a promise that will fulfil when the material is fully loaded
       */
-    def loadAsync(url: String): js.Promise[Unit] = js.native
+    def loadAsync(url: String): js.Promise[NodeMaterial] = js.native
+    def loadAsync(url: String, rootUrl: String): js.Promise[NodeMaterial] = js.native
     
     /**
       * Clear the current graph and load a new one from a serialization object
       * @param source defines the JSON representation of the material
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @param merge defines whether or not the source must be merged or replace the current content
+      * @deprecated Please use the parseSerializedObject method instead
       */
-    def loadFromSerialization(source: js.Any): Unit = js.native
-    def loadFromSerialization(source: js.Any, rootUrl: String): Unit = js.native
-    def loadFromSerialization(source: js.Any, rootUrl: String, merge: Boolean): Unit = js.native
-    def loadFromSerialization(source: js.Any, rootUrl: Unit, merge: Boolean): Unit = js.native
+    def loadFromSerialization(source: Any): Unit = js.native
+    def loadFromSerialization(source: Any, rootUrl: String): Unit = js.native
+    def loadFromSerialization(source: Any, rootUrl: String, merge: Boolean): Unit = js.native
+    def loadFromSerialization(source: Any, rootUrl: Unit, merge: Boolean): Unit = js.native
     
     /**
       * Defines the maximum number of lights that can be used in the material
@@ -315,9 +346,10 @@ object nodeMaterialMod {
     var maxSimultaneousLights: Double = js.native
     
     /**
-      * Gets the mode property
+      * Gets or sets the mode property
       */
     def mode: NodeMaterialModes = js.native
+    def mode_=(value: NodeMaterialModes): Unit = js.native
     
     /**
       * Observable raised when the material is built
@@ -332,6 +364,17 @@ object nodeMaterialMod {
     /** Gets or sets options to control the node material overall behavior */
     def options: INodeMaterialOptions = js.native
     def options_=(options: INodeMaterialOptions): Unit = js.native
+    
+    /**
+      * Clear the current graph and load a new one from a serialization object
+      * @param source defines the JSON representation of the material
+      * @param rootUrl defines the root URL to use to load textures and relative dependencies
+      * @param merge defines whether or not the source must be merged or replace the current content
+      */
+    def parseSerializedObject(source: Any): Unit = js.native
+    def parseSerializedObject(source: Any, rootUrl: String): Unit = js.native
+    def parseSerializedObject(source: Any, rootUrl: String, merge: Boolean): Unit = js.native
+    def parseSerializedObject(source: Any, rootUrl: Unit, merge: Boolean): Unit = js.native
     
     /**
       * Adds a new optimizer to the list of optimizers
@@ -353,7 +396,7 @@ object nodeMaterialMod {
       */
     def removeOutputNode(node: NodeMaterialBlock): this.type = js.native
     
-    def serialize(selectedBlocks: js.Array[NodeMaterialBlock]): js.Any = js.native
+    def serialize(selectedBlocks: js.Array[NodeMaterialBlock]): Any = js.native
     
     /**
       * Clear the current material and set it to a default state
@@ -422,17 +465,55 @@ object nodeMaterialMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a new node material
       */
-    inline def Parse(source: js.Any, scene: Scene): NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[NodeMaterial]
-    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[NodeMaterial]
+    inline def Parse(source: Any, scene: Scene): NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[NodeMaterial]
+    inline def Parse(source: Any, scene: Scene, rootUrl: String): NodeMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[NodeMaterial]
     
     /**
       * Creates a node material from a snippet saved in a remote file
       * @param name defines the name of the material to create
       * @param url defines the url to load from
       * @param scene defines the hosting scene
+      * @param rootUrl defines the root URL for nested url in the node material
+      * @param skipBuild defines whether to build the node material
+      * @param targetMaterial defines a material to use instead of creating a new one
       * @returns a promise that will resolve to the new node material
       */
     inline def ParseFromFileAsync(name: String, url: String, scene: Scene): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromFileAsync(name: String, url: String, scene: Scene, rootUrl: String): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromFileAsync(name: String, url: String, scene: Scene, rootUrl: String, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromFileAsync(
+      name: String,
+      url: String,
+      scene: Scene,
+      rootUrl: String,
+      skipBuild: Boolean,
+      targetMaterial: NodeMaterial
+    ): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromFileAsync(
+      name: String,
+      url: String,
+      scene: Scene,
+      rootUrl: String,
+      skipBuild: Unit,
+      targetMaterial: NodeMaterial
+    ): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromFileAsync(name: String, url: String, scene: Scene, rootUrl: Unit, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromFileAsync(
+      name: String,
+      url: String,
+      scene: Scene,
+      rootUrl: Unit,
+      skipBuild: Boolean,
+      targetMaterial: NodeMaterial
+    ): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromFileAsync(
+      name: String,
+      url: String,
+      scene: Scene,
+      rootUrl: Unit,
+      skipBuild: Unit,
+      targetMaterial: NodeMaterial
+    ): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any], targetMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
     
     /**
       * Creates a node material from a snippet saved by the node material editor
@@ -440,12 +521,25 @@ object nodeMaterialMod {
       * @param scene defines the hosting scene
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @param nodeMaterial defines a node material to update (instead of creating a new one)
+      * @param skipBuild defines whether to build the node material
       * @returns a promise that will resolve to the new node material
       */
+    inline def ParseFromSnippetAsync(snippetId: String): js.Promise[NodeMaterial] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: String): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: String, nodeMaterial: Unit, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: String, nodeMaterial: NodeMaterial): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: String, nodeMaterial: NodeMaterial, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: Unit, nodeMaterial: Unit, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: Unit, nodeMaterial: NodeMaterial): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Unit, rootUrl: Unit, nodeMaterial: NodeMaterial, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
     inline def ParseFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
     inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String, nodeMaterial: Unit, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
     inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String, nodeMaterial: NodeMaterial): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String, nodeMaterial: NodeMaterial, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: Unit, nodeMaterial: Unit, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
     inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: Unit, nodeMaterial: NodeMaterial): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: Unit, nodeMaterial: NodeMaterial, skipBuild: Boolean): js.Promise[NodeMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], nodeMaterial.asInstanceOf[js.Any], skipBuild.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeMaterial]]
     
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Materials/Node/nodeMaterial", "NodeMaterial.SnippetUrl")
@@ -455,13 +549,13 @@ object nodeMaterialMod {
     
     @JSImport("babylonjs/Materials/Node/nodeMaterial", "NodeMaterial._BuildIdGenerator")
     @js.native
-    def _BuildIdGenerator: js.Any = js.native
-    inline def _BuildIdGenerator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BuildIdGenerator")(x.asInstanceOf[js.Any])
+    def _BuildIdGenerator: Any = js.native
+    inline def _BuildIdGenerator_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BuildIdGenerator")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Materials/Node/nodeMaterial", "NodeMaterialDefines")
   @js.native
-  class NodeMaterialDefines ()
+  open class NodeMaterialDefines ()
     extends MaterialDefines
        with IImageProcessingConfigurationDefines {
     
@@ -485,6 +579,9 @@ object nodeMaterialMod {
     var CONTRAST: Boolean = js.native
     
     /* CompleteClass */
+    var DITHER: Boolean = js.native
+    
+    /* CompleteClass */
     var EXPOSURE: Boolean = js.native
     
     /* CompleteClass */
@@ -499,6 +596,8 @@ object nodeMaterialMod {
     var MORPHTARGETS_NORMAL: Boolean = js.native
     
     var MORPHTARGETS_TANGENT: Boolean = js.native
+    
+    var MORPHTARGETS_TEXTURE: Boolean = js.native
     
     var MORPHTARGETS_UV: Boolean = js.native
     
@@ -515,6 +614,9 @@ object nodeMaterialMod {
     /* CompleteClass */
     var SAMPLER3DGREENDEPTH: Boolean = js.native
     
+    /* CompleteClass */
+    var SKIPFINALCOLORCLAMP: Boolean = js.native
+    
     var TANGENT: Boolean = js.native
     
     /* CompleteClass */
@@ -525,6 +627,16 @@ object nodeMaterialMod {
     
     var UV1: Boolean = js.native
     
+    var UV2: Boolean = js.native
+    
+    var UV3: Boolean = js.native
+    
+    var UV4: Boolean = js.native
+    
+    var UV5: Boolean = js.native
+    
+    var UV6: Boolean = js.native
+    
     /* CompleteClass */
     var VIGNETTE: Boolean = js.native
     
@@ -534,8 +646,8 @@ object nodeMaterialMod {
     /* CompleteClass */
     var VIGNETTEBLENDMODEOPAQUE: Boolean = js.native
     
-    def setValue(name: String, value: js.Any): Unit = js.native
-    def setValue(name: String, value: js.Any, markAsUnprocessedIfDirty: Boolean): Unit = js.native
+    def setValue(name: String, value: Any): Unit = js.native
+    def setValue(name: String, value: Any, markAsUnprocessedIfDirty: Boolean): Unit = js.native
   }
   
   trait INodeMaterialEditorOptions extends StObject {

@@ -130,7 +130,7 @@ trait ConstantSpeed extends StObject {
     * 3
     * @see https://echarts.apache.org/en/option.html#series-lines.effect.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
     * The length of trail of special effect.
@@ -179,11 +179,11 @@ object ConstantSpeed {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+    inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
     inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
-    inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+    inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     

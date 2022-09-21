@@ -52,7 +52,7 @@ object TestResult {
     
     inline def setDebugMessagesUndefined: Self = StObject.set(x, "debugMessages", js.undefined)
     
-    inline def setDebugMessagesVarargs(value: String*): Self = StObject.set(x, "debugMessages", js.Array(value :_*))
+    inline def setDebugMessagesVarargs(value: String*): Self = StObject.set(x, "debugMessages", js.Array(value*))
     
     inline def setErrorPosition(value: SourcePosition): Self = StObject.set(x, "errorPosition", value.asInstanceOf[js.Any])
     
@@ -62,13 +62,13 @@ object TestResult {
     
     inline def setExpressionReportsUndefined: Self = StObject.set(x, "expressionReports", js.undefined)
     
-    inline def setExpressionReportsVarargs(value: ExpressionReport*): Self = StObject.set(x, "expressionReports", js.Array(value :_*))
+    inline def setExpressionReportsVarargs(value: ExpressionReport*): Self = StObject.set(x, "expressionReports", js.Array(value*))
     
     inline def setFunctionCalls(value: js.Array[FunctionCall]): Self = StObject.set(x, "functionCalls", value.asInstanceOf[js.Any])
     
     inline def setFunctionCallsUndefined: Self = StObject.set(x, "functionCalls", js.undefined)
     
-    inline def setFunctionCallsVarargs(value: FunctionCall*): Self = StObject.set(x, "functionCalls", js.Array(value :_*))
+    inline def setFunctionCallsVarargs(value: FunctionCall*): Self = StObject.set(x, "functionCalls", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
@@ -78,6 +78,6 @@ object TestResult {
     
     inline def setVisitedExpressionsUndefined: Self = StObject.set(x, "visitedExpressions", js.undefined)
     
-    inline def setVisitedExpressionsVarargs(value: VisitedExpression*): Self = StObject.set(x, "visitedExpressions", js.Array(value :_*))
+    inline def setVisitedExpressionsVarargs(value: VisitedExpression*): Self = StObject.set(x, "visitedExpressions", js.Array(value*))
   }
 }

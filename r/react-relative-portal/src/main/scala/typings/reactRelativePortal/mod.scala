@@ -10,8 +10,8 @@ object mod {
   
   @JSImport("react-relative-portal", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[Props, js.Object, js.Any]
+  open class ^ ()
+    extends Component[Props, js.Object, Any]
   
   trait Props extends StObject {
     
@@ -72,5 +72,5 @@ object mod {
     }
   }
   
-  type RelativePortal = Component[Props, js.Object, js.Any]
+  type RelativePortal = Component[Props, js.Object, Any]
 }

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * event via Eve's `DOMLoad` event. In this case the method returns `undefined`.
   * @return A new raphael paper that can be used for drawing shapes to the canvas.
   */
-class default ()
+open class default ()
   extends StObject
      with RaphaelPaper[SVG | VML] {
   def this(onReadyCallback: js.ThisFunction0[/* this */ Window, Unit]) = this()

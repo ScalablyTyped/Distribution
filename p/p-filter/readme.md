@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-filter
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Filter promises concurrently
@@ -10,10 +10,10 @@ Filter promises concurrently
 | ------------------ | :-------------: |
 | Full name          | p-filter |
 | Keywords           | promise, filter, collection, iterable, iterator, fulfilled, async, await, promises, concurrently, concurrency, parallel, bluebird |
-| # releases         | 3 |
-| # dependents       | 56 |
-| # downloads        | 27600569 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6553334333333334E7 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-filter#readme)

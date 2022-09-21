@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliderSettings extends StObject {
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var max: js.UndefOr[Double] = js.undefined
   
   var min: js.UndefOr[Double] = js.undefined
   
-  var slide: js.UndefOr[js.Function2[/* e */ js.Any, /* value */ Double, js.Any]] = js.undefined
+  var slide: js.UndefOr[js.Function2[/* e */ Any, /* value */ Double, Any]] = js.undefined
   
   var uiLibrary: js.UndefOr[String] = js.undefined
   
@@ -31,7 +31,7 @@ object SliderSettings {
   
   extension [Self <: SliderSettings](x: Self) {
     
-    inline def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ Any => Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
@@ -43,7 +43,7 @@ object SliderSettings {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setSlide(value: (/* e */ js.Any, /* value */ Double) => js.Any): Self = StObject.set(x, "slide", js.Any.fromFunction2(value))
+    inline def setSlide(value: (/* e */ Any, /* value */ Double) => Any): Self = StObject.set(x, "slide", js.Any.fromFunction2(value))
     
     inline def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
     

@@ -1,6 +1,5 @@
 package typings.hystrixjs.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +18,11 @@ trait CommandBuilderA6[R, T, U, V, W, X, Y] extends StObject {
   
   def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def context(value: js.Any): CommandBuilderA6[R, T, U, V, W, X, Y]
+  def context(value: Any): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilderA6[R, T, U, V, W, X, Y]
+  def errorHandler(value: js.Function1[/* error */ Any, Boolean]): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]]): CommandBuilderA6[R, T, U, V, W, X, Y]
+  def fallbackTo(value: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]]): CommandBuilderA6[R, T, U, V, W, X, Y]
   
   def percentileWindowLength(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
@@ -50,9 +49,9 @@ object CommandBuilderA6 {
     circuitBreakerForceOpened: Boolean => CommandBuilderA6[R, T, U, V, W, X, Y],
     circuitBreakerRequestVolumeThreshold: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
     circuitBreakerSleepWindowInMilliseconds: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
-    context: js.Any => CommandBuilderA6[R, T, U, V, W, X, Y],
-    errorHandler: js.Function1[/* error */ js.Any, Boolean] => CommandBuilderA6[R, T, U, V, W, X, Y],
-    fallbackTo: js.Function2[/* error */ Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y],
+    context: Any => CommandBuilderA6[R, T, U, V, W, X, Y],
+    errorHandler: js.Function1[/* error */ Any, Boolean] => CommandBuilderA6[R, T, U, V, W, X, Y],
+    fallbackTo: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y],
     percentileWindowLength: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
     percentileWindowNumberOfBuckets: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
     requestVolumeRejectionThreshold: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
@@ -79,12 +78,12 @@ object CommandBuilderA6 {
     
     inline def setCircuitBreakerSleepWindowInMilliseconds(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", js.Any.fromFunction1(value))
     
-    inline def setContext(value: js.Any => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+    inline def setContext(value: Any => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
     
-    inline def setErrorHandler(value: js.Function1[/* error */ js.Any, Boolean] => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    inline def setErrorHandler(value: js.Function1[/* error */ Any, Boolean] => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     inline def setFallbackTo(
-      value: js.Function2[/* error */ Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y]
+      value: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y]
     ): Self = StObject.set(x, "fallbackTo", js.Any.fromFunction1(value))
     
     inline def setPercentileWindowLength(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "percentileWindowLength", js.Any.fromFunction1(value))

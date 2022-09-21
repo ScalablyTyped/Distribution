@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "Mouse")
 @js.native
-class Mouse protected ()
+open class Mouse protected ()
   extends typings.guacamoleClient.mouseMod.Mouse {
   /**
     * @param element The Element to use to provide mouse events.
@@ -20,7 +20,7 @@ object Mouse {
   
   @JSImport("guacamole-client", "Mouse.GuacTouchDevice")
   @js.native
-  class GuacTouchDevice protected ()
+  open class GuacTouchDevice protected ()
     extends typings.guacamoleClient.mouseMod.Mouse.GuacTouchDevice {
     /**
       * @param element The Element to use to provide touch events.
@@ -30,7 +30,7 @@ object Mouse {
   
   @JSImport("guacamole-client", "Mouse.State")
   @js.native
-  class State protected ()
+  open class State protected ()
     extends typings.guacamoleClient.mouseMod.Mouse.State {
     /**
       * @param x The X position of the mouse pointer in pixels.
@@ -46,7 +46,7 @@ object Mouse {
   
   @JSImport("guacamole-client", "Mouse.Touchpad")
   @js.native
-  class Touchpad protected ()
+  open class Touchpad protected ()
     extends typings.guacamoleClient.mouseMod.Mouse.Touchpad {
     /**
       * @param element The Element to use to provide touch events.
@@ -56,7 +56,7 @@ object Mouse {
   
   @JSImport("guacamole-client", "Mouse.Touchscreen")
   @js.native
-  class Touchscreen protected ()
+  open class Touchscreen protected ()
     extends typings.guacamoleClient.mouseMod.Mouse.Touchscreen {
     /**
       * @param element The Element to use to provide touch events.

@@ -22,12 +22,12 @@ trait PatchBaselineIdentity extends StObject {
   var BaselineName: js.UndefOr[typings.awsSdk.ssmMod.BaselineName] = js.undefined
   
   /**
-    * Whether this is the default baseline. Note that Systems Manager supports creating multiple default patch baselines. For example, you can create a default patch baseline for each operating system.
+    * Whether this is the default baseline. Amazon Web Services Systems Manager supports creating multiple default patch baselines. For example, you can create a default patch baseline for each operating system.
     */
   var DefaultBaseline: js.UndefOr[typings.awsSdk.ssmMod.DefaultBaseline] = js.undefined
   
   /**
-    * Defines the operating system the patch baseline applies to. The Default value is WINDOWS. 
+    * Defines the operating system the patch baseline applies to. The default value is WINDOWS. 
     */
   var OperatingSystem: js.UndefOr[typings.awsSdk.ssmMod.OperatingSystem] = js.undefined
 }

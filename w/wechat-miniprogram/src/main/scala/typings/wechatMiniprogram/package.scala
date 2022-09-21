@@ -1,43 +1,31 @@
 package typings.wechatMiniprogram
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Exclude
+import typings.std.Pick
+import typings.std.Required
+import typings.wechatMiniprogram.anon.OptionalRecordcompletesuc
+import typings.wechatMiniprogram.wechatMiniprogramStrings.complete
+import typings.wechatMiniprogram.wechatMiniprogramStrings.fail
+import typings.wechatMiniprogram.wechatMiniprogramStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnyArray = js.Array[js.Any]
+type AnyArray = js.Array[Any]
 
-type AnyObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type AnyObject = StringDictionary[Any]
 
-type IAPIFunction[T, P /* <: typings.wechatMiniprogram.IAPIParam[T] */] = js.Function1[/* param */ js.UndefOr[P], js.Promise[T]]
+type IAPIFunction[T, P /* <: IAPIParam[T] */] = js.Function1[/* param */ js.UndefOr[P], js.Promise[T]]
 
-type ICloudServices = org.scalablytyped.runtime.StringDictionary[typings.wechatMiniprogram.ICloudService]
+type ICloudServices = StringDictionary[ICloudService]
 
-type OQ[T /* <: typings.wechatMiniprogram.anon.OptionalRecordcompletesuc */] = (typings.wechatMiniprogram.RQ[T] & (typings.std.Required[typings.std.Pick[T, typings.wechatMiniprogram.wechatMiniprogramStrings.success]])) | (typings.wechatMiniprogram.RQ[T] & (typings.std.Required[typings.std.Pick[T, typings.wechatMiniprogram.wechatMiniprogramStrings.fail]])) | (typings.wechatMiniprogram.RQ[T] & (typings.std.Required[typings.std.Pick[T, typings.wechatMiniprogram.wechatMiniprogramStrings.complete]])) | (typings.wechatMiniprogram.RQ[T] & (typings.std.Required[
-typings.std.Pick[
-  T, 
-  typings.wechatMiniprogram.wechatMiniprogramStrings.success | typings.wechatMiniprogram.wechatMiniprogramStrings.fail
-]])) | (typings.wechatMiniprogram.RQ[T] & (typings.std.Required[
-typings.std.Pick[
-  T, 
-  typings.wechatMiniprogram.wechatMiniprogramStrings.success | typings.wechatMiniprogram.wechatMiniprogramStrings.complete
-]])) | (typings.wechatMiniprogram.RQ[T] & (typings.std.Required[
-typings.std.Pick[
-  T, 
-  typings.wechatMiniprogram.wechatMiniprogramStrings.fail | typings.wechatMiniprogram.wechatMiniprogramStrings.complete
-]])) | (typings.wechatMiniprogram.RQ[T] & (typings.std.Required[
-typings.std.Pick[
-  T, 
-  typings.wechatMiniprogram.wechatMiniprogramStrings.fail | typings.wechatMiniprogram.wechatMiniprogramStrings.complete | typings.wechatMiniprogram.wechatMiniprogramStrings.success
-]]))
+type OQ[T /* <: OptionalRecordcompletesuc */] = (RQ[T] & (Required[Pick[T, success]])) | (RQ[T] & (Required[Pick[T, fail]])) | (RQ[T] & (Required[Pick[T, complete]])) | (RQ[T] & (Required[Pick[T, success | fail]])) | (RQ[T] & (Required[Pick[T, success | complete]])) | (RQ[T] & (Required[Pick[T, fail | complete]])) | (RQ[T] & (Required[Pick[T, fail | complete | success]]))
 
 type Optional[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]:? T[K]}
-  */ typings.wechatMiniprogram.wechatMiniprogramStrings.Optional & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.wechatMiniprogram.wechatMiniprogramStrings.Optional & TopLevel[T]
 
-type RQ[T /* <: typings.wechatMiniprogram.anon.OptionalRecordcompletesuc */] = typings.std.Pick[
-T, 
-typings.std.Exclude[
-  /* keyof T */ java.lang.String, 
-  typings.wechatMiniprogram.wechatMiniprogramStrings.complete | typings.wechatMiniprogram.wechatMiniprogramStrings.success | typings.wechatMiniprogram.wechatMiniprogramStrings.fail
-]]
+type RQ[T /* <: OptionalRecordcompletesuc */] = Pick[T, Exclude[/* keyof T */ String, complete | success | fail]]

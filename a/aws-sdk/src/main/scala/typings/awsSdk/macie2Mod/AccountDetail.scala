@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountDetail extends StObject {
   
   /**
-    * The AWS account ID for the account.
+    * The Amazon Web Services account ID for the account.
     */
   var accountId: string
   

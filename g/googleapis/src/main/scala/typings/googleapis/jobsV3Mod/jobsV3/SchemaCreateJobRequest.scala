@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Input only.  Create job request.
-  */
 trait SchemaCreateJobRequest extends StObject {
   
   /**
-    * Required.  The Job to be created.
+    * Required. The Job to be created.
     */
   var job: js.UndefOr[SchemaJob] = js.undefined
 }

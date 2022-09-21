@@ -11,7 +11,7 @@ trait ShareOpenGraphDialogParams
   extends StObject
      with DialogParams {
   
-  var action_properties: StringDictionary[js.Any]
+  var action_properties: StringDictionary[Any]
   
   var action_type: String
   
@@ -27,14 +27,14 @@ trait ShareOpenGraphDialogParams
 }
 object ShareOpenGraphDialogParams {
   
-  inline def apply(action_properties: StringDictionary[js.Any], action_type: String, href: String): ShareOpenGraphDialogParams = {
+  inline def apply(action_properties: StringDictionary[Any], action_type: String, href: String): ShareOpenGraphDialogParams = {
     val __obj = js.Dynamic.literal(action_properties = action_properties.asInstanceOf[js.Any], action_type = action_type.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], method = "share_open_graph")
     __obj.asInstanceOf[ShareOpenGraphDialogParams]
   }
   
   extension [Self <: ShareOpenGraphDialogParams](x: Self) {
     
-    inline def setAction_properties(value: StringDictionary[js.Any]): Self = StObject.set(x, "action_properties", value.asInstanceOf[js.Any])
+    inline def setAction_properties(value: StringDictionary[Any]): Self = StObject.set(x, "action_properties", value.asInstanceOf[js.Any])
     
     inline def setAction_type(value: String): Self = StObject.set(x, "action_type", value.asInstanceOf[js.Any])
     

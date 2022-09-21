@@ -13,21 +13,21 @@ object Toolbar {
   
   @JSGlobal("__MaterialUI.Toolbar.Toolbar")
   @js.native
-  class Toolbar ()
-    extends Component[ToolbarProps, js.Object, js.Any]
+  open class Toolbar ()
+    extends Component[ToolbarProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Toolbar.ToolbarGroup")
   @js.native
-  class ToolbarGroup ()
-    extends Component[ToolbarGroupProps, js.Object, js.Any]
+  open class ToolbarGroup ()
+    extends Component[ToolbarGroupProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Toolbar.ToolbarSeparator")
   @js.native
-  class ToolbarSeparator ()
-    extends Component[ToolbarSeparatorProps, js.Object, js.Any]
+  open class ToolbarSeparator ()
+    extends Component[ToolbarSeparatorProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Toolbar.ToolbarTitle")
   @js.native
-  class ToolbarTitle ()
-    extends Component[ToolbarTitleProps, js.Object, js.Any]
+  open class ToolbarTitle ()
+    extends Component[ToolbarTitleProps, js.Object, Any]
 }

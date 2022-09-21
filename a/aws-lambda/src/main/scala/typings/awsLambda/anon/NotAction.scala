@@ -22,6 +22,6 @@ object NotAction {
     
     inline def setNotAction(value: String | js.Array[String]): Self = StObject.set(x, "NotAction", value.asInstanceOf[js.Any])
     
-    inline def setNotActionVarargs(value: String*): Self = StObject.set(x, "NotAction", js.Array(value :_*))
+    inline def setNotActionVarargs(value: String*): Self = StObject.set(x, "NotAction", js.Array(value*))
   }
 }

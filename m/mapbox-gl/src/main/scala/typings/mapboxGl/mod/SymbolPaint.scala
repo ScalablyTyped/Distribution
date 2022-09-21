@@ -123,7 +123,7 @@ object SymbolPaint {
     
     inline def `setIcon-translateUndefined`: Self = StObject.set(x, "icon-translate", js.undefined)
     
-    inline def `setIcon-translateVarargs`(value: Double*): Self = StObject.set(x, "icon-translate", js.Array(value :_*))
+    inline def `setIcon-translateVarargs`(value: Double*): Self = StObject.set(x, "icon-translate", js.Array(value*))
     
     inline def `setText-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "text-color", value.asInstanceOf[js.Any])
     
@@ -177,6 +177,6 @@ object SymbolPaint {
     
     inline def `setText-translateUndefined`: Self = StObject.set(x, "text-translate", js.undefined)
     
-    inline def `setText-translateVarargs`(value: Double*): Self = StObject.set(x, "text-translate", js.Array(value :_*))
+    inline def `setText-translateVarargs`(value: Double*): Self = StObject.set(x, "text-translate", js.Array(value*))
   }
 }

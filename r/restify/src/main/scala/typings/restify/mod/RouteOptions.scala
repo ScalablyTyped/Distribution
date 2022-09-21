@@ -1,6 +1,5 @@
 package typings.restify.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +10,11 @@ trait RouteOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String | RegExp] = js.undefined
+  var path: js.UndefOr[String | js.RegExp] = js.undefined
   
-  var url: js.UndefOr[String | RegExp] = js.undefined
+  var url: js.UndefOr[String | js.RegExp] = js.undefined
   
-  var urlParamPattern: js.UndefOr[RegExp] = js.undefined
+  var urlParamPattern: js.UndefOr[js.RegExp] = js.undefined
   
   var version: js.UndefOr[String] = js.undefined
   
@@ -34,19 +33,19 @@ object RouteOptions {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
+    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPath(value: String | RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String | js.RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setUrl(value: String | RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | js.RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUrlParamPattern(value: RegExp): Self = StObject.set(x, "urlParamPattern", value.asInstanceOf[js.Any])
+    inline def setUrlParamPattern(value: js.RegExp): Self = StObject.set(x, "urlParamPattern", value.asInstanceOf[js.Any])
     
     inline def setUrlParamPatternUndefined: Self = StObject.set(x, "urlParamPattern", js.undefined)
     
@@ -60,6 +59,6 @@ object RouteOptions {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

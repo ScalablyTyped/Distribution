@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1beta2", "dataproc_v1beta2.Resource$Projects$Locations$Workflowtemplates")
 @js.native
-class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
+open class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * dataproc.projects.locations.workflowTemplates.create
-    * @desc Creates new workflow template.
-    * @alias dataproc.projects.locations.workflowTemplates.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent Required. The "resource name" of the region, as described in https://cloud.google.com/apis/design/resource_names of the form projects/{project_id}/regions/{region}
-    * @param {().WorkflowTemplate} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def create(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
@@ -38,8 +27,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def create(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesCreate,
-    options: BodyResponseCallback[SchemaWorkflowTemplate],
-    callback: BodyResponseCallback[SchemaWorkflowTemplate]
+    options: BodyResponseCallback[Readable | SchemaWorkflowTemplate],
+    callback: BodyResponseCallback[Readable | SchemaWorkflowTemplate]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsLocationsWorkflowtemplatesCreate, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def create(
@@ -47,21 +36,89 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkflowTemplate]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.delete
-    * @desc Deletes a workflow template. It does not cancel in-progress
-    * workflows.
-    * @alias dataproc.projects.locations.workflowTemplates.delete
-    * @memberOf! ()
+    * Creates new workflow template.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Required. The "resource name" of the workflow template, as described in https://cloud.google.com/apis/design/resource_names of the form projects/{project_id}/regions/{region}/workflowTemplates/{template_id}
-    * @param {integer=} params.version Optional. The version of workflow template to delete. If specified, will only delete the template if the current server version matches specified version.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dataproc.projects.locations.workflowTemplates.create({
+    *     // Required. The resource name of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates,create, the resource name of the region has the following format: projects/{project_id\}/regions/{region\} For projects.locations.workflowTemplates.create, the resource name of the location has the following format: projects/{project_id\}/locations/{location\}
+    *     parent: 'projects/my-project/locations/my-location',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "createTime": "my_createTime",
+    *       //   "dagTimeout": "my_dagTimeout",
+    *       //   "id": "my_id",
+    *       //   "jobs": [],
+    *       //   "labels": {},
+    *       //   "name": "my_name",
+    *       //   "parameters": [],
+    *       //   "placement": {},
+    *       //   "updateTime": "my_updateTime",
+    *       //   "version": 0
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "createTime": "my_createTime",
+    *   //   "dagTimeout": "my_dagTimeout",
+    *   //   "id": "my_id",
+    *   //   "jobs": [],
+    *   //   "labels": {},
+    *   //   "name": "my_name",
+    *   //   "parameters": [],
+    *   //   "placement": {},
+    *   //   "updateTime": "my_updateTime",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsLocationsWorkflowtemplatesCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -72,8 +129,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def delete(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesDelete,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceProjectsLocationsWorkflowtemplatesDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
@@ -81,21 +138,63 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.get
-    * @desc Retrieves the latest workflow template.Can retrieve previously
-    * instantiated template by specifying optional version parameter.
-    * @alias dataproc.projects.locations.workflowTemplates.get
-    * @memberOf! ()
+    * Deletes a workflow template. It does not cancel in-progress workflows.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Required. The "resource name" of the workflow template, as described in https://cloud.google.com/apis/design/resource_names of the form projects/{project_id}/regions/{region}/workflowTemplates/{template_id}
-    * @param {integer=} params.version Optional. The version of workflow template to retrieve. Only previously instatiated versions can be retrieved.If unspecified, retrieves the current version.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dataproc.projects.locations.workflowTemplates.delete({
+    *     // Required. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates.delete, the resource name of the template has the following format: projects/{project_id\}/regions/{region\}/workflowTemplates/{template_id\} For projects.locations.workflowTemplates.instantiate, the resource name of the template has the following format: projects/{project_id\}/locations/{location\}/workflowTemplates/{template_id\}
+    *     name: 'projects/my-project/locations/my-location/workflowTemplates/my-workflowTemplate',
+    *     // Optional. The version of workflow template to delete. If specified, will only delete the template if the current server version matches specified version.
+    *     version: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceProjectsLocationsWorkflowtemplatesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
@@ -106,8 +205,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesGet,
-    options: BodyResponseCallback[SchemaWorkflowTemplate],
-    callback: BodyResponseCallback[SchemaWorkflowTemplate]
+    options: BodyResponseCallback[Readable | SchemaWorkflowTemplate],
+    callback: BodyResponseCallback[Readable | SchemaWorkflowTemplate]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsLocationsWorkflowtemplatesGet, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def get(
@@ -115,20 +214,74 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkflowTemplate]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.getIamPolicy
-    * @desc Gets the access control policy for a resource. Returns an empty
-    * policy if the resource exists and does not have a policy set.
-    * @alias dataproc.projects.locations.workflowTemplates.getIamPolicy
-    * @memberOf! ()
+    * Retrieves the latest workflow template.Can retrieve previously instantiated template by specifying optional version parameter.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dataproc.projects.locations.workflowTemplates.get({
+    *     // Required. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates.get, the resource name of the template has the following format: projects/{project_id\}/regions/{region\}/workflowTemplates/{template_id\} For projects.locations.workflowTemplates.get, the resource name of the template has the following format: projects/{project_id\}/locations/{location\}/workflowTemplates/{template_id\}
+    *     name: 'projects/my-project/locations/my-location/workflowTemplates/my-workflowTemplate',
+    *     // Optional. The version of workflow template to retrieve. Only previously instantiated versions can be retrieved.If unspecified, retrieves the current version.
+    *     version: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "createTime": "my_createTime",
+    *   //   "dagTimeout": "my_dagTimeout",
+    *   //   "id": "my_id",
+    *   //   "jobs": [],
+    *   //   "labels": {},
+    *   //   "name": "my_name",
+    *   //   "parameters": [],
+    *   //   "placement": {},
+    *   //   "updateTime": "my_updateTime",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsLocationsWorkflowtemplatesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
@@ -139,8 +292,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesGetiampolicy,
-    options: BodyResponseCallback[SchemaPolicy],
-    callback: BodyResponseCallback[SchemaPolicy]
+    options: BodyResponseCallback[Readable | SchemaPolicy],
+    callback: BodyResponseCallback[Readable | SchemaPolicy]
   ): Unit = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsWorkflowtemplatesGetiampolicy, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
@@ -148,26 +301,68 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.instantiate
-    * @desc Instantiates a template and begins execution.The returned Operation
-    * can be used to track execution of workflow by polling operations.get. The
-    * Operation will complete when entire workflow is finished.The running
-    * workflow can be aborted via operations.cancel. This will cause any
-    * inflight jobs to be cancelled and workflow-owned clusters to be
-    * deleted.The Operation.metadata will be WorkflowMetadata.On successful
-    * completion, Operation.response will be Empty.
-    * @alias dataproc.projects.locations.workflowTemplates.instantiate
-    * @memberOf! ()
+    * Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Required. The "resource name" of the workflow template, as described in https://cloud.google.com/apis/design/resource_names of the form projects/{project_id}/regions/{region}/workflowTemplates/{template_id}
-    * @param {().InstantiateWorkflowTemplateRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dataproc.projects.locations.workflowTemplates.getIamPolicy({
+    *     // Optional. The policy format version to be returned.Valid values are 0, 1, and 3. Requests specifying an invalid value will be rejected.Requests for policies with any conditional bindings must specify version 3. Policies without any conditional bindings may specify any valid value or leave the field unset.To learn which resources support conditions in their IAM policies, see the IAM documentation (https://cloud.google.com/iam/help/conditions/resource-policies).
+    *     'options.requestedPolicyVersion': 'placeholder-value',
+    *     // REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
+    *     resource:
+    *       'projects/my-project/locations/my-location/workflowTemplates/my-workflowTemplate',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bindings": [],
+    *   //   "etag": "my_etag",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getIamPolicy(params: ParamsResourceProjectsLocationsWorkflowtemplatesGetiampolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getIamPolicy(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesGetiampolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def instantiate(): GaxiosPromise[SchemaOperation] = js.native
   def instantiate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def instantiate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -178,8 +373,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def instantiate(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiate,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def instantiate(params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiate, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def instantiate(
@@ -187,30 +382,78 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.instantiateInline
-    * @desc Instantiates a template and begins execution.This method is
-    * equivalent to executing the sequence CreateWorkflowTemplate,
-    * InstantiateWorkflowTemplate, DeleteWorkflowTemplate.The returned
-    * Operation can be used to track execution of workflow by polling
-    * operations.get. The Operation will complete when entire workflow is
-    * finished.The running workflow can be aborted via operations.cancel. This
-    * will cause any inflight jobs to be cancelled and workflow-owned clusters
-    * to be deleted.The Operation.metadata will be WorkflowMetadata.On
-    * successful completion, Operation.response will be Empty.
-    * @alias dataproc.projects.locations.workflowTemplates.instantiateInline
-    * @memberOf! ()
+    * Instantiates a template and begins execution.The returned Operation can be used to track execution of workflow by polling operations.get. The Operation will complete when entire workflow is finished.The running workflow can be aborted via operations.cancel. This will cause any inflight jobs to be cancelled and workflow-owned clusters to be deleted.The Operation.metadata will be WorkflowMetadata (https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#workflowmetadata). Also see Using WorkflowMetadata (https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).On successful completion, Operation.response will be Empty.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.instanceId Deprecated. Please use request_id field instead.
-    * @param {string} params.parent Required. The "resource name" of the workflow template region, as described in https://cloud.google.com/apis/design/resource_names of the form projects/{project_id}/regions/{region}
-    * @param {string=} params.requestId Optional. A tag that prevents multiple concurrent workflow instances with the same tag from running. This mitigates risk of concurrent instances started due to retries.It is recommended to always set this value to a UUID (https://en.wikipedia.org/wiki/Universally_unique_identifier).The tag must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). The maximum length is 40 characters.
-    * @param {().WorkflowTemplate} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dataproc.projects.locations.workflowTemplates.instantiate({
+    *     // Required. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates.instantiate, the resource name of the template has the following format: projects/{project_id\}/regions/{region\}/workflowTemplates/{template_id\} For projects.locations.workflowTemplates.instantiate, the resource name of the template has the following format: projects/{project_id\}/locations/{location\}/workflowTemplates/{template_id\}
+    *     name: 'projects/my-project/locations/my-location/workflowTemplates/my-workflowTemplate',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "instanceId": "my_instanceId",
+    *       //   "parameters": {},
+    *       //   "requestId": "my_requestId",
+    *       //   "version": 0
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def instantiate(params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def instantiate(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def instantiateInline(): GaxiosPromise[SchemaOperation] = js.native
   def instantiateInline(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def instantiateInline(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -221,8 +464,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def instantiateInline(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiateinline,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def instantiateInline(params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiateinline, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def instantiateInline(
@@ -230,21 +473,92 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.list
-    * @desc Lists workflows that match the specified filter in the request.
-    * @alias dataproc.projects.locations.workflowTemplates.list
-    * @memberOf! ()
+    * Instantiates a template and begins execution.This method is equivalent to executing the sequence CreateWorkflowTemplate, InstantiateWorkflowTemplate, DeleteWorkflowTemplate.The returned Operation can be used to track execution of workflow by polling operations.get. The Operation will complete when entire workflow is finished.The running workflow can be aborted via operations.cancel. This will cause any inflight jobs to be cancelled and workflow-owned clusters to be deleted.The Operation.metadata will be WorkflowMetadata (https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#workflowmetadata). Also see Using WorkflowMetadata (https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).On successful completion, Operation.response will be Empty.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {integer=} params.pageSize Optional. The maximum number of results to return in each response.
-    * @param {string=} params.pageToken Optional. The page token, returned by a previous call, to request the next page of results.
-    * @param {string} params.parent Required. The "resource name" of the region, as described in https://cloud.google.com/apis/design/resource_names of the form projects/{project_id}/regions/{region}
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await dataproc.projects.locations.workflowTemplates.instantiateInline({
+    *       // Deprecated. Please use request_id field instead.
+    *       instanceId: 'placeholder-value',
+    *       // Required. The resource name of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates,instantiateinline, the resource name of the region has the following format: projects/{project_id\}/regions/{region\} For projects.locations.workflowTemplates.instantiateinline, the resource name of the location has the following format: projects/{project_id\}/locations/{location\}
+    *       parent: 'projects/my-project/locations/my-location',
+    *       // Optional. A tag that prevents multiple concurrent workflow instances with the same tag from running. This mitigates risk of concurrent instances started due to retries.It is recommended to always set this value to a UUID (https://en.wikipedia.org/wiki/Universally_unique_identifier).The tag must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). The maximum length is 40 characters.
+    *       requestId: 'placeholder-value',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "createTime": "my_createTime",
+    *         //   "dagTimeout": "my_dagTimeout",
+    *         //   "id": "my_id",
+    *         //   "jobs": [],
+    *         //   "labels": {},
+    *         //   "name": "my_name",
+    *         //   "parameters": [],
+    *         //   "placement": {},
+    *         //   "updateTime": "my_updateTime",
+    *         //   "version": 0
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def instantiateInline(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiateinline,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def instantiateInline(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiateinline,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListWorkflowTemplatesResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
@@ -255,8 +569,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesList,
-    options: BodyResponseCallback[SchemaListWorkflowTemplatesResponse],
-    callback: BodyResponseCallback[SchemaListWorkflowTemplatesResponse]
+    options: BodyResponseCallback[Readable | SchemaListWorkflowTemplatesResponse],
+    callback: BodyResponseCallback[Readable | SchemaListWorkflowTemplatesResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsLocationsWorkflowtemplatesList, options: MethodOptions): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
   def list(
@@ -264,21 +578,68 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListWorkflowTemplatesResponse]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.setIamPolicy
-    * @desc Sets the access control policy on the specified resource. Replaces
-    * any existing policy.
-    * @alias dataproc.projects.locations.workflowTemplates.setIamPolicy
-    * @memberOf! ()
+    * Lists workflows that match the specified filter in the request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.resource_ REQUIRED: The resource for which the policy is being specified. See the operation documentation for the appropriate value for this field.
-    * @param {().SetIamPolicyRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dataproc.projects.locations.workflowTemplates.list({
+    *     // Optional. The maximum number of results to return in each response.
+    *     pageSize: 'placeholder-value',
+    *     // Optional. The page token, returned by a previous call, to request the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Required. The resource name of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates,list, the resource name of the region has the following format: projects/{project_id\}/regions/{region\} For projects.locations.workflowTemplates.list, the resource name of the location has the following format: projects/{project_id\}/locations/{location\}
+    *     parent: 'projects/my-project/locations/my-location',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "templates": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceProjectsLocationsWorkflowtemplatesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
@@ -289,8 +650,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesSetiampolicy,
-    options: BodyResponseCallback[SchemaPolicy],
-    callback: BodyResponseCallback[SchemaPolicy]
+    options: BodyResponseCallback[Readable | SchemaPolicy],
+    callback: BodyResponseCallback[Readable | SchemaPolicy]
   ): Unit = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsWorkflowtemplatesSetiampolicy, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
@@ -298,24 +659,74 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPolicy]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.testIamPermissions
-    * @desc Returns permissions that a caller has on the specified resource. If
-    * the resource does not exist, this will return an empty set of
-    * permissions, not a NOT_FOUND error.Note: This operation is designed to be
-    * used for building permission-aware UIs and command-line tools, not for
-    * authorization checking. This operation may "fail open" without warning.
-    * @alias dataproc.projects.locations.workflowTemplates.testIamPermissions
-    * @memberOf! ()
+    * Sets the access control policy on the specified resource. Replaces any existing policy.Can return NOT_FOUND, INVALID_ARGUMENT, and PERMISSION_DENIED errors.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.resource_ REQUIRED: The resource for which the policy detail is being requested. See the operation documentation for the appropriate value for this field.
-    * @param {().TestIamPermissionsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dataproc.projects.locations.workflowTemplates.setIamPolicy({
+    *     // REQUIRED: The resource for which the policy is being specified. See the operation documentation for the appropriate value for this field.
+    *     resource:
+    *       'projects/my-project/locations/my-location/workflowTemplates/my-workflowTemplate',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "policy": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bindings": [],
+    *   //   "etag": "my_etag",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setIamPolicy(params: ParamsResourceProjectsLocationsWorkflowtemplatesSetiampolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setIamPolicy(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesSetiampolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
   def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
@@ -326,8 +737,8 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesTestiampermissions,
-    options: BodyResponseCallback[SchemaTestIamPermissionsResponse],
-    callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
+    options: BodyResponseCallback[Readable | SchemaTestIamPermissionsResponse],
+    callback: BodyResponseCallback[Readable | SchemaTestIamPermissionsResponse]
   ): Unit = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsWorkflowtemplatesTestiampermissions, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
@@ -335,21 +746,76 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
   ): Unit = js.native
-  
   /**
-    * dataproc.projects.locations.workflowTemplates.update
-    * @desc Updates (replaces) workflow template. The updated template must
-    * contain version that matches the current server version.
-    * @alias dataproc.projects.locations.workflowTemplates.update
-    * @memberOf! ()
+    * Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error.Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Output only. The "resource name" of the template, as described in https://cloud.google.com/apis/design/resource_names of the form projects/{project_id}/regions/{region}/workflowTemplates/{template_id}
-    * @param {().WorkflowTemplate} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await dataproc.projects.locations.workflowTemplates.testIamPermissions({
+    *       // REQUIRED: The resource for which the policy detail is being requested. See the operation documentation for the appropriate value for this field.
+    *       resource:
+    *         'projects/my-project/locations/my-location/workflowTemplates/my-workflowTemplate',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "permissions": []
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "permissions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def testIamPermissions(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesTestiampermissions,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def testIamPermissions(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesTestiampermissions,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def update(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
@@ -360,13 +826,95 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends StObject {
   ): Unit = js.native
   def update(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesUpdate,
-    options: BodyResponseCallback[SchemaWorkflowTemplate],
-    callback: BodyResponseCallback[SchemaWorkflowTemplate]
+    options: BodyResponseCallback[Readable | SchemaWorkflowTemplate],
+    callback: BodyResponseCallback[Readable | SchemaWorkflowTemplate]
   ): Unit = js.native
   def update(params: ParamsResourceProjectsLocationsWorkflowtemplatesUpdate, options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def update(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWorkflowTemplate]
+  ): Unit = js.native
+  /**
+    * Updates (replaces) workflow template. The updated template must contain version that matches the current server version.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dataproc.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dataproc = google.dataproc('v1beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dataproc.projects.locations.workflowTemplates.update({
+    *     // Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id\}/regions/{region\}/workflowTemplates/{template_id\} For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id\}/locations/{location\}/workflowTemplates/{template_id\}
+    *     name: 'projects/my-project/locations/my-location/workflowTemplates/my-workflowTemplate',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "createTime": "my_createTime",
+    *       //   "dagTimeout": "my_dagTimeout",
+    *       //   "id": "my_id",
+    *       //   "jobs": [],
+    *       //   "labels": {},
+    *       //   "name": "my_name",
+    *       //   "parameters": [],
+    *       //   "placement": {},
+    *       //   "updateTime": "my_updateTime",
+    *       //   "version": 0
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "createTime": "my_createTime",
+    *   //   "dagTimeout": "my_dagTimeout",
+    *   //   "id": "my_id",
+    *   //   "jobs": [],
+    *   //   "labels": {},
+    *   //   "name": "my_name",
+    *   //   "parameters": [],
+    *   //   "placement": {},
+    *   //   "updateTime": "my_updateTime",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceProjectsLocationsWorkflowtemplatesUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceProjectsLocationsWorkflowtemplatesUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

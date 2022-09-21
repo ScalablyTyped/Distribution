@@ -1,7 +1,6 @@
 package typings.browserResolve
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,57 +35,14 @@ object mod {
   inline def sync(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def sync(id: String, opts: SyncOpts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.browserResolve.mod.Opts because var conflicts: basedir, packageFilter, paths. Inlined browser, filename, modules */ trait AsyncOpts
-    extends StObject
-       with typings.resolve.mod.AsyncOpts {
-    
-    /**
-      * the 'browser' property to use from package.json
-      * @default 'browser'
-      */
-    var browser: js.UndefOr[String] = js.undefined
-    
-    /**
-      * the calling filename where the require() call originated (in the source)
-      */
-    var filename: js.UndefOr[String] = js.undefined
-    
-    /**
-      * modules object with id to path mappings to consult before doing manual resolution
-      * (use to provide core modules)
-      */
-    var modules: js.UndefOr[StringDictionary[String]] = js.undefined
-  }
-  object AsyncOpts {
-    
-    inline def apply(): AsyncOpts = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AsyncOpts]
-    }
-    
-    extension [Self <: AsyncOpts](x: Self) {
-      
-      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
-      
-      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
-      
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
-      
-      inline def setModules(value: StringDictionary[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
-      
-      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
-    }
-  }
+  type AsyncOpts = typings.resolve.mod.AsyncOpts & Opts
   
   /**
     * Callback invoked when resolving asynchronously
     * @param error
     * @param resolved Absolute path to resolved identifier
     */
-  type Callback = js.Function2[/* err */ Error | Null, /* resolved */ js.UndefOr[String], Unit]
+  type Callback = js.Function2[/* err */ js.Error | Null, /* resolved */ js.UndefOr[String], Unit]
   
   trait Opts extends StObject {
     
@@ -115,7 +71,7 @@ object mod {
     /**
       * transform the parsed package.json contents before looking at the main field
       */
-    var packageFilter: js.UndefOr[js.Function2[/* info */ js.Any, /* pkgdir */ String, js.Any]] = js.undefined
+    var packageFilter: js.UndefOr[js.Function2[/* info */ Any, /* pkgdir */ String, Any]] = js.undefined
     
     /**
       * require.paths array to use if nothing is found on the normal node_modules recursive walk
@@ -147,7 +103,7 @@ object mod {
       
       inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      inline def setPackageFilter(value: (/* info */ js.Any, /* pkgdir */ String) => js.Any): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
+      inline def setPackageFilter(value: (/* info */ Any, /* pkgdir */ String) => Any): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
       
       inline def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
       
@@ -155,52 +111,9 @@ object mod {
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.browserResolve.mod.Opts because var conflicts: basedir, packageFilter, paths. Inlined browser, filename, modules */ trait SyncOpts
-    extends StObject
-       with typings.resolve.mod.SyncOpts {
-    
-    /**
-      * the 'browser' property to use from package.json
-      * @default 'browser'
-      */
-    var browser: js.UndefOr[String] = js.undefined
-    
-    /**
-      * the calling filename where the require() call originated (in the source)
-      */
-    var filename: js.UndefOr[String] = js.undefined
-    
-    /**
-      * modules object with id to path mappings to consult before doing manual resolution
-      * (use to provide core modules)
-      */
-    var modules: js.UndefOr[StringDictionary[String]] = js.undefined
-  }
-  object SyncOpts {
-    
-    inline def apply(): SyncOpts = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SyncOpts]
-    }
-    
-    extension [Self <: SyncOpts](x: Self) {
-      
-      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
-      
-      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
-      
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
-      
-      inline def setModules(value: StringDictionary[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
-      
-      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
-    }
-  }
+  type SyncOpts = typings.resolve.mod.SyncOpts & Opts
 }

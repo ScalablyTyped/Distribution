@@ -26,12 +26,12 @@ trait IRenderable
     * @param position String/Number/Ext.dom.Element/HTMLElement Index, element id or element you want to put this component before.
     * @returns HTMLElement DOM element that you can use in the insertBefore
     */
-  var getInsertPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[js.Any], HTMLElement]] = js.undefined
+  var getInsertPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[Any], HTMLElement]] = js.undefined
   
   /** [Method] Initialized the renderData to be used when rendering the renderTpl
     * @returns Object Object with keys and values that are going to be applied to the renderTpl
     */
-  var initRenderData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var initRenderData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Template method called when this Component s DOM structure is created
     * @param parentNode Ext.core.Element The parent Element in which this Component's encapsulating element is contained.
@@ -46,7 +46,7 @@ trait IRenderable
     * @param position String/Number The element ID or DOM node index within the container before which this component will be inserted (defaults to appending to the end of the container)
     */
   var render: js.UndefOr[
-    js.Function2[/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* container */ js.UndefOr[Any], /* position */ js.UndefOr[Any], Unit]
   ] = js.undefined
 }
 object IRenderable {
@@ -70,11 +70,11 @@ object IRenderable {
     
     inline def setEnsureAttachedToBodyUndefined: Self = StObject.set(x, "ensureAttachedToBody", js.undefined)
     
-    inline def setGetInsertPosition(value: /* position */ js.UndefOr[js.Any] => HTMLElement): Self = StObject.set(x, "getInsertPosition", js.Any.fromFunction1(value))
+    inline def setGetInsertPosition(value: /* position */ js.UndefOr[Any] => HTMLElement): Self = StObject.set(x, "getInsertPosition", js.Any.fromFunction1(value))
     
     inline def setGetInsertPositionUndefined: Self = StObject.set(x, "getInsertPosition", js.undefined)
     
-    inline def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
+    inline def setInitRenderData(value: () => Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     inline def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
     
@@ -82,7 +82,7 @@ object IRenderable {
     
     inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
-    inline def setRender(value: (/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (/* container */ js.UndefOr[Any], /* position */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }

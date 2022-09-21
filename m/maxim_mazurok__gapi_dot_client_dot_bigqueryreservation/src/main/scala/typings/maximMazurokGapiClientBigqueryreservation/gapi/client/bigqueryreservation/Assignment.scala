@@ -12,7 +12,10 @@ trait Assignment extends StObject {
   /** Which type of jobs will use the reservation. */
   var jobType: js.UndefOr[String] = js.undefined
   
-  /** Output only. Name of the resource. E.g.: `projects/myproject/locations/US/reservations/team1-prod/assignments/123`. */
+  /**
+    * Output only. Name of the resource. E.g.: `projects/myproject/locations/US/reservations/team1-prod/assignments/123`. The assignment_id must only contain lower case alphanumeric
+    * characters or dashes and the max length is 64 characters.
+    */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. State of the assignment. */

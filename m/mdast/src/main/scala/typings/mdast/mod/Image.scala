@@ -1,6 +1,7 @@
 package typings.mdast.mod
 
 import typings.mdast.mdastStrings.image
+import typings.unist.mod.Data
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Image
   extends StObject
-     with Node
+     with Node[Data]
      with Resource
-     with Alternative
-     with StaticPhrasingContent {
+     with Alternative {
   
   @JSName("type")
   var type_Image: image

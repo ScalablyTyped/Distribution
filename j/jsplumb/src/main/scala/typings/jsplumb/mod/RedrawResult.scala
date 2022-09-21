@@ -21,10 +21,10 @@ object RedrawResult {
     
     inline def setC(value: js.Array[Connection]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    inline def setCVarargs(value: Connection*): Self = StObject.set(x, "c", js.Array(value :_*))
+    inline def setCVarargs(value: Connection*): Self = StObject.set(x, "c", js.Array(value*))
     
     inline def setE(value: js.Array[Endpoint]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    inline def setEVarargs(value: Endpoint*): Self = StObject.set(x, "e", js.Array(value :_*))
+    inline def setEVarargs(value: Endpoint*): Self = StObject.set(x, "e", js.Array(value*))
   }
 }

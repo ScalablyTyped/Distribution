@@ -12,7 +12,7 @@ trait PublicIpv4Pool extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the location from which the address pool is advertised. A network border group is a unique set of Availability Zones or Local Zones from where AWS advertises public IP addresses.
+    * The name of the location from which the address pool is advertised. A network border group is a unique set of Availability Zones or Local Zones from where Amazon Web Services advertises public IP addresses.
     */
   var NetworkBorderGroup: js.UndefOr[String] = js.undefined
   
@@ -62,7 +62,7 @@ object PublicIpv4Pool {
     
     inline def setPoolAddressRangesUndefined: Self = StObject.set(x, "PoolAddressRanges", js.undefined)
     
-    inline def setPoolAddressRangesVarargs(value: PublicIpv4PoolRange*): Self = StObject.set(x, "PoolAddressRanges", js.Array(value :_*))
+    inline def setPoolAddressRangesVarargs(value: PublicIpv4PoolRange*): Self = StObject.set(x, "PoolAddressRanges", js.Array(value*))
     
     inline def setPoolId(value: String): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object PublicIpv4Pool {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTotalAddressCount(value: Integer): Self = StObject.set(x, "TotalAddressCount", value.asInstanceOf[js.Any])
     

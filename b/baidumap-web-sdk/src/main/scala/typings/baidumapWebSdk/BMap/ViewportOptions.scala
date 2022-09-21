@@ -35,7 +35,7 @@ object ViewportOptions {
     
     inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
     
-    inline def setMarginsVarargs(value: Double*): Self = StObject.set(x, "margins", js.Array(value :_*))
+    inline def setMarginsVarargs(value: Double*): Self = StObject.set(x, "margins", js.Array(value*))
     
     inline def setZoomFactor(value: Double): Self = StObject.set(x, "zoomFactor", value.asInstanceOf[js.Any])
     

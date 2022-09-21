@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientArtifactregistry.anon
 
-import typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregistry.Repository
+import typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregistry.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait Parent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The name of the parent resource where the repository will be created. */
+  /** The name of the parent resource where the tag will be created. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -38,11 +38,11 @@ trait Parent extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The repository id to use for this repository. */
-  var repositoryId: js.UndefOr[String] = js.undefined
-  
   /** Request body */
-  var resource: Repository
+  var resource: Tag
+  
+  /** The tag id to use for this repository. */
+  var tagId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  inline def apply(parent: String, resource: Repository): Parent = {
+  inline def apply(parent: String, resource: Tag): Parent = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
@@ -97,11 +97,11 @@ object Parent {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setResource(value: Tag): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    inline def setRepositoryIdUndefined: Self = StObject.set(x, "repositoryId", js.undefined)
+    inline def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
     
-    inline def setResource(value: Repository): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

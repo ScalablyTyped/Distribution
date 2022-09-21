@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.success
   - typings.microsoftGraph.microsoftGraphStrings.failure
   - typings.microsoftGraph.microsoftGraphStrings.timeout
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait OperationResult extends StObject
 object OperationResult {
@@ -19,5 +20,5 @@ object OperationResult {
   
   inline def timeout: typings.microsoftGraph.microsoftGraphStrings.timeout = "timeout".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.timeout]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

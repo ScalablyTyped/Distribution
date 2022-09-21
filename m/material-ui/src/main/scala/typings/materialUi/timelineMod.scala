@@ -10,10 +10,10 @@ object timelineMod {
   
   @JSImport("material-ui/svg-icons/action/timeline", JSImport.Default)
   @js.native
-  class default () extends ActionTimeline
+  open class default () extends ActionTimeline
   
   @JSImport("material-ui/svg-icons/action/timeline", "ActionTimeline")
   @js.native
-  class ActionTimeline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTimeline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

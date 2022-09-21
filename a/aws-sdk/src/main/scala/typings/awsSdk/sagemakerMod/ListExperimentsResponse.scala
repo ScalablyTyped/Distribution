@@ -29,7 +29,7 @@ object ListExperimentsResponse {
     
     inline def setExperimentSummariesUndefined: Self = StObject.set(x, "ExperimentSummaries", js.undefined)
     
-    inline def setExperimentSummariesVarargs(value: ExperimentSummary*): Self = StObject.set(x, "ExperimentSummaries", js.Array(value :_*))
+    inline def setExperimentSummariesVarargs(value: ExperimentSummary*): Self = StObject.set(x, "ExperimentSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

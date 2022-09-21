@@ -1,6 +1,8 @@
 package typings.reveal
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.reveal.anon.H
+import typings.reveal.anon.Next
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,11 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RevealStatic extends StObject {
   
   // States
-  def addEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit]): Unit = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit], useCapture: Boolean): Unit = js.native
+  def addEventListener(`type`: String, listener: js.Function1[/* event */ Any, Unit]): Unit = js.native
+  def addEventListener(`type`: String, listener: js.Function1[/* event */ Any, Unit], useCapture: Boolean): Unit = js.native
   
   def addEventListeners(): Unit = js.native
   
+  def availableFragments(): Next = js.native
+  
+  def configure(): Unit = js.native
   def configure(diff: RevealOptions): Unit = js.native
   
   def down(): Unit = js.native
@@ -26,12 +31,16 @@ trait RevealStatic extends StObject {
   def getIndices(): H = js.native
   def getIndices(slide: Element): H = js.native
   
+  def getPlugin(name: String): Plugin = js.native
+  
+  def getPlugins(): StringDictionary[Plugin] = js.native
+  
   // Retrieves the previous and current slide elements
   def getPreviousSlide(): Element = js.native
   
   def getProgress(): Double = js.native
   
-  def getQueryHash(): js.Any = js.native
+  def getQueryHash(): Any = js.native
   
   def getScale(): Double = js.native
   
@@ -42,11 +51,15 @@ trait RevealStatic extends StObject {
   def getSlideNotes(): String = js.native
   def getSlideNotes(slide: Element): String = js.native
   
-  def getState(): js.Any = js.native
+  def getState(): Any = js.native
   
   def getTotalSlides(): Double = js.native
   
-  def initialize(config: RevealOptions): Unit = js.native
+  // Plugins
+  def hasPlugin(name: String): Boolean = js.native
+  
+  def initialize(): js.Promise[Any] = js.native
+  def initialize(config: RevealOptions): js.Promise[Any] = js.native
   
   def isAutoSliding(): Boolean = js.native
   
@@ -72,14 +85,14 @@ trait RevealStatic extends StObject {
   
   def prevFragment(): Boolean = js.native
   
-  def removeEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit]): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit], useCapture: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Function1[/* event */ Any, Unit]): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Function1[/* event */ Any, Unit], useCapture: Boolean): Unit = js.native
   
   def removeEventListeners(): Unit = js.native
   
   def right(): Unit = js.native
   
-  def setState(state: js.Any): Unit = js.native
+  def setState(state: Any): Unit = js.native
   
   // Randomize the order of slides
   def shuffle(): Unit = js.native
@@ -100,7 +113,7 @@ trait RevealStatic extends StObject {
   def toggleAutoSlide(): Unit = js.native
   def toggleAutoSlide(`override`: Boolean): Unit = js.native
   
-  // Toogle presentation states
+  // Toggle presentation states
   def toggleOverview(): Unit = js.native
   def toggleOverview(`override`: Boolean): Unit = js.native
   

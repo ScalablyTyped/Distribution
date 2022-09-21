@@ -4,7 +4,7 @@ import typings.react.mod.Context
 import typings.react.mod.NamedExoticComponent
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
-import typings.reactNativeGestureHandler.mod.PanGestureHandler
+import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandler
 import typings.reactNavigationStack.anon.ClosingRouteKeys
 import typings.reactNavigationStack.anon.Descriptors
 import typings.reactNavigationStack.anon.ReadonlyProps
@@ -30,7 +30,7 @@ object vendorMod {
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor", "Assets")
   @js.native
-  val Assets: js.Array[js.Any] = js.native
+  val Assets: js.Array[Any] = js.native
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor", "CardAnimationContext")
   @js.native
@@ -98,7 +98,7 @@ object vendorMod {
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor", "StackView")
   @js.native
-  class StackView () extends default
+  open class StackView () extends default
   /* static members */
   object StackView {
     

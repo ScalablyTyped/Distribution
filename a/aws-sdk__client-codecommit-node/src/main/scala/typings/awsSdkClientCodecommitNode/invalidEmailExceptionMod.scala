@@ -8,5 +8,5 @@ object invalidEmailExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidEmailException", "InvalidEmailException")
   @js.native
-  val InvalidEmailException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidEmailException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

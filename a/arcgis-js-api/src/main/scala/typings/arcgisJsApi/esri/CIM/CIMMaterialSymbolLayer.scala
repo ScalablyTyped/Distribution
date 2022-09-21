@@ -38,7 +38,7 @@ object CIMMaterialSymbolLayer {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setMaterialMode(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MaterialMode * / any */ String

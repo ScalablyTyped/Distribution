@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "lru-memoizer" : "2.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "lru-memoizer" : "2.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

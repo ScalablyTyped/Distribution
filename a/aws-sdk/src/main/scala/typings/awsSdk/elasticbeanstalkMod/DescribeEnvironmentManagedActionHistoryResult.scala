@@ -29,7 +29,7 @@ object DescribeEnvironmentManagedActionHistoryResult {
     
     inline def setManagedActionHistoryItemsUndefined: Self = StObject.set(x, "ManagedActionHistoryItems", js.undefined)
     
-    inline def setManagedActionHistoryItemsVarargs(value: ManagedActionHistoryItem*): Self = StObject.set(x, "ManagedActionHistoryItems", js.Array(value :_*))
+    inline def setManagedActionHistoryItemsVarargs(value: ManagedActionHistoryItem*): Self = StObject.set(x, "ManagedActionHistoryItems", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

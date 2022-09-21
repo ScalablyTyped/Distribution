@@ -11,7 +11,7 @@ trait PlannerTaskDetails
   // The collection of checklist items on the task.
   var checklist: js.UndefOr[NullableOption[PlannerChecklistItems]] = js.undefined
   
-  // Description of the task
+  // Description of the task.
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**

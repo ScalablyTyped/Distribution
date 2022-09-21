@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Application")
 @js.native
-/* private */ class Application ()
+/* private */ open class Application ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Application

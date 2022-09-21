@@ -10,10 +10,10 @@ Highly configurable, well-tested, JavaScript-based HTML minifier.
 | ------------------ | :-------------: |
 | Full name          | html-minifier |
 | Keywords           | cli, compress, compressor, css, html, htmlmin, javascript, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, uglifier, uglify |
-| # releases         | 3 |
-| # dependents       | 1401 |
-| # downloads        | 230313034 |
-| # stars            | 97 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6063766E7 |
+| # stars            | 4648.0 |
 
 ## Links
 - [Homepage](https://kangax.github.io/html-minifier/)

@@ -18,11 +18,11 @@ trait PartialnameSHA256PBKDF2en extends StObject {
   
   var iterations: js.UndefOr[Double] = js.undefined
   
-  var length: js.UndefOr[js.Any] = js.undefined
+  var length: js.UndefOr[Any] = js.undefined
   
   var name: js.UndefOr[`SHA-256` | PBKDF2] = js.undefined
   
-  var salt: js.UndefOr[js.Any] = js.undefined
+  var salt: js.UndefOr[Any] = js.undefined
 }
 object PartialnameSHA256PBKDF2en {
   
@@ -45,7 +45,7 @@ object PartialnameSHA256PBKDF2en {
     
     inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    inline def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
@@ -53,7 +53,7 @@ object PartialnameSHA256PBKDF2en {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+    inline def setSalt(value: Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
     inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
   }

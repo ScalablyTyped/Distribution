@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__skip-nav
 
-Typings are for version 0.1
+Typings are for version 0.17.0
 
 ## Library description:
 Skip navigation links for screen reader and keyboard users.
@@ -10,10 +10,10 @@ Skip navigation links for screen reader and keyboard users.
 | ------------------ | :-------------: |
 | Full name          | @reach/skip-nav |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 31 |
-| # downloads        | 402199 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 155895.0 |
+| # stars            | 5390.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Skip navigation links for screen reader and keyboard users.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

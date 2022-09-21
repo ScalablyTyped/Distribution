@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColorStyle extends StObject {
   
-  /** RGB color. */
+  /**
+    * RGB color. The [`alpha`](/sheets/api/reference/rest/v4/spreadsheets/other#Color.FIELDS.alpha) value in the [`Color`](/sheets/api/reference/rest/v4/spreadsheets/other#color) object
+    * isn't generally supported.
+    */
   var rgbColor: js.UndefOr[Color] = js.undefined
   
   /** Theme color. */

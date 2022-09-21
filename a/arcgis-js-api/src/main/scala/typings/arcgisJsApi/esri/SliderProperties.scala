@@ -22,6 +22,8 @@ trait SliderProperties
   /**
     * When `true`, sets the slider to a disabled state so the user cannot interact with it.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#disabled)
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -29,9 +31,25 @@ trait SliderProperties
   /**
     * Indicates if the user can drag the segment between thumbs to update thumb positions.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#draggableSegmentsEnabled)
     */
   var draggableSegmentsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When set, the user is restricted from moving slider thumbs to positions higher than this value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#effectiveMax)
+    */
+  var effectiveMax: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When set, the user is restricted from moving slider thumbs to positions less than this value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#effectiveMin)
+    */
+  var effectiveMin: js.UndefOr[Double] = js.undefined
   
   /**
     * A function that provides the developer with access to the input elements when [rangeLabelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled) and/or [labelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelInputsEnabled) are set to `true`.
@@ -64,19 +82,16 @@ trait SliderProperties
   /**
     * Indicates whether to enable editing input values via keyboard input when the user clicks a label.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelInputsEnabled)
     */
   var labelInputsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display labels alongside slider thumbs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelsVisible)
-    */
-  var labelsVisible: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * Determines the layout/orientation of the Slider widget.
+    *
+    * @default horizontal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#layout)
     */
@@ -99,6 +114,8 @@ trait SliderProperties
   /**
     * Defines how slider thumb values should be rounded.
     *
+    * @default 4
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#precision)
     */
   var precision: js.UndefOr[Double] = js.undefined
@@ -106,19 +123,16 @@ trait SliderProperties
   /**
     * Indicates whether to enable editing range values via keyboard input when the user clicks a [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min) or [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#max) label.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled)
     */
   var rangeLabelInputsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min) or [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#max) range values on the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelsVisible)
-    */
-  var rangeLabelsVisible: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * Indicates if the closest thumb will snap to the clicked location on the track.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#snapOnClickEnabled)
     */
@@ -132,6 +146,15 @@ trait SliderProperties
   var steps: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
+    * When `true`, all segments will sync together in updating thumb values when the user drags any segment.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#syncedSegmentsEnabled)
+    */
+  var syncedSegmentsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Function that executes each time a thumb is created on the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#thumbCreatedFunction)
@@ -140,6 +163,8 @@ trait SliderProperties
   
   /**
     * When `false`, the user can freely move any slider thumb to any position along the track.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#thumbsConstrained)
     */
@@ -197,8 +222,16 @@ object SliderProperties {
     
     inline def setDraggableSegmentsEnabledUndefined: Self = StObject.set(x, "draggableSegmentsEnabled", js.undefined)
     
+    inline def setEffectiveMax(value: Double): Self = StObject.set(x, "effectiveMax", value.asInstanceOf[js.Any])
+    
+    inline def setEffectiveMaxUndefined: Self = StObject.set(x, "effectiveMax", js.undefined)
+    
+    inline def setEffectiveMin(value: Double): Self = StObject.set(x, "effectiveMin", value.asInstanceOf[js.Any])
+    
+    inline def setEffectiveMinUndefined: Self = StObject.set(x, "effectiveMin", js.undefined)
+    
     inline def setInputCreatedFunction(
-      value: (/* inputElement */ js.Any, /* type */ max | min | thumb, /* thumbIndex */ js.UndefOr[Double]) => Unit
+      value: (/* inputElement */ Any, /* type */ max | min | thumb, /* thumbIndex */ js.UndefOr[Double]) => scala.Unit
     ): Self = StObject.set(x, "inputCreatedFunction", js.Any.fromFunction3(value))
     
     inline def setInputCreatedFunctionUndefined: Self = StObject.set(x, "inputCreatedFunction", js.undefined)
@@ -225,10 +258,6 @@ object SliderProperties {
     
     inline def setLabelInputsEnabledUndefined: Self = StObject.set(x, "labelInputsEnabled", js.undefined)
     
-    inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
-    
-    inline def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
-    
     inline def setLayout(value: horizontal | `horizontal-reversed` | vertical | `vertical-reversed`): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
@@ -249,10 +278,6 @@ object SliderProperties {
     
     inline def setRangeLabelInputsEnabledUndefined: Self = StObject.set(x, "rangeLabelInputsEnabled", js.undefined)
     
-    inline def setRangeLabelsVisible(value: Boolean): Self = StObject.set(x, "rangeLabelsVisible", value.asInstanceOf[js.Any])
-    
-    inline def setRangeLabelsVisibleUndefined: Self = StObject.set(x, "rangeLabelsVisible", js.undefined)
-    
     inline def setSnapOnClickEnabled(value: Boolean): Self = StObject.set(x, "snapOnClickEnabled", value.asInstanceOf[js.Any])
     
     inline def setSnapOnClickEnabledUndefined: Self = StObject.set(x, "snapOnClickEnabled", js.undefined)
@@ -261,10 +286,14 @@ object SliderProperties {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value*))
+    
+    inline def setSyncedSegmentsEnabled(value: Boolean): Self = StObject.set(x, "syncedSegmentsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setSyncedSegmentsEnabledUndefined: Self = StObject.set(x, "syncedSegmentsEnabled", js.undefined)
     
     inline def setThumbCreatedFunction(
-      value: (/* index */ Double, /* value */ Double, /* thumbElement */ HTMLElement, /* labelElement */ js.UndefOr[HTMLElement]) => Unit
+      value: (/* index */ Double, /* value */ Double, /* thumbElement */ HTMLElement, /* labelElement */ js.UndefOr[HTMLElement]) => scala.Unit
     ): Self = StObject.set(x, "thumbCreatedFunction", js.Any.fromFunction4(value))
     
     inline def setThumbCreatedFunctionUndefined: Self = StObject.set(x, "thumbCreatedFunction", js.undefined)
@@ -277,7 +306,7 @@ object SliderProperties {
     
     inline def setTickConfigsUndefined: Self = StObject.set(x, "tickConfigs", js.undefined)
     
-    inline def setTickConfigsVarargs(value: TickConfig*): Self = StObject.set(x, "tickConfigs", js.Array(value :_*))
+    inline def setTickConfigsVarargs(value: TickConfig*): Self = StObject.set(x, "tickConfigs", js.Array(value*))
     
     inline def setTrackElement(value: HTMLElement): Self = StObject.set(x, "trackElement", value.asInstanceOf[js.Any])
     
@@ -287,7 +316,7 @@ object SliderProperties {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     
     inline def setViewModel(value: SliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

@@ -23,6 +23,12 @@ trait Manifest extends StObject {
   /** Output only. The YAML layout for this manifest. */
   var layout: js.UndefOr[String] = js.undefined
   
+  /** Output only. The computed size of the fully expanded manifest. */
+  var manifestSizeBytes: js.UndefOr[String] = js.undefined
+  
+  /** Output only. The size limit for expanded manifests in the project. */
+  var manifestSizeLimitBytes: js.UndefOr[String] = js.undefined
+  
   /** Output only. The name of the manifest. */
   var name: js.UndefOr[String] = js.undefined
   
@@ -54,7 +60,7 @@ object Manifest {
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setImportsVarargs(value: ImportFile*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: ImportFile*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
@@ -63,6 +69,14 @@ object Manifest {
     inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setManifestSizeBytes(value: String): Self = StObject.set(x, "manifestSizeBytes", value.asInstanceOf[js.Any])
+    
+    inline def setManifestSizeBytesUndefined: Self = StObject.set(x, "manifestSizeBytes", js.undefined)
+    
+    inline def setManifestSizeLimitBytes(value: String): Self = StObject.set(x, "manifestSizeLimitBytes", value.asInstanceOf[js.Any])
+    
+    inline def setManifestSizeLimitBytesUndefined: Self = StObject.set(x, "manifestSizeLimitBytes", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,7 @@ object exceptionsMod {
   
   @JSImport("ethereumjs-vm/dist/exceptions", "VmError")
   @js.native
-  class VmError protected () extends StObject {
+  open class VmError protected () extends StObject {
     def this(error: ERROR) = this()
     
     var error: ERROR = js.native

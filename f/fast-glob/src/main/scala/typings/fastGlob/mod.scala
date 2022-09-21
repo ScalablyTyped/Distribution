@@ -1,7 +1,7 @@
 package typings.fastGlob
 
 import typings.fastGlob.fastGlobBooleans.`true`
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +35,10 @@ object mod {
   inline def isDynamicPattern(source: typings.fastGlob.typesMod.Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isDynamicPattern(source: typings.fastGlob.typesMod.Pattern, options: typings.fastGlob.settingsMod.Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def stream(source: js.Array[typings.fastGlob.typesMod.Pattern]): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def stream(source: js.Array[typings.fastGlob.typesMod.Pattern], options: typings.fastGlob.settingsMod.Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
-  inline def stream(source: typings.fastGlob.typesMod.Pattern): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def stream(source: typings.fastGlob.typesMod.Pattern, options: typings.fastGlob.settingsMod.Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def stream(source: js.Array[typings.fastGlob.typesMod.Pattern]): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def stream(source: js.Array[typings.fastGlob.typesMod.Pattern], options: typings.fastGlob.settingsMod.Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def stream(source: typings.fastGlob.typesMod.Pattern): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def stream(source: typings.fastGlob.typesMod.Pattern, options: typings.fastGlob.settingsMod.Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   
   inline def sync(source: js.Array[typings.fastGlob.typesMod.Pattern]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def sync(

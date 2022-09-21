@@ -1,37 +1,35 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.DeviceInput
-import typings.babylonjs.anon.InputIndex
+import typings.babylonjs.BABYLON.DeviceSourceEvent
+import typings.babylonjs.BABYLON.IDeviceInputSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.DeviceSource")
 @js.native
-class DeviceSource[T /* <: typings.babylonjs.BABYLON.DeviceType */] protected ()
+open class DeviceSource[T /* <: typings.babylonjs.BABYLON.DeviceType */] protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DeviceSource[T] {
   /**
     * Default Constructor
-    * @param deviceInputSystem Reference to DeviceInputSystem
-    * @param deviceType Type of device
-    * @param deviceSlot "Slot" or index that device is referenced in
+    * @param deviceInputSystem - Reference to DeviceInputSystem
+    * @param deviceType - Type of device
+    * @param deviceSlot - "Slot" or index that device is referenced in
     */
+  def this(deviceInputSystem: IDeviceInputSystem, /** Type of device */
+  deviceType: T) = this()
   def this(
-    deviceInputSystem: typings.babylonjs.BABYLON.DeviceInputSystem,
+    deviceInputSystem: IDeviceInputSystem,
     /** Type of device */
-  deviceType: typings.babylonjs.BABYLON.DeviceType
-  ) = this()
-  def this(
-    deviceInputSystem: typings.babylonjs.BABYLON.DeviceInputSystem,
-    /** Type of device */
-  deviceType: typings.babylonjs.BABYLON.DeviceType,
+  deviceType: T,
     /** "Slot" or index that device is referenced in */
   deviceSlot: Double
   ) = this()
   
   /* private */ /* CompleteClass */
-  override val _deviceInputSystem: js.Any = js.native
+  override val _deviceInputSystem: Any = js.native
   
   /** "Slot" or index that device is referenced in */
   /* CompleteClass */
@@ -39,11 +37,11 @@ class DeviceSource[T /* <: typings.babylonjs.BABYLON.DeviceType */] protected ()
   
   /** Type of device */
   /* CompleteClass */
-  override val deviceType: typings.babylonjs.BABYLON.DeviceType = js.native
+  override val deviceType: T = js.native
   
   /**
     * Get input for specific input
-    * @param inputIndex index of specific input on device
+    * @param inputIndex - index of specific input on device
     * @returns Input value from DeviceInputSystem
     */
   /* CompleteClass */
@@ -53,5 +51,5 @@ class DeviceSource[T /* <: typings.babylonjs.BABYLON.DeviceType */] protected ()
     * Observable to handle device input changes per device
     */
   /* CompleteClass */
-  override val onInputChangedObservable: typings.babylonjs.BABYLON.Observable[InputIndex[T]] = js.native
+  override val onInputChangedObservable: typings.babylonjs.BABYLON.Observable[DeviceSourceEvent[T]] = js.native
 }

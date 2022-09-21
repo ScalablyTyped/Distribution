@@ -8,8 +8,10 @@ trait WaveShaperOptions
   extends StObject
      with AudioNodeOptions {
   
-  var curve: js.UndefOr[js.Array[Double] | Float32Array] = js.undefined
+  /* standard dom */
+  var curve: js.UndefOr[js.Array[Double] | js.typedarray.Float32Array] = js.undefined
   
+  /* standard dom */
   var oversample: js.UndefOr[OverSampleType] = js.undefined
 }
 object WaveShaperOptions {
@@ -21,11 +23,11 @@ object WaveShaperOptions {
   
   extension [Self <: WaveShaperOptions](x: Self) {
     
-    inline def setCurve(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
     inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
-    inline def setCurveVarargs(value: Double*): Self = StObject.set(x, "curve", js.Array(value :_*))
+    inline def setCurveVarargs(value: Double*): Self = StObject.set(x, "curve", js.Array(value*))
     
     inline def setOversample(value: OverSampleType): Self = StObject.set(x, "oversample", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "CopyObjectCommand")
 @js.native
-class CopyObjectCommand protected ()
+open class CopyObjectCommand protected ()
   extends typings.awsSdkClientS3Node.copyObjectCommandMod.CopyObjectCommand {
   def this(input: CopyObjectInput) = this()
 }

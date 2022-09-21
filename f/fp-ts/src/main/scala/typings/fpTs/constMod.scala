@@ -49,7 +49,9 @@ object constMod {
   @js.native
   val const: Functor2[typings.fpTs.constMod.URI] & Contravariant2[typings.fpTs.constMod.URI] & Bifunctor2[typings.fpTs.constMod.URI] = js.native
   
-  inline def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Const_[js.Any, A], Const_[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Const_[js.Any, A], Const_[js.Any, B]]]
+  inline def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Const_[Any, A], Const_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Const_[Any, A], Const_[Any, B]]]
+  
+  inline def flap[A](a: A): js.Function1[/* fab */ Const_[Any, js.Function1[/* a */ A, Any]], Const_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Const_[Any, js.Function1[/* a */ A, Any]], Const_[Any, Any]]]
   
   inline def getApplicative[E](M: Monoid[E]): Applicative2C[typings.fpTs.constMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicative")(M.asInstanceOf[js.Any]).asInstanceOf[Applicative2C[typings.fpTs.constMod.URI, E]]
   
@@ -77,9 +79,9 @@ object constMod {
   
   inline def make[E, A](e: E): Const_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(e.asInstanceOf[js.Any]).asInstanceOf[Const_[E, A]]
   
-  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Const_[js.Any, A], Const_[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Const_[js.Any, A], Const_[js.Any, B]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Const_[Any, A], Const_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Const_[Any, A], Const_[Any, B]]]
   
-  inline def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ Const_[E, js.Any], Const_[G, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Const_[E, js.Any], Const_[G, js.Any]]]
+  inline def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ Const_[E, Any], Const_[G, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Const_[E, Any], Const_[G, Any]]]
   
   type Const_[E, A] = E & AA[A]
   

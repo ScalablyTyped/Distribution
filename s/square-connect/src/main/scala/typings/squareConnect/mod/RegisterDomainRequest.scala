@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RegisterDomainRequest")
 @js.native
-class RegisterDomainRequest () extends StObject {
+open class RegisterDomainRequest () extends StObject {
   
   /**
     * A domain name as described in RFC-1034 that will be registered with ApplePay

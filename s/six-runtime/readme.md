@@ -10,10 +10,10 @@ six koa
 | ------------------ | :-------------: |
 | Full name          | six-runtime |
 | Keywords           | six, koa |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 56 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/493636333/six#readme)

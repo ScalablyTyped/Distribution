@@ -29,7 +29,7 @@ trait Catalog extends StObject {
     * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification
     */
   @JSName("GetObjectOwner")
-  def GetObjectOwner_1(ObjectName: String, ObjectType: `-1`, ObjectTypeId: js.Any): String = js.native
+  def GetObjectOwner_1(ObjectName: String, ObjectType: `-1`, ObjectTypeId: Any): String = js.native
   
   def Groups(Item: String): Group = js.native
   def Groups(Item: Double): Group = js.native
@@ -47,7 +47,7 @@ trait Catalog extends StObject {
     * @param ObjectTypeId Specifies the GUID for a provider object type that is not defined by the OLE DB specification
     */
   @JSName("SetObjectOwner")
-  def SetObjectOwner_1(ObjectName: String, ObjectType: `-1`, UserName: String, ObjectTypeId: js.Any): Unit = js.native
+  def SetObjectOwner_1(ObjectName: String, ObjectType: `-1`, UserName: String, ObjectTypeId: Any): Unit = js.native
   
   def Tables(Item: String): Table = js.native
   def Tables(Item: Double): Table = js.native

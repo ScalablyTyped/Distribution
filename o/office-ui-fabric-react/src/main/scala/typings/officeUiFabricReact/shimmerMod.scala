@@ -18,7 +18,7 @@ object shimmerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Shimmer", "ShimmerBase")
   @js.native
-  class ShimmerBase protected ()
+  open class ShimmerBase protected ()
     extends typings.officeUiFabricReact.shimmerBaseMod.ShimmerBase {
     def this(props: IShimmerProps) = this()
   }

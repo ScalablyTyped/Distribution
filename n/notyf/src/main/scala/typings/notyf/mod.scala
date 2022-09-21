@@ -16,13 +16,13 @@ object mod {
   
   @JSImport("notyf", "Notyf")
   @js.native
-  class Notyf () extends default {
+  open class Notyf () extends default {
     def this(opts: PartialINotyfOptions) = this()
   }
   
   @JSImport("notyf", "NotyfArray")
   @js.native
-  class NotyfArray[T] ()
+  open class NotyfArray[T] ()
     extends typings.notyf.notyfModelsMod.NotyfArray[T]
   
   @JSImport("notyf", "NotyfArrayEvent")
@@ -51,13 +51,13 @@ object mod {
   
   @JSImport("notyf", "NotyfNotification")
   @js.native
-  class NotyfNotification protected ()
+  open class NotyfNotification protected ()
     extends typings.notyf.notyfModelsMod.NotyfNotification {
     def this(options: DeepPartialINotyfNotifica) = this()
   }
   
   @JSImport("notyf", "NotyfView")
   @js.native
-  class NotyfView ()
+  open class NotyfView ()
     extends typings.notyf.notyfViewMod.NotyfView
 }

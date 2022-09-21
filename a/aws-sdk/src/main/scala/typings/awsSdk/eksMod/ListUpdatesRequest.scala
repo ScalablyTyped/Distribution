@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListUpdatesRequest extends StObject {
   
   /**
+    * The names of the installed add-ons that have available updates.
+    */
+  var addonName: js.UndefOr[String] = js.undefined
+  
+  /**
     * The maximum number of update results returned by ListUpdates in paginated output. When you use this parameter, ListUpdates returns only maxResults results in a single page along with a nextToken response element. You can see the remaining results of the initial request by sending another ListUpdates request with the returned nextToken value. This value can be between 1 and 100. If you don't use this parameter, ListUpdates returns up to 100 results and a nextToken value if applicable.
     */
   var maxResults: js.UndefOr[ListUpdatesRequestMaxResults] = js.undefined
@@ -34,6 +39,10 @@ object ListUpdatesRequest {
   }
   
   extension [Self <: ListUpdatesRequest](x: Self) {
+    
+    inline def setAddonName(value: String): Self = StObject.set(x, "addonName", value.asInstanceOf[js.Any])
+    
+    inline def setAddonNameUndefined: Self = StObject.set(x, "addonName", js.undefined)
     
     inline def setMaxResults(value: ListUpdatesRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

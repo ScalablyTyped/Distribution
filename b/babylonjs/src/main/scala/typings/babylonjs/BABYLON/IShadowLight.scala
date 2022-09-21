@@ -72,13 +72,13 @@ trait IShadowLight
   def needProjectionMatrixCompute(): Boolean = js.native
   
   /**
-    * The position the shdow will be casted from.
+    * The position the shadow will be casted from.
     */
   var position: Vector3 = js.native
   
   /**
     * Sets the shadow projection matrix in parameter to the generated projection matrix.
-    * @param matrix The materix to updated with the projection information
+    * @param matrix The matrix to updated with the projection information
     * @param viewMatrix The transform matrix of the light
     * @param renderList The list of mesh to render in the map
     * @returns The current light

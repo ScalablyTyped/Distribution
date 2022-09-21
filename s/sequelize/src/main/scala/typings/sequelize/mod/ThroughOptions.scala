@@ -14,7 +14,7 @@ trait ThroughOptions extends StObject {
   /**
     * The model used to join both sides of the N:M association.
     */
-  var model: Model[js.Any, js.Any, js.Any]
+  var model: Model[Any, Any, Any]
   
   /**
     * A key/value set that will be used for association create and find defaults on the through model.
@@ -32,14 +32,14 @@ trait ThroughOptions extends StObject {
 }
 object ThroughOptions {
   
-  inline def apply(model: Model[js.Any, js.Any, js.Any]): ThroughOptions = {
+  inline def apply(model: Model[Any, Any, Any]): ThroughOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThroughOptions]
   }
   
   extension [Self <: ThroughOptions](x: Self) {
     
-    inline def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model[Any, Any, Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setScope(value: AssociationScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

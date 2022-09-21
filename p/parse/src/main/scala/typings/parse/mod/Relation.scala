@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("parse", "Relation")
 @js.native
-class Relation[S /* <: typings.parse.mod.global.Parse.Object[Attributes] */, T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] ()
+open class Relation[S /* <: typings.parse.mod.global.Parse.Object[Attributes] */, T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] ()
   extends typings.parse.mod.global.Parse.Relation[S, T] {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()

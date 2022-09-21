@@ -10,7 +10,7 @@ object permissionMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/permission", "Permission")
   @js.native
-  class Permission protected ()
+  open class Permission protected ()
     extends typings.actionsOnGoogle.permissionPermissionMod.Permission {
     /**
       * @param options Permission options
@@ -21,7 +21,7 @@ object permissionMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/permission", "UpdatePermission")
   @js.native
-  class UpdatePermission protected ()
+  open class UpdatePermission protected ()
     extends typings.actionsOnGoogle.updateMod.UpdatePermission {
     /**
       * @param options UpdatePermission options

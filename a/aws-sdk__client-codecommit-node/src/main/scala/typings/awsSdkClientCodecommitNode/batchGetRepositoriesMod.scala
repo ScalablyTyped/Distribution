@@ -8,5 +8,5 @@ object batchGetRepositoriesMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/BatchGetRepositories", "BatchGetRepositories")
   @js.native
-  val BatchGetRepositories: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val BatchGetRepositories: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

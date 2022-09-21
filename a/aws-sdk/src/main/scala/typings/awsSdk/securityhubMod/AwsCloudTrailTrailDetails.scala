@@ -12,7 +12,7 @@ trait AwsCloudTrailTrailDetails extends StObject {
   var CloudWatchLogsLogGroupArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The ARN of the role that the CloudWatch Logs endpoint assumes when it writes to the log group.
+    * The ARN of the role that the CloudWatch Events endpoint assumes when it writes to the log group.
     */
   var CloudWatchLogsRoleArn: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -37,12 +37,12 @@ trait AwsCloudTrailTrailDetails extends StObject {
   var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether the trail is created for all accounts in an organization in AWS Organizations, or only for the current AWS account.
+    * Whether the trail is created for all accounts in an organization in Organizations, or only for the current Amazon Web Services account.
     */
   var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The AWS KMS key ID to use to encrypt the logs.
+    * The KMS key ID to use to encrypt the logs.
     */
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   

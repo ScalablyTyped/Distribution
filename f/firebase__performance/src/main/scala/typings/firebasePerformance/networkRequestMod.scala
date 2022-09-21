@@ -10,6 +10,7 @@ import typings.firebasePerformance.firebasePerformanceNumbers.`6`
 import typings.firebasePerformance.firebasePerformanceNumbers.`7`
 import typings.firebasePerformance.firebasePerformanceNumbers.`8`
 import typings.firebasePerformance.firebasePerformanceNumbers.`9`
+import typings.firebasePerformance.perfMod.PerformanceController
 import typings.std.PerformanceEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ object networkRequestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createNetworkRequestEntry(entry: PerformanceEntry): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createNetworkRequestEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createNetworkRequestEntry(performanceController: PerformanceController, entry: PerformanceEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createNetworkRequestEntry")(performanceController.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebasePerformance.firebasePerformanceNumbers.`0`
@@ -65,6 +66,8 @@ object networkRequestMod {
     
     var httpResponseCode: js.UndefOr[Double] = js.undefined
     
+    var performanceController: PerformanceController
+    
     var requestPayloadBytes: js.UndefOr[Double] = js.undefined
     
     var responseContentType: js.UndefOr[String] = js.undefined
@@ -83,8 +86,8 @@ object networkRequestMod {
   }
   object NetworkRequest {
     
-    inline def apply(url: String): NetworkRequest = {
-      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    inline def apply(performanceController: PerformanceController, url: String): NetworkRequest = {
+      val __obj = js.Dynamic.literal(performanceController = performanceController.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkRequest]
     }
     
@@ -97,6 +100,8 @@ object networkRequestMod {
       inline def setHttpResponseCode(value: Double): Self = StObject.set(x, "httpResponseCode", value.asInstanceOf[js.Any])
       
       inline def setHttpResponseCodeUndefined: Self = StObject.set(x, "httpResponseCode", js.undefined)
+      
+      inline def setPerformanceController(value: PerformanceController): Self = StObject.set(x, "performanceController", value.asInstanceOf[js.Any])
       
       inline def setRequestPayloadBytes(value: Double): Self = StObject.set(x, "requestPayloadBytes", value.asInstanceOf[js.Any])
       

@@ -1,15 +1,27 @@
 package typings.inversify
 
-import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
+import typings.inversify.decoratorUtilsMod.DecoratorTarget
+import typings.inversify.lazyServiceIdentifierMod.ServiceIdentifierOrFunc
+import typings.std.TypedPropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiInjectMod {
   
-  @JSImport("inversify/dts/annotation/multi_inject", JSImport.Namespace)
+  @JSImport("inversify/lib/annotation/multi_inject", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def multiInject(serviceIdentifier: ServiceIdentifier[js.Any]): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiInject")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit]]
+  inline def multiInject[T](serviceIdentifier: ServiceIdentifierOrFunc[T]): js.Function3[
+    /* target */ DecoratorTarget[Any], 
+    /* targetKey */ js.UndefOr[String | js.Symbol], 
+    /* indexOrPropertyDescriptor */ js.UndefOr[Double | TypedPropertyDescriptor[Any]], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiInject")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* target */ DecoratorTarget[Any], 
+    /* targetKey */ js.UndefOr[String | js.Symbol], 
+    /* indexOrPropertyDescriptor */ js.UndefOr[Double | TypedPropertyDescriptor[Any]], 
+    Unit
+  ]]
 }

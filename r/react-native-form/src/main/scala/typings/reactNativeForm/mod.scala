@@ -12,10 +12,10 @@ object mod {
   
   @JSImport("react-native-form", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FormProps, js.Object, js.Any]
+  open class default ()
+    extends Component[FormProps, js.Object, Any]
   
-  type Form = Component[FormProps, js.Object, js.Any]
+  type Form = Component[FormProps, js.Object, Any]
   
   trait FormProps
     extends StObject

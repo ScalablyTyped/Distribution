@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "MapWheelEvent")
 @js.native
-class MapWheelEvent () extends MapboxEvent[WheelEvent] {
+open class MapWheelEvent () extends MapboxEvent[WheelEvent] {
   
   var defaultPrevented: Boolean = js.native
   

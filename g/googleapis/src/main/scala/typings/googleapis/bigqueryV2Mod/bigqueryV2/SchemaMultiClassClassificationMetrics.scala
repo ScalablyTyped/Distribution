@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Evaluation metrics for multi-class classification models.
-  */
 trait SchemaMultiClassClassificationMetrics extends StObject {
   
   /**
@@ -36,6 +33,6 @@ object SchemaMultiClassClassificationMetrics {
     
     inline def setConfusionMatrixListUndefined: Self = StObject.set(x, "confusionMatrixList", js.undefined)
     
-    inline def setConfusionMatrixListVarargs(value: SchemaConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value :_*))
+    inline def setConfusionMatrixListVarargs(value: SchemaConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value*))
   }
 }

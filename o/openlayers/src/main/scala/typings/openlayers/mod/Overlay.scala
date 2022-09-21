@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "Overlay")
 @js.native
-class Overlay protected () extends Object {
+open class Overlay protected () extends Object {
   /**
     * @classdesc
     * An element to be displayed over the map and attached to a single map

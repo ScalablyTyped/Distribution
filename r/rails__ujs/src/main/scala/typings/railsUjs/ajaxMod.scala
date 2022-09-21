@@ -35,11 +35,11 @@ object ajaxMod {
     var dataType: js.UndefOr[String] = js.undefined
     
     var error: js.UndefOr[
-        js.Function3[/* response */ js.Any, /* statusText */ String, /* xhr */ XMLHttpRequest, Unit]
+        js.Function3[/* response */ Any, /* statusText */ String, /* xhr */ XMLHttpRequest, Unit]
       ] = js.undefined
     
     var success: js.UndefOr[
-        js.Function3[/* response */ js.Any, /* statusText */ String, /* xhr */ XMLHttpRequest, Unit]
+        js.Function3[/* response */ Any, /* statusText */ String, /* xhr */ XMLHttpRequest, Unit]
       ] = js.undefined
     
     var `type`: String
@@ -84,11 +84,11 @@ object ajaxMod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setError(value: (/* response */ js.Any, /* statusText */ String, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      inline def setError(value: (/* response */ Any, /* statusText */ String, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setSuccess(value: (/* response */ js.Any, /* statusText */ String, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* response */ Any, /* statusText */ String, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       

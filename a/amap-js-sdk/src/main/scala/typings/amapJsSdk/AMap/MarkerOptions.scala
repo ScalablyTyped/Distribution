@@ -21,7 +21,7 @@ trait MarkerOptions extends StObject {
   
   var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var extData: js.UndefOr[js.Any] = js.undefined
+  var extData: js.UndefOr[Any] = js.undefined
   
   var icon: js.UndefOr[String | Icon] = js.undefined
   
@@ -86,7 +86,7 @@ object MarkerOptions {
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    inline def setExtData(value: js.Any): Self = StObject.set(x, "extData", value.asInstanceOf[js.Any])
+    inline def setExtData(value: Any): Self = StObject.set(x, "extData", value.asInstanceOf[js.Any])
     
     inline def setExtDataUndefined: Self = StObject.set(x, "extData", js.undefined)
     

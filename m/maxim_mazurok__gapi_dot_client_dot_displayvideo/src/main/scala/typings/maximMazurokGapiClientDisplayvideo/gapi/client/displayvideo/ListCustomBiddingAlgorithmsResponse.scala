@@ -28,7 +28,7 @@ object ListCustomBiddingAlgorithmsResponse {
     
     inline def setCustomBiddingAlgorithmsUndefined: Self = StObject.set(x, "customBiddingAlgorithms", js.undefined)
     
-    inline def setCustomBiddingAlgorithmsVarargs(value: CustomBiddingAlgorithm*): Self = StObject.set(x, "customBiddingAlgorithms", js.Array(value :_*))
+    inline def setCustomBiddingAlgorithmsVarargs(value: CustomBiddingAlgorithm*): Self = StObject.set(x, "customBiddingAlgorithms", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

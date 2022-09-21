@@ -11,22 +11,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Worker")
 @js.native
-class Worker protected ()
+open class Worker protected ()
   extends StObject
      with typings.std.Worker {
-  def this(stringUrl: java.lang.String) = this()
-  def this(stringUrl: typings.std.URL) = this()
-  def this(stringUrl: java.lang.String, options: WorkerOptions) = this()
-  def this(stringUrl: typings.std.URL, options: WorkerOptions) = this()
+  /* standard dom */
+  def this(scriptURL: java.lang.String) = this()
+  def this(scriptURL: typings.std.URL) = this()
+  def this(scriptURL: java.lang.String, options: WorkerOptions) = this()
+  def this(scriptURL: typings.std.URL, options: WorkerOptions) = this()
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NodeId
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var nodeId: js.Any
+  var nodeId: Any
 }
 object NodeId {
   
-  inline def apply(nodeId: js.Any): NodeId = {
+  inline def apply(nodeId: Any): NodeId = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeId]
   }
   
   extension [Self <: NodeId](x: Self) {
     
-    inline def setNodeId(value: js.Any): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: Any): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

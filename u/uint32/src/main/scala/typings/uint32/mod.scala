@@ -1,6 +1,5 @@
 package typings.uint32
 
-import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addMod32(uint32val0: Double, optionalValues: Double*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addMod32")(uint32val0.asInstanceOf[js.Any], optionalValues.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def addMod32(uint32val0: Double, optionalValues: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("addMod32")(List(uint32val0.asInstanceOf[js.Any]).`++`(optionalValues.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
-  inline def and(uint32val0: Double, argv: Double*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(uint32val0.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def and(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
   inline def choose(x: Double, y: Double, z: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -29,11 +28,11 @@ object mod {
   
   inline def majority(x: Double, y: Double, z: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("majority")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def mult(factor1: Double, factor2: Double, resultUint32Array2: Uint32Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mult")(factor1.asInstanceOf[js.Any], factor2.asInstanceOf[js.Any], resultUint32Array2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mult(factor1: Double, factor2: Double, resultUint32Array2: js.typedarray.Uint32Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mult")(factor1.asInstanceOf[js.Any], factor2.asInstanceOf[js.Any], resultUint32Array2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def not(uint32val: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(uint32val.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def or(uint32val0: Double, argv: Double*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(uint32val0.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def or(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
   inline def rotateLeft(uint32val: Double, numBits: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateLeft")(uint32val.asInstanceOf[js.Any], numBits.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -48,5 +47,5 @@ object mod {
   
   inline def toUint32(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toUint32")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def xor(uint32val0: Double, argv: Double*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xor")(uint32val0.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def xor(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.LetterContent")
 @js.native
-/* private */ class LetterContent ()
+/* private */ open class LetterContent ()
   extends StObject
      with typings.activexWord.Word.LetterContent {
   
@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PageDesign: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var RecipientAddress: String = js.native

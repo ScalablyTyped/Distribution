@@ -12,20 +12,20 @@ trait ImageFile extends StObject {
   
   /** Returns the specified item in the vector by position */
   /** Returns the raw image bits as a Vector of Long values */
-  def ARGBData(Index: Double): js.Any
+  def ARGBData(Index: Double): Any
   /** Returns the raw image bits as a Vector of Long values */
   @JSName("ARGBData")
-  val ARGBData_Original: Vector[js.Any]
+  val ARGBData_Original: Vector[Any]
   
   /** Returns/Sets the current frame in the image */
   var ActiveFrame: Double
   
   /** Returns the specified item in the vector by position */
   /** Returns the raw image file as a Vector of Bytes */
-  def FileData(Index: Double): js.Any
+  def FileData(Index: Double): Any
   /** Returns the raw image file as a Vector of Bytes */
   @JSName("FileData")
-  val FileData_Original: Vector[js.Any]
+  val FileData_Original: Vector[Any]
   
   /** Returns the file extension for this image file type */
   val FileExtension: String
@@ -83,9 +83,9 @@ trait ImageFile extends StObject {
 object ImageFile {
   
   inline def apply(
-    ARGBData: Vector[js.Any],
+    ARGBData: Vector[Any],
     ActiveFrame: Double,
-    FileData: Vector[js.Any],
+    FileData: Vector[Any],
     FileExtension: String,
     FormatID: String,
     FrameCount: Double,
@@ -110,11 +110,11 @@ object ImageFile {
   
   extension [Self <: ImageFile](x: Self) {
     
-    inline def setARGBData(value: Vector[js.Any]): Self = StObject.set(x, "ARGBData", value.asInstanceOf[js.Any])
+    inline def setARGBData(value: Vector[Any]): Self = StObject.set(x, "ARGBData", value.asInstanceOf[js.Any])
     
     inline def setActiveFrame(value: Double): Self = StObject.set(x, "ActiveFrame", value.asInstanceOf[js.Any])
     
-    inline def setFileData(value: Vector[js.Any]): Self = StObject.set(x, "FileData", value.asInstanceOf[js.Any])
+    inline def setFileData(value: Vector[Any]): Self = StObject.set(x, "FileData", value.asInstanceOf[js.Any])
     
     inline def setFileExtension(value: String): Self = StObject.set(x, "FileExtension", value.asInstanceOf[js.Any])
     

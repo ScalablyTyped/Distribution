@@ -33,7 +33,7 @@ object Params {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setStyles(value: Styles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

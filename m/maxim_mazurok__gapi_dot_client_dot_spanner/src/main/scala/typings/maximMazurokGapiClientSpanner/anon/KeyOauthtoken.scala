@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSpanner.anon
 
-import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.RollbackRequest
+import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.ReadRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +36,9 @@ trait KeyOauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: RollbackRequest
+  var resource: ReadRequest
   
-  /** Required. The session in which the transaction to roll back is running. */
+  /** Required. The session in which the read should be performed. */
   var session: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -49,7 +49,7 @@ trait KeyOauthtoken extends StObject {
 }
 object KeyOauthtoken {
   
-  inline def apply(resource: RollbackRequest, session: String): KeyOauthtoken = {
+  inline def apply(resource: ReadRequest, session: String): KeyOauthtoken = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtoken]
   }
@@ -92,7 +92,7 @@ object KeyOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: RollbackRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ReadRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

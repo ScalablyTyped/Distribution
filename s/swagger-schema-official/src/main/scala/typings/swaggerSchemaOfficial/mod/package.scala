@@ -1,20 +1,25 @@
 package typings.swaggerSchemaOfficial.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.swaggerSchemaOfficial.anon.AllowEmptyValue
+import typings.swaggerSchemaOfficial.anon.CollectionFormat
+import typings.swaggerSchemaOfficial.anon.In
+import typings.swaggerSchemaOfficial.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BaseFormatContrainedParameter = typings.swaggerSchemaOfficial.mod.BaseParameter & typings.swaggerSchemaOfficial.mod.SchemaFormatConstraints
+type BaseFormatContrainedParameter = BaseParameter & SchemaFormatConstraints
 
-type FormDataParameter = typings.swaggerSchemaOfficial.mod.BaseFormatContrainedParameter & typings.swaggerSchemaOfficial.mod.BaseSchema & typings.swaggerSchemaOfficial.anon.CollectionFormat
+type FormDataParameter = BaseFormatContrainedParameter & BaseSchema & CollectionFormat
 
-type HeaderParameter = typings.swaggerSchemaOfficial.mod.BaseFormatContrainedParameter & typings.swaggerSchemaOfficial.mod.BaseSchema & typings.swaggerSchemaOfficial.anon.`0`
+type HeaderParameter = BaseFormatContrainedParameter & BaseSchema & `0`
 
-type OAuthScope = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type OAuthScope = StringDictionary[String]
 
-type Parameter = typings.swaggerSchemaOfficial.mod.BodyParameter | typings.swaggerSchemaOfficial.mod.FormDataParameter | typings.swaggerSchemaOfficial.mod.QueryParameter | typings.swaggerSchemaOfficial.mod.PathParameter | typings.swaggerSchemaOfficial.mod.HeaderParameter
+type Parameter = BodyParameter | FormDataParameter | QueryParameter | PathParameter | HeaderParameter
 
-type PathParameter = typings.swaggerSchemaOfficial.mod.BaseFormatContrainedParameter & typings.swaggerSchemaOfficial.mod.BaseSchema & typings.swaggerSchemaOfficial.anon.In
+type PathParameter = BaseFormatContrainedParameter & BaseSchema & In
 
-type QueryParameter = typings.swaggerSchemaOfficial.mod.BaseFormatContrainedParameter & typings.swaggerSchemaOfficial.mod.BaseSchema & typings.swaggerSchemaOfficial.anon.AllowEmptyValue
+type QueryParameter = BaseFormatContrainedParameter & BaseSchema & AllowEmptyValue

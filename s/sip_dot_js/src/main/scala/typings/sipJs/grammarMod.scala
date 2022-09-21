@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object grammarMod {
   
+  @JSImport("sip.js/lib/grammar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object Grammar {
     
     @JSImport("sip.js/lib/grammar", "Grammar")
@@ -32,12 +36,12 @@ object grammarMod {
       * @param input -
       * @param startRule -
       */
-    inline def parse(input: String, startRule: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], startRule.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def parse(input: String, startRule: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], startRule.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   @JSImport("sip.js/lib/grammar", "NameAddrHeader")
   @js.native
-  class NameAddrHeader protected ()
+  open class NameAddrHeader protected ()
     extends typings.sipJs.nameAddrHeaderMod.NameAddrHeader {
     /**
       * Constructor
@@ -50,14 +54,14 @@ object grammarMod {
   
   @JSImport("sip.js/lib/grammar", "Parameters")
   @js.native
-  class Parameters protected ()
+  open class Parameters protected ()
     extends typings.sipJs.parametersMod.Parameters {
-    def this(parameters: StringDictionary[String]) = this()
+    def this(parameters: StringDictionary[js.UndefOr[String | Double | Null]]) = this()
   }
   
   @JSImport("sip.js/lib/grammar", "URI")
   @js.native
-  class URI protected ()
+  open class URI protected ()
     extends typings.sipJs.uriMod.URI {
     /**
       * Constructor
@@ -69,12 +73,102 @@ object grammarMod {
       * @param headers -
       */
     def this(scheme: String, user: String, host: String) = this()
+    def this(scheme: Unit, user: String, host: String) = this()
     def this(scheme: String, user: String, host: String, port: Double) = this()
-    def this(scheme: String, user: String, host: String, port: Double, parameters: js.Any) = this()
-    def this(scheme: String, user: String, host: String, port: Unit, parameters: js.Any) = this()
-    def this(scheme: String, user: String, host: String, port: Double, parameters: js.Any, headers: js.Any) = this()
-    def this(scheme: String, user: String, host: String, port: Double, parameters: Unit, headers: js.Any) = this()
-    def this(scheme: String, user: String, host: String, port: Unit, parameters: js.Any, headers: js.Any) = this()
-    def this(scheme: String, user: String, host: String, port: Unit, parameters: Unit, headers: js.Any) = this()
+    def this(scheme: Unit, user: String, host: String, port: Double) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: Double,
+      parameters: StringDictionary[String | Double | Null]
+    ) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: Unit,
+      parameters: StringDictionary[String | Double | Null]
+    ) = this()
+    def this(
+      scheme: Unit,
+      user: String,
+      host: String,
+      port: Double,
+      parameters: StringDictionary[String | Double | Null]
+    ) = this()
+    def this(
+      scheme: Unit,
+      user: String,
+      host: String,
+      port: Unit,
+      parameters: StringDictionary[String | Double | Null]
+    ) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: Double,
+      parameters: StringDictionary[String | Double | Null],
+      headers: StringDictionary[js.Array[String]]
+    ) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: Double,
+      parameters: Unit,
+      headers: StringDictionary[js.Array[String]]
+    ) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: Unit,
+      parameters: StringDictionary[String | Double | Null],
+      headers: StringDictionary[js.Array[String]]
+    ) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: Unit,
+      parameters: Unit,
+      headers: StringDictionary[js.Array[String]]
+    ) = this()
+    def this(
+      scheme: Unit,
+      user: String,
+      host: String,
+      port: Double,
+      parameters: StringDictionary[String | Double | Null],
+      headers: StringDictionary[js.Array[String]]
+    ) = this()
+    def this(
+      scheme: Unit,
+      user: String,
+      host: String,
+      port: Double,
+      parameters: Unit,
+      headers: StringDictionary[js.Array[String]]
+    ) = this()
+    def this(
+      scheme: Unit,
+      user: String,
+      host: String,
+      port: Unit,
+      parameters: StringDictionary[String | Double | Null],
+      headers: StringDictionary[js.Array[String]]
+    ) = this()
+    def this(
+      scheme: Unit,
+      user: String,
+      host: String,
+      port: Unit,
+      parameters: Unit,
+      headers: StringDictionary[js.Array[String]]
+    ) = this()
   }
+  
+  inline def equivalentURI(a: typings.sipJs.uriMod.URI, b: typings.sipJs.uriMod.URI): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalentURI")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

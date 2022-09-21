@@ -49,7 +49,7 @@ object OptionConfiguration {
     
     inline def setDBSecurityGroupMembershipsUndefined: Self = StObject.set(x, "DBSecurityGroupMemberships", js.undefined)
     
-    inline def setDBSecurityGroupMembershipsVarargs(value: String*): Self = StObject.set(x, "DBSecurityGroupMemberships", js.Array(value :_*))
+    inline def setDBSecurityGroupMembershipsVarargs(value: String*): Self = StObject.set(x, "DBSecurityGroupMemberships", js.Array(value*))
     
     inline def setOptionName(value: String): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
     
@@ -57,7 +57,7 @@ object OptionConfiguration {
     
     inline def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
     
-    inline def setOptionSettingsVarargs(value: OptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
+    inline def setOptionSettingsVarargs(value: OptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value*))
     
     inline def setOptionVersion(value: String): Self = StObject.set(x, "OptionVersion", value.asInstanceOf[js.Any])
     
@@ -71,6 +71,6 @@ object OptionConfiguration {
     
     inline def setVpcSecurityGroupMembershipsUndefined: Self = StObject.set(x, "VpcSecurityGroupMemberships", js.undefined)
     
-    inline def setVpcSecurityGroupMembershipsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupMemberships", js.Array(value :_*))
+    inline def setVpcSecurityGroupMembershipsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupMemberships", js.Array(value*))
   }
 }

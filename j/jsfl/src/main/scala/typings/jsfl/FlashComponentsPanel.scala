@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FlashComponentsPanel extends StObject {
   
-  def addItemToDocument(): js.Any
+  def addItemToDocument(): Any
   
-  def reload(): js.Any
+  def reload(): Any
 }
 object FlashComponentsPanel {
   
-  inline def apply(addItemToDocument: () => js.Any, reload: () => js.Any): FlashComponentsPanel = {
+  inline def apply(addItemToDocument: () => Any, reload: () => Any): FlashComponentsPanel = {
     val __obj = js.Dynamic.literal(addItemToDocument = js.Any.fromFunction0(addItemToDocument), reload = js.Any.fromFunction0(reload))
     __obj.asInstanceOf[FlashComponentsPanel]
   }
   
   extension [Self <: FlashComponentsPanel](x: Self) {
     
-    inline def setAddItemToDocument(value: () => js.Any): Self = StObject.set(x, "addItemToDocument", js.Any.fromFunction0(value))
+    inline def setAddItemToDocument(value: () => Any): Self = StObject.set(x, "addItemToDocument", js.Any.fromFunction0(value))
     
-    inline def setReload(value: () => js.Any): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
+    inline def setReload(value: () => Any): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
   }
 }

@@ -5,6 +5,7 @@ import typings.antDesignReactNative.pickerPropsTypeMod.PickerData
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +15,7 @@ object pickerViewPickerViewMod {
   
   @JSImport("@ant-design/react-native/lib/picker-view/PickerView", JSImport.Default)
   @js.native
-  class default () extends PickerView
+  open class default () extends PickerView
   /* static members */
   object default {
     
@@ -29,8 +30,7 @@ object pickerViewPickerViewMod {
   }
   
   @js.native
-  trait PickerView
-    extends Component[PickerViewProps, js.Any, js.Any] {
+  trait PickerView extends Component[PickerViewProps, Any, Any] {
     
     def getCol(): js.Array[Element] = js.native
   }
@@ -45,15 +45,15 @@ object pickerViewPickerViewMod {
     
     var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+    var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var onScrollChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onScrollChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
-    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var value: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object PickerViewProps {
     
@@ -76,7 +76,7 @@ object pickerViewPickerViewMod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: (js.Array[PickerData] | PickerData)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (js.Array[PickerData] | PickerData)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setIndicatorStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
       
@@ -84,29 +84,29 @@ object pickerViewPickerViewMod {
       
       inline def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
       
-      inline def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
       inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setOnChange(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnScrollChange(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction1(value))
+      inline def setOnScrollChange(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction1(value))
       
       inline def setOnScrollChangeUndefined: Self = StObject.set(x, "onScrollChange", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

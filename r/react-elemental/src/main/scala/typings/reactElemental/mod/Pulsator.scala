@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-elemental", "Pulsator")
 @js.native
-class Pulsator protected ()
-  extends Component[PulsatorProps, PulsatorState, js.Any] {
+open class Pulsator protected () extends Component[PulsatorProps, PulsatorState, Any] {
   def this(props: PulsatorProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PulsatorProps, context: js.Any) = this()
+  def this(props: PulsatorProps, context: Any) = this()
 }

@@ -1,5 +1,6 @@
 package typings.zingchart.anon
 
+import typings.zingchart.es6Mod.zingchart.tooltip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,14 +38,14 @@ trait Async extends StObject {
   /**
     * Sets the size of the object/shape. 4 | "6px" | ...
     */
-  var size: js.UndefOr[js.Any] = js.undefined
+  var size: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets whether or not the data is sorted. true | false | 1 | 0
     */
   var `sort-datasortData`: js.UndefOr[Boolean] = js.undefined
   
-  var tooltip: js.UndefOr[Backgroundfit] = js.undefined
+  var tooltip: js.UndefOr[typings.zingchart.es6Mod.zingchart.tooltip] = js.undefined
 }
 object Async {
   
@@ -79,7 +80,7 @@ object Async {
     
     inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
-    inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
@@ -87,7 +88,7 @@ object Async {
     
     inline def `setSort-datasortDataUndefined`: Self = StObject.set(x, "sort-datasortData", js.undefined)
     
-    inline def setTooltip(value: Backgroundfit): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: tooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }

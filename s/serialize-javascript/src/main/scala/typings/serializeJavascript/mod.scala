@@ -1,5 +1,6 @@
 package typings.serializeJavascript
 
+import typings.serializeJavascript.serializeJavascriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +13,10 @@ object mod {
     * @param options optional object
     * @returns serialized data
     */
-  inline def apply(input: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(input: js.Any, options: SerializeJSOptions): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: Any): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(input: Any, options: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: Any, options: Double): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: Any, options: SerializeJSOptions): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("serialize-javascript", JSImport.Namespace)
   @js.native
@@ -45,7 +48,7 @@ object mod {
       * This options needs to be explicitly set to true. HTML characters and JavaScript line terminators will not be escaped.
       * You will have to roll your own.
       */
-    var unsafe: js.UndefOr[Boolean] = js.undefined
+    var unsafe: js.UndefOr[`true`] = js.undefined
   }
   object SerializeJSOptions {
     
@@ -68,7 +71,7 @@ object mod {
       
       inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       
-      inline def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
+      inline def setUnsafe(value: `true`): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
       
       inline def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
     }

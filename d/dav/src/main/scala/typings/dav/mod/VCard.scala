@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dav", "VCard")
 @js.native
-class VCard () extends DAVObject {
+open class VCard () extends DAVObject {
   def this(options: VCardOptions) = this()
   
   var addressBook: AddressBook = js.native

@@ -8,5 +8,5 @@ object deleteCommentContentOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/DeleteCommentContentOutput", "DeleteCommentContentOutput")
   @js.native
-  val DeleteCommentContentOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteCommentContentOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

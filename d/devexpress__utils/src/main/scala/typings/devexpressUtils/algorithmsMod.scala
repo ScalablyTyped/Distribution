@@ -15,7 +15,7 @@ object algorithmsMod {
   
   @JSImport("@devexpress/utils/lib/intervals/algorithms", "IntervalAlgorithms")
   @js.native
-  class IntervalAlgorithms () extends StObject
+  open class IntervalAlgorithms () extends StObject
   /* static members */
   object IntervalAlgorithms {
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetApiKeyRequest extends StObject {
   
   /**
-    * [Required] The identifier of the ApiKey resource.
+    * The identifier of the ApiKey resource.
     */
   var apiKey: String
   

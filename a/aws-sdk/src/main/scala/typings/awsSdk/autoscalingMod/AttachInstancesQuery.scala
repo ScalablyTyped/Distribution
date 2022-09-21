@@ -9,7 +9,7 @@ trait AttachInstancesQuery extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * The IDs of the instances. You can specify up to 20 instances.
@@ -18,19 +18,19 @@ trait AttachInstancesQuery extends StObject {
 }
 object AttachInstancesQuery {
   
-  inline def apply(AutoScalingGroupName: ResourceName): AttachInstancesQuery = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255): AttachInstancesQuery = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachInstancesQuery]
   }
   
   extension [Self <: AttachInstancesQuery](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
     inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    inline def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
   }
 }

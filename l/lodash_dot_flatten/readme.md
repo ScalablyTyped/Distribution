@@ -10,10 +10,10 @@ The lodash method `_.flatten` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.flatten |
 | Keywords           | lodash-modularized, flatten |
-| # releases         | 0 |
-| # dependents       | 466 |
-| # downloads        | 145525817 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2714535666666668E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

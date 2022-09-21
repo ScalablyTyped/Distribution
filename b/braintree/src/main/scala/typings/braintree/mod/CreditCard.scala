@@ -1,13 +1,15 @@
 package typings.braintree.mod
 
-import typings.std.Date
+import typings.braintree.anon.All
+import typings.braintree.anon.International
+import typings.braintree.anon.No
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "CreditCard")
 @js.native
-class CreditCard ()
+open class CreditCard ()
   extends StObject
      with PaymentMethod {
   
@@ -25,7 +27,7 @@ class CreditCard ()
   
   var countryOfIssuance: String = js.native
   
-  var createdAt: Date = js.native
+  var createdAt: String = js.native
   
   var customerId: String = js.native
   
@@ -65,7 +67,30 @@ class CreditCard ()
   
   var uniqueNumberIdentifier: String = js.native
   
-  var updatedAt: Date = js.native
+  var updatedAt: String = js.native
   
   var verification: js.UndefOr[CreditCardVerification] = js.native
+}
+/* static members */
+object CreditCard {
+  
+  @JSImport("braintree", "CreditCard")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("braintree", "CreditCard.CardType")
+  @js.native
+  def CardType: All = js.native
+  
+  @JSImport("braintree", "CreditCard.CardTypeIndicator")
+  @js.native
+  def CardTypeIndicator: No = js.native
+  inline def CardTypeIndicator_=(x: No): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CardTypeIndicator")(x.asInstanceOf[js.Any])
+  
+  inline def CardType_=(x: All): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CardType")(x.asInstanceOf[js.Any])
+  
+  @JSImport("braintree", "CreditCard.CustomerLocation")
+  @js.native
+  def CustomerLocation: International = js.native
+  inline def CustomerLocation_=(x: International): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomerLocation")(x.asInstanceOf[js.Any])
 }

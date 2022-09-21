@@ -9,20 +9,20 @@ object mod {
   
   @JSImport("@aws-sdk/md5-js", "Md5")
   @js.native
-  class Md5 ()
+  open class Md5 ()
     extends StObject
        with Hash {
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
-    /* private */ var bufferLength: js.Any = js.native
+    /* private */ var bufferLength: Any = js.native
     
-    /* private */ var bytesHashed: js.Any = js.native
+    /* private */ var bytesHashed: Any = js.native
     
-    /* private */ var finished: js.Any = js.native
+    /* private */ var finished: Any = js.native
     
-    /* private */ var hashBuffer: js.Any = js.native
+    /* private */ var hashBuffer: Any = js.native
     
-    /* private */ var state: js.Any = js.native
+    /* private */ var state: Any = js.native
   }
 }

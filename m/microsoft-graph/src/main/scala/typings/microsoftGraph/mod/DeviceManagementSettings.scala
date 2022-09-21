@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceManagementSettings extends StObject {
   
-  // The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120
+  // The number of days a device is allowed to go without checking in to remain compliant.
   var deviceComplianceCheckinThresholdDays: js.UndefOr[Double] = js.undefined
   
   // Is feature enabled or not for scheduled action for rule.

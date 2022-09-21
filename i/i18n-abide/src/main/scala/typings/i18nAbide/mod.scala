@@ -1,10 +1,9 @@
 package typings.i18nAbide
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.i18nAbide.anon.Error
 import typings.i18nAbide.anon.Lang
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +14,38 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def abide(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("abide")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def abide(options: AbideOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("abide")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def abide(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("abide")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def abide(options: AbideOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("abide")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   inline def bestLanguage(languages: js.Array[Lang], supported_languages: js.Array[String], defaultLanguage: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bestLanguage")(languages.asInstanceOf[js.Any], supported_languages.asInstanceOf[js.Any], defaultLanguage.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def format(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def format(fmt: String, obj: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def format(fmt: String, obj: js.Any, named: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], named.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(fmt: String, obj: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(fmt: String, obj: Any, named: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], named.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def format(fmt: String, obj: Unit, named: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], named.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getLocales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocales")().asInstanceOf[js.Array[String]]
@@ -91,7 +114,7 @@ object mod {
       
       inline def setSupported_languagesUndefined: Self = StObject.set(x, "supported_languages", js.undefined)
       
-      inline def setSupported_languagesVarargs(value: String*): Self = StObject.set(x, "supported_languages", js.Array(value :_*))
+      inline def setSupported_languagesVarargs(value: String*): Self = StObject.set(x, "supported_languages", js.Array(value*))
       
       inline def setTranslation_directory(value: String): Self = StObject.set(x, "translation_directory", value.asInstanceOf[js.Any])
       

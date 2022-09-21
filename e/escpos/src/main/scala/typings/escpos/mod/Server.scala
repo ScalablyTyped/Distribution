@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("escpos", "Server")
 @js.native
-class Server protected ()
+open class Server protected ()
   extends typings.node.netMod.Server {
   def this(device: Adapter) = this()
   
-  def request(client: js.Any): Unit = js.native
+  def request(client: Any): Unit = js.native
 }

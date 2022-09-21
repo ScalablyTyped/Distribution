@@ -47,10 +47,10 @@ object ASPxClientAxis2D {
     
     inline def setConstantLines(value: js.Array[ASPxClientConstantLine]): Self = StObject.set(x, "constantLines", value.asInstanceOf[js.Any])
     
-    inline def setConstantLinesVarargs(value: ASPxClientConstantLine*): Self = StObject.set(x, "constantLines", js.Array(value :_*))
+    inline def setConstantLinesVarargs(value: ASPxClientConstantLine*): Self = StObject.set(x, "constantLines", js.Array(value*))
     
     inline def setStrips(value: js.Array[ASPxClientStrip]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
     
-    inline def setStripsVarargs(value: ASPxClientStrip*): Self = StObject.set(x, "strips", js.Array(value :_*))
+    inline def setStripsVarargs(value: ASPxClientStrip*): Self = StObject.set(x, "strips", js.Array(value*))
   }
 }

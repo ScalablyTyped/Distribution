@@ -1,6 +1,5 @@
 package typings.winrt.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,23 +9,17 @@ trait IToastNotification extends StObject {
   
   var content: XmlDocument
   
-  var expirationTime: Date
+  var expirationTime: js.Date
   
-  var onactivated: js.Any
+  var onactivated: Any
   
-  var ondismissed: js.Any
+  var ondismissed: Any
   
-  var onfailed: js.Any
+  var onfailed: Any
 }
 object IToastNotification {
   
-  inline def apply(
-    content: XmlDocument,
-    expirationTime: Date,
-    onactivated: js.Any,
-    ondismissed: js.Any,
-    onfailed: js.Any
-  ): IToastNotification = {
+  inline def apply(content: XmlDocument, expirationTime: js.Date, onactivated: Any, ondismissed: Any, onfailed: Any): IToastNotification = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any], ondismissed = ondismissed.asInstanceOf[js.Any], onfailed = onfailed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastNotification]
   }
@@ -35,12 +28,12 @@ object IToastNotification {
     
     inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setExpirationTime(value: Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: js.Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    inline def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
+    inline def setOnactivated(value: Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     
-    inline def setOndismissed(value: js.Any): Self = StObject.set(x, "ondismissed", value.asInstanceOf[js.Any])
+    inline def setOndismissed(value: Any): Self = StObject.set(x, "ondismissed", value.asInstanceOf[js.Any])
     
-    inline def setOnfailed(value: js.Any): Self = StObject.set(x, "onfailed", value.asInstanceOf[js.Any])
+    inline def setOnfailed(value: Any): Self = StObject.set(x, "onfailed", value.asInstanceOf[js.Any])
   }
 }

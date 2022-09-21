@@ -33,7 +33,7 @@ object conversationConversationMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/conversation", "Conversation")
   @js.native
   /** @hidden */
-  class Conversation[TUserStorage] () extends StObject {
+  open class Conversation[TUserStorage] () extends StObject {
     def this(options: ConversationOptions[TUserStorage]) = this()
     
     /** @hidden */
@@ -263,13 +263,15 @@ object conversationConversationMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/conversation", "UnauthorizedError")
   @js.native
-  class UnauthorizedError ()
+  open class UnauthorizedError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -500,7 +502,7 @@ object conversationConversationMod {
       
       inline def setNoInputPromptsUndefined: Self = StObject.set(x, "noInputPrompts", js.undefined)
       
-      inline def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value :_*))
+      inline def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value*))
       
       inline def setRichResponse(value: GoogleActionsV2RichResponse): Self = StObject.set(x, "richResponse", value.asInstanceOf[js.Any])
       
@@ -508,7 +510,7 @@ object conversationConversationMod {
       
       inline def setSpeechBiasingHintsUndefined: Self = StObject.set(x, "speechBiasingHints", js.undefined)
       
-      inline def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value :_*))
+      inline def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value*))
       
       inline def setUserStorage(value: String): Self = StObject.set(x, "userStorage", value.asInstanceOf[js.Any])
     }
@@ -526,7 +528,7 @@ object conversationConversationMod {
     inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec: typings.actionsOnGoogle.actionsOnGoogleStrings.typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec = "type.googleapis.com/google.actions.v2.PlaceValueSpec.PlaceDialogSpec".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec]
   }
   
-  type ExceptionHandler[TUserStorage, TConversation /* <: Conversation[TUserStorage] */] = js.Function2[/* conv */ TConversation, /* error */ Error, js.Promise[js.Any] | js.Any]
+  type ExceptionHandler[TUserStorage, TConversation /* <: Conversation[TUserStorage] */] = js.Function2[/* conv */ TConversation, /* error */ js.Error, js.Promise[Any] | Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.actionsOnGoogle.actionsOnGoogleStrings.typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec

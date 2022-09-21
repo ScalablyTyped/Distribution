@@ -19,6 +19,8 @@ object useScrollToTopMod {
     
     var animated: js.UndefOr[Boolean] = js.undefined
     
+    var x: js.UndefOr[Double] = js.undefined
+    
     var y: js.UndefOr[Double] = js.undefined
   }
   object ScrollOptions {
@@ -33,6 +35,10 @@ object useScrollToTopMod {
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
       inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       

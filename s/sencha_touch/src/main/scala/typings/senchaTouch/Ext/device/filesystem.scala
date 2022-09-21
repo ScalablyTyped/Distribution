@@ -113,23 +113,23 @@ object filesystem {
       * @param config Object
       * @returns FileTransfer
       */
-    var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method]
       * @param config Object
       */
-    var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Send a file to a server
       * @param config Object
       * @returns FileTransfer
       */
-    var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method]
       * @param config Object
       */
-    var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ICordova {
     
@@ -140,19 +140,19 @@ object filesystem {
     
     extension [Self <: ICordova](x: Self) {
       
-      inline def setDownload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      inline def setDownload(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      inline def setReadMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readMetadata", js.Any.fromFunction1(value))
+      inline def setReadMetadata(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "readMetadata", js.Any.fromFunction1(value))
       
       inline def setReadMetadataUndefined: Self = StObject.set(x, "readMetadata", js.undefined)
       
-      inline def setUpload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
+      inline def setUpload(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
       
       inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
       
-      inline def setWriteMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "writeMetadata", js.Any.fromFunction1(value))
+      inline def setWriteMetadata(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "writeMetadata", js.Any.fromFunction1(value))
       
       inline def setWriteMetadataUndefined: Self = StObject.set(x, "writeMetadata", js.undefined)
     }
@@ -165,27 +165,27 @@ object filesystem {
     /** [Method] Works the same way as getFile but creates or looks up a directory
       * @param config Object
       */
-    var getDirectory: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getDirectory: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Requests a Directory from the Local File System
       * @param config Object
       */
-    var getEntry: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getEntry: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Creates or looks up a file
       * @param config Object The object which contains the following config options:
       */
-    var getFile: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getFile: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Lists all the entries in the directory
       * @param config Object The object which contains the following config options:
       */
-    var readEntries: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var readEntries: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Works the same way as Ext device filesystem Entry remove but removes the directory and all of its contents if any
       * @param config Object
       */
-    var removeRecursively: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var removeRecursively: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IDirectoryEntry {
     
@@ -196,23 +196,23 @@ object filesystem {
     
     extension [Self <: IDirectoryEntry](x: Self) {
       
-      inline def setGetDirectory(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getDirectory", js.Any.fromFunction1(value))
+      inline def setGetDirectory(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getDirectory", js.Any.fromFunction1(value))
       
       inline def setGetDirectoryUndefined: Self = StObject.set(x, "getDirectory", js.undefined)
       
-      inline def setGetEntry(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
+      inline def setGetEntry(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
       
       inline def setGetEntryUndefined: Self = StObject.set(x, "getEntry", js.undefined)
       
-      inline def setGetFile(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getFile", js.Any.fromFunction1(value))
+      inline def setGetFile(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getFile", js.Any.fromFunction1(value))
       
       inline def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
       
-      inline def setReadEntries(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readEntries", js.Any.fromFunction1(value))
+      inline def setReadEntries(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "readEntries", js.Any.fromFunction1(value))
       
       inline def setReadEntriesUndefined: Self = StObject.set(x, "readEntries", js.undefined)
       
-      inline def setRemoveRecursively(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeRecursively", js.Any.fromFunction1(value))
+      inline def setRemoveRecursively(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "removeRecursively", js.Any.fromFunction1(value))
       
       inline def setRemoveRecursivelyUndefined: Self = StObject.set(x, "removeRecursively", js.undefined)
     }
@@ -225,7 +225,7 @@ object filesystem {
     /** [Method] Works the same way as moveTo but copies the entry
       * @param config Object
       */
-    var copyTo: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var copyTo: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns the file system on which the entry resides
       * @returns Ext.device.filesystem.FileSystem The entry file system.
@@ -245,7 +245,7 @@ object filesystem {
     /** [Method] Looks up the parent directory containing the entry
       * @param config Object The object which contains the following config options:
       */
-    var getParent: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getParent: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns whether the entry is a directory
       * @returns Boolean The entry is a directory.
@@ -260,12 +260,12 @@ object filesystem {
     /** [Method] Moves the entry to a different location on the file system
       * @param config Object The object which contains the following config options:
       */
-    var moveTo: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var moveTo: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Removes the entry from the file system
       * @param config Object The object which contains the following config options:
       */
-    var remove: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var remove: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IEntry {
     
@@ -276,7 +276,7 @@ object filesystem {
     
     extension [Self <: IEntry](x: Self) {
       
-      inline def setCopyTo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
+      inline def setCopyTo(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
       
       inline def setCopyToUndefined: Self = StObject.set(x, "copyTo", js.undefined)
       
@@ -292,7 +292,7 @@ object filesystem {
       
       inline def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
       
-      inline def setGetParent(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
+      inline def setGetParent(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
       
       inline def setGetParentUndefined: Self = StObject.set(x, "getParent", js.undefined)
       
@@ -304,11 +304,11 @@ object filesystem {
       
       inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
       
-      inline def setMoveTo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction1(value))
+      inline def setMoveTo(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction1(value))
       
       inline def setMoveToUndefined: Self = StObject.set(x, "moveTo", js.undefined)
       
-      inline def setRemove(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
       inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     }
@@ -321,7 +321,7 @@ object filesystem {
     /** [Method] Requests a File Handle from the Local File System
       * @param config Object
       */
-    var getEntry: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getEntry: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns the byte offset into the file at which the next read write will occur
       * @returns Number The file offset.
@@ -331,22 +331,22 @@ object filesystem {
     /** [Method] Reads the data from the file starting at the file offset
       * @param config Object The object which contains the following config options:
       */
-    var read: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var read: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the byte offset into the file at which the next read write will occur
       * @param config Object The object which contains the following config options:
       */
-    var seek: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var seek: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Truncates or extends the file to the specified size in bytes
       * @param config Object The object which contains the following config options:
       */
-    var truncate: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var truncate: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Writes the data to the file starting at the file offset
       * @param config Object The object which contains the following config options:
       */
-    var write: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var write: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IFileEntry {
     
@@ -357,7 +357,7 @@ object filesystem {
     
     extension [Self <: IFileEntry](x: Self) {
       
-      inline def setGetEntry(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
+      inline def setGetEntry(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
       
       inline def setGetEntryUndefined: Self = StObject.set(x, "getEntry", js.undefined)
       
@@ -365,19 +365,19 @@ object filesystem {
       
       inline def setGetOffsetUndefined: Self = StObject.set(x, "getOffset", js.undefined)
       
-      inline def setRead(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
       inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      inline def setSeek(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+      inline def setSeek(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
       
       inline def setSeekUndefined: Self = StObject.set(x, "seek", js.undefined)
       
-      inline def setTruncate(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
+      inline def setTruncate(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
       
       inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
       
-      inline def setWrite(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       
       inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     }
@@ -414,7 +414,7 @@ object filesystem {
     /** [Method] Requests a Ext device filesystem FileSystem instance
       * @param config Object The object which contains the following config options:
       */
-    var requestFileSystem: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var requestFileSystem: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IHTML5 {
     
@@ -425,7 +425,7 @@ object filesystem {
     
     extension [Self <: IHTML5](x: Self) {
       
-      inline def setRequestFileSystem(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
+      inline def setRequestFileSystem(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
       
       inline def setRequestFileSystemUndefined: Self = StObject.set(x, "requestFileSystem", js.undefined)
     }
@@ -439,23 +439,23 @@ object filesystem {
       * @param config Object
       * @returns FileTransfer
       */
-    var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method]
       * @param config Object
       */
-    var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Send a file to a server
       * @param config Object
       * @returns FileTransfer
       */
-    var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method]
       * @param config Object
       */
-    var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IPhoneGap {
     
@@ -466,19 +466,19 @@ object filesystem {
     
     extension [Self <: IPhoneGap](x: Self) {
       
-      inline def setDownload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      inline def setDownload(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      inline def setReadMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readMetadata", js.Any.fromFunction1(value))
+      inline def setReadMetadata(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "readMetadata", js.Any.fromFunction1(value))
       
       inline def setReadMetadataUndefined: Self = StObject.set(x, "readMetadata", js.undefined)
       
-      inline def setUpload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
+      inline def setUpload(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
       
       inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
       
-      inline def setWriteMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "writeMetadata", js.Any.fromFunction1(value))
+      inline def setWriteMetadata(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "writeMetadata", js.Any.fromFunction1(value))
       
       inline def setWriteMetadataUndefined: Self = StObject.set(x, "writeMetadata", js.undefined)
     }
@@ -491,7 +491,7 @@ object filesystem {
     /** [Method] Requests a Ext device filesystem FileSystem instance
       * @param config Object The object which contains the following config options:
       */
-    var requestFileSystem: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var requestFileSystem: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ISencha {
     
@@ -502,7 +502,7 @@ object filesystem {
     
     extension [Self <: ISencha](x: Self) {
       
-      inline def setRequestFileSystem(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
+      inline def setRequestFileSystem(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
       
       inline def setRequestFileSystemUndefined: Self = StObject.set(x, "requestFileSystem", js.undefined)
     }

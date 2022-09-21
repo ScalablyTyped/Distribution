@@ -12,7 +12,7 @@ trait ComplianceContributorCount extends StObject {
   var CapExceeded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The number of AWS resources or AWS Config rules responsible for the current compliance of the item.
+    * The number of Amazon Web Services resources or Config rules responsible for the current compliance of the item.
     */
   var CappedCount: js.UndefOr[Integer] = js.undefined
 }

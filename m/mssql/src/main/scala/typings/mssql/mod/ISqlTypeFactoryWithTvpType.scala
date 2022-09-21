@@ -10,5 +10,5 @@ trait ISqlTypeFactoryWithTvpType
      with ISqlTypeFactory {
   
   def apply(): ISqlTypeWithTvpType = js.native
-  def apply(tvpType: js.Any): ISqlTypeWithTvpType = js.native
+  def apply(tvpType: Any): ISqlTypeWithTvpType = js.native
 }

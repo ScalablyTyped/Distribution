@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.photoCameraMod.PhotoCameraProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonPhotoCameraMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/PhotoCamera", JSImport.Default)
   @js.native
-  val default: SFC[PhotoCameraProps] = js.native
+  val default: FC[PhotoCameraProps] = js.native
   
-  type _To = SFC[PhotoCameraProps]
+  type _To = FC[PhotoCameraProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonPhotoCameraMod.foo` */
-  override def _to: SFC[PhotoCameraProps] = default
+  override def _to: FC[PhotoCameraProps] = default
 }

@@ -11,10 +11,10 @@ object mediaFileReaderMod {
   
   @JSImport("jsmediatags/build2/MediaFileReader", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with MediaFileReader {
-    def this(path: js.Any) = this()
+    def this(path: Any) = this()
   }
   /* static members */
   object default {
@@ -23,7 +23,7 @@ object mediaFileReaderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def canReadFile(file: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @js.native

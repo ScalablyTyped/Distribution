@@ -20,8 +20,8 @@ object global {
   
   /**
     * This variable is set to true when react-native is running in Dev mode
-    * Typical usage:
-    * <code> if (__DEV__) console.log('Running in dev mode')</code>
+    * @example
+    * if (__DEV__) console.log('Running in dev mode')
     */
   @JSGlobal("__DEV__")
   @js.native
@@ -42,7 +42,7 @@ object global {
     */
   @JSGlobal("originalXMLHttpRequest")
   @js.native
-  val originalXMLHttpRequest: js.Any = js.native
+  val originalXMLHttpRequest: Any = js.native
   
   @JSGlobal("require")
   @js.native
@@ -56,16 +56,11 @@ object global {
   @js.native
   trait Console_ extends StObject {
     
-    def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def debug(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def debug(message: Any, optionalParams: Any*): Unit = js.native
+    def debug(message: Unit, optionalParams: Any*): Unit = js.native
     
-    /**
-      * @deprecated Use LogBox.ignoreAllLogs(disable) instead
-      */
-    var disableYellowBox: Boolean = js.native
-    
-    def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def error(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def error(message: Any, optionalParams: Any*): Unit = js.native
+    def error(message: Unit, optionalParams: Any*): Unit = js.native
     
     def group(): Unit = js.native
     def group(label: String): Unit = js.native
@@ -80,20 +75,20 @@ object global {
       */
     var ignoredYellowBox: js.Array[String] = js.native
     
-    def info(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def info(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def info(message: Any, optionalParams: Any*): Unit = js.native
+    def info(message: Unit, optionalParams: Any*): Unit = js.native
     
-    def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def log(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def log(message: Any, optionalParams: Any*): Unit = js.native
+    def log(message: Unit, optionalParams: Any*): Unit = js.native
     
-    def table(data: js.Any*): Unit = js.native
+    def table(data: Any*): Unit = js.native
     
-    def trace(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def trace(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def trace(message: Any, optionalParams: Any*): Unit = js.native
+    def trace(message: Unit, optionalParams: Any*): Unit = js.native
     
-    def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def warn(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def warn(message: Any, optionalParams: Any*): Unit = js.native
+    def warn(message: Unit, optionalParams: Any*): Unit = js.native
   }
   
-  type NodeRequire = js.Function1[/* id */ String, js.Any]
+  type NodeRequire = js.Function1[/* id */ String, Any]
 }

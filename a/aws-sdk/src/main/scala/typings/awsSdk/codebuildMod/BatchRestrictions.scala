@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchRestrictions extends StObject {
   
   /**
-    * An array of strings that specify the compute types that are allowed for the batch build. See Build environment compute types in the AWS CodeBuild User Guide for these values. 
+    * An array of strings that specify the compute types that are allowed for the batch build. See Build environment compute types in the CodeBuild User Guide for these values. 
     */
   var computeTypesAllowed: js.UndefOr[ComputeTypesAllowed] = js.undefined
   
@@ -29,7 +29,7 @@ object BatchRestrictions {
     
     inline def setComputeTypesAllowedUndefined: Self = StObject.set(x, "computeTypesAllowed", js.undefined)
     
-    inline def setComputeTypesAllowedVarargs(value: NonEmptyString*): Self = StObject.set(x, "computeTypesAllowed", js.Array(value :_*))
+    inline def setComputeTypesAllowedVarargs(value: NonEmptyString*): Self = StObject.set(x, "computeTypesAllowed", js.Array(value*))
     
     inline def setMaximumBuildsAllowed(value: WrapperInt): Self = StObject.set(x, "maximumBuildsAllowed", value.asInstanceOf[js.Any])
     

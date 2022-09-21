@@ -9,11 +9,11 @@ React native wheel picker iOS style with android.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-wheel-pick |
-| Keywords           | react-native, picker, wheel |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 23706 |
-| # stars            | 0 |
+| Keywords           | react-native, react-native-wheel, react-native-wheel-pick, react-native-wheel-picker |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 3193.0 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/TronNatthakorn/react-native-wheel-pick#readme)

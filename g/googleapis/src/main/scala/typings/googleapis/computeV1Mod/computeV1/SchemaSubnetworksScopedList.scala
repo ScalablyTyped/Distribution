@@ -13,10 +13,9 @@ trait SchemaSubnetworksScopedList extends StObject {
   var subnetworks: js.UndefOr[js.Array[SchemaSubnetwork]] = js.undefined
   
   /**
-    * An informational warning that appears when the list of addresses is
-    * empty.
+    * An informational warning that appears when the list of addresses is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaSubnetworksScopedList {
   
@@ -31,9 +30,11 @@ object SchemaSubnetworksScopedList {
     
     inline def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
-    inline def setSubnetworksVarargs(value: SchemaSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
+    inline def setSubnetworksVarargs(value: SchemaSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

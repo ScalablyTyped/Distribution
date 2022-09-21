@@ -15,7 +15,7 @@ trait XDisplayConnection
     * returns a identifier.
     * @returns a unique platform dependent identifier for a display connection.
     */
-  val Identifier: js.Any
+  val Identifier: Any
   
   /**
     * register an error handler for toolkit specific errors.
@@ -29,13 +29,13 @@ trait XDisplayConnection
     * @param eventHandler the handler to register.
     * @param eventMask the event mask specifies the events the handler is interested in.
     */
-  def addEventHandler(window: js.Any, eventHandler: XEventHandler, eventMask: Double): Unit
+  def addEventHandler(window: Any, eventHandler: XEventHandler, eventMask: Double): Unit
   
   /**
     * returns a identifier.
     * @returns a unique platform dependent identifier for a display connection.
     */
-  def getIdentifier(): js.Any
+  def getIdentifier(): Any
   
   /**
     * remover an error handler from the handler list.
@@ -48,20 +48,20 @@ trait XDisplayConnection
     * @param window the platform specific window id the handler should be unregistered for. If empty, the handler should be unregistered completely.
     * @param eventHandler the handler to remove.
     */
-  def removeEventHandler(window: js.Any, eventHandler: XEventHandler): Unit
+  def removeEventHandler(window: Any, eventHandler: XEventHandler): Unit
 }
 object XDisplayConnection {
   
   inline def apply(
-    Identifier: js.Any,
+    Identifier: Any,
     acquire: () => Unit,
     addErrorHandler: XEventHandler => Unit,
-    addEventHandler: (js.Any, XEventHandler, Double) => Unit,
-    getIdentifier: () => js.Any,
-    queryInterface: `type` => js.Any,
+    addEventHandler: (Any, XEventHandler, Double) => Unit,
+    getIdentifier: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeErrorHandler: XEventHandler => Unit,
-    removeEventHandler: (js.Any, XEventHandler) => Unit
+    removeEventHandler: (Any, XEventHandler) => Unit
   ): XDisplayConnection = {
     val __obj = js.Dynamic.literal(Identifier = Identifier.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addErrorHandler = js.Any.fromFunction1(addErrorHandler), addEventHandler = js.Any.fromFunction3(addEventHandler), getIdentifier = js.Any.fromFunction0(getIdentifier), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeErrorHandler = js.Any.fromFunction1(removeErrorHandler), removeEventHandler = js.Any.fromFunction2(removeEventHandler))
     __obj.asInstanceOf[XDisplayConnection]
@@ -71,14 +71,14 @@ object XDisplayConnection {
     
     inline def setAddErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "addErrorHandler", js.Any.fromFunction1(value))
     
-    inline def setAddEventHandler(value: (js.Any, XEventHandler, Double) => Unit): Self = StObject.set(x, "addEventHandler", js.Any.fromFunction3(value))
+    inline def setAddEventHandler(value: (Any, XEventHandler, Double) => Unit): Self = StObject.set(x, "addEventHandler", js.Any.fromFunction3(value))
     
-    inline def setGetIdentifier(value: () => js.Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
+    inline def setGetIdentifier(value: () => Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
-    inline def setIdentifier(value: js.Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     inline def setRemoveErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "removeErrorHandler", js.Any.fromFunction1(value))
     
-    inline def setRemoveEventHandler(value: (js.Any, XEventHandler) => Unit): Self = StObject.set(x, "removeEventHandler", js.Any.fromFunction2(value))
+    inline def setRemoveEventHandler(value: (Any, XEventHandler) => Unit): Self = StObject.set(x, "removeEventHandler", js.Any.fromFunction2(value))
   }
 }

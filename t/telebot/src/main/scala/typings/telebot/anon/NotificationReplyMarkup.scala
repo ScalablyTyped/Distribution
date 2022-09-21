@@ -8,7 +8,7 @@ trait NotificationReplyMarkup extends StObject {
   
   var notification: js.UndefOr[Boolean] = js.undefined
   
-  var replyMarkup: js.UndefOr[js.Any] = js.undefined
+  var replyMarkup: js.UndefOr[Any] = js.undefined
   
   var replyToMessage: js.UndefOr[Double] = js.undefined
 }
@@ -25,7 +25,7 @@ object NotificationReplyMarkup {
     
     inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    inline def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
+    inline def setReplyMarkup(value: Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
     inline def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     

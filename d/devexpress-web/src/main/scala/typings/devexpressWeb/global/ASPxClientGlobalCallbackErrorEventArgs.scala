@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGlobalCallbackErrorEventArgs")
 @js.native
-class ASPxClientGlobalCallbackErrorEventArgs protected ()
+open class ASPxClientGlobalCallbackErrorEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGlobalCallbackErrorEventArgs {
   /**

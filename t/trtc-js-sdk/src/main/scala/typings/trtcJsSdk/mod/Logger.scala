@@ -6,7 +6,6 @@ import typings.trtcJsSdk.trtcJsSdkNumbers.`2`
 import typings.trtcJsSdk.trtcJsSdkNumbers.`3`
 import typings.trtcJsSdk.trtcJsSdkNumbers.`4`
 import typings.trtcJsSdk.trtcJsSdkNumbers.`5`
-import typings.trtcJsSdk.trtcJsSdkNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,17 +76,5 @@ object Logger {
     * TRTC.Logger.setLogLevel(TRTC.Logger.LogLevel.INFO);
     * ```
     */
-  inline def setLogLevel_0(level: `0`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def setLogLevel_1(level: `1`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def setLogLevel_2(level: `2`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def setLogLevel_3(level: `3`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def setLogLevel_4(level: `4`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def setLogLevel_5(level: `5`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def setLogLevel_6(level: `6`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel(level: `0` | `1` | `2` | `3` | `4` | `5`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchOrdersSourceFilter")
 @js.native
-class SearchOrdersSourceFilter () extends StObject {
+open class SearchOrdersSourceFilter () extends StObject {
   
   /**
     * Filters by `Source` `name`. Will return any orders with with a `source.name` that matches any of the listed source names.

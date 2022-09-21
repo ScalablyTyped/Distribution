@@ -10,10 +10,10 @@ object aspectRatioMod {
   
   @JSImport("material-ui/svg-icons/action/aspect-ratio", JSImport.Default)
   @js.native
-  class default () extends ActionAspectRatio
+  open class default () extends ActionAspectRatio
   
   @JSImport("material-ui/svg-icons/action/aspect-ratio", "ActionAspectRatio")
   @js.native
-  class ActionAspectRatio ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAspectRatio ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

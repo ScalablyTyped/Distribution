@@ -1,7 +1,7 @@
 
 # Scala.js typings for minify
 
-Typings are for version 6.0
+Typings are for version 9.1
 
 ## Library description:
 Minifier of js, css, html and img
@@ -10,10 +10,10 @@ Minifier of js, css, html and img
 | ------------------ | :-------------: |
 | Full name          | minify |
 | Keywords           | minify, minimize, js, css, img, html, base64 |
-| # releases         | 10 |
-| # dependents       | 112 |
-| # downloads        | 4294688 |
-| # stars            | 12 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 163380.0 |
+| # stars            | 150.0 |
 
 ## Links
 - [Homepage](http://coderaiser.github.io/minify)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BlockDevicesData extends StObject {
   
-  var fstype: String
+  var fsType: String
   
   var identifier: String
   
@@ -35,7 +35,7 @@ trait BlockDevicesData extends StObject {
 object BlockDevicesData {
   
   inline def apply(
-    fstype: String,
+    fsType: String,
     identifier: String,
     label: String,
     model: String,
@@ -49,14 +49,14 @@ object BlockDevicesData {
     `type`: String,
     uuid: String
   ): BlockDevicesData = {
-    val __obj = js.Dynamic.literal(fstype = fstype.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], physical = physical.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], removable = removable.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], physical = physical.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], removable = removable.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockDevicesData]
   }
   
   extension [Self <: BlockDevicesData](x: Self) {
     
-    inline def setFstype(value: String): Self = StObject.set(x, "fstype", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

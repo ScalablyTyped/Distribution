@@ -14,10 +14,9 @@ object progressMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Progress", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ProgressProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ProgressProps, ComponentState, Any] {
     def this(props: ProgressProps) = this()
-    def this(props: ProgressProps, context: js.Any) = this()
+    def this(props: ProgressProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Progress", JSImport.Default)
   @js.native

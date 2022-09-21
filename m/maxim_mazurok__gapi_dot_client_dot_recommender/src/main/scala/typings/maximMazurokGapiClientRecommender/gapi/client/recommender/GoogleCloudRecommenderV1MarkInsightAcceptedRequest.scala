@@ -14,7 +14,7 @@ trait GoogleCloudRecommenderV1MarkInsightAcceptedRequest extends StObject {
   var stateMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkInsightAcceptedRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkInsightAcceptedRequest & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudRecommenderV1MarkInsightAcceptedRequest {
@@ -33,7 +33,7 @@ object GoogleCloudRecommenderV1MarkInsightAcceptedRequest {
     inline def setStateMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkInsightAcceptedRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkInsightAcceptedRequest & TopLevel[Any]
     ): Self = StObject.set(x, "stateMetadata", value.asInstanceOf[js.Any])
     
     inline def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)

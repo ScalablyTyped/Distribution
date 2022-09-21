@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.poseEnabledControllerMod.ExtendedGamepadButton
 import typings.babylonjs.webVRControllerMod.WebVRController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,14 +10,21 @@ object gearVRControllerMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/gearVRController", "GearVRController")
   @js.native
-  class GearVRController protected () extends WebVRController {
+  open class GearVRController protected () extends WebVRController {
     /**
       * Creates a new GearVRController from a gamepad
       * @param vrGamepad the gamepad that the controller should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
     
-    /* private */ val _buttonIndexToObservableNameMap: js.Any = js.native
+    /* private */ val _buttonIndexToObservableNameMap: Any = js.native
+    
+    /**
+      * Called once for each button that changed state since the last frame
+      * @param buttonIdx Which button index changed
+      * @param state New state of the button
+      */
+    /* protected */ def _handleButtonChange(buttonIdx: Double, state: ExtendedGamepadButton): Unit = js.native
   }
   /* static members */
   object GearVRController {

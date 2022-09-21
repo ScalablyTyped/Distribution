@@ -12,225 +12,209 @@ object mod {
   @JSImport("halogen", "BeatLoader")
   @js.native
   val BeatLoader: ComponentClass[MarginLoaderProps[String], ComponentState] = js.native
-  type BeatLoader = Component[MarginLoaderProps[String], js.Object, js.Any]
+  type BeatLoader = Component[MarginLoaderProps[String], js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "BeatLoader")
   @js.native
-  class BeatLoaderCls protected ()
-    extends Component[MarginLoaderProps[String], ComponentState, js.Any] {
+  open class BeatLoaderCls protected () extends Component[MarginLoaderProps[String], ComponentState, Any] {
     def this(props: MarginLoaderProps[String]) = this()
-    def this(props: MarginLoaderProps[String], context: js.Any) = this()
+    def this(props: MarginLoaderProps[String], context: Any) = this()
   }
   
   @JSImport("halogen", "BounceLoader")
   @js.native
   val BounceLoader: ComponentClass[SizeLoaderProps, ComponentState] = js.native
-  type BounceLoader = Component[SizeLoaderProps, js.Object, js.Any]
+  type BounceLoader = Component[SizeLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "BounceLoader")
   @js.native
-  class BounceLoaderCls protected ()
-    extends Component[SizeLoaderProps, ComponentState, js.Any] {
+  open class BounceLoaderCls protected () extends Component[SizeLoaderProps, ComponentState, Any] {
     def this(props: SizeLoaderProps) = this()
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "ClipLoader")
   @js.native
   val ClipLoader: ComponentClass[SizeLoaderProps, ComponentState] = js.native
-  type ClipLoader = Component[SizeLoaderProps, js.Object, js.Any]
+  type ClipLoader = Component[SizeLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "ClipLoader")
   @js.native
-  class ClipLoaderCls protected ()
-    extends Component[SizeLoaderProps, ComponentState, js.Any] {
+  open class ClipLoaderCls protected () extends Component[SizeLoaderProps, ComponentState, Any] {
     def this(props: SizeLoaderProps) = this()
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "DotLoader")
   @js.native
   val DotLoader: ComponentClass[SizeLoaderProps, ComponentState] = js.native
-  type DotLoader = Component[SizeLoaderProps, js.Object, js.Any]
+  type DotLoader = Component[SizeLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "DotLoader")
   @js.native
-  class DotLoaderCls protected ()
-    extends Component[SizeLoaderProps, ComponentState, js.Any] {
+  open class DotLoaderCls protected () extends Component[SizeLoaderProps, ComponentState, Any] {
     def this(props: SizeLoaderProps) = this()
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "FadeLoader")
   @js.native
   val FadeLoader: ComponentClass[RadiusLoaderProps, ComponentState] = js.native
-  type FadeLoader = Component[RadiusLoaderProps, js.Object, js.Any]
+  type FadeLoader = Component[RadiusLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "FadeLoader")
   @js.native
-  class FadeLoaderCls protected ()
-    extends Component[RadiusLoaderProps, ComponentState, js.Any] {
+  open class FadeLoaderCls protected () extends Component[RadiusLoaderProps, ComponentState, Any] {
     def this(props: RadiusLoaderProps) = this()
-    def this(props: RadiusLoaderProps, context: js.Any) = this()
+    def this(props: RadiusLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "GridLoader")
   @js.native
   val GridLoader: ComponentClass[MarginLoaderProps[String], ComponentState] = js.native
-  type GridLoader = Component[MarginLoaderProps[String], js.Object, js.Any]
+  type GridLoader = Component[MarginLoaderProps[String], js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "GridLoader")
   @js.native
-  class GridLoaderCls protected ()
-    extends Component[MarginLoaderProps[String], ComponentState, js.Any] {
+  open class GridLoaderCls protected () extends Component[MarginLoaderProps[String], ComponentState, Any] {
     def this(props: MarginLoaderProps[String]) = this()
-    def this(props: MarginLoaderProps[String], context: js.Any) = this()
+    def this(props: MarginLoaderProps[String], context: Any) = this()
   }
   
   @JSImport("halogen", "MoonLoader")
   @js.native
   val MoonLoader: ComponentClass[SizeLoaderProps, ComponentState] = js.native
-  type MoonLoader = Component[SizeLoaderProps, js.Object, js.Any]
+  type MoonLoader = Component[SizeLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "MoonLoader")
   @js.native
-  class MoonLoaderCls protected ()
-    extends Component[SizeLoaderProps, ComponentState, js.Any] {
+  open class MoonLoaderCls protected () extends Component[SizeLoaderProps, ComponentState, Any] {
     def this(props: SizeLoaderProps) = this()
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "PacmanLoader")
   @js.native
   val PacmanLoader: ComponentClass[MarginLoaderProps[Double], ComponentState] = js.native
-  type PacmanLoader = Component[MarginLoaderProps[Double], js.Object, js.Any]
+  type PacmanLoader = Component[MarginLoaderProps[Double], js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "PacmanLoader")
   @js.native
-  class PacmanLoaderCls protected ()
-    extends Component[MarginLoaderProps[Double], ComponentState, js.Any] {
+  open class PacmanLoaderCls protected () extends Component[MarginLoaderProps[Double], ComponentState, Any] {
     def this(props: MarginLoaderProps[Double]) = this()
-    def this(props: MarginLoaderProps[Double], context: js.Any) = this()
+    def this(props: MarginLoaderProps[Double], context: Any) = this()
   }
   
   @JSImport("halogen", "PulseLoader")
   @js.native
   val PulseLoader: ComponentClass[MarginLoaderProps[String], ComponentState] = js.native
-  type PulseLoader = Component[MarginLoaderProps[String], js.Object, js.Any]
+  type PulseLoader = Component[MarginLoaderProps[String], js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "PulseLoader")
   @js.native
-  class PulseLoaderCls protected ()
-    extends Component[MarginLoaderProps[String], ComponentState, js.Any] {
+  open class PulseLoaderCls protected () extends Component[MarginLoaderProps[String], ComponentState, Any] {
     def this(props: MarginLoaderProps[String]) = this()
-    def this(props: MarginLoaderProps[String], context: js.Any) = this()
+    def this(props: MarginLoaderProps[String], context: Any) = this()
   }
   
   @JSImport("halogen", "RingLoader")
   @js.native
   val RingLoader: ComponentClass[SizeLoaderProps, ComponentState] = js.native
-  type RingLoader = Component[SizeLoaderProps, js.Object, js.Any]
+  type RingLoader = Component[SizeLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "RingLoader")
   @js.native
-  class RingLoaderCls protected ()
-    extends Component[SizeLoaderProps, ComponentState, js.Any] {
+  open class RingLoaderCls protected () extends Component[SizeLoaderProps, ComponentState, Any] {
     def this(props: SizeLoaderProps) = this()
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "RiseLoader")
   @js.native
   val RiseLoader: ComponentClass[MarginLoaderProps[String], ComponentState] = js.native
-  type RiseLoader = Component[MarginLoaderProps[String], js.Object, js.Any]
+  type RiseLoader = Component[MarginLoaderProps[String], js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "RiseLoader")
   @js.native
-  class RiseLoaderCls protected ()
-    extends Component[MarginLoaderProps[String], ComponentState, js.Any] {
+  open class RiseLoaderCls protected () extends Component[MarginLoaderProps[String], ComponentState, Any] {
     def this(props: MarginLoaderProps[String]) = this()
-    def this(props: MarginLoaderProps[String], context: js.Any) = this()
+    def this(props: MarginLoaderProps[String], context: Any) = this()
   }
   
   @JSImport("halogen", "RotateLoader")
   @js.native
   val RotateLoader: ComponentClass[MarginLoaderProps[String], ComponentState] = js.native
-  type RotateLoader = Component[MarginLoaderProps[String], js.Object, js.Any]
+  type RotateLoader = Component[MarginLoaderProps[String], js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "RotateLoader")
   @js.native
-  class RotateLoaderCls protected ()
-    extends Component[MarginLoaderProps[String], ComponentState, js.Any] {
+  open class RotateLoaderCls protected () extends Component[MarginLoaderProps[String], ComponentState, Any] {
     def this(props: MarginLoaderProps[String]) = this()
-    def this(props: MarginLoaderProps[String], context: js.Any) = this()
+    def this(props: MarginLoaderProps[String], context: Any) = this()
   }
   
   @JSImport("halogen", "ScaleLoader")
   @js.native
   val ScaleLoader: ComponentClass[RadiusLoaderProps, ComponentState] = js.native
-  type ScaleLoader = Component[RadiusLoaderProps, js.Object, js.Any]
+  type ScaleLoader = Component[RadiusLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "ScaleLoader")
   @js.native
-  class ScaleLoaderCls protected ()
-    extends Component[RadiusLoaderProps, ComponentState, js.Any] {
+  open class ScaleLoaderCls protected () extends Component[RadiusLoaderProps, ComponentState, Any] {
     def this(props: RadiusLoaderProps) = this()
-    def this(props: RadiusLoaderProps, context: js.Any) = this()
+    def this(props: RadiusLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "SkewLoader")
   @js.native
   val SkewLoader: ComponentClass[SizeLoaderProps, ComponentState] = js.native
-  type SkewLoader = Component[SizeLoaderProps, js.Object, js.Any]
+  type SkewLoader = Component[SizeLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "SkewLoader")
   @js.native
-  class SkewLoaderCls protected ()
-    extends Component[SizeLoaderProps, ComponentState, js.Any] {
+  open class SkewLoaderCls protected () extends Component[SizeLoaderProps, ComponentState, Any] {
     def this(props: SizeLoaderProps) = this()
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "SquareLoader")
   @js.native
   val SquareLoader: ComponentClass[SizeLoaderProps, ComponentState] = js.native
-  type SquareLoader = Component[SizeLoaderProps, js.Object, js.Any]
+  type SquareLoader = Component[SizeLoaderProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "SquareLoader")
   @js.native
-  class SquareLoaderCls protected ()
-    extends Component[SizeLoaderProps, ComponentState, js.Any] {
+  open class SquareLoaderCls protected () extends Component[SizeLoaderProps, ComponentState, Any] {
     def this(props: SizeLoaderProps) = this()
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogen", "SyncLoader")
   @js.native
   val SyncLoader: ComponentClass[MarginLoaderProps[String], ComponentState] = js.native
-  type SyncLoader = Component[MarginLoaderProps[String], js.Object, js.Any]
+  type SyncLoader = Component[MarginLoaderProps[String], js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("halogen", "SyncLoader")
   @js.native
-  class SyncLoaderCls protected ()
-    extends Component[MarginLoaderProps[String], ComponentState, js.Any] {
+  open class SyncLoaderCls protected () extends Component[MarginLoaderProps[String], ComponentState, Any] {
     def this(props: MarginLoaderProps[String]) = this()
-    def this(props: MarginLoaderProps[String], context: js.Any) = this()
+    def this(props: MarginLoaderProps[String], context: Any) = this()
   }
   
   trait HalogenCommonProps extends StObject {

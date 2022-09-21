@@ -9,7 +9,7 @@ trait ObserveResponse extends StObject {
   // 相交区域占目标节点的布局区域的比例
   var boundingClientRect: RectArea
   
-  var dataset: js.Any
+  var dataset: Any
   
   var id: String
   
@@ -25,7 +25,7 @@ object ObserveResponse {
   
   inline def apply(
     boundingClientRect: RectArea,
-    dataset: js.Any,
+    dataset: Any,
     id: String,
     intersectionRatio: Double,
     intersectionRect: RectArea,
@@ -40,7 +40,7 @@ object ObserveResponse {
     
     inline def setBoundingClientRect(value: RectArea): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     
-    inline def setDataset(value: js.Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

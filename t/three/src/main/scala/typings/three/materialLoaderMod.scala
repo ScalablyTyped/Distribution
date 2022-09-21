@@ -1,7 +1,6 @@
 package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
@@ -17,7 +16,7 @@ object materialLoaderMod {
   
   @JSImport("three/src/loaders/MaterialLoader", "MaterialLoader")
   @js.native
-  class MaterialLoader () extends Loader {
+  open class MaterialLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(url: String, onLoad: js.Function1[/* material */ Material, Unit]): Unit = js.native
@@ -30,22 +29,22 @@ object materialLoaderMod {
       url: String,
       onLoad: js.Function1[/* material */ Material, Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+      onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* material */ Material, Unit],
       onProgress: Unit,
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+      onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
     
-    def parse(json: js.Any): Material = js.native
+    def parse(json: Any): Material = js.native
     
     def setTextures(textures: StringDictionary[Texture]): this.type = js.native
     
     /**
-    	 * @default {}
-    	 */
+      * @default {}
+      */
     var textures: StringDictionary[Texture] = js.native
   }
 }

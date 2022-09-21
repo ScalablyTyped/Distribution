@@ -5,146 +5,132 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a Route resource. A route specifies how certain packets should
-  * be handled by the network. Routes are associated with instances by tags and
-  * the set of routes for a particular instance is called its routing table.
-  * For each packet leaving an instance, the system searches that
-  * instance&#39;s routing table for a single best matching route. Routes match
-  * packets by destination IP address, preferring smaller or more specific
-  * ranges over larger ones. If there is a tie, the system selects the route
-  * with the smallest priority value. If there is still a tie, it uses the
-  * layer three and four packet headers to select just one of the remaining
-  * matching routes. The packet is then forwarded as specified by the nextHop
-  * field of the winning route - either to another instance destination, an
-  * instance gateway, or a Google Compute Engine-operated gateway.  Packets
-  * that do not match any route in the sending instance&#39;s routing table are
-  * dropped. (== resource_for beta.routes ==) (== resource_for v1.routes ==)
-  */
 trait SchemaRoute extends StObject {
+  
+  /**
+    * Whether this route can conflict with existing subnetworks. Setting this to true allows this route to conflict with subnetworks that have already been configured on the corresponding network.
+    */
+  var allowConflictingSubnetworks: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * [Output Only] AS path.
+    */
+  var asPaths: js.UndefOr[js.Array[SchemaRouteAsPath]] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.undefined
+  var creationTimestamp: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An optional description of this resource. Provide this property when you
-    * create the resource.
+    * An optional description of this resource. Provide this field when you create the resource.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The destination range of outgoing packets that this route applies to.
-    * Only IPv4 is supported.
+    * The destination range of outgoing packets that this route applies to. Both IPv4 and IPv6 are supported.
     */
-  var destRange: js.UndefOr[String] = js.undefined
+  var destRange: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] The unique identifier for the resource. This identifier is
-    * defined by the server.
+    * [Output Only] The unique identifier for the resource. This identifier is defined by the server.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] Type of this resource. Always compute#routes for Route
-    * resources.
+    * ILB route behavior when ILB is deemed unhealthy based on user specified threshold on the Backend Service of the internal load balancing.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var ilbRouteBehaviorOnUnhealthy: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name of the resource. Provided by the client when the resource is
-    * created. The name must be 1-63 characters long, and comply with RFC1035.
-    * Specifically, the name must be 1-63 characters long and match the regular
-    * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-    * must be a lowercase letter, and all following characters must be a dash,
-    * lowercase letter, or digit, except the last character, which cannot be a
-    * dash.
+    * [Output Only] Type of this resource. Always compute#routes for Route resources.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?`. The first character must be a lowercase letter, and all following characters (except for the last character) must be a dash, lowercase letter, or digit. The last character must be a lowercase letter or digit.
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Fully-qualified URL of the network that this route applies to.
     */
-  var network: js.UndefOr[String] = js.undefined
+  var network: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The URL to a gateway that should handle matching packets. You can only
-    * specify the internet gateway using a full or partial valid URL:
-    * projects/&lt;project-id&gt;/global/gateways/default-internet-gateway
+    * The URL to a gateway that should handle matching packets. You can only specify the internet gateway using a full or partial valid URL: projects/ project/global/gateways/default-internet-gateway
     */
-  var nextHopGateway: js.UndefOr[String] = js.undefined
+  var nextHopGateway: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that
-    * should handle matching packets. You can only specify the forwarding rule
-    * as a partial or full URL. For example, the following are all valid URLs:
-    * -
-    * https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
-    * - regions/region/forwardingRules/forwardingRule  Note that this can only
-    * be used when the destination_range is a public (non-RFC 1918) IP CIDR
-    * range.
+    * The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets or the IP address of the forwarding Rule. For example, the following are all valid URLs: - 10.128.0.56 - https://www.googleapis.com/compute/v1/projects/project/regions/region /forwardingRules/forwardingRule - regions/region/forwardingRules/forwardingRule
     */
-  var nextHopIlb: js.UndefOr[String] = js.undefined
+  var nextHopIlb: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The URL to an instance that should handle matching packets. You can
-    * specify this as a full or partial URL. For example:
-    * https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/
+    * The URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example: https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/
     */
-  var nextHopInstance: js.UndefOr[String] = js.undefined
+  var nextHopInstance: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The network IP address of an instance that should handle matching
-    * packets. Only IPv4 is supported.
+    * [Output Only] The URL to an InterconnectAttachment which is the next hop for the route. This field will only be populated for the dynamic routes generated by Cloud Router with a linked interconnectAttachment.
     */
-  var nextHopIp: js.UndefOr[String] = js.undefined
+  var nextHopInterconnectAttachment: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The network IP address of an instance that should handle matching packets. Only IPv4 is supported.
+    */
+  var nextHopIp: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The URL of the local network if it should handle matching packets.
     */
-  var nextHopNetwork: js.UndefOr[String] = js.undefined
+  var nextHopNetwork: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] The network peering name that should handle matching
-    * packets, which should conform to RFC1035.
+    * [Output Only] The network peering name that should handle matching packets, which should conform to RFC1035.
     */
-  var nextHopPeering: js.UndefOr[String] = js.undefined
+  var nextHopPeering: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The URL to a VpnTunnel that should handle matching packets.
     */
-  var nextHopVpnTunnel: js.UndefOr[String] = js.undefined
+  var nextHopVpnTunnel: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The priority of this route. Priority is used to break ties in cases where
-    * there is more than one matching route of equal prefix length. In the case
-    * of two routes with equal prefix length, the one with the lowest-numbered
-    * priority value wins. Default value is 1000. Valid range is 0 through
-    * 65535.
+    * The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal prefix length. In cases where multiple routes have equal prefix length, the one with the lowest-numbered priority value wins. The default value is `1000`. The priority value must be from `0` to `65535`, inclusive.
     */
-  var priority: js.UndefOr[Double] = js.undefined
+  var priority: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * [Output only] The status of the route.
+    */
+  var routeStatus: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * [Output Only] The type of this route, which can be one of the following values: - 'TRANSIT' for a transit route that this router learned from another Cloud Router and will readvertise to one of its BGP peers - 'SUBNET' for a route from a subnet of the VPC - 'BGP' for a route learned from a BGP peer of this router - 'STATIC' for a static route
+    */
+  var routeType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] Server-defined fully-qualified URL for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.undefined
+  var selfLinkWithId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A list of instance tags to which this route applies.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.undefined
+  var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * [Output Only] If potential misconfigurations are detected for this route,
-    * this field will be populated with warning messages.
+    * [Output Only] If potential misconfigurations are detected for this route, this field will be populated with warning messages.
     */
-  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
+  var warnings: js.UndefOr[js.Array[Code] | Null] = js.undefined
 }
 object SchemaRoute {
   
@@ -155,84 +141,158 @@ object SchemaRoute {
   
   extension [Self <: SchemaRoute](x: Self) {
     
+    inline def setAllowConflictingSubnetworks(value: Boolean): Self = StObject.set(x, "allowConflictingSubnetworks", value.asInstanceOf[js.Any])
+    
+    inline def setAllowConflictingSubnetworksNull: Self = StObject.set(x, "allowConflictingSubnetworks", null)
+    
+    inline def setAllowConflictingSubnetworksUndefined: Self = StObject.set(x, "allowConflictingSubnetworks", js.undefined)
+    
+    inline def setAsPaths(value: js.Array[SchemaRouteAsPath]): Self = StObject.set(x, "asPaths", value.asInstanceOf[js.Any])
+    
+    inline def setAsPathsUndefined: Self = StObject.set(x, "asPaths", js.undefined)
+    
+    inline def setAsPathsVarargs(value: SchemaRouteAsPath*): Self = StObject.set(x, "asPaths", js.Array(value*))
+    
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setCreationTimestampNull: Self = StObject.set(x, "creationTimestamp", null)
     
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDestRange(value: String): Self = StObject.set(x, "destRange", value.asInstanceOf[js.Any])
+    
+    inline def setDestRangeNull: Self = StObject.set(x, "destRange", null)
     
     inline def setDestRangeUndefined: Self = StObject.set(x, "destRange", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
+    inline def setIlbRouteBehaviorOnUnhealthy(value: String): Self = StObject.set(x, "ilbRouteBehaviorOnUnhealthy", value.asInstanceOf[js.Any])
+    
+    inline def setIlbRouteBehaviorOnUnhealthyNull: Self = StObject.set(x, "ilbRouteBehaviorOnUnhealthy", null)
+    
+    inline def setIlbRouteBehaviorOnUnhealthyUndefined: Self = StObject.set(x, "ilbRouteBehaviorOnUnhealthy", js.undefined)
+    
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkNull: Self = StObject.set(x, "network", null)
     
     inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     inline def setNextHopGateway(value: String): Self = StObject.set(x, "nextHopGateway", value.asInstanceOf[js.Any])
     
+    inline def setNextHopGatewayNull: Self = StObject.set(x, "nextHopGateway", null)
+    
     inline def setNextHopGatewayUndefined: Self = StObject.set(x, "nextHopGateway", js.undefined)
     
     inline def setNextHopIlb(value: String): Self = StObject.set(x, "nextHopIlb", value.asInstanceOf[js.Any])
+    
+    inline def setNextHopIlbNull: Self = StObject.set(x, "nextHopIlb", null)
     
     inline def setNextHopIlbUndefined: Self = StObject.set(x, "nextHopIlb", js.undefined)
     
     inline def setNextHopInstance(value: String): Self = StObject.set(x, "nextHopInstance", value.asInstanceOf[js.Any])
     
+    inline def setNextHopInstanceNull: Self = StObject.set(x, "nextHopInstance", null)
+    
     inline def setNextHopInstanceUndefined: Self = StObject.set(x, "nextHopInstance", js.undefined)
     
+    inline def setNextHopInterconnectAttachment(value: String): Self = StObject.set(x, "nextHopInterconnectAttachment", value.asInstanceOf[js.Any])
+    
+    inline def setNextHopInterconnectAttachmentNull: Self = StObject.set(x, "nextHopInterconnectAttachment", null)
+    
+    inline def setNextHopInterconnectAttachmentUndefined: Self = StObject.set(x, "nextHopInterconnectAttachment", js.undefined)
+    
     inline def setNextHopIp(value: String): Self = StObject.set(x, "nextHopIp", value.asInstanceOf[js.Any])
+    
+    inline def setNextHopIpNull: Self = StObject.set(x, "nextHopIp", null)
     
     inline def setNextHopIpUndefined: Self = StObject.set(x, "nextHopIp", js.undefined)
     
     inline def setNextHopNetwork(value: String): Self = StObject.set(x, "nextHopNetwork", value.asInstanceOf[js.Any])
     
+    inline def setNextHopNetworkNull: Self = StObject.set(x, "nextHopNetwork", null)
+    
     inline def setNextHopNetworkUndefined: Self = StObject.set(x, "nextHopNetwork", js.undefined)
     
     inline def setNextHopPeering(value: String): Self = StObject.set(x, "nextHopPeering", value.asInstanceOf[js.Any])
+    
+    inline def setNextHopPeeringNull: Self = StObject.set(x, "nextHopPeering", null)
     
     inline def setNextHopPeeringUndefined: Self = StObject.set(x, "nextHopPeering", js.undefined)
     
     inline def setNextHopVpnTunnel(value: String): Self = StObject.set(x, "nextHopVpnTunnel", value.asInstanceOf[js.Any])
     
+    inline def setNextHopVpnTunnelNull: Self = StObject.set(x, "nextHopVpnTunnel", null)
+    
     inline def setNextHopVpnTunnelUndefined: Self = StObject.set(x, "nextHopVpnTunnel", js.undefined)
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
+    inline def setPriorityNull: Self = StObject.set(x, "priority", null)
+    
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
+    inline def setRouteStatus(value: String): Self = StObject.set(x, "routeStatus", value.asInstanceOf[js.Any])
+    
+    inline def setRouteStatusNull: Self = StObject.set(x, "routeStatus", null)
+    
+    inline def setRouteStatusUndefined: Self = StObject.set(x, "routeStatus", js.undefined)
+    
+    inline def setRouteType(value: String): Self = StObject.set(x, "routeType", value.asInstanceOf[js.Any])
+    
+    inline def setRouteTypeNull: Self = StObject.set(x, "routeType", null)
+    
+    inline def setRouteTypeUndefined: Self = StObject.set(x, "routeType", js.undefined)
+    
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    
+    inline def setSelfLinkNull: Self = StObject.set(x, "selfLink", null)
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     inline def setSelfLinkWithId(value: String): Self = StObject.set(x, "selfLinkWithId", value.asInstanceOf[js.Any])
     
+    inline def setSelfLinkWithIdNull: Self = StObject.set(x, "selfLinkWithId", null)
+    
     inline def setSelfLinkWithIdUndefined: Self = StObject.set(x, "selfLinkWithId", js.undefined)
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
+    inline def setTagsNull: Self = StObject.set(x, "tags", null)
+    
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setWarnings(value: js.Array[Code]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
+    inline def setWarningsNull: Self = StObject.set(x, "warnings", null)
+    
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

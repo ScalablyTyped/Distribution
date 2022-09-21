@@ -1,5 +1,10 @@
 package typings.rcPagination
 
+import typings.rcPagination.rcPaginationStrings.`jump-next`
+import typings.rcPagination.rcPaginationStrings.`jump-prev`
+import typings.rcPagination.rcPaginationStrings.next
+import typings.rcPagination.rcPaginationStrings.page
+import typings.rcPagination.rcPaginationStrings.prev
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
@@ -12,10 +17,10 @@ object mod {
   
   @JSImport("rc-pagination", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PaginationProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PaginationProps, js.Object, Any]
   
-  type Pagination = Component[PaginationProps, js.Object, js.Any]
+  type Pagination = Component[PaginationProps, js.Object, Any]
   
   trait PaginationData extends StObject {
     
@@ -27,19 +32,21 @@ object mod {
     
     var defaultPageSize: Double
     
+    var disabled: Boolean
+    
     var hideOnSinglePage: Boolean
     
     var jumpNextIcon: ComponentType[js.Object] | ReactNode
     
     var jumpPrevIcon: ComponentType[js.Object] | ReactNode
     
-    var locale: js.Object
+    var locale: PaginationLocale
     
     var nextIcon: ComponentType[js.Object] | ReactNode
     
     var pageSize: Double
     
-    var pageSizeOptions: js.Array[String]
+    var pageSizeOptions: js.Array[Double | String]
     
     var prefixCls: String
     
@@ -72,10 +79,11 @@ object mod {
       current: Double,
       defaultCurrent: Double,
       defaultPageSize: Double,
+      disabled: Boolean,
       hideOnSinglePage: Boolean,
-      locale: js.Object,
+      locale: PaginationLocale,
       pageSize: Double,
-      pageSizeOptions: js.Array[String],
+      pageSizeOptions: js.Array[Double | String],
       prefixCls: String,
       selectComponentClass: ComponentType[js.Object],
       selectPrefixCls: String,
@@ -88,7 +96,7 @@ object mod {
       style: CSSProperties,
       total: Double
     ): PaginationData = {
-      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], defaultCurrent = defaultCurrent.asInstanceOf[js.Any], defaultPageSize = defaultPageSize.asInstanceOf[js.Any], hideOnSinglePage = hideOnSinglePage.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], pageSizeOptions = pageSizeOptions.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], selectComponentClass = selectComponentClass.asInstanceOf[js.Any], selectPrefixCls = selectPrefixCls.asInstanceOf[js.Any], showLessItems = showLessItems.asInstanceOf[js.Any], showPrevNextJumpers = showPrevNextJumpers.asInstanceOf[js.Any], showQuickJumper = showQuickJumper.asInstanceOf[js.Any], showSizeChanger = showSizeChanger.asInstanceOf[js.Any], showTitle = showTitle.asInstanceOf[js.Any], simple = simple.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], defaultCurrent = defaultCurrent.asInstanceOf[js.Any], defaultPageSize = defaultPageSize.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], hideOnSinglePage = hideOnSinglePage.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], pageSizeOptions = pageSizeOptions.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], selectComponentClass = selectComponentClass.asInstanceOf[js.Any], selectPrefixCls = selectPrefixCls.asInstanceOf[js.Any], showLessItems = showLessItems.asInstanceOf[js.Any], showPrevNextJumpers = showPrevNextJumpers.asInstanceOf[js.Any], showQuickJumper = showQuickJumper.asInstanceOf[js.Any], showSizeChanger = showSizeChanger.asInstanceOf[js.Any], showTitle = showTitle.asInstanceOf[js.Any], simple = simple.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationData]
     }
     
@@ -102,6 +110,8 @@ object mod {
       
       inline def setDefaultPageSize(value: Double): Self = StObject.set(x, "defaultPageSize", value.asInstanceOf[js.Any])
       
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
       inline def setHideOnSinglePage(value: Boolean): Self = StObject.set(x, "hideOnSinglePage", value.asInstanceOf[js.Any])
       
       inline def setJumpNextIcon(value: ComponentType[js.Object] | ReactNode): Self = StObject.set(x, "jumpNextIcon", value.asInstanceOf[js.Any])
@@ -112,7 +122,7 @@ object mod {
       
       inline def setJumpPrevIconUndefined: Self = StObject.set(x, "jumpPrevIcon", js.undefined)
       
-      inline def setLocale(value: js.Object): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: PaginationLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setNextIcon(value: ComponentType[js.Object] | ReactNode): Self = StObject.set(x, "nextIcon", value.asInstanceOf[js.Any])
       
@@ -120,9 +130,9 @@ object mod {
       
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      inline def setPageSizeOptions(value: js.Array[String]): Self = StObject.set(x, "pageSizeOptions", value.asInstanceOf[js.Any])
+      inline def setPageSizeOptions(value: js.Array[Double | String]): Self = StObject.set(x, "pageSizeOptions", value.asInstanceOf[js.Any])
       
-      inline def setPageSizeOptionsVarargs(value: String*): Self = StObject.set(x, "pageSizeOptions", js.Array(value :_*))
+      inline def setPageSizeOptionsVarargs(value: (Double | String)*): Self = StObject.set(x, "pageSizeOptions", js.Array(value*))
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -152,6 +162,81 @@ object mod {
     }
   }
   
+  trait PaginationLocale extends StObject {
+    
+    // Options.jsx
+    var items_per_page: js.UndefOr[String] = js.undefined
+    
+    var jump_to: js.UndefOr[String] = js.undefined
+    
+    var jump_to_confirm: js.UndefOr[String] = js.undefined
+    
+    var next_3: js.UndefOr[String] = js.undefined
+    
+    var next_5: js.UndefOr[String] = js.undefined
+    
+    var next_page: js.UndefOr[String] = js.undefined
+    
+    var page: js.UndefOr[String] = js.undefined
+    
+    var prev_3: js.UndefOr[String] = js.undefined
+    
+    var prev_5: js.UndefOr[String] = js.undefined
+    
+    // Pagination.jsx
+    var prev_page: js.UndefOr[String] = js.undefined
+  }
+  object PaginationLocale {
+    
+    inline def apply(): PaginationLocale = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PaginationLocale]
+    }
+    
+    extension [Self <: PaginationLocale](x: Self) {
+      
+      inline def setItems_per_page(value: String): Self = StObject.set(x, "items_per_page", value.asInstanceOf[js.Any])
+      
+      inline def setItems_per_pageUndefined: Self = StObject.set(x, "items_per_page", js.undefined)
+      
+      inline def setJump_to(value: String): Self = StObject.set(x, "jump_to", value.asInstanceOf[js.Any])
+      
+      inline def setJump_toUndefined: Self = StObject.set(x, "jump_to", js.undefined)
+      
+      inline def setJump_to_confirm(value: String): Self = StObject.set(x, "jump_to_confirm", value.asInstanceOf[js.Any])
+      
+      inline def setJump_to_confirmUndefined: Self = StObject.set(x, "jump_to_confirm", js.undefined)
+      
+      inline def setNext_3(value: String): Self = StObject.set(x, "next_3", value.asInstanceOf[js.Any])
+      
+      inline def setNext_3Undefined: Self = StObject.set(x, "next_3", js.undefined)
+      
+      inline def setNext_5(value: String): Self = StObject.set(x, "next_5", value.asInstanceOf[js.Any])
+      
+      inline def setNext_5Undefined: Self = StObject.set(x, "next_5", js.undefined)
+      
+      inline def setNext_page(value: String): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
+      
+      inline def setNext_pageUndefined: Self = StObject.set(x, "next_page", js.undefined)
+      
+      inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      
+      inline def setPrev_3(value: String): Self = StObject.set(x, "prev_3", value.asInstanceOf[js.Any])
+      
+      inline def setPrev_3Undefined: Self = StObject.set(x, "prev_3", js.undefined)
+      
+      inline def setPrev_5(value: String): Self = StObject.set(x, "prev_5", value.asInstanceOf[js.Any])
+      
+      inline def setPrev_5Undefined: Self = StObject.set(x, "prev_5", js.undefined)
+      
+      inline def setPrev_page(value: String): Self = StObject.set(x, "prev_page", value.asInstanceOf[js.Any])
+      
+      inline def setPrev_pageUndefined: Self = StObject.set(x, "prev_page", js.undefined)
+    }
+  }
+  
   /* Inlined parent std.Partial<rc-pagination.rc-pagination.PaginationData> */
   trait PaginationProps extends StObject {
     
@@ -163,17 +248,24 @@ object mod {
     
     var defaultPageSize: js.UndefOr[Double] = js.undefined
     
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
     var hideOnSinglePage: js.UndefOr[Boolean] = js.undefined
     
     var itemRender: js.UndefOr[
-        js.Function3[/* page */ Double, /* type */ String, /* element */ ReactNode, ReactNode]
+        js.Function3[
+          /* page */ Double, 
+          /* type */ page | prev | next | `jump-prev` | `jump-next`, 
+          /* element */ ReactNode, 
+          ReactNode
+        ]
       ] = js.undefined
     
     var jumpNextIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.undefined
     
     var jumpPrevIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.undefined
     
-    var locale: js.UndefOr[js.Object] = js.undefined
+    var locale: js.UndefOr[PaginationLocale] = js.undefined
     
     var nextIcon: js.UndefOr[ComponentType[js.Object] | ReactNode] = js.undefined
     
@@ -183,7 +275,7 @@ object mod {
     
     var pageSize: js.UndefOr[Double] = js.undefined
     
-    var pageSizeOptions: js.UndefOr[js.Array[String]] = js.undefined
+    var pageSizeOptions: js.UndefOr[js.Array[Double | String]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -238,11 +330,17 @@ object mod {
       
       inline def setDefaultPageSizeUndefined: Self = StObject.set(x, "defaultPageSize", js.undefined)
       
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
       inline def setHideOnSinglePage(value: Boolean): Self = StObject.set(x, "hideOnSinglePage", value.asInstanceOf[js.Any])
       
       inline def setHideOnSinglePageUndefined: Self = StObject.set(x, "hideOnSinglePage", js.undefined)
       
-      inline def setItemRender(value: (/* page */ Double, /* type */ String, /* element */ ReactNode) => ReactNode): Self = StObject.set(x, "itemRender", js.Any.fromFunction3(value))
+      inline def setItemRender(
+        value: (/* page */ Double, /* type */ page | prev | next | `jump-prev` | `jump-next`, /* element */ ReactNode) => ReactNode
+      ): Self = StObject.set(x, "itemRender", js.Any.fromFunction3(value))
       
       inline def setItemRenderUndefined: Self = StObject.set(x, "itemRender", js.undefined)
       
@@ -254,7 +352,7 @@ object mod {
       
       inline def setJumpPrevIconUndefined: Self = StObject.set(x, "jumpPrevIcon", js.undefined)
       
-      inline def setLocale(value: js.Object): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: PaginationLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
@@ -272,11 +370,11 @@ object mod {
       
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      inline def setPageSizeOptions(value: js.Array[String]): Self = StObject.set(x, "pageSizeOptions", value.asInstanceOf[js.Any])
+      inline def setPageSizeOptions(value: js.Array[Double | String]): Self = StObject.set(x, "pageSizeOptions", value.asInstanceOf[js.Any])
       
       inline def setPageSizeOptionsUndefined: Self = StObject.set(x, "pageSizeOptions", js.undefined)
       
-      inline def setPageSizeOptionsVarargs(value: String*): Self = StObject.set(x, "pageSizeOptions", js.Array(value :_*))
+      inline def setPageSizeOptionsVarargs(value: (Double | String)*): Self = StObject.set(x, "pageSizeOptions", js.Array(value*))
       
       inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       

@@ -10,10 +10,10 @@ object grainMod {
   
   @JSImport("material-ui/svg-icons/image/grain", JSImport.Default)
   @js.native
-  class default () extends ImageGrain
+  open class default () extends ImageGrain
   
   @JSImport("material-ui/svg-icons/image/grain", "ImageGrain")
   @js.native
-  class ImageGrain ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageGrain ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

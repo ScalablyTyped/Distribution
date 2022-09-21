@@ -8,27 +8,29 @@ trait IMatrixCellsOwner
   extends StObject
      with ILocalizableOwner {
   
-  def getColumns(): js.Array[js.Any]
+  def getColumns(): js.Array[Any]
   
-  def getRows(): js.Array[js.Any]
+  def getRows(): js.Array[Any]
 }
 object IMatrixCellsOwner {
   
   inline def apply(
-    getColumns: () => js.Array[js.Any],
+    getColumns: () => js.Array[Any],
     getLocale: () => String,
-    getMarkdownHtml: String => String,
+    getMarkdownHtml: (String, String) => String,
     getProcessedText: String => String,
-    getRows: () => js.Array[js.Any]
+    getRenderer: String => String,
+    getRendererContext: LocalizableString => Any,
+    getRows: () => js.Array[Any]
   ): IMatrixCellsOwner = {
-    val __obj = js.Dynamic.literal(getColumns = js.Any.fromFunction0(getColumns), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRows = js.Any.fromFunction0(getRows))
+    val __obj = js.Dynamic.literal(getColumns = js.Any.fromFunction0(getColumns), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction2(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRenderer = js.Any.fromFunction1(getRenderer), getRendererContext = js.Any.fromFunction1(getRendererContext), getRows = js.Any.fromFunction0(getRows))
     __obj.asInstanceOf[IMatrixCellsOwner]
   }
   
   extension [Self <: IMatrixCellsOwner](x: Self) {
     
-    inline def setGetColumns(value: () => js.Array[js.Any]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
+    inline def setGetColumns(value: () => js.Array[Any]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
-    inline def setGetRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
+    inline def setGetRows(value: () => js.Array[Any]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
   }
 }

@@ -10,9 +10,9 @@ Deep object merge utility.
 | Full name          | tea-merge |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 33017 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3566.3333333333335 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/qualiancy/tea-merge#readme)

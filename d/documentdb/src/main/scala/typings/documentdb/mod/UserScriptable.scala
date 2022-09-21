@@ -25,13 +25,13 @@ object UserScriptable {
     
     inline def setBody(value: UserFunction): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
+    inline def setBodyFunction1(value: /* repeated */ Any => Unit): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setServerScript(value: UserFunction): Self = StObject.set(x, "serverScript", value.asInstanceOf[js.Any])
     
-    inline def setServerScriptFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "serverScript", js.Any.fromFunction1(value))
+    inline def setServerScriptFunction1(value: /* repeated */ Any => Unit): Self = StObject.set(x, "serverScript", js.Any.fromFunction1(value))
     
     inline def setServerScriptUndefined: Self = StObject.set(x, "serverScript", js.undefined)
   }

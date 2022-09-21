@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "safe-identifier" : "0.4.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "safe-identifier" : "0.4.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

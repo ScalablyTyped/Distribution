@@ -10,10 +10,10 @@ Logger outputting messages to a file in a nedb-readable format with minimal memo
 | ------------------ | :-------------: |
 | Full name          | nedb-logger |
 | Keywords           | logger, nedb |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 3230 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 129.0 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/louischatriot/nedb-logger)

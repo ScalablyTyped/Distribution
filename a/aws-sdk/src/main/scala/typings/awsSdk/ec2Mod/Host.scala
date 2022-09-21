@@ -9,10 +9,10 @@ trait Host extends StObject {
   /**
     * The time that the Dedicated Host was allocated.
     */
-  var AllocationTime: js.UndefOr[DateTime] = js.undefined
+  var AllocationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Indicates whether the Dedicated Host supports multiple instance types of the same instance family, or a specific instance type only. one indicates that the Dedicated Host supports multiple instance types in the instance family. off indicates that the Dedicated Host supports a single instance type only.
+    * Indicates whether the Dedicated Host supports multiple instance types of the same instance family. If the value is on, the Dedicated Host supports multiple instance types in the instance family. If the value is off, the Dedicated Host supports a single instance type only.
     */
   var AllowsMultipleInstanceTypes: js.UndefOr[typings.awsSdk.ec2Mod.AllowsMultipleInstanceTypes] = js.undefined
   
@@ -37,7 +37,7 @@ trait Host extends StObject {
   var AvailableCapacity: js.UndefOr[typings.awsSdk.ec2Mod.AvailableCapacity] = js.undefined
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -72,14 +72,19 @@ trait Host extends StObject {
   var MemberOfServiceLinkedResourceGroup: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the Dedicated Host.
+    * The Amazon Resource Name (ARN) of the Amazon Web Services Outpost on which the Dedicated Host is allocated.
+    */
+  var OutpostArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ID of the Amazon Web Services account that owns the Dedicated Host.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the Dedicated Host was released.
     */
-  var ReleaseTime: js.UndefOr[DateTime] = js.undefined
+  var ReleaseTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Dedicated Host's state.
@@ -100,7 +105,7 @@ object Host {
   
   extension [Self <: Host](x: Self) {
     
-    inline def setAllocationTime(value: DateTime): Self = StObject.set(x, "AllocationTime", value.asInstanceOf[js.Any])
+    inline def setAllocationTime(value: js.Date): Self = StObject.set(x, "AllocationTime", value.asInstanceOf[js.Any])
     
     inline def setAllocationTimeUndefined: Self = StObject.set(x, "AllocationTime", js.undefined)
     
@@ -148,17 +153,21 @@ object Host {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: HostInstance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: HostInstance*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setMemberOfServiceLinkedResourceGroup(value: Boolean): Self = StObject.set(x, "MemberOfServiceLinkedResourceGroup", value.asInstanceOf[js.Any])
     
     inline def setMemberOfServiceLinkedResourceGroupUndefined: Self = StObject.set(x, "MemberOfServiceLinkedResourceGroup", js.undefined)
     
+    inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    inline def setReleaseTime(value: DateTime): Self = StObject.set(x, "ReleaseTime", value.asInstanceOf[js.Any])
+    inline def setReleaseTime(value: js.Date): Self = StObject.set(x, "ReleaseTime", value.asInstanceOf[js.Any])
     
     inline def setReleaseTimeUndefined: Self = StObject.set(x, "ReleaseTime", js.undefined)
     
@@ -170,6 +179,6 @@ object Host {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

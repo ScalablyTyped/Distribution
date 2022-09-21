@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "InfiniteLoader")
 @js.native
-class InfiniteLoader protected ()
+open class InfiniteLoader protected ()
   extends typings.reactVirtualized.esInfiniteLoaderMod.InfiniteLoader {
   def this(props: InfiniteLoaderProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: InfiniteLoaderProps, context: js.Any) = this()
+  def this(props: InfiniteLoaderProps, context: Any) = this()
 }
 /* static members */
 object InfiniteLoader {

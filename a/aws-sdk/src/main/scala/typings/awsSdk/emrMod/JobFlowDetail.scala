@@ -42,7 +42,7 @@ trait JobFlowDetail extends StObject {
   var JobFlowRole: js.UndefOr[XmlString] = js.undefined
   
   /**
-    * The AWS KMS customer master key (CMK) used for encrypting log files. This attribute is only available with EMR version 5.30.0 and later, excluding EMR 6.0.0.
+    * The KMS key used for encrypting log files. This attribute is only available with EMR version 5.30.0 and later, excluding EMR 6.0.0.
     */
   var LogEncryptionKmsKeyId: js.UndefOr[XmlString] = js.undefined
   
@@ -57,12 +57,12 @@ trait JobFlowDetail extends StObject {
   var Name: XmlStringMaxLen256
   
   /**
-    * The way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an instance group is resized. TERMINATE_AT_INSTANCE_HOUR indicates that Amazon EMR terminates nodes at the instance-hour boundary, regardless of when the request to terminate the instance was submitted. This option is only available with Amazon EMR 5.1.0 and later and is the default for clusters created using that version. TERMINATE_AT_TASK_COMPLETION indicates that Amazon EMR blacklists and drains tasks from nodes before terminating the Amazon EC2 instances, regardless of the instance-hour boundary. With either behavior, Amazon EMR removes the least active nodes first and blocks instance termination if it could lead to HDFS corruption. TERMINATE_AT_TASK_COMPLETION available only in Amazon EMR version 4.1.0 and later, and is the default for versions of Amazon EMR earlier than 5.1.0.
+    * The way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an instance group is resized. TERMINATE_AT_INSTANCE_HOUR indicates that Amazon EMR terminates nodes at the instance-hour boundary, regardless of when the request to terminate the instance was submitted. This option is only available with Amazon EMR 5.1.0 and later and is the default for clusters created using that version. TERMINATE_AT_TASK_COMPLETION indicates that Amazon EMR adds nodes to a deny list and drains tasks from nodes before terminating the Amazon EC2 instances, regardless of the instance-hour boundary. With either behavior, Amazon EMR removes the least active nodes first and blocks instance termination if it could lead to HDFS corruption. TERMINATE_AT_TASK_COMPLETION available only in Amazon EMR version 4.1.0 and later, and is the default for versions of Amazon EMR earlier than 5.1.0.
     */
   var ScaleDownBehavior: js.UndefOr[typings.awsSdk.emrMod.ScaleDownBehavior] = js.undefined
   
   /**
-    * The IAM role that will be assumed by the Amazon EMR service to access AWS resources on your behalf.
+    * The IAM role that is assumed by the Amazon EMR service to access Amazon Web Services resources on your behalf.
     */
   var ServiceRole: js.UndefOr[XmlString] = js.undefined
   
@@ -72,12 +72,12 @@ trait JobFlowDetail extends StObject {
   var Steps: js.UndefOr[StepDetailList] = js.undefined
   
   /**
-    * A list of strings set by third party software when the job flow is launched. If you are not using third party software to manage the job flow this value is empty.
+    * A list of strings set by third-party software when the job flow is launched. If you are not using third-party software to manage the job flow, this value is empty.
     */
   var SupportedProducts: js.UndefOr[SupportedProductsList] = js.undefined
   
   /**
-    * Indicates whether the cluster is visible to all IAM users of the AWS account associated with the cluster. The default value, true, indicates that all IAM users in the AWS account can perform cluster actions if they have the proper IAM policy permissions. If this value is false, only the IAM user that created the cluster can perform actions. This value can be changed on a running cluster by using the SetVisibleToAllUsers action. You can override the default value of true when you create a cluster by using the VisibleToAllUsers parameter of the RunJobFlow action.
+    * Indicates whether the cluster is visible to IAM principals in the Amazon Web Services account associated with the cluster. When true, IAM principals in the Amazon Web Services account can perform EMR cluster actions that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform EMR actions, regardless of IAM permissions policies attached to other IAM principals. The default value is true if a value is not provided when creating a cluster using the EMR API RunJobFlow command, the CLI create-cluster command, or the Amazon Web Services Management Console.
     */
   var VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
 }
@@ -107,7 +107,7 @@ object JobFlowDetail {
     
     inline def setBootstrapActionsUndefined: Self = StObject.set(x, "BootstrapActions", js.undefined)
     
-    inline def setBootstrapActionsVarargs(value: BootstrapActionDetail*): Self = StObject.set(x, "BootstrapActions", js.Array(value :_*))
+    inline def setBootstrapActionsVarargs(value: BootstrapActionDetail*): Self = StObject.set(x, "BootstrapActions", js.Array(value*))
     
     inline def setExecutionStatusDetail(value: JobFlowExecutionStatusDetail): Self = StObject.set(x, "ExecutionStatusDetail", value.asInstanceOf[js.Any])
     
@@ -141,13 +141,13 @@ object JobFlowDetail {
     
     inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    inline def setStepsVarargs(value: StepDetail*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: StepDetail*): Self = StObject.set(x, "Steps", js.Array(value*))
     
     inline def setSupportedProducts(value: SupportedProductsList): Self = StObject.set(x, "SupportedProducts", value.asInstanceOf[js.Any])
     
     inline def setSupportedProductsUndefined: Self = StObject.set(x, "SupportedProducts", js.undefined)
     
-    inline def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "SupportedProducts", js.Array(value :_*))
+    inline def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "SupportedProducts", js.Array(value*))
     
     inline def setVisibleToAllUsers(value: Boolean): Self = StObject.set(x, "VisibleToAllUsers", value.asInstanceOf[js.Any])
     

@@ -36,12 +36,12 @@ object UpdateNotebookInstanceLifecycleConfigInput {
     
     inline def setOnCreateUndefined: Self = StObject.set(x, "OnCreate", js.undefined)
     
-    inline def setOnCreateVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnCreate", js.Array(value :_*))
+    inline def setOnCreateVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnCreate", js.Array(value*))
     
     inline def setOnStart(value: NotebookInstanceLifecycleConfigList): Self = StObject.set(x, "OnStart", value.asInstanceOf[js.Any])
     
     inline def setOnStartUndefined: Self = StObject.set(x, "OnStart", js.undefined)
     
-    inline def setOnStartVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnStart", js.Array(value :_*))
+    inline def setOnStartVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnStart", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "ListBucketInventoryConfigurationsCommand")
 @js.native
-class ListBucketInventoryConfigurationsCommand protected ()
+open class ListBucketInventoryConfigurationsCommand protected ()
   extends typings.awsSdkClientS3Node.listBucketInventoryConfigurationsCommandMod.ListBucketInventoryConfigurationsCommand {
   def this(input: ListBucketInventoryConfigurationsInput) = this()
 }

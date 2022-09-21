@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi-pino
 
-Typings are for version 8.0
+Typings are for version 11.0.0
 
 ## Library description:
 Hapi plugin for the Pino logger
@@ -10,10 +10,10 @@ Hapi plugin for the Pino logger
 | ------------------ | :-------------: |
 | Full name          | hapi-pino |
 | Keywords           | hapi, pino, logger, fast, slow, json |
-| # releases         | 15 |
-| # dependents       | 44 |
-| # downloads        | 1124788 |
-| # stars            | 4 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 134459.66666666666 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/pinojs/hapi-pino#readme)
@@ -24,7 +24,7 @@ Hapi plugin for the Pino logger
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

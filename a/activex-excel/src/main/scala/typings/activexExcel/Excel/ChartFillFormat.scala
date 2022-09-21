@@ -36,7 +36,7 @@ trait ChartFillFormat extends StObject {
   
   def OneColorGradient(Style: MsoGradientStyle, Variant: Double, Degree: Double): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Pattern: MsoPatternType = js.native
   
@@ -61,21 +61,21 @@ trait ChartFillFormat extends StObject {
   val Type: MsoFillType = js.native
   
   def UserPicture(): Unit = js.native
-  def UserPicture(PictureFile: js.Any): Unit = js.native
-  def UserPicture(PictureFile: js.Any, PictureFormat: js.Any): Unit = js.native
-  def UserPicture(PictureFile: js.Any, PictureFormat: js.Any, PictureStackUnit: js.Any): Unit = js.native
-  def UserPicture(PictureFile: js.Any, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
-  def UserPicture(PictureFile: js.Any, PictureFormat: js.Any, PictureStackUnit: Unit, PicturePlacement: js.Any): Unit = js.native
-  def UserPicture(PictureFile: js.Any, PictureFormat: Unit, PictureStackUnit: js.Any): Unit = js.native
-  def UserPicture(PictureFile: js.Any, PictureFormat: Unit, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
-  def UserPicture(PictureFile: js.Any, PictureFormat: Unit, PictureStackUnit: Unit, PicturePlacement: js.Any): Unit = js.native
-  def UserPicture(PictureFile: Unit, PictureFormat: js.Any): Unit = js.native
-  def UserPicture(PictureFile: Unit, PictureFormat: js.Any, PictureStackUnit: js.Any): Unit = js.native
-  def UserPicture(PictureFile: Unit, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
-  def UserPicture(PictureFile: Unit, PictureFormat: js.Any, PictureStackUnit: Unit, PicturePlacement: js.Any): Unit = js.native
-  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: js.Any): Unit = js.native
-  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
-  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: Unit, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: Any): Unit = js.native
+  def UserPicture(PictureFile: Any, PictureFormat: Any): Unit = js.native
+  def UserPicture(PictureFile: Any, PictureFormat: Any, PictureStackUnit: Any): Unit = js.native
+  def UserPicture(PictureFile: Any, PictureFormat: Any, PictureStackUnit: Any, PicturePlacement: Any): Unit = js.native
+  def UserPicture(PictureFile: Any, PictureFormat: Any, PictureStackUnit: Unit, PicturePlacement: Any): Unit = js.native
+  def UserPicture(PictureFile: Any, PictureFormat: Unit, PictureStackUnit: Any): Unit = js.native
+  def UserPicture(PictureFile: Any, PictureFormat: Unit, PictureStackUnit: Any, PicturePlacement: Any): Unit = js.native
+  def UserPicture(PictureFile: Any, PictureFormat: Unit, PictureStackUnit: Unit, PicturePlacement: Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Any, PictureStackUnit: Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Any, PictureStackUnit: Any, PicturePlacement: Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Any, PictureStackUnit: Unit, PicturePlacement: Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: Any, PicturePlacement: Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: Unit, PicturePlacement: Any): Unit = js.native
   
   def UserTextured(TextureFile: String): Unit = js.native
   

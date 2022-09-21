@@ -32,7 +32,7 @@ object XCellAddressable {
     CellAddress: CellAddress,
     acquire: () => Unit,
     getCellAddress: () => CellAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCellAddressable = {
     val __obj = js.Dynamic.literal(CellAddress = CellAddress.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getCellAddress = js.Any.fromFunction0(getCellAddress), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -27,7 +27,7 @@ object DescribeFindingsRequest {
     
     inline def setFindingArns(value: BatchDescribeArnList): Self = StObject.set(x, "findingArns", value.asInstanceOf[js.Any])
     
-    inline def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value :_*))
+    inline def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value*))
     
     inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(options: DirectOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def apply(options: DirectOptions): Transport[Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport[Any]]
   
   @JSImport("nodemailer-direct-transport", JSImport.Namespace)
   @js.native
@@ -19,7 +19,7 @@ object mod {
     
     var user: js.UndefOr[String] = js.undefined
     
-    var xoauth2: js.UndefOr[js.Any] = js.undefined
+    var xoauth2: js.UndefOr[Any] = js.undefined
   }
   object AuthOptions {
     
@@ -38,7 +38,7 @@ object mod {
       
       inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       
-      inline def setXoauth2(value: js.Any): Self = StObject.set(x, "xoauth2", value.asInstanceOf[js.Any])
+      inline def setXoauth2(value: Any): Self = StObject.set(x, "xoauth2", value.asInstanceOf[js.Any])
       
       inline def setXoauth2Undefined: Self = StObject.set(x, "xoauth2", js.undefined)
     }

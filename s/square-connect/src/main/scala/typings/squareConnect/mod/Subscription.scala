@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Subscription")
 @js.native
-class Subscription () extends StObject {
+open class Subscription () extends StObject {
   
   /**
     * The subscription cancellation date, in YYYY-MM-DD format (for example, 2013-01-15).

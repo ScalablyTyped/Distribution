@@ -10,32 +10,32 @@ object wssecuritycertMod {
   
   @JSImport("soap/lib/security/WSSecurityCert", "WSSecurityCert")
   @js.native
-  class WSSecurityCert protected ()
+  open class WSSecurityCert protected ()
     extends StObject
        with ISecurity {
-    def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any) = this()
-    def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
+    def this(privatePEM: Any, publicP12PEM: Any, password: Any) = this()
+    def this(privatePEM: Any, publicP12PEM: Any, password: Any, options: IWSSecurityCertOptions) = this()
     
-    /* private */ var additionalReferences: js.Any = js.native
+    /* private */ var additionalReferences: Any = js.native
     
-    /* private */ var created: js.Any = js.native
+    /* private */ var created: Any = js.native
     
-    /* private */ var expires: js.Any = js.native
+    /* private */ var expires: Any = js.native
     
-    /* private */ var hasTimeStamp: js.Any = js.native
+    /* private */ var hasTimeStamp: Any = js.native
     
     @JSName("postProcess")
-    def postProcess_MWSSecurityCert(xml: js.Any, envelopeKey: js.Any): String = js.native
+    def postProcess_MWSSecurityCert(xml: Any, envelopeKey: Any): String = js.native
     
-    /* private */ var publicP12PEM: js.Any = js.native
+    /* private */ var publicP12PEM: Any = js.native
     
-    /* private */ var signatureTransformations: js.Any = js.native
+    /* private */ var signatureTransformations: Any = js.native
     
-    /* private */ var signer: js.Any = js.native
+    /* private */ var signer: Any = js.native
     
-    /* private */ var signerOptions: js.Any = js.native
+    /* private */ var signerOptions: Any = js.native
     
-    /* private */ var x509Id: js.Any = js.native
+    /* private */ var x509Id: Any = js.native
   }
   
   trait IWSSecurityCertOptions extends StObject {
@@ -63,7 +63,7 @@ object wssecuritycertMod {
       
       inline def setAdditionalReferencesUndefined: Self = StObject.set(x, "additionalReferences", js.undefined)
       
-      inline def setAdditionalReferencesVarargs(value: String*): Self = StObject.set(x, "additionalReferences", js.Array(value :_*))
+      inline def setAdditionalReferencesVarargs(value: String*): Self = StObject.set(x, "additionalReferences", js.Array(value*))
       
       inline def setHasTimeStamp(value: Boolean): Self = StObject.set(x, "hasTimeStamp", value.asInstanceOf[js.Any])
       
@@ -77,7 +77,7 @@ object wssecuritycertMod {
       
       inline def setSignatureTransformationsUndefined: Self = StObject.set(x, "signatureTransformations", js.undefined)
       
-      inline def setSignatureTransformationsVarargs(value: String*): Self = StObject.set(x, "signatureTransformations", js.Array(value :_*))
+      inline def setSignatureTransformationsVarargs(value: String*): Self = StObject.set(x, "signatureTransformations", js.Array(value*))
       
       inline def setSignerOptions(value: IXmlSignerOptions): Self = StObject.set(x, "signerOptions", value.asInstanceOf[js.Any])
       

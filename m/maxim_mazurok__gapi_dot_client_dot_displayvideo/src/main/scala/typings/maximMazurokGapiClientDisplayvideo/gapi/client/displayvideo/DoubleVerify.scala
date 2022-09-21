@@ -47,7 +47,7 @@ object DoubleVerify {
     
     inline def setAvoidedAgeRatingsUndefined: Self = StObject.set(x, "avoidedAgeRatings", js.undefined)
     
-    inline def setAvoidedAgeRatingsVarargs(value: String*): Self = StObject.set(x, "avoidedAgeRatings", js.Array(value :_*))
+    inline def setAvoidedAgeRatingsVarargs(value: String*): Self = StObject.set(x, "avoidedAgeRatings", js.Array(value*))
     
     inline def setBrandSafetyCategories(value: DoubleVerifyBrandSafetyCategories): Self = StObject.set(x, "brandSafetyCategories", value.asInstanceOf[js.Any])
     

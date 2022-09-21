@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deprecationsMod {
   
-  @JSImport("@react-spring/shared/cjs/deprecations", JSImport.Namespace)
+  @JSImport("@react-spring/shared/dist/declarations/src/deprecations", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def deprecateDirectCall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecateDirectCall")().asInstanceOf[Unit]
   
   inline def deprecateInterpolate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecateInterpolate")().asInstanceOf[Unit]
 }

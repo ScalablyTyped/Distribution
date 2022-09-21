@@ -10,9 +10,9 @@ object shaderSourceBuilderMod {
   @js.native
   abstract class ShaderSourceBuilder () extends StObject {
     
-    var attributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
+    var attributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ Any = js.native
     
-    def build(args: js.Any*): Unit = js.native
+    def build(args: Any*): Unit = js.native
     
     def clearShaderDefinition(): Unit = js.native
     
@@ -22,7 +22,7 @@ object shaderSourceBuilderMod {
     
     var fsSource: String = js.native
     
-    var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
+    var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ Any = js.native
     
     var vsSource: String = js.native
   }
@@ -31,11 +31,11 @@ object shaderSourceBuilderMod {
     
     var name: String
     
-    var value: js.Any
+    var value: Any
   }
   object SourceDefine {
     
-    inline def apply(name: String, value: js.Any): SourceDefine = {
+    inline def apply(name: String, value: Any): SourceDefine = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceDefine]
     }
@@ -44,7 +44,7 @@ object shaderSourceBuilderMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

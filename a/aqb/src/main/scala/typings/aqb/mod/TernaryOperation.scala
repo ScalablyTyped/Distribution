@@ -13,8 +13,8 @@ trait TernaryOperation
       /* operator1 */ String, 
       /* operator2 */ String, 
       /* value1 */ Expression, 
-      /* value2 */ js.Any, 
-      /* value3 */ js.Any, 
+      /* value2 */ Any, 
+      /* value3 */ Any, 
       Operation
     ] {
   

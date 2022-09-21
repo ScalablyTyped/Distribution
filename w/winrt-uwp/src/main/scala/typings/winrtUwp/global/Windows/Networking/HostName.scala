@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides data for a hostname or an IP address. */
 @JSGlobal("Windows.Networking.HostName")
 @js.native
-class HostName protected ()
+open class HostName protected ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.HostName {
   /**

@@ -10,10 +10,10 @@ Converts JSON configuration into a proper bunyan configuration object.
 | ------------------ | :-------------: |
 | Full name          | bunyan-config |
 | Keywords           | bunyan, config |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 980 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 48.333333333333336 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/LSEducation/bunyan-config#readme)

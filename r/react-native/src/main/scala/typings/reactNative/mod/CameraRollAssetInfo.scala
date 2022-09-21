@@ -22,7 +22,7 @@ object CameraRollAssetInfo {
     
     inline def setEdges(value: js.Array[CameraRollEdgeInfo]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    inline def setEdgesVarargs(value: CameraRollEdgeInfo*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: CameraRollEdgeInfo*): Self = StObject.set(x, "edges", js.Array(value*))
     
     inline def setPage_info(value: Endcursor): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
   }

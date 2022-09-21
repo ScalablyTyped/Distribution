@@ -10,10 +10,10 @@ The lodash method `_.forEachRight` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.foreachright |
 | Keywords           | lodash-modularized, foreachright |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 3772 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 247.33333333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

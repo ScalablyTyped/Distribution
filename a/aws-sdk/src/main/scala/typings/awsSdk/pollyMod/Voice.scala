@@ -54,7 +54,7 @@ object Voice {
     
     inline def setAdditionalLanguageCodesUndefined: Self = StObject.set(x, "AdditionalLanguageCodes", js.undefined)
     
-    inline def setAdditionalLanguageCodesVarargs(value: LanguageCode*): Self = StObject.set(x, "AdditionalLanguageCodes", js.Array(value :_*))
+    inline def setAdditionalLanguageCodesVarargs(value: LanguageCode*): Self = StObject.set(x, "AdditionalLanguageCodes", js.Array(value*))
     
     inline def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object Voice {
     
     inline def setSupportedEnginesUndefined: Self = StObject.set(x, "SupportedEngines", js.undefined)
     
-    inline def setSupportedEnginesVarargs(value: Engine*): Self = StObject.set(x, "SupportedEngines", js.Array(value :_*))
+    inline def setSupportedEnginesVarargs(value: Engine*): Self = StObject.set(x, "SupportedEngines", js.Array(value*))
   }
 }

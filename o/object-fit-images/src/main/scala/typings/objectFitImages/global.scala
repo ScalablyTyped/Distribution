@@ -9,14 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def objectFillImages(): Unit = js.Dynamic.global.applyDynamic("objectFillImages")().asInstanceOf[Unit]
-  inline def objectFillImages(images: String): Unit = js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def objectFillImages(images: String, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def objectFillImages(images: js.Array[HTMLElement]): Unit = js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def objectFillImages(images: js.Array[HTMLElement], options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def objectFillImages(images: Null, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def objectFillImages(images: HTMLElement): Unit = js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def objectFillImages(images: HTMLElement, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def objectFillImages(images: NodeList): Unit = js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def objectFillImages(images: NodeList, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFillImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def objectFitImages(): Unit = js.Dynamic.global.applyDynamic("objectFitImages")().asInstanceOf[Unit]
+  inline def objectFitImages(images: String): Unit = js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def objectFitImages(images: String, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def objectFitImages(images: js.Array[HTMLElement]): Unit = js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def objectFitImages(images: js.Array[HTMLElement], options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def objectFitImages(images: Null, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def objectFitImages(images: Unit, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def objectFitImages(images: HTMLElement): Unit = js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def objectFitImages(images: HTMLElement, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def objectFitImages(images: NodeList): Unit = js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def objectFitImages(images: NodeList, options: SkipTest): Unit = (js.Dynamic.global.applyDynamic("objectFitImages")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -6,9 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object browserMod {
   
-  @JSImport("@sentry/utils/dist/browser", JSImport.Namespace)
+  @JSImport("@sentry/utils/types/browser", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def htmlTreeAsString(elem: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDomElement[E](selector: String): E | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomElement")(selector.asInstanceOf[js.Any]).asInstanceOf[E | Null]
+  
+  inline def getLocationHref(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocationHref")().asInstanceOf[String]
+  
+  inline def htmlTreeAsString(elem: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def htmlTreeAsString(elem: Any, keyAttrs: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any], keyAttrs.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -25,7 +25,7 @@ object ManifestsListResponse {
     
     inline def setManifestsUndefined: Self = StObject.set(x, "manifests", js.undefined)
     
-    inline def setManifestsVarargs(value: Manifest*): Self = StObject.set(x, "manifests", js.Array(value :_*))
+    inline def setManifestsVarargs(value: Manifest*): Self = StObject.set(x, "manifests", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

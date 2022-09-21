@@ -29,7 +29,7 @@ object ConnectConfigResults {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: ConnectCustomConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: ConnectCustomConfiguration*): Self = StObject.set(x, "configurations", js.Array(value*))
     
     inline def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
     

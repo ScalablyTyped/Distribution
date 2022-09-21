@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Rademacher")
 @js.native
-class Rademacher ()
+open class Rademacher ()
   extends typings.ranjs.mod.dist.Rademacher

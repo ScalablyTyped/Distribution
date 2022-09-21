@@ -198,7 +198,7 @@ object mod {
     
     def header(key: String, value: String): this.type = js.native
     
-    def progress(callback: js.Function1[/* progress */ Progress, js.Any]): this.type = js.native
+    def progress(callback: js.Function1[/* progress */ Progress, Any]): this.type = js.native
     
     def send(): this.type = js.native
     

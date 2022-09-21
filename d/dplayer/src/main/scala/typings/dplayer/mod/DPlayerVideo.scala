@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DPlayerVideo extends StObject {
   
-  var customType: js.UndefOr[js.Any] = js.undefined
+  var customType: js.UndefOr[Any] = js.undefined
   
   var defaultQuality: js.UndefOr[Double] = js.undefined
   
@@ -29,7 +29,7 @@ object DPlayerVideo {
   
   extension [Self <: DPlayerVideo](x: Self) {
     
-    inline def setCustomType(value: js.Any): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
+    inline def setCustomType(value: Any): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     
     inline def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
     
@@ -45,7 +45,7 @@ object DPlayerVideo {
     
     inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    inline def setQualityVarargs(value: DPlayerVideoQuality*): Self = StObject.set(x, "quality", js.Array(value :_*))
+    inline def setQualityVarargs(value: DPlayerVideoQuality*): Self = StObject.set(x, "quality", js.Array(value*))
     
     inline def setThumbnails(value: String): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     

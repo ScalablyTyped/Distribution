@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportAssetFromSignedUrlResponseDetails extends StObject {
   
   /**
-    * The name for the asset associated with this import response.
+    * The name for the asset associated with this import job.
     */
   var AssetName: typings.awsSdk.dataexchangeMod.AssetName
   
@@ -34,7 +34,7 @@ trait ImportAssetFromSignedUrlResponseDetails extends StObject {
   /**
     * The time and date at which the signed URL expires, in ISO 8601 format.
     */
-  var SignedUrlExpiresAt: js.UndefOr[Timestamp] = js.undefined
+  var SignedUrlExpiresAt: js.UndefOr[js.Date] = js.undefined
 }
 object ImportAssetFromSignedUrlResponseDetails {
   
@@ -57,7 +57,7 @@ object ImportAssetFromSignedUrlResponseDetails {
     
     inline def setSignedUrl(value: string): Self = StObject.set(x, "SignedUrl", value.asInstanceOf[js.Any])
     
-    inline def setSignedUrlExpiresAt(value: Timestamp): Self = StObject.set(x, "SignedUrlExpiresAt", value.asInstanceOf[js.Any])
+    inline def setSignedUrlExpiresAt(value: js.Date): Self = StObject.set(x, "SignedUrlExpiresAt", value.asInstanceOf[js.Any])
     
     inline def setSignedUrlExpiresAtUndefined: Self = StObject.set(x, "SignedUrlExpiresAt", js.undefined)
     

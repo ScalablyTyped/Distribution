@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class XMLNode () extends StObject {
   
-  def a(name: js.Any): XMLElement = js.native
-  def a(name: js.Any, value: js.Any): XMLElement = js.native
+  def a(name: Any): XMLElement = js.native
+  def a(name: Any, value: Any): XMLElement = js.native
   
-  def att(name: js.Any): XMLElement = js.native
-  def att(name: js.Any, value: js.Any): XMLElement = js.native
+  def att(name: Any): XMLElement = js.native
+  def att(name: Any, value: Any): XMLElement = js.native
   
   /**
     * Adds or modifies an attribute.
@@ -29,8 +29,8 @@ abstract class XMLNode () extends StObject {
     * 
     * @returns the parent element node
     */
-  def attribute(name: js.Any): XMLElement = js.native
-  def attribute(name: js.Any, value: js.Any): XMLElement = js.native
+  def attribute(name: Any): XMLElement = js.native
+  def attribute(name: Any, value: Any): XMLElement = js.native
   
   def c(value: String): XMLElement = js.native
   
@@ -156,15 +156,15 @@ abstract class XMLNode () extends StObject {
   def dtd(pubID: PubID): XMLDocType = js.native
   def dtd(pubID: PubID, sysID: String): XMLDocType = js.native
   
-  def e(name: js.Any): XMLElement = js.native
-  def e(name: js.Any, attributes: js.Object): XMLElement = js.native
-  def e(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
-  def e(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
+  def e(name: Any): XMLElement = js.native
+  def e(name: Any, attributes: js.Object): XMLElement = js.native
+  def e(name: Any, attributes: js.Object, text: Any): XMLElement = js.native
+  def e(name: Any, attributes: Unit, text: Any): XMLElement = js.native
   
-  def ele(name: js.Any): XMLElement = js.native
-  def ele(name: js.Any, attributes: js.Object): XMLElement = js.native
-  def ele(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
-  def ele(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
+  def ele(name: Any): XMLElement = js.native
+  def ele(name: Any, attributes: js.Object): XMLElement = js.native
+  def ele(name: Any, attributes: js.Object, text: Any): XMLElement = js.native
+  def ele(name: Any, attributes: Unit, text: Any): XMLElement = js.native
   
   /**
     * Creates a new child node and appends it to the list of child nodes.
@@ -177,10 +177,10 @@ abstract class XMLNode () extends StObject {
     * 
     * @returns the last top level node created
     */
-  def element(name: js.Any): XMLElement = js.native
-  def element(name: js.Any, attributes: js.Object): XMLElement = js.native
-  def element(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
-  def element(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
+  def element(name: Any): XMLElement = js.native
+  def element(name: Any, attributes: js.Object): XMLElement = js.native
+  def element(name: Any, attributes: js.Object, text: Any): XMLElement = js.native
+  def element(name: Any, attributes: Unit, text: Any): XMLElement = js.native
   
   /**
     * Converts the XML document to string.
@@ -191,9 +191,9 @@ abstract class XMLNode () extends StObject {
   def end(options: XMLToStringOptions): String = js.native
   def end(options: XMLWriter): String = js.native
   
-  def i(array: js.Array[js.Any]): XMLElement = js.native
+  def i(array: js.Array[Any]): XMLElement = js.native
   def i(obj: js.Object): XMLElement = js.native
-  def i(target: String, value: js.Any): XMLElement = js.native
+  def i(target: String, value: Any): XMLElement = js.native
   
   /**
     * Takes the root node of the given XML document and appends it 
@@ -205,9 +205,9 @@ abstract class XMLNode () extends StObject {
     */
   def importDocument(doc: XMLNode): XMLElement = js.native
   
-  def ins(array: js.Array[js.Any]): XMLElement = js.native
+  def ins(array: js.Array[Any]): XMLElement = js.native
   def ins(obj: js.Object): XMLElement = js.native
-  def ins(target: String, value: js.Any): XMLElement = js.native
+  def ins(target: String, value: Any): XMLElement = js.native
   
   /**
     * Creates a new sibling node and inserts it after this node.
@@ -218,10 +218,10 @@ abstract class XMLNode () extends StObject {
     * 
     * @returns the new node
     */
-  def insertAfter(name: js.Any): XMLElement = js.native
-  def insertAfter(name: js.Any, attributes: js.Object): XMLElement = js.native
-  def insertAfter(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
-  def insertAfter(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
+  def insertAfter(name: Any): XMLElement = js.native
+  def insertAfter(name: Any, attributes: js.Object): XMLElement = js.native
+  def insertAfter(name: Any, attributes: js.Object, text: Any): XMLElement = js.native
+  def insertAfter(name: Any, attributes: Unit, text: Any): XMLElement = js.native
   
   /**
     * Creates a new sibling node and inserts it before this node.
@@ -232,12 +232,12 @@ abstract class XMLNode () extends StObject {
     * 
     * @returns the new node
     */
-  def insertBefore(name: js.Any): XMLElement = js.native
-  def insertBefore(name: js.Any, attributes: js.Object): XMLElement = js.native
-  def insertBefore(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native
-  def insertBefore(name: js.Any, attributes: Unit, text: js.Any): XMLElement = js.native
+  def insertBefore(name: Any): XMLElement = js.native
+  def insertBefore(name: Any, attributes: js.Object): XMLElement = js.native
+  def insertBefore(name: Any, attributes: js.Object, text: Any): XMLElement = js.native
+  def insertBefore(name: Any, attributes: Unit, text: Any): XMLElement = js.native
   
-  def instruction(array: js.Array[js.Any]): XMLElement = js.native
+  def instruction(array: js.Array[Any]): XMLElement = js.native
   def instruction(obj: js.Object): XMLElement = js.native
   /**
     * Creates a new processing instruction node and appends it to the list
@@ -250,7 +250,7 @@ abstract class XMLNode () extends StObject {
     * 
     * @returns the parent node
     */
-  def instruction(target: String, value: js.Any): XMLElement = js.native
+  def instruction(target: String, value: Any): XMLElement = js.native
   
   /**
     * Creates a processing instruction node after the current node.
@@ -260,7 +260,7 @@ abstract class XMLNode () extends StObject {
     * 
     * @returns the parent node
     */
-  def instructionAfter(target: String, value: js.Any): XMLElement = js.native
+  def instructionAfter(target: String, value: Any): XMLElement = js.native
   
   /**
     * Creates a processing instruction node before the current node.
@@ -270,12 +270,12 @@ abstract class XMLNode () extends StObject {
     * 
     * @returns the parent node
     */
-  def instructionBefore(target: String, value: js.Any): XMLElement = js.native
+  def instructionBefore(target: String, value: Any): XMLElement = js.native
   
   def n(name: String): XMLElement = js.native
   def n(name: String, attributes: js.Object): XMLElement = js.native
-  def n(name: String, attributes: js.Object, text: js.Any): XMLElement = js.native
-  def n(name: String, attributes: Unit, text: js.Any): XMLElement = js.native
+  def n(name: String, attributes: js.Object, text: Any): XMLElement = js.native
+  def n(name: String, attributes: Unit, text: Any): XMLElement = js.native
   
   /**
     * Returns the next sibling node.
@@ -284,8 +284,8 @@ abstract class XMLNode () extends StObject {
   
   def nod(name: String): XMLElement = js.native
   def nod(name: String, attributes: js.Object): XMLElement = js.native
-  def nod(name: String, attributes: js.Object, text: js.Any): XMLElement = js.native
-  def nod(name: String, attributes: Unit, text: js.Any): XMLElement = js.native
+  def nod(name: String, attributes: js.Object, text: Any): XMLElement = js.native
+  def nod(name: String, attributes: Unit, text: Any): XMLElement = js.native
   
   /**
     * Creates a new element node and appends it to the list of child nodes.
@@ -300,8 +300,8 @@ abstract class XMLNode () extends StObject {
     */
   def node(name: String): XMLElement = js.native
   def node(name: String, attributes: js.Object): XMLElement = js.native
-  def node(name: String, attributes: js.Object, text: js.Any): XMLElement = js.native
-  def node(name: String, attributes: Unit, text: js.Any): XMLElement = js.native
+  def node(name: String, attributes: js.Object, text: Any): XMLElement = js.native
+  def node(name: String, attributes: Unit, text: Any): XMLElement = js.native
   
   /** 
     * Parent element node 

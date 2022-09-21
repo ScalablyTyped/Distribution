@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataSourceTransport extends StObject {
   
+  var batch: js.UndefOr[
+    DataSourceTransportBatch | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
+  ] = js.undefined
+  
   var create: js.UndefOr[
     String | DataSourceTransportCreate | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
   ] = js.undefined
@@ -22,7 +26,7 @@ trait DataSourceTransport extends StObject {
     js.Function2[
       /* data */ DataSourceTransportParameterMapData, 
       /* type */ create | destroy | read | update, 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -51,6 +55,12 @@ object DataSourceTransport {
   
   extension [Self <: DataSourceTransport](x: Self) {
     
+    inline def setBatch(value: DataSourceTransportBatch | (js.Function1[/* options */ DataSourceTransportOptions, Unit])): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    
+    inline def setBatchFunction1(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
+    
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    
     inline def setCreate(
       value: String | DataSourceTransportCreate | (js.Function1[/* options */ DataSourceTransportOptions, Unit])
     ): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
@@ -68,7 +78,7 @@ object DataSourceTransport {
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     inline def setParameterMap(
-      value: (/* data */ DataSourceTransportParameterMapData, /* type */ create | destroy | read | update) => js.Any
+      value: (/* data */ DataSourceTransportParameterMapData, /* type */ create | destroy | read | update) => Any
     ): Self = StObject.set(x, "parameterMap", js.Any.fromFunction2(value))
     
     inline def setParameterMapUndefined: Self = StObject.set(x, "parameterMap", js.undefined)

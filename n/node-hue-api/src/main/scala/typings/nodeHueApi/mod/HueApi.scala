@@ -1,6 +1,5 @@
 package typings.nodeHueApi.mod
 
-import typings.node.NodeJS.ErrnoException
 import typings.nodeHueApi.mod.lightState.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   * Constructor used for searching for bridges and registering users
   */
-class HueApi () extends StObject {
+open class HueApi () extends StObject {
   /**
     * Creates an instance of HueApi.
     * @param {string} host Address of Hue bridge
@@ -539,14 +538,22 @@ class HueApi () extends StObject {
     id: String,
     name: String,
     lightIds: js.Array[String],
-    cb: js.Function2[/* err */ ErrnoException, /* data */ Boolean, Unit]
+    cb: js.Function2[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+      /* data */ Boolean, 
+      Unit
+    ]
   ): Unit = js.native
   def updateGroup(id: Double, name: String, lightIds: js.Array[String]): js.Promise[Boolean] = js.native
   def updateGroup(
     id: Double,
     name: String,
     lightIds: js.Array[String],
-    cb: js.Function2[/* err */ ErrnoException, /* data */ Boolean, Unit]
+    cb: js.Function2[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+      /* data */ Boolean, 
+      Unit
+    ]
   ): Unit = js.native
   
   //createAdvancedScene(scene: IScene, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;

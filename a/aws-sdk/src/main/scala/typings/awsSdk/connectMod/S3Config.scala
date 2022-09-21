@@ -17,7 +17,7 @@ trait S3Config extends StObject {
   var BucketPrefix: Prefix
   
   /**
-    * The S3 encryption configuration.
+    * The Amazon S3 encryption configuration.
     */
   var EncryptionConfig: js.UndefOr[typings.awsSdk.connectMod.EncryptionConfig] = js.undefined
 }

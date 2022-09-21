@@ -1,5 +1,6 @@
 package typings.nodeObjectHash
 
+import typings.nodeObjectHash.mod.Hashable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,10 @@ object objectSorterMod {
   /**
     * Object sorter consturctor
     * @param options object transformation options
-    * @returns function that transforms object to strings
+    * @return function that transforms object to strings
     */
-  inline def apply(): js.Function1[/* obj */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* obj */ js.Any, String]]
-  inline def apply(options: SorterOptions): js.Function1[/* obj */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, String]]
+  inline def apply(): StringifyFn = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringifyFn]
+  inline def apply(options: SorterOptions): StringifyFn = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[StringifyFn]
   
   @JSImport("node-object-hash/dist/objectSorter", JSImport.Namespace)
   @js.native
@@ -22,6 +23,18 @@ object objectSorterMod {
     * Advanced coerce options
     */
   trait CoerceOptions extends StObject {
+    
+    /**
+      * If `true` converts BigInt to string
+      * @example
+      * // coerce.bigint = true
+      * 1n === '1';
+      * @example
+      * // coerce.bigint = false
+      * 1n !== '1';
+      * @default true
+      */
+    var bigint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` converts booleans to string `1` and `0`
@@ -75,7 +88,7 @@ object objectSorterMod {
       * // coerce.number = true
       * 1 === '1';
       * @example
-      * // coerce.number = true
+      * // coerce.number = false
       * 1 !== '1';
       * @default true
       */
@@ -136,6 +149,10 @@ object objectSorterMod {
     
     extension [Self <: CoerceOptions](x: Self) {
       
+      inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      
+      inline def setBigintUndefined: Self = StObject.set(x, "bigint", js.undefined)
+      
       inline def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
       inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
@@ -185,6 +202,11 @@ object objectSorterMod {
     var array: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * If `true` sort BigInt entries before hash
+      */
+    var bigint: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * If `true` sort map entries before hash
       */
     var map: js.UndefOr[Boolean] = js.undefined
@@ -198,6 +220,11 @@ object objectSorterMod {
       * If `true` sort set entries before hash
       */
     var set: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If `true` sort TypedArray entries before hash
+      */
+    var typedArray: js.UndefOr[Boolean] = js.undefined
   }
   object SortOptions {
     
@@ -212,6 +239,10 @@ object objectSorterMod {
       
       inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
       
+      inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      
+      inline def setBigintUndefined: Self = StObject.set(x, "bigint", js.undefined)
+      
       inline def setMap(value: Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
@@ -223,6 +254,10 @@ object objectSorterMod {
       inline def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
       inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+      
+      inline def setTypedArray(value: Boolean): Self = StObject.set(x, "typedArray", value.asInstanceOf[js.Any])
+      
+      inline def setTypedArrayUndefined: Self = StObject.set(x, "typedArray", js.undefined)
     }
   }
   
@@ -274,6 +309,8 @@ object objectSorterMod {
       inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
+  
+  type StringifyFn = js.Function1[/* obj */ Hashable | Any, String]
   
   /**
     * Advanced trim options

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rails__activestorage
 
-Typings are for version 6.0
+Typings are for version 7.0
 
 ## Library description:
 Attach cloud and local files in Rails applications
@@ -10,10 +10,10 @@ Attach cloud and local files in Rails applications
 | ------------------ | :-------------: |
 | Full name          | @rails/activestorage |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 6 |
-| # downloads        | 6882384 |
-| # stars            | 0 |
+| # releases         | 54 |
+| # dependents       | 0.0 |
+| # downloads        | 1327108.6666666667 |
+| # stars            | 51422.0 |
 
 ## Links
 - [Homepage](https://rubyonrails.org/)

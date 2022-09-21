@@ -3,13 +3,18 @@ package typings.officeJs.Word
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.Word.InsertLocation.after
+import typings.officeJs.Word.InsertLocation.before
+import typings.officeJs.Word.InsertLocation.replace
 import typings.officeJs.Word.Interfaces.InlinePictureData
 import typings.officeJs.Word.Interfaces.InlinePictureLoadOptions
 import typings.officeJs.Word.Interfaces.InlinePictureUpdateData
+import typings.officeJs.Word.RangeLocation.end
+import typings.officeJs.Word.RangeLocation.start
+import typings.officeJs.Word.RangeLocation.whole
 import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.After
 import typings.officeJs.officeJsStrings.Before
-import typings.officeJs.officeJsStrings.Content
 import typings.officeJs.officeJsStrings.End
 import typings.officeJs.officeJsStrings.Line
 import typings.officeJs.officeJsStrings.Next
@@ -27,9 +32,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an inline picture.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 @js.native
@@ -38,17 +43,17 @@ trait InlinePicture
      with ClientObject {
   
   /**
-    *
     * Gets or sets a string that represents the alternative text associated with the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var altTextDescription: String = js.native
   
   /**
-    *
     * Gets or sets a string that contains the title for the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var altTextTitle: String = js.native
@@ -60,6 +65,7 @@ trait InlinePicture
   /**
     * Deletes the inline picture from the document.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     */
   def delete(): Unit = js.native
@@ -67,6 +73,7 @@ trait InlinePicture
   /**
     * Gets the base64 encoded string representation of the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   def getBase64ImageSrc(): ClientResult[String] = js.native
@@ -74,6 +81,7 @@ trait InlinePicture
   /**
     * Gets the next inline image. Throws an error if this inline image is the last one.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getNext(): InlinePicture = js.native
@@ -81,6 +89,7 @@ trait InlinePicture
   /**
     * Gets the next inline image. Returns a null object if this inline image is the last one.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getNextOrNullObject(): InlinePicture = js.native
@@ -88,268 +97,144 @@ trait InlinePicture
   /**
     * Gets the picture, or the starting or ending point of the picture, as a range.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
-    * @param rangeLocation Optional. The range location can be 'Whole', 'Start', or 'End'.
+    * @param rangeLocation Optional. The range location must be 'Whole', 'Start', or 'End'.
     */
   def getRange(): Range = js.native
-  def getRange(rangeLocation: RangeLocation): Range = js.native
-  @JSName("getRange")
-  def getRange_After(rangeLocation: After): Range = js.native
-  @JSName("getRange")
-  def getRange_Before(rangeLocation: Before): Range = js.native
-  @JSName("getRange")
-  def getRange_Content(rangeLocation: Content): Range = js.native
-  @JSName("getRange")
-  def getRange_End(rangeLocation: End): Range = js.native
-  @JSName("getRange")
-  def getRange_Start(rangeLocation: Start): Range = js.native
-  @JSName("getRange")
-  def getRange_Whole(rangeLocation: Whole): Range = js.native
+  def getRange(rangeLocation: Whole | Start | End): Range = js.native
+  def getRange(rangeLocation: end): Range = js.native
+  def getRange(rangeLocation: start): Range = js.native
+  def getRange(rangeLocation: whole): Range = js.native
   
   /**
-    *
     * Gets or sets a number that describes the height of the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var height: Double = js.native
   
   /**
-    *
     * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var hyperlink: String = js.native
   
+  def insertBreak(
+    breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
+    insertLocation: Before | After
+  ): Unit = js.native
+  def insertBreak(
+    breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
+    insertLocation: after
+  ): Unit = js.native
+  def insertBreak(
+    breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
+    insertLocation: before
+  ): Unit = js.native
+  def insertBreak(breakType: BreakType, insertLocation: Before | After): Unit = js.native
+  def insertBreak(breakType: BreakType, insertLocation: after): Unit = js.native
   /**
     * Inserts a break at the specified location in the main document.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     *
     * @param breakType Required. The break type to add.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     */
-  def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
-  def insertBreak(breakType: Line, insertLocation: After): Unit = js.native
-  def insertBreak(breakType: Line, insertLocation: Before): Unit = js.native
-  def insertBreak(breakType: Line, insertLocation: End): Unit = js.native
-  def insertBreak(breakType: Line, insertLocation: Replace): Unit = js.native
-  def insertBreak(breakType: Line, insertLocation: Start): Unit = js.native
-  def insertBreak(breakType: Next, insertLocation: After): Unit = js.native
-  def insertBreak(breakType: Next, insertLocation: Before): Unit = js.native
-  def insertBreak(breakType: Next, insertLocation: End): Unit = js.native
-  def insertBreak(breakType: Next, insertLocation: Replace): Unit = js.native
-  def insertBreak(breakType: Next, insertLocation: Start): Unit = js.native
-  def insertBreak(breakType: Page, insertLocation: After): Unit = js.native
-  /**
-    * Inserts a break at the specified location in the main document.
-    *
-    * [Api set: WordApi 1.2]
-    *
-    * @param breakType Required. The break type to add.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
-    */
-  def insertBreak(breakType: Page, insertLocation: Before): Unit = js.native
-  def insertBreak(breakType: Page, insertLocation: End): Unit = js.native
-  def insertBreak(breakType: Page, insertLocation: Replace): Unit = js.native
-  def insertBreak(breakType: Page, insertLocation: Start): Unit = js.native
-  def insertBreak(breakType: SectionContinuous, insertLocation: After): Unit = js.native
-  def insertBreak(breakType: SectionContinuous, insertLocation: Before): Unit = js.native
-  def insertBreak(breakType: SectionContinuous, insertLocation: End): Unit = js.native
-  def insertBreak(breakType: SectionContinuous, insertLocation: Replace): Unit = js.native
-  def insertBreak(breakType: SectionContinuous, insertLocation: Start): Unit = js.native
-  def insertBreak(breakType: SectionEven, insertLocation: After): Unit = js.native
-  def insertBreak(breakType: SectionEven, insertLocation: Before): Unit = js.native
-  def insertBreak(breakType: SectionEven, insertLocation: End): Unit = js.native
-  def insertBreak(breakType: SectionEven, insertLocation: Replace): Unit = js.native
-  def insertBreak(breakType: SectionEven, insertLocation: Start): Unit = js.native
-  def insertBreak(breakType: SectionNext, insertLocation: After): Unit = js.native
-  def insertBreak(breakType: SectionNext, insertLocation: Before): Unit = js.native
-  def insertBreak(breakType: SectionNext, insertLocation: End): Unit = js.native
-  def insertBreak(breakType: SectionNext, insertLocation: Replace): Unit = js.native
-  def insertBreak(breakType: SectionNext, insertLocation: Start): Unit = js.native
-  def insertBreak(breakType: SectionOdd, insertLocation: After): Unit = js.native
-  def insertBreak(breakType: SectionOdd, insertLocation: Before): Unit = js.native
-  def insertBreak(breakType: SectionOdd, insertLocation: End): Unit = js.native
-  def insertBreak(breakType: SectionOdd, insertLocation: Replace): Unit = js.native
-  def insertBreak(breakType: SectionOdd, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: BreakType, insertLocation: before): Unit = js.native
   
   /**
     * Wraps the inline picture with a rich text content control.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   def insertContentControl(): ContentControl = js.native
   
+  def insertFileFromBase64(base64File: String, insertLocation: Before | After): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: after): Range = js.native
   /**
     * Inserts a document at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     *
     * @param base64File Required. The base64 encoded content of a .docx file.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     */
-  def insertFileFromBase64(base64File: String, insertLocation: InsertLocation): Range = js.native
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
-  /**
-    * Inserts a document at the specified location.
-    *
-    * [Api set: WordApi 1.2]
-    *
-    * @param base64File Required. The base64 encoded content of a .docx file.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
-    */
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_Before(base64File: String, insertLocation: Before): Range = js.native
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_End(base64File: String, insertLocation: End): Range = js.native
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_Replace(base64File: String, insertLocation: Replace): Range = js.native
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: before): Range = js.native
   
+  def insertHtml(html: String, insertLocation: Before | After): Range = js.native
+  def insertHtml(html: String, insertLocation: after): Range = js.native
   /**
     * Inserts HTML at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     *
     * @param html Required. The HTML to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     */
-  def insertHtml(html: String, insertLocation: InsertLocation): Range = js.native
-  @JSName("insertHtml")
-  def insertHtml_After(html: String, insertLocation: After): Range = js.native
-  /**
-    * Inserts HTML at the specified location.
-    *
-    * [Api set: WordApi 1.2]
-    *
-    * @param html Required. The HTML to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
-    */
-  @JSName("insertHtml")
-  def insertHtml_Before(html: String, insertLocation: Before): Range = js.native
-  @JSName("insertHtml")
-  def insertHtml_End(html: String, insertLocation: End): Range = js.native
-  @JSName("insertHtml")
-  def insertHtml_Replace(html: String, insertLocation: Replace): Range = js.native
-  @JSName("insertHtml")
-  def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
+  def insertHtml(html: String, insertLocation: before): Range = js.native
   
+  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: Replace | Before | After): InlinePicture = js.native
+  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: after): InlinePicture = js.native
+  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: before): InlinePicture = js.native
   /**
     * Inserts an inline picture at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     *
     * @param base64EncodedImage Required. The base64 encoded image to be inserted.
-    * @param insertLocation Required. The value can be 'Replace', 'Before', or 'After'.
+    * @param insertLocation Required. The value must be 'Replace', 'Before', or 'After'.
     */
-  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: InsertLocation): InlinePicture = js.native
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
-  /**
-    * Inserts an inline picture at the specified location.
-    *
-    * [Api set: WordApi 1.2]
-    *
-    * @param base64EncodedImage Required. The base64 encoded image to be inserted.
-    * @param insertLocation Required. The value can be 'Replace', 'Before', or 'After'.
-    */
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_Before(base64EncodedImage: String, insertLocation: Before): InlinePicture = js.native
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_End(base64EncodedImage: String, insertLocation: End): InlinePicture = js.native
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_Replace(base64EncodedImage: String, insertLocation: Replace): InlinePicture = js.native
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
+  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: replace): InlinePicture = js.native
   
+  def insertOoxml(ooxml: String, insertLocation: Before | After): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: after): Range = js.native
   /**
     * Inserts OOXML at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     *
     * @param ooxml Required. The OOXML to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     */
-  def insertOoxml(ooxml: String, insertLocation: InsertLocation): Range = js.native
-  @JSName("insertOoxml")
-  def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
-  /**
-    * Inserts OOXML at the specified location.
-    *
-    * [Api set: WordApi 1.2]
-    *
-    * @param ooxml Required. The OOXML to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
-    */
-  @JSName("insertOoxml")
-  def insertOoxml_Before(ooxml: String, insertLocation: Before): Range = js.native
-  @JSName("insertOoxml")
-  def insertOoxml_End(ooxml: String, insertLocation: End): Range = js.native
-  @JSName("insertOoxml")
-  def insertOoxml_Replace(ooxml: String, insertLocation: Replace): Range = js.native
-  @JSName("insertOoxml")
-  def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: before): Range = js.native
   
+  def insertParagraph(paragraphText: String, insertLocation: Before | After): Paragraph = js.native
+  def insertParagraph(paragraphText: String, insertLocation: after): Paragraph = js.native
   /**
     * Inserts a paragraph at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     *
     * @param paragraphText Required. The paragraph text to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     */
-  def insertParagraph(paragraphText: String, insertLocation: InsertLocation): Paragraph = js.native
-  @JSName("insertParagraph")
-  def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
-  /**
-    * Inserts a paragraph at the specified location.
-    *
-    * [Api set: WordApi 1.2]
-    *
-    * @param paragraphText Required. The paragraph text to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
-    */
-  @JSName("insertParagraph")
-  def insertParagraph_Before(paragraphText: String, insertLocation: Before): Paragraph = js.native
-  @JSName("insertParagraph")
-  def insertParagraph_End(paragraphText: String, insertLocation: End): Paragraph = js.native
-  @JSName("insertParagraph")
-  def insertParagraph_Replace(paragraphText: String, insertLocation: Replace): Paragraph = js.native
-  @JSName("insertParagraph")
-  def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
+  def insertParagraph(paragraphText: String, insertLocation: before): Paragraph = js.native
   
+  def insertText(text: String, insertLocation: Before | After): Range = js.native
+  def insertText(text: String, insertLocation: after): Range = js.native
   /**
     * Inserts text at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     *
     * @param text Required. Text to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     */
-  def insertText(text: String, insertLocation: InsertLocation): Range = js.native
-  @JSName("insertText")
-  def insertText_After(text: String, insertLocation: After): Range = js.native
-  /**
-    * Inserts text at the specified location.
-    *
-    * [Api set: WordApi 1.2]
-    *
-    * @param text Required. Text to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
-    */
-  @JSName("insertText")
-  def insertText_Before(text: String, insertLocation: Before): Range = js.native
-  @JSName("insertText")
-  def insertText_End(text: String, insertLocation: End): Range = js.native
-  @JSName("insertText")
-  def insertText_Replace(text: String, insertLocation: Replace): Range = js.native
-  @JSName("insertText")
-  def insertText_Start(text: String, insertLocation: Start): Range = js.native
+  def insertText(text: String, insertLocation: before): Range = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -363,65 +248,65 @@ trait InlinePicture
   def load(propertyNames: js.Array[String]): InlinePicture = js.native
   
   /**
-    *
     * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var lockAspectRatio: Boolean = js.native
   
   /**
-    *
     * Gets the parent paragraph that contains the inline image. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     */
   val paragraph: Paragraph = js.native
   
   /**
-    *
     * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   val parentContentControl: ContentControl = js.native
   
   /**
-    *
     * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   val parentContentControlOrNullObject: ContentControl = js.native
   
   /**
-    *
     * Gets the table that contains the inline image. Throws an error if it is not contained in a table. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   val parentTable: Table = js.native
   
   /**
-    *
     * Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   val parentTableCell: TableCell = js.native
   
   /**
-    *
     * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   val parentTableCellOrNullObject: TableCell = js.native
   
   /**
-    *
     * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   val parentTableOrNullObject: Table = js.native
@@ -429,29 +314,19 @@ trait InlinePicture
   /**
     * Selects the inline picture. This causes Word to scroll to the selection.
     *
+    * @remarks
     * [Api set: WordApi 1.2]
     *
-    * @param selectionMode Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+    * @param selectionMode Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
     */
   def select(): Unit = js.native
+  def select(selectionMode: Select | Start | End): Unit = js.native
   def select(selectionMode: SelectionMode): Unit = js.native
-  @JSName("select")
-  def select_End(selectionMode: End): Unit = js.native
-  @JSName("select")
-  def select_Select(selectionMode: Select): Unit = js.native
-  @JSName("select")
-  def select_Start(selectionMode: Start): Unit = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: InlinePicture): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Word.InlinePicture): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -465,19 +340,19 @@ trait InlinePicture
   def toJSON(): InlinePictureData = js.native
   
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     */
   def track(): InlinePicture = js.native
   
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): InlinePicture = js.native
   
   /**
-    *
     * Gets or sets a number that describes the width of the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var width: Double = js.native

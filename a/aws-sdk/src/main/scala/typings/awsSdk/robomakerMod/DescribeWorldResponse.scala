@@ -14,7 +14,7 @@ trait DescribeWorldResponse extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the world was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (arn) of the world generation job that generated the world.
@@ -30,6 +30,11 @@ trait DescribeWorldResponse extends StObject {
     * The world template.
     */
   var template: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * Returns the JSON formatted string that describes the contents of your world.
+    */
+  var worldDescriptionBody: js.UndefOr[Json] = js.undefined
 }
 object DescribeWorldResponse {
   
@@ -44,7 +49,7 @@ object DescribeWorldResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -59,5 +64,9 @@ object DescribeWorldResponse {
     inline def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setWorldDescriptionBody(value: Json): Self = StObject.set(x, "worldDescriptionBody", value.asInstanceOf[js.Any])
+    
+    inline def setWorldDescriptionBodyUndefined: Self = StObject.set(x, "worldDescriptionBody", js.undefined)
   }
 }

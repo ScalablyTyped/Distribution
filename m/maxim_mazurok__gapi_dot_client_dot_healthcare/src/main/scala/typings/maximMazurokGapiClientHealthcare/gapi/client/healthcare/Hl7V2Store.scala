@@ -15,10 +15,10 @@ trait Hl7V2Store extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store & TopLevel[Any]
   ] = js.undefined
   
-  /** Resource name of the HL7v2 store, of the form `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`. */
+  /** Resource name of the HL7v2 store, of the form `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
@@ -50,7 +50,7 @@ object Hl7V2Store {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -63,7 +63,7 @@ object Hl7V2Store {
     
     inline def setNotificationConfigsUndefined: Self = StObject.set(x, "notificationConfigs", js.undefined)
     
-    inline def setNotificationConfigsVarargs(value: Hl7V2NotificationConfig*): Self = StObject.set(x, "notificationConfigs", js.Array(value :_*))
+    inline def setNotificationConfigsVarargs(value: Hl7V2NotificationConfig*): Self = StObject.set(x, "notificationConfigs", js.Array(value*))
     
     inline def setParserConfig(value: ParserConfig): Self = StObject.set(x, "parserConfig", value.asInstanceOf[js.Any])
     

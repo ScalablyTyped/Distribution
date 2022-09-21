@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait S3Rule extends StObject {
   
-  var prefix: String
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var suffix: String
+  var suffix: js.UndefOr[String] = js.undefined
 }
 object S3Rule {
   
-  inline def apply(prefix: String, suffix: String): S3Rule = {
-    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
+  inline def apply(): S3Rule = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3Rule]
   }
   
@@ -21,6 +21,10 @@ object S3Rule {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    
     inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

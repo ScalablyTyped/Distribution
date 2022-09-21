@@ -14,17 +14,17 @@ object noSwitchCaseFallThroughRuleMod {
   
   @JSImport("tslint/lib/rules/noSwitchCaseFallThroughRule", "NoSwitchCaseFallThroughWalker")
   @js.native
-  class NoSwitchCaseFallThroughWalker protected () extends AbstractWalker[Unit] {
+  open class NoSwitchCaseFallThroughWalker protected () extends AbstractWalker[Unit] {
     def this(sourceFile: SourceFile, ruleName: String, options: Unit) = this()
     
-    /* private */ var isFallThroughAllowed: js.Any = js.native
+    /* private */ var isFallThroughAllowed: Any = js.native
     
-    /* private */ var visitSwitchStatement: js.Any = js.native
+    /* private */ var visitSwitchStatement: Any = js.native
   }
   
   @JSImport("tslint/lib/rules/noSwitchCaseFallThroughRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */

@@ -52,67 +52,65 @@ object loggerMod {
     /* "warn" */ val warn: typings.authmosphere.loggerMod.LogLevel.warn & String = js.native
   }
   
-  type LogFunction = js.Function2[/* message */ String, /* error */ js.UndefOr[js.Any], Unit]
+  @js.native
+  trait LogFunction extends StObject {
+    
+    def apply(message: String, args: Any*): Unit = js.native
+  }
   
   trait Logger extends StObject {
     
-    def debug(message: String): Unit
-    def debug(message: String, error: js.Any): Unit
+    def debug(message: String, args: Any*): Unit
     @JSName("debug")
     var debug_Original: LogFunction
     
-    def error(message: String): Unit
-    def error(message: String, error: js.Any): Unit
+    def error(message: String, args: Any*): Unit
     @JSName("error")
     var error_Original: LogFunction
     
-    def fatal(message: String): Unit
-    def fatal(message: String, error: js.Any): Unit
+    def fatal(message: String, args: Any*): Unit
     @JSName("fatal")
     var fatal_Original: LogFunction
     
-    def info(message: String): Unit
-    def info(message: String, error: js.Any): Unit
+    def info(message: String, args: Any*): Unit
     @JSName("info")
     var info_Original: LogFunction
     
-    def trace(message: String): Unit
-    def trace(message: String, error: js.Any): Unit
+    def trace(message: String, args: Any*): Unit
     @JSName("trace")
     var trace_Original: LogFunction
     
-    def warn(message: String): Unit
-    def warn(message: String, error: js.Any): Unit
+    def warn(message: String, args: Any*): Unit
     @JSName("warn")
     var warn_Original: LogFunction
   }
   object Logger {
     
     inline def apply(
-      debug: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit,
-      error: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit,
-      fatal: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit,
-      info: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit,
-      trace: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit,
-      warn: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit
+      debug: LogFunction,
+      error: LogFunction,
+      fatal: LogFunction,
+      info: LogFunction,
+      trace: LogFunction,
+      warn: LogFunction
     ): Logger = {
-      val __obj = js.Dynamic.literal(debug = js.Any.fromFunction2(debug), error = js.Any.fromFunction2(error), fatal = js.Any.fromFunction2(fatal), info = js.Any.fromFunction2(info), trace = js.Any.fromFunction2(trace), warn = js.Any.fromFunction2(warn))
+      val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Logger]
     }
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setDebug(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
+      inline def setDebug(value: LogFunction): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      inline def setError(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: LogFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setFatal(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction2(value))
+      inline def setFatal(value: LogFunction): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      inline def setInfo(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: LogFunction): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      inline def setTrace(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction2(value))
+      inline def setTrace(value: LogFunction): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      inline def setWarn(value: (/* message */ String, /* error */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+      inline def setWarn(value: LogFunction): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
 }

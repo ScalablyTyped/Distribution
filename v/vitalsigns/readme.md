@@ -11,9 +11,9 @@ Powerful and customizable application health monitoring
 | Full name          | vitalsigns |
 | Keywords           | health, check, monitor, express, cpu, memory, application |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 74292 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4177.0 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/TomFrost/node-vitalsigns)

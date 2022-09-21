@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.ArrayUtilities")
 @js.native
-class ArrayUtilities ()
+open class ArrayUtilities ()
   extends StObject
      with typings.typescriptServices.TypeScript.ArrayUtilities
 object ArrayUtilities {
@@ -37,7 +37,7 @@ object ArrayUtilities {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(sourceArray.asInstanceOf[js.Any], sourceIndex.asInstanceOf[js.Any], destinationArray.asInstanceOf[js.Any], destinationIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def createArray[T](length: Double, defaultValue: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(length.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def createArray[T](length: Double, defaultValue: Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(length.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* static member */
   inline def distinct[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
@@ -51,7 +51,7 @@ object ArrayUtilities {
   inline def firstOrDefault[T](array: js.Array[T], func: js.Function2[/* v */ T, /* index */ Double, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("firstOrDefault")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /* static member */
-  inline def groupBy[T](array: js.Array[T], func: js.Function1[/* v */ T, String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def groupBy[T](array: js.Array[T], func: js.Function1[/* v */ T, String]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(array.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
   inline def grow[T](array: js.Array[T], length: Double, defaultValue: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("grow")(array.asInstanceOf[js.Any], length.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -60,7 +60,7 @@ object ArrayUtilities {
   inline def indexOf[T](array: js.Array[T], predicate: js.Function1[/* v */ T, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  inline def isArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isArray(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
   inline def last[T](array: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(array.asInstanceOf[js.Any]).asInstanceOf[T]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-edit-text
 
-Typings are for version 2.0
+Typings are for version 5.0
 
 ## Library description:
 Simple editable text component for React
@@ -9,11 +9,11 @@ Simple editable text component for React
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-edit-text |
-| Keywords           | react, edit, text, react-edit-text, editable, input, textbox |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 1686 |
-| # stars            | 0 |
+| Keywords           | react, edit, text, react-edit-text, editable, input, textbox, textarea |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 7291.333333333333 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/bymi15/react-edit-text#readme)

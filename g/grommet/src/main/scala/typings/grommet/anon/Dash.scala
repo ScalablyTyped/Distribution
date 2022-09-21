@@ -1,11 +1,13 @@
 package typings.grommet.anon
 
 import typings.grommet.grommetStrings.area
+import typings.grommet.grommetStrings.areas
 import typings.grommet.grommetStrings.bar
 import typings.grommet.grommetStrings.bars
 import typings.grommet.grommetStrings.circle
 import typings.grommet.grommetStrings.diamond
 import typings.grommet.grommetStrings.line
+import typings.grommet.grommetStrings.lines
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.point
 import typings.grommet.grommetStrings.square
@@ -41,7 +43,7 @@ trait Dash extends StObject {
   var thickness: js.UndefOr[ThicknessType] = js.undefined
   
   // defaults to auto assigned based on available space and amount of data
-  var `type`: js.UndefOr[bar | line | area | point | bars] = js.undefined
+  var `type`: js.UndefOr[bar | line | area | point | bars | areas | lines] = js.undefined
 }
 object Dash {
   
@@ -56,7 +58,7 @@ object Dash {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Color*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Color*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDash(value: Boolean): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
@@ -72,7 +74,7 @@ object Dash {
     
     inline def setProperty(value: String | (js.Array[Property | String]) | Thickness): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    inline def setPropertyVarargs(value: (Property | String)*): Self = StObject.set(x, "property", js.Array(value :_*))
+    inline def setPropertyVarargs(value: (Property | String)*): Self = StObject.set(x, "property", js.Array(value*))
     
     inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
@@ -82,7 +84,7 @@ object Dash {
     
     inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
-    inline def setType(value: bar | line | area | point | bars): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bar | line | area | point | bars | areas | lines): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

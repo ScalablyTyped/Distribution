@@ -9,10 +9,10 @@ render nested hierarchies `npm ls` style with unicode pipes
 | ------------------ | :-------------: |
 | Full name          | archy |
 | Keywords           | hierarchy, npm ls, unicode, pretty, print |
-| # releases         | 0 |
-| # dependents       | 285 |
-| # downloads        | 150208957 |
-| # stars            | 21 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9875463666666668E7 |
+| # stars            | 203.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-archy)

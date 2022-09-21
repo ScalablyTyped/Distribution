@@ -9,7 +9,7 @@ object Portability {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortability")
   @js.native
-  class SearchConfigurationPortability protected ()
+  open class SearchConfigurationPortability protected ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortability {
     def this(context: ClientContext) = this()
@@ -17,7 +17,7 @@ object Portability {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortabilityPropertyNames")
   @js.native
-  class SearchConfigurationPortabilityPropertyNames ()
+  open class SearchConfigurationPortabilityPropertyNames ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortabilityPropertyNames
   object SearchConfigurationPortabilityPropertyNames {

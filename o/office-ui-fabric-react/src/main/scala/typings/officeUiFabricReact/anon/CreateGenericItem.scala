@@ -17,5 +17,5 @@ trait CreateGenericItem extends StObject {
   def onRenderItem(props: IPeoplePickerItemSelectedProps): Element = js.native
   
   def onRenderSuggestionsItem(personaProps: IPersonaProps): Element = js.native
-  def onRenderSuggestionsItem(personaProps: IPersonaProps, suggestionsProps: IBasePickerSuggestionsProps[js.Any]): Element = js.native
+  def onRenderSuggestionsItem(personaProps: IPersonaProps, suggestionsProps: IBasePickerSuggestionsProps[Any]): Element = js.native
 }

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "HardwareKeyboardCapslock")
 @js.native
-class HardwareKeyboardCapslock ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class HardwareKeyboardCapslock ()
+  extends Component[SvgIconProps, js.Object, Any]

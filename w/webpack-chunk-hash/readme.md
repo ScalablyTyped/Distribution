@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-chunk-hash
 
-Typings are for version 0.4
+Typings are for version 0.6.0
 
 ## Library description:
 Plugin to replace a standard webpack chunk hashing with custom (md5) one.
@@ -11,9 +11,9 @@ Plugin to replace a standard webpack chunk hashing with custom (md5) one.
 | Full name          | webpack-chunk-hash |
 | Keywords           | webpack, hash, plugin, md5 |
 | # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 3208297 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 161206.0 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/alexindigo/webpack-chunk-hash#readme)
@@ -24,7 +24,7 @@ Plugin to replace a standard webpack chunk hashing with custom (md5) one.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

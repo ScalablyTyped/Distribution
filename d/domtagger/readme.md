@@ -10,12 +10,15 @@ The hyperHTML's template literal parser
 | ------------------ | :-------------: |
 | Full name          | domtagger |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 6 |
-| # downloads        | 80419 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 10653.333333333334 |
+| # stars            | 39.0 |
 
 ## Links
+- [Homepage](https://github.com/webreflection/domtagger#readme)
+- [Bugs](https://github.com/webreflection/domtagger/issues)
+- [Repository](https://github.com/webreflection/domtagger)
 - [Npm](https://www.npmjs.com/package/domtagger)
     
 

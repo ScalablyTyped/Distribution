@@ -1,17 +1,14 @@
 package typings.asn1js.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UTCTimeParams
   extends StObject
-     with LocalSimpleLocalSimpleStringValueBlockParams {
+     with LocalSimpleStringBlockParams {
   
-  var value: js.UndefOr[String] = js.undefined
-  
-  var valueDate: js.UndefOr[Date] = js.undefined
+  var valueDate: js.UndefOr[js.Date] = js.undefined
 }
 object UTCTimeParams {
   
@@ -22,12 +19,8 @@ object UTCTimeParams {
   
   extension [Self <: UTCTimeParams](x: Self) {
     
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setValueDate(value: Date): Self = StObject.set(x, "valueDate", value.asInstanceOf[js.Any])
+    inline def setValueDate(value: js.Date): Self = StObject.set(x, "valueDate", value.asInstanceOf[js.Any])
     
     inline def setValueDateUndefined: Self = StObject.set(x, "valueDate", js.undefined)
-    
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

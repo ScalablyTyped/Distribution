@@ -13,7 +13,7 @@ object jasmine {
     def toBeArray(): Boolean = js.native
     
     def toBeCloseToOneOf(
-      values: js.Array[js.Any],
+      values: js.Array[Any],
       isCloseToFunction: js.Function2[/* actual */ Double, /* expected */ Double, Boolean]
     ): Boolean = js.native
     
@@ -27,17 +27,17 @@ object jasmine {
     
     def toBeOfType(`type`: String): Boolean = js.native
     
-    def toBeOneOf(values: js.Array[js.Any]): Boolean = js.native
+    def toBeOneOf(values: js.Array[Any]): Boolean = js.native
     
     //toContain
-    def toContainOnce(value: js.Any): Boolean = js.native
+    def toContainOnce(value: Any): Boolean = js.native
     
     def toEachEndWith(searchString: String): Boolean = js.native
     
     def toEachStartWith(searchString: String): Boolean = js.native
     
-    def toEndWith(value: js.Any): Boolean = js.native
-    def toEndWith(values: js.Array[js.Any]): Boolean = js.native
+    def toEndWith(value: Any): Boolean = js.native
+    def toEndWith(values: js.Array[Any]): Boolean = js.native
     
     def toExactlyHaveProperties(names: String*): Boolean = js.native
     
@@ -58,11 +58,11 @@ object jasmine {
     
     def toSomeStartWith(searchString: String): Boolean = js.native
     
+    def toStartWith(value: js.Array[Any]): Boolean = js.native
     //toStartEndWith
-    def toStartWith(value: js.Any): Boolean = js.native
-    def toStartWith(value: js.Array[js.Any]): Boolean = js.native
+    def toStartWith(value: Any): Boolean = js.native
     
-    def toStartWithEither(searchString: js.Any*): Boolean = js.native
+    def toStartWithEither(searchString: Any*): Boolean = js.native
     
     //toThrow
     def toThrowInstanceOf(klass: js.Function): Boolean = js.native

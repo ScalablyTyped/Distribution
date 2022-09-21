@@ -1,7 +1,6 @@
 package typings.gapiDrive
 
 import typings.gapiDrive.gapiDriveStrings.driveNumbersignuser
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ object anon {
       
       inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
       
-      inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+      inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value*))
       
       inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
       
@@ -406,20 +405,20 @@ object anon {
   
   trait Image extends StObject {
     
-    var image: Uint8Array
+    var image: js.typedarray.Uint8Array
     
     var mimType: String
   }
   object Image {
     
-    inline def apply(image: Uint8Array, mimType: String): Image = {
+    inline def apply(image: js.typedarray.Uint8Array, mimType: String): Image = {
       val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], mimType = mimType.asInstanceOf[js.Any])
       __obj.asInstanceOf[Image]
     }
     
     extension [Self <: Image](x: Self) {
       
-      inline def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: js.typedarray.Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
       inline def setMimType(value: String): Self = StObject.set(x, "mimType", value.asInstanceOf[js.Any])
     }

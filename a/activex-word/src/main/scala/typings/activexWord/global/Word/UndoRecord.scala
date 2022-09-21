@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.UndoRecord")
 @js.native
-/* private */ class UndoRecord ()
+/* private */ open class UndoRecord ()
   extends StObject
      with typings.activexWord.Word.UndoRecord

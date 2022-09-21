@@ -22,7 +22,7 @@ object nodeMaterialBlockMod {
   
   @JSImport("babylonjs/Materials/Node/nodeMaterialBlock", "NodeMaterialBlock")
   @js.native
-  class NodeMaterialBlock protected () extends StObject {
+  open class NodeMaterialBlock protected () extends StObject {
     /**
       * Creates a new NodeMaterialBlock
       * @param name defines the block name
@@ -41,24 +41,36 @@ object nodeMaterialBlockMod {
     
     /* protected */ def _buildBlock(state: NodeMaterialBuildState): Unit = js.native
     
-    /* private */ var _buildId: js.Any = js.native
+    /* private */ var _buildId: Any = js.native
     
-    /* private */ var _buildTarget: js.Any = js.native
+    /* private */ var _buildTarget: Any = js.native
     
     /** @hidden */
     var _codeVariableName: String = js.native
     
     /* protected */ def _declareOutput(output: NodeMaterialConnectionPoint, state: NodeMaterialBuildState): String = js.native
     
-    /** @hidden */
-    def _deserialize(serializationObject: js.Any, scene: Scene, rootUrl: String): Unit = js.native
+    /**
+      * @param serializationObject
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    def _deserialize(serializationObject: Any, scene: Scene, rootUrl: String): Unit = js.native
     
-    /* private */ var _deserializePortDisplayNamesAndExposedOnFrame: js.Any = js.native
+    /* private */ var _deserializePortDisplayNamesAndExposedOnFrame: Any = js.native
     
-    /** @hidden */
+    /**
+      * @param uniqueNames
+      * @param alreadyDumped
+      * @hidden
+      */
     def _dumpCode(uniqueNames: js.Array[String], alreadyDumped: js.Array[NodeMaterialBlock]): String = js.native
     
-    /** @hidden */
+    /**
+      * @param alreadyDumped
+      * @hidden
+      */
     def _dumpCodeForOutputConnections(alreadyDumped: js.Array[NodeMaterialBlock]): String = js.native
     
     /* protected */ def _dumpPropertiesCode(): String = js.native
@@ -68,16 +80,19 @@ object nodeMaterialBlockMod {
     /** @hidden */
     var _inputs: js.Array[NodeMaterialConnectionPoint] = js.native
     
-    /* private */ var _isFinalMerger: js.Any = js.native
+    /* private */ var _isFinalMerger: Any = js.native
     
-    /* private */ var _isInput: js.Any = js.native
+    /* private */ var _isInput: Any = js.native
     
     /* protected */ var _isUnique: Boolean = js.native
     
     /* protected */ def _linkConnectionTypes(inputIndex0: Double, inputIndex1: Double): Unit = js.native
     /* protected */ def _linkConnectionTypes(inputIndex0: Double, inputIndex1: Double, looseCoupling: Boolean): Unit = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
+    
+    /** @hidden */
+    val _originalTargetIsNeutral: Boolean = js.native
     
     /* protected */ def _outputRename(name: String): String = js.native
     
@@ -87,9 +102,9 @@ object nodeMaterialBlockMod {
     /** @hidden */
     var _preparationId: Double = js.native
     
-    /* private */ var _processBuild: js.Any = js.native
+    /* private */ var _processBuild: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* protected */ var _target: NodeMaterialBlockTargets = js.native
     
     /* protected */ def _writeFloat(value: Double): String = js.native
     
@@ -133,8 +148,8 @@ object nodeMaterialBlockMod {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a copy of the current block
       */
-    def clone(scene: Scene): Nullable[NodeMaterialBlock] = js.native
-    def clone(scene: Scene, rootUrl: String): Nullable[NodeMaterialBlock] = js.native
+    def clone(scene: Scene): NodeMaterialBlock | Null = js.native
+    def clone(scene: Scene, rootUrl: String): NodeMaterialBlock | Null = js.native
     
     /**
       * Gets or sets the comments associated with this block
@@ -145,6 +160,9 @@ object nodeMaterialBlockMod {
       * Connect current block with another block
       * @param other defines the block to connect with
       * @param options define the various options to help pick the right connections
+      * @param options.input
+      * @param options.output
+      * @param options.outputSwizzle
       * @returns the current block
       */
     def connectTo(other: NodeMaterialBlock): js.UndefOr[this.type] = js.native
@@ -166,37 +184,37 @@ object nodeMaterialBlockMod {
       * @param forOutput defines an optional connection point to check compatibility with
       * @returns the first available input or null
       */
-    def getFirstAvailableInput(): Nullable[NodeMaterialConnectionPoint] = js.native
-    def getFirstAvailableInput(forOutput: Nullable[NodeMaterialConnectionPoint]): Nullable[NodeMaterialConnectionPoint] = js.native
+    def getFirstAvailableInput(): NodeMaterialConnectionPoint | Null = js.native
+    def getFirstAvailableInput(forOutput: Nullable[NodeMaterialConnectionPoint]): NodeMaterialConnectionPoint | Null = js.native
     
     /**
       * Will return the first available output e.g. the first one which is not yet connected and not a varying
       * @param forBlock defines an optional block to check compatibility with
       * @returns the first available input or null
       */
-    def getFirstAvailableOutput(): Nullable[NodeMaterialConnectionPoint] = js.native
-    def getFirstAvailableOutput(forBlock: Nullable[NodeMaterialBlock]): Nullable[NodeMaterialConnectionPoint] = js.native
+    def getFirstAvailableOutput(): NodeMaterialConnectionPoint | Null = js.native
+    def getFirstAvailableOutput(forBlock: Nullable[NodeMaterialBlock]): NodeMaterialConnectionPoint | Null = js.native
     
     /**
       * Find an input by its name
       * @param name defines the name of the input to look for
       * @returns the input or null if not found
       */
-    def getInputByName(name: String): Nullable[NodeMaterialConnectionPoint] = js.native
+    def getInputByName(name: String): NodeMaterialConnectionPoint | Null = js.native
     
     /**
       * Find an output by its name
-      * @param name defines the name of the outputto look for
+      * @param name defines the name of the output to look for
       * @returns the output or null if not found
       */
-    def getOutputByName(name: String): Nullable[NodeMaterialConnectionPoint] = js.native
+    def getOutputByName(name: String): NodeMaterialConnectionPoint | Null = js.native
     
     /**
       * Gets the sibling of the given output
       * @param current defines the current output
       * @returns the next output in the list or null
       */
-    def getSiblingOutput(current: NodeMaterialConnectionPoint): Nullable[NodeMaterialConnectionPoint] = js.native
+    def getSiblingOutput(current: NodeMaterialConnectionPoint): NodeMaterialConnectionPoint | Null = js.native
     
     /**
       * Initialize the block and prepare the context for build
@@ -226,6 +244,13 @@ object nodeMaterialBlockMod {
     
     /** Gets or sets a boolean indicating that only one input can be connected at a time */
     var inputsAreExclusive: Boolean = js.native
+    
+    /**
+      * Checks if the current block is an ancestor of a given block
+      * @param block defines the potential descendant block to check
+      * @returns true if block is a descendant
+      */
+    def isAnAncestorOf(block: NodeMaterialBlock): Boolean = js.native
     
     /**
       * Gets a boolean indicating that this block is an end block (e.g. it is generating a system value)
@@ -400,7 +425,7 @@ object nodeMaterialBlockMod {
       * Serializes this block in a JSON representation
       * @returns the serialized block object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Gets or sets the target of the block
@@ -436,5 +461,11 @@ object nodeMaterialBlockMod {
     
     /** Gets or sets a boolean indicating that this input can be edited in the Inspector (false by default) */
     var visibleInInspector: Boolean = js.native
+    
+    /** Gets or sets a boolean indicating that this input can be edited from a collapsed frame */
+    var visibleOnFrame: Boolean = js.native
+    
+    /** Gets a boolean indicating that the code of this block will be promoted to vertex shader even if connected to fragment output */
+    def willBeGeneratedIntoVertexShaderFromFragmentShader: Boolean = js.native
   }
 }

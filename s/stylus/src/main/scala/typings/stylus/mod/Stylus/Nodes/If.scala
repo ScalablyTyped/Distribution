@@ -50,7 +50,7 @@ object If {
     
     inline def setElses(value: js.Array[Expression]): Self = StObject.set(x, "elses", value.asInstanceOf[js.Any])
     
-    inline def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value :_*))
+    inline def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value*))
     
     inline def setNegate(value: scala.Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
   }

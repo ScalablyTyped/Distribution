@@ -1,10 +1,10 @@
 package typings.xstate.typesMod
 
-import typings.xstate.anon.ContextAny
-import typings.xstate.anon.ContextTContext
-import typings.xstate.anon.`0`
-import typings.xstate.anon.`1`
+import typings.xstate.anon.Context
+import typings.xstate.anon.`3`
+import typings.xstate.anon.`4`
 import typings.xstate.stateNodeMod.StateNode
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import typings.xstate.xstateStrings.`final`
 import typings.xstate.xstateStrings.atomic
 import typings.xstate.xstateStrings.compound
@@ -16,13 +16,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */]
-  extends StObject
-     with SimpleOrStateNodeConfig[TContext, TStateSchema, TEvent] {
+trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */] extends StObject {
   
   /**
     * The activities to be started upon entering the state node,
     * and stopped upon exiting the state node.
+    *
+    * @deprecated Use `invoke` instead.
     */
   var activities: js.UndefOr[SingleOrArray[Activity[TContext, TEvent]]] = js.undefined
   
@@ -39,19 +39,12 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEven
   var always: js.UndefOr[TransitionConfigOrTarget[TContext, TEvent]] = js.undefined
   
   /**
-    * The initial context (extended state) of the machine.
-    *
-    * Can be an object or a function that returns an object.
-    */
-  var context: js.UndefOr[TContext | js.Function0[TContext]] = js.undefined
-  
-  /**
     * The data sent with the "done.state._id_" event if this is a final state node.
     *
     * The data will be evaluated with the current `context` and placed on the `.data` property
     * of the event.
     */
-  var data: js.UndefOr[(Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])] = js.undefined
+  var data: js.UndefOr[(Mapper[TContext, TEvent, Any]) | (PropertyMapper[TContext, TEvent, Any])] = js.undefined
   
   /**
     * The string delimiter for serializing the path to a string. The default is "."
@@ -59,14 +52,19 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEven
   var delimiter: js.UndefOr[String] = js.undefined
   
   /**
+    * A text description of the state node
+    */
+  var description: js.UndefOr[String] = js.undefined
+  
+  /**
     * The action(s) to be executed upon entering the state node.
     */
-  var entry: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
+  var entry: js.UndefOr[BaseActions[TContext, TEvent, TAction]] = js.undefined
   
   /**
     * The action(s) to be executed upon exiting the state node.
     */
-  var exit: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
+  var exit: js.UndefOr[BaseActions[TContext, TEvent, TAction]] = js.undefined
   
   /**
     * Indicates whether the state node is a history state node, and what
@@ -91,11 +89,7 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEven
   /**
     * The services to invoke upon entering this state node. These services will be stopped upon exiting this state node.
     */
-  var invoke: js.UndefOr[
-    SingleOrArray[
-      (InvokeConfig[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any, ContextAny])
-    ]
-  ] = js.undefined
+  var invoke: js.UndefOr[SingleOrArray[(InvokeConfig[TContext, TEvent]) | AnyStateMachine]] = js.undefined
   
   /**
     * The relative key of the state node, which represents its location in the overall state value.
@@ -106,7 +100,7 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEven
   /**
     * The meta data associated with this state node, which will be returned in State instances.
     */
-  var meta: js.UndefOr[js.Any] = js.undefined
+  var meta: js.UndefOr[Any] = js.undefined
   
   /**
     * The mapping of event types to their potential transition(s).
@@ -147,14 +141,34 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEven
   /**
     * @private
     */
-  var parent: js.UndefOr[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]] = js.undefined
+  var parent: js.UndefOr[StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled]] = js.undefined
+  
+  /**
+    * Whether XState calls actions with the event directly responsible for the related transition.
+    *
+    * @default false
+    */
+  var predictableActionArguments: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether actions should be called in order.
+    * When `false` (default), `assign(...)` actions are prioritized before other actions.
+    *
+    * @default false
+    */
+  var preserveActionOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The mapping of state node keys to their state node configurations (recursive).
     */
-  var states: js.UndefOr[StatesConfig[TContext, TStateSchema, TEvent]] = js.undefined
+  var states: js.UndefOr[StatesConfig[TContext, TStateSchema, TEvent, TAction]] = js.undefined
   
   var strict: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The tags for this state node, which are accumulated into the `state.tags` property.
+    */
+  var tags: js.UndefOr[SingleOrArray[String]] = js.undefined
   
   /**
     * The type of this state node:
@@ -169,40 +183,34 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEven
 }
 object StateNodeConfig {
   
-  inline def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](): StateNodeConfig[TContext, TStateSchema, TEvent] = {
+  inline def apply[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */](): StateNodeConfig[TContext, TStateSchema, TEvent, TAction] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[StateNodeConfig[TContext, TStateSchema, TEvent]]
+    __obj.asInstanceOf[StateNodeConfig[TContext, TStateSchema, TEvent, TAction]]
   }
   
-  extension [Self <: StateNodeConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](x: Self & (StateNodeConfig[TContext, TStateSchema, TEvent])) {
+  extension [Self <: StateNodeConfig[?, ?, ?, ?], TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */](x: Self & (StateNodeConfig[TContext, TStateSchema, TEvent, TAction])) {
     
     inline def setActivities(value: SingleOrArray[Activity[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
     inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    inline def setActivitiesVarargs(value: (Activity[TContext, TEvent])*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: (Activity[TContext, TEvent])*): Self = StObject.set(x, "activities", js.Array(value*))
     
     inline def setAfter(value: DelayedTransitions[TContext, TEvent]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    inline def setAfterVarargs(value: ((TransitionConfig[TContext, TEvent]) & (typings.xstate.anon.Delay[TContext, TEvent]))*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: ((TransitionConfig[TContext, TEvent]) & (typings.xstate.anon.Delay[TContext, TEvent]))*): Self = StObject.set(x, "after", js.Array(value*))
     
     inline def setAlways(value: TransitionConfigOrTarget[TContext, TEvent]): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
     
     inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
     
-    inline def setAlwaysVarargs(value: ((TransitionConfigTarget[TContext, TEvent]) | (TransitionConfig[TContext, TEvent]))*): Self = StObject.set(x, "always", js.Array(value :_*))
+    inline def setAlwaysVarargs(value: ((TransitionConfigTarget[TContext, TEvent]) | (TransitionConfig[TContext, TEvent]))*): Self = StObject.set(x, "always", js.Array(value*))
     
-    inline def setContext(value: TContext | js.Function0[TContext]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setData(value: (Mapper[TContext, TEvent, Any]) | (PropertyMapper[TContext, TEvent, Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setContextFunction0(value: () => TContext): Self = StObject.set(x, "context", js.Any.fromFunction0(value))
-    
-    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-    
-    inline def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    inline def setDataFunction2(value: (TContext, TEvent) => Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -210,21 +218,25 @@ object StateNodeConfig {
     
     inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    inline def setEntry(value: Actions[TContext, TEvent]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setEntryFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "entry", js.Any.fromFunction3(value))
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEntry(value: BaseActions[TContext, TEvent, TAction]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    
+    inline def setEntryFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent, BaseActionObject]) => Unit): Self = StObject.set(x, "entry", js.Any.fromFunction3(value))
     
     inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
     
-    inline def setEntryVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "entry", js.Array(value :_*))
+    inline def setEntryVarargs(value: (BaseAction[TContext, TEvent, TAction])*): Self = StObject.set(x, "entry", js.Array(value*))
     
-    inline def setExit(value: Actions[TContext, TEvent]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: BaseActions[TContext, TEvent, TAction]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
-    inline def setExitFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
+    inline def setExitFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent, BaseActionObject]) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
     
     inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
-    inline def setExitVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "exit", js.Array(value :_*))
+    inline def setExitVarargs(value: (BaseAction[TContext, TEvent, TAction])*): Self = StObject.set(x, "exit", js.Array(value*))
     
     inline def setHistory(value: shallow | deep | Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
@@ -240,21 +252,17 @@ object StateNodeConfig {
     
     inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
-    inline def setInvoke(
-      value: SingleOrArray[
-          (InvokeConfig[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any, ContextAny])
-        ]
-    ): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+    inline def setInvoke(value: SingleOrArray[(InvokeConfig[TContext, TEvent]) | AnyStateMachine]): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     
     inline def setInvokeUndefined: Self = StObject.set(x, "invoke", js.undefined)
     
-    inline def setInvokeVarargs(value: ((InvokeConfig[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any, ContextAny]))*): Self = StObject.set(x, "invoke", js.Array(value :_*))
+    inline def setInvokeVarargs(value: ((InvokeConfig[TContext, TEvent]) | AnyStateMachine)*): Self = StObject.set(x, "invoke", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
@@ -264,29 +272,29 @@ object StateNodeConfig {
     
     inline def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
     
-    inline def setOnDoneVarargs(value: (TransitionConfig[TContext, DoneEventObject])*): Self = StObject.set(x, "onDone", js.Array(value :_*))
+    inline def setOnDoneVarargs(value: (TransitionConfig[TContext, DoneEventObject])*): Self = StObject.set(x, "onDone", js.Array(value*))
     
     inline def setOnEntry(value: Actions[TContext, TEvent]): Self = StObject.set(x, "onEntry", value.asInstanceOf[js.Any])
     
-    inline def setOnEntryFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "onEntry", js.Any.fromFunction3(value))
+    inline def setOnEntryFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent, BaseActionObject]) => Unit): Self = StObject.set(x, "onEntry", js.Any.fromFunction3(value))
     
     inline def setOnEntryUndefined: Self = StObject.set(x, "onEntry", js.undefined)
     
-    inline def setOnEntryVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onEntry", js.Array(value :_*))
+    inline def setOnEntryVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onEntry", js.Array(value*))
     
     inline def setOnExit(value: Actions[TContext, TEvent]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
-    inline def setOnExitFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction3(value))
+    inline def setOnExitFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent, BaseActionObject]) => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction3(value))
     
     inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    inline def setOnExitVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onExit", js.Array(value :_*))
+    inline def setOnExitVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onExit", js.Array(value*))
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     inline def setOnVarargs(
-      value: (((TransitionConfig[TContext, TEvent]) & typings.xstate.anon.Event[TEvent]) | ((TransitionConfig[TContext, TEvent]) & `0`) | ((TransitionConfig[TContext, TEvent]) & `1`))*
-    ): Self = StObject.set(x, "on", js.Array(value :_*))
+      value: (((TransitionConfig[TContext, TEvent]) & typings.xstate.anon.Event[TEvent]) | ((TransitionConfig[TContext, TEvent]) & `3`) | ((TransitionConfig[TContext, TEvent]) & `4`))*
+    ): Self = StObject.set(x, "on", js.Array(value*))
     
     inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
@@ -296,17 +304,31 @@ object StateNodeConfig {
     
     inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
     
-    inline def setParent(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    inline def setStates(value: StatesConfig[TContext, TStateSchema, TEvent]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setPredictableActionArguments(value: Boolean): Self = StObject.set(x, "predictableActionArguments", value.asInstanceOf[js.Any])
+    
+    inline def setPredictableActionArgumentsUndefined: Self = StObject.set(x, "predictableActionArguments", js.undefined)
+    
+    inline def setPreserveActionOrder(value: Boolean): Self = StObject.set(x, "preserveActionOrder", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveActionOrderUndefined: Self = StObject.set(x, "preserveActionOrder", js.undefined)
+    
+    inline def setStates(value: StatesConfig[TContext, TStateSchema, TEvent, TAction]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    
+    inline def setTags(value: SingleOrArray[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setType(value: atomic | compound | parallel | `final` | history): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

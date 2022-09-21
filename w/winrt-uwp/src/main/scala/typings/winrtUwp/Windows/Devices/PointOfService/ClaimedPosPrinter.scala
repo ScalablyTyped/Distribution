@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClaimedPosPrinter extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_releasedevicerequested(
     `type`: releasedevicerequested,
@@ -67,7 +67,7 @@ trait ClaimedPosPrinter extends StObject {
   /** Gets an object that represents the receipt station for a claimed point-of-service printer. */
   var receipt: ClaimedReceiptPrinter = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_releasedevicerequested(
     `type`: releasedevicerequested,
@@ -95,5 +95,5 @@ trait ClaimedPosPrinter extends StObject {
     * @param statistics The statistics to update.
     * @return An operation that returns true if the update succeeds, or otherwise returns false.
     */
-  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def updateStatisticsAsync(statistics: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncOperation[Boolean] = js.native
 }

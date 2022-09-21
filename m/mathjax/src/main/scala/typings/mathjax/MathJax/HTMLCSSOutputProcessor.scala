@@ -84,7 +84,7 @@ trait HTMLCSSOutputProcessor extends StObject {
     * for some examples of what are defined by default. See CSS Style Objects for details on how to specify CSS
     * style in a JavaScript object.
     */
-  var styles: js.UndefOr[js.Any] = js.undefined
+  var styles: js.UndefOr[Any] = js.undefined
   
   /*This sets the configuration options for <maction> elements with actiontype="tooltip". (See also the
     * #MathJax_Tooltip style setting in jax/output/SVG/config.js, which can be overridden using the styles option
@@ -123,7 +123,7 @@ object HTMLCSSOutputProcessor {
     
     inline def setAvailableFontsUndefined: Self = StObject.set(x, "availableFonts", js.undefined)
     
-    inline def setAvailableFontsVarargs(value: String*): Self = StObject.set(x, "availableFonts", js.Array(value :_*))
+    inline def setAvailableFontsVarargs(value: String*): Self = StObject.set(x, "availableFonts", js.Array(value*))
     
     inline def setEqnChunk(value: Double): Self = StObject.set(x, "EqnChunk", value.asInstanceOf[js.Any])
     
@@ -169,7 +169,7 @@ object HTMLCSSOutputProcessor {
     
     inline def setShowMathMenuUndefined: Self = StObject.set(x, "showMathMenu", js.undefined)
     
-    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
@@ -181,7 +181,7 @@ object HTMLCSSOutputProcessor {
     
     inline def setUndefinedFamilyUndefined: Self = StObject.set(x, "undefinedFamily", js.undefined)
     
-    inline def setUndefinedFamilyVarargs(value: String*): Self = StObject.set(x, "undefinedFamily", js.Array(value :_*))
+    inline def setUndefinedFamilyVarargs(value: String*): Self = StObject.set(x, "undefinedFamily", js.Array(value*))
     
     inline def setWebFont(value: String): Self = StObject.set(x, "webFont", value.asInstanceOf[js.Any])
     

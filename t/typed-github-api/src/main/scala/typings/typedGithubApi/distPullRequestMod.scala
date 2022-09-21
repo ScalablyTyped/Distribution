@@ -29,7 +29,7 @@ object distPullRequestMod {
   
   @JSImport("typed-github-api/dist/pull-request", "PullRequestClass")
   @js.native
-  class PullRequestClass protected ()
+  open class PullRequestClass protected ()
     extends GitHubRef
        with PullRequest {
     def this(data: typings.typedGithubApi.pullRequestMod.PullRequest, options: OptionsOrRef) = this()
@@ -61,7 +61,7 @@ object distPullRequestMod {
     /* CompleteClass */
     var id: Double = js.native
     
-    /* private */ var issueUri: js.Any = js.native
+    /* private */ var issueUri: Any = js.native
     
     /* CompleteClass */
     override def loadAsync(): js.Promise[PullRequest | Null] = js.native
@@ -87,7 +87,7 @@ object distPullRequestMod {
     /* CompleteClass */
     override val number: Double = js.native
     
-    /* private */ var reviewCommentsUri: js.Any = js.native
+    /* private */ var reviewCommentsUri: Any = js.native
     
     /* CompleteClass */
     var state: open | closed = js.native
@@ -101,7 +101,7 @@ object distPullRequestMod {
   
   @JSImport("typed-github-api/dist/pull-request", "ReviewClass")
   @js.native
-  class ReviewClass protected ()
+  open class ReviewClass protected ()
     extends GitHubRef
        with Review {
     def this(data: typings.typedGithubApi.pullRequestMod.Review, options: OptionsOrRef) = this()
@@ -129,7 +129,7 @@ object distPullRequestMod {
   - typings.typedGithubApi.interfacesIssueMod.IssueComment because Already inherited
   - typings.typedGithubApi.interfacesPullRequestMod.ReviewComment because var conflicts: body, createdAt, createdBy, htmlUri, id, updatedAt. Inlined diffHunk, position */ @JSImport("typed-github-api/dist/pull-request", "ReviewCommentClass")
   @js.native
-  class ReviewCommentClass protected () extends IssueCommentClass {
+  open class ReviewCommentClass protected () extends IssueCommentClass {
     def this(data: typings.typedGithubApi.pullRequestMod.ReviewComment, options: OptionsOrRef) = this()
     
     var diffHunk: String = js.native
@@ -139,7 +139,7 @@ object distPullRequestMod {
   
   @JSImport("typed-github-api/dist/pull-request", "TeamClass")
   @js.native
-  class TeamClass protected ()
+  open class TeamClass protected ()
     extends GitHubRef
        with Team {
     def this(data: typings.typedGithubApi.teamMod.Team, options: OptionsOrRef) = this()

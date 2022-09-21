@@ -4,23 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for a language entry.
-  */
 trait SchemaUserLanguage extends StObject {
   
   /**
-    * Other language. User can provide own language name if there is no
-    * corresponding Google III language code. If this is set LanguageCode
-    * can&#39;t be set
+    * Other language. User can provide their own language name if there is no corresponding ISO 639 language code. If this is set, `languageCode` can't be set.
     */
-  var customLanguage: js.UndefOr[String] = js.undefined
+  var customLanguage: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Language Code. Should be used for storing Google III LanguageCode string
-    * representation for language. Illegal values cause SchemaException.
+    * ISO 639 string representation of a language. See [Language Codes](/admin-sdk/directory/v1/languages) for the list of supported codes. Valid language codes outside the supported set will be accepted by the API but may lead to unexpected behavior. Illegal values cause `SchemaException`. If this is set, `customLanguage` can't be set.
     */
-  var languageCode: js.UndefOr[String] = js.undefined
+  var languageCode: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Optional. If present, controls whether the specified `languageCode` is the user's preferred language. If `customLanguage` is set, this can't be set. Allowed values are `preferred` and `not_preferred`.
+    */
+  var preference: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUserLanguage {
   
@@ -33,10 +32,20 @@ object SchemaUserLanguage {
     
     inline def setCustomLanguage(value: String): Self = StObject.set(x, "customLanguage", value.asInstanceOf[js.Any])
     
+    inline def setCustomLanguageNull: Self = StObject.set(x, "customLanguage", null)
+    
     inline def setCustomLanguageUndefined: Self = StObject.set(x, "customLanguage", js.undefined)
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    
+    inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    
+    inline def setPreferenceNull: Self = StObject.set(x, "preference", null)
+    
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
   }
 }

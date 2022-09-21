@@ -17,12 +17,12 @@ trait CreateDBClusterEndpointMessage extends StObject {
   var DBClusterIdentifier: String
   
   /**
-    * The type of the endpoint. One of: READER, WRITER, ANY.
+    * The type of the endpoint, one of: READER, WRITER, ANY.
     */
   var EndpointType: String
   
   /**
-    * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty.
+    * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. This parameter is relevant only if the list of static members is empty.
     */
   var ExcludedMembers: js.UndefOr[StringList] = js.undefined
   
@@ -55,18 +55,18 @@ object CreateDBClusterEndpointMessage {
     
     inline def setExcludedMembersUndefined: Self = StObject.set(x, "ExcludedMembers", js.undefined)
     
-    inline def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value :_*))
+    inline def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value*))
     
     inline def setStaticMembers(value: StringList): Self = StObject.set(x, "StaticMembers", value.asInstanceOf[js.Any])
     
     inline def setStaticMembersUndefined: Self = StObject.set(x, "StaticMembers", js.undefined)
     
-    inline def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value :_*))
+    inline def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ object repositoryNameRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/RepositoryNameRequiredException", "RepositoryNameRequiredException")
   @js.native
-  val RepositoryNameRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RepositoryNameRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

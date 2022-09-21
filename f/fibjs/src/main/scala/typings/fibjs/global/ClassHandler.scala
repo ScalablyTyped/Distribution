@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_Handler")
 @js.native
-class ClassHandler protected ()
+open class ClassHandler protected ()
   extends StObject
      with typings.fibjs.ClassHandler {
   /**
@@ -31,7 +31,7 @@ class ClassHandler protected ()
     * 
     * 
     */
-  def this(hdlrs: js.Array[js.Any]) = this()
+  def this(hdlrs: js.Array[Any]) = this()
   /**
     * 
     * @brief 创建一个消息处理器路由对象

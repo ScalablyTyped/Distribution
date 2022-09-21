@@ -2,7 +2,6 @@ package typings.gulpHtmlReplace
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,13 +29,17 @@ object mod extends Shortcut {
       
       inline def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value*))
       
       inline def setTpl(value: String): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     }
   }
   
-  type HtmlReplace = js.Function2[/* tasks */ Tasks, /* options */ js.UndefOr[Options], ReadWriteStream]
+  type HtmlReplace = js.Function2[
+    /* tasks */ Tasks, 
+    /* options */ js.UndefOr[Options], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
   
   trait Options extends StObject {
     

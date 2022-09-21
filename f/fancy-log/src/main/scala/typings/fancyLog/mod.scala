@@ -17,15 +17,15 @@ object mod extends Shortcut {
     @js.native
     trait Logger extends StObject {
       
-      def apply(args: js.Any*): Logger = js.native
+      def apply(args: Any*): Logger = js.native
       
-      def dir(args: js.Any*): Logger = js.native
+      def dir(args: Any*): Logger = js.native
       
-      def error(args: js.Any*): Logger = js.native
+      def error(args: Any*): Logger = js.native
       
-      def info(args: js.Any*): Logger = js.native
+      def info(args: Any*): Logger = js.native
       
-      def warn(args: js.Any*): Logger = js.native
+      def warn(args: Any*): Logger = js.native
     }
   }
   

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Neurons are the basic unit of the neural network. They can be connected together, or used to gate connections between other neurons.
   */
-class Neuron () extends StObject {
+open class Neuron () extends StObject {
   
   /**
     * When a neuron activates, it computes its state from all its input connections and squashes it using its activation function, and returns the output (activation).
@@ -39,7 +39,7 @@ class Neuron () extends StObject {
     * @param neuron
     */
   def connected(): Connection | Boolean = js.native
-  def connected(neuron: js.Any): Connection | Boolean = js.native
+  def connected(neuron: Any): Connection | Boolean = js.native
   
   /**
     * A neuron can gate a connection between two neurons, or a neuron's self-connection. This allows you to create second order neural network architectures.
@@ -51,9 +51,9 @@ class Neuron () extends StObject {
     * Hardcodes the behavior of the neuron into an optimized function.
     */
   def optimize(): Activationsentences = js.native
-  def optimize(optimized: js.Any): Activationsentences = js.native
-  def optimize(optimized: js.Any, layer: js.Any): Activationsentences = js.native
-  def optimize(optimized: Unit, layer: js.Any): Activationsentences = js.native
+  def optimize(optimized: Any): Activationsentences = js.native
+  def optimize(optimized: Any, layer: Any): Activationsentences = js.native
+  def optimize(optimized: Unit, layer: Any): Activationsentences = js.native
   
   /**
     * A neuron can project a connection to another neuron. Neurons can also self-connect.
@@ -99,7 +99,7 @@ object Neuron {
   
   @JSImport("synaptic", "Neuron.Connection")
   @js.native
-  class Connection_ protected () extends StObject {
+  open class Connection_ protected () extends StObject {
     def this(from: Double, to: Double) = this()
     def this(from: Double, to: Double, weight: Double) = this()
     
@@ -128,7 +128,7 @@ object Neuron {
   /* was `typeof Connection` */
   @JSImport("synaptic", "Neuron.connection")
   @js.native
-  class connection protected () extends Connection_ {
+  open class connection protected () extends Connection_ {
     def this(from: Double, to: Double) = this()
     def this(from: Double, to: Double, weight: Double) = this()
   }

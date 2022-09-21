@@ -11,9 +11,9 @@ Simple SMTP server module to create custom SMTP servers
 | Full name          | simplesmtp |
 | Keywords           | servers, text-based, smtp, email, mail, e-mail |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 1163122 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 63509.666666666664 |
+| # stars            | 395.0 |
 
 ## Links
 - [Homepage](https://github.com/andris9/simplesmtp)

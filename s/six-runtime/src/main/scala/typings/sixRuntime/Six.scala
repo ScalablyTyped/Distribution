@@ -16,8 +16,6 @@ import typings.sixRuntime.Six.plugins.upm.upmConf
 import typings.sixRuntime.Six.plugins.upm.upmFactory
 import typings.sixRuntime.Six.plugins.view.render
 import typings.sixRuntime.Six.plugins.view.runtimeConf
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,12 +49,12 @@ trait Six extends StObject {
   /**
     * 执行某个data-provider，并返回执行之后的值
     */
-  def dp(name: String): js.Any
+  def dp(name: String): Any
   
   /**
     * 针对这次请求生效的数据缓存 get
     */
-  def get(key: String): js.Any
+  def get(key: String): Any
   
   /**
     * 发送请求的工具方法，会将用户的cookie和traceId透传过去
@@ -76,11 +74,11 @@ trait Six extends StObject {
   /**
     * 渲染函数
     */
-  def render(name: String): js.Promise[js.Any]
-  def render(name: String, runtimeConf: Null, data: js.Object): js.Promise[js.Any]
-  def render(name: String, runtimeConf: Unit, data: js.Object): js.Promise[js.Any]
-  def render(name: String, runtimeConf: runtimeConf): js.Promise[js.Any]
-  def render(name: String, runtimeConf: runtimeConf, data: js.Object): js.Promise[js.Any]
+  def render(name: String): js.Promise[Any]
+  def render(name: String, runtimeConf: Null, data: js.Object): js.Promise[Any]
+  def render(name: String, runtimeConf: Unit, data: js.Object): js.Promise[Any]
+  def render(name: String, runtimeConf: runtimeConf): js.Promise[Any]
+  def render(name: String, runtimeConf: runtimeConf, data: js.Object): js.Promise[Any]
   /**
     * 渲染函数
     */
@@ -100,7 +98,7 @@ trait Six extends StObject {
   /**
     * 针对这次请求生效的数据缓存 set
     */
-  def set(key: String, value: js.Any): Unit
+  def set(key: String, value: Any): Unit
   
   /**
     * 时间统计工具
@@ -114,14 +112,14 @@ object Six {
     ENV: String,
     NODE_ENV: String,
     ROOT_PATH: String,
-    dp: String => js.Any,
-    get: String => js.Any,
+    dp: String => Any,
+    get: String => Any,
     http: http,
     log: log,
     plugins: PluginsMap,
-    render: (/* name */ String, /* runtimeConf */ js.UndefOr[runtimeConf | Null], /* data */ js.UndefOr[js.Object]) => js.Promise[js.Any],
+    render: (/* name */ String, /* runtimeConf */ js.UndefOr[runtimeConf | Null], /* data */ js.UndefOr[js.Object]) => js.Promise[Any],
     rpc: /* config */ js.Object => js.Object,
-    set: (String, js.Any) => Unit,
+    set: (String, Any) => Unit,
     time: timmer
   ): Six = {
     val __obj = js.Dynamic.literal(DataProvider = DataProvider.asInstanceOf[js.Any], ENV = ENV.asInstanceOf[js.Any], NODE_ENV = NODE_ENV.asInstanceOf[js.Any], ROOT_PATH = ROOT_PATH.asInstanceOf[js.Any], dp = js.Any.fromFunction1(dp), get = js.Any.fromFunction1(get), http = http.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], render = js.Any.fromFunction3(render), rpc = js.Any.fromFunction1(rpc), set = js.Any.fromFunction2(set), time = time.asInstanceOf[js.Any])
@@ -130,7 +128,7 @@ object Six {
   
   trait PluginsMap extends StObject {
     
-    def sso(conf: ssoConf): js.Any
+    def sso(conf: ssoConf): Any
     @JSName("sso")
     var sso_Original: ssoFactory
     
@@ -138,21 +136,21 @@ object Six {
     @JSName("static")
     var static_Original: staticFactory
     
-    def uac(conf: uacConf): js.Any
+    def uac(conf: uacConf): Any
     @JSName("uac")
     var uac_Original: uacFactory
     
-    def upm(conf: upmConf): js.Any
+    def upm(conf: upmConf): Any
     @JSName("upm")
     var upm_Original: upmFactory
   }
   object PluginsMap {
     
     inline def apply(
-      sso: /* conf */ ssoConf => js.Any,
+      sso: /* conf */ ssoConf => Any,
       static: /* conf */ staticConf => middleware,
-      uac: /* conf */ uacConf => js.Any,
-      upm: /* conf */ upmConf => js.Any
+      uac: /* conf */ uacConf => Any,
+      upm: /* conf */ upmConf => Any
     ): PluginsMap = {
       val __obj = js.Dynamic.literal(sso = js.Any.fromFunction1(sso), static = js.Any.fromFunction1(static), uac = js.Any.fromFunction1(uac), upm = js.Any.fromFunction1(upm))
       __obj.asInstanceOf[PluginsMap]
@@ -160,13 +158,13 @@ object Six {
     
     extension [Self <: PluginsMap](x: Self) {
       
-      inline def setSso(value: /* conf */ ssoConf => js.Any): Self = StObject.set(x, "sso", js.Any.fromFunction1(value))
+      inline def setSso(value: /* conf */ ssoConf => Any): Self = StObject.set(x, "sso", js.Any.fromFunction1(value))
       
       inline def setStatic(value: /* conf */ staticConf => middleware): Self = StObject.set(x, "static", js.Any.fromFunction1(value))
       
-      inline def setUac(value: /* conf */ uacConf => js.Any): Self = StObject.set(x, "uac", js.Any.fromFunction1(value))
+      inline def setUac(value: /* conf */ uacConf => Any): Self = StObject.set(x, "uac", js.Any.fromFunction1(value))
       
-      inline def setUpm(value: /* conf */ upmConf => js.Any): Self = StObject.set(x, "upm", js.Any.fromFunction1(value))
+      inline def setUpm(value: /* conf */ upmConf => Any): Self = StObject.set(x, "upm", js.Any.fromFunction1(value))
     }
   }
   
@@ -174,11 +172,11 @@ object Six {
     
     inline def setDataProvider(value: DataProvider): Self = StObject.set(x, "DataProvider", value.asInstanceOf[js.Any])
     
-    inline def setDp(value: String => js.Any): Self = StObject.set(x, "dp", js.Any.fromFunction1(value))
+    inline def setDp(value: String => Any): Self = StObject.set(x, "dp", js.Any.fromFunction1(value))
     
     inline def setENV(value: String): Self = StObject.set(x, "ENV", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setHttp(value: http): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
@@ -191,19 +189,19 @@ object Six {
     inline def setROOT_PATH(value: String): Self = StObject.set(x, "ROOT_PATH", value.asInstanceOf[js.Any])
     
     inline def setRender(
-      value: (/* name */ String, /* runtimeConf */ js.UndefOr[runtimeConf | Null], /* data */ js.UndefOr[js.Object]) => js.Promise[js.Any]
+      value: (/* name */ String, /* runtimeConf */ js.UndefOr[runtimeConf | Null], /* data */ js.UndefOr[js.Object]) => js.Promise[Any]
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     inline def setRpc(value: /* config */ js.Object => js.Object): Self = StObject.set(x, "rpc", js.Any.fromFunction1(value))
     
-    inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     inline def setTime(value: timmer): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
   
-  type middleware = js.Function2[/* ctx */ js.Object, /* next */ next, js.Any]
+  type middleware = js.Function2[/* ctx */ js.Object, /* next */ next, Any]
   
-  type next = js.Function0[js.Any]
+  type next = js.Function0[Any]
   
   object plugins {
     
@@ -211,22 +209,22 @@ object Six {
       
       trait DataProvider extends StObject {
         
-        def execute(ctx: js.Object, args: js.Any): js.Any
+        def execute(ctx: js.Object, args: Any): Any
         
-        def prepare(ctx: js.Object, depsRes: js.Object): js.Any
+        def prepare(ctx: js.Object, depsRes: js.Object): Any
       }
       object DataProvider {
         
-        inline def apply(execute: (js.Object, js.Any) => js.Any, prepare: (js.Object, js.Object) => js.Any): DataProvider = {
+        inline def apply(execute: (js.Object, Any) => Any, prepare: (js.Object, js.Object) => Any): DataProvider = {
           val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), prepare = js.Any.fromFunction2(prepare))
           __obj.asInstanceOf[DataProvider]
         }
         
         extension [Self <: DataProvider](x: Self) {
           
-          inline def setExecute(value: (js.Object, js.Any) => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
+          inline def setExecute(value: (js.Object, Any) => Any): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
           
-          inline def setPrepare(value: (js.Object, js.Object) => js.Any): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
+          inline def setPrepare(value: (js.Object, js.Object) => Any): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
         }
       }
     }
@@ -234,38 +232,38 @@ object Six {
     @js.native
     trait http extends StObject {
       
-      def del(url: js.Any): js.Promise[js.Any] = js.native
-      def del(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
+      def del(url: Any): js.Promise[Any] = js.native
+      def del(url: Any, options: js.Object): js.Promise[Any] = js.native
       
-      def get(url: js.Any): js.Promise[js.Any] = js.native
-      def get(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
+      def get(url: Any): js.Promise[Any] = js.native
+      def get(url: Any, options: js.Object): js.Promise[Any] = js.native
       
-      def head(url: js.Any): js.Promise[js.Any] = js.native
-      def head(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
+      def head(url: Any): js.Promise[Any] = js.native
+      def head(url: Any, options: js.Object): js.Promise[Any] = js.native
       
-      def patch(url: js.Any): js.Promise[js.Any] = js.native
-      def patch(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
+      def patch(url: Any): js.Promise[Any] = js.native
+      def patch(url: Any, options: js.Object): js.Promise[Any] = js.native
       
-      def post(url: js.Any): js.Promise[js.Any] = js.native
-      def post(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
+      def post(url: Any): js.Promise[Any] = js.native
+      def post(url: Any, options: js.Object): js.Promise[Any] = js.native
       
       def proxy(options: js.Object): middleware = js.native
       
-      def put(url: js.Any): js.Promise[js.Any] = js.native
-      def put(url: js.Any, options: js.Object): js.Promise[js.Any] = js.native
+      def put(url: Any): js.Promise[Any] = js.native
+      def put(url: Any, options: js.Object): js.Promise[Any] = js.native
     }
     
     @js.native
     trait log extends StObject {
       
-      def debug(msg: String, restOfVar: js.Any*): Unit = js.native
+      def debug(msg: String, restOfVar: Any*): Unit = js.native
       
-      def error(msg: String, restOfVar: js.Any*): Unit = js.native
-      def error(msg: Error, restOfVar: js.Any*): Unit = js.native
+      def error(msg: String, restOfVar: Any*): Unit = js.native
+      def error(msg: js.Error, restOfVar: Any*): Unit = js.native
       
-      def info(msg: String, restOfVar: js.Any*): Unit = js.native
+      def info(msg: String, restOfVar: Any*): Unit = js.native
       
-      def warn(msg: String, restOfVar: js.Any*): Unit = js.native
+      def warn(msg: String, restOfVar: Any*): Unit = js.native
     }
     
     type rpc = js.Function1[/* config */ js.Object, js.Object]
@@ -280,7 +278,7 @@ object Six {
         
         var env: String
         
-        def errorHook(error: Error): Unit
+        def errorHook(error: js.Error): Unit
         
         var protocol: String
         
@@ -294,7 +292,7 @@ object Six {
           callbackUrl: String,
           clientId: String,
           env: String,
-          errorHook: Error => Unit,
+          errorHook: js.Error => Unit,
           protocol: String,
           secret: String,
           token: token
@@ -311,7 +309,7 @@ object Six {
           
           inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
           
-          inline def setErrorHook(value: Error => Unit): Self = StObject.set(x, "errorHook", js.Any.fromFunction1(value))
+          inline def setErrorHook(value: js.Error => Unit): Self = StObject.set(x, "errorHook", js.Any.fromFunction1(value))
           
           inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
           
@@ -331,7 +329,7 @@ object Six {
         
         var ssoConf: ssoClientConf
         
-        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
+        var whiteList: String | js.RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
       }
       object ssoConf {
         
@@ -340,7 +338,7 @@ object Six {
           enableCache: Boolean,
           hasLoginCacheMaxAge: Double,
           ssoConf: ssoClientConf,
-          whiteList: String | RegExp | js.Array[String] | whiteList
+          whiteList: String | js.RegExp | js.Array[String] | whiteList
         ): ssoConf = {
           val __obj = js.Dynamic.literal(adapter = js.Any.fromFunction1(adapter), enableCache = enableCache.asInstanceOf[js.Any], hasLoginCacheMaxAge = hasLoginCacheMaxAge.asInstanceOf[js.Any], ssoConf = ssoConf.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
           __obj.asInstanceOf[ssoConf]
@@ -356,15 +354,15 @@ object Six {
           
           inline def setSsoConf(value: ssoClientConf): Self = StObject.set(x, "ssoConf", value.asInstanceOf[js.Any])
           
-          inline def setWhiteList(value: String | RegExp | js.Array[String] | whiteList): Self = StObject.set(x, "whiteList", value.asInstanceOf[js.Any])
+          inline def setWhiteList(value: String | js.RegExp | js.Array[String] | whiteList): Self = StObject.set(x, "whiteList", value.asInstanceOf[js.Any])
           
           inline def setWhiteListFunction1(value: /* ctx */ js.Object => Boolean): Self = StObject.set(x, "whiteList", js.Any.fromFunction1(value))
           
-          inline def setWhiteListVarargs(value: String*): Self = StObject.set(x, "whiteList", js.Array(value :_*))
+          inline def setWhiteListVarargs(value: String*): Self = StObject.set(x, "whiteList", js.Array(value*))
         }
       }
       
-      type ssoFactory = js.Function1[/* conf */ ssoConf, js.Any]
+      type ssoFactory = js.Function1[/* conf */ ssoConf, Any]
       
       trait token extends StObject {
         
@@ -434,7 +432,7 @@ object Six {
           
           inline def setExtensions(value: Boolean | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
           
-          inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+          inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
           
           inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
           
@@ -477,7 +475,7 @@ object Six {
         
         def end(key: String): Double = js.native
         
-        def now(): js.Any = js.native
+        def now(): Any = js.native
         
         def serialize(): String = js.native
         def serialize(between: String): String = js.native
@@ -502,13 +500,13 @@ object Six {
         
         var enableMock: Boolean
         
-        def failHook(err: Error, ctx: js.Object, next: next): js.Any
+        def failHook(err: js.Error, ctx: js.Object, next: next): Any
         
         def getPath(ctx: js.Object): String
         
         var skipOffline: Boolean
         
-        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
+        var whiteList: String | js.RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
       }
       object uacConf {
         
@@ -516,10 +514,10 @@ object Six {
           client_id: String,
           client_secret: String,
           enableMock: Boolean,
-          failHook: (Error, js.Object, next) => js.Any,
+          failHook: (js.Error, js.Object, next) => Any,
           getPath: js.Object => String,
           skipOffline: Boolean,
-          whiteList: String | RegExp | js.Array[String] | whiteList
+          whiteList: String | js.RegExp | js.Array[String] | whiteList
         ): uacConf = {
           val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], enableMock = enableMock.asInstanceOf[js.Any], failHook = js.Any.fromFunction3(failHook), getPath = js.Any.fromFunction1(getPath), skipOffline = skipOffline.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
           __obj.asInstanceOf[uacConf]
@@ -533,21 +531,21 @@ object Six {
           
           inline def setEnableMock(value: Boolean): Self = StObject.set(x, "enableMock", value.asInstanceOf[js.Any])
           
-          inline def setFailHook(value: (Error, js.Object, next) => js.Any): Self = StObject.set(x, "failHook", js.Any.fromFunction3(value))
+          inline def setFailHook(value: (js.Error, js.Object, next) => Any): Self = StObject.set(x, "failHook", js.Any.fromFunction3(value))
           
           inline def setGetPath(value: js.Object => String): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
           
           inline def setSkipOffline(value: Boolean): Self = StObject.set(x, "skipOffline", value.asInstanceOf[js.Any])
           
-          inline def setWhiteList(value: String | RegExp | js.Array[String] | whiteList): Self = StObject.set(x, "whiteList", value.asInstanceOf[js.Any])
+          inline def setWhiteList(value: String | js.RegExp | js.Array[String] | whiteList): Self = StObject.set(x, "whiteList", value.asInstanceOf[js.Any])
           
           inline def setWhiteListFunction1(value: /* ctx */ js.Object => Boolean): Self = StObject.set(x, "whiteList", js.Any.fromFunction1(value))
           
-          inline def setWhiteListVarargs(value: String*): Self = StObject.set(x, "whiteList", js.Array(value :_*))
+          inline def setWhiteListVarargs(value: String*): Self = StObject.set(x, "whiteList", js.Array(value*))
         }
       }
       
-      type uacFactory = js.Function1[/* conf */ uacConf, js.Any]
+      type uacFactory = js.Function1[/* conf */ uacConf, Any]
     }
     
     object upm {
@@ -562,7 +560,7 @@ object Six {
         
         var enableMock: Boolean
         
-        def failHook(err: Error, ctx: js.Object, next: next): js.Any
+        def failHook(err: js.Error, ctx: js.Object, next: next): Any
         
         def getPath(ctx: js.Object): String
         
@@ -570,7 +568,7 @@ object Six {
         
         var skipOffline: Boolean
         
-        var whiteList: String | RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
+        var whiteList: String | js.RegExp | js.Array[String] | typings.sixRuntime.Six.plugins.whiteList
       }
       object upmConf {
         
@@ -579,11 +577,11 @@ object Six {
           clientSecret: String,
           domain: String,
           enableMock: Boolean,
-          failHook: (Error, js.Object, next) => js.Any,
+          failHook: (js.Error, js.Object, next) => Any,
           getPath: js.Object => String,
           path: String,
           skipOffline: Boolean,
-          whiteList: String | RegExp | js.Array[String] | whiteList
+          whiteList: String | js.RegExp | js.Array[String] | whiteList
         ): upmConf = {
           val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], enableMock = enableMock.asInstanceOf[js.Any], failHook = js.Any.fromFunction3(failHook), getPath = js.Any.fromFunction1(getPath), path = path.asInstanceOf[js.Any], skipOffline = skipOffline.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
           __obj.asInstanceOf[upmConf]
@@ -599,7 +597,7 @@ object Six {
           
           inline def setEnableMock(value: Boolean): Self = StObject.set(x, "enableMock", value.asInstanceOf[js.Any])
           
-          inline def setFailHook(value: (Error, js.Object, next) => js.Any): Self = StObject.set(x, "failHook", js.Any.fromFunction3(value))
+          inline def setFailHook(value: (js.Error, js.Object, next) => Any): Self = StObject.set(x, "failHook", js.Any.fromFunction3(value))
           
           inline def setGetPath(value: js.Object => String): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
           
@@ -607,15 +605,15 @@ object Six {
           
           inline def setSkipOffline(value: Boolean): Self = StObject.set(x, "skipOffline", value.asInstanceOf[js.Any])
           
-          inline def setWhiteList(value: String | RegExp | js.Array[String] | whiteList): Self = StObject.set(x, "whiteList", value.asInstanceOf[js.Any])
+          inline def setWhiteList(value: String | js.RegExp | js.Array[String] | whiteList): Self = StObject.set(x, "whiteList", value.asInstanceOf[js.Any])
           
           inline def setWhiteListFunction1(value: /* ctx */ js.Object => Boolean): Self = StObject.set(x, "whiteList", js.Any.fromFunction1(value))
           
-          inline def setWhiteListVarargs(value: String*): Self = StObject.set(x, "whiteList", js.Array(value :_*))
+          inline def setWhiteListVarargs(value: String*): Self = StObject.set(x, "whiteList", js.Array(value*))
         }
       }
       
-      type upmFactory = js.Function1[/* conf */ upmConf, js.Any]
+      type upmFactory = js.Function1[/* conf */ upmConf, Any]
     }
     
     object view {
@@ -624,7 +622,7 @@ object Six {
             /* name */ String, 
             /* runtimeConf */ js.UndefOr[runtimeConf | Null], 
             /* data */ js.UndefOr[js.Object], 
-            js.Promise[js.Any]
+            js.Promise[Any]
           ]
       
       trait runtimeConf extends StObject {

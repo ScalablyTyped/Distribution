@@ -71,7 +71,7 @@ object ThematicStops {
     
     inline def setStops(value: js.Array[SizeStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    inline def setStopsVarargs(value: SizeStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: SizeStop*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

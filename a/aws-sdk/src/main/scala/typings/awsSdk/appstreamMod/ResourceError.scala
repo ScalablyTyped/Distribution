@@ -19,7 +19,7 @@ trait ResourceError extends StObject {
   /**
     * The time the error occurred.
     */
-  var ErrorTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var ErrorTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object ResourceError {
   
@@ -38,7 +38,7 @@ object ResourceError {
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    inline def setErrorTimestamp(value: Timestamp): Self = StObject.set(x, "ErrorTimestamp", value.asInstanceOf[js.Any])
+    inline def setErrorTimestamp(value: js.Date): Self = StObject.set(x, "ErrorTimestamp", value.asInstanceOf[js.Any])
     
     inline def setErrorTimestampUndefined: Self = StObject.set(x, "ErrorTimestamp", js.undefined)
   }

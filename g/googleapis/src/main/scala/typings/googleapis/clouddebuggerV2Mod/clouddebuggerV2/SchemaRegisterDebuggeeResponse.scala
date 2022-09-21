@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for registering a debuggee.
-  */
 trait SchemaRegisterDebuggeeResponse extends StObject {
   
   /**
-    * Debuggee resource. The field `id` is guaranteed to be set (in addition to
-    * the echoed fields). If the field `is_disabled` is set to `true`, the
-    * agent should disable itself by removing all breakpoints and detaching
-    * from the application. It should however continue to poll
-    * `RegisterDebuggee` until reenabled.
+    * A unique ID generated for the agent. Each RegisterDebuggee request will generate a new agent ID.
+    */
+  var agentId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Debuggee resource. The field `id` is guaranteed to be set (in addition to the echoed fields). If the field `is_disabled` is set to `true`, the agent should disable itself by removing all breakpoints and detaching from the application. It should however continue to poll `RegisterDebuggee` until reenabled.
     */
   var debuggee: js.UndefOr[SchemaDebuggee] = js.undefined
 }
@@ -26,6 +24,12 @@ object SchemaRegisterDebuggeeResponse {
   }
   
   extension [Self <: SchemaRegisterDebuggeeResponse](x: Self) {
+    
+    inline def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
+    
+    inline def setAgentIdNull: Self = StObject.set(x, "agentId", null)
+    
+    inline def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
     inline def setDebuggee(value: SchemaDebuggee): Self = StObject.set(x, "debuggee", value.asInstanceOf[js.Any])
     

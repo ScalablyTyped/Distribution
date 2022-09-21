@@ -1,7 +1,6 @@
 package typings.bingmaps.global.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.IGeoXmlLayerOptions
-import typings.std.ArrayBuffer
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,20 +14,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param isUrl Whether the dataSource provided is an URL. Default = true
   * @param options The options used to render the layer.
   */
-class GeoXmlLayer ()
+open class GeoXmlLayer ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.GeoXmlLayer {
   def this(dataSource: String) = this()
-  def this(dataSource: ArrayBuffer) = this()
+  def this(dataSource: js.typedarray.ArrayBuffer) = this()
   def this(dataSource: String, isUrl: Boolean) = this()
+  def this(dataSource: js.typedarray.ArrayBuffer, isUrl: Boolean) = this()
   def this(dataSource: Unit, isUrl: Boolean) = this()
-  def this(dataSource: ArrayBuffer, isUrl: Boolean) = this()
   def this(dataSource: String, isUrl: Boolean, options: IGeoXmlLayerOptions) = this()
   def this(dataSource: String, isUrl: Unit, options: IGeoXmlLayerOptions) = this()
+  def this(dataSource: js.typedarray.ArrayBuffer, isUrl: Boolean, options: IGeoXmlLayerOptions) = this()
+  def this(dataSource: js.typedarray.ArrayBuffer, isUrl: Unit, options: IGeoXmlLayerOptions) = this()
   def this(dataSource: Unit, isUrl: Boolean, options: IGeoXmlLayerOptions) = this()
   def this(dataSource: Unit, isUrl: Unit, options: IGeoXmlLayerOptions) = this()
-  def this(dataSource: ArrayBuffer, isUrl: Boolean, options: IGeoXmlLayerOptions) = this()
-  def this(dataSource: ArrayBuffer, isUrl: Unit, options: IGeoXmlLayerOptions) = this()
   
   /** A reference the the map instance that the overlay was added to. This will be null until the onLoad function has fired. **/
   /* CompleteClass */

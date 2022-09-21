@@ -10,10 +10,10 @@ B-spline interpolation
 | ------------------ | :-------------: |
 | Full name          | b-spline |
 | Keywords           | b-spline, interpolation, non-uniform, rational, nurbs, curve |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 17541 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3487.6666666666665 |
+| # stars            | 241.0 |
 
 ## Links
 - [Homepage](https://github.com/thibauts/b-spline#readme)

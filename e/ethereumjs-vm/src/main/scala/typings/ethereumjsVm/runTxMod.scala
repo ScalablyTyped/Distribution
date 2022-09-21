@@ -21,7 +21,7 @@ object runTxMod {
     /**
       * The block to which the `tx` belongs
       */
-    var block: js.UndefOr[js.Any] = js.undefined
+    var block: js.UndefOr[Any] = js.undefined
     
     /**
       * If true, skips the balance check
@@ -47,7 +47,7 @@ object runTxMod {
     
     extension [Self <: RunTxOpts](x: Self) {
       
-      inline def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
       inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       

@@ -8,6 +8,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sqsMod {
   
+  trait SQSBatchItemFailure extends StObject {
+    
+    var itemIdentifier: String
+  }
+  object SQSBatchItemFailure {
+    
+    inline def apply(itemIdentifier: String): SQSBatchItemFailure = {
+      val __obj = js.Dynamic.literal(itemIdentifier = itemIdentifier.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SQSBatchItemFailure]
+    }
+    
+    extension [Self <: SQSBatchItemFailure](x: Self) {
+      
+      inline def setItemIdentifier(value: String): Self = StObject.set(x, "itemIdentifier", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SQSBatchResponse extends StObject {
+    
+    var batchItemFailures: js.Array[SQSBatchItemFailure]
+  }
+  object SQSBatchResponse {
+    
+    inline def apply(batchItemFailures: js.Array[SQSBatchItemFailure]): SQSBatchResponse = {
+      val __obj = js.Dynamic.literal(batchItemFailures = batchItemFailures.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SQSBatchResponse]
+    }
+    
+    extension [Self <: SQSBatchResponse](x: Self) {
+      
+      inline def setBatchItemFailures(value: js.Array[SQSBatchItemFailure]): Self = StObject.set(x, "batchItemFailures", value.asInstanceOf[js.Any])
+      
+      inline def setBatchItemFailuresVarargs(value: SQSBatchItemFailure*): Self = StObject.set(x, "batchItemFailures", js.Array(value*))
+    }
+  }
+  
   trait SQSEvent extends StObject {
     
     var Records: js.Array[SQSRecord]
@@ -23,42 +59,40 @@ object sqsMod {
       
       inline def setRecords(value: js.Array[SQSRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: SQSRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: SQSRecord*): Self = StObject.set(x, "Records", js.Array(value*))
     }
   }
   
-  type SQSHandler = Handler[SQSEvent, Unit]
+  type SQSHandler = Handler[SQSEvent, SQSBatchResponse | Unit]
   
   trait SQSMessageAttribute extends StObject {
     
     // Not implemented. Reserved for future use.
-    var binaryListValues: js.Array[scala.Nothing]
+    var binaryListValues: js.UndefOr[js.Array[String]] = js.undefined
     
     var binaryValue: js.UndefOr[String] = js.undefined
     
     // Not implemented. Reserved for future use.
     var dataType: SQSMessageAttributeDataType
     
-    var stringListValues: js.Array[scala.Nothing]
+    var stringListValues: js.UndefOr[js.Array[String]] = js.undefined
     
     var stringValue: js.UndefOr[String] = js.undefined
   }
   object SQSMessageAttribute {
     
-    inline def apply(
-      binaryListValues: js.Array[scala.Nothing],
-      dataType: SQSMessageAttributeDataType,
-      stringListValues: js.Array[scala.Nothing]
-    ): SQSMessageAttribute = {
-      val __obj = js.Dynamic.literal(binaryListValues = binaryListValues.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], stringListValues = stringListValues.asInstanceOf[js.Any])
+    inline def apply(dataType: SQSMessageAttributeDataType): SQSMessageAttribute = {
+      val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any])
       __obj.asInstanceOf[SQSMessageAttribute]
     }
     
     extension [Self <: SQSMessageAttribute](x: Self) {
       
-      inline def setBinaryListValues(value: js.Array[scala.Nothing]): Self = StObject.set(x, "binaryListValues", value.asInstanceOf[js.Any])
+      inline def setBinaryListValues(value: js.Array[String]): Self = StObject.set(x, "binaryListValues", value.asInstanceOf[js.Any])
       
-      inline def setBinaryListValuesVarargs(value: scala.Nothing*): Self = StObject.set(x, "binaryListValues", js.Array(value :_*))
+      inline def setBinaryListValuesUndefined: Self = StObject.set(x, "binaryListValues", js.undefined)
+      
+      inline def setBinaryListValuesVarargs(value: String*): Self = StObject.set(x, "binaryListValues", js.Array(value*))
       
       inline def setBinaryValue(value: String): Self = StObject.set(x, "binaryValue", value.asInstanceOf[js.Any])
       
@@ -66,9 +100,11 @@ object sqsMod {
       
       inline def setDataType(value: SQSMessageAttributeDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
-      inline def setStringListValues(value: js.Array[scala.Nothing]): Self = StObject.set(x, "stringListValues", value.asInstanceOf[js.Any])
+      inline def setStringListValues(value: js.Array[String]): Self = StObject.set(x, "stringListValues", value.asInstanceOf[js.Any])
       
-      inline def setStringListValuesVarargs(value: scala.Nothing*): Self = StObject.set(x, "stringListValues", js.Array(value :_*))
+      inline def setStringListValuesUndefined: Self = StObject.set(x, "stringListValues", js.undefined)
+      
+      inline def setStringListValuesVarargs(value: String*): Self = StObject.set(x, "stringListValues", js.Array(value*))
       
       inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
       

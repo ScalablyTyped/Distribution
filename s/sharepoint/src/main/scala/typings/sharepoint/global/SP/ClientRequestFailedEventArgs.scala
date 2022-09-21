@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientRequestFailedEventArgs")
 @js.native
-class ClientRequestFailedEventArgs protected ()
+open class ClientRequestFailedEventArgs protected ()
   extends StObject
      with typings.sharepoint.SP.ClientRequestFailedEventArgs {
   def this(
@@ -17,7 +17,7 @@ class ClientRequestFailedEventArgs protected ()
     errorCode: Double,
     errorValue: String,
     errorTypeName: String,
-    errorDetails: js.Any
+    errorDetails: Any
   ) = this()
   def this(
     request: typings.sharepoint.SP.ClientRequest,
@@ -26,7 +26,7 @@ class ClientRequestFailedEventArgs protected ()
     errorCode: Double,
     errorValue: String,
     errorTypeName: String,
-    errorDetails: js.Any,
+    errorDetails: Any,
     errorTraceCorrelationId: String
   ) = this()
   
@@ -40,7 +40,7 @@ class ClientRequestFailedEventArgs protected ()
   override def get_errorCode(): Double = js.native
   
   /* CompleteClass */
-  override def get_errorDetails(): js.Any = js.native
+  override def get_errorDetails(): Any = js.native
   
   /* CompleteClass */
   override def get_errorTraceCorrelationId(): String = js.native

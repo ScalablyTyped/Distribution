@@ -1,52 +1,23 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
+import typings.awsSdkClientCognitoIdentity.anon.ExceptionOptionTypeIntern
 import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.server
-import typings.awsSdkSmithyClient.exceptionMod.SmithyException
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientCognitoIdentity.cognitoIdentityServiceExceptionMod.CognitoIdentityServiceException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InternalErrorException
-  extends StObject
-     with SmithyException
-     with MetadataBearer {
+@JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "InternalErrorException")
+@js.native
+open class InternalErrorException protected () extends CognitoIdentityServiceException {
+  /**
+    * @internal
+    */
+  def this(opts: ExceptionOptionTypeIntern) = this()
   
   @JSName("$fault")
-  var $fault_InternalErrorException: server
-  
-  /**
-    * <p>The message returned by an InternalErrorException.</p>
-    */
-  var message: js.UndefOr[String] = js.undefined
+  val $fault_InternalErrorException: server = js.native
   
   @JSName("name")
-  var name_InternalErrorException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.InternalErrorException
-}
-object InternalErrorException {
-  
-  inline def apply($metadata: ResponseMetadata): InternalErrorException = {
-    val __obj = js.Dynamic.literal($fault = "server", $metadata = $metadata.asInstanceOf[js.Any], name = "InternalErrorException")
-    __obj.asInstanceOf[InternalErrorException]
-  }
-  
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "InternalErrorException")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: InternalErrorException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  extension [Self <: InternalErrorException](x: Self) {
-    
-    inline def set$fault(value: server): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
-    
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    
-    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
-    
-    inline def setName(
-      value: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.InternalErrorException
-    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-  }
+  val name_InternalErrorException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.InternalErrorException = js.native
 }

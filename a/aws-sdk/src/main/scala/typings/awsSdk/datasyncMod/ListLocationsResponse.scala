@@ -29,7 +29,7 @@ object ListLocationsResponse {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "Locations", js.undefined)
     
-    inline def setLocationsVarargs(value: LocationListEntry*): Self = StObject.set(x, "Locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: LocationListEntry*): Self = StObject.set(x, "Locations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

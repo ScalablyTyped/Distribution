@@ -1,71 +1,51 @@
 package typings.awsServerlessExpress
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.apiGatewayMod.APIGatewayEventDefaultAuthorizerContext
 import typings.awsLambda.apiGatewayMod.APIGatewayEventRequestContextWithAuthorizer
-import typings.awsServerlessExpress.middlewareMod.NonFunctionProperties
+import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEventHeaders
+import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEventMultiValueHeaders
+import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEventMultiValueQueryStringParameters
+import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEventPathParameters
+import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEventQueryStringParameters
+import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEventStageVariables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Context extends StObject {
-    
-    var context: NonFunctionProperties[typings.awsLambda.handlerMod.Context]
-    
-    var event: OmitAPIGatewayProxyEventb
-  }
-  object Context {
-    
-    inline def apply(
-      context: NonFunctionProperties[typings.awsLambda.handlerMod.Context],
-      event: OmitAPIGatewayProxyEventb
-    ): Context = {
-      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Context]
-    }
-    
-    extension [Self <: Context](x: Self) {
-      
-      inline def setContext(value: NonFunctionProperties[typings.awsLambda.handlerMod.Context]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setEvent(value: OmitAPIGatewayProxyEventb): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
-    }
-  }
-  
   /* Inlined std.Omit<aws-lambda.aws-lambda.APIGatewayProxyEvent, 'body'> */
   trait OmitAPIGatewayProxyEventb extends StObject {
     
-    var headers: StringDictionary[String]
+    var headers: APIGatewayProxyEventHeaders
     
     var httpMethod: String
     
     var isBase64Encoded: Boolean
     
-    var multiValueHeaders: StringDictionary[js.Array[String]]
+    var multiValueHeaders: APIGatewayProxyEventMultiValueHeaders
     
-    var multiValueQueryStringParameters: js.UndefOr[StringDictionary[js.Array[String]] | Null] = js.undefined
+    var multiValueQueryStringParameters: js.UndefOr[APIGatewayProxyEventMultiValueQueryStringParameters | Null] = js.undefined
     
     var path: String
     
-    var pathParameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+    var pathParameters: js.UndefOr[APIGatewayProxyEventPathParameters | Null] = js.undefined
     
-    var queryStringParameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+    var queryStringParameters: js.UndefOr[APIGatewayProxyEventQueryStringParameters | Null] = js.undefined
     
     var requestContext: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext]
     
     var resource: String
     
-    var stageVariables: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+    var stageVariables: js.UndefOr[APIGatewayProxyEventStageVariables | Null] = js.undefined
   }
   object OmitAPIGatewayProxyEventb {
     
     inline def apply(
-      headers: StringDictionary[String],
+      headers: APIGatewayProxyEventHeaders,
       httpMethod: String,
       isBase64Encoded: Boolean,
-      multiValueHeaders: StringDictionary[js.Array[String]],
+      multiValueHeaders: APIGatewayProxyEventMultiValueHeaders,
       path: String,
       requestContext: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext],
       resource: String
@@ -76,15 +56,15 @@ object anon {
     
     extension [Self <: OmitAPIGatewayProxyEventb](x: Self) {
       
-      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: APIGatewayProxyEventHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
       inline def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
       
-      inline def setMultiValueHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+      inline def setMultiValueHeaders(value: APIGatewayProxyEventMultiValueHeaders): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
       
-      inline def setMultiValueQueryStringParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
+      inline def setMultiValueQueryStringParameters(value: APIGatewayProxyEventMultiValueQueryStringParameters): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
       
       inline def setMultiValueQueryStringParametersNull: Self = StObject.set(x, "multiValueQueryStringParameters", null)
       
@@ -92,13 +72,13 @@ object anon {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
+      inline def setPathParameters(value: APIGatewayProxyEventPathParameters): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
       
       inline def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
       
       inline def setPathParametersUndefined: Self = StObject.set(x, "pathParameters", js.undefined)
       
-      inline def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
+      inline def setQueryStringParameters(value: APIGatewayProxyEventQueryStringParameters): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
       
       inline def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
       
@@ -108,7 +88,7 @@ object anon {
       
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      inline def setStageVariables(value: StringDictionary[String]): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
+      inline def setStageVariables(value: APIGatewayProxyEventStageVariables): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
       
       inline def setStageVariablesNull: Self = StObject.set(x, "stageVariables", null)
       

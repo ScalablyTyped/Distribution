@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientMovingAverageConvergenceDivergence")
 @js.native
-class ASPxClientMovingAverageConvergenceDivergence ()
+open class ASPxClientMovingAverageConvergenceDivergence ()
   extends StObject
      with typings.devexpressWeb.ASPxClientMovingAverageConvergenceDivergence {
   

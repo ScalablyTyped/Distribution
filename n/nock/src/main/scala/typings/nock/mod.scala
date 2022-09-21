@@ -1,24 +1,20 @@
 package typings.nock
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nock.anon.ClientRequestheadersRecor
 import typings.nock.anon.Context
+import typings.nock.anon.Headers
 import typings.nock.anon.Pass
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.fsMod.ReadStream
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.IncomingMessage
-import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.urlMod.URLSearchParams
 import typings.node.urlMod.Url
-import typings.std.Array
-import typings.std.Date
 import typings.std.Map
+import typings.std.ReadonlyArray
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,10 +23,10 @@ object mod {
   
   inline def apply(basePath: String): Scope = ^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any]).asInstanceOf[Scope]
   inline def apply(basePath: String, options: Options): Scope = (^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def apply(basePath: js.RegExp): Scope = ^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  inline def apply(basePath: js.RegExp, options: Options): Scope = (^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Scope]
   inline def apply(basePath: Url): Scope = ^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any]).asInstanceOf[Scope]
   inline def apply(basePath: Url, options: Options): Scope = (^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Scope]
-  inline def apply(basePath: RegExp): Scope = ^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any]).asInstanceOf[Scope]
-  inline def apply(basePath: RegExp, options: Options): Scope = (^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   @JSImport("nock", JSImport.Namespace)
   @js.native
@@ -61,7 +57,7 @@ object mod {
   inline def enableNetConnect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")().asInstanceOf[Unit]
   inline def enableNetConnect(matcher: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")(matcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def enableNetConnect(matcher: js.Function1[/* host */ String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")(matcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def enableNetConnect(matcher: RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")(matcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableNetConnect(matcher: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetConnect")(matcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def isActive(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")().asInstanceOf[Boolean]
   
@@ -106,7 +102,7 @@ object mod {
       
       inline def setScopes(value: js.Array[Scope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
   
@@ -114,6 +110,7 @@ object mod {
     - typings.nock.nockStrings.wild
     - typings.nock.nockStrings.dryrun
     - typings.nock.nockStrings.record
+    - typings.nock.nockStrings.update
     - typings.nock.nockStrings.lockdown
   */
   trait BackMode extends StObject
@@ -124,6 +121,8 @@ object mod {
     inline def lockdown: typings.nock.nockStrings.lockdown = "lockdown".asInstanceOf[typings.nock.nockStrings.lockdown]
     
     inline def record: typings.nock.nockStrings.record = "record".asInstanceOf[typings.nock.nockStrings.record]
+    
+    inline def update: typings.nock.nockStrings.update = "update".asInstanceOf[typings.nock.nockStrings.update]
     
     inline def wild: typings.nock.nockStrings.wild = "wild".asInstanceOf[typings.nock.nockStrings.wild]
   }
@@ -184,7 +183,7 @@ object mod {
     def setMode(mode: BackMode): Unit = js.native
   }
   
-  type Body = String | (Record[String, js.Any])
+  type Body = String | (Record[String, Any])
   
   // Essentially valid, decoded JSON with the addition of possible RegExp. TS doesn't currently have
   // a great way to represent JSON type data, this data matcher design is based off this comment.
@@ -195,24 +194,22 @@ object mod {
     - java.lang.String
     - scala.Null
     - scala.Unit
-    - typings.std.RegExp
+    - js.RegExp
     - typings.nock.mod.DataMatcherArray
     - typings.nock.mod.DataMatcherMap
   */
-  type DataMatcher = js.UndefOr[_DataMatcher | Boolean | Double | String | Null | RegExp]
+  type DataMatcher = js.UndefOr[_DataMatcher | Boolean | Double | String | Null | js.RegExp]
   
   @js.native
   trait DataMatcherArray
     extends StObject
-       with Array[DataMatcher]
+       with ReadonlyArray[DataMatcher]
        with _DataMatcher
-       with _RequestBodyMatcher
   
   trait DataMatcherMap
     extends StObject
        with /* key */ StringDictionary[DataMatcher]
        with _DataMatcher
-       with _RequestBodyMatcher
   object DataMatcherMap {
     
     inline def apply(): DataMatcherMap = {
@@ -231,7 +228,7 @@ object mod {
     
     var options: js.UndefOr[Options] = js.undefined
     
-    var path: String
+    var path: String | js.RegExp
     
     var port: js.UndefOr[Double | String] = js.undefined
     
@@ -239,13 +236,13 @@ object mod {
     
     var response: js.UndefOr[ReplyBody] = js.undefined
     
-    var scope: String
+    var scope: String | js.RegExp
     
     var status: js.UndefOr[Double] = js.undefined
   }
   object Definition {
     
-    inline def apply(path: String, scope: String): Definition = {
+    inline def apply(path: String | js.RegExp, scope: String | js.RegExp): Definition = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[Definition]
     }
@@ -254,7 +251,7 @@ object mod {
       
       inline def setBody(value: RequestBodyMatcher): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setBodyFunction1(value: /* body */ js.Any => Boolean): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
+      inline def setBodyFunction1(value: /* body */ Any => Boolean): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -262,7 +259,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -272,7 +269,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -286,7 +283,7 @@ object mod {
       
       inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String | js.RegExp): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -294,12 +291,26 @@ object mod {
     }
   }
   
-  type InterceptFunction = js.Function3[
-    /* uri */ String | RegExp | (js.Function1[/* uri */ String, Boolean]), 
-    /* requestBody */ js.UndefOr[RequestBodyMatcher], 
-    /* interceptorOptions */ js.UndefOr[Options], 
-    Interceptor
-  ]
+  @js.native
+  trait InterceptFunction extends StObject {
+    
+    def apply(uri: String): Interceptor = js.native
+    def apply(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def apply(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def apply(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def apply(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+    def apply(uri: js.Function1[/* uri */ String, Boolean], requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def apply(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+    def apply(
+      uri: js.Function1[/* uri */ String, Boolean],
+      requestBody: RequestBodyMatcher,
+      interceptorOptions: Options
+    ): Interceptor = js.native
+    def apply(uri: js.RegExp): Interceptor = js.native
+    def apply(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def apply(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def apply(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  }
   
   @js.native
   trait Interceptor extends StObject {
@@ -318,9 +329,15 @@ object mod {
     def once(): this.type = js.native
     
     def optionally(): this.type = js.native
+    def optionally(flag: Boolean): this.type = js.native
     
     def query(matcher: String): this.type = js.native
-    def query(matcher: js.Function1[/* parsedObj */ ParsedUrlQuery, Boolean]): this.type = js.native
+    def query(
+      matcher: js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ /* parsedObj */ Any, 
+          Boolean
+        ]
+    ): this.type = js.native
     def query(matcher: Boolean): this.type = js.native
     def query(matcher: DataMatcherMap): this.type = js.native
     def query(matcher: URLSearchParams): this.type = js.native
@@ -335,7 +352,11 @@ object mod {
           /* this */ ReplyFnContext, 
           /* uri */ String, 
           /* body */ Body, 
-          /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ ReplyFnResult, Unit], 
+          /* callback */ js.Function2[
+            /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+            /* result */ ReplyFnResult, 
+            Unit
+          ], 
           Unit
         ]
     ): Scope = js.native
@@ -360,7 +381,11 @@ object mod {
           /* this */ ReplyFnContext, 
           /* uri */ String, 
           /* body */ Body, 
-          /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ ReplyBody, Unit], 
+          /* callback */ js.Function2[
+            /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+            /* result */ ReplyBody, 
+            Unit
+          ], 
           Unit
         ]
     ): Scope = js.native
@@ -370,7 +395,11 @@ object mod {
           /* this */ ReplyFnContext, 
           /* uri */ String, 
           /* body */ Body, 
-          /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ ReplyBody, Unit], 
+          /* callback */ js.Function2[
+            /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+            /* result */ ReplyBody, 
+            Unit
+          ], 
           Unit
         ],
       headers: ReplyHeaders
@@ -438,7 +467,7 @@ object mod {
       
       inline def setBadheadersUndefined: Self = StObject.set(x, "badheaders", js.undefined)
       
-      inline def setBadheadersVarargs(value: String*): Self = StObject.set(x, "badheaders", js.Array(value :_*))
+      inline def setBadheadersVarargs(value: String*): Self = StObject.set(x, "badheaders", js.Array(value*))
       
       inline def setEncodedQueryParams(value: Boolean): Self = StObject.set(x, "encodedQueryParams", value.asInstanceOf[js.Any])
       
@@ -517,7 +546,7 @@ object mod {
     extends StObject
        with Interceptor {
     
-    var req: ClientRequestheadersRecor = js.native
+    var req: ClientRequest & Headers = js.native
   }
   
   type ReplyFnResult = js.Array[StatusCode] | (js.Tuple2[StatusCode, ReplyBody]) | (js.Tuple3[StatusCode, ReplyBody, ReplyHeaders])
@@ -554,17 +583,9 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - typings.node.Buffer
-    - typings.std.RegExp
-    - typings.nock.mod.DataMatcherArray
-    - typings.nock.mod.DataMatcherMap
-    - js.Function1[/ * body * / js.Any, scala.Boolean]
-  */
-  type RequestBodyMatcher = _RequestBodyMatcher | (js.Function1[/* body */ js.Any, Boolean]) | String | Buffer | RegExp
+  type RequestBodyMatcher = String | Buffer | js.RegExp | Any | DataMatcherMap | (js.Function1[/* body */ Any, Boolean])
   
-  type RequestHeaderMatcher = String | RegExp | (js.Function1[/* fieldValue */ String, Boolean])
+  type RequestHeaderMatcher = String | js.RegExp | (js.Function1[/* fieldValue */ String, Boolean])
   
   @js.native
   trait Scope
@@ -587,20 +608,20 @@ object mod {
       requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def delete(uri: RegExp): Interceptor = js.native
-    def delete(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
-    def delete(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def delete(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def delete(uri: js.RegExp): Interceptor = js.native
+    def delete(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def delete(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def delete(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("delete")
     var delete_Original: InterceptFunction = js.native
     
     def done(): Unit = js.native
     
     def filteringPath(fn: js.Function1[/* path */ String, String]): this.type = js.native
-    def filteringPath(regex: RegExp, replace: String): this.type = js.native
+    def filteringPath(regex: js.RegExp, replace: String): this.type = js.native
     
     def filteringRequestBody(fn: js.Function1[/* body */ String, String]): this.type = js.native
-    def filteringRequestBody(regex: RegExp, replace: String): this.type = js.native
+    def filteringRequestBody(regex: js.RegExp, replace: String): this.type = js.native
     
     def get(uri: String): Interceptor = js.native
     def get(uri: String, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
@@ -614,10 +635,10 @@ object mod {
       requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def get(uri: RegExp): Interceptor = js.native
-    def get(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
-    def get(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def get(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def get(uri: js.RegExp): Interceptor = js.native
+    def get(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def get(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def get(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("get")
     var get_Original: InterceptFunction = js.native
     
@@ -633,10 +654,10 @@ object mod {
       requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def head(uri: RegExp): Interceptor = js.native
-    def head(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
-    def head(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def head(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def head(uri: js.RegExp): Interceptor = js.native
+    def head(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def head(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def head(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("head")
     var head_Original: InterceptFunction = js.native
     
@@ -653,10 +674,10 @@ object mod {
       requestBody: RequestBodyMatcher,
       options: Options
     ): Interceptor = js.native
-    def intercept(uri: RegExp, method: String): Interceptor = js.native
-    def intercept(uri: RegExp, method: String, requestBody: Unit, options: Options): Interceptor = js.native
-    def intercept(uri: RegExp, method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def intercept(uri: RegExp, method: String, requestBody: RequestBodyMatcher, options: Options): Interceptor = js.native
+    def intercept(uri: js.RegExp, method: String): Interceptor = js.native
+    def intercept(uri: js.RegExp, method: String, requestBody: Unit, options: Options): Interceptor = js.native
+    def intercept(uri: js.RegExp, method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def intercept(uri: js.RegExp, method: String, requestBody: RequestBodyMatcher, options: Options): Interceptor = js.native
     
     def isDone(): Boolean = js.native
     
@@ -674,10 +695,10 @@ object mod {
       requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def merge(uri: RegExp): Interceptor = js.native
-    def merge(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
-    def merge(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def merge(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def merge(uri: js.RegExp): Interceptor = js.native
+    def merge(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def merge(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def merge(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("merge")
     var merge_Original: InterceptFunction = js.native
     
@@ -693,10 +714,10 @@ object mod {
       requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def options(uri: RegExp): Interceptor = js.native
-    def options(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
-    def options(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def options(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def options(uri: js.RegExp): Interceptor = js.native
+    def options(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def options(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def options(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("options")
     var options_Original: InterceptFunction = js.native
     
@@ -712,10 +733,10 @@ object mod {
       requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def patch(uri: RegExp): Interceptor = js.native
-    def patch(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
-    def patch(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def patch(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def patch(uri: js.RegExp): Interceptor = js.native
+    def patch(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def patch(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def patch(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("patch")
     var patch_Original: InterceptFunction = js.native
     
@@ -736,10 +757,10 @@ object mod {
       requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def post(uri: RegExp): Interceptor = js.native
-    def post(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
-    def post(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def post(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def post(uri: js.RegExp): Interceptor = js.native
+    def post(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def post(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def post(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("post")
     var post_Original: InterceptFunction = js.native
     
@@ -755,22 +776,20 @@ object mod {
       requestBody: RequestBodyMatcher,
       interceptorOptions: Options
     ): Interceptor = js.native
-    def put(uri: RegExp): Interceptor = js.native
-    def put(uri: RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
-    def put(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
-    def put(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+    def put(uri: js.RegExp): Interceptor = js.native
+    def put(uri: js.RegExp, requestBody: Unit, interceptorOptions: Options): Interceptor = js.native
+    def put(uri: js.RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
+    def put(uri: js.RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
     @JSName("put")
     var put_Original: InterceptFunction = js.native
     
     def replyContentLength(): this.type = js.native
     
     def replyDate(): this.type = js.native
-    def replyDate(d: Date): this.type = js.native
+    def replyDate(d: js.Date): this.type = js.native
   }
   
   type StatusCode = Double
   
   trait _DataMatcher extends StObject
-  
-  trait _RequestBodyMatcher extends StObject
 }

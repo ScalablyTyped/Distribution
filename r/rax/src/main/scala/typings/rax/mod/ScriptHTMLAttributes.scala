@@ -10,6 +10,7 @@ trait ScriptHTMLAttributes[T]
   
   var async: js.UndefOr[Boolean] = js.undefined
   
+  /** @deprecated */
   var charSet: js.UndefOr[String] = js.undefined
   
   var crossOrigin: js.UndefOr[String] = js.undefined

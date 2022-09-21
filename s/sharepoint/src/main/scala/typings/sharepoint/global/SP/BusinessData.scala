@@ -8,37 +8,37 @@ object BusinessData {
   
   @JSGlobal("SP.BusinessData.AppBdcCatalog")
   @js.native
-  class AppBdcCatalog ()
+  open class AppBdcCatalog ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.AppBdcCatalog
   
   @JSGlobal("SP.BusinessData.Entity")
   @js.native
-  class Entity ()
+  open class Entity ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.Entity
   
   @JSGlobal("SP.BusinessData.EntityField")
   @js.native
-  class EntityField ()
+  open class EntityField ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.EntityField
   
   @JSGlobal("SP.BusinessData.EntityIdentifier")
   @js.native
-  class EntityIdentifier ()
+  open class EntityIdentifier ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.EntityIdentifier
   
   @JSGlobal("SP.BusinessData.EntityView")
   @js.native
-  class EntityView ()
+  open class EntityView ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.EntityView
   
   @JSGlobal("SP.BusinessData.Filter")
   @js.native
-  class Filter ()
+  open class Filter ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.Filter
   
@@ -46,7 +46,7 @@ object BusinessData {
     
     @JSGlobal("SP.BusinessData.Infrastructure.ExternalSubscriptionStore")
     @js.native
-    class ExternalSubscriptionStore protected ()
+    open class ExternalSubscriptionStore protected ()
       extends StObject
          with typings.sharepoint.SP.BusinessData.Infrastructure.ExternalSubscriptionStore {
       def this(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web) = this()
@@ -64,19 +64,19 @@ object BusinessData {
   
   @JSGlobal("SP.BusinessData.LobSystem")
   @js.native
-  class LobSystem ()
+  open class LobSystem ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.LobSystem
   
   @JSGlobal("SP.BusinessData.LobSystemInstance")
   @js.native
-  class LobSystemInstance ()
+  open class LobSystemInstance ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.LobSystemInstance
   
   @JSGlobal("SP.BusinessData.MethodExecutionResult")
   @js.native
-  class MethodExecutionResult ()
+  open class MethodExecutionResult ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.MethodExecutionResult
   
@@ -100,16 +100,16 @@ object BusinessData {
     
     @JSGlobal("SP.BusinessData.Runtime.EntityFieldValueDictionary")
     @js.native
-    class EntityFieldValueDictionary ()
+    open class EntityFieldValueDictionary ()
       extends StObject
          with typings.sharepoint.SP.BusinessData.Runtime.EntityFieldValueDictionary
     
     @JSGlobal("SP.BusinessData.Runtime.EntityIdentity")
     @js.native
-    class EntityIdentity protected ()
+    open class EntityIdentity protected ()
       extends StObject
          with typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity {
-      def this(context: typings.sharepoint.SP.ClientRuntimeContext, identifierValues: js.Array[js.Any]) = this()
+      def this(context: typings.sharepoint.SP.ClientRuntimeContext, identifierValues: js.Array[Any]) = this()
     }
     object EntityIdentity {
       
@@ -118,18 +118,18 @@ object BusinessData {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, identifierValues: js.Array[js.Any]): typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], identifierValues.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity]
+      inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, identifierValues: js.Array[Any]): typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], identifierValues.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.EntityIdentity]
     }
     
     @JSGlobal("SP.BusinessData.Runtime.EntityInstance")
     @js.native
-    class EntityInstance ()
+    open class EntityInstance ()
       extends StObject
          with typings.sharepoint.SP.BusinessData.Runtime.EntityInstance
     
     @JSGlobal("SP.BusinessData.Runtime.NotificationCallback")
     @js.native
-    class NotificationCallback protected ()
+    open class NotificationCallback protected ()
       extends StObject
          with typings.sharepoint.SP.BusinessData.Runtime.NotificationCallback {
       def this(context: typings.sharepoint.SP.ClientRuntimeContext, notificationEndpoint: String) = this()
@@ -146,10 +146,10 @@ object BusinessData {
     
     @JSGlobal("SP.BusinessData.Runtime.Subscription")
     @js.native
-    class Subscription protected ()
+    open class Subscription protected ()
       extends StObject
          with typings.sharepoint.SP.BusinessData.Runtime.Subscription {
-      def this(context: typings.sharepoint.SP.ClientRuntimeContext, id: js.Any, hash: String) = this()
+      def this(context: typings.sharepoint.SP.ClientRuntimeContext, id: Any, hash: String) = this()
     }
     object Subscription {
       
@@ -158,13 +158,13 @@ object BusinessData {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, id: js.Any, hash: String): typings.sharepoint.SP.BusinessData.Runtime.Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], id.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.Subscription]
+      inline def newObject(context: typings.sharepoint.SP.ClientRuntimeContext, id: Any, hash: String): typings.sharepoint.SP.BusinessData.Runtime.Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any], id.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BusinessData.Runtime.Subscription]
     }
   }
   
   @JSGlobal("SP.BusinessData.TypeDescriptor")
   @js.native
-  class TypeDescriptor ()
+  open class TypeDescriptor ()
     extends StObject
        with typings.sharepoint.SP.BusinessData.TypeDescriptor
 }

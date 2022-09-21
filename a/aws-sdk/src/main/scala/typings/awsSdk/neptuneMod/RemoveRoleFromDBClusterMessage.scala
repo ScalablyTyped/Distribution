@@ -12,7 +12,7 @@ trait RemoveRoleFromDBClusterMessage extends StObject {
   var DBClusterIdentifier: String
   
   /**
-    * The name of the feature for the DB cluster that the IAM role is to be disassociated from. For the list of supported feature names, see DBEngineVersion.
+    * The name of the feature for the DB cluster that the IAM role is to be disassociated from. For the list of supported feature names, see DescribeDBEngineVersions.
     */
   var FeatureName: js.UndefOr[String] = js.undefined
   

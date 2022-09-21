@@ -10,7 +10,7 @@ object getLocaleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getComponentLocale(props: js.Any, context: js.Any, componentName: String, getDefaultLocale: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentLocale")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any], getDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getComponentLocale(props: Any, context: Any, componentName: String, getDefaultLocale: js.Function0[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentLocale")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any], getDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getLocaleCode(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCode")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getLocaleCode(context: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleCode")(context.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

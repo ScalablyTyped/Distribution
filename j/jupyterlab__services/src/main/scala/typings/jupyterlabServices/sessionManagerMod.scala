@@ -11,7 +11,6 @@ import typings.jupyterlabServices.sessionSessionMod.ISessionOptions
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoPolling.pollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object sessionManagerMod {
   - typings.luminoDisposable.mod.IDisposable because Already inherited
   - typings.jupyterlabServices.sessionSessionMod.IManager because var conflicts: connectionFailure, isDisposed, isReady, ready, serverSettings. Inlined runningChanged, running, startNew, startNew, findById, findByPath, connectTo, shutdown, shutdownAll, refreshRunning, stopIfNeeded */ @JSImport("@jupyterlab/services/lib/session/manager", "SessionManager")
   @js.native
-  class SessionManager protected () extends BaseManager {
+  open class SessionManager protected () extends BaseManager {
     /**
       * Construct a new session manager.
       *
@@ -30,32 +29,32 @@ object sessionManagerMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ val _connectToKernel: js.Any = js.native
+    /* private */ val _connectToKernel: Any = js.native
     
-    /* private */ var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: Any = js.native
     
-    /* private */ var _isReady: js.Any = js.native
+    /* private */ var _isReady: Any = js.native
     
-    /* private */ var _kernelManager: js.Any = js.native
+    /* private */ var _kernelManager: Any = js.native
     
-    /* private */ var _models: js.Any = js.native
+    /* private */ var _models: Any = js.native
     
-    /* private */ var _onChanged: js.Any = js.native
+    /* private */ var _onChanged: Any = js.native
     
-    /* private */ var _onDisposed: js.Any = js.native
+    /* private */ var _onDisposed: Any = js.native
     
     /**
       * Handle a session starting.
       */
-    /* private */ var _onStarted: js.Any = js.native
+    /* private */ var _onStarted: Any = js.native
     
-    /* private */ var _pollModels: js.Any = js.native
+    /* private */ var _pollModels: Any = js.native
     
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
-    /* private */ var _runningChanged: js.Any = js.native
+    /* private */ var _runningChanged: Any = js.native
     
-    /* private */ var _sessionConnections: js.Any = js.native
+    /* private */ var _sessionConnections: Any = js.native
     
     /**
       * Connect to a running session.
@@ -72,7 +71,7 @@ object sessionManagerMod {
       * A signal emitted when there is a connection failure.
       */
     @JSName("connectionFailure")
-    def connectionFailure_MSessionManager: ISignal[this.type, Error] = js.native
+    def connectionFailure_MSessionManager: ISignal[this.type, js.Error] = js.native
     
     /**
       * Find a session by id.

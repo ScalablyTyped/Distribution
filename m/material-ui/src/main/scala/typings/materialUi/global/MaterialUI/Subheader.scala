@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.Subheader")
 @js.native
-class Subheader ()
-  extends Component[SubheaderProps, js.Object, js.Any]
+open class Subheader ()
+  extends Component[SubheaderProps, js.Object, Any]

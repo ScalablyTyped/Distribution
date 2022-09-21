@@ -11,13 +11,13 @@ object materialTopAppBarMod {
   
   @JSImport("@material/top-app-bar/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCTopAppBarBaseFoundation {
+  open class default () extends MDCTopAppBarBaseFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
   
   @JSImport("@material/top-app-bar/foundation", "MDCTopAppBarBaseFoundation")
   @js.native
-  class MDCTopAppBarBaseFoundation () extends MDCFoundation[MDCTopAppBarAdapter] {
+  open class MDCTopAppBarBaseFoundation () extends MDCFoundation[MDCTopAppBarAdapter] {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
     
     def handleNavigationClick(): Unit = js.native

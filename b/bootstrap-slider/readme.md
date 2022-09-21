@@ -1,7 +1,7 @@
 
 # Scala.js typings for bootstrap-slider
 
-Typings are for version 9.9
+Typings are for version 11.0
 
 ## Library description:
 Slider view component for Twitter Bootstrap.
@@ -10,10 +10,10 @@ Slider view component for Twitter Bootstrap.
 | ------------------ | :-------------: |
 | Full name          | bootstrap-slider |
 | Keywords           | slider, bootstrap, twitter, slide |
-| # releases         | 19 |
-| # dependents       | 53 |
-| # downloads        | 3241202 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 557174.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://github.com/seiyria/bootstrap-slider)

@@ -29,7 +29,7 @@ object ListForecastsResponse {
     
     inline def setForecastsUndefined: Self = StObject.set(x, "Forecasts", js.undefined)
     
-    inline def setForecastsVarargs(value: ForecastSummary*): Self = StObject.set(x, "Forecasts", js.Array(value :_*))
+    inline def setForecastsVarargs(value: ForecastSummary*): Self = StObject.set(x, "Forecasts", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

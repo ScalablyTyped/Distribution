@@ -25,7 +25,7 @@ object DataSourceParameterMapDataGroup {
     
     inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    inline def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
+    inline def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = StObject.set(x, "aggregate", js.Array(value*))
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

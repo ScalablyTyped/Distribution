@@ -24,7 +24,7 @@ object DataPilotSourceHierarchy {
     acquire: () => Unit,
     getLevels: () => XNameAccess,
     getName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setName: String => Unit
   ): DataPilotSourceHierarchy = {

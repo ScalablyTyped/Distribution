@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Protection")
 @js.native
-/* private */ class Protection ()
+/* private */ open class Protection ()
   extends StObject
      with typings.activexExcel.Excel.Protection {
   

@@ -10,10 +10,10 @@ object exposureMod {
   
   @JSImport("material-ui/svg-icons/image/exposure", JSImport.Default)
   @js.native
-  class default () extends ImageExposure
+  open class default () extends ImageExposure
   
   @JSImport("material-ui/svg-icons/image/exposure", "ImageExposure")
   @js.native
-  class ImageExposure ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageExposure ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

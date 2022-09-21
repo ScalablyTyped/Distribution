@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientServicenetworking.anon
 
-import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.AddSubnetworkRequest
+import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.AddRolesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,11 +29,7 @@ trait AccesstokenAlt extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. A tenant project in the service producer organization, in the following format: services/{service}/{collection-id}/{resource-id}. {collection-id} is the cloud resource
-    * collection type that represents the tenant project. Only `projects` are supported. {resource-id} is the tenant project numeric id, such as `123456`. {service} the name of the
-    * peering service, such as `service-peering.example.com`. This service must already be enabled in the service consumer's project.
-    */
+  /** Required. This is in a form services/{service} where {service} is the name of the private access management service. For example 'service-peering.example.com'. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -43,7 +39,7 @@ trait AccesstokenAlt extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: AddSubnetworkRequest
+  var resource: AddRolesRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -53,7 +49,7 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(parent: String, resource: AddSubnetworkRequest): AccesstokenAlt = {
+  inline def apply(parent: String, resource: AddRolesRequest): AccesstokenAlt = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
@@ -98,7 +94,7 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AddSubnetworkRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: AddRolesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

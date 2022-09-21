@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Revparse")
 @js.native
-class Revparse ()
+open class Revparse ()
   extends typings.nodegit.revParseMod.Revparse
 /* static members */
 object Revparse {

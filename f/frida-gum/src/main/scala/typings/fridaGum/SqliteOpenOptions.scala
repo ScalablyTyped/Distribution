@@ -21,6 +21,6 @@ object SqliteOpenOptions {
     
     inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    inline def setFlagsVarargs(value: SqliteOpenFlag*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: SqliteOpenFlag*): Self = StObject.set(x, "flags", js.Array(value*))
   }
 }

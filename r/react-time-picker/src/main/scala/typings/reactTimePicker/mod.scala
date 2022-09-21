@@ -3,7 +3,6 @@ package typings.reactTimePicker
 import typings.reactTimePicker.reactTimePickerStrings.hour
 import typings.reactTimePicker.reactTimePickerStrings.minute
 import typings.reactTimePicker.reactTimePickerStrings.second
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: TimePickerProps[TimePickerValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(props: TimePickerProps[TimePickerValue]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* Inlined std.Omit<react-clock.react-clock.ClockProps<react-clock.react-clock.ClockValue>, 'value' | 'className'> */
   trait TimePickerClockProps extends StObject {
@@ -172,7 +171,7 @@ object mod {
       * Content of the clear button. Setting the value explicitly to null will hide the icon.
       */
     var clearIcon: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ Any) | Null
       ] = js.undefined
     
     /**
@@ -189,7 +188,7 @@ object mod {
       * Content of the clock button. Setting the value explicitly to null will hide the icon.
       */
     var clockIcon: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ Any) | Null
       ] = js.undefined
     
     /**
@@ -333,15 +332,17 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value*))
       
       inline def setClearAriaLabel(value: String): Self = StObject.set(x, "clearAriaLabel", value.asInstanceOf[js.Any])
       
       inline def setClearAriaLabelUndefined: Self = StObject.set(x, "clearAriaLabel", js.undefined)
       
       inline def setClearIcon(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ Any)
       ): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+      
+      inline def setClearIconNull: Self = StObject.set(x, "clearIcon", null)
       
       inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
       
@@ -353,11 +354,13 @@ object mod {
       
       inline def setClockClassNameUndefined: Self = StObject.set(x, "clockClassName", js.undefined)
       
-      inline def setClockClassNameVarargs(value: String*): Self = StObject.set(x, "clockClassName", js.Array(value :_*))
+      inline def setClockClassNameVarargs(value: String*): Self = StObject.set(x, "clockClassName", js.Array(value*))
       
       inline def setClockIcon(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ Any)
       ): Self = StObject.set(x, "clockIcon", value.asInstanceOf[js.Any])
+      
+      inline def setClockIconNull: Self = StObject.set(x, "clockIcon", null)
       
       inline def setClockIconUndefined: Self = StObject.set(x, "clockIcon", js.undefined)
       
@@ -449,5 +452,5 @@ object mod {
     }
   }
   
-  type TimePickerValue = String | Date
+  type TimePickerValue = String | js.Date
 }

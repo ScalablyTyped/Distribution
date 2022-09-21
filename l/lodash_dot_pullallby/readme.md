@@ -10,10 +10,10 @@ The lodash method `_.pullAllBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.pullallby |
 | Keywords           | lodash-modularized, pullallby |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 17218 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3264.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

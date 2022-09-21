@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isUndefinedMod {
   
-  @JSImport("@antv/util/lib/is-undefined", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/is-undefined", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(value: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
+  inline def default(value: Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
 }

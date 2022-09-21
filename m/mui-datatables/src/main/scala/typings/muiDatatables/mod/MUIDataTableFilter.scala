@@ -8,19 +8,19 @@ trait MUIDataTableFilter extends StObject {
   
   var classes: js.UndefOr[js.Object] = js.undefined
   
-  var filterData: js.Array[js.Any]
+  var filterData: js.Array[Any]
   
   var filterList: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
-  var onFilterReset: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onFilterReset: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
-  var onFilterUpdate: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onFilterUpdate: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
   var options: MUIDataTableOptions
 }
 object MUIDataTableFilter {
   
-  inline def apply(filterData: js.Array[js.Any], options: MUIDataTableOptions): MUIDataTableFilter = {
+  inline def apply(filterData: js.Array[Any], options: MUIDataTableOptions): MUIDataTableFilter = {
     val __obj = js.Dynamic.literal(filterData = filterData.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableFilter]
   }
@@ -31,21 +31,21 @@ object MUIDataTableFilter {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setFilterData(value: js.Array[js.Any]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
+    inline def setFilterData(value: js.Array[Any]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
     
-    inline def setFilterDataVarargs(value: js.Any*): Self = StObject.set(x, "filterData", js.Array(value :_*))
+    inline def setFilterDataVarargs(value: Any*): Self = StObject.set(x, "filterData", js.Array(value*))
     
     inline def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
     inline def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
-    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
+    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value*))
     
-    inline def setOnFilterReset(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onFilterReset", js.Any.fromFunction1(value))
+    inline def setOnFilterReset(value: /* args */ Any => Any): Self = StObject.set(x, "onFilterReset", js.Any.fromFunction1(value))
     
     inline def setOnFilterResetUndefined: Self = StObject.set(x, "onFilterReset", js.undefined)
     
-    inline def setOnFilterUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onFilterUpdate", js.Any.fromFunction1(value))
+    inline def setOnFilterUpdate(value: /* args */ Any => Any): Self = StObject.set(x, "onFilterUpdate", js.Any.fromFunction1(value))
     
     inline def setOnFilterUpdateUndefined: Self = StObject.set(x, "onFilterUpdate", js.undefined)
     

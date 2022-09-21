@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionCheckboxBase")
 @js.native
-class QuestionCheckboxBase protected () extends QuestionSelectBase {
+open class QuestionCheckboxBase protected () extends QuestionSelectBase {
   def this(name: String) = this()
   
-  /**
+  /*
     * The number of columns for radiogroup and checkbox questions. Items are rendred in one line if the value is 0.
     */
-  var colCount: Double = js.native
+  def colCount: Double = js.native
   
-  def colCountChangedCallback(): Unit = js.native
+  var colCountChangedCallback: Any = js.native
   
-  def getItemIndex(item: js.Any): Double = js.native
+  def colCount_=(`val`: Double): Unit = js.native
 }

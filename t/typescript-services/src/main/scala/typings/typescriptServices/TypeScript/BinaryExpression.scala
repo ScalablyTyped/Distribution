@@ -8,7 +8,7 @@ trait BinaryExpression
   extends StObject
      with AST {
   
-  /* private */ var _nodeType: js.Any
+  /* private */ var _nodeType: Any
   
   var left: AST
   
@@ -19,11 +19,11 @@ trait BinaryExpression
 object BinaryExpression {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _nodeType: js.Any,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _nodeType: Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     end: () => Double,
@@ -55,6 +55,6 @@ object BinaryExpression {
     
     inline def setStructuralEquals(value: (BinaryExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    inline def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
+    inline def set_nodeType(value: Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
   }
 }

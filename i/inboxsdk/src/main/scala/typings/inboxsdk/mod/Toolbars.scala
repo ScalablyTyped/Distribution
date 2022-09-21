@@ -196,11 +196,11 @@ object Toolbars {
       
       inline def setSelectedThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "selectedThreadRowViews", value.asInstanceOf[js.Any])
       
-      inline def setSelectedThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "selectedThreadRowViews", js.Array(value :_*))
+      inline def setSelectedThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "selectedThreadRowViews", js.Array(value*))
       
       inline def setThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "threadRowViews", value.asInstanceOf[js.Any])
       
-      inline def setThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "threadRowViews", js.Array(value :_*))
+      inline def setThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "threadRowViews", js.Array(value*))
       
       inline def setThreadView(value: ThreadView): Self = StObject.set(x, "threadView", value.asInstanceOf[js.Any])
     }
@@ -288,7 +288,7 @@ object Toolbars {
       
       inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
       
-      inline def setPositionsVarargs(value: ToolbarButtonPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: ToolbarButtonPosition*): Self = StObject.set(x, "positions", js.Array(value*))
       
       inline def setThreadSection(value: SectionNames): Self = StObject.set(x, "threadSection", value.asInstanceOf[js.Any])
       
@@ -329,11 +329,11 @@ object Toolbars {
       
       inline def setSelectedThreadRowViews(value: js.Array[ThreadRowView]): Self = StObject.set(x, "selectedThreadRowViews", value.asInstanceOf[js.Any])
       
-      inline def setSelectedThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "selectedThreadRowViews", js.Array(value :_*))
+      inline def setSelectedThreadRowViewsVarargs(value: ThreadRowView*): Self = StObject.set(x, "selectedThreadRowViews", js.Array(value*))
       
       inline def setSelectedThreadViews(value: js.Array[ThreadView]): Self = StObject.set(x, "selectedThreadViews", value.asInstanceOf[js.Any])
       
-      inline def setSelectedThreadViewsVarargs(value: ThreadView*): Self = StObject.set(x, "selectedThreadViews", js.Array(value :_*))
+      inline def setSelectedThreadViewsVarargs(value: ThreadView*): Self = StObject.set(x, "selectedThreadViews", js.Array(value*))
     }
   }
   

@@ -13,14 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof filepond.filepond.FilePondOptions ]: -? filepond.filepond.FilePondOptions[P]} */ @JSImport("filepond", "FilePond")
 @js.native
-class FilePond () extends StObject {
+open class FilePond () extends StObject {
   
   /**
     * Adds an event listener to the given event.
     * @param event Name of the event, prefixed with `Filepond:`
     * @param fn Event handler
     */
-  def addEventListener(event: FilePondEventPrefixed, fn: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+  def addEventListener(event: FilePondEventPrefixed, fn: js.Function1[/* e */ Any, Unit]): Unit = js.native
   
   def addFile(source: String): js.Promise[FilePondFile] = js.native
   def addFile(source: String, options: Index & Partial[typings.filepond.anon.File]): js.Promise[FilePondFile] = js.native
@@ -92,21 +92,21 @@ class FilePond () extends StObject {
     * @param event Name of the event
     * @param fn Event handler, signature is identical to the callback method
     */
-  def off(event: FilePondEvent, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def off(event: FilePondEvent, fn: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   /**
     * Listen to an event.
     * @param event Name of the event
     * @param fn Event handler, signature is identical to the callback method
     */
-  def on(event: FilePondEvent, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def on(event: FilePondEvent, fn: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   /**
     * Listen to an event once and remove the handler.
     * @param event Name of the event
     * @param fn Event handler, signature is identical to the callback method
     */
-  def onOnce(event: FilePondEvent, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def onOnce(event: FilePondEvent, fn: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   /**
     * Starts preparing the file matching the given query, returns a Promise, the Promise is resolved with the file item and the output file { file, output }

@@ -2,9 +2,9 @@ package typings.matrixAppserviceBridge
 
 import typings.matrixAppservice.mod.AppServiceRegistration
 import typings.matrixAppserviceBridge.anon.Avatarurl
-import typings.matrixAppserviceBridge.anon.Id
 import typings.matrixAppserviceBridge.anon.State
 import typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache
+import typings.matrixAppserviceBridge.stateLookupMod.StateLookupEvent
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,14 +14,19 @@ object appServiceBotMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/app-service-bot", "AppServiceBot")
   @js.native
-  class AppServiceBot protected () extends StObject {
-    def this(client: js.Any, registration: AppServiceRegistration, memberCache: MembershipCache) = this()
+  open class AppServiceBot protected () extends StObject {
+    def this(
+      client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixClient */ Any,
+      userId: String,
+      registration: AppServiceRegistration,
+      memberCache: MembershipCache
+    ) = this()
     
-    /* private */ var client: js.Any = js.native
+    /* private */ var client: Any = js.native
     
-    /* private */ var exclusiveUserRegexes: js.Any = js.native
+    /* private */ var exclusiveUserRegexes: Any = js.native
     
-    def getClient(): js.Any = js.native
+    def getClient(): Any = js.native
     
     /**
       * Get a map of joined user IDs for the given room ID. The values in the map are objects
@@ -37,8 +42,8 @@ object appServiceBotMod {
       */
     def getJoinedRooms(): js.Promise[js.Array[String]] = js.native
     
-    def getRoomInfo(roomId: String): js.Promise[Id] = js.native
-    def getRoomInfo(roomId: String, joinedRoom: State): js.Promise[Id] = js.native
+    def getRoomInfo(roomId: String): js.Promise[RoomInfo] = js.native
+    def getRoomInfo(roomId: String, joinedRoom: State): js.Promise[RoomInfo] = js.native
     
     def getUserId(): String = js.native
     
@@ -48,6 +53,48 @@ object appServiceBotMod {
       */
     def isRemoteUser(userId: String): Boolean = js.native
     
-    /* private */ var memberCache: js.Any = js.native
+    /* private */ var memberCache: Any = js.native
+    
+    /* private */ var userId: Any = js.native
+  }
+  
+  trait RoomInfo extends StObject {
+    
+    var id: String
+    
+    var realJoinedUsers: js.Array[String]
+    
+    var remoteJoinedUsers: js.Array[String]
+    
+    var state: js.Array[StateLookupEvent]
+  }
+  object RoomInfo {
+    
+    inline def apply(
+      id: String,
+      realJoinedUsers: js.Array[String],
+      remoteJoinedUsers: js.Array[String],
+      state: js.Array[StateLookupEvent]
+    ): RoomInfo = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], realJoinedUsers = realJoinedUsers.asInstanceOf[js.Any], remoteJoinedUsers = remoteJoinedUsers.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RoomInfo]
+    }
+    
+    extension [Self <: RoomInfo](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setRealJoinedUsers(value: js.Array[String]): Self = StObject.set(x, "realJoinedUsers", value.asInstanceOf[js.Any])
+      
+      inline def setRealJoinedUsersVarargs(value: String*): Self = StObject.set(x, "realJoinedUsers", js.Array(value*))
+      
+      inline def setRemoteJoinedUsers(value: js.Array[String]): Self = StObject.set(x, "remoteJoinedUsers", value.asInstanceOf[js.Any])
+      
+      inline def setRemoteJoinedUsersVarargs(value: String*): Self = StObject.set(x, "remoteJoinedUsers", js.Array(value*))
+      
+      inline def setState(value: js.Array[StateLookupEvent]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateVarargs(value: StateLookupEvent*): Self = StObject.set(x, "state", js.Array(value*))
+    }
   }
 }

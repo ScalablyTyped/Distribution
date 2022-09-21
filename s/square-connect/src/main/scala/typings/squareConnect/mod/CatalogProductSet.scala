@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogProductSet")
 @js.native
-class CatalogProductSet () extends StObject {
+open class CatalogProductSet () extends StObject {
   
   /**
     * If set to `true`, the product set will include every item in the catalog.

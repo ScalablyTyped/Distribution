@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait ExtensionState
   /**
     * The time at which the version was last checked
     */
-  var lastVersionCheck: Date
+  var lastVersionCheck: js.Date
   
   var publisherName: String
   
@@ -26,8 +25,8 @@ object ExtensionState {
     extensionName: String,
     flags: ExtensionStateFlags,
     installationIssues: js.Array[InstalledExtensionStateIssue],
-    lastUpdated: Date,
-    lastVersionCheck: Date,
+    lastUpdated: js.Date,
+    lastVersionCheck: js.Date,
     publisherName: String,
     version: String
   ): ExtensionState = {
@@ -39,7 +38,7 @@ object ExtensionState {
     
     inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    inline def setLastVersionCheck(value: Date): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
+    inline def setLastVersionCheck(value: js.Date): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
     
     inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     

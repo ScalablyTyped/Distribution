@@ -24,7 +24,7 @@ trait SqlTaggedTemplateType extends StObject {
     // Value might be ReadonlyArray<ReadonlyArray<PrimitiveValueExpressionType>>,
   // or it can be infinitely nested array, e.g.
   // https://github.com/gajus/slonik/issues/44
-  tuples: js.Array[js.Array[js.Any]],
+  tuples: js.Array[js.Array[Any]],
     columnTypes: js.Array[String]
   ): UnnestSqlTokenType = js.native
 }

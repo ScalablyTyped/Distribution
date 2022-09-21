@@ -10,10 +10,10 @@ object gTranslateMod {
   
   @JSImport("material-ui/svg-icons/action/g-translate", JSImport.Default)
   @js.native
-  class default () extends ActionGTranslate
+  open class default () extends ActionGTranslate
   
   @JSImport("material-ui/svg-icons/action/g-translate", "ActionGTranslate")
   @js.native
-  class ActionGTranslate ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionGTranslate ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

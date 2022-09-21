@@ -6,110 +6,102 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for Analytics unsampled report resource.
-  */
 trait SchemaUnsampledReport extends StObject {
   
   /**
     * Account ID to which this unsampled report belongs.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Download details for a file stored in Google Cloud Storage.
     */
-  var cloudStorageDownloadDetails: js.UndefOr[BucketId] = js.undefined
+  var cloudStorageDownloadDetails: js.UndefOr[BucketId | Null] = js.undefined
   
   /**
     * Time this unsampled report was created.
     */
-  var created: js.UndefOr[String] = js.undefined
+  var created: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The dimensions for the unsampled report.
     */
-  var dimensions: js.UndefOr[String] = js.undefined
+  var dimensions: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The type of download you need to use for the report data file. Possible
-    * values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is
-    * `GOOGLE_DRIVE`, see the `driveDownloadDetails` field. If the value is
-    * `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
+    * The type of download you need to use for the report data file. Possible values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is `GOOGLE_DRIVE`, see the `driveDownloadDetails` field. If the value is `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
     */
-  var downloadType: js.UndefOr[String] = js.undefined
+  var downloadType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Download details for a file stored in Google Drive.
     */
-  var driveDownloadDetails: js.UndefOr[DocumentId] = js.undefined
+  var driveDownloadDetails: js.UndefOr[DocumentId | Null] = js.undefined
   
   /**
     * The end date for the unsampled report.
     */
-  var `end-date`: js.UndefOr[String] = js.undefined
+  var `end-date`: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The filters for the unsampled report.
     */
-  var filters: js.UndefOr[String] = js.undefined
+  var filters: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Unsampled report ID.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Resource type for an Analytics unsampled report.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The metrics for the unsampled report.
     */
-  var metrics: js.UndefOr[String] = js.undefined
+  var metrics: js.UndefOr[String | Null] = js.undefined
   
   /**
     * View (Profile) ID to which this unsampled report belongs.
     */
-  var profileId: js.UndefOr[String] = js.undefined
+  var profileId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The segment for the unsampled report.
     */
-  var segment: js.UndefOr[String] = js.undefined
+  var segment: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Link for this unsampled report.
     */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The start date for the unsampled report.
     */
-  var `start-date`: js.UndefOr[String] = js.undefined
+  var `start-date`: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Status of this unsampled report. Possible values are PENDING, COMPLETED,
-    * or FAILED.
+    * Status of this unsampled report. Possible values are PENDING, COMPLETED, or FAILED.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Title of the unsampled report.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Time this unsampled report was last modified.
     */
-  var updated: js.UndefOr[String] = js.undefined
+  var updated: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Web property ID to which this unsampled report belongs. The web property
-    * ID is of the form UA-XXXXX-YY.
+    * Web property ID to which this unsampled report belongs. The web property ID is of the form UA-XXXXX-YY.
     */
-  var webPropertyId: js.UndefOr[String] = js.undefined
+  var webPropertyId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUnsampledReport {
   
@@ -122,77 +114,115 @@ object SchemaUnsampledReport {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setCloudStorageDownloadDetails(value: BucketId): Self = StObject.set(x, "cloudStorageDownloadDetails", value.asInstanceOf[js.Any])
+    
+    inline def setCloudStorageDownloadDetailsNull: Self = StObject.set(x, "cloudStorageDownloadDetails", null)
     
     inline def setCloudStorageDownloadDetailsUndefined: Self = StObject.set(x, "cloudStorageDownloadDetails", js.undefined)
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
+    inline def setCreatedNull: Self = StObject.set(x, "created", null)
+    
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    
+    inline def setDimensionsNull: Self = StObject.set(x, "dimensions", null)
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     inline def setDownloadType(value: String): Self = StObject.set(x, "downloadType", value.asInstanceOf[js.Any])
     
+    inline def setDownloadTypeNull: Self = StObject.set(x, "downloadType", null)
+    
     inline def setDownloadTypeUndefined: Self = StObject.set(x, "downloadType", js.undefined)
     
     inline def setDriveDownloadDetails(value: DocumentId): Self = StObject.set(x, "driveDownloadDetails", value.asInstanceOf[js.Any])
+    
+    inline def setDriveDownloadDetailsNull: Self = StObject.set(x, "driveDownloadDetails", null)
     
     inline def setDriveDownloadDetailsUndefined: Self = StObject.set(x, "driveDownloadDetails", js.undefined)
     
     inline def `setEnd-date`(value: String): Self = StObject.set(x, "end-date", value.asInstanceOf[js.Any])
     
+    inline def `setEnd-dateNull`: Self = StObject.set(x, "end-date", null)
+    
     inline def `setEnd-dateUndefined`: Self = StObject.set(x, "end-date", js.undefined)
     
     inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersNull: Self = StObject.set(x, "filters", null)
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setMetrics(value: String): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
+    inline def setMetricsNull: Self = StObject.set(x, "metrics", null)
+    
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    
+    inline def setProfileIdNull: Self = StObject.set(x, "profileId", null)
     
     inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     inline def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
+    inline def setSegmentNull: Self = StObject.set(x, "segment", null)
+    
     inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    
+    inline def setSelfLinkNull: Self = StObject.set(x, "selfLink", null)
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     inline def `setStart-date`(value: String): Self = StObject.set(x, "start-date", value.asInstanceOf[js.Any])
     
+    inline def `setStart-dateNull`: Self = StObject.set(x, "start-date", null)
+    
     inline def `setStart-dateUndefined`: Self = StObject.set(x, "start-date", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
+    inline def setUpdatedNull: Self = StObject.set(x, "updated", null)
+    
     inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
+    
+    inline def setWebPropertyIdNull: Self = StObject.set(x, "webPropertyId", null)
     
     inline def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }

@@ -1,42 +1,20 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.componentsUndoMod.UndoProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object undoMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Undo", JSImport.Default)
+  @JSImport("wix-ui-icons-common/classic-editor/Undo", JSImport.Default)
   @js.native
-  val default: SFC[UndoProps] = js.native
+  val default: FC[UndoProps] = js.native
   
-  trait UndoProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String] = js.undefined
-  }
-  object UndoProps {
-    
-    inline def apply(): UndoProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[UndoProps]
-    }
-    
-    extension [Self <: UndoProps](x: Self) {
-      
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
-  
-  type _To = SFC[UndoProps]
+  type _To = FC[UndoProps]
   
   /* This means you don't have to write `default`, but can instead just say `undoMod.foo` */
-  override def _to: SFC[UndoProps] = default
+  override def _to: FC[UndoProps] = default
 }

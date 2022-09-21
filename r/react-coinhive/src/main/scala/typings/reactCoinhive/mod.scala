@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("react-coinhive", JSImport.Default)
   @js.native
-  class default () extends CoinHive
+  open class default () extends CoinHive
   /* static members */
   object default {
     
@@ -18,7 +18,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getMinerData(miner: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinerData")(miner.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getMinerData(miner: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinerData")(miner.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("react-coinhive", "default.src")
     @js.native
@@ -27,25 +27,24 @@ object mod {
   }
   
   @js.native
-  trait CoinHive
-    extends Component[CoinHiveProps, js.Any, js.Any] {
+  trait CoinHive extends Component[CoinHiveProps, Any, Any] {
     
-    def onInit(miner: js.Any): js.Any = js.native
+    def onInit(miner: Any): Any = js.native
     
-    def onStart(miner: js.Any): js.Any = js.native
+    def onStart(miner: Any): Any = js.native
     
-    def onStop(miner: js.Any): js.Any = js.native
+    def onStop(miner: Any): Any = js.native
   }
   
   trait CoinHiveProps extends StObject {
     
     var autoThreads: js.UndefOr[Boolean] = js.undefined
     
-    var onInit: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.undefined
+    var onInit: js.UndefOr[js.Function1[/* callback */ Any, Unit]] = js.undefined
     
-    var onStart: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.undefined
+    var onStart: js.UndefOr[js.Function1[/* callback */ Any, Unit]] = js.undefined
     
-    var onStop: js.UndefOr[js.Function1[/* callback */ js.Any, Unit]] = js.undefined
+    var onStop: js.UndefOr[js.Function1[/* callback */ Any, Unit]] = js.undefined
     
     var run: js.UndefOr[Boolean] = js.undefined
     
@@ -72,15 +71,15 @@ object mod {
       
       inline def setAutoThreadsUndefined: Self = StObject.set(x, "autoThreads", js.undefined)
       
-      inline def setOnInit(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
+      inline def setOnInit(value: /* callback */ Any => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
       
       inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
-      inline def setOnStart(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* callback */ Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      inline def setOnStop(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+      inline def setOnStop(value: /* callback */ Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
       
       inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       

@@ -1,6 +1,5 @@
 package typings.lab
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("lab", "assertions")
   @js.native
-  val assertions: js.Any = js.native
+  val assertions: Any = js.native
   
   inline def script(): Lab & ExperimentAlt & TestAlt = ^.asInstanceOf[js.Dynamic].applyDynamic("script")().asInstanceOf[Lab & ExperimentAlt & TestAlt]
   inline def script(options: ScriptOptions): Lab & ExperimentAlt & TestAlt = ^.asInstanceOf[js.Dynamic].applyDynamic("script")(options.asInstanceOf[js.Any]).asInstanceOf[Lab & ExperimentAlt & TestAlt]
@@ -40,11 +39,11 @@ object mod {
     }
   }
   
-  type AsyncPromise = js.Function0[js.Promise[js.Any]]
+  type AsyncPromise = js.Function0[js.Promise[Any]]
   
   type CleanupFunction = js.Function1[/* func */ js.Function1[/* next */ js.Function, Unit], Unit]
   
-  type DoneFunction = js.Function1[/* err */ js.UndefOr[Error], Unit]
+  type DoneFunction = js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   
   trait DoneNote extends StObject {
     
@@ -212,7 +211,7 @@ object mod {
   trait ScriptOptions extends StObject {
     
     /** Pass Lab CLI options */
-    var cli: js.UndefOr[js.Any] = js.undefined
+    var cli: js.UndefOr[Any] = js.undefined
     
     /** Enable auto-execution of the script? (true) */
     var schedule: js.UndefOr[Boolean] = js.undefined
@@ -226,7 +225,7 @@ object mod {
     
     extension [Self <: ScriptOptions](x: Self) {
       
-      inline def setCli(value: js.Any): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
+      inline def setCli(value: Any): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       
       inline def setCliUndefined: Self = StObject.set(x, "cli", js.undefined)
       
@@ -353,7 +352,7 @@ object mod {
     }
   }
   
-  type TestPromise = js.Function0[js.Promise[js.Any]]
+  type TestPromise = js.Function0[js.Promise[Any]]
   
   type TestWithOptionsArgs = js.Function3[/* desc */ String, /* options */ TestOptions, /* cb */ TestCallback, js.Object]
 }

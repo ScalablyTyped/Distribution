@@ -92,8 +92,8 @@ object tools {
     inline def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XConnectionSupplier = {
       val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -251,8 +251,8 @@ object tools {
       acquire: () => Unit,
       addIndex: (XPropertySet, XPropertySet) => Unit,
       dropIndex: (XPropertySet, String) => Unit,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XIndexAlteration = {
       val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addIndex = js.Any.fromFunction2(addIndex), dropIndex = js.Any.fromFunction2(dropIndex), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -302,8 +302,8 @@ object tools {
       acquire: () => Unit,
       addKey: (XPropertySet, XPropertySet) => Unit,
       dropKey: (XPropertySet, XPropertySet) => Unit,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XKeyAlteration = {
       val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addKey = js.Any.fromFunction2(addKey), dropKey = js.Any.fromFunction2(dropKey), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -479,8 +479,8 @@ object tools {
       addColumn: (XPropertySet, XPropertySet) => Unit,
       alterColumnByName: (XPropertySet, String, XPropertySet) => Unit,
       dropColumn: (XPropertySet, String) => Unit,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XTableAlteration = {
       val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addColumn = js.Any.fromFunction2(addColumn), alterColumnByName = js.Any.fromFunction3(alterColumnByName), dropColumn = js.Any.fromFunction2(dropColumn), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -617,8 +617,8 @@ object tools {
     inline def apply(
       ActiveConnection: XConnection,
       acquire: () => Unit,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit,
       rename: (XPropertySet, String) => Unit
     ): XTableRename = {
@@ -664,8 +664,8 @@ object tools {
       acquire: () => Unit,
       alterCommand: (XPropertySet, String) => Unit,
       getCommand: XPropertySet => String,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XViewAccess = {
       val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), alterCommand = js.Any.fromFunction2(alterCommand), getCommand = js.Any.fromFunction1(getCommand), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -13,7 +13,7 @@ object global {
       */
     @JSGlobal("AMap.ArrivalRange")
     @js.native
-    class ArrivalRange ()
+    open class ArrivalRange ()
       extends StObject
          with typings.amapJsApiArrivalRange.AMap.ArrivalRange
   }

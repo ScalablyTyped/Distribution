@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Opts
   extends StObject
-     with /* k */ StringDictionary[js.Any] {
+     with /* k */ StringDictionary[Any] {
   
   var mode: Mode
   

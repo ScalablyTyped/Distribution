@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DictoptionName
   extends StObject
      with //anything else
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   var headers: StringDictionary[String]
 }

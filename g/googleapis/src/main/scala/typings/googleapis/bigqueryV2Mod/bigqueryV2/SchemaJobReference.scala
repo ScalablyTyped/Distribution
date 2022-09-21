@@ -7,22 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaJobReference extends StObject {
   
   /**
-    * [Required] The ID of the job. The ID must contain only letters (a-z,
-    * A-Z), numbers (0-9), underscores (_), or dashes (-). The maximum length
-    * is 1,024 characters.
+    * [Required] The ID of the job. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-). The maximum length is 1,024 characters.
     */
-  var jobId: js.UndefOr[String] = js.undefined
+  var jobId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The geographic location of the job. See details at
-    * https://cloud.google.com/bigquery/docs/locations#specifying_your_location.
+    * The geographic location of the job. See details at https://cloud.google.com/bigquery/docs/locations#specifying_your_location.
     */
-  var location: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Required] The ID of the project containing this job.
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaJobReference {
   
@@ -35,13 +32,19 @@ object SchemaJobReference {
     
     inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
+    inline def setJobIdNull: Self = StObject.set(x, "jobId", null)
+    
     inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
     
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }

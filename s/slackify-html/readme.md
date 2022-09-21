@@ -11,9 +11,9 @@ convert simple html to slack markdown
 | Full name          | slackify-html |
 | Keywords           | html, parser, slack, to, html, markdown |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 33215 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1401.3333333333333 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/mrq-cz/slackify-html)

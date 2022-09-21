@@ -1,9 +1,9 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientDataflow.anon.AccesstokenAltCallback
-import typings.maximMazurokGapiClientDataflow.anon.CallbackFieldsKey
-import typings.maximMazurokGapiClientDataflow.anon.SnapshotIdUploadType
+import typings.maximMazurokGapiClientDataflow.anon.QuotaUserSnapshotId
+import typings.maximMazurokGapiClientDataflow.anon.QuotaUserUploadType
+import typings.maximMazurokGapiClientDataflow.anon.UploadTypeUploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProjectsResource extends StObject {
   
-  var catalogTemplates: CatalogTemplatesResource = js.native
-  
   /** Deletes a snapshot. */
   def deleteSnapshots(): Request[js.Object] = js.native
-  def deleteSnapshots(request: SnapshotIdUploadType): Request[js.Object] = js.native
+  def deleteSnapshots(request: QuotaUserSnapshotId): Request[js.Object] = js.native
   
   var jobs: JobsResource = js.native
   
@@ -23,11 +21,9 @@ trait ProjectsResource extends StObject {
   
   var snapshots: SnapshotsResource = js.native
   
-  var templateVersions: TemplateVersionsResource = js.native
-  
   var templates: TemplatesResource = js.native
   
-  def workerMessages(request: AccesstokenAltCallback, body: SendWorkerMessagesRequest): Request[SendWorkerMessagesResponse] = js.native
+  def workerMessages(request: QuotaUserUploadType, body: SendWorkerMessagesRequest): Request[SendWorkerMessagesResponse] = js.native
   /** Send a worker_message to the service. */
-  def workerMessages(request: CallbackFieldsKey): Request[SendWorkerMessagesResponse] = js.native
+  def workerMessages(request: UploadTypeUploadprotocol): Request[SendWorkerMessagesResponse] = js.native
 }

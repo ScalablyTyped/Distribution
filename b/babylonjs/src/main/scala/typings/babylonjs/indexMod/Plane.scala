@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "Plane")
 @js.native
-class Plane protected ()
+open class Plane protected ()
   extends typings.babylonjs.mathsIndexMod.Plane {
   /**
     * Creates a Plane object according to the given floats a, b, c, d and the plane equation : ax + by + cz + d = 0
@@ -73,6 +73,6 @@ object Plane {
   
   @JSImport("babylonjs/index", "Plane._TmpMatrix")
   @js.native
-  def _TmpMatrix: js.Any = js.native
-  inline def _TmpMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMatrix")(x.asInstanceOf[js.Any])
+  def _TmpMatrix: Any = js.native
+  inline def _TmpMatrix_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMatrix")(x.asInstanceOf[js.Any])
 }

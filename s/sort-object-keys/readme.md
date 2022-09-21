@@ -10,10 +10,10 @@ Sort an object's keys, including an optional key list
 | ------------------ | :-------------: |
 | Full name          | sort-object-keys |
 | Keywords           | keys, object, sort |
-| # releases         | 2 |
-| # dependents       | 30 |
-| # downloads        | 14203215 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2186419.3333333335 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/keithamus/sort-object-keys#readme)

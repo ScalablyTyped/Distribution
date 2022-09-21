@@ -10,10 +10,10 @@ A simple QR Code generator in pure JavaScript
 | ------------------ | :-------------: |
 | Full name          | qrcode-svg |
 | Keywords           | qrcode, svg |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 210183 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 81079.66666666667 |
+| # stars            | 314.0 |
 
 ## Links
 - [Homepage](https://github.com/papnkukn/qrcode-svg)

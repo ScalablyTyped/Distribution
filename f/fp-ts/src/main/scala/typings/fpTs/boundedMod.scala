@@ -8,9 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object boundedMod {
   
+  @JSImport("fp-ts/lib/Bounded", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("fp-ts/lib/Bounded", "boundedNumber")
   @js.native
   val boundedNumber: Bounded[Double] = js.native
+  
+  inline def clamp[T](B: Bounded[T]): js.Function1[/* a */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(B.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ T, T]]
+  
+  inline def reverse[T](B: Bounded[T]): Bounded[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(B.asInstanceOf[js.Any]).asInstanceOf[Bounded[T]]
   
   trait Bounded[A]
     extends StObject

@@ -10,10 +10,10 @@ A framework agnostic Javascript library that add powerful new features to standa
 | ------------------ | :-------------: |
 | Full name          | markitup |
 | Keywords           | editor, tag, markup, markdown, html |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 26494 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2879.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](http://markitup.jaysalvat.com)

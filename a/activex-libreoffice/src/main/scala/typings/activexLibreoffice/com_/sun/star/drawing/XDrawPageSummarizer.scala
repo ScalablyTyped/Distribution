@@ -21,7 +21,7 @@ object XDrawPageSummarizer {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     summarize: XDrawPages => XDrawPage
   ): XDrawPageSummarizer = {

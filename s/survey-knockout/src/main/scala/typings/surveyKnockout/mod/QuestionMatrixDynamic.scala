@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionMatrixDynamic")
 @js.native
-class QuestionMatrixDynamic protected () extends QuestionMatrixDynamicModel {
+open class QuestionMatrixDynamic protected () extends QuestionMatrixDynamicModel {
   def this(name: String) = this()
+  
+  var _implementor: QuestionMatrixDynamicImplementor = js.native
 }

@@ -45,9 +45,9 @@ trait Configuration extends StObject {
   
   var promiseConstructor: js.UndefOr[
     js.Function2[
-      /* resolve */ js.Function1[/* result */ js.Any, Unit], 
-      /* reject */ js.Function1[/* error */ js.Any, Unit], 
-      Thenable[js.Any]
+      /* resolve */ js.Function1[/* result */ Any, Unit], 
+      /* reject */ js.Function1[/* error */ Any, Unit], 
+      Thenable[Any]
     ]
   ] = js.undefined
   
@@ -158,7 +158,7 @@ object Configuration {
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     inline def setPromiseConstructor(
-      value: (/* resolve */ js.Function1[/* result */ js.Any, Unit], /* reject */ js.Function1[/* error */ js.Any, Unit]) => Thenable[js.Any]
+      value: (/* resolve */ js.Function1[/* result */ Any, Unit], /* reject */ js.Function1[/* error */ Any, Unit]) => Thenable[Any]
     ): Self = StObject.set(x, "promiseConstructor", js.Any.fromFunction2(value))
     
     inline def setPromiseConstructorUndefined: Self = StObject.set(x, "promiseConstructor", js.undefined)
@@ -205,7 +205,7 @@ object Configuration {
       
       inline def setHostnames(value: js.Array[String]): Self = StObject.set(x, "hostnames", value.asInstanceOf[js.Any])
       
-      inline def setHostnamesVarargs(value: String*): Self = StObject.set(x, "hostnames", js.Array(value :_*))
+      inline def setHostnamesVarargs(value: String*): Self = StObject.set(x, "hostnames", js.Array(value*))
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
@@ -315,7 +315,7 @@ object Configuration {
       
       inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
       
-      inline def setTransportsVarargs(value: LoggingTransport*): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: LoggingTransport*): Self = StObject.set(x, "transports", js.Array(value*))
     }
   }
   

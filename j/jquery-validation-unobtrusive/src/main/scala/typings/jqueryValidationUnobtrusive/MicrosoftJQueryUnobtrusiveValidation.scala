@@ -34,7 +34,7 @@ object MicrosoftJQueryUnobtrusiveValidation {
       
       inline def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value*))
     }
   }
   
@@ -51,7 +51,7 @@ object MicrosoftJQueryUnobtrusiveValidation {
     
     def addMethod(
       adapterName: String,
-      fn: js.Function3[/* value */ String, /* element */ Element, /* params */ js.Any, js.Any]
+      fn: js.Function3[/* value */ String, /* element */ Element, /* params */ Any, Any]
     ): Adapters = js.native
     
     def addMinMax(adapterName: String, minRuleName: String, maxRuleName: String, minMaxRuleName: String): Adapters = js.native

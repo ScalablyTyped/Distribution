@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result returned from ListLogMetrics.
-  */
 trait SchemaListLogMetricsResponse extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaListLogMetricsResponse extends StObject {
   var metrics: js.UndefOr[js.Array[SchemaLogMetric]] = js.undefined
   
   /**
-    * If there might be more results than appear in this response, then
-    * nextPageToken is included. To get the next set of results, call this
-    * method again using the value of nextPageToken as pageToken.
+    * If there might be more results than appear in this response, then nextPageToken is included. To get the next set of results, call this method again using the value of nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListLogMetricsResponse {
   
@@ -34,9 +29,11 @@ object SchemaListLogMetricsResponse {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: SchemaLogMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: SchemaLogMetric*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

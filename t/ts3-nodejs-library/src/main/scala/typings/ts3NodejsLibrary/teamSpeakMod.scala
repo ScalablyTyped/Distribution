@@ -1,8 +1,7 @@
 package typings.ts3NodejsLibrary
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import typings.std.Partial
 import typings.ts3NodejsLibrary.anon.Cgid
 import typings.ts3NodejsLibrary.anon.Cid
@@ -140,11 +139,11 @@ object teamSpeakMod {
   
   @JSImport("ts3-nodejs-library/lib/TeamSpeak", "QueryProtocol")
   @js.native
-  val QueryProtocol: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TeamSpeak.QueryProtocol */ js.Any = js.native
+  val QueryProtocol: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TeamSpeak.QueryProtocol */ Any = js.native
   
   @JSImport("ts3-nodejs-library/lib/TeamSpeak", "TeamSpeak")
   @js.native
-  class TeamSpeak protected () extends EventEmitter {
+  open class TeamSpeak protected () extends EventEmitter {
     def this(config: PartialConnectionParams) = this()
     
     def apiKeyAdd(props: ApiKeyAdd): js.Promise[typings.ts3NodejsLibrary.responseTypesMod.ApiKeyAdd] = js.native
@@ -154,7 +153,7 @@ object teamSpeakMod {
       * Deleting apikeys from other requires bVirtualserverApikeyManage
       * @param id the key id to delete
       */
-    def apiKeyDel(id: String): js.Promise[js.Array[js.Any]] = js.native
+    def apiKeyDel(id: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Lists all apikeys owned by the user, or of all users using cldbid=*.
@@ -179,8 +178,8 @@ object teamSpeakMod {
       * Removes one or all bans from the server
       * @param banid the banid to remove, if not provided it will remove all bans
       */
-    def banDel(): js.Promise[js.Array[js.Any]] = js.native
-    def banDel(banid: String): js.Promise[js.Array[js.Any]] = js.native
+    def banDel(): js.Promise[js.Array[Any]] = js.native
+    def banDel(banid: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays a list of active bans on the selected virtual server.
@@ -223,8 +222,8 @@ object teamSpeakMod {
       * @param channel the channel id
       * @param perm the permid or permsid
       */
-    def channelDelPerm(channel: ChannelType, perm: String): js.Promise[js.Array[js.Any]] = js.native
-    def channelDelPerm(channel: ChannelType, perm: Double): js.Promise[js.Array[js.Any]] = js.native
+    def channelDelPerm(channel: ChannelType, perm: String): js.Promise[js.Array[Any]] = js.native
+    def channelDelPerm(channel: ChannelType, perm: Double): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Deletes an existing channel by ID.
@@ -233,8 +232,8 @@ object teamSpeakMod {
       * @param channel the channel id
       * @param force if set to 1 the channel will be deleted even when client are in it
       */
-    def channelDelete(channel: ChannelType): js.Promise[js.Array[js.Any]] = js.native
-    def channelDelete(channel: ChannelType, force: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def channelDelete(channel: ChannelType): js.Promise[js.Array[Any]] = js.native
+    def channelDelete(channel: ChannelType, force: Boolean): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Changes a channels configuration using given properties.
@@ -242,8 +241,8 @@ object teamSpeakMod {
       * @param channel the channel id
       * @param properties the properties of the channel which should get changed
       */
-    def channelEdit(channel: ChannelType): js.Promise[js.Array[js.Any]] = js.native
-    def channelEdit(channel: ChannelType, properties: ChannelEdit): js.Promise[js.Array[js.Any]] = js.native
+    def channelEdit(channel: ChannelType): js.Promise[js.Array[Any]] = js.native
+    def channelEdit(channel: ChannelType, properties: ChannelEdit): js.Promise[js.Array[Any]] = js.native
     
     /**
       * displays a list of channels matching a given name pattern
@@ -257,8 +256,8 @@ object teamSpeakMod {
       * @param group the channelgroup id
       * @param perm the permission object
       */
-    def channelGroupAddPerm(group: GroupType, perm: Unit): Permission[js.Any] = js.native
-    def channelGroupAddPerm(group: GroupType, perm: PermType): js.Promise[js.Array[js.Any]] = js.native
+    def channelGroupAddPerm(group: GroupType, perm: Unit): Permission[Any] = js.native
+    def channelGroupAddPerm(group: GroupType, perm: PermType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays the IDs of all clients currently residing in the channel group.
@@ -304,8 +303,8 @@ object teamSpeakMod {
       * @param group the channelgroup id
       * @param perm the permid or permsid
       */
-    def channelGroupDelPerm(group: GroupType, perm: String): js.Promise[js.Array[js.Any]] = js.native
-    def channelGroupDelPerm(group: GroupType, perm: Double): js.Promise[js.Array[js.Any]] = js.native
+    def channelGroupDelPerm(group: GroupType, perm: String): js.Promise[js.Array[Any]] = js.native
+    def channelGroupDelPerm(group: GroupType, perm: Double): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays a list of channel groups available. Depending on your permissions, the output may also contain template groups.
@@ -338,7 +337,7 @@ object teamSpeakMod {
       * @param group the channelgroup id to rename
       * @param name new name of the ghannelgroup
       */
-    def channelGroupRename(group: GroupType, name: String): js.Promise[js.Array[js.Any]] = js.native
+    def channelGroupRename(group: GroupType, name: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays detailed configuration information about a channel including ID, topic, description, etc.
@@ -360,8 +359,8 @@ object teamSpeakMod {
       * @param parent channel parent id
       * @param order channel sort order
       */
-    def channelMove(channel: ChannelType, parent: ChannelType): js.Promise[js.Array[js.Any]] = js.native
-    def channelMove(channel: ChannelType, parent: ChannelType, order: Double): js.Promise[js.Array[js.Any]] = js.native
+    def channelMove(channel: ChannelType, parent: ChannelType): js.Promise[js.Array[Any]] = js.native
+    def channelMove(channel: ChannelType, parent: ChannelType, order: Double): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays a list of permissions defined for a channel.
@@ -376,8 +375,8 @@ object teamSpeakMod {
       * @param channel the channel id
       * @param perm the permission object
       */
-    def channelSetPerm(channel: ChannelType, perm: Unit): Permission[js.Any] = js.native
-    def channelSetPerm(channel: ChannelType, perm: PermType): js.Promise[js.Array[js.Any]] = js.native
+    def channelSetPerm(channel: ChannelType, perm: Unit): Permission[Any] = js.native
+    def channelSetPerm(channel: ChannelType, perm: PermType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Adds a set of specified permissions to a channel.
@@ -387,11 +386,11 @@ object teamSpeakMod {
       * @example
       * TeamSpeak.channelSetPerms(5, [{ permsid: "i_channel_needed_modify_power", permvalue: 75 }])
       */
-    def channelSetPerms(channel: ChannelType, permissions: js.Array[Permid]): js.Promise[js.Array[js.Any]] = js.native
+    def channelSetPerms(channel: ChannelType, permissions: js.Array[Permid]): js.Promise[js.Array[Any]] = js.native
     
-    /* private */ var channelgroups: js.Any = js.native
+    /* private */ var channelgroups: Any = js.native
     
-    /* private */ var channels: js.Any = js.native
+    /* private */ var channels: Any = js.native
     
     /**
       * Adds a set of specified permissions to a client.
@@ -400,8 +399,8 @@ object teamSpeakMod {
       * @param client the client database id
       * @param perm the permission object
       */
-    def clientAddPerm(client: ClientType, perm: Unit): Permission[js.Any] = js.native
-    def clientAddPerm(client: ClientType, perm: PermType): js.Promise[js.Array[js.Any]] = js.native
+    def clientAddPerm(client: ClientType, perm: Unit): Permission[Any] = js.native
+    def clientAddPerm(client: ClientType, perm: PermType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Adds one or more servergroups to a client.
@@ -409,20 +408,20 @@ object teamSpeakMod {
       * @param client one or more client database ids which should be added
       * @param group one or more servergroup ids which the client should be added to
       */
-    def clientAddServerGroup(client: ClientType, group: MultiGroupType): js.Promise[js.Array[js.Any]] = js.native
+    def clientAddServerGroup(client: ClientType, group: MultiGroupType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Deletes a clients properties from the database.
       * @param client the client database id which should be deleted
       */
-    def clientDbDelete(client: ClientType): js.Promise[js.Array[js.Any]] = js.native
+    def clientDbDelete(client: ClientType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Changes a clients settings using given properties.
       * @param client the client database id which should be edited
       * @param properties the properties which should be modified
       */
-    def clientDbEdit(client: ClientType, properties: ClientDBEdit): js.Promise[js.Array[js.Any]] = js.native
+    def clientDbEdit(client: ClientType, properties: ClientDBEdit): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays a list of client database IDs matching a given pattern.
@@ -461,22 +460,22 @@ object teamSpeakMod {
       * @param client the client database id
       * @param perm the permid or permsid
       */
-    def clientDelPerm(client: ClientType, perm: String): js.Promise[js.Array[js.Any]] = js.native
-    def clientDelPerm(client: ClientType, perm: Double): js.Promise[js.Array[js.Any]] = js.native
+    def clientDelPerm(client: ClientType, perm: String): js.Promise[js.Array[Any]] = js.native
+    def clientDelPerm(client: ClientType, perm: Double): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Removes one or more servergroups from the client.
       * @param client one or more client database ids which should be added
       * @param groups one or more servergroup ids which the client should be removed from
       */
-    def clientDelServerGroup(client: ClientType, groups: MultiGroupType): js.Promise[js.Array[js.Any]] = js.native
+    def clientDelServerGroup(client: ClientType, groups: MultiGroupType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * edits a specific client
       * @param client the client id to modify
       * @param properties the properties to change
       */
-    def clientEdit(client: ClientType, properties: ClientEdit): js.Promise[js.Array[js.Any]] = js.native
+    def clientEdit(client: ClientType, properties: ClientEdit): js.Promise[js.Array[Any]] = js.native
     
     /**
       * displays a list of clients matching a given name pattern
@@ -527,8 +526,8 @@ object teamSpeakMod {
       * @param reasonmsg the message the client should receive when getting kicked
       * @param continueOnError ignore errors
       */
-    def clientKick(client: ClientType, reasonid: ReasonIdentifier, reasonmsg: String): js.Promise[js.Array[js.Any]] = js.native
-    def clientKick(client: ClientType, reasonid: ReasonIdentifier, reasonmsg: String, continueOnError: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def clientKick(client: ClientType, reasonid: ReasonIdentifier, reasonmsg: String): js.Promise[js.Array[Any]] = js.native
+    def clientKick(client: ClientType, reasonid: ReasonIdentifier, reasonmsg: String, continueOnError: Boolean): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Lists all Clients with a given Filter
@@ -543,10 +542,10 @@ object teamSpeakMod {
       * @param cpw the channel password
       * @param continueOnError ignore errors
       */
-    def clientMove(client: ClientType, channel: ChannelType): js.Promise[js.Array[js.Any]] = js.native
-    def clientMove(client: ClientType, channel: ChannelType, cpw: String): js.Promise[js.Array[js.Any]] = js.native
-    def clientMove(client: ClientType, channel: ChannelType, cpw: String, continueOnError: Boolean): js.Promise[js.Array[js.Any]] = js.native
-    def clientMove(client: ClientType, channel: ChannelType, cpw: Unit, continueOnError: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def clientMove(client: ClientType, channel: ChannelType): js.Promise[js.Array[Any]] = js.native
+    def clientMove(client: ClientType, channel: ChannelType, cpw: String): js.Promise[js.Array[Any]] = js.native
+    def clientMove(client: ClientType, channel: ChannelType, cpw: String, continueOnError: Boolean): js.Promise[js.Array[Any]] = js.native
+    def clientMove(client: ClientType, channel: ChannelType, cpw: Unit, continueOnError: Boolean): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays a list of permissions defined for a client
@@ -561,7 +560,7 @@ object teamSpeakMod {
       * @param client the client id
       * @param msg the message the client should receive
       */
-    def clientPoke(client: ClientType, msg: String): js.Promise[js.Array[js.Any]] = js.native
+    def clientPoke(client: ClientType, msg: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Updates your own ServerQuery login credentials using a specified username.
@@ -574,17 +573,17 @@ object teamSpeakMod {
       * Change your ServerQuery clients settings using given properties.
       * @param props the properties which should be changed
       */
-    def clientUpdate(props: ClientUpdate): js.Promise[js.Array[js.Any]] = js.native
+    def clientUpdate(props: ClientUpdate): js.Promise[js.Array[Any]] = js.native
     
-    /* private */ var clients: js.Any = js.native
+    /* private */ var clients: Any = js.native
     
     /**
       * Submits a complaint about the client with database ID dbid to the server.
       * @param client filter only for certain client with the given database id
       * @param message the Message which should be added
       */
-    def complainAdd(client: ClientType): js.Promise[js.Array[js.Any]] = js.native
-    def complainAdd(client: ClientType, message: String): js.Promise[js.Array[js.Any]] = js.native
+    def complainAdd(client: ClientType): js.Promise[js.Array[Any]] = js.native
+    def complainAdd(client: ClientType, message: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Deletes the complaint about the client with ID tcldbid submitted by the client with ID fdbid from the server.
@@ -592,8 +591,8 @@ object teamSpeakMod {
       * @param targetClient the target client database id
       * @param fromClient the client database id which filed the report
       */
-    def complainDel(targetClient: ClientType): js.Promise[js.Array[js.Any]] = js.native
-    def complainDel(targetClient: ClientType, fromClient: ClientType): js.Promise[js.Array[js.Any]] = js.native
+    def complainDel(targetClient: ClientType): js.Promise[js.Array[Any]] = js.native
+    def complainDel(targetClient: ClientType, fromClient: ClientType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays a list of complaints on the selected virtual server.
@@ -615,19 +614,19 @@ object teamSpeakMod {
       */
     def connectionInfo(): js.Promise[ServerRequestConnectionInfo] = js.native
     
-    /* private */ var context: js.Any = js.native
+    /* private */ var context: Any = js.native
     
     /** creates a channel group perm builder for the specified channel group id */
-    /* private */ var createChannelGroupPermBuilder: js.Any = js.native
+    /* private */ var createChannelGroupPermBuilder: Any = js.native
     
     /** creates a channel perm builder for the specified channel id */
-    /* private */ var createChannelPermBuilder: js.Any = js.native
+    /* private */ var createChannelPermBuilder: Any = js.native
     
     /** creates a client perm builder for the specified client database id */
-    /* private */ var createClientPermBuilder: js.Any = js.native
+    /* private */ var createClientPermBuilder: Any = js.native
     
     /** creates a servergroup perm builder for the specified server group id */
-    /* private */ var createServerGroupPermBuilder: js.Any = js.native
+    /* private */ var createServerGroupPermBuilder: Any = js.native
     
     /**
       * displays a snapshot of the selected virtual server containing all settings,
@@ -646,7 +645,7 @@ object teamSpeakMod {
       * @param client the client Database ID which should be changed
       * @param ident the key which should be deleted
       */
-    def customDelete(client: ClientType, ident: String): js.Promise[js.Array[js.Any]] = js.native
+    def customDelete(client: ClientType, ident: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * returns a list of custom properties for the client specified with cldbid.
@@ -670,15 +669,15 @@ object teamSpeakMod {
       * @param ident the key which should be set
       * @param value the value which should be set
       */
-    def customSet(client: ClientType, ident: String, value: String): js.Promise[js.Array[js.Any]] = js.native
+    def customSet(client: ClientType, ident: String, value: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Deletes the channel group. If force is set to 1, the channel group will be deleted even if there are clients within.
       * @param group the channelgroup id
       * @param force if set to true the channelgroup will be deleted even when clients are in it
       */
-    def deleteChannelGroup(group: GroupType): js.Promise[js.Array[js.Any]] = js.native
-    def deleteChannelGroup(group: GroupType, force: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def deleteChannelGroup(group: GroupType): js.Promise[js.Array[Any]] = js.native
+    def deleteChannelGroup(group: GroupType, force: Boolean): js.Promise[js.Array[Any]] = js.native
     
     /**
       * displays a snapshot of the selected virtual server containing all settings,
@@ -691,22 +690,22 @@ object teamSpeakMod {
       * @param keepfiles wether it should keep the file mapping
       * @param version of the snapshot with 0 the version of the current teamspeak server is being used
       */
-    def deploySnapshot(data: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String, password: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String, password: String, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String, password: String, keepfiles: Boolean, version: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String, password: String, keepfiles: Unit, version: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Boolean, version: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Unit, version: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: Unit, password: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Boolean, version: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Unit, version: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Boolean): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Boolean, version: String): js.Promise[js.Array[js.Any]] = js.native
-    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Unit, version: String): js.Promise[js.Array[js.Any]] = js.native
+    def deploySnapshot(data: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: String, keepfiles: Boolean): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: String, keepfiles: Boolean, version: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: String, keepfiles: Unit, version: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Boolean): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Boolean, version: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: String, password: Unit, keepfiles: Unit, version: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Boolean): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Boolean, version: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: String, keepfiles: Unit, version: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Boolean): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Boolean, version: String): js.Promise[js.Array[Any]] = js.native
+    def deploySnapshot(data: String, salt: Unit, password: Unit, keepfiles: Unit, version: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * returns the file in the channel with the given path
@@ -729,61 +728,61 @@ object teamSpeakMod {
       * Gets called when a channel gets edited
       * @param event the raw teamspeak event
       */
-    /* private */ var evchannelcreated: js.Any = js.native
+    /* private */ var evchannelcreated: Any = js.native
     
     /**
       * Gets called when a channel gets deleted
       * @param event the raw teamspeak event
       */
-    /* private */ var evchanneldeleted: js.Any = js.native
+    /* private */ var evchanneldeleted: Any = js.native
     
     /**
       * Gets called when a channel gets edited
       * @param event the raw teamspeak event
       */
-    /* private */ var evchanneledited: js.Any = js.native
+    /* private */ var evchanneledited: Any = js.native
     
     /**
       * Gets called when a channel gets moved
       * @param event the raw teamspeak event
       */
-    /* private */ var evchannelmoved: js.Any = js.native
+    /* private */ var evchannelmoved: Any = js.native
     
     /**
       * Gets called when a client connects to the TeamSpeak Server
       * @param event the raw teamspeak event
       */
-    /* private */ var evcliententerview: js.Any = js.native
+    /* private */ var evcliententerview: Any = js.native
     
     /**
       * Gets called when a client discconnects from the TeamSpeak Server
       * @param event the raw teamspeak event
       */
-    /* private */ var evclientleftview: js.Any = js.native
+    /* private */ var evclientleftview: Any = js.native
     
     /**
       * Gets called when a client moves to a different channel
       * @param event the raw teamspeak event
       */
-    /* private */ var evclientmoved: js.Any = js.native
+    /* private */ var evclientmoved: Any = js.native
     
     /**
       * Gets called when the server has been edited
       * @param event the raw teamspeak event
       */
-    /* private */ var evserveredited: js.Any = js.native
+    /* private */ var evserveredited: Any = js.native
     
     /**
       * Gets called when a chat message gets received
       * @param event the raw teamspeak event
       */
-    /* private */ var evtextmessage: js.Any = js.native
+    /* private */ var evtextmessage: Any = js.native
     
     /**
       * Gets called when a client uses a privilege key
       * @param event the raw teamspeak event
       */
-    /* private */ var evtokenused: js.Any = js.native
+    /* private */ var evtokenused: Any = js.native
     
     /**
       * Sends a raw command to the TeamSpeak Server.
@@ -803,8 +802,8 @@ object teamSpeakMod {
       * @param dirname path to the directory
       * @param cpw the channel password
       */
-    def ftCreateDir(channel: ChannelType, dirname: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftCreateDir(channel: ChannelType, dirname: String, cpw: String): js.Promise[js.Array[js.Any]] = js.native
+    def ftCreateDir(channel: ChannelType, dirname: String): js.Promise[js.Array[Any]] = js.native
+    def ftCreateDir(channel: ChannelType, dirname: String, cpw: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Deletes one or more files stored in a channels file repository
@@ -812,8 +811,8 @@ object teamSpeakMod {
       * @param name path to the file to delete
       * @param cpw the channel password
       */
-    def ftDeleteFile(channel: ChannelType, name: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftDeleteFile(channel: ChannelType, name: String, cpw: String): js.Promise[js.Array[js.Any]] = js.native
+    def ftDeleteFile(channel: ChannelType, name: String): js.Promise[js.Array[Any]] = js.native
+    def ftDeleteFile(channel: ChannelType, name: String, cpw: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays detailed information about one or more specified files stored in a channels file repository.
@@ -862,22 +861,22 @@ object teamSpeakMod {
       * @param cpw the channel password from where the file gets renamed
       * @param tcpw the channel password from where the file will get transferred to
       */
-    def ftRenameFile(channel: ChannelType, oldname: String, newname: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: String, tcpw: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: Unit, tcpw: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: String, tcpw: String): js.Promise[js.Array[js.Any]] = js.native
-    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: Unit, tcpw: String): js.Promise[js.Array[js.Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String): js.Promise[js.Array[Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String): js.Promise[js.Array[Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: String): js.Promise[js.Array[Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: String, tcpw: String): js.Promise[js.Array[Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: String, cpw: Unit, tcpw: String): js.Promise[js.Array[Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: String): js.Promise[js.Array[Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: String, tcpw: String): js.Promise[js.Array[Any]] = js.native
+    def ftRenameFile(channel: ChannelType, oldname: String, newname: String, tcid: Unit, cpw: Unit, tcpw: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Stops the running file transfer with server-side ID serverftfid.
       * @param serverftfid server file transfer id
       * @param del
       */
-    def ftStop(serverftfid: Double): js.Promise[js.Array[js.Any]] = js.native
-    def ftStop(serverftfid: Double, del: Double): js.Promise[js.Array[js.Any]] = js.native
+    def ftStop(serverftfid: Double): js.Promise[js.Array[Any]] = js.native
+    def ftStop(serverftfid: Double, del: Double): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Retrieves a Single Channel by the given Channel ID
@@ -931,12 +930,12 @@ object teamSpeakMod {
       * gets the icon id of a resolveable Perm List
       * @param permlist expects a promise which resolves to a permission list
       */
-    def getIconId(permlist: js.Promise[js.Array[Permission[js.Any]]]): js.Promise[Double] = js.native
+    def getIconId(permlist: js.Promise[js.Array[Permission[Any]]]): js.Promise[Double] = js.native
     
     /**
       * retrieves an instance of the Permission
       */
-    /* private */ var getPermBuilder: js.Any = js.native
+    /* private */ var getPermBuilder: Any = js.native
     
     /**
       * Retrieves a single ServerGroup by the given ServerGroup ID
@@ -954,7 +953,7 @@ object teamSpeakMod {
       * Sends a text message to all clients on all virtual servers in the TeamSpeak 3 Server instance.
       * @param msg message which will be sent to all instances
       */
-    def gm(msg: String): js.Promise[js.Array[js.Any]] = js.native
+    def gm(msg: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * parses the whole cache by given objects
@@ -963,13 +962,13 @@ object teamSpeakMod {
       * @param key the key used to identify the object inside the cache
       * @param node the class which should be used
       */
-    /* private */ var handleCache: js.Any = js.native
+    /* private */ var handleCache: Any = js.native
     
     /** subscribes to some query events if necessary */
-    /* private */ var handleNewListener: js.Any = js.native
+    /* private */ var handleNewListener: Any = js.native
     
     /** handles initial commands after successfully connecting to a TeamSpeak Server */
-    /* private */ var handleReady: js.Any = js.native
+    /* private */ var handleReady: Any = js.native
     
     /**
       * Displays detailed connection information about the server instance including uptime,
@@ -981,13 +980,13 @@ object teamSpeakMod {
       * wether the query client should get handled or not
       * @param type the client type
       */
-    /* private */ var ignoreQueryClient: js.Any = js.native
+    /* private */ var ignoreQueryClient: Any = js.native
     
     /**
       * Changes the server instance configuration using given properties.
       * @param properties the props you want to change
       */
-    def instanceEdit(properties: InstanceEdit): js.Promise[js.Array[js.Any]] = js.native
+    def instanceEdit(properties: InstanceEdit): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays the server instance configuration including database revision number,
@@ -1000,7 +999,7 @@ object teamSpeakMod {
       * @param event event name which was subscribed to
       * @param id context to check
       */
-    /* private */ var isSubscribedToEvent: js.Any = js.native
+    /* private */ var isSubscribedToEvent: Any = js.native
     
     /**
       * Writes a custom entry into the servers log.
@@ -1009,9 +1008,9 @@ object teamSpeakMod {
       * @param loglevel level 1 to 4
       * @param logmsg message to log
       */
-    def logAdd(loglevel: LogLevel, logmsg: String): js.Promise[js.Array[js.Any]] = js.native
+    def logAdd(loglevel: LogLevel, logmsg: String): js.Promise[js.Array[Any]] = js.native
     
-    def logQueryTiming(): js.Promise[js.Array[js.Any]] = js.native
+    def logQueryTiming(): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays a specified number of entries from the servers log.
@@ -1043,10 +1042,10 @@ object teamSpeakMod {
       * @param username the username which you want to login with
       * @param password the password you want to login with
       */
-    def login(username: String, password: String): js.Promise[js.Array[js.Any]] = js.native
+    def login(username: String, password: String): js.Promise[js.Array[Any]] = js.native
     
     /** Deselects the active virtual server and logs out from the server instance. */
-    def logout(): js.Promise[js.Array[js.Any]] = js.native
+    def logout(): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Sends an offline message to the client specified by uid.
@@ -1054,13 +1053,13 @@ object teamSpeakMod {
       * @param subject subject of the message
       * @param message message text
       */
-    def messageAdd(client: ClientType, subject: String, message: String): js.Promise[js.Array[js.Any]] = js.native
+    def messageAdd(client: ClientType, subject: String, message: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Sends an offline message to the client specified by uid.
       * @param msgid the message id which should be deleted
       */
-    def messageDel(msgid: String): js.Promise[js.Array[js.Any]] = js.native
+    def messageDel(msgid: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays an existing offline message with the given id from the inbox.
@@ -1079,8 +1078,8 @@ object teamSpeakMod {
       * @param msgid the message id
       * @param flag if flag is set to 1 the message will be marked as read
       */
-    def messageUpdate(msgid: String): js.Promise[js.Array[js.Any]] = js.native
-    def messageUpdate(msgid: String, flag: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def messageUpdate(msgid: String): js.Promise[js.Array[Any]] = js.native
+    def messageUpdate(msgid: String, flag: Boolean): js.Promise[js.Array[Any]] = js.native
     
     @JSName("on")
     def on_channelcreate(event: channelcreate, listener: js.Function1[/* event */ ChannelCreate, Unit]): this.type = js.native
@@ -1100,11 +1099,11 @@ object teamSpeakMod {
     @JSName("on")
     def on_clientmoved(event: clientmoved, listener: js.Function1[/* event */ ClientMoved, Unit]): this.type = js.native
     @JSName("on")
-    def on_close(event: close, listener: js.Function1[/* error */ js.UndefOr[Error], Unit]): this.type = js.native
+    def on_close(event: close, listener: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): this.type = js.native
     @JSName("on")
     def on_debug(event: debug, listener: js.Function1[/* event */ Debug, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_flooding(event: flooding, listener: js.Function1[/* error */ ResponseError, Unit]): this.type = js.native
     @JSName("on")
@@ -1170,7 +1169,7 @@ object teamSpeakMod {
     /** priorizes the next command, this commands will be first in execution */
     def priorize(): this.type = js.native
     
-    /* private */ var priorizeNextCommand: js.Any = js.native
+    /* private */ var priorizeNextCommand: Any = js.native
     
     /**
       * Create a new token.+
@@ -1182,52 +1181,52 @@ object teamSpeakMod {
       * @param description token description
       * @param customset token custom set
       */
-    def privilegeKeyAdd(tokentype: ChannelGroup, group: GroupType, channel: ChannelType): js.Any = js.native
-    def privilegeKeyAdd(tokentype: ChannelGroup, group: GroupType, channel: ChannelType, description: String): js.Any = js.native
+    def privilegeKeyAdd(tokentype: ChannelGroup, group: GroupType, channel: ChannelType): Any = js.native
+    def privilegeKeyAdd(tokentype: ChannelGroup, group: GroupType, channel: ChannelType, description: String): Any = js.native
     def privilegeKeyAdd(
       tokentype: ChannelGroup,
       group: GroupType,
       channel: ChannelType,
       description: String,
       customset: String
-    ): js.Any = js.native
+    ): Any = js.native
     def privilegeKeyAdd(
       tokentype: ChannelGroup,
       group: GroupType,
       channel: ChannelType,
       description: Unit,
       customset: String
-    ): js.Any = js.native
+    ): Any = js.native
     def privilegeKeyAdd(
       tokentype: ServerGroup,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType
-    ): js.Any = js.native
+    ): Any = js.native
     def privilegeKeyAdd(
       tokentype: ServerGroup,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
       channel: Unit,
       description: String
-    ): js.Any = js.native
+    ): Any = js.native
     def privilegeKeyAdd(
       tokentype: ServerGroup,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
       channel: Unit,
       description: String,
       customset: String
-    ): js.Any = js.native
+    ): Any = js.native
     def privilegeKeyAdd(
       tokentype: ServerGroup,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType,
       channel: Unit,
       description: Unit,
       customset: String
-    ): js.Any = js.native
+    ): Any = js.native
     
     /**
       * Deletes an existing token matching the token key specified with token.
       * @param token the token which should be deleted
       */
-    def privilegeKeyDelete(token: String): js.Promise[js.Array[js.Any]] = js.native
+    def privilegeKeyDelete(token: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Retrieves a list of privilege keys available including their type and group IDs.
@@ -1239,9 +1238,9 @@ object teamSpeakMod {
       * Please note that the server will automatically delete the token after it has been used.
       * @param token the token which should be used
       */
-    def privilegeKeyUse(token: String): js.Promise[js.Array[js.Any]] = js.native
+    def privilegeKeyUse(token: String): js.Promise[js.Array[Any]] = js.native
     
-    /* private */ var query: js.Any = js.native
+    /* private */ var query: Any = js.native
     
     /**
       * Adds a new query client login, or enables query login for existing clients.
@@ -1258,7 +1257,7 @@ object teamSpeakMod {
       * When no virtual server has been selected, deletes global query logins instead.
       * @param client client database id or teamspeak client object
       */
-    def queryLoginDel(client: ClientType): js.Promise[js.Array[js.Any]] = js.native
+    def queryLoginDel(client: ClientType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * List existing query client logins.
@@ -1278,7 +1277,7 @@ object teamSpeakMod {
     def queryLoginList(pattern: Unit, start: Unit, duration: Double): js.Promise[js.Array[QueryLoginEntry]] = js.native
     
     /** closes the ServerQuery connection to the TeamSpeak server instance. */
-    def quit(): js.Promise[js.Array[js.Any]] = js.native
+    def quit(): js.Promise[js.Array[Any]] = js.native
     
     /**
       * attempts a reconnect to the teamspeak server with full context features
@@ -1295,11 +1294,22 @@ object teamSpeakMod {
       * @param event the event on which should be subscribed
       * @param id the channel id, only required when subscribing to the "channel" event
       */
-    def registerEvent(event: String): js.Promise[js.Array[js.Any]] = js.native
-    def registerEvent(event: String, id: String): js.Promise[js.Array[js.Any]] = js.native
+    def registerEvent(event: String): js.Promise[js.Array[Any]] = js.native
+    def registerEvent(event: String, id: String): js.Promise[js.Array[Any]] = js.native
     
-    def sendTextMessage(target: ChannelType, targetmode: CHANNEL, msg: String): js.Any = js.native
-    def sendTextMessage(target: ClientType, targetmode: CLIENT, msg: String): js.Any = js.native
+    /** retrieves the own query client as TeamSpeakClient instance */
+    def self(): js.Promise[TeamSpeakClient] = js.native
+    
+    /**
+      * sends a message to a teamspeak channel,
+      * if the client is not in this channel he will move into the channel, send the message and move back after
+      * @param target the target channel to send the message
+      * @param msg the message which should be sent
+      */
+    def sendChannelMessage(target: ChannelType, msg: String): js.Promise[Unit] = js.native
+    
+    def sendTextMessage(target: ChannelType, targetmode: CHANNEL, msg: String): Any = js.native
+    def sendTextMessage(target: ClientType, targetmode: CLIENT, msg: String): Any = js.native
     /**
       * Sends a text message a specified target.
       * The type of the target is determined by targetmode while target specifies the ID of the recipient,
@@ -1309,7 +1319,7 @@ object teamSpeakMod {
       * @param msg the message the client should receive
       */
     @JSName("sendTextMessage")
-    def sendTextMessage_0(target: `0`, targetmode: SERVER, msg: String): js.Any = js.native
+    def sendTextMessage_0(target: `0`, targetmode: SERVER, msg: String): Any = js.native
     
     /**
       * Creates a new virtual server using the given properties and displays its ID, port and initial administrator privilege key.
@@ -1322,13 +1332,13 @@ object teamSpeakMod {
       * deletes the teamspeak server
       * @param server the server id to delete
       */
-    def serverDelete(server: ServerType): js.Promise[js.Array[js.Any]] = js.native
+    def serverDelete(server: ServerType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Changes the selected virtual servers configuration using given properties.
       * Note that this command accepts multiple properties which means that you're able to change all settings of the selected virtual server at once.
       */
-    def serverEdit(properties: typings.ts3NodejsLibrary.propertyTypesMod.ServerEdit): js.Promise[js.Array[js.Any]] = js.native
+    def serverEdit(properties: typings.ts3NodejsLibrary.propertyTypesMod.ServerEdit): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Adds one or more clients to a server group specified with sgid.
@@ -1339,7 +1349,7 @@ object teamSpeakMod {
     def serverGroupAddClient(
       client: MultiClientType,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType
-    ): js.Promise[js.Array[js.Any]] = js.native
+    ): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Adds a specified permissions to the server group.
@@ -1347,8 +1357,8 @@ object teamSpeakMod {
       * @param group the serverGroup id
       * @param perm the permission object
       */
-    def serverGroupAddPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: Unit): Permission[js.Any] = js.native
-    def serverGroupAddPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: PermType): js.Promise[js.Array[js.Any]] = js.native
+    def serverGroupAddPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: Unit): Permission[Any] = js.native
+    def serverGroupAddPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: PermType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * returns the IDs of all clients currently residing in the server group.
@@ -1420,8 +1430,8 @@ object teamSpeakMod {
       * @param group the servergroup id
       * @param force if set to 1 the servergoup will be deleted even when clients stil belong to this group
       */
-    def serverGroupDel(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType): js.Promise[js.Array[js.Any]] = js.native
-    def serverGroupDel(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, force: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def serverGroupDel(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType): js.Promise[js.Array[Any]] = js.native
+    def serverGroupDel(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, force: Boolean): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Removes one or more clients from the server group specified with sgid.
@@ -1431,7 +1441,7 @@ object teamSpeakMod {
     def serverGroupDelClient(
       client: MultiClientType,
       group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType
-    ): js.Promise[js.Array[js.Any]] = js.native
+    ): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Removes a set of specified permissions from the server group.
@@ -1439,8 +1449,8 @@ object teamSpeakMod {
       * @param group the servergroup id
       * @param perm the permid or permsid
       */
-    def serverGroupDelPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: String): js.Promise[js.Array[js.Any]] = js.native
-    def serverGroupDelPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: Double): js.Promise[js.Array[js.Any]] = js.native
+    def serverGroupDelPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: String): js.Promise[js.Array[Any]] = js.native
+    def serverGroupDelPerm(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, perm: Double): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays a list of server groups available.
@@ -1481,7 +1491,7 @@ object teamSpeakMod {
       * @param group the servergroup id
       * @param name new name of the servergroup
       */
-    def serverGroupRename(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, name: String): js.Promise[js.Array[js.Any]] = js.native
+    def serverGroupRename(group: typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup.GroupType, name: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * displays all server groups the client specified with cldbid is currently residing in
@@ -1511,15 +1521,15 @@ object teamSpeakMod {
       * Stops the entire TeamSpeak 3 Server instance by shutting down the process.
       * @param reasonmsg specifies a text message that is sent to the clients before the client disconnects (requires TeamSpeak Server 3.2.0 or newer).
       */
-    def serverProcessStop(): js.Promise[js.Array[js.Any]] = js.native
-    def serverProcessStop(reasonmsg: String): js.Promise[js.Array[js.Any]] = js.native
+    def serverProcessStop(): js.Promise[js.Array[Any]] = js.native
+    def serverProcessStop(reasonmsg: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Starts the virtual server. Depending on your permissions,
       * you're able to start either your own virtual server only or all virtual servers in the server instance.
       * @param server the server id to start
       */
-    def serverStart(server: ServerType): js.Promise[js.Array[js.Any]] = js.native
+    def serverStart(server: ServerType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Stops the virtual server. Depending on your permissions,
@@ -1527,8 +1537,8 @@ object teamSpeakMod {
       * @param server the server id to stop
       * @param reasonmsg Specifies a text message that is sent to the clients before the client disconnects (requires TeamSpeak Server 3.2.0 or newer).
       */
-    def serverStop(server: ServerType): js.Promise[js.Array[js.Any]] = js.native
-    def serverStop(server: ServerType, reasonmsg: String): js.Promise[js.Array[js.Any]] = js.native
+    def serverStop(server: ServerType): js.Promise[js.Array[Any]] = js.native
+    def serverStop(server: ServerType, reasonmsg: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Sets a new temporary server password specified with pw. The temporary
@@ -1537,13 +1547,13 @@ object teamSpeakMod {
       * specified with tcid. If tcid is set to 0, the client will join the default
       * channel.
       */
-    def serverTempPasswordAdd(props: ServerTempPasswordAdd): js.Promise[js.Array[js.Any]] = js.native
+    def serverTempPasswordAdd(props: ServerTempPasswordAdd): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Deletes the temporary server password specified with pw.
       * @param pw the password to delete
       */
-    def serverTempPasswordDel(pw: String): js.Promise[js.Array[js.Any]] = js.native
+    def serverTempPasswordDel(pw: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Returns a list of active temporary server passwords. The output contains the
@@ -1552,11 +1562,11 @@ object teamSpeakMod {
       */
     def serverTempPasswordList(): js.Promise[js.Array[ServerTempPasswordEntry]] = js.native
     
-    /* private */ var serverVersion: js.Any = js.native
+    /* private */ var serverVersion: Any = js.native
     
-    /* private */ var servergroups: js.Any = js.native
+    /* private */ var servergroups: Any = js.native
     
-    /* private */ var servers: js.Any = js.native
+    /* private */ var servers: Any = js.native
     
     /**
       * Sets the channel group of a client
@@ -1564,32 +1574,32 @@ object teamSpeakMod {
       * @param channel the channel in which the client should be assigned the group
       * @param client the client database id which should be added to the group
       */
-    def setClientChannelGroup(group: GroupType, channel: ChannelType, client: ClientType): js.Promise[js.Array[js.Any]] = js.native
+    def setClientChannelGroup(group: GroupType, channel: ChannelType, client: ClientType): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Subscribes to an Event.
       */
-    def unregisterEvent(): js.Promise[js.Array[js.Any]] = js.native
+    def unregisterEvent(): js.Promise[js.Array[Any]] = js.native
     
     /**
       * updates the context with new data
       * @param data the data to update the context with
       */
-    /* private */ var updateContext: js.Any = js.native
+    /* private */ var updateContext: Any = js.native
     
     /**
       * updates the context when the inner callback gets called
       * and throws the first parameter which is an error
       * @param context context data to update
       */
-    /* private */ var updateContextReject: js.Any = js.native
+    /* private */ var updateContextReject: Any = js.native
     
     /**
       * updates the context when the inner callback gets called
       * and returns the first parameter
       * @param context context data to update
       */
-    /* private */ var updateContextResolve: js.Any = js.native
+    /* private */ var updateContextResolve: Any = js.native
     
     /**
       * uploads a file
@@ -1618,16 +1628,16 @@ object teamSpeakMod {
       * @param port the port the server runs on
       * @param clientNickname set nickname when selecting a server
       */
-    def useByPort(port: Double): js.Promise[js.Array[js.Any]] = js.native
-    def useByPort(port: Double, clientNickname: String): js.Promise[js.Array[js.Any]] = js.native
+    def useByPort(port: Double): js.Promise[js.Array[Any]] = js.native
+    def useByPort(port: Double, clientNickname: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Selects the virtual server specified with the sid to allow further interaction.
       * @param server the server id
       * @param clientNickname set nickname when selecting a server
       */
-    def useBySid(server: ServerType): js.Promise[js.Array[js.Any]] = js.native
-    def useBySid(server: ServerType, clientNickname: String): js.Promise[js.Array[js.Any]] = js.native
+    def useBySid(server: ServerType): js.Promise[js.Array[Any]] = js.native
+    def useBySid(server: ServerType, clientNickname: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Displays the servers version information including platform and build number.
@@ -1699,7 +1709,7 @@ object teamSpeakMod {
       * waits a set time of ms
       * @param time time in ms to wait
       */
-    inline def wait(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def wait(time: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
     trait ConnectionParams extends StObject {
       

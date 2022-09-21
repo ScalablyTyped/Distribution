@@ -10,10 +10,10 @@ object mouseMod {
   
   @JSImport("material-ui/svg-icons/hardware/mouse", JSImport.Default)
   @js.native
-  class default () extends HardwareMouse
+  open class default () extends HardwareMouse
   
   @JSImport("material-ui/svg-icons/hardware/mouse", "HardwareMouse")
   @js.native
-  class HardwareMouse ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareMouse ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

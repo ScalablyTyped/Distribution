@@ -61,18 +61,18 @@ object printerProvider {
   trait PrinterCapabilities extends StObject {
     
     /** Device capabilities in CDD format. */
-    var capabilities: js.Any
+    var capabilities: Any
   }
   object PrinterCapabilities {
     
-    inline def apply(capabilities: js.Any): PrinterCapabilities = {
+    inline def apply(capabilities: Any): PrinterCapabilities = {
       val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrinterCapabilities]
     }
     
     extension [Self <: PrinterCapabilities](x: Self) {
       
-      inline def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     }
   }
   

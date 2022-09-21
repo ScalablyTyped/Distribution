@@ -8,13 +8,13 @@ trait Type extends StObject {
   
   var point: typings.baidumapWebSdk.BMap.Point
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
 }
 object Type {
   
-  inline def apply(point: typings.baidumapWebSdk.BMap.Point, target: js.Any, `type`: String): Type = {
+  inline def apply(point: typings.baidumapWebSdk.BMap.Point, target: Any, `type`: String): Type = {
     val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
@@ -24,7 +24,7 @@ object Type {
     
     inline def setPoint(value: typings.baidumapWebSdk.BMap.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

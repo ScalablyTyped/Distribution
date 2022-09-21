@@ -46,13 +46,13 @@ object XDataPilotTables {
     ElementType: `type`,
     acquire: () => Unit,
     createDataPilotDescriptor: () => XDataPilotDescriptor,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     insertNewByName: (String, CellAddress, XDataPilotDescriptor) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByName: String => Unit
   ): XDataPilotTables = {

@@ -9,7 +9,7 @@ object Sharing {
   
   @JSGlobal("SP.Sharing.DocumentSharingManager")
   @js.native
-  class DocumentSharingManager ()
+  open class DocumentSharingManager ()
     extends StObject
        with typings.sharepoint.SP.Sharing.DocumentSharingManager
   object DocumentSharingManager {
@@ -22,7 +22,7 @@ object Sharing {
     inline def getRoleDefinition(context: typings.sharepoint.SP.ClientRuntimeContext, role: Role): typings.sharepoint.SP.RoleDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoleDefinition")(context.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.RoleDefinition]
     
     /* static member */
-    inline def isDocumentSharingEnabled(context: typings.sharepoint.SP.ClientRuntimeContext, list: typings.sharepoint.SP.List[js.Any]): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("isDocumentSharingEnabled")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
+    inline def isDocumentSharingEnabled(context: typings.sharepoint.SP.ClientRuntimeContext, list: typings.sharepoint.SP.List[Any]): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("isDocumentSharingEnabled")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
     
     /* static member */
     inline def updateDocumentSharingInfo(
@@ -55,12 +55,12 @@ object Sharing {
   
   @JSGlobal("SP.Sharing.UserRoleAssignment")
   @js.native
-  class UserRoleAssignment ()
+  open class UserRoleAssignment ()
     extends StObject
        with typings.sharepoint.SP.Sharing.UserRoleAssignment {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -69,7 +69,7 @@ object Sharing {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_role(): Role = js.native
@@ -95,12 +95,12 @@ object Sharing {
   
   @JSGlobal("SP.Sharing.UserSharingResult")
   @js.native
-  class UserSharingResult ()
+  open class UserSharingResult ()
     extends StObject
        with typings.sharepoint.SP.Sharing.UserSharingResult {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -109,7 +109,7 @@ object Sharing {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_allowedRoles(): js.Array[Role] = js.native

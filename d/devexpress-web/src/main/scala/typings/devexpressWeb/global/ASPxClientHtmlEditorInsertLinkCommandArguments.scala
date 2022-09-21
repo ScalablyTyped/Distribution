@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorInsertLinkCommandArguments")
 @js.native
-class ASPxClientHtmlEditorInsertLinkCommandArguments protected ()
+open class ASPxClientHtmlEditorInsertLinkCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorInsertLinkCommandArguments {
   /**
@@ -17,13 +17,13 @@ class ASPxClientHtmlEditorInsertLinkCommandArguments protected ()
     * @param htmlEditor An HTML editor in which you want to insert an element.
     * @param selectedElement An object containing the currently selected element in the HTML editor. This element will be replaced with the inserted link.
     */
-  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: Any) = this()
   
   /**
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Contains the style settings defining the appearance of the target link element.

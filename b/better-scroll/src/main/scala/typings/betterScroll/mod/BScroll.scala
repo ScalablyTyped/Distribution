@@ -61,51 +61,16 @@ trait BScroll extends StObject {
   def next(time: Double, easing: js.Object): Unit = js.native
   def next(time: Unit, easing: js.Object): Unit = js.native
   
-  @JSName("off")
-  def off_beforeScrollStart(`type`: beforeScrollStart, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_destroy(`type`: destroy, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_flick(`type`: flick, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_pullingDown(`type`: pullingDown, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_pullingUp(`type`: pullingUp, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_refresh(`type`: refresh, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_scroll(`type`: scroll, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_scrollCancel(`type`: scrollCancel, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_scrollEnd(`type`: scrollEnd, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_scrollStart(`type`: scrollStart, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("off")
-  def off_touchEnd(`type`: touchEnd, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def off(
+    `type`: beforeScrollStart | scrollStart | scroll | scrollCancel | scrollEnd | touchEnd | flick | refresh | destroy | pullingDown | pullingUp,
+    fn: js.Function1[/* repeated */ Any, Unit]
+  ): Unit = js.native
   
-  @JSName("on")
-  def on_beforeScrollStart(`type`: beforeScrollStart, fn: js.Function0[js.Any]): Unit = js.native
-  @JSName("on")
-  def on_destroy(`type`: destroy, fn: js.Function0[js.Any]): Unit = js.native
-  @JSName("on")
-  def on_flick(`type`: flick, fn: js.Function0[js.Any]): Unit = js.native
-  @JSName("on")
-  def on_pullingDown(`type`: pullingDown, fn: js.Function0[js.Any]): Unit = js.native
-  @JSName("on")
-  def on_pullingUp(`type`: pullingUp, fn: js.Function0[js.Any]): Unit = js.native
-  @JSName("on")
-  def on_refresh(`type`: refresh, fn: js.Function0[js.Any]): Unit = js.native
-  @JSName("on")
-  def on_scroll(`type`: scroll, fn: js.Function1[/* pos */ Position, js.Any]): Unit = js.native
-  @JSName("on")
-  def on_scrollCancel(`type`: scrollCancel, fn: js.Function0[js.Any]): Unit = js.native
-  @JSName("on")
-  def on_scrollEnd(`type`: scrollEnd, fn: js.Function1[/* pos */ Position, js.Any]): Unit = js.native
-  @JSName("on")
-  def on_scrollStart(`type`: scrollStart, fn: js.Function0[js.Any]): Unit = js.native
-  @JSName("on")
-  def on_touchEnd(`type`: touchEnd, fn: js.Function1[/* pos */ Position, js.Any]): Unit = js.native
+  def on(
+    `type`: beforeScrollStart | scrollStart | scrollCancel | flick | refresh | destroy | pullingDown | pullingUp,
+    fn: js.Function0[Any]
+  ): Unit = js.native
+  def on(`type`: scroll | scrollEnd | touchEnd, fn: js.Function1[/* pos */ Position, Any]): Unit = js.native
   
   var options: BsOption = js.native
   

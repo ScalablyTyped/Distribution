@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.HierarchicalDataSource")
 @js.native
-class HierarchicalDataSource ()
+open class HierarchicalDataSource ()
   extends StObject
      with typings.kendoUi.kendo.data.HierarchicalDataSource {
   def this(options: HierarchicalDataSourceOptions) = this()

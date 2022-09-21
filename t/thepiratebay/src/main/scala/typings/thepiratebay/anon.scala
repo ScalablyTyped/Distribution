@@ -9,7 +9,7 @@ object anon {
   
   trait DictpropName
     extends StObject
-       with /* propName */ StringDictionary[js.Any] {
+       with /* propName */ StringDictionary[Any] {
     
     var link: String
   }

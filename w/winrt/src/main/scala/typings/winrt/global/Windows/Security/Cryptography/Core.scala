@@ -9,7 +9,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames")
   @js.native
-  class AsymmetricAlgorithmNames ()
+  open class AsymmetricAlgorithmNames ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames
   /* static members */
@@ -112,7 +112,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
   @js.native
-  class AsymmetricKeyAlgorithmProvider ()
+  open class AsymmetricKeyAlgorithmProvider ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider
   /* static members */
@@ -127,7 +127,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
   @js.native
-  class CryptographicEngine ()
+  open class CryptographicEngine ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.CryptographicEngine
   /* static members */
@@ -173,7 +173,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicHash")
   @js.native
-  class CryptographicHash ()
+  open class CryptographicHash ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.CryptographicHash {
     
@@ -186,7 +186,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicKey")
   @js.native
-  class CryptographicKey ()
+  open class CryptographicKey ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey
   
@@ -228,7 +228,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData")
   @js.native
-  class EncryptedAndAuthenticatedData ()
+  open class EncryptedAndAuthenticatedData ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData {
     
@@ -241,7 +241,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames")
   @js.native
-  class HashAlgorithmNames ()
+  open class HashAlgorithmNames ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmNames
   /* static members */
@@ -279,7 +279,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
   @js.native
-  class HashAlgorithmProvider ()
+  open class HashAlgorithmProvider ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider {
     
@@ -307,7 +307,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames")
   @js.native
-  class KeyDerivationAlgorithmNames ()
+  open class KeyDerivationAlgorithmNames ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames
   /* static members */
@@ -395,7 +395,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
   @js.native
-  class KeyDerivationAlgorithmProvider ()
+  open class KeyDerivationAlgorithmProvider ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider {
     
@@ -417,7 +417,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
   @js.native
-  class KeyDerivationParameters ()
+  open class KeyDerivationParameters ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters {
     
@@ -449,7 +449,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames")
   @js.native
-  class MacAlgorithmNames ()
+  open class MacAlgorithmNames ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmNames
   /* static members */
@@ -492,7 +492,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider")
   @js.native
-  class MacAlgorithmProvider ()
+  open class MacAlgorithmProvider ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider {
     
@@ -517,7 +517,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames")
   @js.native
-  class SymmetricAlgorithmNames ()
+  open class SymmetricAlgorithmNames ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.SymmetricAlgorithmNames
   /* static members */
@@ -633,7 +633,7 @@ object Core {
   
   @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
   @js.native
-  class SymmetricKeyAlgorithmProvider ()
+  open class SymmetricKeyAlgorithmProvider ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider {
     

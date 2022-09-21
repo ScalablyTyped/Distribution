@@ -10,7 +10,7 @@ object commitDiscussionsMod {
   
   @JSImport("gitlab/dist/types/core/services/CommitDiscussions", "CommitDiscussions")
   @js.native
-  class CommitDiscussions protected () extends ResourceDiscussions {
+  open class CommitDiscussions protected () extends ResourceDiscussions {
     def this(options: BaseServiceOptions) = this()
   }
 }

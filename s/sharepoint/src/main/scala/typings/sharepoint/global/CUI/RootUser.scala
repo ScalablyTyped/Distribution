@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.RootUser")
 @js.native
-class RootUser ()
+open class RootUser ()
   extends StObject
      with typings.sharepoint.CUI.RootUser

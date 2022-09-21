@@ -10,10 +10,10 @@ utils for webpack loaders
 | ------------------ | :-------------: |
 | Full name          | loader-utils |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 4914 |
-| # downloads        | 1169011967 |
-| # stars            | 4 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1315264466666666E8 |
+| # stars            | 706.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/loader-utils#readme)

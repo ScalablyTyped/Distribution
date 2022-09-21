@@ -29,6 +29,6 @@ object AccessPolicy {
     
     inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
-    inline def setExceptionVarargs(value: String*): Self = StObject.set(x, "exception", js.Array(value :_*))
+    inline def setExceptionVarargs(value: String*): Self = StObject.set(x, "exception", js.Array(value*))
   }
 }

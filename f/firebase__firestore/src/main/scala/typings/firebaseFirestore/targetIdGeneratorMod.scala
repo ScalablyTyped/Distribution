@@ -1,26 +1,30 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.typesMod.TargetId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/core/target_id_generator", JSImport.Namespace)
-@js.native
-object targetIdGeneratorMod extends js.Object {
+object targetIdGeneratorMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/core/target_id_generator", "TargetIdGenerator")
   @js.native
-  class TargetIdGenerator protected () extends js.Object {
+  open class TargetIdGenerator protected () extends StObject {
     def this(lastId: Double) = this()
-    var lastId: js.Any = js.native
+    
+    /* private */ var lastId: Any = js.native
+    
     def next(): TargetId = js.native
   }
-  
   /* static members */
-  @js.native
-  object TargetIdGenerator extends js.Object {
-    def forSyncEngine(): TargetIdGenerator = js.native
-    def forTargetCache(): TargetIdGenerator = js.native
+  object TargetIdGenerator {
+    
+    @JSImport("@firebase/firestore/dist/firestore/src/core/target_id_generator", "TargetIdGenerator")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def forSyncEngine(): TargetIdGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("forSyncEngine")().asInstanceOf[TargetIdGenerator]
+    
+    inline def forTargetCache(): TargetIdGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("forTargetCache")().asInstanceOf[TargetIdGenerator]
   }
-  
 }
-

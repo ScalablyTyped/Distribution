@@ -24,7 +24,7 @@ object SearchEntryObject {
     
     inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value*))
     
     inline def setDn(value: String): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
   }

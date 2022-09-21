@@ -4,30 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The positioning of a PositionedObject. The positioned object is positioned
-  * relative to the beginning of the Paragraph it is tethered to.
-  */
 trait SchemaPositionedObjectPositioning extends StObject {
   
   /**
     * The layout of this positioned object.
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The offset of the left edge of the positioned object relative to the
-    * beginning of the Paragraph it is tethered to. The exact positioning of
-    * the object can depend on other content in the document and the
-    * document&#39;s styling.
+    * The offset of the left edge of the positioned object relative to the beginning of the Paragraph it is tethered to. The exact positioning of the object can depend on other content in the document and the document's styling.
     */
   var leftOffset: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
-    * The offset of the top edge of the positioned object relative to the
-    * beginning of the Paragraph it is tethered to. The exact positioning of
-    * the object can depend on other content in the document and the
-    * document&#39;s styling.
+    * The offset of the top edge of the positioned object relative to the beginning of the Paragraph it is tethered to. The exact positioning of the object can depend on other content in the document and the document's styling.
     */
   var topOffset: js.UndefOr[SchemaDimension] = js.undefined
 }
@@ -41,6 +31,8 @@ object SchemaPositionedObjectPositioning {
   extension [Self <: SchemaPositionedObjectPositioning](x: Self) {
     
     inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutNull: Self = StObject.set(x, "layout", null)
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     

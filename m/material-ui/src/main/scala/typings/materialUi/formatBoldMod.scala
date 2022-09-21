@@ -10,10 +10,10 @@ object formatBoldMod {
   
   @JSImport("material-ui/svg-icons/editor/format-bold", JSImport.Default)
   @js.native
-  class default () extends EditorFormatBold
+  open class default () extends EditorFormatBold
   
   @JSImport("material-ui/svg-icons/editor/format-bold", "EditorFormatBold")
   @js.native
-  class EditorFormatBold ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatBold ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

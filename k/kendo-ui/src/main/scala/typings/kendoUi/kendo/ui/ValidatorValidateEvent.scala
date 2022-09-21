@@ -8,7 +8,7 @@ trait ValidatorValidateEvent
   extends StObject
      with ValidatorEvent {
   
-  var errors: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var errors: js.UndefOr[js.Array[Any]] = js.undefined
   
   var valid: js.UndefOr[Boolean] = js.undefined
 }
@@ -21,11 +21,11 @@ object ValidatorValidateEvent {
   
   extension [Self <: ValidatorValidateEvent](x: Self) {
     
-    inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Any*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     

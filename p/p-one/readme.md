@@ -10,10 +10,10 @@ Test whether some promise passes a testing function
 | ------------------ | :-------------: |
 | Full name          | p-one |
 | Keywords           | async, await, bluebird, collection, concurrency, concurrently, filter, fulfilled, iterable, iterator, parallel, promise, promises, some, test |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 10939 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8120.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/p-one#readme)

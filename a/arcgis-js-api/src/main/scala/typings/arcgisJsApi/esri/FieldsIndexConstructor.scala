@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FieldsIndexConstructor
   extends StObject
-     with Instantiable0[FieldsIndex]
-     with Instantiable1[/* properties */ js.Any, FieldsIndex]
+     with /**
+  * This class provides convenient methods that can be used to make case-insensitive lookups for a field by its name.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html)
+  */
+Instantiable0[FieldsIndex]
+     with Instantiable1[/* properties */ Any, FieldsIndex]

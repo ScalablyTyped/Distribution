@@ -29,15 +29,15 @@ trait XSingleServiceFactory
     * @param aArguments arguments passed to implementation
     * @returns service instance
     */
-  def createInstanceWithArguments(aArguments: SeqEquiv[js.Any]): XInterface
+  def createInstanceWithArguments(aArguments: SeqEquiv[Any]): XInterface
 }
 object XSingleServiceFactory {
   
   inline def apply(
     acquire: () => Unit,
     createInstance: () => XInterface,
-    createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
-    queryInterface: `type` => js.Any,
+    createInstanceWithArguments: SeqEquiv[Any] => XInterface,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSingleServiceFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstance = js.Any.fromFunction0(createInstance), createInstanceWithArguments = js.Any.fromFunction1(createInstanceWithArguments), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -48,6 +48,6 @@ object XSingleServiceFactory {
     
     inline def setCreateInstance(value: () => XInterface): Self = StObject.set(x, "createInstance", js.Any.fromFunction0(value))
     
-    inline def setCreateInstanceWithArguments(value: SeqEquiv[js.Any] => XInterface): Self = StObject.set(x, "createInstanceWithArguments", js.Any.fromFunction1(value))
+    inline def setCreateInstanceWithArguments(value: SeqEquiv[Any] => XInterface): Self = StObject.set(x, "createInstanceWithArguments", js.Any.fromFunction1(value))
   }
 }

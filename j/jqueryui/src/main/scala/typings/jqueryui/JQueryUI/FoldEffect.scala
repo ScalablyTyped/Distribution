@@ -8,7 +8,7 @@ trait FoldEffect extends StObject {
   
   var horizFirst: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[js.Any] = js.undefined
+  var size: js.UndefOr[Any] = js.undefined
 }
 object FoldEffect {
   
@@ -23,7 +23,7 @@ object FoldEffect {
     
     inline def setHorizFirstUndefined: Self = StObject.set(x, "horizFirst", js.undefined)
     
-    inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }

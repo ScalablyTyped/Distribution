@@ -37,11 +37,11 @@ object ListObjectResult {
     
     inline def setObjects(value: js.Array[ObjectMeta]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    inline def setObjectsVarargs(value: ObjectMeta*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: ObjectMeta*): Self = StObject.set(x, "objects", js.Array(value*))
     
     inline def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
-    inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
+    inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value*))
     
     inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }

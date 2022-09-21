@@ -5,9 +5,8 @@ import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.koaMulter.anon.FieldNameSize
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingMessage
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +33,7 @@ object mod {
         String | (js.Function3[
           /* req */ IncomingMessage, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
+          /* callback */ js.Function2[/* error */ js.Error | Null, /* destination */ String, Unit], 
           Unit
         ])
       ] = js.undefined
@@ -44,7 +43,7 @@ object mod {
         js.Function3[
           /* req */ IncomingMessage, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit], 
+          /* callback */ js.Function2[/* error */ js.Error | Null, /* filename */ String, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -62,19 +61,19 @@ object mod {
         value: String | (js.Function3[
               /* req */ IncomingMessage, 
               /* file */ File, 
-              /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
+              /* callback */ js.Function2[/* error */ js.Error | Null, /* destination */ String, Unit], 
               Unit
             ])
       ): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
       inline def setDestinationFunction3(
-        value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit]) => Unit
+        value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ js.Error | Null, /* destination */ String, Unit]) => Unit
       ): Self = StObject.set(x, "destination", js.Any.fromFunction3(value))
       
       inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
       inline def setFilename(
-        value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit]) => Unit
+        value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ js.Error | Null, /* filename */ String, Unit]) => Unit
       ): Self = StObject.set(x, "filename", js.Any.fromFunction3(value))
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
@@ -178,25 +177,25 @@ object mod {
   trait Instance extends StObject {
     
     /** Accepts all files that comes over the wire. An array of files will be stored in req.files. */
-    def any(): Middleware[DefaultState, DefaultContext] = js.native
+    def any(): Middleware[DefaultState, DefaultContext, Any] = js.native
     
     /** Accept an array of files, all with the name fieldName. Optionally error out if more than maxCount files are uploaded. The array of files will be stored in req.files. */
-    def array(fieldName: String): Middleware[DefaultState, DefaultContext] = js.native
-    def array(fieldName: String, maxCount: Double): Middleware[DefaultState, DefaultContext] = js.native
+    def array(fieldName: String): Middleware[DefaultState, DefaultContext, Any] = js.native
+    def array(fieldName: String, maxCount: Double): Middleware[DefaultState, DefaultContext, Any] = js.native
     
     /** Accept a mix of files, specified by fields. An object with arrays of files will be stored in req.files. */
-    def fields(fields: js.Array[Field]): Middleware[DefaultState, DefaultContext] = js.native
+    def fields(fields: js.Array[Field]): Middleware[DefaultState, DefaultContext, Any] = js.native
     
     /** In case you need to handle a text-only multipart form, you can use any of the multer methods (.single(), .array(), fields()), req.body contains the text fields */
     /** Accept a single file with the name fieldName. The single file will be stored in req.file. */
-    def single(): Middleware[DefaultState, DefaultContext] = js.native
-    def single(fieldName: String): Middleware[DefaultState, DefaultContext] = js.native
+    def single(): Middleware[DefaultState, DefaultContext, Any] = js.native
+    def single(fieldName: String): Middleware[DefaultState, DefaultContext, Any] = js.native
   }
   
   @js.native
   trait MulterIncomingMessage extends IncomingMessage {
     
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     var file: File = js.native
     
@@ -213,7 +212,7 @@ object mod {
         js.Function3[
           /* req */ IncomingMessage, 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ Error | Null, /* acceptFile */ Boolean, Unit], 
+          /* callback */ js.Function2[/* error */ js.Error | Null, /* acceptFile */ Boolean, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -241,7 +240,7 @@ object mod {
       inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
       inline def setFileFilter(
-        value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* acceptFile */ Boolean, Unit]) => Unit
+        value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ js.Error | Null, /* acceptFile */ Boolean, Unit]) => Unit
       ): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
       
       inline def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
@@ -261,16 +260,16 @@ object mod {
     def _handleFile(
       req: IncomingMessage,
       file: File,
-      callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[Any], /* info */ js.UndefOr[File], Unit]
     ): Unit
     
-    def _removeFile(req: IncomingMessage, file: File, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def _removeFile(req: IncomingMessage, file: File, callback: js.Function1[/* error */ js.Error, Unit]): Unit
   }
   object StorageEngine {
     
     inline def apply(
-      _handleFile: (IncomingMessage, File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]) => Unit,
-      _removeFile: (IncomingMessage, File, js.Function1[/* error */ Error, Unit]) => Unit
+      _handleFile: (IncomingMessage, File, js.Function2[/* error */ js.UndefOr[Any], /* info */ js.UndefOr[File], Unit]) => Unit,
+      _removeFile: (IncomingMessage, File, js.Function1[/* error */ js.Error, Unit]) => Unit
     ): StorageEngine = {
       val __obj = js.Dynamic.literal(_handleFile = js.Any.fromFunction3(_handleFile), _removeFile = js.Any.fromFunction3(_removeFile))
       __obj.asInstanceOf[StorageEngine]
@@ -279,10 +278,10 @@ object mod {
     extension [Self <: StorageEngine](x: Self) {
       
       inline def set_handleFile(
-        value: (IncomingMessage, File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]) => Unit
+        value: (IncomingMessage, File, js.Function2[/* error */ js.UndefOr[Any], /* info */ js.UndefOr[File], Unit]) => Unit
       ): Self = StObject.set(x, "_handleFile", js.Any.fromFunction3(value))
       
-      inline def set_removeFile(value: (IncomingMessage, File, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "_removeFile", js.Any.fromFunction3(value))
+      inline def set_removeFile(value: (IncomingMessage, File, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "_removeFile", js.Any.fromFunction3(value))
     }
   }
   
@@ -293,12 +292,12 @@ object mod {
       
       var file: typings.std.File
       
-      var files: js.Array[typings.std.File]
+      var files: js.UndefOr[StringDictionary[js.Array[typings.std.File]] | js.Array[typings.std.File]] = js.undefined
     }
     object DefaultContext {
       
-      inline def apply(file: typings.std.File, files: js.Array[typings.std.File]): typings.koaMulter.mod.koaAugmentingMod.DefaultContext = {
-        val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
+      inline def apply(file: typings.std.File): typings.koaMulter.mod.koaAugmentingMod.DefaultContext = {
+        val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.koaMulter.mod.koaAugmentingMod.DefaultContext]
       }
       
@@ -306,9 +305,11 @@ object mod {
         
         inline def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        inline def setFiles(value: js.Array[typings.std.File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+        inline def setFiles(value: StringDictionary[js.Array[typings.std.File]] | js.Array[typings.std.File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
         
-        inline def setFilesVarargs(value: typings.std.File*): Self = StObject.set(x, "files", js.Array(value :_*))
+        inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+        
+        inline def setFilesVarargs(value: typings.std.File*): Self = StObject.set(x, "files", js.Array(value*))
       }
     }
     
@@ -316,12 +317,12 @@ object mod {
       
       var file: typings.std.File
       
-      var files: js.Array[typings.std.File]
+      var files: js.UndefOr[StringDictionary[js.Array[typings.std.File]] | js.Array[typings.std.File]] = js.undefined
     }
     object Request {
       
-      inline def apply(file: typings.std.File, files: js.Array[typings.std.File]): Request = {
-        val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
+      inline def apply(file: typings.std.File): Request = {
+        val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
@@ -329,9 +330,11 @@ object mod {
         
         inline def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        inline def setFiles(value: js.Array[typings.std.File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+        inline def setFiles(value: StringDictionary[js.Array[typings.std.File]] | js.Array[typings.std.File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
         
-        inline def setFilesVarargs(value: typings.std.File*): Self = StObject.set(x, "files", js.Array(value :_*))
+        inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+        
+        inline def setFilesVarargs(value: typings.std.File*): Self = StObject.set(x, "files", js.Array(value*))
       }
     }
   }

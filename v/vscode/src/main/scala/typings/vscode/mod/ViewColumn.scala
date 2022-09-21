@@ -15,7 +15,7 @@ object ViewColumn extends StObject {
   
   /**
     * A *symbolic* editor column representing the currently active column. This value
-    * can be used when opening editors, but the *resolved* [viewColumn](#TextEditor.viewColumn)-value
+    * can be used when opening editors, but the *resolved* {@link TextEditor.viewColumn viewColumn}-value
     * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Active`.
     */
   @js.native
@@ -26,7 +26,7 @@ object ViewColumn extends StObject {
   
   /**
     * A *symbolic* editor column representing the column to the side of the active one. This value
-    * can be used when opening editors, but the *resolved* [viewColumn](#TextEditor.viewColumn)-value
+    * can be used when opening editors, but the *resolved* {@link TextEditor.viewColumn viewColumn}-value
     * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Beside`.
     */
   @js.native

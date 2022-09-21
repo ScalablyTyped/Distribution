@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An offline file annotation request.
-  */
 trait SchemaAsyncAnnotateFileRequest extends StObject {
   
   /**
@@ -42,7 +39,7 @@ object SchemaAsyncAnnotateFileRequest {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: SchemaFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: SchemaFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setImageContext(value: SchemaImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
     

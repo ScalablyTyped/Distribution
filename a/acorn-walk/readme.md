@@ -1,7 +1,7 @@
 
 # Scala.js typings for acorn-walk
 
-Typings are for version 8.0.0
+Typings are for version 8.2.0
 
 ## Library description:
 ECMAScript (ESTree) AST walker
@@ -11,9 +11,9 @@ ECMAScript (ESTree) AST walker
 | Full name          | acorn-walk |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 255 |
-| # downloads        | 558180132 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.28114199E8 |
+| # stars            | 8469.0 |
 
 ## Links
 - [Homepage](https://github.com/acornjs/acorn)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Type extends StObject {
   
-  var prepareDataFunction: js.UndefOr[js.Function1[/* rawData */ js.Any, js.Any]] = js.undefined
+  var prepareDataFunction: js.UndefOr[js.Function1[/* rawData */ Any, Any]] = js.undefined
   
   var slice: js.UndefOr[typings.flexmonster.mod.Slice] = js.undefined
   
@@ -21,7 +21,7 @@ object Type {
   
   extension [Self <: Type](x: Self) {
     
-    inline def setPrepareDataFunction(value: /* rawData */ js.Any => js.Any): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
+    inline def setPrepareDataFunction(value: /* rawData */ Any => Any): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
     
     inline def setPrepareDataFunctionUndefined: Self = StObject.set(x, "prepareDataFunction", js.undefined)
     

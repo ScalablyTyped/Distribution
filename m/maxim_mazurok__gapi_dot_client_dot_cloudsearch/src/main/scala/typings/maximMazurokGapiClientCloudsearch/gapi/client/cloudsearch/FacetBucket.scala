@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FacetBucket extends StObject {
   
-  /** Number of results that match the bucket value. Counts are only returned for searches when count accuracy is ensured. Can be empty. */
+  /**
+    * Number of results that match the bucket value. Counts are only returned for searches when count accuracy is ensured. Cloud Search does not guarantee facet counts for any query and
+    * facet counts might be present only intermittently, even for identical queries. Do not build dependencies on facet count existence; instead use facet ount percentages which are
+    * always returned.
+    */
   var count: js.UndefOr[Double] = js.undefined
   
   /**

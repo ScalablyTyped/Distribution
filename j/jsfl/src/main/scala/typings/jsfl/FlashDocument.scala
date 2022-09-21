@@ -11,10 +11,10 @@ trait FlashDocument extends StObject {
   var accName: String = js.native
   
   // "integer", "integerArray", "double", "doubleArray", "string", and "byteArray"
-  def addDataToDocument(name: String, `type`: String, data: js.Any): Unit = js.native
+  def addDataToDocument(name: String, `type`: String, data: Any): Unit = js.native
   
   // Stores specified data with a document.
-  def addDataToSelection(name: String, `type`: String, data: js.Any): Unit = js.native
+  def addDataToSelection(name: String, `type`: String, data: Any): Unit = js.native
   
   // Stores specified data with the selected object(s).
   def addFilter(filterName: String): Unit = js.native
@@ -38,39 +38,39 @@ trait FlashDocument extends StObject {
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: Unit, bSuppressStroke: Boolean): Unit = js.native
   
   // Adds a new rectangle or rounded rectangle,
-  def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double): js.Any = js.native
-  def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double, bSuppressFill: Boolean): js.Any = js.native
+  def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double): Any = js.native
+  def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double, bSuppressFill: Boolean): Any = js.native
   def addNewPrimitiveRectangle(
     boundingRectangle: FlashRectangle,
     roundness: Double,
     bSuppressFill: Boolean,
     bSuppressStroke: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def addNewPrimitiveRectangle(
     boundingRectangle: FlashRectangle,
     roundness: Double,
     bSuppressFill: Unit,
     bSuppressStroke: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   
   // Adds a new rectangle or rounded rectangle,
   def addNewPublishProfile(): Unit = js.native
   def addNewPublishProfile(profileName: String): Unit = js.native
   
-  def addNewRectangle(boundingRectangle: FlashRectangle, roundness: Double): js.Any = js.native
-  def addNewRectangle(boundingRectangle: FlashRectangle, roundness: Double, bSuppressFill: Boolean): js.Any = js.native
+  def addNewRectangle(boundingRectangle: FlashRectangle, roundness: Double): Any = js.native
+  def addNewRectangle(boundingRectangle: FlashRectangle, roundness: Double, bSuppressFill: Boolean): Any = js.native
   def addNewRectangle(
     boundingRectangle: FlashRectangle,
     roundness: Double,
     bSuppressFill: Boolean,
     bSuppressStroke: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   def addNewRectangle(
     boundingRectangle: FlashRectangle,
     roundness: Double,
     bSuppressFill: Unit,
     bSuppressStroke: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   
   def addNewScene(name: String): Boolean = js.native
   
@@ -79,8 +79,8 @@ trait FlashDocument extends StObject {
   def addNewText(boundingRectangle: FlashRectangle, text: String): Unit = js.native
   
   // Inserts a new empty text field.
-  def align(alignmode: String): js.Any = js.native
-  def align(alignmode: String, bUseDocumentBounds: Boolean): js.Any = js.native
+  def align(alignmode: String): Any = js.native
+  def align(alignmode: String, bUseDocumentBounds: Boolean): Any = js.native
   
   // Aligns the selection.
   def allowScreens(): Unit = js.native
@@ -111,7 +111,7 @@ trait FlashDocument extends StObject {
   var autoLabel: Boolean = js.native
   
   // A Boolean value that is equivalent to the Auto
-  var backgroundColor: js.Any = js.native
+  var backgroundColor: Any = js.native
   
   /** Performs a break-apart operation on the current */
   def breakApart(): Unit = js.native
@@ -198,7 +198,7 @@ trait FlashDocument extends StObject {
   def distributeToLayers(): Unit = js.native
   
   // A string that is equivalent to the Description field in
-  var docClass: js.Any = js.native
+  var docClass: Any = js.native
   
   /** Checks the document for persistent data with the */
   def documentHasData(name: String): Boolean = js.native
@@ -267,10 +267,10 @@ trait FlashDocument extends StObject {
   def getCustomStroke(locationOfStroke: String): FlashStroke = js.native
   
   /** Retrieves the value of the specified data. */
-  def getDataFromDocument(name: String): js.Any = js.native
+  def getDataFromDocument(name: String): Any = js.native
   
   /** Gets the specified Element property for the */
-  def getElementProperty(propertyName: String): js.Any = js.native
+  def getElementProperty(propertyName: String): Any = js.native
   
   /** Gets a specified TextAttrs property of the*/
   def getElementTextAttr(attrName: String): FlashTextAttrs = js.native
@@ -337,7 +337,7 @@ trait FlashDocument extends StObject {
   var livePreview: Boolean = js.native
   
   /** loads a cue point XML file. The format and DTD of the XML file is the same as the one imported and exported by the Cue Points Property inspector. The return value is the same as the string serialized in the Cue Point property of the object containing the instance of an FLVPlayback Component. */
-  def loadCuepointXML(uri: String): js.Array[js.Any] = js.native
+  def loadCuepointXML(uri: String): js.Array[Any] = js.native
   
   /** Makes the size of the selected objects the same. */
   def `match`(bWidth: Boolean, bHeight: Boolean): Unit = js.native
@@ -468,10 +468,10 @@ trait FlashDocument extends StObject {
   def setElementTextAttr(attrName: String, attrValue: FlashTextAttrs, startIndex: Unit, endIndex: Double): Boolean = js.native
   
   /** Changes the fill color of the selection to the */
-  def setFillColor(color: js.Any): Unit = js.native
+  def setFillColor(color: Any): Unit = js.native
   
   /** Sets a specified filter property for the currently */
-  def setFilterProperty(property: String, filterIndex: Double, value: js.Any): Unit = js.native
+  def setFilterProperty(property: String, filterIndex: Double, value: Any): Unit = js.native
   
   /** Applies filters to the selected objects .*/
   def setFilters(filterArray: js.Array[FlashFilter]): Unit = js.native
@@ -483,7 +483,7 @@ trait FlashDocument extends StObject {
   def setInstanceBrightness(brightness: Double): Unit = js.native
   
   /** Sets the tint for the instance.*/
-  def setInstanceTint(color: js.Any, strength: Double): Unit = js.native
+  def setInstanceTint(color: Any, strength: Double): Unit = js.native
   
   /** Sets the XML metadata for the specified */
   def setMetadata(strMetadata: String): Boolean = js.native
@@ -492,13 +492,13 @@ trait FlashDocument extends StObject {
   def setMobileSettings(xmlString: String): Boolean = js.native
   
   /** Specifies a value for a specified property of*/
-  def setOvalObjectProperty(propertyName: String, value: js.Any): Unit = js.native
+  def setOvalObjectProperty(propertyName: String, value: Any): Unit = js.native
   
   /** Sets the version of the Flash Player targeted by*/
   def setPlayerVersion(version: String): Boolean = js.native
   
   /** Specifies a value for a specified property of*/
-  def setRectangleObjectProperty(propertyName: String, value: js.Any): Unit = js.native
+  def setRectangleObjectProperty(propertyName: String, value: Any): Unit = js.native
   
   /** Moves and resizes the selection in a single */
   def setSelectionBounds(boundingRectangle: FlashRectangle): Unit = js.native
@@ -516,10 +516,10 @@ trait FlashDocument extends StObject {
   def setStageViewAngle(angle: Double): Unit = js.native
   
   /** Sets the color, width, and style of the selected */
-  def setStroke(color: js.Any, size: Double, strokeType: String): Unit = js.native
+  def setStroke(color: Any, size: Double, strokeType: String): Unit = js.native
   
   /** Changes the stroke color of the selection to the*/
-  def setStrokeColor(color: js.Any): Unit = js.native
+  def setStrokeColor(color: Any): Unit = js.native
   
   /** Changes the stroke size of the selection to the*/
   def setStrokeSize(size: Double): Unit = js.native
@@ -596,7 +596,7 @@ trait FlashDocument extends StObject {
   var width: Double = js.native
   
   // Unlocks all locked elements on the currently
-  def xmlPanel(fileURI: String): js.Any = js.native
+  def xmlPanel(fileURI: String): Any = js.native
   
   /** Specifies the zoom percent of the Stage at author */
   var zoomFactor: Double = js.native

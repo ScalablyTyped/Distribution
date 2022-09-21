@@ -42,7 +42,7 @@ object ConfigEvent {
     
     inline def setServers(value: js.Array[ServerData]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
-    inline def setServersVarargs(value: ServerData*): Self = StObject.set(x, "servers", js.Array(value :_*))
+    inline def setServersVarargs(value: ServerData*): Self = StObject.set(x, "servers", js.Array(value*))
     
     inline def setSuite(value: SuiteData): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     

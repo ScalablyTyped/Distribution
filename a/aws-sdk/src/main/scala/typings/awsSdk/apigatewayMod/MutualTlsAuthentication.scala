@@ -42,6 +42,6 @@ object MutualTlsAuthentication {
     
     inline def setTruststoreWarningsUndefined: Self = StObject.set(x, "truststoreWarnings", js.undefined)
     
-    inline def setTruststoreWarningsVarargs(value: String*): Self = StObject.set(x, "truststoreWarnings", js.Array(value :_*))
+    inline def setTruststoreWarningsVarargs(value: String*): Self = StObject.set(x, "truststoreWarnings", js.Array(value*))
   }
 }

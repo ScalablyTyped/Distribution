@@ -57,7 +57,7 @@ object Package {
     
     inline def setObjectPermissionsUndefined: Self = StObject.set(x, "objectPermissions", js.undefined)
     
-    inline def setObjectPermissionsVarargs(value: ProfileObjectPermissions*): Self = StObject.set(x, "objectPermissions", js.Array(value :_*))
+    inline def setObjectPermissionsVarargs(value: ProfileObjectPermissions*): Self = StObject.set(x, "objectPermissions", js.Array(value*))
     
     inline def setPostInstallClass(value: String): Self = StObject.set(x, "postInstallClass", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object Package {
     
     inline def setTypes(value: js.Array[PackageTypeMembers]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: PackageTypeMembers*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: PackageTypeMembers*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUninstallClass(value: String): Self = StObject.set(x, "uninstallClass", value.asInstanceOf[js.Any])
     

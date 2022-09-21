@@ -19,12 +19,12 @@ trait RowsRequestedEventUIParam extends StObject {
   /**
     * Gets a reference to igGridAppendRowsOnDemand.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the requested rows.
     */
-  var rows: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var rows: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object RowsRequestedEventUIParam {
   
@@ -43,14 +43,14 @@ object RowsRequestedEventUIParam {
     
     inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

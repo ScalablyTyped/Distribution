@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options
   *     Optional configuration object.
   */
-class GMLBase () extends XMLFeature {
+open class GMLBase () extends XMLFeature {
   def this(opt_options: GMLOptions) = this()
   
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native

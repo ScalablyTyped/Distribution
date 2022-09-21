@@ -28,7 +28,7 @@ object VpcAccessibleServices {
     
     inline def setAllowedServicesUndefined: Self = StObject.set(x, "allowedServices", js.undefined)
     
-    inline def setAllowedServicesVarargs(value: String*): Self = StObject.set(x, "allowedServices", js.Array(value :_*))
+    inline def setAllowedServicesVarargs(value: String*): Self = StObject.set(x, "allowedServices", js.Array(value*))
     
     inline def setEnableRestriction(value: Boolean): Self = StObject.set(x, "enableRestriction", value.asInstanceOf[js.Any])
     

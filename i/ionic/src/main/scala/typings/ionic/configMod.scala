@@ -10,7 +10,7 @@ object configMod {
   
   @JSImport("ionic/commands/config", "ConfigNamespace")
   @js.native
-  class ConfigNamespace () extends Namespace {
+  open class ConfigNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

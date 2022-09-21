@@ -12,4 +12,8 @@ object materialUiCoreBooleans {
     extends StObject
        with SortDirection
   inline def `false`: `false` = false.asInstanceOf[`false`]
+  
+  @js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

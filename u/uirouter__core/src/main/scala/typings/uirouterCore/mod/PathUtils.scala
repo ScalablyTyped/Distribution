@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "PathUtils")
 @js.native
-class PathUtils ()
+open class PathUtils ()
   extends typings.uirouterCore.pathMod.PathUtils
 /* static members */
 object PathUtils {
@@ -110,7 +110,7 @@ object PathUtils {
   inline def nonDynamicParams(node: typings.uirouterCore.pathNodeMod.PathNode): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonDynamicParams")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
   
   /** Gets the raw parameter values from a path */
-  inline def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Return a subpath of a path, which stops at the first matching node

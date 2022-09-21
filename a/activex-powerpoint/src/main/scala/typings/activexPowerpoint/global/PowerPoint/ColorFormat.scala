@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ColorFormat")
 @js.native
-/* private */ class ColorFormat ()
+/* private */ open class ColorFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ColorFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var Brightness: Double = js.native
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ObjectThemeColor: MsoThemeColorIndex = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.ColorFormat_typekey")

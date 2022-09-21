@@ -10,10 +10,10 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | dingtalk-robot-sender |
 | Keywords           | dingtalk, robot |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 3132 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 651.0 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/x-cold/dingtalk-robot#readme)

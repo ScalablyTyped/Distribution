@@ -21,10 +21,10 @@ object RouteConfig {
     
     inline def setProcessStack(value: js.Array[RouterProcess]): Self = StObject.set(x, "processStack", value.asInstanceOf[js.Any])
     
-    inline def setProcessStackVarargs(value: RouterProcess*): Self = StObject.set(x, "processStack", js.Array(value :_*))
+    inline def setProcessStackVarargs(value: RouterProcess*): Self = StObject.set(x, "processStack", js.Array(value*))
     
     inline def setRouteStack(value: js.Array[Route]): Self = StObject.set(x, "routeStack", value.asInstanceOf[js.Any])
     
-    inline def setRouteStackVarargs(value: Route*): Self = StObject.set(x, "routeStack", js.Array(value :_*))
+    inline def setRouteStackVarargs(value: Route*): Self = StObject.set(x, "routeStack", js.Array(value*))
   }
 }

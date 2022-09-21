@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-rsa
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Node.js RSA library
@@ -10,10 +10,10 @@ Node.js RSA library
 | ------------------ | :-------------: |
 | Full name          | node-rsa |
 | Keywords           | node, rsa, crypto, assymetric, encryption, decryption, sign, verify, pkcs1, oaep, pss |
-| # releases         | 8 |
-| # dependents       | 480 |
-| # downloads        | 7369931 |
-| # stars            | 29 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1986445.0 |
+| # stars            | 1268.0 |
 
 ## Links
 - [Homepage](https://github.com/rzcoder/node-rsa)

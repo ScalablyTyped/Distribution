@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object minByMod {
   
-  @JSImport("@antv/util/lib/min-by", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/min-by", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -115,7 +115,7 @@ object AboutAsync {
     inline def setBuildVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "BuildVersion", js.Any.fromFunction1(value))
     
     inline def setCSPName(
@@ -127,8 +127,8 @@ object AboutAsync {
       value: js.UndefOr[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | Double
-        ] => js.Promise[Unpacked[js.Any]] | String
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any]) | Double
+        ] => js.Promise[Unpacked[Any]] | String
     ): Self = StObject.set(x, "CSPName", js.Any.fromFunction1(value))
     
     inline def setCSPVersion(
@@ -153,7 +153,7 @@ object AboutAsync {
     inline def setCSPVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "CSPVersion", js.Any.fromFunction1(value))
     
     inline def setCSPVersionFunction2(value: (/* ProviderName */ js.UndefOr[String], /* ProviderType */ js.UndefOr[Double]) => Version): Self = StObject.set(x, "CSPVersion", js.Any.fromFunction2(value))
@@ -166,7 +166,7 @@ object AboutAsync {
     inline def setMajorVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "MajorVersion", js.Any.fromFunction1(value))
     
     inline def setMinorVersion(
@@ -177,7 +177,7 @@ object AboutAsync {
     inline def setMinorVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "MinorVersion", js.Any.fromFunction1(value))
     
     inline def setPluginVersion(
@@ -188,7 +188,7 @@ object AboutAsync {
     inline def setPluginVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "PluginVersion", js.Any.fromFunction1(value))
     
     inline def setProviderVersion(
@@ -205,7 +205,7 @@ object AboutAsync {
     inline def setProviderVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "ProviderVersion", js.Any.fromFunction1(value))
     
     inline def setProviderVersionFunction2(value: (/* ProviderName */ js.UndefOr[String], /* ProviderType */ js.UndefOr[Double]) => String): Self = StObject.set(x, "ProviderVersion", js.Any.fromFunction2(value))
@@ -220,7 +220,7 @@ object AboutAsync {
     inline def setToString_Function1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     
     inline def setVersion(
@@ -231,7 +231,7 @@ object AboutAsync {
     inline def setVersionFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Version", js.Any.fromFunction1(value))
   }
 }

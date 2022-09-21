@@ -10,10 +10,10 @@ LoopBack: Open Source Framework for Node.js
 | ------------------ | :-------------: |
 | Full name          | loopback |
 | Keywords           | web, restful, rest, api, express, restify, koa, auth, security, oracle, mysql, nosql, mongo, mongodb, sqlserver, mssql, postgres, postgresql, soap, StrongLoop, framework, mobile, mBaaS |
-| # releases         | 6 |
-| # dependents       | 156 |
-| # downloads        | 1905243 |
-| # stars            | 65 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 103780.0 |
+| # stars            | 13300.0 |
 
 ## Links
 - [Homepage](http://loopback.io)

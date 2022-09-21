@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Options:
   *
-  * - `OFFER_INFO`:
+  * - `OFFER`:
   *   Callback occurs after offer info is changed.
   *
   * - `SHIPPING_ADDRESS`:
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   account.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.googlepay.googlepayStrings.OFFER_INFO
+  - typings.googlepay.googlepayStrings.OFFER
   - typings.googlepay.googlepayStrings.SHIPPING_ADDRESS
   - typings.googlepay.googlepayStrings.SHIPPING_OPTION
   - typings.googlepay.googlepayStrings.INITIALIZE
@@ -40,7 +40,7 @@ object CallbackTrigger {
   
   inline def INITIALIZE: typings.googlepay.googlepayStrings.INITIALIZE = "INITIALIZE".asInstanceOf[typings.googlepay.googlepayStrings.INITIALIZE]
   
-  inline def OFFER_INFO: typings.googlepay.googlepayStrings.OFFER_INFO = "OFFER_INFO".asInstanceOf[typings.googlepay.googlepayStrings.OFFER_INFO]
+  inline def OFFER: typings.googlepay.googlepayStrings.OFFER = "OFFER".asInstanceOf[typings.googlepay.googlepayStrings.OFFER]
   
   inline def SHIPPING_ADDRESS: typings.googlepay.googlepayStrings.SHIPPING_ADDRESS = "SHIPPING_ADDRESS".asInstanceOf[typings.googlepay.googlepayStrings.SHIPPING_ADDRESS]
   

@@ -56,6 +56,13 @@ trait Container[TLayout, TItemLayout]
   def removeItem(component: Component): Boolean = js.native
   
   /**
+    * Sets the layout for the specified child component
+    * @param component The component to set the layout for
+    * @param layout The layout to apply
+    */
+  def setItemLayout(component: Component, layout: TItemLayout): Unit = js.native
+  
+  /**
     * Defines the layout for this container
     *
     * @param layout object

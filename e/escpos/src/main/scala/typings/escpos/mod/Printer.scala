@@ -10,14 +10,13 @@ import typings.escpos.escposNumbers.`1`
 import typings.escpos.escposNumbers.`2`
 import typings.escpos.escposStrings.A
 import typings.escpos.escposStrings.B
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "Printer")
 @js.native
-class Printer protected () extends StObject {
+open class Printer protected () extends StObject {
   def this(adapter: Adapter) = this()
   def this(adapter: Adapter, options: Encoding) = this()
   
@@ -40,18 +39,15 @@ class Printer protected () extends StObject {
   def cashdraw(pin: Double): Printer = js.native
   
   def close(): Printer = js.native
-  def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Printer = js.native
-  def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit], options: js.Any): Printer = js.native
-  def close(callback: Unit, options: js.Any): Printer = js.native
+  def close(callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): Printer = js.native
+  def close(callback: js.Function1[/* error */ js.UndefOr[Any], Unit], options: Any): Printer = js.native
+  def close(callback: Unit, options: Any): Printer = js.native
   
   /**
     * Select between two print color modes, if your printer supports it
     * @param color - 0 for primary color (black) 1 for secondary color (red)
     */
-  @JSName("color")
-  def color_0(color: `0`): Printer = js.native
-  @JSName("color")
-  def color_1(color: `1`): Printer = js.native
+  def color(color: `0` | `1`): Printer = js.native
   
   /**
     * Carrier feed and tabs.
@@ -95,15 +91,12 @@ class Printer protected () extends StObject {
     * Send data to hardware and flush buffer
     */
   def flush(): Printer = js.native
-  def flush(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Printer = js.native
+  def flush(callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): Printer = js.native
   
   /**
     * @default 'A'
     */
-  @JSName("font")
-  def font_A(family: A): Printer = js.native
-  @JSName("font")
-  def font_B(family: B): Printer = js.native
+  def font(family: A | B): Printer = js.native
   
   def hardware(hw: String): Printer = js.native
   
@@ -134,12 +127,12 @@ class Printer protected () extends StObject {
   /**
     * Print raw
     */
-  def print(content: js.Any): Printer = js.native
+  def print(content: Any): Printer = js.native
   
   /**
     * Print raw with EOL
     */
-  def println(content: js.Any): Printer = js.native
+  def println(content: Any): Printer = js.native
   
   /**
     * Print text
@@ -152,25 +145,23 @@ class Printer protected () extends StObject {
   def qrimage(content: String): Printer = js.native
   def qrimage(
     content: String,
-    callback: js.Function2[/* error */ Error | Null, /* printer */ js.UndefOr[this.type], Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* printer */ js.UndefOr[this.type], Unit]
   ): Printer = js.native
   def qrimage(
     content: String,
     options: Unit,
-    callback: js.Function2[/* error */ Error | Null, /* printer */ js.UndefOr[this.type], Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* printer */ js.UndefOr[this.type], Unit]
   ): Printer = js.native
   def qrimage(content: String, options: Mode): Printer = js.native
   def qrimage(
     content: String,
     options: Mode,
-    callback: js.Function2[/* error */ Error | Null, /* printer */ js.UndefOr[this.type], Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* printer */ js.UndefOr[this.type], Unit]
   ): Printer = js.native
   
   def raster(image: Image): Printer = js.native
   def raster(image: Image, mode: String): Printer = js.native
   
-  def size(width: `1`, height: `2`): Printer = js.native
-  def size(width: `2`, height: `1`): Printer = js.native
   /**
     * Set text size
     *
@@ -178,10 +169,7 @@ class Printer protected () extends StObject {
     *
     * @default `1`
     */
-  @JSName("size")
-  def size_1(width: `1`, height: `1`): Printer = js.native
-  @JSName("size")
-  def size_2(width: `2`, height: `2`): Printer = js.native
+  def size(width: `1` | `2`, height: `1` | `2`): Printer = js.native
   
   /**
     * Set character spacing

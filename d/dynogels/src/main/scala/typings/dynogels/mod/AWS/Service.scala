@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new service object with a configuration object.
   */
-class Service ()
+open class Service ()
   extends typings.awsSdk.mod.Service {
   def this(config: ServiceConfigurationOptions) = this()
 }

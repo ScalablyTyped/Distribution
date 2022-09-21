@@ -12,12 +12,17 @@ trait AwsCloudMapServiceDiscovery extends StObject {
   var attributes: js.UndefOr[AwsCloudMapInstanceAttributes] = js.undefined
   
   /**
-    * The name of the AWS Cloud Map namespace to use.
+    * The preferred IP version that this virtual node uses. Setting the IP preference on the virtual node only overrides the IP preference set for the mesh on this specific node.
+    */
+  var ipPreference: js.UndefOr[IpPreference] = js.undefined
+  
+  /**
+    * The name of the Cloud Map namespace to use.
     */
   var namespaceName: AwsCloudMapName
   
   /**
-    * The name of the AWS Cloud Map service to use.
+    * The name of the Cloud Map service to use.
     */
   var serviceName: AwsCloudMapName
 }
@@ -34,7 +39,11 @@ object AwsCloudMapServiceDiscovery {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: AwsCloudMapInstanceAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: AwsCloudMapInstanceAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setIpPreference(value: IpPreference): Self = StObject.set(x, "ipPreference", value.asInstanceOf[js.Any])
+    
+    inline def setIpPreferenceUndefined: Self = StObject.set(x, "ipPreference", js.undefined)
     
     inline def setNamespaceName(value: AwsCloudMapName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     

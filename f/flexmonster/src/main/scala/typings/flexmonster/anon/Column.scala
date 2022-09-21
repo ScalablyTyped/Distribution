@@ -23,12 +23,12 @@ object Column {
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    inline def setColumnVarargs(value: Tuple*): Self = StObject.set(x, "column", js.Array(value :_*))
+    inline def setColumnVarargs(value: Tuple*): Self = StObject.set(x, "column", js.Array(value*))
     
     inline def setRow(value: js.Array[Tuple]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    inline def setRowVarargs(value: Tuple*): Self = StObject.set(x, "row", js.Array(value :_*))
+    inline def setRowVarargs(value: Tuple*): Self = StObject.set(x, "row", js.Array(value*))
   }
 }

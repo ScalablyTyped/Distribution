@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.ClefNote")
 @js.native
-class ClefNote protected ()
+open class ClefNote protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.ClefNote {
   def this(clef: String) = this()

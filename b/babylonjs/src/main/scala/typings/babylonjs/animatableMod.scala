@@ -18,7 +18,7 @@ object animatableMod {
   
   @JSImport("babylonjs/Animations/animatable", "Animatable")
   @js.native
-  class Animatable protected () extends StObject {
+  open class Animatable protected () extends StObject {
     /**
       * Creates a new Animatable
       * @param scene defines the hosting scene
@@ -35,7 +35,7 @@ object animatableMod {
     def this(
       scene: Scene,
       /** defines the target object */
-    target: js.Any,
+    target: Any,
       /** defines the starting frame number (default is 0) */
     fromFrame: js.UndefOr[Double],
       /** defines the ending frame number (default is 100) */
@@ -44,34 +44,41 @@ object animatableMod {
     loopAnimation: js.UndefOr[Boolean],
       speedRatio: js.UndefOr[Double],
       /** defines a callback to call when animation ends if it is not looping */
-    onAnimationEnd: js.UndefOr[js.Function0[Unit] | Null],
+    onAnimationEnd: js.UndefOr[Nullable[js.Function0[Unit]]],
       animations: js.UndefOr[js.Array[Animation]],
       /** defines a callback to call when animation loops */
-    onAnimationLoop: js.UndefOr[js.Function0[Unit] | Null],
+    onAnimationLoop: js.UndefOr[Nullable[js.Function0[Unit]]],
       /** defines whether the animation should be evaluated additively */
     isAdditive: js.UndefOr[Boolean]
     ) = this()
     
-    /** @hidden */
+    /**
+      * @param delay
+      * @hidden
+      */
     def _animate(delay: Double): Boolean = js.native
     
-    /* private */ var _localDelayOffset: js.Any = js.native
+    /* private */ var _frameToSyncFromJump: Any = js.native
     
-    /* private */ var _paused: js.Any = js.native
+    /* private */ var _localDelayOffset: Any = js.native
     
-    /* private */ var _pausedDelay: js.Any = js.native
+    /* private */ var _manualJumpDelay: Any = js.native
     
-    /* private */ var _raiseOnAnimationEnd: js.Any = js.native
+    /* private */ var _paused: Any = js.native
     
-    /* private */ var _runtimeAnimations: js.Any = js.native
+    /* private */ var _pausedDelay: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _raiseOnAnimationEnd: Any = js.native
     
-    /* private */ var _speedRatio: js.Any = js.native
+    /* private */ var _runtimeAnimations: Any = js.native
     
-    /* private */ var _syncRoot: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _weight: js.Any = js.native
+    /* private */ var _speedRatio: Any = js.native
+    
+    /* private */ var _syncRoot: Any = js.native
+    
+    /* private */ var _weight: Any = js.native
     
     /**
       * Gets a boolean indicating if the animation has started
@@ -83,7 +90,7 @@ object animatableMod {
       * @param target defines the target of the animations
       * @param animations defines the new animations to add
       */
-    def appendAnimations(target: js.Any, animations: js.Array[Animation]): Unit = js.native
+    def appendAnimations(target: Any, animations: js.Array[Animation]): Unit = js.native
     
     /**
       * Disable animation blending
@@ -109,7 +116,7 @@ object animatableMod {
     
     /**
       * Gets the source animation for a specific property
-      * @param property defines the propertyu to look for
+      * @param property defines the property to look for
       * @returns null or the source animation for the given property
       */
     def getAnimationByTargetProperty(property: String): Nullable[Animation] = js.native
@@ -122,7 +129,7 @@ object animatableMod {
     
     /**
       * Gets the runtime animation for a specific property
-      * @param property defines the propertyu to look for
+      * @param property defines the property to look for
       * @returns null or the runtime animation for the given property
       */
     def getRuntimeAnimationByTargetProperty(property: String): Nullable[RuntimeAnimation] = js.native
@@ -146,7 +153,7 @@ object animatableMod {
     def masterFrame: Double = js.native
     
     /** defines a callback to call when animation ends if it is not looping */
-    var onAnimationEnd: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onAnimationEnd: js.UndefOr[Nullable[js.Function0[Unit]]] = js.native
     
     /**
       * Observer raised when the animation ends
@@ -154,7 +161,7 @@ object animatableMod {
     var onAnimationEndObservable: Observable[Animatable] = js.native
     
     /** defines a callback to call when animation loops */
-    var onAnimationLoop: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onAnimationLoop: js.UndefOr[Nullable[js.Function0[Unit]]] = js.native
     
     /**
       * Observer raised when the animation loops
@@ -189,8 +196,8 @@ object animatableMod {
       */
     def stop(): Unit = js.native
     def stop(animationName: String): Unit = js.native
-    def stop(animationName: String, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
-    def stop(animationName: Unit, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
+    def stop(animationName: String, targetMask: js.Function1[/* target */ Any, Boolean]): Unit = js.native
+    def stop(animationName: Unit, targetMask: js.Function1[/* target */ Any, Boolean]): Unit = js.native
     
     /**
       * Gets the root Animatable used to synchronize and normalize animations
@@ -200,20 +207,20 @@ object animatableMod {
     /**
       * Synchronize and normalize current Animatable with a source Animatable
       * This is useful when using animation weights and when animations are not of the same length
-      * @param root defines the root Animatable to synchronize with
+      * @param root defines the root Animatable to synchronize with (null to stop synchronizing)
       * @returns the current Animatable
       */
-    def syncWith(root: Animatable): Animatable = js.native
+    def syncWith(root: Nullable[Animatable]): Animatable = js.native
     
     /** defines the target object */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /** defines the ending frame number (default is 100) */
     var toFrame: Double = js.native
     
     /**
       * Wait asynchronously for the animation to end
-      * @returns a promise which will be fullfilled when the animation ends
+      * @returns a promise which will be fulfilled when the animation ends
       */
     def waitAsync(): js.Promise[Animatable] = js.native
     
@@ -270,13 +277,13 @@ object animatableMod {
       def _processLateAnimationBindings(): Unit = js.native
       
       /** @hidden */
-      def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): js.Any = js.native
+      def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): Any = js.native
       
       /** @hidden */
       def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: Quaternion): Quaternion = js.native
       
       /** @hidden */
-      def _registerTargetForLateAnimationBinding(runtimeAnimation: RuntimeAnimation, originalValue: js.Any): Unit = js.native
+      def _registerTargetForLateAnimationBinding(runtimeAnimation: RuntimeAnimation, originalValue: Any): Unit = js.native
       
       /**
         * Will start the animation sequence of a given target
@@ -294,7 +301,7 @@ object animatableMod {
         * @returns the animatable object created for this animation
         */
       def beginAnimation(
-        target: js.Any,
+        target: Any,
         from: Double,
         to: Double,
         loop: js.UndefOr[Boolean],
@@ -302,7 +309,7 @@ object animatableMod {
         onAnimationEnd: js.UndefOr[js.Function0[Unit]],
         animatable: js.UndefOr[Animatable],
         stopCurrent: js.UndefOr[Boolean],
-        targetMask: js.UndefOr[js.Function1[/* target */ js.Any, Boolean]],
+        targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
         onAnimationLoop: js.UndefOr[js.Function0[Unit]],
         isAdditive: js.UndefOr[Boolean]
       ): Animatable = js.native
@@ -320,10 +327,10 @@ object animatableMod {
         * @param isAdditive defines whether the animation should be evaluated additively (false by default)
         * @returns the list of created animatables
         */
-      def beginDirectAnimation(target: js.Any, animations: js.Array[Animation], from: Double, to: Double): Animatable = js.native
-      def beginDirectAnimation(target: js.Any, animations: js.Array[Animation], from: Double, to: Double, loop: Boolean): Animatable = js.native
+      def beginDirectAnimation(target: Any, animations: js.Array[Animation], from: Double, to: Double): Animatable = js.native
+      def beginDirectAnimation(target: Any, animations: js.Array[Animation], from: Double, to: Double, loop: Boolean): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -331,7 +338,7 @@ object animatableMod {
         speedRatio: Double
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -340,7 +347,7 @@ object animatableMod {
         onAnimationEnd: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -350,7 +357,7 @@ object animatableMod {
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -361,7 +368,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -372,7 +379,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -382,7 +389,7 @@ object animatableMod {
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -393,7 +400,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -404,7 +411,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -413,7 +420,7 @@ object animatableMod {
         onAnimationEnd: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -423,7 +430,7 @@ object animatableMod {
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -434,7 +441,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -445,7 +452,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -455,7 +462,7 @@ object animatableMod {
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -466,7 +473,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -477,7 +484,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -485,7 +492,7 @@ object animatableMod {
         speedRatio: Double
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -494,7 +501,7 @@ object animatableMod {
         onAnimationEnd: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -504,7 +511,7 @@ object animatableMod {
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -515,7 +522,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -526,7 +533,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -536,7 +543,7 @@ object animatableMod {
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -547,7 +554,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -558,7 +565,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -567,7 +574,7 @@ object animatableMod {
         onAnimationEnd: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -577,7 +584,7 @@ object animatableMod {
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -588,7 +595,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -599,7 +606,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -609,7 +616,7 @@ object animatableMod {
         onAnimationLoop: js.Function0[Unit]
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -620,7 +627,7 @@ object animatableMod {
         isAdditive: Boolean
       ): Animatable = js.native
       def beginDirectAnimation(
-        target: js.Any,
+        target: Any,
         animations: js.Array[Animation],
         from: Double,
         to: Double,
@@ -1016,7 +1023,7 @@ object animatableMod {
         * @returns the list of created animatables
         */
       def beginHierarchyAnimation(
-        target: js.Any,
+        target: Any,
         directDescendantsOnly: Boolean,
         from: Double,
         to: Double,
@@ -1025,7 +1032,7 @@ object animatableMod {
         onAnimationEnd: js.UndefOr[js.Function0[Unit]],
         animatable: js.UndefOr[Animatable],
         stopCurrent: js.UndefOr[Boolean],
-        targetMask: js.UndefOr[js.Function1[/* target */ js.Any, Boolean]],
+        targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
         onAnimationLoop: js.UndefOr[js.Function0[Unit]],
         isAdditive: js.UndefOr[Boolean]
       ): js.Array[Animatable] = js.native
@@ -1046,7 +1053,7 @@ object animatableMod {
         * @returns the animatable object created for this animation
         */
       def beginWeightedAnimation(
-        target: js.Any,
+        target: Any,
         from: Double,
         to: Double,
         weight: Double,
@@ -1054,7 +1061,7 @@ object animatableMod {
         speedRatio: js.UndefOr[Double],
         onAnimationEnd: js.UndefOr[js.Function0[Unit]],
         animatable: js.UndefOr[Animatable],
-        targetMask: js.UndefOr[js.Function1[/* target */ js.Any, Boolean]],
+        targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
         onAnimationLoop: js.UndefOr[js.Function0[Unit]],
         isAdditive: js.UndefOr[Boolean]
       ): Animatable = js.native
@@ -1069,14 +1076,14 @@ object animatableMod {
         * @param target defines the target to look animatables for
         * @returns an array of Animatables
         */
-      def getAllAnimatablesByTarget(target: js.Any): js.Array[Animatable] = js.native
+      def getAllAnimatablesByTarget(target: Any): js.Array[Animatable] = js.native
       
       /**
         * Gets the animatable associated with a specific target
         * @param target defines the target of the animatable
         * @returns the required animatable if found
         */
-      def getAnimatableByTarget(target: js.Any): Nullable[Animatable] = js.native
+      def getAnimatableByTarget(target: Any): Nullable[Animatable] = js.native
       
       /**
         * Stops and removes all animations that have been applied to the scene

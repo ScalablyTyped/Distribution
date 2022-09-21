@@ -21,5 +21,5 @@ object global {
   def maxIntegerDigits: Double = js.native
   inline def maxIntegerDigits_=(x: Double): Unit = js.Dynamic.global.updateDynamic("maxIntegerDigits")(x.asInstanceOf[js.Any])
   
-  inline def raise(conditionType: String, message: String, irritants: js.Any*): Unit = (js.Dynamic.global.applyDynamic("raise")(conditionType.asInstanceOf[js.Any], message.asInstanceOf[js.Any], irritants.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def raise(conditionType: String, message: String, irritants: Any*): Unit = (js.Dynamic.global.applyDynamic("raise")((List(conditionType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).`++`(irritants.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 }

@@ -167,7 +167,7 @@ trait PlotSeriesOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
@@ -228,6 +228,15 @@ trait PlotSeriesOptions extends StObject {
   var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) You can set the cursor to
     * "pointer" if you have click events attached to the series, to signal to
     * the user that the points and lines can be clicked.
@@ -242,7 +251,7 @@ trait PlotSeriesOptions extends StObject {
     * options and values for customized functionality. Here you can add
     * additional data for your own event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Name of the dash style to use
@@ -254,11 +263,17 @@ trait PlotSeriesOptions extends StObject {
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Indicates data is structured as
+    * columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highstock by default applies data grouping when
-    * the points become closer than a certain pixel value, determined by the
-    * `groupPixelWidth` option.
+    * the JavaScript charts. Highcharts Stock by default applies data grouping
+    * when the points become closer than a certain pixel value, determined by
+    * the `groupPixelWidth` option.
     *
     * If data grouping is applied, the grouping information of grouped points
     * can be read from the Point.dataGroup. If point options other than the
@@ -476,6 +491,13 @@ trait PlotSeriesOptions extends StObject {
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the _Series on
+    * point_ feature. Only `pie` and `sunburst` series are supported at this
+    * moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotSeriesOnPointOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Opacity of a series parts: line,
     * fill (e.g. area) and dataLabels.
     */
@@ -489,7 +511,7 @@ trait PlotSeriesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Same as
-    * accessibility.pointDescriptionFormatter, but for an individual series.
+    * accessibility.series.descriptionFormatter, but for an individual series.
     * Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
@@ -503,6 +525,9 @@ trait PlotSeriesOptions extends StObject {
     *
     * It can be also be combined with `pointIntervalUnit` to draw irregular
     * time intervals.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point,
+    * and the `pointInterval` is added x times to the `pointStart` setting.
     *
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
@@ -564,8 +589,24 @@ trait PlotSeriesOptions extends StObject {
     * a series, pointStart defines on what value to start. For example, if a
     * series contains one yearly value starting from 1945, set pointStart to
     * 1945.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point.
+    * The x value from the point options is multiplied by `pointInterval` and
+    * added to `pointStart` to produce a modified x value.
     */
   var pointStart: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to select the series
@@ -663,7 +704,7 @@ trait PlotSeriesOptions extends StObject {
     * level. For line type series this is only used in conjunction with
     * negativeColor.
     */
-  var threshold: js.UndefOr[Double] = js.undefined
+  var threshold: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A configuration object for the
@@ -783,7 +824,7 @@ object PlotSeriesOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
@@ -815,17 +856,25 @@ object PlotSeriesOptions {
     
     inline def setCropThresholdUndefined: Self = StObject.set(x, "cropThreshold", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
@@ -835,7 +884,7 @@ object PlotSeriesOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: PlotSeriesDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: PlotSeriesDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDataSorting(value: DataSortingOptionsObject | PlotSeriesDataSortingOptions): Self = StObject.set(x, "dataSorting", value.asInstanceOf[js.Any])
     
@@ -881,13 +930,13 @@ object PlotSeriesOptions {
     
     inline def setJoinByUndefined: Self = StObject.set(x, "joinBy", js.undefined)
     
-    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value :_*))
+    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value*))
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -925,6 +974,10 @@ object PlotSeriesOptions {
     
     inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
+    inline def setOnPoint(value: js.Object | PlotSeriesOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+    
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -956,6 +1009,10 @@ object PlotSeriesOptions {
     inline def setPointStartUndefined: Self = StObject.set(x, "pointStart", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
@@ -1003,6 +1060,8 @@ object PlotSeriesOptions {
     
     inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
+    inline def setThresholdNull: Self = StObject.set(x, "threshold", null)
+    
     inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
@@ -1029,6 +1088,6 @@ object PlotSeriesOptions {
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

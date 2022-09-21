@@ -1,5 +1,6 @@
 package typings.matrixAppservice
 
+import typings.matrixAppservice.anon.Errcode
 import typings.matrixAppservice.anon.HomeserverToken
 import typings.matrixAppservice.appServiceRegistrationMod.AppServiceOutput
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ object mod {
   
   @JSImport("matrix-appservice", "AppService")
   @js.native
-  class AppService protected ()
+  open class AppService protected ()
     extends typings.matrixAppservice.appServiceMod.AppService {
     /**
       * Construct a new application service.
@@ -27,7 +28,7 @@ object mod {
   
   @JSImport("matrix-appservice", "AppServiceRegistration")
   @js.native
-  class AppServiceRegistration ()
+  open class AppServiceRegistration ()
     extends typings.matrixAppservice.appServiceRegistrationMod.AppServiceRegistration {
     def this(url: String) = this()
   }
@@ -51,5 +52,17 @@ object mod {
       * @return {string} A randomly generated token.
       */
     inline def generateToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateToken")().asInstanceOf[String]
+  }
+  
+  @JSImport("matrix-appservice", "AppserviceHttpError")
+  @js.native
+  open class AppserviceHttpError protected ()
+    extends typings.matrixAppservice.appserviceHttpErrorMod.AppserviceHttpError {
+    /**
+      * Creates a new Appservice HTTP error
+      * @param body The error body.
+      * @param status The HTTP status code.
+      */
+    def this(body: Errcode, status: Double) = this()
   }
 }

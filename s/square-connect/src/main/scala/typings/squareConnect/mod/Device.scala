@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Device")
 @js.native
-class Device () extends StObject {
+open class Device () extends StObject {
   
   /**
     * The device's Square-issued ID.

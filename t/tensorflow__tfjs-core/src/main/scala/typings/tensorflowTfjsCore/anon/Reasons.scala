@@ -23,7 +23,7 @@ object Reasons {
     
     inline def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
-    inline def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value*))
     
     inline def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
   }

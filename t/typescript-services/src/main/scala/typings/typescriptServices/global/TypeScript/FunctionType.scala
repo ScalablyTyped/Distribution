@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.FunctionType")
 @js.native
-class FunctionType protected ()
+open class FunctionType protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.FunctionType {
   def this(
@@ -16,16 +16,16 @@ class FunctionType protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _astID: js.Any = js.native
+  var _astID: Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _postComments: js.Any = js.native
+  var _postComments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _preComments: js.Any = js.native
+  var _preComments: Any = js.native
   
   /* CompleteClass */
   var _start: Double = js.native

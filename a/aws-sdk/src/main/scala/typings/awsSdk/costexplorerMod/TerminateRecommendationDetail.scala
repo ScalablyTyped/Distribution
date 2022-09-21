@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerminateRecommendationDetail extends StObject {
   
   /**
-    *  The currency code that AWS used to calculate the costs for this instance.
+    * The currency code that Amazon Web Services used to calculate the costs for this instance.
     */
   var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Estimated savings resulting from modification, on a monthly basis.
+    * The estimated savings that result from modification, on a monthly basis.
     */
   var EstimatedMonthlySavings: js.UndefOr[GenericString] = js.undefined
 }

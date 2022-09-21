@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait SmsStatusMessage extends StObject {
   var deviceId: String
   
   /** The discharge time of the status message. */
-  var dischargeTime: Date
+  var dischargeTime: js.Date
   
   /** Gets the phone number that sent the status message. */
   var from: String
@@ -33,7 +32,7 @@ trait SmsStatusMessage extends StObject {
   var messageType: SmsMessageType
   
   /** Gets the service center timestamp of the status message. */
-  var serviceCenterTimestamp: Date
+  var serviceCenterTimestamp: js.Date
   
   /** Gets the ICCID (Integrated Circuit Card Identifier) of the SIM that received the message. */
   var simIccId: String
@@ -50,12 +49,12 @@ object SmsStatusMessage {
     body: String,
     cellularClass: CellularClass,
     deviceId: String,
-    dischargeTime: Date,
+    dischargeTime: js.Date,
     from: String,
     messageClass: SmsMessageClass,
     messageReferenceNumber: Double,
     messageType: SmsMessageType,
-    serviceCenterTimestamp: Date,
+    serviceCenterTimestamp: js.Date,
     simIccId: String,
     status: Double,
     to: String
@@ -72,7 +71,7 @@ object SmsStatusMessage {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    inline def setDischargeTime(value: Date): Self = StObject.set(x, "dischargeTime", value.asInstanceOf[js.Any])
+    inline def setDischargeTime(value: js.Date): Self = StObject.set(x, "dischargeTime", value.asInstanceOf[js.Any])
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
@@ -82,7 +81,7 @@ object SmsStatusMessage {
     
     inline def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    inline def setServiceCenterTimestamp(value: Date): Self = StObject.set(x, "serviceCenterTimestamp", value.asInstanceOf[js.Any])
+    inline def setServiceCenterTimestamp(value: js.Date): Self = StObject.set(x, "serviceCenterTimestamp", value.asInstanceOf[js.Any])
     
     inline def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     

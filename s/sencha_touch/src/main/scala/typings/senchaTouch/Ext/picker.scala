@@ -69,8 +69,8 @@ object picker {
     @JSName("setValue")
     var setValue_IDate: js.UndefOr[
         js.Function2[
-          /* value */ js.UndefOr[js.Any], 
-          /* animated */ js.UndefOr[js.Any], 
+          /* value */ js.UndefOr[Any], 
+          /* animated */ js.UndefOr[Any], 
           typings.senchaTouch.Ext.IPicker
         ]
       ] = js.undefined
@@ -98,7 +98,7 @@ object picker {
       * @param oldDayText Object
       */
     var updateDayText: js.UndefOr[
-        js.Function2[/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* newDayText */ js.UndefOr[Any], /* oldDayText */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Method] Updates the monthText configuration
@@ -106,7 +106,7 @@ object picker {
       * @param oldMonthText Object
       */
     var updateMonthText: js.UndefOr[
-        js.Function2[/* newMonthText */ js.UndefOr[js.Any], /* oldMonthText */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* newMonthText */ js.UndefOr[Any], /* oldMonthText */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Method] Updates the yearFrom configuration */
@@ -115,7 +115,7 @@ object picker {
     /** [Method] Updates the yearText configuration
       * @param yearText Object
       */
-    var updateYearText: js.UndefOr[js.Function1[/* yearText */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var updateYearText: js.UndefOr[js.Function1[/* yearText */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Updates the yearTo configuration */
     var updateYearTo: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -183,7 +183,7 @@ object picker {
       inline def setSetSlotOrderUndefined: Self = StObject.set(x, "setSlotOrder", js.undefined)
       
       inline def setSetValue(
-        value: (/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.IPicker
+        value: (/* value */ js.UndefOr[Any], /* animated */ js.UndefOr[Any]) => typings.senchaTouch.Ext.IPicker
       ): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       
       inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
@@ -204,11 +204,11 @@ object picker {
       
       inline def setSlotOrderUndefined: Self = StObject.set(x, "slotOrder", js.undefined)
       
-      inline def setUpdateDayText(value: (/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateDayText", js.Any.fromFunction2(value))
+      inline def setUpdateDayText(value: (/* newDayText */ js.UndefOr[Any], /* oldDayText */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateDayText", js.Any.fromFunction2(value))
       
       inline def setUpdateDayTextUndefined: Self = StObject.set(x, "updateDayText", js.undefined)
       
-      inline def setUpdateMonthText(value: (/* newMonthText */ js.UndefOr[js.Any], /* oldMonthText */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateMonthText", js.Any.fromFunction2(value))
+      inline def setUpdateMonthText(value: (/* newMonthText */ js.UndefOr[Any], /* oldMonthText */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateMonthText", js.Any.fromFunction2(value))
       
       inline def setUpdateMonthTextUndefined: Self = StObject.set(x, "updateMonthText", js.undefined)
       
@@ -216,7 +216,7 @@ object picker {
       
       inline def setUpdateYearFromUndefined: Self = StObject.set(x, "updateYearFrom", js.undefined)
       
-      inline def setUpdateYearText(value: /* yearText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateYearText", js.Any.fromFunction1(value))
+      inline def setUpdateYearText(value: /* yearText */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updateYearText", js.Any.fromFunction1(value))
       
       inline def setUpdateYearTextUndefined: Self = StObject.set(x, "updateYearText", js.undefined)
       
@@ -249,19 +249,19 @@ object picker {
       * @param config Object
       * @returns Object
       */
-    var applyCancelButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var applyCancelButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method] Updates the doneButton configuration
       * @param config Object
       * @returns Object
       */
-    var applyDoneButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var applyDoneButton: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (String/Mixed) */
-    var cancelButton: js.UndefOr[js.Any] = js.undefined
+    var cancelButton: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String/Mixed) */
-    var doneButton: js.UndefOr[js.Any] = js.undefined
+    var doneButton: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of bottom
       * @returns Number
@@ -272,22 +272,22 @@ object picker {
     /** [Method] Returns the value of cancelButton
       * @returns String/Mixed
       */
-    var getCancelButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getCancelButton: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of activeItem
       * @returns Object/String/Number
       */
-    var getCard: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getCard: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of doneButton
       * @returns String/Mixed
       */
-    var getDoneButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getDoneButton: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of layout
       * @returns Object
       */
-    var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of slots
       * @returns Array
@@ -297,7 +297,7 @@ object picker {
     /** [Method] Returns the value of toolbar
       * @returns Ext.TitleBar/Ext.Toolbar/Object
       */
-    var getToolbar: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getToolbar: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of toolbarPosition
       * @returns String
@@ -313,12 +313,12 @@ object picker {
       * @param useDom Object
       * @returns Object The values of the pickers slots
       */
-    var getValue: js.UndefOr[js.Function1[/* useDom */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var getValue: js.UndefOr[js.Function1[/* useDom */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method] Returns the values of each of the pickers slots
       * @returns Object The values of the pickers slots.
       */
-    var getValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getValues: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Number) */
     @JSName("height")
@@ -333,17 +333,17 @@ object picker {
     /** [Method] Sets the value of cancelButton
       * @param cancelButton String/Mixed The new value.
       */
-    var setCancelButton: js.UndefOr[js.Function1[/* cancelButton */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setCancelButton: js.UndefOr[js.Function1[/* cancelButton */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of activeItem
       * @param activeItem Object/String/Number The new value.
       */
-    var setCard: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setCard: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of doneButton
       * @param doneButton String/Mixed The new value.
       */
-    var setDoneButton: js.UndefOr[js.Function1[/* doneButton */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setDoneButton: js.UndefOr[js.Function1[/* doneButton */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of height
       * @param height Number The new value.
@@ -371,7 +371,7 @@ object picker {
     /** [Method] Sets the value of toolbar
       * @param toolbar Ext.TitleBar/Ext.Toolbar/Object The new value.
       */
-    var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of toolbarPosition
       * @param toolbarPosition String The new value.
@@ -389,20 +389,20 @@ object picker {
       * @returns Ext.Picker this This picker.
       */
     var setValue: js.UndefOr[
-        js.Function2[/* values */ js.UndefOr[js.Any], /* animated */ js.UndefOr[Boolean], this.type]
+        js.Function2[/* values */ js.UndefOr[Any], /* animated */ js.UndefOr[Boolean], this.type]
       ] = js.undefined
     
     /** [Config Option] (Array) */
     var slots: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Ext.TitleBar/Ext.Toolbar/Object) */
-    var toolbar: js.UndefOr[js.Any] = js.undefined
+    var toolbar: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var useTitles: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Number) */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object IPicker {
     
@@ -417,19 +417,19 @@ object picker {
       
       inline def setActiveClsUndefined: Self = StObject.set(x, "activeCls", js.undefined)
       
-      inline def setApplyCancelButton(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "applyCancelButton", js.Any.fromFunction1(value))
+      inline def setApplyCancelButton(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "applyCancelButton", js.Any.fromFunction1(value))
       
       inline def setApplyCancelButtonUndefined: Self = StObject.set(x, "applyCancelButton", js.undefined)
       
-      inline def setApplyDoneButton(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "applyDoneButton", js.Any.fromFunction1(value))
+      inline def setApplyDoneButton(value: /* config */ js.UndefOr[Any] => Any): Self = StObject.set(x, "applyDoneButton", js.Any.fromFunction1(value))
       
       inline def setApplyDoneButtonUndefined: Self = StObject.set(x, "applyDoneButton", js.undefined)
       
-      inline def setCancelButton(value: js.Any): Self = StObject.set(x, "cancelButton", value.asInstanceOf[js.Any])
+      inline def setCancelButton(value: Any): Self = StObject.set(x, "cancelButton", value.asInstanceOf[js.Any])
       
       inline def setCancelButtonUndefined: Self = StObject.set(x, "cancelButton", js.undefined)
       
-      inline def setDoneButton(value: js.Any): Self = StObject.set(x, "doneButton", value.asInstanceOf[js.Any])
+      inline def setDoneButton(value: Any): Self = StObject.set(x, "doneButton", value.asInstanceOf[js.Any])
       
       inline def setDoneButtonUndefined: Self = StObject.set(x, "doneButton", js.undefined)
       
@@ -437,19 +437,19 @@ object picker {
       
       inline def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
       
-      inline def setGetCancelButton(value: () => js.Any): Self = StObject.set(x, "getCancelButton", js.Any.fromFunction0(value))
+      inline def setGetCancelButton(value: () => Any): Self = StObject.set(x, "getCancelButton", js.Any.fromFunction0(value))
       
       inline def setGetCancelButtonUndefined: Self = StObject.set(x, "getCancelButton", js.undefined)
       
-      inline def setGetCard(value: () => js.Any): Self = StObject.set(x, "getCard", js.Any.fromFunction0(value))
+      inline def setGetCard(value: () => Any): Self = StObject.set(x, "getCard", js.Any.fromFunction0(value))
       
       inline def setGetCardUndefined: Self = StObject.set(x, "getCard", js.undefined)
       
-      inline def setGetDoneButton(value: () => js.Any): Self = StObject.set(x, "getDoneButton", js.Any.fromFunction0(value))
+      inline def setGetDoneButton(value: () => Any): Self = StObject.set(x, "getDoneButton", js.Any.fromFunction0(value))
       
       inline def setGetDoneButtonUndefined: Self = StObject.set(x, "getDoneButton", js.undefined)
       
-      inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
       inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
@@ -457,7 +457,7 @@ object picker {
       
       inline def setGetSlotsUndefined: Self = StObject.set(x, "getSlots", js.undefined)
       
-      inline def setGetToolbar(value: () => js.Any): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
+      inline def setGetToolbar(value: () => Any): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
       
       inline def setGetToolbarPosition(value: () => java.lang.String): Self = StObject.set(x, "getToolbarPosition", js.Any.fromFunction0(value))
       
@@ -469,11 +469,11 @@ object picker {
       
       inline def setGetUseTitlesUndefined: Self = StObject.set(x, "getUseTitles", js.undefined)
       
-      inline def setGetValue(value: /* useDom */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: /* useDom */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
       inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
-      inline def setGetValues(value: () => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
       
       inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
       
@@ -485,15 +485,15 @@ object picker {
       
       inline def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
       
-      inline def setSetCancelButton(value: /* cancelButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCancelButton", js.Any.fromFunction1(value))
+      inline def setSetCancelButton(value: /* cancelButton */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCancelButton", js.Any.fromFunction1(value))
       
       inline def setSetCancelButtonUndefined: Self = StObject.set(x, "setCancelButton", js.undefined)
       
-      inline def setSetCard(value: /* activeItem */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCard", js.Any.fromFunction1(value))
+      inline def setSetCard(value: /* activeItem */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCard", js.Any.fromFunction1(value))
       
       inline def setSetCardUndefined: Self = StObject.set(x, "setCard", js.undefined)
       
-      inline def setSetDoneButton(value: /* doneButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDoneButton", js.Any.fromFunction1(value))
+      inline def setSetDoneButton(value: /* doneButton */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDoneButton", js.Any.fromFunction1(value))
       
       inline def setSetDoneButtonUndefined: Self = StObject.set(x, "setDoneButton", js.undefined)
       
@@ -513,7 +513,7 @@ object picker {
       
       inline def setSetSlotsUndefined: Self = StObject.set(x, "setSlots", js.undefined)
       
-      inline def setSetToolbar(value: /* toolbar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setToolbar", js.Any.fromFunction1(value))
+      inline def setSetToolbar(value: /* toolbar */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setToolbar", js.Any.fromFunction1(value))
       
       inline def setSetToolbarPosition(value: /* toolbarPosition */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setToolbarPosition", js.Any.fromFunction1(value))
       
@@ -526,7 +526,7 @@ object picker {
       inline def setSetUseTitlesUndefined: Self = StObject.set(x, "setUseTitles", js.undefined)
       
       inline def setSetValue(
-        value: (/* values */ js.UndefOr[js.Any], /* animated */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.picker.IPicker
+        value: (/* values */ js.UndefOr[Any], /* animated */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.picker.IPicker
       ): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       
       inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
@@ -535,7 +535,7 @@ object picker {
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      inline def setToolbar(value: js.Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      inline def setToolbar(value: Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
       inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
       
@@ -543,7 +543,7 @@ object picker {
       
       inline def setUseTitlesUndefined: Self = StObject.set(x, "useTitles", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -560,7 +560,7 @@ object picker {
       * @param data Object
       * @returns Object
       */
-    var applyData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var applyData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method] Sets the title for this dataview by creating element
       * @param title String
@@ -642,7 +642,7 @@ object picker {
       * @param oldAlign Object
       */
     var updateAlign: js.UndefOr[
-        js.Function2[/* newAlign */ js.UndefOr[js.Any], /* oldAlign */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* newAlign */ js.UndefOr[Any], /* oldAlign */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Config Option] (Number) */
@@ -664,7 +664,7 @@ object picker {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setApplyData(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "applyData", js.Any.fromFunction1(value))
+      inline def setApplyData(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "applyData", js.Any.fromFunction1(value))
       
       inline def setApplyDataUndefined: Self = StObject.set(x, "applyData", js.undefined)
       
@@ -732,7 +732,7 @@ object picker {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setUpdateAlign(value: (/* newAlign */ js.UndefOr[js.Any], /* oldAlign */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateAlign", js.Any.fromFunction2(value))
+      inline def setUpdateAlign(value: (/* newAlign */ js.UndefOr[Any], /* oldAlign */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateAlign", js.Any.fromFunction2(value))
       
       inline def setUpdateAlignUndefined: Self = StObject.set(x, "updateAlign", js.undefined)
       

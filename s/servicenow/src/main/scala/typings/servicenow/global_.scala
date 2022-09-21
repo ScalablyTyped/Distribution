@@ -16,7 +16,7 @@ object global_ {
   
   @JSGlobal("GlideDateTime")
   @js.native
-  class GlideDateTime ()
+  open class GlideDateTime ()
     extends StObject
        with typings.servicenow.GlideDateTime {
     def this(value: String) = this()
@@ -25,7 +25,7 @@ object global_ {
   
   @JSGlobal("GlideDuration")
   @js.native
-  class GlideDuration ()
+  open class GlideDuration ()
     extends StObject
        with typings.servicenow.GlideDuration {
     def this(value: String) = this()
@@ -68,7 +68,7 @@ object global_ {
   
   @JSGlobal("GlideEvaluator")
   @js.native
-  class GlideEvaluator ()
+  open class GlideEvaluator ()
     extends StObject
        with typings.servicenow.GlideEvaluator
   
@@ -93,7 +93,7 @@ object global_ {
   
   @JSGlobal("GlideLocale")
   @js.native
-  class GlideLocale ()
+  open class GlideLocale ()
     extends StObject
        with typings.servicenow.GlideLocale {
     
@@ -125,7 +125,7 @@ object global_ {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("GlideRecord")
   @js.native
-  class GlideRecord protected ()
+  open class GlideRecord protected ()
     extends StObject
        with typings.servicenow.servicenow.GlideRecord {
     def this(`type`: String) = this()
@@ -137,7 +137,7 @@ object global_ {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("GlideRecordSecure")
   @js.native
-  class GlideRecordSecure protected ()
+  open class GlideRecordSecure protected ()
     extends StObject
        with typings.servicenow.servicenow.GlideRecord {
     def this(`type`: String) = this()
@@ -148,7 +148,7 @@ object global_ {
   
   @JSGlobal("GlideSchedule")
   @js.native
-  class GlideSchedule ()
+  open class GlideSchedule ()
     extends StObject
        with typings.servicenow.GlideSchedule {
     def this(sysId: String, timeZone: String) = this()
@@ -195,7 +195,7 @@ object global_ {
   
   @JSGlobal("GlideSysAttachment")
   @js.native
-  class GlideSysAttachment ()
+  open class GlideSysAttachment ()
     extends StObject
        with typings.servicenow.GlideSysAttachment {
     
@@ -206,7 +206,7 @@ object global_ {
     override def deleteAttachment(sysId: String): Unit = js.native
     
     /* CompleteClass */
-    override def getContent(record: typings.servicenow.servicenow.GlideRecord): js.Any = js.native
+    override def getContent(record: typings.servicenow.servicenow.GlideRecord): Any = js.native
     
     /* CompleteClass */
     override def getContentBase64(record: typings.servicenow.servicenow.GlideRecord): String = js.native
@@ -219,7 +219,7 @@ object global_ {
       record: typings.servicenow.servicenow.GlideRecord,
       fileName: String,
       contentType: String,
-      data: js.Any
+      data: Any
     ): String = js.native
     
     /* CompleteClass */
@@ -241,7 +241,7 @@ object global_ {
   
   @JSGlobal("GlideTime")
   @js.native
-  class GlideTime protected ()
+  open class GlideTime protected ()
     extends StObject
        with typings.servicenow.GlideTime {
     def this(milliseconds: Double) = this()
@@ -293,7 +293,7 @@ object global_ {
   
   @JSGlobal("XMLDocument2")
   @js.native
-  class XMLDocument2 ()
+  open class XMLDocument2 ()
     extends StObject
        with typings.servicenow.XMLDocument2 {
     
@@ -349,7 +349,7 @@ object global_ {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+      inline def create(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Any]
     }
     
     object GlideStringUtil {
@@ -360,7 +360,7 @@ object global_ {
       
       inline def base64Decode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      inline def base64DecodeAsBytes(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("base64DecodeAsBytes")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def base64DecodeAsBytes(value: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("base64DecodeAsBytes")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
       
       inline def escapeHTML(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
       
@@ -369,7 +369,7 @@ object global_ {
     
     @JSGlobal("global.Workflow")
     @js.native
-    class Workflow ()
+    open class Workflow ()
       extends StObject
          with typings.servicenow.global.Workflow
   }
@@ -382,7 +382,7 @@ object global_ {
     
     @JSGlobal("sn_ws.RESTMessageV2")
     @js.native
-    class RESTMessageV2 ()
+    open class RESTMessageV2 ()
       extends StObject
          with typings.servicenow.snWs.RESTMessageV2 {
       def this(name: String, methodName: RestHTTPMethods) = this()
@@ -390,7 +390,7 @@ object global_ {
     
     @JSGlobal("sn_ws.SOAPMessageV2")
     @js.native
-    class SOAPMessageV2 ()
+    open class SOAPMessageV2 ()
       extends StObject
          with typings.servicenow.snWs.SOAPMessageV2 {
       def this(soapMessage: String, soapFunction: String) = this()

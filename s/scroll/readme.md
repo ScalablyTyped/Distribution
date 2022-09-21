@@ -10,15 +10,12 @@ animates the scroll top/left position of an element
 | ------------------ | :-------------: |
 | Full name          | scroll |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 73 |
-| # downloads        | 5481317 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 783758.3333333334 |
+| # stars            | 67.0 |
 
 ## Links
-- [Homepage](https://github.com/michaelrhodes/scroll#readme)
-- [Bugs](https://github.com/michaelrhodes/scroll/issues)
-- [Repository](https://github.com/michaelrhodes/scroll)
 - [Npm](https://www.npmjs.com/package/scroll)
     
 

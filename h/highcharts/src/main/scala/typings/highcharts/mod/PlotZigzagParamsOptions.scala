@@ -23,6 +23,8 @@ trait PlotZigzagParamsOptions extends StObject {
     */
   var highIndex: js.UndefOr[Double] = js.undefined
   
+  var index: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) The point index which indicator calculations will base - low
     * value.
@@ -31,6 +33,8 @@ trait PlotZigzagParamsOptions extends StObject {
     * calculated using Low values.
     */
   var lowIndex: js.UndefOr[Double] = js.undefined
+  
+  var period: js.UndefOr[String] = js.undefined
 }
 object PlotZigzagParamsOptions {
   
@@ -49,8 +53,16 @@ object PlotZigzagParamsOptions {
     
     inline def setHighIndexUndefined: Self = StObject.set(x, "highIndex", js.undefined)
     
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
     inline def setLowIndex(value: Double): Self = StObject.set(x, "lowIndex", value.asInstanceOf[js.Any])
     
     inline def setLowIndexUndefined: Self = StObject.set(x, "lowIndex", js.undefined)
+    
+    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

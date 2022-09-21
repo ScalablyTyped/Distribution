@@ -49,7 +49,7 @@ object ColumnBoolExp {
     
     inline def set_inUndefined: Self = StObject.set(x, "_in", js.undefined)
     
-    inline def set_inVarargs(value: T*): Self = StObject.set(x, "_in", js.Array(value :_*))
+    inline def set_inVarargs(value: T*): Self = StObject.set(x, "_in", js.Array(value*))
     
     inline def set_is_null(value: Boolean): Self = StObject.set(x, "_is_null", value.asInstanceOf[js.Any])
     
@@ -71,6 +71,6 @@ object ColumnBoolExp {
     
     inline def set_ninUndefined: Self = StObject.set(x, "_nin", js.undefined)
     
-    inline def set_ninVarargs(value: T*): Self = StObject.set(x, "_nin", js.Array(value :_*))
+    inline def set_ninVarargs(value: T*): Self = StObject.set(x, "_nin", js.Array(value*))
   }
 }

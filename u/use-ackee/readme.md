@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-ackee
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Use Ackee in React
@@ -10,10 +10,10 @@ Use Ackee in React
 | ------------------ | :-------------: |
 | Full name          | use-ackee |
 | Keywords           | react, hooks, hook, tracker, analytics, tracking, ackee |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 4128 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 3112.3333333333335 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/electerious/use-ackee)

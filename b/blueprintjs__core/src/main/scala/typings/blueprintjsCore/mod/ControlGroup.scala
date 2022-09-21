@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.controlGroupMod.IControlGroupProps
+import typings.blueprintjsCore.controlGroupMod.ControlGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "ControlGroup")
 @js.native
-class ControlGroup protected ()
+open class ControlGroup protected ()
   extends typings.blueprintjsCore.componentsMod.ControlGroup {
-  def this(props: IControlGroupProps) = this()
-  def this(props: IControlGroupProps, context: js.Any) = this()
+  def this(props: ControlGroupProps) = this()
+  def this(props: ControlGroupProps, context: Any) = this()
 }
 /* static members */
 object ControlGroup {

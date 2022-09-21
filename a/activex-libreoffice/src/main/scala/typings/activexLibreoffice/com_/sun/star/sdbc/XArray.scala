@@ -43,7 +43,7 @@ trait XArray
     * @returns an sequence that contains the ordered elements of the SQL array designated by this object.
     * @throws SQLException if an error occurs while attempting to access the array.
     */
-  def getArray(typeMap: XNameAccess): SafeArray[js.Any]
+  def getArray(typeMap: XNameAccess): SafeArray[Any]
   
   /**
     * returns an array containing a slice of the SQL array, beginning with the specified `index` and containing up to `count` successive elements of the SQL
@@ -54,7 +54,7 @@ trait XArray
     * @returns an array containing up to `count` consecutive elements of the SQL array, beginning with element `index` .
     * @throws SQLException if an error occurs while attempting to access the array.
     */
-  def getArrayAtIndex(index: Double, count: Double, typeMap: XNameAccess): SafeArray[js.Any]
+  def getArrayAtIndex(index: Double, count: Double, typeMap: XNameAccess): SafeArray[Any]
   
   /**
     * returns the SDBC type of the elements in the array designated by this `Array` object.
@@ -109,13 +109,13 @@ object XArray {
     BaseType: Double,
     BaseTypeName: String,
     acquire: () => Unit,
-    getArray: XNameAccess => SafeArray[js.Any],
-    getArrayAtIndex: (Double, Double, XNameAccess) => SafeArray[js.Any],
+    getArray: XNameAccess => SafeArray[Any],
+    getArrayAtIndex: (Double, Double, XNameAccess) => SafeArray[Any],
     getBaseType: () => Double,
     getBaseTypeName: () => String,
     getResultSet: XNameAccess => XResultSet,
     getResultSetAtIndex: (Double, Double, XNameAccess) => XResultSet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XArray = {
     val __obj = js.Dynamic.literal(BaseType = BaseType.asInstanceOf[js.Any], BaseTypeName = BaseTypeName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getArray = js.Any.fromFunction1(getArray), getArrayAtIndex = js.Any.fromFunction3(getArrayAtIndex), getBaseType = js.Any.fromFunction0(getBaseType), getBaseTypeName = js.Any.fromFunction0(getBaseTypeName), getResultSet = js.Any.fromFunction1(getResultSet), getResultSetAtIndex = js.Any.fromFunction3(getResultSetAtIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -128,9 +128,9 @@ object XArray {
     
     inline def setBaseTypeName(value: String): Self = StObject.set(x, "BaseTypeName", value.asInstanceOf[js.Any])
     
-    inline def setGetArray(value: XNameAccess => SafeArray[js.Any]): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
+    inline def setGetArray(value: XNameAccess => SafeArray[Any]): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
     
-    inline def setGetArrayAtIndex(value: (Double, Double, XNameAccess) => SafeArray[js.Any]): Self = StObject.set(x, "getArrayAtIndex", js.Any.fromFunction3(value))
+    inline def setGetArrayAtIndex(value: (Double, Double, XNameAccess) => SafeArray[Any]): Self = StObject.set(x, "getArrayAtIndex", js.Any.fromFunction3(value))
     
     inline def setGetBaseType(value: () => Double): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
     

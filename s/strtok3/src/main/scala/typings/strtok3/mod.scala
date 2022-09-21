@@ -1,7 +1,6 @@
 package typings.strtok3
 
-import typings.node.Buffer
-import typings.node.streamMod.Readable
+import typings.node.nodeStreamMod.Readable
 import typings.strtok3.bufferTokenizerMod.BufferTokenizer
 import typings.strtok3.fileTokenizerMod.FileTokenizer
 import typings.strtok3.readStreamTokenizerMod.ReadStreamTokenizer
@@ -18,11 +17,11 @@ object mod {
   
   @JSImport("strtok3", "EndOfStreamError")
   @js.native
-  class EndOfStreamError ()
+  open class EndOfStreamError ()
     extends typings.strtok3.coreMod.EndOfStreamError
   
-  inline def fromBuffer(buffer: Buffer): BufferTokenizer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BufferTokenizer]
-  inline def fromBuffer(buffer: Buffer, fileInfo: IFileInfo): BufferTokenizer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], fileInfo.asInstanceOf[js.Any])).asInstanceOf[BufferTokenizer]
+  inline def fromBuffer(uint8Array: js.typedarray.Uint8Array): BufferTokenizer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(uint8Array.asInstanceOf[js.Any]).asInstanceOf[BufferTokenizer]
+  inline def fromBuffer(uint8Array: js.typedarray.Uint8Array, fileInfo: IFileInfo): BufferTokenizer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(uint8Array.asInstanceOf[js.Any], fileInfo.asInstanceOf[js.Any])).asInstanceOf[BufferTokenizer]
   
   inline def fromFile(sourceFilePath: String): js.Promise[FileTokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(sourceFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileTokenizer]]
   

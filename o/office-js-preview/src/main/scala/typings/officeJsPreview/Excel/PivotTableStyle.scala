@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a PivotTable style, which defines style elements by PivotTable region.
   *
-  * Represents a PivotTable Style, which defines style elements by PivotTable region.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -26,17 +26,19 @@ trait PivotTableStyle
   var context_PivotTableStyle: RequestContext = js.native
   
   /**
-    * Deletes the PivotTableStyle.
+    * Deletes the PivotTable style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   
   /**
-    * Creates a duplicate of this PivotTableStyle with copies of all the style elements.
+    * Creates a duplicate of this PivotTable style with copies of all the style elements.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
-    * @returns The new PivotTableStyle object that has been duplicated from this PivotTableStyle.
+    * @returns The new `PivotTableStyle` object that has been duplicated from this PivotTable style.
     */
   def duplicate(): PivotTableStyle = js.native
   
@@ -52,29 +54,23 @@ trait PivotTableStyle
   def load(propertyNames: js.Array[String]): PivotTableStyle = js.native
   
   /**
+    * Specifies the name of the PivotTable style.
     *
-    * Gets the name of the PivotTableStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: String = js.native
   
   /**
+    * Specifies if this `PivotTableStyle` object is read-only.
     *
-    * Specifies if this PivotTableStyle object is read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   val readOnly: Boolean = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.PivotTableStyle): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

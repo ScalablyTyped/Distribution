@@ -22,7 +22,7 @@ object portalMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Portal {
     def this(properties: PortalProperties) = this()

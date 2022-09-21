@@ -3,7 +3,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.KeyNotificationEndpoint
-import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRegionRequestIdResourceUserIp
+import typings.maximMazurokGapiClientCompute.anon.Oauthtoken
+import typings.maximMazurokGapiClientCompute.anon.ResourceUploadTypeUploadprotocolUserIpXgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,9 @@ trait RegionNotificationEndpointsResource extends StObject {
   def get(): Request[NotificationEndpoint] = js.native
   def get(request: KeyNotificationEndpoint): Request[NotificationEndpoint] = js.native
   
+  def insert(request: Oauthtoken, body: NotificationEndpoint): Request[Operation] = js.native
   /** Create a NotificationEndpoint in the specified project in the given region using the parameters that are included in the request. */
-  def insert(request: ProjectQuotaUserRegionRequestIdResourceUserIp): Request[Operation] = js.native
-  def insert(request: typings.maximMazurokGapiClientCompute.anon.Project, body: NotificationEndpoint): Request[Operation] = js.native
+  def insert(request: ResourceUploadTypeUploadprotocolUserIpXgafv): Request[Operation] = js.native
   
   /** Lists the NotificationEndpoints for a project in the given region. */
   def list(): Request[NotificationEndpointList] = js.native

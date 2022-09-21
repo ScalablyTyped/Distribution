@@ -3,7 +3,6 @@ package typings.nestdb
 import typings.nestdb.anon.NewDoc
 import typings.nestdb.nestdbStrings.compactionDotdone
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,31 +11,31 @@ object mod {
   
   @JSImport("nestdb", JSImport.Namespace)
   @js.native
-  class ^[G] () extends NestDb[G] {
+  open class ^[G] () extends NestDb[G] {
     def this(pathOrOptions: String) = this()
     def this(pathOrOptions: DataStoreOptions) = this()
   }
   
   trait Cursor[T] extends StObject {
     
-    def exec(callback: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit]): Unit
+    def exec(callback: js.Function2[/* err */ js.Error, /* documents */ js.Array[T], Unit]): Unit
     
     def limit(n: Double): Cursor[T]
     
-    def projection(query: js.Any): Cursor[T]
+    def projection(query: Any): Cursor[T]
     
     def skip(n: Double): Cursor[T]
     
-    def sort(query: js.Any): Cursor[T]
+    def sort(query: Any): Cursor[T]
   }
   object Cursor {
     
     inline def apply[T](
-      exec: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit] => Unit,
+      exec: js.Function2[/* err */ js.Error, /* documents */ js.Array[T], Unit] => Unit,
       limit: Double => Cursor[T],
-      projection: js.Any => Cursor[T],
+      projection: Any => Cursor[T],
       skip: Double => Cursor[T],
-      sort: js.Any => Cursor[T]
+      sort: Any => Cursor[T]
     ): Cursor[T] = {
       val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), limit = js.Any.fromFunction1(limit), projection = js.Any.fromFunction1(projection), skip = js.Any.fromFunction1(skip), sort = js.Any.fromFunction1(sort))
       __obj.asInstanceOf[Cursor[T]]
@@ -44,32 +43,32 @@ object mod {
     
     extension [Self <: Cursor[?], T](x: Self & Cursor[T]) {
       
-      inline def setExec(value: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+      inline def setExec(value: js.Function2[/* err */ js.Error, /* documents */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
       
       inline def setLimit(value: Double => Cursor[T]): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
       
-      inline def setProjection(value: js.Any => Cursor[T]): Self = StObject.set(x, "projection", js.Any.fromFunction1(value))
+      inline def setProjection(value: Any => Cursor[T]): Self = StObject.set(x, "projection", js.Any.fromFunction1(value))
       
       inline def setSkip(value: Double => Cursor[T]): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
       
-      inline def setSort(value: js.Any => Cursor[T]): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+      inline def setSort(value: Any => Cursor[T]): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     }
   }
   
   trait CursorCount extends StObject {
     
-    def exec(callback: js.Function2[/* err */ Error, /* count */ Double, Unit]): Unit
+    def exec(callback: js.Function2[/* err */ js.Error, /* count */ Double, Unit]): Unit
   }
   object CursorCount {
     
-    inline def apply(exec: js.Function2[/* err */ Error, /* count */ Double, Unit] => Unit): CursorCount = {
+    inline def apply(exec: js.Function2[/* err */ js.Error, /* count */ Double, Unit] => Unit): CursorCount = {
       val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec))
       __obj.asInstanceOf[CursorCount]
     }
     
     extension [Self <: CursorCount](x: Self) {
       
-      inline def setExec(value: js.Function2[/* err */ Error, /* count */ Double, Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+      inline def setExec(value: js.Function2[/* err */ js.Error, /* count */ Double, Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     }
   }
   
@@ -106,7 +105,7 @@ object mod {
     
     // Optional, defaults to false
     // Optional, if autoload is used this will be called after the load database with the error object as parameter. If you don't pass it the error will be thrown
-    var onload: js.UndefOr[js.Function1[/* error */ Error, js.Any]] = js.undefined
+    var onload: js.UndefOr[js.Function1[/* error */ js.Error, Any]] = js.undefined
     
     // (optional, defaults to false)
     // timestamp the insertion and last update of all documents, with the fields createdAt and updatedAt. User-specified values override automatic generation, usually useful for testing.
@@ -149,7 +148,7 @@ object mod {
       
       inline def setNodeWebkitAppNameUndefined: Self = StObject.set(x, "nodeWebkitAppName", js.undefined)
       
-      inline def setOnload(value: /* error */ Error => js.Any): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+      inline def setOnload(value: /* error */ js.Error => Any): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
       
       inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
       
@@ -206,12 +205,12 @@ object mod {
     def addToIndexes[T /* <: G */](doc: T): Unit = js.native
     def addToIndexes[T /* <: G */](doc: js.Array[T]): Unit = js.native
     
-    def count(query: js.Any): CursorCount = js.native
+    def count(query: Any): CursorCount = js.native
     /**
       * Count all documents matching the query
       * @param query MongoDB-style query
       */
-    def count(query: js.Any, callback: js.Function2[/* err */ Error, /* n */ Double, Unit]): Unit = js.native
+    def count(query: Any, callback: js.Function2[/* err */ js.Error, /* n */ Double, Unit]): Unit = js.native
     
     /**
       * Ensure an index is kept for this field. Same parameters as lib/indexes
@@ -220,16 +219,16 @@ object mod {
       * @param cb Optional callback, signature: err
       */
     def ensureIndex(options: EnsureIndexOptions): Unit = js.native
-    def ensureIndex(options: EnsureIndexOptions, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def ensureIndex(options: EnsureIndexOptions, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
-    def find[T /* <: G */](query: js.Any): Cursor[T] = js.native
+    def find[T /* <: G */](query: Any): Cursor[T] = js.native
     /**
       * Find all documents matching the query
       * If no callback is passed, we return the cursor so that user can limit, skip and finally exec
       * * @param {any} query MongoDB-style query
       */
-    def find[T /* <: G */](query: js.Any, callback: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit]): Unit = js.native
-    def find[T /* <: G */](query: js.Any, projection: T): Cursor[T] = js.native
+    def find[T /* <: G */](query: Any, callback: js.Function2[/* err */ js.Error, /* documents */ js.Array[T], Unit]): Unit = js.native
+    def find[T /* <: G */](query: Any, projection: T): Cursor[T] = js.native
     /**
       * Find all documents matching the query
       * If no callback is passed, we return the cursor so that user can limit, skip and finally exec
@@ -237,27 +236,27 @@ object mod {
       * @param projection MongoDB-style projection
       */
     def find[T /* <: G */](
-      query: js.Any,
+      query: Any,
       projection: T,
-      callback: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit]
+      callback: js.Function2[/* err */ js.Error, /* documents */ js.Array[T], Unit]
     ): Unit = js.native
     
     /**
       * Find one document matching the query
       * @param query MongoDB-style query
       */
-    def findOne[T /* <: G */](query: js.Any, callback: js.Function2[/* err */ Error, /* document */ T, Unit]): Unit = js.native
+    def findOne[T /* <: G */](query: Any, callback: js.Function2[/* err */ js.Error, /* document */ T, Unit]): Unit = js.native
     /**
       * Find one document matching the query
       * @param query MongoDB-style query
       * @param projection MongoDB-style projection
       */
-    def findOne[T /* <: G */](query: js.Any, projection: T, callback: js.Function2[/* err */ Error, /* document */ T, Unit]): Unit = js.native
+    def findOne[T /* <: G */](query: Any, projection: T, callback: js.Function2[/* err */ js.Error, /* document */ T, Unit]): Unit = js.native
     
     /**
       * Get an array of all the data in the database
       */
-    def getAllData(): js.Array[js.Any] = js.native
+    def getAllData(): js.Array[Any] = js.native
     
     /**
       * Return the list of candidates for a given query
@@ -268,16 +267,16 @@ object mod {
       *
       * TODO: needs to be moved to the Cursor module
       */
-    def getCandidates(query: js.Any): Unit = js.native
+    def getCandidates(query: Any): Unit = js.native
     
     /**
       * Insert one or more new documents
       * @param cb Optional callback, signature: err, insertedDoc
       */
     def insert[T /* <: G */](newDoc: T): Unit = js.native
-    def insert[T /* <: G */](newDoc: T, cb: js.Function2[/* err */ Error, /* document */ T, Unit]): Unit = js.native
+    def insert[T /* <: G */](newDoc: T, cb: js.Function2[/* err */ js.Error, /* document */ T, Unit]): Unit = js.native
     def insert[T /* <: G */](newDocs: js.Array[T]): Unit = js.native
-    def insert[T /* <: G */](newDocs: js.Array[T], cb: js.Function2[/* err */ Error, /* documents */ js.Array[T], Unit]): Unit = js.native
+    def insert[T /* <: G */](newDocs: js.Array[T], cb: js.Function2[/* err */ js.Error, /* documents */ js.Array[T], Unit]): Unit = js.native
     
     @JSName("listenerCount")
     def listenerCount_compactiondone(`type`: compactionDotdone): Double = js.native
@@ -289,7 +288,7 @@ object mod {
       * Load the database from the datafile, and trigger the execution of buffered commands if any
       */
     def load(): Unit = js.native
-    def load(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def load(cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     @JSName("off")
     def off_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
@@ -311,8 +310,8 @@ object mod {
     @JSName("rawListeners")
     def rawListeners_compactiondone(event: compactionDotdone): js.Array[js.Function0[Unit]] = js.native
     
-    def remove(query: js.Any): Unit = js.native
-    def remove(query: js.Any, cb: js.Function2[/* err */ Error, /* n */ Double, Unit]): Unit = js.native
+    def remove(query: Any): Unit = js.native
+    def remove(query: Any, cb: js.Function2[/* err */ js.Error, /* n */ Double, Unit]): Unit = js.native
     /**
       * Remove all docs matching the query
       * For now very naive implementation (similar to update)
@@ -322,8 +321,8 @@ object mod {
       *
       * @api private Use Datastore.remove which has the same signature
       */
-    def remove(query: js.Any, options: RemoveOptions): Unit = js.native
-    def remove(query: js.Any, options: RemoveOptions, cb: js.Function2[/* err */ Error, /* n */ Double, Unit]): Unit = js.native
+    def remove(query: Any, options: RemoveOptions): Unit = js.native
+    def remove(query: Any, options: RemoveOptions, cb: js.Function2[/* err */ js.Error, /* n */ Double, Unit]): Unit = js.native
     
     /**
       * Remove one or several document(s) from all indexes
@@ -336,7 +335,7 @@ object mod {
       * @param cb Optional callback, signature: err
       */
     def removeIndex(fieldName: String): Unit = js.native
-    def removeIndex(fieldName: String, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def removeIndex(fieldName: String, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     @JSName("removeListener")
     def removeListener_compactiondone(event: compactionDotdone, listener: js.Function0[Unit]): this.type = js.native
@@ -344,7 +343,7 @@ object mod {
     /**
       * Reset all currently defined indexes
       */
-    def resetIndexes(newData: js.Any): Unit = js.native
+    def resetIndexes(newData: Any): Unit = js.native
     
     /**
       * Update all docs matching query v1.7.4 and prior signature.
@@ -358,40 +357,40 @@ object mod {
       *
       * @api private Use Datastore.update which has the same signature
       */
-    def update(query: js.Any, updateQuery: js.Any): Unit = js.native
+    def update(query: Any, updateQuery: Any): Unit = js.native
     def update(
-      query: js.Any,
-      updateQuery: js.Any,
+      query: Any,
+      updateQuery: Any,
       options: Unit,
-      cb: js.Function3[/* err */ Error, /* numberOfUpdated */ Double, /* upsert */ Boolean, Unit]
+      cb: js.Function3[/* err */ js.Error, /* numberOfUpdated */ Double, /* upsert */ Boolean, Unit]
     ): Unit = js.native
-    def update(query: js.Any, updateQuery: js.Any, options: UpdateOptions): Unit = js.native
+    def update(query: Any, updateQuery: Any, options: UpdateOptions): Unit = js.native
     def update(
-      query: js.Any,
-      updateQuery: js.Any,
+      query: Any,
+      updateQuery: Any,
       options: UpdateOptions,
-      cb: js.Function3[/* err */ Error, /* numberOfUpdated */ Double, /* upsert */ Boolean, Unit]
+      cb: js.Function3[/* err */ js.Error, /* numberOfUpdated */ Double, /* upsert */ Boolean, Unit]
     ): Unit = js.native
     def update[T /* <: G */](
-      query: js.Any,
-      updateQuery: js.Any,
+      query: Any,
+      updateQuery: Any,
       options: Unit,
       cb: js.Function4[
-          /* err */ Error, 
+          /* err */ js.Error, 
           /* numberOfUpdated */ Double, 
-          /* affectedDocuments */ js.Any, 
+          /* affectedDocuments */ Any, 
           /* upsert */ Boolean, 
           Unit
         ]
     ): Unit = js.native
     def update[T /* <: G */](
-      query: js.Any,
-      updateQuery: js.Any,
+      query: Any,
+      updateQuery: Any,
       options: UpdateOptions,
       cb: js.Function4[
-          /* err */ Error, 
+          /* err */ js.Error, 
           /* numberOfUpdated */ Double, 
-          /* affectedDocuments */ js.Any, 
+          /* affectedDocuments */ Any, 
           /* upsert */ Boolean, 
           Unit
         ]
@@ -419,9 +418,9 @@ object mod {
       * @api private Use Datastore.update which has the same signature
       */
     @JSName("update")
-    def update_T_G[T /* <: G */](query: js.Any, updateQuery: js.Any): Unit = js.native
+    def update_T_G[T /* <: G */](query: Any, updateQuery: Any): Unit = js.native
     @JSName("update")
-    def update_T_G[T /* <: G */](query: js.Any, updateQuery: js.Any, options: UpdateOptions): Unit = js.native
+    def update_T_G[T /* <: G */](query: Any, updateQuery: Any, options: UpdateOptions): Unit = js.native
   }
   
   trait Persistence extends StObject {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Stepper")
 @js.native
-class Stepper protected ()
+open class Stepper protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Stepper {
   def this(element: Element) = this()

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "victory-candlestick" : "36.6.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "victory-candlestick" : "36.6.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

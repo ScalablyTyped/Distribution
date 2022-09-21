@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Details information about an error encountered during job execution or the
-  * results of an unsuccessful activation of the JobTrigger. Output only field.
-  */
 trait SchemaGooglePrivacyDlpV2Error extends StObject {
   
+  /**
+    * Detailed error codes and messages.
+    */
   var details: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
   
   /**
     * The times the error occurred.
     */
-  var timestamps: js.UndefOr[js.Array[String]] = js.undefined
+  var timestamps: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Error {
   
@@ -32,8 +31,10 @@ object SchemaGooglePrivacyDlpV2Error {
     
     inline def setTimestamps(value: js.Array[String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
+    inline def setTimestampsNull: Self = StObject.set(x, "timestamps", null)
+    
     inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
-    inline def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value*))
   }
 }

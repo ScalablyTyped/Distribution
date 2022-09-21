@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("rc-rate", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.rcRate.rateMod.default {
     def this(props: RateProps) = this()
   }

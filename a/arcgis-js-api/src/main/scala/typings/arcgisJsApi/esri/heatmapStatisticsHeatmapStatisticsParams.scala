@@ -12,20 +12,6 @@ trait heatmapStatisticsHeatmapStatisticsParams
      with Object {
   
   /**
-    * The area of influence for each point as a radius in pixels from the point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
-    */
-  var blurRadius: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * A subset of features for which to calculate the statistics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
-    */
-  var features: js.UndefOr[js.Array[Graphic]] = js.undefined
-  
-  /**
     * The name of the numeric field for which the statistics will be generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
@@ -37,7 +23,14 @@ trait heatmapStatisticsHeatmapStatisticsParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
     */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  
+  /**
+    * The area of influence for each point as a radius in points from the point.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
+    */
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows for cancelable requests.
@@ -47,20 +40,20 @@ trait heatmapStatisticsHeatmapStatisticsParams
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * A [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance used to calculate pixel intensity values based on the features in the current view.
+    * A view instance used to calculate pixel intensity values based on the features in the current view.
     *
     * [Read more...](global.html)
     */
-  var view: MapView
+  var view: MapView | SceneView
 }
 object heatmapStatisticsHeatmapStatisticsParams {
   
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
-    view: MapView
+    view: MapView | SceneView
   ): heatmapStatisticsHeatmapStatisticsParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapStatisticsHeatmapStatisticsParams]
@@ -68,26 +61,20 @@ object heatmapStatisticsHeatmapStatisticsParams {
   
   extension [Self <: heatmapStatisticsHeatmapStatisticsParams](x: Self) {
     
-    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
-    
-    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
-    
-    inline def setFeatures(value: js.Array[Graphic]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
-    
-    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
-    
-    inline def setFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "features", js.Array(value :_*))
-    
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    inline def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

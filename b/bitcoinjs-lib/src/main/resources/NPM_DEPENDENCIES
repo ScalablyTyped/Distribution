@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bitcoinjs-lib" : "5.2.0"
+      "bitcoinjs-lib" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "bitcoinjs-lib" : "5.2.0"
+      "bitcoinjs-lib" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

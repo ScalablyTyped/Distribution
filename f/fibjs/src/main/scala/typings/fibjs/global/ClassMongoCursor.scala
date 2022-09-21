@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_MongoCursor")
 @js.native
-class ClassMongoCursor ()
+open class ClassMongoCursor ()
   extends StObject
      with typings.fibjs.ClassMongoCursor

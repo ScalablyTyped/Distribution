@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FindingSourceDetail extends StObject {
   
   /**
-    * The ARN of the access point that generated the finding.
+    * The ARN of the access point that generated the finding. The ARN format depends on whether the ARN represents an access point or a multi-region access point.
     */
   var accessPointArn: js.UndefOr[String] = js.undefined
 }

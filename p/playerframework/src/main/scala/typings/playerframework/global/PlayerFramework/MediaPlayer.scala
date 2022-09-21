@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSGlobal("PlayerFramework.MediaPlayer")
 @js.native
-class MediaPlayer protected ()
+open class MediaPlayer protected ()
   extends StObject
      with typings.playerframework.PlayerFramework.MediaPlayer {
   def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
 }

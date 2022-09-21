@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @js.native
@@ -24,9 +24,9 @@ trait DatetimeFormatInfo
   var context_DatetimeFormatInfo: RequestContext = js.native
   
   /**
-    *
     * Gets the string used as the date separator. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   val dateSeparator: String = js.native
@@ -43,33 +43,33 @@ trait DatetimeFormatInfo
   def load(propertyNames: js.Array[String]): DatetimeFormatInfo = js.native
   
   /**
-    *
     * Gets the format string for a long date value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   val longDatePattern: String = js.native
   
   /**
-    *
     * Gets the format string for a long time value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   val longTimePattern: String = js.native
   
   /**
-    *
     * Gets the format string for a short date value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   val shortDatePattern: String = js.native
   
   /**
-    *
     * Gets the string used as the time separator. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   val timeSeparator: String = js.native

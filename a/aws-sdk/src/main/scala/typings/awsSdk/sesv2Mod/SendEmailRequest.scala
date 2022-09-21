@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SendEmailRequest extends StObject {
   
   /**
-    * The name of the configuration set that you want to use when sending the email.
+    * The name of the configuration set to use when sending the email.
     */
   var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.undefined
   
@@ -37,7 +37,7 @@ trait SendEmailRequest extends StObject {
   var FeedbackForwardingEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
-    * The email address that you want to use as the "From" address for the email. The address that you specify has to be verified. 
+    * The email address to use as the "From" address for the email. The address that you specify has to be verified. 
     */
   var FromEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
@@ -79,7 +79,7 @@ object SendEmailRequest {
     
     inline def setEmailTagsUndefined: Self = StObject.set(x, "EmailTags", js.undefined)
     
-    inline def setEmailTagsVarargs(value: MessageTag*): Self = StObject.set(x, "EmailTags", js.Array(value :_*))
+    inline def setEmailTagsVarargs(value: MessageTag*): Self = StObject.set(x, "EmailTags", js.Array(value*))
     
     inline def setFeedbackForwardingEmailAddress(value: EmailAddress): Self = StObject.set(x, "FeedbackForwardingEmailAddress", value.asInstanceOf[js.Any])
     
@@ -105,6 +105,6 @@ object SendEmailRequest {
     
     inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
-    inline def setReplyToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+    inline def setReplyToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value*))
   }
 }

@@ -15,7 +15,7 @@ object webGLTexturesMod {
   
   @JSImport("three/src/renderers/webgl/WebGLTextures", "WebGLTextures")
   @js.native
-  class WebGLTextures protected () extends StObject {
+  open class WebGLTextures protected () extends StObject {
     def this(
       gl: WebGLRenderingContext,
       extensions: WebGLExtensions,
@@ -30,22 +30,22 @@ object webGLTexturesMod {
     
     def resetTextureUnits(): Unit = js.native
     
-    def safeSetTexture2D(texture: js.Any, slot: Double): Unit = js.native
+    def safeSetTexture2D(texture: Any, slot: Double): Unit = js.native
     
-    def safeSetTextureCube(texture: js.Any, slot: Double): Unit = js.native
+    def safeSetTextureCube(texture: Any, slot: Double): Unit = js.native
     
-    def setTexture2D(texture: js.Any, slot: Double): Unit = js.native
+    def setTexture2D(texture: Any, slot: Double): Unit = js.native
     
-    def setTexture2DArray(texture: js.Any, slot: Double): Unit = js.native
+    def setTexture2DArray(texture: Any, slot: Double): Unit = js.native
     
-    def setTexture3D(texture: js.Any, slot: Double): Unit = js.native
+    def setTexture3D(texture: Any, slot: Double): Unit = js.native
     
-    def setTextureCube(texture: js.Any, slot: Double): Unit = js.native
+    def setTextureCube(texture: Any, slot: Double): Unit = js.native
     
-    def setupRenderTarget(renderTarget: js.Any): Unit = js.native
+    def setupRenderTarget(renderTarget: Any): Unit = js.native
     
-    def updateMultisampleRenderTarget(renderTarget: js.Any): Unit = js.native
+    def updateMultisampleRenderTarget(renderTarget: Any): Unit = js.native
     
-    def updateRenderTargetMipmap(renderTarget: js.Any): Unit = js.native
+    def updateRenderTargetMipmap(renderTarget: Any): Unit = js.native
   }
 }

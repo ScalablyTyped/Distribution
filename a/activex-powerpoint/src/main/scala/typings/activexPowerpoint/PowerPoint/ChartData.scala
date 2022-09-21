@@ -15,7 +15,7 @@ trait ChartData extends StObject {
   /* private */ @JSName("PowerPoint.ChartData_typekey")
   var PowerPointDotChartData_typekey: ChartData
   
-  val Workbook: js.Any
+  val Workbook: Any
 }
 object ChartData {
   
@@ -24,7 +24,7 @@ object ChartData {
     BreakLink: () => Unit,
     IsLinked: Boolean,
     PowerPointDotChartData_typekey: ChartData,
-    Workbook: js.Any
+    Workbook: Any
   ): ChartData = {
     val __obj = js.Dynamic.literal(Activate = js.Any.fromFunction0(Activate), BreakLink = js.Any.fromFunction0(BreakLink), IsLinked = IsLinked.asInstanceOf[js.Any], Workbook = Workbook.asInstanceOf[js.Any])
     __obj.updateDynamic("PowerPoint.ChartData_typekey")(PowerPointDotChartData_typekey.asInstanceOf[js.Any])
@@ -41,6 +41,6 @@ object ChartData {
     
     inline def setPowerPointDotChartData_typekey(value: ChartData): Self = StObject.set(x, "PowerPoint.ChartData_typekey", value.asInstanceOf[js.Any])
     
-    inline def setWorkbook(value: js.Any): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: Any): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
   }
 }

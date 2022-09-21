@@ -10,10 +10,10 @@ Automatically minify and cache your javascript and css files.
 | ------------------ | :-------------: |
 | Full name          | express-minify |
 | Keywords           | uglify, minify, express |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 370138 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 59289.0 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/SummerWish/express-minify)

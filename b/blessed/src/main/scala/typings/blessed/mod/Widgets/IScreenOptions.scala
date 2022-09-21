@@ -109,7 +109,7 @@ trait IScreenOptions
   /**
     * The currently hovered element. Only set if mouse events are bound.
     */
-  var hover: js.UndefOr[js.Any] = js.undefined
+  var hover: js.UndefOr[Any] = js.undefined
   
   /**
     * Normally, dockable borders will not dock if the colors or attributes are different. This option
@@ -302,7 +302,7 @@ object IScreenOptions {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHover(value: js.Any): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: Any): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
@@ -314,7 +314,7 @@ object IScreenOptions {
     
     inline def setIgnoreLockedUndefined: Self = StObject.set(x, "ignoreLocked", js.undefined)
     
-    inline def setIgnoreLockedVarargs(value: String*): Self = StObject.set(x, "ignoreLocked", js.Array(value :_*))
+    inline def setIgnoreLockedVarargs(value: String*): Self = StObject.set(x, "ignoreLocked", js.Array(value*))
     
     inline def setInput(value: Writable): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

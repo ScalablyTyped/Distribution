@@ -19,11 +19,11 @@ object global {
     
     @JSGlobal("jsmediatags.Reader")
     @js.native
-    class Reader protected ()
+    open class Reader protected ()
       extends typings.jsmediatags.mod.Reader {
-      def this(file: js.Any) = this()
+      def this(file: Any) = this()
     }
     
-    inline def read(location: js.Any, callbacks: CallbackType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(location.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def read(location: Any, callbacks: CallbackType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(location.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

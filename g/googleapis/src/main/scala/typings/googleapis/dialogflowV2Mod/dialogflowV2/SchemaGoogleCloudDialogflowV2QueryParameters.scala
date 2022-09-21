@@ -5,54 +5,47 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the parameters of the conversational query.
-  */
 trait SchemaGoogleCloudDialogflowV2QueryParameters extends StObject {
   
   /**
-    * Optional. The collection of contexts to be activated before this query is
-    * executed.
+    * The collection of contexts to be activated before this query is executed.
     */
   var contexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.undefined
   
   /**
-    * Optional. The geo location of this conversational query.
+    * The geo location of this conversational query.
     */
   var geoLocation: js.UndefOr[SchemaGoogleTypeLatLng] = js.undefined
   
   /**
-    * Optional. This field can be used to pass custom data into the webhook
-    * associated with the agent. Arbitrary JSON objects are supported.
+    * This field can be used to pass custom data to your webhook. Arbitrary JSON objects are supported. If supplied, the value is used to populate the `WebhookRequest.original_detect_intent_request.payload` field sent to your webhook.
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var payload: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   /**
-    * Optional. Specifies whether to delete all contexts in the current session
-    * before the new ones are activated.
+    * Specifies whether to delete all contexts in the current session before the new ones are activated.
     */
-  var resetContexts: js.UndefOr[Boolean] = js.undefined
+  var resetContexts: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Optional. Configures the type of sentiment analysis to perform. If not
-    * provided, sentiment analysis is not performed.
+    * Configures the type of sentiment analysis to perform. If not provided, sentiment analysis is not performed.
     */
   var sentimentAnalysisRequestConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2SentimentAnalysisRequestConfig] = js.undefined
   
   /**
-    * Optional. Additional session entity types to replace or extend developer
-    * entity types with. The entity synonyms apply to all languages and persist
-    * for the session of this query.
+    * Additional session entity types to replace or extend developer entity types with. The entity synonyms apply to all languages and persist for the session of this query.
     */
   var sessionEntityTypes: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2SessionEntityType]] = js.undefined
   
   /**
-    * Optional. The time zone of this conversational query from the [time zone
-    * database](https://www.iana.org/time-zones), e.g., America/New_York,
-    * Europe/Paris. If not provided, the time zone specified in agent settings
-    * is used.
+    * The time zone of this conversational query from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris. If not provided, the time zone specified in agent settings is used.
     */
-  var timeZone: js.UndefOr[String] = js.undefined
+  var timeZone: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * This field can be used to pass HTTP headers for a webhook call. These headers will be sent to webhook along with the headers that have been configured through the Dialogflow web console. The headers defined within this field will overwrite the headers configured through the Dialogflow console if there is a conflict. Header names are case-insensitive. Google's specified headers are not allowed. Including: "Host", "Content-Length", "Connection", "From", "User-Agent", "Accept-Encoding", "If-Modified-Since", "If-None-Match", "X-Forwarded-For", etc.
+    */
+  var webhookHeaders: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2QueryParameters {
   
@@ -67,17 +60,21 @@ object SchemaGoogleCloudDialogflowV2QueryParameters {
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: SchemaGoogleCloudDialogflowV2Context*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: SchemaGoogleCloudDialogflowV2Context*): Self = StObject.set(x, "contexts", js.Array(value*))
     
     inline def setGeoLocation(value: SchemaGoogleTypeLatLng): Self = StObject.set(x, "geoLocation", value.asInstanceOf[js.Any])
     
     inline def setGeoLocationUndefined: Self = StObject.set(x, "geoLocation", js.undefined)
     
-    inline def setPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: StringDictionary[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadNull: Self = StObject.set(x, "payload", null)
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     inline def setResetContexts(value: Boolean): Self = StObject.set(x, "resetContexts", value.asInstanceOf[js.Any])
+    
+    inline def setResetContextsNull: Self = StObject.set(x, "resetContexts", null)
     
     inline def setResetContextsUndefined: Self = StObject.set(x, "resetContexts", js.undefined)
     
@@ -89,10 +86,18 @@ object SchemaGoogleCloudDialogflowV2QueryParameters {
     
     inline def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
     
-    inline def setSessionEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
+    inline def setSessionEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value*))
     
     inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
+    inline def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
+    
     inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    
+    inline def setWebhookHeaders(value: StringDictionary[String]): Self = StObject.set(x, "webhookHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setWebhookHeadersNull: Self = StObject.set(x, "webhookHeaders", null)
+    
+    inline def setWebhookHeadersUndefined: Self = StObject.set(x, "webhookHeaders", js.undefined)
   }
 }

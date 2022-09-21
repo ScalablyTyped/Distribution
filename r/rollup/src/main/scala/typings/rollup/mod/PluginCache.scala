@@ -16,12 +16,7 @@ trait PluginCache extends StObject {
 }
 object PluginCache {
   
-  inline def apply(
-    delete: String => Boolean,
-    get: String => js.Any,
-    has: String => Boolean,
-    set: (String, js.Any) => Unit
-  ): PluginCache = {
+  inline def apply(delete: String => Boolean, get: String => Any, has: String => Boolean, set: (String, Any) => Unit): PluginCache = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[PluginCache]
   }
@@ -30,10 +25,10 @@ object PluginCache {
     
     inline def setDelete(value: String => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

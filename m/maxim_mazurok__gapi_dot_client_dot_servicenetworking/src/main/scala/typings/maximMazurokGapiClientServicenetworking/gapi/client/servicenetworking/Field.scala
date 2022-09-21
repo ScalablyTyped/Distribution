@@ -77,7 +77,7 @@ object Field {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
     

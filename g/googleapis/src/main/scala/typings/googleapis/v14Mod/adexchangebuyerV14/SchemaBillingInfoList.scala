@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A billing info feed lists Billing Info the Ad Exchange buyer account has
-  * access to. Each entry in the feed corresponds to a single billing info.
-  */
 trait SchemaBillingInfoList extends StObject {
   
   /**
@@ -18,7 +14,7 @@ trait SchemaBillingInfoList extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBillingInfoList {
   
@@ -33,9 +29,11 @@ object SchemaBillingInfoList {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaBillingInfo*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaBillingInfo*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

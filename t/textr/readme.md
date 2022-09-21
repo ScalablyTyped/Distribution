@@ -11,9 +11,9 @@ Tiny and extendable text transforming framework
 | Full name          | textr |
 | Keywords           | typographic, textr, transformer, text |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 99904 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 20715.0 |
+| # stars            | 180.0 |
 
 ## Links
 - [Homepage](https://github.com/shuvalov-anton/textr#readme)

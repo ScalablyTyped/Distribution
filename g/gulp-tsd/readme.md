@@ -9,10 +9,10 @@ Gulp plugin to automate TSD and TypeScript definition related tasks
 | ------------------ | :-------------: |
 | Full name          | gulp-tsd |
 | Keywords           | gulp, tsd |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 8031 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 587.3333333333334 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/moznion/gulp-tsd)

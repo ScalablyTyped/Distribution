@@ -1,25 +1,24 @@
 package typings.relayRuntime.anon
 
 import typings.relayRuntime.relayRuntimeStrings.storeDotgc
-import typings.relayRuntime.relayRuntimeTypesMod.DataID
+import typings.relayRuntime.relayStoreTypesMod.DataIDSet
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
-import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<{  name :'store.gc',   references :std.Set<relay-runtime.relay-runtime/lib/util/RelayRuntimeTypes.DataID>}> */
+/* Inlined std.Readonly<{  name :'store.gc',   references :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.DataIDSet}> */
 trait Readonlynamestoregcrefere
   extends StObject
      with LogEvent {
   
   val name: storeDotgc
   
-  val references: Set[DataID]
+  val references: DataIDSet
 }
 object Readonlynamestoregcrefere {
   
-  inline def apply(references: Set[DataID]): Readonlynamestoregcrefere = {
+  inline def apply(references: DataIDSet): Readonlynamestoregcrefere = {
     val __obj = js.Dynamic.literal(name = "store.gc", references = references.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynamestoregcrefere]
   }
@@ -28,6 +27,6 @@ object Readonlynamestoregcrefere {
     
     inline def setName(value: storeDotgc): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setReferences(value: Set[DataID]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: DataIDSet): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
   }
 }

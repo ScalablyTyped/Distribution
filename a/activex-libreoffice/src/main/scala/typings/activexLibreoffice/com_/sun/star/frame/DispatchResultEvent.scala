@@ -19,21 +19,21 @@ trait DispatchResultEvent
      with EventObject {
   
   /** describes result for given **State** */
-  var Result: js.Any
+  var Result: Any
   
   /** describes state of dispatch */
   var State: Double
 }
 object DispatchResultEvent {
   
-  inline def apply(Result: js.Any, Source: XInterface, State: Double): DispatchResultEvent = {
+  inline def apply(Result: Any, Source: XInterface, State: Double): DispatchResultEvent = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchResultEvent]
   }
   
   extension [Self <: DispatchResultEvent](x: Self) {
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
     inline def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }

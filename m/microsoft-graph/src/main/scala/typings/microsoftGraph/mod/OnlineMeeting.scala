@@ -8,11 +8,32 @@ trait OnlineMeeting
   extends StObject
      with Entity {
   
+  // Indicates whether attendees can turn on their camera.
+  var allowAttendeeToEnableCamera: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // Indicates whether attendees can turn on their microphone.
+  var allowAttendeeToEnableMic: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // Specifies the mode of meeting chat.
+  var allowMeetingChat: js.UndefOr[NullableOption[MeetingChatMode]] = js.undefined
+  
+  // Indicates whether Teams reactions are enabled for the meeting.
+  var allowTeamworkReactions: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Specifies who can be a presenter in a meeting. Possible values are listed in the following table.
   var allowedPresenters: js.UndefOr[NullableOption[OnlineMeetingPresenters]] = js.undefined
   
+  // The attendance reports of an online meeting. Read-only.
+  var attendanceReports: js.UndefOr[NullableOption[js.Array[MeetingAttendanceReport]]] = js.undefined
+  
+  // The content stream of the attendee report of a Microsoft Teams live event. Read-only.
+  var attendeeReport: js.UndefOr[NullableOption[Any]] = js.undefined
+  
   // The phone access (dial-in) information for an online meeting. Read-only.
   var audioConferencing: js.UndefOr[NullableOption[AudioConferencing]] = js.undefined
+  
+  // Settings related to a live event.
+  var broadcastSettings: js.UndefOr[NullableOption[BroadcastMeetingSettings]] = js.undefined
   
   // The chat information associated with this online meeting.
   var chatInfo: js.UndefOr[NullableOption[ChatInfo]] = js.undefined
@@ -25,7 +46,10 @@ trait OnlineMeeting
   
   var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Whether or not to announce when callers join or leave.
+  // Indicates if this is a Teams live event.
+  var isBroadcast: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // Indicates whether to announce when callers join or leave.
   var isEntryExitAnnounced: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
@@ -42,6 +66,9 @@ trait OnlineMeeting
   
   // The participants associated with the online meeting. This includes the organizer and the attendees.
   var participants: js.UndefOr[NullableOption[MeetingParticipants]] = js.undefined
+  
+  // Indicates whether to record the meeting automatically.
+  var recordAutomatically: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The meeting start time in UTC.
   var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
@@ -61,17 +88,61 @@ object OnlineMeeting {
   
   extension [Self <: OnlineMeeting](x: Self) {
     
+    inline def setAllowAttendeeToEnableCamera(value: NullableOption[Boolean]): Self = StObject.set(x, "allowAttendeeToEnableCamera", value.asInstanceOf[js.Any])
+    
+    inline def setAllowAttendeeToEnableCameraNull: Self = StObject.set(x, "allowAttendeeToEnableCamera", null)
+    
+    inline def setAllowAttendeeToEnableCameraUndefined: Self = StObject.set(x, "allowAttendeeToEnableCamera", js.undefined)
+    
+    inline def setAllowAttendeeToEnableMic(value: NullableOption[Boolean]): Self = StObject.set(x, "allowAttendeeToEnableMic", value.asInstanceOf[js.Any])
+    
+    inline def setAllowAttendeeToEnableMicNull: Self = StObject.set(x, "allowAttendeeToEnableMic", null)
+    
+    inline def setAllowAttendeeToEnableMicUndefined: Self = StObject.set(x, "allowAttendeeToEnableMic", js.undefined)
+    
+    inline def setAllowMeetingChat(value: NullableOption[MeetingChatMode]): Self = StObject.set(x, "allowMeetingChat", value.asInstanceOf[js.Any])
+    
+    inline def setAllowMeetingChatNull: Self = StObject.set(x, "allowMeetingChat", null)
+    
+    inline def setAllowMeetingChatUndefined: Self = StObject.set(x, "allowMeetingChat", js.undefined)
+    
+    inline def setAllowTeamworkReactions(value: NullableOption[Boolean]): Self = StObject.set(x, "allowTeamworkReactions", value.asInstanceOf[js.Any])
+    
+    inline def setAllowTeamworkReactionsNull: Self = StObject.set(x, "allowTeamworkReactions", null)
+    
+    inline def setAllowTeamworkReactionsUndefined: Self = StObject.set(x, "allowTeamworkReactions", js.undefined)
+    
     inline def setAllowedPresenters(value: NullableOption[OnlineMeetingPresenters]): Self = StObject.set(x, "allowedPresenters", value.asInstanceOf[js.Any])
     
     inline def setAllowedPresentersNull: Self = StObject.set(x, "allowedPresenters", null)
     
     inline def setAllowedPresentersUndefined: Self = StObject.set(x, "allowedPresenters", js.undefined)
     
+    inline def setAttendanceReports(value: NullableOption[js.Array[MeetingAttendanceReport]]): Self = StObject.set(x, "attendanceReports", value.asInstanceOf[js.Any])
+    
+    inline def setAttendanceReportsNull: Self = StObject.set(x, "attendanceReports", null)
+    
+    inline def setAttendanceReportsUndefined: Self = StObject.set(x, "attendanceReports", js.undefined)
+    
+    inline def setAttendanceReportsVarargs(value: MeetingAttendanceReport*): Self = StObject.set(x, "attendanceReports", js.Array(value*))
+    
+    inline def setAttendeeReport(value: NullableOption[Any]): Self = StObject.set(x, "attendeeReport", value.asInstanceOf[js.Any])
+    
+    inline def setAttendeeReportNull: Self = StObject.set(x, "attendeeReport", null)
+    
+    inline def setAttendeeReportUndefined: Self = StObject.set(x, "attendeeReport", js.undefined)
+    
     inline def setAudioConferencing(value: NullableOption[AudioConferencing]): Self = StObject.set(x, "audioConferencing", value.asInstanceOf[js.Any])
     
     inline def setAudioConferencingNull: Self = StObject.set(x, "audioConferencing", null)
     
     inline def setAudioConferencingUndefined: Self = StObject.set(x, "audioConferencing", js.undefined)
+    
+    inline def setBroadcastSettings(value: NullableOption[BroadcastMeetingSettings]): Self = StObject.set(x, "broadcastSettings", value.asInstanceOf[js.Any])
+    
+    inline def setBroadcastSettingsNull: Self = StObject.set(x, "broadcastSettings", null)
+    
+    inline def setBroadcastSettingsUndefined: Self = StObject.set(x, "broadcastSettings", js.undefined)
     
     inline def setChatInfo(value: NullableOption[ChatInfo]): Self = StObject.set(x, "chatInfo", value.asInstanceOf[js.Any])
     
@@ -96,6 +167,12 @@ object OnlineMeeting {
     inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
     inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    
+    inline def setIsBroadcast(value: NullableOption[Boolean]): Self = StObject.set(x, "isBroadcast", value.asInstanceOf[js.Any])
+    
+    inline def setIsBroadcastNull: Self = StObject.set(x, "isBroadcast", null)
+    
+    inline def setIsBroadcastUndefined: Self = StObject.set(x, "isBroadcast", js.undefined)
     
     inline def setIsEntryExitAnnounced(value: NullableOption[Boolean]): Self = StObject.set(x, "isEntryExitAnnounced", value.asInstanceOf[js.Any])
     
@@ -126,6 +203,12 @@ object OnlineMeeting {
     inline def setParticipantsNull: Self = StObject.set(x, "participants", null)
     
     inline def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
+    
+    inline def setRecordAutomatically(value: NullableOption[Boolean]): Self = StObject.set(x, "recordAutomatically", value.asInstanceOf[js.Any])
+    
+    inline def setRecordAutomaticallyNull: Self = StObject.set(x, "recordAutomatically", null)
+    
+    inline def setRecordAutomaticallyUndefined: Self = StObject.set(x, "recordAutomatically", js.undefined)
     
     inline def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     

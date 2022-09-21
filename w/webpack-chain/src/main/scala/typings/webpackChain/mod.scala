@@ -3,8 +3,12 @@ package typings.webpackChain
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpsMod.ServerOptions
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.std.ConstructorParameters
-import typings.std.RegExp
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.Configuration
 import typings.webpackChain.anon.Errors
 import typings.webpackChain.anon.Path
 import typings.webpackChain.webpackChainStrings.development
@@ -30,7 +34,7 @@ object mod {
   
   @JSImport("webpack-chain", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Config {
     
@@ -40,7 +44,7 @@ object mod {
   
   @JSImport("webpack-chain", "Chained")
   @js.native
-  class Chained[Parent] ()
+  open class Chained[Parent] ()
     extends StObject
        with typings.webpackChain.mod._Config.Chained[Parent] {
     
@@ -50,9 +54,9 @@ object mod {
   
   @JSImport("webpack-chain", "ChainedMap")
   @js.native
-  class ChainedMap[Parent] ()
+  open class ChainedMap[Parent] ()
     extends StObject
-       with typings.webpackChain.mod._Config.TypedChainedMap[Parent, js.Any] {
+       with typings.webpackChain.mod._Config.TypedChainedMap[Parent, Any] {
     
     /* CompleteClass */
     override def end(): Parent = js.native
@@ -60,9 +64,9 @@ object mod {
   
   @JSImport("webpack-chain", "ChainedSet")
   @js.native
-  class ChainedSet[Parent] ()
+  open class ChainedSet[Parent] ()
     extends StObject
-       with typings.webpackChain.mod._Config.TypedChainedSet[Parent, js.Any] {
+       with typings.webpackChain.mod._Config.TypedChainedSet[Parent, Any] {
     
     /* CompleteClass */
     override def end(): Parent = js.native
@@ -70,40 +74,19 @@ object mod {
   
   @JSImport("webpack-chain", "DevServer")
   @js.native
-  class DevServer () extends ChainedMap[Config] {
+  open class DevServer () extends ChainedMap[Config] {
     
     def apply(value: String): this.type = js.native
     
-    def after(
-      value: js.Function3[
-          /* app */ js.Any, 
-          /* server */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
-          Unit
-        ]
-    ): this.type = js.native
+    def after(value: js.Function3[/* app */ Any, /* server */ Any, /* compiler */ Compiler, Unit]): this.type = js.native
     
     var allowedHosts: TypedChainedSet[this.type, String] = js.native
     
-    def before(
-      value: js.Function3[
-          /* app */ js.Any, 
-          /* server */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
-          Unit
-        ]
-    ): this.type = js.native
+    def before(value: js.Function3[/* app */ Any, /* server */ Any, /* compiler */ Compiler, Unit]): this.type = js.native
     
     def bonjour(value: Boolean): this.type = js.native
     
-    @JSName("clientLogLevel")
-    def clientLogLevel_error(value: error): this.type = js.native
-    @JSName("clientLogLevel")
-    def clientLogLevel_info(value: info): this.type = js.native
-    @JSName("clientLogLevel")
-    def clientLogLevel_none(value: none): this.type = js.native
-    @JSName("clientLogLevel")
-    def clientLogLevel_warning(value: warning): this.type = js.native
+    def clientLogLevel(value: none | error | warning | info): this.type = js.native
     
     def color(value: Boolean): this.type = js.native
     
@@ -119,7 +102,7 @@ object mod {
     
     def headers(value: StringDictionary[String]): this.type = js.native
     
-    def historyApiFallback(value: js.Any): this.type = js.native
+    def historyApiFallback(value: Any): this.type = js.native
     def historyApiFallback(value: Boolean): this.type = js.native
     
     def host(value: String): this.type = js.native
@@ -131,7 +114,15 @@ object mod {
     def http2(value: Boolean): this.type = js.native
     
     def https(value: Boolean): this.type = js.native
-    def https(value: ServerOptions): this.type = js.native
+    def https(
+      value: ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): this.type = js.native
     
     def index(value: String): this.type = js.native
     
@@ -161,13 +152,13 @@ object mod {
     
     def progress(value: Boolean): this.type = js.native
     
-    def proxy(value: js.Any): this.type = js.native
+    def proxy(value: Any): this.type = js.native
     
     def publicPath(publicPath: String): this.type = js.native
     
     def quiet(value: Boolean): this.type = js.native
     
-    def setup(value: js.Function1[/* expressApp */ js.Any, Unit]): this.type = js.native
+    def setup(value: js.Function1[/* expressApp */ Any, Unit]): this.type = js.native
     
     def sockHost(value: String): this.type = js.native
     
@@ -177,10 +168,10 @@ object mod {
     
     def socket(value: String): this.type = js.native
     
-    def staticOptions(value: js.Any): this.type = js.native
+    def staticOptions(value: Any): this.type = js.native
     
     def stats(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ Any
     ): this.type = js.native
     
     def stdin(value: Boolean): this.type = js.native
@@ -189,22 +180,22 @@ object mod {
     
     def watchContentBase(value: Boolean): this.type = js.native
     
-    def watchOptions(value: js.Any): this.type = js.native
+    def watchOptions(value: Any): this.type = js.native
     
     def writeToDisk(value: Boolean): this.type = js.native
   }
   
   @JSImport("webpack-chain", "EntryPoint")
   @js.native
-  class EntryPoint () extends TypedChainedSet[Config, String]
+  open class EntryPoint () extends TypedChainedSet[Config, String]
   
   @JSImport("webpack-chain", "Module")
   @js.native
-  class Module () extends ChainedMap[Config] {
+  open class Module () extends ChainedMap[Config] {
     
-    def noParse(noParse: js.Array[RegExp]): this.type = js.native
+    def noParse(noParse: js.Array[js.RegExp]): this.type = js.native
     def noParse(noParse: js.Function1[/* contentPath */ String, Boolean]): this.type = js.native
-    def noParse(noParse: RegExp): this.type = js.native
+    def noParse(noParse: js.RegExp): this.type = js.native
     
     def rule(name: String): Rule[Module] = js.native
     
@@ -215,7 +206,7 @@ object mod {
   
   @JSImport("webpack-chain", "Optimization")
   @js.native
-  class Optimization () extends ChainedMap[Config] {
+  open class Optimization () extends ChainedMap[Config] {
     
     def concatenateModules(value: Boolean): this.type = js.native
     
@@ -225,10 +216,7 @@ object mod {
     
     def minimize(value: Boolean): this.type = js.native
     
-    def minimizer(name: String): Plugin[
-        this.type, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
-      ] = js.native
+    def minimizer(name: String): Plugin[this.type, typings.webpack.mod.Plugin] = js.native
     
     def namedChunks(value: Boolean): this.type = js.native
     
@@ -249,12 +237,9 @@ object mod {
     
     def removeEmptyChunks(value: Boolean): this.type = js.native
     
+    def runtimeChunk(value: single | multiple): this.type = js.native
     def runtimeChunk(value: Boolean): this.type = js.native
     def runtimeChunk(value: RuntimeChunk): this.type = js.native
-    @JSName("runtimeChunk")
-    def runtimeChunk_multiple(value: multiple): this.type = js.native
-    @JSName("runtimeChunk")
-    def runtimeChunk_single(value: single): this.type = js.native
     
     def sideEffects(value: Boolean): this.type = js.native
     
@@ -265,7 +250,7 @@ object mod {
   
   @JSImport("webpack-chain", "Output")
   @js.native
-  class Output () extends ChainedMap[Config] {
+  open class Output () extends ChainedMap[Config] {
     
     def auxiliaryComment(value: String): this.type = js.native
     def auxiliaryComment(value: StringDictionary[String]): this.type = js.native
@@ -277,11 +262,11 @@ object mod {
     def crossOriginLoading(value: String): this.type = js.native
     def crossOriginLoading(value: Boolean): this.type = js.native
     
-    def devtoolFallbackModuleFilenameTemplate(value: js.Any): this.type = js.native
+    def devtoolFallbackModuleFilenameTemplate(value: Any): this.type = js.native
     
-    def devtoolLineToLine(value: js.Any): this.type = js.native
+    def devtoolLineToLine(value: Any): this.type = js.native
     
-    def devtoolModuleFilenameTemplate(value: js.Any): this.type = js.native
+    def devtoolModuleFilenameTemplate(value: Any): this.type = js.native
     
     def devtoolNamespace(value: String): this.type = js.native
     
@@ -297,11 +282,11 @@ object mod {
     
     def hashFunction(value: String): this.type = js.native
     
-    def hashSalt(value: js.Any): this.type = js.native
+    def hashSalt(value: Any): this.type = js.native
     
     def hotUpdateChunkFilename(value: String): this.type = js.native
     
-    def hotUpdateFunction(value: js.Any): this.type = js.native
+    def hotUpdateFunction(value: Any): this.type = js.native
     
     def hotUpdateMainFilename(value: String): this.type = js.native
     
@@ -331,15 +316,12 @@ object mod {
   
   @JSImport("webpack-chain", "Performance")
   @js.native
-  class Performance () extends ChainedMap[Config] {
+  open class Performance () extends ChainedMap[Config] {
     
     def assetFilter(value: js.Function1[/* assetFilename */ String, Boolean]): this.type = js.native
     
+    def hints(value: error | warning): this.type = js.native
     def hints(value: Boolean): this.type = js.native
-    @JSName("hints")
-    def hints_error(value: error): this.type = js.native
-    @JSName("hints")
-    def hints_warning(value: warning): this.type = js.native
     
     def maxAssetSize(value: Double): this.type = js.native
     
@@ -348,7 +330,7 @@ object mod {
   
   @JSImport("webpack-chain", "Plugin")
   @js.native
-  class Plugin[Parent, PluginType /* <: typings.tapable.mod.Tapable.Plugin */] ()
+  open class Plugin[Parent, PluginType /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tapable.Plugin */ Any */] ()
     extends ChainedMap[Parent]
        with Orderable {
     
@@ -359,29 +341,29 @@ object mod {
     override def before(name: String): this.type = js.native
     
     def init[P /* <: PluginType | PluginClass[PluginType] */](
-      value: js.Function2[/* plugin */ P, /* args */ js.Array[js.Any] | ConstructorParameters[P], PluginType]
+      value: js.Function2[/* plugin */ P, /* args */ js.Array[Any] | ConstructorParameters[P], PluginType]
     ): this.type = js.native
     
     def tap[P /* <: PluginClass[PluginType] */](f: js.Function1[/* args */ ConstructorParameters[P], ConstructorParameters[P]]): this.type = js.native
     
     def use(plugin: String): this.type = js.native
-    def use(plugin: String, args: js.Array[js.Any] | ConstructorParameters[String]): this.type = js.native
+    def use(plugin: String, args: js.Array[Any] | ConstructorParameters[String]): this.type = js.native
     def use(plugin: PluginClass[PluginType]): this.type = js.native
     def use(
       plugin: PluginClass[PluginType],
-      args: js.Array[js.Any] | ConstructorParameters[PluginClass[PluginType]]
+      args: js.Array[Any] | ConstructorParameters[PluginClass[PluginType]]
     ): this.type = js.native
     def use[P /* <: PluginType */](plugin: P): this.type = js.native
-    def use[P /* <: PluginType */](plugin: P, args: js.Array[js.Any] | ConstructorParameters[P]): this.type = js.native
+    def use[P /* <: PluginType */](plugin: P, args: js.Array[Any] | ConstructorParameters[P]): this.type = js.native
   }
   
   @JSImport("webpack-chain", "Plugins")
   @js.native
-  class Plugins[Parent, PluginType /* <: typings.tapable.mod.Tapable.Plugin */] () extends TypedChainedMap[Parent, Plugin[Parent, PluginType]]
+  open class Plugins[Parent, PluginType /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tapable.Plugin */ Any */] () extends TypedChainedMap[Parent, Plugin[Parent, PluginType]]
   
   @JSImport("webpack-chain", "Resolve")
   @js.native
-  class Resolve[T] () extends ChainedMap[T] {
+  open class Resolve[T] () extends ChainedMap[T] {
     
     var alias: TypedChainedMap[this.type, String] = js.native
     
@@ -407,27 +389,27 @@ object mod {
     
     def plugin(name: String): Plugin[
         this.type, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ResolvePlugin */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ResolvePlugin */ Any
       ] = js.native
     
     var plugins: TypedChainedMap[
         this.type, 
         Plugin[
           this.type, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ResolvePlugin */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ResolvePlugin */ Any
         ]
       ] = js.native
     
     def symlinks(value: Boolean): this.type = js.native
     
-    def unsafeCache(value: js.Array[RegExp]): this.type = js.native
+    def unsafeCache(value: js.Array[js.RegExp]): this.type = js.native
+    def unsafeCache(value: js.RegExp): this.type = js.native
     def unsafeCache(value: Boolean): this.type = js.native
-    def unsafeCache(value: RegExp): this.type = js.native
   }
   
   @JSImport("webpack-chain", "ResolveLoader")
   @js.native
-  class ResolveLoader () extends Resolve[Config] {
+  open class ResolveLoader () extends Resolve[Config] {
     
     var moduleExtensions: ChainedSet[this.type] = js.native
     
@@ -436,7 +418,7 @@ object mod {
   
   @JSImport("webpack-chain", "Rule")
   @js.native
-  class Rule[T] ()
+  open class Rule[T] ()
     extends ChainedMap[T]
        with Orderable {
     
@@ -446,26 +428,23 @@ object mod {
     /* CompleteClass */
     override def before(name: String): this.type = js.native
     
-    @JSName("enforce")
-    def enforce_post(value: post): this.type = js.native
-    @JSName("enforce")
-    def enforce_pre(value: pre): this.type = js.native
+    def enforce(value: pre | post): this.type = js.native
     
     var exclude: TypedChainedSet[
         this.type, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ Any
       ] = js.native
     
     var include: TypedChainedSet[
         this.type, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ Any
       ] = js.native
     
     def oneOf(name: String): Rule[Rule[Module]] = js.native
     
     var oneOfs: TypedChainedMap[this.type, Rule[Rule[Module]]] = js.native
     
-    def parser(value: StringDictionary[js.Any]): this.type = js.native
+    def parser(value: StringDictionary[Any]): this.type = js.native
     
     def post(): this.type = js.native
     
@@ -474,12 +453,12 @@ object mod {
     var resolve: Resolve[Rule[T]] = js.native
     
     def resourceQuery(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ js.Any
+      value: js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ Any
+        ]
     ): this.type = js.native
     def resourceQuery(
-      value: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ js.Any
-        ]
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ Any
     ): this.type = js.native
     
     def rule(name: String): Rule[Rule[Module]] = js.native
@@ -487,24 +466,17 @@ object mod {
     var rules: TypedChainedMap[this.type, Rule[Rule[Module]]] = js.native
     
     def test(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ js.Any
-    ): this.type = js.native
-    def test(
       value: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ Any
         ]
     ): this.type = js.native
+    def test(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Condition */ Any
+    ): this.type = js.native
     
-    @JSName("type")
-    def type_javascriptauto(value: javascriptSlashauto): this.type = js.native
-    @JSName("type")
-    def type_javascriptdynamic(value: javascriptSlashdynamic): this.type = js.native
-    @JSName("type")
-    def type_javascriptesm(value: javascriptSlashesm): this.type = js.native
-    @JSName("type")
-    def type_json(value: json): this.type = js.native
-    @JSName("type")
-    def type_webassemblyexperimental(value: webassemblySlashexperimental): this.type = js.native
+    def `type`(
+      value: javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm | json | webassemblySlashexperimental
+    ): this.type = js.native
     
     def use(name: String): Use[this.type] = js.native
     
@@ -513,7 +485,7 @@ object mod {
   
   @JSImport("webpack-chain", "TypedChainedMap")
   @js.native
-  class TypedChainedMap[Parent, Value] ()
+  open class TypedChainedMap[Parent, Value] ()
     extends StObject
        with typings.webpackChain.mod._Config.TypedChainedMap[Parent, Value] {
     
@@ -523,7 +495,7 @@ object mod {
   
   @JSImport("webpack-chain", "TypedChainedSet")
   @js.native
-  class TypedChainedSet[Parent, Value] ()
+  open class TypedChainedSet[Parent, Value] ()
     extends StObject
        with typings.webpackChain.mod._Config.TypedChainedSet[Parent, Value] {
     
@@ -533,7 +505,7 @@ object mod {
   
   @JSImport("webpack-chain", "Use")
   @js.native
-  class Use[Parent] ()
+  open class Use[Parent] ()
     extends ChainedMap[Parent]
        with Orderable {
     
@@ -553,13 +525,13 @@ object mod {
   @js.native
   trait Config
     extends StObject
-       with typings.webpackChain.mod._Config.TypedChainedMap[Unit, js.Any] {
+       with typings.webpackChain.mod._Config.TypedChainedMap[Unit, Any] {
     
     def amd(value: StringDictionary[Boolean]): this.type = js.native
     
     def bail(value: Boolean): this.type = js.native
     
-    def cache(value: js.Any): this.type = js.native
+    def cache(value: Any): this.type = js.native
     def cache(value: Boolean): this.type = js.native
     
     def context(value: String): this.type = js.native
@@ -573,22 +545,17 @@ object mod {
     var entryPoints: TypedChainedMap[Config, EntryPoint] = js.native
     
     def externals(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ExternalsElement */ js.Any
-    ): this.type = js.native
-    def externals(
       value: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ExternalsElement */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ExternalsElement */ Any
         ]
     ): this.type = js.native
+    def externals(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ExternalsElement */ Any
+    ): this.type = js.native
     
-    def loader(value: js.Any): this.type = js.native
+    def loader(value: Any): this.type = js.native
     
-    @JSName("mode")
-    def mode_development(value: development): this.type = js.native
-    @JSName("mode")
-    def mode_none(value: none): this.type = js.native
-    @JSName("mode")
-    def mode_production(value: production): this.type = js.native
+    def mode(value: none | development | production): this.type = js.native
     
     var module: Module = js.native
     
@@ -604,15 +571,9 @@ object mod {
     
     var performance: Performance = js.native
     
-    def plugin(name: String): Plugin[
-        this.type, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
-      ] = js.native
+    def plugin(name: String): Plugin[this.type, typings.webpack.mod.Plugin] = js.native
     
-    var plugins: Plugins[
-        this.type, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
-      ] = js.native
+    var plugins: Plugins[this.type, typings.webpack.mod.Plugin] = js.native
     
     def profile(value: Boolean): this.type = js.native
     
@@ -627,17 +588,17 @@ object mod {
     var resolveLoader: ResolveLoader = js.native
     
     def stats(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ Any
     ): this.type = js.native
     
     def target(value: String): this.type = js.native
     
-    def toConfig(): js.Any = js.native
+    def toConfig(): Configuration = js.native
     
     def watch(value: Boolean): this.type = js.native
     
     def watchOptions(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.WatchOptions */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.WatchOptions */ Any
     ): this.type = js.native
   }
   
@@ -686,7 +647,7 @@ object mod {
   */
   type DevTool = _DevTool | Boolean
   
-  type LoaderOptions = StringDictionary[js.Any]
+  type LoaderOptions = StringDictionary[Any]
   
   trait Orderable extends StObject {
     
@@ -710,9 +671,9 @@ object mod {
   }
   
   @js.native
-  trait PluginClass[PluginType /* <: typings.tapable.mod.Tapable.Plugin */]
+  trait PluginClass[PluginType /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tapable.Plugin */ Any */]
     extends StObject
-       with Instantiable1[/* opts (repeated) */ js.Any, PluginType]
+       with Instantiable1[/* opts (repeated) */ Any, PluginType]
   
   trait RuntimeChunk extends StObject {
     
@@ -735,7 +696,7 @@ object mod {
   
   type RuntimeChunkFunction = js.Function1[/* entryPoint */ EntryPoint, String]
   
-  type SplitChunksOptions = StringDictionary[js.Any]
+  type SplitChunksOptions = StringDictionary[Any]
   
   object _Config {
     
@@ -756,9 +717,9 @@ object mod {
       }
     }
     
-    type ChainedMap[Parent] = typings.webpackChain.mod._Config.TypedChainedMap[Parent, js.Any]
+    type ChainedMap[Parent] = typings.webpackChain.mod._Config.TypedChainedMap[Parent, Any]
     
-    type ChainedSet[Parent] = typings.webpackChain.mod._Config.TypedChainedSet[Parent, js.Any]
+    type ChainedSet[Parent] = typings.webpackChain.mod._Config.TypedChainedSet[Parent, Any]
     
     @js.native
     trait TypedChainedMap[Parent, Value]

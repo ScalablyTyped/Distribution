@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DiscoverPollEndpointRequest extends StObject {
   
   /**
-    * The short name or full Amazon Resource Name (ARN) of the cluster to which the container instance belongs.
+    * The short name or full Amazon Resource Name (ARN) of the cluster that the container instance belongs to.
     */
   var cluster: js.UndefOr[String] = js.undefined
   
   /**
-    * The container instance ID or full ARN of the container instance. The ARN contains the arn:aws:ecs namespace, followed by the Region of the container instance, the AWS account ID of the container instance owner, the container-instance namespace, and then the container instance ID. For example, arn:aws:ecs:region:aws_account_id:container-instance/container_instance_ID.
+    * The container instance ID or full ARN of the container instance. For more information about the ARN format, see Amazon Resource Name (ARN) in the Amazon ECS Developer Guide.
     */
   var containerInstance: js.UndefOr[String] = js.undefined
 }

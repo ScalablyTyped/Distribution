@@ -10,10 +10,10 @@ ES6 Math.trunc() ponyfill
 | ------------------ | :-------------: |
 | Full name          | math-trunc |
 | Keywords           | es6, math, polyfill, ponyfill, trunc |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 95447 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4836.333333333333 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/math-trunc#readme)

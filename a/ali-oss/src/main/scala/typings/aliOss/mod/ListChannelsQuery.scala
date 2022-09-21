@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListChannelsQuery extends StObject {
   
-  // the channel id prefix (returns channels with this prefix)
+  /** the channel id marker (returns channels after this id) */
   var marker: String
   
-  // the channel id marker (returns channels after this id)
+  /** max number of channels to return */
   var `max-keys `: Double
   
+  /** the channel id prefix (returns channels with this prefix) */
   var prefix: String
 }
 object ListChannelsQuery {

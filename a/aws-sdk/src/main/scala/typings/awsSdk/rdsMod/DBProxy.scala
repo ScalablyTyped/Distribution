@@ -14,7 +14,7 @@ trait DBProxy extends StObject {
   /**
     * The date and time when the proxy was first created.
     */
-  var CreatedDate: js.UndefOr[TStamp] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the proxy.
@@ -22,7 +22,7 @@ trait DBProxy extends StObject {
   var DBProxyArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier for the proxy. This name must be unique for all proxies owned by your AWS account in the specified AWS Region.
+    * The identifier for the proxy. This name must be unique for all proxies owned by your Amazon Web Services account in the specified Amazon Web Services Region.
     */
   var DBProxyName: js.UndefOr[String] = js.undefined
   
@@ -32,12 +32,12 @@ trait DBProxy extends StObject {
   var DebugLogging: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The endpoint that you can use to connect to the proxy. You include the endpoint value in the connection string for a database client application.
+    * The endpoint that you can use to connect to the DB proxy. You include the endpoint value in the connection string for a database client application.
     */
   var Endpoint: js.UndefOr[String] = js.undefined
   
   /**
-    * The engine family applies to MySQL and PostgreSQL for both RDS and Aurora.
+    * The kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. MYSQL supports Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases. POSTGRESQL supports Aurora PostgreSQL and RDS for PostgreSQL databases. SQLSERVER supports RDS for Microsoft SQL Server databases.
     */
   var EngineFamily: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,12 @@ trait DBProxy extends StObject {
   /**
     * The date and time when the proxy was last updated.
     */
-  var UpdatedDate: js.UndefOr[TStamp] = js.undefined
+  var UpdatedDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Provides the VPC ID of the DB proxy.
+    */
+  var VpcId: js.UndefOr[String] = js.undefined
   
   /**
     * Provides a list of VPC security groups that the proxy belongs to.
@@ -89,9 +94,9 @@ object DBProxy {
     
     inline def setAuthUndefined: Self = StObject.set(x, "Auth", js.undefined)
     
-    inline def setAuthVarargs(value: UserAuthConfigInfo*): Self = StObject.set(x, "Auth", js.Array(value :_*))
+    inline def setAuthVarargs(value: UserAuthConfigInfo*): Self = StObject.set(x, "Auth", js.Array(value*))
     
-    inline def setCreatedDate(value: TStamp): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -131,20 +136,24 @@ object DBProxy {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdatedDate(value: TStamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
+    
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
     
     inline def setVpcSecurityGroupIds(value: StringList): Self = StObject.set(x, "VpcSecurityGroupIds", value.asInstanceOf[js.Any])
     
     inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
     
-    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
+    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value*))
     
     inline def setVpcSubnetIds(value: StringList): Self = StObject.set(x, "VpcSubnetIds", value.asInstanceOf[js.Any])
     
     inline def setVpcSubnetIdsUndefined: Self = StObject.set(x, "VpcSubnetIds", js.undefined)
     
-    inline def setVpcSubnetIdsVarargs(value: String*): Self = StObject.set(x, "VpcSubnetIds", js.Array(value :_*))
+    inline def setVpcSubnetIdsVarargs(value: String*): Self = StObject.set(x, "VpcSubnetIds", js.Array(value*))
   }
 }

@@ -2,7 +2,6 @@ package typings.awsSdkClientS3Node
 
 import typings.awsSdkClientS3Node.typesRuleMod.Rule
 import typings.awsSdkClientS3Node.typesRuleMod.UnmarshalledRule
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,20 +13,20 @@ object typesLifecycleConfigurationMod {
     /**
       * _Rules shape
       */
-    var Rules: js.Array[Rule] | Iterable[Rule]
+    var Rules: js.Array[Rule] | js.Iterable[Rule]
   }
   object LifecycleConfiguration {
     
-    inline def apply(Rules: js.Array[Rule] | Iterable[Rule]): LifecycleConfiguration = {
+    inline def apply(Rules: js.Array[Rule] | js.Iterable[Rule]): LifecycleConfiguration = {
       val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[LifecycleConfiguration]
     }
     
     extension [Self <: LifecycleConfiguration](x: Self) {
       
-      inline def setRules(value: js.Array[Rule] | Iterable[Rule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[Rule] | js.Iterable[Rule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value*))
     }
   }
   
@@ -52,7 +51,7 @@ object typesLifecycleConfigurationMod {
       
       inline def setRules(value: js.Array[UnmarshalledRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      inline def setRulesVarargs(value: UnmarshalledRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     }
   }
 }

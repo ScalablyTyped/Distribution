@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
+  // WebWorker" library already declare's console, as `var` not `const`
+  // declare const console: Console;
   @JSGlobal("console")
   @js.native
-  val console: Console = js.native
+  def console: Console = js.native
+  inline def console_=(x: Console): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__dirname")
   @js.native
@@ -18,8 +21,8 @@ object global {
   /* was `typeof module.exports` */
   @JSGlobal("exports")
   @js.native
-  def exports: js.Any = js.native
-  inline def exports_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
+  def exports: Any = js.native
+  inline def exports_=(x: Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__filename")
   @js.native
@@ -33,9 +36,9 @@ object global {
     
     @JSGlobal("module.exports")
     @js.native
-    def exports: js.Any = js.native
-    inline def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
+    def exports: Any = js.native
+    inline def exports_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
   }
   
-  inline def require(module: String): js.Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def require(module: String): Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -11,9 +11,9 @@ A node port of python's os.walk
 | Full name          | walk |
 | Keywords           | util, os, sys, fs, walk, walkSync |
 | # releases         | 1 |
-| # dependents       | 813 |
-| # downloads        | 27826139 |
-| # stars            | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 2442005.6666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://git.coolaj86.com/coolaj86/fs-walk.js)

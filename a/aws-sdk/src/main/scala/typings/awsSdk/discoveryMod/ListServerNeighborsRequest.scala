@@ -50,7 +50,7 @@ object ListServerNeighborsRequest {
     
     inline def setNeighborConfigurationIdsUndefined: Self = StObject.set(x, "neighborConfigurationIds", js.undefined)
     
-    inline def setNeighborConfigurationIdsVarargs(value: ConfigurationId*): Self = StObject.set(x, "neighborConfigurationIds", js.Array(value :_*))
+    inline def setNeighborConfigurationIdsVarargs(value: ConfigurationId*): Self = StObject.set(x, "neighborConfigurationIds", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

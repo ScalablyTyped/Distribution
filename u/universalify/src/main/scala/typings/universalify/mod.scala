@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromCallback(fn: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Promise[js.Any] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any] | Unit]]
+  inline def fromCallback(fn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, js.Promise[Any] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, js.Promise[Any] | Unit]]
   
-  inline def fromPromise(fn: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Promise[js.Any] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any] | Unit]]
+  inline def fromPromise(fn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, js.Promise[Any] | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, js.Promise[Any] | Unit]]
 }

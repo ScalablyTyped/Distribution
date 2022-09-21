@@ -12,7 +12,7 @@ trait IncreaseNodeGroupsInGlobalReplicationGroupMessage extends StObject {
   var ApplyImmediately: Boolean
   
   /**
-    * The name of the Global Datastore
+    * The name of the Global datastore
     */
   var GlobalReplicationGroupId: String
   
@@ -22,7 +22,7 @@ trait IncreaseNodeGroupsInGlobalReplicationGroupMessage extends StObject {
   var NodeGroupCount: Integer
   
   /**
-    * Describes the replication group IDs, the AWS regions where they are stored and the shard configuration for each that comprise the Global Datastore
+    * Describes the replication group IDs, the Amazon regions where they are stored and the shard configuration for each that comprise the Global datastore
     */
   var RegionalConfigurations: js.UndefOr[RegionalConfigurationList] = js.undefined
 }
@@ -45,6 +45,6 @@ object IncreaseNodeGroupsInGlobalReplicationGroupMessage {
     
     inline def setRegionalConfigurationsUndefined: Self = StObject.set(x, "RegionalConfigurations", js.undefined)
     
-    inline def setRegionalConfigurationsVarargs(value: RegionalConfiguration*): Self = StObject.set(x, "RegionalConfigurations", js.Array(value :_*))
+    inline def setRegionalConfigurationsVarargs(value: RegionalConfiguration*): Self = StObject.set(x, "RegionalConfigurations", js.Array(value*))
   }
 }

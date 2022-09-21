@@ -1,11 +1,12 @@
 package typings.three
 
 import typings.three.colorMod.Color
-import typings.three.constantsMod.Combine
-import typings.three.constantsMod.NormalMapTypes
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.srcConstantsMod.Combine
+import typings.three.srcConstantsMod.NormalMapTypes
 import typings.three.textureMod.Texture
+import typings.three.utilsMod.ColorRepresentation
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,174 +16,171 @@ object meshPhongMaterialMod {
   
   @JSImport("three/src/materials/MeshPhongMaterial", "MeshPhongMaterial")
   @js.native
-  class MeshPhongMaterial () extends Material {
+  open class MeshPhongMaterial () extends Material {
     def this(parameters: MeshPhongMaterialParameters) = this()
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var alphaMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var aoMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var aoMapIntensity: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var bumpMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var bumpScale: Double = js.native
     
     /**
-    	 * @default new THREE.Color( 0xffffff )
-    	 */
+      * @default new THREE.Color( 0xffffff )
+      */
     var color: Color = js.native
     
     /**
-    	 * @default THREE.MultiplyOperation
-    	 */
+      * @default THREE.MultiplyOperation
+      */
     var combine: Combine = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var displacementBias: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var displacementMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var displacementScale: Double = js.native
     
     /**
-    	 * @default new THREE.Color( 0x000000 )
-    	 */
+      * @default new THREE.Color( 0x000000 )
+      */
     var emissive: Color = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var emissiveIntensity: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var emissiveMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var envMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * Define whether the material is rendered with flat shading. Default is false.
+      * @default false
+      */
+    var flatShading: Boolean = js.native
+    
+    /**
+      * Whether the material is affected by fog. Default is true.
+      * @default fog
+      */
+    var fog: Boolean = js.native
+    
+    /**
+      * @default null
+      */
     var lightMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var lightMapIntensity: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var map: Texture | Null = js.native
     
     /**
-    	 * @deprecated Use {@link MeshStandardMaterial THREE.MeshStandardMaterial} instead.
-    	 */
+      * @deprecated Use {@link MeshStandardMaterial THREE.MeshStandardMaterial} instead.
+      */
     var metal: Boolean = js.native
     
     /**
-    	 * @default false
-    	 */
-    var morphNormals: Boolean = js.native
-    
-    /**
-    	 * @default false
-    	 */
-    var morphTargets: Boolean = js.native
-    
-    /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var normalMap: Texture | Null = js.native
     
     /**
-    	 * @default THREE.TangentSpaceNormalMap
-    	 */
+      * @default THREE.TangentSpaceNormalMap
+      */
     var normalMapType: NormalMapTypes = js.native
     
     /**
-    	 * @default new Vector2( 1, 1 )
-    	 */
+      * @default new Vector2( 1, 1 )
+      */
     var normalScale: Vector2 = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var reflectivity: Double = js.native
     
     /**
-    	 * @default 0.98
-    	 */
+      * @default 0.98
+      */
     var refractionRatio: Double = js.native
     
     def setValues(parameters: MeshPhongMaterialParameters): Unit = js.native
     
     /**
-    	 * @default 30
-    	 */
+      * @default 30
+      */
     var shininess: Double = js.native
     
     /**
-    	 * @default false
-    	 */
-    var skinning: Boolean = js.native
-    
-    /**
-    	 * @default new THREE.Color( 0x111111 )
-    	 */
+      * @default new THREE.Color( 0x111111 )
+      */
     var specular: Color = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var specularMap: Texture | Null = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var wireframe: Boolean = js.native
     
     /**
-    	 * @default 'round'
-    	 */
+      * @default 'round'
+      */
     var wireframeLinecap: String = js.native
     
     /**
-    	 * @default 'round'
-    	 */
+      * @default 'round'
+      */
     var wireframeLinejoin: String = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var wireframeLinewidth: Double = js.native
   }
   
@@ -201,7 +199,7 @@ object meshPhongMaterialMod {
     var bumpScale: js.UndefOr[Double] = js.undefined
     
     /** geometry color in hexadecimal. Default is 0xffffff. */
-    var color: js.UndefOr[Color | String | Double] = js.undefined
+    var color: js.UndefOr[ColorRepresentation] = js.undefined
     
     var combine: js.UndefOr[Combine] = js.undefined
     
@@ -211,7 +209,7 @@ object meshPhongMaterialMod {
     
     var displacementScale: js.UndefOr[Double] = js.undefined
     
-    var emissive: js.UndefOr[Color | String | Double] = js.undefined
+    var emissive: js.UndefOr[ColorRepresentation] = js.undefined
     
     var emissiveIntensity: js.UndefOr[Double] = js.undefined
     
@@ -219,15 +217,15 @@ object meshPhongMaterialMod {
     
     var envMap: js.UndefOr[Texture | Null] = js.undefined
     
+    var flatShading: js.UndefOr[Boolean] = js.undefined
+    
+    var fog: js.UndefOr[Boolean] = js.undefined
+    
     var lightMap: js.UndefOr[Texture | Null] = js.undefined
     
     var lightMapIntensity: js.UndefOr[Double] = js.undefined
     
     var map: js.UndefOr[Texture | Null] = js.undefined
-    
-    var morphNormals: js.UndefOr[Boolean] = js.undefined
-    
-    var morphTargets: js.UndefOr[Boolean] = js.undefined
     
     var normalMap: js.UndefOr[Texture | Null] = js.undefined
     
@@ -241,9 +239,7 @@ object meshPhongMaterialMod {
     
     var shininess: js.UndefOr[Double] = js.undefined
     
-    var skinning: js.UndefOr[Boolean] = js.undefined
-    
-    var specular: js.UndefOr[Color | String | Double] = js.undefined
+    var specular: js.UndefOr[ColorRepresentation] = js.undefined
     
     var specularMap: js.UndefOr[Texture | Null] = js.undefined
     
@@ -290,7 +286,7 @@ object meshPhongMaterialMod {
       
       inline def setBumpScaleUndefined: Self = StObject.set(x, "bumpScale", js.undefined)
       
-      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorRepresentation): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -312,7 +308,7 @@ object meshPhongMaterialMod {
       
       inline def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
       
-      inline def setEmissive(value: Color | String | Double): Self = StObject.set(x, "emissive", value.asInstanceOf[js.Any])
+      inline def setEmissive(value: ColorRepresentation): Self = StObject.set(x, "emissive", value.asInstanceOf[js.Any])
       
       inline def setEmissiveIntensity(value: Double): Self = StObject.set(x, "emissiveIntensity", value.asInstanceOf[js.Any])
       
@@ -332,6 +328,14 @@ object meshPhongMaterialMod {
       
       inline def setEnvMapUndefined: Self = StObject.set(x, "envMap", js.undefined)
       
+      inline def setFlatShading(value: Boolean): Self = StObject.set(x, "flatShading", value.asInstanceOf[js.Any])
+      
+      inline def setFlatShadingUndefined: Self = StObject.set(x, "flatShading", js.undefined)
+      
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
+      
       inline def setLightMap(value: Texture): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
       
       inline def setLightMapIntensity(value: Double): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
@@ -347,14 +351,6 @@ object meshPhongMaterialMod {
       inline def setMapNull: Self = StObject.set(x, "map", null)
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
-      
-      inline def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
-      
-      inline def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
-      
-      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
-      
-      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
       
       inline def setNormalMap(value: Texture): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
       
@@ -382,11 +378,7 @@ object meshPhongMaterialMod {
       
       inline def setShininessUndefined: Self = StObject.set(x, "shininess", js.undefined)
       
-      inline def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
-      
-      inline def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
-      
-      inline def setSpecular(value: Color | String | Double): Self = StObject.set(x, "specular", value.asInstanceOf[js.Any])
+      inline def setSpecular(value: ColorRepresentation): Self = StObject.set(x, "specular", value.asInstanceOf[js.Any])
       
       inline def setSpecularMap(value: Texture): Self = StObject.set(x, "specularMap", value.asInstanceOf[js.Any])
       

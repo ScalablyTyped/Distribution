@@ -33,6 +33,6 @@ object ListSchemaExtensionsResult {
     
     inline def setSchemaExtensionsInfoUndefined: Self = StObject.set(x, "SchemaExtensionsInfo", js.undefined)
     
-    inline def setSchemaExtensionsInfoVarargs(value: SchemaExtensionInfo*): Self = StObject.set(x, "SchemaExtensionsInfo", js.Array(value :_*))
+    inline def setSchemaExtensionsInfoVarargs(value: SchemaExtensionInfo*): Self = StObject.set(x, "SchemaExtensionsInfo", js.Array(value*))
   }
 }

@@ -4,21 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The device resources for the user.
-  */
 trait SchemaDevicesListResponse extends StObject {
   
   /**
     * A managed device.
     */
   var device: js.UndefOr[js.Array[SchemaDevice]] = js.undefined
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#devicesListResponse&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaDevicesListResponse {
   
@@ -33,10 +24,6 @@ object SchemaDevicesListResponse {
     
     inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    inline def setDeviceVarargs(value: SchemaDevice*): Self = StObject.set(x, "device", js.Array(value :_*))
-    
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setDeviceVarargs(value: SchemaDevice*): Self = StObject.set(x, "device", js.Array(value*))
   }
 }

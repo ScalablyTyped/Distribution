@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("react-native-safe-area", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with SafeArea
   /* static members */
@@ -35,48 +35,12 @@ object mod {
     inline def removeEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  inline def withSafeArea_absolutePosition[P](
+  inline def withSafeArea[P](
     WrappedComponent: ComponentType[P],
     /**
     * @default 'margin'
     */
-  applyTo: absolutePosition,
-    /**
-    * @default 'all'
-    */
-  direction: Direction
-  ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
-  
-  inline def withSafeArea_contentInset[P](
-    WrappedComponent: ComponentType[P],
-    /**
-    * @default 'margin'
-    */
-  applyTo: contentInset,
-    /**
-    * @default 'all'
-    */
-  direction: Direction
-  ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
-  
-  inline def withSafeArea_margin[P](
-    WrappedComponent: ComponentType[P],
-    /**
-    * @default 'margin'
-    */
-  applyTo: margin,
-    /**
-    * @default 'all'
-    */
-  direction: Direction
-  ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
-  
-  inline def withSafeArea_padding[P](
-    WrappedComponent: ComponentType[P],
-    /**
-    * @default 'margin'
-    */
-  applyTo: padding,
+  applyTo: margin | padding | absolutePosition | contentInset,
     /**
     * @default 'all'
     */

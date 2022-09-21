@@ -1,7 +1,9 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.PartialIColorPickerGridCe
+import typings.officeUiFabricReact.anon.SelectedIndex
 import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
+import typings.officeUiFabricReact.swatchColorPickerBaseMod.ISwatchColorPickerState
 import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
@@ -16,14 +18,14 @@ object libSwatchColorPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/SwatchColorPicker", "ColorPickerGridCellBase")
   @js.native
-  class ColorPickerGridCellBase protected ()
+  open class ColorPickerGridCellBase protected ()
     extends typings.officeUiFabricReact.swatchColorPickerMod.ColorPickerGridCellBase {
     def this(props: IColorPickerGridCellProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IColorPickerGridCellProps, context: js.Any) = this()
+    def this(props: IColorPickerGridCellProps, context: Any) = this()
   }
   /* static members */
   object ColorPickerGridCellBase {
@@ -44,7 +46,7 @@ object libSwatchColorPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/SwatchColorPicker", "SwatchColorPickerBase")
   @js.native
-  class SwatchColorPickerBase protected ()
+  open class SwatchColorPickerBase protected ()
     extends typings.officeUiFabricReact.swatchColorPickerMod.SwatchColorPickerBase {
     def this(props: ISwatchColorPickerProps) = this()
   }
@@ -59,5 +61,7 @@ object libSwatchColorPickerMod {
     @js.native
     def defaultProps: ISwatchColorPickerProps = js.native
     inline def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    inline def getDerivedStateFromProps(newProps: ISwatchColorPickerProps, state: ISwatchColorPickerState): SelectedIndex | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SelectedIndex | Null]
   }
 }

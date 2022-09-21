@@ -39,7 +39,7 @@ object SatelliteListItem {
     
     inline def setGroundStationsUndefined: Self = StObject.set(x, "groundStations", js.undefined)
     
-    inline def setGroundStationsVarargs(value: String*): Self = StObject.set(x, "groundStations", js.Array(value :_*))
+    inline def setGroundStationsVarargs(value: String*): Self = StObject.set(x, "groundStations", js.Array(value*))
     
     inline def setNoradSatelliteID(value: noradSatelliteID): Self = StObject.set(x, "noradSatelliteID", value.asInstanceOf[js.Any])
     

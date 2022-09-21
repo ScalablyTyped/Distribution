@@ -21,10 +21,10 @@ object SpaceToBatchNDAttrs {
     
     inline def setBlockShape(value: js.Array[Double]): Self = StObject.set(x, "blockShape", value.asInstanceOf[js.Any])
     
-    inline def setBlockShapeVarargs(value: Double*): Self = StObject.set(x, "blockShape", js.Array(value :_*))
+    inline def setBlockShapeVarargs(value: Double*): Self = StObject.set(x, "blockShape", js.Array(value*))
     
     inline def setPaddings(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "paddings", value.asInstanceOf[js.Any])
     
-    inline def setPaddingsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "paddings", js.Array(value :_*))
+    inline def setPaddingsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "paddings", js.Array(value*))
   }
 }

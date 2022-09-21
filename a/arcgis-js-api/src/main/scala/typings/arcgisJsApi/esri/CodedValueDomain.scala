@@ -15,7 +15,7 @@ trait CodedValueDomain
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
     */
-  var codedValues: js.Array[CodedValueDomainCodedValues] = js.native
+  var codedValues: js.Array[CodedValue] = js.native
   
   /**
     * Returns the name of the coded-value associated with the specified code.

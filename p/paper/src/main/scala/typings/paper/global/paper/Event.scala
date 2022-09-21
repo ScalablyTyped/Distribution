@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Event")
 @js.native
-class Event ()
+open class Event ()
   extends StObject
      with typings.paper.paper.Event {
   
@@ -20,7 +20,7 @@ class Event ()
     * @see Key.modifiers
     */
   /* CompleteClass */
-  override val modifiers: js.Any = js.native
+  override val modifiers: Any = js.native
   
   /** 
     * Cancels the event if it is cancelable, without stopping further

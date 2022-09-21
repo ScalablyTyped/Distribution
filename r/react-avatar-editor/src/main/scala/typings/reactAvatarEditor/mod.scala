@@ -1,7 +1,6 @@
 package typings.reactAvatarEditor
 
 import typings.react.mod.Component
-import typings.std.DragEvent
 import typings.std.Event
 import typings.std.File
 import typings.std.HTMLCanvasElement
@@ -14,11 +13,10 @@ object mod {
   
   @JSImport("react-avatar-editor", JSImport.Default)
   @js.native
-  class default () extends AvatarEditor
+  open class default () extends AvatarEditor
   
   @js.native
-  trait AvatarEditor
-    extends Component[AvatarEditorProps, js.Any, js.Any] {
+  trait AvatarEditor extends Component[AvatarEditorProps, Any, Any] {
     
     def getCroppingRect(): CroppedRect = js.native
     
@@ -28,6 +26,8 @@ object mod {
   }
   
   trait AvatarEditorProps extends StObject {
+    
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     var border: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
@@ -41,13 +41,13 @@ object mod {
     
     var disableBoundaryChecks: js.UndefOr[Boolean] = js.undefined
     
-    var disableDrop: js.UndefOr[Boolean] = js.undefined
+    var disableCanvasRotation: js.UndefOr[Boolean] = js.undefined
+    
+    var disableHiDPIScaling: js.UndefOr[Boolean] = js.undefined
     
     var height: js.UndefOr[Double] = js.undefined
     
     var image: String | File
-    
-    var onDropFile: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
     
     var onImageChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -82,6 +82,10 @@ object mod {
     
     extension [Self <: AvatarEditorProps](x: Self) {
       
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      
       inline def setBorder(value: Double | js.Array[Double]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
@@ -90,7 +94,7 @@ object mod {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setBorderVarargs(value: Double*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: Double*): Self = StObject.set(x, "border", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -100,7 +104,7 @@ object mod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
@@ -110,19 +114,19 @@ object mod {
       
       inline def setDisableBoundaryChecksUndefined: Self = StObject.set(x, "disableBoundaryChecks", js.undefined)
       
-      inline def setDisableDrop(value: Boolean): Self = StObject.set(x, "disableDrop", value.asInstanceOf[js.Any])
+      inline def setDisableCanvasRotation(value: Boolean): Self = StObject.set(x, "disableCanvasRotation", value.asInstanceOf[js.Any])
       
-      inline def setDisableDropUndefined: Self = StObject.set(x, "disableDrop", js.undefined)
+      inline def setDisableCanvasRotationUndefined: Self = StObject.set(x, "disableCanvasRotation", js.undefined)
+      
+      inline def setDisableHiDPIScaling(value: Boolean): Self = StObject.set(x, "disableHiDPIScaling", value.asInstanceOf[js.Any])
+      
+      inline def setDisableHiDPIScalingUndefined: Self = StObject.set(x, "disableHiDPIScaling", js.undefined)
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       inline def setImage(value: String | File): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
-      
-      inline def setOnDropFile(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onDropFile", js.Any.fromFunction1(value))
-      
-      inline def setOnDropFileUndefined: Self = StObject.set(x, "onDropFile", js.undefined)
       
       inline def setOnImageChange(value: () => Unit): Self = StObject.set(x, "onImageChange", js.Any.fromFunction0(value))
       

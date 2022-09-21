@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TableOfAuthorities")
 @js.native
-/* private */ class TableOfAuthorities ()
+/* private */ open class TableOfAuthorities ()
   extends StObject
      with typings.activexWord.Word.TableOfAuthorities {
   
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PageRangeSeparator: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Passim: Boolean = js.native

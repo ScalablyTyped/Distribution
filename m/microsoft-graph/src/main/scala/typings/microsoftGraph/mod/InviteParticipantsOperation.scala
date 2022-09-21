@@ -24,6 +24,6 @@ object InviteParticipantsOperation {
     
     inline def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
-    inline def setParticipantsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "participants", js.Array(value*))
   }
 }

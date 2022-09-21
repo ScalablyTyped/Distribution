@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait SearchDirection extends StObject
 /**
-  *
   * Specifies the search direction.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SearchDirection")
@@ -18,7 +18,8 @@ object SearchDirection extends StObject {
   
   /**
     * Search in reverse order.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait backwards
@@ -27,7 +28,8 @@ object SearchDirection extends StObject {
   
   /**
     * Search in forward order.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait forward

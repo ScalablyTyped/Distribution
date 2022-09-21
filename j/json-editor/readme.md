@@ -9,10 +9,10 @@ JSON Schema based editor
 | ------------------ | :-------------: |
 | Full name          | json-editor |
 | Keywords           | json, schema, jsonschema, editor |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 256235 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19584.0 |
+| # stars            | 5661.0 |
 
 ## Links
 - [Homepage](https://github.com/jdorn/json-editor#readme)

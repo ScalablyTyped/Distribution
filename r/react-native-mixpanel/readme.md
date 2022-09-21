@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-mixpanel
 
-Typings are for version 0.1
+Typings are for version 1.2.5
 
 ## Library description:
 A React Native wrapper for Mixpanel tracking
@@ -10,21 +10,18 @@ A React Native wrapper for Mixpanel tracking
 | ------------------ | :-------------: |
 | Full name          | react-native-mixpanel |
 | Keywords           | react-native, react-component, tracking, mixpanel |
-| # releases         | 11 |
-| # dependents       | 3 |
-| # downloads        | 976532 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 35612.666666666664 |
+| # stars            | 457.0 |
 
 ## Links
-- [Homepage](https://github.com/davodesign84/react-native-mixpanel#readme)
-- [Bugs](https://github.com/davodesign84/react-native-mixpanel/issues)
-- [Repository](https://github.com/davodesign84/react-native-mixpanel)
 - [Npm](https://www.npmjs.com/package/react-native-mixpanel)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

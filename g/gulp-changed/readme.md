@@ -9,15 +9,12 @@ Only pass through changed files
 | ------------------ | :-------------: |
 | Full name          | gulp-changed |
 | Keywords           | gulpplugin, file, files, changed, newer, modified, modification, updated, time, mtime, stat, cache, cached, passthrough |
-| # releases         | 4 |
-| # dependents       | 323 |
-| # downloads        | 3330225 |
-| # stars            | 142 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 252036.66666666666 |
+| # stars            | 745.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/gulp-changed#readme)
-- [Bugs](https://github.com/sindresorhus/gulp-changed/issues)
-- [Repository](https://github.com/sindresorhus/gulp-changed)
 - [Npm](https://www.npmjs.com/package/gulp-changed)
     
 

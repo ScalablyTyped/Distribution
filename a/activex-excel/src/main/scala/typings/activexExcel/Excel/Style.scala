@@ -18,7 +18,7 @@ trait Style extends StObject {
   
   val Creator: XlCreator
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   /* private */ @JSName("Excel.Style_typekey")
   var ExcelDotStyle_typekey: Style
@@ -59,7 +59,7 @@ trait Style extends StObject {
   
   var Orientation: XlOrientation
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReadingOrder: Double
   
@@ -81,7 +81,7 @@ object Style {
     Borders: Borders,
     BuiltIn: Boolean,
     Creator: XlCreator,
-    Delete: () => js.Any,
+    Delete: () => Any,
     ExcelDotStyle_typekey: Style,
     Font: Font,
     FormulaHidden: Boolean,
@@ -101,7 +101,7 @@ object Style {
     NumberFormat: String,
     NumberFormatLocal: String,
     Orientation: XlOrientation,
-    Parent: js.Any,
+    Parent: Any,
     ReadingOrder: Double,
     ShrinkToFit: Boolean,
     Value: String,
@@ -126,7 +126,7 @@ object Style {
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setExcelDotStyle_typekey(value: Style): Self = StObject.set(x, "Excel.Style_typekey", value.asInstanceOf[js.Any])
     
@@ -166,7 +166,7 @@ object Style {
     
     inline def setOrientation(value: XlOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReadingOrder(value: Double): Self = StObject.set(x, "ReadingOrder", value.asInstanceOf[js.Any])
     

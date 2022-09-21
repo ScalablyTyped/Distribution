@@ -9,8 +9,6 @@ trait Max extends StObject {
   var max: js.UndefOr[Double] = js.undefined
   
   var min: js.UndefOr[Double] = js.undefined
-  
-  var proportion: js.UndefOr[Double] = js.undefined
 }
 object Max {
   
@@ -28,9 +26,5 @@ object Max {
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-    
-    inline def setProportion(value: Double): Self = StObject.set(x, "proportion", value.asInstanceOf[js.Any])
-    
-    inline def setProportionUndefined: Self = StObject.set(x, "proportion", js.undefined)
   }
 }

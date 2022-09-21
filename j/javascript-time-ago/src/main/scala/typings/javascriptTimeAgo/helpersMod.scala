@@ -2,7 +2,6 @@ package typings.javascriptTimeAgo
 
 import typings.javascriptTimeAgo.gradationMod.Gradation
 import typings.javascriptTimeAgo.gradationMod.Unit
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +16,8 @@ object helpersMod {
   @js.native
   val day: Double = js.native
   
-  inline def getDate(value: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
-  inline def getDate(value: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def getDate(value: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  inline def getDate(value: Double): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
   inline def getStep(gradation: js.Array[Gradation], unit: Unit): js.UndefOr[Gradation] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStep")(gradation.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Gradation]]
   

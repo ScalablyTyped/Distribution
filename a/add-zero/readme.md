@@ -10,10 +10,10 @@ Add a leading zero to a number.
 | ------------------ | :-------------: |
 | Full name          | add-zero |
 | Keywords           | zero, leading, places, decimal, number, format, formatter, digits |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 106181 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15423.333333333334 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/rafaelrinaldi/add-zero#readme)

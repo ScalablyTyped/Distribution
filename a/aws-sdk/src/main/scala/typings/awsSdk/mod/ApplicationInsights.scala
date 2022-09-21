@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ApplicationInsights ()
+open class ApplicationInsights ()
   extends typings.awsSdk.allMod.ApplicationInsights {
   def this(options: ClientConfiguration) = this()
 }

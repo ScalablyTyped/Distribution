@@ -8,5 +8,5 @@ object getBucketMetricsConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/GetBucketMetricsConfiguration", "GetBucketMetricsConfiguration")
   @js.native
-  val GetBucketMetricsConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetBucketMetricsConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

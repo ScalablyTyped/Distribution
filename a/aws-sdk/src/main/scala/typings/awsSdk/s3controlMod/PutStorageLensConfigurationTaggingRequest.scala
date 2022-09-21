@@ -36,6 +36,6 @@ object PutStorageLensConfigurationTaggingRequest {
     
     inline def setTags(value: StorageLensTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: StorageLensTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: StorageLensTag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

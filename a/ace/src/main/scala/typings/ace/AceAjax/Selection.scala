@@ -33,12 +33,12 @@ trait Selection extends StObject {
   /**
     * Returns an object containing the `row` and `column` of the calling selection anchor.
     **/
-  def getSelectionAnchor(): js.Any = js.native
+  def getSelectionAnchor(): Any = js.native
   
   /**
     * Returns an object containing the `row` and `column` of the calling selection lead.
     **/
-  def getSelectionLead(): js.Any = js.native
+  def getSelectionLead(): Any = js.native
   
   /**
     * Moves the selection to highlight the entire word.
@@ -125,7 +125,7 @@ trait Selection extends StObject {
     * Moves the selection to the position indicated by its `row` and `column`.
     * @param position The position to move to
     **/
-  def moveCursorToPosition(position: js.Any): Unit = js.native
+  def moveCursorToPosition(position: Any): Unit = js.native
   
   /**
     * Moves the cursor to the screen position indicated by row and column. {:preventUpdateBoolDesc}
@@ -146,7 +146,7 @@ trait Selection extends StObject {
   
   def off(ev: String, callback: js.Function): Unit = js.native
   
-  def on(event: String, fn: js.Function1[/* e */ js.Any, js.Any]): Unit = js.native
+  def on(event: String, fn: js.Function1[/* e */ Any, Any]): Unit = js.native
   def on(ev: String, callback: js.Function): Unit = js.native
   
   def removeEventListener(ev: String, callback: js.Function): Unit = js.native
@@ -214,7 +214,7 @@ trait Selection extends StObject {
     * Moves the selection cursor to the row and column indicated by `pos`.
     * @param pos An object containing the row and column
     **/
-  def selectToPosition(pos: js.Any): Unit = js.native
+  def selectToPosition(pos: Any): Unit = js.native
   
   /**
     * Moves the selection up one row.
@@ -250,7 +250,7 @@ trait Selection extends StObject {
     **/
   def setSelectionAnchor(row: Double, column: Double): Unit = js.native
   
-  def setSelectionRange(`match`: js.Any): Unit = js.native
+  def setSelectionRange(`match`: Any): Unit = js.native
   
   /**
     * Shifts the selection up (or down, if [[Selection.isBackwards `isBackwards()`]] is true) the given number of columns.

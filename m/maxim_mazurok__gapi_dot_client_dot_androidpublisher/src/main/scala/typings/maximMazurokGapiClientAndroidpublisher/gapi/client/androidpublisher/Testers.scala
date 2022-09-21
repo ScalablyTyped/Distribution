@@ -22,6 +22,6 @@ object Testers {
     
     inline def setGoogleGroupsUndefined: Self = StObject.set(x, "googleGroups", js.undefined)
     
-    inline def setGoogleGroupsVarargs(value: String*): Self = StObject.set(x, "googleGroups", js.Array(value :_*))
+    inline def setGoogleGroupsVarargs(value: String*): Self = StObject.set(x, "googleGroups", js.Array(value*))
   }
 }

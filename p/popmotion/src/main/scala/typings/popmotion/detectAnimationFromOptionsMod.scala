@@ -27,7 +27,7 @@ object detectAnimationFromOptionsMod {
   
   trait Options extends StObject {
     
-    var to: js.UndefOr[js.Any] = js.undefined
+    var to: js.UndefOr[Any] = js.undefined
     
     var `type`: js.UndefOr[decay | keyframes | spring] = js.undefined
   }
@@ -40,7 +40,7 @@ object detectAnimationFromOptionsMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       

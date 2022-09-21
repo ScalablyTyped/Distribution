@@ -74,6 +74,27 @@ trait CadesSignedDataAsync extends StObject {
     ]
   ])
   
+  val SignHash: (// tslint:disable-line ban-types
+  js.Promise[
+    Unpacked[
+      js.Function4[
+        /* hashedData */ CPHashedData, 
+        /* signer */ CPSigner, 
+        /* CadesType */ ValuesOf[CADESCOM_CADES_TYPE], 
+        /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]], 
+        String
+      ]
+    ]
+  ]) | (PromisifiedFunction[
+    js.Function4[
+      /* hashedData */ CPHashedData, 
+      /* signer */ CPSigner, 
+      /* CadesType */ ValuesOf[CADESCOM_CADES_TYPE], 
+      /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]], 
+      String
+    ]
+  ])
+  
   val VerifyCades: (// tslint:disable-line ban-types
   js.Promise[
     Unpacked[
@@ -89,6 +110,25 @@ trait CadesSignedDataAsync extends StObject {
       /* SignedMessage */ String, 
       /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], 
       /* bDetached */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ])
+  
+  val VerifyHash: (// tslint:disable-line ban-types
+  js.Promise[
+    Unpacked[
+      js.Function3[
+        /* hashedData */ CPHashedData, 
+        /* SignedMessage */ String, 
+        /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], 
+        Unit
+      ]
+    ]
+  ]) | (PromisifiedFunction[
+    js.Function3[
+      /* hashedData */ CPHashedData, 
+      /* SignedMessage */ String, 
+      /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], 
       Unit
     ]
   ])
@@ -156,6 +196,26 @@ object CadesSignedDataAsync {
         String
       ]
     ]),
+    SignHash: (// tslint:disable-line ban-types
+  js.Promise[
+      Unpacked[
+        js.Function4[
+          /* hashedData */ CPHashedData, 
+          /* signer */ CPSigner, 
+          /* CadesType */ ValuesOf[CADESCOM_CADES_TYPE], 
+          /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]], 
+          String
+        ]
+      ]
+    ]) | (PromisifiedFunction[
+      js.Function4[
+        /* hashedData */ CPHashedData, 
+        /* signer */ CPSigner, 
+        /* CadesType */ ValuesOf[CADESCOM_CADES_TYPE], 
+        /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]], 
+        String
+      ]
+    ]),
     VerifyCades: (// tslint:disable-line ban-types
   js.Promise[
       Unpacked[
@@ -174,11 +234,29 @@ object CadesSignedDataAsync {
         Unit
       ]
     ]),
+    VerifyHash: (// tslint:disable-line ban-types
+  js.Promise[
+      Unpacked[
+        js.Function3[
+          /* hashedData */ CPHashedData, 
+          /* SignedMessage */ String, 
+          /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], 
+          Unit
+        ]
+      ]
+    ]) | (PromisifiedFunction[
+      js.Function3[
+        /* hashedData */ CPHashedData, 
+        /* SignedMessage */ String, 
+        /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], 
+        Unit
+      ]
+    ]),
     propset_Content: String => js.Promise[Unit],
     propset_ContentEncoding: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE] => js.Promise[Unit],
     propset_DisplayData: ValuesOf[CADESCOM_DISPLAY_DATA] => js.Promise[Unit]
   ): CadesSignedDataAsync = {
-    val __obj = js.Dynamic.literal(Certificates = Certificates.asInstanceOf[js.Any], Content = Content.asInstanceOf[js.Any], ContentEncoding = ContentEncoding.asInstanceOf[js.Any], Display = Display.asInstanceOf[js.Any], DisplayData = DisplayData.asInstanceOf[js.Any], EnhanceCades = EnhanceCades.asInstanceOf[js.Any], SignCades = SignCades.asInstanceOf[js.Any], VerifyCades = VerifyCades.asInstanceOf[js.Any], propset_Content = js.Any.fromFunction1(propset_Content), propset_ContentEncoding = js.Any.fromFunction1(propset_ContentEncoding), propset_DisplayData = js.Any.fromFunction1(propset_DisplayData))
+    val __obj = js.Dynamic.literal(Certificates = Certificates.asInstanceOf[js.Any], Content = Content.asInstanceOf[js.Any], ContentEncoding = ContentEncoding.asInstanceOf[js.Any], Display = Display.asInstanceOf[js.Any], DisplayData = DisplayData.asInstanceOf[js.Any], EnhanceCades = EnhanceCades.asInstanceOf[js.Any], SignCades = SignCades.asInstanceOf[js.Any], SignHash = SignHash.asInstanceOf[js.Any], VerifyCades = VerifyCades.asInstanceOf[js.Any], VerifyHash = VerifyHash.asInstanceOf[js.Any], propset_Content = js.Any.fromFunction1(propset_Content), propset_ContentEncoding = js.Any.fromFunction1(propset_ContentEncoding), propset_DisplayData = js.Any.fromFunction1(propset_DisplayData))
     __obj.asInstanceOf[CadesSignedDataAsync]
   }
   
@@ -192,7 +270,7 @@ object CadesSignedDataAsync {
     inline def setCertificatesFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Certificates", js.Any.fromFunction1(value))
     
     inline def setContent(
@@ -208,13 +286,13 @@ object CadesSignedDataAsync {
     inline def setContentEncodingFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "ContentEncoding", js.Any.fromFunction1(value))
     
     inline def setContentFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Content", js.Any.fromFunction1(value))
     
     inline def setDisplay(
@@ -236,13 +314,13 @@ object CadesSignedDataAsync {
     inline def setDisplayDataFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "DisplayData", js.Any.fromFunction1(value))
     
     inline def setDisplayFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Display", js.Any.fromFunction1(value))
     
     inline def setDisplayFunction2(value: (/* hwndParent */ js.UndefOr[Double], /* title */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction2(value))
@@ -271,7 +349,7 @@ object CadesSignedDataAsync {
     inline def setEnhanceCadesFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "EnhanceCades", js.Any.fromFunction1(value))
     
     inline def setEnhanceCadesFunction3(
@@ -310,12 +388,45 @@ object CadesSignedDataAsync {
     inline def setSignCadesFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "SignCades", js.Any.fromFunction1(value))
     
     inline def setSignCadesFunction4(
       value: (/* signer */ js.UndefOr[CPSigner], /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], /* bDetached */ js.UndefOr[Boolean], /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]]) => String
     ): Self = StObject.set(x, "SignCades", js.Any.fromFunction4(value))
+    
+    inline def setSignHash(
+      value: (// tslint:disable-line ban-types
+    js.Promise[
+          Unpacked[
+            js.Function4[
+              /* hashedData */ CPHashedData, 
+              /* signer */ CPSigner, 
+              /* CadesType */ ValuesOf[CADESCOM_CADES_TYPE], 
+              /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]], 
+              String
+            ]
+          ]
+        ]) | (PromisifiedFunction[
+          js.Function4[
+            /* hashedData */ CPHashedData, 
+            /* signer */ CPSigner, 
+            /* CadesType */ ValuesOf[CADESCOM_CADES_TYPE], 
+            /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]], 
+            String
+          ]
+        ])
+    ): Self = StObject.set(x, "SignHash", value.asInstanceOf[js.Any])
+    
+    inline def setSignHashFunction1(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
+    ): Self = StObject.set(x, "SignHash", js.Any.fromFunction1(value))
+    
+    inline def setSignHashFunction4(
+      value: (/* hashedData */ CPHashedData, /* signer */ CPSigner, /* CadesType */ ValuesOf[CADESCOM_CADES_TYPE], /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]]) => String
+    ): Self = StObject.set(x, "SignHash", js.Any.fromFunction4(value))
     
     inline def setVerifyCades(
       value: (// tslint:disable-line ban-types
@@ -341,11 +452,42 @@ object CadesSignedDataAsync {
     inline def setVerifyCadesFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "VerifyCades", js.Any.fromFunction1(value))
     
     inline def setVerifyCadesFunction3(
       value: (/* SignedMessage */ String, /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], /* bDetached */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "VerifyCades", js.Any.fromFunction3(value))
+    
+    inline def setVerifyHash(
+      value: (// tslint:disable-line ban-types
+    js.Promise[
+          Unpacked[
+            js.Function3[
+              /* hashedData */ CPHashedData, 
+              /* SignedMessage */ String, 
+              /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], 
+              Unit
+            ]
+          ]
+        ]) | (PromisifiedFunction[
+          js.Function3[
+            /* hashedData */ CPHashedData, 
+            /* SignedMessage */ String, 
+            /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], 
+            Unit
+          ]
+        ])
+    ): Self = StObject.set(x, "VerifyHash", value.asInstanceOf[js.Any])
+    
+    inline def setVerifyHashFunction1(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
+    ): Self = StObject.set(x, "VerifyHash", js.Any.fromFunction1(value))
+    
+    inline def setVerifyHashFunction3(
+      value: (/* hashedData */ CPHashedData, /* SignedMessage */ String, /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]]) => Unit
+    ): Self = StObject.set(x, "VerifyHash", js.Any.fromFunction3(value))
   }
 }

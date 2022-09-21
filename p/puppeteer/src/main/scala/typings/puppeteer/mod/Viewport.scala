@@ -7,33 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Viewport extends StObject {
   
   /**
-    * Specify device scale factor (can be thought of as dpr).
-    * @default 1
+    * Specify device scale factor.
+    * See {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio | devicePixelRatio} for more info.
+    * @defaultValue 1
     */
   var deviceScaleFactor: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies if viewport supports touch events.
-    * @default false
+    * Specify if the viewport supports touch events.
+    * @defaultValue false
     */
   var hasTouch: js.UndefOr[Boolean] = js.undefined
   
-  /** The page height in pixels. */
+  /**
+    * The page height in pixels.
+    */
   var height: Double
   
   /**
-    * Specifies if viewport is in landscape mode.
-    * @default false
+    * Specifies if the viewport is in landscape mode.
+    * @defaultValue false
     */
   var isLandscape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the `meta viewport` tag is taken into account.
-    * @default false
+    * @defaultValue false
     */
   var isMobile: js.UndefOr[Boolean] = js.undefined
   
-  /** The page width in pixels. */
+  /**
+    * The page width in pixels.
+    */
   var width: Double
 }
 object Viewport {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogTax")
 @js.native
-class CatalogTax () extends StObject {
+open class CatalogTax () extends StObject {
   
   /**
     * If `true`, the fee applies to custom amounts entered into the Square Point of Sale app that are not associated

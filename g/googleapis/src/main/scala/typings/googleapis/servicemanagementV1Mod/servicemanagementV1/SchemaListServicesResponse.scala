@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for `ListServices` method.
-  */
 trait SchemaListServicesResponse extends StObject {
   
   /**
     * Token that can be passed to `ListServices` to resume a paginated query.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The returned services will only have the name field set.
@@ -30,12 +27,14 @@ object SchemaListServicesResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setServices(value: js.Array[SchemaManagedService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: SchemaManagedService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: SchemaManagedService*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

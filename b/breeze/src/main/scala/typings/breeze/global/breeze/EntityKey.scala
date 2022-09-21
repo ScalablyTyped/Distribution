@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.EntityKey")
 @js.native
-class EntityKey protected ()
+open class EntityKey protected ()
   extends StObject
      with typings.breeze.breeze.EntityKey {
-  def this(entityType: typings.breeze.breeze.EntityType, keyValue: js.Any) = this()
-  def this(entityType: typings.breeze.breeze.EntityType, keyValues: js.Array[js.Any]) = this()
+  def this(entityType: typings.breeze.breeze.EntityType, keyValue: Any) = this()
+  def this(entityType: typings.breeze.breeze.EntityType, keyValues: js.Array[Any]) = this()
   
   /* CompleteClass */
   var entityType: typings.breeze.breeze.EntityType = js.native
@@ -19,7 +19,7 @@ class EntityKey protected ()
   override def equals(entityKey: typings.breeze.breeze.EntityKey): Boolean = js.native
   
   /* CompleteClass */
-  var values: js.Array[js.Any] = js.native
+  var values: js.Array[Any] = js.native
 }
 /* static members */
 object EntityKey {

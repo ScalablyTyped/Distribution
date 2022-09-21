@@ -17,5 +17,5 @@ trait Operations extends StObject {
   def Item(Index: String): Operation = js.native
   def Item(Index: Double): Operation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

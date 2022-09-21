@@ -10,8 +10,8 @@ object ndjsonToMessageStreamMod {
   
   @JSImport("cucumber-messages/dist/src/NdjsonToMessageStream", JSImport.Default)
   @js.native
-  class default[T] protected () extends NdjsonToMessageStream[T] {
-    def this(fromObject: js.Function1[/* object */ js.Any, T]) = this()
+  open class default[T] protected () extends NdjsonToMessageStream[T] {
+    def this(fromObject: js.Function1[/* object */ Any, T]) = this()
   }
   
   @js.native
@@ -19,8 +19,8 @@ object ndjsonToMessageStreamMod {
     
     def _transform(chunk: String, encoding: String, callback: TransformCallback): Unit = js.native
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
-    /* private */ val fromObject: js.Any = js.native
+    /* private */ val fromObject: Any = js.native
   }
 }

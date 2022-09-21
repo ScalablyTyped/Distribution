@@ -2,7 +2,7 @@ package typings.antDesignIcons
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignIcons.iconMod.IconBaseProps
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +13,12 @@ object iconFontMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SFC[IconFontProps]]
-  inline def default(options: CustomIconOptions): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[SFC[IconFontProps]]
+  inline def default[T /* <: String */](): FC[IconFontProps[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[FC[IconFontProps[T]]]
+  inline def default[T /* <: String */](options: CustomIconOptions): FC[IconFontProps[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[FC[IconFontProps[T]]]
   
   trait CustomIconOptions extends StObject {
     
-    var extraCommonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var extraCommonProps: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var scriptUrl: js.UndefOr[String | js.Array[String]] = js.undefined
   }
@@ -31,7 +31,7 @@ object iconFontMod {
     
     extension [Self <: CustomIconOptions](x: Self) {
       
-      inline def setExtraCommonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "extraCommonProps", value.asInstanceOf[js.Any])
+      inline def setExtraCommonProps(value: StringDictionary[Any]): Self = StObject.set(x, "extraCommonProps", value.asInstanceOf[js.Any])
       
       inline def setExtraCommonPropsUndefined: Self = StObject.set(x, "extraCommonProps", js.undefined)
       
@@ -39,28 +39,28 @@ object iconFontMod {
       
       inline def setScriptUrlUndefined: Self = StObject.set(x, "scriptUrl", js.undefined)
       
-      inline def setScriptUrlVarargs(value: String*): Self = StObject.set(x, "scriptUrl", js.Array(value :_*))
+      inline def setScriptUrlVarargs(value: String*): Self = StObject.set(x, "scriptUrl", js.Array(value*))
     }
   }
   
-  trait IconFontProps
+  trait IconFontProps[T /* <: String */]
     extends StObject
        with IconBaseProps {
     
     @JSName("type")
-    var type_IconFontProps: String
+    var type_IconFontProps: T
   }
   object IconFontProps {
     
-    inline def apply(`type`: String): IconFontProps = {
+    inline def apply[T /* <: String */](`type`: T): IconFontProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IconFontProps]
+      __obj.asInstanceOf[IconFontProps[T]]
     }
     
-    extension [Self <: IconFontProps](x: Self) {
+    extension [Self <: IconFontProps[?], T /* <: String */](x: Self & IconFontProps[T]) {
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

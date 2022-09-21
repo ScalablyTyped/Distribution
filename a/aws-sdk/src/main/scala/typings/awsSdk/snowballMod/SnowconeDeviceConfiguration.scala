@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SnowconeDeviceConfiguration extends StObject {
   
   /**
-    * Configures the wireless connection for the AWS Snowcone device.
+    * Configures the wireless connection for the Snowcone device.
     */
   var WirelessConnection: js.UndefOr[typings.awsSdk.snowballMod.WirelessConnection] = js.undefined
 }

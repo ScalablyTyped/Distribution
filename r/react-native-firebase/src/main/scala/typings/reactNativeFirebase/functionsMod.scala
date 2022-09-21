@@ -10,7 +10,7 @@ object functionsMod {
   
   type FunctionsErrorCode = typings.reactNativeFirebase.mod.RNFirebase.functions.FunctionsErrorCode
   
-  type HttpsCallableResult = typings.reactNativeFirebase.mod.RNFirebase.functions.HttpsCallableResult[js.Any]
+  type HttpsCallableResult = typings.reactNativeFirebase.mod.RNFirebase.functions.HttpsCallableResult[Any]
   
   type HttpsError = typings.reactNativeFirebase.mod.RNFirebase.functions.HttpsError
   

@@ -22,7 +22,7 @@ object GoToProperties {
   
   extension [Self <: GoToProperties](x: Self) {
     
-    inline def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
+    inline def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ Any) => scala.Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
     
     inline def setGoToOverrideUndefined: Self = StObject.set(x, "goToOverride", js.undefined)
   }

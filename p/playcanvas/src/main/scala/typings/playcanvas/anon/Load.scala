@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Load extends StObject {
   
-  var load: js.UndefOr[String] = js.undefined
+  var load: String
   
-  var original: js.UndefOr[String] = js.undefined
+  var original: String
 }
 object Load {
   
-  inline def apply(): Load = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(load: String, original: String): Load = {
+    val __obj = js.Dynamic.literal(load = load.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any])
     __obj.asInstanceOf[Load]
   }
   
@@ -21,10 +21,6 @@ object Load {
     
     inline def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
-    
     inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
-    
-    inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
   }
 }

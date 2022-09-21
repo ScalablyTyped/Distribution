@@ -11,9 +11,9 @@ NodeJS binding for fast XML parsing.
 | Full name          | node-expat |
 | Keywords           | xml, sax, expat, libexpat, parse, parsing |
 | # releases         | 2 |
-| # dependents       | 120 |
-| # downloads        | 3916865 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 525539.6666666666 |
+| # stars            | 371.0 |
 
 ## Links
 - [Homepage](http://github.com/astro/node-expat)

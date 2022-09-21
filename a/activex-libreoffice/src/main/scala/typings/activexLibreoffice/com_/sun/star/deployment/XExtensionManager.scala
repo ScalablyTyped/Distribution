@@ -93,7 +93,7 @@ trait XExtensionManager
     * @param identifier extension identifier
     * @param fileName extension file name
     * @param xCmdEnv command environment for error and progress handling
-    * @returns {@link XPackage} object
+    * @returns object
     */
   def getDeployedExtension(repository: String, identifier: String, fileName: String, xCmdEnv: XCommandEnvironment): XPackage
   
@@ -194,7 +194,7 @@ object XExtensionManager {
     getExtensionsWithUnacceptedLicenses: (String, XCommandEnvironment) => SafeArray[XPackage],
     getSupportedPackageTypes: () => SafeArray[XPackageTypeInfo],
     isReadOnlyRepository: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     reinstallDeployedExtensions: (Boolean, String, XAbortChannel, XCommandEnvironment) => Unit,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

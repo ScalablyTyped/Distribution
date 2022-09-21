@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Organization extends StObject {
   
+  /** The person's cost center at the organization. */
+  var costCenter: js.UndefOr[String] = js.undefined
+  
   /** True if the organization is the person's current organization; false if the organization is a past organization. */
   var current: js.UndefOr[Boolean] = js.undefined
   
@@ -20,6 +23,9 @@ trait Organization extends StObject {
   
   /** Output only. The type of the organization translated and formatted in the viewer's account locale or the `Accept-Language` HTTP header locale. */
   var formattedType: js.UndefOr[String] = js.undefined
+  
+  /** The person's full-time equivalent millipercent within the organization (100000 = 100%). */
+  var fullTimeEquivalentMillipercent: js.UndefOr[Double] = js.undefined
   
   /** The person's job description at the organization. */
   var jobDescription: js.UndefOr[String] = js.undefined
@@ -57,6 +63,10 @@ object Organization {
   
   extension [Self <: Organization](x: Self) {
     
+    inline def setCostCenter(value: String): Self = StObject.set(x, "costCenter", value.asInstanceOf[js.Any])
+    
+    inline def setCostCenterUndefined: Self = StObject.set(x, "costCenter", js.undefined)
+    
     inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
@@ -76,6 +86,10 @@ object Organization {
     inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
     
     inline def setFormattedTypeUndefined: Self = StObject.set(x, "formattedType", js.undefined)
+    
+    inline def setFullTimeEquivalentMillipercent(value: Double): Self = StObject.set(x, "fullTimeEquivalentMillipercent", value.asInstanceOf[js.Any])
+    
+    inline def setFullTimeEquivalentMillipercentUndefined: Self = StObject.set(x, "fullTimeEquivalentMillipercent", js.undefined)
     
     inline def setJobDescription(value: String): Self = StObject.set(x, "jobDescription", value.asInstanceOf[js.Any])
     

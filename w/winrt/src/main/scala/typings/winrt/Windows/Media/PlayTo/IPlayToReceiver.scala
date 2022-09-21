@@ -34,23 +34,23 @@ trait IPlayToReceiver extends StObject {
   
   def notifyVolumeChange(volume: Double, mute: Boolean): Unit
   
-  var oncurrenttimechangerequested: js.Any
+  var oncurrenttimechangerequested: Any
   
-  var onmutechangerequested: js.Any
+  var onmutechangerequested: Any
   
-  var onpauserequested: js.Any
+  var onpauserequested: Any
   
-  var onplaybackratechangerequested: js.Any
+  var onplaybackratechangerequested: Any
   
-  var onplayrequested: js.Any
+  var onplayrequested: Any
   
-  var onsourcechangerequested: js.Any
+  var onsourcechangerequested: Any
   
-  var onstoprequested: js.Any
+  var onstoprequested: Any
   
-  var ontimeupdaterequested: js.Any
+  var ontimeupdaterequested: Any
   
-  var onvolumechangerequested: js.Any
+  var onvolumechangerequested: Any
   
   var properties: IPropertySet
   
@@ -80,15 +80,15 @@ object IPlayToReceiver {
     notifyStopped: () => Unit,
     notifyTimeUpdate: Double => Unit,
     notifyVolumeChange: (Double, Boolean) => Unit,
-    oncurrenttimechangerequested: js.Any,
-    onmutechangerequested: js.Any,
-    onpauserequested: js.Any,
-    onplaybackratechangerequested: js.Any,
-    onplayrequested: js.Any,
-    onsourcechangerequested: js.Any,
-    onstoprequested: js.Any,
-    ontimeupdaterequested: js.Any,
-    onvolumechangerequested: js.Any,
+    oncurrenttimechangerequested: Any,
+    onmutechangerequested: Any,
+    onpauserequested: Any,
+    onplaybackratechangerequested: Any,
+    onplayrequested: Any,
+    onsourcechangerequested: Any,
+    onstoprequested: Any,
+    ontimeupdaterequested: Any,
+    onvolumechangerequested: Any,
     properties: IPropertySet,
     startAsync: () => IAsyncAction,
     stopAsync: () => IAsyncAction,
@@ -128,23 +128,23 @@ object IPlayToReceiver {
     
     inline def setNotifyVolumeChange(value: (Double, Boolean) => Unit): Self = StObject.set(x, "notifyVolumeChange", js.Any.fromFunction2(value))
     
-    inline def setOncurrenttimechangerequested(value: js.Any): Self = StObject.set(x, "oncurrenttimechangerequested", value.asInstanceOf[js.Any])
+    inline def setOncurrenttimechangerequested(value: Any): Self = StObject.set(x, "oncurrenttimechangerequested", value.asInstanceOf[js.Any])
     
-    inline def setOnmutechangerequested(value: js.Any): Self = StObject.set(x, "onmutechangerequested", value.asInstanceOf[js.Any])
+    inline def setOnmutechangerequested(value: Any): Self = StObject.set(x, "onmutechangerequested", value.asInstanceOf[js.Any])
     
-    inline def setOnpauserequested(value: js.Any): Self = StObject.set(x, "onpauserequested", value.asInstanceOf[js.Any])
+    inline def setOnpauserequested(value: Any): Self = StObject.set(x, "onpauserequested", value.asInstanceOf[js.Any])
     
-    inline def setOnplaybackratechangerequested(value: js.Any): Self = StObject.set(x, "onplaybackratechangerequested", value.asInstanceOf[js.Any])
+    inline def setOnplaybackratechangerequested(value: Any): Self = StObject.set(x, "onplaybackratechangerequested", value.asInstanceOf[js.Any])
     
-    inline def setOnplayrequested(value: js.Any): Self = StObject.set(x, "onplayrequested", value.asInstanceOf[js.Any])
+    inline def setOnplayrequested(value: Any): Self = StObject.set(x, "onplayrequested", value.asInstanceOf[js.Any])
     
-    inline def setOnsourcechangerequested(value: js.Any): Self = StObject.set(x, "onsourcechangerequested", value.asInstanceOf[js.Any])
+    inline def setOnsourcechangerequested(value: Any): Self = StObject.set(x, "onsourcechangerequested", value.asInstanceOf[js.Any])
     
-    inline def setOnstoprequested(value: js.Any): Self = StObject.set(x, "onstoprequested", value.asInstanceOf[js.Any])
+    inline def setOnstoprequested(value: Any): Self = StObject.set(x, "onstoprequested", value.asInstanceOf[js.Any])
     
-    inline def setOntimeupdaterequested(value: js.Any): Self = StObject.set(x, "ontimeupdaterequested", value.asInstanceOf[js.Any])
+    inline def setOntimeupdaterequested(value: Any): Self = StObject.set(x, "ontimeupdaterequested", value.asInstanceOf[js.Any])
     
-    inline def setOnvolumechangerequested(value: js.Any): Self = StObject.set(x, "onvolumechangerequested", value.asInstanceOf[js.Any])
+    inline def setOnvolumechangerequested(value: Any): Self = StObject.set(x, "onvolumechangerequested", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

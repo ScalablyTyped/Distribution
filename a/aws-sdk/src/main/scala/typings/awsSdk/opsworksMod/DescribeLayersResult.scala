@@ -24,6 +24,6 @@ object DescribeLayersResult {
     
     inline def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
     
-    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "Layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "Layers", js.Array(value*))
   }
 }

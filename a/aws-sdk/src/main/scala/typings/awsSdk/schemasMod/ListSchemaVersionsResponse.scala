@@ -33,6 +33,6 @@ object ListSchemaVersionsResponse {
     
     inline def setSchemaVersionsUndefined: Self = StObject.set(x, "SchemaVersions", js.undefined)
     
-    inline def setSchemaVersionsVarargs(value: SchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value :_*))
+    inline def setSchemaVersionsVarargs(value: SchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ trait ContentControl extends StObject {
   
   var DateStorageFormat: WdContentControlDateStorageFormat = js.native
   
-  var DefaultTextStyle: js.Any = js.native
+  var DefaultTextStyle: Any = js.native
   
   /** @param boolean [DeleteContents=false] */
   def Delete(): Unit = js.native
@@ -45,7 +45,7 @@ trait ContentControl extends StObject {
   
   var MultiLine: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentContentControl: ContentControl = js.native
   

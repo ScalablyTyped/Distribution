@@ -10,10 +10,10 @@ The lodash method `_.matchesProperty` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.matchesproperty |
 | Keywords           | lodash-modularized, matchesproperty |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 121991 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10893.333333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

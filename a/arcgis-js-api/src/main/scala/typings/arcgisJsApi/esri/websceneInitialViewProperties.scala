@@ -28,6 +28,8 @@ trait websceneInitialViewProperties
   /**
     * The viewing mode of the scene.
     *
+    * @default global
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#viewingMode)
     */
   var viewingMode: global | local = js.native

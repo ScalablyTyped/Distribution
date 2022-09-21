@@ -18,7 +18,7 @@ object layout {
       */
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
   }
   object IAbstract {
@@ -30,7 +30,7 @@ object layout {
     
     extension [Self <: IAbstract](x: Self) {
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     }
@@ -63,9 +63,7 @@ object layout {
       * @param isInner Object
       */
     @JSName("onItemInnerStateChange")
-    var onItemInnerStateChange_IBox: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var onItemInnerStateChange_IBox: js.UndefOr[js.Function2[/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
     var pack: js.UndefOr[java.lang.String] = js.undefined
@@ -110,7 +108,7 @@ object layout {
       
       inline def setGetPackUndefined: Self = StObject.set(x, "getPack", js.undefined)
       
-      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
+      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
       
       inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
       
@@ -144,9 +142,9 @@ object layout {
     @JSName("onItemInnerStateChange")
     var onItemInnerStateChange_ICard: js.UndefOr[
         js.Function3[
-          /* item */ js.UndefOr[js.Any], 
-          /* isInner */ js.UndefOr[js.Any], 
-          /* destroying */ js.UndefOr[js.Any], 
+          /* item */ js.UndefOr[Any], 
+          /* isInner */ js.UndefOr[Any], 
+          /* destroying */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -161,7 +159,7 @@ object layout {
     extension [Self <: ICard](x: Self) {
       
       inline def setOnItemInnerStateChange(
-        value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], /* destroying */ js.UndefOr[js.Any]) => Unit
+        value: (/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any], /* destroying */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction3(value))
       
       inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
@@ -239,9 +237,7 @@ object layout {
       * @param isInner Object
       */
     @JSName("onItemInnerStateChange")
-    var onItemInnerStateChange_IFit: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var onItemInnerStateChange_IFit: js.UndefOr[js.Function2[/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IFit {
     
@@ -252,7 +248,7 @@ object layout {
     
     extension [Self <: IFit](x: Self) {
       
-      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
+      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
       
       inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
     }
@@ -299,9 +295,7 @@ object layout {
       * @param isInner Object
       */
     @JSName("onItemInnerStateChange")
-    var onItemInnerStateChange_IFloat: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var onItemInnerStateChange_IFloat: js.UndefOr[js.Function2[/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of direction
       * @param direction String The new value.
@@ -321,7 +315,7 @@ object layout {
       
       inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
       
-      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
+      inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
       
       inline def setOnItemInnerStateChangeUndefined: Self = StObject.set(x, "onItemInnerStateChange", js.undefined)
       
@@ -353,12 +347,12 @@ object layout {
       /** [Method] Returns the value of bodyElement
         * @returns Object
         */
-      var getBodyElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getBodyElement: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of container
         * @returns Object
         */
-      var getContainer: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getContainer: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of direction
         * @returns String
@@ -368,12 +362,12 @@ object layout {
       /** [Method] Returns the value of element
         * @returns Object
         */
-      var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getElement: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of innerWrapper
         * @returns Object
         */
-      var getInnerWrapper: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getInnerWrapper: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of sizeState
         * @returns Boolean
@@ -383,12 +377,12 @@ object layout {
       /** [Method] Sets the value of bodyElement
         * @param bodyElement Object The new value.
         */
-      var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of container
         * @param container Object The new value.
         */
-      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of direction
         * @param direction String The new value.
@@ -398,12 +392,12 @@ object layout {
       /** [Method] Sets the value of element
         * @param element Object The new value.
         */
-      var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of innerWrapper
         * @param innerWrapper Object The new value.
         */
-      var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of sizeState
         * @param sizeState Boolean The new value.
@@ -419,11 +413,11 @@ object layout {
       
       extension [Self <: IBoxDock](x: Self) {
         
-        inline def setGetBodyElement(value: () => js.Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
+        inline def setGetBodyElement(value: () => Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
         
         inline def setGetBodyElementUndefined: Self = StObject.set(x, "getBodyElement", js.undefined)
         
-        inline def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        inline def setGetContainer(value: () => Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
         inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
         
@@ -431,11 +425,11 @@ object layout {
         
         inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
-        inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+        inline def setGetElement(value: () => Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
         
         inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
         
-        inline def setGetInnerWrapper(value: () => js.Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
+        inline def setGetInnerWrapper(value: () => Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
         
         inline def setGetInnerWrapperUndefined: Self = StObject.set(x, "getInnerWrapper", js.undefined)
         
@@ -443,11 +437,11 @@ object layout {
         
         inline def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
         
-        inline def setSetBodyElement(value: /* bodyElement */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBodyElement", js.Any.fromFunction1(value))
+        inline def setSetBodyElement(value: /* bodyElement */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBodyElement", js.Any.fromFunction1(value))
         
         inline def setSetBodyElementUndefined: Self = StObject.set(x, "setBodyElement", js.undefined)
         
-        inline def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
+        inline def setSetContainer(value: /* container */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
         
         inline def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
         
@@ -455,11 +449,11 @@ object layout {
         
         inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
         
-        inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+        inline def setSetElement(value: /* element */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
         
         inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
         
-        inline def setSetInnerWrapper(value: /* innerWrapper */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerWrapper", js.Any.fromFunction1(value))
+        inline def setSetInnerWrapper(value: /* innerWrapper */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInnerWrapper", js.Any.fromFunction1(value))
         
         inline def setSetInnerWrapperUndefined: Self = StObject.set(x, "setInnerWrapper", js.undefined)
         
@@ -476,12 +470,12 @@ object layout {
       /** [Method] Returns the value of bodyElement
         * @returns Object
         */
-      var getBodyElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getBodyElement: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of container
         * @returns Object
         */
-      var getContainer: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getContainer: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of direction
         * @returns String
@@ -491,12 +485,12 @@ object layout {
       /** [Method] Returns the value of element
         * @returns Object
         */
-      var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getElement: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of innerWrapper
         * @returns Object
         */
-      var getInnerWrapper: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getInnerWrapper: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of sizeState
         * @returns Boolean
@@ -506,12 +500,12 @@ object layout {
       /** [Method] Sets the value of bodyElement
         * @param bodyElement Object The new value.
         */
-      var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of container
         * @param container Object The new value.
         */
-      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of direction
         * @param direction String The new value.
@@ -521,12 +515,12 @@ object layout {
       /** [Method] Sets the value of element
         * @param element Object The new value.
         */
-      var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of innerWrapper
         * @param innerWrapper Object The new value.
         */
-      var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of sizeState
         * @param sizeState Boolean The new value.
@@ -542,11 +536,11 @@ object layout {
       
       extension [Self <: IDock](x: Self) {
         
-        inline def setGetBodyElement(value: () => js.Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
+        inline def setGetBodyElement(value: () => Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
         
         inline def setGetBodyElementUndefined: Self = StObject.set(x, "getBodyElement", js.undefined)
         
-        inline def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        inline def setGetContainer(value: () => Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
         inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
         
@@ -554,11 +548,11 @@ object layout {
         
         inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
-        inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+        inline def setGetElement(value: () => Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
         
         inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
         
-        inline def setGetInnerWrapper(value: () => js.Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
+        inline def setGetInnerWrapper(value: () => Any): Self = StObject.set(x, "getInnerWrapper", js.Any.fromFunction0(value))
         
         inline def setGetInnerWrapperUndefined: Self = StObject.set(x, "getInnerWrapper", js.undefined)
         
@@ -566,11 +560,11 @@ object layout {
         
         inline def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
         
-        inline def setSetBodyElement(value: /* bodyElement */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBodyElement", js.Any.fromFunction1(value))
+        inline def setSetBodyElement(value: /* bodyElement */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBodyElement", js.Any.fromFunction1(value))
         
         inline def setSetBodyElementUndefined: Self = StObject.set(x, "setBodyElement", js.undefined)
         
-        inline def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
+        inline def setSetContainer(value: /* container */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
         
         inline def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
         
@@ -578,11 +572,11 @@ object layout {
         
         inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
         
-        inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+        inline def setSetElement(value: /* element */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
         
         inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
         
-        inline def setSetInnerWrapper(value: /* innerWrapper */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerWrapper", js.Any.fromFunction1(value))
+        inline def setSetInnerWrapper(value: /* innerWrapper */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInnerWrapper", js.Any.fromFunction1(value))
         
         inline def setSetInnerWrapperUndefined: Self = StObject.set(x, "setInnerWrapper", js.undefined)
         
@@ -599,22 +593,22 @@ object layout {
       /** [Method] Returns the value of container
         * @returns Object
         */
-      var getContainer: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getContainer: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of sizeState
         * @returns Object
         */
-      var getSizeState: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getSizeState: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of container
         * @param container Object The new value.
         */
-      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of sizeState
         * @param sizeState Object The new value.
         */
-      var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[Any], Unit]] = js.undefined
     }
     object IInner {
       
@@ -625,19 +619,19 @@ object layout {
       
       extension [Self <: IInner](x: Self) {
         
-        inline def setGetContainer(value: () => js.Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+        inline def setGetContainer(value: () => Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         
         inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
         
-        inline def setGetSizeState(value: () => js.Any): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
+        inline def setGetSizeState(value: () => Any): Self = StObject.set(x, "getSizeState", js.Any.fromFunction0(value))
         
         inline def setGetSizeStateUndefined: Self = StObject.set(x, "getSizeState", js.undefined)
         
-        inline def setSetContainer(value: /* container */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
+        inline def setSetContainer(value: /* container */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
         
         inline def setSetContainerUndefined: Self = StObject.set(x, "setContainer", js.undefined)
         
-        inline def setSetSizeState(value: /* sizeState */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSizeState", js.Any.fromFunction1(value))
+        inline def setSetSizeState(value: /* sizeState */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSizeState", js.Any.fromFunction1(value))
         
         inline def setSetSizeStateUndefined: Self = StObject.set(x, "setSizeState", js.undefined)
       }

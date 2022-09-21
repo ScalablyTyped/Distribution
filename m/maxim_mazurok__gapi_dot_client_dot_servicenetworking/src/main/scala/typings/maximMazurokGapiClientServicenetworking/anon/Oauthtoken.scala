@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServicenetworking.anon
 
-import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.AddDnsRecordSetRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,17 +22,21 @@ trait Oauthtoken extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /** If a previously defined allocated range is removed, force flag must be set to true. */
+  var force: js.UndefOr[Boolean] = js.undefined
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /**
+    * The private service connection that connects to a service producer organization. The name includes both the private service name and the VPC network peering name in the format
+    * of `services/{peering_service_name}/connections/{vpc_peering_name}`. For Google services that support this functionality, this is
+    * `services/servicenetworking.googleapis.com/connections/servicenetworking-googleapis-com`.
+    */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Required. The service that is managing peering connectivity for a service producer's organization. For Google services that support this functionality, this value is
-    * `services/servicenetworking.googleapis.com`.
-    */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -41,8 +44,8 @@ trait Oauthtoken extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: AddDnsRecordSetRequest
+  /** The update mask. If this is omitted, it defaults to "*". You can only update the listed peering ranges. */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +55,8 @@ trait Oauthtoken extends StObject {
 }
 object Oauthtoken {
   
-  inline def apply(parent: String, resource: AddDnsRecordSetRequest): Oauthtoken = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(name: String): Oauthtoken = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Oauthtoken]
   }
   
@@ -79,15 +82,19 @@ object Oauthtoken {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -97,7 +104,9 @@ object Oauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AddDnsRecordSetRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

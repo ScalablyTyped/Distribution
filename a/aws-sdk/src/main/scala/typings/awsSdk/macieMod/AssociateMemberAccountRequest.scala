@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateMemberAccountRequest extends StObject {
   
   /**
-    * The ID of the AWS account that you want to associate with Amazon Macie Classic as a member account.
+    * (Discontinued) The ID of the Amazon Web Services account that you want to associate with Amazon Macie Classic as a member account.
     */
   var memberAccountId: AWSAccountId
 }

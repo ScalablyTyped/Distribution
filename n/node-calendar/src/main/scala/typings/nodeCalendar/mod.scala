@@ -1,6 +1,5 @@
 package typings.nodeCalendar
 
-import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,7 +35,7 @@ object mod {
     *  Numerical day of the week the calendar weeks should start.
     *  (0=MON, 1=TUE, ...) Default: 0
     */
-  class Calendar () extends StObject {
+  open class Calendar () extends StObject {
     def this(firstweekday: Double) = this()
     
     /**
@@ -58,7 +57,7 @@ object mod {
       * @param {number} month
       *  Month for which the calendar should be generated.
       */
-    def itermonthdates(year: Double, month: Double): js.Array[Date] = js.native
+    def itermonthdates(year: Double, month: Double): js.Array[js.Date] = js.native
     
     /**
       * Like itermonthdates(), but will yield day numbers. For days outside
@@ -99,7 +98,7 @@ object mod {
       * @param {number} month
       *  Month for which the calendar should be generated.
       */
-    def monthdatescalendar(year: Double, month: Double): IMonthGrid[Date] = js.native
+    def monthdatescalendar(year: Double, month: Double): IMonthGrid[js.Date] = js.native
     
     /**
       * Return a matrix representing a month's calendar. Each row represents
@@ -148,8 +147,8 @@ object mod {
       * @param {number} width
       *  The number of months to include in each row. Default: 3
       */
-    def yeardatescalendar(year: Double): IYearGrid[Date] = js.native
-    def yeardatescalendar(year: Double, width: Double): IYearGrid[Date] = js.native
+    def yeardatescalendar(year: Double): IYearGrid[js.Date] = js.native
+    def yeardatescalendar(year: Double, width: Double): IYearGrid[js.Date] = js.native
     
     /**
       * The specified year ready for formatting (similar to yeardatescalendar()).
@@ -201,14 +200,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalDayError ()
+  open class IllegalDayError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -219,14 +220,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalLocaleError ()
+  open class IllegalLocaleError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -237,14 +240,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalMonthError ()
+  open class IllegalMonthError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -255,14 +260,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalTimeError ()
+  open class IllegalTimeError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -273,14 +280,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalWeekdayError ()
+  open class IllegalWeekdayError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

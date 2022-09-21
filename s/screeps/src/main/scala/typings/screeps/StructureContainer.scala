@@ -12,7 +12,7 @@ trait StructureContainer
      with Structure[STRUCTURE_CONTAINER]
      with AnyStoreStructure
      with AnyStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * An object with the structure contents. Each object key is one of the RESOURCE_* constants, values are resources

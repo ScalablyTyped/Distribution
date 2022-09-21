@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LateBoundPropertyNames extends StObject {
   
+  /** Whether all constituents are literal names. */
   var known: Boolean
   
   var names: js.Array[PropertyName]
@@ -23,6 +24,6 @@ object LateBoundPropertyNames {
     
     inline def setNames(value: js.Array[PropertyName]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: PropertyName*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: PropertyName*): Self = StObject.set(x, "names", js.Array(value*))
   }
 }

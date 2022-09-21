@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "Projection")
 @js.native
-class Projection protected ()
+open class Projection protected ()
   extends typings.webcola.rectangleMod.Projection {
   def this(nodes: js.Array[GraphNode], groups: js.Array[ProjectionGroup]) = this()
   def this(nodes: js.Array[GraphNode], groups: js.Array[ProjectionGroup], rootGroup: ProjectionGroup) = this()
@@ -16,19 +16,19 @@ class Projection protected ()
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
     rootGroup: Unit,
-    constraints: js.Array[js.Any]
+    constraints: js.Array[Any]
   ) = this()
   def this(
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
     rootGroup: ProjectionGroup,
-    constraints: js.Array[js.Any]
+    constraints: js.Array[Any]
   ) = this()
   def this(
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
     rootGroup: Unit,
-    constraints: js.Array[js.Any],
+    constraints: js.Array[Any],
     avoidOverlaps: Boolean
   ) = this()
   def this(
@@ -42,7 +42,7 @@ class Projection protected ()
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
     rootGroup: ProjectionGroup,
-    constraints: js.Array[js.Any],
+    constraints: js.Array[Any],
     avoidOverlaps: Boolean
   ) = this()
   def this(

@@ -89,7 +89,7 @@ trait PartialAnnotations extends StObject {
   
   var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
   
-  var xclick: js.UndefOr[js.Any] = js.undefined
+  var xclick: js.UndefOr[Any] = js.undefined
   
   var xref: js.UndefOr[paper | XAxisName] = js.undefined
   
@@ -99,7 +99,7 @@ trait PartialAnnotations extends StObject {
   
   var yanchor: js.UndefOr[auto | top | middle | bottom] = js.undefined
   
-  var yclick: js.UndefOr[js.Any] = js.undefined
+  var yclick: js.UndefOr[Any] = js.undefined
   
   var yref: js.UndefOr[paper | YAxisName] = js.undefined
   
@@ -246,7 +246,7 @@ object PartialAnnotations {
     
     inline def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
     
-    inline def setXclick(value: js.Any): Self = StObject.set(x, "xclick", value.asInstanceOf[js.Any])
+    inline def setXclick(value: Any): Self = StObject.set(x, "xclick", value.asInstanceOf[js.Any])
     
     inline def setXclickUndefined: Self = StObject.set(x, "xclick", js.undefined)
     
@@ -266,7 +266,7 @@ object PartialAnnotations {
     
     inline def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
     
-    inline def setYclick(value: js.Any): Self = StObject.set(x, "yclick", value.asInstanceOf[js.Any])
+    inline def setYclick(value: Any): Self = StObject.set(x, "yclick", value.asInstanceOf[js.Any])
     
     inline def setYclickUndefined: Self = StObject.set(x, "yclick", js.undefined)
     

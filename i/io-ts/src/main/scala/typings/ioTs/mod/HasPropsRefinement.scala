@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait HasPropsRefinement
-  extends RefinementType[HasProps, js.Any, js.Any, js.Any]
+  extends RefinementType[HasProps, Any, Any, Any]
      with _HasProps

@@ -29,7 +29,7 @@ object Condition {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: SimpleCondition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: SimpleCondition*): Self = StObject.set(x, "Conditions", js.Array(value*))
     
     inline def setOperator(value: Operator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     

@@ -2,13 +2,13 @@ package typings.electronPublish
 
 import typings.builderUtil.archMod.Arch
 import typings.builderUtilRuntime.mod.CancellationToken
+import typings.builderUtilRuntime.publishOptionsMod.PublishProvider
 import typings.electronPublish.multiProgressMod.MultiProgress
 import typings.electronPublish.progressMod.ProgressBar
 import typings.fsExtra.mod.Stats
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.ClientRequest
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,28 +31,18 @@ object mod {
       dataLength: Double,
       requestProcessor: js.Function2[
           /* request */ ClientRequest, 
-          /* reject */ js.Function1[/* error */ Error, Unit], 
-          Unit
-        ]
-    ): js.Promise[js.Any] = js.native
-    /* protected */ def doUpload(
-      fileName: String,
-      arch: Arch,
-      dataLength: Double,
-      requestProcessor: js.Function2[
-          /* request */ ClientRequest, 
-          /* reject */ js.Function1[/* error */ Error, Unit], 
+          /* reject */ js.Function1[/* error */ js.Error, Unit], 
           Unit
         ],
       file: String
-    ): js.Promise[js.Any] = js.native
+    ): js.Promise[Any] = js.native
     
-    /* private */ val useSafeArtifactName: js.Any = js.native
+    /* private */ val useSafeArtifactName: Any = js.native
   }
   
   @JSImport("electron-publish", "ProgressCallback")
   @js.native
-  class ProgressCallback protected ()
+  open class ProgressCallback protected ()
     extends typings.electronPublish.progressMod.ProgressCallback {
     def this(progressBar: ProgressBar) = this()
   }
@@ -66,17 +56,17 @@ object mod {
     
     /* protected */ def createProgressBar(fileName: String, size: Double): ProgressBar | Null = js.native
     
-    /* protected */ def createReadStreamAndProgressBar(file: String, fileStat: Stats, progressBar: Null, reject: js.Function1[/* error */ Error, Unit]): ReadableStream = js.native
+    /* protected */ def createReadStreamAndProgressBar(file: String, fileStat: Stats, progressBar: Null, reject: js.Function1[/* error */ js.Error, Unit]): ReadableStream[Any] = js.native
     /* protected */ def createReadStreamAndProgressBar(
       file: String,
       fileStat: Stats,
       progressBar: ProgressBar,
-      reject: js.Function1[/* error */ Error, Unit]
-    ): ReadableStream = js.native
+      reject: js.Function1[/* error */ js.Error, Unit]
+    ): ReadableStream[Any] = js.native
     
-    def providerName: String = js.native
+    def providerName: PublishProvider = js.native
     
-    def upload(task: UploadTask): js.Promise[js.Any] = js.native
+    def upload(task: UploadTask): js.Promise[Any] = js.native
   }
   
   inline def getCiTag(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCiTag")().asInstanceOf[String | Null]
@@ -152,6 +142,8 @@ object mod {
     var fileContent: js.UndefOr[Buffer | Null] = js.undefined
     
     var safeArtifactName: js.UndefOr[String | Null] = js.undefined
+    
+    var timeout: js.UndefOr[Double | Null] = js.undefined
   }
   object UploadTask {
     
@@ -179,6 +171,12 @@ object mod {
       inline def setSafeArtifactNameNull: Self = StObject.set(x, "safeArtifactName", null)
       
       inline def setSafeArtifactNameUndefined: Self = StObject.set(x, "safeArtifactName", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutNull: Self = StObject.set(x, "timeout", null)
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

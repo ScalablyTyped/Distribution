@@ -22,6 +22,6 @@ object ExtensionDataCollectionQuery {
     
     inline def setCollections(value: js.Array[ExtensionDataCollection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    inline def setCollectionsVarargs(value: ExtensionDataCollection*): Self = StObject.set(x, "collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: ExtensionDataCollection*): Self = StObject.set(x, "collections", js.Array(value*))
   }
 }

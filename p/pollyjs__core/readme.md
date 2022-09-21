@@ -10,15 +10,12 @@ Record, replay, and stub HTTP Interactions
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/core |
 | Keywords           | polly, pollyjs, vcr, record, replay, recorder, test, mock |
-| # releases         | 21 |
-| # dependents       | 15 |
-| # downloads        | 1339965 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 334032.3333333333 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fcore)
     
 

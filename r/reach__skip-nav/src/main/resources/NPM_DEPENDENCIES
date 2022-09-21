@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@reach/skip-nav" : "0.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@reach/skip-nav" : "0.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

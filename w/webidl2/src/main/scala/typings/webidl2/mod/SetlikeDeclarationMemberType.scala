@@ -16,7 +16,7 @@ trait SetlikeDeclarationMemberType
 object SetlikeDeclarationMemberType {
   
   inline def apply(
-    arguments: js.Array[js.Any],
+    arguments: js.Array[Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     parent: InterfaceMixinType | InterfaceType,

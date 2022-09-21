@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MarkerOptions extends StObject {
   
-  var location: js.UndefOr[js.Any | Location] = js.undefined
+  var location: js.UndefOr[Any | Location] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -25,7 +25,7 @@ object MarkerOptions {
   
   extension [Self <: MarkerOptions](x: Self) {
     
-    inline def setLocation(value: js.Any | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Any | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     

@@ -10,10 +10,10 @@ A Javascript utility library for working with native objects.
 | ------------------ | :-------------: |
 | Full name          | sugar |
 | Keywords           | sugar, sugarjs, functional, browser, utility, util, date, time, polyfill |
-| # releases         | 3 |
-| # dependents       | 290 |
-| # downloads        | 933890 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 85671.66666666667 |
+| # stars            | 4472.0 |
 
 ## Links
 - [Homepage](https://sugarjs.com/)

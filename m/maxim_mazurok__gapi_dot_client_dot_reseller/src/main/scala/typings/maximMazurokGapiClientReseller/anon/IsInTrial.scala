@@ -6,11 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IsInTrial extends StObject {
   
-  /**
-    * Determines if a subscription's plan is in a 30-day free trial or not:
-    * - true — The plan is in trial.
-    * - false — The plan is not in trial.
-    */
+  /** Determines if a subscription's plan is in a 30-day free trial or not: - `true` — The plan is in trial. - `false` — The plan is not in trial. */
   var isInTrial: js.UndefOr[Boolean] = js.undefined
   
   /** Date when the trial ends. The value is in milliseconds using the UNIX Epoch format. See an example Epoch converter. */

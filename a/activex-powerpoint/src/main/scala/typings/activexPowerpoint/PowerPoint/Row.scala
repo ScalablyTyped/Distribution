@@ -14,7 +14,7 @@ trait Row extends StObject {
   
   var Height: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Row_typekey")
   var PowerPointDotRow_typekey: Row
@@ -28,7 +28,7 @@ object Row {
     Cells: CellRange,
     Delete: () => Unit,
     Height: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotRow_typekey: Row,
     Select: () => Unit
   ): Row = {
@@ -47,7 +47,7 @@ object Row {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotRow_typekey(value: Row): Self = StObject.set(x, "PowerPoint.Row_typekey", value.asInstanceOf[js.Any])
     

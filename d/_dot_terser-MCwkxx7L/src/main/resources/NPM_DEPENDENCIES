@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".terser-MCwkxx7L" : "4.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".terser-MCwkxx7L" : "4.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

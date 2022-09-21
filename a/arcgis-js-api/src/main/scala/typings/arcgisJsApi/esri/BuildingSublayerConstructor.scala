@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BuildingSublayerConstructor
   extends StObject
-     with Instantiable0[BuildingSublayer]
+     with /**
+  * BuildingSublayer is the base class for sublayers of a BuildingSceneLayer.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingSublayer.html)
+  */
+Instantiable0[BuildingSublayer]
      with Instantiable1[/* properties */ BuildingSublayerProperties, BuildingSublayer] {
   
-  def fromJSON(json: js.Any): BuildingSublayer = js.native
+  def fromJSON(json: Any): BuildingSublayer = js.native
 }

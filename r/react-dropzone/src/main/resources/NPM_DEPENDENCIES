@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-dropzone" : "11.2.4"
+      "react-dropzone" : "14.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-dropzone" : "11.2.4"
+      "react-dropzone" : "14.2.2"
     }
   ],
   "compile-devDependencies" : [

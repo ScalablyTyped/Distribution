@@ -29,7 +29,7 @@ object Gpio {
       * @return When the method completes successfully, it returns a list of values that represent the controllers available on the system.
       */
     /* static member */
-    inline def getControllersAsync(provider: IGpioProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getControllersAsync(provider: IGpioProvider): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets the default general-purpose I/O (GPIO) controller for the system.
@@ -154,7 +154,7 @@ object Gpio {
          with typings.winrtUwp.Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs {
       
       /* CompleteClass */
-      var edge: js.Any = js.native
+      var edge: Any = js.native
     }
     
     object ProviderGpioPinDriveMode {
@@ -165,54 +165,54 @@ object Gpio {
       
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.input")
       @js.native
-      def input: js.Any = js.native
+      def input: Any = js.native
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.inputPullDown")
       @js.native
-      def inputPullDown: js.Any = js.native
-      inline def inputPullDown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputPullDown")(x.asInstanceOf[js.Any])
+      def inputPullDown: Any = js.native
+      inline def inputPullDown_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputPullDown")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.inputPullUp")
       @js.native
-      def inputPullUp: js.Any = js.native
-      inline def inputPullUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputPullUp")(x.asInstanceOf[js.Any])
+      def inputPullUp: Any = js.native
+      inline def inputPullUp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputPullUp")(x.asInstanceOf[js.Any])
       
-      inline def input_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
+      inline def input_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.output")
       @js.native
-      def output: js.Any = js.native
+      def output: Any = js.native
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.outputOpenDrain")
       @js.native
-      def outputOpenDrain: js.Any = js.native
+      def outputOpenDrain: Any = js.native
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.outputOpenDrainPullUp")
       @js.native
-      def outputOpenDrainPullUp: js.Any = js.native
-      inline def outputOpenDrainPullUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenDrainPullUp")(x.asInstanceOf[js.Any])
+      def outputOpenDrainPullUp: Any = js.native
+      inline def outputOpenDrainPullUp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenDrainPullUp")(x.asInstanceOf[js.Any])
       
-      inline def outputOpenDrain_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenDrain")(x.asInstanceOf[js.Any])
+      inline def outputOpenDrain_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenDrain")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.outputOpenSource")
       @js.native
-      def outputOpenSource: js.Any = js.native
+      def outputOpenSource: Any = js.native
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.outputOpenSourcePullDown")
       @js.native
-      def outputOpenSourcePullDown: js.Any = js.native
-      inline def outputOpenSourcePullDown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenSourcePullDown")(x.asInstanceOf[js.Any])
+      def outputOpenSourcePullDown: Any = js.native
+      inline def outputOpenSourcePullDown_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenSourcePullDown")(x.asInstanceOf[js.Any])
       
-      inline def outputOpenSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenSource")(x.asInstanceOf[js.Any])
+      inline def outputOpenSource_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputOpenSource")(x.asInstanceOf[js.Any])
       
-      inline def output_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("output")(x.asInstanceOf[js.Any])
+      inline def output_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("output")(x.asInstanceOf[js.Any])
     }
     
     object ProviderGpioPinEdge {
@@ -223,14 +223,14 @@ object Gpio {
       
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinEdge.fallingEdge")
       @js.native
-      def fallingEdge: js.Any = js.native
-      inline def fallingEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallingEdge")(x.asInstanceOf[js.Any])
+      def fallingEdge: Any = js.native
+      inline def fallingEdge_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallingEdge")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinEdge.risingEdge")
       @js.native
-      def risingEdge: js.Any = js.native
-      inline def risingEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("risingEdge")(x.asInstanceOf[js.Any])
+      def risingEdge: Any = js.native
+      inline def risingEdge_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("risingEdge")(x.asInstanceOf[js.Any])
     }
     
     object ProviderGpioPinValue {
@@ -242,13 +242,13 @@ object Gpio {
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinValue.high")
       @js.native
-      def high: js.Any = js.native
-      inline def high_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("high")(x.asInstanceOf[js.Any])
+      def high: Any = js.native
+      inline def high_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("high")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioPinValue.low")
       @js.native
-      def low: js.Any = js.native
-      inline def low_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("low")(x.asInstanceOf[js.Any])
+      def low: Any = js.native
+      inline def low_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("low")(x.asInstanceOf[js.Any])
     }
     
     object ProviderGpioSharingMode {
@@ -259,14 +259,14 @@ object Gpio {
       
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioSharingMode.exclusive")
       @js.native
-      def exclusive: js.Any = js.native
-      inline def exclusive_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
+      def exclusive: Any = js.native
+      inline def exclusive_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Gpio.Provider.ProviderGpioSharingMode.sharedReadOnly")
       @js.native
-      def sharedReadOnly: js.Any = js.native
-      inline def sharedReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sharedReadOnly")(x.asInstanceOf[js.Any])
+      def sharedReadOnly: Any = js.native
+      inline def sharedReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sharedReadOnly")(x.asInstanceOf[js.Any])
     }
   }
 }

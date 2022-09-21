@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("detect-browser", "BotInfo")
   @js.native
-  class BotInfo ()
+  open class BotInfo ()
     extends StObject
        with DetectedInfo[
           typings.detectBrowser.detectBrowserStrings.bot, 
@@ -47,7 +47,7 @@ object mod {
   
   @JSImport("detect-browser", "BrowserInfo")
   @js.native
-  class BrowserInfo protected ()
+  open class BrowserInfo protected ()
     extends StObject
        with DetectedInfo[browser, Browser, OperatingSystem | Null, String] {
     def this(name: Browser, version: String) = this()
@@ -70,7 +70,7 @@ object mod {
   
   @JSImport("detect-browser", "NodeInfo")
   @js.native
-  class NodeInfo protected ()
+  open class NodeInfo protected ()
     extends StObject
        with DetectedInfo[node, node, Platform, String] {
     def this(version: String) = this()
@@ -92,7 +92,7 @@ object mod {
   
   @JSImport("detect-browser", "ReactNativeInfo")
   @js.native
-  class ReactNativeInfo ()
+  open class ReactNativeInfo ()
     extends StObject
        with DetectedInfo[`react-native`, `react-native`, Null, Null] {
     
@@ -113,7 +113,7 @@ object mod {
   
   @JSImport("detect-browser", "SearchBotDeviceInfo")
   @js.native
-  class SearchBotDeviceInfo protected ()
+  open class SearchBotDeviceInfo protected ()
     extends StObject
        with DetectedInfo[`bot-device`, Browser, OperatingSystem | Null, String] {
     def this(name: Browser, version: String, os: Null, bot: String) = this()
@@ -166,6 +166,8 @@ object mod {
     - typings.detectBrowser.detectBrowserStrings.fxios
     - typings.detectBrowser.detectBrowserStrings.`opera-mini`
     - typings.detectBrowser.detectBrowserStrings.opera
+    - typings.detectBrowser.detectBrowserStrings.pie
+    - typings.detectBrowser.detectBrowserStrings.netfront
     - typings.detectBrowser.detectBrowserStrings.ie
     - typings.detectBrowser.detectBrowserStrings.bb10
     - typings.detectBrowser.detectBrowserStrings.android
@@ -174,6 +176,7 @@ object mod {
     - typings.detectBrowser.detectBrowserStrings.facebook
     - typings.detectBrowser.detectBrowserStrings.instagram
     - typings.detectBrowser.detectBrowserStrings.`ios-webview`
+    - typings.detectBrowser.detectBrowserStrings.curl
     - typings.detectBrowser.detectBrowserStrings.searchbot
   */
   trait Browser extends StObject
@@ -192,6 +195,8 @@ object mod {
     inline def `chromium-webview`: typings.detectBrowser.detectBrowserStrings.`chromium-webview` = "chromium-webview".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`chromium-webview`]
     
     inline def crios: typings.detectBrowser.detectBrowserStrings.crios = "crios".asInstanceOf[typings.detectBrowser.detectBrowserStrings.crios]
+    
+    inline def curl: typings.detectBrowser.detectBrowserStrings.curl = "curl".asInstanceOf[typings.detectBrowser.detectBrowserStrings.curl]
     
     inline def edge: typings.detectBrowser.detectBrowserStrings.edge = "edge".asInstanceOf[typings.detectBrowser.detectBrowserStrings.edge]
     
@@ -217,11 +222,15 @@ object mod {
     
     inline def miui: typings.detectBrowser.detectBrowserStrings.miui = "miui".asInstanceOf[typings.detectBrowser.detectBrowserStrings.miui]
     
+    inline def netfront: typings.detectBrowser.detectBrowserStrings.netfront = "netfront".asInstanceOf[typings.detectBrowser.detectBrowserStrings.netfront]
+    
     inline def opera: typings.detectBrowser.detectBrowserStrings.opera = "opera".asInstanceOf[typings.detectBrowser.detectBrowserStrings.opera]
     
     inline def `opera-mini`: typings.detectBrowser.detectBrowserStrings.`opera-mini` = "opera-mini".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`opera-mini`]
     
     inline def phantomjs: typings.detectBrowser.detectBrowserStrings.phantomjs = "phantomjs".asInstanceOf[typings.detectBrowser.detectBrowserStrings.phantomjs]
+    
+    inline def pie: typings.detectBrowser.detectBrowserStrings.pie = "pie".asInstanceOf[typings.detectBrowser.detectBrowserStrings.pie]
     
     inline def safari: typings.detectBrowser.detectBrowserStrings.safari = "safari".asInstanceOf[typings.detectBrowser.detectBrowserStrings.safari]
     
@@ -303,6 +312,7 @@ object mod {
     - typings.detectBrowser.detectBrowserStrings.`Windows 8Dot1`
     - typings.detectBrowser.detectBrowserStrings.`Windows 10`
     - typings.detectBrowser.detectBrowserStrings.`Windows ME`
+    - typings.detectBrowser.detectBrowserStrings.`Windows CE`
     - typings.detectBrowser.detectBrowserStrings.`Open BSD`
     - typings.detectBrowser.detectBrowserStrings.`Sun OS`
     - typings.detectBrowser.detectBrowserStrings.Linux
@@ -352,6 +362,8 @@ object mod {
     inline def `Windows 95`: typings.detectBrowser.detectBrowserStrings.`Windows 95` = ("Windows 95").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 95`]
     
     inline def `Windows 98`: typings.detectBrowser.detectBrowserStrings.`Windows 98` = ("Windows 98").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 98`]
+    
+    inline def `Windows CE`: typings.detectBrowser.detectBrowserStrings.`Windows CE` = ("Windows CE").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows CE`]
     
     inline def `Windows ME`: typings.detectBrowser.detectBrowserStrings.`Windows ME` = ("Windows ME").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows ME`]
     

@@ -27,7 +27,7 @@ object ListAssociatedAssetsResponse {
     
     inline def setAssetSummaries(value: AssociatedAssetsSummaries): Self = StObject.set(x, "assetSummaries", value.asInstanceOf[js.Any])
     
-    inline def setAssetSummariesVarargs(value: AssociatedAssetsSummary*): Self = StObject.set(x, "assetSummaries", js.Array(value :_*))
+    inline def setAssetSummariesVarargs(value: AssociatedAssetsSummary*): Self = StObject.set(x, "assetSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

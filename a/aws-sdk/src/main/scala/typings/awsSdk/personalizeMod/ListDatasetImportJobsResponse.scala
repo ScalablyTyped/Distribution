@@ -29,7 +29,7 @@ object ListDatasetImportJobsResponse {
     
     inline def setDatasetImportJobsUndefined: Self = StObject.set(x, "datasetImportJobs", js.undefined)
     
-    inline def setDatasetImportJobsVarargs(value: DatasetImportJobSummary*): Self = StObject.set(x, "datasetImportJobs", js.Array(value :_*))
+    inline def setDatasetImportJobsVarargs(value: DatasetImportJobSummary*): Self = StObject.set(x, "datasetImportJobs", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

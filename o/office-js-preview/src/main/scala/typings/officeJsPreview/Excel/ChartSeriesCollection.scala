@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of chart series.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -22,8 +22,9 @@ trait ChartSeriesCollection
      with ClientObject {
   
   /**
-    * Add a new series to the collection. The new added series is not visible until set values/x axis values/bubble sizes for it (depending on chart type).
+    * Add a new series to the collection. The new added series is not visible until values, x-axis values, or bubble sizes for it are set (depending on chart type).
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @param name Optional. Name of the series.
@@ -39,9 +40,9 @@ trait ChartSeriesCollection
   var context_ChartSeriesCollection: RequestContext = js.native
   
   /**
-    *
     * Returns the number of series in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val count: Double = js.native
@@ -49,6 +50,7 @@ trait ChartSeriesCollection
   /**
     * Returns the number of series in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -56,6 +58,7 @@ trait ChartSeriesCollection
   /**
     * Retrieves a series based on its position in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.

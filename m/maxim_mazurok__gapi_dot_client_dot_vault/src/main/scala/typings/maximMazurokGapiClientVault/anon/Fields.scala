@@ -25,7 +25,7 @@ trait Fields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The matter ID of the parent matter for which the saved queries are to be retrieved. */
+  /** The ID of the matter to get the saved queries for. */
   var matterId: String
   
   /** OAuth 2.0 token for the current user. */

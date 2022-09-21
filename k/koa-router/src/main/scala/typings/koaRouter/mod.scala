@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.accepts.mod.Accepts
 import typings.contentDisposition.mod.Options
 import typings.cookies.mod.Cookies
+import typings.koa.anon.Body
 import typings.koa.anon.FnCall
 import typings.koa.mod.Application
 import typings.koa.mod.DefaultContext
@@ -12,13 +13,13 @@ import typings.koa.mod.Middleware
 import typings.koa.mod.ParameterizedContext
 import typings.koa.mod.Request
 import typings.koa.mod.Response
+import typings.koaRouter.koaRouterBooleans.`false`
+import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
 import typings.node.urlMod.URL_
-import typings.std.Date
-import typings.std.Error
-import typings.std.RegExp
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,7 @@ object mod {
   /**
     * Create a new router.
     */
-  class ^[StateT, CustomT] ()
+  open class ^[StateT, CustomT] ()
     extends StObject
        with Router[StateT, CustomT] {
     def this(opt: IRouterOptions) = this()
@@ -41,33 +42,33 @@ object mod {
   
   @JSImport("koa-router", "Layer")
   @js.native
-  class Layer protected () extends StObject {
-    def this(path: String, methods: js.Array[String], middleware: js.Array[IMiddleware[js.Any, js.Object]]) = this()
-    def this(path: String, methods: js.Array[String], middleware: IMiddleware[js.Any, js.Object]) = this()
-    def this(path: RegExp, methods: js.Array[String], middleware: js.Array[IMiddleware[js.Any, js.Object]]) = this()
-    def this(path: RegExp, methods: js.Array[String], middleware: IMiddleware[js.Any, js.Object]) = this()
+  open class Layer protected () extends StObject {
+    def this(path: String, methods: js.Array[String], middleware: js.Array[IMiddleware[Any, js.Object]]) = this()
+    def this(path: String, methods: js.Array[String], middleware: IMiddleware[Any, js.Object]) = this()
+    def this(path: js.RegExp, methods: js.Array[String], middleware: js.Array[IMiddleware[Any, js.Object]]) = this()
+    def this(path: js.RegExp, methods: js.Array[String], middleware: IMiddleware[Any, js.Object]) = this()
     def this(
       path: String,
       methods: js.Array[String],
-      middleware: js.Array[IMiddleware[js.Any, js.Object]],
+      middleware: js.Array[IMiddleware[Any, js.Object]],
       opts: ILayerOptions
     ) = this()
     def this(
       path: String,
       methods: js.Array[String],
-      middleware: IMiddleware[js.Any, js.Object],
+      middleware: IMiddleware[Any, js.Object],
       opts: ILayerOptions
     ) = this()
     def this(
-      path: RegExp,
+      path: js.RegExp,
       methods: js.Array[String],
-      middleware: js.Array[IMiddleware[js.Any, js.Object]],
+      middleware: js.Array[IMiddleware[Any, js.Object]],
       opts: ILayerOptions
     ) = this()
     def this(
-      path: RegExp,
+      path: js.RegExp,
       methods: js.Array[String],
-      middleware: IMiddleware[js.Any, js.Object],
+      middleware: IMiddleware[Any, js.Object],
       opts: ILayerOptions
     ) = this()
     
@@ -90,7 +91,7 @@ object mod {
     /**
       * Run validations on route named parameters.
       */
-    def param(param: String, fn: IMiddleware[js.Any, js.Object]): Layer = js.native
+    def param(param: String, fn: IMiddleware[Any, js.Object]): Layer = js.native
     
     var paramNames: js.Array[ParamName] = js.native
     
@@ -99,19 +100,19 @@ object mod {
       */
     def params(path: String, captures: js.Array[String]): js.Object = js.native
     def params(path: String, captures: js.Array[String], existingParams: js.Object): js.Object = js.native
-    def params(path: RegExp, captures: js.Array[String]): js.Object = js.native
-    def params(path: RegExp, captures: js.Array[String], existingParams: js.Object): js.Object = js.native
+    def params(path: js.RegExp, captures: js.Array[String]): js.Object = js.native
+    def params(path: js.RegExp, captures: js.Array[String], existingParams: js.Object): js.Object = js.native
     
     var path: String = js.native
     
-    var regexp: RegExp = js.native
+    var regexp: js.RegExp = js.native
     
     /**
       * Prefix route path.
       */
     def setPrefix(prefix: String): Layer = js.native
     
-    var stack: js.Array[IMiddleware[js.Any, js.Object]] = js.native
+    var stack: js.Array[IMiddleware[Any, js.Object]] = js.native
     
     /**
       * Generate URL for route using given `params`.
@@ -121,7 +122,7 @@ object mod {
   
   @JSImport("koa-router", "ParamName")
   @js.native
-  class ParamName () extends StObject {
+  open class ParamName () extends StObject {
     
     var asterisk: Boolean = js.native
     
@@ -145,7 +146,7 @@ object mod {
     */
   /* static member */
   inline def url(path: String, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def url(path: RegExp, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def url(path: js.RegExp, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ILayerOptions extends StObject {
     
@@ -194,13 +195,13 @@ object mod {
     }
   }
   
-  type IMiddleware[StateT, CustomT] = Middleware[StateT, CustomT & (IRouterParamContext[StateT, CustomT])]
+  type IMiddleware[StateT, CustomT] = Middleware[StateT, CustomT & (IRouterParamContext[StateT, CustomT]), Any]
   
   type IParamMiddleware[STateT, CustomT] = js.Function3[
     /* param */ String, 
     /* ctx */ RouterContext[STateT, CustomT], 
-    /* next */ js.Function0[js.Promise[js.Any]], 
-    js.Any
+    /* next */ js.Function0[js.Promise[Any]], 
+    Any
   ]
   
   trait IRouterAllowedMethodsOptions extends StObject {
@@ -208,12 +209,12 @@ object mod {
     /**
       * throw the returned value in place of the default MethodNotAllowed error
       */
-    var methodNotAllowed: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var methodNotAllowed: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * throw the returned value in place of the default NotImplemented error
       */
-    var notImplemented: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var notImplemented: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * throw error instead of setting status and header
@@ -229,11 +230,11 @@ object mod {
     
     extension [Self <: IRouterAllowedMethodsOptions](x: Self) {
       
-      inline def setMethodNotAllowed(value: () => js.Any): Self = StObject.set(x, "methodNotAllowed", js.Any.fromFunction0(value))
+      inline def setMethodNotAllowed(value: () => Any): Self = StObject.set(x, "methodNotAllowed", js.Any.fromFunction0(value))
       
       inline def setMethodNotAllowedUndefined: Self = StObject.set(x, "methodNotAllowed", js.undefined)
       
-      inline def setNotImplemented(value: () => js.Any): Self = StObject.set(x, "notImplemented", js.Any.fromFunction0(value))
+      inline def setNotImplemented(value: () => Any): Self = StObject.set(x, "notImplemented", js.Any.fromFunction0(value))
       
       inline def setNotImplementedUndefined: Self = StObject.set(x, "notImplemented", js.undefined)
       
@@ -255,7 +256,7 @@ object mod {
     /**
       * Matched route
       */
-    var _matchedRoute: js.UndefOr[String | RegExp] = js.native
+    var _matchedRoute: js.UndefOr[String | js.RegExp] = js.native
     
     var _matchedRouteName: js.UndefOr[String] = js.native
     
@@ -263,7 +264,7 @@ object mod {
     
     /**
       * Check if the given `type(s)` is acceptable, returning
-      * the best match when true, otherwise `undefined`, in which
+      * the best match when true, otherwise `false`, in which
       * case you should respond with 406 "Not Acceptable".
       *
       * The `type` value may be a single mime type string
@@ -297,9 +298,9 @@ object mod {
       *     this.accepts('html', 'json');
       *     // => "json"
       */
-    def accepts(): js.Array[String] | Boolean = js.native
-    def accepts(types: String*): String | Boolean = js.native
-    def accepts(types: js.Array[String]): String | Boolean = js.native
+    def accepts(): js.Array[String] = js.native
+    def accepts(types: String*): String | `false` = js.native
+    def accepts(types: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted charsets or best fit based on `charsets`.
@@ -309,9 +310,9 @@ object mod {
       *
       *     ['utf-8', 'utf-7', 'iso-8859-1']
       */
-    def acceptsCharsets(): js.Array[String] | Boolean = js.native
-    def acceptsCharsets(charsets: String*): String | Boolean = js.native
-    def acceptsCharsets(charsets: js.Array[String]): String | Boolean = js.native
+    def acceptsCharsets(): js.Array[String] = js.native
+    def acceptsCharsets(charsets: String*): String | `false` = js.native
+    def acceptsCharsets(charsets: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted encodings or best fit based on `encodings`.
@@ -321,9 +322,9 @@ object mod {
       *
       *     ['gzip', 'deflate']
       */
-    def acceptsEncodings(): js.Array[String] | Boolean = js.native
-    def acceptsEncodings(encodings: String*): String | Boolean = js.native
-    def acceptsEncodings(encodings: js.Array[String]): String | Boolean = js.native
+    def acceptsEncodings(): js.Array[String] = js.native
+    def acceptsEncodings(encodings: String*): String | `false` = js.native
+    def acceptsEncodings(encodings: js.Array[String]): String | `false` = js.native
     
     /**
       * Return accepted languages or best fit based on `langs`.
@@ -333,9 +334,9 @@ object mod {
       *
       *     ['es', 'pt', 'en']
       */
-    def acceptsLanguages(): js.Array[String] | Boolean = js.native
-    def acceptsLanguages(langs: String*): String | Boolean = js.native
-    def acceptsLanguages(langs: js.Array[String]): String | Boolean = js.native
+    def acceptsLanguages(): js.Array[String] = js.native
+    def acceptsLanguages(langs: String*): String | `false` = js.native
+    def acceptsLanguages(langs: js.Array[String]): String | `false` = js.native
     
     var app: Application[DefaultState, DefaultContext] = js.native
     
@@ -360,7 +361,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any): Unit = js.native
+    def assert(value: Any): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -368,7 +369,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double): Unit = js.native
+    def assert(value: Any, status: Double): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -376,7 +377,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: String): Unit = js.native
+    def assert(value: Any, status: Double, msg: String): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -384,7 +385,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: String, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, msg: String, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -392,7 +393,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, msg: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -400,7 +401,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Double, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Double, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -408,7 +409,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: String): Unit = js.native
+    def assert(value: Any, status: Unit, msg: String): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -416,7 +417,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, msg: String, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -424,7 +425,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, msg: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -432,7 +433,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: Unit, opts: js.Object): Unit = js.native
+    def assert(value: Any, status: Unit, opts: Record[String, Any]): /* asserts value */ Boolean = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -455,7 +456,7 @@ object mod {
     /**
       * Get/Set response body.
       */
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     var cookies: Cookies = js.native
     
@@ -507,7 +508,7 @@ object mod {
     /**
       * Return request header.
       */
-    var header: js.Any = js.native
+    var header: IncomingHttpHeaders = js.native
     
     /**
       * Check if a header has been written to the socket.
@@ -517,7 +518,7 @@ object mod {
     /**
       * Return request header, alias as request.header
       */
-    var headers: js.Any = js.native
+    var headers: IncomingHttpHeaders = js.native
     
     /**
       * Parse the "Host" header field host
@@ -547,7 +548,7 @@ object mod {
       * util.inspect() implementation, which
       * just returns the JSON output.
       */
-    def inspect(): js.Any = js.native
+    def inspect(): Any = js.native
     
     /**
       * Request remote address. Supports X-Forwarded-For when app.proxy is true.
@@ -586,8 +587,8 @@ object mod {
       *     this.is('html'); // => false
       */
     // is(): string | boolean;
-    def is(types: String*): String | Boolean = js.native
-    def is(types: js.Array[String]): String | Boolean = js.native
+    def is(types: String*): String | `false` | Null = js.native
+    def is(types: js.Array[String]): String | `false` | Null = js.native
     
     /**
       * Get the Last-Modified date in Date form, if it exists.
@@ -596,7 +597,7 @@ object mod {
       *     this.response.lastModified = new Date();
       *     this.response.lastModified = '2013-09-13';
       */
-    var lastModified: Date = js.native
+    var lastModified: js.Date = js.native
     
     /**
       * Return parsed response Content-Length when present.
@@ -617,7 +618,7 @@ object mod {
     /**
       * Default error handling.
       */
-    def onerror(err: Error): Unit = js.native
+    def onerror(err: js.Error): Unit = js.native
     
     /**
       * Get origin of URL.
@@ -629,7 +630,7 @@ object mod {
     /**
       * url params
       */
-    var params: js.Any = js.native
+    var params: Record[String, String] = js.native
     
     /**
       * Get request pathname.
@@ -651,7 +652,7 @@ object mod {
       * Get parsed query-string.
       * Set query-string as an object.
       */
-    var query: js.Any = js.native
+    var query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any = js.native
     
     /**
       * Get/Set query string.
@@ -684,19 +685,19 @@ object mod {
     
     var request: Request = js.native
     
-    var res: ServerResponse = js.native
+    var res: ServerResponse[IncomingMessage] = js.native
     
     /**
       * To bypass Koa's built-in response handling, you may explicitly set `ctx.respond = false;`
       */
     var respond: js.UndefOr[Boolean] = js.native
     
-    var response: Response = js.native
+    var response: Body[Any] & Response = js.native
     
     /**
       * the router instance
       */
-    var router: Router[js.Any, js.Object] = js.native
+    var router: Router[Any, js.Object] = js.native
     
     /**
       * Get the search string. Same as the querystring
@@ -740,7 +741,7 @@ object mod {
       */
     var stale: Boolean = js.native
     
-    var state: js.Any = js.native
+    var state: Any = js.native
     
     /**
       * Get/Set response status code.
@@ -790,7 +791,7 @@ object mod {
       * to the getters and cause utilities such as
       * clone() to fail.
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     /**
       * Return the response mime type void of
@@ -867,7 +868,7 @@ object mod {
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -892,14 +893,14 @@ object mod {
     /**
       * Matched route
       */
-    var _matchedRoute: js.UndefOr[String | RegExp] = js.undefined
+    var _matchedRoute: js.UndefOr[String | js.RegExp] = js.undefined
     
     var _matchedRouteName: js.UndefOr[String] = js.undefined
     
     /**
       * url params
       */
-    var params: js.Any
+    var params: Record[String, String]
     
     /**
       * the router instance
@@ -908,18 +909,18 @@ object mod {
   }
   object IRouterParamContext {
     
-    inline def apply[StateT, CustomT](params: js.Any, router: Router[StateT, CustomT]): IRouterParamContext[StateT, CustomT] = {
+    inline def apply[StateT, CustomT](params: Record[String, String], router: Router[StateT, CustomT]): IRouterParamContext[StateT, CustomT] = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRouterParamContext[StateT, CustomT]]
     }
     
     extension [Self <: IRouterParamContext[?, ?], StateT, CustomT](x: Self & (IRouterParamContext[StateT, CustomT])) {
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setRouter(value: Router[StateT, CustomT]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      inline def set_matchedRoute(value: String | RegExp): Self = StObject.set(x, "_matchedRoute", value.asInstanceOf[js.Any])
+      inline def set_matchedRoute(value: String | js.RegExp): Self = StObject.set(x, "_matchedRoute", value.asInstanceOf[js.Any])
       
       inline def set_matchedRouteName(value: String): Self = StObject.set(x, "_matchedRouteName", value.asInstanceOf[js.Any])
       
@@ -950,9 +951,9 @@ object mod {
       
       inline def setPathAndMethod(value: js.Array[Layer]): Self = StObject.set(x, "pathAndMethod", value.asInstanceOf[js.Any])
       
-      inline def setPathAndMethodVarargs(value: Layer*): Self = StObject.set(x, "pathAndMethod", js.Array(value :_*))
+      inline def setPathAndMethodVarargs(value: Layer*): Self = StObject.set(x, "pathAndMethod", js.Array(value*))
       
-      inline def setPathVarargs(value: Layer*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Layer*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRoute(value: Boolean): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
@@ -982,29 +983,37 @@ object mod {
       * Register route with all methods.
       */
     def all(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def all(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def all(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def all(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def all(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def all(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def all(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def all(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def all[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def all[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def all[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def all[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def all[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def all[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def all[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Returns separate middleware for responding to `OPTIONS` requests with
@@ -1018,141 +1027,181 @@ object mod {
       * Alias for `router.delete()` because delete is a reserved word
       */
     def del(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def del(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def del(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def del(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def del(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def del(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def del(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def del(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def del[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def del[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def del[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def del[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def del[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def del[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def del[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP delete method
       */
     def delete(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def delete(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def delete(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def delete(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def delete(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def delete(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def delete(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def delete(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def delete[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def delete[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def delete[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def delete[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def delete[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def delete[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def delete[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP get method
       */
     def get(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def get(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def get(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def get(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def get(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def get(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def get(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def get(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def get[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def get[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def get[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def get[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def get[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def get[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def get[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP head method
       */
     def head(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def head(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def head(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def head(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def head(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def head(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def head(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def head(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def head[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def head[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def head[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def head[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def head[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def head[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def head[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP link method
       */
     def link(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def link(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def link(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def link(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def link(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def link(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def link(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def link(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def link[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def link[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def link[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def link[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def link[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def link[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def link[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Match given `path` and return corresponding routes.
@@ -1168,29 +1217,37 @@ object mod {
       * HTTP options method
       */
     def options(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def options(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def options(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def options(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def options(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def options(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def options(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def options(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def options[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def options[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def options[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def options[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def options[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def options[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def options[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Run middleware for named route parameters. Useful for auto-loading or validation.
@@ -1203,57 +1260,73 @@ object mod {
       * HTTP patch method
       */
     def patch(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def patch(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def patch(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def patch(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def patch(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def patch(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def patch(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def patch(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def patch[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def patch[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def patch[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def patch[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def patch[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def patch[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def patch[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP post method
       */
     def post(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def post(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def post(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def post(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def post(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def post(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def post(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def post(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def post[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def post[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def post[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def post[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def post[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def post[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def post[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Set the path prefix for a Router instance that was already initialized.
@@ -1264,29 +1337,37 @@ object mod {
       * HTTP put method
       */
     def put(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def put(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def put(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def put(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def put(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def put(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def put(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def put(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def put[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def put[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def put[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def put[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def put[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def put[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def put[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Redirect `source` to `destination` URL with optional 30x status `code`.
@@ -1313,16 +1394,16 @@ object mod {
       middleware: IMiddleware[StateT, CustomT],
       opts: ILayerOptions
     ): Layer = js.native
-    def register(path: RegExp, methods: js.Array[String], middleware: js.Array[IMiddleware[StateT, CustomT]]): Layer = js.native
+    def register(path: js.RegExp, methods: js.Array[String], middleware: js.Array[IMiddleware[StateT, CustomT]]): Layer = js.native
     def register(
-      path: RegExp,
+      path: js.RegExp,
       methods: js.Array[String],
       middleware: js.Array[IMiddleware[StateT, CustomT]],
       opts: ILayerOptions
     ): Layer = js.native
-    def register(path: RegExp, methods: js.Array[String], middleware: IMiddleware[StateT, CustomT]): Layer = js.native
+    def register(path: js.RegExp, methods: js.Array[String], middleware: IMiddleware[StateT, CustomT]): Layer = js.native
     def register(
-      path: RegExp,
+      path: js.RegExp,
       methods: js.Array[String],
       middleware: IMiddleware[StateT, CustomT],
       opts: ILayerOptions
@@ -1346,32 +1427,38 @@ object mod {
       * HTTP unlink method
       */
     def unlink(name: String, path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def unlink(name: String, path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def unlink(name: String, path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def unlink(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def unlink(path: js.Array[String | RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def unlink(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def unlink(path: js.Array[String | js.RegExp], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def unlink(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def unlink[T, U](
       name: String,
       path: String,
-      middleware: Middleware[T, U],
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
     def unlink[T, U](
       name: String,
-      path: RegExp,
-      middleware: Middleware[T, U],
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def unlink[T, U](path: String, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
     def unlink[T, U](
-      path: js.Array[String | RegExp],
-      middleware: Middleware[T, U],
+      path: String,
+      middleware: Middleware[T, U, Any],
       routeHandler: IMiddleware[StateT & T, CustomT & U]
     ): Router[StateT & T, CustomT & U] = js.native
-    def unlink[T, U](path: RegExp, middleware: Middleware[T, U], routeHandler: IMiddleware[StateT & T, CustomT & U]): Router[StateT & T, CustomT & U] = js.native
+    def unlink[T, U](
+      path: js.Array[String | js.RegExp],
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
+    def unlink[T, U](
+      path: js.RegExp,
+      middleware: Middleware[T, U, Any],
+      routeHandler: IMiddleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
-    def url(name: String, params: js.Any): Error = js.native
-    def url(name: String, params: js.Any, options: IUrlOptionsQuery): Error = js.native
     /**
       * Generate URL for route. Takes either map of named `params` or series of
       * arguments (for regular expression routes)
@@ -1391,10 +1478,12 @@ object mod {
       * // => "/users/3?limit=1"
       *
       */
+    def url(name: String, params: Any): String = js.native
+    def url(name: String, params: Any, options: IUrlOptionsQuery): String = js.native
     @JSName("url")
-    def url_String(name: String, params: js.Any): String = js.native
+    def url_Error(name: String, params: Any): js.Error = js.native
     @JSName("url")
-    def url_String(name: String, params: js.Any, options: IUrlOptionsQuery): String = js.native
+    def url_Error(name: String, params: Any, options: IUrlOptionsQuery): js.Error = js.native
     
     /**
       * Use given middleware.
@@ -1406,8 +1495,8 @@ object mod {
     def use(middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def use(path: String, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
     def use(path: js.Array[String], middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
-    def use(path: RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+    def use(path: js.RegExp, middleware: (IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
   }
   
-  type RouterContext[StateT, CustomT] = ParameterizedContext[StateT, CustomT & (IRouterParamContext[StateT, CustomT])]
+  type RouterContext[StateT, CustomT] = ParameterizedContext[StateT, CustomT & (IRouterParamContext[StateT, CustomT]), Any]
 }

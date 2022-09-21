@@ -1,0 +1,16 @@
+package typings.mockAwsS3.mod
+
+import typings.awsSdk.controltowerMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("mock-aws-s3", "ControlTower")
+@js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
+open class ControlTower ()
+  extends typings.awsSdk.mod.ControlTower {
+  def this(options: ClientConfiguration) = this()
+}

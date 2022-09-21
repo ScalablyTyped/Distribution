@@ -5,12 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question for the `InputPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait InputQuestionOptions[T /* <: Answers */]
   extends StObject
      with Question[T] {
@@ -31,7 +25,7 @@ trait InputQuestionOptions[T /* <: Answers */]
     * The value to display to the user.
     */
   var transformer: js.UndefOr[
-    js.Function3[/* input */ js.Any, /* answers */ T, /* flags */ IsFinal, String | js.Promise[String]]
+    js.Function3[/* input */ Any, /* answers */ T, /* flags */ IsFinal, String | js.Promise[String]]
   ] = js.undefined
 }
 object InputQuestionOptions {
@@ -43,7 +37,7 @@ object InputQuestionOptions {
   
   extension [Self <: InputQuestionOptions[?], T /* <: Answers */](x: Self & InputQuestionOptions[T]) {
     
-    inline def setTransformer(value: (/* input */ js.Any, /* answers */ T, /* flags */ IsFinal) => String | js.Promise[String]): Self = StObject.set(x, "transformer", js.Any.fromFunction3(value))
+    inline def setTransformer(value: (/* input */ Any, /* answers */ T, /* flags */ IsFinal) => String | js.Promise[String]): Self = StObject.set(x, "transformer", js.Any.fromFunction3(value))
     
     inline def setTransformerUndefined: Self = StObject.set(x, "transformer", js.undefined)
   }

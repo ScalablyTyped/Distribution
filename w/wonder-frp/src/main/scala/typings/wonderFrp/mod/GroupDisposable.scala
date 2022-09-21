@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "GroupDisposable")
 @js.native
-class GroupDisposable ()
+open class GroupDisposable ()
   extends typings.wonderFrp.groupDisposableMod.GroupDisposable {
   def this(disposable: IDisposable) = this()
 }

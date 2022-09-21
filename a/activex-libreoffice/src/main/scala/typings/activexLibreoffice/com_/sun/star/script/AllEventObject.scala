@@ -18,14 +18,14 @@ trait AllEventObject
      with EventObject {
   
   /** The arguments of the original method. */
-  var Arguments: SafeArray[js.Any]
+  var Arguments: SafeArray[Any]
   
   /**
     * A helper value for the implementation that can be used arbitrarily.
     *
     * This field reflects the third parameter of the method {@link XAllListenerAdapterService.createAllListerAdapter()} .
     */
-  var Helper: js.Any
+  var Helper: Any
   
   /** contains the type of the original listener. */
   var ListenerType: `type`
@@ -36,8 +36,8 @@ trait AllEventObject
 object AllEventObject {
   
   inline def apply(
-    Arguments: SafeArray[js.Any],
-    Helper: js.Any,
+    Arguments: SafeArray[Any],
+    Helper: Any,
     ListenerType: `type`,
     MethodName: String,
     Source: XInterface
@@ -48,9 +48,9 @@ object AllEventObject {
   
   extension [Self <: AllEventObject](x: Self) {
     
-    inline def setArguments(value: SafeArray[js.Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: SafeArray[Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
-    inline def setHelper(value: js.Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
     
     inline def setListenerType(value: `type`): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
     

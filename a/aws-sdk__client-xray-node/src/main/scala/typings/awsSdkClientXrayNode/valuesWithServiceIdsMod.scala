@@ -8,5 +8,5 @@ object valuesWithServiceIdsMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_ValuesWithServiceIds", "_ValuesWithServiceIds")
   @js.native
-  val ValuesWithServiceIds: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ValuesWithServiceIds: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

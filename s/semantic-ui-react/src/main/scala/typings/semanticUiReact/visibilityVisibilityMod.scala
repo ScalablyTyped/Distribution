@@ -22,10 +22,9 @@ object visibilityVisibilityMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/behaviors/Visibility/Visibility", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[VisibilityProps, ComponentState, js.Any] {
+  open class default protected () extends Component[VisibilityProps, ComponentState, Any] {
     def this(props: VisibilityProps) = this()
-    def this(props: VisibilityProps, context: js.Any) = this()
+    def this(props: VisibilityProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/behaviors/Visibility/Visibility", JSImport.Default)
   @js.native
@@ -34,7 +33,7 @@ object visibilityVisibilityMod extends Shortcut {
   trait StrictVisibilityProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -183,7 +182,7 @@ object visibilityVisibilityMod extends Shortcut {
     
     extension [Self <: StrictVisibilityProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -207,7 +206,7 @@ object visibilityVisibilityMod extends Shortcut {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: (Double | String)*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: (Double | String)*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOnBottomPassed(value: (/* nothing */ Null, /* data */ VisibilityEventData) => Unit): Self = StObject.set(x, "onBottomPassed", js.Any.fromFunction2(value))
       
@@ -378,7 +377,7 @@ object visibilityVisibilityMod extends Shortcut {
   trait VisibilityProps
     extends StObject
        with StrictVisibilityProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object VisibilityProps {
     
     inline def apply(): VisibilityProps = {

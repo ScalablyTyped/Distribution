@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.PairsFactory")
 @js.native
-class PairsFactory ()
+open class PairsFactory ()
   extends StObject
      with typings.phaser.MatterJS.PairsFactory {
   
@@ -17,5 +17,5 @@ class PairsFactory ()
     * @return {pairs} pairs
     */
   /* CompleteClass */
-  override def clear(pairs: js.Any): js.Any = js.native
+  override def clear(pairs: Any): Any = js.native
 }

@@ -1,13 +1,18 @@
 package typings.webpackAssetsManifest
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Object
-import typings.std.Plugin
-import typings.std.PropertyKey
-import typings.std.ProxyHandler
-import typings.std.RegExp
+import typings.std.Map
+import typings.std.Record
+import typings.std.Set
+import typings.webpack.mod.Asset
+import typings.webpack.mod.Compilation
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.LoaderContext
+import typings.webpack.mod.Module
+import typings.webpack.mod.Stats
+import typings.webpack.mod.WebpackPluginInstance
 import typings.webpackAssetsManifest.anon.AfterOptions
 import typings.webpackAssetsManifest.webpackAssetsManifestBooleans.`false`
+import typings.webpackAssetsManifest.webpackAssetsManifestStrings.auto
 import typings.webpackAssetsManifest.webpackAssetsManifestStrings.customize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,27 +22,20 @@ object mod {
   
   @JSImport("webpack-assets-manifest", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with WebpackAssetsManifest {
     def this(options: Options) = this()
+    
+    /**
+    	 * The run point of the plugin, required method.
+    	 */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
-  trait AnyObject
-    extends StObject
-       with Object
-       with /* index */ StringDictionary[js.Any]
-  object AnyObject {
-    
-    inline def apply(
-      constructor: js.Function,
-      hasOwnProperty: PropertyKey => Boolean,
-      propertyIsEnumerable: PropertyKey => Boolean
-    ): AnyObject = {
-      val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-      __obj.asInstanceOf[AnyObject]
-    }
-  }
+  type Assets = Record[String, Any]
   
   trait Entry extends StObject {
     
@@ -67,23 +65,29 @@ object mod {
     var apply: js.UndefOr[(js.Function1[/* manifest */ WebpackAssetsManifest, Unit]) | Null] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#assets */
-    var assets: js.UndefOr[js.Object] = js.undefined
+    var assets: js.UndefOr[Assets] = js.undefined
+    
+    /** https://github.com/webdeveric/webpack-assets-manifest#contextrelativekeys */
+    var contextRelativeKeys: js.UndefOr[Boolean] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#customize */
     var customize: js.UndefOr[
         (js.Function4[
           /* entry */ Entry, 
-          /* original */ AnyObject, 
+          /* original */ Entry, 
           /* manifest */ WebpackAssetsManifest, 
-          /* asset */ AnyObject, 
+          /* asset */ Asset | Null, 
           Entry | `false`
         ]) | Null
       ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#done */
     var done: js.UndefOr[
-        (js.Function2[/* manifest */ WebpackAssetsManifest, /* stats */ AnyObject, Unit]) | Null
+        (js.Function2[/* manifest */ WebpackAssetsManifest, /* stats */ Stats, Unit]) | Null
       ] = js.undefined
+    
+    /** https://github.com/webdeveric/webpack-assets-manifest#enabled */
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#entrypoints */
     var entrypoints: js.UndefOr[Boolean] = js.undefined
@@ -91,8 +95,17 @@ object mod {
     /** https://github.com/webdeveric/webpack-assets-manifest#entrypointskey */
     var entrypointsKey: js.UndefOr[String | `false`] = js.undefined
     
+    /** https://github.com/webdeveric/webpack-assets-manifest#entrypointsuseassets */
+    var entrypointsUseAssets: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * A place to put your arbitrary data
+      * @default {}
+      */
+    var extra: js.UndefOr[Record[String, Any]] = js.undefined
+    
     /** https://github.com/webdeveric/webpack-assets-manifest#fileextregex */
-    var fileExtRegex: js.UndefOr[RegExp | Null | `false`] = js.undefined
+    var fileExtRegex: js.UndefOr[js.RegExp | Null | `false`] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#integrity */
     var integrity: js.UndefOr[Boolean] = js.undefined
@@ -116,11 +129,7 @@ object mod {
     
     /** https://github.com/webdeveric/webpack-assets-manifest#replacer */
     var replacer: js.UndefOr[
-        Null | js.Array[String] | (js.Function2[
-          /* key */ String, 
-          /* value */ String, 
-          js.UndefOr[Double | String | Boolean | Null | js.Object]
-        ])
+        (js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]) | (js.Array[String | Double]) | Null
       ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#sortmanifest */
@@ -129,15 +138,15 @@ object mod {
       ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#space */
-    var space: js.UndefOr[Double] = js.undefined
+    var space: js.UndefOr[Double | String] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#transform */
     var transform: js.UndefOr[
-        (js.Function2[/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest, js.Any]) | Null
+        (js.Function2[/* assets */ Assets, /* manifest */ WebpackAssetsManifest, Any]) | Null
       ] = js.undefined
     
     /** https://github.com/webdeveric/webpack-assets-manifest#writetodisk */
-    var writeToDisk: js.UndefOr[Boolean] = js.undefined
+    var writeToDisk: js.UndefOr[Boolean | auto] = js.undefined
   }
   object Options {
     
@@ -154,23 +163,31 @@ object mod {
       
       inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
       
-      inline def setAssets(value: js.Object): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      inline def setAssets(value: Assets): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
       inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
       
+      inline def setContextRelativeKeys(value: Boolean): Self = StObject.set(x, "contextRelativeKeys", value.asInstanceOf[js.Any])
+      
+      inline def setContextRelativeKeysUndefined: Self = StObject.set(x, "contextRelativeKeys", js.undefined)
+      
       inline def setCustomize(
-        value: (/* entry */ Entry, /* original */ AnyObject, /* manifest */ WebpackAssetsManifest, /* asset */ AnyObject) => Entry | `false`
+        value: (/* entry */ Entry, /* original */ Entry, /* manifest */ WebpackAssetsManifest, /* asset */ Asset | Null) => Entry | `false`
       ): Self = StObject.set(x, "customize", js.Any.fromFunction4(value))
       
       inline def setCustomizeNull: Self = StObject.set(x, "customize", null)
       
       inline def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
       
-      inline def setDone(value: (/* manifest */ WebpackAssetsManifest, /* stats */ AnyObject) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
+      inline def setDone(value: (/* manifest */ WebpackAssetsManifest, /* stats */ Stats) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
       
       inline def setDoneNull: Self = StObject.set(x, "done", null)
       
       inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
       inline def setEntrypoints(value: Boolean): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
       
@@ -180,7 +197,15 @@ object mod {
       
       inline def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
       
-      inline def setFileExtRegex(value: RegExp | `false`): Self = StObject.set(x, "fileExtRegex", value.asInstanceOf[js.Any])
+      inline def setEntrypointsUseAssets(value: Boolean): Self = StObject.set(x, "entrypointsUseAssets", value.asInstanceOf[js.Any])
+      
+      inline def setEntrypointsUseAssetsUndefined: Self = StObject.set(x, "entrypointsUseAssets", js.undefined)
+      
+      inline def setExtra(value: Record[String, Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      
+      inline def setFileExtRegex(value: js.RegExp | `false`): Self = StObject.set(x, "fileExtRegex", value.asInstanceOf[js.Any])
       
       inline def setFileExtRegexNull: Self = StObject.set(x, "fileExtRegex", null)
       
@@ -192,7 +217,7 @@ object mod {
       
       inline def setIntegrityHashesUndefined: Self = StObject.set(x, "integrityHashes", js.undefined)
       
-      inline def setIntegrityHashesVarargs(value: String*): Self = StObject.set(x, "integrityHashes", js.Array(value :_*))
+      inline def setIntegrityHashesVarargs(value: String*): Self = StObject.set(x, "integrityHashes", js.Array(value*))
       
       inline def setIntegrityPropertyName(value: String): Self = StObject.set(x, "integrityPropertyName", value.asInstanceOf[js.Any])
       
@@ -219,22 +244,14 @@ object mod {
       inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
       inline def setReplacer(
-        value: js.Array[String] | (js.Function2[
-              /* key */ String, 
-              /* value */ String, 
-              js.UndefOr[Double | String | Boolean | Null | js.Object]
-            ])
+        value: (js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]) | (js.Array[String | Double])
       ): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
-      
-      inline def setReplacerFunction2(
-        value: (/* key */ String, /* value */ String) => js.UndefOr[Double | String | Boolean | Null | js.Object]
-      ): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       inline def setReplacerNull: Self = StObject.set(x, "replacer", null)
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      inline def setReplacerVarargs(value: String*): Self = StObject.set(x, "replacer", js.Array(value :_*))
+      inline def setReplacerVarargs(value: (String | Double)*): Self = StObject.set(x, "replacer", js.Array(value*))
       
       inline def setSortManifest(
         value: Boolean | (js.ThisFunction2[/* this */ WebpackAssetsManifest, /* a */ String, /* b */ String, Double])
@@ -242,17 +259,17 @@ object mod {
       
       inline def setSortManifestUndefined: Self = StObject.set(x, "sortManifest", js.undefined)
       
-      inline def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Double | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
       inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       
-      inline def setTransform(value: (/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransform(value: (/* assets */ Assets, /* manifest */ WebpackAssetsManifest) => Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
       inline def setTransformNull: Self = StObject.set(x, "transform", null)
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setWriteToDisk(value: Boolean): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
+      inline def setWriteToDisk(value: Boolean | auto): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
       
       inline def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
     }
@@ -261,37 +278,82 @@ object mod {
   @js.native
   trait WebpackAssetsManifest
     extends StObject
-       with Plugin {
+       with WebpackPluginInstance {
+    
+    /** original filename : hashed filename */
+    var assetNames: Map[String, String] = js.native
+    
+    /** This is what gets JSON stringified */
+    var assets: Assets = js.native
+    
+    def clear(): Unit = js.native
+    
+    /** The Webpack compiler instance */
+    var compiler: Compiler | Null = js.native
+    
+    /** This is passed to the customize() hook */
+    var currentAsset: Asset | Null = js.native
     
     /** https://github.com/webdeveric/webpack-assets-manifest#options-read-the-schema */
-    var defaultOptions: Options = js.native
+    def defaultOptions: Options = js.native
     
     /** Delete an item from the manifest */
     def delete(key: String): Boolean = js.native
+    
+    /** Emit the assets manifest */
+    def emitAssetsManifest(compilation: Compilation): js.Promise[Unit] = js.native
     
     /** Replace backslash with forward slash */
     def fixKey(key: String): String = js.native
     
     /** Get an item from the manifest */
-    def get(key: String): js.Any = js.native
-    def get(key: String, defaultValue: String): js.Any = js.native
+    def get(key: String): Any = js.native
+    def get(key: String, defaultValue: Any): Any = js.native
+    
+    /** Get assets and hot module replacement files from a compilation object */
+    def getCompilationAssets(compilation: Compilation): typings.webpackAssetsManifest.anon.Assets = js.native
     
     /** Get the file extension */
     def getExtension(filename: String): String = js.native
+    
+    /** Get the parsed output path. [hash] is supported. */
+    def getManifestPath(compilation: Compilation, filename: String): String = js.native
     
     /** Get the file system path to the manifest */
     def getOutputPath(): String = js.native
     
     /**
-      * Get a [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler) for the manifest
+      * Get a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler|Proxy} for the manifest.
+      * This allows you to use `[]` to manage entries.
       *
-      * @param raw - Use `setRaw` instead of `set`
+      * @param raw - Should the proxy use `setRaw` instead of `set`?
       */
-    def getProxy(): ProxyHandler[WebpackAssetsManifest] = js.native
-    def getProxy(raw: Boolean): ProxyHandler[WebpackAssetsManifest] = js.native
+    def getProxy(): Assets = js.native
+    def getProxy(raw: Boolean): Assets = js.native
     
     /** Get the public path for the filename */
     def getPublicPath(filename: String): String = js.native
+    
+    /** Last chance to write the manifest to disk */
+    def handleAfterEmit(compilation: Compilation): js.Promise[Unit] = js.native
+    
+    /** Hook into compilation objects */
+    def handleCompilation(compilation: Compilation): Unit = js.native
+    
+    /** Record asset names */
+    def handleNormalModuleLoader(compilation: Compilation, loaderContext: LoaderContext[Any], module: Module): Unit = js.native
+    
+    /** Record details of Asset Modules */
+    def handleProcessAssetsAnalyse(compilation: Compilation): Unit = js.native
+    
+    /** Gather asset details */
+    def handleProcessAssetsReport(compilation: Compilation): js.Promise[Unit] = js.native
+    
+    /** Hook into the compilation object */
+    def handleThisCompilation(compilation: Compilation): Unit = js.native
+    
+    /** Cleanup before running Webpack */
+    def handleWatchRun(): Unit = js.native
     
     /** Determine if an item exist in the manifest */
     def has(key: String): Boolean = js.native
@@ -299,19 +361,50 @@ object mod {
     /** https://github.com/webdeveric/webpack-assets-manifest#hooks */
     var hooks: AfterOptions = js.native
     
-    /** Determine if the filename matches the HMR filename pattern */
-    def isHMR(filename: String): Boolean = js.native
+    /**
+      * Determine if webpack-dev-server is being used
+      *
+      * The WEBPACK_DEV_SERVER / WEBPACK_SERVE env vars cannot be relied upon.
+      * See issue {@link https://github.com/webdeveric/webpack-assets-manifest/issues/125|#125}
+      */
+    def inDevServer(): Boolean = js.native
     
     /** Determine if the manifest data is currently being merged */
-    var isMerging: Boolean = js.native
+    def isMerging: Boolean = js.native
+    
+    /** Merge data if the output file already exists */
+    def maybeMerge(): Unit = js.native
     
     /** https://github.com/webdeveric/webpack-assets-manifest#options-read-the-schema */
     var options: Options = js.native
     
+    /** Process compilation assets */
+    def processAssetsByChunkName(assets: Record[String, String | js.Array[String]]): /* import warning: importer.ImportType#apply Failed type conversion: this['assetNames'] */ js.Any = js.native
+    def processAssetsByChunkName(assets: Record[String, String | js.Array[String]], hmrFiles: Set[String]): /* import warning: importer.ImportType#apply Failed type conversion: this['assetNames'] */ js.Any = js.native
+    
+    /**
+      * When using webpack 5 persistent cache, loaderContext.emitFile sometimes doesn't
+      * get called and so the asset names are not recorded. To work around this, lets
+      * loops over the stats.assets and record the asset names.
+      */
+    def processStatsAssets(assets: js.Array[Asset]): Unit = js.native
+    
+    /** Add the SRI hash to the assetsInfo map */
+    def recordSubresourceIntegrity(compilation: Compilation): Unit = js.native
+    
     /** Add an item to the manifest */
-    def set(key: String, value: String): this.type = js.native
+    def set(key: String, value: Any): this.type = js.native
     
     /** Add item to assets without modifying the key or value */
-    def setRaw(key: String, value: String): this.type = js.native
+    def setRaw(key: String, value: Any): this.type = js.native
+    
+    /** Determine if the manifest should be written to disk with fs */
+    def shouldWriteToDisk(compilation: Compilation): Boolean = js.native
+    
+    /** Get the data for `JSON.stringify()` */
+    def toJSON(): Any = js.native
+    
+    /** Write the asset manifest to the file system */
+    def writeTo(destination: String): js.Promise[Unit] = js.native
   }
 }

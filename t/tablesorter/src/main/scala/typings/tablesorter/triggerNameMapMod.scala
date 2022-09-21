@@ -189,15 +189,15 @@ object triggerNameMapMod {
       
       inline def setRemoveWidget(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "removeWidget", value.asInstanceOf[js.Any])
       
-      inline def setRemoveWidgetVarargs(value: String*): Self = StObject.set(x, "removeWidget", js.Array(value :_*))
+      inline def setRemoveWidgetVarargs(value: String*): Self = StObject.set(x, "removeWidget", js.Array(value*))
       
       inline def setSearch(value: js.Array[js.UndefOr[js.Array[String]]] | Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      inline def setSearchVarargs(value: js.UndefOr[js.Array[String]]*): Self = StObject.set(x, "search", js.Array(value :_*))
+      inline def setSearchVarargs(value: js.UndefOr[js.Array[String]]*): Self = StObject.set(x, "search", js.Array(value*))
       
       inline def setSortReset(value: js.Array[js.UndefOr[TriggerCallbackHandler[TElement]]]): Self = StObject.set(x, "sortReset", value.asInstanceOf[js.Any])
       
-      inline def setSortResetVarargs(value: js.UndefOr[TriggerCallbackHandler[TElement]]*): Self = StObject.set(x, "sortReset", js.Array(value :_*))
+      inline def setSortResetVarargs(value: js.UndefOr[TriggerCallbackHandler[TElement]]*): Self = StObject.set(x, "sortReset", js.Array(value*))
       
       inline def setSorton(
         value: js.Tuple2[

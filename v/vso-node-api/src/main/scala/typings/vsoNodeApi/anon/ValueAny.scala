@@ -8,11 +8,11 @@ trait ValueAny extends StObject {
   
   var key: String
   
-  var value: js.Any
+  var value: scala.Any
 }
 object ValueAny {
   
-  inline def apply(key: String, value: js.Any): ValueAny = {
+  inline def apply(key: String, value: scala.Any): ValueAny = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAny]
   }
@@ -21,6 +21,6 @@ object ValueAny {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: scala.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -4,65 +4,18 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.sentryBrowser.globalhandlersMod.GlobalHandlersIntegrations
 import typings.sentryBrowser.integrationsMod.Breadcrumbs
+import typings.sentryBrowser.integrationsMod.Dedupe
 import typings.sentryBrowser.integrationsMod.GlobalHandlers
+import typings.sentryBrowser.integrationsMod.HttpContext
 import typings.sentryBrowser.integrationsMod.LinkedErrors
 import typings.sentryBrowser.integrationsMod.TryCatch
-import typings.sentryBrowser.integrationsMod.UserAgent
 import typings.sentryCore.mod.Integrations.FunctionToString
 import typings.sentryCore.mod.Integrations.InboundFilters
-import typings.sentryTypes.requestMod.SentryRequestType
-import typings.sentryTypes.responseMod.Response
-import typings.std.Record
-import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    var attachStacktrace: js.UndefOr[Boolean] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
-      
-      inline def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
-    }
-  }
-  
-  trait AttachStacktrace extends StObject {
-    
-    var attachStacktrace: js.UndefOr[Boolean] = js.undefined
-    
-    var rejection: js.UndefOr[Boolean] = js.undefined
-  }
-  object AttachStacktrace {
-    
-    inline def apply(): AttachStacktrace = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AttachStacktrace]
-    }
-    
-    extension [Self <: AttachStacktrace](x: Self) {
-      
-      inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
-      
-      inline def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
-      
-      inline def setRejection(value: Boolean): Self = StObject.set(x, "rejection", value.asInstanceOf[js.Any])
-      
-      inline def setRejectionUndefined: Self = StObject.set(x, "rejection", js.undefined)
-    }
-  }
   
   trait Email extends StObject {
     
@@ -89,45 +42,53 @@ object anon {
     }
   }
   
-  @js.native
-  trait Headers extends StObject {
+  /* Inlined std.Error & {  framesToPop :number | undefined,   stacktrace :string | undefined} */
+  trait ErrorframesToPopnumberund extends StObject {
     
-    var headers: Record[String, String | Null] = js.native
+    /* standard es2022.error */
+    var cause: js.UndefOr[Any] = js.undefined
     
-    def reject(): Unit = js.native
-    def reject(reason: js.Any): Unit = js.native
+    var framesToPop: js.UndefOr[Double] = js.undefined
     
-    var requestType: SentryRequestType = js.native
+    /* standard es5 */
+    var message: String
     
-    def resolve(): Unit = js.native
-    def resolve(value: js.Thenable[Response]): Unit = js.native
-    def resolve(value: Response): Unit = js.native
+    /* standard es5 */
+    var name: String
     
-    var response: typings.std.Response | XMLHttpRequest = js.native
+    /* standard es5 */
+    var stack: js.UndefOr[String] = js.undefined
+    
+    var stacktrace: js.UndefOr[String] = js.undefined
   }
-  
-  trait Key extends StObject {
+  object ErrorframesToPopnumberund {
     
-    var key: js.UndefOr[String] = js.undefined
-    
-    var limit: js.UndefOr[Double] = js.undefined
-  }
-  object Key {
-    
-    inline def apply(): Key = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Key]
+    inline def apply(message: String, name: String): ErrorframesToPopnumberund = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ErrorframesToPopnumberund]
     }
     
-    extension [Self <: Key](x: Self) {
+    extension [Self <: ErrorframesToPopnumberund](x: Self) {
       
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
-      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setFramesToPop(value: Double): Self = StObject.set(x, "framesToPop", value.asInstanceOf[js.Any])
       
-      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setFramesToPopUndefined: Self = StObject.set(x, "framesToPop", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      
+      inline def setStacktrace(value: String): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
+      
+      inline def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
     }
   }
   
@@ -150,12 +111,12 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@sentry/browser.@sentry/browser/dist/integrations/breadcrumbs.BreadcrumbsOptions> */
+  /* Inlined std.Partial<@sentry/browser.@sentry/browser/types/integrations/breadcrumbs.BreadcrumbsOptions> */
   trait PartialBreadcrumbsOptions extends StObject {
     
     var console: js.UndefOr[Boolean] = js.undefined
     
-    var dom: js.UndefOr[Boolean] = js.undefined
+    var dom: js.UndefOr[Boolean | SerializeAttribute] = js.undefined
     
     var fetch: js.UndefOr[Boolean] = js.undefined
     
@@ -178,7 +139,7 @@ object anon {
       
       inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
       
-      inline def setDom(value: Boolean): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: Boolean | SerializeAttribute): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
       inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
       
@@ -200,7 +161,33 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@sentry/browser.@sentry/browser/dist/integrations/trycatch.TryCatchOptions> */
+  /* Inlined std.Partial<@sentry/browser.@sentry/browser/types/integrations/linkederrors.LinkedErrorsOptions> */
+  trait PartialLinkedErrorsOption extends StObject {
+    
+    var key: js.UndefOr[String] = js.undefined
+    
+    var limit: js.UndefOr[Double] = js.undefined
+  }
+  object PartialLinkedErrorsOption {
+    
+    inline def apply(): PartialLinkedErrorsOption = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialLinkedErrorsOption]
+    }
+    
+    extension [Self <: PartialLinkedErrorsOption](x: Self) {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<@sentry/browser.@sentry/browser/types/integrations/trycatch.TryCatchOptions> */
   trait PartialTryCatchOptions extends StObject {
     
     var XMLHttpRequest: js.UndefOr[Boolean] = js.undefined
@@ -226,7 +213,7 @@ object anon {
       
       inline def setEventTargetUndefined: Self = StObject.set(x, "eventTarget", js.undefined)
       
-      inline def setEventTargetVarargs(value: String*): Self = StObject.set(x, "eventTarget", js.Array(value :_*))
+      inline def setEventTargetVarargs(value: String*): Self = StObject.set(x, "eventTarget", js.Array(value*))
       
       inline def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
       
@@ -243,6 +230,70 @@ object anon {
       inline def setXMLHttpRequest(value: Boolean): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
       
       inline def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Readonly<@sentry/browser.@sentry/browser/types/integrations/breadcrumbs.BreadcrumbsOptions> */
+  trait ReadonlyBreadcrumbsOption extends StObject {
+    
+    val console: Boolean
+    
+    val dom: Boolean | SerializeAttribute
+    
+    val fetch: Boolean
+    
+    val history: Boolean
+    
+    val sentry: Boolean
+    
+    val xhr: Boolean
+  }
+  object ReadonlyBreadcrumbsOption {
+    
+    inline def apply(
+      console: Boolean,
+      dom: Boolean | SerializeAttribute,
+      fetch: Boolean,
+      history: Boolean,
+      sentry: Boolean,
+      xhr: Boolean
+    ): ReadonlyBreadcrumbsOption = {
+      val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], dom = dom.asInstanceOf[js.Any], fetch = fetch.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], sentry = sentry.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReadonlyBreadcrumbsOption]
+    }
+    
+    extension [Self <: ReadonlyBreadcrumbsOption](x: Self) {
+      
+      inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      
+      inline def setDom(value: Boolean | SerializeAttribute): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      
+      inline def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      
+      inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      
+      inline def setSentry(value: Boolean): Self = StObject.set(x, "sentry", value.asInstanceOf[js.Any])
+      
+      inline def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SerializeAttribute extends StObject {
+    
+    var serializeAttribute: String | js.Array[String]
+  }
+  object SerializeAttribute {
+    
+    inline def apply(serializeAttribute: String | js.Array[String]): SerializeAttribute = {
+      val __obj = js.Dynamic.literal(serializeAttribute = serializeAttribute.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SerializeAttribute]
+    }
+    
+    extension [Self <: SerializeAttribute](x: Self) {
+      
+      inline def setSerializeAttribute(value: String | js.Array[String]): Self = StObject.set(x, "serializeAttribute", value.asInstanceOf[js.Any])
+      
+      inline def setSerializeAttributeVarargs(value: String*): Self = StObject.set(x, "serializeAttribute", js.Array(value*))
     }
   }
   
@@ -281,6 +332,17 @@ object anon {
   }
   
   @js.native
+  trait TypeofDedupe
+    extends StObject
+       with Instantiable0[Dedupe] {
+    
+    /**
+      * @inheritDoc
+      */
+    var id: String = js.native
+  }
+  
+  @js.native
   trait TypeofGlobalHandlers
     extends StObject
        with Instantiable0[GlobalHandlers]
@@ -293,10 +355,21 @@ object anon {
   }
   
   @js.native
+  trait TypeofHttpContext
+    extends StObject
+       with Instantiable0[HttpContext] {
+    
+    /**
+      * @inheritDoc
+      */
+    var id: String = js.native
+  }
+  
+  @js.native
   trait TypeofLinkedErrors
     extends StObject
        with Instantiable0[LinkedErrors]
-       with Instantiable1[/* options */ Key, LinkedErrors] {
+       with Instantiable1[/* options */ PartialLinkedErrorsOption, LinkedErrors] {
     
     /**
       * @inheritDoc
@@ -309,17 +382,6 @@ object anon {
     extends StObject
        with Instantiable0[TryCatch]
        with Instantiable1[/* options */ PartialTryCatchOptions, TryCatch] {
-    
-    /**
-      * @inheritDoc
-      */
-    var id: String = js.native
-  }
-  
-  @js.native
-  trait TypeofUserAgent
-    extends StObject
-       with Instantiable0[UserAgent] {
     
     /**
       * @inheritDoc

@@ -16,8 +16,8 @@ trait IosTestSetup extends StObject {
   var networkProfile: js.UndefOr[String] = js.undefined
   
   /**
-    * List of directories on the device to upload to Cloud Storage at the end of the test. Directories should either be in a shared directory (e.g. /private/var/mobile/Media) or within an
-    * accessible directory inside the app's filesystem (e.g. /Documents) by specifying the bundle id.
+    * List of directories on the device to upload to Cloud Storage at the end of the test. Directories should either be in a shared directory (such as /private/var/mobile/Media) or within
+    * an accessible directory inside the app's filesystem (such as /Documents) by specifying the bundle ID.
     */
   var pullDirectories: js.UndefOr[js.Array[IosDeviceFile]] = js.undefined
   
@@ -37,7 +37,7 @@ object IosTestSetup {
     
     inline def setAdditionalIpasUndefined: Self = StObject.set(x, "additionalIpas", js.undefined)
     
-    inline def setAdditionalIpasVarargs(value: FileReference*): Self = StObject.set(x, "additionalIpas", js.Array(value :_*))
+    inline def setAdditionalIpasVarargs(value: FileReference*): Self = StObject.set(x, "additionalIpas", js.Array(value*))
     
     inline def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
@@ -47,12 +47,12 @@ object IosTestSetup {
     
     inline def setPullDirectoriesUndefined: Self = StObject.set(x, "pullDirectories", js.undefined)
     
-    inline def setPullDirectoriesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pullDirectories", js.Array(value :_*))
+    inline def setPullDirectoriesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pullDirectories", js.Array(value*))
     
     inline def setPushFiles(value: js.Array[IosDeviceFile]): Self = StObject.set(x, "pushFiles", value.asInstanceOf[js.Any])
     
     inline def setPushFilesUndefined: Self = StObject.set(x, "pushFiles", js.undefined)
     
-    inline def setPushFilesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pushFiles", js.Array(value :_*))
+    inline def setPushFilesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pushFiles", js.Array(value*))
   }
 }

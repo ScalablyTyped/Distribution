@@ -15,7 +15,7 @@ trait SelfDecorator
     * which tells the DI framework to start dependency resolution from the local injector.
     *
     * Resolution works upward through the injector hierarchy, so the children
-    * of this class must configure their own providers or be prepared for a null result.
+    * of this class must configure their own providers or be prepared for a `null` result.
     *
     * @usageNotes
     *
@@ -30,5 +30,5 @@ trait SelfDecorator
     * @see `Optional`
     *
     */
-  def apply(): js.Any = js.native
+  def apply(): Any = js.native
 }

@@ -15,14 +15,14 @@ object octreeSceneComponentMod {
   
   @JSImport("babylonjs/Culling/Octrees/octreeSceneComponent", "OctreeSceneComponent")
   @js.native
-  class OctreeSceneComponent protected () extends StObject {
-    /**
-      * Creates a new instance of the component for the given scene
-      * @param scene Defines the scene to register the component in
-      */
+  /**
+    * Creates a new instance of the component for the given scene
+    * @param scene Defines the scene to register the component in
+    */
+  open class OctreeSceneComponent () extends StObject {
     def this(scene: Scene) = this()
     
-    /* private */ var _tempRay: js.Any = js.native
+    /* private */ var _tempRay: Any = js.native
     
     /**
       * Indicates if the meshes have been checked to make sure they are isEnabled()
@@ -30,7 +30,7 @@ object octreeSceneComponentMod {
     val checksIsEnabled: Boolean = js.native
     
     /**
-      * Disposes the component and the associated ressources.
+      * Disposes the component and the associated resources.
       */
     def dispose(): Unit = js.native
     

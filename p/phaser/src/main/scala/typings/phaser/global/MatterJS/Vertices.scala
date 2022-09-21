@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Vertices")
 @js.native
-class Vertices ()
+open class Vertices ()
   extends StObject
      with typings.phaser.MatterJS.Vertices
 object Vertices {

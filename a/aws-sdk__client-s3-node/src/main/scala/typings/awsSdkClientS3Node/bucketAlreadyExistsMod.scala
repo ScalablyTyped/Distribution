@@ -8,5 +8,5 @@ object bucketAlreadyExistsMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/BucketAlreadyExists", "BucketAlreadyExists")
   @js.native
-  val BucketAlreadyExists: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BucketAlreadyExists: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

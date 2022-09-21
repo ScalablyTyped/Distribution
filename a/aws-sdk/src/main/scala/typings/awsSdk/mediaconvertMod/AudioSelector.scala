@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AudioSelector extends StObject {
   
   /**
+    * Apply audio timing corrections to help synchronize audio and video in your output. To apply timing corrections, your input must meet the following requirements: * Container: MP4, or MOV, with an accurate time-to-sample (STTS) table. * Audio track: AAC. Choose from the following audio timing correction settings: * Disabled (Default): Apply no correction. * Auto: Recommended for most inputs. MediaConvert analyzes the audio timing in your input and determines which correction setting to use, if needed. * Track: Adjust the duration of each audio frame by a constant amount to align the audio track length with STTS duration. Track-level correction does not affect pitch, and is recommended for tonal audio content such as music. * Frame: Adjust the duration of each audio frame by a variable amount to align audio frames with STTS timestamps. No corrections are made to already-aligned frames. Frame-level correction may affect the pitch of corrected frames, and is recommended for atonal audio content such as speech or percussion.
+    */
+  var AudioDurationCorrection: js.UndefOr[typings.awsSdk.mediaconvertMod.AudioDurationCorrection] = js.undefined
+  
+  /**
     * Selects a specific language code from within an audio source, using the ISO 639-2 or ISO 639-3 three-letter language code
     */
   var CustomLanguageCode: js.UndefOr[stringMin3Max3PatternAZaZ3] = js.undefined
@@ -20,8 +25,13 @@ trait AudioSelector extends StObject {
     * Specifies audio data from an external file source.
     */
   var ExternalAudioFileInput: js.UndefOr[
-    stringPatternS3MM2PPWWEEBBMMMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVV
+    stringPatternS3MM2PPWWEEBBMMMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEAATTMMOOSSOOGGGGaAHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDII
   ] = js.undefined
+  
+  /**
+    * Settings specific to audio sources in an HLS alternate rendition group. Specify the properties (renditionGroupId, renditionName or renditionLanguageCode) to identify the unique audio track among the alternative rendition groups present in the HLS manifest. If no unique track is found, or multiple tracks match the properties provided, the job fails. If no properties in hlsRenditionGroupSettings are specified, the default audio track within the video segment is chosen. If there is no audio within video segment, the alternative audio with DEFAULT=YES is chosen instead.
+    */
+  var HlsRenditionGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.HlsRenditionGroupSettings] = js.undefined
   
   /**
     * Selects a specific language code from within an audio source.
@@ -67,6 +77,10 @@ object AudioSelector {
   
   extension [Self <: AudioSelector](x: Self) {
     
+    inline def setAudioDurationCorrection(value: AudioDurationCorrection): Self = StObject.set(x, "AudioDurationCorrection", value.asInstanceOf[js.Any])
+    
+    inline def setAudioDurationCorrectionUndefined: Self = StObject.set(x, "AudioDurationCorrection", js.undefined)
+    
     inline def setCustomLanguageCode(value: stringMin3Max3PatternAZaZ3): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
     
     inline def setCustomLanguageCodeUndefined: Self = StObject.set(x, "CustomLanguageCode", js.undefined)
@@ -76,10 +90,14 @@ object AudioSelector {
     inline def setDefaultSelectionUndefined: Self = StObject.set(x, "DefaultSelection", js.undefined)
     
     inline def setExternalAudioFileInput(
-      value: stringPatternS3MM2PPWWEEBBMMMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVV
+      value: stringPatternS3MM2PPWWEEBBMMMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEAATTMMOOSSOOGGGGaAHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDII
     ): Self = StObject.set(x, "ExternalAudioFileInput", value.asInstanceOf[js.Any])
     
     inline def setExternalAudioFileInputUndefined: Self = StObject.set(x, "ExternalAudioFileInput", js.undefined)
+    
+    inline def setHlsRenditionGroupSettings(value: HlsRenditionGroupSettings): Self = StObject.set(x, "HlsRenditionGroupSettings", value.asInstanceOf[js.Any])
+    
+    inline def setHlsRenditionGroupSettingsUndefined: Self = StObject.set(x, "HlsRenditionGroupSettings", js.undefined)
     
     inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
@@ -93,7 +111,7 @@ object AudioSelector {
     
     inline def setPidsUndefined: Self = StObject.set(x, "Pids", js.undefined)
     
-    inline def setPidsVarargs(value: integerMin1Max2147483647*): Self = StObject.set(x, "Pids", js.Array(value :_*))
+    inline def setPidsVarargs(value: integerMin1Max2147483647*): Self = StObject.set(x, "Pids", js.Array(value*))
     
     inline def setProgramSelection(value: integerMin0Max8): Self = StObject.set(x, "ProgramSelection", value.asInstanceOf[js.Any])
     
@@ -111,6 +129,6 @@ object AudioSelector {
     
     inline def setTracksUndefined: Self = StObject.set(x, "Tracks", js.undefined)
     
-    inline def setTracksVarargs(value: integerMin1Max2147483647*): Self = StObject.set(x, "Tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: integerMin1Max2147483647*): Self = StObject.set(x, "Tracks", js.Array(value*))
   }
 }

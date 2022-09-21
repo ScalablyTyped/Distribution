@@ -1,25 +1,24 @@
 package typings.reactCalendarTimeline.mod
 
+import typings.react.mod.Component
+import typings.reactCalendarTimeline.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def defaultHeaderFormats: typings.reactCalendarTimeline.mod.LabelFormat = typings.reactCalendarTimeline.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultHeaderFormats").asInstanceOf[typings.reactCalendarTimeline.mod.LabelFormat]
+inline def defaultHeaderFormats: LabelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultHeaderFormats").asInstanceOf[LabelFormat]
 
-inline def defaultKeys: typings.reactCalendarTimeline.mod.TimelineKeys = typings.reactCalendarTimeline.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultKeys").asInstanceOf[typings.reactCalendarTimeline.mod.TimelineKeys]
+inline def defaultKeys: TimelineKeys = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultKeys").asInstanceOf[TimelineKeys]
 
-inline def defaultTimeSteps: typings.reactCalendarTimeline.mod.TimelineTimeSteps = typings.reactCalendarTimeline.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTimeSteps").asInstanceOf[typings.reactCalendarTimeline.mod.TimelineTimeSteps]
+inline def defaultTimeSteps: TimelineTimeSteps = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultTimeSteps").asInstanceOf[TimelineTimeSteps]
 
-type Id = scala.Double | java.lang.String
+type Id = Double | String
 
-type ReactCalendarTimeline[CustomItem /* <: typings.reactCalendarTimeline.mod.TimelineItemBase[js.Any] */, CustomGroup /* <: typings.reactCalendarTimeline.mod.TimelineGroupBase */] = typings.react.mod.Component[
-typings.reactCalendarTimeline.mod.ReactCalendarTimelineProps[CustomItem, CustomGroup], 
-js.Object, 
-js.Any]
+type ReactCalendarTimeline[CustomItem /* <: TimelineItemBase[Any] */, CustomGroup /* <: TimelineGroupBase */] = Component[ReactCalendarTimelineProps[CustomItem, CustomGroup], js.Object, Any]
 
-type TimelineGroup[CustomGroupFields] = typings.reactCalendarTimeline.mod.TimelineGroupBase & CustomGroupFields
+type TimelineGroup[CustomGroupFields] = TimelineGroupBase & CustomGroupFields
 
-type TimelineHeaderProps = typings.reactCalendarTimeline.mod.TimelineHeadersProps
+type TimelineHeaderProps = TimelineHeadersProps
 
-type TimelineItem[CustomItemFields, DateType] = typings.reactCalendarTimeline.mod.TimelineItemBase[DateType] & CustomItemFields
+type TimelineItem[CustomItemFields, DateType] = TimelineItemBase[DateType] & CustomItemFields

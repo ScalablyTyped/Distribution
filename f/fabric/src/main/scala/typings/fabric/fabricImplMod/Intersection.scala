@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "Intersection")
 @js.native
-class Intersection () extends StObject {
+open class Intersection () extends StObject {
   def this(status: String) = this()
   
   /**
@@ -18,6 +18,10 @@ class Intersection () extends StObject {
     * Appends points to intersection
     */
   def appendPoints(points: js.Array[Point]): Intersection = js.native
+  
+  var points: js.UndefOr[js.Array[Point]] = js.native
+  
+  var status: js.UndefOr[String] = js.native
 }
 /* static members */
 object Intersection {

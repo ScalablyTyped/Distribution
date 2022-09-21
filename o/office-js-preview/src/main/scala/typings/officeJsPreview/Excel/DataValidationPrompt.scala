@@ -5,33 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the user prompt properties for the data validation.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait DataValidationPrompt extends StObject {
   
   /**
-    *
     * Specifies the message of the prompt.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var message: String
   
   /**
-    *
     * Specifies if a prompt is shown when a user selects a cell with data validation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showPrompt: Boolean
   
   /**
-    *
     * Specifies the title for the prompt.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var title: String

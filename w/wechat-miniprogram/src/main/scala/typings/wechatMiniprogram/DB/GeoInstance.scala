@@ -36,7 +36,7 @@ object GeoInstance {
     __obj.asInstanceOf[typings.wechatMiniprogram.DB.GeoMultiPolygon]
   }
   
-  inline def GeoPoint(latitude: Double, longitude: Double, toJSON: () => Record[String, js.Any]): typings.wechatMiniprogram.DB.GeoPoint = {
+  inline def GeoPoint(latitude: Double, longitude: Double, toJSON: () => Record[String, Any]): typings.wechatMiniprogram.DB.GeoPoint = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[typings.wechatMiniprogram.DB.GeoPoint]
   }

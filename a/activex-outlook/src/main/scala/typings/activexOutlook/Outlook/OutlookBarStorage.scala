@@ -15,7 +15,7 @@ trait OutlookBarStorage extends StObject {
   /* private */ @JSName("Outlook.OutlookBarStorage_typekey")
   var OutlookDotOutlookBarStorage_typekey: OutlookBarStorage
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -26,7 +26,7 @@ object OutlookBarStorage {
     Class: OlObjectClass,
     Groups: OutlookBarGroups,
     OutlookDotOutlookBarStorage_typekey: OutlookBarStorage,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): OutlookBarStorage = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Groups = Groups.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object OutlookBarStorage {
     
     inline def setOutlookDotOutlookBarStorage_typekey(value: OutlookBarStorage): Self = StObject.set(x, "Outlook.OutlookBarStorage_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

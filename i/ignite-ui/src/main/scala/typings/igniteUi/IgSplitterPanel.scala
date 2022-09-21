@@ -10,7 +10,7 @@ trait IgSplitterPanel
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets whether the panel is initially collapsed

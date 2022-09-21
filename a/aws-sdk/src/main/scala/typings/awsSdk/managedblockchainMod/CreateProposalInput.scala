@@ -30,6 +30,11 @@ trait CreateProposalInput extends StObject {
     *  The unique identifier of the network for which the proposal is made.
     */
   var NetworkId: ResourceIdString
+  
+  /**
+    * Tags to assign to the proposal. Each tag consists of a key and optional value. When specifying tags during creation, you can specify multiple key-value pairs in a single request, with an overall maximum of 50 tags added to each resource. If the proposal is for a network invitation, the invitation inherits the tags added to the proposal. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Ethereum Developer Guide, or Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide.
+    */
+  var Tags: js.UndefOr[InputTagMap] = js.undefined
 }
 object CreateProposalInput {
   
@@ -56,5 +61,9 @@ object CreateProposalInput {
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
     inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: InputTagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

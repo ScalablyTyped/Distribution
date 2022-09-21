@@ -9,7 +9,7 @@ trait ServiceError
   extends StObject
      with Error {
   
-  var body: js.Any
+  var body: Any
   
   var request: WebResource
   
@@ -20,7 +20,7 @@ trait ServiceError
 object ServiceError {
   
   inline def apply(
-    body: js.Any,
+    body: Any,
     message: String,
     name: String,
     request: WebResource,
@@ -33,7 +33,7 @@ object ServiceError {
   
   extension [Self <: ServiceError](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setRequest(value: WebResource): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

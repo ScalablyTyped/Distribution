@@ -3,7 +3,6 @@ package typings.awsSdkClientSqsNode
 import typings.awsSdkClientSqsNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientSqsNode.typesDeleteMessageBatchRequestEntryMod.DeleteMessageBatchRequestEntry
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesDeleteMessageBatchInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -39,7 +38,7 @@ object typesDeleteMessageBatchInputMod {
     /**
       * <p>A list of receipt handles for the messages to be deleted.</p>
       */
-    var Entries: js.Array[DeleteMessageBatchRequestEntry] | Iterable[DeleteMessageBatchRequestEntry]
+    var Entries: js.Array[DeleteMessageBatchRequestEntry] | js.Iterable[DeleteMessageBatchRequestEntry]
     
     /**
       * <p>The URL of the Amazon SQS queue from which messages are deleted.</p> <p>Queue URLs and names are case-sensitive.</p>
@@ -49,7 +48,7 @@ object typesDeleteMessageBatchInputMod {
   object DeleteMessageBatchInput {
     
     inline def apply(
-      Entries: js.Array[DeleteMessageBatchRequestEntry] | Iterable[DeleteMessageBatchRequestEntry],
+      Entries: js.Array[DeleteMessageBatchRequestEntry] | js.Iterable[DeleteMessageBatchRequestEntry],
       QueueUrl: String
     ): DeleteMessageBatchInput = {
       val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
@@ -63,7 +62,7 @@ object typesDeleteMessageBatchInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -72,9 +71,9 @@ object typesDeleteMessageBatchInputMod {
       
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      inline def setEntries(value: js.Array[DeleteMessageBatchRequestEntry] | Iterable[DeleteMessageBatchRequestEntry]): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[DeleteMessageBatchRequestEntry] | js.Iterable[DeleteMessageBatchRequestEntry]): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: DeleteMessageBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: DeleteMessageBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
       
       inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     }

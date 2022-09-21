@@ -14,6 +14,8 @@ trait Fraction extends StObject {
   
   def copy(copy: Fraction): Fraction = js.native
   
+  var denominator: Double = js.native
+  
   def divide(param1: Double, param2: Double): Fraction = js.native
   def divide(param1: Fraction, param2: Fraction): Fraction = js.native
   
@@ -31,6 +33,8 @@ trait Fraction extends StObject {
   
   def multiply(param1: Double, param2: Double): Fraction = js.native
   def multiply(param1: Fraction, param2: Fraction): Fraction = js.native
+  
+  var numerator: Double = js.native
   
   def parse(str: String): Fraction = js.native
   

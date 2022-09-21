@@ -23,7 +23,7 @@ trait IGridMetadata extends StObject {
   
   var RecordKeyHash: js.UndefOr[String] = js.undefined
   
-  var RecordKeyOrderChanged: js.UndefOr[js.Any] = js.undefined
+  var RecordKeyOrderChanged: js.UndefOr[Any] = js.undefined
 }
 object IGridMetadata {
   
@@ -64,7 +64,7 @@ object IGridMetadata {
     
     inline def setRecordKeyHashUndefined: Self = StObject.set(x, "RecordKeyHash", js.undefined)
     
-    inline def setRecordKeyOrderChanged(value: js.Any): Self = StObject.set(x, "RecordKeyOrderChanged", value.asInstanceOf[js.Any])
+    inline def setRecordKeyOrderChanged(value: Any): Self = StObject.set(x, "RecordKeyOrderChanged", value.asInstanceOf[js.Any])
     
     inline def setRecordKeyOrderChangedUndefined: Self = StObject.set(x, "RecordKeyOrderChanged", js.undefined)
   }

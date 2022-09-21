@@ -18,7 +18,7 @@ trait ASPxClientHtmlEditorCustomDialogClosingEventArgs
 }
 object ASPxClientHtmlEditorCustomDialogClosingEventArgs {
   
-  inline def apply(handled: Boolean, name: String, status: js.Any): ASPxClientHtmlEditorCustomDialogClosingEventArgs = {
+  inline def apply(handled: Boolean, name: String, status: Any): ASPxClientHtmlEditorCustomDialogClosingEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogClosingEventArgs]
   }

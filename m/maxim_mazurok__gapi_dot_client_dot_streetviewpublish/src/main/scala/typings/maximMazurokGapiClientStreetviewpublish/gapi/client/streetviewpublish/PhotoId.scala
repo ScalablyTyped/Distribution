@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PhotoId extends StObject {
   
-  /** Required. A unique identifier for a photo. */
+  /** A unique identifier for a photo. */
   var id: js.UndefOr[String] = js.undefined
 }
 object PhotoId {

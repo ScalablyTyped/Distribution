@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.Publishing")
 @js.native
-class Publishing () extends StObject {
+open class Publishing () extends StObject {
   def this(args: Order) = this()
   
   var ascending: js.UndefOr[Boolean] = js.native

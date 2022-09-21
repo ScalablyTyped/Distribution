@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDedicatedIpPoolsResponse extends StObject {
   
   /**
-    * A list of all of the dedicated IP pools that are associated with your AWS account in the current Region.
+    * A list of all of the dedicated IP pools that are associated with your Amazon Web Services account in the current Region.
     */
   var DedicatedIpPools: js.UndefOr[ListOfDedicatedIpPools] = js.undefined
   
@@ -29,7 +29,7 @@ object ListDedicatedIpPoolsResponse {
     
     inline def setDedicatedIpPoolsUndefined: Self = StObject.set(x, "DedicatedIpPools", js.undefined)
     
-    inline def setDedicatedIpPoolsVarargs(value: PoolName*): Self = StObject.set(x, "DedicatedIpPools", js.Array(value :_*))
+    inline def setDedicatedIpPoolsVarargs(value: PoolName*): Self = StObject.set(x, "DedicatedIpPools", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

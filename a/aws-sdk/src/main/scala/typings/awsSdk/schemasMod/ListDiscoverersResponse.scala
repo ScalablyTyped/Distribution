@@ -29,7 +29,7 @@ object ListDiscoverersResponse {
     
     inline def setDiscoverersUndefined: Self = StObject.set(x, "Discoverers", js.undefined)
     
-    inline def setDiscoverersVarargs(value: DiscovererSummary*): Self = StObject.set(x, "Discoverers", js.Array(value :_*))
+    inline def setDiscoverersVarargs(value: DiscovererSummary*): Self = StObject.set(x, "Discoverers", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

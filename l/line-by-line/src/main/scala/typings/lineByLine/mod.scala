@@ -21,7 +21,7 @@ object mod {
   
   @JSImport("line-by-line", JSImport.Namespace)
   @js.native
-  class ^ protected () extends LineByLineReader {
+  open class ^ protected () extends LineByLineReader {
     /**
       * Constructs a new `LineByLineReader` from a path to a file.
       * @param filePath The path to the file to read.
@@ -59,7 +59,7 @@ object mod {
       * @param listener A listener that receives the error object.
       */
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     /**
       * Emitted on every line read.
       * @param event

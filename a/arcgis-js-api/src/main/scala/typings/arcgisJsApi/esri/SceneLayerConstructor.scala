@@ -17,5 +17,5 @@ trait SceneLayerConstructor
 Instantiable0[SceneLayer]
      with Instantiable1[/* properties */ SceneLayerProperties, SceneLayer] {
   
-  def fromJSON(json: js.Any): SceneLayer = js.native
+  def fromJSON(json: Any): SceneLayer = js.native
 }

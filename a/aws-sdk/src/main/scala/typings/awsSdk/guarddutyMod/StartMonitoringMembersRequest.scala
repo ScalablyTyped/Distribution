@@ -12,7 +12,7 @@ trait StartMonitoringMembersRequest extends StObject {
   var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
   
   /**
-    * The unique ID of the detector of the GuardDuty master account associated with the member accounts to monitor.
+    * The unique ID of the detector of the GuardDuty administrator account associated with the member accounts to monitor.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
@@ -27,7 +27,7 @@ object StartMonitoringMembersRequest {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }

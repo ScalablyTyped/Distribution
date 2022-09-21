@@ -8,7 +8,7 @@ object slidingMarkerMod {
   
   @JSImport("SlidingMarker", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with SlidingMarker {
     def this(opts: SlidingMarkerOptions) = this()

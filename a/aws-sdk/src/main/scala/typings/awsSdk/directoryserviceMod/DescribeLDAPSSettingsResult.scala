@@ -29,7 +29,7 @@ object DescribeLDAPSSettingsResult {
     
     inline def setLDAPSSettingsInfoUndefined: Self = StObject.set(x, "LDAPSSettingsInfo", js.undefined)
     
-    inline def setLDAPSSettingsInfoVarargs(value: LDAPSSettingInfo*): Self = StObject.set(x, "LDAPSSettingsInfo", js.Array(value :_*))
+    inline def setLDAPSSettingsInfoVarargs(value: LDAPSSettingInfo*): Self = StObject.set(x, "LDAPSSettingsInfo", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

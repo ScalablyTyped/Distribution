@@ -14,7 +14,7 @@ trait RequestSuccessCallbackResult extends StObject {
   /**
     * 开发者服务器返回的 HTTP Response Header
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
   
   /**
     * 开发者服务器返回的 HTTP 状态码
@@ -34,7 +34,7 @@ object RequestSuccessCallbackResult {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     

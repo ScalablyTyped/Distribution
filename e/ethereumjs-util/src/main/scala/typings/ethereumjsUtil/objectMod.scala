@@ -10,6 +10,6 @@ object objectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defineProperties(self: js.Any, fields: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperties")(self.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def defineProperties(self: js.Any, fields: js.Any, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperties")(self.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineProperties(self: Any, fields: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperties")(self.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineProperties(self: Any, fields: Any, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperties")(self.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

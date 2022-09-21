@@ -16,7 +16,7 @@ trait JQueryMobileOptions extends StObject {
   
   var autoInitializePage: js.UndefOr[Boolean] = js.undefined
   
-  var buttonMarkup: js.Any
+  var buttonMarkup: Any
   
   var defaultDialogTransition: js.UndefOr[String] = js.undefined
   
@@ -54,11 +54,11 @@ trait JQueryMobileOptions extends StObject {
   
   var touchOverflowEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var transitionFallbacks: js.Any
+  var transitionFallbacks: Any
 }
 object JQueryMobileOptions {
   
-  inline def apply(buttonMarkup: js.Any, transitionFallbacks: js.Any): JQueryMobileOptions = {
+  inline def apply(buttonMarkup: Any, transitionFallbacks: Any): JQueryMobileOptions = {
     val __obj = js.Dynamic.literal(buttonMarkup = buttonMarkup.asInstanceOf[js.Any], transitionFallbacks = transitionFallbacks.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryMobileOptions]
   }
@@ -85,7 +85,7 @@ object JQueryMobileOptions {
     
     inline def setAutoInitializePageUndefined: Self = StObject.set(x, "autoInitializePage", js.undefined)
     
-    inline def setButtonMarkup(value: js.Any): Self = StObject.set(x, "buttonMarkup", value.asInstanceOf[js.Any])
+    inline def setButtonMarkup(value: Any): Self = StObject.set(x, "buttonMarkup", value.asInstanceOf[js.Any])
     
     inline def setDefaultDialogTransition(value: String): Self = StObject.set(x, "defaultDialogTransition", value.asInstanceOf[js.Any])
     
@@ -159,6 +159,6 @@ object JQueryMobileOptions {
     
     inline def setTouchOverflowEnabledUndefined: Self = StObject.set(x, "touchOverflowEnabled", js.undefined)
     
-    inline def setTransitionFallbacks(value: js.Any): Self = StObject.set(x, "transitionFallbacks", value.asInstanceOf[js.Any])
+    inline def setTransitionFallbacks(value: Any): Self = StObject.set(x, "transitionFallbacks", value.asInstanceOf[js.Any])
   }
 }

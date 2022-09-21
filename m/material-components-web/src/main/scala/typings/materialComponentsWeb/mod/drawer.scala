@@ -1,9 +1,9 @@
 package typings.materialComponentsWeb.mod
 
+import typings.materialBase.Element
 import typings.materialDom.focusTrapMod.FocusTrap
 import typings.materialDrawer.anon.PartialMDCDrawerAdapter
 import typings.materialDrawer.utilMod.MDCDrawerFocusTrapFactory
-import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,20 +13,20 @@ object drawer {
   
   @JSImport("material-components-web", "drawer.MDCDismissibleDrawerFoundation")
   @js.native
-  class MDCDismissibleDrawerFoundation ()
+  open class MDCDismissibleDrawerFoundation ()
     extends typings.materialDrawer.mod.MDCDismissibleDrawerFoundation {
     def this(adapter: PartialMDCDrawerAdapter) = this()
   }
   
   @JSImport("material-components-web", "drawer.MDCDrawer")
   @js.native
-  class MDCDrawer protected ()
+  open class MDCDrawer protected ()
     extends typings.materialDrawer.mod.MDCDrawer {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -36,38 +36,16 @@ object drawer {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialDrawer.componentMod.MDCDrawer = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDrawer.componentMod.MDCDrawer]
+    inline def attachTo(root: typings.std.Element): typings.materialDrawer.componentMod.MDCDrawer = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDrawer.componentMod.MDCDrawer]
   }
   
   @JSImport("material-components-web", "drawer.MDCModalDrawerFoundation")
   @js.native
-  class MDCModalDrawerFoundation ()
+  open class MDCModalDrawerFoundation ()
     extends typings.materialDrawer.mod.MDCModalDrawerFoundation {
     def this(adapter: PartialMDCDrawerAdapter) = this()
   }
   
-  /**
-    * @license
-    * Copyright 2016 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object cssClasses {
     
     @JSImport("material-components-web", "drawer.cssClasses")
@@ -126,6 +104,16 @@ object drawer {
     @js.native
     def CLOSE_EVENT: String = js.native
     inline def CLOSE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "drawer.strings.LIST_ITEM_ACTIVATED_SELECTOR")
+    @js.native
+    def LIST_ITEM_ACTIVATED_SELECTOR: String = js.native
+    inline def LIST_ITEM_ACTIVATED_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_ITEM_ACTIVATED_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "drawer.strings.LIST_SELECTOR")
+    @js.native
+    def LIST_SELECTOR: String = js.native
+    inline def LIST_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "drawer.strings.OPEN_EVENT")
     @js.native

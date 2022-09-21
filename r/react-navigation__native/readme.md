@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation__native
 
-Typings are for version 5.8.10
+Typings are for version 6.0.13
 
 ## Library description:
 React Native integration for React Navigation
@@ -10,10 +10,10 @@ React Native integration for React Navigation
 | ------------------ | :-------------: |
 | Full name          | @react-navigation/native |
 | Keywords           | react-native, react-navigation, ios, android |
-| # releases         | 135 |
-| # dependents       | 163 |
-| # downloads        | 16630148 |
-| # stars            | 0 |
+| # releases         | 58 |
+| # dependents       | 0.0 |
+| # downloads        | 2488738.0 |
+| # stars            | 21622.0 |
 
 ## Links
 - [Homepage](https://reactnavigation.org)

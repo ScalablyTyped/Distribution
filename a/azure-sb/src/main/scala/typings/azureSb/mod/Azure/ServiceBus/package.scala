@@ -1,33 +1,28 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.azureSb.mod.Azure.ServiceBus.Results.Models.Base
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DateString = java.lang.String
+type DateString = String
 
-type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
+type Dictionary[T] = StringDictionary[T]
 
-type Duration = java.lang.String
+type Duration = String
 
-type MessageOrName = typings.azureSb.mod.Azure.ServiceBus.Message | java.lang.String
+type MessageOrName = Message | String
 
-type ReceiveSubscriptionMessageOptions = typings.azureSb.mod.Azure.ServiceBus.ReceiveQueueMessageOptions
+type ReceiveSubscriptionMessageOptions = ReceiveQueueMessageOptions
 
-type ResponseCallback = js.Function2[
-/* error */ typings.std.Error | scala.Null, 
-/* response */ typings.azureSb.mod.Azure.ServiceBus.Response, 
-scala.Unit]
+type ResponseCallback = js.Function2[/* error */ js.Error | Null, /* response */ Response, Unit]
 
 type ResultAndResponseCallback = js.Function3[
-/* error */ typings.std.Error | scala.Null, 
-/* result */ scala.Boolean | typings.azureSb.mod.Azure.ServiceBus.Results.Models.Base | js.Array[typings.azureSb.mod.Azure.ServiceBus.Results.Models.Base], 
-/* response */ typings.azureSb.mod.Azure.ServiceBus.Response, 
-scala.Unit]
+/* error */ js.Error | Null, 
+/* result */ Boolean | Base | js.Array[Base], 
+/* response */ Response, 
+Unit]
 
-type TypedResultAndResponseCallback[T] = js.Function3[
-/* error */ typings.std.Error | scala.Null, 
-/* result */ T, 
-/* response */ typings.azureSb.mod.Azure.ServiceBus.Response, 
-scala.Unit]
+type TypedResultAndResponseCallback[T] = js.Function3[/* error */ js.Error | Null, /* result */ T, /* response */ Response, Unit]

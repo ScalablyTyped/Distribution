@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.SpriteSheetLoader")
 @js.native
-class SpriteSheetLoader protected ()
+open class SpriteSheetLoader protected ()
   extends StObject
      with typings.preloadjs.createjs.AbstractLoader {
   def this(loadItem: js.Object) = this()

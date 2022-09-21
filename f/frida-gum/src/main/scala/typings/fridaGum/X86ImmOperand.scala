@@ -16,8 +16,8 @@ trait X86ImmOperand
 }
 object X86ImmOperand {
   
-  inline def apply(size: Double, value: Double | Int64): X86ImmOperand = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, size: Double, value: Double | Int64): X86ImmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("imm")
     __obj.asInstanceOf[X86ImmOperand]
   }

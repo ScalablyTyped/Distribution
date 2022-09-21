@@ -108,7 +108,7 @@ object AccessibleParagraphView {
     insertText: (String, Double) => Boolean,
     isAccessibleChildSelected: Double => Boolean,
     pasteText: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAccessibleEventListener: XAccessibleEventListener => Unit,
     replaceText: (Double, Double, String) => Boolean,

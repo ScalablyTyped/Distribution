@@ -12,7 +12,7 @@ object cherryPickMod {
   
   @JSImport("nodegit/cherry-pick", "Cherrypick")
   @js.native
-  class Cherrypick () extends StObject
+  open class Cherrypick () extends StObject
   /* static members */
   object Cherrypick {
     

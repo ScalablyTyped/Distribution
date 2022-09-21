@@ -46,7 +46,7 @@ object GetMergeOptionsOutput {
     
     inline def setMergeOptions(value: MergeOptions): Self = StObject.set(x, "mergeOptions", value.asInstanceOf[js.Any])
     
-    inline def setMergeOptionsVarargs(value: MergeOptionTypeEnum*): Self = StObject.set(x, "mergeOptions", js.Array(value :_*))
+    inline def setMergeOptionsVarargs(value: MergeOptionTypeEnum*): Self = StObject.set(x, "mergeOptions", js.Array(value*))
     
     inline def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
   }

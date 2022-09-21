@@ -10,11 +10,11 @@ trait BootstrapModeSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var key: js.UndefOr[String] = js.undefined
   
-  var visibilityTester: js.UndefOr[js.Any] = js.undefined
+  var visibilityTester: js.UndefOr[Any] = js.undefined
 }
 object BootstrapModeSettings {
   
@@ -29,7 +29,7 @@ object BootstrapModeSettings {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setVisibilityTester(value: js.Any): Self = StObject.set(x, "visibilityTester", value.asInstanceOf[js.Any])
+    inline def setVisibilityTester(value: Any): Self = StObject.set(x, "visibilityTester", value.asInstanceOf[js.Any])
     
     inline def setVisibilityTesterUndefined: Self = StObject.set(x, "visibilityTester", js.undefined)
   }

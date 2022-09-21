@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SpriteSheetExporter extends StObject {
   
-  def addBitmap(item: FlashItem): js.Any = js.native
+  def addBitmap(item: FlashItem): Any = js.native
   
-  def addSymbol(item: FlashItem): js.Any = js.native
-  def addSymbol(item: FlashItem, name: String): js.Any = js.native
-  def addSymbol(item: FlashItem, name: String, beginFrame: Double): js.Any = js.native
-  def addSymbol(item: FlashItem, name: String, beginFrame: Double, endFrame: Double): js.Any = js.native
-  def addSymbol(item: FlashItem, name: String, beginFrame: Unit, endFrame: Double): js.Any = js.native
-  def addSymbol(item: FlashItem, name: Unit, beginFrame: Double): js.Any = js.native
-  def addSymbol(item: FlashItem, name: Unit, beginFrame: Double, endFrame: Double): js.Any = js.native
-  def addSymbol(item: FlashItem, name: Unit, beginFrame: Unit, endFrame: Double): js.Any = js.native
+  def addSymbol(item: FlashItem): Any = js.native
+  def addSymbol(item: FlashItem, name: String): Any = js.native
+  def addSymbol(item: FlashItem, name: String, beginFrame: Double): Any = js.native
+  def addSymbol(item: FlashItem, name: String, beginFrame: Double, endFrame: Double): Any = js.native
+  def addSymbol(item: FlashItem, name: String, beginFrame: Unit, endFrame: Double): Any = js.native
+  def addSymbol(item: FlashItem, name: Unit, beginFrame: Double): Any = js.native
+  def addSymbol(item: FlashItem, name: Unit, beginFrame: Double, endFrame: Double): Any = js.native
+  def addSymbol(item: FlashItem, name: Unit, beginFrame: Unit, endFrame: Double): Any = js.native
   
   var algorithm: String = js.native
   
@@ -28,7 +28,7 @@ trait SpriteSheetExporter extends StObject {
   
   var autoSize: Boolean = js.native
   
-  def beginExport(): js.Any = js.native
+  def beginExport(): Any = js.native
   
   var borderPadding: Double = js.native
   
@@ -42,7 +42,7 @@ trait SpriteSheetExporter extends StObject {
   
   var canTrim: Boolean = js.native
   
-  def changeSymbol(): js.Any = js.native
+  def changeSymbol(): Any = js.native
   
   def exportSpriteSheet(fileURL: String, option: js.Object): String = js.native
   def exportSpriteSheet(fileURL: String, option: js.Object, writeMetaData: Boolean): String = js.native
@@ -59,9 +59,9 @@ trait SpriteSheetExporter extends StObject {
   
   var overflowed: Boolean = js.native
   
-  def removeBitmap(): js.Any = js.native
+  def removeBitmap(): Any = js.native
   
-  def removeSymbol(): js.Any = js.native
+  def removeSymbol(): Any = js.native
   
   var shapePadding: Double = js.native
   

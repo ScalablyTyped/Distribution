@@ -24,6 +24,6 @@ object AccountRecoverySettingType {
     
     inline def setRecoveryMechanismsUndefined: Self = StObject.set(x, "RecoveryMechanisms", js.undefined)
     
-    inline def setRecoveryMechanismsVarargs(value: RecoveryOptionType*): Self = StObject.set(x, "RecoveryMechanisms", js.Array(value :_*))
+    inline def setRecoveryMechanismsVarargs(value: RecoveryOptionType*): Self = StObject.set(x, "RecoveryMechanisms", js.Array(value*))
   }
 }

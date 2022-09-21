@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ErrorCategory")
 @js.native
-class ErrorCategory () extends StObject
+open class ErrorCategory () extends StObject

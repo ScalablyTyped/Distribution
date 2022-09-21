@@ -12,7 +12,7 @@ trait XUniqueIDAccess
      with XInterface {
   
   /** @returns the element with the specified unique ID. */
-  def getByUniqueID(ID: String): js.Any
+  def getByUniqueID(ID: String): Any
   
   /** removes the element with the specified unique ID from this container. */
   def removeByUniqueID(ID: String): Unit
@@ -21,8 +21,8 @@ object XUniqueIDAccess {
   
   inline def apply(
     acquire: () => Unit,
-    getByUniqueID: String => js.Any,
-    queryInterface: `type` => js.Any,
+    getByUniqueID: String => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByUniqueID: String => Unit
   ): XUniqueIDAccess = {
@@ -32,7 +32,7 @@ object XUniqueIDAccess {
   
   extension [Self <: XUniqueIDAccess](x: Self) {
     
-    inline def setGetByUniqueID(value: String => js.Any): Self = StObject.set(x, "getByUniqueID", js.Any.fromFunction1(value))
+    inline def setGetByUniqueID(value: String => Any): Self = StObject.set(x, "getByUniqueID", js.Any.fromFunction1(value))
     
     inline def setRemoveByUniqueID(value: String => Unit): Self = StObject.set(x, "removeByUniqueID", js.Any.fromFunction1(value))
   }

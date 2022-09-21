@@ -12,6 +12,10 @@ object jupyterlabTerminalStrings {
   inline def autoFit: autoFit = "autoFit".asInstanceOf[autoFit]
   
   @js.native
+  sealed trait closeOnExit extends StObject
+  inline def closeOnExit: closeOnExit = "closeOnExit".asInstanceOf[closeOnExit]
+  
+  @js.native
   sealed trait cursorBlink extends StObject
   inline def cursorBlink: cursorBlink = "cursorBlink".asInstanceOf[cursorBlink]
   

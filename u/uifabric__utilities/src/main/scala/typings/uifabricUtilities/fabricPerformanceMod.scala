@@ -9,7 +9,7 @@ object fabricPerformanceMod {
   
   @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance")
   @js.native
-  class FabricPerformance () extends StObject
+  open class FabricPerformance () extends StObject
   /* static members */
   object FabricPerformance {
     
@@ -19,8 +19,8 @@ object fabricPerformanceMod {
     
     @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance._timeoutId")
     @js.native
-    def _timeoutId: js.Any = js.native
-    inline def _timeoutId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_timeoutId")(x.asInstanceOf[js.Any])
+    def _timeoutId: Any = js.native
+    inline def _timeoutId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_timeoutId")(x.asInstanceOf[js.Any])
     
     /**
       * Measures execution time of the given syncronous function. If the same logic is executed multiple times,
@@ -80,7 +80,7 @@ object fabricPerformanceMod {
       
       inline def setAll(value: js.Array[IPerfData]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      inline def setAllVarargs(value: IPerfData*): Self = StObject.set(x, "all", js.Array(value :_*))
+      inline def setAllVarargs(value: IPerfData*): Self = StObject.set(x, "all", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

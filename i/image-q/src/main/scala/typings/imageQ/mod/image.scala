@@ -1,16 +1,21 @@
 package typings.imageQ.mod
 
-import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.arrayMod.ErrorDiffusionArrayKernel
+import typings.imageQ.distanceCalculatorMod.AbstractDistanceCalculator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object image {
   
+  @JSImport("image-q", "image.AbstractImageQuantizer")
+  @js.native
+  abstract class AbstractImageQuantizer ()
+    extends typings.imageQ.imageMod.AbstractImageQuantizer
+  
   @JSImport("image-q", "image.ErrorDiffusionArray")
   @js.native
-  class ErrorDiffusionArray protected ()
+  open class ErrorDiffusionArray protected ()
     extends typings.imageQ.imageMod.ErrorDiffusionArray {
     def this(colorDistanceCalculator: AbstractDistanceCalculator, kernel: ErrorDiffusionArrayKernel) = this()
     def this(
@@ -88,7 +93,7 @@ object image {
   
   @JSImport("image-q", "image.ErrorDiffusionRiemersma")
   @js.native
-  class ErrorDiffusionRiemersma protected ()
+  open class ErrorDiffusionRiemersma protected ()
     extends typings.imageQ.imageMod.ErrorDiffusionRiemersma {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, errorQueueSize: Double) = this()
@@ -103,10 +108,22 @@ object image {
       errorPropagation: Double
     ) = this()
   }
+  /* static members */
+  object ErrorDiffusionRiemersma {
+    
+    @JSImport("image-q", "image.ErrorDiffusionRiemersma")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("image-q", "image.ErrorDiffusionRiemersma._createWeights")
+    @js.native
+    def _createWeights: Any = js.native
+    inline def _createWeights_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_createWeights")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("image-q", "image.NearestColor")
   @js.native
-  class NearestColor protected ()
+  open class NearestColor protected ()
     extends typings.imageQ.imageMod.NearestColor {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
   }

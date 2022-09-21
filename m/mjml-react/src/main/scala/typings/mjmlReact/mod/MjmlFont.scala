@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlFont")
 @js.native
-class MjmlFont protected ()
-  extends Component[MjmlFontProps, js.Object, js.Any] {
+open class MjmlFont protected ()
+  extends Component[MjmlFontProps, js.Object, Any] {
   def this(props: MjmlFontProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MjmlFontProps, context: js.Any) = this()
+  def this(props: MjmlFontProps, context: Any) = this()
 }

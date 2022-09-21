@@ -12,7 +12,7 @@ trait ASPxClientDashboardParameter extends StObject {
   /**
     * Returns a default parameter value.
     */
-  def GetDefaultValue(): js.Any
+  def GetDefaultValue(): Any
   
   /**
     * Returns the parameter's description displayed to an end-user.
@@ -32,7 +32,7 @@ trait ASPxClientDashboardParameter extends StObject {
   /**
     * Returns a current parameter value(s).
     */
-  def GetValue(): js.Any
+  def GetValue(): Any
   
   /**
     * Returns possible parameter values.
@@ -49,26 +49,26 @@ trait ASPxClientDashboardParameter extends StObject {
     * Specifies the current parameter value(s).
     * @param value The current parameter value(s).
     */
-  def SetValue(value: js.Any): Unit
+  def SetValue(value: Any): Unit
   
   /** @deprecated Use the GetValue method instead. */
   /**
     * Gets the dashboard parameter value on the client side.
     */
-  var Value: js.Any
+  var Value: Any
 }
 object ASPxClientDashboardParameter {
   
   inline def apply(
-    GetDefaultValue: () => js.Any,
+    GetDefaultValue: () => Any,
     GetDescription: () => String,
     GetName: () => String,
     GetType: () => String,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetValues: () => js.Array[ASPxClientDashboardParameterValue],
     Name: String,
-    SetValue: js.Any => Unit,
-    Value: js.Any
+    SetValue: Any => Unit,
+    Value: Any
   ): ASPxClientDashboardParameter = {
     val __obj = js.Dynamic.literal(GetDefaultValue = js.Any.fromFunction0(GetDefaultValue), GetDescription = js.Any.fromFunction0(GetDescription), GetName = js.Any.fromFunction0(GetName), GetType = js.Any.fromFunction0(GetType), GetValue = js.Any.fromFunction0(GetValue), GetValues = js.Any.fromFunction0(GetValues), Name = Name.asInstanceOf[js.Any], SetValue = js.Any.fromFunction1(SetValue), Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardParameter]
@@ -76,7 +76,7 @@ object ASPxClientDashboardParameter {
   
   extension [Self <: ASPxClientDashboardParameter](x: Self) {
     
-    inline def setGetDefaultValue(value: () => js.Any): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
+    inline def setGetDefaultValue(value: () => Any): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
     
     inline def setGetDescription(value: () => String): Self = StObject.set(x, "GetDescription", js.Any.fromFunction0(value))
     
@@ -84,14 +84,14 @@ object ASPxClientDashboardParameter {
     
     inline def setGetType(value: () => String): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     inline def setGetValues(value: () => js.Array[ASPxClientDashboardParameterValue]): Self = StObject.set(x, "GetValues", js.Any.fromFunction0(value))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

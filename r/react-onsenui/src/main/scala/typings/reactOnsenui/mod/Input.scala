@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Input")
 @js.native
-class Input protected ()
-  extends Component[InputHTMLAttributesminmax, js.Any] {
+open class Input protected () extends Component[InputHTMLAttributesminmax, Any] {
   def this(props: HTMLAttributesidclassName & InputHTMLAttributesminmax) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & InputHTMLAttributesminmax, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & InputHTMLAttributesminmax, context: Any) = this()
 }

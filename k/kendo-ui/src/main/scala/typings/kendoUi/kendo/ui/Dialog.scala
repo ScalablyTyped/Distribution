@@ -10,6 +10,8 @@ trait Dialog
   extends StObject
      with Widget {
   
+  def center(): Dialog = js.native
+  
   def close(): Dialog = js.native
   
   def content(): String = js.native

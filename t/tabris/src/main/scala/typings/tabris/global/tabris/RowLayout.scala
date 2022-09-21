@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.RowLayout")
 @js.native
-class RowLayout ()
+/**
+  * Row based layout manager. Can be set on the `layout` property of any `Composite` or widget extending
+  * `Composite` like `Page` or `Tab` widget. The `Row` uses it as the default `layout`. <br/><br/> All
+  * children of the composite are automatically arranged in one horizontal row, starting from the left.
+  */
+open class RowLayout ()
   extends typings.tabris.mod.RowLayout {
   def this(options: Alignment) = this()
 }

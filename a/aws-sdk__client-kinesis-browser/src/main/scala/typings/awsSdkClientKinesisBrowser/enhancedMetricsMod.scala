@@ -8,5 +8,5 @@ object enhancedMetricsMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/_EnhancedMetrics", "_EnhancedMetrics")
   @js.native
-  val EnhancedMetrics: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EnhancedMetrics: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

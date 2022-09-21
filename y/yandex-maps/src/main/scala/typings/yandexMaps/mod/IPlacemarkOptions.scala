@@ -1,10 +1,17 @@
 package typings.yandexMaps.mod
 
+import typings.yandexMaps.mod.layout.IImageWithContentOptionsWithIconPrefix
+import typings.yandexMaps.mod.layout.IPieChartOptionsWithIconPrefix
+import typings.yandexMaps.mod.vow.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPlacemarkOptions extends StObject {
+trait IPlacemarkOptions
+  extends StObject
+     with IBalloonOptionsWithBalloonPrefix
+     with IImageWithContentOptionsWithIconPrefix
+     with IPieChartOptionsWithIconPrefix {
   
   var cursor: js.UndefOr[String] = js.undefined
   
@@ -16,13 +23,18 @@ trait IPlacemarkOptions extends StObject {
   
   var hideIconOnBalloonOpen: js.UndefOr[Boolean] = js.undefined
   
+  var iconColor: js.UndefOr[String] = js.undefined
+  
+  var iconLayout: js.UndefOr[IClassConstructor[ILayout] | IconLayoutKey] = js.undefined
+  
   var iconOffset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var iconShape: js.UndefOr[IGeometryJson | Null] = js.undefined
+  @JSName("iconShape")
+  var iconShape_IPlacemarkOptions: js.UndefOr[IGeometryJson | Null] = js.undefined
   
   var interactiveZIndex: js.UndefOr[Boolean] = js.undefined
   
-  var interactivityModel: js.UndefOr[String] = js.undefined
+  var interactivityModel: js.UndefOr[InteractivityModelKey] = js.undefined
   
   var openBalloonOnClick: js.UndefOr[Boolean] = js.undefined
   
@@ -34,7 +46,16 @@ trait IPlacemarkOptions extends StObject {
   
   var pane: js.UndefOr[String] = js.undefined
   
-  var pointOverlay: js.UndefOr[String] = js.undefined
+  var pointOverlay: js.UndefOr[
+    String | (js.Function3[
+      /* geometry */ IPixelPointGeometry, 
+      /* data */ js.UndefOr[IDataManager], 
+      /* options */ js.UndefOr[js.Object], 
+      Promise
+    ])
+  ] = js.undefined
+  
+  var preset: js.UndefOr[PresetKey] = js.undefined
   
   var syncOverlayInit: js.UndefOr[Boolean] = js.undefined
   
@@ -79,11 +100,19 @@ object IPlacemarkOptions {
     
     inline def setHideIconOnBalloonOpenUndefined: Self = StObject.set(x, "hideIconOnBalloonOpen", js.undefined)
     
+    inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
+    
+    inline def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
+    
+    inline def setIconLayout(value: IClassConstructor[ILayout] | IconLayoutKey): Self = StObject.set(x, "iconLayout", value.asInstanceOf[js.Any])
+    
+    inline def setIconLayoutUndefined: Self = StObject.set(x, "iconLayout", js.undefined)
+    
     inline def setIconOffset(value: js.Array[Double]): Self = StObject.set(x, "iconOffset", value.asInstanceOf[js.Any])
     
     inline def setIconOffsetUndefined: Self = StObject.set(x, "iconOffset", js.undefined)
     
-    inline def setIconOffsetVarargs(value: Double*): Self = StObject.set(x, "iconOffset", js.Array(value :_*))
+    inline def setIconOffsetVarargs(value: Double*): Self = StObject.set(x, "iconOffset", js.Array(value*))
     
     inline def setIconShape(value: IGeometryJson): Self = StObject.set(x, "iconShape", value.asInstanceOf[js.Any])
     
@@ -95,7 +124,7 @@ object IPlacemarkOptions {
     
     inline def setInteractiveZIndexUndefined: Self = StObject.set(x, "interactiveZIndex", js.undefined)
     
-    inline def setInteractivityModel(value: String): Self = StObject.set(x, "interactivityModel", value.asInstanceOf[js.Any])
+    inline def setInteractivityModel(value: InteractivityModelKey): Self = StObject.set(x, "interactivityModel", value.asInstanceOf[js.Any])
     
     inline def setInteractivityModelUndefined: Self = StObject.set(x, "interactivityModel", js.undefined)
     
@@ -119,9 +148,24 @@ object IPlacemarkOptions {
     
     inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
-    inline def setPointOverlay(value: String): Self = StObject.set(x, "pointOverlay", value.asInstanceOf[js.Any])
+    inline def setPointOverlay(
+      value: String | (js.Function3[
+          /* geometry */ IPixelPointGeometry, 
+          /* data */ js.UndefOr[IDataManager], 
+          /* options */ js.UndefOr[js.Object], 
+          Promise
+        ])
+    ): Self = StObject.set(x, "pointOverlay", value.asInstanceOf[js.Any])
+    
+    inline def setPointOverlayFunction3(
+      value: (/* geometry */ IPixelPointGeometry, /* data */ js.UndefOr[IDataManager], /* options */ js.UndefOr[js.Object]) => Promise
+    ): Self = StObject.set(x, "pointOverlay", js.Any.fromFunction3(value))
     
     inline def setPointOverlayUndefined: Self = StObject.set(x, "pointOverlay", js.undefined)
+    
+    inline def setPreset(value: PresetKey): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    
+    inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
     inline def setSyncOverlayInit(value: Boolean): Self = StObject.set(x, "syncOverlayInit", value.asInstanceOf[js.Any])
     

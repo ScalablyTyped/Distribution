@@ -10,10 +10,10 @@ Wrapper for reply processing code in hiredis
 | ------------------ | :-------------: |
 | Full name          | hiredis |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 422 |
-| # downloads        | 2448151 |
-| # stars            | 28 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60167.0 |
+| # stars            | 303.0 |
 
 ## Links
 - [Homepage](http://github.com/redis/hiredis-node)

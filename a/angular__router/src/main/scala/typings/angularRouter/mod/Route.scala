@@ -1,8 +1,12 @@
 package typings.angularRouter.mod
 
+import typings.angularCore.mod.ImportedNgModuleProviders
+import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.NgModuleFactory
+import typings.angularCore.mod.Provider
 import typings.angularCore.mod.Type
-import typings.rxjs.mod.Observable_
+import typings.angularRouter.angularRouterStrings.full
+import typings.angularRouter.angularRouterStrings.prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,33 +14,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Route extends StObject {
   
   /**
-    * An array of dependency-injection tokens used to look up `CanActivate()`
+    * An array of `CanActivateFn` or DI tokens used to look up `CanActivate()`
     * handlers, in order to determine if the current user is allowed to
     * activate the component. By default, any user can activate.
+    *
+    * When using a function rather than DI tokens, the function can call `inject` to get any required
+    * dependencies. This `inject` call must be done in a synchronous context.
     */
-  var canActivate: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var canActivate: js.UndefOr[js.Array[CanActivateFn | Any]] = js.undefined
   
   /**
-    * An array of DI tokens used to look up `CanActivateChild()` handlers,
+    * An array of `CanActivateChildFn` or DI tokens used to look up `CanActivateChild()` handlers,
     * in order to determine if the current user is allowed to activate
     * a child of the component. By default, any user can activate a child.
+    *
+    * When using a function rather than DI tokens, the function can call `inject` to get any required
+    * dependencies. This `inject` call must be done in a synchronous context.
     */
-  var canActivateChild: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var canActivateChild: js.UndefOr[js.Array[CanActivateChildFn | Any]] = js.undefined
   
   /**
-    * An array of DI tokens used to look up `CanDeactivate()`
+    * An array of `CanDeactivateFn` or DI tokens used to look up `CanDeactivate()`
     * handlers, in order to determine if the current user is allowed to
     * deactivate the component. By default, any user can deactivate.
     *
+    * When using a function rather than DI tokens, the function can call `inject` to get any required
+    * dependencies. This `inject` call must be done in a synchronous context.
     */
-  var canDeactivate: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var canDeactivate: js.UndefOr[js.Array[CanDeactivateFn[Any] | Any]] = js.undefined
   
   /**
-    * An array of DI tokens used to look up `CanLoad()`
+    * An array of `CanLoadFn` or DI tokens used to look up `CanLoad()`
     * handlers, in order to determine if the current user is allowed to
     * load the component. By default, any user can load.
+    *
+    * When using a function rather than DI tokens, the function can call `inject` to get any required
+    * dependencies. This `inject` call must be done in a synchronous context.
     */
-  var canLoad: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var canLoad: js.UndefOr[js.Array[CanLoadFn | Any]] = js.undefined
+  
+  /**
+    * An array of `CanMatchFn` or DI tokens used to look up `CanMatch()`
+    * handlers, in order to determine if the current user is allowed to
+    * match the `Route`. By default, any route can match.
+    *
+    * When using a function rather than DI tokens, the function can call `inject` to get any required
+    * dependencies. This `inject` call must be done in a synchronous context.
+    */
+  var canMatch: js.UndefOr[js.Array[Type[CanMatch] | InjectionToken[CanMatchFn] | CanMatchFn]] = js.undefined
   
   /**
     * An array of child `Route` objects that specifies a nested route
@@ -48,7 +73,7 @@ trait Route extends StObject {
     * The component to instantiate when the path matches.
     * Can be empty if child routes specify components.
     */
-  var component: js.UndefOr[Type[js.Any]] = js.undefined
+  var component: js.UndefOr[Type[Any]] = js.undefined
   
   /**
     * Additional developer-defined data provided to the component via
@@ -60,6 +85,15 @@ trait Route extends StObject {
     * An object specifying lazy-loaded child routes.
     */
   var loadChildren: js.UndefOr[LoadChildren] = js.undefined
+  
+  /**
+    * An object specifying a lazy-loaded component.
+    */
+  var loadComponent: js.UndefOr[
+    js.Function0[
+      Type[Any] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Type<unknown>> */ Any) | js.Promise[Type[Any]]
+    ]
+  ] = js.undefined
   
   /**
     * A custom URL-matching function. Cannot be used together with `path`.
@@ -86,8 +120,12 @@ trait Route extends StObject {
     * Default is 'prefix'.
     *
     * By default, the router checks URL elements from the left to see if the URL
-    * matches a given  path, and stops when there is a match. For example,
-    * '/team/11/user' matches 'team/:id'.
+    * matches a given path and stops when there is a config match. Importantly there must still be a
+    * config match for each segment of the URL. For example, '/team/11/user' matches the prefix
+    * 'team/:id' if one of the route's children matches the segment 'user'. That is, the URL
+    * '/team/11/user' matches the config
+    * `{path: 'team/:id', children: [{path: ':user', component: User}]}`
+    * but does not match when there are no children as in `{path: 'team/:id', component: Team}`.
     *
     * The path-match strategy 'full' matches against the entire URL.
     * It is important to do this when redirecting empty-path routes.
@@ -96,11 +134,24 @@ trait Route extends StObject {
     * to the redirect destination, creating an endless loop.
     *
     */
-  var pathMatch: js.UndefOr[String] = js.undefined
+  var pathMatch: js.UndefOr[prefix | full] = js.undefined
+  
+  /**
+    * A `Provider` array to use for this `Route` and its `children`.
+    *
+    * The `Router` will create a new `EnvironmentInjector` for this
+    * `Route` and use it for this `Route` and its `children`. If this
+    * route also has a `loadChildren` function which returns an `NgModuleRef`, this injector will be
+    * used as the parent of the lazy loaded module.
+    */
+  var providers: js.UndefOr[js.Array[Provider | ImportedNgModuleProviders]] = js.undefined
   
   /**
     * A URL to redirect to when the path matches.
+    *
     * Absolute if the URL begins with a slash (/), otherwise relative to the path URL.
+    * Note that no further redirects are evaluated after an absolute redirect.
+    *
     * When not present, router does not redirect.
     */
   var redirectTo: js.UndefOr[String] = js.undefined
@@ -116,8 +167,18 @@ trait Route extends StObject {
     * - `always` : Run on every execution.
     * By default, guards and resolvers run only when the matrix
     * parameters of the route change.
+    *
+    * @see RunGuardsAndResolvers
     */
   var runGuardsAndResolvers: js.UndefOr[RunGuardsAndResolvers] = js.undefined
+  
+  /**
+    * Used to define a page title for the route. This can be a static string or an `Injectable` that
+    * implements `Resolve`.
+    *
+    * @see `PageTitleStrategy`
+    */
+  var title: js.UndefOr[String | Type[Resolve[String]] | ResolveFn[String]] = js.undefined
 }
 object Route {
   
@@ -128,37 +189,43 @@ object Route {
   
   extension [Self <: Route](x: Self) {
     
-    inline def setCanActivate(value: js.Array[js.Any]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
+    inline def setCanActivate(value: js.Array[CanActivateFn | Any]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
     
-    inline def setCanActivateChild(value: js.Array[js.Any]): Self = StObject.set(x, "canActivateChild", value.asInstanceOf[js.Any])
+    inline def setCanActivateChild(value: js.Array[CanActivateChildFn | Any]): Self = StObject.set(x, "canActivateChild", value.asInstanceOf[js.Any])
     
     inline def setCanActivateChildUndefined: Self = StObject.set(x, "canActivateChild", js.undefined)
     
-    inline def setCanActivateChildVarargs(value: js.Any*): Self = StObject.set(x, "canActivateChild", js.Array(value :_*))
+    inline def setCanActivateChildVarargs(value: (CanActivateChildFn | Any)*): Self = StObject.set(x, "canActivateChild", js.Array(value*))
     
     inline def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
     
-    inline def setCanActivateVarargs(value: js.Any*): Self = StObject.set(x, "canActivate", js.Array(value :_*))
+    inline def setCanActivateVarargs(value: (CanActivateFn | Any)*): Self = StObject.set(x, "canActivate", js.Array(value*))
     
-    inline def setCanDeactivate(value: js.Array[js.Any]): Self = StObject.set(x, "canDeactivate", value.asInstanceOf[js.Any])
+    inline def setCanDeactivate(value: js.Array[CanDeactivateFn[Any] | Any]): Self = StObject.set(x, "canDeactivate", value.asInstanceOf[js.Any])
     
     inline def setCanDeactivateUndefined: Self = StObject.set(x, "canDeactivate", js.undefined)
     
-    inline def setCanDeactivateVarargs(value: js.Any*): Self = StObject.set(x, "canDeactivate", js.Array(value :_*))
+    inline def setCanDeactivateVarargs(value: (CanDeactivateFn[Any] | Any)*): Self = StObject.set(x, "canDeactivate", js.Array(value*))
     
-    inline def setCanLoad(value: js.Array[js.Any]): Self = StObject.set(x, "canLoad", value.asInstanceOf[js.Any])
+    inline def setCanLoad(value: js.Array[CanLoadFn | Any]): Self = StObject.set(x, "canLoad", value.asInstanceOf[js.Any])
     
     inline def setCanLoadUndefined: Self = StObject.set(x, "canLoad", js.undefined)
     
-    inline def setCanLoadVarargs(value: js.Any*): Self = StObject.set(x, "canLoad", js.Array(value :_*))
+    inline def setCanLoadVarargs(value: (CanLoadFn | Any)*): Self = StObject.set(x, "canLoad", js.Array(value*))
+    
+    inline def setCanMatch(value: js.Array[Type[CanMatch] | InjectionToken[CanMatchFn] | CanMatchFn]): Self = StObject.set(x, "canMatch", value.asInstanceOf[js.Any])
+    
+    inline def setCanMatchUndefined: Self = StObject.set(x, "canMatch", js.undefined)
+    
+    inline def setCanMatchVarargs(value: (Type[CanMatch] | InjectionToken[CanMatchFn] | CanMatchFn)*): Self = StObject.set(x, "canMatch", js.Array(value*))
     
     inline def setChildren(value: Routes): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value*))
     
-    inline def setComponent(value: Type[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Type[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
@@ -166,13 +233,17 @@ object Route {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setLoadChildren(value: LoadChildren): Self = StObject.set(x, "loadChildren", value.asInstanceOf[js.Any])
-    
-    inline def setLoadChildrenFunction0(
-      value: () => Type[js.Any] | NgModuleFactory[js.Any] | Observable_[Type[js.Any]] | (js.Promise[NgModuleFactory[js.Any] | Type[js.Any] | js.Any])
+    inline def setLoadChildren(
+      value: () => Type[Any] | NgModuleFactory[Any] | Routes | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Type<any> | Routes> */ Any) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes])
     ): Self = StObject.set(x, "loadChildren", js.Any.fromFunction0(value))
     
     inline def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
+    
+    inline def setLoadComponent(
+      value: () => Type[Any] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Type<unknown>> */ Any) | js.Promise[Type[Any]]
+    ): Self = StObject.set(x, "loadComponent", js.Any.fromFunction0(value))
+    
+    inline def setLoadComponentUndefined: Self = StObject.set(x, "loadComponent", js.undefined)
     
     inline def setMatcher(
       value: (/* segments */ js.Array[UrlSegment], /* group */ UrlSegmentGroup, /* route */ Route) => UrlMatchResult | Null
@@ -186,11 +257,17 @@ object Route {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathMatch(value: String): Self = StObject.set(x, "pathMatch", value.asInstanceOf[js.Any])
+    inline def setPathMatch(value: prefix | full): Self = StObject.set(x, "pathMatch", value.asInstanceOf[js.Any])
     
     inline def setPathMatchUndefined: Self = StObject.set(x, "pathMatch", js.undefined)
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setProviders(value: js.Array[Provider | ImportedNgModuleProviders]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    
+    inline def setProvidersVarargs(value: (Provider | ImportedNgModuleProviders)*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
     
@@ -205,5 +282,13 @@ object Route {
     inline def setRunGuardsAndResolversFunction2(value: (/* from */ ActivatedRouteSnapshot, /* to */ ActivatedRouteSnapshot) => Boolean): Self = StObject.set(x, "runGuardsAndResolvers", js.Any.fromFunction2(value))
     
     inline def setRunGuardsAndResolversUndefined: Self = StObject.set(x, "runGuardsAndResolvers", js.undefined)
+    
+    inline def setTitle(value: String | Type[Resolve[String]] | ResolveFn[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleFunction2(
+      value: (/* route */ ActivatedRouteSnapshot, /* state */ RouterStateSnapshot) => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any) | js.Promise[String] | String
+    ): Self = StObject.set(x, "title", js.Any.fromFunction2(value))
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

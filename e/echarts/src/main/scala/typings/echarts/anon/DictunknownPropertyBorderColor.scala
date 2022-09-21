@@ -11,7 +11,7 @@ trait DictunknownPropertyBorderColor
   * Some properties like "normal" or "emphasis" are not documented.
   * Please, write description for them
   */
-/* unknownProperty */ StringDictionary[js.Any] {
+/* unknownProperty */ StringDictionary[Any] {
   
   /**
     * border color, whose format is similar to that of `color`.

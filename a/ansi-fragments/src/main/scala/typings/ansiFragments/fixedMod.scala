@@ -13,22 +13,22 @@ object fixedMod {
   
   @JSImport("ansi-fragments/build/fragments/Fixed", "Fixed")
   @js.native
-  class Fixed_ protected ()
+  open class Fixed_ protected ()
     extends StObject
        with IFragment {
     def this(width: Double, bias: Bias, children: js.Array[String | IFragment]) = this()
     
-    /* private */ val bias: js.Any = js.native
+    /* private */ val bias: Any = js.native
     
     /* CompleteClass */
     override def build(): String = js.native
     
-    /* private */ val children: js.Any = js.native
+    /* private */ val children: Any = js.native
     
-    /* private */ val width: js.Any = js.native
+    /* private */ val width: Any = js.native
   }
   
-  inline def fixed(value: Double, bias: Bias, children: (String | IFragment)*): Fixed_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(value.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Fixed_]
+  inline def fixed(value: Double, bias: Bias, children: (String | IFragment)*): Fixed_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fixed")((List(value.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Fixed_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.start

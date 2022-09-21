@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/react-docgen-typescript-plugin" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/react-docgen-typescript-plugin" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

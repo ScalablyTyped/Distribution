@@ -38,7 +38,7 @@ object Solver {
     
     inline def setEquations(value: js.Array[Equation]): Self = StObject.set(x, "equations", value.asInstanceOf[js.Any])
     
-    inline def setEquationsVarargs(value: Equation*): Self = StObject.set(x, "equations", js.Array(value :_*))
+    inline def setEquationsVarargs(value: Equation*): Self = StObject.set(x, "equations", js.Array(value*))
     
     inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     

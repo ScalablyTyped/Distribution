@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateCostCategoryDefinitionResponse extends StObject {
   
   /**
-    *  The unique identifier for your newly created Cost Category. 
+    * The unique identifier for your newly created Cost Category. 
     */
   var CostCategoryArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    *  The Cost Category's effective start date. 
+    * The Cost Category's effective start date. 
     */
   var EffectiveStart: js.UndefOr[ZonedDateTime] = js.undefined
 }

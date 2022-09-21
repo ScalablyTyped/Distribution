@@ -1,7 +1,7 @@
 
 # Scala.js typings for turist__fetch
 
-Typings are for version 7.1.7
+Typings are for version 7.2.0
 
 ## Library description:
 Opinionated `fetch` optimized for use inside microservices
@@ -10,10 +10,10 @@ Opinionated `fetch` optimized for use inside microservices
 | ------------------ | :-------------: |
 | Full name          | @turist/fetch |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 3 |
-| # downloads        | 1395072 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1621759.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/turist-cloud/fetch#readme)

@@ -10,10 +10,10 @@ Native-like toast notification but for the web.
 | ------------------ | :-------------: |
 | Full name          | native-toast |
 | Keywords           | toast, android, notification |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 30997 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5093.666666666667 |
+| # stars            | 151.0 |
 
 ## Links
 - [Homepage](https://github.com/egoist/native-toast#readme)

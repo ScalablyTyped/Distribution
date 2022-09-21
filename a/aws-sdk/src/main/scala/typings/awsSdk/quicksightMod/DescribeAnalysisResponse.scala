@@ -12,7 +12,7 @@ trait DescribeAnalysisResponse extends StObject {
   var Analysis: js.UndefOr[typings.awsSdk.quicksightMod.Analysis] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

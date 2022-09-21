@@ -10,10 +10,10 @@ screenshot PhoneGap Plugin for Android
 | ------------------ | :-------------: |
 | Full name          | com.darktalker.cordova.screenshot |
 | Keywords           | cordova, screenshot, ecosystem:cordova, cordova-android, cordova-ios, cordova-osx |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 46793 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5752.666666666667 |
+| # stars            | 209.0 |
 
 ## Links
 - [Homepage](https://github.com/gitawego/cordova-screenshot#readme)

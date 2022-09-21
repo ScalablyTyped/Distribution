@@ -11,31 +11,31 @@ object smoothScrollbarScrollbarMod {
   
   @JSImport("smooth-scrollbar/scrollbar", "Scrollbar")
   @js.native
-  class Scrollbar protected ()
+  open class Scrollbar protected ()
     extends StObject
        with typings.smoothScrollbar.scrollbarMod.Scrollbar {
     def this(containerEl: HTMLElement) = this()
     def this(containerEl: HTMLElement, options: PartialScrollbarOptions) = this()
     
-    /* private */ var _init: js.Any = js.native
+    /* private */ var _init: Any = js.native
     
-    /* private */ var _listeners: js.Any = js.native
+    /* private */ var _listeners: Any = js.native
     
-    /* private */ var _momentum: js.Any = js.native
+    /* private */ var _momentum: Any = js.native
     
-    /* private */ var _nextTick: js.Any = js.native
+    /* private */ var _nextTick: Any = js.native
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _plugins: js.Any = js.native
+    /* private */ var _plugins: Any = js.native
     
-    /* private */ var _render: js.Any = js.native
+    /* private */ var _render: Any = js.native
     
-    /* private */ var _renderID: js.Any = js.native
+    /* private */ var _renderID: Any = js.native
     
-    /* private */ var _shouldPropagateMomentum: js.Any = js.native
+    /* private */ var _shouldPropagateMomentum: Any = js.native
     
-    /* private */ var _updateDebounced: js.Any = js.native
+    /* private */ var _updateDebounced: Any = js.native
   }
   
   @JSImport("smooth-scrollbar/scrollbar", "scrollbarMap")

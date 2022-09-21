@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html)
   */
-class FeatureFormViewModelCls ()
+open class FeatureFormViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.FeatureFormViewModel {
   def this(properties: FeatureFormViewModelProperties) = this()

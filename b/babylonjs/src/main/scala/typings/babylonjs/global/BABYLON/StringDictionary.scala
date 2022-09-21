@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.StringDictionary")
 @js.native
-class StringDictionary[T] ()
+open class StringDictionary[T] ()
   extends StObject
      with typings.babylonjs.BABYLON.StringDictionary[T]

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofPivotGauge extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: PivotGauge
 }
 object TypeofPivotGauge {
   
-  inline def apply(Locale: js.Any, fn: PivotGauge): TypeofPivotGauge = {
+  inline def apply(Locale: Any, fn: PivotGauge): TypeofPivotGauge = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPivotGauge]
   }
@@ -24,6 +24,6 @@ object TypeofPivotGauge {
     
     inline def setFn(value: PivotGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

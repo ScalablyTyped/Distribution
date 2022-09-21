@@ -42,7 +42,7 @@ trait ExportImageTask extends StObject {
   var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * Any tags assigned to the image being exported.
+    * Any tags assigned to the export image task.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
@@ -87,6 +87,6 @@ object ExportImageTask {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

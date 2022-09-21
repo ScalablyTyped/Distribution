@@ -11,10 +11,10 @@ object withIEPolyfillMod {
   
   @JSImport("gatsby-image/withIEPolyfill", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[GatsbyImageWithIEPolyfillProps, js.Object, js.Any]
+  open class default ()
+    extends Component[GatsbyImageWithIEPolyfillProps, js.Object, Any]
   
-  type GatsbyImageWithIEPolyfill = Component[GatsbyImageWithIEPolyfillProps, js.Object, js.Any]
+  type GatsbyImageWithIEPolyfill = Component[GatsbyImageWithIEPolyfillProps, js.Object, Any]
   
   type GatsbyImageWithIEPolyfillProps = GatsbyImageProps & ObjectFit
 }

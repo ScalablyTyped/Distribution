@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for Firewall.UpdateAllIngressRules.
-  */
 trait SchemaBatchUpdateIngressRulesResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBatchUpdateIngressRulesResponse {
     
     inline def setIngressRulesUndefined: Self = StObject.set(x, "ingressRules", js.undefined)
     
-    inline def setIngressRulesVarargs(value: SchemaFirewallRule*): Self = StObject.set(x, "ingressRules", js.Array(value :_*))
+    inline def setIngressRulesVarargs(value: SchemaFirewallRule*): Self = StObject.set(x, "ingressRules", js.Array(value*))
   }
 }

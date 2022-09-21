@@ -16,34 +16,34 @@ trait EmailMailboxCapabilities extends StObject {
   /** Gets a Boolean value indicating if folders in the mailbox can be emptied. */
   var canEmptyFolder: Boolean
   
-  var canForwardMeetings: js.Any
+  var canForwardMeetings: Any
   
   /* unmapped type */
-  var canGetAndSetExternalAutoReplies: js.Any
+  var canGetAndSetExternalAutoReplies: Any
   
   /* unmapped type */
-  var canGetAndSetInternalAutoReplies: js.Any
+  var canGetAndSetInternalAutoReplies: Any
   
   /* unmapped type */
   /** Gets a Boolean value indicating if folders in the mailbox can be moved. */
   var canMoveFolder: Boolean
   
-  var canProposeNewTimeForMeetings: js.Any
+  var canProposeNewTimeForMeetings: Any
   
   /* unmapped type */
   /** Gets a Boolean value that indicates whether the email mailbox is capable of resolving recipients. */
   var canResolveRecipients: Boolean
   
-  var canServerSearchFolders: js.Any
+  var canServerSearchFolders: Any
   
   /* unmapped type */
-  var canServerSearchMailbox: js.Any
+  var canServerSearchMailbox: Any
   
   /* unmapped type */
-  var canSmartSend: js.Any
+  var canSmartSend: Any
   
   /* unmapped type */
-  var canUpdateMeetingResponses: js.Any
+  var canUpdateMeetingResponses: Any
   
   /* unmapped type */
   /** Gets a Boolean value that indicates whether the email mailbox is capable of validating certificates. */
@@ -55,16 +55,16 @@ object EmailMailboxCapabilities {
     canCreateFolder: Boolean,
     canDeleteFolder: Boolean,
     canEmptyFolder: Boolean,
-    canForwardMeetings: js.Any,
-    canGetAndSetExternalAutoReplies: js.Any,
-    canGetAndSetInternalAutoReplies: js.Any,
+    canForwardMeetings: Any,
+    canGetAndSetExternalAutoReplies: Any,
+    canGetAndSetInternalAutoReplies: Any,
     canMoveFolder: Boolean,
-    canProposeNewTimeForMeetings: js.Any,
+    canProposeNewTimeForMeetings: Any,
     canResolveRecipients: Boolean,
-    canServerSearchFolders: js.Any,
-    canServerSearchMailbox: js.Any,
-    canSmartSend: js.Any,
-    canUpdateMeetingResponses: js.Any,
+    canServerSearchFolders: Any,
+    canServerSearchMailbox: Any,
+    canSmartSend: Any,
+    canUpdateMeetingResponses: Any,
     canValidateCertificates: Boolean
   ): EmailMailboxCapabilities = {
     val __obj = js.Dynamic.literal(canCreateFolder = canCreateFolder.asInstanceOf[js.Any], canDeleteFolder = canDeleteFolder.asInstanceOf[js.Any], canEmptyFolder = canEmptyFolder.asInstanceOf[js.Any], canForwardMeetings = canForwardMeetings.asInstanceOf[js.Any], canGetAndSetExternalAutoReplies = canGetAndSetExternalAutoReplies.asInstanceOf[js.Any], canGetAndSetInternalAutoReplies = canGetAndSetInternalAutoReplies.asInstanceOf[js.Any], canMoveFolder = canMoveFolder.asInstanceOf[js.Any], canProposeNewTimeForMeetings = canProposeNewTimeForMeetings.asInstanceOf[js.Any], canResolveRecipients = canResolveRecipients.asInstanceOf[js.Any], canServerSearchFolders = canServerSearchFolders.asInstanceOf[js.Any], canServerSearchMailbox = canServerSearchMailbox.asInstanceOf[js.Any], canSmartSend = canSmartSend.asInstanceOf[js.Any], canUpdateMeetingResponses = canUpdateMeetingResponses.asInstanceOf[js.Any], canValidateCertificates = canValidateCertificates.asInstanceOf[js.Any])
@@ -79,25 +79,25 @@ object EmailMailboxCapabilities {
     
     inline def setCanEmptyFolder(value: Boolean): Self = StObject.set(x, "canEmptyFolder", value.asInstanceOf[js.Any])
     
-    inline def setCanForwardMeetings(value: js.Any): Self = StObject.set(x, "canForwardMeetings", value.asInstanceOf[js.Any])
+    inline def setCanForwardMeetings(value: Any): Self = StObject.set(x, "canForwardMeetings", value.asInstanceOf[js.Any])
     
-    inline def setCanGetAndSetExternalAutoReplies(value: js.Any): Self = StObject.set(x, "canGetAndSetExternalAutoReplies", value.asInstanceOf[js.Any])
+    inline def setCanGetAndSetExternalAutoReplies(value: Any): Self = StObject.set(x, "canGetAndSetExternalAutoReplies", value.asInstanceOf[js.Any])
     
-    inline def setCanGetAndSetInternalAutoReplies(value: js.Any): Self = StObject.set(x, "canGetAndSetInternalAutoReplies", value.asInstanceOf[js.Any])
+    inline def setCanGetAndSetInternalAutoReplies(value: Any): Self = StObject.set(x, "canGetAndSetInternalAutoReplies", value.asInstanceOf[js.Any])
     
     inline def setCanMoveFolder(value: Boolean): Self = StObject.set(x, "canMoveFolder", value.asInstanceOf[js.Any])
     
-    inline def setCanProposeNewTimeForMeetings(value: js.Any): Self = StObject.set(x, "canProposeNewTimeForMeetings", value.asInstanceOf[js.Any])
+    inline def setCanProposeNewTimeForMeetings(value: Any): Self = StObject.set(x, "canProposeNewTimeForMeetings", value.asInstanceOf[js.Any])
     
     inline def setCanResolveRecipients(value: Boolean): Self = StObject.set(x, "canResolveRecipients", value.asInstanceOf[js.Any])
     
-    inline def setCanServerSearchFolders(value: js.Any): Self = StObject.set(x, "canServerSearchFolders", value.asInstanceOf[js.Any])
+    inline def setCanServerSearchFolders(value: Any): Self = StObject.set(x, "canServerSearchFolders", value.asInstanceOf[js.Any])
     
-    inline def setCanServerSearchMailbox(value: js.Any): Self = StObject.set(x, "canServerSearchMailbox", value.asInstanceOf[js.Any])
+    inline def setCanServerSearchMailbox(value: Any): Self = StObject.set(x, "canServerSearchMailbox", value.asInstanceOf[js.Any])
     
-    inline def setCanSmartSend(value: js.Any): Self = StObject.set(x, "canSmartSend", value.asInstanceOf[js.Any])
+    inline def setCanSmartSend(value: Any): Self = StObject.set(x, "canSmartSend", value.asInstanceOf[js.Any])
     
-    inline def setCanUpdateMeetingResponses(value: js.Any): Self = StObject.set(x, "canUpdateMeetingResponses", value.asInstanceOf[js.Any])
+    inline def setCanUpdateMeetingResponses(value: Any): Self = StObject.set(x, "canUpdateMeetingResponses", value.asInstanceOf[js.Any])
     
     inline def setCanValidateCertificates(value: Boolean): Self = StObject.set(x, "canValidateCertificates", value.asInstanceOf[js.Any])
   }

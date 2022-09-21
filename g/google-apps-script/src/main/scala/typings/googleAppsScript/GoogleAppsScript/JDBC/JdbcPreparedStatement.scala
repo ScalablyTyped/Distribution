@@ -123,9 +123,9 @@ trait JdbcPreparedStatement extends StObject {
   def setNull(parameterIndex: Integer, sqlType: Integer): Unit = js.native
   def setNull(parameterIndex: Integer, sqlType: Integer, typeName: String): Unit = js.native
   
-  def setObject(index: Integer, x: js.Any): Unit = js.native
-  def setObject(parameterIndex: Integer, x: js.Any, targetSqlType: Integer): Unit = js.native
-  def setObject(parameterIndex: Integer, x: js.Any, targetSqlType: Integer, scaleOrLength: Integer): Unit = js.native
+  def setObject(index: Integer, x: Any): Unit = js.native
+  def setObject(parameterIndex: Integer, x: Any, targetSqlType: Integer): Unit = js.native
+  def setObject(parameterIndex: Integer, x: Any, targetSqlType: Integer, scaleOrLength: Integer): Unit = js.native
   
   def setPoolable(poolable: Boolean): Unit = js.native
   

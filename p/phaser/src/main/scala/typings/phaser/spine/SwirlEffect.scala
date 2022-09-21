@@ -16,9 +16,9 @@ trait SwirlEffect
   
   var radius: Double
   
-  /* private */ var worldX: js.Any
+  /* private */ var worldX: Any
   
-  /* private */ var worldY: js.Any
+  /* private */ var worldY: Any
 }
 object SwirlEffect {
   
@@ -30,8 +30,8 @@ object SwirlEffect {
     end: () => Unit,
     radius: Double,
     transform: (Vector2, Vector2, Color, Color) => Unit,
-    worldX: js.Any,
-    worldY: js.Any
+    worldX: Any,
+    worldY: Any
   ): SwirlEffect = {
     val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], begin = js.Any.fromFunction1(begin), centerX = centerX.asInstanceOf[js.Any], centerY = centerY.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), radius = radius.asInstanceOf[js.Any], transform = js.Any.fromFunction4(transform), worldX = worldX.asInstanceOf[js.Any], worldY = worldY.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwirlEffect]
@@ -47,8 +47,8 @@ object SwirlEffect {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setWorldX(value: js.Any): Self = StObject.set(x, "worldX", value.asInstanceOf[js.Any])
+    inline def setWorldX(value: Any): Self = StObject.set(x, "worldX", value.asInstanceOf[js.Any])
     
-    inline def setWorldY(value: js.Any): Self = StObject.set(x, "worldY", value.asInstanceOf[js.Any])
+    inline def setWorldY(value: Any): Self = StObject.set(x, "worldY", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,6 @@ import typings.mfiles.MFiles.MFBuiltInDocumentClass
 import typings.mfiles.MFiles.MFBuiltInObjectClass
 import typings.mfiles.MFiles.MFObjectVersionFlag
 import typings.mfiles.MFiles.MFSpecialObjectFlag
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.ObjectVersion")
 @js.native
-class ObjectVersion ()
+open class ObjectVersion ()
   extends StObject
      with IObjectVersion {
   
   /* CompleteClass */
-  override val AccessedByMeUtc: Date = js.native
+  override val AccessedByMeUtc: js.Date = js.native
   
   /* CompleteClass */
-  override val CheckedOutAtUtc: Date = js.native
+  override val CheckedOutAtUtc: js.Date = js.native
   
   /* CompleteClass */
   override val CheckedOutTo: Double = js.native
@@ -45,7 +44,7 @@ class ObjectVersion ()
   override def Clone(): IObjectVersion = js.native
   
   /* CompleteClass */
-  override val CreatedUtc: Date = js.native
+  override val CreatedUtc: js.Date = js.native
   
   /* CompleteClass */
   override val Deleted: Boolean = js.native
@@ -84,7 +83,7 @@ class ObjectVersion ()
   override val IsObjectShortcut: Boolean = js.native
   
   /* CompleteClass */
-  override val LastModifiedUtc: Date = js.native
+  override val LastModifiedUtc: js.Date = js.native
   
   /* CompleteClass */
   override val LatestCheckedInVersion: Double = js.native

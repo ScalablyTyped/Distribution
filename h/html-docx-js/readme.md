@@ -10,15 +10,12 @@ Converts HTML documents to DOCX in the browser
 | ------------------ | :-------------: |
 | Full name          | html-docx-js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 281642 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 31214.0 |
+| # stars            | 881.0 |
 
 ## Links
-- [Homepage](https://github.com/evidenceprime/html-docx-js#readme)
-- [Bugs](https://github.com/evidenceprime/html-docx-js/issues)
-- [Repository](https://github.com/evidenceprime/html-docx-js)
 - [Npm](https://www.npmjs.com/package/html-docx-js)
     
 

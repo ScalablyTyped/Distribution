@@ -1,7 +1,7 @@
 package typings.vegaLite
 
+import typings.vegaLite.channeldefMod.FieldDef
 import typings.vegaLite.channeldefMod.FieldName
-import typings.vegaLite.channeldefMod.PositionFieldDef
 import typings.vegaLite.dataflowMod.DataFlowNode
 import typings.vegaLite.sortMod.SortFields
 import typings.vegaLite.srcStackMod.StackOffset
@@ -16,16 +16,16 @@ object stackMod {
   
   @JSImport("vega-lite/build/src/compile/data/stack", "StackNode")
   @js.native
-  class StackNode protected () extends DataFlowNode {
+  open class StackNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, stack: StackComponent) = this()
     
-    /* private */ var _stack: js.Any = js.native
+    /* private */ var _stack: Any = js.native
     
     def addDimensions(fields: js.Array[String]): Unit = js.native
     
     def assemble(): js.Array[Transforms] = js.native
     
-    /* private */ var getGroupbyFields: js.Any = js.native
+    /* private */ var getGroupbyFields: Any = js.native
     
     def stack: StackComponent = js.native
   }
@@ -48,7 +48,7 @@ object stackMod {
       */
     var as: js.Tuple2[FieldName, FieldName]
     
-    var dimensionFieldDef: js.UndefOr[PositionFieldDef[String]] = js.undefined
+    var dimensionFieldDefs: js.Array[FieldDef[String, Any]]
     
     /**
       * Faceted field.
@@ -90,12 +90,13 @@ object stackMod {
     
     inline def apply(
       as: js.Tuple2[FieldName, FieldName],
+      dimensionFieldDefs: js.Array[FieldDef[String, Any]],
       facetby: js.Array[String],
       offset: StackOffset,
       sort: SortFields,
       stackField: String
     ): StackComponent = {
-      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], facetby = facetby.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], stackField = stackField.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], dimensionFieldDefs = dimensionFieldDefs.asInstanceOf[js.Any], facetby = facetby.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], stackField = stackField.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackComponent]
     }
     
@@ -103,19 +104,19 @@ object stackMod {
       
       inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      inline def setDimensionFieldDef(value: PositionFieldDef[String]): Self = StObject.set(x, "dimensionFieldDef", value.asInstanceOf[js.Any])
+      inline def setDimensionFieldDefs(value: js.Array[FieldDef[String, Any]]): Self = StObject.set(x, "dimensionFieldDefs", value.asInstanceOf[js.Any])
       
-      inline def setDimensionFieldDefUndefined: Self = StObject.set(x, "dimensionFieldDef", js.undefined)
+      inline def setDimensionFieldDefsVarargs(value: (FieldDef[String, Any])*): Self = StObject.set(x, "dimensionFieldDefs", js.Array(value*))
       
       inline def setFacetby(value: js.Array[String]): Self = StObject.set(x, "facetby", value.asInstanceOf[js.Any])
       
-      inline def setFacetbyVarargs(value: String*): Self = StObject.set(x, "facetby", js.Array(value :_*))
+      inline def setFacetbyVarargs(value: String*): Self = StObject.set(x, "facetby", js.Array(value*))
       
       inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
       
       inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
       
-      inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+      inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
       
       inline def setImpute(value: Boolean): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,7 @@ object stackMod {
       
       inline def setStackbyUndefined: Self = StObject.set(x, "stackby", js.undefined)
       
-      inline def setStackbyVarargs(value: String*): Self = StObject.set(x, "stackby", js.Array(value :_*))
+      inline def setStackbyVarargs(value: String*): Self = StObject.set(x, "stackby", js.Array(value*))
     }
   }
 }

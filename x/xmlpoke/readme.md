@@ -11,9 +11,9 @@ Module for modifying XML files.
 | Full name          | xmlpoke |
 | Keywords           | xmlpoke, xml |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 129516 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9750.666666666666 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/mikeobrien/node-xmlpoke)

@@ -1,6 +1,6 @@
 package typings.pgProtocol
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "AuthenticationMD5Password")
   @js.native
-  class AuthenticationMD5Password protected ()
+  open class AuthenticationMD5Password protected ()
     extends StObject
        with BackendMessage {
     def this(length: Double, salt: Buffer) = this()
@@ -26,7 +26,7 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "BackendKeyDataMessage")
   @js.native
-  class BackendKeyDataMessage protected () extends StObject {
+  open class BackendKeyDataMessage protected () extends StObject {
     def this(length: Double, processID: Double, secretKey: Double) = this()
     
     val length: Double = js.native
@@ -40,7 +40,7 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "CommandCompleteMessage")
   @js.native
-  class CommandCompleteMessage protected () extends StObject {
+  open class CommandCompleteMessage protected () extends StObject {
     def this(length: Double, text: String) = this()
     
     val length: Double = js.native
@@ -52,19 +52,19 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "CopyDataMessage")
   @js.native
-  class CopyDataMessage protected () extends StObject {
+  open class CopyDataMessage protected () extends StObject {
     def this(length: Double, chunk: Buffer) = this()
     
     val chunk: Buffer = js.native
     
     val length: Double = js.native
     
-    val name: String | Double = js.native
+    val name: /* "copyData" */ String = js.native
   }
   
   @JSImport("pg-protocol/dist/messages", "CopyResponse")
   @js.native
-  class CopyResponse protected () extends StObject {
+  open class CopyResponse protected () extends StObject {
     def this(length: Double, name: MessageName, binary: Boolean, columnCount: Double) = this()
     
     val binary: Boolean = js.native
@@ -78,12 +78,12 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "DataRowMessage")
   @js.native
-  class DataRowMessage protected () extends StObject {
-    def this(length: Double, fields: js.Array[js.Any]) = this()
+  open class DataRowMessage protected () extends StObject {
+    def this(length: Double, fields: js.Array[Any]) = this()
     
     val fieldCount: Double = js.native
     
-    var fields: js.Array[js.Any] = js.native
+    var fields: js.Array[Any] = js.native
     
     var length: Double = js.native
     
@@ -93,7 +93,7 @@ object messagesMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pgProtocol.messagesMod.NoticeOrError because var conflicts: message. Inlined severity, code, detail, hint, position, internalPosition, internalQuery, where, schema, table, column, dataType, constraint, file, line, routine */ @JSImport("pg-protocol/dist/messages", "DatabaseError")
   @js.native
-  class DatabaseError protected ()
+  open class DatabaseError protected ()
     extends StObject
        with Error {
     def this(message: String, length: Double, name: MessageName) = this()
@@ -120,9 +120,11 @@ object messagesMod {
     
     var line: js.UndefOr[String] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
@@ -143,7 +145,7 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "Field")
   @js.native
-  class Field protected () extends StObject {
+  open class Field protected () extends StObject {
     def this(
       name: String,
       tableID: Double,
@@ -171,7 +173,7 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "NoticeMessage")
   @js.native
-  class NoticeMessage protected ()
+  open class NoticeMessage protected ()
     extends StObject
        with BackendMessage
        with NoticeOrError {
@@ -184,12 +186,12 @@ object messagesMod {
     /* CompleteClass */
     var name: MessageName = js.native
     @JSName("name")
-    val name_NoticeMessage: String | Double = js.native
+    val name_NoticeMessage: /* "notice" */ String = js.native
   }
   
   @JSImport("pg-protocol/dist/messages", "NotificationResponseMessage")
   @js.native
-  class NotificationResponseMessage protected () extends StObject {
+  open class NotificationResponseMessage protected () extends StObject {
     def this(length: Double, processId: Double, channel: String, payload: String) = this()
     
     val channel: String = js.native
@@ -203,9 +205,23 @@ object messagesMod {
     val processId: Double = js.native
   }
   
+  @JSImport("pg-protocol/dist/messages", "ParameterDescriptionMessage")
+  @js.native
+  open class ParameterDescriptionMessage protected () extends StObject {
+    def this(length: Double, parameterCount: Double) = this()
+    
+    val dataTypeIDs: js.Array[Double] = js.native
+    
+    val length: Double = js.native
+    
+    val name: MessageName = js.native
+    
+    val parameterCount: Double = js.native
+  }
+  
   @JSImport("pg-protocol/dist/messages", "ParameterStatusMessage")
   @js.native
-  class ParameterStatusMessage protected () extends StObject {
+  open class ParameterStatusMessage protected () extends StObject {
     def this(length: Double, parameterName: String, parameterValue: String) = this()
     
     val length: Double = js.native
@@ -219,7 +235,7 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "ReadyForQueryMessage")
   @js.native
-  class ReadyForQueryMessage protected () extends StObject {
+  open class ReadyForQueryMessage protected () extends StObject {
     def this(length: Double, status: String) = this()
     
     val length: Double = js.native
@@ -231,7 +247,7 @@ object messagesMod {
   
   @JSImport("pg-protocol/dist/messages", "RowDescriptionMessage")
   @js.native
-  class RowDescriptionMessage protected () extends StObject {
+  open class RowDescriptionMessage protected () extends StObject {
     def this(length: Double, fieldCount: Double) = this()
     
     val fieldCount: Double = js.native
@@ -307,6 +323,7 @@ object messagesMod {
     - typings.pgProtocol.pgProtocolStrings.copyDone
     - typings.pgProtocol.pgProtocolStrings.copyData
     - typings.pgProtocol.pgProtocolStrings.rowDescription
+    - typings.pgProtocol.pgProtocolStrings.parameterDescription
     - typings.pgProtocol.pgProtocolStrings.parameterStatus
     - typings.pgProtocol.pgProtocolStrings.backendKeyData
     - typings.pgProtocol.pgProtocolStrings.notification
@@ -366,6 +383,8 @@ object messagesMod {
     inline def notice: typings.pgProtocol.pgProtocolStrings.notice = "notice".asInstanceOf[typings.pgProtocol.pgProtocolStrings.notice]
     
     inline def notification: typings.pgProtocol.pgProtocolStrings.notification = "notification".asInstanceOf[typings.pgProtocol.pgProtocolStrings.notification]
+    
+    inline def parameterDescription: typings.pgProtocol.pgProtocolStrings.parameterDescription = "parameterDescription".asInstanceOf[typings.pgProtocol.pgProtocolStrings.parameterDescription]
     
     inline def parameterStatus: typings.pgProtocol.pgProtocolStrings.parameterStatus = "parameterStatus".asInstanceOf[typings.pgProtocol.pgProtocolStrings.parameterStatus]
     

@@ -12,7 +12,12 @@ trait AutoScalingGroupRecommendationOption extends StObject {
   var configuration: js.UndefOr[AutoScalingGroupConfiguration] = js.undefined
   
   /**
-    * The performance risk of the Auto Scaling group configuration recommendation. Performance risk is the likelihood of the recommended instance type not meeting the performance requirement of your workload. The lowest performance risk is categorized as 0, and the highest as 5.
+    * The level of effort required to migrate from the current instance type to the recommended instance type. For example, the migration effort is Low if Amazon EMR is the inferred workload type and an Amazon Web Services Graviton instance type is recommended. The migration effort is Medium if a workload type couldn't be inferred but an Amazon Web Services Graviton instance type is recommended. The migration effort is VeryLow if both the current and recommended instance types are of the same CPU architecture.
+    */
+  var migrationEffort: js.UndefOr[MigrationEffort] = js.undefined
+  
+  /**
+    * The performance risk of the Auto Scaling group configuration recommendation. Performance risk indicates the likelihood of the recommended instance type not meeting the resource needs of your workload. Compute Optimizer calculates an individual performance risk score for each specification of the recommended instance, including CPU, memory, EBS throughput, EBS IOPS, disk throughput, disk IOPS, network throughput, and network PPS. The performance risk of the recommended instance is calculated as the maximum performance risk score across the analyzed resource specifications. The value ranges from 0 - 4, with 0 meaning that the recommended resource is predicted to always provide enough hardware capability. The higher the performance risk is, the more likely you should validate whether the recommendation will meet the performance requirements of your workload before migrating your resource.
     */
   var performanceRisk: js.UndefOr[PerformanceRisk] = js.undefined
   
@@ -25,6 +30,11 @@ trait AutoScalingGroupRecommendationOption extends StObject {
     * The rank of the Auto Scaling group recommendation option. The top recommendation option is ranked as 1.
     */
   var rank: js.UndefOr[Rank] = js.undefined
+  
+  /**
+    * An object that describes the savings opportunity for the Auto Scaling group recommendation option. Savings opportunity includes the estimated monthly savings amount and percentage.
+    */
+  var savingsOpportunity: js.UndefOr[SavingsOpportunity] = js.undefined
 }
 object AutoScalingGroupRecommendationOption {
   
@@ -39,6 +49,10 @@ object AutoScalingGroupRecommendationOption {
     
     inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
+    inline def setMigrationEffort(value: MigrationEffort): Self = StObject.set(x, "migrationEffort", value.asInstanceOf[js.Any])
+    
+    inline def setMigrationEffortUndefined: Self = StObject.set(x, "migrationEffort", js.undefined)
+    
     inline def setPerformanceRisk(value: PerformanceRisk): Self = StObject.set(x, "performanceRisk", value.asInstanceOf[js.Any])
     
     inline def setPerformanceRiskUndefined: Self = StObject.set(x, "performanceRisk", js.undefined)
@@ -47,10 +61,14 @@ object AutoScalingGroupRecommendationOption {
     
     inline def setProjectedUtilizationMetricsUndefined: Self = StObject.set(x, "projectedUtilizationMetrics", js.undefined)
     
-    inline def setProjectedUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "projectedUtilizationMetrics", js.Array(value :_*))
+    inline def setProjectedUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "projectedUtilizationMetrics", js.Array(value*))
     
     inline def setRank(value: Rank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    
+    inline def setSavingsOpportunity(value: SavingsOpportunity): Self = StObject.set(x, "savingsOpportunity", value.asInstanceOf[js.Any])
+    
+    inline def setSavingsOpportunityUndefined: Self = StObject.set(x, "savingsOpportunity", js.undefined)
   }
 }

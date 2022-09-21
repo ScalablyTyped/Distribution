@@ -10,10 +10,10 @@ object errorMod {
   
   @JSImport("material-ui/svg-icons/alert/error", JSImport.Default)
   @js.native
-  class default () extends AlertError
+  open class default () extends AlertError
   
   @JSImport("material-ui/svg-icons/alert/error", "AlertError")
   @js.native
-  class AlertError ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AlertError ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

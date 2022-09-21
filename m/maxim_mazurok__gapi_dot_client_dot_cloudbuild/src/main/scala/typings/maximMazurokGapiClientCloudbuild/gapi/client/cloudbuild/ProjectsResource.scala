@@ -8,20 +8,29 @@ trait ProjectsResource extends StObject {
   
   var builds: BuildsResource
   
+  var githubEnterpriseConfigs: GithubEnterpriseConfigsResource
+  
   var locations: LocationsResource
   
   var triggers: TriggersResource
 }
 object ProjectsResource {
   
-  inline def apply(builds: BuildsResource, locations: LocationsResource, triggers: TriggersResource): ProjectsResource = {
-    val __obj = js.Dynamic.literal(builds = builds.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
+  inline def apply(
+    builds: BuildsResource,
+    githubEnterpriseConfigs: GithubEnterpriseConfigsResource,
+    locations: LocationsResource,
+    triggers: TriggersResource
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal(builds = builds.asInstanceOf[js.Any], githubEnterpriseConfigs = githubEnterpriseConfigs.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
   extension [Self <: ProjectsResource](x: Self) {
     
     inline def setBuilds(value: BuildsResource): Self = StObject.set(x, "builds", value.asInstanceOf[js.Any])
+    
+    inline def setGithubEnterpriseConfigs(value: GithubEnterpriseConfigsResource): Self = StObject.set(x, "githubEnterpriseConfigs", value.asInstanceOf[js.Any])
     
     inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

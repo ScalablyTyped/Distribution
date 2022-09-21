@@ -1,9 +1,8 @@
 package typings.swaggerExpressMiddleware.mod
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,16 @@ trait RawParserOptionItem extends StObject {
     * Defaults to application/octet-stream.
     */
   var `type`: js.UndefOr[
-    (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]) | String
+    (js.Function1[
+      /* req */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
+      String
+    ]) | String
   ] = js.undefined
   
   /**
@@ -37,7 +45,13 @@ trait RawParserOptionItem extends StObject {
     */
   var verify: js.UndefOr[
     js.Function4[
-      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+      /* req */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
       /* res */ Response, 
       /* buf */ Buffer, 
       /* encoding */ String, 
@@ -63,15 +77,38 @@ object RawParserOptionItem {
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     inline def setType(
-      value: (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]) | String
+      value: (js.Function1[
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          String
+        ]) | String
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+    inline def setTypeFunction1(
+      value: /* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ] => String
+    ): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setVerify(
-      value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit
+      value: (/* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit
     ): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
     
     inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)

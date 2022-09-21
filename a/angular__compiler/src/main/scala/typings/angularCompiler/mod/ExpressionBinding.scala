@@ -1,14 +1,14 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.astMod.TemplateBindingIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "ExpressionBinding")
 @js.native
-class ExpressionBinding protected ()
-  extends typings.angularCompiler.compilerMod.ExpressionBinding {
+open class ExpressionBinding protected ()
+  extends StObject
+     with TemplateBinding {
   /**
     * @param sourceSpan entire span of the binding.
     * @param key binding name, like ngForOf, ngForTrackBy, ngIf, along with its
@@ -19,10 +19,12 @@ class ExpressionBinding protected ()
     * 3. key.source = ngForTrackBy, key.span is for "trackBy"
     * @param value optional expression for the RHS.
     */
-  def this(sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan, key: TemplateBindingIdentifier) = this()
-  def this(
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    key: TemplateBindingIdentifier,
-    value: typings.angularCompiler.astMod.ASTWithSource
-  ) = this()
+  def this(sourceSpan: AbsoluteSourceSpan, key: TemplateBindingIdentifier) = this()
+  def this(sourceSpan: AbsoluteSourceSpan, key: TemplateBindingIdentifier, value: ASTWithSource) = this()
+  
+  val key: TemplateBindingIdentifier = js.native
+  
+  val sourceSpan: AbsoluteSourceSpan = js.native
+  
+  val value: ASTWithSource | Null = js.native
 }

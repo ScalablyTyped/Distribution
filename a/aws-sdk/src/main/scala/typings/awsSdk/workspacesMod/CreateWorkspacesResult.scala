@@ -29,12 +29,12 @@ object CreateWorkspacesResult {
     
     inline def setFailedRequestsUndefined: Self = StObject.set(x, "FailedRequests", js.undefined)
     
-    inline def setFailedRequestsVarargs(value: FailedCreateWorkspaceRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value :_*))
+    inline def setFailedRequestsVarargs(value: FailedCreateWorkspaceRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value*))
     
     inline def setPendingRequests(value: WorkspaceList): Self = StObject.set(x, "PendingRequests", value.asInstanceOf[js.Any])
     
     inline def setPendingRequestsUndefined: Self = StObject.set(x, "PendingRequests", js.undefined)
     
-    inline def setPendingRequestsVarargs(value: Workspace*): Self = StObject.set(x, "PendingRequests", js.Array(value :_*))
+    inline def setPendingRequestsVarargs(value: Workspace*): Self = StObject.set(x, "PendingRequests", js.Array(value*))
   }
 }

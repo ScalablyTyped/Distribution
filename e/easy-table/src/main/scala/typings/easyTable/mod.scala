@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("easy-table", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with EasyTable
   @JSImport("easy-table", JSImport.Namespace)
@@ -105,14 +105,14 @@ object mod {
     * Default printer
     */
   /* static member */
-  inline def string(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def string(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Aggregators extends StObject {
     
     /**
       * Average reduction
       */
-    var avg: js.Any
+    var avg: Any
     
     /**
       * Create a printer which formats the value with `printer`,
@@ -127,22 +127,22 @@ object mod {
     /**
       * Sum reduction
       */
-    var sum: js.Any
+    var sum: Any
   }
   object Aggregators {
     
-    inline def apply(avg: js.Any, printer: (String, CellPrinter[js.Any]) => CellPrinter[js.Any], sum: js.Any): Aggregators = {
+    inline def apply(avg: Any, printer: (String, CellPrinter[Any]) => CellPrinter[Any], sum: Any): Aggregators = {
       val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], printer = js.Any.fromFunction2(printer), sum = sum.asInstanceOf[js.Any])
       __obj.asInstanceOf[Aggregators]
     }
     
     extension [Self <: Aggregators](x: Self) {
       
-      inline def setAvg(value: js.Any): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+      inline def setAvg(value: Any): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
       
-      inline def setPrinter(value: (String, CellPrinter[js.Any]) => CellPrinter[js.Any]): Self = StObject.set(x, "printer", js.Any.fromFunction2(value))
+      inline def setPrinter(value: (String, CellPrinter[Any]) => CellPrinter[Any]): Self = StObject.set(x, "printer", js.Any.fromFunction2(value))
       
-      inline def setSum(value: js.Any): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+      inline def setSum(value: Any): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,13 +274,9 @@ object mod {
     def total[T](col: String, opts: TotalOptions[T]): this.type = js.native
   }
   
-  type FormatFunction[T] = js.Function2[
-    /* obj */ T, 
-    /* cell */ js.Function2[/* name */ String, /* val */ js.Any, Unit], 
-    Unit
-  ]
+  type FormatFunction[T] = js.Function2[/* obj */ T, /* cell */ js.Function2[/* name */ String, /* val */ Any, Unit], Unit]
   
-  type FormatObject = StringDictionary[ColumnFormat[js.Any]]
+  type FormatObject = StringDictionary[ColumnFormat[Any]]
   
   trait PrintColumnOptions[T] extends StObject {
     

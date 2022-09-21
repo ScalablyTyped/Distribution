@@ -10,10 +10,10 @@ object arrowDropDownCircleMod {
   
   @JSImport("material-ui/svg-icons/navigation/arrow-drop-down-circle", JSImport.Default)
   @js.native
-  class default () extends NavigationArrowDropDownCircle
+  open class default () extends NavigationArrowDropDownCircle
   
   @JSImport("material-ui/svg-icons/navigation/arrow-drop-down-circle", "NavigationArrowDropDownCircle")
   @js.native
-  class NavigationArrowDropDownCircle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationArrowDropDownCircle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

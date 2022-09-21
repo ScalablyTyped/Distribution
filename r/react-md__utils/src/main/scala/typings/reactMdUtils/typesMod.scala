@@ -1,7 +1,6 @@
 package typings.reactMdUtils
 
-import typings.reactMdUtils.anon.Coordspositionfixedabsolu
-import typings.reactMdUtils.anon.PartialPositionAnchor
+import typings.reactMdUtils.typesTypesMod.NonNullRef
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,365 +8,274 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  trait Coords extends StObject {
-    
-    var bottom: js.UndefOr[Double] = js.undefined
-    
-    var left: js.UndefOr[Double] = js.undefined
-    
-    var minWidth: js.UndefOr[Double] = js.undefined
-    
-    var right: js.UndefOr[Double] = js.undefined
-    
-    var top: js.UndefOr[Double] = js.undefined
-    
-    var width: js.UndefOr[Double] = js.undefined
-  }
-  object Coords {
-    
-    inline def apply(): Coords = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Coords]
-    }
-    
-    extension [Self <: Coords](x: Self) {
-      
-      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
-      
-      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
-      
-      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
-      
-      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
-      
-      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
-      
-      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
-      
-      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
-      
-      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-      
-      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
-  }
-  
-  trait FixedPosition extends StObject {
+  /* Inlined parent std.Required<@react-md/utils.@react-md/utils/types/keyboardMovement/types.KeyboardMovementBehavior> */
+  trait KeyboardFocusContext extends StObject {
     
     /**
-      * The calculated horizontal position that can be used to compare to the
-      * provided horizontal position anchor if additional manual updates should be
-      * applied.
+      * A function that is used to add an element to the list of focusable
+      * elements.
       */
-    var actualX: HorizontalPosition
+    def attach[E /* <: HTMLElement */](element: E): Unit
+    
+    /** {@inheritDoc KeyboardMovementConfig} */
+    var config: NonNullRef[KeyboardMovementConfig]
     
     /**
-      * The calculated vertical position that can be used to compare to the
-      * provided horizontal position anchor if additional manual updates should be
-      * applied.
+      * A function that is used to remove an element to the list of focusable
+      * elements.
       */
-    var actualY: VerticalPosition
+    def detach[E /* <: HTMLElement */](element: E): Unit
     
-    /**
-      * The style object that should be applied to the fixed element so it will be
-      * fixed to the container element. This will be `undefined` if the container
-      * element doesn't exist within the DOM.
-      *
-      * Note: The fixed element styles **will not** contain styles for `z-index` or
-      * `background-color` so you'll need to add that manually.
-      */
-    var style: js.UndefOr[Coordspositionfixedabsolu] = js.undefined
+    var horizontal: Boolean
+    
+    var includeDisabled: Boolean
+    
+    var loopable: Boolean
+    
+    var searchable: Boolean
+    
+    /** {@inheritDoc KeyboardFocusElementLookup} */
+    var watching: KeyboardFocusElementLookup
   }
-  object FixedPosition {
+  object KeyboardFocusContext {
     
-    inline def apply(actualX: HorizontalPosition, actualY: VerticalPosition): FixedPosition = {
-      val __obj = js.Dynamic.literal(actualX = actualX.asInstanceOf[js.Any], actualY = actualY.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FixedPosition]
+    inline def apply(
+      attach: Any => Unit,
+      config: NonNullRef[KeyboardMovementConfig],
+      detach: Any => Unit,
+      horizontal: Boolean,
+      includeDisabled: Boolean,
+      loopable: Boolean,
+      searchable: Boolean,
+      watching: KeyboardFocusElementLookup
+    ): KeyboardFocusContext = {
+      val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), config = config.asInstanceOf[js.Any], detach = js.Any.fromFunction1(detach), horizontal = horizontal.asInstanceOf[js.Any], includeDisabled = includeDisabled.asInstanceOf[js.Any], loopable = loopable.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], watching = watching.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KeyboardFocusContext]
     }
     
-    extension [Self <: FixedPosition](x: Self) {
+    extension [Self <: KeyboardFocusContext](x: Self) {
       
-      inline def setActualX(value: HorizontalPosition): Self = StObject.set(x, "actualX", value.asInstanceOf[js.Any])
+      inline def setAttach(value: Any => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
       
-      inline def setActualY(value: VerticalPosition): Self = StObject.set(x, "actualY", value.asInstanceOf[js.Any])
+      inline def setConfig(value: NonNullRef[KeyboardMovementConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setStyle(value: Coordspositionfixedabsolu): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setDetach(value: Any => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction1(value))
       
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeDisabled(value: Boolean): Self = StObject.set(x, "includeDisabled", value.asInstanceOf[js.Any])
+      
+      inline def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
+      
+      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+      
+      inline def setWatching(value: KeyboardFocusElementLookup): Self = StObject.set(x, "watching", value.asInstanceOf[js.Any])
     }
   }
   
-  trait FixedPositionOptions
-    extends StObject
-       with InitialCoords {
+  trait KeyboardFocusElementData extends StObject {
     
     /**
-      * The configuration to anchor the fixed element to the container element.
+      * The text content of the element that is used for searching. This will be
+      * the empty string if the {@link KeyboardMovementBehavior.searchable} is
+      * false
       */
-    var anchor: js.UndefOr[PartialPositionAnchor] = js.undefined
+    var content: String
     
     /**
-      * The container element that the `element` should be fixed to.
+      * The element that can be keyboard focused.
       */
-    var container: HTMLElement | Null
-    
-    /**
-      * Boolean if the auto-swapping behavior should be disabled. It's normally
-      * recommended to not disable this since it'll allow elements to appear off
-      * screen.
-      */
-    var disableSwapping: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Boolean if the fixed positioning should no longer prevent the fixed element
-      * to be positioned within the viewport. This is nice if you want to allow for
-      * full page scrolling instead and manually set a max-height on your element.
-      */
-    var disableVHBounds: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The element that is fixed to a `container` element.
-      */
-    var element: HTMLElement | Null
-    
-    /**
-      * Boolean if the fixed element should no longer be able to overlap the
-      * container element. This is useful for autocomplete menus or other
-      * components that retain focus on the container element while the fixed
-      * element becomes visible.
-      */
-    var preventOverlap: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Boolean if the style object should include the `transformOrigin` value
-      * based on the x and y positions.
-      */
-    var transformOrigin: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The viewwidth margin to apply so that the element doesn't need to be
-      * directly on the screen edge.
-      */
-    var vhMargin: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The viewwidth margin to apply so that the element doesn't need to be
-      * directly on the screen edge.
-      */
-    var vwMargin: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * @see PositionWidth
-      */
-    var width: js.UndefOr[PositionWidth] = js.undefined
-    
-    /**
-      * The container width margin to apply so that the element doesn't need to be
-      * directly on the container's edge.
-      */
-    var xMargin: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The container height margin to apply so that the element doesn't need to be
-      * directly on the container's edge
-      */
-    var yMargin: js.UndefOr[Double] = js.undefined
+    var element: HTMLElement
   }
-  object FixedPositionOptions {
+  object KeyboardFocusElementData {
     
-    inline def apply(): FixedPositionOptions = {
-      val __obj = js.Dynamic.literal(container = null, element = null)
-      __obj.asInstanceOf[FixedPositionOptions]
+    inline def apply(content: String, element: HTMLElement): KeyboardFocusElementData = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KeyboardFocusElementData]
     }
     
-    extension [Self <: FixedPositionOptions](x: Self) {
+    extension [Self <: KeyboardFocusElementData](x: Self) {
       
-      inline def setAnchor(value: PartialPositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
-      
-      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
-      
-      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-      
-      inline def setContainerNull: Self = StObject.set(x, "container", null)
-      
-      inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
-      
-      inline def setDisableSwappingUndefined: Self = StObject.set(x, "disableSwapping", js.undefined)
-      
-      inline def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
-      
-      inline def setDisableVHBoundsUndefined: Self = StObject.set(x, "disableVHBounds", js.undefined)
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-      
-      inline def setElementNull: Self = StObject.set(x, "element", null)
-      
-      inline def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
-      
-      inline def setPreventOverlapUndefined: Self = StObject.set(x, "preventOverlap", js.undefined)
-      
-      inline def setTransformOrigin(value: Boolean): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
-      
-      inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
-      
-      inline def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
-      
-      inline def setVhMarginUndefined: Self = StObject.set(x, "vhMargin", js.undefined)
-      
-      inline def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
-      
-      inline def setVwMarginUndefined: Self = StObject.set(x, "vwMargin", js.undefined)
-      
-      inline def setWidth(value: PositionWidth): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-      
-      inline def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
-      
-      inline def setXMarginUndefined: Self = StObject.set(x, "xMargin", js.undefined)
-      
-      inline def setYMargin(value: Double): Self = StObject.set(x, "yMargin", value.asInstanceOf[js.Any])
-      
-      inline def setYMarginUndefined: Self = StObject.set(x, "yMargin", js.undefined)
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactMdUtils.reactMdUtilsStrings.left
-    - typings.reactMdUtils.reactMdUtilsStrings.right
-    - typings.reactMdUtils.reactMdUtilsStrings.center
-    - typings.reactMdUtils.reactMdUtilsStrings.`inner-left`
-    - typings.reactMdUtils.reactMdUtilsStrings.`inner-right`
-  */
-  trait HorizontalPosition extends StObject
-  object HorizontalPosition {
-    
-    inline def center: typings.reactMdUtils.reactMdUtilsStrings.center = "center".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.center]
-    
-    inline def `inner-left`: typings.reactMdUtils.reactMdUtilsStrings.`inner-left` = "inner-left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.`inner-left`]
-    
-    inline def `inner-right`: typings.reactMdUtils.reactMdUtilsStrings.`inner-right` = "inner-right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.`inner-right`]
-    
-    inline def left: typings.reactMdUtils.reactMdUtilsStrings.left = "left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.left]
-    
-    inline def right: typings.reactMdUtils.reactMdUtilsStrings.right = "right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.right]
-  }
+  type KeyboardFocusElementLookup = NonNullRef[js.Array[KeyboardFocusElementData]]
   
-  trait InitialCoords extends StObject {
+  trait KeyboardMovementBehavior extends StObject {
     
     /**
-      * The initial x value to use when calculating the position instead of
-      * finding the container element to determine the the correct position. All
-      * the other positioning logic will still be in effect to ensure the element
-      * will be visible within the viewport.
+      * Boolean if the keyboard movement is horizontal instead of vertical. This
+      * updates the default keyboard config to use `ArrowRight` and `ArrowLeft`
+      * instead of `ArrowDown` and `ArrowUp`,
+      *
+      * @remarks \@since 5.1.2
+      * @defaultValue `false`
       */
-    var initialX: js.UndefOr[Double] = js.undefined
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The initial y value to use when calculating the position instead of
-      * finding the container element to determine the the correct position. All
-      * the other positioning logic will still be in effect to ensure the element
-      * will be visible within the viewport.
+      * Boolean if elements that are `aria-disabled` or `disabled` should still be
+      * able to gain focus.
+      *
+      * @defaultValue `false`
       */
-    var initialY: js.UndefOr[Double] = js.undefined
+    var includeDisabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Boolean if the {@link KeyboardMovementProvider} should allow the focus behavior
+      * to loop from the first to last or last to first item instead of preventing
+      * any new focus behavior. In other words... if the last item is focused and
+      * the user presses a key that should advance the focus to the next focusable
+      * element, should the focus stay on the current element or loop back and
+      * focus the first focusable item.
+      *
+      * @defaultValue `false`
+      */
+    var loopable: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Boolean if pressing a letter will focus the next item in the
+      * {@link KeyboardMovementProvider} that starts with the same letter.
+      *
+      * @defaultValue `false`
+      */
+    var searchable: js.UndefOr[Boolean] = js.undefined
   }
-  object InitialCoords {
+  object KeyboardMovementBehavior {
     
-    inline def apply(): InitialCoords = {
+    inline def apply(): KeyboardMovementBehavior = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[InitialCoords]
+      __obj.asInstanceOf[KeyboardMovementBehavior]
     }
     
-    extension [Self <: InitialCoords](x: Self) {
+    extension [Self <: KeyboardMovementBehavior](x: Self) {
       
-      inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      inline def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      inline def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
+      inline def setIncludeDisabled(value: Boolean): Self = StObject.set(x, "includeDisabled", value.asInstanceOf[js.Any])
       
-      inline def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
-    }
-  }
-  
-  trait PositionAnchor extends StObject {
-    
-    var x: HorizontalPosition
-    
-    var y: VerticalPosition
-  }
-  object PositionAnchor {
-    
-    inline def apply(x: HorizontalPosition, y: VerticalPosition): PositionAnchor = {
-      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PositionAnchor]
-    }
-    
-    extension [Self <: PositionAnchor](x: Self) {
+      inline def setIncludeDisabledUndefined: Self = StObject.set(x, "includeDisabled", js.undefined)
       
-      inline def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
       
-      inline def setY(value: VerticalPosition): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setLoopableUndefined: Self = StObject.set(x, "loopable", js.undefined)
+      
+      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+      
+      inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactMdUtils.reactMdUtilsStrings.auto
-    - typings.reactMdUtils.reactMdUtilsStrings.equal
-    - typings.reactMdUtils.reactMdUtilsStrings.min
-  */
-  trait PositionWidth extends StObject
-  object PositionWidth {
+  /* Inlined std.Required<@react-md/utils.@react-md/utils/types/keyboardMovement/types.KeyboardMovementConfiguration> */
+  trait KeyboardMovementConfig extends StObject {
     
-    inline def auto: typings.reactMdUtils.reactMdUtilsStrings.auto = "auto".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.auto]
+    var decrementKeys: js.Array[String]
     
-    inline def equal: typings.reactMdUtils.reactMdUtilsStrings.equal = "equal".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.equal]
+    var incrementKeys: js.Array[String]
     
-    inline def min: typings.reactMdUtils.reactMdUtilsStrings.min = "min".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.min]
+    var jumpToFirstKeys: js.Array[String]
+    
+    var jumpToLastKeys: js.Array[String]
+  }
+  object KeyboardMovementConfig {
+    
+    inline def apply(
+      decrementKeys: js.Array[String],
+      incrementKeys: js.Array[String],
+      jumpToFirstKeys: js.Array[String],
+      jumpToLastKeys: js.Array[String]
+    ): KeyboardMovementConfig = {
+      val __obj = js.Dynamic.literal(decrementKeys = decrementKeys.asInstanceOf[js.Any], incrementKeys = incrementKeys.asInstanceOf[js.Any], jumpToFirstKeys = jumpToFirstKeys.asInstanceOf[js.Any], jumpToLastKeys = jumpToLastKeys.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KeyboardMovementConfig]
+    }
+    
+    extension [Self <: KeyboardMovementConfig](x: Self) {
+      
+      inline def setDecrementKeys(value: js.Array[String]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
+      
+      inline def setDecrementKeysVarargs(value: String*): Self = StObject.set(x, "decrementKeys", js.Array(value*))
+      
+      inline def setIncrementKeys(value: js.Array[String]): Self = StObject.set(x, "incrementKeys", value.asInstanceOf[js.Any])
+      
+      inline def setIncrementKeysVarargs(value: String*): Self = StObject.set(x, "incrementKeys", js.Array(value*))
+      
+      inline def setJumpToFirstKeys(value: js.Array[String]): Self = StObject.set(x, "jumpToFirstKeys", value.asInstanceOf[js.Any])
+      
+      inline def setJumpToFirstKeysVarargs(value: String*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value*))
+      
+      inline def setJumpToLastKeys(value: js.Array[String]): Self = StObject.set(x, "jumpToLastKeys", value.asInstanceOf[js.Any])
+      
+      inline def setJumpToLastKeysVarargs(value: String*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value*))
+    }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactMdUtils.reactMdUtilsStrings.above
-    - typings.reactMdUtils.reactMdUtilsStrings.below
-    - typings.reactMdUtils.reactMdUtilsStrings.left
-    - typings.reactMdUtils.reactMdUtilsStrings.right
-  */
-  trait SimplePosition extends StObject
-  object SimplePosition {
+  trait KeyboardMovementConfiguration extends StObject {
     
-    inline def above: typings.reactMdUtils.reactMdUtilsStrings.above = "above".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.above]
+    /**
+      * A list of keys that will attempt to decrement the focus index by 1.
+      *
+      * @defaultValue `["ArrowUp"]`
+      */
+    var decrementKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    inline def below: typings.reactMdUtils.reactMdUtilsStrings.below = "below".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.below]
+    /**
+      * A list of keys that will attempt to increment the focus index by 1.
+      *
+      * @defaultValue `["ArrowDown"]`
+      */
+    var incrementKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    inline def left: typings.reactMdUtils.reactMdUtilsStrings.left = "left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.left]
+    /**
+      * A list of keys that will set the focus index to `0`.
+      *
+      * @defaultValue `["Home"]`
+      */
+    var jumpToFirstKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    inline def right: typings.reactMdUtils.reactMdUtilsStrings.right = "right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.right]
+    /**
+      * A list of keys that will set the focus index to the last focusable index.
+      *
+      * @defaultValue `["End"]`
+      */
+    var jumpToLastKeys: js.UndefOr[js.Array[String]] = js.undefined
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactMdUtils.reactMdUtilsStrings.above
-    - typings.reactMdUtils.reactMdUtilsStrings.below
-    - typings.reactMdUtils.reactMdUtilsStrings.center
-    - typings.reactMdUtils.reactMdUtilsStrings.top
-    - typings.reactMdUtils.reactMdUtilsStrings.bottom
-  */
-  trait VerticalPosition extends StObject
-  object VerticalPosition {
+  object KeyboardMovementConfiguration {
     
-    inline def above: typings.reactMdUtils.reactMdUtilsStrings.above = "above".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.above]
+    inline def apply(): KeyboardMovementConfiguration = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[KeyboardMovementConfiguration]
+    }
     
-    inline def below: typings.reactMdUtils.reactMdUtilsStrings.below = "below".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.below]
-    
-    inline def bottom: typings.reactMdUtils.reactMdUtilsStrings.bottom = "bottom".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.bottom]
-    
-    inline def center: typings.reactMdUtils.reactMdUtilsStrings.center = "center".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.center]
-    
-    inline def top: typings.reactMdUtils.reactMdUtilsStrings.top = "top".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.top]
+    extension [Self <: KeyboardMovementConfiguration](x: Self) {
+      
+      inline def setDecrementKeys(value: js.Array[String]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
+      
+      inline def setDecrementKeysUndefined: Self = StObject.set(x, "decrementKeys", js.undefined)
+      
+      inline def setDecrementKeysVarargs(value: String*): Self = StObject.set(x, "decrementKeys", js.Array(value*))
+      
+      inline def setIncrementKeys(value: js.Array[String]): Self = StObject.set(x, "incrementKeys", value.asInstanceOf[js.Any])
+      
+      inline def setIncrementKeysUndefined: Self = StObject.set(x, "incrementKeys", js.undefined)
+      
+      inline def setIncrementKeysVarargs(value: String*): Self = StObject.set(x, "incrementKeys", js.Array(value*))
+      
+      inline def setJumpToFirstKeys(value: js.Array[String]): Self = StObject.set(x, "jumpToFirstKeys", value.asInstanceOf[js.Any])
+      
+      inline def setJumpToFirstKeysUndefined: Self = StObject.set(x, "jumpToFirstKeys", js.undefined)
+      
+      inline def setJumpToFirstKeysVarargs(value: String*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value*))
+      
+      inline def setJumpToLastKeys(value: js.Array[String]): Self = StObject.set(x, "jumpToLastKeys", value.asInstanceOf[js.Any])
+      
+      inline def setJumpToLastKeysUndefined: Self = StObject.set(x, "jumpToLastKeys", js.undefined)
+      
+      inline def setJumpToLastKeysVarargs(value: String*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value*))
+    }
   }
 }

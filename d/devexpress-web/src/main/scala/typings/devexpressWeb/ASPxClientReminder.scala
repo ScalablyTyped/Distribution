@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,13 +17,13 @@ trait ASPxClientReminder extends StObject {
   /**
     * Returns the date and time when the reminder is alerted.
     */
-  def GetAlertTime(): Date
+  def GetAlertTime(): js.Date
   
   /**
     * Gets the custom field bound to the reminder. An object representing the custom field.
     * @param key A string object representing the custom field's ID.
     */
-  def GetCustomField(key: String): js.Any
+  def GetCustomField(key: String): Any
   
   /**
     * Gets the reminder's ID.
@@ -34,7 +33,7 @@ trait ASPxClientReminder extends StObject {
   /**
     * Gets the time interval before the appointment's start time.
     */
-  def GetTimeBeforeStart(): Date
+  def GetTimeBeforeStart(): js.Date
   
   /**
     * Delays the reminder's alert until the alert time has increased by the specified interval.
@@ -46,10 +45,10 @@ object ASPxClientReminder {
   
   inline def apply(
     Dismiss: () => Unit,
-    GetAlertTime: () => Date,
-    GetCustomField: String => js.Any,
+    GetAlertTime: () => js.Date,
+    GetCustomField: String => Any,
     GetId: () => String,
-    GetTimeBeforeStart: () => Date,
+    GetTimeBeforeStart: () => js.Date,
     Snooze: Double => Unit
   ): ASPxClientReminder = {
     val __obj = js.Dynamic.literal(Dismiss = js.Any.fromFunction0(Dismiss), GetAlertTime = js.Any.fromFunction0(GetAlertTime), GetCustomField = js.Any.fromFunction1(GetCustomField), GetId = js.Any.fromFunction0(GetId), GetTimeBeforeStart = js.Any.fromFunction0(GetTimeBeforeStart), Snooze = js.Any.fromFunction1(Snooze))
@@ -60,13 +59,13 @@ object ASPxClientReminder {
     
     inline def setDismiss(value: () => Unit): Self = StObject.set(x, "Dismiss", js.Any.fromFunction0(value))
     
-    inline def setGetAlertTime(value: () => Date): Self = StObject.set(x, "GetAlertTime", js.Any.fromFunction0(value))
+    inline def setGetAlertTime(value: () => js.Date): Self = StObject.set(x, "GetAlertTime", js.Any.fromFunction0(value))
     
-    inline def setGetCustomField(value: String => js.Any): Self = StObject.set(x, "GetCustomField", js.Any.fromFunction1(value))
+    inline def setGetCustomField(value: String => Any): Self = StObject.set(x, "GetCustomField", js.Any.fromFunction1(value))
     
     inline def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
     
-    inline def setGetTimeBeforeStart(value: () => Date): Self = StObject.set(x, "GetTimeBeforeStart", js.Any.fromFunction0(value))
+    inline def setGetTimeBeforeStart(value: () => js.Date): Self = StObject.set(x, "GetTimeBeforeStart", js.Any.fromFunction0(value))
     
     inline def setSnooze(value: Double => Unit): Self = StObject.set(x, "Snooze", js.Any.fromFunction1(value))
   }

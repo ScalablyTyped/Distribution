@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ApiResolver")
 @js.native
-class ApiResolver protected ()
+open class ApiResolver protected ()
   extends StObject
      with typings.fridaGum.ApiResolver {
   /**

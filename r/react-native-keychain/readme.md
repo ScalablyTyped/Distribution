@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-keychain
 
-Typings are for version 6.2.0
+Typings are for version 8.1.1
 
 ## Library description:
 Keychain Access for React Native
@@ -10,10 +10,10 @@ Keychain Access for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-keychain |
 | Keywords           | react-native, react-component, react-native-component, react, mobile, ios, android, keychain |
-| # releases         | 15 |
-| # dependents       | 18 |
-| # downloads        | 2408523 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 432800.0 |
+| # stars            | 2650.0 |
 
 ## Links
 - [Homepage](https://github.com/oblador/react-native-keychain)

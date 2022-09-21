@@ -10,15 +10,12 @@ A wrapper for the paypal sdk for both android and ios.
 | ------------------ | :-------------: |
 | Full name          | react-native-paypal-lib |
 | Keywords           | react-native, android, ios, react-native-paypal, paypal sdk, paypal |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 2457 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 114.0 |
+| # stars            | 10.0 |
 
 ## Links
-- [Homepage](https://github.com/zeddz92/react-native-paypal#readme)
-- [Bugs](https://github.com/zeddz92/react-native-paypal/issues)
-- [Repository](https://github.com/zeddz92/react-native-paypal)
 - [Npm](https://www.npmjs.com/package/react-native-paypal-lib)
     
 

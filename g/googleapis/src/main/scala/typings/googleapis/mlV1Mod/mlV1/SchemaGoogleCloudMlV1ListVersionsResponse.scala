@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for the ListVersions method.
-  */
 trait SchemaGoogleCloudMlV1ListVersionsResponse extends StObject {
   
   /**
-    * Optional. Pass this token as the `page_token` field of the request for a
-    * subsequent call.
+    * Optional. Pass this token as the `page_token` field of the request for a subsequent call.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of versions.
@@ -31,12 +27,14 @@ object SchemaGoogleCloudMlV1ListVersionsResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setVersions(value: js.Array[SchemaGoogleCloudMlV1Version]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: SchemaGoogleCloudMlV1Version*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: SchemaGoogleCloudMlV1Version*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.rcSelect
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcSelect.anon.Selected
-import typings.rcSelect.generatorMod.CustomTagProps
-import typings.rcSelect.generatorMod.LabelValueType
-import typings.rcSelect.generatorMod.RawValueType
-import typings.rcSelect.interfaceMod.Mode
-import typings.rcSelect.interfaceMod.RenderNode
+import typings.rcSelect.baseSelectMod.CustomTagProps
+import typings.rcSelect.baseSelectMod.DisplayValueType
+import typings.rcSelect.baseSelectMod.Mode
+import typings.rcSelect.baseSelectMod.RenderNode
+import typings.rcSelect.rcSelectStrings.responsive
+import typings.rcVirtualList.listMod.ScrollConfig
+import typings.rcVirtualList.listMod.ScrollTo
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
@@ -39,7 +40,7 @@ object selectorMod extends Shortcut {
   
   trait InnerSelectorProps extends StObject {
     
-    var accessibilityIndex: Double
+    var activeDescendantId: js.UndefOr[String] = js.undefined
     
     var autoComplete: js.UndefOr[String] = js.undefined
     
@@ -50,6 +51,8 @@ object selectorMod extends Shortcut {
     var id: String
     
     var inputRef: Ref[HTMLInputElement | HTMLTextAreaElement]
+    
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     var mode: Mode
     
@@ -77,12 +80,11 @@ object selectorMod extends Shortcut {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var values: js.Array[LabelValueType]
+    var values: js.Array[DisplayValueType]
   }
   object InnerSelectorProps {
     
     inline def apply(
-      accessibilityIndex: Double,
       id: String,
       mode: Mode,
       onInputChange: ChangeEvent[HTMLInputElement | HTMLTextAreaElement] => Unit,
@@ -94,15 +96,17 @@ object selectorMod extends Shortcut {
       open: Boolean,
       prefixCls: String,
       searchValue: String,
-      values: js.Array[LabelValueType]
+      values: js.Array[DisplayValueType]
     ): InnerSelectorProps = {
-      val __obj = js.Dynamic.literal(accessibilityIndex = accessibilityIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onInputChange = js.Any.fromFunction1(onInputChange), onInputCompositionEnd = js.Any.fromFunction1(onInputCompositionEnd), onInputCompositionStart = js.Any.fromFunction1(onInputCompositionStart), onInputKeyDown = js.Any.fromFunction1(onInputKeyDown), onInputMouseDown = js.Any.fromFunction1(onInputMouseDown), onInputPaste = js.Any.fromFunction1(onInputPaste), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], inputRef = null)
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onInputChange = js.Any.fromFunction1(onInputChange), onInputCompositionEnd = js.Any.fromFunction1(onInputCompositionEnd), onInputCompositionStart = js.Any.fromFunction1(onInputCompositionStart), onInputKeyDown = js.Any.fromFunction1(onInputKeyDown), onInputMouseDown = js.Any.fromFunction1(onInputMouseDown), onInputPaste = js.Any.fromFunction1(onInputPaste), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], inputRef = null)
       __obj.asInstanceOf[InnerSelectorProps]
     }
     
     extension [Self <: InnerSelectorProps](x: Self) {
       
-      inline def setAccessibilityIndex(value: Double): Self = StObject.set(x, "accessibilityIndex", value.asInstanceOf[js.Any])
+      inline def setActiveDescendantId(value: String): Self = StObject.set(x, "activeDescendantId", value.asInstanceOf[js.Any])
+      
+      inline def setActiveDescendantIdUndefined: Self = StObject.set(x, "activeDescendantId", js.undefined)
       
       inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
@@ -123,6 +127,10 @@ object selectorMod extends Shortcut {
       inline def setInputRefFunction1(value: /* instance */ (HTMLInputElement | HTMLTextAreaElement) | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
       inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
+      
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
       inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -156,9 +164,9 @@ object selectorMod extends Shortcut {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setValues(value: js.Array[LabelValueType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[DisplayValueType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: LabelValueType*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: DisplayValueType*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -167,6 +175,8 @@ object selectorMod extends Shortcut {
     def blur(): Unit
     
     def focus(): Unit
+    
+    var scrollTo: js.UndefOr[ScrollTo] = js.undefined
   }
   object RefSelectorProps {
     
@@ -180,13 +190,17 @@ object selectorMod extends Shortcut {
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      
+      inline def setScrollTo(value: /* arg */ Double | ScrollConfig => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      
+      inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
     }
   }
   
   @js.native
   trait SelectorProps extends StObject {
     
-    var accessibilityIndex: Double = js.native
+    var activeDescendantId: js.UndefOr[String] = js.native
     
     var activeValue: String = js.native
     
@@ -206,26 +220,26 @@ object selectorMod extends Shortcut {
     
     var inputElement: Element = js.native
     
-    var maxTagCount: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.native
+    
+    var maxTagCount: js.UndefOr[Double | responsive] = js.native
     
     var maxTagPlaceholder: js.UndefOr[
-        ReactNode | (js.Function1[/* omittedValues */ js.Array[LabelValueType], ReactNode])
+        ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])
       ] = js.native
     
     var maxTagTextLength: js.UndefOr[Double] = js.native
     
     var mode: Mode = js.native
     
-    var multiple: Boolean = js.native
-    
     var onInputKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement | HTMLTextAreaElement]] = js.native
+    
+    def onRemove(value: DisplayValueType): Unit = js.native
     
     /** `onSearch` returns go next step boolean to check if need do toggle open */
     def onSearch(searchText: String, fromTyping: Boolean, isCompositing: Boolean): Boolean = js.native
     
-    def onSearchSubmit(searchText: String): Unit = js.native
-    
-    def onSelect(value: RawValueType, option: Selected): Unit = js.native
+    var onSearchSubmit: js.UndefOr[js.Function1[/* searchText */ String, Unit]] = js.native
     
     def onToggleOpen(): Unit = js.native
     def onToggleOpen(open: Boolean): Unit = js.native
@@ -250,7 +264,7 @@ object selectorMod extends Shortcut {
     var tokenWithEnter: js.UndefOr[Boolean] = js.native
     
     /** Display in the Selector value, it's not same as `value` prop */
-    var values: js.Array[LabelValueType] = js.native
+    var values: js.Array[DisplayValueType] = js.native
   }
   
   type _To = ForwardRefExoticComponent[SelectorProps & RefAttributes[RefSelectorProps]]

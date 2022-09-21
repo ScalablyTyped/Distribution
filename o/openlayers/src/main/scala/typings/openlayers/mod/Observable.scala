@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @struct
   * @api stable
   */
-class Observable () extends EventTarget {
+open class Observable () extends EventTarget {
   
   /**
     * Increases the revision counter and dispatches a 'change' event.

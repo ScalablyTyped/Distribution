@@ -12,16 +12,16 @@ object Popover {
   
   @JSGlobal("__MaterialUI.Popover.Popover")
   @js.native
-  class Popover ()
-    extends Component[PopoverProps, js.Object, js.Any]
+  open class Popover ()
+    extends Component[PopoverProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Popover.PopoverAnimationDefault")
   @js.native
-  class PopoverAnimationDefault ()
-    extends Component[PopoverAnimationDefaultProps, js.Object, js.Any]
+  open class PopoverAnimationDefault ()
+    extends Component[PopoverAnimationDefaultProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Popover.PopoverAnimationVertical")
   @js.native
-  class PopoverAnimationVertical ()
-    extends Component[PopoverAnimationVerticalProps, js.Object, js.Any]
+  open class PopoverAnimationVertical ()
+    extends Component[PopoverAnimationVerticalProps, js.Object, Any]
 }

@@ -84,7 +84,7 @@ object GoogleCloudMlV1HyperparameterSpec {
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setParamsVarargs(value: GoogleCloudMlV1ParameterSpec*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: GoogleCloudMlV1ParameterSpec*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setResumePreviousJobId(value: String): Self = StObject.set(x, "resumePreviousJobId", value.asInstanceOf[js.Any])
     

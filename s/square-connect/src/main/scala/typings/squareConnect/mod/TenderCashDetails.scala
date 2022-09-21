@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TenderCashDetails")
 @js.native
-class TenderCashDetails () extends StObject {
+open class TenderCashDetails () extends StObject {
   
   /**
     * The total amount of cash provided by the buyer, before change is given.

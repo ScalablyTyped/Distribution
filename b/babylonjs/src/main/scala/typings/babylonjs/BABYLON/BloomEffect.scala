@@ -9,9 +9,11 @@ trait BloomEffect
   extends StObject
      with PostProcessRenderEffect {
   
-  /* private */ var _blurX: js.Any = js.native
+  /* private */ var _bloomScale: Any = js.native
   
-  /* private */ var _blurY: js.Any = js.native
+  /* private */ var _blurX: Any = js.native
+  
+  /* private */ var _blurY: Any = js.native
   
   /**
     * @hidden Internal
@@ -30,14 +32,12 @@ trait BloomEffect
     */
   def _isReady(): Boolean = js.native
   
-  /* private */ var _merge: js.Any = js.native
+  /* private */ var _merge: Any = js.native
   
   /**
     * @hidden Internal
     */
   def _updateEffects(): Unit = js.native
-  
-  /* private */ var bloomScale: js.Any = js.native
   
   /**
     * Disposes each of the internal effects for a given camera.

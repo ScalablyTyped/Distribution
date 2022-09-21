@@ -12,7 +12,7 @@ object mochaMod {
   
   @JSImport("mocha", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Mocha {
     def this(options: Bail) = this()
@@ -22,7 +22,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Base")
     @js.native
-    class Base protected ()
+    open class Base protected ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       def this(runner: IRunner) = this()
@@ -33,7 +33,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Doc")
     @js.native
-    class Doc ()
+    open class Doc ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -43,7 +43,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Dot")
     @js.native
-    class Dot ()
+    open class Dot ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -53,7 +53,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.HTML")
     @js.native
-    class HTML ()
+    open class HTML ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -63,7 +63,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.HTMLCov")
     @js.native
-    class HTMLCov ()
+    open class HTMLCov ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -73,7 +73,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.JSON")
     @js.native
-    class JSON ()
+    open class JSON ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -83,7 +83,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.JSONCov")
     @js.native
-    class JSONCov ()
+    open class JSONCov ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -93,7 +93,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.JSONStream")
     @js.native
-    class JSONStream ()
+    open class JSONStream ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -103,7 +103,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Landing")
     @js.native
-    class Landing ()
+    open class Landing ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -113,7 +113,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.List")
     @js.native
-    class List ()
+    open class List ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -123,7 +123,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Markdown")
     @js.native
-    class Markdown ()
+    open class Markdown ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -133,7 +133,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Min")
     @js.native
-    class Min ()
+    open class Min ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -143,7 +143,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Nyan")
     @js.native
-    class Nyan ()
+    open class Nyan ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -153,7 +153,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Progress")
     @js.native
-    class Progress protected ()
+    open class Progress protected ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       /**
@@ -171,7 +171,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.Spec")
     @js.native
-    class Spec ()
+    open class Spec ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -181,7 +181,7 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.TAP")
     @js.native
-    class TAP ()
+    open class TAP ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       
@@ -191,11 +191,11 @@ object mochaMod {
     
     @JSImport("mocha", "reporters.XUnit")
     @js.native
-    class XUnit protected ()
+    open class XUnit protected ()
       extends StObject
          with typings.jqueryAjaxfile.Mocha.reporters.Base {
       def this(runner: IRunner) = this()
-      def this(runner: IRunner, options: js.Any) = this()
+      def this(runner: IRunner, options: Any) = this()
       
       /* CompleteClass */
       var stats: Failures = js.native

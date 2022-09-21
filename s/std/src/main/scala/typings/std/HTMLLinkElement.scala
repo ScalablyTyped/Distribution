@@ -12,56 +12,61 @@ trait HTMLLinkElement
      with LinkStyle {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   var as: java.lang.String = js.native
   
   /**
     * Sets or retrieves the character set used to encode the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var charset: java.lang.String = js.native
   
+  /* standard dom */
   var crossOrigin: java.lang.String | Null = js.native
   
+  /* standard dom */
   var disabled: scala.Boolean = js.native
   
-  /**
-    * Sets or retrieves a destination URL or an anchor point.
-    */
+  /** Sets or retrieves a destination URL or an anchor point. */
+  /* standard dom */
   var href: java.lang.String = js.native
   
-  /**
-    * Sets or retrieves the language code of the object.
-    */
+  /** Sets or retrieves the language code of the object. */
+  /* standard dom */
   var hreflang: java.lang.String = js.native
   
+  /* standard dom */
   var imageSizes: java.lang.String = js.native
   
+  /* standard dom */
   var imageSrcset: java.lang.String = js.native
   
+  /* standard dom */
   var integrity: java.lang.String = js.native
   
-  /**
-    * Sets or retrieves the media type.
-    */
+  /** Sets or retrieves the media type. */
+  /* standard dom */
   var media: java.lang.String = js.native
   
+  /* standard dom */
   var referrerPolicy: java.lang.String = js.native
   
-  /**
-    * Sets or retrieves the relationship between the object and the destination of the link.
-    */
+  /** Sets or retrieves the relationship between the object and the destination of the link. */
+  /* standard dom */
   var rel: java.lang.String = js.native
   
+  /* standard dom */
   val relList: DOMTokenList = js.native
   
   /* InferMemberOverrides */
@@ -77,20 +82,22 @@ trait HTMLLinkElement
   
   /**
     * Sets or retrieves the relationship between the object and the destination of the link.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var rev: java.lang.String = js.native
   
+  /* standard dom */
   val sizes: DOMTokenList = js.native
   
   /**
     * Sets or retrieves the window or frame at which to target content.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var target: java.lang.String = js.native
   
-  /**
-    * Sets or retrieves the MIME type of the object.
-    */
+  /** Sets or retrieves the MIME type of the object. */
+  /* standard dom */
   var `type`: java.lang.String = js.native
 }

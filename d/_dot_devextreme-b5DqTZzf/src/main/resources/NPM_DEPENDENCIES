@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".devextreme-b5DqTZzf" : "21.2.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".devextreme-b5DqTZzf" : "21.2.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

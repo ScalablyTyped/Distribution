@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Autocomplete, 'updateData'> */
 trait PickAutocompleteupdateDat extends StObject {
   
-  var updateData: js.UndefOr[js.Any] = js.undefined
+  var updateData: js.UndefOr[Any] = js.undefined
 }
 object PickAutocompleteupdateDat {
   
@@ -18,7 +18,7 @@ object PickAutocompleteupdateDat {
   
   extension [Self <: PickAutocompleteupdateDat](x: Self) {
     
-    inline def setUpdateData(value: js.Any): Self = StObject.set(x, "updateData", value.asInstanceOf[js.Any])
+    inline def setUpdateData(value: Any): Self = StObject.set(x, "updateData", value.asInstanceOf[js.Any])
     
     inline def setUpdateDataUndefined: Self = StObject.set(x, "updateData", js.undefined)
   }

@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType]): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
+  @JSImport("debounce-fn", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[ArgumentsType /* <: js.Array[Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType]): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
   /**
   [Debounce](https://davidwalsh.name/javascript-debounce-function) a function.
   @param input - Function to debounce.
@@ -16,19 +20,15 @@ object mod {
   It comes with a `.cancel()` method to cancel any scheduled `input` function calls.
   @example
   ```
-  import debounceFn = require('debounce-fn');
+  import debounceFn from 'debounce-fn';
   window.onresize = debounceFn(() => {
   	// Do something on window resize
   }, {wait: 100});
   ```
   */
-  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: BeforeOptions): DebouncedFunction[ArgumentsType, ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, ReturnType]]
-  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: NoBeforeNoAfterOptions): DebouncedFunction[ArgumentsType, Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, Unit]]
-  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
-  
-  @JSImport("debounce-fn", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
+  inline def default[ArgumentsType /* <: js.Array[Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: BeforeOptions): DebouncedFunction[ArgumentsType, ReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, ReturnType]]
+  inline def default[ArgumentsType /* <: js.Array[Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: NoBeforeNoAfterOptions): DebouncedFunction[ArgumentsType, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, Unit]]
+  inline def default[ArgumentsType /* <: js.Array[Any] */, ReturnType](input: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedFunction[ArgumentsType, js.UndefOr[ReturnType]]]
   
   trait BeforeOptions
     extends StObject
@@ -51,7 +51,7 @@ object mod {
   }
   
   @js.native
-  trait DebouncedFunction[ArgumentsType /* <: js.Array[js.Any] */, ReturnType] extends StObject {
+  trait DebouncedFunction[ArgumentsType /* <: js.Array[Any] */, ReturnType] extends StObject {
     
     def apply(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
@@ -90,22 +90,29 @@ object mod {
   trait Options extends StObject {
     
     /**
-    		Trigger the function on the trailing edge of the `wait` interval.
-    		@default true
-    		*/
+    	Trigger the function on the trailing edge of the `wait` interval.
+    	@default true
+    	*/
     val after: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Trigger the function on the leading edge of the `wait` interval.
-    		For example, this can be useful for preventing accidental double-clicks on a "submit" button from firing a second time.
-    		@default false
-    		*/
+    	Trigger the function on the leading edge of the `wait` interval.
+    	For example, this can be useful for preventing accidental double-clicks on a "submit" button from firing a second time.
+    	@default false
+    	*/
     val before: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Time to wait until the `input` function is called.
-    		@default 0
-    		*/
+    	The maximum time the `input` function is allowed to be delayed before it's invoked.
+    	This can be used to control the rate of calls handled in a constant stream. For example, a media player sending updates every few milliseconds but wants to be handled only once a second.
+    	@default Infinity
+    	*/
+    val maxWait: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	Time in milliseconds to wait until the `input` function is called.
+    	@default 0
+    	*/
     @JSName("wait")
     val wait_FOptions: js.UndefOr[Double] = js.undefined
   }
@@ -125,6 +132,10 @@ object mod {
       inline def setBefore(value: Boolean): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      
+      inline def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
+      
+      inline def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
       
       inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       

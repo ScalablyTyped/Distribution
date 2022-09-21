@@ -51,7 +51,7 @@ object BatchDescribeMergeConflictsOutput {
     
     inline def setConflicts(value: Conflicts): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
-    inline def setConflictsVarargs(value: Conflict*): Self = StObject.set(x, "conflicts", js.Array(value :_*))
+    inline def setConflictsVarargs(value: Conflict*): Self = StObject.set(x, "conflicts", js.Array(value*))
     
     inline def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object BatchDescribeMergeConflictsOutput {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: BatchDescribeMergeConflictsError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchDescribeMergeConflictsError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

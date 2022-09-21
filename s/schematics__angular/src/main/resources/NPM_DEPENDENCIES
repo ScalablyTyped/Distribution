@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@schematics/angular" : "14.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@schematics/angular" : "14.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

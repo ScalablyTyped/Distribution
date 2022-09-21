@@ -1,6 +1,6 @@
 package typings.braintreeWeb
 
-import typings.braintreeWeb.anon.Authorization
+import typings.braintreeWeb.anon.AuthorizationString
 import typings.braintreeWeb.anon.Data
 import typings.braintreeWeb.anon.PostalCode
 import typings.braintreeWeb.coreMod.callback
@@ -33,8 +33,8 @@ object clientMod {
       *   ...
       * });
       */
-    def create(options: Authorization): js.Promise[Client] = js.native
-    def create(options: Authorization, callback: callback[js.Any]): Unit = js.native
+    def create(options: AuthorizationString): js.Promise[Client] = js.native
+    def create(options: AuthorizationString, callback: callback[Any]): Unit = js.native
     
     /**
       * Returns a copy of the configuration values.
@@ -83,7 +83,20 @@ object clientMod {
       *   });
       * });
       */
-    def request(options: Data, callback: callback[js.Any]): Unit = js.native
+    def request(options: Data, callback: callback[Any]): Unit = js.native
+    
+    /**
+      * Cleanly tear down anything set up by {@link Client#getConfiguration|create}.
+      * @param [callback] Called once teardown is complete. No data is returned if teardown completes successfully.
+      * @example
+      * clientInstance.teardown();
+      * @example <caption>With callback</caption>
+      * clientInstance.teardown(function () {
+      *   // teardown is complete
+      * });
+      * @returns Returns a promise if no callback is provided.
+      */
+    def teardown(callback: callback[Unit]): js.Promise[Unit] = js.native
   }
   
   trait ClientAnalyticsMetadata extends StObject {
@@ -117,11 +130,11 @@ object clientMod {
     
     var client: Client
     
-    var gatewayConfiguration: js.Any
+    var gatewayConfiguration: Any
   }
   object Configuration {
     
-    inline def apply(analyticsMetadata: ClientAnalyticsMetadata, client: Client, gatewayConfiguration: js.Any): Configuration = {
+    inline def apply(analyticsMetadata: ClientAnalyticsMetadata, client: Client, gatewayConfiguration: Any): Configuration = {
       val __obj = js.Dynamic.literal(analyticsMetadata = analyticsMetadata.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], gatewayConfiguration = gatewayConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[Configuration]
     }
@@ -132,7 +145,7 @@ object clientMod {
       
       inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      inline def setGatewayConfiguration(value: js.Any): Self = StObject.set(x, "gatewayConfiguration", value.asInstanceOf[js.Any])
+      inline def setGatewayConfiguration(value: Any): Self = StObject.set(x, "gatewayConfiguration", value.asInstanceOf[js.Any])
     }
   }
   

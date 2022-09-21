@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLoggingOptionsResponse extends StObject {
   
   /**
-    * The current settings of the AWS IoT Analytics logging options.
+    * The current settings of the IoT Analytics logging options.
     */
   var loggingOptions: js.UndefOr[LoggingOptions] = js.undefined
 }

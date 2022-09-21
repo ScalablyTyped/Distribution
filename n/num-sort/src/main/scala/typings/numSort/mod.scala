@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("num-sort", "ascending")
+  @JSImport("num-sort", JSImport.Namespace)
   @js.native
-  val ascending: NumberComparator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("num-sort", "descending")
-  @js.native
-  val descending: NumberComparator = js.native
+  inline def numberSortAscending(left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("numberSortAscending")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  type NumberComparator = js.Function2[/* left */ Double, /* right */ Double, Double]
+  inline def numberSortDescending(left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("numberSortDescending")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

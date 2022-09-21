@@ -16,7 +16,7 @@ object mod {
   inline def when[T](value: T): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseInterface[T]]
   inline def when[T](value: ThenableInterface[T]): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseInterface[T]]
   
-  type DeferredErrorCB[TP] = js.Function1[/* error */ js.Any, ThenableInterface[TP]]
+  type DeferredErrorCB[TP] = js.Function1[/* error */ Any, ThenableInterface[TP]]
   
   @js.native
   trait DeferredInterface[T] extends StObject {
@@ -24,7 +24,7 @@ object mod {
     var promise: PromiseInterface[T] = js.native
     
     def reject(): DeferredInterface[T] = js.native
-    def reject(error: js.Any): DeferredInterface[T] = js.native
+    def reject(error: Any): DeferredInterface[T] = js.native
     
     def resolve(): DeferredInterface[T] = js.native
     def resolve(value: T): DeferredInterface[T] = js.native
@@ -33,7 +33,7 @@ object mod {
   
   type DeferredSuccessCB[T, TP] = js.Function1[/* value */ T, ThenableInterface[TP]]
   
-  type ImmediateErrorCB[TP] = js.Function1[/* err */ js.Any, TP]
+  type ImmediateErrorCB[TP] = js.Function1[/* err */ Any, TP]
   
   type ImmediateSuccessCB[T, TP] = js.Function1[/* value */ T, TP]
   

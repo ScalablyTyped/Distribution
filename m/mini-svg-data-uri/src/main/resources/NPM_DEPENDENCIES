@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mini-svg-data-uri" : "1.4.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mini-svg-data-uri" : "1.4.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

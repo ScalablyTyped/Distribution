@@ -29,7 +29,7 @@ object anon {
       
       inline def setMatchers(value: js.Array[IMinimatch]): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
       
-      inline def setMatchersVarargs(value: IMinimatch*): Self = StObject.set(x, "matchers", js.Array(value :_*))
+      inline def setMatchersVarargs(value: IMinimatch*): Self = StObject.set(x, "matchers", js.Array(value*))
       
       inline def setMayContain(value: String => Boolean): Self = StObject.set(x, "mayContain", js.Any.fromFunction1(value))
     }

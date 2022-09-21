@@ -20,7 +20,7 @@ trait Alert extends StObject {
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. `True` if this alert is marked for deletion. */
@@ -48,7 +48,7 @@ trait Alert extends StObject {
   
   /**
     * Required. A unique identifier for the system that reported the alert. This is output only after alert is created. Supported sources are any of the following: * Google Operations *
-    * Mobile device management * Gmail phishing * Domain wide takeout * State sponsored attack * Google identity
+    * Mobile device management * Gmail phishing * Data Loss Prevention * Domain wide takeout * State sponsored attack * Google identity * Apps outage
     */
   var source: js.UndefOr[String] = js.undefined
   
@@ -56,8 +56,8 @@ trait Alert extends StObject {
   var startTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The type of the alert. This is output only after alert is created. For a list of available alert types see [G Suite Alert
-    * types](/admin-sdk/alertcenter/reference/alert-types).
+    * Required. The type of the alert. This is output only after alert is created. For a list of available alert types see [Google Workspace Alert
+    * types](https://developers.google.com/admin-sdk/alertcenter/reference/alert-types).
     */
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -88,7 +88,7 @@ object Alert {
     inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert & TopLevel[Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

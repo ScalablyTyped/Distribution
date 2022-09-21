@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fetch-ponyfill" : "7.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fetch-ponyfill" : "7.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

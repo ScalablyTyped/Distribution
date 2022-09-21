@@ -8,7 +8,7 @@ trait AttributeOptions extends StObject {
   
   var only: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AttributeOptions {
   
@@ -23,12 +23,12 @@ object AttributeOptions {
     
     inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
-    inline def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
+    inline def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value*))
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

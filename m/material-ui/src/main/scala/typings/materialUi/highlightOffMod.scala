@@ -10,10 +10,10 @@ object highlightOffMod {
   
   @JSImport("material-ui/svg-icons/action/highlight-off", JSImport.Default)
   @js.native
-  class default () extends ActionHighlightOff
+  open class default () extends ActionHighlightOff
   
   @JSImport("material-ui/svg-icons/action/highlight-off", "ActionHighlightOff")
   @js.native
-  class ActionHighlightOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionHighlightOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

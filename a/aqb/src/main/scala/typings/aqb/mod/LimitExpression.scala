@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LimitExpression
   extends StObject
      with PartialStatement
-     with Instantiable2[/* prev */ PartialStatement, /* offset */ js.Any, PartialStatement]
-     with Instantiable3[/* prev */ PartialStatement, /* offset */ js.Any, /* count */ js.Any, PartialStatement] {
+     with Instantiable2[/* prev */ PartialStatement, /* offset */ Any, PartialStatement]
+     with Instantiable3[/* prev */ PartialStatement, /* offset */ Any, /* count */ Any, PartialStatement] {
   
   def toAQL(): String = js.native
 }

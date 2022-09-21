@@ -118,7 +118,7 @@ object Action {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -144,7 +144,7 @@ object Action {
     
     inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value*))
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
@@ -180,6 +180,6 @@ object Action {
     
     inline def setUserProfileIdsUndefined: Self = StObject.set(x, "userProfileIds", js.undefined)
     
-    inline def setUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "userProfileIds", js.Array(value :_*))
+    inline def setUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "userProfileIds", js.Array(value*))
   }
 }

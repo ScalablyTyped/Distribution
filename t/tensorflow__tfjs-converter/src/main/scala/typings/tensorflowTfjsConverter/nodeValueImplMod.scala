@@ -16,7 +16,7 @@ object nodeValueImplMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/operations/custom_op/node_value_impl", "NodeValueImpl")
   @js.native
-  class NodeValueImpl protected ()
+  open class NodeValueImpl protected ()
     extends StObject
        with GraphNode {
     def this(node: Node, tensorMap: NamedTensorsMap, context: ExecutionContext) = this()
@@ -24,25 +24,25 @@ object nodeValueImplMod {
     /* CompleteClass */
     var attrs: StringDictionary[ValueType] = js.native
     
-    /* private */ var context: js.Any = js.native
+    /* private */ var context: Any = js.native
     
     /**
       * Return the value of the attribute or input param.
       * @param name String: name of attribute or input param.
       */
-    /* private */ var getAttr: js.Any = js.native
+    /* private */ var getAttr: Any = js.native
     
     /**
       * Return the value of the attribute or input param.
       * @param name String: name of attribute or input param.
       */
-    /* private */ var getInput: js.Any = js.native
+    /* private */ var getInput: Any = js.native
     
     /* CompleteClass */
     var inputs: js.Array[Tensor[Rank]] = js.native
     
-    /* private */ var node: js.Any = js.native
+    /* private */ var node: Any = js.native
     
-    /* private */ var tensorMap: js.Any = js.native
+    /* private */ var tensorMap: Any = js.native
   }
 }

@@ -1,34 +1,38 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.HTTP
+import typings.awsSdk.awsSdkStrings.NAMESPACE_ID
+import typings.awsSdk.awsSdkStrings.TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AmazonResourceName = java.lang.String
+type AmazonResourceName = String
 
-type Arn = java.lang.String
+type Arn = String
 
-type AttrKey = java.lang.String
+type AttrKey = String
 
-type AttrValue = java.lang.String
+type AttrValue = String
 
-type Attributes = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicediscoveryMod.AttrValue]
+type Attributes = StringDictionary[AttrValue]
 
-type Code = java.lang.String
+type Code = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HEALTHY
   - typings.awsSdk.awsSdkStrings.UNHEALTHY
   - java.lang.String
 */
-type CustomHealthStatus = typings.awsSdk.servicediscoveryMod._CustomHealthStatus | java.lang.String
+type CustomHealthStatus = _CustomHealthStatus | String
 
-type DiscoverMaxResults = scala.Double
+type DiscoverMaxResults = Double
 
-type DnsRecordList = js.Array[typings.awsSdk.servicediscoveryMod.DnsRecord]
+type DnsRecordList = js.Array[DnsRecord]
 
-type FailureThreshold = scala.Double
+type FailureThreshold = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQ
@@ -36,11 +40,11 @@ type FailureThreshold = scala.Double
   - typings.awsSdk.awsSdkStrings.BETWEEN
   - java.lang.String
 */
-type FilterCondition = typings.awsSdk.servicediscoveryMod._FilterCondition | java.lang.String
+type FilterCondition = _FilterCondition | String
 
-type FilterValue = java.lang.String
+type FilterValue = String
 
-type FilterValues = js.Array[typings.awsSdk.servicediscoveryMod.FilterValue]
+type FilterValues = js.Array[FilterValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HTTP
@@ -48,7 +52,7 @@ type FilterValues = js.Array[typings.awsSdk.servicediscoveryMod.FilterValue]
   - typings.awsSdk.awsSdkStrings.TCP
   - java.lang.String
 */
-type HealthCheckType = typings.awsSdk.servicediscoveryMod._HealthCheckType | java.lang.String
+type HealthCheckType = _HealthCheckType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HEALTHY
@@ -56,35 +60,44 @@ type HealthCheckType = typings.awsSdk.servicediscoveryMod._HealthCheckType | jav
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type HealthStatus = typings.awsSdk.servicediscoveryMod._HealthStatus | java.lang.String
+type HealthStatus = _HealthStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HEALTHY
   - typings.awsSdk.awsSdkStrings.UNHEALTHY
   - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.HEALTHY_OR_ELSE_ALL
   - java.lang.String
 */
-type HealthStatusFilter = typings.awsSdk.servicediscoveryMod._HealthStatusFilter | java.lang.String
+type HealthStatusFilter = _HealthStatusFilter | String
 
-type HttpInstanceSummaryList = js.Array[typings.awsSdk.servicediscoveryMod.HttpInstanceSummary]
+type HttpInstanceSummaryList = js.Array[HttpInstanceSummary]
 
-type InstanceHealthStatusMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicediscoveryMod.HealthStatus]
+type InstanceHealthStatusMap = StringDictionary[HealthStatus]
 
-type InstanceIdList = js.Array[typings.awsSdk.servicediscoveryMod.ResourceId]
+type InstanceId = String
 
-type InstanceSummaryList = js.Array[typings.awsSdk.servicediscoveryMod.InstanceSummary]
+type InstanceIdList = js.Array[ResourceId]
 
-type MaxResults = scala.Double
+type InstanceSummaryList = js.Array[InstanceSummary]
 
-type Message = java.lang.String
+type MaxResults = Double
 
-type NamespaceFilterName = typings.awsSdk.awsSdkStrings.TYPE | java.lang.String
+type Message = String
 
-type NamespaceFilters = js.Array[typings.awsSdk.servicediscoveryMod.NamespaceFilter]
+type NamespaceFilterName = TYPE | String
 
-type NamespaceName = java.lang.String
+type NamespaceFilters = js.Array[NamespaceFilter]
 
-type NamespaceSummariesList = js.Array[typings.awsSdk.servicediscoveryMod.NamespaceSummary]
+type NamespaceName = String
+
+type NamespaceNameHttp = String
+
+type NamespaceNamePrivate = String
+
+type NamespaceNamePublic = String
+
+type NamespaceSummariesList = js.Array[NamespaceSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DNS_PUBLIC
@@ -92,9 +105,9 @@ type NamespaceSummariesList = js.Array[typings.awsSdk.servicediscoveryMod.Namesp
   - typings.awsSdk.awsSdkStrings.HTTP
   - java.lang.String
 */
-type NamespaceType = typings.awsSdk.servicediscoveryMod._NamespaceType | java.lang.String
+type NamespaceType = _NamespaceType | String
 
-type NextToken = java.lang.String
+type NextToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NAMESPACE_ID
@@ -104,11 +117,11 @@ type NextToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.UPDATE_DATE
   - java.lang.String
 */
-type OperationFilterName = typings.awsSdk.servicediscoveryMod._OperationFilterName | java.lang.String
+type OperationFilterName = _OperationFilterName | String
 
-type OperationFilters = js.Array[typings.awsSdk.servicediscoveryMod.OperationFilter]
+type OperationFilters = js.Array[OperationFilter]
 
-type OperationId = java.lang.String
+type OperationId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUBMITTED
@@ -117,9 +130,9 @@ type OperationId = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAIL
   - java.lang.String
 */
-type OperationStatus = typings.awsSdk.servicediscoveryMod._OperationStatus | java.lang.String
+type OperationStatus = _OperationStatus | String
 
-type OperationSummaryList = js.Array[typings.awsSdk.servicediscoveryMod.OperationSummary]
+type OperationSummaryList = js.Array[OperationSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NAMESPACE
@@ -127,21 +140,22 @@ type OperationSummaryList = js.Array[typings.awsSdk.servicediscoveryMod.Operatio
   - typings.awsSdk.awsSdkStrings.INSTANCE
   - java.lang.String
 */
-type OperationTargetType = typings.awsSdk.servicediscoveryMod._OperationTargetType | java.lang.String
+type OperationTargetType = _OperationTargetType | String
 
-type OperationTargetsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicediscoveryMod.ResourceId]
+type OperationTargetsMap = StringDictionary[ResourceId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_NAMESPACE
   - typings.awsSdk.awsSdkStrings.DELETE_NAMESPACE
+  - typings.awsSdk.awsSdkStrings.UPDATE_NAMESPACE
   - typings.awsSdk.awsSdkStrings.UPDATE_SERVICE
   - typings.awsSdk.awsSdkStrings.REGISTER_INSTANCE
   - typings.awsSdk.awsSdkStrings.DEREGISTER_INSTANCE
   - java.lang.String
 */
-type OperationType = typings.awsSdk.servicediscoveryMod._OperationType | java.lang.String
+type OperationType = _OperationType | String
 
-type RecordTTL = scala.Double
+type RecordTTL = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SRV
@@ -150,44 +164,54 @@ type RecordTTL = scala.Double
   - typings.awsSdk.awsSdkStrings.CNAME
   - java.lang.String
 */
-type RecordType = typings.awsSdk.servicediscoveryMod._RecordType | java.lang.String
+type RecordType = _RecordType | String
 
-type ResourceCount = scala.Double
+type ResourceCount = Double
 
-type ResourceDescription = java.lang.String
+type ResourceDescription = String
 
-type ResourceId = java.lang.String
+type ResourceId = String
 
-type ResourcePath = java.lang.String
+type ResourcePath = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MULTIVALUE
   - typings.awsSdk.awsSdkStrings.WEIGHTED
   - java.lang.String
 */
-type RoutingPolicy = typings.awsSdk.servicediscoveryMod._RoutingPolicy | java.lang.String
+type RoutingPolicy = _RoutingPolicy | String
 
-type ServiceFilterName = typings.awsSdk.awsSdkStrings.NAMESPACE_ID | java.lang.String
+type ServiceFilterName = NAMESPACE_ID | String
 
-type ServiceFilters = js.Array[typings.awsSdk.servicediscoveryMod.ServiceFilter]
+type ServiceFilters = js.Array[ServiceFilter]
 
-type ServiceName = java.lang.String
+type ServiceName = String
 
-type ServiceSummariesList = js.Array[typings.awsSdk.servicediscoveryMod.ServiceSummary]
+type ServiceSummariesList = js.Array[ServiceSummary]
 
-type TagKey = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HTTP
+  - typings.awsSdk.awsSdkStrings.DNS_HTTP
+  - typings.awsSdk.awsSdkStrings.DNS
+  - java.lang.String
+*/
+type ServiceType = _ServiceType | String
 
-type TagKeyList = js.Array[typings.awsSdk.servicediscoveryMod.TagKey]
+type ServiceTypeOption = HTTP | String
 
-type TagList = js.Array[typings.awsSdk.servicediscoveryMod.Tag]
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagKeyList = js.Array[TagKey]
 
-type Timestamp = typings.std.Date
+type TagList = js.Array[Tag]
+
+type TagValue = String
+
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-03-14`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.servicediscoveryMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

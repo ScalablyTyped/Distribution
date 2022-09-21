@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__circular-progress
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web circular progress component
@@ -10,10 +10,10 @@ The Material Components for the web circular progress component
 | ------------------ | :-------------: |
 | Full name          | @material/circular-progress |
 | Keywords           | material components, material design, circular-progress |
-| # releases         | 403 |
-| # dependents       | 5 |
-| # downloads        | 188258 |
-| # stars            | 0 |
+| # releases         | 715 |
+| # dependents       | 0.0 |
+| # downloads        | 116113.33333333333 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -13,7 +13,7 @@ object webXRMicrosoftMixedRealityControllerMod {
   
   @JSImport("babylonjs/XR/motionController/webXRMicrosoftMixedRealityController", "WebXRMicrosoftMixedRealityController")
   @js.native
-  class WebXRMicrosoftMixedRealityController protected () extends WebXRAbstractMotionController {
+  open class WebXRMicrosoftMixedRealityController protected () extends WebXRAbstractMotionController {
     def this(
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,

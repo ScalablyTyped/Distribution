@@ -1,7 +1,7 @@
 
 # Scala.js typings for blob-to-it
 
-Typings are for version 1.0.1
+Typings are for version 1.0.4
 
 ## Library description:
 Turns a blob into an async iterator
@@ -10,13 +10,13 @@ Turns a blob into an async iterator
 | ------------------ | :-------------: |
 | Full name          | blob-to-it |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 276576 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 307685.6666666667 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/blob-to-it#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/blob-to-it)

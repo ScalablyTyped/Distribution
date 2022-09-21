@@ -14,8 +14,8 @@ object tileQueueMod {
   
   @JSImport("ol/TileQueue", JSImport.Default)
   @js.native
-  class default protected () extends TileQueue {
-    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[js.Any]) = this()
+  open class default protected () extends TileQueue {
+    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[Any]) = this()
   }
   
   inline def getTilePriority(
@@ -36,9 +36,9 @@ object tileQueueMod {
   
   @js.native
   trait TileQueue
-    extends typings.ol.priorityQueueMod.default[js.Any] {
+    extends typings.ol.priorityQueueMod.default[Any] {
     
-    def enqueue(element: js.Array[js.Any]): Boolean = js.native
+    def enqueue(element: js.Array[Any]): Boolean = js.native
     
     def getTilesLoading(): Double = js.native
     

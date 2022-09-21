@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.CurrentProject")
 @js.native
-/* private */ class CurrentProject ()
+/* private */ open class CurrentProject ()
   extends StObject
      with typings.activexAccess.Access.CurrentProject

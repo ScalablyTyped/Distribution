@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Island")
 @js.native
-class Island () extends StObject {
+open class Island () extends StObject {
   
   var bodies: js.Array[Body] = js.native
   
   var equations: js.Array[Equation] = js.native
   
-  def getBodies(result: js.Array[js.Any]): js.Array[Body] = js.native
+  def getBodies(result: js.Array[Any]): js.Array[Body] = js.native
   
   def reset(): Unit = js.native
   

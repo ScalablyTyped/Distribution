@@ -10,13 +10,13 @@ trait Name extends StObject {
   
   var name: String
   
-  var newData: js.Any
+  var newData: Any
   
-  var oldData: js.Any
+  var oldData: Any
 }
 object Name {
   
-  inline def apply(id: String, name: String, newData: js.Any, oldData: js.Any): Name = {
+  inline def apply(id: String, name: String, newData: Any, oldData: Any): Name = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newData = newData.asInstanceOf[js.Any], oldData = oldData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
@@ -27,8 +27,8 @@ object Name {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNewData(value: js.Any): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
+    inline def setNewData(value: Any): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
     
-    inline def setOldData(value: js.Any): Self = StObject.set(x, "oldData", value.asInstanceOf[js.Any])
+    inline def setOldData(value: Any): Self = StObject.set(x, "oldData", value.asInstanceOf[js.Any])
   }
 }

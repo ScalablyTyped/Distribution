@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Tabs")
 @js.native
-class Tabs () extends default
+open class Tabs () extends default
 /* static members */
 object Tabs {
   

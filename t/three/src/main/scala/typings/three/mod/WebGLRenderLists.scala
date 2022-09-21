@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "WebGLRenderLists")
 @js.native
-class WebGLRenderLists protected ()
-  extends typings.three.webGLRenderListsMod.WebGLRenderLists {
+open class WebGLRenderLists protected ()
+  extends typings.three.threeMod.WebGLRenderLists {
   def this(properties: typings.three.webGLPropertiesMod.WebGLProperties) = this()
 }

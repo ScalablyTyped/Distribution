@@ -13,14 +13,14 @@ trait ExifInfo
   /**
     * The file name.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#ExifInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo)
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Array of tag objects containing the following properties:.
+    * Array of tag objects containing the following properties:
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#ExifInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo)
     */
   var tags: js.UndefOr[js.Array[ExifInfoTags]] = js.undefined
 }
@@ -45,6 +45,6 @@ object ExifInfo {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: ExifInfoTags*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: ExifInfoTags*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -15,6 +15,9 @@ trait LocalizableContent extends StObject {
   var default: String
   
   /**
+    * Specifies what string to use for viewers in each locale. See https://lookaside.facebook.com/developers/resources/?id=FacebookLocales.xml for a complete list of supported locale values.
+    */
+  /**
     *  Specifies what string to use for viewers in each locale. See https://origincache.facebook.com/developers/resources/?id=FacebookLocales.xml for a complete list of supported locale values.
     */
   var localizations: LocalizationsDict

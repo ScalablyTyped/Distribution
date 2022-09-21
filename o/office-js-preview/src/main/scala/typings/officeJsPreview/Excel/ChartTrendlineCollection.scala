@@ -17,9 +17,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of chart trendlines.
   *
-  * Represents a collection of Chart Trendlines.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -30,24 +30,14 @@ trait ChartTrendlineCollection
   /**
     * Adds a new trendline to trendline collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
-    * @param type Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
+    * @param type Specifies the trendline type. The default value is "Linear". See `Excel.ChartTrendline` for details.
     */
   def add(): ChartTrendline = js.native
+  def add(`type`: Linear | Exponential | Logarithmic | MovingAverage | Polynomial | Power): ChartTrendline = js.native
   def add(`type`: ChartTrendlineType): ChartTrendline = js.native
-  @JSName("add")
-  def add_Exponential(`type`: Exponential): ChartTrendline = js.native
-  @JSName("add")
-  def add_Linear(`type`: Linear): ChartTrendline = js.native
-  @JSName("add")
-  def add_Logarithmic(`type`: Logarithmic): ChartTrendline = js.native
-  @JSName("add")
-  def add_MovingAverage(`type`: MovingAverage): ChartTrendline = js.native
-  @JSName("add")
-  def add_Polynomial(`type`: Polynomial): ChartTrendline = js.native
-  @JSName("add")
-  def add_Power(`type`: Power): ChartTrendline = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -56,16 +46,18 @@ trait ChartTrendlineCollection
   /**
     * Returns the number of trendlines in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Get trendline object by index, which is the insertion order in items array.
+    * Gets a trendline object by index, which is the insertion order in the items array.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
-    * @param index Represents the insertion order in items array.
+    * @param index Represents the insertion order in the items array.
     */
   def getItem(index: Double): ChartTrendline = js.native
   

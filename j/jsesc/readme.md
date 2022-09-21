@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsesc
 
-Typings are for version 2.5.2
+Typings are for version 3.0
 
 ## Library description:
 Given some data, jsesc returns the shortest possible stringified & ASCII-safe representation of that data.
@@ -10,10 +10,10 @@ Given some data, jsesc returns the shortest possible stringified & ASCII-safe re
 | ------------------ | :-------------: |
 | Full name          | jsesc |
 | Keywords           | buffer, escape, javascript, json, map, set, string, stringify, tool |
-| # releases         | 4 |
-| # dependents       | 295 |
-| # downloads        | 1188842885 |
-| # stars            | 15 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.78301809E8 |
+| # stars            | 651.0 |
 
 ## Links
 - [Homepage](https://mths.be/jsesc)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def cropper(): JQuery = js.native
-  def cropper(method: String, arguments: js.Any*): JQuery = js.native
+  def cropper(method: String, arguments: Any*): JQuery = js.native
   def cropper(options: CropperOptions): JQuery = js.native
   
   var selector: JQuery = js.native

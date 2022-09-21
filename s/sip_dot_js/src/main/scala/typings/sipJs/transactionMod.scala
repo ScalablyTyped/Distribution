@@ -23,13 +23,13 @@ object transactionMod {
       loggerCategory: String
     ) = this()
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
-    /* private */ var _transport: js.Any = js.native
+    /* private */ var _transport: Any = js.native
     
-    /* private */ var _user: js.Any = js.native
+    /* private */ var _user: Any = js.native
     
     /**
       * Sets up a function that will be called whenever the transaction state changes.
@@ -59,7 +59,7 @@ object transactionMod {
     /** Transaction kind. Deprecated. */
     def kind: String = js.native
     
-    /* private */ var listeners: js.Any = js.native
+    /* private */ var listeners: Any = js.native
     
     /* protected */ def logTransportError(error: TransportError, message: String): Unit = js.native
     

@@ -26,7 +26,7 @@ object TargetPoolsScopedList {
     
     inline def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
-    inline def setTargetPoolsVarargs(value: TargetPool*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
+    inline def setTargetPoolsVarargs(value: TargetPool*): Self = StObject.set(x, "targetPools", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

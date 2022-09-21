@@ -40,7 +40,7 @@ trait IgSparklineMethods extends StObject {
   /**
     * Get reference of actual data used by chart.
     */
-  def getData(): js.Array[js.Any]
+  def getData(): js.Array[Any]
   
   /**
     * Get item within actual data used by chart. That is similar to this.getData()[ index ].
@@ -119,7 +119,7 @@ object IgSparklineMethods {
     destroy: () => Unit,
     findIndexOfItem: js.Object => Double,
     flush: () => Unit,
-    getData: () => js.Array[js.Any],
+    getData: () => js.Array[Any],
     getDataItem: js.Object => js.Object,
     insertItem: (js.Object, Double) => js.Object,
     notifyClearItems: js.Object => js.Object,
@@ -147,7 +147,7 @@ object IgSparklineMethods {
     
     inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    inline def setGetData(value: () => js.Array[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => js.Array[Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     inline def setGetDataItem(value: js.Object => js.Object): Self = StObject.set(x, "getDataItem", js.Any.fromFunction1(value))
     

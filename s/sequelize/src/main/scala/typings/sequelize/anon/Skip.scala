@@ -21,6 +21,6 @@ object Skip {
     
     inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    inline def setSkipVarargs(value: String*): Self = StObject.set(x, "skip", js.Array(value :_*))
+    inline def setSkipVarargs(value: String*): Self = StObject.set(x, "skip", js.Array(value*))
   }
 }

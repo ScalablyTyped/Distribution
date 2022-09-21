@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "ConstraintLayout")
 @js.native
-class ConstraintLayout () extends Layout {
+/**
+  * The default, constraints-based layout.
+  */
+open class ConstraintLayout () extends Layout {
   def this(options: js.Object) = this()
 }
 /* static members */

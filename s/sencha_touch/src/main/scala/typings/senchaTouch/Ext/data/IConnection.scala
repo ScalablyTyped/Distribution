@@ -13,13 +13,13 @@ trait IConnection
   /** [Method] Aborts any outstanding request
     * @param request Object Defaults to the last request.
     */
-  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Aborts all outstanding requests  */
   var abortAll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultHeaders: js.UndefOr[js.Any] = js.undefined
+  var defaultHeaders: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var defaultXhrHeader: js.UndefOr[String] = js.undefined
@@ -31,7 +31,7 @@ trait IConnection
   var disableCachingParam: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var extraParams: js.UndefOr[js.Any] = js.undefined
+  var extraParams: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of async
     * @returns Boolean
@@ -46,7 +46,7 @@ trait IConnection
   /** [Method] Returns the value of defaultHeaders
     * @returns Object
     */
-  var getDefaultHeaders: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDefaultHeaders: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of defaultPostHeader
     * @returns String
@@ -71,7 +71,7 @@ trait IConnection
   /** [Method] Returns the value of extraParams
     * @returns Object
     */
-  var getExtraParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getExtraParams: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of method
     * @returns String
@@ -112,7 +112,7 @@ trait IConnection
     * @param request Object The request to check.
     * @returns Boolean True if there is an outstanding request.
     */
-  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
@@ -123,7 +123,7 @@ trait IConnection
     * @returns Object An object containing success/status state.
     */
   var parseStatus: js.UndefOr[
-    js.Function2[/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest], js.Any]
+    js.Function2[/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest], Any]
   ] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
@@ -133,14 +133,14 @@ trait IConnection
     */
   @JSName("relayEvents")
   var relayEvents_IConnection: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
   
   /** [Method] Sends an HTTP request to a remote server
     * @param options Object An object which may contain the following properties: (The options object may also contain any other property which might be needed to perform post-processing in a callback because it is passed to callback functions.)
     * @returns Object/null The request object. This may be used to cancel the request.
     */
-  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Sets the value of async
     * @param async Boolean The new value.
@@ -155,7 +155,7 @@ trait IConnection
   /** [Method] Sets the value of defaultHeaders
     * @param defaultHeaders Object The new value.
     */
-  var setDefaultHeaders: js.UndefOr[js.Function1[/* defaultHeaders */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDefaultHeaders: js.UndefOr[js.Function1[/* defaultHeaders */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultPostHeader
     * @param defaultPostHeader String The new value.
@@ -180,7 +180,7 @@ trait IConnection
   /** [Method] Sets the value of extraParams
     * @param extraParams Object The new value.
     */
-  var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of method
     * @param method String The new value.
@@ -192,9 +192,7 @@ trait IConnection
     * @param scope Object The scope to execute in.
     * @returns Object The params for the request.
     */
-  var setOptions: js.UndefOr[
-    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var setOptions: js.UndefOr[js.Function2[/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Sets the value of password
     * @param password String The new value.
@@ -237,10 +235,10 @@ trait IConnection
     */
   var upload: js.UndefOr[
     js.Function4[
-      /* form */ js.UndefOr[js.Any], 
+      /* form */ js.UndefOr[Any], 
       /* url */ js.UndefOr[String], 
       /* params */ js.UndefOr[String], 
-      /* options */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -260,7 +258,7 @@ object IConnection {
   
   extension [Self <: IConnection](x: Self) {
     
-    inline def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+    inline def setAbort(value: /* request */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
     inline def setAbortAll(value: () => Unit): Self = StObject.set(x, "abortAll", js.Any.fromFunction0(value))
     
@@ -268,7 +266,7 @@ object IConnection {
     
     inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    inline def setDefaultHeaders(value: js.Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
+    inline def setDefaultHeaders(value: Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
     
     inline def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
     
@@ -284,7 +282,7 @@ object IConnection {
     
     inline def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
     
-    inline def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
+    inline def setExtraParams(value: Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
     
     inline def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
     
@@ -296,7 +294,7 @@ object IConnection {
     
     inline def setGetAutoAbortUndefined: Self = StObject.set(x, "getAutoAbort", js.undefined)
     
-    inline def setGetDefaultHeaders(value: () => js.Any): Self = StObject.set(x, "getDefaultHeaders", js.Any.fromFunction0(value))
+    inline def setGetDefaultHeaders(value: () => Any): Self = StObject.set(x, "getDefaultHeaders", js.Any.fromFunction0(value))
     
     inline def setGetDefaultHeadersUndefined: Self = StObject.set(x, "getDefaultHeaders", js.undefined)
     
@@ -316,7 +314,7 @@ object IConnection {
     
     inline def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
     
-    inline def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
+    inline def setGetExtraParams(value: () => Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
     
     inline def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
     
@@ -348,7 +346,7 @@ object IConnection {
     
     inline def setGetUsernameUndefined: Self = StObject.set(x, "getUsername", js.undefined)
     
-    inline def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
+    inline def setIsLoading(value: /* request */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
     
     inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
@@ -356,15 +354,15 @@ object IConnection {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setParseStatus(value: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => js.Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction2(value))
+    inline def setParseStatus(value: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction2(value))
     
     inline def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
     
-    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
-    inline def setRequest(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: /* options */ js.UndefOr[Any] => Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
@@ -376,7 +374,7 @@ object IConnection {
     
     inline def setSetAutoAbortUndefined: Self = StObject.set(x, "setAutoAbort", js.undefined)
     
-    inline def setSetDefaultHeaders(value: /* defaultHeaders */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultHeaders", js.Any.fromFunction1(value))
+    inline def setSetDefaultHeaders(value: /* defaultHeaders */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDefaultHeaders", js.Any.fromFunction1(value))
     
     inline def setSetDefaultHeadersUndefined: Self = StObject.set(x, "setDefaultHeaders", js.undefined)
     
@@ -396,7 +394,7 @@ object IConnection {
     
     inline def setSetDisableCachingUndefined: Self = StObject.set(x, "setDisableCaching", js.undefined)
     
-    inline def setSetExtraParams(value: /* extraParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
+    inline def setSetExtraParams(value: /* extraParams */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setExtraParams", js.Any.fromFunction1(value))
     
     inline def setSetExtraParamsUndefined: Self = StObject.set(x, "setExtraParams", js.undefined)
     
@@ -404,7 +402,7 @@ object IConnection {
     
     inline def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
     
-    inline def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
+    inline def setSetOptions(value: (/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
     
     inline def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
     
@@ -437,7 +435,7 @@ object IConnection {
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setUpload(
-      value: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* form */ js.UndefOr[Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "upload", js.Any.fromFunction4(value))
     
     inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)

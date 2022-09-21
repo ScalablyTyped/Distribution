@@ -9,8 +9,8 @@ object loadingMod {
   
   @JSImport("react-lazylog/build/Loading", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[js.Object, js.Object, js.Any]
+  open class default ()
+    extends Component[js.Object, js.Object, Any]
   
-  type Loading = Component[js.Object, js.Object, js.Any]
+  type Loading = Component[js.Object, js.Object, Any]
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Widget")
 @js.native
-class Widget protected ()
+open class Widget protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Widget {
   def this(element: JQuery) = this()
@@ -30,6 +30,6 @@ object Widget {
   /* static member */
   @JSGlobal("kendo.ui.Widget.fn")
   @js.native
-  def fn: js.Any = js.native
-  inline def fn_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  def fn: Any = js.native
+  inline def fn_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

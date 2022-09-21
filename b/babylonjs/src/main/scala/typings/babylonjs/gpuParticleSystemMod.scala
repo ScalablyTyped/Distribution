@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.anon.Partialcapacitynumberrand
 import typings.babylonjs.baseParticleSystemMod.BaseParticleSystem
+import typings.babylonjs.drawWrapperMod.DrawWrapper
 import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.gradientsMod.Color3Gradient
 import typings.babylonjs.iparticlesystemMod.IParticleSystem
@@ -9,6 +10,7 @@ import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.observableMod.Observable
+import typings.babylonjs.rawTextureMod.RawTexture
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.thinEngineMod.ThinEngine
@@ -21,9 +23,9 @@ object gpuParticleSystemMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.animatableInterfaceMod.IAnimatable because var conflicts: animations. Inlined 
-  - typings.babylonjs.iparticlesystemMod.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @JSImport("babylonjs/Particles/gpuParticleSystem", "GPUParticleSystem")
+  - typings.babylonjs.iparticlesystemMod.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @JSImport("babylonjs/Particles/gpuParticleSystem", "GPUParticleSystem")
   @js.native
-  class GPUParticleSystem protected ()
+  open class GPUParticleSystem protected ()
     extends BaseParticleSystem
        with IDisposable {
     /**
@@ -32,8 +34,8 @@ object gpuParticleSystemMod {
       * @param name The name of the particle system
       * @param options The options used to create the system
       * @param sceneOrEngine The scene the particle system belongs to or the engine to use if no scene
-      * @param isAnimationSheetEnabled Must be true if using a spritesheet to animate the particles texture
       * @param customEffect a custom effect used to change the way particles are rendered by default
+      * @param isAnimationSheetEnabled Must be true if using a spritesheet to animate the particles texture
       */
     def this(name: String, options: Partialcapacitynumberrand, sceneOrEngine: Scene) = this()
     def this(name: String, options: Partialcapacitynumberrand, sceneOrEngine: ThinEngine) = this()
@@ -41,149 +43,158 @@ object gpuParticleSystemMod {
       name: String,
       options: Partialcapacitynumberrand,
       sceneOrEngine: Scene,
-      isAnimationSheetEnabled: Boolean
+      customEffect: Nullable[Effect]
     ) = this()
     def this(
       name: String,
       options: Partialcapacitynumberrand,
       sceneOrEngine: ThinEngine,
-      isAnimationSheetEnabled: Boolean
-    ) = this()
-    def this(
-      name: String,
-      options: Partialcapacitynumberrand,
-      sceneOrEngine: Scene,
-      isAnimationSheetEnabled: Boolean,
       customEffect: Nullable[Effect]
     ) = this()
     def this(
       name: String,
       options: Partialcapacitynumberrand,
       sceneOrEngine: Scene,
-      isAnimationSheetEnabled: Unit,
-      customEffect: Nullable[Effect]
+      customEffect: Unit,
+      isAnimationSheetEnabled: Boolean
+    ) = this()
+    def this(
+      name: String,
+      options: Partialcapacitynumberrand,
+      sceneOrEngine: Scene,
+      customEffect: Nullable[Effect],
+      isAnimationSheetEnabled: Boolean
     ) = this()
     def this(
       name: String,
       options: Partialcapacitynumberrand,
       sceneOrEngine: ThinEngine,
-      isAnimationSheetEnabled: Boolean,
-      customEffect: Nullable[Effect]
+      customEffect: Unit,
+      isAnimationSheetEnabled: Boolean
     ) = this()
     def this(
       name: String,
       options: Partialcapacitynumberrand,
       sceneOrEngine: ThinEngine,
-      isAnimationSheetEnabled: Unit,
-      customEffect: Nullable[Effect]
+      customEffect: Nullable[Effect],
+      isAnimationSheetEnabled: Boolean
     ) = this()
     
-    /* private */ var _accumulatedCount: js.Any = js.native
+    /* private */ var _accumulatedCount: Any = js.native
     
-    /* private */ var _activeCount: js.Any = js.native
+    /* private */ var _activeCount: Any = js.native
     
-    /* private */ var _actualFrame: js.Any = js.native
+    /* private */ var _actualFrame: Any = js.native
     
-    /* private */ var _addFactorGradient: js.Any = js.native
+    /* private */ var _addFactorGradient: Any = js.native
     
-    /* private */ var _angularSpeedGradientsTexture: js.Any = js.native
+    /** @hidden */
+    var _angularSpeedGradientsTexture: RawTexture = js.native
     
-    /* private */ var _attributesStrideSize: js.Any = js.native
+    /* private */ var _attributesStrideSize: Any = js.native
     
-    /* private */ var _buffer0: js.Any = js.native
+    /* private */ var _buffer0: Any = js.native
     
-    /* private */ var _buffer1: js.Any = js.native
+    /* private */ var _buffer1: Any = js.native
     
-    /* private */ var _capacity: js.Any = js.native
+    /* private */ var _cachedUpdateDefines: Any = js.native
     
-    /* private */ var _colorGradientsTexture: js.Any = js.native
+    /* private */ var _capacity: Any = js.native
     
-    /* private */ var _createAngularSpeedGradientTexture: js.Any = js.native
+    /** @hidden */
+    var _colorGradientsTexture: RawTexture = js.native
     
-    /* private */ var _createColorGradientTexture: js.Any = js.native
+    /* private */ var _createAngularSpeedGradientTexture: Any = js.native
     
-    /* private */ var _createDragGradientTexture: js.Any = js.native
+    /* private */ var _createColorGradientTexture: Any = js.native
     
-    /* private */ var _createFactorGradientTexture: js.Any = js.native
+    /* private */ var _createDragGradientTexture: Any = js.native
     
-    /* private */ var _createLimitVelocityGradientTexture: js.Any = js.native
+    /* private */ var _createFactorGradientTexture: Any = js.native
     
-    /* private */ var _createRenderVAO: js.Any = js.native
+    /* private */ var _createLimitVelocityGradientTexture: Any = js.native
     
-    /* private */ var _createSizeGradientTexture: js.Any = js.native
+    /* private */ var _createSizeGradientTexture: Any = js.native
     
-    /* private */ var _createUpdateVAO: js.Any = js.native
+    /* private */ var _createVelocityGradientTexture: Any = js.native
     
-    /* private */ var _createVelocityGradientTexture: js.Any = js.native
+    /* private */ var _createVertexBuffers: Any = js.native
     
-    /* private */ var _currentActiveCount: js.Any = js.native
+    /* private */ var _currentActiveCount: Any = js.native
     
-    /* private */ var _currentRenderId: js.Any = js.native
+    /* private */ var _currentRenderId: Any = js.native
     
-    /* private */ var _customEffect: js.Any = js.native
+    /* private */ var _currentRenderingCameraUniqueId: Any = js.native
     
-    /* private */ var _dragGradientsTexture: js.Any = js.native
+    /* private */ var _customWrappers: Any = js.native
     
-    /* private */ var _getEffect: js.Any = js.native
+    /** @hidden */
+    var _dragGradientsTexture: RawTexture = js.native
     
-    /* private */ var _initialize: js.Any = js.native
+    /* private */ var _drawWrappers: Any = js.native
     
-    /* private */ var _limitVelocityGradientsTexture: js.Any = js.native
+    /* private */ var _getCustomDrawWrapper: Any = js.native
+    
+    /**
+      * @param blendMode
+      * @hidden
+      */
+    def _getWrapper(blendMode: Double): DrawWrapper = js.native
+    
+    /* private */ var _initialize: Any = js.native
+    
+    /** @hidden */
+    var _limitVelocityGradientsTexture: RawTexture = js.native
     
     /** @hidden */
     /* protected */ var _onBeforeDrawParticlesObservable: Nullable[Observable[Nullable[Effect]]] = js.native
     
-    /* private */ var _preWarmDone: js.Any = js.native
+    /* private */ var _platform: Any = js.native
     
-    /* private */ var _randomTexture: js.Any = js.native
-    
-    /* private */ var _randomTexture2: js.Any = js.native
-    
-    /* private */ var _randomTextureSize: js.Any = js.native
-    
-    /* private */ val _rawTextureWidth: js.Any = js.native
+    /* private */ var _preWarmDone: Any = js.native
     
     /** @hidden */
-    def _recreateRenderEffect(): Effect = js.native
+    var _randomTexture: RawTexture = js.native
+    
+    /** @hidden */
+    var _randomTexture2: RawTexture = js.native
+    
+    /* private */ var _randomTextureSize: Any = js.native
+    
+    /* private */ val _rawTextureWidth: Any = js.native
     
     /** @hidden */
     def _recreateUpdateEffect(): Unit = js.native
     
-    /* private */ var _refreshColorGradient: js.Any = js.native
+    /* private */ var _refreshColorGradient: Any = js.native
     
-    /* private */ var _refreshFactorGradient: js.Any = js.native
+    /* private */ var _refreshFactorGradient: Any = js.native
     
-    /* private */ var _releaseBuffers: js.Any = js.native
+    /* private */ var _releaseBuffers: Any = js.native
     
-    /* private */ var _releaseVAOs: js.Any = js.native
+    /* private */ var _render: Any = js.native
     
-    /* private */ var _renderEffect: js.Any = js.native
+    /** @hidden */
+    var _sizeGradientsTexture: RawTexture = js.native
     
-    /* private */ var _renderVAO: js.Any = js.native
+    /* private */ var _sourceBuffer: Any = js.native
     
-    /* private */ var _sizeGradientsTexture: js.Any = js.native
+    /* private */ var _spriteBuffer: Any = js.native
     
-    /* private */ var _sourceBuffer: js.Any = js.native
+    /* private */ var _started: Any = js.native
     
-    /* private */ var _spriteBuffer: js.Any = js.native
+    /* private */ var _stopped: Any = js.native
     
-    /* private */ var _started: js.Any = js.native
+    /* private */ var _targetBuffer: Any = js.native
     
-    /* private */ var _stopped: js.Any = js.native
+    /* private */ var _targetIndex: Any = js.native
     
-    /* private */ var _targetBuffer: js.Any = js.native
+    /* private */ var _timeDelta: Any = js.native
     
-    /* private */ var _targetIndex: js.Any = js.native
+    /* private */ var _updateBuffer: Any = js.native
     
-    /* private */ var _timeDelta: js.Any = js.native
-    
-    /* private */ var _updateEffect: js.Any = js.native
-    
-    /* private */ var _updateEffectOptions: js.Any = js.native
-    
-    /* private */ var _updateVAO: js.Any = js.native
-    
-    /* private */ var _velocityGradientsTexture: js.Any = js.native
+    /** @hidden */
+    var _velocityGradientsTexture: RawTexture = js.native
     
     /**
       * Gets or set the number of active particles
@@ -193,11 +204,9 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to use (between 0 and 1)
-      * @param min defines the alpha remap minimal range
-      * @param max defines the alpha remap maximal range
       * @returns the current particle system
       */
+    def addAlphaRemapGradient(): IParticleSystem = js.native
     /**
       * Adds a new alpha remap gradient
       * @param gradient defines the gradient to use (between 0 and 1)
@@ -229,11 +238,10 @@ object gpuParticleSystemMod {
       * Adds a new color gradient
       * @param gradient defines the gradient to use (between 0 and 1)
       * @param color1 defines the color to affect to the specified gradient
-      * @param color2 defines an additional color used to define a range ([color, color2]) with main color to pick the final color from
       * @returns the current particle system
       */
     def addColorGradient(gradient: Double, color1: Color4): GPUParticleSystem = js.native
-    def addColorGradient(gradient: Double, color1: Color4, color2: Color4): GPUParticleSystem = js.native
+    def addColorGradient(gradient: Double, color1: Color4, color2: Color4): IParticleSystem = js.native
     /**
       * Adds a new color gradient
       * @param gradient defines the gradient to use (between 0 and 1)
@@ -243,16 +251,12 @@ object gpuParticleSystemMod {
       */
     @JSName("addColorGradient")
     def addColorGradient_IParticleSystem(gradient: Double, color1: Color4): IParticleSystem = js.native
-    @JSName("addColorGradient")
-    def addColorGradient_IParticleSystem(gradient: Double, color1: Color4, color2: Color4): IParticleSystem = js.native
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to use (between 0 and 1)
-      * @param min defines the color remap minimal range
-      * @param max defines the color remap maximal range
       * @returns the current particle system
       */
+    def addColorRemapGradient(): IParticleSystem = js.native
     /**
       * Adds a new color remap gradient
       * @param gradient defines the gradient to use (between 0 and 1)
@@ -282,11 +286,9 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to use (between 0 and 1)
-      * @param factor defines the emit rate value to affect to the specified gradient
-      * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
       * @returns the current particle system
       */
+    def addEmitRateGradient(): IParticleSystem = js.native
     /**
       * Adds a new emit rate gradient (please note that this will only work if you set the targetStopDuration property)
       * @param gradient defines the gradient to use (between 0 and 1)
@@ -299,11 +301,9 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to use (between 0 and 1)
-      * @param factor defines the life time factor to affect to the specified gradient
-      * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
       * @returns the current particle system
       */
+    def addLifeTimeGradient(): IParticleSystem = js.native
     /**
       * Adds a new life time gradient
       * @param gradient defines the gradient to use (between 0 and 1)
@@ -334,10 +334,9 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to use (between 0 and 1)
-      * @param color defines the color to affect to the specified gradient
       * @returns the current particle system
       */
+    def addRampGradient(): IParticleSystem = js.native
     /**
       * Adds a new ramp gradient used to remap particle colors
       * @param gradient defines the gradient to use (between 0 and 1)
@@ -366,11 +365,9 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to use (between 0 and 1)
-      * @param factor defines the start size value to affect to the specified gradient
-      * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
       * @returns the current particle system
       */
+    def addStartSizeGradient(): IParticleSystem = js.native
     /**
       * Adds a new start size gradient (please note that this will only work if you set the targetStopDuration property)
       * @param gradient defines the gradient to use (between 0 and 1)
@@ -415,7 +412,7 @@ object gpuParticleSystemMod {
       * @param newEmitter The new emitter to use
       * @returns the cloned particle system
       */
-    def clone(name: String, newEmitter: js.Any): Nullable[IParticleSystem] = js.native
+    def clone(name: String, newEmitter: Any): Nullable[IParticleSystem] = js.native
     /**
       * Clones the particle system.
       * @param name The name of the cloned object
@@ -423,7 +420,7 @@ object gpuParticleSystemMod {
       * @returns the cloned particle system
       */
     @JSName("clone")
-    def clone_GPUParticleSystem(name: String, newEmitter: js.Any): GPUParticleSystem = js.native
+    def clone_GPUParticleSystem(name: String, newEmitter: Any): GPUParticleSystem = js.native
     
     /** Gets or sets a matrix to use to compute projection */
     var defaultProjectionMatrix: Matrix = js.native
@@ -500,7 +497,7 @@ object gpuParticleSystemMod {
       */
     /**
       * Gets the current list of ramp gradients.
-      * You must use addRampGradient and removeRampGradient to udpate this list
+      * You must use addRampGradient and removeRampGradient to update this list
       * @returns the list of ramp gradients
       */
     def getRampGradients(): Nullable[js.Array[Color3Gradient]] = js.native
@@ -512,7 +509,7 @@ object gpuParticleSystemMod {
     
     /**
       * Is this system ready to be used/rendered
-      * @return true if the system is ready
+      * @returns true if the system is ready
       */
     def isReady(): Boolean = js.native
     
@@ -564,7 +561,6 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to remove
       * @returns the current particle system
       */
     def removeAlphaRemapGradient(): IParticleSystem = js.native
@@ -599,7 +595,6 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to remove
       * @returns the current particle system
       */
     def removeColorRemapGradient(): IParticleSystem = js.native
@@ -620,9 +615,9 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to remove
       * @returns the current particle system
       */
+    def removeEmitRateGradient(): IParticleSystem = js.native
     /**
       * Remove a specific emit rate gradient
       * @param gradient defines the gradient to remove
@@ -632,9 +627,9 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to remove
       * @returns the current particle system
       */
+    def removeLifeTimeGradient(): IParticleSystem = js.native
     /**
       * Remove a specific life time gradient
       * @param gradient defines the gradient to remove
@@ -658,7 +653,6 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to remove
       * @returns the current particle system
       */
     def removeRampGradient(): IParticleSystem = js.native
@@ -679,9 +673,9 @@ object gpuParticleSystemMod {
     
     /**
       * Not supported by GPUParticleSystem
-      * @param gradient defines the gradient to remove
       * @returns the current particle system
       */
+    def removeStartSizeGradient(): IParticleSystem = js.native
     /**
       * Remove a specific start size gradient
       * @param gradient defines the gradient to remove
@@ -706,6 +700,7 @@ object gpuParticleSystemMod {
     /**
       * Renders the particle system in its current state
       * @param preWarm defines if the system should only update the particles but not render them
+      * @param forceUpdateOnly if true, force to only update the particles and never display them (meaning, even if preWarm=false, when forceUpdateOnly=true the particles won't be displayed)
       * @returns the current number of particles
       */
     /**
@@ -714,6 +709,8 @@ object gpuParticleSystemMod {
       */
     def render(): Double = js.native
     def render(preWarm: Boolean): Double = js.native
+    def render(preWarm: Boolean, forceUpdateOnly: Boolean): Double = js.native
+    def render(preWarm: Unit, forceUpdateOnly: Boolean): Double = js.native
     
     /**
       * Remove all active particles
@@ -721,17 +718,22 @@ object gpuParticleSystemMod {
     def reset(): Unit = js.native
     
     /**
-      * Serializes the particle system to a JSON object
-      * @param serializeTexture defines if the texture must be serialized as well
-      * @returns the JSON object
+      * Resets the draw wrappers cache
       */
-    def serialize(): js.Any = js.native
+    def resetDrawCache(): Unit = js.native
+    
     /**
       * Serializes the particle system to a JSON object
       * @param serializeTexture defines if the texture must be serialized as well
       * @returns the JSON object
       */
-    def serialize(serializeTexture: Boolean): js.Any = js.native
+    def serialize(): Any = js.native
+    /**
+      * Serializes the particle system to a JSON object
+      * @param serializeTexture defines if the texture must be serialized as well
+      * @returns the JSON object
+      */
+    def serialize(serializeTexture: Boolean): Any = js.native
     
     /**
       * Sets the custom effect used to render the particles
@@ -798,11 +800,111 @@ object gpuParticleSystemMod {
       * @param sceneOrEngine The scene or the engine to create the particle system in
       * @param rootUrl The root url to use to load external dependencies like texture
       * @param doNotStart Ignore the preventAutoStart attribute and does not start
+      * @param capacity defines the system capacity (if null or undefined the sotred capacity will be used)
       * @returns the parsed GPU particle system
       */
-    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
-    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
-    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
-    inline def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String, doNotStart: Boolean): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    inline def Parse(parsedParticleSystem: Any, sceneOrEngine: Scene, rootUrl: String): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    inline def Parse(parsedParticleSystem: Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    inline def Parse(
+      parsedParticleSystem: Any,
+      sceneOrEngine: Scene,
+      rootUrl: String,
+      doNotStart: Boolean,
+      capacity: Double
+    ): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    inline def Parse(
+      parsedParticleSystem: Any,
+      sceneOrEngine: Scene,
+      rootUrl: String,
+      doNotStart: Unit,
+      capacity: Double
+    ): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    inline def Parse(parsedParticleSystem: Any, sceneOrEngine: ThinEngine, rootUrl: String): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    inline def Parse(parsedParticleSystem: Any, sceneOrEngine: ThinEngine, rootUrl: String, doNotStart: Boolean): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    inline def Parse(
+      parsedParticleSystem: Any,
+      sceneOrEngine: ThinEngine,
+      rootUrl: String,
+      doNotStart: Boolean,
+      capacity: Double
+    ): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    inline def Parse(
+      parsedParticleSystem: Any,
+      sceneOrEngine: ThinEngine,
+      rootUrl: String,
+      doNotStart: Unit,
+      capacity: Double
+    ): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
+    
+    /**
+      * @param hasColorGradients
+      * @param isAnimationSheetEnabled
+      * @param isBillboardBased
+      * @param isBillboardStretched
+      * @hidden
+      */
+    inline def _GetAttributeNamesOrOptions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")().asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(hasColorGradients: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(hasColorGradients: Boolean, isAnimationSheetEnabled: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(hasColorGradients: Boolean, isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(
+      hasColorGradients: Boolean,
+      isAnimationSheetEnabled: Boolean,
+      isBillboardBased: Boolean,
+      isBillboardStretched: Boolean
+    ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(
+      hasColorGradients: Boolean,
+      isAnimationSheetEnabled: Boolean,
+      isBillboardBased: Unit,
+      isBillboardStretched: Boolean
+    ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(hasColorGradients: Boolean, isAnimationSheetEnabled: Unit, isBillboardBased: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(
+      hasColorGradients: Boolean,
+      isAnimationSheetEnabled: Unit,
+      isBillboardBased: Boolean,
+      isBillboardStretched: Boolean
+    ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(
+      hasColorGradients: Boolean,
+      isAnimationSheetEnabled: Unit,
+      isBillboardBased: Unit,
+      isBillboardStretched: Boolean
+    ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(hasColorGradients: Unit, isAnimationSheetEnabled: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(hasColorGradients: Unit, isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(
+      hasColorGradients: Unit,
+      isAnimationSheetEnabled: Boolean,
+      isBillboardBased: Boolean,
+      isBillboardStretched: Boolean
+    ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(
+      hasColorGradients: Unit,
+      isAnimationSheetEnabled: Boolean,
+      isBillboardBased: Unit,
+      isBillboardStretched: Boolean
+    ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(hasColorGradients: Unit, isAnimationSheetEnabled: Unit, isBillboardBased: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(
+      hasColorGradients: Unit,
+      isAnimationSheetEnabled: Unit,
+      isBillboardBased: Boolean,
+      isBillboardStretched: Boolean
+    ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetAttributeNamesOrOptions(
+      hasColorGradients: Unit,
+      isAnimationSheetEnabled: Unit,
+      isBillboardBased: Unit,
+      isBillboardStretched: Boolean
+    ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    
+    /**
+      * @param isAnimationSheetEnabled
+      * @hidden
+      */
+    inline def _GetEffectCreationOptions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")().asInstanceOf[js.Array[String]]
+    inline def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
 }

@@ -32,7 +32,7 @@ trait AutoHeight extends StObject {
   
   var rows: Double
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
 }
 object AutoHeight {
   
@@ -49,7 +49,7 @@ object AutoHeight {
     onErrorClick: () => Unit,
     onFocus: () => Unit,
     rows: Double,
-    styles: StringDictionary[RegisteredStyle[js.Any]]
+    styles: StringDictionary[RegisteredStyle[Any]]
   ): AutoHeight = {
     val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], clear = clear.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], keyboardType = keyboardType.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onErrorClick = js.Any.fromFunction0(onErrorClick), onFocus = js.Any.fromFunction0(onFocus), rows = rows.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoHeight]
@@ -81,6 +81,6 @@ object AutoHeight {
     
     inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

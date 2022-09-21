@@ -24,6 +24,6 @@ object FileTypeList {
     
     inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
-    inline def setFileTypesVarargs(value: FileType*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+    inline def setFileTypesVarargs(value: FileType*): Self = StObject.set(x, "fileTypes", js.Array(value*))
   }
 }

@@ -55,7 +55,7 @@ object Fields {
     
     inline def setComputedStyleUndefined: Self = StObject.set(x, "computedStyle", js.undefined)
     
-    inline def setComputedStyleVarargs(value: String*): Self = StObject.set(x, "computedStyle", js.Array(value :_*))
+    inline def setComputedStyleVarargs(value: String*): Self = StObject.set(x, "computedStyle", js.Array(value*))
     
     inline def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object Fields {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setRect(value: Boolean): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     

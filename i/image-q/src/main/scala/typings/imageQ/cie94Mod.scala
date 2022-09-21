@@ -1,13 +1,13 @@
 package typings.imageQ
 
-import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
+import typings.imageQ.distanceCalculatorMod.AbstractDistanceCalculator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cie94Mod {
   
-  @JSImport("image-q/dist/distance/cie94", "AbstractCIE94")
+  @JSImport("image-q/dist/types/src/distance/cie94", "AbstractCIE94")
   @js.native
   abstract class AbstractCIE94 () extends AbstractDistanceCalculator {
     
@@ -25,11 +25,11 @@ object cie94Mod {
     /* protected */ var _kA: Double = js.native
   }
   
-  @JSImport("image-q/dist/distance/cie94", "CIE94GraphicArts")
+  @JSImport("image-q/dist/types/src/distance/cie94", "CIE94GraphicArts")
   @js.native
-  class CIE94GraphicArts () extends AbstractCIE94
+  open class CIE94GraphicArts () extends AbstractCIE94
   
-  @JSImport("image-q/dist/distance/cie94", "CIE94Textiles")
+  @JSImport("image-q/dist/types/src/distance/cie94", "CIE94Textiles")
   @js.native
-  class CIE94Textiles () extends AbstractCIE94
+  open class CIE94Textiles () extends AbstractCIE94
 }

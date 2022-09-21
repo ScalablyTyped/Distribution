@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.IncrementValueAction")
 @js.native
-class IncrementValueAction protected ()
+open class IncrementValueAction protected ()
   extends StObject
      with typings.babylonjs.BABYLON.IncrementValueAction {
   /**
@@ -17,12 +17,12 @@ class IncrementValueAction protected ()
     * @param value defines the value value we should increment the property by
     * @param condition defines the trigger related conditions
     */
-  def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any) = this()
+  def this(triggerOptions: Any, target: Any, propertyPath: String, value: Any) = this()
   def this(
-    triggerOptions: js.Any,
-    target: js.Any,
+    triggerOptions: Any,
+    target: Any,
     propertyPath: String,
-    value: js.Any,
+    value: Any,
     condition: typings.babylonjs.BABYLON.Condition
   ) = this()
 }

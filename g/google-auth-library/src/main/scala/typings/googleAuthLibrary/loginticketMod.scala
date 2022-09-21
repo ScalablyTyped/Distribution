@@ -16,12 +16,12 @@ object loginticketMod {
     * @param {TokenPayload} pay Payload of the jwt
     * @constructor
     */
-  class LoginTicket () extends StObject {
+  open class LoginTicket () extends StObject {
     def this(env: String) = this()
     def this(env: String, pay: TokenPayload) = this()
     def this(env: Unit, pay: TokenPayload) = this()
     
-    /* private */ var envelope: js.Any = js.native
+    /* private */ var envelope: Any = js.native
     
     /**
       * Returns attributes from the login ticket.  This can contain
@@ -42,7 +42,7 @@ object loginticketMod {
       */
     def getUserId(): String | Null = js.native
     
-    /* private */ var payload: js.Any = js.native
+    /* private */ var payload: Any = js.native
   }
   
   trait TokenPayload extends StObject {

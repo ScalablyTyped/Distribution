@@ -10,19 +10,19 @@ object subtitlesViewMod {
   
   @JSImport("playable/dist/src/modules/ui/subtitles/subtitles.view", JSImport.Default)
   @js.native
-  class default () extends SubtitlesView
+  open class default () extends SubtitlesView
   
   @js.native
   trait SubtitlesView
     extends typings.playable.viewMod.default[ISubtitlesViewStyles] {
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
     /* private */ @JSName("_$subtitles")
-    var _$subtitles: js.Any = js.native
+    var _$subtitles: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
     def clearSubtitles(): Unit = js.native
     

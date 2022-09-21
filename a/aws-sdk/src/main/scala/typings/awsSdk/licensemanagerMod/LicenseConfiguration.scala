@@ -27,6 +27,11 @@ trait LicenseConfiguration extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
+    * When true, disassociates a resource when software is uninstalled.
+    */
+  var DisassociateWhenNotFound: js.UndefOr[BoxBoolean] = js.undefined
+  
+  /**
     * Amazon Resource Name (ARN) of the license configuration.
     */
   var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
@@ -98,7 +103,7 @@ object LicenseConfiguration {
     
     inline def setConsumedLicenseSummaryListUndefined: Self = StObject.set(x, "ConsumedLicenseSummaryList", js.undefined)
     
-    inline def setConsumedLicenseSummaryListVarargs(value: ConsumedLicenseSummary*): Self = StObject.set(x, "ConsumedLicenseSummaryList", js.Array(value :_*))
+    inline def setConsumedLicenseSummaryListVarargs(value: ConsumedLicenseSummary*): Self = StObject.set(x, "ConsumedLicenseSummaryList", js.Array(value*))
     
     inline def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
     
@@ -107,6 +112,10 @@ object LicenseConfiguration {
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setDisassociateWhenNotFound(value: BoxBoolean): Self = StObject.set(x, "DisassociateWhenNotFound", value.asInstanceOf[js.Any])
+    
+    inline def setDisassociateWhenNotFoundUndefined: Self = StObject.set(x, "DisassociateWhenNotFound", js.undefined)
     
     inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
     
@@ -132,13 +141,13 @@ object LicenseConfiguration {
     
     inline def setLicenseRulesUndefined: Self = StObject.set(x, "LicenseRules", js.undefined)
     
-    inline def setLicenseRulesVarargs(value: String*): Self = StObject.set(x, "LicenseRules", js.Array(value :_*))
+    inline def setLicenseRulesVarargs(value: String*): Self = StObject.set(x, "LicenseRules", js.Array(value*))
     
     inline def setManagedResourceSummaryList(value: ManagedResourceSummaryList): Self = StObject.set(x, "ManagedResourceSummaryList", value.asInstanceOf[js.Any])
     
     inline def setManagedResourceSummaryListUndefined: Self = StObject.set(x, "ManagedResourceSummaryList", js.undefined)
     
-    inline def setManagedResourceSummaryListVarargs(value: ManagedResourceSummary*): Self = StObject.set(x, "ManagedResourceSummaryList", js.Array(value :_*))
+    inline def setManagedResourceSummaryListVarargs(value: ManagedResourceSummary*): Self = StObject.set(x, "ManagedResourceSummaryList", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -152,7 +161,7 @@ object LicenseConfiguration {
     
     inline def setProductInformationListUndefined: Self = StObject.set(x, "ProductInformationList", js.undefined)
     
-    inline def setProductInformationListVarargs(value: ProductInformation*): Self = StObject.set(x, "ProductInformationList", js.Array(value :_*))
+    inline def setProductInformationListVarargs(value: ProductInformation*): Self = StObject.set(x, "ProductInformationList", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,7 @@ object expressValidatorBooleans {
   @js.native
   sealed trait `true`
     extends StObject
-       with SanitizerSchemaOptions[js.Any]
-       with ValidatorSchemaOptions[js.Any]
+       with SanitizerSchemaOptions[Any]
+       with ValidatorSchemaOptions[Any]
   inline def `true`: `true` = true.asInstanceOf[`true`]
 }

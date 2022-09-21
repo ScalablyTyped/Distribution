@@ -46,7 +46,7 @@ object mdns {
       
       inline def setServiceData(value: js.Array[String]): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
       
-      inline def setServiceDataVarargs(value: String*): Self = StObject.set(x, "serviceData", js.Array(value :_*))
+      inline def setServiceDataVarargs(value: String*): Self = StObject.set(x, "serviceData", js.Array(value*))
       
       inline def setServiceHostPort(value: String): Self = StObject.set(x, "serviceHostPort", value.asInstanceOf[js.Any])
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rxjs-compat" : "6.6.3"
+      "rxjs-compat" : "6.6.7"
     }
   ],
   "test-dependencies" : [
     {
-      "rxjs-compat" : "6.6.3"
+      "rxjs-compat" : "6.6.7"
     }
   ],
   "compile-devDependencies" : [

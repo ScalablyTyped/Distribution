@@ -21,7 +21,7 @@ object Array {
     
     inline def setArray(value: js.Array[String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    inline def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value*))
     
     inline def setHashalg(value: String): Self = StObject.set(x, "hashalg", value.asInstanceOf[js.Any])
   }

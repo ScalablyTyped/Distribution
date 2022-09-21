@@ -9,7 +9,6 @@ import typings.motorHat.motorHatStrings.double
 import typings.motorHat.motorHatStrings.interleaved
 import typings.motorHat.motorHatStrings.microstep
 import typings.motorHat.motorHatStrings.single
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object mod {
     */
   inline def default(options: MotorHatOptions): MotorHat = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[MotorHat]
   
-  type Callback = js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[js.Any], Unit]
+  type Callback = js.Function2[/* err */ js.UndefOr[js.Error], /* result */ js.UndefOr[Any], Unit]
   
   @js.native
   trait DC extends StObject {
@@ -144,7 +143,7 @@ object mod {
       
       inline def setPins(value: PinDefinition): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      inline def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value :_*))
+      inline def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value*))
       
       inline def setPwm(value: js.Object): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
       
@@ -303,19 +302,19 @@ object mod {
       
       inline def setDcsUndefined: Self = StObject.set(x, "dcs", js.undefined)
       
-      inline def setDcsVarargs(value: Motor*): Self = StObject.set(x, "dcs", js.Array(value :_*))
+      inline def setDcsVarargs(value: Motor*): Self = StObject.set(x, "dcs", js.Array(value*))
       
       inline def setServos(value: js.Array[Double]): Self = StObject.set(x, "servos", value.asInstanceOf[js.Any])
       
       inline def setServosUndefined: Self = StObject.set(x, "servos", js.undefined)
       
-      inline def setServosVarargs(value: Double*): Self = StObject.set(x, "servos", js.Array(value :_*))
+      inline def setServosVarargs(value: Double*): Self = StObject.set(x, "servos", js.Array(value*))
       
       inline def setSteppers(value: js.Array[W2]): Self = StObject.set(x, "steppers", value.asInstanceOf[js.Any])
       
       inline def setSteppersUndefined: Self = StObject.set(x, "steppers", js.undefined)
       
-      inline def setSteppersVarargs(value: W2*): Self = StObject.set(x, "steppers", js.Array(value :_*))
+      inline def setSteppersVarargs(value: W2*): Self = StObject.set(x, "steppers", js.Array(value*))
     }
   }
   
@@ -569,7 +568,7 @@ object mod {
       */
     def oneStep(
       dir: Direction,
-      cb: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[js.Any], Unit]
+      cb: js.Function2[/* err */ js.UndefOr[js.Error], /* result */ js.UndefOr[Any], Unit]
     ): Unit = js.native
     
     /**
@@ -589,7 +588,7 @@ object mod {
       *
       * @param   cb      Node style callback
       */
-    def release(cb: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def release(cb: js.Function2[/* err */ js.UndefOr[js.Error], /* result */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /**
       * Release the stepper motor synchronously.
@@ -611,7 +610,7 @@ object mod {
       * @param   freq    PWM frequency.
       * @param   cb      Node style callback. cb(err, result).
       */
-    def setFrequency(freq: Double, cb: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def setFrequency(freq: Double, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* result */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /**
       * Set PWM Controller working frequency synchronously.
@@ -620,16 +619,13 @@ object mod {
       */
     def setFrequencySync(freq: Double): Unit = js.native
     
-    @JSName("setMicrosteps")
-    def setMicrosteps_16(ms: `16`): Unit = js.native
     /**
       * Set desired number of microsteps per step.
       * (Used for microstepping)
       *
       * @param   ms      Microsteps per step
       */
-    @JSName("setMicrosteps")
-    def setMicrosteps_8(ms: `8`): Unit = js.native
+    def setMicrosteps(ms: `8` | `16`): Unit = js.native
     
     /**
       * Set motor speed for step().
@@ -643,19 +639,12 @@ object mod {
       */
     def setSteps(steps: Double): Unit = js.native
     
-    @JSName("setStyle")
-    def setStyle_double(style: double): Unit = js.native
-    @JSName("setStyle")
-    def setStyle_interleaved(style: interleaved): Unit = js.native
-    @JSName("setStyle")
-    def setStyle_microstep(style: microstep): Unit = js.native
     /**
       * Set stepping style.
       *
       * @param   style   Stepping style.
       */
-    @JSName("setStyle")
-    def setStyle_single(style: single): Unit = js.native
+    def setStyle(style: single | double | interleaved | microstep): Unit = js.native
     
     /**
       * Perform arbitrary number of steps asynchronously.
@@ -668,7 +657,7 @@ object mod {
     def step(
       dir: Direction,
       steps: Double,
-      cb: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[StepResult], Unit]
+      cb: js.Function2[/* err */ js.UndefOr[js.Error], /* result */ js.UndefOr[StepResult], Unit]
     ): Unit = js.native
     
     /**

@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("perfect-scrollbar", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PerfectScrollbar {
     def this(element: String) = this()
@@ -294,7 +294,7 @@ object mod {
         
         inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
         
-        inline def setHandlersVarargs(value: String*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+        inline def setHandlersVarargs(value: String*): Self = StObject.set(x, "handlers", js.Array(value*))
         
         inline def setMaxScrollbarLength(value: Double): Self = StObject.set(x, "maxScrollbarLength", value.asInstanceOf[js.Any])
         

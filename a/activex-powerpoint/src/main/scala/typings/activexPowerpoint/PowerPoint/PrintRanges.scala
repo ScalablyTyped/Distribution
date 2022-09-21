@@ -16,7 +16,7 @@ trait PrintRanges extends StObject {
   
   def Item(Index: Double): PrintRange
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.PrintRanges_typekey")
   var PowerPointDotPrintRanges_typekey: PrintRanges
@@ -29,7 +29,7 @@ object PrintRanges {
     ClearAll: () => Unit,
     Count: Double,
     Item: Double => PrintRange,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPrintRanges_typekey: PrintRanges
   ): PrintRanges = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Application = Application.asInstanceOf[js.Any], ClearAll = js.Any.fromFunction0(ClearAll), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object PrintRanges {
     
     inline def setItem(value: Double => PrintRange): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPrintRanges_typekey(value: PrintRanges): Self = StObject.set(x, "PowerPoint.PrintRanges_typekey", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,7 @@ object addMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/capacitor/add", "AddCommand")
   @js.native
-  class AddCommand protected () extends CapacitorCommand {
+  open class AddCommand protected () extends CapacitorCommand {
     def this(namespace: INamespace) = this()
     
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native

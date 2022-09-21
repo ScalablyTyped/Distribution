@@ -32,9 +32,9 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @returns Pointer to the last namespace created or `this` if path is empty
     */
   def define(path: String): Namespace = js.native
-  def define(path: String, json: js.Any): Namespace = js.native
+  def define(path: String, json: Any): Namespace = js.native
   def define(path: js.Array[String]): Namespace = js.native
-  def define(path: js.Array[String], json: js.Any): Namespace = js.native
+  def define(path: js.Array[String], json: Any): Namespace = js.native
   
   /**
     * Gets the nested object of the specified name.
@@ -59,6 +59,8 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @returns Looked up object or `null` if none could be found
     */
   def lookup(path: String): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: js.Array[Any]): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: js.Array[Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   /**
     * Recursively looks up the reflection object matching the specified path in the scope of this namespace.
     * @param path Path to look up
@@ -66,16 +68,14 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @param [parentAlreadyChecked=false] If known, whether the parent has already been checked
     * @returns Looked up object or `null` if none could be found
     */
-  def lookup(path: String, filterTypes: js.Any): ReflectionObject | Null = js.native
-  def lookup(path: String, filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  def lookup(path: String, filterTypes: js.Array[js.Any]): ReflectionObject | Null = js.native
-  def lookup(path: String, filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: Any): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: String, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String]): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Any): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Array[js.Any]): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: js.Array[Any]): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: js.Array[Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: Any): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   
   /**

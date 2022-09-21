@@ -1,7 +1,6 @@
 package typings.std.global
 
-import typings.std.anon.HighWaterMark
-import typings.std.stdNumbers.`1`
+import typings.std.QueuingStrategyInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("CountQueuingStrategy")
 @js.native
-class CountQueuingStrategy protected ()
+open class CountQueuingStrategy protected ()
   extends StObject
      with typings.std.CountQueuingStrategy {
-  def this(options: HighWaterMark) = this()
+  /* standard dom */
+  def this(init: QueuingStrategyInit) = this()
   
+  /* standard dom */
   /* CompleteClass */
   @JSName("highWaterMark")
-  var highWaterMark_CountQueuingStrategy: Double = js.native
+  override val highWaterMark_CountQueuingStrategy: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   @JSName("size")
-  override def size_MCountQueuingStrategy(chunk: js.Any): `1` = js.native
+  override def size_MCountQueuingStrategy(chunk: Any): Double = js.native
 }

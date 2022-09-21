@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhysicsRaycastResult")
 @js.native
-class PhysicsRaycastResult ()
+open class PhysicsRaycastResult ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsRaycastResult

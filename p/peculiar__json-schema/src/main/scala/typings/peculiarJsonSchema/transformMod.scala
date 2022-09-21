@@ -3,25 +3,29 @@ package typings.peculiarJsonSchema
 import org.scalablytyped.runtime.StringDictionary
 import typings.peculiarJsonSchema.schemaMod.IJsonSchema
 import typings.peculiarJsonSchema.schemaMod.IJsonSchemaItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/json-schema/build/types/transform", JSImport.Namespace)
-@js.native
-object transformMod extends js.Object {
-  @js.native
-  class JsonTransform () extends js.Object
+object transformMod {
   
-  /* static members */
+  @JSImport("@peculiar/json-schema/build/types/transform", "JsonTransform")
   @js.native
-  object JsonTransform extends js.Object {
-    /* protected */ def checkTypes(value: js.Any, schemaItem: IJsonSchemaItem): Unit = js.native
-    /* protected */ def checkValues(data: js.Any, schemaItem: IJsonSchemaItem): Unit = js.native
-    /* protected */ def getSchemaByName(schema: IJsonSchema): IJsonNamedSchema = js.native
-    /* protected */ def getSchemaByName(schema: IJsonSchema, name: String): IJsonNamedSchema = js.native
+  open class JsonTransform () extends StObject
+  /* static members */
+  object JsonTransform {
+    
+    @JSImport("@peculiar/json-schema/build/types/transform", "JsonTransform")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def checkTypes(value: Any, schemaItem: IJsonSchemaItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkTypes")(value.asInstanceOf[js.Any], schemaItem.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def checkValues(data: Any, schemaItem: IJsonSchemaItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkValues")(data.asInstanceOf[js.Any], schemaItem.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def getSchemaByName(schema: IJsonSchema): IJsonNamedSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaByName")(schema.asInstanceOf[js.Any]).asInstanceOf[IJsonNamedSchema]
+    inline def getSchemaByName(schema: IJsonSchema, name: String): IJsonNamedSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaByName")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJsonNamedSchema]
   }
   
   type IJsonNamedSchema = StringDictionary[IJsonSchemaItem]
 }
-

@@ -1,27 +1,22 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
-import typings.firebaseFirestore.remoteConnectionMod.Connection
+import typings.firebaseFirestore.restConnectionMod.RestConnection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/browser/webchannel_connection", JSImport.Namespace)
-@js.native
-object webchannelConnectionMod extends js.Object {
-  @js.native
-  class WebChannelConnection protected () extends Connection {
-    def this(info: DatabaseInfo) = this()
-    val baseUrl: js.Any = js.native
-    val databaseId: js.Any = js.native
-    val forceLongPolling: js.Any = js.native
-    /**
-      * Modifies the headers for a request, adding any authorization token if
-      * present and any additional headers for the request.
-      */
-    var modifyHeadersForRequest: js.Any = js.native
-    def makeUrl(rpcName: String): String = js.native
-  }
+object webchannelConnectionMod {
   
+  @JSImport("@firebase/firestore/dist/firestore/src/platform/browser/webchannel_connection", "WebChannelConnection")
+  @js.native
+  open class WebChannelConnection protected () extends RestConnection {
+    def this(info: DatabaseInfo) = this()
+    
+    /* private */ val autoDetectLongPolling: Any = js.native
+    
+    /* private */ val forceLongPolling: Any = js.native
+    
+    /* private */ val useFetchStreams: Any = js.native
+  }
 }
-

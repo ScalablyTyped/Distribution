@@ -9,7 +9,7 @@ trait LifecycleExpiration extends StObject {
   /**
     * Indicates at what date the object is to be deleted. Should be in GMT ISO 8601 format.
     */
-  var Date: js.UndefOr[typings.awsSdk.s3controlMod.Date] = js.undefined
+  var Date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates the lifetime, in days, of the objects that are subject to the rule. The value must be a non-zero positive integer.
@@ -30,7 +30,7 @@ object LifecycleExpiration {
   
   extension [Self <: LifecycleExpiration](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     

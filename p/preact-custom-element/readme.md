@@ -11,9 +11,9 @@ Wrap your component up as a custom element
 | Full name          | preact-custom-element |
 | Keywords           | preact, web, components, custom, element |
 | # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 5216 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15755.666666666666 |
+| # stars            | 276.0 |
 
 ## Links
 - [Homepage](https://github.com/preactjs/preact-custom-element)

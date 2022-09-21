@@ -14,8 +14,8 @@ trait ControlInReportEvents extends StObject {
   
   var BottomPadding: Double = js.native
   
-  def Column(Index: Double): js.Any = js.native
-  def Column(Index: Double, Row: js.Any): js.Any = js.native
+  def Column(Index: Double): Any = js.native
+  def Column(Index: Double, Row: Any): Any = js.native
   
   def Controls[T](Index: String): T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
@@ -53,9 +53,9 @@ trait ControlInReportEvents extends StObject {
   
   def IsMemberSafe(dispid: Double): Boolean = js.native
   
-  def ItemData(Index: Double): js.Any = js.native
+  def ItemData(Index: Double): Any = js.native
   
-  def ItemsSelected(Index: js.Any): Double = js.native
+  def ItemsSelected(Index: Any): Double = js.native
   @JSName("ItemsSelected")
   val ItemsSelected_Original: ItemsSelected = js.native
   
@@ -76,18 +76,18 @@ trait ControlInReportEvents extends StObject {
   
   var Name: String = js.native
   
-  val Object: js.Any = js.native
+  val Object: Any = js.native
   
   def ObjectVerbs(Index: Double): String = js.native
   
-  val OldValue: js.Any = js.native
+  val OldValue: Any = js.native
   
   def Pages(Index: String): Page = js.native
   def Pages(Index: Double): Page = js.native
   @JSName("Pages")
   val Pages_Original: Pages = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Properties(Index: String): AccessProperty = js.native
   def Properties(Index: Double): AccessProperty = js.native
@@ -117,7 +117,7 @@ trait ControlInReportEvents extends StObject {
   
   var VerticalAnchor: AcVerticalAnchor = js.native
   
-  def _Evaluate(bstrExpr: String, ppsa: js.Any*): js.Any = js.native
+  def _Evaluate(bstrExpr: String, ppsa: Any*): Any = js.native
   
   var _Name: String = js.native
 }

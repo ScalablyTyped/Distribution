@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
+import typings.maximMazurokGapiClientContainer.gapi.client.container.CancelOperationRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait NameOauthtokenPrettyPrint extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name (project and location) of the server config to get, specified in the format `projects/∗/locations/ *`. */
+  /** The name (project, location, operation id) of the operation to cancel. Specified in the format `projects/ *‍/locations/ *‍/operations/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -34,31 +35,22 @@ trait NameOauthtokenPrettyPrint extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the
-    * name field.
-    */
-  var projectId: js.UndefOr[String] = js.undefined
-  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: CancelOperationRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) to return operations for. This field has been deprecated and
-    * replaced by the name field.
-    */
-  var zone: js.UndefOr[String] = js.undefined
 }
 object NameOauthtokenPrettyPrint {
   
-  inline def apply(name: String): NameOauthtokenPrettyPrint = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: CancelOperationRequest): NameOauthtokenPrettyPrint = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameOauthtokenPrettyPrint]
   }
   
@@ -98,13 +90,11 @@ object NameOauthtokenPrettyPrint {
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
-    
-    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
-    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: CancelOperationRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
@@ -113,9 +103,5 @@ object NameOauthtokenPrettyPrint {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
-    
-    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

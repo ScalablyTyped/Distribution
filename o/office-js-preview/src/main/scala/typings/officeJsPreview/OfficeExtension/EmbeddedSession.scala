@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EmbeddedSession extends StObject {
   
-  def init(): js.Promise[js.Any]
+  def init(): js.Promise[Any]
 }
 object EmbeddedSession {
   
-  inline def apply(init: () => js.Promise[js.Any]): EmbeddedSession = {
+  inline def apply(init: () => js.Promise[Any]): EmbeddedSession = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init))
     __obj.asInstanceOf[EmbeddedSession]
   }
   
   extension [Self <: EmbeddedSession](x: Self) {
     
-    inline def setInit(value: () => js.Promise[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => js.Promise[Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
   }
 }

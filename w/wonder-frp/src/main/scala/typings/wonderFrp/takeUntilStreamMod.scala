@@ -10,12 +10,12 @@ object takeUntilStreamMod {
   
   @JSImport("wonder-frp/dist/commonjs/stream/TakeUntilStream", "TakeUntilStream")
   @js.native
-  class TakeUntilStream protected () extends BaseStream {
+  open class TakeUntilStream protected () extends BaseStream {
     def this(source: Stream, otherStream: Stream) = this()
     
-    /* private */ var _otherStream: js.Any = js.native
+    /* private */ var _otherStream: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
   }
   /* static members */
   object TakeUntilStream {

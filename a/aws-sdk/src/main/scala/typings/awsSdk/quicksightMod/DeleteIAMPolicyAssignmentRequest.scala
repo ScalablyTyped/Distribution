@@ -12,7 +12,7 @@ trait DeleteIAMPolicyAssignmentRequest extends StObject {
   var AssignmentName: IAMPolicyAssignmentName
   
   /**
-    * The AWS account ID where you want to delete the IAM policy assignment.
+    * The Amazon Web Services account ID where you want to delete the IAM policy assignment.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

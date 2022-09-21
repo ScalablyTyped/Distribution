@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.BWsaHeader")
 @js.native
-class BWsaHeader ()
+open class BWsaHeader ()
   extends StObject
      with typings.sharepoint.SP.BWsaHeader

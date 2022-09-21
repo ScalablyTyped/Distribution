@@ -14,19 +14,21 @@ object htmlMod {
     * @param options Canvas options
     * @public
     */
-  class HtmlResponse[TData /* <: JsonObject */] ()
+  open class HtmlResponse[TData /* <: JsonObject */] ()
     extends StObject
        with GoogleActionsV2UiElementsHtmlResponse {
     def this(options: HtmlResponseOptions[TData]) = this()
     def this(options: GoogleActionsV2UiElementsHtmlResponse) = this()
     
     /** @public */
+    def data: TData = js.native
     /** @public */
-    var data: TData = js.native
+    def data_=(data: TData): Unit = js.native
     
     /** @public */
+    def suppress: Boolean = js.native
     /** @public */
-    var suppress: Boolean = js.native
+    def suppress_=(suppress: Boolean): Unit = js.native
   }
   
   trait HtmlResponseOptions[TData /* <: JsonObject */] extends StObject {

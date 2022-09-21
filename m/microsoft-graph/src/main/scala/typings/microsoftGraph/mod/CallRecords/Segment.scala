@@ -18,7 +18,7 @@ trait Segment
   
   /**
     * UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and
-    * is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var endDateTime: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ trait Segment
   
   /**
     * UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format
-    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var startDateTime: js.UndefOr[String] = js.undefined
 }
@@ -71,7 +71,7 @@ object Segment {
     
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value*))
     
     inline def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     

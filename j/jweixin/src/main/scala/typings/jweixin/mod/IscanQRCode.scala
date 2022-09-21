@@ -34,7 +34,7 @@ object IscanQRCode {
     
     inline def setScanType(value: js.Array[scanType]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
-    inline def setScanTypeVarargs(value: scanType*): Self = StObject.set(x, "scanType", js.Array(value :_*))
+    inline def setScanTypeVarargs(value: scanType*): Self = StObject.set(x, "scanType", js.Array(value*))
     
     inline def setSuccess(value: ResultStr => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

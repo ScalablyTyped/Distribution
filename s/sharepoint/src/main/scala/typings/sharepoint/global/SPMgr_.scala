@@ -11,18 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SPMgr")
 @js.native
-class SPMgr_ ()
+open class SPMgr_ ()
   extends StObject
      with SPMgr {
   
   /* CompleteClass */
-  override def NewGroup(listItem: StringDictionary[js.Any], fieldName: String): Boolean = js.native
+  override def NewGroup(listItem: StringDictionary[Any], fieldName: String): Boolean = js.native
   
   /* CompleteClass */
   override def RenderField(
     renderCtx: RenderContext,
     field: FieldSchema,
-    listItem: StringDictionary[js.Any],
+    listItem: StringDictionary[Any],
     listSchema: ListSchema
   ): String = js.native
   
@@ -30,7 +30,7 @@ class SPMgr_ ()
   override def RenderFieldByName(
     renderCtx: RenderContext,
     fieldName: String,
-    listItem: StringDictionary[js.Any],
+    listItem: StringDictionary[Any],
     listSchema: ListSchema
   ): String = js.native
   

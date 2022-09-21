@@ -19,7 +19,7 @@ object boxpanelMod {
     *
     * @param options - The options for initializing the box panel.
     */
-  class BoxPanel () extends Panel {
+  open class BoxPanel () extends Panel {
     def this(options: IOptions) = this()
     
     /**

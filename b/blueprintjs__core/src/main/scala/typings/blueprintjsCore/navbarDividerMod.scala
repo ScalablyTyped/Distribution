@@ -3,6 +3,7 @@ package typings.blueprintjsCore
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
@@ -28,10 +29,10 @@ object navbarDividerMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/navbar/navbarDivider", "NavbarDivider")
   @js.native
-  class NavbarDivider protected ()
-    extends AbstractPureComponent2[INavbarDividerProps, js.Object, js.Object] {
-    def this(props: INavbarDividerProps) = this()
-    def this(props: INavbarDividerProps, context: js.Any) = this()
+  open class NavbarDivider protected ()
+    extends AbstractPureComponent2[NavbarDividerProps, js.Object, js.Object] {
+    def this(props: NavbarDividerProps) = this()
+    def this(props: NavbarDividerProps, context: Any) = this()
   }
   /* static members */
   object NavbarDivider {
@@ -87,7 +88,7 @@ object navbarDividerMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -129,7 +130,7 @@ object navbarDividerMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -208,7 +209,7 @@ object navbarDividerMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -226,7 +227,7 @@ object navbarDividerMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -286,7 +287,7 @@ object navbarDividerMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -339,4 +340,6 @@ object navbarDividerMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
+  
+  type NavbarDividerProps = INavbarDividerProps
 }

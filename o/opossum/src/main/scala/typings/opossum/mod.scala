@@ -2,6 +2,7 @@ package typings.opossum
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.node.eventsMod.EventEmitter
+import typings.opossum.opossumBooleans.`false`
 import typings.opossum.opossumStrings.cacheHit
 import typings.opossum.opossumStrings.cacheMiss
 import typings.opossum.opossumStrings.close
@@ -16,7 +17,6 @@ import typings.opossum.opossumStrings.shutdown
 import typings.opossum.opossumStrings.snapshot
 import typings.opossum.opossumStrings.success
 import typings.opossum.opossumStrings.timeout
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ object mod {
   
   @JSImport("opossum", JSImport.Namespace)
   @js.native
-  class ^[TI /* <: js.Array[js.Any] */, TR] protected () extends CircuitBreaker[TI, TR] {
+  open class ^[TI /* <: js.Array[Any] */, TR] protected () extends CircuitBreaker[TI, TR] {
     def this(action: js.Function1[/* args */ TI, js.Promise[TR]]) = this()
     def this(action: js.Function1[/* args */ TI, js.Promise[TR]], options: Options) = this()
   }
@@ -34,7 +34,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def isOurError(error: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOurError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOurError(error: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOurError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Bucket extends StObject {
     
@@ -93,7 +93,7 @@ object mod {
       
       inline def setLatencyTimes(value: js.Array[Double]): Self = StObject.set(x, "latencyTimes", value.asInstanceOf[js.Any])
       
-      inline def setLatencyTimesVarargs(value: Double*): Self = StObject.set(x, "latencyTimes", js.Array(value :_*))
+      inline def setLatencyTimesVarargs(value: Double*): Self = StObject.set(x, "latencyTimes", js.Array(value*))
       
       inline def setPercentiles(value: NumberDictionary[Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
       
@@ -108,7 +108,15 @@ object mod {
   }
   
   @js.native
-  trait CircuitBreaker[TI /* <: js.Array[js.Any] */, TR] extends EventEmitter {
+  trait CircuitBreaker[TI /* <: js.Array[Any] */, TR] extends EventEmitter {
+    
+    /**
+      * Execute the action for this circuit with a provided this argument
+      */
+    def call(
+      context: Any,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TI is not an array type */ args: TI
+    ): js.Promise[TR] = js.native
     
     /**
       * Clears the cache of this CircuitBreaker
@@ -141,8 +149,8 @@ object mod {
       * This function will be executed when the circuit is fired and fails.
       * It will always be preceded by a `failure` event, and `breaker.fire` returns a rejected Promise.
       */
-    def fallback(func: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
-    def fallback(func: CircuitBreaker[js.Array[js.Any], js.Any]): this.type = js.native
+    def fallback(func: js.Function1[/* repeated */ Any, Any]): this.type = js.native
+    def fallback(func: CircuitBreaker[js.Array[Any], Any]): this.type = js.native
     
     /**
       * Execute the action for this circuit.
@@ -187,10 +195,10 @@ object mod {
     @JSName("on")
     def on_failure(
       event: failure,
-      listener: js.Function3[/* err */ Error, /* latencyMs */ Double, /* args */ TI, Unit]
+      listener: js.Function3[/* err */ js.Error, /* latencyMs */ Double, /* args */ TI, Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_fallback(event: fallback, listener: js.Function2[/* result */ js.Any, /* err */ Error, Unit]): this.type = js.native
+    def on_fallback(event: fallback, listener: js.Function2[/* result */ Any, /* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_fire(event: fire, listener: js.Function1[/* args */ TI, Unit]): this.type = js.native
     /* tslint:disable:unified-signatures */
@@ -200,19 +208,19 @@ object mod {
       listener: js.Function1[/* resetTimeout */ Double, Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_healthCheckFailed(event: healthCheckFailed, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_healthCheckFailed(event: healthCheckFailed, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_open(event: open, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_reject(event: reject, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_reject(event: reject, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
-    def on_semaphoreLocked(event: semaphoreLocked, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_semaphoreLocked(event: semaphoreLocked, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_shutdown(event: shutdown, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
     def on_success(event: success, listener: js.Function2[/* result */ TR, /* latencyMs */ Double, Unit]): this.type = js.native
     @JSName("on")
-    def on_timeout(event: timeout, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_timeout(event: timeout, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     /**
       * Opens the breaker.
@@ -243,7 +251,7 @@ object mod {
   trait Options extends StObject {
     
     /**
-      * Determines whether to allow failures without opening the circuit during a brief warmup period (`rollingCountDuration`)
+      * Determines whether to allow failures without opening the circuit during a brief warmup period (`rollingCountTimeout`)
       * This can help in situations where no matter what your `errorThresholdPercentage` is, if the
       * first execution times out or fails, the circuit immediately opens.
       * @default false
@@ -277,7 +285,7 @@ object mod {
       * If this function returns truthy, the circuit's `failPure` statistics will not be incremented.
       * This is useful, for example, when you don't want HTTP 404 to trip the circuit, but still want to handle it as a failure case.
       */
-    var errorFilter: js.UndefOr[js.Function1[/* err */ js.Any, Boolean]] = js.undefined
+    var errorFilter: js.UndefOr[js.Function1[/* err */ Any, Boolean]] = js.undefined
     
     /**
       * The error percentage at which to open the circuit and start short-circuiting requests to fallback.
@@ -334,9 +342,10 @@ object mod {
     
     /**
       * The time in milliseconds that action should be allowed to execute before timing out.
+      * Timeout can be disabled by setting this to `false`.
       * @default 10000 (10 seconds)
       */
-    var timeout: js.UndefOr[Double] = js.undefined
+    var timeout: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * The minimum number of requests within the rolling statistical window that must exist before
@@ -372,7 +381,7 @@ object mod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setErrorFilter(value: /* err */ js.Any => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
+      inline def setErrorFilter(value: /* err */ Any => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
       
       inline def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
       
@@ -408,7 +417,7 @@ object mod {
       
       inline def setRollingPercentilesEnabledUndefined: Self = StObject.set(x, "rollingPercentilesEnabled", js.undefined)
       
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | `false`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       

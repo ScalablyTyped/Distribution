@@ -9,12 +9,12 @@ trait HyperlinkExecutingEventUIParam extends StObject {
   /**
     * Get the [hyperlink](ig.excel.WorksheetHyperlink) to be executed.
     */
-  var hyperlink: js.UndefOr[js.Any] = js.undefined
+  var hyperlink: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object HyperlinkExecutingEventUIParam {
   
@@ -25,11 +25,11 @@ object HyperlinkExecutingEventUIParam {
   
   extension [Self <: HyperlinkExecutingEventUIParam](x: Self) {
     
-    inline def setHyperlink(value: js.Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
     inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

@@ -13,12 +13,16 @@ trait IconSymbol3DLayerOutlineProperties
   /**
     * The color of the outline.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The width of the outline in points.
+    *
+    * @default 1.125
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
     */
@@ -41,7 +45,7 @@ object IconSymbol3DLayerOutlineProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

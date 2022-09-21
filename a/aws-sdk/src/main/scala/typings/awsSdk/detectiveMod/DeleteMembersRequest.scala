@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteMembersRequest extends StObject {
   
   /**
-    * The list of AWS account identifiers for the member accounts to delete from the behavior graph.
+    * The list of Amazon Web Services account identifiers for the member accounts to remove from the behavior graph. You can remove up to 50 member accounts at a time.
     */
   var AccountIds: AccountIdList
   
   /**
-    * The ARN of the behavior graph to delete members from.
+    * The ARN of the behavior graph to remove members from.
     */
   var GraphArn: typings.awsSdk.detectiveMod.GraphArn
 }
@@ -27,7 +27,7 @@ object DeleteMembersRequest {
     
     inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }

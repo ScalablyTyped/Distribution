@@ -1,8 +1,7 @@
 package typings.fileEntryCache
 
 import typings.fileEntryCache.anon.Hash
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,15 +39,15 @@ object mod {
       
       inline def setChangedFiles(value: js.Array[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
-      inline def setChangedFilesVarargs(value: String*): Self = StObject.set(x, "changedFiles", js.Array(value :_*))
+      inline def setChangedFilesVarargs(value: String*): Self = StObject.set(x, "changedFiles", js.Array(value*))
       
       inline def setNotChangedFiles(value: js.Array[String]): Self = StObject.set(x, "notChangedFiles", value.asInstanceOf[js.Any])
       
-      inline def setNotChangedFilesVarargs(value: String*): Self = StObject.set(x, "notChangedFiles", js.Array(value :_*))
+      inline def setNotChangedFilesVarargs(value: String*): Self = StObject.set(x, "notChangedFiles", js.Array(value*))
       
       inline def setNotFoundFiles(value: js.Array[String]): Self = StObject.set(x, "notFoundFiles", value.asInstanceOf[js.Any])
       
-      inline def setNotFoundFilesVarargs(value: String*): Self = StObject.set(x, "notFoundFiles", js.Array(value :_*))
+      inline def setNotFoundFilesVarargs(value: String*): Self = StObject.set(x, "notFoundFiles", js.Array(value*))
     }
   }
   
@@ -56,7 +55,7 @@ object mod {
     
     val changed: js.UndefOr[Boolean] = js.undefined
     
-    val err: js.UndefOr[Error] = js.undefined
+    val err: js.UndefOr[js.Error] = js.undefined
     
     val key: String
     
@@ -77,7 +76,7 @@ object mod {
       
       inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
       
-      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
       inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       

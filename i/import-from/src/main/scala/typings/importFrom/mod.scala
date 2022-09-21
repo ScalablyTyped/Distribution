@@ -22,7 +22,7 @@ object mod {
   	}
   	```
   	*/
-  inline def apply(fromDirectory: String, moduleId: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(fromDirectory: String, moduleId: String): Any = (^.asInstanceOf[js.Dynamic].apply(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("import-from", JSImport.Namespace)
   @js.native
@@ -40,5 +40,5 @@ object mod {
   	// Do something with `bar`, may be `undefined` when `./bar` can't be found
   	```
   	*/
-  inline def silent(fromDirectory: String, moduleId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("silent")(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def silent(fromDirectory: String, moduleId: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("silent")(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

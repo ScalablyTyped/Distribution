@@ -134,9 +134,13 @@ trait EditorMessages extends StObject {
   
   var insertImage: js.UndefOr[String] = js.undefined
   
+  var insertLowerRomanList: js.UndefOr[String] = js.undefined
+  
   var insertOrderedList: js.UndefOr[String] = js.undefined
   
   var insertUnorderedList: js.UndefOr[String] = js.undefined
+  
+  var insertUpperRomanList: js.UndefOr[String] = js.undefined
   
   var italic: js.UndefOr[String] = js.undefined
   
@@ -162,6 +166,8 @@ trait EditorMessages extends StObject {
   
   var print: js.UndefOr[String] = js.undefined
   
+  var redo: js.UndefOr[String] = js.undefined
+  
   var rows: js.UndefOr[String] = js.undefined
   
   var selectAllCells: js.UndefOr[String] = js.undefined
@@ -176,11 +182,19 @@ trait EditorMessages extends StObject {
   
   var superscript: js.UndefOr[String] = js.undefined
   
+  var tableAlignCenter: js.UndefOr[String] = js.undefined
+  
+  var tableAlignLeft: js.UndefOr[String] = js.undefined
+  
+  var tableAlignRight: js.UndefOr[String] = js.undefined
+  
   var tableTab: js.UndefOr[String] = js.undefined
   
   var tableWizard: js.UndefOr[String] = js.undefined
   
   var underline: js.UndefOr[String] = js.undefined
+  
+  var undo: js.UndefOr[String] = js.undefined
   
   var units: js.UndefOr[String] = js.undefined
   
@@ -457,6 +471,10 @@ object EditorMessages {
     
     inline def setInsertImageUndefined: Self = StObject.set(x, "insertImage", js.undefined)
     
+    inline def setInsertLowerRomanList(value: String): Self = StObject.set(x, "insertLowerRomanList", value.asInstanceOf[js.Any])
+    
+    inline def setInsertLowerRomanListUndefined: Self = StObject.set(x, "insertLowerRomanList", js.undefined)
+    
     inline def setInsertOrderedList(value: String): Self = StObject.set(x, "insertOrderedList", value.asInstanceOf[js.Any])
     
     inline def setInsertOrderedListUndefined: Self = StObject.set(x, "insertOrderedList", js.undefined)
@@ -464,6 +482,10 @@ object EditorMessages {
     inline def setInsertUnorderedList(value: String): Self = StObject.set(x, "insertUnorderedList", value.asInstanceOf[js.Any])
     
     inline def setInsertUnorderedListUndefined: Self = StObject.set(x, "insertUnorderedList", js.undefined)
+    
+    inline def setInsertUpperRomanList(value: String): Self = StObject.set(x, "insertUpperRomanList", value.asInstanceOf[js.Any])
+    
+    inline def setInsertUpperRomanListUndefined: Self = StObject.set(x, "insertUpperRomanList", js.undefined)
     
     inline def setItalic(value: String): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
@@ -513,6 +535,10 @@ object EditorMessages {
     
     inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
+    inline def setRedo(value: String): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+    
+    inline def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
+    
     inline def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
@@ -541,6 +567,18 @@ object EditorMessages {
     
     inline def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
     
+    inline def setTableAlignCenter(value: String): Self = StObject.set(x, "tableAlignCenter", value.asInstanceOf[js.Any])
+    
+    inline def setTableAlignCenterUndefined: Self = StObject.set(x, "tableAlignCenter", js.undefined)
+    
+    inline def setTableAlignLeft(value: String): Self = StObject.set(x, "tableAlignLeft", value.asInstanceOf[js.Any])
+    
+    inline def setTableAlignLeftUndefined: Self = StObject.set(x, "tableAlignLeft", js.undefined)
+    
+    inline def setTableAlignRight(value: String): Self = StObject.set(x, "tableAlignRight", value.asInstanceOf[js.Any])
+    
+    inline def setTableAlignRightUndefined: Self = StObject.set(x, "tableAlignRight", js.undefined)
+    
     inline def setTableTab(value: String): Self = StObject.set(x, "tableTab", value.asInstanceOf[js.Any])
     
     inline def setTableTabUndefined: Self = StObject.set(x, "tableTab", js.undefined)
@@ -552,6 +590,10 @@ object EditorMessages {
     inline def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    
+    inline def setUndo(value: String): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    
+    inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     
     inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     

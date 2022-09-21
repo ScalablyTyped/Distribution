@@ -14,7 +14,7 @@ trait Back extends StObject {
     */
   def back(): Unit = js.native
   
-  def bottomListDialog(itemList: js.Any, selected: js.Any, onConfirmed: js.Any): Unit = js.native
+  def bottomListDialog(itemList: Any, selected: Any, onConfirmed: Any): Unit = js.native
   
   def disablePopGesture(): Unit = js.native
   
@@ -34,12 +34,12 @@ trait Back extends StObject {
     */
   def hideLoading(): Unit = js.native
   
-  def is24Hour(): Boolean = js.native
+  def is24Hour(): js.Promise[Boolean] = js.native
   
   /**
     * @desc 根据 uiId 跳转二级页面
     */
-  def jumpSubPage(uiIdParams: UiId, pageParams: js.Any): Unit = js.native
+  def jumpSubPage(uiIdParams: UiId, pageParams: Any): Unit = js.native
   
   /**
     * @desc 跳转到 app 内置路由页面或网页
@@ -49,7 +49,7 @@ trait Back extends StObject {
   
   var mobileInfo: MobileInfo = js.native
   
-  def shareMsg(map: js.Any): Unit = js.native
+  def shareMsg(map: Any): Unit = js.native
   
   def showEditDialog(
     title: String,
@@ -85,6 +85,11 @@ trait Back extends StObject {
   def simpleConfirmDialog(title: String, subTitle: String, confirm: js.Function0[Unit], cancel: js.Function0[Unit]): Unit = js.native
   
   def simpleTipDialog(title: String, callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * 跳转面板原生事件
+    */
+  var uiIdNavEventEmitter: CreateEmitter = js.native
   
   def verSupported(): Boolean = js.native
 }

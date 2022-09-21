@@ -28,7 +28,7 @@ object AudienceSegmentGroup {
     
     inline def setAudienceSegmentsUndefined: Self = StObject.set(x, "audienceSegments", js.undefined)
     
-    inline def setAudienceSegmentsVarargs(value: AudienceSegment*): Self = StObject.set(x, "audienceSegments", js.Array(value :_*))
+    inline def setAudienceSegmentsVarargs(value: AudienceSegment*): Self = StObject.set(x, "audienceSegments", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

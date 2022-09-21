@@ -1,8 +1,9 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.FieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegion
+import typings.maximMazurokGapiClientCompute.anon.AccesstokenAltCallbackFieldsKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.Filter
+import typings.maximMazurokGapiClientCompute.anon.Oauthtoken
 import typings.maximMazurokGapiClientCompute.anon.RegionSslCertificate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,8 +21,8 @@ trait RegionSslCertificatesResource extends StObject {
   def get(request: RegionSslCertificate): Request[SslCertificate] = js.native
   
   /** Creates a SslCertificate resource in the specified project and region using the data included in the request */
-  def insert(request: FieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegion): Request[Operation] = js.native
-  def insert(request: typings.maximMazurokGapiClientCompute.anon.Project, body: SslCertificate): Request[Operation] = js.native
+  def insert(request: AccesstokenAltCallbackFieldsKeyOauthtoken): Request[Operation] = js.native
+  def insert(request: Oauthtoken, body: SslCertificate): Request[Operation] = js.native
   
   /** Retrieves the list of SslCertificate resources available to the specified project in the specified region. */
   def list(): Request[SslCertificateList] = js.native

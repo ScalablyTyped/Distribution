@@ -1,7 +1,10 @@
 package typings.rsocketCore
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.rsocketCore.anon.ErrorsourceErrorSource
+import typings.rsocketCore.authMetadataMod.AuthMetadata
+import typings.rsocketCore.authMetadataMod.UsernameAndPassword
+import typings.rsocketCore.compositeMetadataMod.Entry
 import typings.rsocketCore.rsocketbufferutilsMod.Encoding
 import typings.rsocketCore.rsocketclientMod.ClientConfig
 import typings.rsocketCore.rsocketclientMod.default
@@ -15,6 +18,7 @@ import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
 import typings.rsocketTypes.reactiveSocketTypesMod.Encodable
 import typings.rsocketTypes.reactiveSocketTypesMod.ErrorFrame
 import typings.rsocketTypes.reactiveSocketTypesMod.Frame
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,6 +121,10 @@ object mod {
   @js.native
   val AUDIO_VORBIS: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   
+  @JSImport("rsocket-core", "BEARER")
+  @js.native
+  val BEARER: typings.rsocketCore.wellKnownAuthTypeMod.WellKnownAuthType = js.native
+  
   @JSImport("rsocket-core", "BufferEncoder")
   @js.native
   val BufferEncoder: Encoder[Buffer] = js.native
@@ -131,7 +139,7 @@ object mod {
   
   @JSImport("rsocket-core", "CompositeMetadata")
   @js.native
-  class CompositeMetadata protected ()
+  open class CompositeMetadata protected ()
     extends typings.rsocketCore.compositeMetadataMod.CompositeMetadata {
     def this(buffer: Buffer) = this()
   }
@@ -205,7 +213,7 @@ object mod {
   
   @JSImport("rsocket-core", "ExplicitMimeTimeEntry")
   @js.native
-  class ExplicitMimeTimeEntry protected ()
+  open class ExplicitMimeTimeEntry protected ()
     extends typings.rsocketCore.compositeMetadataMod.ExplicitMimeTimeEntry {
     def this(content: Buffer, `type`: String) = this()
   }
@@ -400,18 +408,18 @@ object mod {
     
     @JSImport("rsocket-core", "IdentitySerializers.data")
     @js.native
-    def data: Serializer[js.Any] = js.native
-    inline def data_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+    def data: Serializer[Any] = js.native
+    inline def data_=(x: Serializer[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core", "IdentitySerializers.metadata")
     @js.native
-    def metadata: Serializer[js.Any] = js.native
-    inline def metadata_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    def metadata: Serializer[Any] = js.native
+    inline def metadata_=(x: Serializer[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rsocket-core", "JsonSerializer")
   @js.native
-  val JsonSerializer: Serializer[js.Any] = js.native
+  val JsonSerializer: Serializer[Any] = js.native
   
   object JsonSerializers {
     
@@ -421,18 +429,18 @@ object mod {
     
     @JSImport("rsocket-core", "JsonSerializers.data")
     @js.native
-    def data: Serializer[js.Any] = js.native
-    inline def data_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+    def data: Serializer[Any] = js.native
+    inline def data_=(x: Serializer[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core", "JsonSerializers.metadata")
     @js.native
-    def metadata: Serializer[js.Any] = js.native
-    inline def metadata_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    def metadata: Serializer[Any] = js.native
+    inline def metadata_=(x: Serializer[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rsocket-core", "Lease")
   @js.native
-  class Lease protected ()
+  open class Lease protected ()
     extends typings.rsocketCore.rsocketleaseMod.Lease {
     def this(timeToLiveMillis: Double, allowedRequests: Double) = this()
     def this(timeToLiveMillis: Double, allowedRequests: Double, metadata: Encodable) = this()
@@ -440,7 +448,7 @@ object mod {
   
   @JSImport("rsocket-core", "Leases")
   @js.native
-  class Leases[T /* <: LeaseStats */] ()
+  open class Leases[T /* <: LeaseStats */] ()
     extends typings.rsocketCore.rsocketleaseMod.Leases[T]
   
   @JSImport("rsocket-core", "MAX_CODE")
@@ -471,9 +479,21 @@ object mod {
   @js.native
   val MAX_VERSION: /* 65535 */ Double = js.native
   
+  @JSImport("rsocket-core", "MESSAGE_RSOCKET_ACCEPT_MIMETYPES")
+  @js.native
+  val MESSAGE_RSOCKET_ACCEPT_MIMETYPES: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
+  
+  @JSImport("rsocket-core", "MESSAGE_RSOCKET_AUTHENTICATION")
+  @js.native
+  val MESSAGE_RSOCKET_AUTHENTICATION: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
+  
   @JSImport("rsocket-core", "MESSAGE_RSOCKET_COMPOSITE_METADATA")
   @js.native
   val MESSAGE_RSOCKET_COMPOSITE_METADATA: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
+  
+  @JSImport("rsocket-core", "MESSAGE_RSOCKET_MIMETYPE")
+  @js.native
+  val MESSAGE_RSOCKET_MIMETYPE: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   
   @JSImport("rsocket-core", "MESSAGE_RSOCKET_ROUTING")
   @js.native
@@ -489,31 +509,35 @@ object mod {
   
   @JSImport("rsocket-core", "RSocketClient")
   @js.native
-  class RSocketClient[D, M] protected () extends default[D, M] {
+  open class RSocketClient[D, M] protected () extends default[D, M] {
     def this(config: ClientConfig[D, M]) = this()
   }
   
   @JSImport("rsocket-core", "RSocketResumableTransport")
   @js.native
-  class RSocketResumableTransport protected ()
+  open class RSocketResumableTransport protected ()
     extends typings.rsocketCore.rsocketresumabletransportMod.default {
     def this(source: js.Function0[DuplexConnection], options: Options) = this()
-    def this(source: js.Function0[DuplexConnection], options: Options, encoders: Encoders[js.Any]) = this()
+    def this(source: js.Function0[DuplexConnection], options: Options, encoders: Encoders[Any]) = this()
   }
   
   @JSImport("rsocket-core", "RSocketServer")
   @js.native
-  class RSocketServer[D, M] protected ()
+  open class RSocketServer[D, M] protected ()
     extends typings.rsocketCore.rsocketserverMod.default[D, M] {
     def this(config: ServerConfig[D, M]) = this()
   }
   
   @JSImport("rsocket-core", "ReservedMimeTypeEntry")
   @js.native
-  class ReservedMimeTypeEntry protected ()
+  open class ReservedMimeTypeEntry protected ()
     extends typings.rsocketCore.compositeMetadataMod.ReservedMimeTypeEntry {
     def this(content: Buffer, `type`: Double) = this()
   }
+  
+  @JSImport("rsocket-core", "SIMPLE")
+  @js.native
+  val SIMPLE: typings.rsocketCore.wellKnownAuthTypeMod.WellKnownAuthType = js.native
   
   @JSImport("rsocket-core", "TEXT_CSS")
   @js.native
@@ -535,9 +559,17 @@ object mod {
   @js.native
   val TEXT_XML: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   
+  @JSImport("rsocket-core", "UNKNOWN_RESERVED_AUTH_TYPE")
+  @js.native
+  val UNKNOWN_RESERVED_AUTH_TYPE: typings.rsocketCore.wellKnownAuthTypeMod.WellKnownAuthType = js.native
+  
   @JSImport("rsocket-core", "UNKNOWN_RESERVED_MIME_TYPE")
   @js.native
   val UNKNOWN_RESERVED_MIME_TYPE: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
+  
+  @JSImport("rsocket-core", "UNPARSEABLE_AUTH_TYPE")
+  @js.native
+  val UNPARSEABLE_AUTH_TYPE: typings.rsocketCore.wellKnownAuthTypeMod.WellKnownAuthType = js.native
   
   @JSImport("rsocket-core", "UNPARSEABLE_MIME_TYPE")
   @js.native
@@ -563,9 +595,50 @@ object mod {
   @js.native
   val VIDEO_VP8: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   
+  @JSImport("rsocket-core", "WellKnownAuthType")
+  @js.native
+  open class WellKnownAuthType protected ()
+    extends typings.rsocketCore.wellKnownAuthTypeMod.default {
+    def this(str: String, identifier: Double) = this()
+  }
+  /* static members */
+  object WellKnownAuthType {
+    
+    @JSImport("rsocket-core", "WellKnownAuthType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Find the {@link WellKnownAuthType} for the given identifier (as an {@link number}). Valid
+      * identifiers are defined to be integers between 0 and 127, inclusive. Identifiers outside of
+      * this range will produce the {@link #UNPARSEABLE_AUTH_TYPE}. Additionally, some identifiers in
+      * that range are still only reserved and don't have a type associated yet: this method returns
+      * the {@link #UNKNOWN_RESERVED_AUTH_TYPE} when passing such an identifier, which lets call sites
+      * potentially detect this and keep the original representation when transmitting the associated
+      * metadata buffer.
+      *
+      * @param id the looked up identifier
+      * @return the {@link WellKnownAuthType}, or {@link #UNKNOWN_RESERVED_AUTH_TYPE} if the id is out
+      *     of the specification's range, or {@link #UNKNOWN_RESERVED_AUTH_TYPE} if the id is one that
+      *     is merely reserved but unknown to this implementation.
+      */
+    inline def fromIdentifier(id: Double): typings.rsocketCore.wellKnownAuthTypeMod.WellKnownAuthType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdentifier")(id.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketCore.wellKnownAuthTypeMod.WellKnownAuthType]
+    
+    /**
+      * Find the {@link WellKnownAuthType} for the given {@link String} representation. If the
+      * representation is {@code null} or doesn't match a {@link WellKnownAuthType}, the {@link
+      * #UNPARSEABLE_AUTH_TYPE} is returned.
+      *
+      * @param authTypeString the looked up mime type
+      * @return the matching {@link WellKnownAuthType}, or {@link #UNPARSEABLE_AUTH_TYPE} if none
+      *     matches
+      */
+    inline def fromString(authTypeString: String): typings.rsocketCore.wellKnownAuthTypeMod.WellKnownAuthType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(authTypeString.asInstanceOf[js.Any]).asInstanceOf[typings.rsocketCore.wellKnownAuthTypeMod.WellKnownAuthType]
+  }
+  
   @JSImport("rsocket-core", "WellKnownMimeType")
   @js.native
-  class WellKnownMimeType protected ()
+  open class WellKnownMimeType protected ()
     extends typings.rsocketCore.wellKnownMimeTypeMod.default {
     def this(str: String, identifier: Double) = this()
   }
@@ -605,25 +678,33 @@ object mod {
   
   @JSImport("rsocket-core", "WellKnownMimeTypeEntry")
   @js.native
-  class WellKnownMimeTypeEntry protected ()
+  open class WellKnownMimeTypeEntry protected ()
     extends typings.rsocketCore.compositeMetadataMod.WellKnownMimeTypeEntry {
     def this(content: Buffer, `type`: typings.rsocketCore.wellKnownMimeTypeMod.default) = this()
   }
   
-  inline def byteLength(data: js.Any, encoding: Encoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def byteLength(data: Any, encoding: Encoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def createBuffer(args: js.Any*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuffer")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def createBuffer(args: Any*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuffer")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Buffer]
   
   inline def createErrorFromFrame(frame: ErrorFrame): ErrorsourceErrorSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[ErrorsourceErrorSource]
   
+  inline def decodeAuthMetadata(metadata: Buffer): AuthMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAuthMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[AuthMetadata]
+  
+  inline def decodeCompositeMetadata(buffer: Buffer): js.Iterator[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeCompositeMetadata")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[Entry]]
+  
+  inline def decodeRoutes(routeMetadataBuffer: Buffer): js.Iterator[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRoutes")(routeMetadataBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[String]]
+  
+  inline def decodeSimpleAuthPayload(authPayload: Buffer): UsernameAndPassword = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeSimpleAuthPayload")(authPayload.asInstanceOf[js.Any]).asInstanceOf[UsernameAndPassword]
+  
   inline def deserializeFrame(buffer: Buffer): Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrame")(buffer.asInstanceOf[js.Any]).asInstanceOf[Frame]
-  inline def deserializeFrame(buffer: Buffer, encoders: Encoders[js.Any]): Frame = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrame")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Frame]
+  inline def deserializeFrame(buffer: Buffer, encoders: Encoders[Any]): Frame = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrame")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Frame]
   
   inline def deserializeFrameWithLength(buffer: Buffer): Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrameWithLength")(buffer.asInstanceOf[js.Any]).asInstanceOf[Frame]
-  inline def deserializeFrameWithLength(buffer: Buffer, encoders: Encoders[js.Any]): Frame = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrameWithLength")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Frame]
+  inline def deserializeFrameWithLength(buffer: Buffer, encoders: Encoders[Any]): Frame = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrameWithLength")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Frame]
   
   inline def deserializeFrames(buffer: Buffer): js.Tuple2[js.Array[Frame], Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrames")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Frame], Buffer]]
-  inline def deserializeFrames(buffer: Buffer, encoders: Encoders[js.Any]): js.Tuple2[js.Array[Frame], Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrames")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Frame], Buffer]]
+  inline def deserializeFrames(buffer: Buffer, encoders: Encoders[Any]): js.Tuple2[js.Array[Frame], Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrames")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Frame], Buffer]]
   
   inline def encodeAndAddCustomMetadata(compositeMetaData: Buffer, customMimeType: String, metadata: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAndAddCustomMetadata")(compositeMetaData.asInstanceOf[js.Any], customMimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
@@ -633,6 +714,37 @@ object mod {
     knownMimeType: typings.rsocketCore.wellKnownMimeTypeMod.default,
     metadata: Buffer
   ): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAndAddWellKnownMetadata")(compositeMetaData.asInstanceOf[js.Any], knownMimeType.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def encodeBearerAuthMetadata(token: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeBearerAuthMetadata")(token.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encodeBearerAuthMetadata(token: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeBearerAuthMetadata")(token.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  inline def encodeCompositeMetadata(
+    metadata: js.Array[
+      js.Tuple2[
+        String | typings.rsocketCore.wellKnownMimeTypeMod.default | Double, 
+        Buffer | js.Function0[Buffer]
+      ]
+    ]
+  ): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeCompositeMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encodeCompositeMetadata(
+    metadata: Map[
+      String | typings.rsocketCore.wellKnownMimeTypeMod.default | Double, 
+      Buffer | js.Function0[Buffer]
+    ]
+  ): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeCompositeMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  inline def encodeCustomAuthMetadata(customAuthType: String, authPayloadBuffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeCustomAuthMetadata")(customAuthType.asInstanceOf[js.Any], authPayloadBuffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def encodeRoute(route: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeRoute")(route.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  inline def encodeRoutes(routes: String*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeRoutes")(routes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Buffer]
+  
+  inline def encodeSimpleAuthMetadata(username: String, password: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeSimpleAuthMetadata")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def encodeSimpleAuthMetadata(username: String, password: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeSimpleAuthMetadata")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def encodeSimpleAuthMetadata(username: Buffer, password: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeSimpleAuthMetadata")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def encodeSimpleAuthMetadata(username: Buffer, password: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeSimpleAuthMetadata")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def encodeWellKnownAuthMetadata(authType: typings.rsocketCore.wellKnownAuthTypeMod.default, authPayloadBuffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWellKnownAuthMetadata")(authType.asInstanceOf[js.Any], authPayloadBuffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   inline def getErrorCodeExplanation(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorCodeExplanation")(code.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -655,12 +767,12 @@ object mod {
   inline def readUInt24BE(buffer: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt24BE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def serializeFrame(frame: Frame): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  inline def serializeFrame(frame: Frame, encoders: Encoders[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrame")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def serializeFrame(frame: Frame, encoders: Encoders[Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrame")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   inline def serializeFrameWithLength(frame: Frame): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrameWithLength")(frame.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  inline def serializeFrameWithLength(frame: Frame, encoders: Encoders[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrameWithLength")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def serializeFrameWithLength(frame: Frame, encoders: Encoders[Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrameWithLength")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  inline def toBuffer(data: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def toBuffer(data: Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   inline def writeUInt24BE(buffer: Buffer, value: Double, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUInt24BE")(buffer.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

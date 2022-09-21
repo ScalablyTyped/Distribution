@@ -4,6 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var mini: js.UndefOr[Boolean] = js.undefined
   
   var onKeyboardFocus: js.UndefOr[
-    js.Function2[/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean, Unit]
+    js.Function2[/* e */ FocusEvent[js.Object, Element], /* isKeyboardFocused */ Boolean, Unit]
   ] = js.undefined
   
   var secondary: js.UndefOr[Boolean] = js.undefined
@@ -129,7 +130,7 @@ object FloatingActionButtonProps {
     
     inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
-    inline def setOnKeyboardFocus(value: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit): Self = StObject.set(x, "onKeyboardFocus", js.Any.fromFunction2(value))
+    inline def setOnKeyboardFocus(value: (/* e */ FocusEvent[js.Object, Element], /* isKeyboardFocused */ Boolean) => Unit): Self = StObject.set(x, "onKeyboardFocus", js.Any.fromFunction2(value))
     
     inline def setOnKeyboardFocusUndefined: Self = StObject.set(x, "onKeyboardFocus", js.undefined)
     

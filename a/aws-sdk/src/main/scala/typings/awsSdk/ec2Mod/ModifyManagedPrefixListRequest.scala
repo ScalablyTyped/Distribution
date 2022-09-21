@@ -22,6 +22,11 @@ trait ModifyManagedPrefixListRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The maximum number of entries for the prefix list. You cannot modify the entries of a prefix list and modify the size of a prefix list at the same time. If any of the resources that reference the prefix list cannot support the new maximum size, the modify operation fails. Check the state message for the IDs of the first ten resources that do not support the new maximum size.
+    */
+  var MaxEntries: js.UndefOr[Integer] = js.undefined
+  
+  /**
     * The ID of the prefix list.
     */
   var PrefixListId: PrefixListResourceId
@@ -49,7 +54,7 @@ object ModifyManagedPrefixListRequest {
     
     inline def setAddEntriesUndefined: Self = StObject.set(x, "AddEntries", js.undefined)
     
-    inline def setAddEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "AddEntries", js.Array(value :_*))
+    inline def setAddEntriesVarargs(value: AddPrefixListEntry*): Self = StObject.set(x, "AddEntries", js.Array(value*))
     
     inline def setCurrentVersion(value: Long): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
@@ -58,6 +63,10 @@ object ModifyManagedPrefixListRequest {
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    
+    inline def setMaxEntries(value: Integer): Self = StObject.set(x, "MaxEntries", value.asInstanceOf[js.Any])
+    
+    inline def setMaxEntriesUndefined: Self = StObject.set(x, "MaxEntries", js.undefined)
     
     inline def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
@@ -69,6 +78,6 @@ object ModifyManagedPrefixListRequest {
     
     inline def setRemoveEntriesUndefined: Self = StObject.set(x, "RemoveEntries", js.undefined)
     
-    inline def setRemoveEntriesVarargs(value: RemovePrefixListEntry*): Self = StObject.set(x, "RemoveEntries", js.Array(value :_*))
+    inline def setRemoveEntriesVarargs(value: RemovePrefixListEntry*): Self = StObject.set(x, "RemoveEntries", js.Array(value*))
   }
 }

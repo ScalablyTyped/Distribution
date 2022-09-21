@@ -1,7 +1,7 @@
 
 # Scala.js typings for devextreme
 
-Typings are for version 20.2.3
+Typings are for version 22.1.5
 
 ## Library description:
 HTML5 JavaScript Component Suite for Responsive Web Development
@@ -10,10 +10,10 @@ HTML5 JavaScript Component Suite for Responsive Web Development
 | ------------------ | :-------------: |
 | Full name          | devextreme |
 | Keywords           | html5, controls, widgets, components, jquery, knockout, angular, web, ui, datagrid, pivotgrid, scheduler, treelist, chart |
-| # releases         | 231 |
-| # dependents       | 78 |
-| # downloads        | 8037593 |
-| # stars            | 2 |
+| # releases         | 203 |
+| # dependents       | 0.0 |
+| # downloads        | 1412041.0 |
+| # stars            | 1617.0 |
 
 ## Links
 - [Homepage](https://js.devexpress.com/)

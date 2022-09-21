@@ -19,6 +19,6 @@ object BuildWorkspace {
     
     inline def setMappings(value: js.Array[MappingDetails]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    inline def setMappingsVarargs(value: MappingDetails*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: MappingDetails*): Self = StObject.set(x, "mappings", js.Array(value*))
   }
 }

@@ -2,6 +2,7 @@ package typings.reactMotion
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
+import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,19 +16,19 @@ object mod {
   
   @JSImport("react-motion", "Motion")
   @js.native
-  class Motion protected ()
-    extends Component[MotionProps, js.Object, js.Any] {
+  open class Motion protected ()
+    extends Component[MotionProps, js.Object, Any] {
     def this(props: MotionProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MotionProps, context: js.Any) = this()
+    def this(props: MotionProps, context: Any) = this()
   }
   
   @JSImport("react-motion", "Presets")
   @js.native
-  class Presets_ () extends StObject {
+  open class Presets_ () extends StObject {
     
     // the default, if nothing provided
     var gentle: OpaqueConfig = js.native
@@ -41,26 +42,26 @@ object mod {
   
   @JSImport("react-motion", "StaggeredMotion")
   @js.native
-  class StaggeredMotion protected ()
-    extends Component[StaggeredMotionProps, js.Object, js.Any] {
+  open class StaggeredMotion protected ()
+    extends Component[StaggeredMotionProps, js.Object, Any] {
     def this(props: StaggeredMotionProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: StaggeredMotionProps, context: js.Any) = this()
+    def this(props: StaggeredMotionProps, context: Any) = this()
   }
   
   @JSImport("react-motion", "TransitionMotion")
   @js.native
-  class TransitionMotion protected ()
-    extends Component[TransitionProps, js.Object, js.Any] {
+  open class TransitionMotion protected ()
+    extends Component[TransitionProps, js.Object, Any] {
     def this(props: TransitionProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TransitionProps, context: js.Any) = this()
+    def this(props: TransitionProps, context: Any) = this()
   }
   
   @JSImport("react-motion", "presets")
@@ -209,6 +210,8 @@ object mod {
   @js.native
   trait StaggeredMotionProps extends StObject {
     
+    def children(interpolatedStyles: Any): ReactElement = js.native
+    
     /**
       * Default styles
       */
@@ -229,7 +232,7 @@ object mod {
     */
   trait TransitionPlainStyle extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var key: String
     
@@ -245,7 +248,7 @@ object mod {
     
     extension [Self <: TransitionPlainStyle](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -308,7 +311,7 @@ object mod {
       
       inline def setDefaultStylesUndefined: Self = StObject.set(x, "defaultStyles", js.undefined)
       
-      inline def setDefaultStylesVarargs(value: TransitionPlainStyle*): Self = StObject.set(x, "defaultStyles", js.Array(value :_*))
+      inline def setDefaultStylesVarargs(value: TransitionPlainStyle*): Self = StObject.set(x, "defaultStyles", js.Array(value*))
       
       inline def setDidLeave(value: /* styleThatLeft */ TransitionStyle => Unit): Self = StObject.set(x, "didLeave", js.Any.fromFunction1(value))
       
@@ -320,7 +323,7 @@ object mod {
         value: /* previousInterpolatedStyles */ js.UndefOr[js.Array[TransitionPlainStyle]] => js.Array[TransitionStyle]
       ): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      inline def setStylesVarargs(value: TransitionStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: TransitionStyle*): Self = StObject.set(x, "styles", js.Array(value*))
       
       inline def setWillEnter(value: /* styleThatEntered */ TransitionStyle => PlainStyle): Self = StObject.set(x, "willEnter", js.Any.fromFunction1(value))
       
@@ -338,7 +341,7 @@ object mod {
     /**
       * Anything you'd like to carry along. Will be preserved on re-renders until key off
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * The ID that TransitionMotion uses to track which configuration is which across renders, even when things are reordered.
@@ -360,7 +363,7 @@ object mod {
     
     extension [Self <: TransitionStyle](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

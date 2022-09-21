@@ -3,12 +3,14 @@ package typings.babylonjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.dataBufferMod.DataBuffer
 import typings.babylonjs.engineMod.Engine
+import typings.babylonjs.externalTextureMod.ExternalTexture
 import typings.babylonjs.iEffectFallbacksMod.IEffectFallbacks
 import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.ipipelinecontextMod.IPipelineContext
 import typings.babylonjs.mathLikeMod.IColor3Like
 import typings.babylonjs.mathLikeMod.IColor4Like
 import typings.babylonjs.mathLikeMod.IMatrixLike
+import typings.babylonjs.mathLikeMod.IQuaternionLike
 import typings.babylonjs.mathLikeMod.IVector2Like
 import typings.babylonjs.mathLikeMod.IVector3Like
 import typings.babylonjs.mathLikeMod.IVector4Like
@@ -16,11 +18,14 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.IDisposable
+import typings.babylonjs.shaderLanguageMod.ShaderLanguage
+import typings.babylonjs.shaderProcessingOptionsMod.ShaderCustomProcessingFunction
+import typings.babylonjs.storageBufferMod.StorageBuffer
+import typings.babylonjs.textureSamplerMod.TextureSampler
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.thinTextureMod.ThinTexture
+import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.Nullable
-import typings.std.Float32Array
-import typings.std.Int32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +34,7 @@ object effectMod {
   
   @JSImport("babylonjs/Materials/effect", "Effect")
   @js.native
-  class Effect protected ()
+  open class Effect protected ()
     extends StObject
        with IDisposable {
     /**
@@ -45,9 +50,11 @@ object effectMod {
       * @param onCompiled Callback that will be called when the shader is compiled.
       * @param onError Callback that will be called if an error occurs during shader compilation.
       * @param indexParameters Parameters to be used with Babylons include syntax to iterate over an array (eg. {lights: 10})
+      * @param key Effect Key identifying uniquely compiled shader variants
+      * @param shaderLanguage the language the shader is written in (default: GLSL)
       */
     def this(
-      baseName: js.Any,
+      baseName: Any,
       attributesNamesOrOptions: js.Array[String] | IEffectCreationOptions,
       uniformsNamesOrEngine: js.Array[String] | ThinEngine,
       samplers: js.UndefOr[Nullable[js.Array[String]]],
@@ -56,16 +63,18 @@ object effectMod {
       fallbacks: js.UndefOr[Nullable[IEffectFallbacks]],
       onCompiled: js.UndefOr[Nullable[js.Function1[/* effect */ Effect, Unit]]],
       onError: js.UndefOr[Nullable[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]],
-      indexParameters: js.UndefOr[js.Any]
+      indexParameters: js.UndefOr[Any],
+      key: js.UndefOr[String],
+      shaderLanguage: js.UndefOr[ShaderLanguage]
     ) = this()
     
-    /* private */ var _allFallbacksProcessed: js.Any = js.native
+    /* private */ var _allFallbacksProcessed: Any = js.native
     
-    /* private */ var _attributeLocationByName: js.Any = js.native
+    /* private */ var _attributeLocationByName: Any = js.native
     
-    /* private */ var _attributes: js.Any = js.native
+    /* private */ var _attributes: Any = js.native
     
-    /* private */ var _attributesNames: js.Any = js.native
+    /* private */ var _attributesNames: Any = js.native
     
     /**
       * Binds a texture to the engine to be used as output of the shader.
@@ -78,37 +87,29 @@ object effectMod {
     /** @hidden */
     var _bonesComputationForcedToCPU: Boolean = js.native
     
-    /** @hidden */
-    def _cacheFloat2(uniformName: String, x: Double, y: Double): Boolean = js.native
+    /* private */ var _checkIsReady: Any = js.native
+    
+    /* private */ var _compilationError: Any = js.native
     
     /** @hidden */
-    def _cacheFloat3(uniformName: String, x: Double, y: Double, z: Double): Boolean = js.native
+    var _engine: Engine = js.native
+    
+    /* private */ var _fallbacks: Any = js.native
     
     /** @hidden */
-    def _cacheFloat4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Boolean = js.native
+    var _fragmentSourceCode: String = js.native
     
-    /** @hidden */
-    def _cacheMatrix(uniformName: String, matrix: IMatrixLike): Boolean = js.native
+    /* private */ var _fragmentSourceCodeOverride: Any = js.native
     
-    /* private */ var _checkIsReady: js.Any = js.native
+    /* private */ var _getShaderCodeAndErrorLine: Any = js.native
     
-    /* private */ var _compilationError: js.Any = js.native
+    /* private */ var _indexParameters: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _fallbacks: js.Any = js.native
+    /* private */ var _isReady: Any = js.native
     
-    /* private */ var _fragmentSourceCode: js.Any = js.native
-    
-    /* private */ var _fragmentSourceCodeOverride: js.Any = js.native
-    
-    /* private */ var _getShaderCodeAndErrorLine: js.Any = js.native
-    
-    /* private */ var _indexParameters: js.Any = js.native
-    
-    /* private */ var _isReady: js.Any = js.native
-    
-    /* private */ var _isReadyInternal: js.Any = js.native
+    /* private */ var _isReadyInternal: Any = js.native
     
     /**
       * Key for the effect.
@@ -116,7 +117,7 @@ object effectMod {
       */
     var _key: String = js.native
     
-    /* private */ var _loadShader: js.Any = js.native
+    /* private */ var _loadShader: Any = js.native
     
     /** @hidden */
     var _multiTarget: Boolean = js.native
@@ -136,11 +137,15 @@ object effectMod {
       */
     def _prepareEffect(): Unit = js.native
     
-    /* private */ var _processCompilationErrors: js.Any = js.native
+    /* private */ var _processCompilationErrors: Any = js.native
     
-    /* private */ var _rawFragmentSourceCode: js.Any = js.native
+    /* private */ var _processingContext: Any = js.native
     
-    /* private */ var _rawVertexSourceCode: js.Any = js.native
+    /** @hidden */
+    /* private */ var _rawFragmentSourceCode: Any = js.native
+    
+    /** @hidden */
+    /* private */ var _rawVertexSourceCode: Any = js.native
     
     /**
       * Recompiles the webGL program
@@ -157,33 +162,42 @@ object effectMod {
       onError: js.Function1[/* message */ String, Unit]
     ): Unit = js.native
     
-    /* private */ var _samplerList: js.Any = js.native
+    /** @hidden */
+    var _samplerList: js.Array[String] = js.native
     
-    /* private */ var _samplers: js.Any = js.native
+    /* private */ var _samplers: Any = js.native
     
-    /* private */ var _transformFeedbackVaryings: js.Any = js.native
+    /* private */ var _shaderLanguage: Any = js.native
     
-    /* private */ var _uniformBuffersNames: js.Any = js.native
+    /* private */ var _transformFeedbackVaryings: Any = js.native
     
-    /* private */ var _uniformBuffersNamesList: js.Any = js.native
+    /** @hidden */
+    var _uniformBuffersNames: StringDictionary[Double] = js.native
     
-    /* private */ var _uniforms: js.Any = js.native
+    /* private */ var _uniformBuffersNamesList: Any = js.native
     
-    /* private */ var _uniformsNames: js.Any = js.native
+    /* private */ var _uniforms: Any = js.native
     
-    /* private */ var _useFinalCode: js.Any = js.native
+    /* private */ var _uniformsNames: Any = js.native
     
-    /* private */ var _valueCache: js.Any = js.native
+    /* private */ var _useFinalCode: Any = js.native
     
-    /* private */ var _vertexSourceCode: js.Any = js.native
+    /** @hidden */
+    var _vertexSourceCode: String = js.native
     
-    /* private */ var _vertexSourceCodeOverride: js.Any = js.native
+    /* private */ var _vertexSourceCodeOverride: Any = js.native
     
     /**
       * @hidden
       * Specifies if the effect was previously ready
       */
     var _wasPreviouslyReady: Boolean = js.native
+    
+    /**
+      * @hidden
+      * Specifies if the effect was previously using instances
+      */
+    var _wasPreviouslyUsingInstances: Nullable[Boolean] = js.native
     
     /**
       * Gets a boolean indicating that all fallbacks were used during compilation
@@ -217,7 +231,7 @@ object effectMod {
     override def dispose(): Unit = js.native
     
     /**
-      * Adds a callback to the onCompiled observable and call the callback imediatly if already ready.
+      * Adds a callback to the onCompiled observable and call the callback immediately if already ready.
       * @param func The callback to be used.
       */
     def executeWhenCompiled(func: js.Function1[/* effect */ this.type, Unit]): Unit = js.native
@@ -243,7 +257,7 @@ object effectMod {
     
     /**
       * The number of attributes.
-      * @returns the numnber of attributes.
+      * @returns the number of attributes.
       */
     def getAttributesCount(): Double = js.native
     
@@ -269,7 +283,7 @@ object effectMod {
       * Returns the index parameters used to create the effect
       * @returns The index parameters object
       */
-    def getIndexParameters(): js.Any = js.native
+    def getIndexParameters(): Any = js.native
     
     /**
       * The pipeline context for this effect
@@ -328,7 +342,7 @@ object effectMod {
     /**
       * Name of the effect.
       */
-    var name: js.Any = js.native
+    var name: Any = js.native
     
     /**
       * Callback that will be called when effect is bound.
@@ -444,6 +458,13 @@ object effectMod {
     def setDirectColor4(uniformName: String, color4: IColor4Like): Effect = js.native
     
     /**
+      * Sets an external texture on the engine to be used in the shader.
+      * @param name Name of the external texture variable.
+      * @param texture Texture to set.
+      */
+    def setExternalTexture(name: String, texture: Nullable[ExternalTexture]): Unit = js.native
+    
+    /**
       * Sets a float on a uniform variable.
       * @param uniformName Name of the variable.
       * @param value value to be set.
@@ -487,7 +508,7 @@ object effectMod {
       * @param array array to be set.
       * @returns this effect.
       */
-    def setFloatArray(uniformName: String, array: Float32Array): Effect = js.native
+    def setFloatArray(uniformName: String, array: FloatArray): Effect = js.native
     
     /**
       * Sets an float array 2 on a uniform variable. (Array is specified as single array eg. [1,2,3,4] will result in [[1,2],[3,4]] in the shader)
@@ -495,7 +516,7 @@ object effectMod {
       * @param array array to be set.
       * @returns this effect.
       */
-    def setFloatArray2(uniformName: String, array: Float32Array): Effect = js.native
+    def setFloatArray2(uniformName: String, array: FloatArray): Effect = js.native
     
     /**
       * Sets an float array 3 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6] will result in [[1,2,3],[4,5,6]] in the shader)
@@ -503,7 +524,7 @@ object effectMod {
       * @param array array to be set.
       * @returns this effect.
       */
-    def setFloatArray3(uniformName: String, array: Float32Array): Effect = js.native
+    def setFloatArray3(uniformName: String, array: FloatArray): Effect = js.native
     
     /**
       * Sets an float array 4 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6,7,8] will result in [[1,2,3,4],[5,6,7,8]] in the shader)
@@ -511,10 +532,10 @@ object effectMod {
       * @param array array to be set.
       * @returns this effect.
       */
-    def setFloatArray4(uniformName: String, array: Float32Array): Effect = js.native
+    def setFloatArray4(uniformName: String, array: FloatArray): Effect = js.native
     
     /**
-      * Sets an interger value on a uniform variable.
+      * Sets an integer value on a uniform variable.
       * @param uniformName Name of the variable.
       * @param value Value to be set.
       * @returns this effect.
@@ -522,12 +543,42 @@ object effectMod {
     def setInt(uniformName: String, value: Double): Effect = js.native
     
     /**
+      * Sets an int2 value on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param x First int in int2.
+      * @param y Second int in int2.
+      * @returns this effect.
+      */
+    def setInt2(uniformName: String, x: Double, y: Double): Effect = js.native
+    
+    /**
+      * Sets an int3 value on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param x First int in int3.
+      * @param y Second int in int3.
+      * @param z Third int in int3.
+      * @returns this effect.
+      */
+    def setInt3(uniformName: String, x: Double, y: Double, z: Double): Effect = js.native
+    
+    /**
+      * Sets an int4 value on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param x First int in int4.
+      * @param y Second int in int4.
+      * @param z Third int in int4.
+      * @param w Fourth int in int4.
+      * @returns this effect.
+      */
+    def setInt4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Effect = js.native
+    
+    /**
       * Sets an int array on a uniform variable.
       * @param uniformName Name of the variable.
       * @param array array to be set.
       * @returns this effect.
       */
-    def setIntArray(uniformName: String, array: Int32Array): Effect = js.native
+    def setIntArray(uniformName: String, array: js.typedarray.Int32Array): Effect = js.native
     
     /**
       * Sets an int array 2 on a uniform variable. (Array is specified as single array eg. [1,2,3,4] will result in [[1,2],[3,4]] in the shader)
@@ -535,7 +586,7 @@ object effectMod {
       * @param array array to be set.
       * @returns this effect.
       */
-    def setIntArray2(uniformName: String, array: Int32Array): Effect = js.native
+    def setIntArray2(uniformName: String, array: js.typedarray.Int32Array): Effect = js.native
     
     /**
       * Sets an int array 3 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6] will result in [[1,2,3],[4,5,6]] in the shader)
@@ -543,7 +594,7 @@ object effectMod {
       * @param array array to be set.
       * @returns this effect.
       */
-    def setIntArray3(uniformName: String, array: Int32Array): Effect = js.native
+    def setIntArray3(uniformName: String, array: js.typedarray.Int32Array): Effect = js.native
     
     /**
       * Sets an int array 4 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6,7,8] will result in [[1,2,3,4],[5,6,7,8]] in the shader)
@@ -551,7 +602,7 @@ object effectMod {
       * @param array array to be set.
       * @returns this effect.
       */
-    def setIntArray4(uniformName: String, array: Int32Array): Effect = js.native
+    def setIntArray4(uniformName: String, array: js.typedarray.Int32Array): Effect = js.native
     
     def setMatrices(uniformName: String, matrices: js.Array[Double]): Effect = js.native
     /**
@@ -560,7 +611,7 @@ object effectMod {
       * @param matrices matrices to be set.
       * @returns this effect.
       */
-    def setMatrices(uniformName: String, matrices: Float32Array): Effect = js.native
+    def setMatrices(uniformName: String, matrices: js.typedarray.Float32Array): Effect = js.native
     
     /**
       * Sets matrix on a uniform variable.
@@ -572,21 +623,36 @@ object effectMod {
     
     def setMatrix2x2(uniformName: String, matrix: js.Array[Double]): Effect = js.native
     /**
-      * Sets a 2x2 matrix on a uniform variable. (Speicified as [1,2,3,4] will result in [1,2][3,4] matrix)
+      * Sets a 2x2 matrix on a uniform variable. (Specified as [1,2,3,4] will result in [1,2][3,4] matrix)
       * @param uniformName Name of the variable.
       * @param matrix matrix to be set.
       * @returns this effect.
       */
-    def setMatrix2x2(uniformName: String, matrix: Float32Array): Effect = js.native
+    def setMatrix2x2(uniformName: String, matrix: js.typedarray.Float32Array): Effect = js.native
     
     def setMatrix3x3(uniformName: String, matrix: js.Array[Double]): Effect = js.native
     /**
-      * Sets a 3x3 matrix on a uniform variable. (Speicified as [1,2,3,4,5,6,7,8,9] will result in [1,2,3][4,5,6][7,8,9] matrix)
+      * Sets a 3x3 matrix on a uniform variable. (Specified as [1,2,3,4,5,6,7,8,9] will result in [1,2,3][4,5,6][7,8,9] matrix)
       * @param uniformName Name of the variable.
       * @param matrix matrix to be set.
       * @returns this effect.
       */
-    def setMatrix3x3(uniformName: String, matrix: Float32Array): Effect = js.native
+    def setMatrix3x3(uniformName: String, matrix: js.typedarray.Float32Array): Effect = js.native
+    
+    /**
+      * Sets a Quaternion on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param quaternion Value to be set.
+      * @returns this effect.
+      */
+    def setQuaternion(uniformName: String, quaternion: IQuaternionLike): Effect = js.native
+    
+    /**
+      * Sets a storage buffer on the engine to be used in the shader.
+      * @param name Name of the storage buffer variable.
+      * @param buffer Storage buffer to set.
+      */
+    def setStorageBuffer(name: String, buffer: Nullable[StorageBuffer]): Unit = js.native
     
     /**
       * Sets a texture on the engine to be used in the shader.
@@ -616,6 +682,13 @@ object effectMod {
       * @param postProcess Post process to get the output texture from.
       */
     def setTextureFromPostProcessOutput(channel: String, postProcess: Nullable[PostProcess]): Unit = js.native
+    
+    /**
+      * Sets a sampler on the engine to be used in the shader.
+      * @param name Name of the sampler variable.
+      * @param sampler Sampler to set.
+      */
+    def setTextureSampler(name: String, sampler: Nullable[TextureSampler]): Unit = js.native
     
     /**
       * Sets a Vector2 on a uniform variable.
@@ -679,24 +752,21 @@ object effectMod {
       * @param name the name of the shader
       * @param pixelShader optional pixel shader content
       * @param vertexShader optional vertex shader content
+      * @param shaderLanguage the language the shader is written in (default: GLSL)
       */
     inline def RegisterShader(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def RegisterShader(name: String, pixelShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def RegisterShader(name: String, pixelShader: String, vertexShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RegisterShader(name: String, pixelShader: String, vertexShader: String, shaderLanguage: ShaderLanguage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RegisterShader(name: String, pixelShader: String, vertexShader: Unit, shaderLanguage: ShaderLanguage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def RegisterShader(name: String, pixelShader: Unit, vertexShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RegisterShader(name: String, pixelShader: Unit, vertexShader: String, shaderLanguage: ShaderLanguage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RegisterShader(name: String, pixelShader: Unit, vertexShader: Unit, shaderLanguage: ShaderLanguage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Resets the cache of effects.
       */
     inline def ResetCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ResetCache")().asInstanceOf[Unit]
-    
-    /**
-      * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
-      */
-    @JSImport("babylonjs/Materials/effect", "Effect.ShadersRepository")
-    @js.native
-    def ShadersRepository: String = js.native
-    inline def ShadersRepository_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersRepository")(x.asInstanceOf[js.Any])
     
     /**
       * Store of each shader (The can be looked up using effect.key)
@@ -706,28 +776,28 @@ object effectMod {
     def ShadersStore: StringDictionary[String] = js.native
     inline def ShadersStore_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersStore")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Materials/effect", "Effect._baseCache")
+    @JSImport("babylonjs/Materials/effect", "Effect._BaseCache")
     @js.native
-    def _baseCache: js.Any = js.native
-    inline def _baseCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_baseCache")(x.asInstanceOf[js.Any])
+    def _BaseCache: Any = js.native
+    inline def _BaseCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BaseCache")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Materials/effect", "Effect._uniqueIdSeed")
+    @JSImport("babylonjs/Materials/effect", "Effect._UniqueIdSeed")
     @js.native
-    def _uniqueIdSeed: js.Any = js.native
-    inline def _uniqueIdSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueIdSeed")(x.asInstanceOf[js.Any])
+    def _UniqueIdSeed: Any = js.native
+    inline def _UniqueIdSeed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdSeed")(x.asInstanceOf[js.Any])
   }
   
   trait IEffectCreationOptions extends StObject {
     
     /**
-      * Atrributes that will be used in the shader.
+      * Attributes that will be used in the shader.
       */
     var attributes: js.Array[String]
     
     /**
       * Define statements that will be set in the shader.
       */
-    var defines: js.Any
+    var defines: Any
     
     /**
       * Possible fallbacks for this effect to improve performance when needed.
@@ -737,7 +807,7 @@ object effectMod {
     /**
       * Parameters to be used with Babylons include syntax to iterate over an array (eg. {lights: 10})
       */
-    var indexParameters: js.UndefOr[js.Any] = js.undefined
+    var indexParameters: js.UndefOr[Any] = js.undefined
     
     /**
       * Max number of lights that can be used in the shader.
@@ -760,14 +830,24 @@ object effectMod {
     var onError: Nullable[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]
     
     /**
+      * If provided, will be called two times with the vertex and fragment code so that this code can be updated after the #include have been processed
+      */
+    var processCodeAfterIncludes: js.UndefOr[Nullable[ShaderCustomProcessingFunction]] = js.undefined
+    
+    /**
       * If provided, will be called two times with the vertex and fragment code so that this code can be updated before it is compiled by the GPU
       */
-    var processFinalCode: js.UndefOr[Nullable[js.Function2[/* shaderType */ String, /* code */ String, String]]] = js.undefined
+    var processFinalCode: js.UndefOr[Nullable[ShaderCustomProcessingFunction]] = js.undefined
     
     /**
       * Sampler texture variable names that will be set in the shader.
       */
     var samplers: js.Array[String]
+    
+    /**
+      * The language the shader is written in (default: GLSL)
+      */
+    var shaderLanguage: js.UndefOr[ShaderLanguage] = js.undefined
     
     /**
       * See https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/transformFeedbackVaryings
@@ -780,7 +860,7 @@ object effectMod {
     var uniformBuffersNames: js.Array[String]
     
     /**
-      * Uniform varible names that will be set in the shader.
+      * Uniform variable names that will be set in the shader.
       */
     var uniformsNames: js.Array[String]
   }
@@ -788,7 +868,7 @@ object effectMod {
     
     inline def apply(
       attributes: js.Array[String],
-      defines: js.Any,
+      defines: Any,
       samplers: js.Array[String],
       uniformBuffersNames: js.Array[String],
       uniformsNames: js.Array[String]
@@ -801,15 +881,15 @@ object effectMod {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
       
-      inline def setDefines(value: js.Any): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
+      inline def setDefines(value: Any): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       
       inline def setFallbacks(value: Nullable[IEffectFallbacks]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
       
       inline def setFallbacksNull: Self = StObject.set(x, "fallbacks", null)
       
-      inline def setIndexParameters(value: js.Any): Self = StObject.set(x, "indexParameters", value.asInstanceOf[js.Any])
+      inline def setIndexParameters(value: Any): Self = StObject.set(x, "indexParameters", value.asInstanceOf[js.Any])
       
       inline def setIndexParametersUndefined: Self = StObject.set(x, "indexParameters", js.undefined)
       
@@ -829,6 +909,12 @@ object effectMod {
       
       inline def setOnErrorNull: Self = StObject.set(x, "onError", null)
       
+      inline def setProcessCodeAfterIncludes(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processCodeAfterIncludes", js.Any.fromFunction2(value))
+      
+      inline def setProcessCodeAfterIncludesNull: Self = StObject.set(x, "processCodeAfterIncludes", null)
+      
+      inline def setProcessCodeAfterIncludesUndefined: Self = StObject.set(x, "processCodeAfterIncludes", js.undefined)
+      
       inline def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction2(value))
       
       inline def setProcessFinalCodeNull: Self = StObject.set(x, "processFinalCode", null)
@@ -837,7 +923,11 @@ object effectMod {
       
       inline def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
       
-      inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
+      inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value*))
+      
+      inline def setShaderLanguage(value: ShaderLanguage): Self = StObject.set(x, "shaderLanguage", value.asInstanceOf[js.Any])
+      
+      inline def setShaderLanguageUndefined: Self = StObject.set(x, "shaderLanguage", js.undefined)
       
       inline def setTransformFeedbackVaryings(value: Nullable[js.Array[String]]): Self = StObject.set(x, "transformFeedbackVaryings", value.asInstanceOf[js.Any])
       
@@ -845,15 +935,15 @@ object effectMod {
       
       inline def setTransformFeedbackVaryingsUndefined: Self = StObject.set(x, "transformFeedbackVaryings", js.undefined)
       
-      inline def setTransformFeedbackVaryingsVarargs(value: String*): Self = StObject.set(x, "transformFeedbackVaryings", js.Array(value :_*))
+      inline def setTransformFeedbackVaryingsVarargs(value: String*): Self = StObject.set(x, "transformFeedbackVaryings", js.Array(value*))
       
       inline def setUniformBuffersNames(value: js.Array[String]): Self = StObject.set(x, "uniformBuffersNames", value.asInstanceOf[js.Any])
       
-      inline def setUniformBuffersNamesVarargs(value: String*): Self = StObject.set(x, "uniformBuffersNames", js.Array(value :_*))
+      inline def setUniformBuffersNamesVarargs(value: String*): Self = StObject.set(x, "uniformBuffersNames", js.Array(value*))
       
       inline def setUniformsNames(value: js.Array[String]): Self = StObject.set(x, "uniformsNames", value.asInstanceOf[js.Any])
       
-      inline def setUniformsNamesVarargs(value: String*): Self = StObject.set(x, "uniformsNames", js.Array(value :_*))
+      inline def setUniformsNamesVarargs(value: String*): Self = StObject.set(x, "uniformsNames", js.Array(value*))
     }
   }
 }

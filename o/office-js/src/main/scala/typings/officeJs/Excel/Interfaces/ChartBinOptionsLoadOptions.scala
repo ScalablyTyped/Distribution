@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the bin options for histogram charts and pareto charts.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ChartBinOptionsLoadOptions extends StObject {
@@ -19,57 +19,57 @@ trait ChartBinOptionsLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if bin overflow is enabled in a histogram chart or pareto chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var allowOverflow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if bin underflow is enabled in a histogram chart or pareto chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var allowUnderflow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the bin count of a histogram chart or pareto chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var count: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the bin overflow value of a histogram chart or pareto chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var overflowValue: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the bin's type for a histogram chart or pareto chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the bin underflow value of a histogram chart or pareto chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var underflowValue: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the bin width value of a histogram chart or pareto chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var width: js.UndefOr[Boolean] = js.undefined

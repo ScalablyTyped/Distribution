@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.dataviz.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait ChartPdf extends StObject {
   
   var creator: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   var fileName: js.UndefOr[String] = js.undefined
   
@@ -23,7 +22,7 @@ trait ChartPdf extends StObject {
   
   var margin: js.UndefOr[ChartPdfMargin] = js.undefined
   
-  var paperSize: js.UndefOr[String | js.Any] = js.undefined
+  var paperSize: js.UndefOr[String | Any] = js.undefined
   
   var proxyTarget: js.UndefOr[String] = js.undefined
   
@@ -50,7 +49,7 @@ object ChartPdf {
     
     inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
@@ -74,7 +73,7 @@ object ChartPdf {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setPaperSize(value: String | js.Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
+    inline def setPaperSize(value: String | Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
     
     inline def setPaperSizeUndefined: Self = StObject.set(x, "paperSize", js.undefined)
     

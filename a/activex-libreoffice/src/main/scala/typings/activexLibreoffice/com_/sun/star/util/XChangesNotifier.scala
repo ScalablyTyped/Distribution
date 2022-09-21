@@ -27,7 +27,7 @@ object XChangesNotifier {
   inline def apply(
     acquire: () => Unit,
     addChangesListener: XChangesListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChangesListener: XChangesListener => Unit
   ): XChangesNotifier = {

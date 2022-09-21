@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientLogging.anon
 
-import typings.maximMazurokGapiClientLogging.gapi.client.logging.LogView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +28,7 @@ trait Alt extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The bucket in which to create the view "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" Example:
-    * "projects/my-logging-project/locations/my-location/buckets/my-bucket"
-    */
+  /** Required. The resource name of the project in which to create the metric: "projects/[PROJECT_ID]" The new metric must be provided in the request. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -41,22 +37,16 @@ trait Alt extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: LogView
-  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** Required. The id to use for this view. */
-  var viewId: js.UndefOr[String] = js.undefined
 }
 object Alt {
   
-  inline def apply(parent: String, resource: LogView): Alt = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String): Alt = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alt]
   }
   
@@ -100,8 +90,6 @@ object Alt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: LogView): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
     inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
@@ -109,9 +97,5 @@ object Alt {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
-    
-    inline def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
   }
 }

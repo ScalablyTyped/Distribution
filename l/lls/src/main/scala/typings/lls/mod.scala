@@ -13,7 +13,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("lls", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with LargeLocalStorageService {
     def this(options: Options) = this()
@@ -28,7 +28,7 @@ object mod extends Shortcut {
       
       var attachKey: String
       
-      var data: js.Any
+      var data: Any
       
       var docKey: String
       
@@ -36,7 +36,7 @@ object mod extends Shortcut {
     }
     object Entry {
       
-      inline def apply(attachKey: String, data: js.Any, docKey: String, url: String): Entry = {
+      inline def apply(attachKey: String, data: Any, docKey: String, url: String): Entry = {
         val __obj = js.Dynamic.literal(attachKey = attachKey.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], docKey = docKey.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[Entry]
       }
@@ -45,7 +45,7 @@ object mod extends Shortcut {
         
         inline def setAttachKey(value: String): Self = StObject.set(x, "attachKey", value.asInstanceOf[js.Any])
         
-        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setDocKey(value: String): Self = StObject.set(x, "docKey", value.asInstanceOf[js.Any])
         
@@ -73,11 +73,11 @@ object mod extends Shortcut {
       /**
         * Get the attachment identified by attachKey
         */
-      def getAttachment(attachKey: String): Promise[js.Any] = js.native
+      def getAttachment(attachKey: String): Promise[Any] = js.native
       /**
         * Get the attachment identified by docKey and attachKey
         */
-      def getAttachment(docKey: String, attachKey: String): Promise[js.Any] = js.native
+      def getAttachment(docKey: String, attachKey: String): Promise[Any] = js.native
       
       /**
         * Get the URL for a given attachment.
@@ -96,7 +96,7 @@ object mod extends Shortcut {
       /**
         * Get the contents of a document identified by docKey
         */
-      def getContents(docKey: String): Promise[js.Any] = js.native
+      def getContents(docKey: String): Promise[Any] = js.native
       
       var initialized: Promise[Double] = js.native
       
@@ -119,8 +119,8 @@ object mod extends Shortcut {
       /**
         * Remove the specified document and all of its attachments.
         */
-      def rm(): Promise[js.Any] = js.native
-      def rm(docKey: String): Promise[js.Any] = js.native
+      def rm(): Promise[Any] = js.native
+      def rm(docKey: String): Promise[Any] = js.native
       
       /**
         * Remove an attachment from a document.
@@ -130,16 +130,16 @@ object mod extends Shortcut {
       /**
         * Set an attachment for a given document. Identified by attachKey.
         */
-      def setAttachment(attachKey: String, attachment: js.Any): Promise[Unit] = js.native
+      def setAttachment(attachKey: String, attachment: Any): Promise[Unit] = js.native
       /**
         * Set an attachment for a given document. Identified by docKey and attachKey.
         */
-      def setAttachment(docKey: String, attachKey: String, attachment: js.Any): Promise[Unit] = js.native
+      def setAttachment(docKey: String, attachKey: String, attachment: Any): Promise[Unit] = js.native
       
       /**
         * Set the contents identified by docKey to data. The document will be created if it does not exist.
         */
-      def setContents(docKey: String, data: js.Any): Promise[Unit] = js.native
+      def setContents(docKey: String, data: Any): Promise[Unit] = js.native
     }
     
     trait Options extends StObject {
@@ -184,15 +184,15 @@ object mod extends Shortcut {
     trait Promise[T] extends StObject {
       
       def `catch`[U](): Promise[U] = js.native
-      def `catch`[U](onRejected: js.Function1[/* error */ js.Any, U | Promise[U]]): Promise[U] = js.native
+      def `catch`[U](onRejected: js.Function1[/* error */ Any, U | Promise[U]]): Promise[U] = js.native
       
       def `then`[U](): Promise[U] = js.native
       def `then`[U](onFulfilled: js.Function1[/* value */ T, U | Promise[U]]): Promise[U] = js.native
       def `then`[U](
         onFulfilled: js.Function1[/* value */ T, Promise[U] | U],
-        onRejected: js.Function1[/* error */ js.Any, Promise[U] | U | Unit]
+        onRejected: js.Function1[/* error */ Any, Promise[U] | U | Unit]
       ): Promise[U] = js.native
-      def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ js.Any, Promise[U] | U | Unit]): Promise[U] = js.native
+      def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ Any, Promise[U] | U | Unit]): Promise[U] = js.native
     }
   }
   

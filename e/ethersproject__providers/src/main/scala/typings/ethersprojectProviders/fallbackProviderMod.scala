@@ -11,13 +11,13 @@ object fallbackProviderMod {
   
   @JSImport("@ethersproject/providers/lib/fallback-provider", "FallbackProvider")
   @js.native
-  class FallbackProvider protected () extends BaseProvider {
+  open class FallbackProvider protected () extends BaseProvider {
     def this(providers: js.Array[Provider | FallbackProviderConfig]) = this()
     def this(providers: js.Array[Provider | FallbackProviderConfig], quorum: Double) = this()
     
     var _highestBlockNumber: Double = js.native
     
-    def perform(method: String, params: StringDictionary[js.Any]): js.Promise[js.Any] = js.native
+    def perform(method: String, params: StringDictionary[Any]): js.Promise[Any] = js.native
     
     val providerConfigs: js.Array[FallbackProviderConfig] = js.native
     

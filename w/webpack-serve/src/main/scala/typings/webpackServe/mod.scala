@@ -1,10 +1,16 @@
 package typings.webpackServe
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpsMod.ServerOptions
 import typings.node.netMod.Server
+import typings.node.nodeNetMod.Socket
+import typings.webpack.mod.Configuration
+import typings.webpackDevMiddleware.mod.ServerResponse
 import typings.webpackServe.anon.Compiler
+import typings.webpackServe.anon.CompilerStats
 import typings.webpackServe.anon.Stats
 import typings.webpackServe.webpackServeStrings.`build-finished`
 import typings.webpackServe.webpackServeStrings.`build-started`
@@ -37,9 +43,9 @@ object mod {
     
     var `build-started`: Compiler
     
-    var `compiler-error`: Stats
+    var `compiler-error`: CompilerStats
     
-    var `compiler-warning`: Stats
+    var `compiler-warning`: CompilerStats
     
     var listening: typings.webpackServe.anon.Options
   }
@@ -48,8 +54,8 @@ object mod {
     inline def apply(
       `build-finished`: Stats,
       `build-started`: Compiler,
-      `compiler-error`: Stats,
-      `compiler-warning`: Stats,
+      `compiler-error`: CompilerStats,
+      `compiler-warning`: CompilerStats,
       listening: typings.webpackServe.anon.Options
     ): EventMap = {
       val __obj = js.Dynamic.literal(listening = listening.asInstanceOf[js.Any])
@@ -66,9 +72,9 @@ object mod {
       
       inline def `setBuild-started`(value: Compiler): Self = StObject.set(x, "build-started", value.asInstanceOf[js.Any])
       
-      inline def `setCompiler-error`(value: Stats): Self = StObject.set(x, "compiler-error", value.asInstanceOf[js.Any])
+      inline def `setCompiler-error`(value: CompilerStats): Self = StObject.set(x, "compiler-error", value.asInstanceOf[js.Any])
       
-      inline def `setCompiler-warning`(value: Stats): Self = StObject.set(x, "compiler-warning", value.asInstanceOf[js.Any])
+      inline def `setCompiler-warning`(value: CompilerStats): Self = StObject.set(x, "compiler-warning", value.asInstanceOf[js.Any])
       
       inline def setListening(value: typings.webpackServe.anon.Options): Self = StObject.set(x, "listening", value.asInstanceOf[js.Any])
     }
@@ -132,9 +138,9 @@ object mod {
     
     var `build-started`: js.UndefOr[js.Function1[/* args */ Compiler, Unit]] = js.undefined
     
-    var `compiler-error`: js.UndefOr[js.Function1[/* args */ Stats, Unit]] = js.undefined
+    var `compiler-error`: js.UndefOr[js.Function1[/* args */ CompilerStats, Unit]] = js.undefined
     
-    var `compiler-warning`: js.UndefOr[js.Function1[/* args */ Stats, Unit]] = js.undefined
+    var `compiler-warning`: js.UndefOr[js.Function1[/* args */ CompilerStats, Unit]] = js.undefined
     
     var listening: js.UndefOr[js.Function1[/* args */ typings.webpackServe.anon.Options, Unit]] = js.undefined
   }
@@ -155,11 +161,11 @@ object mod {
       
       inline def `setBuild-startedUndefined`: Self = StObject.set(x, "build-started", js.undefined)
       
-      inline def `setCompiler-error`(value: /* args */ Stats => Unit): Self = StObject.set(x, "compiler-error", js.Any.fromFunction1(value))
+      inline def `setCompiler-error`(value: /* args */ CompilerStats => Unit): Self = StObject.set(x, "compiler-error", js.Any.fromFunction1(value))
       
       inline def `setCompiler-errorUndefined`: Self = StObject.set(x, "compiler-error", js.undefined)
       
-      inline def `setCompiler-warning`(value: /* args */ Stats => Unit): Self = StObject.set(x, "compiler-warning", js.Any.fromFunction1(value))
+      inline def `setCompiler-warning`(value: /* args */ CompilerStats => Unit): Self = StObject.set(x, "compiler-warning", js.Any.fromFunction1(value))
       
       inline def `setCompiler-warningUndefined`: Self = StObject.set(x, "compiler-warning", js.undefined)
       
@@ -207,20 +213,16 @@ object mod {
     var clipboard: js.UndefOr[Boolean] = js.undefined
     
     /** Custom instance of a webpack compiler */
-    var compiler: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-      ] = js.undefined
+    var compiler: js.UndefOr[typings.webpack.mod.Compiler] = js.undefined
     
     /** Webpack configuration for creating a new webpack compiler instance */
-    var config: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
-      ] = js.undefined
+    var config: js.UndefOr[Configuration] = js.undefined
     
     /** A path or array of paths where content will be served from */
     var content: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Options for webpack-dev-middleware */
-    var devMiddleware: js.UndefOr[typings.webpackDevMiddleware.mod.Options] = js.undefined
+    var devMiddleware: js.UndefOr[typings.webpackDevMiddleware.mod.Options[IncomingMessage, ServerResponse]] = js.undefined
     
     /** The host the server will listen on */
     var host: js.UndefOr[String] = js.undefined
@@ -232,7 +234,15 @@ object mod {
     var http2: js.UndefOr[Boolean] = js.undefined
     
     /** Configuration object for the server to use HTTPS */
-    var https: js.UndefOr[ServerOptions] = js.undefined
+    var https: js.UndefOr[
+        ServerOptions[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ]
+      ] = js.undefined
     
     /** Level of information for webpack-serve to output */
     var logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.undefined
@@ -266,15 +276,11 @@ object mod {
       
       inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
       
-      inline def setCompiler(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-      ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: typings.webpack.mod.Compiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
       inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
       
-      inline def setConfig(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
-      ): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Configuration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
@@ -282,9 +288,9 @@ object mod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value*))
       
-      inline def setDevMiddleware(value: typings.webpackDevMiddleware.mod.Options): Self = StObject.set(x, "devMiddleware", value.asInstanceOf[js.Any])
+      inline def setDevMiddleware(value: typings.webpackDevMiddleware.mod.Options[IncomingMessage, ServerResponse]): Self = StObject.set(x, "devMiddleware", value.asInstanceOf[js.Any])
       
       inline def setDevMiddlewareUndefined: Self = StObject.set(x, "devMiddleware", js.undefined)
       
@@ -300,7 +306,15 @@ object mod {
       
       inline def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
       
-      inline def setHttps(value: ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(
+        value: ServerOptions[
+              Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+              ]
+            ]
+      ): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
       inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
@@ -338,9 +352,9 @@ object mod {
     @JSName("on")
     def on_buildstarted(`type`: `build-started`, callback: js.Function1[/* args */ Compiler, Unit]): Unit = js.native
     @JSName("on")
-    def on_compilererror(`type`: `compiler-error`, callback: js.Function1[/* args */ Stats, Unit]): Unit = js.native
+    def on_compilererror(`type`: `compiler-error`, callback: js.Function1[/* args */ CompilerStats, Unit]): Unit = js.native
     @JSName("on")
-    def on_compilerwarning(`type`: `compiler-warning`, callback: js.Function1[/* args */ Stats, Unit]): Unit = js.native
+    def on_compilerwarning(`type`: `compiler-warning`, callback: js.Function1[/* args */ CompilerStats, Unit]): Unit = js.native
     @JSName("on")
     def on_listening(`type`: listening, callback: js.Function1[/* args */ typings.webpackServe.anon.Options, Unit]): Unit = js.native
     
@@ -357,12 +371,12 @@ object mod {
     }
     object Configuration {
       
-      inline def apply(): Configuration = {
+      inline def apply(): typings.webpackServe.mod.webpackAugmentingMod.Configuration = {
         val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[Configuration]
+        __obj.asInstanceOf[typings.webpackServe.mod.webpackAugmentingMod.Configuration]
       }
       
-      extension [Self <: Configuration](x: Self) {
+      extension [Self <: typings.webpackServe.mod.webpackAugmentingMod.Configuration](x: Self) {
         
         inline def setServe(value: Options): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
         

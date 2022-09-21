@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhoneNumberOrder extends StObject {
   
   /**
-    * The phone number order creation timestamp, in ISO 8601 format.
+    * The phone number order creation time stamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ordered phone number details, such as the phone number in E.164 format and the phone number status.
@@ -32,9 +32,9 @@ trait PhoneNumberOrder extends StObject {
   var Status: js.UndefOr[PhoneNumberOrderStatus] = js.undefined
   
   /**
-    * The updated phone number order timestamp, in ISO 8601 format.
+    * The updated phone number order time stamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var UpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object PhoneNumberOrder {
   
@@ -45,7 +45,7 @@ object PhoneNumberOrder {
   
   extension [Self <: PhoneNumberOrder](x: Self) {
     
-    inline def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -53,7 +53,7 @@ object PhoneNumberOrder {
     
     inline def setOrderedPhoneNumbersUndefined: Self = StObject.set(x, "OrderedPhoneNumbers", js.undefined)
     
-    inline def setOrderedPhoneNumbersVarargs(value: OrderedPhoneNumber*): Self = StObject.set(x, "OrderedPhoneNumbers", js.Array(value :_*))
+    inline def setOrderedPhoneNumbersVarargs(value: OrderedPhoneNumber*): Self = StObject.set(x, "OrderedPhoneNumbers", js.Array(value*))
     
     inline def setPhoneNumberOrderId(value: GuidString): Self = StObject.set(x, "PhoneNumberOrderId", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object PhoneNumberOrder {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
   }

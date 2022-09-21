@@ -1,7 +1,6 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.SchedulerDataSource
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +25,9 @@ trait SchedulerOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ SchedulerDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | SchedulerDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | SchedulerDataSource] = js.undefined
   
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   var dateHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
@@ -36,7 +35,7 @@ trait SchedulerOptions extends StObject {
   
   var editable: js.UndefOr[Boolean | SchedulerEditable] = js.undefined
   
-  var endTime: js.UndefOr[Date] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   var eventTemplate: js.UndefOr[String | js.Function] = js.undefined
   
@@ -52,11 +51,11 @@ trait SchedulerOptions extends StObject {
   
   var majorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var max: js.UndefOr[Date] = js.undefined
+  var max: js.UndefOr[js.Date] = js.undefined
   
   var messages: js.UndefOr[SchedulerMessages] = js.undefined
   
-  var min: js.UndefOr[Date] = js.undefined
+  var min: js.UndefOr[js.Date] = js.undefined
   
   var minorTickCount: js.UndefOr[Double] = js.undefined
   
@@ -96,7 +95,7 @@ trait SchedulerOptions extends StObject {
   
   var snap: js.UndefOr[Boolean] = js.undefined
   
-  var startTime: js.UndefOr[Date] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   var timezone: js.UndefOr[String] = js.undefined
   
@@ -106,9 +105,9 @@ trait SchedulerOptions extends StObject {
   
   var width: js.UndefOr[Double | String] = js.undefined
   
-  var workDayEnd: js.UndefOr[Date] = js.undefined
+  var workDayEnd: js.UndefOr[js.Date] = js.undefined
   
-  var workDayStart: js.UndefOr[Date] = js.undefined
+  var workDayStart: js.UndefOr[js.Date] = js.undefined
   
   var workWeekEnd: js.UndefOr[Double] = js.undefined
   
@@ -159,11 +158,11 @@ object SchedulerOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | SchedulerDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | SchedulerDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "dateHeaderTemplate", value.asInstanceOf[js.Any])
     
@@ -179,7 +178,7 @@ object SchedulerOptions {
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -211,7 +210,7 @@ object SchedulerOptions {
     
     inline def setMajorTimeHeaderTemplateUndefined: Self = StObject.set(x, "majorTimeHeaderTemplate", js.undefined)
     
-    inline def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
@@ -219,7 +218,7 @@ object SchedulerOptions {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
@@ -283,7 +282,7 @@ object SchedulerOptions {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: SchedulerResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: SchedulerResource*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setSave(value: /* e */ SchedulerSaveEvent => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
@@ -301,7 +300,7 @@ object SchedulerOptions {
     
     inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
@@ -313,23 +312,23 @@ object SchedulerOptions {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setToolbarVarargs(value: SchedulerToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+    inline def setToolbarVarargs(value: SchedulerToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value*))
     
     inline def setViews(value: js.Array[SchedulerView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
-    inline def setViewsVarargs(value: SchedulerView*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: SchedulerView*): Self = StObject.set(x, "views", js.Array(value*))
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWorkDayEnd(value: Date): Self = StObject.set(x, "workDayEnd", value.asInstanceOf[js.Any])
+    inline def setWorkDayEnd(value: js.Date): Self = StObject.set(x, "workDayEnd", value.asInstanceOf[js.Any])
     
     inline def setWorkDayEndUndefined: Self = StObject.set(x, "workDayEnd", js.undefined)
     
-    inline def setWorkDayStart(value: Date): Self = StObject.set(x, "workDayStart", value.asInstanceOf[js.Any])
+    inline def setWorkDayStart(value: js.Date): Self = StObject.set(x, "workDayStart", value.asInstanceOf[js.Any])
     
     inline def setWorkDayStartUndefined: Self = StObject.set(x, "workDayStart", js.undefined)
     

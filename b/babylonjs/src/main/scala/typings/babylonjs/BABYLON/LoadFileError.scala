@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.Error
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LoadFileError
   extends StObject
-     with Error {
+     with RuntimeError {
   
   var file: js.UndefOr[File] = js.undefined
   
@@ -16,8 +15,8 @@ trait LoadFileError
 }
 object LoadFileError {
   
-  inline def apply(message: String, name: String): LoadFileError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(errorCode: ErrorCodesType, message: String, name: String): LoadFileError = {
+    val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadFileError]
   }
   

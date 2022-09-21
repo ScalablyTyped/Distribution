@@ -6,17 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("chrome.cast.ApiConfig")
 @js.native
-class ApiConfig protected ()
+open class ApiConfig protected ()
   extends StObject
      with typings.chrome.chrome.cast.ApiConfig {
   /**
-    * @param {!chrome.cast.SessionRequest} sessionRequest
-    * @param {function(!chrome.cast.Session)} sessionListener
-    * @param {function(!chrome.cast.ReceiverAvailability,Array<Object>)}
-    *     receiverListener
-    * @param {chrome.cast.AutoJoinPolicy=} opt_autoJoinPolicy
-    * @param {chrome.cast.DefaultActionPolicy=} opt_defaultActionPolicy
-    * @constructor
+    * @param sessionRequest
+    * @param sessionListener
+    * @param receiverListener
+    * @param opt_autoJoinPolicy
+    * @param opt_defaultActionPolicy
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.ApiConfig
     */
   def this(

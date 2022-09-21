@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Dragger")
 @js.native
-class Dragger () extends StObject {
+open class Dragger () extends StObject {
   def this(options: DraggerOptions) = this()
   
   /** @see {@link DraggerOptions#onDragEnd} */

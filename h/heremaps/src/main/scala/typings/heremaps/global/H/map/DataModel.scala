@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param opt_layers {Array=} - array of layers to be added to the data model
   */
-class DataModel ()
+open class DataModel ()
   extends StObject
      with OList {
   def this(opt_layers: js.Array[Layer]) = this()

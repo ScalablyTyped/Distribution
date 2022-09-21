@@ -58,22 +58,22 @@ object anon {
     }
   }
   
-  trait Csurf extends StObject {
+  trait Csrf extends StObject {
     
-    var csurf: js.UndefOr[`false` | CsurfOptions] = js.undefined
+    var csrf: js.UndefOr[`false` | CsurfOptions] = js.undefined
   }
-  object Csurf {
+  object Csrf {
     
-    inline def apply(): Csurf = {
+    inline def apply(): Csrf = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Csurf]
+      __obj.asInstanceOf[Csrf]
     }
     
-    extension [Self <: Csurf](x: Self) {
+    extension [Self <: Csrf](x: Self) {
       
-      inline def setCsurf(value: `false` | CsurfOptions): Self = StObject.set(x, "csurf", value.asInstanceOf[js.Any])
+      inline def setCsrf(value: `false` | CsurfOptions): Self = StObject.set(x, "csrf", value.asInstanceOf[js.Any])
       
-      inline def setCsurfUndefined: Self = StObject.set(x, "csurf", js.undefined)
+      inline def setCsrfUndefined: Self = StObject.set(x, "csrf", js.undefined)
     }
   }
   

@@ -2,6 +2,7 @@ package typings.tuyaPanelKit.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
@@ -11,7 +12,6 @@ import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -21,7 +21,8 @@ import typings.reactNative.mod.ListRenderItem
 import typings.reactNative.mod.ListRenderItemInfo
 import typings.reactNative.mod.NativeScrollEvent
 import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.PointPropType
+import typings.reactNative.mod.PointProp
+import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.ScrollViewProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
@@ -37,7 +38,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.assertive
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.automatic
 import typings.tuyaPanelKit.tuyaPanelKitStrings.black
-import typings.tuyaPanelKit.tuyaPanelKitStrings.button
 import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.default
 import typings.tuyaPanelKit.tuyaPanelKitStrings.end
@@ -49,8 +49,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.no
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
 import typings.tuyaPanelKit.tuyaPanelKitStrings.normal
 import typings.tuyaPanelKit.tuyaPanelKitStrings.polite
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_checked
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_unchecked
 import typings.tuyaPanelKit.tuyaPanelKitStrings.scrollableAxes
 import typings.tuyaPanelKit.tuyaPanelKitStrings.start
 import typings.tuyaPanelKit.tuyaPanelKitStrings.white
@@ -62,23 +60,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Omit<react-native.react-native.FlatListProps<ItemT>, 'renderItem'> */
 trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
-  var CellRendererComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
+  var CellRendererComponent: js.UndefOr[ComponentType[Any]] = js.undefined
   
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[Any] | Null] = js.undefined
   
-  var ListEmptyComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListEmptyComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListFooterComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListFooterComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  var ListFooterComponentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var ListHeaderComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListHeaderComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  var ListHeaderComponentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  var StickyHeaderComponent: js.UndefOr[ComponentType[Any]] = js.undefined
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[none_ | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -88,13 +86,15 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[none_ | polite | assertive] = js.undefined
   
   var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
@@ -108,6 +108,10 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
   
+  var automaticallyAdjustKeyboardInsets: js.UndefOr[Boolean] = js.undefined
+  
+  var automaticallyAdjustsScrollIndicatorInsets: js.UndefOr[Boolean] = js.undefined
+  
   var bounces: js.UndefOr[Boolean] = js.undefined
   
   var bouncesZoom: js.UndefOr[Boolean] = js.undefined
@@ -116,18 +120,44 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var centerContent: js.UndefOr[Boolean] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var collapsable: js.UndefOr[Boolean] = js.undefined
   
   var columnWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 应用于滚动视图内容容器，该容器包装了所有子视图
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description These styles will be applied to the scroll view content container which wraps all of the child views.
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue undefined
+    */
   var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var contentInset: js.UndefOr[Insets] = js.undefined
   
   var contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.undefined
   
-  var contentOffset: js.UndefOr[PointPropType] = js.undefined
+  var contentOffset: js.UndefOr[PointProp] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 数据源
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/84c8c92bc47dffbf2df6b0af1b8325573e6b91bc/types/tuya-panel-kit/index.d.ts#L8878">ItemT[]</a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Data source
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/84c8c92bc47dffbf2df6b0af1b8325573e6b91bc/types/tuya-panel-kit/index.d.ts#L8878">ItemT[]</a>
+    * @defaultValue null
+    */
   var data: js.Array[ItemT]
   
   var debug: js.UndefOr[Boolean] = js.undefined
@@ -144,17 +174,27 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var endFillColor: js.UndefOr[ColorValue] = js.undefined
   
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   var fadingEdgeLength: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 列表项实例
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description List item instance
+    * @defaultValue null
+    */
   var flatListRef: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var focusable: js.UndefOr[Boolean] = js.undefined
   
-  var getItem: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, ItemT]] = js.undefined
+  var getItem: js.UndefOr[js.Function2[/* data */ Any, /* index */ Double, ItemT]] = js.undefined
   
-  var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.undefined
+  var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
   
   var getItemLayout: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double, Index]
@@ -230,6 +270,30 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
+  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
   
   var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
@@ -294,12 +358,32 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 自定义列表项
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Custom list items
+    * @defaultValue null
+    */
   var renderItem: js.UndefOr[ListRenderItem[ItemT] | Null] = js.undefined
   
   var renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, ReactElement]] = js.undefined
   
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 内容是否可以滚动
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Can content scroll
+    * @defaultValue true
+    */
   var scrollEnabled: js.UndefOr[Boolean] = js.undefined
   
   var scrollEventThrottle: js.UndefOr[Double] = js.undefined
@@ -312,6 +396,18 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var scrollsToTop: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 分割线样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Separator style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var separatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
@@ -330,8 +426,22 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var snapToStart: js.UndefOr[Boolean] = js.undefined
   
+  var stickyHeaderHiddenOnScroll: js.UndefOr[Boolean] = js.undefined
+  
   var stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 内容样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var testID: js.UndefOr[String] = js.undefined
@@ -348,9 +458,19 @@ trait TYFlatListProps[ItemT /* <: TYFlatListData */] extends StObject {
   
   var updateCellsBatchingPeriod: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否使用 ART 实现版本
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Is art used to implement the version
+    * @defaultValue false
+    */
   var useART: js.UndefOr[Boolean] = js.undefined
   
-  var viewabilityConfig: js.UndefOr[js.Any] = js.undefined
+  var viewabilityConfig: js.UndefOr[Any] = js.undefined
   
   var viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.undefined
   
@@ -371,11 +491,7 @@ object TYFlatListProps {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none_ | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -393,6 +509,16 @@ object TYFlatListProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none_ | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -404,12 +530,6 @@ object TYFlatListProps {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -435,6 +555,14 @@ object TYFlatListProps {
     
     inline def setAutomaticallyAdjustContentInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustContentInsets", js.undefined)
     
+    inline def setAutomaticallyAdjustKeyboardInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustKeyboardInsets", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticallyAdjustKeyboardInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustKeyboardInsets", js.undefined)
+    
+    inline def setAutomaticallyAdjustsScrollIndicatorInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustsScrollIndicatorInsets", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticallyAdjustsScrollIndicatorInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustsScrollIndicatorInsets", js.undefined)
+    
     inline def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
     
     inline def setBouncesUndefined: Self = StObject.set(x, "bounces", js.undefined)
@@ -447,13 +575,17 @@ object TYFlatListProps {
     
     inline def setCanCancelContentTouchesUndefined: Self = StObject.set(x, "canCancelContentTouches", js.undefined)
     
-    inline def setCellRendererComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
+    inline def setCellRendererComponent(value: ComponentType[Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
     
     inline def setCellRendererComponentUndefined: Self = StObject.set(x, "CellRendererComponent", js.undefined)
     
     inline def setCenterContent(value: Boolean): Self = StObject.set(x, "centerContent", value.asInstanceOf[js.Any])
     
     inline def setCenterContentUndefined: Self = StObject.set(x, "centerContent", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
@@ -479,13 +611,13 @@ object TYFlatListProps {
     
     inline def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
     
-    inline def setContentOffset(value: PointPropType): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
+    inline def setContentOffset(value: PointProp): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
     inline def setContentOffsetUndefined: Self = StObject.set(x, "contentOffset", js.undefined)
     
     inline def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
@@ -515,7 +647,7 @@ object TYFlatListProps {
     
     inline def setEndFillColorUndefined: Self = StObject.set(x, "endFillColor", js.undefined)
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
@@ -531,9 +663,9 @@ object TYFlatListProps {
     
     inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
-    inline def setGetItem(value: (/* data */ js.Any, /* index */ Double) => ItemT): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
+    inline def setGetItem(value: (/* data */ Any, /* index */ Double) => ItemT): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
     
-    inline def setGetItemCount(value: /* data */ js.Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
+    inline def setGetItemCount(value: /* data */ Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
     
     inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
     
@@ -589,7 +721,7 @@ object TYFlatListProps {
     
     inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
-    inline def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setItemSeparatorComponent(value: ComponentType[Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
@@ -611,17 +743,17 @@ object TYFlatListProps {
     
     inline def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
     
-    inline def setListEmptyComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
+    inline def setListEmptyComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
     
     inline def setListEmptyComponentNull: Self = StObject.set(x, "ListEmptyComponent", null)
     
     inline def setListEmptyComponentUndefined: Self = StObject.set(x, "ListEmptyComponent", js.undefined)
     
-    inline def setListFooterComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
+    inline def setListFooterComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
     
     inline def setListFooterComponentNull: Self = StObject.set(x, "ListFooterComponent", null)
     
-    inline def setListFooterComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListFooterComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
     
     inline def setListFooterComponentStyleNull: Self = StObject.set(x, "ListFooterComponentStyle", null)
     
@@ -629,11 +761,11 @@ object TYFlatListProps {
     
     inline def setListFooterComponentUndefined: Self = StObject.set(x, "ListFooterComponent", js.undefined)
     
-    inline def setListHeaderComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
     
     inline def setListHeaderComponentNull: Self = StObject.set(x, "ListHeaderComponent", null)
     
-    inline def setListHeaderComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
     
     inline def setListHeaderComponentStyleNull: Self = StObject.set(x, "ListHeaderComponentStyle", null)
     
@@ -730,6 +862,54 @@ object TYFlatListProps {
     inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
     
     inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
+    
+    inline def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancelCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
+    
+    inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+    
+    inline def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDownCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
+    
+    inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+    
+    inline def setOnPointerEnter(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnterCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
+    
+    inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+    
+    inline def setOnPointerLeave(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeaveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
+    
+    inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+    
+    inline def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMoveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
+    
+    inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+    
+    inline def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUpCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
+    
+    inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
     inline def setOnRefresh(value: () => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
     
@@ -937,17 +1117,25 @@ object TYFlatListProps {
     
     inline def setSnapToOffsetsUndefined: Self = StObject.set(x, "snapToOffsets", js.undefined)
     
-    inline def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value :_*))
+    inline def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value*))
     
     inline def setSnapToStart(value: Boolean): Self = StObject.set(x, "snapToStart", value.asInstanceOf[js.Any])
     
     inline def setSnapToStartUndefined: Self = StObject.set(x, "snapToStart", js.undefined)
     
+    inline def setStickyHeaderComponent(value: ComponentType[Any]): Self = StObject.set(x, "StickyHeaderComponent", value.asInstanceOf[js.Any])
+    
+    inline def setStickyHeaderComponentUndefined: Self = StObject.set(x, "StickyHeaderComponent", js.undefined)
+    
+    inline def setStickyHeaderHiddenOnScroll(value: Boolean): Self = StObject.set(x, "stickyHeaderHiddenOnScroll", value.asInstanceOf[js.Any])
+    
+    inline def setStickyHeaderHiddenOnScrollUndefined: Self = StObject.set(x, "stickyHeaderHiddenOnScroll", js.undefined)
+    
     inline def setStickyHeaderIndices(value: js.Array[Double]): Self = StObject.set(x, "stickyHeaderIndices", value.asInstanceOf[js.Any])
     
     inline def setStickyHeaderIndicesUndefined: Self = StObject.set(x, "stickyHeaderIndices", js.undefined)
     
-    inline def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value :_*))
+    inline def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value*))
     
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -987,13 +1175,13 @@ object TYFlatListProps {
     
     inline def setUseARTUndefined: Self = StObject.set(x, "useART", js.undefined)
     
-    inline def setViewabilityConfig(value: js.Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
+    inline def setViewabilityConfig(value: Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
     
     inline def setViewabilityConfigCallbackPairs(value: ViewabilityConfigCallbackPairs): Self = StObject.set(x, "viewabilityConfigCallbackPairs", value.asInstanceOf[js.Any])
     
     inline def setViewabilityConfigCallbackPairsUndefined: Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.undefined)
     
-    inline def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value :_*))
+    inline def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value*))
     
     inline def setViewabilityConfigUndefined: Self = StObject.set(x, "viewabilityConfig", js.undefined)
     

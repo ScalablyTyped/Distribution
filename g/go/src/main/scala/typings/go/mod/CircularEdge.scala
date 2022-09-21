@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an edge that does not know about any Link.
   */
-class CircularEdge () extends LayoutEdge
+open class CircularEdge () extends LayoutEdge

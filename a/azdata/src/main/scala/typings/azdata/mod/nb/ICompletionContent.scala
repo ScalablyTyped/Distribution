@@ -14,7 +14,7 @@ trait ICompletionContent extends StObject {
   
   var matches: js.Array[String]
   
-  var metadata: js.Any
+  var metadata: Any
   
   var status: ok | error
 }
@@ -24,7 +24,7 @@ object ICompletionContent {
     cursor_end: Double,
     cursor_start: Double,
     matches: js.Array[String],
-    metadata: js.Any,
+    metadata: Any,
     status: ok | error
   ): ICompletionContent = {
     val __obj = js.Dynamic.literal(cursor_end = cursor_end.asInstanceOf[js.Any], cursor_start = cursor_start.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
@@ -39,9 +39,9 @@ object ICompletionContent {
     
     inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value*))
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: ok | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

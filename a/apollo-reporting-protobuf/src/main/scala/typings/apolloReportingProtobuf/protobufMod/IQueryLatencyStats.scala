@@ -1,5 +1,6 @@
 package typings.apolloReportingProtobuf.protobufMod
 
+import typings.apolloProtobufjs.mod.ToArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +11,13 @@ trait IQueryLatencyStats extends StObject {
   var cacheHits: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats cacheLatencyCount */
-  var cacheLatencyCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var cacheLatencyCount: js.UndefOr[ToArray[Double] | js.Array[Double] | Null] = js.undefined
   
   /** QueryLatencyStats forbiddenOperationCount */
   var forbiddenOperationCount: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats latencyCount */
-  var latencyCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var latencyCount: js.UndefOr[ToArray[Double] | js.Array[Double] | Null] = js.undefined
   
   /** QueryLatencyStats persistedQueryHits */
   var persistedQueryHits: js.UndefOr[Double | Null] = js.undefined
@@ -25,10 +26,10 @@ trait IQueryLatencyStats extends StObject {
   var persistedQueryMisses: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats privateCacheTtlCount */
-  var privateCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var privateCacheTtlCount: js.UndefOr[ToArray[Double] | js.Array[Double] | Null] = js.undefined
   
   /** QueryLatencyStats publicCacheTtlCount */
-  var publicCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var publicCacheTtlCount: js.UndefOr[ToArray[Double] | js.Array[Double] | Null] = js.undefined
   
   /** QueryLatencyStats registeredOperationCount */
   var registeredOperationCount: js.UndefOr[Double | Null] = js.undefined
@@ -38,6 +39,9 @@ trait IQueryLatencyStats extends StObject {
   
   /** QueryLatencyStats requestsWithErrorsCount */
   var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.undefined
+  
+  /** QueryLatencyStats requestsWithoutFieldInstrumentation */
+  var requestsWithoutFieldInstrumentation: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryLatencyStats rootErrorStats */
   var rootErrorStats: js.UndefOr[IPathErrorStats | Null] = js.undefined
@@ -57,13 +61,13 @@ object IQueryLatencyStats {
     
     inline def setCacheHitsUndefined: Self = StObject.set(x, "cacheHits", js.undefined)
     
-    inline def setCacheLatencyCount(value: js.Array[Double]): Self = StObject.set(x, "cacheLatencyCount", value.asInstanceOf[js.Any])
+    inline def setCacheLatencyCount(value: ToArray[Double] | js.Array[Double]): Self = StObject.set(x, "cacheLatencyCount", value.asInstanceOf[js.Any])
     
     inline def setCacheLatencyCountNull: Self = StObject.set(x, "cacheLatencyCount", null)
     
     inline def setCacheLatencyCountUndefined: Self = StObject.set(x, "cacheLatencyCount", js.undefined)
     
-    inline def setCacheLatencyCountVarargs(value: Double*): Self = StObject.set(x, "cacheLatencyCount", js.Array(value :_*))
+    inline def setCacheLatencyCountVarargs(value: Double*): Self = StObject.set(x, "cacheLatencyCount", js.Array(value*))
     
     inline def setForbiddenOperationCount(value: Double): Self = StObject.set(x, "forbiddenOperationCount", value.asInstanceOf[js.Any])
     
@@ -71,13 +75,13 @@ object IQueryLatencyStats {
     
     inline def setForbiddenOperationCountUndefined: Self = StObject.set(x, "forbiddenOperationCount", js.undefined)
     
-    inline def setLatencyCount(value: js.Array[Double]): Self = StObject.set(x, "latencyCount", value.asInstanceOf[js.Any])
+    inline def setLatencyCount(value: ToArray[Double] | js.Array[Double]): Self = StObject.set(x, "latencyCount", value.asInstanceOf[js.Any])
     
     inline def setLatencyCountNull: Self = StObject.set(x, "latencyCount", null)
     
     inline def setLatencyCountUndefined: Self = StObject.set(x, "latencyCount", js.undefined)
     
-    inline def setLatencyCountVarargs(value: Double*): Self = StObject.set(x, "latencyCount", js.Array(value :_*))
+    inline def setLatencyCountVarargs(value: Double*): Self = StObject.set(x, "latencyCount", js.Array(value*))
     
     inline def setPersistedQueryHits(value: Double): Self = StObject.set(x, "persistedQueryHits", value.asInstanceOf[js.Any])
     
@@ -91,21 +95,21 @@ object IQueryLatencyStats {
     
     inline def setPersistedQueryMissesUndefined: Self = StObject.set(x, "persistedQueryMisses", js.undefined)
     
-    inline def setPrivateCacheTtlCount(value: js.Array[Double]): Self = StObject.set(x, "privateCacheTtlCount", value.asInstanceOf[js.Any])
+    inline def setPrivateCacheTtlCount(value: ToArray[Double] | js.Array[Double]): Self = StObject.set(x, "privateCacheTtlCount", value.asInstanceOf[js.Any])
     
     inline def setPrivateCacheTtlCountNull: Self = StObject.set(x, "privateCacheTtlCount", null)
     
     inline def setPrivateCacheTtlCountUndefined: Self = StObject.set(x, "privateCacheTtlCount", js.undefined)
     
-    inline def setPrivateCacheTtlCountVarargs(value: Double*): Self = StObject.set(x, "privateCacheTtlCount", js.Array(value :_*))
+    inline def setPrivateCacheTtlCountVarargs(value: Double*): Self = StObject.set(x, "privateCacheTtlCount", js.Array(value*))
     
-    inline def setPublicCacheTtlCount(value: js.Array[Double]): Self = StObject.set(x, "publicCacheTtlCount", value.asInstanceOf[js.Any])
+    inline def setPublicCacheTtlCount(value: ToArray[Double] | js.Array[Double]): Self = StObject.set(x, "publicCacheTtlCount", value.asInstanceOf[js.Any])
     
     inline def setPublicCacheTtlCountNull: Self = StObject.set(x, "publicCacheTtlCount", null)
     
     inline def setPublicCacheTtlCountUndefined: Self = StObject.set(x, "publicCacheTtlCount", js.undefined)
     
-    inline def setPublicCacheTtlCountVarargs(value: Double*): Self = StObject.set(x, "publicCacheTtlCount", js.Array(value :_*))
+    inline def setPublicCacheTtlCountVarargs(value: Double*): Self = StObject.set(x, "publicCacheTtlCount", js.Array(value*))
     
     inline def setRegisteredOperationCount(value: Double): Self = StObject.set(x, "registeredOperationCount", value.asInstanceOf[js.Any])
     
@@ -124,6 +128,12 @@ object IQueryLatencyStats {
     inline def setRequestsWithErrorsCountNull: Self = StObject.set(x, "requestsWithErrorsCount", null)
     
     inline def setRequestsWithErrorsCountUndefined: Self = StObject.set(x, "requestsWithErrorsCount", js.undefined)
+    
+    inline def setRequestsWithoutFieldInstrumentation(value: Double): Self = StObject.set(x, "requestsWithoutFieldInstrumentation", value.asInstanceOf[js.Any])
+    
+    inline def setRequestsWithoutFieldInstrumentationNull: Self = StObject.set(x, "requestsWithoutFieldInstrumentation", null)
+    
+    inline def setRequestsWithoutFieldInstrumentationUndefined: Self = StObject.set(x, "requestsWithoutFieldInstrumentation", js.undefined)
     
     inline def setRootErrorStats(value: IPathErrorStats): Self = StObject.set(x, "rootErrorStats", value.asInstanceOf[js.Any])
     

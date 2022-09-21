@@ -10,10 +10,10 @@ DEFLATE implemented in JavaScript (works in browser and Node)
 | ------------------ | :-------------: |
 | Full name          | deflate-js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 1054203 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 256499.33333333334 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/beatgammit/deflate-js#readme)

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaseSupportOption[Type /* <: SupportOptionType */] extends StObject {
   
+  /**
+    * Usually you can use {@link CoreCategoryType}
+    */
   var category: String
   
   /**
@@ -22,6 +25,8 @@ trait BaseSupportOption[Type /* <: SupportOptionType */] extends StObject {
     * shown at all in --help.
     */
   var description: js.UndefOr[String] = js.undefined
+  
+  val name: js.UndefOr[String] = js.undefined
   
   var since: String
   
@@ -53,6 +58,10 @@ object BaseSupportOption {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     

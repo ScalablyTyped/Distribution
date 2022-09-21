@@ -24,6 +24,6 @@ object UpdateColumnStatisticsForPartitionResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: ColumnStatisticsError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ColumnStatisticsError*): Self = StObject.set(x, "Errors", js.Array(value*))
   }
 }

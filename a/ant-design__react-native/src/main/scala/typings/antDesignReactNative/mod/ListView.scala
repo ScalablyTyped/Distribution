@@ -1,26 +1,23 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.listViewMod.default
-import typings.propTypes.mod.Requireable
+import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "ListView")
 @js.native
-class ListView[T] () extends default[T]
+open class ListView[T] () extends default[T]
 object ListView {
   
+  @JSImport("@ant-design/react-native", "ListView")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* static member */
-  object contextTypes {
-    
-    @JSImport("@ant-design/react-native", "ListView.contextTypes")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/react-native", "ListView.contextTypes.antLocale")
-    @js.native
-    def antLocale: Requireable[js.Object] = js.native
-    inline def antLocale_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("antLocale")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@ant-design/react-native", "ListView.contextType")
+  @js.native
+  def contextType: Context[js.Object] = js.native
+  inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
 }

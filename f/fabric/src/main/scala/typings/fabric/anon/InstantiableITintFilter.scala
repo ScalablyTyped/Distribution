@@ -17,5 +17,5 @@ trait InstantiableITintFilter
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): ITintFilter = js.native
+  def fromObject(`object`: Any): ITintFilter = js.native
 }

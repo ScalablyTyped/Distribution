@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("tableau.Mark")
 @js.native
-class Mark protected ()
+open class Mark protected ()
   extends StObject
      with typings.tableau.tableau.Mark {
   /** Creates a new Mark with the specified pairs. */

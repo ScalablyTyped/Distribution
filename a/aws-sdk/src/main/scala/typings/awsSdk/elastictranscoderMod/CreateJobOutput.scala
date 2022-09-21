@@ -82,7 +82,7 @@ object CreateJobOutput {
     
     inline def setCompositionUndefined: Self = StObject.set(x, "Composition", js.undefined)
     
-    inline def setCompositionVarargs(value: Clip*): Self = StObject.set(x, "Composition", js.Array(value :_*))
+    inline def setCompositionVarargs(value: Clip*): Self = StObject.set(x, "Composition", js.Array(value*))
     
     inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
@@ -116,6 +116,6 @@ object CreateJobOutput {
     
     inline def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
     
-    inline def setWatermarksVarargs(value: JobWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value :_*))
+    inline def setWatermarksVarargs(value: JobWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value*))
   }
 }

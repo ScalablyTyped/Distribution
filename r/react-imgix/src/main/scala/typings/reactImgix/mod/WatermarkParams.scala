@@ -20,7 +20,11 @@ trait WatermarkParams extends StObject {
   
   var `mark-pad`: js.UndefOr[ImgixParamType] = js.undefined
   
+  var `mark-rot`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `mark-scale`: js.UndefOr[ImgixParamType] = js.undefined
+  
+  var `mark-title`: js.UndefOr[ImgixParamType] = js.undefined
   
   var `mark-w`: js.UndefOr[ImgixParamType] = js.undefined
   
@@ -63,9 +67,17 @@ object WatermarkParams {
     
     inline def `setMark-padUndefined`: Self = StObject.set(x, "mark-pad", js.undefined)
     
+    inline def `setMark-rot`(value: ImgixParamType): Self = StObject.set(x, "mark-rot", value.asInstanceOf[js.Any])
+    
+    inline def `setMark-rotUndefined`: Self = StObject.set(x, "mark-rot", js.undefined)
+    
     inline def `setMark-scale`(value: ImgixParamType): Self = StObject.set(x, "mark-scale", value.asInstanceOf[js.Any])
     
     inline def `setMark-scaleUndefined`: Self = StObject.set(x, "mark-scale", js.undefined)
+    
+    inline def `setMark-title`(value: ImgixParamType): Self = StObject.set(x, "mark-title", value.asInstanceOf[js.Any])
+    
+    inline def `setMark-titleUndefined`: Self = StObject.set(x, "mark-title", js.undefined)
     
     inline def `setMark-w`(value: ImgixParamType): Self = StObject.set(x, "mark-w", value.asInstanceOf[js.Any])
     

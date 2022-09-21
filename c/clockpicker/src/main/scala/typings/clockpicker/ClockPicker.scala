@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClockPicker extends StObject {
   
   def apply(): JQuery = js.native
-  def apply(methodName: String, params: js.Any*): JQuery = js.native
+  def apply(methodName: String, params: Any*): JQuery = js.native
   def apply(options: ClockPickerOptions): JQuery = js.native
 }

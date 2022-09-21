@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CloudTrail ()
+open class CloudTrail ()
   extends typings.awsSdk.mod.CloudTrail {
   def this(options: ClientConfiguration) = this()
 }

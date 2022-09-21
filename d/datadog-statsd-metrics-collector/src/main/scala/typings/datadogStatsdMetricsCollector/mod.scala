@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("datadog-statsd-metrics-collector", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Collector {
     def this(client: StatsDClient) = this()

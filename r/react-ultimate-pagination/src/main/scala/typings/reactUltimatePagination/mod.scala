@@ -64,7 +64,7 @@ object mod {
     /**
       * A React.js component that will be used as a wrapper for pagination items
       */
-    var WrapperComponent: js.UndefOr[String | ComponentType[js.Any]] = js.undefined
+    var WrapperComponent: js.UndefOr[String | ComponentType[Any]] = js.undefined
     
     /**
       * An object that is used as a map from the item type to the React.js component that will be used to render this item
@@ -82,7 +82,7 @@ object mod {
       
       inline def setItemTypeToComponent(value: ItemTypeToComponent): Self = StObject.set(x, "itemTypeToComponent", value.asInstanceOf[js.Any])
       
-      inline def setWrapperComponent(value: String | ComponentType[js.Any]): Self = StObject.set(x, "WrapperComponent", value.asInstanceOf[js.Any])
+      inline def setWrapperComponent(value: String | ComponentType[Any]): Self = StObject.set(x, "WrapperComponent", value.asInstanceOf[js.Any])
       
       inline def setWrapperComponentUndefined: Self = StObject.set(x, "WrapperComponent", js.undefined)
     }

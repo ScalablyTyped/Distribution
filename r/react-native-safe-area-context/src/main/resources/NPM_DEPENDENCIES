@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-safe-area-context" : "3.1.4"
+      "react-native-safe-area-context" : "4.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-safe-area-context" : "3.1.4"
+      "react-native-safe-area-context" : "4.3.4"
     }
   ],
   "compile-devDependencies" : [

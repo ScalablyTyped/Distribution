@@ -8,6 +8,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PublishDiagnosticsClientCapabilities extends StObject {
   
   /**
+    * Client supports a codeDescription property
+    *
+    * @since 3.16.0
+    */
+  var codeDescriptionSupport: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether code action supports the `data` property which is
+    * preserved between a `textDocument/publishDiagnostics` and
+    * `textDocument/codeAction` request.
+    *
+    * @since 3.16.0
+    */
+  var dataSupport: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Whether the clients accepts diagnostics with related information.
     */
   var relatedInformation: js.UndefOr[Boolean] = js.undefined
@@ -22,7 +38,7 @@ trait PublishDiagnosticsClientCapabilities extends StObject {
   
   /**
     * Whether the client interprets the version property of the
-    * `textDocument/publishDiagnostics` notification`s parameter.
+    * `textDocument/publishDiagnostics` notification's parameter.
     *
     * @since 3.15.0
     */
@@ -36,6 +52,14 @@ object PublishDiagnosticsClientCapabilities {
   }
   
   extension [Self <: PublishDiagnosticsClientCapabilities](x: Self) {
+    
+    inline def setCodeDescriptionSupport(value: Boolean): Self = StObject.set(x, "codeDescriptionSupport", value.asInstanceOf[js.Any])
+    
+    inline def setCodeDescriptionSupportUndefined: Self = StObject.set(x, "codeDescriptionSupport", js.undefined)
+    
+    inline def setDataSupport(value: Boolean): Self = StObject.set(x, "dataSupport", value.asInstanceOf[js.Any])
+    
+    inline def setDataSupportUndefined: Self = StObject.set(x, "dataSupport", js.undefined)
     
     inline def setRelatedInformation(value: Boolean): Self = StObject.set(x, "relatedInformation", value.asInstanceOf[js.Any])
     

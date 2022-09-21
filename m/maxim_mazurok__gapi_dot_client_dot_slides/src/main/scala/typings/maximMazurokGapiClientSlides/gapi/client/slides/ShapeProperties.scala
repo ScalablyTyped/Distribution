@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ShapeProperties extends StObject {
   
+  /** The autofit properties of the shape. This property is only set for shapes that allow text. */
+  var autofit: js.UndefOr[Autofit] = js.undefined
+  
   /**
     * The alignment of the content in the shape. If unspecified, the alignment is inherited from a parent placeholder if it exists. If the shape has no parent, the default alignment
     * matches the alignment for new shapes created in the Slides editor.
@@ -41,6 +44,10 @@ object ShapeProperties {
   }
   
   extension [Self <: ShapeProperties](x: Self) {
+    
+    inline def setAutofit(value: Autofit): Self = StObject.set(x, "autofit", value.asInstanceOf[js.Any])
+    
+    inline def setAutofitUndefined: Self = StObject.set(x, "autofit", js.undefined)
     
     inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
     

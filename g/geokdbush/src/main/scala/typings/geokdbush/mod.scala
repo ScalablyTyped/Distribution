@@ -20,7 +20,7 @@ object mod {
     latitude: Double,
     maxResults: Double,
     maxDistance: Double,
-    filterFn: js.Any
+    filterFn: Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def around[T](
     index: KDBush[T],
@@ -28,7 +28,7 @@ object mod {
     latitude: Double,
     maxResults: Double,
     maxDistance: Unit,
-    filterFn: js.Any
+    filterFn: Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Unit, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def around[T](
@@ -37,7 +37,7 @@ object mod {
     latitude: Double,
     maxResults: Unit,
     maxDistance: Double,
-    filterFn: js.Any
+    filterFn: Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def around[T](
     index: KDBush[T],
@@ -45,7 +45,7 @@ object mod {
     latitude: Double,
     maxResults: Unit,
     maxDistance: Unit,
-    filterFn: js.Any
+    filterFn: Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def distance(longitude1: Double, latitude1: Double, longitude2: Double, latitude2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(longitude1.asInstanceOf[js.Any], latitude1.asInstanceOf[js.Any], longitude2.asInstanceOf[js.Any], latitude2.asInstanceOf[js.Any])).asInstanceOf[Double]

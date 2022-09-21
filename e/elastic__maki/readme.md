@@ -10,10 +10,10 @@ Pixel-perfect icons for web cartography
 | ------------------ | :-------------: |
 | Full name          | @elastic/maki |
 | Keywords           | map, icon, poi, svg |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 108897 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12244.666666666666 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/elastic/maki)

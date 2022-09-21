@@ -27,7 +27,7 @@ trait NamedQuery extends StObject {
   var NamedQueryId: js.UndefOr[typings.awsSdk.athenaMod.NamedQueryId] = js.undefined
   
   /**
-    * The SQL query statements that comprise the query.
+    * The SQL statements that make up the query.
     */
   var QueryString: typings.awsSdk.athenaMod.QueryString
   

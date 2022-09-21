@@ -12,7 +12,7 @@ trait AppointmentResizingEventArgs
   
   val appointmentId: String
   
-  val mouseEvent: js.Any
+  val mouseEvent: Any
   
   val newInterval: BootstrapTimeInterval
   
@@ -23,7 +23,7 @@ object AppointmentResizingEventArgs {
   inline def apply(
     allow: Boolean,
     appointmentId: String,
-    mouseEvent: js.Any,
+    mouseEvent: Any,
     newInterval: BootstrapTimeInterval,
     oldInterval: BootstrapTimeInterval,
     sender: Control
@@ -38,7 +38,7 @@ object AppointmentResizingEventArgs {
     
     inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    inline def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+    inline def setMouseEvent(value: Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
     
     inline def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     

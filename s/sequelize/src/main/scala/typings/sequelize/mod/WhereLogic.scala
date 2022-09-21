@@ -1,6 +1,5 @@
 package typings.sequelize.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Logic of where statement
   */
-/* Inlined std.Partial<{  $ne :string | number | sequelize.sequelize.WhereLogic,   $in :std.Array<string | number> | sequelize.sequelize.literal,   $not :boolean | string | number | sequelize.sequelize.AnyWhereOptions,   $notIn :std.Array<string | number> | sequelize.sequelize.literal,   $gte :number | string | std.Date,   $gt :number | string | std.Date,   $lte :number | string | std.Date,   $lt :number | string | std.Date,   $like :string | sequelize.sequelize.WherePGStatement,   $iLike :string | sequelize.sequelize.WherePGStatement,   $ilike :string | sequelize.sequelize.WherePGStatement,   $notLike :string | sequelize.sequelize.WherePGStatement,   $notILike :string | sequelize.sequelize.WherePGStatement,   $between :[number, number] | [std.Date, std.Date],   .. :[number, number] | [string, string],   $notBetween :[number, number],   !.. :[number, number] | [string, string],   $overlap :[number, number] | [string, string],   && :[number, number],   $contains :any,   @> :any,   $contained :any,   <@ :any}> */
+/* Inlined std.Partial<{  $ne :string | number | sequelize.sequelize.WhereLogic | null,   $in :std.Array<string | number> | sequelize.sequelize.literal,   $not :boolean | string | number | sequelize.sequelize.AnyWhereOptions | null,   $notIn :std.Array<string | number> | sequelize.sequelize.literal,   $gte :number | string | std.Date,   $gt :number | string | std.Date,   $lte :number | string | std.Date,   $lt :number | string | std.Date,   $like :string | sequelize.sequelize.WherePGStatement,   $iLike :string | sequelize.sequelize.WherePGStatement,   $ilike :string | sequelize.sequelize.WherePGStatement,   $notLike :string | sequelize.sequelize.WherePGStatement,   $notILike :string | sequelize.sequelize.WherePGStatement,   $between :[number, number] | [std.Date, std.Date],   .. :[number, number] | [string, string],   $notBetween :[number, number],   !.. :[number, number] | [string, string],   $overlap :[number, number] | [string, string],   && :[number, number],   $contains :any,   @> :any,   $contained :any,   <@ :any}> */
 trait WhereLogic extends StObject {
   
   @JSName("$between")
-  var $between: js.UndefOr[js.Tuple2[Date | Double, Date | Double]] = js.undefined
+  var $between: js.UndefOr[js.Tuple2[js.Date | Double, js.Date | Double]] = js.undefined
   
   @JSName("$contained")
-  var $contained: js.UndefOr[js.Any] = js.undefined
+  var $contained: js.UndefOr[Any] = js.undefined
   
   @JSName("$contains")
-  var $contains: js.UndefOr[js.Any] = js.undefined
+  var $contains: js.UndefOr[Any] = js.undefined
   
   @JSName("$gt")
-  var $gt: js.UndefOr[Double | String | Date] = js.undefined
+  var $gt: js.UndefOr[Double | String | js.Date] = js.undefined
   
   @JSName("$gte")
-  var $gte: js.UndefOr[Double | String | Date] = js.undefined
+  var $gte: js.UndefOr[Double | String | js.Date] = js.undefined
   
   @JSName("$iLike")
   var $iLike: js.UndefOr[String | WherePGStatement] = js.undefined
@@ -39,16 +38,16 @@ trait WhereLogic extends StObject {
   var $like: js.UndefOr[String | WherePGStatement] = js.undefined
   
   @JSName("$lt")
-  var $lt: js.UndefOr[Double | String | Date] = js.undefined
+  var $lt: js.UndefOr[Double | String | js.Date] = js.undefined
   
   @JSName("$lte")
-  var $lte: js.UndefOr[Double | String | Date] = js.undefined
+  var $lte: js.UndefOr[Double | String | js.Date] = js.undefined
   
   @JSName("$ne")
-  var $ne: js.UndefOr[String | Double | WhereLogic] = js.undefined
+  var $ne: js.UndefOr[String | Double | WhereLogic | Null] = js.undefined
   
   @JSName("$not")
-  var $not: js.UndefOr[Boolean | String | Double | AnyWhereOptions] = js.undefined
+  var $not: js.UndefOr[Boolean | String | Double | AnyWhereOptions | Null] = js.undefined
   
   @JSName("$notBetween")
   var $notBetween: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
@@ -66,7 +65,7 @@ trait WhereLogic extends StObject {
   var $overlap: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
   
   @JSName("@>")
-  var `@Greaterthansign`: js.UndefOr[js.Any] = js.undefined
+  var `@Greaterthansign`: js.UndefOr[Any] = js.undefined
   
   @JSName("&&")
   var AmpersandAmpersand: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
@@ -78,7 +77,7 @@ trait WhereLogic extends StObject {
   var ExclamationmarkDotDot: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
   
   @JSName("<@")
-  var `Lessthansign@`: js.UndefOr[js.Any] = js.undefined
+  var `Lessthansign@`: js.UndefOr[Any] = js.undefined
 }
 object WhereLogic {
   
@@ -89,23 +88,23 @@ object WhereLogic {
   
   extension [Self <: WhereLogic](x: Self) {
     
-    inline def set$between(value: js.Tuple2[Date | Double, Date | Double]): Self = StObject.set(x, "$between", value.asInstanceOf[js.Any])
+    inline def set$between(value: js.Tuple2[js.Date | Double, js.Date | Double]): Self = StObject.set(x, "$between", value.asInstanceOf[js.Any])
     
     inline def set$betweenUndefined: Self = StObject.set(x, "$between", js.undefined)
     
-    inline def set$contained(value: js.Any): Self = StObject.set(x, "$contained", value.asInstanceOf[js.Any])
+    inline def set$contained(value: Any): Self = StObject.set(x, "$contained", value.asInstanceOf[js.Any])
     
     inline def set$containedUndefined: Self = StObject.set(x, "$contained", js.undefined)
     
-    inline def set$contains(value: js.Any): Self = StObject.set(x, "$contains", value.asInstanceOf[js.Any])
+    inline def set$contains(value: Any): Self = StObject.set(x, "$contains", value.asInstanceOf[js.Any])
     
     inline def set$containsUndefined: Self = StObject.set(x, "$contains", js.undefined)
     
-    inline def set$gt(value: Double | String | Date): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
+    inline def set$gt(value: Double | String | js.Date): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
     
     inline def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
     
-    inline def set$gte(value: Double | String | Date): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
+    inline def set$gte(value: Double | String | js.Date): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
     
     inline def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
     
@@ -117,21 +116,23 @@ object WhereLogic {
     
     inline def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
     
-    inline def set$inVarargs(value: (String | Double)*): Self = StObject.set(x, "$in", js.Array(value :_*))
+    inline def set$inVarargs(value: (String | Double)*): Self = StObject.set(x, "$in", js.Array(value*))
     
     inline def set$like(value: String | WherePGStatement): Self = StObject.set(x, "$like", value.asInstanceOf[js.Any])
     
     inline def set$likeUndefined: Self = StObject.set(x, "$like", js.undefined)
     
-    inline def set$lt(value: Double | String | Date): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
+    inline def set$lt(value: Double | String | js.Date): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
     
     inline def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
     
-    inline def set$lte(value: Double | String | Date): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
+    inline def set$lte(value: Double | String | js.Date): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
     
     inline def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
     
     inline def set$ne(value: String | Double | WhereLogic): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
+    
+    inline def set$neNull: Self = StObject.set(x, "$ne", null)
     
     inline def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
     
@@ -149,11 +150,13 @@ object WhereLogic {
     
     inline def set$notInUndefined: Self = StObject.set(x, "$notIn", js.undefined)
     
-    inline def set$notInVarargs(value: (String | Double)*): Self = StObject.set(x, "$notIn", js.Array(value :_*))
+    inline def set$notInVarargs(value: (String | Double)*): Self = StObject.set(x, "$notIn", js.Array(value*))
     
     inline def set$notLike(value: String | WherePGStatement): Self = StObject.set(x, "$notLike", value.asInstanceOf[js.Any])
     
     inline def set$notLikeUndefined: Self = StObject.set(x, "$notLike", js.undefined)
+    
+    inline def set$notNull: Self = StObject.set(x, "$not", null)
     
     inline def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
     
@@ -161,7 +164,7 @@ object WhereLogic {
     
     inline def set$overlapUndefined: Self = StObject.set(x, "$overlap", js.undefined)
     
-    inline def `set@Greaterthansign`(value: js.Any): Self = StObject.set(x, "@>", value.asInstanceOf[js.Any])
+    inline def `set@Greaterthansign`(value: Any): Self = StObject.set(x, "@>", value.asInstanceOf[js.Any])
     
     inline def `set@GreaterthansignUndefined`: Self = StObject.set(x, "@>", js.undefined)
     
@@ -177,7 +180,7 @@ object WhereLogic {
     
     inline def setExclamationmarkDotDotUndefined: Self = StObject.set(x, "!..", js.undefined)
     
-    inline def `setLessthansign@`(value: js.Any): Self = StObject.set(x, "<@", value.asInstanceOf[js.Any])
+    inline def `setLessthansign@`(value: Any): Self = StObject.set(x, "<@", value.asInstanceOf[js.Any])
     
     inline def `setLessthansign@Undefined`: Self = StObject.set(x, "<@", js.undefined)
   }

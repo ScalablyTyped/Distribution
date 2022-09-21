@@ -34,7 +34,7 @@ object XAccessibleTextSelection {
     getSelectedPortionCount: () => Double,
     getSeletedPositionEnd: Double => Double,
     getSeletedPositionStart: Double => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSelection: Double => Boolean,
     scrollToPosition: (Point, Boolean) => Boolean

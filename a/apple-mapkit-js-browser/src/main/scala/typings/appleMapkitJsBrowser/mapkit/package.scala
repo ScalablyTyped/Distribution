@@ -1,39 +1,28 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import typings.appleMapkitJsBrowser.anon.DisplayRegion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AutocompleteSearchCallback = js.Function2[
-/* error */ typings.std.Error | scala.Null, 
-/* data */ typings.appleMapkitJsBrowser.mapkit.SearchAutocompleteResponse, 
-scala.Unit]
+type AutocompleteSearchCallback = js.Function2[/* error */ js.Error | Null, /* data */ SearchAutocompleteResponse, Unit]
 
 /**
   * A customized annotation with image resources that you provide.
   */
-type ImageAnnotation = typings.appleMapkitJsBrowser.mapkit.Annotation
+type ImageAnnotation = Annotation
 
-type ImportGeoJSONCallback = js.Function2[
-/* error */ typings.std.Error, 
-/* result */ typings.appleMapkitJsBrowser.mapkit.ItemCollection, 
-scala.Unit]
+type ImportGeoJSONCallback = js.Function2[/* error */ js.Error, /* result */ ItemCollection, Unit]
 
-type PointsOfInterestSearchCallback = js.Function2[
-/* error */ typings.std.Error | scala.Null, 
-/* data */ typings.appleMapkitJsBrowser.mapkit.PointsOfInterestSearchResponse, 
-scala.Unit]
+type PointsOfInterestSearchCallback = js.Function2[/* error */ js.Error | Null, /* data */ PointsOfInterestSearchResponse, Unit]
 
-type SearchCallback[Q] = js.Function2[
-/* error */ typings.std.Error | scala.Null, 
-/* data */ typings.appleMapkitJsBrowser.anon.DisplayRegion[Q], 
-scala.Unit]
+type SearchCallback[Q] = js.Function2[/* error */ js.Error | Null, /* data */ DisplayRegion[Q], Unit]
 
 type URLTemplateCallback = js.Function5[
-/* x */ scala.Double, 
-/* y */ scala.Double, 
-/* z */ scala.Double, 
-/* scale */ scala.Double, 
+/* x */ Double, 
+/* y */ Double, 
+/* z */ Double, 
+/* scale */ Double, 
 /* data */ js.Object, 
-java.lang.String]
+String]

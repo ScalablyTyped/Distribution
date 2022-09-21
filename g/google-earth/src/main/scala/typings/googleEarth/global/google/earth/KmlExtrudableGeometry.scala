@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlExtrudableGeometry")
 @js.native
-class KmlExtrudableGeometry ()
+open class KmlExtrudableGeometry ()
   extends StObject
      with typings.googleEarth.google.earth.KmlExtrudableGeometry {
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NatGatewayAddress extends StObject {
   
   /**
-    * The allocation ID of the Elastic IP address that's associated with the NAT gateway.
+    * [Public NAT gateway only] The allocation ID of the Elastic IP address that's associated with the NAT gateway.
     */
   var AllocationId: js.UndefOr[String] = js.undefined
   
@@ -17,12 +17,12 @@ trait NatGatewayAddress extends StObject {
   var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
-    * The private IP address associated with the Elastic IP address.
+    * The private IP address associated with the NAT gateway.
     */
   var PrivateIp: js.UndefOr[String] = js.undefined
   
   /**
-    * The Elastic IP address associated with the NAT gateway.
+    * [Public NAT gateway only] The Elastic IP address associated with the NAT gateway.
     */
   var PublicIp: js.UndefOr[String] = js.undefined
 }

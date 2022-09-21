@@ -11,5 +11,5 @@ object createIconSetFromIcoMoonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): Icon[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[String, String]]
+  inline def default(config: Any, expoFontName: Any, expoAssetId: Any): Icon[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[String, String]]
 }

@@ -26,6 +26,6 @@ object MobileAppContent {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: MobileAppContentFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: MobileAppContentFile*): Self = StObject.set(x, "files", js.Array(value*))
   }
 }

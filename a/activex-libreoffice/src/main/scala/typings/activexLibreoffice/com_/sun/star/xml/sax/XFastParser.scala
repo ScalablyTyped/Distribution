@@ -100,7 +100,7 @@ object XFastParser {
     acquire: () => Unit,
     getNamespaceURL: String => String,
     parseStream: InputSource => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerNamespace: (String, Double) => Unit,
     release: () => Unit,
     setEntityResolver: XEntityResolver => Unit,

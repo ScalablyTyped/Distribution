@@ -52,7 +52,7 @@ object XFormLayerAccess {
     getControl: XControlModel => XControl,
     getFormController: XForm => XFormController,
     isFormDesignMode: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFormDesignMode: Boolean => Unit
   ): XFormLayerAccess = {

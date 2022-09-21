@@ -1,0 +1,51 @@
+package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaDlpScanSummary extends StObject {
+  
+  /**
+    * The scan ID of the corresponding {@link DlpViolationScanRecord\} in the {@link EphemeralDlpScans\} Spanner table. This can be used to fetch additional details about the scan, e.g. for audit logging.
+    */
+  var scanId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Indicates that was no attempt to scan a message or attachment because it was not applicable in the given context (e.g. atomic mutuate). If this is true, scan_outcome should not be set. This flag is used to identify messages that DLP did not attempt to scan for monitoring scan coverage. Contents that DLP attempted to scan but skipped can be identified by DlpScanOutcome.SCAN_SKIPPED_* reasons.
+    */
+  var scanNotApplicableForContext: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * The outcome of a DLP Scan. If this is set, scan_not_applicable_for_context should not be true.
+    */
+  var scanOutcome: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaDlpScanSummary {
+  
+  inline def apply(): SchemaDlpScanSummary = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaDlpScanSummary]
+  }
+  
+  extension [Self <: SchemaDlpScanSummary](x: Self) {
+    
+    inline def setScanId(value: String): Self = StObject.set(x, "scanId", value.asInstanceOf[js.Any])
+    
+    inline def setScanIdNull: Self = StObject.set(x, "scanId", null)
+    
+    inline def setScanIdUndefined: Self = StObject.set(x, "scanId", js.undefined)
+    
+    inline def setScanNotApplicableForContext(value: Boolean): Self = StObject.set(x, "scanNotApplicableForContext", value.asInstanceOf[js.Any])
+    
+    inline def setScanNotApplicableForContextNull: Self = StObject.set(x, "scanNotApplicableForContext", null)
+    
+    inline def setScanNotApplicableForContextUndefined: Self = StObject.set(x, "scanNotApplicableForContext", js.undefined)
+    
+    inline def setScanOutcome(value: String): Self = StObject.set(x, "scanOutcome", value.asInstanceOf[js.Any])
+    
+    inline def setScanOutcomeNull: Self = StObject.set(x, "scanOutcome", null)
+    
+    inline def setScanOutcomeUndefined: Self = StObject.set(x, "scanOutcome", js.undefined)
+  }
+}

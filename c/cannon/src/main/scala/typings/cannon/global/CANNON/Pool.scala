@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Pool")
 @js.native
-class Pool ()
+open class Pool ()
   extends StObject
      with typings.cannon.CANNON.Pool {
   
   /* CompleteClass */
-  override def constructObject(): js.Any = js.native
+  override def constructObject(): Any = js.native
   
   /* CompleteClass */
-  override def get(): js.Any = js.native
+  override def get(): Any = js.native
   
   /* CompleteClass */
-  var objects: js.Array[js.Any] = js.native
+  var objects: js.Array[Any] = js.native
   
   /* CompleteClass */
-  override def release(): js.Any = js.native
+  override def release(): Any = js.native
   
   /* CompleteClass */
-  var `type`: js.Array[js.Any] = js.native
+  var `type`: js.Array[Any] = js.native
 }

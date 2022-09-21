@@ -31,7 +31,7 @@ object Cover {
     
     inline def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
-    inline def `setMedia-colVarargs`(value: MediaInterface*): Self = StObject.set(x, "media-col", js.Array(value :_*))
+    inline def `setMedia-colVarargs`(value: MediaInterface*): Self = StObject.set(x, "media-col", js.Array(value*))
     
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }

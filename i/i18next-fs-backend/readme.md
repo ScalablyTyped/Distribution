@@ -1,7 +1,7 @@
 
 # Scala.js typings for i18next-fs-backend
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 i18next-fs-backend is a backend layer for i18next using in Node.js and for Deno to load translations from the filesystem.
@@ -10,10 +10,10 @@ i18next-fs-backend is a backend layer for i18next using in Node.js and for Deno 
 | ------------------ | :-------------: |
 | Full name          | i18next-fs-backend |
 | Keywords           | i18next, i18next-backend, i18next-fs-backend |
-| # releases         | 12 |
-| # dependents       | 19 |
-| # downloads        | 1755587 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1322361.6666666667 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/i18next/i18next-fs-backend)

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateContactFlowNameRequest extends StObject {
   
   /**
-    * The identifier of the contact flow.
+    * The identifier of the flow.
     */
   var ContactFlowId: typings.awsSdk.connectMod.ContactFlowId
   
   /**
-    * The description of the contact flow.
+    * The description of the flow.
     */
   var Description: js.UndefOr[ContactFlowDescription] = js.undefined
   
@@ -22,7 +22,7 @@ trait UpdateContactFlowNameRequest extends StObject {
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * The name of the contact flow.
+    * The name of the flow.
     */
   var Name: js.UndefOr[ContactFlowName] = js.undefined
 }

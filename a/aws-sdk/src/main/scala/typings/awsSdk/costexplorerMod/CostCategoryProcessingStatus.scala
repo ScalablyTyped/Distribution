@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CostCategoryProcessingStatus extends StObject {
   
   /**
-    *  The Cost Management product name of the applied status. 
+    * The Cost Management product name of the applied status. 
     */
   var Component: js.UndefOr[CostCategoryStatusComponent] = js.undefined
   
   /**
-    *  The process status for a specific cost category. 
+    * The process status for a specific cost category. 
     */
   var Status: js.UndefOr[CostCategoryStatus] = js.undefined
 }

@@ -1,6 +1,5 @@
 package typings.tabris.mod
 
-import typings.tabris.Blob
 import typings.tabris.tabrisStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,13 +13,13 @@ trait ImageLikeObject
   
   var scale: js.UndefOr[Double | auto] = js.undefined
   
-  var src: String | ImageBitmap | Blob
+  var src: ImageSource
   
   var width: js.UndefOr[Double | auto] = js.undefined
 }
 object ImageLikeObject {
   
-  inline def apply(src: String | ImageBitmap | Blob): ImageLikeObject = {
+  inline def apply(src: ImageSource): ImageLikeObject = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLikeObject]
   }
@@ -35,7 +34,7 @@ object ImageLikeObject {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setSrc(value: String | ImageBitmap | Blob): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: ImageSource): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

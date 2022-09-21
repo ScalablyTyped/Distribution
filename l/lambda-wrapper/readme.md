@@ -10,10 +10,10 @@ Wrapper for running Amazon Lambda modules locally
 | ------------------ | :-------------: |
 | Full name          | lambda-wrapper |
 | Keywords           | AWS, lambda, local |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 890616 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 65768.66666666667 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/nordcloud/lambda-wrapper)

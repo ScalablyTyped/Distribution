@@ -18,12 +18,12 @@ trait Row extends StObject {
   val Cells: typings.activexWord.Word.Cells = js.native
   
   def ConvertToText(): typings.activexWord.Word.Range = js.native
-  def ConvertToText(Separator: js.Any): typings.activexWord.Word.Range = js.native
-  def ConvertToText(Separator: js.Any, NestedTables: js.Any): typings.activexWord.Word.Range = js.native
-  def ConvertToText(Separator: Unit, NestedTables: js.Any): typings.activexWord.Word.Range = js.native
+  def ConvertToText(Separator: Any): typings.activexWord.Word.Range = js.native
+  def ConvertToText(Separator: Any, NestedTables: Any): typings.activexWord.Word.Range = js.native
+  def ConvertToText(Separator: Unit, NestedTables: Any): typings.activexWord.Word.Range = js.native
   
   def ConvertToTextOld(): typings.activexWord.Word.Range = js.native
-  def ConvertToTextOld(Separator: js.Any): typings.activexWord.Word.Range = js.native
+  def ConvertToTextOld(Separator: Any): typings.activexWord.Word.Range = js.native
   
   val Creator: Double = js.native
   
@@ -49,7 +49,7 @@ trait Row extends StObject {
   
   val Next: Row = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Previous: Row = js.native
   

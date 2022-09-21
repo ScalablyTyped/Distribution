@@ -25,7 +25,7 @@ object MasterAuthorizedNetworksConfig {
     
     inline def setCidrBlocksUndefined: Self = StObject.set(x, "cidrBlocks", js.undefined)
     
-    inline def setCidrBlocksVarargs(value: CidrBlock*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
+    inline def setCidrBlocksVarargs(value: CidrBlock*): Self = StObject.set(x, "cidrBlocks", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

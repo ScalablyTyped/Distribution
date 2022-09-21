@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.ValueBase")
 @js.native
-class ValueBase () extends StObject
+open class ValueBase () extends StObject

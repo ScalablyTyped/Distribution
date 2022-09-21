@@ -3,8 +3,8 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
-import typings.react.mod.StatelessComponent
 import typings.reactDataGrid.anon.EnableShiftSelect
 import typings.reactDataGrid.anon.Idx
 import typings.reactDataGrid.reactDataGridStrings.ASC
@@ -44,7 +44,7 @@ trait GridProps[T] extends StObject {
   /**
     * A component to display when there are no rows to render.
     */
-  var emptyRowsView: js.UndefOr[(ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]] = js.undefined
+  var emptyRowsView: js.UndefOr[(ComponentClass[Any, ComponentState]) | FunctionComponent[Any]] = js.undefined
   
   /**
     * Enables cells to be selected when clicked.
@@ -70,7 +70,7 @@ trait GridProps[T] extends StObject {
     js.Function2[/* column */ Column[T], /* row */ T, js.Array[ActionButton | ActionMenu]]
   ] = js.undefined
   
-  var getSubRowDetails: js.UndefOr[js.Function1[/* row */ T, SubRowDetails[js.Any]]] = js.undefined
+  var getSubRowDetails: js.UndefOr[js.Function1[/* row */ T, SubRowDetails[Any]]] = js.undefined
   
   /**
     * Responsible for returning an Array of values that can be used for filtering
@@ -78,7 +78,7 @@ trait GridProps[T] extends StObject {
     * displays a list of options.
     * @param columnKey the column key that we are looking to pull values from
     */
-  var getValidFilterValues: js.UndefOr[js.Function1[/* columnKey */ String, js.Array[js.Any]]] = js.undefined
+  var getValidFilterValues: js.UndefOr[js.Function1[/* columnKey */ String, js.Array[Any]]] = js.undefined
   
   /**
     * The height of the header filter row in pixels.
@@ -220,7 +220,7 @@ trait GridProps[T] extends StObject {
     * A custom formatter for select row column
     * @default AdazzleReactDataGridPlugins.Editors.CheckboxEditor
     */
-  var rowActionsCell: js.UndefOr[(ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]] = js.undefined
+  var rowActionsCell: js.UndefOr[(ComponentClass[Any, ComponentState]) | FunctionComponent[Any]] = js.undefined
   
   /**
     * Gets the data to render in each row. Required.
@@ -250,9 +250,7 @@ trait GridProps[T] extends StObject {
     * A react component to customize how rows are rendered.
     * If you want to define your own, consider extending ReactDataGrid.Row.
     */
-  var rowRenderer: js.UndefOr[
-    ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
-  ] = js.undefined
+  var rowRenderer: js.UndefOr[ReactElement | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]] = js.undefined
   
   /**
     * How long to wait before rendering a new row while scrolling in milliseconds.
@@ -274,7 +272,7 @@ trait GridProps[T] extends StObject {
     * A custom formatter for the select all checkbox cell
     * @default react-data-grid/src/formatters/SelectAll.js
     */
-  var selectAllRenderer: js.UndefOr[(ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]] = js.undefined
+  var selectAllRenderer: js.UndefOr[(ComponentClass[Any, ComponentState]) | FunctionComponent[Any]] = js.undefined
   
   /**
     * key of the initial sorted column
@@ -309,13 +307,13 @@ object GridProps {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: Column[T]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column[T]*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setContextMenu(value: ReactElement): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setEmptyRowsView(value: (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "emptyRowsView", value.asInstanceOf[js.Any])
+    inline def setEmptyRowsView(value: (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]): Self = StObject.set(x, "emptyRowsView", value.asInstanceOf[js.Any])
     
     inline def setEmptyRowsViewUndefined: Self = StObject.set(x, "emptyRowsView", js.undefined)
     
@@ -335,11 +333,11 @@ object GridProps {
     
     inline def setGetCellActionsUndefined: Self = StObject.set(x, "getCellActions", js.undefined)
     
-    inline def setGetSubRowDetails(value: /* row */ T => SubRowDetails[js.Any]): Self = StObject.set(x, "getSubRowDetails", js.Any.fromFunction1(value))
+    inline def setGetSubRowDetails(value: /* row */ T => SubRowDetails[Any]): Self = StObject.set(x, "getSubRowDetails", js.Any.fromFunction1(value))
     
     inline def setGetSubRowDetailsUndefined: Self = StObject.set(x, "getSubRowDetails", js.undefined)
     
-    inline def setGetValidFilterValues(value: /* columnKey */ String => js.Array[js.Any]): Self = StObject.set(x, "getValidFilterValues", js.Any.fromFunction1(value))
+    inline def setGetValidFilterValues(value: /* columnKey */ String => js.Array[Any]): Self = StObject.set(x, "getValidFilterValues", js.Any.fromFunction1(value))
     
     inline def setGetValidFilterValuesUndefined: Self = StObject.set(x, "getValidFilterValues", js.undefined)
     
@@ -427,7 +425,7 @@ object GridProps {
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setRowActionsCell(value: (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "rowActionsCell", value.asInstanceOf[js.Any])
+    inline def setRowActionsCell(value: (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]): Self = StObject.set(x, "rowActionsCell", value.asInstanceOf[js.Any])
     
     inline def setRowActionsCellUndefined: Self = StObject.set(x, "rowActionsCell", js.undefined)
     
@@ -435,7 +433,7 @@ object GridProps {
     
     inline def setRowGetterFunction1(value: /* rowIdx */ Double => T): Self = StObject.set(x, "rowGetter", js.Any.fromFunction1(value))
     
-    inline def setRowGetterVarargs(value: T*): Self = StObject.set(x, "rowGetter", js.Array(value :_*))
+    inline def setRowGetterVarargs(value: T*): Self = StObject.set(x, "rowGetter", js.Array(value*))
     
     inline def setRowGroupRenderer(value: ComponentType[js.Object]): Self = StObject.set(x, "rowGroupRenderer", value.asInstanceOf[js.Any])
     
@@ -449,7 +447,7 @@ object GridProps {
     
     inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
     
-    inline def setRowRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "rowRenderer", value.asInstanceOf[js.Any])
+    inline def setRowRenderer(value: ReactElement | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]): Self = StObject.set(x, "rowRenderer", value.asInstanceOf[js.Any])
     
     inline def setRowRendererUndefined: Self = StObject.set(x, "rowRenderer", js.undefined)
     
@@ -463,7 +461,7 @@ object GridProps {
     
     inline def setRowsCount(value: Double): Self = StObject.set(x, "rowsCount", value.asInstanceOf[js.Any])
     
-    inline def setSelectAllRenderer(value: (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "selectAllRenderer", value.asInstanceOf[js.Any])
+    inline def setSelectAllRenderer(value: (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]): Self = StObject.set(x, "selectAllRenderer", value.asInstanceOf[js.Any])
     
     inline def setSelectAllRendererUndefined: Self = StObject.set(x, "selectAllRenderer", js.undefined)
     

@@ -32,16 +32,16 @@ object treeViewMod {
   
   @JSImport("fundamental-react/lib/TreeView/TreeView", JSImport.Default)
   @js.native
-  class default () extends TreeView
+  open class default () extends TreeView
   object default {
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch")
     @js.native
-    class Branch protected ()
-      extends Component[js.Object, ComponentState, js.Any] {
+    open class Branch protected ()
+      extends Component[js.Object, ComponentState, Any] {
       def this(props: js.Object) = this()
-      def this(props: js.Object, context: js.Any) = this()
+      def this(props: js.Object, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<{}, react.react.ComponentState> & {  displayName :'TreeView.Branch'} */
@@ -53,18 +53,18 @@ object treeViewMod {
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.defaultProps")
       @js.native
@@ -95,10 +95,9 @@ object treeViewMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col")
     @js.native
-    class Col protected ()
-      extends Component[TreeColProps, ComponentState, js.Any] {
+    open class Col protected () extends Component[TreeColProps, ComponentState, Any] {
       def this(props: TreeColProps) = this()
-      def this(props: TreeColProps, context: js.Any) = this()
+      def this(props: TreeColProps, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/TreeView/TreeView.TreeColProps, react.react.ComponentState> & {  displayName :'TreeView.Col'} */
@@ -110,18 +109,18 @@ object treeViewMod {
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.defaultProps")
       @js.native
@@ -152,10 +151,9 @@ object treeViewMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head")
     @js.native
-    class Head protected ()
-      extends Component[TreeHeadProps, ComponentState, js.Any] {
+    open class Head protected () extends Component[TreeHeadProps, ComponentState, Any] {
       def this(props: TreeHeadProps) = this()
-      def this(props: TreeHeadProps, context: js.Any) = this()
+      def this(props: TreeHeadProps, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/TreeView/TreeView.TreeHeadProps, react.react.ComponentState> & {  displayName :'TreeView.Head'} */
@@ -167,18 +165,18 @@ object treeViewMod {
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.defaultProps")
       @js.native
@@ -209,10 +207,9 @@ object treeViewMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item")
     @js.native
-    class Item protected ()
-      extends Component[TreeItemProps, ComponentState, js.Any] {
+    open class Item protected () extends Component[TreeItemProps, ComponentState, Any] {
       def this(props: TreeItemProps) = this()
-      def this(props: TreeItemProps, context: js.Any) = this()
+      def this(props: TreeItemProps, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/TreeView/TreeView.TreeItemProps, react.react.ComponentState> & {  displayName :'TreeView.Item'} */
@@ -224,18 +221,18 @@ object treeViewMod {
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.defaultProps")
       @js.native
@@ -266,10 +263,9 @@ object treeViewMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row")
     @js.native
-    class Row protected ()
-      extends Component[TreeRowProps, ComponentState, js.Any] {
+    open class Row protected () extends Component[TreeRowProps, ComponentState, Any] {
       def this(props: TreeRowProps) = this()
-      def this(props: TreeRowProps, context: js.Any) = this()
+      def this(props: TreeRowProps, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/TreeView/TreeView.TreeRowProps, react.react.ComponentState> & {  displayName :'TreeView.Row'} */
@@ -281,18 +277,18 @@ object treeViewMod {
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.defaultProps")
       @js.native
@@ -323,10 +319,10 @@ object treeViewMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree")
     @js.native
-    class Tree protected ()
-      extends Component[js.Object, ComponentState, js.Any] {
+    open class Tree protected ()
+      extends Component[js.Object, ComponentState, Any] {
       def this(props: js.Object) = this()
-      def this(props: js.Object, context: js.Any) = this()
+      def this(props: js.Object, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<{}, react.react.ComponentState> & {  displayName :'TreeView.Tree'} */
@@ -338,18 +334,18 @@ object treeViewMod {
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.defaultProps")
       @js.native
@@ -393,11 +389,11 @@ object treeViewMod {
     extends StObject
        with HTMLAttributes[HTMLDivElement] {
     
-    var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var buttonProps: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var isExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var onExpandAll: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onExpandAll: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   }
   object TreeHeadProps {
     
@@ -408,7 +404,7 @@ object treeViewMod {
     
     extension [Self <: TreeHeadProps](x: Self) {
       
-      inline def setButtonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+      inline def setButtonProps(value: StringDictionary[Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
       inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
       
@@ -416,7 +412,7 @@ object treeViewMod {
       
       inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      inline def setOnExpandAll(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onExpandAll", js.Any.fromFunction1(value))
+      inline def setOnExpandAll(value: /* repeated */ Any => Any): Self = StObject.set(x, "onExpandAll", js.Any.fromFunction1(value))
       
       inline def setOnExpandAllUndefined: Self = StObject.set(x, "onExpandAll", js.undefined)
     }
@@ -457,7 +453,7 @@ object treeViewMod {
     
     var isParent: js.UndefOr[Boolean] = js.undefined
     
-    var onExpandClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onExpandClick: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var rowId: js.UndefOr[String] = js.undefined
   }
@@ -478,7 +474,7 @@ object treeViewMod {
       
       inline def setIsParentUndefined: Self = StObject.set(x, "isParent", js.undefined)
       
-      inline def setOnExpandClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onExpandClick", js.Any.fromFunction1(value))
+      inline def setOnExpandClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onExpandClick", js.Any.fromFunction1(value))
       
       inline def setOnExpandClickUndefined: Self = StObject.set(x, "onExpandClick", js.undefined)
       
@@ -490,7 +486,7 @@ object treeViewMod {
   
   @js.native
   trait TreeView
-    extends Component[TreeViewProps, js.Object, js.Any] {
+    extends Component[TreeViewProps, js.Object, Any] {
     
     var displayName: typings.fundamentalReact.fundamentalReactStrings.TreeView = js.native
   }

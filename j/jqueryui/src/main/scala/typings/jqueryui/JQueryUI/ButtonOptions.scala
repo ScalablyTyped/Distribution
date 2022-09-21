@@ -12,7 +12,7 @@ trait ButtonOptions extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.undefined
+  var icons: js.UndefOr[Any] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -35,7 +35,7 @@ object ButtonOptions {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     

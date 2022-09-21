@@ -162,7 +162,7 @@ trait Map extends StObject {
   def setView(viewOptions: IViewOptions): Unit = js.native
   
   def tryLocationToPixel(location: js.Array[Location]): Point | js.Array[Point] = js.native
-  def tryLocationToPixel(location: js.Array[Location], reference: js.Any): Point | js.Array[Point] = js.native
+  def tryLocationToPixel(location: js.Array[Location], reference: Any): Point | js.Array[Point] = js.native
   /**
     * Converts a specified Location or a Location array to a Point or Point array on the map
     * relative to the specified PixelReference. If no reference is specified, PixelReference.viewport
@@ -172,10 +172,10 @@ trait Map extends StObject {
     * @returns The converted Point or Point[], or null if the conversion fails.
     */
   def tryLocationToPixel(location: Location): Point | js.Array[Point] = js.native
-  def tryLocationToPixel(location: Location, reference: js.Any): Point | js.Array[Point] = js.native
+  def tryLocationToPixel(location: Location, reference: Any): Point | js.Array[Point] = js.native
   
   def tryPixelToLocation(point: js.Array[Point]): Location | js.Array[Location] = js.native
-  def tryPixelToLocation(point: js.Array[Point], reference: js.Any): Location | js.Array[Location] = js.native
+  def tryPixelToLocation(point: js.Array[Point], reference: Any): Location | js.Array[Location] = js.native
   /**
     * Converts a specified Point or a Point array to a Location or Location array on the map
     * relative to the specified PixelReference. If no reference is specified, PixelReference.viewport
@@ -185,5 +185,5 @@ trait Map extends StObject {
     * @returns The converted Location or Location[], or null if the conversion fails.
     */
   def tryPixelToLocation(point: Point): Location | js.Array[Location] = js.native
-  def tryPixelToLocation(point: Point, reference: js.Any): Location | js.Array[Location] = js.native
+  def tryPixelToLocation(point: Point, reference: Any): Location | js.Array[Location] = js.native
 }

@@ -45,11 +45,11 @@ trait ExtensionRule extends StObject {
     */
   var validate: js.UndefOr[
     js.Function4[
-      /* value */ js.Any, 
-      /* helpers */ js.Any, 
-      /* args */ Record[String, js.Any], 
-      /* options */ js.Any, 
-      js.Any
+      /* value */ Any, 
+      /* helpers */ Any, 
+      /* args */ Record[String, Any], 
+      /* options */ Any, 
+      Any
     ]
   ] = js.undefined
 }
@@ -70,7 +70,7 @@ object ExtensionRule {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: (RuleArgs | String)*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: (RuleArgs | String)*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
@@ -93,7 +93,7 @@ object ExtensionRule {
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     inline def setValidate(
-      value: (/* value */ js.Any, /* helpers */ js.Any, /* args */ Record[String, js.Any], /* options */ js.Any) => js.Any
+      value: (/* value */ Any, /* helpers */ Any, /* args */ Record[String, Any], /* options */ Any) => Any
     ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)

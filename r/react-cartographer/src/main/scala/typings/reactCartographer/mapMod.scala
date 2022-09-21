@@ -12,12 +12,12 @@ object mapMod {
   
   @JSImport("react-cartographer/lib/components/Map", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MapProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MapProps, js.Object, Any]
   
   @JSImport("react-cartographer/lib/components/Map", "BingMapService")
   @js.native
-  class BingMapService () extends StObject {
+  open class BingMapService () extends StObject {
     
     def getMap(params: MapProps): MapObject = js.native
     
@@ -26,7 +26,7 @@ object mapMod {
   
   @JSImport("react-cartographer/lib/components/Map", "GoogleMapService")
   @js.native
-  class GoogleMapService () extends StObject {
+  open class GoogleMapService () extends StObject {
     
     def getMap(params: MapProps): MapObject = js.native
     
@@ -35,38 +35,38 @@ object mapMod {
   
   @JSImport("react-cartographer/lib/components/Map", "MapLocationFactory")
   @js.native
-  class MapLocationFactory () extends StObject {
+  open class MapLocationFactory () extends StObject {
     
     def getMap(params: MapProps): MapObject = js.native
   }
   
   @JSImport("react-cartographer/lib/components/Map", "YahooMapService")
   @js.native
-  class YahooMapService () extends StObject {
+  open class YahooMapService () extends StObject {
     
     def getMap(params: MapProps): MapObject = js.native
     
     def name(): String = js.native
   }
   
-  type Map = Component[MapProps, js.Object, js.Any]
+  type Map = Component[MapProps, js.Object, Any]
   
   trait MapData extends StObject {
     
-    var locationLink: js.Any
+    var locationLink: Any
     
     var locationText: String
   }
   object MapData {
     
-    inline def apply(locationLink: js.Any, locationText: String): MapData = {
+    inline def apply(locationLink: Any, locationText: String): MapData = {
       val __obj = js.Dynamic.literal(locationLink = locationLink.asInstanceOf[js.Any], locationText = locationText.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapData]
     }
     
     extension [Self <: MapData](x: Self) {
       
-      inline def setLocationLink(value: js.Any): Self = StObject.set(x, "locationLink", value.asInstanceOf[js.Any])
+      inline def setLocationLink(value: Any): Self = StObject.set(x, "locationLink", value.asInstanceOf[js.Any])
       
       inline def setLocationText(value: String): Self = StObject.set(x, "locationText", value.asInstanceOf[js.Any])
     }

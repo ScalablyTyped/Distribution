@@ -14,7 +14,7 @@ object eventManagerMod {
   
   @JSImport("wonder.js/dist/es2015/event/EventManager", "EventManager")
   @js.native
-  class EventManager () extends StObject
+  open class EventManager () extends StObject
   /* static members */
   object EventManager {
     
@@ -22,11 +22,11 @@ object eventManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def broadcast(target: EntityObject, event: Event): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def broadcast(target: EntityObject, event: Event, userData: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def broadcast(target: EntityObject, event: Event): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def broadcast(target: EntityObject, event: Event, userData: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def emit(target: EntityObject, event: Event): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def emit(target: EntityObject, event: Event, userData: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def emit(target: EntityObject, event: Event): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def emit(target: EntityObject, event: Event, userData: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def fromEvent(dom: HTMLElement, eventName: String): FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(dom.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[FromEventPatternStream]
     inline def fromEvent(dom: HTMLElement, eventName: String, priority: Double): FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(dom.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[FromEventPatternStream]
@@ -84,13 +84,13 @@ object eventManagerMod {
     inline def on(target: EntityObject, eventName: EEventName, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def on(target: EntityObject, eventName: EEventName, handler: js.Function, priority: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setBubbleParent(target: EntityObject, parent: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBubbleParent")(target.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setBubbleParent(target: EntityObject, parent: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBubbleParent")(target.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def trigger(dom: HTMLElement, event: Event): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(dom.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def trigger(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def trigger(event: Event, userData: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def trigger(event: Event, userData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def trigger(target: EntityObject, event: Event): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def trigger(target: EntityObject, event: Event, userData: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def trigger(target: EntityObject, event: Event, userData: js.Any, notSetTarget: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any], notSetTarget.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def trigger(target: EntityObject, event: Event, userData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def trigger(target: EntityObject, event: Event, userData: Any, notSetTarget: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], userData.asInstanceOf[js.Any], notSetTarget.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

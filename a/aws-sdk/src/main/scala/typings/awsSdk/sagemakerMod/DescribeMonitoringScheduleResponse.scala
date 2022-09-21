@@ -9,7 +9,7 @@ trait DescribeMonitoringScheduleResponse extends StObject {
   /**
     * The time at which the monitoring job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     *  The name of the endpoint for the monitoring job.
@@ -24,7 +24,7 @@ trait DescribeMonitoringScheduleResponse extends StObject {
   /**
     * The time at which the monitoring job was last modified.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
   
   /**
     * Describes metadata on the last execution to run, if there was one.
@@ -50,12 +50,17 @@ trait DescribeMonitoringScheduleResponse extends StObject {
     * The status of an monitoring job.
     */
   var MonitoringScheduleStatus: ScheduleStatus
+  
+  /**
+    * The type of the monitoring job that this schedule runs. This is one of the following values.    DATA_QUALITY - The schedule is for a data quality monitoring job.    MODEL_QUALITY - The schedule is for a model quality monitoring job.    MODEL_BIAS - The schedule is for a bias monitoring job.    MODEL_EXPLAINABILITY - The schedule is for an explainability monitoring job.  
+    */
+  var MonitoringType: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringType] = js.undefined
 }
 object DescribeMonitoringScheduleResponse {
   
   inline def apply(
-    CreationTime: Timestamp,
-    LastModifiedTime: Timestamp,
+    CreationTime: js.Date,
+    LastModifiedTime: js.Date,
     MonitoringScheduleArn: MonitoringScheduleArn,
     MonitoringScheduleConfig: MonitoringScheduleConfig,
     MonitoringScheduleName: MonitoringScheduleName,
@@ -67,7 +72,7 @@ object DescribeMonitoringScheduleResponse {
   
   extension [Self <: DescribeMonitoringScheduleResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
@@ -77,7 +82,7 @@ object DescribeMonitoringScheduleResponse {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastMonitoringExecutionSummary(value: MonitoringExecutionSummary): Self = StObject.set(x, "LastMonitoringExecutionSummary", value.asInstanceOf[js.Any])
     
@@ -90,5 +95,9 @@ object DescribeMonitoringScheduleResponse {
     inline def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
     
     inline def setMonitoringScheduleStatus(value: ScheduleStatus): Self = StObject.set(x, "MonitoringScheduleStatus", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringType(value: MonitoringType): Self = StObject.set(x, "MonitoringType", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringTypeUndefined: Self = StObject.set(x, "MonitoringType", js.undefined)
   }
 }

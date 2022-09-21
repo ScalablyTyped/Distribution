@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.WindowsCollection")
 @js.native
-/* private */ class WindowsCollection ()
+/* private */ open class WindowsCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.WindowsCollection {
   
@@ -18,5 +18,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var InfoPathDotWindowsCollection_typekey: typings.activexInfopath.InfoPath.WindowsCollection = js.native
   
   /* CompleteClass */
-  override def Item(varIndex: js.Any): typings.activexInfopath.InfoPath.Window = js.native
+  override def Item(varIndex: Any): typings.activexInfopath.InfoPath.Window = js.native
 }

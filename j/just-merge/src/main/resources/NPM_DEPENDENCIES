@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "just-merge" : "3.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "just-merge" : "3.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

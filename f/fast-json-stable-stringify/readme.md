@@ -10,10 +10,10 @@ deterministic `JSON.stringify()` - a faster version of substack's json-stable-st
 | ------------------ | :-------------: |
 | Full name          | fast-json-stable-stringify |
 | Keywords           | json, stringify, deterministic, hash, stable |
-| # releases         | 2 |
-| # dependents       | 303 |
-| # downloads        | 963280755 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2569238633333333E8 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/fast-json-stable-stringify)

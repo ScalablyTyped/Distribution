@@ -20,16 +20,12 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit], capture: Boolean): Unit = js.native
   def addEventListener(event: Unit, listener: Unit, capture: Boolean): Unit = js.native
   def addEventListener(event: PlusWebviewWebviewEvent): Unit = js.native
-  def addEventListener(event: PlusWebviewWebviewEvent, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(
-    event: PlusWebviewWebviewEvent,
-    listener: js.Function1[/* result */ js.Any, Unit],
-    capture: Boolean
-  ): Unit = js.native
+  def addEventListener(event: PlusWebviewWebviewEvent, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def addEventListener(event: PlusWebviewWebviewEvent, listener: js.Function1[/* result */ Any, Unit], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusWebviewWebviewEvent, listener: Unit, capture: Boolean): Unit = js.native
   
   /**
@@ -88,7 +84,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def canBack(): Unit = js.native
-  def canBack(queryCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def canBack(queryCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 查询Webview窗口是否可前进
@@ -97,7 +93,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def canForward(): Unit = js.native
-  def canForward(queryCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def canForward(queryCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 检测Webview窗口是否渲染完成
@@ -111,20 +107,20 @@ trait PlusWebviewWebviewObject extends StObject {
   def checkRenderedContent(
     options: Unit,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def checkRenderedContent(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def checkRenderedContent(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def checkRenderedContent(options: PlusWebviewWebviewRenderedEventOptions): Unit = js.native
   def checkRenderedContent(options: PlusWebviewWebviewRenderedEventOptions, successCallback: js.Function0[Unit]): Unit = js.native
   def checkRenderedContent(
     options: PlusWebviewWebviewRenderedEventOptions,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def checkRenderedContent(
     options: PlusWebviewWebviewRenderedEventOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -201,12 +197,12 @@ trait PlusWebviewWebviewObject extends StObject {
   def draw(
     bitmap: Unit,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def draw(
     bitmap: Unit,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusWebviewWebviewDrawOptions
   ): Unit = js.native
   def draw(
@@ -215,11 +211,11 @@ trait PlusWebviewWebviewObject extends StObject {
     errorCallback: Unit,
     options: PlusWebviewWebviewDrawOptions
   ): Unit = js.native
-  def draw(bitmap: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def draw(bitmap: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def draw(
     bitmap: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusWebviewWebviewDrawOptions
   ): Unit = js.native
   def draw(bitmap: Unit, successCallback: Unit, errorCallback: Unit, options: PlusWebviewWebviewDrawOptions): Unit = js.native
@@ -228,12 +224,12 @@ trait PlusWebviewWebviewObject extends StObject {
   def draw(
     bitmap: PlusNativeObjBitmap,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def draw(
     bitmap: PlusNativeObjBitmap,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusWebviewWebviewDrawOptions
   ): Unit = js.native
   def draw(
@@ -245,12 +241,12 @@ trait PlusWebviewWebviewObject extends StObject {
   def draw(
     bitmap: PlusNativeObjBitmap,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def draw(
     bitmap: PlusNativeObjBitmap,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusWebviewWebviewDrawOptions
   ): Unit = js.native
   def draw(
@@ -318,7 +314,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  def getSubNViews(): js.Array[js.Any] = js.native
+  def getSubNViews(): js.Array[Any] = js.native
   
   /**
     * 获取Webview窗口加载HTML页面的标题
@@ -412,12 +408,9 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def listenResourceLoading(): Unit = js.native
-  def listenResourceLoading(options: Unit, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def listenResourceLoading(options: Unit, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def listenResourceLoading(options: PlusWebviewWebviewListenResourceOptions): Unit = js.native
-  def listenResourceLoading(
-    options: PlusWebviewWebviewListenResourceOptions,
-    callback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  def listenResourceLoading(options: PlusWebviewWebviewListenResourceOptions, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 加载新HTML数据
@@ -438,8 +431,8 @@ trait PlusWebviewWebviewObject extends StObject {
     */
   def loadURL(): Unit = js.native
   def loadURL(url: String): Unit = js.native
-  def loadURL(url: String, additionalHttpHeaders: js.Any): Unit = js.native
-  def loadURL(url: Unit, additionalHttpHeaders: js.Any): Unit = js.native
+  def loadURL(url: String, additionalHttpHeaders: Any): Unit = js.native
+  def loadURL(url: Unit, additionalHttpHeaders: Any): Unit = js.native
   
   /**
     * 获取Webview窗口对象的原生（Native.JS）实例对象
@@ -456,7 +449,7 @@ trait PlusWebviewWebviewObject extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var onclose: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onclose: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.native
   
   /**
     * Webview窗口错误事件
@@ -517,9 +510,9 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def overrideUrlLoading(): Unit = js.native
-  def overrideUrlLoading(options: Unit, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def overrideUrlLoading(options: Unit, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def overrideUrlLoading(options: PlusWebviewWebviewOverrideUrlOptions): Unit = js.native
-  def overrideUrlLoading(options: PlusWebviewWebviewOverrideUrlOptions, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def overrideUrlLoading(options: PlusWebviewWebviewOverrideUrlOptions, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 获取当前Webview窗口的父窗口
@@ -556,9 +549,9 @@ trait PlusWebviewWebviewObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def removeEventListener(): Unit = js.native
-  def removeEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def removeEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def removeEventListener(event: PlusWebviewWebviewEvent): Unit = js.native
-  def removeEventListener(event: PlusWebviewWebviewEvent, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def removeEventListener(event: PlusWebviewWebviewEvent, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 从父窗口中移除

@@ -30,6 +30,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reflect
 import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
+import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.MapImageLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,17 +40,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.MapImageLayer")
 @js.native
 /**
-  * MapImageLayer allows you to display and analyze data from [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers) defined in a [map service](http://server.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm), exporting images instead of features.
+  * MapImageLayer allows you to display and analyze data from [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers) defined in a [map service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm), exporting images instead of features.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html)
   */
-class MapImageLayerCls ()
+open class MapImageLayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.MapImageLayer {
   def this(properties: MapImageLayerProperties) = this()
   
   /**
     * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
+    *
+    * @default normal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
     */
@@ -65,6 +68,24 @@ class MapImageLayerCls ()
   override def createServiceSublayers(): typings.arcgisJsApi.esri.Collection[typings.arcgisJsApi.esri.Sublayer] = js.native
   
   /**
+    * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
+    */
+  /* CompleteClass */
+  var customParameters: Any = js.native
+  
+  /**
+    * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+    */
+  /* CompleteClass */
+  var effect: Effect = js.native
+  
+  /**
     * Returns the sublayer with the given layerId.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SublayersOwner.html#findSublayerById)
@@ -75,6 +96,8 @@ class MapImageLayerCls ()
   /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
     */
   /* CompleteClass */
@@ -82,6 +105,8 @@ class MapImageLayerCls ()
   
   /**
     * The minimum scale (most zoomed out) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
     */
@@ -99,6 +124,8 @@ class MapImageLayerCls ()
   /**
     * Refresh interval of the layer in minutes.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     */
   /* CompleteClass */
@@ -106,6 +133,8 @@ class MapImageLayerCls ()
   
   /**
     * The layer's time extent.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
     */
@@ -115,6 +144,8 @@ class MapImageLayerCls ()
   /**
     * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
     */
   /* CompleteClass */
@@ -123,6 +154,8 @@ class MapImageLayerCls ()
   /**
     * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
     */
   /* CompleteClass */
@@ -130,6 +163,8 @@ class MapImageLayerCls ()
   
   /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
     */

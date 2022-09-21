@@ -15,4 +15,4 @@ trait Instantiable
   * @param [options] Options object
   */
 Instantiable0[IBaseFilter]
-     with Instantiable1[/* options */ js.Any, IBaseFilter]
+     with Instantiable1[/* options */ Any, IBaseFilter]

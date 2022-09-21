@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateS3ResourcesResult extends StObject {
   
   /**
-    * S3 resources that couldn't be associated with Amazon Macie Classic. An error code and an error message are provided for each failed item. 
+    * (Discontinued) S3 resources that couldn't be associated with Amazon Macie Classic. An error code and an error message are provided for each failed item.
     */
   var failedS3Resources: js.UndefOr[FailedS3Resources] = js.undefined
 }
@@ -24,6 +24,6 @@ object AssociateS3ResourcesResult {
     
     inline def setFailedS3ResourcesUndefined: Self = StObject.set(x, "failedS3Resources", js.undefined)
     
-    inline def setFailedS3ResourcesVarargs(value: FailedS3Resource*): Self = StObject.set(x, "failedS3Resources", js.Array(value :_*))
+    inline def setFailedS3ResourcesVarargs(value: FailedS3Resource*): Self = StObject.set(x, "failedS3Resources", js.Array(value*))
   }
 }

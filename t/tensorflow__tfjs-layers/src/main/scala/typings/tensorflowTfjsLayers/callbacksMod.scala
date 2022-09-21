@@ -25,14 +25,14 @@ object callbacksMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/callbacks", "EarlyStopping")
   @js.native
-  class EarlyStopping_ () extends Callback {
+  open class EarlyStopping_ () extends Callback {
     def this(args: EarlyStoppingCallbackArgs) = this()
     
     /* protected */ val baseline: Double = js.native
     
-    /* private */ var best: js.Any = js.native
+    /* private */ var best: Any = js.native
     
-    /* private */ var getMonitorValue: js.Any = js.native
+    /* private */ var getMonitorValue: Any = js.native
     
     /* protected */ val minDelta: Double = js.native
     
@@ -44,12 +44,12 @@ object callbacksMod {
     
     /* protected */ val patience: Double = js.native
     
-    /* private */ var stoppedEpoch: js.Any = js.native
+    /* private */ var stoppedEpoch: Any = js.native
     
     /* protected */ val verbose: Double = js.native
     
     /* private */ @JSName("wait")
-    var wait_FEarlyStopping_ : js.Any = js.native
+    var wait_FEarlyStopping_ : Any = js.native
   }
   
   object callbacks {

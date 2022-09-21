@@ -9,7 +9,7 @@ object idtokenclientMod {
   
   @JSImport("google-auth-library/build/src/auth/idtokenclient", "IdTokenClient")
   @js.native
-  class IdTokenClient protected () extends OAuth2Client {
+  open class IdTokenClient protected () extends OAuth2Client {
     /**
       * Google ID Token client
       *
@@ -18,7 +18,7 @@ object idtokenclientMod {
       */
     def this(options: IdTokenOptions) = this()
     
-    /* private */ var getIdTokenExpiryDate: js.Any = js.native
+    /* private */ var getIdTokenExpiryDate: Any = js.native
     
     var idTokenProvider: IdTokenProvider = js.native
     

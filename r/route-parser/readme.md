@@ -11,9 +11,9 @@ A isomorphic, bullet-proof, ninja-ready route parsing, matching, and reversing l
 | Full name          | route-parser |
 | Keywords           | url, matching, routing, route, regex, match |
 | # releases         | 0 |
-| # dependents       | 171 |
-| # downloads        | 2020939 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 230854.0 |
+| # stars            | 341.0 |
 
 ## Links
 - [Homepage](http://github.com/rcs/route-parser)

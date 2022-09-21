@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "GradientBlockColorStep")
 @js.native
-class GradientBlockColorStep protected ()
+open class GradientBlockColorStep protected ()
   extends typings.babylonjs.nodeIndexMod.GradientBlockColorStep {
   /**
     * Creates a new GradientBlockColorStep

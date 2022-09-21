@@ -27,13 +27,8 @@ trait TransitionHelper extends StObject {
   	 * @param complete an optional callback to call when the animation is complete
   	 * @returns a Promise that resolves when the animation is complete
   	 */
-  def animateStyle(prop: String, value: js.Any, opts: typings.ractive.anon.TransitionOpts): js.Promise[Unit] = js.native
-  def animateStyle(
-    prop: String,
-    value: js.Any,
-    opts: typings.ractive.anon.TransitionOpts,
-    complete: js.Function0[Unit]
-  ): js.Promise[Unit] = js.native
+  def animateStyle(prop: String, value: Any, opts: typings.ractive.anon.TransitionOpts): js.Promise[Unit] = js.native
+  def animateStyle(prop: String, value: Any, opts: typings.ractive.anon.TransitionOpts, complete: js.Function0[Unit]): js.Promise[Unit] = js.native
   
   /**
   	 * The function to call when the transition is complete. This is used to control the Promises returned by mutation methods.j
@@ -45,7 +40,7 @@ trait TransitionHelper extends StObject {
   /**
   	 * Use getComputedStyle to retrieve the current value of the given prop.
   	 */
-  def getStyle(prop: String): js.Any = js.native
+  def getStyle(prop: String): Any = js.native
   /**
   	 * Use getComputedStyle to retrieve the current values of multiple props.
   	 */
@@ -63,6 +58,8 @@ trait TransitionHelper extends StObject {
   /** The node to which the transition is being applied. */
   var node: HTMLElement = js.native
   
+  def processParams(params: slow | fast): ValueMap = js.native
+  def processParams(params: slow | fast, defaults: ValueMap): ValueMap = js.native
   def processParams(params: String): ValueMap = js.native
   def processParams(params: String, defaults: ValueMap): ValueMap = js.native
   /**
@@ -72,25 +69,17 @@ trait TransitionHelper extends StObject {
   	 *  if slow, 600ms
   	 *  if fast, 200ms
   	 *  if any other string, 400ms
-  	 *  if a map, it is applied over defaultsj
+  	 *  if a map, it is applied over defaults
   	 */
   def processParams(params: Double): ValueMap = js.native
   def processParams(params: Double, defaults: ValueMap): ValueMap = js.native
   def processParams(params: ValueMap): ValueMap = js.native
   def processParams(params: ValueMap, defaults: ValueMap): ValueMap = js.native
-  @JSName("processParams")
-  def processParams_fast(params: fast): ValueMap = js.native
-  @JSName("processParams")
-  def processParams_fast(params: fast, defaults: ValueMap): ValueMap = js.native
-  @JSName("processParams")
-  def processParams_slow(params: slow): ValueMap = js.native
-  @JSName("processParams")
-  def processParams_slow(params: slow, defaults: ValueMap): ValueMap = js.native
   
   /** Set inline styles for the given map of prop -> value. */
   def setStyle(map: ValueMap): Unit = js.native
   /**
   	 * Set an inline style for the given prop at the given value.
   	 */
-  def setStyle(prop: String, value: js.Any): Unit = js.native
+  def setStyle(prop: String, value: Any): Unit = js.native
 }

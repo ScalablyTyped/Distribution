@@ -11,7 +11,7 @@ object stereoscopicFreeCameraMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/stereoscopicFreeCamera", "StereoscopicFreeCamera")
   @js.native
-  class StereoscopicFreeCamera protected () extends FreeCamera {
+  open class StereoscopicFreeCamera protected () extends FreeCamera {
     /**
       * Creates a new StereoscopicFreeCamera
       * @param name defines camera name
@@ -20,6 +20,7 @@ object stereoscopicFreeCameraMod {
       * @param isStereoscopicSideBySide defines is stereoscopic is done side by side or over under
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double, isStereoscopicSideBySide: Boolean) = this()
     def this(
       name: String,
       position: Vector3,
@@ -27,5 +28,7 @@ object stereoscopicFreeCameraMod {
       isStereoscopicSideBySide: Boolean,
       scene: Scene
     ) = this()
+    
+    /* protected */ var _setRigMode: Any = js.native
   }
 }

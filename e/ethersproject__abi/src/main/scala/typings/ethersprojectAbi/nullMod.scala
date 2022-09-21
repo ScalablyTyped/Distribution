@@ -9,7 +9,7 @@ object nullMod {
   
   @JSImport("@ethersproject/abi/lib/coders/null", "NullCoder")
   @js.native
-  class NullCoder protected () extends Coder {
+  open class NullCoder protected () extends Coder {
     def this(localName: String) = this()
   }
 }

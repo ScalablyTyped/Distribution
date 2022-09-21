@@ -1,17 +1,16 @@
 package typings.webpackShellPlugin
 
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-shell-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("webpack-shell-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   
@@ -74,19 +73,19 @@ object mod {
       
       inline def setOnBuildEndUndefined: Self = StObject.set(x, "onBuildEnd", js.undefined)
       
-      inline def setOnBuildEndVarargs(value: String*): Self = StObject.set(x, "onBuildEnd", js.Array(value :_*))
+      inline def setOnBuildEndVarargs(value: String*): Self = StObject.set(x, "onBuildEnd", js.Array(value*))
       
       inline def setOnBuildExit(value: js.Array[String]): Self = StObject.set(x, "onBuildExit", value.asInstanceOf[js.Any])
       
       inline def setOnBuildExitUndefined: Self = StObject.set(x, "onBuildExit", js.undefined)
       
-      inline def setOnBuildExitVarargs(value: String*): Self = StObject.set(x, "onBuildExit", js.Array(value :_*))
+      inline def setOnBuildExitVarargs(value: String*): Self = StObject.set(x, "onBuildExit", js.Array(value*))
       
       inline def setOnBuildStart(value: js.Array[String]): Self = StObject.set(x, "onBuildStart", value.asInstanceOf[js.Any])
       
       inline def setOnBuildStartUndefined: Self = StObject.set(x, "onBuildStart", js.undefined)
       
-      inline def setOnBuildStartVarargs(value: String*): Self = StObject.set(x, "onBuildStart", js.Array(value :_*))
+      inline def setOnBuildStartVarargs(value: String*): Self = StObject.set(x, "onBuildStart", js.Array(value*))
       
       inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       

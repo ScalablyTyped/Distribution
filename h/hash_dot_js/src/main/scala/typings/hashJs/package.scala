@@ -1,24 +1,21 @@
 package typings.hashJs
 
+import typings.hashJs.hashJsStrings.hex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type HmacConstructor = js.Function3[
-/* hash */ typings.hashJs.BlockHash[js.Any], 
-/* key */ js.Any, 
-/* enc */ js.UndefOr[typings.hashJs.hashJsStrings.hex], 
-typings.hashJs.Hmac]
+type HmacConstructor = js.Function3[/* hash */ BlockHash[Any], /* key */ Any, /* enc */ js.UndefOr[hex], Hmac]
 
-type Ripemd160Constructor = js.Function0[typings.hashJs.Ripemd160]
+type Ripemd160Constructor = js.Function0[Ripemd160]
 
-type Sha1Constructor = js.Function0[typings.hashJs.Sha1]
+type Sha1Constructor = js.Function0[Sha1]
 
-type Sha224Constructor = js.Function0[typings.hashJs.Sha224]
+type Sha224Constructor = js.Function0[Sha224]
 
-type Sha256Constructor = js.Function0[typings.hashJs.Sha256]
+type Sha256Constructor = js.Function0[Sha256]
 
-type Sha384Constructor = js.Function0[typings.hashJs.Sha384]
+type Sha384Constructor = js.Function0[Sha384]
 
-type Sha512Constructor = js.Function0[typings.hashJs.Sha512]
+type Sha512Constructor = js.Function0[Sha512]

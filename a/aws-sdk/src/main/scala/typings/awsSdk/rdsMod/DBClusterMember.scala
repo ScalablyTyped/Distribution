@@ -22,7 +22,7 @@ trait DBClusterMember extends StObject {
   var IsClusterWriter: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value that specifies the order in which an Aurora Replica is promoted to the primary instance after a failure of the existing primary instance. For more information, see  Fault Tolerance for an Aurora DB Cluster in the Amazon Aurora User Guide. 
+    * A value that specifies the order in which an Aurora Replica is promoted to the primary instance after a failure of the existing primary instance. For more information, see  Fault Tolerance for an Aurora DB Cluster in the Amazon Aurora User Guide.
     */
   var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
 }

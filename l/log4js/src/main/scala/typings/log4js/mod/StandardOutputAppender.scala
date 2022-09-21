@@ -5,11 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StandardOutputAppender
-  extends StObject
-     with Appender {
+trait StandardOutputAppender extends StObject {
   
-  // (defaults to colouredLayout)
+  // (defaults to ColoredLayout)
   var layout: js.UndefOr[Layout] = js.undefined
   
   var `type`: stdout

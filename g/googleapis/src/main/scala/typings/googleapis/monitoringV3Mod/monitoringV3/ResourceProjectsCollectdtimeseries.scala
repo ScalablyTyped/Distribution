@@ -4,76 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Collectdtimeseries")
 @js.native
-class ResourceProjectsCollectdtimeseries protected () extends StObject {
+open class ResourceProjectsCollectdtimeseries protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * monitoring.projects.collectdTimeSeries.create
-    * @desc Stackdriver Monitoring Agent only: Creates a new time series.<aside
-    * class="caution">This method is only for use by the Stackdriver Monitoring
-    * Agent. Use projects.timeSeries.create instead.</aside>
-    * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
-    *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
-    *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'create' method:
-    *
-    *     // The project in which to create the time series. The format is
-    * `"projects/PROJECT_ID_OR_NUMBER"`. name: "projects/{MY-PROJECT}",
-    *     resource: {},
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.collectdTimeSeries.create(request, function(err,
-    * result) { if (err) { console.log(err); } else { console.log(result);
-    *     }
-    *   });
-    * });
-    * @alias monitoring.projects.collectdTimeSeries.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The project in which to create the time series. The format is "projects/PROJECT_ID_OR_NUMBER".
-    * @param {().CreateCollectdTimeSeriesRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
   def create(callback: BodyResponseCallback[SchemaCreateCollectdTimeSeriesResponse]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
@@ -84,13 +27,84 @@ class ResourceProjectsCollectdtimeseries protected () extends StObject {
   ): Unit = js.native
   def create(
     params: ParamsResourceProjectsCollectdtimeseriesCreate,
-    options: BodyResponseCallback[SchemaCreateCollectdTimeSeriesResponse],
-    callback: BodyResponseCallback[SchemaCreateCollectdTimeSeriesResponse]
+    options: BodyResponseCallback[Readable | SchemaCreateCollectdTimeSeriesResponse],
+    callback: BodyResponseCallback[Readable | SchemaCreateCollectdTimeSeriesResponse]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsCollectdtimeseriesCreate, options: MethodOptions): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
   def create(
     params: ParamsResourceProjectsCollectdtimeseriesCreate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreateCollectdTimeSeriesResponse]
+  ): Unit = js.native
+  /**
+    * Cloud Monitoring Agent only: Creates a new time series.This method is only for use by the Cloud Monitoring Agent. Use projects.timeSeries.create instead.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.write',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.collectdTimeSeries.create({
+    *     // The project (https://cloud.google.com/monitoring/api/v3#project_name) in which to create the time series. The format is: projects/[PROJECT_ID_OR_NUMBER]
+    *     name: 'projects/my-project',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "collectdPayloads": [],
+    *       //   "collectdVersion": "my_collectdVersion",
+    *       //   "resource": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "payloadErrors": [],
+    *   //   "summary": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def create(params: ParamsResourceProjectsCollectdtimeseriesCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsCollectdtimeseriesCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

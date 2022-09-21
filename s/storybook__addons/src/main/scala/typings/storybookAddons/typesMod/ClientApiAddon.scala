@@ -1,8 +1,8 @@
 package typings.storybookAddons.typesMod
 
 import typings.react.mod.ReactElement
-import typings.storybookAddons.distMod.Addon
-import typings.storybookAddons.distMod.RenderOptions
+import typings.storybookAddons.ts39Mod.Addon
+import typings.storybookAddons.ts39Mod.RenderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +12,12 @@ trait ClientApiAddon[StoryFnReturnType]
      with Addon {
   
   @JSName("apply")
-  def apply(a: StoryApi[StoryFnReturnType], b: js.Array[js.Any]): js.Any
+  def apply(a: StoryApi[StoryFnReturnType], b: js.Array[Any]): Any
 }
 object ClientApiAddon {
   
   inline def apply[StoryFnReturnType](
-    apply: (StoryApi[StoryFnReturnType], js.Array[js.Any]) => js.Any,
+    apply: (StoryApi[StoryFnReturnType], js.Array[Any]) => Any,
     render: RenderOptions => ReactElement,
     title: js.Function0[String] | String
   ): ClientApiAddon[StoryFnReturnType] = {
@@ -27,6 +27,6 @@ object ClientApiAddon {
   
   extension [Self <: ClientApiAddon[?], StoryFnReturnType](x: Self & ClientApiAddon[StoryFnReturnType]) {
     
-    inline def setApply(value: (StoryApi[StoryFnReturnType], js.Array[js.Any]) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (StoryApi[StoryFnReturnType], js.Array[Any]) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
   }
 }

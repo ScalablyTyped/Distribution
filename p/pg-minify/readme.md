@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-minify
 
-Typings are for version 1.6.1
+Typings are for version 1.6.2
 
 ## Library description:
 Minifies PostgreSQL scripts.
@@ -10,15 +10,12 @@ Minifies PostgreSQL scripts.
 | ------------------ | :-------------: |
 | Full name          | pg-minify |
 | Keywords           | sql, postgresql, comments, minify, uglify, compress, strip, remove |
-| # releases         | 19 |
-| # dependents       | 17 |
-| # downloads        | 7428292 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1351983.6666666667 |
+| # stars            | 41.0 |
 
 ## Links
-- [Homepage](https://github.com/vitaly-t/pg-minify)
-- [Bugs](https://github.com/vitaly-t/pg-minify/issues)
-- [Repository](https://github.com/vitaly-t/pg-minify)
 - [Npm](https://www.npmjs.com/package/pg-minify)
     
 

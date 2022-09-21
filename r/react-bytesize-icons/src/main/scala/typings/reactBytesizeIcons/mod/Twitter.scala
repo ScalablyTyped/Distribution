@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bytesize-icons", "Twitter")
 @js.native
-class Twitter protected () extends BytesizeBaseIconComponent {
+open class Twitter protected () extends BytesizeBaseIconComponent {
   def this(props: BytesizeBaseIconsProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BytesizeBaseIconsProps, context: js.Any) = this()
+  def this(props: BytesizeBaseIconsProps, context: Any) = this()
 }

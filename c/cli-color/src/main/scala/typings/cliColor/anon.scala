@@ -11,8 +11,8 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(data: js.Array[js.Array[js.Any]]): String = js.native
-    def apply(data: js.Array[js.Array[js.Any]], options: ColumnsOptions): String = js.native
+    def apply(data: js.Array[js.Array[Any]]): String = js.native
+    def apply(data: js.Array[js.Array[Any]], options: ColumnsOptions): String = js.native
     def apply(data: Data): String = js.native
     def apply(data: Data, options: ColumnsOptions): String = js.native
   }

@@ -45,7 +45,7 @@ object XChangesBatch {
     commitChanges: () => Unit,
     getPendingChanges: () => ChangesSet,
     hasPendingChanges: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XChangesBatch = {
     val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), commitChanges = js.Any.fromFunction0(commitChanges), getPendingChanges = js.Any.fromFunction0(getPendingChanges), hasPendingChanges = js.Any.fromFunction0(hasPendingChanges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -62,6 +62,6 @@ object XChangesBatch {
     
     inline def setPendingChanges(value: ChangesSet): Self = StObject.set(x, "PendingChanges", value.asInstanceOf[js.Any])
     
-    inline def setPendingChangesVarargs(value: ElementChange*): Self = StObject.set(x, "PendingChanges", js.Array(value :_*))
+    inline def setPendingChangesVarargs(value: ElementChange*): Self = StObject.set(x, "PendingChanges", js.Array(value*))
   }
 }

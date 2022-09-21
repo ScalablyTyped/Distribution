@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-a11y
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Test component compliance with web accessibility standards
@@ -9,14 +9,14 @@ Test component compliance with web accessibility standards
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-a11y |
-| Keywords           | a11y, accessibility, addon, storybook, valid, verify |
-| # releases         | 558 |
-| # dependents       | 98 |
-| # downloads        | 21204872 |
-| # stars            | 0 |
+| Keywords           | a11y, accessibility, addon, storybook, valid, verify, test |
+| # releases         | 476 |
+| # dependents       | 0.0 |
+| # downloads        | 4530190.333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook#readme)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/a11y)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-a11y)

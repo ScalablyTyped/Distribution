@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<any>, 'align' | 'dropup' | 'flip' | 'onMenuHide' | 'onMenuShow' | 'onMenuToggle'> */
+/* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<any>, 'align' | 'dropup' | 'flip' | 'onMenuToggle'> */
 trait OverlayTypeaheadProps extends StObject {
   
   var align: js.UndefOr[TypeaheadAlign] = js.undefined
@@ -12,10 +12,6 @@ trait OverlayTypeaheadProps extends StObject {
   var dropup: js.UndefOr[Boolean] = js.undefined
   
   var flip: js.UndefOr[Boolean] = js.undefined
-  
-  var onMenuHide: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  var onMenuShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onMenuToggle: js.UndefOr[js.Function1[/* show */ Boolean, Unit]] = js.undefined
 }
@@ -39,14 +35,6 @@ object OverlayTypeaheadProps {
     inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
     inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
-    
-    inline def setOnMenuHide(value: () => Unit): Self = StObject.set(x, "onMenuHide", js.Any.fromFunction0(value))
-    
-    inline def setOnMenuHideUndefined: Self = StObject.set(x, "onMenuHide", js.undefined)
-    
-    inline def setOnMenuShow(value: () => Unit): Self = StObject.set(x, "onMenuShow", js.Any.fromFunction0(value))
-    
-    inline def setOnMenuShowUndefined: Self = StObject.set(x, "onMenuShow", js.undefined)
     
     inline def setOnMenuToggle(value: /* show */ Boolean => Unit): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1(value))
     

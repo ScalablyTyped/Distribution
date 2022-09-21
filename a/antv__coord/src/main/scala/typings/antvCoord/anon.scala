@@ -1,29 +1,55 @@
 package typings.antvCoord
 
+import typings.antvCoord.typeMod.Transformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait X extends StObject {
+  /* Inlined std.Partial<@antv/coord.@antv/coord/lib/type.Options> */
+  trait PartialOptions extends StObject {
     
-    var x: Double
+    var height: js.UndefOr[Double] = js.undefined
     
-    var y: Double
+    var transformations: js.UndefOr[js.Array[Transformation]] = js.undefined
+    
+    var width: js.UndefOr[Double] = js.undefined
+    
+    var x: js.UndefOr[Double] = js.undefined
+    
+    var y: js.UndefOr[Double] = js.undefined
   }
-  object X {
+  object PartialOptions {
     
-    inline def apply(x: Double, y: Double): X = {
-      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-      __obj.asInstanceOf[X]
+    inline def apply(): PartialOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: X](x: Self) {
+    extension [Self <: PartialOptions](x: Self) {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
+      inline def setTransformations(value: js.Array[Transformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      
+      inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+      
+      inline def setTransformationsVarargs(value: Transformation*): Self = StObject.set(x, "transformations", js.Array(value*))
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
 }

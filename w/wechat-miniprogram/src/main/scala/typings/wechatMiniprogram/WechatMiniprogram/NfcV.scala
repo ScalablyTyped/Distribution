@@ -21,7 +21,7 @@ trait NfcV extends StObject {
     *
     * 最低基础库： `2.11.2` */
   def connect(): Unit = js.native
-  def connect(option: ConnectOption): Unit = js.native
+  def connect(option: NdefConnectOption): Unit = js.native
   
   /** [NfcV.getMaxTransceiveLength(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/NfcV.getMaxTransceiveLength.html)
     *
@@ -30,6 +30,14 @@ trait NfcV extends StObject {
     * 最低基础库： `2.11.2` */
   def getMaxTransceiveLength(): Unit = js.native
   def getMaxTransceiveLength(option: GetMaxTransceiveLengthOption): Unit = js.native
+  
+  /** [NfcV.isConnected(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/NfcV.isConnected.html)
+    *
+    * 检查是否已连接
+    *
+    * 最低基础库： `2.11.2` */
+  def isConnected(): Unit = js.native
+  def isConnected(option: IsConnectedOption): Unit = js.native
   
   /** [NfcV.setTimeout(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/NfcV.setTimeout.html)
     *

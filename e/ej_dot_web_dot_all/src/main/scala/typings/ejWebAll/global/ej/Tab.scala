@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Tab")
 @js.native
-class Tab protected ()
+open class Tab protected ()
   extends StObject
      with typings.ejWebAll.ej.Tab {
   def this(element: JQuery) = this()
@@ -41,8 +41,8 @@ object Tab {
   /* static member */
   @JSGlobal("ej.Tab.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Tab.Position")
   @js.native

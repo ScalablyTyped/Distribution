@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a timer that fires after a specified time interval.
   * @see https://docs.scriptable.app/timer/#-new-timer
   */
-class Timer ()
+open class Timer ()
   extends StObject
      with typings.scriptableIos.Timer {
   

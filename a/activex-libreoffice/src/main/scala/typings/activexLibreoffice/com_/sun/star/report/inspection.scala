@@ -50,7 +50,7 @@ object inspection {
   object DefaultComponentInspectorModel {
     
     inline def apply(
-      HandlerFactories: SafeArray[js.Any],
+      HandlerFactories: SafeArray[Any],
       HasHelpSection: Boolean,
       IsReadOnly: Boolean,
       MaxHelpTextLines: Double,

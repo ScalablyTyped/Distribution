@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentSymbolRegistrationOptions
   extends StObject
      with TextDocumentRegistrationOptions
-     with WorkDoneProgressOptions
+     with DocumentSymbolOptions
 object DocumentSymbolRegistrationOptions {
   
   inline def apply(): DocumentSymbolRegistrationOptions = {

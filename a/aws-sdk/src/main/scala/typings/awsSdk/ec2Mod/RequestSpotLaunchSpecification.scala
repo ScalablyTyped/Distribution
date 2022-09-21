@@ -32,7 +32,7 @@ trait RequestSpotLaunchSpecification extends StObject {
   var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.undefined
   
   /**
-    * The instance type.
+    * The instance type. Only one instance type can be specified.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
@@ -77,7 +77,7 @@ trait RequestSpotLaunchSpecification extends StObject {
   var SecurityGroups: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupList] = js.undefined
   
   /**
-    * The IDs of the subnets in which to launch the instance. To specify multiple subnets, separate them using commas; for example, "subnet-1234abcdeexample1, subnet-0987cdef6example2".
+    * The ID of the subnet in which to launch the instance.
     */
   var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.undefined
   
@@ -103,7 +103,7 @@ object RequestSpotLaunchSpecification {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value*))
     
     inline def setEbsOptimized(value: Boolean): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object RequestSpotLaunchSpecification {
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: InstanceNetworkInterfaceSpecification*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: InstanceNetworkInterfaceSpecification*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value*))
     
     inline def setPlacement(value: SpotPlacement): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
@@ -151,13 +151,13 @@ object RequestSpotLaunchSpecification {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSecurityGroups(value: RequestSpotLaunchSpecificationSecurityGroupList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroupName*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     

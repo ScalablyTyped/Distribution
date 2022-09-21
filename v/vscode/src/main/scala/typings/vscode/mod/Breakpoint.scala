@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "Breakpoint")
 @js.native
-/* protected */ class Breakpoint () extends StObject {
+/* protected */ open class Breakpoint () extends StObject {
   /* protected */ def this(enabled: Boolean) = this()
   /* protected */ def this(enabled: Boolean, condition: String) = this()
   /* protected */ def this(enabled: Unit, condition: String) = this()

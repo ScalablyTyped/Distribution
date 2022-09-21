@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SecurityCenterProperties extends StObject {
   
+  /** Contains a Folder message for each folder in the assets ancestry. The first folder is the deepest nested folder, and the last folder is the folder directly under the Organization. */
+  var folders: js.UndefOr[js.Array[Folder]] = js.undefined
+  
   /** The user defined display name for this resource. */
   var resourceDisplayName: js.UndefOr[String] = js.undefined
   
@@ -45,6 +48,12 @@ object SecurityCenterProperties {
   
   extension [Self <: SecurityCenterProperties](x: Self) {
     
+    inline def setFolders(value: js.Array[Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+    
+    inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+    
+    inline def setFoldersVarargs(value: Folder*): Self = StObject.set(x, "folders", js.Array(value*))
+    
     inline def setResourceDisplayName(value: String): Self = StObject.set(x, "resourceDisplayName", value.asInstanceOf[js.Any])
     
     inline def setResourceDisplayNameUndefined: Self = StObject.set(x, "resourceDisplayName", js.undefined)
@@ -57,7 +66,7 @@ object SecurityCenterProperties {
     
     inline def setResourceOwnersUndefined: Self = StObject.set(x, "resourceOwners", js.undefined)
     
-    inline def setResourceOwnersVarargs(value: String*): Self = StObject.set(x, "resourceOwners", js.Array(value :_*))
+    inline def setResourceOwnersVarargs(value: String*): Self = StObject.set(x, "resourceOwners", js.Array(value*))
     
     inline def setResourceParent(value: String): Self = StObject.set(x, "resourceParent", value.asInstanceOf[js.Any])
     

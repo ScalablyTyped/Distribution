@@ -36,17 +36,22 @@ trait ContainerAssetTask
   var loadedSkeletons: js.Array[Skeleton] = js.native
   
   /**
+    * Gets the list of loaded transforms
+    */
+  var loadedTransformNodes: js.Array[TransformNode] = js.native
+  
+  /**
     * Defines the list of mesh's names you want to load
     */
-  var meshesNames: js.Any = js.native
+  var meshesNames: Any = js.native
   
   /**
     * Callback called when the task is successful
     */
   def onError(task: ContainerAssetTask): Unit = js.native
   def onError(task: ContainerAssetTask, message: String): Unit = js.native
-  def onError(task: ContainerAssetTask, message: String, exception: js.Any): Unit = js.native
-  def onError(task: ContainerAssetTask, message: Unit, exception: js.Any): Unit = js.native
+  def onError(task: ContainerAssetTask, message: String, exception: Any): Unit = js.native
+  def onError(task: ContainerAssetTask, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

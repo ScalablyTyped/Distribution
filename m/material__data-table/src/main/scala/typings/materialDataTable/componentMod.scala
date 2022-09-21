@@ -1,9 +1,9 @@
 package typings.materialDataTable
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialCheckbox.componentMod.MDCCheckboxFactory
 import typings.materialDataTable.foundationMod.MDCDataTableFoundation
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,24 +12,54 @@ object componentMod {
   
   @JSImport("@material/data-table/component", "MDCDataTable")
   @js.native
-  class MDCDataTable protected () extends MDCComponent[MDCDataTableFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCDataTableFoundation, args: js.Any*) = this()
+  open class MDCDataTable protected () extends MDCComponent[MDCDataTableFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCDataTableFoundation, args: Any*) = this()
+    
+    /* private */ var checkboxFactory: Any = js.native
+    
+    /* private */ var content: Any = js.native
     
     /**
       * @return Returns array of header row cell elements.
       */
-    def getHeaderCells(): js.Array[Element] = js.native
+    def getHeaderCells(): js.Array[typings.std.Element] = js.native
+    
+    /* private */ var getLinearProgress: Any = js.native
+    
+    /* private */ var getLinearProgressElement: Any = js.native
+    
+    /* private */ var getRowByIndex: Any = js.native
+    
+    /* private */ var getRowIdByIndex: Any = js.native
+    
+    /* private */ var getRowIdByRowElement: Any = js.native
     
     /**
       * @return Returns array of row elements.
       */
-    def getRows(): js.Array[Element] = js.native
+    def getRows(): js.Array[typings.std.Element] = js.native
     
     /**
       * @return Returns array of selected row ids.
       */
     def getSelectedRowIds(): js.Array[String | Null] = js.native
+    
+    /* private */ var getSortStatusMessageBySortValue: Any = js.native
+    
+    /* private */ var handleContentClick: Any = js.native
+    
+    /* private */ var handleHeaderRowCheckboxChange: Any = js.native
+    
+    /* private */ var handleHeaderRowClick: Any = js.native
+    
+    /* private */ var handleRowCheckboxChange: Any = js.native
+    
+    /* private */ var headerRow: Any = js.native
+    
+    /* private */ var headerRowCheckbox: Any = js.native
+    
+    /* private */ var headerRowClickListener: Any = js.native
     
     /**
       * Hides progress indicator after data table is finished loading.
@@ -40,9 +70,14 @@ object componentMod {
     def initialize(checkboxFactory: MDCCheckboxFactory): Unit = js.native
     
     /**
-      * Re-initializes header row checkbox and row checkboxes when selectable rows are added or removed from table.
+      * Re-initializes header row checkbox and row checkboxes when selectable rows
+      * are added or removed from table.
       */
     def layout(): Unit = js.native
+    
+    /* private */ var linearProgress: Any = js.native
+    
+    /* private */ var rowCheckboxList: Any = js.native
     
     /**
       * Sets selected row ids. Overwrites previously selected rows.
@@ -62,6 +97,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCDataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCDataTable]
+    inline def attachTo(root: typings.std.Element): MDCDataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCDataTable]
   }
 }

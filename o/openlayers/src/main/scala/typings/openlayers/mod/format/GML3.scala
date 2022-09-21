@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     Optional configuration object.
   * @api
   */
-class GML3 () extends GMLBase {
+open class GML3 () extends GMLBase {
   def this(opt_options: GMLOptions) = this()
   
   /**

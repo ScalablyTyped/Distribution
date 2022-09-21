@@ -10,10 +10,10 @@ Text hyphenation in Javascript.
 | ------------------ | :-------------: |
 | Full name          | hyphen |
 | Keywords           | hyphen, hyphenate, hyphenation, hyphenator |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 1966442 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 780831.0 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://ytiurin.github.io/hyphen)

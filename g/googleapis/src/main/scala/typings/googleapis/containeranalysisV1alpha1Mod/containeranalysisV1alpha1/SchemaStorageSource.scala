@@ -4,28 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * StorageSource describes the location of the source in an archive file in
-  * Google Cloud Storage.
-  */
 trait SchemaStorageSource extends StObject {
   
   /**
-    * Google Cloud Storage bucket containing source (see [Bucket Name
-    * Requirements]
-    * (https://cloud.google.com/storage/docs/bucket-naming#requirements)).
+    * Google Cloud Storage bucket containing source (see [Bucket Name Requirements] (https://cloud.google.com/storage/docs/bucket-naming#requirements)).
     */
-  var bucket: js.UndefOr[String] = js.undefined
+  var bucket: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Google Cloud Storage generation for the object.
     */
-  var generation: js.UndefOr[String] = js.undefined
+  var generation: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Google Cloud Storage object containing source.
     */
-  var `object`: js.UndefOr[String] = js.undefined
+  var `object`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStorageSource {
   
@@ -38,13 +32,19 @@ object SchemaStorageSource {
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
+    inline def setBucketNull: Self = StObject.set(x, "bucket", null)
+    
     inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
     inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
+    inline def setGenerationNull: Self = StObject.set(x, "generation", null)
+    
     inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
     inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    
+    inline def setObjectNull: Self = StObject.set(x, "object", null)
     
     inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
   }

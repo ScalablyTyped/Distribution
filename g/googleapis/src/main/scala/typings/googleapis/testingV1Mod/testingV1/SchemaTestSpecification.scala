@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A description of how to run the test.
-  */
 trait SchemaTestSpecification extends StObject {
   
   /**
@@ -25,14 +22,19 @@ trait SchemaTestSpecification extends StObject {
   var androidTestLoop: js.UndefOr[SchemaAndroidTestLoop] = js.undefined
   
   /**
-    * Disables performance metrics recording; may reduce test latency.
+    * Disables performance metrics recording. May reduce test latency.
     */
-  var disablePerformanceMetrics: js.UndefOr[Boolean] = js.undefined
+  var disablePerformanceMetrics: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Disables video recording; may reduce test latency.
+    * Disables video recording. May reduce test latency.
     */
-  var disableVideoRecording: js.UndefOr[Boolean] = js.undefined
+  var disableVideoRecording: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * An iOS application with a test loop.
+    */
+  var iosTestLoop: js.UndefOr[SchemaIosTestLoop] = js.undefined
   
   /**
     * Test setup requirements for iOS.
@@ -45,16 +47,14 @@ trait SchemaTestSpecification extends StObject {
   var iosXcTest: js.UndefOr[SchemaIosXcTest] = js.undefined
   
   /**
-    * Test setup requirements for Android e.g. files to install, bootstrap
-    * scripts.
+    * Test setup requirements for Android e.g. files to install, bootstrap scripts.
     */
   var testSetup: js.UndefOr[SchemaTestSetup] = js.undefined
   
   /**
-    * Max time a test execution is allowed to run before it is automatically
-    * cancelled. The default value is 5 min.
+    * Max time a test execution is allowed to run before it is automatically cancelled. The default value is 5 min.
     */
-  var testTimeout: js.UndefOr[String] = js.undefined
+  var testTimeout: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTestSpecification {
   
@@ -79,11 +79,19 @@ object SchemaTestSpecification {
     
     inline def setDisablePerformanceMetrics(value: Boolean): Self = StObject.set(x, "disablePerformanceMetrics", value.asInstanceOf[js.Any])
     
+    inline def setDisablePerformanceMetricsNull: Self = StObject.set(x, "disablePerformanceMetrics", null)
+    
     inline def setDisablePerformanceMetricsUndefined: Self = StObject.set(x, "disablePerformanceMetrics", js.undefined)
     
     inline def setDisableVideoRecording(value: Boolean): Self = StObject.set(x, "disableVideoRecording", value.asInstanceOf[js.Any])
     
+    inline def setDisableVideoRecordingNull: Self = StObject.set(x, "disableVideoRecording", null)
+    
     inline def setDisableVideoRecordingUndefined: Self = StObject.set(x, "disableVideoRecording", js.undefined)
+    
+    inline def setIosTestLoop(value: SchemaIosTestLoop): Self = StObject.set(x, "iosTestLoop", value.asInstanceOf[js.Any])
+    
+    inline def setIosTestLoopUndefined: Self = StObject.set(x, "iosTestLoop", js.undefined)
     
     inline def setIosTestSetup(value: SchemaIosTestSetup): Self = StObject.set(x, "iosTestSetup", value.asInstanceOf[js.Any])
     
@@ -98,6 +106,8 @@ object SchemaTestSpecification {
     inline def setTestSetupUndefined: Self = StObject.set(x, "testSetup", js.undefined)
     
     inline def setTestTimeout(value: String): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setTestTimeoutNull: Self = StObject.set(x, "testTimeout", null)
     
     inline def setTestTimeoutUndefined: Self = StObject.set(x, "testTimeout", js.undefined)
   }

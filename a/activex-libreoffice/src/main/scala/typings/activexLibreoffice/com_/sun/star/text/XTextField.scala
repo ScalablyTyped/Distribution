@@ -32,7 +32,7 @@ object XTextField {
     dispose: () => Unit,
     getAnchor: () => XTextRange,
     getPresentation: Boolean => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XTextField = {

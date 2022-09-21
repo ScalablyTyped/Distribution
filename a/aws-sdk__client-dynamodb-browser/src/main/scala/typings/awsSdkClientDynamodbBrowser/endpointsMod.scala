@@ -8,5 +8,5 @@ object endpointsMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_Endpoints", "_Endpoints")
   @js.native
-  val Endpoints: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val Endpoints: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

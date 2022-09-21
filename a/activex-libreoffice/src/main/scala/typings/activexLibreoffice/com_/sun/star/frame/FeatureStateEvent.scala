@@ -38,7 +38,7 @@ trait FeatureStateEvent
     * This can be, for example, simply `TRUE` for a boolean feature like underline on/off. Some simple types like `string` or `boolean` are useful here for
     * generic UI elements, like a checkmark in a menu.
     */
-  var State: js.Any
+  var State: Any
 }
 object FeatureStateEvent {
   
@@ -48,7 +48,7 @@ object FeatureStateEvent {
     IsEnabled: Boolean,
     Requery: Boolean,
     Source: XInterface,
-    State: js.Any
+    State: Any
   ): FeatureStateEvent = {
     val __obj = js.Dynamic.literal(FeatureDescriptor = FeatureDescriptor.asInstanceOf[js.Any], FeatureURL = FeatureURL.asInstanceOf[js.Any], IsEnabled = IsEnabled.asInstanceOf[js.Any], Requery = Requery.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureStateEvent]
@@ -64,6 +64,6 @@ object FeatureStateEvent {
     
     inline def setRequery(value: Boolean): Self = StObject.set(x, "Requery", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

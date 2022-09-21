@@ -7,29 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaDatafeedTarget extends StObject {
   
   /**
-    * The country where the items in the feed will be included in the search
-    * index, represented as a  CLDR territory code.
+    * The country where the items in the feed will be included in the search index, represented as a CLDR territory code.
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The list of destinations to exclude for this target (corresponds to
-    * unchecked check boxes in Merchant Center).
+    * The list of destinations to exclude for this target (corresponds to cleared check boxes in Merchant Center).
     */
-  var excludedDestinations: js.UndefOr[js.Array[String]] = js.undefined
+  var excludedDestinations: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The list of destinations to include for this target (corresponds to
-    * checked check boxes in Merchant Center). Default destinations are always
-    * included unless provided in the excluded_destination field.
+    * The list of destinations to include for this target (corresponds to checked check boxes in Merchant Center). Default destinations are always included unless provided in `excludedDestinations`.
     */
-  var includedDestinations: js.UndefOr[js.Array[String]] = js.undefined
+  var includedDestinations: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The two-letter ISO 639-1 language of the items in the feed. Must be a
-    * valid language for targets[].country.
+    * The two-letter ISO 639-1 language of the items in the feed. Must be a valid language for `targets[].country`.
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDatafeedTarget {
   
@@ -42,21 +37,29 @@ object SchemaDatafeedTarget {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
+    inline def setCountryNull: Self = StObject.set(x, "country", null)
+    
     inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     inline def setExcludedDestinations(value: js.Array[String]): Self = StObject.set(x, "excludedDestinations", value.asInstanceOf[js.Any])
     
+    inline def setExcludedDestinationsNull: Self = StObject.set(x, "excludedDestinations", null)
+    
     inline def setExcludedDestinationsUndefined: Self = StObject.set(x, "excludedDestinations", js.undefined)
     
-    inline def setExcludedDestinationsVarargs(value: String*): Self = StObject.set(x, "excludedDestinations", js.Array(value :_*))
+    inline def setExcludedDestinationsVarargs(value: String*): Self = StObject.set(x, "excludedDestinations", js.Array(value*))
     
     inline def setIncludedDestinations(value: js.Array[String]): Self = StObject.set(x, "includedDestinations", value.asInstanceOf[js.Any])
     
+    inline def setIncludedDestinationsNull: Self = StObject.set(x, "includedDestinations", null)
+    
     inline def setIncludedDestinationsUndefined: Self = StObject.set(x, "includedDestinations", js.undefined)
     
-    inline def setIncludedDestinationsVarargs(value: String*): Self = StObject.set(x, "includedDestinations", js.Array(value :_*))
+    inline def setIncludedDestinationsVarargs(value: String*): Self = StObject.set(x, "includedDestinations", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }

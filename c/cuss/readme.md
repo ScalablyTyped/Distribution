@@ -1,7 +1,7 @@
 
 # Scala.js typings for cuss
 
-Typings are for version 1.20
+Typings are for version 2.0.0
 
 ## Library description:
 Map of English profane words to a rating of sureness
@@ -10,10 +10,10 @@ Map of English profane words to a rating of sureness
 | ------------------ | :-------------: |
 | Full name          | cuss |
 | Keywords           | offensive, profane, vulgar, word, list |
-| # releases         | 13 |
-| # dependents       | 4 |
-| # downloads        | 852803 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 78576.66666666667 |
+| # stars            | 133.0 |
 
 ## Links
 - [Homepage](https://github.com/words/cuss#readme)
@@ -24,7 +24,7 @@ Map of English profane words to a rating of sureness
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

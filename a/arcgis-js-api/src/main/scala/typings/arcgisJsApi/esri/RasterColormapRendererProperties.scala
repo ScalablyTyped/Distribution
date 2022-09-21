@@ -26,6 +26,6 @@ object RasterColormapRendererProperties {
     
     inline def setColormapInfosUndefined: Self = StObject.set(x, "colormapInfos", js.undefined)
     
-    inline def setColormapInfosVarargs(value: ColormapInfoProperties*): Self = StObject.set(x, "colormapInfos", js.Array(value :_*))
+    inline def setColormapInfosVarargs(value: ColormapInfoProperties*): Self = StObject.set(x, "colormapInfos", js.Array(value*))
   }
 }

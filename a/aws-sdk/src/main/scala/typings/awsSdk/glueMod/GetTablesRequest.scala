@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetTablesRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the tables reside. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the tables reside. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -24,12 +24,22 @@ trait GetTablesRequest extends StObject {
   /**
     * The maximum number of tables to return in a single response.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.undefined
+  var MaxResults: js.UndefOr[CatalogGetterPageSize] = js.undefined
   
   /**
     * A continuation token, included if this is a continuation call.
     */
   var NextToken: js.UndefOr[Token] = js.undefined
+  
+  /**
+    * The time as of when to read the table contents. If not set, the most recent transaction commit time will be used. Cannot be specified along with TransactionId.
+    */
+  var QueryAsOfTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The transaction ID at which to read the table contents.
+    */
+  var TransactionId: js.UndefOr[TransactionIdString] = js.undefined
 }
 object GetTablesRequest {
   
@@ -50,12 +60,20 @@ object GetTablesRequest {
     
     inline def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
-    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: CatalogGetterPageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setQueryAsOfTime(value: js.Date): Self = StObject.set(x, "QueryAsOfTime", value.asInstanceOf[js.Any])
+    
+    inline def setQueryAsOfTimeUndefined: Self = StObject.set(x, "QueryAsOfTime", js.undefined)
+    
+    inline def setTransactionId(value: TransactionIdString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
   }
 }

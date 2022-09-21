@@ -8,5 +8,5 @@ object deleteAliasInputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/DeleteAliasInput", "DeleteAliasInput")
   @js.native
-  val DeleteAliasInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteAliasInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

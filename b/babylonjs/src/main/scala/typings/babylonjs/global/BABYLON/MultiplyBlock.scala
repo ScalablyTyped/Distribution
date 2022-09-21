@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.MultiplyBlock")
 @js.native
-class MultiplyBlock protected ()
+open class MultiplyBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.MultiplyBlock {
   /**

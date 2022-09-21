@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChooseImageOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 最多可以选择的图片张数，默认9 */
   var count: js.UndefOr[Double] = js.undefined
@@ -38,13 +38,13 @@ object ChooseImageOptions {
     
     inline def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
-    inline def setSizeTypeVarargs(value: ImageSizeType*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
+    inline def setSizeTypeVarargs(value: ImageSizeType*): Self = StObject.set(x, "sizeType", js.Array(value*))
     
     inline def setSourceType(value: js.Array[ImageSourceType]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    inline def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value*))
     
     inline def setSuccess(value: TempFilesData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

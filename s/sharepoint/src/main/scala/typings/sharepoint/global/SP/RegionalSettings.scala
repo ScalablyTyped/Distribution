@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RegionalSettings")
 @js.native
-class RegionalSettings ()
+open class RegionalSettings ()
   extends StObject
      with typings.sharepoint.SP.RegionalSettings

@@ -65,6 +65,15 @@ trait EdgeLine extends StObject {
   var `line-fill`: js.UndefOr[PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]] = js.undefined
   
   /**
+    * The opacity of the edge’s line and arrow. Useful if you wish to have a separate opacity for the edge
+    * label versus the edge line. Note that the opacity value of the edge element affects the effective
+    * opacity of its line and label subcomponents.
+    *
+    * Value between `0` and `1` inclusive.
+    */
+  var `line-opacity`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
+  
+  /**
     * The style of the edge’s line.
     */
   var `line-style`: js.UndefOr[PropertyValueEdge[LineStyle]] = js.undefined
@@ -121,13 +130,19 @@ object EdgeLine {
     
     inline def `setLine-dash-patternUndefined`: Self = StObject.set(x, "line-dash-pattern", js.undefined)
     
-    inline def `setLine-dash-patternVarargs`(value: PropertyValueEdge[Double]*): Self = StObject.set(x, "line-dash-pattern", js.Array(value :_*))
+    inline def `setLine-dash-patternVarargs`(value: PropertyValueEdge[Double]*): Self = StObject.set(x, "line-dash-pattern", js.Array(value*))
     
     inline def `setLine-fill`(value: PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]): Self = StObject.set(x, "line-fill", value.asInstanceOf[js.Any])
     
     inline def `setLine-fillFunction1`(value: EdgeSingular => solid | `linear-gradient` | `radial-gradient`): Self = StObject.set(x, "line-fill", js.Any.fromFunction1(value))
     
     inline def `setLine-fillUndefined`: Self = StObject.set(x, "line-fill", js.undefined)
+    
+    inline def `setLine-opacity`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "line-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setLine-opacityFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "line-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setLine-opacityUndefined`: Self = StObject.set(x, "line-opacity", js.undefined)
     
     inline def `setLine-style`(value: PropertyValueEdge[LineStyle]): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PassCubePostProcess")
 @js.native
-class PassCubePostProcess protected ()
+open class PassCubePostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PassCubePostProcess {
   /**
@@ -40,9 +40,15 @@ object PassCubePostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String

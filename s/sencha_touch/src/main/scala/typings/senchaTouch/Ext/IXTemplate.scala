@@ -17,9 +17,9 @@ trait IXTemplate
   @JSName("applyOut")
   var applyOut_IXTemplate: js.UndefOr[
     js.Function3[
-      /* values */ js.UndefOr[js.Any], 
+      /* values */ js.UndefOr[Any], 
       /* out */ js.UndefOr[Array], 
-      /* parent */ js.UndefOr[js.Any], 
+      /* parent */ js.UndefOr[Any], 
       Array
     ]
   ] = js.undefined
@@ -34,7 +34,7 @@ object IXTemplate {
   extension [Self <: IXTemplate](x: Self) {
     
     inline def setApplyOut(
-      value: (/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array], /* parent */ js.UndefOr[js.Any]) => Array
+      value: (/* values */ js.UndefOr[Any], /* out */ js.UndefOr[Array], /* parent */ js.UndefOr[Any]) => Array
     ): Self = StObject.set(x, "applyOut", js.Any.fromFunction3(value))
     
     inline def setApplyOutUndefined: Self = StObject.set(x, "applyOut", js.undefined)

@@ -19,6 +19,6 @@ object GetInstallabilityErrorsResponse {
     
     inline def setInstallabilityErrors(value: js.Array[InstallabilityError]): Self = StObject.set(x, "installabilityErrors", value.asInstanceOf[js.Any])
     
-    inline def setInstallabilityErrorsVarargs(value: InstallabilityError*): Self = StObject.set(x, "installabilityErrors", js.Array(value :_*))
+    inline def setInstallabilityErrorsVarargs(value: InstallabilityError*): Self = StObject.set(x, "installabilityErrors", js.Array(value*))
   }
 }

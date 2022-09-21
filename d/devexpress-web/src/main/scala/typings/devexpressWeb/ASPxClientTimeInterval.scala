@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,12 +34,12 @@ trait ASPxClientTimeInterval extends StObject {
   /**
     * Client-side function that returns the end time of the interval.
     */
-  def GetEnd(): Date
+  def GetEnd(): js.Date
   
   /**
     * Client-side function that returns the start time of the interval.
     */
-  def GetStart(): Date
+  def GetStart(): js.Date
   
   /**
     * Checks if the current time interval intersects with the specified time interval. true, if the two time intervals intersect; otherwise, false.
@@ -64,19 +63,19 @@ trait ASPxClientTimeInterval extends StObject {
     * Client-side function that returns the duration of the specified time interval.
     * @param value A TimeSpan  object, representing the duration of the time period.
     */
-  def SetDuration(value: js.Any): Unit
+  def SetDuration(value: Any): Unit
   
   /**
     * Client-side function that sets the end time of the interval.
     * @param value A DateTime value, representing the end of the interval.
     */
-  def SetEnd(value: Date): Unit
+  def SetEnd(value: js.Date): Unit
   
   /**
     * Client-side function that sets the start time of the interval.
     * @param value A DateTime value, representing the beginning of the interval.
     */
-  def SetStart(value: Date): Unit
+  def SetStart(value: js.Date): Unit
 }
 object ASPxClientTimeInterval {
   
@@ -85,14 +84,14 @@ object ASPxClientTimeInterval {
     Equals: ASPxClientTimeInterval => Boolean,
     GetAllDay: () => Boolean,
     GetDuration: () => Double,
-    GetEnd: () => Date,
-    GetStart: () => Date,
+    GetEnd: () => js.Date,
+    GetStart: () => js.Date,
     IntersectsWith: ASPxClientTimeInterval => Boolean,
     IntersectsWithExcludingBounds: ASPxClientTimeInterval => Boolean,
     SetAllDay: Boolean => Unit,
-    SetDuration: js.Any => Unit,
-    SetEnd: Date => Unit,
-    SetStart: Date => Unit
+    SetDuration: Any => Unit,
+    SetEnd: js.Date => Unit,
+    SetStart: js.Date => Unit
   ): ASPxClientTimeInterval = {
     val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), Equals = js.Any.fromFunction1(Equals), GetAllDay = js.Any.fromFunction0(GetAllDay), GetDuration = js.Any.fromFunction0(GetDuration), GetEnd = js.Any.fromFunction0(GetEnd), GetStart = js.Any.fromFunction0(GetStart), IntersectsWith = js.Any.fromFunction1(IntersectsWith), IntersectsWithExcludingBounds = js.Any.fromFunction1(IntersectsWithExcludingBounds), SetAllDay = js.Any.fromFunction1(SetAllDay), SetDuration = js.Any.fromFunction1(SetDuration), SetEnd = js.Any.fromFunction1(SetEnd), SetStart = js.Any.fromFunction1(SetStart))
     __obj.asInstanceOf[ASPxClientTimeInterval]
@@ -108,9 +107,9 @@ object ASPxClientTimeInterval {
     
     inline def setGetDuration(value: () => Double): Self = StObject.set(x, "GetDuration", js.Any.fromFunction0(value))
     
-    inline def setGetEnd(value: () => Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => js.Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
     
-    inline def setGetStart(value: () => Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => js.Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
     
     inline def setIntersectsWith(value: ASPxClientTimeInterval => Boolean): Self = StObject.set(x, "IntersectsWith", js.Any.fromFunction1(value))
     
@@ -118,10 +117,10 @@ object ASPxClientTimeInterval {
     
     inline def setSetAllDay(value: Boolean => Unit): Self = StObject.set(x, "SetAllDay", js.Any.fromFunction1(value))
     
-    inline def setSetDuration(value: js.Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
+    inline def setSetDuration(value: Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
     
-    inline def setSetEnd(value: Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
+    inline def setSetEnd(value: js.Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
     
-    inline def setSetStart(value: Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
+    inline def setSetStart(value: js.Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
   }
 }

@@ -10,15 +10,12 @@ Returns a filtered copy of an object with only the specified keys, similar to `_
 | ------------------ | :-------------: |
 | Full name          | object.pick |
 | Keywords           | object, pick |
-| # releases         | 0 |
-| # dependents       | 210 |
-| # downloads        | 648358782 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.975286766666667E7 |
+| # stars            | 38.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/object.pick)
-- [Bugs](https://github.com/jonschlinkert/object.pick/issues)
-- [Repository](https://github.com/jonschlinkert/object.pick)
 - [Npm](https://www.npmjs.com/package/object.pick)
     
 

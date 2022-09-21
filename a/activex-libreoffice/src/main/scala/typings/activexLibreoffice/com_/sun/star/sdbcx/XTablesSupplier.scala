@@ -30,7 +30,7 @@ object XTablesSupplier {
     Tables: XNameAccess,
     acquire: () => Unit,
     getTables: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTablesSupplier = {
     val __obj = js.Dynamic.literal(Tables = Tables.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getTables = js.Any.fromFunction0(getTables), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -8,18 +8,18 @@ object Advertising {
   
   trait AdvertisementBase extends StObject {
     
-    var source: js.Any
+    var source: Any
   }
   object AdvertisementBase {
     
-    inline def apply(source: js.Any): AdvertisementBase = {
+    inline def apply(source: Any): AdvertisementBase = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdvertisementBase]
     }
     
     extension [Self <: AdvertisementBase](x: Self) {
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,7 +33,7 @@ object Advertising {
   }
   object MidrollAdvertisement {
     
-    inline def apply(source: js.Any, time: Double, timePercentage: Double): MidrollAdvertisement = {
+    inline def apply(source: Any, time: Double, timePercentage: Double): MidrollAdvertisement = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timePercentage = timePercentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[MidrollAdvertisement]
     }
@@ -51,7 +51,7 @@ object Advertising {
        with AdvertisementBase
   object PrerollAdvertisement {
     
-    inline def apply(source: js.Any): PrerollAdvertisement = {
+    inline def apply(source: Any): PrerollAdvertisement = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrerollAdvertisement]
     }

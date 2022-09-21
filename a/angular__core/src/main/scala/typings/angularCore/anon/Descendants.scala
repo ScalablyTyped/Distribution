@@ -8,7 +8,9 @@ trait Descendants extends StObject {
   
   var descendants: js.UndefOr[Boolean] = js.undefined
   
-  var read: js.UndefOr[js.Any] = js.undefined
+  var read: js.UndefOr[Any] = js.undefined
+  
+  var static: js.UndefOr[Boolean] = js.undefined
 }
 object Descendants {
   
@@ -23,8 +25,12 @@ object Descendants {
     
     inline def setDescendantsUndefined: Self = StObject.set(x, "descendants", js.undefined)
     
-    inline def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    
+    inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
   }
 }

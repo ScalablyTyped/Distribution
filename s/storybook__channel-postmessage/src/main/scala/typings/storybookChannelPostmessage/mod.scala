@@ -22,34 +22,34 @@ object mod {
   
   @JSImport("@storybook/channel-postmessage", "PostmsgTransport")
   @js.native
-  class PostmsgTransport protected () extends StObject {
+  open class PostmsgTransport protected () extends StObject {
     def this(config: Config) = this()
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
-    /* private */ val config: js.Any = js.native
+    /* private */ val config: Any = js.native
     
-    /* private */ var connected: js.Any = js.native
+    /* private */ var connected: Any = js.native
     
-    /* private */ var flush: js.Any = js.native
+    /* private */ var flush: Any = js.native
     
-    /* private */ var getCurrentFrames: js.Any = js.native
+    /* private */ var getCurrentFrames: Any = js.native
     
-    /* private */ var getFrames: js.Any = js.native
+    /* private */ var getFrames: Any = js.native
     
-    /* private */ var getLocalFrame: js.Any = js.native
+    /* private */ var getLocalFrame: Any = js.native
     
-    /* private */ var handleEvent: js.Any = js.native
+    /* private */ var handleEvent: Any = js.native
     
-    /* private */ var handler: js.Any = js.native
+    /* private */ var handler: Any = js.native
     
     /**
       * Sends `event` to the associated window. If the window does not yet exist
       * the event will be stored in a buffer and sent when the window exists.
       * @param event
       */
-    def send(event: ChannelEvent): js.Promise[js.Any] = js.native
-    def send(event: ChannelEvent, options: js.Any): js.Promise[js.Any] = js.native
+    def send(event: ChannelEvent): js.Promise[Any] = js.native
+    def send(event: ChannelEvent, options: Any): js.Promise[Any] = js.native
     
     def setHandler(handler: ChannelHandler): Unit = js.native
   }

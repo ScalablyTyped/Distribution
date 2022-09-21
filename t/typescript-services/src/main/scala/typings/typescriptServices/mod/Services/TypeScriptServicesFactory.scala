@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.TypeScriptServicesFactory")
 @js.native
-class TypeScriptServicesFactory ()
+open class TypeScriptServicesFactory ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.TypeScriptServicesFactory {
   
   /* private */ /* CompleteClass */
-  var _shims: js.Any = js.native
+  var _shims: Any = js.native
   
   /* CompleteClass */
   override def close(): Unit = js.native

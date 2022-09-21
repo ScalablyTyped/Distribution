@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "TouchSequence")
 @js.native
-class TouchSequence protected () extends StObject {
+open class TouchSequence protected () extends StObject {
   /*
     * @param {!WebDriver} driver The driver instance to use.
     * @constructor

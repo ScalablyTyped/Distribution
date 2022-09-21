@@ -12,14 +12,14 @@ trait PatchComplianceData extends StObject {
   var CVEIds: js.UndefOr[PatchCVEIds] = js.undefined
   
   /**
-    * The classification of the patch (for example, SecurityUpdates, Updates, CriticalUpdates).
+    * The classification of the patch, such as SecurityUpdates, Updates, and CriticalUpdates.
     */
   var Classification: PatchClassification
   
   /**
-    * The date/time the patch was installed on the instance. Note that not all operating systems provide this level of information.
+    * The date/time the patch was installed on the managed node. Not all operating systems provide this level of information.
     */
-  var InstalledTime: DateTime
+  var InstalledTime: js.Date
   
   /**
     * The operating system-specific ID of the patch.
@@ -27,12 +27,12 @@ trait PatchComplianceData extends StObject {
   var KBId: PatchKbNumber
   
   /**
-    * The severity of the patch (for example, Critical, Important, Moderate).
+    * The severity of the patch such as Critical, Important, and Moderate.
     */
   var Severity: PatchSeverity
   
   /**
-    * The state of the patch on the instance, such as INSTALLED or FAILED. For descriptions of each patch state, see About patch compliance in the AWS Systems Manager User Guide.
+    * The state of the patch on the managed node, such as INSTALLED or FAILED. For descriptions of each patch state, see About patch compliance in the Amazon Web Services Systems Manager User Guide.
     */
   var State: PatchComplianceDataState
   
@@ -45,7 +45,7 @@ object PatchComplianceData {
   
   inline def apply(
     Classification: PatchClassification,
-    InstalledTime: DateTime,
+    InstalledTime: js.Date,
     KBId: PatchKbNumber,
     Severity: PatchSeverity,
     State: PatchComplianceDataState,
@@ -63,7 +63,7 @@ object PatchComplianceData {
     
     inline def setClassification(value: PatchClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
-    inline def setInstalledTime(value: DateTime): Self = StObject.set(x, "InstalledTime", value.asInstanceOf[js.Any])
+    inline def setInstalledTime(value: js.Date): Self = StObject.set(x, "InstalledTime", value.asInstanceOf[js.Any])
     
     inline def setKBId(value: PatchKbNumber): Self = StObject.set(x, "KBId", value.asInstanceOf[js.Any])
     

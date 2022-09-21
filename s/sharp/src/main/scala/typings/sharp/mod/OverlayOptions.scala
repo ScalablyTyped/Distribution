@@ -1,6 +1,7 @@
 package typings.sharp.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.sharp.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,17 @@ trait OverlayOptions extends StObject {
   var gravity: js.UndefOr[Gravity_] = js.undefined
   
   /** Buffer containing image data, String containing the path to an image file, or Create object  */
-  var input: js.UndefOr[String | Buffer | typings.sharp.anon.Create] = js.undefined
+  var input: js.UndefOr[String | Buffer | typings.sharp.anon.Create | Text] = js.undefined
   
   /** the pixel offset from the left edge. */
   var left: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Do not process input images where the number of pixels (width x height) exceeds this limit.
+    * Assumes image dimensions contained in the input metadata can be trusted.
+    * An integral Number of pixels, zero or false to remove limit, true to use default limit of 268402689 (0x3FFF x 0x3FFF). (optional, default 268402689)
+    */
+  var limitInputPixels: js.UndefOr[Double | Boolean] = js.undefined
   
   /** Set to true to avoid premultipling the image below. Equivalent to the --premultiplied vips option. */
   var premultiplied: js.UndefOr[Boolean] = js.undefined
@@ -55,13 +63,17 @@ object OverlayOptions {
     
     inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    inline def setInput(value: String | Buffer | typings.sharp.anon.Create): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String | Buffer | typings.sharp.anon.Create | Text): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLimitInputPixels(value: Double | Boolean): Self = StObject.set(x, "limitInputPixels", value.asInstanceOf[js.Any])
+    
+    inline def setLimitInputPixelsUndefined: Self = StObject.set(x, "limitInputPixels", js.undefined)
     
     inline def setPremultiplied(value: Boolean): Self = StObject.set(x, "premultiplied", value.asInstanceOf[js.Any])
     

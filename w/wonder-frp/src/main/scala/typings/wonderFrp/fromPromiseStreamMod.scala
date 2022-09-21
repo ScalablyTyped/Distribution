@@ -10,10 +10,10 @@ object fromPromiseStreamMod {
   
   @JSImport("wonder-frp/dist/commonjs/stream/FromPromiseStream", "FromPromiseStream")
   @js.native
-  class FromPromiseStream protected () extends BaseStream {
-    def this(promise: js.Any, scheduler: Scheduler) = this()
+  open class FromPromiseStream protected () extends BaseStream {
+    def this(promise: Any, scheduler: Scheduler) = this()
     
-    /* private */ var _promise: js.Any = js.native
+    /* private */ var _promise: Any = js.native
   }
   /* static members */
   object FromPromiseStream {
@@ -22,6 +22,6 @@ object fromPromiseStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(promise: js.Any, scheduler: Scheduler): FromPromiseStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[FromPromiseStream]
+    inline def create(promise: Any, scheduler: Scheduler): FromPromiseStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[FromPromiseStream]
   }
 }

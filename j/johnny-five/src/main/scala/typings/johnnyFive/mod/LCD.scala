@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "LCD")
 @js.native
-class LCD protected () extends StObject {
+open class LCD protected () extends StObject {
   def this(option: LCDGeneralOption) = this()
   def this(option: LCDI2COption) = this()
   def this(option: LCDParallelOption) = this()
@@ -15,7 +15,7 @@ class LCD protected () extends StObject {
   
   def backlight(): this.type = js.native
   
-  def bgColor(color: js.Any): this.type = js.native
+  def bgColor(color: Any): this.type = js.native
   
   def blink(): this.type = js.native
   

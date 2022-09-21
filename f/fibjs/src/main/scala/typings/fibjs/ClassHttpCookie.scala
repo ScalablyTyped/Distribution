@@ -1,6 +1,5 @@
 package typings.fibjs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ trait ClassHttpCookie
     * 
     * @type Date
     */
-  var expires: Date = js.native
+  var expires: js.Date = js.native
   
   /**
     * class prop 

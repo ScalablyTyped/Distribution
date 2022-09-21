@@ -13,12 +13,26 @@ object videoDomeMod {
   
   @JSImport("babylonjs/Helpers/videoDome", "VideoDome")
   @js.native
-  class VideoDome protected () extends TextureDome[VideoTexture] {
+  open class VideoDome protected () extends TextureDome[VideoTexture] {
     /**
       * Create an instance of this class and pass through the parameters to the relevant classes- Texture, StandardMaterial, and Mesh.
       * @param name Element's name, child elements will append suffixes for their own names.
       * @param textureUrlOrElement defines the url(s) or the (video) HTML element to use
       * @param options An object containing optional or exposed sub element properties
+      * @param options.resolution
+      * @param options.clickToPlay
+      * @param options.autoPlay
+      * @param options.loop
+      * @param options.size
+      * @param options.poster
+      * @param options.faceForward
+      * @param options.useDirectMapping
+      * @param options.halfDomeMode
+      * @param options.crossEyeMode
+      * @param options.generateMipMaps
+      * @param options.mesh
+      * @param scene
+      * @param onError
       */
     def this(name: String, textureUrlOrElement: String, options: AutoPlay, scene: Scene) = this()
     def this(name: String, textureUrlOrElement: js.Array[String], options: AutoPlay, scene: Scene) = this()
@@ -29,7 +43,7 @@ object videoDomeMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -38,7 +52,7 @@ object videoDomeMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -47,11 +61,15 @@ object videoDomeMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     
-    /* protected */ def _initTexture(urlsOrElement: HTMLVideoElement, scene: Scene, options: js.Any): VideoTexture = js.native
+    /* protected */ def _initTexture(urlsOrElement: HTMLVideoElement, scene: Scene, options: Any): VideoTexture = js.native
+    
+    /* private */ var _pointerObserver: Any = js.native
+    
+    /* private */ var _textureObserver: Any = js.native
     
     /**
       * Get the video mode of this dome

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnableOrganizationAdminAccountRequest extends StObject {
   
   /**
-    * The AWS account ID for the account to designate as the delegated Amazon Macie administrator account for the organization.
+    * The Amazon Web Services account ID for the account to designate as the delegated Amazon Macie administrator account for the organization.
     */
   var adminAccountId: string
   

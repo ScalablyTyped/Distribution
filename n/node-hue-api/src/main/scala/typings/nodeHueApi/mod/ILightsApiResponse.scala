@@ -19,6 +19,6 @@ object ILightsApiResponse {
     
     inline def setLights(value: js.Array[ILight]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
-    inline def setLightsVarargs(value: ILight*): Self = StObject.set(x, "lights", js.Array(value :_*))
+    inline def setLightsVarargs(value: ILight*): Self = StObject.set(x, "lights", js.Array(value*))
   }
 }

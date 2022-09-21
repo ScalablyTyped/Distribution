@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AsyncMethodOptionLike extends StObject {
   
-  var success: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
 }
 object AsyncMethodOptionLike {
   
@@ -17,7 +17,7 @@ object AsyncMethodOptionLike {
   
   extension [Self <: AsyncMethodOptionLike](x: Self) {
     
-    inline def setSuccess(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* repeated */ Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }

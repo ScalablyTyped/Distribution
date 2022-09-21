@@ -10,15 +10,12 @@ Reindent and reformat CSS.
 | ------------------ | :-------------: |
 | Full name          | cssbeautify |
 | Keywords           | cssbeautify, css, formatter |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 1764055 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 115280.66666666667 |
+| # stars            | 668.0 |
 
 ## Links
-- [Homepage](https://github.com/senchalabs/cssbeautify#readme)
-- [Bugs](https://github.com/senchalabs/cssbeautify/issues)
-- [Repository](https://github.com/senchalabs/cssbeautify)
 - [Npm](https://www.npmjs.com/package/cssbeautify)
     
 

@@ -22,6 +22,6 @@ object ImportAdminQuotaPoliciesResponse {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: AdminQuotaPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: AdminQuotaPolicy*): Self = StObject.set(x, "policies", js.Array(value*))
   }
 }

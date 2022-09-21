@@ -6,8 +6,8 @@ import typings.rcTable.interfaceMod.CustomizeComponent
 import typings.rcTable.interfaceMod.GetComponentProps
 import typings.rcTable.interfaceMod.StickyOffsets
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.TdHTMLAttributes
 import typings.react.mod.global.JSX.Element
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +51,7 @@ object headerRowMod {
       cells: js.Array[CellType[RecordType]],
       flattenColumns: js.Array[ColumnType[RecordType]],
       index: Double,
-      onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement],
+      onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any],
       rowComponent: CustomizeComponent,
       stickyOffsets: StickyOffsets
     ): RowProps[RecordType] = {
@@ -65,16 +65,16 @@ object headerRowMod {
       
       inline def setCells(value: js.Array[CellType[RecordType]]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      inline def setCellsVarargs(value: CellType[RecordType]*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: CellType[RecordType]*): Self = StObject.set(x, "cells", js.Array(value*))
       
       inline def setFlattenColumns(value: js.Array[ColumnType[RecordType]]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
       
-      inline def setFlattenColumnsVarargs(value: ColumnType[RecordType]*): Self = StObject.set(x, "flattenColumns", js.Array(value :_*))
+      inline def setFlattenColumnsVarargs(value: ColumnType[RecordType]*): Self = StObject.set(x, "flattenColumns", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setOnHeaderRow(
-        value: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
+        value: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]
       ): Self = StObject.set(x, "onHeaderRow", js.Any.fromFunction2(value))
       
       inline def setRowComponent(value: CustomizeComponent): Self = StObject.set(x, "rowComponent", value.asInstanceOf[js.Any])

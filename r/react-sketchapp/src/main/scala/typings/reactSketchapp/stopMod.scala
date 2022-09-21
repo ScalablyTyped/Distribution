@@ -1,51 +1,43 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.react.mod.ReactNode
-import typings.reactSketchapp.propsMod.NumberProp
+import typings.reactSketchapp.anon.StopColor
+import typings.reactSketchapp.anon.StopOpacity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stopMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Stop", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/Stop", "Stop")
   @js.native
-  class default ()
-    extends Component[StopProps, js.Object, js.Any]
-  
-  type Stop = Component[StopProps, js.Object, js.Any]
-  
-  trait StopProps extends StObject {
-    
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
-    
-    var stopColor: js.UndefOr[String] = js.undefined
-    
-    var stopOpacity: js.UndefOr[NumberProp] = js.undefined
+  open class Stop protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object StopProps {
+  /* static members */
+  object Stop {
     
-    inline def apply(): StopProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StopProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Stop", "Stop")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: StopProps](x: Self) {
-      
-      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
-      
-      inline def setStopColor(value: String): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
-      
-      inline def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
-      
-      inline def setStopOpacity(value: NumberProp): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
-      
-      inline def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Stop", "Stop.defaultProps")
+    @js.native
+    def defaultProps: StopOpacity = js.native
+    inline def defaultProps_=(x: StopOpacity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Svg/Stop", "Stop.propTypes")
+    @js.native
+    def propTypes: StopColor = js.native
+    inline def propTypes_=(x: StopColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[StopColor]
 }

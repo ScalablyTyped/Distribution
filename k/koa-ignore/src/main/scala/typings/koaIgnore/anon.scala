@@ -12,15 +12,15 @@ object anon {
   
   trait If extends StObject {
     
-    def `if`(condition: js.Function1[/* context */ Context, Boolean]): Middleware[DefaultState, DefaultContext]
+    def `if`(condition: js.Function1[/* context */ Context, Boolean]): Middleware[DefaultState, DefaultContext, Any]
     
-    def unless(condition: js.Function1[/* context */ Context, Boolean]): Middleware[DefaultState, DefaultContext]
+    def unless(condition: js.Function1[/* context */ Context, Boolean]): Middleware[DefaultState, DefaultContext, Any]
   }
   object If {
     
     inline def apply(
-      `if`: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext],
-      unless: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext]
+      `if`: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext, Any],
+      unless: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext, Any]
     ): If = {
       val __obj = js.Dynamic.literal(unless = js.Any.fromFunction1(unless))
       __obj.updateDynamic("if")(js.Any.fromFunction1(`if`))
@@ -29,9 +29,13 @@ object anon {
     
     extension [Self <: If](x: Self) {
       
-      inline def setIf(value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext]): Self = StObject.set(x, "if", js.Any.fromFunction1(value))
+      inline def setIf(
+        value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext, Any]
+      ): Self = StObject.set(x, "if", js.Any.fromFunction1(value))
       
-      inline def setUnless(value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext]): Self = StObject.set(x, "unless", js.Any.fromFunction1(value))
+      inline def setUnless(
+        value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext, Any]
+      ): Self = StObject.set(x, "unless", js.Any.fromFunction1(value))
     }
   }
 }

@@ -14,7 +14,7 @@ trait Recipe extends StObject {
   /**
     * The date and time (in Unix format) that the recipe was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.undefined
+  var creationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the recipe.
@@ -29,7 +29,7 @@ trait Recipe extends StObject {
   /**
     * The date and time (in Unix format) that the recipe was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the recipe.
@@ -64,7 +64,7 @@ object Recipe {
     
     inline def setAlgorithmArnUndefined: Self = StObject.set(x, "algorithmArn", js.undefined)
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
@@ -76,7 +76,7 @@ object Recipe {
     
     inline def setFeatureTransformationArnUndefined: Self = StObject.set(x, "featureTransformationArn", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     

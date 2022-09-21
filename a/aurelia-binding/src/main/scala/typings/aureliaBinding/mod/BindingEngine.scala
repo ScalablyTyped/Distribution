@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "BindingEngine")
 @js.native
-class BindingEngine () extends StObject {
+open class BindingEngine () extends StObject {
   
   /**
     * Gets an observer for collection mutation.
     */
-  def collectionObserver(collection: js.Array[js.Any]): CollectionObserver = js.native
-  def collectionObserver(collection: Map[js.Any, js.Any]): CollectionObserver = js.native
-  def collectionObserver(collection: Set[js.Any]): CollectionObserver = js.native
+  def collectionObserver(collection: js.Array[Any]): CollectionObserver = js.native
+  def collectionObserver(collection: Map[Any, Any]): CollectionObserver = js.native
+  def collectionObserver(collection: Set[Any]): CollectionObserver = js.native
   
   /**
     * Creates a binding expression for the specified target property and source expression.
@@ -39,7 +39,7 @@ class BindingEngine () extends StObject {
     * @param bindingContext The binding context (view-model)
     * @param expression A javascript expression accessing the source property.
     */
-  def expressionObserver(bindingContext: js.Any, expression: String): PropertyObserver = js.native
+  def expressionObserver(bindingContext: Any, expression: String): PropertyObserver = js.native
   
   /**
     * Parses a string containing a javascript expression and returns a data-binding specialized AST. Memoized.

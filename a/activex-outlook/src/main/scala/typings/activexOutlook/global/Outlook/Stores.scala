@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Stores")
 @js.native
-/* private */ class Stores ()
+/* private */ open class Stores ()
   extends StObject
      with typings.activexOutlook.Outlook.Stores {
   
@@ -21,14 +21,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.Store = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.Store = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.Stores_typekey")
   var OutlookDotStores_typekey: typings.activexOutlook.Outlook.Stores = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

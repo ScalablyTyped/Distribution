@@ -45,7 +45,7 @@ object StripeClientCheckoutOptions {
     
     inline def setItems(value: js.Array[StripeCheckoutItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: StripeCheckoutItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: StripeCheckoutItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

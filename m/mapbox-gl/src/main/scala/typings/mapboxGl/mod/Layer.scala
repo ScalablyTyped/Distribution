@@ -4,71 +4,86 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.mapboxGl.mod.BackgroundLayer
-  - typings.mapboxGl.mod.CircleLayer
-  - typings.mapboxGl.mod.FillExtrusionLayer
-  - typings.mapboxGl.mod.FillLayer
-  - typings.mapboxGl.mod.HeatmapLayer
-  - typings.mapboxGl.mod.HillshadeLayer
-  - typings.mapboxGl.mod.LineLayer
-  - typings.mapboxGl.mod.RasterLayer
-  - typings.mapboxGl.mod.SymbolLayer
-*/
-trait Layer extends StObject
+trait Layer extends StObject {
+  
+  var filter: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var id: String
+  
+  var interactive: js.UndefOr[Boolean] = js.undefined
+  
+  var layout: js.UndefOr[AnyLayout] = js.undefined
+  
+  var maxzoom: js.UndefOr[Double] = js.undefined
+  
+  var metadata: js.UndefOr[Any] = js.undefined
+  
+  var minzoom: js.UndefOr[Double] = js.undefined
+  
+  var paint: js.UndefOr[AnyPaint] = js.undefined
+  
+  var ref: js.UndefOr[String] = js.undefined
+  
+  var source: js.UndefOr[String | AnySourceData] = js.undefined
+  
+  var `source-layer`: js.UndefOr[String] = js.undefined
+  
+  var `type`: String
+}
 object Layer {
   
-  inline def BackgroundLayer(id: String): typings.mapboxGl.mod.BackgroundLayer = {
+  inline def apply(id: String, `type`: String): Layer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("background")
-    __obj.asInstanceOf[typings.mapboxGl.mod.BackgroundLayer]
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Layer]
   }
   
-  inline def CircleLayer(id: String): typings.mapboxGl.mod.CircleLayer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("circle")
-    __obj.asInstanceOf[typings.mapboxGl.mod.CircleLayer]
-  }
-  
-  inline def FillExtrusionLayer(id: String): typings.mapboxGl.mod.FillExtrusionLayer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("fill-extrusion")
-    __obj.asInstanceOf[typings.mapboxGl.mod.FillExtrusionLayer]
-  }
-  
-  inline def FillLayer(id: String): typings.mapboxGl.mod.FillLayer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("fill")
-    __obj.asInstanceOf[typings.mapboxGl.mod.FillLayer]
-  }
-  
-  inline def HeatmapLayer(id: String): typings.mapboxGl.mod.HeatmapLayer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("heatmap")
-    __obj.asInstanceOf[typings.mapboxGl.mod.HeatmapLayer]
-  }
-  
-  inline def HillshadeLayer(id: String): typings.mapboxGl.mod.HillshadeLayer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("hillshade")
-    __obj.asInstanceOf[typings.mapboxGl.mod.HillshadeLayer]
-  }
-  
-  inline def LineLayer(id: String): typings.mapboxGl.mod.LineLayer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("line")
-    __obj.asInstanceOf[typings.mapboxGl.mod.LineLayer]
-  }
-  
-  inline def RasterLayer(id: String): typings.mapboxGl.mod.RasterLayer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("raster")
-    __obj.asInstanceOf[typings.mapboxGl.mod.RasterLayer]
-  }
-  
-  inline def SymbolLayer(id: String): typings.mapboxGl.mod.SymbolLayer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("symbol")
-    __obj.asInstanceOf[typings.mapboxGl.mod.SymbolLayer]
+  extension [Self <: Layer](x: Self) {
+    
+    inline def setFilter(value: js.Array[Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFilterVarargs(value: Any*): Self = StObject.set(x, "filter", js.Array(value*))
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    
+    inline def setLayout(value: AnyLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
+    
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    inline def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
+    
+    inline def setPaint(value: AnyPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    
+    inline def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
+    
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
+    inline def setSource(value: String | AnySourceData): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def `setSource-layer`(value: String): Self = StObject.set(x, "source-layer", value.asInstanceOf[js.Any])
+    
+    inline def `setSource-layerUndefined`: Self = StObject.set(x, "source-layer", js.undefined)
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

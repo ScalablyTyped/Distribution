@@ -59,7 +59,7 @@ object InstanceInfo {
     
     inline def setNetworkTagsUndefined: Self = StObject.set(x, "networkTags", js.undefined)
     
-    inline def setNetworkTagsVarargs(value: String*): Self = StObject.set(x, "networkTags", js.Array(value :_*))
+    inline def setNetworkTagsVarargs(value: String*): Self = StObject.set(x, "networkTags", js.Array(value*))
     
     inline def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     

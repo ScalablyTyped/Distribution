@@ -11,9 +11,9 @@ Client for GitHub API written in Typescript. Includes support for WebHooks using
 | Full name          | typed-github-api |
 | Keywords           | GitHub, Typescript, WebHook, API |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1598 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 167.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/typed-github-api)

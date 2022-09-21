@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotCache")
 @js.native
-/* private */ class PivotCache ()
+/* private */ open class PivotCache ()
   extends StObject
      with typings.activexExcel.Excel.PivotCache

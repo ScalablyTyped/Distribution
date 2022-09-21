@@ -22,9 +22,14 @@ trait PutSigningProfileRequest extends StObject {
   var profileName: ProfileName
   
   /**
+    * The default validity period override for any signature generated using this signing profile. If unspecified, the default is 135 months.
+    */
+  var signatureValidityPeriod: js.UndefOr[SignatureValidityPeriod] = js.undefined
+  
+  /**
     * The AWS Certificate Manager certificate that will be used to sign code with the new signing profile.
     */
-  var signingMaterial: SigningMaterial
+  var signingMaterial: js.UndefOr[SigningMaterial] = js.undefined
   
   /**
     * Map of key-value pairs for signing. These can include any information that you want to use during signing.
@@ -38,8 +43,8 @@ trait PutSigningProfileRequest extends StObject {
 }
 object PutSigningProfileRequest {
   
-  inline def apply(platformId: PlatformId, profileName: ProfileName, signingMaterial: SigningMaterial): PutSigningProfileRequest = {
-    val __obj = js.Dynamic.literal(platformId = platformId.asInstanceOf[js.Any], profileName = profileName.asInstanceOf[js.Any], signingMaterial = signingMaterial.asInstanceOf[js.Any])
+  inline def apply(platformId: PlatformId, profileName: ProfileName): PutSigningProfileRequest = {
+    val __obj = js.Dynamic.literal(platformId = platformId.asInstanceOf[js.Any], profileName = profileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSigningProfileRequest]
   }
   
@@ -53,7 +58,13 @@ object PutSigningProfileRequest {
     
     inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     
+    inline def setSignatureValidityPeriod(value: SignatureValidityPeriod): Self = StObject.set(x, "signatureValidityPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureValidityPeriodUndefined: Self = StObject.set(x, "signatureValidityPeriod", js.undefined)
+    
     inline def setSigningMaterial(value: SigningMaterial): Self = StObject.set(x, "signingMaterial", value.asInstanceOf[js.Any])
+    
+    inline def setSigningMaterialUndefined: Self = StObject.set(x, "signingMaterial", js.undefined)
     
     inline def setSigningParameters(value: SigningParameters): Self = StObject.set(x, "signingParameters", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,7 @@ object mod {
   @js.native
   val running: js.Array[AnimeInstance] = js.native
   
-  inline def set(targets: AnimeTarget, value: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(targets.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(targets: AnimeTarget, value: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(targets.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setDashoffset(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setDashoffset")().asInstanceOf[Double]
   inline def setDashoffset(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setDashoffset")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -73,10 +73,96 @@ object mod {
   @js.native
   val version: String = js.native
   
+  trait Animatable extends StObject {
+    
+    var id: Double
+    
+    var target: HTMLElement
+    
+    var total: Double
+    
+    var transforms: js.Object
+  }
+  object Animatable {
+    
+    inline def apply(id: Double, target: HTMLElement, total: Double, transforms: js.Object): Animatable = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Animatable]
+    }
+    
+    extension [Self <: Animatable](x: Self) {
+      
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTransforms(value: js.Object): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Animation extends StObject {
+    
+    var animatable: Animatable
+    
+    var currentValue: String
+    
+    var delay: Double
+    
+    var duration: Double
+    
+    var endDelay: Double
+    
+    var property: String
+    
+    var tweens: js.Array[js.Object]
+    
+    var `type`: String
+  }
+  object Animation {
+    
+    inline def apply(
+      animatable: Animatable,
+      currentValue: String,
+      delay: Double,
+      duration: Double,
+      endDelay: Double,
+      property: String,
+      tweens: js.Array[js.Object],
+      `type`: String
+    ): Animation = {
+      val __obj = js.Dynamic.literal(animatable = animatable.asInstanceOf[js.Any], currentValue = currentValue.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], endDelay = endDelay.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], tweens = tweens.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Animation]
+    }
+    
+    extension [Self <: Animation](x: Self) {
+      
+      inline def setAnimatable(value: Animatable): Self = StObject.set(x, "animatable", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentValue(value: String): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+      
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      
+      inline def setEndDelay(value: Double): Self = StObject.set(x, "endDelay", value.asInstanceOf[js.Any])
+      
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      
+      inline def setTweens(value: js.Array[js.Object]): Self = StObject.set(x, "tweens", value.asInstanceOf[js.Any])
+      
+      inline def setTweensVarargs(value: js.Object*): Self = StObject.set(x, "tweens", js.Array(value*))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait AnimeAnimParams
     extends StObject
        with AnimeCallBack
-       with /* AnyAnimatedProperty */ StringDictionary[js.Any] {
+       with /* AnyAnimatedProperty */ StringDictionary[Any] {
     
     var delay: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
     
@@ -145,7 +231,7 @@ object mod {
       
       inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
       
-      inline def setKeyframesVarargs(value: AnimeAnimParams*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+      inline def setKeyframesVarargs(value: AnimeAnimParams*): Self = StObject.set(x, "keyframes", js.Array(value*))
       
       inline def setRound(value: Double | Boolean | FunctionBasedParameter): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
@@ -159,7 +245,7 @@ object mod {
       
       inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      inline def setTargetsVarargs(value: AnimeTarget*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: AnimeTarget*): Self = StObject.set(x, "targets", js.Array(value*))
     }
   }
   
@@ -230,9 +316,9 @@ object mod {
     extends StObject
        with AnimeCallBack {
     
-    var animatables: js.Array[js.Object]
+    var animatables: js.Array[Animatable]
     
-    var animations: js.Array[js.Object]
+    var animations: js.Array[Animation]
     
     var autoplay: Boolean
     
@@ -277,8 +363,8 @@ object mod {
   object AnimeInstance {
     
     inline def apply(
-      animatables: js.Array[js.Object],
-      animations: js.Array[js.Object],
+      animatables: js.Array[Animatable],
+      animations: js.Array[Animation],
       autoplay: Boolean,
       began: Boolean,
       completed: Boolean,
@@ -306,13 +392,13 @@ object mod {
     
     extension [Self <: AnimeInstance](x: Self) {
       
-      inline def setAnimatables(value: js.Array[js.Object]): Self = StObject.set(x, "animatables", value.asInstanceOf[js.Any])
+      inline def setAnimatables(value: js.Array[Animatable]): Self = StObject.set(x, "animatables", value.asInstanceOf[js.Any])
       
-      inline def setAnimatablesVarargs(value: js.Object*): Self = StObject.set(x, "animatables", js.Array(value :_*))
+      inline def setAnimatablesVarargs(value: Animatable*): Self = StObject.set(x, "animatables", js.Array(value*))
       
-      inline def setAnimations(value: js.Array[js.Object]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+      inline def setAnimations(value: js.Array[Animation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
-      inline def setAnimationsVarargs(value: js.Object*): Self = StObject.set(x, "animations", js.Array(value :_*))
+      inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value*))
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -394,7 +480,7 @@ object mod {
   - typings.animejs.mod.AnimeAnimParams because var conflicts: begin, change, changeBegin, changeComplete, complete, loopBegin, loopComplete, update. Inlined targets, duration, delay, endDelay, elasticity, round, keyframes, easing */ trait AnimeParams
     extends StObject
        with AnimeInstanceParams
-       with /* AnyAnimatedProperty */ StringDictionary[js.Any] {
+       with /* AnyAnimatedProperty */ StringDictionary[Any] {
     
     var delay: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
     
@@ -463,7 +549,7 @@ object mod {
       
       inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
       
-      inline def setKeyframesVarargs(value: AnimeAnimParams*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+      inline def setKeyframesVarargs(value: AnimeAnimParams*): Self = StObject.set(x, "keyframes", js.Array(value*))
       
       inline def setRound(value: Double | Boolean | FunctionBasedParameter): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
@@ -477,7 +563,7 @@ object mod {
       
       inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      inline def setTargetsVarargs(value: AnimeTarget*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: AnimeTarget*): Self = StObject.set(x, "targets", js.Array(value*))
     }
   }
   
@@ -685,7 +771,7 @@ object mod {
       
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
+      inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value*))
       
       inline def setStart(value: Double | String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       

@@ -1,17 +1,10 @@
 package typings.devextreme.mod.default
 
 import typings.devextreme.anon.Immutable
-import typings.devextreme.mod.DevExpress.data.ArrayStoreOptions
-import typings.devextreme.mod.DevExpress.data.CustomStoreOptions
-import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod.DevExpress.data.LocalStoreOptions
+import typings.devextreme.mod.DevExpress.data.ArrayStore.Options
 import typings.devextreme.mod.DevExpress.data.ODataContextOptions
-import typings.devextreme.mod.DevExpress.data.ODataStoreOptions
-import typings.devextreme.mod.DevExpress.data.PivotGridDataSourceOptions
 import typings.devextreme.mod.DevExpress.data.Query
-import typings.devextreme.mod.DevExpress.data.StoreOptions
 import typings.devextreme.mod.DevExpress.data.XmlaStoreOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,35 +17,35 @@ object data {
   
   @JSImport("devextreme", "default.data.ArrayStore")
   @js.native
-  class ArrayStore ()
+  open class ArrayStore[TItem, TKey] ()
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.ArrayStore {
-    def this(options: ArrayStoreOptions[typings.devextreme.mod.DevExpress.data.ArrayStore]) = this()
+       with typings.devextreme.mod.DevExpress.data.ArrayStore[TItem, TKey] {
+    def this(options: Options[TItem, TKey]) = this()
   }
   
   @JSImport("devextreme", "default.data.CustomStore")
   @js.native
-  class CustomStore ()
+  open class CustomStore[TItem, TKey] ()
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.CustomStore {
-    def this(options: CustomStoreOptions) = this()
+       with typings.devextreme.mod.DevExpress.data.CustomStore[TItem, TKey] {
+    def this(options: typings.devextreme.mod.DevExpress.data.CustomStore.Options[TItem, TKey]) = this()
   }
   
   @JSImport("devextreme", "default.data.DataSource")
   @js.native
-  class DataSource protected ()
+  open class DataSource[TItem, TKey] protected ()
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.DataSource {
-    def this(data: js.Array[js.Any]) = this()
-    def this(options: CustomStoreOptions) = this()
-    def this(options: DataSourceOptions) = this()
-    def this(store: typings.devextreme.mod.DevExpress.data.Store) = this()
+       with typings.devextreme.mod.DevExpress.data.DataSource[TItem, TKey] {
+    def this(data: js.Array[TItem]) = this()
+    def this(options: typings.devextreme.mod.DevExpress.data.CustomStore.Options[TItem, TKey]) = this()
+    def this(options: typings.devextreme.mod.DevExpress.data.DataSource.Options[Any, Any, TItem, TKey]) = this()
+    def this(store: typings.devextreme.mod.DevExpress.data.utils.Store[TItem, TKey]) = this()
     def this(url: String) = this()
   }
   
   @JSImport("devextreme", "default.data.EdmLiteral")
   @js.native
-  class EdmLiteral protected ()
+  open class EdmLiteral protected ()
     extends StObject
        with typings.devextreme.mod.DevExpress.data.EdmLiteral {
     def this(value: String) = this()
@@ -60,7 +53,7 @@ object data {
   
   @JSImport("devextreme", "default.data.Guid")
   @js.native
-  class Guid ()
+  open class Guid ()
     extends StObject
        with typings.devextreme.mod.DevExpress.data.Guid {
     def this(value: String) = this()
@@ -68,15 +61,15 @@ object data {
   
   @JSImport("devextreme", "default.data.LocalStore")
   @js.native
-  class LocalStore ()
+  open class LocalStore[TItem, TKey] ()
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.LocalStore {
-    def this(options: LocalStoreOptions) = this()
+       with typings.devextreme.mod.DevExpress.data.LocalStore[TItem, TKey] {
+    def this(options: typings.devextreme.mod.DevExpress.data.LocalStore.Options[TItem, TKey]) = this()
   }
   
   @JSImport("devextreme", "default.data.ODataContext")
   @js.native
-  class ODataContext ()
+  open class ODataContext ()
     extends StObject
        with typings.devextreme.mod.DevExpress.data.ODataContext {
     def this(options: ODataContextOptions) = this()
@@ -84,52 +77,48 @@ object data {
   
   @JSImport("devextreme", "default.data.ODataStore")
   @js.native
-  class ODataStore ()
+  open class ODataStore[TItem, TKey] ()
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.ODataStore {
-    def this(options: ODataStoreOptions) = this()
+       with typings.devextreme.mod.DevExpress.data.ODataStore[TItem, TKey] {
+    def this(options: typings.devextreme.mod.DevExpress.data.ODataStore.Options[TItem, TKey]) = this()
   }
   
   @JSImport("devextreme", "default.data.PivotGridDataSource")
   @js.native
-  class PivotGridDataSource ()
+  open class PivotGridDataSource ()
     extends StObject
        with typings.devextreme.mod.DevExpress.data.PivotGridDataSource {
-    def this(options: PivotGridDataSourceOptions) = this()
+    def this(options: typings.devextreme.mod.DevExpress.data.PivotGridDataSource.Options) = this()
   }
-  
-  @JSImport("devextreme", "default.data.Query")
-  @js.native
-  class Query_ ()
-    extends StObject
-       with Query
   
   @JSImport("devextreme", "default.data.Store")
   @js.native
-  class Store ()
+  open class Store[TItem, TKey] ()
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store {
-    def this(options: StoreOptions[typings.devextreme.mod.DevExpress.data.Store]) = this()
+       with typings.devextreme.mod.DevExpress.data.Store[TItem, TKey] {
+    def this(options: typings.devextreme.mod.DevExpress.data.Store.Options[TItem, TKey]) = this()
   }
   
   @JSImport("devextreme", "default.data.XmlaStore")
   @js.native
-  class XmlaStore ()
+  open class XmlaStore ()
     extends StObject
        with typings.devextreme.mod.DevExpress.data.XmlaStore {
     def this(options: XmlaStoreOptions) = this()
   }
   
-  inline def applyChanges(data: js.Array[js.Any], changes: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  inline def applyChanges(data: js.Array[js.Any], changes: js.Array[js.Any], options: Immutable): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def applyChanges(data: js.Array[Any], changes: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  inline def applyChanges(data: js.Array[Any], changes: js.Array[Any], options: Immutable): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def base64Encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def base64Encode(input: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def errorHandler(e: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def errorHandler(e: js.Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def query(array: js.Array[js.Any]): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(array.asInstanceOf[js.Any]).asInstanceOf[Query]
-  inline def query(url: String, queryOptions: js.Any): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(url.asInstanceOf[js.Any], queryOptions.asInstanceOf[js.Any])).asInstanceOf[Query]
+  inline def query(array: js.Array[Any]): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(array.asInstanceOf[js.Any]).asInstanceOf[Query]
+  inline def query(url: String, queryOptions: Any): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(url.asInstanceOf[js.Any], queryOptions.asInstanceOf[js.Any])).asInstanceOf[Query]
+  
+  inline def setErrorHandler(handler: js.Function1[/* e */ js.Error, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setErrorHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object utils {
     
@@ -151,8 +140,8 @@ object data {
       
       @JSImport("devextreme", "default.data.utils.odata.keyConverters")
       @js.native
-      def keyConverters: js.Any = js.native
-      inline def keyConverters_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyConverters")(x.asInstanceOf[js.Any])
+      def keyConverters: Any = js.native
+      inline def keyConverters_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyConverters")(x.asInstanceOf[js.Any])
     }
   }
 }

@@ -42,6 +42,7 @@ import typings.materialUi.anon.`0`
 import typings.materialUi.anon.`1`
 import typings.materialUi.anon.`2`
 import typings.react.mod.Component
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1713,9 +1714,11 @@ object Styles {
     }
   }
   
-  type MuiThemeProvider = Component[MuiThemeProviderProps, js.Object, js.Any]
+  type MuiThemeProvider = Component[MuiThemeProviderProps, js.Object, Any]
   
   trait MuiThemeProviderProps extends StObject {
+    
+    var children: js.UndefOr[ReactElement] = js.undefined
     
     var muiTheme: js.UndefOr[MuiTheme] = js.undefined
   }
@@ -1727,6 +1730,10 @@ object Styles {
     }
     
     extension [Self <: MuiThemeProviderProps](x: Self) {
+      
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setMuiTheme(value: MuiTheme): Self = StObject.set(x, "muiTheme", value.asInstanceOf[js.Any])
       

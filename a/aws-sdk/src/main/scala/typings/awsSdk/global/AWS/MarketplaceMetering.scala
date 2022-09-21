@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class MarketplaceMetering ()
+open class MarketplaceMetering ()
   extends typings.awsSdk.mod.MarketplaceMetering {
   def this(options: ClientConfiguration) = this()
 }

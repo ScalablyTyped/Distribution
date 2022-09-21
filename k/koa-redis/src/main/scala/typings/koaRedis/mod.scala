@@ -1,7 +1,6 @@
 package typings.koaRedis
 
 import typings.koaSession.mod.stores
-import typings.redis.mod.ClientOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +13,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  trait RedisOptions
-    extends StObject
-       with ClientOpts {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts * / any */ trait RedisOptions extends StObject {
     
-    var client: js.UndefOr[js.Any] = js.undefined
+    var client: js.UndefOr[Any] = js.undefined
     
     var duplicate: js.UndefOr[Boolean] = js.undefined
   }
@@ -31,7 +29,7 @@ object mod {
     
     extension [Self <: RedisOptions](x: Self) {
       
-      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
@@ -46,6 +44,6 @@ object mod {
     extends StObject
        with stores {
     
-    var client: js.Any = js.native
+    var client: Any = js.native
   }
 }

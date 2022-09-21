@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html)
   */
-class ColorSizeSliderCls ()
+open class ColorSizeSliderCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ColorSizeSlider {
   def this(properties: ColorSizeSliderProperties) = this()

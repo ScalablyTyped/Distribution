@@ -8,8 +8,16 @@ import typings.amplitudeJs.amplitudeJsStrings.Lax
 import typings.amplitudeJs.amplitudeJsStrings.None
 import typings.amplitudeJs.amplitudeJsStrings.Strict
 import typings.amplitudeJs.amplitudeJsStrings.WARN
+import typings.amplitudeJs.amplitudeJsStrings._empty
+import typings.amplitudeJs.amplitudeJsStrings.cookies
+import typings.amplitudeJs.amplitudeJsStrings.localStorage
+import typings.amplitudeJs.amplitudeJsStrings.none_
+import typings.amplitudeJs.amplitudeJsStrings.sessionStorage
+import typings.amplitudeJs.anon.Branch
 import typings.amplitudeJs.anon.Carrier
+import typings.amplitudeJs.anon.Name
 import typings.amplitudeJs.anon.Reason
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,19 +30,126 @@ object mod {
   
   @JSImport("amplitude-js", "AmplitudeClient")
   @js.native
-  class AmplitudeClient () extends StObject {
+  open class AmplitudeClient () extends StObject {
     def this(instanceName: String) = this()
     
     var Identify: Instantiable0[Identify_] = js.native
     
     var Revenue: Instantiable0[typings.amplitudeJs.mod.Revenue] = js.native
     
+    def clearStorage(): Boolean = js.native
+    
     def clearUserProperties(): Unit = js.native
+    
+    var cookieStorage: CookieStorage = js.native
+    
+    def enableTracking(): Unit = js.native
+    
+    def getDeviceId(): String = js.native
     
     def getSessionId(): Double = js.native
     
-    def identify(identify_obj: Identify_): Unit = js.native
-    def identify(identify_obj: Identify_, opt_callback: Callback): Unit = js.native
+    def getUserId(): String = js.native
+    
+    def groupIdentify(groupType: String, groupName: String, identify: Identify_): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: String,
+      identify: Identify_,
+      callback: Unit,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): Unit = js.native
+    def groupIdentify(groupType: String, groupName: String, identify: Identify_, callback: Unit, errorCallback: Callback): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: String,
+      identify: Identify_,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): Unit = js.native
+    def groupIdentify(groupType: String, groupName: String, identify: Identify_, callback: Callback): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: String,
+      identify: Identify_,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: String,
+      identify: Identify_,
+      callback: Callback,
+      errorCallback: Callback
+    ): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: String,
+      identify: Identify_,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): Unit = js.native
+    def groupIdentify(groupType: String, groupName: js.Array[String], identify: Identify_): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: js.Array[String],
+      identify: Identify_,
+      callback: Unit,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: js.Array[String],
+      identify: Identify_,
+      callback: Unit,
+      errorCallback: Callback
+    ): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: js.Array[String],
+      identify: Identify_,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): Unit = js.native
+    def groupIdentify(groupType: String, groupName: js.Array[String], identify: Identify_, callback: Callback): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: js.Array[String],
+      identify: Identify_,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: js.Array[String],
+      identify: Identify_,
+      callback: Callback,
+      errorCallback: Callback
+    ): Unit = js.native
+    def groupIdentify(
+      groupType: String,
+      groupName: js.Array[String],
+      identify: Identify_,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): Unit = js.native
+    
+    def identify(identify: Identify_): Unit = js.native
+    def identify(identify: Identify_, callback: Unit, errorCallback: Unit, outOfSession: Boolean): Unit = js.native
+    def identify(identify: Identify_, callback: Unit, errorCallback: Callback): Unit = js.native
+    def identify(identify: Identify_, callback: Unit, errorCallback: Callback, outOfSession: Boolean): Unit = js.native
+    def identify(identify: Identify_, callback: Callback): Unit = js.native
+    def identify(identify: Identify_, callback: Callback, errorCallback: Unit, outOfSession: Boolean): Unit = js.native
+    def identify(identify: Identify_, callback: Callback, errorCallback: Callback): Unit = js.native
+    def identify(identify: Identify_, callback: Callback, errorCallback: Callback, outOfSession: Boolean): Unit = js.native
     
     def init(apiKey: String): Unit = js.native
     def init(apiKey: String, userId: String): Unit = js.native
@@ -53,87 +168,388 @@ object mod {
     def isNewSession(): Boolean = js.native
     
     def logEvent(event: String): LogReturn = js.native
-    def logEvent(event: String, data: js.Any): LogReturn = js.native
-    def logEvent(event: String, data: js.Any, callback: Callback): LogReturn = js.native
+    def logEvent(event: String, data: Any): LogReturn = js.native
+    def logEvent(event: String, data: Any, callback: Unit, errorCallback: Unit, outOfSession: Boolean): LogReturn = js.native
+    def logEvent(event: String, data: Any, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEvent(event: String, data: Any, callback: Unit, errorCallback: Callback, outOfSession: Boolean): LogReturn = js.native
+    def logEvent(event: String, data: Any, callback: Callback): LogReturn = js.native
+    def logEvent(event: String, data: Any, callback: Callback, errorCallback: Unit, outOfSession: Boolean): LogReturn = js.native
+    def logEvent(event: String, data: Any, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEvent(event: String, data: Any, callback: Callback, errorCallback: Callback, outOfSession: Boolean): LogReturn = js.native
+    def logEvent(event: String, data: Unit, callback: Unit, errorCallback: Unit, outOfSession: Boolean): LogReturn = js.native
+    def logEvent(event: String, data: Unit, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEvent(event: String, data: Unit, callback: Unit, errorCallback: Callback, outOfSession: Boolean): LogReturn = js.native
     def logEvent(event: String, data: Unit, callback: Callback): LogReturn = js.native
+    def logEvent(event: String, data: Unit, callback: Callback, errorCallback: Unit, outOfSession: Boolean): LogReturn = js.native
+    def logEvent(event: String, data: Unit, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEvent(event: String, data: Unit, callback: Callback, errorCallback: Callback, outOfSession: Boolean): LogReturn = js.native
     
     def logEventWithGroups(event: String): LogReturn = js.native
-    def logEventWithGroups(event: String, data: js.Any): LogReturn = js.native
-    def logEventWithGroups(event: String, data: js.Any, groups: js.Any): LogReturn = js.native
-    def logEventWithGroups(event: String, data: js.Any, groups: js.Any, callback: Callback): LogReturn = js.native
-    def logEventWithGroups(event: String, data: js.Any, groups: Unit, callback: Callback): LogReturn = js.native
-    def logEventWithGroups(event: String, data: Unit, groups: js.Any): LogReturn = js.native
-    def logEventWithGroups(event: String, data: Unit, groups: js.Any, callback: Callback): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Any): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Any, callback: Unit, errorCallback: Unit, outOfSession: Boolean): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Any, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Any,
+      groups: Any,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Any, callback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Any,
+      groups: Any,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Any, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Any,
+      groups: Any,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Unit, callback: Unit, errorCallback: Unit, outOfSession: Boolean): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Unit, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Any,
+      groups: Unit,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Unit, callback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Any,
+      groups: Unit,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Any, groups: Unit, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Any,
+      groups: Unit,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: Any): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: Any, callback: Unit, errorCallback: Unit, outOfSession: Boolean): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: Any, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Unit,
+      groups: Any,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: Any, callback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Unit,
+      groups: Any,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: Any, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Unit,
+      groups: Any,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Unit,
+      groups: Unit,
+      callback: Unit,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: Unit, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Unit,
+      groups: Unit,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
     def logEventWithGroups(event: String, data: Unit, groups: Unit, callback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Unit,
+      groups: Unit,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: Unit, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEventWithGroups(
+      event: String,
+      data: Unit,
+      groups: Unit,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
     
     def logEventWithTimestamp(event: String): LogReturn = js.native
-    def logEventWithTimestamp(event: String, data: js.Any): LogReturn = js.native
-    def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double): LogReturn = js.native
-    def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double, callback: Callback): LogReturn = js.native
-    def logEventWithTimestamp(event: String, data: js.Any, timestamp: Unit, callback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Any): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Any, timestamp: Double): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Any,
+      timestamp: Double,
+      callback: Unit,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Any, timestamp: Double, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Any,
+      timestamp: Double,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Any, timestamp: Double, callback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Any,
+      timestamp: Double,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Any, timestamp: Double, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Any,
+      timestamp: Double,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Any,
+      timestamp: Unit,
+      callback: Unit,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Any, timestamp: Unit, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Any,
+      timestamp: Unit,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Any, timestamp: Unit, callback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Any,
+      timestamp: Unit,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Any, timestamp: Unit, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Any,
+      timestamp: Unit,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
     def logEventWithTimestamp(event: String, data: Unit, timestamp: Double): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Unit,
+      timestamp: Double,
+      callback: Unit,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Unit, timestamp: Double, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Unit,
+      timestamp: Double,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
     def logEventWithTimestamp(event: String, data: Unit, timestamp: Double, callback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Unit,
+      timestamp: Double,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Unit, timestamp: Double, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Unit,
+      timestamp: Double,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Unit,
+      timestamp: Unit,
+      callback: Unit,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Unit, timestamp: Unit, callback: Unit, errorCallback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Unit,
+      timestamp: Unit,
+      callback: Unit,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
     def logEventWithTimestamp(event: String, data: Unit, timestamp: Unit, callback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Unit,
+      timestamp: Unit,
+      callback: Callback,
+      errorCallback: Unit,
+      outOfSession: Boolean
+    ): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Unit, timestamp: Unit, callback: Callback, errorCallback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(
+      event: String,
+      data: Unit,
+      timestamp: Unit,
+      callback: Callback,
+      errorCallback: Callback,
+      outOfSession: Boolean
+    ): LogReturn = js.native
     
-    def logRevenue(pric: Double, quantity: Double, product: String): LogReturn = js.native
+    /**
+      * @deprecated Use `logRevenueV2` instead
+      */
+    def logRevenue(price: Double, quantity: Double, product: String): LogReturn = js.native
     
     def logRevenueV2(revenue_obj: Revenue): LogReturn = js.native
+    
+    def onInit(callback: js.Function1[/* client */ this.type, Unit]): Unit = js.native
+    
+    def onNewSessionStart(callback: js.Function1[/* client */ this.type, Unit]): Unit = js.native
     
     var options: Config = js.native
     
     def regenerateDeviceId(): Unit = js.native
     
+    def resetSessionId(): Unit = js.native
+    
     def setDeviceId(id: String): Unit = js.native
     
     def setDomain(domain: String): Unit = js.native
     
-    def setGlobalUserProperties(properties: js.Any): Unit = js.native
+    def setEventUploadThreshold(eventUploadThreshold: Double): Unit = js.native
+    
+    /**
+      * @deprecated Use `setUserProperties` instead
+      */
+    def setGlobalUserProperties(properties: Any): Unit = js.native
     
     def setGroup(groupType: String, groupName: String): Unit = js.native
     def setGroup(groupType: String, groupName: js.Array[String]): Unit = js.native
     
+    def setLibrary(): Unit = js.native
+    def setLibrary(name: String): Unit = js.native
+    def setLibrary(name: String, version: String): Unit = js.native
+    def setLibrary(name: Unit, version: String): Unit = js.native
+    
+    def setMinTimeBetweenSessionsMillis(timeInMillis: Double): Unit = js.native
+    
     def setOptOut(enable: Boolean): Unit = js.native
+    
+    def setServerUrl(serverUrl: String): Unit = js.native
+    
+    def setServerZone(serverZone: ServerZone): Unit = js.native
+    def setServerZone(serverZone: ServerZone, serverZoneBasedApi: Boolean): Unit = js.native
     
     def setSessionId(sessionId: Double): Unit = js.native
     
+    def setTransport(transport: Transport): Unit = js.native
+    
+    def setUseDynamicConfig(useDynamicConfig: Boolean): Unit = js.native
+    
     def setUserId(): Unit = js.native
     def setUserId(userId: String): Unit = js.native
+    def setUserId(userId: String, startNewSession: Boolean): Unit = js.native
+    def setUserId(userId: Null, startNewSession: Boolean): Unit = js.native
     
-    def setUserProperties(properties: js.Any): Unit = js.native
+    def setUserProperties(properties: Any): Unit = js.native
     
     def setVersionName(versionName: String): Unit = js.native
   }
   
   @JSImport("amplitude-js", "Identify")
   @js.native
-  class Identify_ () extends StObject {
+  open class Identify_ () extends StObject {
     
     def add(key: String, value: String): Identify_ = js.native
     /** increment a user property by a given value (can also be negative to decrement). */
     def add(key: String, value: Double): Identify_ = js.native
     
     def append(key: String, value: String): Identify_ = js.native
-    def append(key: String, value: js.Array[js.Any]): Identify_ = js.native
+    def append(key: String, value: js.Array[Any]): Identify_ = js.native
     def append(key: String, value: js.Object): Identify_ = js.native
     /** Append a value or values to a user property */
     def append(key: String, value: Double): Identify_ = js.native
     
+    def preInsert(key: String, value: String): Identify_ = js.native
+    def preInsert(key: String, value: js.Array[Any]): Identify_ = js.native
+    def preInsert(key: String, value: js.Object): Identify_ = js.native
+    /** Preinsert a value or values to a user property */
+    def preInsert(key: String, value: Double): Identify_ = js.native
+    
     def prepend(key: String, value: String): Identify_ = js.native
-    def prepend(key: String, value: js.Array[js.Any]): Identify_ = js.native
+    def prepend(key: String, value: js.Array[Any]): Identify_ = js.native
     def prepend(key: String, value: js.Object): Identify_ = js.native
     /** Prepend a value or values to a user property */
     def prepend(key: String, value: Boolean): Identify_ = js.native
     def prepend(key: String, value: Double): Identify_ = js.native
     
     def set(key: String, value: String): Identify_ = js.native
-    def set(key: String, value: js.Array[js.Any]): Identify_ = js.native
+    def set(key: String, value: js.Array[Any]): Identify_ = js.native
     def set(key: String, value: js.Object): Identify_ = js.native
     /** Sets the value of a given user property */
     def set(key: String, value: Boolean): Identify_ = js.native
     def set(key: String, value: Double): Identify_ = js.native
     
     def setOnce(key: String, value: String): Identify_ = js.native
-    def setOnce(key: String, value: js.Array[js.Any]): Identify_ = js.native
+    def setOnce(key: String, value: js.Array[Any]): Identify_ = js.native
     def setOnce(key: String, value: js.Object): Identify_ = js.native
     /** Sets the value of a given user property only once */
     def setOnce(key: String, value: Boolean): Identify_ = js.native
@@ -145,9 +561,9 @@ object mod {
   
   @JSImport("amplitude-js", "Revenue")
   @js.native
-  class Revenue () extends StObject {
+  open class Revenue () extends StObject {
     
-    def setEventProperties(eventProperties: js.Any): Revenue = js.native
+    def setEventProperties(eventProperties: Any): Revenue = js.native
     
     def setPrice(price: Double): Revenue = js.native
     
@@ -204,24 +620,24 @@ object mod {
   inline def isNewSession(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewSession")().asInstanceOf[Boolean]
   
   inline def logEvent(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
-  inline def logEvent(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEvent(event: String, data: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEvent(event: String, data: Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEvent(event: String, data: Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   inline def logEvent(event: String, data: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
   inline def logEventWithGroups(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
-  inline def logEventWithGroups(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEventWithGroups(event: String, data: js.Any, groups: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEventWithGroups(event: String, data: js.Any, groups: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEventWithGroups(event: String, data: js.Any, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEventWithGroups(event: String, data: Unit, groups: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEventWithGroups(event: String, data: Unit, groups: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Any, groups: Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Any, groups: Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Any, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Unit, groups: Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Unit, groups: Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   inline def logEventWithGroups(event: String, data: Unit, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
   inline def logEventWithTimestamp(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
-  inline def logEventWithTimestamp(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  inline def logEventWithTimestamp(event: String, data: js.Any, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: Any, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: Any, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: Any, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   inline def logEventWithTimestamp(event: String, data: Unit, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   inline def logEventWithTimestamp(event: String, data: Unit, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   inline def logEventWithTimestamp(event: String, data: Unit, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
@@ -240,7 +656,7 @@ object mod {
   
   inline def setDomain(domain: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setGlobalUserProperties(properties: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setGlobalUserProperties(properties: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setGroup(groupType: String, groupName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGroup")(groupType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setGroup(groupType: String, groupName: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGroup")(groupType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -250,7 +666,7 @@ object mod {
   inline def setUserId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")().asInstanceOf[Unit]
   inline def setUserId(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setUserProperties(properties: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUserProperties(properties: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setVersionName(version: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVersionName")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -289,6 +705,10 @@ object mod {
     
     var forceHttps: js.UndefOr[Boolean] = js.undefined
     
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var includeFbclid: js.UndefOr[Boolean] = js.undefined
+    
     var includeGclid: js.UndefOr[Boolean] = js.undefined
     
     var includeReferrer: js.UndefOr[Boolean] = js.undefined
@@ -297,11 +717,19 @@ object mod {
     
     var language: js.UndefOr[String] = js.undefined
     
+    var library: js.UndefOr[Name] = js.undefined
+    
+    var logAttributionCapturedEvent: js.UndefOr[Boolean] = js.undefined
+    
     var logLevel: js.UndefOr[DISABLE | ERROR | WARN | INFO] = js.undefined
     
     var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var onExitPage: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var optOut: js.UndefOr[Boolean] = js.undefined
+    
+    var plan: js.UndefOr[Branch] = js.undefined
     
     var platform: js.UndefOr[String] = js.undefined
     
@@ -315,9 +743,19 @@ object mod {
     
     var secureCookie: js.UndefOr[Boolean] = js.undefined
     
+    var serverZone: js.UndefOr[ServerZone] = js.undefined
+    
+    var serverZoneBasedApi: js.UndefOr[Boolean] = js.undefined
+    
+    var sessionId: js.UndefOr[Double | Null] = js.undefined
+    
     var sessionTimeout: js.UndefOr[Double] = js.undefined
     
+    var storage: js.UndefOr[_empty | cookies | localStorage | sessionStorage | none_] = js.undefined
+    
     var trackingOptions: js.UndefOr[Carrier] = js.undefined
+    
+    var transport: js.UndefOr[Transport] = js.undefined
     
     var unsentIdentifyKey: js.UndefOr[String] = js.undefined
     
@@ -326,6 +764,8 @@ object mod {
     var unsetParamsReferrerOnNewSession: js.UndefOr[Boolean] = js.undefined
     
     var uploadBatchSize: js.UndefOr[Double] = js.undefined
+    
+    var useDynamicConfig: js.UndefOr[Boolean] = js.undefined
     
     var useNativeDeviceInfo: js.UndefOr[Boolean] = js.undefined
     
@@ -392,6 +832,14 @@ object mod {
       
       inline def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
       
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setIncludeFbclid(value: Boolean): Self = StObject.set(x, "includeFbclid", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeFbclidUndefined: Self = StObject.set(x, "includeFbclid", js.undefined)
+      
       inline def setIncludeGclid(value: Boolean): Self = StObject.set(x, "includeGclid", value.asInstanceOf[js.Any])
       
       inline def setIncludeGclidUndefined: Self = StObject.set(x, "includeGclid", js.undefined)
@@ -408,6 +856,14 @@ object mod {
       
       inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
+      inline def setLibrary(value: Name): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+      
+      inline def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
+      
+      inline def setLogAttributionCapturedEvent(value: Boolean): Self = StObject.set(x, "logAttributionCapturedEvent", value.asInstanceOf[js.Any])
+      
+      inline def setLogAttributionCapturedEventUndefined: Self = StObject.set(x, "logAttributionCapturedEvent", js.undefined)
+      
       inline def setLogLevel(value: DISABLE | ERROR | WARN | INFO): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
       inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
@@ -416,9 +872,17 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
+      inline def setOnExitPage(value: () => Unit): Self = StObject.set(x, "onExitPage", js.Any.fromFunction0(value))
+      
+      inline def setOnExitPageUndefined: Self = StObject.set(x, "onExitPage", js.undefined)
+      
       inline def setOptOut(value: Boolean): Self = StObject.set(x, "optOut", value.asInstanceOf[js.Any])
       
       inline def setOptOutUndefined: Self = StObject.set(x, "optOut", js.undefined)
+      
+      inline def setPlan(value: Branch): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      
+      inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
@@ -444,13 +908,35 @@ object mod {
       
       inline def setSecureCookieUndefined: Self = StObject.set(x, "secureCookie", js.undefined)
       
+      inline def setServerZone(value: ServerZone): Self = StObject.set(x, "serverZone", value.asInstanceOf[js.Any])
+      
+      inline def setServerZoneBasedApi(value: Boolean): Self = StObject.set(x, "serverZoneBasedApi", value.asInstanceOf[js.Any])
+      
+      inline def setServerZoneBasedApiUndefined: Self = StObject.set(x, "serverZoneBasedApi", js.undefined)
+      
+      inline def setServerZoneUndefined: Self = StObject.set(x, "serverZone", js.undefined)
+      
+      inline def setSessionId(value: Double): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+      
+      inline def setSessionIdNull: Self = StObject.set(x, "sessionId", null)
+      
+      inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+      
       inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
       
       inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
       
+      inline def setStorage(value: _empty | cookies | localStorage | sessionStorage | none_): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      
       inline def setTrackingOptions(value: Carrier): Self = StObject.set(x, "trackingOptions", value.asInstanceOf[js.Any])
       
       inline def setTrackingOptionsUndefined: Self = StObject.set(x, "trackingOptions", js.undefined)
+      
+      inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
       inline def setUnsentIdentifyKey(value: String): Self = StObject.set(x, "unsentIdentifyKey", value.asInstanceOf[js.Any])
       
@@ -468,6 +954,10 @@ object mod {
       
       inline def setUploadBatchSizeUndefined: Self = StObject.set(x, "uploadBatchSize", js.undefined)
       
+      inline def setUseDynamicConfig(value: Boolean): Self = StObject.set(x, "useDynamicConfig", value.asInstanceOf[js.Any])
+      
+      inline def setUseDynamicConfigUndefined: Self = StObject.set(x, "useDynamicConfig", js.undefined)
+      
       inline def setUseNativeDeviceInfo(value: Boolean): Self = StObject.set(x, "useNativeDeviceInfo", value.asInstanceOf[js.Any])
       
       inline def setUseNativeDeviceInfoUndefined: Self = StObject.set(x, "useNativeDeviceInfo", js.undefined)
@@ -478,5 +968,81 @@ object mod {
     }
   }
   
+  @js.native
+  trait CookieStorage extends StObject {
+    
+    def get(name: String): Any = js.native
+    
+    def options(): CookieStorageOptions = js.native
+    def options(opts: CookieStorageOptions): Unit = js.native
+    
+    def remove(name: String): Boolean = js.native
+    
+    def reset(): Unit = js.native
+    
+    def set(name: String, value: Any): Boolean = js.native
+  }
+  
+  trait CookieStorageOptions extends StObject {
+    
+    var domain: js.UndefOr[String] = js.undefined
+    
+    var expirationDays: js.UndefOr[Double] = js.undefined
+    
+    var sameSite: js.UndefOr[Lax | Strict | None] = js.undefined
+    
+    var secure: js.UndefOr[Boolean] = js.undefined
+  }
+  object CookieStorageOptions {
+    
+    inline def apply(): CookieStorageOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CookieStorageOptions]
+    }
+    
+    extension [Self <: CookieStorageOptions](x: Self) {
+      
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      
+      inline def setExpirationDays(value: Double): Self = StObject.set(x, "expirationDays", value.asInstanceOf[js.Any])
+      
+      inline def setExpirationDaysUndefined: Self = StObject.set(x, "expirationDays", js.undefined)
+      
+      inline def setSameSite(value: Lax | Strict | None): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      
+      inline def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
+      
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    }
+  }
+  
   type LogReturn = js.UndefOr[Double]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.amplitudeJs.amplitudeJsStrings.EU
+    - typings.amplitudeJs.amplitudeJsStrings.US
+  */
+  trait ServerZone extends StObject
+  object ServerZone {
+    
+    inline def EU: typings.amplitudeJs.amplitudeJsStrings.EU = "EU".asInstanceOf[typings.amplitudeJs.amplitudeJsStrings.EU]
+    
+    inline def US: typings.amplitudeJs.amplitudeJsStrings.US = "US".asInstanceOf[typings.amplitudeJs.amplitudeJsStrings.US]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.amplitudeJs.amplitudeJsStrings.http
+    - typings.amplitudeJs.amplitudeJsStrings.beacon
+  */
+  trait Transport extends StObject
+  object Transport {
+    
+    inline def beacon: typings.amplitudeJs.amplitudeJsStrings.beacon = "beacon".asInstanceOf[typings.amplitudeJs.amplitudeJsStrings.beacon]
+    
+    inline def http: typings.amplitudeJs.amplitudeJsStrings.http = "http".asInstanceOf[typings.amplitudeJs.amplitudeJsStrings.http]
+  }
 }

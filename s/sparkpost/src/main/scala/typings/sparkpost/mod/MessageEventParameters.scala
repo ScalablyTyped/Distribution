@@ -67,13 +67,13 @@ object MessageEventParameters {
     
     inline def setBounce_classesUndefined: Self = StObject.set(x, "bounce_classes", js.undefined)
     
-    inline def setBounce_classesVarargs(value: (String | Double)*): Self = StObject.set(x, "bounce_classes", js.Array(value :_*))
+    inline def setBounce_classesVarargs(value: (String | Double)*): Self = StObject.set(x, "bounce_classes", js.Array(value*))
     
     inline def setCampaign_ids(value: js.Array[String] | String): Self = StObject.set(x, "campaign_ids", value.asInstanceOf[js.Any])
     
     inline def setCampaign_idsUndefined: Self = StObject.set(x, "campaign_ids", js.undefined)
     
-    inline def setCampaign_idsVarargs(value: String*): Self = StObject.set(x, "campaign_ids", js.Array(value :_*))
+    inline def setCampaign_idsVarargs(value: String*): Self = StObject.set(x, "campaign_ids", js.Array(value*))
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
@@ -83,13 +83,13 @@ object MessageEventParameters {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFriendly_froms(value: js.Array[String] | String): Self = StObject.set(x, "friendly_froms", value.asInstanceOf[js.Any])
     
     inline def setFriendly_fromsUndefined: Self = StObject.set(x, "friendly_froms", js.undefined)
     
-    inline def setFriendly_fromsVarargs(value: String*): Self = StObject.set(x, "friendly_froms", js.Array(value :_*))
+    inline def setFriendly_fromsVarargs(value: String*): Self = StObject.set(x, "friendly_froms", js.Array(value*))
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object MessageEventParameters {
     
     inline def setMessage_idsUndefined: Self = StObject.set(x, "message_ids", js.undefined)
     
-    inline def setMessage_idsVarargs(value: String*): Self = StObject.set(x, "message_ids", js.Array(value :_*))
+    inline def setMessage_idsVarargs(value: String*): Self = StObject.set(x, "message_ids", js.Array(value*))
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
@@ -113,25 +113,25 @@ object MessageEventParameters {
     
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    inline def setReasonVarargs(value: String*): Self = StObject.set(x, "reason", js.Array(value :_*))
+    inline def setReasonVarargs(value: String*): Self = StObject.set(x, "reason", js.Array(value*))
     
     inline def setRecipients(value: js.Array[String] | String): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value*))
     
     inline def setSubaccounts(value: js.Array[Double] | Double): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
     
     inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
     
-    inline def setSubaccountsVarargs(value: Double*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
+    inline def setSubaccountsVarargs(value: Double*): Self = StObject.set(x, "subaccounts", js.Array(value*))
     
     inline def setTemplate_ids(value: js.Array[String] | String): Self = StObject.set(x, "template_ids", value.asInstanceOf[js.Any])
     
     inline def setTemplate_idsUndefined: Self = StObject.set(x, "template_ids", js.undefined)
     
-    inline def setTemplate_idsVarargs(value: String*): Self = StObject.set(x, "template_ids", js.Array(value :_*))
+    inline def setTemplate_idsVarargs(value: String*): Self = StObject.set(x, "template_ids", js.Array(value*))
     
     inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
@@ -145,6 +145,6 @@ object MessageEventParameters {
     
     inline def setTransmission_idsUndefined: Self = StObject.set(x, "transmission_ids", js.undefined)
     
-    inline def setTransmission_idsVarargs(value: String*): Self = StObject.set(x, "transmission_ids", js.Array(value :_*))
+    inline def setTransmission_idsVarargs(value: String*): Self = StObject.set(x, "transmission_ids", js.Array(value*))
   }
 }

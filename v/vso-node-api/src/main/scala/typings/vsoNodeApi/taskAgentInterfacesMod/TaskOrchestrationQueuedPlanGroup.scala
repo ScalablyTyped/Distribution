@@ -42,7 +42,7 @@ object TaskOrchestrationQueuedPlanGroup {
     
     inline def setPlans(value: js.Array[TaskOrchestrationQueuedPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    inline def setPlansVarargs(value: TaskOrchestrationQueuedPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: TaskOrchestrationQueuedPlan*): Self = StObject.set(x, "plans", js.Array(value*))
     
     inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

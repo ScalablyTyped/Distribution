@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectFillColorCommand")
 @js.native
-class ChangeFloatingObjectFillColorCommand ()
+open class ChangeFloatingObjectFillColorCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectFillColorCommand {
   

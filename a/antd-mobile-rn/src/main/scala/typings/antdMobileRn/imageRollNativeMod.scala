@@ -9,13 +9,12 @@ object imageRollNativeMod {
   
   @JSImport("antd-mobile-rn/lib/image-picker/ImageRoll.native", JSImport.Default)
   @js.native
-  class default () extends ImageRoll
+  open class default () extends ImageRoll
   
   @js.native
-  trait ImageRoll
-    extends Component[ImageRollProps, js.Any, js.Any] {
+  trait ImageRoll extends Component[ImageRollProps, Any, Any] {
     
-    def onSelected(images: js.Array[js.Any], _underscore: js.Any): Unit = js.native
+    def onSelected(images: js.Array[Any], _underscore: Any): Unit = js.native
   }
   
   trait ImageRollProps extends StObject {

@@ -17,19 +17,19 @@ trait PutPartnerEventsRequestEntry extends StObject {
   var DetailType: js.UndefOr[String] = js.undefined
   
   /**
-    * AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.
+    * Amazon Web Services resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.
     */
   var Resources: js.UndefOr[EventResourceList] = js.undefined
   
   /**
-    * The event source that is generating the evntry.
+    * The event source that is generating the entry.
     */
   var Source: js.UndefOr[EventSourceName] = js.undefined
   
   /**
     * The date and time of the event.
     */
-  var Time: js.UndefOr[EventTime] = js.undefined
+  var Time: js.UndefOr[js.Date] = js.undefined
 }
 object PutPartnerEventsRequestEntry {
   
@@ -52,13 +52,13 @@ object PutPartnerEventsRequestEntry {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setResourcesVarargs(value: EventResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: EventResource*): Self = StObject.set(x, "Resources", js.Array(value*))
     
     inline def setSource(value: EventSourceName): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    inline def setTime(value: EventTime): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
     inline def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
   }

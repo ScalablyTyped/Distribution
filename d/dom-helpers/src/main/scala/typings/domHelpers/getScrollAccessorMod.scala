@@ -13,7 +13,5 @@ object getScrollAccessorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default_pageXOffset(offset: pageXOffset): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(offset.asInstanceOf[js.Any]).asInstanceOf[FnCall]
-  
-  inline def default_pageYOffset(offset: pageYOffset): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(offset.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  inline def default(offset: pageXOffset | pageYOffset): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(offset.asInstanceOf[js.Any]).asInstanceOf[FnCall]
 }

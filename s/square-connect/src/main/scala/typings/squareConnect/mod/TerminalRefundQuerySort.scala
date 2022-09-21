@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TerminalRefundQuerySort")
 @js.native
-class TerminalRefundQuerySort () extends StObject {
+open class TerminalRefundQuerySort () extends StObject {
   
   /**
     * The order in which results are listed. - `ASC` - oldest to newest - `DESC` - newest to oldest (default).

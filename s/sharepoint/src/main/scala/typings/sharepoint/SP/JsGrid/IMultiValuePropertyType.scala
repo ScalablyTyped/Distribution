@@ -27,7 +27,7 @@ trait IMultiValuePropertyType
 object IMultiValuePropertyType {
   
   inline def apply(
-    BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
+    BeginValidateNormalizeConvert: (Double, String, Any, Boolean, js.Function1[/* args */ DataValue, Unit], Any) => Unit,
     GetSerializableMultiValuePropType: () => BDelayInit,
     ID: String,
     InitSingleValuePropType: () => Unit,

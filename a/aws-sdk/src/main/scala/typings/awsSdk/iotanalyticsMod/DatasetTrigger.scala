@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatasetTrigger extends StObject {
   
   /**
-    * The data set whose content creation triggers the creation of this data set's contents.
+    * The dataset whose content creation triggers the creation of this dataset's contents.
     */
   var dataset: js.UndefOr[TriggeringDataset] = js.undefined
   

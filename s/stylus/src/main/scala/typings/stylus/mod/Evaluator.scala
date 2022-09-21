@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("stylus", "Evaluator")
 @js.native
-class Evaluator ()
+open class Evaluator ()
   extends StObject
      with typings.stylus.mod.Stylus.Evaluator

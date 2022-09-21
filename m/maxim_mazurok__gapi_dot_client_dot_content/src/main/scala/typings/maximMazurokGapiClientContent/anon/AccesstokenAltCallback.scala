@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersCancelTestOrderByCustomerRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.DatafeedstatusesCustomBatchRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +26,8 @@ trait AccesstokenAltCallback extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account that manages the order. This cannot be a multi-client account. */
-  var merchantId: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** The ID of the test order to cancel. */
-  var orderId: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -42,7 +36,7 @@ trait AccesstokenAltCallback extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrdersCancelTestOrderByCustomerRequest
+  var resource: DatafeedstatusesCustomBatchRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +46,8 @@ trait AccesstokenAltCallback extends StObject {
 }
 object AccesstokenAltCallback {
   
-  inline def apply(merchantId: String, orderId: String, resource: OrdersCancelTestOrderByCustomerRequest): AccesstokenAltCallback = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(resource: DatafeedstatusesCustomBatchRequest): AccesstokenAltCallback = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAltCallback]
   }
   
@@ -83,13 +77,9 @@ object AccesstokenAltCallback {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -99,7 +89,7 @@ object AccesstokenAltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersCancelTestOrderByCustomerRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: DatafeedstatusesCustomBatchRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

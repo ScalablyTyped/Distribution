@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.ForeignKeyAdaptor")
 @js.native
-class ForeignKeyAdaptor protected ()
+open class ForeignKeyAdaptor protected ()
   extends StObject
      with typings.ejWebAll.ej.ForeignKeyAdaptor {
-  def this(data: js.Any, `type`: String) = this()
+  def this(data: Any, `type`: String) = this()
 }

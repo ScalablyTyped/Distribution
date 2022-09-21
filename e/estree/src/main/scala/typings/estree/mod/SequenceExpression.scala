@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SequenceExpression
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   var expressions: js.Array[Expression]
   
@@ -26,7 +25,7 @@ object SequenceExpression {
     
     inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value*))
     
     inline def setType(value: typings.estree.estreeStrings.SequenceExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

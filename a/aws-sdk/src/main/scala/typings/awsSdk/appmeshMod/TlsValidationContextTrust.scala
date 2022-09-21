@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TlsValidationContextTrust extends StObject {
   
   /**
-    * A reference to an object that represents a TLS validation context trust for an AWS Certicate Manager (ACM) certificate.
+    * A reference to an object that represents a Transport Layer Security (TLS) validation context trust for an Certificate Manager certificate.
     */
   var acm: js.UndefOr[TlsValidationContextAcmTrust] = js.undefined
   
   /**
-    * An object that represents a TLS validation context trust for a local file.
+    * An object that represents a Transport Layer Security (TLS) validation context trust for a local file.
     */
   var file: js.UndefOr[TlsValidationContextFileTrust] = js.undefined
+  
+  /**
+    * A reference to an object that represents a Transport Layer Security (TLS) Secret Discovery Service validation context trust.
+    */
+  var sds: js.UndefOr[TlsValidationContextSdsTrust] = js.undefined
 }
 object TlsValidationContextTrust {
   
@@ -32,5 +37,9 @@ object TlsValidationContextTrust {
     inline def setFile(value: TlsValidationContextFileTrust): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    
+    inline def setSds(value: TlsValidationContextSdsTrust): Self = StObject.set(x, "sds", value.asInstanceOf[js.Any])
+    
+    inline def setSdsUndefined: Self = StObject.set(x, "sds", js.undefined)
   }
 }

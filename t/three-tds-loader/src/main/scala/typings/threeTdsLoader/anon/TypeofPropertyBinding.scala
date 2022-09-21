@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofPropertyBinding
   extends StObject
-     with Instantiable2[/* rootNode */ js.Any, /* path */ String, PropertyBinding] {
+     with Instantiable2[/* rootNode */ Any, /* path */ String, PropertyBinding] {
   
-  def create(root: js.Any, path: js.Any): typings.three.propertyBindingMod.PropertyBinding | Composite = js.native
-  def create(root: js.Any, path: js.Any, parsedPath: js.Any): typings.three.propertyBindingMod.PropertyBinding | Composite = js.native
+  def create(root: Any, path: Any): typings.three.propertyBindingMod.PropertyBinding | Composite = js.native
+  def create(root: Any, path: Any, parsedPath: Any): typings.three.propertyBindingMod.PropertyBinding | Composite = js.native
   
-  def findNode(root: js.Any, nodeName: String): js.Any = js.native
+  def findNode(root: Any, nodeName: String): Any = js.native
   
   def parseTrackName(trackName: String): ParseTrackNameResults = js.native
   

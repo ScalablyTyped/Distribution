@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AlertArgs
   extends StObject
-     with AsyncCallback[Unit] {
+     with AsyncVoidCallback {
   
   /**
     * Button text, which is OK by default.

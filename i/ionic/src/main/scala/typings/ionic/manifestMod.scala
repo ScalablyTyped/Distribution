@@ -10,16 +10,16 @@ object manifestMod {
   
   @JSImport("ionic/commands/deploy/manifest", "DeployManifestCommand")
   @js.native
-  class DeployManifestCommand protected () extends DeployCoreCommand {
+  open class DeployManifestCommand protected () extends DeployCoreCommand {
     def this(namespace: INamespace) = this()
     
-    /* private */ var getFileAndSizeAndHashForFile: js.Any = js.native
+    /* private */ var getFileAndSizeAndHashForFile: Any = js.native
     
-    /* private */ var getFilesAndSizesAndHashesForGlobPattern: js.Any = js.native
+    /* private */ var getFilesAndSizesAndHashesForGlobPattern: Any = js.native
     
-    /* private */ var getIntegrity: js.Any = js.native
+    /* private */ var getIntegrity: Any = js.native
     
-    /* private */ var readFile: js.Any = js.native
+    /* private */ var readFile: Any = js.native
     
     def run(): js.Promise[Unit] = js.native
   }

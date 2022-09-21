@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(options: Options): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@webpack-blocks/postcss", JSImport.Namespace)
   @js.native
@@ -19,7 +19,7 @@ object mod {
     
     var parser: js.UndefOr[String] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var plugins: js.UndefOr[js.Array[Any]] = js.undefined
     
     var stringifier: js.UndefOr[String] = js.undefined
     
@@ -38,11 +38,11 @@ object mod {
       
       inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setStringifier(value: String): Self = StObject.set(x, "stringifier", value.asInstanceOf[js.Any])
       

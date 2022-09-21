@@ -9,7 +9,7 @@ trait BusinessReport extends StObject {
   /**
     * The time of report delivery.
     */
-  var DeliveryTime: js.UndefOr[BusinessReportDeliveryTime] = js.undefined
+  var DeliveryTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The download link where a user can download the report.
@@ -40,7 +40,7 @@ object BusinessReport {
   
   extension [Self <: BusinessReport](x: Self) {
     
-    inline def setDeliveryTime(value: BusinessReportDeliveryTime): Self = StObject.set(x, "DeliveryTime", value.asInstanceOf[js.Any])
+    inline def setDeliveryTime(value: js.Date): Self = StObject.set(x, "DeliveryTime", value.asInstanceOf[js.Any])
     
     inline def setDeliveryTimeUndefined: Self = StObject.set(x, "DeliveryTime", js.undefined)
     

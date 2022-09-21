@@ -15,6 +15,13 @@ trait Options extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
+    * If passed adds links with more info about opportunities.
+    * Useful for checking documentation about opportunities.
+    * @default false
+    */
+  var links: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Locale results should be generated in.
     * @default 'en_US'
     */
@@ -32,7 +39,7 @@ trait Options extends StObject {
     * Threshold score to pass the PageSpeed test. Useful for setting a performance budget.
     * @default 70
     */
-  var treshold: js.UndefOr[Double] = js.undefined
+  var threshold: js.UndefOr[Double] = js.undefined
 }
 object Options {
   
@@ -47,6 +54,10 @@ object Options {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
@@ -59,8 +70,8 @@ object Options {
     
     inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
-    inline def setTreshold(value: Double): Self = StObject.set(x, "treshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    inline def setTresholdUndefined: Self = StObject.set(x, "treshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

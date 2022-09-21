@@ -2,11 +2,11 @@ package typings.lodash
 
 import typings.lodash.mod.ArrayIterator
 import typings.lodash.mod.Collection
-import typings.lodash.mod.Function
 import typings.lodash.mod.List
 import typings.lodash.mod.ListIterator
 import typings.lodash.mod.MapCacheConstructor
 import typings.lodash.mod.MemoizedFunction
+import typings.lodash.mod.Object
 import typings.lodash.mod.ObjectIterator
 import typings.lodash.mod.StringIterator
 import typings.std.Parameters
@@ -19,8 +19,8 @@ object anon {
   @js.native
   trait Call extends StObject {
     
-    def apply[T /* <: js.Function1[/* args */ js.Any, js.Any] */](func: T): T & MemoizedFunction = js.native
-    def apply[T /* <: js.Function1[/* args */ js.Any, js.Any] */](func: T, resolver: js.Function1[/* args */ Parameters[T], js.Any]): T & MemoizedFunction = js.native
+    def apply[T /* <: js.Function1[/* args */ Any, Any] */](func: T): T & MemoizedFunction = js.native
+    def apply[T /* <: js.Function1[/* args */ Any, Any] */](func: T, resolver: js.Function1[/* args */ Parameters[T], Any]): T & MemoizedFunction = js.native
     
     var Cache: MapCacheConstructor = js.native
   }
@@ -29,16 +29,18 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(collection: String): String = js.native
-    def apply(collection: String, iteratee: StringIterator[js.Any]): String = js.native
+    def apply(collection: String, iteratee: StringIterator[Any]): String = js.native
     def apply[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
-    def apply[T /* <: js.Object */](collection: T): T = js.native
-    def apply[T /* <: js.Object */](collection: T, iteratee: ObjectIterator[T, js.Any]): T = js.native
+    def apply[TString /* <: js.UndefOr[String | Null] */](collection: TString): TString = js.native
+    def apply[TString /* <: js.UndefOr[String | Null] */](collection: TString, iteratee: StringIterator[Any]): TString = js.native
     def apply[T](collection: js.Array[T]): js.Array[T] = js.native
-    def apply[T](collection: js.Array[T], iteratee: ArrayIterator[T, js.Any]): js.Array[T] = js.native
-    def apply[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, js.Any]): js.UndefOr[T | Null] = js.native
-    def apply[T /* <: js.Object */](collection: Unit, iteratee: ObjectIterator[T, js.Any]): js.UndefOr[T | Null] = js.native
+    def apply[T](collection: js.Array[T], iteratee: ArrayIterator[T, Any]): js.Array[T] = js.native
+    def apply[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, Any]): js.UndefOr[T | Null] = js.native
+    def apply[T /* <: js.Object */](collection: Unit, iteratee: ObjectIterator[T, Any]): js.UndefOr[T | Null] = js.native
     def apply[T](collection: List[T]): List[T] = js.native
-    def apply[T](collection: List[T], iteratee: ListIterator[T, js.Any]): List[T] = js.native
+    def apply[T](collection: List[T], iteratee: ListIterator[T, Any]): List[T] = js.native
+    def apply[T, TList /* <: js.UndefOr[List[T] | Null] */](collection: Unit & TList): TList = js.native
+    def apply[T, TList /* <: js.UndefOr[List[T] | Null] */](collection: Null & TList): TList = js.native
   }
   
   trait Length extends StObject {
@@ -60,35 +62,35 @@ object anon {
   
   trait LodashAnyHack extends StObject {
     
-    var __lodashAnyHack: js.Any
+    var __lodashAnyHack: Any
   }
   object LodashAnyHack {
     
-    inline def apply(__lodashAnyHack: js.Any): LodashAnyHack = {
+    inline def apply(__lodashAnyHack: Any): LodashAnyHack = {
       val __obj = js.Dynamic.literal(__lodashAnyHack = __lodashAnyHack.asInstanceOf[js.Any])
       __obj.asInstanceOf[LodashAnyHack]
     }
     
     extension [Self <: LodashAnyHack](x: Self) {
       
-      inline def set__lodashAnyHack(value: js.Any): Self = StObject.set(x, "__lodashAnyHack", value.asInstanceOf[js.Any])
+      inline def set__lodashAnyHack(value: Any): Self = StObject.set(x, "__lodashAnyHack", value.asInstanceOf[js.Any])
     }
   }
   
   trait TrapAny extends StObject {
     
-    var __trapAny: js.Any
+    var __trapAny: Any
   }
   object TrapAny {
     
-    inline def apply(__trapAny: js.Any): TrapAny = {
+    inline def apply(__trapAny: Any): TrapAny = {
       val __obj = js.Dynamic.literal(__trapAny = __trapAny.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrapAny]
     }
     
     extension [Self <: TrapAny](x: Self) {
       
-      inline def set__trapAny(value: js.Any): Self = StObject.set(x, "__trapAny", value.asInstanceOf[js.Any])
+      inline def set__trapAny(value: Any): Self = StObject.set(x, "__trapAny", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,7 +99,7 @@ object anon {
     
     def apply(): typings.lodash.mod.String = js.native
     def apply(value: String): typings.lodash.mod.String = js.native
-    def apply[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
+    def apply[T /* <: js.Object */](value: T): Object[T] = js.native
     def apply[T](value: List[T]): Collection[T] = js.native
   }
 }

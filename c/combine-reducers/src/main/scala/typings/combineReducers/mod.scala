@@ -12,9 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S](reducers: ReducersMapObject[S, js.Any]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
+  inline def default[S](reducers: ReducersMapObject[S, Any]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
   
-  inline def default_SA_ActionAny[S, A /* <: Action[js.Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
+  inline def default_SA_ActionAny[S, A /* <: Action[Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
   
   trait Action[T] extends StObject {
     
@@ -36,21 +36,21 @@ object mod {
   
   trait AnyAction
     extends StObject
-       with Action[js.Any]
+       with Action[Any]
        with // Allows any extra properties to be defined in an action.
-  /* extraProps */ StringDictionary[js.Any]
+  /* extraProps */ StringDictionary[Any]
   object AnyAction {
     
-    inline def apply(`type`: js.Any): AnyAction = {
+    inline def apply(`type`: Any): AnyAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnyAction]
     }
   }
   
-  type Reducer[S, A /* <: Action[js.Any] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
+  type Reducer[S, A /* <: Action[Any] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
   
-  type ReducersMapObject[S, A /* <: Action[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type ReducersMapObject[S, A /* <: Action[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: combine-reducers.combine-reducers.Reducer<S[K], A>}
     */ typings.combineReducers.combineReducersStrings.ReducersMapObject & TopLevel[S]
 }

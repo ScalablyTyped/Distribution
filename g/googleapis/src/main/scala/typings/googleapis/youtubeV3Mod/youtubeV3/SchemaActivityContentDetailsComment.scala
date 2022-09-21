@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about a resource that received a comment.
-  */
 trait SchemaActivityContentDetailsComment extends StObject {
   
   /**
-    * The resourceId object contains information that identifies the resource
-    * associated with the comment.
+    * The resourceId object contains information that identifies the resource associated with the comment.
     */
   var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }

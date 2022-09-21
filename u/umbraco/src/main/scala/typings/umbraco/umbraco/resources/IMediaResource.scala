@@ -213,9 +213,9 @@ trait IMediaResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def move(args: js.Any*): IPromise[IResourcePromise] = js.native
+  def move(args: Any*): IPromise[IResourcePromise] = js.native
   
-  def rootMedia(): js.Any = js.native
+  def rootMedia(): Any = js.native
   
   /**
     * @ngdoc method
@@ -245,7 +245,7 @@ trait IMediaResource extends StObject {
     * @returns {Promise} resourcePromise object containing the saved media item.
     *
     */
-  def save(media: js.Object, isNew: Boolean, files: js.Array[js.Any]): IPromise[IResourcePromise] = js.native
+  def save(media: js.Object, isNew: Boolean, files: js.Array[Any]): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method
@@ -269,5 +269,5 @@ trait IMediaResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def sort(args: js.Any*): IPromise[IResourcePromise] = js.native
+  def sort(args: Any*): IPromise[IResourcePromise] = js.native
 }

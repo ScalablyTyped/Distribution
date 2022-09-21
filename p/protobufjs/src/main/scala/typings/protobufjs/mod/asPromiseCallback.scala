@@ -1,6 +1,5 @@
 package typings.protobufjs.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait asPromiseCallback extends StObject {
   
-  def apply(error: Null, params: js.Any*): Unit = js.native
-  def apply(error: Error, params: js.Any*): Unit = js.native
+  def apply(error: js.Error, params: Any*): Unit = js.native
+  def apply(error: Null, params: Any*): Unit = js.native
 }

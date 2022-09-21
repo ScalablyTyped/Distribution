@@ -27,6 +27,6 @@ object Selectionobject {
     
     inline def setQSelections(value: js.Array[NxCurrentSelectionItem]): Self = StObject.set(x, "qSelections", value.asInstanceOf[js.Any])
     
-    inline def setQSelectionsVarargs(value: NxCurrentSelectionItem*): Self = StObject.set(x, "qSelections", js.Array(value :_*))
+    inline def setQSelectionsVarargs(value: NxCurrentSelectionItem*): Self = StObject.set(x, "qSelections", js.Array(value*))
   }
 }

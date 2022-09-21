@@ -10,11 +10,11 @@ trait ReadLinkResult extends StObject {
   var keypath: String
   
   /** The Ractive instance that hosts the source keypath. */
-  var ractive: Ractive[Ractive[js.Any]]
+  var ractive: Ractive[Ractive[Any]]
 }
 object ReadLinkResult {
   
-  inline def apply(keypath: String, ractive: Ractive[Ractive[js.Any]]): ReadLinkResult = {
+  inline def apply(keypath: String, ractive: Ractive[Ractive[Any]]): ReadLinkResult = {
     val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any], ractive = ractive.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadLinkResult]
   }
@@ -23,6 +23,6 @@ object ReadLinkResult {
     
     inline def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
     
-    inline def setRactive(value: Ractive[Ractive[js.Any]]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
+    inline def setRactive(value: Ractive[Ractive[Any]]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
   }
 }

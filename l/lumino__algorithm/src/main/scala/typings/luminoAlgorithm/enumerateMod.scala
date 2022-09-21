@@ -14,7 +14,7 @@ object enumerateMod {
   
   @JSImport("@lumino/algorithm/types/enumerate", "EnumerateIterator")
   @js.native
-  class EnumerateIterator[T] protected ()
+  open class EnumerateIterator[T] protected ()
     extends StObject
        with IIterator[js.Tuple2[Double, T]] {
     /**
@@ -26,9 +26,9 @@ object enumerateMod {
       */
     def this(source: IIterator[T], start: Double) = this()
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.

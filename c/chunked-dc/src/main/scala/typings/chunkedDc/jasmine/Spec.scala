@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Spec
   extends StObject
      with SuiteOrSpec
-     with Instantiable3[/* env */ Env, /* suite */ Suite, /* description */ String, js.Any] {
+     with Instantiable3[/* env */ Env, /* suite */ Suite, /* description */ String, scala.Any] {
   
   def addBeforesAndAftersToQueue(): Unit = js.native
   
@@ -23,15 +23,15 @@ trait Spec
   
   var afterCallbacks: js.Array[SpecFunction] = js.native
   
-  def execute(): js.Any = js.native
-  def execute(onComplete: js.Function0[Unit]): js.Any = js.native
+  def execute(): scala.Any = js.native
+  def execute(onComplete: js.Function0[Unit]): scala.Any = js.native
   
-  def expect(actual: js.Any): js.Any = js.native
+  def expect(actual: scala.Any): scala.Any = js.native
   
   def explodes(): Unit = js.native
   
   def fail(): Unit = js.native
-  def fail(e: js.Any): Unit = js.native
+  def fail(e: scala.Any): Unit = js.native
   
   def finish(): Unit = js.native
   def finish(onComplete: js.Function0[Unit]): Unit = js.native
@@ -42,7 +42,7 @@ trait Spec
   
   def getMatchersClass_(): Matchers = js.native
   
-  def log(arguments: js.Any): js.Any = js.native
+  def log(arguments: scala.Any): scala.Any = js.native
   
   var matchersClass: Matchers = js.native
   
@@ -56,7 +56,7 @@ trait Spec
   
   var spies_ : js.Array[Spy] = js.native
   
-  def spyOn(obj: js.Any, methodName: String, ignoreMethodDoesntExist: Boolean): Spy = js.native
+  def spyOn(obj: scala.Any, methodName: String, ignoreMethodDoesntExist: Boolean): Spy = js.native
   
   var suite: Suite = js.native
   

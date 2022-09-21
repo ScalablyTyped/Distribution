@@ -9,16 +9,16 @@ trait ConferenceData extends StObject {
   /**
     * The ID of the conference.
     * Can be used by developers to keep track of conferences, should not be displayed to users.
-    * Values for solution types:
-    * - "eventHangout": unset.
-    * - "eventNamedHangout": the name of the Hangout.
-    * - "hangoutsMeet": the 10-letter meeting code, for example "aaa-bbbb-ccc".
-    * - "addOn": defined by 3P conference provider.  Optional.
+    * The ID value is formed differently for each conference solution type:
+    * - eventHangout: ID is not set. (This conference type is deprecated.)
+    * - eventNamedHangout: ID is the name of the Hangout. (This conference type is deprecated.)
+    * - hangoutsMeet: ID is the 10-letter meeting code, for example aaa-bbbb-ccc.
+    * - addOn: ID is defined by the third-party provider.  Optional.
     */
   var conferenceId: js.UndefOr[String] = js.undefined
   
   /**
-    * The conference solution, such as Hangouts or Google Meet.
+    * The conference solution, such as Google Meet.
     * Unset for a conference with a failed create request.
     * Either conferenceSolution and at least one entryPoint, or createRequest is required.
     */
@@ -45,7 +45,7 @@ trait ConferenceData extends StObject {
   
   /**
     * The signature of the conference data.
-    * Generated on server side. Must be preserved while copying the conference data between events, otherwise the conference data will not be copied.
+    * Generated on server side.
     * Unset for a conference with a failed create request.
     * Optional for a conference with a pending create request.
     */
@@ -76,7 +76,7 @@ object ConferenceData {
     
     inline def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
     
-    inline def setEntryPointsVarargs(value: EntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value :_*))
+    inline def setEntryPointsVarargs(value: EntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value*))
     
     inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     

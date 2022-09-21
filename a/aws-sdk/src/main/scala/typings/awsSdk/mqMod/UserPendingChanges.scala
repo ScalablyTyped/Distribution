@@ -19,12 +19,12 @@ trait UserPendingChanges extends StObject {
   /**
     * Required. The type of change pending for the ActiveMQ user.
     */
-  var PendingChange: js.UndefOr[ChangeType] = js.undefined
+  var PendingChange: ChangeType
 }
 object UserPendingChanges {
   
-  inline def apply(): UserPendingChanges = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(PendingChange: ChangeType): UserPendingChanges = {
+    val __obj = js.Dynamic.literal(PendingChange = PendingChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPendingChanges]
   }
   
@@ -38,10 +38,8 @@ object UserPendingChanges {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setPendingChange(value: ChangeType): Self = StObject.set(x, "PendingChange", value.asInstanceOf[js.Any])
-    
-    inline def setPendingChangeUndefined: Self = StObject.set(x, "PendingChange", js.undefined)
   }
 }

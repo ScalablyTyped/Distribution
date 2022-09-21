@@ -8,7 +8,7 @@ trait CustomerManagedEncryptionStatus extends StObject {
   
   /**
     * Required. The resource name of the Cloud KMS CryptoKeyVersion used to encrypt the secret payload, in the following format:
-    * `projects/∗/locations/∗/keyRings/∗/cryptoKeys/∗/versions/ *`.
+    * `projects/ *‍/locations/ *‍/keyRings/ *‍/cryptoKeys/ *‍/versions/ *`.
     */
   var kmsKeyVersionName: js.UndefOr[String] = js.undefined
 }

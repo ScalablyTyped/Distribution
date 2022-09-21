@@ -95,7 +95,7 @@ object mozilla {
   trait MenuSingleChange extends StObject {
     
     /** value of change */
-    var Change: js.Any
+    var Change: Any
     
     /** ID identifying the type of change in the any type change */
     var ChangeID: Double
@@ -105,14 +105,14 @@ object mozilla {
   }
   object MenuSingleChange {
     
-    inline def apply(Change: js.Any, ChangeID: Double, ID: Double): MenuSingleChange = {
+    inline def apply(Change: Any, ChangeID: Double, ID: Double): MenuSingleChange = {
       val __obj = js.Dynamic.literal(Change = Change.asInstanceOf[js.Any], ChangeID = ChangeID.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuSingleChange]
     }
     
     extension [Self <: MenuSingleChange](x: Self) {
       
-      inline def setChange(value: js.Any): Self = StObject.set(x, "Change", value.asInstanceOf[js.Any])
+      inline def setChange(value: Any): Self = StObject.set(x, "Change", value.asInstanceOf[js.Any])
       
       inline def setChangeID(value: Double): Self = StObject.set(x, "ChangeID", value.asInstanceOf[js.Any])
       
@@ -158,15 +158,15 @@ object mozilla {
       * Notifies a closesession listener that the corresponding session was logged out
       * @param sessionData [in]: the data identifying the session that was closed
       */
-    def sessionClosed(sessionData: js.Any): Unit
+    def sessionClosed(sessionData: Any): Unit
   }
   object XCloseSessionListener {
     
     inline def apply(
       acquire: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
-      sessionClosed: js.Any => Unit
+      sessionClosed: Any => Unit
     ): XCloseSessionListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), sessionClosed = js.Any.fromFunction1(sessionClosed))
       __obj.asInstanceOf[XCloseSessionListener]
@@ -174,7 +174,7 @@ object mozilla {
     
     extension [Self <: XCloseSessionListener](x: Self) {
       
-      inline def setSessionClosed(value: js.Any => Unit): Self = StObject.set(x, "sessionClosed", js.Any.fromFunction1(value))
+      inline def setSessionClosed(value: Any => Unit): Self = StObject.set(x, "sessionClosed", js.Any.fromFunction1(value))
     }
   }
   
@@ -211,7 +211,7 @@ object mozilla {
       acquire: () => Unit,
       getProductType: () => MozillaProductType,
       getProfileName: () => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       run: () => Double
     ): XCodeProxy = {
@@ -264,7 +264,7 @@ object mozilla {
       addMenuProxyListener: XMenuProxyListener => Unit,
       dispose: () => Unit,
       executeMenuItem: Double => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removeMenuProxyListener: XMenuProxyListener => Unit
@@ -307,7 +307,7 @@ object mozilla {
       menuChangedMultiple: SeqEquiv[MenuMultipleChange] => Unit,
       menuChangedSingle: SeqEquiv[MenuSingleChange] => Unit,
       menuItemDeleted: Double => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XMenuProxyListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), menuChangedMultiple = js.Any.fromFunction1(menuChangedMultiple), menuChangedSingle = js.Any.fromFunction1(menuChangedSingle), menuItemDeleted = js.Any.fromFunction1(menuItemDeleted), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -352,7 +352,7 @@ object mozilla {
       getProfilePath: (MozillaProductType, String) => String,
       isCurrentProfileLocked: () => Boolean,
       isProfileLocked: (MozillaProductType, String) => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setCurrentProfile: (MozillaProductType, String) => String,
       shutdownProfile: () => Double
@@ -427,7 +427,7 @@ object mozilla {
       getProfileList: (MozillaProductType, js.Array[SeqEquiv[String]]) => Double,
       getProfilePath: (MozillaProductType, String) => String,
       isProfileLocked: (MozillaProductType, String) => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XProfileDiscover = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultProfile = js.Any.fromFunction1(getDefaultProfile), getProfileCount = js.Any.fromFunction1(getProfileCount), getProfileExists = js.Any.fromFunction2(getProfileExists), getProfileList = js.Any.fromFunction2(getProfileList), getProfilePath = js.Any.fromFunction2(getProfilePath), isProfileLocked = js.Any.fromFunction2(isProfileLocked), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -522,7 +522,7 @@ object mozilla {
       getCurrentProduct: () => MozillaProductType,
       getCurrentProfile: () => String,
       isCurrentProfileLocked: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setCurrentProfile: (MozillaProductType, String) => String,
       shutdownProfile: () => Double
@@ -569,12 +569,7 @@ object mozilla {
   }
   object XProxyRunner {
     
-    inline def apply(
-      Run: XCodeProxy => Double,
-      acquire: () => Unit,
-      queryInterface: `type` => js.Any,
-      release: () => Unit
-    ): XProxyRunner = {
+    inline def apply(Run: XCodeProxy => Double, acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit): XProxyRunner = {
       val __obj = js.Dynamic.literal(Run = js.Any.fromFunction1(Run), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
       __obj.asInstanceOf[XProxyRunner]
     }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeaderProps
   extends StObject
-     with HTMLProps[js.Any] {
+     with HTMLProps[Any] {
   
   var hideSpacer: js.UndefOr[Boolean] = js.undefined
   
@@ -19,7 +19,7 @@ trait HeaderProps
   var seamed: js.UndefOr[Boolean] = js.undefined
   
   @JSName("title")
-  var title_HeaderProps: js.UndefOr[js.Any] = js.undefined
+  var title_HeaderProps: js.UndefOr[Any] = js.undefined
   
   var transparent: js.UndefOr[Boolean] = js.undefined
   
@@ -50,7 +50,7 @@ object HeaderProps {
     
     inline def setSeamedUndefined: Self = StObject.set(x, "seamed", js.undefined)
     
-    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     

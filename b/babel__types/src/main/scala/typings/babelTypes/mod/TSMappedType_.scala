@@ -1,6 +1,10 @@
 package typings.babelTypes.mod
 
+import typings.babelTypes.babelTypesBooleans.`false`
+import typings.babelTypes.babelTypesBooleans.`true`
+import typings.babelTypes.babelTypesStrings.Plussign
 import typings.babelTypes.babelTypesStrings.TSMappedType
+import typings.babelTypes.babelTypesStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSMappedType_
   extends StObject
      with BaseNode
-     with TSType {
+     with TSType
+     with TypeScript {
   
   var nameType: TSType | Null
   
-  var optional: Boolean | Null
+  var optional: `true` | `false` | Plussign | `-_` | Null
   
-  var readonly: Boolean | Null
+  var readonly: `true` | `false` | Plussign | `-_` | Null
   
   var typeAnnotation: TSType | Null
   
@@ -38,11 +43,11 @@ object TSMappedType_ {
     
     inline def setNameTypeNull: Self = StObject.set(x, "nameType", null)
     
-    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: `true` | `false` | Plussign | `-_`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
-    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: `true` | `false` | Plussign | `-_`): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     

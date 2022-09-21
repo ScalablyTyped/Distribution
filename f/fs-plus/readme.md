@@ -10,10 +10,10 @@ node's fs with more helpers
 | ------------------ | :-------------: |
 | Full name          | fs-plus |
 | Keywords           | fs, filesystem |
-| # releases         | 1 |
-| # dependents       | 160 |
-| # downloads        | 3895639 |
-| # stars            | 13 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 324836.0 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](http://atom.github.io/fs-plus)

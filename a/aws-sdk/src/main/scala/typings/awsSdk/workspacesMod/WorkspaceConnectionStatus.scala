@@ -14,12 +14,12 @@ trait WorkspaceConnectionStatus extends StObject {
   /**
     * The timestamp of the connection status check.
     */
-  var ConnectionStateCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var ConnectionStateCheckTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp of the last known user connection.
     */
-  var LastKnownUserConnectionTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastKnownUserConnectionTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier of the WorkSpace.
@@ -37,13 +37,13 @@ object WorkspaceConnectionStatus {
     
     inline def setConnectionState(value: ConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     
-    inline def setConnectionStateCheckTimestamp(value: Timestamp): Self = StObject.set(x, "ConnectionStateCheckTimestamp", value.asInstanceOf[js.Any])
+    inline def setConnectionStateCheckTimestamp(value: js.Date): Self = StObject.set(x, "ConnectionStateCheckTimestamp", value.asInstanceOf[js.Any])
     
     inline def setConnectionStateCheckTimestampUndefined: Self = StObject.set(x, "ConnectionStateCheckTimestamp", js.undefined)
     
     inline def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
     
-    inline def setLastKnownUserConnectionTimestamp(value: Timestamp): Self = StObject.set(x, "LastKnownUserConnectionTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastKnownUserConnectionTimestamp(value: js.Date): Self = StObject.set(x, "LastKnownUserConnectionTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastKnownUserConnectionTimestampUndefined: Self = StObject.set(x, "LastKnownUserConnectionTimestamp", js.undefined)
     

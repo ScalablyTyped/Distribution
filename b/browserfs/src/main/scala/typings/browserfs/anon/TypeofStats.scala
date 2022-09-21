@@ -8,8 +8,7 @@ import org.scalablytyped.runtime.Instantiable6
 import typings.browserfs.nodeFsStatsMod.FileType
 import typings.browserfs.nodeFsStatsMod.Stats
 import typings.browserfs.nodeFsStatsMod.default
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,24 +22,24 @@ trait TypeofStats
       /* itemType */ FileType, 
       /* size */ Double, 
       (/* mode */ Double) | (/* mode */ Unit), 
-      /* atime */ Date, 
+      /* atime */ js.Date, 
       default
     ]
      with Instantiable5[
       /* itemType */ FileType, 
       /* size */ Double, 
       (/* mode */ Double) | (/* mode */ Unit), 
-      (/* atime */ Date) | (/* atime */ Unit), 
-      /* mtime */ Date, 
+      (/* atime */ js.Date) | (/* atime */ Unit), 
+      /* mtime */ js.Date, 
       default
     ]
      with Instantiable6[
       /* itemType */ FileType, 
       /* size */ Double, 
       (/* mode */ Double) | (/* mode */ Unit), 
-      (/* atime */ Date) | (/* atime */ Unit), 
-      (/* mtime */ Date) | (/* mtime */ Unit), 
-      /* ctime */ Date, 
+      (/* atime */ js.Date) | (/* atime */ Unit), 
+      (/* mtime */ js.Date) | (/* mtime */ Unit), 
+      /* ctime */ js.Date, 
       default
     ] {
   

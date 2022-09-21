@@ -29,7 +29,7 @@ object DescribeGameSessionQueuesOutput {
     
     inline def setGameSessionQueuesUndefined: Self = StObject.set(x, "GameSessionQueues", js.undefined)
     
-    inline def setGameSessionQueuesVarargs(value: GameSessionQueue*): Self = StObject.set(x, "GameSessionQueues", js.Array(value :_*))
+    inline def setGameSessionQueuesVarargs(value: GameSessionQueue*): Self = StObject.set(x, "GameSessionQueues", js.Array(value*))
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

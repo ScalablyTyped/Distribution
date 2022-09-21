@@ -24,7 +24,7 @@ object IdsResource {
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKind(value: driveNumbersigngeneratedIds): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

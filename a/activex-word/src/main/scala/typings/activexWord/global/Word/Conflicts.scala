@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Conflicts")
 @js.native
-/* private */ class Conflicts ()
+/* private */ open class Conflicts ()
   extends StObject
      with typings.activexWord.Word.Conflicts {
   
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Index: Double): typings.activexWord.Word.Conflict = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def RejectAll(): Unit = js.native

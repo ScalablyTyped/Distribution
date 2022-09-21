@@ -26,7 +26,7 @@ object RoutersScopedList {
     
     inline def setRoutersUndefined: Self = StObject.set(x, "routers", js.undefined)
     
-    inline def setRoutersVarargs(value: Router*): Self = StObject.set(x, "routers", js.Array(value :_*))
+    inline def setRoutersVarargs(value: Router*): Self = StObject.set(x, "routers", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

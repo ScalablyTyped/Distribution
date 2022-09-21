@@ -6,33 +6,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the shape that raised the deactivated event.
   *
-  * Provides information about the shape that raised the Deactivated event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ShapeDeactivatedEventArgs extends StObject {
   
   /**
+    * Gets the ID of the shape deactivated shape.
     *
-    * Gets the id of the shape deactivated shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shapeId: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: ShapeDeactivated
   
   /**
+    * Gets the ID of the worksheet in which the shape is deactivated.
     *
-    * Gets the id of the worksheet in which the shape is deactivated.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var worksheetId: String

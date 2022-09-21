@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.ui.Scroller")
 @js.native
-class Scroller protected ()
+open class Scroller protected ()
   extends StObject
      with typings.kendoUi.kendo.mobile.ui.Scroller {
   def this(element: Element) = this()

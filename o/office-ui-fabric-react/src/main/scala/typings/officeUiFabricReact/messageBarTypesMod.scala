@@ -132,7 +132,7 @@ object messageBarTypesMod {
     var onDismiss: js.UndefOr[
         js.Function1[
           /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -202,9 +202,7 @@ object messageBarTypesMod {
       
       inline def setMessageBarTypeUndefined: Self = StObject.set(x, "messageBarType", js.undefined)
       
-      inline def setOnDismiss(
-        value: /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]] => js.Any
-      ): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]] => Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       

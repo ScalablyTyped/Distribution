@@ -33,6 +33,6 @@ object DescribeMaintenanceWindowScheduleResult {
     
     inline def setScheduledWindowExecutionsUndefined: Self = StObject.set(x, "ScheduledWindowExecutions", js.undefined)
     
-    inline def setScheduledWindowExecutionsVarargs(value: ScheduledWindowExecution*): Self = StObject.set(x, "ScheduledWindowExecutions", js.Array(value :_*))
+    inline def setScheduledWindowExecutionsVarargs(value: ScheduledWindowExecution*): Self = StObject.set(x, "ScheduledWindowExecutions", js.Array(value*))
   }
 }

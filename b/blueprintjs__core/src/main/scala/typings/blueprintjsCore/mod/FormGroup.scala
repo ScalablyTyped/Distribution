@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.formGroupMod.IFormGroupProps
+import typings.blueprintjsCore.formGroupMod.FormGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "FormGroup")
 @js.native
-class FormGroup protected ()
+open class FormGroup protected ()
   extends typings.blueprintjsCore.componentsMod.FormGroup {
-  def this(props: IFormGroupProps) = this()
-  def this(props: IFormGroupProps, context: js.Any) = this()
+  def this(props: FormGroupProps) = this()
+  def this(props: FormGroupProps, context: Any) = this()
 }
 /* static members */
 object FormGroup {

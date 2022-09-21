@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.TrafficControl")
 @js.native
-class TrafficControl ()
+open class TrafficControl ()
   extends StObject
      with typings.baidumapWebSdk.BMap.TrafficControl {
   

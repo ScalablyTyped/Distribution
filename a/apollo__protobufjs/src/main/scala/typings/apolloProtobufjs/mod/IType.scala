@@ -14,20 +14,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var extensions: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   /** Field descriptors */
-  var fields: StringDictionary[js.UndefOr[IField]]
+  var fields: StringDictionary[IField]
   
   /** Whether a legacy group or not */
   var group: js.UndefOr[Boolean] = js.undefined
   
   /** Oneof descriptors */
-  var oneofs: js.UndefOr[StringDictionary[js.UndefOr[IOneOf]]] = js.undefined
+  var oneofs: js.UndefOr[StringDictionary[IOneOf]] = js.undefined
   
   /** Reserved ranges */
   var reserved: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
 }
 object IType {
   
-  inline def apply(fields: StringDictionary[js.UndefOr[IField]]): IType = {
+  inline def apply(fields: StringDictionary[IField]): IType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[IType]
   }
@@ -38,15 +38,15 @@ object IType {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "extensions", js.Array(value*))
     
-    inline def setFields(value: StringDictionary[js.UndefOr[IField]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setOneofs(value: StringDictionary[js.UndefOr[IOneOf]]): Self = StObject.set(x, "oneofs", value.asInstanceOf[js.Any])
+    inline def setOneofs(value: StringDictionary[IOneOf]): Self = StObject.set(x, "oneofs", value.asInstanceOf[js.Any])
     
     inline def setOneofsUndefined: Self = StObject.set(x, "oneofs", js.undefined)
     
@@ -54,6 +54,6 @@ object IType {
     
     inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
     
-    inline def setReservedVarargs(value: js.Array[Double]*): Self = StObject.set(x, "reserved", js.Array(value :_*))
+    inline def setReservedVarargs(value: js.Array[Double]*): Self = StObject.set(x, "reserved", js.Array(value*))
   }
 }

@@ -10,15 +10,13 @@ Cooperative scheduler for the browser environment.
 | ------------------ | :-------------: |
 | Full name          | schedule |
 | Keywords           | react |
-| # releases         | 1 |
-| # dependents       | 11 |
-| # downloads        | 3711379 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 157466.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://reactjs.org/)
-- [Bugs](https://github.com/facebook/react/issues)
-- [Repository](https://github.com/facebook/react)
 - [Npm](https://www.npmjs.com/package/schedule)
     
 

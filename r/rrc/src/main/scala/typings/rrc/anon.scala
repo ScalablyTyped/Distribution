@@ -1,55 +1,25 @@
 package typings.rrc
 
-import typings.history.mod.Hash
-import typings.history.mod.LocationKey
-import typings.history.mod.LocationState
-import typings.history.mod.Pathname
-import typings.history.mod.Search
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined history.history.LocationDescriptorObject<history.history.LocationState> & {  pathname :history.history.Pathname} */
-  trait LocationDescriptorObjectL extends StObject {
+  trait Pathname extends StObject {
     
-    var hash: js.UndefOr[Hash] = js.undefined
-    
-    var key: js.UndefOr[LocationKey] = js.undefined
-    
-    var pathname: js.UndefOr[Pathname] & Pathname
-    
-    var search: js.UndefOr[Search] = js.undefined
-    
-    var state: js.UndefOr[LocationState] = js.undefined
+    var pathname: typings.history.mod.Pathname
   }
-  object LocationDescriptorObjectL {
+  object Pathname {
     
-    inline def apply(pathname: js.UndefOr[Pathname] & Pathname): LocationDescriptorObjectL = {
+    inline def apply(pathname: typings.history.mod.Pathname): Pathname = {
       val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LocationDescriptorObjectL]
+      __obj.asInstanceOf[Pathname]
     }
     
-    extension [Self <: LocationDescriptorObjectL](x: Self) {
+    extension [Self <: Pathname](x: Self) {
       
-      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
-      
-      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
-      
-      inline def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-      
-      inline def setPathname(value: js.UndefOr[Pathname] & Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
-      
-      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
-      
-      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
-      
-      inline def setState(value: LocationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setPathname(value: typings.history.mod.Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     }
   }
 }

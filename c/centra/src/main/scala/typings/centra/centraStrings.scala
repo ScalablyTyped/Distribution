@@ -59,6 +59,10 @@ object centraStrings {
   inline def localAddress: localAddress = "localAddress".asInstanceOf[localAddress]
   
   @js.native
+  sealed trait lookup extends StObject
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  @js.native
   sealed trait maxHeaderSize extends StObject
   inline def maxHeaderSize: maxHeaderSize = "maxHeaderSize".asInstanceOf[maxHeaderSize]
   
@@ -81,6 +85,10 @@ object centraStrings {
   @js.native
   sealed trait setHost extends StObject
   inline def setHost: setHost = "setHost".asInstanceOf[setHost]
+  
+  @js.native
+  sealed trait signal extends StObject
+  inline def signal: signal = "signal".asInstanceOf[signal]
   
   @js.native
   sealed trait socketPath extends StObject

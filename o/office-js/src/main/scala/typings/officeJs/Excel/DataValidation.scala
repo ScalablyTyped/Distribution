@@ -21,10 +21,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the data validation applied to the current range.
   To learn more about the data validation object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation | Add data validation to Excel ranges}.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @js.native
@@ -35,6 +35,7 @@ trait DataValidation
   /**
     * Clears the data validation from the current range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def clear(): Unit = js.native
@@ -44,31 +45,33 @@ trait DataValidation
   var context_DataValidation: RequestContext = js.native
   
   /**
-    *
     * Error alert when user enters invalid data.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var errorAlert: DataValidationErrorAlert = js.native
   
   /**
-    * Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will throw an ItemNotFound error.
+    * Returns a `RangeAreas` object, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will throw an `ItemNotFound` error.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getInvalidCells(): RangeAreas = js.native
   
   /**
-    * Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will return null.
+    * Returns a `RangeAreas` object, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will return `null`.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getInvalidCellsOrNullObject(): RangeAreas = js.native
   
   /**
+    * Specifies if data validation will be performed on blank cells. Default is `true`.
     *
-    * Specifies if data validation will be performed on blank cells, it defaults to true.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var ignoreBlanks: Boolean = js.native
@@ -85,31 +88,25 @@ trait DataValidation
   def load(propertyNames: js.Array[String]): DataValidation = js.native
   
   /**
-    *
     * Prompt when users select a cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var prompt: DataValidationPrompt = js.native
   
   /**
-    *
     * Data validation rule that contains different type of data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var rule: DataValidationRule = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: DataValidation): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.DataValidation): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -123,19 +120,19 @@ trait DataValidation
   def toJSON(): DataValidationData = js.native
   
   /**
+    * Type of the data validation, see `Excel.DataValidationType` for details.
     *
-    * Type of the data validation, see Excel.DataValidationType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val `type`: DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria = js.native
   
   /**
-    *
     * Represents if all cell values are valid according to the data validation rules.
-    Returns true if all cell values are valid, or false if all cell values are invalid.
-    Returns null if there are both valid and invalid cell values within the range.
+    Returns `true` if all cell values are valid, or `false` if all cell values are invalid.
+    Returns `null` if there are both valid and invalid cell values within the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val valid: Boolean = js.native

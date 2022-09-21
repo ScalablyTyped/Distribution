@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-util-definitions
 
-Typings are for version 3.0.1
+Typings are for version 5.1.1
 
 ## Library description:
 mdast utility to find definition nodes in a tree
@@ -10,10 +10,10 @@ mdast utility to find definition nodes in a tree
 | ------------------ | :-------------: |
 | Full name          | mdast-util-definitions |
 | Keywords           | unist, mdast, mdast-util, util, utility, markdown, tree, node, definition, find, cache |
-| # releases         | 8 |
-| # dependents       | 42 |
-| # downloads        | 22302992 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9112017666666668E7 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/mdast-util-definitions#readme)

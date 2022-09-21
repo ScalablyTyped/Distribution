@@ -21,7 +21,7 @@ object QueryResult {
     
     inline def setResults(value: js.Array[AnalyticsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: AnalyticsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: AnalyticsResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

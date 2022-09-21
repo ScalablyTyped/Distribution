@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-slider
 
-Typings are for version 1.0
+Typings are for version 1.3
 
 ## Library description:
 Slider component for React
@@ -10,10 +10,10 @@ Slider component for React
 | ------------------ | :-------------: |
 | Full name          | react-slider |
 | Keywords           | react-component, react, slider, component |
-| # releases         | 17 |
-| # dependents       | 61 |
-| # downloads        | 2233579 |
-| # stars            | 5 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 359059.6666666667 |
+| # stars            | 766.0 |
 
 ## Links
 - [Homepage](https://github.com/zillow/react-slider)

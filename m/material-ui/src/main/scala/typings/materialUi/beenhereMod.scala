@@ -10,10 +10,10 @@ object beenhereMod {
   
   @JSImport("material-ui/svg-icons/maps/beenhere", JSImport.Default)
   @js.native
-  class default () extends MapsBeenhere
+  open class default () extends MapsBeenhere
   
   @JSImport("material-ui/svg-icons/maps/beenhere", "MapsBeenhere")
   @js.native
-  class MapsBeenhere ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsBeenhere ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

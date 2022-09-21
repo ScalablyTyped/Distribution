@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsEc2InstanceViolation extends StObject {
   
   /**
-    * Violations for network interfaces associated with the EC2 instance.
+    * Violation detail for network interfaces associated with the EC2 instance.
     */
   var AwsEc2NetworkInterfaceViolations: js.UndefOr[typings.awsSdk.fmsMod.AwsEc2NetworkInterfaceViolations] = js.undefined
   
@@ -29,7 +29,7 @@ object AwsEc2InstanceViolation {
     
     inline def setAwsEc2NetworkInterfaceViolationsUndefined: Self = StObject.set(x, "AwsEc2NetworkInterfaceViolations", js.undefined)
     
-    inline def setAwsEc2NetworkInterfaceViolationsVarargs(value: AwsEc2NetworkInterfaceViolation*): Self = StObject.set(x, "AwsEc2NetworkInterfaceViolations", js.Array(value :_*))
+    inline def setAwsEc2NetworkInterfaceViolationsVarargs(value: AwsEc2NetworkInterfaceViolation*): Self = StObject.set(x, "AwsEc2NetworkInterfaceViolations", js.Array(value*))
     
     inline def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     

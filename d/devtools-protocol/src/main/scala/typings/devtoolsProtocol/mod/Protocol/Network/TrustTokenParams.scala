@@ -15,7 +15,7 @@ trait TrustTokenParams extends StObject {
   var issuers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Only set for "srr-token-redemption" type and determine whether
+    * Only set for "token-redemption" type and determine whether
     * to request a fresh SRR or use a still valid cached SRR. (TrustTokenParamsRefreshPolicy enum)
     */
   var refreshPolicy: UseCached | Refresh
@@ -36,7 +36,7 @@ object TrustTokenParams {
     
     inline def setIssuersUndefined: Self = StObject.set(x, "issuers", js.undefined)
     
-    inline def setIssuersVarargs(value: String*): Self = StObject.set(x, "issuers", js.Array(value :_*))
+    inline def setIssuersVarargs(value: String*): Self = StObject.set(x, "issuers", js.Array(value*))
     
     inline def setRefreshPolicy(value: UseCached | Refresh): Self = StObject.set(x, "refreshPolicy", value.asInstanceOf[js.Any])
     

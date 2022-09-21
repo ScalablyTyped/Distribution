@@ -23,6 +23,6 @@ object Address {
     
     inline def setPosition(value: js.Array[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value*))
   }
 }

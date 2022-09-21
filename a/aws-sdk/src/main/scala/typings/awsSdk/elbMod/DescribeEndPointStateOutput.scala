@@ -24,6 +24,6 @@ object DescribeEndPointStateOutput {
     
     inline def setInstanceStatesUndefined: Self = StObject.set(x, "InstanceStates", js.undefined)
     
-    inline def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value :_*))
+    inline def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value*))
   }
 }

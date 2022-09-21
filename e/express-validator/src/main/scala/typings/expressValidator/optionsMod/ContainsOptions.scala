@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContainsOptions extends StObject {
   
   var ignoreCase: js.UndefOr[Boolean] = js.undefined
+  
+  var minOccurrences: js.UndefOr[Double] = js.undefined
 }
 object ContainsOptions {
   
@@ -20,5 +22,9 @@ object ContainsOptions {
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    
+    inline def setMinOccurrences(value: Double): Self = StObject.set(x, "minOccurrences", value.asInstanceOf[js.Any])
+    
+    inline def setMinOccurrencesUndefined: Self = StObject.set(x, "minOccurrences", js.undefined)
   }
 }

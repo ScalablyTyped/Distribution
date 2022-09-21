@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.propTypes.mod.Requireable
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
-import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("react-json-pretty", JSImport.Namespace)
   @js.native
-  class ^ () extends JSONPretty
+  open class ^ () extends JSONPretty
   
   /* static member */
   object defaultProps {
@@ -58,23 +57,23 @@ object mod {
     
     @JSImport("react-json-pretty", "propTypes.data")
     @js.native
-    def data: Requireable[js.Any] = js.native
-    inline def data_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+    def data: Requireable[Any] = js.native
+    inline def data_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
     
     @JSImport("react-json-pretty", "propTypes.json")
     @js.native
-    def json: Requireable[js.Any] = js.native
-    inline def json_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
+    def json: Requireable[Any] = js.native
+    inline def json_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
     
     @JSImport("react-json-pretty", "propTypes.onJSONPrettyError")
     @js.native
-    def onJSONPrettyError: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-    inline def onJSONPrettyError_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onJSONPrettyError")(x.asInstanceOf[js.Any])
+    def onJSONPrettyError: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+    inline def onJSONPrettyError_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onJSONPrettyError")(x.asInstanceOf[js.Any])
     
     @JSImport("react-json-pretty", "propTypes.replacer")
     @js.native
-    def replacer: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-    inline def replacer_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("replacer")(x.asInstanceOf[js.Any])
+    def replacer: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+    inline def replacer_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("replacer")(x.asInstanceOf[js.Any])
     
     @JSImport("react-json-pretty", "propTypes.silent")
     @js.native
@@ -104,19 +103,19 @@ object mod {
     
     var booleanStyle: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var errorStyle: js.UndefOr[String] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.undefined
+    var json: js.UndefOr[Any] = js.undefined
     
     var keyStyle: js.UndefOr[String] = js.undefined
     
     var mainStyle: js.UndefOr[String] = js.undefined
     
-    var onJSONPrettyError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
+    var onJSONPrettyError: js.UndefOr[js.Function1[/* e */ js.Error, Unit]] = js.undefined
     
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any | Null]] = js.undefined
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any | Null]] = js.undefined
     
     var silent: js.UndefOr[Boolean] = js.undefined
     
@@ -143,7 +142,7 @@ object mod {
       
       inline def setBooleanStyleUndefined: Self = StObject.set(x, "booleanStyle", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -151,7 +150,7 @@ object mod {
       
       inline def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
       
-      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
@@ -163,11 +162,11 @@ object mod {
       
       inline def setMainStyleUndefined: Self = StObject.set(x, "mainStyle", js.undefined)
       
-      inline def setOnJSONPrettyError(value: /* e */ Error => Unit): Self = StObject.set(x, "onJSONPrettyError", js.Any.fromFunction1(value))
+      inline def setOnJSONPrettyError(value: /* e */ js.Error => Unit): Self = StObject.set(x, "onJSONPrettyError", js.Any.fromFunction1(value))
       
       inline def setOnJSONPrettyErrorUndefined: Self = StObject.set(x, "onJSONPrettyError", js.undefined)
       
-      inline def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any | Null): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any | Null): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
@@ -201,10 +200,10 @@ object mod {
   
   @js.native
   trait JSONPretty
-    extends Component[IProps, js.Object, js.Any] {
+    extends Component[IProps, js.Object, Any] {
     
-    /* private */ var _pretty: js.Any = js.native
+    /* private */ var _pretty: Any = js.native
     
-    /* private */ var _replace: js.Any = js.native
+    /* private */ var _replace: Any = js.native
   }
 }

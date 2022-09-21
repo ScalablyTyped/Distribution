@@ -4,22 +4,42 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result of a risk analysis operation request.
-  */
 trait SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends StObject {
   
+  /**
+    * Categorical stats result
+    */
   var categoricalStatsResult: js.UndefOr[SchemaGooglePrivacyDlpV2CategoricalStatsResult] = js.undefined
   
+  /**
+    * Delta-presence result
+    */
   var deltaPresenceEstimationResult: js.UndefOr[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult] = js.undefined
   
+  /**
+    * K-anonymity result
+    */
   var kAnonymityResult: js.UndefOr[SchemaGooglePrivacyDlpV2KAnonymityResult] = js.undefined
   
+  /**
+    * K-map result
+    */
   var kMapEstimationResult: js.UndefOr[SchemaGooglePrivacyDlpV2KMapEstimationResult] = js.undefined
   
+  /**
+    * L-divesity result
+    */
   var lDiversityResult: js.UndefOr[SchemaGooglePrivacyDlpV2LDiversityResult] = js.undefined
   
+  /**
+    * Numerical stats result
+    */
   var numericalStatsResult: js.UndefOr[SchemaGooglePrivacyDlpV2NumericalStatsResult] = js.undefined
+  
+  /**
+    * The configuration used for this job.
+    */
+  var requestedOptions: js.UndefOr[SchemaGooglePrivacyDlpV2RequestedRiskAnalysisOptions] = js.undefined
   
   /**
     * Privacy metric to compute.
@@ -63,6 +83,10 @@ object SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails {
     inline def setNumericalStatsResult(value: SchemaGooglePrivacyDlpV2NumericalStatsResult): Self = StObject.set(x, "numericalStatsResult", value.asInstanceOf[js.Any])
     
     inline def setNumericalStatsResultUndefined: Self = StObject.set(x, "numericalStatsResult", js.undefined)
+    
+    inline def setRequestedOptions(value: SchemaGooglePrivacyDlpV2RequestedRiskAnalysisOptions): Self = StObject.set(x, "requestedOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRequestedOptionsUndefined: Self = StObject.set(x, "requestedOptions", js.undefined)
     
     inline def setRequestedPrivacyMetric(value: SchemaGooglePrivacyDlpV2PrivacyMetric): Self = StObject.set(x, "requestedPrivacyMetric", value.asInstanceOf[js.Any])
     

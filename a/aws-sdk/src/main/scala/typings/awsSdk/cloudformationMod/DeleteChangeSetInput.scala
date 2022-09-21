@@ -12,7 +12,7 @@ trait DeleteChangeSetInput extends StObject {
   var ChangeSetName: ChangeSetNameOrId
   
   /**
-    * If you specified the name of a change set to delete, specify the stack name or ID (ARN) that is associated with it.
+    * If you specified the name of a change set to delete, specify the stack name or Amazon Resource Name (ARN) that's associated with it.
     */
   var StackName: js.UndefOr[StackNameOrId] = js.undefined
 }

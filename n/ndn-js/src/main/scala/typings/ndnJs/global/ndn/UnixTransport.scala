@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.UnixTransport")
 @js.native
-class UnixTransport ()
+open class UnixTransport ()
   extends typings.ndnJs.mod.UnixTransport
 object UnixTransport {
   
   @JSGlobal("ndn.UnixTransport.ConnectionInfo")
   @js.native
-  class ConnectionInfo protected ()
+  open class ConnectionInfo protected ()
     extends typings.ndnJs.mod.UnixTransport.ConnectionInfo {
     def this(filePath: String) = this()
   }

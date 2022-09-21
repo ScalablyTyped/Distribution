@@ -8,5 +8,5 @@ object enableKeyMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/EnableKey", "EnableKey")
   @js.native
-  val EnableKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val EnableKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

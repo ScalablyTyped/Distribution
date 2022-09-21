@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PerObjectStatus extends StObject {
   
   /**
-    * 
+    * Indicates whether this object is in sync with the version indicated in the update token.
     */
   var SyncStatus: js.UndefOr[PerObjectSyncStatus] = js.undefined
+  
+  /**
+    * The current version of the object that is either in sync or pending synchronization. 
+    */
+  var UpdateToken: js.UndefOr[typings.awsSdk.networkfirewallMod.UpdateToken] = js.undefined
 }
 object PerObjectStatus {
   
@@ -23,5 +28,9 @@ object PerObjectStatus {
     inline def setSyncStatus(value: PerObjectSyncStatus): Self = StObject.set(x, "SyncStatus", value.asInstanceOf[js.Any])
     
     inline def setSyncStatusUndefined: Self = StObject.set(x, "SyncStatus", js.undefined)
+    
+    inline def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
   }
 }

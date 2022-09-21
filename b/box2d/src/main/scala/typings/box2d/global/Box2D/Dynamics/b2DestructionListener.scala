@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Box2D.Dynamics.b2DestructionListener")
 @js.native
-class b2DestructionListener ()
+open class b2DestructionListener ()
   extends StObject
      with typings.box2d.Box2D.Dynamics.b2DestructionListener {
   

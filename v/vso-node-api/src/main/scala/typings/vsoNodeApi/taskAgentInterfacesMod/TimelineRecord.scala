@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +14,13 @@ trait TimelineRecord extends StObject {
   
   var errorCount: Double
   
-  var finishTime: Date
+  var finishTime: js.Date
   
   var id: String
   
   var issues: js.Array[Issue]
   
-  var lastModified: Date
+  var lastModified: js.Date
   
   var location: String
   
@@ -39,7 +38,7 @@ trait TimelineRecord extends StObject {
   
   var resultCode: String
   
-  var startTime: Date
+  var startTime: js.Date
   
   var state: TimelineRecordState
   
@@ -58,10 +57,10 @@ object TimelineRecord {
     currentOperation: String,
     details: TimelineReference,
     errorCount: Double,
-    finishTime: Date,
+    finishTime: js.Date,
     id: String,
     issues: js.Array[Issue],
-    lastModified: Date,
+    lastModified: js.Date,
     location: String,
     log: TaskLogReference,
     name: String,
@@ -70,7 +69,7 @@ object TimelineRecord {
     percentComplete: Double,
     result: TaskResult,
     resultCode: String,
-    startTime: Date,
+    startTime: js.Date,
     state: TimelineRecordState,
     task: TaskReference,
     `type`: String,
@@ -92,15 +91,15 @@ object TimelineRecord {
     
     inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: js.Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
-    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value*))
     
-    inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -118,7 +117,7 @@ object TimelineRecord {
     
     inline def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setState(value: TimelineRecordState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

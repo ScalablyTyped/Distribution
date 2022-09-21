@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Misc/index", "AssetsManager")
 @js.native
-class AssetsManager protected ()
+/**
+  * Creates a new AssetsManager
+  * @param scene defines the scene to work on
+  */
+open class AssetsManager ()
   extends typings.babylonjs.assetsManagerMod.AssetsManager {
-  /**
-    * Creates a new AssetsManager
-    * @param scene defines the scene to work on
-    */
   def this(scene: Scene) = this()
 }

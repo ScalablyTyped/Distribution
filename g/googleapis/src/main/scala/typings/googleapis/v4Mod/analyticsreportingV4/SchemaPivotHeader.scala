@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The headers for each of the pivot sections defined in the request.
-  */
 trait SchemaPivotHeader extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaPivotHeader extends StObject {
   /**
     * The total number of groups for this pivot.
     */
-  var totalPivotGroupsCount: js.UndefOr[Double] = js.undefined
+  var totalPivotGroupsCount: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaPivotHeader {
   
@@ -32,9 +29,11 @@ object SchemaPivotHeader {
     
     inline def setPivotHeaderEntriesUndefined: Self = StObject.set(x, "pivotHeaderEntries", js.undefined)
     
-    inline def setPivotHeaderEntriesVarargs(value: SchemaPivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value :_*))
+    inline def setPivotHeaderEntriesVarargs(value: SchemaPivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value*))
     
     inline def setTotalPivotGroupsCount(value: Double): Self = StObject.set(x, "totalPivotGroupsCount", value.asInstanceOf[js.Any])
+    
+    inline def setTotalPivotGroupsCountNull: Self = StObject.set(x, "totalPivotGroupsCount", null)
     
     inline def setTotalPivotGroupsCountUndefined: Self = StObject.set(x, "totalPivotGroupsCount", js.undefined)
   }

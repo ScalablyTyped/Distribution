@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.UpBars")
 @js.native
-/* private */ class UpBars ()
+/* private */ open class UpBars ()
   extends StObject
      with typings.activexExcel.Excel.UpBars {
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: XlCreator = js.native
   
   /* CompleteClass */
-  override def Delete(): js.Any = js.native
+  override def Delete(): Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Excel.UpBars_typekey")
@@ -40,8 +40,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
 }

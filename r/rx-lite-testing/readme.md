@@ -11,9 +11,9 @@ Lightweight library with testing functions for composing asynchronous and event-
 | Full name          | rx-lite-testing |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 8296 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 129.66666666666666 |
+| # stars            | 19624.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS)

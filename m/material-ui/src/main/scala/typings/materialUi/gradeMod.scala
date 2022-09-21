@@ -10,10 +10,10 @@ object gradeMod {
   
   @JSImport("material-ui/svg-icons/action/grade", JSImport.Default)
   @js.native
-  class default () extends ActionGrade
+  open class default () extends ActionGrade
   
   @JSImport("material-ui/svg-icons/action/grade", "ActionGrade")
   @js.native
-  class ActionGrade ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionGrade ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

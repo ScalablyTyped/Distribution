@@ -13,5 +13,5 @@ trait IMessageWebSocket
   
   var information: MessageWebSocketInformation = js.native
   
-  var onmessagereceived: js.Any = js.native
+  var onmessagereceived: Any = js.native
 }

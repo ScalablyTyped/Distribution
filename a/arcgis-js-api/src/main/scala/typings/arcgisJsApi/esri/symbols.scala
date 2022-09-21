@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A convenience module for importing [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) classes when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html).
+  * A convenience module for importing [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) classes when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/typescript-setup/).
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols.html)
   */
@@ -60,8 +60,7 @@ object symbols {
   type SimpleMarkerSymbol = typings.arcgisJsApi.esri.SimpleMarkerSymbol
   
   /* Rewritten from type alias, can be one of: 
-    - typings.arcgisJsApi.esri.Symbol2D
-    - typings.arcgisJsApi.esri.symbolsSymbol3D
+    - typings.arcgisJsApi.esri.Symbol2D3D
     - typings.arcgisJsApi.esri.WebStyleSymbol
   */
   trait Symbol extends StObject
@@ -73,22 +72,13 @@ object symbols {
     - typings.arcgisJsApi.esri.SimpleLineSymbol
     - typings.arcgisJsApi.esri.SimpleMarkerSymbol
     - typings.arcgisJsApi.esri.TextSymbol
+    - typings.arcgisJsApi.esri.CIMSymbol
   */
   trait Symbol2D extends StObject
   
   /* Rewritten from type alias, can be one of: 
-    - typings.arcgisJsApi.esri.PictureFillSymbol
-    - typings.arcgisJsApi.esri.PictureMarkerSymbol
-    - typings.arcgisJsApi.esri.SimpleFillSymbol
-    - typings.arcgisJsApi.esri.SimpleLineSymbol
-    - typings.arcgisJsApi.esri.SimpleMarkerSymbol
-    - typings.arcgisJsApi.esri.TextSymbol
     - typings.arcgisJsApi.esri.Symbol2D
-    - typings.arcgisJsApi.esri.LabelSymbol3D
-    - typings.arcgisJsApi.esri.LineSymbol3D
-    - typings.arcgisJsApi.esri.MeshSymbol3D
-    - typings.arcgisJsApi.esri.PointSymbol3D
-    - typings.arcgisJsApi.esri.PolygonSymbol3D
+    - typings.arcgisJsApi.esri.symbolsSymbol3D
   */
   trait Symbol2D3D extends StObject
   

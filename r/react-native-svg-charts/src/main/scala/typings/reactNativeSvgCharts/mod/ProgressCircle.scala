@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-svg-charts", "ProgressCircle")
 @js.native
-class ProgressCircle protected ()
-  extends PureComponent[ProgressCircleProps, js.Object, js.Any] {
+open class ProgressCircle protected ()
+  extends PureComponent[ProgressCircleProps, js.Object, Any] {
   def this(props: ProgressCircleProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ProgressCircleProps, context: js.Any) = this()
+  def this(props: ProgressCircleProps, context: Any) = this()
 }

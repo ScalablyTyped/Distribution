@@ -11,9 +11,9 @@ Vinyl adapter for the file system.
 | Full name          | vinyl-fs |
 | Keywords           | gulp, vinyl-adapter, vinyl, file, file system, fs, streams |
 | # releases         | 0 |
-| # dependents       | 1102 |
-| # downloads        | 97769252 |
-| # stars            | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 8811085.666666666 |
+| # stars            | 937.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/vinyl-fs#readme)

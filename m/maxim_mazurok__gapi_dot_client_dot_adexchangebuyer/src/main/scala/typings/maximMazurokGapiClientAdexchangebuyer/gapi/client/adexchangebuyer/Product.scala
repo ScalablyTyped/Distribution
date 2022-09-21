@@ -127,7 +127,7 @@ object Product {
     
     inline def setCreatorContactsUndefined: Self = StObject.set(x, "creatorContacts", js.undefined)
     
-    inline def setCreatorContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "creatorContacts", js.Array(value :_*))
+    inline def setCreatorContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "creatorContacts", js.Array(value*))
     
     inline def setCreatorRole(value: String): Self = StObject.set(x, "creatorRole", value.asInstanceOf[js.Any])
     
@@ -161,7 +161,7 @@ object Product {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: MarketplaceLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: MarketplaceLabel*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLastUpdateTimeMs(value: String): Self = StObject.set(x, "lastUpdateTimeMs", value.asInstanceOf[js.Any])
     
@@ -207,7 +207,7 @@ object Product {
     
     inline def setSharedTargetingsUndefined: Self = StObject.set(x, "sharedTargetings", js.undefined)
     
-    inline def setSharedTargetingsVarargs(value: SharedTargeting*): Self = StObject.set(x, "sharedTargetings", js.Array(value :_*))
+    inline def setSharedTargetingsVarargs(value: SharedTargeting*): Self = StObject.set(x, "sharedTargetings", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

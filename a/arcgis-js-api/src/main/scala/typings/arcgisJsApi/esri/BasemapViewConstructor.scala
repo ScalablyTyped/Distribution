@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BasemapViewConstructor
   extends StObject
-     with Instantiable0[BasemapView]
+     with /**
+  * Represents the view for a single basemap after it has been added to either a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BasemapView.html)
+  */
+Instantiable0[BasemapView]
      with Instantiable1[/* properties */ BasemapViewProperties, BasemapView]

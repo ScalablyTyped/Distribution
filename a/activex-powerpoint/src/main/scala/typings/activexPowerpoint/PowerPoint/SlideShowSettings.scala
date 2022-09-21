@@ -17,7 +17,7 @@ trait SlideShowSettings extends StObject {
   
   val NamedSlideShows: typings.activexPowerpoint.PowerPoint.NamedSlideShows
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PointerColor: ColorFormat
   
@@ -52,7 +52,7 @@ object SlideShowSettings {
     EndingSlide: Double,
     LoopUntilStopped: MsoTriState,
     NamedSlideShows: NamedSlideShows,
-    Parent: js.Any,
+    Parent: Any,
     PointerColor: ColorFormat,
     PowerPointDotSlideShowSettings_typekey: SlideShowSettings,
     RangeType: PpSlideShowRangeType,
@@ -83,7 +83,7 @@ object SlideShowSettings {
     
     inline def setNamedSlideShows(value: NamedSlideShows): Self = StObject.set(x, "NamedSlideShows", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPointerColor(value: ColorFormat): Self = StObject.set(x, "PointerColor", value.asInstanceOf[js.Any])
     

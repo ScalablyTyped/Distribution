@@ -10,10 +10,10 @@ object inputMod {
   
   @JSImport("material-ui/svg-icons/action/input", JSImport.Default)
   @js.native
-  class default () extends ActionInput
+  open class default () extends ActionInput
   
   @JSImport("material-ui/svg-icons/action/input", "ActionInput")
   @js.native
-  class ActionInput ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionInput ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

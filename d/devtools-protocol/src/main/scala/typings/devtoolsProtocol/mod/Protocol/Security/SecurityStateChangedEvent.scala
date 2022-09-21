@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SecurityStateChangedEvent extends StObject {
   
   /**
-    * List of explanations for the security state. If the overall security state is `insecure` or
-    * `warning`, at least one corresponding explanation should be included.
+    * Previously a list of explanations for the security state. Now always
+    * empty.
     */
   var explanations: js.Array[SecurityStateExplanation]
   
@@ -28,7 +28,7 @@ trait SecurityStateChangedEvent extends StObject {
   var securityState: SecurityState
   
   /**
-    * Overrides user-visible description of the state.
+    * Overrides user-visible description of the state. Always omitted.
     */
   var summary: js.UndefOr[String] = js.undefined
 }
@@ -48,7 +48,7 @@ object SecurityStateChangedEvent {
     
     inline def setExplanations(value: js.Array[SecurityStateExplanation]): Self = StObject.set(x, "explanations", value.asInstanceOf[js.Any])
     
-    inline def setExplanationsVarargs(value: SecurityStateExplanation*): Self = StObject.set(x, "explanations", js.Array(value :_*))
+    inline def setExplanationsVarargs(value: SecurityStateExplanation*): Self = StObject.set(x, "explanations", js.Array(value*))
     
     inline def setInsecureContentStatus(value: InsecureContentStatus): Self = StObject.set(x, "insecureContentStatus", value.asInstanceOf[js.Any])
     

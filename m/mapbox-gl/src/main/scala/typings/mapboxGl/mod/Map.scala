@@ -58,7 +58,6 @@ import typings.mapboxGl.mapboxGlStrings.wheel
 import typings.mapboxGl.mapboxGlStrings.zoom
 import typings.mapboxGl.mapboxGlStrings.zoomend
 import typings.mapboxGl.mapboxGlStrings.zoomstart
-import typings.std.ArrayBufferView
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
@@ -73,43 +72,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "Map")
 @js.native
-class Map () extends Evented {
+open class Map () extends Evented {
   def this(options: MapboxOptions) = this()
   
   def addControl(control: Control): this.type = js.native
+  def addControl(control: Control, position: `top-right` | `top-left` | `bottom-right` | `bottom-left`): this.type = js.native
   def addControl(control: IControl): this.type = js.native
-  @JSName("addControl")
-  def addControl_bottomleft(control: Control, position: `bottom-left`): this.type = js.native
-  @JSName("addControl")
-  def addControl_bottomleft(control: IControl, position: `bottom-left`): this.type = js.native
-  @JSName("addControl")
-  def addControl_bottomright(control: Control, position: `bottom-right`): this.type = js.native
-  @JSName("addControl")
-  def addControl_bottomright(control: IControl, position: `bottom-right`): this.type = js.native
-  @JSName("addControl")
-  def addControl_topleft(control: Control, position: `top-left`): this.type = js.native
-  @JSName("addControl")
-  def addControl_topleft(control: IControl, position: `top-left`): this.type = js.native
-  @JSName("addControl")
-  def addControl_topright(control: Control, position: `top-right`): this.type = js.native
-  @JSName("addControl")
-  def addControl_topright(control: IControl, position: `top-right`): this.type = js.native
+  def addControl(control: IControl, position: `top-right` | `top-left` | `bottom-right` | `bottom-left`): this.type = js.native
   
-  def addImage(name: String, image: Data): this.type = js.native
-  def addImage(name: String, image: Data, options: PixelRatio): this.type = js.native
-  def addImage(name: String, image: ArrayBufferView): this.type = js.native
-  def addImage(name: String, image: ArrayBufferView, options: PixelRatio): this.type = js.native
-  def addImage(name: String, image: HTMLImageElement): this.type = js.native
-  def addImage(name: String, image: HTMLImageElement, options: PixelRatio): this.type = js.native
-  def addImage(name: String, image: ImageBitmap): this.type = js.native
-  def addImage(name: String, image: ImageBitmap, options: PixelRatio): this.type = js.native
-  def addImage(name: String, image: ImageData): this.type = js.native
-  def addImage(name: String, image: ImageData, options: PixelRatio): this.type = js.native
+  def addImage(name: String, image: js.typedarray.ArrayBufferView): Unit = js.native
+  def addImage(name: String, image: js.typedarray.ArrayBufferView, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: Data): Unit = js.native
+  def addImage(name: String, image: Data, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: HTMLImageElement): Unit = js.native
+  def addImage(name: String, image: HTMLImageElement, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: ImageBitmap): Unit = js.native
+  def addImage(name: String, image: ImageBitmap, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: ImageData): Unit = js.native
+  def addImage(name: String, image: ImageData, options: PixelRatio): Unit = js.native
   
-  def addLayer(layer: CustomLayerInterface): this.type = js.native
-  def addLayer(layer: CustomLayerInterface, before: String): this.type = js.native
-  def addLayer(layer: Layer): this.type = js.native
-  def addLayer(layer: Layer, before: String): this.type = js.native
+  def addLayer(layer: AnyLayer): this.type = js.native
+  def addLayer(layer: AnyLayer, before: String): this.type = js.native
   
   def addSource(id: String, source: AnySourceData): this.type = js.native
   
@@ -160,14 +143,24 @@ class Map () extends Evented {
   
   def getContainer(): HTMLElement = js.native
   
-  def getFeatureState(feature: FeatureIdentifier): StringDictionary[js.Any] = js.native
-  def getFeatureState(feature: MapboxGeoJSONFeature): StringDictionary[js.Any] = js.native
+  def getFeatureState(feature: FeatureIdentifier): StringDictionary[Any] = js.native
+  def getFeatureState(feature: MapboxGeoJSONFeature): StringDictionary[Any] = js.native
   
-  def getFilter(layer: String): js.Array[js.Any] = js.native
+  def getFilter(layer: String): js.Array[Any] = js.native
   
-  def getLayer(id: String): Layer = js.native
+  def getFog(): Fog | Null = js.native
   
-  def getLayoutProperty(layer: String, name: String): js.Any = js.native
+  /**
+    * Returns position and orientation of the camera entity.
+    *
+    * @memberof Map#
+    * @returns {FreeCameraOptions} The camera state
+    */
+  def getFreeCameraOptions(): FreeCameraOptions = js.native
+  
+  def getLayer(id: String): AnyLayer = js.native
+  
+  def getLayoutProperty(layer: String, name: String): Any = js.native
   
   def getLight(): Light = js.native
   
@@ -189,7 +182,7 @@ class Map () extends Evented {
     */
   def getPadding(): PaddingOptions = js.native
   
-  def getPaintProperty(layer: String, name: String): js.Any = js.native
+  def getPaintProperty(layer: String, name: String): Any = js.native
   
   def getPitch(): Double = js.native
   
@@ -199,7 +192,18 @@ class Map () extends Evented {
   
   def getStyle(): Style = js.native
   
+  def getTerrain(): TerrainSpecification | Null = js.native
+  
   def getZoom(): Double = js.native
+  
+  /**
+    * Checks if a control exists on the map.
+    *
+    * @param {IControl} control The {@link IControl} to check.
+    * @returns {boolean} True if map contains control.
+    * @example
+    */
+  def hasControl(control: IControl): Boolean = js.native
   
   def hasImage(name: String): Boolean = js.native
   
@@ -222,14 +226,20 @@ class Map () extends Evented {
   
   def listImages(): js.Array[String] = js.native
   
-  def loadImage(url: String, callback: js.Function): this.type = js.native
+  def loadImage(
+    url: String,
+    callback: js.Function2[
+      /* error */ js.UndefOr[js.Error], 
+      /* result */ js.UndefOr[HTMLImageElement | ImageBitmap], 
+      Unit
+    ]
+  ): Unit = js.native
   
   def loaded(): Boolean = js.native
   
   def moveLayer(id: String): this.type = js.native
   def moveLayer(id: String, beforeId: String): this.type = js.native
   
-  def off(`type`: String, listener: js.Function1[/* ev */ js.Any, Unit]): this.type = js.native
   @JSName("off")
   def off_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapBoxZoomEvent & EventData, Unit]): this.type = js.native
   @JSName("off")
@@ -243,11 +253,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
+  def off_click(
+    `type`: click,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
   def off_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
   @JSName("off")
   def off_contextmenu(
     `type`: contextmenu,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_contextmenu(
+    `type`: contextmenu,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
@@ -260,6 +282,12 @@ class Map () extends Evented {
   def off_dblclick(
     `type`: dblclick,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_dblclick(
+    `type`: dblclick,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
@@ -292,11 +320,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
+  def off_mousedown(
+    `type`: mousedown,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
   def off_mousedown(`type`: mousedown, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
   @JSName("off")
   def off_mouseenter(
     `type`: mouseenter,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseenter(
+    `type`: mouseenter,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
@@ -306,9 +346,21 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
+  def off_mouseleave(
+    `type`: mouseleave,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
   def off_mousemove(
     `type`: mousemove,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mousemove(
+    `type`: mousemove,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
@@ -320,6 +372,12 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
+  def off_mouseout(
+    `type`: mouseout,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
   def off_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
   @JSName("off")
   def off_mouseover(
@@ -328,11 +386,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
+  def off_mouseover(
+    `type`: mouseover,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
   def off_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
   @JSName("off")
   def off_mouseup(
     `type`: mouseup,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_mouseup(
+    `type`: mouseup,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
@@ -414,11 +484,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
+  def off_touchcancel(
+    `type`: touchcancel,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
   def off_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent & EventData, Unit]): this.type = js.native
   @JSName("off")
   def off_touchend(
     `type`: touchend,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchend(
+    `type`: touchend,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
@@ -429,6 +511,12 @@ class Map () extends Evented {
   def off_touchstart(
     `type`: touchstart,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_touchstart(
+    `type`: touchstart,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("off")
@@ -464,7 +552,6 @@ class Map () extends Evented {
     ]
   ): this.type = js.native
   
-  def on(`type`: String, listener: js.Function1[/* ev */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapBoxZoomEvent & EventData, Unit]): this.type = js.native
   @JSName("on")
@@ -478,11 +565,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
+  def on_click(
+    `type`: click,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
   @JSName("on")
   def on_contextmenu(
     `type`: contextmenu,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_contextmenu(
+    `type`: contextmenu,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
@@ -495,6 +594,12 @@ class Map () extends Evented {
   def on_dblclick(
     `type`: dblclick,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_dblclick(
+    `type`: dblclick,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
@@ -527,11 +632,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
+  def on_mousedown(
+    `type`: mousedown,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_mousedown(`type`: mousedown, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
   @JSName("on")
   def on_mouseenter(
     `type`: mouseenter,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseenter(
+    `type`: mouseenter,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
@@ -541,9 +658,21 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
+  def on_mouseleave(
+    `type`: mouseleave,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_mousemove(
     `type`: mousemove,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mousemove(
+    `type`: mousemove,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
@@ -555,6 +684,12 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
+  def on_mouseout(
+    `type`: mouseout,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
   @JSName("on")
   def on_mouseover(
@@ -563,11 +698,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
+  def on_mouseover(
+    `type`: mouseover,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
   @JSName("on")
   def on_mouseup(
     `type`: mouseup,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_mouseup(
+    `type`: mouseup,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
@@ -649,11 +796,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
+  def on_touchcancel(
+    `type`: touchcancel,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent & EventData, Unit]): this.type = js.native
   @JSName("on")
   def on_touchend(
     `type`: touchend,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchend(
+    `type`: touchend,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
@@ -664,6 +823,12 @@ class Map () extends Evented {
   def on_touchstart(
     `type`: touchstart,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_touchstart(
+    `type`: touchstart,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("on")
@@ -699,13 +864,20 @@ class Map () extends Evented {
     ]
   ): this.type = js.native
   
-  def once(`type`: String, listener: js.Function1[/* ev */ js.Any, Unit]): this.type = js.native
+  @JSName("once")
+  def once_boxzoomcancel(`type`: boxzoomcancel): js.Promise[MapBoxZoomEvent] = js.native
   @JSName("once")
   def once_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapBoxZoomEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_boxzoomend(`type`: boxzoomend): js.Promise[MapBoxZoomEvent] = js.native
+  @JSName("once")
   def once_boxzoomend(`type`: boxzoomend, listener: js.Function1[/* ev */ MapBoxZoomEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_boxzoomstart(`type`: boxzoomstart): js.Promise[MapBoxZoomEvent] = js.native
+  @JSName("once")
   def once_boxzoomstart(`type`: boxzoomstart, listener: js.Function1[/* ev */ MapBoxZoomEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_click(`type`: click): js.Promise[MapMouseEvent] = js.native
   @JSName("once")
   def once_click(
     `type`: click,
@@ -713,7 +885,15 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_click(
+    `type`: click,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_contextmenu(`type`: contextmenu): js.Promise[MapMouseEvent] = js.native
   @JSName("once")
   def once_contextmenu(
     `type`: contextmenu,
@@ -721,11 +901,23 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_contextmenu(
+    `type`: contextmenu,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_contextmenu(`type`: contextmenu, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_data(`type`: data): js.Promise[MapDataEvent] = js.native
   @JSName("once")
   def once_data(`type`: data, listener: js.Function1[/* ev */ MapDataEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_dataloading(`type`: dataloading): js.Promise[MapDataEvent] = js.native
+  @JSName("once")
   def once_dataloading(`type`: dataloading, listener: js.Function1[/* ev */ MapDataEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_dblclick(`type`: dblclick): js.Promise[MapMouseEvent] = js.native
   @JSName("once")
   def once_dblclick(
     `type`: dblclick,
@@ -733,32 +925,58 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_dblclick(
+    `type`: dblclick,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_dblclick(`type`: dblclick, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_drag(`type`: drag): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
   @JSName("once")
   def once_drag(
     `type`: drag,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_dragend(`type`: dragend): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
+  @JSName("once")
   def once_dragend(
     `type`: dragend,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
+  @JSName("once")
+  def once_dragstart(`type`: dragstart): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
   @JSName("once")
   def once_dragstart(
     `type`: dragstart,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_error(`type`: error): js.Promise[ErrorEvent] = js.native
+  @JSName("once")
   def once_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_idle(`type`: idle): js.Promise[MapboxEvent[Unit]] = js.native
   @JSName("once")
   def once_idle(`type`: idle, listener: js.Function1[/* ev */ MapboxEvent[Unit] & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_load(`type`: load): js.Promise[MapboxEvent[Unit]] = js.native
+  @JSName("once")
   def once_load(`type`: load, listener: js.Function1[/* ev */ MapboxEvent[Unit] & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_mousedown(`type`: mousedown): js.Promise[MapMouseEvent] = js.native
   @JSName("once")
   def once_mousedown(
     `type`: mousedown,
     layer: String,
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mousedown(
+    `type`: mousedown,
+    layer: js.Array[String],
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
@@ -770,11 +988,25 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_mouseenter(
+    `type`: mouseenter,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_mouseleave(
     `type`: mouseleave,
     layer: String,
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
+  @JSName("once")
+  def once_mouseleave(
+    `type`: mouseleave,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_mousemove(`type`: mousemove): js.Promise[MapMouseEvent] = js.native
   @JSName("once")
   def once_mousemove(
     `type`: mousemove,
@@ -782,7 +1014,15 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_mousemove(
+    `type`: mousemove,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_mousemove(`type`: mousemove, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_mouseout(`type`: mouseout): js.Promise[MapMouseEvent] = js.native
   @JSName("once")
   def once_mouseout(
     `type`: mouseout,
@@ -790,7 +1030,15 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_mouseout(
+    `type`: mouseout,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_mouseover(`type`: mouseover): js.Promise[MapMouseEvent] = js.native
   @JSName("once")
   def once_mouseover(
     `type`: mouseover,
@@ -798,7 +1046,15 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_mouseover(
+    `type`: mouseover,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_mouseup(`type`: mouseup): js.Promise[MapMouseEvent] = js.native
   @JSName("once")
   def once_mouseup(
     `type`: mouseup,
@@ -806,7 +1062,15 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_mouseup(
+    `type`: mouseup,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerMouseEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_mouseup(`type`: mouseup, listener: js.Function1[/* ev */ MapMouseEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_move(`type`: move): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]] = js.native
   @JSName("once")
   def once_move(
     `type`: move,
@@ -816,6 +1080,8 @@ class Map () extends Evented {
     ]
   ): this.type = js.native
   @JSName("once")
+  def once_moveend(`type`: moveend): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]] = js.native
+  @JSName("once")
   def once_moveend(
     `type`: moveend,
     listener: js.Function1[
@@ -823,6 +1089,8 @@ class Map () extends Evented {
       Unit
     ]
   ): this.type = js.native
+  @JSName("once")
+  def once_movestart(`type`: movestart): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]] = js.native
   @JSName("once")
   def once_movestart(
     `type`: movestart,
@@ -832,51 +1100,81 @@ class Map () extends Evented {
     ]
   ): this.type = js.native
   @JSName("once")
+  def once_pitch(`type`: pitch): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
+  @JSName("once")
   def once_pitch(
     `type`: pitch,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
+  @JSName("once")
+  def once_pitchend(`type`: pitchend): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
   @JSName("once")
   def once_pitchend(
     `type`: pitchend,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_pitchstart(`type`: pitchstart): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
+  @JSName("once")
   def once_pitchstart(
     `type`: pitchstart,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_remove(`type`: remove): js.Promise[MapboxEvent[Unit]] = js.native
+  @JSName("once")
   def once_remove(`type`: remove, listener: js.Function1[/* ev */ MapboxEvent[Unit] & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_render(`type`: render): js.Promise[MapboxEvent[Unit]] = js.native
   @JSName("once")
   def once_render(`type`: render, listener: js.Function1[/* ev */ MapboxEvent[Unit] & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_resize(`type`: resize): js.Promise[MapboxEvent[Unit]] = js.native
+  @JSName("once")
   def once_resize(`type`: resize, listener: js.Function1[/* ev */ MapboxEvent[Unit] & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_rotate(`type`: rotate): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
   @JSName("once")
   def once_rotate(
     `type`: rotate,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_rotateend(`type`: rotateend): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
+  @JSName("once")
   def once_rotateend(
     `type`: rotateend,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
+  @JSName("once")
+  def once_rotatestart(`type`: rotatestart): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]] = js.native
   @JSName("once")
   def once_rotatestart(
     `type`: rotatestart,
     listener: js.Function1[/* ev */ (MapboxEvent[js.UndefOr[MouseEvent | TouchEvent]]) & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_sourcedata(`type`: sourcedata): js.Promise[MapSourceDataEvent] = js.native
+  @JSName("once")
   def once_sourcedata(`type`: sourcedata, listener: js.Function1[/* ev */ MapSourceDataEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_sourcedataloading(`type`: sourcedataloading): js.Promise[MapSourceDataEvent] = js.native
   @JSName("once")
   def once_sourcedataloading(`type`: sourcedataloading, listener: js.Function1[/* ev */ MapSourceDataEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_styledata(`type`: styledata): js.Promise[MapStyleDataEvent] = js.native
+  @JSName("once")
   def once_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_styledataloading(`type`: styledataloading): js.Promise[MapStyleDataEvent] = js.native
   @JSName("once")
   def once_styledataloading(`type`: styledataloading, listener: js.Function1[/* ev */ MapStyleDataEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_tiledataloading(`type`: tiledataloading): js.Promise[MapDataEvent] = js.native
+  @JSName("once")
   def once_tiledataloading(`type`: tiledataloading, listener: js.Function1[/* ev */ MapDataEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_touchcancel(`type`: touchcancel): js.Promise[MapTouchEvent] = js.native
   @JSName("once")
   def once_touchcancel(
     `type`: touchcancel,
@@ -884,7 +1182,15 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_touchcancel(
+    `type`: touchcancel,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_touchend(`type`: touchend): js.Promise[MapTouchEvent] = js.native
   @JSName("once")
   def once_touchend(
     `type`: touchend,
@@ -892,9 +1198,19 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_touchend(
+    `type`: touchend,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_touchend(`type`: touchend, listener: js.Function1[/* ev */ MapTouchEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_touchmove(`type`: touchmove): js.Promise[MapTouchEvent] = js.native
+  @JSName("once")
   def once_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ MapTouchEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_touchstart(`type`: touchstart): js.Promise[MapTouchEvent] = js.native
   @JSName("once")
   def once_touchstart(
     `type`: touchstart,
@@ -902,13 +1218,27 @@ class Map () extends Evented {
     listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_touchstart(
+    `type`: touchstart,
+    layer: js.Array[String],
+    listener: js.Function1[/* ev */ MapLayerTouchEvent & EventData, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ MapTouchEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_webglcontextlost(`type`: webglcontextlost): js.Promise[MapContextEvent] = js.native
   @JSName("once")
   def once_webglcontextlost(`type`: webglcontextlost, listener: js.Function1[/* ev */ MapContextEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_webglcontextrestored(`type`: webglcontextrestored): js.Promise[MapContextEvent] = js.native
+  @JSName("once")
   def once_webglcontextrestored(`type`: webglcontextrestored, listener: js.Function1[/* ev */ MapContextEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
+  def once_wheel(`type`: wheel): js.Promise[MapWheelEvent] = js.native
+  @JSName("once")
   def once_wheel(`type`: wheel, listener: js.Function1[/* ev */ MapWheelEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_zoom(`type`: zoom): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]] = js.native
   @JSName("once")
   def once_zoom(
     `type`: zoom,
@@ -918,6 +1248,8 @@ class Map () extends Evented {
     ]
   ): this.type = js.native
   @JSName("once")
+  def once_zoomend(`type`: zoomend): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]] = js.native
+  @JSName("once")
   def once_zoomend(
     `type`: zoomend,
     listener: js.Function1[
@@ -925,6 +1257,8 @@ class Map () extends Evented {
       Unit
     ]
   ): this.type = js.native
+  @JSName("once")
+  def once_zoomstart(`type`: zoomstart): js.Promise[MapboxEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]] = js.native
   @JSName("once")
   def once_zoomstart(
     `type`: zoomstart,
@@ -988,6 +1322,15 @@ class Map () extends Evented {
   def querySourceFeatures(sourceID: String): js.Array[MapboxGeoJSONFeature] = js.native
   def querySourceFeatures(sourceID: String, parameters: sourceLayerstringundefine): js.Array[MapboxGeoJSONFeature] = js.native
   
+  /**
+    *
+    * @param lngLat The coordinate to query
+    * @param options Optional {ElevationQueryOptions}
+    * @returns The elevation in meters at mean sea level or null
+    */
+  def queryTerrainElevation(lngLat: LngLatLike): Double | Null = js.native
+  def queryTerrainElevation(lngLat: LngLatLike, options: ElevationQueryOptions): Double | Null = js.native
+  
   def remove(): Unit = js.native
   
   def removeControl(control: Control): this.type = js.native
@@ -998,7 +1341,7 @@ class Map () extends Evented {
   def removeFeatureState(target: MapboxGeoJSONFeature): Unit = js.native
   def removeFeatureState(target: MapboxGeoJSONFeature, key: String): Unit = js.native
   
-  def removeImage(name: String): this.type = js.native
+  def removeImage(name: String): Unit = js.native
   
   def removeLayer(id: String): this.type = js.native
   
@@ -1033,23 +1376,52 @@ class Map () extends Evented {
   def setCenter(center: LngLatLike): this.type = js.native
   def setCenter(center: LngLatLike, eventData: EventData): this.type = js.native
   
-  def setFeatureState(feature: FeatureIdentifier, state: StringDictionary[js.Any]): Unit = js.native
-  def setFeatureState(feature: MapboxGeoJSONFeature, state: StringDictionary[js.Any]): Unit = js.native
+  def setFeatureState(feature: FeatureIdentifier, state: StringDictionary[Any]): Unit = js.native
+  def setFeatureState(feature: MapboxGeoJSONFeature, state: StringDictionary[Any]): Unit = js.native
   
   def setFilter(layer: String): this.type = js.native
-  def setFilter(layer: String, filter: js.Array[js.Any]): this.type = js.native
-  def setFilter(layer: String, filter: js.Array[js.Any], options: FilterOptions): this.type = js.native
+  def setFilter(layer: String, filter: js.Array[Any]): this.type = js.native
+  def setFilter(layer: String, filter: js.Array[Any], options: FilterOptions): this.type = js.native
   def setFilter(layer: String, filter: Boolean): this.type = js.native
   def setFilter(layer: String, filter: Boolean, options: FilterOptions): this.type = js.native
   def setFilter(layer: String, filter: Null, options: FilterOptions): this.type = js.native
   def setFilter(layer: String, filter: Unit, options: FilterOptions): this.type = js.native
   
+  def setFog(fog: Fog): this.type = js.native
+  
+  /**
+    * FreeCameraOptions provides more direct access to the underlying camera entity.
+    * For backwards compatibility the state set using this API must be representable with
+    * `CameraOptions` as well. Parameters are clamped into a valid range or discarded as invalid
+    * if the conversion to the pitch and bearing presentation is ambiguous. For example orientation
+    * can be invalid if it leads to the camera being upside down, the quaternion has zero length,
+    * or the pitch is over the maximum pitch limit.
+    *
+    * @memberof Map#
+    * @param {FreeCameraOptions} options FreeCameraOptions object
+    * @param eventData Additional properties to be added to event objects of events triggered by this method.
+    * @fires movestart
+    * @fires zoomstart
+    * @fires pitchstart
+    * @fires rotate
+    * @fires move
+    * @fires zoom
+    * @fires pitch
+    * @fires moveend
+    * @fires zoomend
+    * @fires pitchend
+    * @returns {Map} `this`
+    */
+  def setFreeCameraOptions(options: FreeCameraOptions): this.type = js.native
+  def setFreeCameraOptions(options: FreeCameraOptions, eventData: js.Object): this.type = js.native
+  
   def setLayerZoomRange(layerId: String, minzoom: Double, maxzoom: Double): this.type = js.native
   
-  def setLayoutProperty(layer: String, name: String, value: js.Any): this.type = js.native
+  def setLayoutProperty(layer: String, name: String, value: Any): this.type = js.native
+  def setLayoutProperty(layer: String, name: String, value: Any, options: FilterOptions): this.type = js.native
   
-  def setLight(options: Light): this.type = js.native
-  def setLight(options: Light, lightOptions: js.Any): this.type = js.native
+  def setLight(light: Light): this.type = js.native
+  def setLight(light: Light, options: FilterOptions): this.type = js.native
   
   def setMaxBounds(): this.type = js.native
   def setMaxBounds(lnglatbounds: LngLatBoundsLike): this.type = js.native
@@ -1084,8 +1456,8 @@ class Map () extends Evented {
   def setPadding(padding: PaddingOptions): this.type = js.native
   def setPadding(padding: PaddingOptions, eventData: EventData): this.type = js.native
   
-  def setPaintProperty(layer: String, name: String, value: js.Any): this.type = js.native
-  def setPaintProperty(layer: String, name: String, value: js.Any, klass: String): this.type = js.native
+  def setPaintProperty(layer: String, name: String, value: Any): this.type = js.native
+  def setPaintProperty(layer: String, name: String, value: Any, options: FilterOptions): this.type = js.native
   
   def setPitch(pitch: Double): this.type = js.native
   def setPitch(pitch: Double, eventData: EventData): this.type = js.native
@@ -1097,6 +1469,25 @@ class Map () extends Evented {
   def setStyle(style: String, options: Diff): this.type = js.native
   def setStyle(style: Style): this.type = js.native
   def setStyle(style: Style, options: Diff): this.type = js.native
+  
+  /**
+    * Sets the terrain property of the style.
+    *
+    * @param terrain Terrain properties to set. Must conform to the [Mapbox Style Specification](https://www.mapbox.com/mapbox-gl-style-spec/#terrain).
+    * If `null` or `undefined` is provided, function removes terrain.
+    * @returns {Map} `this`
+    * @example
+    * map.addSource('mapbox-dem', {
+    *     'type': 'raster-dem',
+    *     'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+    *     'tileSize': 512,
+    *     'maxzoom': 14
+    * });
+    * // add the DEM source as a terrain layer with exaggerated height
+    * map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+    */
+  def setTerrain(): this.type = js.native
+  def setTerrain(terrain: TerrainSpecification): this.type = js.native
   
   def setZoom(zoom: Double): this.type = js.native
   def setZoom(zoom: Double, eventData: EventData): this.type = js.native
@@ -1114,6 +1505,8 @@ class Map () extends Evented {
     */
   var showPadding: Boolean = js.native
   
+  var showTerrainWireframe: Boolean = js.native
+  
   var showTileBoundaries: Boolean = js.native
   
   def snapToNorth(): this.type = js.native
@@ -1130,6 +1523,12 @@ class Map () extends Evented {
   def triggerRepaint(): Unit = js.native
   
   def unproject(point: PointLike): LngLat = js.native
+  
+  def updateImage(name: String, image: js.typedarray.ArrayBufferView): Unit = js.native
+  def updateImage(name: String, image: Data): Unit = js.native
+  def updateImage(name: String, image: HTMLImageElement): Unit = js.native
+  def updateImage(name: String, image: ImageBitmap): Unit = js.native
+  def updateImage(name: String, image: ImageData): Unit = js.native
   
   def zoomIn(): this.type = js.native
   def zoomIn(options: Unit, eventData: EventData): this.type = js.native

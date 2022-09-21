@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object chevronRightLargeSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ChevronRightLargeSmall", JSImport.Default)
   @js.native
-  val default: SFC[ChevronRightLargeSmallProps] = js.native
+  val default: FC[ChevronRightLargeSmallProps] = js.native
   
   trait ChevronRightLargeSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object ChevronRightLargeSmallProps {
     
@@ -29,14 +29,14 @@ object chevronRightLargeSmallMod extends Shortcut {
     
     extension [Self <: ChevronRightLargeSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[ChevronRightLargeSmallProps]
+  type _To = FC[ChevronRightLargeSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `chevronRightLargeSmallMod.foo` */
-  override def _to: SFC[ChevronRightLargeSmallProps] = default
+  override def _to: FC[ChevronRightLargeSmallProps] = default
 }

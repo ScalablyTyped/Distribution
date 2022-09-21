@@ -1,35 +1,42 @@
 package typings.youtube.YT
 
-import typings.youtube.youtubeNumbers.`-1`
-import typings.youtube.youtubeNumbers.`0`
-import typings.youtube.youtubeNumbers.`1`
-import typings.youtube.youtubeNumbers.`2`
-import typings.youtube.youtubeNumbers.`3`
-import typings.youtube.youtubeNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.youtube.youtubeNumbers.`-1`
-  - typings.youtube.youtubeNumbers.`0`
-  - typings.youtube.youtubeNumbers.`1`
-  - typings.youtube.youtubeNumbers.`2`
-  - typings.youtube.youtubeNumbers.`3`
-  - typings.youtube.youtubeNumbers.`5`
-*/
-trait PlayerState extends StObject
-object PlayerState {
+@js.native
+sealed trait PlayerState extends StObject
+@JSGlobal("YT.PlayerState")
+@js.native
+object PlayerState extends StObject {
   
-  inline def BUFFERING: `3` = 3.asInstanceOf[`3`]
+  @js.native
+  sealed trait BUFFERING
+    extends StObject
+       with PlayerState
   
-  inline def CUED: `5` = 5.asInstanceOf[`5`]
+  @js.native
+  sealed trait CUED
+    extends StObject
+       with PlayerState
   
-  inline def ENDED: `0` = 0.asInstanceOf[`0`]
+  @js.native
+  sealed trait ENDED
+    extends StObject
+       with PlayerState
   
-  inline def PAUSED: `2` = 2.asInstanceOf[`2`]
+  @js.native
+  sealed trait PAUSED
+    extends StObject
+       with PlayerState
   
-  inline def PLAYING: `1` = 1.asInstanceOf[`1`]
+  @js.native
+  sealed trait PLAYING
+    extends StObject
+       with PlayerState
   
-  inline def UNSTARTED: `-1` = -1.asInstanceOf[`-1`]
+  @js.native
+  sealed trait UNSTARTED
+    extends StObject
+       with PlayerState
 }

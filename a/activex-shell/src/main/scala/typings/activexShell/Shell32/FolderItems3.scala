@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FolderItems3 extends StObject {
   
   /** Get Application object */
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   /** Get count of items in the folder */
   val Count: Double = js.native
@@ -29,7 +29,7 @@ trait FolderItems3 extends StObject {
   
   /** Return the figure for the given index */
   def Item(): ShellFolderItem = js.native
-  def Item(index: js.Any): ShellFolderItem = js.native
+  def Item(index: Any): ShellFolderItem = js.native
   
   /* private */ @JSName("Shell32.FolderItems3_typekey")
   var Shell32DotFolderItems3_typekey: FolderItems3 = js.native

@@ -33,6 +33,6 @@ object ListTemplatesResponse {
     
     inline def setTemplatesMetadataUndefined: Self = StObject.set(x, "TemplatesMetadata", js.undefined)
     
-    inline def setTemplatesMetadataVarargs(value: TemplateMetadata*): Self = StObject.set(x, "TemplatesMetadata", js.Array(value :_*))
+    inline def setTemplatesMetadataVarargs(value: TemplateMetadata*): Self = StObject.set(x, "TemplatesMetadata", js.Array(value*))
   }
 }

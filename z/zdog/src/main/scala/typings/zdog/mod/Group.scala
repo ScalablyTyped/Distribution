@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Group")
 @js.native
-class Group () extends Anchor {
+open class Group () extends Anchor {
   def this(options: GroupOptions) = this()
   
   def copy(options: GroupOptions): Group = js.native

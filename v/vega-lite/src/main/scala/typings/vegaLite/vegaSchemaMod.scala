@@ -7,7 +7,7 @@ import typings.vegaLite.anon.Feature
 import typings.vegaLite.anon.Signal
 import typings.vegaLite.anon.VgValueRefteststringundef
 import typings.vegaLite.channeldefMod.Value
-import typings.vegaLite.exprMod.ExprOrSignalRef
+import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.sortMod.SortOrder
 import typings.vegaLite.vegaLiteNumbers.`1`
 import typings.vegaLite.vegaLiteStrings.cornerRadius
@@ -67,7 +67,7 @@ object vegaSchemaMod {
   @JSImport("vega-lite/build/src/vega.schema", "VG_MARK_CONFIGS")
   @js.native
   val VG_MARK_CONFIGS: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+    /* keyof vega-typings.vega-typings/types/spec/config.MarkConfig */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ Any
   ] = js.native
   
   /* Inlined vega-lite.vega-lite/build/src/util.Flag<vega.vega.Mark['type']> */
@@ -138,28 +138,27 @@ object vegaSchemaMod {
     inline def trail_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trail")(x.asInstanceOf[js.Any])
   }
   
-  inline def isDataRefDomain(domain: js.Any): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataRefDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean]
-  inline def isDataRefDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataRefDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean]
+  inline def isDataRefDomain(domain: Any | VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataRefDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean]
   
   inline def isDataRefUnionedDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleMultiDataRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataRefUnionedDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgScaleMultiDataRefWithSort */ Boolean]
   
   inline def isFieldRefUnionDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgMultiFieldsRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldRefUnionDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgMultiFieldsRefWithSort */ Boolean]
   
-  inline def isSignalRef(o: js.Any): /* is vega-typings.vega-typings/types/spec/signal.SignalRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignalRef")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/signal.SignalRef */ Boolean]
+  inline def isSignalRef(o: Any): /* is vega-typings.vega-typings/types/spec/signal.SignalRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignalRef")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/signal.SignalRef */ Boolean]
   
   inline def isVgRangeStep(range: VgRange): /* is vega-lite.vega-lite/build/src/vega.schema.VgRangeStep */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVgRangeStep")(range.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgRangeStep */ Boolean]
   
-  type MapExcludeAndKeepSignalAs[T, E, S /* <: ExprOrSignalRef */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type MapExcludeAndKeepSignalAs[T, E, S /* <: ExprRef | SignalRef */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: vega-typings.vega-typings/types/spec/signal.SignalRef extends T[P]? std.Exclude<T[P], E> | S : std.Exclude<T[P], E>}
-    */ typings.vegaLite.vegaLiteStrings.MapExcludeAndKeepSignalAs & TopLevel[js.Any]
+    */ typings.vegaLite.vegaLiteStrings.MapExcludeAndKeepSignalAs & TopLevel[Any]
   
-  type MapExcludeValueRefAndReplaceSignalWith[T, S /* <: ExprOrSignalRef */] = MapExcludeAndKeepSignalAs[T, ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef, S]
+  type MapExcludeValueRefAndReplaceSignalWith[T, S /* <: ExprRef | SignalRef */] = MapExcludeAndKeepSignalAs[T, ScaledValueRef[Any] | NumericValueRef | ColorValueRef, S]
   
   type MappedExclude[T, E] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: std.Exclude<T[P], E>}
     */ typings.vegaLite.vegaLiteStrings.MappedExclude & TopLevel[T]
   
-  type MappedExcludeValueRef[T] = MappedExclude[T, ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]
+  type MappedExcludeValueRef[T] = MappedExclude[T, ScaledValueRef[Any] | NumericValueRef | ColorValueRef]
   
   trait RowCol[T] extends StObject {
     
@@ -205,13 +204,13 @@ object vegaSchemaMod {
       
       inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      inline def setFieldVarargs(value: String*): Self = StObject.set(x, "field", js.Array(value :_*))
+      inline def setFieldVarargs(value: String*): Self = StObject.set(x, "field", js.Array(value*))
       
       inline def setOrder(value: SortOrder | js.Array[SortOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(value: SortOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: SortOrder*): Self = StObject.set(x, "order", js.Array(value*))
     }
   }
   
@@ -227,7 +226,7 @@ object vegaSchemaMod {
     
     var url: js.UndefOr[String] = js.undefined
     
-    var values: js.UndefOr[js.Any] = js.undefined
+    var values: js.UndefOr[Any] = js.undefined
   }
   object VgData {
     
@@ -252,13 +251,13 @@ object vegaSchemaMod {
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
@@ -583,25 +582,25 @@ object vegaSchemaMod {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setAlignVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "align", js.Array(value :_*))
+      inline def setAlignVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "align", js.Array(value*))
       
       inline def setAngle(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
       inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      inline def setAngleVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "angle", js.Array(value :_*))
+      inline def setAngleVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "angle", js.Array(value*))
       
       inline def setBaseline(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
       inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
-      inline def setBaselineVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "baseline", js.Array(value :_*))
+      inline def setBaselineVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "baseline", js.Array(value*))
       
       inline def setClip(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
       inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
-      inline def setClipVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "clip", js.Array(value :_*))
+      inline def setClipVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "clip", js.Array(value*))
       
       inline def setCornerRadius(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
@@ -609,71 +608,71 @@ object vegaSchemaMod {
       
       inline def setCornerRadiusBottomLeftUndefined: Self = StObject.set(x, "cornerRadiusBottomLeft", js.undefined)
       
-      inline def setCornerRadiusBottomLeftVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadiusBottomLeft", js.Array(value :_*))
+      inline def setCornerRadiusBottomLeftVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadiusBottomLeft", js.Array(value*))
       
       inline def setCornerRadiusBottomRight(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "cornerRadiusBottomRight", value.asInstanceOf[js.Any])
       
       inline def setCornerRadiusBottomRightUndefined: Self = StObject.set(x, "cornerRadiusBottomRight", js.undefined)
       
-      inline def setCornerRadiusBottomRightVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadiusBottomRight", js.Array(value :_*))
+      inline def setCornerRadiusBottomRightVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadiusBottomRight", js.Array(value*))
       
       inline def setCornerRadiusTopLeft(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "cornerRadiusTopLeft", value.asInstanceOf[js.Any])
       
       inline def setCornerRadiusTopLeftUndefined: Self = StObject.set(x, "cornerRadiusTopLeft", js.undefined)
       
-      inline def setCornerRadiusTopLeftVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadiusTopLeft", js.Array(value :_*))
+      inline def setCornerRadiusTopLeftVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadiusTopLeft", js.Array(value*))
       
       inline def setCornerRadiusTopRight(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "cornerRadiusTopRight", value.asInstanceOf[js.Any])
       
       inline def setCornerRadiusTopRightUndefined: Self = StObject.set(x, "cornerRadiusTopRight", js.undefined)
       
-      inline def setCornerRadiusTopRightVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadiusTopRight", js.Array(value :_*))
+      inline def setCornerRadiusTopRightVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadiusTopRight", js.Array(value*))
       
       inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
       
-      inline def setCornerRadiusVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadius", js.Array(value :_*))
+      inline def setCornerRadiusVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cornerRadius", js.Array(value*))
       
       inline def setCursor(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
       inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      inline def setCursorVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cursor", js.Array(value :_*))
+      inline def setCursorVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "cursor", js.Array(value*))
       
       inline def setDefined(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
       
       inline def setDefinedUndefined: Self = StObject.set(x, "defined", js.undefined)
       
-      inline def setDefinedVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "defined", js.Array(value :_*))
+      inline def setDefinedVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "defined", js.Array(value*))
       
       inline def setDir(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      inline def setDirVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "dir", js.Array(value :_*))
+      inline def setDirVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "dir", js.Array(value*))
       
       inline def setDx(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
       inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      inline def setDxVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "dx", js.Array(value :_*))
+      inline def setDxVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "dx", js.Array(value*))
       
       inline def setDy(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
       inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
-      inline def setDyVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "dy", js.Array(value :_*))
+      inline def setDyVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "dy", js.Array(value*))
       
       inline def setEllipsis(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
       inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
-      inline def setEllipsisVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "ellipsis", js.Array(value :_*))
+      inline def setEllipsisVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "ellipsis", js.Array(value*))
       
       inline def setEndAngle(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
       inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
       
-      inline def setEndAngleVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "endAngle", js.Array(value :_*))
+      inline def setEndAngleVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "endAngle", js.Array(value*))
       
       inline def setFill(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -681,11 +680,11 @@ object vegaSchemaMod {
       
       inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      inline def setFillOpacityVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fillOpacity", js.Array(value :_*))
+      inline def setFillOpacityVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fillOpacity", js.Array(value*))
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setFillVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fill", js.Array(value :_*))
+      inline def setFillVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fill", js.Array(value*))
       
       inline def setFont(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -693,113 +692,113 @@ object vegaSchemaMod {
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
       inline def setFontStyle(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
       inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      inline def setFontStyleVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
+      inline def setFontStyleVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fontStyle", js.Array(value*))
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      inline def setFontVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "font", js.Array(value :_*))
+      inline def setFontVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "font", js.Array(value*))
       
       inline def setFontWeight(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setHeight(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHref(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
       inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      inline def setHrefVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "href", js.Array(value :_*))
+      inline def setHrefVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "href", js.Array(value*))
       
       inline def setInnerRadius(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
       inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
       
-      inline def setInnerRadiusVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "innerRadius", js.Array(value :_*))
+      inline def setInnerRadiusVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "innerRadius", js.Array(value*))
       
       inline def setInterpolate(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       
       inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
       
-      inline def setInterpolateVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "interpolate", js.Array(value :_*))
+      inline def setInterpolateVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "interpolate", js.Array(value*))
       
       inline def setLimit(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
       inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      inline def setLimitVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "limit", js.Array(value :_*))
+      inline def setLimitVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "limit", js.Array(value*))
       
       inline def setOpacity(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "opacity", js.Array(value*))
       
       inline def setOrient(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
       inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
-      inline def setOrientVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "orient", js.Array(value :_*))
+      inline def setOrientVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "orient", js.Array(value*))
       
       inline def setOuterRadius(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
       
       inline def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
       
-      inline def setOuterRadiusVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "outerRadius", js.Array(value :_*))
+      inline def setOuterRadiusVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "outerRadius", js.Array(value*))
       
       inline def setPath(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRadius(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      inline def setRadiusVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "radius", js.Array(value :_*))
+      inline def setRadiusVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "radius", js.Array(value*))
       
       inline def setScaleX(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
       inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
       
-      inline def setScaleXVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "scaleX", js.Array(value :_*))
+      inline def setScaleXVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "scaleX", js.Array(value*))
       
       inline def setScaleY(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
       inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
       
-      inline def setScaleYVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "scaleY", js.Array(value :_*))
+      inline def setScaleYVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "scaleY", js.Array(value*))
       
       inline def setShape(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setShapeVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "shape", js.Array(value*))
       
       inline def setSize(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setStartAngle(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
       inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
       
-      inline def setStartAngleVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "startAngle", js.Array(value :_*))
+      inline def setStartAngleVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "startAngle", js.Array(value*))
       
       inline def setStroke(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
@@ -807,7 +806,7 @@ object vegaSchemaMod {
       
       inline def setStrokeCapUndefined: Self = StObject.set(x, "strokeCap", js.undefined)
       
-      inline def setStrokeCapVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeCap", js.Array(value :_*))
+      inline def setStrokeCapVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeCap", js.Array(value*))
       
       inline def setStrokeDash(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
       
@@ -815,87 +814,87 @@ object vegaSchemaMod {
       
       inline def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
       
-      inline def setStrokeDashOffsetVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeDashOffset", js.Array(value :_*))
+      inline def setStrokeDashOffsetVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeDashOffset", js.Array(value*))
       
       inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
       
-      inline def setStrokeDashVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+      inline def setStrokeDashVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeDash", js.Array(value*))
       
       inline def setStrokeForeground(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "strokeForeground", value.asInstanceOf[js.Any])
       
       inline def setStrokeForegroundUndefined: Self = StObject.set(x, "strokeForeground", js.undefined)
       
-      inline def setStrokeForegroundVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeForeground", js.Array(value :_*))
+      inline def setStrokeForegroundVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeForeground", js.Array(value*))
       
       inline def setStrokeJoin(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
       
       inline def setStrokeJoinUndefined: Self = StObject.set(x, "strokeJoin", js.undefined)
       
-      inline def setStrokeJoinVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeJoin", js.Array(value :_*))
+      inline def setStrokeJoinVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeJoin", js.Array(value*))
       
       inline def setStrokeMiterLimit(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
       
       inline def setStrokeMiterLimitUndefined: Self = StObject.set(x, "strokeMiterLimit", js.undefined)
       
-      inline def setStrokeMiterLimitVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeMiterLimit", js.Array(value :_*))
+      inline def setStrokeMiterLimitVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeMiterLimit", js.Array(value*))
       
       inline def setStrokeOffset(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "strokeOffset", value.asInstanceOf[js.Any])
       
       inline def setStrokeOffsetUndefined: Self = StObject.set(x, "strokeOffset", js.undefined)
       
-      inline def setStrokeOffsetVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeOffset", js.Array(value :_*))
+      inline def setStrokeOffsetVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeOffset", js.Array(value*))
       
       inline def setStrokeOpacity(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
       inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
       
-      inline def setStrokeOpacityVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeOpacity", js.Array(value :_*))
+      inline def setStrokeOpacityVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeOpacity", js.Array(value*))
       
       inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      inline def setStrokeVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "stroke", js.Array(value :_*))
+      inline def setStrokeVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "stroke", js.Array(value*))
       
       inline def setStrokeWidth(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
       inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      inline def setStrokeWidthVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeWidth", js.Array(value :_*))
+      inline def setStrokeWidthVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "strokeWidth", js.Array(value*))
       
       inline def setTension(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
       
       inline def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
       
-      inline def setTensionVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "tension", js.Array(value :_*))
+      inline def setTensionVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "tension", js.Array(value*))
       
       inline def setText(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTextVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "text", js.Array(value*))
       
       inline def setTheta(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
       
       inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
       
-      inline def setThetaVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "theta", js.Array(value :_*))
+      inline def setThetaVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "theta", js.Array(value*))
       
       inline def setTooltip(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      inline def setTooltipVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "tooltip", js.Array(value :_*))
+      inline def setTooltipVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "tooltip", js.Array(value*))
       
       inline def setUrl(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setUrlVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "url", js.Array(value*))
       
       inline def setWidth(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "width", js.Array(value*))
       
       inline def setX(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -903,17 +902,17 @@ object vegaSchemaMod {
       
       inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
       
-      inline def setX2Varargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "x2", js.Array(value :_*))
+      inline def setX2Varargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "x2", js.Array(value*))
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setXVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "x", js.Array(value :_*))
+      inline def setXVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "x", js.Array(value*))
       
       inline def setXc(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "xc", value.asInstanceOf[js.Any])
       
       inline def setXcUndefined: Self = StObject.set(x, "xc", js.undefined)
       
-      inline def setXcVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "xc", js.Array(value :_*))
+      inline def setXcVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "xc", js.Array(value*))
       
       inline def setY(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
@@ -921,17 +920,17 @@ object vegaSchemaMod {
       
       inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
       
-      inline def setY2Varargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "y2", js.Array(value :_*))
+      inline def setY2Varargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "y2", js.Array(value*))
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      inline def setYVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "y", js.Array(value :_*))
+      inline def setYVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "y", js.Array(value*))
       
       inline def setYc(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "yc", value.asInstanceOf[js.Any])
       
       inline def setYcUndefined: Self = StObject.set(x, "yc", js.undefined)
       
-      inline def setYcVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "yc", js.Array(value :_*))
+      inline def setYcVarargs(value: VgValueRefteststringundef*): Self = StObject.set(x, "yc", js.Array(value*))
     }
   }
   
@@ -961,25 +960,25 @@ object vegaSchemaMod {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value :_*))
+      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value*))
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setGroupby(value: js.Array[String]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
       
       inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
       
-      inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+      inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value*))
       
       inline def setOps(value: js.Array[AggregateOp]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
       
       inline def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
       
-      inline def setOpsVarargs(value: AggregateOp*): Self = StObject.set(x, "ops", js.Array(value :_*))
+      inline def setOpsVarargs(value: AggregateOp*): Self = StObject.set(x, "ops", js.Array(value*))
       
       inline def setType(value: joinaggregate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -1052,7 +1051,7 @@ object vegaSchemaMod {
     }
   }
   
-  type VgMarkGroup = js.Any
+  type VgMarkGroup = Any
   
   trait VgMultiFieldsRefWithSort
     extends StObject
@@ -1122,7 +1121,7 @@ object vegaSchemaMod {
     
     var domainMin: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domainRaw: js.UndefOr[Null | js.Array[js.Any] | SignalRef] = js.undefined
+    var domainRaw: js.UndefOr[Null | js.Array[Any] | SignalRef] = js.undefined
     
     var exponent: js.UndefOr[Double | SignalRef] = js.undefined
     
@@ -1169,7 +1168,7 @@ object vegaSchemaMod {
       
       inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
       
-      inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
+      inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value*))
       
       inline def setClamp(value: Boolean | SignalRef): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
@@ -1197,17 +1196,17 @@ object vegaSchemaMod {
       
       inline def setDomainMinUndefined: Self = StObject.set(x, "domainMin", js.undefined)
       
-      inline def setDomainRaw(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "domainRaw", value.asInstanceOf[js.Any])
+      inline def setDomainRaw(value: js.Array[Any] | SignalRef): Self = StObject.set(x, "domainRaw", value.asInstanceOf[js.Any])
       
       inline def setDomainRawNull: Self = StObject.set(x, "domainRaw", null)
       
       inline def setDomainRawUndefined: Self = StObject.set(x, "domainRaw", js.undefined)
       
-      inline def setDomainRawVarargs(value: js.Any*): Self = StObject.set(x, "domainRaw", js.Array(value :_*))
+      inline def setDomainRawVarargs(value: Any*): Self = StObject.set(x, "domainRaw", js.Array(value*))
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setDomainVarargs(value: (Null | String | Double | Boolean | SignalRef)*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: (Null | String | Double | Boolean | SignalRef)*): Self = StObject.set(x, "domain", js.Array(value*))
       
       inline def setExponent(value: Double | SignalRef): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
       
@@ -1239,7 +1238,7 @@ object vegaSchemaMod {
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      inline def setRangeVarargs(value: (Boolean | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: (Boolean | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "range", js.Array(value*))
       
       inline def setReverse(value: Boolean | SignalRef): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -1285,22 +1284,22 @@ object vegaSchemaMod {
        with ScaleMultiDataRef {
     
     @JSName("fields")
-    var fields_VgScaleMultiDataRefWithSort: js.Array[js.Array[js.Any] | VgScaleDataRefWithSort | SignalRef]
+    var fields_VgScaleMultiDataRefWithSort: js.Array[js.Array[Any] | VgScaleDataRefWithSort | SignalRef]
     
     var sort: js.UndefOr[UnionSortField] = js.undefined
   }
   object VgScaleMultiDataRefWithSort {
     
-    inline def apply(fields: js.Array[js.Array[js.Any] | VgScaleDataRefWithSort | SignalRef]): VgScaleMultiDataRefWithSort = {
+    inline def apply(fields: js.Array[js.Array[Any] | VgScaleDataRefWithSort | SignalRef]): VgScaleMultiDataRefWithSort = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[VgScaleMultiDataRefWithSort]
     }
     
     extension [Self <: VgScaleMultiDataRefWithSort](x: Self) {
       
-      inline def setFields(value: js.Array[js.Array[js.Any] | VgScaleDataRefWithSort | SignalRef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[js.Array[Any] | VgScaleDataRefWithSort | SignalRef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(value: (js.Array[js.Any] | VgScaleDataRefWithSort | SignalRef)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: (js.Array[Any] | VgScaleDataRefWithSort | SignalRef)*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setSort(value: UnionSortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
@@ -1324,7 +1323,7 @@ object vegaSchemaMod {
     
     var test: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Value[Null]] = js.undefined
+    var value: js.UndefOr[Value[scala.Nothing]] = js.undefined
   }
   object VgValueRef {
     
@@ -1363,13 +1362,13 @@ object vegaSchemaMod {
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      inline def setValue(value: Value[Null]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value[scala.Nothing]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

@@ -34,7 +34,7 @@ trait IconView extends StObject {
   /* private */ @JSName("Outlook.IconView_typekey")
   var OutlookDotIconView_typekey: IconView
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(): Unit
   
@@ -68,7 +68,7 @@ object IconView {
     LockUserChanges: Boolean,
     Name: String,
     OutlookDotIconView_typekey: IconView,
-    Parent: js.Any,
+    Parent: Any,
     Reset: () => Unit,
     Save: () => Unit,
     SaveOption: OlViewSaveOption,
@@ -111,7 +111,7 @@ object IconView {
     
     inline def setOutlookDotIconView_typekey(value: IconView): Self = StObject.set(x, "Outlook.IconView_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     

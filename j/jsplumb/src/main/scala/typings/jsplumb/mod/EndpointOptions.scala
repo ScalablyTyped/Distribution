@@ -61,7 +61,7 @@ trait EndpointOptions extends StObject {
   var paintStyle: js.UndefOr[PaintStyle] = js.undefined
   
   //= false
-  var parameters: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var parameters: js.UndefOr[Record[String, Any]] = js.undefined
   
   //= false
   var reattach: js.UndefOr[Boolean] = js.undefined
@@ -87,7 +87,7 @@ object EndpointOptions {
     
     inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "anchor", js.Array(value :_*))
+    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "anchor", js.Array(value*))
     
     inline def setConnectionType(value: String): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object EndpointOptions {
     
     inline def setConnectorOverlaysUndefined: Self = StObject.set(x, "connectorOverlays", js.undefined)
     
-    inline def setConnectorOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "connectorOverlays", js.Array(value :_*))
+    inline def setConnectorOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "connectorOverlays", js.Array(value*))
     
     inline def setConnectorStyle(value: PaintStyle): Self = StObject.set(x, "connectorStyle", value.asInstanceOf[js.Any])
     
@@ -139,7 +139,7 @@ object EndpointOptions {
     
     inline def setDragProxyUndefined: Self = StObject.set(x, "dragProxy", js.undefined)
     
-    inline def setDragProxyVarargs(value: String*): Self = StObject.set(x, "dragProxy", js.Array(value :_*))
+    inline def setDragProxyVarargs(value: String*): Self = StObject.set(x, "dragProxy", js.Array(value*))
     
     inline def setDropOptions(value: DropOptions): Self = StObject.set(x, "dropOptions", value.asInstanceOf[js.Any])
     
@@ -179,13 +179,13 @@ object EndpointOptions {
     
     inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
-    inline def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+    inline def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value*))
     
     inline def setPaintStyle(value: PaintStyle): Self = StObject.set(x, "paintStyle", value.asInstanceOf[js.Any])
     
     inline def setPaintStyleUndefined: Self = StObject.set(x, "paintStyle", js.undefined)
     
-    inline def setParameters(value: Record[String, js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Record[String, Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     

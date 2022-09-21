@@ -1,29 +1,28 @@
 package typings.xregexp.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This is an element in the `XRegExpMatchChainArray` that also specifies a specific back reference.
+  * An element in a `MatchChainArray` that specifies a regex and a backreference to pass forward.
   */
 trait ChainArrayElement extends StObject {
   
   /**
-    * The specific backreference.
+    * The named or numbered backreference to pass forward.
     */
   var backref: Double | String
   
   /**
-    * The `RegExp` to use.
+    * The regex to use.
     */
-  var regexp: RegExp
+  var regex: js.RegExp
 }
 object ChainArrayElement {
   
-  inline def apply(backref: Double | String, regexp: RegExp): ChainArrayElement = {
-    val __obj = js.Dynamic.literal(backref = backref.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any])
+  inline def apply(backref: Double | String, regex: js.RegExp): ChainArrayElement = {
+    val __obj = js.Dynamic.literal(backref = backref.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChainArrayElement]
   }
   
@@ -31,6 +30,6 @@ object ChainArrayElement {
     
     inline def setBackref(value: Double | String): Self = StObject.set(x, "backref", value.asInstanceOf[js.Any])
     
-    inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
   }
 }

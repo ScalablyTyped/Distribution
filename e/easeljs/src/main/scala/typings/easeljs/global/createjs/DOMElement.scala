@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.DOMElement")
 @js.native
-class DOMElement protected ()
+open class DOMElement protected ()
   extends StObject
      with typings.easeljs.createjs.DOMElement {
   def this(htmlElement: HTMLElement) = this()

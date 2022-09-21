@@ -1,6 +1,5 @@
 package typings.swig
 
-import typings.std.Error
 import typings.swig.anon.Typeofloaders
 import typings.swig.mod.lexer.TYPES
 import typings.swig.mod.parser.ParseReturn
@@ -16,20 +15,20 @@ object mod {
   
   @JSImport("swig", "Swig")
   @js.native
-  class Swig () extends StObject {
+  open class Swig () extends StObject {
     def this(options: SwigOptions) = this()
     
-    def compile(source: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = js.native
-    def compile(source: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = js.native
+    def compile(source: String): js.Function1[/* locals */ js.UndefOr[Any], String] = js.native
+    def compile(source: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[Any], String] = js.native
     
-    def compileFile(pathname: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = js.native
-    def compileFile(pathname: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = js.native
+    def compileFile(pathname: String): js.Function1[/* locals */ js.UndefOr[Any], String] = js.native
+    def compileFile(pathname: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[Any], String] = js.native
     def compileFile(
       pathname: String,
       options: SwigOptions,
       cb: js.Function2[
-          /* err */ Error, 
-          /* compiledRender */ js.Function1[/* locals */ js.UndefOr[js.Any], String], 
+          /* err */ js.Error, 
+          /* compiledRender */ js.Function1[/* locals */ js.UndefOr[Any], String], 
           Unit
         ]
     ): Unit = js.native
@@ -39,26 +38,26 @@ object mod {
     var loaders: Typeofloaders = js.native
     
     def parseFile(pathName: String): ParseReturn = js.native
-    def parseFile(pathName: String, options: js.Any): ParseReturn = js.native
+    def parseFile(pathName: String, options: Any): ParseReturn = js.native
     
-    def precompile(source: String): js.Any = js.native
-    def precompile(source: String, options: SwigOptions): js.Any = js.native
+    def precompile(source: String): Any = js.native
+    def precompile(source: String, options: SwigOptions): Any = js.native
     
     def render(source: String): String = js.native
     def render(source: String, options: SwigOptions): String = js.native
     
     def renderFile(pathName: String): String = js.native
-    def renderFile(pathName: String, locals: js.Any): String = js.native
-    def renderFile(pathName: String, locals: js.Any, cb: js.Function2[/* err */ Error, /* output */ String, Unit]): Unit = js.native
+    def renderFile(pathName: String, locals: Any): String = js.native
+    def renderFile(pathName: String, locals: Any, cb: js.Function2[/* err */ js.Error, /* output */ String, Unit]): Unit = js.native
     
     def run(templateFn: js.Function): String = js.native
-    def run(templateFn: js.Function, locals: js.Any): String = js.native
-    def run(templateFn: js.Function, locals: js.Any, filePath: String): String = js.native
+    def run(templateFn: js.Function, locals: Any): String = js.native
+    def run(templateFn: js.Function, locals: Any, filePath: String): String = js.native
     def run(templateFn: js.Function, locals: Unit, filePath: String): String = js.native
     
-    def setExtension(name: String, `object`: js.Any): Unit = js.native
+    def setExtension(name: String, `object`: Any): Unit = js.native
     
-    def setFilter(name: String, method: js.Function2[/* input */ js.Any, /* repeated */ js.Any, String]): Unit = js.native
+    def setFilter(name: String, method: js.Function2[/* input */ Any, /* repeated */ Any, String]): Unit = js.native
     
     def setTag(
       name: String,
@@ -67,7 +66,7 @@ object mod {
           /* line */ js.UndefOr[String], 
           /* parser */ js.UndefOr[js.Object], 
           /* types */ js.UndefOr[TYPES], 
-          /* stack */ js.UndefOr[js.Any], 
+          /* stack */ js.UndefOr[Any], 
           /* opts */ js.UndefOr[js.Object], 
           /* swig */ js.UndefOr[this.type], 
           Boolean
@@ -76,16 +75,16 @@ object mod {
           /* compiler */ js.UndefOr[
             js.Function4[
               /* content */ js.UndefOr[String], 
-              /* parents */ js.UndefOr[js.Any], 
-              /* options */ js.UndefOr[js.Any], 
+              /* parents */ js.UndefOr[Any], 
+              /* options */ js.UndefOr[Any], 
               /* blockName */ js.UndefOr[String], 
               String
             ]
           ], 
-          /* args */ js.UndefOr[js.Array[js.Any]], 
+          /* args */ js.UndefOr[js.Array[Any]], 
           /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* parents */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* blockName */ js.UndefOr[String], 
           String
         ]
@@ -97,7 +96,7 @@ object mod {
           /* line */ js.UndefOr[String], 
           /* parser */ js.UndefOr[js.Object], 
           /* types */ js.UndefOr[TYPES], 
-          /* stack */ js.UndefOr[js.Any], 
+          /* stack */ js.UndefOr[Any], 
           /* opts */ js.UndefOr[js.Object], 
           /* swig */ js.UndefOr[this.type], 
           Boolean
@@ -106,16 +105,16 @@ object mod {
           /* compiler */ js.UndefOr[
             js.Function4[
               /* content */ js.UndefOr[String], 
-              /* parents */ js.UndefOr[js.Any], 
-              /* options */ js.UndefOr[js.Any], 
+              /* parents */ js.UndefOr[Any], 
+              /* options */ js.UndefOr[Any], 
               /* blockName */ js.UndefOr[String], 
               String
             ]
           ], 
-          /* args */ js.UndefOr[js.Array[js.Any]], 
+          /* args */ js.UndefOr[js.Array[Any]], 
           /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* parents */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* blockName */ js.UndefOr[String], 
           String
         ],
@@ -128,7 +127,7 @@ object mod {
           /* line */ js.UndefOr[String], 
           /* parser */ js.UndefOr[js.Object], 
           /* types */ js.UndefOr[TYPES], 
-          /* stack */ js.UndefOr[js.Any], 
+          /* stack */ js.UndefOr[Any], 
           /* opts */ js.UndefOr[js.Object], 
           /* swig */ js.UndefOr[this.type], 
           Boolean
@@ -137,16 +136,16 @@ object mod {
           /* compiler */ js.UndefOr[
             js.Function4[
               /* content */ js.UndefOr[String], 
-              /* parents */ js.UndefOr[js.Any], 
-              /* options */ js.UndefOr[js.Any], 
+              /* parents */ js.UndefOr[Any], 
+              /* options */ js.UndefOr[Any], 
               /* blockName */ js.UndefOr[String], 
               String
             ]
           ], 
-          /* args */ js.UndefOr[js.Array[js.Any]], 
+          /* args */ js.UndefOr[js.Array[Any]], 
           /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* parents */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* blockName */ js.UndefOr[String], 
           String
         ],
@@ -160,7 +159,7 @@ object mod {
           /* line */ js.UndefOr[String], 
           /* parser */ js.UndefOr[js.Object], 
           /* types */ js.UndefOr[TYPES], 
-          /* stack */ js.UndefOr[js.Any], 
+          /* stack */ js.UndefOr[Any], 
           /* opts */ js.UndefOr[js.Object], 
           /* swig */ js.UndefOr[this.type], 
           Boolean
@@ -169,16 +168,16 @@ object mod {
           /* compiler */ js.UndefOr[
             js.Function4[
               /* content */ js.UndefOr[String], 
-              /* parents */ js.UndefOr[js.Any], 
-              /* options */ js.UndefOr[js.Any], 
+              /* parents */ js.UndefOr[Any], 
+              /* options */ js.UndefOr[Any], 
               /* blockName */ js.UndefOr[String], 
               String
             ]
           ], 
-          /* args */ js.UndefOr[js.Array[js.Any]], 
+          /* args */ js.UndefOr[js.Array[Any]], 
           /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* parents */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* blockName */ js.UndefOr[String], 
           String
         ],
@@ -187,17 +186,17 @@ object mod {
     ): Unit = js.native
   }
   
-  inline def compile(source: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
-  inline def compile(source: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  inline def compile(source: String): js.Function1[/* locals */ js.UndefOr[Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[Any], String]]
+  inline def compile(source: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[Any], String]]
   
-  inline def compileFile(pathname: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
-  inline def compileFile(pathname: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  inline def compileFile(pathname: String): js.Function1[/* locals */ js.UndefOr[Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[Any], String]]
+  inline def compileFile(pathname: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[Any], String]]
   inline def compileFile(
     pathname: String,
     options: SwigOptions,
     cb: js.Function2[
-      /* err */ Error, 
-      /* compiledRender */ js.Function1[/* locals */ js.UndefOr[js.Any], String], 
+      /* err */ js.Error, 
+      /* compiledRender */ js.Function1[/* locals */ js.UndefOr[Any], String], 
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -422,35 +421,35 @@ object mod {
     inline def fs(basepath: String, encoding: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
     inline def fs(basepath: Unit, encoding: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
     
-    inline def memory(mapping: js.Any): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any]).asInstanceOf[TemplateLoader]
-    inline def memory(mapping: js.Any, basepath: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any], basepath.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
+    inline def memory(mapping: Any): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any]).asInstanceOf[TemplateLoader]
+    inline def memory(mapping: Any, basepath: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any], basepath.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
   }
   
   inline def parseFile(pathName: String): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
-  inline def parseFile(pathName: String, options: js.Any): ParseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseReturn]
+  inline def parseFile(pathName: String, options: Any): ParseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseReturn]
   
-  inline def precompile(source: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def precompile(source: String, options: SwigOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def precompile(source: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def precompile(source: String, options: SwigOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def render(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(source.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def render(source: String, options: SwigOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def renderFile(pathName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def renderFile(pathName: String, locals: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def renderFile(pathName: String, locals: js.Any, cb: js.Function2[/* err */ Error, /* output */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderFile(pathName: String, locals: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def renderFile(pathName: String, locals: Any, cb: js.Function2[/* err */ js.Error, /* output */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def run(templateFn: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def run(templateFn: js.Function, locals: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def run(templateFn: js.Function, locals: js.Any, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def run(templateFn: js.Function, locals: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def run(templateFn: js.Function, locals: Any, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def run(templateFn: js.Function, locals: Unit, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def setDefaultTZOffset(offset: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultTZOffset")(offset.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setDefaults(options: SwigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setExtension(name: String, `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtension")(name.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setExtension(name: String, `object`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtension")(name.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setFilter(name: String, method: js.Function2[/* input */ js.Any, /* repeated */ js.Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFilter")(name.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setFilter(name: String, method: js.Function2[/* input */ Any, /* repeated */ Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFilter")(name.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setTag(
     name: String,
@@ -459,7 +458,7 @@ object mod {
       /* line */ js.UndefOr[String], 
       /* parser */ js.UndefOr[js.Object], 
       /* types */ js.UndefOr[TYPES], 
-      /* stack */ js.UndefOr[js.Any], 
+      /* stack */ js.UndefOr[Any], 
       /* opts */ js.UndefOr[js.Object], 
       /* swig */ js.UndefOr[Swig], 
       Boolean
@@ -468,16 +467,16 @@ object mod {
       /* compiler */ js.UndefOr[
         js.Function4[
           /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* parents */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* blockName */ js.UndefOr[String], 
           String
         ]
       ], 
-      /* args */ js.UndefOr[js.Array[js.Any]], 
+      /* args */ js.UndefOr[js.Array[Any]], 
       /* content */ js.UndefOr[String], 
-      /* parents */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* parents */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       /* blockName */ js.UndefOr[String], 
       String
     ]
@@ -489,7 +488,7 @@ object mod {
       /* line */ js.UndefOr[String], 
       /* parser */ js.UndefOr[js.Object], 
       /* types */ js.UndefOr[TYPES], 
-      /* stack */ js.UndefOr[js.Any], 
+      /* stack */ js.UndefOr[Any], 
       /* opts */ js.UndefOr[js.Object], 
       /* swig */ js.UndefOr[Swig], 
       Boolean
@@ -498,16 +497,16 @@ object mod {
       /* compiler */ js.UndefOr[
         js.Function4[
           /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* parents */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* blockName */ js.UndefOr[String], 
           String
         ]
       ], 
-      /* args */ js.UndefOr[js.Array[js.Any]], 
+      /* args */ js.UndefOr[js.Array[Any]], 
       /* content */ js.UndefOr[String], 
-      /* parents */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* parents */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       /* blockName */ js.UndefOr[String], 
       String
     ],
@@ -520,7 +519,7 @@ object mod {
       /* line */ js.UndefOr[String], 
       /* parser */ js.UndefOr[js.Object], 
       /* types */ js.UndefOr[TYPES], 
-      /* stack */ js.UndefOr[js.Any], 
+      /* stack */ js.UndefOr[Any], 
       /* opts */ js.UndefOr[js.Object], 
       /* swig */ js.UndefOr[Swig], 
       Boolean
@@ -529,16 +528,16 @@ object mod {
       /* compiler */ js.UndefOr[
         js.Function4[
           /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* parents */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* blockName */ js.UndefOr[String], 
           String
         ]
       ], 
-      /* args */ js.UndefOr[js.Array[js.Any]], 
+      /* args */ js.UndefOr[js.Array[Any]], 
       /* content */ js.UndefOr[String], 
-      /* parents */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* parents */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       /* blockName */ js.UndefOr[String], 
       String
     ],
@@ -552,7 +551,7 @@ object mod {
       /* line */ js.UndefOr[String], 
       /* parser */ js.UndefOr[js.Object], 
       /* types */ js.UndefOr[TYPES], 
-      /* stack */ js.UndefOr[js.Any], 
+      /* stack */ js.UndefOr[Any], 
       /* opts */ js.UndefOr[js.Object], 
       /* swig */ js.UndefOr[Swig], 
       Boolean
@@ -561,16 +560,16 @@ object mod {
       /* compiler */ js.UndefOr[
         js.Function4[
           /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
+          /* parents */ js.UndefOr[Any], 
+          /* options */ js.UndefOr[Any], 
           /* blockName */ js.UndefOr[String], 
           String
         ]
       ], 
-      /* args */ js.UndefOr[js.Array[js.Any]], 
+      /* args */ js.UndefOr[js.Array[Any]], 
       /* content */ js.UndefOr[String], 
-      /* parents */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* parents */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       /* blockName */ js.UndefOr[String], 
       String
     ],
@@ -587,13 +586,13 @@ object mod {
     
     var autoescape: js.UndefOr[Boolean] = js.undefined
     
-    var cache: js.UndefOr[js.Any] = js.undefined
+    var cache: js.UndefOr[Any] = js.undefined
     
     var cmtControls: js.UndefOr[js.Array[String]] = js.undefined
     
     var loader: js.UndefOr[TemplateLoader] = js.undefined
     
-    var locals: js.UndefOr[js.Any] = js.undefined
+    var locals: js.UndefOr[Any] = js.undefined
     
     var tagControls: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -612,7 +611,7 @@ object mod {
       
       inline def setAutoescapeUndefined: Self = StObject.set(x, "autoescape", js.undefined)
       
-      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
@@ -620,13 +619,13 @@ object mod {
       
       inline def setCmtControlsUndefined: Self = StObject.set(x, "cmtControls", js.undefined)
       
-      inline def setCmtControlsVarargs(value: String*): Self = StObject.set(x, "cmtControls", js.Array(value :_*))
+      inline def setCmtControlsVarargs(value: String*): Self = StObject.set(x, "cmtControls", js.Array(value*))
       
       inline def setLoader(value: TemplateLoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
-      inline def setLocals(value: js.Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
       inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
@@ -634,21 +633,21 @@ object mod {
       
       inline def setTagControlsUndefined: Self = StObject.set(x, "tagControls", js.undefined)
       
-      inline def setTagControlsVarargs(value: String*): Self = StObject.set(x, "tagControls", js.Array(value :_*))
+      inline def setTagControlsVarargs(value: String*): Self = StObject.set(x, "tagControls", js.Array(value*))
       
       inline def setVarControls(value: js.Array[String]): Self = StObject.set(x, "varControls", value.asInstanceOf[js.Any])
       
       inline def setVarControlsUndefined: Self = StObject.set(x, "varControls", js.undefined)
       
-      inline def setVarControlsVarargs(value: String*): Self = StObject.set(x, "varControls", js.Array(value :_*))
+      inline def setVarControlsVarargs(value: String*): Self = StObject.set(x, "varControls", js.Array(value*))
     }
   }
   
   @js.native
   trait TemplateLoader extends StObject {
     
-    def load(identifier: String): js.Any = js.native
-    def load(identifier: String, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def load(identifier: String): Any = js.native
+    def load(identifier: String, callback: js.Function2[/* err */ js.Error, /* data */ Any, Unit]): Unit = js.native
     @JSName("load")
     def load_Unit(identifier: String): Unit = js.native
     
@@ -659,32 +658,32 @@ object mod {
     
     trait ParseReturn extends StObject {
       
-      var blocks: js.Any
+      var blocks: Any
       
       var name: String
       
-      var parent: js.Any
+      var parent: Any
       
-      var tokens: js.Array[js.Any]
+      var tokens: js.Array[Any]
     }
     object ParseReturn {
       
-      inline def apply(blocks: js.Any, name: String, parent: js.Any, tokens: js.Array[js.Any]): ParseReturn = {
+      inline def apply(blocks: Any, name: String, parent: Any, tokens: js.Array[Any]): ParseReturn = {
         val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
         __obj.asInstanceOf[ParseReturn]
       }
       
       extension [Self <: ParseReturn](x: Self) {
         
-        inline def setBlocks(value: js.Any): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+        inline def setBlocks(value: Any): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        inline def setTokens(value: js.Array[js.Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+        inline def setTokens(value: js.Array[Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
         
-        inline def setTokensVarargs(value: js.Any*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+        inline def setTokensVarargs(value: Any*): Self = StObject.set(x, "tokens", js.Array(value*))
       }
     }
   }

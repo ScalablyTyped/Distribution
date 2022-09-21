@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartTrendlineLabelFormatData extends StObject {
   
   /**
-    *
     * Specifies the border format, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderData] = js.undefined
   
   /**
+    * Specifies the font attributes (such as font name, font size, and color) for a chart trendline label.
     *
-    * Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var font: js.UndefOr[ChartFontData] = js.undefined

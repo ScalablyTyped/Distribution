@@ -1,21 +1,26 @@
 organization := "org.scalablytyped"
 name := "nivo__bar"
-version := "0.62.0-6e3abc"
-scalaVersion := "2.13.3"
+version := "0.80.0-2bea23"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "nivo__axes" % "0.62.0-b82841",
-  "org.scalablytyped" %%% "nivo__colors" % "0.62.0-8dc7f5",
-  "org.scalablytyped" %%% "nivo__core" % "0.62.0-acc635",
-  "org.scalablytyped" %%% "nivo__legends" % "0.62.0-f60eea",
-  "org.scalablytyped" %%% "nivo__scales" % "0.62.0-55f48d",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-7b6cf2",
+  "org.scalablytyped" %%% "d3-color" % "3.1-dt-20220522Z-72e26c",
+  "org.scalablytyped" %%% "d3-path" % "3.0-dt-20220310Z-97e717",
+  "org.scalablytyped" %%% "d3-scale" % "4.0-dt-20220624Z-604817",
+  "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-3bff61",
+  "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-b48dde",
+  "org.scalablytyped" %%% "nivo__annotations" % "0.80.0-71e6f0",
+  "org.scalablytyped" %%% "nivo__axes" % "0.80.0-d386e7",
+  "org.scalablytyped" %%% "nivo__colors" % "0.80.0-5dd8a3",
+  "org.scalablytyped" %%% "nivo__core" % "0.80.0-a5599e",
+  "org.scalablytyped" %%% "nivo__legends" % "0.80.0-48a32e",
+  "org.scalablytyped" %%% "nivo__scales" % "0.80.0-c4437a",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-737217",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220913Z-bad9e4",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fce63f",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

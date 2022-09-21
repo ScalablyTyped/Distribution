@@ -15,14 +15,14 @@ object coreExceptionsMod {
   
   @JSImport("sip.js/lib/core/exceptions", "TransactionStateError")
   @js.native
-  class TransactionStateError ()
+  open class TransactionStateError ()
     extends typings.sipJs.transactionStateErrorMod.TransactionStateError {
     def this(message: String) = this()
   }
   
   @JSImport("sip.js/lib/core/exceptions", "TransportError")
   @js.native
-  class TransportError ()
+  open class TransportError ()
     extends typings.sipJs.transportErrorMod.TransportError {
     def this(message: String) = this()
   }

@@ -10,10 +10,10 @@ object phoneBluetoothSpeakerMod {
   
   @JSImport("material-ui/svg-icons/notification/phone-bluetooth-speaker", JSImport.Default)
   @js.native
-  class default () extends NotificationPhoneBluetoothSpeaker
+  open class default () extends NotificationPhoneBluetoothSpeaker
   
   @JSImport("material-ui/svg-icons/notification/phone-bluetooth-speaker", "NotificationPhoneBluetoothSpeaker")
   @js.native
-  class NotificationPhoneBluetoothSpeaker ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationPhoneBluetoothSpeaker ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

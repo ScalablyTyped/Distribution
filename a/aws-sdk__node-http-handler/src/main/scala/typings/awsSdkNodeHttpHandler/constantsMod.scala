@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constantsMod {
   
-  @JSImport("@aws-sdk/node-http-handler/dist/cjs/constants", "NODEJS_TIMEOUT_ERROR_CODES")
+  @JSImport("@aws-sdk/node-http-handler/dist-types/constants", "NODEJS_TIMEOUT_ERROR_CODES")
   @js.native
   val NODEJS_TIMEOUT_ERROR_CODES: js.Array[String] = js.native
 }

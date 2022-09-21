@@ -3,9 +3,13 @@ package typings.antd
 import typings.antd.checkboxCheckboxMod.AbstractCheckboxProps
 import typings.antd.checkboxGroupMod.AbstractCheckboxGroupProps
 import typings.antd.configProviderSizeContextMod.SizeType
+import typings.antd.disabledContextMod.DisabledType
+import typings.react.mod.FocusEvent
+import typings.react.mod.FocusEventHandler
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -88,11 +92,19 @@ object radioInterfaceMod {
     
     def onChange(e: RadioChangeEvent): Unit
     
-    var value: js.Any
+    /**
+      * Control the appearance for Radio to display as button or not
+      *
+      * @default 'default'
+      * @internal
+      */
+    var optionType: js.UndefOr[RadioGroupOptionType] = js.undefined
+    
+    var value: Any
   }
   object RadioGroupContextProps {
     
-    inline def apply(onChange: RadioChangeEvent => Unit, value: js.Any): RadioGroupContextProps = {
+    inline def apply(onChange: RadioChangeEvent => Unit, value: Any): RadioGroupContextProps = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioGroupContextProps]
     }
@@ -109,7 +121,11 @@ object radioInterfaceMod {
       
       inline def setOnChange(value: RadioChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setOptionType(value: RadioGroupOptionType): Self = StObject.set(x, "optionType", value.asInstanceOf[js.Any])
+      
+      inline def setOptionTypeUndefined: Self = StObject.set(x, "optionType", js.undefined)
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,13 +149,20 @@ object radioInterfaceMod {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
+    
+    @JSName("disabled")
+    var disabled_RadioGroupProps: js.UndefOr[DisabledType] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
+    
     var onChange: js.UndefOr[js.Function1[/* e */ RadioChangeEvent, Unit]] = js.undefined
+    
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
     var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -149,7 +172,7 @@ object radioInterfaceMod {
     
     var size: js.UndefOr[SizeType] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object RadioGroupProps {
     
@@ -168,9 +191,13 @@ object radioInterfaceMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      
+      inline def setDisabled(value: DisabledType): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -180,9 +207,17 @@ object radioInterfaceMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      
       inline def setOnChange(value: /* e */ RadioChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       inline def setOnMouseEnter(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
@@ -200,11 +235,13 @@ object radioInterfaceMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
+  
+  type RadioOptionTypeContextProps = RadioGroupOptionType
   
   type RadioProps = AbstractCheckboxProps[RadioChangeEvent]
 }

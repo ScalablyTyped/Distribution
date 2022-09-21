@@ -27,6 +27,6 @@ object GitCommitToCreate {
     
     inline def setPathActions(value: js.Array[GitPathAction]): Self = StObject.set(x, "pathActions", value.asInstanceOf[js.Any])
     
-    inline def setPathActionsVarargs(value: GitPathAction*): Self = StObject.set(x, "pathActions", js.Array(value :_*))
+    inline def setPathActionsVarargs(value: GitPathAction*): Self = StObject.set(x, "pathActions", js.Array(value*))
   }
 }

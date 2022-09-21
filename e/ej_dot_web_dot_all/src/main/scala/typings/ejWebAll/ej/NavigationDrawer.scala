@@ -174,7 +174,7 @@ object NavigationDrawer {
     
     /** It specifies the data as an object, will be passed in the query string.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** It specifies the type of data that you're expecting back from the response.
       */
@@ -205,7 +205,7 @@ object NavigationDrawer {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
@@ -360,11 +360,11 @@ object NavigationDrawer {
     /** Specifies the listview items as an array of object.
       * @Default {[]}
       */
-    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var items: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets all the properties of listview to render in navigation drawer
       */
-    var listViewSettings: js.UndefOr[js.Any] = js.undefined
+    var listViewSettings: js.UndefOr[Any] = js.undefined
     
     /** Event triggers when the control open.
       */
@@ -442,13 +442,13 @@ object NavigationDrawer {
       
       inline def setIsPaneOpenUndefined: Self = StObject.set(x, "isPaneOpen", js.undefined)
       
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setListViewSettings(value: js.Any): Self = StObject.set(x, "listViewSettings", value.asInstanceOf[js.Any])
+      inline def setListViewSettings(value: Any): Self = StObject.set(x, "listViewSettings", value.asInstanceOf[js.Any])
       
       inline def setListViewSettingsUndefined: Self = StObject.set(x, "listViewSettings", js.undefined)
       

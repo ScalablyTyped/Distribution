@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An action executed during setup.
-  */
 trait SchemaSetupAction extends StObject {
   
   /**
@@ -15,7 +12,7 @@ trait SchemaSetupAction extends StObject {
   var description: js.UndefOr[SchemaUserFacingMessage] = js.undefined
   
   /**
-    * An action to launch an app.
+    * An action to launch an app. The app will be launched with an intent containing an extra with key com.google.android.apps.work.clouddpc.EXTRA_LAUNCHED_AS_SETUP_ACTION set to the boolean value true to indicate that this is a setup action flow.
     */
   var launchApp: js.UndefOr[SchemaLaunchAppAction] = js.undefined
   

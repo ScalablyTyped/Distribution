@@ -12,7 +12,7 @@ object mod {
     // tslint:disable-next-line no-unnecessary-class
     @JSGlobal("Arrive")
     @js.native
-    class Arrive () extends StObject
+    open class Arrive () extends StObject
     object Arrive {
       
       @JSGlobal("Arrive")

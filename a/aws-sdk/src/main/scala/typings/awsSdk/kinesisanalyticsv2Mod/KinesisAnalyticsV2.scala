@@ -42,7 +42,7 @@ trait KinesisAnalyticsV2 extends Service {
   ): Request[AddApplicationInputResponse, AWSError] = js.native
   
   /**
-    * Adds an InputProcessingConfiguration to a SQL-based Kinesis Data Analytics application. An input processor pre-processes records on the input stream before the application's SQL code executes. Currently, the only input processor available is AWS Lambda.
+    * Adds an InputProcessingConfiguration to a SQL-based Kinesis Data Analytics application. An input processor pre-processes records on the input stream before the application's SQL code executes. Currently, the only input processor available is Amazon Lambda.
     */
   def addApplicationInputProcessingConfiguration(): Request[AddApplicationInputProcessingConfigurationResponse, AWSError] = js.native
   def addApplicationInputProcessingConfiguration(
@@ -53,7 +53,7 @@ trait KinesisAnalyticsV2 extends Service {
     ]
   ): Request[AddApplicationInputProcessingConfigurationResponse, AWSError] = js.native
   /**
-    * Adds an InputProcessingConfiguration to a SQL-based Kinesis Data Analytics application. An input processor pre-processes records on the input stream before the application's SQL code executes. Currently, the only input processor available is AWS Lambda.
+    * Adds an InputProcessingConfiguration to a SQL-based Kinesis Data Analytics application. An input processor pre-processes records on the input stream before the application's SQL code executes. Currently, the only input processor available is Amazon Lambda.
     */
   def addApplicationInputProcessingConfiguration(params: AddApplicationInputProcessingConfigurationRequest): Request[AddApplicationInputProcessingConfigurationResponse, AWSError] = js.native
   def addApplicationInputProcessingConfiguration(
@@ -66,12 +66,12 @@ trait KinesisAnalyticsV2 extends Service {
   ): Request[AddApplicationInputProcessingConfigurationResponse, AWSError] = js.native
   
   /**
-    * Adds an external destination to your SQL-based Kinesis Data Analytics application. If you want Kinesis Data Analytics to deliver data from an in-application stream within your application to an external destination (such as an Kinesis data stream, a Kinesis Data Firehose delivery stream, or an AWS Lambda function), you add the relevant configuration to your application using this operation. You can configure one or more outputs for your application. Each output configuration maps an in-application stream and an external destination.  You can use one of the output configurations to deliver data from your in-application error stream to an external destination so that you can analyze the errors.   Any configuration update, including adding a streaming source using this operation, results in a new version of the application. You can use the DescribeApplication operation to find the current application version.
+    * Adds an external destination to your SQL-based Kinesis Data Analytics application. If you want Kinesis Data Analytics to deliver data from an in-application stream within your application to an external destination (such as an Kinesis data stream, a Kinesis Data Firehose delivery stream, or an Amazon Lambda function), you add the relevant configuration to your application using this operation. You can configure one or more outputs for your application. Each output configuration maps an in-application stream and an external destination.  You can use one of the output configurations to deliver data from your in-application error stream to an external destination so that you can analyze the errors.   Any configuration update, including adding a streaming source using this operation, results in a new version of the application. You can use the DescribeApplication operation to find the current application version.
     */
   def addApplicationOutput(): Request[AddApplicationOutputResponse, AWSError] = js.native
   def addApplicationOutput(callback: js.Function2[/* err */ AWSError, /* data */ AddApplicationOutputResponse, Unit]): Request[AddApplicationOutputResponse, AWSError] = js.native
   /**
-    * Adds an external destination to your SQL-based Kinesis Data Analytics application. If you want Kinesis Data Analytics to deliver data from an in-application stream within your application to an external destination (such as an Kinesis data stream, a Kinesis Data Firehose delivery stream, or an AWS Lambda function), you add the relevant configuration to your application using this operation. You can configure one or more outputs for your application. Each output configuration maps an in-application stream and an external destination.  You can use one of the output configurations to deliver data from your in-application error stream to an external destination so that you can analyze the errors.   Any configuration update, including adding a streaming source using this operation, results in a new version of the application. You can use the DescribeApplication operation to find the current application version.
+    * Adds an external destination to your SQL-based Kinesis Data Analytics application. If you want Kinesis Data Analytics to deliver data from an in-application stream within your application to an external destination (such as an Kinesis data stream, a Kinesis Data Firehose delivery stream, or an Amazon Lambda function), you add the relevant configuration to your application using this operation. You can configure one or more outputs for your application. Each output configuration maps an in-application stream and an external destination.  You can use one of the output configurations to deliver data from your in-application error stream to an external destination so that you can analyze the errors.   Any configuration update, including adding a streaming source using this operation, results in a new version of the application. You can use the DescribeApplication operation to find the current application version.
     */
   def addApplicationOutput(params: AddApplicationOutputRequest): Request[AddApplicationOutputResponse, AWSError] = js.native
   def addApplicationOutput(
@@ -129,12 +129,12 @@ trait KinesisAnalyticsV2 extends Service {
   ): Request[CreateApplicationResponse, AWSError] = js.native
   
   /**
-    * Creates and returns a URL that you can use to connect to an application's extension. Currently, the only available extension is the Apache Flink dashboard. The IAM role or user used to call this API defines the permissions to access the extension. Once the presigned URL is created, no additional permission is required to access this URL. IAM authorization policies for this API are also enforced for every HTTP request that attempts to connect to the extension.   The URL that you get from a call to CreateApplicationPresignedUrl must be used within 3 minutes to be valid. If you first try to use the URL after the 3-minute limit expires, the service returns an HTTP 403 Forbidden error. 
+    * Creates and returns a URL that you can use to connect to an application's extension. Currently, the only available extension is the Apache Flink dashboard. The IAM role or user used to call this API defines the permissions to access the extension. After the presigned URL is created, no additional permission is required to access this URL. IAM authorization policies for this API are also enforced for every HTTP request that attempts to connect to the extension.  You control the amount of time that the URL will be valid using the SessionExpirationDurationInSeconds parameter. If you do not provide this parameter, the returned URL is valid for twelve hours.  The URL that you get from a call to CreateApplicationPresignedUrl must be used within 3 minutes to be valid. If you first try to use the URL after the 3-minute limit expires, the service returns an HTTP 403 Forbidden error. 
     */
   def createApplicationPresignedUrl(): Request[CreateApplicationPresignedUrlResponse, AWSError] = js.native
   def createApplicationPresignedUrl(callback: js.Function2[/* err */ AWSError, /* data */ CreateApplicationPresignedUrlResponse, Unit]): Request[CreateApplicationPresignedUrlResponse, AWSError] = js.native
   /**
-    * Creates and returns a URL that you can use to connect to an application's extension. Currently, the only available extension is the Apache Flink dashboard. The IAM role or user used to call this API defines the permissions to access the extension. Once the presigned URL is created, no additional permission is required to access this URL. IAM authorization policies for this API are also enforced for every HTTP request that attempts to connect to the extension.   The URL that you get from a call to CreateApplicationPresignedUrl must be used within 3 minutes to be valid. If you first try to use the URL after the 3-minute limit expires, the service returns an HTTP 403 Forbidden error. 
+    * Creates and returns a URL that you can use to connect to an application's extension. Currently, the only available extension is the Apache Flink dashboard. The IAM role or user used to call this API defines the permissions to access the extension. After the presigned URL is created, no additional permission is required to access this URL. IAM authorization policies for this API are also enforced for every HTTP request that attempts to connect to the extension.  You control the amount of time that the URL will be valid using the SessionExpirationDurationInSeconds parameter. If you do not provide this parameter, the returned URL is valid for twelve hours.  The URL that you get from a call to CreateApplicationPresignedUrl must be used within 3 minutes to be valid. If you first try to use the URL after the 3-minute limit expires, the service returns an HTTP 403 Forbidden error. 
     */
   def createApplicationPresignedUrl(params: CreateApplicationPresignedUrlRequest): Request[CreateApplicationPresignedUrlResponse, AWSError] = js.native
   def createApplicationPresignedUrl(
@@ -307,6 +307,20 @@ trait KinesisAnalyticsV2 extends Service {
   ): Request[DescribeApplicationSnapshotResponse, AWSError] = js.native
   
   /**
+    * Provides a detailed description of a specified version of the application. To see a list of all the versions of an application, invoke the ListApplicationVersions operation.  This operation is supported only for Amazon Kinesis Data Analytics for Apache Flink. 
+    */
+  def describeApplicationVersion(): Request[DescribeApplicationVersionResponse, AWSError] = js.native
+  def describeApplicationVersion(callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicationVersionResponse, Unit]): Request[DescribeApplicationVersionResponse, AWSError] = js.native
+  /**
+    * Provides a detailed description of a specified version of the application. To see a list of all the versions of an application, invoke the ListApplicationVersions operation.  This operation is supported only for Amazon Kinesis Data Analytics for Apache Flink. 
+    */
+  def describeApplicationVersion(params: DescribeApplicationVersionRequest): Request[DescribeApplicationVersionResponse, AWSError] = js.native
+  def describeApplicationVersion(
+    params: DescribeApplicationVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicationVersionResponse, Unit]
+  ): Request[DescribeApplicationVersionResponse, AWSError] = js.native
+  
+  /**
     * Infers a schema for a SQL-based Kinesis Data Analytics application by evaluating sample records on the specified streaming source (Kinesis data stream or Kinesis Data Firehose delivery stream) or Amazon S3 object. In the response, the operation returns the inferred schema and also the sample records that the operation used to infer the schema.  You can use the inferred schema when configuring a streaming source for your application. When you create an application using the Kinesis Data Analytics console, the console uses this operation to infer a schema and show it in the console user interface. 
     */
   def discoverInputSchema(): Request[DiscoverInputSchemaResponse, AWSError] = js.native
@@ -335,6 +349,20 @@ trait KinesisAnalyticsV2 extends Service {
   ): Request[ListApplicationSnapshotsResponse, AWSError] = js.native
   
   /**
+    * Lists all the versions for the specified application, including versions that were rolled back. The response also includes a summary of the configuration associated with each version. To get the complete description of a specific application version, invoke the DescribeApplicationVersion operation.  This operation is supported only for Amazon Kinesis Data Analytics for Apache Flink. 
+    */
+  def listApplicationVersions(): Request[ListApplicationVersionsResponse, AWSError] = js.native
+  def listApplicationVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationVersionsResponse, Unit]): Request[ListApplicationVersionsResponse, AWSError] = js.native
+  /**
+    * Lists all the versions for the specified application, including versions that were rolled back. The response also includes a summary of the configuration associated with each version. To get the complete description of a specific application version, invoke the DescribeApplicationVersion operation.  This operation is supported only for Amazon Kinesis Data Analytics for Apache Flink. 
+    */
+  def listApplicationVersions(params: ListApplicationVersionsRequest): Request[ListApplicationVersionsResponse, AWSError] = js.native
+  def listApplicationVersions(
+    params: ListApplicationVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationVersionsResponse, Unit]
+  ): Request[ListApplicationVersionsResponse, AWSError] = js.native
+  
+  /**
     * Returns a list of Kinesis Data Analytics applications in your account. For each application, the response includes the application name, Amazon Resource Name (ARN), and status.  If you want detailed information about a specific application, use DescribeApplication.
     */
   def listApplications(): Request[ListApplicationsResponse, AWSError] = js.native
@@ -361,6 +389,20 @@ trait KinesisAnalyticsV2 extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Reverts the application to the previous running version. You can roll back an application if you suspect it is stuck in a transient status.  You can roll back an application only if it is in the UPDATING or AUTOSCALING status. When you rollback an application, it loads state data from the last successful snapshot. If the application has no snapshots, Kinesis Data Analytics rejects the rollback request. This action is not supported for Kinesis Data Analytics for SQL applications.
+    */
+  def rollbackApplication(): Request[RollbackApplicationResponse, AWSError] = js.native
+  def rollbackApplication(callback: js.Function2[/* err */ AWSError, /* data */ RollbackApplicationResponse, Unit]): Request[RollbackApplicationResponse, AWSError] = js.native
+  /**
+    * Reverts the application to the previous running version. You can roll back an application if you suspect it is stuck in a transient status.  You can roll back an application only if it is in the UPDATING or AUTOSCALING status. When you rollback an application, it loads state data from the last successful snapshot. If the application has no snapshots, Kinesis Data Analytics rejects the rollback request. This action is not supported for Kinesis Data Analytics for SQL applications.
+    */
+  def rollbackApplication(params: RollbackApplicationRequest): Request[RollbackApplicationResponse, AWSError] = js.native
+  def rollbackApplication(
+    params: RollbackApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RollbackApplicationResponse, Unit]
+  ): Request[RollbackApplicationResponse, AWSError] = js.native
   
   /**
     * Starts the specified Kinesis Data Analytics application. After creating an application, you must exclusively call this operation to start your application.
@@ -431,4 +473,28 @@ trait KinesisAnalyticsV2 extends Service {
     params: UpdateApplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateApplicationResponse, Unit]
   ): Request[UpdateApplicationResponse, AWSError] = js.native
+  
+  /**
+    * Updates the maintenance configuration of the Kinesis Data Analytics application.  You can invoke this operation on an application that is in one of the two following states: READY or RUNNING. If you invoke it when the application is in a state other than these two states, it throws a ResourceInUseException. The service makes use of the updated configuration the next time it schedules maintenance for the application. If you invoke this operation after the service schedules maintenance, the service will apply the configuration update the next time it schedules maintenance for the application. This means that you might not see the maintenance configuration update applied to the maintenance process that follows a successful invocation of this operation, but to the following maintenance process instead. To see the current maintenance configuration of your application, invoke the DescribeApplication operation. For information about application maintenance, see Kinesis Data Analytics for Apache Flink Maintenance.  This operation is supported only for Amazon Kinesis Data Analytics for Apache Flink. 
+    */
+  def updateApplicationMaintenanceConfiguration(): Request[UpdateApplicationMaintenanceConfigurationResponse, AWSError] = js.native
+  def updateApplicationMaintenanceConfiguration(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ UpdateApplicationMaintenanceConfigurationResponse, 
+      Unit
+    ]
+  ): Request[UpdateApplicationMaintenanceConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the maintenance configuration of the Kinesis Data Analytics application.  You can invoke this operation on an application that is in one of the two following states: READY or RUNNING. If you invoke it when the application is in a state other than these two states, it throws a ResourceInUseException. The service makes use of the updated configuration the next time it schedules maintenance for the application. If you invoke this operation after the service schedules maintenance, the service will apply the configuration update the next time it schedules maintenance for the application. This means that you might not see the maintenance configuration update applied to the maintenance process that follows a successful invocation of this operation, but to the following maintenance process instead. To see the current maintenance configuration of your application, invoke the DescribeApplication operation. For information about application maintenance, see Kinesis Data Analytics for Apache Flink Maintenance.  This operation is supported only for Amazon Kinesis Data Analytics for Apache Flink. 
+    */
+  def updateApplicationMaintenanceConfiguration(params: UpdateApplicationMaintenanceConfigurationRequest): Request[UpdateApplicationMaintenanceConfigurationResponse, AWSError] = js.native
+  def updateApplicationMaintenanceConfiguration(
+    params: UpdateApplicationMaintenanceConfigurationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ UpdateApplicationMaintenanceConfigurationResponse, 
+      Unit
+    ]
+  ): Request[UpdateApplicationMaintenanceConfigurationResponse, AWSError] = js.native
 }

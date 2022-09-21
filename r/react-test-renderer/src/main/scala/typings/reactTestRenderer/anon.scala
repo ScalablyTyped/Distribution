@@ -22,4 +22,7 @@ object anon {
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     }
   }
+  
+  @js.native
+  trait UNDEFINEDVOIDONLY extends StObject
 }

@@ -11,17 +11,18 @@ trait Device extends StObject {
   var attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[Any]
   ] = js.undefined
   
   /**
     * Custom device attributes stored in Home Graph and provided to your smart home Action in each [QUERY](https://developers.google.com/assistant/smarthome/reference/intent/query) and
-    * [EXECUTE](https://developers.google.com/assistant/smarthome/reference/intent/execute) intent.
+    * [EXECUTE](https://developers.google.com/assistant/smarthome/reference/intent/execute) intent. Data in this object has a few constraints: No sensitive information, including but not
+    * limited to Personally Identifiable Information.
     */
   var customData: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[Any]
   ] = js.undefined
   
   /** Device manufacturer, model, hardware version, and software version. */
@@ -72,7 +73,7 @@ object Device {
     inline def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
@@ -80,7 +81,7 @@ object Device {
     inline def setCustomData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[Any]
     ): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
@@ -105,7 +106,7 @@ object Device {
     
     inline def setOtherDeviceIdsUndefined: Self = StObject.set(x, "otherDeviceIds", js.undefined)
     
-    inline def setOtherDeviceIdsVarargs(value: AgentOtherDeviceId*): Self = StObject.set(x, "otherDeviceIds", js.Array(value :_*))
+    inline def setOtherDeviceIdsVarargs(value: AgentOtherDeviceId*): Self = StObject.set(x, "otherDeviceIds", js.Array(value*))
     
     inline def setRoomHint(value: String): Self = StObject.set(x, "roomHint", value.asInstanceOf[js.Any])
     
@@ -119,7 +120,7 @@ object Device {
     
     inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
     
-    inline def setTraitsVarargs(value: String*): Self = StObject.set(x, "traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: String*): Self = StObject.set(x, "traits", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

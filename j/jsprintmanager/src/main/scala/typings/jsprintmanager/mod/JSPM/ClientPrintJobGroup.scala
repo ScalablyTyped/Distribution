@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsprintmanager", "JSPM.ClientPrintJobGroup")
 @js.native
-class ClientPrintJobGroup () extends StObject {
+open class ClientPrintJobGroup () extends StObject {
   
-  /* private */ def _generateDataAsync(): js.Any = js.native
+  /* private */ def _generateDataAsync(): Any = js.native
   
-  /* private */ def _generateMiniJob(cj: js.Any): js.Any = js.native
+  /* private */ def _generateMiniJob(cj: Any): Any = js.native
   
-  /* private */ def _intToArray(number: js.Any): js.Any = js.native
+  /* private */ def _intToArray(number: Any): Any = js.native
   
   var _jobs: js.Array[ClientPrintJob] = js.native
   

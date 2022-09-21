@@ -10,7 +10,6 @@ import typings.qrcodeSvg.qrcodeSvgStrings.`svg-viewbox`
 import typings.qrcodeSvg.qrcodeSvgStrings.g
 import typings.qrcodeSvg.qrcodeSvgStrings.none
 import typings.qrcodeSvg.qrcodeSvgStrings.svg
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object mod {
   
   @JSImport("qrcode-svg", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with QRCode {
     /**
@@ -106,11 +105,11 @@ object mod {
       
       inline def setDataCacheNull: Self = StObject.set(x, "dataCache", null)
       
-      inline def setDataCacheVarargs(value: Double*): Self = StObject.set(x, "dataCache", js.Array(value :_*))
+      inline def setDataCacheVarargs(value: Double*): Self = StObject.set(x, "dataCache", js.Array(value*))
       
       inline def setDataList(value: js.Array[Data]): Self = StObject.set(x, "dataList", value.asInstanceOf[js.Any])
       
-      inline def setDataListVarargs(value: Data*): Self = StObject.set(x, "dataList", js.Array(value :_*))
+      inline def setDataListVarargs(value: Data*): Self = StObject.set(x, "dataList", js.Array(value*))
       
       inline def setErrorCorrectLevel(value: Double): Self = StObject.set(x, "errorCorrectLevel", value.asInstanceOf[js.Any])
       
@@ -124,7 +123,7 @@ object mod {
       
       inline def setModules(value: js.Array[js.Array[Boolean]]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      inline def setModulesVarargs(value: js.Array[Boolean]*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: js.Array[Boolean]*): Self = StObject.set(x, "modules", js.Array(value*))
       
       inline def setTypeNumber(value: Double): Self = StObject.set(x, "typeNumber", value.asInstanceOf[js.Any])
     }
@@ -255,7 +254,7 @@ object mod {
       * @param  file The filename to write to
       * @param  callback The callback that will be called, possibly with an error, when done.
       */
-    def save(file: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+    def save(file: String, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /**
       * Generates an SVG image of this QRCode

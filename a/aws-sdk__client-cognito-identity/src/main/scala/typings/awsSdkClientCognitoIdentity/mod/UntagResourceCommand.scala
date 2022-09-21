@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-cognito-identity", "UntagResourceCommand")
 @js.native
-class UntagResourceCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.untagResourceCommandMod.UntagResourceCommand {
+open class UntagResourceCommand protected ()
+  extends typings.awsSdkClientCognitoIdentity.commandsMod.UntagResourceCommand {
   def this(input: UntagResourceCommandInput) = this()
 }

@@ -10,7 +10,7 @@ trait IHashtableOptions[TKey] extends StObject {
   var equals_FIHashtableOptions: js.UndefOr[js.Function2[/* key1 */ TKey, /* key2 */ TKey, Boolean]] = js.undefined
   
   @JSName("hashCode")
-  var hashCode_FIHashtableOptions: js.UndefOr[js.Function1[/* key */ TKey, js.Any]] = js.undefined
+  var hashCode_FIHashtableOptions: js.UndefOr[js.Function1[/* key */ TKey, Any]] = js.undefined
   
   var replaceDuplicateKey: js.UndefOr[Boolean] = js.undefined
 }
@@ -27,7 +27,7 @@ object IHashtableOptions {
     
     inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
-    inline def setHashCode_(value: /* key */ TKey => js.Any): Self = StObject.set(x, "hashCode", js.Any.fromFunction1(value))
+    inline def setHashCode_(value: /* key */ TKey => Any): Self = StObject.set(x, "hashCode", js.Any.fromFunction1(value))
     
     inline def setHashCode_Undefined: Self = StObject.set(x, "hashCode", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeConformancePacksRequest extends StObject {
   
   /**
-    * Comma-separated list of conformance pack names for which you want details. If you do not specify any names, AWS Config returns details for all your conformance packs. 
+    * Comma-separated list of conformance pack names for which you want details. If you do not specify any names, Config returns details for all your conformance packs. 
     */
   var ConformancePackNames: js.UndefOr[ConformancePackNamesList] = js.undefined
   
@@ -34,7 +34,7 @@ object DescribeConformancePacksRequest {
     
     inline def setConformancePackNamesUndefined: Self = StObject.set(x, "ConformancePackNames", js.undefined)
     
-    inline def setConformancePackNamesVarargs(value: ConformancePackName*): Self = StObject.set(x, "ConformancePackNames", js.Array(value :_*))
+    inline def setConformancePackNamesVarargs(value: ConformancePackName*): Self = StObject.set(x, "ConformancePackNames", js.Array(value*))
     
     inline def setLimit(value: PageSizeLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

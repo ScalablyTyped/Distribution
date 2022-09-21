@@ -29,7 +29,7 @@ object SqlQueryDatasetAction {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setSqlQuery(value: SqlQuery): Self = StObject.set(x, "sqlQuery", value.asInstanceOf[js.Any])
   }

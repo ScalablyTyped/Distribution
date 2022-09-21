@@ -32,7 +32,7 @@ object LabelParameterVersionRequest {
     
     inline def setLabels(value: ParameterLabelList): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: ParameterLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: ParameterLabel*): Self = StObject.set(x, "Labels", js.Array(value*))
     
     inline def setName(value: PSParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

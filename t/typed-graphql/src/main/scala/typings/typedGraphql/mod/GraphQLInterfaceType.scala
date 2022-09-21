@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("graphql", "GraphQLInterfaceType")
 @js.native
-class GraphQLInterfaceType protected ()
+open class GraphQLInterfaceType protected ()
   extends StObject
      with GraphQLAbstractType
      with GraphQLCompositeType
@@ -20,7 +20,7 @@ class GraphQLInterfaceType protected ()
   
   def getFields(): GraphQLFieldDefinitionMap = js.native
   
-  def getObjectType(value: js.Any, info: GraphQLResolveInfo): GraphQLObjectType = js.native
+  def getObjectType(value: Any, info: GraphQLResolveInfo): GraphQLObjectType = js.native
   
   def getPossibleTypes(): js.Array[GraphQLObjectType] = js.native
   
@@ -28,7 +28,7 @@ class GraphQLInterfaceType protected ()
   
   var name: String = js.native
   
-  def resolveType(value: js.Any, context: js.Any, info: GraphQLResolveInfo): GraphQLObjectType = js.native
+  def resolveType(value: Any, context: Any, info: GraphQLResolveInfo): GraphQLObjectType = js.native
   @JSName("resolveType")
   var resolveType_Original: GraphQLTypeResolveFn = js.native
 }

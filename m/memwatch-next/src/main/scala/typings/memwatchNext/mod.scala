@@ -1,6 +1,5 @@
 package typings.memwatchNext
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("memwatch-next", "HeapDiff")
   @js.native
-  class HeapDiff () extends StObject {
+  open class HeapDiff () extends StObject {
     
     /**
       * Compute the diff.
@@ -31,7 +30,7 @@ object mod {
       * End date.
       * @type {Date}
       */
-    var end: Date
+    var end: js.Date
     
     /**
       * Growth.
@@ -49,24 +48,24 @@ object mod {
       * Start date.
       * @type {Date}
       */
-    var start: Date
+    var start: js.Date
   }
   object LeakInformation {
     
-    inline def apply(end: Date, growth: Double, reason: String, start: Date): LeakInformation = {
+    inline def apply(end: js.Date, growth: Double, reason: String, start: js.Date): LeakInformation = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], growth = growth.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[LeakInformation]
     }
     
     extension [Self <: LeakInformation](x: Self) {
       
-      inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setGrowth(value: Double): Self = StObject.set(x, "growth", value.asInstanceOf[js.Any])
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   

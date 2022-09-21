@@ -17,7 +17,12 @@ object datePickerMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/support/DatePicker", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * The `DatePicker` class provides functionality to easily choose an input date.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html)
+    */
+  open class Class ()
     extends StObject
        with DatePicker {
     def this(properties: DatePickerProperties) = this()

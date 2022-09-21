@@ -1,44 +1,45 @@
 package typings.sharepoint.SP
 
+import typings.microsoftAjax.Sys.Net.WebRequestExecutor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ChangeSite = typings.sharepoint.SP.Change
+type ChangeSite = Change
 
-type ClientActionInvokeMethod = typings.sharepoint.SP.ClientAction
+type ClientActionInvokeMethod = ClientAction
 
-type ClientActionInvokeStaticMethod = typings.sharepoint.SP.ClientAction
+type ClientActionInvokeStaticMethod = ClientAction
 
-type ClientActionSetProperty = typings.sharepoint.SP.ClientAction
+type ClientActionSetProperty = ClientAction
 
-type ClientActionSetStaticProperty = typings.sharepoint.SP.ClientAction
+type ClientActionSetStaticProperty = ClientAction
 
-type ClientObjectPropertyConditionalScope = typings.sharepoint.SP.ConditionalScopeBase
+type ClientObjectPropertyConditionalScope = ConditionalScopeBase
 
-type ClientRequestSucceededEventArgs = typings.sharepoint.SP.ClientRequestEventArgs
+type ClientRequestSucceededEventArgs = ClientRequestEventArgs
 
-type CompatibilityRange = typings.sharepoint.SP.ClientObject
+type CompatibilityRange = ClientObject
 
-type FieldGeolocation = typings.sharepoint.SP.Field
+type FieldGeolocation = Field
 
-type FieldGuid = typings.sharepoint.SP.Field
+type FieldGuid = Field
 
-type ObjectIdentityQuery = typings.sharepoint.SP.ClientAction
+type ObjectIdentityQuery = ClientAction
 
-type ObjectPathConstructor = typings.sharepoint.SP.ObjectPath
+type ObjectPathConstructor = ObjectPath
 
-type ObjectPathMethod = typings.sharepoint.SP.ObjectPath
+type ObjectPathMethod = ObjectPath
 
-type ObjectPathProperty = typings.sharepoint.SP.ObjectPath
+type ObjectPathProperty = ObjectPath
 
-type ObjectPathStaticMethod = typings.sharepoint.SP.ObjectPath
+type ObjectPathStaticMethod = ObjectPath
 
-type ObjectPathStaticProperty = typings.sharepoint.SP.ObjectPath
+type ObjectPathStaticProperty = ObjectPath
 
-type ProxyWebRequestExecutor = typings.microsoftAjax.Sys.Net.WebRequestExecutor
+type ProxyWebRequestExecutor = WebRequestExecutor
 
-type RelatedItemManager = typings.sharepoint.SP.ClientObject
+type RelatedItemManager = ClientObject
 
-type SiteUrl = typings.sharepoint.SP.ClientObject
+type SiteUrl = ClientObject

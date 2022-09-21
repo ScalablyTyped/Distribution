@@ -33,7 +33,7 @@ object XBackendChangesNotifier {
   inline def apply(
     acquire: () => Unit,
     addChangesListener: (XBackendChangesListener, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChangesListener: (XBackendChangesListener, String) => Unit
   ): XBackendChangesNotifier = {

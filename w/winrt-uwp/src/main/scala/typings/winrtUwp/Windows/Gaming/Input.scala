@@ -117,7 +117,7 @@ object Input {
   @js.native
   trait Gamepad extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_headsetconnected(`type`: headsetconnected, listener: TypedEventHandler[IGameController, Headset]): Unit = js.native
     @JSName("addEventListener")
@@ -155,7 +155,7 @@ object Input {
     @JSName("onuserchanged")
     var onuserchanged_Original: TypedEventHandler[IGameController, UserChangedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_headsetconnected(`type`: headsetconnected, listener: TypedEventHandler[IGameController, Headset]): Unit = js.native
     @JSName("removeEventListener")

@@ -11,7 +11,7 @@ object appxTargetMod {
   
   @JSImport("app-builder-lib/out/targets/AppxTarget", JSImport.Default)
   @js.native
-  class default protected () extends AppXTarget {
+  open class default protected () extends AppXTarget {
     def this(packager: WinPackager, outDir: String) = this()
   }
   /* static members */
@@ -23,22 +23,22 @@ object appxTargetMod {
     
     @JSImport("app-builder-lib/out/targets/AppxTarget", "default.computeUserAssets")
     @js.native
-    def computeUserAssets: js.Any = js.native
-    inline def computeUserAssets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("computeUserAssets")(x.asInstanceOf[js.Any])
+    def computeUserAssets: Any = js.native
+    inline def computeUserAssets_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("computeUserAssets")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait AppXTarget extends Target {
     
-    /* private */ var computePublisherName: js.Any = js.native
+    /* private */ var computePublisherName: Any = js.native
     
-    /* private */ var getExtensions: js.Any = js.native
+    /* private */ var getExtensions: Any = js.native
     
     @JSName("options")
     val options_AppXTarget: AppXOptions = js.native
     
-    /* private */ val packager: js.Any = js.native
+    /* private */ val packager: Any = js.native
     
-    /* private */ var writeManifest: js.Any = js.native
+    /* private */ var writeManifest: Any = js.native
   }
 }

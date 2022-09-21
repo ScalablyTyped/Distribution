@@ -2,7 +2,6 @@ package typings.awsSdkClientS3Node
 
 import typings.awsSdkClientS3Node.typesReplicationRuleMod.ReplicationRule
 import typings.awsSdkClientS3Node.typesReplicationRuleMod.UnmarshalledReplicationRule
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +18,11 @@ object typesReplicationConfigurationMod {
     /**
       * <p>Container for one or more replication rules. Replication configuration must have at least one rule and can contain up to 1,000 rules. </p>
       */
-    var Rules: js.Array[ReplicationRule] | Iterable[ReplicationRule]
+    var Rules: js.Array[ReplicationRule] | js.Iterable[ReplicationRule]
   }
   object ReplicationConfiguration {
     
-    inline def apply(Role: String, Rules: js.Array[ReplicationRule] | Iterable[ReplicationRule]): ReplicationConfiguration = {
+    inline def apply(Role: String, Rules: js.Array[ReplicationRule] | js.Iterable[ReplicationRule]): ReplicationConfiguration = {
       val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicationConfiguration]
     }
@@ -32,9 +31,9 @@ object typesReplicationConfigurationMod {
       
       inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
       
-      inline def setRules(value: js.Array[ReplicationRule] | Iterable[ReplicationRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[ReplicationRule] | js.Iterable[ReplicationRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      inline def setRulesVarargs(value: ReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: ReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     }
   }
   
@@ -59,7 +58,7 @@ object typesReplicationConfigurationMod {
       
       inline def setRules(value: js.Array[UnmarshalledReplicationRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      inline def setRulesVarargs(value: UnmarshalledReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     }
   }
 }

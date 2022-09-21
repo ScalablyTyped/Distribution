@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ImageProcessingConfiguration")
 @js.native
-class ImageProcessingConfiguration ()
+open class ImageProcessingConfiguration ()
   extends StObject
      with typings.babylonjs.BABYLON.ImageProcessingConfiguration
 /* static members */
@@ -20,9 +20,9 @@ object ImageProcessingConfiguration {
   /**
     * Parses the image processing from a json representation.
     * @param source the JSON source to parse
-    * @return The parsed image processing
+    * @returns The parsed image processing
     */
-  inline def Parse(source: js.Any): typings.babylonjs.BABYLON.ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.ImageProcessingConfiguration]
+  inline def Parse(source: Any): typings.babylonjs.BABYLON.ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.ImageProcessingConfiguration]
   
   /**
     * Prepare the list of samplers associated with the Image Processing effects.
@@ -44,22 +44,22 @@ object ImageProcessingConfiguration {
     */
   @JSGlobal("BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES")
   @js.native
-  val TONEMAPPING_ACES: Double = js.native
+  val TONEMAPPING_ACES: /* 1 */ Double = js.native
   
   /**
     * Default tone mapping applied in BabylonJS.
     */
   @JSGlobal("BABYLON.ImageProcessingConfiguration.TONEMAPPING_STANDARD")
   @js.native
-  val TONEMAPPING_STANDARD: Double = js.native
+  val TONEMAPPING_STANDARD: /* 0 */ Double = js.native
   
   @JSGlobal("BABYLON.ImageProcessingConfiguration._VIGNETTEMODE_MULTIPLY")
   @js.native
-  def _VIGNETTEMODE_MULTIPLY: js.Any = js.native
-  inline def _VIGNETTEMODE_MULTIPLY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_MULTIPLY")(x.asInstanceOf[js.Any])
+  def _VIGNETTEMODE_MULTIPLY: Any = js.native
+  inline def _VIGNETTEMODE_MULTIPLY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_MULTIPLY")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.ImageProcessingConfiguration._VIGNETTEMODE_OPAQUE")
   @js.native
-  def _VIGNETTEMODE_OPAQUE: js.Any = js.native
-  inline def _VIGNETTEMODE_OPAQUE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_OPAQUE")(x.asInstanceOf[js.Any])
+  def _VIGNETTEMODE_OPAQUE: Any = js.native
+  inline def _VIGNETTEMODE_OPAQUE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VIGNETTEMODE_OPAQUE")(x.asInstanceOf[js.Any])
 }

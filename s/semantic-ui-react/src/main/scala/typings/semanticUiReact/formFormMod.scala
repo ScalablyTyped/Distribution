@@ -1,10 +1,10 @@
 package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.FC
 import typings.react.mod.FormEvent
 import typings.react.mod.FormHTMLAttributes
 import typings.react.mod.FunctionComponent
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.formButtonMod.FormButtonProps
 import typings.semanticUiReact.formCheckboxMod.FormCheckboxProps
 import typings.semanticUiReact.formDropdownMod.FormDropdownProps
@@ -31,23 +31,23 @@ object formFormMod extends Shortcut {
     extends StObject
        with FunctionComponent[FormProps] {
     
-    var Button: StatelessComponent[FormButtonProps] = js.native
+    var Button: FC[FormButtonProps] = js.native
     
-    var Checkbox: StatelessComponent[FormCheckboxProps] = js.native
+    var Checkbox: FC[FormCheckboxProps] = js.native
     
-    var Dropdown: StatelessComponent[FormDropdownProps] = js.native
+    var Dropdown: FC[FormDropdownProps] = js.native
     
-    var Field: StatelessComponent[FormFieldProps] = js.native
+    var Field: FC[FormFieldProps] = js.native
     
-    var Group: StatelessComponent[FormGroupProps] = js.native
+    var Group: FC[FormGroupProps] = js.native
     
-    var Input: StatelessComponent[FormInputProps] = js.native
+    var Input: FC[FormInputProps] = js.native
     
-    var Radio: StatelessComponent[FormRadioProps] = js.native
+    var Radio: FC[FormRadioProps] = js.native
     
-    var Select: StatelessComponent[FormSelectProps] = js.native
+    var Select: FC[FormSelectProps] = js.native
     
-    var TextArea: StatelessComponent[FormTextAreaProps] = js.native
+    var TextArea: FC[FormTextAreaProps] = js.native
   }
   
   type FormProps = StrictFormProps
@@ -57,7 +57,7 @@ object formFormMod extends Shortcut {
        with FormHTMLAttributes[HTMLFormElement] {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Automatically show any error Message children. */
     var error: js.UndefOr[Boolean] = js.undefined
@@ -99,7 +99,7 @@ object formFormMod extends Shortcut {
     
     extension [Self <: StrictFormProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

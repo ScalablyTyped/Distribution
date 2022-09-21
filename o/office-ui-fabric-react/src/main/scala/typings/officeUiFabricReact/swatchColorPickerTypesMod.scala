@@ -223,7 +223,7 @@ object swatchColorPickerTypesMod {
       
       inline def setColorCells(value: js.Array[IColorCellProps]): Self = StObject.set(x, "colorCells", value.asInstanceOf[js.Any])
       
-      inline def setColorCellsVarargs(value: IColorCellProps*): Self = StObject.set(x, "colorCells", js.Array(value :_*))
+      inline def setColorCellsVarargs(value: IColorCellProps*): Self = StObject.set(x, "colorCells", js.Array(value*))
       
       inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       

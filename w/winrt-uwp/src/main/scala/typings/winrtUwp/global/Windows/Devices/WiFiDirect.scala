@@ -85,7 +85,7 @@ object WiFiDirect {
     /** Represents a Service Advertiser. This class is used by code on a device that advertises Wi-Fi Direct Services, to advertise the service. */
     @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAdvertiser")
     @js.native
-    class WiFiDirectServiceAdvertiser protected ()
+    open class WiFiDirectServiceAdvertiser protected ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAdvertiser {
       /**
@@ -363,7 +363,7 @@ object WiFiDirect {
   @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher")
   @js.native
   /** Creates a new WiFiDirectAdvertisementPublisher object. */
-  class WiFiDirectAdvertisementPublisher ()
+  open class WiFiDirectAdvertisementPublisher ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher
   
@@ -423,7 +423,7 @@ object WiFiDirect {
   @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionListener")
   @js.native
   /** Creates a new WiFiDirectConnectionListener object. */
-  class WiFiDirectConnectionListener ()
+  open class WiFiDirectConnectionListener ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionListener
   
@@ -431,7 +431,7 @@ object WiFiDirect {
   @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters")
   @js.native
   /** Creates a new WiFiDirectConnectionParameters object. */
-  class WiFiDirectConnectionParameters ()
+  open class WiFiDirectConnectionParameters ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters {
     
@@ -586,7 +586,7 @@ object WiFiDirect {
   @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectInformationElement")
   @js.native
   /** Creates a new WiFiDirectInformationElement object. */
-  class WiFiDirectInformationElement ()
+  open class WiFiDirectInformationElement ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement {
     

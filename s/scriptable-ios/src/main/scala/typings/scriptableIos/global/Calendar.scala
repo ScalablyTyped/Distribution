@@ -1,5 +1,9 @@
 package typings.scriptableIos.global
 
+import typings.scriptableIos.scriptableIosStrings.busy
+import typings.scriptableIos.scriptableIosStrings.free
+import typings.scriptableIos.scriptableIosStrings.tentative
+import typings.scriptableIos.scriptableIosStrings.unavailable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +14,81 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Calendar")
 @js.native
-class Calendar ()
+open class Calendar ()
   extends StObject
-     with typings.scriptableIos.Calendar
+     with typings.scriptableIos.Calendar {
+  
+  /**
+    * _Indicates whether items can be added, edited, and deleted in the calendar._
+    * @see https://docs.scriptable.app/calendar/#allowscontentmodifications
+    */
+  /* CompleteClass */
+  var allowsContentModifications: Boolean = js.native
+  
+  /**
+    * _Color of calendar._
+    * @see https://docs.scriptable.app/calendar/#color
+    */
+  /* CompleteClass */
+  var color: typings.scriptableIos.Color = js.native
+  
+  /**
+    * _Calendar identifier._
+    * @see https://docs.scriptable.app/calendar/#identifier
+    */
+  /* CompleteClass */
+  var identifier: String = js.native
+  
+  /**
+    * _Whether the calendar is a subscribed calendar._
+    * @see https://docs.scriptable.app/calendar/#issubscribed
+    */
+  /* CompleteClass */
+  var isSubscribed: Boolean = js.native
+  
+  /**
+    * _Removes calendar._
+    *
+    * The calendar is removed immediately. This cannot be undone.
+    * @see https://docs.scriptable.app/calendar/#-remove
+    */
+  /* CompleteClass */
+  override def remove(): Unit = js.native
+  
+  /**
+    * _Saves calendar._
+    *
+    * Saves changes to the calendar.
+    * @see https://docs.scriptable.app/calendar/#-save
+    */
+  /* CompleteClass */
+  override def save(): Unit = js.native
+  
+  /**
+    * _Checks if the calendar supports availability._
+    *
+    * The following values are supported:
+    *
+    * *   busy
+    * *   free
+    * *   tentative
+    * *   unavailable
+    *
+    * Not all calendars support all of these availabilities and some calendars may not support availability at all. Use this function to check if the calendar supports a specific
+    * availability.
+    * @param availability - Availability to check against.
+    * @see https://docs.scriptable.app/calendar/#-supportsavailability
+    */
+  /* CompleteClass */
+  override def supportsAvailability(availability: busy | free | tentative | unavailable): Boolean = js.native
+  
+  /**
+    * _Title of calendar._
+    * @see https://docs.scriptable.app/calendar/#title
+    */
+  /* CompleteClass */
+  var title: String = js.native
+}
 object Calendar {
   
   @JSGlobal("Calendar")

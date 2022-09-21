@@ -51,7 +51,7 @@ object ClassSpec {
     
     inline def setImplementsUndefined: Self = StObject.set(x, "implements", js.undefined)
     
-    inline def setImplementsVarargs(value: typings.fridaGum.anon.Wrapper*): Self = StObject.set(x, "implements", js.Array(value :_*))
+    inline def setImplementsVarargs(value: typings.fridaGum.anon.Wrapper*): Self = StObject.set(x, "implements", js.Array(value*))
     
     inline def setMethods(value: StringDictionary[MethodImplementation[js.Object] | MethodSpec | js.Array[MethodSpec]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     

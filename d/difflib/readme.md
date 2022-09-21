@@ -10,10 +10,10 @@ text diff library ported from Python's difflib module
 | ------------------ | :-------------: |
 | Full name          | difflib |
 | Keywords           | diff |
-| # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 6401311 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1724683.0 |
+| # stars            | 229.0 |
 
 ## Links
 - [Homepage](https://github.com/qiao/difflib.js)

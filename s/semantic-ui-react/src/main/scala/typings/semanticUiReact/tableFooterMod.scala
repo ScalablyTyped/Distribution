@@ -2,7 +2,7 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.tableHeaderMod.StrictTableHeaderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object tableFooterMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableFooter", JSImport.Default)
   @js.native
-  val default: StatelessComponent[TableFooterProps] = js.native
+  val default: FC[TableFooterProps] = js.native
   
   trait StrictTableFooterProps
     extends StObject
@@ -28,7 +28,7 @@ object tableFooterMod extends Shortcut {
   trait TableFooterProps
     extends StObject
        with StrictTableFooterProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object TableFooterProps {
     
     inline def apply(): TableFooterProps = {
@@ -37,8 +37,8 @@ object tableFooterMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[TableFooterProps]
+  type _To = FC[TableFooterProps]
   
   /* This means you don't have to write `default`, but can instead just say `tableFooterMod.foo` */
-  override def _to: StatelessComponent[TableFooterProps] = default
+  override def _to: FC[TableFooterProps] = default
 }

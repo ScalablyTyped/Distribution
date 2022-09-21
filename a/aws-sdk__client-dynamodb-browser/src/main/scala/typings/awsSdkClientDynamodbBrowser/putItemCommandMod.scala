@@ -16,7 +16,7 @@ object putItemCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/commands/PutItemCommand", "PutItemCommand")
   @js.native
-  class PutItemCommand protected ()
+  open class PutItemCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object putItemCommandMod {
     override val middlewareStack: MiddlewareStack[PutItemInput, PutItemOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[PutItemInput, PutItemOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[PutItemInput, PutItemOutput] = js.native
   }
 }

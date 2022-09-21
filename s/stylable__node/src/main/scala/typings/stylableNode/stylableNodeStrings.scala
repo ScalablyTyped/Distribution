@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object stylableNodeStrings {
   
   @js.native
-  sealed trait development extends StObject
-  inline def development: development = "development".asInstanceOf[development]
+  sealed trait hashSalt extends StObject
+  inline def hashSalt: hashSalt = "hashSalt".asInstanceOf[hashSalt]
   
   @js.native
-  sealed trait production extends StObject
-  inline def production: production = "production".asInstanceOf[production]
+  sealed trait prefix extends StObject
+  inline def prefix: prefix = "prefix".asInstanceOf[prefix]
 }

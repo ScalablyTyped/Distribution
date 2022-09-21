@@ -12,7 +12,7 @@ trait TeamProject
   /**
     * The links to other objects related to this object.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Set of capabilities this project has (such as process template & version control).
@@ -27,7 +27,7 @@ trait TeamProject
 object TeamProject {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     abbreviation: String,
     capabilities: StringDictionary[StringDictionary[String]],
     defaultTeam: WebApiTeamRef,
@@ -35,7 +35,7 @@ object TeamProject {
     id: String,
     name: String,
     revision: Double,
-    state: js.Any,
+    state: Any,
     url: String,
     visibility: ProjectVisibility
   ): TeamProject = {
@@ -49,6 +49,6 @@ object TeamProject {
     
     inline def setDefaultTeam(value: WebApiTeamRef): Self = StObject.set(x, "defaultTeam", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

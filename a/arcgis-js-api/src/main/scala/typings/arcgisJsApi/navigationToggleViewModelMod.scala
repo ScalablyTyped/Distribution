@@ -22,7 +22,7 @@ object navigationToggleViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with NavigationToggleViewModel {
     def this(properties: NavigationToggleViewModelProperties) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Refdb")
 @js.native
-class Refdb ()
+open class Refdb ()
   extends typings.nodegit.refDbMod.Refdb
 /* static members */
 object Refdb {

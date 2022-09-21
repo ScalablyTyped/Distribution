@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "known" : "3.0.0"
+      "known" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "known" : "3.0.0"
+      "known" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

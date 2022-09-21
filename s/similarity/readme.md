@@ -10,15 +10,12 @@ How similar are these two strings?
 | ------------------ | :-------------: |
 | Full name          | similarity |
 | Keywords           | string, text, similarity, comparison, levenshtein, distance, spelling |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 121897 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 22582.0 |
+| # stars            | 62.0 |
 
 ## Links
-- [Homepage](https://github.com/words/similarity#readme)
-- [Bugs](https://github.com/words/similarity/issues)
-- [Repository](https://github.com/words/similarity)
 - [Npm](https://www.npmjs.com/package/similarity)
     
 

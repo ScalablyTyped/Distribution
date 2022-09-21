@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.AnimationStateData")
 @js.native
-class AnimationStateData protected ()
+open class AnimationStateData protected ()
   extends StObject
      with typings.phaser.spine.AnimationStateData {
   def this(skeletonData: typings.phaser.spine.SkeletonData) = this()

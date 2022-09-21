@@ -10,10 +10,10 @@ object childCareMod {
   
   @JSImport("material-ui/svg-icons/places/child-care", JSImport.Default)
   @js.native
-  class default () extends PlacesChildCare
+  open class default () extends PlacesChildCare
   
   @JSImport("material-ui/svg-icons/places/child-care", "PlacesChildCare")
   @js.native
-  class PlacesChildCare ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesChildCare ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

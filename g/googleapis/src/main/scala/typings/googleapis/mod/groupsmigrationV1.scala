@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object groupsmigrationV1 {
   
-  /**
-    * Groups Migration API
-    *
-    * Groups Migration Api.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const groupsmigration = google.groupsmigration('v1');
-    *
-    * @namespace groupsmigration
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Groupsmigration
-    */
   @JSImport("googleapis", "groupsmigration_v1.Groupsmigration")
   @js.native
-  class Groupsmigration protected ()
+  open class Groupsmigration protected ()
     extends typings.googleapis.groupsmigrationV1Mod.groupsmigrationV1.Groupsmigration {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,7 +19,7 @@ object groupsmigrationV1 {
   
   @JSImport("googleapis", "groupsmigration_v1.Resource$Archive")
   @js.native
-  class ResourceArchive protected ()
+  open class ResourceArchive protected ()
     extends typings.googleapis.groupsmigrationV1Mod.groupsmigrationV1.ResourceArchive {
     def this(context: APIRequestContext) = this()
   }

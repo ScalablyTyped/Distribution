@@ -25,7 +25,7 @@ object IntrospectionDirective {
     
     inline def setArgs(value: js.Array[IntrospectionInputValue]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -33,7 +33,7 @@ object IntrospectionDirective {
     
     inline def setLocations(value: js.Array[DirectiveLocationEnum]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    inline def setLocationsVarargs(value: DirectiveLocationEnum*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: DirectiveLocationEnum*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteResourceRequest extends StObject {
   
   /**
-    * [Required] The identifier of the Resource resource.
+    * The identifier of the Resource resource.
     */
   var resourceId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

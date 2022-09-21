@@ -23,9 +23,6 @@ trait Xgafv extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Cloud SQL instance ID. This does not include the project ID. */
-  var instance: String
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
@@ -35,7 +32,7 @@ trait Xgafv extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Project ID of the project that contains the instance. */
+  /** Project ID of the project to which the newly created Cloud SQL instances should belong. */
   var project: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
@@ -52,8 +49,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(instance: String, project: String, resource: DatabaseInstance): Xgafv = {
-    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(project: String, resource: DatabaseInstance): Xgafv = {
+    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -78,8 +75,6 @@ object Xgafv {
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-    
-    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

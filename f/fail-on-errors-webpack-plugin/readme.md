@@ -10,10 +10,10 @@ Webpack plugin that makes the process return an error code on failure
 | ------------------ | :-------------: |
 | Full name          | fail-on-errors-webpack-plugin |
 | Keywords           | webpack |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 113134 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7845.666666666667 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/AustinMatherne/fail-on-errors-webpack-plugin)

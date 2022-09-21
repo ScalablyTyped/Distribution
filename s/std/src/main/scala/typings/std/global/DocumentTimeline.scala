@@ -8,11 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("DocumentTimeline")
 @js.native
-class DocumentTimeline ()
+/* standard dom */
+open class DocumentTimeline ()
   extends StObject
      with typings.std.AnimationTimeline {
   def this(options: DocumentTimelineOptions) = this()
   
+  /* standard dom */
   /* CompleteClass */
   override val currentTime: Double | Null = js.native
 }

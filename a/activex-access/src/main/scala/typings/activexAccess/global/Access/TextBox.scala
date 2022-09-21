@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.TextBox")
 @js.native
-/* private */ class TextBox ()
+/* private */ open class TextBox ()
   extends StObject
      with typings.activexAccess.Access.TextBox

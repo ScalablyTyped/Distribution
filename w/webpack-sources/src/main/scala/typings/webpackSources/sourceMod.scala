@@ -1,9 +1,8 @@
 package typings.webpackSources
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.cryptoMod.Hash
 import typings.sourceMap.mod.RawSourceMap
-import typings.std.ArrayBuffer
 import typings.webpackSources.libMod.MapOptions
 import typings.webpackSources.libMod.SourceAndMapResult
 import org.scalablytyped.runtime.StObject
@@ -49,7 +48,7 @@ object sourceMod {
     /**
       * Returns the represented source code as string.
       */
-    def source(): String | ArrayBuffer = js.native
+    def source(): String | js.typedarray.ArrayBuffer = js.native
     
     /**
       * Returns both, source code (like `Source.prototype.source()` and SourceMap (like `Source.prototype.map()`).

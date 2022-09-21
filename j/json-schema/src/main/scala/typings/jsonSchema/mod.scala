@@ -1,8 +1,6 @@
 package typings.jsonSchema
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsonSchema.jsonSchemaBooleans.`false`
-import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkPropertyChange(value: js.Any, schema: JSONSchema4, property: String): ValidationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropertyChange")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[ValidationResult]
-  inline def checkPropertyChange(value: js.Any, schema: JSONSchema6, property: String): ValidationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropertyChange")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[ValidationResult]
-  inline def checkPropertyChange(value: js.Any, schema: JSONSchema7, property: String): ValidationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropertyChange")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[ValidationResult]
+  inline def checkPropertyChange(value: Any, schema: JSONSchema4, property: String): ValidationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropertyChange")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[ValidationResult]
+  inline def checkPropertyChange(value: Any, schema: JSONSchema6, property: String): ValidationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropertyChange")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[ValidationResult]
+  inline def checkPropertyChange(value: Any, schema: JSONSchema7, property: String): ValidationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropertyChange")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[ValidationResult]
   
   inline def mustBeValid(result: ValidationResult): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mustBeValid")(result.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -28,7 +26,7 @@ object mod {
        with /**
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-04#section-5.6
     */
-  /* k */ StringDictionary[js.Any] {
+  /* k */ StringDictionary[Any] {
     
     var default: js.UndefOr[JSONSchema4Type] = js.undefined
     
@@ -195,7 +193,7 @@ object mod {
       *
       * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.7
       */
-    var required: js.UndefOr[`false` | js.Array[String]] = js.undefined
+    var required: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * This attribute is a string that provides a short description of the
@@ -241,13 +239,13 @@ object mod {
       
       inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
       
-      inline def setAllOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+      inline def setAllOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "allOf", js.Array(value*))
       
       inline def setAnyOf(value: js.Array[JSONSchema4]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
       
       inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
       
-      inline def setAnyOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+      inline def setAnyOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "anyOf", js.Array(value*))
       
       inline def setDefault(value: JSONSchema4Type): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -271,7 +269,7 @@ object mod {
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: JSONSchema4Type*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: JSONSchema4Type*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
       
@@ -285,7 +283,7 @@ object mod {
       
       inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       
-      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value :_*))
+      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value*))
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -299,7 +297,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: JSONSchema4*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: JSONSchema4*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
@@ -345,7 +343,7 @@ object mod {
       
       inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
       
-      inline def setOneOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+      inline def setOneOfVarargs(value: JSONSchema4*): Self = StObject.set(x, "oneOf", js.Array(value*))
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
@@ -359,11 +357,11 @@ object mod {
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setRequired(value: `false` | js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean | js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -373,7 +371,7 @@ object mod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: JSONSchema4TypeName*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: JSONSchema4TypeName*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
       
@@ -381,16 +379,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait JSONSchema4Array
-    extends StObject
-       with Array[JSONSchema4Type]
-       with _JSONSchema4Type
+  type JSONSchema4Array = js.Array[JSONSchema4Type]
   
   trait JSONSchema4Object
     extends StObject
        with /* key */ StringDictionary[JSONSchema4Type]
-       with _JSONSchema4Type
   object JSONSchema4Object {
     
     inline def apply(): JSONSchema4Object = {
@@ -399,15 +392,7 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - typings.jsonSchema.mod.JSONSchema4Object
-    - typings.jsonSchema.mod.JSONSchema4Array
-    - scala.Null
-  */
-  type JSONSchema4Type = _JSONSchema4Type | String | Double | Boolean | Null
+  type JSONSchema4Type = String | Double | Boolean | JSONSchema4Object | Any | Null
   
   /* Rewritten from type alias, can be one of: 
     - typings.jsonSchema.jsonSchemaStrings.string
@@ -738,13 +723,13 @@ object mod {
       
       inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
       
-      inline def setAllOfVarargs(value: JSONSchema6Definition*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+      inline def setAllOfVarargs(value: JSONSchema6Definition*): Self = StObject.set(x, "allOf", js.Array(value*))
       
       inline def setAnyOf(value: js.Array[JSONSchema6Definition]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
       
       inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
       
-      inline def setAnyOfVarargs(value: JSONSchema6Definition*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+      inline def setAnyOfVarargs(value: JSONSchema6Definition*): Self = StObject.set(x, "anyOf", js.Array(value*))
       
       inline def setConst(value: JSONSchema6Type): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
       
@@ -778,13 +763,13 @@ object mod {
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: JSONSchema6Type*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: JSONSchema6Type*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setExamples(value: js.Array[JSONSchema6Type]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
       inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
       
-      inline def setExamplesVarargs(value: JSONSchema6Type*): Self = StObject.set(x, "examples", js.Array(value :_*))
+      inline def setExamplesVarargs(value: JSONSchema6Type*): Self = StObject.set(x, "examples", js.Array(value*))
       
       inline def setExclusiveMaximum(value: Double): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
       
@@ -802,7 +787,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: JSONSchema6Definition*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: JSONSchema6Definition*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
@@ -848,7 +833,7 @@ object mod {
       
       inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
       
-      inline def setOneOfVarargs(value: JSONSchema6Definition*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+      inline def setOneOfVarargs(value: JSONSchema6Definition*): Self = StObject.set(x, "oneOf", js.Array(value*))
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
@@ -870,7 +855,7 @@ object mod {
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -880,7 +865,7 @@ object mod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: JSONSchema6TypeName*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: JSONSchema6TypeName*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
       
@@ -888,18 +873,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait JSONSchema6Array
-    extends StObject
-       with Array[JSONSchema6Type]
-       with _JSONSchema6Type
+  type JSONSchema6Array = js.Array[JSONSchema6Type]
   
   type JSONSchema6Definition = JSONSchema6 | Boolean
   
   trait JSONSchema6Object
     extends StObject
        with /* key */ StringDictionary[JSONSchema6Type]
-       with _JSONSchema6Type
   object JSONSchema6Object {
     
     inline def apply(): JSONSchema6Object = {
@@ -908,15 +888,7 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - typings.jsonSchema.mod.JSONSchema6Object
-    - typings.jsonSchema.mod.JSONSchema6Array
-    - scala.Null
-  */
-  type JSONSchema6Type = _JSONSchema6Type | String | Double | Boolean | Null
+  type JSONSchema6Type = String | Double | Boolean | JSONSchema6Object | Any | Null
   
   /* Rewritten from type alias, can be one of: 
     - typings.jsonSchema.jsonSchemaStrings.string
@@ -956,6 +928,13 @@ object mod {
     
     @JSName("$comment")
     var $comment: js.UndefOr[String] = js.undefined
+    
+    /**
+      * @see https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00#section-8.2.4
+      * @see https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-validation-00#appendix-A
+      */
+    @JSName("$defs")
+    var $defs: js.UndefOr[StringDictionary[JSONSchema7Definition]] = js.undefined
     
     @JSName("$id")
     var $id: js.UndefOr[String] = js.undefined
@@ -1094,6 +1073,10 @@ object mod {
       
       inline def set$commentUndefined: Self = StObject.set(x, "$comment", js.undefined)
       
+      inline def set$defs(value: StringDictionary[JSONSchema7Definition]): Self = StObject.set(x, "$defs", value.asInstanceOf[js.Any])
+      
+      inline def set$defsUndefined: Self = StObject.set(x, "$defs", js.undefined)
+      
       inline def set$id(value: String): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
       inline def set$idUndefined: Self = StObject.set(x, "$id", js.undefined)
@@ -1118,13 +1101,13 @@ object mod {
       
       inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
       
-      inline def setAllOfVarargs(value: JSONSchema7Definition*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+      inline def setAllOfVarargs(value: JSONSchema7Definition*): Self = StObject.set(x, "allOf", js.Array(value*))
       
       inline def setAnyOf(value: js.Array[JSONSchema7Definition]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
       
       inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
       
-      inline def setAnyOfVarargs(value: JSONSchema7Definition*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+      inline def setAnyOfVarargs(value: JSONSchema7Definition*): Self = StObject.set(x, "anyOf", js.Array(value*))
       
       inline def setConst(value: JSONSchema7Type): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
       
@@ -1170,7 +1153,7 @@ object mod {
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: JSONSchema7Type*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: JSONSchema7Type*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setExamples(value: JSONSchema7Type): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
@@ -1198,7 +1181,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: JSONSchema7Definition*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: JSONSchema7Definition*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
@@ -1244,7 +1227,7 @@ object mod {
       
       inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
       
-      inline def setOneOfVarargs(value: JSONSchema7Definition*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+      inline def setOneOfVarargs(value: JSONSchema7Definition*): Self = StObject.set(x, "oneOf", js.Array(value*))
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
@@ -1270,7 +1253,7 @@ object mod {
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
       
       inline def setThen(value: JSONSchema7Definition): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
       
@@ -1284,7 +1267,7 @@ object mod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: JSONSchema7TypeName*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: JSONSchema7TypeName*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
       
@@ -1296,18 +1279,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait JSONSchema7Array
-    extends StObject
-       with Array[JSONSchema7Type]
-       with _JSONSchema7Type
+  type JSONSchema7Array = js.Array[JSONSchema7Type]
   
   type JSONSchema7Definition = JSONSchema7 | Boolean
   
   trait JSONSchema7Object
     extends StObject
        with /* key */ StringDictionary[JSONSchema7Type]
-       with _JSONSchema7Type
   object JSONSchema7Object {
     
     inline def apply(): JSONSchema7Object = {
@@ -1316,15 +1294,7 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - typings.jsonSchema.mod.JSONSchema7Object
-    - typings.jsonSchema.mod.JSONSchema7Array
-    - scala.Null
-  */
-  type JSONSchema7Type = _JSONSchema7Type | String | Double | Boolean | Null
+  type JSONSchema7Type = String | Double | Boolean | JSONSchema7Object | Any | Null
   
   /* Rewritten from type alias, can be one of: 
     - typings.jsonSchema.jsonSchemaStrings.string
@@ -1393,15 +1363,9 @@ object mod {
       
       inline def setErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait _JSONSchema4Type extends StObject
-  
-  trait _JSONSchema6Type extends StObject
-  
-  trait _JSONSchema7Type extends StObject
 }

@@ -34,7 +34,7 @@ object PropertyPath {
     
     inline def setItems(value: js.Array[IriTerm | PropertyPath]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: (IriTerm | PropertyPath)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (IriTerm | PropertyPath)*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setPathType(value: Verticalline | Slash | ^ | Plussign | Asterisk | Exclamationmark): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
     

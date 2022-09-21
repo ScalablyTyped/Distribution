@@ -76,11 +76,11 @@ object ButtomSettingsCommon {
   
   extension [Self <: ButtomSettingsCommon](x: Self) {
     
-    inline def setAction(value: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
+    inline def setAction(value: (/* e */ Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setAvailable(value: (/* dt */ Api, /* config */ js.Any) => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction2(value))
+    inline def setAvailable(value: (/* dt */ Api, /* config */ Any) => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction2(value))
     
     inline def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
@@ -88,7 +88,7 @@ object ButtomSettingsCommon {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setDestroy(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
+    inline def setDestroy(value: (/* dt */ Api, /* node */ JQuery, /* config */ Any) => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
@@ -100,7 +100,7 @@ object ButtomSettingsCommon {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setInit(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (/* dt */ Api, /* node */ JQuery, /* config */ Any) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
@@ -118,7 +118,7 @@ object ButtomSettingsCommon {
     
     inline def setText(value: String | FunctionButtonText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setTextFunction3(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => String): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
+    inline def setTextFunction3(value: (/* dt */ Api, /* node */ JQuery, /* config */ Any) => String): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     

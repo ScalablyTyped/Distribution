@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new OutputAudioConfig.
   * @param [properties] Properties to set
   */
-class OutputAudioConfig ()
+open class OutputAudioConfig ()
   extends StObject
      with IOutputAudioConfig {
   def this(properties: IOutputAudioConfig) = this()
@@ -33,7 +32,7 @@ class OutputAudioConfig ()
     * Converts this OutputAudioConfig to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object OutputAudioConfig {
   
@@ -50,6 +49,8 @@ object OutputAudioConfig {
   inline def create(): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OutputAudioConfig]
   inline def create(properties: IOutputAudioConfig): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
   
+  inline def decode(reader: js.typedarray.Uint8Array): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): OutputAudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OutputAudioConfig]
   /**
     * Decodes an OutputAudioConfig message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object OutputAudioConfig {
   /* static member */
   inline def decode(reader: Reader): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
   inline def decode(reader: Reader, length: Double): OutputAudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OutputAudioConfig]
-  inline def decode(reader: Uint8Array): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
-  inline def decode(reader: Uint8Array, length: Double): OutputAudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OutputAudioConfig]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
   /**
     * Decodes an OutputAudioConfig message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object OutputAudioConfig {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
-  inline def decodeDelimited(reader: Uint8Array): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
   
   /**
     * Encodes the specified OutputAudioConfig message. Does not implicitly {@link google.cloud.dialogflow.v2.OutputAudioConfig.verify|verify} messages.
@@ -101,7 +100,7 @@ object OutputAudioConfig {
     * @returns OutputAudioConfig
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
+  inline def fromObject(`object`: StringDictionary[Any]): OutputAudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OutputAudioConfig]
   
   /**
     * Creates a plain object from an OutputAudioConfig message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object OutputAudioConfig {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: OutputAudioConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: OutputAudioConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: OutputAudioConfig): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: OutputAudioConfig, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an OutputAudioConfig message.
@@ -119,5 +118,5 @@ object OutputAudioConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

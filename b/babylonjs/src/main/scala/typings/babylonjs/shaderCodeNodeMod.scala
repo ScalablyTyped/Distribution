@@ -10,7 +10,7 @@ object shaderCodeNodeMod {
   
   @JSImport("babylonjs/Engines/Processors/shaderCodeNode", "ShaderCodeNode")
   @js.native
-  class ShaderCodeNode () extends StObject {
+  open class ShaderCodeNode () extends StObject {
     
     var additionalDefineKey: js.UndefOr[String] = js.native
     

@@ -37,7 +37,7 @@ object typesMod {
       
       inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -51,7 +51,7 @@ object typesMod {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

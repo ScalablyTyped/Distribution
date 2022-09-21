@@ -11,7 +11,7 @@ trait InstructionOutput extends StObject {
   var codec: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.InstructionOutput & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.InstructionOutput & TopLevel[Any]
   ] = js.undefined
   
   /** The user-provided name of this output. */
@@ -41,7 +41,7 @@ object InstructionOutput {
     inline def setCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.InstructionOutput & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.InstructionOutput & TopLevel[Any]
     ): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)

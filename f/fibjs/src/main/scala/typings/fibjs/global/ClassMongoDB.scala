@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_MongoDB")
 @js.native
-class ClassMongoDB ()
+open class ClassMongoDB ()
   extends StObject
      with typings.fibjs.ClassMongoDB

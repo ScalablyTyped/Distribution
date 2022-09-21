@@ -29,17 +29,17 @@ trait Get extends StObject {
     * Lists all the emojis available to use on GitHub.
     */
   @JSName("get")
-  var get_Original: `123`
+  var get_Original: `238`
 }
 object Get {
   
-  inline def apply(get: `123`): Get = {
+  inline def apply(get: `238`): Get = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Get]
   }
   
   extension [Self <: Get](x: Self) {
     
-    inline def setGet(value: `123`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `238`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

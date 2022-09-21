@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "DisplayPassPostProcess")
 @js.native
-class DisplayPassPostProcess protected ()
+open class DisplayPassPostProcess protected ()
   extends typings.babylonjs.indexMod.DisplayPassPostProcess {
   /**
     * Creates the DisplayPassPostProcess
@@ -133,9 +133,15 @@ object DisplayPassPostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String

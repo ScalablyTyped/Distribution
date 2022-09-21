@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/invalid-dependency" : "1.0.0-rc.3"
+      "@aws-sdk/invalid-dependency" : "3.171.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/invalid-dependency" : "1.0.0-rc.3"
+      "@aws-sdk/invalid-dependency" : "3.171.0"
     }
   ],
   "compile-devDependencies" : [

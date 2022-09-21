@@ -9,10 +9,10 @@ trait KnockoutSecureBindingOptions extends StObject {
   var attribute: js.UndefOr[String] = js.undefined
   
   var bindings: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandlers */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandlers */ Any
   ] = js.undefined
   
-  var globals: js.UndefOr[js.Any] = js.undefined
+  var globals: js.UndefOr[Any] = js.undefined
   
   var noVirtualElements: js.UndefOr[Boolean] = js.undefined
 }
@@ -30,12 +30,12 @@ object KnockoutSecureBindingOptions {
     inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
     inline def setBindings(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandlers */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandlers */ Any
     ): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    inline def setGlobals(value: js.Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     

@@ -32,7 +32,7 @@ object VideoRecorderOptions {
     
     inline def setAudioTracksUndefined: Self = StObject.set(x, "audioTracks", js.undefined)
     
-    inline def setAudioTracksVarargs(value: MediaStreamTrack*): Self = StObject.set(x, "audioTracks", js.Array(value :_*))
+    inline def setAudioTracksVarargs(value: MediaStreamTrack*): Self = StObject.set(x, "audioTracks", js.Array(value*))
     
     inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     

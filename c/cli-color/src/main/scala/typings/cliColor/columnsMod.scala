@@ -3,7 +3,6 @@ package typings.cliColor
 import typings.cliColor.cliColorStrings.left
 import typings.cliColor.cliColorStrings.right
 import typings.std.ArrayLike
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +12,8 @@ object columnsMod {
   /**
     * Outputs aligned table of columns.
     */
-  inline def apply(data: js.Array[js.Array[js.Any]]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(data: js.Array[js.Array[js.Any]], options: ColumnsOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: js.Array[js.Array[Any]]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(data: js.Array[js.Array[Any]], options: ColumnsOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(data: Data): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def apply(data: Data, options: ColumnsOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -69,7 +68,7 @@ object columnsMod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: (ColumnOptions | Null)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnOptions | Null)*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
       
@@ -77,7 +76,7 @@ object columnsMod {
     }
   }
   
-  type Data = Iterable[Row] | ArrayLike[Row]
+  type Data = js.Iterable[Row] | ArrayLike[Row]
   
-  type Row = Iterable[js.Any] | ArrayLike[js.Any]
+  type Row = js.Iterable[Any] | ArrayLike[Any]
 }

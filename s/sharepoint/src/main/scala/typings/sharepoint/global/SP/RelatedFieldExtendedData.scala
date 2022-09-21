@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RelatedFieldExtendedData")
 @js.native
-class RelatedFieldExtendedData ()
+open class RelatedFieldExtendedData ()
   extends StObject
      with typings.sharepoint.SP.RelatedFieldExtendedData

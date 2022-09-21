@@ -33,6 +33,6 @@ object DescribeRetentionConfigurationsResponse {
     
     inline def setRetentionConfigurationsUndefined: Self = StObject.set(x, "RetentionConfigurations", js.undefined)
     
-    inline def setRetentionConfigurationsVarargs(value: RetentionConfiguration*): Self = StObject.set(x, "RetentionConfigurations", js.Array(value :_*))
+    inline def setRetentionConfigurationsVarargs(value: RetentionConfiguration*): Self = StObject.set(x, "RetentionConfigurations", js.Array(value*))
   }
 }

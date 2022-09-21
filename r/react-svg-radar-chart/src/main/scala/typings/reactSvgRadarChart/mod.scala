@@ -14,8 +14,8 @@ object mod {
   
   @JSImport("react-svg-radar-chart", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ChartProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ChartProps, js.Object, Any]
   
   trait ChartData extends StObject {
     
@@ -97,7 +97,7 @@ object mod {
     var size: js.UndefOr[Double] = js.undefined
     
     /** custom smoothing fn */
-    var smoothing: js.UndefOr[js.Function1[/* points */ js.Array[js.Array[js.Any]], String]] = js.undefined
+    var smoothing: js.UndefOr[js.Function1[/* points */ js.Array[js.Array[Any]], String]] = js.undefined
     
     /**
       * where on the axes are the captions
@@ -162,7 +162,7 @@ object mod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSmoothing(value: /* points */ js.Array[js.Array[js.Any]] => String): Self = StObject.set(x, "smoothing", js.Any.fromFunction1(value))
+      inline def setSmoothing(value: /* points */ js.Array[js.Array[Any]] => String): Self = StObject.set(x, "smoothing", js.Any.fromFunction1(value))
       
       inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
       
@@ -195,7 +195,7 @@ object mod {
       
       inline def setData(value: js.Array[ChartData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: ChartData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ChartData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setOptions(value: ChartOptionsProps): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -205,5 +205,5 @@ object mod {
     }
   }
   
-  type RadarChart = Component[ChartProps, js.Object, js.Any]
+  type RadarChart = Component[ChartProps, js.Object, Any]
 }

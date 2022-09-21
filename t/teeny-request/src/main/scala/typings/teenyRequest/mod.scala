@@ -16,15 +16,17 @@ object mod {
   
   @JSImport("teeny-request", "RequestError")
   @js.native
-  class RequestError ()
+  open class RequestError ()
     extends StObject
        with Error {
     
     var code: js.UndefOr[Double] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -32,7 +34,7 @@ object mod {
   object teenyRequest {
     
     inline def apply(reqOpts: Options): Request = ^.asInstanceOf[js.Dynamic].apply(reqOpts.asInstanceOf[js.Any]).asInstanceOf[Request]
-    inline def apply(reqOpts: Options, callback: RequestCallback[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(reqOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(reqOpts: Options, callback: RequestCallback[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(reqOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("teeny-request", "teenyRequest")
     @js.native
@@ -44,7 +46,7 @@ object mod {
         /* defaults */ CoreOptions, 
         js.Function2[
           /* reqOpts */ Options, 
-          /* callback */ js.UndefOr[RequestCallback[js.Any]], 
+          /* callback */ js.UndefOr[RequestCallback[Any]], 
           Unit | Request
         ]
       ] = js.native
@@ -53,7 +55,7 @@ object mod {
           /* defaults */ CoreOptions, 
           js.Function2[
             /* reqOpts */ Options, 
-            /* callback */ js.UndefOr[RequestCallback[js.Any]], 
+            /* callback */ js.UndefOr[RequestCallback[Any]], 
             Unit | Request
           ]
         ]
@@ -80,7 +82,7 @@ object mod {
     
     var headers: js.UndefOr[Headers] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.undefined
+    var json: js.UndefOr[Any] = js.undefined
     
     var method: js.UndefOr[String] = js.undefined
     
@@ -90,7 +92,7 @@ object mod {
     
     var proxy: js.UndefOr[String] = js.undefined
     
-    var qs: js.UndefOr[js.Any] = js.undefined
+    var qs: js.UndefOr[Any] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
     
@@ -121,7 +123,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
@@ -133,7 +135,7 @@ object mod {
       
       inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
       
-      inline def setMultipartVarargs(value: RequestPart*): Self = StObject.set(x, "multipart", js.Array(value :_*))
+      inline def setMultipartVarargs(value: RequestPart*): Self = StObject.set(x, "multipart", js.Array(value*))
       
       inline def setPool(value: AgentOptions | typings.node.httpMod.AgentOptions): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,7 @@ object mod {
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      inline def setQs(value: js.Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+      inline def setQs(value: Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
       
       inline def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
       
@@ -157,7 +159,7 @@ object mod {
     }
   }
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.teenyRequest.mod.OptionsWithUri
@@ -228,8 +230,8 @@ object mod {
   }
   
   type RequestCallback[T] = js.Function3[
-    /* err */ Error | Null, 
-    /* response */ Response[js.Any], 
+    /* err */ js.Error | Null, 
+    /* response */ Response[Any], 
     /* body */ js.UndefOr[T], 
     Unit
   ]

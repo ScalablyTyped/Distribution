@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "KeyLocator")
 @js.native
-class KeyLocator ()
+open class KeyLocator ()
   extends typings.ndnJs.signatureMod.KeyLocator {
   def this(kl: typings.ndnJs.signatureMod.KeyLocator) = this()
 }

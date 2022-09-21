@@ -39,7 +39,7 @@ object typesGetBucketAclOutputMod {
       
       inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
       
-      inline def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value*))
       
       inline def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       

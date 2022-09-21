@@ -33,7 +33,7 @@ object XConditionalFormats {
     createByRange: XSheetCellRanges => Double,
     getConditionalFormats: () => SafeArray[XConditionalFormat],
     getLength: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByID: Double => Unit
   ): XConditionalFormats = {

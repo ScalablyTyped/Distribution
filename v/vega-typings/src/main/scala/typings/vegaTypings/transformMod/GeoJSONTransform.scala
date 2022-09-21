@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GeoJSONTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var fields: js.UndefOr[Vector2[FieldRef] | SignalRef] = js.undefined
   

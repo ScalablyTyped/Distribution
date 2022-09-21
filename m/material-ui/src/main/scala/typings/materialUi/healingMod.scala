@@ -10,10 +10,10 @@ object healingMod {
   
   @JSImport("material-ui/svg-icons/image/healing", JSImport.Default)
   @js.native
-  class default () extends ImageHealing
+  open class default () extends ImageHealing
   
   @JSImport("material-ui/svg-icons/image/healing", "ImageHealing")
   @js.native
-  class ImageHealing ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageHealing ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,8 +1,8 @@
 package typings.jsoneditor.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.mod.ErrorObject
+import typings.ajv.distTypesMod.ErrorObject
 import typings.std.HTMLElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait Node
   
   var `enum`: js.UndefOr[Null | js.Array[String]] = js.undefined
   
-  var error: js.UndefOr[ErrorObject] = js.undefined
+  var error: js.UndefOr[ErrorObject[String, Record[String, Any], Any]] = js.undefined
   
   var errorChild: js.UndefOr[Node] = js.undefined
   
@@ -52,7 +52,7 @@ trait Node
 object Node {
   
   inline def apply(
-    dom: StringDictionary[HTMLElement],
+    dom: Record[String, HTMLElement],
     editor: JSONEditor,
     field: String,
     fieldEditable: Boolean,
@@ -75,7 +75,7 @@ object Node {
     
     inline def setChildsUndefined: Self = StObject.set(x, "childs", js.undefined)
     
-    inline def setChildsVarargs(value: Node*): Self = StObject.set(x, "childs", js.Array(value :_*))
+    inline def setChildsVarargs(value: Node*): Self = StObject.set(x, "childs", js.Array(value*))
     
     inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
@@ -83,9 +83,9 @@ object Node {
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
     
-    inline def setError(value: ErrorObject): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorObject[String, Record[String, Any], Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorChild(value: Node): Self = StObject.set(x, "errorChild", value.asInstanceOf[js.Any])
     

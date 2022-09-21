@@ -3,11 +3,14 @@ package typings.backbone
 import typings.backbone.anon.Typeofbackbone
 import typings.backbone.mod.CombinedModelConstructorOptions
 import typings.backbone.mod.ModelSetOptions
+import typings.backbone.mod.ObjectHash
 import typings.backbone.mod.RouterOptions
 import typings.backbone.mod.ViewOptions
 import typings.jquery.JQueryAjaxSettings
 import typings.jquery.JQueryStatic
 import typings.jquery.JQueryXHR
+import typings.std.Element
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +25,10 @@ object global {
     
     @JSGlobal("Backbone.Collection")
     @js.native
-    class Collection[TModel /* <: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object] */] () extends StObject {
-      def this(models: js.Array[js.Object | TModel]) = this()
-      def this(models: js.Array[js.Object | TModel], options: js.Any) = this()
-      def this(models: Unit, options: js.Any) = this()
+    open class Collection[TModel /* <: typings.backbone.mod.Model[Any, ModelSetOptions, Any] */] () extends StObject {
+      def this(models: js.Array[(Record[String, Any]) | TModel]) = this()
+      def this(models: js.Array[(Record[String, Any]) | TModel], options: Any) = this()
+      def this(models: Unit, options: Any) = this()
     }
     object Collection {
       
@@ -35,10 +38,10 @@ object global {
       
       /**
         * Do not use, prefer TypeScript's extend functionality.
-        **/
+        */
       /* static member */
-      inline def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def extend(properties: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+      inline def extend(properties: Any, classProperties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
     }
     
     @JSGlobal("Backbone.Events")
@@ -61,7 +64,7 @@ object global {
     
     @JSGlobal("Backbone.History")
     @js.native
-    class History_ () extends StObject
+    open class History_ () extends StObject
     object History_ {
       
       @JSGlobal("Backbone.History")
@@ -81,15 +84,15 @@ object global {
       */
     @JSGlobal("Backbone.Model")
     @js.native
-    class Model[T, S, E] () extends StObject {
+    open class Model[T /* <: ObjectHash */, S, E] () extends StObject {
       def this(attributes: T) = this()
       def this(
         attributes: T,
-        options: CombinedModelConstructorOptions[E, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
+        options: CombinedModelConstructorOptions[E, typings.backbone.mod.Model[Any, ModelSetOptions, Any]]
       ) = this()
       def this(
         attributes: Unit,
-        options: CombinedModelConstructorOptions[E, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
+        options: CombinedModelConstructorOptions[E, typings.backbone.mod.Model[Any, ModelSetOptions, Any]]
       ) = this()
     }
     object Model {
@@ -100,19 +103,19 @@ object global {
       
       /**
         * Do not use, prefer TypeScript's extend functionality.
-        **/
+        */
       /* static member */
-      inline def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def extend(properties: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+      inline def extend(properties: Any, classProperties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
     }
     
     @JSGlobal("Backbone.ModelBase")
     @js.native
-    class ModelBase () extends StObject
+    open class ModelBase () extends StObject
     
     @JSGlobal("Backbone.Router")
     @js.native
-    class Router () extends StObject {
+    open class Router () extends StObject {
       def this(options: RouterOptions) = this()
     }
     object Router {
@@ -123,16 +126,16 @@ object global {
       
       /**
         * Do not use, prefer TypeScript's extend functionality.
-        **/
+        */
       /* static member */
-      inline def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def extend(properties: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+      inline def extend(properties: Any, classProperties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
     }
     
     @JSGlobal("Backbone.View")
     @js.native
-    class View[TModel /* <: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object] */] () extends StObject {
-      def this(options: ViewOptions[TModel]) = this()
+    open class View[TModel /* <: js.UndefOr[typings.backbone.mod.Model[Any, ModelSetOptions, Any]] */, TElement /* <: Element */] () extends StObject {
+      def this(options: ViewOptions[TModel, TElement]) = this()
     }
     object View {
       
@@ -142,10 +145,10 @@ object global {
       
       /**
         * Do not use, prefer TypeScript's extend functionality.
-        **/
+        */
       /* static member */
-      inline def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def extend(properties: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+      inline def extend(properties: Any, classProperties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
     }
     
     @JSGlobal("Backbone.$")
@@ -169,27 +172,26 @@ object global {
     
     @JSGlobal("Backbone.history")
     @js.native
-    def history: typings.backbone.mod.History_ = js.native
-    inline def history_=(x: typings.backbone.mod.History_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
+    val history: typings.backbone.mod.History_ = js.native
     
     // Utility
     inline def noConflict(): Typeofbackbone = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Typeofbackbone]
     
     inline def sync(
       method: String,
-      model: typings.backbone.mod.Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      model: typings.backbone.mod.Collection[typings.backbone.mod.Model[Any, ModelSetOptions, Any]]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def sync(
       method: String,
-      model: typings.backbone.mod.Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]],
+      model: typings.backbone.mod.Collection[typings.backbone.mod.Model[Any, ModelSetOptions, Any]],
       options: JQueryAjaxSettings
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     // SYNC
-    inline def sync(method: String, model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def sync(method: String, model: typings.backbone.mod.Model[Any, ModelSetOptions, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def sync(
       method: String,
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
+      model: typings.backbone.mod.Model[Any, ModelSetOptions, Any],
       options: JQueryAjaxSettings
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

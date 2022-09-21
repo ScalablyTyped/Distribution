@@ -29,7 +29,7 @@ object CacheEngineVersionMessage {
     
     inline def setCacheEngineVersionsUndefined: Self = StObject.set(x, "CacheEngineVersions", js.undefined)
     
-    inline def setCacheEngineVersionsVarargs(value: CacheEngineVersion*): Self = StObject.set(x, "CacheEngineVersions", js.Array(value :_*))
+    inline def setCacheEngineVersionsVarargs(value: CacheEngineVersion*): Self = StObject.set(x, "CacheEngineVersions", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

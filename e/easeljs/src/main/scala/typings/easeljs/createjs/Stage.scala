@@ -53,5 +53,5 @@ trait Stage
   
   def toDataURL(backgroundColor: String, mimeType: String): String = js.native
   
-  def update(arg: js.Any*): Unit = js.native
+  def update(arg: Any*): Unit = js.native
 }

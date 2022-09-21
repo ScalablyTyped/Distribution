@@ -1,7 +1,7 @@
 
 # Scala.js typings for date-io__core
 
-Typings are for version 2.10.6
+Typings are for version 2.15.0
 
 ## Library description:
 Abstraction over common javascript date management libraries
@@ -10,10 +10,10 @@ Abstraction over common javascript date management libraries
 | ------------------ | :-------------: |
 | Full name          | @date-io/core |
 | Keywords           | date, time, date-io, picker, date-fns, moment, luxon |
-| # releases         | 29 |
-| # dependents       | 62 |
-| # downloads        | 24175399 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 7128799.0 |
+| # stars            | 560.0 |
 
 ## Links
 - [Homepage](https://github.com/dmtrKovalenko/date-io#readme)

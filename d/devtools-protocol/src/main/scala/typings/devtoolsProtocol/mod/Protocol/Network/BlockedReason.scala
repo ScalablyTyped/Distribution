@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.inspector
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`subresource-filter`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`content-type`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`collapsed-by-client`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`coep-frame-resource-needs-coep-header`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`coop-sandboxed-iframe-cannot-navigate-to-coop-page`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`corp-not-same-origin`
@@ -24,8 +23,6 @@ trait BlockedReason extends StObject
 object BlockedReason {
   
   inline def `coep-frame-resource-needs-coep-header`: typings.devtoolsProtocol.devtoolsProtocolStrings.`coep-frame-resource-needs-coep-header` = "coep-frame-resource-needs-coep-header".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`coep-frame-resource-needs-coep-header`]
-  
-  inline def `collapsed-by-client`: typings.devtoolsProtocol.devtoolsProtocolStrings.`collapsed-by-client` = "collapsed-by-client".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`collapsed-by-client`]
   
   inline def `content-type`: typings.devtoolsProtocol.devtoolsProtocolStrings.`content-type` = "content-type".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`content-type`]
   

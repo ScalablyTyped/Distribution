@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DatafeedStatusError extends StObject {
   
-  /** The code of the error, e.g., "validation/invalid_value". */
+  /** The code of the error, for example, "validation/invalid_value". */
   var code: js.UndefOr[String] = js.undefined
   
   /** The number of occurrences of the error in the feed. */
@@ -15,7 +15,7 @@ trait DatafeedStatusError extends StObject {
   /** A list of example occurrences of the error, grouped by product. */
   var examples: js.UndefOr[js.Array[DatafeedStatusExample]] = js.undefined
   
-  /** The error message, e.g., "Invalid price". */
+  /** The error message, for example, "Invalid price". */
   var message: js.UndefOr[String] = js.undefined
 }
 object DatafeedStatusError {
@@ -39,7 +39,7 @@ object DatafeedStatusError {
     
     inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    inline def setExamplesVarargs(value: DatafeedStatusExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: DatafeedStatusExample*): Self = StObject.set(x, "examples", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

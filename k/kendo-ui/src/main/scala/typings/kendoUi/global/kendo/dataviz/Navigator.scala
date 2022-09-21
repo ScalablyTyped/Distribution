@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.dataviz.Navigator")
 @js.native
-class Navigator ()
+open class Navigator ()
   extends StObject
      with typings.kendoUi.kendo.dataviz.Navigator

@@ -13,7 +13,7 @@ object bottomBlockViewMod {
   
   @JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block.view", JSImport.Default)
   @js.native
-  class default protected () extends BottomBlockView {
+  open class default protected () extends BottomBlockView {
     def this(config: IBottomBlockViewConfig) = this()
   }
   
@@ -22,29 +22,26 @@ object bottomBlockViewMod {
     extends typings.playable.viewMod.default[IBottomBlockViewStyles] {
     
     /* private */ @JSName("_$leftControllsContainer")
-    var _$leftControllsContainer: js.Any = js.native
+    var _$leftControllsContainer: Any = js.native
     
     /* private */ @JSName("_$rightControllsContainer")
-    var _$rightControllsContainer: js.Any = js.native
+    var _$rightControllsContainer: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _preventClickPropagation: js.Any = js.native
+    /* private */ var _preventClickPropagation: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def addControl(key: String, element: HTMLElement): Unit = js.native
-    @JSName("addControl")
-    def addControl_left(key: String, element: HTMLElement, position: left): Unit = js.native
-    @JSName("addControl")
-    def addControl_right(key: String, element: HTMLElement, position: right): Unit = js.native
+    def addControl(key: String, element: HTMLElement, position: left | right): Unit = js.native
     
     def destroy(): Unit = js.native
     

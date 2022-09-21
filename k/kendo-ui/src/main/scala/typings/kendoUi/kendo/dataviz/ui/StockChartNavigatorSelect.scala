@@ -1,17 +1,16 @@
 package typings.kendoUi.kendo.dataviz.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait StockChartNavigatorSelect extends StObject {
   
-  var from: js.UndefOr[Date] = js.undefined
+  var from: js.UndefOr[js.Date] = js.undefined
   
   var mousewheel: js.UndefOr[Boolean | StockChartNavigatorSelectMousewheel] = js.undefined
   
-  var to: js.UndefOr[Date] = js.undefined
+  var to: js.UndefOr[js.Date] = js.undefined
 }
 object StockChartNavigatorSelect {
   
@@ -22,7 +21,7 @@ object StockChartNavigatorSelect {
   
   extension [Self <: StockChartNavigatorSelect](x: Self) {
     
-    inline def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: js.Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
@@ -30,7 +29,7 @@ object StockChartNavigatorSelect {
     
     inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
-    inline def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }

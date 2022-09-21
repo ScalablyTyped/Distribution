@@ -15,7 +15,7 @@ trait SparkColor extends StObject {
   /* private */ @JSName("Excel.SparkColor_typekey")
   var ExcelDotSparkColor_typekey: SparkColor
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Visible: Boolean
 }
@@ -26,7 +26,7 @@ object SparkColor {
     Color: FormatColor,
     Creator: XlCreator,
     ExcelDotSparkColor_typekey: SparkColor,
-    Parent: js.Any,
+    Parent: Any,
     Visible: Boolean
   ): SparkColor = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object SparkColor {
     
     inline def setExcelDotSparkColor_typekey(value: SparkColor): Self = StObject.set(x, "Excel.SparkColor_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }

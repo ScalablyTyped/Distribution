@@ -23,7 +23,7 @@ object ReturnTypeReadResponse {
     
     inline def setParamsType(value: js.Array[ReadRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: ReadRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: ReadRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: ReadResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

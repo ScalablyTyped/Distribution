@@ -11,9 +11,9 @@ minimal Least Recently Used Cache
 | Full name          | simple-lru |
 | Keywords           | cache, LRU |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 11075 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 595.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/smagch/simple-lru)

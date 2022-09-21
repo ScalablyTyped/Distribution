@@ -13,7 +13,7 @@ object sgdOptimizerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/optimizers/sgd_optimizer", "SGDOptimizer")
   @js.native
-  class SGDOptimizer protected () extends Optimizer {
+  open class SGDOptimizer protected () extends Optimizer {
     def this(learningRate: Double) = this()
     
     /* protected */ var c: Scalar = js.native

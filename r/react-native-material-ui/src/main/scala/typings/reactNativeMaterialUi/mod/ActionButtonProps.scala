@@ -37,7 +37,7 @@ object ActionButtonProps {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: (Element | typings.reactNativeMaterialUi.anon.Icon | String)*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (Element | typings.reactNativeMaterialUi.anon.Icon | String)*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

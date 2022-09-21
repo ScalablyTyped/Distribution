@@ -25,7 +25,7 @@ object PutResponseData {
     
     inline def setData(value: js.Array[js.Object]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "Data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "Data", js.Array(value*))
     
     inline def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
   }

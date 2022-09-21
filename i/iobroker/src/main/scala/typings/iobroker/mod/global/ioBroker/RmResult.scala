@@ -10,24 +10,19 @@ trait RmResult extends StObject {
   /** The name of the deleted file or directory */
   var file: String
   
-  /** Whether the deleted object was a directory or a file */
-  var isDir: Boolean
-  
   /** The parent directory of the deleted file or directory */
   var path: String
 }
 object RmResult {
   
-  inline def apply(file: String, isDir: Boolean, path: String): RmResult = {
-    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  inline def apply(file: String, path: String): RmResult = {
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[RmResult]
   }
   
   extension [Self <: RmResult](x: Self) {
     
     inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-    
-    inline def setIsDir(value: Boolean): Self = StObject.set(x, "isDir", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,7 @@ object ReorderReceiptRuleSetRequest {
     
     inline def setRuleNames(value: ReceiptRuleNamesList): Self = StObject.set(x, "RuleNames", value.asInstanceOf[js.Any])
     
-    inline def setRuleNamesVarargs(value: ReceiptRuleName*): Self = StObject.set(x, "RuleNames", js.Array(value :_*))
+    inline def setRuleNamesVarargs(value: ReceiptRuleName*): Self = StObject.set(x, "RuleNames", js.Array(value*))
     
     inline def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
   }

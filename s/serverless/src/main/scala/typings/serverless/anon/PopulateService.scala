@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PopulateService extends StObject {
   
-  def populateService(): js.Promise[js.Any]
+  def populateService(): js.Promise[Any]
 }
 object PopulateService {
   
-  inline def apply(populateService: () => js.Promise[js.Any]): PopulateService = {
+  inline def apply(populateService: () => js.Promise[Any]): PopulateService = {
     val __obj = js.Dynamic.literal(populateService = js.Any.fromFunction0(populateService))
     __obj.asInstanceOf[PopulateService]
   }
   
   extension [Self <: PopulateService](x: Self) {
     
-    inline def setPopulateService(value: () => js.Promise[js.Any]): Self = StObject.set(x, "populateService", js.Any.fromFunction0(value))
+    inline def setPopulateService(value: () => js.Promise[Any]): Self = StObject.set(x, "populateService", js.Any.fromFunction0(value))
   }
 }

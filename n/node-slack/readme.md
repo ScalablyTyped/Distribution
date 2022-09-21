@@ -9,10 +9,10 @@ Send and receive Slack Webhooks easily!
 | ------------------ | :-------------: |
 | Full name          | node-slack |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 56 |
-| # downloads        | 972554 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 106420.33333333333 |
+| # stars            | 385.0 |
 
 ## Links
 - [Homepage](https://github.com/xoxco/node-slack)

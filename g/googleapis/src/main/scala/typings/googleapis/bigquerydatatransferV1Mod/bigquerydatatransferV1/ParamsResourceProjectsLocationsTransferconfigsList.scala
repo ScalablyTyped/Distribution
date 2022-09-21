@@ -1,9 +1,5 @@
 package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceProjectsLocationsTransferconfigsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * When specified, only configurations of requested data sources are
-    * returned.
+    * When specified, only configurations of requested data sources are returned.
     */
   var dataSourceIds: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -29,16 +19,12 @@ trait ParamsResourceProjectsLocationsTransferconfigsList
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Pagination token, which can be used to request a specific page of
-    * `ListTransfersRequest` list results. For multiple-page results,
-    * `ListTransfersResponse` outputs a `next_page` token, which can be used as
-    * the `page_token` value to request the next page of list results.
+    * Pagination token, which can be used to request a specific page of `ListTransfersRequest` list results. For multiple-page results, `ListTransfersResponse` outputs a `next_page` token, which can be used as the `page_token` value to request the next page of list results.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The BigQuery project id for which data sources should be returned:
-    * `projects/{project_id}`.
+    * Required. The BigQuery project id for which transfer configs should be returned: `projects/{project_id\}` or `projects/{project_id\}/locations/{location_id\}`
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -51,15 +37,11 @@ object ParamsResourceProjectsLocationsTransferconfigsList {
   
   extension [Self <: ParamsResourceProjectsLocationsTransferconfigsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setDataSourceIds(value: js.Array[String]): Self = StObject.set(x, "dataSourceIds", value.asInstanceOf[js.Any])
     
     inline def setDataSourceIdsUndefined: Self = StObject.set(x, "dataSourceIds", js.undefined)
     
-    inline def setDataSourceIdsVarargs(value: String*): Self = StObject.set(x, "dataSourceIds", js.Array(value :_*))
+    inline def setDataSourceIdsVarargs(value: String*): Self = StObject.set(x, "dataSourceIds", js.Array(value*))
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

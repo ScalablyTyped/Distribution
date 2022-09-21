@@ -1,5 +1,16 @@
 package typings.googleCloudStorage
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.gaxios.commonMod.GaxiosOptions
+import typings.gaxios.commonMod.GaxiosPromise
+import typings.gaxios.commonMod.GaxiosResponse
+import typings.googleCloudStorage.crc32cMod.CRC32CValidator
+import typings.googleCloudStorage.crc32cMod.CRC32CValidatorGenerator
+import typings.googleCloudStorage.utilMod.ApiError
+import typings.googleCloudStorage.utilMod.GoogleErrorBody
+import typings.googleCloudStorage.utilMod.GoogleInnerError
+import typings.teenyRequest.mod.CoreOptions
+import typings.teenyRequest.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +35,25 @@ object anon {
       inline def setCallback(value: U): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ContentType extends StObject {
+    
+    var contentType: js.UndefOr[String] = js.undefined
+  }
+  object ContentType {
+    
+    inline def apply(): ContentType = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ContentType]
+    }
+    
+    extension [Self <: ContentType](x: Self) {
+      
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     }
   }
   
@@ -77,6 +107,104 @@ object anon {
     }
   }
   
+  @js.native
+  trait OnAuthenticated extends StObject {
+    
+    def onAuthenticated(): Unit = js.native
+    def onAuthenticated(err: js.Error): Unit = js.native
+    def onAuthenticated(err: js.Error, authenticatedReqOpts: Options): Unit = js.native
+    def onAuthenticated(err: Null, authenticatedReqOpts: Options): Unit = js.native
+  }
+  
+  /* Inlined std.Partial<@google-cloud/storage.@google-cloud/storage/build/src/hash-stream-validator.HashStreamValidatorOptions> */
+  trait PartialHashStreamValidato extends StObject {
+    
+    var crc32c: js.UndefOr[Boolean] = js.undefined
+    
+    var crc32cGenerator: js.UndefOr[CRC32CValidatorGenerator] = js.undefined
+    
+    var md5: js.UndefOr[Boolean] = js.undefined
+  }
+  object PartialHashStreamValidato {
+    
+    inline def apply(): PartialHashStreamValidato = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialHashStreamValidato]
+    }
+    
+    extension [Self <: PartialHashStreamValidato](x: Self) {
+      
+      inline def setCrc32c(value: Boolean): Self = StObject.set(x, "crc32c", value.asInstanceOf[js.Any])
+      
+      inline def setCrc32cGenerator(value: () => CRC32CValidator): Self = StObject.set(x, "crc32cGenerator", js.Any.fromFunction0(value))
+      
+      inline def setCrc32cGeneratorUndefined: Self = StObject.set(x, "crc32cGenerator", js.undefined)
+      
+      inline def setCrc32cUndefined: Self = StObject.set(x, "crc32c", js.undefined)
+      
+      inline def setMd5(value: Boolean): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+      
+      inline def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
+    }
+  }
+  
+  trait ReqOpts extends StObject {
+    
+    var reqOpts: js.UndefOr[CoreOptions] = js.undefined
+  }
+  object ReqOpts {
+    
+    inline def apply(): ReqOpts = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ReqOpts]
+    }
+    
+    extension [Self <: ReqOpts](x: Self) {
+      
+      inline def setReqOpts(value: CoreOptions): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
+      
+      inline def setReqOptsUndefined: Self = StObject.set(x, "reqOpts", js.undefined)
+    }
+  }
+  
+  trait Request extends StObject {
+    
+    def request[T](opts: GaxiosOptions): js.Promise[GaxiosResponse[T]] | GaxiosPromise[T]
+  }
+  object Request {
+    
+    inline def apply(request: GaxiosOptions => js.Promise[GaxiosResponse[Any]] | GaxiosPromise[Any]): Request = {
+      val __obj = js.Dynamic.literal(request = js.Any.fromFunction1(request))
+      __obj.asInstanceOf[Request]
+    }
+    
+    extension [Self <: Request](x: Self) {
+      
+      inline def setRequest(value: GaxiosOptions => js.Promise[GaxiosResponse[Any]] | GaxiosPromise[Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait Scopes extends StObject {
+    
+    var scopes: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object Scopes {
+    
+    inline def apply(): Scopes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Scopes]
+    }
+    
+    extension [Self <: Scopes](x: Self) {
+      
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
+    }
+  }
+  
   trait StorageClass extends StObject {
     
     var storageClass: js.UndefOr[String] = js.undefined
@@ -98,6 +226,48 @@ object anon {
       inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
+  trait TypeofApiError
+    extends StObject
+       with Instantiable1[/* errorMessage */ String, ApiError] {
+    
+    /**
+      * Pieces together an error message by combining all unique error messages
+      * returned from a single GoogleError
+      *
+      * @private
+      *
+      * @param {GoogleErrorBody} err The original error.
+      * @param {GoogleInnerError[]} [errors] Inner errors, if any.
+      * @returns {string}
+      */
+    def createMultiErrorMessage(err: GoogleErrorBody): String = js.native
+    def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = js.native
+  }
+  
+  trait UserAgent extends StObject {
+    
+    var `User-Agent`: String
+    
+    var `x-goog-api-client`: String
+  }
+  object UserAgent {
+    
+    inline def apply(`User-Agent`: String, `x-goog-api-client`: String): UserAgent = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("User-Agent")(`User-Agent`.asInstanceOf[js.Any])
+      __obj.updateDynamic("x-goog-api-client")(`x-goog-api-client`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UserAgent]
+    }
+    
+    extension [Self <: UserAgent](x: Self) {
+      
+      inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+      
+      inline def `setX-goog-api-client`(value: String): Self = StObject.set(x, "x-goog-api-client", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * @OutputOnly A representation of the status of an ad in a specific context.
-  * A context here relates to where something ultimately serves (for example, a
-  * user or publisher geo, a platform, an HTTPS vs HTTP request, or the type of
-  * auction).
-  */
 trait SchemaServingRestriction extends StObject {
   
   /**
@@ -18,24 +12,19 @@ trait SchemaServingRestriction extends StObject {
   var contexts: js.UndefOr[js.Array[SchemaServingContext]] = js.undefined
   
   /**
-    * Disapproval bound to this restriction. Only present if
-    * status=DISAPPROVED. Can be used to filter the response of the
-    * creatives.list method.
+    * Disapproval bound to this restriction. Only present if status=DISAPPROVED. Can be used to filter the response of the creatives.list method.
     */
   var disapproval: js.UndefOr[SchemaDisapproval] = js.undefined
   
   /**
-    * Any disapprovals bound to this restriction. Only present if
-    * status=DISAPPROVED. Can be used to filter the response of the
-    * creatives.list method. Deprecated; please use disapproval field instead.
+    * Any disapprovals bound to this restriction. Only present if status=DISAPPROVED. Can be used to filter the response of the creatives.list method. Deprecated; please use disapproval field instead.
     */
   var disapprovalReasons: js.UndefOr[js.Array[SchemaDisapproval]] = js.undefined
   
   /**
-    * The status of the creative in this context (for example, it has been
-    * explicitly disapproved or is pending review).
+    * The status of the creative in this context (for example, it has been explicitly disapproved or is pending review).
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaServingRestriction {
   
@@ -50,7 +39,7 @@ object SchemaServingRestriction {
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: SchemaServingContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: SchemaServingContext*): Self = StObject.set(x, "contexts", js.Array(value*))
     
     inline def setDisapproval(value: SchemaDisapproval): Self = StObject.set(x, "disapproval", value.asInstanceOf[js.Any])
     
@@ -58,11 +47,13 @@ object SchemaServingRestriction {
     
     inline def setDisapprovalReasonsUndefined: Self = StObject.set(x, "disapprovalReasons", js.undefined)
     
-    inline def setDisapprovalReasonsVarargs(value: SchemaDisapproval*): Self = StObject.set(x, "disapprovalReasons", js.Array(value :_*))
+    inline def setDisapprovalReasonsVarargs(value: SchemaDisapproval*): Self = StObject.set(x, "disapprovalReasons", js.Array(value*))
     
     inline def setDisapprovalUndefined: Self = StObject.set(x, "disapproval", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

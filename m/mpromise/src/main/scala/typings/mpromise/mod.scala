@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("mpromise", JSImport.Namespace)
   @js.native
-  class ^[F, R] ()
+  open class ^[F, R] ()
     extends StObject
        with Promise[F, R] {
     def this(fn: IResolveFunction[F, R]) = this()

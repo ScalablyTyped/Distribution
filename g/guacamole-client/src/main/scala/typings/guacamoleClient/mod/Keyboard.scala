@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "Keyboard")
 @js.native
-class Keyboard protected ()
+/**
+  * @param element
+  * The Element to use to provide keyboard events. If omitted, at least one
+  * Element must be manually provided through the listenTo() function for
+  * the Guacamole.Keyboard instance to have any effect.
+  */
+open class Keyboard ()
   extends typings.guacamoleClient.keyboardMod.Keyboard {
-  /**
-    * @param element
-    * The Element to use to provide keyboard events. If omitted, at least one
-    * Element must be manually provided through the listenTo() function for
-    * the Guacamole.Keyboard instance to have any effect.
-    */
   def this(element: HTMLDocument) = this()
   def this(element: HTMLElement) = this()
 }
@@ -24,7 +24,7 @@ object Keyboard {
   
   @JSImport("guacamole-client", "Keyboard.ModifierState")
   @js.native
-  class ModifierState ()
+  open class ModifierState ()
     extends typings.guacamoleClient.keyboardMod.Keyboard.ModifierState
   /* static members */
   object ModifierState {

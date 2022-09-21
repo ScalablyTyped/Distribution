@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "UpdateWageSettingRequest")
 @js.native
-class UpdateWageSettingRequest () extends StObject {
+open class UpdateWageSettingRequest () extends StObject {
   
   /**
     * The new `WageSetting` object that will completely replace the existing one.

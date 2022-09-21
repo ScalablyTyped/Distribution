@@ -4,11 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @deprecated */
 trait StyleMedia extends StObject {
   
+  /* standard dom */
   def matchMedium(mediaquery: java.lang.String): scala.Boolean
   
-  val `type`: java.lang.String
+  /* standard dom */
+  var `type`: java.lang.String
 }
 object StyleMedia {
   

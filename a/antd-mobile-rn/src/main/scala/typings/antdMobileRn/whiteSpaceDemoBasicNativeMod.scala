@@ -9,9 +9,8 @@ object whiteSpaceDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/white-space/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends WhiteSpaceExample
+  open class default () extends WhiteSpaceExample
   
   @js.native
-  trait WhiteSpaceExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait WhiteSpaceExample extends Component[Any, Any, Any]
 }

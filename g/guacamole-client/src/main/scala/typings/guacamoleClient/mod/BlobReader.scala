@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "BlobReader")
 @js.native
-class BlobReader protected ()
+open class BlobReader protected ()
   extends typings.guacamoleClient.blobReaderMod.BlobReader {
   /**
     * @param stream The stream that data will be read from.

@@ -32,14 +32,14 @@ object Request {
     
     inline def setRequest(value: js.Array[String]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    inline def setRequestVarargs(value: String*): Self = StObject.set(x, "request", js.Array(value :_*))
+    inline def setRequestVarargs(value: String*): Self = StObject.set(x, "request", js.Array(value*))
     
     inline def setServer(value: js.Array[String]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    inline def setServerVarargs(value: String*): Self = StObject.set(x, "server", js.Array(value :_*))
+    inline def setServerVarargs(value: String*): Self = StObject.set(x, "server", js.Array(value*))
     
     inline def setToolkit(value: js.Array[String]): Self = StObject.set(x, "toolkit", value.asInstanceOf[js.Any])
     
-    inline def setToolkitVarargs(value: String*): Self = StObject.set(x, "toolkit", js.Array(value :_*))
+    inline def setToolkitVarargs(value: String*): Self = StObject.set(x, "toolkit", js.Array(value*))
   }
 }

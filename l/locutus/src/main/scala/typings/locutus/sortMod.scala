@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sortMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(inputArr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(inputArr: js.Any, sortFlags: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any], sortFlags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(inputArr: Unit, sortFlags: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any], sortFlags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(inputArr: Any): Any = ^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(inputArr: Any, sortFlags: Any): Any = (^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any], sortFlags.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(inputArr: Unit, sortFlags: Any): Any = (^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any], sortFlags.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/array/sort", JSImport.Namespace)
   @js.native

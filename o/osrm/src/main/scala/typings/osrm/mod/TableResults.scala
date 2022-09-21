@@ -12,6 +12,8 @@ trait TableResults extends StObject {
   
   var durations: js.Array[js.Array[Duration]]
   
+  var fallback_speed_cells: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var sources: js.Array[Waypoint]
 }
 object TableResults {
@@ -29,20 +31,26 @@ object TableResults {
     
     inline def setDestinations(value: js.Array[Waypoint]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    inline def setDestinationsVarargs(value: Waypoint*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Waypoint*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setDistances(value: js.Array[js.Array[Distance]]): Self = StObject.set(x, "distances", value.asInstanceOf[js.Any])
     
     inline def setDistancesUndefined: Self = StObject.set(x, "distances", js.undefined)
     
-    inline def setDistancesVarargs(value: js.Array[Distance]*): Self = StObject.set(x, "distances", js.Array(value :_*))
+    inline def setDistancesVarargs(value: js.Array[Distance]*): Self = StObject.set(x, "distances", js.Array(value*))
     
     inline def setDurations(value: js.Array[js.Array[Duration]]): Self = StObject.set(x, "durations", value.asInstanceOf[js.Any])
     
-    inline def setDurationsVarargs(value: js.Array[Duration]*): Self = StObject.set(x, "durations", js.Array(value :_*))
+    inline def setDurationsVarargs(value: js.Array[Duration]*): Self = StObject.set(x, "durations", js.Array(value*))
+    
+    inline def setFallback_speed_cells(value: js.Array[Double]): Self = StObject.set(x, "fallback_speed_cells", value.asInstanceOf[js.Any])
+    
+    inline def setFallback_speed_cellsUndefined: Self = StObject.set(x, "fallback_speed_cells", js.undefined)
+    
+    inline def setFallback_speed_cellsVarargs(value: Double*): Self = StObject.set(x, "fallback_speed_cells", js.Array(value*))
     
     inline def setSources(value: js.Array[Waypoint]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesVarargs(value: Waypoint*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Waypoint*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

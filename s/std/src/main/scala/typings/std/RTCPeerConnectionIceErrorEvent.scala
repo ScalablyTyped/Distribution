@@ -9,11 +9,18 @@ trait RTCPeerConnectionIceErrorEvent
   extends StObject
      with Event {
   
+  /* standard dom */
+  val address: java.lang.String | Null = js.native
+  
+  /* standard dom */
   val errorCode: Double = js.native
   
+  /* standard dom */
   val errorText: java.lang.String = js.native
   
-  val hostCandidate: java.lang.String = js.native
+  /* standard dom */
+  val port: Double | Null = js.native
   
+  /* standard dom */
   val url: java.lang.String = js.native
 }

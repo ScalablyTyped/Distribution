@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "AnimationRange")
 @js.native
-class AnimationRange protected ()
+open class AnimationRange protected ()
   extends typings.babylonjs.animationsIndexMod.AnimationRange {
   /**
     * Initializes the range of an animation

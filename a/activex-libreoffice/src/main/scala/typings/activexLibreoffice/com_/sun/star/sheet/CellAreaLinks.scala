@@ -24,12 +24,12 @@ object CellAreaLinks {
     ElementType: `type`,
     acquire: () => Unit,
     createEnumeration: () => XEnumeration,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
     insertAtPosition: (CellAddress, String, String, String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: Double => Unit
   ): CellAreaLinks = {

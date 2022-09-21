@@ -6,20 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResolvedPluralRulesOptions extends StObject {
   
+  /* standard es2018.intl */
   var locale: String
   
+  /* standard es2018.intl */
   var maximumFractionDigits: Double
   
+  /* standard es2018.intl */
   var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
+  /* standard es2018.intl */
   var minimumFractionDigits: Double
   
+  /* standard es2018.intl */
   var minimumIntegerDigits: Double
   
+  /* standard es2018.intl */
   var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
+  /* standard es2018.intl */
   var pluralCategories: js.Array[LDMLPluralRule]
   
+  /* standard es2018.intl */
   var `type`: PluralRuleType
 }
 object ResolvedPluralRulesOptions {
@@ -57,7 +65,7 @@ object ResolvedPluralRulesOptions {
     
     inline def setPluralCategories(value: js.Array[LDMLPluralRule]): Self = StObject.set(x, "pluralCategories", value.asInstanceOf[js.Any])
     
-    inline def setPluralCategoriesVarargs(value: LDMLPluralRule*): Self = StObject.set(x, "pluralCategories", js.Array(value :_*))
+    inline def setPluralCategoriesVarargs(value: LDMLPluralRule*): Self = StObject.set(x, "pluralCategories", js.Array(value*))
     
     inline def setType(value: PluralRuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

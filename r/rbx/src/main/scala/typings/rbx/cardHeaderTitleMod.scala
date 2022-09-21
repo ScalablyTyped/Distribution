@@ -65,7 +65,7 @@ object cardHeaderTitleMod {
   
   @JSImport("rbx/components/card/card-header-title", "CardHeaderTitle")
   @js.native
-  val CardHeaderTitle: ForwardRefAsExoticComponent[CardHeaderTitleProps, ElementType[js.Any]] = js.native
+  val CardHeaderTitle: ForwardRefAsExoticComponent[CardHeaderTitleProps, ElementType[Any]] = js.native
   
   trait CardHeaderTitleModifierProps extends StObject {
     

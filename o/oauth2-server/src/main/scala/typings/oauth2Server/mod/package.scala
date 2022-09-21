@@ -1,21 +1,18 @@
 package typings.oauth2Server.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def OAuth2Server_=(
-  x: org.scalablytyped.runtime.Instantiable1[
-  /* options */ typings.oauth2Server.mod.ServerOptions, 
-  typings.oauth2Server.mod.OAuth2Server
-]
-): scala.Unit = typings.oauth2Server.mod.^.asInstanceOf[js.Dynamic].updateDynamic("OAuth2Server")(x.asInstanceOf[js.Any])
+inline def OAuth2Server_=(x: Instantiable1[/* options */ ServerOptions, OAuth2Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OAuth2Server")(x.asInstanceOf[js.Any])
 
 /**
   * Represents a generic callback structure for model callbacks
   */
-type Callback[T] = js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[T], scala.Unit]
+type Callback[T] = js.Function2[/* err */ js.UndefOr[Any], /* result */ js.UndefOr[T], Unit]
 
 /**
   * For returning falsey parameters in cases of failure
@@ -27,10 +24,10 @@ type Callback[T] = js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.Un
   - scala.Null
   - scala.Unit
 */
-type Falsey = js.UndefOr[typings.oauth2Server.mod._Falsey | scala.Null]
+type Falsey = js.UndefOr[_Falsey | Null]
 
 /**
   * An interface representing the user.
   * A user object is completely transparent to oauth2-server and is simply used as input to model functions.
   */
-type User = org.scalablytyped.runtime.StringDictionary[js.Any]
+type User = StringDictionary[Any]

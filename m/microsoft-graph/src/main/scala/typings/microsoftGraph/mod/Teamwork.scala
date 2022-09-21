@@ -25,6 +25,6 @@ object Teamwork {
     
     inline def setWorkforceIntegrationsUndefined: Self = StObject.set(x, "workforceIntegrations", js.undefined)
     
-    inline def setWorkforceIntegrationsVarargs(value: WorkforceIntegration*): Self = StObject.set(x, "workforceIntegrations", js.Array(value :_*))
+    inline def setWorkforceIntegrationsVarargs(value: WorkforceIntegration*): Self = StObject.set(x, "workforceIntegrations", js.Array(value*))
   }
 }

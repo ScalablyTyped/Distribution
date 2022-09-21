@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab", "ProjectMembers")
 @js.native
-class ProjectMembers protected ()
+open class ProjectMembers protected ()
   extends typings.gitlab.servicesMod.ProjectMembers {
   def this(options: BaseServiceOptions) = this()
 }

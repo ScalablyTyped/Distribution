@@ -1,6 +1,5 @@
 package typings.tabris.mod
 
-import typings.std.Error
 import typings.tabris.tabrisStrings.declined
 import typings.tabris.tabrisStrings.denied
 import typings.tabris.tabrisStrings.granted
@@ -12,7 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Permission")
 @js.native
-/* private */ class Permission_ () extends NativeObject {
+/**
+  * Allows to request runtime permissions which are required to access certain device features. Trying to
+  * access a Tabris.js API without a required permission will throw an `Error`.
+  * A permission can be either a category (supported on Android and iOS) or a specific Android permission
+  * name.
+  * See the [permissions documentation](../permissions.md) for full details on how to handle runtime
+  * permissions.
+  */
+/* private */ open class Permission_ () extends NativeObject {
   
   /**
     * Checks the authorization status for a given set of permissions.
@@ -58,14 +65,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   def withAuthorization(
     permissions: String,
-    onAuthorized: js.Function0[js.Any],
-    onUnauthorized: js.Function0[js.Any],
-    onError: js.Function1[/* error */ Error, js.Any]
+    onAuthorized: js.Function0[Any],
+    onUnauthorized: js.Function0[Any],
+    onError: js.Function1[/* error */ js.Error, Any]
   ): Unit = js.native
   def withAuthorization(
     permissions: js.Array[String],
-    onAuthorized: js.Function0[js.Any],
-    onUnauthorized: js.Function0[js.Any],
-    onError: js.Function1[/* error */ Error, js.Any]
+    onAuthorized: js.Function0[Any],
+    onUnauthorized: js.Function0[Any],
+    onError: js.Function1[/* error */ js.Error, Any]
   ): Unit = js.native
 }

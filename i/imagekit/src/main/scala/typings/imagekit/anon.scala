@@ -359,7 +359,7 @@ object anon {
       
       inline def setGPSVersionID(value: js.Array[Double]): Self = StObject.set(x, "GPSVersionID", value.asInstanceOf[js.Any])
       
-      inline def setGPSVersionIDVarargs(value: Double*): Self = StObject.set(x, "GPSVersionID", js.Array(value :_*))
+      inline def setGPSVersionIDVarargs(value: Double*): Self = StObject.set(x, "GPSVersionID", js.Array(value*))
     }
   }
   

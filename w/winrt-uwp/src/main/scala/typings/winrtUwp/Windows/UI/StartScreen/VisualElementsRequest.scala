@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.StartScreen
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ trait VisualElementsRequest extends StObject {
   var alternateVisualElements: IVectorView[SecondaryTileVisualElements]
   
   /** Gets the approximate time at which the deferral will time-out. */
-  var deadline: Date
+  var deadline: js.Date
   
   /**
     * Retrieves a deferral object, which allows the app time to provide information and assets used in the Pin to Start flyout.
@@ -28,7 +27,7 @@ object VisualElementsRequest {
   
   inline def apply(
     alternateVisualElements: IVectorView[SecondaryTileVisualElements],
-    deadline: Date,
+    deadline: js.Date,
     getDeferral: () => VisualElementsRequestDeferral,
     visualElements: SecondaryTileVisualElements
   ): VisualElementsRequest = {
@@ -40,7 +39,7 @@ object VisualElementsRequest {
     
     inline def setAlternateVisualElements(value: IVectorView[SecondaryTileVisualElements]): Self = StObject.set(x, "alternateVisualElements", value.asInstanceOf[js.Any])
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setGetDeferral(value: () => VisualElementsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

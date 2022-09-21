@@ -1,24 +1,22 @@
 
 # Scala.js typings for remark-stringify
 
-Typings are for version 8.1.1
+Typings are for version 10.0.2
 
 ## Library description:
-remark plugin to compile Markdown
+remark plugin to add support for serializing markdown
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | remark-stringify |
 | Keywords           | unified, remark, remark-plugin, plugin, markdown, mdast, markdown, abstract, syntax, tree, ast, stringify, serialize, compile |
-| # releases         | 13 |
-| # dependents       | 195 |
-| # downloads        | 120100493 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3610247666666666E7 |
+| # stars            | 5294.0 |
 
 ## Links
 - [Homepage](https://remark.js.org)
-- [Bugs](https://github.com/remarkjs/remark/issues)
-- [Repository](https://github.com/remarkjs/remark)
 - [Npm](https://www.npmjs.com/package/remark-stringify)
     
 

@@ -11,7 +11,7 @@ object selectingActionMod {
   
   @JSImport("storm-react-diagrams/dist/src/actions/SelectingAction", "SelectingAction")
   @js.native
-  class SelectingAction protected () extends BaseAction {
+  open class SelectingAction protected () extends BaseAction {
     def this(mouseX: Double, mouseY: Double) = this()
     
     def containsElement(x: Double, y: Double, diagramModel: DiagramModel): Boolean = js.native

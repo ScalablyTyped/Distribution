@@ -20,7 +20,7 @@ trait GqlQuery extends StObject {
   var namedBindings: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter}
-    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -48,7 +48,7 @@ object GqlQuery {
     inline def setNamedBindings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter}
-      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[Any]
     ): Self = StObject.set(x, "namedBindings", value.asInstanceOf[js.Any])
     
     inline def setNamedBindingsUndefined: Self = StObject.set(x, "namedBindings", js.undefined)
@@ -57,7 +57,7 @@ object GqlQuery {
     
     inline def setPositionalBindingsUndefined: Self = StObject.set(x, "positionalBindings", js.undefined)
     
-    inline def setPositionalBindingsVarargs(value: GqlQueryParameter*): Self = StObject.set(x, "positionalBindings", js.Array(value :_*))
+    inline def setPositionalBindingsVarargs(value: GqlQueryParameter*): Self = StObject.set(x, "positionalBindings", js.Array(value*))
     
     inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     

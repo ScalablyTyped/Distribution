@@ -7,14 +7,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `18` extends StObject {
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.emphasis.itemStyle
+    * Specify the delay time before animation start.
+    * Callback function can be used, where different delay time
+    * can be used on different element.
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate.animationDelay
     */
-  var itemStyle: js.UndefOr[BorderColorBorderType] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.emphasis.label
+    * Specify the delay time before update animation.
+    * Callback function can be used, where different delay time
+    * can be used on different element.
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate
     */
-  var label: js.UndefOr[Distance] = js.undefined
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
 }
 object `18` {
   
@@ -25,12 +51,12 @@ object `18` {
   
   extension [Self <: `18`](x: Self) {
     
-    inline def setItemStyle(value: BorderColorBorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
     
-    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
     
-    inline def setLabel(value: Distance): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setAnimationDelayUpdate(value: js.Function | Double): Self = StObject.set(x, "animationDelayUpdate", value.asInstanceOf[js.Any])
     
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setAnimationDelayUpdateUndefined: Self = StObject.set(x, "animationDelayUpdate", js.undefined)
   }
 }

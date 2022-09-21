@@ -9,13 +9,12 @@ object progressDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/progress/demo/basic.native", JSImport.Default)
   @js.native
-  class default protected () extends BasicProgressExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicProgressExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicProgressExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicProgressExample extends Component[Any, Any, Any] {
     
     def onAdd(): Unit = js.native
   }

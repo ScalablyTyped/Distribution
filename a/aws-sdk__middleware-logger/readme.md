@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-logger
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-logger/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-logger) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-logger.svg)](https://www.npmjs.com/package/@
@@ -10,10 +10,10 @@ Typings are for version 1.0.0-rc.7
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-logger |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 248 |
-| # downloads        | 3594565 |
-| # stars            | 0 |
+| # releases         | 57 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4871197666666666E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-logger)

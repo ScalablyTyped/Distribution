@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait Super_
   extends StObject
      with BaseNode
-     with Expression {
+     with Expression
+     with Standardized {
   
   @JSName("type")
   var type_Super_ : Super

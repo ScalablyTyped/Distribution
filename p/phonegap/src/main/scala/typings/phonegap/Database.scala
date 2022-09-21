@@ -10,22 +10,19 @@ trait Database extends StObject {
   def changeVersion(var1: String, var2: String): Unit = js.native
   
   def transaction(): Unit = js.native
-  def transaction(populateDB: js.Function1[/* tx */ SQLTransaction, js.Any]): Unit = js.native
+  def transaction(populateDB: js.Function1[/* tx */ SQLTransaction, Any]): Unit = js.native
+  def transaction(populateDB: js.Function1[/* tx */ SQLTransaction, Any], errorCB: js.Function1[/* err */ Any, Any]): Unit = js.native
   def transaction(
-    populateDB: js.Function1[/* tx */ SQLTransaction, js.Any],
-    errorCB: js.Function1[/* err */ js.Any, js.Any]
+    populateDB: js.Function1[/* tx */ SQLTransaction, Any],
+    errorCB: js.Function1[/* err */ Any, Any],
+    successCB: js.Function0[Any]
   ): Unit = js.native
   def transaction(
-    populateDB: js.Function1[/* tx */ SQLTransaction, js.Any],
-    errorCB: js.Function1[/* err */ js.Any, js.Any],
-    successCB: js.Function0[js.Any]
-  ): Unit = js.native
-  def transaction(
-    populateDB: js.Function1[/* tx */ SQLTransaction, js.Any],
+    populateDB: js.Function1[/* tx */ SQLTransaction, Any],
     errorCB: Unit,
-    successCB: js.Function0[js.Any]
+    successCB: js.Function0[Any]
   ): Unit = js.native
-  def transaction(populateDB: Unit, errorCB: js.Function1[/* err */ js.Any, js.Any]): Unit = js.native
-  def transaction(populateDB: Unit, errorCB: js.Function1[/* err */ js.Any, js.Any], successCB: js.Function0[js.Any]): Unit = js.native
-  def transaction(populateDB: Unit, errorCB: Unit, successCB: js.Function0[js.Any]): Unit = js.native
+  def transaction(populateDB: Unit, errorCB: js.Function1[/* err */ Any, Any]): Unit = js.native
+  def transaction(populateDB: Unit, errorCB: js.Function1[/* err */ Any, Any], successCB: js.Function0[Any]): Unit = js.native
+  def transaction(populateDB: Unit, errorCB: Unit, successCB: js.Function0[Any]): Unit = js.native
 }

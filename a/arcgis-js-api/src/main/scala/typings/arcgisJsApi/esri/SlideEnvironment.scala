@@ -15,7 +15,7 @@ trait SlideEnvironment
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
     */
-  var lighting: js.UndefOr[Lighting] = js.undefined
+  var lighting: js.UndefOr[websceneSunLighting | websceneVirtualLighting] = js.undefined
 }
 object SlideEnvironment {
   
@@ -23,7 +23,7 @@ object SlideEnvironment {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, SlideEnvironment]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SlideEnvironment]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SlideEnvironment]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SlideEnvironment]])
   ): SlideEnvironment = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideEnvironment]
@@ -31,7 +31,7 @@ object SlideEnvironment {
   
   extension [Self <: SlideEnvironment](x: Self) {
     
-    inline def setLighting(value: Lighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    inline def setLighting(value: websceneSunLighting | websceneVirtualLighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     
     inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
   }

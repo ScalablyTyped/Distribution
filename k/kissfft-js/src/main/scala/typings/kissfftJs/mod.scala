@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("kissfft-js", "FFT")
   @js.native
-  class FFT protected () extends StObject {
+  open class FFT protected () extends StObject {
     def this(size: Double) = this()
     
     def dispose(): Unit = js.native
@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("kissfft-js", "FFTR")
   @js.native
-  class FFTR protected () extends StObject {
+  open class FFTR protected () extends StObject {
     def this(size: Double) = this()
     
     def dispose(): Unit = js.native

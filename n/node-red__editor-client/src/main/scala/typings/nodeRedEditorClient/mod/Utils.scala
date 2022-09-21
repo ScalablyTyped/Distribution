@@ -28,18 +28,18 @@ trait Utils extends StObject {
   
   def createNodeIcon(node: NodeInstanceNodePropertie): JQuery[HTMLElement] = js.native
   
-  def createObjectElement(obj: js.Any): JQuery[HTMLElement] = js.native
-  def createObjectElement(obj: js.Any, options: js.Object): JQuery[HTMLElement] = js.native
+  def createObjectElement(obj: Any): JQuery[HTMLElement] = js.native
+  def createObjectElement(obj: Any, options: js.Object): JQuery[HTMLElement] = js.native
   
-  def decodeObject(payload: String, format: String): js.Any = js.native
+  def decodeObject(payload: String, format: String): Any = js.native
   
   def getDarkerColor(c: String): String = js.native
   
   def getDefaultNodeIcon[TProps /* <: NodeProperties */](`def`: NodeDef[TProps, Unit, TProps]): File = js.native
   def getDefaultNodeIcon[TProps /* <: NodeProperties */](`def`: NodeDef[TProps, Unit, TProps], node: NodeInstance[TProps]): File = js.native
   
-  def getMessageProperty(msg: js.Object, expr: String): js.Any = js.native
-  def getMessageProperty(msg: js.Object, expr: js.Array[String]): js.Any = js.native
+  def getMessageProperty(msg: js.Object, expr: String): Any = js.native
+  def getMessageProperty(msg: js.Object, expr: js.Array[String]): Any = js.native
   
   def getNodeColor(`type`: String, `def`: NodeDef[NodeProperties, Unit, NodeProperties]): String = js.native
   
@@ -60,8 +60,8 @@ trait Utils extends StObject {
   def separateIconPath(): File = js.native
   def separateIconPath(icon: String): File = js.native
   
-  def setMessageProperty(msg: js.Object, prop: String, value: js.Any): js.UndefOr[Null] = js.native
-  def setMessageProperty(msg: js.Object, prop: String, value: js.Any, createMissing: Boolean): js.UndefOr[Null] = js.native
+  def setMessageProperty(msg: js.Object, prop: String, value: Any): js.UndefOr[Null] = js.native
+  def setMessageProperty(msg: js.Object, prop: String, value: Any, createMissing: Boolean): js.UndefOr[Null] = js.native
   
   def validatePropertyExpression(str: String): Boolean = js.native
 }

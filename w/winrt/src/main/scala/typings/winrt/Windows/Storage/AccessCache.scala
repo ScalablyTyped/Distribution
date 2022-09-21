@@ -140,7 +140,7 @@ object AccessCache {
     extends StObject
        with IStorageItemAccessList {
     
-    var onitemremoved: js.Any = js.native
+    var onitemremoved: Any = js.native
   }
   
   trait ItemRemovedEventArgs

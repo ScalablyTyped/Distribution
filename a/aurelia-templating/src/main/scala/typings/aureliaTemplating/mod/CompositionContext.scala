@@ -9,81 +9,81 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompositionContext extends StObject {
   
   /**
-    * The context in which the view model is executed in.
-    */
-  var bindingContext: js.Any
+  	* The context in which the view model is executed in.
+  	*/
+  var bindingContext: Any
   
   /**
-    * The child Container for the component creation. One will be created from the parent if not provided.
-    */
+  	* The child Container for the component creation. One will be created from the parent if not provided.
+  	*/
   var childContainer: js.UndefOr[Container] = js.undefined
   
   /**
-    * The parent Container for the component creation.
-    */
+  	* The parent Container for the component creation.
+  	*/
   var container: Container
   
   /**
-    * The element that will parent the dynamic component.
-    * It will be registered in the child container of this composition.
-    */
+  	* The element that will parent the dynamic component.
+  	* It will be registered in the child container of this composition.
+  	*/
   var host: js.UndefOr[Element] = js.undefined
   
   /**
-    * Data to be passed to the "activate" hook on the view model.
-    */
-  var model: js.UndefOr[js.Any] = js.undefined
+  	* Data to be passed to the "activate" hook on the view model.
+  	*/
+  var model: js.UndefOr[Any] = js.undefined
   
   /**
-    * A secondary binding context that can override the standard context.
-    */
-  var overrideContext: js.UndefOr[js.Any] = js.undefined
+  	* A secondary binding context that can override the standard context.
+  	*/
+  var overrideContext: js.UndefOr[Any] = js.undefined
   
   /**
-    * The view inside which this composition is happening.
-    */
+  	* The view inside which this composition is happening.
+  	*/
   var owningView: js.UndefOr[View_] = js.undefined
   
   /**
-    * Should the composition system skip calling the "activate" hook on the view model.
-    */
+  	* Should the composition system skip calling the "activate" hook on the view model.
+  	*/
   var skipActivation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The view url or view strategy to override the default view location convention.
-    */
+  	* The view url or view strategy to override the default view location convention.
+  	*/
   var view: js.UndefOr[String | ViewStrategy_] = js.undefined
   
   /**
-    * The view model url or instance for the component.
-    */
-  var viewModel: js.UndefOr[js.Any] = js.undefined
+  	* The view model url or instance for the component.
+  	*/
+  var viewModel: js.UndefOr[Any] = js.undefined
   
   /**
-    * The HtmlBehaviorResource for the component.
-    */
-  var viewModelResource: js.UndefOr[HtmlBehaviorResource] = js.undefined
+  	* The HtmlBehaviorResource for the component.
+  	*/
+  var viewModelResource: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * The view resources for the view in which the component should be created.
-    */
+  	* The view resources for the view in which the component should be created.
+  	*/
   var viewResources: ViewResources_
   
   /**
-    * The slot to push the dynamically composed component into.
-    */
+  	* The slot to push the dynamically composed component into.
+  	*/
   var viewSlot: ViewSlot
 }
 object CompositionContext {
   
-  inline def apply(bindingContext: js.Any, container: Container, viewResources: ViewResources_, viewSlot: ViewSlot): CompositionContext = {
+  inline def apply(bindingContext: Any, container: Container, viewResources: ViewResources_, viewSlot: ViewSlot): CompositionContext = {
     val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], viewResources = viewResources.asInstanceOf[js.Any], viewSlot = viewSlot.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionContext]
   }
   
   extension [Self <: CompositionContext](x: Self) {
     
-    inline def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
+    inline def setBindingContext(value: Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
     
     inline def setChildContainer(value: Container): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
     
@@ -95,11 +95,11 @@ object CompositionContext {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    inline def setOverrideContext(value: js.Any): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
+    inline def setOverrideContext(value: Any): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
     
     inline def setOverrideContextUndefined: Self = StObject.set(x, "overrideContext", js.undefined)
     
@@ -113,9 +113,9 @@ object CompositionContext {
     
     inline def setView(value: String | ViewStrategy_): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    inline def setViewModel(value: js.Any): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: Any): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    inline def setViewModelResource(value: HtmlBehaviorResource): Self = StObject.set(x, "viewModelResource", value.asInstanceOf[js.Any])
+    inline def setViewModelResource(value: ResourceDescription): Self = StObject.set(x, "viewModelResource", value.asInstanceOf[js.Any])
     
     inline def setViewModelResourceUndefined: Self = StObject.set(x, "viewModelResource", js.undefined)
     

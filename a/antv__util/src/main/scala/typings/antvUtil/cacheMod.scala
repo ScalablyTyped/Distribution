@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cacheMod {
   
-  @JSImport("@antv/util/lib/cache", JSImport.Default)
+  @JSImport("@antv/util/lib/lodash/cache", JSImport.Default)
   @js.native
-  class default[T] () extends StObject {
+  open class default[T] () extends StObject {
     
     def clear(): Unit = js.native
     

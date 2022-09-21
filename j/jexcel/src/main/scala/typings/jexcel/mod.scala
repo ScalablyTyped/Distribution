@@ -84,17 +84,17 @@ object mod extends Shortcut {
       
       inline def setRowData(value: js.Array[CellValue]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
-      inline def setRowDataVarargs(value: CellValue*): Self = StObject.set(x, "rowData", js.Array(value :_*))
+      inline def setRowDataVarargs(value: CellValue*): Self = StObject.set(x, "rowData", js.Array(value*))
       
       inline def setRowNode(value: js.Array[HTMLTableRowElement]): Self = StObject.set(x, "rowNode", value.asInstanceOf[js.Any])
       
-      inline def setRowNodeVarargs(value: HTMLTableRowElement*): Self = StObject.set(x, "rowNode", js.Array(value :_*))
+      inline def setRowNodeVarargs(value: HTMLTableRowElement*): Self = StObject.set(x, "rowNode", js.Array(value*))
       
       inline def setRowNumber(value: Double): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
       
       inline def setRowRecords(value: js.Array[HTMLTableDataCellElement]): Self = StObject.set(x, "rowRecords", value.asInstanceOf[js.Any])
       
-      inline def setRowRecordsVarargs(value: HTMLTableDataCellElement*): Self = StObject.set(x, "rowRecords", js.Array(value :_*))
+      inline def setRowRecordsVarargs(value: HTMLTableDataCellElement*): Self = StObject.set(x, "rowRecords", js.Array(value*))
     }
   }
   
@@ -323,7 +323,7 @@ object mod extends Shortcut {
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setSourceVarargs(value: SourceValue*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: SourceValue*): Self = StObject.set(x, "source", js.Array(value*))
       
       inline def setTitle(value: CellValue): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -691,7 +691,7 @@ object mod extends Shortcut {
     var allowRenameColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Auto increment actions when using the dragging corner */
-    var autoIncrement: js.UndefOr[js.Any] = js.undefined
+    var autoIncrement: js.UndefOr[Any] = js.undefined
     
     /** Allow column dragging: bool */
     var columnDrag: js.UndefOr[Boolean] = js.undefined
@@ -729,7 +729,7 @@ object mod extends Shortcut {
         js.Array[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ title in string | number ]: jexcel.jexcel.CellValue}
-      */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[js.Any]) | js.Array[CellValue]
+      */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue]
         ]
       ] = js.undefined
     
@@ -752,10 +752,10 @@ object mod extends Shortcut {
     var loadingSpin: js.UndefOr[Boolean] = js.undefined
     
     /** Cells to be merged in the table initialization: object */
-    var mergeCells: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var mergeCells: js.UndefOr[Record[String, Any]] = js.undefined
     
     /** Meta information: object */
-    var meta: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var meta: js.UndefOr[Record[String, Any]] = js.undefined
     
     /** Minimum table dimensions: [cols, rows] */
     var minDimensions: js.UndefOr[js.Array[Double] | (js.Tuple2[Double | Unit, Double])] = js.undefined
@@ -776,7 +776,7 @@ object mod extends Shortcut {
     var paginationOptions: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Enable execution of formulas inside the table */
-    var parseFormulas: js.UndefOr[js.Any] = js.undefined
+    var parseFormulas: js.UndefOr[Any] = js.undefined
     
     /** Allow row dragging: bool */
     var rowDrag: js.UndefOr[Boolean] = js.undefined
@@ -785,7 +785,7 @@ object mod extends Shortcut {
     var rowResize: js.UndefOr[Boolean] = js.undefined
     
     /** Row properties: height.: object */
-    var rows: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var rows: js.UndefOr[Record[String, Any]] = js.undefined
     
     /** Allow selection copy: bool */
     var selectionCopy: js.UndefOr[Boolean] = js.undefined
@@ -807,21 +807,21 @@ object mod extends Shortcut {
     var tableWidth: js.UndefOr[String] = js.undefined
     
     /** All messages to be customized */
-    var text: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var text: js.UndefOr[Record[String, Any]] = js.undefined
     
     /** Add custom toolbars: object */
-    var toolbar: js.UndefOr[js.Array[Record[String, js.Any]]] = js.undefined
+    var toolbar: js.UndefOr[js.Array[Record[String, Any]]] = js.undefined
     
     /** Method to config custom script execution. NOTE: This does not work with lazyLoading, Pagination or Search options. */
     var updateTable: js.UndefOr[
         js.Function7[
-          /* instance */ js.Any, 
-          /* cell */ js.Any, 
-          /* col */ js.Any, 
-          /* row */ js.Any, 
-          /* val */ js.Any, 
-          /* label */ js.Any, 
-          /* cellName */ js.Any, 
+          /* instance */ Any, 
+          /* cell */ Any, 
+          /* col */ Any, 
+          /* row */ Any, 
+          /* val */ Any, 
+          /* label */ Any, 
+          /* cellName */ Any, 
           Unit
         ]
       ] = js.undefined
@@ -877,7 +877,7 @@ object mod extends Shortcut {
       
       inline def setAllowRenameColumnUndefined: Self = StObject.set(x, "allowRenameColumn", js.undefined)
       
-      inline def setAutoIncrement(value: js.Any): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
+      inline def setAutoIncrement(value: Any): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
       
       inline def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
       
@@ -897,7 +897,7 @@ object mod extends Shortcut {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setContextMenu(value: js.Function): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -927,7 +927,7 @@ object mod extends Shortcut {
         value: js.Array[
               (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[js.Any]) | js.Array[CellValue]
+        */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue]
             ]
       ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -936,8 +936,8 @@ object mod extends Shortcut {
       inline def setDataVarargs(
         value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[js.Any]) | js.Array[CellValue])*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+        */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue])*
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDefaultColAlign(value: center | left | right): Self = StObject.set(x, "defaultColAlign", value.asInstanceOf[js.Any])
       
@@ -963,11 +963,11 @@ object mod extends Shortcut {
       
       inline def setLoadingSpinUndefined: Self = StObject.set(x, "loadingSpin", js.undefined)
       
-      inline def setMergeCells(value: Record[String, js.Any]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
+      inline def setMergeCells(value: Record[String, Any]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
       
       inline def setMergeCellsUndefined: Self = StObject.set(x, "mergeCells", js.undefined)
       
-      inline def setMeta(value: Record[String, js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Record[String, Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
@@ -975,25 +975,25 @@ object mod extends Shortcut {
       
       inline def setMinDimensionsUndefined: Self = StObject.set(x, "minDimensions", js.undefined)
       
-      inline def setMinDimensionsVarargs(value: Double*): Self = StObject.set(x, "minDimensions", js.Array(value :_*))
+      inline def setMinDimensionsVarargs(value: Double*): Self = StObject.set(x, "minDimensions", js.Array(value*))
       
       inline def setMinSpareCols(value: js.Array[Double]): Self = StObject.set(x, "minSpareCols", value.asInstanceOf[js.Any])
       
       inline def setMinSpareColsUndefined: Self = StObject.set(x, "minSpareCols", js.undefined)
       
-      inline def setMinSpareColsVarargs(value: Double*): Self = StObject.set(x, "minSpareCols", js.Array(value :_*))
+      inline def setMinSpareColsVarargs(value: Double*): Self = StObject.set(x, "minSpareCols", js.Array(value*))
       
       inline def setMinSpareRows(value: js.Array[Double]): Self = StObject.set(x, "minSpareRows", value.asInstanceOf[js.Any])
       
       inline def setMinSpareRowsUndefined: Self = StObject.set(x, "minSpareRows", js.undefined)
       
-      inline def setMinSpareRowsVarargs(value: Double*): Self = StObject.set(x, "minSpareRows", js.Array(value :_*))
+      inline def setMinSpareRowsVarargs(value: Double*): Self = StObject.set(x, "minSpareRows", js.Array(value*))
       
       inline def setNestedHeaders(value: js.Array[js.Array[Colspan]]): Self = StObject.set(x, "nestedHeaders", value.asInstanceOf[js.Any])
       
       inline def setNestedHeadersUndefined: Self = StObject.set(x, "nestedHeaders", js.undefined)
       
-      inline def setNestedHeadersVarargs(value: js.Array[Colspan]*): Self = StObject.set(x, "nestedHeaders", js.Array(value :_*))
+      inline def setNestedHeadersVarargs(value: js.Array[Colspan]*): Self = StObject.set(x, "nestedHeaders", js.Array(value*))
       
       inline def setPagination(value: Double): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
@@ -1001,11 +1001,11 @@ object mod extends Shortcut {
       
       inline def setPaginationOptionsUndefined: Self = StObject.set(x, "paginationOptions", js.undefined)
       
-      inline def setPaginationOptionsVarargs(value: Double*): Self = StObject.set(x, "paginationOptions", js.Array(value :_*))
+      inline def setPaginationOptionsVarargs(value: Double*): Self = StObject.set(x, "paginationOptions", js.Array(value*))
       
       inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
-      inline def setParseFormulas(value: js.Any): Self = StObject.set(x, "parseFormulas", value.asInstanceOf[js.Any])
+      inline def setParseFormulas(value: Any): Self = StObject.set(x, "parseFormulas", value.asInstanceOf[js.Any])
       
       inline def setParseFormulasUndefined: Self = StObject.set(x, "parseFormulas", js.undefined)
       
@@ -1017,7 +1017,7 @@ object mod extends Shortcut {
       
       inline def setRowResizeUndefined: Self = StObject.set(x, "rowResize", js.undefined)
       
-      inline def setRows(value: Record[String, js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Record[String, Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
@@ -1041,18 +1041,18 @@ object mod extends Shortcut {
       
       inline def setTableWidthUndefined: Self = StObject.set(x, "tableWidth", js.undefined)
       
-      inline def setText(value: Record[String, js.Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Record[String, Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setToolbar(value: js.Array[Record[String, js.Any]]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      inline def setToolbar(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
       inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
       
-      inline def setToolbarVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+      inline def setToolbarVarargs(value: (Record[String, Any])*): Self = StObject.set(x, "toolbar", js.Array(value*))
       
       inline def setUpdateTable(
-        value: (/* instance */ js.Any, /* cell */ js.Any, /* col */ js.Any, /* row */ js.Any, /* val */ js.Any, /* label */ js.Any, /* cellName */ js.Any) => Unit
+        value: (/* instance */ Any, /* cell */ Any, /* col */ Any, /* row */ Any, /* val */ Any, /* label */ Any, /* cellName */ Any) => Unit
       ): Self = StObject.set(x, "updateTable", js.Any.fromFunction7(value))
       
       inline def setUpdateTableUndefined: Self = StObject.set(x, "updateTable", js.undefined)
@@ -1076,7 +1076,7 @@ object mod extends Shortcut {
     //
     // Other helpers
     // ----------------------------------------------------------------------
-    var build: js.Any = js.native
+    var build: Any = js.native
     
     // tslint:disable-next-line ban-types
     var contextMenuControls: js.Function = js.native
@@ -1084,9 +1084,9 @@ object mod extends Shortcut {
     // tslint:disable-next-line ban-types
     var copyControls: js.Function = js.native
     
-    def createTabs(element: HTMLDivElement, result: js.Array[js.Any]): Unit = js.native
+    def createTabs(element: HTMLDivElement, result: js.Array[Any]): Unit = js.native
     
-    var current: js.Any = js.native
+    var current: Any = js.native
     
     // tslint:disable-next-line ban-types
     var cutControls: js.Function = js.native
@@ -1100,7 +1100,7 @@ object mod extends Shortcut {
     // tslint:disable-next-line ban-types
     var doubleDigitFormat: js.Function = js.native
     
-    def fromSpreadsheet(result: js.Array[js.Any]): Unit = js.native
+    def fromSpreadsheet(result: js.Array[Any]): Unit = js.native
     
     // tslint:disable-next-line ban-types
     var getColumnName: js.Function = js.native
@@ -1139,9 +1139,9 @@ object mod extends Shortcut {
     // tslint:disable-next-line ban-types
     var pasteControls: js.Function = js.native
     
-    var timeControl: js.Any = js.native
+    var timeControl: Any = js.native
     
-    var timeControlLoading: js.Any = js.native
+    var timeControlLoading: Any = js.native
     
     // tslint:disable-next-line ban-types
     var touchEndControls: js.Function = js.native
@@ -1158,21 +1158,18 @@ object mod extends Shortcut {
     
     var ads: HTMLDivElement = js.native
     
-    def closeEditor(cell: js.Object, save: Boolean): js.Any = js.native
+    def closeEditor(cell: js.Object, save: Boolean): Any = js.native
     
-    def col(cell: js.Object): js.Any = js.native
+    def col(cell: js.Object): Any = js.native
     
     var colgroup: js.Array[HTMLTableColElement] = js.native
     
-    var colgroupContainer: js.Any = js.native
+    var colgroupContainer: Any = js.native
     
     /**
       * Move coords to A1 in case ovelaps with an excluded cell
       */
-    @JSName("conditionalSelectionUpdate")
-    def conditionalSelectionUpdate_0(`type`: `0`, o: Double, d: Double): Unit = js.native
-    @JSName("conditionalSelectionUpdate")
-    def conditionalSelectionUpdate_1(`type`: `1`, o: Double, d: Double): Unit = js.native
+    def conditionalSelectionUpdate(`type`: `0` | `1`, o: Double, d: Double): Unit = js.native
     
     var content: HTMLDivElement = js.native
     
@@ -1197,133 +1194,133 @@ object mod extends Shortcut {
     /**
       * Helper function to copy data using the corner icon
       */
-    def copyData(o: js.Object, d: js.Object): js.Any = js.native
+    def copyData(o: js.Object, d: js.Object): Any = js.native
     
-    var corner: js.Any = js.native
+    var corner: Any = js.native
     
-    def createCell(i: Double, j: Double, value: CellValue): js.Any = js.native
+    def createCell(i: Double, j: Double, value: CellValue): Any = js.native
     
-    def createCellHeader(colNumber: Double): js.Any = js.native
+    def createCellHeader(colNumber: Double): Any = js.native
     
-    def createNestedHeader(nestedInformation: js.Array[js.Object]): js.Any = js.native
+    def createNestedHeader(nestedInformation: js.Array[js.Object]): Any = js.native
     
-    def createRow(j: Double): js.Any = js.native
-    def createRow(j: Double, data: js.Any): js.Any = js.native
+    def createRow(j: Double): Any = js.native
+    def createRow(j: Double, data: Any): Any = js.native
     
     def createTable(): Unit = js.native
     
     def createToolbar(toolbar: js.Array[js.Object]): Unit = js.native
     
-    var cursor: js.Any = js.native
+    var cursor: Any = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
-    def deleteColumn(columnNumber: js.Any, numOfColumns: js.Any): js.Any = js.native
+    def deleteColumn(columnNumber: Any, numOfColumns: Any): Any = js.native
     
-    def deleteRow(rowNumber: js.Any, numOfRows: js.Any): js.Any = js.native
+    def deleteRow(rowNumber: Any, numOfRows: Any): Any = js.native
     
-    def destroy(): js.Any = js.native
+    def destroy(): Any = js.native
     
-    def destroyMerged(keepOptions: js.Any): js.Any = js.native
+    def destroyMerged(keepOptions: Any): Any = js.native
     
-    def down(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
+    def down(shiftKey: Any, ctrlKey: Any): Any = js.native
     
-    def download(includeHeaders: js.Any): js.Any = js.native
+    def download(includeHeaders: Any): Any = js.native
     
-    var dragging: js.Any = js.native
+    var dragging: Any = js.native
     
-    var edition: js.Any = js.native
+    var edition: Any = js.native
     
     var el: HTMLDivElement = js.native
     
-    def executeFormula(expression: js.Any, x: js.Any, y: js.Any): js.Any = js.native
+    def executeFormula(expression: Any, x: Any, y: Any): Any = js.native
     
     var filter: HTMLDivElement = js.native
     
-    def first(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
+    def first(shiftKey: Any, ctrlKey: Any): Any = js.native
     
-    var formula: js.Array[js.Any] = js.native
+    var formula: js.Array[Any] = js.native
     
-    def fullscreen(activate: js.Any): js.Any = js.native
+    def fullscreen(activate: Any): Any = js.native
     
-    def getCell(cell: js.Any): js.Any = js.native
+    def getCell(cell: Any): Any = js.native
     
-    def getCellFromCoords(x: Double, y: Double): js.Any = js.native
+    def getCellFromCoords(x: Double, y: Double): Any = js.native
     
     def getColumnData(columnNumber: Double): js.Array[CellValue] = js.native
     
-    def getComments(cell: js.Any, withAuthor: js.Any): js.Any = js.native
+    def getComments(cell: Any, withAuthor: Any): Any = js.native
     
-    def getConfig(): js.Any = js.native
+    def getConfig(): Any = js.native
     
     def getData(): js.Array[js.Array[CellValue]] = js.native
     def getData(highlighted: Boolean): js.Array[js.Array[CellValue]] = js.native
     def getData(highlighted: Boolean, dataOnly: Boolean): js.Array[js.Array[CellValue]] = js.native
     def getData(highlighted: Unit, dataOnly: Boolean): js.Array[js.Array[CellValue]] = js.native
     
-    def getDropDownValue(column: js.Any, key: js.Any): js.Any = js.native
+    def getDropDownValue(column: Any, key: Any): Any = js.native
     
-    def getHeader(column: js.Any): js.Any = js.native
+    def getHeader(column: Any): Any = js.native
     
-    def getHeaders(asArray: js.Any): js.Any = js.native
+    def getHeaders(asArray: Any): Any = js.native
     
-    def getHeight(row: js.Any): js.Any = js.native
+    def getHeight(row: Any): Any = js.native
     
-    def getHighlighted(): js.Any = js.native
+    def getHighlighted(): Any = js.native
     
-    def getJson(): js.Any = js.native
-    def getJson(highlighted: Boolean): js.Any = js.native
+    def getJson(): Any = js.native
+    def getJson(highlighted: Boolean): Any = js.native
     
-    def getLabel(cell: js.Any): js.Any = js.native
+    def getLabel(cell: Any): Any = js.native
     
-    def getLabelFromCoords(x: Double, y: Double): js.Any = js.native
+    def getLabelFromCoords(x: Double, y: Double): Any = js.native
     
-    def getMerge(cellName: js.Any): js.Any = js.native
+    def getMerge(cellName: Any): Any = js.native
     
-    def getMeta(cell: js.Any, key: js.Any): js.Any = js.native
+    def getMeta(cell: Any, key: Any): Any = js.native
     
-    def getRowData(rowNumber: Double): js.Any = js.native
+    def getRowData(rowNumber: Double): Any = js.native
     
-    def getSelectedColumns(): js.Any = js.native
+    def getSelectedColumns(): Any = js.native
     
-    def getSelectedRows(): js.Any = js.native
-    def getSelectedRows(asIds: Boolean): js.Any = js.native
+    def getSelectedRows(): Any = js.native
+    def getSelectedRows(asIds: Boolean): Any = js.native
     
-    def getStyle(cell: js.Any, key: js.Any): js.Any = js.native
+    def getStyle(cell: Any, key: Any): Any = js.native
     
-    def getValue(cell: js.Any, processedValue: js.Any): js.Any = js.native
+    def getValue(cell: Any, processedValue: Any): Any = js.native
     
-    def getValueFromCoords(x: Double, y: Double, processedValue: js.Any): js.Any = js.native
+    def getValueFromCoords(x: Double, y: Double, processedValue: Any): Any = js.native
     
-    def getWidth(column: js.Any): js.Any = js.native
+    def getWidth(column: Any): Any = js.native
     
-    def hash(str: js.Any): js.Any = js.native
+    def hash(str: Any): Any = js.native
     
-    var hashString: js.Any = js.native
+    var hashString: Any = js.native
     
     var headerContainer: HTMLTableRowElement = js.native
     
-    var headers: js.Any = js.native
+    var headers: Any = js.native
     
-    def hideColumn(colNumber: Double): js.Any = js.native
+    def hideColumn(colNumber: Double): Any = js.native
     
-    def hideIndex(): js.Any = js.native
+    def hideIndex(): Any = js.native
     
-    var highlighted: js.Array[js.Any] = js.native
+    var highlighted: js.Array[Any] = js.native
     
     var history: ActionHistory = js.native
     
     var historyIndex: Double = js.native
     
-    def historyProcessColumn(`type`: js.Any, historyRecord: js.Any): js.Any = js.native
+    def historyProcessColumn(`type`: Any, historyRecord: Any): Any = js.native
     
-    def historyProcessRow(`type`: js.Any, historyRecord: js.Any): js.Any = js.native
+    def historyProcessRow(`type`: Any, historyRecord: Any): Any = js.native
     
     var ignoreEvents: Boolean = js.native
     
     var ignoreHistory: Boolean = js.native
     
-    def init(): js.Any = js.native
+    def init(): Any = js.native
     
     /**
       * Insert a new column
@@ -1334,161 +1331,158 @@ object mod extends Shortcut {
       * @param object properties - column properties
       * @return void
       */
-    def insertColumn(mixed: js.Any): js.Any = js.native
-    def insertColumn(mixed: js.Any, columnNumber: Double): js.Any = js.native
-    def insertColumn(mixed: js.Any, columnNumber: Double, insertBefore: Boolean): js.Any = js.native
-    def insertColumn(mixed: js.Any, columnNumber: Double, insertBefore: Boolean, properties: js.Object): js.Any = js.native
-    def insertColumn(mixed: js.Any, columnNumber: Double, insertBefore: Unit, properties: js.Object): js.Any = js.native
-    def insertColumn(mixed: js.Any, columnNumber: Unit, insertBefore: Boolean): js.Any = js.native
-    def insertColumn(mixed: js.Any, columnNumber: Unit, insertBefore: Boolean, properties: js.Object): js.Any = js.native
-    def insertColumn(mixed: js.Any, columnNumber: Unit, insertBefore: Unit, properties: js.Object): js.Any = js.native
+    def insertColumn(mixed: Any): Any = js.native
+    def insertColumn(mixed: Any, columnNumber: Double): Any = js.native
+    def insertColumn(mixed: Any, columnNumber: Double, insertBefore: Boolean): Any = js.native
+    def insertColumn(mixed: Any, columnNumber: Double, insertBefore: Boolean, properties: js.Object): Any = js.native
+    def insertColumn(mixed: Any, columnNumber: Double, insertBefore: Unit, properties: js.Object): Any = js.native
+    def insertColumn(mixed: Any, columnNumber: Unit, insertBefore: Boolean): Any = js.native
+    def insertColumn(mixed: Any, columnNumber: Unit, insertBefore: Boolean, properties: js.Object): Any = js.native
+    def insertColumn(mixed: Any, columnNumber: Unit, insertBefore: Unit, properties: js.Object): Any = js.native
     
-    def insertRow(): js.Any = js.native
-    def insertRow(mixed: js.Any): js.Any = js.native
-    def insertRow(mixed: js.Any, rowNumber: Double): js.Any = js.native
-    def insertRow(mixed: js.Any, rowNumber: Double, insertBefore: Boolean): js.Any = js.native
-    def insertRow(mixed: js.Any, rowNumber: Unit, insertBefore: Boolean): js.Any = js.native
-    def insertRow(mixed: Unit, rowNumber: Double): js.Any = js.native
-    def insertRow(mixed: Unit, rowNumber: Double, insertBefore: Boolean): js.Any = js.native
-    def insertRow(mixed: Unit, rowNumber: Unit, insertBefore: Boolean): js.Any = js.native
+    def insertRow(): Any = js.native
+    def insertRow(mixed: Any): Any = js.native
+    def insertRow(mixed: Any, rowNumber: Double): Any = js.native
+    def insertRow(mixed: Any, rowNumber: Double, insertBefore: Boolean): Any = js.native
+    def insertRow(mixed: Any, rowNumber: Unit, insertBefore: Boolean): Any = js.native
+    def insertRow(mixed: Unit, rowNumber: Double): Any = js.native
+    def insertRow(mixed: Unit, rowNumber: Double, insertBefore: Boolean): Any = js.native
+    def insertRow(mixed: Unit, rowNumber: Unit, insertBefore: Boolean): Any = js.native
     
-    def isColMerged(x: Double): js.Any = js.native
-    def isColMerged(x: Double, insertBefore: Boolean): js.Any = js.native
+    def isColMerged(x: Double): Any = js.native
+    def isColMerged(x: Double, insertBefore: Boolean): Any = js.native
     
-    def isRowMerged(y: Double): js.Any = js.native
-    def isRowMerged(y: Double, insertBefore: Boolean): js.Any = js.native
+    def isRowMerged(y: Double): Any = js.native
+    def isRowMerged(y: Double, insertBefore: Boolean): Any = js.native
     
-    def last(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
+    def last(shiftKey: Any, ctrlKey: Any): Any = js.native
     
-    def left(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
+    def left(shiftKey: Any, ctrlKey: Any): Any = js.native
     
-    def loadDown(): js.Any = js.native
+    def loadDown(): Any = js.native
     
-    def loadPage(pageNumber: Double): js.Any = js.native
+    def loadPage(pageNumber: Double): Any = js.native
     
-    def loadUp(): js.Any = js.native
+    def loadUp(): Any = js.native
     
-    def loadValidation(): js.Any = js.native
+    def loadValidation(): Any = js.native
     
-    def moveColumn(o: js.Any, d: js.Any): js.Any = js.native
+    def moveColumn(o: Any, d: Any): Any = js.native
     
-    def moveRow(o: js.Any, d: js.Any, ignoreDom: js.Any): js.Any = js.native
+    def moveRow(o: Any, d: Any, ignoreDom: Any): Any = js.native
     
-    def onafterchanges(el: js.Any, records: js.Any): js.Any = js.native
+    def onafterchanges(el: Any, records: Any): Any = js.native
     
-    def openEditor(cell: js.Any, empty: js.Any, e: js.Any): js.Any = js.native
+    def openEditor(cell: Any, empty: Any, e: Any): Any = js.native
     
-    var options: js.Any = js.native
+    var options: Any = js.native
     
-    def orderBy(column: Double): js.Any = js.native
-    @JSName("orderBy")
-    def orderBy_0(column: Double, order: `0`): js.Any = js.native
-    @JSName("orderBy")
-    def orderBy_1(column: Double, order: `1`): js.Any = js.native
+    def orderBy(column: Double): Any = js.native
+    def orderBy(column: Double, order: `0` | `1`): Any = js.native
     
-    def page(pageNumber: Double): js.Any = js.native
+    def page(pageNumber: Double): Any = js.native
     
-    var pageNumber: js.Any = js.native
+    var pageNumber: Any = js.native
     
     var pagination: HTMLDivElement = js.native
     
-    def parseCSV(str: String): js.Any = js.native
-    def parseCSV(str: String, delimiter: String): js.Any = js.native
+    def parseCSV(str: String): Any = js.native
+    def parseCSV(str: String, delimiter: String): Any = js.native
     
     def parseNumber(value: Double): Double | Null = js.native
     def parseNumber(value: Double, columnNumber: Double): Double | Null = js.native
     
-    def paste(): js.Any = js.native
-    def paste(x: Double): js.Any = js.native
-    def paste(x: Double, y: Double): js.Any = js.native
-    def paste(x: Double, y: Double, data: CellValue): js.Any = js.native
-    def paste(x: Double, y: Unit, data: CellValue): js.Any = js.native
-    def paste(x: Unit, y: Double): js.Any = js.native
-    def paste(x: Unit, y: Double, data: CellValue): js.Any = js.native
-    def paste(x: Unit, y: Unit, data: CellValue): js.Any = js.native
+    def paste(): Any = js.native
+    def paste(x: Double): Any = js.native
+    def paste(x: Double, y: Double): Any = js.native
+    def paste(x: Double, y: Double, data: CellValue): Any = js.native
+    def paste(x: Double, y: Unit, data: CellValue): Any = js.native
+    def paste(x: Unit, y: Double): Any = js.native
+    def paste(x: Unit, y: Double, data: CellValue): Any = js.native
+    def paste(x: Unit, y: Unit, data: CellValue): Any = js.native
     
-    def prepareTable(): js.Any = js.native
+    def prepareTable(): Any = js.native
     
-    var records: js.Any = js.native
+    var records: Any = js.native
     
-    def redo(): js.Any = js.native
+    def redo(): Any = js.native
     
-    def refresh(): js.Any = js.native
+    def refresh(): Any = js.native
     
-    def refreshSelection(): js.Any = js.native
+    def refreshSelection(): Any = js.native
     
-    def removeCopySelection(): js.Any = js.native
+    def removeCopySelection(): Any = js.native
     
-    def removeMerge(cellName: js.Any, data: js.Any, keepOptions: js.Any): js.Any = js.native
+    def removeMerge(cellName: Any, data: Any, keepOptions: Any): Any = js.native
     
-    def resetSearch(): js.Any = js.native
+    def resetSearch(): Any = js.native
     
-    def resetSelection(blur: js.Any): js.Any = js.native
+    def resetSelection(blur: Any): Any = js.native
     
-    def resetStyle(o: js.Any, ignoreHistoryAndEvents: js.Any): js.Any = js.native
+    def resetStyle(o: Any, ignoreHistoryAndEvents: Any): Any = js.native
     
-    var resizing: js.Any = js.native
+    var resizing: Any = js.native
     
-    var results: js.Any = js.native
+    var results: Any = js.native
     
-    def right(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
+    def right(shiftKey: Any, ctrlKey: Any): Any = js.native
     
-    def row(cell: js.Any): js.Any = js.native
+    def row(cell: Any): Any = js.native
     
     var rows: js.Array[HTMLTableRowElement] = js.native
     
-    def scrollControls(e: js.Any): js.Any = js.native
+    def scrollControls(e: Any): Any = js.native
     
-    def search(query: js.Any): js.Any = js.native
+    def search(query: Any): Any = js.native
     
     var searchInput: HTMLInputElement = js.native
     
-    def selectAll(): js.Any = js.native
+    def selectAll(): Any = js.native
     
-    var selectedCell: js.Any = js.native
+    var selectedCell: Any = js.native
     
-    var selectedContainer: js.Any = js.native
+    var selectedContainer: Any = js.native
     
-    var selection: js.Array[js.Any] = js.native
+    var selection: js.Array[Any] = js.native
     
-    def setCheckRadioValue(): js.Any = js.native
+    def setCheckRadioValue(): Any = js.native
     
-    def setColumnData(colNumber: Double): js.Any = js.native
-    def setColumnData(colNumber: Double, data: js.Any): js.Any = js.native
+    def setColumnData(colNumber: Double): Any = js.native
+    def setColumnData(colNumber: Double, data: Any): Any = js.native
     
-    def setComments(cellId: js.Any, comments: js.Any, author: js.Any): js.Any = js.native
+    def setComments(cellId: Any, comments: Any, author: Any): Any = js.native
     
-    def setData(data: js.Any): js.Any = js.native
+    def setData(data: Any): Any = js.native
     
-    def setHeader(column: js.Any, newValue: js.Any): js.Any = js.native
+    def setHeader(column: Any, newValue: Any): Any = js.native
     
-    def setHeight(row: js.Any, height: js.Any, oldHeight: js.Any): js.Any = js.native
+    def setHeight(row: Any, height: Any, oldHeight: Any): Any = js.native
     
-    def setHistory(changes: js.Any): js.Any = js.native
+    def setHistory(changes: Any): Any = js.native
     
-    def setMerge(cellName: js.Any, colspan: js.Any, rowspan: js.Any): js.Any = js.native
-    def setMerge(cellName: js.Any, colspan: js.Any, rowspan: js.Any, ignoreHistoryAndEvents: js.Any): js.Any = js.native
+    def setMerge(cellName: Any, colspan: Any, rowspan: Any): Any = js.native
+    def setMerge(cellName: Any, colspan: Any, rowspan: Any, ignoreHistoryAndEvents: Any): Any = js.native
     
-    def setMeta(o: js.Any, k: js.Any, v: js.Any): js.Any = js.native
+    def setMeta(o: Any, k: Any, v: Any): Any = js.native
     
-    def setRowData(rowNumber: Double, data: js.Any): js.Any = js.native
+    def setRowData(rowNumber: Double, data: Any): Any = js.native
     
-    def setStyle(o: js.Any, k: js.Any, v: js.Any): js.Any = js.native
-    def setStyle(o: js.Any, k: js.Any, v: js.Any, force: js.Any): js.Any = js.native
-    def setStyle(o: js.Any, k: js.Any, v: js.Any, force: js.Any, ignoreHistoryAndEvents: js.Any): js.Any = js.native
-    def setStyle(o: js.Any, k: js.Any, v: js.Any, force: Unit, ignoreHistoryAndEvents: js.Any): js.Any = js.native
+    def setStyle(o: Any, k: Any, v: Any): Any = js.native
+    def setStyle(o: Any, k: Any, v: Any, force: Any): Any = js.native
+    def setStyle(o: Any, k: Any, v: Any, force: Any, ignoreHistoryAndEvents: Any): Any = js.native
+    def setStyle(o: Any, k: Any, v: Any, force: Unit, ignoreHistoryAndEvents: Any): Any = js.native
     
-    def setValue(cell: js.Any, value: js.Any, force: js.Any): js.Any = js.native
+    def setValue(cell: Any, value: Any, force: Any): Any = js.native
     
-    def setValueFromCoords(x: Double, y: Double, value: js.Any, force: js.Any): js.Any = js.native
+    def setValueFromCoords(x: Double, y: Double, value: Any, force: Any): Any = js.native
     
-    def setWidth(column: js.Any, width: js.Any, oldWidth: js.Any): js.Any = js.native
+    def setWidth(column: Any, width: Any, oldWidth: Any): Any = js.native
     
-    def showColumn(colNumber: Double): js.Any = js.native
+    def showColumn(colNumber: Double): Any = js.native
     
-    def showIndex(): js.Any = js.native
+    def showIndex(): Any = js.native
     
-    var style: js.Array[js.Any] = js.native
+    var style: js.Array[Any] = js.native
     
     var table: HTMLTableElement = js.native
     
@@ -1500,44 +1494,44 @@ object mod extends Shortcut {
     
     var toolbar: HTMLDivElement = js.native
     
-    def undo(): js.Any = js.native
+    def undo(): Any = js.native
     
-    def up(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
+    def up(shiftKey: Any, ctrlKey: Any): Any = js.native
     
-    def updateCell(x: Double, y: Double): js.Any = js.native
-    def updateCell(x: Double, y: Double, value: Unit, force: js.Any): js.Any = js.native
-    def updateCell(x: Double, y: Double, value: CellValue): js.Any = js.native
-    def updateCell(x: Double, y: Double, value: CellValue, force: js.Any): js.Any = js.native
+    def updateCell(x: Double, y: Double): Any = js.native
+    def updateCell(x: Double, y: Double, value: Unit, force: Any): Any = js.native
+    def updateCell(x: Double, y: Double, value: CellValue): Any = js.native
+    def updateCell(x: Double, y: Double, value: CellValue, force: Any): Any = js.native
     
-    def updateCopySelection(x3: js.Any, y3: js.Any): js.Any = js.native
+    def updateCopySelection(x3: Any, y3: Any): Any = js.native
     
-    def updateCornerPosition(): js.Any = js.native
+    def updateCornerPosition(): Any = js.native
     
-    def updateFormula(formula: js.Any, referencesToUpdate: js.Any): js.Any = js.native
+    def updateFormula(formula: Any, referencesToUpdate: Any): Any = js.native
     
-    def updateFormulaChain(x: js.Any, y: js.Any, records: js.Any): js.Any = js.native
+    def updateFormulaChain(x: Any, y: Any, records: Any): Any = js.native
     
-    def updateFormulas(referencesToUpdate: js.Any): js.Any = js.native
+    def updateFormulas(referencesToUpdate: Any): Any = js.native
     
-    def updateMeta(affectedCells: js.Any): js.Any = js.native
+    def updateMeta(affectedCells: Any): Any = js.native
     
-    def updateOrder(rows: js.Any): js.Any = js.native
+    def updateOrder(rows: Any): Any = js.native
     
-    def updateOrderArrow(column: js.Any, order: js.Any): js.Any = js.native
+    def updateOrderArrow(column: Any, order: Any): Any = js.native
     
-    def updatePagination(): js.Any = js.native
+    def updatePagination(): Any = js.native
     
-    def updateScroll(direction: js.Any): js.Any = js.native
+    def updateScroll(direction: Any): Any = js.native
     
-    def updateSelection(el1: js.Any, el2: js.Any, origin: js.Any): js.Any = js.native
+    def updateSelection(el1: Any, el2: Any, origin: Any): Any = js.native
     
-    def updateSelectionFromCoords(x1: Double, y1: Double, x2: Double, y2: Double, origin: js.Any): js.Any = js.native
+    def updateSelectionFromCoords(x1: Double, y1: Double, x2: Double, y2: Double, origin: Any): Any = js.native
     
-    def updateTable(): js.Any = js.native
+    def updateTable(): Any = js.native
     
-    def updateTableReferences(): js.Any = js.native
+    def updateTableReferences(): Any = js.native
     
-    def whichPage(cell: js.Any): js.Any = js.native
+    def whichPage(cell: Any): Any = js.native
   }
   
   trait MethodsOptions extends StObject {
@@ -2152,91 +2146,91 @@ object mod extends Shortcut {
   trait TranslationsOptions extends StObject {
     
     /** About */
-    var about: js.UndefOr[js.Any] = js.undefined
+    var about: js.UndefOr[Any] = js.undefined
     
     /** Add comments */
-    var addComments: js.UndefOr[js.Any] = js.undefined
+    var addComments: js.UndefOr[Any] = js.undefined
     
     /** Are you sure to delete the selected columns? */
-    var areYouSureToDeleteTheSelectedColumns: js.UndefOr[js.Any] = js.undefined
+    var areYouSureToDeleteTheSelectedColumns: js.UndefOr[Any] = js.undefined
     
     /** Are you sure to delete the selected rows? */
-    var areYouSureToDeleteTheSelectedRows: js.UndefOr[js.Any] = js.undefined
+    var areYouSureToDeleteTheSelectedRows: js.UndefOr[Any] = js.undefined
     
     /** Cell already merged */
-    var cellAlreadyMerged: js.UndefOr[js.Any] = js.undefined
+    var cellAlreadyMerged: js.UndefOr[Any] = js.undefined
     
     /** Clear comments */
-    var clearComments: js.UndefOr[js.Any] = js.undefined
+    var clearComments: js.UndefOr[Any] = js.undefined
     
     /** Comments */
-    var comments: js.UndefOr[js.Any] = js.undefined
+    var comments: js.UndefOr[Any] = js.undefined
     
     /** Copy... */
-    var copy: js.UndefOr[js.Any] = js.undefined
+    var copy: js.UndefOr[Any] = js.undefined
     
     /** Delete selected columns */
-    var deleteSelectedColumns: js.UndefOr[js.Any] = js.undefined
+    var deleteSelectedColumns: js.UndefOr[Any] = js.undefined
     
     /** Delete selected rows */
-    var deleteSelectedRows: js.UndefOr[js.Any] = js.undefined
+    var deleteSelectedRows: js.UndefOr[Any] = js.undefined
     
     /** Edit comments */
-    var editComments: js.UndefOr[js.Any] = js.undefined
+    var editComments: js.UndefOr[Any] = js.undefined
     
     /** entries */
-    var entries: js.UndefOr[js.Any] = js.undefined
+    var entries: js.UndefOr[Any] = js.undefined
     
     /** Insert a new column after */
-    var insertANewColumnAfter: js.UndefOr[js.Any] = js.undefined
+    var insertANewColumnAfter: js.UndefOr[Any] = js.undefined
     
     /** Insert a new column before */
-    var insertANewColumnBefore: js.UndefOr[js.Any] = js.undefined
+    var insertANewColumnBefore: js.UndefOr[Any] = js.undefined
     
     /** Insert a new row after */
-    var insertANewRowAfter: js.UndefOr[js.Any] = js.undefined
+    var insertANewRowAfter: js.UndefOr[Any] = js.undefined
     
     /** Insert a new row before */
-    var insertANewRowBefore: js.UndefOr[js.Any] = js.undefined
+    var insertANewRowBefore: js.UndefOr[Any] = js.undefined
     
     /** Invalid merged properties */
-    var invalidMergeProperties: js.UndefOr[js.Any] = js.undefined
+    var invalidMergeProperties: js.UndefOr[Any] = js.undefined
     
     /** No cells selected */
-    var noCellsSelected: js.UndefOr[js.Any] = js.undefined
+    var noCellsSelected: js.UndefOr[Any] = js.undefined
     
     /** No records found */
-    var noRecordsFound: js.UndefOr[js.Any] = js.undefined
+    var noRecordsFound: js.UndefOr[Any] = js.undefined
     
     /** Order ascending */
-    var orderAscending: js.UndefOr[js.Any] = js.undefined
+    var orderAscending: js.UndefOr[Any] = js.undefined
     
     /** Order descending */
-    var orderDescending: js.UndefOr[js.Any] = js.undefined
+    var orderDescending: js.UndefOr[Any] = js.undefined
     
     /** Paste... */
-    var paste: js.UndefOr[js.Any] = js.undefined
+    var paste: js.UndefOr[Any] = js.undefined
     
     /** Rename this column */
-    var renameThisColumn: js.UndefOr[js.Any] = js.undefined
+    var renameThisColumn: js.UndefOr[Any] = js.undefined
     
     /** Save as... */
-    var saveAs: js.UndefOr[js.Any] = js.undefined
+    var saveAs: js.UndefOr[Any] = js.undefined
     
     /** Show */
-    var show: js.UndefOr[js.Any] = js.undefined
+    var show: js.UndefOr[Any] = js.undefined
     
     /** Showing page {0} of {1} entries */
-    var showingPage: js.UndefOr[js.Any] = js.undefined
+    var showingPage: js.UndefOr[Any] = js.undefined
     
     /** There is a conflict with another merged cell */
-    var thereIsAConflictWithAnotherMergedCell: js.UndefOr[js.Any] = js.undefined
+    var thereIsAConflictWithAnotherMergedCell: js.UndefOr[Any] = js.undefined
     
     /** This action will clear your search results. Are you sure? */
-    var thisActionWillClearYourSearchResultsAreYouSure: js.UndefOr[js.Any] = js.undefined
+    var thisActionWillClearYourSearchResultsAreYouSure: js.UndefOr[Any] = js.undefined
     
     /** This action will destroy any existing merged cells. Are you sure? */
-    var thisActionWillDestroyAnyExistingMergedCellsAreYouSure: js.UndefOr[js.Any] = js.undefined
+    var thisActionWillDestroyAnyExistingMergedCellsAreYouSure: js.UndefOr[Any] = js.undefined
   }
   object TranslationsOptions {
     
@@ -2247,119 +2241,119 @@ object mod extends Shortcut {
     
     extension [Self <: TranslationsOptions](x: Self) {
       
-      inline def setAbout(value: js.Any): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+      inline def setAbout(value: Any): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
       inline def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
       
-      inline def setAddComments(value: js.Any): Self = StObject.set(x, "addComments", value.asInstanceOf[js.Any])
+      inline def setAddComments(value: Any): Self = StObject.set(x, "addComments", value.asInstanceOf[js.Any])
       
       inline def setAddCommentsUndefined: Self = StObject.set(x, "addComments", js.undefined)
       
-      inline def setAreYouSureToDeleteTheSelectedColumns(value: js.Any): Self = StObject.set(x, "areYouSureToDeleteTheSelectedColumns", value.asInstanceOf[js.Any])
+      inline def setAreYouSureToDeleteTheSelectedColumns(value: Any): Self = StObject.set(x, "areYouSureToDeleteTheSelectedColumns", value.asInstanceOf[js.Any])
       
       inline def setAreYouSureToDeleteTheSelectedColumnsUndefined: Self = StObject.set(x, "areYouSureToDeleteTheSelectedColumns", js.undefined)
       
-      inline def setAreYouSureToDeleteTheSelectedRows(value: js.Any): Self = StObject.set(x, "areYouSureToDeleteTheSelectedRows", value.asInstanceOf[js.Any])
+      inline def setAreYouSureToDeleteTheSelectedRows(value: Any): Self = StObject.set(x, "areYouSureToDeleteTheSelectedRows", value.asInstanceOf[js.Any])
       
       inline def setAreYouSureToDeleteTheSelectedRowsUndefined: Self = StObject.set(x, "areYouSureToDeleteTheSelectedRows", js.undefined)
       
-      inline def setCellAlreadyMerged(value: js.Any): Self = StObject.set(x, "cellAlreadyMerged", value.asInstanceOf[js.Any])
+      inline def setCellAlreadyMerged(value: Any): Self = StObject.set(x, "cellAlreadyMerged", value.asInstanceOf[js.Any])
       
       inline def setCellAlreadyMergedUndefined: Self = StObject.set(x, "cellAlreadyMerged", js.undefined)
       
-      inline def setClearComments(value: js.Any): Self = StObject.set(x, "clearComments", value.asInstanceOf[js.Any])
+      inline def setClearComments(value: Any): Self = StObject.set(x, "clearComments", value.asInstanceOf[js.Any])
       
       inline def setClearCommentsUndefined: Self = StObject.set(x, "clearComments", js.undefined)
       
-      inline def setComments(value: js.Any): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: Any): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      inline def setCopy(value: js.Any): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Any): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDeleteSelectedColumns(value: js.Any): Self = StObject.set(x, "deleteSelectedColumns", value.asInstanceOf[js.Any])
+      inline def setDeleteSelectedColumns(value: Any): Self = StObject.set(x, "deleteSelectedColumns", value.asInstanceOf[js.Any])
       
       inline def setDeleteSelectedColumnsUndefined: Self = StObject.set(x, "deleteSelectedColumns", js.undefined)
       
-      inline def setDeleteSelectedRows(value: js.Any): Self = StObject.set(x, "deleteSelectedRows", value.asInstanceOf[js.Any])
+      inline def setDeleteSelectedRows(value: Any): Self = StObject.set(x, "deleteSelectedRows", value.asInstanceOf[js.Any])
       
       inline def setDeleteSelectedRowsUndefined: Self = StObject.set(x, "deleteSelectedRows", js.undefined)
       
-      inline def setEditComments(value: js.Any): Self = StObject.set(x, "editComments", value.asInstanceOf[js.Any])
+      inline def setEditComments(value: Any): Self = StObject.set(x, "editComments", value.asInstanceOf[js.Any])
       
       inline def setEditCommentsUndefined: Self = StObject.set(x, "editComments", js.undefined)
       
-      inline def setEntries(value: js.Any): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: Any): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
       inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      inline def setInsertANewColumnAfter(value: js.Any): Self = StObject.set(x, "insertANewColumnAfter", value.asInstanceOf[js.Any])
+      inline def setInsertANewColumnAfter(value: Any): Self = StObject.set(x, "insertANewColumnAfter", value.asInstanceOf[js.Any])
       
       inline def setInsertANewColumnAfterUndefined: Self = StObject.set(x, "insertANewColumnAfter", js.undefined)
       
-      inline def setInsertANewColumnBefore(value: js.Any): Self = StObject.set(x, "insertANewColumnBefore", value.asInstanceOf[js.Any])
+      inline def setInsertANewColumnBefore(value: Any): Self = StObject.set(x, "insertANewColumnBefore", value.asInstanceOf[js.Any])
       
       inline def setInsertANewColumnBeforeUndefined: Self = StObject.set(x, "insertANewColumnBefore", js.undefined)
       
-      inline def setInsertANewRowAfter(value: js.Any): Self = StObject.set(x, "insertANewRowAfter", value.asInstanceOf[js.Any])
+      inline def setInsertANewRowAfter(value: Any): Self = StObject.set(x, "insertANewRowAfter", value.asInstanceOf[js.Any])
       
       inline def setInsertANewRowAfterUndefined: Self = StObject.set(x, "insertANewRowAfter", js.undefined)
       
-      inline def setInsertANewRowBefore(value: js.Any): Self = StObject.set(x, "insertANewRowBefore", value.asInstanceOf[js.Any])
+      inline def setInsertANewRowBefore(value: Any): Self = StObject.set(x, "insertANewRowBefore", value.asInstanceOf[js.Any])
       
       inline def setInsertANewRowBeforeUndefined: Self = StObject.set(x, "insertANewRowBefore", js.undefined)
       
-      inline def setInvalidMergeProperties(value: js.Any): Self = StObject.set(x, "invalidMergeProperties", value.asInstanceOf[js.Any])
+      inline def setInvalidMergeProperties(value: Any): Self = StObject.set(x, "invalidMergeProperties", value.asInstanceOf[js.Any])
       
       inline def setInvalidMergePropertiesUndefined: Self = StObject.set(x, "invalidMergeProperties", js.undefined)
       
-      inline def setNoCellsSelected(value: js.Any): Self = StObject.set(x, "noCellsSelected", value.asInstanceOf[js.Any])
+      inline def setNoCellsSelected(value: Any): Self = StObject.set(x, "noCellsSelected", value.asInstanceOf[js.Any])
       
       inline def setNoCellsSelectedUndefined: Self = StObject.set(x, "noCellsSelected", js.undefined)
       
-      inline def setNoRecordsFound(value: js.Any): Self = StObject.set(x, "noRecordsFound", value.asInstanceOf[js.Any])
+      inline def setNoRecordsFound(value: Any): Self = StObject.set(x, "noRecordsFound", value.asInstanceOf[js.Any])
       
       inline def setNoRecordsFoundUndefined: Self = StObject.set(x, "noRecordsFound", js.undefined)
       
-      inline def setOrderAscending(value: js.Any): Self = StObject.set(x, "orderAscending", value.asInstanceOf[js.Any])
+      inline def setOrderAscending(value: Any): Self = StObject.set(x, "orderAscending", value.asInstanceOf[js.Any])
       
       inline def setOrderAscendingUndefined: Self = StObject.set(x, "orderAscending", js.undefined)
       
-      inline def setOrderDescending(value: js.Any): Self = StObject.set(x, "orderDescending", value.asInstanceOf[js.Any])
+      inline def setOrderDescending(value: Any): Self = StObject.set(x, "orderDescending", value.asInstanceOf[js.Any])
       
       inline def setOrderDescendingUndefined: Self = StObject.set(x, "orderDescending", js.undefined)
       
-      inline def setPaste(value: js.Any): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
+      inline def setPaste(value: Any): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
       
       inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
       
-      inline def setRenameThisColumn(value: js.Any): Self = StObject.set(x, "renameThisColumn", value.asInstanceOf[js.Any])
+      inline def setRenameThisColumn(value: Any): Self = StObject.set(x, "renameThisColumn", value.asInstanceOf[js.Any])
       
       inline def setRenameThisColumnUndefined: Self = StObject.set(x, "renameThisColumn", js.undefined)
       
-      inline def setSaveAs(value: js.Any): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
+      inline def setSaveAs(value: Any): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
       
       inline def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
       
-      inline def setShow(value: js.Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
       inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      inline def setShowingPage(value: js.Any): Self = StObject.set(x, "showingPage", value.asInstanceOf[js.Any])
+      inline def setShowingPage(value: Any): Self = StObject.set(x, "showingPage", value.asInstanceOf[js.Any])
       
       inline def setShowingPageUndefined: Self = StObject.set(x, "showingPage", js.undefined)
       
-      inline def setThereIsAConflictWithAnotherMergedCell(value: js.Any): Self = StObject.set(x, "thereIsAConflictWithAnotherMergedCell", value.asInstanceOf[js.Any])
+      inline def setThereIsAConflictWithAnotherMergedCell(value: Any): Self = StObject.set(x, "thereIsAConflictWithAnotherMergedCell", value.asInstanceOf[js.Any])
       
       inline def setThereIsAConflictWithAnotherMergedCellUndefined: Self = StObject.set(x, "thereIsAConflictWithAnotherMergedCell", js.undefined)
       
-      inline def setThisActionWillClearYourSearchResultsAreYouSure(value: js.Any): Self = StObject.set(x, "thisActionWillClearYourSearchResultsAreYouSure", value.asInstanceOf[js.Any])
+      inline def setThisActionWillClearYourSearchResultsAreYouSure(value: Any): Self = StObject.set(x, "thisActionWillClearYourSearchResultsAreYouSure", value.asInstanceOf[js.Any])
       
       inline def setThisActionWillClearYourSearchResultsAreYouSureUndefined: Self = StObject.set(x, "thisActionWillClearYourSearchResultsAreYouSure", js.undefined)
       
-      inline def setThisActionWillDestroyAnyExistingMergedCellsAreYouSure(value: js.Any): Self = StObject.set(x, "thisActionWillDestroyAnyExistingMergedCellsAreYouSure", value.asInstanceOf[js.Any])
+      inline def setThisActionWillDestroyAnyExistingMergedCellsAreYouSure(value: Any): Self = StObject.set(x, "thisActionWillDestroyAnyExistingMergedCellsAreYouSure", value.asInstanceOf[js.Any])
       
       inline def setThisActionWillDestroyAnyExistingMergedCellsAreYouSureUndefined: Self = StObject.set(x, "thisActionWillDestroyAnyExistingMergedCellsAreYouSure", js.undefined)
     }
@@ -2371,7 +2365,7 @@ object mod extends Shortcut {
         js.Array[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ title in string | number ]: jexcel.jexcel.CellValue}
-      */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[js.Any]) | js.Array[CellValue]
+      */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[Any]) | js.Array[CellValue]
         ]
       ] = js.undefined
   }
@@ -2388,7 +2382,7 @@ object mod extends Shortcut {
         value: js.Array[
               (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[js.Any]) | js.Array[CellValue]
+        */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[Any]) | js.Array[CellValue]
             ]
       ): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
       
@@ -2397,8 +2391,8 @@ object mod extends Shortcut {
       inline def setFootersVarargs(
         value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[js.Any]) | js.Array[CellValue])*
-      ): Self = StObject.set(x, "footers", js.Array(value :_*))
+        */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[Any]) | js.Array[CellValue])*
+      ): Self = StObject.set(x, "footers", js.Array(value*))
     }
   }
   

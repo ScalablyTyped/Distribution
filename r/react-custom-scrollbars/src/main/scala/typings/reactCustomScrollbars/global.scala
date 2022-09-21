@@ -10,12 +10,12 @@ object global {
   
   @JSGlobal("ReactCustomScrollbars")
   @js.native
-  class ReactCustomScrollbars protected () extends default {
+  open class ReactCustomScrollbars protected () extends default {
     def this(props: ScrollbarProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollbarProps, context: js.Any) = this()
+    def this(props: ScrollbarProps, context: Any) = this()
   }
 }

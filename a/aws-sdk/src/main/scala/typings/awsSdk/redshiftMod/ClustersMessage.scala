@@ -29,7 +29,7 @@ object ClustersMessage {
     
     inline def setClustersUndefined: Self = StObject.set(x, "Clusters", js.undefined)
     
-    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "Clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "Clusters", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

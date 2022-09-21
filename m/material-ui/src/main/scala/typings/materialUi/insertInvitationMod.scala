@@ -10,10 +10,10 @@ object insertInvitationMod {
   
   @JSImport("material-ui/svg-icons/editor/insert-invitation", JSImport.Default)
   @js.native
-  class default () extends EditorInsertInvitation
+  open class default () extends EditorInsertInvitation
   
   @JSImport("material-ui/svg-icons/editor/insert-invitation", "EditorInsertInvitation")
   @js.native
-  class EditorInsertInvitation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorInsertInvitation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

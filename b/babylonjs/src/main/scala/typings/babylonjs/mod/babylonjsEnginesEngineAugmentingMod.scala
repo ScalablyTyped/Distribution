@@ -3,6 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.WebGLProgram
 import typings.babylonjs.engineMod.IDisplayChangedEventArgs
+import typings.babylonjs.engineQueryMod.OcclusionQuery
 import typings.babylonjs.engineWebVRMod.IVRPresentationAttributes
 import typings.babylonjs.iparticlesystemMod.IParticleSystem
 import typings.babylonjs.typesMod.Nullable
@@ -22,6 +23,9 @@ object babylonjsEnginesEngineAugmentingMod {
   trait Engine extends StObject {
     
     /** @hidden */
+    var _captureGPUFrameTime: Boolean = js.native
+    
+    /** @hidden */
     def _createTimeQuery(): WebGLQuery = js.native
     
     /** @hidden */
@@ -37,19 +41,44 @@ object babylonjsEnginesEngineAugmentingMod {
     def _getGlAlgorithmType(algorithmType: Double): Double = js.native
     
     /** @hidden */
-    def _getTimeQueryAvailability(query: WebGLQuery): js.Any = js.native
+    def _getTimeQueryAvailability(query: WebGLQuery): Any = js.native
     
     /** @hidden */
-    def _getTimeQueryResult(query: WebGLQuery): js.Any = js.native
+    def _getTimeQueryResult(query: WebGLQuery): Any = js.native
     
     /** @hidden */
     def _getVRDisplaysAsync(): js.Promise[IDisplayChangedEventArgs] = js.native
+    
+    /** @hidden */
+    var _gpuFrameTime: typings.babylonjs.perfCounterMod.PerfCounter = js.native
+    
+    /** @hidden */
+    var _gpuFrameTimeToken: Nullable[typings.babylonjs.timeTokenMod.TimeToken] = js.native
+    
+    /** @hidden */
+    var _inputElement: Nullable[HTMLElement] = js.native
     
     /** @hidden */
     var _oldHardwareScaleFactor: Double = js.native
     
     /** @hidden */
     var _oldSize: typings.babylonjs.mathSizeMod.Size = js.native
+    
+    /** @hidden */
+    var _onBeginFrameObserver: Nullable[
+        typings.babylonjs.observableMod.Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
+      ] = js.native
+    
+    /** @hidden */
+    var _onEndFrameObserver: Nullable[
+        typings.babylonjs.observableMod.Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
+      ] = js.native
+    
+    /**
+      * Observable to handle when a change to inputElement occurs
+      * @hidden
+      */
+    var _onEngineViewChanged: js.UndefOr[js.Function0[Unit]] = js.native
     
     /** @hidden */
     def _onVRDisplayPointerRestricted(): Unit = js.native
@@ -61,7 +90,7 @@ object babylonjsEnginesEngineAugmentingMod {
     def _onVRFullScreenTriggered(): Unit = js.native
     
     /** @hidden */
-    var _onVrDisplayConnect: Nullable[js.Function1[/* display */ js.Any, Unit]] = js.native
+    var _onVrDisplayConnect: Nullable[js.Function1[/* display */ Any, Unit]] = js.native
     
     /** @hidden */
     var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
@@ -73,7 +102,7 @@ object babylonjsEnginesEngineAugmentingMod {
     var _textureFormatInUse: String = js.native
     
     /** @hidden */
-    var _vrDisplay: js.Any = js.native
+    var _vrDisplay: Any = js.native
     
     /** @hidden */
     var _vrExclusivePointerMode: Boolean = js.native
@@ -97,7 +126,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @returns the current engine
       * @see https://doc.babylonjs.com/features/occlusionquery
       */
-    def beginOcclusionQuery(algorithmType: Double, query: WebGLQuery): typings.babylonjs.engineOcclusionQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def beginOcclusionQuery(algorithmType: Double, query: OcclusionQuery): Boolean = js.native
     
     /**
       * Begins a transform feedback operation
@@ -106,10 +135,10 @@ object babylonjsEnginesEngineAugmentingMod {
     def beginTransformFeedback(usePoints: Boolean): Unit = js.native
     
     /**
-      * Binds a multiview framebuffer to be drawn to
-      * @param multiviewTexture texture to bind
+      * Binds a multiview render target wrapper to be drawn to
+      * @param multiviewTexture render target wrapper to bind
       */
-    def bindMultiviewFramebuffer(multiviewTexture: typings.babylonjs.internalTextureMod.InternalTexture): Unit = js.native
+    def bindMultiviewFramebuffer(multiviewTexture: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper): Unit = js.native
     
     /**
       * Bind a webGL transform feedback object to the webgl context
@@ -124,6 +153,12 @@ object babylonjsEnginesEngineAugmentingMod {
     def bindTransformFeedbackBuffer(value: Nullable[typings.babylonjs.dataBufferMod.DataBuffer]): Unit = js.native
     
     /**
+      * Enable or disable the GPU frame time capture
+      * @param value True to enable, false to disable
+      */
+    def captureGPUFrameTime(value: Boolean): Unit = js.native
+    
+    /**
       * Create an effect to use with particle systems.
       * Please note that some parameters like animation sheets or not being billboard are not supported in this configuration, except if you pass
       * the particle system for which you want to create a custom effect in the last parameter
@@ -131,7 +166,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param uniformsNames defines a list of attribute names
       * @param samplers defines an array of string used to represent textures
       * @param defines defines the string containing the defines to use to compile the shaders
-      * @param fallbacks defines the list of potential fallbacks to use if shader conmpilation fails
+      * @param fallbacks defines the list of potential fallbacks to use if shader compilation fails
       * @param onCompiled defines a function to call when the effect creation is successful
       * @param onError defines a function to call when the effect creation has failed
       * @param particleSystem the particle system you want to create the effect for
@@ -282,15 +317,15 @@ object babylonjsEnginesEngineAugmentingMod {
       * Creates a new multiview render target
       * @param width defines the width of the texture
       * @param height defines the height of the texture
-      * @returns the created multiview texture
+      * @returns the created multiview render target wrapper
       */
-    def createMultiviewRenderTargetTexture(width: Double, height: Double): typings.babylonjs.internalTextureMod.InternalTexture = js.native
+    def createMultiviewRenderTargetTexture(width: Double, height: Double): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /**
       * Create a new webGL query (you must be sure that queries are supported by checking getCaps() function)
-      * @return the new query
+      * @returns the new query
       */
-    def createQuery(): WebGLQuery = js.native
+    def createQuery(): OcclusionQuery = js.native
     
     /**
       * Creates a webGL transform feedback object
@@ -302,9 +337,9 @@ object babylonjsEnginesEngineAugmentingMod {
     /**
       * Delete and release a webGL query
       * @param query defines the query to delete
-      * @return the current engine
+      * @returns the current engine
       */
-    def deleteQuery(query: WebGLQuery): typings.babylonjs.engineOcclusionQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def deleteQuery(query: OcclusionQuery): typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
     
     /**
       * Delete a webGL transform feedback object
@@ -326,7 +361,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param algorithmType defines the algorithm to use
       * @returns the current engine
       */
-    def endOcclusionQuery(algorithmType: Double): typings.babylonjs.engineOcclusionQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
+    def endOcclusionQuery(algorithmType: Double): typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine = js.native
     
     /**
       * Ends a time query
@@ -341,17 +376,23 @@ object babylonjsEnginesEngineAugmentingMod {
     def endTransformFeedback(): Unit = js.native
     
     /**
+      * Get the performance counter associated with the frame time computation
+      * @returns the perf counter
+      */
+    def getGPUFrameTimeCounter(): typings.babylonjs.perfCounterMod.PerfCounter = js.native
+    
+    /**
       * Gets the value of a given query
       * @param query defines the query to check
       * @returns the value of the query
       */
-    def getQueryResult(query: WebGLQuery): Double = js.native
+    def getQueryResult(query: OcclusionQuery): Double = js.native
     
     /**
       * Gets the current webVR device
       * @returns the current webVR device (or null)
       */
-    def getVRDevice(): js.Any = js.native
+    def getVRDevice(): Any = js.native
     
     /**
       * Initializes a webVR display and starts listening to display change events
@@ -376,13 +417,23 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param query defines the query to check
       * @returns true if the query got its value
       */
-    def isQueryResultAvailable(query: WebGLQuery): Boolean = js.native
+    def isQueryResultAvailable(query: OcclusionQuery): Boolean = js.native
     
     /**
       * Gets a boolean indicating if a webVR device was detected
       * @returns true if a webVR device was detected
       */
     def isVRDevicePresent(): Boolean = js.native
+    
+    /**
+      * Will be triggered after the view rendered
+      */
+    val onAfterViewRenderObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.engineViewsMod.EngineView] = js.native
+    
+    /**
+      * Will be triggered before the view renders
+      */
+    val onBeforeViewRenderObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.engineViewsMod.EngineView] = js.native
     
     /**
       * Observable signaled when VR display mode changes
@@ -403,10 +454,13 @@ object babylonjsEnginesEngineAugmentingMod {
       * Register a new child canvas
       * @param canvas defines the canvas to register
       * @param camera defines an optional camera to use with this canvas (it will overwrite the scene.camera for this view)
+      * @param clearBeforeCopy Indicates if the destination view canvas should be cleared before copying the parent canvas. Can help if the scene clear color has alpha < 1
       * @returns the associated view
       */
     def registerView(canvas: HTMLCanvasElement): typings.babylonjs.engineViewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement, camera: Unit, clearBeforeCopy: Boolean): typings.babylonjs.engineViewsMod.EngineView = js.native
     def registerView(canvas: HTMLCanvasElement, camera: typings.babylonjs.cameraMod.Camera): typings.babylonjs.engineViewsMod.EngineView = js.native
+    def registerView(canvas: HTMLCanvasElement, camera: typings.babylonjs.cameraMod.Camera, clearBeforeCopy: Boolean): typings.babylonjs.engineViewsMod.EngineView = js.native
     
     /**
       * Set the compressed texture extensions or file names to skip.

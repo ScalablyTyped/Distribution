@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The full representation of a Service that is managed by Google Service
-  * Management.
-  */
 trait SchemaManagedService extends StObject {
   
   /**
     * ID of the project that produces and owns this service.
     */
-  var producerProjectId: js.UndefOr[String] = js.undefined
+  var producerProjectId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name of the service. See the [overview](/service-management/overview)
-    * for naming requirements.
+    * The name of the service. See the [overview](https://cloud.google.com/service-infrastructure/docs/overview) for naming requirements.
     */
-  var serviceName: js.UndefOr[String] = js.undefined
+  var serviceName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaManagedService {
   
@@ -32,9 +27,13 @@ object SchemaManagedService {
     
     inline def setProducerProjectId(value: String): Self = StObject.set(x, "producerProjectId", value.asInstanceOf[js.Any])
     
+    inline def setProducerProjectIdNull: Self = StObject.set(x, "producerProjectId", null)
+    
     inline def setProducerProjectIdUndefined: Self = StObject.set(x, "producerProjectId", js.undefined)
     
     inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNameNull: Self = StObject.set(x, "serviceName", null)
     
     inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.FileExportConverter")
 @js.native
-/* private */ class FileExportConverter ()
+/* private */ open class FileExportConverter ()
   extends StObject
      with typings.activexExcel.Excel.FileExportConverter {
   
@@ -31,5 +31,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val FileFormat: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

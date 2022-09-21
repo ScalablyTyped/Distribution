@@ -29,7 +29,7 @@ object XArrayFormulaRange {
     ArrayFormula: String,
     acquire: () => Unit,
     getArrayFormula: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setArrayFormula: String => Unit
   ): XArrayFormulaRange = {

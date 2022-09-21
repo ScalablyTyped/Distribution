@@ -31,7 +31,8 @@ trait NavigatorYAxisOptions extends StObject {
   /**
     * (Highstock, Gantt) Whether to allow decimals in this axis' ticks. When
     * counting integers, like persons or hits on a web page, decimals should be
-    * avoided in the labels.
+    * avoided in the labels. By default, decimals are allowed on small scale
+    * axes.
     */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
@@ -153,7 +154,8 @@ trait NavigatorYAxisOptions extends StObject {
   
   /**
     * (Highstock, Gantt) The width of the grid lines extending the ticks across
-    * the plot area.
+    * the plot area. Defaults to 1 on the Y axis and 0 on the X axis, except
+    * for 3d charts.
     *
     * In styled mode, the stroke width is given in the `.highcharts-grid-line`
     * class.
@@ -382,6 +384,12 @@ trait NavigatorYAxisOptions extends StObject {
     * be used.
     */
   var pane: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) Whether to pan axis. If `chart.panning` is enabled,
+    * the option allows to disable panning on an individual axis.
+    */
+  var panningEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An array of colored bands stretching
@@ -642,6 +650,11 @@ trait NavigatorYAxisOptions extends StObject {
   var width: js.UndefOr[Double | String] = js.undefined
   
   /**
+    * (Highstock, Gantt) The Z index for the axis group.
+    */
+  var zIndex: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highstock, Gantt) Whether to zoom axis. If `chart.zoomType` is set, the
     * option allows to disable zooming on an individual axis.
     */
@@ -680,13 +693,13 @@ object NavigatorYAxisOptions {
     
     inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    inline def setBreaksVarargs(value: NavigatorYAxisBreaksOptions*): Self = StObject.set(x, "breaks", js.Array(value :_*))
+    inline def setBreaksVarargs(value: NavigatorYAxisBreaksOptions*): Self = StObject.set(x, "breaks", js.Array(value*))
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setCeiling(value: Double): Self = StObject.set(x, "ceiling", value.asInstanceOf[js.Any])
     
@@ -846,17 +859,21 @@ object NavigatorYAxisOptions {
     
     inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
+    inline def setPanningEnabled(value: Boolean): Self = StObject.set(x, "panningEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPanningEnabledUndefined: Self = StObject.set(x, "panningEnabled", js.undefined)
+    
     inline def setPlotBands(value: js.Array[NavigatorYAxisPlotBandsOptions]): Self = StObject.set(x, "plotBands", value.asInstanceOf[js.Any])
     
     inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
-    inline def setPlotBandsVarargs(value: NavigatorYAxisPlotBandsOptions*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
+    inline def setPlotBandsVarargs(value: NavigatorYAxisPlotBandsOptions*): Self = StObject.set(x, "plotBands", js.Array(value*))
     
     inline def setPlotLines(value: js.Array[NavigatorYAxisPlotLinesOptions]): Self = StObject.set(x, "plotLines", value.asInstanceOf[js.Any])
     
     inline def setPlotLinesUndefined: Self = StObject.set(x, "plotLines", js.undefined)
     
-    inline def setPlotLinesVarargs(value: NavigatorYAxisPlotLinesOptions*): Self = StObject.set(x, "plotLines", js.Array(value :_*))
+    inline def setPlotLinesVarargs(value: NavigatorYAxisPlotLinesOptions*): Self = StObject.set(x, "plotLines", js.Array(value*))
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
@@ -902,7 +919,7 @@ object NavigatorYAxisOptions {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: (js.Tuple2[Double, ColorType])*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: (js.Tuple2[Double, ColorType])*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setTickAmount(value: Double): Self = StObject.set(x, "tickAmount", value.asInstanceOf[js.Any])
     
@@ -936,7 +953,7 @@ object NavigatorYAxisOptions {
     
     inline def setTickPositionsUndefined: Self = StObject.set(x, "tickPositions", js.undefined)
     
-    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value :_*))
+    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value*))
     
     inline def setTickWidth(value: Double): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
     
@@ -969,6 +986,10 @@ object NavigatorYAxisOptions {
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     inline def setZoomEnabled(value: Boolean): Self = StObject.set(x, "zoomEnabled", value.asInstanceOf[js.Any])
     

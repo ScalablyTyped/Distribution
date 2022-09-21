@@ -12,7 +12,7 @@ trait StateCondition
     * Internal only
     * @hidden
     */
-  /* private */ var _target: js.Any
+  /* private */ var _target: Any
   
   /** Value to compare with target state  */
   var value: String
@@ -23,12 +23,12 @@ object StateCondition {
     _actionManager: ActionManager,
     _currentResult: Boolean,
     _evaluationId: Double,
-    _getEffectiveTarget: (js.Any, String) => js.Any,
+    _getEffectiveTarget: (Any, String) => Any,
     _getProperty: String => String,
-    _serialize: js.Any => js.Any,
-    _target: js.Any,
+    _serialize: Any => Any,
+    _target: Any,
     isValid: () => Boolean,
-    serialize: () => js.Any,
+    serialize: () => Any,
     value: String
   ): StateCondition = {
     val __obj = js.Dynamic.literal(_actionManager = _actionManager.asInstanceOf[js.Any], _currentResult = _currentResult.asInstanceOf[js.Any], _evaluationId = _evaluationId.asInstanceOf[js.Any], _getEffectiveTarget = js.Any.fromFunction2(_getEffectiveTarget), _getProperty = js.Any.fromFunction1(_getProperty), _serialize = js.Any.fromFunction1(_serialize), _target = _target.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), serialize = js.Any.fromFunction0(serialize), value = value.asInstanceOf[js.Any])
@@ -39,6 +39,6 @@ object StateCondition {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
+    inline def set_target(value: Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
   }
 }

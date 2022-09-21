@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TimePickerViewModelConstructor
   extends StObject
-     with Instantiable0[TimePickerViewModel]
+     with /**
+  * Provides the logic for the [TimePicker](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePickerViewModel.html)
+  */
+Instantiable0[TimePickerViewModel]
      with Instantiable1[/* properties */ TimePickerViewModelProperties, TimePickerViewModel]

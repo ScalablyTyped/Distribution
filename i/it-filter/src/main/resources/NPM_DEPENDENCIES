@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "it-filter" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "it-filter" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

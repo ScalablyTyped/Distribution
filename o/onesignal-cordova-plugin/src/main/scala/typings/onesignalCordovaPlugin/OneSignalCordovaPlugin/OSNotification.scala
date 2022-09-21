@@ -10,7 +10,7 @@ trait OSNotification extends StObject {
   
   var adm_group: js.UndefOr[String] = js.undefined
   
-  var adm_group_message: js.UndefOr[js.Any] = js.undefined
+  var adm_group_message: js.UndefOr[Any] = js.undefined
   
   var adm_large_icon: js.UndefOr[String] = js.undefined
   
@@ -26,7 +26,7 @@ trait OSNotification extends StObject {
   
   var android_group: js.UndefOr[String] = js.undefined
   
-  var android_group_message: js.UndefOr[js.Any] = js.undefined
+  var android_group_message: js.UndefOr[Any] = js.undefined
   
   var android_led_color: js.UndefOr[String] = js.undefined
   
@@ -40,7 +40,7 @@ trait OSNotification extends StObject {
   
   var big_picture: js.UndefOr[String] = js.undefined
   
-  var buttons: js.UndefOr[js.Any] = js.undefined
+  var buttons: js.UndefOr[Any] = js.undefined
   
   var chrome_big_picture: js.UndefOr[String] = js.undefined
   
@@ -50,9 +50,9 @@ trait OSNotification extends StObject {
   
   var content_available: js.UndefOr[Boolean] = js.undefined
   
-  var contents: js.Any
+  var contents: Any
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var delayed_option: js.UndefOr[String] = js.undefined
   
@@ -66,7 +66,7 @@ trait OSNotification extends StObject {
   
   var groupedNotifications: js.UndefOr[js.Array[OSNotificationPayload]] = js.undefined
   
-  var headings: js.UndefOr[js.Any] = js.undefined
+  var headings: js.UndefOr[Any] = js.undefined
   
   var include_amazon_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -126,7 +126,7 @@ trait OSNotification extends StObject {
   
   var small_icon: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var tags: js.UndefOr[js.Array[Any]] = js.undefined
   
   var template_id: js.UndefOr[String] = js.undefined
   
@@ -141,7 +141,7 @@ trait OSNotification extends StObject {
 object OSNotification {
   
   inline def apply(
-    contents: js.Any,
+    contents: Any,
     displayType: OSDisplayType,
     isAppInFocus: Boolean,
     payload: OSNotificationPayload,
@@ -161,7 +161,7 @@ object OSNotification {
     
     inline def setAdm_groupUndefined: Self = StObject.set(x, "adm_group", js.undefined)
     
-    inline def setAdm_group_message(value: js.Any): Self = StObject.set(x, "adm_group_message", value.asInstanceOf[js.Any])
+    inline def setAdm_group_message(value: Any): Self = StObject.set(x, "adm_group_message", value.asInstanceOf[js.Any])
     
     inline def setAdm_group_messageUndefined: Self = StObject.set(x, "adm_group_message", js.undefined)
     
@@ -193,7 +193,7 @@ object OSNotification {
     
     inline def setAndroid_groupUndefined: Self = StObject.set(x, "android_group", js.undefined)
     
-    inline def setAndroid_group_message(value: js.Any): Self = StObject.set(x, "android_group_message", value.asInstanceOf[js.Any])
+    inline def setAndroid_group_message(value: Any): Self = StObject.set(x, "android_group_message", value.asInstanceOf[js.Any])
     
     inline def setAndroid_group_messageUndefined: Self = StObject.set(x, "android_group_message", js.undefined)
     
@@ -217,13 +217,13 @@ object OSNotification {
     
     inline def setApp_idsUndefined: Self = StObject.set(x, "app_ids", js.undefined)
     
-    inline def setApp_idsVarargs(value: String*): Self = StObject.set(x, "app_ids", js.Array(value :_*))
+    inline def setApp_idsVarargs(value: String*): Self = StObject.set(x, "app_ids", js.Array(value*))
     
     inline def setBig_picture(value: String): Self = StObject.set(x, "big_picture", value.asInstanceOf[js.Any])
     
     inline def setBig_pictureUndefined: Self = StObject.set(x, "big_picture", js.undefined)
     
-    inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
@@ -243,9 +243,9 @@ object OSNotification {
     
     inline def setContent_availableUndefined: Self = StObject.set(x, "content_available", js.undefined)
     
-    inline def setContents(value: js.Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -263,7 +263,7 @@ object OSNotification {
     
     inline def setExcluded_segmentsUndefined: Self = StObject.set(x, "excluded_segments", js.undefined)
     
-    inline def setExcluded_segmentsVarargs(value: String*): Self = StObject.set(x, "excluded_segments", js.Array(value :_*))
+    inline def setExcluded_segmentsVarargs(value: String*): Self = StObject.set(x, "excluded_segments", js.Array(value*))
     
     inline def setFirefox_icon(value: String): Self = StObject.set(x, "firefox_icon", value.asInstanceOf[js.Any])
     
@@ -273,9 +273,9 @@ object OSNotification {
     
     inline def setGroupedNotificationsUndefined: Self = StObject.set(x, "groupedNotifications", js.undefined)
     
-    inline def setGroupedNotificationsVarargs(value: OSNotificationPayload*): Self = StObject.set(x, "groupedNotifications", js.Array(value :_*))
+    inline def setGroupedNotificationsVarargs(value: OSNotificationPayload*): Self = StObject.set(x, "groupedNotifications", js.Array(value*))
     
-    inline def setHeadings(value: js.Any): Self = StObject.set(x, "headings", value.asInstanceOf[js.Any])
+    inline def setHeadings(value: Any): Self = StObject.set(x, "headings", value.asInstanceOf[js.Any])
     
     inline def setHeadingsUndefined: Self = StObject.set(x, "headings", js.undefined)
     
@@ -283,55 +283,55 @@ object OSNotification {
     
     inline def setInclude_amazon_reg_idsUndefined: Self = StObject.set(x, "include_amazon_reg_ids", js.undefined)
     
-    inline def setInclude_amazon_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_amazon_reg_ids", js.Array(value :_*))
+    inline def setInclude_amazon_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_amazon_reg_ids", js.Array(value*))
     
     inline def setInclude_android_reg_ids(value: js.Array[String]): Self = StObject.set(x, "include_android_reg_ids", value.asInstanceOf[js.Any])
     
     inline def setInclude_android_reg_idsUndefined: Self = StObject.set(x, "include_android_reg_ids", js.undefined)
     
-    inline def setInclude_android_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_android_reg_ids", js.Array(value :_*))
+    inline def setInclude_android_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_android_reg_ids", js.Array(value*))
     
     inline def setInclude_chrome_reg_ids(value: js.Array[String]): Self = StObject.set(x, "include_chrome_reg_ids", value.asInstanceOf[js.Any])
     
     inline def setInclude_chrome_reg_idsUndefined: Self = StObject.set(x, "include_chrome_reg_ids", js.undefined)
     
-    inline def setInclude_chrome_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_chrome_reg_ids", js.Array(value :_*))
+    inline def setInclude_chrome_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_chrome_reg_ids", js.Array(value*))
     
     inline def setInclude_chrome_web_reg_ids(value: js.Array[String]): Self = StObject.set(x, "include_chrome_web_reg_ids", value.asInstanceOf[js.Any])
     
     inline def setInclude_chrome_web_reg_idsUndefined: Self = StObject.set(x, "include_chrome_web_reg_ids", js.undefined)
     
-    inline def setInclude_chrome_web_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_chrome_web_reg_ids", js.Array(value :_*))
+    inline def setInclude_chrome_web_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_chrome_web_reg_ids", js.Array(value*))
     
     inline def setInclude_ios_tokens(value: js.Array[String]): Self = StObject.set(x, "include_ios_tokens", value.asInstanceOf[js.Any])
     
     inline def setInclude_ios_tokensUndefined: Self = StObject.set(x, "include_ios_tokens", js.undefined)
     
-    inline def setInclude_ios_tokensVarargs(value: String*): Self = StObject.set(x, "include_ios_tokens", js.Array(value :_*))
+    inline def setInclude_ios_tokensVarargs(value: String*): Self = StObject.set(x, "include_ios_tokens", js.Array(value*))
     
     inline def setInclude_player_ids(value: js.Array[String]): Self = StObject.set(x, "include_player_ids", value.asInstanceOf[js.Any])
     
     inline def setInclude_player_idsUndefined: Self = StObject.set(x, "include_player_ids", js.undefined)
     
-    inline def setInclude_player_idsVarargs(value: String*): Self = StObject.set(x, "include_player_ids", js.Array(value :_*))
+    inline def setInclude_player_idsVarargs(value: String*): Self = StObject.set(x, "include_player_ids", js.Array(value*))
     
     inline def setInclude_wp_uris(value: js.Array[String]): Self = StObject.set(x, "include_wp_uris", value.asInstanceOf[js.Any])
     
     inline def setInclude_wp_urisUndefined: Self = StObject.set(x, "include_wp_uris", js.undefined)
     
-    inline def setInclude_wp_urisVarargs(value: String*): Self = StObject.set(x, "include_wp_uris", js.Array(value :_*))
+    inline def setInclude_wp_urisVarargs(value: String*): Self = StObject.set(x, "include_wp_uris", js.Array(value*))
     
     inline def setInclude_wp_wns_uris(value: js.Array[String]): Self = StObject.set(x, "include_wp_wns_uris", value.asInstanceOf[js.Any])
     
     inline def setInclude_wp_wns_urisUndefined: Self = StObject.set(x, "include_wp_wns_uris", js.undefined)
     
-    inline def setInclude_wp_wns_urisVarargs(value: String*): Self = StObject.set(x, "include_wp_wns_uris", js.Array(value :_*))
+    inline def setInclude_wp_wns_urisVarargs(value: String*): Self = StObject.set(x, "include_wp_wns_uris", js.Array(value*))
     
     inline def setIncluded_segments(value: js.Array[String]): Self = StObject.set(x, "included_segments", value.asInstanceOf[js.Any])
     
     inline def setIncluded_segmentsUndefined: Self = StObject.set(x, "included_segments", js.undefined)
     
-    inline def setIncluded_segmentsVarargs(value: String*): Self = StObject.set(x, "included_segments", js.Array(value :_*))
+    inline def setIncluded_segmentsVarargs(value: String*): Self = StObject.set(x, "included_segments", js.Array(value*))
     
     inline def setIos_badgeCount(value: Double): Self = StObject.set(x, "ios_badgeCount", value.asInstanceOf[js.Any])
     
@@ -407,11 +407,11 @@ object OSNotification {
     
     inline def setSmall_iconUndefined: Self = StObject.set(x, "small_icon", js.undefined)
     
-    inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Any*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
     

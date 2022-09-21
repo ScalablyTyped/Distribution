@@ -57,7 +57,7 @@ object modalCloseMod {
   
   @JSImport("rbx/components/modal/modal-close", "ModalClose")
   @js.native
-  val ModalClose: ForwardRefAsExoticComponent[ModalCloseProps, ElementType[js.Any]] = js.native
+  val ModalClose: ForwardRefAsExoticComponent[ModalCloseProps, ElementType[Any]] = js.native
   
   trait ModalCloseModifierProps extends StObject {
     

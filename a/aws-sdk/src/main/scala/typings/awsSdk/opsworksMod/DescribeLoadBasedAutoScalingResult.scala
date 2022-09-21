@@ -24,6 +24,6 @@ object DescribeLoadBasedAutoScalingResult {
     
     inline def setLoadBasedAutoScalingConfigurationsUndefined: Self = StObject.set(x, "LoadBasedAutoScalingConfigurations", js.undefined)
     
-    inline def setLoadBasedAutoScalingConfigurationsVarargs(value: LoadBasedAutoScalingConfiguration*): Self = StObject.set(x, "LoadBasedAutoScalingConfigurations", js.Array(value :_*))
+    inline def setLoadBasedAutoScalingConfigurationsVarargs(value: LoadBasedAutoScalingConfiguration*): Self = StObject.set(x, "LoadBasedAutoScalingConfigurations", js.Array(value*))
   }
 }

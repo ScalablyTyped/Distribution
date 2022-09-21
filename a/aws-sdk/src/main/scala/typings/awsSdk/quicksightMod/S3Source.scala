@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Source extends StObject {
   
   /**
-    * The amazon Resource Name (ARN) for the data source.
+    * The Amazon Resource Name (ARN) for the data source.
     */
   var DataSourceArn: Arn
   
   /**
-    * A physical table type for as S3 data source.
+    * A physical table type for an S3 data source.  For files that aren't JSON, only STRING data types are supported in input columns. 
     */
   var InputColumns: InputColumnList
   
@@ -34,7 +34,7 @@ object S3Source {
     
     inline def setInputColumns(value: InputColumnList): Self = StObject.set(x, "InputColumns", value.asInstanceOf[js.Any])
     
-    inline def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value :_*))
+    inline def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value*))
     
     inline def setUploadSettings(value: UploadSettings): Self = StObject.set(x, "UploadSettings", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,7 @@ object TestInvokeAuthorizerResponse {
     
     inline def setPolicyDocumentsUndefined: Self = StObject.set(x, "policyDocuments", js.undefined)
     
-    inline def setPolicyDocumentsVarargs(value: PolicyDocument*): Self = StObject.set(x, "policyDocuments", js.Array(value :_*))
+    inline def setPolicyDocumentsVarargs(value: PolicyDocument*): Self = StObject.set(x, "policyDocuments", js.Array(value*))
     
     inline def setPrincipalId(value: PrincipalId): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     

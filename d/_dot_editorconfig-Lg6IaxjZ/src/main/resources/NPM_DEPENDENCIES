@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".editorconfig-Lg6IaxjZ" : "0.15.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".editorconfig-Lg6IaxjZ" : "0.15.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

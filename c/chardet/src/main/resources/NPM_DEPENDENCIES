@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "chardet" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "chardet" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

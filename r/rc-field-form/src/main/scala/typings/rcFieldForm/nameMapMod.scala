@@ -1,7 +1,7 @@
 package typings.rcFieldForm
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.rcFieldForm.interfaceMod.InternalNamePath
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object nameMapMod {
     */
   @JSImport("rc-field-form/es/utils/NameMap", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with NameMap[T] {
     
@@ -24,7 +24,7 @@ object nameMapMod {
     override def get(key: InternalNamePath): T = js.native
     
     /* private */ /* CompleteClass */
-    var list: js.Any = js.native
+    var kvs: Any = js.native
     
     /* CompleteClass */
     override def map[U](callback: js.Function1[/* kv */ KV[T], U]): js.Array[U] = js.native
@@ -33,7 +33,7 @@ object nameMapMod {
     override def set(key: InternalNamePath, value: T): Unit = js.native
     
     /* CompleteClass */
-    override def toJSON(): StringDictionary[T] = js.native
+    override def toJSON(): Record[String, T] = js.native
     
     /* CompleteClass */
     override def update(key: InternalNamePath, updater: js.Function1[T, T | Null]): Unit = js.native
@@ -56,7 +56,7 @@ object nameMapMod {
       
       inline def setKey(value: InternalNamePath): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -71,13 +71,13 @@ object nameMapMod {
     
     def get(key: InternalNamePath): T
     
-    /* private */ var list: js.Any
+    /* private */ var kvs: Any
     
     def map[U](callback: js.Function1[/* kv */ KV[T], U]): js.Array[U]
     
     def set(key: InternalNamePath, value: T): Unit
     
-    def toJSON(): StringDictionary[T]
+    def toJSON(): Record[String, T]
     
     def update(key: InternalNamePath, updater: js.Function1[/* origin */ T, T | Null]): Unit
   }
@@ -86,13 +86,13 @@ object nameMapMod {
     inline def apply[T](
       delete: InternalNamePath => Unit,
       get: InternalNamePath => T,
-      list: js.Any,
-      map: js.Function1[/* kv */ KV[T], js.Any] => js.Array[js.Any],
+      kvs: Any,
+      map: js.Function1[/* kv */ KV[T], Any] => js.Array[Any],
       set: (InternalNamePath, T) => Unit,
-      toJSON: () => StringDictionary[T],
+      toJSON: () => Record[String, T],
       update: (InternalNamePath, js.Function1[/* origin */ T, T | Null]) => Unit
     ): NameMap[T] = {
-      val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = list.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), set = js.Any.fromFunction2(set), toJSON = js.Any.fromFunction0(toJSON), update = js.Any.fromFunction2(update))
+      val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), kvs = kvs.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), set = js.Any.fromFunction2(set), toJSON = js.Any.fromFunction0(toJSON), update = js.Any.fromFunction2(update))
       __obj.asInstanceOf[NameMap[T]]
     }
     
@@ -102,13 +102,13 @@ object nameMapMod {
       
       inline def setGet(value: InternalNamePath => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setKvs(value: Any): Self = StObject.set(x, "kvs", value.asInstanceOf[js.Any])
       
-      inline def setMap(value: js.Function1[/* kv */ KV[T], js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* kv */ KV[T], Any] => js.Array[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
       inline def setSet(value: (InternalNamePath, T) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      inline def setToJSON(value: () => StringDictionary[T]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Record[String, T]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
       inline def setUpdate(value: (InternalNamePath, js.Function1[/* origin */ T, T | Null]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }

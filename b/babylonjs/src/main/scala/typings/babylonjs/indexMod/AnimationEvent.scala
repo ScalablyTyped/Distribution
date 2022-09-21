@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "AnimationEvent")
 @js.native
-class AnimationEvent protected ()
+open class AnimationEvent protected ()
   extends typings.babylonjs.animationsIndexMod.AnimationEvent {
   /**
     * Initializes the animation event

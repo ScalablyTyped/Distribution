@@ -28,10 +28,10 @@ object wrapper {
       getCurrentElement: () => XXMLElementWrapper,
       getNodeName: XXMLElementWrapper => String,
       getTree: XDocumentHandler => Unit,
-      initialize: SeqEquiv[js.Any] => Unit,
+      initialize: SeqEquiv[Any] => Unit,
       isCurrent: XXMLElementWrapper => Boolean,
       isCurrentElementEmpty: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       rebuildIDLink: XXMLElementWrapper => Unit,
       release: () => Unit,
       removeCurrentElement: () => Unit,
@@ -52,8 +52,8 @@ object wrapper {
     inline def apply(
       acquire: () => Unit,
       getSomething: SeqEquiv[Double] => Double,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XMLElementWrapper = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getSomething = js.Any.fromFunction1(getSomething), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -181,7 +181,7 @@ object wrapper {
       getTree: XDocumentHandler => Unit,
       isCurrent: XXMLElementWrapper => Boolean,
       isCurrentElementEmpty: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       rebuildIDLink: XXMLElementWrapper => Unit,
       release: () => Unit,
       removeCurrentElement: () => Unit,

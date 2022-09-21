@@ -245,7 +245,7 @@ object styledMod {
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }

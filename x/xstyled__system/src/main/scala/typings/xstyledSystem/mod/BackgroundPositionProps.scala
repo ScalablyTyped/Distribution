@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.BackgroundPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BackgroundPositionProps[TLength] extends StObject {
   
-  val backgroundPosition: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val backgroundPosition: js.UndefOr[ResponsiveValue[BackgroundPosition[TLength]]] = js.undefined
 }
 object BackgroundPositionProps {
   
@@ -21,16 +18,10 @@ object BackgroundPositionProps {
   
   extension [Self <: BackgroundPositionProps[?], TLength](x: Self & BackgroundPositionProps[TLength]) {
     
-    inline def setBackgroundPosition(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    inline def setBackgroundPosition(value: ResponsiveValue[BackgroundPosition[TLength]]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
     inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
-    inline def setBackgroundPositionVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
+    inline def setBackgroundPositionVarargs(value: BackgroundPosition[TLength]*): Self = StObject.set(x, "backgroundPosition", js.Array(value*))
   }
 }

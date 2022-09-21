@@ -21,14 +21,14 @@ trait TypeofQuaternion
   ): js.Array[Double] = js.native
   
   /**
-  	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
-  	 */
+    * @deprecated Use qm.slerpQuaternions( qa, qb, t ) instead..
+    */
   def slerp(
     qa: typings.three.quaternionMod.Quaternion,
     qb: typings.three.quaternionMod.Quaternion,
     qm: typings.three.quaternionMod.Quaternion,
     t: Double
-  ): typings.three.quaternionMod.Quaternion = js.native
+  ): Double = js.native
   
   def slerpFlat(
     dst: js.Array[Double],

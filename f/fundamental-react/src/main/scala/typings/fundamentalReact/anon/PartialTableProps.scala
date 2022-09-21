@@ -17,10 +17,10 @@ trait PartialTableProps extends StObject {
   
   var tableBodyClassName: js.UndefOr[String] = js.undefined
   
-  var tableBodyProps: js.UndefOr[js.Any] = js.undefined
+  var tableBodyProps: js.UndefOr[Any] = js.undefined
   
   var tableBodyRowProps: js.UndefOr[
-    StringDictionary[js.Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
+    StringDictionary[Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
   ] = js.undefined
   
   var tableCellClassName: js.UndefOr[String] = js.undefined
@@ -29,11 +29,11 @@ trait PartialTableProps extends StObject {
   
   var tableHeaderClassName: js.UndefOr[String] = js.undefined
   
-  var tableHeaderProps: js.UndefOr[js.Any] = js.undefined
+  var tableHeaderProps: js.UndefOr[Any] = js.undefined
   
   var tableHeaderRowClassName: js.UndefOr[String] = js.undefined
   
-  var tableHeaderRowProps: js.UndefOr[js.Any] = js.undefined
+  var tableHeaderRowProps: js.UndefOr[Any] = js.undefined
   
   var tableRowClassName: js.UndefOr[String] = js.undefined
 }
@@ -58,18 +58,18 @@ object PartialTableProps {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: (String | ReactNode)*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: (String | ReactNode)*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setTableBodyClassName(value: String): Self = StObject.set(x, "tableBodyClassName", value.asInstanceOf[js.Any])
     
     inline def setTableBodyClassNameUndefined: Self = StObject.set(x, "tableBodyClassName", js.undefined)
     
-    inline def setTableBodyProps(value: js.Any): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
+    inline def setTableBodyProps(value: Any): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
     
     inline def setTableBodyPropsUndefined: Self = StObject.set(x, "tableBodyProps", js.undefined)
     
     inline def setTableBodyRowProps(
-      value: StringDictionary[js.Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
+      value: StringDictionary[Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
     ): Self = StObject.set(x, "tableBodyRowProps", value.asInstanceOf[js.Any])
     
     inline def setTableBodyRowPropsFunction2(value: (/* rowData */ js.Array[String], /* index */ Double) => Unit): Self = StObject.set(x, "tableBodyRowProps", js.Any.fromFunction2(value))
@@ -84,13 +84,13 @@ object PartialTableProps {
     
     inline def setTableDataUndefined: Self = StObject.set(x, "tableData", js.undefined)
     
-    inline def setTableDataVarargs(value: RowData*): Self = StObject.set(x, "tableData", js.Array(value :_*))
+    inline def setTableDataVarargs(value: RowData*): Self = StObject.set(x, "tableData", js.Array(value*))
     
     inline def setTableHeaderClassName(value: String): Self = StObject.set(x, "tableHeaderClassName", value.asInstanceOf[js.Any])
     
     inline def setTableHeaderClassNameUndefined: Self = StObject.set(x, "tableHeaderClassName", js.undefined)
     
-    inline def setTableHeaderProps(value: js.Any): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
+    inline def setTableHeaderProps(value: Any): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
     
     inline def setTableHeaderPropsUndefined: Self = StObject.set(x, "tableHeaderProps", js.undefined)
     
@@ -98,7 +98,7 @@ object PartialTableProps {
     
     inline def setTableHeaderRowClassNameUndefined: Self = StObject.set(x, "tableHeaderRowClassName", js.undefined)
     
-    inline def setTableHeaderRowProps(value: js.Any): Self = StObject.set(x, "tableHeaderRowProps", value.asInstanceOf[js.Any])
+    inline def setTableHeaderRowProps(value: Any): Self = StObject.set(x, "tableHeaderRowProps", value.asInstanceOf[js.Any])
     
     inline def setTableHeaderRowPropsUndefined: Self = StObject.set(x, "tableHeaderRowProps", js.undefined)
     

@@ -14,12 +14,16 @@ trait Swipe
   /**
     * The direction the Swipe widget moves across the view.
     *
+    * @default "horizontal"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#direction)
     */
   var direction: horizontal | vertical = js.native
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#disabled)
     */
@@ -48,6 +52,8 @@ trait Swipe
   
   /**
     * The position of the Swipe widget.
+    *
+    * @default 25
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#position)
     */

@@ -11,7 +11,7 @@ object surfaceMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/surface", "Available")
   @js.native
   /** @hidden */
-  class Available () extends StObject {
+  open class Available () extends StObject {
     def this(surfaces: js.Array[GoogleActionsV2Surface]) = this()
     
     /** @public */
@@ -20,7 +20,7 @@ object surfaceMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/surface", "AvailableSurfaces")
   @js.native
-  class AvailableSurfaces protected () extends StObject {
+  open class AvailableSurfaces protected () extends StObject {
     /** @hidden */
     def this(list: js.Array[GoogleActionsV2Surface]) = this()
     
@@ -53,7 +53,7 @@ object surfaceMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/surface", "AvailableSurfacesCapabilities")
   @js.native
-  class AvailableSurfacesCapabilities protected () extends StObject {
+  open class AvailableSurfacesCapabilities protected () extends StObject {
     /** @hidden */
     def this(surfaces: js.Array[Surface]) = this()
     
@@ -72,7 +72,7 @@ object surfaceMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/surface", "Capabilities")
   @js.native
   /** @hidden */
-  class Capabilities () extends StObject {
+  open class Capabilities () extends StObject {
     def this(list: js.Array[GoogleActionsV2Capability]) = this()
     
     /**
@@ -91,7 +91,7 @@ object surfaceMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/surface", "Surface")
   @js.native
   /** @hidden */
-  class Surface () extends StObject {
+  open class Surface () extends StObject {
     def this(surface: GoogleActionsV2Surface) = this()
     
     /** @public */

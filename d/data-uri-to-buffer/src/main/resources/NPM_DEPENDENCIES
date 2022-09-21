@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "data-uri-to-buffer" : "3.0.1"
+      "data-uri-to-buffer" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "data-uri-to-buffer" : "3.0.1"
+      "data-uri-to-buffer" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

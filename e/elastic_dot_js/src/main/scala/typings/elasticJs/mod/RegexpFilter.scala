@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "RegexpFilter")
 @js.native
-class RegexpFilter protected ()
+open class RegexpFilter protected ()
   extends StObject
      with Filter {
   /*

@@ -9,12 +9,12 @@ trait ListAlgorithmsInput extends StObject {
   /**
     * A filter that returns only algorithms created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only algorithms created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of algorithms to return in the response.
@@ -50,11 +50,11 @@ object ListAlgorithmsInput {
   
   extension [Self <: ListAlgorithmsInput](x: Self) {
     
-    inline def setCreationTimeAfter(value: CreationTime): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: CreationTime): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     

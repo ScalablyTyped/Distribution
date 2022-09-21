@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Body extends StObject {
   
-  var body: js.UndefOr[js.Any] = js.undefined
+  var body: js.UndefOr[Any] = js.undefined
   
   var command: String
   
@@ -31,7 +31,7 @@ object Body {
   
   extension [Self <: Body](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     

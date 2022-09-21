@@ -13,7 +13,7 @@ object id3v2tagcontentsMod {
   
   @JSImport("jsmediatags/build2/ID3v2TagContents", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ID3v2TagContents {
     def this(major: Double, revision: Double) = this()

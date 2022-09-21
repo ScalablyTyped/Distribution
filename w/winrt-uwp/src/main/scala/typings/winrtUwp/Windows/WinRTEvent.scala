@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WinRTEvent[TSender] extends StObject {
   
-  var detail: js.Array[js.Any]
+  var detail: js.Array[Any]
   
   var target: TSender
   
@@ -14,7 +14,7 @@ trait WinRTEvent[TSender] extends StObject {
 }
 object WinRTEvent {
   
-  inline def apply[TSender](detail: js.Array[js.Any], target: TSender, `type`: String): WinRTEvent[TSender] = {
+  inline def apply[TSender](detail: js.Array[Any], target: TSender, `type`: String): WinRTEvent[TSender] = {
     val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WinRTEvent[TSender]]
@@ -22,9 +22,9 @@ object WinRTEvent {
   
   extension [Self <: WinRTEvent[?], TSender](x: Self & WinRTEvent[TSender]) {
     
-    inline def setDetail(value: js.Array[js.Any]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: js.Array[Any]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    inline def setDetailVarargs(value: js.Any*): Self = StObject.set(x, "detail", js.Array(value :_*))
+    inline def setDetailVarargs(value: Any*): Self = StObject.set(x, "detail", js.Array(value*))
     
     inline def setTarget(value: TSender): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

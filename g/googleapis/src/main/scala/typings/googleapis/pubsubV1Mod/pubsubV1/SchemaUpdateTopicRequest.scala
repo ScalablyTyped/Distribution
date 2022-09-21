@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for the UpdateTopic method.
-  */
 trait SchemaUpdateTopicRequest extends StObject {
   
   /**
-    * The updated topic object.
+    * Required. The updated topic object.
     */
   var topic: js.UndefOr[SchemaTopic] = js.undefined
   
   /**
-    * Indicates which fields in the provided topic to update. Must be specified
-    * and non-empty. Note that if `update_mask` contains
-    * &quot;message_storage_policy&quot; then the new value will be determined
-    * based on the policy configured at the project or organization level. The
-    * `message_storage_policy` must not be set in the `topic` provided above.
+    * Required. Indicates which fields in the provided topic to update. Must be specified and non-empty. Note that if `update_mask` contains "message_storage_policy" but the `message_storage_policy` is not set in the `topic` provided above, then the updated value is determined by the policy configured at the project or organization level.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUpdateTopicRequest {
   
@@ -37,6 +30,8 @@ object SchemaUpdateTopicRequest {
     inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

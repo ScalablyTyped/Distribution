@@ -29,13 +29,13 @@ object TextBoxStyle {
     
     inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
-    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
+    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value*))
     
     inline def setFill(value: String | js.Array[Double]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setFillVarargs(value: Double*): Self = StObject.set(x, "fill", js.Array(value :_*))
+    inline def setFillVarargs(value: Double*): Self = StObject.set(x, "fill", js.Array(value*))
     
     inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
@@ -49,6 +49,6 @@ object TextBoxStyle {
     
     inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    inline def setStrokeVarargs(value: Double*): Self = StObject.set(x, "stroke", js.Array(value :_*))
+    inline def setStrokeVarargs(value: Double*): Self = StObject.set(x, "stroke", js.Array(value*))
   }
 }

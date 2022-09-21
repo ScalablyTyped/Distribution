@@ -4,21 +4,36 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Privacy metric to compute for reidentification risk analysis.
-  */
 trait SchemaGooglePrivacyDlpV2PrivacyMetric extends StObject {
   
+  /**
+    * Categorical stats
+    */
   var categoricalStatsConfig: js.UndefOr[SchemaGooglePrivacyDlpV2CategoricalStatsConfig] = js.undefined
   
+  /**
+    * delta-presence
+    */
   var deltaPresenceEstimationConfig: js.UndefOr[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig] = js.undefined
   
+  /**
+    * K-anonymity
+    */
   var kAnonymityConfig: js.UndefOr[SchemaGooglePrivacyDlpV2KAnonymityConfig] = js.undefined
   
+  /**
+    * k-map
+    */
   var kMapEstimationConfig: js.UndefOr[SchemaGooglePrivacyDlpV2KMapEstimationConfig] = js.undefined
   
+  /**
+    * l-diversity
+    */
   var lDiversityConfig: js.UndefOr[SchemaGooglePrivacyDlpV2LDiversityConfig] = js.undefined
   
+  /**
+    * Numerical stats
+    */
   var numericalStatsConfig: js.UndefOr[SchemaGooglePrivacyDlpV2NumericalStatsConfig] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2PrivacyMetric {

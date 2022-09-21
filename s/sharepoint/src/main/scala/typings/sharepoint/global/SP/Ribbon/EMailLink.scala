@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.EMailLink")
 @js.native
-class EMailLink ()
+open class EMailLink ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.EMailLink

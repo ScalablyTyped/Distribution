@@ -10,10 +10,10 @@ Handles the lifecyle and bootstrapping of generators in a specific environment
 | ------------------ | :-------------: |
 | Full name          | yeoman-environment |
 | Keywords           | development, dev, build, tool, cli, scaffold, scaffolding, generate, generator, yeoman, app |
-| # releases         | 25 |
-| # dependents       | 541 |
-| # downloads        | 20018377 |
-| # stars            | 1 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 2383909.3333333335 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](http://yeoman.io)

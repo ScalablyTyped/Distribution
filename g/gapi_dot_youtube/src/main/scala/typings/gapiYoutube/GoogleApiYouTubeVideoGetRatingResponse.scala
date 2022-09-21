@@ -35,7 +35,7 @@ object GoogleApiYouTubeVideoGetRatingResponse {
     
     inline def setItems(value: js.Array[Rating]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Rating*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Rating*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

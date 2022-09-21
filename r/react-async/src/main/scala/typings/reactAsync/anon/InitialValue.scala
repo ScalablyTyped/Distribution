@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InitialValue[T] extends StObject {
   
-  var initialValue: js.UndefOr[typings.std.Error | T] = js.undefined
+  var initialValue: js.UndefOr[js.Error | T] = js.undefined
   
   var promise: js.UndefOr[js.Promise[T]] = js.undefined
   
@@ -24,7 +24,7 @@ object InitialValue {
   
   extension [Self <: InitialValue[?], T](x: Self & InitialValue[T]) {
     
-    inline def setInitialValue(value: typings.std.Error | T): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: js.Error | T): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     

@@ -22,7 +22,7 @@ trait AddIns extends StObject {
   def Item(Index: String): AddIn = js.native
   def Item(Index: Double): AddIn = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: String): AddIn = js.native
   def _Default(Index: Double): AddIn = js.native

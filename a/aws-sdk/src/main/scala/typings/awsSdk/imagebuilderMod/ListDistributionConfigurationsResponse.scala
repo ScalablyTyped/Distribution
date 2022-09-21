@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDistributionConfigurationsResponse extends StObject {
   
   /**
-    * The list of distributions. 
+    * The list of distributions.
     */
   var distributionConfigurationSummaryList: js.UndefOr[DistributionConfigurationSummaryList] = js.undefined
   
   /**
-    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects. 
+    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -34,7 +34,7 @@ object ListDistributionConfigurationsResponse {
     
     inline def setDistributionConfigurationSummaryListUndefined: Self = StObject.set(x, "distributionConfigurationSummaryList", js.undefined)
     
-    inline def setDistributionConfigurationSummaryListVarargs(value: DistributionConfigurationSummary*): Self = StObject.set(x, "distributionConfigurationSummaryList", js.Array(value :_*))
+    inline def setDistributionConfigurationSummaryListVarargs(value: DistributionConfigurationSummary*): Self = StObject.set(x, "distributionConfigurationSummaryList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

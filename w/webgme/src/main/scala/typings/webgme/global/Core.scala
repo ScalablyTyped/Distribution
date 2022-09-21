@@ -32,10 +32,10 @@ object Core {
   
   @JSGlobal("Core.Node")
   @js.native
-  class Node ()
+  open class Node ()
     extends StObject
        with typings.webgme.Core.Node {
-    def this(id: String, logger: GmeLogger, state: js.Any, storeNode: ResultCallback[Storage]) = this()
+    def this(id: String, logger: GmeLogger, state: Any, storeNode: ResultCallback[Storage]) = this()
     
     /* CompleteClass */
     var _id: String = js.native
@@ -136,7 +136,7 @@ object Core {
     override def getNamespace(): Name = js.native
     
     /* CompleteClass */
-    override def getNode(id: NodeId, logger: GmeLogger, state: js.Any, storeNode: ResultCallback[Storage]): typings.webgme.Core.Node = js.native
+    override def getNode(id: NodeId, logger: GmeLogger, state: Any, storeNode: ResultCallback[Storage]): typings.webgme.Core.Node = js.native
     
     /* CompleteClass */
     override def getOwnAttribute(name: Name): OutAttr = js.native
@@ -212,13 +212,13 @@ object Core {
     override def getValidChildrenTypes(): js.Array[NodeId] = js.native
     
     /* CompleteClass */
-    override def getValidChildrenTypesDetailed(aspect: Aspect, noFilter: Boolean): Dictionary[js.Any] = js.native
+    override def getValidChildrenTypesDetailed(aspect: Aspect, noFilter: Boolean): Dictionary[Any] = js.native
     
     /* CompleteClass */
     override def getValidPointerNames(): js.Array[Name] = js.native
     
     /* CompleteClass */
-    override def getValidSetMemberTypesDetailed(setName: Name): StringDictionary[js.Any] = js.native
+    override def getValidSetMemberTypesDetailed(setName: Name): StringDictionary[Any] = js.native
     
     /* CompleteClass */
     override def getValidSetNames(): js.Array[Name] = js.native
@@ -248,7 +248,7 @@ object Core {
     override def isTypeOf(typePath: Path): Boolean = js.native
     
     /* CompleteClass */
-    override def isValidAttributeValueOf(name: Name, value: js.Any): Boolean = js.native
+    override def isValidAttributeValueOf(name: Name, value: Any): Boolean = js.native
     
     /* CompleteClass */
     override def isValidChildOf(parentPath: Path): Boolean = js.native

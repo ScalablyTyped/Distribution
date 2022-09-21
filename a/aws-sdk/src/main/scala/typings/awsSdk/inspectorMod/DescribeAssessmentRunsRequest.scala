@@ -22,6 +22,6 @@ object DescribeAssessmentRunsRequest {
     
     inline def setAssessmentRunArns(value: BatchDescribeArnList): Self = StObject.set(x, "assessmentRunArns", value.asInstanceOf[js.Any])
     
-    inline def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value :_*))
+    inline def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value*))
   }
 }

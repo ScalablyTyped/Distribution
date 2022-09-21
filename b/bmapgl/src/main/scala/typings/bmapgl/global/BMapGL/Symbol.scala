@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Symbol")
 @js.native
-class Symbol protected ()
+open class Symbol protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Symbol {
   def this(path: String) = this()

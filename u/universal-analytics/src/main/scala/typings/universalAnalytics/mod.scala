@@ -1,7 +1,6 @@
 package typings.universalAnalytics
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,27 +19,27 @@ object mod {
   
   @JSImport("universal-analytics", "Visitor")
   @js.native
-  class Visitor protected () extends StObject {
+  open class Visitor protected () extends StObject {
     def this(accountID: String) = this()
     def this(accountID: VisitorOptions) = this()
     def this(accountID: String, uuid: String) = this()
     def this(accountID: String, uuid: VisitorOptions) = this()
-    def this(accountID: String, uuid: String, context: StringDictionary[js.Any]) = this()
-    def this(accountID: String, uuid: VisitorOptions, context: StringDictionary[js.Any]) = this()
+    def this(accountID: String, uuid: String, context: StringDictionary[Any]) = this()
+    def this(accountID: String, uuid: VisitorOptions, context: StringDictionary[Any]) = this()
     def this(
       accountID: String,
       uuid: String,
-      context: StringDictionary[js.Any],
-      persistentParams: StringDictionary[js.Any]
+      context: StringDictionary[Any],
+      persistentParams: StringDictionary[Any]
     ) = this()
-    def this(accountID: String, uuid: String, context: Unit, persistentParams: StringDictionary[js.Any]) = this()
+    def this(accountID: String, uuid: String, context: Unit, persistentParams: StringDictionary[Any]) = this()
     def this(
       accountID: String,
       uuid: VisitorOptions,
-      context: StringDictionary[js.Any],
-      persistentParams: StringDictionary[js.Any]
+      context: StringDictionary[Any],
+      persistentParams: StringDictionary[Any]
     ) = this()
-    def this(accountID: String, uuid: VisitorOptions, context: Unit, persistentParams: StringDictionary[js.Any]) = this()
+    def this(accountID: String, uuid: VisitorOptions, context: Unit, persistentParams: StringDictionary[Any]) = this()
     
     def debug(): Visitor = js.native
     def debug(debug: Boolean): Visitor = js.native
@@ -330,10 +329,10 @@ object mod {
     def screenview(screenName: String, appName: String, callback: Callback): Visitor = js.native
     
     def send(): Unit = js.native
-    def send(fn: js.Function3[/* error */ js.Any, /* response */ js.Any, /* body */ js.Any, Unit]): Unit = js.native
+    def send(fn: js.Function3[/* error */ Any, /* response */ Any, /* body */ Any, Unit]): Unit = js.native
     
-    def set(key: String, value: js.Any): Unit = js.native
-    def set(key: Double, value: js.Any): Unit = js.native
+    def set(key: String, value: Any): Unit = js.native
+    def set(key: Double, value: Any): Unit = js.native
     
     def t(id: String): Visitor = js.native
     def t(id: String, callback: Callback): Visitor = js.native
@@ -854,34 +853,14 @@ object mod {
   inline def createFromSession(): Visitor = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSession")().asInstanceOf[Visitor]
   inline def createFromSession(session: Session): Visitor = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSession")(session.asInstanceOf[js.Any]).asInstanceOf[Visitor]
   
-  inline def middleware(tid: String): js.Function3[
-    /* req */ js.Any, 
-    /* res */ js.Any, 
-    /* next */ js.Function1[/* err */ js.Any, Unit], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(tid.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* req */ js.Any, 
-    /* res */ js.Any, 
-    /* next */ js.Function1[/* err */ js.Any, Unit], 
-    Unit
-  ]]
-  inline def middleware(tid: String, options: MiddlewareOptions): js.Function3[
-    /* req */ js.Any, 
-    /* res */ js.Any, 
-    /* next */ js.Function1[/* err */ js.Any, Unit], 
-    Unit
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(tid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-    /* req */ js.Any, 
-    /* res */ js.Any, 
-    /* next */ js.Function1[/* err */ js.Any, Unit], 
-    Unit
-  ]]
+  inline def middleware(tid: String): js.Function3[/* req */ Any, /* res */ Any, /* next */ js.Function1[/* err */ Any, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(tid.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ js.Function1[/* err */ Any, Unit], Unit]]
+  inline def middleware(tid: String, options: MiddlewareOptions): js.Function3[/* req */ Any, /* res */ Any, /* next */ js.Function1[/* err */ Any, Unit], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(tid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ js.Function1[/* err */ Any, Unit], Unit]]
   
-  type Callback = js.Function2[/* error */ Error | Null, /* count */ Double, Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* count */ Double, Unit]
   
   trait EventParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var dp: js.UndefOr[String] = js.undefined
     
@@ -970,7 +949,7 @@ object mod {
   
   trait ExceptionParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * Exception Description
@@ -1011,7 +990,7 @@ object mod {
   
   trait ItemParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * Item Code
@@ -1144,7 +1123,7 @@ object mod {
   
   trait PageviewParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * Document Host Name
@@ -1211,7 +1190,7 @@ object mod {
   
   trait ScreenviewParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * Application ID
@@ -1325,7 +1304,7 @@ object mod {
   
   trait TimingParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * User timing category
@@ -1404,7 +1383,7 @@ object mod {
   
   trait TransactionParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var p: js.UndefOr[String] = js.undefined
     
@@ -1518,7 +1497,7 @@ object mod {
     
     var path: js.UndefOr[String] = js.undefined
     
-    var requestOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var requestOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var strictCidFormat: js.UndefOr[Boolean] = js.undefined
     
@@ -1573,7 +1552,7 @@ object mod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setRequestOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+      inline def setRequestOptions(value: StringDictionary[Any]): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       
       inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
       

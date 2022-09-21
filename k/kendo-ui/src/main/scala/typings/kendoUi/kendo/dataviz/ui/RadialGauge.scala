@@ -13,15 +13,15 @@ trait RadialGauge
   extends StObject
      with Widget {
   
-  def allValues(): js.Any = js.native
-  def allValues(values: js.Any): js.Any = js.native
+  def allValues(): Any = js.native
+  def allValues(values: Any): Any = js.native
   
-  def exportImage(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportImage(options: Any): JQueryPromise[Any] = js.native
   
-  def exportPDF(): JQueryPromise[js.Any] = js.native
-  def exportPDF(options: PDFOptions): JQueryPromise[js.Any] = js.native
+  def exportPDF(): JQueryPromise[Any] = js.native
+  def exportPDF(options: PDFOptions): JQueryPromise[Any] = js.native
   
-  def exportSVG(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportSVG(options: Any): JQueryPromise[Any] = js.native
   
   def imageDataURL(): String = js.native
   
@@ -30,7 +30,7 @@ trait RadialGauge
   
   def redraw(): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def svg(): Unit = js.native
   

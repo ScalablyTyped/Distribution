@@ -6,8 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Port extends StObject {
   
-  /** Data format for the response. */
+  /** V1 error format. */
+  @JSName("$.xgafv")
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
+  
+  /** OAuth access token. */
+  var access_token: js.UndefOr[String] = js.undefined
+  
+  /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
+  
+  /** JSONP */
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -30,22 +40,25 @@ trait Port extends StObject {
   /** Project ID for this request. */
   var project: String
   
-  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
+  /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the starting byte position of the output to return. To start with the first byte of output to the specified port, omit this field or set it to `0`.
-    *
-    * If the output for that byte position is available, this field matches the `start` parameter sent with the request. If the amount of serial console output exceeds the size of the
-    * buffer (1 MB), the oldest output is discarded and is no longer available. If the requested start position refers to discarded output, the start position is adjusted to the
-    * oldest output still available, and the adjusted start position is returned as the `start` property value.
-    *
-    * You can also provide a negative start position, which translates to the most recent number of bytes written to the serial port. For example, -3 is interpreted as the most recent
-    * 3 bytes written to the serial console.
+    * Specifies the starting byte position of the output to return. To start with the first byte of output to the specified port, omit this field or set it to `0`. If the output for
+    * that byte position is available, this field matches the `start` parameter sent with the request. If the amount of serial console output exceeds the size of the buffer (1 MB),
+    * the oldest output is discarded and is no longer available. If the requested start position refers to discarded output, the start position is adjusted to the oldest output still
+    * available, and the adjusted start position is returned as the `start` property value. You can also provide a negative start position, which translates to the most recent number
+    * of bytes written to the serial port. For example, -3 is interpreted as the most recent 3 bytes written to the serial console.
     */
   var start: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. Please use quotaUser instead. */
+  /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+  var uploadType: js.UndefOr[String] = js.undefined
+  
+  /** Upload protocol for media (e.g. "raw", "multipart"). */
+  var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /** Legacy name for parameter that has been superseded by `quotaUser`. */
   var userIp: js.UndefOr[String] = js.undefined
   
   /** The name of the zone for this request. */
@@ -60,9 +73,21 @@ object Port {
   
   extension [Self <: Port](x: Self) {
     
+    inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+    
+    inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+    
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -95,6 +120,14 @@ object Port {
     inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+    
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+    
+    inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+    
+    inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
     inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     

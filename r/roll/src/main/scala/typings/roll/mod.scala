@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("roll", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Roll {
     def this(seed: js.Function0[Double]) = this()
@@ -80,7 +80,7 @@ object mod {
       
       inline def setTransformations(value: js.Array[RollTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      inline def setTransformationsVarargs(value: RollTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: RollTransformation*): Self = StObject.set(x, "transformations", js.Array(value*))
     }
   }
   
@@ -105,7 +105,7 @@ object mod {
       
       inline def setCalculations(value: js.Array[Double]): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
       
-      inline def setCalculationsVarargs(value: Double*): Self = StObject.set(x, "calculations", js.Array(value :_*))
+      inline def setCalculationsVarargs(value: Double*): Self = StObject.set(x, "calculations", js.Array(value*))
       
       inline def setInput(value: RollObject): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -113,7 +113,7 @@ object mod {
       
       inline def setRolled(value: js.Array[Double]): Self = StObject.set(x, "rolled", value.asInstanceOf[js.Any])
       
-      inline def setRolledVarargs(value: Double*): Self = StObject.set(x, "rolled", js.Array(value :_*))
+      inline def setRolledVarargs(value: Double*): Self = StObject.set(x, "rolled", js.Array(value*))
     }
   }
   

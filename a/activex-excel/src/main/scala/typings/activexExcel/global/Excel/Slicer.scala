@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Slicer")
 @js.native
-/* private */ class Slicer ()
+/* private */ open class Slicer ()
   extends StObject
      with typings.activexExcel.Excel.Slicer {
   
@@ -61,7 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var NumberOfColumns: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var RowHeight: Double = js.native
@@ -76,7 +76,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val SlicerCacheLevel: typings.activexExcel.Excel.SlicerCacheLevel = js.native
   
   /* CompleteClass */
-  var Style: js.Any = js.native
+  var Style: Any = js.native
   
   /* CompleteClass */
   var Top: Double = js.native

@@ -12,7 +12,7 @@ trait ListDataSourcesResponse extends StObject {
   var dataSources: js.UndefOr[DataSources] = js.undefined
   
   /**
-    * An identifier to be passed in the next request to this operation to return the next set of items in the list.
+    * An identifier to pass in the next request to this operation to return the next set of items in the list.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListDataSourcesResponse {
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
-    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

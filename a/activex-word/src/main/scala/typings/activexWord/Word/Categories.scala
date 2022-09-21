@@ -12,9 +12,9 @@ trait Categories extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): Category
+  def Item(Index: Any): Category
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Categories_typekey")
   var WordDotCategories_typekey: Categories
@@ -25,8 +25,8 @@ object Categories {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => Category,
-    Parent: js.Any,
+    Item: Any => Category,
+    Parent: Any,
     WordDotCategories_typekey: Categories
   ): Categories = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -42,9 +42,9 @@ object Categories {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Category): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Category): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotCategories_typekey(value: Categories): Self = StObject.set(x, "Word.Categories_typekey", value.asInstanceOf[js.Any])
   }

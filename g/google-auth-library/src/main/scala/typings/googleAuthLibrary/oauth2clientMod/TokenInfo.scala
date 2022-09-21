@@ -104,7 +104,7 @@ object TokenInfo {
     
     inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     
     inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     

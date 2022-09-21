@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Commit")
 @js.native
-class Commit ()
+open class Commit ()
   extends typings.nodegit.commitMod.Commit
 /* static members */
 object Commit {
@@ -24,7 +24,7 @@ object Commit {
     message: String,
     tree: typings.nodegit.treeMod.Tree,
     parentCount: Double,
-    parents: js.Array[js.Any]
+    parents: js.Array[Any]
   ): typings.nodegit.oidMod.Oid = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], updateRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], messageEncoding.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tree.asInstanceOf[js.Any], parentCount.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[typings.nodegit.oidMod.Oid]
   
   inline def createV(

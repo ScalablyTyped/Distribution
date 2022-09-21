@@ -24,6 +24,6 @@ object Query {
     
     inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    inline def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value*))
   }
 }

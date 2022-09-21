@@ -44,7 +44,7 @@ object CombinedChartProps {
     
     inline def setDrawOrderUndefined: Self = StObject.set(x, "drawOrder", js.undefined)
     
-    inline def setDrawOrderVarargs(value: (BAR | BUBBLE | LINE | CANDLE | SCATTER)*): Self = StObject.set(x, "drawOrder", js.Array(value :_*))
+    inline def setDrawOrderVarargs(value: (BAR | BUBBLE | LINE | CANDLE | SCATTER)*): Self = StObject.set(x, "drawOrder", js.Array(value*))
     
     inline def setDrawValueAboveBar(value: Boolean): Self = StObject.set(x, "drawValueAboveBar", value.asInstanceOf[js.Any])
     

@@ -26,15 +26,36 @@ object anon {
       
       inline def setAttributes(value: js.Array[ObjSearchSingleAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesVarargs(value: ObjSearchSingleAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: ObjSearchSingleAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     }
   }
   
+  trait BaseUrl extends StObject {
+    
+    var baseUrl: String
+    
+    var siteId: String
+  }
+  object BaseUrl {
+    
+    inline def apply(baseUrl: String, siteId: String): BaseUrl = {
+      val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], siteId = siteId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BaseUrl]
+    }
+    
+    extension [Self <: BaseUrl](x: Self) {
+      
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      
+      inline def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Content extends StObject {
     
-    var content: js.Any
+    var content: Any
     
     var name: String
     
@@ -44,14 +65,14 @@ object anon {
   }
   object Content {
     
-    inline def apply(content: js.Any, name: String): Content = {
+    inline def apply(content: Any, name: String): Content = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Content]
     }
     
     extension [Self <: Content](x: Self) {
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -69,12 +90,12 @@ object anon {
     
     var contentType: js.UndefOr[String] = js.undefined
     
-    var filename: String
+    var filename: js.UndefOr[String] = js.undefined
   }
   object ContentType {
     
-    inline def apply(filename: String): ContentType = {
-      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    inline def apply(): ContentType = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentType]
     }
     
@@ -85,6 +106,8 @@ object anon {
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     }
   }
   
@@ -105,36 +128,11 @@ object anon {
     }
   }
   
-  trait Filename extends StObject {
-    
-    var contentType: js.UndefOr[String] = js.undefined
-    
-    var filename: js.UndefOr[String] = js.undefined
-  }
-  object Filename {
-    
-    inline def apply(): Filename = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Filename]
-    }
-    
-    extension [Self <: Filename](x: Self) {
-      
-      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
-      
-      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
-      
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
-    }
-  }
-  
   trait Hash extends StObject {
     
     var hash: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
   }
   object Hash {
     
@@ -149,7 +147,7 @@ object anon {
       
       inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
@@ -216,20 +214,20 @@ object anon {
   
   trait PreloadDump extends StObject {
     
-    var preloadDump: js.Any
+    var preloadDump: Any
     
     var result: Obj
   }
   object PreloadDump {
     
-    inline def apply(preloadDump: js.Any, result: Obj): PreloadDump = {
+    inline def apply(preloadDump: Any, result: Obj): PreloadDump = {
       val __obj = js.Dynamic.literal(preloadDump = preloadDump.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreloadDump]
     }
     
     extension [Self <: PreloadDump](x: Self) {
       
-      inline def setPreloadDump(value: js.Any): Self = StObject.set(x, "preloadDump", value.asInstanceOf[js.Any])
+      inline def setPreloadDump(value: Any): Self = StObject.set(x, "preloadDump", value.asInstanceOf[js.Any])
       
       inline def setResult(value: Obj): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
@@ -275,7 +273,7 @@ object anon {
       
       inline def setToolbar(value: js.Array[String]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
-      inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+      inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value*))
     }
   }
 }

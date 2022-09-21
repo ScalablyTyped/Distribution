@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "babylonjs" : "4.2.0"
+      "babylonjs" : "5.24.0"
     }
   ],
   "test-dependencies" : [
     {
-      "babylonjs" : "4.2.0"
+      "babylonjs" : "5.24.0"
     }
   ],
   "compile-devDependencies" : [

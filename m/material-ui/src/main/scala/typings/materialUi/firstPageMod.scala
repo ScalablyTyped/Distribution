@@ -10,10 +10,10 @@ object firstPageMod {
   
   @JSImport("material-ui/svg-icons/navigation/first-page", JSImport.Default)
   @js.native
-  class default () extends NavigationFirstPage
+  open class default () extends NavigationFirstPage
   
   @JSImport("material-ui/svg-icons/navigation/first-page", "NavigationFirstPage")
   @js.native
-  class NavigationFirstPage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationFirstPage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

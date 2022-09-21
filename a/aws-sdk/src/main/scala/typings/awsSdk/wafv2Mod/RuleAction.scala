@@ -7,17 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RuleAction extends StObject {
   
   /**
-    * Instructs AWS WAF to allow the web request.
+    * Instructs WAF to allow the web request.
     */
   var Allow: js.UndefOr[AllowAction] = js.undefined
   
   /**
-    * Instructs AWS WAF to block the web request.
+    * Instructs WAF to block the web request.
     */
   var Block: js.UndefOr[BlockAction] = js.undefined
   
   /**
-    * Instructs AWS WAF to count the web request and allow it.
+    * Instructs WAF to run a CAPTCHA check against the web request.
+    */
+  var Captcha: js.UndefOr[CaptchaAction] = js.undefined
+  
+  /**
+    * Instructs WAF to count the web request and allow it.
     */
   var Count: js.UndefOr[CountAction] = js.undefined
 }
@@ -37,6 +42,10 @@ object RuleAction {
     inline def setBlock(value: BlockAction): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
     
     inline def setBlockUndefined: Self = StObject.set(x, "Block", js.undefined)
+    
+    inline def setCaptcha(value: CaptchaAction): Self = StObject.set(x, "Captcha", value.asInstanceOf[js.Any])
+    
+    inline def setCaptchaUndefined: Self = StObject.set(x, "Captcha", js.undefined)
     
     inline def setCount(value: CountAction): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

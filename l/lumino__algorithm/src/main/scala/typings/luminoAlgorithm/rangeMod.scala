@@ -13,7 +13,7 @@ object rangeMod {
   
   @JSImport("@lumino/algorithm/types/range", "RangeIterator")
   @js.native
-  class RangeIterator protected ()
+  open class RangeIterator protected ()
     extends StObject
        with IIterator[Double] {
     /**
@@ -27,15 +27,15 @@ object rangeMod {
       */
     def this(start: Double, stop: Double, step: Double) = this()
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _length: js.Any = js.native
+    /* private */ var _length: Any = js.native
     
-    /* private */ var _start: js.Any = js.native
+    /* private */ var _start: Any = js.native
     
-    /* private */ var _step: js.Any = js.native
+    /* private */ var _step: Any = js.native
     
-    /* private */ var _stop: js.Any = js.native
+    /* private */ var _stop: Any = js.native
     
     /**
       * Get an iterator over the object's values.

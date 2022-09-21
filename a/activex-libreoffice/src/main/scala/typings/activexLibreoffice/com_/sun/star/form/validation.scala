@@ -93,7 +93,7 @@ object validation {
       acquire: () => Unit,
       componentValidityChanged: EventObject => Unit,
       disposing: EventObject => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XFormComponentValidityListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), componentValidityChanged = js.Any.fromFunction1(componentValidityChanged), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -135,7 +135,7 @@ object validation {
       Validator: XValidator,
       acquire: () => Unit,
       getValidator: () => XValidator,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setValidator: XValidator => Unit
     ): XValidatable = {
@@ -181,7 +181,7 @@ object validation {
       *
       * If no validator has been set ( {@link XValidatable.setValidator()} ), the value returned here is defined by the service implementing this interface.
       */
-    val CurrentValue: js.Any
+    val CurrentValue: Any
     
     /**
       * registers the given listener.
@@ -202,7 +202,7 @@ object validation {
       *
       * If no validator has been set ( {@link XValidatable.setValidator()} ), the value returned here is defined by the service implementing this interface.
       */
-    def getCurrentValue(): js.Any
+    def getCurrentValue(): Any
     
     /**
       * determines whether the current value of the component passed the validity test at the validator.
@@ -223,14 +223,14 @@ object validation {
   object XValidatableFormComponent {
     
     inline def apply(
-      CurrentValue: js.Any,
+      CurrentValue: Any,
       Validator: XValidator,
       acquire: () => Unit,
       addFormComponentValidityListener: XFormComponentValidityListener => Unit,
-      getCurrentValue: () => js.Any,
+      getCurrentValue: () => Any,
       getValidator: () => XValidator,
       isValid: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeFormComponentValidityListener: XFormComponentValidityListener => Unit,
       setValidator: XValidator => Unit
@@ -243,9 +243,9 @@ object validation {
       
       inline def setAddFormComponentValidityListener(value: XFormComponentValidityListener => Unit): Self = StObject.set(x, "addFormComponentValidityListener", js.Any.fromFunction1(value))
       
-      inline def setCurrentValue(value: js.Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
+      inline def setCurrentValue(value: Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
       
-      inline def setGetCurrentValue(value: () => js.Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
+      inline def setGetCurrentValue(value: () => Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
       
       inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
       
@@ -282,14 +282,14 @@ object validation {
       * @param Value the value which has been recognized as being invalid
       * @returns a human-readable string, which explains why the given value is considered invalid.
       */
-    def explainInvalid(Value: js.Any): String
+    def explainInvalid(Value: Any): String
     
     /**
       * determines whether the given value is valid
       * @param Value the value to check for validity
       * @returns `TRUE` if and only if the value is considered valid.
       */
-    def isValid(Value: js.Any): Boolean
+    def isValid(Value: Any): Boolean
     
     /**
       * revokes the given validity listener
@@ -303,9 +303,9 @@ object validation {
     inline def apply(
       acquire: () => Unit,
       addValidityConstraintListener: XValidityConstraintListener => Unit,
-      explainInvalid: js.Any => String,
-      isValid: js.Any => Boolean,
-      queryInterface: `type` => js.Any,
+      explainInvalid: Any => String,
+      isValid: Any => Boolean,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeValidityConstraintListener: XValidityConstraintListener => Unit
     ): XValidator = {
@@ -317,9 +317,9 @@ object validation {
       
       inline def setAddValidityConstraintListener(value: XValidityConstraintListener => Unit): Self = StObject.set(x, "addValidityConstraintListener", js.Any.fromFunction1(value))
       
-      inline def setExplainInvalid(value: js.Any => String): Self = StObject.set(x, "explainInvalid", js.Any.fromFunction1(value))
+      inline def setExplainInvalid(value: Any => String): Self = StObject.set(x, "explainInvalid", js.Any.fromFunction1(value))
       
-      inline def setIsValid(value: js.Any => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
+      inline def setIsValid(value: Any => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
       
       inline def setRemoveValidityConstraintListener(value: XValidityConstraintListener => Unit): Self = StObject.set(x, "removeValidityConstraintListener", js.Any.fromFunction1(value))
     }
@@ -341,7 +341,7 @@ object validation {
     inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       validityConstraintChanged: EventObject => Unit
     ): XValidityConstraintListener = {

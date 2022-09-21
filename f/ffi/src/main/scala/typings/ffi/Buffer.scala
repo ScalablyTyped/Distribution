@@ -11,7 +11,7 @@ trait Buffer extends StObject {
   def address(): Double = js.native
   
   /** Shorthand for `ref.deref`. */
-  def deref(): js.Any = js.native
+  def deref(): Any = js.native
   
   /**
     * Generate string for inspecting.
@@ -65,13 +65,13 @@ trait Buffer extends StObject {
   def writeCString(offset: Double, input: String): Unit = js.native
   def writeCString(offset: Double, input: String, encoding: String): Unit = js.native
   
-  def writeInt64BE(offset: Double, input: String): js.Any = js.native
+  def writeInt64BE(offset: Double, input: String): Any = js.native
   /** Shorthand for `ref.writeInt64BE`. */
-  def writeInt64BE(offset: Double, input: Double): js.Any = js.native
+  def writeInt64BE(offset: Double, input: Double): Any = js.native
   
-  def writeInt64LE(offset: Double, input: String): js.Any = js.native
+  def writeInt64LE(offset: Double, input: String): Any = js.native
   /** Shorthand for `ref.writeInt64LE`. */
-  def writeInt64LE(offset: Double, input: Double): js.Any = js.native
+  def writeInt64LE(offset: Double, input: Double): Any = js.native
   
   /** Shorthand for `ref.writeObject`. */
   def writeObject(offset: Double, `object`: js.Object): Unit = js.native
@@ -79,11 +79,11 @@ trait Buffer extends StObject {
   /** Shorthand for `ref.writePointer`. */
   def writePointer(offset: Double, pointer: Buffer): Unit = js.native
   
-  def writeUInt64BE(offset: Double, input: String): js.Any = js.native
+  def writeUInt64BE(offset: Double, input: String): Any = js.native
   /** Shorthand for `ref.writeUInt64BE`. */
-  def writeUInt64BE(offset: Double, input: Double): js.Any = js.native
+  def writeUInt64BE(offset: Double, input: Double): Any = js.native
   
-  def writeUInt64LE(offset: Double, input: String): js.Any = js.native
+  def writeUInt64LE(offset: Double, input: String): Any = js.native
   /** Shorthand for `ref.writeUInt64LE`. */
-  def writeUInt64LE(offset: Double, input: Double): js.Any = js.native
+  def writeUInt64LE(offset: Double, input: Double): Any = js.native
 }

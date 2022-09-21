@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.TextNote")
 @js.native
-class TextNote protected ()
+open class TextNote protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.TextNote {
   def this(text_struct: typings.vexflow.anon.Font) = this()

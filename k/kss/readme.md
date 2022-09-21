@@ -10,10 +10,10 @@ The Node.js port of KSS: A methodology for documenting CSS and building style gu
 | ------------------ | :-------------: |
 | Full name          | kss |
 | Keywords           | styleguide, kss, kss-node |
-| # releases         | 5 |
-| # dependents       | 54 |
-| # downloads        | 2108618 |
-| # stars            | 18 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 86712.33333333333 |
+| # stars            | 1512.0 |
 
 ## Links
 - [Homepage](http://kss-node.github.io/kss-node)

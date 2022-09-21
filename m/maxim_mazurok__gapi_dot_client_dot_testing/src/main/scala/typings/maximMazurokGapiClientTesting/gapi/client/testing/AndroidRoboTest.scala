@@ -27,6 +27,9 @@ trait AndroidRoboTest extends StObject {
   /** A set of directives Robo should apply during the crawl. This allows users to customize the crawl. For example, the username and password for a test account can be provided. */
   var roboDirectives: js.UndefOr[js.Array[RoboDirective]] = js.undefined
   
+  /** The mode in which Robo should run. Most clients should allow the server to populate this field automatically. */
+  var roboMode: js.UndefOr[String] = js.undefined
+  
   /** A JSON file with a sequence of actions Robo should perform as a prologue for the crawl. */
   var roboScript: js.UndefOr[FileReference] = js.undefined
   
@@ -73,7 +76,11 @@ object AndroidRoboTest {
     
     inline def setRoboDirectivesUndefined: Self = StObject.set(x, "roboDirectives", js.undefined)
     
-    inline def setRoboDirectivesVarargs(value: RoboDirective*): Self = StObject.set(x, "roboDirectives", js.Array(value :_*))
+    inline def setRoboDirectivesVarargs(value: RoboDirective*): Self = StObject.set(x, "roboDirectives", js.Array(value*))
+    
+    inline def setRoboMode(value: String): Self = StObject.set(x, "roboMode", value.asInstanceOf[js.Any])
+    
+    inline def setRoboModeUndefined: Self = StObject.set(x, "roboMode", js.undefined)
     
     inline def setRoboScript(value: FileReference): Self = StObject.set(x, "roboScript", value.asInstanceOf[js.Any])
     
@@ -83,6 +90,6 @@ object AndroidRoboTest {
     
     inline def setStartingIntentsUndefined: Self = StObject.set(x, "startingIntents", js.undefined)
     
-    inline def setStartingIntentsVarargs(value: RoboStartingIntent*): Self = StObject.set(x, "startingIntents", js.Array(value :_*))
+    inline def setStartingIntentsVarargs(value: RoboStartingIntent*): Self = StObject.set(x, "startingIntents", js.Array(value*))
   }
 }

@@ -9,7 +9,7 @@ object colorMod {
   
   @JSImport("@antv/attr/lib/attributes/color", JSImport.Default)
   @js.native
-  class default protected () extends Color {
+  open class default protected () extends Color {
     def this(cfg: AttributeCfg) = this()
   }
   

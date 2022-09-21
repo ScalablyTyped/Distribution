@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KnockoutTemplateSourcesDomElement extends StObject {
   
-  def data(key: String): js.Any = js.native
-  def data(key: String, value: js.Any): js.Any = js.native
+  def data(key: String): Any = js.native
+  def data(key: String, value: Any): Any = js.native
   
-  def text(): js.Any = js.native
-  def text(value: js.Any): Unit = js.native
+  def text(): Any = js.native
+  def text(value: Any): Unit = js.native
 }

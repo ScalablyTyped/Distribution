@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "IndicesQuery")
 @js.native
-class IndicesQuery protected ()
+open class IndicesQuery protected ()
   extends StObject
      with Query {
   /*
@@ -50,5 +50,5 @@ class IndicesQuery protected ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrganizationAffectedEntitiesErrorItem extends StObject {
   
   /**
-    * The 12-digit AWS account numbers that contains the affected entities.
+    * The 12-digit Amazon Web Services account numbers that contains the affected entities.
     */
   var awsAccountId: js.UndefOr[accountId] = js.undefined
   
@@ -22,7 +22,7 @@ trait OrganizationAffectedEntitiesErrorItem extends StObject {
   var errorName: js.UndefOr[String] = js.undefined
   
   /**
-    * The unique identifier for the event. Format: arn:aws:health:event-region::event/SERVICE/EVENT_TYPE_CODE/EVENT_TYPE_PLUS_ID . Example: Example: arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-DEF456 
+    * The unique identifier for the event. The event ARN has the arn:aws:health:event-region::event/SERVICE/EVENT_TYPE_CODE/EVENT_TYPE_PLUS_ID  format. For example, an event ARN might look like the following:  arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-DEF456 
     */
   var eventArn: js.UndefOr[typings.awsSdk.healthMod.eventArn] = js.undefined
 }

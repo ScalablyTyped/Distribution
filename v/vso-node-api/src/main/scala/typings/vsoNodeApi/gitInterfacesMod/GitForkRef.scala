@@ -17,7 +17,7 @@ trait GitForkRef
 object GitForkRef {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     isLocked: Boolean,
     isLockedBy: IdentityRef,
     name: String,

@@ -9,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Property
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
   var computed: Boolean
   
-  var key: Expression
+  var key: Expression | PrivateIdentifier
   
   // Could be an AssignmentProperty
   var kind: init | get | set
@@ -32,7 +31,7 @@ object Property {
   
   inline def apply(
     computed: Boolean,
-    key: Expression,
+    key: Expression | PrivateIdentifier,
     kind: init | get | set,
     method: Boolean,
     shorthand: Boolean,
@@ -47,7 +46,7 @@ object Property {
     
     inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Expression | PrivateIdentifier): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

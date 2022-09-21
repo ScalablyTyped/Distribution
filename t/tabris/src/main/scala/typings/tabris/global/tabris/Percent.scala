@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.Percent")
 @js.native
-class Percent protected ()
+open class Percent protected ()
   extends typings.tabris.mod.Percent {
+  /**
+    * Represents a percentage. See also ${doc:PercentValue}
+    */
   def this(value: Double) = this()
 }
 /* static members */
@@ -30,5 +33,5 @@ object Percent {
     * will be accepted by Percent.from. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  inline def isValidPercentValue(value: js.Any): /* is tabris.tabris.PercentValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPercentValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.PercentValue */ Boolean]
+  inline def isValidPercentValue(value: Any): /* is tabris.tabris.PercentValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPercentValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.PercentValue */ Boolean]
 }

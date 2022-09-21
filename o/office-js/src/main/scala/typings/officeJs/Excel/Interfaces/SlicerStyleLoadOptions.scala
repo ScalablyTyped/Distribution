@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a slicer style, which defines style elements by region of the slicer.
   *
-  * Represents a Slicer Style, which defines style elements by region of the slicer.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait SlicerStyleLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait SlicerStyleLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the name of the slicer style.
     *
-    * Gets the name of the SlicerStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if this `SlicerStyle` object is read-only.
     *
-    * Specifies if this SlicerStyle object is read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PeeredDnsDomain extends StObject {
   
-  /** The DNS domain name suffix e.g. `example.com.`. */
+  /** The DNS domain name suffix e.g. `example.com.`. Cloud DNS requires that a DNS suffix ends with a trailing dot. */
   var dnsSuffix: js.UndefOr[String] = js.undefined
   
   /**

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BABYLON.PhysicsRadialExplosionEvent")
 @js.native
-class PhysicsRadialExplosionEvent protected ()
+open class PhysicsRadialExplosionEvent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsRadialExplosionEvent {
   /**
-    * Initializes a radial explosioin event
+    * Initializes a radial explosion event
     * @param _scene BabylonJS scene
     * @param _options The options for the vortex event
     */

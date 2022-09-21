@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.Chip")
 @js.native
-class Chip ()
-  extends Component[ChipProps, js.Object, js.Any]
+open class Chip ()
+  extends Component[ChipProps, js.Object, Any]

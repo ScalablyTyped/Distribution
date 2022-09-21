@@ -12,6 +12,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDListElement
 import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
+import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -31,11 +32,13 @@ import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
 import typings.std.HTMLMetaElement
+import typings.std.HTMLMeterElement
 import typings.std.HTMLModElement
 import typings.std.HTMLOListElement
 import typings.std.HTMLObjectElement
 import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
+import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
 import typings.std.HTMLParamElement
 import typings.std.HTMLPreElement
@@ -55,6 +58,7 @@ import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
 import typings.std.HTMLTextAreaElement
+import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
@@ -92,7 +96,7 @@ trait ReactHTML extends StObject {
   
   var big: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]
+  var blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]
   
   var body: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]
   
@@ -118,9 +122,9 @@ trait ReactHTML extends StObject {
   
   var dd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var del: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement]
+  var del: DetailedHTMLFactory[DelHTMLAttributes[HTMLModElement], HTMLModElement]
   
-  var details: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLElement], HTMLElement]
+  var details: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement]
   
   var dfn: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
@@ -202,7 +206,7 @@ trait ReactHTML extends StObject {
   
   var meta: DetailedHTMLFactory[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]
   
-  var meter: DetailedHTMLFactory[MeterHTMLAttributes[HTMLElement], HTMLElement]
+  var meter: DetailedHTMLFactory[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement]
   
   var nav: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
@@ -216,7 +220,7 @@ trait ReactHTML extends StObject {
   
   var option: DetailedHTMLFactory[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]
   
-  var output: DetailedHTMLFactory[OutputHTMLAttributes[HTMLElement], HTMLElement]
+  var output: DetailedHTMLFactory[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement]
   
   var p: DetailedHTMLFactory[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]
   
@@ -280,7 +284,7 @@ trait ReactHTML extends StObject {
   
   var thead: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
   
-  var time: DetailedHTMLFactory[TimeHTMLAttributes[HTMLElement], HTMLElement]
+  var time: DetailedHTMLFactory[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement]
   
   var title: DetailedHTMLFactory[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]
   
@@ -315,7 +319,7 @@ object ReactHTML {
     bdi: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     bdo: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     big: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
-    blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement],
+    blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement],
     body: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement],
     br: DetailedHTMLFactory[HTMLAttributes[HTMLBRElement], HTMLBRElement],
     button: DetailedHTMLFactory[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement],
@@ -328,8 +332,8 @@ object ReactHTML {
     data: DetailedHTMLFactory[DataHTMLAttributes[HTMLDataElement], HTMLDataElement],
     datalist: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement],
     dd: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
-    del: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement],
-    details: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLElement], HTMLElement],
+    del: DetailedHTMLFactory[DelHTMLAttributes[HTMLModElement], HTMLModElement],
+    details: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement],
     dfn: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     dialog: DetailedHTMLFactory[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement],
     div: DetailedHTMLFactory[HTMLAttributes[HTMLDivElement], HTMLDivElement],
@@ -370,14 +374,14 @@ object ReactHTML {
     menu: DetailedHTMLFactory[MenuHTMLAttributes[HTMLElement], HTMLElement],
     menuitem: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     meta: DetailedHTMLFactory[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement],
-    meter: DetailedHTMLFactory[MeterHTMLAttributes[HTMLElement], HTMLElement],
+    meter: DetailedHTMLFactory[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement],
     nav: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     noscript: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     `object`: DetailedHTMLFactory[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement],
     ol: DetailedHTMLFactory[OlHTMLAttributes[HTMLOListElement], HTMLOListElement],
     optgroup: DetailedHTMLFactory[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement],
     option: DetailedHTMLFactory[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement],
-    output: DetailedHTMLFactory[OutputHTMLAttributes[HTMLElement], HTMLElement],
+    output: DetailedHTMLFactory[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement],
     p: DetailedHTMLFactory[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement],
     param: DetailedHTMLFactory[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement],
     picture: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
@@ -409,7 +413,7 @@ object ReactHTML {
     tfoot: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
     th: DetailedHTMLFactory[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement],
     thead: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
-    time: DetailedHTMLFactory[TimeHTMLAttributes[HTMLElement], HTMLElement],
+    time: DetailedHTMLFactory[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement],
     title: DetailedHTMLFactory[HTMLAttributes[HTMLTitleElement], HTMLTitleElement],
     tr: DetailedHTMLFactory[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement],
     track: DetailedHTMLFactory[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement],
@@ -452,7 +456,7 @@ object ReactHTML {
     
     inline def setBig(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
     
-    inline def setBlockquote(value: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+    inline def setBlockquote(value: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
     
     inline def setBody(value: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
@@ -478,9 +482,9 @@ object ReactHTML {
     
     inline def setDd(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
-    inline def setDel(value: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+    inline def setDel(value: DetailedHTMLFactory[DelHTMLAttributes[HTMLModElement], HTMLModElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
-    inline def setDetails(value: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDfn(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
     
@@ -562,7 +566,7 @@ object ReactHTML {
     
     inline def setMeta(value: DetailedHTMLFactory[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    inline def setMeter(value: DetailedHTMLFactory[MeterHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+    inline def setMeter(value: DetailedHTMLFactory[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
     
     inline def setNav(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
     
@@ -576,7 +580,7 @@ object ReactHTML {
     
     inline def setOption(value: DetailedHTMLFactory[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    inline def setOutput(value: DetailedHTMLFactory[OutputHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: DetailedHTMLFactory[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     inline def setP(value: DetailedHTMLFactory[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
@@ -642,7 +646,7 @@ object ReactHTML {
     
     inline def setThead(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
     
-    inline def setTime(value: DetailedHTMLFactory[TimeHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: DetailedHTMLFactory[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: DetailedHTMLFactory[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

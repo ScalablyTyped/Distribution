@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Age extends StObject {
   
-  var age: js.Any
+  var age: Any
   
-  var daemon: js.Any
+  var daemon: Any
   
-  var ttlInterval: js.Any
+  var ttlInterval: Any
 }
 object Age {
   
-  inline def apply(age: js.Any, daemon: js.Any, ttlInterval: js.Any): Age = {
+  inline def apply(age: Any, daemon: Any, ttlInterval: Any): Age = {
     val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], daemon = daemon.asInstanceOf[js.Any], ttlInterval = ttlInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[Age]
   }
   
   extension [Self <: Age](x: Self) {
     
-    inline def setAge(value: js.Any): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    inline def setAge(value: Any): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
-    inline def setDaemon(value: js.Any): Self = StObject.set(x, "daemon", value.asInstanceOf[js.Any])
+    inline def setDaemon(value: Any): Self = StObject.set(x, "daemon", value.asInstanceOf[js.Any])
     
-    inline def setTtlInterval(value: js.Any): Self = StObject.set(x, "ttlInterval", value.asInstanceOf[js.Any])
+    inline def setTtlInterval(value: Any): Self = StObject.set(x, "ttlInterval", value.asInstanceOf[js.Any])
   }
 }

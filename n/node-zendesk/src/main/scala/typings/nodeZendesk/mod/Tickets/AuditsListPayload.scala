@@ -22,6 +22,6 @@ object AuditsListPayload {
     
     inline def setAudits(value: js.Array[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     
-    inline def setAuditsVarargs(value: Audit*): Self = StObject.set(x, "audits", js.Array(value :_*))
+    inline def setAuditsVarargs(value: Audit*): Self = StObject.set(x, "audits", js.Array(value*))
   }
 }

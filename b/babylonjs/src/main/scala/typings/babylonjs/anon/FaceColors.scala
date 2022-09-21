@@ -8,29 +8,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FaceColors extends StObject {
   
-  var backUVs: js.UndefOr[Vector4] = js.undefined
+  var alignHorizontal: js.UndefOr[Double] = js.undefined
   
-  var custom: js.UndefOr[js.Any] = js.undefined
+  var alignVertical: js.UndefOr[Double] = js.undefined
+  
+  var depth: js.UndefOr[Double] = js.undefined
   
   var faceColors: js.UndefOr[js.Array[Color4]] = js.undefined
   
   var faceUV: js.UndefOr[js.Array[Vector4]] = js.undefined
   
-  var flat: js.UndefOr[Boolean] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
   
-  var frontUVs: js.UndefOr[Vector4] = js.undefined
+  var pattern: js.UndefOr[Double] = js.undefined
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.undefined
+  var tileHeight: js.UndefOr[Double] = js.undefined
   
-  var sizeX: js.UndefOr[Double] = js.undefined
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var sizeY: js.UndefOr[Double] = js.undefined
+  var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var sizeZ: js.UndefOr[Double] = js.undefined
+  var updatable: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.undefined
 }
 object FaceColors {
   
@@ -41,56 +43,60 @@ object FaceColors {
   
   extension [Self <: FaceColors](x: Self) {
     
-    inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
+    inline def setAlignHorizontal(value: Double): Self = StObject.set(x, "alignHorizontal", value.asInstanceOf[js.Any])
     
-    inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
+    inline def setAlignHorizontalUndefined: Self = StObject.set(x, "alignHorizontal", js.undefined)
     
-    inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setAlignVertical(value: Double): Self = StObject.set(x, "alignVertical", value.asInstanceOf[js.Any])
     
-    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setAlignVerticalUndefined: Self = StObject.set(x, "alignVertical", js.undefined)
+    
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     inline def setFaceColors(value: js.Array[Color4]): Self = StObject.set(x, "faceColors", value.asInstanceOf[js.Any])
     
     inline def setFaceColorsUndefined: Self = StObject.set(x, "faceColors", js.undefined)
     
-    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value :_*))
+    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value*))
     
     inline def setFaceUV(value: js.Array[Vector4]): Self = StObject.set(x, "faceUV", value.asInstanceOf[js.Any])
     
     inline def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
     
-    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value :_*))
+    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value*))
     
-    inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Double): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
-    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
     
-    inline def setSizeX(value: Double): Self = StObject.set(x, "sizeX", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    inline def setSizeXUndefined: Self = StObject.set(x, "sizeX", js.undefined)
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
-    inline def setSizeY(value: Double): Self = StObject.set(x, "sizeY", value.asInstanceOf[js.Any])
+    inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
-    inline def setSizeYUndefined: Self = StObject.set(x, "sizeY", js.undefined)
+    inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
     
-    inline def setSizeZ(value: Double): Self = StObject.set(x, "sizeZ", value.asInstanceOf[js.Any])
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
-    inline def setSizeZUndefined: Self = StObject.set(x, "sizeZ", js.undefined)
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
-    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

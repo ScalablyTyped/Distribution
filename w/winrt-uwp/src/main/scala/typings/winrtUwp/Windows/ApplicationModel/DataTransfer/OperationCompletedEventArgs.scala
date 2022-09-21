@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Contains info about the action that a target app completed during a paste operation. */
 trait OperationCompletedEventArgs extends StObject {
   
-  var acceptedFormatId: js.Any
+  var acceptedFormatId: Any
   
   /* unmapped type */
   /** Specifies the operation that the target app completed. */
@@ -15,14 +15,14 @@ trait OperationCompletedEventArgs extends StObject {
 }
 object OperationCompletedEventArgs {
   
-  inline def apply(acceptedFormatId: js.Any, operation: DataPackageOperation): OperationCompletedEventArgs = {
+  inline def apply(acceptedFormatId: Any, operation: DataPackageOperation): OperationCompletedEventArgs = {
     val __obj = js.Dynamic.literal(acceptedFormatId = acceptedFormatId.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationCompletedEventArgs]
   }
   
   extension [Self <: OperationCompletedEventArgs](x: Self) {
     
-    inline def setAcceptedFormatId(value: js.Any): Self = StObject.set(x, "acceptedFormatId", value.asInstanceOf[js.Any])
+    inline def setAcceptedFormatId(value: Any): Self = StObject.set(x, "acceptedFormatId", value.asInstanceOf[js.Any])
     
     inline def setOperation(value: DataPackageOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }

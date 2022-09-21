@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isEqualMod {
   
-  @JSImport("@antv/util/lib/is-equal", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/is-equal", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(value: js.Any, other: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(value: Any, other: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

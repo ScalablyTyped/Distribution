@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("sasl-plain", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PlainMechanism {
     
@@ -29,7 +29,7 @@ object mod {
     var name_PlainMechanism: PLAIN = js.native
     
     /* CompleteClass */
-    override def response(cred: StringDictionary[js.Any]): String = js.native
+    override def response(cred: StringDictionary[Any]): String = js.native
     /* CompleteClass */
     override def response(cred: Credentials): String = js.native
   }
@@ -40,7 +40,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sasl-plain", "Mechanism")
   @js.native
-  class Mechanism ()
+  open class Mechanism ()
     extends StObject
        with PlainMechanism {
     
@@ -57,7 +57,7 @@ object mod {
     var name_PlainMechanism: PLAIN = js.native
     
     /* CompleteClass */
-    override def response(cred: StringDictionary[js.Any]): String = js.native
+    override def response(cred: StringDictionary[Any]): String = js.native
     /* CompleteClass */
     override def response(cred: Credentials): String = js.native
   }

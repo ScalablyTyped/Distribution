@@ -1,7 +1,9 @@
 package typings.vscodeLanguageclient.clientMod
 
-import typings.vscodeLanguageclient.configurationMod.ConfigurationWorkspaceMiddleware
-import typings.vscodeLanguageclient.workspaceFoldersMod.WorkspaceFolderWorkspaceMiddleware
+import typings.vscodeLanguageclient.configurationMod.ConfigurationMiddleware
+import typings.vscodeLanguageclient.configurationMod.DidChangeConfigurationMiddleware
+import typings.vscodeLanguageclient.fileOperationsMod.FileOperationsMiddleware
+import typings.vscodeLanguageclient.workspaceFolderMod.WorkspaceFolderMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceMiddleware
   extends StObject
      with _WorkspaceMiddleware
-     with ConfigurationWorkspaceMiddleware
-     with WorkspaceFolderWorkspaceMiddleware
+     with ConfigurationMiddleware
+     with DidChangeConfigurationMiddleware
+     with WorkspaceFolderMiddleware
+     with FileOperationsMiddleware
 object WorkspaceMiddleware {
   
   inline def apply(): WorkspaceMiddleware = {

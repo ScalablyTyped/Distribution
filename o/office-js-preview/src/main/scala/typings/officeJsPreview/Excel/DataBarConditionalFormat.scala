@@ -17,9 +17,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an Excel conditional data bar type.
   *
-  * Represents an Excel Conditional Data Bar Type.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -28,26 +28,26 @@ trait DataBarConditionalFormat
      with ClientObject {
   
   /**
+    * HTML color code representing the color of the Axis line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    Value is "" (an empty string) if no axis is present or set.
     *
-    * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    "" (empty string) if no axis is present or set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var axisColor: String = js.native
   
   /**
-    *
     * Representation of how the axis is determined for an Excel data bar.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var axisFormat: ConditionalDataBarAxisFormat | Automatic | None | CellMidPoint = js.native
   
   /**
-    *
     * Specifies the direction that the data bar graphic should be based on.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var barDirection: ConditionalDataBarDirection | Context | LeftToRight | RightToLeft = js.native
@@ -68,40 +68,34 @@ trait DataBarConditionalFormat
   def load(propertyNames: js.Array[String]): DataBarConditionalFormat = js.native
   
   /**
-    *
     * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
     The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var lowerBoundRule: ConditionalDataBarRule = js.native
   
   /**
-    *
     * Representation of all values to the left of the axis in an Excel data bar.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val negativeFormat: ConditionalDataBarNegativeFormat = js.native
   
   /**
-    *
     * Representation of all values to the right of the axis in an Excel data bar.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val positiveFormat: ConditionalDataBarPositiveFormat = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: DataBarConditionalFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.DataBarConditionalFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -109,9 +103,9 @@ trait DataBarConditionalFormat
   def set(properties: DataBarConditionalFormatUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
+    * If `true`, hides the values from the cells where the data bar is applied.
     *
-    * If true, hides the values from the cells where the data bar is applied.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var showDataBarOnly: Boolean = js.native
@@ -123,10 +117,10 @@ trait DataBarConditionalFormat
   def toJSON(): DataBarConditionalFormatData = js.native
   
   /**
-    *
     * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
     The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var upperBoundRule: ConditionalDataBarRule = js.native

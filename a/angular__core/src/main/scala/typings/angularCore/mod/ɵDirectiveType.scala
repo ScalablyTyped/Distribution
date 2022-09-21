@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ɵDirectiveType[T] extends Type[T] {
   
-  def ɵfac(): T = js.native
+  var ɵdir: Any = js.native
+  
+  var ɵfac: Any = js.native
 }

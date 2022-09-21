@@ -4,12 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A reference to a field, such as `max(messages.time) as max_time`.
-  */
 trait SchemaFieldReference extends StObject {
   
-  var fieldPath: js.UndefOr[String] = js.undefined
+  var fieldPath: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFieldReference {
   
@@ -21,6 +18,8 @@ object SchemaFieldReference {
   extension [Self <: SchemaFieldReference](x: Self) {
     
     inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    
+    inline def setFieldPathNull: Self = StObject.set(x, "fieldPath", null)
     
     inline def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
   }

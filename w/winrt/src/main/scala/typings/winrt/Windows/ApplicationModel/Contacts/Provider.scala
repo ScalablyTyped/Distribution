@@ -38,7 +38,7 @@ object Provider {
       addContact: (String, Contact) => AddContactResult,
       containsContact: String => Boolean,
       desiredFields: IVectorView[String],
-      oncontactremoved: js.Any,
+      oncontactremoved: Any,
       removeContact: String => Unit,
       selectionMode: ContactSelectionMode
     ): ContactPickerUI = {
@@ -66,7 +66,7 @@ object Provider {
     
     var desiredFields: IVectorView[String]
     
-    var oncontactremoved: js.Any
+    var oncontactremoved: Any
     
     def removeContact(id: String): Unit
     
@@ -78,7 +78,7 @@ object Provider {
       addContact: (String, Contact) => AddContactResult,
       containsContact: String => Boolean,
       desiredFields: IVectorView[String],
-      oncontactremoved: js.Any,
+      oncontactremoved: Any,
       removeContact: String => Unit,
       selectionMode: ContactSelectionMode
     ): IContactPickerUI = {
@@ -94,7 +94,7 @@ object Provider {
       
       inline def setDesiredFields(value: IVectorView[String]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
       
-      inline def setOncontactremoved(value: js.Any): Self = StObject.set(x, "oncontactremoved", value.asInstanceOf[js.Any])
+      inline def setOncontactremoved(value: Any): Self = StObject.set(x, "oncontactremoved", value.asInstanceOf[js.Any])
       
       inline def setRemoveContact(value: String => Unit): Self = StObject.set(x, "removeContact", js.Any.fromFunction1(value))
       

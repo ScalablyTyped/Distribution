@@ -24,8 +24,8 @@ object sideNavMod {
   
   @JSImport("fundamental-react/lib/SideNavigation/SideNav", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SideNavProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SideNavProps, js.Object, Any]
   object default {
     
     @JSImport("fundamental-react/lib/SideNavigation/SideNav", JSImport.Default)
@@ -35,10 +35,9 @@ object sideNavMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List")
     @js.native
-    class List protected ()
-      extends Component[SideNavListProps, ComponentState, js.Any] {
+    open class List protected () extends Component[SideNavListProps, ComponentState, Any] {
       def this(props: SideNavListProps) = this()
-      def this(props: SideNavListProps, context: js.Any) = this()
+      def this(props: SideNavListProps, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/SideNavigation/SideNav.SideNavListProps, react.react.ComponentState> & {  displayName :'SideNav.List'} */
@@ -50,18 +49,18 @@ object sideNavMod {
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.defaultProps")
       @js.native
@@ -92,10 +91,9 @@ object sideNavMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem")
     @js.native
-    class ListItem protected ()
-      extends Component[SideNavListItemProps, ComponentState, js.Any] {
+    open class ListItem protected () extends Component[SideNavListItemProps, ComponentState, Any] {
       def this(props: SideNavListItemProps) = this()
-      def this(props: SideNavListItemProps, context: js.Any) = this()
+      def this(props: SideNavListItemProps, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/SideNavigation/SideNav.SideNavListItemProps, react.react.ComponentState> & {  displayName :'SideNav.ListItem'} */
@@ -107,18 +105,18 @@ object sideNavMod {
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.defaultProps")
       @js.native
@@ -153,7 +151,7 @@ object sideNavMod {
     inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.SideNav): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  type SideNav = Component[SideNavProps, js.Object, js.Any]
+  type SideNav = Component[SideNavProps, js.Object, Any]
   
   trait SideNavListItemProps
     extends StObject
@@ -172,9 +170,9 @@ object sideNavMod {
     var name: js.UndefOr[String] = js.undefined
     
     @JSName("onClick")
-    var onClick_SideNavListItemProps: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onClick_SideNavListItemProps: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
-    var onItemSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onItemSelect: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var selected: js.UndefOr[Boolean] = js.undefined
     
@@ -215,11 +213,11 @@ object sideNavMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnItemSelect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
+      inline def setOnItemSelect(value: /* repeated */ Any => Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
       
       inline def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
       
@@ -253,13 +251,13 @@ object sideNavMod {
     
     var level: js.UndefOr[Double] = js.undefined
     
-    var onItemSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onItemSelect: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var open: js.UndefOr[Boolean] = js.undefined
     
     var selectedId: js.UndefOr[String] = js.undefined
     
-    var titleProps: js.UndefOr[js.Any] = js.undefined
+    var titleProps: js.UndefOr[Any] = js.undefined
   }
   object SideNavListProps {
     
@@ -294,7 +292,7 @@ object sideNavMod {
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setOnItemSelect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
+      inline def setOnItemSelect(value: /* repeated */ Any => Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
       
       inline def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
       
@@ -306,7 +304,7 @@ object sideNavMod {
       
       inline def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
       
-      inline def setTitleProps(value: js.Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
+      inline def setTitleProps(value: Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
       
       inline def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
     }
@@ -322,7 +320,7 @@ object sideNavMod {
     
     var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var onItemSelect: js.UndefOr[js.Function2[/* e */ js.Any, /* id */ js.Any, Unit]] = js.undefined
+    var onItemSelect: js.UndefOr[js.Function2[/* e */ Any, /* id */ Any, Unit]] = js.undefined
     
     var selectedId: js.UndefOr[String] = js.undefined
     
@@ -349,7 +347,7 @@ object sideNavMod {
       
       inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      inline def setOnItemSelect(value: (/* e */ js.Any, /* id */ js.Any) => Unit): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction2(value))
+      inline def setOnItemSelect(value: (/* e */ Any, /* id */ Any) => Unit): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction2(value))
       
       inline def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
       

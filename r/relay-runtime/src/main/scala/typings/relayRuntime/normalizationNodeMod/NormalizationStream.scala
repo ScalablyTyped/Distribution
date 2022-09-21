@@ -1,12 +1,12 @@
 package typings.relayRuntime.normalizationNodeMod
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NormalizationStream
   extends StObject
+     with NormalizationNode
      with NormalizationSelectableNode
      with NormalizationSelection {
   
@@ -14,10 +14,8 @@ trait NormalizationStream
   
   val kind: String
   
-  // 'Stream';
+  // "Stream";
   val label: String
-  
-  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   
   val selections: js.Array[NormalizationSelection]
 }
@@ -39,14 +37,8 @@ object NormalizationStream {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-    
-    inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
-    
-    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
-    
     inline def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value*))
   }
 }

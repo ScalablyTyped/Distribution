@@ -19,5 +19,5 @@ object isMimeTypeMod {
   inline def IsMimeType_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMimeType")().asInstanceOf[PropertyDecorator]
   inline def IsMimeType_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMimeType")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isMimeType(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMimeType")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMimeType(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMimeType")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

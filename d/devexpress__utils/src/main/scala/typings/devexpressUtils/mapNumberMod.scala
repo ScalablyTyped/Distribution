@@ -15,7 +15,7 @@ object mapNumberMod {
   
   @JSImport("@devexpress/utils/lib/utils/map/number", "NumberMapUtils")
   @js.native
-  class NumberMapUtils () extends StObject
+  open class NumberMapUtils () extends StObject
   /* static members */
   object NumberMapUtils {
     

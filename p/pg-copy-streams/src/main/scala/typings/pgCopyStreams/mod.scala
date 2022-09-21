@@ -1,7 +1,5 @@
 package typings.pgCopyStreams
 
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import typings.pg.mod.Connection
@@ -18,15 +16,10 @@ object mod {
   
   @JSImport("pg-copy-streams", "CopyStreamQuery")
   @js.native
-  class CopyStreamQuery ()
+  open class CopyStreamQuery ()
     extends Transform
        with Submittable {
     def this(opts: TransformOptions) = this()
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     
     /* CompleteClass */
     override def submit(connection: Connection): Unit = js.native
@@ -34,15 +27,10 @@ object mod {
   
   @JSImport("pg-copy-streams", "CopyToStreamQuery")
   @js.native
-  class CopyToStreamQuery ()
+  open class CopyToStreamQuery ()
     extends Transform
        with Submittable {
     def this(opts: TransformOptions) = this()
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     
     /* CompleteClass */
     override def submit(connection: Connection): Unit = js.native

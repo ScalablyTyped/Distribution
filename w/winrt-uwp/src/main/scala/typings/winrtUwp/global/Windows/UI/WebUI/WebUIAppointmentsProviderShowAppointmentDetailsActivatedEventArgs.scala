@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.UI.WebUI
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
@@ -21,7 +20,7 @@ abstract class WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs
   
   /** Gets the start date of the appointment instance for which the app should display details. */
   /* CompleteClass */
-  var instanceStartDate: Date = js.native
+  var instanceStartDate: js.Date = js.native
   
   /** Gets the activation type. */
   /* CompleteClass */

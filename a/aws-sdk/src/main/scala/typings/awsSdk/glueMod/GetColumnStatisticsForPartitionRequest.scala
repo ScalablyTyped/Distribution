@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetColumnStatisticsForPartitionRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the partitions in question reside. If none is supplied, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the partitions in question reside. If none is supplied, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -51,13 +51,13 @@ object GetColumnStatisticsForPartitionRequest {
     
     inline def setColumnNames(value: GetColumnNamesList): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
     
-    inline def setColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
+    inline def setColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ColumnNames", js.Array(value*))
     
     inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     inline def setPartitionValues(value: ValueStringList): Self = StObject.set(x, "PartitionValues", value.asInstanceOf[js.Any])
     
-    inline def setPartitionValuesVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValues", js.Array(value :_*))
+    inline def setPartitionValuesVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValues", js.Array(value*))
     
     inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

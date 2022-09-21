@@ -10,10 +10,10 @@ A tool for managing self-signed certifications
 | ------------------ | :-------------: |
 | Full name          | node-easy-cert |
 | Keywords           | certification, https |
-| # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 280421 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61819.0 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/ottomao/node-easy-cert#readme)

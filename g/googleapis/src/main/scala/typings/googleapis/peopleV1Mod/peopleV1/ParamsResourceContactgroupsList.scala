@@ -1,9 +1,5 @@
 package typings.googleapis.peopleV1Mod.peopleV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,25 +9,22 @@ trait ParamsResourceContactgroupsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Optional. A field mask to restrict which fields on the group are returned. Defaults to `metadata`, `groupType`, `memberCount`, and `name` if not set or set to empty. Valid fields are: * clientData * groupType * memberCount * metadata * name
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var groupFields: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of resources to return.
+    * Optional. The maximum number of resources to return. Valid values are between 1 and 1000, inclusive. Defaults to 30 if not set or set to 0.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The next_page_token value returned from a previous call to
-    * [ListContactGroups](/people/api/rest/v1/contactgroups/list). Requests the
-    * next page of resources.
+    * Optional. The next_page_token value returned from a previous call to [ListContactGroups](/people/api/rest/v1/contactgroups/list). Requests the next page of resources.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * A sync token, returned by a previous call to `contactgroups.list`. Only
-    * resources changed since the sync token was created will be returned.
+    * Optional. A sync token, returned by a previous call to `contactgroups.list`. Only resources changed since the sync token was created will be returned.
     */
   var syncToken: js.UndefOr[String] = js.undefined
 }
@@ -44,9 +37,9 @@ object ParamsResourceContactgroupsList {
   
   extension [Self <: ParamsResourceContactgroupsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setGroupFields(value: String): Self = StObject.set(x, "groupFields", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setGroupFieldsUndefined: Self = StObject.set(x, "groupFields", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

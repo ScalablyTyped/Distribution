@@ -29,7 +29,12 @@ trait SpotFleetLaunchSpecification extends StObject {
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[String] = js.undefined
+  var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.undefined
+  
+  /**
+    * The attributes for the instance types. When you specify instance attributes, Amazon EC2 will identify instance types with those attributes.  If you specify InstanceRequirements, you can't specify InstanceType. 
+    */
+  var InstanceRequirements: js.UndefOr[typings.awsSdk.ec2Mod.InstanceRequirements] = js.undefined
   
   /**
     * The instance type.
@@ -44,7 +49,7 @@ trait SpotFleetLaunchSpecification extends StObject {
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.undefined
+  var KeyName: js.UndefOr[KeyPairName] = js.undefined
   
   /**
     * Enable or disable monitoring for the instances.
@@ -62,7 +67,7 @@ trait SpotFleetLaunchSpecification extends StObject {
   var Placement: js.UndefOr[SpotPlacement] = js.undefined
   
   /**
-    * The ID of the RAM disk. Some kernels require additional drivers at launch. Check the kernel requirements for information about whether you need to specify a RAM disk. To find kernel requirements, refer to the AWS Resource Center and search for the kernel ID.
+    * The ID of the RAM disk. Some kernels require additional drivers at launch. Check the kernel requirements for information about whether you need to specify a RAM disk. To find kernel requirements, refer to the Amazon Web Services Resource Center and search for the kernel ID.
     */
   var RamdiskId: js.UndefOr[String] = js.undefined
   
@@ -72,14 +77,14 @@ trait SpotFleetLaunchSpecification extends StObject {
   var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
-    * The maximum price per unit hour that you are willing to pay for a Spot Instance. If this value is not specified, the default is the Spot price specified for the fleet. To determine the Spot price per unit hour, divide the Spot price by the value of WeightedCapacity.
+    * The maximum price per unit hour that you are willing to pay for a Spot Instance. We do not recommend using this parameter because it can lead to increased interruptions. If you do not specify this parameter, you will pay the current Spot price.  If you specify a maximum price, your instances will be interrupted more frequently than if you do not specify this parameter. 
     */
   var SpotPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the subnets in which to launch the instances. To specify multiple subnets, separate them using commas; for example, "subnet-1234abcdeexample1, subnet-0987cdef6example2".
     */
-  var SubnetId: js.UndefOr[String] = js.undefined
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.undefined
   
   /**
     * The tags to apply during creation.
@@ -113,7 +118,7 @@ object SpotFleetLaunchSpecification {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value*))
     
     inline def setEbsOptimized(value: Boolean): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
@@ -123,9 +128,13 @@ object SpotFleetLaunchSpecification {
     
     inline def setIamInstanceProfileUndefined: Self = StObject.set(x, "IamInstanceProfile", js.undefined)
     
-    inline def setImageId(value: String): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    
+    inline def setInstanceRequirements(value: InstanceRequirements): Self = StObject.set(x, "InstanceRequirements", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceRequirementsUndefined: Self = StObject.set(x, "InstanceRequirements", js.undefined)
     
     inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
@@ -135,7 +144,7 @@ object SpotFleetLaunchSpecification {
     
     inline def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
     
-    inline def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: KeyPairName): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
     inline def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
     
@@ -147,7 +156,7 @@ object SpotFleetLaunchSpecification {
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: InstanceNetworkInterfaceSpecification*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: InstanceNetworkInterfaceSpecification*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value*))
     
     inline def setPlacement(value: SpotPlacement): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
@@ -161,13 +170,13 @@ object SpotFleetLaunchSpecification {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSpotPrice(value: String): Self = StObject.set(x, "SpotPrice", value.asInstanceOf[js.Any])
     
     inline def setSpotPriceUndefined: Self = StObject.set(x, "SpotPrice", js.undefined)
     
-    inline def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
@@ -175,7 +184,7 @@ object SpotFleetLaunchSpecification {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: SpotFleetTagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: SpotFleetTagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setUserData(value: String): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     

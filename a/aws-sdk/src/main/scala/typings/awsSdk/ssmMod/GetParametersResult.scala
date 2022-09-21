@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersResult extends StObject {
   
   /**
-    * A list of parameters that are not formatted correctly or do not run during an execution.
+    * A list of parameters that aren't formatted correctly or don't run during an execution.
     */
   var InvalidParameters: js.UndefOr[ParameterNameList] = js.undefined
   
@@ -29,12 +29,12 @@ object GetParametersResult {
     
     inline def setInvalidParametersUndefined: Self = StObject.set(x, "InvalidParameters", js.undefined)
     
-    inline def setInvalidParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "InvalidParameters", js.Array(value :_*))
+    inline def setInvalidParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "InvalidParameters", js.Array(value*))
     
     inline def setParameters(value: ParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
   }
 }

@@ -20,13 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var coolingFactor: Double
   
   // Divisor to compute edge forces
-  def edgeElasticity(edge: js.Any): Double
+  def edgeElasticity(edge: Any): Double
   
   // Gravity force (constant)
   var gravity: Double
   
   // Ideal edge (non nested) length
-  def idealEdgeLength(edge: js.Any): Double
+  def idealEdgeLength(edge: Any): Double
   
   // Initial temperature (maximum node displacement)
   var initialTemp: Double
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var nodeOverlap: Double
   
   // Node repulsion (non overlapping) multiplier
-  def nodeRepulsion(node: js.Any): Double
+  def nodeRepulsion(node: Any): Double
   
   // Maximum number of iterations to perform
   var numIter: Double
@@ -64,16 +64,16 @@ object CoseLayoutOptions {
   inline def apply(
     componentSpacing: Double,
     coolingFactor: Double,
-    edgeElasticity: js.Any => Double,
+    edgeElasticity: Any => Double,
     fit: Boolean,
     gravity: Double,
-    idealEdgeLength: js.Any => Double,
+    idealEdgeLength: Any => Double,
     initialTemp: Double,
     minTemp: Double,
     nestingFactor: Double,
     nodeDimensionsIncludeLabels: Boolean,
     nodeOverlap: Double,
-    nodeRepulsion: js.Any => Double,
+    nodeRepulsion: Any => Double,
     numIter: Double,
     randomize: Boolean,
     refresh: Double,
@@ -89,11 +89,11 @@ object CoseLayoutOptions {
     
     inline def setCoolingFactor(value: Double): Self = StObject.set(x, "coolingFactor", value.asInstanceOf[js.Any])
     
-    inline def setEdgeElasticity(value: js.Any => Double): Self = StObject.set(x, "edgeElasticity", js.Any.fromFunction1(value))
+    inline def setEdgeElasticity(value: Any => Double): Self = StObject.set(x, "edgeElasticity", js.Any.fromFunction1(value))
     
     inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    inline def setIdealEdgeLength(value: js.Any => Double): Self = StObject.set(x, "idealEdgeLength", js.Any.fromFunction1(value))
+    inline def setIdealEdgeLength(value: Any => Double): Self = StObject.set(x, "idealEdgeLength", js.Any.fromFunction1(value))
     
     inline def setInitialTemp(value: Double): Self = StObject.set(x, "initialTemp", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object CoseLayoutOptions {
     
     inline def setNodeOverlap(value: Double): Self = StObject.set(x, "nodeOverlap", value.asInstanceOf[js.Any])
     
-    inline def setNodeRepulsion(value: js.Any => Double): Self = StObject.set(x, "nodeRepulsion", js.Any.fromFunction1(value))
+    inline def setNodeRepulsion(value: Any => Double): Self = StObject.set(x, "nodeRepulsion", js.Any.fromFunction1(value))
     
     inline def setNumIter(value: Double): Self = StObject.set(x, "numIter", value.asInstanceOf[js.Any])
     

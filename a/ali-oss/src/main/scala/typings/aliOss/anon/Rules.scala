@@ -25,6 +25,6 @@ object Rules {
     
     inline def setRules(value: js.Array[LifecycleRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

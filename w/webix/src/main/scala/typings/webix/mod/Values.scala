@@ -12,12 +12,12 @@ trait Values extends StObject {
   
   def focus(item: String): Unit = js.native
   
-  def getCleanValues(): js.Any = js.native
+  def getCleanValues(): Any = js.native
   
-  def getDirtyValues(): js.Any = js.native
+  def getDirtyValues(): Any = js.native
   
-  def getValues(): js.Any = js.native
-  def getValues(details: js.Any): js.Any = js.native
+  def getValues(): Any = js.native
+  def getValues(details: Any): Any = js.native
   
   def isDirty(): Boolean = js.native
   
@@ -28,8 +28,8 @@ trait Values extends StObject {
   def setDirty(): Unit = js.native
   def setDirty(mark: Boolean): Unit = js.native
   
-  def setValues(values: js.Any): Unit = js.native
-  def setValues(values: js.Any, update: Boolean): Unit = js.native
+  def setValues(values: Any): Unit = js.native
+  def setValues(values: Any, update: Boolean): Unit = js.native
 }
 object Values {
   

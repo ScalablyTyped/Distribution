@@ -12,51 +12,51 @@ object microphoneIteratorMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/iterators/microphone_iterator", "MicrophoneIterator")
   @js.native
-  /* private */ class MicrophoneIterator () extends LazyIterator[TensorContainer] {
+  /* private */ open class MicrophoneIterator () extends LazyIterator[TensorContainer] {
     
-    /* private */ var analyser: js.Any = js.native
+    /* private */ var analyser: Any = js.native
     
-    /* private */ var audioContext: js.Any = js.native
+    /* private */ var audioContext: Any = js.native
     
-    /* private */ val audioTrackConstraints: js.Any = js.native
+    /* private */ val audioTrackConstraints: Any = js.native
     
     def capture(): js.Promise[Spectrogram] = js.native
     
-    /* private */ val columnTruncateLength: js.Any = js.native
+    /* private */ val columnTruncateLength: Any = js.native
     
-    /* private */ val fftSize: js.Any = js.native
+    /* private */ val fftSize: Any = js.native
     
-    /* private */ var flattenQueue: js.Any = js.native
+    /* private */ var flattenQueue: Any = js.native
     
-    /* private */ var freqData: js.Any = js.native
+    /* private */ var freqData: Any = js.native
     
-    /* private */ var getAudioData: js.Any = js.native
+    /* private */ var getAudioData: Any = js.native
     
     def getSampleRate(): Double = js.native
     
-    /* private */ var getTensorFromAudioDataArray: js.Any = js.native
+    /* private */ var getTensorFromAudioDataArray: Any = js.native
     
-    /* private */ val includeSpectrogram: js.Any = js.native
+    /* private */ val includeSpectrogram: Any = js.native
     
-    /* private */ val includeWaveform: js.Any = js.native
+    /* private */ val includeWaveform: Any = js.native
     
-    /* private */ var isClosed: js.Any = js.native
+    /* private */ var isClosed: Any = js.native
     
     /* protected */ val microphoneConfig: MicrophoneConfig = js.native
     
-    /* private */ val numFrames: js.Any = js.native
+    /* private */ val numFrames: Any = js.native
     
-    /* private */ var sampleRateHz: js.Any = js.native
+    /* private */ var sampleRateHz: Any = js.native
     
-    /* private */ val smoothingTimeConstant: js.Any = js.native
+    /* private */ val smoothingTimeConstant: Any = js.native
     
     def start(): js.Promise[Unit] = js.native
     
     def stop(): Unit = js.native
     
-    /* private */ var stream: js.Any = js.native
+    /* private */ var stream: Any = js.native
     
-    /* private */ var timeData: js.Any = js.native
+    /* private */ var timeData: Any = js.native
   }
   /* static members */
   object MicrophoneIterator {

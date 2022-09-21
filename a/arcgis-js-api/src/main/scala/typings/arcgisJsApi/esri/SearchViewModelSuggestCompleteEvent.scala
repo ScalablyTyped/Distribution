@@ -35,13 +35,13 @@ object SearchViewModelSuggestCompleteEvent {
     
     inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
     inline def setResults(value: js.Array[SearchViewModelSuggestCompleteEventResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: SearchViewModelSuggestCompleteEventResults*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchViewModelSuggestCompleteEventResults*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
   }

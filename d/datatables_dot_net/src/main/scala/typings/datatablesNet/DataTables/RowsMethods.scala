@@ -16,8 +16,13 @@ trait RowsMethods
     * @param d Data to use for the row.
     */
   def data(): Api = js.native
-  def data(d: js.Array[js.Any]): Api = js.native
+  def data(d: js.Array[Any]): Api = js.native
   def data(d: js.Object): Api = js.native
+  
+  /**
+    * Deselects the given rows.
+    */
+  def deselect(): Api = js.native
   
   /**
     * Iterate over each selected row, with the function context set to be the row in question. Since: DataTables 1.10.6
@@ -58,4 +63,9 @@ trait RowsMethods
     * Delete the selected rows from the DataTable.
     */
   def remove(): Api = js.native
+  
+  /**
+    * Selects the given rows.
+    */
+  def select(): Api = js.native
 }

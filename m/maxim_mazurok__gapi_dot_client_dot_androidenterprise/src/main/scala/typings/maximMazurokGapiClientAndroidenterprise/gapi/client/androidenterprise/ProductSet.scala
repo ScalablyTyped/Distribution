@@ -38,7 +38,7 @@ object ProductSet {
     
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    inline def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value :_*))
+    inline def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value*))
     
     inline def setProductSetBehavior(value: String): Self = StObject.set(x, "productSetBehavior", value.asInstanceOf[js.Any])
     
@@ -48,6 +48,6 @@ object ProductSet {
     
     inline def setProductVisibilityUndefined: Self = StObject.set(x, "productVisibility", js.undefined)
     
-    inline def setProductVisibilityVarargs(value: ProductVisibility*): Self = StObject.set(x, "productVisibility", js.Array(value :_*))
+    inline def setProductVisibilityVarargs(value: ProductVisibility*): Self = StObject.set(x, "productVisibility", js.Array(value*))
   }
 }

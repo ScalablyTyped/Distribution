@@ -14,7 +14,7 @@ object pluginMod {
   
   @JSImport("workbox-expiration/Plugin", "Plugin")
   @js.native
-  class Plugin ()
+  open class Plugin ()
     extends StObject
        with WorkboxPlugin {
     def this(config: ExpirationPluginConfig) = this()

@@ -16,7 +16,7 @@ object PromiseSettledResult {
     __obj.asInstanceOf[typings.std.PromiseFulfilledResult[T]]
   }
   
-  inline def PromiseRejectedResult(reason: js.Any): typings.std.PromiseRejectedResult = {
+  inline def PromiseRejectedResult(reason: Any): typings.std.PromiseRejectedResult = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
     __obj.asInstanceOf[typings.std.PromiseRejectedResult]
   }

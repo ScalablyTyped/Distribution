@@ -43,7 +43,7 @@ object OptionalClaim {
     
     inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
-    inline def setAdditionalPropertiesVarargs(value: String*): Self = StObject.set(x, "additionalProperties", js.Array(value :_*))
+    inline def setAdditionalPropertiesVarargs(value: String*): Self = StObject.set(x, "additionalProperties", js.Array(value*))
     
     inline def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
     

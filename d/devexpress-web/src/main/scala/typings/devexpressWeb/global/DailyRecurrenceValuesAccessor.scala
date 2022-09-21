@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DailyRecurrenceValuesAccessor")
 @js.native
-class DailyRecurrenceValuesAccessor protected ()
+open class DailyRecurrenceValuesAccessor protected ()
   extends StObject
      with typings.devexpressWeb.DailyRecurrenceValuesAccessor {
   /**

@@ -10,15 +10,14 @@ object shimmerBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Shimmer/Shimmer.base", "ShimmerBase")
   @js.native
-  class ShimmerBase protected ()
-    extends Component[IShimmerProps, IShimmerState, js.Any] {
+  open class ShimmerBase protected () extends Component[IShimmerProps, IShimmerState, Any] {
     def this(props: IShimmerProps) = this()
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _lastTimeoutId: js.Any = js.native
+    /* private */ var _lastTimeoutId: Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MShimmerBase(prevProps: IShimmerProps): Unit = js.native

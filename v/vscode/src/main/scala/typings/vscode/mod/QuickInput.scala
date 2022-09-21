@@ -31,13 +31,14 @@ trait QuickInput extends StObject {
   var enabled: Boolean
   
   /**
-    * Hides this input UI. This will also fire an [QuickInput.onDidHide](#QuickInput.onDidHide)
+    * Hides this input UI. This will also fire an {@link QuickInput.onDidHide}
     * event.
     */
   def hide(): Unit
   
   /**
     * If the UI should stay open even when loosing UI focus. Defaults to false.
+    * This setting is ignored on iPad and is always false.
     */
   var ignoreFocusOut: Boolean
   
@@ -45,20 +46,20 @@ trait QuickInput extends StObject {
     * An event signaling when this input UI is hidden.
     *
     * There are several reasons why this UI might have to be hidden and
-    * the extension will be notified through [QuickInput.onDidHide](#QuickInput.onDidHide).
-    * (Examples include: an explicit call to [QuickInput.hide](#QuickInput.hide),
+    * the extension will be notified through {@link QuickInput.onDidHide}.
+    * (Examples include: an explicit call to {@link QuickInput.hide},
     * the user pressing Esc, some other input UI opening, etc.)
     */
-  def onDidHide(listener: js.Function1[/* e */ Unit, js.Any]): Disposable
-  def onDidHide(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable
-  def onDidHide(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable
-  def onDidHide(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable
+  def onDidHide(listener: js.Function1[/* e */ Unit, Any]): Disposable
+  def onDidHide(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable
+  def onDidHide(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable
+  def onDidHide(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable
   /**
     * An event signaling when this input UI is hidden.
     *
     * There are several reasons why this UI might have to be hidden and
-    * the extension will be notified through [QuickInput.onDidHide](#QuickInput.onDidHide).
-    * (Examples include: an explicit call to [QuickInput.hide](#QuickInput.hide),
+    * the extension will be notified through {@link QuickInput.onDidHide}.
+    * (Examples include: an explicit call to {@link QuickInput.hide},
     * the user pressing Esc, some other input UI opening, etc.)
     */
   @JSName("onDidHide")
@@ -66,7 +67,7 @@ trait QuickInput extends StObject {
   
   /**
     * Makes the input UI visible in its current configuration. Any other input
-    * UI will first fire an [QuickInput.onDidHide](#QuickInput.onDidHide) event.
+    * UI will first fire an {@link QuickInput.onDidHide} event.
     */
   def show(): Unit
   
@@ -93,7 +94,7 @@ object QuickInput {
     enabled: Boolean,
     hide: () => Unit,
     ignoreFocusOut: Boolean,
-    onDidHide: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
+    onDidHide: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
     show: () => Unit
   ): QuickInput = {
     val __obj = js.Dynamic.literal(busy = busy.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), enabled = enabled.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), ignoreFocusOut = ignoreFocusOut.asInstanceOf[js.Any], onDidHide = js.Any.fromFunction3(onDidHide), show = js.Any.fromFunction0(show))
@@ -113,7 +114,7 @@ object QuickInput {
     inline def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     
     inline def setOnDidHide(
-      value: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      value: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onDidHide", js.Any.fromFunction3(value))
     
     inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))

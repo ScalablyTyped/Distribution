@@ -18,7 +18,7 @@ object labelMod {
     * @param {string} [text]
     * @param {number} [angle] One of -90/0/90. 0 is horizontal.
     */
-  class AxisLabel () extends Label {
+  open class AxisLabel () extends Label {
     def this(text: String) = this()
     def this(text: String, angle: Double) = this()
     def this(text: Unit, angle: Double) = this()
@@ -45,7 +45,7 @@ object labelMod {
     * @param {string} [displayText=""] The text of the Label.
     * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
     */
-  class Label () extends Component {
+  open class Label () extends Component {
     def this(displayText: String) = this()
     def this(displayText: String, angle: Double) = this()
     def this(displayText: Unit, angle: Double) = this()
@@ -100,6 +100,28 @@ object labelMod {
       */
     def text(displayText: String): this.type = js.native
   }
+  /* static members */
+  object Label {
+    
+    @JSImport("plottable/build/src/components/label", "Label")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable/build/src/components/label", "Label._DEFAULT_FONT_SIZE_PX")
+    @js.native
+    def _DEFAULT_FONT_SIZE_PX: LabelFontSizePx = js.native
+    inline def _DEFAULT_FONT_SIZE_PX_=(x: LabelFontSizePx): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_FONT_SIZE_PX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/components/label", "Label._MAX_FONT_SIZE_PX")
+    @js.native
+    def _MAX_FONT_SIZE_PX: LabelFontSizePx = js.native
+    inline def _MAX_FONT_SIZE_PX_=(x: LabelFontSizePx): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_FONT_SIZE_PX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/components/label", "Label._MIN_FONT_SIZE_PX")
+    @js.native
+    def _MIN_FONT_SIZE_PX: LabelFontSizePx = js.native
+    inline def _MIN_FONT_SIZE_PX_=(x: LabelFontSizePx): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MIN_FONT_SIZE_PX")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("plottable/build/src/components/label", "TitleLabel")
   @js.native
@@ -108,7 +130,7 @@ object labelMod {
     * @param {string} [text]
     * @param {number} [angle] One of -90/0/90. 0 is horizontal.
     */
-  class TitleLabel () extends Label {
+  open class TitleLabel () extends Label {
     def this(text: String) = this()
     def this(text: String, angle: Double) = this()
     def this(text: Unit, angle: Double) = this()
@@ -124,5 +146,50 @@ object labelMod {
     @js.native
     def TITLE_LABEL_CLASS: String = js.native
     inline def TITLE_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE_LABEL_CLASS")(x.asInstanceOf[js.Any])
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableNumbers.`12`
+    - typings.plottable.plottableNumbers.`13`
+    - typings.plottable.plottableNumbers.`14`
+    - typings.plottable.plottableNumbers.`15`
+    - typings.plottable.plottableNumbers.`16`
+    - typings.plottable.plottableNumbers.`17`
+    - typings.plottable.plottableNumbers.`18`
+    - typings.plottable.plottableNumbers.`19`
+    - typings.plottable.plottableNumbers.`20`
+    - typings.plottable.plottableNumbers.`21`
+    - typings.plottable.plottableNumbers.`22`
+    - typings.plottable.plottableNumbers.`23`
+    - typings.plottable.plottableNumbers.`24`
+  */
+  trait LabelFontSizePx extends StObject
+  object LabelFontSizePx {
+    
+    inline def `12`: typings.plottable.plottableNumbers.`12` = 12.asInstanceOf[typings.plottable.plottableNumbers.`12`]
+    
+    inline def `13`: typings.plottable.plottableNumbers.`13` = 13.asInstanceOf[typings.plottable.plottableNumbers.`13`]
+    
+    inline def `14`: typings.plottable.plottableNumbers.`14` = 14.asInstanceOf[typings.plottable.plottableNumbers.`14`]
+    
+    inline def `15`: typings.plottable.plottableNumbers.`15` = 15.asInstanceOf[typings.plottable.plottableNumbers.`15`]
+    
+    inline def `16`: typings.plottable.plottableNumbers.`16` = 16.asInstanceOf[typings.plottable.plottableNumbers.`16`]
+    
+    inline def `17`: typings.plottable.plottableNumbers.`17` = 17.asInstanceOf[typings.plottable.plottableNumbers.`17`]
+    
+    inline def `18`: typings.plottable.plottableNumbers.`18` = 18.asInstanceOf[typings.plottable.plottableNumbers.`18`]
+    
+    inline def `19`: typings.plottable.plottableNumbers.`19` = 19.asInstanceOf[typings.plottable.plottableNumbers.`19`]
+    
+    inline def `20`: typings.plottable.plottableNumbers.`20` = 20.asInstanceOf[typings.plottable.plottableNumbers.`20`]
+    
+    inline def `21`: typings.plottable.plottableNumbers.`21` = 21.asInstanceOf[typings.plottable.plottableNumbers.`21`]
+    
+    inline def `22`: typings.plottable.plottableNumbers.`22` = 22.asInstanceOf[typings.plottable.plottableNumbers.`22`]
+    
+    inline def `23`: typings.plottable.plottableNumbers.`23` = 23.asInstanceOf[typings.plottable.plottableNumbers.`23`]
+    
+    inline def `24`: typings.plottable.plottableNumbers.`24` = 24.asInstanceOf[typings.plottable.plottableNumbers.`24`]
   }
 }

@@ -27,7 +27,7 @@ object XInstanceProvider {
   inline def apply(
     acquire: () => Unit,
     getInstance: String => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XInstanceProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getInstance = js.Any.fromFunction1(getInstance), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

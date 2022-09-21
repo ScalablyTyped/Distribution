@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ListBreakTypesRequest")
 @js.native
-class ListBreakTypesRequest () extends StObject {
+open class ListBreakTypesRequest () extends StObject {
   
   /**
     * Pointer to the next page of Break Type results to fetch.

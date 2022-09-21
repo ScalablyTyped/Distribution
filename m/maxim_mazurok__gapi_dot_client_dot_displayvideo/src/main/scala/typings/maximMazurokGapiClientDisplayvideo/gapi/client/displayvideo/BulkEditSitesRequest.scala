@@ -35,13 +35,13 @@ object BulkEditSitesRequest {
     
     inline def setCreatedSitesUndefined: Self = StObject.set(x, "createdSites", js.undefined)
     
-    inline def setCreatedSitesVarargs(value: Site*): Self = StObject.set(x, "createdSites", js.Array(value :_*))
+    inline def setCreatedSitesVarargs(value: Site*): Self = StObject.set(x, "createdSites", js.Array(value*))
     
     inline def setDeletedSites(value: js.Array[String]): Self = StObject.set(x, "deletedSites", value.asInstanceOf[js.Any])
     
     inline def setDeletedSitesUndefined: Self = StObject.set(x, "deletedSites", js.undefined)
     
-    inline def setDeletedSitesVarargs(value: String*): Self = StObject.set(x, "deletedSites", js.Array(value :_*))
+    inline def setDeletedSitesVarargs(value: String*): Self = StObject.set(x, "deletedSites", js.Array(value*))
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     

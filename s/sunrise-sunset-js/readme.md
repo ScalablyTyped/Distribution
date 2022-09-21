@@ -10,10 +10,10 @@ Sunrise and sunset time calculation for given coordinates
 | ------------------ | :-------------: |
 | Full name          | sunrise-sunset-js |
 | Keywords           | sunrise, sunset, sun, suncalc, day, events |
-| # releases         | 8 |
-| # dependents       | 6 |
-| # downloads        | 44924 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9426.333333333334 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/udivankin/sunrise-sunset#readme)

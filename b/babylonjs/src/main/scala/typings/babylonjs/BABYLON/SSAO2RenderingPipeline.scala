@@ -39,67 +39,69 @@ trait SSAO2RenderingPipeline
     */
   var SSAORenderEffect: String = js.native
   
-  /* private */ var _bits: js.Any = js.native
+  /* private */ var _bits: Any = js.native
   
-  /* private */ var _blurHPostProcess: js.Any = js.native
+  /* private */ var _blurHPostProcess: Any = js.native
   
-  /* private */ var _blurVPostProcess: js.Any = js.native
+  /* private */ var _blurVPostProcess: Any = js.native
   
-  /* private */ var _createBlurPostProcess: js.Any = js.native
+  /* private */ var _createBlurPostProcess: Any = js.native
   
-  /* private */ var _createRandomTexture: js.Any = js.native
+  /* private */ var _createRandomTexture: Any = js.native
   
-  /* private */ var _createSSAOCombinePostProcess: js.Any = js.native
+  /* private */ var _createSSAOCombinePostProcess: Any = js.native
   
-  /* private */ var _createSSAOPostProcess: js.Any = js.native
+  /* private */ var _createSSAOPostProcess: Any = js.native
   
-  /* private */ var _expensiveBlur: js.Any = js.native
+  /* private */ var _expensiveBlur: Any = js.native
   
   /**
     * Force rendering the geometry through geometry buffer
     */
-  /* private */ var _forceGeometryBuffer: js.Any = js.native
+  /* private */ var _forceGeometryBuffer: Any = js.native
   
-  /* private */ var _generateHemisphere: js.Any = js.native
+  /* private */ var _generateHemisphere: Any = js.native
   
-  /* private */ var _getDefinesForSSAO: js.Any = js.native
+  /* private */ def _geometryBufferRenderer: Any = js.native
   
-  /* private */ var _hammersley: js.Any = js.native
+  /* private */ var _getDefinesForSSAO: Any = js.native
   
-  /* private */ var _hemisphereSample_uniform: js.Any = js.native
+  /* private */ var _hammersley: Any = js.native
   
-  /* private */ var _originalColorPostProcess: js.Any = js.native
+  /* private */ var _hemisphereSample_uniform: Any = js.native
   
-  /* private */ var _prePassRenderer: js.Any = js.native
+  /* private */ var _originalColorPostProcess: Any = js.native
   
-  /* private */ var _radicalInverse_VdC: js.Any = js.native
+  /* private */ def _prePassRenderer: Any = js.native
   
-  /* private */ var _randomTexture: js.Any = js.native
+  /* private */ var _radicalInverse_VdC: Any = js.native
+  
+  /* private */ var _randomTexture: Any = js.native
   
   /**
     * Ratio object used for SSAO ratio and blur ratio
     */
-  /* private */ var _ratio: js.Any = js.native
+  /* private */ var _ratio: Any = js.native
   
   /**
     * Dynamically generated sphere sampler.
     */
-  /* private */ var _sampleSphere: js.Any = js.native
+  /* private */ var _sampleSphere: Any = js.native
   
   /**
     * Blur filter offsets
     */
-  /* private */ var _samplerOffsets: js.Any = js.native
+  /* private */ var _samplerOffsets: Any = js.native
   
-  /* private */ var _samples: js.Any = js.native
+  /* private */ var _samples: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _ssaoCombinePostProcess: js.Any = js.native
+  /* private */ var _ssaoCombinePostProcess: Any = js.native
   
-  /* private */ var _ssaoPostProcess: js.Any = js.native
+  /* private */ var _ssaoPostProcess: Any = js.native
   
-  /* private */ var _textureSamples: js.Any = js.native
+  /* private */ var _textureSamples: Any = js.native
   
   /**
     * The base color of the SSAO post-process
@@ -145,7 +147,7 @@ trait SSAO2RenderingPipeline
     * Serialize the rendering pipeline (Used when exporting)
     * @returns the serialized object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   def textureSamples: Double = js.native
   /**

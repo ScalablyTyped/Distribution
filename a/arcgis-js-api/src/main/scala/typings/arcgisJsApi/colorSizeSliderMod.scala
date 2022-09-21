@@ -22,7 +22,7 @@ object colorSizeSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ColorSizeSlider {
     def this(properties: ColorSizeSliderProperties) = this()

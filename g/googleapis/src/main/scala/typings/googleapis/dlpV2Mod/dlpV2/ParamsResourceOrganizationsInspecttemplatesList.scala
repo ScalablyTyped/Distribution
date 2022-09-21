@@ -1,9 +1,5 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,37 +9,27 @@ trait ParamsResourceOrganizationsInspecttemplatesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Deprecated. This field has no effect.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional comma separated list of fields to order by, followed by `asc` or
-    * `desc` postfix. This list is case-insensitive, default sorting order is
-    * ascending, redundant space characters are insignificant.  Example: `name
-    * asc,update_time, create_time desc`  Supported fields are:  -
-    * `create_time`: corresponds to time the template was created. -
-    * `update_time`: corresponds to time the template was last updated. -
-    * `name`: corresponds to template's name. - `display_name`: corresponds to
-    * template's display name.
+    * Comma separated list of fields to order by, followed by `asc` or `desc` postfix. This list is case-insensitive, default sorting order is ascending, redundant space characters are insignificant. Example: `name asc,update_time, create_time desc` Supported fields are: - `create_time`: corresponds to the time the template was created. - `update_time`: corresponds to the time the template was last updated. - `name`: corresponds to the template's name. - `display_name`: corresponds to the template's display name.
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional size of the page, can be limited by server. If zero server
-    * returns a page of max size 100.
+    * Size of the page, can be limited by the server. If zero server returns a page of max size 100.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional page token to continue retrieval. Comes from previous call to
-    * `ListInspectTemplates`.
+    * Page token to continue retrieval. Comes from previous call to `ListInspectTemplates`.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The parent resource name, for example projects/my-project-id or
-    * organizations/my-org-id.
+    * Required. Parent resource name. The format of this value varies depending on the scope of the request (project or organization) and whether you have [specified a processing location](https://cloud.google.com/dlp/docs/specifying-location): + Projects scope, location specified: `projects/`PROJECT_ID`/locations/`LOCATION_ID + Projects scope, no location specified (defaults to global): `projects/`PROJECT_ID + Organizations scope, location specified: `organizations/`ORG_ID`/locations/`LOCATION_ID + Organizations scope, no location specified (defaults to global): `organizations/`ORG_ID The following example `parent` string specifies a parent project with the identifier `example-project`, and specifies the `europe-west3` location for processing data: parent=projects/example-project/locations/europe-west3
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -56,9 +42,9 @@ object ParamsResourceOrganizationsInspecttemplatesList {
   
   extension [Self <: ParamsResourceOrganizationsInspecttemplatesList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

@@ -8,11 +8,11 @@ trait ISeparatedSyntaxList2
   extends StObject
      with AST {
   
-  /* private */ var _fileName: js.Any
+  /* private */ var _fileName: Any
   
-  /* private */ var _separatorCount: js.Any
+  /* private */ var _separatorCount: Any
   
-  /* private */ var members: js.Any
+  /* private */ var members: Any
   
   def nonSeparatorAt(index: Double): AST
   
@@ -27,19 +27,19 @@ trait ISeparatedSyntaxList2
 object ISeparatedSyntaxList2 {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _fileName: js.Any,
-    _postComments: js.Any,
-    _preComments: js.Any,
-    _separatorCount: js.Any,
+    _fileName: Any,
+    _postComments: Any,
+    _preComments: Any,
+    _separatorCount: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     end: () => Double,
     fileName: () => String,
     isExpression: () => Boolean,
     kind: () => SyntaxKind,
-    members: js.Any,
+    members: Any,
     nonSeparatorAt: Double => AST,
     nonSeparatorCount: () => Double,
     nonSeparatorIndexOf: AST => Double,
@@ -61,7 +61,7 @@ object ISeparatedSyntaxList2 {
   
   extension [Self <: ISeparatedSyntaxList2](x: Self) {
     
-    inline def setMembers(value: js.Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     inline def setNonSeparatorAt(value: Double => AST): Self = StObject.set(x, "nonSeparatorAt", js.Any.fromFunction1(value))
     
@@ -73,8 +73,8 @@ object ISeparatedSyntaxList2 {
     
     inline def setStructuralEquals(value: (ISeparatedSyntaxList2, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
-    inline def set_separatorCount(value: js.Any): Self = StObject.set(x, "_separatorCount", value.asInstanceOf[js.Any])
+    inline def set_separatorCount(value: Any): Self = StObject.set(x, "_separatorCount", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InitMultipartUploadResult extends StObject {
   
+  /** bucket name */
   var bucket: String
   
-  // bucket name
+  /** object name store on OSS */
   var name: String
   
   var res: Headers
   
-  // object name store on OSS
+  /** upload id, use for uploadPart, completeMultipart */
   var uploadId: String
 }
 object InitMultipartUploadResult {

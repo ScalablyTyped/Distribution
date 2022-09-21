@@ -9,17 +9,17 @@ trait Timing extends StObject {
   /**
     * The time, in Unix epoch format, that the transcoding job finished
     */
-  var FinishTime: js.UndefOr[timestampUnix] = js.undefined
+  var FinishTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time, in Unix epoch format, that transcoding for the job began.
     */
-  var StartTime: js.UndefOr[timestampUnix] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time, in Unix epoch format, that you submitted the job.
     */
-  var SubmitTime: js.UndefOr[timestampUnix] = js.undefined
+  var SubmitTime: js.UndefOr[js.Date] = js.undefined
 }
 object Timing {
   
@@ -30,15 +30,15 @@ object Timing {
   
   extension [Self <: Timing](x: Self) {
     
-    inline def setFinishTime(value: timestampUnix): Self = StObject.set(x, "FinishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: js.Date): Self = StObject.set(x, "FinishTime", value.asInstanceOf[js.Any])
     
     inline def setFinishTimeUndefined: Self = StObject.set(x, "FinishTime", js.undefined)
     
-    inline def setStartTime(value: timestampUnix): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    inline def setSubmitTime(value: timestampUnix): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: js.Date): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
     inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
   }

@@ -8,7 +8,6 @@ import typings.phaser.Phaser.Types.Tweens.StaggerConfig
 import typings.phaser.Phaser.Types.Tweens.TimelineBuilderConfig
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
 import typings.phaser.Phaser.Types.Tweens.TweenDataConfig
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +44,7 @@ object Tweens {
     /**
       * The context in which all callbacks are invoked.
       */
-    var callbackScope: js.Any = js.native
+    var callbackScope: Any = js.native
     
     /**
       * An object containing the different Tween callback functions.
@@ -73,7 +72,7 @@ object Tweens {
     /**
       * An array of Tween objects, each containing a unique property and target being tweened.
       */
-    var data: js.Array[js.Any] = js.native
+    var data: js.Array[Any] = js.native
     
     /**
       * Internal method that will emit a Timeline based Event and invoke the given callback.
@@ -230,8 +229,8 @@ object Tweens {
       * @param scope The context scope of the callback.
       */
     def setCallback(`type`: String, callback: js.Function): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.Array[js.Any]): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.Array[js.Any], scope: js.Object): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.Array[Any]): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.Array[Any], scope: js.Object): this.type = js.native
     def setCallback(`type`: String, callback: js.Function, params: Unit, scope: js.Object): this.type = js.native
     
     /**
@@ -246,7 +245,7 @@ object Tweens {
     /**
       * The current state of the Timeline.
       */
-    var state: integer = js.native
+    var state: Double = js.native
     
     /**
       * Stops the Timeline immediately, whatever stage of progress it is at and flags it for removal by the TweenManager.
@@ -316,7 +315,7 @@ object Tweens {
     /**
       * The context in which all callbacks are invoked.
       */
-    var callbackScope: js.Any = js.native
+    var callbackScope: Any = js.native
     
     /**
       * An object containing the different Tween callback functions.
@@ -395,7 +394,7 @@ object Tweens {
       * @param index The Tween Data to return the value from. Default 0.
       */
     def getValue(): Double = js.native
-    def getValue(index: integer): Double = js.native
+    def getValue(index: Double): Double = js.native
     
     /**
       * Has this Tween started playback yet?
@@ -533,7 +532,8 @@ object Tweens {
     /**
       * Seeks to a specific point in the Tween.
       * 
-      * **Note:** You cannot seek a Tween that repeats or loops forever, or that has an unusually long total duration.
+      * **Note:** Be careful when seeking a Tween that repeats or loops forever,
+      * or that has an unusually long total duration, as it's possible to hang the browser.
       * 
       * The given position is a value between 0 and 1 which represents how far through the Tween to seek to.
       * A value of 0.5 would seek to half-way through the Tween, where-as a value of zero would seek to the start.
@@ -570,9 +570,9 @@ object Tweens {
       * @param scope The context the callback will be invoked in.
       */
     def setCallback(`type`: String, callback: js.Function): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.Array[js.Any]): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: js.Array[js.Any], scope: js.Any): this.type = js.native
-    def setCallback(`type`: String, callback: js.Function, params: Unit, scope: js.Any): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.Array[Any]): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.Array[Any], scope: Any): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: Unit, scope: Any): this.type = js.native
     
     /**
       * Internal method used as part of the playback process that sets a tween to play in reverse.
@@ -580,7 +580,7 @@ object Tweens {
       * @param tweenData The TweenData property to update.
       * @param diff Any extra time that needs to be accounted for in the elapsed and progress values.
       */
-    def setStateFromEnd(tween: Tween, tweenData: TweenDataConfig, diff: Double): integer = js.native
+    def setStateFromEnd(tween: Tween, tweenData: TweenDataConfig, diff: Double): Double = js.native
     
     /**
       * Internal method used as part of the playback process that sets a tween to play from the start.
@@ -588,7 +588,7 @@ object Tweens {
       * @param tweenData The TweenData property to update.
       * @param diff Any extra time that needs to be accounted for in the elapsed and progress values.
       */
-    def setStateFromStart(tween: Tween, tweenData: TweenDataConfig, diff: Double): integer = js.native
+    def setStateFromStart(tween: Tween, tweenData: TweenDataConfig, diff: Double): Double = js.native
     
     /**
       * Set the scale the time applied to this Tween. A value of 1 runs in real-time. A value of 0.5 runs 50% slower, and so on.
@@ -605,7 +605,7 @@ object Tweens {
     /**
       * The current state of the tween
       */
-    var state: integer = js.native
+    var state: Double = js.native
     
     /**
       * Stops the Tween immediately, whatever stage of progress it is at and flags it for removal by the TweenManager.
@@ -628,7 +628,7 @@ object Tweens {
     /**
       * The cached length of the data array.
       */
-    var totalData: integer = js.native
+    var totalData: Double = js.native
     
     /**
       * Time in ms/frames for the Tween to complete (including looping)
@@ -648,7 +648,7 @@ object Tweens {
     /**
       * Cached target total (not necessarily the same as the data total)
       */
-    var totalTargets: integer = js.native
+    var totalTargets: Double = js.native
     
     /**
       * Internal method that advances the Tween based on the time values.
@@ -667,8 +667,8 @@ object Tweens {
       * @param value The new value of the property.
       * @param startToCurrent Should this change set the start value to be the current value? Default false.
       */
-    def updateTo(key: String, value: js.Any): this.type = js.native
-    def updateTo(key: String, value: js.Any, startToCurrent: Boolean): this.type = js.native
+    def updateTo(key: String, value: Any): this.type = js.native
+    def updateTo(key: String, value: Any, startToCurrent: Boolean): this.type = js.native
     
     /**
       * Internal method that advances the TweenData based on the time value given.
@@ -729,8 +729,8 @@ object Tweens {
       * @param scope The scope (`this` object) to call the function with.
       * @param args The arguments to pass into the function. Its first argument will always be the Tween currently being iterated.
       */
-    def each(callback: js.Function, scope: js.Object, args: js.Any*): Unit = js.native
-    def each(callback: js.Function, scope: Unit, args: js.Any*): Unit = js.native
+    def each(callback: js.Function, scope: js.Object, args: Any*): Unit = js.native
+    def each(callback: js.Function, scope: Unit, args: Any*): Unit = js.native
     
     /**
       * Add an existing tween into the active Tween list.
@@ -748,12 +748,20 @@ object Tweens {
       */
     def getGlobalTimeScale(): Double = js.native
     
-    def getTweensOf(target: js.Array[js.Any]): js.Array[Tween] = js.native
+    def getTweensOf(target: js.Array[Any]): js.Array[Tween] = js.native
+    def getTweensOf(target: js.Array[Any], includePending: Boolean): js.Array[Tween] = js.native
     /**
       * Returns an array of all Tweens or Timelines in the Tween Manager which affect the given target or array of targets.
+      * 
+      * Only the currently active tweens are tested. A tween that has completed and is
+      * awaiting removal will not be included in the results.
+      * 
+      * If you wish to also search pending tweens, use the `includePending` flag.
       * @param target The target to look for. Provide an array to look for multiple targets.
+      * @param includePending Also check for pending tweens, not just active ones? Default false.
       */
     def getTweensOf(target: js.Object): js.Array[Tween] = js.native
+    def getTweensOf(target: js.Object, includePending: Boolean): js.Array[Tween] = js.native
     
     /**
       * Checks if the given object is being affected by a playing Tween.
@@ -766,7 +774,7 @@ object Tweens {
       */
     def killAll(): TweenManager = js.native
     
-    def killTweensOf(target: js.Array[js.Any]): TweenManager = js.native
+    def killTweensOf(target: js.Array[Any]): TweenManager = js.native
     /**
       * Stops all Tweens which affect the given target or array of targets. The Tweens will be removed from the Tween Manager at the start of the frame.
       * @param target The target to look for. Provide an array to look for multiple targets.

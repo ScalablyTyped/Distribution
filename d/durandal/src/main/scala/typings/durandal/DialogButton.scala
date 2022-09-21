@@ -8,11 +8,11 @@ trait DialogButton extends StObject {
   
   var text: String
   
-  var value: js.Any
+  var value: Any
 }
 object DialogButton {
   
-  inline def apply(text: String, value: js.Any): DialogButton = {
+  inline def apply(text: String, value: Any): DialogButton = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogButton]
   }
@@ -21,6 +21,6 @@ object DialogButton {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

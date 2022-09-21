@@ -6,33 +6,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the chart that raised the deactivated event.
   *
-  * Provides information about the chart that raised the Deactivated event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait ChartDeactivatedEventArgs extends StObject {
   
   /**
+    * Gets the ID of the chart that is deactivated.
     *
-    * Gets the id of the chart that is deactivated.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var chartId: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var `type`: ChartDeactivated
   
   /**
+    * Gets the ID of the worksheet in which the chart is deactivated.
     *
-    * Gets the id of the worksheet in which the chart is deactivated.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var worksheetId: String

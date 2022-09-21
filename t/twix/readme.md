@@ -10,10 +10,10 @@ Twix.js allows you to work with date ranges
 | ------------------ | :-------------: |
 | Full name          | twix |
 | Keywords           | twix, date, date range |
-| # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 580946 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 55673.666666666664 |
+| # stars            | 377.0 |
 
 ## Links
 - [Homepage](http://icambron.github.io/twix.js/)

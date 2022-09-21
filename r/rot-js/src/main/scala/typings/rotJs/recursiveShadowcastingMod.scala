@@ -9,7 +9,7 @@ object recursiveShadowcastingMod {
   
   @JSImport("rot-js/lib/fov/recursive-shadowcasting", JSImport.Default)
   @js.native
-  class default () extends RecursiveShadowcasting
+  open class default () extends RecursiveShadowcasting
   
   @js.native
   trait RecursiveShadowcasting

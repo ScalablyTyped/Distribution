@@ -21,7 +21,7 @@ trait PBRMetallicRoughnessMaterial
     * Base texture of the metallic workflow. It contains both the baseColor information in RGB as
     * well as opacity information in the alpha channel.
     */
-  var baseTexture: BaseTexture = js.native
+  var baseTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Specifies the metallic scalar value of the material.
@@ -33,7 +33,7 @@ trait PBRMetallicRoughnessMaterial
     * Texture containing both the metallic value in the B channel and the
     * roughness value in the G channel to keep better precision.
     */
-  var metallicRoughnessTexture: BaseTexture = js.native
+  var metallicRoughnessTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Specifies the roughness scalar value of the material.

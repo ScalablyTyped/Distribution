@@ -20,7 +20,7 @@ object mapevents {
     */
   @JSGlobal("H.mapevents.Behavior")
   @js.native
-  class Behavior protected ()
+  open class Behavior protected ()
     extends StObject
        with typings.heremaps.H.mapevents.Behavior {
     /**
@@ -68,7 +68,7 @@ object mapevents {
     */
   @JSGlobal("H.mapevents.ContextMenuEvent")
   @js.native
-  class ContextMenuEvent protected ()
+  open class ContextMenuEvent protected ()
     extends StObject
        with typings.heremaps.H.mapevents.ContextMenuEvent {
     /**
@@ -92,7 +92,7 @@ object mapevents {
     ) = this()
     
     /* CompleteClass */
-    var currentTarget: js.Any = js.native
+    var currentTarget: Any = js.native
     
     /* CompleteClass */
     var defaultPrevented: Boolean = js.native
@@ -113,7 +113,7 @@ object mapevents {
     override def stopPropagation(): Unit = js.native
     
     /* CompleteClass */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native
@@ -139,7 +139,7 @@ object mapevents {
     */
   @JSGlobal("H.mapevents.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends StObject
        with typings.heremaps.H.mapevents.Event {
     /**
@@ -178,7 +178,7 @@ object mapevents {
     var currentPointer: typings.heremaps.H.mapevents.Pointer = js.native
     
     /* CompleteClass */
-    var currentTarget: js.Any = js.native
+    var currentTarget: Any = js.native
     
     /* CompleteClass */
     var defaultPrevented: Boolean = js.native
@@ -202,7 +202,7 @@ object mapevents {
     override def stopPropagation(): Unit = js.native
     
     /* CompleteClass */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /* CompleteClass */
     var targetPointers: js.Array[typings.heremaps.H.mapevents.Pointer] = js.native
@@ -218,7 +218,7 @@ object mapevents {
     */
   @JSGlobal("H.mapevents.MapEvents")
   @js.native
-  class MapEvents protected ()
+  open class MapEvents protected ()
     extends StObject
        with typings.heremaps.H.mapevents.MapEvents {
     /**
@@ -240,7 +240,7 @@ object mapevents {
     */
   @JSGlobal("H.mapevents.Pointer")
   @js.native
-  class Pointer protected ()
+  open class Pointer protected ()
     extends StObject
        with typings.heremaps.H.mapevents.Pointer {
     /**
@@ -327,7 +327,7 @@ object mapevents {
     */
   @JSGlobal("H.mapevents.WheelEvent")
   @js.native
-  class WheelEvent protected ()
+  open class WheelEvent protected ()
     extends StObject
        with typings.heremaps.H.mapevents.WheelEvent {
     /**
@@ -354,7 +354,7 @@ object mapevents {
     ) = this()
     
     /* CompleteClass */
-    var currentTarget: js.Any = js.native
+    var currentTarget: Any = js.native
     
     /* CompleteClass */
     var defaultPrevented: Boolean = js.native
@@ -378,7 +378,7 @@ object mapevents {
     override def stopPropagation(): Unit = js.native
     
     /* CompleteClass */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native

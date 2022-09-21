@@ -1,9 +1,5 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,27 +14,17 @@ trait ParamsResourceAccountsClientsList
   var accountId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Requested page size. The server may return fewer clients than requested.
-    * If unspecified, the server will pick an appropriate default.
+    * Requested page size. The server may return fewer clients than requested. If unspecified, the server will pick an appropriate default.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A token identifying a page of results the server should return.
-    * Typically, this is the value of ListClientsResponse.nextPageToken
-    * returned from the previous call to the accounts.clients.list method.
+    * A token identifying a page of results the server should return. Typically, this is the value of ListClientsResponse.nextPageToken returned from the previous call to the accounts.clients.list method.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional unique identifier (from the standpoint of an Ad Exchange sponsor
-    * buyer partner) of the client to return. If specified, at most one client
-    * will be returned in the response.
+    * Optional unique identifier (from the standpoint of an Ad Exchange sponsor buyer partner) of the client to return. If specified, at most one client will be returned in the response.
     */
   var partnerClientId: js.UndefOr[String] = js.undefined
 }
@@ -54,10 +40,6 @@ object ParamsResourceAccountsClientsList {
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

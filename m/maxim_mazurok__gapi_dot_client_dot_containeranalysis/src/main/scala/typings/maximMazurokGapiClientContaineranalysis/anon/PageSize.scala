@@ -22,7 +22,7 @@ trait PageSize extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Required. The filter expression. */
+  /** The filter expression. */
   var filter: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -31,13 +31,13 @@ trait PageSize extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The number of scan configs to return in the list. */
+  /** Number of notes to return in the list. Must be positive. Max allowed page size is 1000. If not specified, page size defaults to 20. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /** Token to provide to skip to a particular spot in the list. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the project to list scan configurations for in the form of `projects/[PROJECT_ID]`. */
+  /** Required. The name of the project to list notes for in the form of `projects/[PROJECT_ID]`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.igTemplating")
 @js.native
-class igTemplating protected ()
+open class igTemplating protected ()
   extends StObject
      with typings.igniteUi.Infragistics.igTemplating {
   def this(regExp: IgTemplatingRegExp) = this()

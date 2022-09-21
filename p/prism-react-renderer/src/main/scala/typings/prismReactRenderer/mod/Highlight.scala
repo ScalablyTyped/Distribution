@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait Highlight
-  extends Component[HighlightProps, js.Object, js.Any] {
+  extends Component[HighlightProps, js.Object, Any] {
   
   def getLineProps(lineInputProps: LineInputProps): LineOutputProps = js.native
   

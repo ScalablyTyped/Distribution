@@ -6,26 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ReturnStatement")
 @js.native
-class ReturnStatement protected ()
-  extends typings.angularCompiler.compilerMod.ReturnStatement {
-  def this(value: typings.angularCompiler.outputAstMod.Expression) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.Expression,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.Expression,
-    sourceSpan: Null,
-    leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
-  ) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.Expression,
-    sourceSpan: Unit,
-    leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
-  ) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.Expression,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
-  ) = this()
+open class ReturnStatement protected () extends Statement {
+  def this(value: Expression) = this()
+  def this(value: Expression, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Expression, sourceSpan: Null, leadingComments: js.Array[LeadingComment_]) = this()
+  def this(value: Expression, sourceSpan: Unit, leadingComments: js.Array[LeadingComment_]) = this()
+  def this(value: Expression, sourceSpan: ParseSourceSpan, leadingComments: js.Array[LeadingComment_]) = this()
+  
+  var value: Expression = js.native
 }

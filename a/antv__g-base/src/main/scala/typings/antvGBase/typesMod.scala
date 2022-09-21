@@ -146,7 +146,7 @@ object typesMod {
     
     var _paused: js.UndefOr[Boolean] = js.undefined
     
-    var fromAttrs: StringDictionary[js.Any]
+    var fromAttrs: StringDictionary[Any]
     
     var id: String
     
@@ -156,17 +156,17 @@ object typesMod {
     
     var startTime: Double
     
-    var toAttrs: StringDictionary[js.Any]
+    var toAttrs: StringDictionary[Any]
   }
   object Animation {
     
     inline def apply(
       duration: Double,
-      fromAttrs: StringDictionary[js.Any],
+      fromAttrs: StringDictionary[Any],
       id: String,
       pathFormatted: Boolean,
       startTime: Double,
-      toAttrs: StringDictionary[js.Any]
+      toAttrs: StringDictionary[Any]
     ): Animation = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], fromAttrs = fromAttrs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pathFormatted = pathFormatted.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], toAttrs = toAttrs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Animation]
@@ -174,7 +174,7 @@ object typesMod {
     
     extension [Self <: Animation](x: Self) {
       
-      inline def setFromAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "fromAttrs", value.asInstanceOf[js.Any])
+      inline def setFromAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "fromAttrs", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -186,7 +186,7 @@ object typesMod {
       
       inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      inline def setToAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "toAttrs", value.asInstanceOf[js.Any])
+      inline def setToAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "toAttrs", value.asInstanceOf[js.Any])
       
       inline def set_pauseTime(value: Double): Self = StObject.set(x, "_pauseTime", value.asInstanceOf[js.Any])
       
@@ -256,7 +256,7 @@ object typesMod {
   
   trait CanvasCfg
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * 是否可监听
@@ -506,7 +506,7 @@ object typesMod {
     inline def `zoom-out`: typings.antvGBase.antvGBaseStrings.`zoom-out` = "zoom-out".asInstanceOf[typings.antvGBase.antvGBaseStrings.`zoom-out`]
   }
   
-  type ElementAttrs = StringDictionary[js.Any]
+  type ElementAttrs = StringDictionary[Any]
   
   trait ElementCfg extends StObject {
     
@@ -561,15 +561,15 @@ object typesMod {
     }
   }
   
-  type ElementFilterFn = js.Function1[/* IElement */ js.Any, Boolean]
+  type ElementFilterFn = js.Function1[/* IElement */ Any, Boolean]
   
-  type GroupCfg = StringDictionary[js.Any]
+  type GroupCfg = StringDictionary[Any]
   
   type H = js.Tuple2[h_ | typings.antvGBase.antvGBaseStrings.H, Double]
   
   type L = js.Tuple3[l_ | typings.antvGBase.antvGBaseStrings.L, Double, Double]
   
-  type LooseObject = StringDictionary[js.Any]
+  type LooseObject = StringDictionary[Any]
   
   type M = js.Tuple3[m_ | typings.antvGBase.antvGBaseStrings.M, Double, Double]
   
@@ -629,7 +629,7 @@ object typesMod {
   
   trait ShapeAttrs
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /** 填充颜色 */
     var fill: js.UndefOr[ColorType] = js.undefined
@@ -770,7 +770,7 @@ object typesMod {
       
       inline def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
       
-      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value*))
       
       inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
@@ -792,13 +792,13 @@ object typesMod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: js.Object*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: js.Object*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setPoints(value: js.Array[js.Object]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
       inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      inline def setPointsVarargs(value: js.Object*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: js.Object*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
@@ -859,7 +859,7 @@ object typesMod {
   trait ShapeCfg
     extends StObject
        with ElementCfg
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * 图形的属性

@@ -8,7 +8,7 @@ object rectangleMod {
   
   @JSImport("@uifabric/utilities/lib/Rectangle", "Rectangle")
   @js.native
-  class Rectangle () extends StObject {
+  open class Rectangle () extends StObject {
     def this(left: Double) = this()
     def this(left: Double, right: Double) = this()
     def this(left: Unit, right: Double) = this()

@@ -23,7 +23,7 @@ object clientTransactionMod {
       loggerCategory: String
     ) = this()
     
-    /* private */ var _request: js.Any = js.native
+    /* private */ var _request: Any = js.native
     
     /**
       * A 408 to non-INVITE will always arrive too late to be useful ([3]),
@@ -58,7 +58,7 @@ object clientTransactionMod {
     
     @JSImport("sip.js/lib/core/transactions/client-transaction", "ClientTransaction.makeId")
     @js.native
-    def makeId: js.Any = js.native
-    inline def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
+    def makeId: Any = js.native
+    inline def makeId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
   }
 }

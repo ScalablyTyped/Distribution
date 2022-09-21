@@ -7,19 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DBInstance extends StObject {
   
   /**
-    * Specifies the allocated storage size specified in gibibytes.
+    * Indicates whether engine-native audit fields are included in the database activity stream.
+    */
+  var ActivityStreamEngineNativeAuditFieldsIncluded: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The name of the Amazon Kinesis data stream used for the database activity stream.
+    */
+  var ActivityStreamKinesisStreamName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Web Services KMS key identifier used for encrypting messages in the database activity stream. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
+    */
+  var ActivityStreamKmsKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The mode of the database activity stream. Database events such as a change or access generate an activity stream event. RDS for Oracle always handles these events asynchronously.
+    */
+  var ActivityStreamMode: js.UndefOr[typings.awsSdk.rdsMod.ActivityStreamMode] = js.undefined
+  
+  /**
+    * The status of the policy state of the activity stream.
+    */
+  var ActivityStreamPolicyStatus: js.UndefOr[typings.awsSdk.rdsMod.ActivityStreamPolicyStatus] = js.undefined
+  
+  /**
+    * The status of the database activity stream.
+    */
+  var ActivityStreamStatus: js.UndefOr[typings.awsSdk.rdsMod.ActivityStreamStatus] = js.undefined
+  
+  /**
+    * Specifies the allocated storage size specified in gibibytes (GiB).
     */
   var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
-    *  The AWS Identity and Access Management (IAM) roles associated with the DB instance. 
+    * The Amazon Web Services Identity and Access Management (IAM) roles associated with the DB instance.
     */
   var AssociatedRoles: js.UndefOr[DBInstanceRoles] = js.undefined
   
   /**
-    * Indicates that minor version patches are applied automatically.
+    * A value that indicates that minor version patches are applied automatically.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The time when a stopped DB instance is restarted automatically.
+    */
+  var AutomaticRestartTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The automation mode of the RDS Custom DB instance: full or all paused. If full, the DB instance automates monitoring and instance recovery. If all paused, the instance pauses automation for the duration set by --resume-full-automation-mode-minutes.
+    */
+  var AutomationMode: js.UndefOr[typings.awsSdk.rdsMod.AutomationMode] = js.undefined
   
   /**
     * Specifies the name of the Availability Zone the DB instance is located in.
@@ -27,9 +67,19 @@ trait DBInstance extends StObject {
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) of the recovery point in Amazon Web Services Backup.
+    */
+  var AwsBackupRecoveryPointArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * Specifies the number of days for which automatic DB snapshots are retained.
     */
   var BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * Specifies where automated backups and manual snapshots are stored: Amazon Web Services Outposts or the Amazon Web Services Region.
+    */
+  var BackupTarget: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the CA certificate for this DB instance.
@@ -47,6 +97,16 @@ trait DBInstance extends StObject {
   var CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The instance profile associated with the underlying Amazon EC2 instance of an RDS Custom DB instance. The instance profile must meet the following requirements:   The profile must exist in your account.   The profile must have an IAM role that Amazon EC2 has permissions to assume.   The instance profile name and the associated IAM role name must start with the prefix AWSRDSCustom.   For the list of permissions required for the IAM role, see  Configure IAM and your VPC in the Amazon RDS User Guide.
+    */
+  var CustomIamInstanceProfile: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies whether a customer-owned IP address (CoIP) is enabled for an RDS on Outposts DB instance. A CoIP provides local or external connectivity to resources in your Outpost subnets through your on-premises network. For some use cases, a CoIP can provide lower latency for connections to the DB instance from outside of its virtual private cloud (VPC) on your local network. For more information about RDS on Outposts, see Working with Amazon RDS on Amazon Web Services Outposts in the Amazon RDS User Guide. For more information about CoIPs, see Customer-owned IP addresses in the Amazon Web Services Outposts User Guide.
+    */
+  var CustomerOwnedIpEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
     */
   var DBClusterIdentifier: js.UndefOr[String] = js.undefined
@@ -55,6 +115,11 @@ trait DBInstance extends StObject {
     * The Amazon Resource Name (ARN) for the DB instance.
     */
   var DBInstanceArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The list of replicated automated backups associated with the DB instance.
+    */
+  var DBInstanceAutomatedBackupsReplications: js.UndefOr[DBInstanceAutomatedBackupsReplicationList] = js.undefined
   
   /**
     * Contains the name of the compute and memory capacity class of the DB instance.
@@ -67,7 +132,7 @@ trait DBInstance extends StObject {
   var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the current state of this database. For information about DB instance statuses, see DB Instance Status in the Amazon RDS User Guide. 
+    * Specifies the current state of this database. For information about DB instance statuses, see Viewing DB instance status in the Amazon RDS User Guide. 
     */
   var DBInstanceStatus: js.UndefOr[String] = js.undefined
   
@@ -82,7 +147,7 @@ trait DBInstance extends StObject {
   var DBParameterGroups: js.UndefOr[DBParameterGroupStatusList] = js.undefined
   
   /**
-    *  A list of DB security group elements containing DBSecurityGroup.Name and DBSecurityGroup.Status subelements. 
+    * A list of DB security group elements containing DBSecurityGroup.Name and DBSecurityGroup.Status subelements.
     */
   var DBSecurityGroups: js.UndefOr[DBSecurityGroupMembershipList] = js.undefined
   
@@ -97,12 +162,12 @@ trait DBInstance extends StObject {
   var DbInstancePort: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The AWS Region-unique, immutable identifier for the DB instance. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB instance is accessed.
+    * The Amazon Web Services Region-unique, immutable identifier for the DB instance. This identifier is found in Amazon Web Services CloudTrail log entries whenever the Amazon Web Services KMS key for the DB instance is accessed.
     */
   var DbiResourceId: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates if the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. For more information, see  Deleting a DB Instance. 
+    * Indicates if the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. For more information, see  Deleting a DB Instance.
     */
   var DeletionProtection: js.UndefOr[Boolean] = js.undefined
   
@@ -117,7 +182,7 @@ trait DBInstance extends StObject {
   var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   
   /**
-    * Specifies the connection endpoint.
+    * Specifies the connection endpoint.  The endpoint might not be shown for instances whose status is creating. 
     */
   var Endpoint: js.UndefOr[typings.awsSdk.rdsMod.Endpoint] = js.undefined
   
@@ -137,14 +202,14 @@ trait DBInstance extends StObject {
   var EnhancedMonitoringResourceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false. IAM database authentication can be enabled for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora 5.6 or higher. To enable IAM database authentication for Aurora, see DBCluster Type.  
+    * True if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false. IAM database authentication can be enabled for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora 5.6 or higher. To enable IAM database authentication for Aurora, see DBCluster Type.  
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provides the date and time the DB instance was created.
     */
-  var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
+  var InstanceCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies the Provisioned IOPS (I/O operations per second) value.
@@ -152,17 +217,17 @@ trait DBInstance extends StObject {
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    *  If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB instance. 
+    * If StorageEncrypted is true, the Amazon Web Services KMS key identifier for the encrypted DB instance. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
-  var LatestRestorableTime: js.UndefOr[TStamp] = js.undefined
+  var LatestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * License model information for this DB instance.
+    * License model information for this DB instance. This setting doesn't apply to RDS Custom.
     */
   var LicenseModel: js.UndefOr[String] = js.undefined
   
@@ -177,7 +242,7 @@ trait DBInstance extends StObject {
   var MasterUsername: js.UndefOr[String] = js.undefined
   
   /**
-    * The upper limit to which Amazon RDS can automatically scale the storage of the DB instance.
+    * The upper limit in gibibytes (GiB) to which Amazon RDS can automatically scale the storage of the DB instance.
     */
   var MaxAllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -192,14 +257,19 @@ trait DBInstance extends StObject {
   var MonitoringRoleArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies if the DB instance is a Multi-AZ deployment.
+    * Specifies if the DB instance is a Multi-AZ deployment. This setting doesn't apply to RDS Custom.
     */
   var MultiAZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of the NCHAR character set for the Oracle DB instance. This character set specifies the Unicode encoding for data stored in table columns of type NCHAR, NCLOB, or NVARCHAR2. 
+    * The name of the NCHAR character set for the Oracle DB instance. This character set specifies the Unicode encoding for data stored in table columns of type NCHAR, NCLOB, or NVARCHAR2.
     */
   var NcharCharacterSetName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The network type of the DB instance. Valid values:    IPV4     DUAL    The network type is determined by the DBSubnetGroup specified for the DB instance. A DBSubnetGroup can support only the IPv4 protocol or the IPv4 and the IPv6 protocols (DUAL). For more information, see  Working with a DB instance in a VPC in the Amazon RDS User Guide and  Working with a DB instance in a VPC in the Amazon Aurora User Guide. 
+    */
+  var NetworkType: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the list of option group memberships for this DB instance.
@@ -207,7 +277,7 @@ trait DBInstance extends StObject {
   var OptionGroupMemberships: js.UndefOr[OptionGroupMembershipList] = js.undefined
   
   /**
-    * Specifies that changes to the DB instance are pending. This element is only included when changes are pending. Specific changes are identified by subelements.
+    * A value that specifies that changes to the DB instance are pending. This element is only included when changes are pending. Specific changes are identified by subelements.
     */
   var PendingModifiedValues: js.UndefOr[typings.awsSdk.rdsMod.PendingModifiedValues] = js.undefined
   
@@ -217,17 +287,17 @@ trait DBInstance extends StObject {
   var PerformanceInsightsEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key.
+    * The Amazon Web Services KMS key identifier for encryption of Performance Insights data. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
     */
   var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    * The amount of time, in days, to retain Performance Insights data. Valid values are 7 or 731 (2 years). 
+    * The number of days to retain Performance Insights data. The default is 7 days. The following values are valid:   7    month * 31, where month is a number of months from 1-23   731   For example, the following values are valid:   93 (3 months * 31)   341 (11 months * 31)   589 (19 months * 31)   731  
     */
   var PerformanceInsightsRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    *  Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod. 
+    * Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod.
     */
   var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   
@@ -242,17 +312,17 @@ trait DBInstance extends StObject {
   var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
   
   /**
-    * A value that specifies the order in which an Aurora Replica is promoted to the primary instance after a failure of the existing primary instance. For more information, see  Fault Tolerance for an Aurora DB Cluster in the Amazon Aurora User Guide. 
+    * A value that specifies the order in which an Aurora Replica is promoted to the primary instance after a failure of the existing primary instance. For more information, see  Fault Tolerance for an Aurora DB Cluster in the Amazon Aurora User Guide.
     */
   var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Specifies the accessibility options for the DB instance. When the DB instance is publicly accessible, its DNS endpoint resolves to the private IP address from within the DB instance's VPC, and to the public IP address from outside of the DB instance's VPC. Access to the DB instance is ultimately controlled by the security group it uses, and that public access is not permitted if the security group assigned to the DB instance doesn't permit it. When the DB instance isn't publicly accessible, it is an internal DB instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
+    * Specifies the accessibility options for the DB instance. When the DB cluster is publicly accessible, its Domain Name System (DNS) endpoint resolves to the private IP address from within the DB cluster's virtual private cloud (VPC). It resolves to the public IP address from outside of the DB cluster's VPC. Access to the DB cluster is ultimately controlled by the security group it uses. That public access isn't permitted if the security group assigned to the DB cluster doesn't permit it. When the DB instance isn't publicly accessible, it is an internal DB instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
     */
   var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Contains one or more identifiers of Aurora DB clusters to which the RDS DB instance is replicated as a read replica. For example, when you create an Aurora read replica of an RDS MySQL DB instance, the Aurora MySQL DB cluster for the Aurora read replica is shown. This output does not contain information about cross region Aurora read replicas.  Currently, each RDS DB instance can have only one Aurora read replica. 
+    * Contains one or more identifiers of Aurora DB clusters to which the RDS DB instance is replicated as a read replica. For example, when you create an Aurora read replica of an RDS for MySQL DB instance, the Aurora MySQL DB cluster for the Aurora read replica is shown. This output doesn't contain information about cross-Region Aurora read replicas.  Currently, each RDS DB instance can have only one Aurora read replica. 
     */
   var ReadReplicaDBClusterIdentifiers: js.UndefOr[ReadReplicaDBClusterIdentifierList] = js.undefined
   
@@ -270,6 +340,11 @@ trait DBInstance extends StObject {
     * The open mode of an Oracle read replica. The default is open-read-only. For more information, see Working with Oracle Read Replicas for Amazon RDS in the Amazon RDS User Guide.  This attribute is only supported in RDS for Oracle. 
     */
   var ReplicaMode: js.UndefOr[typings.awsSdk.rdsMod.ReplicaMode] = js.undefined
+  
+  /**
+    * The number of minutes to pause the automation. When the time period ends, RDS Custom resumes full automation. The minimum value is 60 (default). The maximum value is 1,440.
+    */
+  var ResumeFullAutomationModeTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If present, specifies the name of the secondary Availability Zone for a DB instance with multi-AZ support.
@@ -299,7 +374,7 @@ trait DBInstance extends StObject {
   var TdeCredentialArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The time zone of the DB instance. In most cases, the Timezone element is empty. Timezone content appears only for Microsoft SQL Server DB instances that were created with a time zone specified. 
+    * The time zone of the DB instance. In most cases, the Timezone element is empty. Timezone content appears only for Microsoft SQL Server DB instances that were created with a time zone specified.
     */
   var Timezone: js.UndefOr[String] = js.undefined
   
@@ -317,6 +392,30 @@ object DBInstance {
   
   extension [Self <: DBInstance](x: Self) {
     
+    inline def setActivityStreamEngineNativeAuditFieldsIncluded(value: BooleanOptional): Self = StObject.set(x, "ActivityStreamEngineNativeAuditFieldsIncluded", value.asInstanceOf[js.Any])
+    
+    inline def setActivityStreamEngineNativeAuditFieldsIncludedUndefined: Self = StObject.set(x, "ActivityStreamEngineNativeAuditFieldsIncluded", js.undefined)
+    
+    inline def setActivityStreamKinesisStreamName(value: String): Self = StObject.set(x, "ActivityStreamKinesisStreamName", value.asInstanceOf[js.Any])
+    
+    inline def setActivityStreamKinesisStreamNameUndefined: Self = StObject.set(x, "ActivityStreamKinesisStreamName", js.undefined)
+    
+    inline def setActivityStreamKmsKeyId(value: String): Self = StObject.set(x, "ActivityStreamKmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setActivityStreamKmsKeyIdUndefined: Self = StObject.set(x, "ActivityStreamKmsKeyId", js.undefined)
+    
+    inline def setActivityStreamMode(value: ActivityStreamMode): Self = StObject.set(x, "ActivityStreamMode", value.asInstanceOf[js.Any])
+    
+    inline def setActivityStreamModeUndefined: Self = StObject.set(x, "ActivityStreamMode", js.undefined)
+    
+    inline def setActivityStreamPolicyStatus(value: ActivityStreamPolicyStatus): Self = StObject.set(x, "ActivityStreamPolicyStatus", value.asInstanceOf[js.Any])
+    
+    inline def setActivityStreamPolicyStatusUndefined: Self = StObject.set(x, "ActivityStreamPolicyStatus", js.undefined)
+    
+    inline def setActivityStreamStatus(value: ActivityStreamStatus): Self = StObject.set(x, "ActivityStreamStatus", value.asInstanceOf[js.Any])
+    
+    inline def setActivityStreamStatusUndefined: Self = StObject.set(x, "ActivityStreamStatus", js.undefined)
+    
     inline def setAllocatedStorage(value: Integer): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     
     inline def setAllocatedStorageUndefined: Self = StObject.set(x, "AllocatedStorage", js.undefined)
@@ -325,19 +424,35 @@ object DBInstance {
     
     inline def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
     
-    inline def setAssociatedRolesVarargs(value: DBInstanceRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
+    inline def setAssociatedRolesVarargs(value: DBInstanceRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value*))
     
     inline def setAutoMinorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     
     inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
     
+    inline def setAutomaticRestartTime(value: js.Date): Self = StObject.set(x, "AutomaticRestartTime", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticRestartTimeUndefined: Self = StObject.set(x, "AutomaticRestartTime", js.undefined)
+    
+    inline def setAutomationMode(value: AutomationMode): Self = StObject.set(x, "AutomationMode", value.asInstanceOf[js.Any])
+    
+    inline def setAutomationModeUndefined: Self = StObject.set(x, "AutomationMode", js.undefined)
+    
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
+    inline def setAwsBackupRecoveryPointArn(value: String): Self = StObject.set(x, "AwsBackupRecoveryPointArn", value.asInstanceOf[js.Any])
+    
+    inline def setAwsBackupRecoveryPointArnUndefined: Self = StObject.set(x, "AwsBackupRecoveryPointArn", js.undefined)
+    
     inline def setBackupRetentionPeriod(value: Integer): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
     
     inline def setBackupRetentionPeriodUndefined: Self = StObject.set(x, "BackupRetentionPeriod", js.undefined)
+    
+    inline def setBackupTarget(value: String): Self = StObject.set(x, "BackupTarget", value.asInstanceOf[js.Any])
+    
+    inline def setBackupTargetUndefined: Self = StObject.set(x, "BackupTarget", js.undefined)
     
     inline def setCACertificateIdentifier(value: String): Self = StObject.set(x, "CACertificateIdentifier", value.asInstanceOf[js.Any])
     
@@ -351,6 +466,14 @@ object DBInstance {
     
     inline def setCopyTagsToSnapshotUndefined: Self = StObject.set(x, "CopyTagsToSnapshot", js.undefined)
     
+    inline def setCustomIamInstanceProfile(value: String): Self = StObject.set(x, "CustomIamInstanceProfile", value.asInstanceOf[js.Any])
+    
+    inline def setCustomIamInstanceProfileUndefined: Self = StObject.set(x, "CustomIamInstanceProfile", js.undefined)
+    
+    inline def setCustomerOwnedIpEnabled(value: BooleanOptional): Self = StObject.set(x, "CustomerOwnedIpEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerOwnedIpEnabledUndefined: Self = StObject.set(x, "CustomerOwnedIpEnabled", js.undefined)
+    
     inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     inline def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
@@ -358,6 +481,12 @@ object DBInstance {
     inline def setDBInstanceArn(value: String): Self = StObject.set(x, "DBInstanceArn", value.asInstanceOf[js.Any])
     
     inline def setDBInstanceArnUndefined: Self = StObject.set(x, "DBInstanceArn", js.undefined)
+    
+    inline def setDBInstanceAutomatedBackupsReplications(value: DBInstanceAutomatedBackupsReplicationList): Self = StObject.set(x, "DBInstanceAutomatedBackupsReplications", value.asInstanceOf[js.Any])
+    
+    inline def setDBInstanceAutomatedBackupsReplicationsUndefined: Self = StObject.set(x, "DBInstanceAutomatedBackupsReplications", js.undefined)
+    
+    inline def setDBInstanceAutomatedBackupsReplicationsVarargs(value: DBInstanceAutomatedBackupsReplication*): Self = StObject.set(x, "DBInstanceAutomatedBackupsReplications", js.Array(value*))
     
     inline def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     
@@ -379,13 +508,13 @@ object DBInstance {
     
     inline def setDBParameterGroupsUndefined: Self = StObject.set(x, "DBParameterGroups", js.undefined)
     
-    inline def setDBParameterGroupsVarargs(value: DBParameterGroupStatus*): Self = StObject.set(x, "DBParameterGroups", js.Array(value :_*))
+    inline def setDBParameterGroupsVarargs(value: DBParameterGroupStatus*): Self = StObject.set(x, "DBParameterGroups", js.Array(value*))
     
     inline def setDBSecurityGroups(value: DBSecurityGroupMembershipList): Self = StObject.set(x, "DBSecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setDBSecurityGroupsUndefined: Self = StObject.set(x, "DBSecurityGroups", js.undefined)
     
-    inline def setDBSecurityGroupsVarargs(value: DBSecurityGroupMembership*): Self = StObject.set(x, "DBSecurityGroups", js.Array(value :_*))
+    inline def setDBSecurityGroupsVarargs(value: DBSecurityGroupMembership*): Self = StObject.set(x, "DBSecurityGroups", js.Array(value*))
     
     inline def setDBSubnetGroup(value: DBSubnetGroup): Self = StObject.set(x, "DBSubnetGroup", value.asInstanceOf[js.Any])
     
@@ -407,13 +536,13 @@ object DBInstance {
     
     inline def setDomainMembershipsUndefined: Self = StObject.set(x, "DomainMemberships", js.undefined)
     
-    inline def setDomainMembershipsVarargs(value: DomainMembership*): Self = StObject.set(x, "DomainMemberships", js.Array(value :_*))
+    inline def setDomainMembershipsVarargs(value: DomainMembership*): Self = StObject.set(x, "DomainMemberships", js.Array(value*))
     
     inline def setEnabledCloudwatchLogsExports(value: LogTypeList): Self = StObject.set(x, "EnabledCloudwatchLogsExports", value.asInstanceOf[js.Any])
     
     inline def setEnabledCloudwatchLogsExportsUndefined: Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.undefined)
     
-    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value :_*))
+    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value*))
     
     inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
@@ -435,7 +564,7 @@ object DBInstance {
     
     inline def setIAMDatabaseAuthenticationEnabledUndefined: Self = StObject.set(x, "IAMDatabaseAuthenticationEnabled", js.undefined)
     
-    inline def setInstanceCreateTime(value: TStamp): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
+    inline def setInstanceCreateTime(value: js.Date): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
     
     inline def setInstanceCreateTimeUndefined: Self = StObject.set(x, "InstanceCreateTime", js.undefined)
     
@@ -447,7 +576,7 @@ object DBInstance {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    inline def setLatestRestorableTime(value: TStamp): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setLatestRestorableTime(value: js.Date): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setLatestRestorableTimeUndefined: Self = StObject.set(x, "LatestRestorableTime", js.undefined)
     
@@ -483,11 +612,15 @@ object DBInstance {
     
     inline def setNcharCharacterSetNameUndefined: Self = StObject.set(x, "NcharCharacterSetName", js.undefined)
     
+    inline def setNetworkType(value: String): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
+    
     inline def setOptionGroupMemberships(value: OptionGroupMembershipList): Self = StObject.set(x, "OptionGroupMemberships", value.asInstanceOf[js.Any])
     
     inline def setOptionGroupMembershipsUndefined: Self = StObject.set(x, "OptionGroupMemberships", js.undefined)
     
-    inline def setOptionGroupMembershipsVarargs(value: OptionGroupMembership*): Self = StObject.set(x, "OptionGroupMemberships", js.Array(value :_*))
+    inline def setOptionGroupMembershipsVarargs(value: OptionGroupMembership*): Self = StObject.set(x, "OptionGroupMemberships", js.Array(value*))
     
     inline def setPendingModifiedValues(value: PendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
     
@@ -517,7 +650,7 @@ object DBInstance {
     
     inline def setProcessorFeaturesUndefined: Self = StObject.set(x, "ProcessorFeatures", js.undefined)
     
-    inline def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value :_*))
+    inline def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value*))
     
     inline def setPromotionTier(value: IntegerOptional): Self = StObject.set(x, "PromotionTier", value.asInstanceOf[js.Any])
     
@@ -531,13 +664,13 @@ object DBInstance {
     
     inline def setReadReplicaDBClusterIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaDBClusterIdentifiers", js.undefined)
     
-    inline def setReadReplicaDBClusterIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaDBClusterIdentifiers", js.Array(value :_*))
+    inline def setReadReplicaDBClusterIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaDBClusterIdentifiers", js.Array(value*))
     
     inline def setReadReplicaDBInstanceIdentifiers(value: ReadReplicaDBInstanceIdentifierList): Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", value.asInstanceOf[js.Any])
     
     inline def setReadReplicaDBInstanceIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", js.undefined)
     
-    inline def setReadReplicaDBInstanceIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", js.Array(value :_*))
+    inline def setReadReplicaDBInstanceIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", js.Array(value*))
     
     inline def setReadReplicaSourceDBInstanceIdentifier(value: String): Self = StObject.set(x, "ReadReplicaSourceDBInstanceIdentifier", value.asInstanceOf[js.Any])
     
@@ -547,6 +680,10 @@ object DBInstance {
     
     inline def setReplicaModeUndefined: Self = StObject.set(x, "ReplicaMode", js.undefined)
     
+    inline def setResumeFullAutomationModeTime(value: js.Date): Self = StObject.set(x, "ResumeFullAutomationModeTime", value.asInstanceOf[js.Any])
+    
+    inline def setResumeFullAutomationModeTimeUndefined: Self = StObject.set(x, "ResumeFullAutomationModeTime", js.undefined)
+    
     inline def setSecondaryAvailabilityZone(value: String): Self = StObject.set(x, "SecondaryAvailabilityZone", value.asInstanceOf[js.Any])
     
     inline def setSecondaryAvailabilityZoneUndefined: Self = StObject.set(x, "SecondaryAvailabilityZone", js.undefined)
@@ -555,7 +692,7 @@ object DBInstance {
     
     inline def setStatusInfosUndefined: Self = StObject.set(x, "StatusInfos", js.undefined)
     
-    inline def setStatusInfosVarargs(value: DBInstanceStatusInfo*): Self = StObject.set(x, "StatusInfos", js.Array(value :_*))
+    inline def setStatusInfosVarargs(value: DBInstanceStatusInfo*): Self = StObject.set(x, "StatusInfos", js.Array(value*))
     
     inline def setStorageEncrypted(value: Boolean): Self = StObject.set(x, "StorageEncrypted", value.asInstanceOf[js.Any])
     
@@ -569,7 +706,7 @@ object DBInstance {
     
     inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
     
     inline def setTdeCredentialArn(value: String): Self = StObject.set(x, "TdeCredentialArn", value.asInstanceOf[js.Any])
     
@@ -583,6 +720,6 @@ object DBInstance {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

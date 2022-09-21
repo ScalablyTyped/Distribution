@@ -1,7 +1,5 @@
 package typings.reactDateRange
 
-import typings.reactDateRange.mod.DateRangeIndex
-import typings.reactDateRange.mod.LanguageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,80 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactDateRangeStrings {
   
   @js.native
-  sealed trait `Last 30 Days`
-    extends StObject
-       with DateRangeIndex
-  inline def `Last 30 Days`: `Last 30 Days` = ("Last 30 Days").asInstanceOf[`Last 30 Days`]
+  sealed trait backwards extends StObject
+  inline def backwards: backwards = "backwards".asInstanceOf[backwards]
   
   @js.native
-  sealed trait `Last 7 Days`
-    extends StObject
-       with DateRangeIndex
-  inline def `Last 7 Days`: `Last 7 Days` = ("Last 7 Days").asInstanceOf[`Last 7 Days`]
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait Today
-    extends StObject
-       with DateRangeIndex
-  inline def Today: Today = "Today".asInstanceOf[Today]
+  sealed trait dateRange extends StObject
+  inline def dateRange: dateRange = "dateRange".asInstanceOf[dateRange]
   
   @js.native
-  sealed trait Yesterday
-    extends StObject
-       with DateRangeIndex
-  inline def Yesterday: Yesterday = "Yesterday".asInstanceOf[Yesterday]
+  sealed trait forwards extends StObject
+  inline def forwards: forwards = "forwards".asInstanceOf[forwards]
   
   @js.native
-  sealed trait cn
-    extends StObject
-       with LanguageType
-  inline def cn: cn = "cn".asInstanceOf[cn]
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait de
-    extends StObject
-       with LanguageType
-  inline def de: de = "de".asInstanceOf[de]
+  sealed trait monthOffset extends StObject
+  inline def monthOffset: monthOffset = "monthOffset".asInstanceOf[monthOffset]
   
   @js.native
-  sealed trait es
-    extends StObject
-       with LanguageType
-  inline def es: es = "es".asInstanceOf[es]
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait fr
-    extends StObject
-       with LanguageType
-  inline def fr: fr = "fr".asInstanceOf[fr]
+  sealed trait setMonth extends StObject
+  inline def setMonth: setMonth = "setMonth".asInstanceOf[setMonth]
   
   @js.native
-  sealed trait it
-    extends StObject
-       with LanguageType
-  inline def it: it = "it".asInstanceOf[it]
+  sealed trait setYear extends StObject
+  inline def setYear: setYear = "setYear".asInstanceOf[setYear]
   
   @js.native
-  sealed trait jp
-    extends StObject
-       with LanguageType
-  inline def jp: jp = "jp".asInstanceOf[jp]
-  
-  @js.native
-  sealed trait ko
-    extends StObject
-       with LanguageType
-  inline def ko: ko = "ko".asInstanceOf[ko]
-  
-  @js.native
-  sealed trait ru
-    extends StObject
-       with LanguageType
-  inline def ru: ru = "ru".asInstanceOf[ru]
-  
-  @js.native
-  sealed trait tr
-    extends StObject
-       with LanguageType
-  inline def tr: tr = "tr".asInstanceOf[tr]
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CpuTemperatureData extends StObject {
   
+  var chipset: js.UndefOr[Double] = js.undefined
+  
   var cores: js.Array[Double]
   
   var main: Double
   
   var max: Double
+  
+  var socket: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object CpuTemperatureData {
   
@@ -21,12 +25,22 @@ object CpuTemperatureData {
   
   extension [Self <: CpuTemperatureData](x: Self) {
     
+    inline def setChipset(value: Double): Self = StObject.set(x, "chipset", value.asInstanceOf[js.Any])
+    
+    inline def setChipsetUndefined: Self = StObject.set(x, "chipset", js.undefined)
+    
     inline def setCores(value: js.Array[Double]): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
     
-    inline def setCoresVarargs(value: Double*): Self = StObject.set(x, "cores", js.Array(value :_*))
+    inline def setCoresVarargs(value: Double*): Self = StObject.set(x, "cores", js.Array(value*))
     
     inline def setMain(value: Double): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setSocket(value: js.Array[Double]): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    
+    inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+    
+    inline def setSocketVarargs(value: Double*): Self = StObject.set(x, "socket", js.Array(value*))
   }
 }

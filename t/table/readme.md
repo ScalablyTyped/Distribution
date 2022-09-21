@@ -1,7 +1,7 @@
 
 # Scala.js typings for table
 
-Typings are for version 6.0
+Typings are for version 6.8.0
 
 ## Library description:
 Formats data into a string table.
@@ -10,10 +10,10 @@ Formats data into a string table.
 | ------------------ | :-------------: |
 | Full name          | table |
 | Keywords           | ascii, text, table, align, ansi |
-| # releases         | 22 |
-| # dependents       | 587 |
-| # downloads        | 545711126 |
-| # stars            | 22 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 8.092546366666667E7 |
+| # stars            | 740.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/table#readme)
@@ -24,7 +24,7 @@ Formats data into a string table.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

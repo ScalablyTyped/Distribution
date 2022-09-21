@@ -25,7 +25,7 @@ object RegionPostalCodeArea {
     
     inline def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
     
-    inline def setPostalCodesVarargs(value: RegionPostalCodeAreaPostalCodeRange*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
+    inline def setPostalCodesVarargs(value: RegionPostalCodeAreaPostalCodeRange*): Self = StObject.set(x, "postalCodes", js.Array(value*))
     
     inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     

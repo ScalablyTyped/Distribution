@@ -33,6 +33,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onSheetRemove
   - typings.webix.webixStrings.onSheetRename
   - typings.webix.webixStrings.onStyleSet
+  - typings.webix.webixStrings.onUIEditStart
+  - typings.webix.webixStrings.onUIEditStop
   - typings.webix.webixStrings.onViewInit
   - typings.webix.webixStrings.onViewShow
 */
@@ -94,6 +96,10 @@ object spreadsheetEventName {
   inline def onSheetRename: typings.webix.webixStrings.onSheetRename = "onSheetRename".asInstanceOf[typings.webix.webixStrings.onSheetRename]
   
   inline def onStyleSet: typings.webix.webixStrings.onStyleSet = "onStyleSet".asInstanceOf[typings.webix.webixStrings.onStyleSet]
+  
+  inline def onUIEditStart: typings.webix.webixStrings.onUIEditStart = "onUIEditStart".asInstanceOf[typings.webix.webixStrings.onUIEditStart]
+  
+  inline def onUIEditStop: typings.webix.webixStrings.onUIEditStop = "onUIEditStop".asInstanceOf[typings.webix.webixStrings.onUIEditStop]
   
   inline def onViewInit: typings.webix.webixStrings.onViewInit = "onViewInit".asInstanceOf[typings.webix.webixStrings.onViewInit]
   

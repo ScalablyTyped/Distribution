@@ -159,12 +159,12 @@ object Handsontable {
       * Returns TD element for given row, col if it is rendered on screen.
       * Returns null if the TD is not rendered on screen (probably because that part of table is not visible).
       */
-    def getCell(row: Double, col: Double): js.Any = js.native
+    def getCell(row: Double, col: Double): Any = js.native
     
     /**
       * Return cell properties for given row, col coordinates.
       */
-    def getCellMeta(row: Double, col: Double): js.Any = js.native
+    def getCellMeta(row: Double, col: Double): Any = js.native
     
     /**
       * Returns rederer type/
@@ -174,7 +174,7 @@ object Handsontable {
     /**
       * Returns array of col headers (if they are enabled). If param col given, return header at given col as string.
       */
-    def getColHeader(col: Double): js.Any = js.native
+    def getColHeader(col: Double): Any = js.native
     
     /**
       * Return column width.
@@ -184,46 +184,46 @@ object Handsontable {
     /**
       * Get value of selected range. Each column is separated by tab, each row is separated by new line character.
       */
-    def getCopyableData(startRow: Double, startCol: Double, endRow: Double, endCol: Double): js.Any = js.native
+    def getCopyableData(startRow: Double, startCol: Double, endRow: Double, endCol: Double): Any = js.native
     
     /**
       * Return the current data object (the same that was passed by data configuration option or loadData method). Optionally you can provide cell range row, col, row2, col2 to get only a fragment of grid data
       */
-    def getData(): js.Any = js.native
+    def getData(): Any = js.native
     /**
       * Return the current data object (the same that was passed by data configuration option or loadData method). Optionally you can provide cell range row, col, row2, col2 to get only a fragment of grid data
       */
-    def getData(row: Double, col: Double, row2: Double, col2: Double): js.Any = js.native
+    def getData(row: Double, col: Double, row2: Double, col2: Double): Any = js.native
     
     /**
       * Return cell value at row, col. row and col are the visible indexes (note that if columns were reordered or sorted, the current order will be used).
       */
-    def getDataAtCell(row: Double, col: Double): js.Any = js.native
+    def getDataAtCell(row: Double, col: Double): Any = js.native
     
     /**
       * Returns array of column values from the data source. col is the visible index of the column.
       */
-    def getDataAtCol(col: Double): js.Array[js.Any] = js.native
+    def getDataAtCol(col: Double): js.Array[Any] = js.native
     
     /**
       * Given the object property name (e.g. 'first.name'), returns array of column values from the data source.
       */
-    def getDataAtProp(prop: String): js.Array[js.Any] = js.native
+    def getDataAtProp(prop: String): js.Array[Any] = js.native
     
     /**
       * Returns a single row of the data (array or object, depending on what you have). row is the visible index of the row
       */
-    def getDataAtRow(row: Double): js.Any = js.native
+    def getDataAtRow(row: Double): Any = js.native
     
     /**
       * Same as getDataAtCell, except instead of col, you provide name of the object property (e.g. 'first.name').
       */
-    def getDataAtRowProp(row: Double, prop: String): js.Any = js.native
+    def getDataAtRowProp(row: Double, prop: String): Any = js.native
     
     /**
       * Returns array of row headers (if they are enabled). If param row given, return header at given row as string.
       */
-    def getRowHeader(row: Double): js.Any = js.native
+    def getRowHeader(row: Double): Any = js.native
     
     /**
       * Return row height.
@@ -248,17 +248,17 @@ object Handsontable {
     /**
       * Returns array of column values from the data source. col is the index of the row in the data source.
       */
-    def getSourceDataAtCol(col: Double): js.Array[js.Any] = js.native
+    def getSourceDataAtCol(col: Double): js.Array[Any] = js.native
     
     /**
       * Returns a single row of the data (array or object, depending on what you have). row is the index of the row in the data source.
       */
-    def getSourceDataAtRow(row: Double): js.Any = js.native
+    def getSourceDataAtRow(row: Double): Any = js.native
     
     /**
       * Returns value of selected cell.
       */
-    def getValue(): js.Any = js.native
+    def getValue(): Any = js.native
     
     /**
       * Returns information of this table is configured to display column headers.
@@ -303,7 +303,7 @@ object Handsontable {
     /**
       * Reset all cells in the grid to contain data from the data array.
       */
-    def loadData(data: js.Array[js.Any]): Unit = js.native
+    def loadData(data: js.Array[Any]): Unit = js.native
     
     /**
       * Populate cells at position with 2D input array (e.g. [ [1, 2], [3, 4] ]).
@@ -311,12 +311,12 @@ object Handsontable {
       * @param source (default value "populateFromArray") is used to identify this call in the resulting events (beforeChange, afterChange).
       * @param populateMethod (default value "overwrite", possible values "shift_down" and "shift_right") has the same effect as pasteMethod option (see Options page).
       */
-    def populateFromArray(row: Double, col: Double, input: js.Array[js.Any], endRow: Double, endCol: Double): Unit = js.native
-    def populateFromArray(row: Double, col: Double, input: js.Array[js.Any], endRow: Double, endCol: Double, source: String): Unit = js.native
+    def populateFromArray(row: Double, col: Double, input: js.Array[Any], endRow: Double, endCol: Double): Unit = js.native
+    def populateFromArray(row: Double, col: Double, input: js.Array[Any], endRow: Double, endCol: Double, source: String): Unit = js.native
     def populateFromArray(
       row: Double,
       col: Double,
-      input: js.Array[js.Any],
+      input: js.Array[Any],
       endRow: Double,
       endCol: Double,
       source: String,
@@ -325,7 +325,7 @@ object Handsontable {
     def populateFromArray(
       row: Double,
       col: Double,
-      input: js.Array[js.Any],
+      input: js.Array[Any],
       endRow: Double,
       endCol: Double,
       source: Unit,
@@ -366,24 +366,24 @@ object Handsontable {
     /**
       * Set new value to a cell. To change many cells at once, pass an array of changes in format [ [row, col, value], ... ] as the only parameter. col is the index of visible column (note that if columns were reordered, the current order will be used). source is a flag for before/afterChange events. If you pass only array of changes then source could be set as second parameter.
       */
-    def setDataAtCell(changes: js.Array[js.Any]): Unit = js.native
-    def setDataAtCell(changes: js.Array[js.Any], source: String): Unit = js.native
+    def setDataAtCell(changes: js.Array[Any]): Unit = js.native
+    def setDataAtCell(changes: js.Array[Any], source: String): Unit = js.native
     /**
       * Set new value to a cell. To change many cells at once, pass an array of changes in format [ [row, col, value], ... ] as the only parameter. col is the index of visible column (note that if columns were reordered, the current order will be used). source is a flag for before/afterChange events. If you pass only array of changes then source could be set as second parameter.
       */
-    def setDataAtCell(row: Double, col: Double, value: js.Any): Unit = js.native
-    def setDataAtCell(row: Double, col: Double, value: js.Any, source: String): Unit = js.native
+    def setDataAtCell(row: Double, col: Double, value: Any): Unit = js.native
+    def setDataAtCell(row: Double, col: Double, value: Any, source: String): Unit = js.native
     
     /**
       * Same as above, except instead of col, you provide name of the object property (e.g. [0, 'first.name', 'Jennifer']).
       */
-    def setDataAtRowProp(changes: js.Array[js.Any]): Unit = js.native
-    def setDataAtRowProp(changes: js.Array[js.Any], source: String): Unit = js.native
+    def setDataAtRowProp(changes: js.Array[Any]): Unit = js.native
+    def setDataAtRowProp(changes: js.Array[Any], source: String): Unit = js.native
     /**
       * Same as above, except instead of col, you provide name of the object property (e.g. [0, 'first.name', 'Jennifer']).
       */
-    def setDataAtRowProp(row: Double, prop: String, value: js.Any): Unit = js.native
-    def setDataAtRowProp(row: Double, prop: String, value: js.Any, source: String): Unit = js.native
+    def setDataAtRowProp(row: Double, prop: String, value: Any): Unit = js.native
+    def setDataAtRowProp(row: Double, prop: String, value: Any, source: String): Unit = js.native
     
     /**
       * Sorts table content by cell values in given column, using order. column is a zero-based column index. Order of sorting can be either ascending (order = true) or descending (order = false).
@@ -395,12 +395,12 @@ object Handsontable {
     /**
       * Adds/removes data from the column. This function works is modelled after Array.splice. Parameter col is the index of column in which do you want to do splice. Parameter index is the row index at which to start changing the array. If negative, will begin that many elements from the end. Parameter amount, is the number of old array elements to remove. If the amount is 0, no elements are removed. Fourth and further parameters are the elements to add to the array. If you don't specify any elements, spliceCol simply removes elements from the array.
       */
-    def spliceCol(col: Double, index: Double, amount: Double, elements: js.Any*): Unit = js.native
+    def spliceCol(col: Double, index: Double, amount: Double, elements: Any*): Unit = js.native
     
     /**
       * Adds/removes data from the row. This function works is modelled after Array.splice. Parameter row is the index of row in which do you want to do splice. Parameter index is the column index at which to start changing the array. If negative, will begin that many elements from the end. Parameter amount, is the number of old array elements to remove. If the amount is 0, no elements are removed. Fourth and further parameters are the elements to add to the array. If you don't specify any elements, spliceCol simply removes elements from the array.
       */
-    def spliceRow(row: Double, index: Double, amount: Double, elements: js.Any*): Unit = js.native
+    def spliceRow(row: Double, index: Double, amount: Double, elements: Any*): Unit = js.native
     
     /**
       * Undo last edit.
@@ -436,7 +436,7 @@ object Handsontable {
       *   - source is one of the strings: "alter", "empty", "edit", "populateFromArray", "loadData", "autofill", "paste".
       * Note: for performance reasons, the changes array is null for "loadData" source.
       */
-    var afterChange: js.UndefOr[js.Function2[/* changes */ js.Array[js.Any], /* source */ String, Unit]] = js.undefined
+    var afterChange: js.UndefOr[js.Function2[/* changes */ js.Array[Any], /* source */ String, Unit]] = js.undefined
     
     /**
       * Callback is fired after changing column placement.
@@ -630,7 +630,7 @@ object Handsontable {
     var afterValidate: js.UndefOr[
         js.Function5[
           /* isValid */ Boolean, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* row */ Double, 
           /* prop */ String, 
           /* source */ String, 
@@ -647,7 +647,7 @@ object Handsontable {
       * Autocomplete definitions.
       * @see demo/autocomplete.html for examples and definitions.
       */
-    var autoComplete: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var autoComplete: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * If true, pressing ENTER or down arrow in the last row will move to first row in next column.
@@ -682,9 +682,7 @@ object Handsontable {
       *     - To cancel all edit, return false from the callback or set array length to 0 (changes.length = 0).
       *   - source is the name of a source of changes.
       */
-    var beforeChange: js.UndefOr[
-        js.Function2[/* changes */ js.Array[js.Array[js.Any]], /* source */ String, Unit]
-      ] = js.undefined
+    var beforeChange: js.UndefOr[js.Function2[/* changes */ js.Array[js.Array[Any]], /* source */ String, Unit]] = js.undefined
     
     var beforeChangeRender: js.UndefOr[js.Function] = js.undefined
     
@@ -745,13 +743,13 @@ object Handsontable {
       * Callback fired before setting range is ended. Parameters:
       *   - coords is WalkontableCellCoords array
       */
-    var beforeSetRangeEnd: js.UndefOr[js.Function1[/* coords */ js.Array[js.Any], Unit]] = js.undefined
+    var beforeSetRangeEnd: js.UndefOr[js.Function1[/* coords */ js.Array[Any], Unit]] = js.undefined
     
     /**
       * A plugin hook executed before validator function, only if validator function is defined. This can be used to manipulate value of changed cell before it is applied to the validator function. NOTICE: this will not affect values of changes. This will change value ONLY for validation!
       */
     var beforeValidate: js.UndefOr[
-        js.Function4[/* value */ js.Any, /* row */ Double, /* prop */ String, /* source */ String, Unit]
+        js.Function4[/* value */ Any, /* row */ Double, /* prop */ String, /* source */ String, Unit]
       ] = js.undefined
     
     /**
@@ -763,12 +761,12 @@ object Handsontable {
     /**
       * Setting true or false will enable or disable the default column headers (A, B, C). You can also define an array ['One', 'Two', 'Three', ...] or a function to define the headers. If a function is set the index of the column is passed as a parameter.
       */
-    var colHeaders: js.UndefOr[js.Any] = js.undefined
+    var colHeaders: js.UndefOr[Any] = js.undefined
     
     /**
       * Defines column widths in pixels. Accepts number, string (that will be converted to number), array of numbers (if you want to define column width separately for each column) or a function (if you want to set column width dynamically on each render).
       */
-    var colWidths: js.UndefOr[js.Any] = js.undefined
+    var colWidths: js.UndefOr[Any] = js.undefined
     
     /**
       * Turn on Column sorting.
@@ -780,14 +778,14 @@ object Handsontable {
       * @see https://github.com/handsontable/jquery-handsontable/wiki/Options below for more detailed explanation.
       * @see http://handsontable.com/demo/datasources.html for examples
       */
-    var columns: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var columns: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Defines if the right-click context menu should be enabled. Context menu allows to create new row or column at any place in the grid.
       * Possible values: true (to enable basic options), false (to disable completely) or array of any available strings: ["row_above", "row_below", "col_left", "col_right", "remove_row", "remove_col", "undo", "redo", "sep1", "sep2", "sep3"].
       * @see http://handsontable.com/demo/contextmenu.html for examples.
       */
-    var contextMenu: js.UndefOr[js.Any] = js.undefined
+    var contextMenu: js.UndefOr[Any] = js.undefined
     
     /**
       * Maximum number of columns than can be copied to clipboard using CTRL+C.
@@ -817,13 +815,13 @@ object Handsontable {
     /**
       * Initial data source that will be bound to the data grid by reference (editing data grid alters the data source. See Understanding binding as reference.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Defines the structure of a new row when data source is an object.
       * @see http://handsontable.com/demo/datasources.html for examples.
       */
-    var dataSchema: js.UndefOr[js.Any] = js.undefined
+    var dataSchema: js.UndefOr[Any] = js.undefined
     
     /**
       * Setting to true enables the debug mode, currently used to test the correctness of the row and column header fixed positioning on a layer above the master table.
@@ -838,13 +836,13 @@ object Handsontable {
     /**
       * Defines cursor move after ENTER is pressed (SHIFT+ENTER uses negative vector). Can be an object or a function that returns an object. The event argument passed to the function is a jQuery.Event object received after a ENTER key has been pressed. This event object can be used to check whether user pressed ENTER or SHIFT + ENTER.
       */
-    var enterMoves: js.UndefOr[js.Any] = js.undefined
+    var enterMoves: js.UndefOr[Any] = js.undefined
     
     /**
       * Enables the fill handle (drag-down and copy-down) functionality, which shows the small rectangle in bottom right corner of the selected area, that let's you expand values to the adjacent cells.
       * Possible values: true (to enable in all directions), "vertical" or "horizontal" (to enable in one direction), false (to disable completely). Setting to true enables the fillHandle plugin, which,
       */
-    var fillHandle: js.UndefOr[js.Any] = js.undefined
+    var fillHandle: js.UndefOr[Any] = js.undefined
     
     /**
       * Allows to specify the number of columns fixed (aka freezed) on the left side of the table.
@@ -864,7 +862,7 @@ object Handsontable {
     /**
       * Height of the grid. Can be a number or a function that returns a number.
       */
-    var height: js.UndefOr[js.Any] = js.undefined
+    var height: js.UndefOr[Any] = js.undefined
     
     /**
       * CSS class name for cells that did not pass validation.
@@ -884,12 +882,12 @@ object Handsontable {
     /**
       * Turn on Manual column move, if set to a boolean or define initial column order, if set to an array of column indexes.
       */
-    var manualColumnMove: js.UndefOr[js.Any] = js.undefined
+    var manualColumnMove: js.UndefOr[Any] = js.undefined
     
     /**
       * Turn on Manual column resize, if set to a boolean or define initial column resized widths, if set to an array of numbers.
       */
-    var manualColumnResize: js.UndefOr[js.Any] = js.undefined
+    var manualColumnResize: js.UndefOr[Any] = js.undefined
     
     /**
       * Turns on Manual row move, if set to a boolean or define initial row order, if set to an array of row indexes.
@@ -914,7 +912,7 @@ object Handsontable {
     /**
       * Setting to true or array enables the mergeCells plugin, which enables the merging of the cells. (see demo). You can provide the merged cells on the pageload if you feed the mergeCells option with an array.
       */
-    var mergeCells: js.UndefOr[js.Any] = js.undefined
+    var mergeCells: js.UndefOr[Any] = js.undefined
     
     /**
       * Minimum number of columns. At least that many of columns will be created during initialization.
@@ -979,12 +977,12 @@ object Handsontable {
     /**
       * Deprecated! Now event is called beforeChange.
       */
-    var onBeforeChange: js.UndefOr[js.Function2[/* changes */ js.Array[js.Any], /* source */ String, Unit]] = js.undefined
+    var onBeforeChange: js.UndefOr[js.Function2[/* changes */ js.Array[Any], /* source */ String, Unit]] = js.undefined
     
     /**
       * Deprecated! Now event is called afterChange.
       */
-    var onChange: js.UndefOr[js.Function2[/* changes */ js.Array[js.Any], /* source */ String, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* changes */ js.Array[Any], /* source */ String, Unit]] = js.undefined
     
     /**
       * Deprecated! Now event is called afterCopyLimit.
@@ -1047,7 +1045,7 @@ object Handsontable {
     /**
       * When set to an non-empty string, displayed as the cell content for empty cells.
       */
-    var placeholder: js.UndefOr[js.Any] = js.undefined
+    var placeholder: js.UndefOr[Any] = js.undefined
     
     /**
       * CSS class name for cells that have a placeholder in use.
@@ -1062,7 +1060,7 @@ object Handsontable {
     /**
       * Setting true or false will enable or disable the default row headers (1, 2, 3). You can also define an array ['One', 'Two', 'Three', ...] or a function to define the headers. If a function is set the index of the rowis passed as a parameter.
       */
-    var rowHeaders: js.UndefOr[js.Any] = js.undefined
+    var rowHeaders: js.UndefOr[Any] = js.undefined
     
     /**
       * Setting to true enables the search plugin (see demo).
@@ -1087,7 +1085,7 @@ object Handsontable {
     /**
       * Defines cursor move after TAB is pressed (SHIFT+TAB uses negative vector). Can be an object or a function that returns an object. The event argument passed to the function is a jQuery.Event object received after a TAB key has been pressed. This event object can be used to check whether user pressed TAB or SHIFT + TAB.
       */
-    var tabMoves: js.UndefOr[js.Any] = js.undefined
+    var tabMoves: js.UndefOr[Any] = js.undefined
     
     /**
       * If true, undo/redo functionality is enabled.
@@ -1097,7 +1095,7 @@ object Handsontable {
     /**
       * Width of the grid. Can be a number or a function that returns a number.
       */
-    var width: js.UndefOr[js.Any] = js.undefined
+    var width: js.UndefOr[Any] = js.undefined
     
     /**
       * Setting to true word wrapping of the cell text content that does not fit in the fixed column width.
@@ -1117,7 +1115,7 @@ object Handsontable {
       
       inline def setAfterCellMetaResetUndefined: Self = StObject.set(x, "afterCellMetaReset", js.undefined)
       
-      inline def setAfterChange(value: (/* changes */ js.Array[js.Any], /* source */ String) => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction2(value))
+      inline def setAfterChange(value: (/* changes */ js.Array[Any], /* source */ String) => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction2(value))
       
       inline def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
       
@@ -1242,7 +1240,7 @@ object Handsontable {
       inline def setAfterUpdateSettingsUndefined: Self = StObject.set(x, "afterUpdateSettings", js.undefined)
       
       inline def setAfterValidate(
-        value: (/* isValid */ Boolean, /* value */ js.Any, /* row */ Double, /* prop */ String, /* source */ String) => Boolean
+        value: (/* isValid */ Boolean, /* value */ Any, /* row */ Double, /* prop */ String, /* source */ String) => Boolean
       ): Self = StObject.set(x, "afterValidate", js.Any.fromFunction5(value))
       
       inline def setAfterValidateUndefined: Self = StObject.set(x, "afterValidate", js.undefined)
@@ -1251,11 +1249,11 @@ object Handsontable {
       
       inline def setAutoColumnSizeUndefined: Self = StObject.set(x, "autoColumnSize", js.undefined)
       
-      inline def setAutoComplete(value: js.Array[js.Any]): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+      inline def setAutoComplete(value: js.Array[Any]): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
       inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
       
-      inline def setAutoCompleteVarargs(value: js.Any*): Self = StObject.set(x, "autoComplete", js.Array(value :_*))
+      inline def setAutoCompleteVarargs(value: Any*): Self = StObject.set(x, "autoComplete", js.Array(value*))
       
       inline def setAutoWrapCol(value: Boolean): Self = StObject.set(x, "autoWrapCol", value.asInstanceOf[js.Any])
       
@@ -1271,7 +1269,7 @@ object Handsontable {
       
       inline def setBeforeAutofillUndefined: Self = StObject.set(x, "beforeAutofill", js.undefined)
       
-      inline def setBeforeChange(value: (/* changes */ js.Array[js.Array[js.Any]], /* source */ String) => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction2(value))
+      inline def setBeforeChange(value: (/* changes */ js.Array[js.Array[Any]], /* source */ String) => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction2(value))
       
       inline def setBeforeChangeRender(value: js.Function): Self = StObject.set(x, "beforeChangeRender", value.asInstanceOf[js.Any])
       
@@ -1313,13 +1311,13 @@ object Handsontable {
       
       inline def setBeforeSet(value: /* v */ js.Object => Unit): Self = StObject.set(x, "beforeSet", js.Any.fromFunction1(value))
       
-      inline def setBeforeSetRangeEnd(value: /* coords */ js.Array[js.Any] => Unit): Self = StObject.set(x, "beforeSetRangeEnd", js.Any.fromFunction1(value))
+      inline def setBeforeSetRangeEnd(value: /* coords */ js.Array[Any] => Unit): Self = StObject.set(x, "beforeSetRangeEnd", js.Any.fromFunction1(value))
       
       inline def setBeforeSetRangeEndUndefined: Self = StObject.set(x, "beforeSetRangeEnd", js.undefined)
       
       inline def setBeforeSetUndefined: Self = StObject.set(x, "beforeSet", js.undefined)
       
-      inline def setBeforeValidate(value: (/* value */ js.Any, /* row */ Double, /* prop */ String, /* source */ String) => Unit): Self = StObject.set(x, "beforeValidate", js.Any.fromFunction4(value))
+      inline def setBeforeValidate(value: (/* value */ Any, /* row */ Double, /* prop */ String, /* source */ String) => Unit): Self = StObject.set(x, "beforeValidate", js.Any.fromFunction4(value))
       
       inline def setBeforeValidateUndefined: Self = StObject.set(x, "beforeValidate", js.undefined)
       
@@ -1327,11 +1325,11 @@ object Handsontable {
       
       inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      inline def setColHeaders(value: js.Any): Self = StObject.set(x, "colHeaders", value.asInstanceOf[js.Any])
+      inline def setColHeaders(value: Any): Self = StObject.set(x, "colHeaders", value.asInstanceOf[js.Any])
       
       inline def setColHeadersUndefined: Self = StObject.set(x, "colHeaders", js.undefined)
       
-      inline def setColWidths(value: js.Any): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
+      inline def setColWidths(value: Any): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
       inline def setColWidthsUndefined: Self = StObject.set(x, "colWidths", js.undefined)
       
@@ -1339,13 +1337,13 @@ object Handsontable {
       
       inline def setColumnSortingUndefined: Self = StObject.set(x, "columnSorting", js.undefined)
       
-      inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Any*): Self = StObject.set(x, "columns", js.Array(value*))
       
-      inline def setContextMenu(value: js.Any): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+      inline def setContextMenu(value: Any): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
@@ -1369,9 +1367,9 @@ object Handsontable {
       
       inline def setCurrentRowClassNameUndefined: Self = StObject.set(x, "currentRowClassName", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataSchema(value: js.Any): Self = StObject.set(x, "dataSchema", value.asInstanceOf[js.Any])
+      inline def setDataSchema(value: Any): Self = StObject.set(x, "dataSchema", value.asInstanceOf[js.Any])
       
       inline def setDataSchemaUndefined: Self = StObject.set(x, "dataSchema", js.undefined)
       
@@ -1385,11 +1383,11 @@ object Handsontable {
       
       inline def setEnterBeginsEditingUndefined: Self = StObject.set(x, "enterBeginsEditing", js.undefined)
       
-      inline def setEnterMoves(value: js.Any): Self = StObject.set(x, "enterMoves", value.asInstanceOf[js.Any])
+      inline def setEnterMoves(value: Any): Self = StObject.set(x, "enterMoves", value.asInstanceOf[js.Any])
       
       inline def setEnterMovesUndefined: Self = StObject.set(x, "enterMoves", js.undefined)
       
-      inline def setFillHandle(value: js.Any): Self = StObject.set(x, "fillHandle", value.asInstanceOf[js.Any])
+      inline def setFillHandle(value: Any): Self = StObject.set(x, "fillHandle", value.asInstanceOf[js.Any])
       
       inline def setFillHandleUndefined: Self = StObject.set(x, "fillHandle", js.undefined)
       
@@ -1405,7 +1403,7 @@ object Handsontable {
       
       inline def setFragmentSelectionUndefined: Self = StObject.set(x, "fragmentSelection", js.undefined)
       
-      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
@@ -1421,11 +1419,11 @@ object Handsontable {
       
       inline def setIsEmptyRowUndefined: Self = StObject.set(x, "isEmptyRow", js.undefined)
       
-      inline def setManualColumnMove(value: js.Any): Self = StObject.set(x, "manualColumnMove", value.asInstanceOf[js.Any])
+      inline def setManualColumnMove(value: Any): Self = StObject.set(x, "manualColumnMove", value.asInstanceOf[js.Any])
       
       inline def setManualColumnMoveUndefined: Self = StObject.set(x, "manualColumnMove", js.undefined)
       
-      inline def setManualColumnResize(value: js.Any): Self = StObject.set(x, "manualColumnResize", value.asInstanceOf[js.Any])
+      inline def setManualColumnResize(value: Any): Self = StObject.set(x, "manualColumnResize", value.asInstanceOf[js.Any])
       
       inline def setManualColumnResizeUndefined: Self = StObject.set(x, "manualColumnResize", js.undefined)
       
@@ -1445,7 +1443,7 @@ object Handsontable {
       
       inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
       
-      inline def setMergeCells(value: js.Any): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
+      inline def setMergeCells(value: Any): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
       
       inline def setMergeCellsUndefined: Self = StObject.set(x, "mergeCells", js.undefined)
       
@@ -1497,11 +1495,11 @@ object Handsontable {
       
       inline def setObserveDOMVisibilityUndefined: Self = StObject.set(x, "observeDOMVisibility", js.undefined)
       
-      inline def setOnBeforeChange(value: (/* changes */ js.Array[js.Any], /* source */ String) => Unit): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction2(value))
+      inline def setOnBeforeChange(value: (/* changes */ js.Array[Any], /* source */ String) => Unit): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction2(value))
       
       inline def setOnBeforeChangeUndefined: Self = StObject.set(x, "onBeforeChange", js.undefined)
       
-      inline def setOnChange(value: (/* changes */ js.Array[js.Any], /* source */ String) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* changes */ js.Array[Any], /* source */ String) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1539,7 +1537,7 @@ object Handsontable {
       
       inline def setPersistentStateUndefined: Self = StObject.set(x, "persistentState", js.undefined)
       
-      inline def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderCellClassName(value: String): Self = StObject.set(x, "placeholderCellClassName", value.asInstanceOf[js.Any])
       
@@ -1551,7 +1549,7 @@ object Handsontable {
       
       inline def setReadOnlyCellClassNameUndefined: Self = StObject.set(x, "readOnlyCellClassName", js.undefined)
       
-      inline def setRowHeaders(value: js.Any): Self = StObject.set(x, "rowHeaders", value.asInstanceOf[js.Any])
+      inline def setRowHeaders(value: Any): Self = StObject.set(x, "rowHeaders", value.asInstanceOf[js.Any])
       
       inline def setRowHeadersUndefined: Self = StObject.set(x, "rowHeaders", js.undefined)
       
@@ -1571,7 +1569,7 @@ object Handsontable {
       
       inline def setStretchHUndefined: Self = StObject.set(x, "stretchH", js.undefined)
       
-      inline def setTabMoves(value: js.Any): Self = StObject.set(x, "tabMoves", value.asInstanceOf[js.Any])
+      inline def setTabMoves(value: Any): Self = StObject.set(x, "tabMoves", value.asInstanceOf[js.Any])
       
       inline def setTabMovesUndefined: Self = StObject.set(x, "tabMoves", js.undefined)
       
@@ -1579,7 +1577,7 @@ object Handsontable {
       
       inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
       
-      inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       

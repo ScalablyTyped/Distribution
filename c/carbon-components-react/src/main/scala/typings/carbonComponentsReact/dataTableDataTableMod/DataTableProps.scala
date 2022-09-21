@@ -3,13 +3,14 @@ package typings.carbonComponentsReact.dataTableDataTableMod
 import typings.carbonComponentsReact.tableMod.TableCarbonProps
 import typings.carbonComponentsReact.typingsSharedMod.InternationalProps
 import typings.react.mod.ReactNode
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DataTableProps[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */]
   extends StObject
-     with InternationalProps[DataTableTranslationKey]
+     with InternationalProps[DataTableTranslationKey, Record[String, Any]]
      with TableCarbonProps {
   
   var filterRows: js.UndefOr[
@@ -31,9 +32,7 @@ trait DataTableProps[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[St
   
   var rows: js.Array[R]
   
-  var sortRow: js.UndefOr[
-    js.Function3[/* cellA */ js.Any, /* cellB */ js.Any, /* data */ SortRowData, Double]
-  ] = js.undefined
+  var sortRow: js.UndefOr[js.Function3[/* cellA */ Any, /* cellB */ Any, /* data */ SortRowData, Double]] = js.undefined
   
   var stickyHeader: js.UndefOr[Boolean] = js.undefined
 }
@@ -56,7 +55,7 @@ object DataTableProps {
     
     inline def setHeaders(value: js.Array[H]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: H*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: H*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
@@ -72,9 +71,9 @@ object DataTableProps {
     
     inline def setRows(value: js.Array[R]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: R*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: R*): Self = StObject.set(x, "rows", js.Array(value*))
     
-    inline def setSortRow(value: (/* cellA */ js.Any, /* cellB */ js.Any, /* data */ SortRowData) => Double): Self = StObject.set(x, "sortRow", js.Any.fromFunction3(value))
+    inline def setSortRow(value: (/* cellA */ Any, /* cellB */ Any, /* data */ SortRowData) => Double): Self = StObject.set(x, "sortRow", js.Any.fromFunction3(value))
     
     inline def setSortRowUndefined: Self = StObject.set(x, "sortRow", js.undefined)
     

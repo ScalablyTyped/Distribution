@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "LoyaltyEventDeleteReward")
 @js.native
-class LoyaltyEventDeleteReward () extends StObject {
+open class LoyaltyEventDeleteReward () extends StObject {
   
   /**
     * The ID of the `loyalty program`.

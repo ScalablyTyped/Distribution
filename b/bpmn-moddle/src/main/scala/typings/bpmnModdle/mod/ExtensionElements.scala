@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExtensionElements
   extends StObject
      with TypeDerived
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var extensionAttributeDefinition: ExtensionAttributeDefinition
   
@@ -37,6 +37,6 @@ object ExtensionElements {
     
     inline def setValues(value: js.Array[BaseElement]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: BaseElement*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: BaseElement*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.XDocuments")
 @js.native
-/* private */ class XDocuments ()
+/* private */ open class XDocuments ()
   extends StObject
      with typings.activexInfopath.InfoPath.XDocuments

@@ -47,12 +47,12 @@ object QueryResult {
     
     inline def setResults(value: js.Array[Entity]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: Entity*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Entity*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setRetrievedEntities(value: js.Array[Entity]): Self = StObject.set(x, "retrievedEntities", value.asInstanceOf[js.Any])
     
     inline def setRetrievedEntitiesUndefined: Self = StObject.set(x, "retrievedEntities", js.undefined)
     
-    inline def setRetrievedEntitiesVarargs(value: Entity*): Self = StObject.set(x, "retrievedEntities", js.Array(value :_*))
+    inline def setRetrievedEntitiesVarargs(value: Entity*): Self = StObject.set(x, "retrievedEntities", js.Array(value*))
   }
 }

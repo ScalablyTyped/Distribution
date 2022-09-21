@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,14 +40,14 @@ trait ASPxClientCalendar
     * Deselects the specified date within the calendar.
     * @param date A date-time value that specifies the date to deselect.
     */
-  def DeselectDate(date: Date): Unit
+  def DeselectDate(date: js.Date): Unit
   
   /**
     * Deselects the specified range of dates within the calendar.
     * @param start A date-time value that specifies the range's first date.
     * @param end A date-time value that specifies the range's last date.
     */
-  def DeselectRange(start: Date, end: Date): Unit
+  def DeselectRange(start: js.Date, end: js.Date): Unit
   
   /**
     * Occurs on the client side after the callback server-side processing has been completed.
@@ -58,33 +57,33 @@ trait ASPxClientCalendar
   /**
     * Gets the maximum date on the calendar.
     */
-  def GetMaxDate(): Date
+  def GetMaxDate(): js.Date
   
   /**
     * Gets the minimum date on the calendar.
     */
-  def GetMinDate(): Date
+  def GetMinDate(): js.Date
   
   /**
     * Returns the calendar's selected date.
     */
-  def GetSelectedDate(): Date
+  def GetSelectedDate(): js.Date
   
   /**
     * Returns a list of dates which are selected within the calendar.
     */
-  def GetSelectedDates(): js.Array[Date]
+  def GetSelectedDates(): js.Array[js.Date]
   
   /**
     * Gets the date that determines the month and year that are currently displayed in the calendar.
     */
-  def GetVisibleDate(): Date
+  def GetVisibleDate(): js.Date
   
   /**
     * Tests whether the specified date is selected. true if the specified date is selected; otherwise, false.
     * @param date A date-time value that specifies the date to test.
     */
-  def IsDateSelected(date: Date): Boolean
+  def IsDateSelected(date: js.Date): Boolean
   
   /**
     * Occurs on the client-side when an end-user presses a key while the editor has focus.
@@ -105,17 +104,17 @@ trait ASPxClientCalendar
     * Selects the specified date within the calendar.
     * @param date A date-time value that specifies the selected date.
     */
-  def SelectDate(date: Date): Unit
+  def SelectDate(date: js.Date): Unit
   
   /**
     * Selects the specified range of dates within the calendar.
     * @param start A date-time value that specifies the range's first date.
     * @param end A date-time value that specifies the range's last date.
     */
-  def SelectRange(start: Date, end: Date): Unit
+  def SelectRange(start: js.Date, end: js.Date): Unit
   
   /**
-    * Fires on the client side after the selected date has been changed within the calendar.
+    * Occurs on the client after a user changes the selected date in the calendar.
     */
   var SelectionChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCalendar]]
   
@@ -123,28 +122,28 @@ trait ASPxClientCalendar
     * Sets the maximum date of the calendar.
     * @param date A DateTime object representing the maximum date.
     */
-  def SetMaxDate(date: Date): Unit
+  def SetMaxDate(date: js.Date): Unit
   
   /**
     * Sets the minimum date of the calendar.
     * @param date A DateTime object representing the minimum date.
     */
-  def SetMinDate(date: Date): Unit
+  def SetMinDate(date: js.Date): Unit
   
   /**
     * Sets the calendar's selected date.
     * @param date A date object that specifies the calendar's selected date.
     */
-  def SetSelectedDate(date: Date): Unit
+  def SetSelectedDate(date: js.Date): Unit
   
   /**
     * Sets the date that specifies the month and year to be displayed in the calendar.
     * @param date The date that specifies calendar's visible month and year.
     */
-  def SetVisibleDate(date: Date): Unit
+  def SetVisibleDate(date: js.Date): Unit
   
   /**
-    * Occurs on the client side when the month displayed within the calendar is changed.
+    * Occurs on the client when a user changes the month in the calendar.
     */
   var VisibleMonthChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCalendar]]
 }
@@ -157,8 +156,8 @@ object ASPxClientCalendar {
     CellClick: ASPxClientEvent[ASPxClientCalendarCellClickEventHandler[ASPxClientCalendar]],
     ClearSelection: () => Unit,
     CustomDisabledDate: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientCalendar]],
-    DeselectDate: Date => Unit,
-    DeselectRange: (Date, Date) => Unit,
+    DeselectDate: js.Date => Unit,
+    DeselectRange: (js.Date, js.Date) => Unit,
     EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientCalendar]],
     Focus: () => Unit,
     GetCaption: () => String,
@@ -166,29 +165,29 @@ object ASPxClientCalendar {
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
-    GetMainElement: () => js.Any,
-    GetMaxDate: () => Date,
-    GetMinDate: () => Date,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetMaxDate: () => js.Date,
+    GetMinDate: () => js.Date,
+    GetParentControl: () => Any,
     GetReadOnly: () => Boolean,
-    GetSelectedDate: () => Date,
-    GetSelectedDates: () => js.Array[Date],
-    GetValue: () => js.Any,
+    GetSelectedDate: () => js.Date,
+    GetSelectedDates: () => js.Array[js.Date],
+    GetValue: () => Any,
     GetVisible: () => Boolean,
-    GetVisibleDate: () => Date,
+    GetVisibleDate: () => js.Date,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
     InCallback: () => Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
-    IsDateSelected: Date => Boolean,
+    IsDateSelected: js.Date => Boolean,
     KeyDown: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientCalendar]],
     KeyPress: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientCalendar]],
     KeyUp: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientCalendar]],
     LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
-    SelectDate: Date => Unit,
-    SelectRange: (Date, Date) => Unit,
+    SelectDate: js.Date => Unit,
+    SelectRange: (js.Date, js.Date) => Unit,
     SelectionChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCalendar]],
     SendMessageToAssistiveTechnology: String => Unit,
     SetCaption: String => Unit,
@@ -197,13 +196,13 @@ object ASPxClientCalendar {
     SetErrorText: String => Unit,
     SetHeight: Double => Unit,
     SetIsValid: Boolean => Unit,
-    SetMaxDate: Date => Unit,
-    SetMinDate: Date => Unit,
+    SetMaxDate: js.Date => Unit,
+    SetMinDate: js.Date => Unit,
     SetReadOnly: Boolean => Unit,
-    SetSelectedDate: Date => Unit,
-    SetValue: js.Any => Unit,
+    SetSelectedDate: js.Date => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
-    SetVisibleDate: Date => Unit,
+    SetVisibleDate: js.Date => Unit,
     SetWidth: Double => Unit,
     Validate: () => Unit,
     Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]],
@@ -227,23 +226,23 @@ object ASPxClientCalendar {
     
     inline def setCustomDisabledDate(value: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientCalendar]]): Self = StObject.set(x, "CustomDisabledDate", value.asInstanceOf[js.Any])
     
-    inline def setDeselectDate(value: Date => Unit): Self = StObject.set(x, "DeselectDate", js.Any.fromFunction1(value))
+    inline def setDeselectDate(value: js.Date => Unit): Self = StObject.set(x, "DeselectDate", js.Any.fromFunction1(value))
     
-    inline def setDeselectRange(value: (Date, Date) => Unit): Self = StObject.set(x, "DeselectRange", js.Any.fromFunction2(value))
+    inline def setDeselectRange(value: (js.Date, js.Date) => Unit): Self = StObject.set(x, "DeselectRange", js.Any.fromFunction2(value))
     
     inline def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientCalendar]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
-    inline def setGetMaxDate(value: () => Date): Self = StObject.set(x, "GetMaxDate", js.Any.fromFunction0(value))
+    inline def setGetMaxDate(value: () => js.Date): Self = StObject.set(x, "GetMaxDate", js.Any.fromFunction0(value))
     
-    inline def setGetMinDate(value: () => Date): Self = StObject.set(x, "GetMinDate", js.Any.fromFunction0(value))
+    inline def setGetMinDate(value: () => js.Date): Self = StObject.set(x, "GetMinDate", js.Any.fromFunction0(value))
     
-    inline def setGetSelectedDate(value: () => Date): Self = StObject.set(x, "GetSelectedDate", js.Any.fromFunction0(value))
+    inline def setGetSelectedDate(value: () => js.Date): Self = StObject.set(x, "GetSelectedDate", js.Any.fromFunction0(value))
     
-    inline def setGetSelectedDates(value: () => js.Array[Date]): Self = StObject.set(x, "GetSelectedDates", js.Any.fromFunction0(value))
+    inline def setGetSelectedDates(value: () => js.Array[js.Date]): Self = StObject.set(x, "GetSelectedDates", js.Any.fromFunction0(value))
     
-    inline def setGetVisibleDate(value: () => Date): Self = StObject.set(x, "GetVisibleDate", js.Any.fromFunction0(value))
+    inline def setGetVisibleDate(value: () => js.Date): Self = StObject.set(x, "GetVisibleDate", js.Any.fromFunction0(value))
     
-    inline def setIsDateSelected(value: Date => Boolean): Self = StObject.set(x, "IsDateSelected", js.Any.fromFunction1(value))
+    inline def setIsDateSelected(value: js.Date => Boolean): Self = StObject.set(x, "IsDateSelected", js.Any.fromFunction1(value))
     
     inline def setKeyDown(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientCalendar]]): Self = StObject.set(x, "KeyDown", value.asInstanceOf[js.Any])
     
@@ -251,19 +250,19 @@ object ASPxClientCalendar {
     
     inline def setKeyUp(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientCalendar]]): Self = StObject.set(x, "KeyUp", value.asInstanceOf[js.Any])
     
-    inline def setSelectDate(value: Date => Unit): Self = StObject.set(x, "SelectDate", js.Any.fromFunction1(value))
+    inline def setSelectDate(value: js.Date => Unit): Self = StObject.set(x, "SelectDate", js.Any.fromFunction1(value))
     
-    inline def setSelectRange(value: (Date, Date) => Unit): Self = StObject.set(x, "SelectRange", js.Any.fromFunction2(value))
+    inline def setSelectRange(value: (js.Date, js.Date) => Unit): Self = StObject.set(x, "SelectRange", js.Any.fromFunction2(value))
     
     inline def setSelectionChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCalendar]]): Self = StObject.set(x, "SelectionChanged", value.asInstanceOf[js.Any])
     
-    inline def setSetMaxDate(value: Date => Unit): Self = StObject.set(x, "SetMaxDate", js.Any.fromFunction1(value))
+    inline def setSetMaxDate(value: js.Date => Unit): Self = StObject.set(x, "SetMaxDate", js.Any.fromFunction1(value))
     
-    inline def setSetMinDate(value: Date => Unit): Self = StObject.set(x, "SetMinDate", js.Any.fromFunction1(value))
+    inline def setSetMinDate(value: js.Date => Unit): Self = StObject.set(x, "SetMinDate", js.Any.fromFunction1(value))
     
-    inline def setSetSelectedDate(value: Date => Unit): Self = StObject.set(x, "SetSelectedDate", js.Any.fromFunction1(value))
+    inline def setSetSelectedDate(value: js.Date => Unit): Self = StObject.set(x, "SetSelectedDate", js.Any.fromFunction1(value))
     
-    inline def setSetVisibleDate(value: Date => Unit): Self = StObject.set(x, "SetVisibleDate", js.Any.fromFunction1(value))
+    inline def setSetVisibleDate(value: js.Date => Unit): Self = StObject.set(x, "SetVisibleDate", js.Any.fromFunction1(value))
     
     inline def setVisibleMonthChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCalendar]]): Self = StObject.set(x, "VisibleMonthChanged", value.asInstanceOf[js.Any])
   }

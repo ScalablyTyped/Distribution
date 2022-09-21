@@ -46,9 +46,9 @@ trait XmlNamedNodeMap
     * @param name The name of the attribute.
     * @return The attribute with the specified namespace and name. This method returns Null if the attribute node is not in this collection.
     */
-  def getNamedItemNS(namespaceUri: js.Any, name: String): IXmlNode = js.native
+  def getNamedItemNS(namespaceUri: Any, name: String): IXmlNode = js.native
   
-  def indexOf(value: IXmlNode, extra: js.Any*): Index = js.native
+  def indexOf(value: IXmlNode, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: IXmlNode): Double = js.native
@@ -73,7 +73,7 @@ trait XmlNamedNodeMap
     * @param name The name of the attribute.
     * @return The node removed from the collection. This method returns Null if the named node is not an attribute.
     */
-  def removeNamedItemNS(namespaceUri: js.Any, name: String): IXmlNode = js.native
+  def removeNamedItemNS(namespaceUri: Any, name: String): IXmlNode = js.native
   
   /**
     * Adds the specified node to the collection.

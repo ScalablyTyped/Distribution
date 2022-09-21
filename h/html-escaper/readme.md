@@ -11,9 +11,9 @@ fast and safe way to escape and unescape &<>'" chars
 | Full name          | html-escaper |
 | Keywords           | html, escape, encode, unescape, decode, entities |
 | # releases         | 4 |
-| # dependents       | 68 |
-| # downloads        | 367766050 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.0414519E7 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/WebReflection/html-escaper)

@@ -52,7 +52,7 @@ trait AndroidModel extends StObject {
   /** Tags for this dimension. Examples: "default", "preview", "deprecated". */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** URL of a thumbnail image (photo) of the device. e.g. https://lh3.googleusercontent.com/90WcauuJiCYABEl8U0lcZeuS5STUbf2yW... */
+  /** URL of a thumbnail image (photo) of the device. */
   var thumbnailUrl: js.UndefOr[String] = js.undefined
 }
 object AndroidModel {
@@ -112,19 +112,19 @@ object AndroidModel {
     
     inline def setSupportedAbisUndefined: Self = StObject.set(x, "supportedAbis", js.undefined)
     
-    inline def setSupportedAbisVarargs(value: String*): Self = StObject.set(x, "supportedAbis", js.Array(value :_*))
+    inline def setSupportedAbisVarargs(value: String*): Self = StObject.set(x, "supportedAbis", js.Array(value*))
     
     inline def setSupportedVersionIds(value: js.Array[String]): Self = StObject.set(x, "supportedVersionIds", value.asInstanceOf[js.Any])
     
     inline def setSupportedVersionIdsUndefined: Self = StObject.set(x, "supportedVersionIds", js.undefined)
     
-    inline def setSupportedVersionIdsVarargs(value: String*): Self = StObject.set(x, "supportedVersionIds", js.Array(value :_*))
+    inline def setSupportedVersionIdsVarargs(value: String*): Self = StObject.set(x, "supportedVersionIds", js.Array(value*))
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     

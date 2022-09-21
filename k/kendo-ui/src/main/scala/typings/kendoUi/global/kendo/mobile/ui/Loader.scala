@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.ui.Loader")
 @js.native
-class Loader protected ()
+open class Loader protected ()
   extends StObject
      with typings.kendoUi.kendo.mobile.ui.Loader {
   def this(element: Element) = this()

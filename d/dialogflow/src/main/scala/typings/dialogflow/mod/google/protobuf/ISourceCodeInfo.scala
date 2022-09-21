@@ -26,6 +26,6 @@ object ISourceCodeInfo {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setLocationVarargs(value: ILocation*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: ILocation*): Self = StObject.set(x, "location", js.Array(value*))
   }
 }

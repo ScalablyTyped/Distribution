@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientPreviewClickEventArgs")
 @js.native
-class ASPxClientPreviewClickEventArgs protected ()
+open class ASPxClientPreviewClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientPreviewClickEventArgs {
   /**

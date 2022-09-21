@@ -9,7 +9,7 @@ trait Inject_ extends StObject {
   /**
     * A [DI token](guide/glossary#di-token) that maps to the dependency to be injected.
     */
-  var token: js.Any
+  var token: Any
 }
 object Inject_ {
   
@@ -19,6 +19,6 @@ object Inject_ {
   
   extension [Self <: Inject_](x: Self) {
     
-    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

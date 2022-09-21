@@ -31,6 +31,6 @@ object DescribeSecurityGroupReferencesRequest {
     
     inline def setGroupId(value: GroupIds): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    inline def setGroupIdVarargs(value: SecurityGroupId*): Self = StObject.set(x, "GroupId", js.Array(value :_*))
+    inline def setGroupIdVarargs(value: SecurityGroupId*): Self = StObject.set(x, "GroupId", js.Array(value*))
   }
 }

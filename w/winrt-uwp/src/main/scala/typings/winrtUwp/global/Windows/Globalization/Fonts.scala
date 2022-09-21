@@ -41,7 +41,7 @@ object Fonts {
   /** Supplies a set of font recommendations for a given language or script for various usage cases. */
   @JSGlobal("Windows.Globalization.Fonts.LanguageFontGroup")
   @js.native
-  class LanguageFontGroup protected ()
+  open class LanguageFontGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.Fonts.LanguageFontGroup {
     /**

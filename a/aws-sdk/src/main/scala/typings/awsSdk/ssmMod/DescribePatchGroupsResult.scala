@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribePatchGroupsResult extends StObject {
   
   /**
-    * Each entry in the array contains: PatchGroup: string (between 1 and 256 characters, Regex: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$) PatchBaselineIdentity: A PatchBaselineIdentity element. 
+    * Each entry in the array contains:    PatchGroup: string (between 1 and 256 characters. Regex: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$)     PatchBaselineIdentity: A PatchBaselineIdentity element.  
     */
   var Mappings: js.UndefOr[PatchGroupPatchBaselineMappingList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribePatchGroupsResult {
     
     inline def setMappingsUndefined: Self = StObject.set(x, "Mappings", js.undefined)
     
-    inline def setMappingsVarargs(value: PatchGroupPatchBaselineMapping*): Self = StObject.set(x, "Mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: PatchGroupPatchBaselineMapping*): Self = StObject.set(x, "Mappings", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

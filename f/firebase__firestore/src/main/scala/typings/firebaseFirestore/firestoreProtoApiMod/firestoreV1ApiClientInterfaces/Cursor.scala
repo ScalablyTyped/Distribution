@@ -1,21 +1,32 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Cursor extends js.Object {
+trait Cursor extends StObject {
+  
   var before: js.UndefOr[Boolean] = js.undefined
+  
   var values: js.UndefOr[js.Array[Value]] = js.undefined
 }
-
 object Cursor {
-  @scala.inline
-  def apply(before: js.UndefOr[Boolean] = js.undefined, values: js.Array[Value] = null): Cursor = {
+  
+  inline def apply(): Cursor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.get.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cursor]
   }
+  
+  extension [Self <: Cursor](x: Self) {
+    
+    inline def setBefore(value: Boolean): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

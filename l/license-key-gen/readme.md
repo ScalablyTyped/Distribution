@@ -10,10 +10,10 @@ Generates and Validates license
 | ------------------ | :-------------: |
 | Full name          | license-key-gen |
 | Keywords           | node, nodejs, license, licensing, license-generator, chai, mocha |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 3864 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 749.0 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/arunahk/license-key-gen#readme)

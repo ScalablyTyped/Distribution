@@ -74,7 +74,7 @@ object mod {
       
       inline def setServeUndefined: Self = StObject.set(x, "serve", js.undefined)
       
-      inline def setServeVarargs(value: String*): Self = StObject.set(x, "serve", js.Array(value :_*))
+      inline def setServeVarargs(value: String*): Self = StObject.set(x, "serve", js.Array(value*))
       
       inline def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for random
 
-Typings are for version 2.1
+Typings are for version 3.0.6
 
 ## Library description:
 Seedable random number generator supporting many common distributions.
@@ -10,10 +10,10 @@ Seedable random number generator supporting many common distributions.
 | ------------------ | :-------------: |
 | Full name          | random |
 | Keywords           | random, number, generator, rng, prng, stats, d3-random, seedrandom, distribution, pseudorandom, uniform, normal, gaussian, lognormal, poisson, exponential, irwinhall, bates |
-| # releases         | 4 |
-| # dependents       | 74 |
-| # downloads        | 764652 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 127498.33333333333 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/transitive-bullshit/random#readme)
@@ -24,7 +24,7 @@ Seedable random number generator supporting many common distributions.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

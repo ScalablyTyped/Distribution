@@ -24,6 +24,6 @@ object ApiRequestLogsResult {
     
     inline def setApiRequestLogsUndefined: Self = StObject.set(x, "apiRequestLogs", js.undefined)
     
-    inline def setApiRequestLogsVarargs(value: (/* Contains API request log information. */ ApiRequestLog)*): Self = StObject.set(x, "apiRequestLogs", js.Array(value :_*))
+    inline def setApiRequestLogsVarargs(value: (/* Contains API request log information. */ ApiRequestLog)*): Self = StObject.set(x, "apiRequestLogs", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.reactClock
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: ClockProps[ClockValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(props: ClockProps[ClockValue]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait ClockProps[T] extends StObject {
     
@@ -152,7 +151,7 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value*))
       
       inline def setHourHandLength(value: Double): Self = StObject.set(x, "hourHandLength", value.asInstanceOf[js.Any])
       
@@ -234,5 +233,5 @@ object mod {
     }
   }
   
-  type ClockValue = String | Date
+  type ClockValue = String | js.Date
 }

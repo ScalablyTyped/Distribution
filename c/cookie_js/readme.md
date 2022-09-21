@@ -10,15 +10,12 @@ A tiny JavaScript library that simplifies cookies.
 | ------------------ | :-------------: |
 | Full name          | cookie_js |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 115608 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 24388.0 |
+| # stars            | 1128.0 |
 
 ## Links
-- [Homepage](https://github.com/florian/cookie.js#readme)
-- [Bugs](http://github.com/florian/cookie.js/issues)
-- [Repository](https://github.com/florian/cookie.js)
 - [Npm](https://www.npmjs.com/package/cookie_js)
     
 

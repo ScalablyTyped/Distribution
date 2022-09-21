@@ -1,13 +1,14 @@
 package typings.extractZip
 
-import typings.std.Error
+import typings.yauzl.mod.Entry
+import typings.yauzl.mod.ZipFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(zipPath: String, opts: Options, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(zipPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(zipPath: String, opts: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(zipPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("extract-zip", JSImport.Namespace)
   @js.native
@@ -19,14 +20,14 @@ object mod {
     
     var defaultFileMode: js.UndefOr[Double] = js.undefined
     
-    var dir: js.UndefOr[String] = js.undefined
+    var dir: String
     
-    var onEntry: js.UndefOr[js.Function2[/* entry */ js.Any, /* zipfile */ js.Any, Unit]] = js.undefined
+    var onEntry: js.UndefOr[js.Function2[/* entry */ Entry, /* zipfile */ ZipFile, Unit]] = js.undefined
   }
   object Options {
     
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(dir: String): Options = {
+      val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
@@ -42,9 +43,7 @@ object mod {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
-      
-      inline def setOnEntry(value: (/* entry */ js.Any, /* zipfile */ js.Any) => Unit): Self = StObject.set(x, "onEntry", js.Any.fromFunction2(value))
+      inline def setOnEntry(value: (/* entry */ Entry, /* zipfile */ ZipFile) => Unit): Self = StObject.set(x, "onEntry", js.Any.fromFunction2(value))
       
       inline def setOnEntryUndefined: Self = StObject.set(x, "onEntry", js.undefined)
     }

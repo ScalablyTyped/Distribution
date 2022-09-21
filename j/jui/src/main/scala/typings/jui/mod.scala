@@ -33,8 +33,8 @@ object mod {
     extends StObject
        with UIEvent {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: AutoFold): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: AutoFold): this.type = js.native
     
     /**
       * Gets the index of the currently enabled node
@@ -47,8 +47,8 @@ object mod {
   @js.native
   trait UIAutoComplete extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Event): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Event): this.type = js.native
     
     def close(): Unit = js.native
     
@@ -70,8 +70,8 @@ object mod {
   @js.native
   trait UIColorPicker extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Color): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Color): this.type = js.native
     
     def getColor(`type`: String): String | js.Object = js.native
     
@@ -82,8 +82,8 @@ object mod {
   @js.native
   trait UICombo extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Flex): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Flex): this.type = js.native
     
     def fold(): Unit = js.native
     
@@ -103,9 +103,9 @@ object mod {
       * Gets the value of the button currently selected
       *
       */
-    def getValue(): js.Any = js.native
+    def getValue(): Any = js.native
     
-    def open(e: js.Any): Unit = js.native
+    def open(e: Any): Unit = js.native
     
     def reload(): Unit = js.native
     
@@ -119,29 +119,29 @@ object mod {
       * Selects a button having a specified value
       *
       */
-    def setValue(value: js.Any): Unit = js.native
+    def setValue(value: Any): Unit = js.native
   }
   
   @js.native
   trait UIDatePicker extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Date): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Date): this.type = js.native
     
+    def addTime(time: js.Date): Unit = js.native
     /**
       * Selects a date corresponding to the time added to the currently selected date
       *
       * @param time Timestamp or Date
       */
     def addTime(time: Double): Unit = js.native
-    def addTime(time: typings.std.Date): Unit = js.native
     
     /**
       * Gets the value of the date currently selected
       *
       * @return Date object
       */
-    def getDate(): typings.std.Date = js.native
+    def getDate(): js.Date = js.native
     
     /**
       * Gets a date string that fits the format entered
@@ -157,8 +157,8 @@ object mod {
       */
     def getTime(): Double = js.native
     
-    def next(e: js.Any): Unit = js.native
-    def next(e: js.Any, moveYear: Boolean): Unit = js.native
+    def next(e: Any): Unit = js.native
+    def next(e: Any, moveYear: Boolean): Unit = js.native
     
     /**
       * Outputs a calendar that fits the year/month entered
@@ -166,8 +166,8 @@ object mod {
       */
     def page(y: Double, m: Double): Unit = js.native
     
-    def prev(e: js.Any): Unit = js.native
-    def prev(e: js.Any, moveYear: Boolean): Unit = js.native
+    def prev(e: Any): Unit = js.native
+    def prev(e: Any, moveYear: Boolean): Unit = js.native
     
     def reload(): Unit = js.native
     
@@ -176,14 +176,14 @@ object mod {
       *
       * @param "year"/"month"/"date"/"timestamp"/"Date"
       */
-    def select(args: js.Any*): Unit = js.native
+    def select(args: Any*): Unit = js.native
   }
   
   @js.native
   trait UIDropdown extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Close): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Close): this.type = js.native
     
     def hide(): Unit = js.native
     
@@ -206,14 +206,14 @@ object mod {
       *
       * @param nodes Dropdown list
       */
-    def update(nodes: js.Array[js.Any]): Unit = js.native
+    def update(nodes: js.Array[Any]): Unit = js.native
   }
   
   @js.native
   trait UIModal extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: AutoHide): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: AutoHide): this.type = js.native
     
     def hide(): Unit = js.native
     
@@ -225,8 +225,8 @@ object mod {
   @js.native
   trait UINotify extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Distance): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Distance): this.type = js.native
     
     /**
       * Adds a notice message. The value passed is the data object shown by the notice template
@@ -240,8 +240,8 @@ object mod {
   @js.native
   trait UIPaging extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Count): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Count): this.type = js.native
     
     def first(): Unit = js.native
     
@@ -269,8 +269,8 @@ object mod {
   @js.native
   trait UIProgress extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Animated): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Animated): this.type = js.native
     
     def getValue(): Double = js.native
     
@@ -284,10 +284,10 @@ object mod {
   @js.native
   trait UIProperty extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Items): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Items): this.type = js.native
     
-    def addItem(item: js.Array[js.Any]): Unit = js.native
+    def addItem(item: js.Array[Any]): Unit = js.native
     def addItem(item: js.Object): Unit = js.native
     
     /**
@@ -304,15 +304,15 @@ object mod {
       */
     def expanded(id: String): Unit = js.native
     
-    def findItem(key: String): js.Any = js.native
+    def findItem(key: String): Any = js.native
     
-    def findRender(key: String): js.Any = js.native
+    def findRender(key: String): Any = js.native
     
-    def getAllValue(key: String): js.Any = js.native
+    def getAllValue(key: String): Any = js.native
     
-    def getDefaultValue(): js.Array[js.Any] = js.native
+    def getDefaultValue(): js.Array[Any] = js.native
     
-    def getGroupList(): js.Array[js.Any] = js.native
+    def getGroupList(): js.Array[Any] = js.native
     
     /**
       *
@@ -320,14 +320,14 @@ object mod {
       *
       * @param [key=null]  if key is null, value is all properties.
       */
-    def getValue(): js.Object | js.Array[js.Any] = js.native
-    def getValue(key: String): js.Object | js.Array[js.Any] = js.native
+    def getValue(): js.Object | js.Array[Any] = js.native
+    def getValue(key: String): js.Object | js.Array[Any] = js.native
     
     def initValue(obj: js.Object): Unit = js.native
     
-    def loadItems(newItems: js.Array[js.Any]): Unit = js.native
+    def loadItems(newItems: js.Array[Any]): Unit = js.native
     
-    def refreshValue($dom: js.Any, newValue: js.Any): Unit = js.native
+    def refreshValue($dom: Any, newValue: Any): Unit = js.native
     
     // remove item by key or title
     def removeItem(item: js.Object): Unit = js.native
@@ -339,32 +339,32 @@ object mod {
       */
     def setValue(obj: js.Object): Unit = js.native
     
-    def updateValue(key: String, value: js.Any): Unit = js.native
+    def updateValue(key: String, value: Any): Unit = js.native
   }
   
   @js.native
   trait UISelect extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Align): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Align): this.type = js.native
     
     def getSelectedIndex(): Double = js.native
     
-    def getValue(): js.Any | js.Array[js.Any] = js.native
+    def getValue(): Any | js.Array[Any] = js.native
     
     def setSelectedIndex(index: Double): Unit = js.native
     
-    def setValue(value: js.Any): Unit = js.native
-    def setValue(value: js.Array[js.Any]): Unit = js.native
+    def setValue(value: js.Array[Any]): Unit = js.native
+    def setValue(value: Any): Unit = js.native
     
-    def update(data: js.Array[js.Any]): Unit = js.native
+    def update(data: js.Array[Any]): Unit = js.native
   }
   
   @js.native
   trait UISlider extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Format): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Format): this.type = js.native
     
     /**
       * get FromHandle's value
@@ -394,13 +394,10 @@ object mod {
   @js.native
   trait UISplitter extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: BarSize): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: BarSize): this.type = js.native
     
-    @JSName("setDirection")
-    def setDirection_horizontal(d: horizontal): Unit = js.native
-    @JSName("setDirection")
-    def setDirection_vertical(d: vertical): Unit = js.native
+    def setDirection(d: horizontal | vertical): Unit = js.native
     
     def setHide(index: Double): Unit = js.native
     
@@ -414,8 +411,8 @@ object mod {
   @js.native
   trait UISwitch extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Checked): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Checked): this.type = js.native
     
     def getValue(): Boolean = js.native
     
@@ -427,8 +424,8 @@ object mod {
   @js.native
   trait UITab extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Drag): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Drag): this.type = js.native
     
     /**
       * Gets the index of the currently enabled tab
@@ -488,14 +485,14 @@ object mod {
       * Changes the tab list
       *
       */
-    def update(nodes: js.Array[js.Any]): Unit = js.native
+    def update(nodes: js.Array[Any]): Unit = js.native
   }
   
   @js.native
   trait UITooltip extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Delay): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Delay): this.type = js.native
     
     /**
       * Changes the content of a tooltip
@@ -507,8 +504,8 @@ object mod {
   @js.native
   trait UITree extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: DragChild): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: DragChild): this.type = js.native
     
     /**
       * Gets the index of a node that is activated in an active state.
@@ -523,13 +520,13 @@ object mod {
       * @param param1 index or data (Array/String)
       * @param param2 null or data
       */
-    def append(args: js.Any*): Unit = js.native
+    def append(args: Any*): Unit = js.native
     
     /**
       * Folds up a child node at a specified index.
       *
       */
-    def fold(index: String, e: js.Any): Unit = js.native
+    def fold(index: String, e: Any): Unit = js.native
     
     /**
       * Folds up all child nodes at a specified index.
@@ -555,7 +552,7 @@ object mod {
       * Adds a node at a specified index.
       *
       */
-    def insert(index: String, data: js.Array[js.Any]): Unit = js.native
+    def insert(index: String, data: js.Array[Any]): Unit = js.native
     
     /**
       * Return all nodes of the root.
@@ -588,7 +585,7 @@ object mod {
       * Shows a child node at a specified index.
       *
       */
-    def open(index: String, e: js.Any): Unit = js.native
+    def open(index: String, e: Any): Unit = js.native
     
     /**
       * Shows all child nodes at a specified index.
@@ -617,12 +614,12 @@ object mod {
       * Changes to the node at a specified index.
       *
       */
-    def update(index: String, data: js.Array[js.Any]): Unit = js.native
+    def update(index: String, data: js.Array[Any]): Unit = js.native
   }
   
   trait UITreeBase extends StObject {
     
-    def appendNode(args: js.Any*): UITreeNode
+    def appendNode(args: Any*): UITreeNode
     
     def foldNode(index: String): Unit
     
@@ -636,7 +633,7 @@ object mod {
     
     def getRoot(): UITreeNode
     
-    def insertNode(index: String, data: js.Any): UITreeNode
+    def insertNode(index: String, data: Any): UITreeNode
     
     def moveNode(index: String, targetIndex: Double): Unit
     
@@ -648,25 +645,25 @@ object mod {
     
     def removeNodes(): Unit
     
-    def updateNode(index: String, data: js.Any): UITreeNode
+    def updateNode(index: String, data: Any): UITreeNode
   }
   object UITreeBase {
     
     inline def apply(
-      appendNode: /* repeated */ js.Any => UITreeNode,
+      appendNode: /* repeated */ Any => UITreeNode,
       foldNode: String => Unit,
       foldNodeAll: String => Unit,
       getNode: String => UITreeNode,
       getNodeAll: String => js.Array[UITreeNode],
       getNodeParent: String => UITreeNode,
       getRoot: () => UITreeNode,
-      insertNode: (String, js.Any) => UITreeNode,
+      insertNode: (String, Any) => UITreeNode,
       moveNode: (String, Double) => Unit,
       openNode: String => Unit,
       openNodeAll: String => Unit,
       removeNode: String => Unit,
       removeNodes: () => Unit,
-      updateNode: (String, js.Any) => UITreeNode
+      updateNode: (String, Any) => UITreeNode
     ): UITreeBase = {
       val __obj = js.Dynamic.literal(appendNode = js.Any.fromFunction1(appendNode), foldNode = js.Any.fromFunction1(foldNode), foldNodeAll = js.Any.fromFunction1(foldNodeAll), getNode = js.Any.fromFunction1(getNode), getNodeAll = js.Any.fromFunction1(getNodeAll), getNodeParent = js.Any.fromFunction1(getNodeParent), getRoot = js.Any.fromFunction0(getRoot), insertNode = js.Any.fromFunction2(insertNode), moveNode = js.Any.fromFunction2(moveNode), openNode = js.Any.fromFunction1(openNode), openNodeAll = js.Any.fromFunction1(openNodeAll), removeNode = js.Any.fromFunction1(removeNode), removeNodes = js.Any.fromFunction0(removeNodes), updateNode = js.Any.fromFunction2(updateNode))
       __obj.asInstanceOf[UITreeBase]
@@ -674,7 +671,7 @@ object mod {
     
     extension [Self <: UITreeBase](x: Self) {
       
-      inline def setAppendNode(value: /* repeated */ js.Any => UITreeNode): Self = StObject.set(x, "appendNode", js.Any.fromFunction1(value))
+      inline def setAppendNode(value: /* repeated */ Any => UITreeNode): Self = StObject.set(x, "appendNode", js.Any.fromFunction1(value))
       
       inline def setFoldNode(value: String => Unit): Self = StObject.set(x, "foldNode", js.Any.fromFunction1(value))
       
@@ -688,7 +685,7 @@ object mod {
       
       inline def setGetRoot(value: () => UITreeNode): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
       
-      inline def setInsertNode(value: (String, js.Any) => UITreeNode): Self = StObject.set(x, "insertNode", js.Any.fromFunction2(value))
+      inline def setInsertNode(value: (String, Any) => UITreeNode): Self = StObject.set(x, "insertNode", js.Any.fromFunction2(value))
       
       inline def setMoveNode(value: (String, Double) => Unit): Self = StObject.set(x, "moveNode", js.Any.fromFunction2(value))
       
@@ -700,7 +697,7 @@ object mod {
       
       inline def setRemoveNodes(value: () => Unit): Self = StObject.set(x, "removeNodes", js.Any.fromFunction0(value))
       
-      inline def setUpdateNode(value: (String, js.Any) => UITreeNode): Self = StObject.set(x, "updateNode", js.Any.fromFunction2(value))
+      inline def setUpdateNode(value: (String, Any) => UITreeNode): Self = StObject.set(x, "updateNode", js.Any.fromFunction2(value))
     }
   }
   
@@ -710,13 +707,13 @@ object mod {
     var children: js.UndefOr[js.Array[UITreeNode]] = js.undefined
     
     /** Data of a specified node */
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Depth of a specified node */
     var depth: js.UndefOr[Double] = js.undefined
     
     /** LI element of a specified node */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** Index of a specified node  */
     var index: js.UndefOr[Double] = js.undefined
@@ -743,19 +740,19 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: UITreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: UITreeNode*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
       inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -780,8 +777,8 @@ object mod {
   @js.native
   trait UIWindow extends StObject {
     
-    def apply(selector: js.Any): this.type = js.native
-    def apply(selector: js.Any, options: Bottom): this.type = js.native
+    def apply(selector: Any): this.type = js.native
+    def apply(selector: Any, options: Bottom): this.type = js.native
     
     def hide(): Unit = js.native
     

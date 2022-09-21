@@ -8,5 +8,5 @@ object tagMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_Tag", "_Tag")
   @js.native
-  val Tag: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Tag: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

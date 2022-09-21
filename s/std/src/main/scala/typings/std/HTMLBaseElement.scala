@@ -11,19 +11,18 @@ trait HTMLBaseElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Gets or sets the baseline URL on which relative links are based.
-    */
+  /** Gets or sets the baseline URL on which relative links are based. */
+  /* standard dom */
   var href: java.lang.String = js.native
   
   /* InferMemberOverrides */
@@ -37,8 +36,7 @@ trait HTMLBaseElement
     options: EventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Sets or retrieves the window or frame at which to target content.
-    */
+  /** Sets or retrieves the window or frame at which to target content. */
+  /* standard dom */
   var target: java.lang.String = js.native
 }

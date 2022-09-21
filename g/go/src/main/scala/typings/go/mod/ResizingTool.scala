@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.resizingTool, which you can modify.
   */
-class ResizingTool () extends Tool {
+open class ResizingTool () extends Tool {
   
   /**This read-only property returns the GraphObject that is being resized.*/
   var adornedObject: GraphObject = js.native

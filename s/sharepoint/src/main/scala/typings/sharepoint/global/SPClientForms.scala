@@ -10,13 +10,13 @@ object SPClientForms {
   
   @JSGlobal("SPClientForms.ClientForm")
   @js.native
-  class ClientForm protected ()
+  open class ClientForm protected ()
     extends StObject
        with typings.sharepoint.SPClientForms.ClientForm {
     def this(qualifier: String) = this()
     
     /* CompleteClass */
-    override def NotifyControlEvent(eventName: FormManagerEvents, fldName: String, eventArg: js.Any): Unit = js.native
+    override def NotifyControlEvent(eventName: FormManagerEvents, fldName: String, eventArg: Any): Unit = js.native
     
     /* CompleteClass */
     override def RenderClientForm(): Unit = js.native
@@ -27,7 +27,7 @@ object SPClientForms {
   
   @JSGlobal("SPClientForms.ClientFormManager")
   @js.native
-  class ClientFormManager ()
+  open class ClientFormManager ()
     extends StObject
        with typings.sharepoint.SPClientForms.ClientFormManager
   object ClientFormManager {
@@ -50,47 +50,47 @@ object SPClientForms {
     
     @JSGlobal("SPClientForms.ClientValidation.MaxLengthUrlValidator")
     @js.native
-    class MaxLengthUrlValidator ()
+    open class MaxLengthUrlValidator ()
       extends StObject
          with typings.sharepoint.SPClientForms.ClientValidation.MaxLengthUrlValidator {
       
       /* CompleteClass */
-      override def Validate(value: js.Any): typings.sharepoint.SPClientForms.ClientValidation.ValidationResult = js.native
+      override def Validate(value: Any): typings.sharepoint.SPClientForms.ClientValidation.ValidationResult = js.native
     }
     
     @JSGlobal("SPClientForms.ClientValidation.RequiredFileValidator")
     @js.native
-    class RequiredFileValidator ()
+    open class RequiredFileValidator ()
       extends StObject
          with typings.sharepoint.SPClientForms.ClientValidation.RequiredFileValidator {
       
       /* CompleteClass */
-      override def Validate(value: js.Any): typings.sharepoint.SPClientForms.ClientValidation.ValidationResult = js.native
+      override def Validate(value: Any): typings.sharepoint.SPClientForms.ClientValidation.ValidationResult = js.native
     }
     
     @JSGlobal("SPClientForms.ClientValidation.RequiredRichTextValidator")
     @js.native
-    class RequiredRichTextValidator ()
+    open class RequiredRichTextValidator ()
       extends StObject
          with typings.sharepoint.SPClientForms.ClientValidation.RequiredRichTextValidator {
       
       /* CompleteClass */
-      override def Validate(value: js.Any): typings.sharepoint.SPClientForms.ClientValidation.ValidationResult = js.native
+      override def Validate(value: Any): typings.sharepoint.SPClientForms.ClientValidation.ValidationResult = js.native
     }
     
     @JSGlobal("SPClientForms.ClientValidation.RequiredValidator")
     @js.native
-    class RequiredValidator ()
+    open class RequiredValidator ()
       extends StObject
          with typings.sharepoint.SPClientForms.ClientValidation.RequiredValidator {
       
       /* CompleteClass */
-      override def Validate(value: js.Any): typings.sharepoint.SPClientForms.ClientValidation.ValidationResult = js.native
+      override def Validate(value: Any): typings.sharepoint.SPClientForms.ClientValidation.ValidationResult = js.native
     }
     
     @JSGlobal("SPClientForms.ClientValidation.ValidationResult")
     @js.native
-    class ValidationResult protected ()
+    open class ValidationResult protected ()
       extends StObject
          with typings.sharepoint.SPClientForms.ClientValidation.ValidationResult {
       def this(hasErrors: Boolean, errorMsg: String) = this()
@@ -98,7 +98,7 @@ object SPClientForms {
     
     @JSGlobal("SPClientForms.ClientValidation.ValidatorSet")
     @js.native
-    class ValidatorSet ()
+    open class ValidatorSet ()
       extends StObject
          with typings.sharepoint.SPClientForms.ClientValidation.ValidatorSet {
       

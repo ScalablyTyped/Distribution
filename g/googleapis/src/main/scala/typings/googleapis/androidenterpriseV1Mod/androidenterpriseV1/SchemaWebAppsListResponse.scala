@@ -4,16 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The web app details for an enterprise.
-  */
 trait SchemaWebAppsListResponse extends StObject {
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#webAppsListResponse&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The manifest describing a web app.
@@ -29,14 +20,10 @@ object SchemaWebAppsListResponse {
   
   extension [Self <: SchemaWebAppsListResponse](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setWebApp(value: js.Array[SchemaWebApp]): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
     
     inline def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
     
-    inline def setWebAppVarargs(value: SchemaWebApp*): Self = StObject.set(x, "webApp", js.Array(value :_*))
+    inline def setWebAppVarargs(value: SchemaWebApp*): Self = StObject.set(x, "webApp", js.Array(value*))
   }
 }

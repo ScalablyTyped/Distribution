@@ -16,7 +16,7 @@ object listObjectVersionsCommandMod {
   
   @JSImport("@aws-sdk/client-s3-browser/commands/ListObjectVersionsCommand", "ListObjectVersionsCommand")
   @js.native
-  class ListObjectVersionsCommand protected ()
+  open class ListObjectVersionsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -33,17 +33,17 @@ object listObjectVersionsCommandMod {
     /* CompleteClass */
     override val middlewareStack: MiddlewareStack[ListObjectVersionsInput, ListObjectVersionsOutput] = js.native
     
-    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
+    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ Any = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: S3ResolvedConfiguration
     ): Handler[ListObjectVersionsInput, ListObjectVersionsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: S3ResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListObjectVersionsInput, ListObjectVersionsOutput] = js.native
   }
 }

@@ -4,35 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * MetricFilter specifies the filter on a metric.
-  */
 trait SchemaMetricFilter extends StObject {
   
   /**
     * The value to compare against.
     */
-  var comparisonValue: js.UndefOr[String] = js.undefined
+  var comparisonValue: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The metric that will be filtered on. A metricFilter must contain a metric
-    * name. A metric name can be an alias earlier defined as a metric or it can
-    * also be a metric expression.
+    * The metric that will be filtered on. A metricFilter must contain a metric name. A metric name can be an alias earlier defined as a metric or it can also be a metric expression.
     */
-  var metricName: js.UndefOr[String] = js.undefined
+  var metricName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Logical `NOT` operator. If this boolean is set to true, then the matching
-    * metric values will be excluded in the report. The default is false.
+    * Logical `NOT` operator. If this boolean is set to true, then the matching metric values will be excluded in the report. The default is false.
     */
-  var not: js.UndefOr[Boolean] = js.undefined
+  var not: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Is the metric `EQUAL`, `LESS_THAN` or `GREATER_THAN` the comparisonValue,
-    * the default is `EQUAL`. If the operator is `IS_MISSING`, checks if the
-    * metric is missing and would ignore the comparisonValue.
+    * Is the metric `EQUAL`, `LESS_THAN` or `GREATER_THAN` the comparisonValue, the default is `EQUAL`. If the operator is `IS_MISSING`, checks if the metric is missing and would ignore the comparisonValue.
     */
-  var operator: js.UndefOr[String] = js.undefined
+  var operator: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMetricFilter {
   
@@ -45,17 +37,25 @@ object SchemaMetricFilter {
     
     inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
+    inline def setComparisonValueNull: Self = StObject.set(x, "comparisonValue", null)
+    
     inline def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
     
     inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    
+    inline def setMetricNameNull: Self = StObject.set(x, "metricName", null)
     
     inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
     inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
+    inline def setNotNull: Self = StObject.set(x, "not", null)
+    
     inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorNull: Self = StObject.set(x, "operator", null)
     
     inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Soliton")
 @js.native
-class Soliton ()
+open class Soliton ()
   extends typings.ranjs.mod.dist.Soliton {
   def this(N: Double) = this()
 }

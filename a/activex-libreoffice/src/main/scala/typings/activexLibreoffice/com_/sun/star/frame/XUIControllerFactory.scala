@@ -29,12 +29,12 @@ object XUIControllerFactory {
   inline def apply(
     AvailableServiceNames: SafeArray[String],
     acquire: () => Unit,
-    createInstanceWithArgumentsAndContext: (String, SeqEquiv[js.Any], XComponentContext) => XInterface,
+    createInstanceWithArgumentsAndContext: (String, SeqEquiv[Any], XComponentContext) => XInterface,
     createInstanceWithContext: (String, XComponentContext) => XInterface,
     deregisterController: (String, String) => Unit,
     getAvailableServiceNames: () => SafeArray[String],
     hasController: (String, String) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerController: (String, String, String) => Unit,
     release: () => Unit
   ): XUIControllerFactory = {

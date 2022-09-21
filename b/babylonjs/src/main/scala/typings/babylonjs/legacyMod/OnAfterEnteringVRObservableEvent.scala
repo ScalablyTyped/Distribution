@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "OnAfterEnteringVRObservableEvent")
 @js.native
-class OnAfterEnteringVRObservableEvent ()
+open class OnAfterEnteringVRObservableEvent ()
   extends typings.babylonjs.indexMod.OnAfterEnteringVRObservableEvent

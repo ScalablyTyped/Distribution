@@ -34,7 +34,7 @@ trait ServerLaunchConfiguration extends StObject {
   var instanceType: js.UndefOr[InstanceType] = js.undefined
   
   /**
-    * The logical ID of the server in the AWS CloudFormation template.
+    * The logical ID of the server in the CloudFormation template.
     */
   var logicalId: js.UndefOr[LogicalId] = js.undefined
   

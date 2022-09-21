@@ -1,6 +1,6 @@
 package typings.webpackChunkHash
 
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import typings.webpackChunkHash.webpackChunkHashStrings.base64
 import typings.webpackChunkHash.webpackChunkHashStrings.hex
 import typings.webpackChunkHash.webpackChunkHashStrings.latin1
@@ -10,46 +10,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("webpack-chunk-hash", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("webpack-chunk-hash", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
-    def this(options: Options) = this()
+  open class ^ () extends StObject {
+    def this(options: WebpackChunkHashPluginOptions) = this()
   }
   
-  trait Options extends StObject {
+  type WebpackChunkHash = Plugin
+  
+  trait WebpackChunkHashPluginOptions extends StObject {
     
     /**
-      * @default null
-      * @description A callback to add more content to the resulting hash
+      * A callback to add more content to the resulting hash
       */
-    var additionalHashContent: js.UndefOr[js.Function1[/* chunk */ js.Any, String]] = js.undefined
+    var additionalHashContent: js.UndefOr[js.Function1[/* chunk */ Any, String]] = js.undefined
     
     /**
-      * @default 'md5'
-      * @description The hash algorithm to use
-      * @see {@link https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options}
+      * Which algorithm to use. Defaults to 'md5'.
+      * See https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm
       */
     var algorithm: js.UndefOr[String] = js.undefined
     
     /**
-      * @default 'hex'
-      * @description The digest enconding to use
-      * @see {@link https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options}
+      * Which digest to use. Defaults to 'hex'.
+      * See https://nodejs.org/api/crypto.html#crypto_hash_digest_encoding
       */
     var digest: js.UndefOr[hex | latin1 | base64] = js.undefined
   }
-  object Options {
+  object WebpackChunkHashPluginOptions {
     
-    inline def apply(): Options = {
+    inline def apply(): WebpackChunkHashPluginOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[WebpackChunkHashPluginOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: WebpackChunkHashPluginOptions](x: Self) {
       
-      inline def setAdditionalHashContent(value: /* chunk */ js.Any => String): Self = StObject.set(x, "additionalHashContent", js.Any.fromFunction1(value))
+      inline def setAdditionalHashContent(value: /* chunk */ Any => String): Self = StObject.set(x, "additionalHashContent", js.Any.fromFunction1(value))
       
       inline def setAdditionalHashContentUndefined: Self = StObject.set(x, "additionalHashContent", js.undefined)
       
@@ -62,6 +60,4 @@ object mod {
       inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     }
   }
-  
-  type WebpackChunkHash = Plugin
 }

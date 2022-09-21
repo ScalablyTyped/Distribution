@@ -9,7 +9,7 @@ trait DeferredMaintenanceWindow extends StObject {
   /**
     *  A timestamp for the end of the time period when we defer maintenance.
     */
-  var DeferMaintenanceEndTime: js.UndefOr[TStamp] = js.undefined
+  var DeferMaintenanceEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A unique identifier for the maintenance window.
@@ -19,7 +19,7 @@ trait DeferredMaintenanceWindow extends StObject {
   /**
     *  A timestamp for the beginning of the time period when we defer maintenance.
     */
-  var DeferMaintenanceStartTime: js.UndefOr[TStamp] = js.undefined
+  var DeferMaintenanceStartTime: js.UndefOr[js.Date] = js.undefined
 }
 object DeferredMaintenanceWindow {
   
@@ -30,7 +30,7 @@ object DeferredMaintenanceWindow {
   
   extension [Self <: DeferredMaintenanceWindow](x: Self) {
     
-    inline def setDeferMaintenanceEndTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceEndTime(value: js.Date): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     
     inline def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
     
@@ -38,7 +38,7 @@ object DeferredMaintenanceWindow {
     
     inline def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
     
-    inline def setDeferMaintenanceStartTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceStartTime(value: js.Date): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
     
     inline def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
   }

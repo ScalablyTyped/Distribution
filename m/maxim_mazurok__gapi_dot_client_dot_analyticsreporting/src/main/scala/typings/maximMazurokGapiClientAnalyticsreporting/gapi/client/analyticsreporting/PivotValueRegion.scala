@@ -22,6 +22,6 @@ object PivotValueRegion {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

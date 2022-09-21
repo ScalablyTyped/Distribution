@@ -25,11 +25,11 @@ object DatabaseSchemaJson {
     
     inline def setFullTextCatalogsUndefined: Self = StObject.set(x, "fullTextCatalogs", js.undefined)
     
-    inline def setFullTextCatalogsVarargs(value: FullTextCatalog*): Self = StObject.set(x, "fullTextCatalogs", js.Array(value :_*))
+    inline def setFullTextCatalogsVarargs(value: FullTextCatalog*): Self = StObject.set(x, "fullTextCatalogs", js.Array(value*))
     
     inline def setStores(value: js.Array[StoreSchemaJson]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
     
-    inline def setStoresVarargs(value: StoreSchemaJson*): Self = StObject.set(x, "stores", js.Array(value :_*))
+    inline def setStoresVarargs(value: StoreSchemaJson*): Self = StObject.set(x, "stores", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ object animationframeMod {
   
   @JSImport("@material/animation/animationframe", "AnimationFrame")
   @js.native
-  class AnimationFrame () extends StObject {
+  open class AnimationFrame () extends StObject {
     
     /**
       * Cancels a queued callback with the given key.
@@ -26,6 +26,8 @@ object animationframeMod {
       * Returns the queue of unexecuted callback keys.
       */
     def getQueue(): js.Array[String] = js.native
+    
+    /* private */ val rafIDs: Any = js.native
     
     /**
       * Requests an animation frame. Cancels any existing frame with the same key.

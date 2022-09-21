@@ -9,7 +9,7 @@ trait Directory extends StObject {
   /**
     * The date and time when the directory was created.
     */
-  var CreationDateTime: js.UndefOr[Date] = js.undefined
+  var CreationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the directory. For more information, see arns.
@@ -35,7 +35,7 @@ object Directory {
   
   extension [Self <: Directory](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     

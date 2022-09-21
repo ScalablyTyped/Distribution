@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object maskMod {
   
-  @JSImport("konva/types/filters/Mask", "Mask")
+  @JSImport("konva/lib/filters/Mask", "Mask")
   @js.native
   val Mask: Filter = js.native
 }

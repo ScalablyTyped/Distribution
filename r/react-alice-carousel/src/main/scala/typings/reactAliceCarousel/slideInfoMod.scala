@@ -1,7 +1,7 @@
 package typings.reactAliceCarousel
 
 import typings.react.mod.global.JSX.Element
-import typings.reactAliceCarousel.anon.SlidesLength
+import typings.reactAliceCarousel.anon.ItemsCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +12,5 @@ object slideInfoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SlideInfo(hasActiveIndexSlidesLength: SlidesLength): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideInfo")(hasActiveIndexSlidesLength.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SlideInfo(hasActiveIndexItemsCountRenderSlideInfo: ItemsCount): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideInfo")(hasActiveIndexItemsCountRenderSlideInfo.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

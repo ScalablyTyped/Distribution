@@ -59,7 +59,7 @@ trait Grid[Entity, Params]
   
   def removeRow(id: String): Grid[Entity, Params] = js.native
   
-  def render(response: js.Any): Grid[Entity, Params] = js.native
+  def render(response: Any): Grid[Entity, Params] = js.native
   
   def selectAll(): Grid[Entity, Params] = js.native
   
@@ -68,7 +68,7 @@ trait Grid[Entity, Params]
   
   def showColumn(field: String): Grid[Entity, Params] = js.native
   
-  def title(text: js.Any): js.Any = js.native
+  def title(text: Any): Any = js.native
   
   def unSelectAll(): Grid[Entity, Params] = js.native
   

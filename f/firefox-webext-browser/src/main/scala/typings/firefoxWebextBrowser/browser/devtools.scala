@@ -78,7 +78,7 @@ object devtools {
       /**
         * Set if the error occurred on the DevTools side before the expression is evaluated, contains the array of the values that may be substituted into the description string to provide more information about the cause of the error.
         */
-      var details: js.Array[js.Any]
+      var details: js.Array[Any]
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated. */
       var isError: Boolean
@@ -94,7 +94,7 @@ object devtools {
       inline def apply(
         code: String,
         description: String,
-        details: js.Array[js.Any],
+        details: js.Array[Any],
         isError: Boolean,
         isException: Boolean,
         value: String
@@ -109,9 +109,9 @@ object devtools {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        inline def setDetails(value: js.Array[js.Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        inline def setDetails(value: js.Array[Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
-        inline def setDetailsVarargs(value: js.Any*): Self = StObject.set(x, "details", js.Array(value :_*))
+        inline def setDetailsVarargs(value: Any*): Self = StObject.set(x, "details", js.Array(value*))
         
         inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
         
@@ -188,7 +188,7 @@ object devtools {
         * @deprecated Unsupported on Firefox at this time.
         */
       var setContent: js.UndefOr[
-            js.Function2[/* content */ String, /* commit */ Boolean, js.Promise[StringDictionary[js.Any]]]
+            js.Function2[/* content */ String, /* commit */ Boolean, js.Promise[StringDictionary[Any]]]
           ] = js.undefined
       
       /** The URL of the resource. */
@@ -207,7 +207,7 @@ object devtools {
         
         inline def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
         
-        inline def setSetContent(value: (/* content */ String, /* commit */ Boolean) => js.Promise[StringDictionary[js.Any]]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
+        inline def setSetContent(value: (/* content */ String, /* commit */ Boolean) => js.Promise[StringDictionary[Any]]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
         
         inline def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
         
@@ -456,7 +456,7 @@ object devtools {
         * Sets an HTML page to be displayed in the sidebar pane.
         * @param path Relative path of an extension page to display within the sidebar.
         */
-      def setPage(path: ExtensionURL): js.Promise[js.Any] = js.native
+      def setPage(path: ExtensionURL): js.Promise[Any] = js.native
     }
     
     /** Represents the Sources panel. */

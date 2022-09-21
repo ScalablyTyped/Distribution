@@ -1,8 +1,7 @@
 package typings.x2js
 
-import typings.std.Date
 import typings.std.Document
-import typings.std.RegExp
+import typings.std.Node
 import typings.x2js.x2jsStrings.`object`
 import typings.x2js.x2jsStrings.none
 import typings.x2js.x2jsStrings.property
@@ -22,7 +21,7 @@ object mod {
     * 
     * @memberOf X2JS
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with X2JS {
     def this(config: Options) = this()
@@ -39,7 +38,7 @@ object mod {
       * 
       * @memberOf X2JS.AttributeConverter
       */
-    def convert(name: String, value: js.Any): String
+    def convert(name: String, value: Any): String
     
     /**
       * Indicates whether an attribute should be converted.
@@ -50,20 +49,20 @@ object mod {
       * 
       * @memberOf X2JS.AttributeConverter
       */
-    def test(name: String, value: js.Any): Boolean
+    def test(name: String, value: Any): Boolean
   }
   object AttributeConverter {
     
-    inline def apply(convert: (String, js.Any) => String, test: (String, js.Any) => Boolean): AttributeConverter = {
+    inline def apply(convert: (String, Any) => String, test: (String, Any) => Boolean): AttributeConverter = {
       val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), test = js.Any.fromFunction2(test))
       __obj.asInstanceOf[AttributeConverter]
     }
     
     extension [Self <: AttributeConverter](x: Self) {
       
-      inline def setConvert(value: (String, js.Any) => String): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
+      inline def setConvert(value: (String, Any) => String): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       
-      inline def setTest(value: (String, js.Any) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
+      inline def setTest(value: (String, Any) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
     }
   }
   
@@ -85,7 +84,7 @@ object mod {
       */
     var arrayAccessFormPaths: js.UndefOr[
         js.Array[
-          String | RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean])
+          String | js.RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean])
         ]
       ] = js.undefined
     
@@ -111,7 +110,7 @@ object mod {
       * @type {(Array<string | RegExp | ((elementPath: string) => boolean)>)}
       * @memberOf X2JS.Options
       */
-    var datetimeAccessFormPaths: js.UndefOr[js.Array[String | RegExp | (js.Function1[/* elementPath */ String, Boolean])]] = js.undefined
+    var datetimeAccessFormPaths: js.UndefOr[js.Array[String | js.RegExp | (js.Function1[/* elementPath */ String, Boolean])]] = js.undefined
     
     /**
       * If "text" then <empty></empty> will be transformed to "". If "object" then <empty></empty> will be transformed to {}.
@@ -214,15 +213,15 @@ object mod {
       
       inline def setArrayAccessFormPaths(
         value: js.Array[
-              String | RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean])
+              String | js.RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean])
             ]
       ): Self = StObject.set(x, "arrayAccessFormPaths", value.asInstanceOf[js.Any])
       
       inline def setArrayAccessFormPathsUndefined: Self = StObject.set(x, "arrayAccessFormPaths", js.undefined)
       
       inline def setArrayAccessFormPathsVarargs(
-        value: (String | RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean]))*
-      ): Self = StObject.set(x, "arrayAccessFormPaths", js.Array(value :_*))
+        value: (String | js.RegExp | (js.Function2[/* elementName */ String, /* elementPath */ String, Boolean]))*
+      ): Self = StObject.set(x, "arrayAccessFormPaths", js.Array(value*))
       
       inline def setArrayAccessFormUndefined: Self = StObject.set(x, "arrayAccessForm", js.undefined)
       
@@ -230,17 +229,17 @@ object mod {
       
       inline def setAttributeConvertersUndefined: Self = StObject.set(x, "attributeConverters", js.undefined)
       
-      inline def setAttributeConvertersVarargs(value: AttributeConverter*): Self = StObject.set(x, "attributeConverters", js.Array(value :_*))
+      inline def setAttributeConvertersVarargs(value: AttributeConverter*): Self = StObject.set(x, "attributeConverters", js.Array(value*))
       
       inline def setAttributePrefix(value: String): Self = StObject.set(x, "attributePrefix", value.asInstanceOf[js.Any])
       
       inline def setAttributePrefixUndefined: Self = StObject.set(x, "attributePrefix", js.undefined)
       
-      inline def setDatetimeAccessFormPaths(value: js.Array[String | RegExp | (js.Function1[/* elementPath */ String, Boolean])]): Self = StObject.set(x, "datetimeAccessFormPaths", value.asInstanceOf[js.Any])
+      inline def setDatetimeAccessFormPaths(value: js.Array[String | js.RegExp | (js.Function1[/* elementPath */ String, Boolean])]): Self = StObject.set(x, "datetimeAccessFormPaths", value.asInstanceOf[js.Any])
       
       inline def setDatetimeAccessFormPathsUndefined: Self = StObject.set(x, "datetimeAccessFormPaths", js.undefined)
       
-      inline def setDatetimeAccessFormPathsVarargs(value: (String | RegExp | (js.Function1[/* elementPath */ String, Boolean]))*): Self = StObject.set(x, "datetimeAccessFormPaths", js.Array(value :_*))
+      inline def setDatetimeAccessFormPathsVarargs(value: (String | js.RegExp | (js.Function1[/* elementPath */ String, Boolean]))*): Self = StObject.set(x, "datetimeAccessFormPaths", js.Array(value*))
       
       inline def setEmptyNodeForm(value: `object` | text): Self = StObject.set(x, "emptyNodeForm", value.asInstanceOf[js.Any])
       
@@ -311,18 +310,19 @@ object mod {
       * 
       * @memberOf X2JS
       */
-    def asDateTime(prop: String): Date = js.native
+    def asDateTime(prop: String): js.Date = js.native
     
     /**
       * Transforms a DOM tree to JavaScript objects.
       * 
       * @template T
-      * @param {Node} domNode
+      * @param {Document | Node} domNode
       * @returns {T}
       * 
       * @memberOf X2JS
       */
     def dom2js[T](domNode: Document): T = js.native
+    def dom2js[T](domNode: Node): T = js.native
     
     /**
       * Gets the current version of x2js. 
@@ -355,7 +355,6 @@ object mod {
       */
     def js2xml[T](json: T): String = js.native
     
-    def toXmlDateTime(dt: Double): String = js.native
     /**
       * Converts the provided date value to a valid XML string.
       * 
@@ -364,7 +363,8 @@ object mod {
       * 
       * @memberOf X2JS
       */
-    def toXmlDateTime(dt: Date): String = js.native
+    def toXmlDateTime(dt: js.Date): String = js.native
+    def toXmlDateTime(dt: Double): String = js.native
     
     /**
       * Transformns an XML string into DOM-tree

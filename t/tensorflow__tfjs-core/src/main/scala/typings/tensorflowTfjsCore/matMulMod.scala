@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object matMulMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/fused/mat_mul", JSImport.Namespace)
+  @JSImport("@tensorflow/tfjs-core/dist/ops/fused/mat_mul", "matMul")
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def matMul[T /* <: Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: A[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(hasABTransposeATransposeBBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
+  val matMul: js.Function1[
+    /* hasABTransposeATransposeBBiasActivationPreluActivationWeightsLeakyreluAlpha */ A, 
+    Tensor[Rank]
+  ] = js.native
 }

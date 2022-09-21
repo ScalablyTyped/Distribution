@@ -1,188 +1,110 @@
 package typings.forgeViewer.Autodesk.Viewing
 
+import typings.forgeViewer.THREE.Box3
+import typings.forgeViewer.THREE.Vector3
+import typings.forgeViewer.anon.Position
 import typings.std.ClientRect
-import typings.three.mod.Box3
-import typings.three.mod.Vector3
-import typings.three.vector2Mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Navigation extends StObject {
   
-  def dollyFromPoint(distance: Double, point: Vector3): Unit
+  def computeOverviewDistance(bound: Box3): Double = js.native
   
-  def fitBounds(immediate: Boolean, bounds: Box3): js.Any
+  def dollyFromPoint(distance: Double, point: Vector3): Unit = js.native
   
-  def getAlignedUpVector(): Vector3
+  def fitBounds(immediate: Boolean, bounds: Box3): Position = js.native
+  def fitBounds(immediate: Boolean, bounds: Box3, reorient: Boolean): Position = js.native
+  def fitBounds(immediate: Boolean, bounds: Box3, reorient: Boolean, force: Boolean): Position = js.native
+  def fitBounds(immediate: Boolean, bounds: Box3, reorient: Unit, force: Boolean): Position = js.native
   
-  def getCamera(): js.Any
+  def getAlignedUpVector(): Vector3 = js.native
   
-  def getCameraRightVector(worldAligned: Boolean): Vector3
+  def getCamera(): Any = js.native
   
-  def getCameraUpVector(): Vector3
+  def getCameraRightVector(worldAligned: Boolean): Vector3 = js.native
   
-  def getEyeVector(): Vector3
+  def getCameraUpVector(): Vector3 = js.native
   
-  def getFovMax(): Double
+  def getEyeVector(): Vector3 = js.native
   
-  def getFovMin(): Double
+  def getFovMax(): Double = js.native
   
-  def getIs2D(): Boolean
+  def getFovMin(): Double = js.native
   
-  def getPivotPoint(): Vector3
+  def getIs2D(): Boolean = js.native
   
-  def getPivotSetFlag(): Boolean
+  def getPivotPoint(): Vector3 = js.native
   
-  def getPosition(): Vector3
+  def getPivotSetFlag(): Boolean = js.native
   
-  def getReverseZoomDirection(): Boolean
+  def getPosition(): Vector3 = js.native
   
-  def getScreenViewport(): ClientRect
+  def getReverseZoomDirection(): Boolean = js.native
   
-  def getTarget(): Vector3
+  def getScreenViewport(): ClientRect = js.native
   
-  def getUsePivotAlways(): Boolean
+  def getTarget(): Vector3 = js.native
   
-  def getWorldPoint(x: Double, y: Double): Vector3
+  def getUsePivotAlways(): Boolean = js.native
   
-  def screenToViewport(x: Double, y: Double): Vector3
+  def getVerticalFov(): Double = js.native
   
-  def setCameraUpVector(up: Vector): Unit
+  def getWorldPoint(x: Double, y: Double): Vector3 = js.native
   
-  def setOrbitPastWorldPoles(value: Boolean): js.Any
+  /**
+    * Get the current world up direction.
+    *
+    * @returns the current world up direction (normalized)
+    */
+  def getWorldUpVector(): Vector3 = js.native
   
-  def setPivotPoint(pivot: Vector3): Unit
+  def orientCameraUp(force: Boolean): Unit = js.native
   
-  def setPosition(pos: Vector3): Unit
+  def screenToViewport(x: Double, y: Double): Vector3 = js.native
   
-  def setReverseZoomDirection(state: Boolean): Unit
+  def setCameraUpVector(up: Vector3): Unit = js.native
   
-  def setScreenViewport(viewport: ClientRect): Unit
+  def setOrbitPastWorldPoles(value: Boolean): Any = js.native
   
-  def setTarget(target: Vector3): Unit
+  def setPivotPoint(pivot: Vector3): Unit = js.native
   
-  def setUseLeftHandedInput(value: Boolean): js.Any
+  def setPosition(pos: Vector3): Unit = js.native
   
-  def setUsePivotAlways(value: Boolean): js.Any
+  def setRequestHomeView(): Unit = js.native
+  def setRequestHomeView(`val`: Boolean): Unit = js.native
   
-  def setVerticalFov(fov: Double, adjustPosition: Boolean): Unit
+  def setRequestTransitionWithUp(state: Boolean, pos: Vector3, coi: Vector3, fov: Double, up: Vector3): Unit = js.native
+  def setRequestTransitionWithUp(state: Boolean, pos: Vector3, coi: Vector3, fov: Double, up: Vector3, worldUp: Vector3): Unit = js.native
   
-  def setView(position: Vector3, target: Vector3): Unit
+  def setReverseZoomDirection(state: Boolean): Unit = js.native
   
-  def setZoomTowardsPivot(value: Boolean): js.Any
+  def setScreenViewport(viewport: ClientRect): Unit = js.native
   
-  def toOrthographic(): Unit
+  def setTarget(target: Vector3): Unit = js.native
   
-  def toPerspective(): Unit
-}
-object Navigation {
+  def setUseLeftHandedInput(value: Boolean): Any = js.native
   
-  inline def apply(
-    dollyFromPoint: (Double, Vector3) => Unit,
-    fitBounds: (Boolean, Box3) => js.Any,
-    getAlignedUpVector: () => Vector3,
-    getCamera: () => js.Any,
-    getCameraRightVector: Boolean => Vector3,
-    getCameraUpVector: () => Vector3,
-    getEyeVector: () => Vector3,
-    getFovMax: () => Double,
-    getFovMin: () => Double,
-    getIs2D: () => Boolean,
-    getPivotPoint: () => Vector3,
-    getPivotSetFlag: () => Boolean,
-    getPosition: () => Vector3,
-    getReverseZoomDirection: () => Boolean,
-    getScreenViewport: () => ClientRect,
-    getTarget: () => Vector3,
-    getUsePivotAlways: () => Boolean,
-    getWorldPoint: (Double, Double) => Vector3,
-    screenToViewport: (Double, Double) => Vector3,
-    setCameraUpVector: Vector => Unit,
-    setOrbitPastWorldPoles: Boolean => js.Any,
-    setPivotPoint: Vector3 => Unit,
-    setPosition: Vector3 => Unit,
-    setReverseZoomDirection: Boolean => Unit,
-    setScreenViewport: ClientRect => Unit,
-    setTarget: Vector3 => Unit,
-    setUseLeftHandedInput: Boolean => js.Any,
-    setUsePivotAlways: Boolean => js.Any,
-    setVerticalFov: (Double, Boolean) => Unit,
-    setView: (Vector3, Vector3) => Unit,
-    setZoomTowardsPivot: Boolean => js.Any,
-    toOrthographic: () => Unit,
-    toPerspective: () => Unit
-  ): Navigation = {
-    val __obj = js.Dynamic.literal(dollyFromPoint = js.Any.fromFunction2(dollyFromPoint), fitBounds = js.Any.fromFunction2(fitBounds), getAlignedUpVector = js.Any.fromFunction0(getAlignedUpVector), getCamera = js.Any.fromFunction0(getCamera), getCameraRightVector = js.Any.fromFunction1(getCameraRightVector), getCameraUpVector = js.Any.fromFunction0(getCameraUpVector), getEyeVector = js.Any.fromFunction0(getEyeVector), getFovMax = js.Any.fromFunction0(getFovMax), getFovMin = js.Any.fromFunction0(getFovMin), getIs2D = js.Any.fromFunction0(getIs2D), getPivotPoint = js.Any.fromFunction0(getPivotPoint), getPivotSetFlag = js.Any.fromFunction0(getPivotSetFlag), getPosition = js.Any.fromFunction0(getPosition), getReverseZoomDirection = js.Any.fromFunction0(getReverseZoomDirection), getScreenViewport = js.Any.fromFunction0(getScreenViewport), getTarget = js.Any.fromFunction0(getTarget), getUsePivotAlways = js.Any.fromFunction0(getUsePivotAlways), getWorldPoint = js.Any.fromFunction2(getWorldPoint), screenToViewport = js.Any.fromFunction2(screenToViewport), setCameraUpVector = js.Any.fromFunction1(setCameraUpVector), setOrbitPastWorldPoles = js.Any.fromFunction1(setOrbitPastWorldPoles), setPivotPoint = js.Any.fromFunction1(setPivotPoint), setPosition = js.Any.fromFunction1(setPosition), setReverseZoomDirection = js.Any.fromFunction1(setReverseZoomDirection), setScreenViewport = js.Any.fromFunction1(setScreenViewport), setTarget = js.Any.fromFunction1(setTarget), setUseLeftHandedInput = js.Any.fromFunction1(setUseLeftHandedInput), setUsePivotAlways = js.Any.fromFunction1(setUsePivotAlways), setVerticalFov = js.Any.fromFunction2(setVerticalFov), setView = js.Any.fromFunction2(setView), setZoomTowardsPivot = js.Any.fromFunction1(setZoomTowardsPivot), toOrthographic = js.Any.fromFunction0(toOrthographic), toPerspective = js.Any.fromFunction0(toPerspective))
-    __obj.asInstanceOf[Navigation]
-  }
+  def setUsePivotAlways(value: Boolean): Any = js.native
   
-  extension [Self <: Navigation](x: Self) {
-    
-    inline def setDollyFromPoint(value: (Double, Vector3) => Unit): Self = StObject.set(x, "dollyFromPoint", js.Any.fromFunction2(value))
-    
-    inline def setFitBounds(value: (Boolean, Box3) => js.Any): Self = StObject.set(x, "fitBounds", js.Any.fromFunction2(value))
-    
-    inline def setGetAlignedUpVector(value: () => Vector3): Self = StObject.set(x, "getAlignedUpVector", js.Any.fromFunction0(value))
-    
-    inline def setGetCamera(value: () => js.Any): Self = StObject.set(x, "getCamera", js.Any.fromFunction0(value))
-    
-    inline def setGetCameraRightVector(value: Boolean => Vector3): Self = StObject.set(x, "getCameraRightVector", js.Any.fromFunction1(value))
-    
-    inline def setGetCameraUpVector(value: () => Vector3): Self = StObject.set(x, "getCameraUpVector", js.Any.fromFunction0(value))
-    
-    inline def setGetEyeVector(value: () => Vector3): Self = StObject.set(x, "getEyeVector", js.Any.fromFunction0(value))
-    
-    inline def setGetFovMax(value: () => Double): Self = StObject.set(x, "getFovMax", js.Any.fromFunction0(value))
-    
-    inline def setGetFovMin(value: () => Double): Self = StObject.set(x, "getFovMin", js.Any.fromFunction0(value))
-    
-    inline def setGetIs2D(value: () => Boolean): Self = StObject.set(x, "getIs2D", js.Any.fromFunction0(value))
-    
-    inline def setGetPivotPoint(value: () => Vector3): Self = StObject.set(x, "getPivotPoint", js.Any.fromFunction0(value))
-    
-    inline def setGetPivotSetFlag(value: () => Boolean): Self = StObject.set(x, "getPivotSetFlag", js.Any.fromFunction0(value))
-    
-    inline def setGetPosition(value: () => Vector3): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
-    
-    inline def setGetReverseZoomDirection(value: () => Boolean): Self = StObject.set(x, "getReverseZoomDirection", js.Any.fromFunction0(value))
-    
-    inline def setGetScreenViewport(value: () => ClientRect): Self = StObject.set(x, "getScreenViewport", js.Any.fromFunction0(value))
-    
-    inline def setGetTarget(value: () => Vector3): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
-    
-    inline def setGetUsePivotAlways(value: () => Boolean): Self = StObject.set(x, "getUsePivotAlways", js.Any.fromFunction0(value))
-    
-    inline def setGetWorldPoint(value: (Double, Double) => Vector3): Self = StObject.set(x, "getWorldPoint", js.Any.fromFunction2(value))
-    
-    inline def setScreenToViewport(value: (Double, Double) => Vector3): Self = StObject.set(x, "screenToViewport", js.Any.fromFunction2(value))
-    
-    inline def setSetCameraUpVector(value: Vector => Unit): Self = StObject.set(x, "setCameraUpVector", js.Any.fromFunction1(value))
-    
-    inline def setSetOrbitPastWorldPoles(value: Boolean => js.Any): Self = StObject.set(x, "setOrbitPastWorldPoles", js.Any.fromFunction1(value))
-    
-    inline def setSetPivotPoint(value: Vector3 => Unit): Self = StObject.set(x, "setPivotPoint", js.Any.fromFunction1(value))
-    
-    inline def setSetPosition(value: Vector3 => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
-    
-    inline def setSetReverseZoomDirection(value: Boolean => Unit): Self = StObject.set(x, "setReverseZoomDirection", js.Any.fromFunction1(value))
-    
-    inline def setSetScreenViewport(value: ClientRect => Unit): Self = StObject.set(x, "setScreenViewport", js.Any.fromFunction1(value))
-    
-    inline def setSetTarget(value: Vector3 => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
-    
-    inline def setSetUseLeftHandedInput(value: Boolean => js.Any): Self = StObject.set(x, "setUseLeftHandedInput", js.Any.fromFunction1(value))
-    
-    inline def setSetUsePivotAlways(value: Boolean => js.Any): Self = StObject.set(x, "setUsePivotAlways", js.Any.fromFunction1(value))
-    
-    inline def setSetVerticalFov(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setVerticalFov", js.Any.fromFunction2(value))
-    
-    inline def setSetView(value: (Vector3, Vector3) => Unit): Self = StObject.set(x, "setView", js.Any.fromFunction2(value))
-    
-    inline def setSetZoomTowardsPivot(value: Boolean => js.Any): Self = StObject.set(x, "setZoomTowardsPivot", js.Any.fromFunction1(value))
-    
-    inline def setToOrthographic(value: () => Unit): Self = StObject.set(x, "toOrthographic", js.Any.fromFunction0(value))
-    
-    inline def setToPerspective(value: () => Unit): Self = StObject.set(x, "toPerspective", js.Any.fromFunction0(value))
-  }
+  def setVerticalFov(fov: Double, adjustPosition: Boolean): Unit = js.native
+  
+  def setView(position: Vector3, target: Vector3): Unit = js.native
+  
+  /**
+    * Change the current world up direction.
+    *
+    * @param up - the new world up direction
+    * @param reorient - if true, make sure the camera up is oriented towards the world up direction.
+    * @param force - if true, will set the new direction regardless of navigation lock
+    */
+  def setWorldUpVector(up: Vector3, reorient: Boolean, force: Boolean): Unit = js.native
+  
+  def setZoomTowardsPivot(value: Boolean): Any = js.native
+  
+  def toOrthographic(): Unit = js.native
+  
+  def toPerspective(): Unit = js.native
 }

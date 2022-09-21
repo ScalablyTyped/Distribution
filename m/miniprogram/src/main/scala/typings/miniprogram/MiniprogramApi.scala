@@ -1,14 +1,30 @@
 package typings.miniprogram
 
+import typings.miniprogram.anon.Address
+import typings.miniprogram.anon.AppId
+import typings.miniprogram.anon.AuthSetting
+import typings.miniprogram.anon.AuthSettingCamera
+import typings.miniprogram.anon.Available
 import typings.miniprogram.anon.Brightness
 import typings.miniprogram.anon.CanPullDown
+import typings.miniprogram.anon.Connected
 import typings.miniprogram.anon.DataAny
 import typings.miniprogram.anon.DataKey
+import typings.miniprogram.anon.Devices
+import typings.miniprogram.anon.Direction
+import typings.miniprogram.anon.IsBuffer
+import typings.miniprogram.anon.IsCharging
 import typings.miniprogram.anon.Key
+import typings.miniprogram.anon.Level
 import typings.miniprogram.anon.Number
 import typings.miniprogram.anon.PartialAddPhoneContactArg
-import typings.miniprogram.anon.SiteName
 import typings.miniprogram.anon.Time
+import typings.miniprogram.anon.X
+import typings.miniprogram.anon.deviceIdstringAsyncCallba
+import typings.miniprogram.anon.deviceIdstringAsyncCallbaComplete
+import typings.miniprogram.anon.deviceIdstringserviceIdst
+import typings.miniprogram.anon.deviceIdstringserviceIdstCharacteristicId
+import typings.miniprogram.anon.filePathstringfileTypestr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,6 +71,13 @@ trait MiniprogramApi extends StObject {
   def chooseImage(args: ChooseImageArgs): Unit = js.native
   
   /**
+    * Open the built-in map to choose a location.
+    *
+    * https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_location_chooselocation#ZxibZ
+    */
+  def chooseLocation(args: AsyncCallback[Address]): Unit = js.native
+  
+  /**
     * Select the phone number of a contact in the local system directory.
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_contact_choosephonecontact)
@@ -71,6 +94,7 @@ trait MiniprogramApi extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_storage_clearstorage)
     */
   def clearStorage(): Unit = js.native
+  def clearStorage(args: AsyncCallback[Any]): Unit = js.native
   
   /**
     * Clear local data cache synchronously.
@@ -82,11 +106,45 @@ trait MiniprogramApi extends StObject {
   def clearStorageSync(): Unit = js.native
   
   /**
+    * Use this API to close the Bluetooth module in the mini program.
+    * You can call the following mini program API and receive event callbacks that are related to the Bluetooth module in the effective period when you the API my.openBluetoothAdapter is called.
+    * The effective period is ended when the API my.closeBluetoothAdapter is called.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_closebluetoothadapter#Parameters)
+    */
+  def closeBluetoothAdapter(): Unit = js.native
+  def closeBluetoothAdapter(args: AsyncCallback[Any]): Unit = js.native
+  
+  /**
+    * Use this API to disable the WebSocket connection.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_closesocket)
+    */
+  def closeSocket(): Unit = js.native
+  def closeSocket(args: AsyncCallback[Any]): Unit = js.native
+  
+  /**
     * Confirm box.
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_feedback_confirm)
     */
   def confirm(args: ConfirmArgs): Unit = js.native
+  
+  /**
+    * Use this API to connect to a Bluetooth Low Energy (BLE) device.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_connectbledevice)
+    */
+  def connectBLEDevice(args: deviceIdstringAsyncCallba): Unit = js.native
+  
+  /**
+    * Use this API to create a WebSocket connection. An Mini Program can only have one WebSocket connection at a time.
+    * If a WebSocket connection already exists when a new one is created, the existing one will be automatically disabled.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_connectsocket)
+    */
+  def connectSocket(): Unit = js.native
+  def connectSocket(args: ConnectSocketArgs): Unit = js.native
   
   /**
     * Create an animation instance. Call the instance method to
@@ -124,11 +182,33 @@ trait MiniprogramApi extends StObject {
   def createWebViewContext(id: String): WebViewContext = js.native
   
   /**
+    * Use this API to open the date selection list.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_choose-date_datepicker)
+    */
+  def datePicker(): Unit = js.native
+  def datePicker(args: DatePickerArgs): Unit = js.native
+  
+  /**
+    * Use this API to disconnect from a Bluetooth Low Energy (BLE) device.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_disconnectbledevice)
+    */
+  def disconnectBLEDevice(args: deviceIdstringAsyncCallba): Unit = js.native
+  
+  /**
     * Download a file resource to a local location.
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_downloadfile)
     */
   def downloadFile(args: DownloadFileArgs): Unit = js.native
+  
+  /**
+    * Use this API to obtain the Mini Program App ID synchronously.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_basic_getappidsync)
+    */
+  def getAppIdSync(): AppId = js.native
   
   /**
     * Call the API to obtain the authorization code (authCode).
@@ -142,11 +222,61 @@ trait MiniprogramApi extends StObject {
   def getAuthCode(args: GetAuthCodeArgs): Unit = js.native
   
   /**
+    * Use this API to obtain all characteristics in a Bluetooth device that is connected to the native.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_getbledevicecharacteristics)
+    */
+  def getBLEDeviceCharacteristics(args: deviceIdstringserviceIdst): Unit = js.native
+  
+  /**
+    * Use this API to obtain all services of Bluetooth devices that are connected to the native.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_getbledeviceservices)
+    */
+  def getBLEDeviceServices(args: deviceIdstringAsyncCallbaComplete): Unit = js.native
+  
+  /**
+    * Use this API to asynchronously obtain the battery level and the charging state of the current device. No parameters are required.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_battery_getbatteryinfo)
+    */
+  def getBatteryInfo(): Unit = js.native
+  def getBatteryInfo(args: AsyncCallback[IsCharging]): Unit = js.native
+  
+  /**
+    * Use this API to synchronously obtain the battery level and the charging state of the current device. No parameters are required.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_battery_getbatteryinfosync)
+    */
+  def getBatteryInfoSync(): IsCharging = js.native
+  
+  /**
+    * Use this API to check the Bluetooth adapter status in the Mini Program.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_getbluetoothadapterstate#9097f31e)
+    */
+  def getBluetoothAdapterState(args: AsyncCallback[Available]): Unit = js.native
+  
+  /**
+    * Use this API to get all the bluetooth devices that are discovered, including those that are connected to the current device.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_getbluetoothdevices)
+    */
+  def getBluetoothDevices(args: AsyncCallback[Devices]): Unit = js.native
+  
+  /**
     * Get the clipboard data.
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_clipboard_getclipboard)
     */
   def getClipboard(args: GetClipboardArgs): Unit = js.native
+  
+  /**
+    * Use this API to get the bluetooth devices that are connected.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_getconnectedbluetoothdevices)
+    */
+  def getConnectedBluetoothDevices(args: deviceIdstringAsyncCallba): Unit = js.native
   
   /**
     * Get file information.
@@ -221,12 +351,20 @@ trait MiniprogramApi extends StObject {
   def getServerTime(args: AsyncCallback[Time]): Unit = js.native
   
   /**
+    * Use this API to obtain the user's current settings. Only the permissions that have been requested by the Mini Program from the user are returned.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_setting_getsetting)
+    */
+  def getSetting(): Unit = js.native
+  def getSetting(args: AsyncCallback[AuthSetting]): Unit = js.native
+  
+  /**
     * Use this API to obtain the site information assigned by Alipay
     *  Connect which is used in Alipay Connect business, such as the site name.
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_alipay-connect_getsiteinfo)
     */
-  def getSiteInfo(args: AsyncCallback[SiteName]): Unit = js.native
+  def getSiteInfo(args: AsyncCallback[GetSiteInfoCallbackValue]): Unit = js.native
   
   /**
     * Get cached data.
@@ -257,6 +395,15 @@ trait MiniprogramApi extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_system_getsysteminfo)
     */
   def getSystemInfo(args: GetSystemInfoArgs): Unit = js.native
+  
+  def getSystemInfoSync(): GetSystemInfoCallbackValue = js.native
+  
+  /**
+    * Use this API to hide the home button in the top navigation bar, and the return-home option in the tab bar in the upper right corner.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_navigationbar_hidebackhome)
+    */
+  def hideBackHome(): Unit = js.native
   
   /**
     * Hide the keyboard.
@@ -293,6 +440,7 @@ trait MiniprogramApi extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_feedback_hidetoast)
     */
   def hideToast(): Unit = js.native
+  def hideToast(args: AsyncCallback[Any]): Unit = js.native
   
   /**
     * Make a phone call.
@@ -341,6 +489,101 @@ trait MiniprogramApi extends StObject {
   def navigateToMiniProgram(args: NavigateToMiniProgramArgs): Unit = js.native
   
   /**
+    * Use this API enable notification on change of Bluetooth Low Energy (BLE) device characteristics.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_notifyblecharacteristicvaluechange#Parameters)
+    */
+  def notifyBLECharacteristicValueChange(args: deviceIdstringserviceIdstCharacteristicId): Unit = js.native
+  
+  /**
+    * Use this API to stop listening to acceleration data event.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_accelerometer_offaccelerometerchange)
+    */
+  def offAccelerometerChange(): Unit = js.native
+  def offAccelerometerChange(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to unlisten to the BLE device characteristic change event.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_offblecharacteristicvaluechange)
+    */
+  def offBLECharacteristicValueChange(): Unit = js.native
+  def offBLECharacteristicValueChange(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to unlisten to the Bluetooth Low Energy (BLE) connection status change event.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_offbleconnectionstatechanged#a4bc819d)
+    */
+  def offBLEConnectionStateChanged(): Unit = js.native
+  def offBLEConnectionStateChanged(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to remove the bluetooth adapter with a state change.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_offbluetoothadapterstatechange)
+    */
+  def offBluetoothAdapterStateChange(): Unit = js.native
+  def offBluetoothAdapterStateChange(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to remove the bluetooth devices that are found.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_offbluetoothadapterstatechange)
+    */
+  def offBluetoothDeviceFound(): Unit = js.native
+  def offBluetoothDeviceFound(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to unlisten to the compass data.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_compass_offcompasschange)
+    */
+  def offCompassChange(): Unit = js.native
+  def offCompassChange(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to unlisten to the insufficient memory alarm event. Ensure that the parameter (callback) is the same object as the one in onMemoryWarning.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_memory-warning_offmemorywarning)
+    */
+  def offMemoryWarning(): Unit = js.native
+  def offMemoryWarning(arg: js.Function1[/* arg */ Level, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to unlisten to the event of disabling the WebSocket connection.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_offsocketclose)
+    */
+  def offSocketClose(): Unit = js.native
+  def offSocketClose(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to unlisten to WebSocket error events.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_onsocketerror)
+    */
+  def offSocketError(): Unit = js.native
+  def offSocketError(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to unlisten to the event of receiving server messages by WebSocket.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_offsocketmessage)
+    */
+  def offSocketMessage(): Unit = js.native
+  def offSocketMessage(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to unlisten to the event of enabling the WebSocket connection.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_offsocketopen)
+    */
+  def offSocketOpen(): Unit = js.native
+  def offSocketOpen(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
     * Cancel screen capture listener event. This is usually paired
     * with `my.onUserCaptureScreen`.
     *
@@ -350,12 +593,123 @@ trait MiniprogramApi extends StObject {
   def offUserCaptureScreen(args: js.Function0[Unit]): Unit = js.native
   
   /**
+    * Use this API to listen to the acceleration data event. The callback interval is 500ms. After the interface is called, the listening is automatically started.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_accelerometer_onaccelerometerchange)
+    */
+  def onAccelerometerChange(args: js.Function1[/* arg */ X, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to listen to the Bluetooth Low Energy (BLE) device characteristic change event.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_onblecharacteristicvaluechange)
+    */
+  def onBLECharacteristicValueChange(args: js.Function1[/* arg */ Connected, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to listen to the Bluetooth Low Energy (BLE) connection error event, including device loss and unusual disconnections.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_onbleconnectionstatechanged)
+    */
+  def onBLEConnectionStateChanged(args: js.Function1[/* arg */ Connected, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to monitor the bluetooth adapter state changes.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_onbluetoothadapterstatechange#9097f31e)
+    */
+  def onBluetoothAdapterStateChange(): Unit = js.native
+  def onBluetoothAdapterStateChange(args: AsyncCallback[Available]): Unit = js.native
+  
+  /**
+    * Use this API when a new Bluetooth device is found.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_offbluetoothadapterstatechange)
+    */
+  def onBluetoothDeviceFound(args: AsyncCallback[Devices]): Unit = js.native
+  
+  /**
+    * Use this API to listen to the compass data change event. After the interface call, listening is automatically started. The callback interval is 500ms.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_compass_oncompasschange)
+    */
+  def onCompassChange(): Unit = js.native
+  def onCompassChange(args: js.Function1[/* arg */ Direction, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to listen to the insufficient memory alarm event.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_memory-warning_onmemorywarning)
+    */
+  def onMemoryWarning(arg: js.Function1[/* arg */ Level, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to listen to the event of disabling the WebSocket connection.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_onsocketclose)
+    */
+  def onSocketClose(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to listen to WebSocket error events.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_onsocketerror)
+    */
+  def onSocketError(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to listen to the event of receiving server messages by WebSocket.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_onsocketmessage)
+    */
+  def onSocketMessage(args: js.Function1[/* arg */ IsBuffer, Unit]): Unit = js.native
+  
+  /**
+    * Use this API to listen to the event of enabling the WebSocket connection.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_onsocketopen)
+    */
+  def onSocketOpen(args: js.Function1[/* arg */ Any, Unit]): Unit = js.native
+  
+  /**
     * Listen to the user-initiated active screen capture event. This
     * will receive all the screen capture event notification of the system or a third-party tool.
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_capture_onusercapturescreen)
     */
   def onUserCaptureScreen(args: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * Use this API to initialize the Bluetooth module in the mini program.
+    * You can call the following mini program API and receive event callbacks that are related to the Bluetooth module in the effective period when you the API my.openBluetoothAdapter is called.
+    * The effective period is ended when the API my.closeBluetoothAdapter is called.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_openbluetoothadapter)
+    */
+  def openBluetoothAdapter(args: AsyncCallback[Any]): Unit = js.native
+  
+  /**
+    * The my.openDocument API enables users to preview a PDF file within the mini program.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_file_myopendocument)
+    */
+  def openDocument(args: filePathstringfileTypestr): Unit = js.native
+  
+  /**
+    * View the location on the built-in map.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_location_openlocation)
+    */
+  def openLocation(args: OpenLocationArgs): Unit = js.native
+  
+  /**
+    * Use this API to open the Mini Program settings page and returns permission setting results.
+    * Only the permissions that have been requested by the Mini Program from the user are displayed on the settings page.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_setting_opensetting)
+    */
+  def openSetting(): Unit = js.native
+  def openSetting(args: AsyncCallback[AuthSettingCamera]): Unit = js.native
   
   /**
     * Scroll to the target position on the page
@@ -385,6 +739,14 @@ trait MiniprogramApi extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_route_relaunch)
     */
   def reLaunch(args: ReLaunchArgs): Unit = js.native
+  
+  /**
+    * Use this API to read the data of Bluetooth Low Energy (BLE) device characteristics.
+    * The returned information must be obtained by using the callback in the my.onBLECharacteristicValueChange.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_readblecharacteristicvalue)
+    */
+  def readBLECharacteristicValue(args: ReadBLECharacteristicValueArgs): Unit = js.native
   
   /**
     * Close the current page and jump to the specified page within the application.
@@ -452,6 +814,14 @@ trait MiniprogramApi extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_scan_scan)
     */
   def scan(args: ScanArgs): Unit = js.native
+  
+  /**
+    * Use this API to send data over WebSocket connection. Call my.connectSocket first and send data after the my.onSocketOpen callback.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_network_sendsocketmessage)
+    */
+  def sendSocketMessage(): Unit = js.native
+  def sendSocketMessage(args: SendSocketMessageArgs): Unit = js.native
   
   /**
     * Dynamically set window background color.
@@ -526,6 +896,20 @@ trait MiniprogramApi extends StObject {
   def setStorageSync(args: DataKey): Unit = js.native
   
   /**
+    * Use this API to set the overall style of the tab bar, such as the text color, background color and border style.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_tabbar_settabbarstyle)
+    */
+  def setTabBarStyle(args: SetTabBarStyleArgs): Unit = js.native
+  
+  /**
+    * Use this API to display the operation menu.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_feedback_showactionsheet)
+    */
+  def showActionSheet(args: ShowActionSheetArgs): Unit = js.native
+  
+  /**
     * Pop up dialog for user in form of (image, text, etc.) via the
     * permission guide module. To advice the user to turn on the
     * related permission. The permission guide is used to advice rather
@@ -565,7 +949,15 @@ trait MiniprogramApi extends StObject {
     *
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_openapi_signcontract)
     */
-  def signContract(args: SignContract): Unit = js.native
+  def signContract(args: SignContractArgs): Unit = js.native
+  
+  /**
+    * Use this API to start discovering bluetooth devices. You can find the results in the API my.onBluetoothDeviceFound.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_startbluetoothdevicesdiscovery)
+    */
+  def startBluetoothDevicesDiscovery(): Unit = js.native
+  def startBluetoothDevicesDiscovery(args: StartBluetoothDevicesDiscoveryArgs): Unit = js.native
   
   /**
     * Start the pull-to-refresh function. The pull-to-refresh animation
@@ -574,6 +966,15 @@ trait MiniprogramApi extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_pulldown_startpulldownrefresh)
     */
   def startPullDownRefresh(): Unit = js.native
+  def startPullDownRefresh(args: AsyncCallback[Any]): Unit = js.native
+  
+  /**
+    * Use this API to stop discovering bluetooth devices.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_bluetooth_stopbluetoothdevicesdiscovery)
+    */
+  def stopBluetoothDevicesDiscovery(): Unit = js.native
+  def stopBluetoothDevicesDiscovery(args: AsyncCallback[Any]): Unit = js.native
   
   /**
     * Stop the pull-to-refresh for the current page.
@@ -581,6 +982,7 @@ trait MiniprogramApi extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_pulldown_stoppulldownrefresh)
     */
   def stopPullDownRefresh(): Unit = js.native
+  def stopPullDownRefresh(args: AsyncCallback[Any]): Unit = js.native
   
   /**
     * Jump to the specified tabBar page and close all other pages that are not tabBar.
@@ -609,4 +1011,19 @@ trait MiniprogramApi extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_vibrate_vibrate)
     */
   def vibrate(args: AsyncCallback[Unit]): Unit = js.native
+  
+  /**
+    * The watchshake function. Every time this API is called, a callback is triggered after the mobile phone is shaken. You must call this API again to continue to listen to this event.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_watch-shake_watchshake)
+    */
+  def watchShake(): Unit = js.native
+  def watchShake(args: AsyncCallback[Any]): Unit = js.native
+  
+  /**
+    * Use this API to write data to Bluetooth Low Energy (BLE) device characteristics.
+    *
+    * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_device_bluetooth_ble_writeblecharacteristicvalue)
+    */
+  def writeBLECharacteristicValue(args: WriteBLECharacteristicValueArgs): Unit = js.native
 }

@@ -10,10 +10,10 @@ Initialize your AngularJS app with constants loaded from the back-end.
 | ------------------ | :-------------: |
 | Full name          | angular-deferred-bootstrap |
 | Keywords           | angular, bootstrap |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 117069 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7871.0 |
+| # stars            | 291.0 |
 
 ## Links
 - [Homepage](https://github.com/philippd/angular-deferred-bootstrap)

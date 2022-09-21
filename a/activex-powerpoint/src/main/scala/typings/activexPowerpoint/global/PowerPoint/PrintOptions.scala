@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PrintOptions")
 @js.native
-/* private */ class PrintOptions ()
+/* private */ open class PrintOptions ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PrintOptions {
   
@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutputType: PpPrintOutputType = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.PrintOptions_typekey")

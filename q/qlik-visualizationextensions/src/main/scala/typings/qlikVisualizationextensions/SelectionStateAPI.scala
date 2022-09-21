@@ -55,7 +55,7 @@ object SelectionStateAPI {
     /**
       * Object with number of values in different states.
       */
-    var qStateCounts: js.Any
+    var qStateCounts: Any
     
     /**
       * Number of selected values.
@@ -84,7 +84,7 @@ object SelectionStateAPI {
       qSelected: String,
       qSelectionThreshold: Double,
       qSortIndex: Double,
-      qStateCounts: js.Any,
+      qStateCounts: Any,
       selectedCount: Double,
       selectedValues: js.Array[Double],
       totalCount: Double
@@ -105,7 +105,7 @@ object SelectionStateAPI {
       
       inline def setNotSelectedValues(value: js.Array[Double]): Self = StObject.set(x, "notSelectedValues", value.asInstanceOf[js.Any])
       
-      inline def setNotSelectedValuesVarargs(value: Double*): Self = StObject.set(x, "notSelectedValues", js.Array(value :_*))
+      inline def setNotSelectedValuesVarargs(value: Double*): Self = StObject.set(x, "notSelectedValues", js.Array(value*))
       
       inline def setQSelected(value: String): Self = StObject.set(x, "qSelected", value.asInstanceOf[js.Any])
       
@@ -113,13 +113,13 @@ object SelectionStateAPI {
       
       inline def setQSortIndex(value: Double): Self = StObject.set(x, "qSortIndex", value.asInstanceOf[js.Any])
       
-      inline def setQStateCounts(value: js.Any): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
+      inline def setQStateCounts(value: Any): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
       
       inline def setSelectedCount(value: Double): Self = StObject.set(x, "selectedCount", value.asInstanceOf[js.Any])
       
       inline def setSelectedValues(value: js.Array[Double]): Self = StObject.set(x, "selectedValues", value.asInstanceOf[js.Any])
       
-      inline def setSelectedValuesVarargs(value: Double*): Self = StObject.set(x, "selectedValues", js.Array(value :_*))
+      inline def setSelectedValuesVarargs(value: Double*): Self = StObject.set(x, "selectedValues", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     }
@@ -137,7 +137,7 @@ object SelectionStateAPI {
       * @param lockedAlso - Use to also clear locked fields.
       * @return - A promise of a Qlik engine reply.
       */
-    def clearAll(lockedAlso: Boolean): IPromise[js.Any]
+    def clearAll(lockedAlso: Boolean): IPromise[Any]
     
     /**
       * Number of forward steps available. OnData notification will be triggered after each update.
@@ -148,7 +148,7 @@ object SelectionStateAPI {
       * Locks all selections in this state.
       * @return - A promise of a Qlik engine reply.
       */
-    def lockAll(): IPromise[js.Any]
+    def lockAll(): IPromise[Any]
     
     /**
       * Selections
@@ -164,18 +164,18 @@ object SelectionStateAPI {
       * Unlocks all selections in this state.
       * @return - A promise of a Qlik engine reply.
       */
-    def unlockAll(): IPromise[js.Any]
+    def unlockAll(): IPromise[Any]
   }
   object IQSelectionState {
     
     inline def apply(
       backCount: Double,
-      clearAll: Boolean => IPromise[js.Any],
+      clearAll: Boolean => IPromise[Any],
       forwardCount: Double,
-      lockAll: () => IPromise[js.Any],
+      lockAll: () => IPromise[Any],
       selections: IQFieldSelections,
       stateName: String,
-      unlockAll: () => IPromise[js.Any]
+      unlockAll: () => IPromise[Any]
     ): IQSelectionState = {
       val __obj = js.Dynamic.literal(backCount = backCount.asInstanceOf[js.Any], clearAll = js.Any.fromFunction1(clearAll), forwardCount = forwardCount.asInstanceOf[js.Any], lockAll = js.Any.fromFunction0(lockAll), selections = selections.asInstanceOf[js.Any], stateName = stateName.asInstanceOf[js.Any], unlockAll = js.Any.fromFunction0(unlockAll))
       __obj.asInstanceOf[IQSelectionState]
@@ -185,17 +185,17 @@ object SelectionStateAPI {
       
       inline def setBackCount(value: Double): Self = StObject.set(x, "backCount", value.asInstanceOf[js.Any])
       
-      inline def setClearAll(value: Boolean => IPromise[js.Any]): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
+      inline def setClearAll(value: Boolean => IPromise[Any]): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
       
       inline def setForwardCount(value: Double): Self = StObject.set(x, "forwardCount", value.asInstanceOf[js.Any])
       
-      inline def setLockAll(value: () => IPromise[js.Any]): Self = StObject.set(x, "lockAll", js.Any.fromFunction0(value))
+      inline def setLockAll(value: () => IPromise[Any]): Self = StObject.set(x, "lockAll", js.Any.fromFunction0(value))
       
       inline def setSelections(value: IQFieldSelections): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
       
       inline def setStateName(value: String): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
       
-      inline def setUnlockAll(value: () => IPromise[js.Any]): Self = StObject.set(x, "unlockAll", js.Any.fromFunction0(value))
+      inline def setUnlockAll(value: () => IPromise[Any]): Self = StObject.set(x, "unlockAll", js.Any.fromFunction0(value))
     }
   }
 }

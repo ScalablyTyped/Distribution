@@ -14,7 +14,7 @@ trait EditorContextSetContentsOptions extends StObject {
   /**
     * 表示内容的delta对象
     */
-  var delta: js.UndefOr[js.Any] = js.undefined
+  var delta: js.UndefOr[Any] = js.undefined
   
   /**
     * 接口调用失败的回调函数
@@ -44,7 +44,7 @@ object EditorContextSetContentsOptions {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setDelta(value: js.Any): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Any): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     

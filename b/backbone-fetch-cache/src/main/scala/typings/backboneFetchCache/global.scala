@@ -31,7 +31,7 @@ object global {
            with typings.backboneFetchCache.mod.backboneAugmentingMod.ModelFetchWithCacheOptions {
         
         @JSName("prefillSuccess")
-        var prefillSuccess_CollectionFetchWithCacheOptions: js.UndefOr[js.Function1[/* self */ js.Any, Unit]] = js.undefined
+        var prefillSuccess_CollectionFetchWithCacheOptions: js.UndefOr[js.Function1[/* self */ Any, Unit]] = js.undefined
       }
       object CollectionFetchWithCacheOptions {
         
@@ -42,15 +42,14 @@ object global {
         
         extension [Self <: CollectionFetchWithCacheOptions](x: Self) {
           
-          inline def setPrefillSuccess(value: /* self */ js.Any => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction1(value))
+          inline def setPrefillSuccess(value: /* self */ Any => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction1(value))
           
           inline def setPrefillSuccessUndefined: Self = StObject.set(x, "prefillSuccess", js.undefined)
         }
       }
       
       @js.native
-      trait CollectionWithCache
-        extends Collection[Model[js.Any, ModelSetOptions, js.Object]] {
+      trait CollectionWithCache extends Collection[Model[Any, ModelSetOptions, Any]] {
         
         def fetch(options: typings.backboneFetchCache.mod.backboneAugmentingMod.CollectionFetchWithCacheOptions): JQueryXHR = js.native
       }
@@ -63,15 +62,6 @@ object global {
       trait ModelFetchWithCacheOptions
         extends StObject
            with ModelFetchOptions {
-        
-        /**
-          * Calls to modelInstance.fetch or collectionInstance.fetch will be
-          * fulfilled from the cache (if possible) when cache: true is set in
-          * the options hash.
-          */
-        var cache: js.UndefOr[Boolean] = js.undefined
-        
-        var context: js.UndefOr[js.Any] = js.undefined
         
         /**
           * Cache values expire after 5 minutes by default. You can adjust this
@@ -111,9 +101,7 @@ object global {
         
         var prefillExpires: js.UndefOr[Double] = js.undefined
         
-        var prefillSuccess: js.UndefOr[
-                js.Function3[/* self */ js.Any, /* attributes */ js.Any, /* opts */ this.type, Unit]
-              ] = js.undefined
+        var prefillSuccess: js.UndefOr[js.Function3[/* self */ Any, /* attributes */ Any, /* opts */ this.type, Unit]] = js.undefined
       }
       object ModelFetchWithCacheOptions {
         
@@ -123,14 +111,6 @@ object global {
         }
         
         extension [Self <: ModelFetchWithCacheOptions](x: Self) {
-          
-          inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
-          
-          inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
-          
-          inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-          
-          inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
           
           inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
           
@@ -142,7 +122,7 @@ object global {
           
           inline def setPrefillExpiresUndefined: Self = StObject.set(x, "prefillExpires", js.undefined)
           
-          inline def setPrefillSuccess(value: (/* self */ js.Any, /* attributes */ js.Any, ModelFetchWithCacheOptions) => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction3(value))
+          inline def setPrefillSuccess(value: (/* self */ Any, /* attributes */ Any, ModelFetchWithCacheOptions) => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction3(value))
           
           inline def setPrefillSuccessUndefined: Self = StObject.set(x, "prefillSuccess", js.undefined)
           
@@ -151,8 +131,7 @@ object global {
       }
       
       @js.native
-      trait ModelWithCache
-        extends Model[js.Any, ModelSetOptions, js.Object] {
+      trait ModelWithCache extends Model[Any, ModelSetOptions, Any] {
         
         def fetch(options: typings.backboneFetchCache.mod.backboneAugmentingMod.ModelFetchWithCacheOptions): JQueryXHR = js.native
       }

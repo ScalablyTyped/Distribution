@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.SyntaxKind.DotToken
   - typings.typescript.mod.SyntaxKind.Identifier
   - typings.typescript.mod.SyntaxKind.BacktickToken
+  - typings.typescript.mod.SyntaxKind.HashToken
   - typings.typescript.mod.SyntaxKind.Unknown
   - typings.typescript.mod.KeywordSyntaxKind
 */

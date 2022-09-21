@@ -22,6 +22,6 @@ object GoogleCloudDialogflowCxV3ResponseMessageMixedAudio {
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment*): Self = StObject.set(x, "segments", js.Array(value*))
   }
 }

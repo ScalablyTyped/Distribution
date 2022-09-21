@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAccountAliasesResponse extends StObject {
   
   /**
-    * A list of aliases associated with the account. AWS supports only one alias per account.
+    * A list of aliases associated with the account. Amazon Web Services supports only one alias per account.
     */
   var AccountAliases: accountAliasListType
   
@@ -32,7 +32,7 @@ object ListAccountAliasesResponse {
     
     inline def setAccountAliases(value: accountAliasListType): Self = StObject.set(x, "AccountAliases", value.asInstanceOf[js.Any])
     
-    inline def setAccountAliasesVarargs(value: accountAliasType*): Self = StObject.set(x, "AccountAliases", js.Array(value :_*))
+    inline def setAccountAliasesVarargs(value: accountAliasType*): Self = StObject.set(x, "AccountAliases", js.Array(value*))
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

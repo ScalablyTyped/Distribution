@@ -1,7 +1,6 @@
 package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Key
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped postman-collection.postman-collection.CookieDefinition extends 'key' ? never : postman-collection.postman-collection.CookieDefinition */ @JSImport("postman-collection", "Cookie")
 @js.native
-class Cookie () extends PropertyBase[CookieDefinition] {
+open class Cookie () extends PropertyBase[CookieDefinition] {
   def this(options: CookieDefinition) = this()
   
   var domain: String = js.native
   
-  var expires: Date = js.native
+  var expires: js.Date = js.native
   
   var extensions: js.UndefOr[js.Array[Key]] = js.native
   
@@ -44,7 +43,7 @@ object Cookie {
   val ^ : js.Any = js.native
   
   /** Check whether an object is an instance of PostmanCookie. */
-  inline def isCookie(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCookie")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCookie(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCookie")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** Cookie header parser */
   inline def parse(str: String): CookieDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[CookieDefinition]

@@ -49,6 +49,10 @@ trait TraitsRecord extends StObject {
   
   val isp: js.UndefOr[String] = js.undefined
   
+  val mobile_country_code: js.UndefOr[String] = js.undefined
+  
+  val mobile_network_code: js.UndefOr[String] = js.undefined
+  
   val organization: js.UndefOr[String] = js.undefined
   
   val user_type: js.UndefOr[
@@ -119,6 +123,14 @@ object TraitsRecord {
     inline def setIsp(value: String): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
     
     inline def setIspUndefined: Self = StObject.set(x, "isp", js.undefined)
+    
+    inline def setMobile_country_code(value: String): Self = StObject.set(x, "mobile_country_code", value.asInstanceOf[js.Any])
+    
+    inline def setMobile_country_codeUndefined: Self = StObject.set(x, "mobile_country_code", js.undefined)
+    
+    inline def setMobile_network_code(value: String): Self = StObject.set(x, "mobile_network_code", value.asInstanceOf[js.Any])
+    
+    inline def setMobile_network_codeUndefined: Self = StObject.set(x, "mobile_network_code", js.undefined)
     
     inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.BitmapCache")
 @js.native
-class BitmapCache ()
+open class BitmapCache ()
   extends StObject
      with typings.easeljs.createjs.BitmapCache
 /* static members */

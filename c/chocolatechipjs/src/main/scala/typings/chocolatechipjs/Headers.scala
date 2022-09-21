@@ -11,19 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Headers extends StObject {
   
   def apply(): Unit = js.native
-  def apply(headers: js.Any): Unit = js.native
+  def apply(headers: Any): Unit = js.native
   
   def append(name: String, value: String): Unit = js.native
   
-  def delete(name: String): js.Any = js.native
+  def delete(name: String): Any = js.native
   
-  def forEach(callback: js.Function, thisArg: js.Any): js.Any = js.native
+  def forEach(callback: js.Function, thisArg: Any): Any = js.native
   
-  def get(name: String): js.Any = js.native
+  def get(name: String): Any = js.native
   
-  def getAll(name: String): js.Any = js.native
+  def getAll(name: String): Any = js.native
   
-  def has(name: String): js.Any = js.native
+  def has(name: String): Any = js.native
   
-  def set(name: String, value: String): js.Any = js.native
+  def set(name: String, value: String): Any = js.native
 }

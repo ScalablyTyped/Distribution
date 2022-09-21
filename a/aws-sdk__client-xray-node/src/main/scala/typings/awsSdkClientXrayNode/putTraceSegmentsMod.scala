@@ -8,5 +8,5 @@ object putTraceSegmentsMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/PutTraceSegments", "PutTraceSegments")
   @js.native
-  val PutTraceSegments: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val PutTraceSegments: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

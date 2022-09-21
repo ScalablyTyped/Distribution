@@ -8,7 +8,7 @@ object timeMod {
   
   @JSImport("nodegit/time", "Time")
   @js.native
-  class Time () extends StObject {
+  open class Time () extends StObject {
     
     def offset(): Double = js.native
     

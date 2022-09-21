@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ICustomInteger = typings.qlikVisualizationextensions.ExtensionAPI.ICustomNumber
+type ICustomInteger = ICustomNumber
 
 type func[T] = js.Function0[T]
 
-type valueOrfunc[T] = T | typings.qlikVisualizationextensions.ExtensionAPI.func[T]
+type valueOrfunc[T] = T | func[T]

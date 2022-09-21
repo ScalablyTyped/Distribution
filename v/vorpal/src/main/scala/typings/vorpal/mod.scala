@@ -3,6 +3,7 @@ package typings.vorpal
 import org.scalablytyped.runtime.StringDictionary
 import typings.vorpal.anon.Call
 import typings.vorpal.anon.Data
+import typings.vorpal.vorpalStrings.minimist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,17 +12,17 @@ object mod {
   
   @JSImport("vorpal", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Vorpal
   
   @JSImport("vorpal", "Catch")
   @js.native
-  class Catch () extends Command
+  open class Catch () extends Command
   
   @JSImport("vorpal", "Command")
   @js.native
-  class Command () extends StObject {
+  open class Command () extends StObject {
     
     var _cancel: js.UndefOr[Cancel] = js.native
     
@@ -60,7 +61,7 @@ object mod {
   
   @JSImport("vorpal", "CommandInstance")
   @js.native
-  class CommandInstance () extends StObject {
+  open class CommandInstance () extends StObject {
     
     def delimiter(value: String): Unit = js.native
     
@@ -72,11 +73,11 @@ object mod {
   
   @JSImport("vorpal", "Extension")
   @js.native
-  class Extension () extends StObject
+  open class Extension () extends StObject
   
   @JSImport("vorpal", "UI")
   @js.native
-  class UI () extends StObject {
+  open class UI () extends StObject {
     
     def cancel(): Unit = js.native
     
@@ -99,26 +100,45 @@ object mod {
   
   trait Args
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    var options: StringDictionary[js.Any]
+    var options: StringDictionary[Any]
   }
   object Args {
     
-    inline def apply(options: StringDictionary[js.Any]): Args = {
+    inline def apply(options: StringDictionary[Any]): Args = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
     extension [Self <: Args](x: Self) {
       
-      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
   type Cancel = js.Function0[Unit]
   
-  type PromptObject = StringDictionary[js.Any]
+  trait ParseOpts extends StObject {
+    
+    var use: js.UndefOr[minimist] = js.undefined
+  }
+  object ParseOpts {
+    
+    inline def apply(): ParseOpts = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ParseOpts]
+    }
+    
+    extension [Self <: ParseOpts](x: Self) {
+      
+      inline def setUse(value: minimist): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    }
+  }
+  
+  type PromptObject = StringDictionary[Any]
   
   @js.native
   trait Vorpal extends StObject {
@@ -150,6 +170,7 @@ object mod {
     def log(value: String, values: String*): this.type = js.native
     
     def parse(argv: js.Array[String]): this.type = js.native
+    def parse(argv: js.Array[String], opts: ParseOpts): this.type = js.native
     
     def pipe(value: js.Function1[/* stdout */ String, String]): this.type = js.native
     

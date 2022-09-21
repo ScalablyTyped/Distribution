@@ -1,7 +1,7 @@
 
 # Scala.js typings for webgme
 
-Typings are for version 2.42.0
+Typings are for version 2.42.1
 
 ## Library description:
 Web-based Generic Modeling Environment
@@ -10,10 +10,10 @@ Web-based Generic Modeling Environment
 | ------------------ | :-------------: |
 | Full name          | webgme |
 | Keywords           | webgme, gme, cooperative, modeling, editor, domain |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 8236 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 583.3333333333334 |
+| # stars            | 129.0 |
 
 ## Links
 - [Homepage](http://github.com/webgme/webgme)

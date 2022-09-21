@@ -1,24 +1,34 @@
 package typings.firebaseFirestore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Affects extends js.Object {
+trait Affects extends StObject {
+  
   var affects: js.UndefOr[js.Array[typings.firebaseFirestore.queryMod.Query]] = js.undefined
+  
   var removed: js.UndefOr[js.Array[typings.firebaseFirestore.queryMod.Query]] = js.undefined
 }
-
 object Affects {
-  @scala.inline
-  def apply(
-    affects: js.Array[typings.firebaseFirestore.queryMod.Query] = null,
-    removed: js.Array[typings.firebaseFirestore.queryMod.Query] = null
-  ): Affects = {
+  
+  inline def apply(): Affects = {
     val __obj = js.Dynamic.literal()
-    if (affects != null) __obj.updateDynamic("affects")(affects.asInstanceOf[js.Any])
-    if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Affects]
   }
+  
+  extension [Self <: Affects](x: Self) {
+    
+    inline def setAffects(value: js.Array[typings.firebaseFirestore.queryMod.Query]): Self = StObject.set(x, "affects", value.asInstanceOf[js.Any])
+    
+    inline def setAffectsUndefined: Self = StObject.set(x, "affects", js.undefined)
+    
+    inline def setAffectsVarargs(value: typings.firebaseFirestore.queryMod.Query*): Self = StObject.set(x, "affects", js.Array(value*))
+    
+    inline def setRemoved(value: js.Array[typings.firebaseFirestore.queryMod.Query]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    
+    inline def setRemovedVarargs(value: typings.firebaseFirestore.queryMod.Query*): Self = StObject.set(x, "removed", js.Array(value*))
+  }
 }
-

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message for a unique key indicating a record that contains a finding.
-  */
 trait SchemaGooglePrivacyDlpV2RecordKey extends StObject {
   
   var bigQueryKey: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryKey] = js.undefined
@@ -14,10 +11,9 @@ trait SchemaGooglePrivacyDlpV2RecordKey extends StObject {
   var datastoreKey: js.UndefOr[SchemaGooglePrivacyDlpV2DatastoreKey] = js.undefined
   
   /**
-    * Values of identifying columns in the given row. Order of values matches
-    * the order of field identifiers specified in the scanning request.
+    * Values of identifying columns in the given row. Order of values matches the order of `identifying_fields` specified in the scanning request.
     */
-  var idValues: js.UndefOr[js.Array[String]] = js.undefined
+  var idValues: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2RecordKey {
   
@@ -38,8 +34,10 @@ object SchemaGooglePrivacyDlpV2RecordKey {
     
     inline def setIdValues(value: js.Array[String]): Self = StObject.set(x, "idValues", value.asInstanceOf[js.Any])
     
+    inline def setIdValuesNull: Self = StObject.set(x, "idValues", null)
+    
     inline def setIdValuesUndefined: Self = StObject.set(x, "idValues", js.undefined)
     
-    inline def setIdValuesVarargs(value: String*): Self = StObject.set(x, "idValues", js.Array(value :_*))
+    inline def setIdValuesVarargs(value: String*): Self = StObject.set(x, "idValues", js.Array(value*))
   }
 }

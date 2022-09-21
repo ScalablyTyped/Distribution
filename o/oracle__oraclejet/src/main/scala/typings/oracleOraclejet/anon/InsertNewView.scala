@@ -17,7 +17,7 @@ trait InsertNewView extends StObject {
   
   var node: Node
   
-  var oldDomNodes: js.Array[js.Any]
+  var oldDomNodes: js.Array[Any]
   
   var oldViewModel: js.Object
   
@@ -33,7 +33,7 @@ object InsertNewView {
     newViewModel: js.Object,
     newViewParent: Node,
     node: Node,
-    oldDomNodes: js.Array[js.Any],
+    oldDomNodes: js.Array[Any],
     oldViewModel: js.Object,
     oldViewParent: Node,
     removeOldView: () => Unit
@@ -54,9 +54,9 @@ object InsertNewView {
     
     inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    inline def setOldDomNodes(value: js.Array[js.Any]): Self = StObject.set(x, "oldDomNodes", value.asInstanceOf[js.Any])
+    inline def setOldDomNodes(value: js.Array[Any]): Self = StObject.set(x, "oldDomNodes", value.asInstanceOf[js.Any])
     
-    inline def setOldDomNodesVarargs(value: js.Any*): Self = StObject.set(x, "oldDomNodes", js.Array(value :_*))
+    inline def setOldDomNodesVarargs(value: Any*): Self = StObject.set(x, "oldDomNodes", js.Array(value*))
     
     inline def setOldViewModel(value: js.Object): Self = StObject.set(x, "oldViewModel", value.asInstanceOf[js.Any])
     

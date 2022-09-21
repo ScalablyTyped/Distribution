@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Angle extends StObject {
   
-  /* private */ var _radians: js.Any
+  /* private */ var _radians: Any
   
   /**
     * Get value in degrees
@@ -22,7 +22,7 @@ trait Angle extends StObject {
 }
 object Angle {
   
-  inline def apply(_radians: js.Any, degrees: () => Double, radians: () => Double): Angle = {
+  inline def apply(_radians: Any, degrees: () => Double, radians: () => Double): Angle = {
     val __obj = js.Dynamic.literal(_radians = _radians.asInstanceOf[js.Any], degrees = js.Any.fromFunction0(degrees), radians = js.Any.fromFunction0(radians))
     __obj.asInstanceOf[Angle]
   }
@@ -33,6 +33,6 @@ object Angle {
     
     inline def setRadians(value: () => Double): Self = StObject.set(x, "radians", js.Any.fromFunction0(value))
     
-    inline def set_radians(value: js.Any): Self = StObject.set(x, "_radians", value.asInstanceOf[js.Any])
+    inline def set_radians(value: Any): Self = StObject.set(x, "_radians", value.asInstanceOf[js.Any])
   }
 }

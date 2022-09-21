@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object inArrayMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(needle: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(needle: js.Any, haystack: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(needle: js.Any, haystack: js.Any, argStrict: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(needle: js.Any, haystack: Unit, argStrict: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(needle: Unit, haystack: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(needle: Unit, haystack: js.Any, argStrict: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(needle: Unit, haystack: Unit, argStrict: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(needle: Any): Any = ^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(needle: Any, haystack: Any): Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(needle: Any, haystack: Any, argStrict: Any): Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(needle: Any, haystack: Unit, argStrict: Any): Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(needle: Unit, haystack: Any): Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(needle: Unit, haystack: Any, argStrict: Any): Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(needle: Unit, haystack: Unit, argStrict: Any): Any = (^.asInstanceOf[js.Dynamic].apply(needle.asInstanceOf[js.Any], haystack.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/array/in_array", JSImport.Namespace)
   @js.native

@@ -23,21 +23,21 @@ trait Media
      with Instantiable3[
       /* src */ String, 
       /* mediaSuccess */ js.Function, 
-      /* mediaError */ js.Function1[/* mediaError */ MediaError, js.Any], 
+      /* mediaError */ js.Function1[/* mediaError */ MediaError, Any], 
       Media
     ]
      with Instantiable4[
       /* src */ String, 
       /* mediaSuccess */ js.Function, 
-      (/* mediaError */ js.Function1[/* mediaError */ MediaError, js.Any]) | (/* mediaError */ Unit), 
+      (/* mediaError */ js.Function1[/* mediaError */ MediaError, Any]) | (/* mediaError */ Unit), 
       /* mediaStatus */ js.Function, 
       Media
     ] {
   
   def getCurrentPosition(mediaSuccess: js.Function): Unit = js.native
-  def getCurrentPosition(mediaSuccess: js.Function, mediaError: js.Function1[/* mediaError */ MediaError, js.Any]): Unit = js.native
+  def getCurrentPosition(mediaSuccess: js.Function, mediaError: js.Function1[/* mediaError */ MediaError, Any]): Unit = js.native
   
-  def getDuration(): js.Any = js.native
+  def getDuration(): Any = js.native
   
   def pause(): Unit = js.native
   

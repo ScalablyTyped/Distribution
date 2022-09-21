@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "amazon-connect-streams" : "2.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "amazon-connect-streams" : "2.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAPICOM.EncodedData> */
 trait EncodedDataAsync
   extends StObject
-     with _Unpacked[js.Any] {
+     with _Unpacked[Any] {
   
   val Format: (// tslint:disable-line ban-types
   js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
@@ -45,7 +45,7 @@ object EncodedDataAsync {
     inline def setFormatFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
     inline def setValue(
@@ -59,8 +59,8 @@ object EncodedDataAsync {
       value: js.UndefOr[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | CAPICOM_ENCODING_TYPE
-        ] => js.Promise[Unpacked[js.Any]] | String
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any]) | CAPICOM_ENCODING_TYPE
+        ] => js.Promise[Unpacked[Any]] | String
     ): Self = StObject.set(x, "Value", js.Any.fromFunction1(value))
   }
 }

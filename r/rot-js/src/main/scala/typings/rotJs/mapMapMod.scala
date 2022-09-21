@@ -21,7 +21,7 @@ object mapMapMod {
     def this(width: Unit, height: Double) = this()
   }
   
-  type CreateCallback = js.Function3[/* x */ Double, /* y */ Double, /* contents */ Double, js.Any]
+  type CreateCallback = js.Function3[/* x */ Double, /* y */ Double, /* contents */ Double, Any]
   
   @js.native
   trait Map extends StObject {

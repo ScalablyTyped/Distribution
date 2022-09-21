@@ -114,7 +114,7 @@ trait ClassLevelDB
     * 
     * 
     */
-  def mget(keys: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def mget(keys: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * 
@@ -124,7 +124,7 @@ trait ClassLevelDB
     * 
     * 
     */
-  def mremove(keys: js.Array[js.Any]): Unit = js.native
+  def mremove(keys: js.Array[Any]): Unit = js.native
   
   /**
     * 

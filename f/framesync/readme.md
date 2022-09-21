@@ -1,7 +1,7 @@
 
 # Scala.js typings for framesync
 
-Typings are for version 4.1.0
+Typings are for version 6.1.2
 
 ## Library description:
 A frame-synced render loop for JavaScript
@@ -10,13 +10,13 @@ A frame-synced render loop for JavaScript
 | ------------------ | :-------------: |
 | Full name          | framesync |
 | Keywords           | animation, raf |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 13298456 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 6547081.333333333 |
+| # stars            | 18980.0 |
 
 ## Links
-- [Homepage](https://github.com/Popmotion/popmotion)
+- [Homepage](https://popmotion.io/)
 - [Bugs](https://github.com/Popmotion/popmotion/issues)
 - [Repository](https://github.com/Popmotion/popmotion)
 - [Npm](https://www.npmjs.com/package/framesync)

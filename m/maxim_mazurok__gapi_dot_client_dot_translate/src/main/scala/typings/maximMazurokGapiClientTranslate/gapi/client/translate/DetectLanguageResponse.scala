@@ -22,6 +22,6 @@ object DetectLanguageResponse {
     
     inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "languages", js.Array(value*))
   }
 }

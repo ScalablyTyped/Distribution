@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.babelTraverse.anon.Confident
 import typings.babelTraverse.anon.Container
-import typings.babelTraverse.anon.Existing
 import typings.babelTraverse.anon.FnCall
 import typings.babelTraverse.anon.Id
+import typings.babelTraverse.anon.Identifier
 import typings.babelTraverse.anon.Type
 import typings.babelTraverse.anon.Typeofvisitors
 import typings.babelTraverse.anon.`0`
@@ -167,6 +167,12 @@ import typings.babelTraverse.anon.`238`
 import typings.babelTraverse.anon.`239`
 import typings.babelTraverse.anon.`23`
 import typings.babelTraverse.anon.`240`
+import typings.babelTraverse.anon.`241`
+import typings.babelTraverse.anon.`242`
+import typings.babelTraverse.anon.`243`
+import typings.babelTraverse.anon.`244`
+import typings.babelTraverse.anon.`245`
+import typings.babelTraverse.anon.`246`
 import typings.babelTraverse.anon.`24`
 import typings.babelTraverse.anon.`25`
 import typings.babelTraverse.anon.`26`
@@ -251,10 +257,9 @@ import typings.babelTraverse.anon.`97`
 import typings.babelTraverse.anon.`98`
 import typings.babelTraverse.anon.`99`
 import typings.babelTraverse.anon.`9`
-import typings.babelTraverse.babelTraverseStrings.`var`
-import typings.babelTraverse.babelTraverseStrings.const
-import typings.babelTraverse.babelTraverseStrings.let
-import typings.babelTraverse.babelTraverseStrings.module
+import typings.babelTraverse.babelTraverseBooleans.`false`
+import typings.babelTraverse.babelTraverseBooleans.`true`
+import typings.babelTypes.mod.Accessor
 import typings.babelTypes.mod.Binary
 import typings.babelTypes.mod.Block
 import typings.babelTypes.mod.BlockParent
@@ -283,6 +288,7 @@ import typings.babelTypes.mod.LVal
 import typings.babelTypes.mod.Literal
 import typings.babelTypes.mod.Loop
 import typings.babelTypes.mod.Method
+import typings.babelTypes.mod.Miscellaneous
 import typings.babelTypes.mod.ModuleDeclaration
 import typings.babelTypes.mod.ModuleSpecifier
 import typings.babelTypes.mod.Node
@@ -293,17 +299,19 @@ import typings.babelTypes.mod.Private
 import typings.babelTypes.mod.Property
 import typings.babelTypes.mod.Pureish
 import typings.babelTypes.mod.Scopable
+import typings.babelTypes.mod.Standardized
 import typings.babelTypes.mod.Statement
 import typings.babelTypes.mod.TSBaseType
 import typings.babelTypes.mod.TSEntityName
 import typings.babelTypes.mod.TSType
 import typings.babelTypes.mod.TSTypeElement
 import typings.babelTypes.mod.Terminatorless
+import typings.babelTypes.mod.TypeScript
 import typings.babelTypes.mod.UnaryLike
 import typings.babelTypes.mod.UserWhitespacable
 import typings.babelTypes.mod.While
-import typings.std.Error
 import typings.std.Extract
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -316,7 +324,7 @@ object mod {
       parent: js.UndefOr[Node | js.Array[Node] | Null],
       opts: js.UndefOr[TraverseOptions[Node]],
       scope: js.UndefOr[Scope],
-      state: js.UndefOr[js.Any],
+      state: js.UndefOr[Any],
       parentPath: js.UndefOr[NodePath[Node]]
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -356,10 +364,10 @@ object mod {
     @js.native
     def explode: FnCall = js.native
     inline def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
-      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
-      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any]]
+    {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
+      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
+      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[Any]]
     inline def explode_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("explode")(x.asInstanceOf[js.Any])
     
     @JSImport("@babel/traverse", "default.verify")
@@ -376,18 +384,32 @@ object mod {
   
   @JSImport("@babel/traverse", "Binding")
   @js.native
-  class Binding protected () extends StObject {
-    def this(opts: Existing) = this()
+  open class Binding protected () extends StObject {
+    def this(opts: Identifier) = this()
+    
+    def clearValue(): Unit = js.native
     
     var constant: Boolean = js.native
     
     var constantViolations: js.Array[NodePath[Node]] = js.native
     
+    def deopValue(): Unit = js.native
+    
+    def dereference(): Unit = js.native
+    
+    var hasDeoptedValue: js.UndefOr[Boolean] = js.native
+    
+    var hasValue: js.UndefOr[Boolean] = js.native
+    
     var identifier: Identifier_ = js.native
     
-    var kind: `var` | let | const | module = js.native
+    var kind: BindingKind = js.native
     
     var path: NodePath[Node] = js.native
+    
+    def reassign(path: NodePath[Node]): Unit = js.native
+    
+    def reference(path: NodePath[Node]): Unit = js.native
     
     var referencePaths: js.Array[NodePath[Node]] = js.native
     
@@ -396,19 +418,23 @@ object mod {
     var references: Double = js.native
     
     var scope: Scope = js.native
+    
+    def setValue(value: Any): Unit = js.native
+    
+    var value: js.UndefOr[Any] = js.native
   }
   
   @JSImport("@babel/traverse", "Hub")
   @js.native
-  class Hub ()
+  open class Hub ()
     extends StObject
        with HubInterface {
     
     /* CompleteClass */
-    override def addHelper(name: String): js.Any = js.native
+    override def addHelper(name: String): Any = js.native
     
     /* CompleteClass */
-    override def buildError[E /* <: Error */](node: Node, msg: String, Error: Instantiable1[/* message */ js.UndefOr[String], E]): E = js.native
+    override def buildError[E /* <: js.Error */](node: Node, msg: String, Error: Instantiable1[/* message */ js.UndefOr[String], E]): E = js.native
     
     /* CompleteClass */
     override def getCode(): js.UndefOr[String] = js.native
@@ -419,14 +445,14 @@ object mod {
   
   @JSImport("@babel/traverse", "NodePath")
   @js.native
-  class NodePath[T] protected () extends StObject {
+  open class NodePath[T] protected () extends StObject {
     def this(hub: Hub, parent: Node) = this()
     
     def addComment(`type`: String, content: String): Unit = js.native
     def addComment(`type`: String, content: String, line: Boolean): Unit = js.native
     
     /** Give node `comments` of the specified `type`. */
-    def addComments(`type`: String, comments: js.Array[js.Any]): Unit = js.native
+    def addComments(`type`: String, comments: js.Array[Any]): Unit = js.native
     
     //#endregion
     //#region ------------------------- assertXXX -------------------------
@@ -1267,8 +1293,8 @@ object mod {
     
     def baseTypeStrictlyMatches(right: NodePath[Node]): Boolean = js.native
     
-    def buildCodeFrameError[TError /* <: Error */](msg: String): TError = js.native
-    def buildCodeFrameError[TError /* <: Error */](msg: String, Error: Instantiable1[/* msg */ String, TError]): TError = js.native
+    def buildCodeFrameError[TError /* <: js.Error */](msg: String): TError = js.native
+    def buildCodeFrameError[TError /* <: js.Error */](msg: String, Error: Instantiable1[/* msg */ String, TError]): TError = js.native
     
     //#endregion
     //#region ------------------------- context -------------------------
@@ -1308,7 +1334,7 @@ object mod {
     def debug(buildMessage: js.Function0[String]): Unit = js.native
     
     /** Check whether the path node `key` strict equals `value`. */
-    def equals(key: String, value: js.Any): Boolean = js.native
+    def equals(key: String, value: Any): Boolean = js.native
     
     /**
       * Walk the input `node` and statically evaluate it.
@@ -1356,27 +1382,15 @@ object mod {
     def get(key: String): NodePath[Node] | js.Array[NodePath[Node]] = js.native
     def get(key: String, context: Boolean): NodePath[Node] | js.Array[NodePath[Node]] = js.native
     def get(key: String, context: TraversalContext): NodePath[Node] | js.Array[NodePath[Node]] = js.native
-    def get[K /* <: /* keyof T */ String */](key: K): (NodePath[
+    def get[K /* <: /* keyof T */ String */](key: K): NodePathResult[
         /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-      ]) | (js.Array[
-        NodePath[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
-        ]
-      ]) = js.native
-    def get[K /* <: /* keyof T */ String */](key: K, context: Boolean): (NodePath[
+      ] = js.native
+    def get[K /* <: /* keyof T */ String */](key: K, context: Boolean): NodePathResult[
         /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-      ]) | (js.Array[
-        NodePath[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
-        ]
-      ]) = js.native
-    def get[K /* <: /* keyof T */ String */](key: K, context: TraversalContext): (NodePath[
+      ] = js.native
+    def get[K /* <: /* keyof T */ String */](key: K, context: TraversalContext): NodePathResult[
         /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-      ]) | (js.Array[
-        NodePath[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
-        ]
-      ]) = js.native
+      ] = js.native
     
     def getAllNextSiblings(): js.Array[NodePath[Node]] = js.native
     
@@ -1389,13 +1403,30 @@ object mod {
       */
     def getAncestry(): Array[this.type | NodePath[Node]] = js.native
     
-    def getBindingIdentifiers(): js.Array[Node] = js.native
-    def getBindingIdentifiers(duplicates: Boolean): js.Array[Node] = js.native
+    def getBindingIdentifierPaths(): Record[String, NodePath[Identifier_]] = js.native
+    def getBindingIdentifierPaths(duplicates: Boolean): Record[String, NodePath[Identifier_] | js.Array[NodePath[Identifier_]]] = js.native
+    def getBindingIdentifierPaths(duplicates: Boolean, outerOnly: Boolean): Record[String, NodePath[Identifier_] | js.Array[NodePath[Identifier_]]] = js.native
+    def getBindingIdentifierPaths(duplicates: Unit, outerOnly: Boolean): Record[String, NodePath[Identifier_]] = js.native
+    @JSName("getBindingIdentifierPaths")
+    def getBindingIdentifierPaths_false(duplicates: `false`): Record[String, NodePath[Identifier_]] = js.native
+    @JSName("getBindingIdentifierPaths")
+    def getBindingIdentifierPaths_false(duplicates: `false`, outerOnly: Boolean): Record[String, NodePath[Identifier_]] = js.native
+    @JSName("getBindingIdentifierPaths")
+    def getBindingIdentifierPaths_true(duplicates: `true`): Record[String, js.Array[NodePath[Identifier_]]] = js.native
+    @JSName("getBindingIdentifierPaths")
+    def getBindingIdentifierPaths_true(duplicates: `true`, outerOnly: Boolean): Record[String, js.Array[NodePath[Identifier_]]] = js.native
+    
+    def getBindingIdentifiers(): Record[String, Identifier_] = js.native
+    def getBindingIdentifiers(duplicates: Boolean): Record[String, Identifier_ | js.Array[Identifier_]] = js.native
+    @JSName("getBindingIdentifiers")
+    def getBindingIdentifiers_false(duplicates: `false`): Record[String, Identifier_] = js.native
+    @JSName("getBindingIdentifiers")
+    def getBindingIdentifiers_true(duplicates: `true`): Record[String, js.Array[Identifier_]] = js.native
     
     def getCompletionRecords(): js.Array[NodePath[Node]] = js.native
     
-    def getData(key: String): js.Any = js.native
-    def getData(key: String, `def`: js.Any): js.Any = js.native
+    def getData(key: String): Any = js.native
+    def getData(key: String, `def`: Any): Any = js.native
     
     /** Get the earliest path in the tree where the provided `paths` intersect. */
     def getDeepestCommonAncestorFrom(paths: js.Array[NodePath[Node]]): NodePath[Node] = js.native
@@ -1421,14 +1452,31 @@ object mod {
     /** Get the parent function of the current path. */
     def getFunctionParent(): NodePath[Function] | Null = js.native
     
+    def getNextSibling(): NodePath[Node] = js.native
+    
     //#endregion
     //#region ------------------------- family -------------------------
     def getOpposite(): NodePath[Node] = js.native
     
-    def getOuterBindingIdentifiers(): js.Array[Node] = js.native
-    def getOuterBindingIdentifiers(duplicates: Boolean): js.Array[Node] = js.native
+    def getOuterBindingIdentifierPaths(): Record[String, NodePath[Identifier_]] = js.native
+    def getOuterBindingIdentifierPaths(duplicates: Boolean): Record[String, NodePath[Identifier_] | js.Array[NodePath[Identifier_]]] = js.native
+    def getOuterBindingIdentifierPaths(duplicates: Boolean, outerOnly: Boolean): Record[String, NodePath[Identifier_] | js.Array[NodePath[Identifier_]]] = js.native
+    def getOuterBindingIdentifierPaths(duplicates: Unit, outerOnly: Boolean): Record[String, NodePath[Identifier_] | js.Array[NodePath[Identifier_]]] = js.native
+    @JSName("getOuterBindingIdentifierPaths")
+    def getOuterBindingIdentifierPaths_false(duplicates: `false`): Record[String, NodePath[Identifier_]] = js.native
+    @JSName("getOuterBindingIdentifierPaths")
+    def getOuterBindingIdentifierPaths_true(duplicates: `true`): Record[String, js.Array[NodePath[Identifier_]]] = js.native
+    
+    def getOuterBindingIdentifiers(): Record[String, Identifier_] = js.native
+    def getOuterBindingIdentifiers(duplicates: Boolean): Record[String, Identifier_ | js.Array[Identifier_]] = js.native
+    @JSName("getOuterBindingIdentifiers")
+    def getOuterBindingIdentifiers_false(duplicates: `false`): Record[String, Identifier_] = js.native
+    @JSName("getOuterBindingIdentifiers")
+    def getOuterBindingIdentifiers_true(duplicates: `true`): Record[String, js.Array[Identifier_]] = js.native
     
     def getPathLocation(): String = js.native
+    
+    def getPrevSibling(): NodePath[Node] = js.native
     
     def getScope(scope: Scope): Scope = js.native
     
@@ -1451,6 +1499,8 @@ object mod {
       * if the array has any items, otherwise we just check if it's falsy.
       */
     def has(key: String): Boolean = js.native
+    
+    def hasNode(): /* is @babel/traverse.@babel/traverse.NodePath<std.NonNullable<this['node']>> */ Boolean = js.native
     
     /** Hoist the current node to the highest scope possible and return a UID referencing it. */
     def hoist(scope: Scope): Unit = js.native
@@ -2373,7 +2423,7 @@ object mod {
     
     var parentKey: String = js.native
     
-    var parentPath: NodePath[Node] = js.native
+    var parentPath: NodePath[Node] | Null = js.native
     
     def popContext(): Unit = js.native
     
@@ -2426,15 +2476,16 @@ object mod {
       * transforming ASTs is an antipattern and SHOULD NOT be encouraged. Even if it's
       * easier to use, your transforms will be extremely brittle.
       */
-    def replaceWithSourceString(replacement: js.Any): js.Array[NodePath[Node]] = js.native
+    def replaceWithSourceString(replacement: Any): js.Array[NodePath[Node]] = js.native
     
     var scope: Scope = js.native
     
     def set(key: String, node: Node): Unit = js.native
     
-    def setContext(context: TraversalContext): NodePath[T] = js.native
+    def setContext(): this.type = js.native
+    def setContext(context: TraversalContext): this.type = js.native
     
-    def setData(key: String, `val`: js.Any): js.Any = js.native
+    def setData(key: String, `val`: Any): Any = js.native
     
     def setScope(): Unit = js.native
     
@@ -2453,7 +2504,7 @@ object mod {
     
     var skipKeys: js.Object = js.native
     
-    var state: js.Any = js.native
+    var state: Any = js.native
     
     def stop(): Unit = js.native
     
@@ -2497,7 +2548,7 @@ object mod {
   
   @JSImport("@babel/traverse", "Scope")
   @js.native
-  class Scope protected () extends StObject {
+  open class Scope protected () extends StObject {
     def this(path: NodePath[Node]) = this()
     def this(path: NodePath[Node], parentScope: Scope) = this()
     
@@ -2511,7 +2562,9 @@ object mod {
     
     def buildUndefinedNode(): Node = js.native
     
-    def checkBlockScopedCollisions(local: Node, kind: String, name: String, id: js.Object): Unit = js.native
+    def checkBlockScopedCollisions(local: Binding, kind: BindingKind, name: String, id: js.Object): Unit = js.native
+    
+    def crawl(): Unit = js.native
     
     def dump(): Unit = js.native
     
@@ -2540,7 +2593,7 @@ object mod {
     
     def getBlockParent(): Scope = js.native
     
-    def getData(key: String): js.Any = js.native
+    def getData(key: String): Any = js.native
     
     def getFunctionParent(): Scope | Null = js.native
     
@@ -2613,22 +2666,24 @@ object mod {
     def rename(oldName: String, newName: String, block: Node): Unit = js.native
     def rename(oldName: String, newName: Unit, block: Node): Unit = js.native
     
-    def setData(key: String, `val`: js.Any): js.Any = js.native
+    def setData(key: String, `val`: Any): Any = js.native
     
     def toArray(node: Node): Node = js.native
     def toArray(node: Node, i: Double): Node = js.native
     
     def traverse(node: js.Array[Node]): Unit = js.native
-    def traverse(node: js.Array[Node], opts: Unit, state: js.Any): Unit = js.native
+    def traverse(node: js.Array[Node], opts: Unit, state: Any): Unit = js.native
     def traverse(node: js.Array[Node], opts: TraverseOptions[Node]): Unit = js.native
-    def traverse(node: js.Array[Node], opts: TraverseOptions[Node], state: js.Any): Unit = js.native
+    def traverse(node: js.Array[Node], opts: TraverseOptions[Node], state: Any): Unit = js.native
     def traverse(node: Node): Unit = js.native
-    def traverse(node: Node, opts: Unit, state: js.Any): Unit = js.native
+    def traverse(node: Node, opts: Unit, state: Any): Unit = js.native
     def traverse(node: Node, opts: TraverseOptions[Node]): Unit = js.native
-    def traverse(node: Node, opts: TraverseOptions[Node], state: js.Any): Unit = js.native
-    def traverse[S](node: js.Array[Node], opts: TraverseOptions[S], state: S): Unit = js.native
+    def traverse(node: Node, opts: TraverseOptions[Node], state: Any): Unit = js.native
+    @JSName("traverse")
+    def traverse_S[S](node: js.Array[Node], opts: TraverseOptions[S], state: S): Unit = js.native
     /** Traverse node with current scope and path. */
-    def traverse[S](node: Node, opts: TraverseOptions[S], state: S): Unit = js.native
+    @JSName("traverse")
+    def traverse_S[S](node: Node, opts: TraverseOptions[S], state: S): Unit = js.native
   }
   
   object visitors {
@@ -2652,24 +2707,54 @@ object mod {
       * - `enter` and `exit` functions are wrapped in arrays, to ease merging of visitors
       */
     inline def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
-      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
-      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any]]
+    {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
+      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
+      */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[Any]]
     
-    inline def merge[S](visitors: js.Array[Visitor[S]]): Visitor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any]).asInstanceOf[Visitor[js.Any]]
-    inline def merge[S](visitors: js.Array[Visitor[S]], states: js.Array[S]): Visitor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any], states.asInstanceOf[js.Any])).asInstanceOf[Visitor[js.Any]]
+    inline def merge[S](visitors: js.Array[Visitor[S]]): Visitor[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any]).asInstanceOf[Visitor[Any]]
+    inline def merge[S](visitors: js.Array[Visitor[S]], states: js.Array[S]): Visitor[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any], states.asInstanceOf[js.Any])).asInstanceOf[Visitor[Any]]
     
     inline def verify(visitor: Visitor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  type ArrayKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P] extends std.Array<any>? P : never}[keyof T] */ js.Any
+  type ArrayKeys[T] = /* keyof {[ P in keyof T as T[P] extends std.Array<any>? P : never ]: P} */ String
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.babelTraverse.babelTraverseStrings.`var`
+    - typings.babelTraverse.babelTraverseStrings.let
+    - typings.babelTraverse.babelTraverseStrings.const
+    - typings.babelTraverse.babelTraverseStrings.module
+    - typings.babelTraverse.babelTraverseStrings.hoisted
+    - typings.babelTraverse.babelTraverseStrings.param
+    - typings.babelTraverse.babelTraverseStrings.local
+    - typings.babelTraverse.babelTraverseStrings.unknown
+  */
+  trait BindingKind extends StObject
+  object BindingKind {
+    
+    inline def const: typings.babelTraverse.babelTraverseStrings.const = "const".asInstanceOf[typings.babelTraverse.babelTraverseStrings.const]
+    
+    inline def hoisted: typings.babelTraverse.babelTraverseStrings.hoisted = "hoisted".asInstanceOf[typings.babelTraverse.babelTraverseStrings.hoisted]
+    
+    inline def let: typings.babelTraverse.babelTraverseStrings.let = "let".asInstanceOf[typings.babelTraverse.babelTraverseStrings.let]
+    
+    inline def local: typings.babelTraverse.babelTraverseStrings.local = "local".asInstanceOf[typings.babelTraverse.babelTraverseStrings.local]
+    
+    inline def module: typings.babelTraverse.babelTraverseStrings.module = "module".asInstanceOf[typings.babelTraverse.babelTraverseStrings.module]
+    
+    inline def param: typings.babelTraverse.babelTraverseStrings.param = "param".asInstanceOf[typings.babelTraverse.babelTraverseStrings.param]
+    
+    inline def unknown: typings.babelTraverse.babelTraverseStrings.unknown = "unknown".asInstanceOf[typings.babelTraverse.babelTraverseStrings.unknown]
+    
+    inline def `var`: typings.babelTraverse.babelTraverseStrings.`var` = "var".asInstanceOf[typings.babelTraverse.babelTraverseStrings.`var`]
+  }
   
   trait HubInterface extends StObject {
     
-    def addHelper(name: String): js.Any
+    def addHelper(name: String): Any
     
-    def buildError[E /* <: Error */](node: Node, msg: String, Error: Instantiable1[/* message */ js.UndefOr[String], E]): E
+    def buildError[E /* <: js.Error */](node: Node, msg: String, Error: Instantiable1[/* message */ js.UndefOr[String], E]): E
     
     def getCode(): js.UndefOr[String]
     
@@ -2678,8 +2763,8 @@ object mod {
   object HubInterface {
     
     inline def apply(
-      addHelper: String => js.Any,
-      buildError: (Node, String, Instantiable1[/* message */ js.UndefOr[String], js.Any]) => js.Any,
+      addHelper: String => Any,
+      buildError: (Node, String, Instantiable1[/* message */ js.UndefOr[String], Any]) => Any,
       getCode: () => js.UndefOr[String],
       getScope: () => js.UndefOr[Scope]
     ): HubInterface = {
@@ -2689,9 +2774,9 @@ object mod {
     
     extension [Self <: HubInterface](x: Self) {
       
-      inline def setAddHelper(value: String => js.Any): Self = StObject.set(x, "addHelper", js.Any.fromFunction1(value))
+      inline def setAddHelper(value: String => Any): Self = StObject.set(x, "addHelper", js.Any.fromFunction1(value))
       
-      inline def setBuildError(value: (Node, String, Instantiable1[/* message */ js.UndefOr[String], js.Any]) => js.Any): Self = StObject.set(x, "buildError", js.Any.fromFunction3(value))
+      inline def setBuildError(value: (Node, String, Instantiable1[/* message */ js.UndefOr[String], Any]) => Any): Self = StObject.set(x, "buildError", js.Any.fromFunction3(value))
       
       inline def setGetCode(value: () => js.UndefOr[String]): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
       
@@ -2699,36 +2784,940 @@ object mod {
     }
   }
   
+  type NodePathResult[T] = (NodePath[Extract[T, js.UndefOr[Node | Null]]]) | (js.Array[
+    NodePath[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
+    ]
+  ])
+  
   type NodePaths[T /* <: Node | js.Array[Node] */] = js.Array[NodePath[T]] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ K in keyof T ]: @babel/traverse.@babel/traverse.NodePath<std.Extract<T[K], @babel/types.@babel/types.Node>>}
     */ typings.babelTraverse.babelTraverseStrings.NodePaths & TopLevel[T])
   
+  /* Inlined @babel/traverse.@babel/traverse.Node['type'] | keyof @babel/types.@babel/types.Aliases */
+  /* Rewritten from type alias, can be one of: 
+    - typings.babelTraverse.babelTraverseStrings.ClassExpression
+    - typings.babelTraverse.babelTraverseStrings.TSArrayType
+    - typings.babelTraverse.babelTraverseStrings.Loop
+    - typings.babelTraverse.babelTraverseStrings.BreakStatement
+    - typings.babelTraverse.babelTraverseStrings.StringTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.ExportDefaultSpecifier
+    - typings.babelTraverse.babelTraverseStrings.EnumStringMember
+    - typings.babelTraverse.babelTraverseStrings.ReturnStatement
+    - typings.babelTraverse.babelTraverseStrings.TSInterfaceBody
+    - typings.babelTraverse.babelTraverseStrings.TSAsExpression
+    - typings.babelTraverse.babelTraverseStrings.InterfaceTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.BlockParent
+    - typings.babelTraverse.babelTraverseStrings.TSAnyKeyword
+    - typings.babelTraverse.babelTraverseStrings.TypeCastExpression
+    - typings.babelTraverse.babelTraverseStrings.YieldExpression
+    - typings.babelTraverse.babelTraverseStrings.ObjectTypeCallProperty
+    - typings.babelTraverse.babelTraverseStrings.TupleTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.Standardized
+    - typings.babelTraverse.babelTraverseStrings.TypeParameterDeclaration
+    - typings.babelTraverse.babelTraverseStrings.TSModuleDeclaration
+    - typings.babelTraverse.babelTraverseStrings.ForInStatement
+    - typings.babelTraverse.babelTraverseStrings.EnumMember
+    - typings.babelTraverse.babelTraverseStrings.TSConditionalType
+    - typings.babelTraverse.babelTraverseStrings.ImportDefaultSpecifier
+    - typings.babelTraverse.babelTraverseStrings.TSLiteralType
+    - typings.babelTraverse.babelTraverseStrings.TSTypeParameterDeclaration
+    - typings.babelTraverse.babelTraverseStrings.TypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.SpreadElement
+    - typings.babelTraverse.babelTraverseStrings.TryStatement
+    - typings.babelTraverse.babelTraverseStrings.BlockStatement
+    - typings.babelTraverse.babelTraverseStrings.Pattern
+    - typings.babelTraverse.babelTraverseStrings.RestElement
+    - typings.babelTraverse.babelTraverseStrings.While
+    - typings.babelTraverse.babelTraverseStrings.OptionalMemberExpression
+    - typings.babelTraverse.babelTraverseStrings.JSX
+    - typings.babelTraverse.babelTraverseStrings.File
+    - typings.babelTraverse.babelTraverseStrings.TSIndexedAccessType
+    - typings.babelTraverse.babelTraverseStrings.TSQualifiedName
+    - typings.babelTraverse.babelTraverseStrings.UserWhitespacable
+    - typings.babelTraverse.babelTraverseStrings.PipelinePrimaryTopicReference
+    - typings.babelTraverse.babelTraverseStrings.JSXExpressionContainer
+    - typings.babelTraverse.babelTraverseStrings.TSNullKeyword
+    - typings.babelTraverse.babelTraverseStrings.Noop
+    - typings.babelTraverse.babelTraverseStrings.DeclareModule
+    - typings.babelTraverse.babelTraverseStrings.FlowType
+    - typings.babelTraverse.babelTraverseStrings.LabeledStatement
+    - typings.babelTraverse.babelTraverseStrings.ExportAllDeclaration
+    - typings.babelTraverse.babelTraverseStrings.RegExpLiteral
+    - typings.babelTraverse.babelTraverseStrings.WhileStatement
+    - typings.babelTraverse.babelTraverseStrings.ContinueStatement
+    - typings.babelTraverse.babelTraverseStrings.Accessor
+    - typings.babelTraverse.babelTraverseStrings.FunctionTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.TSFunctionType
+    - typings.babelTraverse.babelTraverseStrings.NullLiteralTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.SwitchStatement
+    - typings.babelTraverse.babelTraverseStrings.OptionalCallExpression
+    - typings.babelTraverse.babelTraverseStrings.ExportNamedDeclaration
+    - typings.babelTraverse.babelTraverseStrings.CallExpression
+    - typings.babelTraverse.babelTraverseStrings.InterfaceDeclaration
+    - typings.babelTraverse.babelTraverseStrings.JSXSpreadAttribute
+    - typings.babelTraverse.babelTraverseStrings.SymbolTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.ThisTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.TSTypeOperator
+    - typings.babelTraverse.babelTraverseStrings.TSBigIntKeyword
+    - typings.babelTraverse.babelTraverseStrings.SwitchCase
+    - typings.babelTraverse.babelTraverseStrings.TSUnknownKeyword
+    - typings.babelTraverse.babelTraverseStrings.ArrayExpression
+    - typings.babelTraverse.babelTraverseStrings.MixedTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.ExportDeclaration
+    - typings.babelTraverse.babelTraverseStrings.TSVoidKeyword
+    - typings.babelTraverse.babelTraverseStrings.NewExpression
+    - typings.babelTraverse.babelTraverseStrings.MemberExpression
+    - typings.babelTraverse.babelTraverseStrings.RecordExpression
+    - typings.babelTraverse.babelTraverseStrings.Flow
+    - typings.babelTraverse.babelTraverseStrings.ExpressionStatement
+    - typings.babelTraverse.babelTraverseStrings.Directive
+    - typings.babelTraverse.babelTraverseStrings.AssignmentPattern
+    - typings.babelTraverse.babelTraverseStrings.AnyTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.TSIntrinsicKeyword
+    - typings.babelTraverse.babelTraverseStrings.EnumDeclaration
+    - typings.babelTraverse.babelTraverseStrings.VariableDeclaration
+    - typings.babelTraverse.babelTraverseStrings.IndexedAccessType
+    - typings.babelTraverse.babelTraverseStrings.LogicalExpression
+    - typings.babelTraverse.babelTraverseStrings.OpaqueType
+    - typings.babelTraverse.babelTraverseStrings.TaggedTemplateExpression
+    - typings.babelTraverse.babelTraverseStrings.JSXSpreadChild
+    - typings.babelTraverse.babelTraverseStrings.JSXOpeningElement
+    - typings.babelTraverse.babelTraverseStrings.QualifiedTypeIdentifier
+    - typings.babelTraverse.babelTraverseStrings.TSTypeParameterInstantiation
+    - typings.babelTraverse.babelTraverseStrings.TSDeclareMethod
+    - typings.babelTraverse.babelTraverseStrings.TypeScript
+    - typings.babelTraverse.babelTraverseStrings.TemplateLiteral
+    - typings.babelTraverse.babelTraverseStrings.BindExpression
+    - typings.babelTraverse.babelTraverseStrings.TSType
+    - typings.babelTraverse.babelTraverseStrings.ExportDefaultDeclaration
+    - typings.babelTraverse.babelTraverseStrings.ObjectTypeSpreadProperty
+    - typings.babelTraverse.babelTraverseStrings.Decorator
+    - typings.babelTraverse.babelTraverseStrings.MetaProperty
+    - typings.babelTraverse.babelTraverseStrings.ObjectTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.IfStatement
+    - typings.babelTraverse.babelTraverseStrings.ArrayTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.JSXIdentifier
+    - typings.babelTraverse.babelTraverseStrings.InterpreterDirective
+    - typings.babelTraverse.babelTraverseStrings.BinaryExpression
+    - typings.babelTraverse.babelTraverseStrings.ForXStatement
+    - typings.babelTraverse.babelTraverseStrings.TSNamespaceExportDeclaration
+    - typings.babelTraverse.babelTraverseStrings.TSEnumDeclaration
+    - typings.babelTraverse.babelTraverseStrings.TSTypeAliasDeclaration
+    - typings.babelTraverse.babelTraverseStrings.TSUnionType
+    - typings.babelTraverse.babelTraverseStrings.TSTypeParameter
+    - typings.babelTraverse.babelTraverseStrings.PrivateName
+    - typings.babelTraverse.babelTraverseStrings.WithStatement
+    - typings.babelTraverse.babelTraverseStrings.TSNonNullExpression
+    - typings.babelTraverse.babelTraverseStrings.NullableTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.Identifier
+    - typings.babelTraverse.babelTraverseStrings.UpdateExpression
+    - typings.babelTraverse.babelTraverseStrings.Terminatorless
+    - typings.babelTraverse.babelTraverseStrings.TSStringKeyword
+    - typings.babelTraverse.babelTraverseStrings.TopicReference
+    - typings.babelTraverse.babelTraverseStrings.JSXAttribute
+    - typings.babelTraverse.babelTraverseStrings.TSInferType
+    - typings.babelTraverse.babelTraverseStrings.DeclareFunction
+    - typings.babelTraverse.babelTraverseStrings.PatternLike
+    - typings.babelTraverse.babelTraverseStrings.PipelineTopicExpression
+    - typings.babelTraverse.babelTraverseStrings.VoidTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.Scopable
+    - typings.babelTraverse.babelTraverseStrings.EmptyStatement
+    - typings.babelTraverse.babelTraverseStrings.ClassDeclaration
+    - typings.babelTraverse.babelTraverseStrings.DeclareExportAllDeclaration
+    - typings.babelTraverse.babelTraverseStrings.StaticBlock
+    - typings.babelTraverse.babelTraverseStrings.TSTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.AwaitExpression
+    - typings.babelTraverse.babelTraverseStrings.ImportSpecifier
+    - typings.babelTraverse.babelTraverseStrings.ArrayPattern
+    - typings.babelTraverse.babelTraverseStrings.ExportSpecifier
+    - typings.babelTraverse.babelTraverseStrings.EnumBooleanMember
+    - typings.babelTraverse.babelTraverseStrings.TSPropertySignature
+    - typings.babelTraverse.babelTraverseStrings.ExistsTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.TSTypeQuery
+    - typings.babelTraverse.babelTraverseStrings.TSExternalModuleReference
+    - typings.babelTraverse.babelTraverseStrings.TSConstructSignatureDeclaration
+    - typings.babelTraverse.babelTraverseStrings.FlowPredicate
+    - typings.babelTraverse.babelTraverseStrings.ImportAttribute
+    - typings.babelTraverse.babelTraverseStrings.Method
+    - typings.babelTraverse.babelTraverseStrings.ObjectExpression
+    - typings.babelTraverse.babelTraverseStrings.JSXEmptyExpression
+    - typings.babelTraverse.babelTraverseStrings.ObjectMethod
+    - typings.babelTraverse.babelTraverseStrings.ModuleDeclaration
+    - typings.babelTraverse.babelTraverseStrings.Pureish
+    - typings.babelTraverse.babelTraverseStrings.TSTypeElement
+    - typings.babelTraverse.babelTraverseStrings.TSSymbolKeyword
+    - typings.babelTraverse.babelTraverseStrings.TSMappedType
+    - typings.babelTraverse.babelTraverseStrings.JSXClosingElement
+    - typings.babelTraverse.babelTraverseStrings.VariableDeclarator
+    - typings.babelTraverse.babelTraverseStrings.TSEntityName
+    - typings.babelTraverse.babelTraverseStrings.ObjectMember
+    - typings.babelTraverse.babelTraverseStrings.StringLiteral
+    - typings.babelTraverse.babelTraverseStrings.BooleanLiteral
+    - typings.babelTraverse.babelTraverseStrings.TSEnumMember
+    - typings.babelTraverse.babelTraverseStrings.InferredPredicate
+    - typings.babelTraverse.babelTraverseStrings.AssignmentExpression
+    - typings.babelTraverse.babelTraverseStrings.FunctionDeclaration
+    - typings.babelTraverse.babelTraverseStrings.EnumBooleanBody
+    - typings.babelTraverse.babelTraverseStrings.FlowBaseAnnotation
+    - typings.babelTraverse.babelTraverseStrings.For
+    - typings.babelTraverse.babelTraverseStrings.ModuleSpecifier
+    - typings.babelTraverse.babelTraverseStrings.DebuggerStatement
+    - typings.babelTraverse.babelTraverseStrings.InterfaceExtends
+    - typings.babelTraverse.babelTraverseStrings.ThrowStatement
+    - typings.babelTraverse.babelTraverseStrings.V8IntrinsicIdentifier
+    - typings.babelTraverse.babelTraverseStrings.EmptyTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.Property
+    - typings.babelTraverse.babelTraverseStrings.DirectiveLiteral
+    - typings.babelTraverse.babelTraverseStrings.ObjectProperty
+    - typings.babelTraverse.babelTraverseStrings.TSExportAssignment
+    - typings.babelTraverse.babelTraverseStrings.OptionalIndexedAccessType
+    - typings.babelTraverse.babelTraverseStrings.ArrowFunctionExpression
+    - typings.babelTraverse.babelTraverseStrings.ModuleExpression
+    - typings.babelTraverse.babelTraverseStrings.TSExpressionWithTypeArguments
+    - typings.babelTraverse.babelTraverseStrings.TypeofTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.TSCallSignatureDeclaration
+    - typings.babelTraverse.babelTraverseStrings.JSXFragment
+    - typings.babelTraverse.babelTraverseStrings.Literal
+    - typings.babelTraverse.babelTraverseStrings.Variance
+    - typings.babelTraverse.babelTraverseStrings.Declaration
+    - typings.babelTraverse.babelTraverseStrings.LVal
+    - typings.babelTraverse.babelTraverseStrings.JSXNamespacedName
+    - typings.babelTraverse.babelTraverseStrings.Program
+    - typings.babelTraverse.babelTraverseStrings.TSTypeLiteral
+    - typings.babelTraverse.babelTraverseStrings.NumberLiteralTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.DeclareExportDeclaration
+    - typings.babelTraverse.babelTraverseStrings.ObjectTypeProperty
+    - typings.babelTraverse.babelTraverseStrings.TSImportEqualsDeclaration
+    - typings.babelTraverse.babelTraverseStrings.DeclareInterface
+    - typings.babelTraverse.babelTraverseStrings.PipelineBareFunction
+    - typings.babelTraverse.babelTraverseStrings.EnumStringBody
+    - typings.babelTraverse.babelTraverseStrings.NumberTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.Super
+    - typings.babelTraverse.babelTraverseStrings.ForOfStatement
+    - typings.babelTraverse.babelTraverseStrings.DeclareTypeAlias
+    - typings.babelTraverse.babelTraverseStrings.Placeholder
+    - typings.babelTraverse.babelTraverseStrings.TSUndefinedKeyword
+    - typings.babelTraverse.babelTraverseStrings.ConditionalExpression
+    - typings.babelTraverse.babelTraverseStrings.Class
+    - typings.babelTraverse.babelTraverseStrings.SequenceExpression
+    - typings.babelTraverse.babelTraverseStrings.Import
+    - typings.babelTraverse.babelTraverseStrings.TypeParameter
+    - typings.babelTraverse.babelTraverseStrings.JSXElement
+    - typings.babelTraverse.babelTraverseStrings.ObjectTypeIndexer
+    - typings.babelTraverse.babelTraverseStrings.Function
+    - typings.babelTraverse.babelTraverseStrings.CatchClause
+    - typings.babelTraverse.babelTraverseStrings.Expression
+    - typings.babelTraverse.babelTraverseStrings.UnaryExpression
+    - typings.babelTraverse.babelTraverseStrings.BooleanLiteralTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.ExportNamespaceSpecifier
+    - typings.babelTraverse.babelTraverseStrings.Miscellaneous
+    - typings.babelTraverse.babelTraverseStrings.TypeAlias
+    - typings.babelTraverse.babelTraverseStrings.TSNumberKeyword
+    - typings.babelTraverse.babelTraverseStrings.Conditional
+    - typings.babelTraverse.babelTraverseStrings.DeclareVariable
+    - typings.babelTraverse.babelTraverseStrings.BooleanTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.BigIntLiteral
+    - typings.babelTraverse.babelTraverseStrings.ExpressionWrapper
+    - typings.babelTraverse.babelTraverseStrings.TSOptionalType
+    - typings.babelTraverse.babelTraverseStrings.TSTypePredicate
+    - typings.babelTraverse.babelTraverseStrings.TSInterfaceDeclaration
+    - typings.babelTraverse.babelTraverseStrings.DeclaredPredicate
+    - typings.babelTraverse.babelTraverseStrings.ClassMethod
+    - typings.babelTraverse.babelTraverseStrings.ForStatement
+    - typings.babelTraverse.babelTraverseStrings.Statement
+    - typings.babelTraverse.babelTraverseStrings.UnaryLike
+    - typings.babelTraverse.babelTraverseStrings.EnumDefaultedMember
+    - typings.babelTraverse.babelTraverseStrings.ClassProperty
+    - typings.babelTraverse.babelTraverseStrings.FunctionExpression
+    - typings.babelTraverse.babelTraverseStrings.FunctionParent
+    - typings.babelTraverse.babelTraverseStrings.TemplateElement
+    - typings.babelTraverse.babelTraverseStrings.JSXText
+    - typings.babelTraverse.babelTraverseStrings.TSParameterProperty
+    - typings.babelTraverse.babelTraverseStrings.JSXMemberExpression
+    - typings.babelTraverse.babelTraverseStrings.EnumSymbolBody
+    - typings.babelTraverse.babelTraverseStrings.TSTupleType
+    - typings.babelTraverse.babelTraverseStrings.DoWhileStatement
+    - typings.babelTraverse.babelTraverseStrings.TSBaseType
+    - typings.babelTraverse.babelTraverseStrings.TSDeclareFunction
+    - typings.babelTraverse.babelTraverseStrings.ImportNamespaceSpecifier
+    - typings.babelTraverse.babelTraverseStrings.TSMethodSignature
+    - typings.babelTraverse.babelTraverseStrings.ParenthesizedExpression
+    - typings.babelTraverse.babelTraverseStrings.EnumNumberMember
+    - typings.babelTraverse.babelTraverseStrings.Private
+    - typings.babelTraverse.babelTraverseStrings.DecimalLiteral
+    - typings.babelTraverse.babelTraverseStrings.TSIndexSignature
+    - typings.babelTraverse.babelTraverseStrings.Block
+    - typings.babelTraverse.babelTraverseStrings.TSThisType
+    - typings.babelTraverse.babelTraverseStrings.TupleExpression
+    - typings.babelTraverse.babelTraverseStrings.TSRestType
+    - typings.babelTraverse.babelTraverseStrings.JSXClosingFragment
+    - typings.babelTraverse.babelTraverseStrings.ClassImplements
+    - typings.babelTraverse.babelTraverseStrings.TSConstructorType
+    - typings.babelTraverse.babelTraverseStrings.ClassAccessorProperty
+    - typings.babelTraverse.babelTraverseStrings.IntersectionTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.TSInstantiationExpression
+    - typings.babelTraverse.babelTraverseStrings.NumericLiteral
+    - typings.babelTraverse.babelTraverseStrings.TSObjectKeyword
+    - typings.babelTraverse.babelTraverseStrings.DoExpression
+    - typings.babelTraverse.babelTraverseStrings.JSXOpeningFragment
+    - typings.babelTraverse.babelTraverseStrings.UnionTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.TSNamedTupleMember
+    - typings.babelTraverse.babelTraverseStrings.DeclareModuleExports
+    - typings.babelTraverse.babelTraverseStrings.ObjectPattern
+    - typings.babelTraverse.babelTraverseStrings.TSBooleanKeyword
+    - typings.babelTraverse.babelTraverseStrings.StringLiteralTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.TSParenthesizedType
+    - typings.babelTraverse.babelTraverseStrings.FunctionTypeParam
+    - typings.babelTraverse.babelTraverseStrings.DeclareOpaqueType
+    - typings.babelTraverse.babelTraverseStrings.ClassPrivateProperty
+    - typings.babelTraverse.babelTraverseStrings.TSModuleBlock
+    - typings.babelTraverse.babelTraverseStrings.ClassBody
+    - typings.babelTraverse.babelTraverseStrings.ObjectTypeInternalSlot
+    - typings.babelTraverse.babelTraverseStrings.ThisExpression
+    - typings.babelTraverse.babelTraverseStrings.ClassPrivateMethod
+    - typings.babelTraverse.babelTraverseStrings.TSTypeAssertion
+    - typings.babelTraverse.babelTraverseStrings.Binary
+    - typings.babelTraverse.babelTraverseStrings.TSNeverKeyword
+    - typings.babelTraverse.babelTraverseStrings.TSIntersectionType
+    - typings.babelTraverse.babelTraverseStrings.ArgumentPlaceholder
+    - typings.babelTraverse.babelTraverseStrings.EnumNumberBody
+    - typings.babelTraverse.babelTraverseStrings.TSImportType
+    - typings.babelTraverse.babelTraverseStrings.FlowDeclaration
+    - typings.babelTraverse.babelTraverseStrings.CompletionStatement
+    - typings.babelTraverse.babelTraverseStrings.DeclareClass
+    - typings.babelTraverse.babelTraverseStrings.ImportDeclaration
+    - typings.babelTraverse.babelTraverseStrings.Immutable
+    - typings.babelTraverse.babelTraverseStrings.GenericTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.EnumBody
+    - typings.babelTraverse.babelTraverseStrings.NullLiteral
+    - typings.babelTraverse.babelTraverseStrings.TypeParameterInstantiation
+    - typings.babelTraverse.babelTraverseStrings.TSTypeReference
+  */
+  trait NodeType extends StObject
+  object NodeType {
+    
+    inline def Accessor: typings.babelTraverse.babelTraverseStrings.Accessor = "Accessor".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Accessor]
+    
+    inline def AnyTypeAnnotation: typings.babelTraverse.babelTraverseStrings.AnyTypeAnnotation = "AnyTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.AnyTypeAnnotation]
+    
+    inline def ArgumentPlaceholder: typings.babelTraverse.babelTraverseStrings.ArgumentPlaceholder = "ArgumentPlaceholder".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ArgumentPlaceholder]
+    
+    inline def ArrayExpression: typings.babelTraverse.babelTraverseStrings.ArrayExpression = "ArrayExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ArrayExpression]
+    
+    inline def ArrayPattern: typings.babelTraverse.babelTraverseStrings.ArrayPattern = "ArrayPattern".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ArrayPattern]
+    
+    inline def ArrayTypeAnnotation: typings.babelTraverse.babelTraverseStrings.ArrayTypeAnnotation = "ArrayTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ArrayTypeAnnotation]
+    
+    inline def ArrowFunctionExpression: typings.babelTraverse.babelTraverseStrings.ArrowFunctionExpression = "ArrowFunctionExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ArrowFunctionExpression]
+    
+    inline def AssignmentExpression: typings.babelTraverse.babelTraverseStrings.AssignmentExpression = "AssignmentExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.AssignmentExpression]
+    
+    inline def AssignmentPattern: typings.babelTraverse.babelTraverseStrings.AssignmentPattern = "AssignmentPattern".asInstanceOf[typings.babelTraverse.babelTraverseStrings.AssignmentPattern]
+    
+    inline def AwaitExpression: typings.babelTraverse.babelTraverseStrings.AwaitExpression = "AwaitExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.AwaitExpression]
+    
+    inline def BigIntLiteral: typings.babelTraverse.babelTraverseStrings.BigIntLiteral = "BigIntLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BigIntLiteral]
+    
+    inline def Binary: typings.babelTraverse.babelTraverseStrings.Binary = "Binary".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Binary]
+    
+    inline def BinaryExpression: typings.babelTraverse.babelTraverseStrings.BinaryExpression = "BinaryExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BinaryExpression]
+    
+    inline def BindExpression: typings.babelTraverse.babelTraverseStrings.BindExpression = "BindExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BindExpression]
+    
+    inline def Block: typings.babelTraverse.babelTraverseStrings.Block = "Block".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Block]
+    
+    inline def BlockParent: typings.babelTraverse.babelTraverseStrings.BlockParent = "BlockParent".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BlockParent]
+    
+    inline def BlockStatement: typings.babelTraverse.babelTraverseStrings.BlockStatement = "BlockStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BlockStatement]
+    
+    inline def BooleanLiteral: typings.babelTraverse.babelTraverseStrings.BooleanLiteral = "BooleanLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BooleanLiteral]
+    
+    inline def BooleanLiteralTypeAnnotation: typings.babelTraverse.babelTraverseStrings.BooleanLiteralTypeAnnotation = "BooleanLiteralTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BooleanLiteralTypeAnnotation]
+    
+    inline def BooleanTypeAnnotation: typings.babelTraverse.babelTraverseStrings.BooleanTypeAnnotation = "BooleanTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BooleanTypeAnnotation]
+    
+    inline def BreakStatement: typings.babelTraverse.babelTraverseStrings.BreakStatement = "BreakStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.BreakStatement]
+    
+    inline def CallExpression: typings.babelTraverse.babelTraverseStrings.CallExpression = "CallExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.CallExpression]
+    
+    inline def CatchClause: typings.babelTraverse.babelTraverseStrings.CatchClause = "CatchClause".asInstanceOf[typings.babelTraverse.babelTraverseStrings.CatchClause]
+    
+    inline def Class: typings.babelTraverse.babelTraverseStrings.Class = "Class".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Class]
+    
+    inline def ClassAccessorProperty: typings.babelTraverse.babelTraverseStrings.ClassAccessorProperty = "ClassAccessorProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassAccessorProperty]
+    
+    inline def ClassBody: typings.babelTraverse.babelTraverseStrings.ClassBody = "ClassBody".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassBody]
+    
+    inline def ClassDeclaration: typings.babelTraverse.babelTraverseStrings.ClassDeclaration = "ClassDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassDeclaration]
+    
+    inline def ClassExpression: typings.babelTraverse.babelTraverseStrings.ClassExpression = "ClassExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassExpression]
+    
+    inline def ClassImplements: typings.babelTraverse.babelTraverseStrings.ClassImplements = "ClassImplements".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassImplements]
+    
+    inline def ClassMethod: typings.babelTraverse.babelTraverseStrings.ClassMethod = "ClassMethod".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassMethod]
+    
+    inline def ClassPrivateMethod: typings.babelTraverse.babelTraverseStrings.ClassPrivateMethod = "ClassPrivateMethod".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassPrivateMethod]
+    
+    inline def ClassPrivateProperty: typings.babelTraverse.babelTraverseStrings.ClassPrivateProperty = "ClassPrivateProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassPrivateProperty]
+    
+    inline def ClassProperty: typings.babelTraverse.babelTraverseStrings.ClassProperty = "ClassProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ClassProperty]
+    
+    inline def CompletionStatement: typings.babelTraverse.babelTraverseStrings.CompletionStatement = "CompletionStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.CompletionStatement]
+    
+    inline def Conditional: typings.babelTraverse.babelTraverseStrings.Conditional = "Conditional".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Conditional]
+    
+    inline def ConditionalExpression: typings.babelTraverse.babelTraverseStrings.ConditionalExpression = "ConditionalExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ConditionalExpression]
+    
+    inline def ContinueStatement: typings.babelTraverse.babelTraverseStrings.ContinueStatement = "ContinueStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ContinueStatement]
+    
+    inline def DebuggerStatement: typings.babelTraverse.babelTraverseStrings.DebuggerStatement = "DebuggerStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DebuggerStatement]
+    
+    inline def DecimalLiteral: typings.babelTraverse.babelTraverseStrings.DecimalLiteral = "DecimalLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DecimalLiteral]
+    
+    inline def Declaration: typings.babelTraverse.babelTraverseStrings.Declaration = "Declaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Declaration]
+    
+    inline def DeclareClass: typings.babelTraverse.babelTraverseStrings.DeclareClass = "DeclareClass".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareClass]
+    
+    inline def DeclareExportAllDeclaration: typings.babelTraverse.babelTraverseStrings.DeclareExportAllDeclaration = "DeclareExportAllDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareExportAllDeclaration]
+    
+    inline def DeclareExportDeclaration: typings.babelTraverse.babelTraverseStrings.DeclareExportDeclaration = "DeclareExportDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareExportDeclaration]
+    
+    inline def DeclareFunction: typings.babelTraverse.babelTraverseStrings.DeclareFunction = "DeclareFunction".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareFunction]
+    
+    inline def DeclareInterface: typings.babelTraverse.babelTraverseStrings.DeclareInterface = "DeclareInterface".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareInterface]
+    
+    inline def DeclareModule: typings.babelTraverse.babelTraverseStrings.DeclareModule = "DeclareModule".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareModule]
+    
+    inline def DeclareModuleExports: typings.babelTraverse.babelTraverseStrings.DeclareModuleExports = "DeclareModuleExports".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareModuleExports]
+    
+    inline def DeclareOpaqueType: typings.babelTraverse.babelTraverseStrings.DeclareOpaqueType = "DeclareOpaqueType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareOpaqueType]
+    
+    inline def DeclareTypeAlias: typings.babelTraverse.babelTraverseStrings.DeclareTypeAlias = "DeclareTypeAlias".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareTypeAlias]
+    
+    inline def DeclareVariable: typings.babelTraverse.babelTraverseStrings.DeclareVariable = "DeclareVariable".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclareVariable]
+    
+    inline def DeclaredPredicate: typings.babelTraverse.babelTraverseStrings.DeclaredPredicate = "DeclaredPredicate".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DeclaredPredicate]
+    
+    inline def Decorator: typings.babelTraverse.babelTraverseStrings.Decorator = "Decorator".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Decorator]
+    
+    inline def Directive: typings.babelTraverse.babelTraverseStrings.Directive = "Directive".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Directive]
+    
+    inline def DirectiveLiteral: typings.babelTraverse.babelTraverseStrings.DirectiveLiteral = "DirectiveLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DirectiveLiteral]
+    
+    inline def DoExpression: typings.babelTraverse.babelTraverseStrings.DoExpression = "DoExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DoExpression]
+    
+    inline def DoWhileStatement: typings.babelTraverse.babelTraverseStrings.DoWhileStatement = "DoWhileStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.DoWhileStatement]
+    
+    inline def EmptyStatement: typings.babelTraverse.babelTraverseStrings.EmptyStatement = "EmptyStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EmptyStatement]
+    
+    inline def EmptyTypeAnnotation: typings.babelTraverse.babelTraverseStrings.EmptyTypeAnnotation = "EmptyTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EmptyTypeAnnotation]
+    
+    inline def EnumBody: typings.babelTraverse.babelTraverseStrings.EnumBody = "EnumBody".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumBody]
+    
+    inline def EnumBooleanBody: typings.babelTraverse.babelTraverseStrings.EnumBooleanBody = "EnumBooleanBody".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumBooleanBody]
+    
+    inline def EnumBooleanMember: typings.babelTraverse.babelTraverseStrings.EnumBooleanMember = "EnumBooleanMember".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumBooleanMember]
+    
+    inline def EnumDeclaration: typings.babelTraverse.babelTraverseStrings.EnumDeclaration = "EnumDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumDeclaration]
+    
+    inline def EnumDefaultedMember: typings.babelTraverse.babelTraverseStrings.EnumDefaultedMember = "EnumDefaultedMember".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumDefaultedMember]
+    
+    inline def EnumMember: typings.babelTraverse.babelTraverseStrings.EnumMember = "EnumMember".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumMember]
+    
+    inline def EnumNumberBody: typings.babelTraverse.babelTraverseStrings.EnumNumberBody = "EnumNumberBody".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumNumberBody]
+    
+    inline def EnumNumberMember: typings.babelTraverse.babelTraverseStrings.EnumNumberMember = "EnumNumberMember".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumNumberMember]
+    
+    inline def EnumStringBody: typings.babelTraverse.babelTraverseStrings.EnumStringBody = "EnumStringBody".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumStringBody]
+    
+    inline def EnumStringMember: typings.babelTraverse.babelTraverseStrings.EnumStringMember = "EnumStringMember".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumStringMember]
+    
+    inline def EnumSymbolBody: typings.babelTraverse.babelTraverseStrings.EnumSymbolBody = "EnumSymbolBody".asInstanceOf[typings.babelTraverse.babelTraverseStrings.EnumSymbolBody]
+    
+    inline def ExistsTypeAnnotation: typings.babelTraverse.babelTraverseStrings.ExistsTypeAnnotation = "ExistsTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExistsTypeAnnotation]
+    
+    inline def ExportAllDeclaration: typings.babelTraverse.babelTraverseStrings.ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExportAllDeclaration]
+    
+    inline def ExportDeclaration: typings.babelTraverse.babelTraverseStrings.ExportDeclaration = "ExportDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExportDeclaration]
+    
+    inline def ExportDefaultDeclaration: typings.babelTraverse.babelTraverseStrings.ExportDefaultDeclaration = "ExportDefaultDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExportDefaultDeclaration]
+    
+    inline def ExportDefaultSpecifier: typings.babelTraverse.babelTraverseStrings.ExportDefaultSpecifier = "ExportDefaultSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExportDefaultSpecifier]
+    
+    inline def ExportNamedDeclaration: typings.babelTraverse.babelTraverseStrings.ExportNamedDeclaration = "ExportNamedDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExportNamedDeclaration]
+    
+    inline def ExportNamespaceSpecifier: typings.babelTraverse.babelTraverseStrings.ExportNamespaceSpecifier = "ExportNamespaceSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExportNamespaceSpecifier]
+    
+    inline def ExportSpecifier: typings.babelTraverse.babelTraverseStrings.ExportSpecifier = "ExportSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExportSpecifier]
+    
+    inline def Expression: typings.babelTraverse.babelTraverseStrings.Expression = "Expression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Expression]
+    
+    inline def ExpressionStatement: typings.babelTraverse.babelTraverseStrings.ExpressionStatement = "ExpressionStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExpressionStatement]
+    
+    inline def ExpressionWrapper: typings.babelTraverse.babelTraverseStrings.ExpressionWrapper = "ExpressionWrapper".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ExpressionWrapper]
+    
+    inline def File: typings.babelTraverse.babelTraverseStrings.File = "File".asInstanceOf[typings.babelTraverse.babelTraverseStrings.File]
+    
+    inline def Flow: typings.babelTraverse.babelTraverseStrings.Flow = "Flow".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Flow]
+    
+    inline def FlowBaseAnnotation: typings.babelTraverse.babelTraverseStrings.FlowBaseAnnotation = "FlowBaseAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FlowBaseAnnotation]
+    
+    inline def FlowDeclaration: typings.babelTraverse.babelTraverseStrings.FlowDeclaration = "FlowDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FlowDeclaration]
+    
+    inline def FlowPredicate: typings.babelTraverse.babelTraverseStrings.FlowPredicate = "FlowPredicate".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FlowPredicate]
+    
+    inline def FlowType: typings.babelTraverse.babelTraverseStrings.FlowType = "FlowType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FlowType]
+    
+    inline def For: typings.babelTraverse.babelTraverseStrings.For = "For".asInstanceOf[typings.babelTraverse.babelTraverseStrings.For]
+    
+    inline def ForInStatement: typings.babelTraverse.babelTraverseStrings.ForInStatement = "ForInStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ForInStatement]
+    
+    inline def ForOfStatement: typings.babelTraverse.babelTraverseStrings.ForOfStatement = "ForOfStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ForOfStatement]
+    
+    inline def ForStatement: typings.babelTraverse.babelTraverseStrings.ForStatement = "ForStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ForStatement]
+    
+    inline def ForXStatement: typings.babelTraverse.babelTraverseStrings.ForXStatement = "ForXStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ForXStatement]
+    
+    inline def Function: typings.babelTraverse.babelTraverseStrings.Function = "Function".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Function]
+    
+    inline def FunctionDeclaration: typings.babelTraverse.babelTraverseStrings.FunctionDeclaration = "FunctionDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FunctionDeclaration]
+    
+    inline def FunctionExpression: typings.babelTraverse.babelTraverseStrings.FunctionExpression = "FunctionExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FunctionExpression]
+    
+    inline def FunctionParent: typings.babelTraverse.babelTraverseStrings.FunctionParent = "FunctionParent".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FunctionParent]
+    
+    inline def FunctionTypeAnnotation: typings.babelTraverse.babelTraverseStrings.FunctionTypeAnnotation = "FunctionTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FunctionTypeAnnotation]
+    
+    inline def FunctionTypeParam: typings.babelTraverse.babelTraverseStrings.FunctionTypeParam = "FunctionTypeParam".asInstanceOf[typings.babelTraverse.babelTraverseStrings.FunctionTypeParam]
+    
+    inline def GenericTypeAnnotation: typings.babelTraverse.babelTraverseStrings.GenericTypeAnnotation = "GenericTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.GenericTypeAnnotation]
+    
+    inline def Identifier: typings.babelTraverse.babelTraverseStrings.Identifier = "Identifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Identifier]
+    
+    inline def IfStatement: typings.babelTraverse.babelTraverseStrings.IfStatement = "IfStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.IfStatement]
+    
+    inline def Immutable: typings.babelTraverse.babelTraverseStrings.Immutable = "Immutable".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Immutable]
+    
+    inline def Import: typings.babelTraverse.babelTraverseStrings.Import = "Import".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Import]
+    
+    inline def ImportAttribute: typings.babelTraverse.babelTraverseStrings.ImportAttribute = "ImportAttribute".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportAttribute]
+    
+    inline def ImportDeclaration: typings.babelTraverse.babelTraverseStrings.ImportDeclaration = "ImportDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportDeclaration]
+    
+    inline def ImportDefaultSpecifier: typings.babelTraverse.babelTraverseStrings.ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportDefaultSpecifier]
+    
+    inline def ImportNamespaceSpecifier: typings.babelTraverse.babelTraverseStrings.ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportNamespaceSpecifier]
+    
+    inline def ImportSpecifier: typings.babelTraverse.babelTraverseStrings.ImportSpecifier = "ImportSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportSpecifier]
+    
+    inline def IndexedAccessType: typings.babelTraverse.babelTraverseStrings.IndexedAccessType = "IndexedAccessType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.IndexedAccessType]
+    
+    inline def InferredPredicate: typings.babelTraverse.babelTraverseStrings.InferredPredicate = "InferredPredicate".asInstanceOf[typings.babelTraverse.babelTraverseStrings.InferredPredicate]
+    
+    inline def InterfaceDeclaration: typings.babelTraverse.babelTraverseStrings.InterfaceDeclaration = "InterfaceDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.InterfaceDeclaration]
+    
+    inline def InterfaceExtends: typings.babelTraverse.babelTraverseStrings.InterfaceExtends = "InterfaceExtends".asInstanceOf[typings.babelTraverse.babelTraverseStrings.InterfaceExtends]
+    
+    inline def InterfaceTypeAnnotation: typings.babelTraverse.babelTraverseStrings.InterfaceTypeAnnotation = "InterfaceTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.InterfaceTypeAnnotation]
+    
+    inline def InterpreterDirective: typings.babelTraverse.babelTraverseStrings.InterpreterDirective = "InterpreterDirective".asInstanceOf[typings.babelTraverse.babelTraverseStrings.InterpreterDirective]
+    
+    inline def IntersectionTypeAnnotation: typings.babelTraverse.babelTraverseStrings.IntersectionTypeAnnotation = "IntersectionTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.IntersectionTypeAnnotation]
+    
+    inline def JSX: typings.babelTraverse.babelTraverseStrings.JSX = "JSX".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSX]
+    
+    inline def JSXAttribute: typings.babelTraverse.babelTraverseStrings.JSXAttribute = "JSXAttribute".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXAttribute]
+    
+    inline def JSXClosingElement: typings.babelTraverse.babelTraverseStrings.JSXClosingElement = "JSXClosingElement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXClosingElement]
+    
+    inline def JSXClosingFragment: typings.babelTraverse.babelTraverseStrings.JSXClosingFragment = "JSXClosingFragment".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXClosingFragment]
+    
+    inline def JSXElement: typings.babelTraverse.babelTraverseStrings.JSXElement = "JSXElement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXElement]
+    
+    inline def JSXEmptyExpression: typings.babelTraverse.babelTraverseStrings.JSXEmptyExpression = "JSXEmptyExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXEmptyExpression]
+    
+    inline def JSXExpressionContainer: typings.babelTraverse.babelTraverseStrings.JSXExpressionContainer = "JSXExpressionContainer".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXExpressionContainer]
+    
+    inline def JSXFragment: typings.babelTraverse.babelTraverseStrings.JSXFragment = "JSXFragment".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXFragment]
+    
+    inline def JSXIdentifier: typings.babelTraverse.babelTraverseStrings.JSXIdentifier = "JSXIdentifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXIdentifier]
+    
+    inline def JSXMemberExpression: typings.babelTraverse.babelTraverseStrings.JSXMemberExpression = "JSXMemberExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXMemberExpression]
+    
+    inline def JSXNamespacedName: typings.babelTraverse.babelTraverseStrings.JSXNamespacedName = "JSXNamespacedName".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXNamespacedName]
+    
+    inline def JSXOpeningElement: typings.babelTraverse.babelTraverseStrings.JSXOpeningElement = "JSXOpeningElement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXOpeningElement]
+    
+    inline def JSXOpeningFragment: typings.babelTraverse.babelTraverseStrings.JSXOpeningFragment = "JSXOpeningFragment".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXOpeningFragment]
+    
+    inline def JSXSpreadAttribute: typings.babelTraverse.babelTraverseStrings.JSXSpreadAttribute = "JSXSpreadAttribute".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXSpreadAttribute]
+    
+    inline def JSXSpreadChild: typings.babelTraverse.babelTraverseStrings.JSXSpreadChild = "JSXSpreadChild".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXSpreadChild]
+    
+    inline def JSXText: typings.babelTraverse.babelTraverseStrings.JSXText = "JSXText".asInstanceOf[typings.babelTraverse.babelTraverseStrings.JSXText]
+    
+    inline def LVal: typings.babelTraverse.babelTraverseStrings.LVal = "LVal".asInstanceOf[typings.babelTraverse.babelTraverseStrings.LVal]
+    
+    inline def LabeledStatement: typings.babelTraverse.babelTraverseStrings.LabeledStatement = "LabeledStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.LabeledStatement]
+    
+    inline def Literal: typings.babelTraverse.babelTraverseStrings.Literal = "Literal".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Literal]
+    
+    inline def LogicalExpression: typings.babelTraverse.babelTraverseStrings.LogicalExpression = "LogicalExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.LogicalExpression]
+    
+    inline def Loop: typings.babelTraverse.babelTraverseStrings.Loop = "Loop".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Loop]
+    
+    inline def MemberExpression: typings.babelTraverse.babelTraverseStrings.MemberExpression = "MemberExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.MemberExpression]
+    
+    inline def MetaProperty: typings.babelTraverse.babelTraverseStrings.MetaProperty = "MetaProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.MetaProperty]
+    
+    inline def Method: typings.babelTraverse.babelTraverseStrings.Method = "Method".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Method]
+    
+    inline def Miscellaneous: typings.babelTraverse.babelTraverseStrings.Miscellaneous = "Miscellaneous".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Miscellaneous]
+    
+    inline def MixedTypeAnnotation: typings.babelTraverse.babelTraverseStrings.MixedTypeAnnotation = "MixedTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.MixedTypeAnnotation]
+    
+    inline def ModuleDeclaration: typings.babelTraverse.babelTraverseStrings.ModuleDeclaration = "ModuleDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ModuleDeclaration]
+    
+    inline def ModuleExpression: typings.babelTraverse.babelTraverseStrings.ModuleExpression = "ModuleExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ModuleExpression]
+    
+    inline def ModuleSpecifier: typings.babelTraverse.babelTraverseStrings.ModuleSpecifier = "ModuleSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ModuleSpecifier]
+    
+    inline def NewExpression: typings.babelTraverse.babelTraverseStrings.NewExpression = "NewExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.NewExpression]
+    
+    inline def Noop: typings.babelTraverse.babelTraverseStrings.Noop = "Noop".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Noop]
+    
+    inline def NullLiteral: typings.babelTraverse.babelTraverseStrings.NullLiteral = "NullLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.NullLiteral]
+    
+    inline def NullLiteralTypeAnnotation: typings.babelTraverse.babelTraverseStrings.NullLiteralTypeAnnotation = "NullLiteralTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.NullLiteralTypeAnnotation]
+    
+    inline def NullableTypeAnnotation: typings.babelTraverse.babelTraverseStrings.NullableTypeAnnotation = "NullableTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.NullableTypeAnnotation]
+    
+    inline def NumberLiteralTypeAnnotation: typings.babelTraverse.babelTraverseStrings.NumberLiteralTypeAnnotation = "NumberLiteralTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.NumberLiteralTypeAnnotation]
+    
+    inline def NumberTypeAnnotation: typings.babelTraverse.babelTraverseStrings.NumberTypeAnnotation = "NumberTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.NumberTypeAnnotation]
+    
+    inline def NumericLiteral: typings.babelTraverse.babelTraverseStrings.NumericLiteral = "NumericLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.NumericLiteral]
+    
+    inline def ObjectExpression: typings.babelTraverse.babelTraverseStrings.ObjectExpression = "ObjectExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectExpression]
+    
+    inline def ObjectMember: typings.babelTraverse.babelTraverseStrings.ObjectMember = "ObjectMember".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectMember]
+    
+    inline def ObjectMethod: typings.babelTraverse.babelTraverseStrings.ObjectMethod = "ObjectMethod".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectMethod]
+    
+    inline def ObjectPattern: typings.babelTraverse.babelTraverseStrings.ObjectPattern = "ObjectPattern".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectPattern]
+    
+    inline def ObjectProperty: typings.babelTraverse.babelTraverseStrings.ObjectProperty = "ObjectProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectProperty]
+    
+    inline def ObjectTypeAnnotation: typings.babelTraverse.babelTraverseStrings.ObjectTypeAnnotation = "ObjectTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectTypeAnnotation]
+    
+    inline def ObjectTypeCallProperty: typings.babelTraverse.babelTraverseStrings.ObjectTypeCallProperty = "ObjectTypeCallProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectTypeCallProperty]
+    
+    inline def ObjectTypeIndexer: typings.babelTraverse.babelTraverseStrings.ObjectTypeIndexer = "ObjectTypeIndexer".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectTypeIndexer]
+    
+    inline def ObjectTypeInternalSlot: typings.babelTraverse.babelTraverseStrings.ObjectTypeInternalSlot = "ObjectTypeInternalSlot".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectTypeInternalSlot]
+    
+    inline def ObjectTypeProperty: typings.babelTraverse.babelTraverseStrings.ObjectTypeProperty = "ObjectTypeProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectTypeProperty]
+    
+    inline def ObjectTypeSpreadProperty: typings.babelTraverse.babelTraverseStrings.ObjectTypeSpreadProperty = "ObjectTypeSpreadProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ObjectTypeSpreadProperty]
+    
+    inline def OpaqueType: typings.babelTraverse.babelTraverseStrings.OpaqueType = "OpaqueType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.OpaqueType]
+    
+    inline def OptionalCallExpression: typings.babelTraverse.babelTraverseStrings.OptionalCallExpression = "OptionalCallExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.OptionalCallExpression]
+    
+    inline def OptionalIndexedAccessType: typings.babelTraverse.babelTraverseStrings.OptionalIndexedAccessType = "OptionalIndexedAccessType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.OptionalIndexedAccessType]
+    
+    inline def OptionalMemberExpression: typings.babelTraverse.babelTraverseStrings.OptionalMemberExpression = "OptionalMemberExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.OptionalMemberExpression]
+    
+    inline def ParenthesizedExpression: typings.babelTraverse.babelTraverseStrings.ParenthesizedExpression = "ParenthesizedExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ParenthesizedExpression]
+    
+    inline def Pattern: typings.babelTraverse.babelTraverseStrings.Pattern = "Pattern".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Pattern]
+    
+    inline def PatternLike: typings.babelTraverse.babelTraverseStrings.PatternLike = "PatternLike".asInstanceOf[typings.babelTraverse.babelTraverseStrings.PatternLike]
+    
+    inline def PipelineBareFunction: typings.babelTraverse.babelTraverseStrings.PipelineBareFunction = "PipelineBareFunction".asInstanceOf[typings.babelTraverse.babelTraverseStrings.PipelineBareFunction]
+    
+    inline def PipelinePrimaryTopicReference: typings.babelTraverse.babelTraverseStrings.PipelinePrimaryTopicReference = "PipelinePrimaryTopicReference".asInstanceOf[typings.babelTraverse.babelTraverseStrings.PipelinePrimaryTopicReference]
+    
+    inline def PipelineTopicExpression: typings.babelTraverse.babelTraverseStrings.PipelineTopicExpression = "PipelineTopicExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.PipelineTopicExpression]
+    
+    inline def Placeholder: typings.babelTraverse.babelTraverseStrings.Placeholder = "Placeholder".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Placeholder]
+    
+    inline def Private: typings.babelTraverse.babelTraverseStrings.Private = "Private".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Private]
+    
+    inline def PrivateName: typings.babelTraverse.babelTraverseStrings.PrivateName = "PrivateName".asInstanceOf[typings.babelTraverse.babelTraverseStrings.PrivateName]
+    
+    inline def Program: typings.babelTraverse.babelTraverseStrings.Program = "Program".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Program]
+    
+    inline def Property: typings.babelTraverse.babelTraverseStrings.Property = "Property".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Property]
+    
+    inline def Pureish: typings.babelTraverse.babelTraverseStrings.Pureish = "Pureish".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Pureish]
+    
+    inline def QualifiedTypeIdentifier: typings.babelTraverse.babelTraverseStrings.QualifiedTypeIdentifier = "QualifiedTypeIdentifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.QualifiedTypeIdentifier]
+    
+    inline def RecordExpression: typings.babelTraverse.babelTraverseStrings.RecordExpression = "RecordExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.RecordExpression]
+    
+    inline def RegExpLiteral: typings.babelTraverse.babelTraverseStrings.RegExpLiteral = "RegExpLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.RegExpLiteral]
+    
+    inline def RestElement: typings.babelTraverse.babelTraverseStrings.RestElement = "RestElement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.RestElement]
+    
+    inline def ReturnStatement: typings.babelTraverse.babelTraverseStrings.ReturnStatement = "ReturnStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ReturnStatement]
+    
+    inline def Scopable: typings.babelTraverse.babelTraverseStrings.Scopable = "Scopable".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Scopable]
+    
+    inline def SequenceExpression: typings.babelTraverse.babelTraverseStrings.SequenceExpression = "SequenceExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.SequenceExpression]
+    
+    inline def SpreadElement: typings.babelTraverse.babelTraverseStrings.SpreadElement = "SpreadElement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.SpreadElement]
+    
+    inline def Standardized: typings.babelTraverse.babelTraverseStrings.Standardized = "Standardized".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Standardized]
+    
+    inline def Statement: typings.babelTraverse.babelTraverseStrings.Statement = "Statement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Statement]
+    
+    inline def StaticBlock: typings.babelTraverse.babelTraverseStrings.StaticBlock = "StaticBlock".asInstanceOf[typings.babelTraverse.babelTraverseStrings.StaticBlock]
+    
+    inline def StringLiteral: typings.babelTraverse.babelTraverseStrings.StringLiteral = "StringLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.StringLiteral]
+    
+    inline def StringLiteralTypeAnnotation: typings.babelTraverse.babelTraverseStrings.StringLiteralTypeAnnotation = "StringLiteralTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.StringLiteralTypeAnnotation]
+    
+    inline def StringTypeAnnotation: typings.babelTraverse.babelTraverseStrings.StringTypeAnnotation = "StringTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.StringTypeAnnotation]
+    
+    inline def Super: typings.babelTraverse.babelTraverseStrings.Super = "Super".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Super]
+    
+    inline def SwitchCase: typings.babelTraverse.babelTraverseStrings.SwitchCase = "SwitchCase".asInstanceOf[typings.babelTraverse.babelTraverseStrings.SwitchCase]
+    
+    inline def SwitchStatement: typings.babelTraverse.babelTraverseStrings.SwitchStatement = "SwitchStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.SwitchStatement]
+    
+    inline def SymbolTypeAnnotation: typings.babelTraverse.babelTraverseStrings.SymbolTypeAnnotation = "SymbolTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.SymbolTypeAnnotation]
+    
+    inline def TSAnyKeyword: typings.babelTraverse.babelTraverseStrings.TSAnyKeyword = "TSAnyKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSAnyKeyword]
+    
+    inline def TSArrayType: typings.babelTraverse.babelTraverseStrings.TSArrayType = "TSArrayType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSArrayType]
+    
+    inline def TSAsExpression: typings.babelTraverse.babelTraverseStrings.TSAsExpression = "TSAsExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSAsExpression]
+    
+    inline def TSBaseType: typings.babelTraverse.babelTraverseStrings.TSBaseType = "TSBaseType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSBaseType]
+    
+    inline def TSBigIntKeyword: typings.babelTraverse.babelTraverseStrings.TSBigIntKeyword = "TSBigIntKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSBigIntKeyword]
+    
+    inline def TSBooleanKeyword: typings.babelTraverse.babelTraverseStrings.TSBooleanKeyword = "TSBooleanKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSBooleanKeyword]
+    
+    inline def TSCallSignatureDeclaration: typings.babelTraverse.babelTraverseStrings.TSCallSignatureDeclaration = "TSCallSignatureDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSCallSignatureDeclaration]
+    
+    inline def TSConditionalType: typings.babelTraverse.babelTraverseStrings.TSConditionalType = "TSConditionalType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSConditionalType]
+    
+    inline def TSConstructSignatureDeclaration: typings.babelTraverse.babelTraverseStrings.TSConstructSignatureDeclaration = "TSConstructSignatureDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSConstructSignatureDeclaration]
+    
+    inline def TSConstructorType: typings.babelTraverse.babelTraverseStrings.TSConstructorType = "TSConstructorType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSConstructorType]
+    
+    inline def TSDeclareFunction: typings.babelTraverse.babelTraverseStrings.TSDeclareFunction = "TSDeclareFunction".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSDeclareFunction]
+    
+    inline def TSDeclareMethod: typings.babelTraverse.babelTraverseStrings.TSDeclareMethod = "TSDeclareMethod".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSDeclareMethod]
+    
+    inline def TSEntityName: typings.babelTraverse.babelTraverseStrings.TSEntityName = "TSEntityName".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSEntityName]
+    
+    inline def TSEnumDeclaration: typings.babelTraverse.babelTraverseStrings.TSEnumDeclaration = "TSEnumDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSEnumDeclaration]
+    
+    inline def TSEnumMember: typings.babelTraverse.babelTraverseStrings.TSEnumMember = "TSEnumMember".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSEnumMember]
+    
+    inline def TSExportAssignment: typings.babelTraverse.babelTraverseStrings.TSExportAssignment = "TSExportAssignment".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSExportAssignment]
+    
+    inline def TSExpressionWithTypeArguments: typings.babelTraverse.babelTraverseStrings.TSExpressionWithTypeArguments = "TSExpressionWithTypeArguments".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSExpressionWithTypeArguments]
+    
+    inline def TSExternalModuleReference: typings.babelTraverse.babelTraverseStrings.TSExternalModuleReference = "TSExternalModuleReference".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSExternalModuleReference]
+    
+    inline def TSFunctionType: typings.babelTraverse.babelTraverseStrings.TSFunctionType = "TSFunctionType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSFunctionType]
+    
+    inline def TSImportEqualsDeclaration: typings.babelTraverse.babelTraverseStrings.TSImportEqualsDeclaration = "TSImportEqualsDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSImportEqualsDeclaration]
+    
+    inline def TSImportType: typings.babelTraverse.babelTraverseStrings.TSImportType = "TSImportType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSImportType]
+    
+    inline def TSIndexSignature: typings.babelTraverse.babelTraverseStrings.TSIndexSignature = "TSIndexSignature".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSIndexSignature]
+    
+    inline def TSIndexedAccessType: typings.babelTraverse.babelTraverseStrings.TSIndexedAccessType = "TSIndexedAccessType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSIndexedAccessType]
+    
+    inline def TSInferType: typings.babelTraverse.babelTraverseStrings.TSInferType = "TSInferType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSInferType]
+    
+    inline def TSInstantiationExpression: typings.babelTraverse.babelTraverseStrings.TSInstantiationExpression = "TSInstantiationExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSInstantiationExpression]
+    
+    inline def TSInterfaceBody: typings.babelTraverse.babelTraverseStrings.TSInterfaceBody = "TSInterfaceBody".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSInterfaceBody]
+    
+    inline def TSInterfaceDeclaration: typings.babelTraverse.babelTraverseStrings.TSInterfaceDeclaration = "TSInterfaceDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSInterfaceDeclaration]
+    
+    inline def TSIntersectionType: typings.babelTraverse.babelTraverseStrings.TSIntersectionType = "TSIntersectionType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSIntersectionType]
+    
+    inline def TSIntrinsicKeyword: typings.babelTraverse.babelTraverseStrings.TSIntrinsicKeyword = "TSIntrinsicKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSIntrinsicKeyword]
+    
+    inline def TSLiteralType: typings.babelTraverse.babelTraverseStrings.TSLiteralType = "TSLiteralType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSLiteralType]
+    
+    inline def TSMappedType: typings.babelTraverse.babelTraverseStrings.TSMappedType = "TSMappedType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSMappedType]
+    
+    inline def TSMethodSignature: typings.babelTraverse.babelTraverseStrings.TSMethodSignature = "TSMethodSignature".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSMethodSignature]
+    
+    inline def TSModuleBlock: typings.babelTraverse.babelTraverseStrings.TSModuleBlock = "TSModuleBlock".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSModuleBlock]
+    
+    inline def TSModuleDeclaration: typings.babelTraverse.babelTraverseStrings.TSModuleDeclaration = "TSModuleDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSModuleDeclaration]
+    
+    inline def TSNamedTupleMember: typings.babelTraverse.babelTraverseStrings.TSNamedTupleMember = "TSNamedTupleMember".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSNamedTupleMember]
+    
+    inline def TSNamespaceExportDeclaration: typings.babelTraverse.babelTraverseStrings.TSNamespaceExportDeclaration = "TSNamespaceExportDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSNamespaceExportDeclaration]
+    
+    inline def TSNeverKeyword: typings.babelTraverse.babelTraverseStrings.TSNeverKeyword = "TSNeverKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSNeverKeyword]
+    
+    inline def TSNonNullExpression: typings.babelTraverse.babelTraverseStrings.TSNonNullExpression = "TSNonNullExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSNonNullExpression]
+    
+    inline def TSNullKeyword: typings.babelTraverse.babelTraverseStrings.TSNullKeyword = "TSNullKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSNullKeyword]
+    
+    inline def TSNumberKeyword: typings.babelTraverse.babelTraverseStrings.TSNumberKeyword = "TSNumberKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSNumberKeyword]
+    
+    inline def TSObjectKeyword: typings.babelTraverse.babelTraverseStrings.TSObjectKeyword = "TSObjectKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSObjectKeyword]
+    
+    inline def TSOptionalType: typings.babelTraverse.babelTraverseStrings.TSOptionalType = "TSOptionalType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSOptionalType]
+    
+    inline def TSParameterProperty: typings.babelTraverse.babelTraverseStrings.TSParameterProperty = "TSParameterProperty".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSParameterProperty]
+    
+    inline def TSParenthesizedType: typings.babelTraverse.babelTraverseStrings.TSParenthesizedType = "TSParenthesizedType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSParenthesizedType]
+    
+    inline def TSPropertySignature: typings.babelTraverse.babelTraverseStrings.TSPropertySignature = "TSPropertySignature".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSPropertySignature]
+    
+    inline def TSQualifiedName: typings.babelTraverse.babelTraverseStrings.TSQualifiedName = "TSQualifiedName".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSQualifiedName]
+    
+    inline def TSRestType: typings.babelTraverse.babelTraverseStrings.TSRestType = "TSRestType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSRestType]
+    
+    inline def TSStringKeyword: typings.babelTraverse.babelTraverseStrings.TSStringKeyword = "TSStringKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSStringKeyword]
+    
+    inline def TSSymbolKeyword: typings.babelTraverse.babelTraverseStrings.TSSymbolKeyword = "TSSymbolKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSSymbolKeyword]
+    
+    inline def TSThisType: typings.babelTraverse.babelTraverseStrings.TSThisType = "TSThisType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSThisType]
+    
+    inline def TSTupleType: typings.babelTraverse.babelTraverseStrings.TSTupleType = "TSTupleType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTupleType]
+    
+    inline def TSType: typings.babelTraverse.babelTraverseStrings.TSType = "TSType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSType]
+    
+    inline def TSTypeAliasDeclaration: typings.babelTraverse.babelTraverseStrings.TSTypeAliasDeclaration = "TSTypeAliasDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeAliasDeclaration]
+    
+    inline def TSTypeAnnotation: typings.babelTraverse.babelTraverseStrings.TSTypeAnnotation = "TSTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeAnnotation]
+    
+    inline def TSTypeAssertion: typings.babelTraverse.babelTraverseStrings.TSTypeAssertion = "TSTypeAssertion".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeAssertion]
+    
+    inline def TSTypeElement: typings.babelTraverse.babelTraverseStrings.TSTypeElement = "TSTypeElement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeElement]
+    
+    inline def TSTypeLiteral: typings.babelTraverse.babelTraverseStrings.TSTypeLiteral = "TSTypeLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeLiteral]
+    
+    inline def TSTypeOperator: typings.babelTraverse.babelTraverseStrings.TSTypeOperator = "TSTypeOperator".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeOperator]
+    
+    inline def TSTypeParameter: typings.babelTraverse.babelTraverseStrings.TSTypeParameter = "TSTypeParameter".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeParameter]
+    
+    inline def TSTypeParameterDeclaration: typings.babelTraverse.babelTraverseStrings.TSTypeParameterDeclaration = "TSTypeParameterDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeParameterDeclaration]
+    
+    inline def TSTypeParameterInstantiation: typings.babelTraverse.babelTraverseStrings.TSTypeParameterInstantiation = "TSTypeParameterInstantiation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeParameterInstantiation]
+    
+    inline def TSTypePredicate: typings.babelTraverse.babelTraverseStrings.TSTypePredicate = "TSTypePredicate".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypePredicate]
+    
+    inline def TSTypeQuery: typings.babelTraverse.babelTraverseStrings.TSTypeQuery = "TSTypeQuery".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeQuery]
+    
+    inline def TSTypeReference: typings.babelTraverse.babelTraverseStrings.TSTypeReference = "TSTypeReference".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSTypeReference]
+    
+    inline def TSUndefinedKeyword: typings.babelTraverse.babelTraverseStrings.TSUndefinedKeyword = "TSUndefinedKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSUndefinedKeyword]
+    
+    inline def TSUnionType: typings.babelTraverse.babelTraverseStrings.TSUnionType = "TSUnionType".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSUnionType]
+    
+    inline def TSUnknownKeyword: typings.babelTraverse.babelTraverseStrings.TSUnknownKeyword = "TSUnknownKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSUnknownKeyword]
+    
+    inline def TSVoidKeyword: typings.babelTraverse.babelTraverseStrings.TSVoidKeyword = "TSVoidKeyword".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TSVoidKeyword]
+    
+    inline def TaggedTemplateExpression: typings.babelTraverse.babelTraverseStrings.TaggedTemplateExpression = "TaggedTemplateExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TaggedTemplateExpression]
+    
+    inline def TemplateElement: typings.babelTraverse.babelTraverseStrings.TemplateElement = "TemplateElement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TemplateElement]
+    
+    inline def TemplateLiteral: typings.babelTraverse.babelTraverseStrings.TemplateLiteral = "TemplateLiteral".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TemplateLiteral]
+    
+    inline def Terminatorless: typings.babelTraverse.babelTraverseStrings.Terminatorless = "Terminatorless".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Terminatorless]
+    
+    inline def ThisExpression: typings.babelTraverse.babelTraverseStrings.ThisExpression = "ThisExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ThisExpression]
+    
+    inline def ThisTypeAnnotation: typings.babelTraverse.babelTraverseStrings.ThisTypeAnnotation = "ThisTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ThisTypeAnnotation]
+    
+    inline def ThrowStatement: typings.babelTraverse.babelTraverseStrings.ThrowStatement = "ThrowStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ThrowStatement]
+    
+    inline def TopicReference: typings.babelTraverse.babelTraverseStrings.TopicReference = "TopicReference".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TopicReference]
+    
+    inline def TryStatement: typings.babelTraverse.babelTraverseStrings.TryStatement = "TryStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TryStatement]
+    
+    inline def TupleExpression: typings.babelTraverse.babelTraverseStrings.TupleExpression = "TupleExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TupleExpression]
+    
+    inline def TupleTypeAnnotation: typings.babelTraverse.babelTraverseStrings.TupleTypeAnnotation = "TupleTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TupleTypeAnnotation]
+    
+    inline def TypeAlias: typings.babelTraverse.babelTraverseStrings.TypeAlias = "TypeAlias".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TypeAlias]
+    
+    inline def TypeAnnotation: typings.babelTraverse.babelTraverseStrings.TypeAnnotation = "TypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TypeAnnotation]
+    
+    inline def TypeCastExpression: typings.babelTraverse.babelTraverseStrings.TypeCastExpression = "TypeCastExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TypeCastExpression]
+    
+    inline def TypeParameter: typings.babelTraverse.babelTraverseStrings.TypeParameter = "TypeParameter".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TypeParameter]
+    
+    inline def TypeParameterDeclaration: typings.babelTraverse.babelTraverseStrings.TypeParameterDeclaration = "TypeParameterDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TypeParameterDeclaration]
+    
+    inline def TypeParameterInstantiation: typings.babelTraverse.babelTraverseStrings.TypeParameterInstantiation = "TypeParameterInstantiation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TypeParameterInstantiation]
+    
+    inline def TypeScript: typings.babelTraverse.babelTraverseStrings.TypeScript = "TypeScript".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TypeScript]
+    
+    inline def TypeofTypeAnnotation: typings.babelTraverse.babelTraverseStrings.TypeofTypeAnnotation = "TypeofTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.TypeofTypeAnnotation]
+    
+    inline def UnaryExpression: typings.babelTraverse.babelTraverseStrings.UnaryExpression = "UnaryExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.UnaryExpression]
+    
+    inline def UnaryLike: typings.babelTraverse.babelTraverseStrings.UnaryLike = "UnaryLike".asInstanceOf[typings.babelTraverse.babelTraverseStrings.UnaryLike]
+    
+    inline def UnionTypeAnnotation: typings.babelTraverse.babelTraverseStrings.UnionTypeAnnotation = "UnionTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.UnionTypeAnnotation]
+    
+    inline def UpdateExpression: typings.babelTraverse.babelTraverseStrings.UpdateExpression = "UpdateExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.UpdateExpression]
+    
+    inline def UserWhitespacable: typings.babelTraverse.babelTraverseStrings.UserWhitespacable = "UserWhitespacable".asInstanceOf[typings.babelTraverse.babelTraverseStrings.UserWhitespacable]
+    
+    inline def V8IntrinsicIdentifier: typings.babelTraverse.babelTraverseStrings.V8IntrinsicIdentifier = "V8IntrinsicIdentifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.V8IntrinsicIdentifier]
+    
+    inline def VariableDeclaration: typings.babelTraverse.babelTraverseStrings.VariableDeclaration = "VariableDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.VariableDeclaration]
+    
+    inline def VariableDeclarator: typings.babelTraverse.babelTraverseStrings.VariableDeclarator = "VariableDeclarator".asInstanceOf[typings.babelTraverse.babelTraverseStrings.VariableDeclarator]
+    
+    inline def Variance: typings.babelTraverse.babelTraverseStrings.Variance = "Variance".asInstanceOf[typings.babelTraverse.babelTraverseStrings.Variance]
+    
+    inline def VoidTypeAnnotation: typings.babelTraverse.babelTraverseStrings.VoidTypeAnnotation = "VoidTypeAnnotation".asInstanceOf[typings.babelTraverse.babelTraverseStrings.VoidTypeAnnotation]
+    
+    inline def While: typings.babelTraverse.babelTraverseStrings.While = "While".asInstanceOf[typings.babelTraverse.babelTraverseStrings.While]
+    
+    inline def WhileStatement: typings.babelTraverse.babelTraverseStrings.WhileStatement = "WhileStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.WhileStatement]
+    
+    inline def WithStatement: typings.babelTraverse.babelTraverseStrings.WithStatement = "WithStatement".asInstanceOf[typings.babelTraverse.babelTraverseStrings.WithStatement]
+    
+    inline def YieldExpression: typings.babelTraverse.babelTraverseStrings.YieldExpression = "YieldExpression".asInstanceOf[typings.babelTraverse.babelTraverseStrings.YieldExpression]
+  }
+  
   trait TraversalContext extends StObject {
     
-    var opts: js.Any
+    var opts: Any
     
     var parentPath: NodePath[Node]
     
     var scope: Scope
     
-    var state: js.Any
+    var state: Any
   }
   object TraversalContext {
     
-    inline def apply(opts: js.Any, parentPath: NodePath[Node], scope: Scope, state: js.Any): TraversalContext = {
+    inline def apply(opts: Any, parentPath: NodePath[Node], scope: Scope, state: Any): TraversalContext = {
       val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any], parentPath = parentPath.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TraversalContext]
     }
     
     extension [Self <: TraversalContext](x: Self) {
       
-      inline def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
       inline def setParentPath(value: NodePath[Node]): Self = StObject.set(x, "parentPath", value.asInstanceOf[js.Any])
       
       inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2765,6 +3754,13 @@ object mod {
   
   trait VisitNodeObject[S, P /* <: Node */] extends StObject {
     
+    /**
+      * @deprecated will be removed in Babel 8
+      */
+    var blacklist: js.UndefOr[js.Array[NodeType]] = js.undefined
+    
+    var denylist: js.UndefOr[js.Array[NodeType]] = js.undefined
+    
     var enter: js.UndefOr[VisitNodeFunction[S, P]] = js.undefined
     
     var exit: js.UndefOr[VisitNodeFunction[S, P]] = js.undefined
@@ -2777,6 +3773,18 @@ object mod {
     }
     
     extension [Self <: VisitNodeObject[?, ?], S, P /* <: Node */](x: Self & (VisitNodeObject[S, P])) {
+      
+      inline def setBlacklist(value: js.Array[NodeType]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      
+      inline def setBlacklistVarargs(value: NodeType*): Self = StObject.set(x, "blacklist", js.Array(value*))
+      
+      inline def setDenylist(value: js.Array[NodeType]): Self = StObject.set(x, "denylist", value.asInstanceOf[js.Any])
+      
+      inline def setDenylistUndefined: Self = StObject.set(x, "denylist", js.undefined)
+      
+      inline def setDenylistVarargs(value: NodeType*): Self = StObject.set(x, "denylist", js.Array(value*))
       
       inline def setEnter(value: VisitNodeFunction[S, P]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
@@ -2791,31 +3799,33 @@ object mod {
   /* Inlined @babel/traverse.@babel/traverse.VisitNodeObject<S, @babel/traverse.@babel/traverse.Node> & {[ Type in @babel/traverse.@babel/traverse.Node['type'] ]:? @babel/traverse.@babel/traverse.VisitNode<S, std.Extract<@babel/traverse.@babel/traverse.Node, {  type :Type}>>} & {[ K in keyof @babel/types.@babel/types.Aliases ]:? @babel/traverse.@babel/traverse.VisitNode<S, @babel/types.@babel/types.Aliases[K]>} */
   trait Visitor[S] extends StObject {
     
+    var Accessor: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Accessor]] = js.undefined
+    
     var AnyTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `64`]]] = js.undefined
     
-    var ArgumentPlaceholder: js.UndefOr[VisitNode[S, Extract[Node, `232`]]] = js.undefined
+    var ArgumentPlaceholder: js.UndefOr[VisitNode[S, Extract[Node, `238`]]] = js.undefined
     
     var ArrayExpression: js.UndefOr[VisitNode[S, Extract[Node, `55`]]] = js.undefined
     
-    var ArrayPattern: js.UndefOr[VisitNode[S, Extract[Node, `112`]]] = js.undefined
+    var ArrayPattern: js.UndefOr[VisitNode[S, Extract[Node, `114`]]] = js.undefined
     
-    var ArrayTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `84`]]] = js.undefined
+    var ArrayTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `85`]]] = js.undefined
     
-    var ArrowFunctionExpression: js.UndefOr[VisitNode[S, Extract[Node, `143`]]] = js.undefined
+    var ArrowFunctionExpression: js.UndefOr[VisitNode[S, Extract[Node, `146`]]] = js.undefined
     
-    var AssignmentExpression: js.UndefOr[VisitNode[S, Extract[Node, `132`]]] = js.undefined
+    var AssignmentExpression: js.UndefOr[VisitNode[S, Extract[Node, `134`]]] = js.undefined
     
     var AssignmentPattern: js.UndefOr[VisitNode[S, Extract[Node, `63`]]] = js.undefined
     
-    var AwaitExpression: js.UndefOr[VisitNode[S, Extract[Node, `110`]]] = js.undefined
+    var AwaitExpression: js.UndefOr[VisitNode[S, Extract[Node, `112`]]] = js.undefined
     
-    var BigIntLiteral: js.UndefOr[VisitNode[S, Extract[Node, `179`]]] = js.undefined
+    var BigIntLiteral: js.UndefOr[VisitNode[S, Extract[Node, `183`]]] = js.undefined
     
     var Binary: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Binary]] = js.undefined
     
-    var BinaryExpression: js.UndefOr[VisitNode[S, Extract[Node, `87`]]] = js.undefined
+    var BinaryExpression: js.UndefOr[VisitNode[S, Extract[Node, `88`]]] = js.undefined
     
-    var BindExpression: js.UndefOr[VisitNode[S, Extract[Node, `77`]]] = js.undefined
+    var BindExpression: js.UndefOr[VisitNode[S, Extract[Node, `78`]]] = js.undefined
     
     var Block: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Block]] = js.undefined
     
@@ -2823,123 +3833,125 @@ object mod {
     
     var BlockStatement: js.UndefOr[VisitNode[S, Extract[Node, `24`]]] = js.undefined
     
-    var BooleanLiteral: js.UndefOr[VisitNode[S, Extract[Node, `129`]]] = js.undefined
+    var BooleanLiteral: js.UndefOr[VisitNode[S, Extract[Node, `131`]]] = js.undefined
     
-    var BooleanLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `173`]]] = js.undefined
+    var BooleanLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `177`]]] = js.undefined
     
-    var BooleanTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `178`]]] = js.undefined
+    var BooleanTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `182`]]] = js.undefined
     
     var BreakStatement: js.UndefOr[VisitNode[S, Extract[Node, `1`]]] = js.undefined
     
     var CallExpression: js.UndefOr[VisitNode[S, Extract[Node, `46`]]] = js.undefined
     
-    var CatchClause: js.UndefOr[VisitNode[S, Extract[Node, `171`]]] = js.undefined
+    var CatchClause: js.UndefOr[VisitNode[S, Extract[Node, `175`]]] = js.undefined
     
     var Class: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Class]] = js.undefined
     
-    var ClassBody: js.UndefOr[VisitNode[S, Extract[Node, `225`]]] = js.undefined
+    var ClassAccessorProperty: js.UndefOr[VisitNode[S, Extract[Node, `213`]]] = js.undefined
     
-    var ClassDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `106`]]] = js.undefined
+    var ClassBody: js.UndefOr[VisitNode[S, Extract[Node, `231`]]] = js.undefined
+    
+    var ClassDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `108`]]] = js.undefined
     
     var ClassExpression: js.UndefOr[VisitNode[S, Extract[Node, Type]]] = js.undefined
     
-    var ClassImplements: js.UndefOr[VisitNode[S, Extract[Node, `207`]]] = js.undefined
+    var ClassImplements: js.UndefOr[VisitNode[S, Extract[Node, `211`]]] = js.undefined
     
-    var ClassMethod: js.UndefOr[VisitNode[S, Extract[Node, `184`]]] = js.undefined
+    var ClassMethod: js.UndefOr[VisitNode[S, Extract[Node, `188`]]] = js.undefined
     
-    var ClassPrivateMethod: js.UndefOr[VisitNode[S, Extract[Node, `228`]]] = js.undefined
+    var ClassPrivateMethod: js.UndefOr[VisitNode[S, Extract[Node, `234`]]] = js.undefined
     
-    var ClassPrivateProperty: js.UndefOr[VisitNode[S, Extract[Node, `223`]]] = js.undefined
+    var ClassPrivateProperty: js.UndefOr[VisitNode[S, Extract[Node, `229`]]] = js.undefined
     
-    var ClassProperty: js.UndefOr[VisitNode[S, Extract[Node, `187`]]] = js.undefined
+    var ClassProperty: js.UndefOr[VisitNode[S, Extract[Node, `191`]]] = js.undefined
     
     var CompletionStatement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.CompletionStatement]] = js.undefined
     
     var Conditional: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Conditional]] = js.undefined
     
-    var ConditionalExpression: js.UndefOr[VisitNode[S, Extract[Node, `165`]]] = js.undefined
+    var ConditionalExpression: js.UndefOr[VisitNode[S, Extract[Node, `169`]]] = js.undefined
     
     var ContinueStatement: js.UndefOr[VisitNode[S, Extract[Node, `39`]]] = js.undefined
     
-    var DebuggerStatement: js.UndefOr[VisitNode[S, Extract[Node, `135`]]] = js.undefined
+    var DebuggerStatement: js.UndefOr[VisitNode[S, Extract[Node, `137`]]] = js.undefined
     
-    var DecimalLiteral: js.UndefOr[VisitNode[S, Extract[Node, `201`]]] = js.undefined
+    var DecimalLiteral: js.UndefOr[VisitNode[S, Extract[Node, `205`]]] = js.undefined
     
     var Declaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Declaration]] = js.undefined
     
-    var DeclareClass: js.UndefOr[VisitNode[S, Extract[Node, `235`]]] = js.undefined
+    var DeclareClass: js.UndefOr[VisitNode[S, Extract[Node, `241`]]] = js.undefined
     
-    var DeclareExportAllDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `107`]]] = js.undefined
+    var DeclareExportAllDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `109`]]] = js.undefined
     
-    var DeclareExportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `153`]]] = js.undefined
+    var DeclareExportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `157`]]] = js.undefined
     
-    var DeclareFunction: js.UndefOr[VisitNode[S, Extract[Node, `102`]]] = js.undefined
+    var DeclareFunction: js.UndefOr[VisitNode[S, Extract[Node, `104`]]] = js.undefined
     
-    var DeclareInterface: js.UndefOr[VisitNode[S, Extract[Node, `156`]]] = js.undefined
+    var DeclareInterface: js.UndefOr[VisitNode[S, Extract[Node, `160`]]] = js.undefined
     
     var DeclareModule: js.UndefOr[VisitNode[S, Extract[Node, `34`]]] = js.undefined
     
-    var DeclareModuleExports: js.UndefOr[VisitNode[S, Extract[Node, `216`]]] = js.undefined
+    var DeclareModuleExports: js.UndefOr[VisitNode[S, Extract[Node, `222`]]] = js.undefined
     
-    var DeclareOpaqueType: js.UndefOr[VisitNode[S, Extract[Node, `222`]]] = js.undefined
+    var DeclareOpaqueType: js.UndefOr[VisitNode[S, Extract[Node, `228`]]] = js.undefined
     
-    var DeclareTypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `162`]]] = js.undefined
+    var DeclareTypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `166`]]] = js.undefined
     
-    var DeclareVariable: js.UndefOr[VisitNode[S, Extract[Node, `177`]]] = js.undefined
+    var DeclareVariable: js.UndefOr[VisitNode[S, Extract[Node, `181`]]] = js.undefined
     
-    var DeclaredPredicate: js.UndefOr[VisitNode[S, Extract[Node, `183`]]] = js.undefined
+    var DeclaredPredicate: js.UndefOr[VisitNode[S, Extract[Node, `187`]]] = js.undefined
     
-    var Decorator: js.UndefOr[VisitNode[S, Extract[Node, `80`]]] = js.undefined
+    var Decorator: js.UndefOr[VisitNode[S, Extract[Node, `81`]]] = js.undefined
     
     var Directive: js.UndefOr[VisitNode[S, Extract[Node, `62`]]] = js.undefined
     
-    var DirectiveLiteral: js.UndefOr[VisitNode[S, Extract[Node, `140`]]] = js.undefined
+    var DirectiveLiteral: js.UndefOr[VisitNode[S, Extract[Node, `142`]]] = js.undefined
     
-    var DoExpression: js.UndefOr[VisitNode[S, Extract[Node, `212`]]] = js.undefined
+    var DoExpression: js.UndefOr[VisitNode[S, Extract[Node, `218`]]] = js.undefined
     
-    var DoWhileStatement: js.UndefOr[VisitNode[S, Extract[Node, `195`]]] = js.undefined
+    var DoWhileStatement: js.UndefOr[VisitNode[S, Extract[Node, `199`]]] = js.undefined
     
-    var EmptyStatement: js.UndefOr[VisitNode[S, Extract[Node, `105`]]] = js.undefined
+    var EmptyStatement: js.UndefOr[VisitNode[S, Extract[Node, `107`]]] = js.undefined
     
-    var EmptyTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `139`]]] = js.undefined
+    var EmptyTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `141`]]] = js.undefined
     
     var EnumBody: js.UndefOr[VisitNode[S, typings.babelTypes.mod.EnumBody]] = js.undefined
     
-    var EnumBooleanBody: js.UndefOr[VisitNode[S, Extract[Node, `134`]]] = js.undefined
+    var EnumBooleanBody: js.UndefOr[VisitNode[S, Extract[Node, `136`]]] = js.undefined
     
-    var EnumBooleanMember: js.UndefOr[VisitNode[S, Extract[Node, `114`]]] = js.undefined
+    var EnumBooleanMember: js.UndefOr[VisitNode[S, Extract[Node, `116`]]] = js.undefined
     
     var EnumDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `66`]]] = js.undefined
     
-    var EnumDefaultedMember: js.UndefOr[VisitNode[S, Extract[Node, `186`]]] = js.undefined
+    var EnumDefaultedMember: js.UndefOr[VisitNode[S, Extract[Node, `190`]]] = js.undefined
     
     var EnumMember: js.UndefOr[VisitNode[S, typings.babelTypes.mod.EnumMember]] = js.undefined
     
-    var EnumNumberBody: js.UndefOr[VisitNode[S, Extract[Node, `233`]]] = js.undefined
+    var EnumNumberBody: js.UndefOr[VisitNode[S, Extract[Node, `239`]]] = js.undefined
     
-    var EnumNumberMember: js.UndefOr[VisitNode[S, Extract[Node, `200`]]] = js.undefined
+    var EnumNumberMember: js.UndefOr[VisitNode[S, Extract[Node, `204`]]] = js.undefined
     
-    var EnumStringBody: js.UndefOr[VisitNode[S, Extract[Node, `158`]]] = js.undefined
+    var EnumStringBody: js.UndefOr[VisitNode[S, Extract[Node, `162`]]] = js.undefined
     
     var EnumStringMember: js.UndefOr[VisitNode[S, Extract[Node, `4`]]] = js.undefined
     
-    var EnumSymbolBody: js.UndefOr[VisitNode[S, Extract[Node, `193`]]] = js.undefined
+    var EnumSymbolBody: js.UndefOr[VisitNode[S, Extract[Node, `197`]]] = js.undefined
     
-    var ExistsTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `116`]]] = js.undefined
+    var ExistsTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `118`]]] = js.undefined
     
     var ExportAllDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `36`]]] = js.undefined
     
     var ExportDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ExportDeclaration]] = js.undefined
     
-    var ExportDefaultDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `78`]]] = js.undefined
+    var ExportDefaultDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `79`]]] = js.undefined
     
     var ExportDefaultSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `3`]]] = js.undefined
     
     var ExportNamedDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `45`]]] = js.undefined
     
-    var ExportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `174`]]] = js.undefined
+    var ExportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `178`]]] = js.undefined
     
-    var ExportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `113`]]] = js.undefined
+    var ExportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `115`]]] = js.undefined
     
     var Expression: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Expression]] = js.undefined
     
@@ -2963,87 +3975,89 @@ object mod {
     
     var ForInStatement: js.UndefOr[VisitNode[S, Extract[Node, `16`]]] = js.undefined
     
-    var ForOfStatement: js.UndefOr[VisitNode[S, Extract[Node, `161`]]] = js.undefined
+    var ForOfStatement: js.UndefOr[VisitNode[S, Extract[Node, `165`]]] = js.undefined
     
-    var ForStatement: js.UndefOr[VisitNode[S, Extract[Node, `185`]]] = js.undefined
+    var ForStatement: js.UndefOr[VisitNode[S, Extract[Node, `189`]]] = js.undefined
     
     var ForXStatement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ForXStatement]] = js.undefined
     
     var Function: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Function]] = js.undefined
     
-    var FunctionDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `133`]]] = js.undefined
+    var FunctionDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `135`]]] = js.undefined
     
-    var FunctionExpression: js.UndefOr[VisitNode[S, Extract[Node, `188`]]] = js.undefined
+    var FunctionExpression: js.UndefOr[VisitNode[S, Extract[Node, `192`]]] = js.undefined
     
     var FunctionParent: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FunctionParent]] = js.undefined
     
     var FunctionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `40`]]] = js.undefined
     
-    var FunctionTypeParam: js.UndefOr[VisitNode[S, Extract[Node, `221`]]] = js.undefined
+    var FunctionTypeParam: js.UndefOr[VisitNode[S, Extract[Node, `227`]]] = js.undefined
     
-    var GenericTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `237`]]] = js.undefined
+    var GenericTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `243`]]] = js.undefined
     
-    var Identifier: js.UndefOr[VisitNode[S, Extract[Node, `97`]]] = js.undefined
+    var Identifier: js.UndefOr[VisitNode[S, Extract[Node, `98`]]] = js.undefined
     
-    var IfStatement: js.UndefOr[VisitNode[S, Extract[Node, `83`]]] = js.undefined
+    var IfStatement: js.UndefOr[VisitNode[S, Extract[Node, `84`]]] = js.undefined
     
     var Immutable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Immutable]] = js.undefined
     
-    var Import: js.UndefOr[VisitNode[S, Extract[Node, `167`]]] = js.undefined
+    var Import: js.UndefOr[VisitNode[S, Extract[Node, `171`]]] = js.undefined
     
-    var ImportAttribute: js.UndefOr[VisitNode[S, Extract[Node, `120`]]] = js.undefined
+    var ImportAttribute: js.UndefOr[VisitNode[S, Extract[Node, `122`]]] = js.undefined
     
-    var ImportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `236`]]] = js.undefined
+    var ImportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `242`]]] = js.undefined
     
     var ImportDefaultSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `18`]]] = js.undefined
     
-    var ImportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `197`]]] = js.undefined
+    var ImportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `201`]]] = js.undefined
     
-    var ImportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `111`]]] = js.undefined
+    var ImportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `113`]]] = js.undefined
     
-    var InferredPredicate: js.UndefOr[VisitNode[S, Extract[Node, `131`]]] = js.undefined
+    var IndexedAccessType: js.UndefOr[VisitNode[S, Extract[Node, `68`]]] = js.undefined
+    
+    var InferredPredicate: js.UndefOr[VisitNode[S, Extract[Node, `133`]]] = js.undefined
     
     var InterfaceDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `47`]]] = js.undefined
     
-    var InterfaceExtends: js.UndefOr[VisitNode[S, Extract[Node, `136`]]] = js.undefined
+    var InterfaceExtends: js.UndefOr[VisitNode[S, Extract[Node, `138`]]] = js.undefined
     
     var InterfaceTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `8`]]] = js.undefined
     
-    var InterpreterDirective: js.UndefOr[VisitNode[S, Extract[Node, `86`]]] = js.undefined
+    var InterpreterDirective: js.UndefOr[VisitNode[S, Extract[Node, `87`]]] = js.undefined
     
-    var IntersectionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `209`]]] = js.undefined
+    var IntersectionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `214`]]] = js.undefined
     
     var JSX: js.UndefOr[VisitNode[S, typings.babelTypes.mod.JSX]] = js.undefined
     
-    var JSXAttribute: js.UndefOr[VisitNode[S, Extract[Node, `100`]]] = js.undefined
+    var JSXAttribute: js.UndefOr[VisitNode[S, Extract[Node, `102`]]] = js.undefined
     
-    var JSXClosingElement: js.UndefOr[VisitNode[S, Extract[Node, `126`]]] = js.undefined
+    var JSXClosingElement: js.UndefOr[VisitNode[S, Extract[Node, `128`]]] = js.undefined
     
-    var JSXClosingFragment: js.UndefOr[VisitNode[S, Extract[Node, `206`]]] = js.undefined
+    var JSXClosingFragment: js.UndefOr[VisitNode[S, Extract[Node, `210`]]] = js.undefined
     
-    var JSXElement: js.UndefOr[VisitNode[S, Extract[Node, `169`]]] = js.undefined
+    var JSXElement: js.UndefOr[VisitNode[S, Extract[Node, `173`]]] = js.undefined
     
-    var JSXEmptyExpression: js.UndefOr[VisitNode[S, Extract[Node, `122`]]] = js.undefined
+    var JSXEmptyExpression: js.UndefOr[VisitNode[S, Extract[Node, `124`]]] = js.undefined
     
     var JSXExpressionContainer: js.UndefOr[VisitNode[S, Extract[Node, `31`]]] = js.undefined
     
-    var JSXFragment: js.UndefOr[VisitNode[S, Extract[Node, `147`]]] = js.undefined
+    var JSXFragment: js.UndefOr[VisitNode[S, Extract[Node, `151`]]] = js.undefined
     
-    var JSXIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `85`]]] = js.undefined
+    var JSXIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `86`]]] = js.undefined
     
-    var JSXMemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `192`]]] = js.undefined
+    var JSXMemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `196`]]] = js.undefined
     
-    var JSXNamespacedName: js.UndefOr[VisitNode[S, Extract[Node, `149`]]] = js.undefined
+    var JSXNamespacedName: js.UndefOr[VisitNode[S, Extract[Node, `153`]]] = js.undefined
     
-    var JSXOpeningElement: js.UndefOr[VisitNode[S, Extract[Node, `72`]]] = js.undefined
+    var JSXOpeningElement: js.UndefOr[VisitNode[S, Extract[Node, `73`]]] = js.undefined
     
-    var JSXOpeningFragment: js.UndefOr[VisitNode[S, Extract[Node, `213`]]] = js.undefined
+    var JSXOpeningFragment: js.UndefOr[VisitNode[S, Extract[Node, `219`]]] = js.undefined
     
     var JSXSpreadAttribute: js.UndefOr[VisitNode[S, Extract[Node, `48`]]] = js.undefined
     
-    var JSXSpreadChild: js.UndefOr[VisitNode[S, Extract[Node, `71`]]] = js.undefined
+    var JSXSpreadChild: js.UndefOr[VisitNode[S, Extract[Node, `72`]]] = js.undefined
     
-    var JSXText: js.UndefOr[VisitNode[S, Extract[Node, `190`]]] = js.undefined
+    var JSXText: js.UndefOr[VisitNode[S, Extract[Node, `194`]]] = js.undefined
     
     var LVal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.LVal]] = js.undefined
     
@@ -3051,19 +4065,23 @@ object mod {
     
     var Literal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Literal]] = js.undefined
     
-    var LogicalExpression: js.UndefOr[VisitNode[S, Extract[Node, `68`]]] = js.undefined
+    var LogicalExpression: js.UndefOr[VisitNode[S, Extract[Node, `69`]]] = js.undefined
     
     var Loop: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Loop]] = js.undefined
     
     var MemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `59`]]] = js.undefined
     
-    var MetaProperty: js.UndefOr[VisitNode[S, Extract[Node, `81`]]] = js.undefined
+    var MetaProperty: js.UndefOr[VisitNode[S, Extract[Node, `82`]]] = js.undefined
     
     var Method: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Method]] = js.undefined
+    
+    var Miscellaneous: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Miscellaneous]] = js.undefined
     
     var MixedTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `56`]]] = js.undefined
     
     var ModuleDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ModuleDeclaration]] = js.undefined
+    
+    var ModuleExpression: js.UndefOr[VisitNode[S, Extract[Node, `147`]]] = js.undefined
     
     var ModuleSpecifier: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ModuleSpecifier]] = js.undefined
     
@@ -3071,71 +4089,73 @@ object mod {
     
     var Noop: js.UndefOr[VisitNode[S, Extract[Node, `33`]]] = js.undefined
     
-    var NullLiteral: js.UndefOr[VisitNode[S, Extract[Node, `238`]]] = js.undefined
+    var NullLiteral: js.UndefOr[VisitNode[S, Extract[Node, `244`]]] = js.undefined
     
     var NullLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `42`]]] = js.undefined
     
-    var NullableTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `96`]]] = js.undefined
+    var NullableTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `97`]]] = js.undefined
     
-    var NumberLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `152`]]] = js.undefined
+    var NumberLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `156`]]] = js.undefined
     
-    var NumberTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `159`]]] = js.undefined
+    var NumberTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `163`]]] = js.undefined
     
-    var NumericLiteral: js.UndefOr[VisitNode[S, Extract[Node, `210`]]] = js.undefined
+    var NumericLiteral: js.UndefOr[VisitNode[S, Extract[Node, `216`]]] = js.undefined
     
-    var ObjectExpression: js.UndefOr[VisitNode[S, Extract[Node, `121`]]] = js.undefined
+    var ObjectExpression: js.UndefOr[VisitNode[S, Extract[Node, `123`]]] = js.undefined
     
     var ObjectMember: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ObjectMember]] = js.undefined
     
-    var ObjectMethod: js.UndefOr[VisitNode[S, Extract[Node, `123`]]] = js.undefined
+    var ObjectMethod: js.UndefOr[VisitNode[S, Extract[Node, `125`]]] = js.undefined
     
-    var ObjectPattern: js.UndefOr[VisitNode[S, Extract[Node, `217`]]] = js.undefined
+    var ObjectPattern: js.UndefOr[VisitNode[S, Extract[Node, `223`]]] = js.undefined
     
-    var ObjectProperty: js.UndefOr[VisitNode[S, Extract[Node, `141`]]] = js.undefined
+    var ObjectProperty: js.UndefOr[VisitNode[S, Extract[Node, `143`]]] = js.undefined
     
-    var ObjectTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `82`]]] = js.undefined
+    var ObjectTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `83`]]] = js.undefined
     
     var ObjectTypeCallProperty: js.UndefOr[VisitNode[S, Extract[Node, `12`]]] = js.undefined
     
-    var ObjectTypeIndexer: js.UndefOr[VisitNode[S, Extract[Node, `170`]]] = js.undefined
+    var ObjectTypeIndexer: js.UndefOr[VisitNode[S, Extract[Node, `174`]]] = js.undefined
     
-    var ObjectTypeInternalSlot: js.UndefOr[VisitNode[S, Extract[Node, `226`]]] = js.undefined
+    var ObjectTypeInternalSlot: js.UndefOr[VisitNode[S, Extract[Node, `232`]]] = js.undefined
     
-    var ObjectTypeProperty: js.UndefOr[VisitNode[S, Extract[Node, `154`]]] = js.undefined
+    var ObjectTypeProperty: js.UndefOr[VisitNode[S, Extract[Node, `158`]]] = js.undefined
     
-    var ObjectTypeSpreadProperty: js.UndefOr[VisitNode[S, Extract[Node, `79`]]] = js.undefined
+    var ObjectTypeSpreadProperty: js.UndefOr[VisitNode[S, Extract[Node, `80`]]] = js.undefined
     
-    var OpaqueType: js.UndefOr[VisitNode[S, Extract[Node, `69`]]] = js.undefined
+    var OpaqueType: js.UndefOr[VisitNode[S, Extract[Node, `70`]]] = js.undefined
     
     var OptionalCallExpression: js.UndefOr[VisitNode[S, Extract[Node, `44`]]] = js.undefined
     
+    var OptionalIndexedAccessType: js.UndefOr[VisitNode[S, Extract[Node, `145`]]] = js.undefined
+    
     var OptionalMemberExpression: js.UndefOr[VisitNode[S, Extract[Node, `26`]]] = js.undefined
     
-    var ParenthesizedExpression: js.UndefOr[VisitNode[S, Extract[Node, `199`]]] = js.undefined
+    var ParenthesizedExpression: js.UndefOr[VisitNode[S, Extract[Node, `203`]]] = js.undefined
     
     var Pattern: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Pattern]] = js.undefined
     
     var PatternLike: js.UndefOr[VisitNode[S, typings.babelTypes.mod.PatternLike]] = js.undefined
     
-    var PipelineBareFunction: js.UndefOr[VisitNode[S, Extract[Node, `157`]]] = js.undefined
+    var PipelineBareFunction: js.UndefOr[VisitNode[S, Extract[Node, `161`]]] = js.undefined
     
     var PipelinePrimaryTopicReference: js.UndefOr[VisitNode[S, Extract[Node, `30`]]] = js.undefined
     
-    var PipelineTopicExpression: js.UndefOr[VisitNode[S, Extract[Node, `103`]]] = js.undefined
+    var PipelineTopicExpression: js.UndefOr[VisitNode[S, Extract[Node, `105`]]] = js.undefined
     
-    var Placeholder: js.UndefOr[VisitNode[S, Extract[Node, `163`]]] = js.undefined
+    var Placeholder: js.UndefOr[VisitNode[S, Extract[Node, `167`]]] = js.undefined
     
     var Private: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Private]] = js.undefined
     
-    var PrivateName: js.UndefOr[VisitNode[S, Extract[Node, `93`]]] = js.undefined
+    var PrivateName: js.UndefOr[VisitNode[S, Extract[Node, `94`]]] = js.undefined
     
-    var Program: js.UndefOr[VisitNode[S, Extract[Node, `150`]]] = js.undefined
+    var Program: js.UndefOr[VisitNode[S, Extract[Node, `154`]]] = js.undefined
     
     var Property: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Property]] = js.undefined
     
     var Pureish: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Pureish]] = js.undefined
     
-    var QualifiedTypeIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `73`]]] = js.undefined
+    var QualifiedTypeIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `74`]]] = js.undefined
     
     var RecordExpression: js.UndefOr[VisitNode[S, Extract[Node, `60`]]] = js.undefined
     
@@ -3147,21 +4167,23 @@ object mod {
     
     var Scopable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Scopable]] = js.undefined
     
-    var SequenceExpression: js.UndefOr[VisitNode[S, Extract[Node, `166`]]] = js.undefined
+    var SequenceExpression: js.UndefOr[VisitNode[S, Extract[Node, `170`]]] = js.undefined
     
     var SpreadElement: js.UndefOr[VisitNode[S, Extract[Node, `22`]]] = js.undefined
     
+    var Standardized: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Standardized]] = js.undefined
+    
     var Statement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Statement]] = js.undefined
     
-    var StaticBlock: js.UndefOr[VisitNode[S, Extract[Node, `108`]]] = js.undefined
+    var StaticBlock: js.UndefOr[VisitNode[S, Extract[Node, `110`]]] = js.undefined
     
-    var StringLiteral: js.UndefOr[VisitNode[S, Extract[Node, `128`]]] = js.undefined
+    var StringLiteral: js.UndefOr[VisitNode[S, Extract[Node, `130`]]] = js.undefined
     
-    var StringLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `219`]]] = js.undefined
+    var StringLiteralTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `225`]]] = js.undefined
     
     var StringTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `2`]]] = js.undefined
     
-    var Super: js.UndefOr[VisitNode[S, Extract[Node, `160`]]] = js.undefined
+    var Super: js.UndefOr[VisitNode[S, Extract[Node, `164`]]] = js.undefined
     
     var SwitchCase: js.UndefOr[VisitNode[S, Extract[Node, `53`]]] = js.undefined
     
@@ -3179,191 +4201,204 @@ object mod {
     
     var TSBigIntKeyword: js.UndefOr[VisitNode[S, Extract[Node, `52`]]] = js.undefined
     
-    var TSBooleanKeyword: js.UndefOr[VisitNode[S, Extract[Node, `218`]]] = js.undefined
+    var TSBooleanKeyword: js.UndefOr[VisitNode[S, Extract[Node, `224`]]] = js.undefined
     
-    var TSCallSignatureDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `146`]]] = js.undefined
+    var TSCallSignatureDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `150`]]] = js.undefined
     
     var TSConditionalType: js.UndefOr[VisitNode[S, Extract[Node, `17`]]] = js.undefined
     
-    var TSConstructSignatureDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `119`]]] = js.undefined
+    var TSConstructSignatureDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `121`]]] = js.undefined
     
-    var TSConstructorType: js.UndefOr[VisitNode[S, Extract[Node, `208`]]] = js.undefined
+    var TSConstructorType: js.UndefOr[VisitNode[S, Extract[Node, `212`]]] = js.undefined
     
-    var TSDeclareFunction: js.UndefOr[VisitNode[S, Extract[Node, `196`]]] = js.undefined
+    var TSDeclareFunction: js.UndefOr[VisitNode[S, Extract[Node, `200`]]] = js.undefined
     
-    var TSDeclareMethod: js.UndefOr[VisitNode[S, Extract[Node, `75`]]] = js.undefined
+    var TSDeclareMethod: js.UndefOr[VisitNode[S, Extract[Node, `76`]]] = js.undefined
     
     var TSEntityName: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSEntityName]] = js.undefined
     
-    var TSEnumDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `89`]]] = js.undefined
+    var TSEnumDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `90`]]] = js.undefined
     
-    var TSEnumMember: js.UndefOr[VisitNode[S, Extract[Node, `130`]]] = js.undefined
+    var TSEnumMember: js.UndefOr[VisitNode[S, Extract[Node, `132`]]] = js.undefined
     
-    var TSExportAssignment: js.UndefOr[VisitNode[S, Extract[Node, `142`]]] = js.undefined
+    var TSExportAssignment: js.UndefOr[VisitNode[S, Extract[Node, `144`]]] = js.undefined
     
-    var TSExpressionWithTypeArguments: js.UndefOr[VisitNode[S, Extract[Node, `144`]]] = js.undefined
+    var TSExpressionWithTypeArguments: js.UndefOr[VisitNode[S, Extract[Node, `148`]]] = js.undefined
     
-    var TSExternalModuleReference: js.UndefOr[VisitNode[S, Extract[Node, `118`]]] = js.undefined
+    var TSExternalModuleReference: js.UndefOr[VisitNode[S, Extract[Node, `120`]]] = js.undefined
     
     var TSFunctionType: js.UndefOr[VisitNode[S, Extract[Node, `41`]]] = js.undefined
     
-    var TSImportEqualsDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `155`]]] = js.undefined
+    var TSImportEqualsDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `159`]]] = js.undefined
     
-    var TSImportType: js.UndefOr[VisitNode[S, Extract[Node, `234`]]] = js.undefined
+    var TSImportType: js.UndefOr[VisitNode[S, Extract[Node, `240`]]] = js.undefined
     
-    var TSIndexSignature: js.UndefOr[VisitNode[S, Extract[Node, `202`]]] = js.undefined
+    var TSIndexSignature: js.UndefOr[VisitNode[S, Extract[Node, `206`]]] = js.undefined
     
     var TSIndexedAccessType: js.UndefOr[VisitNode[S, Extract[Node, `28`]]] = js.undefined
     
-    var TSInferType: js.UndefOr[VisitNode[S, Extract[Node, `101`]]] = js.undefined
+    var TSInferType: js.UndefOr[VisitNode[S, Extract[Node, `103`]]] = js.undefined
+    
+    var TSInstantiationExpression: js.UndefOr[VisitNode[S, Extract[Node, `215`]]] = js.undefined
     
     var TSInterfaceBody: js.UndefOr[VisitNode[S, Extract[Node, `6`]]] = js.undefined
     
-    var TSInterfaceDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `182`]]] = js.undefined
+    var TSInterfaceDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `186`]]] = js.undefined
     
-    var TSIntersectionType: js.UndefOr[VisitNode[S, Extract[Node, `231`]]] = js.undefined
+    var TSIntersectionType: js.UndefOr[VisitNode[S, Extract[Node, `237`]]] = js.undefined
     
     var TSIntrinsicKeyword: js.UndefOr[VisitNode[S, Extract[Node, `65`]]] = js.undefined
     
     var TSLiteralType: js.UndefOr[VisitNode[S, Extract[Node, `19`]]] = js.undefined
     
-    var TSMappedType: js.UndefOr[VisitNode[S, Extract[Node, `125`]]] = js.undefined
+    var TSMappedType: js.UndefOr[VisitNode[S, Extract[Node, `127`]]] = js.undefined
     
-    var TSMethodSignature: js.UndefOr[VisitNode[S, Extract[Node, `198`]]] = js.undefined
+    var TSMethodSignature: js.UndefOr[VisitNode[S, Extract[Node, `202`]]] = js.undefined
     
-    var TSModuleBlock: js.UndefOr[VisitNode[S, Extract[Node, `224`]]] = js.undefined
+    var TSModuleBlock: js.UndefOr[VisitNode[S, Extract[Node, `230`]]] = js.undefined
     
     var TSModuleDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `15`]]] = js.undefined
     
-    var TSNamedTupleMember: js.UndefOr[VisitNode[S, Extract[Node, `215`]]] = js.undefined
+    var TSNamedTupleMember: js.UndefOr[VisitNode[S, Extract[Node, `221`]]] = js.undefined
     
-    var TSNamespaceExportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `88`]]] = js.undefined
+    var TSNamespaceExportDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `89`]]] = js.undefined
     
-    var TSNeverKeyword: js.UndefOr[VisitNode[S, Extract[Node, `230`]]] = js.undefined
+    var TSNeverKeyword: js.UndefOr[VisitNode[S, Extract[Node, `236`]]] = js.undefined
     
-    var TSNonNullExpression: js.UndefOr[VisitNode[S, Extract[Node, `95`]]] = js.undefined
+    var TSNonNullExpression: js.UndefOr[VisitNode[S, Extract[Node, `96`]]] = js.undefined
     
     var TSNullKeyword: js.UndefOr[VisitNode[S, Extract[Node, `32`]]] = js.undefined
     
-    var TSNumberKeyword: js.UndefOr[VisitNode[S, Extract[Node, `176`]]] = js.undefined
+    var TSNumberKeyword: js.UndefOr[VisitNode[S, Extract[Node, `180`]]] = js.undefined
     
-    var TSObjectKeyword: js.UndefOr[VisitNode[S, Extract[Node, `211`]]] = js.undefined
+    var TSObjectKeyword: js.UndefOr[VisitNode[S, Extract[Node, `217`]]] = js.undefined
     
-    var TSOptionalType: js.UndefOr[VisitNode[S, Extract[Node, `180`]]] = js.undefined
+    var TSOptionalType: js.UndefOr[VisitNode[S, Extract[Node, `184`]]] = js.undefined
     
-    var TSParameterProperty: js.UndefOr[VisitNode[S, Extract[Node, `191`]]] = js.undefined
+    var TSParameterProperty: js.UndefOr[VisitNode[S, Extract[Node, `195`]]] = js.undefined
     
-    var TSParenthesizedType: js.UndefOr[VisitNode[S, Extract[Node, `220`]]] = js.undefined
+    var TSParenthesizedType: js.UndefOr[VisitNode[S, Extract[Node, `226`]]] = js.undefined
     
-    var TSPropertySignature: js.UndefOr[VisitNode[S, Extract[Node, `115`]]] = js.undefined
+    var TSPropertySignature: js.UndefOr[VisitNode[S, Extract[Node, `117`]]] = js.undefined
     
     var TSQualifiedName: js.UndefOr[VisitNode[S, Extract[Node, `29`]]] = js.undefined
     
-    var TSRestType: js.UndefOr[VisitNode[S, Extract[Node, `205`]]] = js.undefined
+    var TSRestType: js.UndefOr[VisitNode[S, Extract[Node, `209`]]] = js.undefined
     
-    var TSStringKeyword: js.UndefOr[VisitNode[S, Extract[Node, `99`]]] = js.undefined
+    var TSStringKeyword: js.UndefOr[VisitNode[S, Extract[Node, `100`]]] = js.undefined
     
-    var TSSymbolKeyword: js.UndefOr[VisitNode[S, Extract[Node, `124`]]] = js.undefined
+    var TSSymbolKeyword: js.UndefOr[VisitNode[S, Extract[Node, `126`]]] = js.undefined
     
-    var TSThisType: js.UndefOr[VisitNode[S, Extract[Node, `203`]]] = js.undefined
+    var TSThisType: js.UndefOr[VisitNode[S, Extract[Node, `207`]]] = js.undefined
     
-    var TSTupleType: js.UndefOr[VisitNode[S, Extract[Node, `194`]]] = js.undefined
+    var TSTupleType: js.UndefOr[VisitNode[S, Extract[Node, `198`]]] = js.undefined
     
     var TSType: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSType]] = js.undefined
     
-    var TSTypeAliasDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `90`]]] = js.undefined
+    var TSTypeAliasDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `91`]]] = js.undefined
     
-    var TSTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `109`]]] = js.undefined
+    var TSTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `111`]]] = js.undefined
     
-    var TSTypeAssertion: js.UndefOr[VisitNode[S, Extract[Node, `229`]]] = js.undefined
+    var TSTypeAssertion: js.UndefOr[VisitNode[S, Extract[Node, `235`]]] = js.undefined
     
     var TSTypeElement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TSTypeElement]] = js.undefined
     
-    var TSTypeLiteral: js.UndefOr[VisitNode[S, Extract[Node, `151`]]] = js.undefined
+    var TSTypeLiteral: js.UndefOr[VisitNode[S, Extract[Node, `155`]]] = js.undefined
     
     var TSTypeOperator: js.UndefOr[VisitNode[S, Extract[Node, `51`]]] = js.undefined
     
-    var TSTypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `92`]]] = js.undefined
+    var TSTypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `93`]]] = js.undefined
     
     var TSTypeParameterDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `20`]]] = js.undefined
     
-    var TSTypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `74`]]] = js.undefined
+    var TSTypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `75`]]] = js.undefined
     
-    var TSTypePredicate: js.UndefOr[VisitNode[S, Extract[Node, `181`]]] = js.undefined
+    var TSTypePredicate: js.UndefOr[VisitNode[S, Extract[Node, `185`]]] = js.undefined
     
-    var TSTypeQuery: js.UndefOr[VisitNode[S, Extract[Node, `117`]]] = js.undefined
+    var TSTypeQuery: js.UndefOr[VisitNode[S, Extract[Node, `119`]]] = js.undefined
     
-    var TSTypeReference: js.UndefOr[VisitNode[S, Extract[Node, `240`]]] = js.undefined
+    var TSTypeReference: js.UndefOr[VisitNode[S, Extract[Node, `246`]]] = js.undefined
     
-    var TSUndefinedKeyword: js.UndefOr[VisitNode[S, Extract[Node, `164`]]] = js.undefined
+    var TSUndefinedKeyword: js.UndefOr[VisitNode[S, Extract[Node, `168`]]] = js.undefined
     
-    var TSUnionType: js.UndefOr[VisitNode[S, Extract[Node, `91`]]] = js.undefined
+    var TSUnionType: js.UndefOr[VisitNode[S, Extract[Node, `92`]]] = js.undefined
     
     var TSUnknownKeyword: js.UndefOr[VisitNode[S, Extract[Node, `54`]]] = js.undefined
     
     var TSVoidKeyword: js.UndefOr[VisitNode[S, Extract[Node, `57`]]] = js.undefined
     
-    var TaggedTemplateExpression: js.UndefOr[VisitNode[S, Extract[Node, `70`]]] = js.undefined
+    var TaggedTemplateExpression: js.UndefOr[VisitNode[S, Extract[Node, `71`]]] = js.undefined
     
-    var TemplateElement: js.UndefOr[VisitNode[S, Extract[Node, `189`]]] = js.undefined
+    var TemplateElement: js.UndefOr[VisitNode[S, Extract[Node, `193`]]] = js.undefined
     
-    var TemplateLiteral: js.UndefOr[VisitNode[S, Extract[Node, `76`]]] = js.undefined
+    var TemplateLiteral: js.UndefOr[VisitNode[S, Extract[Node, `77`]]] = js.undefined
     
     var Terminatorless: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Terminatorless]] = js.undefined
     
-    var ThisExpression: js.UndefOr[VisitNode[S, Extract[Node, `227`]]] = js.undefined
+    var ThisExpression: js.UndefOr[VisitNode[S, Extract[Node, `233`]]] = js.undefined
     
     var ThisTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `50`]]] = js.undefined
     
-    var ThrowStatement: js.UndefOr[VisitNode[S, Extract[Node, `137`]]] = js.undefined
+    var ThrowStatement: js.UndefOr[VisitNode[S, Extract[Node, `139`]]] = js.undefined
+    
+    var TopicReference: js.UndefOr[VisitNode[S, Extract[Node, `101`]]] = js.undefined
     
     var TryStatement: js.UndefOr[VisitNode[S, Extract[Node, `23`]]] = js.undefined
     
-    var TupleExpression: js.UndefOr[VisitNode[S, Extract[Node, `204`]]] = js.undefined
+    var TupleExpression: js.UndefOr[VisitNode[S, Extract[Node, `208`]]] = js.undefined
     
     var TupleTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `13`]]] = js.undefined
     
-    var TypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `175`]]] = js.undefined
+    var TypeAlias: js.UndefOr[VisitNode[S, Extract[Node, `179`]]] = js.undefined
     
     var TypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `21`]]] = js.undefined
     
     var TypeCastExpression: js.UndefOr[VisitNode[S, Extract[Node, `10`]]] = js.undefined
     
-    var TypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `168`]]] = js.undefined
+    var TypeParameter: js.UndefOr[VisitNode[S, Extract[Node, `172`]]] = js.undefined
     
     var TypeParameterDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `14`]]] = js.undefined
     
-    var TypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `239`]]] = js.undefined
+    var TypeParameterInstantiation: js.UndefOr[VisitNode[S, Extract[Node, `245`]]] = js.undefined
     
-    var TypeofTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `145`]]] = js.undefined
+    var TypeScript: js.UndefOr[VisitNode[S, typings.babelTypes.mod.TypeScript]] = js.undefined
     
-    var UnaryExpression: js.UndefOr[VisitNode[S, Extract[Node, `172`]]] = js.undefined
+    var TypeofTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `149`]]] = js.undefined
+    
+    var UnaryExpression: js.UndefOr[VisitNode[S, Extract[Node, `176`]]] = js.undefined
     
     var UnaryLike: js.UndefOr[VisitNode[S, typings.babelTypes.mod.UnaryLike]] = js.undefined
     
-    var UnionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `214`]]] = js.undefined
+    var UnionTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `220`]]] = js.undefined
     
-    var UpdateExpression: js.UndefOr[VisitNode[S, Extract[Node, `98`]]] = js.undefined
+    var UpdateExpression: js.UndefOr[VisitNode[S, Extract[Node, `99`]]] = js.undefined
     
     var UserWhitespacable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.UserWhitespacable]] = js.undefined
     
-    var V8IntrinsicIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `138`]]] = js.undefined
+    var V8IntrinsicIdentifier: js.UndefOr[VisitNode[S, Extract[Node, `140`]]] = js.undefined
     
     var VariableDeclaration: js.UndefOr[VisitNode[S, Extract[Node, `67`]]] = js.undefined
     
-    var VariableDeclarator: js.UndefOr[VisitNode[S, Extract[Node, `127`]]] = js.undefined
+    var VariableDeclarator: js.UndefOr[VisitNode[S, Extract[Node, `129`]]] = js.undefined
     
-    var Variance: js.UndefOr[VisitNode[S, Extract[Node, `148`]]] = js.undefined
+    var Variance: js.UndefOr[VisitNode[S, Extract[Node, `152`]]] = js.undefined
     
-    var VoidTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `104`]]] = js.undefined
+    var VoidTypeAnnotation: js.UndefOr[VisitNode[S, Extract[Node, `106`]]] = js.undefined
     
     var While: js.UndefOr[VisitNode[S, typings.babelTypes.mod.While]] = js.undefined
     
     var WhileStatement: js.UndefOr[VisitNode[S, Extract[Node, `38`]]] = js.undefined
     
-    var WithStatement: js.UndefOr[VisitNode[S, Extract[Node, `94`]]] = js.undefined
+    var WithStatement: js.UndefOr[VisitNode[S, Extract[Node, `95`]]] = js.undefined
     
     var YieldExpression: js.UndefOr[VisitNode[S, Extract[Node, `11`]]] = js.undefined
+    
+    /**
+      * @deprecated will be removed in Babel 8
+      */
+    var blacklist: js.UndefOr[js.Array[NodeType]] = js.undefined
+    
+    var denylist: js.UndefOr[js.Array[NodeType]] = js.undefined
     
     var enter: js.UndefOr[VisitNodeFunction[S, Node]] = js.undefined
     
@@ -3378,11 +4413,15 @@ object mod {
     
     extension [Self <: Visitor[?], S](x: Self & Visitor[S]) {
       
+      inline def setAccessor(value: VisitNode[S, Accessor]): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
+      
+      inline def setAccessorUndefined: Self = StObject.set(x, "Accessor", js.undefined)
+      
       inline def setAnyTypeAnnotation(value: VisitNode[S, Extract[Node, `64`]]): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setAnyTypeAnnotationUndefined: Self = StObject.set(x, "AnyTypeAnnotation", js.undefined)
       
-      inline def setArgumentPlaceholder(value: VisitNode[S, Extract[Node, `232`]]): Self = StObject.set(x, "ArgumentPlaceholder", value.asInstanceOf[js.Any])
+      inline def setArgumentPlaceholder(value: VisitNode[S, Extract[Node, `238`]]): Self = StObject.set(x, "ArgumentPlaceholder", value.asInstanceOf[js.Any])
       
       inline def setArgumentPlaceholderUndefined: Self = StObject.set(x, "ArgumentPlaceholder", js.undefined)
       
@@ -3390,19 +4429,19 @@ object mod {
       
       inline def setArrayExpressionUndefined: Self = StObject.set(x, "ArrayExpression", js.undefined)
       
-      inline def setArrayPattern(value: VisitNode[S, Extract[Node, `112`]]): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
+      inline def setArrayPattern(value: VisitNode[S, Extract[Node, `114`]]): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
       
       inline def setArrayPatternUndefined: Self = StObject.set(x, "ArrayPattern", js.undefined)
       
-      inline def setArrayTypeAnnotation(value: VisitNode[S, Extract[Node, `84`]]): Self = StObject.set(x, "ArrayTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setArrayTypeAnnotation(value: VisitNode[S, Extract[Node, `85`]]): Self = StObject.set(x, "ArrayTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setArrayTypeAnnotationUndefined: Self = StObject.set(x, "ArrayTypeAnnotation", js.undefined)
       
-      inline def setArrowFunctionExpression(value: VisitNode[S, Extract[Node, `143`]]): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
+      inline def setArrowFunctionExpression(value: VisitNode[S, Extract[Node, `146`]]): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
       
       inline def setArrowFunctionExpressionUndefined: Self = StObject.set(x, "ArrowFunctionExpression", js.undefined)
       
-      inline def setAssignmentExpression(value: VisitNode[S, Extract[Node, `132`]]): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
+      inline def setAssignmentExpression(value: VisitNode[S, Extract[Node, `134`]]): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
       
       inline def setAssignmentExpressionUndefined: Self = StObject.set(x, "AssignmentExpression", js.undefined)
       
@@ -3410,25 +4449,31 @@ object mod {
       
       inline def setAssignmentPatternUndefined: Self = StObject.set(x, "AssignmentPattern", js.undefined)
       
-      inline def setAwaitExpression(value: VisitNode[S, Extract[Node, `110`]]): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
+      inline def setAwaitExpression(value: VisitNode[S, Extract[Node, `112`]]): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
       
       inline def setAwaitExpressionUndefined: Self = StObject.set(x, "AwaitExpression", js.undefined)
       
-      inline def setBigIntLiteral(value: VisitNode[S, Extract[Node, `179`]]): Self = StObject.set(x, "BigIntLiteral", value.asInstanceOf[js.Any])
+      inline def setBigIntLiteral(value: VisitNode[S, Extract[Node, `183`]]): Self = StObject.set(x, "BigIntLiteral", value.asInstanceOf[js.Any])
       
       inline def setBigIntLiteralUndefined: Self = StObject.set(x, "BigIntLiteral", js.undefined)
       
       inline def setBinary(value: VisitNode[S, Binary]): Self = StObject.set(x, "Binary", value.asInstanceOf[js.Any])
       
-      inline def setBinaryExpression(value: VisitNode[S, Extract[Node, `87`]]): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
+      inline def setBinaryExpression(value: VisitNode[S, Extract[Node, `88`]]): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
       
       inline def setBinaryExpressionUndefined: Self = StObject.set(x, "BinaryExpression", js.undefined)
       
       inline def setBinaryUndefined: Self = StObject.set(x, "Binary", js.undefined)
       
-      inline def setBindExpression(value: VisitNode[S, Extract[Node, `77`]]): Self = StObject.set(x, "BindExpression", value.asInstanceOf[js.Any])
+      inline def setBindExpression(value: VisitNode[S, Extract[Node, `78`]]): Self = StObject.set(x, "BindExpression", value.asInstanceOf[js.Any])
       
       inline def setBindExpressionUndefined: Self = StObject.set(x, "BindExpression", js.undefined)
+      
+      inline def setBlacklist(value: js.Array[NodeType]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      
+      inline def setBlacklistVarargs(value: NodeType*): Self = StObject.set(x, "blacklist", js.Array(value*))
       
       inline def setBlock(value: VisitNode[S, Block]): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
       
@@ -3442,15 +4487,15 @@ object mod {
       
       inline def setBlockUndefined: Self = StObject.set(x, "Block", js.undefined)
       
-      inline def setBooleanLiteral(value: VisitNode[S, Extract[Node, `129`]]): Self = StObject.set(x, "BooleanLiteral", value.asInstanceOf[js.Any])
+      inline def setBooleanLiteral(value: VisitNode[S, Extract[Node, `131`]]): Self = StObject.set(x, "BooleanLiteral", value.asInstanceOf[js.Any])
       
-      inline def setBooleanLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `173`]]): Self = StObject.set(x, "BooleanLiteralTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setBooleanLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `177`]]): Self = StObject.set(x, "BooleanLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setBooleanLiteralTypeAnnotationUndefined: Self = StObject.set(x, "BooleanLiteralTypeAnnotation", js.undefined)
       
       inline def setBooleanLiteralUndefined: Self = StObject.set(x, "BooleanLiteral", js.undefined)
       
-      inline def setBooleanTypeAnnotation(value: VisitNode[S, Extract[Node, `178`]]): Self = StObject.set(x, "BooleanTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setBooleanTypeAnnotation(value: VisitNode[S, Extract[Node, `182`]]): Self = StObject.set(x, "BooleanTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setBooleanTypeAnnotationUndefined: Self = StObject.set(x, "BooleanTypeAnnotation", js.undefined)
       
@@ -3462,17 +4507,21 @@ object mod {
       
       inline def setCallExpressionUndefined: Self = StObject.set(x, "CallExpression", js.undefined)
       
-      inline def setCatchClause(value: VisitNode[S, Extract[Node, `171`]]): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
+      inline def setCatchClause(value: VisitNode[S, Extract[Node, `175`]]): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
       
       inline def setCatchClauseUndefined: Self = StObject.set(x, "CatchClause", js.undefined)
       
       inline def setClass(value: VisitNode[S, Class]): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
       
-      inline def setClassBody(value: VisitNode[S, Extract[Node, `225`]]): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
+      inline def setClassAccessorProperty(value: VisitNode[S, Extract[Node, `213`]]): Self = StObject.set(x, "ClassAccessorProperty", value.asInstanceOf[js.Any])
+      
+      inline def setClassAccessorPropertyUndefined: Self = StObject.set(x, "ClassAccessorProperty", js.undefined)
+      
+      inline def setClassBody(value: VisitNode[S, Extract[Node, `231`]]): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
       
       inline def setClassBodyUndefined: Self = StObject.set(x, "ClassBody", js.undefined)
       
-      inline def setClassDeclaration(value: VisitNode[S, Extract[Node, `106`]]): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
+      inline def setClassDeclaration(value: VisitNode[S, Extract[Node, `108`]]): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
       
       inline def setClassDeclarationUndefined: Self = StObject.set(x, "ClassDeclaration", js.undefined)
       
@@ -3480,23 +4529,23 @@ object mod {
       
       inline def setClassExpressionUndefined: Self = StObject.set(x, "ClassExpression", js.undefined)
       
-      inline def setClassImplements(value: VisitNode[S, Extract[Node, `207`]]): Self = StObject.set(x, "ClassImplements", value.asInstanceOf[js.Any])
+      inline def setClassImplements(value: VisitNode[S, Extract[Node, `211`]]): Self = StObject.set(x, "ClassImplements", value.asInstanceOf[js.Any])
       
       inline def setClassImplementsUndefined: Self = StObject.set(x, "ClassImplements", js.undefined)
       
-      inline def setClassMethod(value: VisitNode[S, Extract[Node, `184`]]): Self = StObject.set(x, "ClassMethod", value.asInstanceOf[js.Any])
+      inline def setClassMethod(value: VisitNode[S, Extract[Node, `188`]]): Self = StObject.set(x, "ClassMethod", value.asInstanceOf[js.Any])
       
       inline def setClassMethodUndefined: Self = StObject.set(x, "ClassMethod", js.undefined)
       
-      inline def setClassPrivateMethod(value: VisitNode[S, Extract[Node, `228`]]): Self = StObject.set(x, "ClassPrivateMethod", value.asInstanceOf[js.Any])
+      inline def setClassPrivateMethod(value: VisitNode[S, Extract[Node, `234`]]): Self = StObject.set(x, "ClassPrivateMethod", value.asInstanceOf[js.Any])
       
       inline def setClassPrivateMethodUndefined: Self = StObject.set(x, "ClassPrivateMethod", js.undefined)
       
-      inline def setClassPrivateProperty(value: VisitNode[S, Extract[Node, `223`]]): Self = StObject.set(x, "ClassPrivateProperty", value.asInstanceOf[js.Any])
+      inline def setClassPrivateProperty(value: VisitNode[S, Extract[Node, `229`]]): Self = StObject.set(x, "ClassPrivateProperty", value.asInstanceOf[js.Any])
       
       inline def setClassPrivatePropertyUndefined: Self = StObject.set(x, "ClassPrivateProperty", js.undefined)
       
-      inline def setClassProperty(value: VisitNode[S, Extract[Node, `187`]]): Self = StObject.set(x, "ClassProperty", value.asInstanceOf[js.Any])
+      inline def setClassProperty(value: VisitNode[S, Extract[Node, `191`]]): Self = StObject.set(x, "ClassProperty", value.asInstanceOf[js.Any])
       
       inline def setClassPropertyUndefined: Self = StObject.set(x, "ClassProperty", js.undefined)
       
@@ -3508,7 +4557,7 @@ object mod {
       
       inline def setConditional(value: VisitNode[S, Conditional]): Self = StObject.set(x, "Conditional", value.asInstanceOf[js.Any])
       
-      inline def setConditionalExpression(value: VisitNode[S, Extract[Node, `165`]]): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
+      inline def setConditionalExpression(value: VisitNode[S, Extract[Node, `169`]]): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
       
       inline def setConditionalExpressionUndefined: Self = StObject.set(x, "ConditionalExpression", js.undefined)
       
@@ -3518,11 +4567,11 @@ object mod {
       
       inline def setContinueStatementUndefined: Self = StObject.set(x, "ContinueStatement", js.undefined)
       
-      inline def setDebuggerStatement(value: VisitNode[S, Extract[Node, `135`]]): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
+      inline def setDebuggerStatement(value: VisitNode[S, Extract[Node, `137`]]): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
       
       inline def setDebuggerStatementUndefined: Self = StObject.set(x, "DebuggerStatement", js.undefined)
       
-      inline def setDecimalLiteral(value: VisitNode[S, Extract[Node, `201`]]): Self = StObject.set(x, "DecimalLiteral", value.asInstanceOf[js.Any])
+      inline def setDecimalLiteral(value: VisitNode[S, Extract[Node, `205`]]): Self = StObject.set(x, "DecimalLiteral", value.asInstanceOf[js.Any])
       
       inline def setDecimalLiteralUndefined: Self = StObject.set(x, "DecimalLiteral", js.undefined)
       
@@ -3530,75 +4579,81 @@ object mod {
       
       inline def setDeclarationUndefined: Self = StObject.set(x, "Declaration", js.undefined)
       
-      inline def setDeclareClass(value: VisitNode[S, Extract[Node, `235`]]): Self = StObject.set(x, "DeclareClass", value.asInstanceOf[js.Any])
+      inline def setDeclareClass(value: VisitNode[S, Extract[Node, `241`]]): Self = StObject.set(x, "DeclareClass", value.asInstanceOf[js.Any])
       
       inline def setDeclareClassUndefined: Self = StObject.set(x, "DeclareClass", js.undefined)
       
-      inline def setDeclareExportAllDeclaration(value: VisitNode[S, Extract[Node, `107`]]): Self = StObject.set(x, "DeclareExportAllDeclaration", value.asInstanceOf[js.Any])
+      inline def setDeclareExportAllDeclaration(value: VisitNode[S, Extract[Node, `109`]]): Self = StObject.set(x, "DeclareExportAllDeclaration", value.asInstanceOf[js.Any])
       
       inline def setDeclareExportAllDeclarationUndefined: Self = StObject.set(x, "DeclareExportAllDeclaration", js.undefined)
       
-      inline def setDeclareExportDeclaration(value: VisitNode[S, Extract[Node, `153`]]): Self = StObject.set(x, "DeclareExportDeclaration", value.asInstanceOf[js.Any])
+      inline def setDeclareExportDeclaration(value: VisitNode[S, Extract[Node, `157`]]): Self = StObject.set(x, "DeclareExportDeclaration", value.asInstanceOf[js.Any])
       
       inline def setDeclareExportDeclarationUndefined: Self = StObject.set(x, "DeclareExportDeclaration", js.undefined)
       
-      inline def setDeclareFunction(value: VisitNode[S, Extract[Node, `102`]]): Self = StObject.set(x, "DeclareFunction", value.asInstanceOf[js.Any])
+      inline def setDeclareFunction(value: VisitNode[S, Extract[Node, `104`]]): Self = StObject.set(x, "DeclareFunction", value.asInstanceOf[js.Any])
       
       inline def setDeclareFunctionUndefined: Self = StObject.set(x, "DeclareFunction", js.undefined)
       
-      inline def setDeclareInterface(value: VisitNode[S, Extract[Node, `156`]]): Self = StObject.set(x, "DeclareInterface", value.asInstanceOf[js.Any])
+      inline def setDeclareInterface(value: VisitNode[S, Extract[Node, `160`]]): Self = StObject.set(x, "DeclareInterface", value.asInstanceOf[js.Any])
       
       inline def setDeclareInterfaceUndefined: Self = StObject.set(x, "DeclareInterface", js.undefined)
       
       inline def setDeclareModule(value: VisitNode[S, Extract[Node, `34`]]): Self = StObject.set(x, "DeclareModule", value.asInstanceOf[js.Any])
       
-      inline def setDeclareModuleExports(value: VisitNode[S, Extract[Node, `216`]]): Self = StObject.set(x, "DeclareModuleExports", value.asInstanceOf[js.Any])
+      inline def setDeclareModuleExports(value: VisitNode[S, Extract[Node, `222`]]): Self = StObject.set(x, "DeclareModuleExports", value.asInstanceOf[js.Any])
       
       inline def setDeclareModuleExportsUndefined: Self = StObject.set(x, "DeclareModuleExports", js.undefined)
       
       inline def setDeclareModuleUndefined: Self = StObject.set(x, "DeclareModule", js.undefined)
       
-      inline def setDeclareOpaqueType(value: VisitNode[S, Extract[Node, `222`]]): Self = StObject.set(x, "DeclareOpaqueType", value.asInstanceOf[js.Any])
+      inline def setDeclareOpaqueType(value: VisitNode[S, Extract[Node, `228`]]): Self = StObject.set(x, "DeclareOpaqueType", value.asInstanceOf[js.Any])
       
       inline def setDeclareOpaqueTypeUndefined: Self = StObject.set(x, "DeclareOpaqueType", js.undefined)
       
-      inline def setDeclareTypeAlias(value: VisitNode[S, Extract[Node, `162`]]): Self = StObject.set(x, "DeclareTypeAlias", value.asInstanceOf[js.Any])
+      inline def setDeclareTypeAlias(value: VisitNode[S, Extract[Node, `166`]]): Self = StObject.set(x, "DeclareTypeAlias", value.asInstanceOf[js.Any])
       
       inline def setDeclareTypeAliasUndefined: Self = StObject.set(x, "DeclareTypeAlias", js.undefined)
       
-      inline def setDeclareVariable(value: VisitNode[S, Extract[Node, `177`]]): Self = StObject.set(x, "DeclareVariable", value.asInstanceOf[js.Any])
+      inline def setDeclareVariable(value: VisitNode[S, Extract[Node, `181`]]): Self = StObject.set(x, "DeclareVariable", value.asInstanceOf[js.Any])
       
       inline def setDeclareVariableUndefined: Self = StObject.set(x, "DeclareVariable", js.undefined)
       
-      inline def setDeclaredPredicate(value: VisitNode[S, Extract[Node, `183`]]): Self = StObject.set(x, "DeclaredPredicate", value.asInstanceOf[js.Any])
+      inline def setDeclaredPredicate(value: VisitNode[S, Extract[Node, `187`]]): Self = StObject.set(x, "DeclaredPredicate", value.asInstanceOf[js.Any])
       
       inline def setDeclaredPredicateUndefined: Self = StObject.set(x, "DeclaredPredicate", js.undefined)
       
-      inline def setDecorator(value: VisitNode[S, Extract[Node, `80`]]): Self = StObject.set(x, "Decorator", value.asInstanceOf[js.Any])
+      inline def setDecorator(value: VisitNode[S, Extract[Node, `81`]]): Self = StObject.set(x, "Decorator", value.asInstanceOf[js.Any])
       
       inline def setDecoratorUndefined: Self = StObject.set(x, "Decorator", js.undefined)
       
+      inline def setDenylist(value: js.Array[NodeType]): Self = StObject.set(x, "denylist", value.asInstanceOf[js.Any])
+      
+      inline def setDenylistUndefined: Self = StObject.set(x, "denylist", js.undefined)
+      
+      inline def setDenylistVarargs(value: NodeType*): Self = StObject.set(x, "denylist", js.Array(value*))
+      
       inline def setDirective(value: VisitNode[S, Extract[Node, `62`]]): Self = StObject.set(x, "Directive", value.asInstanceOf[js.Any])
       
-      inline def setDirectiveLiteral(value: VisitNode[S, Extract[Node, `140`]]): Self = StObject.set(x, "DirectiveLiteral", value.asInstanceOf[js.Any])
+      inline def setDirectiveLiteral(value: VisitNode[S, Extract[Node, `142`]]): Self = StObject.set(x, "DirectiveLiteral", value.asInstanceOf[js.Any])
       
       inline def setDirectiveLiteralUndefined: Self = StObject.set(x, "DirectiveLiteral", js.undefined)
       
       inline def setDirectiveUndefined: Self = StObject.set(x, "Directive", js.undefined)
       
-      inline def setDoExpression(value: VisitNode[S, Extract[Node, `212`]]): Self = StObject.set(x, "DoExpression", value.asInstanceOf[js.Any])
+      inline def setDoExpression(value: VisitNode[S, Extract[Node, `218`]]): Self = StObject.set(x, "DoExpression", value.asInstanceOf[js.Any])
       
       inline def setDoExpressionUndefined: Self = StObject.set(x, "DoExpression", js.undefined)
       
-      inline def setDoWhileStatement(value: VisitNode[S, Extract[Node, `195`]]): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
+      inline def setDoWhileStatement(value: VisitNode[S, Extract[Node, `199`]]): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
       
       inline def setDoWhileStatementUndefined: Self = StObject.set(x, "DoWhileStatement", js.undefined)
       
-      inline def setEmptyStatement(value: VisitNode[S, Extract[Node, `105`]]): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
+      inline def setEmptyStatement(value: VisitNode[S, Extract[Node, `107`]]): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
       
       inline def setEmptyStatementUndefined: Self = StObject.set(x, "EmptyStatement", js.undefined)
       
-      inline def setEmptyTypeAnnotation(value: VisitNode[S, Extract[Node, `139`]]): Self = StObject.set(x, "EmptyTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setEmptyTypeAnnotation(value: VisitNode[S, Extract[Node, `141`]]): Self = StObject.set(x, "EmptyTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setEmptyTypeAnnotationUndefined: Self = StObject.set(x, "EmptyTypeAnnotation", js.undefined)
       
@@ -3610,11 +4665,11 @@ object mod {
       
       inline def setEnumBodyUndefined: Self = StObject.set(x, "EnumBody", js.undefined)
       
-      inline def setEnumBooleanBody(value: VisitNode[S, Extract[Node, `134`]]): Self = StObject.set(x, "EnumBooleanBody", value.asInstanceOf[js.Any])
+      inline def setEnumBooleanBody(value: VisitNode[S, Extract[Node, `136`]]): Self = StObject.set(x, "EnumBooleanBody", value.asInstanceOf[js.Any])
       
       inline def setEnumBooleanBodyUndefined: Self = StObject.set(x, "EnumBooleanBody", js.undefined)
       
-      inline def setEnumBooleanMember(value: VisitNode[S, Extract[Node, `114`]]): Self = StObject.set(x, "EnumBooleanMember", value.asInstanceOf[js.Any])
+      inline def setEnumBooleanMember(value: VisitNode[S, Extract[Node, `116`]]): Self = StObject.set(x, "EnumBooleanMember", value.asInstanceOf[js.Any])
       
       inline def setEnumBooleanMemberUndefined: Self = StObject.set(x, "EnumBooleanMember", js.undefined)
       
@@ -3622,7 +4677,7 @@ object mod {
       
       inline def setEnumDeclarationUndefined: Self = StObject.set(x, "EnumDeclaration", js.undefined)
       
-      inline def setEnumDefaultedMember(value: VisitNode[S, Extract[Node, `186`]]): Self = StObject.set(x, "EnumDefaultedMember", value.asInstanceOf[js.Any])
+      inline def setEnumDefaultedMember(value: VisitNode[S, Extract[Node, `190`]]): Self = StObject.set(x, "EnumDefaultedMember", value.asInstanceOf[js.Any])
       
       inline def setEnumDefaultedMemberUndefined: Self = StObject.set(x, "EnumDefaultedMember", js.undefined)
       
@@ -3630,15 +4685,15 @@ object mod {
       
       inline def setEnumMemberUndefined: Self = StObject.set(x, "EnumMember", js.undefined)
       
-      inline def setEnumNumberBody(value: VisitNode[S, Extract[Node, `233`]]): Self = StObject.set(x, "EnumNumberBody", value.asInstanceOf[js.Any])
+      inline def setEnumNumberBody(value: VisitNode[S, Extract[Node, `239`]]): Self = StObject.set(x, "EnumNumberBody", value.asInstanceOf[js.Any])
       
       inline def setEnumNumberBodyUndefined: Self = StObject.set(x, "EnumNumberBody", js.undefined)
       
-      inline def setEnumNumberMember(value: VisitNode[S, Extract[Node, `200`]]): Self = StObject.set(x, "EnumNumberMember", value.asInstanceOf[js.Any])
+      inline def setEnumNumberMember(value: VisitNode[S, Extract[Node, `204`]]): Self = StObject.set(x, "EnumNumberMember", value.asInstanceOf[js.Any])
       
       inline def setEnumNumberMemberUndefined: Self = StObject.set(x, "EnumNumberMember", js.undefined)
       
-      inline def setEnumStringBody(value: VisitNode[S, Extract[Node, `158`]]): Self = StObject.set(x, "EnumStringBody", value.asInstanceOf[js.Any])
+      inline def setEnumStringBody(value: VisitNode[S, Extract[Node, `162`]]): Self = StObject.set(x, "EnumStringBody", value.asInstanceOf[js.Any])
       
       inline def setEnumStringBodyUndefined: Self = StObject.set(x, "EnumStringBody", js.undefined)
       
@@ -3646,11 +4701,11 @@ object mod {
       
       inline def setEnumStringMemberUndefined: Self = StObject.set(x, "EnumStringMember", js.undefined)
       
-      inline def setEnumSymbolBody(value: VisitNode[S, Extract[Node, `193`]]): Self = StObject.set(x, "EnumSymbolBody", value.asInstanceOf[js.Any])
+      inline def setEnumSymbolBody(value: VisitNode[S, Extract[Node, `197`]]): Self = StObject.set(x, "EnumSymbolBody", value.asInstanceOf[js.Any])
       
       inline def setEnumSymbolBodyUndefined: Self = StObject.set(x, "EnumSymbolBody", js.undefined)
       
-      inline def setExistsTypeAnnotation(value: VisitNode[S, Extract[Node, `116`]]): Self = StObject.set(x, "ExistsTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setExistsTypeAnnotation(value: VisitNode[S, Extract[Node, `118`]]): Self = StObject.set(x, "ExistsTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setExistsTypeAnnotationUndefined: Self = StObject.set(x, "ExistsTypeAnnotation", js.undefined)
       
@@ -3666,7 +4721,7 @@ object mod {
       
       inline def setExportDeclarationUndefined: Self = StObject.set(x, "ExportDeclaration", js.undefined)
       
-      inline def setExportDefaultDeclaration(value: VisitNode[S, Extract[Node, `78`]]): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportDefaultDeclaration(value: VisitNode[S, Extract[Node, `79`]]): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
       
       inline def setExportDefaultDeclarationUndefined: Self = StObject.set(x, "ExportDefaultDeclaration", js.undefined)
       
@@ -3678,11 +4733,11 @@ object mod {
       
       inline def setExportNamedDeclarationUndefined: Self = StObject.set(x, "ExportNamedDeclaration", js.undefined)
       
-      inline def setExportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `174`]]): Self = StObject.set(x, "ExportNamespaceSpecifier", value.asInstanceOf[js.Any])
+      inline def setExportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `178`]]): Self = StObject.set(x, "ExportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
       inline def setExportNamespaceSpecifierUndefined: Self = StObject.set(x, "ExportNamespaceSpecifier", js.undefined)
       
-      inline def setExportSpecifier(value: VisitNode[S, Extract[Node, `113`]]): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
+      inline def setExportSpecifier(value: VisitNode[S, Extract[Node, `115`]]): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
       
       inline def setExportSpecifierUndefined: Self = StObject.set(x, "ExportSpecifier", js.undefined)
       
@@ -3728,11 +4783,11 @@ object mod {
       
       inline def setForInStatementUndefined: Self = StObject.set(x, "ForInStatement", js.undefined)
       
-      inline def setForOfStatement(value: VisitNode[S, Extract[Node, `161`]]): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
+      inline def setForOfStatement(value: VisitNode[S, Extract[Node, `165`]]): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
       
       inline def setForOfStatementUndefined: Self = StObject.set(x, "ForOfStatement", js.undefined)
       
-      inline def setForStatement(value: VisitNode[S, Extract[Node, `185`]]): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
+      inline def setForStatement(value: VisitNode[S, Extract[Node, `189`]]): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
       
       inline def setForStatementUndefined: Self = StObject.set(x, "ForStatement", js.undefined)
       
@@ -3744,11 +4799,11 @@ object mod {
       
       inline def setFunction(value: VisitNode[S, Function]): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
       
-      inline def setFunctionDeclaration(value: VisitNode[S, Extract[Node, `133`]]): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
+      inline def setFunctionDeclaration(value: VisitNode[S, Extract[Node, `135`]]): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
       
       inline def setFunctionDeclarationUndefined: Self = StObject.set(x, "FunctionDeclaration", js.undefined)
       
-      inline def setFunctionExpression(value: VisitNode[S, Extract[Node, `188`]]): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
+      inline def setFunctionExpression(value: VisitNode[S, Extract[Node, `192`]]): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
       
       inline def setFunctionExpressionUndefined: Self = StObject.set(x, "FunctionExpression", js.undefined)
       
@@ -3760,21 +4815,21 @@ object mod {
       
       inline def setFunctionTypeAnnotationUndefined: Self = StObject.set(x, "FunctionTypeAnnotation", js.undefined)
       
-      inline def setFunctionTypeParam(value: VisitNode[S, Extract[Node, `221`]]): Self = StObject.set(x, "FunctionTypeParam", value.asInstanceOf[js.Any])
+      inline def setFunctionTypeParam(value: VisitNode[S, Extract[Node, `227`]]): Self = StObject.set(x, "FunctionTypeParam", value.asInstanceOf[js.Any])
       
       inline def setFunctionTypeParamUndefined: Self = StObject.set(x, "FunctionTypeParam", js.undefined)
       
       inline def setFunctionUndefined: Self = StObject.set(x, "Function", js.undefined)
       
-      inline def setGenericTypeAnnotation(value: VisitNode[S, Extract[Node, `237`]]): Self = StObject.set(x, "GenericTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setGenericTypeAnnotation(value: VisitNode[S, Extract[Node, `243`]]): Self = StObject.set(x, "GenericTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setGenericTypeAnnotationUndefined: Self = StObject.set(x, "GenericTypeAnnotation", js.undefined)
       
-      inline def setIdentifier(value: VisitNode[S, Extract[Node, `97`]]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: VisitNode[S, Extract[Node, `98`]]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
       inline def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
       
-      inline def setIfStatement(value: VisitNode[S, Extract[Node, `83`]]): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
+      inline def setIfStatement(value: VisitNode[S, Extract[Node, `84`]]): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
       
       inline def setIfStatementUndefined: Self = StObject.set(x, "IfStatement", js.undefined)
       
@@ -3782,13 +4837,13 @@ object mod {
       
       inline def setImmutableUndefined: Self = StObject.set(x, "Immutable", js.undefined)
       
-      inline def setImport(value: VisitNode[S, Extract[Node, `167`]]): Self = StObject.set(x, "Import", value.asInstanceOf[js.Any])
+      inline def setImport(value: VisitNode[S, Extract[Node, `171`]]): Self = StObject.set(x, "Import", value.asInstanceOf[js.Any])
       
-      inline def setImportAttribute(value: VisitNode[S, Extract[Node, `120`]]): Self = StObject.set(x, "ImportAttribute", value.asInstanceOf[js.Any])
+      inline def setImportAttribute(value: VisitNode[S, Extract[Node, `122`]]): Self = StObject.set(x, "ImportAttribute", value.asInstanceOf[js.Any])
       
       inline def setImportAttributeUndefined: Self = StObject.set(x, "ImportAttribute", js.undefined)
       
-      inline def setImportDeclaration(value: VisitNode[S, Extract[Node, `236`]]): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
+      inline def setImportDeclaration(value: VisitNode[S, Extract[Node, `242`]]): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
       
       inline def setImportDeclarationUndefined: Self = StObject.set(x, "ImportDeclaration", js.undefined)
       
@@ -3796,17 +4851,21 @@ object mod {
       
       inline def setImportDefaultSpecifierUndefined: Self = StObject.set(x, "ImportDefaultSpecifier", js.undefined)
       
-      inline def setImportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `197`]]): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `201`]]): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
       inline def setImportNamespaceSpecifierUndefined: Self = StObject.set(x, "ImportNamespaceSpecifier", js.undefined)
       
-      inline def setImportSpecifier(value: VisitNode[S, Extract[Node, `111`]]): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportSpecifier(value: VisitNode[S, Extract[Node, `113`]]): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
       
       inline def setImportSpecifierUndefined: Self = StObject.set(x, "ImportSpecifier", js.undefined)
       
       inline def setImportUndefined: Self = StObject.set(x, "Import", js.undefined)
       
-      inline def setInferredPredicate(value: VisitNode[S, Extract[Node, `131`]]): Self = StObject.set(x, "InferredPredicate", value.asInstanceOf[js.Any])
+      inline def setIndexedAccessType(value: VisitNode[S, Extract[Node, `68`]]): Self = StObject.set(x, "IndexedAccessType", value.asInstanceOf[js.Any])
+      
+      inline def setIndexedAccessTypeUndefined: Self = StObject.set(x, "IndexedAccessType", js.undefined)
+      
+      inline def setInferredPredicate(value: VisitNode[S, Extract[Node, `133`]]): Self = StObject.set(x, "InferredPredicate", value.asInstanceOf[js.Any])
       
       inline def setInferredPredicateUndefined: Self = StObject.set(x, "InferredPredicate", js.undefined)
       
@@ -3814,7 +4873,7 @@ object mod {
       
       inline def setInterfaceDeclarationUndefined: Self = StObject.set(x, "InterfaceDeclaration", js.undefined)
       
-      inline def setInterfaceExtends(value: VisitNode[S, Extract[Node, `136`]]): Self = StObject.set(x, "InterfaceExtends", value.asInstanceOf[js.Any])
+      inline def setInterfaceExtends(value: VisitNode[S, Extract[Node, `138`]]): Self = StObject.set(x, "InterfaceExtends", value.asInstanceOf[js.Any])
       
       inline def setInterfaceExtendsUndefined: Self = StObject.set(x, "InterfaceExtends", js.undefined)
       
@@ -3822,33 +4881,33 @@ object mod {
       
       inline def setInterfaceTypeAnnotationUndefined: Self = StObject.set(x, "InterfaceTypeAnnotation", js.undefined)
       
-      inline def setInterpreterDirective(value: VisitNode[S, Extract[Node, `86`]]): Self = StObject.set(x, "InterpreterDirective", value.asInstanceOf[js.Any])
+      inline def setInterpreterDirective(value: VisitNode[S, Extract[Node, `87`]]): Self = StObject.set(x, "InterpreterDirective", value.asInstanceOf[js.Any])
       
       inline def setInterpreterDirectiveUndefined: Self = StObject.set(x, "InterpreterDirective", js.undefined)
       
-      inline def setIntersectionTypeAnnotation(value: VisitNode[S, Extract[Node, `209`]]): Self = StObject.set(x, "IntersectionTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setIntersectionTypeAnnotation(value: VisitNode[S, Extract[Node, `214`]]): Self = StObject.set(x, "IntersectionTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setIntersectionTypeAnnotationUndefined: Self = StObject.set(x, "IntersectionTypeAnnotation", js.undefined)
       
       inline def setJSX(value: VisitNode[S, JSX]): Self = StObject.set(x, "JSX", value.asInstanceOf[js.Any])
       
-      inline def setJSXAttribute(value: VisitNode[S, Extract[Node, `100`]]): Self = StObject.set(x, "JSXAttribute", value.asInstanceOf[js.Any])
+      inline def setJSXAttribute(value: VisitNode[S, Extract[Node, `102`]]): Self = StObject.set(x, "JSXAttribute", value.asInstanceOf[js.Any])
       
       inline def setJSXAttributeUndefined: Self = StObject.set(x, "JSXAttribute", js.undefined)
       
-      inline def setJSXClosingElement(value: VisitNode[S, Extract[Node, `126`]]): Self = StObject.set(x, "JSXClosingElement", value.asInstanceOf[js.Any])
+      inline def setJSXClosingElement(value: VisitNode[S, Extract[Node, `128`]]): Self = StObject.set(x, "JSXClosingElement", value.asInstanceOf[js.Any])
       
       inline def setJSXClosingElementUndefined: Self = StObject.set(x, "JSXClosingElement", js.undefined)
       
-      inline def setJSXClosingFragment(value: VisitNode[S, Extract[Node, `206`]]): Self = StObject.set(x, "JSXClosingFragment", value.asInstanceOf[js.Any])
+      inline def setJSXClosingFragment(value: VisitNode[S, Extract[Node, `210`]]): Self = StObject.set(x, "JSXClosingFragment", value.asInstanceOf[js.Any])
       
       inline def setJSXClosingFragmentUndefined: Self = StObject.set(x, "JSXClosingFragment", js.undefined)
       
-      inline def setJSXElement(value: VisitNode[S, Extract[Node, `169`]]): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
+      inline def setJSXElement(value: VisitNode[S, Extract[Node, `173`]]): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
       
       inline def setJSXElementUndefined: Self = StObject.set(x, "JSXElement", js.undefined)
       
-      inline def setJSXEmptyExpression(value: VisitNode[S, Extract[Node, `122`]]): Self = StObject.set(x, "JSXEmptyExpression", value.asInstanceOf[js.Any])
+      inline def setJSXEmptyExpression(value: VisitNode[S, Extract[Node, `124`]]): Self = StObject.set(x, "JSXEmptyExpression", value.asInstanceOf[js.Any])
       
       inline def setJSXEmptyExpressionUndefined: Self = StObject.set(x, "JSXEmptyExpression", js.undefined)
       
@@ -3856,27 +4915,27 @@ object mod {
       
       inline def setJSXExpressionContainerUndefined: Self = StObject.set(x, "JSXExpressionContainer", js.undefined)
       
-      inline def setJSXFragment(value: VisitNode[S, Extract[Node, `147`]]): Self = StObject.set(x, "JSXFragment", value.asInstanceOf[js.Any])
+      inline def setJSXFragment(value: VisitNode[S, Extract[Node, `151`]]): Self = StObject.set(x, "JSXFragment", value.asInstanceOf[js.Any])
       
       inline def setJSXFragmentUndefined: Self = StObject.set(x, "JSXFragment", js.undefined)
       
-      inline def setJSXIdentifier(value: VisitNode[S, Extract[Node, `85`]]): Self = StObject.set(x, "JSXIdentifier", value.asInstanceOf[js.Any])
+      inline def setJSXIdentifier(value: VisitNode[S, Extract[Node, `86`]]): Self = StObject.set(x, "JSXIdentifier", value.asInstanceOf[js.Any])
       
       inline def setJSXIdentifierUndefined: Self = StObject.set(x, "JSXIdentifier", js.undefined)
       
-      inline def setJSXMemberExpression(value: VisitNode[S, Extract[Node, `192`]]): Self = StObject.set(x, "JSXMemberExpression", value.asInstanceOf[js.Any])
+      inline def setJSXMemberExpression(value: VisitNode[S, Extract[Node, `196`]]): Self = StObject.set(x, "JSXMemberExpression", value.asInstanceOf[js.Any])
       
       inline def setJSXMemberExpressionUndefined: Self = StObject.set(x, "JSXMemberExpression", js.undefined)
       
-      inline def setJSXNamespacedName(value: VisitNode[S, Extract[Node, `149`]]): Self = StObject.set(x, "JSXNamespacedName", value.asInstanceOf[js.Any])
+      inline def setJSXNamespacedName(value: VisitNode[S, Extract[Node, `153`]]): Self = StObject.set(x, "JSXNamespacedName", value.asInstanceOf[js.Any])
       
       inline def setJSXNamespacedNameUndefined: Self = StObject.set(x, "JSXNamespacedName", js.undefined)
       
-      inline def setJSXOpeningElement(value: VisitNode[S, Extract[Node, `72`]]): Self = StObject.set(x, "JSXOpeningElement", value.asInstanceOf[js.Any])
+      inline def setJSXOpeningElement(value: VisitNode[S, Extract[Node, `73`]]): Self = StObject.set(x, "JSXOpeningElement", value.asInstanceOf[js.Any])
       
       inline def setJSXOpeningElementUndefined: Self = StObject.set(x, "JSXOpeningElement", js.undefined)
       
-      inline def setJSXOpeningFragment(value: VisitNode[S, Extract[Node, `213`]]): Self = StObject.set(x, "JSXOpeningFragment", value.asInstanceOf[js.Any])
+      inline def setJSXOpeningFragment(value: VisitNode[S, Extract[Node, `219`]]): Self = StObject.set(x, "JSXOpeningFragment", value.asInstanceOf[js.Any])
       
       inline def setJSXOpeningFragmentUndefined: Self = StObject.set(x, "JSXOpeningFragment", js.undefined)
       
@@ -3884,11 +4943,11 @@ object mod {
       
       inline def setJSXSpreadAttributeUndefined: Self = StObject.set(x, "JSXSpreadAttribute", js.undefined)
       
-      inline def setJSXSpreadChild(value: VisitNode[S, Extract[Node, `71`]]): Self = StObject.set(x, "JSXSpreadChild", value.asInstanceOf[js.Any])
+      inline def setJSXSpreadChild(value: VisitNode[S, Extract[Node, `72`]]): Self = StObject.set(x, "JSXSpreadChild", value.asInstanceOf[js.Any])
       
       inline def setJSXSpreadChildUndefined: Self = StObject.set(x, "JSXSpreadChild", js.undefined)
       
-      inline def setJSXText(value: VisitNode[S, Extract[Node, `190`]]): Self = StObject.set(x, "JSXText", value.asInstanceOf[js.Any])
+      inline def setJSXText(value: VisitNode[S, Extract[Node, `194`]]): Self = StObject.set(x, "JSXText", value.asInstanceOf[js.Any])
       
       inline def setJSXTextUndefined: Self = StObject.set(x, "JSXText", js.undefined)
       
@@ -3906,7 +4965,7 @@ object mod {
       
       inline def setLiteralUndefined: Self = StObject.set(x, "Literal", js.undefined)
       
-      inline def setLogicalExpression(value: VisitNode[S, Extract[Node, `68`]]): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
+      inline def setLogicalExpression(value: VisitNode[S, Extract[Node, `69`]]): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
       
       inline def setLogicalExpressionUndefined: Self = StObject.set(x, "LogicalExpression", js.undefined)
       
@@ -3918,13 +4977,17 @@ object mod {
       
       inline def setMemberExpressionUndefined: Self = StObject.set(x, "MemberExpression", js.undefined)
       
-      inline def setMetaProperty(value: VisitNode[S, Extract[Node, `81`]]): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
+      inline def setMetaProperty(value: VisitNode[S, Extract[Node, `82`]]): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
       
       inline def setMetaPropertyUndefined: Self = StObject.set(x, "MetaProperty", js.undefined)
       
       inline def setMethod(value: VisitNode[S, Method]): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
+      
+      inline def setMiscellaneous(value: VisitNode[S, Miscellaneous]): Self = StObject.set(x, "Miscellaneous", value.asInstanceOf[js.Any])
+      
+      inline def setMiscellaneousUndefined: Self = StObject.set(x, "Miscellaneous", js.undefined)
       
       inline def setMixedTypeAnnotation(value: VisitNode[S, Extract[Node, `56`]]): Self = StObject.set(x, "MixedTypeAnnotation", value.asInstanceOf[js.Any])
       
@@ -3933,6 +4996,10 @@ object mod {
       inline def setModuleDeclaration(value: VisitNode[S, ModuleDeclaration]): Self = StObject.set(x, "ModuleDeclaration", value.asInstanceOf[js.Any])
       
       inline def setModuleDeclarationUndefined: Self = StObject.set(x, "ModuleDeclaration", js.undefined)
+      
+      inline def setModuleExpression(value: VisitNode[S, Extract[Node, `147`]]): Self = StObject.set(x, "ModuleExpression", value.asInstanceOf[js.Any])
+      
+      inline def setModuleExpressionUndefined: Self = StObject.set(x, "ModuleExpression", js.undefined)
       
       inline def setModuleSpecifier(value: VisitNode[S, ModuleSpecifier]): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
       
@@ -3946,7 +5013,7 @@ object mod {
       
       inline def setNoopUndefined: Self = StObject.set(x, "Noop", js.undefined)
       
-      inline def setNullLiteral(value: VisitNode[S, Extract[Node, `238`]]): Self = StObject.set(x, "NullLiteral", value.asInstanceOf[js.Any])
+      inline def setNullLiteral(value: VisitNode[S, Extract[Node, `244`]]): Self = StObject.set(x, "NullLiteral", value.asInstanceOf[js.Any])
       
       inline def setNullLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `42`]]): Self = StObject.set(x, "NullLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
@@ -3954,23 +5021,23 @@ object mod {
       
       inline def setNullLiteralUndefined: Self = StObject.set(x, "NullLiteral", js.undefined)
       
-      inline def setNullableTypeAnnotation(value: VisitNode[S, Extract[Node, `96`]]): Self = StObject.set(x, "NullableTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setNullableTypeAnnotation(value: VisitNode[S, Extract[Node, `97`]]): Self = StObject.set(x, "NullableTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setNullableTypeAnnotationUndefined: Self = StObject.set(x, "NullableTypeAnnotation", js.undefined)
       
-      inline def setNumberLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `152`]]): Self = StObject.set(x, "NumberLiteralTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setNumberLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `156`]]): Self = StObject.set(x, "NumberLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setNumberLiteralTypeAnnotationUndefined: Self = StObject.set(x, "NumberLiteralTypeAnnotation", js.undefined)
       
-      inline def setNumberTypeAnnotation(value: VisitNode[S, Extract[Node, `159`]]): Self = StObject.set(x, "NumberTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setNumberTypeAnnotation(value: VisitNode[S, Extract[Node, `163`]]): Self = StObject.set(x, "NumberTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setNumberTypeAnnotationUndefined: Self = StObject.set(x, "NumberTypeAnnotation", js.undefined)
       
-      inline def setNumericLiteral(value: VisitNode[S, Extract[Node, `210`]]): Self = StObject.set(x, "NumericLiteral", value.asInstanceOf[js.Any])
+      inline def setNumericLiteral(value: VisitNode[S, Extract[Node, `216`]]): Self = StObject.set(x, "NumericLiteral", value.asInstanceOf[js.Any])
       
       inline def setNumericLiteralUndefined: Self = StObject.set(x, "NumericLiteral", js.undefined)
       
-      inline def setObjectExpression(value: VisitNode[S, Extract[Node, `121`]]): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
+      inline def setObjectExpression(value: VisitNode[S, Extract[Node, `123`]]): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
       
       inline def setObjectExpressionUndefined: Self = StObject.set(x, "ObjectExpression", js.undefined)
       
@@ -3978,19 +5045,19 @@ object mod {
       
       inline def setObjectMemberUndefined: Self = StObject.set(x, "ObjectMember", js.undefined)
       
-      inline def setObjectMethod(value: VisitNode[S, Extract[Node, `123`]]): Self = StObject.set(x, "ObjectMethod", value.asInstanceOf[js.Any])
+      inline def setObjectMethod(value: VisitNode[S, Extract[Node, `125`]]): Self = StObject.set(x, "ObjectMethod", value.asInstanceOf[js.Any])
       
       inline def setObjectMethodUndefined: Self = StObject.set(x, "ObjectMethod", js.undefined)
       
-      inline def setObjectPattern(value: VisitNode[S, Extract[Node, `217`]]): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
+      inline def setObjectPattern(value: VisitNode[S, Extract[Node, `223`]]): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
       
       inline def setObjectPatternUndefined: Self = StObject.set(x, "ObjectPattern", js.undefined)
       
-      inline def setObjectProperty(value: VisitNode[S, Extract[Node, `141`]]): Self = StObject.set(x, "ObjectProperty", value.asInstanceOf[js.Any])
+      inline def setObjectProperty(value: VisitNode[S, Extract[Node, `143`]]): Self = StObject.set(x, "ObjectProperty", value.asInstanceOf[js.Any])
       
       inline def setObjectPropertyUndefined: Self = StObject.set(x, "ObjectProperty", js.undefined)
       
-      inline def setObjectTypeAnnotation(value: VisitNode[S, Extract[Node, `82`]]): Self = StObject.set(x, "ObjectTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setObjectTypeAnnotation(value: VisitNode[S, Extract[Node, `83`]]): Self = StObject.set(x, "ObjectTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setObjectTypeAnnotationUndefined: Self = StObject.set(x, "ObjectTypeAnnotation", js.undefined)
       
@@ -3998,23 +5065,23 @@ object mod {
       
       inline def setObjectTypeCallPropertyUndefined: Self = StObject.set(x, "ObjectTypeCallProperty", js.undefined)
       
-      inline def setObjectTypeIndexer(value: VisitNode[S, Extract[Node, `170`]]): Self = StObject.set(x, "ObjectTypeIndexer", value.asInstanceOf[js.Any])
+      inline def setObjectTypeIndexer(value: VisitNode[S, Extract[Node, `174`]]): Self = StObject.set(x, "ObjectTypeIndexer", value.asInstanceOf[js.Any])
       
       inline def setObjectTypeIndexerUndefined: Self = StObject.set(x, "ObjectTypeIndexer", js.undefined)
       
-      inline def setObjectTypeInternalSlot(value: VisitNode[S, Extract[Node, `226`]]): Self = StObject.set(x, "ObjectTypeInternalSlot", value.asInstanceOf[js.Any])
+      inline def setObjectTypeInternalSlot(value: VisitNode[S, Extract[Node, `232`]]): Self = StObject.set(x, "ObjectTypeInternalSlot", value.asInstanceOf[js.Any])
       
       inline def setObjectTypeInternalSlotUndefined: Self = StObject.set(x, "ObjectTypeInternalSlot", js.undefined)
       
-      inline def setObjectTypeProperty(value: VisitNode[S, Extract[Node, `154`]]): Self = StObject.set(x, "ObjectTypeProperty", value.asInstanceOf[js.Any])
+      inline def setObjectTypeProperty(value: VisitNode[S, Extract[Node, `158`]]): Self = StObject.set(x, "ObjectTypeProperty", value.asInstanceOf[js.Any])
       
       inline def setObjectTypePropertyUndefined: Self = StObject.set(x, "ObjectTypeProperty", js.undefined)
       
-      inline def setObjectTypeSpreadProperty(value: VisitNode[S, Extract[Node, `79`]]): Self = StObject.set(x, "ObjectTypeSpreadProperty", value.asInstanceOf[js.Any])
+      inline def setObjectTypeSpreadProperty(value: VisitNode[S, Extract[Node, `80`]]): Self = StObject.set(x, "ObjectTypeSpreadProperty", value.asInstanceOf[js.Any])
       
       inline def setObjectTypeSpreadPropertyUndefined: Self = StObject.set(x, "ObjectTypeSpreadProperty", js.undefined)
       
-      inline def setOpaqueType(value: VisitNode[S, Extract[Node, `69`]]): Self = StObject.set(x, "OpaqueType", value.asInstanceOf[js.Any])
+      inline def setOpaqueType(value: VisitNode[S, Extract[Node, `70`]]): Self = StObject.set(x, "OpaqueType", value.asInstanceOf[js.Any])
       
       inline def setOpaqueTypeUndefined: Self = StObject.set(x, "OpaqueType", js.undefined)
       
@@ -4022,11 +5089,15 @@ object mod {
       
       inline def setOptionalCallExpressionUndefined: Self = StObject.set(x, "OptionalCallExpression", js.undefined)
       
+      inline def setOptionalIndexedAccessType(value: VisitNode[S, Extract[Node, `145`]]): Self = StObject.set(x, "OptionalIndexedAccessType", value.asInstanceOf[js.Any])
+      
+      inline def setOptionalIndexedAccessTypeUndefined: Self = StObject.set(x, "OptionalIndexedAccessType", js.undefined)
+      
       inline def setOptionalMemberExpression(value: VisitNode[S, Extract[Node, `26`]]): Self = StObject.set(x, "OptionalMemberExpression", value.asInstanceOf[js.Any])
       
       inline def setOptionalMemberExpressionUndefined: Self = StObject.set(x, "OptionalMemberExpression", js.undefined)
       
-      inline def setParenthesizedExpression(value: VisitNode[S, Extract[Node, `199`]]): Self = StObject.set(x, "ParenthesizedExpression", value.asInstanceOf[js.Any])
+      inline def setParenthesizedExpression(value: VisitNode[S, Extract[Node, `203`]]): Self = StObject.set(x, "ParenthesizedExpression", value.asInstanceOf[js.Any])
       
       inline def setParenthesizedExpressionUndefined: Self = StObject.set(x, "ParenthesizedExpression", js.undefined)
       
@@ -4038,7 +5109,7 @@ object mod {
       
       inline def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
       
-      inline def setPipelineBareFunction(value: VisitNode[S, Extract[Node, `157`]]): Self = StObject.set(x, "PipelineBareFunction", value.asInstanceOf[js.Any])
+      inline def setPipelineBareFunction(value: VisitNode[S, Extract[Node, `161`]]): Self = StObject.set(x, "PipelineBareFunction", value.asInstanceOf[js.Any])
       
       inline def setPipelineBareFunctionUndefined: Self = StObject.set(x, "PipelineBareFunction", js.undefined)
       
@@ -4046,23 +5117,23 @@ object mod {
       
       inline def setPipelinePrimaryTopicReferenceUndefined: Self = StObject.set(x, "PipelinePrimaryTopicReference", js.undefined)
       
-      inline def setPipelineTopicExpression(value: VisitNode[S, Extract[Node, `103`]]): Self = StObject.set(x, "PipelineTopicExpression", value.asInstanceOf[js.Any])
+      inline def setPipelineTopicExpression(value: VisitNode[S, Extract[Node, `105`]]): Self = StObject.set(x, "PipelineTopicExpression", value.asInstanceOf[js.Any])
       
       inline def setPipelineTopicExpressionUndefined: Self = StObject.set(x, "PipelineTopicExpression", js.undefined)
       
-      inline def setPlaceholder(value: VisitNode[S, Extract[Node, `163`]]): Self = StObject.set(x, "Placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: VisitNode[S, Extract[Node, `167`]]): Self = StObject.set(x, "Placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "Placeholder", js.undefined)
       
       inline def setPrivate(value: VisitNode[S, Private]): Self = StObject.set(x, "Private", value.asInstanceOf[js.Any])
       
-      inline def setPrivateName(value: VisitNode[S, Extract[Node, `93`]]): Self = StObject.set(x, "PrivateName", value.asInstanceOf[js.Any])
+      inline def setPrivateName(value: VisitNode[S, Extract[Node, `94`]]): Self = StObject.set(x, "PrivateName", value.asInstanceOf[js.Any])
       
       inline def setPrivateNameUndefined: Self = StObject.set(x, "PrivateName", js.undefined)
       
       inline def setPrivateUndefined: Self = StObject.set(x, "Private", js.undefined)
       
-      inline def setProgram(value: VisitNode[S, Extract[Node, `150`]]): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: VisitNode[S, Extract[Node, `154`]]): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
       
       inline def setProgramUndefined: Self = StObject.set(x, "Program", js.undefined)
       
@@ -4074,7 +5145,7 @@ object mod {
       
       inline def setPureishUndefined: Self = StObject.set(x, "Pureish", js.undefined)
       
-      inline def setQualifiedTypeIdentifier(value: VisitNode[S, Extract[Node, `73`]]): Self = StObject.set(x, "QualifiedTypeIdentifier", value.asInstanceOf[js.Any])
+      inline def setQualifiedTypeIdentifier(value: VisitNode[S, Extract[Node, `74`]]): Self = StObject.set(x, "QualifiedTypeIdentifier", value.asInstanceOf[js.Any])
       
       inline def setQualifiedTypeIdentifierUndefined: Self = StObject.set(x, "QualifiedTypeIdentifier", js.undefined)
       
@@ -4098,7 +5169,7 @@ object mod {
       
       inline def setScopableUndefined: Self = StObject.set(x, "Scopable", js.undefined)
       
-      inline def setSequenceExpression(value: VisitNode[S, Extract[Node, `166`]]): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
+      inline def setSequenceExpression(value: VisitNode[S, Extract[Node, `170`]]): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
       
       inline def setSequenceExpressionUndefined: Self = StObject.set(x, "SequenceExpression", js.undefined)
       
@@ -4106,17 +5177,21 @@ object mod {
       
       inline def setSpreadElementUndefined: Self = StObject.set(x, "SpreadElement", js.undefined)
       
+      inline def setStandardized(value: VisitNode[S, Standardized]): Self = StObject.set(x, "Standardized", value.asInstanceOf[js.Any])
+      
+      inline def setStandardizedUndefined: Self = StObject.set(x, "Standardized", js.undefined)
+      
       inline def setStatement(value: VisitNode[S, Statement]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
       
       inline def setStatementUndefined: Self = StObject.set(x, "Statement", js.undefined)
       
-      inline def setStaticBlock(value: VisitNode[S, Extract[Node, `108`]]): Self = StObject.set(x, "StaticBlock", value.asInstanceOf[js.Any])
+      inline def setStaticBlock(value: VisitNode[S, Extract[Node, `110`]]): Self = StObject.set(x, "StaticBlock", value.asInstanceOf[js.Any])
       
       inline def setStaticBlockUndefined: Self = StObject.set(x, "StaticBlock", js.undefined)
       
-      inline def setStringLiteral(value: VisitNode[S, Extract[Node, `128`]]): Self = StObject.set(x, "StringLiteral", value.asInstanceOf[js.Any])
+      inline def setStringLiteral(value: VisitNode[S, Extract[Node, `130`]]): Self = StObject.set(x, "StringLiteral", value.asInstanceOf[js.Any])
       
-      inline def setStringLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `219`]]): Self = StObject.set(x, "StringLiteralTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setStringLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `225`]]): Self = StObject.set(x, "StringLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setStringLiteralTypeAnnotationUndefined: Self = StObject.set(x, "StringLiteralTypeAnnotation", js.undefined)
       
@@ -4126,7 +5201,7 @@ object mod {
       
       inline def setStringTypeAnnotationUndefined: Self = StObject.set(x, "StringTypeAnnotation", js.undefined)
       
-      inline def setSuper(value: VisitNode[S, Extract[Node, `160`]]): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
+      inline def setSuper(value: VisitNode[S, Extract[Node, `164`]]): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
       
       inline def setSuperUndefined: Self = StObject.set(x, "Super", js.undefined)
       
@@ -4162,11 +5237,11 @@ object mod {
       
       inline def setTSBigIntKeywordUndefined: Self = StObject.set(x, "TSBigIntKeyword", js.undefined)
       
-      inline def setTSBooleanKeyword(value: VisitNode[S, Extract[Node, `218`]]): Self = StObject.set(x, "TSBooleanKeyword", value.asInstanceOf[js.Any])
+      inline def setTSBooleanKeyword(value: VisitNode[S, Extract[Node, `224`]]): Self = StObject.set(x, "TSBooleanKeyword", value.asInstanceOf[js.Any])
       
       inline def setTSBooleanKeywordUndefined: Self = StObject.set(x, "TSBooleanKeyword", js.undefined)
       
-      inline def setTSCallSignatureDeclaration(value: VisitNode[S, Extract[Node, `146`]]): Self = StObject.set(x, "TSCallSignatureDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSCallSignatureDeclaration(value: VisitNode[S, Extract[Node, `150`]]): Self = StObject.set(x, "TSCallSignatureDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTSCallSignatureDeclarationUndefined: Self = StObject.set(x, "TSCallSignatureDeclaration", js.undefined)
       
@@ -4174,19 +5249,19 @@ object mod {
       
       inline def setTSConditionalTypeUndefined: Self = StObject.set(x, "TSConditionalType", js.undefined)
       
-      inline def setTSConstructSignatureDeclaration(value: VisitNode[S, Extract[Node, `119`]]): Self = StObject.set(x, "TSConstructSignatureDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSConstructSignatureDeclaration(value: VisitNode[S, Extract[Node, `121`]]): Self = StObject.set(x, "TSConstructSignatureDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTSConstructSignatureDeclarationUndefined: Self = StObject.set(x, "TSConstructSignatureDeclaration", js.undefined)
       
-      inline def setTSConstructorType(value: VisitNode[S, Extract[Node, `208`]]): Self = StObject.set(x, "TSConstructorType", value.asInstanceOf[js.Any])
+      inline def setTSConstructorType(value: VisitNode[S, Extract[Node, `212`]]): Self = StObject.set(x, "TSConstructorType", value.asInstanceOf[js.Any])
       
       inline def setTSConstructorTypeUndefined: Self = StObject.set(x, "TSConstructorType", js.undefined)
       
-      inline def setTSDeclareFunction(value: VisitNode[S, Extract[Node, `196`]]): Self = StObject.set(x, "TSDeclareFunction", value.asInstanceOf[js.Any])
+      inline def setTSDeclareFunction(value: VisitNode[S, Extract[Node, `200`]]): Self = StObject.set(x, "TSDeclareFunction", value.asInstanceOf[js.Any])
       
       inline def setTSDeclareFunctionUndefined: Self = StObject.set(x, "TSDeclareFunction", js.undefined)
       
-      inline def setTSDeclareMethod(value: VisitNode[S, Extract[Node, `75`]]): Self = StObject.set(x, "TSDeclareMethod", value.asInstanceOf[js.Any])
+      inline def setTSDeclareMethod(value: VisitNode[S, Extract[Node, `76`]]): Self = StObject.set(x, "TSDeclareMethod", value.asInstanceOf[js.Any])
       
       inline def setTSDeclareMethodUndefined: Self = StObject.set(x, "TSDeclareMethod", js.undefined)
       
@@ -4194,23 +5269,23 @@ object mod {
       
       inline def setTSEntityNameUndefined: Self = StObject.set(x, "TSEntityName", js.undefined)
       
-      inline def setTSEnumDeclaration(value: VisitNode[S, Extract[Node, `89`]]): Self = StObject.set(x, "TSEnumDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSEnumDeclaration(value: VisitNode[S, Extract[Node, `90`]]): Self = StObject.set(x, "TSEnumDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTSEnumDeclarationUndefined: Self = StObject.set(x, "TSEnumDeclaration", js.undefined)
       
-      inline def setTSEnumMember(value: VisitNode[S, Extract[Node, `130`]]): Self = StObject.set(x, "TSEnumMember", value.asInstanceOf[js.Any])
+      inline def setTSEnumMember(value: VisitNode[S, Extract[Node, `132`]]): Self = StObject.set(x, "TSEnumMember", value.asInstanceOf[js.Any])
       
       inline def setTSEnumMemberUndefined: Self = StObject.set(x, "TSEnumMember", js.undefined)
       
-      inline def setTSExportAssignment(value: VisitNode[S, Extract[Node, `142`]]): Self = StObject.set(x, "TSExportAssignment", value.asInstanceOf[js.Any])
+      inline def setTSExportAssignment(value: VisitNode[S, Extract[Node, `144`]]): Self = StObject.set(x, "TSExportAssignment", value.asInstanceOf[js.Any])
       
       inline def setTSExportAssignmentUndefined: Self = StObject.set(x, "TSExportAssignment", js.undefined)
       
-      inline def setTSExpressionWithTypeArguments(value: VisitNode[S, Extract[Node, `144`]]): Self = StObject.set(x, "TSExpressionWithTypeArguments", value.asInstanceOf[js.Any])
+      inline def setTSExpressionWithTypeArguments(value: VisitNode[S, Extract[Node, `148`]]): Self = StObject.set(x, "TSExpressionWithTypeArguments", value.asInstanceOf[js.Any])
       
       inline def setTSExpressionWithTypeArgumentsUndefined: Self = StObject.set(x, "TSExpressionWithTypeArguments", js.undefined)
       
-      inline def setTSExternalModuleReference(value: VisitNode[S, Extract[Node, `118`]]): Self = StObject.set(x, "TSExternalModuleReference", value.asInstanceOf[js.Any])
+      inline def setTSExternalModuleReference(value: VisitNode[S, Extract[Node, `120`]]): Self = StObject.set(x, "TSExternalModuleReference", value.asInstanceOf[js.Any])
       
       inline def setTSExternalModuleReferenceUndefined: Self = StObject.set(x, "TSExternalModuleReference", js.undefined)
       
@@ -4218,15 +5293,15 @@ object mod {
       
       inline def setTSFunctionTypeUndefined: Self = StObject.set(x, "TSFunctionType", js.undefined)
       
-      inline def setTSImportEqualsDeclaration(value: VisitNode[S, Extract[Node, `155`]]): Self = StObject.set(x, "TSImportEqualsDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSImportEqualsDeclaration(value: VisitNode[S, Extract[Node, `159`]]): Self = StObject.set(x, "TSImportEqualsDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTSImportEqualsDeclarationUndefined: Self = StObject.set(x, "TSImportEqualsDeclaration", js.undefined)
       
-      inline def setTSImportType(value: VisitNode[S, Extract[Node, `234`]]): Self = StObject.set(x, "TSImportType", value.asInstanceOf[js.Any])
+      inline def setTSImportType(value: VisitNode[S, Extract[Node, `240`]]): Self = StObject.set(x, "TSImportType", value.asInstanceOf[js.Any])
       
       inline def setTSImportTypeUndefined: Self = StObject.set(x, "TSImportType", js.undefined)
       
-      inline def setTSIndexSignature(value: VisitNode[S, Extract[Node, `202`]]): Self = StObject.set(x, "TSIndexSignature", value.asInstanceOf[js.Any])
+      inline def setTSIndexSignature(value: VisitNode[S, Extract[Node, `206`]]): Self = StObject.set(x, "TSIndexSignature", value.asInstanceOf[js.Any])
       
       inline def setTSIndexSignatureUndefined: Self = StObject.set(x, "TSIndexSignature", js.undefined)
       
@@ -4234,19 +5309,23 @@ object mod {
       
       inline def setTSIndexedAccessTypeUndefined: Self = StObject.set(x, "TSIndexedAccessType", js.undefined)
       
-      inline def setTSInferType(value: VisitNode[S, Extract[Node, `101`]]): Self = StObject.set(x, "TSInferType", value.asInstanceOf[js.Any])
+      inline def setTSInferType(value: VisitNode[S, Extract[Node, `103`]]): Self = StObject.set(x, "TSInferType", value.asInstanceOf[js.Any])
       
       inline def setTSInferTypeUndefined: Self = StObject.set(x, "TSInferType", js.undefined)
+      
+      inline def setTSInstantiationExpression(value: VisitNode[S, Extract[Node, `215`]]): Self = StObject.set(x, "TSInstantiationExpression", value.asInstanceOf[js.Any])
+      
+      inline def setTSInstantiationExpressionUndefined: Self = StObject.set(x, "TSInstantiationExpression", js.undefined)
       
       inline def setTSInterfaceBody(value: VisitNode[S, Extract[Node, `6`]]): Self = StObject.set(x, "TSInterfaceBody", value.asInstanceOf[js.Any])
       
       inline def setTSInterfaceBodyUndefined: Self = StObject.set(x, "TSInterfaceBody", js.undefined)
       
-      inline def setTSInterfaceDeclaration(value: VisitNode[S, Extract[Node, `182`]]): Self = StObject.set(x, "TSInterfaceDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSInterfaceDeclaration(value: VisitNode[S, Extract[Node, `186`]]): Self = StObject.set(x, "TSInterfaceDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTSInterfaceDeclarationUndefined: Self = StObject.set(x, "TSInterfaceDeclaration", js.undefined)
       
-      inline def setTSIntersectionType(value: VisitNode[S, Extract[Node, `231`]]): Self = StObject.set(x, "TSIntersectionType", value.asInstanceOf[js.Any])
+      inline def setTSIntersectionType(value: VisitNode[S, Extract[Node, `237`]]): Self = StObject.set(x, "TSIntersectionType", value.asInstanceOf[js.Any])
       
       inline def setTSIntersectionTypeUndefined: Self = StObject.set(x, "TSIntersectionType", js.undefined)
       
@@ -4258,15 +5337,15 @@ object mod {
       
       inline def setTSLiteralTypeUndefined: Self = StObject.set(x, "TSLiteralType", js.undefined)
       
-      inline def setTSMappedType(value: VisitNode[S, Extract[Node, `125`]]): Self = StObject.set(x, "TSMappedType", value.asInstanceOf[js.Any])
+      inline def setTSMappedType(value: VisitNode[S, Extract[Node, `127`]]): Self = StObject.set(x, "TSMappedType", value.asInstanceOf[js.Any])
       
       inline def setTSMappedTypeUndefined: Self = StObject.set(x, "TSMappedType", js.undefined)
       
-      inline def setTSMethodSignature(value: VisitNode[S, Extract[Node, `198`]]): Self = StObject.set(x, "TSMethodSignature", value.asInstanceOf[js.Any])
+      inline def setTSMethodSignature(value: VisitNode[S, Extract[Node, `202`]]): Self = StObject.set(x, "TSMethodSignature", value.asInstanceOf[js.Any])
       
       inline def setTSMethodSignatureUndefined: Self = StObject.set(x, "TSMethodSignature", js.undefined)
       
-      inline def setTSModuleBlock(value: VisitNode[S, Extract[Node, `224`]]): Self = StObject.set(x, "TSModuleBlock", value.asInstanceOf[js.Any])
+      inline def setTSModuleBlock(value: VisitNode[S, Extract[Node, `230`]]): Self = StObject.set(x, "TSModuleBlock", value.asInstanceOf[js.Any])
       
       inline def setTSModuleBlockUndefined: Self = StObject.set(x, "TSModuleBlock", js.undefined)
       
@@ -4274,19 +5353,19 @@ object mod {
       
       inline def setTSModuleDeclarationUndefined: Self = StObject.set(x, "TSModuleDeclaration", js.undefined)
       
-      inline def setTSNamedTupleMember(value: VisitNode[S, Extract[Node, `215`]]): Self = StObject.set(x, "TSNamedTupleMember", value.asInstanceOf[js.Any])
+      inline def setTSNamedTupleMember(value: VisitNode[S, Extract[Node, `221`]]): Self = StObject.set(x, "TSNamedTupleMember", value.asInstanceOf[js.Any])
       
       inline def setTSNamedTupleMemberUndefined: Self = StObject.set(x, "TSNamedTupleMember", js.undefined)
       
-      inline def setTSNamespaceExportDeclaration(value: VisitNode[S, Extract[Node, `88`]]): Self = StObject.set(x, "TSNamespaceExportDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSNamespaceExportDeclaration(value: VisitNode[S, Extract[Node, `89`]]): Self = StObject.set(x, "TSNamespaceExportDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTSNamespaceExportDeclarationUndefined: Self = StObject.set(x, "TSNamespaceExportDeclaration", js.undefined)
       
-      inline def setTSNeverKeyword(value: VisitNode[S, Extract[Node, `230`]]): Self = StObject.set(x, "TSNeverKeyword", value.asInstanceOf[js.Any])
+      inline def setTSNeverKeyword(value: VisitNode[S, Extract[Node, `236`]]): Self = StObject.set(x, "TSNeverKeyword", value.asInstanceOf[js.Any])
       
       inline def setTSNeverKeywordUndefined: Self = StObject.set(x, "TSNeverKeyword", js.undefined)
       
-      inline def setTSNonNullExpression(value: VisitNode[S, Extract[Node, `95`]]): Self = StObject.set(x, "TSNonNullExpression", value.asInstanceOf[js.Any])
+      inline def setTSNonNullExpression(value: VisitNode[S, Extract[Node, `96`]]): Self = StObject.set(x, "TSNonNullExpression", value.asInstanceOf[js.Any])
       
       inline def setTSNonNullExpressionUndefined: Self = StObject.set(x, "TSNonNullExpression", js.undefined)
       
@@ -4294,27 +5373,27 @@ object mod {
       
       inline def setTSNullKeywordUndefined: Self = StObject.set(x, "TSNullKeyword", js.undefined)
       
-      inline def setTSNumberKeyword(value: VisitNode[S, Extract[Node, `176`]]): Self = StObject.set(x, "TSNumberKeyword", value.asInstanceOf[js.Any])
+      inline def setTSNumberKeyword(value: VisitNode[S, Extract[Node, `180`]]): Self = StObject.set(x, "TSNumberKeyword", value.asInstanceOf[js.Any])
       
       inline def setTSNumberKeywordUndefined: Self = StObject.set(x, "TSNumberKeyword", js.undefined)
       
-      inline def setTSObjectKeyword(value: VisitNode[S, Extract[Node, `211`]]): Self = StObject.set(x, "TSObjectKeyword", value.asInstanceOf[js.Any])
+      inline def setTSObjectKeyword(value: VisitNode[S, Extract[Node, `217`]]): Self = StObject.set(x, "TSObjectKeyword", value.asInstanceOf[js.Any])
       
       inline def setTSObjectKeywordUndefined: Self = StObject.set(x, "TSObjectKeyword", js.undefined)
       
-      inline def setTSOptionalType(value: VisitNode[S, Extract[Node, `180`]]): Self = StObject.set(x, "TSOptionalType", value.asInstanceOf[js.Any])
+      inline def setTSOptionalType(value: VisitNode[S, Extract[Node, `184`]]): Self = StObject.set(x, "TSOptionalType", value.asInstanceOf[js.Any])
       
       inline def setTSOptionalTypeUndefined: Self = StObject.set(x, "TSOptionalType", js.undefined)
       
-      inline def setTSParameterProperty(value: VisitNode[S, Extract[Node, `191`]]): Self = StObject.set(x, "TSParameterProperty", value.asInstanceOf[js.Any])
+      inline def setTSParameterProperty(value: VisitNode[S, Extract[Node, `195`]]): Self = StObject.set(x, "TSParameterProperty", value.asInstanceOf[js.Any])
       
       inline def setTSParameterPropertyUndefined: Self = StObject.set(x, "TSParameterProperty", js.undefined)
       
-      inline def setTSParenthesizedType(value: VisitNode[S, Extract[Node, `220`]]): Self = StObject.set(x, "TSParenthesizedType", value.asInstanceOf[js.Any])
+      inline def setTSParenthesizedType(value: VisitNode[S, Extract[Node, `226`]]): Self = StObject.set(x, "TSParenthesizedType", value.asInstanceOf[js.Any])
       
       inline def setTSParenthesizedTypeUndefined: Self = StObject.set(x, "TSParenthesizedType", js.undefined)
       
-      inline def setTSPropertySignature(value: VisitNode[S, Extract[Node, `115`]]): Self = StObject.set(x, "TSPropertySignature", value.asInstanceOf[js.Any])
+      inline def setTSPropertySignature(value: VisitNode[S, Extract[Node, `117`]]): Self = StObject.set(x, "TSPropertySignature", value.asInstanceOf[js.Any])
       
       inline def setTSPropertySignatureUndefined: Self = StObject.set(x, "TSPropertySignature", js.undefined)
       
@@ -4322,37 +5401,37 @@ object mod {
       
       inline def setTSQualifiedNameUndefined: Self = StObject.set(x, "TSQualifiedName", js.undefined)
       
-      inline def setTSRestType(value: VisitNode[S, Extract[Node, `205`]]): Self = StObject.set(x, "TSRestType", value.asInstanceOf[js.Any])
+      inline def setTSRestType(value: VisitNode[S, Extract[Node, `209`]]): Self = StObject.set(x, "TSRestType", value.asInstanceOf[js.Any])
       
       inline def setTSRestTypeUndefined: Self = StObject.set(x, "TSRestType", js.undefined)
       
-      inline def setTSStringKeyword(value: VisitNode[S, Extract[Node, `99`]]): Self = StObject.set(x, "TSStringKeyword", value.asInstanceOf[js.Any])
+      inline def setTSStringKeyword(value: VisitNode[S, Extract[Node, `100`]]): Self = StObject.set(x, "TSStringKeyword", value.asInstanceOf[js.Any])
       
       inline def setTSStringKeywordUndefined: Self = StObject.set(x, "TSStringKeyword", js.undefined)
       
-      inline def setTSSymbolKeyword(value: VisitNode[S, Extract[Node, `124`]]): Self = StObject.set(x, "TSSymbolKeyword", value.asInstanceOf[js.Any])
+      inline def setTSSymbolKeyword(value: VisitNode[S, Extract[Node, `126`]]): Self = StObject.set(x, "TSSymbolKeyword", value.asInstanceOf[js.Any])
       
       inline def setTSSymbolKeywordUndefined: Self = StObject.set(x, "TSSymbolKeyword", js.undefined)
       
-      inline def setTSThisType(value: VisitNode[S, Extract[Node, `203`]]): Self = StObject.set(x, "TSThisType", value.asInstanceOf[js.Any])
+      inline def setTSThisType(value: VisitNode[S, Extract[Node, `207`]]): Self = StObject.set(x, "TSThisType", value.asInstanceOf[js.Any])
       
       inline def setTSThisTypeUndefined: Self = StObject.set(x, "TSThisType", js.undefined)
       
-      inline def setTSTupleType(value: VisitNode[S, Extract[Node, `194`]]): Self = StObject.set(x, "TSTupleType", value.asInstanceOf[js.Any])
+      inline def setTSTupleType(value: VisitNode[S, Extract[Node, `198`]]): Self = StObject.set(x, "TSTupleType", value.asInstanceOf[js.Any])
       
       inline def setTSTupleTypeUndefined: Self = StObject.set(x, "TSTupleType", js.undefined)
       
       inline def setTSType(value: VisitNode[S, TSType]): Self = StObject.set(x, "TSType", value.asInstanceOf[js.Any])
       
-      inline def setTSTypeAliasDeclaration(value: VisitNode[S, Extract[Node, `90`]]): Self = StObject.set(x, "TSTypeAliasDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSTypeAliasDeclaration(value: VisitNode[S, Extract[Node, `91`]]): Self = StObject.set(x, "TSTypeAliasDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTSTypeAliasDeclarationUndefined: Self = StObject.set(x, "TSTypeAliasDeclaration", js.undefined)
       
-      inline def setTSTypeAnnotation(value: VisitNode[S, Extract[Node, `109`]]): Self = StObject.set(x, "TSTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setTSTypeAnnotation(value: VisitNode[S, Extract[Node, `111`]]): Self = StObject.set(x, "TSTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setTSTypeAnnotationUndefined: Self = StObject.set(x, "TSTypeAnnotation", js.undefined)
       
-      inline def setTSTypeAssertion(value: VisitNode[S, Extract[Node, `229`]]): Self = StObject.set(x, "TSTypeAssertion", value.asInstanceOf[js.Any])
+      inline def setTSTypeAssertion(value: VisitNode[S, Extract[Node, `235`]]): Self = StObject.set(x, "TSTypeAssertion", value.asInstanceOf[js.Any])
       
       inline def setTSTypeAssertionUndefined: Self = StObject.set(x, "TSTypeAssertion", js.undefined)
       
@@ -4360,7 +5439,7 @@ object mod {
       
       inline def setTSTypeElementUndefined: Self = StObject.set(x, "TSTypeElement", js.undefined)
       
-      inline def setTSTypeLiteral(value: VisitNode[S, Extract[Node, `151`]]): Self = StObject.set(x, "TSTypeLiteral", value.asInstanceOf[js.Any])
+      inline def setTSTypeLiteral(value: VisitNode[S, Extract[Node, `155`]]): Self = StObject.set(x, "TSTypeLiteral", value.asInstanceOf[js.Any])
       
       inline def setTSTypeLiteralUndefined: Self = StObject.set(x, "TSTypeLiteral", js.undefined)
       
@@ -4368,37 +5447,37 @@ object mod {
       
       inline def setTSTypeOperatorUndefined: Self = StObject.set(x, "TSTypeOperator", js.undefined)
       
-      inline def setTSTypeParameter(value: VisitNode[S, Extract[Node, `92`]]): Self = StObject.set(x, "TSTypeParameter", value.asInstanceOf[js.Any])
+      inline def setTSTypeParameter(value: VisitNode[S, Extract[Node, `93`]]): Self = StObject.set(x, "TSTypeParameter", value.asInstanceOf[js.Any])
       
       inline def setTSTypeParameterDeclaration(value: VisitNode[S, Extract[Node, `20`]]): Self = StObject.set(x, "TSTypeParameterDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTSTypeParameterDeclarationUndefined: Self = StObject.set(x, "TSTypeParameterDeclaration", js.undefined)
       
-      inline def setTSTypeParameterInstantiation(value: VisitNode[S, Extract[Node, `74`]]): Self = StObject.set(x, "TSTypeParameterInstantiation", value.asInstanceOf[js.Any])
+      inline def setTSTypeParameterInstantiation(value: VisitNode[S, Extract[Node, `75`]]): Self = StObject.set(x, "TSTypeParameterInstantiation", value.asInstanceOf[js.Any])
       
       inline def setTSTypeParameterInstantiationUndefined: Self = StObject.set(x, "TSTypeParameterInstantiation", js.undefined)
       
       inline def setTSTypeParameterUndefined: Self = StObject.set(x, "TSTypeParameter", js.undefined)
       
-      inline def setTSTypePredicate(value: VisitNode[S, Extract[Node, `181`]]): Self = StObject.set(x, "TSTypePredicate", value.asInstanceOf[js.Any])
+      inline def setTSTypePredicate(value: VisitNode[S, Extract[Node, `185`]]): Self = StObject.set(x, "TSTypePredicate", value.asInstanceOf[js.Any])
       
       inline def setTSTypePredicateUndefined: Self = StObject.set(x, "TSTypePredicate", js.undefined)
       
-      inline def setTSTypeQuery(value: VisitNode[S, Extract[Node, `117`]]): Self = StObject.set(x, "TSTypeQuery", value.asInstanceOf[js.Any])
+      inline def setTSTypeQuery(value: VisitNode[S, Extract[Node, `119`]]): Self = StObject.set(x, "TSTypeQuery", value.asInstanceOf[js.Any])
       
       inline def setTSTypeQueryUndefined: Self = StObject.set(x, "TSTypeQuery", js.undefined)
       
-      inline def setTSTypeReference(value: VisitNode[S, Extract[Node, `240`]]): Self = StObject.set(x, "TSTypeReference", value.asInstanceOf[js.Any])
+      inline def setTSTypeReference(value: VisitNode[S, Extract[Node, `246`]]): Self = StObject.set(x, "TSTypeReference", value.asInstanceOf[js.Any])
       
       inline def setTSTypeReferenceUndefined: Self = StObject.set(x, "TSTypeReference", js.undefined)
       
       inline def setTSTypeUndefined: Self = StObject.set(x, "TSType", js.undefined)
       
-      inline def setTSUndefinedKeyword(value: VisitNode[S, Extract[Node, `164`]]): Self = StObject.set(x, "TSUndefinedKeyword", value.asInstanceOf[js.Any])
+      inline def setTSUndefinedKeyword(value: VisitNode[S, Extract[Node, `168`]]): Self = StObject.set(x, "TSUndefinedKeyword", value.asInstanceOf[js.Any])
       
       inline def setTSUndefinedKeywordUndefined: Self = StObject.set(x, "TSUndefinedKeyword", js.undefined)
       
-      inline def setTSUnionType(value: VisitNode[S, Extract[Node, `91`]]): Self = StObject.set(x, "TSUnionType", value.asInstanceOf[js.Any])
+      inline def setTSUnionType(value: VisitNode[S, Extract[Node, `92`]]): Self = StObject.set(x, "TSUnionType", value.asInstanceOf[js.Any])
       
       inline def setTSUnionTypeUndefined: Self = StObject.set(x, "TSUnionType", js.undefined)
       
@@ -4410,15 +5489,15 @@ object mod {
       
       inline def setTSVoidKeywordUndefined: Self = StObject.set(x, "TSVoidKeyword", js.undefined)
       
-      inline def setTaggedTemplateExpression(value: VisitNode[S, Extract[Node, `70`]]): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
+      inline def setTaggedTemplateExpression(value: VisitNode[S, Extract[Node, `71`]]): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
       
       inline def setTaggedTemplateExpressionUndefined: Self = StObject.set(x, "TaggedTemplateExpression", js.undefined)
       
-      inline def setTemplateElement(value: VisitNode[S, Extract[Node, `189`]]): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
+      inline def setTemplateElement(value: VisitNode[S, Extract[Node, `193`]]): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
       
       inline def setTemplateElementUndefined: Self = StObject.set(x, "TemplateElement", js.undefined)
       
-      inline def setTemplateLiteral(value: VisitNode[S, Extract[Node, `76`]]): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
+      inline def setTemplateLiteral(value: VisitNode[S, Extract[Node, `77`]]): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
       
       inline def setTemplateLiteralUndefined: Self = StObject.set(x, "TemplateLiteral", js.undefined)
       
@@ -4426,7 +5505,7 @@ object mod {
       
       inline def setTerminatorlessUndefined: Self = StObject.set(x, "Terminatorless", js.undefined)
       
-      inline def setThisExpression(value: VisitNode[S, Extract[Node, `227`]]): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
+      inline def setThisExpression(value: VisitNode[S, Extract[Node, `233`]]): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
       
       inline def setThisExpressionUndefined: Self = StObject.set(x, "ThisExpression", js.undefined)
       
@@ -4434,15 +5513,19 @@ object mod {
       
       inline def setThisTypeAnnotationUndefined: Self = StObject.set(x, "ThisTypeAnnotation", js.undefined)
       
-      inline def setThrowStatement(value: VisitNode[S, Extract[Node, `137`]]): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
+      inline def setThrowStatement(value: VisitNode[S, Extract[Node, `139`]]): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
       
       inline def setThrowStatementUndefined: Self = StObject.set(x, "ThrowStatement", js.undefined)
+      
+      inline def setTopicReference(value: VisitNode[S, Extract[Node, `101`]]): Self = StObject.set(x, "TopicReference", value.asInstanceOf[js.Any])
+      
+      inline def setTopicReferenceUndefined: Self = StObject.set(x, "TopicReference", js.undefined)
       
       inline def setTryStatement(value: VisitNode[S, Extract[Node, `23`]]): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
       
       inline def setTryStatementUndefined: Self = StObject.set(x, "TryStatement", js.undefined)
       
-      inline def setTupleExpression(value: VisitNode[S, Extract[Node, `204`]]): Self = StObject.set(x, "TupleExpression", value.asInstanceOf[js.Any])
+      inline def setTupleExpression(value: VisitNode[S, Extract[Node, `208`]]): Self = StObject.set(x, "TupleExpression", value.asInstanceOf[js.Any])
       
       inline def setTupleExpressionUndefined: Self = StObject.set(x, "TupleExpression", js.undefined)
       
@@ -4450,7 +5533,7 @@ object mod {
       
       inline def setTupleTypeAnnotationUndefined: Self = StObject.set(x, "TupleTypeAnnotation", js.undefined)
       
-      inline def setTypeAlias(value: VisitNode[S, Extract[Node, `175`]]): Self = StObject.set(x, "TypeAlias", value.asInstanceOf[js.Any])
+      inline def setTypeAlias(value: VisitNode[S, Extract[Node, `179`]]): Self = StObject.set(x, "TypeAlias", value.asInstanceOf[js.Any])
       
       inline def setTypeAliasUndefined: Self = StObject.set(x, "TypeAlias", js.undefined)
       
@@ -4462,23 +5545,27 @@ object mod {
       
       inline def setTypeCastExpressionUndefined: Self = StObject.set(x, "TypeCastExpression", js.undefined)
       
-      inline def setTypeParameter(value: VisitNode[S, Extract[Node, `168`]]): Self = StObject.set(x, "TypeParameter", value.asInstanceOf[js.Any])
+      inline def setTypeParameter(value: VisitNode[S, Extract[Node, `172`]]): Self = StObject.set(x, "TypeParameter", value.asInstanceOf[js.Any])
       
       inline def setTypeParameterDeclaration(value: VisitNode[S, Extract[Node, `14`]]): Self = StObject.set(x, "TypeParameterDeclaration", value.asInstanceOf[js.Any])
       
       inline def setTypeParameterDeclarationUndefined: Self = StObject.set(x, "TypeParameterDeclaration", js.undefined)
       
-      inline def setTypeParameterInstantiation(value: VisitNode[S, Extract[Node, `239`]]): Self = StObject.set(x, "TypeParameterInstantiation", value.asInstanceOf[js.Any])
+      inline def setTypeParameterInstantiation(value: VisitNode[S, Extract[Node, `245`]]): Self = StObject.set(x, "TypeParameterInstantiation", value.asInstanceOf[js.Any])
       
       inline def setTypeParameterInstantiationUndefined: Self = StObject.set(x, "TypeParameterInstantiation", js.undefined)
       
       inline def setTypeParameterUndefined: Self = StObject.set(x, "TypeParameter", js.undefined)
       
-      inline def setTypeofTypeAnnotation(value: VisitNode[S, Extract[Node, `145`]]): Self = StObject.set(x, "TypeofTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setTypeScript(value: VisitNode[S, TypeScript]): Self = StObject.set(x, "TypeScript", value.asInstanceOf[js.Any])
+      
+      inline def setTypeScriptUndefined: Self = StObject.set(x, "TypeScript", js.undefined)
+      
+      inline def setTypeofTypeAnnotation(value: VisitNode[S, Extract[Node, `149`]]): Self = StObject.set(x, "TypeofTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setTypeofTypeAnnotationUndefined: Self = StObject.set(x, "TypeofTypeAnnotation", js.undefined)
       
-      inline def setUnaryExpression(value: VisitNode[S, Extract[Node, `172`]]): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
+      inline def setUnaryExpression(value: VisitNode[S, Extract[Node, `176`]]): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
       
       inline def setUnaryExpressionUndefined: Self = StObject.set(x, "UnaryExpression", js.undefined)
       
@@ -4486,11 +5573,11 @@ object mod {
       
       inline def setUnaryLikeUndefined: Self = StObject.set(x, "UnaryLike", js.undefined)
       
-      inline def setUnionTypeAnnotation(value: VisitNode[S, Extract[Node, `214`]]): Self = StObject.set(x, "UnionTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setUnionTypeAnnotation(value: VisitNode[S, Extract[Node, `220`]]): Self = StObject.set(x, "UnionTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setUnionTypeAnnotationUndefined: Self = StObject.set(x, "UnionTypeAnnotation", js.undefined)
       
-      inline def setUpdateExpression(value: VisitNode[S, Extract[Node, `98`]]): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+      inline def setUpdateExpression(value: VisitNode[S, Extract[Node, `99`]]): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
       
       inline def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
       
@@ -4498,7 +5585,7 @@ object mod {
       
       inline def setUserWhitespacableUndefined: Self = StObject.set(x, "UserWhitespacable", js.undefined)
       
-      inline def setV8IntrinsicIdentifier(value: VisitNode[S, Extract[Node, `138`]]): Self = StObject.set(x, "V8IntrinsicIdentifier", value.asInstanceOf[js.Any])
+      inline def setV8IntrinsicIdentifier(value: VisitNode[S, Extract[Node, `140`]]): Self = StObject.set(x, "V8IntrinsicIdentifier", value.asInstanceOf[js.Any])
       
       inline def setV8IntrinsicIdentifierUndefined: Self = StObject.set(x, "V8IntrinsicIdentifier", js.undefined)
       
@@ -4506,15 +5593,15 @@ object mod {
       
       inline def setVariableDeclarationUndefined: Self = StObject.set(x, "VariableDeclaration", js.undefined)
       
-      inline def setVariableDeclarator(value: VisitNode[S, Extract[Node, `127`]]): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
+      inline def setVariableDeclarator(value: VisitNode[S, Extract[Node, `129`]]): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
       
       inline def setVariableDeclaratorUndefined: Self = StObject.set(x, "VariableDeclarator", js.undefined)
       
-      inline def setVariance(value: VisitNode[S, Extract[Node, `148`]]): Self = StObject.set(x, "Variance", value.asInstanceOf[js.Any])
+      inline def setVariance(value: VisitNode[S, Extract[Node, `152`]]): Self = StObject.set(x, "Variance", value.asInstanceOf[js.Any])
       
       inline def setVarianceUndefined: Self = StObject.set(x, "Variance", js.undefined)
       
-      inline def setVoidTypeAnnotation(value: VisitNode[S, Extract[Node, `104`]]): Self = StObject.set(x, "VoidTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setVoidTypeAnnotation(value: VisitNode[S, Extract[Node, `106`]]): Self = StObject.set(x, "VoidTypeAnnotation", value.asInstanceOf[js.Any])
       
       inline def setVoidTypeAnnotationUndefined: Self = StObject.set(x, "VoidTypeAnnotation", js.undefined)
       
@@ -4526,7 +5613,7 @@ object mod {
       
       inline def setWhileUndefined: Self = StObject.set(x, "While", js.undefined)
       
-      inline def setWithStatement(value: VisitNode[S, Extract[Node, `94`]]): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
+      inline def setWithStatement(value: VisitNode[S, Extract[Node, `95`]]): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
       
       inline def setWithStatementUndefined: Self = StObject.set(x, "WithStatement", js.undefined)
       

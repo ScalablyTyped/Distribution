@@ -11,7 +11,7 @@ trait IgGridFeatureChooserPopover
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Sets the time popover fades in and out when showing/hiding
@@ -31,7 +31,7 @@ trait IgGridFeatureChooserPopover
   
   var closeOnBlur: js.UndefOr[Boolean] = js.undefined
   
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var containment: js.UndefOr[Any] = js.undefined
   
   /**
     * sets the content for the popover container. If left null the content will be get from the target.
@@ -61,7 +61,7 @@ trait IgGridFeatureChooserPopover
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  var directionPriority: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var directionPriority: js.UndefOr[js.Array[Any]] = js.undefined
   
   var gridId: js.UndefOr[String] = js.undefined
   
@@ -144,7 +144,7 @@ trait IgGridFeatureChooserPopover
     */
   var shown: js.UndefOr[ShownEvent] = js.undefined
   
-  var targetButton: js.UndefOr[js.Any] = js.undefined
+  var targetButton: js.UndefOr[Any] = js.undefined
   
   /**
     * defines width for the popover. leave null for auto.
@@ -173,7 +173,7 @@ object IgGridFeatureChooserPopover {
     
     inline def setCloseOnBlurUndefined: Self = StObject.set(x, "closeOnBlur", js.undefined)
     
-    inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
@@ -183,11 +183,11 @@ object IgGridFeatureChooserPopover {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    inline def setDirectionPriority(value: js.Array[js.Any]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
+    inline def setDirectionPriority(value: js.Array[Any]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
     
     inline def setDirectionPriorityUndefined: Self = StObject.set(x, "directionPriority", js.undefined)
     
-    inline def setDirectionPriorityVarargs(value: js.Any*): Self = StObject.set(x, "directionPriority", js.Array(value :_*))
+    inline def setDirectionPriorityVarargs(value: Any*): Self = StObject.set(x, "directionPriority", js.Array(value*))
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
@@ -243,7 +243,7 @@ object IgGridFeatureChooserPopover {
     
     inline def setShownUndefined: Self = StObject.set(x, "shown", js.undefined)
     
-    inline def setTargetButton(value: js.Any): Self = StObject.set(x, "targetButton", value.asInstanceOf[js.Any])
+    inline def setTargetButton(value: Any): Self = StObject.set(x, "targetButton", value.asInstanceOf[js.Any])
     
     inline def setTargetButtonUndefined: Self = StObject.set(x, "targetButton", js.undefined)
     

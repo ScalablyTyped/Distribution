@@ -8,7 +8,7 @@ trait AffixOptions extends StObject {
   
   var offset: js.UndefOr[Double | CallBack | js.Object] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
 object AffixOptions {
   
@@ -25,7 +25,7 @@ object AffixOptions {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

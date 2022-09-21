@@ -17,5 +17,5 @@ trait CircleConstructor
 Instantiable0[Circle]
      with Instantiable1[/* properties */ CircleProperties, Circle] {
   
-  def fromJSON(json: js.Any): Circle = js.native
+  def fromJSON(json: Any): Circle = js.native
 }

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.Component
 import typings.react.mod.ElementType
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object paginationLinkMod {
   
-  @JSImport("reactstrap/lib/PaginationLink", JSImport.Default)
+  @JSImport("reactstrap/types/lib/PaginationLink", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PaginationLinkProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PaginationLinkProps, js.Object, Any]
   
-  type PaginationLink = Component[PaginationLinkProps, js.Object, js.Any]
+  type PaginationLink = Component[PaginationLinkProps, js.Object, Any]
   
   trait PaginationLinkProps
     extends StObject
        with AnchorHTMLAttributes[HTMLAnchorElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     
@@ -34,7 +34,7 @@ object paginationLinkMod {
     
     var previous: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object PaginationLinkProps {
     
@@ -65,7 +65,7 @@ object paginationLinkMod {
       
       inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

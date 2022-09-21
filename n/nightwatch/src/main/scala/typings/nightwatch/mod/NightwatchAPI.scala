@@ -1,6 +1,8 @@
 package typings.nightwatch.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.nightwatch.anon.Async
+import typings.nightwatch.expectMod.Expect
+import typings.seleniumWebdriver.mod.Actions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +12,21 @@ trait NightwatchAPI
   extends StObject
      with SharedCommands
      with WebDriverProtocol
-     with NightwatchCustomCommands {
+     with NightwatchCustomCommands
+     with NightwatchApiCommands {
   
   var Keys: NightwatchKeys = js.native
   
-  var assert: NightwatchAssertions = js.native
+  def actions(): Actions = js.native
+  def actions(options: Async): Actions = js.native
+  
+  var assert: Assert = js.native
+  
+  var baseUrl: String = js.native
   
   var currentTest: NightwatchTestSuite = js.native
+  
+  var ensure: Ensure = js.native
   
   var expect: Expect = js.native
   
@@ -28,7 +38,7 @@ trait NightwatchAPI
   
   var options: NightwatchTestOptions = js.native
   
-  var page: StringDictionary[js.Function0[EnhancedPageObject[js.Any, js.Any, js.Any]]] = js.native
+  var page: NightwatchPage & NightwatchCustomPageObjects = js.native
   
   /**
     * SessionId of the session used by the Nightwatch api.
@@ -40,5 +50,5 @@ trait NightwatchAPI
     */
   def setSessionId(sessionId: String): this.type = js.native
   
-  var verify: NightwatchAssertions = js.native
+  var verify: Assert = js.native
 }

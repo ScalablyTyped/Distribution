@@ -9,10 +9,10 @@ astar search algorithm in JavaScript
 | ------------------ | :-------------: |
 | Full name          | javascript-astar |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 7956 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1421.3333333333333 |
+| # stars            | 1181.0 |
 
 ## Links
 - [Homepage](http://bgrins.github.io/javascript-astar)

@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("Stream")
   @js.native
-  class Stream[T] ()
+  open class Stream[T] ()
     extends StObject
        with typings.streamjs.Stream[T]
   object Stream {
@@ -20,7 +20,7 @@ object global {
     
     @JSGlobal("Stream.Optional")
     @js.native
-    class Optional[T] ()
+    open class Optional[T] ()
       extends StObject
          with typings.streamjs.Stream.Optional[T] {
       
@@ -49,7 +49,7 @@ object global {
       override def orElseGet(supplier: Supplier[T]): T = js.native
       
       /* CompleteClass */
-      override def orElseThrow(error: js.Any): T = js.native
+      override def orElseThrow(error: Any): T = js.native
     }
     /* static members */
     object Optional {
@@ -75,7 +75,7 @@ object global {
     inline def iterate[T](seed: T, fn: js.Function): typings.streamjs.Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(seed.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.streamjs.Stream[T]]
     
     /* static member */
-    inline def of[T](elems: T*): typings.streamjs.Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(elems.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[T]]
+    inline def of[T](elems: T*): typings.streamjs.Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(elems.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.streamjs.Stream[T]]
     
     /* static member */
     inline def range(startInclusive: Double, endExclusive: Double): typings.streamjs.Stream[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(startInclusive.asInstanceOf[js.Any], endExclusive.asInstanceOf[js.Any])).asInstanceOf[typings.streamjs.Stream[Double]]

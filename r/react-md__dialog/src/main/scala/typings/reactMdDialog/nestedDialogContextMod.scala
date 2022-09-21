@@ -39,7 +39,7 @@ object nestedDialogContextMod {
       
       inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value*))
     }
   }
   

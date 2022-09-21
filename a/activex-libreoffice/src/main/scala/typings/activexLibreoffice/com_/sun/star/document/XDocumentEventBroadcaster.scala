@@ -37,7 +37,7 @@ trait XDocumentEventBroadcaster extends StObject {
     * @throws com::sun::star::lang::IllegalArgumentException if EventName is empty, or if EventName is not supported by the document implementation.
     * @throws com::sun::star::lang::NoSupportException if the broadcaster implementation does not supported broadcasting events induced externally. This is usu
     */
-  def notifyDocumentEvent(EventName: String, ViewController: XController2, Supplement: js.Any): Unit
+  def notifyDocumentEvent(EventName: String, ViewController: XController2, Supplement: Any): Unit
   
   /**
     * revokes a listener which has previously been registered to be notified about document events.
@@ -49,7 +49,7 @@ object XDocumentEventBroadcaster {
   
   inline def apply(
     addDocumentEventListener: XDocumentEventListener => Unit,
-    notifyDocumentEvent: (String, XController2, js.Any) => Unit,
+    notifyDocumentEvent: (String, XController2, Any) => Unit,
     removeDocumentEventListener: XDocumentEventListener => Unit
   ): XDocumentEventBroadcaster = {
     val __obj = js.Dynamic.literal(addDocumentEventListener = js.Any.fromFunction1(addDocumentEventListener), notifyDocumentEvent = js.Any.fromFunction3(notifyDocumentEvent), removeDocumentEventListener = js.Any.fromFunction1(removeDocumentEventListener))
@@ -60,7 +60,7 @@ object XDocumentEventBroadcaster {
     
     inline def setAddDocumentEventListener(value: XDocumentEventListener => Unit): Self = StObject.set(x, "addDocumentEventListener", js.Any.fromFunction1(value))
     
-    inline def setNotifyDocumentEvent(value: (String, XController2, js.Any) => Unit): Self = StObject.set(x, "notifyDocumentEvent", js.Any.fromFunction3(value))
+    inline def setNotifyDocumentEvent(value: (String, XController2, Any) => Unit): Self = StObject.set(x, "notifyDocumentEvent", js.Any.fromFunction3(value))
     
     inline def setRemoveDocumentEventListener(value: XDocumentEventListener => Unit): Self = StObject.set(x, "removeDocumentEventListener", js.Any.fromFunction1(value))
   }

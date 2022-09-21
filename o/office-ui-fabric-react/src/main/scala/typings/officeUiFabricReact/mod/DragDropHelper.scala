@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "DragDropHelper")
 @js.native
-class DragDropHelper protected ()
+open class DragDropHelper protected ()
   extends typings.officeUiFabricReact.libDragDropMod.DragDropHelper {
   def this(params: IDragDropHelperParams) = this()
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MipsRelocator")
 @js.native
-class MipsRelocator protected ()
+open class MipsRelocator protected ()
   extends StObject
      with typings.fridaGum.MipsRelocator {
   /**

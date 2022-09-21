@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Buyers are allowed to store certain types of private data in a
-  * proposal/deal.
-  */
 trait SchemaPrivateData extends StObject {
   
   /**
-    * A buyer or seller specified reference ID. This can be queried in the list
-    * operations (max-length: 1024 unicode code units).
+    * A buyer or seller specified reference ID. This can be queried in the list operations (max-length: 1024 unicode code units).
     */
-  var referenceId: js.UndefOr[String] = js.undefined
+  var referenceId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPrivateData {
   
@@ -26,6 +21,8 @@ object SchemaPrivateData {
   extension [Self <: SchemaPrivateData](x: Self) {
     
     inline def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceIdNull: Self = StObject.set(x, "referenceId", null)
     
     inline def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
   }

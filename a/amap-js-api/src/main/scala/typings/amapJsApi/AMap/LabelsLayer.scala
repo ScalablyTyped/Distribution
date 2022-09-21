@@ -18,12 +18,12 @@ trait LabelsLayer
   extends StObject
      with Layer {
   
-  def add(labelMarker: js.Array[LabelMarker[js.Any]]): Unit = js.native
+  def add(labelMarker: js.Array[LabelMarker[Any]]): Unit = js.native
   /**
     * 图层中添加LabelMarker
     * @param labelMarker 标注对象
     */
-  def add(labelMarker: LabelMarker[js.Any]): Unit = js.native
+  def add(labelMarker: LabelMarker[Any]): Unit = js.native
   
   /**
     * 清空图层
@@ -34,7 +34,7 @@ trait LabelsLayer
     * 图层中移除LabelMarker
     * @param labelMarker 标注对象
     */
-  def remove(labelMarker: LabelMarker[js.Any]): Unit = js.native
+  def remove(labelMarker: LabelMarker[Any]): Unit = js.native
 }
 object LabelsLayer {
   

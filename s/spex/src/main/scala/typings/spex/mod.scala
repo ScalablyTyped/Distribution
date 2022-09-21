@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(promise: js.Any): ISpex = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[ISpex]
+  inline def apply(promise: Any): ISpex = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[ISpex]
   
   @JSImport("spex", JSImport.Namespace)
   @js.native
@@ -22,11 +22,11 @@ object mod {
   // API: http://vitaly-t.github.io/spex/PromiseAdapter.html
   @JSImport("spex", "PromiseAdapter")
   @js.native
-  class PromiseAdapter protected () extends StObject {
+  open class PromiseAdapter protected () extends StObject {
     def this(
-      create: js.Function1[/* cb */ js.Any, js.Object],
-      resolve: js.Function1[/* data */ js.Any, Unit],
-      reject: js.Function1[/* reason */ js.Any, Unit]
+      create: js.Function1[/* cb */ Any, js.Object],
+      resolve: js.Function1[/* data */ Any, Unit],
+      reject: js.Function1[/* reason */ Any, Unit]
     ) = this()
   }
   
@@ -37,21 +37,23 @@ object mod {
     // API: http://vitaly-t.github.io/spex/errors.BatchError.html
     @JSImport("spex", "errors.BatchError")
     @js.native
-    class BatchError ()
+    open class BatchError ()
       extends StObject
          with Error {
       
       // extended properties:
       var data: js.Array[IBatchData] = js.native
       
-      var first: js.Any = js.native
+      var first: Any = js.native
       
       // API: http://vitaly-t.github.io/spex/errors.BatchError.html#.getErrors
-      def getErrors(): js.Array[js.Any] = js.native
+      def getErrors(): js.Array[Any] = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var message: String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: String = js.native
       
@@ -64,28 +66,30 @@ object mod {
     // API: http://vitaly-t.github.io/spex/errors.PageError.html
     @JSImport("spex", "errors.PageError")
     @js.native
-    class PageError ()
+    open class PageError ()
       extends StObject
          with Error {
       
-      var dest: js.Any = js.native
+      var dest: Any = js.native
       
       var duration: Double = js.native
       
       // extended properties:
-      var error: js.Any = js.native
+      var error: Any = js.native
       
       var index: Double = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var message: String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: String = js.native
       
       var reason: String = js.native
       
-      var source: js.Any = js.native
+      var source: Any = js.native
       
       @JSName("stack")
       var stack_PageError: String = js.native
@@ -94,28 +98,30 @@ object mod {
     // API: http://vitaly-t.github.io/spex/errors.SequenceError.html
     @JSImport("spex", "errors.SequenceError")
     @js.native
-    class SequenceError ()
+    open class SequenceError ()
       extends StObject
          with Error {
       
-      var dest: js.Any = js.native
+      var dest: Any = js.native
       
       var duration: Double = js.native
       
       // extended properties:
-      var error: js.Any = js.native
+      var error: Any = js.native
       
       var index: Double = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var message: String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: String = js.native
       
       var reason: String = js.native
       
-      var source: js.Any = js.native
+      var source: Any = js.native
       
       @JSName("stack")
       var stack_SequenceError: String = js.native
@@ -127,20 +133,20 @@ object mod {
     extends StObject
        with Array[T] {
     
-    var duration: Double = js.native
+    val duration: Double = js.native
   }
   
   trait IBatchData extends StObject {
     
-    var origin: js.UndefOr[IOriginData] = js.undefined
+    val origin: js.UndefOr[IOriginData] = js.undefined
     
-    var result: js.Any
+    val result: Any
     
-    var success: Boolean
+    val success: Boolean
   }
   object IBatchData {
     
-    inline def apply(result: js.Any, success: Boolean): IBatchData = {
+    inline def apply(result: Any, success: Boolean): IBatchData = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBatchData]
     }
@@ -151,7 +157,7 @@ object mod {
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
@@ -159,13 +165,13 @@ object mod {
   
   trait IBatchStat extends StObject {
     
-    var duration: Double
+    val duration: Double
     
-    var failed: Double
+    val failed: Double
     
-    var succeeded: Double
+    val succeeded: Double
     
-    var total: Double
+    val total: Double
   }
   object IBatchStat {
     
@@ -188,20 +194,20 @@ object mod {
   
   trait IOriginData extends StObject {
     
-    var result: js.Any
+    val result: Any
     
-    var success: Boolean
+    val success: Boolean
   }
   object IOriginData {
     
-    inline def apply(result: js.Any, success: Boolean): IOriginData = {
+    inline def apply(result: Any, success: Boolean): IOriginData = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOriginData]
     }
     
     extension [Self <: IOriginData](x: Self) {
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
@@ -209,11 +215,11 @@ object mod {
   
   trait IPageResult extends StObject {
     
-    var duration: Double
+    val duration: Double
     
-    var pages: Double
+    val pages: Double
     
-    var total: Double
+    val total: Double
   }
   object IPageResult {
     
@@ -234,9 +240,9 @@ object mod {
   
   trait ISequenceResult extends StObject {
     
-    var duration: Double
+    val duration: Double
     
-    var total: Double
+    val total: Double
   }
   object ISequenceResult {
     
@@ -259,10 +265,10 @@ object mod {
        with ISpexBase {
     
     // API: http://vitaly-t.github.io/spex/errors.html
-    var errors: Typeoferrors = js.native
+    val errors: Typeoferrors = js.native
     
     // API: http://vitaly-t.github.io/spex/stream.html
-    var stream: IStream = js.native
+    val stream: IStream = js.native
   }
   
   // Subset of the base methods only, to be used by pg-promise
@@ -270,22 +276,187 @@ object mod {
   trait ISpexBase extends StObject {
     
     // API: http://vitaly-t.github.io/spex/global.html#batch
-    def batch(values: js.Array[js.Any]): js.Promise[IArrayExt[js.Any]] = js.native
-    def batch(values: js.Array[js.Any], options: Cb): js.Promise[IArrayExt[js.Any]] = js.native
+    def batch[T](values: js.Array[T | js.Promise[T]]): js.Promise[IArrayExt[T]] = js.native
+    def batch[T](values: js.Array[T | js.Promise[T]], options: Cb): js.Promise[IArrayExt[T]] = js.native
+    def batch[T1, T2](values: js.Tuple2[T1 | js.Promise[T1], T2 | js.Promise[T2]]): js.Promise[(js.Tuple2[T1, T2]) & (IArrayExt[T1 | T2])] = js.native
+    def batch[T1, T2](values: js.Tuple2[T1 | js.Promise[T1], T2 | js.Promise[T2]], options: Cb): js.Promise[(js.Tuple2[T1, T2]) & (IArrayExt[T1 | T2])] = js.native
+    def batch[T1, T2, T3](values: js.Tuple3[T1 | js.Promise[T1], T2 | js.Promise[T2], T3 | js.Promise[T3]]): js.Promise[(js.Tuple3[T1, T2, T3]) & (IArrayExt[T1 | T2 | T3])] = js.native
+    def batch[T1, T2, T3](values: js.Tuple3[T1 | js.Promise[T1], T2 | js.Promise[T2], T3 | js.Promise[T3]], options: Cb): js.Promise[(js.Tuple3[T1, T2, T3]) & (IArrayExt[T1 | T2 | T3])] = js.native
+    def batch[T1, T2, T3, T4](
+      values: js.Tuple4[T1 | js.Promise[T1], T2 | js.Promise[T2], T3 | js.Promise[T3], T4 | js.Promise[T4]]
+    ): js.Promise[(js.Tuple4[T1, T2, T3, T4]) & (IArrayExt[T1 | T2 | T3 | T4])] = js.native
+    def batch[T1, T2, T3, T4](
+      values: js.Tuple4[T1 | js.Promise[T1], T2 | js.Promise[T2], T3 | js.Promise[T3], T4 | js.Promise[T4]],
+      options: Cb
+    ): js.Promise[(js.Tuple4[T1, T2, T3, T4]) & (IArrayExt[T1 | T2 | T3 | T4])] = js.native
+    def batch[T1, T2, T3, T4, T5](
+      values: js.Tuple5[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5]
+        ]
+    ): js.Promise[(js.Tuple5[T1, T2, T3, T4, T5]) & (IArrayExt[T1 | T2 | T3 | T4 | T5])] = js.native
+    def batch[T1, T2, T3, T4, T5](
+      values: js.Tuple5[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5]
+        ],
+      options: Cb
+    ): js.Promise[(js.Tuple5[T1, T2, T3, T4, T5]) & (IArrayExt[T1 | T2 | T3 | T4 | T5])] = js.native
+    def batch[T1, T2, T3, T4, T5, T6](
+      values: js.Tuple6[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6]
+        ]
+    ): js.Promise[(js.Tuple6[T1, T2, T3, T4, T5, T6]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6])] = js.native
+    def batch[T1, T2, T3, T4, T5, T6](
+      values: js.Tuple6[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6]
+        ],
+      options: Cb
+    ): js.Promise[(js.Tuple6[T1, T2, T3, T4, T5, T6]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6])] = js.native
+    def batch[T1, T2, T3, T4, T5, T6, T7](
+      values: js.Tuple7[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6], 
+          T7 | js.Promise[T7]
+        ]
+    ): js.Promise[
+        (js.Tuple7[T1, T2, T3, T4, T5, T6, T7]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6 | T7])
+      ] = js.native
+    def batch[T1, T2, T3, T4, T5, T6, T7](
+      values: js.Tuple7[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6], 
+          T7 | js.Promise[T7]
+        ],
+      options: Cb
+    ): js.Promise[
+        (js.Tuple7[T1, T2, T3, T4, T5, T6, T7]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6 | T7])
+      ] = js.native
+    def batch[T1, T2, T3, T4, T5, T6, T7, T8](
+      values: js.Tuple8[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6], 
+          T7 | js.Promise[T7], 
+          T8 | js.Promise[T8]
+        ]
+    ): js.Promise[
+        (js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8])
+      ] = js.native
+    def batch[T1, T2, T3, T4, T5, T6, T7, T8](
+      values: js.Tuple8[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6], 
+          T7 | js.Promise[T7], 
+          T8 | js.Promise[T8]
+        ],
+      options: Cb
+    ): js.Promise[
+        (js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8])
+      ] = js.native
+    def batch[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+      values: js.Tuple9[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6], 
+          T7 | js.Promise[T7], 
+          T8 | js.Promise[T8], 
+          T9 | js.Promise[T9]
+        ]
+    ): js.Promise[
+        (js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9])
+      ] = js.native
+    def batch[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+      values: js.Tuple9[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6], 
+          T7 | js.Promise[T7], 
+          T8 | js.Promise[T8], 
+          T9 | js.Promise[T9]
+        ],
+      options: Cb
+    ): js.Promise[
+        (js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9])
+      ] = js.native
+    def batch[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
+      values: js.Tuple10[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6], 
+          T7 | js.Promise[T7], 
+          T8 | js.Promise[T8], 
+          T9 | js.Promise[T9], 
+          T10 | js.Promise[T10]
+        ]
+    ): js.Promise[
+        (js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10])
+      ] = js.native
+    def batch[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
+      values: js.Tuple10[
+          T1 | js.Promise[T1], 
+          T2 | js.Promise[T2], 
+          T3 | js.Promise[T3], 
+          T4 | js.Promise[T4], 
+          T5 | js.Promise[T5], 
+          T6 | js.Promise[T6], 
+          T7 | js.Promise[T7], 
+          T8 | js.Promise[T8], 
+          T9 | js.Promise[T9], 
+          T10 | js.Promise[T10]
+        ],
+      options: Cb
+    ): js.Promise[
+        (js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]) & (IArrayExt[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10])
+      ] = js.native
     
     // API: http://vitaly-t.github.io/spex/global.html#page
-    def page(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any]): js.Promise[IPageResult] = js.native
-    def page(
-      source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any],
-      options: Dest
-    ): js.Promise[IPageResult] = js.native
+    def page(source: js.Function3[/* index */ Double, /* data */ Any, /* delay */ Double, Any]): js.Promise[IPageResult] = js.native
+    def page(source: js.Function3[/* index */ Double, /* data */ Any, /* delay */ Double, Any], options: Dest): js.Promise[IPageResult] = js.native
     
     // API: http://vitaly-t.github.io/spex/global.html#sequence
-    def sequence(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any]): js.Promise[ISequenceResult | IArrayExt[js.Any]] = js.native
-    def sequence(
-      source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any],
-      options: Limit
-    ): js.Promise[ISequenceResult | IArrayExt[js.Any]] = js.native
+    def sequence(source: js.Function3[/* index */ Double, /* data */ Any, /* delay */ Double, Any]): js.Promise[ISequenceResult | IArrayExt[Any]] = js.native
+    def sequence(source: js.Function3[/* index */ Double, /* data */ Any, /* delay */ Double, Any], options: Limit): js.Promise[ISequenceResult | IArrayExt[Any]] = js.native
   }
   
   // API: http://vitaly-t.github.io/spex/stream.html
@@ -294,12 +465,12 @@ object mod {
     
     // API: http://vitaly-t.github.io/spex/stream.html#.read
     def read(
-      stream: js.Any,
-      receiver: js.Function3[/* index */ Double, /* data */ js.Array[js.Any], /* delay */ Double, js.Any]
+      stream: Any,
+      receiver: js.Function3[/* index */ Double, /* data */ js.Array[Any], /* delay */ Double, Any]
     ): js.Promise[IStreamReadResult] = js.native
     def read(
-      stream: js.Any,
-      receiver: js.Function3[/* index */ Double, /* data */ js.Array[js.Any], /* delay */ Double, js.Any],
+      stream: Any,
+      receiver: js.Function3[/* index */ Double, /* data */ js.Array[Any], /* delay */ Double, Any],
       options: IStreamReadOptions
     ): js.Promise[IStreamReadResult] = js.native
   }
@@ -337,13 +508,13 @@ object mod {
   
   trait IStreamReadResult extends StObject {
     
-    var calls: Double
+    val calls: Double
     
-    var duration: Double
+    val duration: Double
     
-    var length: Double
+    val length: Double
     
-    var reads: Double
+    val reads: Double
   }
   object IStreamReadResult {
     

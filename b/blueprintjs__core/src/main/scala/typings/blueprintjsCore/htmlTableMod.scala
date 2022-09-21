@@ -12,11 +12,13 @@ object htmlTableMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/html-table/htmlTable", "HTMLTable")
   @js.native
-  class HTMLTable protected ()
-    extends AbstractPureComponent2[IHTMLTableProps, js.Object, js.Object] {
-    def this(props: IHTMLTableProps) = this()
-    def this(props: IHTMLTableProps, context: js.Any) = this()
+  open class HTMLTable protected ()
+    extends AbstractPureComponent2[HTMLTableProps, js.Object, js.Object] {
+    def this(props: HTMLTableProps) = this()
+    def this(props: HTMLTableProps, context: Any) = this()
   }
+  
+  type HTMLTableProps = IHTMLTableProps
   
   trait IHTMLTableProps
     extends StObject
@@ -31,12 +33,6 @@ object htmlTableMod {
     
     /** Enables hover styles on row. */
     var interactive: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Use small, condensed appearance for this element and all child elements.
-      * @deprecated
-      */
-    var small: js.UndefOr[Boolean] = js.undefined
     
     /** Use an alternate background color on odd rows. */
     var striped: js.UndefOr[Boolean] = js.undefined
@@ -61,10 +57,6 @@ object htmlTableMod {
       inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
       inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
-      
-      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
-      
-      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
       inline def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
       

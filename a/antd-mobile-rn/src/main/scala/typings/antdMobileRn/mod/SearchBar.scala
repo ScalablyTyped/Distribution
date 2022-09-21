@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "SearchBar")
 @js.native
-class SearchBar protected () extends default {
+open class SearchBar protected () extends default {
   def this(props: SearchBarNativeProps) = this()
 }
 /* static members */

@@ -10,15 +10,15 @@ xstyled system utilities.
 | ------------------ | :-------------: |
 | Full name          | @xstyled/system |
 | Keywords           | emotion, styled-components, css, system, styled-system, tailwindcss |
-| # releases         | 40 |
-| # dependents       | 8 |
-| # downloads        | 291356 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 75207.33333333333 |
+| # stars            | 2000.0 |
 
 ## Links
 - [Homepage](https://xstyled.dev)
 - [Bugs](https://github.com/gregberge/xstyled/issues)
-- [Repository](https://github.com/gregberge/xstyled)
+- [Repository](https://github.com/gregberge/xstyled/tree/master)
 - [Npm](https://www.npmjs.com/package/%40xstyled%2Fsystem)
     
 

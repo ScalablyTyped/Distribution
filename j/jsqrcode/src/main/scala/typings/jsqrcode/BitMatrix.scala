@@ -54,7 +54,7 @@ object BitMatrix {
     
     inline def setBits(value: js.Array[Double]): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
-    inline def setBitsVarargs(value: Double*): Self = StObject.set(x, "bits", js.Array(value :_*))
+    inline def setBitsVarargs(value: Double*): Self = StObject.set(x, "bits", js.Array(value*))
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

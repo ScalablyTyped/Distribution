@@ -1,7 +1,6 @@
 package typings.reactBigCalendar.mod
 
 import typings.react.mod.ReactNode
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +10,14 @@ trait ToolbarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] exte
   
   var children: js.UndefOr[ReactNode] = js.native
   
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   var label: String = js.native
   
   var localizer: typings.reactBigCalendar.anon.Messages = js.native
   
   def onNavigate(navigate: NavigateAction): Unit = js.native
-  def onNavigate(navigate: NavigateAction, date: Date): Unit = js.native
+  def onNavigate(navigate: NavigateAction, date: js.Date): Unit = js.native
   
   def onView(view: View): Unit = js.native
   

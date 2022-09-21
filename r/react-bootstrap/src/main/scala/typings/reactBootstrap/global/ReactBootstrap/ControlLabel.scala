@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.ControlLabel")
 @js.native
-class ControlLabel ()
+open class ControlLabel ()
   extends typings.reactBootstrap.mod.ControlLabel

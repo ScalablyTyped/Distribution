@@ -9,7 +9,7 @@ trait EventFeedbackType extends StObject {
   /**
     * The event feedback date.
     */
-  var FeedbackDate: js.UndefOr[DateType] = js.undefined
+  var FeedbackDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The event feedback value.
@@ -30,7 +30,7 @@ object EventFeedbackType {
   
   extension [Self <: EventFeedbackType](x: Self) {
     
-    inline def setFeedbackDate(value: DateType): Self = StObject.set(x, "FeedbackDate", value.asInstanceOf[js.Any])
+    inline def setFeedbackDate(value: js.Date): Self = StObject.set(x, "FeedbackDate", value.asInstanceOf[js.Any])
     
     inline def setFeedbackDateUndefined: Self = StObject.set(x, "FeedbackDate", js.undefined)
     

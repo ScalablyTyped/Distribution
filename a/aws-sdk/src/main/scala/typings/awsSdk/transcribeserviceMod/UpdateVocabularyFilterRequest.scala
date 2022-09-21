@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateVocabularyFilterRequest extends StObject {
   
   /**
-    * The Amazon S3 location of a text file used as input to create the vocabulary filter. Only use characters from the character set defined for custom vocabularies. For a list of character sets, see Character Sets for Custom Vocabularies. The specified file must be less than 50 KB of UTF-8 characters. If you provide the location of a list of words in the VocabularyFilterFileUri parameter, you can't use the Words parameter.
+    * The Amazon S3 location of the text file that contains your custom vocabulary filter terms. The URI must be located in the same Amazon Web Services Region as the resource you're calling. Here's an example URI path: s3://DOC-EXAMPLE-BUCKET/my-vocab-filter-file.txt  Note that if you include VocabularyFilterFileUri in your request, you cannot use Words; you must choose one or the other.
     */
   var VocabularyFilterFileUri: js.UndefOr[Uri] = js.undefined
   
   /**
-    * The name of the vocabulary filter to update. If you try to update a vocabulary filter with the same name as another vocabulary filter, you get a ConflictException error.
+    * The name of the custom vocabulary filter you want to update. Vocabulary filter names are case sensitive.
     */
   var VocabularyFilterName: typings.awsSdk.transcribeserviceMod.VocabularyFilterName
   
   /**
-    * The words to use in the vocabulary filter. Only use characters from the character set defined for custom vocabularies. For a list of character sets, see Character Sets for Custom Vocabularies. If you provide a list of words in the Words parameter, you can't use the VocabularyFilterFileUri parameter.
+    * Use this parameter if you want to update your vocabulary filter by including all desired terms, as comma-separated values, within your request. The other option for updating your vocabulary filter is to save your entries in a text file and upload them to an Amazon S3 bucket, then specify the location of your file using the VocabularyFilterFileUri parameter. Note that if you include Words in your request, you cannot use VocabularyFilterFileUri; you must choose one or the other. Each language has a character set that contains all allowed characters for that specific language. If you use unsupported characters, your vocabulary filter request fails. Refer to Character Sets for Custom Vocabularies to get the character set for your language.
     */
   var Words: js.UndefOr[typings.awsSdk.transcribeserviceMod.Words] = js.undefined
 }
@@ -40,6 +40,6 @@ object UpdateVocabularyFilterRequest {
     
     inline def setWordsUndefined: Self = StObject.set(x, "Words", js.undefined)
     
-    inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "Words", js.Array(value :_*))
+    inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "Words", js.Array(value*))
   }
 }

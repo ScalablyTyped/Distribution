@@ -41,11 +41,11 @@ object Item {
     
     inline def setDescriptions(value: js.Array[ItemDescription]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionsVarargs(value: ItemDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
+    inline def setDescriptionsVarargs(value: ItemDescription*): Self = StObject.set(x, "descriptions", js.Array(value*))
     
     inline def setEffects(value: js.Array[ItemEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    inline def setEffectsVarargs(value: ItemEffect*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: ItemEffect*): Self = StObject.set(x, "effects", js.Array(value*))
     
     inline def setFling_power(value: Double): Self = StObject.set(x, "fling_power", value.asInstanceOf[js.Any])
     
@@ -53,10 +53,10 @@ object Item {
     
     inline def setPockets(value: js.Array[ItemPocket]): Self = StObject.set(x, "pockets", value.asInstanceOf[js.Any])
     
-    inline def setPocketsVarargs(value: ItemPocket*): Self = StObject.set(x, "pockets", js.Array(value :_*))
+    inline def setPocketsVarargs(value: ItemPocket*): Self = StObject.set(x, "pockets", js.Array(value*))
     
     inline def setPrices(value: js.Array[ItemPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    inline def setPricesVarargs(value: ItemPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: ItemPrice*): Self = StObject.set(x, "prices", js.Array(value*))
   }
 }

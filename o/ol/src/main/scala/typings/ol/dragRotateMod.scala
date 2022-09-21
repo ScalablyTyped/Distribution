@@ -9,7 +9,7 @@ object dragRotateMod {
   
   @JSImport("ol/interaction/DragRotate", JSImport.Default)
   @js.native
-  class default () extends DragRotate {
+  open class default () extends DragRotate {
     def this(opt_options: Options) = this()
   }
   

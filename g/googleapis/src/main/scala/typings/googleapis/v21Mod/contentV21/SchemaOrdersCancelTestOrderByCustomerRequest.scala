@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrdersCancelTestOrderByCustomerRequest extends StObject {
   
   /**
-    * The reason for the cancellation.
+    * The reason for the cancellation. Acceptable values are: - "`changedMind`" - "`orderedWrongItem`" - "`other`"
     */
-  var reason: js.UndefOr[String] = js.undefined
+  var reason: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrdersCancelTestOrderByCustomerRequest {
   
@@ -21,6 +21,8 @@ object SchemaOrdersCancelTestOrderByCustomerRequest {
   extension [Self <: SchemaOrdersCancelTestOrderByCustomerRequest](x: Self) {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
     
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }

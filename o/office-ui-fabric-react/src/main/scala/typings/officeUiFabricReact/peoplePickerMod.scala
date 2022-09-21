@@ -20,7 +20,7 @@ object peoplePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "BasePeoplePicker")
   @js.native
-  class BasePeoplePicker protected () extends BasePicker[IPersonaProps, IPeoplePickerProps] {
+  open class BasePeoplePicker protected () extends BasePicker[IPersonaProps, IPeoplePickerProps] {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   
@@ -30,7 +30,7 @@ object peoplePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "CompactPeoplePickerBase")
   @js.native
-  class CompactPeoplePickerBase protected () extends BasePeoplePicker {
+  open class CompactPeoplePickerBase protected () extends BasePeoplePicker {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   /* static members */
@@ -53,7 +53,7 @@ object peoplePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "ListPeoplePickerBase")
   @js.native
-  class ListPeoplePickerBase protected () extends MemberListPeoplePicker {
+  open class ListPeoplePickerBase protected () extends MemberListPeoplePicker {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   /* static members */
@@ -72,7 +72,7 @@ object peoplePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "MemberListPeoplePicker")
   @js.native
-  class MemberListPeoplePicker protected () extends BasePickerListBelow[IPersonaProps, IPeoplePickerProps] {
+  open class MemberListPeoplePicker protected () extends BasePickerListBelow[IPersonaProps, IPeoplePickerProps] {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   
@@ -82,7 +82,7 @@ object peoplePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "NormalPeoplePickerBase")
   @js.native
-  class NormalPeoplePickerBase protected () extends BasePeoplePicker {
+  open class NormalPeoplePickerBase protected () extends BasePeoplePicker {
     def this(basePickerProps: IPeoplePickerProps) = this()
   }
   /* static members */

@@ -20,16 +20,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait CheckboxGridValidationBuilder extends StObject {
   
+  def build(): CheckboxGridValidation
+  
   def requireLimitOneResponsePerColumn(): CheckboxGridValidationBuilder
 }
 object CheckboxGridValidationBuilder {
   
-  inline def apply(requireLimitOneResponsePerColumn: () => CheckboxGridValidationBuilder): CheckboxGridValidationBuilder = {
-    val __obj = js.Dynamic.literal(requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
+  inline def apply(
+    build: () => CheckboxGridValidation,
+    requireLimitOneResponsePerColumn: () => CheckboxGridValidationBuilder
+  ): CheckboxGridValidationBuilder = {
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
     __obj.asInstanceOf[CheckboxGridValidationBuilder]
   }
   
   extension [Self <: CheckboxGridValidationBuilder](x: Self) {
+    
+    inline def setBuild(value: () => CheckboxGridValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setRequireLimitOneResponsePerColumn(value: () => CheckboxGridValidationBuilder): Self = StObject.set(x, "requireLimitOneResponsePerColumn", js.Any.fromFunction0(value))
   }

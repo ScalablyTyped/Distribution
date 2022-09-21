@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PowerRex")
 @js.native
-/* private */ class PowerRex ()
+/* private */ open class PowerRex ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PowerRex {
   
   /* CompleteClass */
-  override def OnAsfEncoderEvent(erorCode: js.Any, bstrErrorDesc: js.Any): Unit = js.native
+  override def OnAsfEncoderEvent(erorCode: Any, bstrErrorDesc: Any): Unit = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.PowerRex_typekey")

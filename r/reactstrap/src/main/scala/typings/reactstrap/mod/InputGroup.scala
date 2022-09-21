@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "InputGroup")
+@JSImport("reactstrap", "InputGroup")
 @js.native
-class InputGroup () extends default
+open class InputGroup () extends default

@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IteratorReturnResult[TReturn]
   extends StObject
-     with IteratorResult[js.Any, TReturn] {
+     with IteratorResult[Any, TReturn] {
   
+  /* standard es2015.iterable */
   var done: `true`
   
+  /* standard es2015.iterable */
   var value: TReturn
 }
 object IteratorReturnResult {

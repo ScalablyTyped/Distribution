@@ -2,6 +2,7 @@ package typings.antd
 
 import typings.antd.antdStrings.SELECT_ALL
 import typings.antd.antdStrings.SELECT_INVERT
+import typings.antd.antdStrings.SELECT_NONE
 import typings.antd.tableInterfaceMod.ExpandType
 import typings.antd.tableInterfaceMod.GetPopupContainer
 import typings.antd.tableInterfaceMod.Key
@@ -32,10 +33,15 @@ object useSelectionMod {
   @js.native
   val SELECTION_INVERT: SELECT_INVERT = js.native
   
+  @JSImport("antd/lib/table/hooks/useSelection", "SELECTION_NONE")
+  @js.native
+  val SELECTION_NONE: SELECT_NONE = js.native
+  
   /* Rewritten from type alias, can be one of: 
     - typings.antd.tableInterfaceMod.SelectionItem
     - typings.antd.antdStrings.SELECT_ALL
     - typings.antd.antdStrings.SELECT_INVERT
+    - typings.antd.antdStrings.SELECT_NONE
   */
   trait INTERNAL_SELECTION_ITEM extends StObject
   
@@ -44,8 +50,6 @@ object useSelectionMod {
     var childrenColumnName: String
     
     var data: js.Array[RecordType]
-    
-    var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
     
     var expandType: ExpandType
     
@@ -82,11 +86,7 @@ object useSelectionMod {
       
       inline def setData(value: js.Array[RecordType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value :_*))
-      
-      inline def setExpandIconColumnIndex(value: Double): Self = StObject.set(x, "expandIconColumnIndex", value.asInstanceOf[js.Any])
-      
-      inline def setExpandIconColumnIndexUndefined: Self = StObject.set(x, "expandIconColumnIndex", js.undefined)
+      inline def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setExpandType(value: ExpandType): Self = StObject.set(x, "expandType", value.asInstanceOf[js.Any])
       
@@ -104,7 +104,7 @@ object useSelectionMod {
       
       inline def setPageData(value: js.Array[RecordType]): Self = StObject.set(x, "pageData", value.asInstanceOf[js.Any])
       
-      inline def setPageDataVarargs(value: RecordType*): Self = StObject.set(x, "pageData", js.Array(value :_*))
+      inline def setPageDataVarargs(value: RecordType*): Self = StObject.set(x, "pageData", js.Array(value*))
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }

@@ -6,81 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Directory for user-specific non-essential data files.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.cache;
-  	//=> '/home/sindresorhus/.cache'
-  	```
-  	*/
-  @JSImport("xdg-basedir", "cache")
+  @JSImport("xdg-basedir", "xdgCache")
   @js.native
-  val cache: js.UndefOr[String] = js.native
+  val xdgCache: js.UndefOr[String] = js.native
   
-  /**
-  	Directory for user-specific configuration files.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.config;
-  	//=> '/home/sindresorhus/.config'
-  	```
-  	*/
-  @JSImport("xdg-basedir", "config")
+  @JSImport("xdg-basedir", "xdgConfig")
   @js.native
-  val config: js.UndefOr[String] = js.native
+  val xdgConfig: js.UndefOr[String] = js.native
   
-  /**
-  	Preference-ordered array of base directories to search for configuration files in addition to `.config`.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.configDirs;
-  	//=> ['/home/sindresorhus/.config', '/etc/xdg']
-  	```
-  	*/
-  @JSImport("xdg-basedir", "configDirs")
+  @JSImport("xdg-basedir", "xdgConfigDirectories")
   @js.native
-  val configDirs: js.Array[String] = js.native
+  val xdgConfigDirectories: js.Array[String] = js.native
   
-  /**
-  	Directory for user-specific data files.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.data;
-  	//=> '/home/sindresorhus/.local/share'
-  	```
-  	*/
-  @JSImport("xdg-basedir", "data")
+  @JSImport("xdg-basedir", "xdgData")
   @js.native
-  val data: js.UndefOr[String] = js.native
+  val xdgData: js.UndefOr[String] = js.native
   
-  /**
-  	Preference-ordered array of base directories to search for data files in addition to `.data`.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.dataDirs
-  	//=> ['/home/sindresorhus/.local/share', '/usr/local/share/', '/usr/share/']
-  	```
-  	*/
-  @JSImport("xdg-basedir", "dataDirs")
+  @JSImport("xdg-basedir", "xdgDataDirectories")
   @js.native
-  val dataDirs: js.Array[String] = js.native
+  val xdgDataDirectories: js.Array[String] = js.native
   
-  /**
-  	Directory for user-specific non-essential runtime files and other file objects (such as sockets, named pipes, etc).
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.runtime;
-  	//=> '/run/user/sindresorhus'
-  	```
-  	*/
-  @JSImport("xdg-basedir", "runtime")
+  @JSImport("xdg-basedir", "xdgRuntime")
   @js.native
-  val runtime: js.UndefOr[String] = js.native
+  val xdgRuntime: js.UndefOr[String] = js.native
+  
+  @JSImport("xdg-basedir", "xdgState")
+  @js.native
+  val xdgState: js.UndefOr[String] = js.native
 }

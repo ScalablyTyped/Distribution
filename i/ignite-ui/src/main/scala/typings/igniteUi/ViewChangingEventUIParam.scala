@@ -19,7 +19,7 @@ trait ViewChangingEventUIParam extends StObject {
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ViewChangingEventUIParam {
   
@@ -38,7 +38,7 @@ object ViewChangingEventUIParam {
     
     inline def setNewSelectedViewUndefined: Self = StObject.set(x, "newSelectedView", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

@@ -59,13 +59,13 @@ object RouteOptionsCors {
     
     inline def setAdditionalExposedHeadersUndefined: Self = StObject.set(x, "additionalExposedHeaders", js.undefined)
     
-    inline def setAdditionalExposedHeadersVarargs(value: String*): Self = StObject.set(x, "additionalExposedHeaders", js.Array(value :_*))
+    inline def setAdditionalExposedHeadersVarargs(value: String*): Self = StObject.set(x, "additionalExposedHeaders", js.Array(value*))
     
     inline def setAdditionalHeaders(value: js.Array[String]): Self = StObject.set(x, "additionalHeaders", value.asInstanceOf[js.Any])
     
     inline def setAdditionalHeadersUndefined: Self = StObject.set(x, "additionalHeaders", js.undefined)
     
-    inline def setAdditionalHeadersVarargs(value: String*): Self = StObject.set(x, "additionalHeaders", js.Array(value :_*))
+    inline def setAdditionalHeadersVarargs(value: String*): Self = StObject.set(x, "additionalHeaders", js.Array(value*))
     
     inline def setCredentials(value: Boolean): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
@@ -75,13 +75,13 @@ object RouteOptionsCors {
     
     inline def setExposedHeadersUndefined: Self = StObject.set(x, "exposedHeaders", js.undefined)
     
-    inline def setExposedHeadersVarargs(value: String*): Self = StObject.set(x, "exposedHeaders", js.Array(value :_*))
+    inline def setExposedHeadersVarargs(value: String*): Self = StObject.set(x, "exposedHeaders", js.Array(value*))
     
     inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
@@ -91,6 +91,6 @@ object RouteOptionsCors {
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
+    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value*))
   }
 }

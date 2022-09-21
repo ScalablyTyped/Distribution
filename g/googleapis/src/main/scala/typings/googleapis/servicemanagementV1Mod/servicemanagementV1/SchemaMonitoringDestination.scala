@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration of a specific monitoring destination (the producer project or
-  * the consumer project).
-  */
 trait SchemaMonitoringDestination extends StObject {
   
   /**
-    * Types of the metrics to report to this monitoring destination. Each type
-    * must be defined in Service.metrics section.
+    * Types of the metrics to report to this monitoring destination. Each type must be defined in Service.metrics section.
     */
-  var metrics: js.UndefOr[js.Array[String]] = js.undefined
+  var metrics: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The monitored resource type. The type must be defined in
-    * Service.monitored_resources section.
+    * The monitored resource type. The type must be defined in Service.monitored_resources section.
     */
-  var monitoredResource: js.UndefOr[String] = js.undefined
+  var monitoredResource: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMonitoringDestination {
   
@@ -33,11 +27,15 @@ object SchemaMonitoringDestination {
     
     inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
+    inline def setMetricsNull: Self = StObject.set(x, "metrics", null)
+    
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setMonitoredResource(value: String): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoredResourceNull: Self = StObject.set(x, "monitoredResource", null)
     
     inline def setMonitoredResourceUndefined: Self = StObject.set(x, "monitoredResource", js.undefined)
   }

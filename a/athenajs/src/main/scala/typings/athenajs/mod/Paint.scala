@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Paint")
 @js.native
-class Paint protected () extends Drawable {
+open class Paint protected () extends Drawable {
   def this(`type`: String, paintOptions: PaintOptions) = this()
   
   def arc(

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SimplicationQueueSceneComponent")
 @js.native
-class SimplicationQueueSceneComponent protected ()
+open class SimplicationQueueSceneComponent protected ()
   extends typings.babylonjs.babylonjsIndexMod.SimplicationQueueSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

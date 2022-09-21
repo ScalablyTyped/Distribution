@@ -11,9 +11,9 @@ Simplifies creation of a service worker to serve your webpack bundles
 | Full name          | serviceworker-webpack-plugin |
 | Keywords           | serviceworker, webpack, plugin |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 964810 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 44315.666666666664 |
+| # stars            | 456.0 |
 
 ## Links
 - [Homepage](https://github.com/oliviertassinari/serviceworker-webpack-plugin#readme)

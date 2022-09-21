@@ -4,8 +4,19 @@ import typings.react.mod.Component
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.ViewProps
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`100`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`200`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`300`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`400`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`500`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`600`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`700`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`800`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.`900`
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.bold
 import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.dark
 import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.light
+import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,24 +25,31 @@ object mod {
   
   @JSImport("@react-native-community/segmented-control", JSImport.Default)
   @js.native
-  class default () extends SegmentedControl
+  open class default () extends SegmentedControl
   
   trait FontStyle extends StObject {
     
     /**
-      * Font Color of Segmented Control when Active
+      * Font Color of Segmented Control
       */
     var color: js.UndefOr[String] = js.undefined
     
     /**
-      * Font Family of the Segmented Control when Active
+      * Font Family of the Segmented Control
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /**
-      * Font Size of Segmented Control when Active
+      * Font Size of Segmented Control
       */
     var fontSize: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Font Weight of the Segmented Control
+      */
+    var fontWeight: js.UndefOr[
+        normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
+      ] = js.undefined
   }
   object FontStyle {
     
@@ -53,6 +71,10 @@ object mod {
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      
+      inline def setFontWeight(value: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     }
   }
   
@@ -80,9 +102,9 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @js.native
+  - Dropped new (args : ...any): react-native.react-native.NativeMethods */ @js.native
   trait SegmentedControl
-    extends Component[SegmentedControlProps, js.Object, js.Any]
+    extends Component[SegmentedControlProps, js.Object, Any]
   
   /**
     * Use `SegmentedControl` to render a UISegmentedControl iOS.
@@ -104,7 +126,7 @@ object mod {
     * />
     * ````
     */
-  type SegmentedControlComponent = Component[SegmentedControlProps, js.Object, js.Any]
+  type SegmentedControlComponent = Component[SegmentedControlProps, js.Object, Any]
   
   trait SegmentedControlProps
     extends StObject
@@ -224,7 +246,7 @@ object mod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

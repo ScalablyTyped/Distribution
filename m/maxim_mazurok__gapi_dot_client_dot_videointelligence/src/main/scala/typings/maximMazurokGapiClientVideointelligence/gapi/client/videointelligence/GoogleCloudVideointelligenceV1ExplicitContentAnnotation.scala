@@ -25,7 +25,7 @@ object GoogleCloudVideointelligenceV1ExplicitContentAnnotation {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

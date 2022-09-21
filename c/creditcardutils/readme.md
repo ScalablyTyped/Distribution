@@ -10,15 +10,12 @@ A general purpose javascript library for credit card number validation and forma
 | ------------------ | :-------------: |
 | Full name          | creditcardutils |
 | Keywords           | payment, form, cc, card, credit card, formatting, validation, jquery-plugin, ecosystem:react, ecosystem:react-native |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 179235 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8038.0 |
+| # stars            | 24.0 |
 
 ## Links
-- [Homepage](https://github.com/faaez/creditcardutils#readme)
-- [Bugs](https://github.com/faaez/creditcardutils/issues)
-- [Repository](https://github.com/faaez/creditcardutils)
 - [Npm](https://www.npmjs.com/package/creditcardutils)
     
 

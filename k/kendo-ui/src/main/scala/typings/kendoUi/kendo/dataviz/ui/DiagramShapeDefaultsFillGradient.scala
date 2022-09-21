@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DiagramShapeDefaultsFillGradient extends StObject {
   
-  var center: js.UndefOr[js.Any] = js.undefined
+  var center: js.UndefOr[Any] = js.undefined
   
-  var end: js.UndefOr[js.Any] = js.undefined
+  var end: js.UndefOr[Any] = js.undefined
   
   var radius: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[js.Any] = js.undefined
+  var start: js.UndefOr[Any] = js.undefined
   
   var stops: js.UndefOr[js.Array[DiagramShapeDefaultsFillGradientStop]] = js.undefined
   
@@ -27,11 +27,11 @@ object DiagramShapeDefaultsFillGradient {
   
   extension [Self <: DiagramShapeDefaultsFillGradient](x: Self) {
     
-    inline def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
@@ -39,7 +39,7 @@ object DiagramShapeDefaultsFillGradient {
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
@@ -47,7 +47,7 @@ object DiagramShapeDefaultsFillGradient {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: DiagramShapeDefaultsFillGradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: DiagramShapeDefaultsFillGradientStop*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

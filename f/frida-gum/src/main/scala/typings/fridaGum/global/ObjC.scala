@@ -39,7 +39,7 @@ object ObjC {
     */
   @JSGlobal("ObjC.Block")
   @js.native
-  class Block protected ()
+  open class Block protected ()
     extends StObject
        with typings.fridaGum.ObjC.Block {
     def this(target: typings.fridaGum.NativePointer) = this()
@@ -64,7 +64,7 @@ object ObjC {
       * Current implementation. You may replace it by assigning to this property.
       */
     /* CompleteClass */
-    override def implementation(args: js.Any*): js.Any = js.native
+    override def implementation(args: Any*): Any = js.native
     /**
       * Current implementation. You may replace it by assigning to this property.
       */
@@ -78,7 +78,7 @@ object ObjC {
     */
   @JSGlobal("ObjC.Object")
   @js.native
-  class Object protected ()
+  open class Object protected ()
     extends StObject
        with typings.fridaGum.ObjC.Object {
     def this(handle: typings.fridaGum.NativePointer) = this()
@@ -93,7 +93,7 @@ object ObjC {
     */
   @JSGlobal("ObjC.Protocol")
   @js.native
-  class Protocol protected ()
+  open class Protocol protected ()
     extends StObject
        with typings.fridaGum.ObjC.Protocol {
     def this(handle: typings.fridaGum.NativePointer) = this()
@@ -175,13 +175,13 @@ object ObjC {
   inline def enumerateLoadedClassesSync(): EnumerateLoadedClassesResult = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClassesSync")().asInstanceOf[EnumerateLoadedClassesResult]
   inline def enumerateLoadedClassesSync(options: EnumerateLoadedClassesOptions): EnumerateLoadedClassesResult = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClassesSync")(options.asInstanceOf[js.Any]).asInstanceOf[EnumerateLoadedClassesResult]
   
-  inline def getBoundData(obj: typings.fridaGum.NativePointer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundData")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getBoundData(obj: typings.fridaGum.NativePointer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundData")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   /**
     * Looks up previously bound data from an Objective-C object.
     *
     * @param obj Objective-C instance to look up data for.
     */
-  inline def getBoundData(obj: typings.fridaGum.ObjC.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundData")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getBoundData(obj: typings.fridaGum.ObjC.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundData")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Creates a JavaScript implementation compatible with the signature of `method`, where `fn` is used as the
@@ -190,7 +190,7 @@ object ObjC {
     * @param method Method to implement.
     * @param fn Implementation.
     */
-  inline def implement(method: ObjectMethod, fn: AnyFunction): typings.fridaGum.NativeCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("implement")(method.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativeCallback]
+  inline def implement(method: ObjectMethod, fn: AnyFunction): typings.fridaGum.NativeCallback[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("implement")(method.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativeCallback[Any, Any]]
   
   /**
     * GCD queue of the main thread.

@@ -3,11 +3,16 @@ package typings.plotlyJs
 import typings.plotlyJs.mod.AxisName
 import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
-import typings.plotlyJs.mod.Dash
 import typings.plotlyJs.mod.ModeBarDefaultButtons
 import typings.plotlyJs.mod.PlotType
 import typings.plotlyJs.mod.XAxisName
 import typings.plotlyJs.mod.YAxisName
+import typings.plotlyJs.ohclMod.Dash
+import typings.plotlyJs.ohclMod.HoverInfo
+import typings.plotlyJs.ohclMod.XCalendar
+import typings.plotlyJs.pieMod.PieHoverInfo
+import typings.plotlyJs.pieMod.PieInsideTextOrientation
+import typings.plotlyJs.pieMod.PieTextPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,24 +30,44 @@ object plotlyJsStrings {
   inline def B: B = "B".asInstanceOf[B]
   
   @js.native
+  sealed trait Backslash extends StObject
+  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
+  
+  @js.native
+  sealed trait Dot extends StObject
+  inline def Dot: Dot = ".".asInstanceOf[Dot]
+  
+  @js.native
   sealed trait E extends StObject
   inline def E: E = "E".asInstanceOf[E]
+  
+  @js.native
+  sealed trait `ISO-3` extends StObject
+  inline def `ISO-3`: `ISO-3` = "ISO-3".asInstanceOf[`ISO-3`]
+  
+  @js.native
+  sealed trait Plussign extends StObject
+  inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
   sealed trait SI extends StObject
   inline def SI: SI = "SI".asInstanceOf[SI]
   
   @js.native
+  sealed trait Slash extends StObject
+  inline def Slash: Slash = "/".asInstanceOf[Slash]
+  
+  @js.native
+  sealed trait `USA-states` extends StObject
+  inline def `USA-states`: `USA-states` = "USA-states".asInstanceOf[`USA-states`]
+  
+  @js.native
+  sealed trait Verticalline extends StObject
+  inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  
+  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
-  
-  @js.native
-  sealed trait a extends StObject
-  inline def a: a = "a".asInstanceOf[a]
-  
-  @js.native
-  sealed trait abbr extends StObject
-  inline def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
   sealed trait above extends StObject
@@ -61,15 +86,14 @@ object plotlyJsStrings {
   inline def acrossPlussignmarker: acrossPlussignmarker = "across+marker".asInstanceOf[acrossPlussignmarker]
   
   @js.native
-  sealed trait address extends StObject
-  inline def address: address = "address".asInstanceOf[address]
-  
-  @js.native
   sealed trait aggregate extends StObject
   inline def aggregate: aggregate = "aggregate".asInstanceOf[aggregate]
   
   @js.native
-  sealed trait all extends StObject
+  sealed trait all
+    extends StObject
+       with HoverInfo
+       with PieHoverInfo
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
@@ -89,8 +113,8 @@ object plotlyJsStrings {
   inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
+  sealed trait apiMethod extends StObject
+  inline def apiMethod: apiMethod = "apiMethod".asInstanceOf[apiMethod]
   
   @js.native
   sealed trait area extends StObject
@@ -105,23 +129,14 @@ object plotlyJsStrings {
   inline def arraydraw: arraydraw = "arraydraw".asInstanceOf[arraydraw]
   
   @js.native
-  sealed trait article extends StObject
-  inline def article: article = "article".asInstanceOf[article]
-  
-  @js.native
   sealed trait ascending extends StObject
   inline def ascending: ascending = "ascending".asInstanceOf[ascending]
   
   @js.native
-  sealed trait aside extends StObject
-  inline def aside: aside = "aside".asInstanceOf[aside]
-  
-  @js.native
-  sealed trait audio extends StObject
-  inline def audio: audio = "audio".asInstanceOf[audio]
-  
-  @js.native
-  sealed trait auto extends StObject
+  sealed trait auto
+    extends StObject
+       with PieInsideTextOrientation
+       with PieTextPosition
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
@@ -137,10 +152,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait avg extends StObject
   inline def avg: avg = "avg".asInstanceOf[avg]
-  
-  @js.native
-  sealed trait b_ extends StObject
-  inline def b_ : b_ = "b".asInstanceOf[b_]
   
   @js.native
   sealed trait back extends StObject
@@ -175,22 +186,6 @@ object plotlyJsStrings {
   inline def barpolar: barpolar = "barpolar".asInstanceOf[barpolar]
   
   @js.native
-  sealed trait base extends StObject
-  inline def base: base = "base".asInstanceOf[base]
-  
-  @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
-  
-  @js.native
-  sealed trait bdi extends StObject
-  inline def bdi: bdi = "bdi".asInstanceOf[bdi]
-  
-  @js.native
-  sealed trait bdo extends StObject
-  inline def bdo: bdo = "bdo".asInstanceOf[bdo]
-  
-  @js.native
   sealed trait below extends StObject
   inline def below: below = "below".asInstanceOf[below]
   
@@ -201,14 +196,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait best extends StObject
   inline def best: best = "best".asInstanceOf[best]
-  
-  @js.native
-  sealed trait blockquote extends StObject
-  inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
-  
-  @js.native
-  sealed trait body extends StObject
-  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
   sealed trait both extends StObject
@@ -261,30 +248,14 @@ object plotlyJsStrings {
   inline def box: box = "box".asInstanceOf[box]
   
   @js.native
-  sealed trait br extends StObject
-  inline def br: br = "br".asInstanceOf[br]
-  
-  @js.native
   sealed trait bullet extends StObject
   inline def bullet: bullet = "bullet".asInstanceOf[bullet]
-  
-  @js.native
-  sealed trait button extends StObject
-  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait candlestick
     extends StObject
        with PlotType
   inline def candlestick: candlestick = "candlestick".asInstanceOf[candlestick]
-  
-  @js.native
-  sealed trait canvas extends StObject
-  inline def canvas: canvas = "canvas".asInstanceOf[canvas]
-  
-  @js.native
-  sealed trait caption extends StObject
-  inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
   sealed trait carpet
@@ -314,6 +285,7 @@ object plotlyJsStrings {
   sealed trait chinese
     extends StObject
        with Calendar
+       with XCalendar
   inline def chinese: chinese = "chinese".asInstanceOf[chinese]
   
   @js.native
@@ -349,14 +321,6 @@ object plotlyJsStrings {
   inline def circular: circular = "circular".asInstanceOf[circular]
   
   @js.native
-  sealed trait cite extends StObject
-  inline def cite: cite = "cite".asInstanceOf[cite]
-  
-  @js.native
-  sealed trait clipPath extends StObject
-  inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
-  
-  @js.native
   sealed trait clockwise extends StObject
   inline def clockwise: clockwise = "clockwise".asInstanceOf[clockwise]
   
@@ -365,16 +329,8 @@ object plotlyJsStrings {
   inline def closest: closest = "closest".asInstanceOf[closest]
   
   @js.native
-  sealed trait code extends StObject
-  inline def code: code = "code".asInstanceOf[code]
-  
-  @js.native
-  sealed trait col extends StObject
-  inline def col: col = "col".asInstanceOf[col]
-  
-  @js.native
-  sealed trait colgroup extends StObject
-  inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
+  sealed trait component extends StObject
+  inline def component: component = "component".asInstanceOf[component]
   
   @js.native
   sealed trait cone
@@ -407,15 +363,10 @@ object plotlyJsStrings {
   inline def contourcarpet: contourcarpet = "contourcarpet".asInstanceOf[contourcarpet]
   
   @js.native
-  sealed trait contourgl
-    extends StObject
-       with PlotType
-  inline def contourgl: contourgl = "contourgl".asInstanceOf[contourgl]
-  
-  @js.native
   sealed trait coptic
     extends StObject
        with Calendar
+       with XCalendar
   inline def coptic: coptic = "coptic".asInstanceOf[coptic]
   
   @js.native
@@ -425,6 +376,10 @@ object plotlyJsStrings {
   @js.native
   sealed trait counterclockwise extends StObject
   inline def counterclockwise: counterclockwise = "counterclockwise".asInstanceOf[counterclockwise]
+  
+  @js.native
+  sealed trait `country names` extends StObject
+  inline def `country names`: `country names` = ("country names").asInstanceOf[`country names`]
   
   @js.native
   sealed trait coupled extends StObject
@@ -462,21 +417,19 @@ object plotlyJsStrings {
   sealed trait dash
     extends StObject
        with Dash
+       with typings.plotlyJs.mod.Dash
   inline def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
   sealed trait dashdot
     extends StObject
        with Dash
+       with typings.plotlyJs.mod.Dash
   inline def dashdot: dashdot = "dashdot".asInstanceOf[dashdot]
   
   @js.native
   sealed trait data extends StObject
   inline def data: data = "data".asInstanceOf[data]
-  
-  @js.native
-  sealed trait datalist extends StObject
-  inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
   sealed trait date
@@ -489,18 +442,6 @@ object plotlyJsStrings {
   inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait dd extends StObject
-  inline def dd: dd = "dd".asInstanceOf[dd]
-  
-  @js.native
-  sealed trait defs extends StObject
-  inline def defs: defs = "defs".asInstanceOf[defs]
-  
-  @js.native
-  sealed trait del extends StObject
-  inline def del: del = "del".asInstanceOf[del]
-  
-  @js.native
   sealed trait delta extends StObject
   inline def delta: delta = "delta".asInstanceOf[delta]
   
@@ -511,60 +452,30 @@ object plotlyJsStrings {
   inline def densitymapbox: densitymapbox = "densitymapbox".asInstanceOf[densitymapbox]
   
   @js.native
-  sealed trait desc extends StObject
-  inline def desc: desc = "desc".asInstanceOf[desc]
-  
-  @js.native
   sealed trait descending extends StObject
   inline def descending: descending = "descending".asInstanceOf[descending]
-  
-  @js.native
-  sealed trait details extends StObject
-  inline def details: details = "details".asInstanceOf[details]
-  
-  @js.native
-  sealed trait dfn extends StObject
-  inline def dfn: dfn = "dfn".asInstanceOf[dfn]
-  
-  @js.native
-  sealed trait dialog extends StObject
-  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
   sealed trait diameter extends StObject
   inline def diameter: diameter = "diameter".asInstanceOf[diameter]
   
   @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
-  
-  @js.native
   sealed trait discworld
     extends StObject
        with Calendar
+       with XCalendar
   inline def discworld: discworld = "discworld".asInstanceOf[discworld]
-  
-  @js.native
-  sealed trait div extends StObject
-  inline def div: div = "div".asInstanceOf[div]
-  
-  @js.native
-  sealed trait dl extends StObject
-  inline def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
   sealed trait domain extends StObject
   inline def domain: domain = "domain".asInstanceOf[domain]
   
   @js.native
-  sealed trait dot
+  sealed trait dot_
     extends StObject
        with Dash
-  inline def dot: dot = "dot".asInstanceOf[dot]
-  
-  @js.native
-  sealed trait dt extends StObject
-  inline def dt: dt = "dt".asInstanceOf[dt]
+       with typings.plotlyJs.mod.Dash
+  inline def dot_ : dot_ = "dot".asInstanceOf[dot_]
   
   @js.native
   sealed trait e_ extends StObject
@@ -587,18 +498,6 @@ object plotlyJsStrings {
   inline def `elastic-out`: `elastic-out` = "elastic-out".asInstanceOf[`elastic-out`]
   
   @js.native
-  sealed trait ellipse extends StObject
-  inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
-  
-  @js.native
-  sealed trait em extends StObject
-  inline def em: em = "em".asInstanceOf[em]
-  
-  @js.native
-  sealed trait embed extends StObject
-  inline def embed: embed = "embed".asInstanceOf[embed]
-  
-  @js.native
   sealed trait end extends StObject
   inline def end: end = "end".asInstanceOf[end]
   
@@ -606,7 +505,16 @@ object plotlyJsStrings {
   sealed trait ethiopian
     extends StObject
        with Calendar
+       with XCalendar
   inline def ethiopian: ethiopian = "ethiopian".asInstanceOf[ethiopian]
+  
+  @js.native
+  sealed trait event extends StObject
+  inline def event: event = "event".asInstanceOf[event]
+  
+  @js.native
+  sealed trait eventPlussignselect extends StObject
+  inline def eventPlussignselect: eventPlussignselect = "event+select".asInstanceOf[eventPlussignselect]
   
   @js.native
   sealed trait exclusive extends StObject
@@ -633,114 +541,6 @@ object plotlyJsStrings {
   inline def fast: fast = "fast".asInstanceOf[fast]
   
   @js.native
-  sealed trait feBlend extends StObject
-  inline def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
-  
-  @js.native
-  sealed trait feColorMatrix extends StObject
-  inline def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
-  
-  @js.native
-  sealed trait feComponentTransfer extends StObject
-  inline def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
-  
-  @js.native
-  sealed trait feComposite extends StObject
-  inline def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
-  
-  @js.native
-  sealed trait feConvolveMatrix extends StObject
-  inline def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
-  
-  @js.native
-  sealed trait feDiffuseLighting extends StObject
-  inline def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
-  
-  @js.native
-  sealed trait feDisplacementMap extends StObject
-  inline def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
-  
-  @js.native
-  sealed trait feDistantLight extends StObject
-  inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
-  
-  @js.native
-  sealed trait feFlood extends StObject
-  inline def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
-  
-  @js.native
-  sealed trait feFuncA extends StObject
-  inline def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
-  
-  @js.native
-  sealed trait feFuncB extends StObject
-  inline def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
-  
-  @js.native
-  sealed trait feFuncG extends StObject
-  inline def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
-  
-  @js.native
-  sealed trait feFuncR extends StObject
-  inline def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
-  
-  @js.native
-  sealed trait feGaussianBlur extends StObject
-  inline def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
-  
-  @js.native
-  sealed trait feImage extends StObject
-  inline def feImage: feImage = "feImage".asInstanceOf[feImage]
-  
-  @js.native
-  sealed trait feMerge extends StObject
-  inline def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
-  
-  @js.native
-  sealed trait feMergeNode extends StObject
-  inline def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
-  
-  @js.native
-  sealed trait feMorphology extends StObject
-  inline def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
-  
-  @js.native
-  sealed trait feOffset extends StObject
-  inline def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
-  
-  @js.native
-  sealed trait fePointLight extends StObject
-  inline def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
-  
-  @js.native
-  sealed trait feSpecularLighting extends StObject
-  inline def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
-  
-  @js.native
-  sealed trait feSpotLight extends StObject
-  inline def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
-  
-  @js.native
-  sealed trait feTile extends StObject
-  inline def feTile: feTile = "feTile".asInstanceOf[feTile]
-  
-  @js.native
-  sealed trait feTurbulence extends StObject
-  inline def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
-  
-  @js.native
-  sealed trait fieldset extends StObject
-  inline def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
-  
-  @js.native
-  sealed trait figcaption extends StObject
-  inline def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
-  
-  @js.native
-  sealed trait figure extends StObject
-  inline def figure: figure = "figure".asInstanceOf[figure]
-  
-  @js.native
   sealed trait fill extends StObject
   inline def fill: fill = "fill".asInstanceOf[fill]
   
@@ -757,32 +557,8 @@ object plotlyJsStrings {
   inline def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
-  sealed trait footer extends StObject
-  inline def footer: footer = "footer".asInstanceOf[footer]
-  
-  @js.native
-  sealed trait foreignObject extends StObject
-  inline def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
-  
-  @js.native
-  sealed trait form extends StObject
-  inline def form: form = "form".asInstanceOf[form]
-  
-  @js.native
   sealed trait fraction extends StObject
   inline def fraction: fraction = "fraction".asInstanceOf[fraction]
-  
-  @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait free extends StObject
@@ -799,10 +575,6 @@ object plotlyJsStrings {
     extends StObject
        with PlotType
   inline def funnelarea: funnelarea = "funnelarea".asInstanceOf[funnelarea]
-  
-  @js.native
-  sealed trait g extends StObject
-  inline def g: g = "g".asInstanceOf[g]
   
   @js.native
   sealed trait gauge extends StObject
@@ -825,9 +597,14 @@ object plotlyJsStrings {
   inline def geojson: geojson = "geojson".asInstanceOf[geojson]
   
   @js.native
+  sealed trait `geojson-id` extends StObject
+  inline def `geojson-id`: `geojson-id` = "geojson-id".asInstanceOf[`geojson-id`]
+  
+  @js.native
   sealed trait gregorian
     extends StObject
        with Calendar
+       with XCalendar
   inline def gregorian: gregorian = "gregorian".asInstanceOf[gregorian]
   
   @js.native
@@ -847,40 +624,8 @@ object plotlyJsStrings {
   inline def h: h = "h".asInstanceOf[h]
   
   @js.native
-  sealed trait h1 extends StObject
-  inline def h1: h1 = "h1".asInstanceOf[h1]
-  
-  @js.native
-  sealed trait h2 extends StObject
-  inline def h2: h2 = "h2".asInstanceOf[h2]
-  
-  @js.native
-  sealed trait h3 extends StObject
-  inline def h3: h3 = "h3".asInstanceOf[h3]
-  
-  @js.native
-  sealed trait h4 extends StObject
-  inline def h4: h4 = "h4".asInstanceOf[h4]
-  
-  @js.native
-  sealed trait h5 extends StObject
-  inline def h5: h5 = "h5".asInstanceOf[h5]
-  
-  @js.native
-  sealed trait h6 extends StObject
-  inline def h6: h6 = "h6".asInstanceOf[h6]
-  
-  @js.native
   sealed trait hard extends StObject
   inline def hard: hard = "hard".asInstanceOf[hard]
-  
-  @js.native
-  sealed trait head extends StObject
-  inline def head: head = "head".asInstanceOf[head]
-  
-  @js.native
-  sealed trait header extends StObject
-  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait heatmap
@@ -898,11 +643,8 @@ object plotlyJsStrings {
   sealed trait hebrew
     extends StObject
        with Calendar
+       with XCalendar
   inline def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
-  
-  @js.native
-  sealed trait hgroup extends StObject
-  inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
   sealed trait histogram
@@ -923,7 +665,9 @@ object plotlyJsStrings {
   inline def histogram2dcontour: histogram2dcontour = "histogram2dcontour".asInstanceOf[histogram2dcontour]
   
   @js.native
-  sealed trait horizontal extends StObject
+  sealed trait horizontal
+    extends StObject
+       with PieInsideTextOrientation
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
@@ -975,14 +719,6 @@ object plotlyJsStrings {
   inline def `hovered data`: `hovered data` = ("hovered data").asInstanceOf[`hovered data`]
   
   @js.native
-  sealed trait hr extends StObject
-  inline def hr: hr = "hr".asInstanceOf[hr]
-  
-  @js.native
-  sealed trait html extends StObject
-  inline def html: html = "html".asInstanceOf[html]
-  
-  @js.native
   sealed trait hv extends StObject
   inline def hv: hv = "hv".asInstanceOf[hv]
   
@@ -991,26 +727,10 @@ object plotlyJsStrings {
   inline def hvh: hvh = "hvh".asInstanceOf[hvh]
   
   @js.native
-  sealed trait i extends StObject
-  inline def i: i = "i".asInstanceOf[i]
-  
-  @js.native
-  sealed trait iframe extends StObject
-  inline def iframe: iframe = "iframe".asInstanceOf[iframe]
-  
-  @js.native
   sealed trait image
     extends StObject
        with PlotType
   inline def image: image = "image".asInstanceOf[image]
-  
-  @js.native
-  sealed trait img extends StObject
-  inline def img: img = "img".asInstanceOf[img]
-  
-  @js.native
-  sealed trait `implicit` extends StObject
-  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
   sealed trait inclusive extends StObject
@@ -1031,15 +751,9 @@ object plotlyJsStrings {
   inline def `infer zero`: `infer zero` = ("infer zero").asInstanceOf[`infer zero`]
   
   @js.native
-  sealed trait input extends StObject
-  inline def input: input = "input".asInstanceOf[input]
-  
-  @js.native
-  sealed trait ins extends StObject
-  inline def ins: ins = "ins".asInstanceOf[ins]
-  
-  @js.native
-  sealed trait inside extends StObject
+  sealed trait inside
+    extends StObject
+       with PieTextPosition
   inline def inside: inside = "inside".asInstanceOf[inside]
   
   @js.native
@@ -1050,6 +764,7 @@ object plotlyJsStrings {
   sealed trait islamic
     extends StObject
        with Calendar
+       with XCalendar
   inline def islamic: islamic = "islamic".asInstanceOf[islamic]
   
   @js.native
@@ -1062,6 +777,7 @@ object plotlyJsStrings {
   sealed trait jalali
     extends StObject
        with Calendar
+       with XCalendar
   inline def jalali: jalali = "jalali".asInstanceOf[jalali]
   
   @js.native
@@ -1072,43 +788,102 @@ object plotlyJsStrings {
   sealed trait julian
     extends StObject
        with Calendar
+       with XCalendar
   inline def julian: julian = "julian".asInstanceOf[julian]
-  
-  @js.native
-  sealed trait kbd extends StObject
-  inline def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
   sealed trait kde extends StObject
   inline def kde: kde = "kde".asInstanceOf[kde]
   
   @js.native
-  sealed trait label extends StObject
+  sealed trait label
+    extends StObject
+       with PieHoverInfo
   inline def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait labelPlussignpercent extends StObject
+  sealed trait labelPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def labelPlussignname: labelPlussignname = "label+name".asInstanceOf[labelPlussignname]
+  
+  @js.native
+  sealed trait labelPlussignpercent
+    extends StObject
+       with PieHoverInfo
   inline def labelPlussignpercent: labelPlussignpercent = "label+percent".asInstanceOf[labelPlussignpercent]
   
   @js.native
-  sealed trait labelPlussigntext extends StObject
+  sealed trait labelPlussignpercentPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def labelPlussignpercentPlussignname: labelPlussignpercentPlussignname = "label+percent+name".asInstanceOf[labelPlussignpercentPlussignname]
+  
+  @js.native
+  sealed trait labelPlussigntext
+    extends StObject
+       with PieHoverInfo
   inline def labelPlussigntext: labelPlussigntext = "label+text".asInstanceOf[labelPlussigntext]
   
   @js.native
-  sealed trait labelPlussigntextPlussignpercent extends StObject
+  sealed trait labelPlussigntextPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def labelPlussigntextPlussignname: labelPlussigntextPlussignname = "label+text+name".asInstanceOf[labelPlussigntextPlussignname]
+  
+  @js.native
+  sealed trait labelPlussigntextPlussignpercent
+    extends StObject
+       with PieHoverInfo
   inline def labelPlussigntextPlussignpercent: labelPlussigntextPlussignpercent = "label+text+percent".asInstanceOf[labelPlussigntextPlussignpercent]
   
   @js.native
-  sealed trait labelPlussigntextPlussignvalue extends StObject
+  sealed trait labelPlussigntextPlussignpercentPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def labelPlussigntextPlussignpercentPlussignname: labelPlussigntextPlussignpercentPlussignname = "label+text+percent+name".asInstanceOf[labelPlussigntextPlussignpercentPlussignname]
+  
+  @js.native
+  sealed trait labelPlussigntextPlussignvalue
+    extends StObject
+       with PieHoverInfo
   inline def labelPlussigntextPlussignvalue: labelPlussigntextPlussignvalue = "label+text+value".asInstanceOf[labelPlussigntextPlussignvalue]
   
   @js.native
-  sealed trait labelPlussignvalue extends StObject
+  sealed trait labelPlussigntextPlussignvaluePlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def labelPlussigntextPlussignvaluePlussignname: labelPlussigntextPlussignvaluePlussignname = "label+text+value+name".asInstanceOf[labelPlussigntextPlussignvaluePlussignname]
+  
+  @js.native
+  sealed trait labelPlussigntextPlussignvaluePlussignpercent
+    extends StObject
+       with PieHoverInfo
+  inline def labelPlussigntextPlussignvaluePlussignpercent: labelPlussigntextPlussignvaluePlussignpercent = "label+text+value+percent".asInstanceOf[labelPlussigntextPlussignvaluePlussignpercent]
+  
+  @js.native
+  sealed trait labelPlussignvalue
+    extends StObject
+       with PieHoverInfo
   inline def labelPlussignvalue: labelPlussignvalue = "label+value".asInstanceOf[labelPlussignvalue]
   
   @js.native
-  sealed trait labelPlussignvaluePlussignpercent extends StObject
+  sealed trait labelPlussignvaluePlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def labelPlussignvaluePlussignname: labelPlussignvaluePlussignname = "label+value+name".asInstanceOf[labelPlussignvaluePlussignname]
+  
+  @js.native
+  sealed trait labelPlussignvaluePlussignpercent
+    extends StObject
+       with PieHoverInfo
   inline def labelPlussignvaluePlussignpercent: labelPlussignvaluePlussignpercent = "label+value+percent".asInstanceOf[labelPlussignvaluePlussignpercent]
+  
+  @js.native
+  sealed trait labelPlussignvaluePlussignpercentPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def labelPlussignvaluePlussignpercentPlussignname: labelPlussignvaluePlussignpercentPlussignname = "label+value+percent+name".asInstanceOf[labelPlussignvaluePlussignpercentPlussignname]
   
   @js.native
   sealed trait lasso extends StObject
@@ -1137,16 +912,8 @@ object plotlyJsStrings {
   inline def `left plot`: `left plot` = ("left plot").asInstanceOf[`left plot`]
   
   @js.native
-  sealed trait legend extends StObject
-  inline def legend: legend = "legend".asInstanceOf[legend]
-  
-  @js.native
   sealed trait legendonly extends StObject
   inline def legendonly: legendonly = "legendonly".asInstanceOf[legendonly]
-  
-  @js.native
-  sealed trait li extends StObject
-  inline def li: li = "li".asInstanceOf[li]
   
   @js.native
   sealed trait line extends StObject
@@ -1175,10 +942,6 @@ object plotlyJsStrings {
   inline def `linear-out`: `linear-out` = "linear-out".asInstanceOf[`linear-out`]
   
   @js.native
-  sealed trait linearGradient extends StObject
-  inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
-  
-  @js.native
   sealed trait lines extends StObject
   inline def lines: lines = "lines".asInstanceOf[lines]
   
@@ -1187,8 +950,8 @@ object plotlyJsStrings {
   inline def linesPlussignmarkers: linesPlussignmarkers = "lines+markers".asInstanceOf[linesPlussignmarkers]
   
   @js.native
-  sealed trait link extends StObject
-  inline def link: link = "link".asInstanceOf[link]
+  sealed trait locale extends StObject
+  inline def locale: locale = "locale".asInstanceOf[locale]
   
   @js.native
   sealed trait log
@@ -1200,29 +963,19 @@ object plotlyJsStrings {
   sealed trait longdash
     extends StObject
        with Dash
+       with typings.plotlyJs.mod.Dash
   inline def longdash: longdash = "longdash".asInstanceOf[longdash]
   
   @js.native
   sealed trait longdashdot
     extends StObject
        with Dash
+       with typings.plotlyJs.mod.Dash
   inline def longdashdot: longdashdot = "longdashdot".asInstanceOf[longdashdot]
-  
-  @js.native
-  sealed trait main extends StObject
-  inline def main: main = "main".asInstanceOf[main]
   
   @js.native
   sealed trait manual extends StObject
   inline def manual: manual = "manual".asInstanceOf[manual]
-  
-  @js.native
-  sealed trait map extends StObject
-  inline def map: map = "map".asInstanceOf[map]
-  
-  @js.native
-  sealed trait mark extends StObject
-  inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
   sealed trait marker extends StObject
@@ -1231,14 +984,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait markers extends StObject
   inline def markers: markers = "markers".asInstanceOf[markers]
-  
-  @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
-  
-  @js.native
-  sealed trait mask extends StObject
-  inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
   sealed trait max extends StObject
@@ -1256,6 +1001,7 @@ object plotlyJsStrings {
   sealed trait mayan
     extends StObject
        with Calendar
+       with XCalendar
   inline def mayan: mayan = "mayan".asInstanceOf[mayan]
   
   @js.native
@@ -1279,26 +1025,10 @@ object plotlyJsStrings {
   inline def `median descending`: `median descending` = ("median descending").asInstanceOf[`median descending`]
   
   @js.native
-  sealed trait menu extends StObject
-  inline def menu: menu = "menu".asInstanceOf[menu]
-  
-  @js.native
   sealed trait mesh3d
     extends StObject
        with PlotType
   inline def mesh3d: mesh3d = "mesh3d".asInstanceOf[mesh3d]
-  
-  @js.native
-  sealed trait meta extends StObject
-  inline def meta: meta = "meta".asInstanceOf[meta]
-  
-  @js.native
-  sealed trait metadata extends StObject
-  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
-  
-  @js.native
-  sealed trait meter extends StObject
-  inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
   sealed trait middle extends StObject
@@ -1347,18 +1077,18 @@ object plotlyJsStrings {
   inline def multicategory: multicategory = "multicategory".asInstanceOf[multicategory]
   
   @js.native
-  sealed trait name extends StObject
+  sealed trait name
+    extends StObject
+       with HoverInfo
+       with PieHoverInfo
   inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait nanakshahi
     extends StObject
        with Calendar
+       with XCalendar
   inline def nanakshahi: nanakshahi = "nanakshahi".asInstanceOf[nanakshahi]
-  
-  @js.native
-  sealed trait nav extends StObject
-  inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
   sealed trait negative extends StObject
@@ -1368,10 +1098,15 @@ object plotlyJsStrings {
   sealed trait nepali
     extends StObject
        with Calendar
+       with XCalendar
   inline def nepali: nepali = "nepali".asInstanceOf[nepali]
   
   @js.native
-  sealed trait none extends StObject
+  sealed trait none
+    extends StObject
+       with HoverInfo
+       with PieHoverInfo
+       with PieTextPosition
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -1383,10 +1118,6 @@ object plotlyJsStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait noscript extends StObject
-  inline def noscript: noscript = "noscript".asInstanceOf[noscript]
-  
-  @js.native
   sealed trait number extends StObject
   inline def number: number = "number".asInstanceOf[number]
   
@@ -1395,18 +1126,14 @@ object plotlyJsStrings {
   inline def numberPlussigndelta: numberPlussigndelta = "number+delta".asInstanceOf[numberPlussigndelta]
   
   @js.native
-  sealed trait `object` extends StObject
-  inline def `object`: `object` = "object".asInstanceOf[`object`]
+  sealed trait ohcl extends StObject
+  inline def ohcl: ohcl = "ohcl".asInstanceOf[ohcl]
   
   @js.native
   sealed trait ohlc
     extends StObject
        with PlotType
   inline def ohlc: ohlc = "ohlc".asInstanceOf[ohlc]
-  
-  @js.native
-  sealed trait ol extends StObject
-  inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
   sealed trait onoff extends StObject
@@ -1419,14 +1146,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait opaque extends StObject
   inline def opaque: opaque = "opaque".asInstanceOf[opaque]
-  
-  @js.native
-  sealed trait optgroup extends StObject
-  inline def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
-  
-  @js.native
-  sealed trait option extends StObject
-  inline def option: option = "option".asInstanceOf[option]
   
   @js.native
   sealed trait orbit extends StObject
@@ -1443,20 +1162,14 @@ object plotlyJsStrings {
   inline def outliers: outliers = "outliers".asInstanceOf[outliers]
   
   @js.native
-  sealed trait output extends StObject
-  inline def output: output = "output".asInstanceOf[output]
-  
-  @js.native
-  sealed trait outside extends StObject
+  sealed trait outside
+    extends StObject
+       with PieTextPosition
   inline def outside: outside = "outside".asInstanceOf[outside]
   
   @js.native
   sealed trait overlay extends StObject
   inline def overlay: overlay = "overlay".asInstanceOf[overlay]
-  
-  @js.native
-  sealed trait p extends StObject
-  inline def p: p = "p".asInstanceOf[p]
   
   @js.native
   sealed trait pan extends StObject
@@ -1479,10 +1192,6 @@ object plotlyJsStrings {
   inline def paper: paper = "paper".asInstanceOf[paper]
   
   @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
-  
-  @js.native
   sealed trait parcats
     extends StObject
        with PlotType
@@ -1499,22 +1208,23 @@ object plotlyJsStrings {
   inline def path: path = "path".asInstanceOf[path]
   
   @js.native
-  sealed trait pattern extends StObject
-  inline def pattern: pattern = "pattern".asInstanceOf[pattern]
+  sealed trait percent
+    extends StObject
+       with PieHoverInfo
+  inline def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
-  sealed trait percent extends StObject
-  inline def percent: percent = "percent".asInstanceOf[percent]
+  sealed trait percentPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def percentPlussignname: percentPlussignname = "percent+name".asInstanceOf[percentPlussignname]
   
   @js.native
   sealed trait persian
     extends StObject
        with Calendar
+       with XCalendar
   inline def persian: persian = "persian".asInstanceOf[persian]
-  
-  @js.native
-  sealed trait picture extends StObject
-  inline def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
   sealed trait pie
@@ -1669,14 +1379,6 @@ object plotlyJsStrings {
   inline def points: points = "points".asInstanceOf[points]
   
   @js.native
-  sealed trait polygon extends StObject
-  inline def polygon: polygon = "polygon".asInstanceOf[polygon]
-  
-  @js.native
-  sealed trait polyline extends StObject
-  inline def polyline: polyline = "polyline".asInstanceOf[polyline]
-  
-  @js.native
   sealed trait population extends StObject
   inline def population: population = "population".asInstanceOf[population]
   
@@ -1687,18 +1389,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait power extends StObject
   inline def power: power = "power".asInstanceOf[power]
-  
-  @js.native
-  sealed trait pre extends StObject
-  inline def pre: pre = "pre".asInstanceOf[pre]
-  
-  @js.native
-  sealed trait progress extends StObject
-  inline def progress: progress = "progress".asInstanceOf[progress]
-  
-  @js.native
-  sealed trait q extends StObject
-  inline def q: q = "q".asInstanceOf[q]
   
   @js.native
   sealed trait quad extends StObject
@@ -1717,12 +1407,10 @@ object plotlyJsStrings {
   inline def `quad-out`: `quad-out` = "quad-out".asInstanceOf[`quad-out`]
   
   @js.native
-  sealed trait radial extends StObject
+  sealed trait radial
+    extends StObject
+       with PieInsideTextOrientation
   inline def radial: radial = "radial".asInstanceOf[radial]
-  
-  @js.native
-  sealed trait radialGradient extends StObject
-  inline def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   
   @js.native
   sealed trait range extends StObject
@@ -1747,6 +1435,10 @@ object plotlyJsStrings {
   @js.native
   sealed trait remainder extends StObject
   inline def remainder: remainder = "remainder".asInstanceOf[remainder]
+  
+  @js.native
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
   sealed trait reset extends StObject
@@ -1805,26 +1497,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait rms extends StObject
   inline def rms: rms = "rms".asInstanceOf[rms]
-  
-  @js.native
-  sealed trait rp extends StObject
-  inline def rp: rp = "rp".asInstanceOf[rp]
-  
-  @js.native
-  sealed trait rt extends StObject
-  inline def rt: rt = "rt".asInstanceOf[rt]
-  
-  @js.native
-  sealed trait ruby extends StObject
-  inline def ruby: ruby = "ruby".asInstanceOf[ruby]
-  
-  @js.native
-  sealed trait s extends StObject
-  inline def s: s = "s".asInstanceOf[s]
-  
-  @js.native
-  sealed trait samp extends StObject
-  inline def samp: samp = "samp".asInstanceOf[samp]
   
   @js.native
   sealed trait sample extends StObject
@@ -1895,20 +1567,12 @@ object plotlyJsStrings {
   inline def scatterternary: scatterternary = "scatterternary".asInstanceOf[scatterternary]
   
   @js.native
-  sealed trait script extends StObject
-  inline def script: script = "script".asInstanceOf[script]
-  
-  @js.native
   sealed trait sd extends StObject
   inline def sd: sd = "sd".asInstanceOf[sd]
   
   @js.native
   sealed trait second extends StObject
   inline def second: second = "second".asInstanceOf[second]
-  
-  @js.native
-  sealed trait section extends StObject
-  inline def section: section = "section".asInstanceOf[section]
   
   @js.native
   sealed trait select extends StObject
@@ -1943,16 +1607,11 @@ object plotlyJsStrings {
   inline def `sin-out`: `sin-out` = "sin-out".asInstanceOf[`sin-out`]
   
   @js.native
-  sealed trait skip extends StObject
+  sealed trait skip
+    extends StObject
+       with HoverInfo
+       with PieHoverInfo
   inline def skip: skip = "skip".asInstanceOf[skip]
-  
-  @js.native
-  sealed trait slot extends StObject
-  inline def slot: slot = "slot".asInstanceOf[slot]
-  
-  @js.native
-  sealed trait small extends StObject
-  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait soft extends StObject
@@ -1962,19 +1621,12 @@ object plotlyJsStrings {
   sealed trait solid
     extends StObject
        with Dash
+       with typings.plotlyJs.mod.Dash
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
   sealed trait sort extends StObject
   inline def sort: sort = "sort".asInstanceOf[sort]
-  
-  @js.native
-  sealed trait source extends StObject
-  inline def source: source = "source".asInstanceOf[source]
-  
-  @js.native
-  sealed trait span extends StObject
-  inline def span: span = "span".asInstanceOf[span]
   
   @js.native
   sealed trait spline extends StObject
@@ -1999,10 +1651,6 @@ object plotlyJsStrings {
   inline def stddev: stddev = "stddev".asInstanceOf[stddev]
   
   @js.native
-  sealed trait stop extends StObject
-  inline def stop: stop = "stop".asInstanceOf[stop]
-  
-  @js.native
   sealed trait streamtube
     extends StObject
        with PlotType
@@ -2011,18 +1659,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait stretch extends StObject
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
-  
-  @js.native
-  sealed trait strong extends StObject
-  inline def strong: strong = "strong".asInstanceOf[strong]
-  
-  @js.native
-  sealed trait style extends StObject
-  inline def style: style = "style".asInstanceOf[style]
-  
-  @js.native
-  sealed trait sub extends StObject
-  inline def sub: sub = "sub".asInstanceOf[sub]
   
   @js.native
   sealed trait sum extends StObject
@@ -2037,18 +1673,10 @@ object plotlyJsStrings {
   inline def `sum descending`: `sum descending` = ("sum descending").asInstanceOf[`sum descending`]
   
   @js.native
-  sealed trait summary extends StObject
-  inline def summary: summary = "summary".asInstanceOf[summary]
-  
-  @js.native
   sealed trait sunburst
     extends StObject
        with PlotType
   inline def sunburst: sunburst = "sunburst".asInstanceOf[sunburst]
-  
-  @js.native
-  sealed trait sup extends StObject
-  inline def sup: sup = "sup".asInstanceOf[sup]
   
   @js.native
   sealed trait surface
@@ -2063,10 +1691,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait svg extends StObject
   inline def svg: svg = "svg".asInstanceOf[svg]
-  
-  @js.native
-  sealed trait switch extends StObject
-  inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
   sealed trait symbol extends StObject
@@ -2088,27 +1712,21 @@ object plotlyJsStrings {
   sealed trait taiwan
     extends StObject
        with Calendar
+       with XCalendar
   inline def taiwan: taiwan = "taiwan".asInstanceOf[taiwan]
   
   @js.native
-  sealed trait tbody extends StObject
-  inline def tbody: tbody = "tbody".asInstanceOf[tbody]
+  sealed trait tangential
+    extends StObject
+       with PieInsideTextOrientation
+  inline def tangential: tangential = "tangential".asInstanceOf[tangential]
   
   @js.native
-  sealed trait td extends StObject
-  inline def td: td = "td".asInstanceOf[td]
-  
-  @js.native
-  sealed trait template extends StObject
-  inline def template: template = "template".asInstanceOf[template]
-  
-  @js.native
-  sealed trait text extends StObject
+  sealed trait text
+    extends StObject
+       with HoverInfo
+       with PieHoverInfo
   inline def text: text = "text".asInstanceOf[text]
-  
-  @js.native
-  sealed trait textPath extends StObject
-  inline def textPath: textPath = "textPath".asInstanceOf[textPath]
   
   @js.native
   sealed trait textPlussignlines extends StObject
@@ -2123,50 +1741,57 @@ object plotlyJsStrings {
   inline def textPlussignmarkers: textPlussignmarkers = "text+markers".asInstanceOf[textPlussignmarkers]
   
   @js.native
-  sealed trait textPlussignpercent extends StObject
+  sealed trait textPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def textPlussignname: textPlussignname = "text+name".asInstanceOf[textPlussignname]
+  
+  @js.native
+  sealed trait textPlussignpercent
+    extends StObject
+       with PieHoverInfo
   inline def textPlussignpercent: textPlussignpercent = "text+percent".asInstanceOf[textPlussignpercent]
   
   @js.native
-  sealed trait textPlussignvalue extends StObject
+  sealed trait textPlussignpercentPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def textPlussignpercentPlussignname: textPlussignpercentPlussignname = "text+percent+name".asInstanceOf[textPlussignpercentPlussignname]
+  
+  @js.native
+  sealed trait textPlussignvalue
+    extends StObject
+       with PieHoverInfo
   inline def textPlussignvalue: textPlussignvalue = "text+value".asInstanceOf[textPlussignvalue]
   
   @js.native
-  sealed trait textPlussignvaluePlussignpercent extends StObject
+  sealed trait textPlussignvaluePlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def textPlussignvaluePlussignname: textPlussignvaluePlussignname = "text+value+name".asInstanceOf[textPlussignvaluePlussignname]
+  
+  @js.native
+  sealed trait textPlussignvaluePlussignpercent
+    extends StObject
+       with PieHoverInfo
   inline def textPlussignvaluePlussignpercent: textPlussignvaluePlussignpercent = "text+value+percent".asInstanceOf[textPlussignvaluePlussignpercent]
   
   @js.native
-  sealed trait textarea extends StObject
-  inline def textarea: textarea = "textarea".asInstanceOf[textarea]
-  
-  @js.native
-  sealed trait tfoot extends StObject
-  inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
-  
-  @js.native
-  sealed trait th extends StObject
-  inline def th: th = "th".asInstanceOf[th]
+  sealed trait textPlussignvaluePlussignpercentPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def textPlussignvaluePlussignpercentPlussignname: textPlussignvaluePlussignpercentPlussignname = "text+value+percent+name".asInstanceOf[textPlussignvaluePlussignpercentPlussignname]
   
   @js.native
   sealed trait thai
     extends StObject
        with Calendar
+       with XCalendar
   inline def thai: thai = "thai".asInstanceOf[thai]
-  
-  @js.native
-  sealed trait thead extends StObject
-  inline def thead: thead = "thead".asInstanceOf[thead]
   
   @js.native
   sealed trait ticks extends StObject
   inline def ticks: ticks = "ticks".asInstanceOf[ticks]
-  
-  @js.native
-  sealed trait time extends StObject
-  inline def time: time = "time".asInstanceOf[time]
-  
-  @js.native
-  sealed trait title extends StObject
-  inline def title: title = "title".asInstanceOf[title]
   
   @js.native
   sealed trait toImage
@@ -2271,10 +1896,6 @@ object plotlyJsStrings {
   inline def tozeroy: tozeroy = "tozeroy".asInstanceOf[tozeroy]
   
   @js.native
-  sealed trait tr extends StObject
-  inline def tr: tr = "tr".asInstanceOf[tr]
-  
-  @js.native
   sealed trait trace extends StObject
   inline def trace: trace = "trace".asInstanceOf[trace]
   
@@ -2283,8 +1904,8 @@ object plotlyJsStrings {
   inline def `traces first`: `traces first` = ("traces first").asInstanceOf[`traces first`]
   
   @js.native
-  sealed trait track extends StObject
-  inline def track: track = "track".asInstanceOf[track]
+  sealed trait transform extends StObject
+  inline def transform: transform = "transform".asInstanceOf[transform]
   
   @js.native
   sealed trait transparent extends StObject
@@ -2297,25 +1918,14 @@ object plotlyJsStrings {
   inline def treemap: treemap = "treemap".asInstanceOf[treemap]
   
   @js.native
-  sealed trait tspan extends StObject
-  inline def tspan: tspan = "tspan".asInstanceOf[tspan]
-  
-  @js.native
   sealed trait turntable extends StObject
   inline def turntable: turntable = "turntable".asInstanceOf[turntable]
-  
-  @js.native
-  sealed trait u extends StObject
-  inline def u: u = "u".asInstanceOf[u]
-  
-  @js.native
-  sealed trait ul extends StObject
-  inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
   sealed trait ummalqura
     extends StObject
        with Calendar
+       with XCalendar
   inline def ummalqura: ummalqura = "ummalqura".asInstanceOf[ummalqura]
   
   @js.native
@@ -2323,24 +1933,32 @@ object plotlyJsStrings {
   inline def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait use extends StObject
-  inline def use: use = "use".asInstanceOf[use]
-  
-  @js.native
   sealed trait v extends StObject
   inline def v: v = "v".asInstanceOf[v]
   
   @js.native
-  sealed trait value extends StObject
+  sealed trait value
+    extends StObject
+       with PieHoverInfo
   inline def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait valuePlussignpercent extends StObject
+  sealed trait valuePlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def valuePlussignname: valuePlussignname = "value+name".asInstanceOf[valuePlussignname]
+  
+  @js.native
+  sealed trait valuePlussignpercent
+    extends StObject
+       with PieHoverInfo
   inline def valuePlussignpercent: valuePlussignpercent = "value+percent".asInstanceOf[valuePlussignpercent]
   
   @js.native
-  sealed trait `var` extends StObject
-  inline def `var`: `var` = "var".asInstanceOf[`var`]
+  sealed trait valuePlussignpercentPlussignname
+    extends StObject
+       with PieHoverInfo
+  inline def valuePlussignpercentPlussignname: valuePlussignpercentPlussignname = "value+percent+name".asInstanceOf[valuePlussignpercentPlussignname]
   
   @js.native
   sealed trait vecotr extends StObject
@@ -2357,14 +1975,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait vhv extends StObject
   inline def vhv: vhv = "vhv".asInstanceOf[vhv]
-  
-  @js.native
-  sealed trait video extends StObject
-  inline def video: video = "video".asInstanceOf[video]
-  
-  @js.native
-  sealed trait view extends StObject
-  inline def view: view = "view".asInstanceOf[view]
   
   @js.native
   sealed trait violin
@@ -2389,10 +1999,6 @@ object plotlyJsStrings {
   inline def waterfall: waterfall = "waterfall".asInstanceOf[waterfall]
   
   @js.native
-  sealed trait wbr extends StObject
-  inline def wbr: wbr = "wbr".asInstanceOf[wbr]
-  
-  @js.native
   sealed trait webp extends StObject
   inline def webp: webp = "webp".asInstanceOf[webp]
   
@@ -2404,6 +2010,7 @@ object plotlyJsStrings {
   sealed trait x
     extends StObject
        with AxisName
+       with HoverInfo
        with XAxisName
   inline def x: x = "x".asInstanceOf[x]
   
@@ -2482,27 +2089,39 @@ object plotlyJsStrings {
   inline def x9: x9 = "x9".asInstanceOf[x9]
   
   @js.native
-  sealed trait xPlussignname extends StObject
+  sealed trait xPlussignname
+    extends StObject
+       with HoverInfo
   inline def xPlussignname: xPlussignname = "x+name".asInstanceOf[xPlussignname]
   
   @js.native
-  sealed trait xPlussigntext extends StObject
+  sealed trait xPlussigntext
+    extends StObject
+       with HoverInfo
   inline def xPlussigntext: xPlussigntext = "x+text".asInstanceOf[xPlussigntext]
   
   @js.native
-  sealed trait xPlussigny extends StObject
+  sealed trait xPlussigny
+    extends StObject
+       with HoverInfo
   inline def xPlussigny: xPlussigny = "x+y".asInstanceOf[xPlussigny]
   
   @js.native
-  sealed trait xPlussignyPlussignname extends StObject
+  sealed trait xPlussignyPlussignname
+    extends StObject
+       with HoverInfo
   inline def xPlussignyPlussignname: xPlussignyPlussignname = "x+y+name".asInstanceOf[xPlussignyPlussignname]
   
   @js.native
-  sealed trait xPlussignyPlussigntext extends StObject
+  sealed trait xPlussignyPlussigntext
+    extends StObject
+       with HoverInfo
   inline def xPlussignyPlussigntext: xPlussignyPlussigntext = "x+y+text".asInstanceOf[xPlussignyPlussigntext]
   
   @js.native
-  sealed trait xPlussignyPlussignz extends StObject
+  sealed trait xPlussignyPlussignz
+    extends StObject
+       with HoverInfo
   inline def xPlussignyPlussignz: xPlussignyPlussignz = "x+y+z".asInstanceOf[xPlussignyPlussignz]
   
   @js.native
@@ -2514,9 +2133,16 @@ object plotlyJsStrings {
   inline def xPlussignyPlussignzPlussigntext: xPlussignyPlussignzPlussigntext = "x+y+z+text".asInstanceOf[xPlussignyPlussignzPlussigntext]
   
   @js.native
+  sealed trait xPlussignz
+    extends StObject
+       with HoverInfo
+  inline def xPlussignz: xPlussignz = "x+z".asInstanceOf[xPlussignz]
+  
+  @js.native
   sealed trait y
     extends StObject
        with AxisName
+       with HoverInfo
        with YAxisName
   inline def y: y = "y".asInstanceOf[y]
   
@@ -2595,11 +2221,15 @@ object plotlyJsStrings {
   inline def y9: y9 = "y9".asInstanceOf[y9]
   
   @js.native
-  sealed trait yPlussignname extends StObject
+  sealed trait yPlussignname
+    extends StObject
+       with HoverInfo
   inline def yPlussignname: yPlussignname = "y+name".asInstanceOf[yPlussignname]
   
   @js.native
-  sealed trait yPlussigntext extends StObject
+  sealed trait yPlussigntext
+    extends StObject
+       with HoverInfo
   inline def yPlussigntext: yPlussigntext = "y+text".asInstanceOf[yPlussigntext]
   
   @js.native
@@ -2627,15 +2257,21 @@ object plotlyJsStrings {
   inline def yPlussignxPlussignzPlussigntext: yPlussignxPlussignzPlussigntext = "y+x+z+text".asInstanceOf[yPlussignxPlussignzPlussigntext]
   
   @js.native
-  sealed trait yPlussignz extends StObject
+  sealed trait yPlussignz
+    extends StObject
+       with HoverInfo
   inline def yPlussignz: yPlussignz = "y+z".asInstanceOf[yPlussignz]
   
   @js.native
-  sealed trait yPlussignzPlussignname extends StObject
+  sealed trait yPlussignzPlussignname
+    extends StObject
+       with HoverInfo
   inline def yPlussignzPlussignname: yPlussignzPlussignname = "y+z+name".asInstanceOf[yPlussignzPlussignname]
   
   @js.native
-  sealed trait yPlussignzPlussigntext extends StObject
+  sealed trait yPlussignzPlussigntext
+    extends StObject
+       with HoverInfo
   inline def yPlussignzPlussigntext: yPlussignzPlussigntext = "y+z+text".asInstanceOf[yPlussignzPlussigntext]
   
   @js.native
@@ -2643,8 +2279,28 @@ object plotlyJsStrings {
   inline def year: year = "year".asInstanceOf[year]
   
   @js.native
-  sealed trait z extends StObject
+  sealed trait z
+    extends StObject
+       with HoverInfo
   inline def z: z = "z".asInstanceOf[z]
+  
+  @js.native
+  sealed trait zPlussignname
+    extends StObject
+       with HoverInfo
+  inline def zPlussignname: zPlussignname = "z+name".asInstanceOf[zPlussignname]
+  
+  @js.native
+  sealed trait zPlussigntext
+    extends StObject
+       with HoverInfo
+  inline def zPlussigntext: zPlussigntext = "z+text".asInstanceOf[zPlussigntext]
+  
+  @js.native
+  sealed trait zPlussigntextPlussignname
+    extends StObject
+       with HoverInfo
+  inline def zPlussigntextPlussignname: zPlussigntextPlussignname = "z+text+name".asInstanceOf[zPlussigntextPlussignname]
   
   @js.native
   sealed trait zPlussignx extends StObject

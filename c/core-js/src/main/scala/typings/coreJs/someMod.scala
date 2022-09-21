@@ -15,7 +15,7 @@ object someMod {
   inline def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Boolean = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("core-js/fn/array/some", JSImport.Namespace)

@@ -14,7 +14,6 @@ import typings.eggLogger.mod.LoggerOptions
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.^
-import typings.std.Error
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ object mod {
   
   @JSImport("egg-core", "BaseContextClass")
   @js.native
-  class BaseContextClass[Context, Application, EggAppConfig, Service] protected () extends StObject {
+  open class BaseContextClass[Context, Application, EggAppConfig, Service] protected () extends StObject {
     def this(ctx: Context) = this()
     
     /** Application */
@@ -50,23 +49,23 @@ object mod {
     * @param {Object} [options.plugins] - custom plugins
     * @since 1.0.0
     */
-  class EggCore[Config] () extends EggCoreBase[Config] {
+  open class EggCore[Config] () extends EggCoreBase[Config] {
     def this(options: EggCoreOptions) = this()
     
     var Controller: Instantiable1[
-        /* import warning: RewrittenClass.unapply cls was tparam Context */ /* ctx */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Context */ /* ctx */ Any, 
         BaseContextClass[js.Object, js.Object, js.Object, js.Object]
       ] = js.native
     
     var Service: Instantiable1[
-        /* import warning: RewrittenClass.unapply cls was tparam Context */ /* ctx */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Context */ /* ctx */ Any, 
         BaseContextClass[js.Object, js.Object, js.Object, js.Object]
       ] = js.native
   }
   
   @JSImport("egg-core", "EggLoader")
   @js.native
-  class EggLoader[T, Config, Options /* <: EggLoaderOptions */] protected () extends StObject {
+  open class EggLoader[T, Config, Options /* <: EggLoaderOptions */] protected () extends StObject {
     /**
       * @constructor
       * @param {Object} options - options
@@ -158,7 +157,7 @@ object mod {
       * ```
       * @since 1.0.0
       */
-    def loadFile[T](filepath: String, inject: js.Any*): T = js.native
+    def loadFile[T](filepath: String, inject: Any*): T = js.native
     
     /* protected */ def loadHelperExtend(): Unit = js.native
     
@@ -202,7 +201,7 @@ object mod {
     
     var options: Options = js.native
     
-    var pkg: PlainObject[js.Any] = js.native
+    var pkg: PlainObject[Any] = js.native
     
     var plugins: Plugins = js.native
     
@@ -240,7 +239,7 @@ object mod {
     
     var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
+    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, Any]] = js.undefined
     
     /** required inject */
     var inject: js.Object
@@ -275,7 +274,7 @@ object mod {
       
       inline def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
+      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value*))
       
       inline def setFieldClass(value: String): Self = StObject.set(x, "fieldClass", value.asInstanceOf[js.Any])
       
@@ -289,9 +288,9 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
-      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
       inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
       
@@ -301,7 +300,7 @@ object mod {
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
       
       inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
@@ -330,14 +329,14 @@ object mod {
     var name: String
     
     /** package.json */
-    var pkg: PlainObject[js.Any]
+    var pkg: PlainObject[Any]
     
     /** baseDir when local and unittest, HOME when other environment */
     var root: String
   }
   object EggAppInfo {
     
-    inline def apply(HOME: String, baseDir: String, env: String, name: String, pkg: PlainObject[js.Any], root: String): EggAppInfo = {
+    inline def apply(HOME: String, baseDir: String, env: String, name: String, pkg: PlainObject[Any], root: String): EggAppInfo = {
       val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pkg = pkg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggAppInfo]
     }
@@ -352,7 +351,7 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setPkg(value: PlainObject[js.Any]): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: PlainObject[Any]): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
@@ -390,7 +389,7 @@ object mod {
       * @return {Promise} promise
       * @since 1.0.0
       */
-    def close(): js.Promise[js.Any] = js.native
+    def close(): js.Promise[Any] = js.native
     
     /**
       * The configuration of application
@@ -449,8 +448,8 @@ object mod {
       *   console.log('done');
       * });
       */
-    def ready(): js.Any = js.native
-    def ready(fn: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Any = js.native
+    def ready(): Any = js.native
+    def ready(fn: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Any = js.native
     
     /**
       * If a client starts asynchronously, you can register `readyCallback`,
@@ -489,7 +488,7 @@ object mod {
       wrapped(true).then((value) => console.log(value));
       * ```
       */
-    def toAsyncFunction[T](fn: js.Function1[/* repeated */ js.Any, IterableIterator[T]]): js.Function1[/* repeated */ js.Any, js.Promise[T]] = js.native
+    def toAsyncFunction[T](fn: js.Function1[/* repeated */ Any, IterableIterator[T]]): js.Function1[/* repeated */ Any, js.Promise[T]] = js.native
     
     /**
       * Convert an object with generator functions to a Promisable one.
@@ -505,7 +504,7 @@ object mod {
       promise.then(res => console.log(res));
       * ```
       */
-    def toPromise[T](obj: js.Any): js.Promise[T] = js.native
+    def toPromise[T](obj: Any): js.Promise[T] = js.native
     
     /**
       * Whether `application` or `agent`
@@ -559,7 +558,7 @@ object mod {
   trait EggLoaderOptions extends StObject {
     
     /** Application instance */
-    var app: EggCore[PlainObject[js.Any]]
+    var app: EggCore[PlainObject[Any]]
     
     /** the directory of application */
     var baseDir: String
@@ -575,14 +574,14 @@ object mod {
   }
   object EggLoaderOptions {
     
-    inline def apply(app: EggCore[PlainObject[js.Any]], baseDir: String, logger: Logger[LoggerOptions]): EggLoaderOptions = {
+    inline def apply(app: EggCore[PlainObject[Any]], baseDir: String, logger: Logger[LoggerOptions]): EggLoaderOptions = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggLoaderOptions]
     }
     
     extension [Self <: EggLoaderOptions](x: Self) {
       
-      inline def setApp(value: EggCore[PlainObject[js.Any]]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: EggCore[PlainObject[Any]]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
@@ -690,7 +689,7 @@ object mod {
     var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** custom file exports, receive two parameters, first is the inject object(if not js file, will be content buffer), second is an `options` object that contain `path` */
-    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
+    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, Any]] = js.undefined
     
     /** an object that be the argument when invoke the function */
     var inject: js.UndefOr[js.Object] = js.undefined
@@ -725,7 +724,7 @@ object mod {
       
       inline def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
+      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value*))
       
       inline def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -735,9 +734,9 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
-      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
       inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
       
@@ -749,7 +748,7 @@ object mod {
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
       
       inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
@@ -809,13 +808,13 @@ object mod {
       
       inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
       inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value*))
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -823,7 +822,7 @@ object mod {
       
       inline def setOptionalDependencies(value: js.Array[String]): Self = StObject.set(x, "optionalDependencies", value.asInstanceOf[js.Any])
       
-      inline def setOptionalDependenciesVarargs(value: String*): Self = StObject.set(x, "optionalDependencies", js.Array(value :_*))
+      inline def setOptionalDependenciesVarargs(value: String*): Self = StObject.set(x, "optionalDependencies", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

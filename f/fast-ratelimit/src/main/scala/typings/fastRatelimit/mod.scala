@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("fast-ratelimit", "FastRateLimit")
   @js.native
-  class FastRateLimit protected () extends StObject {
+  open class FastRateLimit protected () extends StObject {
     /**
       * FastRateLimit constructor
       * @param options

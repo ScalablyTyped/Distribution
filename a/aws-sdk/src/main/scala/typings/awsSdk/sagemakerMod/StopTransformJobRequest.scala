@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StopTransformJobRequest extends StObject {
   
   /**
-    * The name of the transform job to stop.
+    * The name of the batch transform job to stop.
     */
   var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName
 }

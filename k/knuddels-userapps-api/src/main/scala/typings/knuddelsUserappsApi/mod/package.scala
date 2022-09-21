@@ -1,41 +1,26 @@
 package typings.knuddelsUserappsApi.mod
 
+import typings.knuddelsUserappsApi.mod.global.Json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/* Rewritten from type alias, can be one of: 
-  - java.lang.String
-  - scala.Double
-  - scala.Boolean
-  - typings.std.Date
-  - typings.knuddelsUserappsApi.mod.global.Json
-  - typings.knuddelsUserappsApi.mod.global.JsonArray
-  - scala.Unit
-*/
-type JsonData = js.UndefOr[
-typings.knuddelsUserappsApi.mod._JsonData | java.lang.String | scala.Double | scala.Boolean | typings.std.Date]
+type JsonData = js.UndefOr[String | Double | Boolean | js.Date | Json | Any]
 
-/* Rewritten from type alias, can be one of: 
-  - java.lang.String
-  - typings.knuddelsUserappsApi.mod.global.Json
-  - typings.knuddelsUserappsApi.mod.global.KnuddelsEventArray
-*/
-type KnuddelsEvent = typings.knuddelsUserappsApi.mod._KnuddelsEvent | java.lang.String
+type KnuddelsEvent = String | Json | Any
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
   - scala.Double
   - scala.Boolean
-  - typings.std.Date
+  - js.Date
   - typings.knuddelsUserappsApi.mod.global.KnuddelsJson
-  - typings.knuddelsUserappsApi.mod.global.KnuddelsJsonArray
+  - scala.Any
   - typings.knuddelsUserappsApi.mod.KnuddelsSerializable
   - scala.Unit
 */
-type KnuddelsJsonData = js.UndefOr[
-typings.knuddelsUserappsApi.mod._KnuddelsJsonData | java.lang.String | scala.Double | scala.Boolean | typings.std.Date]
+type KnuddelsJsonData = js.UndefOr[_KnuddelsJsonData | String | Double | Boolean | js.Date | Any]
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
@@ -45,5 +30,4 @@ typings.knuddelsUserappsApi.mod._KnuddelsJsonData | java.lang.String | scala.Dou
   - typings.knuddelsUserappsApi.mod.global.BotUser
   - scala.Unit
 */
-type KnuddelsSerializable = js.UndefOr[
-typings.knuddelsUserappsApi.mod._KnuddelsSerializable | java.lang.String | scala.Double | scala.Boolean]
+type KnuddelsSerializable = js.UndefOr[_KnuddelsSerializable | String | Double | Boolean]

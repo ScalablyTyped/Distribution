@@ -9,12 +9,12 @@ trait DescribeAvailabilityMonitorTestOutput extends StObject {
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
-    * The time the High Availability monitoring test was started. If a test hasn't been performed, the value of this field is null.
+    * The time the high availability monitoring test was started. If a test hasn't been performed, the value of this field is null.
     */
-  var StartTime: js.UndefOr[Time] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the High Availability monitoring test. If a test hasn't been performed, the value of this field is null.
+    * The status of the high availability monitoring test. If a test hasn't been performed, the value of this field is null.
     */
   var Status: js.UndefOr[AvailabilityMonitorTestStatus] = js.undefined
 }
@@ -31,7 +31,7 @@ object DescribeAvailabilityMonitorTestOutput {
     
     inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    inline def setStartTime(value: Time): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

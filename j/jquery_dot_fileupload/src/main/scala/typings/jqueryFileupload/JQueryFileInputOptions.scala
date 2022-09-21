@@ -98,7 +98,7 @@ trait JQueryFileInputOptions extends StObject {
     */
   var fileInput: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.undefined
   
-  var files: js.UndefOr[js.Any] = js.undefined
+  var files: js.UndefOr[Any] = js.undefined
   
   /**
     * Set the following option to true to force iframe transport uploads:
@@ -112,13 +112,13 @@ trait JQueryFileInputOptions extends StObject {
     * object (for XHR file uploads), or a simple object.
     * The form of the first fileInput is given as parameter to the function:
     */
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
   /**
     * Translation function, gets the message key to be translated
     * and an object with context specific data as arguments:
     */
-  var i18n: js.UndefOr[js.Any] = js.undefined
+  var i18n: js.UndefOr[Any] = js.undefined
   
   /**
     * To limit the number of concurrent uploads,
@@ -168,7 +168,7 @@ trait JQueryFileInputOptions extends StObject {
   /**
     * Error and info messages:
     */
-  var messages: js.UndefOr[js.Any] = js.undefined
+  var messages: js.UndefOr[Any] = js.undefined
   
   /**
     * By default, XHR file uploads are sent as multipart/form-data.
@@ -183,7 +183,7 @@ trait JQueryFileInputOptions extends StObject {
     * used, or "files[]" if the file input name property is also empty,
     * can be a string or an array of strings:
     */
-  var paramName: js.UndefOr[js.Any] = js.undefined
+  var paramName: js.UndefOr[Any] = js.undefined
   
   var paste: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadFilesObject, Unit]
@@ -287,7 +287,7 @@ trait JQueryFileInputOptions extends StObject {
   var url: js.UndefOr[String] = js.undefined
   
   // Cross-site XMLHttpRequest file uploads
-  var xhrFields: js.UndefOr[js.Any] = js.undefined
+  var xhrFields: js.UndefOr[Any] = js.undefined
 }
 object JQueryFileInputOptions {
   
@@ -366,7 +366,7 @@ object JQueryFileInputOptions {
     
     inline def setDropZoneUndefined: Self = StObject.set(x, "dropZone", js.undefined)
     
-    inline def setDropZoneVarargs(value: Element*): Self = StObject.set(x, "dropZone", js.Array(value :_*))
+    inline def setDropZoneVarargs(value: Element*): Self = StObject.set(x, "dropZone", js.Array(value*))
     
     inline def setFail(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone) => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction2(value))
     
@@ -376,9 +376,9 @@ object JQueryFileInputOptions {
     
     inline def setFileInputUndefined: Self = StObject.set(x, "fileInput", js.undefined)
     
-    inline def setFileInputVarargs(value: Element*): Self = StObject.set(x, "fileInput", js.Array(value :_*))
+    inline def setFileInputVarargs(value: Element*): Self = StObject.set(x, "fileInput", js.Array(value*))
     
-    inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
@@ -386,11 +386,11 @@ object JQueryFileInputOptions {
     
     inline def setForceIframeTransportUndefined: Self = StObject.set(x, "forceIframeTransport", js.undefined)
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    inline def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     
@@ -418,7 +418,7 @@ object JQueryFileInputOptions {
     
     inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
     
-    inline def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
@@ -426,7 +426,7 @@ object JQueryFileInputOptions {
     
     inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
-    inline def setParamName(value: js.Any): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
+    inline def setParamName(value: Any): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
     
     inline def setParamNameUndefined: Self = StObject.set(x, "paramName", js.undefined)
     
@@ -438,7 +438,7 @@ object JQueryFileInputOptions {
     
     inline def setPasteZoneUndefined: Self = StObject.set(x, "pasteZone", js.undefined)
     
-    inline def setPasteZoneVarargs(value: Element*): Self = StObject.set(x, "pasteZone", js.Array(value :_*))
+    inline def setPasteZoneVarargs(value: Element*): Self = StObject.set(x, "pasteZone", js.Array(value*))
     
     inline def setPostMessage(value: String): Self = StObject.set(x, "postMessage", value.asInstanceOf[js.Any])
     
@@ -516,7 +516,7 @@ object JQueryFileInputOptions {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setXhrFields(value: js.Any): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
+    inline def setXhrFields(value: Any): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
     
     inline def setXhrFieldsUndefined: Self = StObject.set(x, "xhrFields", js.undefined)
   }

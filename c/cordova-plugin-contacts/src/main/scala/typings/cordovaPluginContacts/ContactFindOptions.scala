@@ -29,7 +29,7 @@ object ContactFindOptions {
     
     inline def setDesiredFieldsUndefined: Self = StObject.set(x, "desiredFields", js.undefined)
     
-    inline def setDesiredFieldsVarargs(value: ContactFieldType*): Self = StObject.set(x, "desiredFields", js.Array(value :_*))
+    inline def setDesiredFieldsVarargs(value: ContactFieldType*): Self = StObject.set(x, "desiredFields", js.Array(value*))
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

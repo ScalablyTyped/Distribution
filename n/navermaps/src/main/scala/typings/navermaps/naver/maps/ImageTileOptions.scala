@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImageTileOptions extends StObject {
   
-  var imgonerror: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var imgonerror: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var imgonload: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var imgonload: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var offset: js.UndefOr[Point] = js.undefined
   
@@ -34,11 +34,11 @@ object ImageTileOptions {
   
   extension [Self <: ImageTileOptions](x: Self) {
     
-    inline def setImgonerror(value: () => js.Any): Self = StObject.set(x, "imgonerror", js.Any.fromFunction0(value))
+    inline def setImgonerror(value: () => Any): Self = StObject.set(x, "imgonerror", js.Any.fromFunction0(value))
     
     inline def setImgonerrorUndefined: Self = StObject.set(x, "imgonerror", js.undefined)
     
-    inline def setImgonload(value: () => js.Any): Self = StObject.set(x, "imgonload", js.Any.fromFunction0(value))
+    inline def setImgonload(value: () => Any): Self = StObject.set(x, "imgonload", js.Any.fromFunction0(value))
     
     inline def setImgonloadUndefined: Self = StObject.set(x, "imgonload", js.undefined)
     
@@ -64,7 +64,7 @@ object ImageTileOptions {
     
     inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
     
     inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     

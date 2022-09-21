@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "invert-kv" : "3.0.1"
+      "invert-kv" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "invert-kv" : "3.0.1"
+      "invert-kv" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

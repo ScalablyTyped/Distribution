@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Remove a list of accounts from a hold.
-  */
 trait SchemaRemoveHeldAccountsRequest extends StObject {
   
   /**
-    * Account ids to identify HeldAccounts to remove.
+    * The account IDs of the accounts to remove from the hold.
     */
-  var accountIds: js.UndefOr[js.Array[String]] = js.undefined
+  var accountIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaRemoveHeldAccountsRequest {
   
@@ -25,8 +22,10 @@ object SchemaRemoveHeldAccountsRequest {
     
     inline def setAccountIds(value: js.Array[String]): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdsNull: Self = StObject.set(x, "accountIds", null)
+    
     inline def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
-    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value*))
   }
 }

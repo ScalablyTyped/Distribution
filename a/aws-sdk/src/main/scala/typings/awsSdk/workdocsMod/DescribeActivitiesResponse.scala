@@ -33,6 +33,6 @@ object DescribeActivitiesResponse {
     
     inline def setUserActivitiesUndefined: Self = StObject.set(x, "UserActivities", js.undefined)
     
-    inline def setUserActivitiesVarargs(value: Activity*): Self = StObject.set(x, "UserActivities", js.Array(value :_*))
+    inline def setUserActivitiesVarargs(value: Activity*): Self = StObject.set(x, "UserActivities", js.Array(value*))
   }
 }

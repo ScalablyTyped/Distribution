@@ -28,6 +28,9 @@ trait Corpora extends StObject {
   /** Whether both My Drive and shared drive items should be included in results. */
   var includeItemsFromAllDrives: js.UndefOr[Boolean] = js.undefined
   
+  /** A comma-separated list of IDs of labels to include in the labelInfo part of the response. */
+  var includeLabels: js.UndefOr[String] = js.undefined
+  
   /** Specifies which additional view's permissions to include in the response. Only 'published' is supported. */
   var includePermissionsForView: js.UndefOr[String] = js.undefined
   
@@ -63,7 +66,7 @@ trait Corpora extends StObject {
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** A comma-separated list of spaces to query within the corpus. Supported values are 'drive', 'appDataFolder' and 'photos'. */
+  /** A comma-separated list of spaces to query within the corpus. Supported values are 'drive' and 'appDataFolder'. */
   var spaces: js.UndefOr[String] = js.undefined
   
   /** Whether the requesting application supports both My Drives and shared drives. */
@@ -110,6 +113,10 @@ object Corpora {
     inline def setIncludeItemsFromAllDrives(value: Boolean): Self = StObject.set(x, "includeItemsFromAllDrives", value.asInstanceOf[js.Any])
     
     inline def setIncludeItemsFromAllDrivesUndefined: Self = StObject.set(x, "includeItemsFromAllDrives", js.undefined)
+    
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
     
     inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
     

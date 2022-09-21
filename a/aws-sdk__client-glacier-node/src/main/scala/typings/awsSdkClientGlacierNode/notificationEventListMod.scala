@@ -8,5 +8,5 @@ object notificationEventListMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_NotificationEventList", "_NotificationEventList")
   @js.native
-  val NotificationEventList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val NotificationEventList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

@@ -20,14 +20,14 @@ trait CEventObj extends StObject {
   
   val behaviorPart: Double = js.native
   
-  def bookmarks(index: Double): js.Any = js.native
+  def bookmarks(index: Double): Any = js.native
   @JSName("bookmarks")
   var bookmarks_Original: IHTMLBookmarkCollection = js.native
   
-  def boundElements(): js.Any = js.native
-  def boundElements(name: js.Any): js.Any = js.native
-  def boundElements(name: js.Any, index: js.Any): js.Any = js.native
-  def boundElements(name: Unit, index: js.Any): js.Any = js.native
+  def boundElements(): Any = js.native
+  def boundElements(name: Any): Any = js.native
+  def boundElements(name: Any, index: Any): Any = js.native
+  def boundElements(name: Unit, index: Any): Any = js.native
   @JSName("boundElements")
   var boundElements_Original: IHTMLElementCollection = js.native
   
@@ -41,7 +41,7 @@ trait CEventObj extends StObject {
   
   var clientY: Double = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   val contentOverflow: Boolean = js.native
   
@@ -58,8 +58,8 @@ trait CEventObj extends StObject {
   var fromElement: IHTMLElement = js.native
   
   /** @param lFlags [lFlags=0] */
-  def getAttribute(strAttributeName: String): js.Any = js.native
-  def getAttribute(strAttributeName: String, lFlags: Double): js.Any = js.native
+  def getAttribute(strAttributeName: String): Any = js.native
+  def getAttribute(strAttributeName: String, lFlags: Double): Any = js.native
   
   var keyCode: Double = js.native
   
@@ -77,7 +77,7 @@ trait CEventObj extends StObject {
   
   var reason: Double = js.native
   
-  var recordset: js.Any = js.native
+  var recordset: Any = js.native
   
   /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: String): Boolean = js.native
@@ -85,25 +85,25 @@ trait CEventObj extends StObject {
   
   var repeat: Boolean = js.native
   
-  var returnValue: js.Any = js.native
+  var returnValue: Any = js.native
   
   var screenX: Double = js.native
   
   var screenY: Double = js.native
   
   /** @param lFlags [lFlags=1] */
-  def setAttribute(strAttributeName: String, AttributeValue: js.Any): Unit = js.native
-  def setAttribute(strAttributeName: String, AttributeValue: js.Any, lFlags: Double): Unit = js.native
+  def setAttribute(strAttributeName: String, AttributeValue: Any): Unit = js.native
+  def setAttribute(strAttributeName: String, AttributeValue: Any, lFlags: Double): Unit = js.native
   
   var shiftKey: Boolean = js.native
   
   var shiftLeft: Boolean = js.native
   
-  val source: js.Any = js.native
+  val source: Any = js.native
   
   var srcElement: IHTMLElement = js.native
   
-  var srcFilter: js.Any = js.native
+  var srcFilter: Any = js.native
   
   var srcUrn: String = js.native
   

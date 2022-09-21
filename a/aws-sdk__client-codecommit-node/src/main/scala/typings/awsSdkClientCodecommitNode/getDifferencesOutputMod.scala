@@ -8,5 +8,5 @@ object getDifferencesOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetDifferencesOutput", "GetDifferencesOutput")
   @js.native
-  val GetDifferencesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetDifferencesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

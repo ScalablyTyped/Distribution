@@ -40,6 +40,9 @@ trait NetworkInfo extends StObject {
   // The media access control (MAC) address of the media endpoint's network device.
   var macAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Network protocol used for the transmission of stream. Possible values are: unknown, udp, tcp, unknownFutureValue.
+  var networkTransportProtocol: js.UndefOr[NetworkTransportProtocol] = js.undefined
+  
   // Network port number used by media endpoint.
   var port: js.UndefOr[NullableOption[Double]] = js.undefined
   
@@ -63,6 +66,9 @@ trait NetworkInfo extends StObject {
   
   // Subnet used for media stream by the media endpoint.
   var subnet: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // List of network trace route hops collected for this media stream.*
+  var traceRouteHops: js.UndefOr[js.Array[TraceRouteHop]] = js.undefined
   
   /**
     * WiFi band used by the media endpoint. Possible values are: unknown, frequency24GHz, frequency50GHz, frequency60GHz,
@@ -155,6 +161,10 @@ object NetworkInfo {
     
     inline def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
     
+    inline def setNetworkTransportProtocol(value: NetworkTransportProtocol): Self = StObject.set(x, "networkTransportProtocol", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTransportProtocolUndefined: Self = StObject.set(x, "networkTransportProtocol", js.undefined)
+    
     inline def setPort(value: NullableOption[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     inline def setPortNull: Self = StObject.set(x, "port", null)
@@ -196,6 +206,12 @@ object NetworkInfo {
     inline def setSubnetNull: Self = StObject.set(x, "subnet", null)
     
     inline def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
+    
+    inline def setTraceRouteHops(value: js.Array[TraceRouteHop]): Self = StObject.set(x, "traceRouteHops", value.asInstanceOf[js.Any])
+    
+    inline def setTraceRouteHopsUndefined: Self = StObject.set(x, "traceRouteHops", js.undefined)
+    
+    inline def setTraceRouteHopsVarargs(value: TraceRouteHop*): Self = StObject.set(x, "traceRouteHops", js.Array(value*))
     
     inline def setWifiBand(value: WifiBand): Self = StObject.set(x, "wifiBand", value.asInstanceOf[js.Any])
     

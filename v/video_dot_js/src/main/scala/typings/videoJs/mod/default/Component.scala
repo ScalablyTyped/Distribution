@@ -42,7 +42,7 @@ object Component {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("video.js", "default.Component")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.videoJs.mod.videojs.Component {
     /**
@@ -72,6 +72,7 @@ object Component {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getComponent(name: timeTooltip_ | TimeTooltip): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
   inline def getComponent(name: String): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
   
   /**
@@ -81,55 +82,26 @@ object Component {
     *        The Name of the component to get.
     *
     * @return The `Component` that got registered under the given name.
-    *
-    * @deprecated In `videojs` 6 this will not return `Component`s that were not
-    *             registered using {@link Component.registerComponent}. Currently we
-    *             check the global `videojs` object for a `Component` name and
-    *             return that if it exists.
     */
-  inline def getComponent_Button(name: Button): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def getComponent_Instantiable(name: Button | button_): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
   
-  inline def getComponent_ClickableComponent(name: ClickableComponent): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
+  inline def getComponent_InstantiableClickableComponent(name: ClickableComponent | clickablecomponent_): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
   
-  inline def getComponent_Component(name: typings.videoJs.videoJsStrings.Component): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
+  inline def getComponent_InstantiableMenu(name: Menu | menu_): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
   
-  inline def getComponent_Menu(name: Menu): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
+  inline def getComponent_InstantiableMenuButton(name: MenuButton | menubutton_): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
   
-  inline def getComponent_MenuButton(name: MenuButton): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
+  inline def getComponent_InstantiableMenuItem(name: MenuItem | menuitem_): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
   
-  inline def getComponent_MenuItem(name: MenuItem): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
+  inline def getComponent_InstantiableModalDialog(name: ModalDialog | modaldialog_): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
   
-  inline def getComponent_ModalDialog(name: ModalDialog): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
+  inline def getComponent_InstantiableMouseTimeDisplay(name: MouseTimeDisplay | mouseTimeDisplay_): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
   
-  inline def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
+  inline def getComponent_InstantiableSpacer(name: Spacer | spacer_): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
   
-  inline def getComponent_Player(name: typings.videoJs.videoJsStrings.Player): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
+  inline def getComponent_TypeofComponent(name: typings.videoJs.videoJsStrings.Component | component_): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
   
-  inline def getComponent_Spacer(name: Spacer): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
-  
-  inline def getComponent_TimeTooltip(name: TimeTooltip): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
-  
-  inline def getComponent_button(name: button_): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
-  
-  inline def getComponent_clickablecomponent(name: clickablecomponent_): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
-  
-  inline def getComponent_component(name: component_): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
-  
-  inline def getComponent_menu(name: menu_): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
-  
-  inline def getComponent_menubutton(name: menubutton_): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
-  
-  inline def getComponent_menuitem(name: menuitem_): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
-  
-  inline def getComponent_modaldialog(name: modaldialog_): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
-  
-  inline def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
-  
-  inline def getComponent_player(name: player_): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
-  
-  inline def getComponent_spacer(name: spacer_): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
-  
-  inline def getComponent_timeTooltip(name: timeTooltip_): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
+  inline def getComponent_TypeofPlayer(name: typings.videoJs.videoJsStrings.Player | player_): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
   
   /**
     * Register a `Component` with `videojs` given the name and the component.
@@ -149,5 +121,5 @@ object Component {
     *
     * @return The `Component` that was registered.
     */
-  inline def registerComponent(name: String, ComponentToRegister: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], ComponentToRegister.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def registerComponent(name: String, ComponentToRegister: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], ComponentToRegister.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

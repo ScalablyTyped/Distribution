@@ -1,250 +1,366 @@
 package typings.p5.mod
 
+import typings.p5.p5Numbers.`0x0000`
+import typings.p5.p5Numbers.`0x0001`
+import typings.p5.p5Numbers.`0x0002`
+import typings.p5.p5Numbers.`0x0003`
+import typings.p5.p5Numbers.`0x0004`
+import typings.p5.p5Numbers.`0x0005`
+import typings.p5.p5Numbers.`0x0006`
+import typings.p5.p5Strings.`color-burn`
+import typings.p5.p5Strings.`color-dodge`
+import typings.p5.p5Strings.`destination-out`
+import typings.p5.p5Strings.`hard-light`
+import typings.p5.p5Strings.`soft-light`
+import typings.p5.p5Strings.`source-over`
+import typings.p5.p5Strings.alphabetic
+import typings.p5.p5Strings.arrow
+import typings.p5.p5Strings.audio
+import typings.p5.p5Strings.auto
+import typings.p5.p5Strings.axes
+import typings.p5.p5Strings.bevel
+import typings.p5.p5Strings.bezier
+import typings.p5.p5Strings.blur
+import typings.p5.p5Strings.bold
+import typings.p5.p5Strings.bolditalic
+import typings.p5.p5Strings.bottom
+import typings.p5.p5Strings.butt
+import typings.p5.p5Strings.center
+import typings.p5.p5Strings.char
+import typings.p5.p5Strings.chord
+import typings.p5.p5Strings.clamp
+import typings.p5.p5Strings.close
+import typings.p5.p5Strings.copy
+import typings.p5.p5Strings.corner
+import typings.p5.p5Strings.corners
+import typings.p5.p5Strings.cross
+import typings.p5.p5Strings.curve
+import typings.p5.p5Strings.darkest
+import typings.p5.p5Strings.degrees
+import typings.p5.p5Strings.difference
+import typings.p5.p5Strings.dilate
+import typings.p5.p5Strings.erode
+import typings.p5.p5Strings.exclusion
+import typings.p5.p5Strings.fallback
+import typings.p5.p5Strings.fill
+import typings.p5.p5Strings.gray
+import typings.p5.p5Strings.grid
+import typings.p5.p5Strings.hand
+import typings.p5.p5Strings.hsb
+import typings.p5.p5Strings.hsl
+import typings.p5.p5Strings.image
+import typings.p5.p5Strings.immediate
+import typings.p5.p5Strings.invert
+import typings.p5.p5Strings.italic
+import typings.p5.p5Strings.label
+import typings.p5.p5Strings.landscape
+import typings.p5.p5Strings.left
+import typings.p5.p5Strings.lighten
+import typings.p5.p5Strings.lighter
+import typings.p5.p5Strings.linear
+import typings.p5.p5Strings.mirror
+import typings.p5.p5Strings.miter
+import typings.p5.p5Strings.move
+import typings.p5.p5Strings.multiply
+import typings.p5.p5Strings.nearest
+import typings.p5.p5Strings.normal
+import typings.p5.p5Strings.opaque
+import typings.p5.p5Strings.open
+import typings.p5.p5Strings.overlay
+import typings.p5.p5Strings.p2d
+import typings.p5.p5Strings.pie
+import typings.p5.p5Strings.portrait
+import typings.p5.p5Strings.posterize
+import typings.p5.p5Strings.quad_strip
+import typings.p5.p5Strings.quadratic
+import typings.p5.p5Strings.quads
+import typings.p5.p5Strings.radians
+import typings.p5.p5Strings.radius
+import typings.p5.p5Strings.repeat
+import typings.p5.p5Strings.rgb
+import typings.p5.p5Strings.right
+import typings.p5.p5Strings.round
+import typings.p5.p5Strings.screen
+import typings.p5.p5Strings.square
+import typings.p5.p5Strings.stroke
+import typings.p5.p5Strings.subtract
+import typings.p5.p5Strings.tess
+import typings.p5.p5Strings.text
+import typings.p5.p5Strings.texture
+import typings.p5.p5Strings.threshold
+import typings.p5.p5Strings.top
+import typings.p5.p5Strings.version
+import typings.p5.p5Strings.video
+import typings.p5.p5Strings.wait
+import typings.p5.p5Strings.webgl
+import typings.p5.p5Strings.word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ADD = typings.p5.p5Strings.lighter
+type ADD = lighter
 
-type ANGLE_MODE = typings.p5.mod.RADIANS | typings.p5.mod.DEGREES
+type ANGLE_MODE = RADIANS | DEGREES
 
-type ARC_MODE = typings.p5.mod.CHORD | typings.p5.mod.PIE | typings.p5.mod.OPEN
+type ARC_MODE = CHORD | PIE | OPEN
 
-type ARROW = typings.p5.p5Strings.arrow
+type ARROW = arrow
 
-type AUDIO = typings.p5.p5Strings.audio
+type AUDIO = audio
 
-type AUTO = typings.p5.p5Strings.auto
+type AUTO = auto
 
-type AXES = typings.p5.p5Strings.axes
+type AXES = axes
 
-type BASELINE = typings.p5.p5Strings.alphabetic
+type BASELINE = alphabetic
 
-type BEGIN_KIND = typings.p5.mod.POINTS | typings.p5.mod.LINES | typings.p5.mod.TRIANGLES | typings.p5.mod.TRIANGLE_FAN | typings.p5.mod.TRIANGLE_STRIP | typings.p5.mod.QUADS | typings.p5.mod.QUAD_STRIP
+type BEGIN_KIND = POINTS | LINES | TRIANGLES | TRIANGLE_FAN | TRIANGLE_STRIP | QUADS | QUAD_STRIP | TESS
 
-type BEVEL = typings.p5.p5Strings.bevel
+type BEVEL = bevel
 
-type BEZIER = typings.p5.p5Strings.bezier
+type BEZIER = bezier
 
-type BLEND = typings.p5.p5Strings.`source-over`
+type BLEND = `source-over`
 
-type BLEND_MODE = typings.p5.mod.BLEND | typings.p5.mod.DARKEST | typings.p5.mod.LIGHTEST | typings.p5.mod.DIFFERENCE | typings.p5.mod.MULTIPLY | typings.p5.mod.EXCLUSION | typings.p5.mod.SCREEN | typings.p5.mod.REPLACE | typings.p5.mod.OVERLAY | typings.p5.mod.HARD_LIGHT | typings.p5.mod.SOFT_LIGHT | typings.p5.mod.DODGE | typings.p5.mod.BURN | typings.p5.mod.ADD | typings.p5.mod.NORMAL
+type BLEND_MODE = BLEND | DARKEST | LIGHTEST | DIFFERENCE | MULTIPLY | EXCLUSION | SCREEN | REPLACE | OVERLAY | HARD_LIGHT | SOFT_LIGHT | DODGE | BURN | ADD | NORMAL
 
-type BLUR = typings.p5.p5Strings.blur
+type BLUR = blur
 
-type BOLD = typings.p5.p5Strings.bold
+type BOLD = bold
 
-type BOLDITALIC = typings.p5.p5Strings.bolditalic
+type BOLDITALIC = bolditalic
 
-type BOTTOM = typings.p5.p5Strings.bottom
+type BOTTOM = bottom
 
-type BURN = typings.p5.p5Strings.`color-burn`
+type BURN = `color-burn`
 
-type BandPass = typings.p5.mod.Filter
+type BandPass = Filter
 
-type CENTER = typings.p5.p5Strings.center
+type CENTER = center
 
-type CHORD = typings.p5.p5Strings.chord
+type CHAR = char
 
-type CLAMP = typings.p5.p5Strings.clamp
+type CHORD = chord
 
-type CLOSE = typings.p5.p5Strings.close
+type CLAMP = clamp
 
-type COLOR_MODE = typings.p5.mod.RGB | typings.p5.mod.HSB | typings.p5.mod.HSL
+type CLOSE = close
 
-type CORNER = typings.p5.p5Strings.corner
+type COLOR_MODE = RGB | HSB | HSL
 
-type CORNERS = typings.p5.p5Strings.corners
+type CORNER = corner
 
-type CROSS = typings.p5.p5Strings.cross
+type CORNERS = corners
 
-type CURSOR_TYPE = typings.p5.mod.ARROW | typings.p5.mod.CROSS | typings.p5.mod.HAND | typings.p5.mod.MOVE | typings.p5.mod.TEXT
+type CROSS = cross
 
-type CURVE = typings.p5.p5Strings.curve
+type CURSOR_TYPE = ARROW | CROSS | HAND | MOVE | TEXT
 
-type DARKEST = typings.p5.p5Strings.darkest
+type CURVE = curve
 
-type DEBUG_MODE = typings.p5.mod.GRID | typings.p5.mod.AXES
+type DARKEST = darkest
 
-type DEGREES = typings.p5.p5Strings.degrees
+type DEBUG_MODE = GRID | AXES
 
-type DIFFERENCE = typings.p5.p5Strings.difference
+type DEGREES = degrees
 
-type DILATE = typings.p5.p5Strings.dilate
+type DESCRIBE_DISPLAY = LABEL | FALLBACK
 
-type DODGE = typings.p5.p5Strings.`color-dodge`
+type DIFFERENCE = difference
 
-type ELLIPSE_MODE = typings.p5.mod.CENTER | typings.p5.mod.RADIUS | typings.p5.mod.CORNER | typings.p5.mod.CORNERS
+type DILATE = dilate
 
-type END_MODE = typings.p5.mod.CLOSE
+type DODGE = `color-dodge`
 
-type ERODE = typings.p5.p5Strings.erode
+type ELLIPSE_MODE = CENTER | RADIUS | CORNER | CORNERS
 
-type EXCLUSION = typings.p5.p5Strings.exclusion
+type END_MODE = CLOSE
 
-type FILL = typings.p5.p5Strings.fill
+type ERODE = erode
 
-type FILTER_TYPE = typings.p5.mod.THRESHOLD | typings.p5.mod.GRAY | typings.p5.mod.OPAQUE | typings.p5.mod.INVERT | typings.p5.mod.POSTERIZE | typings.p5.mod.BLUR | typings.p5.mod.ERODE | typings.p5.mod.DILATE
+type EXCLUSION = exclusion
 
-type GRAPHICS_RENDERER = typings.p5.mod.P2D | typings.p5.mod.WEBGL
+type FALLBACK = fallback
 
-type GRAY = typings.p5.p5Strings.gray
+type FILL = fill
 
-type GRID = typings.p5.p5Strings.grid
+type FILTER_TYPE = THRESHOLD | GRAY | OPAQUE | INVERT | POSTERIZE | ERODE | DILATE | BLUR
 
-type HAND = typings.p5.p5Strings.hand
+type GRAPHICS_RENDERER = P2D | WEBGL
 
-type HARD_LIGHT = typings.p5.p5Strings.`hard-light`
+type GRAY = gray
 
-type HORIZ_ALIGN = typings.p5.mod.LEFT | typings.p5.mod.CENTER | typings.p5.mod.RIGHT
+type GRID = grid
 
-type HSB = typings.p5.p5Strings.hsb
+type GRID_DISPLAY = FALLBACK | LABEL
 
-type HSL = typings.p5.p5Strings.hsl
+type HAND = hand
 
-type HighPass = typings.p5.mod.Filter
+type HARD_LIGHT = `hard-light`
 
-type IMAGE_ = typings.p5.p5Strings.image
+type HORIZ_ALIGN = LEFT | CENTER | RIGHT
 
-type IMAGE_MODE = typings.p5.mod.CORNER | typings.p5.mod.CORNERS | typings.p5.mod.CENTER
+type HSB = hsb
 
-type IMMEDIATE = typings.p5.p5Strings.immediate
+type HSL = hsl
 
-type INVERT = typings.p5.p5Strings.invert
+type HighPass = Filter
 
-type ITALIC = typings.p5.p5Strings.italic
+type IMAGE_ = image
 
-type LANDSCAPE = typings.p5.p5Strings.landscape
+type IMAGE_MODE = CORNER | CORNERS | CENTER
 
-type LEFT = typings.p5.p5Strings.left
+type IMMEDIATE = immediate
 
-type LIGHTEST = typings.p5.p5Strings.lighten
+type INVERT = invert
 
-type LINEAR = typings.p5.p5Strings.linear
+type ITALIC = italic
 
-type LINES = typings.p5.p5Numbers.`0x0001`
+type LABEL = label
 
-type LINE_LOOP = typings.p5.p5Numbers.`0x0002`
+type LANDSCAPE = landscape
 
-type LINE_STRIP = typings.p5.p5Numbers.`0x0003`
+type LEFT = left
 
-type LowPass = typings.p5.mod.Filter
+type LIGHTEST = lighten
 
-type MIRROR = typings.p5.p5Strings.mirror
+type LINEAR = linear
 
-type MITER = typings.p5.p5Strings.miter
+type LINES = `0x0001`
 
-type MOVE = typings.p5.p5Strings.move
+type LINE_LOOP = `0x0002`
 
-type MULTIPLY = typings.p5.p5Strings.multiply
+type LINE_STRIP = `0x0003`
 
-type NEAREST = typings.p5.p5Strings.nearest
+type LowPass = Filter
 
-type NORMAL = typings.p5.p5Strings.normal
+type MIRROR = mirror
 
-type OPAQUE = typings.p5.p5Strings.opaque
+type MITER = miter
 
-type OPEN = typings.p5.p5Strings.open
+type MOVE = move
 
-type OVERLAY = typings.p5.p5Strings.overlay
+type MULTIPLY = multiply
 
-type P2D = typings.p5.p5Strings.p2d
+type NEAREST = nearest
 
-type PIE = typings.p5.p5Strings.pie
+type NORMAL = normal
 
-type POINTS = typings.p5.p5Numbers.`0x0000`
+type OPAQUE = opaque
 
-type PORTRAIT = typings.p5.p5Strings.portrait
+type OPEN = open
 
-type POSTERIZE = typings.p5.p5Strings.posterize
+type OVERLAY = overlay
 
-type PROJECT = typings.p5.p5Strings.square
+type P2D = p2d
 
-type QUADRATIC = typings.p5.p5Strings.quadratic
+type PIE = pie
 
-type QUADS = typings.p5.p5Strings.quads
+type POINTS = `0x0000`
 
-type QUAD_STRIP = typings.p5.p5Strings.quad_strip
+type PORTRAIT = portrait
 
-type RADIANS = typings.p5.p5Strings.radians
+type POSTERIZE = posterize
 
-type RADIUS = typings.p5.p5Strings.radius
+type PROJECT = square
 
-type RECT_MODE = typings.p5.mod.CORNER | typings.p5.mod.CORNERS | typings.p5.mod.CENTER | typings.p5.mod.RADIUS
+type QUADRATIC = quadratic
 
-type RENDERER_ = typings.p5.mod.P2D | typings.p5.mod.WEBGL
+type QUADS = quads
 
-type REPEAT = typings.p5.p5Strings.repeat
+type QUAD_STRIP = quad_strip
 
-type REPLACE = typings.p5.p5Strings.copy
+type RADIANS = radians
 
-type RGB = typings.p5.p5Strings.rgb
+type RADIUS = radius
 
-type RIGHT = typings.p5.p5Strings.right
+type RECT_MODE = CORNER | CORNERS | CENTER | RADIUS
 
-type ROUND = typings.p5.p5Strings.round
+type REMOVE = `destination-out`
 
-type Renderer = typings.p5.mod.Element
+type RENDERER_ = P2D | WEBGL
 
-type SCREEN = typings.p5.p5Strings.screen
+type REPEAT = repeat
 
-type SIZE_H = typings.p5.mod.AUTO
+type REPLACE = copy
 
-type SIZE_W = typings.p5.mod.AUTO
+type RGB = rgb
 
-type SOFT_LIGHT = typings.p5.p5Strings.`soft-light`
+type RIGHT = right
 
-type SQUARE = typings.p5.p5Strings.butt
+type ROUND = round
 
-type STROKE = typings.p5.p5Strings.stroke
+type Renderer = Element
 
-type STROKE_CAP = typings.p5.mod.SQUARE | typings.p5.mod.PROJECT | typings.p5.mod.ROUND
+type SCREEN = screen
 
-type STROKE_JOIN = typings.p5.mod.MITER | typings.p5.mod.BEVEL | typings.p5.mod.ROUND
+type SIZE_H = AUTO
 
-type SUBTRACT = typings.p5.p5Strings.subtract
+type SIZE_W = AUTO
 
-type SawOsc = typings.p5.mod.Oscillator
+type SOFT_LIGHT = `soft-light`
 
-type SinOsc = typings.p5.mod.Oscillator
+type SQUARE = butt
 
-type SqrOsc = typings.p5.mod.Oscillator
+type STROKE = stroke
 
-type StringDict = typings.p5.mod.TypedDict
+type STROKE_CAP = ROUND | SQUARE | PROJECT
 
-type TEXT = typings.p5.p5Strings.text
+type STROKE_JOIN = MITER | BEVEL | ROUND
 
-type TEXTURE = typings.p5.p5Strings.texture
+type SUBTRACT = subtract
 
-type TEXTURE_MODE = typings.p5.mod.IMAGE_ | typings.p5.mod.NORMAL
+type SawOsc = Oscillator
 
-type THE_STYLE = typings.p5.mod.NORMAL | typings.p5.mod.ITALIC | typings.p5.mod.BOLD | typings.p5.mod.BOLDITALIC
+type SinOsc = Oscillator
 
-type THRESHOLD = typings.p5.p5Strings.threshold
+type SqrOsc = Oscillator
 
-type TOP = typings.p5.p5Strings.top
+type StringDict = TypedDict
 
-type TRIANGLES = typings.p5.p5Numbers.`0x0004`
+type TESS = tess
 
-type TRIANGLE_FAN = typings.p5.p5Numbers.`0x0006`
+type TEXT = text
 
-type TRIANGLE_STRIP = typings.p5.p5Numbers.`0x0005`
+type TEXTURE = texture
 
-type TYPE = typings.p5.mod.VIDEO | typings.p5.mod.AUDIO
+type TEXTURE_MODE = IMAGE_ | NORMAL
 
-type TriOsc = typings.p5.mod.Oscillator
+type TEXT_DISPLAY = FALLBACK | LABEL
 
-type UNKNOWN_P5_CONSTANT = js.Any
+type THE_STYLE = NORMAL | ITALIC | BOLD | BOLDITALIC
 
-type VERT_ALIGN = typings.p5.mod.TOP | typings.p5.mod.BOTTOM | typings.p5.mod.CENTER | typings.p5.mod.BASELINE
+type THRESHOLD = threshold
 
-type VIDEO = typings.p5.p5Strings.video
+type TOP = top
 
-type WAIT = typings.p5.p5Strings.wait
+type TRIANGLES = `0x0004`
 
-type WEBGL = typings.p5.p5Strings.webgl
+type TRIANGLE_FAN = `0x0006`
 
-type WRAP_X = typings.p5.mod.CLAMP | typings.p5.mod.REPEAT | typings.p5.mod.MIRROR
+type TRIANGLE_STRIP = `0x0005`
 
-type WRAP_Y = typings.p5.mod.CLAMP | typings.p5.mod.REPEAT | typings.p5.mod.MIRROR
+type TYPE = VIDEO | AUDIO
+
+type TriOsc = Oscillator
+
+type UNKNOWN_P5_CONSTANT = Any
+
+type VERSION = version
+
+type VERT_ALIGN = TOP | BOTTOM | CENTER | BASELINE
+
+type VIDEO = video
+
+type WAIT = wait
+
+type WEBGL = webgl
+
+type WORD = word
+
+type WRAP_STYLE = WORD | CHAR
+
+type WRAP_X = CLAMP | REPEAT | MIRROR
+
+type WRAP_Y = CLAMP | REPEAT | MIRROR

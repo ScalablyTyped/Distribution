@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("react-circular-progressbar", "CircularProgressbar")
   @js.native
-  class CircularProgressbar () extends default
+  open class CircularProgressbar () extends default
   object CircularProgressbar {
     
     @JSImport("react-circular-progressbar", "CircularProgressbar")

@@ -4,20 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The options for mail export.
-  */
 trait SchemaMailExportOptions extends StObject {
   
   /**
-    * The export file format.
+    * The file format for exported messages.
     */
-  var exportFormat: js.UndefOr[String] = js.undefined
+  var exportFormat: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Set to true to export confidential mode content.
+    * To export confidential mode content, set to **true**.
     */
-  var showConfidentialModeContent: js.UndefOr[Boolean] = js.undefined
+  var showConfidentialModeContent: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * To use the new export system, set to **true**.
+    */
+  var useNewExport: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaMailExportOptions {
   
@@ -30,10 +32,20 @@ object SchemaMailExportOptions {
     
     inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     
+    inline def setExportFormatNull: Self = StObject.set(x, "exportFormat", null)
+    
     inline def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
     
     inline def setShowConfidentialModeContent(value: Boolean): Self = StObject.set(x, "showConfidentialModeContent", value.asInstanceOf[js.Any])
     
+    inline def setShowConfidentialModeContentNull: Self = StObject.set(x, "showConfidentialModeContent", null)
+    
     inline def setShowConfidentialModeContentUndefined: Self = StObject.set(x, "showConfidentialModeContent", js.undefined)
+    
+    inline def setUseNewExport(value: Boolean): Self = StObject.set(x, "useNewExport", value.asInstanceOf[js.Any])
+    
+    inline def setUseNewExportNull: Self = StObject.set(x, "useNewExport", null)
+    
+    inline def setUseNewExportUndefined: Self = StObject.set(x, "useNewExport", js.undefined)
   }
 }

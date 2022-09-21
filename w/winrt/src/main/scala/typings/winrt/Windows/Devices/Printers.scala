@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Devices
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +10,18 @@ object Printers {
     
     trait IPrintExtensionContextStatic extends StObject {
       
-      def fromDeviceId(deviceId: String): js.Any
+      def fromDeviceId(deviceId: String): Any
     }
     object IPrintExtensionContextStatic {
       
-      inline def apply(fromDeviceId: String => js.Any): IPrintExtensionContextStatic = {
+      inline def apply(fromDeviceId: String => Any): IPrintExtensionContextStatic = {
         val __obj = js.Dynamic.literal(fromDeviceId = js.Any.fromFunction1(fromDeviceId))
         __obj.asInstanceOf[IPrintExtensionContextStatic]
       }
       
       extension [Self <: IPrintExtensionContextStatic](x: Self) {
         
-        inline def setFromDeviceId(value: String => js.Any): Self = StObject.set(x, "fromDeviceId", js.Any.fromFunction1(value))
+        inline def setFromDeviceId(value: String => Any): Self = StObject.set(x, "fromDeviceId", js.Any.fromFunction1(value))
       }
     }
     
@@ -49,22 +48,22 @@ object Printers {
     
     trait IPrintTaskConfiguration extends StObject {
       
-      var onsaverequested: js.Any
+      var onsaverequested: Any
       
-      var printerExtensionContext: js.Any
+      var printerExtensionContext: Any
     }
     object IPrintTaskConfiguration {
       
-      inline def apply(onsaverequested: js.Any, printerExtensionContext: js.Any): IPrintTaskConfiguration = {
+      inline def apply(onsaverequested: Any, printerExtensionContext: Any): IPrintTaskConfiguration = {
         val __obj = js.Dynamic.literal(onsaverequested = onsaverequested.asInstanceOf[js.Any], printerExtensionContext = printerExtensionContext.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPrintTaskConfiguration]
       }
       
       extension [Self <: IPrintTaskConfiguration](x: Self) {
         
-        inline def setOnsaverequested(value: js.Any): Self = StObject.set(x, "onsaverequested", value.asInstanceOf[js.Any])
+        inline def setOnsaverequested(value: Any): Self = StObject.set(x, "onsaverequested", value.asInstanceOf[js.Any])
         
-        inline def setPrinterExtensionContext(value: js.Any): Self = StObject.set(x, "printerExtensionContext", value.asInstanceOf[js.Any])
+        inline def setPrinterExtensionContext(value: Any): Self = StObject.set(x, "printerExtensionContext", value.asInstanceOf[js.Any])
       }
     }
     
@@ -72,19 +71,19 @@ object Printers {
       
       def cancel(): Unit
       
-      var deadline: Date
+      var deadline: js.Date
       
       def getDeferral(): PrintTaskConfigurationSaveRequestedDeferral
       
-      def save(printerExtensionContext: js.Any): Unit
+      def save(printerExtensionContext: Any): Unit
     }
     object IPrintTaskConfigurationSaveRequest {
       
       inline def apply(
         cancel: () => Unit,
-        deadline: Date,
+        deadline: js.Date,
         getDeferral: () => PrintTaskConfigurationSaveRequestedDeferral,
-        save: js.Any => Unit
+        save: Any => Unit
       ): IPrintTaskConfigurationSaveRequest = {
         val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), save = js.Any.fromFunction1(save))
         __obj.asInstanceOf[IPrintTaskConfigurationSaveRequest]
@@ -94,11 +93,11 @@ object Printers {
         
         inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
         
-        inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+        inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
         
         inline def setGetDeferral(value: () => PrintTaskConfigurationSaveRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
         
-        inline def setSave(value: js.Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+        inline def setSave(value: Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       }
     }
     
@@ -154,7 +153,7 @@ object Printers {
          with IPrintTaskConfiguration
     object PrintTaskConfiguration {
       
-      inline def apply(onsaverequested: js.Any, printerExtensionContext: js.Any): PrintTaskConfiguration = {
+      inline def apply(onsaverequested: Any, printerExtensionContext: Any): PrintTaskConfiguration = {
         val __obj = js.Dynamic.literal(onsaverequested = onsaverequested.asInstanceOf[js.Any], printerExtensionContext = printerExtensionContext.asInstanceOf[js.Any])
         __obj.asInstanceOf[PrintTaskConfiguration]
       }
@@ -167,9 +166,9 @@ object Printers {
       
       inline def apply(
         cancel: () => Unit,
-        deadline: Date,
+        deadline: js.Date,
         getDeferral: () => PrintTaskConfigurationSaveRequestedDeferral,
-        save: js.Any => Unit
+        save: Any => Unit
       ): PrintTaskConfigurationSaveRequest = {
         val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), save = js.Any.fromFunction1(save))
         __obj.asInstanceOf[PrintTaskConfigurationSaveRequest]

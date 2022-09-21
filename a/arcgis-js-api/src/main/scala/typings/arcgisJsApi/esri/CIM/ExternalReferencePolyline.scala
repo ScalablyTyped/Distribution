@@ -31,7 +31,7 @@ object ExternalReferencePolyline {
     
     inline def setCurvePathUndefined: Self = StObject.set(x, "curvePath", js.undefined)
     
-    inline def setCurvePathVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "curvePath", js.Array(value :_*))
+    inline def setCurvePathVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "curvePath", js.Array(value*))
     
     inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object ExternalReferencePolyline {
     
     inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    inline def setPathsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "paths", js.Array(value*))
     
     inline def setSpatialReference(value: ExternalReferenceSpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     

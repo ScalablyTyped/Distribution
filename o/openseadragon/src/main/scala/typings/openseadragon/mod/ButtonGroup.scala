@@ -8,10 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "ButtonGroup")
 @js.native
-class ButtonGroup protected () extends StObject {
+open class ButtonGroup protected () extends StObject {
   def this(options: Buttons) = this()
   
   var buttons: js.Array[Button] = js.native
+  
+  def destroy(): Unit = js.native
   
   var element: Element = js.native
   

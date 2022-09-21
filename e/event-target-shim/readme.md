@@ -1,7 +1,7 @@
 
 # Scala.js typings for event-target-shim
 
-Typings are for version 5.0.1
+Typings are for version 6.0.2
 
 ## Library description:
 An implementation of WHATWG EventTarget interface.
@@ -10,10 +10,10 @@ An implementation of WHATWG EventTarget interface.
 | ------------------ | :-------------: |
 | Full name          | event-target-shim |
 | Keywords           | w3c, whatwg, eventtarget, event, events, shim |
-| # releases         | 6 |
-| # dependents       | 225 |
-| # downloads        | 160745424 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2193563333333332E7 |
+| # stars            | 108.0 |
 
 ## Links
 - [Homepage](https://github.com/mysticatea/event-target-shim)

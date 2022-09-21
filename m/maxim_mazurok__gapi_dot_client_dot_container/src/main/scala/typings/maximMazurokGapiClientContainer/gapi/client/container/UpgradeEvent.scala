@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpgradeEvent extends StObject {
   
-  /** Required. The current version before the upgrade. */
+  /** The current version before the upgrade. */
   var currentVersion: js.UndefOr[String] = js.undefined
   
-  /** Required. The operation associated with this upgrade. */
+  /** The operation associated with this upgrade. */
   var operation: js.UndefOr[String] = js.undefined
   
-  /** Required. The time when the operation was started. */
+  /** The time when the operation was started. */
   var operationStartTime: js.UndefOr[String] = js.undefined
   
-  /** Optional. Optional relative path to the resource. For example in node pool upgrades, the relative path of the node pool. */
+  /** Optional relative path to the resource. For example in node pool upgrades, the relative path of the node pool. */
   var resource: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource type that is upgrading. */
+  /** The resource type that is upgrading. */
   var resourceType: js.UndefOr[String] = js.undefined
   
-  /** Required. The target version for the upgrade. */
+  /** The target version for the upgrade. */
   var targetVersion: js.UndefOr[String] = js.undefined
 }
 object UpgradeEvent {

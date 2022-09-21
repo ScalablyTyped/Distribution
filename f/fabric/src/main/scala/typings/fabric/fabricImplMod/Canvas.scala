@@ -17,14 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IStaticCanvasOptions because Already inherited
-- typings.fabric.fabricImplMod.ICanvasOptions because var conflicts: allowTouchScrolling, backgroundColor, backgroundImage, backgroundVpt, clipPath, clipTo, controlsAboveOverlay, enableRetinaScaling, imageSmoothingEnabled, includeDefaultValues, overlayColor, overlayImage, overlayVpt, renderOnAddRemove, skipOffscreen, stateful, svgViewportTransformation, viewportTransform, vptCoords. Inlined uniScaleTransform, uniScaleKey, centeredScaling, centeredRotation, fill, centeredKey, altActionKey, interactive, selection, selectionKey, altSelectionKey, selectionColor, selectionDashArray, selectionBorderColor, selectionLineWidth, selectionFullyContained, hoverCursor, moveCursor, defaultCursor, freeDrawingCursor, rotationCursor, notAllowedCursor, containerClass, perPixelTargetFind, targetFindTolerance, skipTargetFind, isDrawingMode, preserveObjectStacking, snapAngle, snapThreshold, stopContextMenu, fireRightClick, fireMiddleClick, targets, width, height */ @JSImport("fabric/fabric-impl", "Canvas")
+- typings.fabric.fabricImplMod.ICanvasOptions because var conflicts: allowTouchScrolling, backgroundColor, backgroundImage, backgroundVpt, clipPath, controlsAboveOverlay, enableRetinaScaling, imageSmoothingEnabled, includeDefaultValues, overlayColor, overlayImage, overlayVpt, renderOnAddRemove, skipOffscreen, stateful, svgViewportTransformation, viewportTransform, vptCoords. Inlined uniformScaling, uniScaleKey, centeredScaling, centeredRotation, fill, centeredKey, altActionKey, interactive, selection, selectionKey, altSelectionKey, selectionColor, selectionDashArray, selectionBorderColor, selectionLineWidth, selectionFullyContained, hoverCursor, moveCursor, defaultCursor, freeDrawingCursor, rotationCursor, notAllowedCursor, containerClass, perPixelTargetFind, targetFindTolerance, skipTargetFind, isDrawingMode, preserveObjectStacking, snapAngle, snapThreshold, stopContextMenu, fireRightClick, fireMiddleClick, targets, width, height */ @JSImport("fabric/fabric-impl", "Canvas")
 @js.native
 /**
   * Constructor
   * @param element <canvas> element to initialize instance on
   * @param [options] Options object
   */
-class Canvas () extends StaticCanvas {
+open class Canvas () extends StaticCanvas {
   def this(element: String) = this()
   def this(element: HTMLCanvasElement) = this()
   def this(element: String, options: ICanvasOptions) = this()
@@ -70,12 +70,7 @@ class Canvas () extends StaticCanvas {
     * @return {Boolean} true if the scaling occurred
     */
   def _scaleObject(x: Double, y: Double): Boolean = js.native
-  @JSName("_scaleObject")
-  def _scaleObject_equally(x: Double, y: Double, by: equally): Boolean = js.native
-  @JSName("_scaleObject")
-  def _scaleObject_x(x: Double, y: Double, by: x): Boolean = js.native
-  @JSName("_scaleObject")
-  def _scaleObject_y(x: Double, y: Double, by: y): Boolean = js.native
+  def _scaleObject(x: Double, y: Double, by: x | y | equally): Boolean = js.native
   
   /**
     * Function used to search inside objects an object that contains pointer in bounding box or that contains pointerOnCanvas when painted
@@ -97,20 +92,10 @@ class Canvas () extends StaticCanvas {
   
   def _setObjectScale(
     localMouse: Point,
-    transform: js.Any,
+    transform: Any,
     lockScalingX: Boolean,
     lockScalingY: Boolean,
-    by: Unit,
-    lockScalingFlip: Boolean,
-    _dim: Point
-  ): Boolean = js.native
-  @JSName("_setObjectScale")
-  def _setObjectScale_equally(
-    localMouse: Point,
-    transform: js.Any,
-    lockScalingX: Boolean,
-    lockScalingY: Boolean,
-    by: equally,
+    by: x | y | equally,
     lockScalingFlip: Boolean,
     _dim: Point
   ): Boolean = js.native
@@ -118,23 +103,12 @@ class Canvas () extends StaticCanvas {
     * @private
     * @return {Boolean} true if the scaling occurred
     */
-  @JSName("_setObjectScale")
-  def _setObjectScale_x(
+  def _setObjectScale(
     localMouse: Point,
-    transform: js.Any,
+    transform: Any,
     lockScalingX: Boolean,
     lockScalingY: Boolean,
-    by: x,
-    lockScalingFlip: Boolean,
-    _dim: Point
-  ): Boolean = js.native
-  @JSName("_setObjectScale")
-  def _setObjectScale_y(
-    localMouse: Point,
-    transform: js.Any,
-    lockScalingX: Boolean,
-    lockScalingY: Boolean,
-    by: y,
+    by: Unit,
     lockScalingFlip: Boolean,
     _dim: Point
   ): Boolean = js.native
@@ -241,8 +215,6 @@ class Canvas () extends StaticCanvas {
     */
   def findTarget(e: Event, skipGroup: Boolean): js.UndefOr[Object] = js.native
   
-  def fire(eventName: String, options: js.Any): Unit = js.native
-  
   /**
     * Indicates if the canvas can fire middle click events
     * @type Boolean
@@ -322,6 +294,19 @@ class Canvas () extends StaticCanvas {
   var hoverCursor: js.UndefOr[String] = js.native
   
   /**
+    * Constructor
+    * @param {HTMLCanvasElement | String} element <canvas> element to initialize instance on
+    * @param {Object} [options] Options object
+    * @return {Object} thisArg
+    */
+  def initialize(): Canvas = js.native
+  def initialize(element: String): Canvas = js.native
+  def initialize(element: String, options: ICanvasOptions): Canvas = js.native
+  def initialize(element: Null, options: ICanvasOptions): Canvas = js.native
+  def initialize(element: HTMLCanvasElement): Canvas = js.native
+  def initialize(element: HTMLCanvasElement, options: ICanvasOptions): Canvas = js.native
+  
+  /**
     * Indicates that canvas is interactive. This property should not be changed.
     */
   var interactive: js.UndefOr[Boolean] = js.native
@@ -385,7 +370,7 @@ class Canvas () extends StaticCanvas {
     * @param {Object} pointer with "x" and "y" number values
     * @return {Object} object with "x" and "y" number values
     */
-  def restorePointerVpt(pointer: Point): js.Any = js.native
+  def restorePointerVpt(pointer: IPoint): Any = js.native
   
   /**
     * Cursor value used for rotation point
@@ -504,9 +489,12 @@ class Canvas () extends StaticCanvas {
   
   /**
     * When true, objects can be transformed by one side (unproportionally)
+    * when dragged on the corners that normally would not do that.
     * @type Boolean
+    * @default
+    * @since fabric 4.0 // changed name and default value
     */
-  var uniScaleTransform: js.UndefOr[Boolean] = js.native
+  var uniformScaling: js.UndefOr[Boolean] = js.native
   
   /**
     * Canvas width
@@ -532,13 +520,7 @@ object Canvas {
     * (either those of HTMLCanvasElement itself, or rendering context)
     * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
     */
-  inline def supports_getImageData(methodName: getImageData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_setLineDash(methodName: setLineDash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_toDataURL(methodName: toDataURL): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def supports(methodName: getImageData | toDataURL | toDataURLWithQuality | setLineDash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns JSON representation of canvas

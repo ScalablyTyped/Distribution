@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The document body.  The body typically contains the full document contents
-  * except for headers, footers and footnotes.
-  */
 trait SchemaBody extends StObject {
   
   /**
-    * The contents of the body.  The indexes for the body&#39;s content begin
-    * at zero.
+    * The contents of the body. The indexes for the body's content begin at zero.
     */
   var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.undefined
 }
@@ -29,6 +24,6 @@ object SchemaBody {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
   }
 }

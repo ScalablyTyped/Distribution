@@ -36,7 +36,7 @@ object ListAssignmentsForHITRequest {
     
     inline def setAssignmentStatusesUndefined: Self = StObject.set(x, "AssignmentStatuses", js.undefined)
     
-    inline def setAssignmentStatusesVarargs(value: AssignmentStatus*): Self = StObject.set(x, "AssignmentStatuses", js.Array(value :_*))
+    inline def setAssignmentStatusesVarargs(value: AssignmentStatus*): Self = StObject.set(x, "AssignmentStatuses", js.Array(value*))
     
     inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     

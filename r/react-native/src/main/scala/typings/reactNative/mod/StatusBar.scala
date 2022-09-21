@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "StatusBar")
 @js.native
-class StatusBar protected ()
-  extends Component[StatusBarProps, js.Object, js.Any] {
+open class StatusBar protected ()
+  extends Component[StatusBarProps, js.Object, Any] {
   def this(props: StatusBarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: StatusBarProps, context: js.Any) = this()
+  def this(props: StatusBarProps, context: Any) = this()
 }
 /* static members */
 object StatusBar {

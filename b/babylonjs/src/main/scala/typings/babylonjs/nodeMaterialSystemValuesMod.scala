@@ -15,6 +15,13 @@ object nodeMaterialSystemValuesMod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NodeMaterialSystemValues & Double] = js.native
     
+    /** Camera parameters */
+    @js.native
+    sealed trait CameraParameters
+      extends StObject
+         with NodeMaterialSystemValues
+    /* 10 */ val CameraParameters: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.CameraParameters & Double = js.native
+    
     /** CameraPosition */
     @js.native
     sealed trait CameraPosition
@@ -35,6 +42,13 @@ object nodeMaterialSystemValuesMod {
       extends StObject
          with NodeMaterialSystemValues
     /* 8 */ val FogColor: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.FogColor & Double = js.native
+    
+    /** Material alpha */
+    @js.native
+    sealed trait MaterialAlpha
+      extends StObject
+         with NodeMaterialSystemValues
+    /* 11 */ val MaterialAlpha: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.MaterialAlpha & Double = js.native
     
     /** Projection */
     @js.native

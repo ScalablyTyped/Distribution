@@ -10,10 +10,10 @@ This application aims to retrieve browser history from all browsers on the user'
 | ------------------ | :-------------: |
 | Full name          | node-browser-history |
 | Keywords           | browser, history |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 2995 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 325.6666666666667 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/MyOutDeskLLC/node-browser-history#readme)

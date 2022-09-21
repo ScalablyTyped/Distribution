@@ -74,7 +74,7 @@ object Options {
     
     inline def setPaymentOptionPriorityUndefined: Self = StObject.set(x, "paymentOptionPriority", js.undefined)
     
-    inline def setPaymentOptionPriorityVarargs(value: String*): Self = StObject.set(x, "paymentOptionPriority", js.Array(value :_*))
+    inline def setPaymentOptionPriorityVarargs(value: String*): Self = StObject.set(x, "paymentOptionPriority", js.Array(value*))
     
     inline def setPaypal(value: paypalCreateOptions): Self = StObject.set(x, "paypal", value.asInstanceOf[js.Any])
     

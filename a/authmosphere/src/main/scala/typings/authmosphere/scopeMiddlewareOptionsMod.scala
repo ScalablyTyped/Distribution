@@ -5,8 +5,7 @@ import typings.authmosphere.precedenceMod.PrecedenceOptions
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,13 @@ object scopeMiddlewareOptionsMod {
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
       inline def setOnAuthorizationFailedHandler(
-        value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit
+        value: (/* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* resonse */ Response_[Any, Record[String, Any]], /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit
       ): Self = StObject.set(x, "onAuthorizationFailedHandler", js.Any.fromFunction5(value))
       
       inline def setOnAuthorizationFailedHandlerUndefined: Self = StObject.set(x, "onAuthorizationFailedHandler", js.undefined)
@@ -47,8 +52,14 @@ object scopeMiddlewareOptionsMod {
   }
   
   type onAuthorizationFailedHandler = js.Function5[
-    /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resonse */ Response_[js.Any], 
+    /* request */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resonse */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     /* scopes */ js.Array[String], 
     /* logger */ Logger, 

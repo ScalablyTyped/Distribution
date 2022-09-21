@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResourcePoliciesResponse extends StObject {
   
   /**
-    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+    * If present, this value indicates that more output is available than is included in the current response. Use this value in the NextToken request parameter in a subsequent call to the operation to get the next part of the output. You should repeat this until the NextToken response element comes back as null. This indicates that this is the last page of results.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * A key policy document, in JSON format.
+    * An array of resource policy documents in JSON format.
     */
   var policies: js.UndefOr[PolicyList] = js.undefined
 }
@@ -33,6 +33,6 @@ object GetResourcePoliciesResponse {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: Policy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: Policy*): Self = StObject.set(x, "policies", js.Array(value*))
   }
 }

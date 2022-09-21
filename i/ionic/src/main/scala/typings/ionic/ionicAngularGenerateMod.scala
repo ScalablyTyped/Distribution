@@ -17,13 +17,13 @@ object ionicAngularGenerateMod {
   
   @JSImport("ionic/lib/project/ionic-angular/generate", "IonicAngularGenerateRunner")
   @js.native
-  class IonicAngularGenerateRunner protected () extends GenerateRunner[IonicAngularGenerateOptions] {
+  open class IonicAngularGenerateRunner protected () extends GenerateRunner[IonicAngularGenerateOptions] {
     def this(e: IonicAngularGenerateRunnerDeps) = this()
     
     /* protected */ @JSName("e")
     val e_IonicAngularGenerateRunner: IonicAngularGenerateRunnerDeps = js.native
     
-    def getModules(context: js.Any, kind: String): js.Promise[js.Any] = js.native
+    def getModules(context: Any, kind: String): js.Promise[Any] = js.native
     
     def tabsPrompt(): js.Promise[js.Array[String]] = js.native
   }

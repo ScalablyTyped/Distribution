@@ -14,20 +14,29 @@ object foundationMod {
   
   @JSImport("@material/menu/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCMenuFoundation {
+  open class default () extends MDCMenuFoundation {
     def this(adapter: PartialMDCMenuAdapter) = this()
   }
   
   @JSImport("@material/menu/foundation", "MDCMenuFoundation")
   @js.native
-  class MDCMenuFoundation () extends MDCFoundation[MDCMenuAdapter] {
+  open class MDCMenuFoundation () extends MDCFoundation[MDCMenuAdapter] {
     def this(adapter: PartialMDCMenuAdapter) = this()
+    
+    /* private */ var closeAnimationEndTimerId: Any = js.native
+    
+    /* private */ var defaultFocusState: Any = js.native
+    
+    /** @return Index of the currently selected list item within the menu. */
+    def getSelectedIndex(): Double = js.native
     
     def handleItemAction(listItem: Element): Unit = js.native
     
     def handleKeydown(evt: KeyboardEvent): Unit = js.native
     
     def handleMenuSurfaceOpened(): Unit = js.native
+    
+    /* private */ var selectedIndex: Any = js.native
     
     /**
       * Sets default focus state where the menu should focus every time when menu
@@ -48,5 +57,7 @@ object foundationMod {
       * @param index Index of list item within the menu.
       */
     def setSelectedIndex(index: Double): Unit = js.native
+    
+    /* private */ var validatedIndex: Any = js.native
   }
 }

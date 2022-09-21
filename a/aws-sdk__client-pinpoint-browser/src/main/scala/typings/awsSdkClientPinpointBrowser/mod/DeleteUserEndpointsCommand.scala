@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "DeleteUserEndpointsCommand")
 @js.native
-class DeleteUserEndpointsCommand protected ()
+open class DeleteUserEndpointsCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.deleteUserEndpointsCommandMod.DeleteUserEndpointsCommand {
   def this(input: DeleteUserEndpointsInput) = this()
 }

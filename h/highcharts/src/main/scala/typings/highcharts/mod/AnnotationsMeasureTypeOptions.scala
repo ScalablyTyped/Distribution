@@ -80,7 +80,7 @@ object AnnotationsMeasureTypeOptions {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: AnnotationsMeasureTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: AnnotationsMeasureTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setSelectType(value: String): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
     

@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "OmittedExpressionSyntax")
 @js.native
-class OmittedExpressionSyntax protected ()
+open class OmittedExpressionSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.OmittedExpressionSyntax {
   def this(parsedInStrictMode: Boolean) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

@@ -19,17 +19,17 @@ trait CellsMergedEventUIParam extends StObject {
   /**
     * Gets the first record in the merging chain that the merge is executed for.
     */
-  var firstRecord: js.UndefOr[js.Any] = js.undefined
+  var firstRecord: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to igGridCellMerging.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the last record in the merging chain that the merge is executed for.
     */
-  var record: js.UndefOr[js.Any] = js.undefined
+  var record: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the row the merged group starts in if available in the DOM.
@@ -39,7 +39,7 @@ trait CellsMergedEventUIParam extends StObject {
   /**
     * Gets the PK of the row the merged group starts in if available.
     */
-  var rowId: js.UndefOr[js.Any] = js.undefined
+  var rowId: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the data index of the row the merged group starts in.
@@ -63,21 +63,21 @@ object CellsMergedEventUIParam {
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    inline def setFirstRecord(value: js.Any): Self = StObject.set(x, "firstRecord", value.asInstanceOf[js.Any])
+    inline def setFirstRecord(value: Any): Self = StObject.set(x, "firstRecord", value.asInstanceOf[js.Any])
     
     inline def setFirstRecordUndefined: Self = StObject.set(x, "firstRecord", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setRecord(value: js.Any): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+    inline def setRecord(value: Any): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
     
     inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
     
     inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    inline def setRowId(value: js.Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    inline def setRowId(value: Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
     
     inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
     

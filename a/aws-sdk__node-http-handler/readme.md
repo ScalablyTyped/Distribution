@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__node-http-handler
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 Provides a way to make requests
@@ -10,10 +10,10 @@ Provides a way to make requests
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/node-http-handler |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 249 |
-| # downloads        | 7047991 |
-| # stars            | 0 |
+| # releases         | 63 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5244458666666666E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/node-http-handler)

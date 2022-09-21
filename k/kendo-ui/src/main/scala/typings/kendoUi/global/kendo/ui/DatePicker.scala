@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.DatePicker")
 @js.native
-class DatePicker protected ()
+open class DatePicker protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.DatePicker {
   def this(element: Element) = this()

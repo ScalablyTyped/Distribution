@@ -20,18 +20,18 @@ trait IFieldConfigurationObject
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#model-object--string
     */
-  var model: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
+  var model: js.UndefOr[String | StringDictionary[Any]] = js.undefined
 }
 object IFieldConfigurationObject {
   
-  inline def apply(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldConfigurationObject = {
+  inline def apply(value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])): IFieldConfigurationObject = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldConfigurationObject]
   }
   
   extension [Self <: IFieldConfigurationObject](x: Self) {
     
-    inline def setModel(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | StringDictionary[Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }

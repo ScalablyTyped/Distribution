@@ -19,8 +19,8 @@ trait DropDownTree
     * @returns {void}
     */
   def checkNode(element: String): Unit = js.native
-  def checkNode(element: js.Any): Unit = js.native
-  def checkNode(element: js.Array[js.Any]): Unit = js.native
+  def checkNode(element: js.Array[Any]): Unit = js.native
+  def checkNode(element: Any): Unit = js.native
   
   /** Clears the text in the DropDownTree.
     * @returns {void}
@@ -49,9 +49,9 @@ trait DropDownTree
     * @returns {void}
     */
   def moveNode(sourceNode: String, destinationNode: String, index: Double): Unit = js.native
-  def moveNode(sourceNode: String, destinationNode: js.Any, index: Double): Unit = js.native
-  def moveNode(sourceNode: js.Any, destinationNode: String, index: Double): Unit = js.native
-  def moveNode(sourceNode: js.Any, destinationNode: js.Any, index: Double): Unit = js.native
+  def moveNode(sourceNode: String, destinationNode: Any, index: Double): Unit = js.native
+  def moveNode(sourceNode: Any, destinationNode: String, index: Double): Unit = js.native
+  def moveNode(sourceNode: Any, destinationNode: Any, index: Double): Unit = js.native
   
   /** Removes all the nodes in the DropDownTree.
     * @returns {void}
@@ -63,8 +63,8 @@ trait DropDownTree
     * @returns {void}
     */
   def removeNode(element: String): Unit = js.native
-  def removeNode(element: js.Any): Unit = js.native
-  def removeNode(element: js.Array[js.Any]): Unit = js.native
+  def removeNode(element: js.Array[Any]): Unit = js.native
+  def removeNode(element: Any): Unit = js.native
   
   /** Selects all the DropDownTree nodes when allowMultiSelection field is enabled in the treeViewSettings property.
     * @returns {void}
@@ -76,8 +76,8 @@ trait DropDownTree
     * @returns {void}
     */
   def selectNode(element: String): Unit = js.native
-  def selectNode(element: js.Any): Unit = js.native
-  def selectNode(element: js.Array[js.Any]): Unit = js.native
+  def selectNode(element: js.Array[Any]): Unit = js.native
+  def selectNode(element: Any): Unit = js.native
   
   /** Shows the DropDownTree control with the popup.
     * @returns {void}
@@ -94,8 +94,8 @@ trait DropDownTree
     * @returns {void}
     */
   def unCheckNode(element: String): Unit = js.native
-  def unCheckNode(element: js.Any): Unit = js.native
-  def unCheckNode(element: js.Array[js.Any]): Unit = js.native
+  def unCheckNode(element: js.Array[Any]): Unit = js.native
+  def unCheckNode(element: Any): Unit = js.native
   
   /** Unselects all the DropDownTree nodes when allowMultiSelection field of the treeViewSettings property is enabled.
     * @returns {void}
@@ -107,8 +107,8 @@ trait DropDownTree
     * @returns {void}
     */
   def unselectNode(element: String): Unit = js.native
-  def unselectNode(element: js.Any): Unit = js.native
-  def unselectNode(element: js.Array[js.Any]): Unit = js.native
+  def unselectNode(element: js.Array[Any]): Unit = js.native
+  def unselectNode(element: Any): Unit = js.native
 }
 object DropDownTree {
   
@@ -120,7 +120,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Event name
       */
@@ -139,7 +139,7 @@ object DropDownTree {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -165,7 +165,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Selected item's text.
       */
@@ -204,7 +204,7 @@ object DropDownTree {
       
       inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -242,7 +242,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Selected item's text.
       */
@@ -277,7 +277,7 @@ object DropDownTree {
       
       inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -303,7 +303,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Selected item's text.
       */
@@ -330,7 +330,7 @@ object DropDownTree {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -356,7 +356,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Event name
       */
@@ -375,7 +375,7 @@ object DropDownTree {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -393,7 +393,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Event name
       */
@@ -412,7 +412,7 @@ object DropDownTree {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -430,11 +430,11 @@ object DropDownTree {
     
     /** Returns the data items of theDropDownTreeView.
       */
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the search string typed in the search box.
       */
@@ -461,11 +461,11 @@ object DropDownTree {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -491,7 +491,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Event name
       */
@@ -510,7 +510,7 @@ object DropDownTree {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -651,17 +651,17 @@ object DropDownTree {
     /** Defines the popup settings of the DropDownTree widget. You can use any property which are in treeview using this property.
       * @Default {{}}
       */
-    var treeViewSettings: js.UndefOr[js.Any] = js.undefined
+    var treeViewSettings: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation error message in the DropDownTree.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.undefined
+    var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation rules in the DropDownTree.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value (text content) for the DropDownTree control. For the single selection mode, the selected item's value will be returned in its data type, and for
       * MultiSelectMode, returns the selected items values separated by delimiter in string type.
@@ -796,15 +796,15 @@ object DropDownTree {
       
       inline def setTextModeUndefined: Self = StObject.set(x, "textMode", js.undefined)
       
-      inline def setTreeViewSettings(value: js.Any): Self = StObject.set(x, "treeViewSettings", value.asInstanceOf[js.Any])
+      inline def setTreeViewSettings(value: Any): Self = StObject.set(x, "treeViewSettings", value.asInstanceOf[js.Any])
       
       inline def setTreeViewSettingsUndefined: Self = StObject.set(x, "treeViewSettings", js.undefined)
       
-      inline def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
       inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
@@ -830,7 +830,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Selected item's text.
       */
@@ -857,7 +857,7 @@ object DropDownTree {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -928,7 +928,7 @@ object DropDownTree {
     
     /** DropDownTreeView model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Selected item's text.
       */
@@ -963,7 +963,7 @@ object DropDownTree {
       
       inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

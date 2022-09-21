@@ -14,22 +14,22 @@ object adaptorMod {
   
   @JSImport("webcola/dist/src/adaptor", "LayoutAdaptor")
   @js.native
-  class LayoutAdaptor protected () extends Layout {
-    def this(options: js.Any) = this()
+  open class LayoutAdaptor protected () extends Layout {
+    def this(options: Any) = this()
     
     def drag(): Unit = js.native
     
-    def dragEnd(d: js.Any): Unit = js.native
+    def dragEnd(d: Any): Unit = js.native
     
-    def dragStart(d: js.Any): Unit = js.native
+    def dragStart(d: Any): Unit = js.native
     
-    def dragend(d: js.Any): Unit = js.native
+    def dragend(d: Any): Unit = js.native
     
-    def dragstart(d: js.Any): Unit = js.native
+    def dragstart(d: Any): Unit = js.native
     
     def on(eventType: String, listener: js.Function0[Unit]): this.type = js.native
     def on(eventType: EventType, listener: js.Function0[Unit]): this.type = js.native
   }
   
-  inline def adaptor(options: js.Any): LayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("adaptor")(options.asInstanceOf[js.Any]).asInstanceOf[LayoutAdaptor]
+  inline def adaptor(options: Any): LayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("adaptor")(options.asInstanceOf[js.Any]).asInstanceOf[LayoutAdaptor]
 }

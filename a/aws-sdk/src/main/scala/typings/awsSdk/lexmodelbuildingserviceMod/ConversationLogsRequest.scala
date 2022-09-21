@@ -29,6 +29,6 @@ object ConversationLogsRequest {
     
     inline def setLogSettings(value: LogSettingsRequestList): Self = StObject.set(x, "logSettings", value.asInstanceOf[js.Any])
     
-    inline def setLogSettingsVarargs(value: LogSettingsRequest*): Self = StObject.set(x, "logSettings", js.Array(value :_*))
+    inline def setLogSettingsVarargs(value: LogSettingsRequest*): Self = StObject.set(x, "logSettings", js.Array(value*))
   }
 }

@@ -1,46 +1,52 @@
 package typings.youtube.YT
 
-import typings.youtube.youtubeNumbers.`100`
-import typings.youtube.youtubeNumbers.`101`
-import typings.youtube.youtubeNumbers.`150`
-import typings.youtube.youtubeNumbers.`2`
-import typings.youtube.youtubeNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.youtube.youtubeNumbers.`2`
-  - typings.youtube.youtubeNumbers.`5`
-  - typings.youtube.youtubeNumbers.`100`
-  - typings.youtube.youtubeNumbers.`101`
-  - typings.youtube.youtubeNumbers.`150`
-*/
-trait PlayerError extends StObject
-object PlayerError {
+@js.native
+sealed trait PlayerError extends StObject
+@JSGlobal("YT.PlayerError")
+@js.native
+object PlayerError extends StObject {
   
   /**
     * The owner of the requested video does not allow it to be played in embedded players.
     */
-  inline def EmbeddingNotAllowed: `101` = 101.asInstanceOf[`101`]
+  @js.native
+  sealed trait EmbeddingNotAllowed
+    extends StObject
+       with PlayerError
   
   /**
     * This error is the same as 101. It's just a 101 error in disguise!
     */
-  inline def EmbeddingNotAllowed2: `150` = 150.asInstanceOf[`150`]
+  @js.native
+  sealed trait EmbeddingNotAllowed2
+    extends StObject
+       with PlayerError
   
   /**
     * The requested content cannot be played in an HTML5 player.
     */
-  inline def Html5Error: `5` = 5.asInstanceOf[`5`]
+  @js.native
+  sealed trait Html5Error
+    extends StObject
+       with PlayerError
   
   /**
     * The request contained an invalid parameter value.
     */
-  inline def InvalidParam: `2` = 2.asInstanceOf[`2`]
+  @js.native
+  sealed trait InvalidParam
+    extends StObject
+       with PlayerError
   
   /**
     * The video requested was not found.
     */
-  inline def VideoNotFound: `100` = 100.asInstanceOf[`100`]
+  @js.native
+  sealed trait VideoNotFound
+    extends StObject
+       with PlayerError
 }

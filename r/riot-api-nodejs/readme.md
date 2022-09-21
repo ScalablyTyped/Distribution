@@ -10,9 +10,9 @@ A NodeJS Library for Riot Games API
 | Full name          | riot-api-nodejs |
 | Keywords           | riot, api, League of Legends, riot games, LOL |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1802 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 97.33333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/riot-api-nodejs)

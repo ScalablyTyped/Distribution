@@ -20,7 +20,7 @@ object BackgroundTransfer {
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundDownloader")
   @js.native
-  class BackgroundDownloader ()
+  open class BackgroundDownloader ()
     extends StObject
        with typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundDownloader {
     
@@ -63,7 +63,7 @@ object BackgroundTransfer {
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart")
   @js.native
-  class BackgroundTransferContentPart ()
+  open class BackgroundTransferContentPart ()
     extends StObject
        with typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart {
     def this(name: String) = this()
@@ -97,7 +97,7 @@ object BackgroundTransfer {
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
   @js.native
-  class BackgroundTransferError ()
+  open class BackgroundTransferError ()
     extends StObject
        with typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferError
   /* static members */
@@ -138,7 +138,7 @@ object BackgroundTransfer {
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundUploader")
   @js.native
-  class BackgroundUploader ()
+  open class BackgroundUploader ()
     extends StObject
        with typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundUploader {
     
@@ -173,7 +173,7 @@ object BackgroundTransfer {
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.DownloadOperation")
   @js.native
-  class DownloadOperation ()
+  open class DownloadOperation ()
     extends StObject
        with typings.winrt.Windows.Networking.BackgroundTransfer.DownloadOperation {
     
@@ -225,7 +225,7 @@ object BackgroundTransfer {
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.ResponseInformation")
   @js.native
-  class ResponseInformation ()
+  open class ResponseInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.BackgroundTransfer.ResponseInformation {
     
@@ -244,7 +244,7 @@ object BackgroundTransfer {
   
   @JSGlobal("Windows.Networking.BackgroundTransfer.UploadOperation")
   @js.native
-  class UploadOperation ()
+  open class UploadOperation ()
     extends StObject
        with typings.winrt.Windows.Networking.BackgroundTransfer.UploadOperation {
     

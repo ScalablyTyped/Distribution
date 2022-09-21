@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-base16-styling
 
-Typings are for version 0.8.0
+Typings are for version 0.9.1
 
 ## Library description:
 React styling with base16 color scheme support
@@ -10,10 +10,10 @@ React styling with base16 color scheme support
 | ------------------ | :-------------: |
 | Full name          | react-base16-styling |
 | Keywords           | react, theme, base16, styling |
-| # releases         | 3 |
-| # dependents       | 57 |
-| # downloads        | 17499117 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2702863.3333333335 |
+| # stars            | 12872.0 |
 
 ## Links
 - [Homepage](https://github.com/reduxjs/redux-devtools/tree/master/packages/react-base16-styling)

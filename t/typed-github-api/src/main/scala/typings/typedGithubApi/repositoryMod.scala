@@ -1,6 +1,5 @@
 package typings.typedGithubApi
 
-import typings.std.Date
 import typings.typedGithubApi.anon.Admin
 import typings.typedGithubApi.userMod.UserSummary
 import org.scalablytyped.runtime.StObject
@@ -39,7 +38,7 @@ object repositoryMod {
     
     var contributors_url: String
     
-    var created_at: Date
+    var created_at: js.Date
     
     var default_branch: String
     
@@ -119,7 +118,7 @@ object repositoryMod {
     
     var pulls_url: String
     
-    var pushed_at: Date
+    var pushed_at: js.Date
     
     var releases_url: String
     
@@ -149,7 +148,7 @@ object repositoryMod {
     
     var trees_url: String
     
-    var updated_at: Date
+    var updated_at: js.Date
     
     var url: String
     
@@ -172,7 +171,7 @@ object repositoryMod {
       compare_url: String,
       contents_url: String,
       contributors_url: String,
-      created_at: Date,
+      created_at: js.Date,
       default_branch: String,
       deployments_url: String,
       description: String,
@@ -211,7 +210,7 @@ object repositoryMod {
       permissions: Admin,
       `private`: Boolean,
       pulls_url: String,
-      pushed_at: Date,
+      pushed_at: js.Date,
       releases_url: String,
       size: Double,
       ssh_url: String,
@@ -226,7 +225,7 @@ object repositoryMod {
       teams_url: String,
       topics: js.Array[String],
       trees_url: String,
-      updated_at: Date,
+      updated_at: js.Date,
       url: String,
       watchers_count: Double
     ): Repository = {
@@ -265,7 +264,7 @@ object repositoryMod {
       
       inline def setContributors_url(value: String): Self = StObject.set(x, "contributors_url", value.asInstanceOf[js.Any])
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setDefault_branch(value: String): Self = StObject.set(x, "default_branch", value.asInstanceOf[js.Any])
       
@@ -347,7 +346,7 @@ object repositoryMod {
       
       inline def setPulls_url(value: String): Self = StObject.set(x, "pulls_url", value.asInstanceOf[js.Any])
       
-      inline def setPushed_at(value: Date): Self = StObject.set(x, "pushed_at", value.asInstanceOf[js.Any])
+      inline def setPushed_at(value: js.Date): Self = StObject.set(x, "pushed_at", value.asInstanceOf[js.Any])
       
       inline def setReleases_url(value: String): Self = StObject.set(x, "releases_url", value.asInstanceOf[js.Any])
       
@@ -375,11 +374,11 @@ object repositoryMod {
       
       inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
       
       inline def setTrees_url(value: String): Self = StObject.set(x, "trees_url", value.asInstanceOf[js.Any])
       
-      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: js.Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

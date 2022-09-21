@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the chart axes.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartAxesLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait ChartAxesLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the category axis in a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var categoryAxis: js.UndefOr[ChartAxisLoadOptions] = js.undefined
   
   /**
+    * Represents the series axis of a 3-D chart.
     *
-    * Represents the series axis of a 3-dimensional chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var seriesAxis: js.UndefOr[ChartAxisLoadOptions] = js.undefined
   
   /**
-    *
     * Represents the value axis in an axis.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var valueAxis: js.UndefOr[ChartAxisLoadOptions] = js.undefined

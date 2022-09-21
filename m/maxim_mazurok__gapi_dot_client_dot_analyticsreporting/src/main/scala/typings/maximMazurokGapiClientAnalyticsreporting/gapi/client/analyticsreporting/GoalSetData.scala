@@ -22,6 +22,6 @@ object GoalSetData {
     
     inline def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
     
-    inline def setGoalsVarargs(value: GoalData*): Self = StObject.set(x, "goals", js.Array(value :_*))
+    inline def setGoalsVarargs(value: GoalData*): Self = StObject.set(x, "goals", js.Array(value*))
   }
 }

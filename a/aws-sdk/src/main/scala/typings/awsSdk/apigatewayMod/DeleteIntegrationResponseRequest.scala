@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteIntegrationResponseRequest extends StObject {
   
   /**
-    * [Required] Specifies a delete integration response request's HTTP method.
+    * Specifies a delete integration response request's HTTP method.
     */
   var httpMethod: String
   
   /**
-    * [Required] Specifies a delete integration response request's resource identifier.
+    * Specifies a delete integration response request's resource identifier.
     */
   var resourceId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   
   /**
-    * [Required] Specifies a delete integration response request's status code.
+    * Specifies a delete integration response request's status code.
     */
   var statusCode: StatusCode
 }

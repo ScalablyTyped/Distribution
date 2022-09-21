@@ -11,7 +11,7 @@ object baseStoreMod {
   
   @JSImport("dispatchr/addons/BaseStore", JSImport.Namespace)
   @js.native
-  class ^[S] protected () extends BaseStore[S] {
+  open class ^[S] protected () extends BaseStore[S] {
     def this(dispatcher: DispatcherInterface) = this()
   }
   

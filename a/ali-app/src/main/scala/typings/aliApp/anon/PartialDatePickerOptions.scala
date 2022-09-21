@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<ali-app.my.DatePickerOptions> */
 trait PartialDatePickerOptions extends StObject {
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function1[/* res */ Any, Unit]] = js.undefined
   
   var currentDate: js.UndefOr[String] = js.undefined
   
@@ -36,7 +36,7 @@ object PartialDatePickerOptions {
   
   extension [Self <: PartialDatePickerOptions](x: Self) {
     
-    inline def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     

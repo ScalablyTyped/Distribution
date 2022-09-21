@@ -1,7 +1,7 @@
 
 # Scala.js typings for power-assert
 
-Typings are for version 1.5.3
+Typings are for version 1.5
 
 ## Library description:
 Power Assert in JavaScript
@@ -10,10 +10,10 @@ Power Assert in JavaScript
 | ------------------ | :-------------: |
 | Full name          | power-assert |
 | Keywords           | power-assert, assert, assertion, test, testing, ecmascript, ast |
-| # releases         | 0 |
-| # dependents       | 102 |
-| # downloads        | 7560267 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 781531.3333333334 |
+| # stars            | 2731.0 |
 
 ## Links
 - [Homepage](https://github.com/power-assert-js/power-assert)

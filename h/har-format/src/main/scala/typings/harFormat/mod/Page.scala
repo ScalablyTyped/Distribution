@@ -1,10 +1,18 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Page extends StObject {
+trait Page
+  extends StObject
+     with /**
+  * _non-standard_
+  *
+  * See "Custom Fields" under http://www.softwareishard.com/blog/har-12-spec
+  */
+/* customField */ StringDictionary[js.UndefOr[Any | Null]] {
   
   /** _non-standard_  */
   var _SpeedIndex: js.UndefOr[Double | Null] = js.undefined

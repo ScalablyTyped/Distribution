@@ -10,15 +10,12 @@ Fast, energy-efficient, highly-configurable QR code scanner.
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-qrscanner |
 | Keywords           | cordova, qr, qr code, scanner, reader, ecosystem:cordova, cordova-ios, cordova-android, cordova-browser, UMD, library, electron, NW.js |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 145822 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10571.333333333334 |
+| # stars            | 553.0 |
 
 ## Links
-- [Homepage](https://github.com/bitpay/cordova-plugin-qrscanner)
-- [Bugs](https://github.com/bitpay/cordova-plugin-qrscanner/issues)
-- [Repository](https://github.com/bitpay/cordova-plugin-qrscanner)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-qrscanner)
     
 

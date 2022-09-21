@@ -6,7 +6,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeCanvas.anon.A
 import typings.std.HTMLElement
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,17 +14,17 @@ object mod {
   
   @JSImport("react-native-canvas", JSImport.Default)
   @js.native
-  class default () extends Canvas
+  open class default () extends Canvas
   
   @JSImport("react-native-canvas", "Image")
   @js.native
-  class Image protected () extends StObject {
+  open class Image protected () extends StObject {
     def this(canvas: Canvas) = this()
     def this(canvas: Canvas, height: Double) = this()
     def this(canvas: Canvas, height: Double, width: Double) = this()
     def this(canvas: Canvas, height: Unit, width: Double) = this()
     
-    def addEventListener(event: String, func: js.Function1[/* args */ js.Any, js.Any]): Unit = js.native
+    def addEventListener(event: String, func: js.Function1[/* args */ Any, Any]): Unit = js.native
     
     var crossOrigin: js.UndefOr[String] = js.native
     
@@ -38,10 +37,10 @@ object mod {
   
   @JSImport("react-native-canvas", "ImageData")
   @js.native
-  class ImageData protected () extends StObject {
+  open class ImageData protected () extends StObject {
     def this(canvas: Canvas, data: js.Array[Double], height: Double, width: Double) = this()
     
-    val data: Uint8ClampedArray = js.native
+    val data: js.typedarray.Uint8ClampedArray = js.native
     
     val height: Double = js.native
     
@@ -50,10 +49,10 @@ object mod {
   
   @JSImport("react-native-canvas", "Path2D")
   @js.native
-  class Path2D protected () extends StObject {
+  open class Path2D protected () extends StObject {
     def this(
       canvas: Canvas,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ) = this()
     
     def addPath(path: Path2D): Unit = js.native
@@ -106,13 +105,16 @@ object mod {
   
   @js.native
   trait Canvas
-    extends Component[CanvasProps, js.Object, js.Any] {
+    extends Component[CanvasProps, js.Object, Any] {
     
     def getContext(context: String): CanvasRenderingContext2D = js.native
     
     var height: Double = js.native
     
     def toDataURL(): js.Promise[String] = js.native
+    def toDataURL(`type`: String): js.Promise[String] = js.native
+    def toDataURL(`type`: String, encoderOptions: Double): js.Promise[String] = js.native
+    def toDataURL(`type`: Unit, encoderOptions: Double): js.Promise[String] = js.native
     
     var width: Double = js.native
   }
@@ -147,13 +149,13 @@ object mod {
     
     var originWhitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ref: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]
+    var ref: (js.Function1[/* canvas */ Canvas, Any]) | RefObject[Canvas]
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object CanvasProps {
     
-    inline def apply(ref: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]): CanvasProps = {
+    inline def apply(ref: (js.Function1[/* canvas */ Canvas, Any]) | RefObject[Canvas]): CanvasProps = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[CanvasProps]
     }
@@ -168,11 +170,11 @@ object mod {
       
       inline def setOriginWhitelistUndefined: Self = StObject.set(x, "originWhitelist", js.undefined)
       
-      inline def setOriginWhitelistVarargs(value: String*): Self = StObject.set(x, "originWhitelist", js.Array(value :_*))
+      inline def setOriginWhitelistVarargs(value: String*): Self = StObject.set(x, "originWhitelist", js.Array(value*))
       
-      inline def setRef(value: (js.Function1[/* canvas */ Canvas, js.Any]) | RefObject[Canvas]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: (js.Function1[/* canvas */ Canvas, Any]) | RefObject[Canvas]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* canvas */ Canvas => js.Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* canvas */ Canvas => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -223,10 +225,10 @@ object mod {
       dHeight: js.UndefOr[Double]
     ): Unit = js.native
     
-    def drawWidgetAsOnScreen(window: js.Any): Unit = js.native
+    def drawWidgetAsOnScreen(window: Any): Unit = js.native
     
-    def drawWindow(window: js.Any, x: Double, y: Double, w: Double, h: Double, bgColor: String): Unit = js.native
-    def drawWindow(window: js.Any, x: Double, y: Double, w: Double, h: Double, bgColor: String, flags: js.Any): Unit = js.native
+    def drawWindow(window: Any, x: Double, y: Double, w: Double, h: Double, bgColor: String): Unit = js.native
+    def drawWindow(window: Any, x: Double, y: Double, w: Double, h: Double, bgColor: String, flags: Any): Unit = js.native
     
     def ellipse(
       x: Double,
@@ -250,9 +252,9 @@ object mod {
     
     //
     def fill(): Unit = js.native
-    def fill(Path2D: Unit, fillRule: js.Any): Unit = js.native
+    def fill(Path2D: Unit, fillRule: Any): Unit = js.native
     def fill(Path2D: Path2D): Unit = js.native
-    def fill(Path2D: Path2D, fillRule: js.Any): Unit = js.native
+    def fill(Path2D: Path2D, fillRule: Any): Unit = js.native
     
     def fillRect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
     
@@ -271,7 +273,7 @@ object mod {
     
     var globalCompositionOperation: String = js.native
     
-    def isPointInPath(x: Double, y: Double, fillRule: js.Any, path: Path2D): Boolean = js.native
+    def isPointInPath(x: Double, y: Double, fillRule: Any, path: Path2D): Boolean = js.native
     
     def isPointInStroke(x: Double, y: Double, path: Path2D): Boolean = js.native
     
@@ -285,7 +287,7 @@ object mod {
     
     var lineWidth: Double = js.native
     
-    def measureText(text: String): js.Any = js.native
+    def measureText(text: String): Any = js.native
     
     var miterLimit: Double = js.native
     
@@ -407,6 +409,8 @@ object mod {
     def strokeText(text: String, x: Double, y: Double, maxWidth: Double): Unit = js.native
     
     var textAlign: String = js.native
+    
+    var textBaseline: String = js.native
     
     def transform(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Unit = js.native
     

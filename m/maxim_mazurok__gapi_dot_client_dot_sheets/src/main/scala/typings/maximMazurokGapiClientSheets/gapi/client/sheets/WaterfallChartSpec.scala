@@ -23,6 +23,12 @@ trait WaterfallChartSpec extends StObject {
   
   /** The stacked type. */
   var stackedType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Controls whether to display additional data labels on stacked charts which sum the total value of all stacked values at each value along the domain axis. stacked_type must be
+    * STACKED and neither CUSTOM nor placement can be set on the total_data_label.
+    */
+  var totalDataLabel: js.UndefOr[DataLabel] = js.undefined
 }
 object WaterfallChartSpec {
   
@@ -53,10 +59,14 @@ object WaterfallChartSpec {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: WaterfallChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: WaterfallChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
     
     inline def setStackedTypeUndefined: Self = StObject.set(x, "stackedType", js.undefined)
+    
+    inline def setTotalDataLabel(value: DataLabel): Self = StObject.set(x, "totalDataLabel", value.asInstanceOf[js.Any])
+    
+    inline def setTotalDataLabelUndefined: Self = StObject.set(x, "totalDataLabel", js.undefined)
   }
 }

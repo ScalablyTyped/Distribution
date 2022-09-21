@@ -13,11 +13,11 @@ object ShutdownKind {
   /* unmapped type */
   @JSGlobal("Windows.System.ShutdownKind.restart")
   @js.native
-  def restart: js.Any = js.native
-  inline def restart_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("restart")(x.asInstanceOf[js.Any])
+  def restart: Any = js.native
+  inline def restart_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("restart")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.System.ShutdownKind.shutdown")
   @js.native
-  def shutdown: js.Any = js.native
-  inline def shutdown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shutdown")(x.asInstanceOf[js.Any])
+  def shutdown: Any = js.native
+  inline def shutdown_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shutdown")(x.asInstanceOf[js.Any])
 }

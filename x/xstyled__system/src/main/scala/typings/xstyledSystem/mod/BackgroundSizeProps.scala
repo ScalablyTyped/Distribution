@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.BackgroundSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BackgroundSizeProps[TLength] extends StObject {
   
-  val backgroundSize: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val backgroundSize: js.UndefOr[ResponsiveValue[BackgroundSize[TLength]]] = js.undefined
 }
 object BackgroundSizeProps {
   
@@ -21,16 +18,10 @@ object BackgroundSizeProps {
   
   extension [Self <: BackgroundSizeProps[?], TLength](x: Self & BackgroundSizeProps[TLength]) {
     
-    inline def setBackgroundSize(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
+    inline def setBackgroundSize(value: ResponsiveValue[BackgroundSize[TLength]]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
     inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
-    inline def setBackgroundSizeVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "backgroundSize", js.Array(value :_*))
+    inline def setBackgroundSizeVarargs(value: BackgroundSize[TLength]*): Self = StObject.set(x, "backgroundSize", js.Array(value*))
   }
 }

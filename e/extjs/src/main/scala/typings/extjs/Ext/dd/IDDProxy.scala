@@ -21,7 +21,7 @@ trait IDDProxy
     * @param e Object
     */
   @JSName("endDrag")
-  var endDrag_IDDProxy: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var endDrag_IDDProxy: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Initialization for the drag frame element  */
   var initFrame: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -56,7 +56,7 @@ object IDDProxy {
     
     inline def setDragElIdUndefined: Self = StObject.set(x, "dragElId", js.undefined)
     
-    inline def setEndDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "endDrag", js.Any.fromFunction1(value))
+    inline def setEndDrag(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "endDrag", js.Any.fromFunction1(value))
     
     inline def setEndDragUndefined: Self = StObject.set(x, "endDrag", js.undefined)
     

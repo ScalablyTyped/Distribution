@@ -10,10 +10,10 @@ object tableHeaderColumnMod {
   
   @JSImport("material-ui/Table/TableHeaderColumn", JSImport.Default)
   @js.native
-  class default () extends TableHeaderColumn
+  open class default () extends TableHeaderColumn
   
   @JSImport("material-ui/Table/TableHeaderColumn", "TableHeaderColumn")
   @js.native
-  class TableHeaderColumn ()
-    extends Component[TableHeaderColumnProps, js.Object, js.Any]
+  open class TableHeaderColumn ()
+    extends Component[TableHeaderColumnProps, js.Object, Any]
 }

@@ -28,18 +28,18 @@ object Vertex3DList {
     
     inline def setXOffsetsUndefined: Self = StObject.set(x, "xOffsets", js.undefined)
     
-    inline def setXOffsetsVarargs(value: Double*): Self = StObject.set(x, "xOffsets", js.Array(value :_*))
+    inline def setXOffsetsVarargs(value: Double*): Self = StObject.set(x, "xOffsets", js.Array(value*))
     
     inline def setYOffsets(value: js.Array[Double]): Self = StObject.set(x, "yOffsets", value.asInstanceOf[js.Any])
     
     inline def setYOffsetsUndefined: Self = StObject.set(x, "yOffsets", js.undefined)
     
-    inline def setYOffsetsVarargs(value: Double*): Self = StObject.set(x, "yOffsets", js.Array(value :_*))
+    inline def setYOffsetsVarargs(value: Double*): Self = StObject.set(x, "yOffsets", js.Array(value*))
     
     inline def setZOffsets(value: js.Array[Double]): Self = StObject.set(x, "zOffsets", value.asInstanceOf[js.Any])
     
     inline def setZOffsetsUndefined: Self = StObject.set(x, "zOffsets", js.undefined)
     
-    inline def setZOffsetsVarargs(value: Double*): Self = StObject.set(x, "zOffsets", js.Array(value :_*))
+    inline def setZOffsetsVarargs(value: Double*): Self = StObject.set(x, "zOffsets", js.Array(value*))
   }
 }

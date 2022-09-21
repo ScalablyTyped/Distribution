@@ -22,7 +22,7 @@ object scaleRangeSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ScaleRangeSlider {
     def this(properties: ScaleRangeSliderProperties) = this()

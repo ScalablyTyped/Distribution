@@ -10,10 +10,10 @@ pack node-style source files from a json stream into a browser bundle
 | ------------------ | :-------------: |
 | Full name          | browser-pack |
 | Keywords           | browser, bundle, commonjs, commonj-esque, exports, module.exports, require |
-| # releases         | 1 |
-| # dependents       | 88 |
-| # downloads        | 35634288 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5625035.0 |
+| # stars            | 168.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/browser-pack)

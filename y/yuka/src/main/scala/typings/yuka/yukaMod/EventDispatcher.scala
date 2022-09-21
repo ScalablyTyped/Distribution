@@ -1,0 +1,13 @@
+package typings.yuka.yukaMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("yuka/src/Yuka", "EventDispatcher")
+@js.native
+/**
+  * Constructs a new event dispatcher.
+  */
+open class EventDispatcher ()
+  extends typings.yuka.eventDispatcherMod.EventDispatcher

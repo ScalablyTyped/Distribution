@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "PrePassRenderer")
 @js.native
-class PrePassRenderer protected ()
+open class PrePassRenderer protected ()
   extends typings.babylonjs.renderingIndexMod.PrePassRenderer {
   /**
-    * Instanciates a prepass renderer
+    * Instantiates a prepass renderer
     * @param scene The scene
     */
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
@@ -21,6 +21,14 @@ object PrePassRenderer {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param _
+    * @hidden
+    */
   inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("babylonjs/index", "PrePassRenderer._TextureFormats")
+  @js.native
+  def _TextureFormats: Any = js.native
+  inline def _TextureFormats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureFormats")(x.asInstanceOf[js.Any])
 }

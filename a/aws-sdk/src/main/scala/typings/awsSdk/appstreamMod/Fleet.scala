@@ -19,7 +19,7 @@ trait Fleet extends StObject {
   /**
     * The time the fleet was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description to display.
@@ -77,9 +77,14 @@ trait Fleet extends StObject {
   var ImageName: js.UndefOr[String] = js.undefined
   
   /**
-    * The instance type to use when launching fleet instances. The following instance types are available:   stream.standard.medium   stream.standard.large   stream.compute.large   stream.compute.xlarge   stream.compute.2xlarge   stream.compute.4xlarge   stream.compute.8xlarge   stream.memory.large   stream.memory.xlarge   stream.memory.2xlarge   stream.memory.4xlarge   stream.memory.8xlarge   stream.memory.z1d.large   stream.memory.z1d.xlarge   stream.memory.z1d.2xlarge   stream.memory.z1d.3xlarge   stream.memory.z1d.6xlarge   stream.memory.z1d.12xlarge   stream.graphics-design.large   stream.graphics-design.xlarge   stream.graphics-design.2xlarge   stream.graphics-design.4xlarge   stream.graphics-desktop.2xlarge   stream.graphics.g4dn.xlarge   stream.graphics.g4dn.2xlarge   stream.graphics.g4dn.4xlarge   stream.graphics.g4dn.8xlarge   stream.graphics.g4dn.12xlarge   stream.graphics.g4dn.16xlarge   stream.graphics-pro.4xlarge   stream.graphics-pro.8xlarge   stream.graphics-pro.16xlarge  
+    * The instance type to use when launching fleet instances. The following instance types are available:   stream.standard.small   stream.standard.medium   stream.standard.large   stream.compute.large   stream.compute.xlarge   stream.compute.2xlarge   stream.compute.4xlarge   stream.compute.8xlarge   stream.memory.large   stream.memory.xlarge   stream.memory.2xlarge   stream.memory.4xlarge   stream.memory.8xlarge   stream.memory.z1d.large   stream.memory.z1d.xlarge   stream.memory.z1d.2xlarge   stream.memory.z1d.3xlarge   stream.memory.z1d.6xlarge   stream.memory.z1d.12xlarge   stream.graphics-design.large   stream.graphics-design.xlarge   stream.graphics-design.2xlarge   stream.graphics-design.4xlarge   stream.graphics-desktop.2xlarge   stream.graphics.g4dn.xlarge   stream.graphics.g4dn.2xlarge   stream.graphics.g4dn.4xlarge   stream.graphics.g4dn.8xlarge   stream.graphics.g4dn.12xlarge   stream.graphics.g4dn.16xlarge   stream.graphics-pro.4xlarge   stream.graphics-pro.8xlarge   stream.graphics-pro.16xlarge  
     */
   var InstanceType: String
+  
+  /**
+    * The maximum number of concurrent sessions for the fleet.
+    */
+  var MaxConcurrentSessions: js.UndefOr[Integer] = js.undefined
   
   /**
     * The maximum amount of time that a streaming session can remain active, in seconds. If users are still connected to a streaming instance five minutes before this limit is reached, they are prompted to save any open documents before being disconnected. After this time elapses, the instance is terminated and replaced by a new instance.  Specify a value between 600 and 360000.
@@ -92,6 +97,16 @@ trait Fleet extends StObject {
   var Name: String
   
   /**
+    * The platform of the fleet.
+    */
+  var Platform: js.UndefOr[PlatformType] = js.undefined
+  
+  /**
+    * The S3 location of the session scripts configuration zip file. This only applies to Elastic fleets.
+    */
+  var SessionScriptS3Location: js.UndefOr[S3Location] = js.undefined
+  
+  /**
     * The current state for the fleet.
     */
   var State: FleetState
@@ -100,6 +115,11 @@ trait Fleet extends StObject {
     * The AppStream 2.0 view that is displayed to your users when they stream from the fleet. When APP is specified, only the windows of applications opened by users display. When DESKTOP is specified, the standard desktop that is provided by the operating system displays. The default value is APP.
     */
   var StreamView: js.UndefOr[typings.awsSdk.appstreamMod.StreamView] = js.undefined
+  
+  /**
+    * The USB device filter strings associated with the fleet.
+    */
+  var UsbDeviceFilterStrings: js.UndefOr[typings.awsSdk.appstreamMod.UsbDeviceFilterStrings] = js.undefined
   
   /**
     * The VPC configuration for the fleet.
@@ -125,7 +145,7 @@ object Fleet {
     
     inline def setComputeCapacityStatus(value: ComputeCapacityStatus): Self = StObject.set(x, "ComputeCapacityStatus", value.asInstanceOf[js.Any])
     
-    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -153,7 +173,7 @@ object Fleet {
     
     inline def setFleetErrorsUndefined: Self = StObject.set(x, "FleetErrors", js.undefined)
     
-    inline def setFleetErrorsVarargs(value: FleetError*): Self = StObject.set(x, "FleetErrors", js.Array(value :_*))
+    inline def setFleetErrorsVarargs(value: FleetError*): Self = StObject.set(x, "FleetErrors", js.Array(value*))
     
     inline def setFleetType(value: FleetType): Self = StObject.set(x, "FleetType", value.asInstanceOf[js.Any])
     
@@ -177,17 +197,35 @@ object Fleet {
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
+    inline def setMaxConcurrentSessions(value: Integer): Self = StObject.set(x, "MaxConcurrentSessions", value.asInstanceOf[js.Any])
+    
+    inline def setMaxConcurrentSessionsUndefined: Self = StObject.set(x, "MaxConcurrentSessions", js.undefined)
+    
     inline def setMaxUserDurationInSeconds(value: Integer): Self = StObject.set(x, "MaxUserDurationInSeconds", value.asInstanceOf[js.Any])
     
     inline def setMaxUserDurationInSecondsUndefined: Self = StObject.set(x, "MaxUserDurationInSeconds", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
+    inline def setPlatform(value: PlatformType): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    
+    inline def setSessionScriptS3Location(value: S3Location): Self = StObject.set(x, "SessionScriptS3Location", value.asInstanceOf[js.Any])
+    
+    inline def setSessionScriptS3LocationUndefined: Self = StObject.set(x, "SessionScriptS3Location", js.undefined)
+    
     inline def setState(value: FleetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     inline def setStreamView(value: StreamView): Self = StObject.set(x, "StreamView", value.asInstanceOf[js.Any])
     
     inline def setStreamViewUndefined: Self = StObject.set(x, "StreamView", js.undefined)
+    
+    inline def setUsbDeviceFilterStrings(value: UsbDeviceFilterStrings): Self = StObject.set(x, "UsbDeviceFilterStrings", value.asInstanceOf[js.Any])
+    
+    inline def setUsbDeviceFilterStringsUndefined: Self = StObject.set(x, "UsbDeviceFilterStrings", js.undefined)
+    
+    inline def setUsbDeviceFilterStringsVarargs(value: UsbDeviceFilterString*): Self = StObject.set(x, "UsbDeviceFilterStrings", js.Array(value*))
     
     inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     

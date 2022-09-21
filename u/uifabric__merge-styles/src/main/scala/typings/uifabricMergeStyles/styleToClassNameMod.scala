@@ -18,9 +18,9 @@ object styleToClassNameMod {
   
   inline def serializeRuleEntries(options: IStyleOptions, ruleEntries: StringDictionary[String | Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeRuleEntries")(options.asInstanceOf[js.Any], ruleEntries.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def styleToClassName(options: IStyleOptions, args: IStyle*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("styleToClassName")(options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def styleToClassName(options: IStyleOptions, args: IStyle*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToClassName")(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
-  inline def styleToRegistration(options: IStyleOptions, args: IStyle*): js.UndefOr[IRegistration] = (^.asInstanceOf[js.Dynamic].applyDynamic("styleToRegistration")(options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[IRegistration]]
+  inline def styleToRegistration(options: IStyleOptions, args: IStyle*): js.UndefOr[IRegistration] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToRegistration")(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.UndefOr[IRegistration]]
   
   trait IRegistration extends StObject {
     
@@ -43,7 +43,7 @@ object styleToClassNameMod {
       
       inline def setArgs(value: js.Array[IStyle]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: IStyle*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: IStyle*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -51,7 +51,7 @@ object styleToClassNameMod {
       
       inline def setRulesToInsert(value: js.Array[String]): Self = StObject.set(x, "rulesToInsert", value.asInstanceOf[js.Any])
       
-      inline def setRulesToInsertVarargs(value: String*): Self = StObject.set(x, "rulesToInsert", js.Array(value :_*))
+      inline def setRulesToInsertVarargs(value: String*): Self = StObject.set(x, "rulesToInsert", js.Array(value*))
     }
   }
 }

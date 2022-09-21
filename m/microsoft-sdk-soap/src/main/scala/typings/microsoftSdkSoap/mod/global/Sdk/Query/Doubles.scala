@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.Query.Doubles")
 @js.native
-class Doubles protected () extends ValueBase {
+open class Doubles protected () extends ValueBase {
   def this(args: js.Array[Double]) = this()
   
   /**

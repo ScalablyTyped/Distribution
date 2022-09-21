@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Symbols")
 @js.native
-class Symbols protected ()
-  extends Component[SymbolsProps, js.Object, js.Any] {
+open class Symbols protected ()
+  extends Component[SymbolsProps, js.Object, Any] {
   def this(props: SymbolsProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SymbolsProps, context: js.Any) = this()
+  def this(props: SymbolsProps, context: Any) = this()
 }

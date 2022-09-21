@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.PageSetup")
 @js.native
-/* private */ class PageSetup ()
+/* private */ open class PageSetup ()
   extends StObject
      with typings.activexWord.Word.PageSetup {
   
@@ -98,7 +98,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PaperSize: WdPaperSize = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var RightMargin: Double = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdvancedCapturedPhoto extends StObject {
   
   /** Gets the app-defined context object associated with the advanced photo capture operation, if one was provided in the call to AdvancedPhotoCapture::CaptureAsync(Object) . */
-  var context: js.Any
+  var context: Any
   
   /** Gets the captured frame containing the result of the advanced photo capture. */
   var frame: CapturedFrame
@@ -19,14 +19,14 @@ trait AdvancedCapturedPhoto extends StObject {
 }
 object AdvancedCapturedPhoto {
   
-  inline def apply(context: js.Any, frame: CapturedFrame, mode: AdvancedPhotoMode): AdvancedCapturedPhoto = {
+  inline def apply(context: Any, frame: CapturedFrame, mode: AdvancedPhotoMode): AdvancedCapturedPhoto = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvancedCapturedPhoto]
   }
   
   extension [Self <: AdvancedCapturedPhoto](x: Self) {
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

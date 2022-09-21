@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response to create a short Dynamic Link.
-  */
 trait SchemaCreateManagedShortLinkResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaCreateManagedShortLinkResponse extends StObject {
   /**
     * Preview link to show the link flow chart. (debug info.)
     */
-  var previewLink: js.UndefOr[String] = js.undefined
+  var previewLink: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Information about potential warnings on link creation.
@@ -39,12 +36,14 @@ object SchemaCreateManagedShortLinkResponse {
     
     inline def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
     
+    inline def setPreviewLinkNull: Self = StObject.set(x, "previewLink", null)
+    
     inline def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
     
     inline def setWarning(value: js.Array[SchemaDynamicLinkWarning]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
-    inline def setWarningVarargs(value: SchemaDynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value :_*))
+    inline def setWarningVarargs(value: SchemaDynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value*))
   }
 }

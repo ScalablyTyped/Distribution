@@ -10,15 +10,15 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    var attribute: js.UndefOr[js.Any] = js.undefined
+    var attribute: js.UndefOr[Any] = js.undefined
     
-    var bound: js.UndefOr[js.Any] = js.undefined
+    var bound: js.UndefOr[Any] = js.undefined
     
-    var expression: js.UndefOr[js.Any] = js.undefined
+    var expression: js.UndefOr[Any] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object Dictkey {
     
@@ -29,19 +29,19 @@ object anon {
     
     extension [Self <: Dictkey](x: Self) {
       
-      inline def setAttribute(value: js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
       inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      inline def setBound(value: js.Any): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
+      inline def setBound(value: Any): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
       
       inline def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
       
-      inline def setExpression(value: js.Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
       inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1`
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`2`
 import org.scalablytyped.runtime.StObject
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnHCEMessageCallbackResult extends StObject {
   
   /** `messageType=1` 时 ,客户端接收到 NFC 设备的指令 */
-  var data: ArrayBuffer
+  var data: js.typedarray.ArrayBuffer
   
   /** 消息类型
     *
@@ -24,14 +23,14 @@ trait OnHCEMessageCallbackResult extends StObject {
 }
 object OnHCEMessageCallbackResult {
   
-  inline def apply(data: ArrayBuffer, messageType: `1` | `2`, reason: Double): OnHCEMessageCallbackResult = {
+  inline def apply(data: js.typedarray.ArrayBuffer, messageType: `1` | `2`, reason: Double): OnHCEMessageCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnHCEMessageCallbackResult]
   }
   
   extension [Self <: OnHCEMessageCallbackResult](x: Self) {
     
-    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setMessageType(value: `1` | `2`): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     

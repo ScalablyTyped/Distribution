@@ -11,7 +11,7 @@ object readerMod {
   
   @JSImport("passport-saml-metadata/src/reader", "MetadataReader")
   @js.native
-  class MetadataReader protected () extends StObject {
+  open class MetadataReader protected () extends StObject {
     def this(metadata: String) = this()
     def this(metadata: String, options: PartialMetadataConstructo) = this()
     

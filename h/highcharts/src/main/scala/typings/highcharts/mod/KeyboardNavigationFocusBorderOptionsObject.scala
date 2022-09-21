@@ -28,7 +28,7 @@ trait KeyboardNavigationFocusBorderOptionsObject extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Style options for the focus
     * border drawn around elements while navigating through them. Note that
     * some browsers in addition draw their own borders for focused elements.
-    * These automatic borders can not be styled by Highcharts.
+    * These automatic borders cannot be styled by Highcharts.
     *
     * In styled mode, the border is given the `.highcharts-focus-border` class.
     */

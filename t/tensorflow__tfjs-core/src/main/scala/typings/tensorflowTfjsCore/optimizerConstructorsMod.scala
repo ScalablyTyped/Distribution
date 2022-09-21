@@ -15,7 +15,7 @@ object optimizerConstructorsMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors")
   @js.native
-  class OptimizerConstructors () extends StObject
+  open class OptimizerConstructors () extends StObject
   /* static members */
   object OptimizerConstructors {
     

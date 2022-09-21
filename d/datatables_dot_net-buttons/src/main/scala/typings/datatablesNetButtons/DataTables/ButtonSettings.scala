@@ -25,6 +25,13 @@ trait ButtonSettings
     */
   var bom: js.UndefOr[Boolean] = js.undefined
   
+  //#endregion ColVis
+  //#region Buttons
+  /**
+    * List of buttons to be created
+    */
+  var buttons: js.UndefOr[js.Array[String | FunctionButtom | ButtonSettings]] = js.undefined
+  
   /**
     * CSV: charset
     */
@@ -40,7 +47,7 @@ trait ButtonSettings
   /**
     * COLVIS: Column selector
     */
-  var columns: js.UndefOr[js.Any] = js.undefined
+  var columns: js.UndefOr[Any] = js.undefined
   
   /**
     * COPY / CSV / EXCEL / PDF / PRINT: show header
@@ -147,6 +154,12 @@ object ButtonSettings {
     
     inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
     
+    inline def setButtons(value: js.Array[String | FunctionButtom | ButtonSettings]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setButtonsVarargs(value: (String | FunctionButtom | ButtonSettings)*): Self = StObject.set(x, "buttons", js.Array(value*))
+    
     inline def setCharset(value: String | Boolean): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
@@ -155,13 +168,13 @@ object ButtonSettings {
     
     inline def setColumnTextUndefined: Self = StObject.set(x, "columnText", js.undefined)
     
-    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     inline def setCustomize(value: /* win */ Window | String => Unit): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
     
-    inline def setCustomizeData(value: /* content */ js.Any => Unit): Self = StObject.set(x, "customizeData", js.Any.fromFunction1(value))
+    inline def setCustomizeData(value: /* content */ Any => Unit): Self = StObject.set(x, "customizeData", js.Any.fromFunction1(value))
     
     inline def setCustomizeDataUndefined: Self = StObject.set(x, "customizeData", js.undefined)
     

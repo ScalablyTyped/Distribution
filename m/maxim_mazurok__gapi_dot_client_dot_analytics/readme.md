@@ -11,9 +11,9 @@ TypeScript typings for Google Analytics API v3
 | Full name          | @maxim_mazurok/gapi.client.analytics |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 23 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4900.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

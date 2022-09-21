@@ -1,5 +1,6 @@
 package typings.gifencoder
 
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.std.CanvasRenderingContext2D
@@ -11,90 +12,59 @@ object mod {
   
   @JSImport("gifencoder", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with GIFEncoder {
     def this(width: Double, height: Double) = this()
-    
-    /* CompleteClass */
-    override def addFrame(ctx: CanvasRenderingContext2D): Unit = js.native
-    
-    /* CompleteClass */
-    override def createReadStream(): Readable = js.native
-    
-    /* CompleteClass */
-    override def createWriteStream(options: GIFOptions): Transform = js.native
-    
-    /* CompleteClass */
-    override def finish(): Unit = js.native
-    
-    /* CompleteClass */
-    override def setDelay(/** frame delay in ms */ delay: Double): Unit = js.native
-    
-    /* CompleteClass */
-    override def setQuality(/** image quality. 10 is default */ quality: Double): Unit = js.native
-    
-    /* CompleteClass */
-    override def setRepeat(/** 0 for repeat, -1 for no-repeat */
-    repeat: Double): Unit = js.native
-    
-    /* CompleteClass */
-    override def start(): Unit = js.native
   }
   
+  trait ByteArray extends StObject {
+    
+    var data: js.Array[Double]
+    
+    def getData(): Buffer
+  }
+  object ByteArray {
+    
+    inline def apply(data: js.Array[Double], getData: () => Buffer): ByteArray = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getData = js.Any.fromFunction0(getData))
+      __obj.asInstanceOf[ByteArray]
+    }
+    
+    extension [Self <: ByteArray](x: Self) {
+      
+      inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
+      
+      inline def setGetData(value: () => Buffer): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    }
+  }
+  
+  @js.native
   trait GIFEncoder extends StObject {
     
-    def addFrame(ctx: CanvasRenderingContext2D): Unit
+    def addFrame(ctx: CanvasRenderingContext2D): Unit = js.native
     
-    def createReadStream(): Readable
+    def createReadStream(): Readable = js.native
     
-    def createWriteStream(options: GIFOptions): Transform
+    def createWriteStream(options: GIFOptions): Transform = js.native
     
-    def finish(): Unit
+    def finish(): Unit = js.native
     
-    def setDelay(/** frame delay in ms */ delay: Double): Unit
+    var out: ByteArray = js.native
     
-    def setQuality(/** image quality. 10 is default */ quality: Double): Unit
+    def setDelay(/** frame delay in ms */ delay: Double): Unit = js.native
+    
+    def setQuality(/** image quality. 10 is default */ quality: Double): Unit = js.native
     
     def setRepeat(/** 0 for repeat, -1 for no-repeat */
-    repeat: Double): Unit
+    repeat: Double): Unit = js.native
     
-    def start(): Unit
-  }
-  object GIFEncoder {
+    def setTransparent(color: String): Unit = js.native
+    def setTransparent(color: Double): Unit = js.native
     
-    inline def apply(
-      addFrame: CanvasRenderingContext2D => Unit,
-      createReadStream: () => Readable,
-      createWriteStream: GIFOptions => Transform,
-      finish: () => Unit,
-      setDelay: Double => Unit,
-      setQuality: Double => Unit,
-      setRepeat: Double => Unit,
-      start: () => Unit
-    ): GIFEncoder = {
-      val __obj = js.Dynamic.literal(addFrame = js.Any.fromFunction1(addFrame), createReadStream = js.Any.fromFunction0(createReadStream), createWriteStream = js.Any.fromFunction1(createWriteStream), finish = js.Any.fromFunction0(finish), setDelay = js.Any.fromFunction1(setDelay), setQuality = js.Any.fromFunction1(setQuality), setRepeat = js.Any.fromFunction1(setRepeat), start = js.Any.fromFunction0(start))
-      __obj.asInstanceOf[GIFEncoder]
-    }
-    
-    extension [Self <: GIFEncoder](x: Self) {
-      
-      inline def setAddFrame(value: CanvasRenderingContext2D => Unit): Self = StObject.set(x, "addFrame", js.Any.fromFunction1(value))
-      
-      inline def setCreateReadStream(value: () => Readable): Self = StObject.set(x, "createReadStream", js.Any.fromFunction0(value))
-      
-      inline def setCreateWriteStream(value: GIFOptions => Transform): Self = StObject.set(x, "createWriteStream", js.Any.fromFunction1(value))
-      
-      inline def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
-      
-      inline def setSetDelay(value: Double => Unit): Self = StObject.set(x, "setDelay", js.Any.fromFunction1(value))
-      
-      inline def setSetQuality(value: Double => Unit): Self = StObject.set(x, "setQuality", js.Any.fromFunction1(value))
-      
-      inline def setSetRepeat(value: Double => Unit): Self = StObject.set(x, "setRepeat", js.Any.fromFunction1(value))
-      
-      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
-    }
+    def start(): Unit = js.native
   }
   
   trait GIFOptions extends StObject {

@@ -10,10 +10,10 @@ A Node.js toolkit for drawing nice command line tables, gauges, spinners, and sp
 | ------------------ | :-------------: |
 | Full name          | clui |
 | Keywords           | command line interface, CLI, sparkline, progress bar, spinner, gauge, line, console, buffer |
-| # releases         | 0 |
-| # dependents       | 954 |
-| # downloads        | 2580678 |
-| # stars            | 41 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 258929.66666666666 |
+| # stars            | 1595.0 |
 
 ## Links
 - [Homepage](https://github.com/nathanpeck/clui#readme)

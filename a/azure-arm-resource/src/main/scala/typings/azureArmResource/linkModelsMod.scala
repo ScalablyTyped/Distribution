@@ -10,12 +10,12 @@ object linkModelsMod {
   
   @JSImport("azure-arm-resource/lib/link/models", "BaseResource")
   @js.native
-  class BaseResource ()
+  open class BaseResource ()
     extends typings.msRestAzure.mod.BaseResource
   
   @JSImport("azure-arm-resource/lib/link/models", "CloudError")
   @js.native
-  class CloudError protected ()
+  open class CloudError protected ()
     extends typings.msRestAzure.mod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
@@ -133,7 +133,7 @@ object linkModelsMod {
     /**
       * The resource link object.
       */
-    val `type`: js.UndefOr[js.Any] = js.native
+    val `type`: js.UndefOr[Any] = js.native
   }
   
   trait ResourceLinkFilter extends StObject {

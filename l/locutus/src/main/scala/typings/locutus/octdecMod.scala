@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object octdecMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(octString: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(octString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(octString: Any): Any = ^.asInstanceOf[js.Dynamic].apply(octString.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/math/octdec", JSImport.Namespace)
   @js.native

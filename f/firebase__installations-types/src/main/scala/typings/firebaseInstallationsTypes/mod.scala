@@ -44,18 +44,19 @@ object mod {
     
     trait NameServiceMapping extends StObject {
       
-      var installations: FirebaseInstallations
+      var `installations-compat`: FirebaseInstallations
     }
     object NameServiceMapping {
       
-      inline def apply(installations: FirebaseInstallations): NameServiceMapping = {
-        val __obj = js.Dynamic.literal(installations = installations.asInstanceOf[js.Any])
+      inline def apply(`installations-compat`: FirebaseInstallations): NameServiceMapping = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("installations-compat")(`installations-compat`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setInstallations(value: FirebaseInstallations): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
+        inline def `setInstallations-compat`(value: FirebaseInstallations): Self = StObject.set(x, "installations-compat", value.asInstanceOf[js.Any])
       }
     }
   }

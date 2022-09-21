@@ -10,10 +10,10 @@ Timing safe string compare using double HMAC
 | ------------------ | :-------------: |
 | Full name          | tsscmp |
 | Keywords           | timing safe string compare, double hmac string compare, safe string compare, hmac |
-| # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 57419789 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9083724.0 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/suryagh/tsscmp#readme)

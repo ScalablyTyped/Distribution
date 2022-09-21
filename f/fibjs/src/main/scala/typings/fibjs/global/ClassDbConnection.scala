@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_DbConnection")
 @js.native
-class ClassDbConnection ()
+open class ClassDbConnection ()
   extends StObject
      with typings.fibjs.ClassDbConnection

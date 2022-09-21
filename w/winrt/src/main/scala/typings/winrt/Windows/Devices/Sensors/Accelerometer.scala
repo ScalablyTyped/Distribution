@@ -12,8 +12,8 @@ object Accelerometer {
   inline def apply(
     getCurrentReading: () => AccelerometerReading,
     minimumReportInterval: Double,
-    onreadingchanged: js.Any,
-    onshaken: js.Any,
+    onreadingchanged: Any,
+    onshaken: Any,
     reportInterval: Double
   ): Accelerometer = {
     val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], onshaken = onshaken.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])

@@ -1,16 +1,17 @@
 package typings.koaJoiRouter
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.busboy.mod.BusboyConfig
 import typings.coBody.mod.Options
 import typings.joi.mod.Root
 import typings.joi.mod.SchemaLike
+import typings.joi.mod.ValidationOptions
 import typings.koaJoiRouter.koaJoiRouterStrings.form
 import typings.koaJoiRouter.koaJoiRouterStrings.json
 import typings.koaJoiRouter.koaJoiRouterStrings.multipart
 import typings.koaJoiRouter.mod.OutputValidation
 import typings.koaRouter.mod.IMiddleware
 import typings.koaRouter.mod.Router
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,9 +53,9 @@ object anon {
     
     var jsonOptions: js.UndefOr[Options] = js.undefined
     
-    var maxBody: js.UndefOr[Double] = js.undefined
+    var maxBody: js.UndefOr[Double | String] = js.undefined
     
-    var multipartOptions: js.UndefOr[Options] = js.undefined
+    var multipartOptions: js.UndefOr[BusboyConfig] = js.undefined
     
     var output: js.UndefOr[StringDictionary[OutputValidation]] = js.undefined
     
@@ -63,6 +64,8 @@ object anon {
     var query: js.UndefOr[SchemaLike] = js.undefined
     
     var `type`: js.UndefOr[form | json | multipart] = js.undefined
+    
+    var validateOptions: js.UndefOr[ValidationOptions] = js.undefined
   }
   object ContinueOnError {
     
@@ -101,11 +104,11 @@ object anon {
       
       inline def setJsonOptionsUndefined: Self = StObject.set(x, "jsonOptions", js.undefined)
       
-      inline def setMaxBody(value: Double): Self = StObject.set(x, "maxBody", value.asInstanceOf[js.Any])
+      inline def setMaxBody(value: Double | String): Self = StObject.set(x, "maxBody", value.asInstanceOf[js.Any])
       
       inline def setMaxBodyUndefined: Self = StObject.set(x, "maxBody", js.undefined)
       
-      inline def setMultipartOptions(value: Options): Self = StObject.set(x, "multipartOptions", value.asInstanceOf[js.Any])
+      inline def setMultipartOptions(value: BusboyConfig): Self = StObject.set(x, "multipartOptions", value.asInstanceOf[js.Any])
       
       inline def setMultipartOptionsUndefined: Self = StObject.set(x, "multipartOptions", js.undefined)
       
@@ -128,16 +131,20 @@ object anon {
       inline def setType(value: form | json | multipart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setValidateOptions(value: ValidationOptions): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
+      
+      inline def setValidateOptionsUndefined: Self = StObject.set(x, "validateOptions", js.undefined)
     }
   }
   
   @js.native
   trait FnCall extends StObject {
     
-    def apply(middleware: (IMiddleware[js.Any, js.Object])*): Router[js.Any, js.Object] = js.native
-    def apply(path: String, middleware: (IMiddleware[js.Any, js.Object])*): Router[js.Any, js.Object] = js.native
-    def apply(path: js.Array[String], middleware: (IMiddleware[js.Any, js.Object])*): Router[js.Any, js.Object] = js.native
-    def apply(path: RegExp, middleware: (IMiddleware[js.Any, js.Object])*): Router[js.Any, js.Object] = js.native
+    def apply(middleware: (IMiddleware[Any, js.Object])*): Router[Any, js.Object] = js.native
+    def apply(path: String, middleware: (IMiddleware[Any, js.Object])*): Router[Any, js.Object] = js.native
+    def apply(path: js.Array[String], middleware: (IMiddleware[Any, js.Object])*): Router[Any, js.Object] = js.native
+    def apply(path: js.RegExp, middleware: (IMiddleware[Any, js.Object])*): Router[Any, js.Object] = js.native
   }
   
   trait Headers

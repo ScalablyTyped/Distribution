@@ -1,20 +1,35 @@
 package typings.reactNativeElements.anon
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import org.scalablytyped.runtime.Instantiable1
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.RecursivePartial
-import typings.reactNativeElements.mod.SocialMediaType
+import typings.reactNativeElements.reactNativeElementsStrings.Component
+import typings.reactNativeElements.socialIconMod.SocialMediaType
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.SocialIconProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/social/SocialIcon.SocialIconProps>> */
 trait RecursivePartialPartialSo extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
+  var Component: js.UndefOr[
+    RecursivePartial[
+      js.UndefOr[
+        TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          typings.react.mod.Component[
+            typings.reactNativeElements.reactNativeElementsStrings.Component, 
+            js.Object, 
+            js.Object
+          ]
+        ])
+      ]
+    ]
+  ] = js.undefined
+  
+  var activityIndicatorStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
   var button: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -32,6 +47,8 @@ trait RecursivePartialPartialSo extends StObject {
   
   var iconStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
+  var iconType: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  
   var light: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var loading: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
@@ -41,6 +58,8 @@ trait RecursivePartialPartialSo extends StObject {
   var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var raised: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
+  
+  var small: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
   var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
@@ -59,11 +78,24 @@ object RecursivePartialPartialSo {
   
   extension [Self <: RecursivePartialPartialSo](x: Self) {
     
+    inline def setActivityIndicatorStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "activityIndicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def setActivityIndicatorStyleUndefined: Self = StObject.set(x, "activityIndicatorStyle", js.undefined)
+    
     inline def setButton(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    inline def setComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(
+      value: RecursivePartial[
+          js.UndefOr[
+            TypeofComponent & (Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+              typings.react.mod.Component[Component, js.Object, js.Object]
+            ])
+          ]
+        ]
+    ): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
@@ -95,6 +127,10 @@ object RecursivePartialPartialSo {
     
     inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
     
+    inline def setIconType(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
+    
+    inline def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
+    
     inline def setLight(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
@@ -114,6 +150,10 @@ object RecursivePartialPartialSo {
     inline def setRaised(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     
     inline def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
+    
+    inline def setSmall(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    
+    inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     
     inline def setStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

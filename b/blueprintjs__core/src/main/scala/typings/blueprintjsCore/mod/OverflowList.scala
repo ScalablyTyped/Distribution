@@ -1,22 +1,22 @@
 package typings.blueprintjsCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.blueprintjsCore.anon.PartialIOverflowListPropsClassName
-import typings.blueprintjsCore.overflowListMod.IOverflowListProps
+import typings.blueprintjsCore.anon.PartialOverflowListPropsa
+import typings.blueprintjsCore.overflowListMod.OverflowListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "OverflowList")
 @js.native
-class OverflowList[T] protected ()
+open class OverflowList[T] protected ()
   extends typings.blueprintjsCore.componentsMod.OverflowList[T] {
-  def this(props: IOverflowListProps[T]) = this()
+  def this(props: OverflowListProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IOverflowListProps[T], context: js.Any) = this()
+  def this(props: OverflowListProps[T], context: Any) = this()
 }
 /* static members */
 object OverflowList {
@@ -27,8 +27,8 @@ object OverflowList {
   
   @JSImport("@blueprintjs/core", "OverflowList.defaultProps")
   @js.native
-  def defaultProps: PartialIOverflowListPropsClassName = js.native
-  inline def defaultProps_=(x: PartialIOverflowListPropsClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: PartialOverflowListPropsa = js.native
+  inline def defaultProps_=(x: PartialOverflowListPropsa): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "OverflowList.displayName")
   @js.native
@@ -36,10 +36,10 @@ object OverflowList {
   inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
   inline def ofType[U](): Instantiable1[
-    /* props */ IOverflowListProps[U], 
+    /* props */ OverflowListProps[U], 
     typings.blueprintjsCore.overflowListMod.OverflowList[U]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
-    /* props */ IOverflowListProps[U], 
+    /* props */ OverflowListProps[U], 
     typings.blueprintjsCore.overflowListMod.OverflowList[U]
   ]]
 }

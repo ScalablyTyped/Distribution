@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-docker" : "2.1.1"
+      "is-docker" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-docker" : "2.1.1"
+      "is-docker" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

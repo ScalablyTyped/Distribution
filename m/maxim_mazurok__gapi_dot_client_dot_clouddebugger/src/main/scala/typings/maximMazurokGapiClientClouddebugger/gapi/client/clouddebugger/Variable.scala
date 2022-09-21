@@ -49,7 +49,7 @@ object Variable {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: Variable*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Variable*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

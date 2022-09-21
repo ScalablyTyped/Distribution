@@ -9,9 +9,10 @@ import typings.react.mod.DragEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.std.FileList
+import typings.std.File
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,16 +21,16 @@ object ajaxUploaderMod {
   
   @JSImport("rc-upload/es/AjaxUploader", JSImport.Default)
   @js.native
-  class default () extends AjaxUploader
+  open class default () extends AjaxUploader
   
   @js.native
   trait AjaxUploader
-    extends Component[UploadProps, js.Object, js.Any] {
+    extends Component[UploadProps, js.Object, Any] {
     
-    /* private */ var _isMounted: js.Any = js.native
+    /* private */ var _isMounted: Any = js.native
     
     def abort(): Unit = js.native
-    def abort(file: js.Any): Unit = js.native
+    def abort(file: Any): Unit = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MAjaxUploader(): Unit = js.native
@@ -37,7 +38,7 @@ object ajaxUploaderMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MAjaxUploader(): Unit = js.native
     
-    /* private */ var fileInput: js.Any = js.native
+    /* private */ var fileInput: Any = js.native
     
     def onChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
     
@@ -48,9 +49,14 @@ object ajaxUploaderMod {
     
     def onKeyDown(e: KeyboardEvent[HTMLDivElement]): Unit = js.native
     
-    def post(file: RcFile): Unit = js.native
+    def post(hasDataOriginActionParsedFile: ParsedFileInfo): Unit = js.native
     
-    var reqs: js.Any = js.native
+    /**
+      * Process file before upload. When all the file is ready, we start upload.
+      */
+    def processFile(file: RcFile, fileList: js.Array[RcFile]): js.Promise[ParsedFileInfo] = js.native
+    
+    var reqs: Any = js.native
     
     def reset(): Unit = js.native
     
@@ -59,8 +65,35 @@ object ajaxUploaderMod {
     @JSName("state")
     var state_AjaxUploader: Uid = js.native
     
-    def upload(file: RcFile, fileList: js.Array[RcFile]): Unit = js.native
+    def uploadFiles(files: js.Array[File]): Unit = js.native
+  }
+  
+  trait ParsedFileInfo extends StObject {
     
-    def uploadFiles(files: FileList): Unit = js.native
+    var action: String
+    
+    var data: Record[String, Any]
+    
+    var origin: RcFile
+    
+    var parsedFile: RcFile
+  }
+  object ParsedFileInfo {
+    
+    inline def apply(action: String, data: Record[String, Any], origin: RcFile, parsedFile: RcFile): ParsedFileInfo = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], parsedFile = parsedFile.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParsedFileInfo]
+    }
+    
+    extension [Self <: ParsedFileInfo](x: Self) {
+      
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setOrigin(value: RcFile): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setParsedFile(value: RcFile): Self = StObject.set(x, "parsedFile", value.asInstanceOf[js.Any])
+    }
   }
 }

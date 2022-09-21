@@ -16,9 +16,9 @@ object renderControllerMod {
   val ^ : js.Any = js.native
   
   /* keyof plottable.anon.AnimationFrame */ /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.timeout
     - typings.plottable.plottableStrings.immediate
     - typings.plottable.plottableStrings.animationFrame
-    - typings.plottable.plottableStrings.timeout
   */
   trait Policy extends StObject
   object Policy {

@@ -9,12 +9,12 @@ trait SlotStartTimeRangeRequest extends StObject {
   /**
     * The earliest date and time, in UTC, for the Scheduled Instance to start.
     */
-  var EarliestTime: js.UndefOr[DateTime] = js.undefined
+  var EarliestTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The latest date and time, in UTC, for the Scheduled Instance to start.
     */
-  var LatestTime: js.UndefOr[DateTime] = js.undefined
+  var LatestTime: js.UndefOr[js.Date] = js.undefined
 }
 object SlotStartTimeRangeRequest {
   
@@ -25,11 +25,11 @@ object SlotStartTimeRangeRequest {
   
   extension [Self <: SlotStartTimeRangeRequest](x: Self) {
     
-    inline def setEarliestTime(value: DateTime): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
+    inline def setEarliestTime(value: js.Date): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
     
     inline def setEarliestTimeUndefined: Self = StObject.set(x, "EarliestTime", js.undefined)
     
-    inline def setLatestTime(value: DateTime): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
+    inline def setLatestTime(value: js.Date): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
     
     inline def setLatestTimeUndefined: Self = StObject.set(x, "LatestTime", js.undefined)
   }

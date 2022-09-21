@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("mongodb-uri", "MongodbUriParser")
   @js.native
-  class MongodbUriParser () extends StObject {
+  open class MongodbUriParser () extends StObject {
     def this(options: parserOptions) = this()
     
     /**
@@ -85,7 +85,7 @@ object mod {
     
     var hosts: js.Array[Host]
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     var password: js.UndefOr[String] = js.undefined
     
@@ -108,9 +108,9 @@ object mod {
       
       inline def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value*))
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       

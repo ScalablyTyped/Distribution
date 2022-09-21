@@ -24,7 +24,7 @@ object anon {
       
       inline def setChildren(value: js.Array[IVirtualElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: IVirtualElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: IVirtualElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setParent(value: IVirtualElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       

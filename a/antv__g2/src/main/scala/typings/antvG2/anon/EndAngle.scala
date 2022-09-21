@@ -6,49 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EndAngle extends StObject {
   
-  /**
-    * 极坐标的结束角度，单位为弧度
-    */
-  var endAngle: js.UndefOr[Double] = js.undefined
+  var endAngle: Any
   
-  /**
-    * 空心圆的半径，值范围为 0 至 1
-    */
-  var innerRadius: js.UndefOr[Double] = js.undefined
+  var innerRadius: Double
   
-  /**
-    * 设置半径，值范围为 0 至 1
-    */
-  var radius: js.UndefOr[Double] = js.undefined
+  var radius: Double
   
-  /**
-    * 极坐标的起始角度，单位为弧度
-    */
-  var startAngle: js.UndefOr[Double] = js.undefined
+  var startAngle: Any
 }
 object EndAngle {
   
-  inline def apply(): EndAngle = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(endAngle: Any, innerRadius: Double, radius: Double, startAngle: Any): EndAngle = {
+    val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndAngle]
   }
   
   extension [Self <: EndAngle](x: Self) {
     
-    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
-    
-    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngle(value: Any): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
-    inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
-    
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
-    
-    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
-    
-    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngle(value: Any): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
   }
 }

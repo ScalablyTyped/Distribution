@@ -1,0 +1,13 @@
+package typings.webpack.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait RawSource
+  extends StObject
+     with Source {
+  
+  def isBuffer(): Boolean = js.native
+}

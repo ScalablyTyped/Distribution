@@ -11,5 +11,5 @@ object titleMod {
   
   @JSImport("rbx/elements/title", "Title")
   @js.native
-  val Title: ForwardRefAsExoticComponent[TitleProps, ElementType[js.Any]] = js.native
+  val Title: ForwardRefAsExoticComponent[TitleProps, ElementType[Any]] = js.native
 }

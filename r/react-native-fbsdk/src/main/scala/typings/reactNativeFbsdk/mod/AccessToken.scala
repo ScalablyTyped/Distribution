@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fbsdk", "AccessToken")
 @js.native
-class AccessToken protected () extends StObject {
+open class AccessToken protected () extends StObject {
   def this(tokenMap: AccessTokenMap) = this()
   
   /**
@@ -40,6 +40,8 @@ class AccessToken protected () extends StObject {
     * Gets the ID of the Facebook Application associated with this access token.
     */
   def getApplicationId(): String = js.native
+  
+  def getDataAccessExpiration(): Double = js.native
   
   /**
     * Gets the list of permissions declined by the user with this access token. It represents the
@@ -108,7 +110,7 @@ object AccessToken {
     * Updates the current access token with up to date permissions,
     * and extends the expiration date, if extension is possible.
     */
-  inline def refreshCurrentAccessTokenAsync(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCurrentAccessTokenAsync")().asInstanceOf[js.Promise[js.Any]]
+  inline def refreshCurrentAccessTokenAsync(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCurrentAccessTokenAsync")().asInstanceOf[js.Promise[Any]]
   
   /**
     * Setter for the access token that is current for the application.

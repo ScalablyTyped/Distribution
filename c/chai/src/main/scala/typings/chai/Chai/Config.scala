@@ -50,7 +50,7 @@ object Config {
     
     inline def setProxyExcludedKeys(value: js.Array[String]): Self = StObject.set(x, "proxyExcludedKeys", value.asInstanceOf[js.Any])
     
-    inline def setProxyExcludedKeysVarargs(value: String*): Self = StObject.set(x, "proxyExcludedKeys", js.Array(value :_*))
+    inline def setProxyExcludedKeysVarargs(value: String*): Self = StObject.set(x, "proxyExcludedKeys", js.Array(value*))
     
     inline def setShowDiff(value: Boolean): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
     

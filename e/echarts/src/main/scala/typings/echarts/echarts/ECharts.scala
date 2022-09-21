@@ -41,9 +41,9 @@ trait ECharts extends StObject {
     * @param {string | any[]} value The value to be judged, in pixel
     *     coordinate system.
     */
-  def containPixel(finder: EChartsConvertFinder, value: js.Array[js.Any]): Boolean = js.native
+  def containPixel(finder: EChartsConvertFinder, value: js.Array[Any]): Boolean = js.native
   
-  def convertFromPixel(finder: EChartsConvertFinder, value: String): js.Array[js.Any] | String = js.native
+  def convertFromPixel(finder: EChartsConvertFinder, value: String): js.Array[Any] | String = js.native
   /**
     * Convert a point from pixel coordinate to logical coordinate
     *     (e.g., in geo, cartesian, graph, ...).
@@ -54,7 +54,7 @@ trait ECharts extends StObject {
     *     coordinate system.
     * @param {string | any[]} value The value to be converted.
     */
-  def convertFromPixel(finder: EChartsConvertFinder, value: js.Array[js.Any]): js.Array[js.Any] | String = js.native
+  def convertFromPixel(finder: EChartsConvertFinder, value: js.Array[Any]): js.Array[Any] | String = js.native
   
   /**
     * Convert a point from logical coordinate (e.g., in geo, cartesian,
@@ -66,8 +66,8 @@ trait ECharts extends StObject {
     *     coordinate system.
     * @param {string | any[]} value The value to be converted.
     */
-  def convertToPixel(finder: EChartsConvertFinder, value: String): String | js.Array[js.Any] = js.native
-  def convertToPixel(finder: EChartsConvertFinder, value: js.Array[js.Any]): String | js.Array[js.Any] = js.native
+  def convertToPixel(finder: EChartsConvertFinder, value: String): String | js.Array[Any] = js.native
+  def convertToPixel(finder: EChartsConvertFinder, value: js.Array[Any]): String | js.Array[Any] = js.native
   
   /**
     * Triggers chart action, like chart switch `legendToggleSelect`,

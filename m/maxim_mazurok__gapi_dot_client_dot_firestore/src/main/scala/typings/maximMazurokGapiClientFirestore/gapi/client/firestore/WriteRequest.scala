@@ -11,7 +11,7 @@ trait WriteRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.WriteRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.WriteRequest & TopLevel[Any]
   ] = js.undefined
   
   /** The ID of the write stream to resume. This may only be set in the first message. When left empty, a new write stream will be created. */
@@ -43,7 +43,7 @@ object WriteRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.WriteRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.WriteRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -60,6 +60,6 @@ object WriteRequest {
     
     inline def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
     
-    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
+    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value*))
   }
 }

@@ -14,10 +14,10 @@ object mod {
   
   @JSImport("react-native-check-box", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CheckBoxProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CheckBoxProps, js.Object, Any]
   
-  type CheckBox = Component[CheckBoxProps, js.Object, js.Any]
+  type CheckBox = Component[CheckBoxProps, js.Object, Any]
   
   trait CheckBoxProps extends StObject {
     

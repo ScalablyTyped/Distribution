@@ -110,7 +110,7 @@ object anon {
       
       inline def setGenreNames(value: js.Array[String]): Self = StObject.set(x, "genreNames", value.asInstanceOf[js.Any])
       
-      inline def setGenreNamesVarargs(value: String*): Self = StObject.set(x, "genreNames", js.Array(value :_*))
+      inline def setGenreNamesVarargs(value: String*): Self = StObject.set(x, "genreNames", js.Array(value*))
       
       inline def setHasLyrics(value: Boolean): Self = StObject.set(x, "hasLyrics", value.asInstanceOf[js.Any])
       
@@ -136,7 +136,7 @@ object anon {
       
       inline def setPreviews(value: js.Array[Preview]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
       
-      inline def setPreviewsVarargs(value: Preview*): Self = StObject.set(x, "previews", js.Array(value :_*))
+      inline def setPreviewsVarargs(value: Preview*): Self = StObject.set(x, "previews", js.Array(value*))
       
       inline def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
       
@@ -234,7 +234,7 @@ object anon {
       
       inline def setGenreNames(value: js.Array[String]): Self = StObject.set(x, "genreNames", value.asInstanceOf[js.Any])
       
-      inline def setGenreNamesVarargs(value: String*): Self = StObject.set(x, "genreNames", js.Array(value :_*))
+      inline def setGenreNamesVarargs(value: String*): Self = StObject.set(x, "genreNames", js.Array(value*))
       
       inline def setIsCompilation(value: Boolean): Self = StObject.set(x, "isCompilation", value.asInstanceOf[js.Any])
       
@@ -390,7 +390,7 @@ object anon {
       
       inline def setGenreNames(value: js.Array[String]): Self = StObject.set(x, "genreNames", value.asInstanceOf[js.Any])
       
-      inline def setGenreNamesVarargs(value: String*): Self = StObject.set(x, "genreNames", js.Array(value :_*))
+      inline def setGenreNamesVarargs(value: String*): Self = StObject.set(x, "genreNames", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

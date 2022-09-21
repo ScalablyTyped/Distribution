@@ -36,7 +36,7 @@ trait QHeader extends StObject {
   
   def reverseOrder(): Unit
   
-  def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): js.Promise[js.Any]
+  def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): js.Promise[Any]
 }
 object QHeader {
   
@@ -48,7 +48,7 @@ object QHeader {
     qReverseSort: Boolean,
     qSortIndicator: A | B,
     reverseOrder: () => Unit,
-    selectRange: (Double, Double, Boolean, Boolean) => js.Promise[js.Any]
+    selectRange: (Double, Double, Boolean, Boolean) => js.Promise[Any]
   ): QHeader = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], isOrderedBy = isOrderedBy.asInstanceOf[js.Any], orderBy = js.Any.fromFunction0(orderBy), qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qReverseSort = qReverseSort.asInstanceOf[js.Any], qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = js.Any.fromFunction0(reverseOrder), selectRange = js.Any.fromFunction4(selectRange))
     __obj.asInstanceOf[QHeader]
@@ -94,6 +94,6 @@ object QHeader {
     
     inline def setReverseOrder(value: () => Unit): Self = StObject.set(x, "reverseOrder", js.Any.fromFunction0(value))
     
-    inline def setSelectRange(value: (Double, Double, Boolean, Boolean) => js.Promise[js.Any]): Self = StObject.set(x, "selectRange", js.Any.fromFunction4(value))
+    inline def setSelectRange(value: (Double, Double, Boolean, Boolean) => js.Promise[Any]): Self = StObject.set(x, "selectRange", js.Any.fromFunction4(value))
   }
 }

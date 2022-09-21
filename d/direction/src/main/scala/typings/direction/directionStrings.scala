@@ -1,6 +1,5 @@
 package typings.direction
 
-import typings.direction.mod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,20 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object directionStrings {
   
   @js.native
-  sealed trait ltr
-    extends StObject
-       with Direction
+  sealed trait ltr extends StObject
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait neutral
-    extends StObject
-       with Direction
+  sealed trait neutral extends StObject
   inline def neutral: neutral = "neutral".asInstanceOf[neutral]
   
   @js.native
-  sealed trait rtl
-    extends StObject
-       with Direction
+  sealed trait rtl extends StObject
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
 }

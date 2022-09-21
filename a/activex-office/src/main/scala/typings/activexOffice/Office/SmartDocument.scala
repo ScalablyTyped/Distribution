@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SmartDocument extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Creator: Double = js.native
   

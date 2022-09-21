@@ -13,10 +13,10 @@ object widgettrackerMod {
   
   @JSImport("@jupyterlab/apputils/lib/widgettracker", "WidgetTracker")
   @js.native
-  class WidgetTracker[T /* <: Widget */] protected ()
+  open class WidgetTracker[T /* <: Widget */] protected ()
     extends StObject
        with IWidgetTracker[T]
-       with IRestorable[T, js.Any] {
+       with IRestorable[T, Any] {
     /**
       * Create a new widget tracker.
       *
@@ -24,17 +24,17 @@ object widgettrackerMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: Any = js.native
     
-    /* private */ var _focusTracker: js.Any = js.native
+    /* private */ var _focusTracker: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _pool: js.Any = js.native
+    /* private */ var _pool: Any = js.native
     
-    /* private */ var _widgetAdded: js.Any = js.native
+    /* private */ var _widgetAdded: Any = js.native
     
-    /* private */ var _widgetUpdated: js.Any = js.native
+    /* private */ var _widgetUpdated: Any = js.native
     
     /**
       * Add a new widget to the tracker.
@@ -180,13 +180,13 @@ object widgettrackerMod {
       *
       */
     /* CompleteClass */
-    override def restore(options: typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[T]): js.Promise[js.Any] = js.native
+    override def restore(options: typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[T]): js.Promise[Any] = js.native
     
     /**
       * A promise that settles when the collection has been restored.
       */
     /* InferMemberOverrides */
-    override val restored: js.Promise[js.Any] & js.Promise[Unit] = js.native
+    override val restored: js.Promise[Any] & js.Promise[Unit] = js.native
     /**
       * A promise resolved when the tracker has been restored.
       */

@@ -86,9 +86,9 @@ object gcm {
     }
   }
   
-  type IGCMDataReceive = Record[String, js.Any]
+  type IGCMDataReceive = Record[String, Any]
   
-  type IGCMDataSend = Record[Exclude[DisallowedKeys, String], js.Any]
+  type IGCMDataSend = Record[Exclude[DisallowedKeys, String], Any]
   
   trait IncomingMessage extends StObject {
     

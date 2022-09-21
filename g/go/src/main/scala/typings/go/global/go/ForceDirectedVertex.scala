@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs a vertex that does not know about any Node.
   */
-class ForceDirectedVertex ()
+open class ForceDirectedVertex ()
   extends typings.go.mod.ForceDirectedVertex

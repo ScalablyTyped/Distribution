@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-ci
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Detect if the current environment is a CI server
@@ -10,10 +10,10 @@ Detect if the current environment is a CI server
 | ------------------ | :-------------: |
 | Full name          | is-ci |
 | Keywords           | ci, continuous, integration, test, detect |
-| # releases         | 0 |
-| # dependents       | 466 |
-| # downloads        | 703911159 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9.823417633333333E7 |
+| # stars            | 308.0 |
 
 ## Links
 - [Homepage](https://github.com/watson/is-ci)

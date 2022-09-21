@@ -21,22 +21,22 @@ trait XConstantTypeDescription
      with XTypeDescription {
   
   /** @returns the value of the constant.  Following types are allowed for constants: booleanbyteshortunsigned shortlongunsigned longhyperunsigned hyperfloatdouble */
-  val ConstantValue: js.Any
+  val ConstantValue: Any
   
   /** @returns the value of the constant.  Following types are allowed for constants: booleanbyteshortunsigned shortlongunsigned longhyperunsigned hyperfloatdouble */
-  def getConstantValue(): js.Any
+  def getConstantValue(): Any
 }
 object XConstantTypeDescription {
   
   inline def apply(
-    ConstantValue: js.Any,
+    ConstantValue: Any,
     Name: String,
     TypeClass: TypeClass,
     acquire: () => Unit,
-    getConstantValue: () => js.Any,
+    getConstantValue: () => Any,
     getName: () => String,
     getTypeClass: () => TypeClass,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XConstantTypeDescription = {
     val __obj = js.Dynamic.literal(ConstantValue = ConstantValue.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getConstantValue = js.Any.fromFunction0(getConstantValue), getName = js.Any.fromFunction0(getName), getTypeClass = js.Any.fromFunction0(getTypeClass), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -45,8 +45,8 @@ object XConstantTypeDescription {
   
   extension [Self <: XConstantTypeDescription](x: Self) {
     
-    inline def setConstantValue(value: js.Any): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
+    inline def setConstantValue(value: Any): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
     
-    inline def setGetConstantValue(value: () => js.Any): Self = StObject.set(x, "getConstantValue", js.Any.fromFunction0(value))
+    inline def setGetConstantValue(value: () => Any): Self = StObject.set(x, "getConstantValue", js.Any.fromFunction0(value))
   }
 }

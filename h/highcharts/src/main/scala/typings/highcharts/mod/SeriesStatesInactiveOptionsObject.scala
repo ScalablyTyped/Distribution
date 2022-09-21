@@ -24,7 +24,7 @@ trait SeriesStatesInactiveOptionsObject extends StObject {
   var linkOpacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) Opacity of inactive markers.
+    * (Highstock) Opacity of series elements (dataLabels, line, area).
     */
   var opacity: js.UndefOr[Double] = js.undefined
 }

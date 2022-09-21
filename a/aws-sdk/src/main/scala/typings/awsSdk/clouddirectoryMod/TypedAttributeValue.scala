@@ -19,7 +19,7 @@ trait TypedAttributeValue extends StObject {
   /**
     * A date and time value.
     */
-  var DatetimeValue: js.UndefOr[DatetimeAttributeValue] = js.undefined
+  var DatetimeValue: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A number data value.
@@ -48,7 +48,7 @@ object TypedAttributeValue {
     
     inline def setBooleanValueUndefined: Self = StObject.set(x, "BooleanValue", js.undefined)
     
-    inline def setDatetimeValue(value: DatetimeAttributeValue): Self = StObject.set(x, "DatetimeValue", value.asInstanceOf[js.Any])
+    inline def setDatetimeValue(value: js.Date): Self = StObject.set(x, "DatetimeValue", value.asInstanceOf[js.Any])
     
     inline def setDatetimeValueUndefined: Self = StObject.set(x, "DatetimeValue", js.undefined)
     

@@ -10,7 +10,7 @@ trait SuggestResult extends StObject {
   var peopleSuggestion: js.UndefOr[PeopleSuggestion] = js.undefined
   
   /** This field will be present if the suggested query is a word/phrase completion. */
-  var querySuggestion: js.UndefOr[js.Any] = js.undefined
+  var querySuggestion: js.UndefOr[Any] = js.undefined
   
   /** The source of the suggestion. */
   var source: js.UndefOr[Source] = js.undefined
@@ -31,7 +31,7 @@ object SuggestResult {
     
     inline def setPeopleSuggestionUndefined: Self = StObject.set(x, "peopleSuggestion", js.undefined)
     
-    inline def setQuerySuggestion(value: js.Any): Self = StObject.set(x, "querySuggestion", value.asInstanceOf[js.Any])
+    inline def setQuerySuggestion(value: Any): Self = StObject.set(x, "querySuggestion", value.asInstanceOf[js.Any])
     
     inline def setQuerySuggestionUndefined: Self = StObject.set(x, "querySuggestion", js.undefined)
     

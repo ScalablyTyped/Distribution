@@ -2,7 +2,6 @@ package typings.awsSdkClientXrayNode
 
 import typings.awsSdkClientXrayNode.typesSegmentMod.Segment
 import typings.awsSdkClientXrayNode.typesSegmentMod.UnmarshalledSegment
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object typesTraceMod {
     /**
       * <p>Segment documents for the segments and subsegments that comprise the trace.</p>
       */
-    var Segments: js.UndefOr[js.Array[Segment] | Iterable[Segment]] = js.undefined
+    var Segments: js.UndefOr[js.Array[Segment] | js.Iterable[Segment]] = js.undefined
   }
   object Trace {
     
@@ -43,11 +42,11 @@ object typesTraceMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      inline def setSegments(value: js.Array[Segment] | Iterable[Segment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: js.Array[Segment] | js.Iterable[Segment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
       
       inline def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
       
-      inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "Segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "Segments", js.Array(value*))
     }
   }
   
@@ -74,7 +73,7 @@ object typesTraceMod {
       
       inline def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
       
-      inline def setSegmentsVarargs(value: UnmarshalledSegment*): Self = StObject.set(x, "Segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: UnmarshalledSegment*): Self = StObject.set(x, "Segments", js.Array(value*))
     }
   }
 }

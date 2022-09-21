@@ -18,7 +18,7 @@ trait ILocaleService extends StObject {
   
   var id: String
   
-  def pluralCat(num: js.Any): String
+  def pluralCat(num: Any): String
 }
 object ILocaleService {
   
@@ -26,7 +26,7 @@ object ILocaleService {
     DATETIME_FORMATS: ILocaleDateTimeFormatDescriptor,
     NUMBER_FORMATS: ILocaleNumberFormatDescriptor,
     id: String,
-    pluralCat: js.Any => String
+    pluralCat: Any => String
   ): ILocaleService = {
     val __obj = js.Dynamic.literal(DATETIME_FORMATS = DATETIME_FORMATS.asInstanceOf[js.Any], NUMBER_FORMATS = NUMBER_FORMATS.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pluralCat = js.Any.fromFunction1(pluralCat))
     __obj.asInstanceOf[ILocaleService]
@@ -40,6 +40,6 @@ object ILocaleService {
     
     inline def setNUMBER_FORMATS(value: ILocaleNumberFormatDescriptor): Self = StObject.set(x, "NUMBER_FORMATS", value.asInstanceOf[js.Any])
     
-    inline def setPluralCat(value: js.Any => String): Self = StObject.set(x, "pluralCat", js.Any.fromFunction1(value))
+    inline def setPluralCat(value: Any => String): Self = StObject.set(x, "pluralCat", js.Any.fromFunction1(value))
   }
 }

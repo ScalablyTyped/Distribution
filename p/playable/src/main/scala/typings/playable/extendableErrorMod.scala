@@ -9,17 +9,19 @@ object extendableErrorMod {
   
   @JSImport("playable/dist/src/core/dependency-container/errors/ExtendableError", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  type ExtendableError = Error
+  type ExtendableError = js.Error
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.JSONPDataSource")
 @js.native
-class JSONPDataSource protected ()
+open class JSONPDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.JSONPDataSource {
   def this(settings: JSONPDataSourceSettings) = this()

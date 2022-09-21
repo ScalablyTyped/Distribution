@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_photo
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video
-  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_audio
-  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_audio
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_voice
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_voice
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_document
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.find_location
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video_note
@@ -21,15 +21,13 @@ object ChatAction {
   
   inline def find_location: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.find_location = "find_location".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.find_location]
   
-  inline def record_audio: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_audio = "record_audio".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_audio]
-  
   inline def record_video: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video = "record_video".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video]
   
   inline def record_video_note: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video_note = "record_video_note".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_video_note]
   
-  inline def typing: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.typing = "typing".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.typing]
+  inline def record_voice: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_voice = "record_voice".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.record_voice]
   
-  inline def upload_audio: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_audio = "upload_audio".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_audio]
+  inline def typing: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.typing = "typing".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.typing]
   
   inline def upload_document: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_document = "upload_document".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_document]
   
@@ -38,4 +36,6 @@ object ChatAction {
   inline def upload_video: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video = "upload_video".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video]
   
   inline def upload_video_note: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video_note = "upload_video_note".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_video_note]
+  
+  inline def upload_voice: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_voice = "upload_voice".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.upload_voice]
 }

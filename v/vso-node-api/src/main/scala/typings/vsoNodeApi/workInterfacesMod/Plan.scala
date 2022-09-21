@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait Plan extends StObject {
   /**
     * Date when the plan was created
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * Description of the plan
@@ -36,7 +35,7 @@ trait Plan extends StObject {
   /**
     * Date when the plan was last modified. Default to CreatedDate when the plan is first created.
     */
-  var modifiedDate: Date
+  var modifiedDate: js.Date
   
   /**
     * Name of the plan
@@ -46,7 +45,7 @@ trait Plan extends StObject {
   /**
     * The PlanPropertyCollection instance associated with the plan. These are dependent on the type of the plan. For example, DeliveryTimelineView, it would be of type DeliveryViewPropertyCollection.
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * Revision of the plan. Used to safeguard users from overwriting each other's changes.
@@ -72,13 +71,13 @@ object Plan {
   
   inline def apply(
     createdByIdentity: IdentityRef,
-    createdDate: Date,
+    createdDate: js.Date,
     description: String,
     id: String,
     modifiedByIdentity: IdentityRef,
-    modifiedDate: Date,
+    modifiedDate: js.Date,
     name: String,
-    properties: js.Any,
+    properties: Any,
     revision: Double,
     `type`: PlanType,
     url: String,
@@ -93,7 +92,7 @@ object Plan {
     
     inline def setCreatedByIdentity(value: IdentityRef): Self = StObject.set(x, "createdByIdentity", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -101,11 +100,11 @@ object Plan {
     
     inline def setModifiedByIdentity(value: IdentityRef): Self = StObject.set(x, "modifiedByIdentity", value.asInstanceOf[js.Any])
     
-    inline def setModifiedDate(value: Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: js.Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     

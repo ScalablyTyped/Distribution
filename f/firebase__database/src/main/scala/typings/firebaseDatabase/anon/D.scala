@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait D extends StObject {
   
-  var d: js.Any
+  var d: Any
   
   var seg: Double
   
@@ -14,14 +14,14 @@ trait D extends StObject {
 }
 object D {
   
-  inline def apply(d: js.Any, seg: Double, ts: Double): D = {
+  inline def apply(d: Any, seg: Double, ts: Double): D = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], seg = seg.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
     __obj.asInstanceOf[D]
   }
   
   extension [Self <: D](x: Self) {
     
-    inline def setD(value: js.Any): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: Any): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     inline def setSeg(value: Double): Self = StObject.set(x, "seg", value.asInstanceOf[js.Any])
     

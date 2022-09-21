@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IndentationNodeContext extends StObject {
   
-  /* private */ var _childIndentationAmountDelta: js.Any
+  /* private */ var _childIndentationAmountDelta: Any
   
-  /* private */ var _depth: js.Any
+  /* private */ var _depth: Any
   
-  /* private */ var _fullStart: js.Any
+  /* private */ var _fullStart: Any
   
-  /* private */ var _hasSkippedOrMissingTokenChild: js.Any
+  /* private */ var _hasSkippedOrMissingTokenChild: Any
   
-  /* private */ var _indentationAmount: js.Any
+  /* private */ var _indentationAmount: Any
   
-  /* private */ var _node: js.Any
+  /* private */ var _node: Any
   
-  /* private */ var _parent: js.Any
+  /* private */ var _parent: Any
   
   def childIndentationAmountDelta(): Double
   
@@ -57,13 +57,13 @@ trait IndentationNodeContext extends StObject {
 object IndentationNodeContext {
   
   inline def apply(
-    _childIndentationAmountDelta: js.Any,
-    _depth: js.Any,
-    _fullStart: js.Any,
-    _hasSkippedOrMissingTokenChild: js.Any,
-    _indentationAmount: js.Any,
-    _node: js.Any,
-    _parent: js.Any,
+    _childIndentationAmountDelta: Any,
+    _depth: Any,
+    _fullStart: Any,
+    _hasSkippedOrMissingTokenChild: Any,
+    _indentationAmount: Any,
+    _node: Any,
+    _parent: Any,
     childIndentationAmountDelta: () => Double,
     clone_ : IndentationNodeContextPool => IndentationNodeContext,
     depth: () => Double,
@@ -111,18 +111,18 @@ object IndentationNodeContext {
     
     inline def setUpdate(value: (IndentationNodeContext, SyntaxNode, Double, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
     
-    inline def set_childIndentationAmountDelta(value: js.Any): Self = StObject.set(x, "_childIndentationAmountDelta", value.asInstanceOf[js.Any])
+    inline def set_childIndentationAmountDelta(value: Any): Self = StObject.set(x, "_childIndentationAmountDelta", value.asInstanceOf[js.Any])
     
-    inline def set_depth(value: js.Any): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
+    inline def set_depth(value: Any): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
     
-    inline def set_fullStart(value: js.Any): Self = StObject.set(x, "_fullStart", value.asInstanceOf[js.Any])
+    inline def set_fullStart(value: Any): Self = StObject.set(x, "_fullStart", value.asInstanceOf[js.Any])
     
-    inline def set_hasSkippedOrMissingTokenChild(value: js.Any): Self = StObject.set(x, "_hasSkippedOrMissingTokenChild", value.asInstanceOf[js.Any])
+    inline def set_hasSkippedOrMissingTokenChild(value: Any): Self = StObject.set(x, "_hasSkippedOrMissingTokenChild", value.asInstanceOf[js.Any])
     
-    inline def set_indentationAmount(value: js.Any): Self = StObject.set(x, "_indentationAmount", value.asInstanceOf[js.Any])
+    inline def set_indentationAmount(value: Any): Self = StObject.set(x, "_indentationAmount", value.asInstanceOf[js.Any])
     
-    inline def set_node(value: js.Any): Self = StObject.set(x, "_node", value.asInstanceOf[js.Any])
+    inline def set_node(value: Any): Self = StObject.set(x, "_node", value.asInstanceOf[js.Any])
     
-    inline def set_parent(value: js.Any): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
+    inline def set_parent(value: Any): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
   }
 }

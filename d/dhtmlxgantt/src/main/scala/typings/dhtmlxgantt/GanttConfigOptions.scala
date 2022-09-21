@@ -1,6 +1,5 @@
 package typings.dhtmlxgantt
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,6 +62,11 @@ trait GanttConfigOptions extends StObject {
   var autosize_min_width: Double
   
   /**
+    * sets the height of task bars in the timeline area
+    */
+  var bar_height: Double
+  
+  /**
     * enables dynamic loading in the Gantt chart
     */
   var branch_loading: Boolean
@@ -75,12 +79,12 @@ trait GanttConfigOptions extends StObject {
   /**
     * stores a collection of buttons resided in the left bottom corner of the lightbox
     */
-  var buttons_left: js.Array[js.Any]
+  var buttons_left: js.Array[Any]
   
   /**
     * stores a collection of buttons resided in the right bottom corner of the lightbox
     */
-  var buttons_right: js.Array[js.Any]
+  var buttons_right: js.Array[Any]
   
   /**
     * changes the name of the property that affects binding of a calendar to a task/group of tasks
@@ -95,7 +99,7 @@ trait GanttConfigOptions extends StObject {
   /**
     * configures the columns of the table
     */
-  var columns: js.Array[js.Any]
+  var columns: js.Array[Any]
   
   /**
     * enables adjusting the task's start and end dates to the work time (while dragging)
@@ -135,7 +139,7 @@ trait GanttConfigOptions extends StObject {
   /**
     * stores the types of available drag-and-drop modes
     */
-  var drag_mode: js.Any
+  var drag_mode: Any
   
   /**
     * enables the possibility to move tasks by drag-and-drop
@@ -175,12 +179,12 @@ trait GanttConfigOptions extends StObject {
   /**
     * an object that contains definitions of inline editors
     */
-  var editor_types: js.Any
+  var editor_types: Any
   
   /**
     * sets the  end value of the time scale
     */
-  var end_date: Date
+  var end_date: js.Date
   
   /**
     * 'says' the Gantt chart to re-render the scale each time a task doesn't fit into the existing scale interval
@@ -245,12 +249,12 @@ trait GanttConfigOptions extends StObject {
   /**
     * specifies the layout object
     */
-  var layout: js.Any
+  var layout: Any
   
   /**
     * specifies the lightbox object
     */
-  var lightbox: js.Any
+  var lightbox: Any
   
   /**
     * increases the height of the lightbox
@@ -280,7 +284,7 @@ trait GanttConfigOptions extends StObject {
   /**
     * stores the types of links dependencies
     */
-  var links: js.Any
+  var links: Any
   
   /**
     * sets the minimum width for a column in the timeline area
@@ -345,7 +349,7 @@ trait GanttConfigOptions extends StObject {
   /**
     * stores a collection of buttons resided in the pop-up task's details form
     */
-  var quickinfo_buttons: js.Array[js.Any]
+  var quickinfo_buttons: js.Array[Any]
   
   /**
     * activates the read-only mode for the Gantt chart
@@ -363,9 +367,14 @@ trait GanttConfigOptions extends StObject {
   var redo: Boolean
   
   /**
+    * enables the possibility to reorder grid columns by drag and drop
+    */
+  var reorder_grid_columns: Boolean
+  
+  /**
     * defines a set of working calendars that can be assigned to a specific resource, e.g. a user
     */
-  var resource_calendars: js.Any
+  var resource_calendars: Any
   
   /**
     * defines the property of a task object that stores a resource id associated with resourceGrid/Timeline/Histogram
@@ -460,6 +469,11 @@ trait GanttConfigOptions extends StObject {
   /**
     * shows/hides markers on the page
     */
+  var show_marker: Boolean
+  
+  /**
+    * shows/hides markers on the page
+    */
   var show_markers: Boolean
   
   /**
@@ -476,6 +490,11 @@ trait GanttConfigOptions extends StObject {
     * enables/disables displaying column borders in the chart area
     */
   var show_task_cells: Boolean
+  
+  /**
+    * enables showing tasks that are outside the specified date range in the Gantt chart
+    */
+  var show_tasks_outside_timescale: Boolean
   
   /**
     * enables showing unscheduled tasks
@@ -505,7 +524,7 @@ trait GanttConfigOptions extends StObject {
   /**
     * sets the start value of the time scale
     */
-  var start_date: Date
+  var start_date: js.Date
   
   /**
     * sets the starting day of the week
@@ -525,7 +544,7 @@ trait GanttConfigOptions extends StObject {
   /**
     * specifies the second time scale(s)
     */
-  var subscales: js.Array[js.Any]
+  var subscales: js.Array[Any]
   
   /**
     * sets the name of the attribute that will specify the id of the task's HTML element
@@ -538,7 +557,7 @@ trait GanttConfigOptions extends StObject {
   var task_date: String
   
   /**
-    * sets the height of task bars in the timeline area
+    * @deprecated at `v7.1`, Please use `bar_height`
     */
   var task_height: Double
   
@@ -598,14 +617,19 @@ trait GanttConfigOptions extends StObject {
   var touch_feedback_duration: Double
   
   /**
+    * enabled touch tooltip
+    */
+  var touch_tooltip: Boolean
+  
+  /**
     * redefines functions responsible for displaying different types of tasks
     */
-  var type_renderers: js.Any
+  var type_renderers: Any
   
   /**
     * stores the names of lightbox's structures (used for different types of tasks)
     */
-  var types: js.Any
+  var types: Any
   
   /**
     * enables the Undo functionality for the gantt
@@ -615,7 +639,7 @@ trait GanttConfigOptions extends StObject {
   /**
     * sets the actions that the Undo operation will revert
     */
-  var undo_actions: js.Any
+  var undo_actions: Any
   
   /**
     * sets the number of steps that should be reverted by the undo method
@@ -625,7 +649,7 @@ trait GanttConfigOptions extends StObject {
   /**
     * sets the types of entities for which the Undo operation will be applied
     */
-  var undo_types: js.Any
+  var undo_types: Any
   
   /**
     * enables WAI-ARIA support to make the component recognizable for screen readers
@@ -656,13 +680,14 @@ object GanttConfigOptions {
     autoscroll_speed: Double,
     autosize: Boolean | String,
     autosize_min_width: Double,
+    bar_height: Double,
     branch_loading: Boolean,
     branch_loading_property: String,
-    buttons_left: js.Array[js.Any],
-    buttons_right: js.Array[js.Any],
+    buttons_left: js.Array[Any],
+    buttons_right: js.Array[Any],
     calendar_property: String,
     cascade_delete: Boolean,
-    columns: js.Array[js.Any],
+    columns: js.Array[Any],
     correct_work_time: Boolean,
     date_grid: String,
     date_scale: String,
@@ -670,7 +695,7 @@ object GanttConfigOptions {
     details_on_dblclick: Boolean,
     drag_lightbox: Boolean,
     drag_links: Boolean,
-    drag_mode: js.Any,
+    drag_mode: Any,
     drag_move: Boolean,
     drag_progress: Boolean,
     drag_project: Boolean,
@@ -678,8 +703,8 @@ object GanttConfigOptions {
     duration_step: Double,
     duration_unit: String,
     editable_property: String,
-    editor_types: js.Any,
-    end_date: Date,
+    editor_types: Any,
+    end_date: js.Date,
     fit_tasks: Boolean,
     grid_resize: Boolean,
     grid_resizer_attribute: String,
@@ -692,14 +717,14 @@ object GanttConfigOptions {
     keyboard_navigation: Boolean,
     keyboard_navigation_cells: Boolean,
     layer_attribute: String,
-    layout: js.Any,
-    lightbox: js.Any,
+    layout: Any,
+    lightbox: Any,
     lightbox_additional_height: Double,
     link_arrow_size: Double,
     link_attribute: String,
     link_line_width: Double,
     link_wrapper_width: Double,
-    links: js.Any,
+    links: Any,
     min_column_width: Double,
     min_duration: Double,
     min_grid_column_width: Double,
@@ -712,11 +737,12 @@ object GanttConfigOptions {
     preserve_scroll: Boolean,
     prevent_default_scroll: Boolean,
     quick_info_detached: Boolean,
-    quickinfo_buttons: js.Array[js.Any],
+    quickinfo_buttons: js.Array[Any],
     readonly: Boolean,
     readonly_property: String,
     redo: Boolean,
-    resource_calendars: js.Any,
+    reorder_grid_columns: Boolean,
+    resource_calendars: Any,
     resource_property: String,
     resource_render_empty_cells: Boolean,
     resource_store: String,
@@ -735,20 +761,22 @@ object GanttConfigOptions {
     show_errors: Boolean,
     show_grid: Boolean,
     show_links: Boolean,
+    show_marker: Boolean,
     show_markers: Boolean,
     show_progress: Boolean,
     show_quick_info: Boolean,
     show_task_cells: Boolean,
+    show_tasks_outside_timescale: Boolean,
     show_unscheduled: Boolean,
     skip_off_time: Boolean,
     smart_rendering: Boolean,
     smart_scales: Boolean,
     sort: Boolean,
-    start_date: Date,
+    start_date: js.Date,
     start_on_monday: Boolean,
     static_background: Boolean,
     step: Double,
-    subscales: js.Array[js.Any],
+    subscales: js.Array[Any],
     task_attribute: String,
     task_date: String,
     task_height: Double,
@@ -763,17 +791,18 @@ object GanttConfigOptions {
     touch_drag: Double | Boolean,
     touch_feedback: Boolean,
     touch_feedback_duration: Double,
-    type_renderers: js.Any,
-    types: js.Any,
+    touch_tooltip: Boolean,
+    type_renderers: Any,
+    types: Any,
     undo: Boolean,
-    undo_actions: js.Any,
+    undo_actions: Any,
     undo_steps: Double,
-    undo_types: js.Any,
+    undo_types: Any,
     wai_aria_attributes: Boolean,
     work_time: Boolean,
     xml_date: String
   ): GanttConfigOptions = {
-    val __obj = js.Dynamic.literal(auto_scheduling = auto_scheduling.asInstanceOf[js.Any], auto_scheduling_descendant_links = auto_scheduling_descendant_links.asInstanceOf[js.Any], auto_scheduling_initial = auto_scheduling_initial.asInstanceOf[js.Any], auto_scheduling_move_projects = auto_scheduling_move_projects.asInstanceOf[js.Any], auto_scheduling_strict = auto_scheduling_strict.asInstanceOf[js.Any], auto_types = auto_types.asInstanceOf[js.Any], autofit = autofit.asInstanceOf[js.Any], autoscroll = autoscroll.asInstanceOf[js.Any], autoscroll_speed = autoscroll_speed.asInstanceOf[js.Any], autosize = autosize.asInstanceOf[js.Any], autosize_min_width = autosize_min_width.asInstanceOf[js.Any], branch_loading = branch_loading.asInstanceOf[js.Any], branch_loading_property = branch_loading_property.asInstanceOf[js.Any], buttons_left = buttons_left.asInstanceOf[js.Any], buttons_right = buttons_right.asInstanceOf[js.Any], calendar_property = calendar_property.asInstanceOf[js.Any], cascade_delete = cascade_delete.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], correct_work_time = correct_work_time.asInstanceOf[js.Any], date_grid = date_grid.asInstanceOf[js.Any], date_scale = date_scale.asInstanceOf[js.Any], details_on_create = details_on_create.asInstanceOf[js.Any], details_on_dblclick = details_on_dblclick.asInstanceOf[js.Any], drag_lightbox = drag_lightbox.asInstanceOf[js.Any], drag_links = drag_links.asInstanceOf[js.Any], drag_mode = drag_mode.asInstanceOf[js.Any], drag_move = drag_move.asInstanceOf[js.Any], drag_progress = drag_progress.asInstanceOf[js.Any], drag_project = drag_project.asInstanceOf[js.Any], drag_resize = drag_resize.asInstanceOf[js.Any], duration_step = duration_step.asInstanceOf[js.Any], duration_unit = duration_unit.asInstanceOf[js.Any], editable_property = editable_property.asInstanceOf[js.Any], editor_types = editor_types.asInstanceOf[js.Any], end_date = end_date.asInstanceOf[js.Any], fit_tasks = fit_tasks.asInstanceOf[js.Any], grid_resize = grid_resize.asInstanceOf[js.Any], grid_resizer_attribute = grid_resizer_attribute.asInstanceOf[js.Any], grid_resizer_column_attribute = grid_resizer_column_attribute.asInstanceOf[js.Any], grid_width = grid_width.asInstanceOf[js.Any], highlight_critical_path = highlight_critical_path.asInstanceOf[js.Any], inherit_scale_class = inherit_scale_class.asInstanceOf[js.Any], initial_scroll = initial_scroll.asInstanceOf[js.Any], keep_grid_width = keep_grid_width.asInstanceOf[js.Any], keyboard_navigation = keyboard_navigation.asInstanceOf[js.Any], keyboard_navigation_cells = keyboard_navigation_cells.asInstanceOf[js.Any], layer_attribute = layer_attribute.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], lightbox = lightbox.asInstanceOf[js.Any], lightbox_additional_height = lightbox_additional_height.asInstanceOf[js.Any], link_arrow_size = link_arrow_size.asInstanceOf[js.Any], link_attribute = link_attribute.asInstanceOf[js.Any], link_line_width = link_line_width.asInstanceOf[js.Any], link_wrapper_width = link_wrapper_width.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], min_column_width = min_column_width.asInstanceOf[js.Any], min_duration = min_duration.asInstanceOf[js.Any], min_grid_column_width = min_grid_column_width.asInstanceOf[js.Any], multiselect = multiselect.asInstanceOf[js.Any], multiselect_one_level = multiselect_one_level.asInstanceOf[js.Any], open_tree_initially = open_tree_initially.asInstanceOf[js.Any], order_branch = order_branch.asInstanceOf[js.Any], order_branch_free = order_branch_free.asInstanceOf[js.Any], placeholder_task = placeholder_task.asInstanceOf[js.Any], preserve_scroll = preserve_scroll.asInstanceOf[js.Any], prevent_default_scroll = prevent_default_scroll.asInstanceOf[js.Any], quick_info_detached = quick_info_detached.asInstanceOf[js.Any], quickinfo_buttons = quickinfo_buttons.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], readonly_property = readonly_property.asInstanceOf[js.Any], redo = redo.asInstanceOf[js.Any], resource_calendars = resource_calendars.asInstanceOf[js.Any], resource_property = resource_property.asInstanceOf[js.Any], resource_render_empty_cells = resource_render_empty_cells.asInstanceOf[js.Any], resource_store = resource_store.asInstanceOf[js.Any], root_id = root_id.asInstanceOf[js.Any], round_dnd_dates = round_dnd_dates.asInstanceOf[js.Any], row_height = row_height.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any], scale_height = scale_height.asInstanceOf[js.Any], scale_offset_minimal = scale_offset_minimal.asInstanceOf[js.Any], scale_unit = scale_unit.asInstanceOf[js.Any], scroll_on_click = scroll_on_click.asInstanceOf[js.Any], scroll_size = scroll_size.asInstanceOf[js.Any], select_task = select_task.asInstanceOf[js.Any], server_utc = server_utc.asInstanceOf[js.Any], show_chart = show_chart.asInstanceOf[js.Any], show_errors = show_errors.asInstanceOf[js.Any], show_grid = show_grid.asInstanceOf[js.Any], show_links = show_links.asInstanceOf[js.Any], show_markers = show_markers.asInstanceOf[js.Any], show_progress = show_progress.asInstanceOf[js.Any], show_quick_info = show_quick_info.asInstanceOf[js.Any], show_task_cells = show_task_cells.asInstanceOf[js.Any], show_unscheduled = show_unscheduled.asInstanceOf[js.Any], skip_off_time = skip_off_time.asInstanceOf[js.Any], smart_rendering = smart_rendering.asInstanceOf[js.Any], smart_scales = smart_scales.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], start_date = start_date.asInstanceOf[js.Any], start_on_monday = start_on_monday.asInstanceOf[js.Any], static_background = static_background.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], subscales = subscales.asInstanceOf[js.Any], task_attribute = task_attribute.asInstanceOf[js.Any], task_date = task_date.asInstanceOf[js.Any], task_height = task_height.asInstanceOf[js.Any], task_scroll_offset = task_scroll_offset.asInstanceOf[js.Any], time_picker = time_picker.asInstanceOf[js.Any], time_step = time_step.asInstanceOf[js.Any], tooltip_hide_timeout = tooltip_hide_timeout.asInstanceOf[js.Any], tooltip_offset_x = tooltip_offset_x.asInstanceOf[js.Any], tooltip_offset_y = tooltip_offset_y.asInstanceOf[js.Any], tooltip_timeout = tooltip_timeout.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], touch_drag = touch_drag.asInstanceOf[js.Any], touch_feedback = touch_feedback.asInstanceOf[js.Any], touch_feedback_duration = touch_feedback_duration.asInstanceOf[js.Any], type_renderers = type_renderers.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], undo = undo.asInstanceOf[js.Any], undo_actions = undo_actions.asInstanceOf[js.Any], undo_steps = undo_steps.asInstanceOf[js.Any], undo_types = undo_types.asInstanceOf[js.Any], wai_aria_attributes = wai_aria_attributes.asInstanceOf[js.Any], work_time = work_time.asInstanceOf[js.Any], xml_date = xml_date.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(auto_scheduling = auto_scheduling.asInstanceOf[js.Any], auto_scheduling_descendant_links = auto_scheduling_descendant_links.asInstanceOf[js.Any], auto_scheduling_initial = auto_scheduling_initial.asInstanceOf[js.Any], auto_scheduling_move_projects = auto_scheduling_move_projects.asInstanceOf[js.Any], auto_scheduling_strict = auto_scheduling_strict.asInstanceOf[js.Any], auto_types = auto_types.asInstanceOf[js.Any], autofit = autofit.asInstanceOf[js.Any], autoscroll = autoscroll.asInstanceOf[js.Any], autoscroll_speed = autoscroll_speed.asInstanceOf[js.Any], autosize = autosize.asInstanceOf[js.Any], autosize_min_width = autosize_min_width.asInstanceOf[js.Any], bar_height = bar_height.asInstanceOf[js.Any], branch_loading = branch_loading.asInstanceOf[js.Any], branch_loading_property = branch_loading_property.asInstanceOf[js.Any], buttons_left = buttons_left.asInstanceOf[js.Any], buttons_right = buttons_right.asInstanceOf[js.Any], calendar_property = calendar_property.asInstanceOf[js.Any], cascade_delete = cascade_delete.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], correct_work_time = correct_work_time.asInstanceOf[js.Any], date_grid = date_grid.asInstanceOf[js.Any], date_scale = date_scale.asInstanceOf[js.Any], details_on_create = details_on_create.asInstanceOf[js.Any], details_on_dblclick = details_on_dblclick.asInstanceOf[js.Any], drag_lightbox = drag_lightbox.asInstanceOf[js.Any], drag_links = drag_links.asInstanceOf[js.Any], drag_mode = drag_mode.asInstanceOf[js.Any], drag_move = drag_move.asInstanceOf[js.Any], drag_progress = drag_progress.asInstanceOf[js.Any], drag_project = drag_project.asInstanceOf[js.Any], drag_resize = drag_resize.asInstanceOf[js.Any], duration_step = duration_step.asInstanceOf[js.Any], duration_unit = duration_unit.asInstanceOf[js.Any], editable_property = editable_property.asInstanceOf[js.Any], editor_types = editor_types.asInstanceOf[js.Any], end_date = end_date.asInstanceOf[js.Any], fit_tasks = fit_tasks.asInstanceOf[js.Any], grid_resize = grid_resize.asInstanceOf[js.Any], grid_resizer_attribute = grid_resizer_attribute.asInstanceOf[js.Any], grid_resizer_column_attribute = grid_resizer_column_attribute.asInstanceOf[js.Any], grid_width = grid_width.asInstanceOf[js.Any], highlight_critical_path = highlight_critical_path.asInstanceOf[js.Any], inherit_scale_class = inherit_scale_class.asInstanceOf[js.Any], initial_scroll = initial_scroll.asInstanceOf[js.Any], keep_grid_width = keep_grid_width.asInstanceOf[js.Any], keyboard_navigation = keyboard_navigation.asInstanceOf[js.Any], keyboard_navigation_cells = keyboard_navigation_cells.asInstanceOf[js.Any], layer_attribute = layer_attribute.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], lightbox = lightbox.asInstanceOf[js.Any], lightbox_additional_height = lightbox_additional_height.asInstanceOf[js.Any], link_arrow_size = link_arrow_size.asInstanceOf[js.Any], link_attribute = link_attribute.asInstanceOf[js.Any], link_line_width = link_line_width.asInstanceOf[js.Any], link_wrapper_width = link_wrapper_width.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], min_column_width = min_column_width.asInstanceOf[js.Any], min_duration = min_duration.asInstanceOf[js.Any], min_grid_column_width = min_grid_column_width.asInstanceOf[js.Any], multiselect = multiselect.asInstanceOf[js.Any], multiselect_one_level = multiselect_one_level.asInstanceOf[js.Any], open_tree_initially = open_tree_initially.asInstanceOf[js.Any], order_branch = order_branch.asInstanceOf[js.Any], order_branch_free = order_branch_free.asInstanceOf[js.Any], placeholder_task = placeholder_task.asInstanceOf[js.Any], preserve_scroll = preserve_scroll.asInstanceOf[js.Any], prevent_default_scroll = prevent_default_scroll.asInstanceOf[js.Any], quick_info_detached = quick_info_detached.asInstanceOf[js.Any], quickinfo_buttons = quickinfo_buttons.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], readonly_property = readonly_property.asInstanceOf[js.Any], redo = redo.asInstanceOf[js.Any], reorder_grid_columns = reorder_grid_columns.asInstanceOf[js.Any], resource_calendars = resource_calendars.asInstanceOf[js.Any], resource_property = resource_property.asInstanceOf[js.Any], resource_render_empty_cells = resource_render_empty_cells.asInstanceOf[js.Any], resource_store = resource_store.asInstanceOf[js.Any], root_id = root_id.asInstanceOf[js.Any], round_dnd_dates = round_dnd_dates.asInstanceOf[js.Any], row_height = row_height.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any], scale_height = scale_height.asInstanceOf[js.Any], scale_offset_minimal = scale_offset_minimal.asInstanceOf[js.Any], scale_unit = scale_unit.asInstanceOf[js.Any], scroll_on_click = scroll_on_click.asInstanceOf[js.Any], scroll_size = scroll_size.asInstanceOf[js.Any], select_task = select_task.asInstanceOf[js.Any], server_utc = server_utc.asInstanceOf[js.Any], show_chart = show_chart.asInstanceOf[js.Any], show_errors = show_errors.asInstanceOf[js.Any], show_grid = show_grid.asInstanceOf[js.Any], show_links = show_links.asInstanceOf[js.Any], show_marker = show_marker.asInstanceOf[js.Any], show_markers = show_markers.asInstanceOf[js.Any], show_progress = show_progress.asInstanceOf[js.Any], show_quick_info = show_quick_info.asInstanceOf[js.Any], show_task_cells = show_task_cells.asInstanceOf[js.Any], show_tasks_outside_timescale = show_tasks_outside_timescale.asInstanceOf[js.Any], show_unscheduled = show_unscheduled.asInstanceOf[js.Any], skip_off_time = skip_off_time.asInstanceOf[js.Any], smart_rendering = smart_rendering.asInstanceOf[js.Any], smart_scales = smart_scales.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], start_date = start_date.asInstanceOf[js.Any], start_on_monday = start_on_monday.asInstanceOf[js.Any], static_background = static_background.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], subscales = subscales.asInstanceOf[js.Any], task_attribute = task_attribute.asInstanceOf[js.Any], task_date = task_date.asInstanceOf[js.Any], task_height = task_height.asInstanceOf[js.Any], task_scroll_offset = task_scroll_offset.asInstanceOf[js.Any], time_picker = time_picker.asInstanceOf[js.Any], time_step = time_step.asInstanceOf[js.Any], tooltip_hide_timeout = tooltip_hide_timeout.asInstanceOf[js.Any], tooltip_offset_x = tooltip_offset_x.asInstanceOf[js.Any], tooltip_offset_y = tooltip_offset_y.asInstanceOf[js.Any], tooltip_timeout = tooltip_timeout.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], touch_drag = touch_drag.asInstanceOf[js.Any], touch_feedback = touch_feedback.asInstanceOf[js.Any], touch_feedback_duration = touch_feedback_duration.asInstanceOf[js.Any], touch_tooltip = touch_tooltip.asInstanceOf[js.Any], type_renderers = type_renderers.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], undo = undo.asInstanceOf[js.Any], undo_actions = undo_actions.asInstanceOf[js.Any], undo_steps = undo_steps.asInstanceOf[js.Any], undo_types = undo_types.asInstanceOf[js.Any], wai_aria_attributes = wai_aria_attributes.asInstanceOf[js.Any], work_time = work_time.asInstanceOf[js.Any], xml_date = xml_date.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttConfigOptions]
   }
   
@@ -801,25 +830,27 @@ object GanttConfigOptions {
     
     inline def setAutosize_min_width(value: Double): Self = StObject.set(x, "autosize_min_width", value.asInstanceOf[js.Any])
     
+    inline def setBar_height(value: Double): Self = StObject.set(x, "bar_height", value.asInstanceOf[js.Any])
+    
     inline def setBranch_loading(value: Boolean): Self = StObject.set(x, "branch_loading", value.asInstanceOf[js.Any])
     
     inline def setBranch_loading_property(value: String): Self = StObject.set(x, "branch_loading_property", value.asInstanceOf[js.Any])
     
-    inline def setButtons_left(value: js.Array[js.Any]): Self = StObject.set(x, "buttons_left", value.asInstanceOf[js.Any])
+    inline def setButtons_left(value: js.Array[Any]): Self = StObject.set(x, "buttons_left", value.asInstanceOf[js.Any])
     
-    inline def setButtons_leftVarargs(value: js.Any*): Self = StObject.set(x, "buttons_left", js.Array(value :_*))
+    inline def setButtons_leftVarargs(value: Any*): Self = StObject.set(x, "buttons_left", js.Array(value*))
     
-    inline def setButtons_right(value: js.Array[js.Any]): Self = StObject.set(x, "buttons_right", value.asInstanceOf[js.Any])
+    inline def setButtons_right(value: js.Array[Any]): Self = StObject.set(x, "buttons_right", value.asInstanceOf[js.Any])
     
-    inline def setButtons_rightVarargs(value: js.Any*): Self = StObject.set(x, "buttons_right", js.Array(value :_*))
+    inline def setButtons_rightVarargs(value: Any*): Self = StObject.set(x, "buttons_right", js.Array(value*))
     
     inline def setCalendar_property(value: String): Self = StObject.set(x, "calendar_property", value.asInstanceOf[js.Any])
     
     inline def setCascade_delete(value: Boolean): Self = StObject.set(x, "cascade_delete", value.asInstanceOf[js.Any])
     
-    inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Any*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCorrect_work_time(value: Boolean): Self = StObject.set(x, "correct_work_time", value.asInstanceOf[js.Any])
     
@@ -835,7 +866,7 @@ object GanttConfigOptions {
     
     inline def setDrag_links(value: Boolean): Self = StObject.set(x, "drag_links", value.asInstanceOf[js.Any])
     
-    inline def setDrag_mode(value: js.Any): Self = StObject.set(x, "drag_mode", value.asInstanceOf[js.Any])
+    inline def setDrag_mode(value: Any): Self = StObject.set(x, "drag_mode", value.asInstanceOf[js.Any])
     
     inline def setDrag_move(value: Boolean): Self = StObject.set(x, "drag_move", value.asInstanceOf[js.Any])
     
@@ -851,9 +882,9 @@ object GanttConfigOptions {
     
     inline def setEditable_property(value: String): Self = StObject.set(x, "editable_property", value.asInstanceOf[js.Any])
     
-    inline def setEditor_types(value: js.Any): Self = StObject.set(x, "editor_types", value.asInstanceOf[js.Any])
+    inline def setEditor_types(value: Any): Self = StObject.set(x, "editor_types", value.asInstanceOf[js.Any])
     
-    inline def setEnd_date(value: Date): Self = StObject.set(x, "end_date", value.asInstanceOf[js.Any])
+    inline def setEnd_date(value: js.Date): Self = StObject.set(x, "end_date", value.asInstanceOf[js.Any])
     
     inline def setFit_tasks(value: Boolean): Self = StObject.set(x, "fit_tasks", value.asInstanceOf[js.Any])
     
@@ -879,9 +910,9 @@ object GanttConfigOptions {
     
     inline def setLayer_attribute(value: String): Self = StObject.set(x, "layer_attribute", value.asInstanceOf[js.Any])
     
-    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    inline def setLightbox(value: js.Any): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
+    inline def setLightbox(value: Any): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
     
     inline def setLightbox_additional_height(value: Double): Self = StObject.set(x, "lightbox_additional_height", value.asInstanceOf[js.Any])
     
@@ -893,7 +924,7 @@ object GanttConfigOptions {
     
     inline def setLink_wrapper_width(value: Double): Self = StObject.set(x, "link_wrapper_width", value.asInstanceOf[js.Any])
     
-    inline def setLinks(value: js.Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setMin_column_width(value: Double): Self = StObject.set(x, "min_column_width", value.asInstanceOf[js.Any])
     
@@ -919,9 +950,9 @@ object GanttConfigOptions {
     
     inline def setQuick_info_detached(value: Boolean): Self = StObject.set(x, "quick_info_detached", value.asInstanceOf[js.Any])
     
-    inline def setQuickinfo_buttons(value: js.Array[js.Any]): Self = StObject.set(x, "quickinfo_buttons", value.asInstanceOf[js.Any])
+    inline def setQuickinfo_buttons(value: js.Array[Any]): Self = StObject.set(x, "quickinfo_buttons", value.asInstanceOf[js.Any])
     
-    inline def setQuickinfo_buttonsVarargs(value: js.Any*): Self = StObject.set(x, "quickinfo_buttons", js.Array(value :_*))
+    inline def setQuickinfo_buttonsVarargs(value: Any*): Self = StObject.set(x, "quickinfo_buttons", js.Array(value*))
     
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
@@ -929,7 +960,9 @@ object GanttConfigOptions {
     
     inline def setRedo(value: Boolean): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
     
-    inline def setResource_calendars(value: js.Any): Self = StObject.set(x, "resource_calendars", value.asInstanceOf[js.Any])
+    inline def setReorder_grid_columns(value: Boolean): Self = StObject.set(x, "reorder_grid_columns", value.asInstanceOf[js.Any])
+    
+    inline def setResource_calendars(value: Any): Self = StObject.set(x, "resource_calendars", value.asInstanceOf[js.Any])
     
     inline def setResource_property(value: String): Self = StObject.set(x, "resource_property", value.asInstanceOf[js.Any])
     
@@ -967,6 +1000,8 @@ object GanttConfigOptions {
     
     inline def setShow_links(value: Boolean): Self = StObject.set(x, "show_links", value.asInstanceOf[js.Any])
     
+    inline def setShow_marker(value: Boolean): Self = StObject.set(x, "show_marker", value.asInstanceOf[js.Any])
+    
     inline def setShow_markers(value: Boolean): Self = StObject.set(x, "show_markers", value.asInstanceOf[js.Any])
     
     inline def setShow_progress(value: Boolean): Self = StObject.set(x, "show_progress", value.asInstanceOf[js.Any])
@@ -974,6 +1009,8 @@ object GanttConfigOptions {
     inline def setShow_quick_info(value: Boolean): Self = StObject.set(x, "show_quick_info", value.asInstanceOf[js.Any])
     
     inline def setShow_task_cells(value: Boolean): Self = StObject.set(x, "show_task_cells", value.asInstanceOf[js.Any])
+    
+    inline def setShow_tasks_outside_timescale(value: Boolean): Self = StObject.set(x, "show_tasks_outside_timescale", value.asInstanceOf[js.Any])
     
     inline def setShow_unscheduled(value: Boolean): Self = StObject.set(x, "show_unscheduled", value.asInstanceOf[js.Any])
     
@@ -985,7 +1022,7 @@ object GanttConfigOptions {
     
     inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    inline def setStart_date(value: Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
+    inline def setStart_date(value: js.Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
     
     inline def setStart_on_monday(value: Boolean): Self = StObject.set(x, "start_on_monday", value.asInstanceOf[js.Any])
     
@@ -993,9 +1030,9 @@ object GanttConfigOptions {
     
     inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    inline def setSubscales(value: js.Array[js.Any]): Self = StObject.set(x, "subscales", value.asInstanceOf[js.Any])
+    inline def setSubscales(value: js.Array[Any]): Self = StObject.set(x, "subscales", value.asInstanceOf[js.Any])
     
-    inline def setSubscalesVarargs(value: js.Any*): Self = StObject.set(x, "subscales", js.Array(value :_*))
+    inline def setSubscalesVarargs(value: Any*): Self = StObject.set(x, "subscales", js.Array(value*))
     
     inline def setTask_attribute(value: String): Self = StObject.set(x, "task_attribute", value.asInstanceOf[js.Any])
     
@@ -1025,17 +1062,19 @@ object GanttConfigOptions {
     
     inline def setTouch_feedback_duration(value: Double): Self = StObject.set(x, "touch_feedback_duration", value.asInstanceOf[js.Any])
     
-    inline def setType_renderers(value: js.Any): Self = StObject.set(x, "type_renderers", value.asInstanceOf[js.Any])
+    inline def setTouch_tooltip(value: Boolean): Self = StObject.set(x, "touch_tooltip", value.asInstanceOf[js.Any])
     
-    inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setType_renderers(value: Any): Self = StObject.set(x, "type_renderers", value.asInstanceOf[js.Any])
+    
+    inline def setTypes(value: Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setUndo(value: Boolean): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
-    inline def setUndo_actions(value: js.Any): Self = StObject.set(x, "undo_actions", value.asInstanceOf[js.Any])
+    inline def setUndo_actions(value: Any): Self = StObject.set(x, "undo_actions", value.asInstanceOf[js.Any])
     
     inline def setUndo_steps(value: Double): Self = StObject.set(x, "undo_steps", value.asInstanceOf[js.Any])
     
-    inline def setUndo_types(value: js.Any): Self = StObject.set(x, "undo_types", value.asInstanceOf[js.Any])
+    inline def setUndo_types(value: Any): Self = StObject.set(x, "undo_types", value.asInstanceOf[js.Any])
     
     inline def setWai_aria_attributes(value: Boolean): Self = StObject.set(x, "wai_aria_attributes", value.asInstanceOf[js.Any])
     

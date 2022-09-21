@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ListCashDrawerShiftsRequest")
 @js.native
-class ListCashDrawerShiftsRequest () extends StObject {
+open class ListCashDrawerShiftsRequest () extends StObject {
   
   /**
     * The inclusive start time of the query on opened_at, in ISO 8601 format.

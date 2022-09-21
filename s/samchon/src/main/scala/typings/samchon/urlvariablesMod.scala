@@ -12,7 +12,7 @@ object urlvariablesMod {
   /**
     * Default Constructor.
     */
-  class URLVariables () extends ^ {
+  open class URLVariables () extends ^ {
     /**
       * Construct from a URL-encoded string.
       *

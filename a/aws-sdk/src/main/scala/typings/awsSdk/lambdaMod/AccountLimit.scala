@@ -12,7 +12,7 @@ trait AccountLimit extends StObject {
   var CodeSizeUnzipped: js.UndefOr[Long] = js.undefined
   
   /**
-    * The maximum size of a deployment package when it's uploaded directly to AWS Lambda. Use Amazon S3 for larger files.
+    * The maximum size of a deployment package when it's uploaded directly to Lambda. Use Amazon S3 for larger files.
     */
   var CodeSizeZipped: js.UndefOr[Long] = js.undefined
   

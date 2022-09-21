@@ -23,6 +23,6 @@ object PullVisibleSymbolsInfo {
     
     inline def setSymbols(value: js.Array[PullSymbol]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
-    inline def setSymbolsVarargs(value: PullSymbol*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+    inline def setSymbolsVarargs(value: PullSymbol*): Self = StObject.set(x, "symbols", js.Array(value*))
   }
 }

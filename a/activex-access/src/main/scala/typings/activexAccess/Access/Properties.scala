@@ -19,5 +19,5 @@ trait Properties extends StObject {
   def Item(Index: String): AccessProperty = js.native
   def Item(Index: Double): AccessProperty = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

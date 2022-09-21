@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NodeAPIComms extends StObject {
   
-  def publish(topic: String, data: js.Any, retain: Boolean): Unit
+  def publish(topic: String, data: Any, retain: Boolean): Unit
 }
 object NodeAPIComms {
   
-  inline def apply(publish: (String, js.Any, Boolean) => Unit): NodeAPIComms = {
+  inline def apply(publish: (String, Any, Boolean) => Unit): NodeAPIComms = {
     val __obj = js.Dynamic.literal(publish = js.Any.fromFunction3(publish))
     __obj.asInstanceOf[NodeAPIComms]
   }
   
   extension [Self <: NodeAPIComms](x: Self) {
     
-    inline def setPublish(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction3(value))
+    inline def setPublish(value: (String, Any, Boolean) => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction3(value))
   }
 }

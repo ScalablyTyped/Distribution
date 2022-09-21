@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new web view. Use a web view to evaluate JavaScript on websites.
   * @see https://docs.scriptable.app/webview/#-new-webview
   */
-class WebView ()
+open class WebView ()
   extends StObject
      with typings.scriptableIos.WebView
 object WebView {

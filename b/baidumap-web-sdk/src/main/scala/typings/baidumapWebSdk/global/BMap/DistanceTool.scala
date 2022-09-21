@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.DistanceTool")
 @js.native
-class DistanceTool protected ()
+open class DistanceTool protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.DistanceTool {
   def this(map: typings.baidumapWebSdk.BMap.Map) = this()

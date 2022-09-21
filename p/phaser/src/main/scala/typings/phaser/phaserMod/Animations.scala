@@ -1,8 +1,8 @@
 package typings.phaser.phaserMod
 
+import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Types.Animations.JSONAnimationFrame
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,15 +12,20 @@ object Animations {
   /**
     * A Frame based Animation.
     * 
-    * This consists of a key, some default values (like the frame rate) and a bunch of Frame objects.
+    * Animations in Phaser consist of a sequence of `AnimationFrame` objects, which are managed by
+    * this class, along with properties that impact playback, such as the animations frame rate
+    * or delay.
     * 
-    * The Animation Manager creates these. Game Objects don't own an instance of these directly.
-    * Game Objects have the Animation Component, which are like playheads to global Animations (these objects)
-    * So multiple Game Objects can have playheads all pointing to this one Animation instance.
+    * This class contains all of the properties and methods needed to handle playback of the animation
+    * directly to an `AnimationState` instance, which is owned by a Sprite, or similar Game Object.
+    * 
+    * You don't typically create an instance of this class directly, but instead go via
+    * either the `AnimationManager` or the `AnimationState` and use their `create` methods,
+    * depending on if you need a global animation, or local to a specific Sprite.
     */
   @JSImport("phaser", "Animations.Animation")
   @js.native
-  class Animation protected ()
+  open class Animation protected ()
     extends StObject
        with typings.phaser.Phaser.Animations.Animation {
     /**
@@ -46,7 +51,7 @@ object Animations {
     */
   @JSImport("phaser", "Animations.AnimationFrame")
   @js.native
-  class AnimationFrame protected ()
+  open class AnimationFrame protected ()
     extends StObject
        with typings.phaser.Phaser.Animations.AnimationFrame {
     /**
@@ -55,9 +60,12 @@ object Animations {
       * @param textureFrame The key of the Frame within the Texture that this AnimationFrame uses.
       * @param index The index of this AnimationFrame within the Animation sequence.
       * @param frame A reference to the Texture Frame this AnimationFrame uses for rendering.
+      * @param isKeyFrame Is this Frame a Keyframe within the Animation? Default false.
       */
-    def this(textureKey: String, textureFrame: String, index: integer, frame: Frame) = this()
-    def this(textureKey: String, textureFrame: integer, index: integer, frame: Frame) = this()
+    def this(textureKey: String, textureFrame: String, index: Double, frame: Frame) = this()
+    def this(textureKey: String, textureFrame: Double, index: Double, frame: Frame) = this()
+    def this(textureKey: String, textureFrame: String, index: Double, frame: Frame, isKeyFrame: Boolean) = this()
+    def this(textureKey: String, textureFrame: Double, index: Double, frame: Frame, isKeyFrame: Boolean) = this()
     
     /**
       * Destroys this object by removing references to external resources and callbacks.
@@ -82,13 +90,19 @@ object Animations {
       * The index of this AnimationFrame within the Animation sequence.
       */
     /* CompleteClass */
-    var index: integer = js.native
+    var index: Double = js.native
     
     /**
       * Is this the first frame in an animation sequence?
       */
     /* CompleteClass */
     override val isFirst: Boolean = js.native
+    
+    /**
+      * Is this Frame a KeyFrame within the Animation?
+      */
+    /* CompleteClass */
+    var isKeyFrame: Boolean = js.native
     
     /**
       * Is this the last frame in an animation sequence?
@@ -119,7 +133,7 @@ object Animations {
       * The key of the Frame within the Texture that this AnimationFrame uses.
       */
     /* CompleteClass */
-    var textureFrame: String | integer = js.native
+    var textureFrame: String | Double = js.native
     
     /**
       * The key of the Texture this AnimationFrame uses.
@@ -145,7 +159,7 @@ object Animations {
     */
   @JSImport("phaser", "Animations.AnimationManager")
   @js.native
-  class AnimationManager protected ()
+  open class AnimationManager protected ()
     extends StObject
        with typings.phaser.Phaser.Animations.AnimationManager {
     /**
@@ -153,6 +167,37 @@ object Animations {
       * @param game A reference to the Phaser.Game instance.
       */
     def this(game: typings.phaser.Phaser.Game) = this()
+  }
+  
+  /**
+    * The Animation State Component.
+    * 
+    * This component provides features to apply animations to Game Objects. It is responsible for
+    * loading, queuing animations for later playback, mixing between animations and setting
+    * the current animation frame to the Game Object that owns this component.
+    * 
+    * This component lives as an instance within any Game Object that has it defined, such as Sprites.
+    * 
+    * You can access its properties and methods via the `anims` property, i.e. `Sprite.anims`.
+    * 
+    * As well as playing animations stored in the global Animation Manager, this component
+    * can also create animations that are stored locally within it. See the `create` method
+    * for more details.
+    * 
+    * Prior to Phaser 3.50 this component was called just `Animation` and lived in the
+    * `Phaser.GameObjects.Components` namespace. It was renamed to `AnimationState`
+    * in 3.50 to help better identify its true purpose when browsing the documentation.
+    */
+  @JSImport("phaser", "Animations.AnimationState")
+  @js.native
+  open class AnimationState protected ()
+    extends StObject
+       with typings.phaser.Phaser.Animations.AnimationState {
+    /**
+      * 
+      * @param parent The Game Object to which this animation component belongs.
+      */
+    def this(parent: GameObject) = this()
   }
   
   object Events {
@@ -167,55 +212,198 @@ object Animations {
       */
     @JSImport("phaser", "Animations.Events.ADD_ANIMATION")
     @js.native
-    val ADD_ANIMATION: js.Any = js.native
+    val ADD_ANIMATION: Any = js.native
     
     /**
       * The Animation Complete Event.
       * 
-      * This event is dispatched by an Animation instance when it completes, i.e. finishes playing or is manually stopped.
+      * This event is dispatched by a Sprite when an animation playing on it completes playback.
+      * This happens when the animation gets to the end of its sequence, factoring in any delays
+      * or repeats it may have to process.
       * 
-      * Be careful with the volume of events this could generate. If a group of Sprites all complete the same
-      * animation at the same time, this event will invoke its handler for each one of them.
+      * An animation that is set to loop, or repeat forever, will never fire this event, because
+      * it never actually completes. If you need to handle this, listen for the `ANIMATION_STOP`
+      * event instead, as this is emitted when the animation is stopped directly.
+      * 
+      * Listen for it on the Sprite using `sprite.on('animationcomplete', listener)`
+      * 
+      * The animation event flow is as follows:
+      * 
+      * 1. `ANIMATION_START`
+      * 2. `ANIMATION_UPDATE` (repeated for however many frames the animation has)
+      * 3. `ANIMATION_REPEAT` (only if the animation is set to repeat, it then emits more update events after this)
+      * 4. `ANIMATION_COMPLETE` (only if there is a finite, or zero, repeat count)
+      * 5. `ANIMATION_COMPLETE_KEY` (only if there is a finite, or zero, repeat count)
+      * 
+      * If the animation is stopped directly, the `ANIMATION_STOP` event is dispatched instead of `ANIMATION_COMPLETE`.
+      * 
+      * If the animation is restarted while it is already playing, `ANIMATION_RESTART` is emitted.
       */
     @JSImport("phaser", "Animations.Events.ANIMATION_COMPLETE")
     @js.native
-    val ANIMATION_COMPLETE: js.Any = js.native
+    val ANIMATION_COMPLETE: Any = js.native
+    
+    /**
+      * The Animation Complete Dynamic Key Event.
+      * 
+      * This event is dispatched by a Sprite when an animation playing on it completes playback.
+      * This happens when the animation gets to the end of its sequence, factoring in any delays
+      * or repeats it may have to process.
+      * 
+      * An animation that is set to loop, or repeat forever, will never fire this event, because
+      * it never actually completes. If you need to handle this, listen for the `ANIMATION_STOP`
+      * event instead, as this is emitted when the animation is stopped directly.
+      * 
+      * The difference between this and the `ANIMATION_COMPLETE` event is that this one has a
+      * dynamic event name that contains the name of the animation within it. For example,
+      * if you had an animation called `explode` you could listen for the completion of that
+      * specific animation by using: `sprite.on('animationcomplete-explode', listener)`. Or, if you
+      * wish to use types: `sprite.on(Phaser.Animations.Events.ANIMATION_COMPLETE_KEY + 'explode', listener)`.
+      * 
+      * The animation event flow is as follows:
+      * 
+      * 1. `ANIMATION_START`
+      * 2. `ANIMATION_UPDATE` (repeated for however many frames the animation has)
+      * 3. `ANIMATION_REPEAT` (only if the animation is set to repeat, it then emits more update events after this)
+      * 4. `ANIMATION_COMPLETE` (only if there is a finite, or zero, repeat count)
+      * 5. `ANIMATION_COMPLETE_KEY` (only if there is a finite, or zero, repeat count)
+      * 
+      * If the animation is stopped directly, the `ANIMATION_STOP` event is dispatched instead of `ANIMATION_COMPLETE`.
+      * 
+      * If the animation is restarted while it is already playing, `ANIMATION_RESTART` is emitted.
+      */
+    @JSImport("phaser", "Animations.Events.ANIMATION_COMPLETE_KEY")
+    @js.native
+    val ANIMATION_COMPLETE_KEY: Any = js.native
     
     /**
       * The Animation Repeat Event.
       * 
-      * This event is dispatched when a currently playing animation repeats.
+      * This event is dispatched by a Sprite when an animation repeats playing on it.
+      * This happens if the animation was created, or played, with a `repeat` value specified.
       * 
-      * The event is dispatched directly from the Animation object itself. Which means that listeners
-      * bound to this event will be invoked every time the Animation repeats, for every Game Object that may have it.
+      * An animation will repeat when it reaches the end of its sequence.
+      * 
+      * Listen for it on the Sprite using `sprite.on('animationrepeat', listener)`
+      * 
+      * The animation event flow is as follows:
+      * 
+      * 1. `ANIMATION_START`
+      * 2. `ANIMATION_UPDATE` (repeated for however many frames the animation has)
+      * 3. `ANIMATION_REPEAT` (only if the animation is set to repeat, it then emits more update events after this)
+      * 4. `ANIMATION_COMPLETE` (only if there is a finite, or zero, repeat count)
+      * 5. `ANIMATION_COMPLETE_KEY` (only if there is a finite, or zero, repeat count)
+      * 
+      * If the animation is stopped directly, the `ANIMATION_STOP` event is dispatched instead of `ANIMATION_COMPLETE`.
+      * 
+      * If the animation is restarted while it is already playing, `ANIMATION_RESTART` is emitted.
       */
     @JSImport("phaser", "Animations.Events.ANIMATION_REPEAT")
     @js.native
-    val ANIMATION_REPEAT: js.Any = js.native
+    val ANIMATION_REPEAT: Any = js.native
     
     /**
       * The Animation Restart Event.
       * 
-      * This event is dispatched by an Animation instance when it restarts.
+      * This event is dispatched by a Sprite when an animation restarts playing on it.
+      * This only happens when the `Sprite.anims.restart` method is called.
       * 
-      * Be careful with the volume of events this could generate. If a group of Sprites all restart the same
-      * animation at the same time, this event will invoke its handler for each one of them.
+      * Listen for it on the Sprite using `sprite.on('animationrestart', listener)`
+      * 
+      * The animation event flow is as follows:
+      * 
+      * 1. `ANIMATION_START`
+      * 2. `ANIMATION_UPDATE` (repeated for however many frames the animation has)
+      * 3. `ANIMATION_REPEAT` (only if the animation is set to repeat, it then emits more update events after this)
+      * 4. `ANIMATION_COMPLETE` (only if there is a finite, or zero, repeat count)
+      * 5. `ANIMATION_COMPLETE_KEY` (only if there is a finite, or zero, repeat count)
+      * 
+      * If the animation is stopped directly, the `ANIMATION_STOP` event is dispatched instead of `ANIMATION_COMPLETE`.
+      * 
+      * If the animation is restarted while it is already playing, `ANIMATION_RESTART` is emitted.
       */
     @JSImport("phaser", "Animations.Events.ANIMATION_RESTART")
     @js.native
-    val ANIMATION_RESTART: js.Any = js.native
+    val ANIMATION_RESTART: Any = js.native
     
     /**
       * The Animation Start Event.
       * 
-      * This event is dispatched by an Animation instance when it starts playing.
+      * This event is dispatched by a Sprite when an animation starts playing on it.
+      * This happens when the animation is played, factoring in any delay that may have been specified.
+      * This event happens after the delay has expired and prior to the first update event.
       * 
-      * Be careful with the volume of events this could generate. If a group of Sprites all play the same
-      * animation at the same time, this event will invoke its handler for each one of them.
+      * Listen for it on the Sprite using `sprite.on('animationstart', listener)`
+      * 
+      * The animation event flow is as follows:
+      * 
+      * 1. `ANIMATION_START`
+      * 2. `ANIMATION_UPDATE` (repeated for however many frames the animation has)
+      * 3. `ANIMATION_REPEAT` (only if the animation is set to repeat, it then emits more update events after this)
+      * 4. `ANIMATION_COMPLETE` (only if there is a finite, or zero, repeat count)
+      * 5. `ANIMATION_COMPLETE_KEY` (only if there is a finite, or zero, repeat count)
+      * 
+      * If the animation is stopped directly, the `ANIMATION_STOP` event is dispatched instead of `ANIMATION_COMPLETE`.
+      * 
+      * If the animation is restarted while it is already playing, `ANIMATION_RESTART` is emitted.
       */
     @JSImport("phaser", "Animations.Events.ANIMATION_START")
     @js.native
-    val ANIMATION_START: js.Any = js.native
+    val ANIMATION_START: Any = js.native
+    
+    /**
+      * The Animation Stop Event.
+      * 
+      * This event is dispatched by a Sprite when an animation is stopped on it. An animation
+      * will only be stopeed if a method such as `Sprite.stop` or `Sprite.anims.stopAfterDelay`
+      * is called. It can also be emitted if a new animation is started before the current one completes.
+      * 
+      * Listen for it on the Sprite using `sprite.on('animationstop', listener)`
+      * 
+      * The animation event flow is as follows:
+      * 
+      * 1. `ANIMATION_START`
+      * 2. `ANIMATION_UPDATE` (repeated for however many frames the animation has)
+      * 3. `ANIMATION_REPEAT` (only if the animation is set to repeat, it then emits more update events after this)
+      * 4. `ANIMATION_COMPLETE` (only if there is a finite, or zero, repeat count)
+      * 5. `ANIMATION_COMPLETE_KEY` (only if there is a finite, or zero, repeat count)
+      * 
+      * If the animation is stopped directly, the `ANIMATION_STOP` event is dispatched instead of `ANIMATION_COMPLETE`.
+      * 
+      * If the animation is restarted while it is already playing, `ANIMATION_RESTART` is emitted.
+      */
+    @JSImport("phaser", "Animations.Events.ANIMATION_STOP")
+    @js.native
+    val ANIMATION_STOP: Any = js.native
+    
+    /**
+      * The Animation Update Event.
+      * 
+      * This event is dispatched by a Sprite when an animation playing on it updates. This happens when the animation changes frame.
+      * An animation will change frame based on the frme rate and other factors like `timeScale` and `delay`. It can also change
+      * frame when stopped or restarted.
+      * 
+      * Listen for it on the Sprite using `sprite.on('animationupdate', listener)`
+      * 
+      * If an animation is playing faster than the game frame-rate can handle, it's entirely possible for it to emit several
+      * update events in a single game frame, so please be aware of this in your code. The **final** event received that frame
+      * is the one that is rendered to the game.
+      * 
+      * The animation event flow is as follows:
+      * 
+      * 1. `ANIMATION_START`
+      * 2. `ANIMATION_UPDATE` (repeated for however many frames the animation has)
+      * 3. `ANIMATION_REPEAT` (only if the animation is set to repeat, it then emits more update events after this)
+      * 4. `ANIMATION_COMPLETE` (only if there is a finite, or zero, repeat count)
+      * 5. `ANIMATION_COMPLETE_KEY` (only if there is a finite, or zero, repeat count)
+      * 
+      * If the animation is stopped directly, the `ANIMATION_STOP` event is dispatched instead of `ANIMATION_COMPLETE`.
+      * 
+      * If the animation is restarted while it is already playing, `ANIMATION_RESTART` is emitted.
+      */
+    @JSImport("phaser", "Animations.Events.ANIMATION_UPDATE")
+    @js.native
+    val ANIMATION_UPDATE: Any = js.native
     
     /**
       * The Pause All Animations Event.
@@ -227,7 +415,7 @@ object Animations {
       */
     @JSImport("phaser", "Animations.Events.PAUSE_ALL")
     @js.native
-    val PAUSE_ALL: js.Any = js.native
+    val PAUSE_ALL: Any = js.native
     
     /**
       * The Remove Animation Event.
@@ -236,7 +424,7 @@ object Animations {
       */
     @JSImport("phaser", "Animations.Events.REMOVE_ANIMATION")
     @js.native
-    val REMOVE_ANIMATION: js.Any = js.native
+    val REMOVE_ANIMATION: Any = js.native
     
     /**
       * The Resume All Animations Event.
@@ -247,133 +435,6 @@ object Animations {
       */
     @JSImport("phaser", "Animations.Events.RESUME_ALL")
     @js.native
-    val RESUME_ALL: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Complete Event.
-      * 
-      * This event is dispatched by a Sprite when an animation finishes playing on it.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationcomplete', listener)`
-      * 
-      * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_COMPLETE` event.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_COMPLETE")
-    @js.native
-    val SPRITE_ANIMATION_COMPLETE: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Key Complete Event.
-      * 
-      * This event is dispatched by a Sprite when a specific animation finishes playing on it.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationcomplete-key', listener)` where `key` is the key of
-      * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationcomplete-explode`.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_KEY_COMPLETE")
-    @js.native
-    val SPRITE_ANIMATION_KEY_COMPLETE: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Key Repeat Event.
-      * 
-      * This event is dispatched by a Sprite when a specific animation repeats playing on it.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationrepeat-key', listener)` where `key` is the key of
-      * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationrepeat-explode`.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_KEY_REPEAT")
-    @js.native
-    val SPRITE_ANIMATION_KEY_REPEAT: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Key Restart Event.
-      * 
-      * This event is dispatched by a Sprite when a specific animation restarts playing on it.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationrestart-key', listener)` where `key` is the key of
-      * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationrestart-explode`.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_KEY_RESTART")
-    @js.native
-    val SPRITE_ANIMATION_KEY_RESTART: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Key Start Event.
-      * 
-      * This event is dispatched by a Sprite when a specific animation starts playing on it.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationstart-key', listener)` where `key` is the key of
-      * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationstart-explode`.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_KEY_START")
-    @js.native
-    val SPRITE_ANIMATION_KEY_START: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Key Update Event.
-      * 
-      * This event is dispatched by a Sprite when a specific animation playing on it updates. This happens when the animation changes frame,
-      * based on the animation frame rate and other factors like `timeScale` and `delay`.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationupdate-key', listener)` where `key` is the key of
-      * the animation. For example, if you had an animation with the key 'explode' you should listen for `animationupdate-explode`.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_KEY_UPDATE")
-    @js.native
-    val SPRITE_ANIMATION_KEY_UPDATE: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Repeat Event.
-      * 
-      * This event is dispatched by a Sprite when an animation repeats playing on it.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationrepeat', listener)`
-      * 
-      * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_REPEAT` event.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_REPEAT")
-    @js.native
-    val SPRITE_ANIMATION_REPEAT: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Restart Event.
-      * 
-      * This event is dispatched by a Sprite when an animation restarts playing on it.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationrestart', listener)`
-      * 
-      * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_RESTART` event.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_RESTART")
-    @js.native
-    val SPRITE_ANIMATION_RESTART: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Start Event.
-      * 
-      * This event is dispatched by a Sprite when an animation starts playing on it.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationstart', listener)`
-      * 
-      * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_START` event.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_START")
-    @js.native
-    val SPRITE_ANIMATION_START: js.Any = js.native
-    
-    /**
-      * The Sprite Animation Update Event.
-      * 
-      * This event is dispatched by a Sprite when an animation playing on it updates. This happens when the animation changes frame,
-      * based on the animation frame rate and other factors like `timeScale` and `delay`.
-      * 
-      * Listen for it on the Sprite using `sprite.on('animationupdate', listener)`
-      * 
-      * This same event is dispatched for all animations. To listen for a specific animation, use the `SPRITE_ANIMATION_KEY_UPDATE` event.
-      */
-    @JSImport("phaser", "Animations.Events.SPRITE_ANIMATION_UPDATE")
-    @js.native
-    val SPRITE_ANIMATION_UPDATE: js.Any = js.native
+    val RESUME_ALL: Any = js.native
   }
 }

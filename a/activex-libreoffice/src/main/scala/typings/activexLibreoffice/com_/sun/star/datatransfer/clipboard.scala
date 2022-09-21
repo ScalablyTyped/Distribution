@@ -57,7 +57,7 @@ object clipboard {
       dispose: () => Unit,
       getClipboard: String => XClipboard,
       listClipboardNames: () => SafeArray[String],
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeClipboard: String => Unit,
       removeEventListener: XEventListener => Unit
@@ -87,8 +87,8 @@ object clipboard {
       getContents: () => XTransferable,
       getName: () => String,
       getRenderingCapabilities: () => Double,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeClipboardListener: XClipboardListener => Unit,
       removeEventListener: XEventListener => Unit,
@@ -165,7 +165,7 @@ object clipboard {
       acquire: () => Unit,
       getContents: () => XTransferable,
       getName: () => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setContents: (XTransferable, XClipboardOwner) => Unit
     ): XClipboard = {
@@ -219,7 +219,7 @@ object clipboard {
       getContents: () => XTransferable,
       getName: () => String,
       getRenderingCapabilities: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setContents: (XTransferable, XClipboardOwner) => Unit
     ): XClipboardEx = {
@@ -256,7 +256,7 @@ object clipboard {
     inline def apply(
       acquire: () => Unit,
       createClipboard: String => XClipboard,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XClipboardFactory = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createClipboard = js.Any.fromFunction1(createClipboard), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -287,7 +287,7 @@ object clipboard {
       acquire: () => Unit,
       changedContents: ClipboardEvent => Unit,
       disposing: EventObject => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XClipboardListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), changedContents = js.Any.fromFunction1(changedContents), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -343,7 +343,7 @@ object clipboard {
       addClipboard: XClipboard => Unit,
       getClipboard: String => XClipboard,
       listClipboardNames: () => SafeArray[String],
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeClipboard: String => Unit
     ): XClipboardManager = {
@@ -384,7 +384,7 @@ object clipboard {
     inline def apply(
       acquire: () => Unit,
       addClipboardListener: XClipboardListener => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeClipboardListener: XClipboardListener => Unit
     ): XClipboardNotifier = {
@@ -422,7 +422,7 @@ object clipboard {
     inline def apply(
       acquire: () => Unit,
       lostOwnership: (XClipboard, XTransferable) => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XClipboardOwner = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), lostOwnership = js.Any.fromFunction2(lostOwnership), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -451,7 +451,7 @@ object clipboard {
     inline def apply(
       acquire: () => Unit,
       flushClipboard: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XFlushableClipboard = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), flushClipboard = js.Any.fromFunction0(flushClipboard), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -488,7 +488,7 @@ object clipboard {
       getContents: () => XTransferable,
       getName: () => String,
       getRenderingCapabilities: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeClipboardListener: XClipboardListener => Unit,
       removeEventListener: XEventListener => Unit,

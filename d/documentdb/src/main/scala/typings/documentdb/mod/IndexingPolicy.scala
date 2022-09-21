@@ -36,11 +36,11 @@ object IndexingPolicy {
     
     inline def setExcludedPaths(value: js.Array[ExcludedPath]): Self = StObject.set(x, "ExcludedPaths", value.asInstanceOf[js.Any])
     
-    inline def setExcludedPathsVarargs(value: ExcludedPath*): Self = StObject.set(x, "ExcludedPaths", js.Array(value :_*))
+    inline def setExcludedPathsVarargs(value: ExcludedPath*): Self = StObject.set(x, "ExcludedPaths", js.Array(value*))
     
     inline def setIncludedPaths(value: js.Array[IncludedPath]): Self = StObject.set(x, "IncludedPaths", value.asInstanceOf[js.Any])
     
-    inline def setIncludedPathsVarargs(value: IncludedPath*): Self = StObject.set(x, "IncludedPaths", js.Array(value :_*))
+    inline def setIncludedPathsVarargs(value: IncludedPath*): Self = StObject.set(x, "IncludedPaths", js.Array(value*))
     
     inline def setIndexingMode(value: IndexingMode): Self = StObject.set(x, "indexingMode", value.asInstanceOf[js.Any])
   }

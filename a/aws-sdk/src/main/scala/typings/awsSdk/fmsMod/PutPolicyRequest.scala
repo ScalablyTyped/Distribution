@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutPolicyRequest extends StObject {
   
   /**
-    * The details of the AWS Firewall Manager policy to be created.
+    * The details of the Firewall Manager policy to be created.
     */
   var Policy: typings.awsSdk.fmsMod.Policy
   
   /**
-    * The tags to add to the AWS resource.
+    * The tags to add to the Amazon Web Services resource.
     */
   var TagList: js.UndefOr[typings.awsSdk.fmsMod.TagList] = js.undefined
 }
@@ -31,6 +31,6 @@ object PutPolicyRequest {
     
     inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
   }
 }

@@ -3,7 +3,6 @@ package typings.chromeLauncher
 import typings.chromeLauncher.chromeLauncherMod.LaunchedChrome
 import typings.chromeLauncher.chromeLauncherMod.ModuleOverrides
 import typings.chromeLauncher.chromeLauncherMod.Options
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("chrome-launcher", "Launcher")
   @js.native
-  class Launcher ()
+  open class Launcher ()
     extends typings.chromeLauncher.chromeLauncherMod.Launcher {
     def this(opts: Options) = this()
     def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
@@ -40,7 +39,10 @@ object mod {
     inline def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
   }
   
-  inline def killAll(): js.Promise[js.Array[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Promise[js.Array[Error]]]
+  /** Returns Chrome installation path that chrome-launcher will launch by default. */
+  inline def getChromePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getChromePath")().asInstanceOf[String]
+  
+  inline def killAll(): js.Array[js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Array[js.Error]]
   
   inline def launch(): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[LaunchedChrome]]
   inline def launch(opts: Options): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LaunchedChrome]]

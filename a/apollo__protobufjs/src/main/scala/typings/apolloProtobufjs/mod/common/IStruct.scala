@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Properties of a google.protobuf.Struct message. */
 trait IStruct extends StObject {
   
-  var fields: js.UndefOr[StringDictionary[js.UndefOr[IValue]]] = js.undefined
+  var fields: js.UndefOr[StringDictionary[IValue]] = js.undefined
 }
 object IStruct {
   
@@ -19,7 +19,7 @@ object IStruct {
   
   extension [Self <: IStruct](x: Self) {
     
-    inline def setFields(value: StringDictionary[js.UndefOr[IValue]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[IValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }

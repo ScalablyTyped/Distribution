@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@typeform/embed" : "1.38.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@typeform/embed" : "1.38.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

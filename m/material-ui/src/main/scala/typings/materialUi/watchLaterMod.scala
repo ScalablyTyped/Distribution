@@ -10,10 +10,10 @@ object watchLaterMod {
   
   @JSImport("material-ui/svg-icons/action/watch-later", JSImport.Default)
   @js.native
-  class default () extends ActionWatchLater
+  open class default () extends ActionWatchLater
   
   @JSImport("material-ui/svg-icons/action/watch-later", "ActionWatchLater")
   @js.native
-  class ActionWatchLater ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionWatchLater ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

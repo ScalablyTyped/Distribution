@@ -1,7 +1,7 @@
 
 # Scala.js typings for crypto-js
 
-Typings are for version v4.0.0
+Typings are for version 4.1
 
 ## Library description:
 JavaScript library of crypto standards.
@@ -9,11 +9,11 @@ JavaScript library of crypto standards.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | crypto-js |
-| Keywords           | security, crypto, Hash, MD5, SHA1, SHA-1, SHA256, SHA-256, RC4, Rabbit, AES, DES, PBKDF2, HMAC, OFB, CFB, CTR, CBC, Base64 |
-| # releases         | 5 |
-| # dependents       | 3205 |
-| # downloads        | 76812415 |
-| # stars            | 149 |
+| Keywords           | security, crypto, Hash, MD5, SHA1, SHA-1, SHA256, SHA-256, RC4, Rabbit, AES, DES, PBKDF2, HMAC, OFB, CFB, CTR, CBC, Base64, Base64url |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8449252666666668E7 |
+| # stars            | 13131.0 |
 
 ## Links
 - [Homepage](http://github.com/brix/crypto-js)

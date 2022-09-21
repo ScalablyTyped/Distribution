@@ -11,11 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with LVal
      with Pattern
-     with PatternLike {
+     with PatternLike
+     with Standardized {
   
   var decorators: js.Array[Decorator_] | Null
   
-  var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_
+  var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_
   
   var right: Expression
   
@@ -26,7 +27,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object AssignmentPattern_ {
   
-  inline def apply(left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_, right: Expression): AssignmentPattern_ = {
+  inline def apply(
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
+    right: Expression
+  ): AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("AssignmentPattern")
     __obj.asInstanceOf[AssignmentPattern_]
@@ -38,9 +42,11 @@ object AssignmentPattern_ {
     
     inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
-    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
     
-    inline def setLeft(value: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(
+      value: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_
+    ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     

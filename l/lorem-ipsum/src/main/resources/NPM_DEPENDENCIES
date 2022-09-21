@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lorem-ipsum" : "2.0.3"
+      "lorem-ipsum" : "2.0.8"
     }
   ],
   "test-dependencies" : [
     {
-      "lorem-ipsum" : "2.0.3"
+      "lorem-ipsum" : "2.0.8"
     }
   ],
   "compile-devDependencies" : [

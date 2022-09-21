@@ -10,10 +10,10 @@ x-ray's crawler
 | ------------------ | :-------------: |
 | Full name          | x-ray-crawler |
 | Keywords           | x-ray, crawler, request, scrape, scraper |
-| # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 250025 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20358.333333333332 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/lapwinglabs/x-ray-crawler#readme)

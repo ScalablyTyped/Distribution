@@ -18,8 +18,8 @@ trait PivotItems extends StObject {
   /* private */ @JSName("Excel.PivotItems_typekey")
   var ExcelDotPivotItems_typekey: PivotItems = js.native
   
-  def Item(Index: String): js.Any = js.native
-  def Item(Index: Double): js.Any = js.native
+  def Item(Index: String): Any = js.native
+  def Item(Index: Double): Any = js.native
   
   val Parent: PivotField = js.native
 }

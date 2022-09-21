@@ -8,10 +8,13 @@ trait AudioProcessingEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var inputBuffer: AudioBuffer
   
+  /* standard dom */
   var outputBuffer: AudioBuffer
   
+  /* standard dom */
   var playbackTime: Double
 }
 object AudioProcessingEventInit {

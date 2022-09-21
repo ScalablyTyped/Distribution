@@ -2,33 +2,33 @@ package typings.convertUnits.mod
 
 import typings.convertUnits.anon.Abbr
 import typings.convertUnits.anon.CutOffNumber
-import typings.convertUnits.anon.Measure
 import typings.convertUnits.anon.Plural
-import typings.convertUnits.anon.System
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("convert-units", "Convert")
 @js.native
-trait Convert extends StObject {
+open class Convert protected () extends StObject {
+  def this(numerator: Double, denominator: Double) = this()
   
-  def describe[T /* <: unit */](abbr: T): Measure[T] = js.native
+  def describe[T /* <: Unit */](abbr: T): typings.convertUnits.anon.Measure[T] = js.native
   
-  def from(from: unit): this.type = js.native
+  def from(from: Unit): this.type = js.native
   
-  def getUnit[T /* <: unit */](abbr: T): Abbr[T] = js.native
+  def getUnit[T /* <: Unit */](abbr: T): Abbr[T] = js.native
   
-  def list(): js.Array[System] = js.native
-  def list(measure: measure): js.Array[System] = js.native
+  def list(): js.Array[typings.convertUnits.anon.System] = js.native
+  def list(measure: Measure): js.Array[typings.convertUnits.anon.System] = js.native
   
-  def measures(): js.Array[measure] = js.native
+  def measures(): js.Array[Measure] = js.native
   
-  def possibilities(): js.Array[unit] = js.native
-  def possibilities(measure: measure): js.Array[unit] = js.native
+  def possibilities(): js.Array[Unit] = js.native
+  def possibilities(measure: Measure): js.Array[Unit] = js.native
   
-  /* private */ def throwUnsupportedUnitError(what: String): Unit = js.native
+  /* private */ def throwUnsupportedUnitError(what: String): scala.Unit = js.native
   
-  def to(to: unit): Double = js.native
+  def to(to: Unit): Double = js.native
   
   def toBest(): Plural = js.native
   def toBest(options: CutOffNumber): Plural = js.native

@@ -7,22 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IDisposable because Already inherited
 - typings.babylonjs.BABYLON.IWebXRFeature because Already inherited
-- typings.babylonjs.BABYLON.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @js.native
+- typings.babylonjs.BABYLON.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, getXRSessionInitExtension, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @js.native
 trait WebXRHitTest
   extends StObject
      with WebXRAbstractFeature {
   
-  /* private */ var _processWebXRHitTestResult: js.Any = js.native
+  /* private */ var _initHitTestSource: Any = js.native
   
-  /* private */ var _tmpMat: js.Any = js.native
+  /* private */ var _processWebXRHitTestResult: Any = js.native
   
-  /* private */ var _tmpPos: js.Any = js.native
+  /* private */ var _tmpMat: Any = js.native
   
-  /* private */ var _tmpQuat: js.Any = js.native
+  /* private */ var _tmpPos: Any = js.native
   
-  /* private */ var _transientXrHitTestSource: js.Any = js.native
+  /* private */ var _tmpQuat: Any = js.native
   
-  /* private */ var _xrHitTestSource: js.Any = js.native
+  /* private */ var _transientXrHitTestSource: Any = js.native
+  
+  /* private */ var _xrHitTestSource: Any = js.native
   
   /**
     * When set to true, each hit test will have its own position/rotation objects
@@ -30,8 +32,6 @@ trait WebXRHitTest
     * the developers will clone them or copy them as they see fit.
     */
   var autoCloneTransformation: Boolean = js.native
-  
-  /* private */ var initHitTestSource: js.Any = js.native
   
   /**
     * Triggered when new babylon (transformed) hit test results are available

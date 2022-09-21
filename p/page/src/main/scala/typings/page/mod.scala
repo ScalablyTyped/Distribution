@@ -1,8 +1,6 @@
 package typings.page
 
 import org.scalablytyped.runtime.Shortcut
-import typings.page.PageJS.RouteOptions
-import typings.page.PageJS.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +11,16 @@ object mod {
     
     @JSImport("page", JSImport.Default)
     @js.native
-    val ^ : Static = js.native
+    val ^ : typings.page.PageJS.Static = js.native
     
     /**
       * Export Context
       * @type {Context}
       */
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("page", "default.Context")
     @js.native
-    class Context protected ()
+    open class ContextCls protected ()
       extends StObject
          with typings.page.PageJS.Context {
       /**
@@ -31,17 +29,17 @@ object mod {
         * @param {any}    state state
         */
       def this(path: String) = this()
-      def this(path: String, state: js.Any) = this()
+      def this(path: String, state: Any) = this()
     }
     
     /**
       * Expose Route
       * @type {Route}
       */
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("page", "default.Route")
     @js.native
-    class Route protected ()
+    open class RouteCls protected ()
       extends StObject
          with typings.page.PageJS.Route {
       /**
@@ -50,12 +48,24 @@ object mod {
         * @param {Options} options Options
         */
       def this(path: String) = this()
-      def this(path: String, options: RouteOptions) = this()
+      def this(path: String, options: typings.page.PageJS.RouteOptions) = this()
     }
     
-    type _To = Static
+    type _To = typings.page.PageJS.Static
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: Static = ^
+    override def _to: typings.page.PageJS.Static = ^
   }
+  
+  type Callback = typings.page.PageJS.Callback
+  
+  type Context = typings.page.PageJS.Context
+  
+  type Options = typings.page.PageJS.Options
+  
+  type Route = typings.page.PageJS.Route
+  
+  type RouteOptions = typings.page.PageJS.RouteOptions
+  
+  type Static = typings.page.PageJS.Static
 }

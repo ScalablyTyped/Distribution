@@ -33,7 +33,7 @@ object RetrieveRequest {
     
     inline def setPackageNamesUndefined: Self = StObject.set(x, "packageNames", js.undefined)
     
-    inline def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value :_*))
+    inline def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value*))
     
     inline def setSinglePackage(value: Boolean): Self = StObject.set(x, "singlePackage", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object RetrieveRequest {
     
     inline def setSpecificFilesUndefined: Self = StObject.set(x, "specificFiles", js.undefined)
     
-    inline def setSpecificFilesVarargs(value: String*): Self = StObject.set(x, "specificFiles", js.Array(value :_*))
+    inline def setSpecificFilesVarargs(value: String*): Self = StObject.set(x, "specificFiles", js.Array(value*))
     
     inline def setUnpackaged(value: Package): Self = StObject.set(x, "unpackaged", value.asInstanceOf[js.Any])
     

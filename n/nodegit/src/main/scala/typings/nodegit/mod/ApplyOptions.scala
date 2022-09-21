@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "ApplyOptions")
 @js.native
-class ApplyOptions ()
+open class ApplyOptions ()
   extends typings.nodegit.applyOptionsMod.ApplyOptions

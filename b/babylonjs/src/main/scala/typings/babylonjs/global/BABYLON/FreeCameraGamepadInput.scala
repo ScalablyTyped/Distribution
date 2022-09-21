@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.FreeCameraGamepadInput")
 @js.native
-class FreeCameraGamepadInput ()
+open class FreeCameraGamepadInput ()
   extends StObject
      with typings.babylonjs.BABYLON.FreeCameraGamepadInput

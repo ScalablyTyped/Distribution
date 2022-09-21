@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.ImageLoader")
 @js.native
-class ImageLoader protected ()
+open class ImageLoader protected ()
   extends StObject
      with typings.preloadjs.createjs.AbstractLoader {
   def this(loadItem: js.Object, preferXHR: Boolean) = this()

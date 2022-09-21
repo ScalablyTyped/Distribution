@@ -16,7 +16,7 @@ object sourceMapSourceMod {
     */
   @JSImport("webpack-sources/lib/SourceMapSource", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SourceMapSource {
+  open class ^ protected () extends SourceMapSource {
     def this(sourceCode: String, name: String, sourceMap: RawSourceMap) = this()
     def this(sourceCode: String, name: String, sourceMap: SourceMapGenerator) = this()
     def this(sourceCode: String, name: String, sourceMap: RawSourceMap, originalSource: String) = this()

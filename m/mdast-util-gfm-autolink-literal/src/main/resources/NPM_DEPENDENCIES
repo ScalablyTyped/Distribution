@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdast-util-gfm-autolink-literal" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdast-util-gfm-autolink-literal" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

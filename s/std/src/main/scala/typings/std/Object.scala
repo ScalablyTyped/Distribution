@@ -7,18 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Object extends StObject {
   
   /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+  /* standard es5 */
   var constructor: js.Function
   
   /**
     * Determines whether an object has a property with the specified name.
     * @param v A property name.
     */
+  /* standard es5 */
   def hasOwnProperty(v: PropertyKey): scala.Boolean
   
   /**
     * Determines whether a specified property is enumerable.
     * @param v A property name.
     */
+  /* standard es5 */
   def propertyIsEnumerable(v: PropertyKey): scala.Boolean
 }
 object Object {

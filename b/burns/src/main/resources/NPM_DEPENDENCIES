@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "burns" : "2.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "burns" : "2.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

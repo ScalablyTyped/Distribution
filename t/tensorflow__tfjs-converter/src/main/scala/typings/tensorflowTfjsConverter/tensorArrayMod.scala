@@ -12,7 +12,7 @@ object tensorArrayMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_array", "TensorArray")
   @js.native
-  class TensorArray protected () extends StObject {
+  open class TensorArray protected () extends StObject {
     def this(
       name: String,
       dtype: DataType,
@@ -33,7 +33,7 @@ object tensorArrayMod {
     
     val closed: Boolean = js.native
     
-    /* private */ var closed_ : js.Any = js.native
+    /* private */ var closed_ : Any = js.native
     
     /**
       * Return the values in the TensorArray as a concatenated Tensor.
@@ -45,7 +45,7 @@ object tensorArrayMod {
     
     val dynamicSize: Boolean = js.native
     
-    /* private */ var elementShape: js.Any = js.native
+    /* private */ var elementShape: Any = js.native
     
     /**
       * Return selected values in the TensorArray as a packed Tensor. All of
@@ -66,7 +66,7 @@ object tensorArrayMod {
     
     val identicalElementShapes: Boolean = js.native
     
-    /* private */ var maxSize: js.Any = js.native
+    /* private */ var maxSize: Any = js.native
     
     val name: String = js.native
     
@@ -99,7 +99,7 @@ object tensorArrayMod {
       */
     def split(length: js.Array[Double], tensor: Tensor[Rank]): Unit = js.native
     
-    /* private */ var tensors: js.Any = js.native
+    /* private */ var tensors: Any = js.native
     
     /**
       * Write value into the index of the TensorArray.

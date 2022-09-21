@@ -11,9 +11,9 @@ A Node.js library for the new Vimeo API.
 | Full name          | vimeo |
 | Keywords           | vimeo |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 410246 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 52805.333333333336 |
+| # stars            | 244.0 |
 
 ## Links
 - [Homepage](https://github.com/vimeo/vimeo.js#readme)

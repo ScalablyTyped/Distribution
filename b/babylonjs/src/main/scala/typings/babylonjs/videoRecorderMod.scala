@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.PartialVideoRecorderOptio
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Blob
@@ -12,34 +13,34 @@ object videoRecorderMod {
   
   @JSImport("babylonjs/Misc/videoRecorder", "VideoRecorder")
   @js.native
-  class VideoRecorder protected () extends StObject {
+  open class VideoRecorder protected () extends StObject {
     /**
       * Create a new VideoCapture object which can help converting what you see in Babylon to a video file.
       * @param engine Defines the BabylonJS Engine you wish to record.
       * @param options Defines options that can be used to customize the capture.
       */
     def this(engine: Engine) = this()
-    def this(engine: Engine, options: Nullable[VideoRecorderOptions]) = this()
+    def this(engine: Engine, options: PartialVideoRecorderOptio) = this()
     
-    /* private */ var _canvas: js.Any = js.native
+    /* private */ var _canvas: Any = js.native
     
-    /* private */ var _fileName: js.Any = js.native
+    /* private */ var _fileName: Any = js.native
     
-    /* private */ var _handleDataAvailable: js.Any = js.native
+    /* private */ var _handleDataAvailable: Any = js.native
     
-    /* private */ var _handleError: js.Any = js.native
+    /* private */ var _handleError: Any = js.native
     
-    /* private */ var _handleStop: js.Any = js.native
+    /* private */ var _handleStop: Any = js.native
     
-    /* private */ var _mediaRecorder: js.Any = js.native
+    /* private */ var _mediaRecorder: Any = js.native
     
-    /* private */ val _options: js.Any = js.native
+    /* private */ val _options: Any = js.native
     
-    /* private */ var _recordedChunks: js.Any = js.native
+    /* private */ var _recordedChunks: Any = js.native
     
-    /* private */ var _reject: js.Any = js.native
+    /* private */ var _reject: Any = js.native
     
-    /* private */ var _resolve: js.Any = js.native
+    /* private */ var _resolve: Any = js.native
     
     /**
       * Releases internal resources used during the recording.
@@ -57,7 +58,7 @@ object videoRecorderMod {
       * If null no automatic download will start and you can rely on the promise to get the data back.
       * @param maxDuration Defines the maximum recording time in seconds.
       * It defaults to 7 seconds. A value of zero will not stop automatically, you would need to call stopRecording manually.
-      * @return A promise callback at the end of the recording with the video data in Blob.
+      * @returns A promise callback at the end of the recording with the video data in Blob.
       */
     def startRecording(): js.Promise[Blob] = js.native
     def startRecording(fileName: Unit, maxDuration: Double): js.Promise[Blob] = js.native
@@ -83,9 +84,9 @@ object videoRecorderMod {
       */
     inline def IsSupported(engine: Engine): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSupported")(engine.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("babylonjs/Misc/videoRecorder", "VideoRecorder._defaultOptions")
+    @JSImport("babylonjs/Misc/videoRecorder", "VideoRecorder._DefaultOptions")
     @js.native
-    val _defaultOptions: js.Any = js.native
+    val _DefaultOptions: Any = js.native
   }
   
   trait VideoRecorderOptions extends StObject {
@@ -115,7 +116,7 @@ object videoRecorderMod {
       
       inline def setAudioTracksUndefined: Self = StObject.set(x, "audioTracks", js.undefined)
       
-      inline def setAudioTracksVarargs(value: MediaStreamTrack*): Self = StObject.set(x, "audioTracks", js.Array(value :_*))
+      inline def setAudioTracksVarargs(value: MediaStreamTrack*): Self = StObject.set(x, "audioTracks", js.Array(value*))
       
       inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
       

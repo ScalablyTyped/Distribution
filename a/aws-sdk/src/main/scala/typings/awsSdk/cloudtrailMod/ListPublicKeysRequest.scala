@@ -9,7 +9,7 @@ trait ListPublicKeysRequest extends StObject {
   /**
     * Optionally specifies, in UTC, the end of the time range to look up public keys for CloudTrail digest files. If not specified, the current time is used.
     */
-  var EndTime: js.UndefOr[Date] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Reserved for future use.
@@ -19,7 +19,7 @@ trait ListPublicKeysRequest extends StObject {
   /**
     * Optionally specifies, in UTC, the start of the time range to look up public keys for CloudTrail digest files. If not specified, the current time is used, and the current public key is returned.
     */
-  var StartTime: js.UndefOr[Date] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object ListPublicKeysRequest {
   
@@ -30,7 +30,7 @@ object ListPublicKeysRequest {
   
   extension [Self <: ListPublicKeysRequest](x: Self) {
     
-    inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -38,7 +38,7 @@ object ListPublicKeysRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

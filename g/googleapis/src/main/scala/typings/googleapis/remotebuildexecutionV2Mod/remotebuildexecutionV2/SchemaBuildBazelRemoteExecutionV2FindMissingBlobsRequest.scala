@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request message for ContentAddressableStorage.FindMissingBlobs.
-  */
 trait SchemaBuildBazelRemoteExecutionV2FindMissingBlobsRequest extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBuildBazelRemoteExecutionV2FindMissingBlobsRequest {
     
     inline def setBlobDigestsUndefined: Self = StObject.set(x, "blobDigests", js.undefined)
     
-    inline def setBlobDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "blobDigests", js.Array(value :_*))
+    inline def setBlobDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "blobDigests", js.Array(value*))
   }
 }

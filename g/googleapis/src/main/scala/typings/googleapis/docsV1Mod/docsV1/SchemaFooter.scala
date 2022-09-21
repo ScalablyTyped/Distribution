@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A document footer.
-  */
 trait SchemaFooter extends StObject {
   
   /**
-    * The contents of the footer.  The indexes for a footer&#39;s content begin
-    * at zero.
+    * The contents of the footer. The indexes for a footer's content begin at zero.
     */
   var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.undefined
   
   /**
     * The ID of the footer.
     */
-  var footerId: js.UndefOr[String] = js.undefined
+  var footerId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFooter {
   
@@ -33,9 +29,11 @@ object SchemaFooter {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
+    
+    inline def setFooterIdNull: Self = StObject.set(x, "footerId", null)
     
     inline def setFooterIdUndefined: Self = StObject.set(x, "footerId", js.undefined)
   }

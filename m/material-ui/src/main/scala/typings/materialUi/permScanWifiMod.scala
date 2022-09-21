@@ -10,10 +10,10 @@ object permScanWifiMod {
   
   @JSImport("material-ui/svg-icons/action/perm-scan-wifi", JSImport.Default)
   @js.native
-  class default () extends ActionPermScanWifi
+  open class default () extends ActionPermScanWifi
   
   @JSImport("material-ui/svg-icons/action/perm-scan-wifi", "ActionPermScanWifi")
   @js.native
-  class ActionPermScanWifi ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPermScanWifi ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

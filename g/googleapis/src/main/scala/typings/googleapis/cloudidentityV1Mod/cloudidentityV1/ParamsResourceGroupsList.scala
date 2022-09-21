@@ -1,9 +1,5 @@
 package typings.googleapis.cloudidentityV1Mod.cloudidentityV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,29 +9,22 @@ trait ParamsResourceGroupsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The default page size is 200 (max 1000) for the BASIC view, and 50 (max
-    * 500) for the FULL view.
+    * The maximum number of results to return. Note that the number of results returned may be less than this value even if there are more available results. To fetch all results, clients must continue calling this method repeatedly until the response no longer contains a `next_page_token`. If unspecified, defaults to 200 for `View.BASIC` and to 50 for `View.FULL`. Must not be greater than 1000 for `View.BASIC` or 500 for `View.FULL`.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The next_page_token value returned from a previous list request, if any.
+    * The `next_page_token` value returned from a previous list request, if any.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * `Required`. May be made Optional in the future. Customer ID to list all
-    * groups from.
+    * Required. The parent resource under which to list all `Group` resources. Must be of the form `identitysources/{identity_source\}` for external- identity-mapped groups or `customers/{customer\}` for Google Groups. The `customer` must begin with "C" (for example, 'C046psxkn').
     */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * Group resource view to be returned. Defaults to [View.BASIC]().
+    * The level of detail to be returned. If unspecified, defaults to `View.BASIC`.
     */
   var view: js.UndefOr[String] = js.undefined
 }
@@ -47,10 +36,6 @@ object ParamsResourceGroupsList {
   }
   
   extension [Self <: ParamsResourceGroupsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

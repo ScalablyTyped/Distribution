@@ -1,10 +1,11 @@
 package typings.xhrMock
 
 import typings.std.AddEventListenerOptions
-import typings.std.BodyInit
 import typings.std.Document
 import typings.std.Event
 import typings.std.EventListenerOptions
+import typings.std.URL
+import typings.std.XMLHttpRequestBodyInit
 import typings.std.XMLHttpRequestResponseType
 import typings.std.XMLHttpRequestUpload
 import typings.std.stdStrings.readystatechange
@@ -18,7 +19,7 @@ object mockXMLHttpRequestMod {
   
   @JSImport("xhr-mock/lib/MockXMLHttpRequest", JSImport.Default)
   @js.native
-  class default () extends MockXMLHttpRequest
+  open class default () extends MockXMLHttpRequest
   /* static members */
   object default {
     
@@ -112,7 +113,7 @@ object mockXMLHttpRequestMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.std.EventTarget because Already inherited
   - typings.std.XMLHttpRequestEventTarget because Already inherited
-  - typings.std.XMLHttpRequest because var conflicts: onabort, onerror, onload, onloadend, onloadstart, onprogress, ontimeout. Inlined upload, status, withCredentials, OPENED, LOADING, responseURL, response, readyState, DONE, UNSENT, responseType, HEADERS_RECEIVED, responseText, timeout, responseXML, onreadystatechange, statusText, abort, addEventListener_readystatechange, addEventListener_readystatechange, addEventListener_readystatechange, getAllResponseHeaders, getResponseHeader, open, open, open, open, open, open, overrideMimeType, removeEventListener_readystatechange, removeEventListener_readystatechange, removeEventListener_readystatechange, send, send, send, setRequestHeader */ @js.native
+  - typings.std.XMLHttpRequest because var conflicts: onabort, onerror, onload, onloadend, onloadstart, onprogress, ontimeout. Inlined upload, status, withCredentials, OPENED, LOADING, responseURL, response, readyState, DONE, UNSENT, responseType, HEADERS_RECEIVED, responseText, timeout, responseXML, onreadystatechange, statusText, abort, addEventListener_readystatechange, addEventListener_readystatechange, addEventListener_readystatechange, getAllResponseHeaders, getResponseHeader, open, open, open, open, open, open, open, open, open, open, open, open, overrideMimeType, removeEventListener_readystatechange, removeEventListener_readystatechange, removeEventListener_readystatechange, send, send, send, setRequestHeader */ @js.native
   trait MockXMLHttpRequest
     extends typings.xhrMock.mockXMLHttpRequestEventTargetMod.default {
     
@@ -126,65 +127,70 @@ object mockXMLHttpRequestMod {
     
     val UNSENT: Double | ReadyState = js.native
     
-    /* private */ var _timeout: js.Any = js.native
+    /* private */ var _timeout: Any = js.native
     
-    /* private */ var _timeoutTimer: js.Any = js.native
+    /* private */ var _timeoutTimer: Any = js.native
     
-    /**
-      * Cancels any network activity.
-      */
+    /** Cancels any network activity. */
+    /* standard dom */
     def abort(): Unit = js.native
     
+    /* standard dom */
     @JSName("addEventListener")
-    def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+    def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
-    /* private */ def applyNetworkError(): js.Any = js.native
+    /* private */ def applyNetworkError(): Any = js.native
     
+    /* standard dom */
     def getAllResponseHeaders(): String = js.native
     
+    /* standard dom */
     def getResponseHeader(name: String): Null | String = js.native
     
-    /* private */ def handleError(error: js.Any): js.Any = js.native
+    /* private */ def handleError(error: Any): Any = js.native
     
-    /* private */ def handleResponseBody(res: js.Any): js.Any = js.native
+    /* private */ def handleResponseBody(res: Any): Any = js.native
     
-    /* private */ var isAborted: js.Any = js.native
+    /* private */ var isAborted: Any = js.native
     
-    /* private */ var isSending: js.Any = js.native
+    /* private */ var isSending: Any = js.native
     
-    /* private */ var isSynchronous: js.Any = js.native
+    /* private */ var isSynchronous: Any = js.native
     
-    /* private */ var isTimedOut: js.Any = js.native
+    /* private */ var isTimedOut: Any = js.native
     
-    /* private */ var isUploadComplete: js.Any = js.native
+    /* private */ var isUploadComplete: Any = js.native
     
     def msCachingEnabled(): Boolean = js.native
     
-    var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-    def onreadystatechange(ev: Event): js.Any = js.native
+    /* standard dom */
+    var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
+    def onreadystatechange(ev: Event): Any = js.native
     
     /**
       * Sets the request method, request URL, and synchronous flag.
-      * 
-      * Throws a "SyntaxError" DOMException if either method is not a valid HTTP method or url cannot be parsed.
-      * 
+      *
+      * Throws a "SyntaxError" DOMException if either method is not a valid method or url cannot be parsed.
+      *
       * Throws a "SecurityError" DOMException if method is a case-insensitive match for `CONNECT`, `TRACE`, or `TRACK`.
-      * 
+      *
       * Throws an "InvalidAccessError" DOMException if async is false, current global object is a Window object, and the timeout attribute is not zero or the responseType attribute is not the empty string.
       */
+    /* standard dom */
     def open(method: String, url: String): Unit = js.native
+    /* standard dom */
     def open(method: String, url: String, async: Boolean): Unit = js.native
     def open(method: String, url: String, async: Boolean, username: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, username: String, password: String): Unit = js.native
@@ -194,40 +200,48 @@ object mockXMLHttpRequestMod {
     def open(method: String, url: String, async: Unit, username: String, password: String): Unit = js.native
     def open(method: String, url: String, async: Unit, username: Null, password: String): Unit = js.native
     def open(method: String, url: String, async: Unit, username: Unit, password: String): Unit = js.native
+    def open(method: String, url: URL): Unit = js.native
+    def open(method: String, url: URL, async: Boolean): Unit = js.native
+    def open(method: String, url: URL, async: Boolean, username: String): Unit = js.native
+    def open(method: String, url: URL, async: Boolean, username: String, password: String): Unit = js.native
+    def open(method: String, url: URL, async: Boolean, username: Null, password: String): Unit = js.native
+    def open(method: String, url: URL, async: Boolean, username: Unit, password: String): Unit = js.native
     
     /**
-      * Acts as if the `Content-Type` header value for response is mime. (It does not actually change the header though.)
-      * 
+      * Acts as if the `Content-Type` header value for a response is mime. (It does not change the header.)
+      *
       * Throws an "InvalidStateError" DOMException if state is loading or done.
       */
+    /* standard dom */
     def overrideMimeType(mime: String): Unit = js.native
     
     var readyState: Double | ReadyState = js.native
     
-    /* private */ def receiveResponse(res: js.Any): js.Any = js.native
+    /* private */ def receiveResponse(res: Any): Any = js.native
     
+    /* standard dom */
     @JSName("removeEventListener")
-    def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+    def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: EventListenerOptions
     ): Unit = js.native
     
-    /* private */ def reportError(event: js.Any): js.Any = js.native
+    /* private */ def reportError(event: Any): Any = js.native
     
-    /* private */ var req: js.Any = js.native
+    /* private */ var req: Any = js.native
     
-    /* private */ var res: js.Any = js.native
+    /* private */ var res: Any = js.native
     
-    val response: js.Any = js.native
+    val response: Any = js.native
     
     val responseText: String = js.native
     
@@ -239,27 +253,28 @@ object mockXMLHttpRequestMod {
     
     /**
       * Initiates the request. The body argument provides the request body, if any, and is ignored if the request method is GET or HEAD.
-      * 
+      *
       * Throws an "InvalidStateError" DOMException if either state is not opened or the send() flag is set.
       */
+    /* standard dom */
     def send(): Unit = js.native
-    def send(body: js.Any): Unit = js.native
-    def send(body: BodyInit): Unit = js.native
+    def send(body: Any | XMLHttpRequestBodyInit): Unit = js.native
     def send(body: Document): Unit = js.native
     
-    /* private */ def sendAsync(): js.Any = js.native
+    /* private */ def sendAsync(): Any = js.native
     
-    /* private */ def sendRequest(req: js.Any): js.Any = js.native
+    /* private */ def sendRequest(req: Any): Any = js.native
     
-    /* private */ def sendSync(): js.Any = js.native
+    /* private */ def sendSync(): Any = js.native
     
     /**
       * Combines a header in author request headers.
-      * 
+      *
       * Throws an "InvalidStateError" DOMException if either state is not opened or the send() flag is set.
-      * 
+      *
       * Throws a "SyntaxError" DOMException if name is not a header name or if value is not a header value.
       */
+    /* standard dom */
     def setRequestHeader(name: String, value: String): Unit = js.native
     
     val status: Double = js.native

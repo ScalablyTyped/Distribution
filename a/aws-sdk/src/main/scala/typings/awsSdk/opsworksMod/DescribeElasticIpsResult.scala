@@ -24,6 +24,6 @@ object DescribeElasticIpsResult {
     
     inline def setElasticIpsUndefined: Self = StObject.set(x, "ElasticIps", js.undefined)
     
-    inline def setElasticIpsVarargs(value: ElasticIp*): Self = StObject.set(x, "ElasticIps", js.Array(value :_*))
+    inline def setElasticIpsVarargs(value: ElasticIp*): Self = StObject.set(x, "ElasticIps", js.Array(value*))
   }
 }

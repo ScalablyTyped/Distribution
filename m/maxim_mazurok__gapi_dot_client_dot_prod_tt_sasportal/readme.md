@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_prod_tt_sasportal
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220811
 
 ## Library description:
 TypeScript typings for SAS Portal API (Testing) v1alpha1
@@ -10,10 +10,10 @@ TypeScript typings for SAS Portal API (Testing) v1alpha1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.prod_tt_sasportal |
 | Keywords           | - |
-| # releases         | 53 |
-| # dependents       | 1 |
-| # downloads        | 3640 |
-| # stars            | 0 |
+| # releases         | 295 |
+| # dependents       | 0.0 |
+| # downloads        | 2211.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

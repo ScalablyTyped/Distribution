@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "IconButton")
 @js.native
-class IconButton ()
-  extends Component[IconButtonProps, js.Object, js.Any]
+open class IconButton ()
+  extends Component[IconButtonProps, js.Object, Any]

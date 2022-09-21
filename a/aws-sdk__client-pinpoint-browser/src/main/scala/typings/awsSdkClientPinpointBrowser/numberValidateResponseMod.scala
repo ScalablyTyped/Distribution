@@ -8,5 +8,5 @@ object numberValidateResponseMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_NumberValidateResponse", "_NumberValidateResponse")
   @js.native
-  val NumberValidateResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val NumberValidateResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

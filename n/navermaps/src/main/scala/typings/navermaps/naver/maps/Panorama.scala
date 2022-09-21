@@ -9,6 +9,10 @@ trait Panorama
   extends StObject
      with KVO {
   
+  var aroundControl: AroundControl | Null = js.native
+  
+  var controls: js.Array[KVOArray] = js.native
+  
   def getLocation(): PanoramaLocation = js.native
   
   def getMaxScale(): Double = js.native
@@ -35,7 +39,7 @@ trait Panorama
   
   def getZoom(): Double = js.native
   
-  def setOptions(key: String, value: js.Any): Unit = js.native
+  def setOptions(key: String, value: Any): Unit = js.native
   def setOptions(newOptions: PanoramaOptions): Unit = js.native
   
   def setPanoId(panoId: String): Unit = js.native

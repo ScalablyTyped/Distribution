@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object storageMod {
   
-  @JSImport("class-transformer/storage", "defaultMetadataStorage")
+  @JSImport("class-transformer/types/storage", "defaultMetadataStorage")
   @js.native
   val defaultMetadataStorage: MetadataStorage = js.native
 }

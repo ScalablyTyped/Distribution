@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventsMessage extends StObject {
   
   /**
-    *  A list of Event instances. 
+    * A list of Event instances.
     */
   var Events: js.UndefOr[EventList] = js.undefined
   
   /**
-    *  An optional pagination token provided by a previous Events request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
+    * An optional pagination token provided by a previous Events request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
   var Marker: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object EventsMessage {
     
     inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

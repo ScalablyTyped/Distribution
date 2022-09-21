@@ -16,7 +16,13 @@ trait Environment extends StObject {
   /** The dataset for the current project where various workflow related tables are stored. The supported resource type is: Google BigQuery: bigquery.googleapis.com/{dataset} */
   var dataset: js.UndefOr[String] = js.undefined
   
-  /** The list of experiments to enable. */
+  /** Any debugging options to be supplied to the job. */
+  var debugOptions: js.UndefOr[DebugOptions] = js.undefined
+  
+  /**
+    * The list of experiments to enable. This field should be used for SDK related experiments and not for service related experiments. The proper field for service related experiments is
+    * service_options.
+    */
   var experiments: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Which Flexible Resource Scheduling mode to run in. */
@@ -26,7 +32,7 @@ trait Environment extends StObject {
   var internalExperiments: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -36,7 +42,7 @@ trait Environment extends StObject {
   var sdkPipelineOptions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
   ] = js.undefined
   
   /** Identity to run virtual machines as. Defaults to the default account. */
@@ -49,6 +55,15 @@ trait Environment extends StObject {
   var serviceKmsKeyName: js.UndefOr[String] = js.undefined
   
   /**
+    * The list of service options to enable. This field should be used for service related experiments only. These experiments, when graduating to GA, should be replaced by dedicated
+    * fields or become default (i.e. always on).
+    */
+  var serviceOptions: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** Output only. The shuffle mode used for the job. */
+  var shuffleMode: js.UndefOr[String] = js.undefined
+  
+  /**
     * The prefix of the resources the system should use for temporary storage. The system will append the suffix "/temp-{JOBNAME} to this resource prefix, where {JOBNAME} is the value of
     * the job_name field. The resulting bucket and object prefix is used as the prefix of the resources used to store temporary data needed during the job execution. NOTE: This will
     * override the value in taskrunner_settings. The supported resource type is: Google Cloud Storage: storage.googleapis.com/{bucket}/{object} bucket.storage.googleapis.com/{object}
@@ -59,14 +74,14 @@ trait Environment extends StObject {
   var userAgent: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
   ] = js.undefined
   
   /** A structure describing which components and their versions of the service are required in order to run the job. */
   var version: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
   ] = js.undefined
   
   /** The worker pools. At least one "harness" worker pool must be specified in order for the job to have workers. */
@@ -101,11 +116,15 @@ object Environment {
     
     inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
+    inline def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    
     inline def setExperiments(value: js.Array[String]): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
     
     inline def setExperimentsUndefined: Self = StObject.set(x, "experiments", js.undefined)
     
-    inline def setExperimentsVarargs(value: String*): Self = StObject.set(x, "experiments", js.Array(value :_*))
+    inline def setExperimentsVarargs(value: String*): Self = StObject.set(x, "experiments", js.Array(value*))
     
     inline def setFlexResourceSchedulingGoal(value: String): Self = StObject.set(x, "flexResourceSchedulingGoal", value.asInstanceOf[js.Any])
     
@@ -114,7 +133,7 @@ object Environment {
     inline def setInternalExperiments(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
     ): Self = StObject.set(x, "internalExperiments", value.asInstanceOf[js.Any])
     
     inline def setInternalExperimentsUndefined: Self = StObject.set(x, "internalExperiments", js.undefined)
@@ -122,7 +141,7 @@ object Environment {
     inline def setSdkPipelineOptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
     ): Self = StObject.set(x, "sdkPipelineOptions", value.asInstanceOf[js.Any])
     
     inline def setSdkPipelineOptionsUndefined: Self = StObject.set(x, "sdkPipelineOptions", js.undefined)
@@ -135,6 +154,16 @@ object Environment {
     
     inline def setServiceKmsKeyNameUndefined: Self = StObject.set(x, "serviceKmsKeyName", js.undefined)
     
+    inline def setServiceOptions(value: js.Array[String]): Self = StObject.set(x, "serviceOptions", value.asInstanceOf[js.Any])
+    
+    inline def setServiceOptionsUndefined: Self = StObject.set(x, "serviceOptions", js.undefined)
+    
+    inline def setServiceOptionsVarargs(value: String*): Self = StObject.set(x, "serviceOptions", js.Array(value*))
+    
+    inline def setShuffleMode(value: String): Self = StObject.set(x, "shuffleMode", value.asInstanceOf[js.Any])
+    
+    inline def setShuffleModeUndefined: Self = StObject.set(x, "shuffleMode", js.undefined)
+    
     inline def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
     
     inline def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
@@ -142,7 +171,7 @@ object Environment {
     inline def setUserAgent(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
     ): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
@@ -150,7 +179,7 @@ object Environment {
     inline def setVersion(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment & TopLevel[Any]
     ): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
@@ -159,7 +188,7 @@ object Environment {
     
     inline def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
     
-    inline def setWorkerPoolsVarargs(value: WorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
+    inline def setWorkerPoolsVarargs(value: WorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value*))
     
     inline def setWorkerRegion(value: String): Self = StObject.set(x, "workerRegion", value.asInstanceOf[js.Any])
     

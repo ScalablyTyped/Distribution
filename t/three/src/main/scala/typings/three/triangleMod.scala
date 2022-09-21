@@ -1,6 +1,8 @@
 package typings.three
 
 import typings.three.box3Mod.Box3
+import typings.three.bufferAttributeMod.BufferAttribute
+import typings.three.interleavedBufferAttributeMod.InterleavedBufferAttribute
 import typings.three.planeMod.Plane
 import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
@@ -12,7 +14,7 @@ object triangleMod {
   
   @JSImport("three/src/math/Triangle", "Triangle")
   @js.native
-  class Triangle () extends StObject {
+  open class Triangle () extends StObject {
     def this(a: Vector3) = this()
     def this(a: Unit, b: Vector3) = this()
     def this(a: Vector3, b: Vector3) = this()
@@ -22,18 +24,18 @@ object triangleMod {
     def this(a: Vector3, b: Vector3, c: Vector3) = this()
     
     /**
-    	 * @default new THREE.Vector3()
-    	 */
+      * @default new THREE.Vector3()
+      */
     var a: Vector3 = js.native
     
     /**
-    	 * @default new THREE.Vector3()
-    	 */
+      * @default new THREE.Vector3()
+      */
     var b: Vector3 = js.native
     
     /**
-    	 * @default new THREE.Vector3()
-    	 */
+      * @default new THREE.Vector3()
+      */
     var c: Vector3 = js.native
     
     def closestPointToPoint(point: Vector3, target: Vector3): Vector3 = js.native
@@ -62,7 +64,10 @@ object triangleMod {
     
     def set(a: Vector3, b: Vector3, c: Vector3): Triangle = js.native
     
-    def setFromPointsAndIndices(points: js.Array[Vector3], i0: Double, i1: Double, i2: Double): Triangle = js.native
+    def setFromAttributeAndIndices(attribute: BufferAttribute, i0: Double, i1: Double, i2: Double): this.type = js.native
+    def setFromAttributeAndIndices(attribute: InterleavedBufferAttribute, i0: Double, i1: Double, i2: Double): this.type = js.native
+    
+    def setFromPointsAndIndices(points: js.Array[Vector3], i0: Double, i1: Double, i2: Double): this.type = js.native
   }
   /* static members */
   object Triangle {

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait HeaderFooterType extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.HeaderFooterType")
 @js.native
@@ -15,7 +16,8 @@ object HeaderFooterType extends StObject {
   
   /**
     * Returns all headers or footers on even-numbered pages of a section.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait evenPages
@@ -24,7 +26,8 @@ object HeaderFooterType extends StObject {
   
   /**
     * Returns the header or footer on the first page of a section.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait firstPage
@@ -32,8 +35,9 @@ object HeaderFooterType extends StObject {
        with HeaderFooterType
   
   /**
-    * Returns the header or footer on all pages of a section, but excludes the first page or odd pages if they are different.
-    *
+    * Returns the header or footer on all pages of a section, but excludes the first page or even pages if they are different.
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait primary

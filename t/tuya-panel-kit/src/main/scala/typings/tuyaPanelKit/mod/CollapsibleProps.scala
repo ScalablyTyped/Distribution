@@ -12,20 +12,102 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CollapsibleProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 子元素对齐方式
+    * @defaultValue 'top'
+    */
+  /**
+    * @language en-US
+    * @description Alignment of child elements
+    * @defaultValue 'top'
+    */
   var align: js.UndefOr[top | center | bottom] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 嵌套子元素
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Nested sub elements
+    * @defaultValue null
+    */
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否折叠
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Is it folded
+    * @defaultValue true
+    */
   var collapsed: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 需要折叠的高度
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Height to be folded
+    * @defaultValue 0
+    */
   var collapsedHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 折叠动画时长
+    * @defaultValue 300
+    */
+  /**
+    * @language en-US
+    * @description How long does the animation take to collapse
+    * @defaultValue 300
+    */
   var duration: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画缓动函数
+    * @defaultValue 'EaseOutCubic'
+    */
+  /**
+    * @language en-US
+    * @description Animation function
+    * @defaultValue 'EaseOutCubic'
+    */
   var easing: js.UndefOr[String | js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 变更回调函数
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Change callback function
+    * @defaultValue () => {}
+    */
   var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 容器样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object CollapsibleProps {

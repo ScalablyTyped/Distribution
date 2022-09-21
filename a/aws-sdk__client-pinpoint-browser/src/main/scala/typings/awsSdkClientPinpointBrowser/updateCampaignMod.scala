@@ -8,5 +8,5 @@ object updateCampaignMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateCampaign", "UpdateCampaign")
   @js.native
-  val UpdateCampaign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UpdateCampaign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

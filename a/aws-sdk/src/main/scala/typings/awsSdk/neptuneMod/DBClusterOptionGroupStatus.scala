@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DBClusterOptionGroupStatus extends StObject {
   
   /**
-    * Specifies the name of the DB cluster option group.
+    * Not supported by Neptune.
     */
   var DBClusterOptionGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the status of the DB cluster option group.
+    * Not supported by Neptune.
     */
   var Status: js.UndefOr[String] = js.undefined
 }

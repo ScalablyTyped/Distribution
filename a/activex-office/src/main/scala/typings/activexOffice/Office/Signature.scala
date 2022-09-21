@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Signature extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   var AttachCertificate: Boolean = js.native
   
@@ -37,68 +37,28 @@ trait Signature extends StObject {
   /* private */ @JSName("Office.Signature_typekey")
   var OfficeDotSignature_typekey: Signature = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Setup: SignatureSetup = js.native
   
   def ShowDetails(): Unit = js.native
   
   def Sign(): Unit = js.native
-  def Sign(varSigImg: js.Any): Unit = js.native
-  def Sign(varSigImg: js.Any, varDelSuggSigner: js.Any): Unit = js.native
-  def Sign(varSigImg: js.Any, varDelSuggSigner: js.Any, varDelSuggSignerLine2: js.Any): Unit = js.native
-  def Sign(
-    varSigImg: js.Any,
-    varDelSuggSigner: js.Any,
-    varDelSuggSignerLine2: js.Any,
-    varDelSuggSignerEmail: js.Any
-  ): Unit = js.native
-  def Sign(
-    varSigImg: js.Any,
-    varDelSuggSigner: js.Any,
-    varDelSuggSignerLine2: Unit,
-    varDelSuggSignerEmail: js.Any
-  ): Unit = js.native
-  def Sign(varSigImg: js.Any, varDelSuggSigner: Unit, varDelSuggSignerLine2: js.Any): Unit = js.native
-  def Sign(
-    varSigImg: js.Any,
-    varDelSuggSigner: Unit,
-    varDelSuggSignerLine2: js.Any,
-    varDelSuggSignerEmail: js.Any
-  ): Unit = js.native
-  def Sign(
-    varSigImg: js.Any,
-    varDelSuggSigner: Unit,
-    varDelSuggSignerLine2: Unit,
-    varDelSuggSignerEmail: js.Any
-  ): Unit = js.native
-  def Sign(varSigImg: Unit, varDelSuggSigner: js.Any): Unit = js.native
-  def Sign(varSigImg: Unit, varDelSuggSigner: js.Any, varDelSuggSignerLine2: js.Any): Unit = js.native
-  def Sign(
-    varSigImg: Unit,
-    varDelSuggSigner: js.Any,
-    varDelSuggSignerLine2: js.Any,
-    varDelSuggSignerEmail: js.Any
-  ): Unit = js.native
-  def Sign(
-    varSigImg: Unit,
-    varDelSuggSigner: js.Any,
-    varDelSuggSignerLine2: Unit,
-    varDelSuggSignerEmail: js.Any
-  ): Unit = js.native
-  def Sign(varSigImg: Unit, varDelSuggSigner: Unit, varDelSuggSignerLine2: js.Any): Unit = js.native
-  def Sign(
-    varSigImg: Unit,
-    varDelSuggSigner: Unit,
-    varDelSuggSignerLine2: js.Any,
-    varDelSuggSignerEmail: js.Any
-  ): Unit = js.native
-  def Sign(
-    varSigImg: Unit,
-    varDelSuggSigner: Unit,
-    varDelSuggSignerLine2: Unit,
-    varDelSuggSignerEmail: js.Any
-  ): Unit = js.native
+  def Sign(varSigImg: Any): Unit = js.native
+  def Sign(varSigImg: Any, varDelSuggSigner: Any): Unit = js.native
+  def Sign(varSigImg: Any, varDelSuggSigner: Any, varDelSuggSignerLine2: Any): Unit = js.native
+  def Sign(varSigImg: Any, varDelSuggSigner: Any, varDelSuggSignerLine2: Any, varDelSuggSignerEmail: Any): Unit = js.native
+  def Sign(varSigImg: Any, varDelSuggSigner: Any, varDelSuggSignerLine2: Unit, varDelSuggSignerEmail: Any): Unit = js.native
+  def Sign(varSigImg: Any, varDelSuggSigner: Unit, varDelSuggSignerLine2: Any): Unit = js.native
+  def Sign(varSigImg: Any, varDelSuggSigner: Unit, varDelSuggSignerLine2: Any, varDelSuggSignerEmail: Any): Unit = js.native
+  def Sign(varSigImg: Any, varDelSuggSigner: Unit, varDelSuggSignerLine2: Unit, varDelSuggSignerEmail: Any): Unit = js.native
+  def Sign(varSigImg: Unit, varDelSuggSigner: Any): Unit = js.native
+  def Sign(varSigImg: Unit, varDelSuggSigner: Any, varDelSuggSignerLine2: Any): Unit = js.native
+  def Sign(varSigImg: Unit, varDelSuggSigner: Any, varDelSuggSignerLine2: Any, varDelSuggSignerEmail: Any): Unit = js.native
+  def Sign(varSigImg: Unit, varDelSuggSigner: Any, varDelSuggSignerLine2: Unit, varDelSuggSignerEmail: Any): Unit = js.native
+  def Sign(varSigImg: Unit, varDelSuggSigner: Unit, varDelSuggSignerLine2: Any): Unit = js.native
+  def Sign(varSigImg: Unit, varDelSuggSigner: Unit, varDelSuggSignerLine2: Any, varDelSuggSignerEmail: Any): Unit = js.native
+  def Sign(varSigImg: Unit, varDelSuggSigner: Unit, varDelSuggSignerLine2: Unit, varDelSuggSignerEmail: Any): Unit = js.native
   
   val SignDate: VarDate = js.native
   

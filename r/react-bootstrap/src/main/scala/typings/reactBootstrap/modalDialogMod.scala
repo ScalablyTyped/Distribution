@@ -11,12 +11,10 @@ object modalDialogMod {
   
   @JSImport("react-bootstrap/lib/ModalDialog", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ModalDialogProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ModalDialogProps, js.Object, Any]
   
-  @js.native
-  trait ModalDialog
-    extends Component[ModalDialogProps, js.Object, js.Any]
+  type ModalDialog = Component[ModalDialogProps, js.Object, Any]
   
   trait ModalDialogProps
     extends StObject

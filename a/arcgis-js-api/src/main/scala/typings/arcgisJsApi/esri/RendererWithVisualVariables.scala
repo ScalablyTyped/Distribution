@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.esri.ClassBreaksRenderer
   - typings.arcgisJsApi.esri.UniqueValueRenderer
   - typings.arcgisJsApi.esri.DotDensityRenderer
+  - typings.arcgisJsApi.esri.DictionaryRenderer
+  - typings.arcgisJsApi.esri.PieChartRenderer
 */
 trait RendererWithVisualVariables
   extends StObject

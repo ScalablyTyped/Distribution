@@ -3,7 +3,6 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.calendarTypesMod.ICalendar
 import typings.officeUiFabricReact.calendarTypesMod.ICalendarProps
 import typings.react.mod.Component
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,47 +11,47 @@ object calendarCalendarMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Calendar/Calendar", "Calendar")
   @js.native
-  class Calendar protected ()
-    extends Component[ICalendarProps, ICalendarState, js.Any]
+  open class Calendar protected ()
+    extends Component[ICalendarProps, ICalendarState, Any]
        with ICalendar {
     def this(props: ICalendarProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MCalendar(nextProps: ICalendarProps): Unit = js.native
     
-    /* private */ var _dayPicker: js.Any = js.native
+    /* private */ var _dayPicker: Any = js.native
     
-    /* private */ var _focusOnUpdate: js.Any = js.native
+    /* private */ var _focusOnUpdate: Any = js.native
     
-    /* private */ var _handleEscKey: js.Any = js.native
+    /* private */ var _handleEscKey: Any = js.native
     
-    /* private */ var _hasFocus: js.Any = js.native
+    /* private */ var _hasFocus: Any = js.native
     
-    /* private */ var _monthPicker: js.Any = js.native
+    /* private */ var _monthPicker: Any = js.native
     
-    /* private */ var _navigateDayPickerDay: js.Any = js.native
+    /* private */ var _navigateDayPickerDay: Any = js.native
     
-    /* private */ var _navigateMonthPickerDay: js.Any = js.native
+    /* private */ var _navigateMonthPickerDay: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onDatePickerPopupKeyDown: js.Any = js.native
+    /* private */ var _onDatePickerPopupKeyDown: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
-    /* private */ var _onGotoToday: js.Any = js.native
+    /* private */ var _onGotoToday: Any = js.native
     
-    /* private */ var _onGotoTodayClick: js.Any = js.native
+    /* private */ var _onGotoTodayClick: Any = js.native
     
-    /* private */ var _onGotoTodayKeyDown: js.Any = js.native
+    /* private */ var _onGotoTodayKeyDown: Any = js.native
     
-    /* private */ var _onHeaderSelect: js.Any = js.native
+    /* private */ var _onHeaderSelect: Any = js.native
     
-    /* private */ var _onNavigateDayDate: js.Any = js.native
+    /* private */ var _onNavigateDayDate: Any = js.native
     
-    /* private */ var _onNavigateMonthDate: js.Any = js.native
+    /* private */ var _onNavigateMonthDate: Any = js.native
     
-    /* private */ var _onSelectDate: js.Any = js.native
+    /* private */ var _onSelectDate: Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MCalendar(): Unit = js.native
@@ -83,13 +82,13 @@ object calendarCalendarMod {
     var isMonthPickerVisible: js.UndefOr[Boolean] = js.undefined
     
     /** The currently focused date in the day picker, but not necessarily selected */
-    var navigatedDayDate: js.UndefOr[Date] = js.undefined
+    var navigatedDayDate: js.UndefOr[js.Date] = js.undefined
     
     /** The currently focused date in the month picker, but not necessarily selected */
-    var navigatedMonthDate: js.UndefOr[Date] = js.undefined
+    var navigatedMonthDate: js.UndefOr[js.Date] = js.undefined
     
     /** The currently selected date in the calendar */
-    var selectedDate: js.UndefOr[Date] = js.undefined
+    var selectedDate: js.UndefOr[js.Date] = js.undefined
   }
   object ICalendarState {
     
@@ -108,15 +107,15 @@ object calendarCalendarMod {
       
       inline def setIsMonthPickerVisibleUndefined: Self = StObject.set(x, "isMonthPickerVisible", js.undefined)
       
-      inline def setNavigatedDayDate(value: Date): Self = StObject.set(x, "navigatedDayDate", value.asInstanceOf[js.Any])
+      inline def setNavigatedDayDate(value: js.Date): Self = StObject.set(x, "navigatedDayDate", value.asInstanceOf[js.Any])
       
       inline def setNavigatedDayDateUndefined: Self = StObject.set(x, "navigatedDayDate", js.undefined)
       
-      inline def setNavigatedMonthDate(value: Date): Self = StObject.set(x, "navigatedMonthDate", value.asInstanceOf[js.Any])
+      inline def setNavigatedMonthDate(value: js.Date): Self = StObject.set(x, "navigatedMonthDate", value.asInstanceOf[js.Any])
       
       inline def setNavigatedMonthDateUndefined: Self = StObject.set(x, "navigatedMonthDate", js.undefined)
       
-      inline def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+      inline def setSelectedDate(value: js.Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
       
       inline def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
     }

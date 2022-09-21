@@ -61,7 +61,7 @@ object TestCase {
     
     inline def setStackTracesUndefined: Self = StObject.set(x, "stackTraces", js.undefined)
     
-    inline def setStackTracesVarargs(value: StackTrace*): Self = StObject.set(x, "stackTraces", js.Array(value :_*))
+    inline def setStackTracesVarargs(value: StackTrace*): Self = StObject.set(x, "stackTraces", js.Array(value*))
     
     inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
@@ -83,6 +83,6 @@ object TestCase {
     
     inline def setToolOutputsUndefined: Self = StObject.set(x, "toolOutputs", js.undefined)
     
-    inline def setToolOutputsVarargs(value: ToolOutputReference*): Self = StObject.set(x, "toolOutputs", js.Array(value :_*))
+    inline def setToolOutputsVarargs(value: ToolOutputReference*): Self = StObject.set(x, "toolOutputs", js.Array(value*))
   }
 }

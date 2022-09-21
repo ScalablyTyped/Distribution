@@ -29,7 +29,7 @@ object GetResourceConfigHistoryResponse {
     
     inline def setConfigurationItemsUndefined: Self = StObject.set(x, "configurationItems", js.undefined)
     
-    inline def setConfigurationItemsVarargs(value: ConfigurationItem*): Self = StObject.set(x, "configurationItems", js.Array(value :_*))
+    inline def setConfigurationItemsVarargs(value: ConfigurationItem*): Self = StObject.set(x, "configurationItems", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

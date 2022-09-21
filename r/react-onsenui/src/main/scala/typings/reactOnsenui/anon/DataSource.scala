@@ -30,7 +30,7 @@ object DataSource {
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDataSourceVarargs(value: T*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: T*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     

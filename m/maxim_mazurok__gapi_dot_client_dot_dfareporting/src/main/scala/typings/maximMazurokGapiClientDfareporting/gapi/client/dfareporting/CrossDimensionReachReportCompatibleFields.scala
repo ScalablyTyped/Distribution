@@ -34,13 +34,13 @@ object CrossDimensionReachReportCompatibleFields {
     
     inline def setBreakdownUndefined: Self = StObject.set(x, "breakdown", js.undefined)
     
-    inline def setBreakdownVarargs(value: Dimension*): Self = StObject.set(x, "breakdown", js.Array(value :_*))
+    inline def setBreakdownVarargs(value: Dimension*): Self = StObject.set(x, "breakdown", js.Array(value*))
     
     inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
     inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -50,12 +50,12 @@ object CrossDimensionReachReportCompatibleFields {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setOverlapMetrics(value: js.Array[Metric]): Self = StObject.set(x, "overlapMetrics", value.asInstanceOf[js.Any])
     
     inline def setOverlapMetricsUndefined: Self = StObject.set(x, "overlapMetrics", js.undefined)
     
-    inline def setOverlapMetricsVarargs(value: Metric*): Self = StObject.set(x, "overlapMetrics", js.Array(value :_*))
+    inline def setOverlapMetricsVarargs(value: Metric*): Self = StObject.set(x, "overlapMetrics", js.Array(value*))
   }
 }

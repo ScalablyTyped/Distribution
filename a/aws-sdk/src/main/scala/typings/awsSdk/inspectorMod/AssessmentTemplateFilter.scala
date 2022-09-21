@@ -42,6 +42,6 @@ object AssessmentTemplateFilter {
     
     inline def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
     
-    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value*))
   }
 }

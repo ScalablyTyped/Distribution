@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait commentsConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var currentUser: js.UndefOr[Double] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -32,9 +32,11 @@ trait commentsConfig extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
+  var highlight: js.UndefOr[Boolean | String] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var listItem: js.UndefOr[js.Any] = js.undefined
+  var listItem: js.UndefOr[Any] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
@@ -52,7 +54,7 @@ trait commentsConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[Any] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -60,15 +62,15 @@ trait commentsConfig extends StObject {
   
   var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.undefined
+  var scheme: js.UndefOr[Any] = js.undefined
   
   var sendAction: js.UndefOr[String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[Any] = js.undefined
   
-  var users: js.UndefOr[js.Array[js.Any] | String | DataCollection] = js.undefined
+  var users: js.UndefOr[js.Array[Any] | String | DataCollection] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -83,7 +85,7 @@ object commentsConfig {
   
   extension [Self <: commentsConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -95,7 +97,7 @@ object commentsConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -103,11 +105,11 @@ object commentsConfig {
     
     inline def setCurrentUserUndefined: Self = StObject.set(x, "currentUser", js.undefined)
     
-    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
@@ -129,11 +131,15 @@ object commentsConfig {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
+    inline def setHighlight(value: Boolean | String): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setListItem(value: js.Any): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+    inline def setListItem(value: Any): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     
     inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
     
@@ -169,7 +175,7 @@ object commentsConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -185,7 +191,7 @@ object commentsConfig {
     
     inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
-    inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
@@ -197,15 +203,15 @@ object commentsConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setUsers(value: js.Array[js.Any] | String | DataCollection): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[Any] | String | DataCollection): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    inline def setUsersVarargs(value: js.Any*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: Any*): Self = StObject.set(x, "users", js.Array(value*))
     
     inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

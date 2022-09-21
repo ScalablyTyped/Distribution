@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.MoveOrCopyRuleAction")
 @js.native
-/* private */ class MoveOrCopyRuleAction ()
+/* private */ open class MoveOrCopyRuleAction ()
   extends StObject
      with typings.activexOutlook.Outlook.MoveOrCopyRuleAction {
   
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotMoveOrCopyRuleAction_typekey: typings.activexOutlook.Outlook.MoveOrCopyRuleAction = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

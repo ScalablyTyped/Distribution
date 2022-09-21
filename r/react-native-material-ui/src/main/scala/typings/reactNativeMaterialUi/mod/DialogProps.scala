@@ -25,7 +25,7 @@ object DialogProps {
     
     inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     

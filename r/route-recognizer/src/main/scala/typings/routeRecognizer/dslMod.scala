@@ -19,7 +19,7 @@ object dslMod {
   
   @JSImport("route-recognizer/dist/route-recognizer/dsl", "Matcher")
   @js.native
-  class Matcher () extends StObject {
+  open class Matcher () extends StObject {
     def this(target: String) = this()
     
     def add(path: String, target: String): Unit = js.native
@@ -59,11 +59,7 @@ object dslMod {
     }
   }
   
-  @js.native
-  trait MatchCallback extends StObject {
-    
-    def apply(`match`: MatchDSL): Unit = js.native
-  }
+  type MatchCallback = js.Function1[/* match */ MatchDSL, Unit]
   
   @js.native
   trait MatchDSL extends StObject {
@@ -103,7 +99,7 @@ object dslMod {
       
       inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      inline def setQueryParamsVarargs(value: String*): Self = StObject.set(x, "queryParams", js.Array(value :_*))
+      inline def setQueryParamsVarargs(value: String*): Self = StObject.set(x, "queryParams", js.Array(value*))
     }
   }
   

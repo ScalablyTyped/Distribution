@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", JSImport.Default)
 @js.native
-class default protected () extends InteractiveMap {
+open class default protected () extends InteractiveMap {
   def this(props: InteractiveMapProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: InteractiveMapProps, context: js.Any) = this()
+  def this(props: InteractiveMapProps, context: Any) = this()
 }

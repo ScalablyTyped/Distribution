@@ -6,20 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Color extends StObject {
+  trait Class extends StObject {
+    
+    var `class`: js.UndefOr[String | Null] = js.undefined
     
     var color: js.UndefOr[String | Null] = js.undefined
     
     var width: js.UndefOr[Double | Null] = js.undefined
   }
-  object Color {
+  object Class {
     
-    inline def apply(): Color = {
+    inline def apply(): Class = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Color]
+      __obj.asInstanceOf[Class]
     }
     
-    extension [Self <: Color](x: Self) {
+    extension [Self <: Class](x: Self) {
+      
+      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      
+      inline def setClassNull: Self = StObject.set(x, "class", null)
+      
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

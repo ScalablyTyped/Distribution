@@ -10,7 +10,7 @@ object zoomToExtentMod {
   
   @JSImport("ol/control/ZoomToExtent", JSImport.Default)
   @js.native
-  class default () extends ZoomToExtent {
+  open class default () extends ZoomToExtent {
     def this(opt_options: Options) = this()
   }
   

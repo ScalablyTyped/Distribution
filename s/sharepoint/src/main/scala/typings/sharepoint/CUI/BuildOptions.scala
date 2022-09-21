@@ -10,7 +10,7 @@ trait BuildOptions extends StObject {
   
   var clientID: String
   
-  var dataExtensions: js.Array[js.Any]
+  var dataExtensions: js.Array[Any]
   
   var fixedPositioningEnabled: Boolean
   
@@ -25,7 +25,7 @@ object BuildOptions {
   inline def apply(
     attachToDOM: Boolean,
     clientID: String,
-    dataExtensions: js.Array[js.Any],
+    dataExtensions: js.Array[Any],
     fixedPositioningEnabled: Boolean,
     lazyMenuInit: Boolean,
     trimmedIds: js.Array[String],
@@ -41,9 +41,9 @@ object BuildOptions {
     
     inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
-    inline def setDataExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "dataExtensions", value.asInstanceOf[js.Any])
+    inline def setDataExtensions(value: js.Array[Any]): Self = StObject.set(x, "dataExtensions", value.asInstanceOf[js.Any])
     
-    inline def setDataExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "dataExtensions", js.Array(value :_*))
+    inline def setDataExtensionsVarargs(value: Any*): Self = StObject.set(x, "dataExtensions", js.Array(value*))
     
     inline def setFixedPositioningEnabled(value: Boolean): Self = StObject.set(x, "fixedPositioningEnabled", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object BuildOptions {
     
     inline def setTrimmedIds(value: js.Array[String]): Self = StObject.set(x, "trimmedIds", value.asInstanceOf[js.Any])
     
-    inline def setTrimmedIdsVarargs(value: String*): Self = StObject.set(x, "trimmedIds", js.Array(value :_*))
+    inline def setTrimmedIdsVarargs(value: String*): Self = StObject.set(x, "trimmedIds", js.Array(value*))
     
     inline def setValidateServerRendering(value: Boolean): Self = StObject.set(x, "validateServerRendering", value.asInstanceOf[js.Any])
   }

@@ -12,7 +12,7 @@ trait AlertOptions extends StObject {
   
   var buttonLabels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var callback: js.UndefOr[js.Any] = js.undefined
+  var callback: js.UndefOr[Any] = js.undefined
   
   var cancelable: js.UndefOr[Boolean] = js.undefined
   
@@ -49,9 +49,9 @@ object AlertOptions {
     
     inline def setButtonLabelsUndefined: Self = StObject.set(x, "buttonLabels", js.undefined)
     
-    inline def setButtonLabelsVarargs(value: String*): Self = StObject.set(x, "buttonLabels", js.Array(value :_*))
+    inline def setButtonLabelsVarargs(value: String*): Self = StObject.set(x, "buttonLabels", js.Array(value*))
     
-    inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

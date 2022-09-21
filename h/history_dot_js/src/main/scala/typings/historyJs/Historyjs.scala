@@ -22,7 +22,7 @@ trait Historyjs extends StObject {
   
   def clearQueue(): Historyjs = js.native
   
-  def debug(messages: js.Any*): Unit = js.native
+  def debug(messages: Any*): Unit = js.native
   
   var emulated: HashChange = js.native
   
@@ -49,15 +49,15 @@ trait Historyjs extends StObject {
   
   def go(x: Number): Unit = js.native
   
-  def log(messages: js.Any*): Unit = js.native
+  def log(messages: Any*): Unit = js.native
   
   var options: HistoryOptions = js.native
   
-  def pushState(data: js.Any, title: String, url: String): Boolean = js.native
-  def pushState(data: js.Any, title: String, url: String, queue: Boolean): Boolean = js.native
+  def pushState(data: Any, title: String, url: String): Boolean = js.native
+  def pushState(data: Any, title: String, url: String, queue: Boolean): Boolean = js.native
   
-  def replaceState(data: js.Any, title: String, url: String): Boolean = js.native
-  def replaceState(data: js.Any, title: String, url: String, queue: Boolean): Boolean = js.native
+  def replaceState(data: Any, title: String, url: String): Boolean = js.native
+  def replaceState(data: Any, title: String, url: String, queue: Boolean): Boolean = js.native
   
   /**
     * History.setTitle(title)

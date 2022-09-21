@@ -23,7 +23,7 @@ object ReturnTypeSetBreakpointByUrlResponse {
     
     inline def setParamsType(value: js.Array[SetBreakpointByUrlRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SetBreakpointByUrlRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetBreakpointByUrlRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: SetBreakpointByUrlResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

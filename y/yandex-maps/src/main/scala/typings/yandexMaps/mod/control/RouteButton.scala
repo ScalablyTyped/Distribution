@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
 - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "control.RouteButton")
 @js.native
-class RouteButton ()
+open class RouteButton ()
   extends StObject
      with IChild[IControlParent] {
   def this(parameters: IRouteButtonParameters) = this()

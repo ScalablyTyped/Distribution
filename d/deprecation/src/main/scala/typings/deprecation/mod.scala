@@ -9,13 +9,15 @@ object mod {
   
   @JSImport("deprecation", "Deprecation")
   @js.native
-  class Deprecation ()
+  open class Deprecation ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")

@@ -104,21 +104,21 @@ object vpnProvider {
       
       inline def setDnsServers(value: js.Array[String]): Self = StObject.set(x, "dnsServers", value.asInstanceOf[js.Any])
       
-      inline def setDnsServersVarargs(value: String*): Self = StObject.set(x, "dnsServers", js.Array(value :_*))
+      inline def setDnsServersVarargs(value: String*): Self = StObject.set(x, "dnsServers", js.Array(value*))
       
       inline def setDomainSearch(value: js.Array[String]): Self = StObject.set(x, "domainSearch", value.asInstanceOf[js.Any])
       
       inline def setDomainSearchUndefined: Self = StObject.set(x, "domainSearch", js.undefined)
       
-      inline def setDomainSearchVarargs(value: String*): Self = StObject.set(x, "domainSearch", js.Array(value :_*))
+      inline def setDomainSearchVarargs(value: String*): Self = StObject.set(x, "domainSearch", js.Array(value*))
       
       inline def setExclusionList(value: js.Array[String]): Self = StObject.set(x, "exclusionList", value.asInstanceOf[js.Any])
       
-      inline def setExclusionListVarargs(value: String*): Self = StObject.set(x, "exclusionList", js.Array(value :_*))
+      inline def setExclusionListVarargs(value: String*): Self = StObject.set(x, "exclusionList", js.Array(value*))
       
       inline def setInclusionList(value: js.Array[String]): Self = StObject.set(x, "inclusionList", value.asInstanceOf[js.Any])
       
-      inline def setInclusionListVarargs(value: String*): Self = StObject.set(x, "inclusionList", js.Array(value :_*))
+      inline def setInclusionListVarargs(value: String*): Self = StObject.set(x, "inclusionList", js.Array(value*))
       
       inline def setMtu(value: String): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
       

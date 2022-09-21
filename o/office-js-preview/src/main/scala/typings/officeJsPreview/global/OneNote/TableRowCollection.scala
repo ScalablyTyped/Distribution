@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains a collection of TableRow objects.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.TableRowCollection")
 @js.native
-class TableRowCollection ()
+open class TableRowCollection ()
   extends StObject
      with typings.officeJsPreview.OneNote.TableRowCollection {
   

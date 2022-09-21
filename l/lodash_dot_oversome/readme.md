@@ -10,10 +10,10 @@ The lodash method `_.overSome` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.oversome |
 | Keywords           | lodash-modularized, oversome |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 12606 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 195.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

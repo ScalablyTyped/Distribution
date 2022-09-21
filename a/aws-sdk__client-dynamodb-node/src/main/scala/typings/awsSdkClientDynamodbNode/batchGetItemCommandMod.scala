@@ -16,7 +16,7 @@ object batchGetItemCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/commands/BatchGetItemCommand", "BatchGetItemCommand")
   @js.native
-  class BatchGetItemCommand protected ()
+  open class BatchGetItemCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object batchGetItemCommandMod {
     override val middlewareStack: MiddlewareStack[BatchGetItemInput, BatchGetItemOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[BatchGetItemInput, BatchGetItemOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[BatchGetItemInput, BatchGetItemOutput] = js.native
   }
 }

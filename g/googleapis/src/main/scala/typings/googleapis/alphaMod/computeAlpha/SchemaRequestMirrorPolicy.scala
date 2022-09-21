@@ -4,18 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A policy that specifies how requests intended for the route&#39;s backends
-  * are shadowed to a separate mirrored backend service. Loadbalancer does not
-  * wait for responses from the shadow service. Prior to sending traffic to the
-  * shadow service, the host / authority header is suffixed with -shadow.
-  */
 trait SchemaRequestMirrorPolicy extends StObject {
   
   /**
-    * The full or partial URL to the BackendService resource being mirrored to.
+    * The full or partial URL to the BackendService resource being mirrored to. The backend service configured for a mirroring policy must reference backends that are of the same type as the original backend service matched in the URL map. Serverless NEG backends are not currently supported as a mirrored backend service.
     */
-  var backendService: js.UndefOr[String] = js.undefined
+  var backendService: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRequestMirrorPolicy {
   
@@ -27,6 +21,8 @@ object SchemaRequestMirrorPolicy {
   extension [Self <: SchemaRequestMirrorPolicy](x: Self) {
     
     inline def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
+    
+    inline def setBackendServiceNull: Self = StObject.set(x, "backendService", null)
     
     inline def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
   }

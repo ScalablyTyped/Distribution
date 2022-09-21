@@ -14,15 +14,15 @@ object ngTableDefaultGetDataMod {
   
   @JSImport("ng-table/src/core/data/ngTableDefaultGetData", "NgTableDefaultGetDataProvider")
   @js.native
-  class NgTableDefaultGetDataProvider ()
+  open class NgTableDefaultGetDataProvider ()
     extends StObject
        with IServiceProvider {
     
     /* CompleteClass */
     @JSName("$get")
-    var $get: js.Any = js.native
+    var $get: Any = js.native
     @JSName("$get")
-    def $get_MNgTableDefaultGetDataProvider($filter: IFilterService, ngTableEventsChannel: NgTableEventsChannel): IDefaultGetData[js.Any] = js.native
+    def $get_MNgTableDefaultGetDataProvider($filter: IFilterService, ngTableEventsChannel: NgTableEventsChannel): IDefaultGetData[Any] = js.native
     
     /**
       * The name of a angular filter that knows how to apply the values returned by
@@ -50,7 +50,7 @@ object ngTableDefaultGetDataMod {
       * Returns a slice of rows from the `data` array supplied and sets the `NgTableParams.total()`
       * on the `params` instance supplied to `data.length`
       */
-    def applyPaging(data: js.Array[T], params: NgTableParams[js.Any]): js.Array[T] = js.native
+    def applyPaging(data: js.Array[T], params: NgTableParams[Any]): js.Array[T] = js.native
     
     /**
       * Returns a reference to the function that this service will use to filter data rows

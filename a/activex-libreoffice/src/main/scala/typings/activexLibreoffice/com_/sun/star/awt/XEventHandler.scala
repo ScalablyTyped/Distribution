@@ -16,14 +16,14 @@ trait XEventHandler
     * @param event the platform dependent event.
     * @returns `TRUE` if the event was handled properly and no further handling should take place, `FALSE` otherwise.
     */
-  def handleEvent(event: js.Any): Boolean
+  def handleEvent(event: Any): Boolean
 }
 object XEventHandler {
   
   inline def apply(
     acquire: () => Unit,
-    handleEvent: js.Any => Boolean,
-    queryInterface: `type` => js.Any,
+    handleEvent: Any => Boolean,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEventHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), handleEvent = js.Any.fromFunction1(handleEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -32,6 +32,6 @@ object XEventHandler {
   
   extension [Self <: XEventHandler](x: Self) {
     
-    inline def setHandleEvent(value: js.Any => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+    inline def setHandleEvent(value: Any => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }
 }

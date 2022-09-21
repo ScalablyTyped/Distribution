@@ -50,6 +50,6 @@ object Resources {
     
     inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value*))
   }
 }

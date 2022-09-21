@@ -42,7 +42,7 @@ object SessionCache {
     
     inline def setOrder(value: js.Array[Hex]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    inline def setOrderVarargs(value: Hex*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: Hex*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setSetSession(value: (Bytes, Session) => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction2(value))
   }

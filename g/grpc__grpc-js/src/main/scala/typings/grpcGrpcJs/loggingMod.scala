@@ -14,7 +14,9 @@ object loggingMod {
   
   inline def getLogger(): PartialConsole = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[PartialConsole]
   
-  inline def log(severity: LogVerbosity, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(severity.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isTracerEnabled(tracer: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTracerEnabled")(tracer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def log(severity: LogVerbosity, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(severity.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def setLogger(logger: PartialConsole): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

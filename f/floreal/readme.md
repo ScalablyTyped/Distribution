@@ -10,10 +10,10 @@ Date formatting for the French Revolutionary calendar
 | ------------------ | :-------------: |
 | Full name          | floreal |
 | Keywords           | conversion, dates, calendar, history, historical, france, french, republic |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 602 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/seeschloss/floreal)

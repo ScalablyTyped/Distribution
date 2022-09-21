@@ -40,6 +40,6 @@ object ListRolePoliciesResponse {
     
     inline def setPolicyNames(value: policyNameListType): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
-    inline def setPolicyNamesVarargs(value: policyNameType*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: policyNameType*): Self = StObject.set(x, "PolicyNames", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for camelcase
 
-Typings are for version 6.2.0
+Typings are for version 7.0.0
 
 ## Library description:
 Convert a dash/dot/underscore/space separated string to camelCase or PascalCase: `foo-bar` → `fooBar`
@@ -11,9 +11,9 @@ Convert a dash/dot/underscore/space separated string to camelCase or PascalCase:
 | Full name          | camelcase |
 | Keywords           | camelcase, camel-case, camel, case, dash, hyphen, dot, underscore, separator, string, text, convert, pascalcase, pascal-case |
 | # releases         | 6 |
-| # dependents       | 2625 |
-| # downloads        | 1879621492 |
-| # stars            | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 2.891918676666667E8 |
+| # stars            | 578.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/camelcase#readme)

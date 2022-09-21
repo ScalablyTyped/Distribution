@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response including listed builds.
-  */
 trait SchemaListBuildsResponse extends StObject {
   
   /**
@@ -15,9 +12,9 @@ trait SchemaListBuildsResponse extends StObject {
   var builds: js.UndefOr[js.Array[SchemaBuild]] = js.undefined
   
   /**
-    * Token to receive the next page of results.
+    * Token to receive the next page of results. This will be absent if the end of the response list has been reached.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListBuildsResponse {
   
@@ -32,9 +29,11 @@ object SchemaListBuildsResponse {
     
     inline def setBuildsUndefined: Self = StObject.set(x, "builds", js.undefined)
     
-    inline def setBuildsVarargs(value: SchemaBuild*): Self = StObject.set(x, "builds", js.Array(value :_*))
+    inline def setBuildsVarargs(value: SchemaBuild*): Self = StObject.set(x, "builds", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

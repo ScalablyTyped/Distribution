@@ -16,11 +16,11 @@ trait ANode
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   def attachMixinListener(mixin: HTMLElement): Unit = js.native
   
@@ -31,13 +31,13 @@ trait ANode
   def closestScene(): Scene = js.native
   
   def emit(name: String): Unit = js.native
-  def emit(name: String, detail: js.Any): Unit = js.native
-  def emit(name: String, detail: js.Any, bubbles: Boolean): Unit = js.native
+  def emit(name: String, detail: Any): Unit = js.native
+  def emit(name: String, detail: Any, bubbles: Boolean): Unit = js.native
   def emit(name: String, detail: Unit, bubbles: Boolean): Unit = js.native
   
   def emitter(name: String): js.Function0[Unit] = js.native
-  def emitter(name: String, detail: js.Any): js.Function0[Unit] = js.native
-  def emitter(name: String, detail: js.Any, bubbles: Boolean): js.Function0[Unit] = js.native
+  def emitter(name: String, detail: Any): js.Function0[Unit] = js.native
+  def emitter(name: String, detail: Any, bubbles: Boolean): js.Function0[Unit] = js.native
   def emitter(name: String, detail: Unit, bubbles: Boolean): js.Function0[Unit] = js.native
   
   // detachedCallback
@@ -60,7 +60,7 @@ trait ANode
   
   def removeMixinListener(id: String): Unit = js.native
   
-  def setAttribute(`type`: String, newValue: js.Any): Unit = js.native
+  def setAttribute(`type`: String, newValue: Any): Unit = js.native
   
   def unregisterMixin(id: String): Unit = js.native
 }

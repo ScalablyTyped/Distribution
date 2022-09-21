@@ -24,8 +24,8 @@ object Job {
     acquire: () => Unit,
     addCloseListener: XCloseListener => Unit,
     close: Boolean => Unit,
-    execute: SeqEquiv[NamedValue] => js.Any,
-    queryInterface: `type` => js.Any,
+    execute: SeqEquiv[NamedValue] => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeCloseListener: XCloseListener => Unit
   ): Job = {

@@ -39,6 +39,9 @@ trait PatchDeployment extends StObject {
   /** Optional. Rollout strategy of the patch job. */
   var rollout: js.UndefOr[PatchRollout] = js.undefined
   
+  /** Output only. Current state of the patch deployment. */
+  var state: js.UndefOr[String] = js.undefined
+  
   /** Output only. Time the patch deployment was last updated. Timestamp is in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. */
   var updateTime: js.UndefOr[String] = js.undefined
 }
@@ -90,6 +93,10 @@ object PatchDeployment {
     inline def setRollout(value: PatchRollout): Self = StObject.set(x, "rollout", value.asInstanceOf[js.Any])
     
     inline def setRolloutUndefined: Self = StObject.set(x, "rollout", js.undefined)
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

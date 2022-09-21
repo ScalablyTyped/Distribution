@@ -266,7 +266,7 @@ trait TNode extends StObject {
     *
     * If this is an inline view node (V), the parent will be its container.
     */
-  var parent: ɵangularPackagesCoreCoreBh | TContainerNode | Null
+  var parent: TElementNode | TContainerNode | Null
   
   /**
     * List of projected TNodes for a given component host element OR index into the said nodes.
@@ -340,7 +340,7 @@ trait TNode extends StObject {
     * - `null`: initialized but `classes` is `null`
     * - `KeyValueArray`: parsed version of `classes`.
     */
-  var residualClasses: js.UndefOr[KeyValueArray[js.Any] | Null] = js.undefined
+  var residualClasses: js.UndefOr[KeyValueArray[Any] | Null] = js.undefined
   
   /**
     * A `KeyValueArray` version of residual `styles`.
@@ -369,7 +369,7 @@ trait TNode extends StObject {
     * - `null`: initialized but `styles` is `null`
     * - `KeyValueArray`: parsed version of `styles`.
     */
-  var residualStyles: js.UndefOr[KeyValueArray[js.Any] | Null] = js.undefined
+  var residualStyles: js.UndefOr[KeyValueArray[Any] | Null] = js.undefined
   
   /**
     * Stores the head/tail index of the class bindings.
@@ -442,7 +442,7 @@ trait TNode extends StObject {
     *   `TNodeType.Element`: tag name
     *   `TNodeType.ICUContainer`: `TIcu`
     */
-  var value: js.Any
+  var value: Any
 }
 object TNode {
   
@@ -457,7 +457,7 @@ object TNode {
     providerIndexes: TNodeProviderIndexes,
     styleBindings: TStylingRange,
     `type`: TNodeType,
-    value: js.Any
+    value: Any
   ): TNode = {
     val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projection = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null, tViews = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -470,7 +470,7 @@ object TNode {
     
     inline def setAttrsNull: Self = StObject.set(x, "attrs", null)
     
-    inline def setAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+    inline def setAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "attrs", js.Array(value*))
     
     inline def setChild(value: TNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
@@ -502,7 +502,7 @@ object TNode {
     
     inline def setInitialInputsUndefined: Self = StObject.set(x, "initialInputs", js.undefined)
     
-    inline def setInitialInputsVarargs(value: (InitialInputs | Null)*): Self = StObject.set(x, "initialInputs", js.Array(value :_*))
+    inline def setInitialInputsVarargs(value: (InitialInputs | Null)*): Self = StObject.set(x, "initialInputs", js.Array(value*))
     
     inline def setInjectorIndex(value: Double): Self = StObject.set(x, "injectorIndex", value.asInstanceOf[js.Any])
     
@@ -514,19 +514,19 @@ object TNode {
     
     inline def setInsertBeforeIndexNull: Self = StObject.set(x, "insertBeforeIndex", null)
     
-    inline def setInsertBeforeIndexVarargs(value: Double*): Self = StObject.set(x, "insertBeforeIndex", js.Array(value :_*))
+    inline def setInsertBeforeIndexVarargs(value: Double*): Self = StObject.set(x, "insertBeforeIndex", js.Array(value*))
     
     inline def setLocalNames(value: js.Array[String | Double]): Self = StObject.set(x, "localNames", value.asInstanceOf[js.Any])
     
     inline def setLocalNamesNull: Self = StObject.set(x, "localNames", null)
     
-    inline def setLocalNamesVarargs(value: (String | Double)*): Self = StObject.set(x, "localNames", js.Array(value :_*))
+    inline def setLocalNamesVarargs(value: (String | Double)*): Self = StObject.set(x, "localNames", js.Array(value*))
     
     inline def setMergedAttrs(value: TAttributes): Self = StObject.set(x, "mergedAttrs", value.asInstanceOf[js.Any])
     
     inline def setMergedAttrsNull: Self = StObject.set(x, "mergedAttrs", null)
     
-    inline def setMergedAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "mergedAttrs", js.Array(value :_*))
+    inline def setMergedAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "mergedAttrs", js.Array(value*))
     
     inline def setNext(value: TNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
@@ -536,7 +536,7 @@ object TNode {
     
     inline def setOutputsNull: Self = StObject.set(x, "outputs", null)
     
-    inline def setParent(value: ɵangularPackagesCoreCoreBh | TContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: TElementNode | TContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentNull: Self = StObject.set(x, "parent", null)
     
@@ -548,23 +548,23 @@ object TNode {
     
     inline def setProjectionNull: Self = StObject.set(x, "projection", null)
     
-    inline def setProjectionVarargs(value: (TNode | js.Array[RNode])*): Self = StObject.set(x, "projection", js.Array(value :_*))
+    inline def setProjectionVarargs(value: (TNode | js.Array[RNode])*): Self = StObject.set(x, "projection", js.Array(value*))
     
     inline def setPropertyBindings(value: js.Array[Double]): Self = StObject.set(x, "propertyBindings", value.asInstanceOf[js.Any])
     
     inline def setPropertyBindingsNull: Self = StObject.set(x, "propertyBindings", null)
     
-    inline def setPropertyBindingsVarargs(value: Double*): Self = StObject.set(x, "propertyBindings", js.Array(value :_*))
+    inline def setPropertyBindingsVarargs(value: Double*): Self = StObject.set(x, "propertyBindings", js.Array(value*))
     
     inline def setProviderIndexes(value: TNodeProviderIndexes): Self = StObject.set(x, "providerIndexes", value.asInstanceOf[js.Any])
     
-    inline def setResidualClasses(value: KeyValueArray[js.Any]): Self = StObject.set(x, "residualClasses", value.asInstanceOf[js.Any])
+    inline def setResidualClasses(value: KeyValueArray[Any]): Self = StObject.set(x, "residualClasses", value.asInstanceOf[js.Any])
     
     inline def setResidualClassesNull: Self = StObject.set(x, "residualClasses", null)
     
     inline def setResidualClassesUndefined: Self = StObject.set(x, "residualClasses", js.undefined)
     
-    inline def setResidualStyles(value: KeyValueArray[js.Any]): Self = StObject.set(x, "residualStyles", value.asInstanceOf[js.Any])
+    inline def setResidualStyles(value: KeyValueArray[Any]): Self = StObject.set(x, "residualStyles", value.asInstanceOf[js.Any])
     
     inline def setResidualStylesNull: Self = StObject.set(x, "residualStyles", null)
     
@@ -584,10 +584,10 @@ object TNode {
     
     inline def setTViewsNull: Self = StObject.set(x, "tViews", null)
     
-    inline def setTViewsVarargs(value: TView*): Self = StObject.set(x, "tViews", js.Array(value :_*))
+    inline def setTViewsVarargs(value: TView*): Self = StObject.set(x, "tViews", js.Array(value*))
     
     inline def setType(value: TNodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

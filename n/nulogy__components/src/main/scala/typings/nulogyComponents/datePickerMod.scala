@@ -8,5 +8,5 @@ object datePickerMod {
   
   @JSImport("@nulogy/components/src/DatePicker", "DatePicker")
   @js.native
-  val DatePicker: js.Any = js.native
+  val DatePicker: Any = js.native
 }

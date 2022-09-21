@@ -9,10 +9,10 @@ Browser-friendly inheritance fully compatible with standard node.js inherits()
 | ------------------ | :-------------: |
 | Full name          | inherits |
 | Keywords           | inheritance, class, klass, oop, object-oriented, inherits, browser, browserify |
-| # releases         | 2 |
-| # dependents       | 2307 |
-| # downloads        | 2098392612 |
-| # stars            | 46 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.884454673333333E8 |
+| # stars            | 344.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/inherits#readme)

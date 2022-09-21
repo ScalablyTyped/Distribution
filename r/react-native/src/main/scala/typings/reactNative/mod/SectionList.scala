@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "SectionList")
 @js.native
-class SectionList[ItemT, SectionT] protected ()
-  extends Component[SectionListProps[ItemT, SectionT], js.Object, js.Any] {
+open class SectionList[ItemT, SectionT] protected ()
+  extends Component[SectionListProps[ItemT, SectionT], js.Object, Any] {
   def this(props: SectionListProps[ItemT, SectionT]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SectionListProps[ItemT, SectionT], context: js.Any) = this()
+  def this(props: SectionListProps[ItemT, SectionT], context: Any) = this()
   
   /**
     * Displays the scroll indicators momentarily.

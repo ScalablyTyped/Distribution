@@ -2,6 +2,7 @@ package typings.vexflow.global.Vex.Flow
 
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
+import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.Justification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.StaveText")
 @js.native
-class StaveText protected ()
+open class StaveText protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.StaveText {
   def this(text: String, position: Position) = this()
@@ -40,6 +41,10 @@ class StaveText protected ()
   /* CompleteClass */
   override def getPosition(): Position = js.native
   
+  // (Modifier extends Element in vexflow, but not in these definitions, probably because of some typing problem)
+  /* CompleteClass */
+  override def getStyle(): FillStyle_ = js.native
+  
   /* CompleteClass */
   override def getWidth(): Double = js.native
   
@@ -57,6 +62,9 @@ class StaveText protected ()
   
   /* CompleteClass */
   override def setPosition(position: Position): typings.vexflow.Vex.Flow.Modifier = js.native
+  
+  /* CompleteClass */
+  override def setStyle(style: FillStyle_): typings.vexflow.Vex.Flow.Modifier = js.native
   
   /* CompleteClass */
   override def setTextLine(line: Double): typings.vexflow.Vex.Flow.Modifier = js.native

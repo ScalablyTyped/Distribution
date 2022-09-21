@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-merge-rules" : "5.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-merge-rules" : "5.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

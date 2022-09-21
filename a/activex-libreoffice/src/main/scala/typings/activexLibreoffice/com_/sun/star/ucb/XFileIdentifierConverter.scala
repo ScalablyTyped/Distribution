@@ -46,7 +46,7 @@ object XFileIdentifierConverter {
     getFileProviderLocality: String => Double,
     getFileURLFromSystemPath: (String, String) => String,
     getSystemPathFromFileURL: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFileIdentifierConverter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getFileProviderLocality = js.Any.fromFunction1(getFileProviderLocality), getFileURLFromSystemPath = js.Any.fromFunction2(getFileURLFromSystemPath), getSystemPathFromFileURL = js.Any.fromFunction1(getSystemPathFromFileURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

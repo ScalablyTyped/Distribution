@@ -9,7 +9,6 @@ import typings.jsforce.jsforceStrings.Serial
 import typings.jsforce.recordMod.Record
 import typings.jsforce.recordResultMod.RecordResult
 import typings.node.streamMod.Stream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object bulkMod {
   
   @JSImport("jsforce/bulk", "Bulk")
   @js.native
-  class Bulk protected () extends StObject {
+  open class Bulk protected () extends StObject {
     def this(connection: Connection) = this()
     
     def createJob(`type`: String, operation: String): Job = js.native
@@ -33,22 +32,22 @@ object bulkMod {
       operation: BulkLoadOperation,
       options: Unit,
       input: String,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
-    def load(`type`: String, operation: BulkLoadOperation, options: Unit, input: js.Array[Record[js.Any]]): Batch = js.native
+    def load(`type`: String, operation: BulkLoadOperation, options: Unit, input: js.Array[Record[Any]]): Batch = js.native
     def load(
       `type`: String,
       operation: BulkLoadOperation,
       options: Unit,
-      input: js.Array[Record[js.Any]],
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      input: js.Array[Record[Any]],
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def load(
       `type`: String,
       operation: BulkLoadOperation,
       options: Unit,
       input: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def load(`type`: String, operation: BulkLoadOperation, options: Unit, input: Stream): Batch = js.native
     def load(
@@ -56,7 +55,7 @@ object bulkMod {
       operation: BulkLoadOperation,
       options: Unit,
       input: Stream,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def load(`type`: String, operation: BulkLoadOperation, options: BulkOptions): Batch = js.native
     def load(`type`: String, operation: BulkLoadOperation, options: BulkOptions, input: String): Batch = js.native
@@ -65,27 +64,22 @@ object bulkMod {
       operation: BulkLoadOperation,
       options: BulkOptions,
       input: String,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
+    def load(`type`: String, operation: BulkLoadOperation, options: BulkOptions, input: js.Array[Record[Any]]): Batch = js.native
     def load(
       `type`: String,
       operation: BulkLoadOperation,
       options: BulkOptions,
-      input: js.Array[Record[js.Any]]
-    ): Batch = js.native
-    def load(
-      `type`: String,
-      operation: BulkLoadOperation,
-      options: BulkOptions,
-      input: js.Array[Record[js.Any]],
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      input: js.Array[Record[Any]],
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def load(
       `type`: String,
       operation: BulkLoadOperation,
       options: BulkOptions,
       input: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def load(`type`: String, operation: BulkLoadOperation, options: BulkOptions, input: Stream): Batch = js.native
     def load(
@@ -93,14 +87,14 @@ object bulkMod {
       operation: BulkLoadOperation,
       options: BulkOptions,
       input: Stream,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     
     var pollInterval: Double = js.native
     
     var pollTimeout: Double = js.native
     
-    def query(soql: String): js.Any = js.native
+    def query(soql: String): Any = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

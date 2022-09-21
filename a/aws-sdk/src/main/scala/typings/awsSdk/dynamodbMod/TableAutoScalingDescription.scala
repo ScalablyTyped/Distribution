@@ -34,7 +34,7 @@ object TableAutoScalingDescription {
     
     inline def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
     
-    inline def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
+    inline def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value*))
     
     inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     

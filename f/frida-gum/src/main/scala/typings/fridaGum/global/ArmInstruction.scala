@@ -2,13 +2,14 @@ package typings.fridaGum.global
 
 import typings.fridaGum.ArmOperand
 import typings.fridaGum.ArmRegister
+import typings.fridaGum.RegsAccessed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ArmInstruction")
 @js.native
-class ArmInstruction ()
+open class ArmInstruction ()
   extends StObject
      with typings.fridaGum.ArmInstruction {
   
@@ -47,6 +48,12 @@ class ArmInstruction ()
     */
   /* CompleteClass */
   var operands: js.Array[ArmOperand] = js.native
+  
+  /**
+    * Registers accessed by this instruction, either implicitly or explicitly.
+    */
+  /* CompleteClass */
+  var regsAccessed: RegsAccessed[ArmRegister] = js.native
   
   /**
     * Registers implicitly read by this instruction.

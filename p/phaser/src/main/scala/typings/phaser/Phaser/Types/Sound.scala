@@ -2,7 +2,6 @@ package typings.phaser.Phaser.Types
 
 import typings.phaser.Phaser.Sound.BaseSound
 import typings.phaser.Phaser.Sound.BaseSoundManager
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +42,7 @@ object Sound {
     /**
       * The audio data, either a base64 encoded string, an audio media-type data uri, or an ArrayBuffer instance.
       */
-    var data: ArrayBuffer | String
+    var data: js.typedarray.ArrayBuffer | String
     
     /**
       * The string-based key to be used to reference the decoded audio in the audio cache.
@@ -52,14 +51,14 @@ object Sound {
   }
   object DecodeAudioConfig {
     
-    inline def apply(data: ArrayBuffer | String, key: String): DecodeAudioConfig = {
+    inline def apply(data: js.typedarray.ArrayBuffer | String, key: String): DecodeAudioConfig = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeAudioConfig]
     }
     
     extension [Self <: DecodeAudioConfig](x: Self) {
       
-      inline def setData(value: ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -97,6 +96,11 @@ object Sound {
       * Boolean indicating whether the sound should be muted or not.
       */
     var mute: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * A value between -1 (full left pan) and 1 (full right pan). 0 means no pan.
+      */
+    var pan: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines the speed at which the sound should be played.
@@ -137,6 +141,10 @@ object Sound {
       inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
       
       inline def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
+      
+      inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+      
+      inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       

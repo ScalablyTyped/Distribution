@@ -10,7 +10,7 @@ trait StockToolsGuiDefinitionsZoomChangeOptions extends StObject {
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
   
   var zoomX: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXOptions] = js.undefined
   
@@ -27,11 +27,11 @@ object StockToolsGuiDefinitionsZoomChangeOptions {
   
   extension [Self <: StockToolsGuiDefinitionsZoomChangeOptions](x: Self) {
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setZoomX(value: StockToolsGuiDefinitionsZoomChangeZoomXOptions): Self = StObject.set(x, "zoomX", value.asInstanceOf[js.Any])
     

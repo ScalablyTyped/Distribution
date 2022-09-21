@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutNotificationChannelRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that allows Amazon SNS to record AWS Firewall Manager activity. 
+    * The Amazon Resource Name (ARN) of the IAM role that allows Amazon SNS to record Firewall Manager activity. 
     */
   var SnsRoleName: ResourceArn
   
   /**
-    * The Amazon Resource Name (ARN) of the SNS topic that collects notifications from AWS Firewall Manager.
+    * The Amazon Resource Name (ARN) of the SNS topic that collects notifications from Firewall Manager.
     */
   var SnsTopicArn: ResourceArn
 }

@@ -10,7 +10,7 @@ trait pluploadError
   
   var code: Double
   
-  var file: js.Any
+  var file: Any
   
   var message: String
 }
@@ -18,7 +18,7 @@ object pluploadError {
   
   inline def apply(
     code: Double,
-    file: js.Any,
+    file: Any,
     message: String,
     response: String,
     responseHeaders: String,
@@ -32,7 +32,7 @@ object pluploadError {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

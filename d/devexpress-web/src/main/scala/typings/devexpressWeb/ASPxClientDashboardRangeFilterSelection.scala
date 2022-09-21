@@ -12,24 +12,24 @@ trait ASPxClientDashboardRangeFilterSelection extends StObject {
   /**
     * Gets or sets a maximum value in the range of the Range Filter dashboard item.
     */
-  var Maximum: js.Any
+  var Maximum: Any
   
   /**
     * Gets or sets a minimum value in the range of the Range Filter dashboard item.
     */
-  var Minimum: js.Any
+  var Minimum: Any
 }
 object ASPxClientDashboardRangeFilterSelection {
   
-  inline def apply(Maximum: js.Any, Minimum: js.Any): ASPxClientDashboardRangeFilterSelection = {
+  inline def apply(Maximum: Any, Minimum: Any): ASPxClientDashboardRangeFilterSelection = {
     val __obj = js.Dynamic.literal(Maximum = Maximum.asInstanceOf[js.Any], Minimum = Minimum.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardRangeFilterSelection]
   }
   
   extension [Self <: ASPxClientDashboardRangeFilterSelection](x: Self) {
     
-    inline def setMaximum(value: js.Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    inline def setMinimum(value: js.Any): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Any): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
   }
 }

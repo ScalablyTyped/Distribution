@@ -10,10 +10,10 @@ object childFriendlyMod {
   
   @JSImport("material-ui/svg-icons/places/child-friendly", JSImport.Default)
   @js.native
-  class default () extends PlacesChildFriendly
+  open class default () extends PlacesChildFriendly
   
   @JSImport("material-ui/svg-icons/places/child-friendly", "PlacesChildFriendly")
   @js.native
-  class PlacesChildFriendly ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesChildFriendly ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

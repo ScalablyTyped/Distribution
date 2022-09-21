@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ConditionalScopeBase")
 @js.native
-class ConditionalScopeBase ()
+open class ConditionalScopeBase ()
   extends StObject
      with typings.sharepoint.SP.ConditionalScopeBase {
   
   /* CompleteClass */
-  override def customFromJson(initValue: js.Any): Boolean = js.native
+  override def customFromJson(initValue: Any): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(initValue: js.Any): Unit = js.native
+  override def fromJson(initValue: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_testResult(): Boolean = js.native
   
   /* CompleteClass */
-  override def startIfFalse(): js.Any = js.native
+  override def startIfFalse(): Any = js.native
   
   /* CompleteClass */
-  override def startIfTrue(): js.Any = js.native
+  override def startIfTrue(): Any = js.native
   
   /* CompleteClass */
-  override def startScope(): js.Any = js.native
+  override def startScope(): Any = js.native
 }

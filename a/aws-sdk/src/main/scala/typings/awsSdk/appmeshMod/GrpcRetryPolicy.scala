@@ -44,13 +44,13 @@ object GrpcRetryPolicy {
     
     inline def setGrpcRetryEventsUndefined: Self = StObject.set(x, "grpcRetryEvents", js.undefined)
     
-    inline def setGrpcRetryEventsVarargs(value: GrpcRetryPolicyEvent*): Self = StObject.set(x, "grpcRetryEvents", js.Array(value :_*))
+    inline def setGrpcRetryEventsVarargs(value: GrpcRetryPolicyEvent*): Self = StObject.set(x, "grpcRetryEvents", js.Array(value*))
     
     inline def setHttpRetryEvents(value: HttpRetryPolicyEvents): Self = StObject.set(x, "httpRetryEvents", value.asInstanceOf[js.Any])
     
     inline def setHttpRetryEventsUndefined: Self = StObject.set(x, "httpRetryEvents", js.undefined)
     
-    inline def setHttpRetryEventsVarargs(value: HttpRetryPolicyEvent*): Self = StObject.set(x, "httpRetryEvents", js.Array(value :_*))
+    inline def setHttpRetryEventsVarargs(value: HttpRetryPolicyEvent*): Self = StObject.set(x, "httpRetryEvents", js.Array(value*))
     
     inline def setMaxRetries(value: MaxRetries): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object GrpcRetryPolicy {
     
     inline def setTcpRetryEventsUndefined: Self = StObject.set(x, "tcpRetryEvents", js.undefined)
     
-    inline def setTcpRetryEventsVarargs(value: TcpRetryPolicyEvent*): Self = StObject.set(x, "tcpRetryEvents", js.Array(value :_*))
+    inline def setTcpRetryEventsVarargs(value: TcpRetryPolicyEvent*): Self = StObject.set(x, "tcpRetryEvents", js.Array(value*))
   }
 }

@@ -43,7 +43,7 @@ trait IHasManyAssociation
   /** [Method] Returns the value of store
     * @returns Object
     */
-  var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getStore: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of storeName
     * @returns String
@@ -76,7 +76,7 @@ trait IHasManyAssociation
   /** [Method] Sets the value of store
     * @param store Object The new value.
     */
-  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of storeName
     * @param storeName String The new value.
@@ -84,10 +84,10 @@ trait IHasManyAssociation
   var setStoreName: js.UndefOr[js.Function1[/* storeName */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var store: js.UndefOr[js.Any] = js.undefined
+  var store: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var storeConfig: js.UndefOr[js.Any] = js.undefined
+  var storeConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var storeName: js.UndefOr[String] = js.undefined
@@ -133,7 +133,7 @@ object IHasManyAssociation {
     
     inline def setGetForeignKeyUndefined: Self = StObject.set(x, "getForeignKey", js.undefined)
     
-    inline def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+    inline def setGetStore(value: () => Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     inline def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
     
@@ -161,7 +161,7 @@ object IHasManyAssociation {
     
     inline def setSetForeignKeyUndefined: Self = StObject.set(x, "setForeignKey", js.undefined)
     
-    inline def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+    inline def setSetStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
     
     inline def setSetStoreName(value: /* storeName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStoreName", js.Any.fromFunction1(value))
     
@@ -169,9 +169,9 @@ object IHasManyAssociation {
     
     inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
-    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    inline def setStoreConfig(value: js.Any): Self = StObject.set(x, "storeConfig", value.asInstanceOf[js.Any])
+    inline def setStoreConfig(value: Any): Self = StObject.set(x, "storeConfig", value.asInstanceOf[js.Any])
     
     inline def setStoreConfigUndefined: Self = StObject.set(x, "storeConfig", js.undefined)
     

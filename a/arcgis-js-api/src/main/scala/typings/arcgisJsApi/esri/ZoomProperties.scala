@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
@@ -20,6 +22,8 @@ trait ZoomProperties
   /**
     * Determines the layout/orientation of the Zoom widget.
     *
+    * @default vertical
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#layout)
     */
   var layout: js.UndefOr[vertical | horizontal] = js.undefined
@@ -29,7 +33,7 @@ trait ZoomProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * The view model for this widget.
@@ -55,7 +59,7 @@ object ZoomProperties {
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: ZoomViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

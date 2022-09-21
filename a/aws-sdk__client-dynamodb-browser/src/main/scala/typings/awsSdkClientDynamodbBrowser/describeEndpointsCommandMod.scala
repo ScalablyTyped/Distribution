@@ -16,7 +16,7 @@ object describeEndpointsCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/commands/DescribeEndpointsCommand", "DescribeEndpointsCommand")
   @js.native
-  class DescribeEndpointsCommand protected ()
+  open class DescribeEndpointsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object describeEndpointsCommandMod {
     override val middlewareStack: MiddlewareStack[DescribeEndpointsInput, DescribeEndpointsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DescribeEndpointsInput, DescribeEndpointsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DescribeEndpointsInput, DescribeEndpointsOutput] = js.native
   }
 }

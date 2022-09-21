@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("slack-node", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Slack {
     def this(token: String) = this()
@@ -22,12 +22,8 @@ object mod {
   @js.native
   trait Slack extends StObject {
     
-    def api(method: String, callback: js.Function2[/* err */ js.Any, /* response */ js.Any, Unit]): this.type = js.native
-    def api(
-      method: String,
-      options: js.Any,
-      callback: js.Function2[/* err */ js.Any, /* response */ js.Any, Unit]
-    ): this.type = js.native
+    def api(method: String, callback: js.Function2[/* err */ Any, /* response */ Any, Unit]): this.type = js.native
+    def api(method: String, options: Any, callback: js.Function2[/* err */ Any, /* response */ Any, Unit]): this.type = js.native
     
     var apiMode: Boolean = js.native
     
@@ -49,19 +45,19 @@ object mod {
     
     def webhook(
       options: WebhookOptions,
-      callback: js.Function2[/* err */ js.Any, /* response */ WebhookResponse, Unit]
+      callback: js.Function2[/* err */ Any, /* response */ WebhookResponse, Unit]
     ): Unit = js.native
   }
   
   trait WebhookOptions extends StObject {
     
-    var attachments: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var attachments: js.UndefOr[js.Array[Any]] = js.undefined
     
     var channel: js.UndefOr[String] = js.undefined
     
     var icon_emoji: js.UndefOr[String] = js.undefined
     
-    var link_names: js.UndefOr[js.Any] = js.undefined
+    var link_names: js.UndefOr[Any] = js.undefined
     
     var response_type: js.UndefOr[String] = js.undefined
     
@@ -78,11 +74,11 @@ object mod {
     
     extension [Self <: WebhookOptions](x: Self) {
       
-      inline def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
       inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      inline def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Any*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -92,7 +88,7 @@ object mod {
       
       inline def setIcon_emojiUndefined: Self = StObject.set(x, "icon_emoji", js.undefined)
       
-      inline def setLink_names(value: js.Any): Self = StObject.set(x, "link_names", value.asInstanceOf[js.Any])
+      inline def setLink_names(value: Any): Self = StObject.set(x, "link_names", value.asInstanceOf[js.Any])
       
       inline def setLink_namesUndefined: Self = StObject.set(x, "link_names", js.undefined)
       
@@ -112,9 +108,9 @@ object mod {
   
   trait WebhookResponse extends StObject {
     
-    var headers: js.Any
+    var headers: Any
     
-    var response: js.Any
+    var response: Any
     
     var status: fail | ok
     
@@ -122,16 +118,16 @@ object mod {
   }
   object WebhookResponse {
     
-    inline def apply(headers: js.Any, response: js.Any, status: fail | ok, statusCode: Double): WebhookResponse = {
+    inline def apply(headers: Any, response: Any, status: fail | ok, statusCode: Double): WebhookResponse = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebhookResponse]
     }
     
     extension [Self <: WebhookResponse](x: Self) {
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: fail | ok): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       

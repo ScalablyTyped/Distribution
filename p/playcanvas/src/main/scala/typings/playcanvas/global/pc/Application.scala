@@ -6,49 +6,63 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @typedef {import('../input/element-input.js').ElementInput} ElementInput */
+/** @typedef {import('../input/game-pads.js').GamePads} GamePads */
+/** @typedef {import('../input/keyboard.js').Keyboard} Keyboard */
+/** @typedef {import('../input/mouse.js').Mouse} Mouse */
+/** @typedef {import('../input/touch-device.js').TouchDevice} TouchDevice */
 /**
-  * Create a new Application.
-  * @example
-  * // Engine-only example: create the application manually
-  * var app = new pc.Application(canvas, options);
+  * An Application represents and manages your PlayCanvas application. If you are developing using
+  * the PlayCanvas Editor, the Application is created for you. You can access your Application
+  * instance in your scripts. Below is a skeleton script which shows how you can access the
+  * application 'app' property inside the initialize and update functions:
   *
-  * // Start the application's main loop
-  * app.start();
-  * @param canvas - The canvas element.
-  * @param [options.elementInput] - Input handler for {@link pc.ElementComponent}s.
-  * @param [options.keyboard] - Keyboard handler for input.
-  * @param [options.mouse] - Mouse handler for input.
-  * @param [options.touch] - TouchDevice handler for input.
-  * @param [options.gamepads] - Gamepad handler for input.
-  * @param [options.scriptPrefix] - Prefix to apply to script urls before loading.
-  * @param [options.assetPrefix] - Prefix to apply to asset urls before loading.
-  * @param [options.graphicsDeviceOptions] - Options object that is passed into the {@link pc.GraphicsDevice} constructor.
-  * @param [options.scriptsOrder] - Scripts in order of loading first.
+  * ```javascript
+  * // Editor example: accessing the pc.Application from a script
+  * var MyScript = pc.createScript('myScript');
+  *
+  * MyScript.prototype.initialize = function() {
+  *     // Every script instance has a property 'this.app' accessible in the initialize...
+  *     var app = this.app;
+  * };
+  *
+  * MyScript.prototype.update = function(dt) {
+  *     // ...and update functions.
+  *     var app = this.app;
+  * };
+  * ```
+  *
+  * If you are using the Engine without the Editor, you have to create the application instance
+  * manually.
+  *
+  * @augments AppBase
   */
 @JSGlobal("pc.Application")
 @js.native
-class Application protected ()
-  extends StObject
-     with typings.playcanvas.pc.Application {
-  def this(canvas: Element, options: AssetPrefix) = this()
-}
-object Application {
-  
-  @JSGlobal("pc.Application")
-  @js.native
-  val ^ : js.Any = js.native
-  
+open class Application protected ()
+  extends typings.playcanvas.mod.Application {
   /**
-    * Get the current application. In the case where there are multiple running
-    * applications, the function can get an application based on a supplied canvas id. This
-    * function is particularly useful when the current pc.Application is not readily available.
-    * For example, in the JavaScript console of the browser's developer tools.
+    * Create a new Application instance.
+    *
+    * @param {Element} canvas - The canvas element.
+    * @param {object} [options] - The options object to configure the Application.
+    * @param {ElementInput} [options.elementInput] - Input handler for {@link ElementComponent}s.
+    * @param {Keyboard} [options.keyboard] - Keyboard handler for input.
+    * @param {Mouse} [options.mouse] - Mouse handler for input.
+    * @param {TouchDevice} [options.touch] - TouchDevice handler for input.
+    * @param {GamePads} [options.gamepads] - Gamepad handler for input.
+    * @param {string} [options.scriptPrefix] - Prefix to apply to script urls before loading.
+    * @param {string} [options.assetPrefix] - Prefix to apply to asset urls before loading.
+    * @param {object} [options.graphicsDeviceOptions] - Options object that is passed into the
+    * {@link GraphicsDevice} constructor.
+    * @param {string[]} [options.scriptsOrder] - Scripts in order of loading first.
     * @example
-    * var app = pc.Application.getApplication();
-    * @param [id] - If defined, the returned application should use the canvas which has this id. Otherwise current application will be returned.
-    * @returns The running application, if any.
+    * // Engine-only example: create the application manually
+    * var app = new pc.Application(canvas, options);
+    *
+    * // Start the application's main loop
+    * app.start();
     */
-  /* static member */
-  inline def getApplication(): js.UndefOr[typings.playcanvas.pc.Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")().asInstanceOf[js.UndefOr[typings.playcanvas.pc.Application]]
-  inline def getApplication(id: String): js.UndefOr[typings.playcanvas.pc.Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.playcanvas.pc.Application]]
+  def this(canvas: Element) = this()
+  def this(canvas: Element, options: AssetPrefix) = this()
 }

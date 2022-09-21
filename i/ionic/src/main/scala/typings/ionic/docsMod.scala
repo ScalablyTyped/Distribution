@@ -10,7 +10,7 @@ object docsMod {
   
   @JSImport("ionic/commands/docs", "DocsCommand")
   @js.native
-  class DocsCommand protected () extends Command {
+  open class DocsCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

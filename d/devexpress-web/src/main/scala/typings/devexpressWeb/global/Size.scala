@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Size")
 @js.native
-class Size ()
+open class Size ()
   extends StObject
      with typings.devexpressWeb.Size {
   

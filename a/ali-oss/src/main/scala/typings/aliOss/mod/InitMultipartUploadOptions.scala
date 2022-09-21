@@ -8,9 +8,9 @@ trait InitMultipartUploadOptions extends StObject {
   
   var headers: js.UndefOr[js.Object] = js.undefined
   
-  // Mime file type
   var meta: js.UndefOr[UserMeta] = js.undefined
   
+  /** Mime file type */
   var mime: js.UndefOr[String] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined

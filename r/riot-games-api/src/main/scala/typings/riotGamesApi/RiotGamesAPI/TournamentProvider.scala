@@ -49,7 +49,7 @@ object TournamentProvider {
       
       inline def setEventList(value: js.Array[LobbyEventDto]): Self = StObject.set(x, "eventList", value.asInstanceOf[js.Any])
       
-      inline def setEventListVarargs(value: LobbyEventDto*): Self = StObject.set(x, "eventList", js.Array(value :_*))
+      inline def setEventListVarargs(value: LobbyEventDto*): Self = StObject.set(x, "eventList", js.Array(value*))
     }
   }
   
@@ -89,7 +89,7 @@ object TournamentProvider {
       
       inline def setParticipants(value: js.Array[Double]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      inline def setParticipantsVarargs(value: Double*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: Double*): Self = StObject.set(x, "participants", js.Array(value*))
     }
   }
   
@@ -156,7 +156,7 @@ object TournamentProvider {
       
       inline def setParticipants(value: js.Array[Double]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      inline def setParticipantsVarargs(value: Double*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: Double*): Self = StObject.set(x, "participants", js.Array(value*))
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

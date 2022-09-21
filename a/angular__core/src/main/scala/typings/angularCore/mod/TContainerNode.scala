@@ -20,7 +20,7 @@ trait TContainerNode
     * - They are dynamically created
     */
   @JSName("parent")
-  var parent_TContainerNode: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null
+  var parent_TContainerNode: TElementNode | TElementContainerNode | Null
   
   @JSName("projection")
   var projection_TContainerNode: Null
@@ -54,7 +54,7 @@ object TContainerNode {
     
     inline def setChild(value: Null): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: TElementNode | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentNull: Self = StObject.set(x, "parent", null)
     

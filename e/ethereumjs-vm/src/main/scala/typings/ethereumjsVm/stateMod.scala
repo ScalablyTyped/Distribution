@@ -13,7 +13,7 @@ object stateMod {
   /**
     * Instantiate the StateManager interface.
     */
-  class StateManager () extends default {
+  open class StateManager () extends default {
     def this(opts: StateManagerOpts) = this()
   }
 }

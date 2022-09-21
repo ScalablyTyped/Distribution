@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTableRowPreferredHeightCommand")
 @js.native
-class ChangeTableRowPreferredHeightCommand ()
+open class ChangeTableRowPreferredHeightCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTableRowPreferredHeightCommand {
   

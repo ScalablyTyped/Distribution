@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Placement Tag
-  */
 trait SchemaPlacementTag extends StObject {
   
   /**
     * Placement ID
     */
-  var placementId: js.UndefOr[String] = js.undefined
+  var placementId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Tags generated for this placement.
@@ -30,12 +27,14 @@ object SchemaPlacementTag {
     
     inline def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
     
+    inline def setPlacementIdNull: Self = StObject.set(x, "placementId", null)
+    
     inline def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
     
     inline def setTagDatas(value: js.Array[SchemaTagData]): Self = StObject.set(x, "tagDatas", value.asInstanceOf[js.Any])
     
     inline def setTagDatasUndefined: Self = StObject.set(x, "tagDatas", js.undefined)
     
-    inline def setTagDatasVarargs(value: SchemaTagData*): Self = StObject.set(x, "tagDatas", js.Array(value :_*))
+    inline def setTagDatasVarargs(value: SchemaTagData*): Self = StObject.set(x, "tagDatas", js.Array(value*))
   }
 }

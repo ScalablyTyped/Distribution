@@ -8,7 +8,7 @@ trait SPClientRenderer extends StObject {
   
   var AddCallStackInfoToErrors: Boolean
   
-  def AddPostRenderCallback(context: js.Any, callback: js.Function0[Unit]): Unit
+  def AddPostRenderCallback(context: Any, callback: js.Function0[Unit]): Unit
   
   def CoreRender(): Unit
   
@@ -38,7 +38,7 @@ object SPClientRenderer {
   
   inline def apply(
     AddCallStackInfoToErrors: Boolean,
-    AddPostRenderCallback: (js.Any, js.Function0[Unit]) => Unit,
+    AddPostRenderCallback: (Any, js.Function0[Unit]) => Unit,
     CoreRender: () => Unit,
     GlobalDebugMode: Boolean,
     IsDebugMode: () => Boolean,
@@ -60,7 +60,7 @@ object SPClientRenderer {
     
     inline def setAddCallStackInfoToErrors(value: Boolean): Self = StObject.set(x, "AddCallStackInfoToErrors", value.asInstanceOf[js.Any])
     
-    inline def setAddPostRenderCallback(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "AddPostRenderCallback", js.Any.fromFunction2(value))
+    inline def setAddPostRenderCallback(value: (Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "AddPostRenderCallback", js.Any.fromFunction2(value))
     
     inline def setCoreRender(value: () => Unit): Self = StObject.set(x, "CoreRender", js.Any.fromFunction0(value))
     

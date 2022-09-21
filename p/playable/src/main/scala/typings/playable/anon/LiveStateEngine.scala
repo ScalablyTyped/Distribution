@@ -17,7 +17,7 @@ trait LiveStateEngine extends StObject {
   
   var eventEmitter: IEventEmitter
   
-  var liveStateEngine: js.Any
+  var liveStateEngine: Any
   
   var previewFullSize: IPreviewFullSize
   
@@ -34,7 +34,7 @@ object LiveStateEngine {
   inline def apply(
     engine: IPlaybackEngine,
     eventEmitter: IEventEmitter,
-    liveStateEngine: js.Any,
+    liveStateEngine: Any,
     previewFullSize: IPreviewFullSize,
     previewThumbnail: IPreviewThumbnail,
     textMap: ITextMap,
@@ -51,7 +51,7 @@ object LiveStateEngine {
     
     inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    inline def setLiveStateEngine(value: js.Any): Self = StObject.set(x, "liveStateEngine", value.asInstanceOf[js.Any])
+    inline def setLiveStateEngine(value: Any): Self = StObject.set(x, "liveStateEngine", value.asInstanceOf[js.Any])
     
     inline def setPreviewFullSize(value: IPreviewFullSize): Self = StObject.set(x, "previewFullSize", value.asInstanceOf[js.Any])
     

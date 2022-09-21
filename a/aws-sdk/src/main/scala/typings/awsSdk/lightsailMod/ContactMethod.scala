@@ -19,8 +19,11 @@ trait ContactMethod extends StObject {
   /**
     * The timestamp when the contact method was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
+  /**
+    * An object that describes the location of the contact method, such as the Amazon Web Services Region and Availability Zone.
+    */
   var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
@@ -65,7 +68,7 @@ object ContactMethod {
     
     inline def setContactEndpointUndefined: Self = StObject.set(x, "contactEndpoint", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

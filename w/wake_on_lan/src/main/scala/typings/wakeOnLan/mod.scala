@@ -1,7 +1,7 @@
 package typings.wakeOnLan
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : Wol = js.native
   
-  type ErrorCallback = js.Function1[/* Error */ js.Any, Unit]
+  type ErrorCallback = js.Function1[/* Error */ Any, Unit]
   
   trait WakeOptions extends StObject {
     

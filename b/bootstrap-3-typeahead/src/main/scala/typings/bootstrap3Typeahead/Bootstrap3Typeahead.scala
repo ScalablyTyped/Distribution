@@ -86,7 +86,7 @@ object Bootstrap3Typeahead {
     var source: js.UndefOr[
         (js.Array[js.Object | String]) | (js.Function2[
           /* query */ js.UndefOr[String], 
-          /* process */ js.UndefOr[js.Function1[/* callback */ js.Any, String | (js.Array[js.Object | String])]], 
+          /* process */ js.UndefOr[js.Function1[/* callback */ Any, String | (js.Array[js.Object | String])]], 
           Unit
         ])
       ] = js.undefined
@@ -166,18 +166,18 @@ object Bootstrap3Typeahead {
       inline def setSource(
         value: (js.Array[js.Object | String]) | (js.Function2[
               /* query */ js.UndefOr[String], 
-              /* process */ js.UndefOr[js.Function1[/* callback */ js.Any, String | (js.Array[js.Object | String])]], 
+              /* process */ js.UndefOr[js.Function1[/* callback */ Any, String | (js.Array[js.Object | String])]], 
               Unit
             ])
       ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceFunction2(
-        value: (/* query */ js.UndefOr[String], /* process */ js.UndefOr[js.Function1[/* callback */ js.Any, String | (js.Array[js.Object | String])]]) => Unit
+        value: (/* query */ js.UndefOr[String], /* process */ js.UndefOr[js.Function1[/* callback */ Any, String | (js.Array[js.Object | String])]]) => Unit
       ): Self = StObject.set(x, "source", js.Any.fromFunction2(value))
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setSourceVarargs(value: (js.Object | String)*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: (js.Object | String)*): Self = StObject.set(x, "source", js.Array(value*))
       
       inline def setUpdater(value: /* item */ String => String): Self = StObject.set(x, "updater", js.Any.fromFunction1(value))
       

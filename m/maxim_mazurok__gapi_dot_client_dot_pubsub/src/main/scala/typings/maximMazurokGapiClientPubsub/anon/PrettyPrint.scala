@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPubsub.anon
 
-import typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.AcknowledgeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,11 +34,11 @@ trait PrettyPrint extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: AcknowledgeRequest
-  
-  /** Required. The subscription whose message is being acknowledged. Format is `projects/{project}/subscriptions/{sub}`. */
-  var subscription: String
+  /**
+    * REQUIRED: The resource for which the policy detail is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for
+    * this field.
+    */
+  var resource: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +48,8 @@ trait PrettyPrint extends StObject {
 }
 object PrettyPrint {
   
-  inline def apply(resource: AcknowledgeRequest, subscription: String): PrettyPrint = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
+  inline def apply(resource: String): PrettyPrint = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrint]
   }
   
@@ -92,9 +91,7 @@ object PrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AcknowledgeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

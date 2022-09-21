@@ -32,9 +32,19 @@ trait UpdateFlowOutputRequest extends StObject {
   var FlowArn: string
   
   /**
-    * The maximum latency in milliseconds for Zixi-based streams.
+    * The maximum latency in milliseconds. This parameter applies only to RIST-based, Zixi-based, and Fujitsu-based streams.
     */
   var MaxLatency: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The media streams that are associated with the output, and the parameters for those associations.
+    */
+  var MediaStreamOutputConfigurations: js.UndefOr[listOfMediaStreamOutputConfigurationRequest] = js.undefined
+  
+  /**
+    * The minimum latency in milliseconds for SRT-based streams. In streams that use the SRT protocol, this value that you set on your MediaConnect source or output represents the minimal potential latency of that connection. The latency of the stream is set to the highest number between the sender’s minimum latency and the receiver’s minimum latency.
+    */
+  var MinLatency: js.UndefOr[integer] = js.undefined
   
   /**
     * The ARN of the output that you want to update.
@@ -55,6 +65,16 @@ trait UpdateFlowOutputRequest extends StObject {
     * The remote ID for the Zixi-pull stream.
     */
   var RemoteId: js.UndefOr[string] = js.undefined
+  
+  /**
+    * The port that the flow uses to send outbound requests to initiate connection with the sender.
+    */
+  var SenderControlPort: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The IP address that the flow communicates with to initiate connection with the sender.
+    */
+  var SenderIpAddress: js.UndefOr[string] = js.undefined
   
   /**
     * The smoothing latency in milliseconds for RIST, RTP, and RTP-FEC streams.
@@ -84,7 +104,7 @@ object UpdateFlowOutputRequest {
     
     inline def setCidrAllowListUndefined: Self = StObject.set(x, "CidrAllowList", js.undefined)
     
-    inline def setCidrAllowListVarargs(value: string*): Self = StObject.set(x, "CidrAllowList", js.Array(value :_*))
+    inline def setCidrAllowListVarargs(value: string*): Self = StObject.set(x, "CidrAllowList", js.Array(value*))
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -104,6 +124,16 @@ object UpdateFlowOutputRequest {
     
     inline def setMaxLatencyUndefined: Self = StObject.set(x, "MaxLatency", js.undefined)
     
+    inline def setMediaStreamOutputConfigurations(value: listOfMediaStreamOutputConfigurationRequest): Self = StObject.set(x, "MediaStreamOutputConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setMediaStreamOutputConfigurationsUndefined: Self = StObject.set(x, "MediaStreamOutputConfigurations", js.undefined)
+    
+    inline def setMediaStreamOutputConfigurationsVarargs(value: MediaStreamOutputConfigurationRequest*): Self = StObject.set(x, "MediaStreamOutputConfigurations", js.Array(value*))
+    
+    inline def setMinLatency(value: integer): Self = StObject.set(x, "MinLatency", value.asInstanceOf[js.Any])
+    
+    inline def setMinLatencyUndefined: Self = StObject.set(x, "MinLatency", js.undefined)
+    
     inline def setOutputArn(value: string): Self = StObject.set(x, "OutputArn", value.asInstanceOf[js.Any])
     
     inline def setPort(value: integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
@@ -117,6 +147,14 @@ object UpdateFlowOutputRequest {
     inline def setRemoteId(value: string): Self = StObject.set(x, "RemoteId", value.asInstanceOf[js.Any])
     
     inline def setRemoteIdUndefined: Self = StObject.set(x, "RemoteId", js.undefined)
+    
+    inline def setSenderControlPort(value: integer): Self = StObject.set(x, "SenderControlPort", value.asInstanceOf[js.Any])
+    
+    inline def setSenderControlPortUndefined: Self = StObject.set(x, "SenderControlPort", js.undefined)
+    
+    inline def setSenderIpAddress(value: string): Self = StObject.set(x, "SenderIpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setSenderIpAddressUndefined: Self = StObject.set(x, "SenderIpAddress", js.undefined)
     
     inline def setSmoothingLatency(value: integer): Self = StObject.set(x, "SmoothingLatency", value.asInstanceOf[js.Any])
     

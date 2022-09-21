@@ -20,6 +20,7 @@ trait ProgressBar
   var progressWrapper: JQuery = js.native
   
   def value(): Double = js.native
+  def value(value: Boolean): Unit = js.native
   def value(value: Double): Unit = js.native
   
   var wrapper: JQuery = js.native

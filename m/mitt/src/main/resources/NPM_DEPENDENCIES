@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mitt" : "1.2.0"
+      "mitt" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mitt" : "1.2.0"
+      "mitt" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

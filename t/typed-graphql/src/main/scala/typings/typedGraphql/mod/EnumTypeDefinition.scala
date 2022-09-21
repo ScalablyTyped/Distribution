@@ -36,6 +36,6 @@ object EnumTypeDefinition {
     
     inline def setValues(value: js.Array[EnumValueDefinition]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: EnumValueDefinition*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: EnumValueDefinition*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

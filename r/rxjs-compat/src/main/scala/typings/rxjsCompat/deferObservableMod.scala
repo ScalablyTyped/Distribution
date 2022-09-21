@@ -9,7 +9,7 @@ object deferObservableMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/DeferObservable", "DeferObservable")
   @js.native
-  class DeferObservable[T] () extends StObject
+  open class DeferObservable[T] () extends StObject
   /* static members */
   object DeferObservable {
     
@@ -19,8 +19,8 @@ object deferObservableMod {
     
     inline def create[T](
       observableFactory: js.Function0[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any) | Unit
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ Any) | Unit
         ]
-    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(observableFactory.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(observableFactory.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

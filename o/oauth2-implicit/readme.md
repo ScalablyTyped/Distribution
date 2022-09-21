@@ -10,15 +10,12 @@ A minimal oauth2-spec-based client utility for traveling through the OAuth2 Impl
 | ------------------ | :-------------: |
 | Full name          | oauth2-implicit |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2342 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61.333333333333336 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/jasonkuhrt/oauth2-implicit)
-- [Bugs](https://github.com/jasonkuhrt/oauth2-implicit/issues)
-- [Repository](https://github.com/jasonkuhrt/oauth2-implicit)
 - [Npm](https://www.npmjs.com/package/oauth2-implicit)
     
 

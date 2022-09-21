@@ -10,7 +10,7 @@ object linearRingMod {
   
   @JSImport("ol/geom/LinearRing", JSImport.Default)
   @js.native
-  class default protected () extends LinearRing {
+  open class default protected () extends LinearRing {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }

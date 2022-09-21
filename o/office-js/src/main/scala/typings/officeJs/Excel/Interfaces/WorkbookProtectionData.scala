@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkbookProtectionData extends StObject {
   
   /**
-    *
     * Specifies if the workbook is protected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `protected`: js.UndefOr[Boolean] = js.undefined

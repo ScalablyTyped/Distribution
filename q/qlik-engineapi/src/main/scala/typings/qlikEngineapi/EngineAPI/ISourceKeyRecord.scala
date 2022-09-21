@@ -30,10 +30,10 @@ object ISourceKeyRecord {
     
     inline def setQKeyFields(value: js.Array[String]): Self = StObject.set(x, "qKeyFields", value.asInstanceOf[js.Any])
     
-    inline def setQKeyFieldsVarargs(value: String*): Self = StObject.set(x, "qKeyFields", js.Array(value :_*))
+    inline def setQKeyFieldsVarargs(value: String*): Self = StObject.set(x, "qKeyFields", js.Array(value*))
     
     inline def setQTables(value: js.Array[String]): Self = StObject.set(x, "qTables", value.asInstanceOf[js.Any])
     
-    inline def setQTablesVarargs(value: String*): Self = StObject.set(x, "qTables", js.Array(value :_*))
+    inline def setQTablesVarargs(value: String*): Self = StObject.set(x, "qTables", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.uirouterAngularjs
 
-import typings.std.RegExp
 import typings.uirouterCore.commonCommonMod.IInjectable
 import typings.uirouterCore.coreservicesMod.InjectorLike
 import typings.uirouterCore.coreservicesMod.LocationServices
@@ -16,7 +15,7 @@ object urlRouterProviderMod {
   
   @JSImport("@uirouter/angularjs/lib/urlRouterProvider", "UrlRouterProvider")
   @js.native
-  class UrlRouterProvider protected () extends StObject {
+  open class UrlRouterProvider protected () extends StObject {
     /** @hidden */
     def this(/** @hidden */ router: UIRouter) = this()
     
@@ -86,7 +85,7 @@ object urlRouterProviderMod {
     def otherwise(rule: String): UrlRouterProvider = js.native
     def otherwise(rule: RawNg1RuleFunction): UrlRouterProvider = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     /**
       * Registers a url handler function.
@@ -161,8 +160,8 @@ object urlRouterProviderMod {
       *
       * Note: the handler may also invoke arbitrary code, such as `$state.go()`
       */
-    def when(what: RegExp, handler: String): this.type = js.native
-    def when(what: RegExp, handler: IInjectable): this.type = js.native
+    def when(what: js.RegExp, handler: String): this.type = js.native
+    def when(what: js.RegExp, handler: IInjectable): this.type = js.native
     def when(what: UrlMatcher, handler: String): this.type = js.native
     def when(what: UrlMatcher, handler: IInjectable): this.type = js.native
   }

@@ -29,7 +29,7 @@ object ListApplicationStatesResult {
     
     inline def setApplicationStateListUndefined: Self = StObject.set(x, "ApplicationStateList", js.undefined)
     
-    inline def setApplicationStateListVarargs(value: ApplicationState*): Self = StObject.set(x, "ApplicationStateList", js.Array(value :_*))
+    inline def setApplicationStateListVarargs(value: ApplicationState*): Self = StObject.set(x, "ApplicationStateList", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

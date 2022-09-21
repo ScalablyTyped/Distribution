@@ -14,7 +14,7 @@ trait DescribeEventsMessage extends StObject {
   /**
     * The end of the time interval for which to retrieve events, specified in ISO 8601 format.  Example: 2017-03-30T07:03:49.555Z
     */
-  var EndTime: js.UndefOr[TStamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
@@ -39,7 +39,7 @@ trait DescribeEventsMessage extends StObject {
   /**
     * The beginning of the time interval to retrieve events for, specified in ISO 8601 format.  Example: 2017-03-30T07:03:49.555Z
     */
-  var StartTime: js.UndefOr[TStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeEventsMessage {
   
@@ -54,7 +54,7 @@ object DescribeEventsMessage {
     
     inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -74,7 +74,7 @@ object DescribeEventsMessage {
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

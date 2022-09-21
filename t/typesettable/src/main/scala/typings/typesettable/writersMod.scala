@@ -13,10 +13,10 @@ object writersMod {
   
   @JSImport("typesettable/build/src/writers", "Writer")
   @js.native
-  class Writer protected ()
+  open class Writer protected ()
     extends typings.typesettable.writerMod.Writer {
-    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any]) = this()
-    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any], _wrapper: Wrapper) = this()
+    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[Any]) = this()
+    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[Any], _wrapper: Wrapper) = this()
   }
   /* static members */
   object Writer {
@@ -27,8 +27,8 @@ object writersMod {
     
     @JSImport("typesettable/build/src/writers", "Writer.SupportedRotation")
     @js.native
-    def SupportedRotation: js.Any = js.native
-    inline def SupportedRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
+    def SupportedRotation: Any = js.native
+    inline def SupportedRotation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
     
     @JSImport("typesettable/build/src/writers", "Writer.XOffsetFactor")
     @js.native

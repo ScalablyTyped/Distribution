@@ -10,15 +10,15 @@ trait GraphQLScalarTypeConfig extends StObject {
   
   var name: String
   
-  var parseLiteral: js.UndefOr[js.Function1[/* valueAST */ Value, js.Any]] = js.undefined
+  var parseLiteral: js.UndefOr[js.Function1[/* valueAST */ Value, Any]] = js.undefined
   
-  var parseValue: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var parseValue: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
   
-  def serialize(value: js.Any): js.Any
+  def serialize(value: Any): Any
 }
 object GraphQLScalarTypeConfig {
   
-  inline def apply(name: String, serialize: js.Any => js.Any): GraphQLScalarTypeConfig = {
+  inline def apply(name: String, serialize: Any => Any): GraphQLScalarTypeConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serialize = js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[GraphQLScalarTypeConfig]
   }
@@ -31,14 +31,14 @@ object GraphQLScalarTypeConfig {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setParseLiteral(value: /* valueAST */ Value => js.Any): Self = StObject.set(x, "parseLiteral", js.Any.fromFunction1(value))
+    inline def setParseLiteral(value: /* valueAST */ Value => Any): Self = StObject.set(x, "parseLiteral", js.Any.fromFunction1(value))
     
     inline def setParseLiteralUndefined: Self = StObject.set(x, "parseLiteral", js.undefined)
     
-    inline def setParseValue(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "parseValue", js.Any.fromFunction1(value))
+    inline def setParseValue(value: /* value */ Any => Any): Self = StObject.set(x, "parseValue", js.Any.fromFunction1(value))
     
     inline def setParseValueUndefined: Self = StObject.set(x, "parseValue", js.undefined)
     
-    inline def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    inline def setSerialize(value: Any => Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
   }
 }

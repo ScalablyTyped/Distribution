@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@commitlint/types" : "17.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@commitlint/types" : "17.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

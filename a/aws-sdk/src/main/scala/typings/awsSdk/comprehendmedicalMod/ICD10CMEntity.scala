@@ -52,7 +52,7 @@ trait ICD10CMEntity extends StObject {
   var Traits: js.UndefOr[ICD10CMTraitList] = js.undefined
   
   /**
-    * Describes the specific type of entity with category of entities. InferICD10CM detects entities of the type DX_NAME.
+    * Describes the specific type of entity with category of entities. InferICD10CM detects entities of the type DX_NAME and TIME_EXPRESSION.
     */
   var Type: js.UndefOr[ICD10CMEntityType] = js.undefined
 }
@@ -69,7 +69,7 @@ object ICD10CMEntity {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: ICD10CMAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: ICD10CMAttribute*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object ICD10CMEntity {
     
     inline def setICD10CMConceptsUndefined: Self = StObject.set(x, "ICD10CMConcepts", js.undefined)
     
-    inline def setICD10CMConceptsVarargs(value: ICD10CMConcept*): Self = StObject.set(x, "ICD10CMConcepts", js.Array(value :_*))
+    inline def setICD10CMConceptsVarargs(value: ICD10CMConcept*): Self = StObject.set(x, "ICD10CMConcepts", js.Array(value*))
     
     inline def setId(value: Integer): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object ICD10CMEntity {
     
     inline def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
-    inline def setTraitsVarargs(value: ICD10CMTrait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: ICD10CMTrait*): Self = StObject.set(x, "Traits", js.Array(value*))
     
     inline def setType(value: ICD10CMEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

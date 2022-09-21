@@ -15,16 +15,16 @@ object observablestringMod {
   /**
     * Construct a new observable string.
     */
-  class ObservableString ()
+  open class ObservableString ()
     extends StObject
        with IObservableString {
     def this(initialText: String) = this()
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _text: js.Any = js.native
+    /* private */ var _text: Any = js.native
     
     /**
       * A signal emitted when the string has changed.

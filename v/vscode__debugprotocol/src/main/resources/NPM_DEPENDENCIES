@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@vscode/debugprotocol" : "1.57.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@vscode/debugprotocol" : "1.57.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

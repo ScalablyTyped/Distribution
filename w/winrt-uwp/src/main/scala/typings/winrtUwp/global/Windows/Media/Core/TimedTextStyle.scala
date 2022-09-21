@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Core.TimedTextStyle")
 @js.native
 /** Initializes a new instance of the TimedTextStyle class. */
-class TimedTextStyle ()
+open class TimedTextStyle ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.TimedTextStyle {
   

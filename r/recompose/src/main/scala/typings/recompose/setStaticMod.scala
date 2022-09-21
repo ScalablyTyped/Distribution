@@ -12,5 +12,5 @@ object setStaticMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(key: String, value: js.Any): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def default(key: String, value: Any): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
 }

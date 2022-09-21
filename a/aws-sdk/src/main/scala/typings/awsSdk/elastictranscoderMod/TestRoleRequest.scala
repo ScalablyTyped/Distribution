@@ -43,6 +43,6 @@ object TestRoleRequest {
     
     inline def setTopics(value: SnsTopics): Self = StObject.set(x, "Topics", value.asInstanceOf[js.Any])
     
-    inline def setTopicsVarargs(value: SnsTopic*): Self = StObject.set(x, "Topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: SnsTopic*): Self = StObject.set(x, "Topics", js.Array(value*))
   }
 }

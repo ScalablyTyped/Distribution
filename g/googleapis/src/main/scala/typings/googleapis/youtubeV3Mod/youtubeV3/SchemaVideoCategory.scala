@@ -4,31 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A videoCategory resource identifies a category that has been or could be
-  * associated with uploaded videos.
-  */
 trait SchemaVideoCategory extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the video category.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;youtube#videoCategory&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "youtube#videoCategory".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The snippet object contains basic details about the video category,
-    * including its title.
+    * The snippet object contains basic details about the video category, including its title.
     */
   var snippet: js.UndefOr[SchemaVideoCategorySnippet] = js.undefined
 }
@@ -43,13 +37,19 @@ object SchemaVideoCategory {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined storm-react-diagrams.storm-react-diagrams/dist/src/BaseEntity.BaseEvent<storm-react-diagrams.storm-react-diagrams/dist/src/models/BaseModel.BaseModel<storm-react-diagrams.storm-react-diagrams/dist/src/BaseEntity.BaseEntity<storm-react-diagrams.storm-react-diagrams/dist/src/BaseEntity.BaseListener<any>>, storm-react-diagrams.storm-react-diagrams/dist/src/models/BaseModel.BaseModelListener>> & {  isSelected :boolean} */
 trait BaseEventBaseModelBaseEnt extends StObject {
   
-  var entity: BaseEntity[BaseListener[js.Any]]
+  var entity: BaseEntity[BaseListener[Any]]
   
   var firing: Boolean
   
@@ -17,16 +17,16 @@ trait BaseEventBaseModelBaseEnt extends StObject {
   
   var isSelected: Boolean
   
-  def stopPropagation(): js.Any
+  def stopPropagation(): Any
 }
 object BaseEventBaseModelBaseEnt {
   
   inline def apply(
-    entity: BaseEntity[BaseListener[js.Any]],
+    entity: BaseEntity[BaseListener[Any]],
     firing: Boolean,
     id: String,
     isSelected: Boolean,
-    stopPropagation: () => js.Any
+    stopPropagation: () => Any
   ): BaseEventBaseModelBaseEnt = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], firing = firing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
     __obj.asInstanceOf[BaseEventBaseModelBaseEnt]
@@ -34,7 +34,7 @@ object BaseEventBaseModelBaseEnt {
   
   extension [Self <: BaseEventBaseModelBaseEnt](x: Self) {
     
-    inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: BaseEntity[BaseListener[Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
     
@@ -42,6 +42,6 @@ object BaseEventBaseModelBaseEnt {
     
     inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

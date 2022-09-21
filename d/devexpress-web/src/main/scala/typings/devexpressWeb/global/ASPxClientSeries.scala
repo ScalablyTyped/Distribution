@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSeries")
 @js.native
-class ASPxClientSeries ()
+open class ASPxClientSeries ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSeries {
   

@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("uuidjs", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with UUIDClass {
     
@@ -72,8 +72,8 @@ object mod {
     // Hide unnecessary methods
     @JSImport("uuidjs", "default.overwrittenUUID")
     @js.native
-    def overwrittenUUID: js.Any = js.native
-    inline def overwrittenUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
+    def overwrittenUUID: Any = js.native
+    inline def overwrittenUUID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
     
     inline def parse(strId: String): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(strId.asInstanceOf[js.Any]).asInstanceOf[UUIDClass]
     
@@ -102,8 +102,8 @@ object mod {
   
   @JSImport("uuidjs", "overwrittenUUID")
   @js.native
-  def overwrittenUUID: js.Any = js.native
-  inline def overwrittenUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
+  def overwrittenUUID: Any = js.native
+  inline def overwrittenUUID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
   
   inline def parse(strId: String): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(strId.asInstanceOf[js.Any]).asInstanceOf[UUID]
   

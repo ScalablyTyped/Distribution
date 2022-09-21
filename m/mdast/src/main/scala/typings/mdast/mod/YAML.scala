@@ -14,7 +14,7 @@ trait YAML
 }
 object YAML {
   
-  inline def apply(value: js.Any): YAML = {
+  inline def apply(value: Any): YAML = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("yaml")
     __obj.asInstanceOf[YAML]

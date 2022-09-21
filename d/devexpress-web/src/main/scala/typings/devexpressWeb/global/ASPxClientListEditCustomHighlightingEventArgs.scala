@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientListEditCustomHighlightingEventArgs class.
   */
-class ASPxClientListEditCustomHighlightingEventArgs ()
+open class ASPxClientListEditCustomHighlightingEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientListEditCustomHighlightingEventArgs {
   
@@ -26,5 +26,5 @@ class ASPxClientListEditCustomHighlightingEventArgs ()
     * Specifies rules according to which the editor highlights the filtered items.
     */
   /* CompleteClass */
-  var highlighting: js.Any = js.native
+  var highlighting: Any = js.native
 }

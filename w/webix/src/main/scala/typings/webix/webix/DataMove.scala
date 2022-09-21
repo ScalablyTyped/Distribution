@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataMove extends StObject {
   
   def copy(sid: String, tindex: Double): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: js.Any): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: js.Any, details: js.Any): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: Unit, details: js.Any): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: Any): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: Any, details: Any): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: Any): Unit = js.native
   def copy(sid: Double, tindex: Double): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: js.Any): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: js.Any, details: js.Any): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: Unit, details: js.Any): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: Any): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: Any, details: Any): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: Any): Unit = js.native
   
   def move(sid: String, tindex: Double): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: Unit, details: js.Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Any, details: Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: Any): String = js.native
   
   def moveBottom(id: String): Unit = js.native
   def moveBottom(id: Double): Unit = js.native

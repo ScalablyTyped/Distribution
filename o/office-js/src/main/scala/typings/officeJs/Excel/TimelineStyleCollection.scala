@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of timeline styles.
   *
-  * Represents a collection of TimelineStyles.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -22,13 +22,14 @@ trait TimelineStyleCollection
      with ClientObject {
   
   /**
-    * Creates a blank TimelineStyle with the specified name.
+    * Creates a blank `TimelineStyle` with the specified name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name The unique name for the new TimelineStyle. Will throw an invalid argument exception if the name is already in use.
-    * @param makeUniqueName Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.
-    * @returns The newly created TimelineStyle.
+    * @param name The unique name for the new timeline style. Will throw an `InvalidArgument` error if the name is already in use.
+    * @param makeUniqueName Optional. Defaults to `false`. If `true`, will append numbers to the name in order to make it unique, if needed.
+    * @returns The newly created `TimelineStyle`.
     */
   def add(name: String): TimelineStyle = js.native
   def add(name: String, makeUniqueName: Boolean): TimelineStyle = js.native
@@ -40,35 +41,40 @@ trait TimelineStyleCollection
   /**
     * Gets the number of timeline styles in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets the default TimelineStyle for the parent object's scope.
+    * Gets the default timeline style for the parent object's scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
-    * @returns The TimelineStyle object that is the current default TimelineStyle.
+    * @returns The `TimelineStyle` object that is the current default timeline style.
     */
   def getDefault(): TimelineStyle = js.native
   
   /**
-    * Gets a TimelineStyle by name.
+    * Gets a `TimelineStyle` by name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name Name of the TimelineStyle to be retrieved.
-    * @returns The TimelineStyle object whose name matches the input.
+    * @param name Name of the timeline style to be retrieved.
+    * @returns The `TimelineStyle` object whose name matches the input.
     */
   def getItem(name: String): TimelineStyle = js.native
   
   /**
-    * Gets a TimelineStyle by name. If the TimelineStyle does not exist, will return a null object.
+    * Gets a `TimelineStyle` by name. If the timeline style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name Name of the TimelineStyle to be retrieved.
-    * @returns The TimelineStyle object whose name matches the input.
+    * @param name Name of the timeline style to be retrieved.
+    * @returns The `TimelineStyle` object whose name matches the input.
     */
   def getItemOrNullObject(name: String): TimelineStyle = js.native
   
@@ -88,11 +94,12 @@ trait TimelineStyleCollection
   
   def setDefault(newDefaultStyle: String): Unit = js.native
   /**
-    * Sets the default TimelineStyle for use in the parent object's scope.
+    * Sets the default timeline style for use in the parent object's scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param newDefaultStyle The TimelineStyle object or name of the TimelineStyle object that should be the new default.
+    * @param newDefaultStyle The `TimelineStyle` object, or name of the `TimelineStyle` object, that should be the new default.
     */
   def setDefault(newDefaultStyle: TimelineStyle): Unit = js.native
   

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Boolean]]
-  
   @JSImport("is-admin", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Boolean]]
 }

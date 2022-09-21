@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A summary of how many vulnz occurrences there are per severity type. counts
-  * by groups, or if we should have different summary messages like this.
-  */
 trait SchemaGetVulnzOccurrencesSummaryResponse extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaGetVulnzOccurrencesSummaryResponse {
     
     inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
-    inline def setCountsVarargs(value: SchemaSeverityCount*): Self = StObject.set(x, "counts", js.Array(value :_*))
+    inline def setCountsVarargs(value: SchemaSeverityCount*): Self = StObject.set(x, "counts", js.Array(value*))
   }
 }

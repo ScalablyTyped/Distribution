@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastify
 
-Typings are for version 3.8.0
+Typings are for version 4.6.0
 
 ## Library description:
 Fast and low overhead web framework, for Node.js
@@ -10,10 +10,10 @@ Fast and low overhead web framework, for Node.js
 | ------------------ | :-------------: |
 | Full name          | fastify |
 | Keywords           | web, framework, json, schema, open, api |
-| # releases         | 58 |
-| # dependents       | 438 |
-| # downloads        | 7139536 |
-| # stars            | 14 |
+| # releases         | 80 |
+| # dependents       | 0.0 |
+| # downloads        | 3064977.6666666665 |
+| # stars            | 24900.0 |
 
 ## Links
 - [Homepage](https://www.fastify.io/)

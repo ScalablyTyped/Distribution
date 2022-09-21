@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("ConvexHullGrahamScan")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.grahamScan.mod.^
   }
 }

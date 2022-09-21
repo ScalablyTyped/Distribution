@@ -10,10 +10,10 @@ object casinoMod {
   
   @JSImport("material-ui/svg-icons/places/casino", JSImport.Default)
   @js.native
-  class default () extends PlacesCasino
+  open class default () extends PlacesCasino
   
   @JSImport("material-ui/svg-icons/places/casino", "PlacesCasino")
   @js.native
-  class PlacesCasino ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesCasino ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

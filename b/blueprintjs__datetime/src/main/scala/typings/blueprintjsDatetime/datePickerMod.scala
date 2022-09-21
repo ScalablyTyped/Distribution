@@ -2,9 +2,8 @@ package typings.blueprintjsDatetime
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
-import typings.blueprintjsDatetime.shortcutsMod.IDatePickerShortcut
-import typings.std.Date
+import typings.blueprintjsDatetime.datePickerCoreMod.DatePickerBaseProps
+import typings.blueprintjsDatetime.shortcutsMod.DatePickerShortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,56 +12,56 @@ object datePickerMod {
   
   @JSImport("@blueprintjs/datetime/lib/esm/datePicker", "DatePicker")
   @js.native
-  class DatePicker protected ()
-    extends AbstractPureComponent2[IDatePickerProps, IDatePickerState, js.Object] {
-    def this(props: IDatePickerProps) = this()
-    def this(props: IDatePickerProps, context: js.Any) = this()
+  open class DatePicker protected ()
+    extends AbstractPureComponent2[DatePickerProps, IDatePickerState, js.Object] {
+    def this(props: DatePickerProps) = this()
+    def this(props: DatePickerProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MDatePicker(prevProps: IDatePickerProps, prevState: IDatePickerState): Unit = js.native
+    def componentDidUpdate_MDatePicker(prevProps: DatePickerProps, prevState: IDatePickerState): Unit = js.native
     
-    /* private */ var computeValidDateInSpecifiedMonthYear: js.Any = js.native
+    /* private */ var computeValidDateInSpecifiedMonthYear: Any = js.native
     
-    /* private */ var disabledDays: js.Any = js.native
+    /* private */ var disabledDays: Any = js.native
     
-    /* private */ var getDatePickerModifiers: js.Any = js.native
+    /* private */ var getDatePickerModifiers: Any = js.native
     
-    /* private */ var getDisabledDaysModifier: js.Any = js.native
+    /* private */ var getDisabledDaysModifier: Any = js.native
     
-    /* private */ var handleClearClick: js.Any = js.native
+    /* private */ var handleClearClick: Any = js.native
     
-    /* private */ var handleDayClick: js.Any = js.native
+    /* private */ var handleDayClick: Any = js.native
     
-    /* private */ var handleMonthChange: js.Any = js.native
+    /* private */ var handleMonthChange: Any = js.native
     
-    /* private */ var handleShortcutClick: js.Any = js.native
+    /* private */ var handleShortcutClick: Any = js.native
     
-    /* private */ var handleTimeChange: js.Any = js.native
+    /* private */ var handleTimeChange: Any = js.native
     
-    /* private */ var handleTodayClick: js.Any = js.native
+    /* private */ var handleTodayClick: Any = js.native
     
-    /* private */ var ignoreNextMonthChange: js.Any = js.native
+    /* private */ var ignoreNextMonthChange: Any = js.native
     
-    /* private */ var maybeRenderShortcuts: js.Any = js.native
+    /* private */ var maybeRenderShortcuts: Any = js.native
     
-    /* private */ var maybeRenderTimePicker: js.Any = js.native
+    /* private */ var maybeRenderTimePicker: Any = js.native
     
-    /* private */ var renderCaption: js.Any = js.native
+    /* private */ var renderCaption: Any = js.native
     
-    /* private */ var renderDay: js.Any = js.native
+    /* private */ var renderDay: Any = js.native
     
-    /* private */ var renderNavbar: js.Any = js.native
+    /* private */ var renderNavbar: Any = js.native
     
-    /* private */ var renderOptionsBar: js.Any = js.native
+    /* private */ var renderOptionsBar: Any = js.native
     
-    /* private */ var shouldHighlightCurrentDay: js.Any = js.native
+    /* private */ var shouldHighlightCurrentDay: Any = js.native
     
-    /* private */ var updateDay: js.Any = js.native
+    /* private */ var updateDay: Any = js.native
     
     /**
       * Update `value` by invoking `onChange` (always) and setting state (if uncontrolled).
       */
-    /* private */ var updateValue: js.Any = js.native
+    /* private */ var updateValue: Any = js.native
   }
   /* static members */
   object DatePicker {
@@ -73,8 +72,8 @@ object datePickerMod {
     
     @JSImport("@blueprintjs/datetime/lib/esm/datePicker", "DatePicker.defaultProps")
     @js.native
-    def defaultProps: IDatePickerProps = js.native
-    inline def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: DatePickerProps = js.native
+    inline def defaultProps_=(x: DatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/datePicker", "DatePicker.displayName")
     @js.native
@@ -82,19 +81,24 @@ object datePickerMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  type DatePickerProps = IDatePickerProps
+  
   trait IDatePickerProps
     extends StObject
-       with IDatePickerBaseProps
+       with DatePickerBaseProps
        with IProps {
     
     /**
       * Allows the user to clear the selection by clicking the currently selected day.
+      * If disabled, the "Clear" Button in the Actions Bar will also be disabled.
+      *
       * @default true
       */
     var canClearSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text for the reset button in the action bar.
+      *
       * @default "Clear"
       */
     var clearButtonText: js.UndefOr[String] = js.undefined
@@ -103,7 +107,7 @@ object datePickerMod {
       * Initial day the calendar will display as selected.
       * This should not be set if `value` is set.
       */
-    var defaultValue: js.UndefOr[Date] = js.undefined
+    var defaultValue: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Called when the user selects a day.
@@ -112,12 +116,12 @@ object datePickerMod {
       * `isUserChange` is true if the user selected a day, and false if the date was automatically changed
       * by the user navigating to a new month or year rather than explicitly clicking on a date in the calendar.
       */
-    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* selectedDate */ js.Date, /* isUserChange */ Boolean, Unit]] = js.undefined
     
     /**
       * Called when the `shortcuts` props is enabled and the user changes the shortcut.
       */
-    var onShortcutChange: js.UndefOr[js.Function2[/* shortcut */ IDatePickerShortcut, /* index */ Double, Unit]] = js.undefined
+    var onShortcutChange: js.UndefOr[js.Function2[/* shortcut */ DatePickerShortcut, /* index */ Double, Unit]] = js.undefined
     
     /**
       * The currently selected shortcut.
@@ -131,16 +135,18 @@ object datePickerMod {
       * If `false`, no shortcuts will be displayed.
       * If an array is provided, the custom shortcuts will be displayed.
       */
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.undefined
+    var shortcuts: js.UndefOr[Boolean | js.Array[DatePickerShortcut]] = js.undefined
     
     /**
       * Whether the bottom bar displaying "Today" and "Clear" buttons should be shown.
+      *
       * @default false
       */
     var showActionsBar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text for the today button in the action bar.
+      *
       * @default "Today"
       */
     var todayButtonText: js.UndefOr[String] = js.undefined
@@ -148,7 +154,7 @@ object datePickerMod {
     /**
       * The currently selected day. If this prop is provided, the component acts in a controlled manner.
       */
-    var value: js.UndefOr[Date | Null] = js.undefined
+    var value: js.UndefOr[js.Date | Null] = js.undefined
   }
   object IDatePickerProps {
     
@@ -167,15 +173,15 @@ object datePickerMod {
       
       inline def setClearButtonTextUndefined: Self = StObject.set(x, "clearButtonText", js.undefined)
       
-      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setOnChange(value: (/* selectedDate */ Date, /* isUserChange */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* selectedDate */ js.Date, /* isUserChange */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnShortcutChange(value: (/* shortcut */ IDatePickerShortcut, /* index */ Double) => Unit): Self = StObject.set(x, "onShortcutChange", js.Any.fromFunction2(value))
+      inline def setOnShortcutChange(value: (/* shortcut */ DatePickerShortcut, /* index */ Double) => Unit): Self = StObject.set(x, "onShortcutChange", js.Any.fromFunction2(value))
       
       inline def setOnShortcutChangeUndefined: Self = StObject.set(x, "onShortcutChange", js.undefined)
       
@@ -183,11 +189,11 @@ object datePickerMod {
       
       inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      inline def setShortcuts(value: Boolean | js.Array[IDatePickerShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+      inline def setShortcuts(value: Boolean | js.Array[DatePickerShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       
       inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
       
-      inline def setShortcutsVarargs(value: IDatePickerShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
+      inline def setShortcutsVarargs(value: DatePickerShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value*))
       
       inline def setShowActionsBar(value: Boolean): Self = StObject.set(x, "showActionsBar", value.asInstanceOf[js.Any])
       
@@ -197,7 +203,7 @@ object datePickerMod {
       
       inline def setTodayButtonTextUndefined: Self = StObject.set(x, "todayButtonText", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
@@ -215,7 +221,7 @@ object datePickerMod {
     
     var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var value: Date | Null
+    var value: js.Date | Null
   }
   object IDatePickerState {
     
@@ -238,7 +244,7 @@ object datePickerMod {
       
       inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
     }

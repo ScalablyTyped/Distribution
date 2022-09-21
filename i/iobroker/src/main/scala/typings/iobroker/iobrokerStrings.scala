@@ -4,6 +4,9 @@ import typings.iobroker.mod.global.ioBroker.LogLevel
 import typings.iobroker.objectsMod.global.ioBroker.CommonType
 import typings.iobroker.objectsMod.global.ioBroker.InstanceMode
 import typings.iobroker.objectsMod.global.ioBroker.Languages
+import typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Channel
+import typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Meta
+import typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Misc
 import typings.iobroker.objectsMod.global.ioBroker.ObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,8 +15,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object iobrokerStrings {
   
   @js.native
+  sealed trait `0_userdataDot0Dot$LeftcurlybracketstringRightcurlybracket`
+    extends StObject
+       with Misc
+  inline def `0_userdataDot0Dot$LeftcurlybracketstringRightcurlybracket`: `0_userdataDot0Dot$LeftcurlybracketstringRightcurlybracket` = "0_userdata.0.${string}".asInstanceOf[`0_userdataDot0Dot$LeftcurlybracketstringRightcurlybracket`]
+  
+  @js.native
   sealed trait BE extends StObject
   inline def BE: BE = "BE".asInstanceOf[BE]
+  
+  @js.native
+  sealed trait `DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketQuotationmarkmetaQuotationmark Verticalline QuotationmarkadminQuotationmarkRightcurlybracket`
+    extends StObject
+       with Meta
+  inline def `DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketQuotationmarkmetaQuotationmark Verticalline QuotationmarkadminQuotationmarkRightcurlybracket`: `DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketQuotationmarkmetaQuotationmark Verticalline QuotationmarkadminQuotationmarkRightcurlybracket` = ("${string}.${\"meta\" | \"admin\"}").asInstanceOf[`DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketQuotationmarkmetaQuotationmark Verticalline QuotationmarkadminQuotationmarkRightcurlybracket`]
+  
+  @js.native
+  sealed trait DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket
+    extends StObject
+       with Meta
+  inline def DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket: DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket = "${string}.${number}".asInstanceOf[DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket]
+  
+  @js.native
+  sealed trait DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket extends StObject
+  inline def DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket: DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket = "${string}.${number}.${string}".asInstanceOf[DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
+  sealed trait DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotinfo
+    extends StObject
+       with Channel
+  inline def DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotinfo: DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotinfo = "${string}.${number}.info".asInstanceOf[DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotinfo]
+  
+  @js.native
+  sealed trait DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket
+    extends StObject
+       with Meta
+  inline def DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket: DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket = "${string}.${number}.meta.${string}".asInstanceOf[DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
+  sealed trait DollarLeftcurlybracketstringRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket
+    extends StObject
+       with Meta
+  inline def DollarLeftcurlybracketstringRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket: DollarLeftcurlybracketstringRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket = "${string}.meta.${string}".asInstanceOf[DollarLeftcurlybracketstringRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket]
   
   @js.native
   sealed trait Interval extends StObject
@@ -34,6 +77,10 @@ object iobrokerStrings {
   @js.native
   sealed trait _id extends StObject
   inline def _id: _id = "_id".asInstanceOf[_id]
+  
+  @js.native
+  sealed trait accessErrors extends StObject
+  inline def accessErrors: accessErrors = "accessErrors".asInstanceOf[accessErrors]
   
   @js.native
   sealed trait acl extends StObject
@@ -140,6 +187,10 @@ object iobrokerStrings {
   inline def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
+  sealed trait enumDot$LeftcurlybracketstringRightcurlybracket extends StObject
+  inline def enumDot$LeftcurlybracketstringRightcurlybracket: enumDot$LeftcurlybracketstringRightcurlybracket = "enum.${string}".asInstanceOf[enumDot$LeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
   sealed trait error
     extends StObject
        with LogLevel
@@ -168,6 +219,10 @@ object iobrokerStrings {
   inline def file: file = "file".asInstanceOf[file]
   
   @js.native
+  sealed trait fileToJsonl extends StObject
+  inline def fileToJsonl: fileToJsonl = "fileToJsonl".asInstanceOf[fileToJsonl]
+  
+  @js.native
   sealed trait folder
     extends StObject
        with ObjectType
@@ -178,6 +233,10 @@ object iobrokerStrings {
     extends StObject
        with Languages
   inline def fr: fr = "fr".asInstanceOf[fr]
+  
+  @js.native
+  sealed trait fsIoErrors extends StObject
+  inline def fsIoErrors: fsIoErrors = "fsIoErrors".asInstanceOf[fsIoErrors]
   
   @js.native
   sealed trait group
@@ -199,7 +258,6 @@ object iobrokerStrings {
   sealed trait info
     extends StObject
        with LogLevel
-       with ObjectType
   inline def info: info = "info".asInstanceOf[info]
   
   @js.native
@@ -233,6 +291,10 @@ object iobrokerStrings {
   @js.native
   sealed trait max extends StObject
   inline def max: max = "max".asInstanceOf[max]
+  
+  @js.native
+  sealed trait memIssues extends StObject
+  inline def memIssues: memIssues = "memIssues".asInstanceOf[memIssues]
   
   @js.native
   sealed trait message extends StObject
@@ -271,6 +333,14 @@ object iobrokerStrings {
     extends StObject
        with Languages
   inline def nl: nl = "nl".asInstanceOf[nl]
+  
+  @js.native
+  sealed trait noDiskSpace extends StObject
+  inline def noDiskSpace: noDiskSpace = "noDiskSpace".asInstanceOf[noDiskSpace]
+  
+  @js.native
+  sealed trait nonExistingFileErrors extends StObject
+  inline def nonExistingFileErrors: nonExistingFileErrors = "nonExistingFileErrors".asInstanceOf[nonExistingFileErrors]
   
   @js.native
   sealed trait none
@@ -333,6 +403,14 @@ object iobrokerStrings {
   inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
+  sealed trait remoteHostErrors extends StObject
+  inline def remoteHostErrors: remoteHostErrors = "remoteHostErrors".asInstanceOf[remoteHostErrors]
+  
+  @js.native
+  sealed trait restartLoop extends StObject
+  inline def restartLoop: restartLoop = "restartLoop".asInstanceOf[restartLoop]
+  
+  @js.native
   sealed trait ru
     extends StObject
        with Languages
@@ -349,6 +427,16 @@ object iobrokerStrings {
     extends StObject
        with ObjectType
   inline def script: script = "script".asInstanceOf[script]
+  
+  @js.native
+  sealed trait `scriptDotjsDot$LeftcurlybracketQuotationmarkcommonQuotationmark Verticalline QuotationmarkglobalQuotationmarkRightcurlybracket`
+    extends StObject
+       with Channel
+  inline def `scriptDotjsDot$LeftcurlybracketQuotationmarkcommonQuotationmark Verticalline QuotationmarkglobalQuotationmarkRightcurlybracket`: `scriptDotjsDot$LeftcurlybracketQuotationmarkcommonQuotationmark Verticalline QuotationmarkglobalQuotationmarkRightcurlybracket` = ("script.js.${\"common\" | \"global\"}").asInstanceOf[`scriptDotjsDot$LeftcurlybracketQuotationmarkcommonQuotationmark Verticalline QuotationmarkglobalQuotationmarkRightcurlybracket`]
+  
+  @js.native
+  sealed trait scriptDotjsDot$LeftcurlybracketstringRightcurlybracket extends StObject
+  inline def scriptDotjsDot$LeftcurlybracketstringRightcurlybracket: scriptDotjsDot$LeftcurlybracketstringRightcurlybracket = "script.js.${string}".asInstanceOf[scriptDotjsDot$LeftcurlybracketstringRightcurlybracket]
   
   @js.native
   sealed trait sendto extends StObject
@@ -381,6 +469,44 @@ object iobrokerStrings {
     extends StObject
        with InstanceMode
   inline def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  
+  @js.native
+  sealed trait system extends StObject
+  inline def system: system = "system".asInstanceOf[system]
+  
+  @js.native
+  sealed trait `systemDot$LeftcurlybracketQuotationmarkcertificatesQuotationmark Verticalline QuotationmarkconfigQuotationmark Verticalline QuotationmarkrepositoriesQuotationmarkRightcurlybracket` extends StObject
+  inline def `systemDot$LeftcurlybracketQuotationmarkcertificatesQuotationmark Verticalline QuotationmarkconfigQuotationmark Verticalline QuotationmarkrepositoriesQuotationmarkRightcurlybracket`: `systemDot$LeftcurlybracketQuotationmarkcertificatesQuotationmark Verticalline QuotationmarkconfigQuotationmark Verticalline QuotationmarkrepositoriesQuotationmarkRightcurlybracket` = ("system.${\"certificates\" | \"config\" | \"repositories\"}").asInstanceOf[`systemDot$LeftcurlybracketQuotationmarkcertificatesQuotationmark Verticalline QuotationmarkconfigQuotationmark Verticalline QuotationmarkrepositoriesQuotationmarkRightcurlybracket`]
+  
+  @js.native
+  sealed trait systemDotadapterDot$LeftcurlybracketstringRightcurlybracket extends StObject
+  inline def systemDotadapterDot$LeftcurlybracketstringRightcurlybracket: systemDotadapterDot$LeftcurlybracketstringRightcurlybracket = "system.adapter.${string}".asInstanceOf[systemDotadapterDot$LeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
+  sealed trait systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket extends StObject
+  inline def systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket: systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket = "system.adapter.${string}.${number}".asInstanceOf[systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket]
+  
+  @js.native
+  sealed trait systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket extends StObject
+  inline def systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket: systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket = "system.adapter.${string}.${number}.${string}".asInstanceOf[systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
+  sealed trait systemDotgroupDot$LeftcurlybracketstringRightcurlybracket extends StObject
+  inline def systemDotgroupDot$LeftcurlybracketstringRightcurlybracket: systemDotgroupDot$LeftcurlybracketstringRightcurlybracket = "system.group.${string}".asInstanceOf[systemDotgroupDot$LeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
+  sealed trait systemDothostDot$LeftcurlybracketstringRightcurlybracket extends StObject
+  inline def systemDothostDot$LeftcurlybracketstringRightcurlybracket: systemDothostDot$LeftcurlybracketstringRightcurlybracket = "system.host.${string}".asInstanceOf[systemDothostDot$LeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
+  sealed trait systemDothostDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket
+    extends StObject
+       with Misc
+  inline def systemDothostDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket: systemDothostDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket = "system.host.${string}.${string}".asInstanceOf[systemDothostDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
+  sealed trait systemDotuserDot$LeftcurlybracketstringRightcurlybracket extends StObject
+  inline def systemDotuserDot$LeftcurlybracketstringRightcurlybracket: systemDotuserDot$LeftcurlybracketstringRightcurlybracket = "system.user.${string}".asInstanceOf[systemDotuserDot$LeftcurlybracketstringRightcurlybracket]
   
   @js.native
   sealed trait total extends StObject

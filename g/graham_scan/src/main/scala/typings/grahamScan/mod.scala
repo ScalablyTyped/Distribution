@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("graham_scan", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ConvexHullGrahamScan {
     

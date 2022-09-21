@@ -23,7 +23,7 @@ object Value {
     
     inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

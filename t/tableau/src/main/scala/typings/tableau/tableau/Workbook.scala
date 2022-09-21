@@ -19,7 +19,7 @@ trait Workbook extends StObject {
     * It also needs to be the aliased value and not the raw value.
     * For more information and examples, see changeParameterValueAsync() Additional Information
     */
-  def changeParameterValueAsync(name: String, value: js.Any): js.Promise[Parameter] = js.native
+  def changeParameterValueAsync(name: String, value: Any): js.Promise[Parameter] = js.native
   
   /** Gets the currently active custom view, or null if no custom view is active. */
   def getActiveCustomView(): CustomView = js.native

@@ -14,7 +14,7 @@ trait ProductionBranch extends StObject {
   /**
     *  The last deploy time of the production branch. 
     */
-  var lastDeployTime: js.UndefOr[LastDeployTime] = js.undefined
+  var lastDeployTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The status of the production branch. 
@@ -39,7 +39,7 @@ object ProductionBranch {
     
     inline def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
     
-    inline def setLastDeployTime(value: LastDeployTime): Self = StObject.set(x, "lastDeployTime", value.asInstanceOf[js.Any])
+    inline def setLastDeployTime(value: js.Date): Self = StObject.set(x, "lastDeployTime", value.asInstanceOf[js.Any])
     
     inline def setLastDeployTimeUndefined: Self = StObject.set(x, "lastDeployTime", js.undefined)
     

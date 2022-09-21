@@ -4,39 +4,6 @@ import typings.semanticUiCheckbox.SemanticUI.Checkbox.ClassNameSettings
 import typings.semanticUiCheckbox.SemanticUI.Checkbox.ClassNameSettings.Param
 import typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings
 import typings.semanticUiCheckbox.SemanticUI.Checkbox.SelectorSettings
-import typings.semanticUiCheckbox.anon.PartialPickImplkeyofImpl
-import typings.semanticUiCheckbox.anon.PartialPickImplkeyofImplChecked
-import typings.semanticUiCheckbox.anon.PartialPickImplkeyofImplInput
-import typings.semanticUiCheckbox.anon.PickImplbeforeChecked
-import typings.semanticUiCheckbox.anon.PickImplbeforeDeterminate
-import typings.semanticUiCheckbox.anon.PickImplbeforeIndetermina
-import typings.semanticUiCheckbox.anon.PickImplbeforeUnchecked
-import typings.semanticUiCheckbox.anon.PickImplchecked
-import typings.semanticUiCheckbox.anon.PickImplclassName
-import typings.semanticUiCheckbox.anon.PickImpldebug
-import typings.semanticUiCheckbox.anon.PickImpldisabled
-import typings.semanticUiCheckbox.anon.PickImplerror
-import typings.semanticUiCheckbox.anon.PickImplfireOnInit
-import typings.semanticUiCheckbox.anon.PickImplinput
-import typings.semanticUiCheckbox.anon.PickImpllabel
-import typings.semanticUiCheckbox.anon.PickImplname
-import typings.semanticUiCheckbox.anon.PickImplnamespace
-import typings.semanticUiCheckbox.anon.PickImplonChange
-import typings.semanticUiCheckbox.anon.PickImplonChecked
-import typings.semanticUiCheckbox.anon.PickImplonDeterminate
-import typings.semanticUiCheckbox.anon.PickImplonDisable
-import typings.semanticUiCheckbox.anon.PickImplonDisabled
-import typings.semanticUiCheckbox.anon.PickImplonEnable
-import typings.semanticUiCheckbox.anon.PickImplonEnabled
-import typings.semanticUiCheckbox.anon.PickImplonIndeterminate
-import typings.semanticUiCheckbox.anon.PickImplonUnchecked
-import typings.semanticUiCheckbox.anon.PickImplperformance
-import typings.semanticUiCheckbox.anon.PickImplradio
-import typings.semanticUiCheckbox.anon.PickImplreadOnly
-import typings.semanticUiCheckbox.anon.PickImplselector
-import typings.semanticUiCheckbox.anon.PickImplsilent
-import typings.semanticUiCheckbox.anon.PickImpluncheckable
-import typings.semanticUiCheckbox.anon.PickImplverbose
 import typings.semanticUiCheckbox.semanticUiCheckboxBooleans.`false`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`attach events`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`can change`
@@ -55,38 +22,14 @@ import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow determ
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow indeterminate`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow uncheck`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.auto
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeChecked
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeDeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeIndeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeUnchecked
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.check
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.className
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.debug
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.destroy
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.determinate
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.enable
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.error
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.fireOnInit
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.indeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.name
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.namespace
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onChange
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onChecked
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDisable
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDisabled
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onEnable
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onEnabled
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onIndeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onUnchecked
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.performance
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.selector
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.setting
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.silent
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.toggle
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.uncheck
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.uncheckable
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.verbose
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -182,75 +125,6 @@ object SemanticUI {
       * Set as indeterminate checkbox
       */
     def apply(behavior: indeterminate): JQuery = js.native
-    def apply(
-      behavior: setting,
-      name: beforeChecked,
-      value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: beforeChecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
-    def apply(
-      behavior: setting,
-      name: beforeDeterminate,
-      value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: beforeDeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
-    def apply(
-      behavior: setting,
-      name: beforeIndeterminate,
-      value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: beforeIndeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
-    def apply(
-      behavior: setting,
-      name: beforeUnchecked,
-      value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: beforeUnchecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: fireOnInit, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: fireOnInit, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(behavior: setting, name: onChecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onChecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(behavior: setting, name: onDeterminate, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onDeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(behavior: setting, name: onDisabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onDisabled, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(behavior: setting, name: onDisable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onDisable, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(behavior: setting, name: onEnabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onEnabled, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(behavior: setting, name: onEnable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onEnable, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onIndeterminate,
-      value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onIndeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(behavior: setting, name: onUnchecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onUnchecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
-    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: uncheckable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: uncheckable, value: Unit): auto | Boolean = js.native
-    def apply(behavior: setting, name: uncheckable, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: CheckboxSettings): JQuery = js.native
     /**
       * Switches a checkbox from current state
@@ -261,6 +135,12 @@ object SemanticUI {
       */
     def apply(behavior: uncheck): JQuery = js.native
     def apply(settings: CheckboxSettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-checkbox.SemanticUI.CheckboxSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-checkbox.SemanticUI.CheckboxSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any = js.native
     
     var settings: CheckboxSettings = js.native
   }
@@ -309,7 +189,35 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplchecked | PickImpldisabled | PickImplradio | PickImplreadOnly) & PartialPickImplkeyofImplChecked
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiCheckbox.anon.PickImplcheckedPartialPic
+        - typings.semanticUiCheckbox.anon.PickImpldisabledPartialPi
+        - typings.semanticUiCheckbox.anon.PickImplradioPartialPickI
+        - typings.semanticUiCheckbox.anon.PickImplreadOnlyPartialPi
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplcheckedPartialPic(checked: String & js.UndefOr[String]): typings.semanticUiCheckbox.anon.PickImplcheckedPartialPic = {
+          val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplcheckedPartialPic]
+        }
+        
+        inline def PickImpldisabledPartialPi(disabled: String & js.UndefOr[String]): typings.semanticUiCheckbox.anon.PickImpldisabledPartialPi = {
+          val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImpldisabledPartialPi]
+        }
+        
+        inline def PickImplradioPartialPickI(radio: String & js.UndefOr[String]): typings.semanticUiCheckbox.anon.PickImplradioPartialPickI = {
+          val __obj = js.Dynamic.literal(radio = radio.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplradioPartialPickI]
+        }
+        
+        inline def PickImplreadOnlyPartialPi(readOnly: String & js.UndefOr[String]): typings.semanticUiCheckbox.anon.PickImplreadOnlyPartialPi = {
+          val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplreadOnlyPartialPi]
+        }
+      }
     }
     type ClassNameSettings = Param
     
@@ -398,7 +306,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplinput | PickImpllabel) & PartialPickImplkeyofImplInput
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiCheckbox.anon.PickImplinputPartialPickI
+        - typings.semanticUiCheckbox.anon.PickImpllabelPartialPickI
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplinputPartialPickI(input: String & js.UndefOr[String]): typings.semanticUiCheckbox.anon.PickImplinputPartialPickI = {
+          val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplinputPartialPickI]
+        }
+        
+        inline def PickImpllabelPartialPickI(label: String & js.UndefOr[String]): typings.semanticUiCheckbox.anon.PickImpllabelPartialPickI = {
+          val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImpllabelPartialPickI]
+        }
+      }
     }
     type SelectorSettings = typings.semanticUiCheckbox.SemanticUI.Checkbox.SelectorSettings.Param
   }
@@ -628,7 +552,181 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImpluncheckable | PickImplfireOnInit | PickImplonChange | PickImplonChecked | PickImplonIndeterminate | PickImplonDeterminate | PickImplonUnchecked | PickImplbeforeChecked | PickImplbeforeIndetermina | PickImplbeforeDeterminate | PickImplbeforeUnchecked | PickImplonEnable | PickImplonDisable | PickImplonEnabled | PickImplonDisabled | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiCheckbox.anon.PickImpluncheckablePartia
+      - typings.semanticUiCheckbox.anon.PickImplfireOnInitPartial
+      - typings.semanticUiCheckbox.anon.PickImplonChangePartialPi
+      - typings.semanticUiCheckbox.anon.PickImplonCheckedPartialP
+      - typings.semanticUiCheckbox.anon.PickImplonIndeterminatePa
+      - typings.semanticUiCheckbox.anon.PickImplonDeterminatePart
+      - typings.semanticUiCheckbox.anon.PickImplonUncheckedPartia
+      - typings.semanticUiCheckbox.anon.PickImplbeforeCheckedPart
+      - typings.semanticUiCheckbox.anon.PickImplbeforeIndetermina
+      - typings.semanticUiCheckbox.anon.PickImplbeforeDeterminate
+      - typings.semanticUiCheckbox.anon.PickImplbeforeUncheckedPa
+      - typings.semanticUiCheckbox.anon.PickImplonEnablePartialPi
+      - typings.semanticUiCheckbox.anon.PickImplonDisablePartialP
+      - typings.semanticUiCheckbox.anon.PickImplonEnabledPartialP
+      - typings.semanticUiCheckbox.anon.PickImplonDisabledPartial
+      - typings.semanticUiCheckbox.anon.PickImplselectorPartialPi
+      - typings.semanticUiCheckbox.anon.PickImplclassNamePartialP
+      - typings.semanticUiCheckbox.anon.PickImplerrorPartialPickI
+      - typings.semanticUiCheckbox.anon.PickImplnamespacePartialP
+      - typings.semanticUiCheckbox.anon.PickImplnamePartialPickIm
+      - typings.semanticUiCheckbox.anon.PickImplsilentPartialPick
+      - typings.semanticUiCheckbox.anon.PickImpldebugPartialPickI
+      - typings.semanticUiCheckbox.anon.PickImplperformancePartia
+      - typings.semanticUiCheckbox.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplbeforeCheckedPart(
+        beforeChecked: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
+      ): typings.semanticUiCheckbox.anon.PickImplbeforeCheckedPart = {
+        val __obj = js.Dynamic.literal(beforeChecked = beforeChecked.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplbeforeCheckedPart]
+      }
+      
+      inline def PickImplbeforeDeterminate(
+        beforeDeterminate: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
+      ): typings.semanticUiCheckbox.anon.PickImplbeforeDeterminate = {
+        val __obj = js.Dynamic.literal(beforeDeterminate = beforeDeterminate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplbeforeDeterminate]
+      }
+      
+      inline def PickImplbeforeIndetermina(
+        beforeIndeterminate: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
+      ): typings.semanticUiCheckbox.anon.PickImplbeforeIndetermina = {
+        val __obj = js.Dynamic.literal(beforeIndeterminate = beforeIndeterminate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplbeforeIndetermina]
+      }
+      
+      inline def PickImplbeforeUncheckedPa(
+        beforeUnchecked: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
+      ): typings.semanticUiCheckbox.anon.PickImplbeforeUncheckedPa = {
+        val __obj = js.Dynamic.literal(beforeUnchecked = beforeUnchecked.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplbeforeUncheckedPa]
+      }
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiCheckbox.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiCheckbox.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiCheckbox.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplfireOnInitPartial(fireOnInit: Boolean & js.UndefOr[Boolean]): typings.semanticUiCheckbox.anon.PickImplfireOnInitPartial = {
+        val __obj = js.Dynamic.literal(fireOnInit = fireOnInit.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplfireOnInitPartial]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiCheckbox.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiCheckbox.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplonChangePartialPi(
+        onChange: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonChangePartialPi = {
+        val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonChangePartialPi]
+      }
+      
+      inline def PickImplonCheckedPartialP(
+        onChecked: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonCheckedPartialP = {
+        val __obj = js.Dynamic.literal(onChecked = onChecked.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonCheckedPartialP]
+      }
+      
+      inline def PickImplonDeterminatePart(
+        onDeterminate: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonDeterminatePart = {
+        val __obj = js.Dynamic.literal(onDeterminate = onDeterminate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonDeterminatePart]
+      }
+      
+      inline def PickImplonDisablePartialP(
+        onDisable: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonDisablePartialP = {
+        val __obj = js.Dynamic.literal(onDisable = onDisable.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonDisablePartialP]
+      }
+      
+      inline def PickImplonDisabledPartial(
+        onDisabled: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonDisabledPartial = {
+        val __obj = js.Dynamic.literal(onDisabled = onDisabled.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonDisabledPartial]
+      }
+      
+      inline def PickImplonEnablePartialPi(
+        onEnable: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonEnablePartialPi = {
+        val __obj = js.Dynamic.literal(onEnable = onEnable.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonEnablePartialPi]
+      }
+      
+      inline def PickImplonEnabledPartialP(
+        onEnabled: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonEnabledPartialP = {
+        val __obj = js.Dynamic.literal(onEnabled = onEnabled.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonEnabledPartialP]
+      }
+      
+      inline def PickImplonIndeterminatePa(
+        onIndeterminate: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonIndeterminatePa = {
+        val __obj = js.Dynamic.literal(onIndeterminate = onIndeterminate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonIndeterminatePa]
+      }
+      
+      inline def PickImplonUncheckedPartia(
+        onUnchecked: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+      ): typings.semanticUiCheckbox.anon.PickImplonUncheckedPartia = {
+        val __obj = js.Dynamic.literal(onUnchecked = onUnchecked.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplonUncheckedPartia]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiCheckbox.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiCheckbox.anon.PickImplselectorPartialPi = {
+        val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplselectorPartialPi]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiCheckbox.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImpluncheckablePartia(uncheckable: (auto | Boolean) & (js.UndefOr[auto | Boolean])): typings.semanticUiCheckbox.anon.PickImpluncheckablePartia = {
+        val __obj = js.Dynamic.literal(uncheckable = uncheckable.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImpluncheckablePartia]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiCheckbox.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiCheckbox.anon.PickImplverbosePartialPic]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/modules/checkbox.html#/settings}

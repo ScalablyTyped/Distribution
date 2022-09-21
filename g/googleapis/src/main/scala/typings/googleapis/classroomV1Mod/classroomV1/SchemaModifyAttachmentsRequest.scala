@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to modify the attachments of a student submission.
-  */
 trait SchemaModifyAttachmentsRequest extends StObject {
   
   /**
-    * Attachments to add. A student submission may not have more than 20
-    * attachments.  Form attachments are not supported.
+    * Attachments to add. A student submission may not have more than 20 attachments. Form attachments are not supported.
     */
   var addAttachments: js.UndefOr[js.Array[SchemaAttachment]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaModifyAttachmentsRequest {
     
     inline def setAddAttachmentsUndefined: Self = StObject.set(x, "addAttachments", js.undefined)
     
-    inline def setAddAttachmentsVarargs(value: SchemaAttachment*): Self = StObject.set(x, "addAttachments", js.Array(value :_*))
+    inline def setAddAttachmentsVarargs(value: SchemaAttachment*): Self = StObject.set(x, "addAttachments", js.Array(value*))
   }
 }

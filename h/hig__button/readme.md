@@ -10,10 +10,10 @@ HIG Button
 | ------------------ | :-------------: |
 | Full name          | @hig/button |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 6417 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 882.3333333333334 |
+| # stars            | 154.0 |
 
 ## Links
 - [Homepage](https://github.com/Autodesk/hig#readme)

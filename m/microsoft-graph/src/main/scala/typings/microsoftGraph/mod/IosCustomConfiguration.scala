@@ -9,7 +9,7 @@ trait IosCustomConfiguration
      with DeviceConfiguration {
   
   // Payload. (UTF8 encoded byte array)
-  var payload: js.UndefOr[Double] = js.undefined
+  var payload: js.UndefOr[String] = js.undefined
   
   // Payload file name (.mobileconfig
   var payloadFileName: js.UndefOr[NullableOption[String]] = js.undefined
@@ -26,7 +26,7 @@ object IosCustomConfiguration {
   
   extension [Self <: IosCustomConfiguration](x: Self) {
     
-    inline def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadFileName(value: NullableOption[String]): Self = StObject.set(x, "payloadFileName", value.asInstanceOf[js.Any])
     

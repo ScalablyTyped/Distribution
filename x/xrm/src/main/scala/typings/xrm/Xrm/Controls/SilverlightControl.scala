@@ -18,6 +18,7 @@ trait SilverlightControl
   /**
     * Gets the query string value passed to Silverlight.
     * @returns The data.
+    * @deprecated Silverlight is no longer supported. These methods won't be available after October 2020.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
   def getData(): String
@@ -32,6 +33,7 @@ trait SilverlightControl
   /**
     * Sets the query string value passed to Silverlight.
     * @param data The data.
+    * @deprecated Silverlight is no longer supported. These methods won't be available after October 2020.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
   def setData(data: String): Unit

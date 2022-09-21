@@ -277,6 +277,10 @@ object iconsMod {
   @js.native
   val CaretDownFill: Icon = js.native
   
+  @JSImport("grommet-icons/icons", "CaretLeftFill")
+  @js.native
+  val CaretLeftFill: Icon = js.native
+  
   @JSImport("grommet-icons/icons", "CaretNext")
   @js.native
   val CaretNext: Icon = js.native
@@ -284,6 +288,10 @@ object iconsMod {
   @JSImport("grommet-icons/icons", "CaretPrevious")
   @js.native
   val CaretPrevious: Icon = js.native
+  
+  @JSImport("grommet-icons/icons", "CaretRightFill")
+  @js.native
+  val CaretRightFill: Icon = js.native
   
   @JSImport("grommet-icons/icons", "CaretUp")
   @js.native
@@ -600,6 +608,10 @@ object iconsMod {
   @JSImport("grommet-icons/icons", "Dislike")
   @js.native
   val Dislike: Icon = js.native
+  
+  @JSImport("grommet-icons/icons", "DislikeFill")
+  @js.native
+  val DislikeFill: Icon = js.native
   
   @JSImport("grommet-icons/icons", "Docker")
   @js.native
@@ -961,6 +973,10 @@ object iconsMod {
   @js.native
   val FormNextLink: Icon = js.native
   
+  @JSImport("grommet-icons/icons", "FormPin")
+  @js.native
+  val FormPin: Icon = js.native
+  
   @JSImport("grommet-icons/icons", "FormPrevious")
   @js.native
   val FormPrevious: Icon = js.native
@@ -1125,6 +1141,10 @@ object iconsMod {
   @js.native
   val HomeOption: Icon = js.native
   
+  @JSImport("grommet-icons/icons", "HomeRounded")
+  @js.native
+  val HomeRounded: Icon = js.native
+  
   @JSImport("grommet-icons/icons", "Horton")
   @js.native
   val Horton: Icon = js.native
@@ -1188,6 +1208,10 @@ object iconsMod {
   @JSImport("grommet-icons/icons", "Inherit")
   @js.native
   val Inherit: Icon = js.native
+  
+  @JSImport("grommet-icons/icons", "Insecure")
+  @js.native
+  val Insecure: Icon = js.native
   
   @JSImport("grommet-icons/icons", "Inspect")
   @js.native
@@ -1260,6 +1284,10 @@ object iconsMod {
   @JSImport("grommet-icons/icons", "Like")
   @js.native
   val Like: Icon = js.native
+  
+  @JSImport("grommet-icons/icons", "LikeFill")
+  @js.native
+  val LikeFill: Icon = js.native
   
   @JSImport("grommet-icons/icons", "LineChart")
   @js.native
@@ -1941,6 +1969,10 @@ object iconsMod {
   @js.native
   val StarHalf: Icon = js.native
   
+  @JSImport("grommet-icons/icons", "StarOutline")
+  @js.native
+  val StarOutline: Icon = js.native
+  
   @JSImport("grommet-icons/icons", "StatusCritical")
   @js.native
   val StatusCritical: Icon = js.native
@@ -2168,6 +2200,10 @@ object iconsMod {
   @JSImport("grommet-icons/icons", "Tictok")
   @js.native
   val Tictok: Icon = js.native
+  
+  @JSImport("grommet-icons/icons", "Tiktok")
+  @js.native
+  val Tiktok: Icon = js.native
   
   @JSImport("grommet-icons/icons", "Time")
   @js.native

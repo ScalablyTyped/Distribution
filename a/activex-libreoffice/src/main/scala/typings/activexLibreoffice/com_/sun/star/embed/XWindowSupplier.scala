@@ -30,7 +30,7 @@ object XWindowSupplier {
     Window: XWindow,
     acquire: () => Unit,
     getWindow: () => XWindow,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XWindowSupplier = {
     val __obj = js.Dynamic.literal(Window = Window.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getWindow = js.Any.fromFunction0(getWindow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

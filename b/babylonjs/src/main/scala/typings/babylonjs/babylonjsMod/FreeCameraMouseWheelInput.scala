@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Cameras/index", "FreeCameraMouseWheelInput")
 @js.native
-class FreeCameraMouseWheelInput ()
+open class FreeCameraMouseWheelInput ()
   extends typings.babylonjs.inputsIndexMod.FreeCameraMouseWheelInput

@@ -33,6 +33,6 @@ object NodeConfigurationOptionsMessage {
     
     inline def setNodeConfigurationOptionListUndefined: Self = StObject.set(x, "NodeConfigurationOptionList", js.undefined)
     
-    inline def setNodeConfigurationOptionListVarargs(value: NodeConfigurationOption*): Self = StObject.set(x, "NodeConfigurationOptionList", js.Array(value :_*))
+    inline def setNodeConfigurationOptionListVarargs(value: NodeConfigurationOption*): Self = StObject.set(x, "NodeConfigurationOptionList", js.Array(value*))
   }
 }

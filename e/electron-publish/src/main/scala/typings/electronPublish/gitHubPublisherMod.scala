@@ -1,10 +1,12 @@
 package typings.electronPublish
 
+import typings.builderUtil.archMod.Arch
 import typings.builderUtilRuntime.publishOptionsMod.GithubOptions
 import typings.electronPublish.mod.HttpPublisher
 import typings.electronPublish.mod.PublishContext
 import typings.electronPublish.mod.PublishOptions
 import typings.lazyVal.mod.Lazy
+import typings.node.httpMod.ClientRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,42 +15,55 @@ object gitHubPublisherMod {
   
   @JSImport("electron-publish/out/gitHubPublisher", "GitHubPublisher")
   @js.native
-  class GitHubPublisher protected () extends HttpPublisher {
+  open class GitHubPublisher protected () extends HttpPublisher {
     def this(context: PublishContext, info: GithubOptions, version: String) = this()
     def this(context: PublishContext, info: GithubOptions, version: String, options: PublishOptions) = this()
     
-    val _release: Lazy[js.Any] = js.native
+    val _release: Lazy[Any] = js.native
     
-    /* private */ var createRelease: js.Any = js.native
+    /* private */ var createRelease: Any = js.native
     
-    def deleteRelease(): js.Promise[js.Any] = js.native
+    def deleteRelease(): js.Promise[Any] = js.native
     
-    /* private */ var doUploadFile: js.Any = js.native
+    /* protected */ def doUpload(
+      fileName: String,
+      arch: Arch,
+      dataLength: Double,
+      requestProcessor: js.Function2[
+          /* request */ ClientRequest, 
+          /* reject */ js.Function1[/* error */ js.Error, Unit], 
+          Unit
+        ]
+    ): js.Promise[Any] = js.native
     
-    /* private */ var getOrCreateRelease: js.Any = js.native
+    /* private */ var doUploadFile: Any = js.native
     
-    def getRelease(): js.Promise[js.Any] = js.native
+    /* private */ var doesErrorMeanAlreadyExists: Any = js.native
     
-    /* private */ var githubRequest: js.Any = js.native
+    /* private */ var getOrCreateRelease: Any = js.native
     
-    /* private */ val info: js.Any = js.native
+    def getRelease(): js.Promise[Any] = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ var githubRequest: Any = js.native
     
-    /* private */ var overwriteArtifact: js.Any = js.native
+    /* private */ val info: Any = js.native
+    
+    /* private */ val options: Any = js.native
+    
+    /* private */ var overwriteArtifact: Any = js.native
     
     @JSName("providerName")
-    val providerName_FGitHubPublisher: /* "GitHub" */ String = js.native
+    val providerName_FGitHubPublisher: /* "github" */ String = js.native
     
-    /* private */ var releaseLogFields: js.Any = js.native
+    /* private */ var releaseLogFields: Any = js.native
     
-    /* private */ val releaseType: js.Any = js.native
+    /* private */ val releaseType: Any = js.native
     
-    /* private */ val tag: js.Any = js.native
+    /* private */ val tag: Any = js.native
     
-    /* private */ val token: js.Any = js.native
+    /* private */ val token: Any = js.native
     
-    /* private */ val version: js.Any = js.native
+    /* private */ val version: Any = js.native
   }
   
   trait Release extends StObject {

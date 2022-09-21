@@ -57,7 +57,7 @@ object recurrentSerializationMod {
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setCellVarargs(value: RNNCellSerialization*): Self = StObject.set(x, "cell", js.Array(value :_*))
+      inline def setCellVarargs(value: RNNCellSerialization*): Self = StObject.set(x, "cell", js.Array(value*))
       
       inline def setGo_backwards(value: Boolean): Self = StObject.set(x, "go_backwards", value.asInstanceOf[js.Any])
       
@@ -452,7 +452,7 @@ object recurrentSerializationMod {
       
       inline def setCells(value: js.Array[RNNCellSerialization]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      inline def setCellsVarargs(value: RNNCellSerialization*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: RNNCellSerialization*): Self = StObject.set(x, "cells", js.Array(value*))
     }
   }
   

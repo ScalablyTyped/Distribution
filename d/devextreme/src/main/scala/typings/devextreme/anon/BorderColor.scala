@@ -1,24 +1,25 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.dash
-import typings.devextreme.devextremeStrings.dot
-import typings.devextreme.devextremeStrings.longDash
-import typings.devextreme.devextremeStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BorderColor extends StObject {
   
+  /**
+    * An object defining the border properties for a selected series.
+    */
   var border: js.UndefOr[ColorDashStyle] = js.undefined
   
+  /**
+    * Sets a color for a series when it is selected.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  
-  var hatching: js.UndefOr[Step] = js.undefined
-  
-  var width: js.UndefOr[Double] = js.undefined
+  /**
+    * Specifies the hatching properties to be applied when a point is selected.
+    */
+  var hatching: js.UndefOr[Direction] = js.undefined
 }
 object BorderColor {
   
@@ -37,16 +38,8 @@ object BorderColor {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDashStyle(value: dash | dot | longDash | solid): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
-    
-    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
-    
-    inline def setHatching(value: Step): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
+    inline def setHatching(value: Direction): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
     
     inline def setHatchingUndefined: Self = StObject.set(x, "hatching", js.undefined)
-    
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

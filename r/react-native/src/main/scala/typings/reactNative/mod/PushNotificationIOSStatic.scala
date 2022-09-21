@@ -30,8 +30,6 @@ trait PushNotificationIOSStatic extends StObject {
     */
   def abandonPermissions(): Unit = js.native
   
-  @JSName("addEventListener")
-  def addEventListener_localNotification(`type`: localNotification, handler: js.Function1[/* notification */ PushNotification, Unit]): Unit = js.native
   /**
     * Attaches a listener to remote notifications while the app is running in the
     * foreground or the background.
@@ -40,8 +38,10 @@ trait PushNotificationIOSStatic extends StObject {
     *
     * The type MUST be 'notification'
     */
-  @JSName("addEventListener")
-  def addEventListener_notification(`type`: notification, handler: js.Function1[/* notification */ PushNotification, Unit]): Unit = js.native
+  def addEventListener(
+    `type`: notification | localNotification,
+    handler: js.Function1[/* notification */ PushNotification, Unit]
+  ): Unit = js.native
   /**
     * Fired when the user registers for remote notifications.
     *

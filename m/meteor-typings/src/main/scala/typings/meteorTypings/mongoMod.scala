@@ -34,9 +34,9 @@ object mongoMod {
       def _dropIndex(keys: StringDictionary[Double | String]): Unit = js.native
       
       def _ensureIndex(keys: String): Unit = js.native
-      def _ensureIndex(keys: String, options: StringDictionary[js.Any]): Unit = js.native
+      def _ensureIndex(keys: String, options: StringDictionary[Any]): Unit = js.native
       def _ensureIndex(keys: StringDictionary[Double | String]): Unit = js.native
-      def _ensureIndex(keys: StringDictionary[Double | String], options: StringDictionary[js.Any]): Unit = js.native
+      def _ensureIndex(keys: StringDictionary[Double | String], options: StringDictionary[Any]): Unit = js.native
       
       def allow(options: Fetch[T]): Boolean = js.native
       
@@ -63,9 +63,9 @@ object mongoMod {
       def insert(doc: T): String = js.native
       def insert(doc: T, callback: js.Function): String = js.native
       
-      def rawCollection(): js.Any = js.native
+      def rawCollection(): Any = js.native
       
-      def rawDatabase(): js.Any = js.native
+      def rawDatabase(): Any = js.native
       
       def remove(selector: String): Double = js.native
       def remove(selector: String, callback: js.Function): Double = js.native
@@ -107,7 +107,7 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.Collection")
     @js.native
-    class CollectionCls[T] ()
+    open class CollectionCls[T] ()
       extends StObject
          with Collection[T] {
       def this(name: String) = this()
@@ -128,14 +128,11 @@ object mongoMod {
       def forEach(callback: js.Function3[/* doc */ T, /* index */ Double, /* cursor */ Cursor[T], Unit]): Unit = js.native
       def forEach(
         callback: js.Function3[/* doc */ T, /* index */ Double, /* cursor */ Cursor[T], Unit],
-        thisArg: js.Any
+        thisArg: Any
       ): Unit = js.native
       
       def map[U](callback: js.Function3[/* doc */ T, /* index */ Double, /* cursor */ Cursor[T], U]): js.Array[U] = js.native
-      def map[U](
-        callback: js.Function3[/* doc */ T, /* index */ Double, /* cursor */ Cursor[T], U],
-        thisArg: js.Any
-      ): js.Array[U] = js.native
+      def map[U](callback: js.Function3[/* doc */ T, /* index */ Double, /* cursor */ Cursor[T], U], thisArg: Any): js.Array[U] = js.native
       
       def observe(callbacks: ObserveCallbacks): LiveQueryHandle = js.native
       
@@ -148,7 +145,7 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.Cursor")
     @js.native
-    class CursorCls[T] ()
+    open class CursorCls[T] ()
       extends StObject
          with Cursor[T]
     
@@ -162,7 +159,7 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.ObjectID")
     @js.native
-    class ObjectIDCls ()
+    open class ObjectIDCls ()
       extends StObject
          with ObjectID {
       def this(hexString: String) = this()
@@ -174,18 +171,18 @@ object mongoMod {
       
       var fetch: js.UndefOr[js.Array[String]] = js.undefined
       
-      var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ js.Any, Boolean]] = js.undefined
+      var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ Any, Boolean]] = js.undefined
       
-      var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ js.Any, Boolean]] = js.undefined
+      var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ Any, Boolean]] = js.undefined
       
       var transform: js.UndefOr[js.Function] = js.undefined
       
       var update: js.UndefOr[
             js.Function4[
               /* userId */ String, 
-              /* doc */ js.Any, 
+              /* doc */ Any, 
               /* fieldNames */ js.Array[String], 
-              /* modifier */ js.Any, 
+              /* modifier */ Any, 
               Boolean
             ]
           ] = js.undefined
@@ -203,13 +200,13 @@ object mongoMod {
         
         inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
         
-        inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
+        inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value*))
         
-        inline def setInsert(value: (/* userId */ String, /* doc */ js.Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+        inline def setInsert(value: (/* userId */ String, /* doc */ Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
         
         inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
         
-        inline def setRemove(value: (/* userId */ String, /* doc */ js.Any) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+        inline def setRemove(value: (/* userId */ String, /* doc */ Any) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
         
         inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
         
@@ -218,7 +215,7 @@ object mongoMod {
         inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
         
         inline def setUpdate(
-          value: (/* userId */ String, /* doc */ js.Any, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
+          value: (/* userId */ String, /* doc */ Any, /* fieldNames */ js.Array[String], /* modifier */ Any) => Boolean
         ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
         
         inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
@@ -368,7 +365,7 @@ object mongoMod {
     trait Selector
       extends StObject
          with Object
-         with /* key */ StringDictionary[js.Any]
+         with /* key */ StringDictionary[Any]
     object Selector {
       
       inline def apply(

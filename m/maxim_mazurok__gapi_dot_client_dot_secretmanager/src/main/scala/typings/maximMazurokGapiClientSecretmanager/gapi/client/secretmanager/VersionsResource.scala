@@ -4,8 +4,8 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSecretmanager.anon.Accesstoken
 import typings.maximMazurokGapiClientSecretmanager.anon.Callback
 import typings.maximMazurokGapiClientSecretmanager.anon.Fields
+import typings.maximMazurokGapiClientSecretmanager.anon.Filter
 import typings.maximMazurokGapiClientSecretmanager.anon.Key
-import typings.maximMazurokGapiClientSecretmanager.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VersionsResource extends StObject {
   
-  /** Accesses a SecretVersion. This call returns the secret data. `projects/∗/secrets/∗/versions/latest` is an alias to the `latest` SecretVersion. */
+  /** Accesses a SecretVersion. This call returns the secret data. `projects/ *‍/secrets/ *‍/versions/latest` is an alias to the most recently created SecretVersion. */
   def access(): Request[AccessSecretVersionResponse] = js.native
   def access(request: Accesstoken): Request[AccessSecretVersionResponse] = js.native
   
@@ -29,11 +29,11 @@ trait VersionsResource extends StObject {
   /** Enables a SecretVersion. Sets the state of the SecretVersion to ENABLED. */
   def enable(request: Key): Request[SecretVersion] = js.native
   
-  /** Gets metadata for a SecretVersion. `projects/∗/secrets/∗/versions/latest` is an alias to the `latest` SecretVersion. */
+  /** Gets metadata for a SecretVersion. `projects/ *‍/secrets/ *‍/versions/latest` is an alias to the most recently created SecretVersion. */
   def get(): Request[SecretVersion] = js.native
   def get(request: Accesstoken): Request[SecretVersion] = js.native
   
   /** Lists SecretVersions. This call does not return secret data. */
   def list(): Request[ListSecretVersionsResponse] = js.native
-  def list(request: Oauthtoken): Request[ListSecretVersionsResponse] = js.native
+  def list(request: Filter): Request[ListSecretVersionsResponse] = js.native
 }

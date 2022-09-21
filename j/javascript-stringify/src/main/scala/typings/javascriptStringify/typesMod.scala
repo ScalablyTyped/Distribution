@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  type Next = js.Function2[/* value */ js.Any, /* key */ js.UndefOr[PropertyKey], js.UndefOr[String]]
+  type Next = js.Function2[/* value */ Any, /* key */ js.UndefOr[PropertyKey], js.UndefOr[String]]
   
   type ToString = js.Function4[
-    /* value */ js.Any, 
+    /* value */ Any, 
     /* space */ String, 
     /* next */ Next, 
     /* key */ js.UndefOr[PropertyKey], 

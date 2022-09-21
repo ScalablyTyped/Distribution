@@ -4,12 +4,12 @@ import typings.babylonjs.anon.DownDegrees
 import typings.babylonjs.mathLikeMod.IPlaneLike
 import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.mathViewportMod.Viewport
+import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.typesMod.float
 import typings.std.ArrayLike
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,23 +21,19 @@ object mathVectorMod {
   /**
     * Creates an empty matrix (filled with zeros)
     */
-  class Matrix () extends StObject {
+  open class Matrix () extends StObject {
     
-    /* private */ var _isIdentity: js.Any = js.native
+    /* private */ var _isIdentity: Any = js.native
     
-    /* private */ var _isIdentity3x2: js.Any = js.native
+    /* private */ var _isIdentity3x2: Any = js.native
     
-    /* private */ var _isIdentity3x2Dirty: js.Any = js.native
+    /* private */ var _isIdentity3x2Dirty: Any = js.native
     
-    /* private */ var _isIdentityDirty: js.Any = js.native
+    /* private */ var _isIdentityDirty: Any = js.native
     
-    /* private */ val _m: js.Any = js.native
+    /* private */ val _m: Any = js.native
     
-    /** @hidden */
-    def _markAsUpdated(): Unit = js.native
-    
-    /** @hidden */
-    /* private */ var _updateIdentityStatus: js.Any = js.native
+    /* private */ var _updateIdentityStatus: Any = js.native
     
     /**
       * Adds the current matrix with a second one
@@ -82,7 +78,7 @@ object mathVectorMod {
       * Returns the matrix as a Float32Array or Array<number>
       * @returns the matrix underlying array.
       */
-    def asArray(): DeepImmutable[Float32Array | js.Array[Double]] = js.native
+    def asArray(): DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
     
     /**
       * Copy the current matrix from the given one
@@ -99,24 +95,40 @@ object mathVectorMod {
       * @param offset defines the offset in the target array where to start storing values
       * @returns the current matrix
       */
-    def copyToArray(array: Float32Array): Matrix = js.native
-    def copyToArray(array: Float32Array, offset: Double): Matrix = js.native
+    def copyToArray(array: js.typedarray.Float32Array): Matrix = js.native
+    def copyToArray(array: js.typedarray.Float32Array, offset: Double): Matrix = js.native
     
     /**
       * Decomposes the current Matrix into a translation, rotation and scaling components
       * @param scale defines the scale vector3 given as a reference to update
       * @param rotation defines the rotation quaternion given as a reference to update
       * @param translation defines the translation vector3 given as a reference to update
+      * @param preserveScalingNode Use scaling sign coming from this node. Otherwise scaling sign might change.
       * @returns true if operation was successful
       */
     def decompose(): Boolean = js.native
+    def decompose(scale: Unit, rotation: Unit, translation: Unit, preserveScalingNode: TransformNode): Boolean = js.native
     def decompose(scale: Unit, rotation: Unit, translation: Vector3): Boolean = js.native
+    def decompose(scale: Unit, rotation: Unit, translation: Vector3, preserveScalingNode: TransformNode): Boolean = js.native
     def decompose(scale: Unit, rotation: Quaternion): Boolean = js.native
+    def decompose(scale: Unit, rotation: Quaternion, translation: Unit, preserveScalingNode: TransformNode): Boolean = js.native
     def decompose(scale: Unit, rotation: Quaternion, translation: Vector3): Boolean = js.native
+    def decompose(scale: Unit, rotation: Quaternion, translation: Vector3, preserveScalingNode: TransformNode): Boolean = js.native
     def decompose(scale: Vector3): Boolean = js.native
+    def decompose(scale: Vector3, rotation: Unit, translation: Unit, preserveScalingNode: TransformNode): Boolean = js.native
     def decompose(scale: Vector3, rotation: Unit, translation: Vector3): Boolean = js.native
+    def decompose(scale: Vector3, rotation: Unit, translation: Vector3, preserveScalingNode: TransformNode): Boolean = js.native
     def decompose(scale: Vector3, rotation: Quaternion): Boolean = js.native
+    def decompose(scale: Vector3, rotation: Quaternion, translation: Unit, preserveScalingNode: TransformNode): Boolean = js.native
     def decompose(scale: Vector3, rotation: Quaternion, translation: Vector3): Boolean = js.native
+    def decompose(scale: Vector3, rotation: Quaternion, translation: Vector3, preserveScalingNode: TransformNode): Boolean = js.native
+    
+    /**
+      * Decomposes the current Matrix into a translation, rotation and scaling components of the provided node
+      * @param node the node to decompose the matrix to
+      * @returns true if operation was successful
+      */
+    def decomposeToTransformNode(node: TransformNode): Boolean = js.native
     
     /**
       * Gets the determinant of the matrix
@@ -164,6 +176,14 @@ object mathVectorMod {
     def getRow(index: Double): Nullable[Vector4] = js.native
     
     /**
+      * Gets specific row of the matrix to ref
+      * @param index defines the number of the row to get
+      * @param rowVector vector to store the index-th row of the current matrix
+      * @returns the current matrix
+      */
+    def getRowToRef(index: Double, rowVector: Vector4): Matrix = js.native
+    
+    /**
       * Gets the translation value of the current matrix
       * @returns a new Vector3 as the extracted translation from the matrix
       */
@@ -204,7 +224,12 @@ object mathVectorMod {
     /**
       * Gets the internal data of the matrix
       */
-    def m: DeepImmutable[Float32Array | js.Array[Double]] = js.native
+    def m: DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
+    
+    /**
+      * Update the updateFlag to indicate that the matrix has been updated
+      */
+    def markAsUpdated(): Unit = js.native
     
     /**
       * Multiply two matrices
@@ -229,7 +254,7 @@ object mathVectorMod {
       * @param offset defines the offset in the target array where to start storing values
       * @returns the current matrix
       */
-    def multiplyToArray(other: DeepImmutable[Matrix], result: Float32Array, offset: Double): Matrix = js.native
+    def multiplyToArray(other: DeepImmutable[Matrix], result: js.typedarray.Float32Array, offset: Double): Matrix = js.native
     
     /**
       * Sets the given matrix "result" with the multiplication result of the current Matrix and the given one
@@ -313,7 +338,7 @@ object mathVectorMod {
       * Returns the matrix as a Float32Array or Array<number>
       * @returns the matrix underlying array
       */
-    def toArray(): DeepImmutable[Float32Array | js.Array[Double]] = js.native
+    def toArray(): DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
     
     /**
       * Writes to the given matrix a normal matrix, computed from this one (using values from identity matrix for fourth row and column).
@@ -439,7 +464,7 @@ object mathVectorMod {
       * @param result defines the target matrix
       */
     inline def FromFloat32ArrayToRefScaled(
-      array: DeepImmutable[Float32Array | js.Array[Double]],
+      array: DeepImmutable[js.typedarray.Float32Array | js.Array[Double]],
       offset: Double,
       scale: Double,
       result: Matrix
@@ -550,14 +575,14 @@ object mathVectorMod {
       * @param matrix defines the matrix to use
       * @returns a new Float32Array array with 4 elements : the 2x2 matrix extracted from the given matrix
       */
-    inline def GetAsMatrix2x2(matrix: DeepImmutable[Matrix]): Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix2x2")(matrix.asInstanceOf[js.Any]).asInstanceOf[Float32Array | js.Array[Double]]
+    inline def GetAsMatrix2x2(matrix: DeepImmutable[Matrix]): js.typedarray.Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix2x2")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array | js.Array[Double]]
     
     /**
       * Extracts a 3x3 matrix from a given matrix and store the result in a Float32Array
       * @param matrix defines the matrix to use
       * @returns a new Float32Array array with 9 elements : the 3x3 matrix extracted from the given matrix
       */
-    inline def GetAsMatrix3x3(matrix: DeepImmutable[Matrix]): Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix3x3")(matrix.asInstanceOf[js.Any]).asInstanceOf[Float32Array | js.Array[Double]]
+    inline def GetAsMatrix3x3(matrix: DeepImmutable[Matrix]): js.typedarray.Float32Array | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAsMatrix3x3")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array | js.Array[Double]]
     
     /**
       * Computes a complete transformation matrix
@@ -671,14 +696,52 @@ object mathVectorMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtRHToRef")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
+      * Gets a new rotation matrix used to rotate an entity so as it looks in the direction specified by forward from the eye position, the up direction being oriented like "up".
+      * This function works in left handed mode
+      * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+      * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+      * @returns the new matrix
+      */
+    inline def LookDirectionLH(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    
+    /**
+      * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks in the direction of forward, the up direction being oriented like "up".
+      * This function works in left handed mode
+      * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+      * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+      * @param result defines the target matrix
+      */
+    inline def LookDirectionLHToRef(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3], result: Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Gets a new rotation matrix used to rotate an entity so as it looks in the direction specified by forward from the eye position, the up Vector3 being oriented like "up".
+      * This function works in right handed mode
+      * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+      * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+      * @returns the new matrix
+      */
+    inline def LookDirectionRH(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionRH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    
+    /**
+      * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks in the direction of forward, the up vector3 being oriented like "up".
+      * This function works in right handed mode
+      * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+      * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+      * @param result defines the target matrix
+      */
+    inline def LookDirectionRHToRef(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3], result: Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionRHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Create a left-handed orthographic projection matrix
       * @param width defines the viewport width
       * @param height defines the viewport height
       * @param znear defines the near clip plane
       * @param zfar defines the far clip plane
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
       * @returns a new matrix as a left-handed orthographic projection matrix
       */
     inline def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double, halfZRange: Boolean): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Store a left-handed orthographic projection to a given matrix
@@ -687,8 +750,10 @@ object mathVectorMod {
       * @param znear defines the near clip plane
       * @param zfar defines the far clip plane
       * @param result defines the target matrix
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
       */
     inline def OrthoLHToRef(width: Double, height: Double, znear: Double, zfar: Double, result: Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLHToRef")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def OrthoLHToRef(width: Double, height: Double, znear: Double, zfar: Double, result: Matrix, halfZRange: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoLHToRef")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a left-handed orthographic projection matrix
@@ -698,9 +763,19 @@ object mathVectorMod {
       * @param top defines the viewport top coordinate
       * @param znear defines the near clip plane
       * @param zfar defines the far clip plane
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
       * @returns a new matrix as a left-handed orthographic projection matrix
       */
     inline def OrthoOffCenterLH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def OrthoOffCenterLH(
+      left: Double,
+      right: Double,
+      bottom: Double,
+      top: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Stores a left-handed orthographic projection into a given matrix
@@ -711,6 +786,7 @@ object mathVectorMod {
       * @param znear defines the near clip plane
       * @param zfar defines the far clip plane
       * @param result defines the target matrix
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
       */
     inline def OrthoOffCenterLHToRef(
       left: Double,
@@ -721,6 +797,16 @@ object mathVectorMod {
       zfar: Double,
       result: Matrix
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def OrthoOffCenterLHToRef(
+      left: Double,
+      right: Double,
+      bottom: Double,
+      top: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterLHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a right-handed orthographic projection matrix
@@ -730,9 +816,19 @@ object mathVectorMod {
       * @param top defines the viewport top coordinate
       * @param znear defines the near clip plane
       * @param zfar defines the far clip plane
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
       * @returns a new matrix as a right-handed orthographic projection matrix
       */
     inline def OrthoOffCenterRH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def OrthoOffCenterRH(
+      left: Double,
+      right: Double,
+      bottom: Double,
+      top: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRH")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Stores a right-handed orthographic projection into a given matrix
@@ -743,6 +839,7 @@ object mathVectorMod {
       * @param znear defines the near clip plane
       * @param zfar defines the far clip plane
       * @param result defines the target matrix
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
       */
     inline def OrthoOffCenterRHToRef(
       left: Double,
@@ -753,25 +850,94 @@ object mathVectorMod {
       zfar: Double,
       result: Matrix
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def OrthoOffCenterRHToRef(
+      left: Double,
+      right: Double,
+      bottom: Double,
+      top: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OrthoOffCenterRHToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a left-handed perspective projection matrix
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
-      * @param zfar defines the far clip plane
+      * @param zfar defines the far clip plane. If 0, assume we are in "infinite zfar" mode
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+      * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
+      * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
       * @returns a new matrix as a left-handed perspective projection matrix
       */
     inline def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double, halfZRange: Boolean): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovLH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovLH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovLH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovLH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovLH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovLH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Unit,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Stores a left-handed perspective projection into a given matrix
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
-      * @param zfar defines the far clip plane
+      * @param zfar defines the far clip plane. If 0, assume we are in "infinite zfar" mode
       * @param result defines the target matrix
       * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+      * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
+      * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
       */
     inline def PerspectiveFovLHToRef(fov: Double, aspect: Double, znear: Double, zfar: Double, result: Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def PerspectiveFovLHToRef(
@@ -782,25 +948,230 @@ object mathVectorMod {
       result: Matrix,
       isVerticalFovFixed: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a right-handed perspective projection matrix
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
-      * @param zfar defines the far clip plane
+      * @param zfar defines the far clip plane. If 0, assume we are in "infinite zfar" mode
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+      * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
+      * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
       * @returns a new matrix as a right-handed perspective projection matrix
       */
     inline def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double, halfZRange: Boolean): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovRH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovRH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovRH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovRH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovRH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveFovRH(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Unit,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRH")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Stores a right-handed perspective projection into a given matrix
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
-      * @param zfar defines the far clip plane
+      * @param zfar defines the far clip plane. If 0, assume we are in "infinite zfar" mode
       * @param result defines the target matrix
       * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+      * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
+      * @param reverseDepthBufferMode true to indicate that we are in a reverse depth buffer mode (meaning znear and zfar have been inverted when calling the function)
       */
     inline def PerspectiveFovRHToRef(fov: Double, aspect: Double, znear: Double, zfar: Double, result: Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def PerspectiveFovRHToRef(
@@ -811,6 +1182,152 @@ object mathVectorMod {
       result: Matrix,
       isVerticalFovFixed: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Unit,
+      reverseDepthBufferMode: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any], reverseDepthBufferMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Stores a left-handed perspective projection into a given matrix with depth reversed
@@ -820,6 +1337,8 @@ object mathVectorMod {
       * @param zfar not used as infinity is used as far clip
       * @param result defines the target matrix
       * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+      * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
       */
     inline def PerspectiveFovReverseLHToRef(fov: Double, aspect: Double, znear: Double, zfar: Double, result: Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def PerspectiveFovReverseLHToRef(
@@ -830,6 +1349,64 @@ object mathVectorMod {
       result: Matrix,
       isVerticalFovFixed: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseLHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseLHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Stores a right-handed perspective projection into a given matrix
@@ -839,6 +1416,8 @@ object mathVectorMod {
       * @param zfar not used as infinity is used as far clip
       * @param result defines the target matrix
       * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+      * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
       */
     inline def PerspectiveFovReverseRHToRef(fov: Double, aspect: Double, znear: Double, zfar: Double, result: Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def PerspectiveFovReverseRHToRef(
@@ -849,17 +1428,133 @@ object mathVectorMod {
       result: Matrix,
       isVerticalFovFixed: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovReverseRHToRef(
+      fov: Double,
+      aspect: Double,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      isVerticalFovFixed: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovReverseRHToRef")(fov.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], isVerticalFovFixed.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Stores a perspective projection for WebVR info a given matrix
       * @param fov defines the field of view
+      * @param fov.upDegrees
+      * @param fov.downDegrees
+      * @param fov.leftDegrees
+      * @param fov.rightDegrees
       * @param znear defines the near clip plane
       * @param zfar defines the far clip plane
       * @param result defines the target matrix
       * @param rightHanded defines if the matrix must be in right-handed mode (false by default)
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+      * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
       */
     inline def PerspectiveFovWebVRToRef(fov: DownDegrees, znear: Double, zfar: Double, result: Matrix): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def PerspectiveFovWebVRToRef(fov: DownDegrees, znear: Double, zfar: Double, result: Matrix, rightHanded: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovWebVRToRef(
+      fov: DownDegrees,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      rightHanded: Boolean,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovWebVRToRef(
+      fov: DownDegrees,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      rightHanded: Boolean,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovWebVRToRef(
+      fov: DownDegrees,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      rightHanded: Boolean,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovWebVRToRef(
+      fov: DownDegrees,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      rightHanded: Unit,
+      halfZRange: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovWebVRToRef(
+      fov: DownDegrees,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      rightHanded: Unit,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PerspectiveFovWebVRToRef(
+      fov: DownDegrees,
+      znear: Double,
+      zfar: Double,
+      result: Matrix,
+      rightHanded: Unit,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveFovWebVRToRef")(fov.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], result.asInstanceOf[js.Any], rightHanded.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a left-handed perspective projection matrix
@@ -867,9 +1562,28 @@ object mathVectorMod {
       * @param height defines the viewport height
       * @param znear defines the near clip plane
       * @param zfar defines the far clip plane
+      * @param halfZRange true to generate NDC coordinates between 0 and 1 instead of -1 and 1 (default: false)
+      * @param projectionPlaneTilt optional tilt angle of the projection plane around the X axis (horizontal)
       * @returns a new matrix as a left-handed perspective projection matrix
       */
     inline def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double, halfZRange: Boolean): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveLH(
+      width: Double,
+      height: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Boolean,
+      projectionPlaneTilt: Double
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def PerspectiveLH(
+      width: Double,
+      height: Double,
+      znear: Double,
+      zfar: Double,
+      halfZRange: Unit,
+      projectionPlaneTilt: Double
+    ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("PerspectiveLH")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], znear.asInstanceOf[js.Any], zfar.asInstanceOf[js.Any], halfZRange.asInstanceOf[js.Any], projectionPlaneTilt.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Computes a reflection matrix from a plane
@@ -898,7 +1612,7 @@ object mathVectorMod {
       * Creates a new rotation matrix for "angle" radians around the given axis
       * @param axis defines the axis to use
       * @param angle defines the angle (in radians) to use
-      * @return the new matrix
+      * @returns the new matrix
       */
     inline def RotationAxis(axis: DeepImmutable[Vector3], angle: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationAxis")(axis.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
@@ -913,7 +1627,7 @@ object mathVectorMod {
     /**
       * Creates a new rotation matrix for "angle" radians around the X axis
       * @param angle defines the angle (in radians) to use
-      * @return the new matrix
+      * @returns the new matrix
       */
     inline def RotationX(angle: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationX")(angle.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
@@ -927,7 +1641,7 @@ object mathVectorMod {
     /**
       * Creates a new rotation matrix for "angle" radians around the Y axis
       * @param angle defines the angle (in radians) to use
-      * @return the new matrix
+      * @returns the new matrix
       */
     inline def RotationY(angle: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationY")(angle.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
@@ -959,7 +1673,7 @@ object mathVectorMod {
     /**
       * Creates a new rotation matrix for "angle" radians around the Z axis
       * @param angle defines the angle (in radians) to use
-      * @return the new matrix
+      * @returns the new matrix
       */
     inline def RotationZ(angle: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationZ")(angle.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
@@ -1026,15 +1740,15 @@ object mathVectorMod {
       */
     inline def Zero(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[Matrix]
     
-    @JSImport("babylonjs/Maths/math.vector", "Matrix._identityReadOnly")
+    @JSImport("babylonjs/Maths/math.vector", "Matrix._IdentityReadOnly")
     @js.native
-    def _identityReadOnly: js.Any = js.native
-    inline def _identityReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_identityReadOnly")(x.asInstanceOf[js.Any])
+    def _IdentityReadOnly: Any = js.native
+    inline def _IdentityReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IdentityReadOnly")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Maths/math.vector", "Matrix._updateFlagSeed")
+    @JSImport("babylonjs/Maths/math.vector", "Matrix._UpdateFlagSeed")
     @js.native
-    def _updateFlagSeed: js.Any = js.native
-    inline def _updateFlagSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_updateFlagSeed")(x.asInstanceOf[js.Any])
+    def _UpdateFlagSeed: Any = js.native
+    inline def _UpdateFlagSeed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateFlagSeed")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Maths/math.vector", "Quaternion")
@@ -1046,7 +1760,7 @@ object mathVectorMod {
     * @param z defines the third component (0 by default)
     * @param w defines the fourth component (1.0 by default)
     */
-  class Quaternion () extends StObject {
+  open class Quaternion () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()
@@ -1137,7 +1851,7 @@ object mathVectorMod {
     /**
       * Check if two quaternions are equals
       * @param otherQuaternion defines the second operand
-      * @return true if the current quaternion and the given one coordinates are strictly equals
+      * @returns true if the current quaternion and the given one coordinates are strictly equals
       */
     def equals(otherQuaternion: DeepImmutable[Quaternion]): Boolean = js.native
     
@@ -1170,10 +1884,28 @@ object mathVectorMod {
     def getHashCode(): Double = js.native
     
     /**
+      * Returns the inverse of the current quaternion
+      * @returns a new quaternion
+      */
+    def invert(): Quaternion = js.native
+    
+    /**
+      * Invert in place the current quaternion
+      * @returns this quaternion
+      */
+    def invertInPlace(): Quaternion = js.native
+    
+    /**
       * Gets length of current quaternion
       * @returns the quaternion length (float)
       */
     def length(): Double = js.native
+    
+    /**
+      * Gets squared length of current quaternion
+      * @returns the quaternion length (float)
+      */
+    def lengthSquared(): Double = js.native
     
     /**
       * Multiplies two quaternions
@@ -1202,6 +1934,12 @@ object mathVectorMod {
       * @returns the current updated quaternion
       */
     def normalize(): Quaternion = js.native
+    
+    /**
+      * Normalize a copy of the current quaternion
+      * @returns the normalized quaternion
+      */
+    def normalizeToNew(): Quaternion = js.native
     
     /**
       * Multiplies the current quaternion by a scale factor
@@ -1251,17 +1989,33 @@ object mathVectorMod {
     def subtract(other: Quaternion): Quaternion = js.native
     
     /**
+      * Subtract a quaternion to the current one
+      * @param other defines the quaternion to subtract
+      * @returns the current quaternion
+      */
+    def subtractInPlace(other: DeepImmutable[Quaternion]): Quaternion = js.native
+    
+    /**
+      * Stores from the starting index in the given array the Quaternion successive values
+      * @param array defines the array where to store the x,y,z,w components
+      * @param index defines an optional index in the target array to define where to start storing values
+      * @returns the current Quaternion object
+      */
+    def toArray(array: FloatArray): Quaternion = js.native
+    def toArray(array: FloatArray, index: Double): Quaternion = js.native
+    
+    /**
       * Returns a new Vector3 set with the Euler angles translated from the current quaternion
-      * @param order is a reserved parameter and is ignored for now
       * @returns a new Vector3 containing the Euler angles
+      * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
       */
     def toEulerAngles(): Vector3 = js.native
-    def toEulerAngles(order: String): Vector3 = js.native
     
     /**
       * Sets the given vector3 "result" with the Euler angles translated from the current quaternion
       * @param result defines the vector which will be filled with the Euler angles
       * @returns the current unchanged quaternion
+      * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
       */
     def toEulerAnglesToRef(result: Vector3): Quaternion = js.native
     
@@ -1363,6 +2117,42 @@ object mathVectorMod {
     inline def FromEulerVectorToRef(vec: DeepImmutable[Vector3], result: Quaternion): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromEulerVectorToRef")(vec.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
     
     /**
+      * Creates a new rotation value to orient an object to look towards the given forward direction, the up direction being oriented like "up".
+      * This function works in left handed mode
+      * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+      * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+      * @returns A new quaternion oriented toward the specified forward and up.
+      */
+    inline def FromLookDirectionLH(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromLookDirectionLH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    
+    /**
+      * Creates a new rotation value to orient an object to look towards the given forward direction with the up direction being oriented like "up", and stores it in the target quaternion.
+      * This function works in left handed mode
+      * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+      * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+      * @param ref defines the target quaternion.
+      */
+    inline def FromLookDirectionLHToRef(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3], ref: Quaternion): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromLookDirectionLHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Creates a new rotation value to orient an object to look towards the given forward direction, the up direction being oriented like "up".
+      * This function works in right handed mode
+      * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+      * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+      * @returns A new quaternion oriented toward the specified forward and up.
+      */
+    inline def FromLookDirectionRH(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromLookDirectionRH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    
+    /**
+      * Creates a new rotation value to orient an object to look towards the given forward direction with the up direction being oriented like "up", and stores it in the target quaternion.
+      * This function works in right handed mode
+      * @param forward defines the forward direction - Must be normalized and orthogonal to up.
+      * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
+      * @param ref defines the target quaternion.
+      */
+    inline def FromLookDirectionRHToRef(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3], ref: Quaternion): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromLookDirectionRHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Creates a new quaternion from a rotation matrix
       * @param matrix defines the source matrix
       * @returns a new quaternion created from the given rotation matrix values
@@ -1375,6 +2165,15 @@ object mathVectorMod {
       * @param result defines the target quaternion
       */
     inline def FromRotationMatrixToRef(matrix: DeepImmutable[Matrix], result: Quaternion): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromRotationMatrixToRef")(matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Updates a quaternion so that it rotates vector vecFrom to vector vecTo
+      * @param vecFrom defines the direction vector from which to rotate
+      * @param vecTo defines the direction vector to which to rotate
+      * @param result the quaternion to store the result
+      * @returns the updated quaternion
+      */
+    inline def FromUnitVectorsToRef(vecFrom: DeepImmutable[Vector3], vecTo: DeepImmutable[Vector3], result: Quaternion): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("FromUnitVectorsToRef")(vecFrom.asInstanceOf[js.Any], vecTo.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
     
     /**
       * Interpolate between two quaternions using Hermite interpolation
@@ -1392,6 +2191,41 @@ object mathVectorMod {
       tangent2: DeepImmutable[Quaternion],
       amount: Double
     ): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    
+    /**
+      * Returns a new Quaternion which is the 1st derivative of the Hermite spline defined by the quaternions "value1", "value2", "tangent1", "tangent2".
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @returns 1st derivative
+      */
+    inline def Hermite1stDerivative(
+      value1: DeepImmutable[Quaternion],
+      tangent1: DeepImmutable[Quaternion],
+      value2: DeepImmutable[Quaternion],
+      tangent2: DeepImmutable[Quaternion],
+      time: Double
+    ): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    
+    /**
+      * Update a Quaternion with the 1st derivative of the Hermite spline defined by the quaternions "value1", "value2", "tangent1", "tangent2".
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @param result define where to store the derivative
+      */
+    inline def Hermite1stDerivativeToRef(
+      value1: DeepImmutable[Quaternion],
+      tangent1: DeepImmutable[Quaternion],
+      value2: DeepImmutable[Quaternion],
+      tangent2: DeepImmutable[Quaternion],
+      time: Double,
+      result: Quaternion
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates an identity quaternion
@@ -1521,6 +2355,17 @@ object mathVectorMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SlerpToRef")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
+      * Smooth interpolation between two quaternions using Slerp
+      *
+      * @param source source quaternion
+      * @param goal goal quaternion
+      * @param deltaTime current interpolation frame
+      * @param lerpTime total interpolation time
+      * @param result the smoothed quaternion
+      */
+    inline def SmoothToRef(source: Quaternion, goal: Quaternion, deltaTime: Double, lerpTime: Double, result: Quaternion): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothToRef")(source.asInstanceOf[js.Any], goal.asInstanceOf[js.Any], deltaTime.asInstanceOf[js.Any], lerpTime.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Creates an empty quaternion
       * @returns a new quaternion set to (0.0, 0.0, 0.0)
       */
@@ -1529,7 +2374,7 @@ object mathVectorMod {
   
   @JSImport("babylonjs/Maths/math.vector", "TmpVectors")
   @js.native
-  class TmpVectors () extends StObject
+  open class TmpVectors () extends StObject
   /* static members */
   object TmpVectors {
     
@@ -1539,28 +2384,78 @@ object mathVectorMod {
     
     @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Matrix")
     @js.native
-    def Matrix: js.Array[typings.babylonjs.mathVectorMod.Matrix] = js.native
-    inline def Matrix_=(x: js.Array[Matrix]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix")(x.asInstanceOf[js.Any])
+    def Matrix: js.Tuple8[
+        typings.babylonjs.mathVectorMod.Matrix, 
+        typings.babylonjs.mathVectorMod.Matrix, 
+        typings.babylonjs.mathVectorMod.Matrix, 
+        typings.babylonjs.mathVectorMod.Matrix, 
+        typings.babylonjs.mathVectorMod.Matrix, 
+        typings.babylonjs.mathVectorMod.Matrix, 
+        typings.babylonjs.mathVectorMod.Matrix, 
+        typings.babylonjs.mathVectorMod.Matrix
+      ] = js.native
+    inline def Matrix_=(x: js.Tuple8[Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix, Matrix]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Quaternion")
     @js.native
-    def Quaternion: js.Array[typings.babylonjs.mathVectorMod.Quaternion] = js.native
-    inline def Quaternion_=(x: js.Array[Quaternion]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quaternion")(x.asInstanceOf[js.Any])
+    def Quaternion: js.Tuple2[
+        typings.babylonjs.mathVectorMod.Quaternion, 
+        typings.babylonjs.mathVectorMod.Quaternion
+      ] = js.native
+    inline def Quaternion_=(x: js.Tuple2[Quaternion, Quaternion]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quaternion")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Vector2")
     @js.native
-    def Vector2: js.Array[typings.babylonjs.mathVectorMod.Vector2] = js.native
-    inline def Vector2_=(x: js.Array[Vector2]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector2")(x.asInstanceOf[js.Any])
+    def Vector2: js.Tuple3[
+        typings.babylonjs.mathVectorMod.Vector2, 
+        typings.babylonjs.mathVectorMod.Vector2, 
+        typings.babylonjs.mathVectorMod.Vector2
+      ] = js.native
+    inline def Vector2_=(x: js.Tuple3[Vector2, Vector2, Vector2]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector2")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Vector3")
     @js.native
-    def Vector3: js.Array[typings.babylonjs.mathVectorMod.Vector3] = js.native
-    inline def Vector3_=(x: js.Array[Vector3]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector3")(x.asInstanceOf[js.Any])
+    def Vector3: js.Tuple13[
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3, 
+        typings.babylonjs.mathVectorMod.Vector3
+      ] = js.native
+    inline def Vector3_=(
+      x: js.Tuple13[
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3, 
+          Vector3
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector3")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Vector4")
     @js.native
-    def Vector4: js.Array[typings.babylonjs.mathVectorMod.Vector4] = js.native
-    inline def Vector4_=(x: js.Array[Vector4]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector4")(x.asInstanceOf[js.Any])
+    def Vector4: js.Tuple3[
+        typings.babylonjs.mathVectorMod.Vector4, 
+        typings.babylonjs.mathVectorMod.Vector4, 
+        typings.babylonjs.mathVectorMod.Vector4
+      ] = js.native
+    inline def Vector4_=(x: js.Tuple3[Vector4, Vector4, Vector4]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector4")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Maths/math.vector", "Vector2")
@@ -1570,7 +2465,7 @@ object mathVectorMod {
     * @param x defines the first coordinate
     * @param y defines the second coordinate
     */
-  class Vector2 () extends StObject {
+  open class Vector2 () extends StObject {
     def this(/** defines the first coordinate */
     x: Double) = this()
     def this(/** defines the first coordinate */
@@ -1670,12 +2565,14 @@ object mathVectorMod {
     
     /**
       * Gets a new Vector2 from current Vector2 floored values
+      * eg (1.2, 2.31) returns (1, 2)
       * @returns a new Vector2
       */
     def floor(): Vector2 = js.native
     
     /**
-      * Gets a new Vector2 from current Vector2 floored values
+      * Gets a new Vector2 from current Vector2 fractional values
+      * eg (1.2, 2.31) returns (0.2, 0.31)
       * @returns a new Vector2
       */
     def fract(): Vector2 = js.native
@@ -1767,6 +2664,14 @@ object mathVectorMod {
       * @returns the current updated Vector2
       */
     def normalize(): Vector2 = js.native
+    
+    /**
+      * Rotate the current vector into a given result vector
+      * @param angle defines the rotation angle
+      * @param result defines the result vector where to store the rotated vector
+      * @returns the current vector
+      */
+    def rotateToRef(angle: Double, result: Vector2): this.type = js.native
     
     /**
       * Returns a new Vector2 scaled by "scale" from the current Vector2
@@ -1876,6 +2781,15 @@ object mathVectorMod {
     inline def Center(value1: DeepImmutable[Vector2], value2: DeepImmutable[Vector2]): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Vector2]
     
     /**
+      * Gets the center of the vectors "value1" and "value2" and stores the result in the vector "ref"
+      * @param value1 defines first vector
+      * @param value2 defines second vector
+      * @param ref defines third vector
+      * @returns ref
+      */
+    inline def CenterToRef(value1: DeepImmutable[Vector2], value2: DeepImmutable[Vector2], ref: DeepImmutable[Vector2]): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterToRef")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Vector2]
+    
+    /**
       * Returns a new Vector2 set with same the coordinates than "value" ones if the vector "value" is in the square defined by "min" and "max".
       * If a coordinate of "value" is lower than "min" coordinates, the returned Vector2 is given this "min" coordinate.
       * If a coordinate of "value" is greater than "max" coordinates, the returned Vector2 is given this "max" coordinate
@@ -1937,7 +2851,7 @@ object mathVectorMod {
     inline def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Vector2): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * Returns a new Vector2 located for "amount" (float) on the Hermite spline defined by the vectors "value1", "value3", "tangent1", "tangent2"
+      * Returns a new Vector2 located for "amount" (float) on the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2"
       * @param value1 defines the 1st control point
       * @param tangent1 defines the outgoing tangent
       * @param value2 defines the 2nd control point
@@ -1954,6 +2868,41 @@ object mathVectorMod {
     ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Vector2]
     
     /**
+      * Returns a new Vector2 which is the 1st derivative of the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2".
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @returns 1st derivative
+      */
+    inline def Hermite1stDerivative(
+      value1: DeepImmutable[Vector2],
+      tangent1: DeepImmutable[Vector2],
+      value2: DeepImmutable[Vector2],
+      tangent2: DeepImmutable[Vector2],
+      time: Double
+    ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Vector2]
+    
+    /**
+      * Returns a new Vector2 which is the 1st derivative of the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2".
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @param result define where the derivative will be stored
+      */
+    inline def Hermite1stDerivativeToRef(
+      value1: DeepImmutable[Vector2],
+      tangent1: DeepImmutable[Vector2],
+      value2: DeepImmutable[Vector2],
+      tangent2: DeepImmutable[Vector2],
+      time: Double,
+      result: Vector2
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Returns a new Vector2 located for "amount" (float) on the linear interpolation between the vector "start" adn the vector "end".
       * @param start defines the start vector
       * @param end defines the end vector
@@ -1963,7 +2912,7 @@ object mathVectorMod {
     inline def Lerp(start: DeepImmutable[Vector2], end: DeepImmutable[Vector2], amount: Double): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Vector2]
     
     /**
-      * Gets a new Vecto2 set with the maximal coordinate values from the "left" and "right" vectors
+      * Gets a new Vector2 set with the maximal coordinate values from the "left" and "right" vectors
       * @param left defines 1st vector
       * @param right defines 2nd vector
       * @returns a new Vector2
@@ -1986,6 +2935,13 @@ object mathVectorMod {
     inline def Normalize(vector: DeepImmutable[Vector2]): Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Normalize")(vector.asInstanceOf[js.Any]).asInstanceOf[Vector2]
     
     /**
+      * Normalize a given vector into a second one
+      * @param vector defines the vector to normalize
+      * @param result defines the vector where to store the result
+      */
+    inline def NormalizeToRef(vector: DeepImmutable[Vector2], result: Vector2): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NormalizeToRef")(vector.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Gets a new Vector2(1, 1)
       * @returns a new Vector2
       */
@@ -1997,7 +2953,7 @@ object mathVectorMod {
       * @param p0 defines 1st triangle point
       * @param p1 defines 2nd triangle point
       * @param p2 defines 3rd triangle point
-      * @returns true if the point "p" is in the triangle defined by the vertors "p0", "p1", "p2"
+      * @returns true if the point "p" is in the triangle defined by the vectors "p0", "p1", "p2"
       */
     inline def PointInTriangle(
       p: DeepImmutable[Vector2],
@@ -2027,6 +2983,11 @@ object mathVectorMod {
       * @returns a new Vector2
       */
     inline def Zero(): Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[Vector2]
+    
+    @JSImport("babylonjs/Maths/math.vector", "Vector2._ZeroReadOnly")
+    @js.native
+    def _ZeroReadOnly: Any = js.native
+    inline def _ZeroReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Maths/math.vector", "Vector3")
@@ -2037,7 +2998,7 @@ object mathVectorMod {
     * @param y defines the second coordinates (on Y axis)
     * @param z defines the third coordinates (on Z axis)
     */
-  class Vector3 () extends StObject {
+  open class Vector3 () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()
@@ -2060,6 +3021,7 @@ object mathVectorMod {
     
     /**
       * Gets a new Vector3, result of the addition the current Vector3 and the given vector
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#3
       * @param otherVector defines the second operand
       * @returns the resulting Vector3
       */
@@ -2067,6 +3029,7 @@ object mathVectorMod {
     
     /**
       * Adds the given vector to the current Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#4
       * @param otherVector defines the second operand
       * @returns the current updated Vector3
       */
@@ -2074,6 +3037,7 @@ object mathVectorMod {
     
     /**
       * Adds the given coordinates to the current Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#5
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
@@ -2083,6 +3047,7 @@ object mathVectorMod {
     
     /**
       * Adds the current Vector3 to the given one and stores the result in the vector "result"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#6
       * @param otherVector defines the second operand
       * @param result defines the Vector3 object where to store the result
       * @returns the current Vector3
@@ -2090,13 +3055,40 @@ object mathVectorMod {
     def addToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
     
     /**
+      * Rotates the vector using the given unit quaternion and returns the new vector
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#7
+      * @param q the unit quaternion representing the rotation
+      * @returns a new Vector3
+      */
+    def applyRotationQuaternion(q: Quaternion): Vector3 = js.native
+    
+    /**
+      * Rotates the vector in place using the given unit quaternion
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#8
+      * @param q the unit quaternion representing the rotation
+      * @returns the current updated Vector3
+      */
+    def applyRotationQuaternionInPlace(q: Quaternion): Vector3 = js.native
+    
+    /**
+      * Rotates the vector using the given unit quaternion and stores the new vector in result
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#9
+      * @param q the unit quaternion representing the rotation
+      * @param result the output vector
+      * @returns the current Vector3
+      */
+    def applyRotationQuaternionToRef(q: Quaternion, result: Vector3): Vector3 = js.native
+    
+    /**
       * Creates an array containing three elements : the coordinates of the Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#10
       * @returns a new array of numbers
       */
     def asArray(): js.Array[Double] = js.native
     
     /**
       * Copies the given vector coordinates to the current Vector3 ones
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#12
       * @param source defines the source Vector3
       * @returns the current updated Vector3
       */
@@ -2104,6 +3096,7 @@ object mathVectorMod {
     
     /**
       * Copies the given floats to the current Vector3 coordinates
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#13
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
@@ -2114,6 +3107,7 @@ object mathVectorMod {
     /**
       * Returns a new Vector3 as the cross product of the current vector and the "other" one
       * The cross product is then orthogonal to both current and "other"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#14
       * @param other defines the right operand
       * @returns the cross product
       */
@@ -2121,6 +3115,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set with the result of the division of the current Vector3 coordinates by the given ones
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#16
       * @param otherVector defines the second operand
       * @returns the new Vector3
       */
@@ -2128,6 +3123,7 @@ object mathVectorMod {
     
     /**
       * Divides the current Vector3 coordinates by the given ones.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#17
       * @param otherVector defines the second operand
       * @returns the current updated Vector3
       */
@@ -2135,6 +3131,7 @@ object mathVectorMod {
     
     /**
       * Divides the current Vector3 coordinates by the given ones and stores the result in the given vector "result"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#18
       * @param otherVector defines the second operand
       * @param result defines the Vector3 object where to store the result
       * @returns the current Vector3
@@ -2143,6 +3140,7 @@ object mathVectorMod {
     
     /**
       * Returns true if the current Vector3 and the given vector coordinates are strictly equal
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#19
       * @param otherVector defines the second operand
       * @returns true if both vectors are equals
       */
@@ -2150,15 +3148,17 @@ object mathVectorMod {
     
     /**
       * Returns true if the current Vector3 coordinates equals the given floats
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#20
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
-      * @returns true if both vectors are equals
+      * @returns true if both vectors are equal
       */
     def equalsToFloats(x: Double, y: Double, z: Double): Boolean = js.native
     
     /**
       * Returns true if the current Vector3 and the given vector coordinates are distant less than epsilon
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#21
       * @param otherVector defines the second operand
       * @param epsilon defines the minimal distance to define values as equals
       * @returns true if both vectors are distant less than epsilon
@@ -2168,18 +3168,21 @@ object mathVectorMod {
     
     /**
       * Gets a new Vector3 from current Vector3 floored values
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#22
       * @returns a new Vector3
       */
     def floor(): Vector3 = js.native
     
     /**
-      * Gets a new Vector3 from current Vector3 floored values
+      * Gets a new Vector3 from current Vector3 fractional values
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#23
       * @returns a new Vector3
       */
     def fract(): Vector3 = js.native
     
     /**
       * Update the current vector from an array
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#24
       * @param array defines the destination array
       * @param index defines the offset in the destination array
       * @returns the current Vector3
@@ -2200,6 +3203,12 @@ object mathVectorMod {
     def getHashCode(): Double = js.native
     
     /**
+      * Gets a boolean indicating if the vector contains a zero in one of its components
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#1
+      */
+    def hasAZeroComponent: Boolean = js.native
+    
+    /**
       * Gets a boolean indicating that the vector is non uniform meaning x, y or z are not all the same
       */
     def isNonUniform: Boolean = js.native
@@ -2214,18 +3223,21 @@ object mathVectorMod {
     
     /**
       * Gets the length of the Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#25
       * @returns the length of the Vector3
       */
     def length(): Double = js.native
     
     /**
       * Gets the squared length of the Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#26
       * @returns squared length of the Vector3
       */
     def lengthSquared(): Double = js.native
     
     /**
       * Updates the current Vector3 with the maximal coordinate values between its and the given vector ones.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#27
       * @param other defines the second operand
       * @returns the current updated Vector3
       */
@@ -2233,6 +3245,7 @@ object mathVectorMod {
     
     /**
       * Updates the current Vector3 with the maximal coordinate values between its and the given coordinates.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#28
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
@@ -2242,6 +3255,7 @@ object mathVectorMod {
     
     /**
       * Updates the current Vector3 with the minimal coordinate values between its and the given vector ones
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#29
       * @param other defines the second operand
       * @returns the current updated Vector3
       */
@@ -2249,6 +3263,7 @@ object mathVectorMod {
     
     /**
       * Updates the current Vector3 with the minimal coordinate values between its and the given coordinates
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#30
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
@@ -2258,13 +3273,15 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3, result of the multiplication of the current Vector3 by the given vector
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#31
       * @param otherVector defines the second operand
       * @returns the new Vector3
       */
     def multiply(otherVector: DeepImmutable[Vector3]): Vector3 = js.native
     
     /**
-      * Returns a new Vector3 set with the result of the mulliplication of the current Vector3 coordinates by the given floats
+      * Returns a new Vector3 set with the result of the multiplication of the current Vector3 coordinates by the given floats
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#34
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
@@ -2274,6 +3291,7 @@ object mathVectorMod {
     
     /**
       * Multiplies the current Vector3 coordinates by the given ones
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#32
       * @param otherVector defines the second operand
       * @returns the current updated Vector3
       */
@@ -2281,6 +3299,7 @@ object mathVectorMod {
     
     /**
       * Multiplies the current Vector3 by the given one and stores the result in the given vector "result"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#33
       * @param otherVector defines the second operand
       * @param result defines the Vector3 object where to store the result
       * @returns the current Vector3
@@ -2289,18 +3308,21 @@ object mathVectorMod {
     
     /**
       * Gets a new Vector3 set with the current Vector3 negated coordinates
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#35
       * @returns a new Vector3
       */
     def negate(): Vector3 = js.native
     
     /**
       * Negate this vector in place
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#36
       * @returns this
       */
     def negateInPlace(): Vector3 = js.native
     
     /**
       * Negate the current Vector3 and stores the result in the given vector "result" coordinates
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#37
       * @param result defines the Vector3 object where to store the result
       * @returns the current Vector3
       */
@@ -2309,6 +3331,7 @@ object mathVectorMod {
     /**
       * Normalize the current Vector3.
       * Please note that this is an in place operation.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#122
       * @returns the current updated Vector3
       */
     def normalize(): Vector3 = js.native
@@ -2316,6 +3339,7 @@ object mathVectorMod {
     /**
       * Normalize the current Vector3 with the given input length.
       * Please note that this is an in place operation.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#123
       * @param len the length of the vector
       * @returns the current updated Vector3
       */
@@ -2323,35 +3347,40 @@ object mathVectorMod {
     
     /**
       * Normalize the current Vector3 to a new vector
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#124
       * @returns the new Vector3
       */
     def normalizeToNew(): Vector3 = js.native
     
     /**
       * Normalize the current Vector3 to the reference
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#125
       * @param reference define the Vector3 to update
       * @returns the updated Vector3
       */
     def normalizeToRef(reference: Vector3): Vector3 = js.native
     
     /**
-      * Projects the current vector3 to a plane along a ray starting from a specified origin and directed towards the point.
-      * @param origin defines the origin of the projection ray
+      * Projects the current point Vector3 to a plane along a ray starting from a specified origin and passing through the current point Vector3.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#48
       * @param plane defines the plane to project to
+      * @param origin defines the origin of the projection ray
       * @returns the projected vector3
       */
     def projectOnPlane(plane: Plane, origin: Vector3): Vector3 = js.native
     
     /**
-      * Projects the current vector3 to a plane along a ray starting from a specified origin and directed towards the point.
-      * @param origin defines the origin of the projection ray
+      * Projects the current point Vector3 to a plane along a ray starting from a specified origin and passing through the current point Vector3.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#49
       * @param plane defines the plane to project to
+      * @param origin defines the origin of the projection ray
       * @param result defines the Vector3 where to store the result
       */
     def projectOnPlaneToRef(plane: Plane, origin: Vector3, result: Vector3): Unit = js.native
     
     /**
       * Reorders the x y z properties of the vector in place
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#44
       * @param order new ordering of the properties (eg. for vector 1,2,3 with "ZYX" will produce 3,2,1)
       * @returns the current updated vector
       */
@@ -2359,6 +3388,7 @@ object mathVectorMod {
     
     /**
       * Rotates a vector around a given point
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#46
       * @param quaternion the rotation quaternion
       * @param point the point to rotate around
       * @param result vector to store the result
@@ -2368,6 +3398,7 @@ object mathVectorMod {
     
     /**
       * Rotates the vector around 0,0,0 by a quaternion
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#47
       * @param quaternion the rotation quaternion
       * @param result vector to store the result
       * @returns the resulting vector
@@ -2376,6 +3407,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set with the current Vector3 coordinates multiplied by the float "scale"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#53
       * @param scale defines the multiplier factor
       * @returns a new Vector3
       */
@@ -2383,6 +3415,7 @@ object mathVectorMod {
     
     /**
       * Scale the current Vector3 values by a factor and add the result to a given Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#55
       * @param scale defines the scale factor
       * @param result defines the Vector3 object where to store the result
       * @returns the unmodified current Vector3
@@ -2391,6 +3424,7 @@ object mathVectorMod {
     
     /**
       * Multiplies the Vector3 coordinates by the float "scale"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#56
       * @param scale defines the multiplier factor
       * @returns the current updated Vector3
       */
@@ -2398,6 +3432,7 @@ object mathVectorMod {
     
     /**
       * Multiplies the current Vector3 coordinates by the float "scale" and stores the result in the given vector "result" coordinates
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#57
       * @param scale defines the multiplier factor
       * @param result defines the Vector3 object where to store the result
       * @returns the current Vector3
@@ -2406,6 +3441,7 @@ object mathVectorMod {
     
     /**
       * Copies the given floats to the current Vector3 coordinates
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#58
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
@@ -2415,6 +3451,7 @@ object mathVectorMod {
     
     /**
       * Copies the given float to the current Vector3 coordinates
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#59
       * @param v defines the x, y and z coordinates of the operand
       * @returns the current updated Vector3
       */
@@ -2422,6 +3459,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3, result of the subtraction of the given vector from the current Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#60
       * @param otherVector defines the second operand
       * @returns the resulting Vector3
       */
@@ -2429,6 +3467,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set with the subtraction of the given floats from the current Vector3 coordinates
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#62
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
@@ -2438,6 +3477,7 @@ object mathVectorMod {
     
     /**
       * Subtracts the given floats from the current Vector3 coordinates and set the given vector "result" with this result
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#64
       * @param x defines the x coordinate of the operand
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
@@ -2448,6 +3488,7 @@ object mathVectorMod {
     
     /**
       * Subtract the given vector from the current Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#61
       * @param otherVector defines the second operand
       * @returns the current updated Vector3
       */
@@ -2455,6 +3496,7 @@ object mathVectorMod {
     
     /**
       * Subtracts the given vector from the current Vector3 and stores the result in the vector "result".
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#63
       * @param otherVector defines the second operand
       * @param result defines the Vector3 object where to store the result
       * @returns the current Vector3
@@ -2463,6 +3505,7 @@ object mathVectorMod {
     
     /**
       * Populates the given array or Float32Array from the given index with the successive coordinates of the Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#65
       * @param array defines the destination array
       * @param index defines the offset in the destination array
       * @returns the current Vector3
@@ -2472,6 +3515,7 @@ object mathVectorMod {
     
     /**
       * Converts the current Vector3 into a quaternion (considering that the Vector3 contains Euler angles representation of a rotation)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#66
       * @returns a new Quaternion object, computed from the Vector3 coordinates
       */
     def toQuaternion(): Quaternion = js.native
@@ -2497,14 +3541,16 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set to (0.0, 0.0, -1.0)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#71
       * @param rightHandedSystem is the scene right-handed (negative-z)
-      * @returns a new forward Vector3
+      * @returns a new Backward Vector3
       */
     inline def Backward(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Backward")().asInstanceOf[Vector3]
     inline def Backward(rightHandedSystem: Boolean): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Backward")(rightHandedSystem.asInstanceOf[js.Any]).asInstanceOf[Vector3]
     
     /**
       * Returns a new Vector3 located for "amount" on the CatmullRom interpolation spline defined by the vectors "value1", "value2", "value3", "value4"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#69
       * @param value1 defines the first control point
       * @param value2 defines the second control point
       * @param value3 defines the third control point
@@ -2522,6 +3568,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 located at the center between "value1" and "value2"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#72
       * @param value1 defines the first operand
       * @param value2 defines the second operand
       * @returns the new Vector3
@@ -2529,7 +3576,18 @@ object mathVectorMod {
     inline def Center(value1: DeepImmutable[Vector3], value2: DeepImmutable[Vector3]): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
     /**
+      * Gets the center of the vectors "value1" and "value2" and stores the result in the vector "ref"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#73
+      * @param value1 defines first vector
+      * @param value2 defines second vector
+      * @param ref defines third vector
+      * @returns ref
+      */
+    inline def CenterToRef(value1: DeepImmutable[Vector3], value2: DeepImmutable[Vector3], ref: DeepImmutable[Vector3]): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterToRef")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    /**
       * Checks if a given vector is inside a specific range
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#75
       * @param v defines the vector to test
       * @param min defines the minimum range
       * @param max defines the maximum range
@@ -2540,6 +3598,7 @@ object mathVectorMod {
       * Returns a new Vector3 set with the coordinates of "value", if the vector "value" is in the cube defined by the vectors "min" and "max"
       * If a coordinate value of "value" is lower than one of the "min" coordinate, then this "value" coordinate is set with the "min" one
       * If a coordinate value of "value" is greater than one of the "max" coordinate, then this "value" coordinate is set with the "max" one
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#76
       * @param value defines the current value
       * @param min defines the lower range value
       * @param max defines the upper range value
@@ -2551,6 +3610,7 @@ object mathVectorMod {
       * Sets the given vector "result" with the coordinates of "value", if the vector "value" is in the cube defined by the vectors "min" and "max"
       * If a coordinate value of "value" is lower than one of the "min" coordinate, then this "value" coordinate is set with the "min" one
       * If a coordinate value of "value" is greater than one of the "max" coordinate, then this "value" coordinate is set with the "max" one
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#77
       * @param value defines the current value
       * @param min defines the lower range value
       * @param max defines the upper range value
@@ -2566,6 +3626,7 @@ object mathVectorMod {
     /**
       * Returns a new Vector3 as the cross product of the vectors "left" and "right"
       * The cross product is then orthogonal to both "left" and "right"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#15
       * @param left defines the left operand
       * @param right defines the right operand
       * @returns the cross product
@@ -2575,6 +3636,7 @@ object mathVectorMod {
     /**
       * Sets the given vector "result" with the cross product of "left" and "right"
       * The cross product is then orthogonal to both "left" and "right"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#78
       * @param left defines the left operand
       * @param right defines the right operand
       * @param result defines the Vector3 where to store the result
@@ -2583,6 +3645,7 @@ object mathVectorMod {
     
     /**
       * Returns the distance between the vectors "value1" and "value2"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#81
       * @param value1 defines the first operand
       * @param value2 defines the second operand
       * @returns the distance
@@ -2591,6 +3654,7 @@ object mathVectorMod {
     
     /**
       * Returns the squared distance between the vectors "value1" and "value2"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#80
       * @param value1 defines the first operand
       * @param value2 defines the second operand
       * @returns the squared distance
@@ -2599,6 +3663,7 @@ object mathVectorMod {
     
     /**
       * Returns the dot product (float) between the vectors "left" and "right"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#82
       * @param left defines the left operand
       * @param right defines the right operand
       * @returns the dot product
@@ -2607,12 +3672,14 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set to (0.0, -1.0, 0.0)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#71
       * @returns a new down Vector3
       */
     inline def Down(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Down")().asInstanceOf[Vector3]
     
     /**
       * Returns a new Vector3 set to (0.0, 0.0, 1.0)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#71
       * @param rightHandedSystem is the scene right-handed (negative z)
       * @returns a new forward Vector3
       */
@@ -2621,6 +3688,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set from the index "offset" of the given array
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#83
       * @param array defines the source array
       * @param offset defines the offset in the source array
       * @returns the new Vector3
@@ -2630,6 +3698,7 @@ object mathVectorMod {
     
     /**
       * Sets the given vector "result" with the element values from the index "offset" of the given array
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#84
       * @param array defines the source array
       * @param offset defines the offset in the source array
       * @param result defines the Vector3 where to store the result
@@ -2643,8 +3712,8 @@ object mathVectorMod {
       * @returns the new Vector3
       * @deprecated Please use FromArray instead.
       */
-    inline def FromFloatArray(array: DeepImmutable[Float32Array]): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArray")(array.asInstanceOf[js.Any]).asInstanceOf[Vector3]
-    inline def FromFloatArray(array: DeepImmutable[Float32Array], offset: Double): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def FromFloatArray(array: DeepImmutable[js.typedarray.Float32Array]): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArray")(array.asInstanceOf[js.Any]).asInstanceOf[Vector3]
+    inline def FromFloatArray(array: DeepImmutable[js.typedarray.Float32Array], offset: Double): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArray")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
     /**
       * Sets the given vector "result" with the element values from the index "offset" of the given Float32Array
@@ -2653,10 +3722,11 @@ object mathVectorMod {
       * @param result defines the Vector3 where to store the result
       * @deprecated Please use FromArrayToRef instead.
       */
-    inline def FromFloatArrayToRef(array: DeepImmutable[Float32Array], offset: Double, result: Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FromFloatArrayToRef(array: DeepImmutable[js.typedarray.Float32Array], offset: Double, result: Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets the given vector "result" with the given floats.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#85
       * @param x defines the x coordinate of the source
       * @param y defines the y coordinate of the source
       * @param z defines the z coordinate of the source
@@ -2666,15 +3736,28 @@ object mathVectorMod {
     
     /**
       * Get angle between two vectors
-      * @param vector0 angle between vector0 and vector1
-      * @param vector1 angle between vector0 and vector1
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#86
+      * @param vector0 the starting point
+      * @param vector1 the ending point
       * @param normal direction of the normal
-      * @return the angle between vector0 and vector1
+      * @returns the angle between vector0 and vector1
       */
     inline def GetAngleBetweenVectors(vector0: DeepImmutable[Vector3], vector1: DeepImmutable[Vector3], normal: DeepImmutable[Vector3]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAngleBetweenVectors")(vector0.asInstanceOf[js.Any], vector1.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
+      * Get angle between two vectors projected on a plane
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#87
+      * Expectation compute time: 0.01 ms (median) and 0.02 ms (percentile 95%)
+      * @param vector0 angle between vector0 and vector1
+      * @param vector1 angle between vector0 and vector1
+      * @param normal Normal of the projection plane
+      * @returns the angle in radians (float) between vector0 and vector1 projected on the plane with the specified normal
+      */
+    inline def GetAngleBetweenVectorsOnPlane(vector0: Vector3, vector1: Vector3, normal: Vector3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAngleBetweenVectorsOnPlane")(vector0.asInstanceOf[js.Any], vector1.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
       * Get the clip factor between two vectors
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#126
       * @param vector0 defines the first operand
       * @param vector1 defines the second operand
       * @param axis defines the axis to use
@@ -2690,6 +3773,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 located for "amount" (float) on the Hermite interpolation spline defined by the vectors "value1", "tangent1", "value2", "tangent2"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#89
       * @param value1 defines the first control point
       * @param tangent1 defines the first tangent vector
       * @param value2 defines the second control point
@@ -2706,13 +3790,52 @@ object mathVectorMod {
     ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
     /**
+      * Returns a new Vector3 which is the 1st derivative of the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2".
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#90
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @returns 1st derivative
+      */
+    inline def Hermite1stDerivative(
+      value1: DeepImmutable[Vector3],
+      tangent1: DeepImmutable[Vector3],
+      value2: DeepImmutable[Vector3],
+      tangent2: DeepImmutable[Vector3],
+      time: Double
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    /**
+      * Update a Vector3 with the 1st derivative of the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2".
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#91
+      * @param value1 defines the first control point
+      * @param tangent1 defines the first tangent
+      * @param value2 defines the second control point
+      * @param tangent2 defines the second tangent
+      * @param time define where the derivative must be done
+      * @param result define where to store the derivative
+      */
+    inline def Hermite1stDerivativeToRef(
+      value1: DeepImmutable[Vector3],
+      tangent1: DeepImmutable[Vector3],
+      value2: DeepImmutable[Vector3],
+      tangent2: DeepImmutable[Vector3],
+      time: Double,
+      result: Vector3
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Returns a new Vector3 set to (-1.0, 0.0, 0.0)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#71
       * @returns a new left Vector3
       */
     inline def Left(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Left")().asInstanceOf[Vector3]
     
     /**
       * Returns a new Vector3 located for "amount" (float) on the linear interpolation between the vectors "start" and "end"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#95
       * @param start defines the start value
       * @param end defines the end value
       * @param amount max defines amount between both (between 0 and 1)
@@ -2722,6 +3845,7 @@ object mathVectorMod {
     
     /**
       * Sets the given vector "result" with the result of the linear interpolation from the vector "start" for "amount" to the vector "end"
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#93
       * @param start defines the start value
       * @param end defines the end value
       * @param amount max defines amount between both (between 0 and 1)
@@ -2731,6 +3855,7 @@ object mathVectorMod {
     
     /**
       * Gets the maximal coordinate values between two Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#96
       * @param left defines the first operand
       * @param right defines the second operand
       * @returns the new Vector3
@@ -2739,6 +3864,7 @@ object mathVectorMod {
     
     /**
       * Gets the minimal coordinate values between two Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#97
       * @param left defines the first operand
       * @param right defines the second operand
       * @returns the new Vector3
@@ -2747,6 +3873,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 as the normalization of the given vector
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#98
       * @param vector defines the Vector3 to normalize
       * @returns the new Vector3
       */
@@ -2754,6 +3881,7 @@ object mathVectorMod {
     
     /**
       * Sets the given vector "result" with the normalization of the given first vector
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#98
       * @param vector defines the Vector3 to normalize
       * @param result defines the Vector3 where to store the result
       */
@@ -2761,12 +3889,13 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set to (1.0, 1.0, 1.0)
-      * @returns a new unit Vector3
+      * @returns a new Vector3
       */
     inline def One(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[Vector3]
     
     /**
       * Project a Vector3 onto screen space
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#101
       * @param vector defines the Vector3 to project
       * @param world defines the world matrix to use
       * @param transform defines the transform (view x projection) matrix to use
@@ -2781,7 +3910,29 @@ object mathVectorMod {
     ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Project")(vector.asInstanceOf[js.Any], world.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
     /**
+      * Projects "vector" on the triangle determined by its extremities "p0", "p1" and "p2", stores the result in "ref"
+      * and returns the distance to the projected point.
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#104
+      * From http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.104.4264&rep=rep1&type=pdf
+      *
+      * @param vector the vector to get distance from
+      * @param p0 extremity of the triangle
+      * @param p1 extremity of the triangle
+      * @param p2 extremity of the triangle
+      * @param ref variable to store the result to
+      * @returns The distance between "ref" and "vector"
+      */
+    inline def ProjectOnTriangleToRef(
+      vector: DeepImmutable[Vector3],
+      p0: DeepImmutable[Vector3],
+      p1: DeepImmutable[Vector3],
+      p2: DeepImmutable[Vector3],
+      ref: Vector3
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ProjectOnTriangleToRef")(vector.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
       * Project a Vector3 onto screen space to reference
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#102
       * @param vector defines the Vector3 to project
       * @param world defines the world matrix to use
       * @param transform defines the transform (view x projection) matrix to use
@@ -2799,6 +3950,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set to (1.0, 0.0, 0.0)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#71
       * @returns a new right Vector3
       */
     inline def Right(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Right")().asInstanceOf[Vector3]
@@ -2808,15 +3960,18 @@ object mathVectorMod {
       * RotationFromAxis() returns the rotation Euler angles (ex : rotation.x, rotation.y, rotation.z) to apply
       * to something in order to rotate it from its local system to the given target system
       * Note: axis1, axis2 and axis3 are normalized during this operation
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#106
       * @param axis1 defines the first axis
       * @param axis2 defines the second axis
       * @param axis3 defines the third axis
       * @returns a new Vector3
+      * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/target_align
       */
     inline def RotationFromAxis(axis1: DeepImmutable[Vector3], axis2: DeepImmutable[Vector3], axis3: DeepImmutable[Vector3]): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationFromAxis")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
     /**
       * The same than RotationFromAxis but updates the given ref Vector3 parameter instead of returning a new Vector3
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#107
       * @param axis1 defines the first axis
       * @param axis2 defines the second axis
       * @param axis3 defines the third axis
@@ -2830,8 +3985,33 @@ object mathVectorMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationFromAxisToRef")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
+      * Slerp between two vectors. See also `SmoothToRef`
+      * Slerp is a spherical linear interpolation
+      * giving a slow in and out effect
+      * Example Playground 1 https://playground.babylonjs.com/#R1F8YU#108
+      * Example Playground 2 https://playground.babylonjs.com/#R1F8YU#109
+      * @param vector0 Start vector
+      * @param vector1 End vector
+      * @param slerp amount (will be clamped between 0 and 1)
+      * @param result The slerped vector
+      */
+    inline def SlerpToRef(vector0: Vector3, vector1: Vector3, slerp: Double, result: Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SlerpToRef")(vector0.asInstanceOf[js.Any], vector1.asInstanceOf[js.Any], slerp.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Smooth interpolation between two vectors using Slerp
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#110
+      * @param source source vector
+      * @param goal goal vector
+      * @param deltaTime current interpolation frame
+      * @param lerpTime total interpolation time
+      * @param result the smoothed vector
+      */
+    inline def SmoothToRef(source: Vector3, goal: Vector3, deltaTime: Double, lerpTime: Double, result: Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothToRef")(source.asInstanceOf[js.Any], goal.asInstanceOf[js.Any], deltaTime.asInstanceOf[js.Any], lerpTime.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Returns a new Vector3 set with the result of the transformation by the given matrix of the given vector.
-      * This method computes tranformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
+      * This method computes transformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#111
       * @param vector defines the Vector3 to transform
       * @param transformation defines the transformation matrix
       * @returns the transformed Vector3
@@ -2840,7 +4020,8 @@ object mathVectorMod {
     
     /**
       * Sets the given vector "result" coordinates with the result of the transformation by the given matrix of the given floats (x, y, z)
-      * This method computes tranformed coordinates only, not transformed direction vectors
+      * This method computes transformed coordinates only, not transformed direction vectors
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#115
       * @param x define the x coordinate of the source vector
       * @param y define the y coordinate of the source vector
       * @param z define the z coordinate of the source vector
@@ -2851,7 +4032,8 @@ object mathVectorMod {
     
     /**
       * Sets the given vector "result" coordinates with the result of the transformation by the given matrix of the given vector
-      * This method computes tranformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
+      * This method computes transformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#113
       * @param vector defines the Vector3 to transform
       * @param transformation defines the transformation matrix
       * @param result defines the Vector3 where to store the result
@@ -2861,6 +4043,7 @@ object mathVectorMod {
     /**
       * Returns a new Vector3 set with the result of the normal transformation by the given matrix of the given vector
       * This methods computes transformed normalized direction vectors only (ie. it does not apply translation)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#112
       * @param vector defines the Vector3 to transform
       * @param transformation defines the transformation matrix
       * @returns the new Vector3
@@ -2870,6 +4053,7 @@ object mathVectorMod {
     /**
       * Sets the given vector "result" with the result of the normal transformation by the given matrix of the given floats (x, y, z)
       * This methods computes transformed normalized direction vectors only (ie. it does not apply translation)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#116
       * @param x define the x coordinate of the source vector
       * @param y define the y coordinate of the source vector
       * @param z define the z coordinate of the source vector
@@ -2881,6 +4065,7 @@ object mathVectorMod {
     /**
       * Sets the given vector "result" with the result of the normal transformation by the given matrix of the given vector
       * This methods computes transformed normalized direction vectors only (ie. it does not apply translation)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#114
       * @param vector defines the Vector3 to transform
       * @param transformation defines the transformation matrix
       * @param result defines the Vector3 where to store the result
@@ -2889,6 +4074,7 @@ object mathVectorMod {
     
     /**
       * Unproject from screen space to object space
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#117
       * @param source defines the screen space Vector3 to use
       * @param viewportWidth defines the current width of the viewport
       * @param viewportHeight defines the current height of the viewport
@@ -2908,6 +4094,7 @@ object mathVectorMod {
     
     /**
       * Unproject from screen space to object space
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#120
       * @param sourceX defines the screen space x coordinate to use
       * @param sourceY defines the screen space y coordinate to use
       * @param sourceZ defines the screen space z coordinate to use
@@ -2932,6 +4119,7 @@ object mathVectorMod {
     
     /**
       * Unproject from screen space to object space
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#121
       * @param source defines the screen space Vector3 to use
       * @param viewportWidth defines the current width of the viewport
       * @param viewportHeight defines the current height of the viewport
@@ -2949,6 +4137,7 @@ object mathVectorMod {
     
     /**
       * Unproject from screen space to object space
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#119
       * @param source defines the screen space Vector3 to use
       * @param viewportWidth defines the current width of the viewport
       * @param viewportHeight defines the current height of the viewport
@@ -2969,6 +4158,7 @@ object mathVectorMod {
     
     /**
       * Returns a new Vector3 set to (0.0, 1.0, 0.0)
+      * Example Playground https://playground.babylonjs.com/#R1F8YU#71
       * @returns a new up Vector3
       */
     inline def Up(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Up")().asInstanceOf[Vector3]
@@ -2979,23 +4169,53 @@ object mathVectorMod {
       */
     inline def Zero(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[Vector3]
     
-    /** @hidden */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._DownReadOnly")
+    @js.native
+    def _DownReadOnly: Any = js.native
+    inline def _DownReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DownReadOnly")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._LeftHandedForwardReadOnly")
+    @js.native
+    def _LeftHandedForwardReadOnly: Any = js.native
+    inline def _LeftHandedForwardReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LeftHandedForwardReadOnly")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._LeftReadOnly")
+    @js.native
+    def _LeftReadOnly: Any = js.native
+    inline def _LeftReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LeftReadOnly")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._RightHandedForwardReadOnly")
+    @js.native
+    def _RightHandedForwardReadOnly: Any = js.native
+    inline def _RightHandedForwardReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RightHandedForwardReadOnly")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._RightReadOnly")
+    @js.native
+    def _RightReadOnly: Any = js.native
+    inline def _RightReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RightReadOnly")(x.asInstanceOf[js.Any])
+    
+    /**
+      * @param source
+      * @param matrix
+      * @param result
+      * @hidden
+      */
     inline def _UnprojectFromInvertedMatrixToRef(source: DeepImmutable[Vector3], matrix: DeepImmutable[Matrix], result: Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_UnprojectFromInvertedMatrixToRef")(source.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("babylonjs/Maths/math.vector", "Vector3._UpReadOnly")
     @js.native
-    def _UpReadOnly: js.Any = js.native
-    inline def _UpReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpReadOnly")(x.asInstanceOf[js.Any])
+    def _UpReadOnly: Any = js.native
+    inline def _UpReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpReadOnly")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Maths/math.vector", "Vector3._ZeroReadOnly")
     @js.native
-    def _ZeroReadOnly: js.Any = js.native
-    inline def _ZeroReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
+    def _ZeroReadOnly: Any = js.native
+    inline def _ZeroReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Maths/math.vector", "Vector4")
   @js.native
-  class Vector4 protected () extends StObject {
+  open class Vector4 protected () extends StObject {
     /**
       * Creates a Vector4 object from the given floats.
       * @param x x value of the vector
@@ -3114,7 +4334,7 @@ object mathVectorMod {
     def floor(): Vector4 = js.native
     
     /**
-      * Gets a new Vector4 from current Vector3 floored values
+      * Gets a new Vector4 from current Vector4 fractional values
       * @returns a new Vector4
       */
     def fract(): Vector4 = js.native
@@ -3354,15 +4574,24 @@ object mathVectorMod {
       * Returns a new Vector4 located at the center between the vectors "value1" and "value2".
       * @param value1 value to calulate the center between
       * @param value2 value to calulate the center between
-      * @return the center between the two vectors
+      * @returns the center between the two vectors
       */
     inline def Center(value1: DeepImmutable[Vector4], value2: DeepImmutable[Vector4]): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    
+    /**
+      * Gets the center of the vectors "value1" and "value2" and stores the result in the vector "ref"
+      * @param value1 defines first vector
+      * @param value2 defines second vector
+      * @param ref defines third vector
+      * @returns ref
+      */
+    inline def CenterToRef(value1: DeepImmutable[Vector4], value2: DeepImmutable[Vector4], ref: DeepImmutable[Vector4]): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterToRef")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Vector4]
     
     /**
       * Returns the distance (float) between the vectors "value1" and "value2".
       * @param value1 value to calulate the distance between
       * @param value2 value to calulate the distance between
-      * @return the distance between the two vectors
+      * @returns the distance between the two vectors
       */
     inline def Distance(value1: DeepImmutable[Vector4], value2: DeepImmutable[Vector4]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Distance")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
@@ -3370,7 +4599,7 @@ object mathVectorMod {
       * Returns the squared distance (float) between the vectors "value1" and "value2".
       * @param value1 value to calulate the distance between
       * @param value2 value to calulate the distance between
-      * @return the distance between the two vectors squared
+      * @returns the distance between the two vectors squared
       */
     inline def DistanceSquared(value1: DeepImmutable[Vector4], value2: DeepImmutable[Vector4]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DistanceSquared")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
@@ -3397,7 +4626,7 @@ object mathVectorMod {
       * @param offset the offset into the array to start at
       * @param result the vector to store the result in
       */
-    inline def FromFloatArrayToRef(array: DeepImmutable[Float32Array], offset: Double, result: Vector4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FromFloatArrayToRef(array: DeepImmutable[js.typedarray.Float32Array], offset: Double, result: Vector4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromFloatArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Updates the given vector "result" coordinates from the given floats.
@@ -3455,6 +4684,38 @@ object mathVectorMod {
     inline def One(): Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[Vector4]
     
     /**
+      * Returns a new Vector4 set with the result of the transformation by the given matrix of the given vector.
+      * This method computes tranformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
+      * The difference with Vector3.TransformCoordinates is that the w component is not used to divide the other coordinates but is returned in the w coordinate instead
+      * @param vector defines the Vector3 to transform
+      * @param transformation defines the transformation matrix
+      * @returns the transformed Vector4
+      */
+    inline def TransformCoordinates(vector: DeepImmutable[Vector3], transformation: DeepImmutable[Matrix]): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinates")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    
+    /**
+      * Sets the given vector "result" coordinates with the result of the transformation by the given matrix of the given floats (x, y, z)
+      * This method computes tranformed coordinates only, not transformed direction vectors
+      * The difference with Vector3.TransformCoordinatesFromFloatsToRef is that the w component is not used to divide the other coordinates but is returned in the w coordinate instead
+      * @param x define the x coordinate of the source vector
+      * @param y define the y coordinate of the source vector
+      * @param z define the z coordinate of the source vector
+      * @param transformation defines the transformation matrix
+      * @param result defines the Vector4 where to store the result
+      */
+    inline def TransformCoordinatesFromFloatsToRef(x: Double, y: Double, z: Double, transformation: DeepImmutable[Matrix], result: Vector4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinatesFromFloatsToRef")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Sets the given vector "result" coordinates with the result of the transformation by the given matrix of the given vector
+      * This method computes tranformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
+      * The difference with Vector3.TransformCoordinatesToRef is that the w component is not used to divide the other coordinates but is returned in the w coordinate instead
+      * @param vector defines the Vector3 to transform
+      * @param transformation defines the transformation matrix
+      * @param result defines the Vector4 where to store the result
+      */
+    inline def TransformCoordinatesToRef(vector: DeepImmutable[Vector3], transformation: DeepImmutable[Matrix], result: Vector4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformCoordinatesToRef")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Returns a new Vector4 set with the result of the normal transformation by the given matrix of the given vector.
       * This methods computes transformed normalized direction vectors only.
       * @param vector the vector to transform
@@ -3489,5 +4750,10 @@ object mathVectorMod {
       * @returns the new vector
       */
     inline def Zero(): Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[Vector4]
+    
+    @JSImport("babylonjs/Maths/math.vector", "Vector4._ZeroReadOnly")
+    @js.native
+    def _ZeroReadOnly: Any = js.native
+    inline def _ZeroReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
   }
 }

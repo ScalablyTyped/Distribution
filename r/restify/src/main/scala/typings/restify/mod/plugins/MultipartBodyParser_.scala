@@ -18,9 +18,9 @@ trait MultipartBodyParser_ extends StObject {
   
   var maxFileSize: js.UndefOr[Double] = js.undefined
   
-  var multipartFileHandler: js.UndefOr[js.Any] = js.undefined
+  var multipartFileHandler: js.UndefOr[Any] = js.undefined
   
-  var multipartHandler: js.UndefOr[js.Any] = js.undefined
+  var multipartHandler: js.UndefOr[Any] = js.undefined
   
   var multiples: js.UndefOr[Boolean] = js.undefined
   
@@ -61,11 +61,11 @@ object MultipartBodyParser_ {
     
     inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
     
-    inline def setMultipartFileHandler(value: js.Any): Self = StObject.set(x, "multipartFileHandler", value.asInstanceOf[js.Any])
+    inline def setMultipartFileHandler(value: Any): Self = StObject.set(x, "multipartFileHandler", value.asInstanceOf[js.Any])
     
     inline def setMultipartFileHandlerUndefined: Self = StObject.set(x, "multipartFileHandler", js.undefined)
     
-    inline def setMultipartHandler(value: js.Any): Self = StObject.set(x, "multipartHandler", value.asInstanceOf[js.Any])
+    inline def setMultipartHandler(value: Any): Self = StObject.set(x, "multipartHandler", value.asInstanceOf[js.Any])
     
     inline def setMultipartHandlerUndefined: Self = StObject.set(x, "multipartHandler", js.undefined)
     

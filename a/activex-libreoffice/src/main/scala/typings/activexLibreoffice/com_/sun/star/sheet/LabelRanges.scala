@@ -25,11 +25,11 @@ object LabelRanges {
     acquire: () => Unit,
     addNew: (CellRangeAddress, CellRangeAddress) => Unit,
     createEnumeration: () => XEnumeration,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: Double => Unit
   ): LabelRanges = {

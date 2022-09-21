@@ -1,20 +1,13 @@
 package typings.htmlEncodingSniffer
 
-import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * @param buffer The NodeJS buffer containing the (X)HTML source text.
-    *
-    * @return The canonical [encoding name](https://encoding.spec.whatwg.org/#names-and-labels)
-    *         for use with the `whatwg-encoding` or similar package.
-    */
-  inline def apply(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(buffer: Buffer, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(htmlBytes: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].apply(htmlBytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(htmlBytes: js.typedarray.Uint8Array, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(htmlBytes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("html-encoding-sniffer", JSImport.Namespace)
   @js.native
@@ -27,7 +20,7 @@ object mod {
       * by the transport layer, and no encoding is sniffed from the bytes.
       *
       * @default
-      * ```js
+      * ```
       * 'windows-1252'
       * ```
       *

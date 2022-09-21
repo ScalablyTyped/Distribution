@@ -6,4 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "EmailValidator")
 @js.native
-class EmailValidator () extends SurveyValidator
+open class EmailValidator () extends SurveyValidator {
+  
+  var re: Any = js.native
+}

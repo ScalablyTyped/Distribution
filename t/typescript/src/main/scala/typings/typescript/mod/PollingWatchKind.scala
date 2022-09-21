@@ -20,6 +20,12 @@ object PollingWatchKind extends StObject {
   /* 2 */ val DynamicPriority: typings.typescript.mod.PollingWatchKind.DynamicPriority & Double = js.native
   
   @js.native
+  sealed trait FixedChunkSize
+    extends StObject
+       with PollingWatchKind
+  /* 3 */ val FixedChunkSize: typings.typescript.mod.PollingWatchKind.FixedChunkSize & Double = js.native
+  
+  @js.native
   sealed trait FixedInterval
     extends StObject
        with PollingWatchKind

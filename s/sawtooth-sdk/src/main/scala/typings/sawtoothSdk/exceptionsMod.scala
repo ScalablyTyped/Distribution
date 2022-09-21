@@ -1,8 +1,7 @@
 package typings.sawtoothSdk
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,46 +16,48 @@ object exceptionsMod {
     * @param [message] - an optional message, defaults to the empty
     * string
     */
-  class AuthorizationException ()
+  open class AuthorizationException ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sawtooth-sdk/processor/exceptions", "InternalError")
   @js.native
-  /* protected */ class InternalError () extends TransactionProcessorError {
+  /* protected */ open class InternalError () extends TransactionProcessorError {
     /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
-    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: Unit, extendedData: Buffer) = this()
-    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk/processor/exceptions", "InvalidTransaction")
   @js.native
-  /* protected */ class InvalidTransaction () extends TransactionProcessorError {
+  /* protected */ open class InvalidTransaction () extends TransactionProcessorError {
     /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
-    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: Unit, extendedData: Buffer) = this()
-    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk/processor/exceptions", "_TransactionProcessorError")
   @js.native
-  /* protected */ class TransactionProcessorError () extends StObject {
+  /* protected */ open class TransactionProcessorError () extends StObject {
     /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
-    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: Unit, extendedData: Buffer) = this()
-    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk/processor/exceptions", "ValidatorConnectionError")
@@ -67,14 +68,16 @@ object exceptionsMod {
     * @param [message] - an optional message, defaults to the empty
     * string
     */
-  class ValidatorConnectionError ()
+  open class ValidatorConnectionError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

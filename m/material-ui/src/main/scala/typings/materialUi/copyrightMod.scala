@@ -10,10 +10,10 @@ object copyrightMod {
   
   @JSImport("material-ui/svg-icons/action/copyright", JSImport.Default)
   @js.native
-  class default () extends ActionCopyright
+  open class default () extends ActionCopyright
   
   @JSImport("material-ui/svg-icons/action/copyright", "ActionCopyright")
   @js.native
-  class ActionCopyright ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionCopyright ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -12,7 +12,7 @@ trait CreateRecipeRequest extends StObject {
   var Description: js.UndefOr[RecipeDescription] = js.undefined
   
   /**
-    * A unique name for the recipe.
+    * A unique name for the recipe. Valid characters are alphanumeric (A-Z, a-z, 0-9), hyphen (-), period (.), and space.
     */
   var Name: RecipeName
   
@@ -43,7 +43,7 @@ object CreateRecipeRequest {
     
     inline def setSteps(value: RecipeStepList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

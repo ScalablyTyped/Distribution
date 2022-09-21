@@ -28,7 +28,7 @@ trait ColorFormat extends StObject {
   
   var OverPrint: MsoTriState
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RGB: Double
   
@@ -58,7 +58,7 @@ object ColorFormat {
     Name: String,
     ObjectThemeColor: WdThemeColorIndex,
     OverPrint: MsoTriState,
-    Parent: js.Any,
+    Parent: Any,
     RGB: Double,
     SchemeColor: Double,
     SetCMYK: (Double, Double, Double, Double) => Unit,
@@ -94,7 +94,7 @@ object ColorFormat {
     
     inline def setOverPrint(value: MsoTriState): Self = StObject.set(x, "OverPrint", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
     

@@ -9,11 +9,10 @@ sealed trait Days extends StObject
 /**
   * Specifies the day of week or type of day.
   *
+  * @remarks
   * [Api set: Mailbox 1.7]
   *
-  * @remarks
-  *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.Days")
 @js.native

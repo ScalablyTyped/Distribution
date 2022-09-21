@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("better-queue", JSImport.Namespace)
   @js.native
-  class ^[T, K] protected () extends BetterQueue[T, K] {
+  open class ^[T, K] protected () extends BetterQueue[T, K] {
     def this(options: QueueOptions[T, K]) = this()
     def this(process: ProcessFunction[T, K]) = this()
     def this(process: ProcessFunction[T, K], options: Partial[QueueOptions[T, K]]) = this()
@@ -23,37 +23,37 @@ object mod {
   
   @JSImport("better-queue", "Ticket")
   @js.native
-  class Ticket () extends EventEmitter {
+  open class Ticket () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
-    def on(event: TicketEvent, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: TicketEvent, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   }
   
   @js.native
   trait BetterQueue[T, K] extends EventEmitter {
     
-    def cancel(taskId: js.Any): Unit = js.native
-    def cancel(taskId: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def cancel(taskId: Any): Unit = js.native
+    def cancel(taskId: Any, cb: js.Function0[Unit]): Unit = js.native
     
     def destroy(cb: js.Function0[Unit]): Unit = js.native
     
     def getStats(): QueueStats = js.native
     
-    def on(event: QueueEvent, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: QueueEvent, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
-    def on_taskfailed(event: task_failed, listener: js.Function2[/* taskId */ js.Any, /* errorMessage */ String, Unit]): this.type = js.native
+    def on_taskfailed(event: task_failed, listener: js.Function2[/* taskId */ Any, /* errorMessage */ String, Unit]): this.type = js.native
     @JSName("on")
-    def on_taskfinish(event: task_finish, listener: js.Function2[/* taskId */ js.Any, /* result */ K, Unit]): this.type = js.native
+    def on_taskfinish(event: task_finish, listener: js.Function2[/* taskId */ Any, /* result */ K, Unit]): this.type = js.native
     @JSName("on")
     def on_taskprogress(
       event: task_progress,
-      listener: js.Function3[/* taskId */ js.Any, /* completed */ Double, /* total */ Double, Unit]
+      listener: js.Function3[/* taskId */ Any, /* completed */ Double, /* total */ Double, Unit]
     ): this.type = js.native
     
     def pause(): Unit = js.native
     
     def push(task: T): Ticket = js.native
-    def push(task: T, cb: js.Function2[/* err */ js.Any, /* result */ K, Unit]): Ticket = js.native
+    def push(task: T, cb: js.Function2[/* err */ Any, /* result */ K, Unit]): Ticket = js.native
     
     def resetStats(): Unit = js.native
     
@@ -63,9 +63,9 @@ object mod {
   }
   
   // TODO reflect task types somehow (task: T | T[])
-  type ProcessFunction[T, K] = js.Function2[/* task */ js.Any, /* cb */ ProcessFunctionCb[K], Unit]
+  type ProcessFunction[T, K] = js.Function2[/* task */ Any, /* cb */ ProcessFunctionCb[K], Unit]
   
-  type ProcessFunctionCb[K] = js.Function2[/* error */ js.UndefOr[js.Any], /* result */ js.UndefOr[K], Unit]
+  type ProcessFunctionCb[K] = js.Function2[/* error */ js.UndefOr[Any], /* result */ js.UndefOr[K], Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.betterQueue.betterQueueStrings.task_queued
@@ -130,13 +130,13 @@ object mod {
     var filo: js.UndefOr[Boolean] = js.undefined
     
     var filter: js.UndefOr[
-        js.Function2[/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* task */ T, Unit], Unit]
+        js.Function2[/* task */ T, /* cb */ js.Function2[/* error */ Any, /* task */ T, Unit], Unit]
       ] = js.undefined
     
     var id: js.UndefOr[
         (/* keyof T */ String) | (js.Function2[
           /* task */ T, 
-          /* cb */ js.Function2[/* error */ js.Any, /* keyof T */ /* id */ String, Unit], 
+          /* cb */ js.Function2[/* error */ Any, /* keyof T */ /* id */ String, Unit], 
           Unit
         ])
       ] = js.undefined
@@ -149,13 +149,13 @@ object mod {
         js.Function3[
           /* oldTask */ T, 
           /* newTask */ T, 
-          /* cb */ js.Function2[/* error */ js.Any, /* mergedTask */ T, Unit], 
+          /* cb */ js.Function2[/* error */ Any, /* mergedTask */ T, Unit], 
           Unit
         ]
       ] = js.undefined
     
     var precondition: js.UndefOr[
-        js.Function1[/* cb */ js.Function2[/* error */ js.Any, /* passOrFail */ Boolean, Unit], Unit]
+        js.Function1[/* cb */ js.Function2[/* error */ Any, /* passOrFail */ Boolean, Unit], Unit]
       ] = js.undefined
     
     var preconditionRetryTimeout: js.UndefOr[Double] = js.undefined
@@ -163,12 +163,12 @@ object mod {
     var priority: js.UndefOr[
         js.Function2[
           /* task */ T, 
-          /* cb */ js.Function2[/* error */ js.Any, /* priority */ Double, Unit], 
+          /* cb */ js.Function2[/* error */ Any, /* priority */ Double, Unit], 
           Unit
         ]
       ] = js.undefined
     
-    def process(task: js.Any, cb: ProcessFunctionCb[K]): Unit
+    def process(task: Any, cb: ProcessFunctionCb[K]): Unit
     @JSName("process")
     var process_Original: ProcessFunction[T, K]
     
@@ -182,7 +182,7 @@ object mod {
   }
   object QueueOptions {
     
-    inline def apply[T, K](process: (/* task */ js.Any, /* cb */ ProcessFunctionCb[K]) => Unit): QueueOptions[T, K] = {
+    inline def apply[T, K](process: (/* task */ Any, /* cb */ ProcessFunctionCb[K]) => Unit): QueueOptions[T, K] = {
       val __obj = js.Dynamic.literal(process = js.Any.fromFunction2(process))
       __obj.asInstanceOf[QueueOptions[T, K]]
     }
@@ -225,20 +225,20 @@ object mod {
       
       inline def setFiloUndefined: Self = StObject.set(x, "filo", js.undefined)
       
-      inline def setFilter(value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilter(value: (/* task */ T, /* cb */ js.Function2[/* error */ Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       inline def setId(
         value: (/* keyof T */ String) | (js.Function2[
               /* task */ T, 
-              /* cb */ js.Function2[/* error */ js.Any, /* keyof T */ /* id */ String, Unit], 
+              /* cb */ js.Function2[/* error */ Any, /* keyof T */ /* id */ String, Unit], 
               Unit
             ])
       ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdFunction2(
-        value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* keyof T */ /* id */ String, Unit]) => Unit
+        value: (/* task */ T, /* cb */ js.Function2[/* error */ Any, /* keyof T */ /* id */ String, Unit]) => Unit
       ): Self = StObject.set(x, "id", js.Any.fromFunction2(value))
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -252,12 +252,12 @@ object mod {
       inline def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
       
       inline def setMerge(
-        value: (/* oldTask */ T, /* newTask */ T, /* cb */ js.Function2[/* error */ js.Any, /* mergedTask */ T, Unit]) => Unit
+        value: (/* oldTask */ T, /* newTask */ T, /* cb */ js.Function2[/* error */ Any, /* mergedTask */ T, Unit]) => Unit
       ): Self = StObject.set(x, "merge", js.Any.fromFunction3(value))
       
       inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
       
-      inline def setPrecondition(value: /* cb */ js.Function2[/* error */ js.Any, /* passOrFail */ Boolean, Unit] => Unit): Self = StObject.set(x, "precondition", js.Any.fromFunction1(value))
+      inline def setPrecondition(value: /* cb */ js.Function2[/* error */ Any, /* passOrFail */ Boolean, Unit] => Unit): Self = StObject.set(x, "precondition", js.Any.fromFunction1(value))
       
       inline def setPreconditionRetryTimeout(value: Double): Self = StObject.set(x, "preconditionRetryTimeout", value.asInstanceOf[js.Any])
       
@@ -265,13 +265,11 @@ object mod {
       
       inline def setPreconditionUndefined: Self = StObject.set(x, "precondition", js.undefined)
       
-      inline def setPriority(
-        value: (/* task */ T, /* cb */ js.Function2[/* error */ js.Any, /* priority */ Double, Unit]) => Unit
-      ): Self = StObject.set(x, "priority", js.Any.fromFunction2(value))
+      inline def setPriority(value: (/* task */ T, /* cb */ js.Function2[/* error */ Any, /* priority */ Double, Unit]) => Unit): Self = StObject.set(x, "priority", js.Any.fromFunction2(value))
       
       inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      inline def setProcess(value: (/* task */ js.Any, /* cb */ ProcessFunctionCb[K]) => Unit): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+      inline def setProcess(value: (/* task */ Any, /* cb */ ProcessFunctionCb[K]) => Unit): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       
       inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
@@ -322,33 +320,33 @@ object mod {
   
   trait Store[T] extends StObject {
     
-    def connect(cb: js.Function2[/* error */ js.Any, /* length */ Double, Unit]): Unit
+    def connect(cb: js.Function2[/* error */ Any, /* length */ Double, Unit]): Unit
     
-    def deleteTask(taskId: js.Any, cb: js.Function0[Unit]): Unit
+    def deleteTask(taskId: Any, cb: js.Function0[Unit]): Unit
     
-    def getLock(lockId: String, cb: js.Function2[/* error */ js.Any, /* tasks */ StringDictionary[T], Unit]): Unit
+    def getLock(lockId: String, cb: js.Function2[/* error */ Any, /* tasks */ StringDictionary[T], Unit]): Unit
     
-    def getTask(taskId: js.Any, cb: js.Function2[/* error */ js.Any, /* task */ T, Unit]): Unit
+    def getTask(taskId: Any, cb: js.Function2[/* error */ Any, /* task */ T, Unit]): Unit
     
-    def putTask(taskId: js.Any, task: T, priority: Double, cb: js.Function1[/* error */ js.Any, Unit]): Unit
+    def putTask(taskId: Any, task: T, priority: Double, cb: js.Function1[/* error */ Any, Unit]): Unit
     
-    def releaseLock(lockId: String, cb: js.Function1[/* error */ js.Any, Unit]): Unit
+    def releaseLock(lockId: String, cb: js.Function1[/* error */ Any, Unit]): Unit
     
-    def takeFirstN(n: Double, cb: js.Function2[/* error */ js.Any, /* lockId */ String, Unit]): Unit
+    def takeFirstN(n: Double, cb: js.Function2[/* error */ Any, /* lockId */ String, Unit]): Unit
     
-    def takeLastN(n: Double, cb: js.Function2[/* error */ js.Any, /* lockId */ String, Unit]): Unit
+    def takeLastN(n: Double, cb: js.Function2[/* error */ Any, /* lockId */ String, Unit]): Unit
   }
   object Store {
     
     inline def apply[T](
-      connect: js.Function2[/* error */ js.Any, /* length */ Double, Unit] => Unit,
-      deleteTask: (js.Any, js.Function0[Unit]) => Unit,
-      getLock: (String, js.Function2[/* error */ js.Any, /* tasks */ StringDictionary[T], Unit]) => Unit,
-      getTask: (js.Any, js.Function2[/* error */ js.Any, /* task */ T, Unit]) => Unit,
-      putTask: (js.Any, T, Double, js.Function1[/* error */ js.Any, Unit]) => Unit,
-      releaseLock: (String, js.Function1[/* error */ js.Any, Unit]) => Unit,
-      takeFirstN: (Double, js.Function2[/* error */ js.Any, /* lockId */ String, Unit]) => Unit,
-      takeLastN: (Double, js.Function2[/* error */ js.Any, /* lockId */ String, Unit]) => Unit
+      connect: js.Function2[/* error */ Any, /* length */ Double, Unit] => Unit,
+      deleteTask: (Any, js.Function0[Unit]) => Unit,
+      getLock: (String, js.Function2[/* error */ Any, /* tasks */ StringDictionary[T], Unit]) => Unit,
+      getTask: (Any, js.Function2[/* error */ Any, /* task */ T, Unit]) => Unit,
+      putTask: (Any, T, Double, js.Function1[/* error */ Any, Unit]) => Unit,
+      releaseLock: (String, js.Function1[/* error */ Any, Unit]) => Unit,
+      takeFirstN: (Double, js.Function2[/* error */ Any, /* lockId */ String, Unit]) => Unit,
+      takeLastN: (Double, js.Function2[/* error */ Any, /* lockId */ String, Unit]) => Unit
     ): Store[T] = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect), deleteTask = js.Any.fromFunction2(deleteTask), getLock = js.Any.fromFunction2(getLock), getTask = js.Any.fromFunction2(getTask), putTask = js.Any.fromFunction4(putTask), releaseLock = js.Any.fromFunction2(releaseLock), takeFirstN = js.Any.fromFunction2(takeFirstN), takeLastN = js.Any.fromFunction2(takeLastN))
       __obj.asInstanceOf[Store[T]]
@@ -356,28 +354,28 @@ object mod {
     
     extension [Self <: Store[?], T](x: Self & Store[T]) {
       
-      inline def setConnect(value: js.Function2[/* error */ js.Any, /* length */ Double, Unit] => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+      inline def setConnect(value: js.Function2[/* error */ Any, /* length */ Double, Unit] => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
-      inline def setDeleteTask(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "deleteTask", js.Any.fromFunction2(value))
+      inline def setDeleteTask(value: (Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "deleteTask", js.Any.fromFunction2(value))
       
-      inline def setGetLock(value: (String, js.Function2[/* error */ js.Any, /* tasks */ StringDictionary[T], Unit]) => Unit): Self = StObject.set(x, "getLock", js.Any.fromFunction2(value))
+      inline def setGetLock(value: (String, js.Function2[/* error */ Any, /* tasks */ StringDictionary[T], Unit]) => Unit): Self = StObject.set(x, "getLock", js.Any.fromFunction2(value))
       
-      inline def setGetTask(value: (js.Any, js.Function2[/* error */ js.Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "getTask", js.Any.fromFunction2(value))
+      inline def setGetTask(value: (Any, js.Function2[/* error */ Any, /* task */ T, Unit]) => Unit): Self = StObject.set(x, "getTask", js.Any.fromFunction2(value))
       
-      inline def setPutTask(value: (js.Any, T, Double, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "putTask", js.Any.fromFunction4(value))
+      inline def setPutTask(value: (Any, T, Double, js.Function1[/* error */ Any, Unit]) => Unit): Self = StObject.set(x, "putTask", js.Any.fromFunction4(value))
       
-      inline def setReleaseLock(value: (String, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "releaseLock", js.Any.fromFunction2(value))
+      inline def setReleaseLock(value: (String, js.Function1[/* error */ Any, Unit]) => Unit): Self = StObject.set(x, "releaseLock", js.Any.fromFunction2(value))
       
-      inline def setTakeFirstN(value: (Double, js.Function2[/* error */ js.Any, /* lockId */ String, Unit]) => Unit): Self = StObject.set(x, "takeFirstN", js.Any.fromFunction2(value))
+      inline def setTakeFirstN(value: (Double, js.Function2[/* error */ Any, /* lockId */ String, Unit]) => Unit): Self = StObject.set(x, "takeFirstN", js.Any.fromFunction2(value))
       
-      inline def setTakeLastN(value: (Double, js.Function2[/* error */ js.Any, /* lockId */ String, Unit]) => Unit): Self = StObject.set(x, "takeLastN", js.Any.fromFunction2(value))
+      inline def setTakeLastN(value: (Double, js.Function2[/* error */ Any, /* lockId */ String, Unit]) => Unit): Self = StObject.set(x, "takeLastN", js.Any.fromFunction2(value))
     }
   }
   
   trait StoreOptions
     extends StObject
        with // store-specific options
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     var `type`: String
   }

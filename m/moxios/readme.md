@@ -11,9 +11,9 @@ Mock axios requests for testing
 | Full name          | moxios |
 | Keywords           | axios, test, testing, mock, mocking |
 | # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 5328873 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 572166.3333333334 |
+| # stars            | 1371.0 |
 
 ## Links
 - [Homepage](https://github.com/mzabriskie/moxios#readme)

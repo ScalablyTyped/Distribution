@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("ReactCountTo")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactCountTo.mod.^
   }
 }

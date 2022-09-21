@@ -24,12 +24,12 @@ object Certs {
     
     inline def setCerts(value: js.Array[String]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     
-    inline def setCertsVarargs(value: String*): Self = StObject.set(x, "certs", js.Array(value :_*))
+    inline def setCertsVarargs(value: String*): Self = StObject.set(x, "certs", js.Array(value*))
     
     inline def setContent(value: StringParam): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setSignerInfos(value: js.Array[HashAlg]): Self = StObject.set(x, "signerInfos", value.asInstanceOf[js.Any])
     
-    inline def setSignerInfosVarargs(value: HashAlg*): Self = StObject.set(x, "signerInfos", js.Array(value :_*))
+    inline def setSignerInfosVarargs(value: HashAlg*): Self = StObject.set(x, "signerInfos", js.Array(value*))
   }
 }

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("slonik", "NotFoundError")
 @js.native
-class NotFoundError () extends SlonikError
+open class NotFoundError () extends SlonikError

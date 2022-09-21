@@ -29,7 +29,7 @@ object GetDetectorsResult {
     
     inline def setDetectorsUndefined: Self = StObject.set(x, "detectors", js.undefined)
     
-    inline def setDetectorsVarargs(value: Detector*): Self = StObject.set(x, "detectors", js.Array(value :_*))
+    inline def setDetectorsVarargs(value: Detector*): Self = StObject.set(x, "detectors", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

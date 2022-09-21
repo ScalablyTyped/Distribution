@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/text-editor-edit/
+/// https://docs.nova.app/api-reference/text-editor-edit/
 trait TextEditorEdit extends StObject {
   
   def delete(range: Range): Unit

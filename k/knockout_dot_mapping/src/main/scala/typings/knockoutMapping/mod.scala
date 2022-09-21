@@ -56,18 +56,19 @@ object mod extends Shortcut {
         * @param target View model object previosly mapped to be updated.
         */
       def fromJS[T](source: js.Array[T]): KnockoutObservableArrayType[T] = js.native
-      /**
-        * Updates target's observable properties with those of the sources.
-        * @param source Array to be mapped.
-        * @param target View model object previosly mapped to be updated.
-        */
-      def fromJS[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]] | KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
       def fromJS[T](source: js.Array[T], options: Unit, target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
+      def fromJS[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutObservableArrayType[T] = js.native
       def fromJS[T](
         source: js.Array[T],
         options: KnockoutMappingOptions[js.Array[T]],
         target: KnockoutObservableArrayType[T]
       ): KnockoutObservableArrayType[T] = js.native
+      /**
+        * Updates target's observable properties with those of the sources.
+        * @param source Array to be mapped.
+        * @param target View model object previosly mapped to be updated.
+        */
+      def fromJS[T](source: js.Array[T], target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
       
       /**
         * Creates a view model object with observable properties for each of the properties on the source. 
@@ -76,15 +77,16 @@ object mod extends Shortcut {
         * @param options Options on mapping behavior.
         * @param target View model object previosly mapped to be updated.
         */
-      def fromJSON(source: String): js.Any = js.native
+      def fromJSON(source: String): Any = js.native
+      def fromJSON(source: String, options: Unit, target: Any): Any = js.native
+      def fromJSON(source: String, options: KnockoutMappingOptions[Any]): Any = js.native
+      def fromJSON(source: String, options: KnockoutMappingOptions[Any], target: Any): Any = js.native
       /**
         * Updates target's observable properties with those of the sources.
         * @param source JSON of a JavaScript object to be mapped.
         * @param target View model object previosly mapped to be updated.
         */
-      def fromJSON(source: String, options: js.Any | KnockoutMappingOptions[js.Any]): js.Any = js.native
-      def fromJSON(source: String, options: Unit, target: js.Any): js.Any = js.native
-      def fromJSON(source: String, options: KnockoutMappingOptions[js.Any], target: js.Any): js.Any = js.native
+      def fromJSON(source: String, target: Any): Any = js.native
       
       /**
         * Creates an readonly observable array view model. Objects on the source array are also converted to observables. Primitive types and arrays are not. 
@@ -95,44 +97,43 @@ object mod extends Shortcut {
         */
       @JSName("fromJS")
       def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T]): KnockoutReadonlyObservableArrayType[T] = js.native
-      /**
-        * Updates target's observable properties with those of the sources.
-        * @param source Array to be mapped.
-        * @param target View model object previosly mapped to be updated.
-        */
-      @JSName("fromJS")
-      def fromJS_T_KnockoutReadonlyObservableArrayType[T](
-        source: js.Array[T],
-        options: KnockoutMappingOptions[js.Array[T]] | KnockoutReadonlyObservableArrayType[T]
-      ): KnockoutReadonlyObservableArrayType[T] = js.native
       @JSName("fromJS")
       def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T], options: Unit, target: KnockoutReadonlyObservableArrayType[T]): KnockoutReadonlyObservableArrayType[T] = js.native
+      @JSName("fromJS")
+      def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutReadonlyObservableArrayType[T] = js.native
       @JSName("fromJS")
       def fromJS_T_KnockoutReadonlyObservableArrayType[T](
         source: js.Array[T],
         options: KnockoutMappingOptions[js.Array[T]],
         target: KnockoutReadonlyObservableArrayType[T]
       ): KnockoutReadonlyObservableArrayType[T] = js.native
+      /**
+        * Updates target's observable properties with those of the sources.
+        * @param source Array to be mapped.
+        * @param target View model object previosly mapped to be updated.
+        */
+      @JSName("fromJS")
+      def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T], target: KnockoutReadonlyObservableArrayType[T]): KnockoutReadonlyObservableArrayType[T] = js.native
       
       /**
         * Undocumented. Custom implementation of JavaScript's typeof.
         * @param x object to check type
         */
-      def getType(x: js.Any): js.Any = js.native
+      def getType(x: Any): Any = js.native
       
       /**
         * Checks if an object was created using KnockoutMapping
         * @param viewModel View model object to be checked.
         */
-      def isMapped(viewModel: js.Any): Boolean = js.native
+      def isMapped(viewModel: Any): Boolean = js.native
       
       /**
         * Undocumented. Reset Mapping default options.
         */
       def resetDefaultOptions(): Unit = js.native
       
-      def toJS(viewModel: js.Any): js.Any = js.native
-      def toJS(viewModel: js.Any, options: KnockoutMappingOptions[js.Any]): js.Any = js.native
+      def toJS(viewModel: Any): Any = js.native
+      def toJS(viewModel: Any, options: KnockoutMappingOptions[Any]): Any = js.native
       def toJS[T](viewModel: KnockoutObservableType[T]): T = js.native
       def toJS[T](viewModel: KnockoutObservableType[T], options: KnockoutMappingOptions[T]): T = js.native
       
@@ -146,11 +147,11 @@ object mod extends Shortcut {
       
       @JSName("toJS")
       def toJS_T_Array[T](
-        viewModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<T> */ js.Any
+        viewModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<T> */ Any
       ): js.Array[T] = js.native
       @JSName("toJS")
       def toJS_T_Array[T](
-        viewModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<T> */ js.Any,
+        viewModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<T> */ Any,
         options: KnockoutMappingOptions[T]
       ): js.Array[T] = js.native
       /**
@@ -160,39 +161,39 @@ object mod extends Shortcut {
         */
       @JSName("toJS")
       def toJS_T_T[T](
-        viewModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> */ js.Any
+        viewModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> */ Any
       ): T = js.native
       @JSName("toJS")
       def toJS_T_T[T](
-        viewModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> */ js.Any,
+        viewModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> */ Any,
         options: KnockoutMappingOptions[T]
       ): T = js.native
       
       /**
         * Undocumented.
         */
-      def visitModel(rootObject: js.Any, callback: js.Function): js.Any = js.native
-      def visitModel(rootObject: js.Any, callback: js.Function, options: Copy): js.Any = js.native
+      def visitModel(rootObject: Any, callback: js.Function): Any = js.native
+      def visitModel(rootObject: Any, callback: js.Function, options: Copy): Any = js.native
     }
     
     trait KnockoutMappingCreateOptions extends StObject {
       
-      var data: js.Any
+      var data: Any
       
-      var parent: js.Any
+      var parent: Any
     }
     object KnockoutMappingCreateOptions {
       
-      inline def apply(data: js.Any, parent: js.Any): KnockoutMappingCreateOptions = {
+      inline def apply(data: Any, parent: Any): KnockoutMappingCreateOptions = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
         __obj.asInstanceOf[KnockoutMappingCreateOptions]
       }
       
       extension [Self <: KnockoutMappingCreateOptions](x: Self) {
         
-        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       }
     }
     
@@ -200,7 +201,7 @@ object mod extends Shortcut {
     
     type KnockoutMappingSpecificOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? knockout.mapping.knockout.mapping.<global>.KnockoutPropertyMappingCallBack}
-      */ typings.knockoutMapping.knockoutMappingStrings.KnockoutMappingSpecificOptions & TopLevel[js.Any]
+      */ typings.knockoutMapping.knockoutMappingStrings.KnockoutMappingSpecificOptions & TopLevel[Any]
     
     trait KnockoutMappingStandardOptions extends StObject {
       
@@ -230,7 +231,7 @@ object mod extends Shortcut {
         
         inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
         
-        inline def setCopyVarargs(value: String*): Self = StObject.set(x, "copy", js.Array(value :_*))
+        inline def setCopyVarargs(value: String*): Self = StObject.set(x, "copy", js.Array(value*))
         
         inline def setDeferEvaluation(value: Boolean): Self = StObject.set(x, "deferEvaluation", value.asInstanceOf[js.Any])
         
@@ -240,60 +241,60 @@ object mod extends Shortcut {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+        inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
         
         inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
         
         inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
         
-        inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+        inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
         
         inline def setMappedProperties(value: js.Array[String]): Self = StObject.set(x, "mappedProperties", value.asInstanceOf[js.Any])
         
         inline def setMappedPropertiesUndefined: Self = StObject.set(x, "mappedProperties", js.undefined)
         
-        inline def setMappedPropertiesVarargs(value: String*): Self = StObject.set(x, "mappedProperties", js.Array(value :_*))
+        inline def setMappedPropertiesVarargs(value: String*): Self = StObject.set(x, "mappedProperties", js.Array(value*))
         
         inline def setObserve(value: js.Array[String]): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
         
         inline def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
         
-        inline def setObserveVarargs(value: String*): Self = StObject.set(x, "observe", js.Array(value :_*))
+        inline def setObserveVarargs(value: String*): Self = StObject.set(x, "observe", js.Array(value*))
       }
     }
     
     trait KnockoutMappingUpdateOptions extends StObject {
       
-      var data: js.Any
+      var data: Any
       
       var observable: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any
           ] = js.undefined
       
-      var parent: js.Any
+      var parent: Any
       
-      var target: js.Any
+      var target: Any
     }
     object KnockoutMappingUpdateOptions {
       
-      inline def apply(data: js.Any, parent: js.Any, target: js.Any): KnockoutMappingUpdateOptions = {
+      inline def apply(data: Any, parent: Any, target: Any): KnockoutMappingUpdateOptions = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[KnockoutMappingUpdateOptions]
       }
       
       extension [Self <: KnockoutMappingUpdateOptions](x: Self) {
         
-        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setObservable(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any
         ): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
         
         inline def setObservableUndefined: Self = StObject.set(x, "observable", js.undefined)
         
-        inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
@@ -316,17 +317,17 @@ object mod extends Shortcut {
     }
     
     // Could not get this to return any when T is any. It returns a Union type of the possible values.
-    type KnockoutObservableArrayType[T] = js.Any
+    type KnockoutObservableArrayType[T] = Any
     
     type KnockoutObservableType[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: T[P] extends knockout.mapping.knockout.mapping.Primitives? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T[P]> * / any : T[P] extends std.Array<any>? knockout.mapping.knockout.mapping.<global>.KnockoutObservableArrayType<T[P][number]> : T[P] extends std.ReadonlyArray<any>? knockout.mapping.knockout.mapping.<global>.KnockoutReadonlyObservableArrayType<T[P][number]> : knockout.mapping.knockout.mapping.<global>.MappedType<T[P]>}
-      */ typings.knockoutMapping.knockoutMappingStrings.KnockoutObservableType & TopLevel[js.Any]
+      */ typings.knockoutMapping.knockoutMappingStrings.KnockoutObservableType & TopLevel[Any]
     
     trait KnockoutPropertyMappingCallBack extends StObject {
       
       var create: js.UndefOr[js.Function1[/* options */ KnockoutMappingCreateOptions, Unit]] = js.undefined
       
-      var key: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+      var key: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
       
       var update: js.UndefOr[js.Function1[/* options */ KnockoutMappingUpdateOptions, Unit]] = js.undefined
     }
@@ -343,7 +344,7 @@ object mod extends Shortcut {
         
         inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
         
-        inline def setKey(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+        inline def setKey(value: /* data */ Any => Any): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
         
         inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
@@ -353,7 +354,7 @@ object mod extends Shortcut {
       }
     }
     
-    type KnockoutReadonlyObservableArrayType[T] = js.Any
+    type KnockoutReadonlyObservableArrayType[T] = Any
     
     trait KnockoutStatic extends StObject {
       

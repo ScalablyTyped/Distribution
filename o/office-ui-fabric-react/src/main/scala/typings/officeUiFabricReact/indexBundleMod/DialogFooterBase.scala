@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "DialogFooterBase")
 @js.native
-class DialogFooterBase protected ()
+open class DialogFooterBase protected ()
   extends typings.officeUiFabricReact.mod.DialogFooterBase {
   def this(props: IDialogFooterProps) = this()
 }

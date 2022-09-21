@@ -14,12 +14,12 @@ trait CacheNodeUpdateStatus extends StObject {
   /**
     * The deletion date of the node
     */
-  var NodeDeletionDate: js.UndefOr[TStamp] = js.undefined
+  var NodeDeletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The end date of the update for a node
     */
-  var NodeUpdateEndDate: js.UndefOr[TStamp] = js.undefined
+  var NodeUpdateEndDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Reflects whether the update was initiated by the customer or automatically applied
@@ -29,12 +29,12 @@ trait CacheNodeUpdateStatus extends StObject {
   /**
     * The date when the update is triggered
     */
-  var NodeUpdateInitiatedDate: js.UndefOr[TStamp] = js.undefined
+  var NodeUpdateInitiatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The start date of the update for a node
     */
-  var NodeUpdateStartDate: js.UndefOr[TStamp] = js.undefined
+  var NodeUpdateStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The update status of the node
@@ -44,7 +44,7 @@ trait CacheNodeUpdateStatus extends StObject {
   /**
     * The date when the NodeUpdateStatus was last modified&gt;
     */
-  var NodeUpdateStatusModifiedDate: js.UndefOr[TStamp] = js.undefined
+  var NodeUpdateStatusModifiedDate: js.UndefOr[js.Date] = js.undefined
 }
 object CacheNodeUpdateStatus {
   
@@ -59,11 +59,11 @@ object CacheNodeUpdateStatus {
     
     inline def setCacheNodeIdUndefined: Self = StObject.set(x, "CacheNodeId", js.undefined)
     
-    inline def setNodeDeletionDate(value: TStamp): Self = StObject.set(x, "NodeDeletionDate", value.asInstanceOf[js.Any])
+    inline def setNodeDeletionDate(value: js.Date): Self = StObject.set(x, "NodeDeletionDate", value.asInstanceOf[js.Any])
     
     inline def setNodeDeletionDateUndefined: Self = StObject.set(x, "NodeDeletionDate", js.undefined)
     
-    inline def setNodeUpdateEndDate(value: TStamp): Self = StObject.set(x, "NodeUpdateEndDate", value.asInstanceOf[js.Any])
+    inline def setNodeUpdateEndDate(value: js.Date): Self = StObject.set(x, "NodeUpdateEndDate", value.asInstanceOf[js.Any])
     
     inline def setNodeUpdateEndDateUndefined: Self = StObject.set(x, "NodeUpdateEndDate", js.undefined)
     
@@ -71,17 +71,17 @@ object CacheNodeUpdateStatus {
     
     inline def setNodeUpdateInitiatedByUndefined: Self = StObject.set(x, "NodeUpdateInitiatedBy", js.undefined)
     
-    inline def setNodeUpdateInitiatedDate(value: TStamp): Self = StObject.set(x, "NodeUpdateInitiatedDate", value.asInstanceOf[js.Any])
+    inline def setNodeUpdateInitiatedDate(value: js.Date): Self = StObject.set(x, "NodeUpdateInitiatedDate", value.asInstanceOf[js.Any])
     
     inline def setNodeUpdateInitiatedDateUndefined: Self = StObject.set(x, "NodeUpdateInitiatedDate", js.undefined)
     
-    inline def setNodeUpdateStartDate(value: TStamp): Self = StObject.set(x, "NodeUpdateStartDate", value.asInstanceOf[js.Any])
+    inline def setNodeUpdateStartDate(value: js.Date): Self = StObject.set(x, "NodeUpdateStartDate", value.asInstanceOf[js.Any])
     
     inline def setNodeUpdateStartDateUndefined: Self = StObject.set(x, "NodeUpdateStartDate", js.undefined)
     
     inline def setNodeUpdateStatus(value: NodeUpdateStatus): Self = StObject.set(x, "NodeUpdateStatus", value.asInstanceOf[js.Any])
     
-    inline def setNodeUpdateStatusModifiedDate(value: TStamp): Self = StObject.set(x, "NodeUpdateStatusModifiedDate", value.asInstanceOf[js.Any])
+    inline def setNodeUpdateStatusModifiedDate(value: js.Date): Self = StObject.set(x, "NodeUpdateStatusModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setNodeUpdateStatusModifiedDateUndefined: Self = StObject.set(x, "NodeUpdateStatusModifiedDate", js.undefined)
     

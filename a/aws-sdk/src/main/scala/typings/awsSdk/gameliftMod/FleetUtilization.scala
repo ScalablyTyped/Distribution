@@ -7,27 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FleetUtilization extends StObject {
   
   /**
-    * Number of active game sessions currently being hosted on all instances in the fleet.
+    * The number of active game sessions that are currently being hosted across all instances in the fleet location.
     */
   var ActiveGameSessionCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * Number of server processes in an ACTIVE status currently running across all instances in the fleet
+    * The number of server processes in ACTIVE status that are currently running across all instances in the fleet location. 
     */
   var ActiveServerProcessCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * Number of active player sessions currently being hosted on all instances in the fleet.
+    * The number of active player sessions that are currently being hosted across all instances in the fleet location.
     */
   var CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * A unique identifier for a fleet.
+    * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912.
+    */
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
+  
+  /**
+    * A unique identifier for the fleet associated with the location.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
-    * The maximum number of players allowed across all game sessions currently being hosted on all instances in the fleet.
+    * The fleet location for the fleet utilization information, expressed as an Amazon Web Services Region code, such as us-west-2. 
+    */
+  var Location: js.UndefOr[LocationStringModel] = js.undefined
+  
+  /**
+    * The maximum number of players allowed across all game sessions that are currently being hosted across all instances in the fleet location.
     */
   var MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
 }
@@ -52,9 +62,17 @@ object FleetUtilization {
     
     inline def setCurrentPlayerSessionCountUndefined: Self = StObject.set(x, "CurrentPlayerSessionCount", js.undefined)
     
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    
+    inline def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
+    
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    
+    inline def setLocation(value: LocationStringModel): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     inline def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
     

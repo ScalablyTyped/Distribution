@@ -10,7 +10,7 @@ object setLikeMod {
   /* was `typeof Set` */
   @JSImport("dom-accessibility-api/dist/polyfills/SetLike", JSImport.Default)
   @js.native
-  class default[T] () extends Set[T] {
+  open class default[T] () extends Set[T] {
     def this(items: js.Array[T]) = this()
   }
   
@@ -18,7 +18,7 @@ object setLikeMod {
     
     @JSGlobal("Set")
     @js.native
-    class Set[T] () extends StObject {
+    open class Set[T] () extends StObject {
       def this(items: js.Array[T]) = this()
       
       def add(value: T): this.type = js.native
@@ -28,7 +28,7 @@ object setLikeMod {
       def delete(value: T): Boolean = js.native
       
       def forEach(callbackfn: js.Function3[/* value */ T, /* value2 */ T, /* set */ Set[T], Unit]): Unit = js.native
-      def forEach(callbackfn: js.Function3[/* value */ T, /* value2 */ T, /* set */ Set[T], Unit], thisArg: js.Any): Unit = js.native
+      def forEach(callbackfn: js.Function3[/* value */ T, /* value2 */ T, /* set */ Set[T], Unit], thisArg: Any): Unit = js.native
       
       def has(value: T): Boolean = js.native
       

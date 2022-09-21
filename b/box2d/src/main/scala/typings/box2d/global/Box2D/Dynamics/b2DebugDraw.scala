@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructor.
   **/
-class b2DebugDraw ()
+open class b2DebugDraw ()
   extends StObject
      with typings.box2d.Box2D.Dynamics.b2DebugDraw {
   

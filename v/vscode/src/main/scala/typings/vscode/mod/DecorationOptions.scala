@@ -9,7 +9,7 @@ trait DecorationOptions extends StObject {
   /**
     * A message that should be rendered when hovering over the decoration.
     */
-  var hoverMessage: js.UndefOr[MarkedString | js.Array[MarkedString]] = js.undefined
+  var hoverMessage: js.UndefOr[MarkdownString | MarkedString | (js.Array[MarkdownString | MarkedString])] = js.undefined
   
   /**
     * Range to which this decoration is applied. The range must not be empty.
@@ -31,11 +31,11 @@ object DecorationOptions {
   
   extension [Self <: DecorationOptions](x: Self) {
     
-    inline def setHoverMessage(value: MarkedString | js.Array[MarkedString]): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
+    inline def setHoverMessage(value: MarkdownString | MarkedString | (js.Array[MarkdownString | MarkedString])): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
     
     inline def setHoverMessageUndefined: Self = StObject.set(x, "hoverMessage", js.undefined)
     
-    inline def setHoverMessageVarargs(value: MarkedString*): Self = StObject.set(x, "hoverMessage", js.Array(value :_*))
+    inline def setHoverMessageVarargs(value: (MarkdownString | MarkedString)*): Self = StObject.set(x, "hoverMessage", js.Array(value*))
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

@@ -29,6 +29,6 @@ object PlayerScoreResetAllResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: PlayerScoreResetResponse*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: PlayerScoreResetResponse*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

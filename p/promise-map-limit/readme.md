@@ -10,10 +10,10 @@ Map an array n items at a time with promises
 | ------------------ | :-------------: |
 | Full name          | promise-map-limit |
 | Keywords           | promise, limit, limited, concurrency, throttle, rate, batch, ratelimit, queue, async, await, promises |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 24651 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4729.333333333333 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/dbrockman/promise-map-limit#readme)

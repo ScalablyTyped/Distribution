@@ -78,11 +78,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def countries(query: js.Any): js.Array[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("countries")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Country]]
+    inline def countries(query: Any): js.Array[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("countries")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Country]]
     
-    inline def currencies(query: js.Any): js.Array[Currency] = ^.asInstanceOf[js.Dynamic].applyDynamic("currencies")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Currency]]
+    inline def currencies(query: Any): js.Array[Currency] = ^.asInstanceOf[js.Dynamic].applyDynamic("currencies")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Currency]]
     
-    inline def languages(query: js.Any): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
+    inline def languages(query: Any): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
   }
   
   object regions {
@@ -199,13 +199,13 @@ object mod {
       
       inline def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
     }
   }
   
@@ -254,11 +254,11 @@ object mod {
       
       inline def setCountryCallingCodes(value: js.Array[String]): Self = StObject.set(x, "countryCallingCodes", value.asInstanceOf[js.Any])
       
-      inline def setCountryCallingCodesVarargs(value: String*): Self = StObject.set(x, "countryCallingCodes", js.Array(value :_*))
+      inline def setCountryCallingCodesVarargs(value: String*): Self = StObject.set(x, "countryCallingCodes", js.Array(value*))
       
       inline def setCurrencies(value: js.Array[String]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
       
-      inline def setCurrenciesVarargs(value: String*): Self = StObject.set(x, "currencies", js.Array(value :_*))
+      inline def setCurrenciesVarargs(value: String*): Self = StObject.set(x, "currencies", js.Array(value*))
       
       inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
@@ -266,7 +266,7 @@ object mod {
       
       inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -353,7 +353,7 @@ object mod {
       
       inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

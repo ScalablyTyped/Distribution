@@ -69,7 +69,7 @@ object internals {
   
   trait ScheduledItem[TTime] extends StObject {
     
-    def action(scheduler: IScheduler, state: js.Any): IDisposable
+    def action(scheduler: IScheduler, state: Any): IDisposable
     
     def compareTo(other: ScheduledItem[TTime]): Double
     
@@ -92,7 +92,7 @@ object internals {
   object ScheduledItem {
     
     inline def apply[TTime](
-      action: (IScheduler, js.Any) => IDisposable,
+      action: (IScheduler, Any) => IDisposable,
       compareTo: ScheduledItem[TTime] => Double,
       comparer: (TTime, TTime) => Double,
       disposable: SingleAssignmentDisposable,
@@ -109,7 +109,7 @@ object internals {
     
     extension [Self <: ScheduledItem[?], TTime](x: Self & ScheduledItem[TTime]) {
       
-      inline def setAction(value: (IScheduler, js.Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
+      inline def setAction(value: (IScheduler, Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       
       inline def setCompareTo(value: ScheduledItem[TTime] => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
       

@@ -18,7 +18,7 @@ trait IRestProxy
   /** [Method] Returns the value of actionMethods
     * @returns Object
     */
-  var getActionMethods: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getActionMethods: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of appendId
     * @returns Boolean
@@ -33,7 +33,7 @@ trait IRestProxy
   /** [Method] Sets the value of actionMethods
     * @param actionMethods Object The new value.
     */
-  var setActionMethods: js.UndefOr[js.Function1[/* actionMethods */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setActionMethods: js.UndefOr[js.Function1[/* actionMethods */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of appendId
     * @param appendId Boolean The new value.
@@ -62,7 +62,7 @@ object IRestProxy {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setGetActionMethods(value: () => js.Any): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
+    inline def setGetActionMethods(value: () => Any): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
     
     inline def setGetActionMethodsUndefined: Self = StObject.set(x, "getActionMethods", js.undefined)
     
@@ -74,7 +74,7 @@ object IRestProxy {
     
     inline def setGetFormatUndefined: Self = StObject.set(x, "getFormat", js.undefined)
     
-    inline def setSetActionMethods(value: /* actionMethods */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActionMethods", js.Any.fromFunction1(value))
+    inline def setSetActionMethods(value: /* actionMethods */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setActionMethods", js.Any.fromFunction1(value))
     
     inline def setSetActionMethodsUndefined: Self = StObject.set(x, "setActionMethods", js.undefined)
     

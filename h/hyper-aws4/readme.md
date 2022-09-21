@@ -10,10 +10,10 @@ AWS Signature Version 4 Signing Library for Hyper
 | ------------------ | :-------------: |
 | Full name          | hyper-aws4 |
 | Keywords           | hyper, aws4 |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 4417 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 110.33333333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/Tim-Zhang/hyper-aws4#readme)

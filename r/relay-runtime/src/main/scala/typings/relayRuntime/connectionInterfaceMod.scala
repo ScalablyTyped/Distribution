@@ -21,22 +21,22 @@ object connectionInterfaceMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in string ]: unknown} */ trait EdgeRecord extends StObject {
     
-    var cursor: js.Any
+    var cursor: Any
     
-    var node: Record[DataID, js.Any]
+    var node: Record[DataID, Any]
   }
   object EdgeRecord {
     
-    inline def apply(cursor: js.Any, node: Record[DataID, js.Any]): EdgeRecord = {
+    inline def apply(cursor: Any, node: Record[DataID, Any]): EdgeRecord = {
       val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeRecord]
     }
     
     extension [Self <: EdgeRecord](x: Self) {
       
-      inline def setCursor(value: js.Any): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: Any): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: Record[DataID, js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Record[DataID, Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   

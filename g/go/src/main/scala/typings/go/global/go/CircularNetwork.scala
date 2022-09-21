@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty network.
   */
-class CircularNetwork ()
+open class CircularNetwork ()
   extends typings.go.mod.CircularNetwork

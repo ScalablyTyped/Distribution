@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.TypeScriptCompiler")
 @js.native
-class TypeScriptCompiler ()
+open class TypeScriptCompiler ()
   extends StObject
      with typings.typescriptServices.TypeScript.TypeScriptCompiler {
   def this(logger: ILogger) = this()
@@ -27,7 +27,7 @@ object TypeScriptCompiler {
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFullDiagnosticText")(diagnostic.asInstanceOf[js.Any], resolvePath.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  inline def getLocationText(location: js.Any, resolvePath: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationText")(location.asInstanceOf[js.Any], resolvePath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getLocationText(location: Any, resolvePath: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocationText")(location.asInstanceOf[js.Any], resolvePath.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
   inline def mapToDTSFileName(fileName: String, wholeFileNameReplaced: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mapToDTSFileName")(fileName.asInstanceOf[js.Any], wholeFileNameReplaced.asInstanceOf[js.Any])).asInstanceOf[String]

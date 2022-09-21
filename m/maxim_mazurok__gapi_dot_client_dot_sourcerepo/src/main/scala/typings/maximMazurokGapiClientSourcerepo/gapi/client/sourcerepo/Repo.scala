@@ -17,7 +17,7 @@ trait Repo extends StObject {
   var pubsubConfigs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
-    */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.Repo & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.Repo & TopLevel[Any]
   ] = js.undefined
   
   /** The disk usage of the repo, in bytes. Read-only field. Size is only returned by GetRepo. */
@@ -46,7 +46,7 @@ object Repo {
     inline def setPubsubConfigs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
-      */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.Repo & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.Repo & TopLevel[Any]
     ): Self = StObject.set(x, "pubsubConfigs", value.asInstanceOf[js.Any])
     
     inline def setPubsubConfigsUndefined: Self = StObject.set(x, "pubsubConfigs", js.undefined)

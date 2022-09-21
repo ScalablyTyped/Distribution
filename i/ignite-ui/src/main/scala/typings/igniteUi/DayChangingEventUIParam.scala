@@ -9,17 +9,17 @@ trait DayChangingEventUIParam extends StObject {
   /**
     * Gets a reference to the currently selected date.
     */
-  var currentSelectedDate: js.UndefOr[js.Any] = js.undefined
+  var currentSelectedDate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to newly selected date.
     */
-  var newSelectedDate: js.UndefOr[js.Any] = js.undefined
+  var newSelectedDate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object DayChangingEventUIParam {
   
@@ -30,15 +30,15 @@ object DayChangingEventUIParam {
   
   extension [Self <: DayChangingEventUIParam](x: Self) {
     
-    inline def setCurrentSelectedDate(value: js.Any): Self = StObject.set(x, "currentSelectedDate", value.asInstanceOf[js.Any])
+    inline def setCurrentSelectedDate(value: Any): Self = StObject.set(x, "currentSelectedDate", value.asInstanceOf[js.Any])
     
     inline def setCurrentSelectedDateUndefined: Self = StObject.set(x, "currentSelectedDate", js.undefined)
     
-    inline def setNewSelectedDate(value: js.Any): Self = StObject.set(x, "newSelectedDate", value.asInstanceOf[js.Any])
+    inline def setNewSelectedDate(value: Any): Self = StObject.set(x, "newSelectedDate", value.asInstanceOf[js.Any])
     
     inline def setNewSelectedDateUndefined: Self = StObject.set(x, "newSelectedDate", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

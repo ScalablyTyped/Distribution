@@ -58,17 +58,17 @@ object baseCardTypesMod {
     /**
       * Callback upon focus or mouse enter event
       */
-    var onEnter: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onEnter: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * Callback upon blur or mouse leave event
       */
-    var onLeave: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onLeave: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       *  Item to be returned with onRender functions
       */
-    var renderData: js.UndefOr[js.Any] = js.undefined
+    var renderData: js.UndefOr[Any] = js.undefined
     
     /**
       * Custom styles for this component
@@ -78,7 +78,7 @@ object baseCardTypesMod {
           TStyleProps, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
-      */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[js.Any]
+      */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[Any]
         ]
       ] = js.undefined
     
@@ -132,15 +132,15 @@ object baseCardTypesMod {
       
       inline def setGapSpaceUndefined: Self = StObject.set(x, "gapSpace", js.undefined)
       
-      inline def setOnEnter(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      inline def setOnEnter(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnLeave(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
+      inline def setOnLeave(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onLeave", js.Any.fromFunction1(value))
       
       inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
       
-      inline def setRenderData(value: js.Any): Self = StObject.set(x, "renderData", value.asInstanceOf[js.Any])
+      inline def setRenderData(value: Any): Self = StObject.set(x, "renderData", value.asInstanceOf[js.Any])
       
       inline def setRenderDataUndefined: Self = StObject.set(x, "renderData", js.undefined)
       
@@ -149,7 +149,7 @@ object baseCardTypesMod {
               TStyleProps, 
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
-        */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[js.Any]
+        */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[Any]
             ]
       ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -157,7 +157,7 @@ object baseCardTypesMod {
         value: TStyleProps => DeepPartial[
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
-        */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[js.Any]
+        */ typings.officeUiFabricReact.officeUiFabricReactStrings.IBaseCardProps & TopLevel[Any]
             ]
       ): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       

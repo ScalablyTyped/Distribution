@@ -19,7 +19,7 @@ trait ReportInstanceStatusRequest extends StObject {
   /**
     * The time at which the reported instance health state ended.
     */
-  var EndTime: js.UndefOr[DateTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The instances.
@@ -34,7 +34,7 @@ trait ReportInstanceStatusRequest extends StObject {
   /**
     * The time at which the reported instance health state began.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of all instances listed.
@@ -58,19 +58,19 @@ object ReportInstanceStatusRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     inline def setInstances(value: InstanceIdStringList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    inline def setInstancesVarargs(value: InstanceId*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: InstanceId*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setReasonCodes(value: ReasonCodesList): Self = StObject.set(x, "ReasonCodes", value.asInstanceOf[js.Any])
     
-    inline def setReasonCodesVarargs(value: ReportInstanceReasonCodes*): Self = StObject.set(x, "ReasonCodes", js.Array(value :_*))
+    inline def setReasonCodesVarargs(value: ReportInstanceReasonCodes*): Self = StObject.set(x, "ReasonCodes", js.Array(value*))
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

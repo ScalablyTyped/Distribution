@@ -28,15 +28,15 @@ object setterMod {
     /* next */ String, 
     /* nextProps */ js.UndefOr[Props], 
     /* propagate */ js.UndefOr[Boolean], 
-    js.Promise[js.Array[js.Any]]
+    js.Promise[js.Array[Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(setterProps.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* next */ String, 
     /* nextProps */ js.UndefOr[Props], 
     /* propagate */ js.UndefOr[Boolean], 
-    js.Promise[js.Array[js.Any]]
+    js.Promise[js.Array[Any]]
   ]]
   
-  inline def resolveProp(target: js.Any, props: Props): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProp")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resolveProp(target: Any, props: Props): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProp")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait SetterFactoryProps[V, A, C, P, TD] extends StObject {
     
@@ -48,7 +48,7 @@ object setterMod {
     @JSName("convertTransitionDefinition")
     var convertTransitionDefinition_Original: ConvertTransitionDefinition[V, A, TD]
     
-    var forceRender: js.UndefOr[js.Function1[/* props */ Props, js.Any]] = js.undefined
+    var forceRender: js.UndefOr[js.Function1[/* props */ Props, Any]] = js.undefined
     
     def getInstantTransition(value: V, props: Props): A
     @JSName("getInstantTransition")
@@ -62,26 +62,26 @@ object setterMod {
     
     var poses: PoseMap[A, TD]
     
-    def resolveTarget(value: V, target: js.Any): js.Any
+    def resolveTarget(value: V, target: Any): Any
     @JSName("resolveTarget")
     var resolveTarget_Original: ResolveTarget[V]
     
-    def setValue(v: V, value: js.Any): Unit
+    def setValue(v: V, value: Any): Unit
     
-    def setValueNative(key: String, value: js.Any, props: Props): Unit
+    def setValueNative(key: String, value: Any, props: Props): Unit
     @JSName("setValueNative")
     var setValueNative_Original: SetValueNative
     
     @JSName("setValue")
     var setValue_Original: SetValue[V]
     
-    def startAction(value: V, action: A, complete: js.Function0[js.Any]): C
+    def startAction(value: V, action: A, complete: js.Function0[Any]): C
     @JSName("startAction")
     var startAction_Original: StartAction[V, A, C]
     
     var state: PoserState[V, A, C, P]
     
-    def stopAction(controls: C): js.Any
+    def stopAction(controls: C): Any
     @JSName("stopAction")
     var stopAction_Original: StopAction[C]
     
@@ -95,12 +95,12 @@ object setterMod {
       getInstantTransition: (V, /* props */ Props) => A,
       getTransitionProps: (V, /* target */ Double, /* props */ Props) => Props,
       poses: PoseMap[A, TD],
-      resolveTarget: (V, /* target */ js.Any) => js.Any,
-      setValue: (V, /* value */ js.Any) => Unit,
-      setValueNative: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit,
-      startAction: (V, A, /* complete */ js.Function0[js.Any]) => C,
+      resolveTarget: (V, /* target */ Any) => Any,
+      setValue: (V, /* value */ Any) => Unit,
+      setValueNative: (/* key */ String, /* value */ Any, /* props */ Props) => Unit,
+      startAction: (V, A, /* complete */ js.Function0[Any]) => C,
       state: PoserState[V, A, C, P],
-      stopAction: C => js.Any
+      stopAction: C => Any
     ): SetterFactoryProps[V, A, C, P, TD] = {
       val __obj = js.Dynamic.literal(addActionDelay = js.Any.fromFunction2(addActionDelay), convertTransitionDefinition = js.Any.fromFunction3(convertTransitionDefinition), getInstantTransition = js.Any.fromFunction2(getInstantTransition), getTransitionProps = js.Any.fromFunction3(getTransitionProps), poses = poses.asInstanceOf[js.Any], resolveTarget = js.Any.fromFunction2(resolveTarget), setValue = js.Any.fromFunction2(setValue), setValueNative = js.Any.fromFunction3(setValueNative), startAction = js.Any.fromFunction3(startAction), state = state.asInstanceOf[js.Any], stopAction = js.Any.fromFunction1(stopAction))
       __obj.asInstanceOf[SetterFactoryProps[V, A, C, P, TD]]
@@ -112,7 +112,7 @@ object setterMod {
       
       inline def setConvertTransitionDefinition(value: (V, /* transitionDef */ TD | A, /* props */ Props) => A): Self = StObject.set(x, "convertTransitionDefinition", js.Any.fromFunction3(value))
       
-      inline def setForceRender(value: /* props */ Props => js.Any): Self = StObject.set(x, "forceRender", js.Any.fromFunction1(value))
+      inline def setForceRender(value: /* props */ Props => Any): Self = StObject.set(x, "forceRender", js.Any.fromFunction1(value))
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
@@ -124,21 +124,21 @@ object setterMod {
       
       inline def setPosePriorityUndefined: Self = StObject.set(x, "posePriority", js.undefined)
       
-      inline def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value :_*))
+      inline def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value*))
       
       inline def setPoses(value: PoseMap[A, TD]): Self = StObject.set(x, "poses", value.asInstanceOf[js.Any])
       
-      inline def setResolveTarget(value: (V, /* target */ js.Any) => js.Any): Self = StObject.set(x, "resolveTarget", js.Any.fromFunction2(value))
+      inline def setResolveTarget(value: (V, /* target */ Any) => Any): Self = StObject.set(x, "resolveTarget", js.Any.fromFunction2(value))
       
-      inline def setSetValue(value: (V, /* value */ js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+      inline def setSetValue(value: (V, /* value */ Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       
-      inline def setSetValueNative(value: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
+      inline def setSetValueNative(value: (/* key */ String, /* value */ Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
       
-      inline def setStartAction(value: (V, A, /* complete */ js.Function0[js.Any]) => C): Self = StObject.set(x, "startAction", js.Any.fromFunction3(value))
+      inline def setStartAction(value: (V, A, /* complete */ js.Function0[Any]) => C): Self = StObject.set(x, "startAction", js.Any.fromFunction3(value))
       
       inline def setState(value: PoserState[V, A, C, P]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      inline def setStopAction(value: C => js.Any): Self = StObject.set(x, "stopAction", js.Any.fromFunction1(value))
+      inline def setStopAction(value: C => Any): Self = StObject.set(x, "stopAction", js.Any.fromFunction1(value))
       
       inline def setTransformPose(
         value: (/* pose */ Pose[A, TD], /* key */ String, /* state */ PoserState[V, A, C, P]) => Pose[A, TD]

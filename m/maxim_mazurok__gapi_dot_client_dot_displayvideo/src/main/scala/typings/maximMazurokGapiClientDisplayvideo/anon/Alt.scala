@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Campaign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +13,20 @@ trait Alt extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the advertiser the campaign belongs to. */
+  /** Required. The ID of the advertiser the campaign belongs to. */
   var advertiserId: String
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /** Required. An identifier unique to the targeting type in this campaign that identifies the assigned targeting option being requested. */
+  var assignedTargetingOptionId: String
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
+  
+  /** Required. The ID of the campaign the assigned targeting option belongs to. */
+  var campaignId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -38,8 +43,14 @@ trait Alt extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: Campaign
+  /**
+    * Required. Identifies the type of this assigned targeting option. Supported targeting types: * `TARGETING_TYPE_AGE_RANGE` * `TARGETING_TYPE_AUTHORIZED_SELLER_STATUS` *
+    * `TARGETING_TYPE_CONTENT_INSTREAM_POSITION` * `TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION` * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION` * `TARGETING_TYPE_ENVIRONMENT` *
+    * `TARGETING_TYPE_EXCHANGE` * `TARGETING_TYPE_GENDER` * `TARGETING_TYPE_GEO_REGION` * `TARGETING_TYPE_HOUSEHOLD_INCOME` * `TARGETING_TYPE_INVENTORY_SOURCE` *
+    * `TARGETING_TYPE_INVENTORY_SOURCE_GROUP` * `TARGETING_TYPE_LANGUAGE` * `TARGETING_TYPE_ON_SCREEN_POSITION` * `TARGETING_TYPE_PARENTAL_STATUS` *
+    * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` * `TARGETING_TYPE_SUB_EXCHANGE` * `TARGETING_TYPE_THIRD_PARTY_VERIFIER` * `TARGETING_TYPE_VIEWABILITY`
+    */
+  var targetingType: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +60,8 @@ trait Alt extends StObject {
 }
 object Alt {
   
-  inline def apply(advertiserId: String, resource: Campaign): Alt = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, assignedTargetingOptionId: String, campaignId: String, targetingType: String): Alt = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], assignedTargetingOptionId = assignedTargetingOptionId.asInstanceOf[js.Any], campaignId = campaignId.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alt]
   }
   
@@ -70,9 +81,13 @@ object Alt {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
+    inline def setAssignedTargetingOptionId(value: String): Self = StObject.set(x, "assignedTargetingOptionId", value.asInstanceOf[js.Any])
+    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -94,7 +109,7 @@ object Alt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Campaign): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

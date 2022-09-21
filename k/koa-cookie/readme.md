@@ -10,10 +10,10 @@ Koa cookie parser middleware
 | ------------------ | :-------------: |
 | Full name          | koa-cookie |
 | Keywords           | koa, cookie, middleware, parser, cookie-parser, koa-router |
-| # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 413552 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 34092.666666666664 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/varunpal/koa-cookie#readme)

@@ -9,26 +9,26 @@ trait Conversion extends StObject {
   /** Whether this particular request may come from a user under the age of 13, under COPPA compliance. */
   var childDirectedTreatment: js.UndefOr[Boolean] = js.undefined
   
-  /** Custom floodlight variables. */
+  /** Custom floodlight variables. This field may only be used when calling batchinsert; it is not supported by batchupdate. */
   var customVariables: js.UndefOr[js.Array[CustomFloodlightVariable]] = js.undefined
   
   /**
-    * The display click ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, mobileDeviceId and gclid. This or encryptedUserId or
-    * encryptedUserIdCandidates[] or matchId or mobileDeviceId or gclid is a required field.
+    * The display click ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, mobileDeviceId, gclid, and impressionId. This or encryptedUserId
+    * or encryptedUserIdCandidates[] or matchId or mobileDeviceId or gclid or impressionId is a required field.
     */
   var dclid: js.UndefOr[String] = js.undefined
   
   /**
     * The alphanumeric encrypted user ID. When set, encryptionInfo should also be specified. This field is mutually exclusive with encryptedUserIdCandidates[], matchId, mobileDeviceId,
-    * gclid and dclid. This or encryptedUserIdCandidates[] or matchId or mobileDeviceId or gclid or dclid is a required field.
+    * gclid, dclid, and impressionId. This or encryptedUserIdCandidates[] or matchId or mobileDeviceId or gclid or dclid or impressionId is a required field.
     */
   var encryptedUserId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the alphanumeric encrypted user IDs. Any user ID with exposure prior to the conversion timestamp will be used in the inserted conversion. If no such user ID is found then
     * the conversion will be rejected with INVALID_ARGUMENT error. When set, encryptionInfo should also be specified. This field may only be used when calling batchinsert; it is not
-    * supported by batchupdate. This field is mutually exclusive with encryptedUserId, matchId, mobileDeviceId, gclid and dclid. This or encryptedUserId or matchId or mobileDeviceId or
-    * gclid or dclid is a required field.
+    * supported by batchupdate. This field is mutually exclusive with encryptedUserId, matchId, mobileDeviceId, gclid dclid, and impressionId. This or encryptedUserId or matchId or
+    * mobileDeviceId or gclid or dclid or impressionId is a required field.
     */
   var encryptedUserIdCandidates: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -39,10 +39,13 @@ trait Conversion extends StObject {
   var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Google click ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, mobileDeviceId and dclid. This or encryptedUserId or
-    * encryptedUserIdCandidates[] or matchId or mobileDeviceId or dclid is a required field.
+    * The Google click ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, mobileDeviceId, dclid, and impressionId. This or encryptedUserId or
+    * encryptedUserIdCandidates[] or matchId or mobileDeviceId or dclid or impressionId is a required field.
     */
   var gclid: js.UndefOr[String] = js.undefined
+  
+  /** The impression ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, mobileDeviceId, and gclid. One of these identifiers must be set. */
+  var impressionId: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#conversion". */
   var kind: js.UndefOr[String] = js.undefined
@@ -52,14 +55,14 @@ trait Conversion extends StObject {
   
   /**
     * The match ID field. A match ID is your own first-party identifier that has been synced with Google using the match ID feature in Floodlight. This field is mutually exclusive with
-    * encryptedUserId, encryptedUserIdCandidates[],mobileDeviceId, gclid and dclid. This or encryptedUserId or encryptedUserIdCandidates[] or mobileDeviceId or gclid or dclid is a
-    * required field.
+    * encryptedUserId, encryptedUserIdCandidates[],mobileDeviceId, gclid, dclid, and impressionId. This or encryptedUserId orencryptedUserIdCandidates[] or mobileDeviceId or gclid or
+    * dclid or impressionIdis a required field.
     */
   var matchId: js.UndefOr[String] = js.undefined
   
   /**
-    * The mobile device ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, gclid and dclid. This or encryptedUserId or
-    * encryptedUserIdCandidates[] or matchId or gclid or dclid is a required field.
+    * The mobile device ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, gclid, dclid, and impressionId. This or encryptedUserId or
+    * encryptedUserIdCandidates[] or matchId or gclid or dclid or impressionId is a required field.
     */
   var mobileDeviceId: js.UndefOr[String] = js.undefined
   
@@ -101,7 +104,7 @@ object Conversion {
     
     inline def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
     
-    inline def setCustomVariablesVarargs(value: CustomFloodlightVariable*): Self = StObject.set(x, "customVariables", js.Array(value :_*))
+    inline def setCustomVariablesVarargs(value: CustomFloodlightVariable*): Self = StObject.set(x, "customVariables", js.Array(value*))
     
     inline def setDclid(value: String): Self = StObject.set(x, "dclid", value.asInstanceOf[js.Any])
     
@@ -113,7 +116,7 @@ object Conversion {
     
     inline def setEncryptedUserIdCandidatesUndefined: Self = StObject.set(x, "encryptedUserIdCandidates", js.undefined)
     
-    inline def setEncryptedUserIdCandidatesVarargs(value: String*): Self = StObject.set(x, "encryptedUserIdCandidates", js.Array(value :_*))
+    inline def setEncryptedUserIdCandidatesVarargs(value: String*): Self = StObject.set(x, "encryptedUserIdCandidates", js.Array(value*))
     
     inline def setEncryptedUserIdUndefined: Self = StObject.set(x, "encryptedUserId", js.undefined)
     
@@ -128,6 +131,10 @@ object Conversion {
     inline def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
     
     inline def setGclidUndefined: Self = StObject.set(x, "gclid", js.undefined)
+    
+    inline def setImpressionId(value: String): Self = StObject.set(x, "impressionId", value.asInstanceOf[js.Any])
+    
+    inline def setImpressionIdUndefined: Self = StObject.set(x, "impressionId", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

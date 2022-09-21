@@ -10,7 +10,7 @@ trait Reviewer extends StObject {
   
   val Creator: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Visible: Boolean
   
@@ -22,7 +22,7 @@ object Reviewer {
   inline def apply(
     Application: Application,
     Creator: Double,
-    Parent: js.Any,
+    Parent: Any,
     Visible: Boolean,
     WordDotReviewer_typekey: Reviewer
   ): Reviewer = {
@@ -37,7 +37,7 @@ object Reviewer {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     

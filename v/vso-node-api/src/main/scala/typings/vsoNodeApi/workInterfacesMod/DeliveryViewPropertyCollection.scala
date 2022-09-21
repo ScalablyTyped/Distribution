@@ -46,14 +46,14 @@ object DeliveryViewPropertyCollection {
     
     inline def setCriteria(value: js.Array[FilterClause]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    inline def setCriteriaVarargs(value: FilterClause*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: FilterClause*): Self = StObject.set(x, "criteria", js.Array(value*))
     
     inline def setMarkers(value: js.Array[Marker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    inline def setMarkersVarargs(value: Marker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: Marker*): Self = StObject.set(x, "markers", js.Array(value*))
     
     inline def setTeamBacklogMappings(value: js.Array[TeamBacklogMapping]): Self = StObject.set(x, "teamBacklogMappings", value.asInstanceOf[js.Any])
     
-    inline def setTeamBacklogMappingsVarargs(value: TeamBacklogMapping*): Self = StObject.set(x, "teamBacklogMappings", js.Array(value :_*))
+    inline def setTeamBacklogMappingsVarargs(value: TeamBacklogMapping*): Self = StObject.set(x, "teamBacklogMappings", js.Array(value*))
   }
 }

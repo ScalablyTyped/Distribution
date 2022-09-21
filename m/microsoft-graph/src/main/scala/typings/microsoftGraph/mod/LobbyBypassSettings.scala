@@ -9,10 +9,7 @@ trait LobbyBypassSettings extends StObject {
   // Specifies whether or not to always let dial-in callers bypass the lobby. Optional.
   var isDialInBypassEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  /**
-    * Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Possible values
-    * are listed in the following table. Optional.
-    */
+  // Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Optional.
   var scope: js.UndefOr[NullableOption[LobbyBypassScope]] = js.undefined
 }
 object LobbyBypassSettings {

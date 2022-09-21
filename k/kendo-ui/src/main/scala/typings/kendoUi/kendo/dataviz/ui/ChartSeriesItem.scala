@@ -28,7 +28,7 @@ trait ChartSeriesItem extends StObject {
   
   var dashType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var downColor: js.UndefOr[String | js.Function] = js.undefined
   
@@ -219,7 +219,7 @@ object ChartSeriesItem {
     
     inline def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

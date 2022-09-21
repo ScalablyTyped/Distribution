@@ -27,12 +27,12 @@ trait IList
   /** [Method] Returns the value of icon
     * @returns Object
     */
-  var getIcon: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getIcon: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of indexBar
     * @returns Boolean/Object
     */
-  var getIndexBar: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getIndexBar: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of infinite
     * @returns Boolean
@@ -52,7 +52,7 @@ trait IList
   /** [Method] Returns the value of onItemDisclosure
     * @returns Boolean/Function/Object
     */
-  var getOnItemDisclosure: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getOnItemDisclosure: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of pinHeaders
     * @returns Boolean
@@ -98,7 +98,7 @@ trait IList
   var grouped: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var indexBar: js.UndefOr[js.Any] = js.undefined
+  var indexBar: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var infinite: js.UndefOr[Boolean] = js.undefined
@@ -107,7 +107,7 @@ trait IList
   var itemHeight: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean/Function/Object) */
-  var onItemDisclosure: js.UndefOr[js.Any] = js.undefined
+  var onItemDisclosure: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var pinHeaders: js.UndefOr[Boolean] = js.undefined
@@ -125,9 +125,9 @@ trait IList
     */
   var scrollToRecord: js.UndefOr[
     js.Function3[
-      /* record */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* overscroll */ js.UndefOr[js.Any], 
+      /* record */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
+      /* overscroll */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -145,12 +145,12 @@ trait IList
   /** [Method] Sets the value of icon
     * @param icon Object The new value.
     */
-  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of indexBar
     * @param indexBar Boolean/Object The new value.
     */
-  var setIndexBar: js.UndefOr[js.Function1[/* indexBar */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setIndexBar: js.UndefOr[js.Function1[/* indexBar */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of infinite
     * @param infinite Boolean The new value.
@@ -170,7 +170,7 @@ trait IList
   /** [Method] Sets the value of onItemDisclosure
     * @param onItemDisclosure Boolean/Function/Object The new value.
     */
-  var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of pinHeaders
     * @param pinHeaders Boolean The new value.
@@ -241,11 +241,11 @@ object IList {
     
     inline def setGetGroupedUndefined: Self = StObject.set(x, "getGrouped", js.undefined)
     
-    inline def setGetIcon(value: () => js.Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
+    inline def setGetIcon(value: () => Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
     inline def setGetIconUndefined: Self = StObject.set(x, "getIcon", js.undefined)
     
-    inline def setGetIndexBar(value: () => js.Any): Self = StObject.set(x, "getIndexBar", js.Any.fromFunction0(value))
+    inline def setGetIndexBar(value: () => Any): Self = StObject.set(x, "getIndexBar", js.Any.fromFunction0(value))
     
     inline def setGetIndexBarUndefined: Self = StObject.set(x, "getIndexBar", js.undefined)
     
@@ -261,7 +261,7 @@ object IList {
     
     inline def setGetMinimumBufferDistanceUndefined: Self = StObject.set(x, "getMinimumBufferDistance", js.undefined)
     
-    inline def setGetOnItemDisclosure(value: () => js.Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
+    inline def setGetOnItemDisclosure(value: () => Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
     
     inline def setGetOnItemDisclosureUndefined: Self = StObject.set(x, "getOnItemDisclosure", js.undefined)
     
@@ -301,7 +301,7 @@ object IList {
     
     inline def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
     
-    inline def setIndexBar(value: js.Any): Self = StObject.set(x, "indexBar", value.asInstanceOf[js.Any])
+    inline def setIndexBar(value: Any): Self = StObject.set(x, "indexBar", value.asInstanceOf[js.Any])
     
     inline def setIndexBarUndefined: Self = StObject.set(x, "indexBar", js.undefined)
     
@@ -313,7 +313,7 @@ object IList {
     
     inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
-    inline def setOnItemDisclosure(value: js.Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
+    inline def setOnItemDisclosure(value: Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
     
     inline def setOnItemDisclosureUndefined: Self = StObject.set(x, "onItemDisclosure", js.undefined)
     
@@ -330,7 +330,7 @@ object IList {
     inline def setRefreshHeightOnUpdateUndefined: Self = StObject.set(x, "refreshHeightOnUpdate", js.undefined)
     
     inline def setScrollToRecord(
-      value: (/* record */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* overscroll */ js.UndefOr[js.Any]) => Unit
+      value: (/* record */ js.UndefOr[Any], /* animate */ js.UndefOr[Any], /* overscroll */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "scrollToRecord", js.Any.fromFunction3(value))
     
     inline def setScrollToRecordUndefined: Self = StObject.set(x, "scrollToRecord", js.undefined)
@@ -343,11 +343,11 @@ object IList {
     
     inline def setSetGroupedUndefined: Self = StObject.set(x, "setGrouped", js.undefined)
     
-    inline def setSetIcon(value: /* icon */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: /* icon */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
     inline def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
     
-    inline def setSetIndexBar(value: /* indexBar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIndexBar", js.Any.fromFunction1(value))
+    inline def setSetIndexBar(value: /* indexBar */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setIndexBar", js.Any.fromFunction1(value))
     
     inline def setSetIndexBarUndefined: Self = StObject.set(x, "setIndexBar", js.undefined)
     
@@ -363,7 +363,7 @@ object IList {
     
     inline def setSetMinimumBufferDistanceUndefined: Self = StObject.set(x, "setMinimumBufferDistance", js.undefined)
     
-    inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
+    inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
     
     inline def setSetOnItemDisclosureUndefined: Self = StObject.set(x, "setOnItemDisclosure", js.undefined)
     

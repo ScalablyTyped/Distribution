@@ -12,6 +12,8 @@ trait SFCParseOptions extends StObject {
   
   var filename: js.UndefOr[String] = js.undefined
   
+  var ignoreEmpty: js.UndefOr[Boolean] = js.undefined
+  
   var pad: js.UndefOr[Boolean | line | space] = js.undefined
   
   var sourceMap: js.UndefOr[Boolean] = js.undefined
@@ -34,6 +36,10 @@ object SFCParseOptions {
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    
+    inline def setIgnoreEmpty(value: Boolean): Self = StObject.set(x, "ignoreEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreEmptyUndefined: Self = StObject.set(x, "ignoreEmpty", js.undefined)
     
     inline def setPad(value: Boolean | line | space): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     

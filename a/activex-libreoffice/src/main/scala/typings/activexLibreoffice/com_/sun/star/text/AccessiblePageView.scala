@@ -65,7 +65,7 @@ object AccessiblePageView {
     getLocationOnScreen: () => Point,
     getSize: () => Size,
     grabFocus: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAccessibleEventListener: XAccessibleEventListener => Unit
   ): AccessiblePageView = {

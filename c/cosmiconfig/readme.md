@@ -1,7 +1,7 @@
 
 # Scala.js typings for cosmiconfig
 
-Typings are for version 7.0.0
+Typings are for version 7.0.1
 
 ## Library description:
 Find and load configuration from a package.json property, rc file, or CommonJS module
@@ -10,10 +10,10 @@ Find and load configuration from a package.json property, rc file, or CommonJS m
 | ------------------ | :-------------: |
 | Full name          | cosmiconfig |
 | Keywords           | load, configuration, config |
-| # releases         | 6 |
-| # dependents       | 1130 |
-| # downloads        | 936525749 |
-| # stars            | 14 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.62332281E8 |
+| # stars            | 3185.0 |
 
 ## Links
 - [Homepage](https://github.com/davidtheclark/cosmiconfig#readme)

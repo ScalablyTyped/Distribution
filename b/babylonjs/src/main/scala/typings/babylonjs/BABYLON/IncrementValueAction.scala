@@ -9,11 +9,11 @@ trait IncrementValueAction
   extends StObject
      with Action {
   
-  /* private */ var _effectiveTarget: js.Any = js.native
+  /* private */ var _effectiveTarget: Any = js.native
   
-  /* private */ var _property: js.Any = js.native
+  /* private */ var _property: Any = js.native
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
   
   /**
     * The path of the property to increment in the target.
@@ -23,5 +23,5 @@ trait IncrementValueAction
   /**
     * The value we should increment the property by.
     */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

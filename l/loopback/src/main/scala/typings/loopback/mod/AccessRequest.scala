@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "AccessRequest")
 @js.native
-class AccessRequest protected () extends StObject {
+open class AccessRequest protected () extends StObject {
   def this(model: String, property: String, accessType: String, permission: String) = this()
   
   /**

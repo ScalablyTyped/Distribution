@@ -14,6 +14,11 @@ trait DashPackage extends StObject {
   var Encryption: js.UndefOr[DashEncryption] = js.undefined
   
   /**
+    * When includeEncoderConfigurationInSegments is set to true, MediaPackage places your encoder's Sequence Parameter Set (SPS), Picture Parameter Set (PPS), and Video Parameter Set (VPS) metadata in every video segment instead of in the init fragment. This lets you use different SPS/PPS/VPS settings for your assets during content playback.
+    */
+  var IncludeEncoderConfigurationInSegments: js.UndefOr[boolean] = js.undefined
+  
+  /**
     * A list of triggers that controls when the outgoing Dynamic Adaptive Streaming over HTTP (DASH)
   Media Presentation Description (MPD) will be partitioned into multiple periods. If empty, the content will not
   be partitioned into more than one period. If the list contains "ADS", new periods will be created where
@@ -43,17 +48,21 @@ object DashPackage {
     
     inline def setDashManifests(value: listOfDashManifest): Self = StObject.set(x, "DashManifests", value.asInstanceOf[js.Any])
     
-    inline def setDashManifestsVarargs(value: DashManifest*): Self = StObject.set(x, "DashManifests", js.Array(value :_*))
+    inline def setDashManifestsVarargs(value: DashManifest*): Self = StObject.set(x, "DashManifests", js.Array(value*))
     
     inline def setEncryption(value: DashEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
+    inline def setIncludeEncoderConfigurationInSegments(value: boolean): Self = StObject.set(x, "IncludeEncoderConfigurationInSegments", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeEncoderConfigurationInSegmentsUndefined: Self = StObject.set(x, "IncludeEncoderConfigurationInSegments", js.undefined)
+    
     inline def setPeriodTriggers(value: listOfPeriodTriggersElement): Self = StObject.set(x, "PeriodTriggers", value.asInstanceOf[js.Any])
     
     inline def setPeriodTriggersUndefined: Self = StObject.set(x, "PeriodTriggers", js.undefined)
     
-    inline def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = StObject.set(x, "PeriodTriggers", js.Array(value :_*))
+    inline def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = StObject.set(x, "PeriodTriggers", js.Array(value*))
     
     inline def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     

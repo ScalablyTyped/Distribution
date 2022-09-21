@@ -13,10 +13,9 @@ trait SchemaTargetVpnGatewaysScopedList extends StObject {
   var targetVpnGateways: js.UndefOr[js.Array[SchemaTargetVpnGateway]] = js.undefined
   
   /**
-    * [Output Only] Informational warning which replaces the list of addresses
-    * when the list is empty.
+    * [Output Only] Informational warning which replaces the list of addresses when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaTargetVpnGatewaysScopedList {
   
@@ -31,9 +30,11 @@ object SchemaTargetVpnGatewaysScopedList {
     
     inline def setTargetVpnGatewaysUndefined: Self = StObject.set(x, "targetVpnGateways", js.undefined)
     
-    inline def setTargetVpnGatewaysVarargs(value: SchemaTargetVpnGateway*): Self = StObject.set(x, "targetVpnGateways", js.Array(value :_*))
+    inline def setTargetVpnGatewaysVarargs(value: SchemaTargetVpnGateway*): Self = StObject.set(x, "targetVpnGateways", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

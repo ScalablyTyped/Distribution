@@ -57,7 +57,7 @@ object WebTileLayerProperties {
     
     inline def setSubDomainsUndefined: Self = StObject.set(x, "subDomains", js.undefined)
     
-    inline def setSubDomainsVarargs(value: String*): Self = StObject.set(x, "subDomains", js.Array(value :_*))
+    inline def setSubDomainsVarargs(value: String*): Self = StObject.set(x, "subDomains", js.Array(value*))
     
     inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     

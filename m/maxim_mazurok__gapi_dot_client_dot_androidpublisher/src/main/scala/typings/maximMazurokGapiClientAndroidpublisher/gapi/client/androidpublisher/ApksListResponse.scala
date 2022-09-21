@@ -25,7 +25,7 @@ object ApksListResponse {
     
     inline def setApksUndefined: Self = StObject.set(x, "apks", js.undefined)
     
-    inline def setApksVarargs(value: Apk*): Self = StObject.set(x, "apks", js.Array(value :_*))
+    inline def setApksVarargs(value: Apk*): Self = StObject.set(x, "apks", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,7 @@ object Data {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: Key*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Key*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

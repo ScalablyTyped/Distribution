@@ -12,7 +12,7 @@ trait DescribeConnectionAliasesResult extends StObject {
   var ConnectionAliases: js.UndefOr[ConnectionAliasList] = js.undefined
   
   /**
-    * The token to use to retrieve the next set of results, or null if no more results are available.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeConnectionAliasesResult {
     
     inline def setConnectionAliasesUndefined: Self = StObject.set(x, "ConnectionAliases", js.undefined)
     
-    inline def setConnectionAliasesVarargs(value: ConnectionAlias*): Self = StObject.set(x, "ConnectionAliases", js.Array(value :_*))
+    inline def setConnectionAliasesVarargs(value: ConnectionAlias*): Self = StObject.set(x, "ConnectionAliases", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

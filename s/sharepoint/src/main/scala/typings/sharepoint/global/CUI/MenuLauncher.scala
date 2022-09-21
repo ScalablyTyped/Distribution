@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.MenuLauncher")
 @js.native
-class MenuLauncher protected ()
+open class MenuLauncher protected ()
   extends StObject
      with typings.sharepoint.CUI.MenuLauncher {
   def this(
     root: typings.sharepoint.CUI.Root,
     id: String,
     properties: typings.sharepoint.CUI.ControlProperties,
-    menu: js.Any
+    menu: Any
   ) = this()
   
   /* CompleteClass */
-  override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+  override def createComponentForDisplayMode(displayMode: String): Any = js.native
   
   //#region Methods
   /**

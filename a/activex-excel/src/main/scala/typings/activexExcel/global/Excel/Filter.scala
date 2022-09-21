@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Filter")
 @js.native
-/* private */ class Filter ()
+/* private */ open class Filter ()
   extends StObject
      with typings.activexExcel.Excel.Filter {
   
@@ -22,10 +22,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: XlCreator = js.native
   
   /* CompleteClass */
-  override val Criteria1: js.Any = js.native
+  override val Criteria1: Any = js.native
   
   /* CompleteClass */
-  override val Criteria2: js.Any = js.native
+  override val Criteria2: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Excel.Filter_typekey")
@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Operator: XlAutoFilterOperator = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val _Operator: XlAutoFilterOperator = js.native

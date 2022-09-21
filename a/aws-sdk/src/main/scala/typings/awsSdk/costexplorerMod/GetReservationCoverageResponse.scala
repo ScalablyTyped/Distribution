@@ -12,7 +12,7 @@ trait GetReservationCoverageResponse extends StObject {
   var CoveragesByTime: typings.awsSdk.costexplorerMod.CoveragesByTime
   
   /**
-    * The token for the next set of retrievable results. AWS provides the token when the response from a previous call has more results than the maximum page size.
+    * The token for the next set of retrievable results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
     */
   var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
@@ -32,7 +32,7 @@ object GetReservationCoverageResponse {
     
     inline def setCoveragesByTime(value: CoveragesByTime): Self = StObject.set(x, "CoveragesByTime", value.asInstanceOf[js.Any])
     
-    inline def setCoveragesByTimeVarargs(value: CoverageByTime*): Self = StObject.set(x, "CoveragesByTime", js.Array(value :_*))
+    inline def setCoveragesByTimeVarargs(value: CoverageByTime*): Self = StObject.set(x, "CoveragesByTime", js.Array(value*))
     
     inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

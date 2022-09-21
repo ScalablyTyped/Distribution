@@ -22,9 +22,14 @@ trait Cluster extends StObject {
   var clientRequestToken: js.UndefOr[String] = js.undefined
   
   /**
+    * The configuration used to connect to a cluster for registration.
+    */
+  var connectorConfig: js.UndefOr[ConnectorConfigResponse] = js.undefined
+  
+  /**
     * The Unix epoch timestamp in seconds for when the cluster was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The encryption configuration for the cluster.
@@ -37,12 +42,22 @@ trait Cluster extends StObject {
   var endpoint: js.UndefOr[String] = js.undefined
   
   /**
+    * An object representing the health of your local Amazon EKS cluster on an Amazon Web Services Outpost. This object isn't available for clusters on the Amazon Web Services cloud.
+    */
+  var health: js.UndefOr[ClusterHealth] = js.undefined
+  
+  /**
+    * The ID of your local Amazon EKS cluster on an Amazon Web Services Outpost. This property isn't available for an Amazon EKS cluster on the Amazon Web Services cloud.
+    */
+  var id: js.UndefOr[String] = js.undefined
+  
+  /**
     * The identity provider information for the cluster.
     */
   var identity: js.UndefOr[Identity] = js.undefined
   
   /**
-    * Network configuration settings for your cluster.
+    * The Kubernetes network configuration for the cluster.
     */
   var kubernetesNetworkConfig: js.UndefOr[KubernetesNetworkConfigResponse] = js.undefined
   
@@ -57,6 +72,11 @@ trait Cluster extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
+    * An object representing the configuration of your local Amazon EKS cluster on an Amazon Web Services Outpost. This object isn't available for clusters on the Amazon Web Services cloud.
+    */
+  var outpostConfig: js.UndefOr[OutpostConfigResponse] = js.undefined
+  
+  /**
     * The platform version of your Amazon EKS cluster. For more information, see Platform Versions in the  Amazon EKS User Guide .
     */
   var platformVersion: js.UndefOr[String] = js.undefined
@@ -67,7 +87,7 @@ trait Cluster extends StObject {
   var resourcesVpcConfig: js.UndefOr[VpcConfigResponse] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf.
+    * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to Amazon Web Services API operations on your behalf.
     */
   var roleArn: js.UndefOr[String] = js.undefined
   
@@ -77,7 +97,7 @@ trait Cluster extends StObject {
   var status: js.UndefOr[ClusterStatus] = js.undefined
   
   /**
-    * The metadata that you apply to the cluster to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define. Cluster tags do not propagate to any other resources associated with the cluster. 
+    * The metadata that you apply to the cluster to assist with categorization and organization. Each tag consists of a key and an optional value. You define both. Cluster tags do not propagate to any other resources associated with the cluster.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   
@@ -107,7 +127,11 @@ object Cluster {
     
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setConnectorConfig(value: ConnectorConfigResponse): Self = StObject.set(x, "connectorConfig", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorConfigUndefined: Self = StObject.set(x, "connectorConfig", js.undefined)
+    
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -115,11 +139,19 @@ object Cluster {
     
     inline def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
     
-    inline def setEncryptionConfigVarargs(value: EncryptionConfig*): Self = StObject.set(x, "encryptionConfig", js.Array(value :_*))
+    inline def setEncryptionConfigVarargs(value: EncryptionConfig*): Self = StObject.set(x, "encryptionConfig", js.Array(value*))
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    
+    inline def setHealth(value: ClusterHealth): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+    
+    inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
@@ -136,6 +168,10 @@ object Cluster {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOutpostConfig(value: OutpostConfigResponse): Self = StObject.set(x, "outpostConfig", value.asInstanceOf[js.Any])
+    
+    inline def setOutpostConfigUndefined: Self = StObject.set(x, "outpostConfig", js.undefined)
     
     inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     

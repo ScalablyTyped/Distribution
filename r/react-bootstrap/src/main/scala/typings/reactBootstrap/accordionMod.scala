@@ -12,12 +12,10 @@ object accordionMod {
   
   @JSImport("react-bootstrap/lib/Accordion", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[AccordionProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[AccordionProps, js.Object, Any]
   
-  @js.native
-  trait Accordion
-    extends Component[AccordionProps, js.Object, js.Any]
+  type Accordion = Component[AccordionProps, js.Object, Any]
   
   trait AccordionProps
     extends StObject
@@ -31,7 +29,7 @@ object accordionMod {
     
     var defaultExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var expanded: js.UndefOr[Boolean] = js.undefined
     
@@ -64,7 +62,7 @@ object accordionMod {
       
       inline def setDefaultExpandedUndefined: Self = StObject.set(x, "defaultExpanded", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       

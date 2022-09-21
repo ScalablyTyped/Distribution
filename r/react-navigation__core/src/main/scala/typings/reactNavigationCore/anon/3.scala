@@ -1,30 +1,23 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.typesMod.EventMapBase
-import typings.std.Extract
+import typings.reactNavigationCore.reactNavigationCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `3`[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */] extends StObject {
+trait `3` extends StObject {
   
-  var data: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
-  ] = js.undefined
+  var canPreventDefault: `true`
 }
 object `3` {
   
-  inline def apply[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](): `3`[EventMap, EventName] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`3`[EventMap, EventName]]
+  inline def apply(): `3` = {
+    val __obj = js.Dynamic.literal(canPreventDefault = true)
+    __obj.asInstanceOf[`3`]
   }
   
-  extension [Self <: `3`[?, ?], EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](x: Self & (`3`[EventMap, EventName])) {
+  extension [Self <: `3`](x: Self) {
     
-    inline def setData(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
-    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setCanPreventDefault(value: `true`): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
   }
 }

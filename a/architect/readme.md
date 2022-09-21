@@ -10,15 +10,12 @@ A Simple yet powerful plugin system for node applications
 | ------------------ | :-------------: |
 | Full name          | architect |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 39988 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5399.0 |
+| # stars            | 965.0 |
 
 ## Links
-- [Homepage](https://github.com/c9/architect#readme)
-- [Bugs](https://github.com/c9/architect/issues)
-- [Repository](https://github.com/c9/architect)
 - [Npm](https://www.npmjs.com/package/architect)
     
 

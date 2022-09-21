@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,7 +45,7 @@ trait Change extends StObject {
   /**
     * A timestamp for the change.
     */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object Change {
   
@@ -58,7 +57,7 @@ object Change {
     location: String,
     message: String,
     pusher: String,
-    timestamp: Date
+    timestamp: js.Date
   ): Change = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], displayUri = displayUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pusher = pusher.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
@@ -80,6 +79,6 @@ object Change {
     
     inline def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

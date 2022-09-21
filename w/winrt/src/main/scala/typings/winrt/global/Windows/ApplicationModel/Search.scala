@@ -13,7 +13,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.LocalContentSuggestionSettings")
   @js.native
-  class LocalContentSuggestionSettings ()
+  open class LocalContentSuggestionSettings ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.LocalContentSuggestionSettings {
     
@@ -32,7 +32,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPane")
   @js.native
-  class SearchPane ()
+  open class SearchPane ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPane
   /* static members */
@@ -47,7 +47,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQueryChangedEventArgs")
   @js.native
-  class SearchPaneQueryChangedEventArgs ()
+  open class SearchPaneQueryChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPaneQueryChangedEventArgs {
     
@@ -63,7 +63,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQueryLinguisticDetails")
   @js.native
-  class SearchPaneQueryLinguisticDetails ()
+  open class SearchPaneQueryLinguisticDetails ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPaneQueryLinguisticDetails {
     
@@ -79,7 +79,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQuerySubmittedEventArgs")
   @js.native
-  class SearchPaneQuerySubmittedEventArgs ()
+  open class SearchPaneQuerySubmittedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPaneQuerySubmittedEventArgs {
     
@@ -92,7 +92,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneResultSuggestionChosenEventArgs")
   @js.native
-  class SearchPaneResultSuggestionChosenEventArgs ()
+  open class SearchPaneResultSuggestionChosenEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPaneResultSuggestionChosenEventArgs {
     
@@ -102,7 +102,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequest")
   @js.native
-  class SearchPaneSuggestionsRequest ()
+  open class SearchPaneSuggestionsRequest ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPaneSuggestionsRequest {
     
@@ -118,7 +118,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral")
   @js.native
-  class SearchPaneSuggestionsRequestDeferral ()
+  open class SearchPaneSuggestionsRequestDeferral ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral {
     
@@ -128,7 +128,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestedEventArgs")
   @js.native
-  class SearchPaneSuggestionsRequestedEventArgs ()
+  open class SearchPaneSuggestionsRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestedEventArgs {
     
@@ -147,7 +147,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneVisibilityChangedEventArgs")
   @js.native
-  class SearchPaneVisibilityChangedEventArgs ()
+  open class SearchPaneVisibilityChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchPaneVisibilityChangedEventArgs {
     
@@ -157,7 +157,7 @@ object Search {
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchSuggestionCollection")
   @js.native
-  class SearchSuggestionCollection ()
+  open class SearchSuggestionCollection ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Search.SearchSuggestionCollection {
     

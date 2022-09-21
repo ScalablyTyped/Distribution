@@ -74,19 +74,16 @@ trait Campaign extends StObject {
   /** Information about the most recent modification of this campaign. This is a read-only field. */
   var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   
-  /** Name of this campaign. This is a required field and must be less than 256 characters long and unique among campaigns of the same advertiser. */
-  var name: js.UndefOr[String] = js.undefined
+  /** Measurement partner campaign link for tag wrapping. */
+  var measurementPartnerLink: js.UndefOr[MeasurementPartnerCampaignLink] = js.undefined
   
-  /** Whether Nielsen reports are enabled for this campaign. */
-  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined
+  /** Name of this campaign. This is a required field and must be less than 512 characters long and unique among campaigns of the same advertiser. */
+  var name: js.UndefOr[String] = js.undefined
   
   var startDate: js.UndefOr[String] = js.undefined
   
   /** Subaccount ID of this campaign. This is a read-only field that can be left blank. */
   var subaccountId: js.UndefOr[String] = js.undefined
-  
-  /** Campaign trafficker contact emails. */
-  var traffickerEmails: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Campaign {
   
@@ -109,7 +106,7 @@ object Campaign {
     
     inline def setAdditionalCreativeOptimizationConfigurationsUndefined: Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.undefined)
     
-    inline def setAdditionalCreativeOptimizationConfigurationsVarargs(value: CreativeOptimizationConfiguration*): Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.Array(value :_*))
+    inline def setAdditionalCreativeOptimizationConfigurationsVarargs(value: CreativeOptimizationConfiguration*): Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.Array(value*))
     
     inline def setAdvertiserGroupId(value: String): Self = StObject.set(x, "advertiserGroupId", value.asInstanceOf[js.Any])
     
@@ -131,7 +128,7 @@ object Campaign {
     
     inline def setAudienceSegmentGroupsUndefined: Self = StObject.set(x, "audienceSegmentGroups", js.undefined)
     
-    inline def setAudienceSegmentGroupsVarargs(value: AudienceSegmentGroup*): Self = StObject.set(x, "audienceSegmentGroups", js.Array(value :_*))
+    inline def setAudienceSegmentGroupsVarargs(value: AudienceSegmentGroup*): Self = StObject.set(x, "audienceSegmentGroups", js.Array(value*))
     
     inline def setBillingInvoiceCode(value: String): Self = StObject.set(x, "billingInvoiceCode", value.asInstanceOf[js.Any])
     
@@ -153,7 +150,7 @@ object Campaign {
     
     inline def setCreativeGroupIdsUndefined: Self = StObject.set(x, "creativeGroupIds", js.undefined)
     
-    inline def setCreativeGroupIdsVarargs(value: String*): Self = StObject.set(x, "creativeGroupIds", js.Array(value :_*))
+    inline def setCreativeGroupIdsVarargs(value: String*): Self = StObject.set(x, "creativeGroupIds", js.Array(value*))
     
     inline def setCreativeOptimizationConfiguration(value: CreativeOptimizationConfiguration): Self = StObject.set(x, "creativeOptimizationConfiguration", value.asInstanceOf[js.Any])
     
@@ -175,7 +172,7 @@ object Campaign {
     
     inline def setEventTagOverridesUndefined: Self = StObject.set(x, "eventTagOverrides", js.undefined)
     
-    inline def setEventTagOverridesVarargs(value: EventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value :_*))
+    inline def setEventTagOverridesVarargs(value: EventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value*))
     
     inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
@@ -197,13 +194,13 @@ object Campaign {
     
     inline def setLastModifiedInfoUndefined: Self = StObject.set(x, "lastModifiedInfo", js.undefined)
     
+    inline def setMeasurementPartnerLink(value: MeasurementPartnerCampaignLink): Self = StObject.set(x, "measurementPartnerLink", value.asInstanceOf[js.Any])
+    
+    inline def setMeasurementPartnerLinkUndefined: Self = StObject.set(x, "measurementPartnerLink", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    
-    inline def setNielsenOcrEnabled(value: Boolean): Self = StObject.set(x, "nielsenOcrEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setNielsenOcrEnabledUndefined: Self = StObject.set(x, "nielsenOcrEnabled", js.undefined)
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
@@ -212,11 +209,5 @@ object Campaign {
     inline def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     inline def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
-    
-    inline def setTraffickerEmails(value: js.Array[String]): Self = StObject.set(x, "traffickerEmails", value.asInstanceOf[js.Any])
-    
-    inline def setTraffickerEmailsUndefined: Self = StObject.set(x, "traffickerEmails", js.undefined)
-    
-    inline def setTraffickerEmailsVarargs(value: String*): Self = StObject.set(x, "traffickerEmails", js.Array(value :_*))
   }
 }

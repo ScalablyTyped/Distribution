@@ -1,6 +1,5 @@
 package typings.hystrixjs.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +18,11 @@ trait CommandBuilderA2[R, T, U] extends StObject {
   
   def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilderA2[R, T, U]
   
-  def context(value: js.Any): CommandBuilderA2[R, T, U]
+  def context(value: Any): CommandBuilderA2[R, T, U]
   
-  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilderA2[R, T, U]
+  def errorHandler(value: js.Function1[/* error */ Any, Boolean]): CommandBuilderA2[R, T, U]
   
-  def fallbackTo(value: js.Function2[/* error */ Error, /* args */ js.Tuple2[T, U], js.Thenable[R]]): CommandBuilderA2[R, T, U]
+  def fallbackTo(value: js.Function2[/* error */ js.Error, /* args */ js.Tuple2[T, U], js.Thenable[R]]): CommandBuilderA2[R, T, U]
   
   def percentileWindowLength(value: Double): CommandBuilderA2[R, T, U]
   
@@ -48,9 +47,9 @@ object CommandBuilderA2 {
     circuitBreakerForceOpened: Boolean => CommandBuilderA2[R, T, U],
     circuitBreakerRequestVolumeThreshold: Double => CommandBuilderA2[R, T, U],
     circuitBreakerSleepWindowInMilliseconds: Double => CommandBuilderA2[R, T, U],
-    context: js.Any => CommandBuilderA2[R, T, U],
-    errorHandler: js.Function1[/* error */ js.Any, Boolean] => CommandBuilderA2[R, T, U],
-    fallbackTo: js.Function2[/* error */ Error, /* args */ js.Tuple2[T, U], js.Thenable[R]] => CommandBuilderA2[R, T, U],
+    context: Any => CommandBuilderA2[R, T, U],
+    errorHandler: js.Function1[/* error */ Any, Boolean] => CommandBuilderA2[R, T, U],
+    fallbackTo: js.Function2[/* error */ js.Error, /* args */ js.Tuple2[T, U], js.Thenable[R]] => CommandBuilderA2[R, T, U],
     percentileWindowLength: Double => CommandBuilderA2[R, T, U],
     percentileWindowNumberOfBuckets: Double => CommandBuilderA2[R, T, U],
     requestVolumeRejectionThreshold: Double => CommandBuilderA2[R, T, U],
@@ -77,12 +76,12 @@ object CommandBuilderA2 {
     
     inline def setCircuitBreakerSleepWindowInMilliseconds(value: Double => CommandBuilderA2[R, T, U]): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", js.Any.fromFunction1(value))
     
-    inline def setContext(value: js.Any => CommandBuilderA2[R, T, U]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+    inline def setContext(value: Any => CommandBuilderA2[R, T, U]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
     
-    inline def setErrorHandler(value: js.Function1[/* error */ js.Any, Boolean] => CommandBuilderA2[R, T, U]): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    inline def setErrorHandler(value: js.Function1[/* error */ Any, Boolean] => CommandBuilderA2[R, T, U]): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     inline def setFallbackTo(
-      value: js.Function2[/* error */ Error, /* args */ js.Tuple2[T, U], js.Thenable[R]] => CommandBuilderA2[R, T, U]
+      value: js.Function2[/* error */ js.Error, /* args */ js.Tuple2[T, U], js.Thenable[R]] => CommandBuilderA2[R, T, U]
     ): Self = StObject.set(x, "fallbackTo", js.Any.fromFunction1(value))
     
     inline def setPercentileWindowLength(value: Double => CommandBuilderA2[R, T, U]): Self = StObject.set(x, "percentileWindowLength", js.Any.fromFunction1(value))

@@ -24,10 +24,18 @@ trait NodeGroup extends StObject {
   var kind: js.UndefOr[String] = js.undefined
   
   /**
+    * An opaque location hint used to place the Node close to other resources. This field is for use by internal tools that use the public API. The location hint here on the NodeGroup
+    * overrides any location_hint present in the NodeTemplate.
+    */
+  var locationHint: js.UndefOr[String] = js.undefined
+  
+  /**
     * Specifies how to handle instances when a node in the group undergoes maintenance. Set to one of: DEFAULT, RESTART_IN_PLACE, or MIGRATE_WITHIN_NODE_GROUP. The default value is
-    * DEFAULT. For more information, see  Maintenance policies.
+    * DEFAULT. For more information, see Maintenance policies.
     */
   var maintenancePolicy: js.UndefOr[String] = js.undefined
+  
+  var maintenanceWindow: js.UndefOr[NodeGroupMaintenanceWindow] = js.undefined
   
   /**
     * The name of the resource, provided by the client when initially creating the resource. The resource name must be 1-63 characters long, and comply with RFC1035. Specifically, the
@@ -83,9 +91,17 @@ object NodeGroup {
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
+    inline def setLocationHint(value: String): Self = StObject.set(x, "locationHint", value.asInstanceOf[js.Any])
+    
+    inline def setLocationHintUndefined: Self = StObject.set(x, "locationHint", js.undefined)
+    
     inline def setMaintenancePolicy(value: String): Self = StObject.set(x, "maintenancePolicy", value.asInstanceOf[js.Any])
     
     inline def setMaintenancePolicyUndefined: Self = StObject.set(x, "maintenancePolicy", js.undefined)
+    
+    inline def setMaintenanceWindow(value: NodeGroupMaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait StoryRanges extends StObject {
   
   def Item(Index: WdStoryType): Range
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.StoryRanges_typekey")
   var WordDotStoryRanges_typekey: StoryRanges
@@ -26,7 +26,7 @@ object StoryRanges {
     Count: Double,
     Creator: Double,
     Item: WdStoryType => Range,
-    Parent: js.Any,
+    Parent: Any,
     WordDotStoryRanges_typekey: StoryRanges
   ): StoryRanges = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object StoryRanges {
     
     inline def setItem(value: WdStoryType => Range): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotStoryRanges_typekey(value: StoryRanges): Self = StObject.set(x, "Word.StoryRanges_typekey", value.asInstanceOf[js.Any])
   }

@@ -7,7 +7,6 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.proofPbMod.AccountStateProof
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,16 +15,16 @@ object accountStateBlobPbMod {
   
   @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateBlob")
   @js.native
-  class AccountStateBlob () extends Message {
+  open class AccountStateBlob () extends Message {
     
-    def getBlob(): Uint8Array | String = js.native
+    def getBlob(): js.typedarray.Uint8Array | String = js.native
     
     def getBlob_asB64(): String = js.native
     
-    def getBlob_asU8(): Uint8Array = js.native
+    def getBlob_asU8(): js.typedarray.Uint8Array = js.native
     
     def setBlob(value: String): Unit = js.native
-    def setBlob(value: Uint8Array): Unit = js.native
+    def setBlob(value: js.typedarray.Uint8Array): Unit = js.native
   }
   /* static members */
   object AccountStateBlob {
@@ -34,7 +33,7 @@ object accountStateBlobPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): AccountStateBlob = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateBlob]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): AccountStateBlob = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateBlob]
     
     inline def deserializeBinaryFromReader(message: AccountStateBlob, reader: BinaryReader): AccountStateBlob = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccountStateBlob]
     
@@ -55,25 +54,25 @@ object accountStateBlobPbMod {
     
     trait AsObject extends StObject {
       
-      var blob: Uint8Array | String
+      var blob: js.typedarray.Uint8Array | String
     }
     object AsObject {
       
-      inline def apply(blob: Uint8Array | String): AsObject = {
+      inline def apply(blob: js.typedarray.Uint8Array | String): AsObject = {
         val __obj = js.Dynamic.literal(blob = blob.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
       extension [Self <: AsObject](x: Self) {
         
-        inline def setBlob(value: Uint8Array | String): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+        inline def setBlob(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       }
     }
   }
   
   @JSImport("libra-core/lib/@/generated/account_state_blob_pb", "AccountStateWithProof")
   @js.native
-  class AccountStateWithProof () extends Message {
+  open class AccountStateWithProof () extends Message {
     
     def clearBlob(): Unit = js.native
     
@@ -104,7 +103,7 @@ object accountStateBlobPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): AccountStateWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateWithProof]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): AccountStateWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateWithProof]
     
     inline def deserializeBinaryFromReader(message: AccountStateWithProof, reader: BinaryReader): AccountStateWithProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccountStateWithProof]
     

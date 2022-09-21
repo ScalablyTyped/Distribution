@@ -22,32 +22,34 @@ trait FullscreenViewModel
   var element: HTMLElement = js.native
   
   /**
-    * Enter fullscreen.
+    * Enter fullscreen
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html#enter)
     */
-  def enter(): Unit = js.native
+  def enter(): scala.Unit = js.native
   
   /**
-    * Exit fullscreen.
+    * Exit fullscreen
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html#exit)
     */
-  def exit(): Unit = js.native
+  def exit(): scala.Unit = js.native
   
   /**
     * The view model's state.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html#state)
     */
   val state: active | ready | `feature-unsupported` | disabled = js.native
   
   /**
-    * Toggle fullscreen.
+    * Toggle fullscreen
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html#toggle)
     */
-  def toggle(): Unit = js.native
+  def toggle(): scala.Unit = js.native
   
   /**
     * The view associated with the widget instance.

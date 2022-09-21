@@ -1,11 +1,12 @@
 package typings.jupyterlabMainmenu
 
 import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
-import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
-import typings.jupyterlabMainmenu.labmenuMod.IMenuExtender
-import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
 import typings.jupyterlabMainmenu.runMod.IRunMenu.ICodeRunner
-import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.jupyterlabMainmenu.tokensMod.IMenuExtender
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu.IOptions
+import typings.jupyterlabUiComponents.mod.RankedMenu
+import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -14,30 +15,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object runMod {
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.luminoDisposable.mod.IDisposable because Already inherited
-  - typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu because Already inherited
-  - typings.jupyterlabMainmenu.runMod.IRunMenu because var conflicts: isDisposed. Inlined codeRunners */ @JSImport("@jupyterlab/mainmenu/lib/run", "RunMenu")
+  @JSImport("@jupyterlab/mainmenu/lib/run", "RunMenu")
   @js.native
-  class RunMenu protected () extends JupyterLabMenu {
+  open class RunMenu protected ()
+    extends RankedMenu
+       with IRunMenu {
     /**
       * Construct the run menu.
       */
     def this(options: IOptions) = this()
     
     /**
-      * A set storing ICodeRunner for the Run menu.
+      * Dispose of the resources held by the object.
       *
-      * ### Notes
-      * The key for the set may be used in menu labels.
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
       */
-    val codeRunners: Set[ICodeRunner[Widget]] = js.native
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* InferMemberOverrides */
+    override val isDisposed: Boolean = js.native
+    
+    /**
+      * Process a message sent to the handler.
+      *
+      * @param msg - The message to be processed.
+      */
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def processMessage(msg: Message): Unit = js.native
   }
   
   @js.native
   trait IRunMenu
     extends StObject
-       with IJupyterLabMenu {
+       with IRankedMenu {
     
     /**
       * A set storing ICodeRunner for the Run menu.
@@ -58,16 +82,26 @@ object runMod {
          with IMenuExtender[T] {
       
       /**
-        * A string label for the thing that is being run,
-        * which is used to populate the menu labels.
-        */
-      var noun: String
-      
-      /**
         * A function to restart and run all the code hosted by the widget, which
         * returns a promise of whether the action was performed.
         */
       var restartAndRunAll: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Boolean]]] = js.undefined
+      
+      /**
+        * Return the caption associated to the `restartAndRunAll` function.
+        *
+        * This function receives the number of items `n` to be able to provided
+        * correct pluralized forms of translations.
+        */
+      var restartAndRunAllCaption: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
+      
+      /**
+        * Return the label associated to the `restartAndRunAll` function.
+        *
+        * This function receives the number of items `n` to be able to provided
+        * correct pluralized forms of translations.
+        */
+      var restartAndRunAllLabel: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
       
       /**
         * A function to run a chunk of code.
@@ -78,19 +112,57 @@ object runMod {
         * A function to run the entirety of the code hosted by the widget.
         */
       var runAll: js.UndefOr[js.Function1[/* widget */ T, js.Promise[Unit]]] = js.undefined
+      
+      /**
+        * Return the caption associated to the `runAll` function.
+        *
+        * This function receives the number of items `n` to be able to provided
+        * correct pluralized forms of translations.
+        */
+      var runAllCaption: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
+      
+      /**
+        * Return the label associated to the `runAll` function.
+        *
+        * This function receives the number of items `n` to be able to provided
+        * correct pluralized forms of translations.
+        */
+      var runAllLabel: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
+      
+      /**
+        * Return the caption associated to the `run` function.
+        *
+        * This function receives the number of items `n` to be able to provided
+        * correct pluralized forms of translations.
+        */
+      var runCaption: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
+      
+      /**
+        * Return the label associated to the `run` function.
+        *
+        * This function receives the number of items `n` to be able to provided
+        * correct pluralized forms of translations.
+        */
+      var runLabel: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
     }
     object ICodeRunner {
       
-      inline def apply[T /* <: Widget */](noun: String, tracker: IWidgetTracker[T]): ICodeRunner[T] = {
-        val __obj = js.Dynamic.literal(noun = noun.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
+      inline def apply[T /* <: Widget */](tracker: IWidgetTracker[T]): ICodeRunner[T] = {
+        val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICodeRunner[T]]
       }
       
       extension [Self <: ICodeRunner[?], T /* <: Widget */](x: Self & ICodeRunner[T]) {
         
-        inline def setNoun(value: String): Self = StObject.set(x, "noun", value.asInstanceOf[js.Any])
-        
         inline def setRestartAndRunAll(value: /* widget */ T => js.Promise[Boolean]): Self = StObject.set(x, "restartAndRunAll", js.Any.fromFunction1(value))
+        
+        inline def setRestartAndRunAllCaption(value: /* n */ Double => String): Self = StObject.set(x, "restartAndRunAllCaption", js.Any.fromFunction1(value))
+        
+        inline def setRestartAndRunAllCaptionUndefined: Self = StObject.set(x, "restartAndRunAllCaption", js.undefined)
+        
+        inline def setRestartAndRunAllLabel(value: /* n */ Double => String): Self = StObject.set(x, "restartAndRunAllLabel", js.Any.fromFunction1(value))
+        
+        inline def setRestartAndRunAllLabelUndefined: Self = StObject.set(x, "restartAndRunAllLabel", js.undefined)
         
         inline def setRestartAndRunAllUndefined: Self = StObject.set(x, "restartAndRunAll", js.undefined)
         
@@ -98,7 +170,23 @@ object runMod {
         
         inline def setRunAll(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "runAll", js.Any.fromFunction1(value))
         
+        inline def setRunAllCaption(value: /* n */ Double => String): Self = StObject.set(x, "runAllCaption", js.Any.fromFunction1(value))
+        
+        inline def setRunAllCaptionUndefined: Self = StObject.set(x, "runAllCaption", js.undefined)
+        
+        inline def setRunAllLabel(value: /* n */ Double => String): Self = StObject.set(x, "runAllLabel", js.Any.fromFunction1(value))
+        
+        inline def setRunAllLabelUndefined: Self = StObject.set(x, "runAllLabel", js.undefined)
+        
         inline def setRunAllUndefined: Self = StObject.set(x, "runAll", js.undefined)
+        
+        inline def setRunCaption(value: /* n */ Double => String): Self = StObject.set(x, "runCaption", js.Any.fromFunction1(value))
+        
+        inline def setRunCaptionUndefined: Self = StObject.set(x, "runCaption", js.undefined)
+        
+        inline def setRunLabel(value: /* n */ Double => String): Self = StObject.set(x, "runLabel", js.Any.fromFunction1(value))
+        
+        inline def setRunLabelUndefined: Self = StObject.set(x, "runLabel", js.undefined)
         
         inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
       }

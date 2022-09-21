@@ -22,6 +22,6 @@ object PivotTableCollectionUpdateData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: PivotTableData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PivotTableData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

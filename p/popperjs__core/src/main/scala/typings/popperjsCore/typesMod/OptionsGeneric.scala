@@ -27,7 +27,7 @@ object OptionsGeneric {
     
     inline def setModifiers(value: js.Array[TModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    inline def setModifiersVarargs(value: TModifier*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: TModifier*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
     

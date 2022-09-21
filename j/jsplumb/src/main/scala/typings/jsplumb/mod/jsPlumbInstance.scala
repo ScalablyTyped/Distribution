@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsplumb", "jsPlumbInstance")
 @js.native
-class jsPlumbInstance () extends StObject {
+open class jsPlumbInstance () extends StObject {
   
   def addEndpoint(el: ElementGroupRef): Endpoint | js.Array[Endpoint] = js.native
   def addEndpoint(el: ElementGroupRef, params: Unit, referenceParams: EndpointOptions): Endpoint | js.Array[Endpoint] = js.native
@@ -22,6 +22,13 @@ class jsPlumbInstance () extends StObject {
   
   def addEndpoints(target: ElementGroupRef, endpoints: js.Array[EndpointOptions]): js.Array[Endpoint] = js.native
   def addEndpoints(target: ElementGroupRef, endpoints: js.Array[EndpointOptions], referenceParams: EndpointOptions): js.Array[Endpoint] = js.native
+  
+  def addGroup(params: GroupOptions): Group = js.native
+  
+  def addToGroup(group: String, el: ElementRef): Unit = js.native
+  def addToGroup(group: String, el: ElementRef, doNotFireEvent: Boolean): Unit = js.native
+  def addToGroup(group: Group, el: ElementRef): Unit = js.native
+  def addToGroup(group: Group, el: ElementRef, doNotFireEvent: Boolean): Unit = js.native
   
   def animate(el: ElementRef): Unit = js.native
   def animate(el: ElementRef, properties: js.Object): Unit = js.native
@@ -62,6 +69,9 @@ class jsPlumbInstance () extends StObject {
   
   def cleanupListeners(): Unit = js.native
   
+  def collapseGroup(group: String): Unit = js.native
+  def collapseGroup(group: Group): Unit = js.native
+  
   def connect(params: ConnectParams): Connection = js.native
   def connect(params: ConnectParams, referenceParams: js.Object): Connection = js.native
   
@@ -84,20 +94,25 @@ class jsPlumbInstance () extends StObject {
   def empty(el: Selector | String): Unit = js.native
   def empty(el: Element): Unit = js.native
   
+  def expandGroup(group: String): Unit = js.native
+  def expandGroup(group: String, doNotFireEvent: Boolean): Unit = js.native
+  def expandGroup(group: Group): Unit = js.native
+  def expandGroup(group: Group, doNotFireEvent: Boolean): Unit = js.native
+  
   def fire(event: String, value: js.Object, originalEvent: Event): Unit = js.native
   
   def getAllConnections(): js.Array[Connection] = js.native
   
-  def getConnections(scope: String, options: js.Object): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: String): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: String, source: Selector | String): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  def getConnections(scope: String, options: js.Object): js.Array[Any] | (Record[Any, Any]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: String): js.Array[Any] | (Record[Any, Any]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: String, source: Selector | String): js.Array[Any] | (Record[Any, Any]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
     scope2: String,
     source: Selector | String,
     target: Selector | String
-  ): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  ): js.Array[Any] | (Record[Any, Any]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
@@ -105,7 +120,7 @@ class jsPlumbInstance () extends StObject {
     source: Selector | String,
     target: Selector | String,
     flat: Boolean
-  ): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  ): js.Array[Any] | (Record[Any, Any]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
@@ -113,8 +128,8 @@ class jsPlumbInstance () extends StObject {
     source: Selector | String,
     target: Unit,
     flat: Boolean
-  ): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: String, source: Unit, target: Selector | String): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  ): js.Array[Any] | (Record[Any, Any]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: String, source: Unit, target: Selector | String): js.Array[Any] | (Record[Any, Any]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
@@ -122,16 +137,16 @@ class jsPlumbInstance () extends StObject {
     source: Unit,
     target: Selector | String,
     flat: Boolean
-  ): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: String, source: Unit, target: Unit, flat: Boolean): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: Unit, source: Selector | String): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  ): js.Array[Any] | (Record[Any, Any]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: String, source: Unit, target: Unit, flat: Boolean): js.Array[Any] | (Record[Any, Any]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: Unit, source: Selector | String): js.Array[Any] | (Record[Any, Any]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
     scope2: Unit,
     source: Selector | String,
     target: Selector | String
-  ): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  ): js.Array[Any] | (Record[Any, Any]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
@@ -139,7 +154,7 @@ class jsPlumbInstance () extends StObject {
     source: Selector | String,
     target: Selector | String,
     flat: Boolean
-  ): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  ): js.Array[Any] | (Record[Any, Any]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
@@ -147,8 +162,8 @@ class jsPlumbInstance () extends StObject {
     source: Selector | String,
     target: Unit,
     flat: Boolean
-  ): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: Unit, source: Unit, target: Selector | String): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  ): js.Array[Any] | (Record[Any, Any]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: Unit, source: Unit, target: Selector | String): js.Array[Any] | (Record[Any, Any]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
@@ -156,8 +171,8 @@ class jsPlumbInstance () extends StObject {
     source: Unit,
     target: Selector | String,
     flat: Boolean
-  ): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: Unit, source: Unit, target: Unit, flat: Boolean): js.Array[js.Any] | (Record[js.Any, js.Any]) = js.native
+  ): js.Array[Any] | (Record[Any, Any]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: Unit, source: Unit, target: Unit, flat: Boolean): js.Array[Any] | (Record[Any, Any]) = js.native
   
   def getContainer(): Element = js.native
   
@@ -168,12 +183,17 @@ class jsPlumbInstance () extends StObject {
   def getEndpoints(element: String): js.Array[Endpoint] = js.native
   def getEndpoints(element: Element): js.Array[Endpoint] = js.native
   
+  def getGroup(groupId: String): Group = js.native
+  def getGroup(groupId: Group): Group = js.native
+  
+  def getGroups(): js.Array[Group] = js.native
+  
   def getHoverPaintStyle(
     params: js.UndefOr[js.Object],
     scope: js.UndefOr[String],
-    source: js.UndefOr[String | Element | Selector | js.Array[js.Any]],
-    target: js.UndefOr[String | Element | Selector | js.Array[js.Any]],
-    element: js.UndefOr[String | Element | Selector | js.Array[js.Any]]
+    source: js.UndefOr[String | Element | Selector | js.Array[Any]],
+    target: js.UndefOr[String | Element | Selector | js.Array[Any]],
+    element: js.UndefOr[String | Element | Selector | js.Array[Any]]
   ): Selection = js.native
   
   /**
@@ -233,7 +253,7 @@ class jsPlumbInstance () extends StObject {
   def makeSource(
     el: String | Element | Selector,
     params: js.Object,
-    endpoint: js.UndefOr[String | js.Array[js.Any]],
+    endpoint: js.UndefOr[String | js.Array[Any]],
     parent: js.UndefOr[String | Element],
     scope: js.UndefOr[String],
     dragOptions: js.UndefOr[js.Object],
@@ -244,7 +264,7 @@ class jsPlumbInstance () extends StObject {
   def makeTarget(
     el: String | Element | Selector,
     params: js.Object,
-    endpoint: js.UndefOr[String | js.Array[js.Any]],
+    endpoint: js.UndefOr[String | js.Array[Any]],
     scope: js.UndefOr[String],
     dropOptions: js.UndefOr[js.Object],
     deleteEndpointsOnEmpty: js.UndefOr[Boolean],
@@ -277,6 +297,8 @@ class jsPlumbInstance () extends StObject {
   def recalculateOffsets(el: Selector | String): Unit = js.native
   def recalculateOffsets(el: Element): Unit = js.native
   
+  def refreshAllGroups(): Unit = js.native
+  
   def registerConnectionType(typeId: String, `type`: js.Object): Unit = js.native
   
   def registerConnectionTypes(types: js.Object): Unit = js.native
@@ -293,11 +315,33 @@ class jsPlumbInstance () extends StObject {
   def removeAllEndpoints(el: Element): jsPlumbInstance = js.native
   def removeAllEndpoints(el: Element, recurse: Boolean): jsPlumbInstance = js.native
   
+  def removeAllGroups(deleteMembers: String): Unit = js.native
+  def removeAllGroups(deleteMembers: String, manipulateDOM: Boolean): Unit = js.native
+  def removeAllGroups(deleteMembers: String, manipulateDOM: Boolean, doNotFireEvent: Boolean): Unit = js.native
+  def removeAllGroups(deleteMembers: String, manipulateDOM: Unit, doNotFireEvent: Boolean): Unit = js.native
+  
+  def removeFromGroup(group: String, el: ElementRef): Unit = js.native
+  def removeFromGroup(group: String, el: ElementRef, doNotFireEvent: Boolean): Unit = js.native
+  def removeFromGroup(group: Group, el: ElementRef): Unit = js.native
+  def removeFromGroup(group: Group, el: ElementRef, doNotFireEvent: Boolean): Unit = js.native
+  
+  def removeGroup(group: String, deleteMembers: String): OrphanedPositions | Unit = js.native
+  def removeGroup(group: String, deleteMembers: String, manipulateDOM: Boolean): OrphanedPositions | Unit = js.native
+  def removeGroup(group: String, deleteMembers: String, manipulateDOM: Boolean, doNotFireEvent: Boolean): OrphanedPositions | Unit = js.native
+  def removeGroup(group: String, deleteMembers: String, manipulateDOM: Unit, doNotFireEvent: Boolean): OrphanedPositions | Unit = js.native
+  def removeGroup(group: Group, deleteMembers: String): OrphanedPositions | Unit = js.native
+  def removeGroup(group: Group, deleteMembers: String, manipulateDOM: Boolean): OrphanedPositions | Unit = js.native
+  def removeGroup(group: Group, deleteMembers: String, manipulateDOM: Boolean, doNotFireEvent: Boolean): OrphanedPositions | Unit = js.native
+  def removeGroup(group: Group, deleteMembers: String, manipulateDOM: Unit, doNotFireEvent: Boolean): OrphanedPositions | Unit = js.native
+  
   def repaint(el: Selector | String): jsPlumbInstance = js.native
   def repaint(el: Element): jsPlumbInstance = js.native
   
   def repaintEverything(): jsPlumbInstance = js.native
   def repaintEverything(clearEdits: Boolean): jsPlumbInstance = js.native
+  
+  def repaintGroup(group: String): Unit = js.native
+  def repaintGroup(group: Group): Unit = js.native
   
   def reset(): Unit = js.native
   def reset(doNotUnbindInstanceEventListeners: Boolean): Unit = js.native
@@ -363,7 +407,7 @@ class jsPlumbInstance () extends StObject {
   def setDefaultScope(scope: String): jsPlumbInstance = js.native
   
   def setDraggable(el: String, draggable: Boolean): Unit = js.native
-  def setDraggable(el: js.Array[js.Any], draggable: Boolean): Unit = js.native
+  def setDraggable(el: js.Array[Any], draggable: Boolean): Unit = js.native
   def setDraggable(el: js.Object, draggable: Boolean): Unit = js.native
   
   def setHover(container: Selector | String): Unit = js.native

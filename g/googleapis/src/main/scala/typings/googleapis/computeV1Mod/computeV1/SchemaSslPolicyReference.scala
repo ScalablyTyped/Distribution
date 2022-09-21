@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaSslPolicyReference extends StObject {
   
   /**
-    * URL of the SSL policy resource. Set this to empty string to clear any
-    * existing SSL policy associated with the target proxy resource.
+    * URL of the SSL policy resource. Set this to empty string to clear any existing SSL policy associated with the target proxy resource.
     */
-  var sslPolicy: js.UndefOr[String] = js.undefined
+  var sslPolicy: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSslPolicyReference {
   
@@ -22,6 +21,8 @@ object SchemaSslPolicyReference {
   extension [Self <: SchemaSslPolicyReference](x: Self) {
     
     inline def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setSslPolicyNull: Self = StObject.set(x, "sslPolicy", null)
     
     inline def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
   }

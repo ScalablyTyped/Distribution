@@ -10,30 +10,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhysicsVortexEvent extends StObject {
   
-  /* private */ var _cylinder: js.Any = js.native
+  /* private */ var _cylinder: Any = js.native
   
-  /* private */ var _cylinderPosition: js.Any = js.native
+  /* private */ var _cylinderPosition: Any = js.native
   
-  /* private */ var _dataFetched: js.Any = js.native
+  /* private */ var _dataFetched: Any = js.native
   
-  /* private */ var _intersectsWithCylinder: js.Any = js.native
+  /* private */ var _getImpostorHitData: Any = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _intersectsWithCylinder: Any = js.native
   
-  /* private */ var _origin: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
-  /* private */ var _originTop: js.Any = js.native
+  /* private */ var _origin: Any = js.native
   
-  /* private */ var _physicsEngine: js.Any = js.native
+  /* private */ var _originTop: Any = js.native
+  
+  /* private */ var _physicsEngine: Any = js.native
   
   /*** Helpers ***/
-  /* private */ var _prepareCylinder: js.Any = js.native
+  /* private */ var _prepareCylinder: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _tick: js.Any = js.native
+  /* private */ var _tick: Any = js.native
   
-  /* private */ var _tickCallback: js.Any = js.native
+  /* private */ var _tickCallback: Any = js.native
   
   /**
     * Disables the cortex.
@@ -57,6 +59,4 @@ trait PhysicsVortexEvent extends StObject {
     * @returns The physics vortex event data
     */
   def getData(): PhysicsVortexEventData = js.native
-  
-  /* private */ var getImpostorHitData: js.Any = js.native
 }

@@ -2,6 +2,7 @@ package typings.poi.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.poi.anon.CacheDirectory
+import typings.webpack.mod.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PoiCore extends StObject {
   
-  var cli: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CAC */ js.Any = js.native
+  var cli: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CAC */ Any = js.native
   
   /** The current running command */
   var command: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CAC * / any['command'] */ js.Any = js.native
@@ -22,11 +23,9 @@ trait PoiCore extends StObject {
   var configLoader: ConfigLoader = js.native
   
   def createWebpackChain(): typings.webpackChain.mod.^ = js.native
-  def createWebpackChain(opts: StringDictionary[js.Any]): typings.webpackChain.mod.^ = js.native
+  def createWebpackChain(opts: StringDictionary[Any]): typings.webpackChain.mod.^ = js.native
   
-  def createWebpackCompiler(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackConfig */ js.Any
-  ): js.Any = js.native
+  def createWebpackCompiler(config: Configuration): Any = js.native
   
   def getCacheConfig(dir: String, keys: StringDictionary[String], files: js.Array[String]): CacheDirectory = js.native
   
@@ -39,8 +38,8 @@ trait PoiCore extends StObject {
   
   var isProd: Boolean = js.native
   
-  def localRequire(pkg: String): js.Any = js.native
-  def localRequire(pkg: String, cwd: String): js.Any = js.native
+  def localRequire(pkg: String): Any = js.native
+  def localRequire(pkg: String, cwd: String): Any = js.native
   
   def localResolve(pkg: String): String | Null = js.native
   def localResolve(pkg: String, cwd: String): String | Null = js.native

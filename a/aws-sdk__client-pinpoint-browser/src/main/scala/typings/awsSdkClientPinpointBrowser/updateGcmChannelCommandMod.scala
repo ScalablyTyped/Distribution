@@ -16,7 +16,7 @@ object updateGcmChannelCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateGcmChannelCommand", "UpdateGcmChannelCommand")
   @js.native
-  class UpdateGcmChannelCommand protected ()
+  open class UpdateGcmChannelCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateGcmChannelCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateGcmChannelInput, UpdateGcmChannelOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateGcmChannelInput, UpdateGcmChannelOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateGcmChannelInput, UpdateGcmChannelOutput] = js.native
   }
 }

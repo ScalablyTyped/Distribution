@@ -17,12 +17,12 @@ trait UpdateMaintenanceWindowTargetRequest extends StObject {
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
-    * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this maintenance window.
+    * User-provided value that will be included in any Amazon CloudWatch Events events raised while running tasks for these targets in this maintenance window.
     */
   var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.undefined
   
   /**
-    * If True, then all fields that are required by the RegisterTargetWithMaintenanceWindow action are also required for this API request. Optional fields that are not specified are set to null.
+    * If True, then all fields that are required by the RegisterTargetWithMaintenanceWindow operation are also required for this API request. Optional fields that aren't specified are set to null.
     */
   var Replace: js.UndefOr[Boolean] = js.undefined
   
@@ -70,7 +70,7 @@ object UpdateMaintenanceWindowTargetRequest {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
     
     inline def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     

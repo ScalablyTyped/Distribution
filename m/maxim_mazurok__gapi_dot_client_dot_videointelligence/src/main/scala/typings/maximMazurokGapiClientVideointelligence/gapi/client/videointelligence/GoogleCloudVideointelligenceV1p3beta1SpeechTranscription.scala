@@ -31,7 +31,7 @@ object GoogleCloudVideointelligenceV1p3beta1SpeechTranscription {
     
     inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
-    inline def setAlternativesVarargs(value: GoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: GoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value*))
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

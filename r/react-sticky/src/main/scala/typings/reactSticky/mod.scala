@@ -16,10 +16,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-sticky", "Sticky")
   @js.native
-  class Sticky protected ()
-    extends Component[StickyProps, ComponentState, js.Any] {
+  open class Sticky protected () extends Component[StickyProps, ComponentState, Any] {
     def this(props: StickyProps) = this()
-    def this(props: StickyProps, context: js.Any) = this()
+    def this(props: StickyProps, context: Any) = this()
   }
   @JSImport("react-sticky", "Sticky")
   @js.native
@@ -28,10 +27,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-sticky", "StickyContainer")
   @js.native
-  class StickyContainer protected ()
-    extends Component[HTMLAttributes[HTMLDivElement], ComponentState, js.Any] {
+  open class StickyContainer protected () extends Component[HTMLAttributes[HTMLDivElement], ComponentState, Any] {
     def this(props: HTMLAttributes[HTMLDivElement]) = this()
-    def this(props: HTMLAttributes[HTMLDivElement], context: js.Any) = this()
+    def this(props: HTMLAttributes[HTMLDivElement], context: Any) = this()
   }
   @JSImport("react-sticky", "StickyContainer")
   @js.native
@@ -101,9 +99,9 @@ object mod {
     
     var stickyClassName: js.UndefOr[String] = js.undefined
     
-    var stickyStyle: js.UndefOr[js.Any] = js.undefined
+    var stickyStyle: js.UndefOr[Any] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     var topOffset: js.UndefOr[Double] = js.undefined
   }
@@ -150,11 +148,11 @@ object mod {
       
       inline def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
       
-      inline def setStickyStyle(value: js.Any): Self = StObject.set(x, "stickyStyle", value.asInstanceOf[js.Any])
+      inline def setStickyStyle(value: Any): Self = StObject.set(x, "stickyStyle", value.asInstanceOf[js.Any])
       
       inline def setStickyStyleUndefined: Self = StObject.set(x, "stickyStyle", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

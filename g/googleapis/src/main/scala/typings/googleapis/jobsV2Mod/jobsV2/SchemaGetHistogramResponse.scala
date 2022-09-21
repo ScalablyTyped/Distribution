@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Deprecated. Use SearchJobsRequest.histogram_facets instead to make a single
-  * call with both search and histogram.  Output only.  The response of the
-  * GetHistogram method.
-  */
 trait SchemaGetHistogramResponse extends StObject {
   
   /**
-    * Additional information for the API invocation, such as the request
-    * tracking id.
+    * Additional information for the API invocation, such as the request tracking id.
     */
   var metadata: js.UndefOr[SchemaResponseMetadata] = js.undefined
   
@@ -39,6 +33,6 @@ object SchemaGetHistogramResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SchemaHistogramResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaHistogramResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

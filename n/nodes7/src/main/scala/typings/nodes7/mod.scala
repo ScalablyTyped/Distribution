@@ -2,7 +2,6 @@ package typings.nodes7
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.nodes7.nodes7Strings._COMMERR
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("nodes7", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with NodeS7 {
     def this(opts: Options) = this()
@@ -98,7 +97,7 @@ object mod {
       * @param options Contains options for the current connection only
       * @param callback err is either an error object, or undefined on successful connection.
       */
-    def initiateConnection(options: ConnectionOptions, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def initiateConnection(options: ConnectionOptions, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /**
       * Reads the internal polling list and calls `callback` when done

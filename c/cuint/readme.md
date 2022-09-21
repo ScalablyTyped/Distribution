@@ -10,10 +10,10 @@ Unsigned integers for Javascript
 | ------------------ | :-------------: |
 | Full name          | cuint |
 | Keywords           | C, unsigned, integer, 32bits, 64bits |
-| # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 47587946 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6514069.0 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/pierrec/js-cuint)

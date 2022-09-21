@@ -11,9 +11,9 @@ WinJS is a set of JavaScript toolkits that allow developers to build application
 | Full name          | winjs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 55502 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8228.0 |
+| # stars            | 4138.0 |
 
 ## Links
 - [Homepage](http://try.buildwinjs.com/)

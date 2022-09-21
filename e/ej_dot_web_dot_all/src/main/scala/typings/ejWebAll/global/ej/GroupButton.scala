@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.GroupButton")
 @js.native
-class GroupButton protected ()
+open class GroupButton protected ()
   extends StObject
      with typings.ejWebAll.ej.GroupButton {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object GroupButton {
   /* static member */
   @JSGlobal("ej.GroupButton.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.GroupButton.fn")

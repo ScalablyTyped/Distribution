@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RangeDomainConstructor
   extends StObject
-     with Instantiable0[RangeDomain]
+     with /**
+  * Range domains specify a valid [minimum](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html#minValue) and [maximum](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html#maxValue) valid value that can be stored in numeric and date [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html)
+  */
+Instantiable0[RangeDomain]
      with Instantiable1[/* properties */ RangeDomainProperties, RangeDomain] {
   
-  def fromJSON(json: js.Any): RangeDomain = js.native
+  def fromJSON(json: Any): RangeDomain = js.native
 }

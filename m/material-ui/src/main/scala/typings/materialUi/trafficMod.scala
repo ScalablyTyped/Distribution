@@ -10,10 +10,10 @@ object trafficMod {
   
   @JSImport("material-ui/svg-icons/maps/traffic", JSImport.Default)
   @js.native
-  class default () extends MapsTraffic
+  open class default () extends MapsTraffic
   
   @JSImport("material-ui/svg-icons/maps/traffic", "MapsTraffic")
   @js.native
-  class MapsTraffic ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsTraffic ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

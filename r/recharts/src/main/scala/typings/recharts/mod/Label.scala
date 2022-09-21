@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Label")
 @js.native
-class Label protected ()
-  extends Component[LabelProps, js.Object, js.Any] {
+open class Label protected ()
+  extends Component[LabelProps, js.Object, Any] {
   def this(props: LabelProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LabelProps, context: js.Any) = this()
+  def this(props: LabelProps, context: Any) = this()
 }

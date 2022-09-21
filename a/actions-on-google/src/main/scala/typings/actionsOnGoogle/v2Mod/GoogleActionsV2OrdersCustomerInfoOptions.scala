@@ -24,6 +24,6 @@ object GoogleActionsV2OrdersCustomerInfoOptions {
     
     inline def setCustomerInfoPropertiesUndefined: Self = StObject.set(x, "customerInfoProperties", js.undefined)
     
-    inline def setCustomerInfoPropertiesVarargs(value: GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties*): Self = StObject.set(x, "customerInfoProperties", js.Array(value :_*))
+    inline def setCustomerInfoPropertiesVarargs(value: GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties*): Self = StObject.set(x, "customerInfoProperties", js.Array(value*))
   }
 }

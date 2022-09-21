@@ -35,7 +35,7 @@ object AdTechnologyProviders {
     
     inline def setDetectedProviderIdsUndefined: Self = StObject.set(x, "detectedProviderIds", js.undefined)
     
-    inline def setDetectedProviderIdsVarargs(value: String*): Self = StObject.set(x, "detectedProviderIds", js.Array(value :_*))
+    inline def setDetectedProviderIdsVarargs(value: String*): Self = StObject.set(x, "detectedProviderIds", js.Array(value*))
     
     inline def setHasUnidentifiedProvider(value: Boolean): Self = StObject.set(x, "hasUnidentifiedProvider", value.asInstanceOf[js.Any])
     

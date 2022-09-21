@@ -6,18 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConnectionResult extends StObject {
   
+  /**
+    * Whether the connection was successful
+    */
   var connected: Boolean
   
-  var connectionId: String
+  /**
+    * The ID of the connection if it was successful. {@link connection.getUriForConnection} can be used to get
+    * the URI for this connection used by many of the other Extension API functions.
+    */
+  var connectionId: js.UndefOr[String] = js.undefined
   
-  var errorCode: Double
+  /**
+    * The error code number associated with the error if the connection was unsuccessful.
+    *
+    * e.g. 18456
+    * (https://docs.microsoft.com/sql/relational-databases/errors-events/mssqlserver-18456-database-engine-error)
+    */
+  var errorCode: js.UndefOr[Double] = js.undefined
   
-  var errorMessage: String
+  /**
+    * The error message if the connection was unsuccessful
+    *
+    * e.g. Login failed for user '<user>'.
+    */
+  var errorMessage: js.UndefOr[String] = js.undefined
 }
 object ConnectionResult {
   
-  inline def apply(connected: Boolean, connectionId: String, errorCode: Double, errorMessage: String): ConnectionResult = {
-    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], connectionId = connectionId.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+  inline def apply(connected: Boolean): ConnectionResult = {
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionResult]
   }
   
@@ -27,8 +45,14 @@ object ConnectionResult {
     
     inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
+    inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+    
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

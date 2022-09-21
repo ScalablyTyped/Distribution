@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "CriteriaBuilder")
 @js.native
-class CriteriaBuilder[T] protected () extends StObject {
+open class CriteriaBuilder[T] protected () extends StObject {
   def this(primaryTable: Table[T]) = this()
   def this(primaryTable: Table[T], tablePropertyName: String) = this()
   //to arxiko apo to Table.ts 9a benei
-  def this(primaryTable: Table[T], tableName: String, parentBuilder: CriteriaBuilder[js.Any]) = this()
-  def this(primaryTable: Table[T], tablePropertyName: Unit, parentBuilder: CriteriaBuilder[js.Any]) = this()
+  def this(primaryTable: Table[T], tableName: String, parentBuilder: CriteriaBuilder[Any]) = this()
+  def this(primaryTable: Table[T], tablePropertyName: Unit, parentBuilder: CriteriaBuilder[Any]) = this()
   
   def at(tableNameProperty: String): CriteriaBuilder[T] = js.native
   
   /**
     * Auto kanei kuklous mexri na paei sto primary table kai ekei na epistrepsei to sunoliko raw criteria gia execute i kati allo.
     */
-  def build(): js.Any = js.native
+  def build(): Any = js.native
   
   /* private */ def createRulesIfNotExists(): Unit = js.native
   
@@ -43,13 +43,13 @@ class CriteriaBuilder[T] protected () extends StObject {
   
   def parent(): CriteriaBuilder[T] = js.native
   
-  /* private */ var parentBuilder: CriteriaBuilder[js.Any] = js.native
+  /* private */ var parentBuilder: CriteriaBuilder[Any] = js.native
   
   /* private */ var primaryTable: Table[T] = js.native
   
-  /* private */ var rawCriteria: js.Any = js.native
+  /* private */ var rawCriteria: Any = js.native
   
-  def where(key: String, value: js.Any): CriteriaBuilder[T] = js.native
+  def where(key: String, value: Any): CriteriaBuilder[T] = js.native
 }
 object CriteriaBuilder {
   

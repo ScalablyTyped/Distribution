@@ -1,26 +1,27 @@
 package typings.three.global.THREE
 
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("THREE.ArrowHelper")
 @js.native
-class ArrowHelper protected ()
+open class ArrowHelper protected ()
   extends typings.three.mod.ArrowHelper {
   /**
-  	 * @param [dir=new THREE.Vector3( 0, 0, 1 )]
-  	 * @param [origin=new THREE.Vector3( 0, 0, 0 )]
-  	 * @param [length=1]
-  	 * @param [color=0xffff00]
-  	 * @param headLength
-  	 * @param headWidth
-  	 */
+    * @param [dir] Direction from origin. Must be a unit vector.
+    * @param [origin] Point at which the arrow starts.
+    * @param [length] Length of the arrow.
+    * @param [color] Hexadecimal value to define color.
+    * @param [headLength] The length of the head of the arrow.
+    * @param [headWidth] The width of the head of the arrow.
+    */
   def this(
-    dir: typings.three.vector3Mod.Vector3,
+    dir: js.UndefOr[typings.three.vector3Mod.Vector3],
     origin: js.UndefOr[typings.three.vector3Mod.Vector3],
     length: js.UndefOr[Double],
-    color: js.UndefOr[typings.three.colorMod.Color | String | Double],
+    color: js.UndefOr[ColorRepresentation],
     headLength: js.UndefOr[Double],
     headWidth: js.UndefOr[Double]
   ) = this()

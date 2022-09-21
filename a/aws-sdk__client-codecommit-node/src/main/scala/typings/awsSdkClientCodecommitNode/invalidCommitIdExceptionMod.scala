@@ -8,5 +8,5 @@ object invalidCommitIdExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidCommitIdException", "InvalidCommitIdException")
   @js.native
-  val InvalidCommitIdException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidCommitIdException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

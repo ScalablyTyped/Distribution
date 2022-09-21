@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-obj" : "2.0.0"
+      "is-obj" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-obj" : "2.0.0"
+      "is-obj" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

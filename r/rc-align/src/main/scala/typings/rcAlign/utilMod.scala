@@ -16,5 +16,5 @@ object utilMod {
   
   inline def monitorResize(element: HTMLElement, callback: js.Function): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorResize")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  inline def restoreFocus(activeElement: js.Any, container: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreFocus")(activeElement.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def restoreFocus(activeElement: Any, container: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreFocus")(activeElement.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

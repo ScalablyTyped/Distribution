@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShareDirectoryRequest extends StObject {
   
   /**
-    * Identifier of the AWS Managed Microsoft AD directory that you want to share with other AWS accounts.
+    * Identifier of the Managed Microsoft AD directory that you want to share with other Amazon Web Services accounts.
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
-    * The method used when sharing a directory to determine whether the directory should be shared within your AWS organization (ORGANIZATIONS) or with any AWS account by sending a directory sharing request (HANDSHAKE).
+    * The method used when sharing a directory to determine whether the directory should be shared within your Amazon Web Services organization (ORGANIZATIONS) or with any Amazon Web Services account by sending a directory sharing request (HANDSHAKE).
     */
   var ShareMethod: typings.awsSdk.directoryserviceMod.ShareMethod
   

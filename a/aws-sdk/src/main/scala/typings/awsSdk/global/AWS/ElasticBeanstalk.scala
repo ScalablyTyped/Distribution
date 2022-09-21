@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ElasticBeanstalk ()
+open class ElasticBeanstalk ()
   extends typings.awsSdk.mod.ElasticBeanstalk {
   def this(options: ClientConfiguration) = this()
 }

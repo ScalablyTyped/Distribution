@@ -10,15 +10,13 @@ Flexible react notification system
 | ------------------ | :-------------: |
 | Full name          | rr-notifications |
 | Keywords           | react, notifications |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 1387 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 122.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://thegrinder.github.io/rr-notifications)
-- [Bugs](https://github.com/thegrinder/rr-notifications/issues)
-- [Repository](https://github.com/thegrinder/rr-notifications)
 - [Npm](https://www.npmjs.com/package/rr-notifications)
     
 

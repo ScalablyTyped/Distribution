@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Unit]]
-  inline def apply(count: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(melody: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(melody.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  
   @JSImport("beeper", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Unit]]
+  inline def default(count: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(count.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(melody: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(melody.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

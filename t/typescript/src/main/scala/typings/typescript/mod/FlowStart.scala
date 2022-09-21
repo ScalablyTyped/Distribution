@@ -9,7 +9,9 @@ trait FlowStart
      with FlowNodeBase
      with FlowNode {
   
-  var node: js.UndefOr[FunctionExpression | ArrowFunction | MethodDeclaration] = js.undefined
+  var node: js.UndefOr[
+    FunctionExpression | ArrowFunction | MethodDeclaration | GetAccessorDeclaration | SetAccessorDeclaration
+  ] = js.undefined
 }
 object FlowStart {
   
@@ -20,7 +22,9 @@ object FlowStart {
   
   extension [Self <: FlowStart](x: Self) {
     
-    inline def setNode(value: FunctionExpression | ArrowFunction | MethodDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(
+      value: FunctionExpression | ArrowFunction | MethodDeclaration | GetAccessorDeclaration | SetAccessorDeclaration
+    ): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
   }

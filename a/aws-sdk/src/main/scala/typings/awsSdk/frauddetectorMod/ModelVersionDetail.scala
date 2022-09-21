@@ -17,9 +17,14 @@ trait ModelVersionDetail extends StObject {
   var createdTime: js.UndefOr[time] = js.undefined
   
   /**
-    * The event details.
+    * The external events data details. This will be populated if the trainingDataSource for the model version is specified as EXTERNAL_EVENTS.
     */
   var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.undefined
+  
+  /**
+    * The ingested events data details. This will be populated if the trainingDataSource for the model version is specified as INGESTED_EVENTS.
+    */
+  var ingestedEventsDetail: js.UndefOr[IngestedEventsDetail] = js.undefined
   
   /**
     * The timestamp when the model was last updated.
@@ -60,6 +65,11 @@ trait ModelVersionDetail extends StObject {
     * The training results.
     */
   var trainingResult: js.UndefOr[TrainingResult] = js.undefined
+  
+  /**
+    *  The training result details. The details include the relative importance of the variables. 
+    */
+  var trainingResultV2: js.UndefOr[TrainingResultV2] = js.undefined
 }
 object ModelVersionDetail {
   
@@ -81,6 +91,10 @@ object ModelVersionDetail {
     inline def setExternalEventsDetail(value: ExternalEventsDetail): Self = StObject.set(x, "externalEventsDetail", value.asInstanceOf[js.Any])
     
     inline def setExternalEventsDetailUndefined: Self = StObject.set(x, "externalEventsDetail", js.undefined)
+    
+    inline def setIngestedEventsDetail(value: IngestedEventsDetail): Self = StObject.set(x, "ingestedEventsDetail", value.asInstanceOf[js.Any])
+    
+    inline def setIngestedEventsDetailUndefined: Self = StObject.set(x, "ingestedEventsDetail", js.undefined)
     
     inline def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
@@ -113,5 +127,9 @@ object ModelVersionDetail {
     inline def setTrainingResult(value: TrainingResult): Self = StObject.set(x, "trainingResult", value.asInstanceOf[js.Any])
     
     inline def setTrainingResultUndefined: Self = StObject.set(x, "trainingResult", js.undefined)
+    
+    inline def setTrainingResultV2(value: TrainingResultV2): Self = StObject.set(x, "trainingResultV2", value.asInstanceOf[js.Any])
+    
+    inline def setTrainingResultV2Undefined: Self = StObject.set(x, "trainingResultV2", js.undefined)
   }
 }

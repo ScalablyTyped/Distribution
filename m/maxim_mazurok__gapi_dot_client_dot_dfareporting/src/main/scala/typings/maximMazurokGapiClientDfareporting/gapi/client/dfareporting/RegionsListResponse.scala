@@ -29,6 +29,6 @@ object RegionsListResponse {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value*))
   }
 }

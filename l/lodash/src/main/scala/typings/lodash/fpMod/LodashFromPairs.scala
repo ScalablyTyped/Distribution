@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashFromPairs extends StObject {
   
-  def apply(): Dictionary[js.Any] = js.native
-  def apply(pairs: List[js.Array[js.Any]]): Dictionary[js.Any] = js.native
+  def apply(): Dictionary[Any] = js.native
+  def apply(pairs: List[js.Array[Any]]): Dictionary[Any] = js.native
 }

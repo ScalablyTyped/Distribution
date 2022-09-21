@@ -183,7 +183,7 @@ object coreSerializationMod {
       
       inline def setNoise_shapeUndefined: Self = StObject.set(x, "noise_shape", js.undefined)
       
-      inline def setNoise_shapeVarargs(value: Double*): Self = StObject.set(x, "noise_shape", js.Array(value :_*))
+      inline def setNoise_shapeVarargs(value: Double*): Self = StObject.set(x, "noise_shape", js.Array(value*))
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
@@ -235,7 +235,7 @@ object coreSerializationMod {
       
       inline def setDims(value: js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
       
-      inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
+      inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value*))
     }
   }
   
@@ -279,7 +279,7 @@ object coreSerializationMod {
       
       inline def setTarget_shape(value: Shape): Self = StObject.set(x, "target_shape", value.asInstanceOf[js.Any])
       
-      inline def setTarget_shapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "target_shape", js.Array(value :_*))
+      inline def setTarget_shapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "target_shape", js.Array(value*))
     }
   }
   

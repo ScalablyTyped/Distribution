@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SourceBufferEventMap extends StObject {
   
+  /* standard dom */
   var abort: Event
   
+  /* standard dom */
   var error: Event
   
+  /* standard dom */
   var update: Event
   
+  /* standard dom */
   var updateend: Event
   
+  /* standard dom */
   var updatestart: Event
 }
 object SourceBufferEventMap {

@@ -10,10 +10,10 @@ A simple and powerful abstraction of node-fibers
 | ------------------ | :-------------: |
 | Full name          | asyncblock |
 | Keywords           | fiber, fibers, coroutine, stop, go, green, red |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 8675 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 755.6666666666666 |
+| # stars            | 194.0 |
 
 ## Links
 - [Homepage](https://github.com/scriby/asyncblock)

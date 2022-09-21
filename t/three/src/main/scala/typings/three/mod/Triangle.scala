@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "Triangle")
 @js.native
-class Triangle ()
-  extends typings.three.triangleMod.Triangle {
+open class Triangle ()
+  extends typings.three.threeMod.Triangle {
   def this(a: typings.three.vector3Mod.Vector3) = this()
   def this(a: Unit, b: typings.three.vector3Mod.Vector3) = this()
   def this(a: typings.three.vector3Mod.Vector3, b: typings.three.vector3Mod.Vector3) = this()

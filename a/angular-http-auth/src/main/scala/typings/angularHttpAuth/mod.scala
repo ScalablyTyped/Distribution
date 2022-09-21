@@ -16,13 +16,13 @@ object mod {
     trait IAuthService extends StObject {
       
       def loginCancelled(): Unit = js.native
-      def loginCancelled(data: js.Any): Unit = js.native
-      def loginCancelled(data: js.Any, reason: js.Any): Unit = js.native
-      def loginCancelled(data: Unit, reason: js.Any): Unit = js.native
+      def loginCancelled(data: Any): Unit = js.native
+      def loginCancelled(data: Any, reason: Any): Unit = js.native
+      def loginCancelled(data: Unit, reason: Any): Unit = js.native
       
       def loginConfirmed(): Unit = js.native
-      def loginConfirmed(data: js.Any): Unit = js.native
-      def loginConfirmed(data: js.Any, configUpdater: Function): Unit = js.native
+      def loginConfirmed(data: Any): Unit = js.native
+      def loginConfirmed(data: Any, configUpdater: Function): Unit = js.native
       def loginConfirmed(data: Unit, configUpdater: Function): Unit = js.native
     }
     
@@ -32,7 +32,7 @@ object mod {
       def append(config: IRequestConfig, deferred: Reject): Unit = js.native
       
       def rejectAll(): Unit = js.native
-      def rejectAll(reason: js.Any): Unit = js.native
+      def rejectAll(reason: Any): Unit = js.native
       
       def retryAll(): Unit = js.native
       def retryAll(updater: Function): Unit = js.native

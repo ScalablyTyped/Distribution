@@ -23,6 +23,6 @@ object ScaleMultiFieldsRef {
     
     inline def setFields(value: js.Array[ScaleField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: ScaleField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: ScaleField*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

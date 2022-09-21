@@ -12,10 +12,10 @@ trait QueryConstructor
      with /**
   * This class defines parameters for executing queries for features from a layer or layer view.
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html)
   */
-Instantiable0[Query]
-     with Instantiable1[/* properties */ QueryProperties, Query] {
+Instantiable0[Query_]
+     with Instantiable1[/* properties */ QueryProperties, Query_] {
   
-  def fromJSON(json: js.Any): Query = js.native
+  def fromJSON(json: Any): Query_ = js.native
 }

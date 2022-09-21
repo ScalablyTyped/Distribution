@@ -10,7 +10,7 @@ object autoDetachObserverMod {
   
   @JSImport("wonder-frp/dist/commonjs/observer/AutoDetachObserver", "AutoDetachObserver")
   @js.native
-  class AutoDetachObserver protected () extends Observer {
+  open class AutoDetachObserver protected () extends Observer {
     def this(observer: IObserver) = this()
     def this(onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()
   }
@@ -21,7 +21,7 @@ object autoDetachObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(observer: IObserver): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(observer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def create(onNext: js.Function, onError: js.Function, onCompleted: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def create(observer: IObserver): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(observer.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def create(onNext: js.Function, onError: js.Function, onCompleted: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

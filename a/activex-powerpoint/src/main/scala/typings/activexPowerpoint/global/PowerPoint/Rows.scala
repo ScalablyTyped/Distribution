@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Rows")
 @js.native
-/* private */ class Rows ()
+/* private */ open class Rows ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Rows

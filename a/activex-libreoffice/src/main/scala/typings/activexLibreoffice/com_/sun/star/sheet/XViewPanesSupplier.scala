@@ -27,7 +27,7 @@ object XViewPanesSupplier {
     ViewPanes: XIndexAccess,
     acquire: () => Unit,
     getViewPanes: () => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XViewPanesSupplier = {
     val __obj = js.Dynamic.literal(ViewPanes = ViewPanes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getViewPanes = js.Any.fromFunction0(getViewPanes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

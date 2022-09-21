@@ -24,7 +24,7 @@ trait StartSimulationJobBatchResponse extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of created simulation job request summaries.
@@ -82,7 +82,7 @@ object StartSimulationJobBatchResponse {
     
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -90,13 +90,13 @@ object StartSimulationJobBatchResponse {
     
     inline def setCreatedRequestsUndefined: Self = StObject.set(x, "createdRequests", js.undefined)
     
-    inline def setCreatedRequestsVarargs(value: SimulationJobSummary*): Self = StObject.set(x, "createdRequests", js.Array(value :_*))
+    inline def setCreatedRequestsVarargs(value: SimulationJobSummary*): Self = StObject.set(x, "createdRequests", js.Array(value*))
     
     inline def setFailedRequests(value: FailedCreateSimulationJobRequests): Self = StObject.set(x, "failedRequests", value.asInstanceOf[js.Any])
     
     inline def setFailedRequestsUndefined: Self = StObject.set(x, "failedRequests", js.undefined)
     
-    inline def setFailedRequestsVarargs(value: FailedCreateSimulationJobRequest*): Self = StObject.set(x, "failedRequests", js.Array(value :_*))
+    inline def setFailedRequestsVarargs(value: FailedCreateSimulationJobRequest*): Self = StObject.set(x, "failedRequests", js.Array(value*))
     
     inline def setFailureCode(value: SimulationJobBatchErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object StartSimulationJobBatchResponse {
     
     inline def setPendingRequestsUndefined: Self = StObject.set(x, "pendingRequests", js.undefined)
     
-    inline def setPendingRequestsVarargs(value: SimulationJobRequest*): Self = StObject.set(x, "pendingRequests", js.Array(value :_*))
+    inline def setPendingRequestsVarargs(value: SimulationJobRequest*): Self = StObject.set(x, "pendingRequests", js.Array(value*))
     
     inline def setStatus(value: SimulationJobBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

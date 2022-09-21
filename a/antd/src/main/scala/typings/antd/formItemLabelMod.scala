@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.FormItemLabelPropsrequire
 import typings.antd.anon.Icon
 import typings.antd.formFormMod.RequiredMark
+import typings.antd.formInterfaceMod.FormLabelAlign
 import typings.antd.gridColMod.ColProps
-import typings.antd.interfaceMod.FormLabelAlign
 import typings.antd.tooltipMod.TooltipProps
 import typings.react.mod.FC
 import typings.react.mod.ReactNode

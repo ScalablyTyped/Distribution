@@ -8,5 +8,5 @@ object ssedescriptionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_SSEDescription", "_SSEDescription")
   @js.native
-  val SSEDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SSEDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

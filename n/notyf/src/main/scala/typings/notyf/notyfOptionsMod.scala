@@ -36,8 +36,8 @@ object notyfOptionsMod {
   }
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias notyf.notyf/notyf.options.DeepPartial<T[P]> * / object}
-    */ typings.notyf.notyfStrings.DeepPartial & TopLevel[js.Any]
+  {[ P in keyof T ]:? notyf.notyf/notyf.options.DeepPartial<T[P]>}
+    */ typings.notyf.notyfStrings.DeepPartial & TopLevel[T]
   
   trait INotyfIcon extends StObject {
     
@@ -45,7 +45,7 @@ object notyfOptionsMod {
     
     var color: String
     
-    var tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any
+    var tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any
     
     var text: String
   }
@@ -54,7 +54,7 @@ object notyfOptionsMod {
     inline def apply(
       className: String,
       color: String,
-      tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any,
+      tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any,
       text: String
     ): INotyfIcon = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object notyfOptionsMod {
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setTagName(
-        value: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any
+        value: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
@@ -90,7 +90,7 @@ object notyfOptionsMod {
     
     var duration: Double
     
-    var icon: INotyfIcon | `false`
+    var icon: String | INotyfIcon | `false`
     
     var message: String
     
@@ -108,7 +108,7 @@ object notyfOptionsMod {
       className: String,
       dismissible: Boolean,
       duration: Double,
-      icon: INotyfIcon | `false`,
+      icon: String | INotyfIcon | `false`,
       message: String,
       position: INotyfPosition,
       ripple: Boolean,
@@ -131,7 +131,7 @@ object notyfOptionsMod {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setIcon(value: INotyfIcon | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String | INotyfIcon | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -180,7 +180,7 @@ object notyfOptionsMod {
       
       inline def setTypes(value: js.Array[DeepPartialINotyfNotifica]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: DeepPartialINotyfNotifica*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: DeepPartialINotyfNotifica*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   

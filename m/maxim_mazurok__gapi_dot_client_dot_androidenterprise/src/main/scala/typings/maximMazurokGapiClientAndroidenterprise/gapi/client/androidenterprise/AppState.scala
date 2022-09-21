@@ -25,7 +25,7 @@ object AppState {
     
     inline def setKeyedAppStateUndefined: Self = StObject.set(x, "keyedAppState", js.undefined)
     
-    inline def setKeyedAppStateVarargs(value: KeyedAppState*): Self = StObject.set(x, "keyedAppState", js.Array(value :_*))
+    inline def setKeyedAppStateVarargs(value: KeyedAppState*): Self = StObject.set(x, "keyedAppState", js.Array(value*))
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

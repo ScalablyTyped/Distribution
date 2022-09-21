@@ -1,21 +1,20 @@
 package typings.bitcoinjsLib
 
 import typings.bitcoinjsLib.transactionMod.Transaction
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockMod {
   
-  @JSImport("bitcoinjs-lib/types/block", "Block")
+  @JSImport("bitcoinjs-lib/src/block", "Block")
   @js.native
-  class Block () extends StObject {
+  open class Block () extends StObject {
     
-    /* private */ var __checkMerkleRoot: js.Any = js.native
+    /* private */ var __checkMerkleRoot: Any = js.native
     
-    /* private */ var __checkWitnessCommit: js.Any = js.native
+    /* private */ var __checkWitnessCommit: Any = js.native
     
     var bits: Double = js.native
     
@@ -32,7 +31,7 @@ object blockMod {
     
     def getId(): String = js.native
     
-    def getUTCDate(): Date = js.native
+    def getUTCDate(): js.Date = js.native
     
     def getWitnessCommit(): Buffer | Null = js.native
     
@@ -65,7 +64,7 @@ object blockMod {
   /* static members */
   object Block {
     
-    @JSImport("bitcoinjs-lib/types/block", "Block")
+    @JSImport("bitcoinjs-lib/src/block", "Block")
     @js.native
     val ^ : js.Any = js.native
     

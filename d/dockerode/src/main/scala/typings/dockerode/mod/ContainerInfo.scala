@@ -75,17 +75,17 @@ object ContainerInfo {
     
     inline def setMounts(value: js.Array[Destination]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
     
-    inline def setMountsVarargs(value: Destination*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: Destination*): Self = StObject.set(x, "Mounts", js.Array(value*))
     
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setNetworkSettings(value: Networks): Self = StObject.set(x, "NetworkSettings", value.asInstanceOf[js.Any])
     
     inline def setPorts(value: js.Array[Port]): Self = StObject.set(x, "Ports", value.asInstanceOf[js.Any])
     
-    inline def setPortsVarargs(value: Port*): Self = StObject.set(x, "Ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Port*): Self = StObject.set(x, "Ports", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ trait Image extends StObject {
   
   var base64: js.UndefOr[String] = js.undefined
   
-  var buffer: js.UndefOr[Buffer] = js.undefined
+  var buffer: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   
   var `extension`: jpeg | png | gif
   
@@ -31,7 +31,7 @@ object Image {
     
     inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
     
-    inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     

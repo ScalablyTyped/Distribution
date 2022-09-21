@@ -121,7 +121,7 @@ object keytipTypesMod {
       
       inline def setKeySequences(value: js.Array[String]): Self = StObject.set(x, "keySequences", value.asInstanceOf[js.Any])
       
-      inline def setKeySequencesVarargs(value: String*): Self = StObject.set(x, "keySequences", js.Array(value :_*))
+      inline def setKeySequencesVarargs(value: String*): Self = StObject.set(x, "keySequences", js.Array(value*))
       
       inline def setOffset(value: Point): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -139,7 +139,7 @@ object keytipTypesMod {
       
       inline def setOverflowSetSequenceUndefined: Self = StObject.set(x, "overflowSetSequence", js.undefined)
       
-      inline def setOverflowSetSequenceVarargs(value: String*): Self = StObject.set(x, "overflowSetSequence", js.Array(value :_*))
+      inline def setOverflowSetSequenceVarargs(value: String*): Self = StObject.set(x, "overflowSetSequence", js.Array(value*))
       
       inline def setStyles(value: IStyleFunctionOrObject[IKeytipStyleProps, IKeytipStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

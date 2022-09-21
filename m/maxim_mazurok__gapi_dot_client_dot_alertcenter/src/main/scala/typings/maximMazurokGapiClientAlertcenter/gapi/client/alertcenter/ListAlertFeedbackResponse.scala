@@ -22,6 +22,6 @@ object ListAlertFeedbackResponse {
     
     inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
-    inline def setFeedbackVarargs(value: AlertFeedback*): Self = StObject.set(x, "feedback", js.Array(value :_*))
+    inline def setFeedbackVarargs(value: AlertFeedback*): Self = StObject.set(x, "feedback", js.Array(value*))
   }
 }

@@ -13,9 +13,9 @@ trait LangOptions extends StObject {
     * Highcharts Accessibility.
     *
     * For more dynamic control over the accessibility functionality, see
-    * accessibility.pointDescriptionFormatter,
-    * accessibility.seriesDescriptionFormatter, and
-    * accessibility.screenReaderSectionFormatter.
+    * accessibility.point.descriptionFormatter,
+    * accessibility.series.descriptionFormatter, and
+    * accessibility.screenReaderSection.beforeChartFormatter.
     */
   var accessibility: js.UndefOr[LangAccessibilityOptions] = js.undefined
   
@@ -67,13 +67,6 @@ trait LangOptions extends StObject {
   var downloadXLS: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highmaps) The text for the button that appears when drilling
-    * down, linking back to the parent series. The parent series' name is
-    * inserted for `{series.name}`.
-    */
-  var drillUpText: js.UndefOr[String] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the menu item to exit the chart from full screen.
     */
@@ -101,6 +94,8 @@ trait LangOptions extends StObject {
     * `chart.showLoading`.
     */
   var loading: js.UndefOr[String] = js.undefined
+  
+  var mainBreadcrumb: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array containing the months
@@ -144,7 +139,8 @@ trait LangOptions extends StObject {
   
   /**
     * (Highstock, Gantt) The text for the label for the "from" input box in the
-    * range selector.
+    * range selector. Since v9.0, this string is empty as the label is not
+    * rendered by default.
     */
   var rangeSelectorFrom: js.UndefOr[String] = js.undefined
   
@@ -274,10 +270,6 @@ object LangOptions {
     
     inline def setDownloadXLSUndefined: Self = StObject.set(x, "downloadXLS", js.undefined)
     
-    inline def setDrillUpText(value: String): Self = StObject.set(x, "drillUpText", value.asInstanceOf[js.Any])
-    
-    inline def setDrillUpTextUndefined: Self = StObject.set(x, "drillUpText", js.undefined)
-    
     inline def setExitFullscreen(value: String): Self = StObject.set(x, "exitFullscreen", value.asInstanceOf[js.Any])
     
     inline def setExitFullscreenUndefined: Self = StObject.set(x, "exitFullscreen", js.undefined)
@@ -298,11 +290,15 @@ object LangOptions {
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
+    inline def setMainBreadcrumb(value: String): Self = StObject.set(x, "mainBreadcrumb", value.asInstanceOf[js.Any])
+    
+    inline def setMainBreadcrumbUndefined: Self = StObject.set(x, "mainBreadcrumb", js.undefined)
+    
     inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
     inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
-    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
     
     inline def setNavigation(value: LangNavigationOptions): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
@@ -320,7 +316,7 @@ object LangOptions {
     
     inline def setNumericSymbolsUndefined: Self = StObject.set(x, "numericSymbols", js.undefined)
     
-    inline def setNumericSymbolsVarargs(value: String*): Self = StObject.set(x, "numericSymbols", js.Array(value :_*))
+    inline def setNumericSymbolsVarargs(value: String*): Self = StObject.set(x, "numericSymbols", js.Array(value*))
     
     inline def setPrintChart(value: String): Self = StObject.set(x, "printChart", value.asInstanceOf[js.Any])
     
@@ -350,13 +346,13 @@ object LangOptions {
     
     inline def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
     
-    inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+    inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value*))
     
     inline def setShortWeekdays(value: js.Array[String]): Self = StObject.set(x, "shortWeekdays", value.asInstanceOf[js.Any])
     
     inline def setShortWeekdaysUndefined: Self = StObject.set(x, "shortWeekdays", js.undefined)
     
-    inline def setShortWeekdaysVarargs(value: String*): Self = StObject.set(x, "shortWeekdays", js.Array(value :_*))
+    inline def setShortWeekdaysVarargs(value: String*): Self = StObject.set(x, "shortWeekdays", js.Array(value*))
     
     inline def setStockTools(value: LangStockToolsOptions): Self = StObject.set(x, "stockTools", value.asInstanceOf[js.Any])
     
@@ -378,7 +374,7 @@ object LangOptions {
     
     inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
     
-    inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+    inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
     
     inline def setZoomIn(value: String): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     

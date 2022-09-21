@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WritableStream[W] extends StObject {
   
   def abort(): js.Promise[Unit] = js.native
-  def abort(reason: js.Any): js.Promise[Unit] = js.native
+  def abort(reason: Any): js.Promise[Unit] = js.native
   
   def close(): js.Promise[Unit] = js.native
   

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Resource extends StObject {
   
   /**
-    * The name of the S3 bucket.
+    * (Discontinued) The name of the S3 bucket.
     */
   var bucketName: BucketName
   
   /**
-    * The prefix of the S3 bucket. 
+    * (Discontinued) The prefix of the S3 bucket.
     */
   var prefix: js.UndefOr[Prefix] = js.undefined
 }

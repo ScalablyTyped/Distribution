@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Pareto")
 @js.native
-class Pareto ()
+open class Pareto ()
   extends typings.ranjs.mod.dist.Pareto {
   def this(xmin: Double) = this()
   def this(xmin: Double, alpha: Double) = this()

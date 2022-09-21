@@ -1,11 +1,10 @@
 package typings.grommet
 
-import typings.grommet.anon.CloseMenu
 import typings.grommet.anon.ColorOpacity
-import typings.grommet.anon.Right
-import typings.grommet.buttonMod.ButtonType
+import typings.grommet.anon.Left
+import typings.grommet.anon.OpenMenu
+import typings.grommet.buttonMod.ButtonExtendedProps
 import typings.grommet.dropMod.DropProps
-import typings.grommet.grommetStrings.icon
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
@@ -15,7 +14,6 @@ import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.JustifyContentType
 import typings.grommet.utilsMod.MarginType
-import typings.grommet.utilsMod.Omit
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -26,7 +24,19 @@ object menuMod {
   
   @JSImport("grommet/components/Menu", "Menu")
   @js.native
-  val Menu: FC[MenuProps & (Omit[ButtonType, icon])] = js.native
+  val Menu: FC[MenuExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof grommet.grommet/components/Button.ButtonType, 'icon' | 'size' | 'children'> ]: grommet.grommet/components/Button.ButtonType[P]} */ trait MenuExtendedProps
+    extends StObject
+       with MenuProps
+  object MenuExtendedProps {
+    
+    inline def apply(items: js.Array[js.Array[ButtonExtendedProps] | ButtonExtendedProps]): MenuExtendedProps = {
+      val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MenuExtendedProps]
+    }
+  }
   
   trait MenuProps extends StObject {
     
@@ -34,9 +44,11 @@ object menuMod {
     
     var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
+    var children: js.UndefOr[js.Function | ReactNode] = js.undefined
+    
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dropAlign: js.UndefOr[Right] = js.undefined
+    var dropAlign: js.UndefOr[Left] = js.undefined
     
     var dropBackground: js.UndefOr[String | ColorOpacity] = js.undefined
     
@@ -48,7 +60,7 @@ object menuMod {
     
     var icon: js.UndefOr[Boolean | ReactNode] = js.undefined
     
-    var items: js.Array[js.Object]
+    var items: js.Array[js.Array[ButtonExtendedProps] | ButtonExtendedProps]
     
     var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
     
@@ -56,7 +68,7 @@ object menuMod {
     
     var margin: js.UndefOr[MarginType] = js.undefined
     
-    var messages: js.UndefOr[CloseMenu] = js.undefined
+    var messages: js.UndefOr[OpenMenu] = js.undefined
     
     var open: js.UndefOr[Boolean] = js.undefined
     
@@ -64,7 +76,7 @@ object menuMod {
   }
   object MenuProps {
     
-    inline def apply(items: js.Array[js.Object]): MenuProps = {
+    inline def apply(items: js.Array[js.Array[ButtonExtendedProps] | ButtonExtendedProps]): MenuProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuProps]
     }
@@ -79,11 +91,15 @@ object menuMod {
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
+      inline def setChildren(value: js.Function | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDropAlign(value: Right): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
+      inline def setDropAlign(value: Left): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
       
       inline def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
       
@@ -107,9 +123,9 @@ object menuMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Array[ButtonExtendedProps] | ButtonExtendedProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: (js.Array[ButtonExtendedProps] | ButtonExtendedProps)*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setJustifyContent(value: JustifyContentType): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
@@ -123,7 +139,7 @@ object menuMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMessages(value: CloseMenu): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: OpenMenu): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
       inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       

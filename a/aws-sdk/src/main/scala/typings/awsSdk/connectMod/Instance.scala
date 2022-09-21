@@ -14,10 +14,10 @@ trait Instance extends StObject {
   /**
     * When the instance was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var Id: js.UndefOr[InstanceId] = js.undefined
   
@@ -69,7 +69,7 @@ object Instance {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

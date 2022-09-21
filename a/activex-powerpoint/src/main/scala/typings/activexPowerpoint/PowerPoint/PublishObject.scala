@@ -13,7 +13,7 @@ trait PublishObject extends StObject {
   
   var HTMLVersion: PpHTMLVersion
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.PublishObject_typekey")
   var PowerPointDotPublishObject_typekey: PublishObject
@@ -36,7 +36,7 @@ object PublishObject {
     Application: Application,
     FileName: String,
     HTMLVersion: PpHTMLVersion,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPublishObject_typekey: PublishObject,
     Publish: () => Unit,
     RangeEnd: Double,
@@ -58,7 +58,7 @@ object PublishObject {
     
     inline def setHTMLVersion(value: PpHTMLVersion): Self = StObject.set(x, "HTMLVersion", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPublishObject_typekey(value: PublishObject): Self = StObject.set(x, "PowerPoint.PublishObject_typekey", value.asInstanceOf[js.Any])
     

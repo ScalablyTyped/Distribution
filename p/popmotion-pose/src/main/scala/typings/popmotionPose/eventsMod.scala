@@ -17,7 +17,7 @@ object eventsMod {
   inline def default(
     element: Element,
     activeActions: ActiveActions[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any
     ],
     poser: DomPopmotionPoser,
     hasProps: DomPopmotionConfig

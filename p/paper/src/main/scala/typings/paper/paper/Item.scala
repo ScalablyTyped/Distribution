@@ -159,7 +159,7 @@ trait Item extends StObject {
     * A plain javascript object which can be used to store
     * arbitrary data on the item.
     */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /** 
     * Emit an event on the item.
@@ -953,19 +953,24 @@ trait Item extends StObject {
     * Rasterizes the item into a newly created Raster object. The item itself
     * is not removed after rasterization.
     * 
-    * @param resolution - the resolution of the raster
-    *     in pixels per inch (DPI). If not specified, the value of
-    *     `view.resolution` is used.
-    * @param insert - specifies whether the raster should be
+    * @option [resolution=view.resolution] {Number} the desired resolution to
+    *     be used when rasterizing, in pixels per inch (DPI). If not specified,
+    *     the value of `view.resolution` is used by default.
+    * @option [raster=null] {Raster} specifies a raster to be reused when
+    *     rasterizing. If the raster has the desired size already, then the
+    *     underlying canvas is reused and no new memory needs to be allocated.
+    *     If no raster is provided, a new raster item is created and returned
+    *     instead.
+    * @option [insert=true] {Boolean} specifies whether the raster should be
     *     inserted into the scene graph. When set to `true`, it is inserted
-    *     above the original
+    *     above the rasterized item.
     * 
-    * @return the newly created raster item
+    * @param options - the rasterization options
+    * 
+    * @return the reused raster or the newly created raster item
     */
   def rasterize(): Raster = js.native
-  def rasterize(resolution: Double): Raster = js.native
-  def rasterize(resolution: Double, insert: Boolean): Raster = js.native
-  def rasterize(resolution: Unit, insert: Boolean): Raster = js.native
+  def rasterize(options: js.Object): Raster = js.native
   
   /** 
     * If this is a group, layer or compound-path with only one child-item,
@@ -974,7 +979,7 @@ trait Item extends StObject {
     * 
     * @return the reduced item
     */
-  def reduce(options: js.Any): Item = js.native
+  def reduce(options: Any): Item = js.native
   
   /** 
     * Removes the item and all its children from the project. The item is not

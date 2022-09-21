@@ -10,10 +10,10 @@ Type definitions for Meteor
 | ------------------ | :-------------: |
 | Full name          | meteor-typings |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 27229 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1488.6666666666667 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/meteor-typings/meteor#readme)

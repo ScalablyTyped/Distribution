@@ -14,7 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof Response` */
 @JSImport("tabris", "Response")
 @js.native
-class Response ()
+/**
+  * Represents an HTTP Response as used by `fetch()`.
+  */
+open class Response ()
   extends StObject
      with typings.tabris.Response {
   def this(body: String) = this()

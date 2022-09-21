@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Curve3 extends StObject {
   
-  /* private */ var _computeLength: js.Any
+  /* private */ var _computeLength: Any
   
-  /* private */ var _length: js.Any
+  /* private */ var _length: Any
   
-  /* private */ var _points: js.Any
+  /* private */ var _points: Any
   
   /**
     * Returns a new instance of Curve3 object : var curve = curveA.continue(curveB);
@@ -34,9 +34,9 @@ trait Curve3 extends StObject {
 object Curve3 {
   
   inline def apply(
-    _computeLength: js.Any,
-    _length: js.Any,
-    _points: js.Any,
+    _computeLength: Any,
+    _length: Any,
+    _points: Any,
     continue: DeepImmutable[Curve3] => Curve3,
     getPoints: () => js.Array[Vector3],
     length: () => Double
@@ -53,10 +53,10 @@ object Curve3 {
     
     inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    inline def set_computeLength(value: js.Any): Self = StObject.set(x, "_computeLength", value.asInstanceOf[js.Any])
+    inline def set_computeLength(value: Any): Self = StObject.set(x, "_computeLength", value.asInstanceOf[js.Any])
     
-    inline def set_length(value: js.Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
+    inline def set_length(value: Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
     
-    inline def set_points(value: js.Any): Self = StObject.set(x, "_points", value.asInstanceOf[js.Any])
+    inline def set_points(value: Any): Self = StObject.set(x, "_points", value.asInstanceOf[js.Any])
   }
 }

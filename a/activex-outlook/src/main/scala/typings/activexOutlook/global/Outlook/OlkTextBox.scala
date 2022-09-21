@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Outlook TextBox */
 @JSGlobal("Outlook.OlkTextBox")
 @js.native
-/* private */ class OlkTextBox ()
+/* private */ open class OlkTextBox ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkTextBox {
   
@@ -121,7 +121,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var TextAlign: OlTextAlign = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
   /* CompleteClass */
   var WordWrap: Boolean = js.native

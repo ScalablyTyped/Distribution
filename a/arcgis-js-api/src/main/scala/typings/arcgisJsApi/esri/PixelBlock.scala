@@ -9,15 +9,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u16
 import typings.arcgisJsApi.arcgisJsApiStrings.u32
 import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,21 +23,21 @@ trait PixelBlock
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#addData)
     */
-  def addData(planeData: PixelBlockAddDataPlaneData): Unit = js.native
+  def addData(planeData: PixelBlockAddDataPlaneData): scala.Unit = js.native
   
   /**
     * Returns pixels and masks using a single array in bip format (e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#getAsRGBA)
     */
-  def getAsRGBA(): Uint8ClampedArray = js.native
+  def getAsRGBA(): js.typedarray.Uint8ClampedArray = js.native
   
   /**
     * Similar to [getAsRGBA](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#getAsRGBA), but returns floating point data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#getAsRGBAFloat)
     */
-  def getAsRGBAFloat(): Float32Array = js.native
+  def getAsRGBAFloat(): js.typedarray.Float32Array = js.native
   
   /**
     * Returns the plane band count of the PixelBlock.
@@ -67,7 +58,7 @@ trait PixelBlock
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#mask)
     */
-  var mask: js.Array[Double] | Uint8Array = js.native
+  var mask: js.Array[Double] | js.typedarray.Uint8Array = js.native
   
   /**
     * Indicates whether mask should be used as alpha values.
@@ -88,7 +79,9 @@ trait PixelBlock
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels)
     */
-  var pixels: js.Array[Double] | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array = js.native
+  var pixels: js.Array[
+    js.Array[Double] | js.typedarray.Float32Array | js.typedarray.Float64Array | js.typedarray.Int16Array | js.typedarray.Int32Array | js.typedarray.Int8Array | js.typedarray.Uint16Array | js.typedarray.Uint32Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray
+  ] = js.native
   
   /**
     * An array of objects containing numeric statistical properties.
@@ -98,7 +91,7 @@ trait PixelBlock
   var statistics: js.Array[PixelBlockStatistics] = js.native
   
   /**
-    * Number of valid pixels.
+    * Number of valid pixels
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#validPixelCount)
     */

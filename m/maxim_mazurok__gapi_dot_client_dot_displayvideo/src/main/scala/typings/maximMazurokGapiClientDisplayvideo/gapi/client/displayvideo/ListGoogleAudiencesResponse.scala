@@ -25,7 +25,7 @@ object ListGoogleAudiencesResponse {
     
     inline def setGoogleAudiencesUndefined: Self = StObject.set(x, "googleAudiences", js.undefined)
     
-    inline def setGoogleAudiencesVarargs(value: GoogleAudience*): Self = StObject.set(x, "googleAudiences", js.Array(value :_*))
+    inline def setGoogleAudiencesVarargs(value: GoogleAudience*): Self = StObject.set(x, "googleAudiences", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

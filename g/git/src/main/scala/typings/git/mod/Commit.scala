@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "Commit")
 @js.native
-class Commit protected () extends StObject {
+open class Commit protected () extends StObject {
   def this(
     repo: Repo,
     id: String,
-    parents: js.Array[js.Any],
-    tree: js.Any,
+    parents: js.Array[Any],
+    tree: Any,
     author: Actor,
     authoredDate: String,
     committer: Actor,
     committedDate: String,
     message: String,
-    filechanges: js.Any
+    filechanges: Any
   ) = this()
   
-  var _id_abbrev: js.Any = js.native
+  var _id_abbrev: Any = js.native
   
   var author: Actor = js.native
   
@@ -33,7 +33,7 @@ class Commit protected () extends StObject {
   
   def diffs(callback: js.Function): Unit = js.native
   
-  var filechanges: js.Any = js.native
+  var filechanges: Any = js.native
   
   var id: String = js.native
   
@@ -43,7 +43,7 @@ class Commit protected () extends StObject {
   
   var message: String = js.native
   
-  var parents: js.Array[js.Any] = js.native
+  var parents: js.Array[Any] = js.native
   
   var repo: Repo = js.native
   
@@ -55,7 +55,7 @@ class Commit protected () extends StObject {
   
   def toPatch(callback: js.Function): Unit = js.native
   
-  var tree: js.Any = js.native
+  var tree: Any = js.native
 }
 /* static members */
 object Commit {
@@ -64,15 +64,15 @@ object Commit {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def count(repo: js.Any, ref: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def count(repo: Any, ref: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def diff(repo: js.Any, a: js.Any, b: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diff(repo: js.Any, a: js.Any, b: js.Any, paths: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diff(repo: js.Any, a: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diff(repo: Any, a: Any, b: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diff(repo: Any, a: Any, b: Any, paths: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diff(repo: Any, a: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(repo.asInstanceOf[js.Any], a.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def find_all(repo: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def find_all(repo: js.Any, reference: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def find_all(repo: js.Any, reference: js.Any, options: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def find_all(repo: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def find_all(repo: Any, reference: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def find_all(repo: Any, reference: Any, options: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find_all")(repo.asInstanceOf[js.Any], reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def list_from_string(repo: js.Any, text: js.Any): js.Array[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list_from_string")(repo.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Array[Commit]]
+  inline def list_from_string(repo: Any, text: Any): js.Array[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list_from_string")(repo.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Array[Commit]]
 }

@@ -1,10 +1,10 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientContainer.anon.KeyNameOauthtoken
+import typings.maximMazurokGapiClientContainer.anon.Callback
 import typings.maximMazurokGapiClientContainer.anon.KeyOauthtoken
-import typings.maximMazurokGapiClientContainer.anon.Name
 import typings.maximMazurokGapiClientContainer.anon.NameOauthtokenOperationId
+import typings.maximMazurokGapiClientContainer.anon.NameOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientContainer.anon.OauthtokenOperationId
 import typings.maximMazurokGapiClientContainer.anon.OauthtokenParent
 import typings.maximMazurokGapiClientContainer.anon.OperationId
@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OperationsResource extends StObject {
   
+  def cancel(request: Callback, body: CancelOperationRequest): Request[js.Object] = js.native
   /** Cancels the specified operation. */
-  def cancel(request: KeyNameOauthtoken): Request[js.Object] = js.native
-  def cancel(request: Name, body: CancelOperationRequest): Request[js.Object] = js.native
+  def cancel(request: NameOauthtokenPrettyPrint): Request[js.Object] = js.native
   /** Cancels the specified operation. */
   def cancel(request: OauthtokenOperationId): Request[js.Object] = js.native
   def cancel(request: OperationIdPrettyPrint, body: CancelOperationRequest): Request[js.Object] = js.native

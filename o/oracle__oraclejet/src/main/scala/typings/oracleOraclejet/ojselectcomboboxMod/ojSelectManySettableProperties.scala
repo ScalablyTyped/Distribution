@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ojSelectManySettableProperties[K, D]
   extends StObject
-     with editableValueSettableProperties[js.Array[js.Any] | Null, js.Array[js.Any] | Null, js.Array[js.Any] | Null] {
+     with editableValueSettableProperties[js.Array[Any] | Null, js.Array[Any] | Null, js.Array[Any] | Null] {
   
   var minimumResultsForSearch: Double
   
@@ -95,7 +95,7 @@ object ojSelectManySettableProperties {
     
     inline def setOptionsVarargs(
       value: (typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup)*
-    ): Self = StObject.set(x, "options", js.Array(value :_*))
+    ): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     
@@ -115,6 +115,6 @@ object ojSelectManySettableProperties {
     
     inline def setValueOptionsNull: Self = StObject.set(x, "valueOptions", null)
     
-    inline def setValueOptionsVarargs(value: LabelValue*): Self = StObject.set(x, "valueOptions", js.Array(value :_*))
+    inline def setValueOptionsVarargs(value: LabelValue*): Self = StObject.set(x, "valueOptions", js.Array(value*))
   }
 }

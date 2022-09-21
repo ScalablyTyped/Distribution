@@ -1,7 +1,6 @@
 package typings.tensorflowTfjsNode.mod
 
 import typings.std.HTMLVideoElement
-import typings.std.Iterator
 import typings.std.IteratorResult
 import typings.std.RequestInfo
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
@@ -26,7 +25,7 @@ object data {
   
   @JSImport("@tensorflow/tfjs-node", "data.CSVDataset")
   @js.native
-  class CSVDataset protected ()
+  open class CSVDataset protected ()
     extends typings.tensorflowTfjs.mod.data.CSVDataset {
     /**
       * Create a `CSVDataset`.
@@ -78,7 +77,7 @@ object data {
   
   @JSImport("@tensorflow/tfjs-node", "data.FileDataSource")
   @js.native
-  class FileDataSource protected ()
+  open class FileDataSource protected ()
     extends typings.tensorflowTfjs.mod.data.FileDataSource {
     def this(input: String) = this()
     /**
@@ -96,7 +95,7 @@ object data {
   
   @JSImport("@tensorflow/tfjs-node", "data.TextLineDataset")
   @js.native
-  class TextLineDataset protected ()
+  open class TextLineDataset protected ()
     extends typings.tensorflowTfjs.mod.data.TextLineDataset {
     /**
       * Create a `TextLineDataset`.
@@ -108,7 +107,7 @@ object data {
   
   @JSImport("@tensorflow/tfjs-node", "data.URLDataSource")
   @js.native
-  class URLDataSource protected ()
+  open class URLDataSource protected ()
     extends typings.tensorflowTfjs.mod.data.URLDataSource {
     /**
       * Create a `URLDataSource`.
@@ -126,16 +125,16 @@ object data {
   inline def csv(source: RequestInfo): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.csvDatasetMod.CSVDataset]
   inline def csv(source: RequestInfo, csvConfig: CSVConfig): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any], csvConfig.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsData.csvDatasetMod.CSVDataset]
   
-  inline def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, js.Any]) | (js.Promise[IteratorResult[T, js.Any]])]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(f.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.datasetMod.Dataset[T]]
+  inline def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, Any]) | (js.Promise[IteratorResult[T, Any]])]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(f.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.datasetMod.Dataset[T]]
   
-  inline def generator[T /* <: TensorContainer */](generator: js.Function0[(Iterator[T, js.Any, Unit]) | (js.Promise[Iterator[T, js.Any, Unit]])]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(generator.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.datasetMod.Dataset[T]]
+  inline def generator[T /* <: TensorContainer */](generator: js.Function0[js.Iterator[T] | js.Promise[js.Iterator[T]]]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(generator.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsData.datasetMod.Dataset[T]]
   
   inline def microphone(): js.Promise[MicrophoneIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("microphone")().asInstanceOf[js.Promise[MicrophoneIterator]]
   inline def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("microphone")(microphoneConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MicrophoneIterator]]
   
   @JSImport("@tensorflow/tfjs-node", "data.version_data")
   @js.native
-  val versionData: /* "2.7.0" */ String = js.native
+  val versionData: /* "3.20.0" */ String = js.native
   
   inline def webcam(): js.Promise[WebcamIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("webcam")().asInstanceOf[js.Promise[WebcamIterator]]
   inline def webcam(webcamVideoElement: Unit, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("webcam")(webcamVideoElement.asInstanceOf[js.Any], webcamConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebcamIterator]]

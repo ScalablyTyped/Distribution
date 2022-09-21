@@ -22,7 +22,7 @@ trait VectorTileLayerCurrentStyleInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
     */
-  var layerDefinition: js.Any
+  var layerDefinition: Any
   
   /**
     * Absolute URL for a vector tile service.
@@ -43,7 +43,7 @@ trait VectorTileLayerCurrentStyleInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
     */
-  var style: js.Any
+  var style: Any
   
   /**
     * Absolute URL for vector tile service style.
@@ -58,11 +58,11 @@ object VectorTileLayerCurrentStyleInfo {
     constructor: js.Function,
     glyphsUrl: String,
     hasOwnProperty: PropertyKey => Boolean,
-    layerDefinition: js.Any,
+    layerDefinition: Any,
     propertyIsEnumerable: PropertyKey => Boolean,
     serviceUrl: String,
     spriteUrl: String,
-    style: js.Any,
+    style: Any,
     styleUrl: String
   ): VectorTileLayerCurrentStyleInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], glyphsUrl = glyphsUrl.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layerDefinition = layerDefinition.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), serviceUrl = serviceUrl.asInstanceOf[js.Any], spriteUrl = spriteUrl.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], styleUrl = styleUrl.asInstanceOf[js.Any])
@@ -73,13 +73,13 @@ object VectorTileLayerCurrentStyleInfo {
     
     inline def setGlyphsUrl(value: String): Self = StObject.set(x, "glyphsUrl", value.asInstanceOf[js.Any])
     
-    inline def setLayerDefinition(value: js.Any): Self = StObject.set(x, "layerDefinition", value.asInstanceOf[js.Any])
+    inline def setLayerDefinition(value: Any): Self = StObject.set(x, "layerDefinition", value.asInstanceOf[js.Any])
     
     inline def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
     
     inline def setSpriteUrl(value: String): Self = StObject.set(x, "spriteUrl", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
   }

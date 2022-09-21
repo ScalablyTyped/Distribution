@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaTargetingValueDemogAgeCriteria extends StObject {
   
-  var demogAgeCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
+  var demogAgeCriteriaIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaTargetingValueDemogAgeCriteria {
   
@@ -19,8 +19,10 @@ object SchemaTargetingValueDemogAgeCriteria {
     
     inline def setDemogAgeCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogAgeCriteriaIds", value.asInstanceOf[js.Any])
     
+    inline def setDemogAgeCriteriaIdsNull: Self = StObject.set(x, "demogAgeCriteriaIds", null)
+    
     inline def setDemogAgeCriteriaIdsUndefined: Self = StObject.set(x, "demogAgeCriteriaIds", js.undefined)
     
-    inline def setDemogAgeCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogAgeCriteriaIds", js.Array(value :_*))
+    inline def setDemogAgeCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogAgeCriteriaIds", js.Array(value*))
   }
 }

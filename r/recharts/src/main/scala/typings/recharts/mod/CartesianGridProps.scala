@@ -99,8 +99,6 @@ trait CartesianGridProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var horizontal: js.UndefOr[
@@ -342,10 +340,6 @@ object CartesianGridProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -360,7 +354,7 @@ object CartesianGridProps {
     
     inline def setHorizontalFillUndefined: Self = StObject.set(x, "horizontalFill", js.undefined)
     
-    inline def setHorizontalFillVarargs(value: String*): Self = StObject.set(x, "horizontalFill", js.Array(value :_*))
+    inline def setHorizontalFillVarargs(value: String*): Self = StObject.set(x, "horizontalFill", js.Array(value*))
     
     inline def setHorizontalFunction1(value: LineProps & CartesianGridProps => ReactNode): Self = StObject.set(x, "horizontal", js.Any.fromFunction1(value))
     
@@ -368,7 +362,7 @@ object CartesianGridProps {
     
     inline def setHorizontalPointsUndefined: Self = StObject.set(x, "horizontalPoints", js.undefined)
     
-    inline def setHorizontalPointsVarargs(value: Double*): Self = StObject.set(x, "horizontalPoints", js.Array(value :_*))
+    inline def setHorizontalPointsVarargs(value: Double*): Self = StObject.set(x, "horizontalPoints", js.Array(value*))
     
     inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
@@ -502,7 +496,7 @@ object CartesianGridProps {
     
     inline def setVerticalFillUndefined: Self = StObject.set(x, "verticalFill", js.undefined)
     
-    inline def setVerticalFillVarargs(value: String*): Self = StObject.set(x, "verticalFill", js.Array(value :_*))
+    inline def setVerticalFillVarargs(value: String*): Self = StObject.set(x, "verticalFill", js.Array(value*))
     
     inline def setVerticalFunction1(value: LineProps & CartesianGridProps => ReactNode): Self = StObject.set(x, "vertical", js.Any.fromFunction1(value))
     
@@ -510,7 +504,7 @@ object CartesianGridProps {
     
     inline def setVerticalPointsUndefined: Self = StObject.set(x, "verticalPoints", js.undefined)
     
-    inline def setVerticalPointsVarargs(value: Double*): Self = StObject.set(x, "verticalPoints", js.Array(value :_*))
+    inline def setVerticalPointsVarargs(value: Double*): Self = StObject.set(x, "verticalPoints", js.Array(value*))
     
     inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     

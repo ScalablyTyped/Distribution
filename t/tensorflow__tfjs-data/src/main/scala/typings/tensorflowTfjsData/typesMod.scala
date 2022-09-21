@@ -1,11 +1,9 @@
 package typings.tensorflowTfjsData
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Array
 import typings.std.Blob
 import typings.std.File
 import typings.std.MediaTrackConstraints
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
 import typings.tensorflowTfjsData.tensorflowTfjsDataNumbers.`44100`
@@ -96,7 +94,7 @@ object typesMod {
       
       inline def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
       
-      inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
+      inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value*))
       
       inline def setConfiguredColumnsOnly(value: Boolean): Self = StObject.set(x, "configuredColumnsOnly", value.asInstanceOf[js.Any])
       
@@ -153,22 +151,13 @@ object typesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.tensorflowTfjsData.typesMod.ContainerObject[T]
-    - typings.tensorflowTfjsData.typesMod.ContainerArray[T]
-  */
-  trait Container[T] extends StObject
+  type Container[T] = ContainerObject[T] | ContainerArray[T]
   
-  @js.native
-  trait ContainerArray[T]
-    extends StObject
-       with Array[ContainerOrT[T]]
-       with Container[T]
+  type ContainerArray[T] = js.Array[ContainerOrT[T]]
   
   trait ContainerObject[T]
     extends StObject
        with /* x */ StringDictionary[ContainerOrT[T]]
-       with Container[T]
   object ContainerObject {
     
     inline def apply[T](): ContainerObject[T] = {
@@ -177,9 +166,9 @@ object typesMod {
     }
   }
   
-  type ContainerOrT[T] = Container[T] | T
+  type ContainerOrT[T] = Any | T
   
-  type FileElement = File | Blob | Uint8Array
+  type FileElement = File | Blob | js.typedarray.Uint8Array
   
   trait MicrophoneConfig extends StObject {
     

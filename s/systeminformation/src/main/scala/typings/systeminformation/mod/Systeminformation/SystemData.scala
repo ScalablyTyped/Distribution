@@ -19,11 +19,23 @@ trait SystemData extends StObject {
   var uuid: String
   
   var version: String
+  
+  var virtual: Boolean
+  
+  var virtualHost: js.UndefOr[String] = js.undefined
 }
 object SystemData {
   
-  inline def apply(manufacturer: String, model: String, serial: String, sku: String, uuid: String, version: String): SystemData = {
-    val __obj = js.Dynamic.literal(manufacturer = manufacturer.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  inline def apply(
+    manufacturer: String,
+    model: String,
+    serial: String,
+    sku: String,
+    uuid: String,
+    version: String,
+    virtual: Boolean
+  ): SystemData = {
+    val __obj = js.Dynamic.literal(manufacturer = manufacturer.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemData]
   }
   
@@ -44,5 +56,11 @@ object SystemData {
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualHost(value: String): Self = StObject.set(x, "virtualHost", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualHostUndefined: Self = StObject.set(x, "virtualHost", js.undefined)
   }
 }

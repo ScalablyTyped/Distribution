@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetRequestValidatorRequest extends StObject {
   
   /**
-    * [Required] The identifier of the RequestValidator to be retrieved.
+    * The identifier of the RequestValidator to be retrieved.
     */
   var requestValidatorId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

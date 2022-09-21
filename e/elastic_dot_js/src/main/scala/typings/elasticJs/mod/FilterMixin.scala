@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "FilterMixin")
 @js.native
-class FilterMixin () extends StObject {
+open class FilterMixin () extends StObject {
   
   /*
     The type of ejs object.  For internal use only.

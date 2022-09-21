@@ -23,6 +23,6 @@ object SamplingHeapProfile {
     
     inline def setSamples(value: js.Array[SamplingHeapProfileSample]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
-    inline def setSamplesVarargs(value: SamplingHeapProfileSample*): Self = StObject.set(x, "samples", js.Array(value :_*))
+    inline def setSamplesVarargs(value: SamplingHeapProfileSample*): Self = StObject.set(x, "samples", js.Array(value*))
   }
 }

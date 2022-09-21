@@ -30,7 +30,7 @@ object EtaResponse {
     
     inline def setEtas(value: js.Array[EtaResult]): Self = StObject.set(x, "etas", value.asInstanceOf[js.Any])
     
-    inline def setEtasVarargs(value: EtaResult*): Self = StObject.set(x, "etas", js.Array(value :_*))
+    inline def setEtasVarargs(value: EtaResult*): Self = StObject.set(x, "etas", js.Array(value*))
     
     inline def setRequest(value: EtaRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

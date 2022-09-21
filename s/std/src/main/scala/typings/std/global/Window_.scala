@@ -12,24 +12,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Window")
 @js.native
-class Window_ ()
+/* standard dom */
+open class Window_ ()
   extends StObject
      with Window {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def cancelAnimationFrame(handle: Double): Unit = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val localStorage: typings.std.Storage = js.native
   
@@ -44,9 +47,11 @@ class Window_ ()
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val sessionStorage: typings.std.Storage = js.native
 }

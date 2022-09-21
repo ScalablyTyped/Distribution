@@ -11,7 +11,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.std.Date
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait TimePickerProps extends StObject {
   // From <TextField />
   var className: js.UndefOr[String] = js.undefined
   
-  var defaultTime: js.UndefOr[Date] = js.undefined
+  var defaultTime: js.UndefOr[js.Date] = js.undefined
   
   var defaultValue: js.UndefOr[String | Double] = js.undefined
   
@@ -70,7 +70,7 @@ trait TimePickerProps extends StObject {
   
   var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function2[/* e */ js.Any, /* time */ Date, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function2[/* e */ Any, /* time */ js.Date, Unit]] = js.undefined
   
   var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
@@ -104,7 +104,7 @@ trait TimePickerProps extends StObject {
   
   var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var value: js.UndefOr[Date] = js.undefined
+  var value: js.UndefOr[js.Date] = js.undefined
 }
 object TimePickerProps {
   
@@ -127,7 +127,7 @@ object TimePickerProps {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setDefaultTime(value: Date): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
+    inline def setDefaultTime(value: js.Date): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
     
     inline def setDefaultTimeUndefined: Self = StObject.set(x, "defaultTime", js.undefined)
     
@@ -211,11 +211,11 @@ object TimePickerProps {
     
     inline def setOkLabelUndefined: Self = StObject.set(x, "okLabel", js.undefined)
     
-    inline def setOnBlur(value: FocusEvent[js.Object] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: FocusEvent[js.Object, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnChange(value: (/* e */ js.Any, /* time */ Date) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+    inline def setOnChange(value: (/* e */ Any, /* time */ js.Date) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
@@ -227,7 +227,7 @@ object TimePickerProps {
     
     inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     
-    inline def setOnFocus(value: FocusEvent[js.Object] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: FocusEvent[js.Object, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
@@ -283,7 +283,7 @@ object TimePickerProps {
     
     inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
     
-    inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

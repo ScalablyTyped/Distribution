@@ -1,12 +1,14 @@
 package typings.reactNativeElements.anon
 
-import typings.reactNativeElements.mod.RecursivePartial
+import typings.reactNativeElements.themeMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<react-native-elements.react-native-elements.Colors> */
+/* Inlined react-native-elements.react-native-elements/dist/config/theme.RecursivePartial<react-native-elements.react-native-elements/dist/config/colors.Colors> */
 trait RecursivePartialColorsDisabled extends StObject {
+  
+  var black: js.UndefOr[RecursivePartial[String]] = js.undefined
   
   var disabled: js.UndefOr[RecursivePartial[String]] = js.undefined
   
@@ -28,7 +30,7 @@ trait RecursivePartialColorsDisabled extends StObject {
   
   var greyOutline: js.UndefOr[RecursivePartial[String]] = js.undefined
   
-  var platform: js.UndefOr[RecursivePartialiosprimarAndroid] = js.undefined
+  var platform: js.UndefOr[RecursivePartialiosPlatfoAndroid] = js.undefined
   
   var primary: js.UndefOr[RecursivePartial[String]] = js.undefined
   
@@ -39,6 +41,8 @@ trait RecursivePartialColorsDisabled extends StObject {
   var success: js.UndefOr[RecursivePartial[String]] = js.undefined
   
   var warning: js.UndefOr[RecursivePartial[String]] = js.undefined
+  
+  var white: js.UndefOr[RecursivePartial[String]] = js.undefined
 }
 object RecursivePartialColorsDisabled {
   
@@ -48,6 +52,10 @@ object RecursivePartialColorsDisabled {
   }
   
   extension [Self <: RecursivePartialColorsDisabled](x: Self) {
+    
+    inline def setBlack(value: RecursivePartial[String]): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+    
+    inline def setBlackUndefined: Self = StObject.set(x, "black", js.undefined)
     
     inline def setDisabled(value: RecursivePartial[String]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -89,7 +97,7 @@ object RecursivePartialColorsDisabled {
     
     inline def setGreyOutlineUndefined: Self = StObject.set(x, "greyOutline", js.undefined)
     
-    inline def setPlatform(value: RecursivePartialiosprimarAndroid): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: RecursivePartialiosPlatfoAndroid): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
@@ -112,5 +120,9 @@ object RecursivePartialColorsDisabled {
     inline def setWarning(value: RecursivePartial[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    
+    inline def setWhite(value: RecursivePartial[String]): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+    
+    inline def setWhiteUndefined: Self = StObject.set(x, "white", js.undefined)
   }
 }

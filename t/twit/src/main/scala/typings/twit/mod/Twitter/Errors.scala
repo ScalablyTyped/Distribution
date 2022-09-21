@@ -20,6 +20,6 @@ object Errors {
     
     inline def setErrors(value: js.Array[Code]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: Code*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Code*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

@@ -5,5 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def hasNativeWebVRImplementation: scala.Boolean = js.Dynamic.global.selectDynamic("hasNativeWebVRImplementation").asInstanceOf[scala.Boolean]
-inline def hasNativeWebVRImplementation_=(x: scala.Boolean): scala.Unit = js.Dynamic.global.updateDynamic("hasNativeWebVRImplementation")(x.asInstanceOf[js.Any])
+inline def hasNativeWebVRImplementation: Boolean = js.Dynamic.global.selectDynamic("hasNativeWebVRImplementation").asInstanceOf[Boolean]
+inline def hasNativeWebVRImplementation_=(x: Boolean): Unit = js.Dynamic.global.updateDynamic("hasNativeWebVRImplementation")(x.asInstanceOf[js.Any])

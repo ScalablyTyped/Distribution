@@ -11,7 +11,7 @@ object moveItemsActionMod {
   
   @JSImport("storm-react-diagrams/dist/src/actions/MoveItemsAction", "MoveItemsAction")
   @js.native
-  class MoveItemsAction protected () extends BaseAction {
+  open class MoveItemsAction protected () extends BaseAction {
     def this(mouseX: Double, mouseY: Double, diagramEngine: DiagramEngine) = this()
     
     var moved: Boolean = js.native

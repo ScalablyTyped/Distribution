@@ -24,16 +24,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@frctl/fractal", "WebTheme")
 @js.native
-class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
+open class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
   def this(viewPaths: js.Array[String]) = this()
   def this(viewPaths: js.Array[String], options: WebThemeOptions) = this()
   
   def addLoadPath(path: String): this.type = js.native
   
-  def addResolver(handle: String, resolvers: js.Any): this.type = js.native
+  def addResolver(handle: String, resolvers: Any): this.type = js.native
   
   def addRoute(path: String, opts: `0`): this.type = js.native
-  def addRoute(path: String, opts: `0`, resolver: js.Any): this.type = js.native
+  def addRoute(path: String, opts: `0`, resolver: Any): this.type = js.native
   
   def addStatic(path: String, mount: String): Unit = js.native
   
@@ -73,9 +73,9 @@ class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
   
   def redirectView(): String = js.native
   
-  def resolvers(): js.Any = js.native
+  def resolvers(): Any = js.native
   
-  def routes(): js.Array[js.Any] = js.native
+  def routes(): js.Array[Any] = js.native
   
   def setErrorView(view: String): Unit = js.native
   
@@ -128,6 +128,6 @@ class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
   
   def static(): js.Array[Path] = js.native
   
-  def urlFromRoute(handle: String, params: js.Any): String | Null = js.native
-  def urlFromRoute(handle: String, params: js.Any, noRedirect: Boolean): String | Null = js.native
+  def urlFromRoute(handle: String, params: Any): String | Null = js.native
+  def urlFromRoute(handle: String, params: Any, noRedirect: Boolean): String | Null = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientDictionaryResultHandler")
 @js.native
-class ClientDictionaryResultHandler[T] protected ()
+open class ClientDictionaryResultHandler[T] protected ()
   extends StObject
      with typings.sharepoint.SP.ClientDictionaryResultHandler[T] {
   def this(dict: typings.sharepoint.SP.ClientResult[T]) = this()

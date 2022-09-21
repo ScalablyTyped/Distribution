@@ -7,11 +7,11 @@ import typings.cadesplugin.CADES_Plugin.SignedXmlUrls
 import typings.cadesplugin.CAPICOM.CAPICOM_ATTRIBUTE
 import typings.cadesplugin.CAPICOM.CAPICOM_CERTIFICATE_FIND_TYPE
 import typings.cadesplugin.CAPICOM.CAPICOM_CERTIFICATE_INCLUDE_OPTION
+import typings.cadesplugin.CAPICOM.CAPICOM_PROPID
 import typings.cadesplugin.CAPICOM.CertIntoTypePlugin
 import typings.cadesplugin.CAPICOM.EKUPlugin
 import typings.cadesplugin.CAPICOM.KeyUsagePlugin
 import typings.cadesplugin.CAPICOM.OIDPlugin
-import typings.cadesplugin.CAPICOM.PropIDPlugin
 import typings.cadesplugin.CAPICOM.StoreLocationPlugin
 import typings.cadesplugin.CAPICOM.StoreNamePlugin
 import typings.cadesplugin.CAPICOM.StoreOpenModePlugin
@@ -23,8 +23,6 @@ import typings.cadesplugin.CAdESCOM.CADESCOM_DISPLAY_DATA
 import typings.cadesplugin.CAdESCOM.CADESCOM_ENCRYPTION_ALGORITHM
 import typings.cadesplugin.CAdESCOM.CADESCOM_HASH_ALGORITHM
 import typings.cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE
-import typings.std.Error
-import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +43,7 @@ trait CADESPluginBase
      with CAPICOM_CERTIFICATE_INCLUDE_OPTION
      with CertIntoTypePlugin
      with KeyUsagePlugin
-     with PropIDPlugin
+     with CAPICOM_PROPID
      with OIDPlugin
      with EKUPlugin
      with CAPICOM_ATTRIBUTE
@@ -58,11 +56,11 @@ trait CADESPluginBase
   
   val JSModuleVersion: String = js.native
   
-  def async_spawn[T](generatorFun: js.Function1[/* repeated */ js.Any, Iterator[T, js.Any, Unit]]): T = js.native
+  def async_spawn[T](generatorFun: js.Function1[/* repeated */ Any, js.Iterator[T]]): T = js.native
   
   val current_log_level: Double = js.native
   
-  def getLastError(exception: Error): String = js.native
+  def getLastError(exception: js.Error): String = js.native
   
   def is_capilite_enabled(): Boolean = js.native
   

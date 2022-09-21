@@ -2,7 +2,7 @@ package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.geometryMod.Geometry
+import typings.three.eventDispatcherMod.Event
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
@@ -14,7 +14,7 @@ object meshMod {
   
   @JSImport("three/src/objects/Mesh", "Mesh")
   @js.native
-  class Mesh[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Object3D {
+  open class Mesh[TGeometry /* <: BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Object3D[Event] {
     def this(geometry: TGeometry) = this()
     def this(geometry: TGeometry, material: TMaterial) = this()
     def this(geometry: Unit, material: TMaterial) = this()

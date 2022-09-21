@@ -1,38 +1,18 @@
 package typings.typedoc
 
-import typings.handlebars.Handlebars.RuntimeOptions
-import typings.handlebars.Handlebars.TemplateDelegate
-import typings.typedoc.stackMod.Resource
-import typings.typedoc.stackMod.ResourceOrigin
-import typings.typedoc.stackMod.ResourceStack
+import typings.typedoc.defaultThemeRenderContextMod.DefaultThemeRenderContext
+import typings.typedoc.eventsMod.PageEvent
+import typings.typedoc.jsxElementsMod.JsxElement
+import typings.typedoc.modelsMod.ProjectReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templatesMod {
   
-  @JSImport("typedoc/dist/lib/output/utils/resources/templates", "PartialStack")
+  @JSImport("typedoc/dist/lib/output/themes/default/templates", JSImport.Namespace)
   @js.native
-  class PartialStack () extends TemplateStack {
-    
-    /* private */ var registeredNames: js.Any = js.native
-  }
+  val ^ : js.Any = js.native
   
-  @JSImport("typedoc/dist/lib/output/utils/resources/templates", "Template")
-  @js.native
-  class Template[T] protected () extends Resource {
-    def this(origin: ResourceOrigin[js.Any], name: String, fileName: String) = this()
-    
-    def getTemplate(): TemplateDelegate[T] = js.native
-    
-    def render(context: js.Any): String = js.native
-    def render(context: js.Any, options: RuntimeOptions): String = js.native
-    
-    /* private */ var template: js.Any = js.native
-  }
-  
-  @JSImport("typedoc/dist/lib/output/utils/resources/templates", "TemplateStack")
-  @js.native
-  class TemplateStack ()
-    extends ResourceStack[Template[js.Any]]
+  inline def indexTemplate(hasMarkdown: DefaultThemeRenderContext, props: PageEvent[ProjectReflection]): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("indexTemplate")(hasMarkdown.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
 }

@@ -8,7 +8,7 @@ object readerMod {
   
   @JSImport("@nodelib/fs.walk/out/readers/reader", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Reader {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()

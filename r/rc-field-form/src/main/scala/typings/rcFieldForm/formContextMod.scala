@@ -1,13 +1,14 @@
 package typings.rcFieldForm
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
 import typings.rcFieldForm.interfaceMod.FieldData
 import typings.rcFieldForm.interfaceMod.FormInstance
 import typings.rcFieldForm.interfaceMod.Store
 import typings.rcFieldForm.interfaceMod.ValidateMessages
 import typings.react.mod.Context
 import typings.react.mod.FunctionComponent
+import typings.react.mod.ReactNode
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +40,7 @@ object formContextMod extends Shortcut {
       
       inline def setChangedFields(value: js.Array[FieldData]): Self = StObject.set(x, "changedFields", value.asInstanceOf[js.Any])
       
-      inline def setChangedFieldsVarargs(value: FieldData*): Self = StObject.set(x, "changedFields", js.Array(value :_*))
+      inline def setChangedFieldsVarargs(value: FieldData*): Self = StObject.set(x, "changedFields", js.Array(value*))
       
       inline def setForms(value: Forms): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,7 @@ object formContextMod extends Shortcut {
     extends StObject
        with FormProviderProps {
     
-    def registerForm(name: String, form: FormInstance[js.Any]): Unit
+    def registerForm(name: String, form: FormInstance[Any]): Unit
     
     def triggerFormChange(name: String, changedFields: js.Array[FieldData]): Unit
     
@@ -60,7 +61,7 @@ object formContextMod extends Shortcut {
   object FormContextProps {
     
     inline def apply(
-      registerForm: (String, FormInstance[js.Any]) => Unit,
+      registerForm: (String, FormInstance[Any]) => Unit,
       triggerFormChange: (String, js.Array[FieldData]) => Unit,
       triggerFormFinish: (String, Store) => Unit,
       unregisterForm: String => Unit
@@ -71,7 +72,7 @@ object formContextMod extends Shortcut {
     
     extension [Self <: FormContextProps](x: Self) {
       
-      inline def setRegisterForm(value: (String, FormInstance[js.Any]) => Unit): Self = StObject.set(x, "registerForm", js.Any.fromFunction2(value))
+      inline def setRegisterForm(value: (String, FormInstance[Any]) => Unit): Self = StObject.set(x, "registerForm", js.Any.fromFunction2(value))
       
       inline def setTriggerFormChange(value: (String, js.Array[FieldData]) => Unit): Self = StObject.set(x, "triggerFormChange", js.Any.fromFunction2(value))
       
@@ -104,6 +105,8 @@ object formContextMod extends Shortcut {
   
   trait FormProviderProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var onFormChange: js.UndefOr[js.Function2[/* name */ String, /* info */ FormChangeInfo, Unit]] = js.undefined
     
     var onFormFinish: js.UndefOr[js.Function2[/* name */ String, /* info */ FormFinishInfo, Unit]] = js.undefined
@@ -119,6 +122,10 @@ object formContextMod extends Shortcut {
     
     extension [Self <: FormProviderProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setOnFormChange(value: (/* name */ String, /* info */ FormChangeInfo) => Unit): Self = StObject.set(x, "onFormChange", js.Any.fromFunction2(value))
       
       inline def setOnFormChangeUndefined: Self = StObject.set(x, "onFormChange", js.undefined)
@@ -133,7 +140,7 @@ object formContextMod extends Shortcut {
     }
   }
   
-  type Forms = StringDictionary[FormInstance[js.Any]]
+  type Forms = Record[String, FormInstance[Any]]
   
   type _To = Context[FormContextProps]
   

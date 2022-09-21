@@ -10,13 +10,18 @@ object foundationMod {
   
   @JSImport("@material/top-app-bar/fixed/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCFixedTopAppBarFoundation {
+  open class default () extends MDCFixedTopAppBarFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
   
   @JSImport("@material/top-app-bar/fixed/foundation", "MDCFixedTopAppBarFoundation")
   @js.native
-  class MDCFixedTopAppBarFoundation () extends MDCTopAppBarFoundation {
+  open class MDCFixedTopAppBarFoundation () extends MDCTopAppBarFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
+    
+    /**
+      * State variable for the previous scroll iteration top app bar state
+      */
+    /* private */ var wasScrolled: Any = js.native
   }
 }

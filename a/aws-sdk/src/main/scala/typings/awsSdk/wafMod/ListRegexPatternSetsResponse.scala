@@ -33,6 +33,6 @@ object ListRegexPatternSetsResponse {
     
     inline def setRegexPatternSetsUndefined: Self = StObject.set(x, "RegexPatternSets", js.undefined)
     
-    inline def setRegexPatternSetsVarargs(value: RegexPatternSetSummary*): Self = StObject.set(x, "RegexPatternSets", js.Array(value :_*))
+    inline def setRegexPatternSetsVarargs(value: RegexPatternSetSummary*): Self = StObject.set(x, "RegexPatternSets", js.Array(value*))
   }
 }

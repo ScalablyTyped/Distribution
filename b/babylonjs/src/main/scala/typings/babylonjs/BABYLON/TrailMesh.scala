@@ -9,25 +9,25 @@ trait TrailMesh
   extends StObject
      with Mesh {
   
-  /* private */ var _autoStart: js.Any = js.native
+  /* private */ var _autoStart: Any = js.native
   
-  /* private */ var _beforeRenderObserver: js.Any = js.native
+  /* private */ var _beforeRenderObserver: Any = js.native
   
-  /* private */ var _createMesh: js.Any = js.native
+  /* private */ var _createMesh: Any = js.native
   
-  /* private */ var _diameter: js.Any = js.native
+  /* private */ var _diameter: Any = js.native
   
-  /* private */ var _generator: js.Any = js.native
+  /* private */ var _generator: Any = js.native
   
-  /* private */ var _length: js.Any = js.native
+  /* private */ var _length: Any = js.native
   
-  /* private */ var _running: js.Any = js.native
+  /* private */ var _running: Any = js.native
   
-  /* private */ var _sectionNormalVectors: js.Any = js.native
+  /* private */ var _sectionNormalVectors: Any = js.native
   
-  /* private */ var _sectionPolygonPointsCount: js.Any = js.native
+  /* private */ var _sectionPolygonPointsCount: Any = js.native
   
-  /* private */ var _sectionVectors: js.Any = js.native
+  /* private */ var _sectionVectors: Any = js.native
   
   /**
     * Returns a new TrailMesh object.

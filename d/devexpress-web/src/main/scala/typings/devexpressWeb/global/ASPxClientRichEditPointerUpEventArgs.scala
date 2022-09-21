@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditPointerUpEventArgs")
 @js.native
-class ASPxClientRichEditPointerUpEventArgs protected ()
+open class ASPxClientRichEditPointerUpEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditPointerUpEventArgs {
   /**
@@ -17,7 +17,7 @@ class ASPxClientRichEditPointerUpEventArgs protected ()
     * @param htmlEvent A DHTML event object that relates to the processed event.
     * @param handled true if the event is handled and no default processing is required; otherwise false.
     */
-  def this(htmlEvent: js.Any, handled: js.Any) = this()
+  def this(htmlEvent: Any, handled: Any) = this()
   
   /**
     * Gets or sets whether the event is handled manually, so no default processing is required.
@@ -29,5 +29,5 @@ class ASPxClientRichEditPointerUpEventArgs protected ()
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
 }

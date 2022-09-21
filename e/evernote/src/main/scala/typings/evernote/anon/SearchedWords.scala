@@ -32,13 +32,13 @@ object SearchedWords {
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: NoteMetadata*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: NoteMetadata*): Self = StObject.set(x, "notes", js.Array(value*))
     
     inline def setSearchedWords(value: js.Array[String]): Self = StObject.set(x, "searchedWords", value.asInstanceOf[js.Any])
     
     inline def setSearchedWordsUndefined: Self = StObject.set(x, "searchedWords", js.undefined)
     
-    inline def setSearchedWordsVarargs(value: String*): Self = StObject.set(x, "searchedWords", js.Array(value :_*))
+    inline def setSearchedWordsVarargs(value: String*): Self = StObject.set(x, "searchedWords", js.Array(value*))
     
     inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
@@ -48,7 +48,7 @@ object SearchedWords {
     
     inline def setStoppedWordsUndefined: Self = StObject.set(x, "stoppedWords", js.undefined)
     
-    inline def setStoppedWordsVarargs(value: String*): Self = StObject.set(x, "stoppedWords", js.Array(value :_*))
+    inline def setStoppedWordsVarargs(value: String*): Self = StObject.set(x, "stoppedWords", js.Array(value*))
     
     inline def setTotalNotes(value: Double): Self = StObject.set(x, "totalNotes", value.asInstanceOf[js.Any])
     

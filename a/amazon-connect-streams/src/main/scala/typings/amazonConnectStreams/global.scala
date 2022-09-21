@@ -1,6 +1,7 @@
 package typings.amazonConnectStreams
 
 import typings.amazonConnectStreams.connect.Agent
+import typings.amazonConnectStreams.connect.AgentApp
 import typings.amazonConnectStreams.connect.AgentCallback
 import typings.amazonConnectStreams.connect.Contact
 import typings.amazonConnectStreams.connect.ContactCallback
@@ -100,19 +101,19 @@ object global {
       */
     @JSGlobal("connect.Agent")
     @js.native
-    class Agent_ ()
+    open class Agent_ ()
       extends StObject
          with Agent
     
     /**
       * The Connection API provides action methods (no event subscriptions) which can be called to manipulate the state of a particular connection within a contact.
       * Like contacts, connections come and go.
-      * It is good practice not to persist these object or keep them as internal state.
+      * It is good practice not to persist these objects or keep them as internal state.
       * If you need to, store the contactId and connectionId of the connection and make sure that the contact and connection still exist by fetching them in order from the Agent API object before calling methods on them.
       */
     @JSGlobal("connect.BaseConnection")
     @js.native
-    class BaseConnection ()
+    open class BaseConnection ()
       extends StObject
          with typings.amazonConnectStreams.connect.BaseConnection
     
@@ -170,20 +171,36 @@ object global {
       
       /* "CHAT" */ val CHAT: typings.amazonConnectStreams.connect.ChannelType.CHAT & String = js.native
       
+      /* "TASK" */ val TASK: typings.amazonConnectStreams.connect.ChannelType.TASK & String = js.native
+      
       /* "VOICE" */ val VOICE: typings.amazonConnectStreams.connect.ChannelType.VOICE & String = js.native
     }
     
     /**
       * The ChatConnection API provides action methods (no event subscriptions) which can be called to manipulate the state of a particular chat connection within a contact.
       * Like contacts, connections come and go.
-      * It is good practice not to persist these object or keep them as internal state.
+      * It is good practice not to persist these objects or keep them as internal state.
       * If you need to, store the `contactId` and `connectionId` of the connection and make sure that the contact and connection still exist by fetching them in order from the `Agent` API object before calling methods on them.
       */
     @JSGlobal("connect.ChatConnection")
     @js.native
-    class ChatConnection ()
+    open class ChatConnection ()
       extends StObject
          with typings.amazonConnectStreams.connect.ChatConnection
+    
+    @JSGlobal("connect.ClickType")
+    @js.native
+    object ClickType extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.ClickType & String] = js.native
+      
+      /* "Accept" */ val ACCEPT: typings.amazonConnectStreams.connect.ClickType.ACCEPT & String = js.native
+      
+      /* "Hangup" */ val HANGUP: typings.amazonConnectStreams.connect.ClickType.HANGUP & String = js.native
+      
+      /* "Reject" */ val REJECT: typings.amazonConnectStreams.connect.ClickType.REJECT & String = js.native
+    }
     
     /** An enumeration listing the different states that a connection can have. */
     @JSGlobal("connect.ConnectionStateType")
@@ -278,6 +295,8 @@ object global {
       /* "missed" */ val MISSED: typings.amazonConnectStreams.connect.ContactStateType.MISSED & String = js.native
       
       /* "pending" */ val PENDING: typings.amazonConnectStreams.connect.ContactStateType.PENDING & String = js.native
+      
+      /* "rejected" */ val REJECTED: typings.amazonConnectStreams.connect.ContactStateType.REJECTED & String = js.native
     }
     
     /** This enumeration lists all of the contact types supported by Connect Streams. */
@@ -292,6 +311,8 @@ object global {
       
       /* "queue_callback" */ val QUEUE_CALLBACK: typings.amazonConnectStreams.connect.ContactType.QUEUE_CALLBACK & String = js.native
       
+      /* "task" */ val TASK: typings.amazonConnectStreams.connect.ContactType.TASK & String = js.native
+      
       /* "voice" */ val VOICE: typings.amazonConnectStreams.connect.ContactType.VOICE & String = js.native
     }
     
@@ -303,13 +324,13 @@ object global {
       */
     @JSGlobal("connect.Contact")
     @js.native
-    class Contact_ ()
+    open class Contact_ ()
       extends StObject
          with Contact
     
     @JSGlobal("connect.Endpoint")
     @js.native
-    class Endpoint ()
+    open class Endpoint ()
       extends StObject
          with typings.amazonConnectStreams.connect.Endpoint {
       
@@ -364,6 +385,86 @@ object global {
       /* "queue" */ val QUEUE: typings.amazonConnectStreams.connect.EndpointType.QUEUE & String = js.native
     }
     
+    @JSGlobal("connect.EventType")
+    @js.native
+    object EventType extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.EventType & String] = js.native
+      
+      /* "access_denied" */ val ACCESS_DENIED: typings.amazonConnectStreams.connect.EventType.ACCESS_DENIED & String = js.native
+      
+      /* "acknowledge" */ val ACKNOWLEDGE: typings.amazonConnectStreams.connect.EventType.ACKNOWLEDGE & String = js.native
+      
+      /* "ack_timeout" */ val ACK_TIMEOUT: typings.amazonConnectStreams.connect.EventType.ACK_TIMEOUT & String = js.native
+      
+      /* "api_metric" */ val API_METRIC: typings.amazonConnectStreams.connect.EventType.API_METRIC & String = js.native
+      
+      /* "api_request" */ val API_REQUEST: typings.amazonConnectStreams.connect.EventType.API_REQUEST & String = js.native
+      
+      /* "api_response" */ val API_RESPONSE: typings.amazonConnectStreams.connect.EventType.API_RESPONSE & String = js.native
+      
+      /* "authorize_retries_exhausted" */ val AUTHORIZE_RETRIES_EXHAUSTED: typings.amazonConnectStreams.connect.EventType.AUTHORIZE_RETRIES_EXHAUSTED & String = js.native
+      
+      /* "authorize_success" */ val AUTHORIZE_SUCCESS: typings.amazonConnectStreams.connect.EventType.AUTHORIZE_SUCCESS & String = js.native
+      
+      /* "auth_fail" */ val AUTH_FAIL: typings.amazonConnectStreams.connect.EventType.AUTH_FAIL & String = js.native
+      
+      /* "broadcast" */ val BROADCAST: typings.amazonConnectStreams.connect.EventType.BROADCAST & String = js.native
+      
+      /* "click_stream_data" */ val CLICK_STREAM_DATA: typings.amazonConnectStreams.connect.EventType.CLICK_STREAM_DATA & String = js.native
+      
+      /* "client_metric" */ val CLIENT_METRIC: typings.amazonConnectStreams.connect.EventType.CLIENT_METRIC & String = js.native
+      
+      /* "client_side_logs" */ val CLIENT_SIDE_LOGS: typings.amazonConnectStreams.connect.EventType.CLIENT_SIDE_LOGS & String = js.native
+      
+      /* "close" */ val CLOSE: typings.amazonConnectStreams.connect.EventType.CLOSE & String = js.native
+      
+      /* "configure" */ val CONFIGURE: typings.amazonConnectStreams.connect.EventType.CONFIGURE & String = js.native
+      
+      /* "cti_authorize_retries_exhausted" */ val CTI_AUTHORIZE_RETRIES_EXHAUSTED: typings.amazonConnectStreams.connect.EventType.CTI_AUTHORIZE_RETRIES_EXHAUSTED & String = js.native
+      
+      /* "iframe_retries_exhausted" */ val IFRAME_RETRIES_EXHAUSTED: typings.amazonConnectStreams.connect.EventType.IFRAME_RETRIES_EXHAUSTED & String = js.native
+      
+      /* "iframe_style" */ val IFRAME_STYLE: typings.amazonConnectStreams.connect.EventType.IFRAME_STYLE & String = js.native
+      
+      /* "init" */ val INIT: typings.amazonConnectStreams.connect.EventType.INIT & String = js.native
+      
+      /* "log" */ val LOG: typings.amazonConnectStreams.connect.EventType.LOG & String = js.native
+      
+      /* "master_request" */ val MASTER_REQUEST: typings.amazonConnectStreams.connect.EventType.MASTER_REQUEST & String = js.native
+      
+      /* "master_response" */ val MASTER_RESPONSE: typings.amazonConnectStreams.connect.EventType.MASTER_RESPONSE & String = js.native
+      
+      /* "media_device_request" */ val MEDIA_DEVICE_REQUEST: typings.amazonConnectStreams.connect.EventType.MEDIA_DEVICE_REQUEST & String = js.native
+      
+      /* "media_device_response" */ val MEDIA_DEVICE_RESPONSE: typings.amazonConnectStreams.connect.EventType.MEDIA_DEVICE_RESPONSE & String = js.native
+      
+      /* "mute" */ val MUTE: typings.amazonConnectStreams.connect.EventType.MUTE & String = js.native
+      
+      /* "outer_context_info" */ val OUTER_CONTEXT_INFO: typings.amazonConnectStreams.connect.EventType.OUTER_CONTEXT_INFO & String = js.native
+      
+      /* "reload_agent_configuration" */ val RELOAD_AGENT_CONFIGURATION: typings.amazonConnectStreams.connect.EventType.RELOAD_AGENT_CONFIGURATION & String = js.native
+      
+      /* "send_logs" */ val SEND_LOGS: typings.amazonConnectStreams.connect.EventType.SEND_LOGS & String = js.native
+      
+      /* "server_bound_internal_log" */ val SERVER_BOUND_INTERNAL_LOG: typings.amazonConnectStreams.connect.EventType.SERVER_BOUND_INTERNAL_LOG & String = js.native
+      
+      /* "softphone_report" */ val SOFTPHONE_REPORT: typings.amazonConnectStreams.connect.EventType.SOFTPHONE_REPORT & String = js.native
+      
+      /* "softphone_stats" */ val SOFTPHONE_STATS: typings.amazonConnectStreams.connect.EventType.SOFTPHONE_STATS & String = js.native
+      
+      /* "synchronize" */ val SYNCHRONIZE: typings.amazonConnectStreams.connect.EventType.SYNCHRONIZE & String = js.native
+      
+      /* "tab_id" */ val TAB_ID: typings.amazonConnectStreams.connect.EventType.TAB_ID & String = js.native
+      
+      /* "terminate" */ val TERMINATE: typings.amazonConnectStreams.connect.EventType.TERMINATE & String = js.native
+      
+      /* "terminated" */ val TERMINATED: typings.amazonConnectStreams.connect.EventType.TERMINATED & String = js.native
+      
+      /* "update_connected_ccps" */ val UPDATE_CONNECTED_CCPS: typings.amazonConnectStreams.connect.EventType.UPDATE_CONNECTED_CCPS & String = js.native
+    }
+    
     @JSGlobal("connect.MediaType")
     @js.native
     object MediaType extends StObject {
@@ -374,6 +475,18 @@ object global {
       /* "chat" */ val CHAT: typings.amazonConnectStreams.connect.MediaType.CHAT & String = js.native
       
       /* "softphone" */ val SOFTPHONE: typings.amazonConnectStreams.connect.MediaType.SOFTPHONE & String = js.native
+      
+      /* "task" */ val TASK: typings.amazonConnectStreams.connect.MediaType.TASK & String = js.native
+    }
+    
+    @JSGlobal("connect.ReferenceType")
+    @js.native
+    object ReferenceType extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.ReferenceType & String] = js.native
+      
+      /* "URL" */ val URL: typings.amazonConnectStreams.connect.ReferenceType.URL & String = js.native
     }
     
     @JSGlobal("connect.SoftphoneCallType")
@@ -394,7 +507,7 @@ object global {
     
     @JSGlobal("connect.SoftphoneError")
     @js.native
-    class SoftphoneError protected ()
+    open class SoftphoneError protected ()
       extends StObject
          with typings.amazonConnectStreams.connect.SoftphoneError {
       def this(errorType: String, errorMessage: String, endPointUrl: String) = this()
@@ -445,26 +558,42 @@ object global {
     }
     
     /**
+      * The TaskConnection API provides action methods (no event subscriptions) which can be called to manipulate the state of a particular task connection within a contact.
+      * Like contacts, connections come and go.
+      * It is good practice not to persist these objects or keep them as internal state.
+      * If you need to, store the `contactId` and `connectionId` of the connection and make sure that the contact and connection still exist by fetching them in order from the `Agent` API object before calling methods on them.
+      */
+    @JSGlobal("connect.TaskConnection")
+    @js.native
+    open class TaskConnection ()
+      extends StObject
+         with typings.amazonConnectStreams.connect.TaskConnection
+    
+    /**
       * The VoiceConnection API provides action methods (no event subscriptions) which can be called to manipulate the state of a particular voice connection within a contact.
       * Like contacts, connections come and go.
-      * It is good practice not to persist these object or keep them as internal state.
+      * It is good practice not to persist these objects or keep them as internal state.
       * If you need to, store the `contactId` and `connectionId` of the connection and make sure that the contact and connection still exist by fetching them in order from the `Agent` API object before calling methods on them.
       */
     @JSGlobal("connect.VoiceConnection")
     @js.native
-    class VoiceConnection ()
+    open class VoiceConnection ()
       extends StObject
          with typings.amazonConnectStreams.connect.VoiceConnection
     
     /**
       * Subscribe a method to be called when the agent is initialized.
-      * If the agent has already been initalized, the call is synchronous and the callback is invoked immediately.
+      * If the agent has already been initialized, the call is synchronous and the callback is invoked immediately.
       * Otherwise, the callback is invoked once the first agent data is received from upstream.
       * This callback is provided with an `Agent` API object, which can also be created at any time after initialization is complete via `new connect.Agent()`.
       *
       * @param callback A callback that will receive an `Agent` API object instance.
       */
     inline def agent(callback: AgentCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSGlobal("connect.agentApp")
+    @js.native
+    val agentApp: AgentApp = js.native
     
     /**
       * Subscribe a method to be called for each newly detected agent contact.
@@ -488,6 +617,6 @@ object global {
       * @param scope The instance object to be set as the scope of the function.
       * @param method The method to be encapsulated.
       */
-    inline def hitch[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](scope: js.Object, method: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("hitch")(scope.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def hitch[T /* <: js.Function1[/* repeated */ Any, Any] */](scope: js.Object, method: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("hitch")(scope.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

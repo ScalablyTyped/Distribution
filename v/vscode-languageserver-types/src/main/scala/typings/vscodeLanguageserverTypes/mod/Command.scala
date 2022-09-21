@@ -10,7 +10,7 @@ trait Command extends StObject {
     * Arguments that the command handler should be
     * invoked with.
     */
-  var arguments: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var arguments: js.UndefOr[js.Array[LSPAny]] = js.undefined
   
   /**
     * The identifier of the actual command handler.
@@ -36,20 +36,20 @@ object Command {
   /**
     * Creates a new Command literal.
     */
-  inline def create(title: String, command: String, args: js.Any*): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Command]
+  inline def create(title: String, command: String, args: Any*): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Command]
   
   /**
     * Checks whether the given literal conforms to the [Command](#Command) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean]
   
   extension [Self <: Command](x: Self) {
     
-    inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[LSPAny]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: LSPAny*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

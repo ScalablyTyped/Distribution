@@ -12,7 +12,7 @@ trait GetAccessKeyLastUsedResponse extends StObject {
   var AccessKeyLastUsed: js.UndefOr[typings.awsSdk.iamMod.AccessKeyLastUsed] = js.undefined
   
   /**
-    * The name of the AWS IAM user that owns this access key. 
+    * The name of the IAM user that owns this access key. 
     */
   var UserName: js.UndefOr[existingUserNameType] = js.undefined
 }

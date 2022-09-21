@@ -11,25 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object helpersMod {
   
-  @JSImport("@sentry/browser/dist/helpers", JSImport.Namespace)
+  @JSImport("@sentry/browser/types/helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def ignoreNextOnError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreNextOnError")().asInstanceOf[Unit]
   
-  inline def injectReportDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReportDialog")().asInstanceOf[Unit]
-  inline def injectReportDialog(options: ReportDialogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReportDialog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
   inline def shouldIgnoreOnError(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldIgnoreOnError")().asInstanceOf[Boolean]
   
-  inline def wrap(fn: WrappedFunction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def wrap(fn: WrappedFunction, options: Unit, before: WrappedFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def wrap(fn: WrappedFunction, options: Mechanism): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def wrap(fn: WrappedFunction, options: Mechanism, before: WrappedFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def wrap(fn: WrappedFunction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def wrap(fn: WrappedFunction, options: Unit, before: WrappedFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def wrap(fn: WrappedFunction, options: Mechanism): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def wrap(fn: WrappedFunction, options: Mechanism, before: WrappedFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait ReportDialogOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var dsn: js.UndefOr[DsnLike] = js.undefined
     

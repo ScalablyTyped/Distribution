@@ -44,7 +44,7 @@ object GridProps {
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    inline def setTicksVarargs(value: T*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: T*): Self = StObject.set(x, "ticks", js.Array(value*))
     
     inline def setX(value: /* t */ T => Double): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
     

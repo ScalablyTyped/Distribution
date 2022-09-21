@@ -29,11 +29,11 @@ trait Hexo extends EventEmitter {
   /**
     * Any console command can be called explicitly using the call method on the Hexo instance.
     */
-  def call(name: String): js.Promise[js.Any] = js.native
-  def call(name: String, args: js.Any): js.Promise[js.Any] = js.native
-  def call(name: String, args: js.Any, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
-  def call(name: String, args: Unit, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
-  def call(name: String, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def call(name: String): js.Promise[Any] = js.native
+  def call(name: String, args: Any): js.Promise[Any] = js.native
+  def call(name: String, args: Any, fn: js.Function2[/* err */ Any, /* value */ Any, Unit]): js.Promise[Any] = js.native
+  def call(name: String, args: Unit, fn: js.Function2[/* err */ Any, /* value */ Any, Unit]): js.Promise[Any] = js.native
+  def call(name: String, fn: js.Function2[/* err */ Any, /* value */ Any, Unit]): js.Promise[Any] = js.native
   
   /**
     * Site settings in `_config.yml`
@@ -49,7 +49,7 @@ trait Hexo extends EventEmitter {
     * This allows Hexo to exit gracefully and finish up important things such as saving the database.
     */
   def exit(): js.Promise[Unit] = js.native
-  def exit(err: js.Any): js.Promise[Unit] = js.native
+  def exit(err: Any): js.Promise[Unit] = js.native
   
   val extend: Console = js.native
   
@@ -61,8 +61,8 @@ trait Hexo extends EventEmitter {
   /**
     * Loading all files in the `source` folder as well as the theme data.
     */
-  def load(): js.Promise[js.Any] = js.native
-  def load(fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def load(): js.Promise[Any] = js.native
+  def load(fn: js.Function2[/* err */ Any, /* value */ Any, Unit]): js.Promise[Any] = js.native
   
   /**
     * Local variables are used for template rendering, which is the `site` variable in templates.
@@ -104,7 +104,7 @@ trait Hexo extends EventEmitter {
     * Emitted before Hexo exits.
     */
   @JSName("on")
-  def on_exit(ev: exit, fn: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+  def on_exit(ev: exit, fn: js.Function1[/* err */ Any, Unit]): this.type = js.native
   /**
     * Emitted after generation finishes.
     */
@@ -163,6 +163,6 @@ trait Hexo extends EventEmitter {
   /**
     * The same things `load` does, but will also start watching for file changes continuously.
     */
-  def watch(): js.Promise[js.Any] = js.native
-  def watch(fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def watch(): js.Promise[Any] = js.native
+  def watch(fn: js.Function2[/* err */ Any, /* value */ Any, Unit]): js.Promise[Any] = js.native
 }

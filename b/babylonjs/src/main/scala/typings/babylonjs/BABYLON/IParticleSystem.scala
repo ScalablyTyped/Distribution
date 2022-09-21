@@ -170,7 +170,7 @@ trait IParticleSystem extends StObject {
     * @param newEmitter The new emitter to use
     * @returns the cloned particle system
     */
-  def clone(name: String, newEmitter: js.Any): Nullable[IParticleSystem] = js.native
+  def clone(name: String, newEmitter: Any): Nullable[IParticleSystem] = js.native
   
   /**
     * Random color of each particle after it has been emitted, between color1 and color2 vectors.
@@ -264,7 +264,7 @@ trait IParticleSystem extends StObject {
   
   /**
     * Dispose the particle system and frees its associated resources.
-    * @param disposeTexture defines if the particule texture must be disposed as well (true by default)
+    * @param disposeTexture defines if the particle texture must be disposed as well (true by default)
     */
   def dispose(): Unit = js.native
   def dispose(disposeTexture: Boolean): Unit = js.native
@@ -315,14 +315,14 @@ trait IParticleSystem extends StObject {
   
   /**
     * Gets the current list of alpha remap gradients.
-    * You must use addAlphaRemapGradient and removeAlphaRemapGradient to udpate this list
+    * You must use addAlphaRemapGradient and removeAlphaRemapGradient to update this list
     * @returns the list of alpha remap gradients
     */
   def getAlphaRemapGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of angular speed gradients.
-    * You must use addAngularSpeedGradient and removeAngularSpeedGradient to udpate this list
+    * You must use addAngularSpeedGradient and removeAngularSpeedGradient to update this list
     * @returns the list of angular speed gradients
     */
   def getAngularSpeedGradients(): Nullable[js.Array[FactorGradient]] = js.native
@@ -341,14 +341,14 @@ trait IParticleSystem extends StObject {
   
   /**
     * Gets the current list of color gradients.
-    * You must use addColorGradient and removeColorGradient to udpate this list
+    * You must use addColorGradient and removeColorGradient to update this list
     * @returns the list of color gradients
     */
   def getColorGradients(): Nullable[js.Array[ColorGradient]] = js.native
   
   /**
     * Gets the current list of color remap gradients.
-    * You must use addColorRemapGradient and removeColorRemapGradient to udpate this list
+    * You must use addColorRemapGradient and removeColorRemapGradient to update this list
     * @returns the list of color remap gradients
     */
   def getColorRemapGradients(): Nullable[js.Array[FactorGradient]] = js.native
@@ -362,35 +362,35 @@ trait IParticleSystem extends StObject {
   
   /**
     * Gets the current list of drag gradients.
-    * You must use addDragGradient and removeDragGradient to udpate this list
+    * You must use addDragGradient and removeDragGradient to update this list
     * @returns the list of drag gradients
     */
   def getDragGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of emit rate gradients.
-    * You must use addEmitRateGradient and removeEmitRateGradient to udpate this list
+    * You must use addEmitRateGradient and removeEmitRateGradient to update this list
     * @returns the list of emit rate gradients
     */
   def getEmitRateGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of life time gradients.
-    * You must use addLifeTimeGradient and removeLifeTimeGradient to udpate this list
+    * You must use addLifeTimeGradient and removeLifeTimeGradient to update this list
     * @returns the list of life time gradients
     */
   def getLifeTimeGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of limit velocity gradients.
-    * You must use addLimitVelocityGradient and removeLimitVelocityGradient to udpate this list
+    * You must use addLimitVelocityGradient and removeLimitVelocityGradient to update this list
     * @returns the list of limit velocity gradients
     */
   def getLimitVelocityGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of ramp gradients.
-    * You must use addRampGradient and removeRampGradient to udpate this list
+    * You must use addRampGradient and removeRampGradient to update this list
     * @returns the list of ramp gradients
     */
   def getRampGradients(): Nullable[js.Array[Color3Gradient]] = js.native
@@ -403,21 +403,21 @@ trait IParticleSystem extends StObject {
   
   /**
     * Gets the current list of size gradients.
-    * You must use addSizeGradient and removeSizeGradient to udpate this list
+    * You must use addSizeGradient and removeSizeGradient to update this list
     * @returns the list of size gradients
     */
   def getSizeGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of start size gradients.
-    * You must use addStartSizeGradient and removeStartSizeGradient to udpate this list
+    * You must use addStartSizeGradient and removeStartSizeGradient to update this list
     * @returns the list of start size gradients
     */
   def getStartSizeGradients(): Nullable[js.Array[FactorGradient]] = js.native
   
   /**
     * Gets the current list of velocity gradients.
-    * You must use addVelocityGradient and removeVelocityGradient to udpate this list
+    * You must use addVelocityGradient and removeVelocityGradient to update this list
     * @returns the list of velocity gradients
     */
   def getVelocityGradients(): Nullable[js.Array[FactorGradient]] = js.native
@@ -449,7 +449,7 @@ trait IParticleSystem extends StObject {
   
   /**
     * Is this system ready to be used/rendered
-    * @return true if the system is ready
+    * @returns true if the system is ready
     */
   def isReady(): Boolean = js.native
   
@@ -472,6 +472,11 @@ trait IParticleSystem extends StObject {
   
   /** Gets or sets a value indicating the damping to apply if the limit velocity factor is reached */
   var limitVelocityDamping: Double = js.native
+  
+  /**
+    * If you want to launch only a few particles at once, that can be done, as well.
+    */
+  var manualEmitCount: Double = js.native
   
   /**
     * Maximum angular speed of emitting particles (Z-axis rotation for each particle).
@@ -681,7 +686,7 @@ trait IParticleSystem extends StObject {
     * @param serializeTexture defines if the texture must be serialized as well
     * @returns the JSON object
     */
-  def serialize(serializeTexture: Boolean): js.Any = js.native
+  def serialize(serializeTexture: Boolean): Any = js.native
   
   /**
     * Sets the custom effect used to render the particles
@@ -702,6 +707,11 @@ trait IParticleSystem extends StObject {
     * If using a spritesheet (isAnimationSheetEnabled), defines the sprite cell height to use
     */
   var spriteCellHeight: Double = js.native
+  
+  /**
+    * If using a spritesheet (isAnimationSheetEnabled), defines whether the sprite animation is looping
+    */
+  var spriteCellLoop: Boolean = js.native
   
   /**
     * If using a spritesheet (isAnimationSheetEnabled), defines the sprite cell width to use

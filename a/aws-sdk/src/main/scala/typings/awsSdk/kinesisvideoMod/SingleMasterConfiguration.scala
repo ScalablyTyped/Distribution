@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SingleMasterConfiguration extends StObject {
   
   /**
-    * The period of time a signaling channel retains underlivered messages before they are discarded.
+    * The period of time a signaling channel retains undelivered messages before they are discarded.
     */
   var MessageTtlSeconds: js.UndefOr[typings.awsSdk.kinesisvideoMod.MessageTtlSeconds] = js.undefined
 }

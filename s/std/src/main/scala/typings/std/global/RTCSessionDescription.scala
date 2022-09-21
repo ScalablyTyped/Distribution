@@ -9,17 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("RTCSessionDescription")
 @js.native
-class RTCSessionDescription ()
+open class RTCSessionDescription protected ()
   extends StObject
      with typings.std.RTCSessionDescription {
+  /* standard dom */
   def this(descriptionInitDict: RTCSessionDescriptionInit) = this()
   
+  /* standard dom */
   /* CompleteClass */
   override val sdp: java.lang.String = js.native
   
+  /* standard dom */
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): Any = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val `type`: RTCSdpType = js.native
 }

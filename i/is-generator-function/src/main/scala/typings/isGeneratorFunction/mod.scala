@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(fn: js.Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
+  inline def apply(fn: Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
   
   @JSImport("is-generator-function", JSImport.Namespace)
   @js.native

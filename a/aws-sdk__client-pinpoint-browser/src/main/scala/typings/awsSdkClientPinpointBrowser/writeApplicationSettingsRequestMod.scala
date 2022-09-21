@@ -8,5 +8,5 @@ object writeApplicationSettingsRequestMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_WriteApplicationSettingsRequest", "_WriteApplicationSettingsRequest")
   @js.native
-  val WriteApplicationSettingsRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val WriteApplicationSettingsRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

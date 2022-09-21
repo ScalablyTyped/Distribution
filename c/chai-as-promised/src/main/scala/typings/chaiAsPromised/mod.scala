@@ -16,9 +16,9 @@ object mod extends Shortcut {
   @js.native
   trait ChaiAsPromised extends ChaiPlugin {
     
-    def transferPromiseness(assertion: PromisedAssertion, promise: js.Thenable[js.Any]): Unit = js.native
+    def transferPromiseness(assertion: PromisedAssertion, promise: js.Thenable[Any]): Unit = js.native
     
-    def transformAsserterArgs(values: js.Array[js.Any]): js.Any = js.native
+    def transformAsserterArgs(values: js.Array[Any]): Any = js.native
   }
   
   type _To = ChaiAsPromised

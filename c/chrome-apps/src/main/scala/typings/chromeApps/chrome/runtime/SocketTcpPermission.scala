@@ -26,6 +26,6 @@ object SocketTcpPermission {
     
     inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    inline def setConnectVarargs(value: String*): Self = StObject.set(x, "connect", js.Array(value :_*))
+    inline def setConnectVarargs(value: String*): Self = StObject.set(x, "connect", js.Array(value*))
   }
 }

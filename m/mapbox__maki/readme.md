@@ -1,7 +1,7 @@
 
 # Scala.js typings for mapbox__maki
 
-Typings are for version 6.2
+Typings are for version 7.2
 
 ## Library description:
 Pixel-perfect icons for web cartography
@@ -10,10 +10,10 @@ Pixel-perfect icons for web cartography
 | ------------------ | :-------------: |
 | Full name          | @mapbox/maki |
 | Keywords           | map, icon, poi, svg |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 81993 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 11225.666666666666 |
+| # stars            | 1419.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/maki)

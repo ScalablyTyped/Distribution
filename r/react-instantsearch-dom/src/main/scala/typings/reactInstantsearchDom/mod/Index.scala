@@ -1,17 +1,20 @@
 package typings.reactInstantsearchDom.mod
 
+import typings.reactInstantsearchCore.mod.IndexProps
+import typings.reactInstantsearchDom.anon.ReadonlyIndexProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-instantsearch-dom", "Index")
 @js.native
-class Index protected ()
+open class Index protected ()
   extends typings.reactInstantsearchCore.mod.Index {
-  def this(props: js.Any) = this()
+  def this(props: IndexProps) = this()
+  def this(props: ReadonlyIndexProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: IndexProps, context: Any) = this()
 }

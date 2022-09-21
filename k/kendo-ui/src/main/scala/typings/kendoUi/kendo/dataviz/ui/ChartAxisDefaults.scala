@@ -95,7 +95,7 @@ object ChartAxisDefaults {
     
     inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
-    inline def setPlotBandsVarargs(value: ChartAxisDefaultsPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
+    inline def setPlotBandsVarargs(value: ChartAxisDefaultsPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value*))
     
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     

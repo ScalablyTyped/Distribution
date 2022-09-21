@@ -1,7 +1,7 @@
 
 # Scala.js typings for constant-case
 
-Typings are for version 3.0.3
+Typings are for version 3.0.4
 
 ## Library description:
 Transform into upper case string with an underscore between words
@@ -10,10 +10,10 @@ Transform into upper case string with an underscore between words
 | ------------------ | :-------------: |
 | Full name          | constant-case |
 | Keywords           | constant, case, upper, uppercase, underscore, convert, transform |
-| # releases         | 6 |
-| # dependents       | 56 |
-| # downloads        | 88385342 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7749423666666668E7 |
+| # stars            | 1779.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/constant-case#readme)

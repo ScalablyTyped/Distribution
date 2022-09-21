@@ -22,7 +22,7 @@ object workItemTrackingProcessApiMod {
   
   @JSImport("vso-node-api/WorkItemTrackingProcessApi", "WorkItemTrackingProcessApi")
   @js.native
-  class WorkItemTrackingProcessApi protected () extends IWorkItemTrackingProcessApi {
+  open class WorkItemTrackingProcessApi protected () extends IWorkItemTrackingProcessApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }

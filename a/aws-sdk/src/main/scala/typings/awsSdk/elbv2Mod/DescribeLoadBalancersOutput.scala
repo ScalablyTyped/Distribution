@@ -29,7 +29,7 @@ object DescribeLoadBalancersOutput {
     
     inline def setLoadBalancersUndefined: Self = StObject.set(x, "LoadBalancers", js.undefined)
     
-    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "LoadBalancers", js.Array(value :_*))
+    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "LoadBalancers", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

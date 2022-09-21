@@ -13,6 +13,8 @@ trait OpacitySliderStyleProperties
   /**
     * The color of the slider's track.
     *
+    * @default new Color([0, 121, 193])
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#style)
     */
   var trackFillColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
@@ -34,6 +36,6 @@ object OpacitySliderStyleProperties {
     
     inline def setTrackFillColorUndefined: Self = StObject.set(x, "trackFillColor", js.undefined)
     
-    inline def setTrackFillColorVarargs(value: Double*): Self = StObject.set(x, "trackFillColor", js.Array(value :_*))
+    inline def setTrackFillColorVarargs(value: Double*): Self = StObject.set(x, "trackFillColor", js.Array(value*))
   }
 }

@@ -104,7 +104,7 @@ object connection {
     inline def apply(
       accept: String => XConnection,
       acquire: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       stopAccepting: () => Unit
     ): XAcceptor = {
@@ -182,7 +182,7 @@ object connection {
       close: () => Unit,
       flush: () => Unit,
       getDescription: () => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       read: (js.Array[SeqEquiv[Double]], Double) => Double,
       release: () => Unit,
       write: SeqEquiv[Double] => Unit
@@ -227,7 +227,7 @@ object connection {
       close: () => Unit,
       flush: () => Unit,
       getDescription: () => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       read: (js.Array[SeqEquiv[Double]], Double) => Double,
       readSomeBytes: (js.Array[SeqEquiv[Double]], Double) => Double,
       release: () => Unit,
@@ -273,7 +273,7 @@ object connection {
     inline def apply(
       acquire: () => Unit,
       addStreamListener: XStreamListener => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeStreamListener: XStreamListener => Unit
     ): XConnectionBroadcaster = {
@@ -310,7 +310,7 @@ object connection {
     inline def apply(
       acquire: () => Unit,
       connect: String => XConnection,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XConnector = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), connect = js.Any.fromFunction1(connect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

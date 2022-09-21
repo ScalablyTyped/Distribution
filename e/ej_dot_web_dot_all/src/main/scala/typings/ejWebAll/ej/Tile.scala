@@ -356,22 +356,22 @@ object Tile {
     /** Specifies liveTile images in CSS classes.
       * @Default {null}
       */
-    var imageClass: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var imageClass: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies liveTile images in templates.
       * @Default {null}
       */
-    var imageTemplateId: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var imageTemplateId: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies liveTile images in CSS classes.
       * @Default {null}
       */
-    var imageUrl: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var imageUrl: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the text to each living tile
       * @Default {Null}
       */
-    var text: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var text: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies liveTile type for Tile. See orientation
       * @Default {flip}
@@ -396,29 +396,29 @@ object Tile {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setImageClass(value: js.Array[js.Any]): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
+      inline def setImageClass(value: js.Array[Any]): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
       
       inline def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
       
-      inline def setImageClassVarargs(value: js.Any*): Self = StObject.set(x, "imageClass", js.Array(value :_*))
+      inline def setImageClassVarargs(value: Any*): Self = StObject.set(x, "imageClass", js.Array(value*))
       
-      inline def setImageTemplateId(value: js.Array[js.Any]): Self = StObject.set(x, "imageTemplateId", value.asInstanceOf[js.Any])
+      inline def setImageTemplateId(value: js.Array[Any]): Self = StObject.set(x, "imageTemplateId", value.asInstanceOf[js.Any])
       
       inline def setImageTemplateIdUndefined: Self = StObject.set(x, "imageTemplateId", js.undefined)
       
-      inline def setImageTemplateIdVarargs(value: js.Any*): Self = StObject.set(x, "imageTemplateId", js.Array(value :_*))
+      inline def setImageTemplateIdVarargs(value: Any*): Self = StObject.set(x, "imageTemplateId", js.Array(value*))
       
-      inline def setImageUrl(value: js.Array[js.Any]): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+      inline def setImageUrl(value: js.Array[Any]): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
       inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
       
-      inline def setImageUrlVarargs(value: js.Any*): Self = StObject.set(x, "imageUrl", js.Array(value :_*))
+      inline def setImageUrlVarargs(value: Any*): Self = StObject.set(x, "imageUrl", js.Array(value*))
       
-      inline def setText(value: js.Array[js.Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: js.Array[Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTextVarargs(value: js.Any*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: Any*): Self = StObject.set(x, "text", js.Array(value*))
       
       inline def setType(value: liveTileType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

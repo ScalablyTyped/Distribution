@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A metric value representing temporal values of a variable.
-  */
 trait SchemaIntegerGauge extends StObject {
   
   /**
     * The time at which this value was measured. Measured as msecs from epoch.
     */
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The value of the variable represented by this gauge.
@@ -29,6 +26,8 @@ object SchemaIntegerGauge {
   extension [Self <: SchemaIntegerGauge](x: Self) {
     
     inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     

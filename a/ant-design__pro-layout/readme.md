@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__pro-layout
 
-Typings are for version 6.5.15
+Typings are for version 7.1.0
 
 ## Library description:
 @ant-design/pro-layout
@@ -10,10 +10,10 @@ Typings are for version 6.5.15
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-layout |
 | Keywords           | antd, admin, ant-design, ant-design-pro |
-| # releases         | 225 |
-| # dependents       | 66 |
-| # downloads        | 650012 |
-| # stars            | 0 |
+| # releases         | 277 |
+| # dependents       | 0.0 |
+| # downloads        | 136495.66666666666 |
+| # stars            | 2883.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/pro-components/tree/master/packages/layout#readme)

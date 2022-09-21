@@ -20,7 +20,7 @@ trait AnimationOptions extends StObject {
     * when an animation action starts. An array of key-value pairs, where the provided value
     * is used as a default.
     */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object AnimationOptions {
   
@@ -35,7 +35,7 @@ object AnimationOptions {
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }

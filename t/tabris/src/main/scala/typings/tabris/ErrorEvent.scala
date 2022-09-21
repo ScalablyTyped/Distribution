@@ -10,7 +10,7 @@ trait ErrorEvent
   
   val colno: Double
   
-  val error: js.Any
+  val error: Any
   
   val filename: String
   
@@ -38,7 +38,7 @@ object ErrorEvent {
     colno: Double,
     currentTarget: EventTarget,
     defaultPrevented: Boolean,
-    error: js.Any,
+    error: Any,
     eventPhase: Double,
     filename: String,
     initErrorEvent: (String, Boolean, Boolean, String, String, Double) => Unit,
@@ -62,7 +62,7 @@ object ErrorEvent {
     
     inline def setColno(value: Double): Self = StObject.set(x, "colno", value.asInstanceOf[js.Any])
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

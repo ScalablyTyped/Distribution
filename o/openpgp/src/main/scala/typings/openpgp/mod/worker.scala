@@ -16,7 +16,7 @@ object worker {
     
     @JSImport("openpgp", "worker.async_proxy.AsyncProxy")
     @js.native
-    class AsyncProxy protected () extends StObject {
+    open class AsyncProxy protected () extends StObject {
       /**
         * Initializes a new proxy and loads the web worker
         * @param path The path to the worker or 'openpgp.worker.js' by default
@@ -24,7 +24,7 @@ object worker {
         * @param config config The worker configuration
         * @param worker alternative to path parameter: web worker initialized with 'openpgp.worker.js'
         */
-      def this(path: String, n: Double, config: js.Object, worker: js.Array[js.Any]) = this()
+      def this(path: String, n: Double, config: js.Object, worker: js.Array[Any]) = this()
       
       /**
         * Generic proxy function that handles all commands from the public api.
@@ -32,7 +32,7 @@ object worker {
         * @param options the api function's options
         * @returns see the corresponding public api functions for their return types
         */
-      def delegate(method: String, options: js.Object): js.Promise[js.Any] = js.native
+      def delegate(method: String, options: js.Object): js.Promise[Any] = js.native
       
       /**
         * Get new request ID
@@ -100,6 +100,6 @@ object worker {
       * as this api is only avalible in the main window.
       * @param buffer Some random bytes
       */
-    inline def seedRandom(buffer: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seedRandom")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def seedRandom(buffer: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seedRandom")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "AnyDictionaryType")
 @js.native
-class AnyDictionaryType ()
-  extends Type_[StringDictionary[js.Any], StringDictionary[js.Any], js.Any] {
+open class AnyDictionaryType () extends Type_[StringDictionary[Any], StringDictionary[Any], Any] {
   
   /**
     * @since 1.0.0

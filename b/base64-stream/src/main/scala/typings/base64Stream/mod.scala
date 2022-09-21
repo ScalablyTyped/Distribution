@@ -1,6 +1,6 @@
 package typings.base64Stream
 
-import typings.base64Stream.anon.TransformOptionslineLengt
+import typings.base64Stream.anon.TransformOptionsoutputEnc
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ object mod {
   
   @JSImport("base64-stream", "Base64Decode")
   @js.native
-  class Base64Decode () extends Transform {
+  open class Base64Decode () extends Transform {
     def this(opts: TransformOptions) = this()
   }
   
   @JSImport("base64-stream", "Base64Encode")
   @js.native
-  class Base64Encode () extends Transform {
-    def this(options: TransformOptionslineLengt) = this()
+  open class Base64Encode () extends Transform {
+    def this(options: TransformOptionsoutputEnc) = this()
   }
 }

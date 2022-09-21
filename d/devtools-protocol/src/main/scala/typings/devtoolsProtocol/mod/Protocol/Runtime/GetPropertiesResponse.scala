@@ -43,16 +43,16 @@ object GetPropertiesResponse {
     
     inline def setInternalPropertiesUndefined: Self = StObject.set(x, "internalProperties", js.undefined)
     
-    inline def setInternalPropertiesVarargs(value: InternalPropertyDescriptor*): Self = StObject.set(x, "internalProperties", js.Array(value :_*))
+    inline def setInternalPropertiesVarargs(value: InternalPropertyDescriptor*): Self = StObject.set(x, "internalProperties", js.Array(value*))
     
     inline def setPrivateProperties(value: js.Array[PrivatePropertyDescriptor]): Self = StObject.set(x, "privateProperties", value.asInstanceOf[js.Any])
     
     inline def setPrivatePropertiesUndefined: Self = StObject.set(x, "privateProperties", js.undefined)
     
-    inline def setPrivatePropertiesVarargs(value: PrivatePropertyDescriptor*): Self = StObject.set(x, "privateProperties", js.Array(value :_*))
+    inline def setPrivatePropertiesVarargs(value: PrivatePropertyDescriptor*): Self = StObject.set(x, "privateProperties", js.Array(value*))
     
     inline def setResult(value: js.Array[PropertyDescriptor]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: PropertyDescriptor*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: PropertyDescriptor*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

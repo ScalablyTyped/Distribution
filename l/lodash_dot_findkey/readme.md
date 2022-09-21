@@ -10,10 +10,10 @@ The lodash method `_.findKey` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.findkey |
 | Keywords           | lodash-modularized, findkey |
-| # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 6005599 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 334292.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

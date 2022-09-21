@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +8,14 @@ object globMod {
   
   @JSImport("@uirouter/core/lib/common/glob", "Glob")
   @js.native
-  class Glob protected () extends StObject {
+  open class Glob protected () extends StObject {
     def this(text: String) = this()
     
     var glob: js.Array[String] = js.native
     
     def matches(name: String): Boolean = js.native
     
-    var regexp: RegExp = js.native
+    var regexp: js.RegExp = js.native
     
     var text: String = js.native
   }

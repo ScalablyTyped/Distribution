@@ -11,8 +11,8 @@ trait GoTo extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GoTo.html#goToOverride)
     */
-  def goToOverride(view: MapView, goToParameters: js.Any): Unit
-  def goToOverride(view: SceneView, goToParameters: js.Any): Unit
+  def goToOverride(view: MapView, goToParameters: Any): scala.Unit
+  def goToOverride(view: SceneView, goToParameters: Any): scala.Unit
   /**
     * This function provides the ability to override either the [MapView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo) or [SceneView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo) methods.
     *
@@ -23,13 +23,13 @@ trait GoTo extends StObject {
 }
 object GoTo {
   
-  inline def apply(goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): GoTo = {
+  inline def apply(goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ Any) => scala.Unit): GoTo = {
     val __obj = js.Dynamic.literal(goToOverride = js.Any.fromFunction2(goToOverride))
     __obj.asInstanceOf[GoTo]
   }
   
   extension [Self <: GoTo](x: Self) {
     
-    inline def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
+    inline def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ Any) => scala.Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
   }
 }

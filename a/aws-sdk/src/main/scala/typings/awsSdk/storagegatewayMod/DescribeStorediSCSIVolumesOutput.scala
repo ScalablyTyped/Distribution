@@ -24,6 +24,6 @@ object DescribeStorediSCSIVolumesOutput {
     
     inline def setStorediSCSIVolumesUndefined: Self = StObject.set(x, "StorediSCSIVolumes", js.undefined)
     
-    inline def setStorediSCSIVolumesVarargs(value: StorediSCSIVolume*): Self = StObject.set(x, "StorediSCSIVolumes", js.Array(value :_*))
+    inline def setStorediSCSIVolumesVarargs(value: StorediSCSIVolume*): Self = StObject.set(x, "StorediSCSIVolumes", js.Array(value*))
   }
 }

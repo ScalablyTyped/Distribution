@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fingerprintjs/fingerprintjs" : "3.3.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fingerprintjs/fingerprintjs" : "3.3.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

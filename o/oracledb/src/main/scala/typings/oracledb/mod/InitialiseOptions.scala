@@ -13,21 +13,21 @@ trait InitialiseOptions extends StObject {
   
   /**
     * This specifies the driver name value shown in database views, such as V$SESSION_CONNECT_INFO. It can be used by applications to identify themselves for tracing and monitoring purposes. The convention is to separate the product name from the product version by a colon and single space characters. If this attribute is not specified, the value “node-oracledb : version” is used.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#otherinit
     */
   var driverName: js.UndefOr[String] = js.undefined
   
   /**
-    * This specifies the URL that is included in the node-oracledb exception message if the Oracle Client libraries cannot be loaded. This allows applications that use node-oracledb to refer users to application-specific installation instructions. If this attribute is not specified, then the node-oracledb installation instructions URL is used. 
-    * 
+    * This specifies the URL that is included in the node-oracledb exception message if the Oracle Client libraries cannot be loaded. This allows applications that use node-oracledb to refer users to application-specific installation instructions. If this attribute is not specified, then the node-oracledb installation instructions URL is used.
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#otherinit
     */
   var errorUrl: js.UndefOr[String] = js.undefined
   
   /**
     * This specifies the directory containing the Oracle Client libraries. If libDir is not specified, the default library search mechanism is used. If your client libraries are in a full Oracle Client or Oracle Database installation, such as Oracle Database “XE” Express Edition, then you must have previously set environment variables like ORACLE_HOME before calling initOracleClient().
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#oracleclientloading
     */
   var libDir: js.UndefOr[String] = js.undefined

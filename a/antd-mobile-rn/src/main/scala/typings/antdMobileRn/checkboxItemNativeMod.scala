@@ -15,7 +15,7 @@ object checkboxItemNativeMod {
   
   @JSImport("antd-mobile-rn/lib/checkbox/CheckboxItem.native", JSImport.Default)
   @js.native
-  class default () extends CheckboxItem
+  open class default () extends CheckboxItem
   /* static members */
   object default {
     
@@ -30,8 +30,7 @@ object checkboxItemNativeMod {
   }
   
   @js.native
-  trait CheckboxItem
-    extends Component[ICheckboxItemNativeProps, js.Any, js.Any] {
+  trait CheckboxItem extends Component[ICheckboxItemNativeProps, Any, Any] {
     
     def handleClick(): Unit = js.native
   }

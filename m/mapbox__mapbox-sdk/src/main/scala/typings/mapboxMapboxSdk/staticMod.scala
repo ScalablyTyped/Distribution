@@ -1,6 +1,7 @@
 package typings.mapboxMapboxSdk
 
 import typings.geojson.mod.GeoJSON
+import typings.mapboxGl.mod.AnyLayer
 import typings.mapboxGl.mod.LngLatBoundsLike
 import typings.mapboxGl.mod.LngLatLike
 import typings.mapboxMapboxSdk.anon.Bearing
@@ -114,7 +115,7 @@ object staticMod {
       
       inline def setCoordinates(value: js.Array[LngLatBoundsLike]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      inline def setCoordinatesVarargs(value: LngLatBoundsLike*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: LngLatBoundsLike*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
       inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
@@ -209,13 +210,17 @@ object staticMod {
   
   trait StaticMapRequest extends StObject {
     
+    var addlayer: js.UndefOr[AnyLayer] = js.undefined
+    
     var attribution: js.UndefOr[Boolean] = js.undefined
+    
+    var before_layer: js.UndefOr[String] = js.undefined
     
     var height: Double
     
     var highRes: js.UndefOr[Boolean] = js.undefined
     
-    var insertOverlayBeforeLayer: js.UndefOr[String] = js.undefined
+    var layer_id: js.UndefOr[String] = js.undefined
     
     var logo: js.UndefOr[Boolean] = js.undefined
     
@@ -225,7 +230,11 @@ object staticMod {
     
     var ownerId: String
     
+    var padding: js.UndefOr[String] = js.undefined
+    
     var position: Bearing | auto
+    
+    var setfilter: js.UndefOr[js.Array[Any]] = js.undefined
     
     var styleId: String
     
@@ -240,9 +249,17 @@ object staticMod {
     
     extension [Self <: StaticMapRequest](x: Self) {
       
+      inline def setAddlayer(value: AnyLayer): Self = StObject.set(x, "addlayer", value.asInstanceOf[js.Any])
+      
+      inline def setAddlayerUndefined: Self = StObject.set(x, "addlayer", js.undefined)
+      
       inline def setAttribution(value: Boolean): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       
       inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+      
+      inline def setBefore_layer(value: String): Self = StObject.set(x, "before_layer", value.asInstanceOf[js.Any])
+      
+      inline def setBefore_layerUndefined: Self = StObject.set(x, "before_layer", js.undefined)
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -250,9 +267,9 @@ object staticMod {
       
       inline def setHighResUndefined: Self = StObject.set(x, "highRes", js.undefined)
       
-      inline def setInsertOverlayBeforeLayer(value: String): Self = StObject.set(x, "insertOverlayBeforeLayer", value.asInstanceOf[js.Any])
+      inline def setLayer_id(value: String): Self = StObject.set(x, "layer_id", value.asInstanceOf[js.Any])
       
-      inline def setInsertOverlayBeforeLayerUndefined: Self = StObject.set(x, "insertOverlayBeforeLayer", js.undefined)
+      inline def setLayer_idUndefined: Self = StObject.set(x, "layer_id", js.undefined)
       
       inline def setLogo(value: Boolean): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
@@ -262,11 +279,21 @@ object staticMod {
       
       inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
       
-      inline def setOverlaysVarargs(value: (CustomMarkerOverlay | SimpleMarkerOverlay | PathOverlay | GeoJsonOverlay)*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+      inline def setOverlaysVarargs(value: (CustomMarkerOverlay | SimpleMarkerOverlay | PathOverlay | GeoJsonOverlay)*): Self = StObject.set(x, "overlays", js.Array(value*))
       
       inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
+      inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      
       inline def setPosition(value: Bearing | auto): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      inline def setSetfilter(value: js.Array[Any]): Self = StObject.set(x, "setfilter", value.asInstanceOf[js.Any])
+      
+      inline def setSetfilterUndefined: Self = StObject.set(x, "setfilter", js.undefined)
+      
+      inline def setSetfilterVarargs(value: Any*): Self = StObject.set(x, "setfilter", js.Array(value*))
       
       inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
       
@@ -280,18 +307,18 @@ object staticMod {
       * Get a static map image..
       * @param request
       */
-    def getStaticImage(request: StaticMapRequest): MapiRequest
+    def getStaticImage(request: StaticMapRequest): MapiRequest[Any]
   }
   object StaticMapService {
     
-    inline def apply(getStaticImage: StaticMapRequest => MapiRequest): StaticMapService = {
+    inline def apply(getStaticImage: StaticMapRequest => MapiRequest[Any]): StaticMapService = {
       val __obj = js.Dynamic.literal(getStaticImage = js.Any.fromFunction1(getStaticImage))
       __obj.asInstanceOf[StaticMapService]
     }
     
     extension [Self <: StaticMapService](x: Self) {
       
-      inline def setGetStaticImage(value: StaticMapRequest => MapiRequest): Self = StObject.set(x, "getStaticImage", js.Any.fromFunction1(value))
+      inline def setGetStaticImage(value: StaticMapRequest => MapiRequest[Any]): Self = StObject.set(x, "getStaticImage", js.Any.fromFunction1(value))
     }
   }
 }

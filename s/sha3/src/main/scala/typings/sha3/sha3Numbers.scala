@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sha3Numbers {
   
   @js.native
+  sealed trait `128` extends StObject
+  inline def `128`: `128` = 128.asInstanceOf[`128`]
+  
+  @js.native
   sealed trait `224` extends StObject
   inline def `224`: `224` = 224.asInstanceOf[`224`]
   

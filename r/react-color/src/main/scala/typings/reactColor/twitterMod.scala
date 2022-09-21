@@ -17,12 +17,10 @@ object twitterMod {
   
   @JSImport("react-color/lib/components/twitter/Twitter", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TwitterPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TwitterPickerProps, js.Object, Any]
   
-  @js.native
-  trait TwitterPicker
-    extends Component[TwitterPickerProps, js.Object, js.Any]
+  type TwitterPicker = Component[TwitterPickerProps, js.Object, Any]
   
   trait TwitterPickerProps
     extends StObject
@@ -52,7 +50,7 @@ object twitterMod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
       

@@ -14,27 +14,27 @@ trait SendSmsMessageOperation
   @JSName("done")
   def done_MSendSmsMessageOperation[U](): Unit = js.native
   @JSName("done")
-  def done_MSendSmsMessageOperation[U](success: js.Function0[js.Any]): Unit = js.native
+  def done_MSendSmsMessageOperation[U](success: js.Function0[Any]): Unit = js.native
   @JSName("done")
-  def done_MSendSmsMessageOperation[U](success: js.Function0[js.Any], error: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
+  def done_MSendSmsMessageOperation[U](success: js.Function0[Any], error: js.Function1[/* error */ Any, Any]): Unit = js.native
   @JSName("done")
   def done_MSendSmsMessageOperation[U](
-    success: js.Function0[js.Any],
-    error: js.Function1[/* error */ js.Any, js.Any],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    success: js.Function0[Any],
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
   @JSName("done")
-  def done_MSendSmsMessageOperation[U](success: js.Function0[js.Any], error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): Unit = js.native
+  def done_MSendSmsMessageOperation[U](success: js.Function0[Any], error: Unit, progress: js.Function1[/* progress */ Any, Unit]): Unit = js.native
   @JSName("done")
-  def done_MSendSmsMessageOperation[U](success: Unit, error: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
+  def done_MSendSmsMessageOperation[U](success: Unit, error: js.Function1[/* error */ Any, Any]): Unit = js.native
   @JSName("done")
   def done_MSendSmsMessageOperation[U](
     success: Unit,
-    error: js.Function1[/* error */ js.Any, js.Any],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
   @JSName("done")
-  def done_MSendSmsMessageOperation[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): Unit = js.native
+  def done_MSendSmsMessageOperation[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): Unit = js.native
   
   var operation: CompletedGetResults = js.native
 }

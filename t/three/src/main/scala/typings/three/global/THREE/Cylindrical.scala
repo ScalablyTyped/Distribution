@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Cylindrical")
 @js.native
-class Cylindrical ()
+open class Cylindrical ()
   extends typings.three.mod.Cylindrical {
   def this(radius: Double) = this()
   def this(radius: Double, theta: Double) = this()

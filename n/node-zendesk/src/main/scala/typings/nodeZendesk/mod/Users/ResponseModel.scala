@@ -68,7 +68,7 @@ trait ResponseModel
   
   val suspended: Boolean
   
-  val tags: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
+  val tags: js.UndefOr[js.Array[Any] | Null] = js.undefined
   
   val ticket_restriction: TicketRestriction | Null
   
@@ -193,13 +193,13 @@ object ResponseModel {
     
     inline def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
-    inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsNull: Self = StObject.set(x, "tags", null)
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Any*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTicket_restriction(value: TicketRestriction): Self = StObject.set(x, "ticket_restriction", value.asInstanceOf[js.Any])
     

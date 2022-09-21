@@ -10,10 +10,10 @@ The lodash method `_.flip` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.flip |
 | Keywords           | lodash-modularized, flip |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1242 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 415.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfirmDeviceRequest extends StObject {
   
   /**
-    * The access token.
+    * A valid access token that Amazon Cognito issued to the user whose device you want to confirm.
     */
   var AccessToken: TokenModelType
   

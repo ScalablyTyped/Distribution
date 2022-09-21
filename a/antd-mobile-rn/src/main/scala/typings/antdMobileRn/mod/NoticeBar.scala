@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "NoticeBar")
 @js.native
-class NoticeBar protected () extends default {
+open class NoticeBar protected () extends default {
   def this(props: NoticeNativeProps) = this()
 }
 /* static members */

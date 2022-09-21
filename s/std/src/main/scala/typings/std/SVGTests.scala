@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGTests extends StObject {
   
+  /* standard dom */
   val requiredExtensions: SVGStringList
   
+  /* standard dom */
   val systemLanguage: SVGStringList
 }
 object SVGTests {

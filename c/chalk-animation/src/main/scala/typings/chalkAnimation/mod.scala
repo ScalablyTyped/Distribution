@@ -32,7 +32,13 @@ object mod {
   
   trait Animation extends StObject {
     
+    var f: Double
+    
     def frame(): String
+    
+    var init: Boolean
+    
+    var lines: Double
     
     def render(): Unit
     
@@ -41,23 +47,38 @@ object mod {
     def start(): Unit
     
     def stop(): Unit
+    
+    var stopped: Boolean
+    
+    var text: js.Array[String]
   }
   object Animation {
     
     inline def apply(
+      f: Double,
       frame: () => String,
+      init: Boolean,
+      lines: Double,
       render: () => Unit,
       replace: String => Unit,
       start: () => Unit,
-      stop: () => Unit
+      stop: () => Unit,
+      stopped: Boolean,
+      text: js.Array[String]
     ): Animation = {
-      val __obj = js.Dynamic.literal(frame = js.Any.fromFunction0(frame), render = js.Any.fromFunction0(render), replace = js.Any.fromFunction1(replace), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
+      val __obj = js.Dynamic.literal(f = f.asInstanceOf[js.Any], frame = js.Any.fromFunction0(frame), init = init.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], render = js.Any.fromFunction0(render), replace = js.Any.fromFunction1(replace), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), stopped = stopped.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Animation]
     }
     
     extension [Self <: Animation](x: Self) {
       
+      inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+      
       inline def setFrame(value: () => String): Self = StObject.set(x, "frame", js.Any.fromFunction0(value))
+      
+      inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      
+      inline def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
       inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
@@ -66,6 +87,12 @@ object mod {
       inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      
+      inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
     }
   }
   

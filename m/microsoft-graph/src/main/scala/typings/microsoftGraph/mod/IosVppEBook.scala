@@ -53,7 +53,7 @@ object IosVppEBook {
     
     inline def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
-    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value*))
     
     inline def setLanguage(value: NullableOption[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

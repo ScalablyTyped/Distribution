@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object domFetchMod {
   
-  @JSImport("rxjs/internal/observable/dom/fetch", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/observable/dom/fetch", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

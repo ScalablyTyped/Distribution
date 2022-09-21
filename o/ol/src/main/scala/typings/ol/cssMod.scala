@@ -71,7 +71,7 @@ object cssMod {
       
       inline def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
       
-      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
+      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value*))
       
       inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       

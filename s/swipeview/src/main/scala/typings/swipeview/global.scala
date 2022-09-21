@@ -10,7 +10,7 @@ object global {
   
   @JSGlobal("SwipeView")
   @js.native
-  class SwipeView protected ()
+  open class SwipeView protected ()
     extends StObject
        with typings.swipeview.SwipeView {
     def this(element: String) = this()

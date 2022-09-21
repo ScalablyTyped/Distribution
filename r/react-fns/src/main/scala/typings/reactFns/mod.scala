@@ -1,14 +1,12 @@
 package typings.reactFns
 
 import typings.react.mod.ComponentType
-import typings.react.mod.SFC
 import typings.reactFns.anon.PartialScrollConfig
 import typings.reactFns.anon.PartialWindowSizeConfig
 import typings.reactFns.deviceMotionDeviceMotionMod.DeviceMotionProps
 import typings.reactFns.deviceOrientationDeviceOrientationMod.DeviceOrientationProps
 import typings.reactFns.geoPositionGeoPositionMod.GeoPositionProps
 import typings.reactFns.localesLocalesMod.LocalesProps
-import typings.reactFns.mediaMediaMod.MediaProps
 import typings.reactFns.networkNetworkMod.NetworkProps
 import typings.reactFns.scrollScrollMod.ScrollConfig
 import typings.reactFns.scrollScrollMod.ScrollProps
@@ -27,78 +25,78 @@ object mod {
   
   @JSImport("react-fns", "DeviceMotion")
   @js.native
-  class DeviceMotion protected ()
+  open class DeviceMotion protected ()
     extends typings.reactFns.deviceMotionMod.DeviceMotion {
     def this(props: SharedRenderProps[DeviceMotionProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[DeviceMotionProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[DeviceMotionProps], context: Any) = this()
   }
   
   @JSImport("react-fns", "DeviceOrientation")
   @js.native
-  class DeviceOrientation protected ()
+  open class DeviceOrientation protected ()
     extends typings.reactFns.deviceOrientationMod.DeviceOrientation {
     def this(props: SharedRenderProps[DeviceOrientationProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[DeviceOrientationProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[DeviceOrientationProps], context: Any) = this()
   }
   
   @JSImport("react-fns", "GeoPosition")
   @js.native
-  class GeoPosition protected ()
+  open class GeoPosition protected ()
     extends typings.reactFns.geoPositionMod.GeoPosition {
     def this(props: SharedRenderProps[GeoPositionProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[GeoPositionProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[GeoPositionProps], context: Any) = this()
   }
   
   @JSImport("react-fns", "Locales")
   @js.native
-  class Locales protected ()
+  open class Locales protected ()
     extends typings.reactFns.localesMod.Locales {
     def this(props: SharedRenderProps[LocalesProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[LocalesProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[LocalesProps], context: Any) = this()
   }
   
   @JSImport("react-fns", "Media")
   @js.native
-  val Media: SFC[SharedRenderProps[MediaProps]] = js.native
+  val Media: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<SharedRenderProps<MediaProps>> */ Any = js.native
   
   @JSImport("react-fns", "Network")
   @js.native
-  class Network protected ()
+  open class Network protected ()
     extends typings.reactFns.networkMod.Network {
     def this(props: SharedRenderProps[NetworkProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[NetworkProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[NetworkProps], context: Any) = this()
   }
   
   @JSImport("react-fns", "Scroll")
   @js.native
-  class Scroll protected ()
+  open class Scroll protected ()
     extends typings.reactFns.scrollMod.Scroll {
     def this(props: ScrollConfig & SharedRenderProps[ScrollProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: js.Any) = this()
+    def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: Any) = this()
   }
   /* static members */
   object Scroll {
@@ -115,14 +113,14 @@ object mod {
   
   @JSImport("react-fns", "WindowSize")
   @js.native
-  class WindowSize protected ()
+  open class WindowSize protected ()
     extends typings.reactFns.windowSizeMod.WindowSize {
     def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: js.Any) = this()
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: Any) = this()
   }
   /* static members */
   object WindowSize {

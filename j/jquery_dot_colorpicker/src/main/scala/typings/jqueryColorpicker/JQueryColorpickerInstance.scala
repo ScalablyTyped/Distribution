@@ -12,11 +12,11 @@ trait JQueryColorpickerInstance extends StObject {
   
   def open(): Unit
   
-  def setColor(color: js.Any): Unit
+  def setColor(color: Any): Unit
 }
 object JQueryColorpickerInstance {
   
-  inline def apply(close: () => Unit, destroy: () => Unit, open: () => Unit, setColor: js.Any => Unit): JQueryColorpickerInstance = {
+  inline def apply(close: () => Unit, destroy: () => Unit, open: () => Unit, setColor: Any => Unit): JQueryColorpickerInstance = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), open = js.Any.fromFunction0(open), setColor = js.Any.fromFunction1(setColor))
     __obj.asInstanceOf[JQueryColorpickerInstance]
   }
@@ -29,6 +29,6 @@ object JQueryColorpickerInstance {
     
     inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    inline def setSetColor(value: js.Any => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: Any => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
   }
 }

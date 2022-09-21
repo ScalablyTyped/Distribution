@@ -32,12 +32,6 @@ trait PrintToPDFRequest extends StObject {
   var headerTemplate: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to silently ignore invalid but successfully parsed page ranges, such as '3-2'.
-    * Defaults to false.
-    */
-  var ignoreInvalidPageRanges: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * Paper orientation. Defaults to false.
     */
   var landscape: js.UndefOr[Boolean] = js.undefined
@@ -63,8 +57,14 @@ trait PrintToPDFRequest extends StObject {
   var marginTop: js.UndefOr[Double] = js.undefined
   
   /**
-    * Paper ranges to print, e.g., '1-5, 8, 11-13'. Defaults to the empty string, which means
-    * print all pages.
+    * Paper ranges to print, one based, e.g., '1-5, 8, 11-13'. Pages are
+    * printed in the document order, not in the order specified, and no
+    * more than once.
+    * Defaults to empty string, which implies the entire document is printed.
+    * The page numbers are quietly capped to actual page count of the
+    * document, and ranges beyond the end of the document are ignored.
+    * If this results in no pages to print, an error is reported.
+    * It is an error to specify a range with start greater than end.
     */
   var pageRanges: js.UndefOr[String] = js.undefined
   
@@ -119,10 +119,6 @@ object PrintToPDFRequest {
     inline def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
     
     inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
-    
-    inline def setIgnoreInvalidPageRanges(value: Boolean): Self = StObject.set(x, "ignoreInvalidPageRanges", value.asInstanceOf[js.Any])
-    
-    inline def setIgnoreInvalidPageRangesUndefined: Self = StObject.set(x, "ignoreInvalidPageRanges", js.undefined)
     
     inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     

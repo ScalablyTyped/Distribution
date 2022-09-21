@@ -11,7 +11,7 @@ trait GridColumnFilterable extends StObject {
   
   var checkAll: js.UndefOr[Boolean] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var extra: js.UndefOr[Boolean] = js.undefined
   
@@ -21,7 +21,7 @@ trait GridColumnFilterable extends StObject {
   
   var multi: js.UndefOr[Boolean] = js.undefined
   
-  var operators: js.UndefOr[js.Any] = js.undefined
+  var operators: js.UndefOr[Any] = js.undefined
   
   var search: js.UndefOr[Boolean] = js.undefined
   
@@ -44,7 +44,7 @@ object GridColumnFilterable {
     
     inline def setCheckAllUndefined: Self = StObject.set(x, "checkAll", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -64,7 +64,7 @@ object GridColumnFilterable {
     
     inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    inline def setOperators(value: js.Any): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    inline def setOperators(value: Any): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
     inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
     

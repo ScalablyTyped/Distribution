@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("VRDisplay")
 @js.native
-class VRDisplay ()
+open class VRDisplay ()
   extends StObject
      with typings.babylonjs.VRDisplay

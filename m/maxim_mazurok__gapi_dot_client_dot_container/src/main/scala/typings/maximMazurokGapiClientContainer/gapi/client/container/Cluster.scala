@@ -13,6 +13,9 @@ trait Cluster extends StObject {
   /** Configuration controlling RBAC group membership information. */
   var authenticatorGroupsConfig: js.UndefOr[AuthenticatorGroupsConfig] = js.undefined
   
+  /** Autopilot configuration for the cluster. */
+  var autopilot: js.UndefOr[Autopilot] = js.undefined
+  
   /** Cluster-level autoscaling configuration. */
   var autoscaling: js.UndefOr[ClusterAutoscaling] = js.undefined
   
@@ -27,6 +30,9 @@ trait Cluster extends StObject {
   
   /** Which conditions caused the current cluster state. */
   var conditions: js.UndefOr[js.Array[StatusCondition]] = js.undefined
+  
+  /** Configuration of Confidential Nodes. All the nodes in the cluster will be Confidential VM once enabled. */
+  var confidentialNodes: js.UndefOr[ConfidentialNodes] = js.undefined
   
   /** [Output only] The time the cluster was created, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. */
   var createTime: js.UndefOr[String] = js.undefined
@@ -73,6 +79,12 @@ trait Cluster extends StObject {
   /** [Output only] The time the cluster will be automatically deleted in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. */
   var expireTime: js.UndefOr[String] = js.undefined
   
+  /** Output only. Unique id for the cluster. */
+  var id: js.UndefOr[String] = js.undefined
+  
+  /** Configuration for Identity Service component. */
+  var identityServiceConfig: js.UndefOr[IdentityServiceConfig] = js.undefined
+  
   /**
     * The initial Kubernetes version for this cluster. Valid versions are those found in validMasterVersions returned by getServerConfig. The version can be upgraded over time; such
     * upgrades are reflected in currentMasterVersion and currentNodeVersion. Users may specify either explicit versions offered by Kubernetes Engine or version aliases, which have the
@@ -116,6 +128,9 @@ trait Cluster extends StObject {
     */
   var locations: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** Logging configuration for the cluster. */
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
+  
   /**
     * The logging service the cluster should use to write logs. Currently available options: * `logging.googleapis.com/kubernetes` - The Cloud Logging service with a Kubernetes-native
     * resource model * `logging.googleapis.com` - The legacy Cloud Logging service (no longer available as of GKE 1.15). * `none` - no logs will be exported from the cluster. If left as
@@ -134,6 +149,12 @@ trait Cluster extends StObject {
   
   /** The configuration options for master authorized networks feature. */
   var masterAuthorizedNetworksConfig: js.UndefOr[MasterAuthorizedNetworksConfig] = js.undefined
+  
+  /** Configuration for issuance of mTLS keys and certificates to Kubernetes pods. */
+  var meshCertificates: js.UndefOr[MeshCertificates] = js.undefined
+  
+  /** Monitoring configuration for the cluster. */
+  var monitoringConfig: js.UndefOr[MonitoringConfig] = js.undefined
   
   /**
     * The monitoring service the cluster should use to write metrics. Currently available options: * "monitoring.googleapis.com/kubernetes" - The Cloud Monitoring service with a
@@ -174,8 +195,17 @@ trait Cluster extends StObject {
     */
   var nodeIpv4CidrSize: js.UndefOr[Double] = js.undefined
   
+  /** Node pool configs that apply to all auto-provisioned node pools in autopilot clusters and node auto-provisioning enabled clusters. */
+  var nodePoolAutoConfig: js.UndefOr[NodePoolAutoConfig] = js.undefined
+  
+  /** Default NodePool settings for the entire cluster. These settings are overridden if specified on the specific NodePool object. */
+  var nodePoolDefaults: js.UndefOr[NodePoolDefaults] = js.undefined
+  
   /** The node pools associated with this cluster. This field should not be set if "node_config" or "initial_node_count" are specified. */
   var nodePools: js.UndefOr[js.Array[NodePool]] = js.undefined
+  
+  /** Notification configuration of the cluster. */
+  var notificationConfig: js.UndefOr[NotificationConfig] = js.undefined
   
   /** Configuration for private cluster. */
   var privateClusterConfig: js.UndefOr[PrivateClusterConfig] = js.undefined
@@ -187,7 +217,7 @@ trait Cluster extends StObject {
   var resourceLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.Cluster & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.Cluster & TopLevel[Any]
   ] = js.undefined
   
   /** Configuration for exporting resource usages. Resource usage export is disabled when this config is unspecified. */
@@ -208,7 +238,7 @@ trait Cluster extends StObject {
   /** [Output only] The current status of this cluster. */
   var status: js.UndefOr[String] = js.undefined
   
-  /** [Output only] Additional information about the current status of this cluster, if available. */
+  /** [Output only] Deprecated. Use conditions instead. Additional information about the current status of this cluster, if available. */
   var statusMessage: js.UndefOr[String] = js.undefined
   
   /** The name of the Google Compute Engine [subnetwork](https://cloud.google.com/compute/docs/subnetworks) to which the cluster is connected. */
@@ -246,6 +276,10 @@ object Cluster {
     
     inline def setAuthenticatorGroupsConfigUndefined: Self = StObject.set(x, "authenticatorGroupsConfig", js.undefined)
     
+    inline def setAutopilot(value: Autopilot): Self = StObject.set(x, "autopilot", value.asInstanceOf[js.Any])
+    
+    inline def setAutopilotUndefined: Self = StObject.set(x, "autopilot", js.undefined)
+    
     inline def setAutoscaling(value: ClusterAutoscaling): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
     
     inline def setAutoscalingUndefined: Self = StObject.set(x, "autoscaling", js.undefined)
@@ -262,7 +296,11 @@ object Cluster {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: StatusCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: StatusCondition*): Self = StObject.set(x, "conditions", js.Array(value*))
+    
+    inline def setConfidentialNodes(value: ConfidentialNodes): Self = StObject.set(x, "confidentialNodes", value.asInstanceOf[js.Any])
+    
+    inline def setConfidentialNodesUndefined: Self = StObject.set(x, "confidentialNodes", js.undefined)
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
@@ -308,6 +346,14 @@ object Cluster {
     
     inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIdentityServiceConfig(value: IdentityServiceConfig): Self = StObject.set(x, "identityServiceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setIdentityServiceConfigUndefined: Self = StObject.set(x, "identityServiceConfig", js.undefined)
+    
     inline def setInitialClusterVersion(value: String): Self = StObject.set(x, "initialClusterVersion", value.asInstanceOf[js.Any])
     
     inline def setInitialClusterVersionUndefined: Self = StObject.set(x, "initialClusterVersion", js.undefined)
@@ -320,7 +366,7 @@ object Cluster {
     
     inline def setInstanceGroupUrlsUndefined: Self = StObject.set(x, "instanceGroupUrls", js.undefined)
     
-    inline def setInstanceGroupUrlsVarargs(value: String*): Self = StObject.set(x, "instanceGroupUrls", js.Array(value :_*))
+    inline def setInstanceGroupUrlsVarargs(value: String*): Self = StObject.set(x, "instanceGroupUrls", js.Array(value*))
     
     inline def setIpAllocationPolicy(value: IPAllocationPolicy): Self = StObject.set(x, "ipAllocationPolicy", value.asInstanceOf[js.Any])
     
@@ -342,7 +388,11 @@ object Cluster {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value*))
+    
+    inline def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
     inline def setLoggingService(value: String): Self = StObject.set(x, "loggingService", value.asInstanceOf[js.Any])
     
@@ -359,6 +409,14 @@ object Cluster {
     inline def setMasterAuthorizedNetworksConfig(value: MasterAuthorizedNetworksConfig): Self = StObject.set(x, "masterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
     
     inline def setMasterAuthorizedNetworksConfigUndefined: Self = StObject.set(x, "masterAuthorizedNetworksConfig", js.undefined)
+    
+    inline def setMeshCertificates(value: MeshCertificates): Self = StObject.set(x, "meshCertificates", value.asInstanceOf[js.Any])
+    
+    inline def setMeshCertificatesUndefined: Self = StObject.set(x, "meshCertificates", js.undefined)
+    
+    inline def setMonitoringConfig(value: MonitoringConfig): Self = StObject.set(x, "monitoringConfig", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringConfigUndefined: Self = StObject.set(x, "monitoringConfig", js.undefined)
     
     inline def setMonitoringService(value: String): Self = StObject.set(x, "monitoringService", value.asInstanceOf[js.Any])
     
@@ -388,11 +446,23 @@ object Cluster {
     
     inline def setNodeIpv4CidrSizeUndefined: Self = StObject.set(x, "nodeIpv4CidrSize", js.undefined)
     
+    inline def setNodePoolAutoConfig(value: NodePoolAutoConfig): Self = StObject.set(x, "nodePoolAutoConfig", value.asInstanceOf[js.Any])
+    
+    inline def setNodePoolAutoConfigUndefined: Self = StObject.set(x, "nodePoolAutoConfig", js.undefined)
+    
+    inline def setNodePoolDefaults(value: NodePoolDefaults): Self = StObject.set(x, "nodePoolDefaults", value.asInstanceOf[js.Any])
+    
+    inline def setNodePoolDefaultsUndefined: Self = StObject.set(x, "nodePoolDefaults", js.undefined)
+    
     inline def setNodePools(value: js.Array[NodePool]): Self = StObject.set(x, "nodePools", value.asInstanceOf[js.Any])
     
     inline def setNodePoolsUndefined: Self = StObject.set(x, "nodePools", js.undefined)
     
-    inline def setNodePoolsVarargs(value: NodePool*): Self = StObject.set(x, "nodePools", js.Array(value :_*))
+    inline def setNodePoolsVarargs(value: NodePool*): Self = StObject.set(x, "nodePools", js.Array(value*))
+    
+    inline def setNotificationConfig(value: NotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
     
     inline def setPrivateClusterConfig(value: PrivateClusterConfig): Self = StObject.set(x, "privateClusterConfig", value.asInstanceOf[js.Any])
     
@@ -405,7 +475,7 @@ object Cluster {
     inline def setResourceLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.Cluster & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.Cluster & TopLevel[Any]
     ): Self = StObject.set(x, "resourceLabels", value.asInstanceOf[js.Any])
     
     inline def setResourceLabelsUndefined: Self = StObject.set(x, "resourceLabels", js.undefined)

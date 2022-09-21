@@ -9,11 +9,11 @@ object componentContainerMod {
   
   @JSImport("plottable/build/src/components/componentContainer", "ComponentContainer")
   @js.native
-  class ComponentContainer () extends Component {
+  open class ComponentContainer () extends Component {
     
     /* protected */ def _adoptAndAnchor(component: Component): Unit = js.native
     
-    /* private */ var _detachCallback: js.Any = js.native
+    /* private */ var _detachCallback: Any = js.native
     
     /**
       * Invokes a callback on each Component in the ComponentContainer.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.ReSubscribeUserAgentServer")
 @js.native
-class ReSubscribeUserAgentServer protected ()
+open class ReSubscribeUserAgentServer protected ()
   extends typings.sipJs.coreMod.ReSubscribeUserAgentServer {
   def this(dialog: typings.sipJs.dialogsMod.Dialog, message: typings.sipJs.messagesMod.IncomingRequestMessage) = this()
   def this(

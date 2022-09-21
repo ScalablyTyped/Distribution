@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("azdata", "nb.CellRange")
 @js.native
-class CellRange protected () extends StObject {
+open class CellRange protected () extends StObject {
   /**
     * Create a new range from two positions. If `start` is not
     * before or equal to `end`, the values will be swapped.

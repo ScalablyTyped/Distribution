@@ -1,17 +1,17 @@
 package typings.duplexer3
 
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(options: Options, writableStream: WritableStream, readableStream: ReadableStream): Duplex = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], writableStream.asInstanceOf[js.Any], readableStream.asInstanceOf[js.Any])).asInstanceOf[Duplex]
-  inline def apply(writableStream: WritableStream, readableStream: ReadableStream): Duplex = (^.asInstanceOf[js.Dynamic].apply(writableStream.asInstanceOf[js.Any], readableStream.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(options: Options, writableStream: WritableStream[Any], readableStream: ReadableStream[Any]): Duplex = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], writableStream.asInstanceOf[js.Any], readableStream.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(writableStream: WritableStream[Any], readableStream: ReadableStream[Any]): Duplex = (^.asInstanceOf[js.Dynamic].apply(writableStream.asInstanceOf[js.Any], readableStream.asInstanceOf[js.Any])).asInstanceOf[Duplex]
   
   @JSImport("duplexer3", JSImport.Namespace)
   @js.native

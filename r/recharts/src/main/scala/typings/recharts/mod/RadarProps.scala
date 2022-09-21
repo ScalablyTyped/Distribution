@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent recharts.recharts.Animatable */
 trait RadarProps extends StObject {
   
-  var activeDot: js.UndefOr[js.Object | ReactElement | ContentRenderer[js.Any] | Boolean] = js.undefined
+  var activeDot: js.UndefOr[js.Object | ReactElement | ContentRenderer[Any] | Boolean] = js.undefined
   
   var alignmentBaseline: js.UndefOr[String] = js.undefined
   
@@ -111,8 +111,6 @@ trait RadarProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -125,7 +123,7 @@ trait RadarProps extends StObject {
   
   var kerning: js.UndefOr[Double | String] = js.undefined
   
-  var label: js.UndefOr[js.Object | ReactElement | ContentRenderer[js.Any] | Boolean] = js.undefined
+  var label: js.UndefOr[js.Object | ReactElement | ContentRenderer[Any] | Boolean] = js.undefined
   
   var legendType: js.UndefOr[LegendType] = js.undefined
   
@@ -239,9 +237,9 @@ object RadarProps {
   
   extension [Self <: RadarProps](x: Self) {
     
-    inline def setActiveDot(value: js.Object | ReactElement | ContentRenderer[js.Any] | Boolean): Self = StObject.set(x, "activeDot", value.asInstanceOf[js.Any])
+    inline def setActiveDot(value: js.Object | ReactElement | ContentRenderer[Any] | Boolean): Self = StObject.set(x, "activeDot", value.asInstanceOf[js.Any])
     
-    inline def setActiveDotFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "activeDot", js.Any.fromFunction1(value))
+    inline def setActiveDotFunction1(value: Any => ReactNode): Self = StObject.set(x, "activeDot", js.Any.fromFunction1(value))
     
     inline def setActiveDotUndefined: Self = StObject.set(x, "activeDot", js.undefined)
     
@@ -315,7 +313,7 @@ object RadarProps {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -401,10 +399,6 @@ object RadarProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -429,9 +423,9 @@ object RadarProps {
     
     inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
     
-    inline def setLabel(value: js.Object | ReactElement | ContentRenderer[js.Any] | Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: js.Object | ReactElement | ContentRenderer[Any] | Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+    inline def setLabelFunction1(value: Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
@@ -539,7 +533,7 @@ object RadarProps {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: RadarPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: RadarPoint*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

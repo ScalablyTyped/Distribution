@@ -1,6 +1,5 @@
 package typings.strange
 
-import typings.std.Date
 import typings.strange.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +22,7 @@ object treeMod {
     */
   @JSImport("strange/tree", JSImport.Namespace)
   @js.native
-  class ^[T /* <: Date | Double | String */] protected ()
+  open class ^[T /* <: js.Date | Double | String */] protected ()
     extends StObject
        with RangeTree[T] {
     def this(ranges: js.Array[Range[T]]) = this()
@@ -55,7 +54,7 @@ object treeMod {
     * RangeTree.from(ranges).search(42) // => [new Range(40, 50)]
     */
   /* static member */
-  inline def from[U /* <: Date | Double | String */](ranges: js.Array[Range[U]]): RangeTree[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(ranges.asInstanceOf[js.Any]).asInstanceOf[RangeTree[U]]
+  inline def from[U /* <: js.Date | Double | String */](ranges: js.Array[Range[U]]): RangeTree[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(ranges.asInstanceOf[js.Any]).asInstanceOf[RangeTree[U]]
   
   /**
     * Create an interval tree node.
@@ -71,7 +70,7 @@ object treeMod {
     * root.search(7) // => [new Range(0, 10), new Range(5, 10)]
     */
   @js.native
-  trait RangeTree[T /* <: Date | Double | String */] extends StObject {
+  trait RangeTree[T /* <: js.Date | Double | String */] extends StObject {
     
     /**
       * Ranges of current tree node.

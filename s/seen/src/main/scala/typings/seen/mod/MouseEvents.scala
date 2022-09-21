@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "MouseEvents")
 @js.native
-class MouseEvents protected () extends StObject {
+open class MouseEvents protected () extends StObject {
   def this(elementOrId: String) = this()
   def this(elementOrId: HTMLElement) = this()
   def this(elementOrId: String, options: MouseEventOptions) = this()

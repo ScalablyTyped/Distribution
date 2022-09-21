@@ -7,7 +7,7 @@ import typings.markJs.markJsStrings.withSpaces
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.NodeList
-import typings.std.RegExp
+import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("mark.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Mark {
     def this(context: String) = this()
@@ -56,8 +56,8 @@ object mod {
       * Note that groups will be ignored and mark.js will always find all matches, regardless of the g flag.
       * @param options Optional options
       */
-    def markRegExp(regexp: RegExp): Unit = js.native
-    def markRegExp(regexp: RegExp, options: MarkRegExpOptions): Unit = js.native
+    def markRegExp(regexp: js.RegExp): Unit = js.native
+    def markRegExp(regexp: js.RegExp, options: MarkRegExpOptions): Unit = js.native
     
     /**
       * A method to remove highlights created by mark.js.
@@ -101,7 +101,7 @@ object mod {
       
       inline def setLimitersUndefined: Self = StObject.set(x, "limiters", js.undefined)
       
-      inline def setLimitersVarargs(value: String*): Self = StObject.set(x, "limiters", js.Array(value :_*))
+      inline def setLimitersVarargs(value: String*): Self = StObject.set(x, "limiters", js.Array(value*))
       
       inline def setValue(value: MarkAccuracy): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -131,7 +131,7 @@ object mod {
     
     var filter: js.UndefOr[
         js.Function4[
-          /* textNode */ Element, 
+          /* textNode */ Text, 
           /* term */ String, 
           /* marksSoFar */ Double, 
           /* marksTotal */ Double, 
@@ -206,10 +206,10 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFilter(
-        value: (/* textNode */ Element, /* term */ String, /* marksSoFar */ Double, /* marksTotal */ Double) => Boolean
+        value: (/* textNode */ Text, /* term */ String, /* marksSoFar */ Double, /* marksTotal */ Double) => Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -230,7 +230,7 @@ object mod {
       
       inline def setIgnorePunctuationUndefined: Self = StObject.set(x, "ignorePunctuation", js.undefined)
       
-      inline def setIgnorePunctuationVarargs(value: String*): Self = StObject.set(x, "ignorePunctuation", js.Array(value :_*))
+      inline def setIgnorePunctuationVarargs(value: String*): Self = StObject.set(x, "ignorePunctuation", js.Array(value*))
       
       inline def setLog(value: js.Object): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
@@ -270,7 +270,7 @@ object mod {
     
     var filter: js.UndefOr[
         js.Function4[
-          /* textNode */ Element, 
+          /* textNode */ Text, 
           /* term */ String, 
           /* marksSoFar */ Double, 
           /* marksTotal */ Double, 
@@ -319,10 +319,10 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFilter(
-        value: (/* textNode */ Element, /* term */ String, /* marksSoFar */ Double, /* marksTotal */ Double) => Boolean
+        value: (/* textNode */ Text, /* term */ String, /* marksSoFar */ Double, /* marksTotal */ Double) => Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -363,7 +363,7 @@ object mod {
     
     var filter: js.UndefOr[
         js.Function4[
-          /* textNode */ Element, 
+          /* textNode */ Text, 
           /* term */ String, 
           /* marksSoFar */ Double, 
           /* marksTotal */ Double, 
@@ -418,10 +418,10 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFilter(
-        value: (/* textNode */ Element, /* term */ String, /* marksSoFar */ Double, /* marksTotal */ Double) => Boolean
+        value: (/* textNode */ Text, /* term */ String, /* marksSoFar */ Double, /* marksTotal */ Double) => Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -516,7 +516,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setIframes(value: Boolean): Self = StObject.set(x, "iframes", value.asInstanceOf[js.Any])
       

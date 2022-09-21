@@ -10,10 +10,10 @@ The lodash method `_.uniq` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.uniq |
 | Keywords           | lodash-modularized, uniq |
-| # releases         | 0 |
-| # dependents       | 617 |
-| # downloads        | 345236347 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.6935400333333336E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

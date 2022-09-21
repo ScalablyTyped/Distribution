@@ -5,8 +5,7 @@ import typings.browserfs.apiErrorMod.ApiError
 import typings.browserfs.fileFlagMod.FileFlag
 import typings.browserfs.fileMod.File
 import typings.browserfs.nodeFsStatsMod.default
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +14,13 @@ object fileSystemMod {
   
   @JSImport("browserfs/dist/node/core/file_system", "BaseFileSystem")
   @js.native
-  class BaseFileSystem () extends StObject {
+  open class BaseFileSystem () extends StObject {
     
-    def appendFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
-    def appendFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     
-    def appendFileSync(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double): Unit = js.native
-    def appendFileSync(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double): Unit = js.native
+    def appendFileSync(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double): Unit = js.native
+    def appendFileSync(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double): Unit = js.native
     
     def chmod(p: String, isLchmod: Boolean, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     
@@ -43,7 +42,7 @@ object fileSystemMod {
       */
     def createFileSync(p: String, flag: FileFlag, mode: Double): File = js.native
     
-    def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
+    def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, Any]): Unit = js.native
     
     def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
     
@@ -79,8 +78,8 @@ object fileSystemMod {
     def readFile(fname: String, encoding: String, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
     def readFile(fname: String, encoding: Null, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
     
-    def readFileSync(fname: String, encoding: String, flag: FileFlag): js.Any = js.native
-    def readFileSync(fname: String, encoding: Null, flag: FileFlag): js.Any = js.native
+    def readFileSync(fname: String, encoding: String, flag: FileFlag): Any = js.native
+    def readFileSync(fname: String, encoding: Null, flag: FileFlag): Any = js.native
     
     def readdir(p: String, cb: BFSCallback[js.Array[String]]): Unit = js.native
     
@@ -122,35 +121,35 @@ object fileSystemMod {
     
     def unlinkSync(p: String): Unit = js.native
     
-    def utimes(p: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    def utimes(p: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
-    def utimesSync(p: String, atime: Date, mtime: Date): Unit = js.native
+    def utimesSync(p: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
-    def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
-    def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     
-    def writeFileSync(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double): Unit = js.native
-    def writeFileSync(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double): Unit = js.native
+    def writeFileSync(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double): Unit = js.native
+    def writeFileSync(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double): Unit = js.native
   }
   
   @JSImport("browserfs/dist/node/core/file_system", "SynchronousFileSystem")
   @js.native
-  class SynchronousFileSystem () extends BaseFileSystem {
+  open class SynchronousFileSystem () extends BaseFileSystem {
     
     def readlink(p: String, cb: BFSCallback[String]): Unit = js.native
     
     def supportsSynch(): Boolean = js.native
   }
   
-  type BFSCallback[T] = js.Function2[/* e */ js.UndefOr[ApiError | Null], /* rv */ js.UndefOr[T], js.Any]
+  type BFSCallback[T] = js.Function2[/* e */ js.UndefOr[ApiError | Null], /* rv */ js.UndefOr[T], Any]
   
-  type BFSOneArgCallback = js.Function1[/* e */ js.UndefOr[ApiError | Null], js.Any]
+  type BFSOneArgCallback = js.Function1[/* e */ js.UndefOr[ApiError | Null], Any]
   
   type BFSThreeArgCallback[T, U] = js.Function3[
     /* e */ js.UndefOr[ApiError | Null], 
     /* arg1 */ js.UndefOr[T], 
     /* arg2 */ js.UndefOr[U], 
-    js.Any
+    Any
   ]
   
   @js.native
@@ -213,7 +212,7 @@ object fileSystemMod {
       * @param path The path to the location that is being queried. Only
       *   useful for filesystems that support mount points.
       */
-    def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
+    def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, Any]): Unit = js.native
     
     /**
       * **Supplemental**: Test whether or not the given path exists by checking with
@@ -298,8 +297,8 @@ object fileSystemMod {
       *   into a string using that encoding. Otherwise, if encoding is null, fetch
       *   the file's contents as a Buffer.
       */
-    def readFileSync(fname: String, encoding: String, flag: FileFlag): js.Any = js.native
-    def readFileSync(fname: String, encoding: Null, flag: FileFlag): js.Any = js.native
+    def readFileSync(fname: String, encoding: String, flag: FileFlag): Any = js.native
+    def readFileSync(fname: String, encoding: Null, flag: FileFlag): Any = js.native
     
     /**
       * **Core**: Asynchronous `readdir`. Reads the contents of a directory.
@@ -439,13 +438,13 @@ object fileSystemMod {
       * **Optional**: Change file timestamps of the file referenced by the supplied
       * path.
       */
-    def utimes(p: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    def utimes(p: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /**
       * **Optional**: Change file timestamps of the file referenced by the supplied
       * path.
       */
-    def utimesSync(p: String, atime: Date, mtime: Date): Unit = js.native
+    def utimesSync(p: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
     /**
       * **Supplemental**: Asynchronously writes data to a file, replacing the file
@@ -453,8 +452,8 @@ object fileSystemMod {
       *
       * The encoding option is ignored if data is a buffer.
       */
-    def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
-    def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     
     /**
       * **Supplemental**: Synchronously writes data to a file, replacing the file
@@ -547,7 +546,7 @@ object fileSystemMod {
       
       inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setValidator(value: (/* opt */ T, /* cb */ BFSOneArgCallback) => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
       
@@ -555,5 +554,5 @@ object fileSystemMod {
     }
   }
   
-  type FileSystemOptions = StringDictionary[FileSystemOption[js.Any]]
+  type FileSystemOptions = StringDictionary[FileSystemOption[Any]]
 }

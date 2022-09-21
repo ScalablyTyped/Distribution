@@ -74,7 +74,7 @@ object DrilldownEventObject {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     

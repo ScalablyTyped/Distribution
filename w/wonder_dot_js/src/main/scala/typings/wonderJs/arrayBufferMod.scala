@@ -1,6 +1,5 @@
 package typings.wonderJs
 
-import typings.std.Float32Array
 import typings.wonderJs.commonBufferMod.CommonBuffer
 import typings.wonderJs.ebuffertypeMod.EBufferType
 import typings.wonderJs.ebufferusageMod.EBufferUsage
@@ -12,12 +11,12 @@ object arrayBufferMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/buffer/ArrayBuffer", "ArrayBuffer")
   @js.native
-  class ArrayBuffer () extends CommonBuffer {
+  open class ArrayBuffer () extends CommonBuffer {
     
     @JSName("data")
-    var data_ArrayBuffer: Float32Array = js.native
+    var data_ArrayBuffer: js.typedarray.Float32Array = js.native
     
-    def initWhenCreate(data: js.Array[Double], size: Double, `type`: EBufferType, usage: EBufferUsage): js.Any = js.native
+    def initWhenCreate(data: js.Array[Double], size: Double, `type`: EBufferType, usage: EBufferUsage): Any = js.native
     
     def resetData(data: js.Array[Double]): this.type = js.native
     def resetData(data: js.Array[Double], size: Double): this.type = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-views
 
-Typings are for version 2.x
+Typings are for version 8.0.0
 
 ## Library description:
 Template rendering middleware for koa
@@ -10,10 +10,10 @@ Template rendering middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-views |
 | Keywords           | koa, render, views, app-wide, templating, templates |
-| # releases         | 8 |
-| # dependents       | 249 |
-| # downloads        | 913026 |
-| # stars            | 13 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 92419.66666666667 |
+| # stars            | 707.0 |
 
 ## Links
 - [Homepage](https://github.com/queckezz/koa-views#readme)
@@ -24,7 +24,7 @@ Template rendering middleware for koa
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

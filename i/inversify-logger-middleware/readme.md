@@ -10,15 +10,12 @@ A basic logger middleware for InversifyJS
 | ------------------ | :-------------: |
 | Full name          | inversify-logger-middleware |
 | Keywords           | inversifyjs, logger, inversion, of, control, dependency, inversion |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 197775 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30388.0 |
+| # stars            | 22.0 |
 
 ## Links
-- [Homepage](https://github.com/inversify/inversify-logger-middleware#readme)
-- [Bugs](https://github.com/inversify/inversify-logger-middleware/issues)
-- [Repository](https://github.com/inversify/inversify-logger-middleware)
 - [Npm](https://www.npmjs.com/package/inversify-logger-middleware)
     
 

@@ -97,11 +97,11 @@ object ImageInspectInfo {
     
     inline def setRepoDigests(value: js.Array[String]): Self = StObject.set(x, "RepoDigests", value.asInstanceOf[js.Any])
     
-    inline def setRepoDigestsVarargs(value: String*): Self = StObject.set(x, "RepoDigests", js.Array(value :_*))
+    inline def setRepoDigestsVarargs(value: String*): Self = StObject.set(x, "RepoDigests", js.Array(value*))
     
     inline def setRepoTags(value: js.Array[String]): Self = StObject.set(x, "RepoTags", value.asInstanceOf[js.Any])
     
-    inline def setRepoTagsVarargs(value: String*): Self = StObject.set(x, "RepoTags", js.Array(value :_*))
+    inline def setRepoTagsVarargs(value: String*): Self = StObject.set(x, "RepoTags", js.Array(value*))
     
     inline def setRootFS(value: BaseLayer): Self = StObject.set(x, "RootFS", value.asInstanceOf[js.Any])
     

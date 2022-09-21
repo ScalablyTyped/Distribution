@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.menuItemMod.IMenuItemProps
+import typings.blueprintjsCore.menuItemMod.MenuItemProps
 import typings.react.mod.AnchorHTMLAttributes
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core/lib/esm/components", "MenuItem")
 @js.native
-class MenuItem protected ()
+open class MenuItem protected ()
   extends typings.blueprintjsCore.menuItemMod.MenuItem {
-  def this(props: IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
-  def this(props: IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
+  def this(props: MenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
+  def this(props: MenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], context: Any) = this()
 }
 /* static members */
 object MenuItem {
@@ -23,8 +23,8 @@ object MenuItem {
   
   @JSImport("@blueprintjs/core/lib/esm/components", "MenuItem.defaultProps")
   @js.native
-  def defaultProps: IMenuItemProps = js.native
-  inline def defaultProps_=(x: IMenuItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: MenuItemProps = js.native
+  inline def defaultProps_=(x: MenuItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "MenuItem.displayName")
   @js.native

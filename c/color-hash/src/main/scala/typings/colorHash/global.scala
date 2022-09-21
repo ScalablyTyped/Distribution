@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("ColorHash")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.colorHash.mod.^ {
       def this(options: ColorHashOptions) = this()
     }

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Canary extends StObject {
   
   /**
+    * A structure that contains the configuration for canary artifacts, including the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3.
+    */
+  var ArtifactConfig: js.UndefOr[ArtifactConfigOutput] = js.undefined
+  
+  /**
     * The location in Amazon S3 where Synthetics stores artifacts from the runs of this canary. Artifacts include the log file, screenshots, and HAR files.
     */
   var ArtifactS3Location: js.UndefOr[String] = js.undefined
@@ -70,6 +75,11 @@ trait Canary extends StObject {
     */
   var Timeline: js.UndefOr[CanaryTimeline] = js.undefined
   
+  /**
+    * If this canary performs visual monitoring by comparing screenshots, this structure contains the ID of the canary run to use as the baseline for screenshots, and the coordinates of any parts of the screen to ignore during the visual monitoring comparison.
+    */
+  var VisualReference: js.UndefOr[VisualReferenceOutput] = js.undefined
+  
   var VpcConfig: js.UndefOr[VpcConfigOutput] = js.undefined
 }
 object Canary {
@@ -80,6 +90,10 @@ object Canary {
   }
   
   extension [Self <: Canary](x: Self) {
+    
+    inline def setArtifactConfig(value: ArtifactConfigOutput): Self = StObject.set(x, "ArtifactConfig", value.asInstanceOf[js.Any])
+    
+    inline def setArtifactConfigUndefined: Self = StObject.set(x, "ArtifactConfig", js.undefined)
     
     inline def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
     
@@ -136,6 +150,10 @@ object Canary {
     inline def setTimeline(value: CanaryTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
     inline def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
+    
+    inline def setVisualReference(value: VisualReferenceOutput): Self = StObject.set(x, "VisualReference", value.asInstanceOf[js.Any])
+    
+    inline def setVisualReferenceUndefined: Self = StObject.set(x, "VisualReference", js.undefined)
     
     inline def setVpcConfig(value: VpcConfigOutput): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     

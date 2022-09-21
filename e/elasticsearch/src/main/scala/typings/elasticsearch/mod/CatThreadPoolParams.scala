@@ -35,6 +35,6 @@ object CatThreadPoolParams {
     
     inline def setThreadPoolPatternsUndefined: Self = StObject.set(x, "threadPoolPatterns", js.undefined)
     
-    inline def setThreadPoolPatternsVarargs(value: String*): Self = StObject.set(x, "threadPoolPatterns", js.Array(value :_*))
+    inline def setThreadPoolPatternsVarargs(value: String*): Self = StObject.set(x, "threadPoolPatterns", js.Array(value*))
   }
 }

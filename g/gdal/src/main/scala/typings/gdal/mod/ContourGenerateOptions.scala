@@ -41,7 +41,7 @@ object ContourGenerateOptions {
     
     inline def setFixedLevelsUndefined: Self = StObject.set(x, "fixedLevels", js.undefined)
     
-    inline def setFixedLevelsVarargs(value: Double*): Self = StObject.set(x, "fixedLevels", js.Array(value :_*))
+    inline def setFixedLevelsVarargs(value: Double*): Self = StObject.set(x, "fixedLevels", js.Array(value*))
     
     inline def setIdField(value: Double): Self = StObject.set(x, "idField", value.asInstanceOf[js.Any])
     

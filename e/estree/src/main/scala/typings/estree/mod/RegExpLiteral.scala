@@ -1,7 +1,6 @@
 package typings.estree.mod
 
 import typings.estree.anon.Flags
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait RegExpLiteral
   @JSName("type")
   var type_RegExpLiteral: typings.estree.estreeStrings.Literal
   
-  var value: js.UndefOr[RegExp | Null] = js.undefined
+  var value: js.UndefOr[js.RegExp | Null] = js.undefined
 }
 object RegExpLiteral {
   
@@ -38,7 +37,7 @@ object RegExpLiteral {
     
     inline def setType(value: typings.estree.estreeStrings.Literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: RegExp): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.RegExp): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     

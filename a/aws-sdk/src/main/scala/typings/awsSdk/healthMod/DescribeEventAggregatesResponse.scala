@@ -29,7 +29,7 @@ object DescribeEventAggregatesResponse {
     
     inline def setEventAggregatesUndefined: Self = StObject.set(x, "eventAggregates", js.undefined)
     
-    inline def setEventAggregatesVarargs(value: EventAggregate*): Self = StObject.set(x, "eventAggregates", js.Array(value :_*))
+    inline def setEventAggregatesVarargs(value: EventAggregate*): Self = StObject.set(x, "eventAggregates", js.Array(value*))
     
     inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

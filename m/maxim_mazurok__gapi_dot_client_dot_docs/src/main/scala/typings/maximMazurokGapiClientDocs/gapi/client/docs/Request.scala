@@ -69,6 +69,9 @@ trait Request extends StObject {
   /** Merges cells in a table. */
   var mergeTableCells: js.UndefOr[MergeTableCellsRequest] = js.undefined
   
+  /** Updates the number of pinned header rows in a table. */
+  var pinTableHeaderRows: js.UndefOr[PinTableHeaderRowsRequest] = js.undefined
+  
   /** Replaces all instances of the specified text. */
   var replaceAllText: js.UndefOr[ReplaceAllTextRequest] = js.undefined
   
@@ -194,6 +197,10 @@ object Request {
     inline def setMergeTableCells(value: MergeTableCellsRequest): Self = StObject.set(x, "mergeTableCells", value.asInstanceOf[js.Any])
     
     inline def setMergeTableCellsUndefined: Self = StObject.set(x, "mergeTableCells", js.undefined)
+    
+    inline def setPinTableHeaderRows(value: PinTableHeaderRowsRequest): Self = StObject.set(x, "pinTableHeaderRows", value.asInstanceOf[js.Any])
+    
+    inline def setPinTableHeaderRowsUndefined: Self = StObject.set(x, "pinTableHeaderRows", js.undefined)
     
     inline def setReplaceAllText(value: ReplaceAllTextRequest): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
     

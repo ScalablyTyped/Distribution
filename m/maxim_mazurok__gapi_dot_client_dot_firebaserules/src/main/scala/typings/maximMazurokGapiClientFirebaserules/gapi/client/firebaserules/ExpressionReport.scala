@@ -28,7 +28,7 @@ object ExpressionReport {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ExpressionReport*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ExpressionReport*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setSourcePosition(value: SourcePosition): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object ExpressionReport {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: ValueCount*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ValueCount*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

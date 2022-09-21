@@ -13,7 +13,7 @@ object global {
     
     @JSGlobal("createjs.AbstractTween")
     @js.native
-    class AbstractTween ()
+    open class AbstractTween ()
       extends StObject
          with typings.tweenjs.createjs.AbstractTween {
       def this(props: TweenProps) = this()
@@ -21,7 +21,7 @@ object global {
     
     @JSGlobal("createjs.Ease")
     @js.native
-    class Ease ()
+    open class Ease ()
       extends StObject
          with typings.tweenjs.createjs.Ease
     /* static members */
@@ -114,7 +114,7 @@ object global {
     
     @JSGlobal("createjs.MotionGuidePlugin")
     @js.native
-    class MotionGuidePlugin ()
+    open class MotionGuidePlugin ()
       extends StObject
          with typings.tweenjs.createjs.MotionGuidePlugin
     /* static members */
@@ -133,14 +133,14 @@ object global {
         tween: typings.tweenjs.createjs.Tween,
         step: typings.tweenjs.createjs.TweenStep,
         prop: String,
-        value: js.Any,
+        value: Any,
         ratio: Double,
         end: Boolean
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(tween.asInstanceOf[js.Any], step.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def debug(guideData: js.Any, ctx: js.Any, higlight: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(guideData.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], higlight.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def debug(guideData: Any, ctx: Any, higlight: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(guideData.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], higlight.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def init(tween: typings.tweenjs.createjs.Tween, prop: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(tween.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def init(tween: typings.tweenjs.createjs.Tween, prop: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(tween.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       //methods
       inline def install(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[js.Object]
@@ -156,7 +156,7 @@ object global {
     
     @JSGlobal("createjs.Timeline")
     @js.native
-    class Timeline ()
+    open class Timeline ()
       extends StObject
          with typings.tweenjs.createjs.Timeline {
       def this(props: TimelineProps) = this()
@@ -164,11 +164,11 @@ object global {
     
     @JSGlobal("createjs.Tween")
     @js.native
-    class Tween protected ()
+    open class Tween protected ()
       extends StObject
          with typings.tweenjs.createjs.Tween {
-      def this(target: js.Any) = this()
-      def this(target: js.Any, props: TweenProps) = this()
+      def this(target: Any) = this()
+      def this(target: Any, props: TweenProps) = this()
     }
     /* static members */
     object Tween {
@@ -179,35 +179,35 @@ object global {
       
       @JSGlobal("createjs.Tween.IGNORE")
       @js.native
-      def IGNORE: js.Any = js.native
-      inline def IGNORE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE")(x.asInstanceOf[js.Any])
+      def IGNORE: Any = js.native
+      inline def IGNORE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE")(x.asInstanceOf[js.Any])
       
       // methods
-      inline def get(target: js.Any): typings.tweenjs.createjs.Tween = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any]).asInstanceOf[typings.tweenjs.createjs.Tween]
-      inline def get(target: js.Any, props: TweenProps): typings.tweenjs.createjs.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.tweenjs.createjs.Tween]
+      inline def get(target: Any): typings.tweenjs.createjs.Tween = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any]).asInstanceOf[typings.tweenjs.createjs.Tween]
+      inline def get(target: Any, props: TweenProps): typings.tweenjs.createjs.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.tweenjs.createjs.Tween]
       
       inline def handleEvent(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      inline def hasActiveTweens(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasActiveTweens")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def hasActiveTweens(target: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasActiveTweens")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       inline def removeAllTweens(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllTweens")().asInstanceOf[Unit]
       
-      inline def removeTweens(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTweens")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def removeTweens(target: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTweens")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def tick(delta: Double, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(delta.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSGlobal("createjs.TweenAction")
     @js.native
-    class TweenAction protected ()
+    open class TweenAction protected ()
       extends StObject
          with typings.tweenjs.createjs.TweenAction {
       def this(
         prev: typings.tweenjs.createjs.TweenAction,
         t: Double,
-        scope: js.Any,
+        scope: Any,
         funct: js.Function,
-        params: js.Array[js.Any]
+        params: js.Array[Any]
       ) = this()
       
       /* CompleteClass */
@@ -220,13 +220,13 @@ object global {
       var next: typings.tweenjs.createjs.TweenAction = js.native
       
       /* CompleteClass */
-      var params: js.Array[js.Any] = js.native
+      var params: js.Array[Any] = js.native
       
       /* CompleteClass */
       var prev: typings.tweenjs.createjs.TweenAction = js.native
       
       /* CompleteClass */
-      var scope: js.Any = js.native
+      var scope: Any = js.native
       
       /* CompleteClass */
       var t: Double = js.native
@@ -234,7 +234,7 @@ object global {
     
     @JSGlobal("createjs.TweenJS")
     @js.native
-    class TweenJS ()
+    open class TweenJS ()
       extends StObject
          with typings.tweenjs.createjs.TweenJS
     /* static members */
@@ -258,7 +258,7 @@ object global {
     
     @JSGlobal("createjs.TweenStep")
     @js.native
-    class TweenStep protected ()
+    open class TweenStep protected ()
       extends StObject
          with typings.tweenjs.createjs.TweenStep {
       def this(

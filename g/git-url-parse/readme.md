@@ -10,10 +10,10 @@ A high level git url parser for common git providers.
 | ------------------ | :-------------: |
 | Full name          | git-url-parse |
 | Keywords           | parse, git, url |
-| # releases         | 6 |
-| # dependents       | 265 |
-| # downloads        | 70589081 |
-| # stars            | 4 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.153486E7 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/git-url-parse)

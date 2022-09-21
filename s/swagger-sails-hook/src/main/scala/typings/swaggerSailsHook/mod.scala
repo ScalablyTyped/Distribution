@@ -12,7 +12,7 @@ object mod {
     * @param sails - reference to the running sails instance
     * @returns SailsHook - `swagger-sails-hook` object implementing the Sails' hook specification.
     */
-  inline def apply(sails: js.Any): SailsHook = ^.asInstanceOf[js.Dynamic].apply(sails.asInstanceOf[js.Any]).asInstanceOf[SailsHook]
+  inline def apply(sails: Any): SailsHook = ^.asInstanceOf[js.Dynamic].apply(sails.asInstanceOf[js.Any]).asInstanceOf[SailsHook]
   
   @JSImport("swagger-sails-hook", JSImport.Namespace)
   @js.native
@@ -31,7 +31,7 @@ object mod {
       * All Sails configuration is guaranteed to be completed before a hook’s initialize function runs.
       * @param done - called when `swagger-sails-hook`'s startup tasks have finished.
       */
-    def initialize(done: js.Function0[js.Any]): Unit
+    def initialize(done: js.Function0[Any]): Unit
     
     /**
       * `swagger-sails-hook` specific route bound to a Sails app at load time.
@@ -43,14 +43,14 @@ object mod {
   }
   object SailsHook {
     
-    inline def apply(initialize: js.Function0[js.Any] => Unit, routes: After): SailsHook = {
+    inline def apply(initialize: js.Function0[Any] => Unit, routes: After): SailsHook = {
       val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize), routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[SailsHook]
     }
     
     extension [Self <: SailsHook](x: Self) {
       
-      inline def setInitialize(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      inline def setInitialize(value: js.Function0[Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
       inline def setRoutes(value: After): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     }

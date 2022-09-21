@@ -1,9 +1,9 @@
 package typings.puppeteerCore
 
-import typings.puppeteerCore.connectionMod.CDPSession
-import typings.puppeteerCore.jshandleMod.ElementHandle
+import typings.puppeteerCore.commonConnectionMod.CDPSession
+import typings.puppeteerCore.elementHandleMod.ElementHandle
 import typings.puppeteerCore.puppeteerCoreStrings.mixed
-import typings.std.Element
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +12,17 @@ object accessibilityMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/Accessibility", "Accessibility")
   @js.native
-  class Accessibility protected () extends StObject {
+  open class Accessibility protected () extends StObject {
     /**
       * @internal
       */
     def this(client: CDPSession) = this()
     
-    /* private */ var _client: js.Any = js.native
+    /* private */ var collectInterestingNodes: Any = js.native
     
-    /* private */ var collectInterestingNodes: js.Any = js.native
+    /* private */ var `private`: Any = js.native
     
-    /* private */ var serializeTree: js.Any = js.native
+    /* private */ var serializeTree: Any = js.native
     
     /**
       * Captures the current state of the accessibility tree.
@@ -37,21 +37,22 @@ object accessibilityMod {
       *
       * @example
       * An example of dumping the entire accessibility tree:
-      * ```js
+      *
+      * ```ts
       * const snapshot = await page.accessibility.snapshot();
       * console.log(snapshot);
       * ```
       *
       * @example
       * An example of logging the focused node's name:
-      * ```js
+      *
+      * ```ts
       * const snapshot = await page.accessibility.snapshot();
       * const node = findFocusedNode(snapshot);
       * console.log(node && node.name);
       *
       * function findFocusedNode(node) {
-      *   if (node.focused)
-      *     return node;
+      *   if (node.focused) return node;
       *   for (const child of node.children || []) {
       *     const foundNode = findFocusedNode(child);
       *     return foundNode;
@@ -61,10 +62,9 @@ object accessibilityMod {
       * ```
       *
       * @returns An AXNode object representing the snapshot.
-      *
       */
-    def snapshot(): js.Promise[SerializedAXNode] = js.native
-    def snapshot(options: SnapshotOptions): js.Promise[SerializedAXNode] = js.native
+    def snapshot(): js.Promise[SerializedAXNode | Null] = js.native
+    def snapshot(options: SnapshotOptions): js.Promise[SerializedAXNode | Null] = js.native
   }
   
   trait SerializedAXNode extends StObject {
@@ -182,7 +182,7 @@ object accessibilityMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: SerializedAXNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: SerializedAXNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -288,7 +288,7 @@ object accessibilityMod {
       * Root node to get the accessibility tree for
       * @defaultValue The root node of the entire page.
       */
-    var root: js.UndefOr[ElementHandle[Element]] = js.undefined
+    var root: js.UndefOr[ElementHandle[Node]] = js.undefined
   }
   object SnapshotOptions {
     
@@ -303,7 +303,7 @@ object accessibilityMod {
       
       inline def setInterestingOnlyUndefined: Self = StObject.set(x, "interestingOnly", js.undefined)
       
-      inline def setRoot(value: ElementHandle[Element]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: ElementHandle[Node]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }

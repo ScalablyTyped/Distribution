@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.LoadItem")
 @js.native
-class LoadItem ()
+open class LoadItem ()
   extends StObject
      with typings.preloadjs.createjs.LoadItem {
   

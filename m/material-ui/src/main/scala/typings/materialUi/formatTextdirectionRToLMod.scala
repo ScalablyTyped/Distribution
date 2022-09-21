@@ -10,10 +10,10 @@ object formatTextdirectionRToLMod {
   
   @JSImport("material-ui/svg-icons/editor/format-textdirection-r-to-l", JSImport.Default)
   @js.native
-  class default () extends EditorFormatTextdirectionRToL
+  open class default () extends EditorFormatTextdirectionRToL
   
   @JSImport("material-ui/svg-icons/editor/format-textdirection-r-to-l", "EditorFormatTextdirectionRToL")
   @js.native
-  class EditorFormatTextdirectionRToL ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatTextdirectionRToL ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

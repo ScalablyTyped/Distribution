@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-format
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Format numbers for human consumption.
@@ -11,9 +11,9 @@ Format numbers for human consumption.
 | Full name          | d3-format |
 | Keywords           | d3, d3-module, format, localization |
 | # releases         | 9 |
-| # dependents       | 382 |
-| # downloads        | 88479305 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7142264E7 |
+| # stars            | 519.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-format/)

@@ -11,7 +11,7 @@ trait DroppedLabels extends StObject {
   var label: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.DroppedLabels & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.DroppedLabels & TopLevel[Any]
   ] = js.undefined
 }
 object DroppedLabels {
@@ -26,7 +26,7 @@ object DroppedLabels {
     inline def setLabel(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.DroppedLabels & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.DroppedLabels & TopLevel[Any]
     ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)

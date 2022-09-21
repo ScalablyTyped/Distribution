@@ -1,5 +1,6 @@
 package typings.webpackBugsnagPlugins
 
+import typings.std.Record
 import typings.webpackBugsnagPlugins.anon.Debug
 import typings.webpackBugsnagPlugins.anon.Provider
 import typings.webpackBugsnagPlugins.webpackBugsnagPluginsStrings.debug
@@ -13,17 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("webpack-bugsnag-plugins", "BugsnagBuildReporterPlugin")
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("webpack-bugsnag-plugins", "BugsnagBuildReporterPlugin")
   @js.native
-  class BugsnagBuildReporterPlugin protected () extends StObject {
+  open class BugsnagBuildReporterPlugin protected () extends StObject {
     def this(build: BuildReporterBuild) = this()
     def this(build: BuildReporterBuild, options: BuildReporterOptions) = this()
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("webpack-bugsnag-plugins", "BugsnagSourceMapUploaderPlugin")
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("webpack-bugsnag-plugins", "BugsnagSourceMapUploaderPlugin")
   @js.native
-  class BugsnagSourceMapUploaderPlugin protected () extends StObject {
+  open class BugsnagSourceMapUploaderPlugin protected () extends StObject {
     def this(options: SourceMapUploaderOptions) = this()
   }
   
@@ -54,6 +55,17 @@ object mod {
       * result of the `whoami` command)
       */
     var builderName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Key value pairs containing any custom build information that provides useful metadata about the build. e.g. build configuration parameters, versions of dependencies, reason for the build etc.
+      * The keys and values must be strings. Nested objects aren't supported.
+      * e.g.
+      * {
+      * "buildServer": "build1",
+      * "buildReason": "Releasing JIRA-1234"
+      * }
+      */
+    var metadata: js.UndefOr[Record[String, String]] = js.undefined
     
     /**
       * 'production', 'staging' etc. (leave blank if this build can be released to
@@ -88,6 +100,10 @@ object mod {
       inline def setBuilderName(value: String): Self = StObject.set(x, "builderName", value.asInstanceOf[js.Any])
       
       inline def setBuilderNameUndefined: Self = StObject.set(x, "builderName", js.undefined)
+      
+      inline def setMetadata(value: Record[String, String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
       inline def setReleaseStage(value: String): Self = StObject.set(x, "releaseStage", value.asInstanceOf[js.Any])
       
@@ -217,7 +233,7 @@ object mod {
       
       inline def setIgnoredBundleExtensionsUndefined: Self = StObject.set(x, "ignoredBundleExtensions", js.undefined)
       
-      inline def setIgnoredBundleExtensionsVarargs(value: String*): Self = StObject.set(x, "ignoredBundleExtensions", js.Array(value :_*))
+      inline def setIgnoredBundleExtensionsVarargs(value: String*): Self = StObject.set(x, "ignoredBundleExtensions", js.Array(value*))
       
       inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       

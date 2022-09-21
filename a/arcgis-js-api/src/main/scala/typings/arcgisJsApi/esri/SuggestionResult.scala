@@ -13,21 +13,21 @@ trait SuggestionResult
   /**
     * Indicates if the result is a Collection.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#SuggestionResult)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
     */
   var isCollection: Boolean
   
   /**
     * ID used in combination with the `text` property to uniquely identify a suggestion.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#SuggestionResult)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
     */
   var magicKey: String
   
   /**
     * The string name of the suggested location to geocode.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#SuggestionResult)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
     */
   var text: String
 }

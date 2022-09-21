@@ -10,10 +10,10 @@ object wbAutoMod {
   
   @JSImport("material-ui/svg-icons/image/wb-auto", JSImport.Default)
   @js.native
-  class default () extends ImageWbAuto
+  open class default () extends ImageWbAuto
   
   @JSImport("material-ui/svg-icons/image/wb-auto", "ImageWbAuto")
   @js.native
-  class ImageWbAuto ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageWbAuto ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

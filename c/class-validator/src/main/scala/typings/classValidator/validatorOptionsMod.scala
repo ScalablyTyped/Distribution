@@ -10,10 +10,20 @@ object validatorOptionsMod {
   trait ValidatorOptions extends StObject {
     
     /**
+      * Set default for `always` option of decorators. Default can be overridden in decorator options.
+      */
+    var always: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * If set to true, the validation will not use default messages.
       * Error message always will be undefined if its not explicitly set.
       */
     var dismissDefaultMessages: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If set to true then class-validator will print extra warning messages to the console when something is not right.
+      */
+    var enableDebugMessages: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, instead of stripping non-whitelisted properties validator will throw an error
@@ -46,6 +56,17 @@ object validatorOptionsMod {
     var skipUndefinedProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * When set to true, validation of the given property will stop after encountering the first error. Defaults to false.
+      */
+    var stopAtFirstError: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If [groups]{@link ValidatorOptions#groups} is not given or is empty,
+      * ignore decorators with at least one group.
+      */
+    var strictGroups: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * ValidationError special options.
       */
     var validationError: js.UndefOr[Target] = js.undefined
@@ -66,9 +87,17 @@ object validatorOptionsMod {
     
     extension [Self <: ValidatorOptions](x: Self) {
       
+      inline def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
+      
+      inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
+      
       inline def setDismissDefaultMessages(value: Boolean): Self = StObject.set(x, "dismissDefaultMessages", value.asInstanceOf[js.Any])
       
       inline def setDismissDefaultMessagesUndefined: Self = StObject.set(x, "dismissDefaultMessages", js.undefined)
+      
+      inline def setEnableDebugMessages(value: Boolean): Self = StObject.set(x, "enableDebugMessages", value.asInstanceOf[js.Any])
+      
+      inline def setEnableDebugMessagesUndefined: Self = StObject.set(x, "enableDebugMessages", js.undefined)
       
       inline def setForbidNonWhitelisted(value: Boolean): Self = StObject.set(x, "forbidNonWhitelisted", value.asInstanceOf[js.Any])
       
@@ -82,7 +111,7 @@ object validatorOptionsMod {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setSkipMissingProperties(value: Boolean): Self = StObject.set(x, "skipMissingProperties", value.asInstanceOf[js.Any])
       
@@ -95,6 +124,14 @@ object validatorOptionsMod {
       inline def setSkipUndefinedProperties(value: Boolean): Self = StObject.set(x, "skipUndefinedProperties", value.asInstanceOf[js.Any])
       
       inline def setSkipUndefinedPropertiesUndefined: Self = StObject.set(x, "skipUndefinedProperties", js.undefined)
+      
+      inline def setStopAtFirstError(value: Boolean): Self = StObject.set(x, "stopAtFirstError", value.asInstanceOf[js.Any])
+      
+      inline def setStopAtFirstErrorUndefined: Self = StObject.set(x, "stopAtFirstError", js.undefined)
+      
+      inline def setStrictGroups(value: Boolean): Self = StObject.set(x, "strictGroups", value.asInstanceOf[js.Any])
+      
+      inline def setStrictGroupsUndefined: Self = StObject.set(x, "strictGroups", js.undefined)
       
       inline def setValidationError(value: Target): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
       

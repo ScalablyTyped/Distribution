@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a GZIP stream
   * @param cb The callback to call whenever data is deflated
   */
-class Compress_ () extends Gzip_ {
+open class Compress_ () extends Gzip_ {
   def this(cb: FlateStreamHandler) = this()
   /**
     * Creates a GZIP stream

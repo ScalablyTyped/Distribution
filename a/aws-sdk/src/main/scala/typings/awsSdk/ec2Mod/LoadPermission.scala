@@ -12,7 +12,7 @@ trait LoadPermission extends StObject {
   var Group: js.UndefOr[PermissionGroup] = js.undefined
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var UserId: js.UndefOr[String] = js.undefined
 }

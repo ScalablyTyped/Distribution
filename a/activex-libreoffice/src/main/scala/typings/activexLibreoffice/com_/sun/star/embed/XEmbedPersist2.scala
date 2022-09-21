@@ -23,7 +23,7 @@ object XEmbedPersist2 {
     hasEntry: () => Boolean,
     isReadonly: () => Boolean,
     isStored: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reload: (SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit,
     saveCompleted: Boolean => Unit,

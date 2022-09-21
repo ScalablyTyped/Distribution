@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An offline file annotation request.
-  */
 trait SchemaGoogleCloudVisionV1p1beta1AsyncAnnotateFileRequest extends StObject {
   
   /**
@@ -42,7 +39,7 @@ object SchemaGoogleCloudVisionV1p1beta1AsyncAnnotateFileRequest {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: SchemaGoogleCloudVisionV1p1beta1Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: SchemaGoogleCloudVisionV1p1beta1Feature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setImageContext(value: SchemaGoogleCloudVisionV1p1beta1ImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
     

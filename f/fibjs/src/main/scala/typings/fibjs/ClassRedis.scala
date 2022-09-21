@@ -57,7 +57,7 @@ trait ClassRedis
     * 
     * 
     */
-  def command(cmd: String, args: js.Any*): js.Any = js.native
+  def command(cmd: String, args: Any*): Any = js.native
   
   /**
     * 
@@ -79,7 +79,7 @@ trait ClassRedis
     * 
     * 
     */
-  def del(keys: js.Any*): Double = js.native
+  def del(keys: Any*): Double = js.native
   /**
     * 
     * @brief 删除给定的一个或多个 key，不存在的 key 会被忽略
@@ -88,7 +88,7 @@ trait ClassRedis
     * 
     * 
     */
-  def del(keys: js.Array[js.Any]): Double = js.native
+  def del(keys: js.Array[Any]): Double = js.native
   
   /**
     * 
@@ -225,7 +225,7 @@ trait ClassRedis
     * 
     * 
     */
-  def keys(pattern: String): js.Array[js.Any] = js.native
+  def keys(pattern: String): js.Array[Any] = js.native
   
   /**
     * 
@@ -235,7 +235,7 @@ trait ClassRedis
     * 
     * 
     */
-  def mget(keys: js.Any*): js.Array[js.Any] = js.native
+  def mget(keys: Any*): js.Array[Any] = js.native
   /**
     * 
     * @brief 返回所有(一个或多个)给定 key 的值。如果给定的 key 里面，有某个 key 不存在，那么这个 key 返回特殊值 nil 。
@@ -244,7 +244,7 @@ trait ClassRedis
     * 
     * 
     */
-  def mget(keys: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def mget(keys: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * 
@@ -253,7 +253,7 @@ trait ClassRedis
     * 
     * 
     */
-  def mset(kvs: js.Any*): Unit = js.native
+  def mset(kvs: Any*): Unit = js.native
   /**
     * 
     * @brief 同时设置一个或多个 key-value 对。如果某个给定 key 已经存在，那么 MSET 会用新值覆盖原来的旧值
@@ -270,7 +270,7 @@ trait ClassRedis
     * 
     * 
     */
-  def msetNX(kvs: js.Any*): Unit = js.native
+  def msetNX(kvs: Any*): Unit = js.native
   /**
     * 
     * @brief 同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在
@@ -513,7 +513,7 @@ trait ClassRedis
     * 
     * 
     */
-  def unpsub(patterns: js.Array[js.Any]): Unit = js.native
+  def unpsub(patterns: js.Array[Any]): Unit = js.native
   
   /**
     * 
@@ -523,7 +523,7 @@ trait ClassRedis
     * 
     * 
     */
-  def unsub(channels: js.Array[js.Any]): Unit = js.native
+  def unsub(channels: js.Array[Any]): Unit = js.native
   /**
     * 
     * @brief 退订给定的频道的全部回调

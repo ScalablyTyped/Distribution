@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-touch-id
 
-Typings are for version 4.0.2
+Typings are for version 4.4.1
 
 ## Library description:
 React Native authentication with the native Touch ID popup.
@@ -10,10 +10,10 @@ React Native authentication with the native Touch ID popup.
 | ------------------ | :-------------: |
 | Full name          | react-native-touch-id |
 | Keywords           | react-native, react, native, touch-id, react-component, react-native-component, authentication, auth, authenticate, mobile |
-| # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 764316 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 71623.33333333333 |
+| # stars            | 1399.0 |
 
 ## Links
 - [Homepage](https://github.com/naoufal/react-native-touch-id)
@@ -24,7 +24,7 @@ React Native authentication with the native Touch ID popup.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

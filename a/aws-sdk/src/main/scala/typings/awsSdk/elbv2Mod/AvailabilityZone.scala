@@ -39,7 +39,7 @@ object AvailabilityZone {
     
     inline def setLoadBalancerAddressesUndefined: Self = StObject.set(x, "LoadBalancerAddresses", js.undefined)
     
-    inline def setLoadBalancerAddressesVarargs(value: LoadBalancerAddress*): Self = StObject.set(x, "LoadBalancerAddresses", js.Array(value :_*))
+    inline def setLoadBalancerAddressesVarargs(value: LoadBalancerAddress*): Self = StObject.set(x, "LoadBalancerAddresses", js.Array(value*))
     
     inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     

@@ -1,192 +1,257 @@
 package typings.nodeFetch
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.formData.mod.^
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
-import typings.node.urlMod.URLSearchParams
-import typings.node.urlMod.URL_
-import typings.nodeFetch.anon.Size
-import typings.nodeFetch.externalsMod.AbortSignal
-import typings.nodeFetch.nodeFetchStrings.native
-import typings.nodeFetch.nodeFetchStrings.transparent
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
+import typings.nodeFetch.nodeFetchStrings.abort
 import typings.std.Error
-import typings.std.Iterable
 import typings.std.IterableIterator
+import typings.std.ReadableStream
+import typings.std.Record
+import typings.std.URL
+import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  object default {
+  @JSImport("node-fetch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(url: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  inline def default(url: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  
+  @JSImport("node-fetch", "AbortError")
+  @js.native
+  open class AbortError ()
+    extends StObject
+       with Error {
     
-    inline def apply(url: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
-    inline def apply(url: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
     
-    @JSImport("node-fetch", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    @JSName("name")
+    var name_AbortError: typings.nodeFetch.nodeFetchStrings.AbortError = js.native
     
-    inline def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @JSName(js.Symbol.toStringTag)
+    var toStringTag: typings.nodeFetch.nodeFetchStrings.AbortError = js.native
+    
+    var `type`: String = js.native
   }
   
   @JSImport("node-fetch", "Blob")
   @js.native
-  class Blob () extends StObject {
-    def this(blobParts: js.Array[BlobPart]) = this()
-    def this(blobParts: js.Array[BlobPart], options: BlobOptions) = this()
-    def this(blobParts: Unit, options: BlobOptions) = this()
-    
-    val size: Double = js.native
-    
-    def slice(): Blob = js.native
-    def slice(start: Double): Blob = js.native
-    def slice(start: Double, end: Double): Blob = js.native
-    def slice(start: Unit, end: Double): Blob = js.native
-    
-    val `type`: String = js.native
-  }
-  
-  @JSImport("node-fetch", "Body")
-  @js.native
-  class Body () extends StObject {
-    def this(body: js.Any) = this()
-    def this(body: js.Any, opts: Size) = this()
-    def this(body: Unit, opts: Size) = this()
-    
-    def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
-    
-    def blob(): js.Promise[Blob] = js.native
-    
-    var body: ReadableStream = js.native
-    
-    var bodyUsed: Boolean = js.native
-    
-    def buffer(): js.Promise[Buffer] = js.native
-    
-    def json(): js.Promise[js.Any] = js.native
-    
-    var size: Double = js.native
-    
-    def text(): js.Promise[String] = js.native
-    
-    def textConverted(): js.Promise[String] = js.native
-    
-    var timeout: Double = js.native
-  }
+  val Blob: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.Blob */ Any = js.native
   
   @JSImport("node-fetch", "FetchError")
   @js.native
-  class FetchError protected ()
+  open class FetchError protected ()
     extends StObject
        with Error {
     def this(message: String, `type`: String) = this()
-    def this(message: String, `type`: String, systemError: SystemError) = this()
+    def this(message: String, `type`: String, systemError: Record[String, Any]) = this()
     
     var code: js.UndefOr[String] = js.native
     
     var errno: js.UndefOr[String] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
     var name_FetchError: typings.nodeFetch.nodeFetchStrings.FetchError = js.native
     
+    @JSName(js.Symbol.toStringTag)
+    var toStringTag: typings.nodeFetch.nodeFetchStrings.FetchError = js.native
+    
     var `type`: String = js.native
   }
   
+  @JSImport("node-fetch", "File")
+  @js.native
+  val File: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.File */ Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("node-fetch", "FormData")
+  @js.native
+  open class FormData ()
+    extends typings.formdataPolyfill.mod.FormData
+  
   @JSImport("node-fetch", "Headers")
   @js.native
-  class Headers ()
-    extends StObject
-       with Iterable[js.Tuple2[String, String]] {
+  open class Headers () extends StObject {
     def this(init: HeadersInit) = this()
     
     def append(name: String, value: String): Unit = js.native
     
     def delete(name: String): Unit = js.native
     
-    // Iterable methods
+    /**
+    	 * Returns an iterator allowing to go through all key/value pairs contained in this object.
+    	 */
     def entries(): IterableIterator[js.Tuple2[String, String]] = js.native
     
-    def forEach(callback: js.Function2[/* value */ String, /* name */ String, Unit]): Unit = js.native
+    def forEach(callbackfn: js.Function3[/* value */ String, /* key */ String, /* parent */ this.type, Unit]): Unit = js.native
+    def forEach(
+      callbackfn: js.Function3[/* value */ String, /* key */ String, /* parent */ this.type, Unit],
+      thisArg: Any
+    ): Unit = js.native
     
     def get(name: String): String | Null = js.native
     
     def has(name: String): Boolean = js.native
     
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
+    
+    /**
+    	 * Returns an iterator allowing to go through all keys of the key/value pairs contained in this object.
+    	 */
     def keys(): IterableIterator[String] = js.native
     
-    def raw(): StringDictionary[js.Array[String]] = js.native
+    /** Node-fetch extension */
+    def raw(): Record[String, js.Array[String]] = js.native
     
     def set(name: String, value: String): Unit = js.native
     
-    def values(): IterableIterator[js.Array[String]] = js.native
+    /**
+    	 * Returns an iterator allowing to go through all values of the key/value pairs contained in this object.
+    	 */
+    def values(): IterableIterator[String] = js.native
   }
   
   @JSImport("node-fetch", "Request")
   @js.native
-  class Request protected ()
-    extends Body
-       with _RequestInfo {
+  open class Request protected ()
+    extends StObject
+       with BodyMixin {
     def this(input: RequestInfo) = this()
     def this(input: RequestInfo, init: RequestInit) = this()
     
-    // node-fetch extensions to the whatwg/fetch spec
-    var agent: js.UndefOr[Agent | (js.Function1[/* parsedUrl */ URL_, Agent])] = js.native
+    /* CompleteClass */
+    override def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
-    var compress: Boolean = js.native
+    /* CompleteClass */
+    override def blob(): js.Promise[typings.std.Blob] = js.native
     
-    var context: RequestContext = js.native
+    /* CompleteClass */
+    override val body: ReadableStream[Any] | Null = js.native
     
-    var counter: Double = js.native
+    /* CompleteClass */
+    override val bodyUsed: Boolean = js.native
     
-    var follow: Double = js.native
+    /** @deprecated Use `body.arrayBuffer()` instead. */
+    /* CompleteClass */
+    override def buffer(): js.Promise[Buffer] = js.native
     
-    var headers: Headers = js.native
+    /* CompleteClass */
+    override def formData(): js.Promise[typings.formdataPolyfill.mod.FormData] = js.native
     
-    var hostname: String = js.native
+    /**
+    	 * Returns a Headers object consisting of the headers associated with request. Note that headers added in the network layer by the user agent will not be accounted for in this object, e.g., the "Host" header.
+    	 */
+    val headers: Headers = js.native
     
-    var method: String = js.native
+    /* CompleteClass */
+    override def json(): js.Promise[Any] = js.native
     
-    var port: js.UndefOr[Double] = js.native
+    /**
+    	 * Returns request's HTTP method, which is "GET" by default.
+    	 */
+    val method: String = js.native
     
-    var protocol: String = js.native
+    /**
+    	 * Returns the redirect mode associated with request, which is a string indicating how redirects for the request will be handled during fetching. A request will follow redirects by default.
+    	 */
+    val redirect: RequestRedirect = js.native
     
-    var redirect: RequestRedirect = js.native
+    /**
+    	 * A string whose value is a same-origin URL, "about:client", or the empty string, to set request’s referrer.
+    	 */
+    val referrer: String = js.native
     
-    var referrer: String = js.native
+    /**
+    	 * A referrer policy to set request’s referrerPolicy.
+    	 */
+    val referrerPolicy: ReferrerPolicy = js.native
     
-    var url: String = js.native
+    /**
+    	 * Returns the signal associated with request, which is an AbortSignal object indicating whether or not request has been aborted, and its abort event handler.
+    	 */
+    val signal: AbortSignal = js.native
+    
+    /* CompleteClass */
+    override val size: Double = js.native
+    
+    /* CompleteClass */
+    override def text(): js.Promise[String] = js.native
+    
+    /**
+    	 * Returns the URL of request as a string.
+    	 */
+    val url: String = js.native
   }
   
   @JSImport("node-fetch", "Response")
   @js.native
-  class Response () extends Body {
+  open class Response ()
+    extends StObject
+       with BodyMixin {
     def this(body: BodyInit) = this()
+    def this(body: Null, init: ResponseInit) = this()
     def this(body: Unit, init: ResponseInit) = this()
     def this(body: BodyInit, init: ResponseInit) = this()
     
-    var headers: Headers = js.native
+    /* CompleteClass */
+    override def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
-    var ok: Boolean = js.native
+    /* CompleteClass */
+    override def blob(): js.Promise[typings.std.Blob] = js.native
     
-    var redirected: Boolean = js.native
+    /* CompleteClass */
+    override val body: ReadableStream[Any] | Null = js.native
     
-    var status: Double = js.native
+    /* CompleteClass */
+    override val bodyUsed: Boolean = js.native
     
-    var statusText: String = js.native
+    /** @deprecated Use `body.arrayBuffer()` instead. */
+    /* CompleteClass */
+    override def buffer(): js.Promise[Buffer] = js.native
     
-    var `type`: ResponseType = js.native
+    /* CompleteClass */
+    override def formData(): js.Promise[typings.formdataPolyfill.mod.FormData] = js.native
     
-    var url: String = js.native
+    val headers: Headers = js.native
+    
+    /* CompleteClass */
+    override def json(): js.Promise[Any] = js.native
+    
+    val ok: Boolean = js.native
+    
+    val redirected: Boolean = js.native
+    
+    /* CompleteClass */
+    override val size: Double = js.native
+    
+    val status: Double = js.native
+    
+    val statusText: String = js.native
+    
+    /* CompleteClass */
+    override def text(): js.Promise[String] = js.native
+    
+    val `type`: ResponseType = js.native
+    
+    val url: String = js.native
   }
   /* static members */
   object Response {
@@ -197,220 +262,289 @@ object mod {
     
     inline def error(): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Response]
     
+    inline def redirect(url: String): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[Response]
     inline def redirect(url: String, status: Double): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
-  trait BlobOptions extends StObject {
+  inline def blobFrom(path: String): js.Promise[typings.std.Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("blobFrom")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.Blob]]
+  inline def blobFrom(path: String, `type`: String): js.Promise[typings.std.Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("blobFrom")(path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Blob]]
+  
+  inline def blobFromSync(path: String): typings.std.Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("blobFromSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.std.Blob]
+  inline def blobFromSync(path: String, `type`: String): typings.std.Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("blobFromSync")(path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.std.Blob]
+  
+  inline def fileFrom(path: String): js.Promise[typings.std.File] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileFrom")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.File]]
+  inline def fileFrom(path: String, `type`: String): js.Promise[typings.std.File] = (^.asInstanceOf[js.Dynamic].applyDynamic("fileFrom")(path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.File]]
+  
+  inline def fileFromSync(path: String): typings.std.File = ^.asInstanceOf[js.Dynamic].applyDynamic("fileFromSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.std.File]
+  inline def fileFromSync(path: String, `type`: String): typings.std.File = (^.asInstanceOf[js.Dynamic].applyDynamic("fileFromSync")(path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.std.File]
+  
+  inline def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  trait AbortSignal extends StObject {
     
-    var endings: js.UndefOr[transparent | native] = js.undefined
+    val aborted: Boolean
     
-    var `type`: js.UndefOr[String] = js.undefined
+    @JSName("addEventListener")
+    def addEventListener_abort(`type`: abort, listener: js.ThisFunction0[/* this */ AbortSignal, Unit]): Unit
+    
+    @JSName("removeEventListener")
+    def removeEventListener_abort(`type`: abort, listener: js.ThisFunction0[/* this */ AbortSignal, Unit]): Unit
   }
-  object BlobOptions {
+  object AbortSignal {
     
-    inline def apply(): BlobOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BlobOptions]
+    inline def apply(
+      aborted: Boolean,
+      addEventListener: (abort, js.ThisFunction0[/* this */ AbortSignal, Unit]) => Unit,
+      removeEventListener: (abort, js.ThisFunction0[/* this */ AbortSignal, Unit]) => Unit
+    ): AbortSignal = {
+      val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), removeEventListener = js.Any.fromFunction2(removeEventListener))
+      __obj.asInstanceOf[AbortSignal]
     }
     
-    extension [Self <: BlobOptions](x: Self) {
+    extension [Self <: AbortSignal](x: Self) {
       
-      inline def setEndings(value: transparent | native): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
+      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
-      inline def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
+      inline def setAddEventListener(value: (abort, js.ThisFunction0[/* this */ AbortSignal, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setRemoveEventListener(value: (abort, js.ThisFunction0[/* this */ AbortSignal, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     }
   }
   
-  type BlobPart = ArrayBuffer | ArrayBufferView | Blob | String
-  
-  type BodyInit = ArrayBuffer | ArrayBufferView | ReadableStream | String | URLSearchParams | ^
-  
-  type HeaderInit = HeadersInit
-  
-  type HeadersInit = Headers | js.Array[js.Array[String]] | StringDictionary[String]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.nodeFetch.nodeFetchStrings.default
-    - typings.nodeFetch.nodeFetchStrings.`force-cache`
-    - typings.nodeFetch.nodeFetchStrings.`no-cache`
-    - typings.nodeFetch.nodeFetchStrings.`no-store`
-    - typings.nodeFetch.nodeFetchStrings.`only-if-cached`
-    - typings.nodeFetch.nodeFetchStrings.reload
-  */
-  trait RequestCache extends StObject
-  object RequestCache {
+  /* Inlined parent std.Pick<node-fetch.node-fetch.BodyMixin, keyof node-fetch.node-fetch.BodyMixin> */
+  trait Body extends StObject {
     
-    inline def default: typings.nodeFetch.nodeFetchStrings.default = "default".asInstanceOf[typings.nodeFetch.nodeFetchStrings.default]
+    def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer]
+    @JSName("arrayBuffer")
+    var arrayBuffer_Original: js.Function0[js.Promise[js.typedarray.ArrayBuffer]]
     
-    inline def `force-cache`: typings.nodeFetch.nodeFetchStrings.`force-cache` = "force-cache".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`force-cache`]
+    def blob(): js.Promise[typings.std.Blob]
+    @JSName("blob")
+    var blob_Original: js.Function0[js.Promise[typings.std.Blob]]
     
-    inline def `no-cache`: typings.nodeFetch.nodeFetchStrings.`no-cache` = "no-cache".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-cache`]
+    var body: js.UndefOr[ReadableStream[Any] | Null] = js.undefined
     
-    inline def `no-store`: typings.nodeFetch.nodeFetchStrings.`no-store` = "no-store".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-store`]
+    var bodyUsed: Boolean
     
-    inline def `only-if-cached`: typings.nodeFetch.nodeFetchStrings.`only-if-cached` = "only-if-cached".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`only-if-cached`]
+    def buffer(): js.Promise[Buffer]
+    @JSName("buffer")
+    var buffer_Original: js.Function0[js.Promise[Buffer]]
     
-    inline def reload: typings.nodeFetch.nodeFetchStrings.reload = "reload".asInstanceOf[typings.nodeFetch.nodeFetchStrings.reload]
+    def formData(): js.Promise[typings.formdataPolyfill.mod.FormData]
+    @JSName("formData")
+    var formData_Original: js.Function0[js.Promise[typings.formdataPolyfill.mod.FormData]]
+    
+    def json(): js.Promise[Any]
+    @JSName("json")
+    var json_Original: js.Function0[js.Promise[Any]]
+    
+    var size: Double
+    
+    def text(): js.Promise[String]
+    @JSName("text")
+    var text_Original: js.Function0[js.Promise[String]]
+  }
+  object Body {
+    
+    inline def apply(
+      arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
+      blob: () => js.Promise[typings.std.Blob],
+      bodyUsed: Boolean,
+      buffer: () => js.Promise[Buffer],
+      formData: () => js.Promise[typings.formdataPolyfill.mod.FormData],
+      json: () => js.Promise[Any],
+      size: Double,
+      text: () => js.Promise[String]
+    ): Body = {
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], buffer = js.Any.fromFunction0(buffer), formData = js.Any.fromFunction0(formData), json = js.Any.fromFunction0(json), size = size.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
+      __obj.asInstanceOf[Body]
+    }
+    
+    extension [Self <: Body](x: Self) {
+      
+      inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      
+      inline def setBlob(value: () => js.Promise[typings.std.Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+      
+      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
+      
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      
+      inline def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
+      
+      inline def setBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
+      
+      inline def setFormData(value: () => js.Promise[typings.formdataPolyfill.mod.FormData]): Self = StObject.set(x, "formData", js.Any.fromFunction0(value))
+      
+      inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.nodeFetch.nodeFetchStrings.audio
-    - typings.nodeFetch.nodeFetchStrings.beacon
-    - typings.nodeFetch.nodeFetchStrings.cspreport
-    - typings.nodeFetch.nodeFetchStrings.download
-    - typings.nodeFetch.nodeFetchStrings.embed
-    - typings.nodeFetch.nodeFetchStrings.eventsource
-    - typings.nodeFetch.nodeFetchStrings.favicon
-    - typings.nodeFetch.nodeFetchStrings.fetch
-    - typings.nodeFetch.nodeFetchStrings.font
-    - typings.nodeFetch.nodeFetchStrings.form
-    - typings.nodeFetch.nodeFetchStrings.frame
-    - typings.nodeFetch.nodeFetchStrings.hyperlink
-    - typings.nodeFetch.nodeFetchStrings.iframe
-    - typings.nodeFetch.nodeFetchStrings.image
-    - typings.nodeFetch.nodeFetchStrings.imageset
-    - typings.nodeFetch.nodeFetchStrings.`import`
-    - typings.nodeFetch.nodeFetchStrings.internal
-    - typings.nodeFetch.nodeFetchStrings.location
-    - typings.nodeFetch.nodeFetchStrings.manifest
-    - typings.nodeFetch.nodeFetchStrings.`object`
-    - typings.nodeFetch.nodeFetchStrings.ping
-    - typings.nodeFetch.nodeFetchStrings.plugin
-    - typings.nodeFetch.nodeFetchStrings.prefetch
-    - typings.nodeFetch.nodeFetchStrings.script
-    - typings.nodeFetch.nodeFetchStrings.serviceworker
-    - typings.nodeFetch.nodeFetchStrings.sharedworker
-    - typings.nodeFetch.nodeFetchStrings.style
-    - typings.nodeFetch.nodeFetchStrings.subresource
-    - typings.nodeFetch.nodeFetchStrings.track
-    - typings.nodeFetch.nodeFetchStrings.video
-    - typings.nodeFetch.nodeFetchStrings.worker
-    - typings.nodeFetch.nodeFetchStrings.xmlhttprequest
-    - typings.nodeFetch.nodeFetchStrings.xslt
-  */
-  trait RequestContext extends StObject
-  object RequestContext {
+  type BodyInit = typings.std.Blob | Buffer | URLSearchParams | typings.formdataPolyfill.mod.FormData | ReadableStream[Any] | String
+  
+  trait BodyMixin extends StObject {
     
-    inline def audio: typings.nodeFetch.nodeFetchStrings.audio = "audio".asInstanceOf[typings.nodeFetch.nodeFetchStrings.audio]
+    def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer]
     
-    inline def beacon: typings.nodeFetch.nodeFetchStrings.beacon = "beacon".asInstanceOf[typings.nodeFetch.nodeFetchStrings.beacon]
+    def blob(): js.Promise[typings.std.Blob]
     
-    inline def cspreport: typings.nodeFetch.nodeFetchStrings.cspreport = "cspreport".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cspreport]
+    val body: ReadableStream[Any] | Null
     
-    inline def download: typings.nodeFetch.nodeFetchStrings.download = "download".asInstanceOf[typings.nodeFetch.nodeFetchStrings.download]
+    val bodyUsed: Boolean
     
-    inline def embed: typings.nodeFetch.nodeFetchStrings.embed = "embed".asInstanceOf[typings.nodeFetch.nodeFetchStrings.embed]
+    /** @deprecated Use `body.arrayBuffer()` instead. */
+    def buffer(): js.Promise[Buffer]
     
-    inline def eventsource: typings.nodeFetch.nodeFetchStrings.eventsource = "eventsource".asInstanceOf[typings.nodeFetch.nodeFetchStrings.eventsource]
+    def formData(): js.Promise[typings.formdataPolyfill.mod.FormData]
     
-    inline def favicon: typings.nodeFetch.nodeFetchStrings.favicon = "favicon".asInstanceOf[typings.nodeFetch.nodeFetchStrings.favicon]
+    def json(): js.Promise[Any]
     
-    inline def fetch: typings.nodeFetch.nodeFetchStrings.fetch = "fetch".asInstanceOf[typings.nodeFetch.nodeFetchStrings.fetch]
+    val size: Double
     
-    inline def font: typings.nodeFetch.nodeFetchStrings.font = "font".asInstanceOf[typings.nodeFetch.nodeFetchStrings.font]
+    def text(): js.Promise[String]
+  }
+  object BodyMixin {
     
-    inline def form: typings.nodeFetch.nodeFetchStrings.form = "form".asInstanceOf[typings.nodeFetch.nodeFetchStrings.form]
+    inline def apply(
+      arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
+      blob: () => js.Promise[typings.std.Blob],
+      bodyUsed: Boolean,
+      buffer: () => js.Promise[Buffer],
+      formData: () => js.Promise[typings.formdataPolyfill.mod.FormData],
+      json: () => js.Promise[Any],
+      size: Double,
+      text: () => js.Promise[String]
+    ): BodyMixin = {
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], buffer = js.Any.fromFunction0(buffer), formData = js.Any.fromFunction0(formData), json = js.Any.fromFunction0(json), size = size.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), body = null)
+      __obj.asInstanceOf[BodyMixin]
+    }
     
-    inline def frame: typings.nodeFetch.nodeFetchStrings.frame = "frame".asInstanceOf[typings.nodeFetch.nodeFetchStrings.frame]
-    
-    inline def hyperlink: typings.nodeFetch.nodeFetchStrings.hyperlink = "hyperlink".asInstanceOf[typings.nodeFetch.nodeFetchStrings.hyperlink]
-    
-    inline def iframe: typings.nodeFetch.nodeFetchStrings.iframe = "iframe".asInstanceOf[typings.nodeFetch.nodeFetchStrings.iframe]
-    
-    inline def image: typings.nodeFetch.nodeFetchStrings.image = "image".asInstanceOf[typings.nodeFetch.nodeFetchStrings.image]
-    
-    inline def imageset: typings.nodeFetch.nodeFetchStrings.imageset = "imageset".asInstanceOf[typings.nodeFetch.nodeFetchStrings.imageset]
-    
-    inline def `import`: typings.nodeFetch.nodeFetchStrings.`import` = "import".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`import`]
-    
-    inline def internal: typings.nodeFetch.nodeFetchStrings.internal = "internal".asInstanceOf[typings.nodeFetch.nodeFetchStrings.internal]
-    
-    inline def location: typings.nodeFetch.nodeFetchStrings.location = "location".asInstanceOf[typings.nodeFetch.nodeFetchStrings.location]
-    
-    inline def manifest: typings.nodeFetch.nodeFetchStrings.manifest = "manifest".asInstanceOf[typings.nodeFetch.nodeFetchStrings.manifest]
-    
-    inline def `object`: typings.nodeFetch.nodeFetchStrings.`object` = "object".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`object`]
-    
-    inline def ping: typings.nodeFetch.nodeFetchStrings.ping = "ping".asInstanceOf[typings.nodeFetch.nodeFetchStrings.ping]
-    
-    inline def plugin: typings.nodeFetch.nodeFetchStrings.plugin = "plugin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.plugin]
-    
-    inline def prefetch: typings.nodeFetch.nodeFetchStrings.prefetch = "prefetch".asInstanceOf[typings.nodeFetch.nodeFetchStrings.prefetch]
-    
-    inline def script: typings.nodeFetch.nodeFetchStrings.script = "script".asInstanceOf[typings.nodeFetch.nodeFetchStrings.script]
-    
-    inline def serviceworker: typings.nodeFetch.nodeFetchStrings.serviceworker = "serviceworker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.serviceworker]
-    
-    inline def sharedworker: typings.nodeFetch.nodeFetchStrings.sharedworker = "sharedworker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.sharedworker]
-    
-    inline def style: typings.nodeFetch.nodeFetchStrings.style = "style".asInstanceOf[typings.nodeFetch.nodeFetchStrings.style]
-    
-    inline def subresource: typings.nodeFetch.nodeFetchStrings.subresource = "subresource".asInstanceOf[typings.nodeFetch.nodeFetchStrings.subresource]
-    
-    inline def track: typings.nodeFetch.nodeFetchStrings.track = "track".asInstanceOf[typings.nodeFetch.nodeFetchStrings.track]
-    
-    inline def video: typings.nodeFetch.nodeFetchStrings.video = "video".asInstanceOf[typings.nodeFetch.nodeFetchStrings.video]
-    
-    inline def worker: typings.nodeFetch.nodeFetchStrings.worker = "worker".asInstanceOf[typings.nodeFetch.nodeFetchStrings.worker]
-    
-    inline def xmlhttprequest: typings.nodeFetch.nodeFetchStrings.xmlhttprequest = "xmlhttprequest".asInstanceOf[typings.nodeFetch.nodeFetchStrings.xmlhttprequest]
-    
-    inline def xslt: typings.nodeFetch.nodeFetchStrings.xslt = "xslt".asInstanceOf[typings.nodeFetch.nodeFetchStrings.xslt]
+    extension [Self <: BodyMixin](x: Self) {
+      
+      inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      
+      inline def setBlob(value: () => js.Promise[typings.std.Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+      
+      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
+      
+      inline def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
+      
+      inline def setBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
+      
+      inline def setFormData(value: () => js.Promise[typings.formdataPolyfill.mod.FormData]): Self = StObject.set(x, "formData", js.Any.fromFunction0(value))
+      
+      inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    }
   }
   
+  type HeadersInit = Headers | (Record[String, String]) | (js.Iterable[js.Iterable[String] | (js.Tuple2[String, String])])
+  
   /* Rewritten from type alias, can be one of: 
-    - typings.nodeFetch.nodeFetchStrings.omit
-    - typings.nodeFetch.nodeFetchStrings.include
+    - typings.nodeFetch.nodeFetchStrings._empty
+    - typings.nodeFetch.nodeFetchStrings.`no-referrer`
+    - typings.nodeFetch.nodeFetchStrings.`no-referrer-when-downgrade`
     - typings.nodeFetch.nodeFetchStrings.`same-origin`
+    - typings.nodeFetch.nodeFetchStrings.origin
+    - typings.nodeFetch.nodeFetchStrings.`strict-origin`
+    - typings.nodeFetch.nodeFetchStrings.`origin-when-cross-origin`
+    - typings.nodeFetch.nodeFetchStrings.`strict-origin-when-cross-origin`
+    - typings.nodeFetch.nodeFetchStrings.`unsafe-url`
   */
-  trait RequestCredentials extends StObject
-  object RequestCredentials {
+  trait ReferrerPolicy extends StObject
+  object ReferrerPolicy {
     
-    inline def include: typings.nodeFetch.nodeFetchStrings.include = "include".asInstanceOf[typings.nodeFetch.nodeFetchStrings.include]
+    inline def _empty: typings.nodeFetch.nodeFetchStrings._empty = "".asInstanceOf[typings.nodeFetch.nodeFetchStrings._empty]
     
-    inline def omit: typings.nodeFetch.nodeFetchStrings.omit = "omit".asInstanceOf[typings.nodeFetch.nodeFetchStrings.omit]
+    inline def `no-referrer`: typings.nodeFetch.nodeFetchStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-referrer`]
+    
+    inline def `no-referrer-when-downgrade`: typings.nodeFetch.nodeFetchStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-referrer-when-downgrade`]
+    
+    inline def origin: typings.nodeFetch.nodeFetchStrings.origin = "origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.origin]
+    
+    inline def `origin-when-cross-origin`: typings.nodeFetch.nodeFetchStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`origin-when-cross-origin`]
     
     inline def `same-origin`: typings.nodeFetch.nodeFetchStrings.`same-origin` = "same-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`same-origin`]
+    
+    inline def `strict-origin`: typings.nodeFetch.nodeFetchStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`strict-origin`]
+    
+    inline def `strict-origin-when-cross-origin`: typings.nodeFetch.nodeFetchStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`strict-origin-when-cross-origin`]
+    
+    inline def `unsafe-url`: typings.nodeFetch.nodeFetchStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`unsafe-url`]
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - typings.nodeFetch.mod.URLLike
-    - typings.nodeFetch.mod.Request
-  */
-  type RequestInfo = _RequestInfo | String
+  type RequestInfo = String | Request
   
   trait RequestInit extends StObject {
     
-    // node-fetch extensions
-    var agent: js.UndefOr[Agent | (js.Function1[/* parsedUrl */ URL_, Agent])] = js.undefined
+    // Node-fetch extensions to the whatwg/fetch spec
+    var agent: js.UndefOr[
+        Agent | Boolean | (js.Function1[/* parsedUrl */ URL, js.UndefOr[Agent | Boolean]])
+      ] = js.undefined
     
-    // whatwg/fetch standard options
-    var body: js.UndefOr[BodyInit] = js.undefined
+    /**
+    	 * A BodyInit object or null to set request's body.
+    	 */
+    var body: js.UndefOr[BodyInit | Null] = js.undefined
     
-    // =null http.Agent instance, allows custom proxy, certificate etc.
     var compress: js.UndefOr[Boolean] = js.undefined
     
-    // =true support gzip/deflate content encoding. false to disable
+    var counter: js.UndefOr[Double] = js.undefined
+    
     var follow: js.UndefOr[Double] = js.undefined
     
+    /**
+    	 * A Headers object, an object literal, or an array of two-item arrays to set request's headers.
+    	 */
     var headers: js.UndefOr[HeadersInit] = js.undefined
     
+    var highWaterMark: js.UndefOr[Double] = js.undefined
+    
+    var hostname: js.UndefOr[String] = js.undefined
+    
+    var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    	 * A string to set request's method.
+    	 */
     var method: js.UndefOr[String] = js.undefined
     
+    var port: js.UndefOr[Double] = js.undefined
+    
+    var protocol: js.UndefOr[String] = js.undefined
+    
+    /**
+    	 * A string indicating whether request follows redirects, results in an error upon encountering a redirect, or returns the redirect (in an opaque fashion). Sets request's redirect.
+    	 */
     var redirect: js.UndefOr[RequestRedirect] = js.undefined
     
+    /**
+    	 * A string whose value is a same-origin URL, "about:client", or the empty string, to set request’s referrer.
+    	 */
+    var referrer: js.UndefOr[String] = js.undefined
+    
+    /**
+    	 * A referrer policy to set request’s referrerPolicy.
+    	 */
+    var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
+    
+    /**
+    	 * An AbortSignal to set request's signal.
+    	 */
     var signal: js.UndefOr[AbortSignal | Null] = js.undefined
     
-    // =20 maximum redirect count. 0 to not follow redirect
     var size: js.UndefOr[Double] = js.undefined
-    
-    // =0 maximum response body size in bytes. 0 to disable
-    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RequestInit {
     
@@ -421,19 +555,25 @@ object mod {
     
     extension [Self <: RequestInit](x: Self) {
       
-      inline def setAgent(value: Agent | (js.Function1[/* parsedUrl */ URL_, Agent])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent | Boolean | (js.Function1[/* parsedUrl */ URL, js.UndefOr[Agent | Boolean]])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      inline def setAgentFunction1(value: /* parsedUrl */ URL_ => Agent): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
+      inline def setAgentFunction1(value: /* parsedUrl */ URL => js.UndefOr[Agent | Boolean]): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
       inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      
+      inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+      
+      inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
       
       inline def setFollow(value: Double): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
@@ -443,15 +583,41 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      
+      inline def setInsecureHTTPParser(value: Boolean): Self = StObject.set(x, "insecureHTTPParser", value.asInstanceOf[js.Any])
+      
+      inline def setInsecureHTTPParserUndefined: Self = StObject.set(x, "insecureHTTPParser", js.undefined)
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      
       inline def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
       inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      
+      inline def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      
+      inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -462,26 +628,7 @@ object mod {
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.nodeFetch.nodeFetchStrings.cors
-    - typings.nodeFetch.nodeFetchStrings.`no-cors`
-    - typings.nodeFetch.nodeFetchStrings.`same-origin`
-  */
-  trait RequestMode extends StObject
-  object RequestMode {
-    
-    inline def cors: typings.nodeFetch.nodeFetchStrings.cors = "cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cors]
-    
-    inline def `no-cors`: typings.nodeFetch.nodeFetchStrings.`no-cors` = "no-cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-cors`]
-    
-    inline def `same-origin`: typings.nodeFetch.nodeFetchStrings.`same-origin` = "same-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`same-origin`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -503,15 +650,9 @@ object mod {
     
     var headers: js.UndefOr[HeadersInit] = js.undefined
     
-    var size: js.UndefOr[Double] = js.undefined
-    
     var status: js.UndefOr[Double] = js.undefined
     
     var statusText: js.UndefOr[String] = js.undefined
-    
-    var timeout: js.UndefOr[Double] = js.undefined
-    
-    var url: js.UndefOr[String] = js.undefined
   }
   object ResponseInit {
     
@@ -526,12 +667,6 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
-      
-      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
@@ -539,14 +674,6 @@ object mod {
       inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
-      
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-      
-      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -573,46 +700,4 @@ object mod {
     
     inline def opaqueredirect: typings.nodeFetch.nodeFetchStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.nodeFetch.nodeFetchStrings.opaqueredirect]
   }
-  
-  trait SystemError
-    extends StObject
-       with Error {
-    
-    var code: js.UndefOr[String] = js.undefined
-  }
-  object SystemError {
-    
-    inline def apply(message: String, name: String): SystemError = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SystemError]
-    }
-    
-    extension [Self <: SystemError](x: Self) {
-      
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
-    }
-  }
-  
-  trait URLLike
-    extends StObject
-       with _RequestInfo {
-    
-    var href: String
-  }
-  object URLLike {
-    
-    inline def apply(href: String): URLLike = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-      __obj.asInstanceOf[URLLike]
-    }
-    
-    extension [Self <: URLLike](x: Self) {
-      
-      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait _RequestInfo extends StObject
 }

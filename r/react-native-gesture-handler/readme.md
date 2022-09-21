@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-gesture-handler
 
-Typings are for version 1.8.0
+Typings are for version 2.6.1
 
 ## Library description:
 Experimental implementation of a new declarative API for gesture handling in react-native
@@ -10,10 +10,10 @@ Experimental implementation of a new declarative API for gesture handling in rea
 | ------------------ | :-------------: |
 | Full name          | react-native-gesture-handler |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 414 |
-| # downloads        | 16494334 |
-| # stars            | 4 |
+| # releases         | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 2290088.0 |
+| # stars            | 5038.0 |
 
 ## Links
 - [Homepage](https://github.com/software-mansion/react-native-gesture-handler#readme)

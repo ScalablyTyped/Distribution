@@ -1,7 +1,7 @@
 
 # Scala.js typings for domelementtype
 
-Typings are for version 2.0.2
+Typings are for version 2.3.0
 
 ## Library description:
 all the types of nodes in htmlparser2's dom
@@ -9,11 +9,11 @@ all the types of nodes in htmlparser2's dom
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | domelementtype |
-| Keywords           | dom, htmlparser2 |
+| Keywords           | dom, element, types, htmlparser2 |
 | # releases         | 5 |
-| # dependents       | 91 |
-| # downloads        | 908392094 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.36384175E8 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/fb55/domelementtype#readme)

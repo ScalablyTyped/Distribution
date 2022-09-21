@@ -35,7 +35,7 @@ object EditAtom {
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

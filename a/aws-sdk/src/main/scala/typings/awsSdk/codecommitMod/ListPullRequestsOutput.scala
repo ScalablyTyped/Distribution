@@ -31,6 +31,6 @@ object ListPullRequestsOutput {
     
     inline def setPullRequestIds(value: PullRequestIdList): Self = StObject.set(x, "pullRequestIds", value.asInstanceOf[js.Any])
     
-    inline def setPullRequestIdsVarargs(value: PullRequestId*): Self = StObject.set(x, "pullRequestIds", js.Array(value :_*))
+    inline def setPullRequestIdsVarargs(value: PullRequestId*): Self = StObject.set(x, "pullRequestIds", js.Array(value*))
   }
 }

@@ -27,7 +27,7 @@ object SessionRequest {
     
     inline def setCapabilities(value: js.Array[Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "capabilities", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

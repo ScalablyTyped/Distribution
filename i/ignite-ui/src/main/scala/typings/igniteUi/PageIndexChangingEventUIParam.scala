@@ -19,7 +19,7 @@ trait PageIndexChangingEventUIParam extends StObject {
   /**
     * Gets reference to GridPaging.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object PageIndexChangingEventUIParam {
   
@@ -38,7 +38,7 @@ object PageIndexChangingEventUIParam {
     
     inline def setNewPageIndexUndefined: Self = StObject.set(x, "newPageIndex", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

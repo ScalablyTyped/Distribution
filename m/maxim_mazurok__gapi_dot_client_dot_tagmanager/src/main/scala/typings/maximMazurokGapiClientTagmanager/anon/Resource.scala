@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientTagmanager.anon
 
-import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Folder
+import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait Resource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Folder
+  var resource: Client
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  inline def apply(parent: String, resource: Folder): Resource = {
+  inline def apply(parent: String, resource: Client): Resource = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
@@ -94,7 +94,7 @@ object Resource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Folder): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Client): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

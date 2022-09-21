@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.datatransfer
 
+import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.datatransfer.XDataFormatTranslator
   * @see com.sun.star.datatransfer.DataFlavor Converts a {@link DataFlavor} to system data types and vice versa.
   */
-type DataFormatTranslator = typings.activexLibreoffice.com_.sun.star.datatransfer.XDataFormatTranslator
+type DataFormatTranslator = XDataFormatTranslator
 
 /**
   * Used to create an instance that implement the interface {@link XMimeContentType} from a string representation of such a MIME content-type that
   * conforms to [Rfc2045]{@link url="ftp://ftp.isi.edu/in-notes/rfc2045.txt"} and [Rfc2046]{@link url="ftp://ftp.isi.edu/in-notes/rfc2046.txt"} .
   * @see com.sun.star.datatransfer.XMimeContentTypeFactory
   */
-type MimeContentTypeFactory = typings.activexLibreoffice.com_.sun.star.datatransfer.XMimeContentTypeFactory
+type MimeContentTypeFactory = XMimeContentTypeFactory
 
 /**
   * Exception will be thrown if there is a request for data in a {@link DataFlavor} that is not supported by a data source.
   * @see com.sun.star.datatransfer.DataFlavor
   * @see com.sun.star.datatransfer.XTransferable
   */
-type UnsupportedFlavorException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type UnsupportedFlavorException = Exception

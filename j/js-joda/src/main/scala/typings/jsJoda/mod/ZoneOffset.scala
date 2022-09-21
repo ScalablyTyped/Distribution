@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ZoneOffset")
 @js.native
-/* private */ class ZoneOffset () extends ZoneId {
+/* private */ open class ZoneOffset () extends ZoneId {
   
   def adjustInto(temporal: Temporal): Temporal = js.native
   
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def getLong(field: TemporalField): Double = js.native
   
-  def query(query: TemporalQuery): js.Any = js.native
+  def query(query: TemporalQuery): Any = js.native
   
   def totalSeconds(): Double = js.native
 }

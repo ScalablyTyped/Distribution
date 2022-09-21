@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElasticsearchAction extends StObject {
   
   /**
-    * The endpoint of your Elasticsearch domain.
+    * The endpoint of your OpenSearch domain.
     */
   var endpoint: ElasticsearchEndpoint
   
@@ -17,12 +17,12 @@ trait ElasticsearchAction extends StObject {
   var id: ElasticsearchId
   
   /**
-    * The Elasticsearch index where you want to store your data.
+    * The index where you want to store your data.
     */
   var index: ElasticsearchIndex
   
   /**
-    * The IAM role ARN that has access to Elasticsearch.
+    * The IAM role ARN that has access to OpenSearch.
     */
   var roleArn: AwsArn
   

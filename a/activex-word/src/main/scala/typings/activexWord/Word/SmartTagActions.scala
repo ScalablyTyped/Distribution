@@ -12,9 +12,9 @@ trait SmartTagActions extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): SmartTagAction
+  def Item(Index: Any): SmartTagAction
   
-  val Parent: js.Any
+  val Parent: Any
   
   def ReloadActions(): Unit
   
@@ -27,8 +27,8 @@ object SmartTagActions {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => SmartTagAction,
-    Parent: js.Any,
+    Item: Any => SmartTagAction,
+    Parent: Any,
     ReloadActions: () => Unit,
     WordDotSmartTagActions_typekey: SmartTagActions
   ): SmartTagActions = {
@@ -45,9 +45,9 @@ object SmartTagActions {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => SmartTagAction): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => SmartTagAction): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReloadActions(value: () => Unit): Self = StObject.set(x, "ReloadActions", js.Any.fromFunction0(value))
     

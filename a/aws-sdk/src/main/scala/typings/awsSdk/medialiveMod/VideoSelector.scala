@@ -12,6 +12,11 @@ trait VideoSelector extends StObject {
   var ColorSpace: js.UndefOr[VideoSelectorColorSpace] = js.undefined
   
   /**
+    * Color space settings
+    */
+  var ColorSpaceSettings: js.UndefOr[VideoSelectorColorSpaceSettings] = js.undefined
+  
+  /**
     * Applies only if colorSpace is a value other than follow. This field controls how the value in the colorSpace field will be used. fallback means that when the input does include color space data, that data will be used, but when the input has no color space data, the value in colorSpace will be used. Choose fallback if your input is sometimes missing color space data, but when it does have color space data, that data is correct. force means to always use the value in colorSpace. Choose force if your input usually has no color space data or might have unreliable color space data.
     */
   var ColorSpaceUsage: js.UndefOr[VideoSelectorColorSpaceUsage] = js.undefined
@@ -31,6 +36,10 @@ object VideoSelector {
   extension [Self <: VideoSelector](x: Self) {
     
     inline def setColorSpace(value: VideoSelectorColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
+    
+    inline def setColorSpaceSettings(value: VideoSelectorColorSpaceSettings): Self = StObject.set(x, "ColorSpaceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setColorSpaceSettingsUndefined: Self = StObject.set(x, "ColorSpaceSettings", js.undefined)
     
     inline def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
     

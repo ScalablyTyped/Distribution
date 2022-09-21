@@ -12,7 +12,7 @@ trait PutEmailIdentityFeedbackAttributesRequest extends StObject {
   var EmailForwardingEnabled: js.UndefOr[Enabled] = js.undefined
   
   /**
-    * The email identity that you want to configure bounce and complaint feedback forwarding for.
+    * The email identity.
     */
   var EmailIdentity: Identity
 }

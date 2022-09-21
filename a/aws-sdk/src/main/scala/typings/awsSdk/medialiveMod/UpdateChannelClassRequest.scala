@@ -38,6 +38,6 @@ object UpdateChannelClassRequest {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value*))
   }
 }

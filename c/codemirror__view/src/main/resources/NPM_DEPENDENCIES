@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@codemirror/view" : "6.2.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@codemirror/view" : "6.2.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

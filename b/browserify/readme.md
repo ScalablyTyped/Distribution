@@ -10,15 +10,12 @@ browser-side require() the node way
 | ------------------ | :-------------: |
 | Full name          | browserify |
 | Keywords           | browser, require, commonjs, commonj-esque, bundle, npm, javascript |
-| # releases         | 7 |
-| # dependents       | 2587 |
-| # downloads        | 48352451 |
-| # stars            | 928 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9378664.0 |
+| # stars            | 14121.0 |
 
 ## Links
-- [Homepage](https://github.com/browserify/browserify#readme)
-- [Bugs](https://github.com/browserify/browserify/issues)
-- [Repository](https://github.com/browserify/browserify)
 - [Npm](https://www.npmjs.com/package/browserify)
     
 

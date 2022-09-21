@@ -10,10 +10,10 @@ object transferWithinAStationMod {
   
   @JSImport("material-ui/svg-icons/maps/transfer-within-a-station", JSImport.Default)
   @js.native
-  class default () extends MapsTransferWithinAStation
+  open class default () extends MapsTransferWithinAStation
   
   @JSImport("material-ui/svg-icons/maps/transfer-within-a-station", "MapsTransferWithinAStation")
   @js.native
-  class MapsTransferWithinAStation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsTransferWithinAStation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

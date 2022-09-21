@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRecoveryPointsByResourceInput extends StObject {
   
   /**
-    * The maximum number of items to be returned.
+    * The maximum number of items to be returned.  Amazon RDS requires a value of at least 20. 
     */
   var MaxResults: js.UndefOr[typings.awsSdk.backupMod.MaxResults] = js.undefined
   

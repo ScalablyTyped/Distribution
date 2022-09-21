@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NotifyMethods extends StObject {
   
-  var remove: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var remove: js.UndefOr[js.Function0[Any]] = js.undefined
 }
 object NotifyMethods {
   
@@ -17,7 +17,7 @@ object NotifyMethods {
   
   extension [Self <: NotifyMethods](x: Self) {
     
-    inline def setRemove(value: () => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Any): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }

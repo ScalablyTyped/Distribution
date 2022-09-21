@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ShapeFillType extends StObject
 /**
-  *
   * Specifies a shape's fill type.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeFillType")
@@ -18,7 +18,8 @@ object ShapeFillType extends StObject {
   
   /**
     * Gradient fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait gradient
@@ -27,7 +28,8 @@ object ShapeFillType extends StObject {
   
   /**
     * Mixed fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait mixed
@@ -36,7 +38,8 @@ object ShapeFillType extends StObject {
   
   /**
     * No fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait noFill
@@ -45,7 +48,8 @@ object ShapeFillType extends StObject {
   
   /**
     * Pattern fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait pattern
@@ -54,7 +58,8 @@ object ShapeFillType extends StObject {
   
   /**
     * Picture and texture fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait pictureAndTexture
@@ -63,7 +68,8 @@ object ShapeFillType extends StObject {
   
   /**
     * Solid fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait solid

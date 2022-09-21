@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object validateSelectorMod {
   
-  @JSImport("treat/lib/types/validateSelector", JSImport.Namespace)
+  @JSImport("treat/dist/declarations/src/validateSelector", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

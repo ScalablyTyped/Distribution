@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "GeolocateControl")
 @js.native
-class GeolocateControl () extends Control {
+open class GeolocateControl () extends Control {
   def this(options: typings.mapboxGl.anon.FitBoundsOptions) = this()
   
   def trigger(): Boolean = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("LoadingPanel")
 @js.native
-class LoadingPanel ()
+open class LoadingPanel ()
   extends StObject
      with typings.devexpressWeb.LoadingPanel {
   

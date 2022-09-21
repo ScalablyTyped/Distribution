@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-highlight", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[HighlightProps, ComponentState, js.Any] {
+  open class default protected () extends Component[HighlightProps, ComponentState, Any] {
     def this(props: HighlightProps) = this()
-    def this(props: HighlightProps, context: js.Any) = this()
+    def this(props: HighlightProps, context: Any) = this()
   }
   /**
     * Visually prettifies child code with highlight.js.
@@ -26,6 +26,8 @@ object mod extends Shortcut {
   val default: ComponentClass[HighlightProps, ComponentState] = js.native
   
   trait HighlightProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Language name to use as a class to signal type to highlight.js.
@@ -45,6 +47,10 @@ object mod extends Shortcut {
     }
     
     extension [Self <: HighlightProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

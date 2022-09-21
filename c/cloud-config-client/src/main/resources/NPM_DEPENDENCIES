@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cloud-config-client" : "1.6.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cloud-config-client" : "1.6.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

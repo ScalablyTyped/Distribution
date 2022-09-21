@@ -3,7 +3,6 @@ package typings.chrome.anon
 import typings.chrome.chrome.serial.ConnectionInfo
 import typings.chrome.chrome.serial.ConnectionOptions
 import typings.chrome.chrome.serial.DeviceInfo
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,11 @@ trait Typeofserial extends StObject {
   
   val onReceiveError: TypeofonReceiveError
   
-  def send(connectionId: Double, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ js.Object, Unit]): Unit
+  def send(
+    connectionId: Double,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function1[/* sendInfo */ js.Object, Unit]
+  ): Unit
   
   def setBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit
   
@@ -70,7 +73,7 @@ object Typeofserial {
     getInfo: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit,
     onReceive: TypeofonReceive,
     onReceiveError: TypeofonReceiveError,
-    send: (Double, ArrayBuffer, js.Function1[/* sendInfo */ js.Object, Unit]) => Unit,
+    send: (Double, js.typedarray.ArrayBuffer, js.Function1[/* sendInfo */ js.Object, Unit]) => Unit,
     setBreak: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit,
     setControlSignals: (Double, js.Object, js.Function1[/* result */ Boolean, Unit]) => Unit,
     setPaused: (Double, Boolean, js.Function0[Unit]) => Unit,
@@ -108,7 +111,7 @@ object Typeofserial {
     
     inline def setParityBit(value: EVEN): Self = StObject.set(x, "ParityBit", value.asInstanceOf[js.Any])
     
-    inline def setSend(value: (Double, ArrayBuffer, js.Function1[/* sendInfo */ js.Object, Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
+    inline def setSend(value: (Double, js.typedarray.ArrayBuffer, js.Function1[/* sendInfo */ js.Object, Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
     
     inline def setSetBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "setBreak", js.Any.fromFunction2(value))
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Geometry")
 @js.native
-class Geometry protected ()
+open class Geometry protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Geometry {
   /**
@@ -18,18 +18,50 @@ class Geometry protected ()
     * @param updatable defines if geometry must be updatable (false by default)
     * @param mesh defines the mesh that will be associated with the geometry
     */
+  def this(id: String) = this()
   def this(id: String, scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(id: String, scene: Unit, vertexData: typings.babylonjs.BABYLON.VertexData) = this()
   def this(
     id: String,
     scene: typings.babylonjs.BABYLON.Scene,
     vertexData: typings.babylonjs.BABYLON.VertexData
   ) = this()
+  def this(id: String, scene: Unit, vertexData: Unit, updatable: Boolean) = this()
+  def this(id: String, scene: Unit, vertexData: typings.babylonjs.BABYLON.VertexData, updatable: Boolean) = this()
   def this(id: String, scene: typings.babylonjs.BABYLON.Scene, vertexData: Unit, updatable: Boolean) = this()
   def this(
     id: String,
     scene: typings.babylonjs.BABYLON.Scene,
     vertexData: typings.babylonjs.BABYLON.VertexData,
     updatable: Boolean
+  ) = this()
+  def this(
+    id: String,
+    scene: Unit,
+    vertexData: Unit,
+    updatable: Boolean,
+    mesh: Nullable[typings.babylonjs.BABYLON.Mesh]
+  ) = this()
+  def this(
+    id: String,
+    scene: Unit,
+    vertexData: Unit,
+    updatable: Unit,
+    mesh: Nullable[typings.babylonjs.BABYLON.Mesh]
+  ) = this()
+  def this(
+    id: String,
+    scene: Unit,
+    vertexData: typings.babylonjs.BABYLON.VertexData,
+    updatable: Boolean,
+    mesh: Nullable[typings.babylonjs.BABYLON.Mesh]
+  ) = this()
+  def this(
+    id: String,
+    scene: Unit,
+    vertexData: typings.babylonjs.BABYLON.VertexData,
+    updatable: Unit,
+    mesh: Nullable[typings.babylonjs.BABYLON.Mesh]
   ) = this()
   def this(
     id: String,
@@ -89,7 +121,7 @@ object Geometry {
     * @param rootUrl defines the root url to use to load assets (like delayed data)
     * @returns the new geometry object
     */
-  inline def Parse(parsedVertexData: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.Geometry] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedVertexData.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Geometry]]
+  inline def Parse(parsedVertexData: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.Geometry] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedVertexData.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.Geometry]]
   
   /**
     * You should now use Tools.RandomId(), this method is still here for legacy reasons.
@@ -102,9 +134,18 @@ object Geometry {
   
   @JSGlobal("BABYLON.Geometry._CleanMatricesWeights")
   @js.native
-  def _CleanMatricesWeights: js.Any = js.native
-  inline def _CleanMatricesWeights_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanMatricesWeights")(x.asInstanceOf[js.Any])
+  def _CleanMatricesWeights: Any = js.native
+  inline def _CleanMatricesWeights_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanMatricesWeights")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
-  inline def _ImportGeometry(parsedGeometry: js.Any, mesh: typings.babylonjs.BABYLON.Mesh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ImportGeometry")(parsedGeometry.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSGlobal("BABYLON.Geometry._GetGeometryByLoadedUniqueId")
+  @js.native
+  def _GetGeometryByLoadedUniqueId: Any = js.native
+  inline def _GetGeometryByLoadedUniqueId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetGeometryByLoadedUniqueId")(x.asInstanceOf[js.Any])
+  
+  /**
+    * @param parsedGeometry
+    * @param mesh
+    * @hidden
+    */
+  inline def _ImportGeometry(parsedGeometry: Any, mesh: typings.babylonjs.BABYLON.Mesh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ImportGeometry")(parsedGeometry.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

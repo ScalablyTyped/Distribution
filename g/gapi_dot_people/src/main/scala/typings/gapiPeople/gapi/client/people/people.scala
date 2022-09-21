@@ -21,7 +21,7 @@ object people {
       
       inline def setResponses(value: js.Array[PersonResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
-      inline def setResponsesVarargs(value: PersonResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: PersonResponse*): Self = StObject.set(x, "responses", js.Array(value*))
     }
   }
   
@@ -29,7 +29,6 @@ object people {
     
     var personFields: String
     
-    // Query parameters
     var resourcesName: js.UndefOr[String] = js.undefined
   }
   object GetBatchGetParameters {
@@ -51,7 +50,6 @@ object people {
   
   trait GetParameters extends StObject {
     
-    // Query parameters
     var personFields: String
     
     var resourceName: String
@@ -102,7 +100,6 @@ object people {
       
       var pageSize: js.UndefOr[Double] = js.undefined
       
-      // Query parameters
       var pageToken: js.UndefOr[String] = js.undefined
       
       var personFields: String
@@ -146,16 +143,16 @@ object people {
     
     trait Response extends StObject {
       
-      var connections: js.Array[Person]
+      var connections: js.UndefOr[js.Array[Person]] = js.undefined
       
-      var nextPageToken: String
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var nextSyncToken: String
+      var nextSyncToken: js.UndefOr[String] = js.undefined
     }
     object Response {
       
-      inline def apply(connections: js.Array[Person], nextPageToken: String, nextSyncToken: String): Response = {
-        val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any], nextPageToken = nextPageToken.asInstanceOf[js.Any], nextSyncToken = nextSyncToken.asInstanceOf[js.Any])
+      inline def apply(): Response = {
+        val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Response]
       }
       
@@ -163,11 +160,17 @@ object people {
         
         inline def setConnections(value: js.Array[Person]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
         
-        inline def setConnectionsVarargs(value: Person*): Self = StObject.set(x, "connections", js.Array(value :_*))
+        inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+        
+        inline def setConnectionsVarargs(value: Person*): Self = StObject.set(x, "connections", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        
         inline def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
+        
+        inline def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
       }
     }
     

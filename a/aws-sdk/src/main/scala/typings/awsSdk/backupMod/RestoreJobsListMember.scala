@@ -19,7 +19,7 @@ trait RestoreJobsListMember extends StObject {
   /**
     * The date and time a job to restore a recovery point is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CompletionDate: js.UndefOr[timestamp] = js.undefined
+  var CompletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a resource. The format of the ARN depends on the resource type.
@@ -29,7 +29,7 @@ trait RestoreJobsListMember extends StObject {
   /**
     * The date and time a restore job is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The amount of time in minutes that a job restoring a recovery point is expected to take.
@@ -52,7 +52,7 @@ trait RestoreJobsListMember extends StObject {
   var RecoveryPointArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The resource type of the listed restore jobs; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. For VSS Windows backups, the only supported resource type is Amazon EC2.
+    * The resource type of the listed restore jobs; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. For Windows Volume Shadow Copy Service (VSS) backups, the only supported resource type is Amazon EC2.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.undefined
   
@@ -62,7 +62,7 @@ trait RestoreJobsListMember extends StObject {
   var RestoreJobId: js.UndefOr[String] = js.undefined
   
   /**
-    * A status code specifying the state of the job initiated by AWS Backup to restore a recovery point.
+    * A status code specifying the state of the job initiated by Backup to restore a recovery point.
     */
   var Status: js.UndefOr[RestoreJobStatus] = js.undefined
   
@@ -88,7 +88,7 @@ object RestoreJobsListMember {
     
     inline def setBackupSizeInBytesUndefined: Self = StObject.set(x, "BackupSizeInBytes", js.undefined)
     
-    inline def setCompletionDate(value: timestamp): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
@@ -96,7 +96,7 @@ object RestoreJobsListMember {
     
     inline def setCreatedResourceArnUndefined: Self = StObject.set(x, "CreatedResourceArn", js.undefined)
     
-    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

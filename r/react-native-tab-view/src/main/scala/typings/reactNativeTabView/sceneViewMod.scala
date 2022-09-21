@@ -2,30 +2,29 @@ package typings.reactNativeTabView
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import typings.reactNative.mod.Animated.AnimatedInterpolation
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeTabView.anon.Loading
-import typings.reactNativeTabView.reactNativeTabViewStrings.enter
 import typings.reactNativeTabView.typesMod.EventEmitterProps
 import typings.reactNativeTabView.typesMod.Layout
 import typings.reactNativeTabView.typesMod.Listener
 import typings.reactNativeTabView.typesMod.NavigationState
 import typings.reactNativeTabView.typesMod.Route
 import typings.reactNativeTabView.typesMod.SceneRendererProps
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sceneViewMod {
   
-  @JSImport("react-native-tab-view/lib/typescript/src/SceneView", JSImport.Default)
+  @JSImport("react-native-tab-view/lib/typescript/SceneView", JSImport.Default)
   @js.native
-  class default[T /* <: Route */] () extends SceneView[T]
+  open class default[T /* <: Route */] () extends SceneView[T]
   /* static members */
   object default {
     
-    @JSImport("react-native-tab-view/lib/typescript/src/SceneView", JSImport.Default)
+    @JSImport("react-native-tab-view/lib/typescript/SceneView", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
@@ -52,7 +51,7 @@ object sceneViewMod {
   object Props {
     
     inline def apply[T /* <: Route */](
-      addListener: (enter, Listener) => Unit,
+      addEnterListener: Listener => js.Function0[Unit],
       children: Loading => ReactNode,
       index: Double,
       jumpTo: String => Unit,
@@ -60,10 +59,9 @@ object sceneViewMod {
       `lazy`: Boolean,
       lazyPreloadDistance: Double,
       navigationState: NavigationState[T],
-      position: Node,
-      removeListener: (enter, Listener) => Unit
+      position: AnimatedInterpolation[Double | String]
     ): Props[T] = {
-      val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), children = js.Any.fromFunction1(children), index = index.asInstanceOf[js.Any], jumpTo = js.Any.fromFunction1(jumpTo), layout = layout.asInstanceOf[js.Any], lazyPreloadDistance = lazyPreloadDistance.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], removeListener = js.Any.fromFunction2(removeListener))
+      val __obj = js.Dynamic.literal(addEnterListener = js.Any.fromFunction1(addEnterListener), children = js.Any.fromFunction1(children), index = index.asInstanceOf[js.Any], jumpTo = js.Any.fromFunction1(jumpTo), layout = layout.asInstanceOf[js.Any], lazyPreloadDistance = lazyPreloadDistance.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props[T]]
     }
@@ -89,8 +87,7 @@ object sceneViewMod {
   }
   
   @js.native
-  trait SceneView[T /* <: Route */]
-    extends Component[Props[T], State, js.Any] {
+  trait SceneView[T /* <: Route */] extends Component[Props[T], State, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MSceneView(): Unit = js.native
@@ -101,10 +98,14 @@ object sceneViewMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSceneView(): Unit = js.native
     
-    /* private */ var handleEnter: js.Any = js.native
+    /* private */ var handleEnter: Any = js.native
     
     @JSName("state")
     var state_SceneView: Loading = js.native
+    
+    /* private */ var timerHandler: Any = js.native
+    
+    /* private */ var unsubscribe: Any = js.native
   }
   
   trait State extends StObject {

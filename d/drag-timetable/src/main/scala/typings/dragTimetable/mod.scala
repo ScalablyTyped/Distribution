@@ -14,30 +14,30 @@ object mod {
   
   @JSImport("drag-timetable", "TimetableInstance")
   @js.native
-  class TimetableInstance protected () extends StObject {
-    def this(contextObj: js.Any) = this()
+  open class TimetableInstance protected () extends StObject {
+    def this(contextObj: Any) = this()
     
-    def addTask(task: js.Any, isAddingToTimetable: Boolean): HTMLDivElement = js.native
+    def addTask(task: Any, isAddingToTimetable: Boolean): HTMLDivElement = js.native
     
-    def getTask(taskId: js.Any): js.Any = js.native
+    def getTask(taskId: Any): Any = js.native
     
-    def removeTask(taskId: js.Any): Unit = js.native
+    def removeTask(taskId: Any): Unit = js.native
     
-    def setClickCallback(clickCallback: js.Function1[/* task */ js.Any, Unit]): Unit = js.native
+    def setClickCallback(clickCallback: js.Function1[/* task */ Any, Unit]): Unit = js.native
     
-    def setMoveCallback(moveCallback: js.Function1[/* task */ js.Any, Unit]): Unit = js.native
+    def setMoveCallback(moveCallback: js.Function1[/* task */ Any, Unit]): Unit = js.native
   }
   
   @JSImport("drag-timetable", "TimetableTask")
   @js.native
-  class TimetableTask protected () extends StObject {
-    def this(task: js.Any, taskAreaSize: js.Any) = this()
+  open class TimetableTask protected () extends StObject {
+    def this(task: Any, taskAreaSize: Any) = this()
     
     def getTimeElement(): HTMLDivElement = js.native
     
     def updateTaskUI(): Unit = js.native
   }
   
-  inline def create(container: Null, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
-  inline def create(container: HTMLElement, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
+  inline def create(container: Null, options: Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
+  inline def create(container: HTMLElement, options: Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
 }

@@ -26,7 +26,7 @@ trait QuotaUser extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Immutable. The resource name for the service in the format 'projects/∗/locations/∗/namespaces/∗/services/ *'. */
+  /** Immutable. The resource name for the service in the format `projects/ *‍/locations/ *‍/namespaces/ *‍/services/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

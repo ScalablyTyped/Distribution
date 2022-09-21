@@ -25,12 +25,12 @@ object GoogleDevtoolsRemoteworkersV1test2Directory {
     
     inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    inline def setDirectoriesVarargs(value: GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata*): Self = StObject.set(x, "directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata*): Self = StObject.set(x, "directories", js.Array(value*))
     
     inline def setFiles(value: js.Array[GoogleDevtoolsRemoteworkersV1test2FileMetadata]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: GoogleDevtoolsRemoteworkersV1test2FileMetadata*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: GoogleDevtoolsRemoteworkersV1test2FileMetadata*): Self = StObject.set(x, "files", js.Array(value*))
   }
 }

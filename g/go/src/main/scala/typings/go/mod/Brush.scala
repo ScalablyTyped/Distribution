@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Construct a solid color Brush that holds the given color information.
   * @param {string=} color a well-formed CSS string describing a solid color brush; if not supplied uses 'black'.
   */
-class Brush () extends StObject {
+open class Brush () extends StObject {
   def this(color: String) = this()
   /**
     * Construct a Brush class of a given type.
@@ -55,7 +55,7 @@ class Brush () extends StObject {
   var endRadius: Double = js.native
   
   /**Gets or sets the pattern of a brush of type Brush.Pattern, an HTMLImageElement or HTMLCanvasElement or HTMLVideoElement.*/
-  var pattern: js.Any = js.native
+  var pattern: Any = js.native
   
   /**Gets or sets the starting location for a linear or radial gradient.*/
   var start: Spot = js.native

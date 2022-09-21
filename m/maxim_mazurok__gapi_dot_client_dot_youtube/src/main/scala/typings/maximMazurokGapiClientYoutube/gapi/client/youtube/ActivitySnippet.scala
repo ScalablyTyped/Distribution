@@ -22,7 +22,7 @@ trait ActivitySnippet extends StObject {
     */
   var groupId: js.UndefOr[String] = js.undefined
   
-  /** The date and time that the video was uploaded. The value is specified in ISO 8601 format. */
+  /** The date and time that the video was uploaded. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for invert-kv
 
-Typings are for version 3.0.1
+Typings are for version 4.2.0
 
 ## Library description:
 Invert the key/value of an object. Example: `{foo: 'bar'}` → `{bar: 'foo'}`
@@ -10,10 +10,10 @@ Invert the key/value of an object. Example: `{foo: 'bar'}` → `{bar: 'foo'}`
 | ------------------ | :-------------: |
 | Full name          | invert-kv |
 | Keywords           | object, key, value, invert, keys, values |
-| # releases         | 3 |
-| # dependents       | 83 |
-| # downloads        | 663194519 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5211542666666664E7 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/invert-kv#readme)

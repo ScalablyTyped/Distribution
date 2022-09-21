@@ -9,13 +9,13 @@ trait GenericPad
   extends StObject
      with Gamepad {
   
-  /* private */ var _buttons: js.Any = js.native
+  /* private */ var _buttons: Any = js.native
   
-  /* private */ var _onbuttondown: js.Any = js.native
+  /* private */ var _onbuttondown: Any = js.native
   
-  /* private */ var _onbuttonup: js.Any = js.native
+  /* private */ var _onbuttonup: Any = js.native
   
-  /* private */ var _setButtonValue: js.Any = js.native
+  /* private */ var _setButtonValue: Any = js.native
   
   /**
     * Observable triggered when a button has been pressed

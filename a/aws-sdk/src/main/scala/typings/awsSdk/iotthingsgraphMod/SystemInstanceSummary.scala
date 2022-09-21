@@ -14,7 +14,7 @@ trait SystemInstanceSummary extends StObject {
   /**
     * The date when the system instance was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the Greengrass group where the system instance is deployed.
@@ -49,7 +49,7 @@ trait SystemInstanceSummary extends StObject {
   /**
     *  The date and time when the system instance was last updated.
     */
-  var updatedAt: js.UndefOr[Timestamp] = js.undefined
+  var updatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object SystemInstanceSummary {
   
@@ -64,7 +64,7 @@ object SystemInstanceSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -92,7 +92,7 @@ object SystemInstanceSummary {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }

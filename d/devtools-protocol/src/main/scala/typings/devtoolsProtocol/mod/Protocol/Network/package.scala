@@ -1,18 +1,21 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Headers = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Headers = StringDictionary[String]
 
-type InterceptionId = java.lang.String
+type InterceptionId = String
 
-type LoaderId = java.lang.String
+type LoaderId = String
 
-type MonotonicTime = scala.Double
+type MonotonicTime = Double
 
-type RequestId = java.lang.String
+type ReportId = String
 
-type TimeSinceEpoch = scala.Double
+type RequestId = String
+
+type TimeSinceEpoch = Double

@@ -1,30 +1,20 @@
 package typings.sentryBrowser
 
-import typings.sentryTypes.transportMod.TransportOptions
+import typings.sentryBrowser.typesMod.BrowserTransportOptions
+import typings.sentryBrowser.utilsMod.FetchImpl
+import typings.sentryTypes.transportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportsMod {
   
-  @JSImport("@sentry/browser/dist/transports", "BaseTransport")
+  @JSImport("@sentry/browser/types/transports", JSImport.Namespace)
   @js.native
-  abstract class BaseTransport protected ()
-    extends typings.sentryBrowser.baseMod.BaseTransport {
-    def this(options: TransportOptions) = this()
-  }
+  val ^ : js.Any = js.native
   
-  @JSImport("@sentry/browser/dist/transports", "FetchTransport")
-  @js.native
-  class FetchTransport protected ()
-    extends typings.sentryBrowser.fetchMod.FetchTransport {
-    def this(options: TransportOptions) = this()
-  }
+  inline def makeFetchTransport(options: BrowserTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFetchTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def makeFetchTransport(options: BrowserTransportOptions, nativeFetch: FetchImpl): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFetchTransport")(options.asInstanceOf[js.Any], nativeFetch.asInstanceOf[js.Any])).asInstanceOf[Transport]
   
-  @JSImport("@sentry/browser/dist/transports", "XHRTransport")
-  @js.native
-  class XHRTransport protected ()
-    extends typings.sentryBrowser.xhrMod.XHRTransport {
-    def this(options: TransportOptions) = this()
-  }
+  inline def makeXHRTransport(options: BrowserTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeXHRTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
 }

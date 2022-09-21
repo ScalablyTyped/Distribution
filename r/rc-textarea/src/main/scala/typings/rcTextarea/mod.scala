@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("rc-textarea", JSImport.Default)
   @js.native
-  class default protected () extends TextArea {
+  open class default protected () extends TextArea {
     def this(props: TextAreaProps) = this()
   }
   object default {
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("rc-textarea", "ResizableTextArea")
   @js.native
-  class ResizableTextArea protected ()
+  open class ResizableTextArea protected ()
     extends typings.rcTextarea.resizableTextAreaMod.default {
     def this(props: TextAreaProps) = this()
   }
@@ -40,8 +40,7 @@ object mod {
   type HTMLTextareaProps = TextareaHTMLAttributes[HTMLTextAreaElement]
   
   @js.native
-  trait TextArea
-    extends Component[TextAreaProps, TextAreaState, js.Any] {
+  trait TextArea extends Component[TextAreaProps, TextAreaState, Any] {
     
     def blur(): Unit = js.native
     
@@ -100,18 +99,18 @@ object mod {
   
   trait TextAreaState extends StObject {
     
-    var value: js.Any
+    var value: Any
   }
   object TextAreaState {
     
-    inline def apply(value: js.Any): TextAreaState = {
+    inline def apply(value: Any): TextAreaState = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextAreaState]
     }
     
     extension [Self <: TextAreaState](x: Self) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

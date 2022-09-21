@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.JacobianElement")
 @js.native
-class JacobianElement ()
+open class JacobianElement ()
   extends StObject
      with typings.cannon.CANNON.JacobianElement {
   

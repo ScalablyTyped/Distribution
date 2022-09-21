@@ -18,7 +18,12 @@ trait HandleKind
   
   def handle(field: NormalizationLinkedField, record: Null, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
   def handle(field: NormalizationLinkedField, record: Unit, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
-  def handle(field: NormalizationLinkedField, record: Record, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
+  def handle(
+    field: NormalizationLinkedField,
+    record: Record[js.Object],
+    args: Variables,
+    store: ReadOnlyRecordSourceProxy
+  ): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
   
   var kind: pluralLinked = js.native
 }

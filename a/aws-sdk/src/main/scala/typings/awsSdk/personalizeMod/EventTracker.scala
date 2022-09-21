@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventTracker extends StObject {
   
   /**
-    * The Amazon AWS account that owns the event tracker.
+    * The Amazon Web Services account that owns the event tracker.
     */
   var accountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The date and time (in Unix format) that the event tracker was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.undefined
+  var creationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group that receives the event data.
@@ -29,7 +29,7 @@ trait EventTracker extends StObject {
   /**
     * The date and time (in Unix time) that the event tracker was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the event tracker.
@@ -59,7 +59,7 @@ object EventTracker {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
@@ -71,7 +71,7 @@ object EventTracker {
     
     inline def setEventTrackerArnUndefined: Self = StObject.set(x, "eventTrackerArn", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     

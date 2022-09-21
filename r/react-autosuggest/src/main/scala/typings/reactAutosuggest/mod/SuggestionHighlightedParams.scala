@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SuggestionHighlightedParams extends StObject {
   
-  var suggestion: js.Any
+  var suggestion: Any
 }
 object SuggestionHighlightedParams {
   
-  inline def apply(suggestion: js.Any): SuggestionHighlightedParams = {
+  inline def apply(suggestion: Any): SuggestionHighlightedParams = {
     val __obj = js.Dynamic.literal(suggestion = suggestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestionHighlightedParams]
   }
   
   extension [Self <: SuggestionHighlightedParams](x: Self) {
     
-    inline def setSuggestion(value: js.Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+    inline def setSuggestion(value: Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'images'> */
 trait ResizeNearestNeighborInputs extends StObject {
   
-  var images: js.UndefOr[js.Any] = js.undefined
+  var images: js.UndefOr[scala.Any] = js.undefined
 }
 object ResizeNearestNeighborInputs {
   
@@ -18,7 +18,7 @@ object ResizeNearestNeighborInputs {
   
   extension [Self <: ResizeNearestNeighborInputs](x: Self) {
     
-    inline def setImages(value: js.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: scala.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
   }

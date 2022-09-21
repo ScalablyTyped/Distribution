@@ -9,7 +9,7 @@ trait FlowDefinitionSummary extends StObject {
   /**
     * The timestamp when SageMaker created the flow definition.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The reason why the flow definition creation failed. A failure reason is returned only when the flow definition status is Failed.
@@ -34,7 +34,7 @@ trait FlowDefinitionSummary extends StObject {
 object FlowDefinitionSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     FlowDefinitionArn: FlowDefinitionArn,
     FlowDefinitionName: FlowDefinitionName,
     FlowDefinitionStatus: FlowDefinitionStatus
@@ -45,7 +45,7 @@ object FlowDefinitionSummary {
   
   extension [Self <: FlowDefinitionSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

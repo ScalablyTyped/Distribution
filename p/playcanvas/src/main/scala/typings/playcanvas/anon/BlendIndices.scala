@@ -35,37 +35,37 @@ object BlendIndices {
     
     inline def setBlendIndicesUndefined: Self = StObject.set(x, "blendIndices", js.undefined)
     
-    inline def setBlendIndicesVarargs(value: Double*): Self = StObject.set(x, "blendIndices", js.Array(value :_*))
+    inline def setBlendIndicesVarargs(value: Double*): Self = StObject.set(x, "blendIndices", js.Array(value*))
     
     inline def setBlendWeights(value: js.Array[Double]): Self = StObject.set(x, "blendWeights", value.asInstanceOf[js.Any])
     
     inline def setBlendWeightsUndefined: Self = StObject.set(x, "blendWeights", js.undefined)
     
-    inline def setBlendWeightsVarargs(value: Double*): Self = StObject.set(x, "blendWeights", js.Array(value :_*))
+    inline def setBlendWeightsVarargs(value: Double*): Self = StObject.set(x, "blendWeights", js.Array(value*))
     
     inline def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
     
     inline def setNormals(value: js.Array[Double]): Self = StObject.set(x, "normals", value.asInstanceOf[js.Any])
     
     inline def setNormalsUndefined: Self = StObject.set(x, "normals", js.undefined)
     
-    inline def setNormalsVarargs(value: Double*): Self = StObject.set(x, "normals", js.Array(value :_*))
+    inline def setNormalsVarargs(value: Double*): Self = StObject.set(x, "normals", js.Array(value*))
     
     inline def setTangents(value: js.Array[Double]): Self = StObject.set(x, "tangents", value.asInstanceOf[js.Any])
     
     inline def setTangentsUndefined: Self = StObject.set(x, "tangents", js.undefined)
     
-    inline def setTangentsVarargs(value: Double*): Self = StObject.set(x, "tangents", js.Array(value :_*))
+    inline def setTangentsVarargs(value: Double*): Self = StObject.set(x, "tangents", js.Array(value*))
     
     inline def setUvs(value: js.Array[Double]): Self = StObject.set(x, "uvs", value.asInstanceOf[js.Any])
     
@@ -73,10 +73,10 @@ object BlendIndices {
     
     inline def setUvs1Undefined: Self = StObject.set(x, "uvs1", js.undefined)
     
-    inline def setUvs1Varargs(value: Double*): Self = StObject.set(x, "uvs1", js.Array(value :_*))
+    inline def setUvs1Varargs(value: Double*): Self = StObject.set(x, "uvs1", js.Array(value*))
     
     inline def setUvsUndefined: Self = StObject.set(x, "uvs", js.undefined)
     
-    inline def setUvsVarargs(value: Double*): Self = StObject.set(x, "uvs", js.Array(value :_*))
+    inline def setUvsVarargs(value: Double*): Self = StObject.set(x, "uvs", js.Array(value*))
   }
 }

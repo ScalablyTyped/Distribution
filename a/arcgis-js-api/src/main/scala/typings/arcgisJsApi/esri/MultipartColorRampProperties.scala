@@ -11,7 +11,7 @@ trait MultipartColorRampProperties
   /**
     * Define an array of algorithmic color ramps used to generate the multi part ramp.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-MultipartColorRamp.html#colorRamps)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-MultipartColorRamp.html#colorRamps)
     */
   var colorRamps: js.UndefOr[js.Array[AlgorithmicColorRampProperties]] = js.undefined
 }
@@ -28,6 +28,6 @@ object MultipartColorRampProperties {
     
     inline def setColorRampsUndefined: Self = StObject.set(x, "colorRamps", js.undefined)
     
-    inline def setColorRampsVarargs(value: AlgorithmicColorRampProperties*): Self = StObject.set(x, "colorRamps", js.Array(value :_*))
+    inline def setColorRampsVarargs(value: AlgorithmicColorRampProperties*): Self = StObject.set(x, "colorRamps", js.Array(value*))
   }
 }

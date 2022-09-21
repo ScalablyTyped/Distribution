@@ -29,7 +29,7 @@ object ListInstanceFleetsOutput {
     
     inline def setInstanceFleetsUndefined: Self = StObject.set(x, "InstanceFleets", js.undefined)
     
-    inline def setInstanceFleetsVarargs(value: InstanceFleet*): Self = StObject.set(x, "InstanceFleets", js.Array(value :_*))
+    inline def setInstanceFleetsVarargs(value: InstanceFleet*): Self = StObject.set(x, "InstanceFleets", js.Array(value*))
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

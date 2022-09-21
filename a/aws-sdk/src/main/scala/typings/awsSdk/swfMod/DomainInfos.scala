@@ -27,7 +27,7 @@ object DomainInfos {
     
     inline def setDomainInfos(value: DomainInfoList): Self = StObject.set(x, "domainInfos", value.asInstanceOf[js.Any])
     
-    inline def setDomainInfosVarargs(value: DomainInfo*): Self = StObject.set(x, "domainInfos", js.Array(value :_*))
+    inline def setDomainInfosVarargs(value: DomainInfo*): Self = StObject.set(x, "domainInfos", js.Array(value*))
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

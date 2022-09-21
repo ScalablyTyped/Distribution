@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the fill formatting for a chart element.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartFill
@@ -17,8 +17,9 @@ trait ChartFill
      with ClientObject {
   
   /**
-    * Clear the fill color of a chart element.
+    * Clears the fill color of a chart element.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def clear(): Unit
@@ -30,9 +31,10 @@ trait ChartFill
   /**
     * Sets the fill formatting of a chart element to a uniform color.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
-    * @param color HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    * @param color HTML color code representing the color of the background, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     */
   def setSolidColor(color: String): Unit
   

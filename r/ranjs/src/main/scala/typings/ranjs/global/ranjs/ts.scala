@@ -8,7 +8,7 @@ object ts {
   
   @JSGlobal("ranjs.ts.AC")
   @js.native
-  class AC ()
+  open class AC ()
     extends typings.ranjs.mod.ts.AC {
     def this(dimension: Double) = this()
     def this(dimension: Double, range: Double) = this()
@@ -21,7 +21,7 @@ object ts {
   
   @JSGlobal("ranjs.ts.Cov")
   @js.native
-  class Cov ()
+  open class Cov ()
     extends typings.ranjs.mod.ts.Cov {
     def this(dimension: Double) = this()
   }

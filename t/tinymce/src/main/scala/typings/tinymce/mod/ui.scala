@@ -11,7 +11,7 @@ object ui {
   
   @JSImport("tinymce", "ui.Control")
   @js.native
-  class Control () extends StObject {
+  open class Control () extends StObject {
     
     @JSName("$el")
     var $el: JQuery[HTMLElement] = js.native
@@ -31,20 +31,20 @@ object ui {
   
   trait Container extends StObject {
     
-    def add(items: js.Any): Collection
+    def add(items: Any): Collection
     
     def items(): Collection
   }
   object Container {
     
-    inline def apply(add: js.Any => Collection, items: () => Collection): Container = {
+    inline def apply(add: Any => Collection, items: () => Collection): Container = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), items = js.Any.fromFunction0(items))
       __obj.asInstanceOf[Container]
     }
     
     extension [Self <: Container](x: Self) {
       
-      inline def setAdd(value: js.Any => Collection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Any => Collection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
       inline def setItems(value: () => Collection): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
     }
@@ -69,18 +69,18 @@ object ui {
   
   trait Factory extends StObject {
     
-    def create(settings: js.Any): Control
+    def create(settings: Any): Control
   }
   object Factory {
     
-    inline def apply(create: js.Any => Control): Factory = {
+    inline def apply(create: Any => Control): Factory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
       __obj.asInstanceOf[Factory]
     }
     
     extension [Self <: Factory](x: Self) {
       
-      inline def setCreate(value: js.Any => Control): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: Any => Control): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   

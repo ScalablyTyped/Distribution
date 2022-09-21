@@ -10,15 +10,12 @@ Generates cryptographically strong pseudo-random UIDs with custom size and base-
 | ------------------ | :-------------: |
 | Full name          | uid-generator |
 | Keywords           | uid, generator, random, token, unique, crypto, strong, base, encoding |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 185825 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 18400.0 |
+| # stars            | 21.0 |
 
 ## Links
-- [Homepage](https://github.com/nwoltman/node-uid-generator)
-- [Bugs](https://github.com/nwoltman/node-uid-generator/issues)
-- [Repository](https://github.com/nwoltman/node-uid-generator)
 - [Npm](https://www.npmjs.com/package/uid-generator)
     
 

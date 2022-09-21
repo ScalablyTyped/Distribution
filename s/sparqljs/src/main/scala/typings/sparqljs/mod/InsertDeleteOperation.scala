@@ -35,7 +35,7 @@ object InsertDeleteOperation {
     
     inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    inline def setDeleteVarargs(value: Quads*): Self = StObject.set(x, "delete", js.Array(value :_*))
+    inline def setDeleteVarargs(value: Quads*): Self = StObject.set(x, "delete", js.Array(value*))
     
     inline def setGraph(value: IriTerm): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object InsertDeleteOperation {
     
     inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    inline def setInsertVarargs(value: Quads*): Self = StObject.set(x, "insert", js.Array(value :_*))
+    inline def setInsertVarargs(value: Quads*): Self = StObject.set(x, "insert", js.Array(value*))
     
     inline def setUpdateType(value: insert | delete | deletewhere | insertdelete): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object InsertDeleteOperation {
     
     inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     
-    inline def setWhereVarargs(value: Pattern*): Self = StObject.set(x, "where", js.Array(value :_*))
+    inline def setWhereVarargs(value: Pattern*): Self = StObject.set(x, "where", js.Array(value*))
   }
 }

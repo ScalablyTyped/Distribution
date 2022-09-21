@@ -1,6 +1,5 @@
 package typings.webappsecCredentialManagement
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object CredentialType {
     __obj.asInstanceOf[typings.webappsecCredentialManagement.PasswordCredential]
   }
   
-  inline def PublicKeyCredential(id: String, rawId: ArrayBuffer, response: AuthenticatorResponse): typings.webappsecCredentialManagement.PublicKeyCredential = {
+  inline def PublicKeyCredential(id: String, rawId: js.typedarray.ArrayBuffer, response: AuthenticatorResponse): typings.webappsecCredentialManagement.PublicKeyCredential = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], rawId = rawId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public-key")
     __obj.asInstanceOf[typings.webappsecCredentialManagement.PublicKeyCredential]

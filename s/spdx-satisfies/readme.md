@@ -10,10 +10,10 @@ test whether SPDX expressions satisfy licensing criteria
 | ------------------ | :-------------: |
 | Full name          | spdx-satisfies |
 | Keywords           | SPDX, law, legal, license, metadata, package, package.json, standards |
-| # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 9396983 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1664470.6666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/kemitchell/spdx-satisfies.js#readme)

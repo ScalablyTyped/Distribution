@@ -829,7 +829,7 @@ object anon {
       
       inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
       
       inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
       

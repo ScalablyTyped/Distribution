@@ -1,7 +1,7 @@
 
 # Scala.js typings for consul
 
-Typings are for version v0.23.0
+Typings are for version v0.40.0
 
 ## Library description:
 Consul client
@@ -10,10 +10,10 @@ Consul client
 | ------------------ | :-------------: |
 | Full name          | consul |
 | Keywords           | consul |
-| # releases         | 5 |
-| # dependents       | 211 |
-| # downloads        | 2437492 |
-| # stars            | 20 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 238419.66666666666 |
+| # stars            | 531.0 |
 
 ## Links
 - [Homepage](https://github.com/silas/node-consul#readme)

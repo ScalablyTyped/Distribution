@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_Chain")
 @js.native
-class ClassChain protected ()
+open class ClassChain protected ()
   extends StObject
      with typings.fibjs.ClassChain {
   /**
@@ -17,5 +17,5 @@ class ClassChain protected ()
     * 
     * 
     */
-  def this(hdlrs: js.Array[js.Any]) = this()
+  def this(hdlrs: js.Array[Any]) = this()
 }

@@ -20,6 +20,9 @@ trait RichTextValue extends StObject {
   
   def getEndIndex(): Integer = js.native
   
+  def getLinkUrl(): String | Null = js.native
+  def getLinkUrl(startOffset: Integer, endOffset: Integer): String | Null = js.native
+  
   def getRuns(): js.Array[RichTextValue] = js.native
   
   def getStartIndex(): Integer = js.native

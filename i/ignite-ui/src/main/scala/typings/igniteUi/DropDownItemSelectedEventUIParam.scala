@@ -9,22 +9,22 @@ trait DropDownItemSelectedEventUIParam extends StObject {
   /**
     * Gets a reference to the editable input.
     */
-  var editorInput: js.UndefOr[js.Any] = js.undefined
+  var editorInput: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the list item which is selected.
     */
-  var item: js.UndefOr[js.Any] = js.undefined
+  var item: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the list container.
     */
-  var list: js.UndefOr[js.Any] = js.undefined
+  var list: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the editor.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object DropDownItemSelectedEventUIParam {
   
@@ -35,19 +35,19 @@ object DropDownItemSelectedEventUIParam {
   
   extension [Self <: DropDownItemSelectedEventUIParam](x: Self) {
     
-    inline def setEditorInput(value: js.Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
+    inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     
     inline def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

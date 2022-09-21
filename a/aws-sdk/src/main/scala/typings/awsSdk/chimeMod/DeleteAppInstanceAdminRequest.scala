@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteAppInstanceAdminRequest extends StObject {
   
   /**
-    * The ARN of the app instance's administrator.
+    * The ARN of the AppInstance's administrator.
     */
   var AppInstanceAdminArn: ChimeArn
   
   /**
-    * The ARN of the app instance.
+    * The ARN of the AppInstance.
     */
   var AppInstanceArn: ChimeArn
 }

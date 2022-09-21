@@ -22,6 +22,8 @@ object badgeMod extends Shortcut {
   
   trait BadgeProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.undefined
@@ -29,7 +31,7 @@ object badgeMod extends Shortcut {
     /** Number to show in badge */
     var count: js.UndefOr[ReactNode] = js.undefined
     
-    /** whether to show red dot without number */
+    /** Whether to show red dot without number */
     var dot: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
@@ -61,6 +63,10 @@ object badgeMod extends Shortcut {
     }
     
     extension [Self <: BadgeProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -20,8 +20,8 @@ trait AnimationTransitionMetadata
   var expr: String | (js.Function4[
     /* fromState */ String, 
     /* toState */ String, 
-    /* element */ js.UndefOr[js.Any], 
-    /* params */ js.UndefOr[StringDictionary[js.Any]], 
+    /* element */ js.UndefOr[Any], 
+    /* params */ js.UndefOr[StringDictionary[Any]], 
     Boolean
   ])
   
@@ -39,8 +39,8 @@ object AnimationTransitionMetadata {
     expr: String | (js.Function4[
       /* fromState */ String, 
       /* toState */ String, 
-      /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[StringDictionary[js.Any]], 
+      /* element */ js.UndefOr[Any], 
+      /* params */ js.UndefOr[StringDictionary[Any]], 
       Boolean
     ]),
     `type`: AnimationMetadataType
@@ -54,20 +54,20 @@ object AnimationTransitionMetadata {
     
     inline def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    inline def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
+    inline def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value*))
     
     inline def setExpr(
       value: String | (js.Function4[
           /* fromState */ String, 
           /* toState */ String, 
-          /* element */ js.UndefOr[js.Any], 
-          /* params */ js.UndefOr[StringDictionary[js.Any]], 
+          /* element */ js.UndefOr[Any], 
+          /* params */ js.UndefOr[StringDictionary[Any]], 
           Boolean
         ])
     ): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     inline def setExprFunction4(
-      value: (/* fromState */ String, /* toState */ String, /* element */ js.UndefOr[js.Any], /* params */ js.UndefOr[StringDictionary[js.Any]]) => Boolean
+      value: (/* fromState */ String, /* toState */ String, /* element */ js.UndefOr[Any], /* params */ js.UndefOr[StringDictionary[Any]]) => Boolean
     ): Self = StObject.set(x, "expr", js.Any.fromFunction4(value))
     
     inline def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])

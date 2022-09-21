@@ -10,10 +10,10 @@ trait IPropertyType extends StObject {
   def BeginValidateNormalizeConvert(
     recordKey: Double,
     fieldKey: String,
-    newValue: js.Any,
+    newValue: Any,
     bIsLocalized: Boolean,
     fnCallback: js.Function1[/* args */ DataValue, Unit],
-    fnError: js.Any
+    fnError: Any
   ): Unit
   
   var ID: String
@@ -21,7 +21,7 @@ trait IPropertyType extends StObject {
 object IPropertyType {
   
   inline def apply(
-    BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
+    BeginValidateNormalizeConvert: (Double, String, Any, Boolean, js.Function1[/* args */ DataValue, Unit], Any) => Unit,
     ID: String
   ): IPropertyType = {
     val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6(BeginValidateNormalizeConvert), ID = ID.asInstanceOf[js.Any])
@@ -30,7 +30,7 @@ object IPropertyType {
   
   extension [Self <: IPropertyType](x: Self) {
     
-    inline def setBeginValidateNormalizeConvert(value: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit): Self = StObject.set(x, "BeginValidateNormalizeConvert", js.Any.fromFunction6(value))
+    inline def setBeginValidateNormalizeConvert(value: (Double, String, Any, Boolean, js.Function1[/* args */ DataValue, Unit], Any) => Unit): Self = StObject.set(x, "BeginValidateNormalizeConvert", js.Any.fromFunction6(value))
     
     inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
   }

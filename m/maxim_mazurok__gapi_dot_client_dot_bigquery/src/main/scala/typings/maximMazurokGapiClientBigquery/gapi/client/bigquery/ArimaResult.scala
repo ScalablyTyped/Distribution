@@ -25,12 +25,12 @@ object ArimaResult {
     
     inline def setArimaModelInfoUndefined: Self = StObject.set(x, "arimaModelInfo", js.undefined)
     
-    inline def setArimaModelInfoVarargs(value: ArimaModelInfo*): Self = StObject.set(x, "arimaModelInfo", js.Array(value :_*))
+    inline def setArimaModelInfoVarargs(value: ArimaModelInfo*): Self = StObject.set(x, "arimaModelInfo", js.Array(value*))
     
     inline def setSeasonalPeriods(value: js.Array[String]): Self = StObject.set(x, "seasonalPeriods", value.asInstanceOf[js.Any])
     
     inline def setSeasonalPeriodsUndefined: Self = StObject.set(x, "seasonalPeriods", js.undefined)
     
-    inline def setSeasonalPeriodsVarargs(value: String*): Self = StObject.set(x, "seasonalPeriods", js.Array(value :_*))
+    inline def setSeasonalPeriodsVarargs(value: String*): Self = StObject.set(x, "seasonalPeriods", js.Array(value*))
   }
 }

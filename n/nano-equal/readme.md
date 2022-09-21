@@ -10,10 +10,10 @@ Ultra fast and compact implementation of deep equal without any production depen
 | ------------------ | :-------------: |
 | Full name          | nano-equal |
 | Keywords           | equal, deep equal |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 68606 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1940.3333333333333 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/smelukov/nano-equal#readme)

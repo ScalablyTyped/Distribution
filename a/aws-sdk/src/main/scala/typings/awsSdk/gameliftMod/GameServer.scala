@@ -32,7 +32,7 @@ trait GameServer extends StObject {
   var GameServerGroupName: js.UndefOr[typings.awsSdk.gameliftMod.GameServerGroupName] = js.undefined
   
   /**
-    * A custom string that uniquely identifies the game server. Game server IDs are developer-defined and are unique across all game server groups in an AWS account.
+    * A custom string that uniquely identifies the game server. Game server IDs are developer-defined and are unique across all game server groups in an Amazon Web Services account.
     */
   var GameServerId: js.UndefOr[typings.awsSdk.gameliftMod.GameServerId] = js.undefined
   
@@ -44,17 +44,17 @@ trait GameServer extends StObject {
   /**
     * Timestamp that indicates the last time the game server was claimed with a ClaimGameServer request. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057"). This value is used to calculate when a claimed game server's status should revert to null.
     */
-  var LastClaimTime: js.UndefOr[Timestamp] = js.undefined
+  var LastClaimTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Timestamp that indicates the last time the game server was updated with health status using an UpdateGameServer request. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057"). After game server registration, this property is only changed when a game server update specifies a health check value.
     */
-  var LastHealthCheckTime: js.UndefOr[Timestamp] = js.undefined
+  var LastHealthCheckTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Timestamp that indicates when the game server was created with a RegisterGameServer request. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var RegistrationTime: js.UndefOr[Timestamp] = js.undefined
+  var RegistrationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates whether the game server is currently available for new games or is busy. Possible statuses include:    AVAILABLE - The game server is available to be claimed. A game server that has been claimed remains in this status until it reports game hosting activity.     UTILIZED - The game server is currently hosting a game session with players.   
@@ -98,15 +98,15 @@ object GameServer {
     
     inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    inline def setLastClaimTime(value: Timestamp): Self = StObject.set(x, "LastClaimTime", value.asInstanceOf[js.Any])
+    inline def setLastClaimTime(value: js.Date): Self = StObject.set(x, "LastClaimTime", value.asInstanceOf[js.Any])
     
     inline def setLastClaimTimeUndefined: Self = StObject.set(x, "LastClaimTime", js.undefined)
     
-    inline def setLastHealthCheckTime(value: Timestamp): Self = StObject.set(x, "LastHealthCheckTime", value.asInstanceOf[js.Any])
+    inline def setLastHealthCheckTime(value: js.Date): Self = StObject.set(x, "LastHealthCheckTime", value.asInstanceOf[js.Any])
     
     inline def setLastHealthCheckTimeUndefined: Self = StObject.set(x, "LastHealthCheckTime", js.undefined)
     
-    inline def setRegistrationTime(value: Timestamp): Self = StObject.set(x, "RegistrationTime", value.asInstanceOf[js.Any])
+    inline def setRegistrationTime(value: js.Date): Self = StObject.set(x, "RegistrationTime", value.asInstanceOf[js.Any])
     
     inline def setRegistrationTimeUndefined: Self = StObject.set(x, "RegistrationTime", js.undefined)
     

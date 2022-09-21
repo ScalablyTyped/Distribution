@@ -5,6 +5,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -15,36 +16,45 @@ object contextMenuTargetWrapperMod {
   
   @JSImport("@blueprintjs/table/lib/esm/common/contextMenuTargetWrapper", "ContextMenuTargetWrapper")
   @js.native
-  class ContextMenuTargetWrapper protected ()
-    extends PureComponent[IContextMenuTargetWrapper, js.Object, js.Any] {
+  open class ContextMenuTargetWrapper protected ()
+    extends PureComponent[IContextMenuTargetWrapper, js.Object, Any] {
     def this(props: IContextMenuTargetWrapper) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IContextMenuTargetWrapper, context: js.Any) = this()
+    def this(props: IContextMenuTargetWrapper, context: Any) = this()
     
-    def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): Element = js.native
+    def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): js.UndefOr[Element] = js.native
   }
   
   trait IContextMenuTargetWrapper
     extends StObject
        with IProps {
     
-    def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): Element
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    def renderContextMenu(e: MouseEvent[HTMLElement, NativeMouseEvent]): js.UndefOr[Element]
     
     var style: CSSProperties
   }
   object IContextMenuTargetWrapper {
     
-    inline def apply(renderContextMenu: MouseEvent[HTMLElement, NativeMouseEvent] => Element, style: CSSProperties): IContextMenuTargetWrapper = {
+    inline def apply(
+      renderContextMenu: MouseEvent[HTMLElement, NativeMouseEvent] => js.UndefOr[Element],
+      style: CSSProperties
+    ): IContextMenuTargetWrapper = {
       val __obj = js.Dynamic.literal(renderContextMenu = js.Any.fromFunction1(renderContextMenu), style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[IContextMenuTargetWrapper]
     }
     
     extension [Self <: IContextMenuTargetWrapper](x: Self) {
       
-      inline def setRenderContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Element): Self = StObject.set(x, "renderContextMenu", js.Any.fromFunction1(value))
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setRenderContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => js.UndefOr[Element]): Self = StObject.set(x, "renderContextMenu", js.Any.fromFunction1(value))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }

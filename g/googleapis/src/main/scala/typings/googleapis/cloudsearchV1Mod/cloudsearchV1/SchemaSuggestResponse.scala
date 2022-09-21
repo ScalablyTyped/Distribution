@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response of the suggest API.
-  */
 trait SchemaSuggestResponse extends StObject {
   
   /**
-    * List of suggestion results.
+    * List of suggestions.
     */
   var suggestResults: js.UndefOr[js.Array[SchemaSuggestResult]] = js.undefined
 }
@@ -27,6 +24,6 @@ object SchemaSuggestResponse {
     
     inline def setSuggestResultsUndefined: Self = StObject.set(x, "suggestResults", js.undefined)
     
-    inline def setSuggestResultsVarargs(value: SchemaSuggestResult*): Self = StObject.set(x, "suggestResults", js.Array(value :_*))
+    inline def setSuggestResultsVarargs(value: SchemaSuggestResult*): Self = StObject.set(x, "suggestResults", js.Array(value*))
   }
 }

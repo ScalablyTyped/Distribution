@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object enumsMod {
   
-  @JSImport("class-transformer/enums", "TransformationType")
+  @JSImport("class-transformer/types/enums", "TransformationType")
   @js.native
   object TransformationType extends StObject {
     

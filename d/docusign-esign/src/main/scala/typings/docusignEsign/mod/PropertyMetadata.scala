@@ -32,7 +32,7 @@ object PropertyMetadata {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setRights(value: String): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
     

@@ -4,21 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The matching enterprise resources.
-  */
 trait SchemaEnterprisesListResponse extends StObject {
   
   /**
     * An enterprise.
     */
   var enterprise: js.UndefOr[js.Array[SchemaEnterprise]] = js.undefined
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#enterprisesListResponse&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaEnterprisesListResponse {
   
@@ -33,10 +24,6 @@ object SchemaEnterprisesListResponse {
     
     inline def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
     
-    inline def setEnterpriseVarargs(value: SchemaEnterprise*): Self = StObject.set(x, "enterprise", js.Array(value :_*))
-    
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setEnterpriseVarargs(value: SchemaEnterprise*): Self = StObject.set(x, "enterprise", js.Array(value*))
   }
 }

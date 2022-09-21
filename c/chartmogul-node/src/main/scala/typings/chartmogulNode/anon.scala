@@ -124,7 +124,7 @@ object anon {
       
       inline def setCustom(value: js.Array[NewCustomAttributes]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      inline def setCustomVarargs(value: NewCustomAttributes*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: NewCustomAttributes*): Self = StObject.set(x, "custom", js.Array(value*))
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
@@ -145,7 +145,7 @@ object anon {
       
       inline def setCustom(value: js.Array[NewCustomAttributes]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      inline def setCustomVarargs(value: NewCustomAttributes*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: NewCustomAttributes*): Self = StObject.set(x, "custom", js.Array(value*))
     }
   }
   
@@ -164,7 +164,7 @@ object anon {
       
       inline def setCustom(value: Strings): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      inline def setCustomVarargs(value: String*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: String*): Self = StObject.set(x, "custom", js.Array(value*))
     }
   }
   
@@ -183,7 +183,7 @@ object anon {
       
       inline def setInvoices(value: js.Array[Invoice]): Self = StObject.set(x, "invoices", value.asInstanceOf[js.Any])
       
-      inline def setInvoicesVarargs(value: Invoice*): Self = StObject.set(x, "invoices", js.Array(value :_*))
+      inline def setInvoicesVarargs(value: Invoice*): Self = StObject.set(x, "invoices", js.Array(value*))
     }
   }
 }

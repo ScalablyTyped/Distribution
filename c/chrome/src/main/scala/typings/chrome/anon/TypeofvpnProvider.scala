@@ -6,7 +6,6 @@ import typings.chrome.chrome.vpnProvider.VpnPacketReceptionEvent
 import typings.chrome.chrome.vpnProvider.VpnPlatformMessageEvent
 import typings.chrome.chrome.vpnProvider.VpnSessionParameters
 import typings.chrome.chrome.vpnProvider.VpnUiEvent
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,8 +31,8 @@ trait TypeofvpnProvider extends StObject {
   
   var onUIEvent: VpnUiEvent = js.native
   
-  def sendPacket(data: ArrayBuffer): Unit = js.native
-  def sendPacket(data: ArrayBuffer, callback: js.Function): Unit = js.native
+  def sendPacket(data: js.typedarray.ArrayBuffer): Unit = js.native
+  def sendPacket(data: js.typedarray.ArrayBuffer, callback: js.Function): Unit = js.native
   
   def setParameters(parameters: VpnSessionParameters, callback: js.Function): Unit = js.native
 }

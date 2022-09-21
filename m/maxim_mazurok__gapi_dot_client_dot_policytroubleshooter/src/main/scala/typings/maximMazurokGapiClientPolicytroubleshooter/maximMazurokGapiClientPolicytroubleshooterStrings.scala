@@ -11,6 +11,10 @@ object maximMazurokGapiClientPolicytroubleshooterStrings {
   inline def GoogleCloudPolicytroubleshooterV1BindingExplanation: GoogleCloudPolicytroubleshooterV1BindingExplanation = "GoogleCloudPolicytroubleshooterV1BindingExplanation".asInstanceOf[GoogleCloudPolicytroubleshooterV1BindingExplanation]
   
   @js.native
+  sealed trait GoogleRpcStatus extends StObject
+  inline def GoogleRpcStatus: GoogleRpcStatus = "GoogleRpcStatus".asInstanceOf[GoogleRpcStatus]
+  
+  @js.native
   sealed trait policytroubleshooter extends StObject
   inline def policytroubleshooter: policytroubleshooter = "policytroubleshooter".asInstanceOf[policytroubleshooter]
   

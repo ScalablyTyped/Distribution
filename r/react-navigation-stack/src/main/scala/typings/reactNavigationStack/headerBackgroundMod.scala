@@ -1,6 +1,5 @@
 package typings.reactNavigationStack
 
-import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.Animated.WithAnimatedValue
 import typings.reactNative.mod.StyleProp
@@ -22,8 +21,6 @@ object headerBackgroundMod {
     extends StObject
        with ViewProps {
     
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
     @JSName("style")
     var style_Props: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   }
@@ -35,10 +32,6 @@ object headerBackgroundMod {
     }
     
     extension [Self <: Props](x: Self) {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

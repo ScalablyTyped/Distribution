@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SlicerItem")
 @js.native
-/* private */ class SlicerItem ()
+/* private */ open class SlicerItem ()
   extends StObject
      with typings.activexExcel.Excel.SlicerItem {
   
@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Selected: Boolean = js.native
   
   /* CompleteClass */
-  override val SourceName: js.Any = js.native
+  override val SourceName: Any = js.native
   
   /* CompleteClass */
   override val SourceNameStandard: String = js.native

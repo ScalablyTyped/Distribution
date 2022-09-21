@@ -10,10 +10,10 @@ Hooking Node.js stdout
 | ------------------ | :-------------: |
 | Full name          | intercept-stdout |
 | Keywords           | stdout, stderr |
-| # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 923485 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 161744.0 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/sfarthin/intercept-stdout)

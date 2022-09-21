@@ -38,7 +38,7 @@ trait IHighlightLayerOptions extends StObject {
   var isStroke: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Enforces a fixed size texture to ensure resize independant blur.
+    * Enforces a fixed size texture to ensure resize independent blur.
     */
   var mainTextureFixedSize: js.UndefOr[Double] = js.undefined
   

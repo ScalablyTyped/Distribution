@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.MeshLODLevel")
 @js.native
-class MeshLODLevel protected ()
+open class MeshLODLevel protected ()
   extends StObject
      with typings.babylonjs.BABYLON.MeshLODLevel {
   /**
     * Creates a new LOD level
-    * @param distance defines the distance where this level should star being displayed
+    * @param distanceOrScreenCoverage defines either the distance or the screen coverage where this level should start being displayed
     * @param mesh defines the mesh to use to render this level
     */
   def this(
-    /** Defines the distance where this level should start being displayed */
-  distance: Double,
+    /** Either distance from the center of the object to show this level or the screen coverage if `useLODScreenCoverage` is set to `true` on the mesh*/
+  distanceOrScreenCoverage: Double,
     /** Defines the mesh to use to render this level */
   mesh: Nullable[typings.babylonjs.BABYLON.Mesh]
   ) = this()
   
-  /** Defines the distance where this level should start being displayed */
+  /** Either distance from the center of the object to show this level or the screen coverage if `useLODScreenCoverage` is set to `true` on the mesh*/
   /* CompleteClass */
-  var distance: Double = js.native
+  var distanceOrScreenCoverage: Double = js.native
   
   /** Defines the mesh to use to render this level */
   /* CompleteClass */

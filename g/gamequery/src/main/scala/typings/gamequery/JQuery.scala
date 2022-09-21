@@ -42,7 +42,7 @@ trait JQuery extends StObject {
   def clearScenegraph(): JQuery = js.native
   
   def collision(): JQuery = js.native
-  def collision(query: js.Any): JQuery = js.native
+  def collision(query: Any): JQuery = js.native
   
   def fliph(): JQuery = js.native
   def fliph(flip: Boolean): JQuery = js.native
@@ -80,9 +80,9 @@ trait JQuery extends StObject {
   
   def setAnimation(): JQuery = js.native
   def setAnimation(animation: Double): JQuery = js.native
-  def setAnimation(animation: Double, callback: js.Function0[js.Any]): JQuery = js.native
+  def setAnimation(animation: Double, callback: js.Function0[Any]): JQuery = js.native
   def setAnimation(animation: Animation): JQuery = js.native
-  def setAnimation(animation: Animation, callback: js.Function0[js.Any]): JQuery = js.native
+  def setAnimation(animation: Animation, callback: js.Function0[Any]): JQuery = js.native
   
   def startGame(): JQuery = js.native
   def startGame(callback: js.Function0[Unit]): JQuery = js.native

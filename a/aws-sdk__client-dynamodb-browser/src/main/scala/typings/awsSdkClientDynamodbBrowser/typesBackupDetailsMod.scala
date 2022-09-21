@@ -5,7 +5,6 @@ import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.CR
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.DELETED
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.SYSTEM
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.USER
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,12 +21,12 @@ object typesBackupDetailsMod {
     /**
       * <p>Time at which the backup was created. This is the request time of the backup. </p>
       */
-    var BackupCreationDateTime: Date | String | Double
+    var BackupCreationDateTime: js.Date | String | Double
     
     /**
       * <p>Time at which the automatic on-demand backup created by DynamoDB will expire. This <code>SYSTEM</code> on-demand backup expires automatically 35 days after its creation.</p>
       */
-    var BackupExpiryDateTime: js.UndefOr[Date | String | Double] = js.undefined
+    var BackupExpiryDateTime: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Name of the requested backup.</p>
@@ -53,7 +52,7 @@ object typesBackupDetailsMod {
     
     inline def apply(
       BackupArn: String,
-      BackupCreationDateTime: Date | String | Double,
+      BackupCreationDateTime: js.Date | String | Double,
       BackupName: String,
       BackupStatus: CREATING | DELETED | AVAILABLE | String,
       BackupType: USER | SYSTEM | String
@@ -66,9 +65,9 @@ object typesBackupDetailsMod {
       
       inline def setBackupArn(value: String): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
-      inline def setBackupCreationDateTime(value: Date | String | Double): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupCreationDateTime(value: js.Date | String | Double): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
       
-      inline def setBackupExpiryDateTime(value: Date | String | Double): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupExpiryDateTime(value: js.Date | String | Double): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
       
       inline def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
       
@@ -92,19 +91,19 @@ object typesBackupDetailsMod {
       * <p>Time at which the backup was created. This is the request time of the backup. </p>
       */
     @JSName("BackupCreationDateTime")
-    var BackupCreationDateTime_UnmarshalledBackupDetails: Date
+    var BackupCreationDateTime_UnmarshalledBackupDetails: js.Date
     
     /**
       * <p>Time at which the automatic on-demand backup created by DynamoDB will expire. This <code>SYSTEM</code> on-demand backup expires automatically 35 days after its creation.</p>
       */
     @JSName("BackupExpiryDateTime")
-    var BackupExpiryDateTime_UnmarshalledBackupDetails: js.UndefOr[Date] = js.undefined
+    var BackupExpiryDateTime_UnmarshalledBackupDetails: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledBackupDetails {
     
     inline def apply(
       BackupArn: String,
-      BackupCreationDateTime: Date,
+      BackupCreationDateTime: js.Date,
       BackupName: String,
       BackupStatus: CREATING | DELETED | AVAILABLE | String,
       BackupType: USER | SYSTEM | String
@@ -115,9 +114,9 @@ object typesBackupDetailsMod {
     
     extension [Self <: UnmarshalledBackupDetails](x: Self) {
       
-      inline def setBackupCreationDateTime(value: Date): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupCreationDateTime(value: js.Date): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
       
-      inline def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupExpiryDateTime(value: js.Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
       
       inline def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
     }

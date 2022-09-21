@@ -10,7 +10,7 @@ object projectBadgesMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectBadges", "ProjectBadges")
   @js.native
-  class ProjectBadges protected () extends ResourceBadges {
+  open class ProjectBadges protected () extends ResourceBadges {
     def this(options: BaseServiceOptions) = this()
   }
 }

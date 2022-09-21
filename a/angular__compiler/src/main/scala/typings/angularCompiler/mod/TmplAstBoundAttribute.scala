@@ -1,99 +1,118 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.astMod.BindingType
-import typings.angularCompiler.coreMod.SecurityContext
-import typings.angularCompiler.i18nAstMod.I18nMeta
-import typings.angularCompiler.r3AstMod.BoundAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "TmplAstBoundAttribute")
 @js.native
-class TmplAstBoundAttribute protected ()
-  extends typings.angularCompiler.compilerMod.TmplAstBoundAttribute {
+open class TmplAstBoundAttribute protected ()
+  extends StObject
+     with TmplAstNode {
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.AST,
+    value: AST,
     unit: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.AST,
+    value: AST,
     unit: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.AST,
+    value: AST,
     unit: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.AST,
+    value: AST,
     unit: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.AST,
+    value: AST,
     unit: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
     valueSpan: Unit,
-    i18n: I18nMeta
+    i18n: I18nMeta2
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.AST,
+    value: AST,
     unit: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: I18nMeta
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan,
+    i18n: I18nMeta2
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.AST,
+    value: AST,
     unit: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
     valueSpan: Unit,
-    i18n: I18nMeta
+    i18n: I18nMeta2
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.AST,
+    value: AST,
     unit: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: I18nMeta
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan,
+    i18n: I18nMeta2
   ) = this()
+  
+  var i18n: js.UndefOr[I18nMeta2] = js.native
+  
+  val keySpan: ParseSourceSpan = js.native
+  
+  var name: String = js.native
+  
+  var securityContext: SecurityContext = js.native
+  
+  /* CompleteClass */
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  var `type`: BindingType = js.native
+  
+  var unit: String | Null = js.native
+  
+  var value: AST = js.native
+  
+  var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
+  
+  /* CompleteClass */
+  override def visit[Result](visitor: Visitor3[Result]): Result = js.native
 }
 /* static members */
 object TmplAstBoundAttribute {
@@ -102,6 +121,6 @@ object TmplAstBoundAttribute {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromBoundElementProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): BoundAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[BoundAttribute]
-  inline def fromBoundElementProperty(prop: typings.angularCompiler.astMod.BoundElementProperty, i18n: I18nMeta): BoundAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[BoundAttribute]
+  inline def fromBoundElementProperty(prop: BoundElementProperty): TmplAstBoundAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[TmplAstBoundAttribute]
+  inline def fromBoundElementProperty(prop: BoundElementProperty, i18n: I18nMeta2): TmplAstBoundAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[TmplAstBoundAttribute]
 }

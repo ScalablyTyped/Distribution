@@ -14,12 +14,32 @@ trait Daylight
   /**
     * Controls whether the widget displays a date or a season picker.
     *
+    * @default "date"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#dateOrSeason)
     */
   var dateOrSeason: season | date = js.native
   
   /**
+    * Indicates the heading level to use for the widget title.
+    *
+    * @default 3
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
+  
+  /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#iconClass)
+    */
+  var iconClass: String = js.native
+  
+  /**
     * Controls the speed of the daytime and date animation.
+    *
+    * @default 1.0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#playSpeedMultiplier)
     */
@@ -27,6 +47,8 @@ trait Daylight
   
   /**
     * Sets steps, or intervals, on the time slider to restrict the times of the day that can be selected when dragging the thumb.
+    *
+    * @default 5
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#timeSliderSteps)
     */

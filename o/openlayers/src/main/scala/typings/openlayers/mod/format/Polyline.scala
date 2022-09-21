@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     Optional configuration object.
   * @api stable
   */
-class Polyline () extends TextFeature {
+open class Polyline () extends TextFeature {
   def this(opt_options: PolylineOptions) = this()
   
   def readFeature(source: String): typings.openlayers.mod.Feature = js.native

@@ -10,10 +10,10 @@ JavaScript structural search, replace, and refactor
 | ------------------ | :-------------: |
 | Full name          | grasp |
 | Keywords           | javascript, search, replace, refactor, structural, ast |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 14672 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 371.3333333333333 |
+| # stars            | 1273.0 |
 
 ## Links
 - [Homepage](http://graspjs.com)

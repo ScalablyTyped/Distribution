@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("event-iterator/lib/dom", JSImport.Default)
   @js.native
-  class default[T] protected ()
+  open class default[T] protected ()
     extends typings.eventIterator.eventIteratorMod.EventIterator[T] {
     def this(listen: ListenHandler[T]) = this()
     def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
@@ -25,7 +25,7 @@ object mod {
   
   @JSImport("event-iterator/lib/dom", "EventIterator")
   @js.native
-  class EventIterator[T] protected ()
+  open class EventIterator[T] protected ()
     extends typings.eventIterator.eventIteratorMod.EventIterator[T] {
     def this(listen: ListenHandler[T]) = this()
     def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()

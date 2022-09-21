@@ -16,5 +16,5 @@ object ojthemeutilsMod {
   
   inline def getThemeTargetPlatform(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeTargetPlatform")().asInstanceOf[String | Null]
   
-  inline def parseJSONFromFontFamily(selector: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONFromFontFamily")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parseJSONFromFontFamily(selector: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONFromFontFamily")(selector.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

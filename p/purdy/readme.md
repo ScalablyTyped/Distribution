@@ -10,10 +10,10 @@ Pretty print objects in real purdy colors. Allows clearer visualization of objec
 | ------------------ | :-------------: |
 | Full name          | purdy |
 | Keywords           | ansi, terminal, colors, pretty, print, color |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 220098 |
-| # stars            | 21 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 39487.666666666664 |
+| # stars            | 132.0 |
 
 ## Links
 - [Homepage](https://github.com/danielb2/purdy.js)

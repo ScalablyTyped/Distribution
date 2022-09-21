@@ -30,6 +30,6 @@ object AuthCode {
     
     inline def setAuthSucessScope(value: js.Array[String]): Self = StObject.set(x, "authSucessScope", value.asInstanceOf[js.Any])
     
-    inline def setAuthSucessScopeVarargs(value: String*): Self = StObject.set(x, "authSucessScope", js.Array(value :_*))
+    inline def setAuthSucessScopeVarargs(value: String*): Self = StObject.set(x, "authSucessScope", js.Array(value*))
   }
 }

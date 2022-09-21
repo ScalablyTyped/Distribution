@@ -9,14 +9,16 @@ object mockErrorMod {
   
   @JSImport("xhr-mock/lib/MockError", "MockError")
   @js.native
-  class MockError protected ()
+  open class MockError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

@@ -10,10 +10,10 @@ The lodash method `_.difference` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.difference |
 | Keywords           | lodash-modularized, difference |
-| # releases         | 0 |
-| # dependents       | 244 |
-| # downloads        | 112468185 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9425672E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

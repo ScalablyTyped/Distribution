@@ -23,64 +23,64 @@ object panZoomInteractionMod {
     * @param {TransformableScale} [xScale] The x-scale to update on panning/zooming.
     * @param {TransformableScale} [yScale] The y-scale to update on panning/zooming.
     */
-  class PanZoom () extends Interaction {
-    def this(xScale: TransformableScale[js.Any, Double]) = this()
-    def this(xScale: Unit, yScale: TransformableScale[js.Any, Double]) = this()
-    def this(xScale: TransformableScale[js.Any, Double], yScale: TransformableScale[js.Any, Double]) = this()
+  open class PanZoom () extends Interaction {
+    def this(xScale: TransformableScale[Any, Double]) = this()
+    def this(xScale: Unit, yScale: TransformableScale[Any, Double]) = this()
+    def this(xScale: TransformableScale[Any, Double], yScale: TransformableScale[Any, Double]) = this()
     
-    /* private */ def _constrainedTranslation(scale: js.Any, translation: js.Any): js.Any = js.native
+    /* private */ var _constrainedTranslation: Any = js.native
     
-    /* private */ def _constrainedZoom(scale: js.Any, zoomAmount: js.Any, centerPoint: js.Any): js.Any = js.native
+    /* private */ var _constrainedZoom: Any = js.native
     
-    /* private */ var _dragInteraction: js.Any = js.native
+    /* private */ var _dragInteraction: Any = js.native
     
-    /* private */ def _handlePinch(ids: js.Any, idToPoint: js.Any, e: js.Any): js.Any = js.native
+    /* private */ var _handlePinch: Any = js.native
     
-    /* private */ def _handleTouchEnd(ids: js.Any, idToPoint: js.Any, e: js.Any): js.Any = js.native
+    /* private */ var _handleTouchEnd: Any = js.native
     
-    /* private */ def _handleTouchStart(ids: js.Any, idToPoint: js.Any, e: js.Any): js.Any = js.native
+    /* private */ var _handleTouchStart: Any = js.native
     
-    /* private */ def _handleWheelEvent(p: js.Any, e: js.Any): js.Any = js.native
+    /* private */ var _handleWheelEvent: Any = js.native
     
-    /* private */ var _maxDomainExtents: js.Any = js.native
+    /* private */ var _maxDomainExtents: Any = js.native
     
-    /* private */ var _maxDomainValues: js.Any = js.native
+    /* private */ var _maxDomainValues: Any = js.native
     
-    /* private */ var _minDomainExtents: js.Any = js.native
+    /* private */ var _minDomainExtents: Any = js.native
     
-    /* private */ var _minDomainValues: js.Any = js.native
+    /* private */ var _minDomainValues: Any = js.native
     
-    /* private */ var _mouseDispatcher: js.Any = js.native
+    /* private */ var _mouseDispatcher: Any = js.native
     
-    /* private */ def _nonLinearScaleWithExtents(scale: js.Any): js.Any = js.native
+    /* private */ var _nonLinearScaleWithExtents: Any = js.native
     
-    /* private */ var _panEndCallbacks: js.Any = js.native
+    /* private */ var _panEndCallbacks: Any = js.native
     
-    /* private */ var _panZoomUpdateCallbacks: js.Any = js.native
+    /* private */ var _panZoomUpdateCallbacks: Any = js.native
     
-    /* private */ def _setupDragInteraction(): js.Any = js.native
+    /* private */ var _setupDragInteraction: Any = js.native
     
-    /* private */ var _touchCancelCallback: js.Any = js.native
+    /* private */ var _touchCancelCallback: Any = js.native
     
-    /* private */ var _touchDispatcher: js.Any = js.native
+    /* private */ var _touchDispatcher: Any = js.native
     
-    /* private */ var _touchEndCallback: js.Any = js.native
+    /* private */ var _touchEndCallback: Any = js.native
     
-    /* private */ var _touchIds: js.Any = js.native
+    /* private */ var _touchIds: Any = js.native
     
-    /* private */ var _touchMoveCallback: js.Any = js.native
+    /* private */ var _touchMoveCallback: Any = js.native
     
-    /* private */ var _touchStartCallback: js.Any = js.native
+    /* private */ var _touchStartCallback: Any = js.native
     
-    /* private */ var _wheelCallback: js.Any = js.native
+    /* private */ var _wheelCallback: Any = js.native
     
-    /* private */ var _wheelFilter: js.Any = js.native
+    /* private */ var _wheelFilter: Any = js.native
     
-    /* private */ var _xScales: js.Any = js.native
+    /* private */ var _xScales: Any = js.native
     
-    /* private */ var _yScales: js.Any = js.native
+    /* private */ var _yScales: Any = js.native
     
-    /* private */ var _zoomEndCallbacks: js.Any = js.native
+    /* private */ var _zoomEndCallbacks: Any = js.native
     
     /**
       * Adds an x scale to this PanZoom Interaction
@@ -88,7 +88,7 @@ object panZoomInteractionMod {
       * @param {TransformableScale} An x scale to add
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def addXScale(xScale: TransformableScale[js.Any, Double]): this.type = js.native
+    def addXScale(xScale: TransformableScale[Any, Double]): this.type = js.native
     
     /**
       * Adds a y scale to this PanZoom Interaction
@@ -96,7 +96,7 @@ object panZoomInteractionMod {
       * @param {TransformableScale} A y scale to add
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def addYScale(yScale: TransformableScale[js.Any, Double]): this.type = js.native
+    def addYScale(yScale: TransformableScale[Any, Double]): this.type = js.native
     
     /**
       * Get the backing drag interaction. Useful to customize the panzoom interaction.
@@ -114,7 +114,7 @@ object panZoomInteractionMod {
       * @param {TransformableScale} scale The scale to query
       * @returns {number} The maximum numerical domain extent for the scale.
       */
-    def maxDomainExtent(scale: TransformableScale[js.Any, Double]): Double = js.native
+    def maxDomainExtent(scale: TransformableScale[Any, Double]): Double = js.native
     /**
       * Sets the maximum domain extent for the scale, specifying the maximum
       * allowable amount between the ends of the domain.
@@ -131,7 +131,7 @@ object panZoomInteractionMod {
       * the scale.
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def maxDomainExtent(scale: TransformableScale[js.Any, Double], maxDomainExtent: Double): this.type = js.native
+    def maxDomainExtent(scale: TransformableScale[Any, Double], maxDomainExtent: Double): this.type = js.native
     
     /**
       * Gets the maximum domain value for the scale, constraining the pan/zoom
@@ -147,7 +147,7 @@ object panZoomInteractionMod {
       * @param {TransformableScale} scale The scale to query
       * @returns {number} The maximum domain value for the scale.
       */
-    def maxDomainValue(scale: TransformableScale[js.Any, Double]): Double = js.native
+    def maxDomainValue(scale: TransformableScale[Any, Double]): Double = js.native
     /**
       * Sets the maximum domain value for the scale, constraining the pan/zoom
       * interaction to a maximum value in the domain.
@@ -163,7 +163,7 @@ object panZoomInteractionMod {
       * @param {number} maxDomainExtent The maximum domain value for the scale.
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def maxDomainValue(scale: TransformableScale[js.Any, Double], maxDomainValue: Double): this.type = js.native
+    def maxDomainValue(scale: TransformableScale[Any, Double], maxDomainValue: Double): this.type = js.native
     
     /**
       * Gets the minimum domain extent for the scale, specifying the minimum
@@ -175,7 +175,7 @@ object panZoomInteractionMod {
       * @param {TransformableScale} scale The scale to query
       * @returns {number} The minimum numerical domain extent for the scale.
       */
-    def minDomainExtent(scale: TransformableScale[js.Any, Double]): Double = js.native
+    def minDomainExtent(scale: TransformableScale[Any, Double]): Double = js.native
     /**
       * Sets the minimum domain extent for the scale, specifying the minimum
       * allowable amount between the ends of the domain.
@@ -188,7 +188,7 @@ object panZoomInteractionMod {
       * the scale.
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def minDomainExtent(scale: TransformableScale[js.Any, Double], minDomainExtent: Double): this.type = js.native
+    def minDomainExtent(scale: TransformableScale[Any, Double], minDomainExtent: Double): this.type = js.native
     
     /**
       * Gets the minimum domain value for the scale, constraining the pan/zoom
@@ -204,7 +204,7 @@ object panZoomInteractionMod {
       * @param {TransformableScale} scale The scale to query
       * @returns {number} The minimum domain value for the scale.
       */
-    def minDomainValue(scale: TransformableScale[js.Any, Double]): Double = js.native
+    def minDomainValue(scale: TransformableScale[Any, Double]): Double = js.native
     /**
       * Sets the minimum domain value for the scale, constraining the pan/zoom
       * interaction to a minimum value in the domain.
@@ -220,7 +220,7 @@ object panZoomInteractionMod {
       * @param {number} minDomainExtent The minimum domain value for the scale.
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def minDomainValue(scale: TransformableScale[js.Any, Double], minDomainValue: Double): this.type = js.native
+    def minDomainValue(scale: TransformableScale[Any, Double], minDomainValue: Double): this.type = js.native
     
     /**
       * Removes a callback that would be called when panning ends.
@@ -284,7 +284,7 @@ object panZoomInteractionMod {
       * @param {TransformableScale} An x scale to remove
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def removeXScale(xScale: TransformableScale[js.Any, Double]): this.type = js.native
+    def removeXScale(xScale: TransformableScale[Any, Double]): this.type = js.native
     
     /**
       * Removes a y scale from this PanZoom Interaction
@@ -292,7 +292,7 @@ object panZoomInteractionMod {
       * @param {TransformableScale} A y scale to remove
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def removeYScale(yScale: TransformableScale[js.Any, Double]): this.type = js.native
+    def removeYScale(yScale: TransformableScale[Any, Double]): this.type = js.native
     
     /**
       * Uses the current domain of the scale to apply a minimum and maximum
@@ -301,7 +301,7 @@ object panZoomInteractionMod {
       * This constrains the pan/zoom interaction to show no more than the domain
       * of the scale.
       */
-    def setMinMaxDomainValuesTo(scale: TransformableScale[js.Any, Double]): this.type = js.native
+    def setMinMaxDomainValuesTo(scale: TransformableScale[Any, Double]): this.type = js.native
     
     /**
       * Get the current mouse wheel filter.
@@ -317,24 +317,24 @@ object panZoomInteractionMod {
     /**
       * Gets the x scales for this PanZoom Interaction.
       */
-    def xScales(): js.Array[TransformableScale[js.Any, Double]] = js.native
+    def xScales(): js.Array[TransformableScale[Any, Double]] = js.native
     /**
       * Sets the x scales for this PanZoom Interaction.
       *
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def xScales(xScales: js.Array[TransformableScale[js.Any, Double]]): this.type = js.native
+    def xScales(xScales: js.Array[TransformableScale[Any, Double]]): this.type = js.native
     
     /**
       * Gets the y scales for this PanZoom Interaction.
       */
-    def yScales(): js.Array[TransformableScale[js.Any, Double]] = js.native
+    def yScales(): js.Array[TransformableScale[Any, Double]] = js.native
     /**
       * Sets the y scales for this PanZoom Interaction.
       *
       * @returns {Interactions.PanZoom} The calling PanZoom Interaction.
       */
-    def yScales(yScales: js.Array[TransformableScale[js.Any, Double]]): this.type = js.native
+    def yScales(yScales: js.Array[TransformableScale[Any, Double]]): this.type = js.native
     
     /**
       * Zooms the chart by a specified amount around a specific point
@@ -364,10 +364,13 @@ object panZoomInteractionMod {
       */
     @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom._PIXELS_PER_LINE")
     @js.native
-    def _PIXELS_PER_LINE: js.Any = js.native
-    inline def _PIXELS_PER_LINE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
+    def _PIXELS_PER_LINE: Any = js.native
+    inline def _PIXELS_PER_LINE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
     
-    inline def _pointDistance(point1: js.Any, point2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointDistance")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom._pointDistance")
+    @js.native
+    def _pointDistance: Any = js.native
+    inline def _pointDistance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_pointDistance")(x.asInstanceOf[js.Any])
     
     inline def centerPoint(point1: Point, point2: Point): X = (^.asInstanceOf[js.Dynamic].applyDynamic("centerPoint")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[X]
   }

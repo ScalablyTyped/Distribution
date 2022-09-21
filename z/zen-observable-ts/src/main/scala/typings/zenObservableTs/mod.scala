@@ -1,56 +1,37 @@
 package typings.zenObservableTs
 
 import typings.std.ArrayLike
-import typings.zenObservableTs.typesMod.ZenObservable.ObservableLike
-import typings.zenObservableTs.zenObservableMod.Observable
-import typings.zenObservableTs.zenObservableMod.Subscriber
+import typings.zenObservable.mod.^
+import typings.zenObservable.mod.global.ZenObservable.ObservableLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  object default {
-    
-    @JSImport("zen-observable-ts", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def from[R](observable: ArrayLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
-    inline def from[R](observable: ObservableLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
-    inline def from[R](observable: Observable[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
-    
-    inline def of[R](args: R*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(args.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @JSImport("zen-observable-ts", "Observable")
+  @js.native
+  open class Observable[T] protected () extends ^[T] {
+    def this(subscriber: typings.zenObservable.mod.global.ZenObservable.Subscriber[T]) = this()
   }
-  
   object Observable {
     
     @JSImport("zen-observable-ts", "Observable")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from[R](observable: ArrayLike[R]): typings.zenObservableTs.zenObservableMod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[typings.zenObservableTs.zenObservableMod.Observable[R]]
-    inline def from[R](observable: ObservableLike[R]): typings.zenObservableTs.zenObservableMod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[typings.zenObservableTs.zenObservableMod.Observable[R]]
-    inline def from[R](observable: typings.zenObservableTs.zenObservableMod.Observable[R]): typings.zenObservableTs.zenObservableMod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[typings.zenObservableTs.zenObservableMod.Observable[R]]
+    inline def from[R](observable: ArrayLike[R]): typings.zenObservable.mod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[typings.zenObservable.mod.Observable[R]]
+    /* static member */
+    inline def from[R](observable: typings.zenObservable.mod.Observable[R]): typings.zenObservable.mod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[typings.zenObservable.mod.Observable[R]]
+    inline def from[R](observable: ObservableLike[R]): typings.zenObservable.mod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[typings.zenObservable.mod.Observable[R]]
     
-    inline def of[R](args: R*): typings.zenObservableTs.zenObservableMod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(args.asInstanceOf[js.Any]).asInstanceOf[typings.zenObservableTs.zenObservableMod.Observable[R]]
+    /* static member */
+    inline def of[R](items: R*): typings.zenObservable.mod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.zenObservable.mod.Observable[R]]
   }
   
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("zen-observable-ts", "Observable")
-  @js.native
-  class ObservableCls[T] protected ()
-    extends StObject
-       with Observable[T] {
-    def this(subscriber: Subscriber[T]) = this()
-  }
+  type Observer[T] = typings.zenObservable.mod.global.ZenObservable.Observer[T]
   
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("zen-observable-ts", JSImport.Default)
-  @js.native
-  class defaultCls[T] protected ()
-    extends StObject
-       with Observable[T] {
-    def this(subscriber: Subscriber[T]) = this()
-  }
+  type Subscriber[T] = typings.zenObservable.mod.global.ZenObservable.Subscriber[T]
+  
+  type Subscription = typings.zenObservable.mod.global.ZenObservable.Subscription
 }

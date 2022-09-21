@@ -21,10 +21,10 @@ object Cardinal {
     
     inline def setCardinal(value: js.Array[String]): Self = StObject.set(x, "cardinal", value.asInstanceOf[js.Any])
     
-    inline def setCardinalVarargs(value: String*): Self = StObject.set(x, "cardinal", js.Array(value :_*))
+    inline def setCardinalVarargs(value: String*): Self = StObject.set(x, "cardinal", js.Array(value*))
     
     inline def setOrdinal(value: js.Array[String]): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
-    inline def setOrdinalVarargs(value: String*): Self = StObject.set(x, "ordinal", js.Array(value :_*))
+    inline def setOrdinalVarargs(value: String*): Self = StObject.set(x, "ordinal", js.Array(value*))
   }
 }

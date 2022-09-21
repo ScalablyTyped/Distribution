@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("braintree", "BraintreeGateway")
 @js.native
-class BraintreeGateway protected () extends StObject {
+open class BraintreeGateway protected () extends StObject {
   def this(config: GatewayConfig) = this()
   
   var addOn: AddOnGateway = js.native
@@ -15,7 +15,7 @@ class BraintreeGateway protected () extends StObject {
   
   var clientToken: ClientTokenGateway = js.native
   
-  var config: js.Any = js.native
+  var config: Any = js.native
   
   var creditCard: CreditCardGateway = js.native
   

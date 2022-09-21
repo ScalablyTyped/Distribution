@@ -11,9 +11,9 @@ Adds an isDeprecated method to the React.PropTypes object
 | Full name          | react-is-deprecated |
 | Keywords           | react, propTypes, isDeprecated |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 1362983 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 75849.66666666667 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/Aweary/react-is-deprecated#readme)

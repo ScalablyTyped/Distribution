@@ -14,6 +14,9 @@ trait ApplePushNotificationCertificate
   // Not yet documented
   var certificate: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Certificate serial number. This property is read-only.
+  var certificateSerialNumber: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The expiration date and time for Apple push notification certificate.
   var expirationDateTime: js.UndefOr[String] = js.undefined
   
@@ -41,6 +44,12 @@ object ApplePushNotificationCertificate {
     inline def setCertificate(value: NullableOption[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     inline def setCertificateNull: Self = StObject.set(x, "certificate", null)
+    
+    inline def setCertificateSerialNumber(value: NullableOption[String]): Self = StObject.set(x, "certificateSerialNumber", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateSerialNumberNull: Self = StObject.set(x, "certificateSerialNumber", null)
+    
+    inline def setCertificateSerialNumberUndefined: Self = StObject.set(x, "certificateSerialNumber", js.undefined)
     
     inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     

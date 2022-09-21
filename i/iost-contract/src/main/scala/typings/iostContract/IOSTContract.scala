@@ -150,8 +150,8 @@ object IOSTContract {
     def mapPut(key: String, field: String, value: String): Unit = js.native
     def mapPut(key: String, field: String, value: String, payer: String): Unit = js.native
     
-    def put(key: String, value: String): js.Any = js.native
-    def put(key: String, value: String, payer: String): js.Any = js.native
+    def put(key: String, value: String): Any = js.native
+    def put(key: String, value: String, payer: String): Any = js.native
   }
   
   @js.native

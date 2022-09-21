@@ -5,8 +5,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Generates small preview images of symbols.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html)
+  */
 @js.native
 trait symbolUtils extends StObject {
+  
+  /**
+    * Returns a color representing the input [graphic's](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) symbol.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#getDisplayedColor)
+    */
+  def getDisplayedColor(graphic: Graphic): js.Promise[Color_] = js.native
+  def getDisplayedColor(graphic: Graphic, options: symbolUtilsGetDisplayedColorOptions): js.Promise[Color_] = js.native
   
   /**
     * Returns a symbol representing the input [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).

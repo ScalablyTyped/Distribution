@@ -16,7 +16,7 @@ object scanCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/commands/ScanCommand", "ScanCommand")
   @js.native
-  class ScanCommand protected ()
+  open class ScanCommand protected ()
     extends StObject
        with Command[InputTypesUnion, ScanInput, OutputTypesUnion, ScanOutput, DynamoDBResolvedConfiguration] {
     def this(input: ScanInput) = this()
@@ -28,14 +28,14 @@ object scanCommandMod {
     override val middlewareStack: MiddlewareStack[ScanInput, ScanOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[ScanInput, ScanOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ScanInput, ScanOutput] = js.native
   }
 }

@@ -17,10 +17,10 @@ trait IDragTracker
   var active: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean/Number) */
-  var autoStart: js.UndefOr[js.Any] = js.undefined
+  var autoStart: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Ext.util.Region/Ext.Element) */
-  var constrainTo: js.UndefOr[js.Any] = js.undefined
+  var constrainTo: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var delegate: js.UndefOr[String] = js.undefined
@@ -42,7 +42,7 @@ trait IDragTracker
   /** [Method] Initializes the DragTracker on a given element
     * @param el Ext.Element/HTMLElement The element
     */
-  var initEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var initEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Ext.EventObject The event object
@@ -92,11 +92,11 @@ object IDragTracker {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setAutoStart(value: js.Any): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+    inline def setAutoStart(value: Any): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
     inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
-    inline def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
+    inline def setConstrainTo(value: Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
     
     inline def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
     
@@ -116,7 +116,7 @@ object IDragTracker {
     
     inline def setGetOffsetUndefined: Self = StObject.set(x, "getOffset", js.undefined)
     
-    inline def setInitEl(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "initEl", js.Any.fromFunction1(value))
+    inline def setInitEl(value: /* el */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "initEl", js.Any.fromFunction1(value))
     
     inline def setInitElUndefined: Self = StObject.set(x, "initEl", js.undefined)
     

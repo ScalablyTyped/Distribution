@@ -1,14 +1,14 @@
 package typings.browserfs.zipFSMod
 
 import typings.browserfs.fileIndexMod.FileIndex
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/ZipFS", "ZipTOC")
 @js.native
-class ZipTOC protected () extends StObject {
+open class ZipTOC protected () extends StObject {
   def this(
     index: FileIndex[CentralDirectory],
     directoryEntries: js.Array[CentralDirectory],

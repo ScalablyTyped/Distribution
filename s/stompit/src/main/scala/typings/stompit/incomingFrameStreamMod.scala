@@ -3,7 +3,6 @@ package typings.stompit
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object incomingFrameStreamMod {
   
   @JSImport("stompit/lib/IncomingFrameStream", JSImport.Namespace)
   @js.native
-  class ^ () extends IncomingFrameStream {
+  open class ^ () extends IncomingFrameStream {
     def this(opts: TransformOptions) = this()
   }
   
@@ -26,7 +25,7 @@ object incomingFrameStreamMod {
     def readString(encoding: String): Unit = js.native
     def readString(
       encoding: String,
-      callback: js.Function2[/* err */ Error | Null, /* buffer */ js.UndefOr[String], Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* buffer */ js.UndefOr[String], Unit]
     ): Unit = js.native
   }
   

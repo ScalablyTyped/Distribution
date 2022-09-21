@@ -15,7 +15,7 @@ object mod {
   /**
     * The game's constructor
     */
-  class TicTacToe () extends StObject {
+  open class TicTacToe () extends StObject {
     def this(requestSize: Double) = this()
     
     /**

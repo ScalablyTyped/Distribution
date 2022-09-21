@@ -18,11 +18,13 @@ trait Subnetwork extends StObject {
     */
   var enableFlowLogs: js.UndefOr[Boolean] = js.undefined
   
+  /** [Output Only] The range of external IPv6 addresses that are owned by this subnetwork. */
+  var externalIpv6Prefix: js.UndefOr[String] = js.undefined
+  
   /**
     * Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a Subnetwork. An
-    * up-to-date fingerprint must be provided in order to update the Subnetwork, otherwise the request will fail with error 412 conditionNotMet.
-    *
-    * To see the latest fingerprint, make a get() request to retrieve a Subnetwork.
+    * up-to-date fingerprint must be provided in order to update the Subnetwork, otherwise the request will fail with error 412 conditionNotMet. To see the latest fingerprint, make a
+    * get() request to retrieve a Subnetwork.
     */
   var fingerprint: js.UndefOr[String] = js.undefined
   
@@ -34,10 +36,16 @@ trait Subnetwork extends StObject {
   
   /**
     * The range of internal addresses that are owned by this subnetwork. Provide this property when you create the subnetwork. For example, 10.0.0.0/8 or 100.64.0.0/10. Ranges must be
-    * unique and non-overlapping within a network. Only IPv4 is supported. This field is set at resource creation time. This may be a RFC 1918 IP range, or a privately routed, non-RFC
-    * 1918 IP range, not belonging to Google. The range can be expanded after creation using expandIpCidrRange.
+    * unique and non-overlapping within a network. Only IPv4 is supported. This field is set at resource creation time. The range can be any range listed in the Valid ranges list. The
+    * range can be expanded after creation using expandIpCidrRange.
     */
   var ipCidrRange: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The access type of IPv6 address this subnet holds. It's immutable and can only be specified during creation or the first time the subnet is updated into IPV4_IPV6 dual stack. If the
+    * ipv6_type is EXTERNAL then this subnet cannot enable direct path.
+    */
+  var ipv6AccessType: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The range of internal IPv6 addresses that are owned by this subnetwork. */
   var ipv6CidrRange: js.UndefOr[String] = js.undefined
@@ -69,9 +77,7 @@ trait Subnetwork extends StObject {
   
   /**
     * The private IPv6 google access type for the VMs in this subnet. This is an expanded field of enablePrivateV6Access. If both fields are set, privateIpv6GoogleAccess will take
-    * priority.
-    *
-    * This field can be both set at resource creation time and updated using patch.
+    * priority. This field can be both set at resource creation time and updated using patch.
     */
   var privateIpv6GoogleAccess: js.UndefOr[String] = js.undefined
   
@@ -102,9 +108,15 @@ trait Subnetwork extends StObject {
   var selfLink: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output Only] The state of the subnetwork, which can be one of READY or DRAINING. A subnetwork that is READY is ready to be used. The state of DRAINING is only applicable to
-    * subnetworks that have the purpose set to INTERNAL_HTTPS_LOAD_BALANCER and indicates that connections to the load balancer are being drained. A subnetwork that is draining cannot be
-    * used or modified until it reaches a status of READY.
+    * The stack type for this subnet to identify whether the IPv6 feature is enabled or not. If not specified IPV4_ONLY will be used. This field can be both set at resource creation time
+    * and updated using patch.
+    */
+  var stackType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * [Output Only] The state of the subnetwork, which can be one of the following values: READY: Subnetwork is created and ready to use DRAINING: only applicable to subnetworks that have
+    * the purpose set to INTERNAL_HTTPS_LOAD_BALANCER and indicates that connections to the load balancer are being drained. A subnetwork that is draining cannot be used or modified until
+    * it reaches a status of READY
     */
   var state: js.UndefOr[String] = js.undefined
 }
@@ -129,6 +141,10 @@ object Subnetwork {
     
     inline def setEnableFlowLogsUndefined: Self = StObject.set(x, "enableFlowLogs", js.undefined)
     
+    inline def setExternalIpv6Prefix(value: String): Self = StObject.set(x, "externalIpv6Prefix", value.asInstanceOf[js.Any])
+    
+    inline def setExternalIpv6PrefixUndefined: Self = StObject.set(x, "externalIpv6Prefix", js.undefined)
+    
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
@@ -144,6 +160,10 @@ object Subnetwork {
     inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
     inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    
+    inline def setIpv6AccessType(value: String): Self = StObject.set(x, "ipv6AccessType", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6AccessTypeUndefined: Self = StObject.set(x, "ipv6AccessType", js.undefined)
     
     inline def setIpv6CidrRange(value: String): Self = StObject.set(x, "ipv6CidrRange", value.asInstanceOf[js.Any])
     
@@ -189,11 +209,15 @@ object Subnetwork {
     
     inline def setSecondaryIpRangesUndefined: Self = StObject.set(x, "secondaryIpRanges", js.undefined)
     
-    inline def setSecondaryIpRangesVarargs(value: SubnetworkSecondaryRange*): Self = StObject.set(x, "secondaryIpRanges", js.Array(value :_*))
+    inline def setSecondaryIpRangesVarargs(value: SubnetworkSecondaryRange*): Self = StObject.set(x, "secondaryIpRanges", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    
+    inline def setStackType(value: String): Self = StObject.set(x, "stackType", value.asInstanceOf[js.Any])
+    
+    inline def setStackTypeUndefined: Self = StObject.set(x, "stackType", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

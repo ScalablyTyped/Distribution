@@ -31,6 +31,6 @@ object MetricPolicy {
     
     inline def setMetricPolicyRulesUndefined: Self = StObject.set(x, "MetricPolicyRules", js.undefined)
     
-    inline def setMetricPolicyRulesVarargs(value: MetricPolicyRule*): Self = StObject.set(x, "MetricPolicyRules", js.Array(value :_*))
+    inline def setMetricPolicyRulesVarargs(value: MetricPolicyRule*): Self = StObject.set(x, "MetricPolicyRules", js.Array(value*))
   }
 }

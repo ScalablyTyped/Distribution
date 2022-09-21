@@ -47,7 +47,7 @@ object migrationMod {
   
   @JSImport("node-pg-migrate/dist/migration", "Migration")
   @js.native
-  class Migration protected ()
+  open class Migration protected ()
     extends StObject
        with RunMigration {
     def this(db: DBConnection, migrationPath: String, hasUpDown: MigrationBuilderActions, options: RunnerOption) = this()
@@ -75,14 +75,14 @@ object migrationMod {
       logger: Logger
     ) = this()
     
-    def _apply(action: MigrationAction, pgm: default): js.Promise[js.Any] = js.native
+    def _apply(action: MigrationAction, pgm: default): js.Promise[Any] = js.native
     
     def _getAction(direction: MigrationDirection): MigrationAction = js.native
     
     def _getMarkAsRun(action: MigrationAction): String = js.native
     
     @JSName("apply")
-    def apply(direction: MigrationDirection): js.Promise[js.Any] = js.native
+    def apply(direction: MigrationDirection): js.Promise[Any] = js.native
     
     val db: DBConnection = js.native
     
@@ -90,7 +90,7 @@ object migrationMod {
     
     val logger: Logger = js.native
     
-    def markAsRun(direction: MigrationDirection): js.Promise[QueryResult[js.Any]] = js.native
+    def markAsRun(direction: MigrationDirection): js.Promise[QueryResult[Any]] = js.native
     
     /* CompleteClass */
     override val name: String = js.native
@@ -115,6 +115,22 @@ object migrationMod {
     val ^ : js.Any = js.native
     
     inline def create(name: String, directory: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def create(name: String, directory: String, _language: js_ | ts | sql): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def create(name: String, directory: String, _language: js_ | ts | sql, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def create(
+      name: String,
+      directory: String,
+      _language: js_ | ts | sql,
+      _ignorePattern: String,
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def create(
+      name: String,
+      directory: String,
+      _language: js_ | ts | sql,
+      _ignorePattern: Unit,
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     inline def create(name: String, directory: String, _language: Unit, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     inline def create(
       name: String,
@@ -146,57 +162,6 @@ object migrationMod {
       _ignorePattern: Unit,
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    
-    inline def create_js(name: String, directory: String, _language: js_): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_js(name: String, directory: String, _language: js_, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_js(
-      name: String,
-      directory: String,
-      _language: js_,
-      _ignorePattern: String,
-      _filenameFormat: FilenameFormat
-    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_js(
-      name: String,
-      directory: String,
-      _language: js_,
-      _ignorePattern: Unit,
-      _filenameFormat: FilenameFormat
-    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    
-    inline def create_sql(name: String, directory: String, _language: sql): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_sql(name: String, directory: String, _language: sql, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_sql(
-      name: String,
-      directory: String,
-      _language: sql,
-      _ignorePattern: String,
-      _filenameFormat: FilenameFormat
-    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_sql(
-      name: String,
-      directory: String,
-      _language: sql,
-      _ignorePattern: Unit,
-      _filenameFormat: FilenameFormat
-    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    
-    inline def create_ts(name: String, directory: String, _language: ts): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_ts(name: String, directory: String, _language: ts, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_ts(
-      name: String,
-      directory: String,
-      _language: ts,
-      _ignorePattern: String,
-      _filenameFormat: FilenameFormat
-    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def create_ts(
-      name: String,
-      directory: String,
-      _language: ts,
-      _ignorePattern: Unit,
-      _filenameFormat: FilenameFormat
-    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   }
   
   inline def getTimestamp(logger: Logger, filename: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimestamp")(logger.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -204,7 +169,23 @@ object migrationMod {
   inline def loadMigrationFiles(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadMigrationFiles")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def loadMigrationFiles(dir: String, ignorePattern: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadMigrationFiles")(dir.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  type CreateOptions = typings.nodePgMigrate.anon.FilenameFormat & (CreateOptionsTemplate | CreateOptionsDefault)
+  /* Rewritten from type alias, can be one of: 
+    - typings.nodePgMigrate.anon.CreateOptionsTemplatefile
+    - typings.nodePgMigrate.anon.CreateOptionsDefaultfilen
+  */
+  trait CreateOptions extends StObject
+  object CreateOptions {
+    
+    inline def CreateOptionsDefaultfilen(): typings.nodePgMigrate.anon.CreateOptionsDefaultfilen = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.nodePgMigrate.anon.CreateOptionsDefaultfilen]
+    }
+    
+    inline def CreateOptionsTemplatefile(templateFileName: String): typings.nodePgMigrate.anon.CreateOptionsTemplatefile = {
+      val __obj = js.Dynamic.literal(templateFileName = templateFileName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.nodePgMigrate.anon.CreateOptionsTemplatefile]
+    }
+  }
   
   trait CreateOptionsDefault extends StObject {
     

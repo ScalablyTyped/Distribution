@@ -17,7 +17,7 @@ object anon {
     /**
       * Constraints set by validation type.
       */
-    var constraints: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var constraints: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Specifies if validated value is an array and each of its item must be validated.
@@ -39,9 +39,9 @@ object anon {
       */
     var message: js.UndefOr[
         String | (js.Function3[
-          /* value */ js.UndefOr[js.Any], 
-          /* constraint1 */ js.UndefOr[js.Any], 
-          /* constraint2 */ js.UndefOr[js.Any], 
+          /* value */ js.UndefOr[Any], 
+          /* constraint1 */ js.UndefOr[Any], 
+          /* constraint2 */ js.UndefOr[Any], 
           String
         ])
       ] = js.undefined
@@ -49,7 +49,7 @@ object anon {
     /**
       * Specific validation type options.
       */
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     /**
       * Validation type. Should be one of the ValidationTypes value.
@@ -70,11 +70,11 @@ object anon {
       
       inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
       
-      inline def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: js.Array[Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      inline def setConstraintsVarargs(value: js.Any*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+      inline def setConstraintsVarargs(value: Any*): Self = StObject.set(x, "constraints", js.Array(value*))
       
       inline def setEach(value: Boolean): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
       
@@ -84,24 +84,24 @@ object anon {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setMessage(
         value: String | (js.Function3[
-              /* value */ js.UndefOr[js.Any], 
-              /* constraint1 */ js.UndefOr[js.Any], 
-              /* constraint2 */ js.UndefOr[js.Any], 
+              /* value */ js.UndefOr[Any], 
+              /* constraint1 */ js.UndefOr[Any], 
+              /* constraint2 */ js.UndefOr[Any], 
               String
             ])
       ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageFunction3(
-        value: (/* value */ js.UndefOr[js.Any], /* constraint1 */ js.UndefOr[js.Any], /* constraint2 */ js.UndefOr[js.Any]) => String
+        value: (/* value */ js.UndefOr[Any], /* constraint1 */ js.UndefOr[Any], /* constraint2 */ js.UndefOr[Any]) => String
       ): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -136,25 +136,44 @@ object anon {
   
   trait Get extends StObject {
     
-    def get(someClass: js.Any): js.Any
+    def get(someClass: Any): Any
   }
   object Get {
     
-    inline def apply(get: js.Any => js.Any): Get = {
+    inline def apply(get: Any => Any): Get = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[Get]
     }
     
     extension [Self <: Get](x: Self) {
       
-      inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
   trait Instantiable[T]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, T]
+       with Instantiable1[/* args (repeated) */ Any, T]
+  
+  trait Nullable extends StObject {
+    
+    var nullable: js.UndefOr[Boolean] = js.undefined
+  }
+  object Nullable {
+    
+    inline def apply(): Nullable = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Nullable]
+    }
+    
+    extension [Self <: Nullable](x: Self) {
+      
+      inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+      
+      inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+    }
+  }
   
   trait Target extends StObject {
     

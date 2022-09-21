@@ -11,6 +11,9 @@ trait GooglePrivacyDlpV2InfoType extends StObject {
     * specifying a built-in type. When sending Cloud DLP results to Data Catalog, infoType names should conform to the pattern `[A-Za-z0-9$-_]{1,64}`.
     */
   var name: js.UndefOr[String] = js.undefined
+  
+  /** Optional version name for this InfoType. */
+  var version: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2InfoType {
   
@@ -24,5 +27,9 @@ object GooglePrivacyDlpV2InfoType {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

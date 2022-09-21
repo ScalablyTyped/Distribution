@@ -51,9 +51,9 @@ object abstractRuleMod {
     /* CompleteClass */
     override def isEnabled(): Boolean = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
     
-    /* protected */ val ruleArguments: js.Array[js.Any] = js.native
+    /* protected */ val ruleArguments: js.Array[Any] = js.native
     
     var ruleName: String = js.native
     

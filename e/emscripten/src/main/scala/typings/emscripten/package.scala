@@ -1,9 +1,15 @@
 package typings.emscripten
 
+import typings.emscripten.Emscripten.JSType
+import typings.std.Exclude
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+
+/* Inlined std.Extract<{[ P in keyof T ]: emscripten.StringToType<T[P]>}, std.Array<any>> */
+type ArgsToType[T /* <: js.Array[JSType | Null] */] = scala.Nothing
 
 /**
   * A factory function is generated when setting the `MODULARIZE` build option
@@ -18,4 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * application's types.
   * @param moduleOverrides Default properties for the initialized module.
   */
-type EmscriptenModuleFactory[T /* <: typings.emscripten.EmscriptenModule */] = js.Function1[/* moduleOverrides */ js.UndefOr[typings.std.Partial[T]], js.Promise[T]]
+type EmscriptenModuleFactory[T /* <: EmscriptenModule */] = js.Function1[/* moduleOverrides */ js.UndefOr[Partial[T]], js.Promise[T]]
+
+type ReturnToType[R /* <: JSType | Null */] = (StringToType[Exclude[R, Null]]) | Null
+
+// https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html
+type StringToType[R /* <: Any */] = /* import warning: importer.ImportType#apply Failed type conversion: emscripten.anon.Array[R] */ js.Any

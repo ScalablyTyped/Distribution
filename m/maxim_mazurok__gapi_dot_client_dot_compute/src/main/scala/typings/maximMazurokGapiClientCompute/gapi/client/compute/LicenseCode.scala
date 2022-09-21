@@ -62,7 +62,7 @@ object LicenseCode {
     
     inline def setLicenseAliasUndefined: Self = StObject.set(x, "licenseAlias", js.undefined)
     
-    inline def setLicenseAliasVarargs(value: LicenseCodeLicenseAlias*): Self = StObject.set(x, "licenseAlias", js.Array(value :_*))
+    inline def setLicenseAliasVarargs(value: LicenseCodeLicenseAlias*): Self = StObject.set(x, "licenseAlias", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

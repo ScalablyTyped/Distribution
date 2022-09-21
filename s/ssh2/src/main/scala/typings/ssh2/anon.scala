@@ -1,50 +1,66 @@
 package typings.ssh2
 
+import typings.node.bufferMod.global.Buffer
+import typings.ssh2.mod.CipherAlgorithm
+import typings.ssh2.mod.CompressionAlgorithm
+import typings.ssh2.mod.MacAlgorithm
+import typings.ssh2.mod.ParsedKey
+import typings.ssh2.ssh2Strings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Address extends StObject {
+  trait Cipher extends StObject {
     
-    var address: String
+    var cipher: CipherAlgorithm
     
-    var family: String
+    var compress: CompressionAlgorithm
     
-    var port: Double
+    var lang: String
+    
+    var mac: MacAlgorithm | _empty
   }
-  object Address {
+  object Cipher {
     
-    inline def apply(address: String, family: String, port: Double): Address = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Address]
+    inline def apply(cipher: CipherAlgorithm, compress: CompressionAlgorithm, lang: String, mac: MacAlgorithm | _empty): Cipher = {
+      val __obj = js.Dynamic.literal(cipher = cipher.asInstanceOf[js.Any], compress = compress.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Cipher]
     }
     
-    extension [Self <: Address](x: Self) {
+    extension [Self <: Cipher](x: Self) {
       
-      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setCipher(value: CipherAlgorithm): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
-      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setCompress(value: CompressionAlgorithm): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      
+      inline def setMac(value: MacAlgorithm | _empty): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Fd extends StObject {
+  trait Comment extends StObject {
     
-    var fd: Double
+    var comment: js.UndefOr[String] = js.undefined
+    
+    var pubKey: ParsedKey | Buffer | String
   }
-  object Fd {
+  object Comment {
     
-    inline def apply(fd: Double): Fd = {
-      val __obj = js.Dynamic.literal(fd = fd.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Fd]
+    inline def apply(pubKey: ParsedKey | Buffer | String): Comment = {
+      val __obj = js.Dynamic.literal(pubKey = pubKey.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Fd](x: Self) {
+    extension [Self <: Comment](x: Self) {
       
-      inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      
+      inline def setPubKey(value: ParsedKey | Buffer | String): Self = StObject.set(x, "pubKey", value.asInstanceOf[js.Any])
     }
   }
 }

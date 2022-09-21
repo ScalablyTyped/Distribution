@@ -15,6 +15,10 @@ object stylableRuntimeStrings {
   inline def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
+  sealed trait acronym extends StObject
+  inline def acronym: acronym = "acronym".asInstanceOf[acronym]
+  
+  @js.native
   sealed trait address extends StObject
   inline def address: address = "address".asInstanceOf[address]
   
@@ -59,6 +63,18 @@ object stylableRuntimeStrings {
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
   
   @js.native
+  sealed trait bgsound extends StObject
+  inline def bgsound: bgsound = "bgsound".asInstanceOf[bgsound]
+  
+  @js.native
+  sealed trait big extends StObject
+  inline def big: big = "big".asInstanceOf[big]
+  
+  @js.native
+  sealed trait blink extends StObject
+  inline def blink: blink = "blink".asInstanceOf[blink]
+  
+  @js.native
   sealed trait blockquote extends StObject
   inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
@@ -81,6 +97,10 @@ object stylableRuntimeStrings {
   @js.native
   sealed trait caption extends StObject
   inline def caption: caption = "caption".asInstanceOf[caption]
+  
+  @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait cite extends StObject
@@ -247,8 +267,16 @@ object stylableRuntimeStrings {
   inline def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
+  sealed trait isindex extends StObject
+  inline def isindex: isindex = "isindex".asInstanceOf[isindex]
+  
+  @js.native
   sealed trait kbd extends StObject
   inline def kbd: kbd = "kbd".asInstanceOf[kbd]
+  
+  @js.native
+  sealed trait keygen extends StObject
+  inline def keygen: keygen = "keygen".asInstanceOf[keygen]
   
   @js.native
   sealed trait label extends StObject
@@ -291,6 +319,10 @@ object stylableRuntimeStrings {
   inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
+  sealed trait menuitem extends StObject
+  inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  
+  @js.native
   sealed trait meta extends StObject
   inline def meta: meta = "meta".asInstanceOf[meta]
   
@@ -299,8 +331,28 @@ object stylableRuntimeStrings {
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
+  sealed trait multicol extends StObject
+  inline def multicol: multicol = "multicol".asInstanceOf[multicol]
+  
+  @js.native
   sealed trait nav extends StObject
   inline def nav: nav = "nav".asInstanceOf[nav]
+  
+  @js.native
+  sealed trait nextid extends StObject
+  inline def nextid: nextid = "nextid".asInstanceOf[nextid]
+  
+  @js.native
+  sealed trait nobr extends StObject
+  inline def nobr: nobr = "nobr".asInstanceOf[nobr]
+  
+  @js.native
+  sealed trait noembed extends StObject
+  inline def noembed: noembed = "noembed".asInstanceOf[noembed]
+  
+  @js.native
+  sealed trait noframes extends StObject
+  inline def noframes: noframes = "noframes".asInstanceOf[noframes]
   
   @js.native
   sealed trait noscript extends StObject
@@ -339,6 +391,10 @@ object stylableRuntimeStrings {
   inline def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
+  sealed trait plaintext extends StObject
+  inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
+  
+  @js.native
   sealed trait pre extends StObject
   inline def pre: pre = "pre".asInstanceOf[pre]
   
@@ -351,12 +407,20 @@ object stylableRuntimeStrings {
   inline def q: q = "q".asInstanceOf[q]
   
   @js.native
+  sealed trait rb extends StObject
+  inline def rb: rb = "rb".asInstanceOf[rb]
+  
+  @js.native
   sealed trait rp extends StObject
   inline def rp: rp = "rp".asInstanceOf[rp]
   
   @js.native
   sealed trait rt extends StObject
   inline def rt: rt = "rt".asInstanceOf[rt]
+  
+  @js.native
+  sealed trait rtc extends StObject
+  inline def rtc: rtc = "rtc".asInstanceOf[rtc]
   
   @js.native
   sealed trait ruby extends StObject
@@ -395,8 +459,16 @@ object stylableRuntimeStrings {
   inline def source: source = "source".asInstanceOf[source]
   
   @js.native
+  sealed trait spacer extends StObject
+  inline def spacer: spacer = "spacer".asInstanceOf[spacer]
+  
+  @js.native
   sealed trait span extends StObject
   inline def span: span = "span".asInstanceOf[span]
+  
+  @js.native
+  sealed trait strike extends StObject
+  inline def strike: strike = "strike".asInstanceOf[strike]
   
   @js.native
   sealed trait strong extends StObject
@@ -465,6 +537,10 @@ object stylableRuntimeStrings {
   @js.native
   sealed trait track extends StObject
   inline def track: track = "track".asInstanceOf[track]
+  
+  @js.native
+  sealed trait tt extends StObject
+  inline def tt: tt = "tt".asInstanceOf[tt]
   
   @js.native
   sealed trait u extends StObject

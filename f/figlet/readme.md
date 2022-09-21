@@ -1,7 +1,7 @@
 
 # Scala.js typings for figlet
 
-Typings are for version 1.2
+Typings are for version 1.5
 
 ## Library description:
 Creates ASCII Art from text. A full implementation of the FIGfont spec.
@@ -10,10 +10,10 @@ Creates ASCII Art from text. A full implementation of the FIGfont spec.
 | ------------------ | :-------------: |
 | Full name          | figlet |
 | Keywords           | figlet, ascii, art, banner, ansi |
-| # releases         | 7 |
-| # dependents       | 3500 |
-| # downloads        | 25875083 |
-| # stars            | 72 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3217119.6666666665 |
+| # stars            | 1939.0 |
 
 ## Links
 - [Homepage](https://github.com/patorjk/figlet.js#readme)

@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FirewallRuleInfo extends StObject {
   
-  var endIpAddress: String
+  var endIpAddress: js.UndefOr[String] = js.undefined
   
   var serverName: String
   
-  var startIpAddress: String
+  var startIpAddress: js.UndefOr[String] = js.undefined
 }
 object FirewallRuleInfo {
   
-  inline def apply(endIpAddress: String, serverName: String, startIpAddress: String): FirewallRuleInfo = {
-    val __obj = js.Dynamic.literal(endIpAddress = endIpAddress.asInstanceOf[js.Any], serverName = serverName.asInstanceOf[js.Any], startIpAddress = startIpAddress.asInstanceOf[js.Any])
+  inline def apply(serverName: String): FirewallRuleInfo = {
+    val __obj = js.Dynamic.literal(serverName = serverName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallRuleInfo]
   }
   
@@ -23,8 +23,12 @@ object FirewallRuleInfo {
     
     inline def setEndIpAddress(value: String): Self = StObject.set(x, "endIpAddress", value.asInstanceOf[js.Any])
     
+    inline def setEndIpAddressUndefined: Self = StObject.set(x, "endIpAddress", js.undefined)
+    
     inline def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
     inline def setStartIpAddress(value: String): Self = StObject.set(x, "startIpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setStartIpAddressUndefined: Self = StObject.set(x, "startIpAddress", js.undefined)
   }
 }

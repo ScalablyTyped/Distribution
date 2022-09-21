@@ -2320,7 +2320,6 @@ import typings.igniteUi.igniteUiStrings.zoomToGeographic
 import typings.igniteUi.igniteUiStrings.zoomWindowMinWidth
 import typings.igniteUi.igniteUiStrings.zoomWindowMoveDistance
 import typings.igniteUi.igniteUiStrings.zoomable
-import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -2532,7 +2531,7 @@ trait JQuery extends StObject {
   @JSName("data")
   def data_mouseWrapper(propertyName: mouseWrapper): MouseWrapperMethods = js.native
   
-  def igBaseChart(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igBaseChart(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event which is raised before data binding.
     * Return false in order to cancel data binding.
@@ -2574,7 +2573,7 @@ trait JQuery extends StObject {
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  def igBaseChart(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igBaseChart(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Gets  data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
@@ -2602,7 +2601,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igBaseChart(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igBaseChart(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * The height of the chart.
     */
@@ -2725,7 +2724,7 @@ trait JQuery extends StObject {
   @JSName("igBaseChart")
   def igBaseChart_flush(methodName: flush): Unit = js.native
   @JSName("igBaseChart")
-  def igBaseChart_getData(methodName: getData): js.Array[js.Any] = js.native
+  def igBaseChart_getData(methodName: getData): js.Array[Any] = js.native
   @JSName("igBaseChart")
   def igBaseChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igBaseChart")
@@ -2745,9 +2744,9 @@ trait JQuery extends StObject {
     oldItem: js.Object
   ): js.Object = js.native
   @JSName("igBaseChart")
-  def igBaseChart_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igBaseChart_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igBaseChart")
-  def igBaseChart_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igBaseChart_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igBaseChart")
   def igBaseChart_option(optionLiteral: option, options: IgBaseChart): JQuery = js.native
   @JSName("igBaseChart")
@@ -2755,7 +2754,7 @@ trait JQuery extends StObject {
   @JSName("igBaseChart")
   def igBaseChart_setItem(methodName: setItem, index: Double, item: js.Object): js.Object = js.native
   
-  def igBaseEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igBaseEditor(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is false, and editor has no value, then value is set to an empty string.
@@ -2877,14 +2876,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igBaseEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igBaseEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igBaseEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igBaseEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Fired on mousedown event.
     */
@@ -3011,7 +3010,7 @@ trait JQuery extends StObject {
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igBaseEditor(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igBaseEditor(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -3020,12 +3019,12 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igBaseEditor(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igBaseEditor(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     */
-  def igBaseEditor(optionLiteral: option, optionName: value): js.Any = js.native
+  def igBaseEditor(optionLiteral: option, optionName: value): Any = js.native
   /**
     * Fired after the editor value is changed. It can be raised after loosing focus or on spin events.
     */
@@ -3056,7 +3055,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igBaseEditor(optionLiteral: option, optionName: value, optionValue: js.Any): Unit = js.native
+  def igBaseEditor(optionLiteral: option, optionName: value, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the width of the control.
     *
@@ -3094,9 +3093,9 @@ trait JQuery extends StObject {
   @JSName("igBaseEditor")
   def igBaseEditor_isValid(methodName: isValid): Boolean = js.native
   @JSName("igBaseEditor")
-  def igBaseEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igBaseEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igBaseEditor")
-  def igBaseEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igBaseEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igBaseEditor")
   def igBaseEditor_option(optionLiteral: option, options: IgBaseEditor): JQuery = js.native
   @JSName("igBaseEditor")
@@ -3112,19 +3111,19 @@ trait JQuery extends StObject {
   @JSName("igBaseEditor")
   def igBaseEditor_value(methodName: value, newValue: js.Object): Unit = js.native
   
-  def igBrowseButton(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igBrowseButton(methodName: String, methodParams: Any*): Any = js.native
   def igBrowseButton(optionLiteral: option, optionName: autoselect): Boolean = js.native
   def igBrowseButton(optionLiteral: option, optionName: autoselect, optionValue: Boolean): Unit = js.native
   /**
     * M.H. 13 Feb 2014 Fix for bug #164347: Move input  from document body to the upload container
     */
-  def igBrowseButton(optionLiteral: option, optionName: container): js.Any = js.native
+  def igBrowseButton(optionLiteral: option, optionName: container): Any = js.native
   /**
     * M.H. 13 Feb 2014 Fix for bug #164347: Move input  from document body to the upload container
     *
     * @optionValue New value to be set.
     */
-  def igBrowseButton(optionLiteral: option, optionName: container, optionValue: js.Any): Unit = js.native
+  def igBrowseButton(optionLiteral: option, optionName: container, optionValue: Any): Unit = js.native
   def igBrowseButton(optionLiteral: option, optionName: multipleFiles): Boolean = js.native
   def igBrowseButton(optionLiteral: option, optionName: multipleFiles, optionValue: Boolean): Unit = js.native
   def igBrowseButton(options: IgBrowseButton): JQuery = js.native
@@ -3135,13 +3134,13 @@ trait JQuery extends StObject {
   @JSName("igBrowseButton")
   def igBrowseButton_getFilePicker(methodName: getFilePicker): Unit = js.native
   @JSName("igBrowseButton")
-  def igBrowseButton_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igBrowseButton_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igBrowseButton")
-  def igBrowseButton_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igBrowseButton_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igBrowseButton")
   def igBrowseButton_option(optionLiteral: option, options: IgBrowseButton): JQuery = js.native
   
-  def igBulletGraph(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igBulletGraph(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event which is raised when a label of the bullet graph is aligned along the scale.
     * Function takes first argument evt and second argument ui.
@@ -3355,14 +3354,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igBulletGraph(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igBulletGraph(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igBulletGraph(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igBulletGraph(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets  the maximum value of the scale.
     */
@@ -3465,14 +3464,14 @@ trait JQuery extends StObject {
     * Gets  a collection of brushes to be used as the palette for bullet graph ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igBulletGraph(optionLiteral: option, optionName: rangeBrushes): js.Any = js.native
+  def igBulletGraph(optionLiteral: option, optionName: rangeBrushes): Any = js.native
   /**
     * Sets a collection of brushes to be used as the palette for bullet graph ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igBulletGraph(optionLiteral: option, optionName: rangeBrushes, optionValue: js.Any): Unit = js.native
+  def igBulletGraph(optionLiteral: option, optionName: rangeBrushes, optionValue: Any): Unit = js.native
   /**
     * Gets  the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.
@@ -3501,14 +3500,14 @@ trait JQuery extends StObject {
     * Gets  a collection of brushes to be used as the palette for bullet graph outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igBulletGraph(optionLiteral: option, optionName: rangeOutlines): js.Any = js.native
+  def igBulletGraph(optionLiteral: option, optionName: rangeOutlines): Any = js.native
   /**
     * Sets a collection of brushes to be used as the palette for bullet graph outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igBulletGraph(optionLiteral: option, optionName: rangeOutlines, optionValue: js.Any): Unit = js.native
+  def igBulletGraph(optionLiteral: option, optionName: rangeOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the ranges' tooltip template.
     */
@@ -3897,9 +3896,9 @@ trait JQuery extends StObject {
   @JSName("igBulletGraph")
   def igBulletGraph_getRangeNames(methodName: getRangeNames): Unit = js.native
   @JSName("igBulletGraph")
-  def igBulletGraph_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igBulletGraph_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igBulletGraph")
-  def igBulletGraph_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igBulletGraph_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igBulletGraph")
   def igBulletGraph_option(optionLiteral: option, options: IgBulletGraph): JQuery = js.native
   @JSName("igBulletGraph")
@@ -3909,13 +3908,13 @@ trait JQuery extends StObject {
   @JSName("igBulletGraph")
   def igBulletGraph_updateRange(methodName: updateRange, value: js.Object): Unit = js.native
   
-  def igButton(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igButton(methodName: String, methodParams: Any*): Any = js.native
   def igButton(optionLiteral: option, optionName: centerLabel): Boolean = js.native
   def igButton(optionLiteral: option, optionName: centerLabel, optionValue: Boolean): Unit = js.native
-  def igButton(optionLiteral: option, optionName: css): js.Any = js.native
-  def igButton(optionLiteral: option, optionName: css, optionValue: js.Any): Unit = js.native
-  def igButton(optionLiteral: option, optionName: height): js.Any = js.native
-  def igButton(optionLiteral: option, optionName: height, optionValue: js.Any): Unit = js.native
+  def igButton(optionLiteral: option, optionName: css): Any = js.native
+  def igButton(optionLiteral: option, optionName: css, optionValue: Any): Unit = js.native
+  def igButton(optionLiteral: option, optionName: height): Any = js.native
+  def igButton(optionLiteral: option, optionName: height, optionValue: Any): Unit = js.native
   def igButton(optionLiteral: option, optionName: icons): IgButtonIcons = js.native
   def igButton(optionLiteral: option, optionName: icons, optionValue: IgButtonIcons): Unit = js.native
   def igButton(optionLiteral: option, optionName: labelText): String = js.native
@@ -3926,15 +3925,15 @@ trait JQuery extends StObject {
   def igButton(optionLiteral: option, optionName: onlyIcons, optionValue: Boolean): Unit = js.native
   def igButton(optionLiteral: option, optionName: title): Boolean = js.native
   def igButton(optionLiteral: option, optionName: title, optionValue: Boolean): Unit = js.native
-  def igButton(optionLiteral: option, optionName: width): js.Any = js.native
-  def igButton(optionLiteral: option, optionName: width, optionValue: js.Any): Unit = js.native
+  def igButton(optionLiteral: option, optionName: width): Any = js.native
+  def igButton(optionLiteral: option, optionName: width, optionValue: Any): Unit = js.native
   def igButton(options: IgButton): JQuery = js.native
   @JSName("igButton")
   def igButton_destroy(methodName: destroy): Unit = js.native
   @JSName("igButton")
-  def igButton_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igButton_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igButton")
-  def igButton_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igButton_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igButton")
   def igButton_option(optionLiteral: option, options: IgButton): JQuery = js.native
   @JSName("igButton")
@@ -3942,7 +3941,7 @@ trait JQuery extends StObject {
   @JSName("igButton")
   def igButton_widget(methodName: widget): Unit = js.native
   
-  def igCategoryChart(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igCategoryChart(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets  a value indicating whether grid and tick lines are aligned to device pixels.
     */
@@ -3978,7 +3977,7 @@ trait JQuery extends StObject {
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igCategoryChart(optionLiteral: option, optionName: brushes): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: brushes): Any = js.native
   /**
     * Sets the palette of brushes to use for coloring the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -3986,7 +3985,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: brushes, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: brushes, optionValue: Any): Unit = js.native
   /**
     * Occurs when the style of a callout is updated.
     */
@@ -4020,13 +4019,13 @@ trait JQuery extends StObject {
   /**
     * Gets  the collection of callout data to be annotated.
     */
-  def igCategoryChart(optionLiteral: option, optionName: calloutsItemsSource): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: calloutsItemsSource): Any = js.native
   /**
     * Sets the collection of callout data to be annotated.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: calloutsItemsSource, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: calloutsItemsSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the member path of the label data for the callouts.
     */
@@ -4080,13 +4079,13 @@ trait JQuery extends StObject {
   /**
     * Gets  a function for creating wrapped tooltip
     */
-  def igCategoryChart(optionLiteral: option, optionName: createWrappedTooltip): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: createWrappedTooltip): Any = js.native
   /**
     * Sets a function for creating wrapped tooltip
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: createWrappedTooltip, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: createWrappedTooltip, optionValue: Any): Unit = js.native
   /**
     * Gets  whether annotations are shown along the axis for crosshair values
     */
@@ -4158,7 +4157,7 @@ trait JQuery extends StObject {
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  def igCategoryChart(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Gets  data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
@@ -4186,17 +4185,17 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets  a set of property paths that should be excluded from consideration by the category chart.
     */
-  def igCategoryChart(optionLiteral: option, optionName: excludedProperties): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: excludedProperties): Any = js.native
   /**
     * Sets a set of property paths that should be excluded from consideration by the category chart.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: excludedProperties, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: excludedProperties, optionValue: Any): Unit = js.native
   /**
     * Gets  whether annotations for the final value of each series is displayed on the axis.
     */
@@ -4240,13 +4239,13 @@ trait JQuery extends StObject {
   /**
     * Gets  a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     */
-  def igCategoryChart(optionLiteral: option, optionName: includedProperties): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: includedProperties): Any = js.native
   /**
     * Sets a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: includedProperties, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: includedProperties, optionValue: Any): Unit = js.native
   /**
     * Gets  whether the category should be highlighted when hovered
     */
@@ -4317,7 +4316,7 @@ trait JQuery extends StObject {
     * Databinding can be further configured by attributing the data item classes
     * with the DataSeriesMemberIntentAttribute.
     */
-  def igCategoryChart(optionLiteral: option, optionName: itemsSource): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: itemsSource): Any = js.native
   /**
     * Sets a collection of data items used to generate the chart.
     * The ItemsSource of this chart can be a list of objects containing one or more numeric properties.
@@ -4328,7 +4327,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: itemsSource, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: itemsSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the left margin of the chart content.
     */
@@ -4343,20 +4342,20 @@ trait JQuery extends StObject {
     * Gets  the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     */
-  def igCategoryChart(optionLiteral: option, optionName: legend): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: legend): Any = js.native
   /**
     * Sets the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: legend, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: legend, optionValue: Any): Unit = js.native
   /**
     * Gets  the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igCategoryChart(optionLiteral: option, optionName: markerBrushes): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: markerBrushes): Any = js.native
   /**
     * Sets the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
@@ -4364,7 +4363,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: markerBrushes, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: markerBrushes, optionValue: Any): Unit = js.native
   /**
     * Gets  the behavior for markers in each series which are placed too close together for the current view, resulting in a collision.
     */
@@ -4390,7 +4389,7 @@ trait JQuery extends StObject {
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igCategoryChart(optionLiteral: option, optionName: markerOutlines): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: markerOutlines): Any = js.native
   /**
     * Sets the palette of brushes used for rendering outlines of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
@@ -4398,19 +4397,19 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: markerOutlines, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: markerOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     */
-  def igCategoryChart(optionLiteral: option, optionName: markerTypes): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: markerTypes): Any = js.native
   /**
     * Sets the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: markerTypes, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: markerTypes, optionValue: Any): Unit = js.native
   /**
     * Gets  maximum number of displayed records in chart.
     */
@@ -4425,32 +4424,32 @@ trait JQuery extends StObject {
     * Gets  the palette used for coloring negative items of Waterfall chart type.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igCategoryChart(optionLiteral: option, optionName: negativeBrushes): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: negativeBrushes): Any = js.native
   /**
     * Sets the palette used for coloring negative items of Waterfall chart type.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: negativeBrushes, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: negativeBrushes, optionValue: Any): Unit = js.native
   /**
     * Brushes to use for drawing negative elements, when using a chart type with contextual coloring, such as Waterfall.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igCategoryChart(optionLiteral: option, optionName: negativeOutlines): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: negativeOutlines): Any = js.native
   /**
     * Brushes to use for drawing negative elements, when using a chart type with contextual coloring, such as Waterfall.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: negativeOutlines, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: negativeOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the palette of brushes to use for outlines on the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igCategoryChart(optionLiteral: option, optionName: outlines): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: outlines): Any = js.native
   /**
     * Sets the palette of brushes to use for outlines on the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -4458,7 +4457,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: outlines, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: outlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
@@ -4778,23 +4777,23 @@ trait JQuery extends StObject {
   /**
     * Gets  the id of a template element to use for tooltips, or markup representing the tooltip template.
     */
-  def igCategoryChart(optionLiteral: option, optionName: tooltipTemplate): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: tooltipTemplate): Any = js.native
   /**
     * Sets the id of a template element to use for tooltips, or markup representing the tooltip template.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: tooltipTemplate, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: tooltipTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the names of tooltip templates
     */
-  def igCategoryChart(optionLiteral: option, optionName: tooltipTemplates): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: tooltipTemplates): Any = js.native
   /**
     * Sets the names of tooltip templates
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: tooltipTemplates, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: tooltipTemplates, optionValue: Any): Unit = js.native
   /**
     * Gets  the top margin of the chart content.
     */
@@ -4819,14 +4818,14 @@ trait JQuery extends StObject {
     * Gets  the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     */
-  def igCategoryChart(optionLiteral: option, optionName: transitionEasingFunction): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: transitionEasingFunction): Any = js.native
   /**
     * Sets the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: transitionEasingFunction, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: transitionEasingFunction, optionValue: Any): Unit = js.native
   /**
     * Gets  the duration used for animating series plots when the chart is loading into view
     */
@@ -4841,14 +4840,14 @@ trait JQuery extends StObject {
     * Gets  the easing function used for animating series plots when the chart is loading into view
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     */
-  def igCategoryChart(optionLiteral: option, optionName: transitionInEasingFunction): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: transitionInEasingFunction): Any = js.native
   /**
     * Sets the easing function used for animating series plots when the chart is loading into view
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: transitionInEasingFunction, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: transitionInEasingFunction, optionValue: Any): Unit = js.native
   /**
     * Gets  the method that determines how to animate series plots when the chart is loading into view
     */
@@ -4874,7 +4873,7 @@ trait JQuery extends StObject {
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igCategoryChart(optionLiteral: option, optionName: trendLineBrushes): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: trendLineBrushes): Any = js.native
   /**
     * Sets the palette of brushes to used for coloring trend lines in this chart.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -4882,7 +4881,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: trendLineBrushes, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: trendLineBrushes, optionValue: Any): Unit = js.native
   def igCategoryChart(optionLiteral: option, optionName: trendLinePeriod): Double = js.native
   def igCategoryChart(optionLiteral: option, optionName: trendLinePeriod, optionValue: Double): Unit = js.native
   /**
@@ -4950,13 +4949,13 @@ trait JQuery extends StObject {
   /**
     * Gets  the widget of this control
     */
-  def igCategoryChart(optionLiteral: option, optionName: widget): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: widget): Any = js.native
   /**
     * Sets the widget of this control
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: widget, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: widget, optionValue: Any): Unit = js.native
   /**
     * The width of the chart.
     */
@@ -4972,7 +4971,7 @@ trait JQuery extends StObject {
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  def igCategoryChart(optionLiteral: option, optionName: windowRect): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: windowRect): Any = js.native
   /**
     * Sets the rectangle representing the current scroll and zoom state of the chart.
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
@@ -4980,7 +4979,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: windowRect, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: windowRect, optionValue: Any): Unit = js.native
   /**
     * Gets  the distance between the X-axis and the bottom of the chart.
     */
@@ -4994,13 +4993,13 @@ trait JQuery extends StObject {
   /**
     * Gets  function which takes an context object and returns a formatted label for the X-axis.
     */
-  def igCategoryChart(optionLiteral: option, optionName: xAxisFormatLabel): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: xAxisFormatLabel): Any = js.native
   /**
     * Sets function which takes an context object and returns a formatted label for the X-axis.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: xAxisFormatLabel, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: xAxisFormatLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the amount of space between adjacent categories for the X-axis.
     * The gap is silently clamped to the range [0, 1] when used.
@@ -5038,7 +5037,7 @@ trait JQuery extends StObject {
   /**
     * Gets  the format for labels along the X-axis.
     */
-  def igCategoryChart(optionLiteral: option, optionName: xAxisLabel): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: xAxisLabel): Any = js.native
   /**
     * Gets  the angle of rotation for labels along the X-axis.
     */
@@ -5144,7 +5143,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: xAxisLabel, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: xAxisLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the color to apply to major gridlines along the X-axis.
     */
@@ -5392,13 +5391,13 @@ trait JQuery extends StObject {
   /**
     * Gets  function which takes a context object and returns a formatted label for the Y-axis.
     */
-  def igCategoryChart(optionLiteral: option, optionName: yAxisFormatLabel): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: yAxisFormatLabel): Any = js.native
   /**
     * Sets function which takes a context object and returns a formatted label for the Y-axis.
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: yAxisFormatLabel, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: yAxisFormatLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the distance between each label and grid line along the Y-axis.
     */
@@ -5434,7 +5433,7 @@ trait JQuery extends StObject {
   /**
     * Gets  the property or string from which the labels are derived.
     */
-  def igCategoryChart(optionLiteral: option, optionName: yAxisLabel): js.Any = js.native
+  def igCategoryChart(optionLiteral: option, optionName: yAxisLabel): Any = js.native
   /**
     * Gets  the angle of rotation for labels along the Y-axis.
     */
@@ -5550,7 +5549,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCategoryChart(optionLiteral: option, optionName: yAxisLabel, optionValue: js.Any): Unit = js.native
+  def igCategoryChart(optionLiteral: option, optionName: yAxisLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the base value to use in the log function when mapping the position of data items along the Y-axis.
     * This property is effective only when YAxisIsLogarithmic is true.
@@ -5809,7 +5808,7 @@ trait JQuery extends StObject {
   @JSName("igCategoryChart")
   def igCategoryChart_flush(methodName: flush): Unit = js.native
   @JSName("igCategoryChart")
-  def igCategoryChart_getData(methodName: getData): js.Array[js.Any] = js.native
+  def igCategoryChart_getData(methodName: getData): js.Array[Any] = js.native
   @JSName("igCategoryChart")
   def igCategoryChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igCategoryChart")
@@ -5831,9 +5830,9 @@ trait JQuery extends StObject {
     oldItem: js.Object
   ): js.Object = js.native
   @JSName("igCategoryChart")
-  def igCategoryChart_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igCategoryChart_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igCategoryChart")
-  def igCategoryChart_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igCategoryChart_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igCategoryChart")
   def igCategoryChart_option(optionLiteral: option, options: IgCategoryChart): JQuery = js.native
   @JSName("igCategoryChart")
@@ -5841,7 +5840,7 @@ trait JQuery extends StObject {
   @JSName("igCategoryChart")
   def igCategoryChart_setItem(methodName: setItem, index: Double, item: js.Object): js.Object = js.native
   
-  def igChartLegend(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igChartLegend(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Type of the legend.
     */
@@ -5876,13 +5875,13 @@ trait JQuery extends StObject {
   @JSName("igChartLegend")
   def igChartLegend_id(methodName: id): String = js.native
   @JSName("igChartLegend")
-  def igChartLegend_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igChartLegend_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igChartLegend")
-  def igChartLegend_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igChartLegend_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igChartLegend")
   def igChartLegend_option(optionLiteral: option, options: IgChartLegend): JQuery = js.native
   
-  def igCheckboxEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igCheckboxEditor(methodName: String, methodParams: Any*): Any = js.native
   def igCheckboxEditor(optionLiteral: option, optionName: allowNullValue): Boolean = js.native
   def igCheckboxEditor(optionLiteral: option, optionName: allowNullValue, optionValue: Boolean): Unit = js.native
   /**
@@ -6018,14 +6017,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igCheckboxEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igCheckboxEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igCheckboxEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igCheckboxEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Fired on mousedown event.
     */
@@ -6076,8 +6075,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igCheckboxEditor(optionLiteral: option, optionName: mouseup, optionValue: MouseupEvent): Unit = js.native
-  def igCheckboxEditor(optionLiteral: option, optionName: nullValue): js.Any = js.native
-  def igCheckboxEditor(optionLiteral: option, optionName: nullValue, optionValue: js.Any): Unit = js.native
+  def igCheckboxEditor(optionLiteral: option, optionName: nullValue): Any = js.native
+  def igCheckboxEditor(optionLiteral: option, optionName: nullValue, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the readonly attribute. Does not allow editing. Disables changing the checkbox state as an interaction, but it still can be changed programmatically. On submit the current value is sent into the request.
     *
@@ -6153,7 +6152,7 @@ trait JQuery extends StObject {
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igCheckboxEditor(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igCheckboxEditor(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -6162,12 +6161,12 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCheckboxEditor(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igCheckboxEditor(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     */
-  def igCheckboxEditor(optionLiteral: option, optionName: value): js.Any = js.native
+  def igCheckboxEditor(optionLiteral: option, optionName: value): Any = js.native
   /**
     * Fired after the editor's value has been changed.
     */
@@ -6196,7 +6195,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCheckboxEditor(optionLiteral: option, optionName: value, optionValue: js.Any): Unit = js.native
+  def igCheckboxEditor(optionLiteral: option, optionName: value, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the width of the control.
     *
@@ -6228,9 +6227,9 @@ trait JQuery extends StObject {
   @JSName("igCheckboxEditor")
   def igCheckboxEditor_isValid(methodName: isValid): Boolean = js.native
   @JSName("igCheckboxEditor")
-  def igCheckboxEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igCheckboxEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igCheckboxEditor")
-  def igCheckboxEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igCheckboxEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igCheckboxEditor")
   def igCheckboxEditor_option(optionLiteral: option, options: IgCheckboxEditor): JQuery = js.native
   @JSName("igCheckboxEditor")
@@ -6248,7 +6247,7 @@ trait JQuery extends StObject {
   @JSName("igCheckboxEditor")
   def igCheckboxEditor_value(methodName: value, newValue: js.Object): String = js.native
   
-  def igColorPicker(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igColorPicker(methodName: String, methodParams: Any*): Any = js.native
   /**
     * The event is fired when a color is selected.
     *
@@ -6284,7 +6283,7 @@ trait JQuery extends StObject {
     *             visually separated from the default colors. The array should contain the color values.
     *
     */
-  def igColorPicker(optionLiteral: option, optionName: standardColors): js.Array[js.Any] = js.native
+  def igColorPicker(optionLiteral: option, optionName: standardColors): js.Array[Any] = js.native
   /**
     * /Sets the standard colors. Standard colors are the ones displayed in the color picker bottom,
     *             visually separated from the default colors. The array should contain the color values.
@@ -6292,10 +6291,10 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igColorPicker(optionLiteral: option, optionName: standardColors, optionValue: js.Array[js.Any]): Unit = js.native
+  def igColorPicker(optionLiteral: option, optionName: standardColors, optionValue: js.Array[Any]): Unit = js.native
   def igColorPicker(options: IgColorPicker): JQuery = js.native
   
-  def igColorPickerSplitButton(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igColorPickerSplitButton(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event fired when the button is clicked.
     *
@@ -6416,14 +6415,14 @@ trait JQuery extends StObject {
     * Button items.
     *
     */
-  def igColorPickerSplitButton(optionLiteral: option, optionName: items): js.Array[js.Any] = js.native
+  def igColorPickerSplitButton(optionLiteral: option, optionName: items): js.Array[Any] = js.native
   /**
     * Button items.
     *
     *
     * @optionValue New value to be set.
     */
-  def igColorPickerSplitButton(optionLiteral: option, optionName: items, optionValue: js.Array[js.Any]): Unit = js.native
+  def igColorPickerSplitButton(optionLiteral: option, optionName: items, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets whether the default button will be switched when another button is selected.
     *
@@ -6444,9 +6443,9 @@ trait JQuery extends StObject {
   @JSName("igColorPickerSplitButton")
   def igColorPickerSplitButton_expand(methodName: expand, e: js.Object): js.Object = js.native
   @JSName("igColorPickerSplitButton")
-  def igColorPickerSplitButton_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igColorPickerSplitButton_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igColorPickerSplitButton")
-  def igColorPickerSplitButton_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igColorPickerSplitButton_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igColorPickerSplitButton")
   def igColorPickerSplitButton_option(optionLiteral: option, options: IgColorPickerSplitButton): JQuery = js.native
   @JSName("igColorPickerSplitButton")
@@ -6465,9 +6464,9 @@ trait JQuery extends StObject {
   @JSName("igColorPicker")
   def igColorPicker_customColorTable(methodName: customColorTable): js.Object = js.native
   @JSName("igColorPicker")
-  def igColorPicker_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igColorPicker_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igColorPicker")
-  def igColorPicker_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igColorPicker_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igColorPicker")
   def igColorPicker_option(optionLiteral: option, options: IgColorPicker): JQuery = js.native
   @JSName("igColorPicker")
@@ -6477,7 +6476,7 @@ trait JQuery extends StObject {
   @JSName("igColorPicker")
   def igColorPicker_standardColorsTable(methodName: standardColorsTable): js.Object = js.native
   
-  def igCombo(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igCombo(methodName: String, methodParams: Any*): Any = js.native
   /**
     * If set to true:
     * 1. Allows custom value input only with single selection.
@@ -6639,7 +6638,7 @@ trait JQuery extends StObject {
     * Note: if it is set to string and [dataSourceType](ui.igcombo#options:dataSourceType) option is not set, then [$.ig.JSONDataSource](ig.jsondatasource) is used.
     *
     */
-  def igCombo(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igCombo(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Sets data source type (such as "json", "xml", etc). Please refer to the documentation of [$.ig.DataSource](ig.datasource) and its [type](ig.datasource#options:settings.type) property.
     *
@@ -6673,7 +6672,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCombo(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igCombo(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets the delay duration before processing the changes in the input. Useful to boost performance by lowering the count of selection, filtering, auto complete and highlighting operations executed on each input change.
     *
@@ -7396,7 +7395,7 @@ trait JQuery extends StObject {
     * Notes: in order for validator to work, application should ensure that [igValidator](ui.igvalidator) is loaded (ig.ui.validator.js/css files).
     *
     */
-  def igCombo(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igCombo(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets object which contains options supported by [igValidator](ui.igvalidator).
     * Notes: in order for validator to work, application should ensure that [igValidator](ui.igvalidator) is loaded (ig.ui.validator.js/css files).
@@ -7404,7 +7403,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCombo(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igCombo(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets name of column which contains the "value". If it is missing, then the name of first column will be used.
     *
@@ -7548,11 +7547,11 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_filter(methodName: filter, texts: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_filterByExpressions(methodName: filterByExpressions, expressions: js.Array[js.Any]): js.Object = js.native
+  def igCombo_filterByExpressions(methodName: filterByExpressions, expressions: js.Array[Any]): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_filterByExpressions(methodName: filterByExpressions, expressions: js.Array[js.Any], event: js.Object): js.Object = js.native
+  def igCombo_filterByExpressions(methodName: filterByExpressions, expressions: js.Array[Any], event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_filteredItems(methodName: filteredItems): js.Array[js.Any] = js.native
+  def igCombo_filteredItems(methodName: filteredItems): js.Array[Any] = js.native
   @JSName("igCombo")
   def igCombo_index(methodName: index): js.Object = js.native
   @JSName("igCombo")
@@ -7576,7 +7575,7 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_isValueSelected(methodName: isValueSelected, value: js.Object): Boolean = js.native
   @JSName("igCombo")
-  def igCombo_items(methodName: items): js.Array[js.Any] = js.native
+  def igCombo_items(methodName: items): js.Array[Any] = js.native
   @JSName("igCombo")
   def igCombo_itemsFromElement(methodName: itemsFromElement, $element: js.Object): js.Object = js.native
   @JSName("igCombo")
@@ -7608,9 +7607,9 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_openDropDown(methodName: openDropDown, callback: Unit, focusCombo: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igCombo_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igCombo")
-  def igCombo_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igCombo_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igCombo")
   def igCombo_option(optionLiteral: option, options: IgCombo): JQuery = js.native
   @JSName("igCombo")
@@ -7634,7 +7633,7 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_selectAll(methodName: selectAll, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_selectedItems(methodName: selectedItems): js.Array[js.Any] = js.native
+  def igCombo_selectedItems(methodName: selectedItems): js.Array[Any] = js.native
   @JSName("igCombo")
   def igCombo_text(methodName: text): String | js.Object = js.native
   @JSName("igCombo")
@@ -7666,7 +7665,7 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_valueInput(methodName: valueInput): js.Object = js.native
   
-  def igCurrencyEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igCurrencyEditor(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).
@@ -7812,13 +7811,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: excludeKeys): js.Any = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: excludeKeys): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: excludeKeys, optionValue: js.Any): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: excludeKeys, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
@@ -7850,7 +7849,7 @@ trait JQuery extends StObject {
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: groups): js.Array[js.Any] = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: groups): js.Array[Any] = js.native
   /**
     * (array of number objects) /Sets the number of digits in the integer part of a number, which are divided into groups.
     * The "groupSeparator" is inserted between groups.
@@ -7864,7 +7863,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[js.Any]): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets/Sets the height of the control.
     *
@@ -7881,13 +7880,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: includeKeys): js.Any = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: includeKeys): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: includeKeys, optionValue: js.Any): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: includeKeys, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.
     *
@@ -7941,7 +7940,7 @@ trait JQuery extends StObject {
     * Items in the list can be of type number.
     *
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: listItems): js.Array[Any] = js.native
   /**
     * /Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type number.
@@ -7949,7 +7948,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
@@ -7966,14 +7965,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
@@ -7997,13 +7996,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: maxLength): js.Any = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: maxLength): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: maxLength, optionValue: js.Any): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: maxLength, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the maximum value which can be entered in the editor by the end user.
     *
@@ -8296,35 +8295,35 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igCurrencyEditor(optionLiteral: option, optionName: textAlign, optionValue: String): Unit = js.native
-  def igCurrencyEditor(optionLiteral: option, optionName: textMode): js.Any = js.native
-  def igCurrencyEditor(optionLiteral: option, optionName: textMode, optionValue: js.Any): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: textMode): Any = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: textMode, optionValue: Any): Unit = js.native
   /**
     * Removed from numeric editor options
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: toLower): js.Any = js.native
-  /**
-    * Removed from numeric editor options
-    *
-    * @optionValue New value to be set.
-    */
-  def igCurrencyEditor(optionLiteral: option, optionName: toLower, optionValue: js.Any): Unit = js.native
-  /**
-    * Removed from numeric editor options
-    */
-  def igCurrencyEditor(optionLiteral: option, optionName: toUpper): js.Any = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: toLower): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: toUpper, optionValue: js.Any): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: toLower, optionValue: Any): Unit = js.native
+  /**
+    * Removed from numeric editor options
+    */
+  def igCurrencyEditor(optionLiteral: option, optionName: toUpper): Any = js.native
+  /**
+    * Removed from numeric editor options
+    *
+    * @optionValue New value to be set.
+    */
+  def igCurrencyEditor(optionLiteral: option, optionName: toUpper, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -8333,13 +8332,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     *
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: value): js.Any = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: value): Any = js.native
   /**
     * /Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
@@ -8347,7 +8346,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: value, optionValue: js.Any): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: value, optionValue: Any): Unit = js.native
   /**
     * Gets the number of the items to be shown at once when the drop-down list get opened.
     * Notes:
@@ -8397,9 +8396,9 @@ trait JQuery extends StObject {
   @JSName("igCurrencyEditor")
   def igCurrencyEditor_getSelectionStart(methodName: getSelectionStart): Unit = js.native
   @JSName("igCurrencyEditor")
-  def igCurrencyEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igCurrencyEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igCurrencyEditor")
-  def igCurrencyEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igCurrencyEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igCurrencyEditor")
   def igCurrencyEditor_option(optionLiteral: option, options: IgCurrencyEditor): JQuery = js.native
   @JSName("igCurrencyEditor")
@@ -8419,7 +8418,7 @@ trait JQuery extends StObject {
   @JSName("igCurrencyEditor")
   def igCurrencyEditor_value(methodName: value, newValue: Double): Double = js.native
   
-  def igDataChart(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igDataChart(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Set to true in order to override the default behavior in which series do not animate if an axis range changes
     */
@@ -8605,7 +8604,7 @@ trait JQuery extends StObject {
     * The brushes property defines the palette from which automatically assigned series brushes are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igDataChart(optionLiteral: option, optionName: brushes): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: brushes): Any = js.native
   /**
     * Sets the Brushes property.
     * The brushes property defines the palette from which automatically assigned series brushes are selected.
@@ -8613,14 +8612,14 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: brushes, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: brushes, optionValue: Any): Unit = js.native
   /**
     * Gets  the template to use for circle markers on the chart.
     * Defines the marker template used for
     * series with a marker type of circle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: circleMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: circleMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for circle markers on the chart.
     * Defines the marker template used for
@@ -8629,7 +8628,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: circleMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: circleMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  which type of hit testing the series should use.
     */
@@ -8667,7 +8666,7 @@ trait JQuery extends StObject {
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  def igDataChart(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
     */
@@ -8693,7 +8692,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the DefaultInteraction property. The default interaction state defines the chart's response to mouse events.
     */
@@ -8710,7 +8709,7 @@ trait JQuery extends StObject {
     * series with a marker type of diamond.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: diamondMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: diamondMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for diamond markers on the chart.
     * Defines the marker template used for
@@ -8719,7 +8718,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: diamondMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: diamondMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the current Chart's DragModifier property.
     */
@@ -8791,7 +8790,7 @@ trait JQuery extends StObject {
     * series with a marker type of hexagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: hexagonMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: hexagonMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for hexagon markers on the chart.
     * Defines the marker template used for
@@ -8800,14 +8799,14 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: hexagonMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: hexagonMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the template to use for hexagram markers on the chart.
     * Defines the marker template used for
     * series with a marker type of hexagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: hexagramMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: hexagramMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for hexagram markers on the chart.
     * Defines the marker template used for
@@ -8816,7 +8815,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: hexagramMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: hexagramMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * The length, in milliseconds of the highlighting transition.
     */
@@ -8923,20 +8922,20 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igDataChart(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets  the MarkerBrushes property.
     * The marker brushes property defines the palette from which automatically assigned marker brushes are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igDataChart(optionLiteral: option, optionName: markerBrushes): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: markerBrushes): Any = js.native
   /**
     * Sets the MarkerBrushes property.
     * The marker brushes property defines the palette from which automatically assigned marker brushes are selected.
@@ -8944,13 +8943,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: markerBrushes, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: markerBrushes, optionValue: Any): Unit = js.native
   /**
     * Gets  the MarkerOutlines property.
     * The marker outlines property defines the palette from which automatically assigned marker outlines are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igDataChart(optionLiteral: option, optionName: markerOutlines): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: markerOutlines): Any = js.native
   /**
     * Sets the MarkerOutlines property.
     * The marker outlines property defines the palette from which automatically assigned marker outlines are selected.
@@ -8958,13 +8957,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: markerOutlines, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: markerOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the Outlines property.
     * The outlines property defines the palette from which automatically assigned series outlines are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igDataChart(optionLiteral: option, optionName: outlines): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: outlines): Any = js.native
   /**
     * Sets the Outlines property.
     * The outlines property defines the palette from which automatically assigned series outlines are selected.
@@ -8972,7 +8971,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: outlines, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: outlines, optionValue: Any): Unit = js.native
   /**
     * The visibility of the OverviewPlusDetailPane.
     */
@@ -8999,7 +8998,7 @@ trait JQuery extends StObject {
     * series with a marker type of pentagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: pentagonMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: pentagonMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for pentagon markers on the chart.
     * Defines the marker template used for
@@ -9008,14 +9007,14 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: pentagonMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: pentagonMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the template to use for pentragram markers on the chart.
     * Defines the marker template used for
     * series with a marker type of pentagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: pentagramMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: pentagramMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for pentragram markers on the chart.
     * Defines the marker template used for
@@ -9024,7 +9023,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: pentagramMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: pentagramMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the scaling value used by the main canvas rendering context to apply a scale transform to it.
     */
@@ -9061,7 +9060,7 @@ trait JQuery extends StObject {
     * strokePath is hidden.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  def igDataChart(optionLiteral: option, optionName: previewRect): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: previewRect): Any = js.native
   /**
     * Sets the preview rectangle.
     * The preview rectangle may be set to Rect.Empty, in which case the visible preview
@@ -9070,7 +9069,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: previewRect, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: previewRect, optionValue: Any): Unit = js.native
   /**
     * Event fired when the progressive loading state of the series has changed.
     * Function takes arguments evt and ui.
@@ -9099,7 +9098,7 @@ trait JQuery extends StObject {
     * series with a marker type of pyramid.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: pyramidMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: pyramidMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for pyramid markers on the chart.
     * Defines the marker template used for
@@ -9108,7 +9107,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: pyramidMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: pyramidMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Raised when the chart's processing for an update has completed.
     * Function takes arguments evt and ui.
@@ -9333,20 +9332,20 @@ trait JQuery extends StObject {
   /**
     * To set both dimensions of the chart simultaneously an object with a width and height property can be provided
     */
-  def igDataChart(optionLiteral: option, optionName: size): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: size): Any = js.native
   /**
     * To set both dimensions of the chart simultaneously an object with a width and height property can be provided
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: size, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: size, optionValue: Any): Unit = js.native
   /**
     * Gets  the template to use for square markers on the chart.
     * Defines the marker template used for
     * series with a marker type of square.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: squareMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: squareMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for square markers on the chart.
     * Defines the marker template used for
@@ -9355,7 +9354,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: squareMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: squareMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * The subtitle to display for the component.
     */
@@ -9403,13 +9402,13 @@ trait JQuery extends StObject {
   /**
     * The color to use for the subtitle.
     */
-  def igDataChart(optionLiteral: option, optionName: subtitleTextColor): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: subtitleTextColor): Any = js.native
   /**
     * The color to use for the subtitle.
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: subtitleTextColor, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: subtitleTextColor, optionValue: Any): Unit = js.native
   /**
     * The css font property to use for the title.
     */
@@ -9472,7 +9471,7 @@ trait JQuery extends StObject {
     * series with a marker type of tetragram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: tetragramMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: tetragramMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for tetragram markers on the chart.
     * Defines the marker template used for
@@ -9481,7 +9480,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: tetragramMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: tetragramMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * The swatch used to style this widget
     */
@@ -9539,13 +9538,13 @@ trait JQuery extends StObject {
   /**
     * The color to use for the title.
     */
-  def igDataChart(optionLiteral: option, optionName: titleTextColor): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: titleTextColor): Any = js.native
   /**
     * The color to use for the title.
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: titleTextColor, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: titleTextColor, optionValue: Any): Unit = js.native
   /**
     * The css font property to use for the title.
     */
@@ -9684,7 +9683,7 @@ trait JQuery extends StObject {
     * series with a marker type of triangle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igDataChart(optionLiteral: option, optionName: triangleMarkerTemplate): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: triangleMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for triangle markers on the chart.
     * Defines the marker template used for
@@ -9693,7 +9692,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: triangleMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: triangleMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Handle this event in order to specify which columns the Typical price calculation is based on.
     * Function takes arguments evt and ui.
@@ -9780,7 +9779,7 @@ trait JQuery extends StObject {
     * A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  def igDataChart(optionLiteral: option, optionName: windowRect): js.Any = js.native
+  def igDataChart(optionLiteral: option, optionName: windowRect): Any = js.native
   /**
     * Occurs just after the current Chart's window rectangle is changed.
     * Function takes arguments evt and ui.
@@ -9832,7 +9831,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDataChart(optionLiteral: option, optionName: windowRect, optionValue: js.Any): Unit = js.native
+  def igDataChart(optionLiteral: option, optionName: windowRect, optionValue: Any): Unit = js.native
   /**
     * The response to user panning and zooming: whether to update the view immediately while the user action is happening, or to defer the update to after the user action is complete.  The user action will be an action such as a mouse drag which causes panning and/or zooming to occur.
     *
@@ -10059,9 +10058,9 @@ trait JQuery extends StObject {
   @JSName("igDataChart")
   def igDataChart_option(methodName: option): Unit = js.native
   @JSName("igDataChart")
-  def igDataChart_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igDataChart_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igDataChart")
-  def igDataChart_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igDataChart_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igDataChart")
   def igDataChart_option(optionLiteral: option, options: IgDataChart): JQuery = js.native
   @JSName("igDataChart")
@@ -10093,7 +10092,7 @@ trait JQuery extends StObject {
   @JSName("igDataChart")
   def igDataChart_widget(methodName: widget): Unit = js.native
   
-  def igDateEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igDateEditor(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is false, and editor has no value, then value is set to an empty string.
@@ -10318,7 +10317,7 @@ trait JQuery extends StObject {
     * Values with ambiguous time zone could map to unpredictable times depending on the user agent local zone.
     *
     */
-  def igDateEditor(optionLiteral: option, optionName: displayTimeOffset): js.Any = js.native
+  def igDateEditor(optionLiteral: option, optionName: displayTimeOffset): Any = js.native
   /**
     * /Sets time zone offset from UTC, in minutes. The client date values are displayed with this offset instead of the local one.
     * Note: It is recommended that this option is used with an UTC value (e.g. "2016-11-03T14:08:08.504Z") so the outcome is consistent.
@@ -10327,7 +10326,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDateEditor(optionLiteral: option, optionName: displayTimeOffset, optionValue: js.Any): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: displayTimeOffset, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
@@ -10574,13 +10573,13 @@ trait JQuery extends StObject {
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
-  def igDateEditor(optionLiteral: option, optionName: listItems): js.Any = js.native
+  def igDateEditor(optionLiteral: option, optionName: listItems): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     *
     * @optionValue New value to be set.
     */
-  def igDateEditor(optionLiteral: option, optionName: listItems, optionValue: js.Any): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: listItems, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
@@ -10595,30 +10594,30 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igDateEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igDateEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igDateEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     */
-  def igDateEditor(optionLiteral: option, optionName: maxLength): js.Any = js.native
+  def igDateEditor(optionLiteral: option, optionName: maxLength): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     *
     * @optionValue New value to be set.
     */
-  def igDateEditor(optionLiteral: option, optionName: maxLength, optionValue: js.Any): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: maxLength, optionValue: Any): Unit = js.native
   /**
     * Gets the maximum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igDateEditor(optionLiteral: option, optionName: maxValue): Date = js.native
+  def igDateEditor(optionLiteral: option, optionName: maxValue): js.Date = js.native
   /**
     * The maximum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -10626,13 +10625,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDateEditor(optionLiteral: option, optionName: maxValue, optionValue: Date): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: maxValue, optionValue: js.Date): Unit = js.native
   /**
     * Gets the minimum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igDateEditor(optionLiteral: option, optionName: minValue): Date = js.native
+  def igDateEditor(optionLiteral: option, optionName: minValue): js.Date = js.native
   /**
     * The minimum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -10640,12 +10639,12 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDateEditor(optionLiteral: option, optionName: minValue, optionValue: Date): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: minValue, optionValue: js.Date): Unit = js.native
   /**
     * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
     */
-  def igDateEditor(optionLiteral: option, optionName: nullValue): String | Double | Date = js.native
+  def igDateEditor(optionLiteral: option, optionName: nullValue): String | Double | js.Date = js.native
   /**
     * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
@@ -10653,8 +10652,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igDateEditor(optionLiteral: option, optionName: nullValue, optionValue: String): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: nullValue, optionValue: js.Date): Unit = js.native
   def igDateEditor(optionLiteral: option, optionName: nullValue, optionValue: Double): Unit = js.native
-  def igDateEditor(optionLiteral: option, optionName: nullValue, optionValue: Date): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
@@ -10823,8 +10822,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igDateEditor(optionLiteral: option, optionName: textAlign, optionValue: String): Unit = js.native
-  def igDateEditor(optionLiteral: option, optionName: textMode): js.Any = js.native
-  def igDateEditor(optionLiteral: option, optionName: textMode, optionValue: js.Any): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: textMode): Any = js.native
+  def igDateEditor(optionLiteral: option, optionName: textMode, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
@@ -10861,7 +10860,7 @@ trait JQuery extends StObject {
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igDateEditor(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igDateEditor(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -10870,13 +10869,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDateEditor(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the value of the editor. Date object can be set as value. String can be set and the editor will pass it to the Date object constructor and use the corresponding Date object as the value. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igDateEditor(optionLiteral: option, optionName: value): Date = js.native
+  def igDateEditor(optionLiteral: option, optionName: value): js.Date = js.native
   /**
     * /Sets the value of the editor. Date object can be set as value. String can be set and the editor will pass it to the Date object constructor and use the corresponding Date object as the value. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -10884,7 +10883,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDateEditor(optionLiteral: option, optionName: value, optionValue: Date): Unit = js.native
+  def igDateEditor(optionLiteral: option, optionName: value, optionValue: js.Date): Unit = js.native
   /**
     * Gets/Sets how many items should be shown at once.
     * Notes:
@@ -10938,7 +10937,7 @@ trait JQuery extends StObject {
   @JSName("igDateEditor")
   def igDateEditor_findListItemIndex(methodName: findListItemIndex): Unit = js.native
   @JSName("igDateEditor")
-  def igDateEditor_getSelectedDate(methodName: getSelectedDate): Date = js.native
+  def igDateEditor_getSelectedDate(methodName: getSelectedDate): js.Date = js.native
   @JSName("igDateEditor")
   def igDateEditor_getSelectedListItem(methodName: getSelectedListItem): Unit = js.native
   @JSName("igDateEditor")
@@ -10946,13 +10945,13 @@ trait JQuery extends StObject {
   @JSName("igDateEditor")
   def igDateEditor_isValid(methodName: isValid): Boolean = js.native
   @JSName("igDateEditor")
-  def igDateEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igDateEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igDateEditor")
-  def igDateEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igDateEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igDateEditor")
   def igDateEditor_option(optionLiteral: option, options: IgDateEditor): JQuery = js.native
   @JSName("igDateEditor")
-  def igDateEditor_selectDate(methodName: selectDate, date: Date): Unit = js.native
+  def igDateEditor_selectDate(methodName: selectDate, date: js.Date): Unit = js.native
   @JSName("igDateEditor")
   def igDateEditor_selectedListIndex(methodName: selectedListIndex): Unit = js.native
   @JSName("igDateEditor")
@@ -10970,11 +10969,11 @@ trait JQuery extends StObject {
   @JSName("igDateEditor")
   def igDateEditor_spinUpButton(methodName: spinUpButton): String = js.native
   @JSName("igDateEditor")
-  def igDateEditor_value(methodName: value): Date = js.native
+  def igDateEditor_value(methodName: value): js.Date = js.native
   @JSName("igDateEditor")
-  def igDateEditor_value(methodName: value, newValue: Date): Date = js.native
+  def igDateEditor_value(methodName: value, newValue: js.Date): js.Date = js.native
   
-  def igDatePicker(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igDatePicker(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is false, and editor has no value, then value is set to an empty string.
@@ -11185,14 +11184,14 @@ trait JQuery extends StObject {
     * Gets/Sets the options supported by the [jquery.ui.datepicker](http://api.jqueryui.com/datepicker/). Only options related to the drop-down calendar are supported.
     *
     */
-  def igDatePicker(optionLiteral: option, optionName: datepickerOptions): js.Any = js.native
+  def igDatePicker(optionLiteral: option, optionName: datepickerOptions): Any = js.native
   /**
     * /Sets the options supported by the [jquery.ui.datepicker](http://api.jqueryui.com/datepicker/). Only options related to the drop-down calendar are supported.
     *
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: datepickerOptions, optionValue: js.Any): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: datepickerOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the disabled attribute for the input. If set to true the input is disabled, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is not submitted.
     *
@@ -11211,7 +11210,7 @@ trait JQuery extends StObject {
     * Values with ambiguous time zone could map to unpredictable times depending on the user agent local zone.
     *
     */
-  def igDatePicker(optionLiteral: option, optionName: displayTimeOffset): js.Any = js.native
+  def igDatePicker(optionLiteral: option, optionName: displayTimeOffset): Any = js.native
   /**
     * /Sets time zone offset from UTC, in minutes. The client date values are displayed with this offset instead of the local one.
     * Note: It is recommended that this option is used with an UTC value (e.g. "2016-11-03T14:08:08.504Z") so the outcome is consistent.
@@ -11220,7 +11219,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: displayTimeOffset, optionValue: js.Any): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: displayTimeOffset, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
@@ -11481,13 +11480,13 @@ trait JQuery extends StObject {
   /**
     * This option is inherited from a parent widget and it's not applicable for igDatePicker
     */
-  def igDatePicker(optionLiteral: option, optionName: listItems): js.Any = js.native
+  def igDatePicker(optionLiteral: option, optionName: listItems): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDatePicker
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: listItems, optionValue: js.Any): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: listItems, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDatePicker
     */
@@ -11502,30 +11501,30 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igDatePicker(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igDatePicker(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     */
-  def igDatePicker(optionLiteral: option, optionName: maxLength): js.Any = js.native
+  def igDatePicker(optionLiteral: option, optionName: maxLength): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: maxLength, optionValue: js.Any): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: maxLength, optionValue: Any): Unit = js.native
   /**
     * Gets the maximum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igDatePicker(optionLiteral: option, optionName: maxValue): Date = js.native
+  def igDatePicker(optionLiteral: option, optionName: maxValue): js.Date = js.native
   /**
     * The maximum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -11533,13 +11532,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: maxValue, optionValue: Date): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: maxValue, optionValue: js.Date): Unit = js.native
   /**
     * Gets the minimum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igDatePicker(optionLiteral: option, optionName: minValue): Date = js.native
+  def igDatePicker(optionLiteral: option, optionName: minValue): js.Date = js.native
   /**
     * The minimum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -11547,12 +11546,12 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: minValue, optionValue: Date): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: minValue, optionValue: js.Date): Unit = js.native
   /**
     * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
     */
-  def igDatePicker(optionLiteral: option, optionName: nullValue): String | Double | Date = js.native
+  def igDatePicker(optionLiteral: option, optionName: nullValue): String | Double | js.Date = js.native
   /**
     * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
@@ -11560,8 +11559,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igDatePicker(optionLiteral: option, optionName: nullValue, optionValue: String): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: nullValue, optionValue: js.Date): Unit = js.native
   def igDatePicker(optionLiteral: option, optionName: nullValue, optionValue: Double): Unit = js.native
-  def igDatePicker(optionLiteral: option, optionName: nullValue, optionValue: Date): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
@@ -11742,8 +11741,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igDatePicker(optionLiteral: option, optionName: textAlign, optionValue: String): Unit = js.native
-  def igDatePicker(optionLiteral: option, optionName: textMode): js.Any = js.native
-  def igDatePicker(optionLiteral: option, optionName: textMode, optionValue: js.Any): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: textMode): Any = js.native
+  def igDatePicker(optionLiteral: option, optionName: textMode, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
@@ -11780,7 +11779,7 @@ trait JQuery extends StObject {
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igDatePicker(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igDatePicker(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -11789,13 +11788,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the value of the editor. Date object can be set as value. String can be set and the editor will pass it to the Date object constructor and use the corresponding Date object as the value. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igDatePicker(optionLiteral: option, optionName: value): Date = js.native
+  def igDatePicker(optionLiteral: option, optionName: value): js.Date = js.native
   /**
     * /Sets the value of the editor. Date object can be set as value. String can be set and the editor will pass it to the Date object constructor and use the corresponding Date object as the value. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -11803,7 +11802,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDatePicker(optionLiteral: option, optionName: value, optionValue: Date): Unit = js.native
+  def igDatePicker(optionLiteral: option, optionName: value, optionValue: js.Date): Unit = js.native
   /**
     * Gets/Sets how many items should be shown at once.
     * Notes:
@@ -11861,7 +11860,7 @@ trait JQuery extends StObject {
   @JSName("igDatePicker")
   def igDatePicker_getCalendar(methodName: getCalendar): String = js.native
   @JSName("igDatePicker")
-  def igDatePicker_getSelectedDate(methodName: getSelectedDate): Date = js.native
+  def igDatePicker_getSelectedDate(methodName: getSelectedDate): js.Date = js.native
   @JSName("igDatePicker")
   def igDatePicker_getSelectedListItem(methodName: getSelectedListItem): Unit = js.native
   @JSName("igDatePicker")
@@ -11869,13 +11868,13 @@ trait JQuery extends StObject {
   @JSName("igDatePicker")
   def igDatePicker_isValid(methodName: isValid): Boolean = js.native
   @JSName("igDatePicker")
-  def igDatePicker_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igDatePicker_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igDatePicker")
-  def igDatePicker_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igDatePicker_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igDatePicker")
   def igDatePicker_option(optionLiteral: option, options: IgDatePicker): JQuery = js.native
   @JSName("igDatePicker")
-  def igDatePicker_selectDate(methodName: selectDate, date: Date): Unit = js.native
+  def igDatePicker_selectDate(methodName: selectDate, date: js.Date): Unit = js.native
   @JSName("igDatePicker")
   def igDatePicker_selectedListIndex(methodName: selectedListIndex): Unit = js.native
   @JSName("igDatePicker")
@@ -11893,11 +11892,11 @@ trait JQuery extends StObject {
   @JSName("igDatePicker")
   def igDatePicker_spinUpButton(methodName: spinUpButton): String = js.native
   @JSName("igDatePicker")
-  def igDatePicker_value(methodName: value): Date = js.native
+  def igDatePicker_value(methodName: value): js.Date = js.native
   @JSName("igDatePicker")
-  def igDatePicker_value(methodName: value, newValue: Date): Date = js.native
+  def igDatePicker_value(methodName: value, newValue: js.Date): js.Date = js.native
   
-  def igDialog(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igDialog(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event which is raised after the end of the animation when the dialog was closed or opened.
     */
@@ -11922,14 +11921,14 @@ trait JQuery extends StObject {
     * Gets/Sets the animation applied to the dialog when it is closed. That can be any object supported by the jquery hide(param) method.
     *
     */
-  def igDialog(optionLiteral: option, optionName: closeAnimation): js.Any = js.native
+  def igDialog(optionLiteral: option, optionName: closeAnimation): Any = js.native
   /**
     * /Sets the animation applied to the dialog when it is closed. That can be any object supported by the jquery hide(param) method.
     *
     *
     * @optionValue New value to be set.
     */
-  def igDialog(optionLiteral: option, optionName: closeAnimation, optionValue: js.Any): Unit = js.native
+  def igDialog(optionLiteral: option, optionName: closeAnimation, optionValue: Any): Unit = js.native
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets the title/tooltip for the close button in the dialog. Use option [locale.closeButtonTitle](ui.igdialog#options:locale.closeButtonTitle).
@@ -11961,7 +11960,7 @@ trait JQuery extends StObject {
     * Note: If the "position" of the container is not set or it is "static", then the position is set to "relative".
     *
     */
-  def igDialog(optionLiteral: option, optionName: container): js.Any = js.native
+  def igDialog(optionLiteral: option, optionName: container): Any = js.native
   /**
     * /Sets the container html element for the dialog.
     * That can be reference to html element, jquery selector or jquery object.
@@ -11971,7 +11970,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDialog(optionLiteral: option, optionName: container, optionValue: js.Any): Unit = js.native
+  def igDialog(optionLiteral: option, optionName: container, optionValue: Any): Unit = js.native
   /**
     * Gets the name of the css class which is applied to the main DIV element of the dialog.
     *
@@ -12002,7 +12001,7 @@ trait JQuery extends StObject {
     * and dialog-state will be set to normal if it was maximized.
     *
     */
-  def igDialog(optionLiteral: option, optionName: enableDblclick): js.Any = js.native
+  def igDialog(optionLiteral: option, optionName: enableDblclick): Any = js.native
   /**
     * /Sets the processing of the double-click on the dialog-header.If this option is not false and dialog was minimized, then its state will be set to normal.
     * If this option is set to "auto" and showMaximizeButton is enabled or if this option is set to true, then the dialog will be maximized when it was in normal state,
@@ -12011,7 +12010,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDialog(optionLiteral: option, optionName: enableDblclick, optionValue: js.Any): Unit = js.native
+  def igDialog(optionLiteral: option, optionName: enableDblclick, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the ability to adjust the state of the header depending on focused and not-focused states. Note: the "trackFocus" option should be enabled.
     *
@@ -12213,14 +12212,14 @@ trait JQuery extends StObject {
     * Gets/Sets the animation applied to the dialog when it is opened. That can be any object supported by the jquery show(param) method.
     *
     */
-  def igDialog(optionLiteral: option, optionName: openAnimation): js.Any = js.native
+  def igDialog(optionLiteral: option, optionName: openAnimation): Any = js.native
   /**
     * /Sets the animation applied to the dialog when it is opened. That can be any object supported by the jquery show(param) method.
     *
     *
     * @optionValue New value to be set.
     */
-  def igDialog(optionLiteral: option, optionName: openAnimation, optionValue: js.Any): Unit = js.native
+  def igDialog(optionLiteral: option, optionName: openAnimation, optionValue: Any): Unit = js.native
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets the title/tooltip for the pin button in the dialog. Use option [locale.pinButtonTitle](ui.igdialog#options:locale.pinButtonTitle).
@@ -12272,7 +12271,7 @@ trait JQuery extends StObject {
     * supported by jquery.position(param) method. Examples: { left: 100, top: 200 }, { my: "left top", at: "left top", offset: "100 200" }
     *
     */
-  def igDialog(optionLiteral: option, optionName: position): js.Any = js.native
+  def igDialog(optionLiteral: option, optionName: position): Any = js.native
   /**
     * /Sets the initial position of the dialog. That should be an object, which contains "top" and "left" members or an object
     * supported by jquery.position(param) method. Examples: { left: 100, top: 200 }, { my: "left top", at: "left top", offset: "100 200" }
@@ -12280,7 +12279,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igDialog(optionLiteral: option, optionName: position, optionValue: js.Any): Unit = js.native
+  def igDialog(optionLiteral: option, optionName: position, optionValue: Any): Unit = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
@@ -12541,9 +12540,9 @@ trait JQuery extends StObject {
   @JSName("igDialog")
   def igDialog_open(methodName: open): js.Object = js.native
   @JSName("igDialog")
-  def igDialog_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igDialog_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igDialog")
-  def igDialog_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igDialog_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igDialog")
   def igDialog_option(optionLiteral: option, options: IgDialog): JQuery = js.native
   @JSName("igDialog")
@@ -12557,7 +12556,7 @@ trait JQuery extends StObject {
   @JSName("igDialog")
   def igDialog_unpin(methodName: unpin): js.Object = js.native
   
-  def igDoughnutChart(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igDoughnutChart(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets  whether the slices can be exploded.
     */
@@ -12646,13 +12645,13 @@ trait JQuery extends StObject {
   /**
     * Gets  the style used when a slice is selected.
     */
-  def igDoughnutChart(optionLiteral: option, optionName: selectedStyle): js.Any = js.native
+  def igDoughnutChart(optionLiteral: option, optionName: selectedStyle): Any = js.native
   /**
     * Sets the style used when a slice is selected.
     *
     * @optionValue New value to be set.
     */
-  def igDoughnutChart(optionLiteral: option, optionName: selectedStyle, optionValue: js.Any): Unit = js.native
+  def igDoughnutChart(optionLiteral: option, optionName: selectedStyle, optionValue: Any): Unit = js.native
   /**
     * An array of series objects.
     */
@@ -12796,9 +12795,9 @@ trait JQuery extends StObject {
   @JSName("igDoughnutChart")
   def igDoughnutChart_getHoleRadius(methodName: getHoleRadius): Double = js.native
   @JSName("igDoughnutChart")
-  def igDoughnutChart_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igDoughnutChart_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igDoughnutChart")
-  def igDoughnutChart_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igDoughnutChart_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igDoughnutChart")
   def igDoughnutChart_option(optionLiteral: option, options: IgDoughnutChart): JQuery = js.native
   @JSName("igDoughnutChart")
@@ -12806,7 +12805,7 @@ trait JQuery extends StObject {
   @JSName("igDoughnutChart")
   def igDoughnutChart_updateSeries(methodName: updateSeries, value: js.Object): Unit = js.native
   
-  def igEditorFilter(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igEditorFilter(methodName: String, methodParams: Any*): Any = js.native
   def igEditorFilter(options: IgEditorFilter): JQuery = js.native
   @JSName("igEditorFilter")
   def igEditorFilter_destroy(methodName: destroy): Unit = js.native
@@ -12815,9 +12814,9 @@ trait JQuery extends StObject {
   @JSName("igEditorFilter")
   def igEditorFilter_hasInvalidMessage(methodName: hasInvalidMessage): Unit = js.native
   @JSName("igEditorFilter")
-  def igEditorFilter_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igEditorFilter_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igEditorFilter")
-  def igEditorFilter_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igEditorFilter_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igEditorFilter")
   def igEditorFilter_option(optionLiteral: option, options: IgEditorFilter): JQuery = js.native
   @JSName("igEditorFilter")
@@ -12827,19 +12826,19 @@ trait JQuery extends StObject {
   @JSName("igEditorFilter")
   def igEditorFilter_validator(methodName: validator): Unit = js.native
   
-  def igFinancialChart(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igFinancialChart(methodName: String, methodParams: Any*): Any = js.native
   /**
     * A FinancialChartRangeSelectorOptionCollection containing the available range selector options on the toolbar.
     * This will be the intersection of the user-defined range selector options, if any, and the range selector options which are automatically determined based on the range of data.
     */
-  def igFinancialChart(optionLiteral: option, optionName: actualRangeSelectorOptions): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: actualRangeSelectorOptions): Any = js.native
   /**
     * A FinancialChartRangeSelectorOptionCollection containing the available range selector options on the toolbar.
     * This will be the intersection of the user-defined range selector options, if any, and the range selector options which are automatically determined based on the range of data.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: actualRangeSelectorOptions, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: actualRangeSelectorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets  a value indicating whether grid and tick lines are aligned to device pixels.
     */
@@ -12887,7 +12886,7 @@ trait JQuery extends StObject {
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: brushes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: brushes): Any = js.native
   /**
     * Sets the palette of brushes to use for coloring the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -12895,7 +12894,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: brushes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: brushes, optionValue: Any): Unit = js.native
   /**
     * Occurs when the style of a callout is updated.
     */
@@ -12929,13 +12928,13 @@ trait JQuery extends StObject {
   /**
     * Gets  the collection of callout data to be annotated.
     */
-  def igFinancialChart(optionLiteral: option, optionName: calloutsItemsSource): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: calloutsItemsSource): Any = js.native
   /**
     * Sets the collection of callout data to be annotated.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: calloutsItemsSource, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: calloutsItemsSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the member path of the label data for the callouts.
     */
@@ -12980,8 +12979,8 @@ trait JQuery extends StObject {
     * The type of price series to display in the main chart.
     */
   def igFinancialChart(optionLiteral: option, optionName: chartType): String = js.native
-  def igFinancialChart(optionLiteral: option, optionName: chartTypePickerTemplate): js.Any = js.native
-  def igFinancialChart(optionLiteral: option, optionName: chartTypePickerTemplate, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: chartTypePickerTemplate): Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: chartTypePickerTemplate, optionValue: Any): Unit = js.native
   /**
     * The type of price series to display in the main chart.
     *
@@ -12991,13 +12990,13 @@ trait JQuery extends StObject {
   /**
     * Gets  a function for creating wrapped tooltip
     */
-  def igFinancialChart(optionLiteral: option, optionName: createWrappedTooltip): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: createWrappedTooltip): Any = js.native
   /**
     * Sets a function for creating wrapped tooltip
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: createWrappedTooltip, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: createWrappedTooltip, optionValue: Any): Unit = js.native
   /**
     * Gets  whether annotations are shown along the axis for crosshair values
     */
@@ -13032,14 +13031,14 @@ trait JQuery extends StObject {
     * The names of custom indicators to add to the chart.
     * When CustomIndicatorNames is set, the ApplyCustomIndicators event will be raised for each custom indicator name.
     */
-  def igFinancialChart(optionLiteral: option, optionName: customIndicatorNames): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: customIndicatorNames): Any = js.native
   /**
     * The names of custom indicators to add to the chart.
     * When CustomIndicatorNames is set, the ApplyCustomIndicators event will be raised for each custom indicator name.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: customIndicatorNames, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: customIndicatorNames, optionValue: Any): Unit = js.native
   /**
     * Event which is raised before data binding.
     * Return false in order to cancel data binding.
@@ -13081,7 +13080,7 @@ trait JQuery extends StObject {
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  def igFinancialChart(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Gets  data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
@@ -13109,17 +13108,17 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets  a set of property paths that should be excluded from consideration by the category chart.
     */
-  def igFinancialChart(optionLiteral: option, optionName: excludedProperties): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: excludedProperties): Any = js.native
   /**
     * Sets a set of property paths that should be excluded from consideration by the category chart.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: excludedProperties, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: excludedProperties, optionValue: Any): Unit = js.native
   /**
     * Gets  whether annotations for the final value of each series is displayed on the axis.
     */
@@ -13133,13 +13132,13 @@ trait JQuery extends StObject {
   /**
     * Gets  a legend displayed between toolbar and chart's plot area
     */
-  def igFinancialChart(optionLiteral: option, optionName: financialChartLegend): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: financialChartLegend): Any = js.native
   /**
     * Sets a legend displayed between toolbar and chart's plot area
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: financialChartLegend, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: financialChartLegend, optionValue: Any): Unit = js.native
   /**
     * The height of the chart.
     */
@@ -13173,35 +13172,35 @@ trait JQuery extends StObject {
   /**
     * Gets  a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     */
-  def igFinancialChart(optionLiteral: option, optionName: includedProperties): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: includedProperties): Any = js.native
   /**
     * Sets a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: includedProperties, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: includedProperties, optionValue: Any): Unit = js.native
   /**
     * Brushes to use for financial indicators.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: indicatorBrushes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorBrushes): Any = js.native
   /**
     * Brushes to use for financial indicators.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: indicatorBrushes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorBrushes, optionValue: Any): Unit = js.native
   /**
     * The display types of financial indicators.
     */
-  def igFinancialChart(optionLiteral: option, optionName: indicatorDisplayTypes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorDisplayTypes): Any = js.native
   /**
     * The display types of financial indicators.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: indicatorDisplayTypes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorDisplayTypes, optionValue: Any): Unit = js.native
   /**
     * The long period of financial indicators, where applicable.
     */
@@ -13212,8 +13211,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igFinancialChart(optionLiteral: option, optionName: indicatorLongPeriod, optionValue: Double): Unit = js.native
-  def igFinancialChart(optionLiteral: option, optionName: indicatorMenuTemplate): js.Any = js.native
-  def igFinancialChart(optionLiteral: option, optionName: indicatorMenuTemplate, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorMenuTemplate): Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorMenuTemplate, optionValue: Any): Unit = js.native
   /**
     * The multiplier of financial indicators, where applicable.
     */
@@ -13228,14 +13227,14 @@ trait JQuery extends StObject {
     * Brushes to use for negative elements in financial indicators.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: indicatorNegativeBrushes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorNegativeBrushes): Any = js.native
   /**
     * Brushes to use for negative elements in financial indicators.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: indicatorNegativeBrushes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorNegativeBrushes, optionValue: Any): Unit = js.native
   /**
     * The period of financial indicators, where applicable.
     */
@@ -13289,13 +13288,13 @@ trait JQuery extends StObject {
   /**
     * A collection indicating what financial indicator types to display on the Financial Chart.
     */
-  def igFinancialChart(optionLiteral: option, optionName: indicatorTypes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorTypes): Any = js.native
   /**
     * A collection indicating what financial indicator types to display on the Financial Chart.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: indicatorTypes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: indicatorTypes, optionValue: Any): Unit = js.native
   /**
     * Gets  whether the chart can be horizontally zoomed through user interactions.
     */
@@ -13368,7 +13367,7 @@ trait JQuery extends StObject {
     * Databinding can be further configured by attributing the data item classes
     * with the DataSeriesMemberIntentAttribute.
     */
-  def igFinancialChart(optionLiteral: option, optionName: itemsSource): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: itemsSource): Any = js.native
   /**
     * Sets a collection of data items used to generate the chart.
     * The ItemsSource of this chart can be a list of objects containing one or more numeric properties.
@@ -13379,7 +13378,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: itemsSource, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: itemsSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the left margin of the chart content.
     */
@@ -13394,20 +13393,20 @@ trait JQuery extends StObject {
     * Gets  the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     */
-  def igFinancialChart(optionLiteral: option, optionName: legend): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: legend): Any = js.native
   /**
     * Sets the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: legend, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: legend, optionValue: Any): Unit = js.native
   /**
     * Gets  the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: markerBrushes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: markerBrushes): Any = js.native
   /**
     * Sets the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
@@ -13415,7 +13414,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: markerBrushes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: markerBrushes, optionValue: Any): Unit = js.native
   /**
     * Gets  the maximum number of markers displyed in the plot area of the chart.
     */
@@ -13431,7 +13430,7 @@ trait JQuery extends StObject {
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: markerOutlines): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: markerOutlines): Any = js.native
   /**
     * Sets the palette of brushes used for rendering outlines of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
@@ -13439,19 +13438,19 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: markerOutlines, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: markerOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     */
-  def igFinancialChart(optionLiteral: option, optionName: markerTypes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: markerTypes): Any = js.native
   /**
     * Sets the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: markerTypes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: markerTypes, optionValue: Any): Unit = js.native
   /**
     * Gets  maximum number of displayed records in chart.
     */
@@ -13466,32 +13465,32 @@ trait JQuery extends StObject {
     * Gets  the palette used for coloring negative items of Waterfall chart type.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: negativeBrushes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: negativeBrushes): Any = js.native
   /**
     * Sets the palette used for coloring negative items of Waterfall chart type.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: negativeBrushes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: negativeBrushes, optionValue: Any): Unit = js.native
   /**
     * Brushes to use for drawing negative elements, when using a chart type with contextual coloring, such as Waterfall.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: negativeOutlines): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: negativeOutlines): Any = js.native
   /**
     * Brushes to use for drawing negative elements, when using a chart type with contextual coloring, such as Waterfall.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: negativeOutlines, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: negativeOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the palette of brushes to use for outlines on the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: outlines): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: outlines): Any = js.native
   /**
     * Sets the palette of brushes to use for outlines on the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -13499,33 +13498,33 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: outlines, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: outlines, optionValue: Any): Unit = js.native
   /**
     * Brushes to use for filling financial overlays.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: overlayBrushes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: overlayBrushes): Any = js.native
   /**
     * Brushes to use for filling financial overlays.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: overlayBrushes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: overlayBrushes, optionValue: Any): Unit = js.native
   /**
     * Brushes to use for outlining financial overlays.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: overlayOutlines): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: overlayOutlines): Any = js.native
   /**
     * Brushes to use for outlining financial overlays.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: overlayOutlines, optionValue: js.Any): Unit = js.native
-  def igFinancialChart(optionLiteral: option, optionName: overlayPickerTemplate): js.Any = js.native
-  def igFinancialChart(optionLiteral: option, optionName: overlayPickerTemplate, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: overlayOutlines, optionValue: Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: overlayPickerTemplate): Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: overlayPickerTemplate, optionValue: Any): Unit = js.native
   /**
     * The outline thickness of financial overlays.
     */
@@ -13539,13 +13538,13 @@ trait JQuery extends StObject {
   /**
     * A collection indicating what financial overlay types to display on the Financial Chart.
     */
-  def igFinancialChart(optionLiteral: option, optionName: overlayTypes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: overlayTypes): Any = js.native
   /**
     * A collection indicating what financial overlay types to display on the Financial Chart.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: overlayTypes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: overlayTypes, optionValue: Any): Unit = js.native
   /**
     * Gets  the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
@@ -13573,15 +13572,15 @@ trait JQuery extends StObject {
   /**
     * A FinancialChartRangeSelectorOptionCollection containing the available range selector options on the toolbar.
     */
-  def igFinancialChart(optionLiteral: option, optionName: rangeSelectorOptions): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: rangeSelectorOptions): Any = js.native
   /**
     * A FinancialChartRangeSelectorOptionCollection containing the available range selector options on the toolbar.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: rangeSelectorOptions, optionValue: js.Any): Unit = js.native
-  def igFinancialChart(optionLiteral: option, optionName: rangeSelectorTemplate): js.Any = js.native
-  def igFinancialChart(optionLiteral: option, optionName: rangeSelectorTemplate, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: rangeSelectorOptions, optionValue: Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: rangeSelectorTemplate): Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: rangeSelectorTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the rendering resolution for all series in this chart.
     * Where n = Resolution, for every n horizontal pixels, combine all items into a single datapoint.  When Resolution = 0, all datapoints will be rendered as graphical objects.  Charts with a higher resolution will have faster performance.
@@ -13876,28 +13875,28 @@ trait JQuery extends StObject {
   def igFinancialChart(optionLiteral: option, optionName: toolTipType, optionValue: String): Unit = js.native
   def igFinancialChart(optionLiteral: option, optionName: toolbarHeight): Double = js.native
   def igFinancialChart(optionLiteral: option, optionName: toolbarHeight, optionValue: Double): Unit = js.native
-  def igFinancialChart(optionLiteral: option, optionName: toolbarTemplate): js.Any = js.native
-  def igFinancialChart(optionLiteral: option, optionName: toolbarTemplate, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: toolbarTemplate): Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: toolbarTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the id of a template element to use for tooltips, or markup representing the tooltip template.
     */
-  def igFinancialChart(optionLiteral: option, optionName: tooltipTemplate): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: tooltipTemplate): Any = js.native
   /**
     * Sets the id of a template element to use for tooltips, or markup representing the tooltip template.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: tooltipTemplate, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: tooltipTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the names of tooltip templates
     */
-  def igFinancialChart(optionLiteral: option, optionName: tooltipTemplates): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: tooltipTemplates): Any = js.native
   /**
     * Sets the names of tooltip templates
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: tooltipTemplates, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: tooltipTemplates, optionValue: Any): Unit = js.native
   /**
     * Gets  the top margin of the chart content.
     */
@@ -13922,20 +13921,20 @@ trait JQuery extends StObject {
     * Gets  the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     */
-  def igFinancialChart(optionLiteral: option, optionName: transitionEasingFunction): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: transitionEasingFunction): Any = js.native
   /**
     * Sets the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: transitionEasingFunction, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: transitionEasingFunction, optionValue: Any): Unit = js.native
   /**
     * Gets  the palette of brushes to used for coloring trend lines in this chart.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: trendLineBrushes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: trendLineBrushes): Any = js.native
   /**
     * Sets the palette of brushes to used for coloring trend lines in this chart.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -13943,7 +13942,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: trendLineBrushes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: trendLineBrushes, optionValue: Any): Unit = js.native
   def igFinancialChart(optionLiteral: option, optionName: trendLinePeriod): Double = js.native
   def igFinancialChart(optionLiteral: option, optionName: trendLinePeriod, optionValue: Double): Unit = js.native
   /**
@@ -13963,8 +13962,8 @@ trait JQuery extends StObject {
     *
     */
   def igFinancialChart(optionLiteral: option, optionName: trendLineType): String = js.native
-  def igFinancialChart(optionLiteral: option, optionName: trendLineTypePickerTemplate): js.Any = js.native
-  def igFinancialChart(optionLiteral: option, optionName: trendLineTypePickerTemplate, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: trendLineTypePickerTemplate): Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: trendLineTypePickerTemplate, optionValue: Any): Unit = js.native
   /**
     * Sets the formula used for calculating trend lines in this chart.This property applies only to these chart types: point, line, spline, and bubble
     *
@@ -14014,26 +14013,26 @@ trait JQuery extends StObject {
     * Brushes to use for filling volume series in the volume pane.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: volumeBrushes): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: volumeBrushes): Any = js.native
   /**
     * Brushes to use for filling volume series in the volume pane.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: volumeBrushes, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: volumeBrushes, optionValue: Any): Unit = js.native
   /**
     * Brushes to use for outlining volume series in the volume pane.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFinancialChart(optionLiteral: option, optionName: volumeOutlines): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: volumeOutlines): Any = js.native
   /**
     * Brushes to use for outlining volume series in the volume pane.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: volumeOutlines, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: volumeOutlines, optionValue: Any): Unit = js.native
   /**
     * The outline thickness of volume series in the volume pane.
     */
@@ -14048,8 +14047,8 @@ trait JQuery extends StObject {
     * The type of series to display in the volume pane.
     */
   def igFinancialChart(optionLiteral: option, optionName: volumeType): String = js.native
-  def igFinancialChart(optionLiteral: option, optionName: volumeTypePickerTemplate): js.Any = js.native
-  def igFinancialChart(optionLiteral: option, optionName: volumeTypePickerTemplate, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: volumeTypePickerTemplate): Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: volumeTypePickerTemplate, optionValue: Any): Unit = js.native
   /**
     * The type of series to display in the volume pane.
     *
@@ -14059,13 +14058,13 @@ trait JQuery extends StObject {
   /**
     * Gets  the widget of this control
     */
-  def igFinancialChart(optionLiteral: option, optionName: widget): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: widget): Any = js.native
   /**
     * Sets the widget of this control
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: widget, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: widget, optionValue: Any): Unit = js.native
   /**
     * The width of the chart.
     */
@@ -14081,7 +14080,7 @@ trait JQuery extends StObject {
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  def igFinancialChart(optionLiteral: option, optionName: windowRect): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: windowRect): Any = js.native
   /**
     * Sets the rectangle representing the current scroll and zoom state of the chart.
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
@@ -14089,7 +14088,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: windowRect, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: windowRect, optionValue: Any): Unit = js.native
   /**
     * Gets  the distance between the X-axis and the bottom of the chart.
     */
@@ -14103,13 +14102,13 @@ trait JQuery extends StObject {
   /**
     * Gets  function which takes an context object and returns a formatted label for the X-axis.
     */
-  def igFinancialChart(optionLiteral: option, optionName: xAxisFormatLabel): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: xAxisFormatLabel): Any = js.native
   /**
     * Sets function which takes an context object and returns a formatted label for the X-axis.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: xAxisFormatLabel, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: xAxisFormatLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  whether to invert the direction of the X-axis by placing the first data items on the right side of the chart.
     */
@@ -14123,7 +14122,7 @@ trait JQuery extends StObject {
   /**
     * Gets  the format for labels along the X-axis.
     */
-  def igFinancialChart(optionLiteral: option, optionName: xAxisLabel): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: xAxisLabel): Any = js.native
   /**
     * Gets  the angle of rotation for labels along the X-axis.
     */
@@ -14229,7 +14228,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: xAxisLabel, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: xAxisLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the color to apply to major gridlines along the X-axis.
     */
@@ -14253,23 +14252,23 @@ trait JQuery extends StObject {
   /**
     * Gets  maximum value on x-axis
     */
-  def igFinancialChart(optionLiteral: option, optionName: xAxisMaximumValue): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: xAxisMaximumValue): Any = js.native
   /**
     * Sets maximum value on x-axis
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: xAxisMaximumValue, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: xAxisMaximumValue, optionValue: Any): Unit = js.native
   /**
     * Gets  minimum value on x-axis
     */
-  def igFinancialChart(optionLiteral: option, optionName: xAxisMinimumValue): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: xAxisMinimumValue): Any = js.native
   /**
     * Sets minimum value on x-axis
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: xAxisMinimumValue, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: xAxisMinimumValue, optionValue: Any): Unit = js.native
   /**
     * Gets  the color to apply to minor gridlines along the X-axis.
     */
@@ -14483,13 +14482,13 @@ trait JQuery extends StObject {
   /**
     * Gets  function which takes a context object and returns a formatted label for the Y-axis.
     */
-  def igFinancialChart(optionLiteral: option, optionName: yAxisFormatLabel): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: yAxisFormatLabel): Any = js.native
   /**
     * Sets function which takes a context object and returns a formatted label for the Y-axis.
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: yAxisFormatLabel, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: yAxisFormatLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the distance between each label and grid line along the Y-axis.
     */
@@ -14525,7 +14524,7 @@ trait JQuery extends StObject {
   /**
     * Gets  the property or string from which the labels are derived.
     */
-  def igFinancialChart(optionLiteral: option, optionName: yAxisLabel): js.Any = js.native
+  def igFinancialChart(optionLiteral: option, optionName: yAxisLabel): Any = js.native
   /**
     * Gets  the angle of rotation for labels along the Y-axis.
     */
@@ -14641,7 +14640,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFinancialChart(optionLiteral: option, optionName: yAxisLabel, optionValue: js.Any): Unit = js.native
+  def igFinancialChart(optionLiteral: option, optionName: yAxisLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the base value to use in the log function when mapping the position of data items along the Y-axis.
     * This property is effective only when YAxisIsLogarithmic is true.
@@ -14940,7 +14939,7 @@ trait JQuery extends StObject {
   @JSName("igFinancialChart")
   def igFinancialChart_flush(methodName: flush): Unit = js.native
   @JSName("igFinancialChart")
-  def igFinancialChart_getData(methodName: getData): js.Array[js.Any] = js.native
+  def igFinancialChart_getData(methodName: getData): js.Array[Any] = js.native
   @JSName("igFinancialChart")
   def igFinancialChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igFinancialChart")
@@ -14962,9 +14961,9 @@ trait JQuery extends StObject {
     oldItem: js.Object
   ): js.Object = js.native
   @JSName("igFinancialChart")
-  def igFinancialChart_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igFinancialChart_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igFinancialChart")
-  def igFinancialChart_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igFinancialChart_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igFinancialChart")
   def igFinancialChart_option(optionLiteral: option, options: IgFinancialChart): JQuery = js.native
   @JSName("igFinancialChart")
@@ -14972,7 +14971,7 @@ trait JQuery extends StObject {
   @JSName("igFinancialChart")
   def igFinancialChart_setItem(methodName: setItem, index: Double, item: js.Object): js.Object = js.native
   
-  def igFunnelChart(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igFunnelChart(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets  whether to allow slices to be selected.
     */
@@ -15017,14 +15016,14 @@ trait JQuery extends StObject {
     * Gets  the palette of brushes to use for coloring the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFunnelChart(optionLiteral: option, optionName: brushes): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: brushes): Any = js.native
   /**
     * Sets the palette of brushes to use for coloring the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: brushes, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: brushes, optionValue: Any): Unit = js.native
   /**
     * Event which is raised before data binding.
     * Return false in order to cancel data binding.
@@ -15066,7 +15065,7 @@ trait JQuery extends StObject {
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  def igFunnelChart(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Gets  data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
@@ -15094,27 +15093,27 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the formatter function for inner labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to the funnel chart.
     */
-  def igFunnelChart(optionLiteral: option, optionName: formatInnerLabel): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: formatInnerLabel): Any = js.native
   /**
     * Sets the formatter function for inner labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to the funnel chart.
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: formatInnerLabel, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: formatInnerLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the formatter function for outer labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to the funnel chart.
     */
-  def igFunnelChart(optionLiteral: option, optionName: formatOuterLabel): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: formatOuterLabel): Any = js.native
   /**
     * Sets the formatter function for outer labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to the funnel chart.
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: formatOuterLabel, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: formatOuterLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  how the heights of the funnel slices should be configured.
     */
@@ -15197,7 +15196,7 @@ trait JQuery extends StObject {
     * legend: { element: "idOfDiv", width: 300 }
     * legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }
     */
-  def igFunnelChart(optionLiteral: option, optionName: legend): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: legend): Any = js.native
   /**
     * Gets  the LegendItemBadgeTemplate to use for the legend items.
     * The provided object should have properties called render and optionally measure.
@@ -15221,7 +15220,7 @@ trait JQuery extends StObject {
     *     isHitTestRender: [if true, indicates that this is a special render pass for hit testing, in which case the brushes from the data should be used]
     * }
     */
-  def igFunnelChart(optionLiteral: option, optionName: legendItemBadgeTemplate): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: legendItemBadgeTemplate): Any = js.native
   /**
     * Sets the LegendItemBadgeTemplate to use for the legend items.
     * The provided object should have properties called render and optionally measure.
@@ -15247,7 +15246,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: legendItemBadgeTemplate, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: legendItemBadgeTemplate, optionValue: Any): Unit = js.native
   /**
     * Sets the Legend for the chart.
     * The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.
@@ -15262,7 +15261,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: legend, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: legend, optionValue: Any): Unit = js.native
   /**
     * Gets  maximum number of displayed records in chart.
     */
@@ -15337,14 +15336,14 @@ trait JQuery extends StObject {
     * Gets  the palette of brushes to use for outlines on the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igFunnelChart(optionLiteral: option, optionName: outlines): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: outlines): Any = js.native
   /**
     * Sets the palette of brushes to use for outlines on the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: outlines, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: outlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
@@ -15383,14 +15382,14 @@ trait JQuery extends StObject {
     * Gets  the style to use for selected slices.
     * That can be used to set stroke (outline color), fill (background color) and opacity.
     */
-  def igFunnelChart(optionLiteral: option, optionName: selectedSliceStyle): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: selectedSliceStyle): Any = js.native
   /**
     * Sets the style to use for selected slices.
     * That can be used to set stroke (outline color), fill (background color) and opacity.
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: selectedSliceStyle, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: selectedSliceStyle, optionValue: Any): Unit = js.native
   /**
     * Event which is raised when a slice is clicked.
     * Function takes first argument null and second argument ui.
@@ -15457,14 +15456,14 @@ trait JQuery extends StObject {
     * Gets  the style to use for unselected slices.
     * That can be used to set stroke (outline color), fill (background color) and opacity.
     */
-  def igFunnelChart(optionLiteral: option, optionName: unselectedSliceStyle): js.Any = js.native
+  def igFunnelChart(optionLiteral: option, optionName: unselectedSliceStyle): Any = js.native
   /**
     * Sets the style to use for unselected slices.
     * That can be used to set stroke (outline color), fill (background color) and opacity.
     *
     * @optionValue New value to be set.
     */
-  def igFunnelChart(optionLiteral: option, optionName: unselectedSliceStyle, optionValue: js.Any): Unit = js.native
+  def igFunnelChart(optionLiteral: option, optionName: unselectedSliceStyle, optionValue: Any): Unit = js.native
   /**
     * Event which is raised before tooltip is updated.
     * Return false in order to cancel updating and hide tooltip.
@@ -15557,7 +15556,7 @@ trait JQuery extends StObject {
   @JSName("igFunnelChart")
   def igFunnelChart_flush(methodName: flush): Unit = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_getData(methodName: getData): js.Array[js.Any] = js.native
+  def igFunnelChart_getData(methodName: getData): js.Array[Any] = js.native
   @JSName("igFunnelChart")
   def igFunnelChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igFunnelChart")
@@ -15579,27 +15578,27 @@ trait JQuery extends StObject {
     oldItem: js.Object
   ): js.Object = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igFunnelChart_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igFunnelChart_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igFunnelChart")
   def igFunnelChart_option(optionLiteral: option, options: IgFunnelChart): JQuery = js.native
   @JSName("igFunnelChart")
   def igFunnelChart_removeItem(methodName: removeItem, index: Double): js.Object = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_selectedSliceIndexes(methodName: selectedSliceIndexes): js.Array[js.Any] = js.native
+  def igFunnelChart_selectedSliceIndexes(methodName: selectedSliceIndexes): js.Array[Any] = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_selectedSliceIndexes(methodName: selectedSliceIndexes, selection: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def igFunnelChart_selectedSliceIndexes(methodName: selectedSliceIndexes, selection: js.Array[Any]): js.Array[Any] = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_selectedSliceItems(methodName: selectedSliceItems): js.Array[js.Any] = js.native
+  def igFunnelChart_selectedSliceItems(methodName: selectedSliceItems): js.Array[Any] = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_selectedSliceItems(methodName: selectedSliceItems, selection: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def igFunnelChart_selectedSliceItems(methodName: selectedSliceItems, selection: js.Array[Any]): js.Array[Any] = js.native
   @JSName("igFunnelChart")
   def igFunnelChart_setItem(methodName: setItem, index: Double, item: js.Object): js.Object = js.native
   @JSName("igFunnelChart")
   def igFunnelChart_toggleSelection(methodName: toggleSelection, slice: js.Object): js.Object = js.native
   
-  def igGrid(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGrid(methodName: String, methodParams: Any*): Any = js.native
   /**
     * If this option is set to true, the height of the grid row will be calculated automatically based on the [avgRowHeight](ui.iggrid#options:avgRowHeight) and the visible virtual records. If no [avgRowHeight](ui.iggrid#options:avgRowHeight) is specified, it will be calculated automatically at runtime.
     *
@@ -15887,7 +15886,7 @@ trait JQuery extends StObject {
     * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
     *
     */
-  def igGrid(optionLiteral: option, optionName: dataSource): js.Array[js.Any] | js.Object | String = js.native
+  def igGrid(optionLiteral: option, optionName: dataSource): js.Array[Any] | js.Object | String = js.native
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type).
     *
@@ -15919,7 +15918,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[js.Any]): Unit = js.native
+  def igGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[Any]): Unit = js.native
   def igGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Object): Unit = js.native
   /**
     * Default column width that will be set for all columns, that don't have [column width](ui.iggrid#options:columns.width) defined. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).
@@ -16137,14 +16136,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igGrid(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igGrid(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGrid(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igGrid(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Merge unbound columns values inside data source when data source is remote. If true then the unbound columns are merged to the data source at runtime on the server. Note that data source is expanded with the new data and this could cause performance issues when the data is huge. If mergeUnboundColumns is false then the unbound data is sent and merged on the client. This option is used by the [igGrid MVC Helper](http://www.igniteui.com/help/iggrid-developing-asp-net-mvc-applications-with-iggrid).
     * Checkout [Populating Unbound Columns Remotely (igGrid)](http://www.igniteui.com/help/iggrid-unboundcolumns-populating-with-data-remotely) topic for more information.
@@ -16483,7 +16482,7 @@ trait JQuery extends StObject {
   def igGrid(optionLiteral: option, optionName: width, optionValue: Double): Unit = js.native
   def igGrid(options: IgGrid): JQuery = js.native
   
-  def igGridAppendRowsOnDemand(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridAppendRowsOnDemand(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Defines local or remote type of appending rows on demand in igGrid
     *
@@ -16622,13 +16621,13 @@ trait JQuery extends StObject {
   @JSName("igGridAppendRowsOnDemand")
   def igGridAppendRowsOnDemand_nextChunk(methodName: nextChunk): Unit = js.native
   @JSName("igGridAppendRowsOnDemand")
-  def igGridAppendRowsOnDemand_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridAppendRowsOnDemand_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridAppendRowsOnDemand")
-  def igGridAppendRowsOnDemand_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridAppendRowsOnDemand_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridAppendRowsOnDemand")
   def igGridAppendRowsOnDemand_option(optionLiteral: option, options: IgGridAppendRowsOnDemand): JQuery = js.native
   
-  def igGridCellMerging(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridCellMerging(methodName: String, methodParams: Any*): Any = js.native
   def igGridCellMerging(optionLiteral: option, optionName: cellsMerged): CellsMergedEvent = js.native
   def igGridCellMerging(optionLiteral: option, optionName: cellsMerged, optionValue: CellsMergedEvent): Unit = js.native
   /**
@@ -16683,14 +16682,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igGridCellMerging(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igGridCellMerging(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGridCellMerging(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igGridCellMerging(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Defines when merging should be applied.
     *
@@ -16707,14 +16706,14 @@ trait JQuery extends StObject {
     * Defines the whether the rows will be merged or not.
     *
     */
-  def igGridCellMerging(optionLiteral: option, optionName: mergeRows): js.Any = js.native
+  def igGridCellMerging(optionLiteral: option, optionName: mergeRows): Any = js.native
   /**
     * Defines the whether the rows will be merged or not.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGridCellMerging(optionLiteral: option, optionName: mergeRows, optionValue: js.Any): Unit = js.native
+  def igGridCellMerging(optionLiteral: option, optionName: mergeRows, optionValue: Any): Unit = js.native
   /**
     * Defines the rules merging is based on.
     *
@@ -16782,9 +16781,9 @@ trait JQuery extends StObject {
   @JSName("igGridCellMerging")
   def igGridCellMerging_mergeRow(methodName: mergeRow, id: js.Object, fireEvents: js.Object): Unit = js.native
   @JSName("igGridCellMerging")
-  def igGridCellMerging_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridCellMerging_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridCellMerging")
-  def igGridCellMerging_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridCellMerging_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridCellMerging")
   def igGridCellMerging_option(optionLiteral: option, options: IgGridCellMerging): JQuery = js.native
   @JSName("igGridCellMerging")
@@ -16792,7 +16791,7 @@ trait JQuery extends StObject {
   @JSName("igGridCellMerging")
   def igGridCellMerging_unmergeRow(methodName: unmergeRow, id: js.Object, index: js.Object): Unit = js.native
   
-  def igGridColumnFixing(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridColumnFixing(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event which is fired when column fixing operation is finished
     */
@@ -17037,9 +17036,9 @@ trait JQuery extends StObject {
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_checkAndSyncHeights(methodName: checkAndSyncHeights): Unit = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_checkFixingAllowed(methodName: checkFixingAllowed, columns: js.Array[js.Any]): Boolean = js.native
+  def igGridColumnFixing_checkFixingAllowed(methodName: checkFixingAllowed, columns: js.Array[Any]): Boolean = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_checkUnfixingAllowed(methodName: checkUnfixingAllowed, columns: js.Array[js.Any]): Boolean = js.native
+  def igGridColumnFixing_checkUnfixingAllowed(methodName: checkUnfixingAllowed, columns: js.Array[Any]): Boolean = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_destroy(methodName: destroy): Unit = js.native
   @JSName("igGridColumnFixing")
@@ -17057,20 +17056,20 @@ trait JQuery extends StObject {
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns): Double = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[js.Any]): Double = js.native
+  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[Any]): Double = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[js.Any], excludeNonDataColumns: Boolean): Double = js.native
+  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[Any], excludeNonDataColumns: Boolean): Double = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.Array[js.Any],
+    fCols: js.Array[Any],
     excludeNonDataColumns: Boolean,
     includeHidden: Boolean
   ): Double = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.Array[js.Any],
+    fCols: js.Array[Any],
     excludeNonDataColumns: Unit,
     includeHidden: Boolean
   ): Double = js.native
@@ -17093,9 +17092,9 @@ trait JQuery extends StObject {
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_isGroupHeader(methodName: isGroupHeader, colKey: String): Boolean = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridColumnFixing_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridColumnFixing_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_option(optionLiteral: option, options: IgGridColumnFixing): JQuery = js.native
   @JSName("igGridColumnFixing")
@@ -17107,7 +17106,7 @@ trait JQuery extends StObject {
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_syncHeights(methodName: syncHeights, check: Unit, clearRowsHeights: Boolean): Unit = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_syncRowsHeights(methodName: syncRowsHeights, $trs: js.Array[js.Any], $anotherRows: js.Array[js.Any]): Unit = js.native
+  def igGridColumnFixing_syncRowsHeights(methodName: syncRowsHeights, $trs: js.Array[Any], $anotherRows: js.Array[Any]): Unit = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_unfixAllColumns(methodName: unfixAllColumns): Unit = js.native
   @JSName("igGridColumnFixing")
@@ -17123,7 +17122,7 @@ trait JQuery extends StObject {
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_unfixNonDataColumns(methodName: unfixNonDataColumns): Unit = js.native
   
-  def igGridColumnMoving(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridColumnMoving(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets if header cells should include an additional button that opens a moving helper dropdown.
     *
@@ -17737,17 +17736,17 @@ trait JQuery extends StObject {
     callback: js.Function
   ): Unit = js.native
   @JSName("igGridColumnMoving")
-  def igGridColumnMoving_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridColumnMoving_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridColumnMoving")
-  def igGridColumnMoving_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridColumnMoving_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridColumnMoving")
   def igGridColumnMoving_option(optionLiteral: option, options: IgGridColumnMoving): JQuery = js.native
   
-  def igGridFeatureChooser(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridFeatureChooser(methodName: String, methodParams: Any*): Any = js.native
   def igGridFeatureChooser(optionLiteral: option, optionName: animationDuration): Double = js.native
   def igGridFeatureChooser(optionLiteral: option, optionName: animationDuration, optionValue: Double): Unit = js.native
-  def igGridFeatureChooser(optionLiteral: option, optionName: dropDownWidth): js.Any = js.native
-  def igGridFeatureChooser(optionLiteral: option, optionName: dropDownWidth, optionValue: js.Any): Unit = js.native
+  def igGridFeatureChooser(optionLiteral: option, optionName: dropDownWidth): Any = js.native
+  def igGridFeatureChooser(optionLiteral: option, optionName: dropDownWidth, optionValue: Any): Unit = js.native
   def igGridFeatureChooser(optionLiteral: option, optionName: featureChooserDropDownOpened): FeatureChooserDropDownOpenedEvent = js.native
   def igGridFeatureChooser(
     optionLiteral: option,
@@ -17792,14 +17791,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igGridFeatureChooser(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igGridFeatureChooser(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGridFeatureChooser(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igGridFeatureChooser(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   def igGridFeatureChooser(optionLiteral: option, optionName: menuToggling): MenuTogglingEvent = js.native
   def igGridFeatureChooser(optionLiteral: option, optionName: menuToggling, optionValue: MenuTogglingEvent): Unit = js.native
   /**
@@ -17817,7 +17816,7 @@ trait JQuery extends StObject {
   def igGridFeatureChooser(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   def igGridFeatureChooser(options: IgGridFeatureChooser): JQuery = js.native
   
-  def igGridFeatureChooserPopover(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridFeatureChooserPopover(methodName: String, methodParams: Any*): Any = js.native
   /**
     * The time popover fades in and out when showing/hiding
     *
@@ -17845,8 +17844,8 @@ trait JQuery extends StObject {
   def igGridFeatureChooserPopover(optionLiteral: option, optionName: appendTo, optionValue: js.Object): Unit = js.native
   def igGridFeatureChooserPopover(optionLiteral: option, optionName: closeOnBlur): Boolean = js.native
   def igGridFeatureChooserPopover(optionLiteral: option, optionName: closeOnBlur, optionValue: Boolean): Unit = js.native
-  def igGridFeatureChooserPopover(optionLiteral: option, optionName: containment): js.Any = js.native
-  def igGridFeatureChooserPopover(optionLiteral: option, optionName: containment, optionValue: js.Any): Unit = js.native
+  def igGridFeatureChooserPopover(optionLiteral: option, optionName: containment): Any = js.native
+  def igGridFeatureChooserPopover(optionLiteral: option, optionName: containment, optionValue: Any): Unit = js.native
   /**
     * The content for the popover container. If left null the content will be get from the target.
     *
@@ -17870,7 +17869,7 @@ trait JQuery extends StObject {
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  def igGridFeatureChooserPopover(optionLiteral: option, optionName: directionPriority): js.Array[js.Any] = js.native
+  def igGridFeatureChooserPopover(optionLiteral: option, optionName: directionPriority): js.Array[Any] = js.native
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
@@ -17878,7 +17877,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igGridFeatureChooserPopover(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[js.Any]): Unit = js.native
+  def igGridFeatureChooserPopover(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Controls the direction in which the control shows relative to the target element
     *
@@ -18028,8 +18027,8 @@ trait JQuery extends StObject {
     * @optionValue Define event handler function.
     */
   def igGridFeatureChooserPopover(optionLiteral: option, optionName: shown, optionValue: ShownEvent): Unit = js.native
-  def igGridFeatureChooserPopover(optionLiteral: option, optionName: targetButton): js.Any = js.native
-  def igGridFeatureChooserPopover(optionLiteral: option, optionName: targetButton, optionValue: js.Any): Unit = js.native
+  def igGridFeatureChooserPopover(optionLiteral: option, optionName: targetButton): Any = js.native
+  def igGridFeatureChooserPopover(optionLiteral: option, optionName: targetButton, optionValue: Any): Unit = js.native
   /**
     * Defines width for the popover. leave null for auto.
     *
@@ -18059,9 +18058,9 @@ trait JQuery extends StObject {
   @JSName("igGridFeatureChooserPopover")
   def igGridFeatureChooserPopover_isShown(methodName: isShown): Unit = js.native
   @JSName("igGridFeatureChooserPopover")
-  def igGridFeatureChooserPopover_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridFeatureChooserPopover_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridFeatureChooserPopover")
-  def igGridFeatureChooserPopover_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridFeatureChooserPopover_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridFeatureChooserPopover")
   def igGridFeatureChooserPopover_option(optionLiteral: option, options: IgGridFeatureChooserPopover): JQuery = js.native
   @JSName("igGridFeatureChooserPopover")
@@ -18094,9 +18093,9 @@ trait JQuery extends StObject {
   @JSName("igGridFeatureChooser")
   def igGridFeatureChooser_hideDropDown(methodName: hideDropDown, columnKey: String): Unit = js.native
   @JSName("igGridFeatureChooser")
-  def igGridFeatureChooser_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridFeatureChooser_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridFeatureChooser")
-  def igGridFeatureChooser_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridFeatureChooser_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridFeatureChooser")
   def igGridFeatureChooser_option(optionLiteral: option, options: IgGridFeatureChooser): JQuery = js.native
   @JSName("igGridFeatureChooser")
@@ -18106,7 +18105,7 @@ trait JQuery extends StObject {
   @JSName("igGridFeatureChooser")
   def igGridFeatureChooser_toggleDropDown(methodName: toggleDropDown, columnKey: String): Unit = js.native
   
-  def igGridFiltering(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridFiltering(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Type of filtering. Delegates all filtering functionality to the [$.ig.DataSource](ig.datasource).
     *
@@ -18642,7 +18641,7 @@ trait JQuery extends StObject {
     * string  The height of the column filter dropdowns in pixels (0px).
     * number  The height of the column filter dropdowns in pixels as a number (0).
     */
-  def igGridFiltering(optionLiteral: option, optionName: filterDropDownHeight): js.Any = js.native
+  def igGridFiltering(optionLiteral: option, optionName: filterDropDownHeight): Any = js.native
   /**
     * Height of the column filter dropdowns.
     *
@@ -18651,7 +18650,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igGridFiltering(optionLiteral: option, optionName: filterDropDownHeight, optionValue: js.Any): Unit = js.native
+  def igGridFiltering(optionLiteral: option, optionName: filterDropDownHeight, optionValue: Any): Unit = js.native
   /**
     * Enable/disable filter icons visibility.
     *
@@ -18876,19 +18875,19 @@ trait JQuery extends StObject {
   @JSName("igGridFiltering")
   def igGridFiltering_destroy(methodName: destroy): Unit = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any]): Unit = js.native
+  def igGridFiltering_filter(methodName: filter, expressions: js.Array[Any]): Unit = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Boolean): Unit = js.native
+  def igGridFiltering_filter(methodName: filter, expressions: js.Array[Any], updateUI: Boolean): Unit = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
+  def igGridFiltering_filter(methodName: filter, expressions: js.Array[Any], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Unit, addedFromAdvanced: Boolean): Unit = js.native
+  def igGridFiltering_filter(methodName: filter, expressions: js.Array[Any], updateUI: Unit, addedFromAdvanced: Boolean): Unit = js.native
   @JSName("igGridFiltering")
   def igGridFiltering_getFilteringMatchesCount(methodName: getFilteringMatchesCount): Double = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridFiltering_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridFiltering_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridFiltering")
   def igGridFiltering_option(optionLiteral: option, options: IgGridFiltering): JQuery = js.native
   @JSName("igGridFiltering")
@@ -18896,7 +18895,7 @@ trait JQuery extends StObject {
   @JSName("igGridFiltering")
   def igGridFiltering_toggleFilterRowByFeatureChooser(methodName: toggleFilterRowByFeatureChooser, event: String): Unit = js.native
   
-  def igGridGroupBy(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridGroupBy(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets whether the GroupBy operation takes place locally on client-side or remotely on server-side.
     *
@@ -19074,7 +19073,7 @@ trait JQuery extends StObject {
     * All default summaries are defined under $.ig.util.defaultSummaryMethods
     *
     */
-  def igGridGroupBy(optionLiteral: option, optionName: groupSummaries): js.Any = js.native
+  def igGridGroupBy(optionLiteral: option, optionName: groupSummaries): Any = js.native
   /**
     * Gets the groupSummaries postion inside each group.
     *
@@ -19094,7 +19093,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igGridGroupBy(optionLiteral: option, optionName: groupSummaries, optionValue: js.Any): Unit = js.native
+  def igGridGroupBy(optionLiteral: option, optionName: groupSummaries, optionValue: Any): Unit = js.native
   /**
     * Returns the list of currently grouped columns. The option is read-only and cannot be set at initialization or at runtime.
     *
@@ -19696,9 +19695,9 @@ trait JQuery extends StObject {
   @JSName("igGridGroupBy")
   def igGridGroupBy_expand(methodName: expand, rowId: String): Unit = js.native
   @JSName("igGridGroupBy")
-  def igGridGroupBy_getGroupedData(methodName: getGroupedData, data: js.Array[js.Any], colKey: String): js.Array[js.Any] = js.native
+  def igGridGroupBy_getGroupedData(methodName: getGroupedData, data: js.Array[Any], colKey: String): js.Array[Any] = js.native
   @JSName("igGridGroupBy")
-  def igGridGroupBy_getGroupedData(methodName: getGroupedData, data: js.Array[js.Any], colKey: String, idval: String): js.Array[js.Any] = js.native
+  def igGridGroupBy_getGroupedData(methodName: getGroupedData, data: js.Array[Any], colKey: String, idval: String): js.Array[Any] = js.native
   @JSName("igGridGroupBy")
   def igGridGroupBy_groupByColumn(methodName: groupByColumn, key: String): Unit = js.native
   @JSName("igGridGroupBy")
@@ -19714,9 +19713,9 @@ trait JQuery extends StObject {
   @JSName("igGridGroupBy")
   def igGridGroupBy_openGroupByDialog(methodName: openGroupByDialog): Unit = js.native
   @JSName("igGridGroupBy")
-  def igGridGroupBy_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridGroupBy_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridGroupBy")
-  def igGridGroupBy_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridGroupBy_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridGroupBy")
   def igGridGroupBy_option(optionLiteral: option, options: IgGridGroupBy): JQuery = js.native
   @JSName("igGridGroupBy")
@@ -19728,7 +19727,7 @@ trait JQuery extends StObject {
   @JSName("igGridGroupBy")
   def igGridGroupBy_ungroupByColumn(methodName: ungroupByColumn, key: String, layout: String): Unit = js.native
   
-  def igGridHiding(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridHiding(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets time of milliseconds for animation duration to show/hide modal dialog
     *
@@ -20184,15 +20183,15 @@ trait JQuery extends StObject {
   @JSName("igGridHiding")
   def igGridHiding_hideColumnChooser(methodName: hideColumnChooser): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[js.Any]): Unit = js.native
+  def igGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[Any]): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[js.Any], callback: js.Function): Unit = js.native
+  def igGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[Any], callback: js.Function): Unit = js.native
   @JSName("igGridHiding")
   def igGridHiding_isToRenderButtonReset(methodName: isToRenderButtonReset): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridHiding_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridHiding")
-  def igGridHiding_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridHiding_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridHiding")
   def igGridHiding_option(optionLiteral: option, options: IgGridHiding): JQuery = js.native
   @JSName("igGridHiding")
@@ -20208,11 +20207,11 @@ trait JQuery extends StObject {
   @JSName("igGridHiding")
   def igGridHiding_showColumnChooser(methodName: showColumnChooser): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[js.Any]): Unit = js.native
+  def igGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[Any]): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[js.Any], callback: js.Function): Unit = js.native
+  def igGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[Any], callback: js.Function): Unit = js.native
   
-  def igGridModalDialog(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridModalDialog(methodName: String, methodParams: Any*): Any = js.native
   def igGridModalDialog(optionLiteral: option, optionName: animationDuration): Double = js.native
   def igGridModalDialog(optionLiteral: option, optionName: animationDuration, optionValue: Double): Unit = js.native
   def igGridModalDialog(optionLiteral: option, optionName: buttonApplyDisabled): Boolean = js.native
@@ -20263,14 +20262,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igGridModalDialog(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igGridModalDialog(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGridModalDialog(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igGridModalDialog(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Event fired after the modal dialog has been closed.
     */
@@ -20414,13 +20413,13 @@ trait JQuery extends StObject {
   @JSName("igGridModalDialog")
   def igGridModalDialog_openModalDialog(methodName: openModalDialog): Unit = js.native
   @JSName("igGridModalDialog")
-  def igGridModalDialog_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridModalDialog_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridModalDialog")
-  def igGridModalDialog_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridModalDialog_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridModalDialog")
   def igGridModalDialog_option(optionLiteral: option, options: IgGridModalDialog): JQuery = js.native
   
-  def igGridMultiColumnHeaders(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridMultiColumnHeaders(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event fired after the group collapsing has been executed and results are rendered.
     */
@@ -20485,11 +20484,11 @@ trait JQuery extends StObject {
   @JSName("igGridMultiColumnHeaders")
   def igGridMultiColumnHeaders_expandGroup(methodName: expandGroup, groupKey: String, callback: js.Function): Unit = js.native
   @JSName("igGridMultiColumnHeaders")
-  def igGridMultiColumnHeaders_getMultiColumnHeaders(methodName: getMultiColumnHeaders): js.Array[js.Any] = js.native
+  def igGridMultiColumnHeaders_getMultiColumnHeaders(methodName: getMultiColumnHeaders): js.Array[Any] = js.native
   @JSName("igGridMultiColumnHeaders")
-  def igGridMultiColumnHeaders_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridMultiColumnHeaders_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridMultiColumnHeaders")
-  def igGridMultiColumnHeaders_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridMultiColumnHeaders_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridMultiColumnHeaders")
   def igGridMultiColumnHeaders_option(optionLiteral: option, options: IgGridMultiColumnHeaders): JQuery = js.native
   @JSName("igGridMultiColumnHeaders")
@@ -20497,7 +20496,7 @@ trait JQuery extends StObject {
   @JSName("igGridMultiColumnHeaders")
   def igGridMultiColumnHeaders_toggleGroup(methodName: toggleGroup, groupKey: String, callback: js.Function): Unit = js.native
   
-  def igGridPaging(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridPaging(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Type of paging. Delegates all paging functionality to the [$.ig.DataSource](ig.datasource).
     *
@@ -20809,14 +20808,14 @@ trait JQuery extends StObject {
     * Predefined page sizes that are available to the end user to switch their grid paging to, through a drop down in the grid header.
     *
     */
-  def igGridPaging(optionLiteral: option, optionName: pageSizeList): js.Any = js.native
+  def igGridPaging(optionLiteral: option, optionName: pageSizeList): Any = js.native
   /**
     * Predefined page sizes that are available to the end user to switch their grid paging to, through a drop down in the grid header.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGridPaging(optionLiteral: option, optionName: pageSizeList, optionValue: js.Any): Unit = js.native
+  def igGridPaging(optionLiteral: option, optionName: pageSizeList, optionValue: Any): Unit = js.native
   /**
     * Denotes the name of the encoded URL parameter that will state what is the currently requested page size.
     *
@@ -21029,9 +21028,9 @@ trait JQuery extends StObject {
   @JSName("igGridPaging")
   def igGridPaging_destroy(methodName: destroy): Unit = js.native
   @JSName("igGridPaging")
-  def igGridPaging_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridPaging_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridPaging")
-  def igGridPaging_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridPaging_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridPaging")
   def igGridPaging_option(optionLiteral: option, options: IgGridPaging): JQuery = js.native
   @JSName("igGridPaging")
@@ -21043,7 +21042,7 @@ trait JQuery extends StObject {
   @JSName("igGridPaging")
   def igGridPaging_pageSize(methodName: pageSize, size: Double): Double = js.native
   
-  def igGridResizing(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridResizing(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Resize the column to the size of the longest currently visible cell value.
     *
@@ -21152,14 +21151,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igGridResizing(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igGridResizing(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGridResizing(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igGridResizing(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
@@ -21183,9 +21182,9 @@ trait JQuery extends StObject {
   @JSName("igGridResizing")
   def igGridResizing_destroy(methodName: destroy): Unit = js.native
   @JSName("igGridResizing")
-  def igGridResizing_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridResizing_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridResizing")
-  def igGridResizing_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridResizing_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridResizing")
   def igGridResizing_option(optionLiteral: option, options: IgGridResizing): JQuery = js.native
   @JSName("igGridResizing")
@@ -21193,7 +21192,7 @@ trait JQuery extends StObject {
   @JSName("igGridResizing")
   def igGridResizing_resize(methodName: resize, column: js.Object, width: js.Object): Unit = js.native
   
-  def igGridResponsive(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridResponsive(methodName: String, methodParams: Any*): Any = js.native
   /**
     * When windowWidthToRenderVertically is null, determine minimal widths columns can take before
     * forcing vertical rendering for the grid
@@ -21353,14 +21352,14 @@ trait JQuery extends StObject {
     * The recognized types of environments and their configuration.
     *
     */
-  def igGridResponsive(optionLiteral: option, optionName: responsiveModes): js.Any = js.native
+  def igGridResponsive(optionLiteral: option, optionName: responsiveModes): Any = js.native
   /**
     * The recognized types of environments and their configuration.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGridResponsive(optionLiteral: option, optionName: responsiveModes, optionValue: js.Any): Unit = js.native
+  def igGridResponsive(optionLiteral: option, optionName: responsiveModes, optionValue: Any): Unit = js.native
   /**
     * The amount of pixels the window needs to resize with for the grid to respond.
     *
@@ -21377,14 +21376,14 @@ trait JQuery extends StObject {
     * Gets a template to render a record with in a list-view style layout per mode.
     *
     */
-  def igGridResponsive(optionLiteral: option, optionName: singleColumnTemplate): js.Any = js.native
+  def igGridResponsive(optionLiteral: option, optionName: singleColumnTemplate): Any = js.native
   /**
     * Sets a template to render a record with in a list-view style layout per mode.
     *
     *
     * @optionValue New value to be set.
     */
-  def igGridResponsive(optionLiteral: option, optionName: singleColumnTemplate, optionValue: js.Any): Unit = js.native
+  def igGridResponsive(optionLiteral: option, optionName: singleColumnTemplate, optionValue: Any): Unit = js.native
   /**
     * The width of the values column when vertical rendering is enabled
     *
@@ -21417,13 +21416,13 @@ trait JQuery extends StObject {
   @JSName("igGridResponsive")
   def igGridResponsive_getCurrentResponsiveMode(methodName: getCurrentResponsiveMode): Unit = js.native
   @JSName("igGridResponsive")
-  def igGridResponsive_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridResponsive_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridResponsive")
-  def igGridResponsive_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridResponsive_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridResponsive")
   def igGridResponsive_option(optionLiteral: option, options: IgGridResponsive): JQuery = js.native
   
-  def igGridRowSelectors(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridRowSelectors(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event fired after a row selector checkbox had changed state.
     */
@@ -21601,15 +21600,15 @@ trait JQuery extends StObject {
   @JSName("igGridRowSelectors")
   def igGridRowSelectors_destroy(methodName: destroy): Unit = js.native
   @JSName("igGridRowSelectors")
-  def igGridRowSelectors_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridRowSelectors_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridRowSelectors")
-  def igGridRowSelectors_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridRowSelectors_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridRowSelectors")
   def igGridRowSelectors_option(optionLiteral: option, options: IgGridRowSelectors): JQuery = js.native
   @JSName("igGridRowSelectors")
   def igGridRowSelectors_rsRenderColgroup(methodName: rsRenderColgroup): Unit = js.native
   
-  def igGridSelection(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridSelection(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Enables / disables activation of rows and cells. Activation implies ability to perform navigating through cells and rows via the keyboard, and selecting rows and cells using CTRL / SHIFT - in the way cells/rows are selected in Ms Excel
     *
@@ -21838,9 +21837,9 @@ trait JQuery extends StObject {
   @JSName("igGridSelection")
   def igGridSelection_destroy(methodName: destroy): Unit = js.native
   @JSName("igGridSelection")
-  def igGridSelection_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridSelection_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridSelection")
-  def igGridSelection_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridSelection_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridSelection")
   def igGridSelection_option(optionLiteral: option, options: IgGridSelection): JQuery = js.native
   @JSName("igGridSelection")
@@ -21856,13 +21855,13 @@ trait JQuery extends StObject {
   @JSName("igGridSelection")
   def igGridSelection_selectedCell(methodName: selectedCell): js.Object = js.native
   @JSName("igGridSelection")
-  def igGridSelection_selectedCells(methodName: selectedCells): js.Array[js.Any] = js.native
+  def igGridSelection_selectedCells(methodName: selectedCells): js.Array[Any] = js.native
   @JSName("igGridSelection")
   def igGridSelection_selectedRow(methodName: selectedRow): js.Object = js.native
   @JSName("igGridSelection")
-  def igGridSelection_selectedRows(methodName: selectedRows): js.Array[js.Any] = js.native
+  def igGridSelection_selectedRows(methodName: selectedRows): js.Array[Any] = js.native
   
-  def igGridSorting(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridSorting(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Defines local or remote sorting operations.
     *
@@ -22466,9 +22465,9 @@ trait JQuery extends StObject {
   @JSName("igGridSorting")
   def igGridSorting_openMultipleSortingDialog(methodName: openMultipleSortingDialog): Unit = js.native
   @JSName("igGridSorting")
-  def igGridSorting_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridSorting_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridSorting")
-  def igGridSorting_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridSorting_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridSorting")
   def igGridSorting_option(optionLiteral: option, options: IgGridSorting): JQuery = js.native
   @JSName("igGridSorting")
@@ -22480,11 +22479,11 @@ trait JQuery extends StObject {
   @JSName("igGridSorting")
   def igGridSorting_sortMultiple(methodName: sortMultiple): Unit = js.native
   @JSName("igGridSorting")
-  def igGridSorting_sortMultiple(methodName: sortMultiple, exprs: js.Array[js.Any]): Unit = js.native
+  def igGridSorting_sortMultiple(methodName: sortMultiple, exprs: js.Array[Any]): Unit = js.native
   @JSName("igGridSorting")
   def igGridSorting_unsortColumn(methodName: unsortColumn, index: js.Object, header: js.Object): Unit = js.native
   
-  def igGridSummaries(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridSummaries(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Type of summaries calculating.
     *
@@ -22544,7 +22543,7 @@ trait JQuery extends StObject {
     * Auto will use True if the maximum number of visible summaries is one or less and False otherwise.
     *
     */
-  def igGridSummaries(optionLiteral: option, optionName: compactRenderingMode): js.Any = js.native
+  def igGridSummaries(optionLiteral: option, optionName: compactRenderingMode): Any = js.native
   /**
     * Sets how compact the summaries are rendered.
     * When true indicates that the summaries may be rendered compactly, even mixing different summaries on the same line.
@@ -22554,7 +22553,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igGridSummaries(optionLiteral: option, optionName: compactRenderingMode, optionValue: js.Any): Unit = js.native
+  def igGridSummaries(optionLiteral: option, optionName: compactRenderingMode, optionValue: Any): Unit = js.native
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Text of the button Cancel in the summaries dropdown
@@ -22926,7 +22925,7 @@ trait JQuery extends StObject {
   def igGridSummaries_calculateSummaryColumn(
     methodName: calculateSummaryColumn,
     ck: String,
-    columnMethods: js.Array[js.Any],
+    columnMethods: js.Array[Any],
     data: js.Object,
     dataType: js.Object
   ): Unit = js.native
@@ -22945,9 +22944,9 @@ trait JQuery extends StObject {
   @JSName("igGridSummaries")
   def igGridSummaries_isSummariesRowsHidden(methodName: isSummariesRowsHidden): Unit = js.native
   @JSName("igGridSummaries")
-  def igGridSummaries_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridSummaries_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridSummaries")
-  def igGridSummaries_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridSummaries_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridSummaries")
   def igGridSummaries_option(optionLiteral: option, options: IgGridSummaries): JQuery = js.native
   @JSName("igGridSummaries")
@@ -22965,7 +22964,7 @@ trait JQuery extends StObject {
   @JSName("igGridSummaries")
   def igGridSummaries_toggleSummariesRows(methodName: toggleSummariesRows, isToShow: Boolean, isInternalCall: Boolean): Unit = js.native
   
-  def igGridTooltips(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridTooltips(methodName: String, methodParams: Any*): Any = js.native
   /**
     * A list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)
     *
@@ -23122,13 +23121,13 @@ trait JQuery extends StObject {
   @JSName("igGridTooltips")
   def igGridTooltips_id(methodName: id): String = js.native
   @JSName("igGridTooltips")
-  def igGridTooltips_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridTooltips_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridTooltips")
-  def igGridTooltips_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridTooltips_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridTooltips")
   def igGridTooltips_option(optionLiteral: option, options: IgGridTooltips): JQuery = js.native
   
-  def igGridUpdating(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igGridUpdating(methodName: String, methodParams: Any*): Any = js.native
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets the label for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowLabel is used.
@@ -23639,7 +23638,7 @@ trait JQuery extends StObject {
     * Gets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
     */
-  def igGridUpdating(optionLiteral: option, optionName: startEditTriggers): String | js.Array[js.Any] = js.native
+  def igGridUpdating(optionLiteral: option, optionName: startEditTriggers): String | js.Array[Any] = js.native
   /**
     * Sets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
@@ -23647,7 +23646,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: String): Unit = js.native
-  def igGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: js.Array[js.Any]): Unit = js.native
+  def igGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: js.Array[Any]): Unit = js.native
   /**
     * On touch-enabled devices specifies the swipe distance for the delete button to appear.
     *
@@ -23717,9 +23716,9 @@ trait JQuery extends StObject {
   @JSName("igGridUpdating")
   def igGridUpdating_isEditing(methodName: isEditing): Boolean = js.native
   @JSName("igGridUpdating")
-  def igGridUpdating_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGridUpdating_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGridUpdating")
-  def igGridUpdating_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGridUpdating_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGridUpdating")
   def igGridUpdating_option(optionLiteral: option, options: IgGridUpdating): JQuery = js.native
   @JSName("igGridUpdating")
@@ -23742,11 +23741,11 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_activeRow(methodName: activeRow): js.Object = js.native
   @JSName("igGrid")
-  def igGrid_allFixedRows(methodName: allFixedRows): js.Array[js.Any] = js.native
+  def igGrid_allFixedRows(methodName: allFixedRows): js.Array[Any] = js.native
   @JSName("igGrid")
-  def igGrid_allRows(methodName: allRows): js.Array[js.Any] = js.native
+  def igGrid_allRows(methodName: allRows): js.Array[Any] = js.native
   @JSName("igGrid")
-  def igGrid_allTransactions(methodName: allTransactions): js.Array[js.Any] = js.native
+  def igGrid_allTransactions(methodName: allTransactions): js.Array[Any] = js.native
   @JSName("igGrid")
   def igGrid_autoSizeColumns(methodName: autoSizeColumns): Unit = js.native
   @JSName("igGrid")
@@ -23764,9 +23763,9 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_changeRegional(methodName: changeRegional): Unit = js.native
   @JSName("igGrid")
-  def igGrid_children(methodName: children): js.Array[js.Any] = js.native
+  def igGrid_children(methodName: children): js.Array[Any] = js.native
   @JSName("igGrid")
-  def igGrid_childrenWidgets(methodName: childrenWidgets): js.Array[js.Any] = js.native
+  def igGrid_childrenWidgets(methodName: childrenWidgets): js.Array[Any] = js.native
   @JSName("igGrid")
   def igGrid_columnByKey(methodName: columnByKey, key: String): js.Object = js.native
   @JSName("igGrid")
@@ -23800,7 +23799,7 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_fixedRowAt(methodName: fixedRowAt, i: Double): Element = js.native
   @JSName("igGrid")
-  def igGrid_fixedRows(methodName: fixedRows): js.Array[js.Any] = js.native
+  def igGrid_fixedRows(methodName: fixedRows): js.Array[Any] = js.native
   @JSName("igGrid")
   def igGrid_fixedTable(methodName: fixedTable): js.Object = js.native
   @JSName("igGrid")
@@ -23836,9 +23835,9 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_id(methodName: id): String = js.native
   @JSName("igGrid")
-  def igGrid_immediateChildren(methodName: immediateChildren): js.Array[js.Any] = js.native
+  def igGrid_immediateChildren(methodName: immediateChildren): js.Array[Any] = js.native
   @JSName("igGrid")
-  def igGrid_immediateChildrenWidgets(methodName: immediateChildrenWidgets): js.Array[js.Any] = js.native
+  def igGrid_immediateChildrenWidgets(methodName: immediateChildrenWidgets): js.Array[Any] = js.native
   @JSName("igGrid")
   def igGrid_isFixedColumn(methodName: isFixedColumn, colKey: js.Object): Boolean = js.native
   @JSName("igGrid")
@@ -23888,15 +23887,15 @@ trait JQuery extends StObject {
     callback: js.Function
   ): Unit = js.native
   @JSName("igGrid")
-  def igGrid_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igGrid_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igGrid")
-  def igGrid_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igGrid_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igGrid")
   def igGrid_option(optionLiteral: option, options: IgGrid): JQuery = js.native
   @JSName("igGrid")
-  def igGrid_pendingTransactions(methodName: pendingTransactions): js.Array[js.Any] = js.native
+  def igGrid_pendingTransactions(methodName: pendingTransactions): js.Array[Any] = js.native
   @JSName("igGrid")
-  def igGrid_renderMultiColumnHeader(methodName: renderMultiColumnHeader, cols: js.Array[js.Any]): Unit = js.native
+  def igGrid_renderMultiColumnHeader(methodName: renderMultiColumnHeader, cols: js.Array[Any]): Unit = js.native
   @JSName("igGrid")
   def igGrid_renderNewRow(methodName: renderNewRow): Unit = js.native
   @JSName("igGrid")
@@ -23904,13 +23903,13 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_resizeContainer(methodName: resizeContainer): Unit = js.native
   @JSName("igGrid")
-  def igGrid_rollback(methodName: rollback): js.Array[js.Any] = js.native
+  def igGrid_rollback(methodName: rollback): js.Array[Any] = js.native
   @JSName("igGrid")
-  def igGrid_rollback(methodName: rollback, rowId: js.Object): js.Array[js.Any] = js.native
+  def igGrid_rollback(methodName: rollback, rowId: js.Object): js.Array[Any] = js.native
   @JSName("igGrid")
-  def igGrid_rollback(methodName: rollback, rowId: js.Object, updateUI: Boolean): js.Array[js.Any] = js.native
+  def igGrid_rollback(methodName: rollback, rowId: js.Object, updateUI: Boolean): js.Array[Any] = js.native
   @JSName("igGrid")
-  def igGrid_rollback(methodName: rollback, rowId: Unit, updateUI: Boolean): js.Array[js.Any] = js.native
+  def igGrid_rollback(methodName: rollback, rowId: Unit, updateUI: Boolean): js.Array[Any] = js.native
   @JSName("igGrid")
   def igGrid_rowAt(methodName: rowAt, i: Double): Element = js.native
   @JSName("igGrid")
@@ -23918,7 +23917,7 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_rowById(methodName: rowById, rowId: js.Object, isFixed: Boolean): Element = js.native
   @JSName("igGrid")
-  def igGrid_rows(methodName: rows): js.Array[js.Any] = js.native
+  def igGrid_rows(methodName: rows): js.Array[Any] = js.native
   @JSName("igGrid")
   def igGrid_saveChanges(methodName: saveChanges, success: js.Function, error: js.Function): Unit = js.native
   @JSName("igGrid")
@@ -23926,11 +23925,11 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_selectedCell(methodName: selectedCell): js.Object = js.native
   @JSName("igGrid")
-  def igGrid_selectedCells(methodName: selectedCells): js.Array[js.Any] = js.native
+  def igGrid_selectedCells(methodName: selectedCells): js.Array[Any] = js.native
   @JSName("igGrid")
   def igGrid_selectedRow(methodName: selectedRow): js.Object = js.native
   @JSName("igGrid")
-  def igGrid_selectedRows(methodName: selectedRows): js.Array[js.Any] = js.native
+  def igGrid_selectedRows(methodName: selectedRows): js.Array[Any] = js.native
   @JSName("igGrid")
   def igGrid_setColumnTemplate(methodName: setColumnTemplate, col: js.Object, tmpl: String): Unit = js.native
   @JSName("igGrid")
@@ -23944,7 +23943,7 @@ trait JQuery extends StObject {
     notToRender: js.Object
   ): Unit = js.native
   @JSName("igGrid")
-  def igGrid_setUnboundValues(methodName: setUnboundValues, key: String, values: js.Array[js.Any], removeOldValues: js.Object): Unit = js.native
+  def igGrid_setUnboundValues(methodName: setUnboundValues, key: String, values: js.Array[Any], removeOldValues: js.Object): Unit = js.native
   @JSName("igGrid")
   def igGrid_showColumn(methodName: showColumn, column: js.Object, callback: js.Function): Unit = js.native
   @JSName("igGrid")
@@ -23956,7 +23955,7 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_widget(methodName: widget): Unit = js.native
   
-  def igHierarchicalGrid(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igHierarchicalGrid(methodName: String, methodParams: Any*): Any = js.native
   /**
     * If this option is set to true, the height of the grid row will be calculated automatically based on the [avgRowHeight](ui.ighierarchicalgrid#options:avgRowHeight) and the visible virtual records. If no [avgRowHeight](ui.ighierarchicalgrid#options:avgRowHeight) is specified, it will be calculated automatically at runtime.
     *
@@ -24348,7 +24347,7 @@ trait JQuery extends StObject {
     * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
     *
     */
-  def igHierarchicalGrid(optionLiteral: option, optionName: dataSource): String | js.Array[js.Any] | js.Object = js.native
+  def igHierarchicalGrid(optionLiteral: option, optionName: dataSource): String | js.Array[Any] | js.Object = js.native
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type).
     *
@@ -24380,7 +24379,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igHierarchicalGrid(optionLiteral: option, optionName: dataSource, optionValue: String): Unit = js.native
-  def igHierarchicalGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[js.Any]): Unit = js.native
+  def igHierarchicalGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[Any]): Unit = js.native
   def igHierarchicalGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Object): Unit = js.native
   /**
     * Gets the default property in the response where children will be located
@@ -25128,9 +25127,9 @@ trait JQuery extends StObject {
   @JSName("igHierarchicalGrid")
   def igHierarchicalGrid_expanded(methodName: expanded, element: Element): Boolean = js.native
   @JSName("igHierarchicalGrid")
-  def igHierarchicalGrid_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igHierarchicalGrid_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igHierarchicalGrid")
-  def igHierarchicalGrid_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igHierarchicalGrid_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igHierarchicalGrid")
   def igHierarchicalGrid_option(optionLiteral: option, options: IgHierarchicalGrid): JQuery = js.native
   @JSName("igHierarchicalGrid")
@@ -25150,7 +25149,7 @@ trait JQuery extends StObject {
   @JSName("igHierarchicalGrid")
   def igHierarchicalGrid_toggle(methodName: toggle, element: Element, callback: js.Function): Unit = js.native
   
-  def igHtmlEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igHtmlEditor(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event fired after a toolbar item is clicked.
     */
@@ -25185,14 +25184,14 @@ trait JQuery extends StObject {
     * The html editor custom toolbars list.
     *
     */
-  def igHtmlEditor(optionLiteral: option, optionName: customToolbars): js.Array[js.Any] = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: customToolbars): js.Array[Any] = js.native
   /**
     * The html editor custom toolbars list.
     *
     *
     * @optionValue New value to be set.
     */
-  def igHtmlEditor(optionLiteral: option, optionName: customToolbars, optionValue: js.Array[js.Any]): Unit = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: customToolbars, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Event is fired on keyboard cut action.
     */
@@ -25244,14 +25243,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igHtmlEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igHtmlEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Event is fired on keyboard paste action.
     */
@@ -25397,14 +25396,14 @@ trait JQuery extends StObject {
     * The html editor toolbars list.
     *
     */
-  def igHtmlEditor(optionLiteral: option, optionName: toolbarSettings): js.Array[js.Any] = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: toolbarSettings): js.Array[Any] = js.native
   /**
     * The html editor toolbars list.
     *
     *
     * @optionValue New value to be set.
     */
-  def igHtmlEditor(optionLiteral: option, optionName: toolbarSettings, optionValue: js.Array[js.Any]): Unit = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: toolbarSettings, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Event is fired on keyboard undo action.
     */
@@ -25452,7 +25451,7 @@ trait JQuery extends StObject {
   def igHtmlEditor(optionLiteral: option, optionName: workspaceResized, optionValue: WorkspaceResizedEvent): Unit = js.native
   def igHtmlEditor(options: IgHtmlEditor): JQuery = js.native
   
-  def igHtmlEditorPopover(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igHtmlEditorPopover(methodName: String, methodParams: Any*): Any = js.native
   def igHtmlEditorPopover(optionLiteral: option, optionName: apply): ApplyEvent = js.native
   def igHtmlEditorPopover(optionLiteral: option, optionName: apply, optionValue: ApplyEvent): Unit = js.native
   def igHtmlEditorPopover(optionLiteral: option, optionName: cancel): CancelEvent = js.native
@@ -25461,8 +25460,8 @@ trait JQuery extends StObject {
   def igHtmlEditorPopover(optionLiteral: option, optionName: hide, optionValue: HideEvent): Unit = js.native
   def igHtmlEditorPopover(optionLiteral: option, optionName: isHidden): Boolean = js.native
   def igHtmlEditorPopover(optionLiteral: option, optionName: isHidden, optionValue: Boolean): Unit = js.native
-  def igHtmlEditorPopover(optionLiteral: option, optionName: item): js.Any = js.native
-  def igHtmlEditorPopover(optionLiteral: option, optionName: item, optionValue: js.Any): Unit = js.native
+  def igHtmlEditorPopover(optionLiteral: option, optionName: item): Any = js.native
+  def igHtmlEditorPopover(optionLiteral: option, optionName: item, optionValue: Any): Unit = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
@@ -25479,14 +25478,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igHtmlEditorPopover(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igHtmlEditorPopover(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igHtmlEditorPopover(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igHtmlEditorPopover(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
@@ -25502,8 +25501,8 @@ trait JQuery extends StObject {
   def igHtmlEditorPopover(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   def igHtmlEditorPopover(optionLiteral: option, optionName: show): ShowEvent = js.native
   def igHtmlEditorPopover(optionLiteral: option, optionName: show, optionValue: ShowEvent): Unit = js.native
-  def igHtmlEditorPopover(optionLiteral: option, optionName: target): js.Any = js.native
-  def igHtmlEditorPopover(optionLiteral: option, optionName: target, optionValue: js.Any): Unit = js.native
+  def igHtmlEditorPopover(optionLiteral: option, optionName: target): Any = js.native
+  def igHtmlEditorPopover(optionLiteral: option, optionName: target, optionValue: Any): Unit = js.native
   def igHtmlEditorPopover(options: IgHtmlEditorPopover): JQuery = js.native
   @JSName("igHtmlEditorPopover")
   def igHtmlEditorPopover_changeGlobalLanguage(methodName: changeGlobalLanguage): Unit = js.native
@@ -25516,9 +25515,9 @@ trait JQuery extends StObject {
   @JSName("igHtmlEditorPopover")
   def igHtmlEditorPopover_hide(methodName: hide): Unit = js.native
   @JSName("igHtmlEditorPopover")
-  def igHtmlEditorPopover_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igHtmlEditorPopover_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igHtmlEditorPopover")
-  def igHtmlEditorPopover_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igHtmlEditorPopover_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igHtmlEditorPopover")
   def igHtmlEditorPopover_option(optionLiteral: option, options: IgHtmlEditorPopover): JQuery = js.native
   @JSName("igHtmlEditorPopover")
@@ -25549,9 +25548,9 @@ trait JQuery extends StObject {
   @JSName("igHtmlEditor")
   def igHtmlEditor_isDirty(methodName: isDirty): js.Object = js.native
   @JSName("igHtmlEditor")
-  def igHtmlEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igHtmlEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igHtmlEditor")
-  def igHtmlEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igHtmlEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igHtmlEditor")
   def igHtmlEditor_option(optionLiteral: option, options: IgHtmlEditor): JQuery = js.native
   @JSName("igHtmlEditor")
@@ -25565,7 +25564,7 @@ trait JQuery extends StObject {
   @JSName("igHtmlEditor")
   def igHtmlEditor_widget(methodName: widget): Unit = js.native
   
-  def igImagePropertiesDialog(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igImagePropertiesDialog(methodName: String, methodParams: Any*): Any = js.native
   def igImagePropertiesDialog(optionLiteral: option, optionName: apply): ApplyEvent = js.native
   def igImagePropertiesDialog(optionLiteral: option, optionName: apply, optionValue: ApplyEvent): Unit = js.native
   def igImagePropertiesDialog(optionLiteral: option, optionName: cancel): CancelEvent = js.native
@@ -25574,8 +25573,8 @@ trait JQuery extends StObject {
   def igImagePropertiesDialog(optionLiteral: option, optionName: hide, optionValue: HideEvent): Unit = js.native
   def igImagePropertiesDialog(optionLiteral: option, optionName: isHidden): Boolean = js.native
   def igImagePropertiesDialog(optionLiteral: option, optionName: isHidden, optionValue: Boolean): Unit = js.native
-  def igImagePropertiesDialog(optionLiteral: option, optionName: item): js.Any = js.native
-  def igImagePropertiesDialog(optionLiteral: option, optionName: item, optionValue: js.Any): Unit = js.native
+  def igImagePropertiesDialog(optionLiteral: option, optionName: item): Any = js.native
+  def igImagePropertiesDialog(optionLiteral: option, optionName: item, optionValue: Any): Unit = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
@@ -25592,14 +25591,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igImagePropertiesDialog(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igImagePropertiesDialog(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igImagePropertiesDialog(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igImagePropertiesDialog(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
@@ -25615,21 +25614,21 @@ trait JQuery extends StObject {
   def igImagePropertiesDialog(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   def igImagePropertiesDialog(optionLiteral: option, optionName: show): ShowEvent = js.native
   def igImagePropertiesDialog(optionLiteral: option, optionName: show, optionValue: ShowEvent): Unit = js.native
-  def igImagePropertiesDialog(optionLiteral: option, optionName: target): js.Any = js.native
-  def igImagePropertiesDialog(optionLiteral: option, optionName: target, optionValue: js.Any): Unit = js.native
+  def igImagePropertiesDialog(optionLiteral: option, optionName: target): Any = js.native
+  def igImagePropertiesDialog(optionLiteral: option, optionName: target, optionValue: Any): Unit = js.native
   def igImagePropertiesDialog(options: IgImagePropertiesDialog): JQuery = js.native
   @JSName("igImagePropertiesDialog")
   def igImagePropertiesDialog_hide(methodName: hide): Unit = js.native
   @JSName("igImagePropertiesDialog")
-  def igImagePropertiesDialog_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igImagePropertiesDialog_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igImagePropertiesDialog")
-  def igImagePropertiesDialog_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igImagePropertiesDialog_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igImagePropertiesDialog")
   def igImagePropertiesDialog_option(optionLiteral: option, options: IgImagePropertiesDialog): JQuery = js.native
   @JSName("igImagePropertiesDialog")
   def igImagePropertiesDialog_show(methodName: show, item: js.Object): Unit = js.native
   
-  def igLayoutManager(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igLayoutManager(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Options specific to a border layout
     *
@@ -25776,7 +25775,7 @@ trait JQuery extends StObject {
     *                 vertical Column type can be set with vertical layout
     *
     */
-  def igLayoutManager(optionLiteral: option, optionName: layoutMode): js.Any = js.native
+  def igLayoutManager(optionLiteral: option, optionName: layoutMode): Any = js.native
   /**
     * Defines the layout type
     *                 grid Column type can be set with grid layout
@@ -25788,7 +25787,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igLayoutManager(optionLiteral: option, optionName: layoutMode, optionValue: js.Any): Unit = js.native
+  def igLayoutManager(optionLiteral: option, optionName: layoutMode, optionValue: Any): Unit = js.native
   /**
     * Event fired after all items are rendered.
     *                     Function takes arguments evt and ui.
@@ -25820,9 +25819,9 @@ trait JQuery extends StObject {
   @JSName("igLayoutManager")
   def igLayoutManager_destroy(methodName: destroy): Unit = js.native
   @JSName("igLayoutManager")
-  def igLayoutManager_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igLayoutManager_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igLayoutManager")
-  def igLayoutManager_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igLayoutManager_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igLayoutManager")
   def igLayoutManager_option(optionLiteral: option, options: IgLayoutManager): JQuery = js.native
   @JSName("igLayoutManager")
@@ -25842,7 +25841,7 @@ trait JQuery extends StObject {
   @JSName("igLayoutManager")
   def igLayoutManager_reflow(methodName: reflow, forceReflow: Unit, animationDuration: Unit, event: js.Object): Unit = js.native
   
-  def igLinearGauge(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igLinearGauge(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event which is raised when a label of the linear gauge is aligned along the scale.
     * Function takes first argument evt and second argument ui.
@@ -26066,14 +26065,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igLinearGauge(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igLinearGauge(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igLinearGauge(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igLinearGauge(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets  the maximum value of the scale.
     */
@@ -26330,14 +26329,14 @@ trait JQuery extends StObject {
     * Gets  a collection of brushes to be used as the palette for linear gauge ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igLinearGauge(optionLiteral: option, optionName: rangeBrushes): js.Any = js.native
+  def igLinearGauge(optionLiteral: option, optionName: rangeBrushes): Any = js.native
   /**
     * Sets a collection of brushes to be used as the palette for linear gauge ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igLinearGauge(optionLiteral: option, optionName: rangeBrushes, optionValue: js.Any): Unit = js.native
+  def igLinearGauge(optionLiteral: option, optionName: rangeBrushes, optionValue: Any): Unit = js.native
   /**
     * Gets  the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.
     * Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.
@@ -26366,14 +26365,14 @@ trait JQuery extends StObject {
     * Gets  a collection of brushes to be used as the palette for linear gauge outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igLinearGauge(optionLiteral: option, optionName: rangeOutlines): js.Any = js.native
+  def igLinearGauge(optionLiteral: option, optionName: rangeOutlines): Any = js.native
   /**
     * Sets a collection of brushes to be used as the palette for linear gauge outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igLinearGauge(optionLiteral: option, optionName: rangeOutlines, optionValue: js.Any): Unit = js.native
+  def igLinearGauge(optionLiteral: option, optionName: rangeOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the ranges' tooltip template.
     */
@@ -26632,9 +26631,9 @@ trait JQuery extends StObject {
   @JSName("igLinearGauge")
   def igLinearGauge_needleContainsPoint(methodName: needleContainsPoint, x: Double, y: Double): Boolean = js.native
   @JSName("igLinearGauge")
-  def igLinearGauge_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igLinearGauge_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igLinearGauge")
-  def igLinearGauge_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igLinearGauge_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igLinearGauge")
   def igLinearGauge_option(optionLiteral: option, options: IgLinearGauge): JQuery = js.native
   @JSName("igLinearGauge")
@@ -26644,7 +26643,7 @@ trait JQuery extends StObject {
   @JSName("igLinearGauge")
   def igLinearGauge_updateRange(methodName: updateRange, value: js.Object): Unit = js.native
   
-  def igLinkPropertiesDialog(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igLinkPropertiesDialog(methodName: String, methodParams: Any*): Any = js.native
   def igLinkPropertiesDialog(optionLiteral: option, optionName: apply): ApplyEvent = js.native
   def igLinkPropertiesDialog(optionLiteral: option, optionName: apply, optionValue: ApplyEvent): Unit = js.native
   def igLinkPropertiesDialog(optionLiteral: option, optionName: cancel): CancelEvent = js.native
@@ -26653,8 +26652,8 @@ trait JQuery extends StObject {
   def igLinkPropertiesDialog(optionLiteral: option, optionName: hide, optionValue: HideEvent): Unit = js.native
   def igLinkPropertiesDialog(optionLiteral: option, optionName: isHidden): Boolean = js.native
   def igLinkPropertiesDialog(optionLiteral: option, optionName: isHidden, optionValue: Boolean): Unit = js.native
-  def igLinkPropertiesDialog(optionLiteral: option, optionName: item): js.Any = js.native
-  def igLinkPropertiesDialog(optionLiteral: option, optionName: item, optionValue: js.Any): Unit = js.native
+  def igLinkPropertiesDialog(optionLiteral: option, optionName: item): Any = js.native
+  def igLinkPropertiesDialog(optionLiteral: option, optionName: item, optionValue: Any): Unit = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
@@ -26671,14 +26670,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igLinkPropertiesDialog(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igLinkPropertiesDialog(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igLinkPropertiesDialog(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igLinkPropertiesDialog(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
@@ -26694,23 +26693,23 @@ trait JQuery extends StObject {
   def igLinkPropertiesDialog(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   def igLinkPropertiesDialog(optionLiteral: option, optionName: show): ShowEvent = js.native
   def igLinkPropertiesDialog(optionLiteral: option, optionName: show, optionValue: ShowEvent): Unit = js.native
-  def igLinkPropertiesDialog(optionLiteral: option, optionName: target): js.Any = js.native
-  def igLinkPropertiesDialog(optionLiteral: option, optionName: target, optionValue: js.Any): Unit = js.native
+  def igLinkPropertiesDialog(optionLiteral: option, optionName: target): Any = js.native
+  def igLinkPropertiesDialog(optionLiteral: option, optionName: target, optionValue: Any): Unit = js.native
   def igLinkPropertiesDialog(options: IgLinkPropertiesDialog): JQuery = js.native
   @JSName("igLinkPropertiesDialog")
   def igLinkPropertiesDialog_hide(methodName: hide): Unit = js.native
   @JSName("igLinkPropertiesDialog")
-  def igLinkPropertiesDialog_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igLinkPropertiesDialog_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igLinkPropertiesDialog")
-  def igLinkPropertiesDialog_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igLinkPropertiesDialog_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igLinkPropertiesDialog")
   def igLinkPropertiesDialog_option(optionLiteral: option, options: IgLinkPropertiesDialog): JQuery = js.native
   @JSName("igLinkPropertiesDialog")
   def igLinkPropertiesDialog_show(methodName: show, item: js.Object): Unit = js.native
   
-  def igLoading(methodName: String, methodParams: js.Any*): js.Any = js.native
-  def igLoading(optionLiteral: option, optionName: cssClass): js.Any = js.native
-  def igLoading(optionLiteral: option, optionName: cssClass, optionValue: js.Any): Unit = js.native
+  def igLoading(methodName: String, methodParams: Any*): Any = js.native
+  def igLoading(optionLiteral: option, optionName: cssClass): Any = js.native
+  def igLoading(optionLiteral: option, optionName: cssClass, optionValue: Any): Unit = js.native
   def igLoading(optionLiteral: option, optionName: includeVerticalOffset): Boolean = js.native
   def igLoading(optionLiteral: option, optionName: includeVerticalOffset, optionValue: Boolean): Unit = js.native
   def igLoading(options: IgLoading): JQuery = js.native
@@ -26723,9 +26722,9 @@ trait JQuery extends StObject {
   @JSName("igLoading")
   def igLoading_indicatorElement(methodName: indicatorElement): Unit = js.native
   @JSName("igLoading")
-  def igLoading_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igLoading_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igLoading")
-  def igLoading_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igLoading_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igLoading")
   def igLoading_option(optionLiteral: option, options: IgLoading): JQuery = js.native
   @JSName("igLoading")
@@ -26733,7 +26732,7 @@ trait JQuery extends StObject {
   @JSName("igLoading")
   def igLoading_show(methodName: show, refresh: js.Object): Unit = js.native
   
-  def igMap(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igMap(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Sets or gets the automatic height to add when automatically adding margins to the map.
     */
@@ -26780,7 +26779,7 @@ trait JQuery extends StObject {
     * series with a marker type of circle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: circleMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: circleMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for circle markers on the map.
     * Defines the marker template used for
@@ -26789,7 +26788,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: circleMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: circleMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the cross hair point (in world coordinates)
     * Either or both of the crosshair point's X and Y may be set to double.NaN, in which
@@ -26817,7 +26816,7 @@ trait JQuery extends StObject {
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  def igMap(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
     */
@@ -26843,7 +26842,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the DefaultInteraction property. The default interaction state defines the map's response to mouse events.
     */
@@ -26860,7 +26859,7 @@ trait JQuery extends StObject {
     * series with a marker type of diamond.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: diamondMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: diamondMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for diamond markers on the map.
     * Defines the marker template used for
@@ -26869,7 +26868,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: diamondMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: diamondMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the current Map's DragModifier property.
     */
@@ -26929,7 +26928,7 @@ trait JQuery extends StObject {
     * series with a marker type of hexagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: hexagonMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: hexagonMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for hexagon markers on the map.
     * Defines the marker template used for
@@ -26938,14 +26937,14 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: hexagonMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: hexagonMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the template to use for hexagram markers on the map.
     * Defines the marker template used for
     * series with a marker type of hexagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: hexagramMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: hexagramMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for hexagram markers on the map.
     * Defines the marker template used for
@@ -26954,7 +26953,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: hexagramMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: hexagramMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
@@ -26971,14 +26970,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igMap(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * The background image uri use in the overview detail pane.
     */
@@ -27005,7 +27004,7 @@ trait JQuery extends StObject {
     * series with a marker type of pentagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: pentagonMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: pentagonMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for pentagon markers on the map.
     * Defines the marker template used for
@@ -27014,14 +27013,14 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: pentagonMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: pentagonMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the template to use for pentragram markers on the map.
     * Defines the marker template used for
     * series with a marker type of pentagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: pentagramMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: pentagramMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for pentragram markers on the map.
     * Defines the marker template used for
@@ -27030,7 +27029,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: pentagramMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: pentagramMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the brush used as the background for the current Map object's plot area.
     */
@@ -27057,7 +27056,7 @@ trait JQuery extends StObject {
     * strokePath is hidden.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  def igMap(optionLiteral: option, optionName: previewRect): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: previewRect): Any = js.native
   /**
     * Sets the preview rectangle.
     * The preview rectangle may be set to Rect.Empty, in which case the visible preview
@@ -27066,14 +27065,14 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: previewRect, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: previewRect, optionValue: Any): Unit = js.native
   /**
     * Gets  the template to use for pyramid markers on the map.
     * Defines the marker template used for
     * series with a marker type of pyramid.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: pyramidMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: pyramidMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for pyramid markers on the map.
     * Defines the marker template used for
@@ -27082,7 +27081,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: pyramidMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: pyramidMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Raised when the map's processing for an update has completed.
     * Function takes arguments evt and ui.
@@ -27300,7 +27299,7 @@ trait JQuery extends StObject {
     * series with a marker type of square.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: squareMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: squareMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for square markers on the map.
     * Defines the marker template used for
@@ -27309,14 +27308,14 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: squareMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: squareMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the template to use for tetragram markers on the map.
     * Defines the marker template used for
     * series with a marker type of tetragram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: tetragramMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: tetragramMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for tetragram markers on the map.
     * Defines the marker template used for
@@ -27325,7 +27324,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: tetragramMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: tetragramMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * The swatch used to style this widget
     */
@@ -27438,7 +27437,7 @@ trait JQuery extends StObject {
     * series with a marker type of triangle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igMap(optionLiteral: option, optionName: triangleMarkerTemplate): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: triangleMarkerTemplate): Any = js.native
   /**
     * Sets the template to use for triangle markers on the map.
     * Defines the marker template used for
@@ -27447,7 +27446,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: triangleMarkerTemplate, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: triangleMarkerTemplate, optionValue: Any): Unit = js.native
   /**
     * Event fired when the status of an ongoing Triangulation has changed.
     * Function takes arguments evt and ui.
@@ -27520,7 +27519,7 @@ trait JQuery extends StObject {
     * A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  def igMap(optionLiteral: option, optionName: windowRect): js.Any = js.native
+  def igMap(optionLiteral: option, optionName: windowRect): Any = js.native
   /**
     * Occurs just after the current Map's window rectangle is changed.
     * Function takes arguments evt and ui.
@@ -27572,7 +27571,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMap(optionLiteral: option, optionName: windowRect, optionValue: js.Any): Unit = js.native
+  def igMap(optionLiteral: option, optionName: windowRect, optionValue: Any): Unit = js.native
   /**
     * The response to user panning and zooming: whether to update the view immediately while the user action is happening, or to defer the update to after the user action is complete.  The user action will be an action such as a mouse drag which causes panning and/or zooming to occur.
     *
@@ -27673,9 +27672,9 @@ trait JQuery extends StObject {
   @JSName("igMap")
   def igMap_option(methodName: option): Unit = js.native
   @JSName("igMap")
-  def igMap_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igMap_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igMap")
-  def igMap_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igMap_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igMap")
   def igMap_option(optionLiteral: option, options: IgMap): JQuery = js.native
   @JSName("igMap")
@@ -27701,7 +27700,7 @@ trait JQuery extends StObject {
   @JSName("igMap")
   def igMap_zoomToGeographic(methodName: zoomToGeographic, rect: js.Object): js.Object = js.native
   
-  def igMaskEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igMaskEditor(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is false, and editor has no value, then value is set to an empty string.
@@ -27957,14 +27956,14 @@ trait JQuery extends StObject {
     * Sets gets list of items which are used for drop-down list.
     * Items in list can be strings, numbers or objects. The items are directly rendered without casting, or manipulating them.
     */
-  def igMaskEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
+  def igMaskEditor(optionLiteral: option, optionName: listItems): js.Array[Any] = js.native
   /**
     * Sets gets list of items which are used for drop-down list.
     * Items in list can be strings, numbers or objects. The items are directly rendered without casting, or manipulating them.
     *
     * @optionValue New value to be set.
     */
-  def igMaskEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
+  def igMaskEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used.
     */
@@ -27979,24 +27978,24 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igMaskEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igMaskEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igMaskEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igMaskEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     */
-  def igMaskEditor(optionLiteral: option, optionName: maxLength): js.Any = js.native
+  def igMaskEditor(optionLiteral: option, optionName: maxLength): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     *
     * @optionValue New value to be set.
     */
-  def igMaskEditor(optionLiteral: option, optionName: maxLength, optionValue: js.Any): Unit = js.native
+  def igMaskEditor(optionLiteral: option, optionName: maxLength, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
@@ -28155,8 +28154,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igMaskEditor(optionLiteral: option, optionName: textChanged, optionValue: TextChangedEvent): Unit = js.native
-  def igMaskEditor(optionLiteral: option, optionName: textMode): js.Any = js.native
-  def igMaskEditor(optionLiteral: option, optionName: textMode, optionValue: js.Any): Unit = js.native
+  def igMaskEditor(optionLiteral: option, optionName: textMode): Any = js.native
+  def igMaskEditor(optionLiteral: option, optionName: textMode, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the ability to convert the input characters to lower case (true) or keeps the characters as they are (false). The option has effect only while keyboard entries and paste.
     * Note! When the option is set at runtime the editor is not changing the current value.
@@ -28203,7 +28202,7 @@ trait JQuery extends StObject {
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igMaskEditor(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igMaskEditor(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -28212,19 +28211,19 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igMaskEditor(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igMaskEditor(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     */
-  def igMaskEditor(optionLiteral: option, optionName: value): js.Any = js.native
+  def igMaskEditor(optionLiteral: option, optionName: value): Any = js.native
   /**
     * /Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     *
     * @optionValue New value to be set.
     */
-  def igMaskEditor(optionLiteral: option, optionName: value, optionValue: js.Any): Unit = js.native
+  def igMaskEditor(optionLiteral: option, optionName: value, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets how many items should be shown at once.
     * Notes:
@@ -28284,9 +28283,9 @@ trait JQuery extends StObject {
   @JSName("igMaskEditor")
   def igMaskEditor_isValid(methodName: isValid): Boolean = js.native
   @JSName("igMaskEditor")
-  def igMaskEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igMaskEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igMaskEditor")
-  def igMaskEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igMaskEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igMaskEditor")
   def igMaskEditor_option(optionLiteral: option, options: IgMaskEditor): JQuery = js.native
   @JSName("igMaskEditor")
@@ -28308,7 +28307,7 @@ trait JQuery extends StObject {
   @JSName("igMaskEditor")
   def igMaskEditor_value(methodName: value, newValue: String): String = js.native
   
-  def igNotifier(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igNotifier(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Allows setting the respective state CSS on the target element (used to apply border color by default)
     *
@@ -28374,14 +28373,14 @@ trait JQuery extends StObject {
     * The containment for the popover. Accepts a jQuery object
     *
     */
-  def igNotifier(optionLiteral: option, optionName: containment): js.Any = js.native
+  def igNotifier(optionLiteral: option, optionName: containment): Any = js.native
   /**
     * Sets the containment for the popover. Accepts a jQuery object
     *
     *
     * @optionValue New value to be set.
     */
-  def igNotifier(optionLiteral: option, optionName: containment, optionValue: js.Any): Unit = js.native
+  def igNotifier(optionLiteral: option, optionName: containment, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the content for the popover container. Templated with parameters by default: {0} - icon container class, {1} - the icon class and {2} - message text.
     *
@@ -28405,7 +28404,7 @@ trait JQuery extends StObject {
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  def igNotifier(optionLiteral: option, optionName: directionPriority): js.Array[js.Any] = js.native
+  def igNotifier(optionLiteral: option, optionName: directionPriority): js.Array[Any] = js.native
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
@@ -28413,7 +28412,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igNotifier(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[js.Any]): Unit = js.native
+  def igNotifier(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Controls the direction in which the control shows relative to the target element
     *
@@ -28642,9 +28641,9 @@ trait JQuery extends StObject {
   @JSName("igNotifier")
   def igNotifier_notify(methodName: notify, state: js.Object, message: String): Unit = js.native
   @JSName("igNotifier")
-  def igNotifier_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igNotifier_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igNotifier")
-  def igNotifier_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igNotifier_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igNotifier")
   def igNotifier_option(optionLiteral: option, options: IgNotifier): JQuery = js.native
   @JSName("igNotifier")
@@ -28662,7 +28661,7 @@ trait JQuery extends StObject {
   @JSName("igNotifier")
   def igNotifier_target(methodName: target): js.Object = js.native
   
-  def igNumericEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igNumericEditor(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).
@@ -28856,13 +28855,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igNumericEditor(optionLiteral: option, optionName: excludeKeys): js.Any = js.native
+  def igNumericEditor(optionLiteral: option, optionName: excludeKeys): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: excludeKeys, optionValue: js.Any): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: excludeKeys, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
@@ -28894,7 +28893,7 @@ trait JQuery extends StObject {
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  def igNumericEditor(optionLiteral: option, optionName: groups): js.Array[js.Any] = js.native
+  def igNumericEditor(optionLiteral: option, optionName: groups): js.Array[Any] = js.native
   /**
     * (array of number objects) /Sets the number of digits in the integer part of a number, which are divided into groups.
     * The "groupSeparator" is inserted between groups.
@@ -28908,7 +28907,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[js.Any]): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets/Sets the height of the control.
     *
@@ -28925,13 +28924,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igNumericEditor(optionLiteral: option, optionName: includeKeys): js.Any = js.native
+  def igNumericEditor(optionLiteral: option, optionName: includeKeys): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: includeKeys, optionValue: js.Any): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: includeKeys, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.
     *
@@ -28985,7 +28984,7 @@ trait JQuery extends StObject {
     * Items in the list can be of type number.
     *
     */
-  def igNumericEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
+  def igNumericEditor(optionLiteral: option, optionName: listItems): js.Array[Any] = js.native
   /**
     * /Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type number.
@@ -28993,7 +28992,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
@@ -29010,14 +29009,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igNumericEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igNumericEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
@@ -29041,13 +29040,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igNumericEditor(optionLiteral: option, optionName: maxLength): js.Any = js.native
+  def igNumericEditor(optionLiteral: option, optionName: maxLength): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: maxLength, optionValue: js.Any): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: maxLength, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the maximum value which can be entered in the editor by the end user.
     *
@@ -29336,35 +29335,35 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igNumericEditor(optionLiteral: option, optionName: textChanged, optionValue: TextChangedEvent): Unit = js.native
-  def igNumericEditor(optionLiteral: option, optionName: textMode): js.Any = js.native
-  def igNumericEditor(optionLiteral: option, optionName: textMode, optionValue: js.Any): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: textMode): Any = js.native
+  def igNumericEditor(optionLiteral: option, optionName: textMode, optionValue: Any): Unit = js.native
   /**
     * Removed from numeric editor options
     */
-  def igNumericEditor(optionLiteral: option, optionName: toLower): js.Any = js.native
-  /**
-    * Removed from numeric editor options
-    *
-    * @optionValue New value to be set.
-    */
-  def igNumericEditor(optionLiteral: option, optionName: toLower, optionValue: js.Any): Unit = js.native
-  /**
-    * Removed from numeric editor options
-    */
-  def igNumericEditor(optionLiteral: option, optionName: toUpper): js.Any = js.native
+  def igNumericEditor(optionLiteral: option, optionName: toLower): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: toUpper, optionValue: js.Any): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: toLower, optionValue: Any): Unit = js.native
+  /**
+    * Removed from numeric editor options
+    */
+  def igNumericEditor(optionLiteral: option, optionName: toUpper): Any = js.native
+  /**
+    * Removed from numeric editor options
+    *
+    * @optionValue New value to be set.
+    */
+  def igNumericEditor(optionLiteral: option, optionName: toUpper, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igNumericEditor(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igNumericEditor(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -29373,13 +29372,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     *
     */
-  def igNumericEditor(optionLiteral: option, optionName: value): js.Any = js.native
+  def igNumericEditor(optionLiteral: option, optionName: value): Any = js.native
   /**
     * /Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
@@ -29387,7 +29386,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: value, optionValue: js.Any): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: value, optionValue: Any): Unit = js.native
   /**
     * Gets the number of the items to be shown at once when the drop-down list get opened.
     * Notes:
@@ -29451,9 +29450,9 @@ trait JQuery extends StObject {
   @JSName("igNumericEditor")
   def igNumericEditor_insert(methodName: insert, string: String): Unit = js.native
   @JSName("igNumericEditor")
-  def igNumericEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igNumericEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igNumericEditor")
-  def igNumericEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igNumericEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igNumericEditor")
   def igNumericEditor_option(optionLiteral: option, options: IgNumericEditor): JQuery = js.native
   @JSName("igNumericEditor")
@@ -29485,18 +29484,18 @@ trait JQuery extends StObject {
   @JSName("igNumericEditor")
   def igNumericEditor_value(methodName: value, newValue: Double): Double = js.native
   
-  def igPathFinder(methodName: String, methodParams: js.Any*): js.Any = js.native
-  def igPathFinder(optionLiteral: option, optionName: items): js.Any = js.native
-  def igPathFinder(optionLiteral: option, optionName: items, optionValue: js.Any): Unit = js.native
+  def igPathFinder(methodName: String, methodParams: Any*): Any = js.native
+  def igPathFinder(optionLiteral: option, optionName: items): Any = js.native
+  def igPathFinder(optionLiteral: option, optionName: items, optionValue: Any): Unit = js.native
   def igPathFinder(options: IgPathFinder): JQuery = js.native
   @JSName("igPathFinder")
-  def igPathFinder_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igPathFinder_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igPathFinder")
-  def igPathFinder_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igPathFinder_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igPathFinder")
   def igPathFinder_option(optionLiteral: option, options: IgPathFinder): JQuery = js.native
   
-  def igPercentEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igPercentEditor(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).
@@ -29650,13 +29649,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igPercentEditor(optionLiteral: option, optionName: excludeKeys): js.Any = js.native
+  def igPercentEditor(optionLiteral: option, optionName: excludeKeys): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: excludeKeys, optionValue: js.Any): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: excludeKeys, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the character, which is used as separator for groups (like thousands).
     * That option has effect only in display mode(no focus).
@@ -29688,7 +29687,7 @@ trait JQuery extends StObject {
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  def igPercentEditor(optionLiteral: option, optionName: groups): js.Array[js.Any] = js.native
+  def igPercentEditor(optionLiteral: option, optionName: groups): js.Array[Any] = js.native
   /**
     * (array of number objects) /Sets the number of digits in the integer part of a number, which are divided into groups.
     * The "groupSeparator" is inserted between groups.
@@ -29702,7 +29701,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[js.Any]): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets/Sets the height of the control.
     *
@@ -29719,13 +29718,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igPercentEditor(optionLiteral: option, optionName: includeKeys): js.Any = js.native
+  def igPercentEditor(optionLiteral: option, optionName: includeKeys): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: includeKeys, optionValue: js.Any): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: includeKeys, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.
     *
@@ -29779,7 +29778,7 @@ trait JQuery extends StObject {
     * Items in the list can be of type number.
     *
     */
-  def igPercentEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
+  def igPercentEditor(optionLiteral: option, optionName: listItems): js.Array[Any] = js.native
   /**
     * /Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type number.
@@ -29787,7 +29786,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
@@ -29804,14 +29803,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igPercentEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igPercentEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the maximum number of decimal places supported by the editor.
     * Note: this option has priority over possible regional settings.
@@ -29835,13 +29834,13 @@ trait JQuery extends StObject {
   /**
     * Removed from numeric editor options
     */
-  def igPercentEditor(optionLiteral: option, optionName: maxLength): js.Any = js.native
+  def igPercentEditor(optionLiteral: option, optionName: maxLength): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: maxLength, optionValue: js.Any): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: maxLength, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the maximum value which can be entered in the editor by the end user.
     *
@@ -30148,35 +30147,35 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igPercentEditor(optionLiteral: option, optionName: textAlign, optionValue: String): Unit = js.native
-  def igPercentEditor(optionLiteral: option, optionName: textMode): js.Any = js.native
-  def igPercentEditor(optionLiteral: option, optionName: textMode, optionValue: js.Any): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: textMode): Any = js.native
+  def igPercentEditor(optionLiteral: option, optionName: textMode, optionValue: Any): Unit = js.native
   /**
     * Removed from numeric editor options
     */
-  def igPercentEditor(optionLiteral: option, optionName: toLower): js.Any = js.native
-  /**
-    * Removed from numeric editor options
-    *
-    * @optionValue New value to be set.
-    */
-  def igPercentEditor(optionLiteral: option, optionName: toLower, optionValue: js.Any): Unit = js.native
-  /**
-    * Removed from numeric editor options
-    */
-  def igPercentEditor(optionLiteral: option, optionName: toUpper): js.Any = js.native
+  def igPercentEditor(optionLiteral: option, optionName: toLower): Any = js.native
   /**
     * Removed from numeric editor options
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: toUpper, optionValue: js.Any): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: toLower, optionValue: Any): Unit = js.native
+  /**
+    * Removed from numeric editor options
+    */
+  def igPercentEditor(optionLiteral: option, optionName: toUpper): Any = js.native
+  /**
+    * Removed from numeric editor options
+    *
+    * @optionValue New value to be set.
+    */
+  def igPercentEditor(optionLiteral: option, optionName: toUpper, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igPercentEditor(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igPercentEditor(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -30185,13 +30184,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     *
     */
-  def igPercentEditor(optionLiteral: option, optionName: value): js.Any = js.native
+  def igPercentEditor(optionLiteral: option, optionName: value): Any = js.native
   /**
     * /Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
@@ -30199,7 +30198,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: value, optionValue: js.Any): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: value, optionValue: Any): Unit = js.native
   /**
     * Gets the number of the items to be shown at once when the drop-down list get opened.
     * Notes:
@@ -30247,9 +30246,9 @@ trait JQuery extends StObject {
   @JSName("igPercentEditor")
   def igPercentEditor_insert(methodName: insert, string: String): Unit = js.native
   @JSName("igPercentEditor")
-  def igPercentEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igPercentEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igPercentEditor")
-  def igPercentEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igPercentEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igPercentEditor")
   def igPercentEditor_option(optionLiteral: option, options: IgPercentEditor): JQuery = js.native
   @JSName("igPercentEditor")
@@ -30273,7 +30272,7 @@ trait JQuery extends StObject {
   @JSName("igPercentEditor")
   def igPercentEditor_value(methodName: value, newValue: Double): Double = js.native
   
-  def igPieChart(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igPieChart(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets  whether the slices can be exploded.
     */
@@ -30309,7 +30308,7 @@ trait JQuery extends StObject {
     * The brushes property defines the palette from which automatically assigned slice brushes are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igPieChart(optionLiteral: option, optionName: brushes): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: brushes): Any = js.native
   /**
     * Sets the Brushes property.
     * The brushes property defines the palette from which automatically assigned slice brushes are selected.
@@ -30317,7 +30316,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: brushes, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: brushes, optionValue: Any): Unit = js.native
   /**
     * Gets  the property name that contains the labels.
     */
@@ -30331,7 +30330,7 @@ trait JQuery extends StObject {
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  def igPieChart(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
     */
@@ -30357,7 +30356,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets or Sets the property name that contains the values.
     */
@@ -30382,14 +30381,14 @@ trait JQuery extends StObject {
     * Gets  the collection of exploded slice indices.
     * Should be an array of integers that indicate the indexes of the slices to explode.
     */
-  def igPieChart(optionLiteral: option, optionName: explodedSlices): js.Array[js.Any] = js.native
+  def igPieChart(optionLiteral: option, optionName: explodedSlices): js.Array[Any] = js.native
   /**
     * Sets the collection of exploded slice indices.
     * Should be an array of integers that indicate the indexes of the slices to explode.
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: explodedSlices, optionValue: js.Array[js.Any]): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: explodedSlices, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets  the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.
     * Use context.item to get the item associated with the slice, if any.
@@ -30551,7 +30550,7 @@ trait JQuery extends StObject {
     * the chart object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igPieChart(optionLiteral: option, optionName: legendItemBadgeTemplate): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: legendItemBadgeTemplate): Any = js.native
   /**
     * Sets the LegendItemBadgeTemplate property.
     * The legend item badge is created according to the LegendItemBadgeTemplate on-demand by
@@ -30560,14 +30559,14 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: legendItemBadgeTemplate, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: legendItemBadgeTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the LegendItemTemplate property.
     * The legend item control content is created according to the LegendItemTemplate on-demand by
     * the chart object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  def igPieChart(optionLiteral: option, optionName: legendItemTemplate): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: legendItemTemplate): Any = js.native
   /**
     * Sets the LegendItemTemplate property.
     * The legend item control content is created according to the LegendItemTemplate on-demand by
@@ -30576,7 +30575,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: legendItemTemplate, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: legendItemTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the property name that contains the legend labels.
     */
@@ -30597,24 +30596,24 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igPieChart(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets  a style object that can be used to override the style settings on the others category slice.
     */
-  def igPieChart(optionLiteral: option, optionName: othersCategoryStyle): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: othersCategoryStyle): Any = js.native
   /**
     * Sets a style object that can be used to override the style settings on the others category slice.
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: othersCategoryStyle, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: othersCategoryStyle, optionValue: Any): Unit = js.native
   /**
     * Gets  the label of the Others slice.
     */
@@ -30650,7 +30649,7 @@ trait JQuery extends StObject {
     * The Outlines property defines the palette from which automatically assigned slice outlines are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igPieChart(optionLiteral: option, optionName: outlines): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: outlines): Any = js.native
   /**
     * Sets the Outlines property.
     * The Outlines property defines the palette from which automatically assigned slice outlines are selected.
@@ -30658,7 +30657,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: outlines, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: outlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the scaling factor of the chart's radius. Value between 0 and 1.
     */
@@ -30696,7 +30695,7 @@ trait JQuery extends StObject {
     * Gets  the currently selected data item.  If a different data item is provided the pie chart
     *             will select the slice associated with the new item.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedItem): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedItem): Any = js.native
   /**
     * Event fired when the selectedItem option has changed.
     *             Function takes arguments evt and ui.
@@ -30737,12 +30736,12 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedItem, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedItem, optionValue: Any): Unit = js.native
   /**
     * Gets  the currently selected data items.  Adding or removing data items from this array will
     *             select or deselect the slices associated with those items.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedItems): js.Array[js.Any] = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedItems): js.Array[Any] = js.native
   /**
     * Event fired when the selectedItems array has changed.
     *             Function takes arguments evt and ui.
@@ -30783,29 +30782,29 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedItems, optionValue: js.Array[js.Any]): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedItems, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Sets the collection of selected slice indices.
     *             Should be an array of integers that indicate the indexes of the slices to select.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedSlices): js.Array[js.Any] = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedSlices): js.Array[Any] = js.native
   /**
     * Sets the collection of selected slice indices.
     *             Should be an array of integers that indicate the indexes of the slices to select.
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedSlices, optionValue: js.Array[js.Any]): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedSlices, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets  the style used when a slice is selected.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedStyle): js.Any = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedStyle): Any = js.native
   /**
     * Sets the style used when a slice is selected.
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedStyle, optionValue: js.Any): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedStyle, optionValue: Any): Unit = js.native
   /**
     * Gets  the type of selection the pie chart allows.
     *
@@ -31029,9 +31028,9 @@ trait JQuery extends StObject {
   @JSName("igPieChart")
   def igPieChart_option(methodName: option): Unit = js.native
   @JSName("igPieChart")
-  def igPieChart_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igPieChart_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igPieChart")
-  def igPieChart_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igPieChart_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igPieChart")
   def igPieChart_option(optionLiteral: option, options: IgPieChart): JQuery = js.native
   @JSName("igPieChart")
@@ -31043,7 +31042,7 @@ trait JQuery extends StObject {
   @JSName("igPieChart")
   def igPieChart_widget(methodName: widget): Unit = js.native
   
-  def igPivotDataSelector(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igPivotDataSelector(methodName: String, methodParams: Any*): Any = js.native
   /**
     * A function that will be called to determine if an item can be moved in or dropped on an area of the data selector.
     *
@@ -31078,7 +31077,7 @@ trait JQuery extends StObject {
     * An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     *
     */
-  def igPivotDataSelector(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igPivotDataSelector(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Fired after the data source has initialized.
     */
@@ -31123,7 +31122,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPivotDataSelector(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igPivotDataSelector(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Setting deferUpdate to true will not apply changes to the data source until the update method is called or the update layout button is clicked.
     *
@@ -31243,13 +31242,13 @@ trait JQuery extends StObject {
   /**
     * Gets the parent for the drop downs.
     */
-  def igPivotDataSelector(optionLiteral: option, optionName: dropDownParent): js.Any = js.native
+  def igPivotDataSelector(optionLiteral: option, optionName: dropDownParent): Any = js.native
   /**
     * Sets the parent for the drop downs.
     *
     * @optionValue New value to be set.
     */
-  def igPivotDataSelector(optionLiteral: option, optionName: dropDownParent, optionValue: js.Any): Unit = js.native
+  def igPivotDataSelector(optionLiteral: option, optionName: dropDownParent, optionValue: Any): Unit = js.native
   /**
     * Fired after the filter members drop down closes.
     */
@@ -31339,14 +31338,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igPivotDataSelector(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igPivotDataSelector(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igPivotDataSelector(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igPivotDataSelector(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Fired after a metadata item drop.
     */
@@ -31421,15 +31420,15 @@ trait JQuery extends StObject {
   @JSName("igPivotDataSelector")
   def igPivotDataSelector_destroy(methodName: destroy): Unit = js.native
   @JSName("igPivotDataSelector")
-  def igPivotDataSelector_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igPivotDataSelector_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igPivotDataSelector")
-  def igPivotDataSelector_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igPivotDataSelector_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igPivotDataSelector")
   def igPivotDataSelector_option(optionLiteral: option, options: IgPivotDataSelector): JQuery = js.native
   @JSName("igPivotDataSelector")
   def igPivotDataSelector_update(methodName: update): Unit = js.native
   
-  def igPivotGrid(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igPivotGrid(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Enables sorting of the header cells in columns.
     *
@@ -31538,7 +31537,7 @@ trait JQuery extends StObject {
     * An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     *
     */
-  def igPivotGrid(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igPivotGrid(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Fired after the data source has initialized.
     */
@@ -31579,7 +31578,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPivotGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igPivotGrid(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets the default sort behavior for the levels if no sort behavior is specified in an item from the levelSortDirections option.
     */
@@ -31711,13 +31710,13 @@ trait JQuery extends StObject {
   /**
     * Gets the parent for the drop downs.
     */
-  def igPivotGrid(optionLiteral: option, optionName: dropDownParent): js.Any = js.native
+  def igPivotGrid(optionLiteral: option, optionName: dropDownParent): Any = js.native
   /**
     * Sets the parent for the drop downs.
     *
     * @optionValue New value to be set.
     */
-  def igPivotGrid(optionLiteral: option, optionName: dropDownParent, optionValue: js.Any): Unit = js.native
+  def igPivotGrid(optionLiteral: option, optionName: dropDownParent, optionValue: Any): Unit = js.native
   /**
     * Fired after the filter members drop down closes.
     */
@@ -31782,26 +31781,26 @@ trait JQuery extends StObject {
     * Gets the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.
     *
     */
-  def igPivotGrid(optionLiteral: option, optionName: firstLevelSortDirection): js.Any = js.native
+  def igPivotGrid(optionLiteral: option, optionName: firstLevelSortDirection): Any = js.native
   /**
     * Sets the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.
     *
     *
     * @optionValue New value to be set.
     */
-  def igPivotGrid(optionLiteral: option, optionName: firstLevelSortDirection, optionValue: js.Any): Unit = js.native
+  def igPivotGrid(optionLiteral: option, optionName: firstLevelSortDirection, optionValue: Any): Unit = js.native
   /**
     * Gets the default sort direction for the rows.
     *
     */
-  def igPivotGrid(optionLiteral: option, optionName: firstSortDirection): js.Any = js.native
+  def igPivotGrid(optionLiteral: option, optionName: firstSortDirection): Any = js.native
   /**
     * Sets the default sort direction for the rows.
     *
     *
     * @optionValue New value to be set.
     */
-  def igPivotGrid(optionLiteral: option, optionName: firstSortDirection, optionValue: js.Any): Unit = js.native
+  def igPivotGrid(optionLiteral: option, optionName: firstSortDirection, optionValue: Any): Unit = js.native
   /**
     * Options specific to the igGrid that will render the pivot grid view.
     *
@@ -31959,14 +31958,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igPivotGrid(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igPivotGrid(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igPivotGrid(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igPivotGrid(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Fired after a metadata item drop.
     */
@@ -32060,7 +32059,7 @@ trait JQuery extends StObject {
     * tree All hierarchies in the rows are displayed in a tree-like structure in a single column (The column's width is dependent on the defaultRowHEaderWidth, which can be set to "null" to enable the built-in auto-sizing functionality).
     *
     */
-  def igPivotGrid(optionLiteral: option, optionName: rowHeadersLayout): js.Any = js.native
+  def igPivotGrid(optionLiteral: option, optionName: rowHeadersLayout): Any = js.native
   /**
     * A value indicating whether the layout that row headers should be arranged.standard Each hierarchy in the rows is displayed in a separate column. The child members of a member in the rows are displayed on its right.
     * superCompact Each hierarchy in the rows is displayed in a separate column. The child members of a member in the rows are displayed on above or below it (Depending on the isParentInFrontForRows setting).
@@ -32069,7 +32068,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPivotGrid(optionLiteral: option, optionName: rowHeadersLayout, optionValue: js.Any): Unit = js.native
+  def igPivotGrid(optionLiteral: option, optionName: rowHeadersLayout, optionValue: Any): Unit = js.native
   /**
     * Fired after the sorting of the columns.
     */
@@ -32153,9 +32152,9 @@ trait JQuery extends StObject {
   def igPivotGrid(optionLiteral: option, optionName: width, optionValue: Double): Unit = js.native
   def igPivotGrid(options: IgPivotGrid): JQuery = js.native
   @JSName("igPivotGrid")
-  def igPivotGrid_appliedColumnSortDirections(methodName: appliedColumnSortDirections): js.Array[js.Any] = js.native
+  def igPivotGrid_appliedColumnSortDirections(methodName: appliedColumnSortDirections): js.Array[Any] = js.native
   @JSName("igPivotGrid")
-  def igPivotGrid_appliedLevelSortDirections(methodName: appliedLevelSortDirections): js.Array[js.Any] = js.native
+  def igPivotGrid_appliedLevelSortDirections(methodName: appliedLevelSortDirections): js.Array[Any] = js.native
   @JSName("igPivotGrid")
   def igPivotGrid_changeGlobalLanguage(methodName: changeGlobalLanguage): Unit = js.native
   @JSName("igPivotGrid")
@@ -32189,15 +32188,15 @@ trait JQuery extends StObject {
   @JSName("igPivotGrid")
   def igPivotGrid_grid(methodName: grid): js.Object = js.native
   @JSName("igPivotGrid")
-  def igPivotGrid_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igPivotGrid_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igPivotGrid")
-  def igPivotGrid_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igPivotGrid_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igPivotGrid")
   def igPivotGrid_option(optionLiteral: option, options: IgPivotGrid): JQuery = js.native
   @JSName("igPivotGrid")
   def igPivotGrid_updateGrid(methodName: updateGrid): Unit = js.native
   
-  def igPivotView(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igPivotView(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Configuration settings that will be assigned to the igPivotDataSelector widget.
     *
@@ -32230,7 +32229,7 @@ trait JQuery extends StObject {
     * An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     *
     */
-  def igPivotView(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igPivotView(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     * The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.
@@ -32251,7 +32250,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPivotView(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igPivotView(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * *
     */
@@ -32279,14 +32278,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igPivotView(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igPivotView(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igPivotView(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igPivotView(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Configuration settings that will be assigned to the igPivotGrid widget.
     *
@@ -32347,9 +32346,9 @@ trait JQuery extends StObject {
   @JSName("igPivotView")
   def igPivotView_destroy(methodName: destroy): Unit = js.native
   @JSName("igPivotView")
-  def igPivotView_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igPivotView_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igPivotView")
-  def igPivotView_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igPivotView_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igPivotView")
   def igPivotView_option(optionLiteral: option, options: IgPivotView): JQuery = js.native
   @JSName("igPivotView")
@@ -32357,7 +32356,7 @@ trait JQuery extends StObject {
   @JSName("igPivotView")
   def igPivotView_splitter(methodName: splitter): js.Object = js.native
   
-  def igPopover(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igPopover(methodName: String, methodParams: Any*): Any = js.native
   /**
     * The time popover fades in and out when showing/hiding
     *
@@ -32399,14 +32398,14 @@ trait JQuery extends StObject {
     * The containment for the popover. Accepts a jQuery object
     *
     */
-  def igPopover(optionLiteral: option, optionName: containment): js.Any = js.native
+  def igPopover(optionLiteral: option, optionName: containment): Any = js.native
   /**
     * Sets the containment for the popover. Accepts a jQuery object
     *
     *
     * @optionValue New value to be set.
     */
-  def igPopover(optionLiteral: option, optionName: containment, optionValue: js.Any): Unit = js.native
+  def igPopover(optionLiteral: option, optionName: containment, optionValue: Any): Unit = js.native
   /**
     * The content for the popover container. If left null the content will be get from the target.
     *
@@ -32430,7 +32429,7 @@ trait JQuery extends StObject {
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  def igPopover(optionLiteral: option, optionName: directionPriority): js.Array[js.Any] = js.native
+  def igPopover(optionLiteral: option, optionName: directionPriority): js.Array[Any] = js.native
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
@@ -32438,7 +32437,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPopover(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[js.Any]): Unit = js.native
+  def igPopover(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Controls the direction in which the control shows relative to the target element
     *
@@ -32507,14 +32506,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igPopover(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igPopover(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igPopover(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igPopover(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Defines height the popover won't exceed even if no specific one is set.
     *
@@ -32656,9 +32655,9 @@ trait JQuery extends StObject {
   @JSName("igPopover")
   def igPopover_id(methodName: id): String = js.native
   @JSName("igPopover")
-  def igPopover_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igPopover_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igPopover")
-  def igPopover_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igPopover_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igPopover")
   def igPopover_option(optionLiteral: option, options: IgPopover): JQuery = js.native
   @JSName("igPopover")
@@ -32676,7 +32675,7 @@ trait JQuery extends StObject {
   @JSName("igPopover")
   def igPopover_target(methodName: target): js.Object = js.native
   
-  def igProgressBar(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igProgressBar(methodName: String, methodParams: Any*): Any = js.native
   def igProgressBar(optionLiteral: option, optionName: animate): Boolean = js.native
   def igProgressBar(optionLiteral: option, optionName: animateTimeout): Double = js.native
   def igProgressBar(optionLiteral: option, optionName: animateTimeout, optionValue: Double): Unit = js.native
@@ -32713,9 +32712,9 @@ trait JQuery extends StObject {
   @JSName("igProgressBar")
   def igProgressBar_destroy(methodName: destroy): Unit = js.native
   @JSName("igProgressBar")
-  def igProgressBar_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igProgressBar_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igProgressBar")
-  def igProgressBar_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igProgressBar_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igProgressBar")
   def igProgressBar_option(optionLiteral: option, options: IgProgressBar): JQuery = js.native
   @JSName("igProgressBar")
@@ -32723,7 +32722,7 @@ trait JQuery extends StObject {
   @JSName("igProgressBar")
   def igProgressBar_widget(methodName: widget): Unit = js.native
   
-  def igQRCodeBarcode(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igQRCodeBarcode(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets  the Application Indicator assigned to identify the specification concerned by AIM International.
     * The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.
@@ -32941,14 +32940,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igQRCodeBarcode(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igQRCodeBarcode(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igQRCodeBarcode(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igQRCodeBarcode(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets  the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
@@ -33041,15 +33040,15 @@ trait JQuery extends StObject {
   @JSName("igQRCodeBarcode")
   def igQRCodeBarcode_flush(methodName: flush): Unit = js.native
   @JSName("igQRCodeBarcode")
-  def igQRCodeBarcode_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igQRCodeBarcode_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igQRCodeBarcode")
-  def igQRCodeBarcode_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igQRCodeBarcode_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igQRCodeBarcode")
   def igQRCodeBarcode_option(optionLiteral: option, options: IgQRCodeBarcode): JQuery = js.native
   @JSName("igQRCodeBarcode")
   def igQRCodeBarcode_styleUpdated(methodName: styleUpdated): Unit = js.native
   
-  def igRadialGauge(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igRadialGauge(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event which is raised when a label of the gauge is aligned along the scale.
     * Function takes first argument null and second argument ui.
@@ -33323,14 +33322,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igRadialGauge(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igRadialGauge(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igRadialGauge(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igRadialGauge(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets  the maximum value of the scale.
     */
@@ -33635,26 +33634,26 @@ trait JQuery extends StObject {
     * Gets  a collection of brushes to be used as the palette for gauge ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igRadialGauge(optionLiteral: option, optionName: rangeBrushes): js.Any = js.native
+  def igRadialGauge(optionLiteral: option, optionName: rangeBrushes): Any = js.native
   /**
     * Sets a collection of brushes to be used as the palette for gauge ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igRadialGauge(optionLiteral: option, optionName: rangeBrushes, optionValue: js.Any): Unit = js.native
+  def igRadialGauge(optionLiteral: option, optionName: rangeBrushes, optionValue: Any): Unit = js.native
   /**
     * Gets  a collection of brushes to be used as the palette for gauge outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igRadialGauge(optionLiteral: option, optionName: rangeOutlines): js.Any = js.native
+  def igRadialGauge(optionLiteral: option, optionName: rangeOutlines): Any = js.native
   /**
     * Sets a collection of brushes to be used as the palette for gauge outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     *
     * @optionValue New value to be set.
     */
-  def igRadialGauge(optionLiteral: option, optionName: rangeOutlines, optionValue: js.Any): Unit = js.native
+  def igRadialGauge(optionLiteral: option, optionName: rangeOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the scale ranges to render on the linear gauge.
     */
@@ -33819,13 +33818,13 @@ trait JQuery extends StObject {
   /**
     * Gets  the easing function used to morph the current series.
     */
-  def igRadialGauge(optionLiteral: option, optionName: transitionEasingFunction): js.Any = js.native
+  def igRadialGauge(optionLiteral: option, optionName: transitionEasingFunction): Any = js.native
   /**
     * Sets the easing function used to morph the current series.
     *
     * @optionValue New value to be set.
     */
-  def igRadialGauge(optionLiteral: option, optionName: transitionEasingFunction, optionValue: js.Any): Unit = js.native
+  def igRadialGauge(optionLiteral: option, optionName: transitionEasingFunction, optionValue: Any): Unit = js.native
   /**
     * Gets the transition progress of the animation when the control is animating.
     */
@@ -33893,9 +33892,9 @@ trait JQuery extends StObject {
   @JSName("igRadialGauge")
   def igRadialGauge_needleContainsPoint(methodName: needleContainsPoint, x: js.Object, y: js.Object): Boolean = js.native
   @JSName("igRadialGauge")
-  def igRadialGauge_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igRadialGauge_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igRadialGauge")
-  def igRadialGauge_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igRadialGauge_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igRadialGauge")
   def igRadialGauge_option(optionLiteral: option, options: IgRadialGauge): JQuery = js.native
   @JSName("igRadialGauge")
@@ -33909,7 +33908,7 @@ trait JQuery extends StObject {
   @JSName("igRadialGauge")
   def igRadialGauge_updateRange(methodName: updateRange, value: js.Object): Unit = js.native
   
-  def igRadialMenu(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igRadialMenu(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Returns  the background of the center button of the menu when the IsOpen property is false.
     */
@@ -34070,14 +34069,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igRadialMenu(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igRadialMenu(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igRadialMenu(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igRadialMenu(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Returns  the brush for the backing of the radial menu.
     */
@@ -34101,13 +34100,13 @@ trait JQuery extends StObject {
   /**
     * Returns  the easing function applied to the animation that occurs when the IsOpen property is changed.
     */
-  def igRadialMenu(optionLiteral: option, optionName: menuItemOpenCloseAnimationEasingFunction): js.Any = js.native
+  def igRadialMenu(optionLiteral: option, optionName: menuItemOpenCloseAnimationEasingFunction): Any = js.native
   /**
     * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
     *
     * @optionValue New value to be set.
     */
-  def igRadialMenu(optionLiteral: option, optionName: menuItemOpenCloseAnimationEasingFunction, optionValue: js.Any): Unit = js.native
+  def igRadialMenu(optionLiteral: option, optionName: menuItemOpenCloseAnimationEasingFunction, optionValue: Any): Unit = js.native
   /**
     * Returns  the duration of the animation performed when the IsOpen property is changed.
     */
@@ -34121,13 +34120,13 @@ trait JQuery extends StObject {
   /**
     * Returns  the easing function applied to the animation that occurs when the IsOpen property is changed.
     */
-  def igRadialMenu(optionLiteral: option, optionName: menuOpenCloseAnimationEasingFunction): js.Any = js.native
+  def igRadialMenu(optionLiteral: option, optionName: menuOpenCloseAnimationEasingFunction): Any = js.native
   /**
     * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
     *
     * @optionValue New value to be set.
     */
-  def igRadialMenu(optionLiteral: option, optionName: menuOpenCloseAnimationEasingFunction, optionValue: js.Any): Unit = js.native
+  def igRadialMenu(optionLiteral: option, optionName: menuOpenCloseAnimationEasingFunction, optionValue: Any): Unit = js.native
   /**
     * Returns  the minimum number of wedges displayed by the menu.
     */
@@ -34253,15 +34252,15 @@ trait JQuery extends StObject {
   @JSName("igRadialMenu")
   def igRadialMenu_itemOption(methodName: itemOption, itemKey: String, key: String, value: js.Object): js.Object = js.native
   @JSName("igRadialMenu")
-  def igRadialMenu_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igRadialMenu_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igRadialMenu")
-  def igRadialMenu_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igRadialMenu_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igRadialMenu")
   def igRadialMenu_option(optionLiteral: option, options: IgRadialMenu): JQuery = js.native
   @JSName("igRadialMenu")
   def igRadialMenu_styleUpdated(methodName: styleUpdated): Unit = js.native
   
-  def igRating(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igRating(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets custom css votes.
     * That object should be 2-dimentional array or object with indexes, where every item of first level represents settings for a vote at that index.
@@ -34276,7 +34275,7 @@ trait JQuery extends StObject {
     * will customize selected and hover states for first 3 votes with classes h# and s#.
     *
     */
-  def igRating(optionLiteral: option, optionName: cssVotes): js.Any = js.native
+  def igRating(optionLiteral: option, optionName: cssVotes): Any = js.native
   /**
     * /Sets custom css votes.
     * That object should be 2-dimentional array or object with indexes, where every item of first level represents settings for a vote at that index.
@@ -34293,7 +34292,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igRating(optionLiteral: option, optionName: cssVotes, optionValue: js.Any): Unit = js.native
+  def igRating(optionLiteral: option, optionName: cssVotes, optionValue: Any): Unit = js.native
   /**
     * Gets if igRating can have focus. Change of that option is not supported after igRating was created.
     * Value true: can get focus and process key events.
@@ -34338,14 +34337,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igRating(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igRating(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igRating(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igRating(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets precision. Precision of value and valueHover.
     *
@@ -34448,7 +34447,7 @@ trait JQuery extends StObject {
     * Note that for onblur validation depends on the [focusable](ui.igrating#options:focusable) option.
     *
     */
-  def igRating(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igRating(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets object which contains options supported by igValidator.
     * Note that for onblur validation depends on the [focusable](ui.igrating#options:focusable) option.
@@ -34456,7 +34455,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igRating(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igRating(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets value (selected votes or percent). If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the value is used as number of selected votes or as a percent of the votes.
     *
@@ -34575,9 +34574,9 @@ trait JQuery extends StObject {
   @JSName("igRating")
   def igRating_hasFocus(methodName: hasFocus): Boolean = js.native
   @JSName("igRating")
-  def igRating_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igRating_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igRating")
-  def igRating_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igRating_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igRating")
   def igRating_option(optionLiteral: option, options: IgRating): JQuery = js.native
   @JSName("igRating")
@@ -34593,7 +34592,7 @@ trait JQuery extends StObject {
   @JSName("igRating")
   def igRating_valueHover(methodName: valueHover, `val`: Double): Double | js.Object = js.native
   
-  def igResponsiveContainer(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igResponsiveContainer(methodName: String, methodParams: Any*): Any = js.native
   /**
     * The time between two resize checks in milliseconds.
     */
@@ -34616,9 +34615,9 @@ trait JQuery extends StObject {
   @JSName("igResponsiveContainer")
   def igResponsiveContainer_destroy(methodName: destroy): Unit = js.native
   @JSName("igResponsiveContainer")
-  def igResponsiveContainer_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igResponsiveContainer_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igResponsiveContainer")
-  def igResponsiveContainer_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igResponsiveContainer_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igResponsiveContainer")
   def igResponsiveContainer_option(optionLiteral: option, options: IgResponsiveContainer): JQuery = js.native
   @JSName("igResponsiveContainer")
@@ -34628,7 +34627,7 @@ trait JQuery extends StObject {
   @JSName("igResponsiveContainer")
   def igResponsiveContainer_stopPoller(methodName: stopPoller): Unit = js.native
   
-  def igScheduler(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igScheduler(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Fired after agenda view range is changed when using previous and next buttons (fired only in Agenda View)
     */
@@ -34793,14 +34792,14 @@ trait JQuery extends StObject {
     * Gets/Sets dataSource of type $.ig.scheduler.ScheduleListDataSource.
     *
     */
-  def igScheduler(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igScheduler(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * /Sets dataSource of type $.ig.scheduler.ScheduleListDataSource.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScheduler(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igScheduler(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Fired after day is changed when using previous and next buttons (fired only in Day View)
     */
@@ -34884,14 +34883,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igScheduler(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igScheduler(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScheduler(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igScheduler(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Fired after month is changed when using previous and next buttons (fired only in Month View)
     */
@@ -34971,7 +34970,7 @@ trait JQuery extends StObject {
     * // Get
     * var resources = $(".selector").%%WidgetName%%("option", "resources");
     */
-  def igScheduler(optionLiteral: option, optionName: resources): js.Any = js.native
+  def igScheduler(optionLiteral: option, optionName: resources): Any = js.native
   /**
     * The resources collection that holds the activities` owners
     *
@@ -34988,19 +34987,19 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igScheduler(optionLiteral: option, optionName: resources, optionValue: js.Any): Unit = js.native
+  def igScheduler(optionLiteral: option, optionName: resources, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets selected date in the Scheduler.
     *
     */
-  def igScheduler(optionLiteral: option, optionName: selectedDate): Date = js.native
+  def igScheduler(optionLiteral: option, optionName: selectedDate): js.Date = js.native
   /**
     * /Sets selected date in the Scheduler.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScheduler(optionLiteral: option, optionName: selectedDate, optionValue: Date): Unit = js.native
+  def igScheduler(optionLiteral: option, optionName: selectedDate, optionValue: js.Date): Unit = js.native
   /**
     * Fired after the view is changed, when using the menu buttons.
     */
@@ -35037,14 +35036,14 @@ trait JQuery extends StObject {
     * Lists of all the views, rendered in the Scheduler.
     *
     */
-  def igScheduler(optionLiteral: option, optionName: views): js.Array[js.Any] = js.native
+  def igScheduler(optionLiteral: option, optionName: views): js.Array[Any] = js.native
   /**
     * Lists of all the views, rendered in the Scheduler.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScheduler(optionLiteral: option, optionName: views, optionValue: js.Array[js.Any]): Unit = js.native
+  def igScheduler(optionLiteral: option, optionName: views, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Fired after week is changed when using previous and next buttons (fired only in Week View)
     */
@@ -35108,15 +35107,15 @@ trait JQuery extends StObject {
   @JSName("igScheduler")
   def igScheduler_editAppointment(methodName: editAppointment, appointment: js.Object, updateAppoinment: js.Object): js.Object = js.native
   @JSName("igScheduler")
-  def igScheduler_getAppointmentsInRange(methodName: getAppointmentsInRange, start: Date, end: Date): js.Object = js.native
+  def igScheduler_getAppointmentsInRange(methodName: getAppointmentsInRange, start: js.Date, end: js.Date): js.Object = js.native
   @JSName("igScheduler")
   def igScheduler_getCalendar(methodName: getCalendar): String = js.native
   @JSName("igScheduler")
   def igScheduler_nextButton(methodName: nextButton): String = js.native
   @JSName("igScheduler")
-  def igScheduler_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igScheduler_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igScheduler")
-  def igScheduler_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igScheduler_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igScheduler")
   def igScheduler_option(optionLiteral: option, options: IgScheduler): JQuery = js.native
   @JSName("igScheduler")
@@ -35124,7 +35123,7 @@ trait JQuery extends StObject {
   @JSName("igScheduler")
   def igScheduler_todayButton(methodName: todayButton): String = js.native
   
-  def igScroll(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igScroll(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Sets or gets if the scrollbars should be always visible (on all environments). Otherwise it will be the default behavior. Note: this option is only for the custom scrollbars set through the scrollbarType option.
     *
@@ -35213,14 +35212,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igScroll(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igScroll(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScroll(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igScroll(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Sets or gets the minimum size of the thumb drag in pixels. For the vertical thumb it means its minimum height, for the horizontal thumb it means its minimum width. This affects only the custom scrollblar when scrollbarType is set to "custom".
     *
@@ -35519,26 +35518,26 @@ trait JQuery extends StObject {
     * Sets gets elements that are linked to the main content horizontally. When the content is scrolled on X axis the linked elements scroll accordingly.
     *
     */
-  def igScroll(optionLiteral: option, optionName: syncedElemsH): js.Array[js.Any] = js.native
+  def igScroll(optionLiteral: option, optionName: syncedElemsH): js.Array[Any] = js.native
   /**
     * Sets gets elements that are linked to the main content horizontally. When the content is scrolled on X axis the linked elements scroll accordingly.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScroll(optionLiteral: option, optionName: syncedElemsH, optionValue: js.Array[js.Any]): Unit = js.native
+  def igScroll(optionLiteral: option, optionName: syncedElemsH, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Sets gets elements that are linked to the main content vertically. When the content is scrolled on Y axis the linked elements scroll accordingly.
     *
     */
-  def igScroll(optionLiteral: option, optionName: syncedElemsV): js.Array[js.Any] = js.native
+  def igScroll(optionLiteral: option, optionName: syncedElemsV): js.Array[Any] = js.native
   /**
     * Sets gets elements that are linked to the main content vertically. When the content is scrolled on Y axis the linked elements scroll accordingly.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScroll(optionLiteral: option, optionName: syncedElemsV, optionValue: js.Array[js.Any]): Unit = js.native
+  def igScroll(optionLiteral: option, optionName: syncedElemsV, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Event which is raised on mouse up from the scrollbar's thumb drag.
     */
@@ -35593,15 +35592,15 @@ trait JQuery extends StObject {
   @JSName("igScroll")
   def igScroll_option(methodName: option, optionName: js.Object, value: js.Object): Unit = js.native
   @JSName("igScroll")
-  def igScroll_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igScroll_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igScroll")
-  def igScroll_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igScroll_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igScroll")
   def igScroll_option(optionLiteral: option, options: IgScroll): JQuery = js.native
   @JSName("igScroll")
   def igScroll_refresh(methodName: refresh): Unit = js.native
   
-  def igShapeChart(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igShapeChart(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets  a value indicating whether grid and tick lines are aligned to device pixels.
     */
@@ -35637,7 +35636,7 @@ trait JQuery extends StObject {
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igShapeChart(optionLiteral: option, optionName: brushes): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: brushes): Any = js.native
   /**
     * Sets the palette of brushes to use for coloring the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -35645,7 +35644,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: brushes, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: brushes, optionValue: Any): Unit = js.native
   /**
     * Occurs when the style of a callout is updated.
     */
@@ -35679,13 +35678,13 @@ trait JQuery extends StObject {
   /**
     * Gets  the collection of callout data to be annotated.
     */
-  def igShapeChart(optionLiteral: option, optionName: calloutsItemsSource): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: calloutsItemsSource): Any = js.native
   /**
     * Sets the collection of callout data to be annotated.
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: calloutsItemsSource, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: calloutsItemsSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the member path of the label data for the callouts.
     */
@@ -35739,13 +35738,13 @@ trait JQuery extends StObject {
   /**
     * Gets  a function for creating wrapped tooltip
     */
-  def igShapeChart(optionLiteral: option, optionName: createWrappedTooltip): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: createWrappedTooltip): Any = js.native
   /**
     * Sets a function for creating wrapped tooltip
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: createWrappedTooltip, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: createWrappedTooltip, optionValue: Any): Unit = js.native
   /**
     * Gets  whether annotations are shown along the axis for crosshair values
     */
@@ -35817,7 +35816,7 @@ trait JQuery extends StObject {
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  def igShapeChart(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Gets  data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
@@ -35845,7 +35844,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * String The database source URI.
     */
@@ -35859,13 +35858,13 @@ trait JQuery extends StObject {
   /**
     * Gets  a set of property paths that should be excluded from consideration by the category chart.
     */
-  def igShapeChart(optionLiteral: option, optionName: excludedProperties): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: excludedProperties): Any = js.native
   /**
     * Sets a set of property paths that should be excluded from consideration by the category chart.
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: excludedProperties, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: excludedProperties, optionValue: Any): Unit = js.native
   /**
     * Gets  whether annotations for the final value of each series is displayed on the axis.
     */
@@ -35909,13 +35908,13 @@ trait JQuery extends StObject {
   /**
     * Gets  a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     */
-  def igShapeChart(optionLiteral: option, optionName: includedProperties): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: includedProperties): Any = js.native
   /**
     * Sets a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: includedProperties, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: includedProperties, optionValue: Any): Unit = js.native
   /**
     * Gets  whether the chart can be horizontally zoomed through user interactions.
     */
@@ -35956,7 +35955,7 @@ trait JQuery extends StObject {
     * Databinding can be further configured by attributing the data item classes
     * with the DataSeriesMemberIntentAttribute.
     */
-  def igShapeChart(optionLiteral: option, optionName: itemsSource): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: itemsSource): Any = js.native
   /**
     * Sets a collection of data items used to generate the chart.
     * The ItemsSource of this chart can be a list of objects containing one or more numeric properties.
@@ -35967,7 +35966,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: itemsSource, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: itemsSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the left margin of the chart content.
     */
@@ -35982,20 +35981,20 @@ trait JQuery extends StObject {
     * Gets  the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     */
-  def igShapeChart(optionLiteral: option, optionName: legend): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: legend): Any = js.native
   /**
     * Sets the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: legend, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: legend, optionValue: Any): Unit = js.native
   /**
     * Gets  the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igShapeChart(optionLiteral: option, optionName: markerBrushes): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: markerBrushes): Any = js.native
   /**
     * Sets the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
@@ -36003,7 +36002,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: markerBrushes, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: markerBrushes, optionValue: Any): Unit = js.native
   /**
     * Gets  collision avoidance between markers on series that support this behaviour.
     */
@@ -36029,7 +36028,7 @@ trait JQuery extends StObject {
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igShapeChart(optionLiteral: option, optionName: markerOutlines): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: markerOutlines): Any = js.native
   /**
     * Sets the palette of brushes used for rendering outlines of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
@@ -36037,19 +36036,19 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: markerOutlines, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: markerOutlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     */
-  def igShapeChart(optionLiteral: option, optionName: markerTypes): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: markerTypes): Any = js.native
   /**
     * Sets the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: markerTypes, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: markerTypes, optionValue: Any): Unit = js.native
   /**
     * Gets  maximum number of displayed records in chart.
     */
@@ -36065,7 +36064,7 @@ trait JQuery extends StObject {
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igShapeChart(optionLiteral: option, optionName: outlines): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: outlines): Any = js.native
   /**
     * Sets the palette of brushes to use for outlines on the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -36073,7 +36072,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: outlines, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: outlines, optionValue: Any): Unit = js.native
   /**
     * Gets  the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
@@ -36403,23 +36402,23 @@ trait JQuery extends StObject {
   /**
     * Gets  the id of a template element to use for tooltips, or markup representing the tooltip template.
     */
-  def igShapeChart(optionLiteral: option, optionName: tooltipTemplate): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: tooltipTemplate): Any = js.native
   /**
     * Sets the id of a template element to use for tooltips, or markup representing the tooltip template.
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: tooltipTemplate, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: tooltipTemplate, optionValue: Any): Unit = js.native
   /**
     * Gets  the names of tooltip templates
     */
-  def igShapeChart(optionLiteral: option, optionName: tooltipTemplates): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: tooltipTemplates): Any = js.native
   /**
     * Sets the names of tooltip templates
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: tooltipTemplates, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: tooltipTemplates, optionValue: Any): Unit = js.native
   /**
     * Gets  the top margin of the chart content.
     */
@@ -36444,20 +36443,20 @@ trait JQuery extends StObject {
     * Gets  the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     */
-  def igShapeChart(optionLiteral: option, optionName: transitionEasingFunction): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: transitionEasingFunction): Any = js.native
   /**
     * Sets the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: transitionEasingFunction, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: transitionEasingFunction, optionValue: Any): Unit = js.native
   /**
     * Gets  the palette of brushes to used for coloring trend lines in this chart.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  def igShapeChart(optionLiteral: option, optionName: trendLineBrushes): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: trendLineBrushes): Any = js.native
   /**
     * Sets the palette of brushes to used for coloring trend lines in this chart.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
@@ -36465,7 +36464,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: trendLineBrushes, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: trendLineBrushes, optionValue: Any): Unit = js.native
   def igShapeChart(optionLiteral: option, optionName: trendLinePeriod): Double = js.native
   def igShapeChart(optionLiteral: option, optionName: trendLinePeriod, optionValue: Double): Unit = js.native
   /**
@@ -36543,13 +36542,13 @@ trait JQuery extends StObject {
   /**
     * Gets  the widget of this control
     */
-  def igShapeChart(optionLiteral: option, optionName: widget): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: widget): Any = js.native
   /**
     * Sets the widget of this control
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: widget, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: widget, optionValue: Any): Unit = js.native
   /**
     * The width of the chart.
     */
@@ -36565,7 +36564,7 @@ trait JQuery extends StObject {
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  def igShapeChart(optionLiteral: option, optionName: windowRect): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: windowRect): Any = js.native
   /**
     * Sets the rectangle representing the current scroll and zoom state of the chart.
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
@@ -36573,7 +36572,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: windowRect, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: windowRect, optionValue: Any): Unit = js.native
   /**
     * Gets  whether the large numbers on the X-axis labels are abbreviated.
     */
@@ -36597,13 +36596,13 @@ trait JQuery extends StObject {
   /**
     * Gets  function which takes an context object and returns a formatted label for the X-axis.
     */
-  def igShapeChart(optionLiteral: option, optionName: xAxisFormatLabel): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: xAxisFormatLabel): Any = js.native
   /**
     * Sets function which takes an context object and returns a formatted label for the X-axis.
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: xAxisFormatLabel, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: xAxisFormatLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the frequency of displayed labels along the X-axis.
     * Gets  the set value is a factor that determines which labels will be hidden. For example, an interval of 2 will display every other label.
@@ -36641,7 +36640,7 @@ trait JQuery extends StObject {
   /**
     * Gets  the format for labels along the X-axis.
     */
-  def igShapeChart(optionLiteral: option, optionName: xAxisLabel): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: xAxisLabel): Any = js.native
   /**
     * Gets  the angle of rotation for labels along the X-axis.
     */
@@ -36747,7 +36746,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: xAxisLabel, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: xAxisLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the base value to use in the log function when mapping the position of data items along the X-axis.
     * This property is effective only when y-axis is logarithmic
@@ -37015,13 +37014,13 @@ trait JQuery extends StObject {
   /**
     * Gets  function which takes a context object and returns a formatted label for the Y-axis.
     */
-  def igShapeChart(optionLiteral: option, optionName: yAxisFormatLabel): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: yAxisFormatLabel): Any = js.native
   /**
     * Sets function which takes a context object and returns a formatted label for the Y-axis.
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: yAxisFormatLabel, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: yAxisFormatLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the distance between each label and grid line along the Y-axis.
     */
@@ -37057,7 +37056,7 @@ trait JQuery extends StObject {
   /**
     * Gets  the property or string from which the labels are derived.
     */
-  def igShapeChart(optionLiteral: option, optionName: yAxisLabel): js.Any = js.native
+  def igShapeChart(optionLiteral: option, optionName: yAxisLabel): Any = js.native
   /**
     * Gets  the angle of rotation for labels along the Y-axis.
     */
@@ -37173,7 +37172,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igShapeChart(optionLiteral: option, optionName: yAxisLabel, optionValue: js.Any): Unit = js.native
+  def igShapeChart(optionLiteral: option, optionName: yAxisLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the base value to use in the log function when mapping the position of data items along the Y-axis.
     * This property is effective only when YAxisIsLogarithmic is true.
@@ -37432,7 +37431,7 @@ trait JQuery extends StObject {
   @JSName("igShapeChart")
   def igShapeChart_flush(methodName: flush): Unit = js.native
   @JSName("igShapeChart")
-  def igShapeChart_getData(methodName: getData): js.Array[js.Any] = js.native
+  def igShapeChart_getData(methodName: getData): js.Array[Any] = js.native
   @JSName("igShapeChart")
   def igShapeChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igShapeChart")
@@ -37454,9 +37453,9 @@ trait JQuery extends StObject {
     oldItem: js.Object
   ): js.Object = js.native
   @JSName("igShapeChart")
-  def igShapeChart_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igShapeChart_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igShapeChart")
-  def igShapeChart_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igShapeChart_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igShapeChart")
   def igShapeChart_option(optionLiteral: option, options: IgShapeChart): JQuery = js.native
   @JSName("igShapeChart")
@@ -37464,7 +37463,7 @@ trait JQuery extends StObject {
   @JSName("igShapeChart")
   def igShapeChart_setItem(methodName: setItem, index: Double, item: js.Object): js.Object = js.native
   
-  def igSlider(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igSlider(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Get or set whether the slide handle will animate when it is moved.
     */
@@ -37538,13 +37537,13 @@ trait JQuery extends StObject {
   /**
     * Get or set the slider orientation.
     */
-  def igSlider(optionLiteral: option, optionName: orientation): js.Any = js.native
+  def igSlider(optionLiteral: option, optionName: orientation): Any = js.native
   /**
     * Get or set the slider orientation.
     *
     * @optionValue New value to be set.
     */
-  def igSlider(optionLiteral: option, optionName: orientation, optionValue: js.Any): Unit = js.native
+  def igSlider(optionLiteral: option, optionName: orientation, optionValue: Any): Unit = js.native
   /**
     * Get or set the whether to show bookmarks title on bookmark hover or not.
     */
@@ -37621,9 +37620,9 @@ trait JQuery extends StObject {
   @JSName("igSlider")
   def igSlider_destroy(methodName: destroy): Unit = js.native
   @JSName("igSlider")
-  def igSlider_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igSlider_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igSlider")
-  def igSlider_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igSlider_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igSlider")
   def igSlider_option(optionLiteral: option, options: IgSlider): JQuery = js.native
   @JSName("igSlider")
@@ -37631,7 +37630,7 @@ trait JQuery extends StObject {
   @JSName("igSlider")
   def igSlider_widget(methodName: widget): Unit = js.native
   
-  def igSparkline(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igSparkline(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets  the sparkline brush.
     */
@@ -37681,7 +37680,7 @@ trait JQuery extends StObject {
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  def igSparkline(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igSparkline(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Gets  data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
@@ -37709,7 +37708,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igSparkline(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igSparkline(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets  the position of the normal range on the sparkline.
     */
@@ -37763,13 +37762,13 @@ trait JQuery extends StObject {
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.
     */
-  def igSparkline(optionLiteral: option, optionName: formatLabel): js.Any = js.native
+  def igSparkline(optionLiteral: option, optionName: formatLabel): Any = js.native
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.
     *
     * @optionValue New value to be set.
     */
-  def igSparkline(optionLiteral: option, optionName: formatLabel, optionValue: js.Any): Unit = js.native
+  def igSparkline(optionLiteral: option, optionName: formatLabel, optionValue: Any): Unit = js.native
   /**
     * The height of the sparkline. It can be set as a number in pixels, string (px) or percentage (%).
     */
@@ -37845,14 +37844,14 @@ trait JQuery extends StObject {
     * The value or content to display on the horizontal axis.
     * This can be set to a formatted string, such as "{0}", or it can be set to a DataTemplate.
     */
-  def igSparkline(optionLiteral: option, optionName: horizontalAxisLabel): js.Any = js.native
+  def igSparkline(optionLiteral: option, optionName: horizontalAxisLabel): Any = js.native
   /**
     * The value or content to display on the horizontal axis.
     * This can be set to a formatted string, such as "{0}", or it can be set to a DataTemplate.
     *
     * @optionValue New value to be set.
     */
-  def igSparkline(optionLiteral: option, optionName: horizontalAxisLabel, optionValue: js.Any): Unit = js.native
+  def igSparkline(optionLiteral: option, optionName: horizontalAxisLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the display state of the horizontal axis.
     */
@@ -38209,14 +38208,14 @@ trait JQuery extends StObject {
     * The value or content to display on the vertical axis.
     * This can be set to a formatted string, such as "{0:n}", or it can be set to a DataTemplate.
     */
-  def igSparkline(optionLiteral: option, optionName: verticalAxisLabel): js.Any = js.native
+  def igSparkline(optionLiteral: option, optionName: verticalAxisLabel): Any = js.native
   /**
     * The value or content to display on the vertical axis.
     * This can be set to a formatted string, such as "{0:n}", or it can be set to a DataTemplate.
     *
     * @optionValue New value to be set.
     */
-  def igSparkline(optionLiteral: option, optionName: verticalAxisLabel, optionValue: js.Any): Unit = js.native
+  def igSparkline(optionLiteral: option, optionName: verticalAxisLabel, optionValue: Any): Unit = js.native
   /**
     * Gets  the display state of the vertical axis.
     */
@@ -38252,7 +38251,7 @@ trait JQuery extends StObject {
   @JSName("igSparkline")
   def igSparkline_flush(methodName: flush): Unit = js.native
   @JSName("igSparkline")
-  def igSparkline_getData(methodName: getData): js.Array[js.Any] = js.native
+  def igSparkline_getData(methodName: getData): js.Array[Any] = js.native
   @JSName("igSparkline")
   def igSparkline_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igSparkline")
@@ -38272,9 +38271,9 @@ trait JQuery extends StObject {
     oldItem: js.Object
   ): js.Object = js.native
   @JSName("igSparkline")
-  def igSparkline_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igSparkline_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igSparkline")
-  def igSparkline_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igSparkline_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igSparkline")
   def igSparkline_option(optionLiteral: option, options: IgSparkline): JQuery = js.native
   @JSName("igSparkline")
@@ -38282,7 +38281,7 @@ trait JQuery extends StObject {
   @JSName("igSparkline")
   def igSparkline_setItem(methodName: setItem, index: Double, item: js.Object): js.Object = js.native
   
-  def igSplitButton(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igSplitButton(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event fired when the button is clicked.
     *
@@ -38411,9 +38410,9 @@ trait JQuery extends StObject {
   @JSName("igSplitButton")
   def igSplitButton_expand(methodName: expand, e: js.Object): js.Object = js.native
   @JSName("igSplitButton")
-  def igSplitButton_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igSplitButton_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igSplitButton")
-  def igSplitButton_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igSplitButton_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igSplitButton")
   def igSplitButton_option(optionLiteral: option, options: IgSplitButton): JQuery = js.native
   @JSName("igSplitButton")
@@ -38423,7 +38422,7 @@ trait JQuery extends StObject {
   @JSName("igSplitButton")
   def igSplitButton_widget(methodName: widget): Unit = js.native
   
-  def igSplitter(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igSplitter(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Fired after collapsing is performed
     *
@@ -38533,14 +38532,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igSplitter(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igSplitter(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igSplitter(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igSplitter(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets the orientation of the splitter.
     *
@@ -38667,9 +38666,9 @@ trait JQuery extends StObject {
   @JSName("igSplitter")
   def igSplitter_firstPanel(methodName: firstPanel): js.Object = js.native
   @JSName("igSplitter")
-  def igSplitter_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igSplitter_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igSplitter")
-  def igSplitter_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igSplitter_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igSplitter")
   def igSplitter_option(optionLiteral: option, options: IgSplitter): JQuery = js.native
   @JSName("igSplitter")
@@ -38683,7 +38682,7 @@ trait JQuery extends StObject {
   @JSName("igSplitter")
   def igSplitter_widget(methodName: widget): js.Object = js.native
   
-  def igSpreadsheet(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igSpreadsheet(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Invoked when an action is executed on the Spreadsheet.
     */
@@ -38750,7 +38749,7 @@ trait JQuery extends StObject {
     * Returns  the Worksheet from the workbook whose content should be displayed within the control.
     *
     */
-  def igSpreadsheet(optionLiteral: option, optionName: activeWorksheet): js.Any = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: activeWorksheet): Any = js.native
   /**
     * Invoked when the activeWorksheet of the Spreadsheet has changed.
     */
@@ -38771,7 +38770,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igSpreadsheet(optionLiteral: option, optionName: activeWorksheet, optionValue: js.Any): Unit = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: activeWorksheet, optionValue: Any): Unit = js.native
   /**
     * Returns  a boolean indicating whether the spreadsheet allows adding worksheets.
     *
@@ -39081,14 +39080,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igSpreadsheet(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igSpreadsheet(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Returns  the width of the name box within the formula bar.
     *
@@ -39118,14 +39117,14 @@ trait JQuery extends StObject {
     * Type="ig.excel.Worksheet[]" Returns  an array of the Worksheets whose tabs are selected.
     *
     */
-  def igSpreadsheet(optionLiteral: option, optionName: selectedWorksheets): js.Any = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: selectedWorksheets): Any = js.native
   /**
     * Type="ig.excel.Worksheet[]" Returns or sets an array of the Worksheets whose tabs are selected.
     *
     *
     * @optionValue New value to be set.
     */
-  def igSpreadsheet(optionLiteral: option, optionName: selectedWorksheets, optionValue: js.Any): Unit = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: selectedWorksheets, optionValue: Any): Unit = js.native
   /**
     * Invoked when the selection for a ig.spreadsheet.SpreadsheetPane of the Spreadsheet is changed.
     */
@@ -39173,7 +39172,7 @@ trait JQuery extends StObject {
     *
     * The provided object should have numeric properties called x and y.
     */
-  def igSpreadsheet(optionLiteral: option, optionName: validationInputMessagePosition): js.Any = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: validationInputMessagePosition): Any = js.native
   /**
     * Returns or sets the position of the screen tip used to display the input message for the data validation rule associated with the active cell.
     *
@@ -39181,7 +39180,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igSpreadsheet(optionLiteral: option, optionName: validationInputMessagePosition, optionValue: js.Any): Unit = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: validationInputMessagePosition, optionValue: Any): Unit = js.native
   /**
     * The width of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).
     *
@@ -39199,7 +39198,7 @@ trait JQuery extends StObject {
     * Returns  the workbook whose information is displayed in the control.
     *
     */
-  def igSpreadsheet(optionLiteral: option, optionName: workbook): js.Any = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: workbook): Any = js.native
   /**
     * Invoked when a change has been made to the workbook that might require a save.
     * Note: This event is invoked asynchronously with regards to the change(s) that
@@ -39224,7 +39223,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igSpreadsheet(optionLiteral: option, optionName: workbook, optionValue: js.Any): Unit = js.native
+  def igSpreadsheet(optionLiteral: option, optionName: workbook, optionValue: Any): Unit = js.native
   /**
     * Returns  the magnification of the selected worksheets.
     *
@@ -39269,9 +39268,9 @@ trait JQuery extends StObject {
   @JSName("igSpreadsheet")
   def igSpreadsheet_getPanes(methodName: getPanes): Unit = js.native
   @JSName("igSpreadsheet")
-  def igSpreadsheet_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igSpreadsheet_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igSpreadsheet")
-  def igSpreadsheet_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igSpreadsheet_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igSpreadsheet")
   def igSpreadsheet_option(optionLiteral: option, options: IgSpreadsheet): JQuery = js.native
   @JSName("igSpreadsheet")
@@ -39293,7 +39292,7 @@ trait JQuery extends StObject {
   @JSName("igSpreadsheet")
   def igSpreadsheet_styleUpdated(methodName: styleUpdated): Unit = js.native
   
-  def igTablePropertiesDialog(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTablePropertiesDialog(methodName: String, methodParams: Any*): Any = js.native
   def igTablePropertiesDialog(optionLiteral: option, optionName: apply): ApplyEvent = js.native
   def igTablePropertiesDialog(optionLiteral: option, optionName: apply, optionValue: ApplyEvent): Unit = js.native
   def igTablePropertiesDialog(optionLiteral: option, optionName: cancel): CancelEvent = js.native
@@ -39302,8 +39301,8 @@ trait JQuery extends StObject {
   def igTablePropertiesDialog(optionLiteral: option, optionName: hide, optionValue: HideEvent): Unit = js.native
   def igTablePropertiesDialog(optionLiteral: option, optionName: isHidden): Boolean = js.native
   def igTablePropertiesDialog(optionLiteral: option, optionName: isHidden, optionValue: Boolean): Unit = js.native
-  def igTablePropertiesDialog(optionLiteral: option, optionName: item): js.Any = js.native
-  def igTablePropertiesDialog(optionLiteral: option, optionName: item, optionValue: js.Any): Unit = js.native
+  def igTablePropertiesDialog(optionLiteral: option, optionName: item): Any = js.native
+  def igTablePropertiesDialog(optionLiteral: option, optionName: item, optionValue: Any): Unit = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
@@ -39320,14 +39319,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igTablePropertiesDialog(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igTablePropertiesDialog(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igTablePropertiesDialog(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igTablePropertiesDialog(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
@@ -39343,21 +39342,21 @@ trait JQuery extends StObject {
   def igTablePropertiesDialog(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
   def igTablePropertiesDialog(optionLiteral: option, optionName: show): ShowEvent = js.native
   def igTablePropertiesDialog(optionLiteral: option, optionName: show, optionValue: ShowEvent): Unit = js.native
-  def igTablePropertiesDialog(optionLiteral: option, optionName: target): js.Any = js.native
-  def igTablePropertiesDialog(optionLiteral: option, optionName: target, optionValue: js.Any): Unit = js.native
+  def igTablePropertiesDialog(optionLiteral: option, optionName: target): Any = js.native
+  def igTablePropertiesDialog(optionLiteral: option, optionName: target, optionValue: Any): Unit = js.native
   def igTablePropertiesDialog(options: IgTablePropertiesDialog): JQuery = js.native
   @JSName("igTablePropertiesDialog")
   def igTablePropertiesDialog_hide(methodName: hide): Unit = js.native
   @JSName("igTablePropertiesDialog")
-  def igTablePropertiesDialog_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTablePropertiesDialog_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTablePropertiesDialog")
-  def igTablePropertiesDialog_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTablePropertiesDialog_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTablePropertiesDialog")
   def igTablePropertiesDialog_option(optionLiteral: option, options: IgTablePropertiesDialog): JQuery = js.native
   @JSName("igTablePropertiesDialog")
   def igTablePropertiesDialog_show(methodName: show, item: js.Object): Unit = js.native
   
-  def igTextEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTextEditor(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is false, and editor has no value, then value is set to an empty string.
@@ -39670,7 +39669,7 @@ trait JQuery extends StObject {
     * Items in the list can be of type string.
     *
     */
-  def igTextEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
+  def igTextEditor(optionLiteral: option, optionName: listItems): js.Array[Any] = js.native
   /**
     * /Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type string.
@@ -39678,7 +39677,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTextEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
+  def igTextEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
@@ -39695,14 +39694,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igTextEditor(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igTextEditor(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igTextEditor(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igTextEditor(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the maximum length of a text which can be entered by the user.
     * Negative values or 0 disables that behavior. If set at runtime the editor doesn't apply the option to the current value.
@@ -39995,7 +39994,7 @@ trait JQuery extends StObject {
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igTextEditor(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igTextEditor(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -40004,12 +40003,12 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTextEditor(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igTextEditor(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     */
-  def igTextEditor(optionLiteral: option, optionName: value): js.Any = js.native
+  def igTextEditor(optionLiteral: option, optionName: value): Any = js.native
   /**
     * Fired after the editor value is changed. It can be raised after loosing focus or on spin events.
     */
@@ -40040,7 +40039,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTextEditor(optionLiteral: option, optionName: value, optionValue: js.Any): Unit = js.native
+  def igTextEditor(optionLiteral: option, optionName: value, optionValue: Any): Unit = js.native
   /**
     * Gets the number of the items to be shown at once when the drop-down list get opened.
     * Notes:
@@ -40118,9 +40117,9 @@ trait JQuery extends StObject {
   @JSName("igTextEditor")
   def igTextEditor_isValid(methodName: isValid): Boolean = js.native
   @JSName("igTextEditor")
-  def igTextEditor_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTextEditor_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTextEditor")
-  def igTextEditor_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTextEditor_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTextEditor")
   def igTextEditor_option(optionLiteral: option, options: IgTextEditor): JQuery = js.native
   @JSName("igTextEditor")
@@ -40152,7 +40151,7 @@ trait JQuery extends StObject {
   @JSName("igTextEditor")
   def igTextEditor_value(methodName: value, newValue: js.Object): Unit = js.native
   
-  def igTileManager(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTileManager(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets the duration of the animations in the tile manager.
     *
@@ -40181,7 +40180,7 @@ trait JQuery extends StObject {
     * Gets/Sets the height of each column in the container.
     *
     */
-  def igTileManager(optionLiteral: option, optionName: columnHeight): String | Double | js.Array[js.Any] = js.native
+  def igTileManager(optionLiteral: option, optionName: columnHeight): String | Double | js.Array[Any] = js.native
   /**
     * /Sets the height of each column in the container.
     *
@@ -40189,13 +40188,13 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igTileManager(optionLiteral: option, optionName: columnHeight, optionValue: String): Unit = js.native
-  def igTileManager(optionLiteral: option, optionName: columnHeight, optionValue: js.Array[js.Any]): Unit = js.native
+  def igTileManager(optionLiteral: option, optionName: columnHeight, optionValue: js.Array[Any]): Unit = js.native
   def igTileManager(optionLiteral: option, optionName: columnHeight, optionValue: Double): Unit = js.native
   /**
     * Gets/Sets the width of each column in the container.
     *
     */
-  def igTileManager(optionLiteral: option, optionName: columnWidth): String | Double | js.Array[js.Any] = js.native
+  def igTileManager(optionLiteral: option, optionName: columnWidth): String | Double | js.Array[Any] = js.native
   /**
     * /Sets the width of each column in the container.
     *
@@ -40203,7 +40202,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igTileManager(optionLiteral: option, optionName: columnWidth, optionValue: String): Unit = js.native
-  def igTileManager(optionLiteral: option, optionName: columnWidth, optionValue: js.Array[js.Any]): Unit = js.native
+  def igTileManager(optionLiteral: option, optionName: columnWidth, optionValue: js.Array[Any]): Unit = js.native
   def igTileManager(optionLiteral: option, optionName: columnWidth, optionValue: Double): Unit = js.native
   /**
     * Fired before databinding is performed
@@ -40249,7 +40248,7 @@ trait JQuery extends StObject {
     * Gets any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an [$.ig.DataSource](ig.datasource) itself.
     *
     */
-  def igTileManager(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igTileManager(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
     *
@@ -40280,7 +40279,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTileManager(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igTileManager(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the height of the container.
     *
@@ -40322,14 +40321,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igTileManager(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igTileManager(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igTileManager(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igTileManager(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the horizontal spacing between tiles.
     *
@@ -40744,9 +40743,9 @@ trait JQuery extends StObject {
   @JSName("igTileManager")
   def igTileManager_minimizedTiles(methodName: minimizedTiles): js.Object = js.native
   @JSName("igTileManager")
-  def igTileManager_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTileManager_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTileManager")
-  def igTileManager_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTileManager_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTileManager")
   def igTileManager_option(optionLiteral: option, options: IgTileManager): JQuery = js.native
   @JSName("igTileManager")
@@ -40770,7 +40769,7 @@ trait JQuery extends StObject {
   @JSName("igTileManager")
   def igTileManager_widget(methodName: widget): js.Object = js.native
   
-  def igTimePicker(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTimePicker(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether the editor value can become null.
     * If that option is false, and editor has no value, then value is set to an empty string.
@@ -40836,23 +40835,23 @@ trait JQuery extends StObject {
   /**
     * Removed from timepicker options
     */
-  def igTimePicker(optionLiteral: option, optionName: dateDisplayFormat): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: dateDisplayFormat): Any = js.native
   /**
     * Removed from timepicker options
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: dateDisplayFormat, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: dateDisplayFormat, optionValue: Any): Unit = js.native
   /**
     * Removed from timepicker options
     */
-  def igTimePicker(optionLiteral: option, optionName: dateInputFormat): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: dateInputFormat): Any = js.native
   /**
     * Removed from timepicker options
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: dateInputFormat, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: dateInputFormat, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the disabled attribute for the input. If set to true the input is disabled, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is not submitted.
     *
@@ -40868,13 +40867,13 @@ trait JQuery extends StObject {
   /**
     * Removed from timepicker options
     */
-  def igTimePicker(optionLiteral: option, optionName: displayTimeOffset): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: displayTimeOffset): Any = js.native
   /**
     * Removed from timepicker options
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: displayTimeOffset, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: displayTimeOffset, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets show/hide drop-down list animation duration in milliseconds.
     *
@@ -41163,13 +41162,13 @@ trait JQuery extends StObject {
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
-  def igTimePicker(optionLiteral: option, optionName: listItems): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: listItems): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: listItems, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: listItems, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of timepicker is set as a drop-down width.
     *
@@ -41186,30 +41185,30 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igTimePicker(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     */
-  def igTimePicker(optionLiteral: option, optionName: maxLength): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: maxLength): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: maxLength, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: maxLength, optionValue: Any): Unit = js.native
   /**
     * Gets the maximum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igTimePicker(optionLiteral: option, optionName: maxValue): Date = js.native
+  def igTimePicker(optionLiteral: option, optionName: maxValue): js.Date = js.native
   /**
     * The maximum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -41217,13 +41216,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: maxValue, optionValue: Date): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: maxValue, optionValue: js.Date): Unit = js.native
   /**
     * Gets the minimum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igTimePicker(optionLiteral: option, optionName: minValue): Date = js.native
+  def igTimePicker(optionLiteral: option, optionName: minValue): js.Date = js.native
   /**
     * The minimum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -41231,12 +41230,12 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: minValue, optionValue: Date): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: minValue, optionValue: js.Date): Unit = js.native
   /**
     * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
     */
-  def igTimePicker(optionLiteral: option, optionName: nullValue): String | Double | Date = js.native
+  def igTimePicker(optionLiteral: option, optionName: nullValue): String | Double | js.Date = js.native
   /**
     * /Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
@@ -41244,8 +41243,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igTimePicker(optionLiteral: option, optionName: nullValue, optionValue: String): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: nullValue, optionValue: js.Date): Unit = js.native
   def igTimePicker(optionLiteral: option, optionName: nullValue, optionValue: Double): Unit = js.native
-  def igTimePicker(optionLiteral: option, optionName: nullValue, optionValue: Date): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
     */
@@ -41340,7 +41339,7 @@ trait JQuery extends StObject {
     * Default value is {hours: 1, minutes: 30}.
     *
     */
-  def igTimePicker(optionLiteral: option, optionName: spinDelta): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: spinDelta): Any = js.native
   /**
     * /Sets delta-value which is used to increment or decrement the editor time on spin actions.When not editing (focused) the delta is applied on the day if available in the input mask or the lowest available period.
     * When in edit mode the time period, where the cursor is positioned, is incremented or decremented with the defined delta value.
@@ -41354,7 +41353,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: spinDelta, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: spinDelta, optionValue: Any): Unit = js.native
   /**
     * Gets/Set the ability of the editor to automatically set value in the editor to the opposite side of the limit, when the spin action reaches minimum or maximum limit.
     * This applies to [minValue](ui.%%WidgetNameLowered%%#options:minValue) and [maxValue](ui.%%WidgetNameLowered%%#options:maxValue) or cycling through list items if [isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) is enabled.
@@ -41421,8 +41420,8 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igTimePicker(optionLiteral: option, optionName: textAlign, optionValue: String): Unit = js.native
-  def igTimePicker(optionLiteral: option, optionName: textMode): js.Any = js.native
-  def igTimePicker(optionLiteral: option, optionName: textMode, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: textMode): Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: textMode, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets format of time while timepicker has no focus.
     * Value of that option can be set to a specific time pattern or to a flag defined by regional settings.
@@ -41541,7 +41540,7 @@ trait JQuery extends StObject {
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  def igTimePicker(optionLiteral: option, optionName: validatorOptions): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: validatorOptions): Any = js.native
   /**
     * /Sets options supported by the [igValidator](ui.igvalidator#options) widget.
     * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
@@ -41550,13 +41549,13 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: validatorOptions, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: validatorOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets the value of the editor. Date object can be set as value. String can be set and the editor will pass it to the Date object constructor and use the corresponding Date object as the value. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  def igTimePicker(optionLiteral: option, optionName: value): Date = js.native
+  def igTimePicker(optionLiteral: option, optionName: value): js.Date = js.native
   /**
     * /Sets the value of the editor. Date object can be set as value. String can be set and the editor will pass it to the Date object constructor and use the corresponding Date object as the value. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
@@ -41564,7 +41563,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: value, optionValue: Date): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: value, optionValue: js.Date): Unit = js.native
   /**
     * Gets the number of the items to be shown at once when the drop-down list get opened.
     * Notes:
@@ -41599,13 +41598,13 @@ trait JQuery extends StObject {
   /**
     * Removed from timepicker options
     */
-  def igTimePicker(optionLiteral: option, optionName: yearShift): js.Any = js.native
+  def igTimePicker(optionLiteral: option, optionName: yearShift): Any = js.native
   /**
     * Removed from timepicker options
     *
     * @optionValue New value to be set.
     */
-  def igTimePicker(optionLiteral: option, optionName: yearShift, optionValue: js.Any): Unit = js.native
+  def igTimePicker(optionLiteral: option, optionName: yearShift, optionValue: Any): Unit = js.native
   def igTimePicker(options: IgTimePicker): JQuery = js.native
   @JSName("igTimePicker")
   def igTimePicker_changeRegional(methodName: changeRegional): Unit = js.native
@@ -41620,15 +41619,15 @@ trait JQuery extends StObject {
   @JSName("igTimePicker")
   def igTimePicker_findListItemIndex(methodName: findListItemIndex, text: String, matchType: js.Object): Double = js.native
   @JSName("igTimePicker")
-  def igTimePicker_getSelectedDate(methodName: getSelectedDate): Date = js.native
+  def igTimePicker_getSelectedDate(methodName: getSelectedDate): js.Date = js.native
   @JSName("igTimePicker")
   def igTimePicker_getSelectedListItem(methodName: getSelectedListItem): String = js.native
   @JSName("igTimePicker")
   def igTimePicker_isValid(methodName: isValid): Boolean = js.native
   @JSName("igTimePicker")
-  def igTimePicker_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTimePicker_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTimePicker")
-  def igTimePicker_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTimePicker_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTimePicker")
   def igTimePicker_option(optionLiteral: option, options: IgTimePicker): JQuery = js.native
   @JSName("igTimePicker")
@@ -41652,7 +41651,7 @@ trait JQuery extends StObject {
   @JSName("igTimePicker")
   def igTimePicker_value(methodName: value, newValue: js.Object): Unit = js.native
   
-  def igToolbar(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igToolbar(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Get/Set whether the toolbar can be collapsed.
     *
@@ -41745,14 +41744,14 @@ trait JQuery extends StObject {
     * Set/Get the widget height.
     *
     */
-  def igToolbar(optionLiteral: option, optionName: height): js.Any = js.native
+  def igToolbar(optionLiteral: option, optionName: height): Any = js.native
   /**
     * Set/Get the widget height.
     *
     *
     * @optionValue New value to be set.
     */
-  def igToolbar(optionLiteral: option, optionName: height, optionValue: js.Any): Unit = js.native
+  def igToolbar(optionLiteral: option, optionName: height, optionValue: Any): Unit = js.native
   /**
     * Get/Set whether the widget is expanded initially.
     *
@@ -41809,14 +41808,14 @@ trait JQuery extends StObject {
     * Get/Set Toolbar's items.
     *
     */
-  def igToolbar(optionLiteral: option, optionName: items): js.Array[js.Any] = js.native
+  def igToolbar(optionLiteral: option, optionName: items): js.Array[Any] = js.native
   /**
     * Get/Set Toolbar's items.
     *
     *
     * @optionValue New value to be set.
     */
-  def igToolbar(optionLiteral: option, optionName: items, optionValue: js.Array[js.Any]): Unit = js.native
+  def igToolbar(optionLiteral: option, optionName: items, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
@@ -41904,14 +41903,14 @@ trait JQuery extends StObject {
     * Set/Get the widget width.
     *
     */
-  def igToolbar(optionLiteral: option, optionName: width): js.Any = js.native
+  def igToolbar(optionLiteral: option, optionName: width): Any = js.native
   /**
     * Set/Get the widget width.
     *
     *
     * @optionValue New value to be set.
     */
-  def igToolbar(optionLiteral: option, optionName: width, optionValue: js.Any): Unit = js.native
+  def igToolbar(optionLiteral: option, optionName: width, optionValue: Any): Unit = js.native
   /**
     * Fired after the window is resized
     */
@@ -41924,7 +41923,7 @@ trait JQuery extends StObject {
   def igToolbar(optionLiteral: option, optionName: windowResized, optionValue: WindowResizedEvent): Unit = js.native
   def igToolbar(options: IgToolbar): JQuery = js.native
   
-  def igToolbarButton(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igToolbarButton(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event fired after the toolbar button is activated.
     *                 Function takes arguments evt and ui.
@@ -42013,9 +42012,9 @@ trait JQuery extends StObject {
   @JSName("igToolbarButton")
   def igToolbarButton_destroy(methodName: destroy): Unit = js.native
   @JSName("igToolbarButton")
-  def igToolbarButton_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igToolbarButton_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igToolbarButton")
-  def igToolbarButton_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igToolbarButton_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igToolbarButton")
   def igToolbarButton_option(optionLiteral: option, options: IgToolbarButton): JQuery = js.native
   @JSName("igToolbarButton")
@@ -42042,9 +42041,9 @@ trait JQuery extends StObject {
   @JSName("igToolbar")
   def igToolbar_getItem(methodName: getItem, index: js.Object): js.Object = js.native
   @JSName("igToolbar")
-  def igToolbar_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igToolbar_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igToolbar")
-  def igToolbar_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igToolbar_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igToolbar")
   def igToolbar_option(optionLiteral: option, options: IgToolbar): JQuery = js.native
   @JSName("igToolbar")
@@ -42052,7 +42051,7 @@ trait JQuery extends StObject {
   @JSName("igToolbar")
   def igToolbar_widget(methodName: widget): Unit = js.native
   
-  def igTooltip(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTooltip(methodName: String, methodParams: Any*): Any = js.native
   def igTooltip(optionLiteral: option, optionName: arrowLocation): String = js.native
   def igTooltip(optionLiteral: option, optionName: arrowLocation, optionValue: String): Unit = js.native
   def igTooltip(optionLiteral: option, optionName: text): String = js.native
@@ -42061,13 +42060,13 @@ trait JQuery extends StObject {
   @JSName("igTooltip")
   def igTooltip_destroy(methodName: destroy): Unit = js.native
   @JSName("igTooltip")
-  def igTooltip_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTooltip_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTooltip")
-  def igTooltip_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTooltip_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTooltip")
   def igTooltip_option(optionLiteral: option, options: IgTooltip): JQuery = js.native
   
-  def igTree(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTree(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets the duration of each animation such as the expand/collapse.
     *
@@ -42129,7 +42128,7 @@ trait JQuery extends StObject {
     * Once the data source is initialized, this option becomes an instance of the $.ig.HierarchicalDataSource.
     *
     */
-  def igTree(optionLiteral: option, optionName: dataSource): js.Any = js.native
+  def igTree(optionLiteral: option, optionName: dataSource): Any = js.native
   /**
     * Gets the type of the data source. Delegates the value to [$.ig.DataSource.settings.type](ig.datasource#options:settings.type). Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource.settings.type.
     *
@@ -42161,7 +42160,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTree(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
+  def igTree(optionLiteral: option, optionName: dataSource, optionValue: Any): Unit = js.native
   /**
     * Gets the default target attribute value for the node anchors.
     *
@@ -42329,14 +42328,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igTree(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igTree(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igTree(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igTree(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Fired after the checkstate of a node is changed.
     */
@@ -42649,7 +42648,7 @@ trait JQuery extends StObject {
   def igTree(optionLiteral: option, optionName: width, optionValue: Double): Unit = js.native
   def igTree(options: IgTree): JQuery = js.native
   
-  def igTreeGrid(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGrid(methodName: String, methodParams: Any*): Any = js.native
   /**
     * If this option is set to true, the height of the grid row will be calculated automatically based on the [avgRowHeight](ui.iggrid#options:avgRowHeight) and the visible virtual records. If no [avgRowHeight](ui.iggrid#options:avgRowHeight) is specified, it will be calculated automatically at runtime.
     *
@@ -42762,13 +42761,13 @@ trait JQuery extends StObject {
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     */
-  def igTreeGrid(optionLiteral: option, optionName: avgColumnWidth): js.Any = js.native
+  def igTreeGrid(optionLiteral: option, optionName: avgColumnWidth): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     *
     * @optionValue New value to be set.
     */
-  def igTreeGrid(optionLiteral: option, optionName: avgColumnWidth, optionValue: js.Any): Unit = js.native
+  def igTreeGrid(optionLiteral: option, optionName: avgColumnWidth, optionValue: Any): Unit = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     */
@@ -42862,13 +42861,13 @@ trait JQuery extends StObject {
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     */
-  def igTreeGrid(optionLiteral: option, optionName: columnVirtualization): js.Any = js.native
+  def igTreeGrid(optionLiteral: option, optionName: columnVirtualization): Any = js.native
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     *
     * @optionValue New value to be set.
     */
-  def igTreeGrid(optionLiteral: option, optionName: columnVirtualization, optionValue: js.Any): Unit = js.native
+  def igTreeGrid(optionLiteral: option, optionName: columnVirtualization, optionValue: Any): Unit = js.native
   /**
     * An array of column objects. Checkout the [Columns and Layout](http://www.igniteui.com/help/iggrid-columns-and-layout#defining-columns) topic for details on configuring the columns array.
     *
@@ -42955,7 +42954,7 @@ trait JQuery extends StObject {
     * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
     *
     */
-  def igTreeGrid(optionLiteral: option, optionName: dataSource): js.Array[js.Any] | js.Object | String = js.native
+  def igTreeGrid(optionLiteral: option, optionName: dataSource): js.Array[Any] | js.Object | String = js.native
   /**
     * Options object to configure data source-specific settings
     *
@@ -42999,7 +42998,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTreeGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[js.Any]): Unit = js.native
+  def igTreeGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[Any]): Unit = js.native
   def igTreeGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Object): Unit = js.native
   /**
     * Default column width that will be set for all columns, that don't have [column width](ui.iggrid#options:columns.width) defined. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).
@@ -43705,7 +43704,7 @@ trait JQuery extends StObject {
   def igTreeGrid(optionLiteral: option, optionName: width, optionValue: Double): Unit = js.native
   def igTreeGrid(options: IgTreeGrid): JQuery = js.native
   
-  def igTreeGridColumnFixing(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridColumnFixing(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event which is fired when column fixing operation is finished
     */
@@ -43925,9 +43924,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_checkAndSyncHeights(methodName: checkAndSyncHeights): Unit = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_checkFixingAllowed(methodName: checkFixingAllowed, columns: js.Array[js.Any]): Boolean = js.native
+  def igTreeGridColumnFixing_checkFixingAllowed(methodName: checkFixingAllowed, columns: js.Array[Any]): Boolean = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_checkUnfixingAllowed(methodName: checkUnfixingAllowed, columns: js.Array[js.Any]): Boolean = js.native
+  def igTreeGridColumnFixing_checkUnfixingAllowed(methodName: checkUnfixingAllowed, columns: js.Array[Any]): Boolean = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_destroy(methodName: destroy): Unit = js.native
   @JSName("igTreeGridColumnFixing")
@@ -43945,20 +43944,20 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns): Double = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[js.Any]): Double = js.native
+  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[Any]): Double = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[js.Any], excludeNonDataColumns: Boolean): Double = js.native
+  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[Any], excludeNonDataColumns: Boolean): Double = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.Array[js.Any],
+    fCols: js.Array[Any],
     excludeNonDataColumns: Boolean,
     includeHidden: Boolean
   ): Double = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.Array[js.Any],
+    fCols: js.Array[Any],
     excludeNonDataColumns: Unit,
     includeHidden: Boolean
   ): Double = js.native
@@ -43981,9 +43980,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_isGroupHeader(methodName: isGroupHeader, colKey: String): Boolean = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridColumnFixing_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridColumnFixing_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_option(optionLiteral: option, options: IgTreeGridColumnFixing): JQuery = js.native
   @JSName("igTreeGridColumnFixing")
@@ -43995,7 +43994,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_syncHeights(methodName: syncHeights, check: Unit, clearRowsHeights: Boolean): Unit = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_syncRowsHeights(methodName: syncRowsHeights, $trs: js.Array[js.Any], $anotherRows: js.Array[js.Any]): Unit = js.native
+  def igTreeGridColumnFixing_syncRowsHeights(methodName: syncRowsHeights, $trs: js.Array[Any], $anotherRows: js.Array[Any]): Unit = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_unfixAllColumns(methodName: unfixAllColumns): Unit = js.native
   @JSName("igTreeGridColumnFixing")
@@ -44011,7 +44010,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_unfixNonDataColumns(methodName: unfixNonDataColumns): Unit = js.native
   
-  def igTreeGridColumnMoving(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridColumnMoving(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets if header cells should include an additional button that opens a moving helper dropdown.
     *
@@ -44600,13 +44599,13 @@ trait JQuery extends StObject {
     callback: js.Function
   ): Unit = js.native
   @JSName("igTreeGridColumnMoving")
-  def igTreeGridColumnMoving_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridColumnMoving_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridColumnMoving")
-  def igTreeGridColumnMoving_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridColumnMoving_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridColumnMoving")
   def igTreeGridColumnMoving_option(optionLiteral: option, options: IgTreeGridColumnMoving): JQuery = js.native
   
-  def igTreeGridFiltering(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridFiltering(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Type of filtering. Delegates all filtering functionality to the [$.ig.DataSource](ig.datasource).
     *
@@ -44709,14 +44708,14 @@ trait JQuery extends StObject {
     * If displayMode is showWithAncestorsAndDescendants, show all records that match filtering conditions and their child records, even if child records don"t match filtering conditions. If displayMode is showWithAncestors show only those records that match filtering conditions and do not show child records(if any) that don"t match filtering conditions
     *
     */
-  def igTreeGridFiltering(optionLiteral: option, optionName: displayMode): js.Any = js.native
+  def igTreeGridFiltering(optionLiteral: option, optionName: displayMode): Any = js.native
   /**
     * If displayMode is showWithAncestorsAndDescendants, show all records that match filtering conditions and their child records, even if child records don"t match filtering conditions. If displayMode is showWithAncestors show only those records that match filtering conditions and do not show child records(if any) that don"t match filtering conditions
     *
     *
     * @optionValue New value to be set.
     */
-  def igTreeGridFiltering(optionLiteral: option, optionName: displayMode, optionValue: js.Any): Unit = js.native
+  def igTreeGridFiltering(optionLiteral: option, optionName: displayMode, optionValue: Any): Unit = js.native
   /**
     * Event fired after a filter column dropdown is completely closed.
     */
@@ -45154,7 +45153,7 @@ trait JQuery extends StObject {
     * string  The height of the column filter dropdowns in pixels (0px).
     * number  The height of the column filter dropdowns in pixels as a number (0).
     */
-  def igTreeGridFiltering(optionLiteral: option, optionName: filterDropDownHeight): js.Any = js.native
+  def igTreeGridFiltering(optionLiteral: option, optionName: filterDropDownHeight): Any = js.native
   /**
     * Height of the column filter dropdowns.
     *
@@ -45163,7 +45162,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTreeGridFiltering(optionLiteral: option, optionName: filterDropDownHeight, optionValue: js.Any): Unit = js.native
+  def igTreeGridFiltering(optionLiteral: option, optionName: filterDropDownHeight, optionValue: Any): Unit = js.native
   /**
     * Enable/disable filter icons visibility.
     *
@@ -45439,19 +45438,19 @@ trait JQuery extends StObject {
   @JSName("igTreeGridFiltering")
   def igTreeGridFiltering_destroy(methodName: destroy): Unit = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any]): Unit = js.native
+  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[Any]): Unit = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Boolean): Unit = js.native
+  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[Any], updateUI: Boolean): Unit = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
+  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[Any], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Unit, addedFromAdvanced: Boolean): Unit = js.native
+  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[Any], updateUI: Unit, addedFromAdvanced: Boolean): Unit = js.native
   @JSName("igTreeGridFiltering")
   def igTreeGridFiltering_getFilteringMatchesCount(methodName: getFilteringMatchesCount): Double = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridFiltering_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridFiltering_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridFiltering")
   def igTreeGridFiltering_option(optionLiteral: option, options: IgTreeGridFiltering): JQuery = js.native
   @JSName("igTreeGridFiltering")
@@ -45459,7 +45458,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridFiltering")
   def igTreeGridFiltering_toggleFilterRowByFeatureChooser(methodName: toggleFilterRowByFeatureChooser, event: String): Unit = js.native
   
-  def igTreeGridHiding(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridHiding(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets time of milliseconds for animation duration to show/hide modal dialog
     *
@@ -45888,15 +45887,15 @@ trait JQuery extends StObject {
   @JSName("igTreeGridHiding")
   def igTreeGridHiding_hideColumnChooser(methodName: hideColumnChooser): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[js.Any]): Unit = js.native
+  def igTreeGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[Any]): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[js.Any], callback: js.Function): Unit = js.native
+  def igTreeGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[Any], callback: js.Function): Unit = js.native
   @JSName("igTreeGridHiding")
   def igTreeGridHiding_isToRenderButtonReset(methodName: isToRenderButtonReset): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridHiding_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridHiding_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridHiding")
   def igTreeGridHiding_option(optionLiteral: option, options: IgTreeGridHiding): JQuery = js.native
   @JSName("igTreeGridHiding")
@@ -45912,11 +45911,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGridHiding")
   def igTreeGridHiding_showColumnChooser(methodName: showColumnChooser): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[js.Any]): Unit = js.native
+  def igTreeGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[Any]): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[js.Any], callback: js.Function): Unit = js.native
+  def igTreeGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[Any], callback: js.Function): Unit = js.native
   
-  def igTreeGridMultiColumnHeaders(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridMultiColumnHeaders(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Event fired after the group collapsing has been executed and results are rendered.
     */
@@ -45981,11 +45980,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGridMultiColumnHeaders")
   def igTreeGridMultiColumnHeaders_expandGroup(methodName: expandGroup, groupKey: String, callback: js.Function): Unit = js.native
   @JSName("igTreeGridMultiColumnHeaders")
-  def igTreeGridMultiColumnHeaders_getMultiColumnHeaders(methodName: getMultiColumnHeaders): js.Array[js.Any] = js.native
+  def igTreeGridMultiColumnHeaders_getMultiColumnHeaders(methodName: getMultiColumnHeaders): js.Array[Any] = js.native
   @JSName("igTreeGridMultiColumnHeaders")
-  def igTreeGridMultiColumnHeaders_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridMultiColumnHeaders_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridMultiColumnHeaders")
-  def igTreeGridMultiColumnHeaders_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridMultiColumnHeaders_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridMultiColumnHeaders")
   def igTreeGridMultiColumnHeaders_option(optionLiteral: option, options: IgTreeGridMultiColumnHeaders): JQuery = js.native
   @JSName("igTreeGridMultiColumnHeaders")
@@ -45993,7 +45992,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridMultiColumnHeaders")
   def igTreeGridMultiColumnHeaders_toggleGroup(methodName: toggleGroup, groupKey: String, callback: js.Function): Unit = js.native
   
-  def igTreeGridPaging(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridPaging(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Type of paging. Delegates all paging functionality to the [$.ig.DataSource](ig.datasource).
     *
@@ -46389,14 +46388,14 @@ trait JQuery extends StObject {
     * Predefined page sizes that are available to the end user to switch their grid paging to, through a drop down in the grid header.
     *
     */
-  def igTreeGridPaging(optionLiteral: option, optionName: pageSizeList): js.Any = js.native
+  def igTreeGridPaging(optionLiteral: option, optionName: pageSizeList): Any = js.native
   /**
     * Predefined page sizes that are available to the end user to switch their grid paging to, through a drop down in the grid header.
     *
     *
     * @optionValue New value to be set.
     */
-  def igTreeGridPaging(optionLiteral: option, optionName: pageSizeList, optionValue: js.Any): Unit = js.native
+  def igTreeGridPaging(optionLiteral: option, optionName: pageSizeList, optionValue: Any): Unit = js.native
   /**
     * Denotes the name of the encoded URL parameter that will state what is the currently requested page size.
     *
@@ -46613,9 +46612,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridPaging")
   def igTreeGridPaging_getContextRowTextArea(methodName: getContextRowTextArea): js.Object = js.native
   @JSName("igTreeGridPaging")
-  def igTreeGridPaging_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridPaging_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridPaging")
-  def igTreeGridPaging_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridPaging_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridPaging")
   def igTreeGridPaging_option(optionLiteral: option, options: IgTreeGridPaging): JQuery = js.native
   @JSName("igTreeGridPaging")
@@ -46627,7 +46626,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridPaging")
   def igTreeGridPaging_pageSize(methodName: pageSize, size: Double): Double = js.native
   
-  def igTreeGridResizing(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridResizing(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Resize the column to the size of the longest currently visible cell value.
     *
@@ -46728,9 +46727,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridResizing")
   def igTreeGridResizing_destroy(methodName: destroy): Unit = js.native
   @JSName("igTreeGridResizing")
-  def igTreeGridResizing_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridResizing_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridResizing")
-  def igTreeGridResizing_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridResizing_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridResizing")
   def igTreeGridResizing_option(optionLiteral: option, options: IgTreeGridResizing): JQuery = js.native
   @JSName("igTreeGridResizing")
@@ -46738,7 +46737,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridResizing")
   def igTreeGridResizing_resize(methodName: resize, column: js.Object, width: js.Object): Unit = js.native
   
-  def igTreeGridRowSelectors(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridRowSelectors(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets the type of checkboxes rendered in the row selector. Can be set only at initialization.
     *
@@ -46944,17 +46943,17 @@ trait JQuery extends StObject {
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_checkStateById(methodName: checkStateById, rowId: js.Object): String = js.native
   @JSName("igTreeGridRowSelectors")
-  def igTreeGridRowSelectors_checkedRows(methodName: checkedRows): js.Array[js.Any] = js.native
+  def igTreeGridRowSelectors_checkedRows(methodName: checkedRows): js.Array[Any] = js.native
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_destroy(methodName: destroy): Unit = js.native
   @JSName("igTreeGridRowSelectors")
-  def igTreeGridRowSelectors_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridRowSelectors_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridRowSelectors")
-  def igTreeGridRowSelectors_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridRowSelectors_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_option(optionLiteral: option, options: IgTreeGridRowSelectors): JQuery = js.native
   @JSName("igTreeGridRowSelectors")
-  def igTreeGridRowSelectors_partiallyCheckedRows(methodName: partiallyCheckedRows): js.Array[js.Any] = js.native
+  def igTreeGridRowSelectors_partiallyCheckedRows(methodName: partiallyCheckedRows): js.Array[Any] = js.native
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_rsRenderColgroup(methodName: rsRenderColgroup): Unit = js.native
   @JSName("igTreeGridRowSelectors")
@@ -46962,9 +46961,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_toggleCheckStateById(methodName: toggleCheckStateById, rowId: js.Object): Unit = js.native
   @JSName("igTreeGridRowSelectors")
-  def igTreeGridRowSelectors_uncheckedRows(methodName: uncheckedRows): js.Array[js.Any] = js.native
+  def igTreeGridRowSelectors_uncheckedRows(methodName: uncheckedRows): js.Array[Any] = js.native
   
-  def igTreeGridSelection(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridSelection(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Enables / disables activation of rows and cells. Activation implies ability to perform navigating through cells and rows via the keyboard, and selecting rows and cells using CTRL / SHIFT - in the way cells/rows are selected in Ms Excel
     *
@@ -47193,9 +47192,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridSelection")
   def igTreeGridSelection_destroy(methodName: destroy): Unit = js.native
   @JSName("igTreeGridSelection")
-  def igTreeGridSelection_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridSelection_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridSelection")
-  def igTreeGridSelection_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridSelection_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridSelection")
   def igTreeGridSelection_option(optionLiteral: option, options: IgTreeGridSelection): JQuery = js.native
   @JSName("igTreeGridSelection")
@@ -47211,13 +47210,13 @@ trait JQuery extends StObject {
   @JSName("igTreeGridSelection")
   def igTreeGridSelection_selectedCell(methodName: selectedCell): js.Object = js.native
   @JSName("igTreeGridSelection")
-  def igTreeGridSelection_selectedCells(methodName: selectedCells): js.Array[js.Any] = js.native
+  def igTreeGridSelection_selectedCells(methodName: selectedCells): js.Array[Any] = js.native
   @JSName("igTreeGridSelection")
   def igTreeGridSelection_selectedRow(methodName: selectedRow): js.Object = js.native
   @JSName("igTreeGridSelection")
-  def igTreeGridSelection_selectedRows(methodName: selectedRows): js.Array[js.Any] = js.native
+  def igTreeGridSelection_selectedRows(methodName: selectedRows): js.Array[Any] = js.native
   
-  def igTreeGridSorting(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridSorting(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Defines local or remote sorting operations.
     *
@@ -47820,9 +47819,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridSorting")
   def igTreeGridSorting_openMultipleSortingDialog(methodName: openMultipleSortingDialog): Unit = js.native
   @JSName("igTreeGridSorting")
-  def igTreeGridSorting_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridSorting_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridSorting")
-  def igTreeGridSorting_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridSorting_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridSorting")
   def igTreeGridSorting_option(optionLiteral: option, options: IgTreeGridSorting): JQuery = js.native
   @JSName("igTreeGridSorting")
@@ -47834,11 +47833,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGridSorting")
   def igTreeGridSorting_sortMultiple(methodName: sortMultiple): Unit = js.native
   @JSName("igTreeGridSorting")
-  def igTreeGridSorting_sortMultiple(methodName: sortMultiple, exprs: js.Array[js.Any]): Unit = js.native
+  def igTreeGridSorting_sortMultiple(methodName: sortMultiple, exprs: js.Array[Any]): Unit = js.native
   @JSName("igTreeGridSorting")
   def igTreeGridSorting_unsortColumn(methodName: unsortColumn, index: js.Object, header: js.Object): Unit = js.native
   
-  def igTreeGridTooltips(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridTooltips(methodName: String, methodParams: Any*): Any = js.native
   /**
     * A list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)
     *
@@ -47995,13 +47994,13 @@ trait JQuery extends StObject {
   @JSName("igTreeGridTooltips")
   def igTreeGridTooltips_id(methodName: id): String = js.native
   @JSName("igTreeGridTooltips")
-  def igTreeGridTooltips_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridTooltips_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridTooltips")
-  def igTreeGridTooltips_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridTooltips_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridTooltips")
   def igTreeGridTooltips_option(optionLiteral: option, options: IgTreeGridTooltips): JQuery = js.native
   
-  def igTreeGridUpdating(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igTreeGridUpdating(methodName: String, methodParams: Any*): Any = js.native
   /**
     * This option has been deprecated as of the 2017.2 Volume release.
     * Gets the label of the add child button in touch environment. Use option [locale.addChildButtonLabel](ui.igtreegridupdating#options:locale.addChildButtonLabel).
@@ -48548,7 +48547,7 @@ trait JQuery extends StObject {
     * Gets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
     */
-  def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers): String | js.Array[js.Any] = js.native
+  def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers): String | js.Array[Any] = js.native
   /**
     * Sets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
@@ -48556,7 +48555,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: String): Unit = js.native
-  def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: js.Array[js.Any]): Unit = js.native
+  def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: js.Array[Any]): Unit = js.native
   /**
     * On touch-enabled devices specifies the swipe distance for the delete button to appear.
     *
@@ -48630,9 +48629,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridUpdating")
   def igTreeGridUpdating_isEditing(methodName: isEditing): Boolean = js.native
   @JSName("igTreeGridUpdating")
-  def igTreeGridUpdating_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGridUpdating_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGridUpdating")
-  def igTreeGridUpdating_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGridUpdating_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGridUpdating")
   def igTreeGridUpdating_option(optionLiteral: option, options: IgTreeGridUpdating): JQuery = js.native
   @JSName("igTreeGridUpdating")
@@ -48661,11 +48660,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_activeRow(methodName: activeRow): js.Object = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_allFixedRows(methodName: allFixedRows): js.Array[js.Any] = js.native
+  def igTreeGrid_allFixedRows(methodName: allFixedRows): js.Array[Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_allRows(methodName: allRows): js.Array[js.Any] = js.native
+  def igTreeGrid_allRows(methodName: allRows): js.Array[Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_allTransactions(methodName: allTransactions): js.Array[js.Any] = js.native
+  def igTreeGrid_allTransactions(methodName: allTransactions): js.Array[Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_autoSizeColumns(methodName: autoSizeColumns): Unit = js.native
   @JSName("igTreeGrid")
@@ -48677,9 +48676,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_changeRegional(methodName: changeRegional): Unit = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_children(methodName: children): js.Array[js.Any] = js.native
+  def igTreeGrid_children(methodName: children): js.Array[Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_childrenWidgets(methodName: childrenWidgets): js.Array[js.Any] = js.native
+  def igTreeGrid_childrenWidgets(methodName: childrenWidgets): js.Array[Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_collapseRow(methodName: collapseRow, row: js.Object): Unit = js.native
   @JSName("igTreeGrid")
@@ -48721,7 +48720,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_fixedRowAt(methodName: fixedRowAt, i: Double): Element = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_fixedRows(methodName: fixedRows): js.Array[js.Any] = js.native
+  def igTreeGrid_fixedRows(methodName: fixedRows): js.Array[Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_fixedTable(methodName: fixedTable): js.Object = js.native
   @JSName("igTreeGrid")
@@ -48757,9 +48756,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_id(methodName: id): String = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_immediateChildren(methodName: immediateChildren): js.Array[js.Any] = js.native
+  def igTreeGrid_immediateChildren(methodName: immediateChildren): js.Array[Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_immediateChildrenWidgets(methodName: immediateChildrenWidgets): js.Array[js.Any] = js.native
+  def igTreeGrid_immediateChildrenWidgets(methodName: immediateChildrenWidgets): js.Array[Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_isFixedColumn(methodName: isFixedColumn, colKey: js.Object): Boolean = js.native
   @JSName("igTreeGrid")
@@ -48809,15 +48808,15 @@ trait JQuery extends StObject {
     callback: js.Function
   ): Unit = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTreeGrid_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTreeGrid_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_option(optionLiteral: option, options: IgTreeGrid): JQuery = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_pendingTransactions(methodName: pendingTransactions): js.Array[js.Any] = js.native
+  def igTreeGrid_pendingTransactions(methodName: pendingTransactions): js.Array[Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_renderMultiColumnHeader(methodName: renderMultiColumnHeader, cols: js.Array[js.Any]): Unit = js.native
+  def igTreeGrid_renderMultiColumnHeader(methodName: renderMultiColumnHeader, cols: js.Array[Any]): Unit = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_renderNewChild(methodName: renderNewChild, rec: js.Object): Unit = js.native
   @JSName("igTreeGrid")
@@ -48829,13 +48828,13 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_resizeContainer(methodName: resizeContainer): Unit = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rollback(methodName: rollback): js.Array[js.Any] = js.native
+  def igTreeGrid_rollback(methodName: rollback): js.Array[Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rollback(methodName: rollback, rowId: js.Object): js.Array[js.Any] = js.native
+  def igTreeGrid_rollback(methodName: rollback, rowId: js.Object): js.Array[Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rollback(methodName: rollback, rowId: js.Object, updateUI: Boolean): js.Array[js.Any] = js.native
+  def igTreeGrid_rollback(methodName: rollback, rowId: js.Object, updateUI: Boolean): js.Array[Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rollback(methodName: rollback, rowId: Unit, updateUI: Boolean): js.Array[js.Any] = js.native
+  def igTreeGrid_rollback(methodName: rollback, rowId: Unit, updateUI: Boolean): js.Array[Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_rowAt(methodName: rowAt, i: Double): Element = js.native
   @JSName("igTreeGrid")
@@ -48843,7 +48842,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_rowById(methodName: rowById, rowId: js.Object, isFixed: Boolean): Element = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rows(methodName: rows): js.Array[js.Any] = js.native
+  def igTreeGrid_rows(methodName: rows): js.Array[Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_saveChanges(methodName: saveChanges, success: js.Function, error: js.Function): Unit = js.native
   @JSName("igTreeGrid")
@@ -48851,11 +48850,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_selectedCell(methodName: selectedCell): js.Object = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_selectedCells(methodName: selectedCells): js.Array[js.Any] = js.native
+  def igTreeGrid_selectedCells(methodName: selectedCells): js.Array[Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_selectedRow(methodName: selectedRow): js.Object = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_selectedRows(methodName: selectedRows): js.Array[js.Any] = js.native
+  def igTreeGrid_selectedRows(methodName: selectedRows): js.Array[Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_setColumnTemplate(methodName: setColumnTemplate, col: js.Object, tmpl: String): Unit = js.native
   @JSName("igTreeGrid")
@@ -48869,7 +48868,7 @@ trait JQuery extends StObject {
     notToRender: js.Object
   ): Unit = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_setUnboundValues(methodName: setUnboundValues, key: String, values: js.Array[js.Any], removeOldValues: js.Object): Unit = js.native
+  def igTreeGrid_setUnboundValues(methodName: setUnboundValues, key: String, values: js.Array[Any], removeOldValues: js.Object): Unit = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_showColumn(methodName: showColumn, column: js.Object, callback: js.Function): Unit = js.native
   @JSName("igTreeGrid")
@@ -48906,11 +48905,11 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_checkState(methodName: checkState, node: js.Object): String = js.native
   @JSName("igTree")
-  def igTree_checkedNodes(methodName: checkedNodes): js.Array[js.Any] = js.native
+  def igTree_checkedNodes(methodName: checkedNodes): js.Array[Any] = js.native
   @JSName("igTree")
-  def igTree_children(methodName: children, parent: js.Object): js.Array[js.Any] = js.native
+  def igTree_children(methodName: children, parent: js.Object): js.Array[Any] = js.native
   @JSName("igTree")
-  def igTree_childrenByPath(methodName: childrenByPath, path: String): js.Array[js.Any] = js.native
+  def igTree_childrenByPath(methodName: childrenByPath, path: String): js.Array[Any] = js.native
   @JSName("igTree")
   def igTree_clearSelection(methodName: clearSelection): Unit = js.native
   @JSName("igTree")
@@ -48932,13 +48931,13 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_expandToNode(methodName: expandToNode, node: js.Object, toSelect: Boolean): Unit = js.native
   @JSName("igTree")
-  def igTree_findImmediateNodesByText(methodName: findImmediateNodesByText, text: String): js.Array[js.Any] = js.native
+  def igTree_findImmediateNodesByText(methodName: findImmediateNodesByText, text: String): js.Array[Any] = js.native
   @JSName("igTree")
-  def igTree_findImmediateNodesByText(methodName: findImmediateNodesByText, text: String, parent: js.Object): js.Array[js.Any] = js.native
+  def igTree_findImmediateNodesByText(methodName: findImmediateNodesByText, text: String, parent: js.Object): js.Array[Any] = js.native
   @JSName("igTree")
-  def igTree_findNodesByText(methodName: findNodesByText, text: String): js.Array[js.Any] = js.native
+  def igTree_findNodesByText(methodName: findNodesByText, text: String): js.Array[Any] = js.native
   @JSName("igTree")
-  def igTree_findNodesByText(methodName: findNodesByText, text: String, parent: js.Object): js.Array[js.Any] = js.native
+  def igTree_findNodesByText(methodName: findNodesByText, text: String, parent: js.Object): js.Array[Any] = js.native
   @JSName("igTree")
   def igTree_isChecked(methodName: isChecked, node: js.Object): Boolean = js.native
   @JSName("igTree")
@@ -48958,9 +48957,9 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_nodesByValue(methodName: nodesByValue, value: String): js.Object = js.native
   @JSName("igTree")
-  def igTree_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igTree_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igTree")
-  def igTree_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igTree_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igTree")
   def igTree_option(optionLiteral: option, options: IgTree): JQuery = js.native
   @JSName("igTree")
@@ -48968,7 +48967,7 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_partiallyCheckNode(methodName: partiallyCheckNode, nodeObj: js.Object, cascadeDir: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_partiallyCheckedNodes(methodName: partiallyCheckedNodes): js.Array[js.Any] = js.native
+  def igTree_partiallyCheckedNodes(methodName: partiallyCheckedNodes): js.Array[Any] = js.native
   @JSName("igTree")
   def igTree_removeAt(methodName: removeAt, path: String): Unit = js.native
   @JSName("igTree")
@@ -48988,25 +48987,25 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_toggleCheckstate(methodName: toggleCheckstate_, node: js.Object, event: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_transactionLog(methodName: transactionLog): js.Array[js.Any] = js.native
+  def igTree_transactionLog(methodName: transactionLog): js.Array[Any] = js.native
   @JSName("igTree")
   def igTree_uncheckNode(methodName: uncheckNode, nodeObj: js.Object, cascadeDir: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_uncheckedNodes(methodName: uncheckedNodes): js.Array[js.Any] = js.native
+  def igTree_uncheckedNodes(methodName: uncheckedNodes): js.Array[Any] = js.native
   
-  def igUpload(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igUpload(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example ["gif", "jpg", "bmp"].
     *
     */
-  def igUpload(optionLiteral: option, optionName: allowedExtensions): js.Array[js.Any] = js.native
+  def igUpload(optionLiteral: option, optionName: allowedExtensions): js.Array[Any] = js.native
   /**
     * Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example ["gif", "jpg", "bmp"].
     *
     *
     * @optionValue New value to be set.
     */
-  def igUpload(optionLiteral: option, optionName: allowedExtensions, optionValue: js.Array[js.Any]): Unit = js.native
+  def igUpload(optionLiteral: option, optionName: allowedExtensions, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Get or set whether the file start upload automatically when it is selected. Default is false.
     *
@@ -49045,14 +49044,14 @@ trait JQuery extends StObject {
     * Get or set control specific CSS options. For example you can override specific control classes with custom ones.
     *
     */
-  def igUpload(optionLiteral: option, optionName: css): js.Any = js.native
+  def igUpload(optionLiteral: option, optionName: css): Any = js.native
   /**
     * Get or set control specific CSS options. For example you can override specific control classes with custom ones.
     *
     *
     * @optionValue New value to be set.
     */
-  def igUpload(optionLiteral: option, optionName: css, optionValue: js.Any): Unit = js.native
+  def igUpload(optionLiteral: option, optionName: css, optionValue: Any): Unit = js.native
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Get or set error message when AJAX Request to get file size throws error.
@@ -49291,14 +49290,14 @@ trait JQuery extends StObject {
     * Get or set file size metrics how to be shown files size.
     *
     */
-  def igUpload(optionLiteral: option, optionName: fileSizeMetric): js.Any = js.native
+  def igUpload(optionLiteral: option, optionName: fileSizeMetric): Any = js.native
   /**
     * Get or set file size metrics how to be shown files size.
     *
     *
     * @optionValue New value to be set.
     */
-  def igUpload(optionLiteral: option, optionName: fileSizeMetric, optionValue: js.Any): Unit = js.native
+  def igUpload(optionLiteral: option, optionName: fileSizeMetric, optionValue: Any): Unit = js.native
   /**
     * Defines the name of the file upload cancel event. Fired when the server responses that the file is canceled.
     */
@@ -49515,13 +49514,13 @@ trait JQuery extends StObject {
   /**
     * Maximum size(in bytes) allowed for the file to be uploaded. If it is set to null or -1 there is no limitation otherwise if the size(of the selected file) exceeds this value it is not allowed to be uploaded. This option is used for validation only on client side and only if the browser supports HTML5 file API and share information about the file size
     */
-  def igUpload(optionLiteral: option, optionName: maxFileSize): js.Any = js.native
+  def igUpload(optionLiteral: option, optionName: maxFileSize): Any = js.native
   /**
     * Maximum size(in bytes) allowed for the file to be uploaded. If it is set to null or -1 there is no limitation otherwise if the size(of the selected file) exceeds this value it is not allowed to be uploaded. This option is used for validation only on client side and only if the browser supports HTML5 file API and share information about the file size
     *
     * @optionValue New value to be set.
     */
-  def igUpload(optionLiteral: option, optionName: maxFileSize, optionValue: js.Any): Unit = js.native
+  def igUpload(optionLiteral: option, optionName: maxFileSize, optionValue: Any): Unit = js.native
   /**
     * Get or set count of files that could be uploaded at the same time.
     *
@@ -49550,14 +49549,14 @@ trait JQuery extends StObject {
     * Get or set multiple or single file upload. In single upload it is possible to upload only one file at the same time.
     *
     */
-  def igUpload(optionLiteral: option, optionName: mode): js.Any = js.native
+  def igUpload(optionLiteral: option, optionName: mode): Any = js.native
   /**
     * Get or set multiple or single file upload. In single upload it is possible to upload only one file at the same time.
     *
     *
     * @optionValue New value to be set.
     */
-  def igUpload(optionLiteral: option, optionName: mode, optionValue: js.Any): Unit = js.native
+  def igUpload(optionLiteral: option, optionName: mode, optionValue: Any): Unit = js.native
   /**
     * Get or set a bool setting that allows user to select(for upload) more than 1 file from the browse dialog at once. HTML 5+ - it is supported by Chrome, MOzilla FF, Safar, Opera latest versions and IE10+
     *
@@ -49678,7 +49677,7 @@ trait JQuery extends StObject {
   @JSName("igUpload")
   def igUpload_addDataField(methodName: addDataField, formData: js.Object, field: js.Object): Unit = js.native
   @JSName("igUpload")
-  def igUpload_addDataFields(methodName: addDataFields, formData: js.Object, fields: js.Array[js.Any]): Unit = js.native
+  def igUpload_addDataFields(methodName: addDataFields, formData: js.Object, fields: js.Array[Any]): Unit = js.native
   @JSName("igUpload")
   def igUpload_cancelAll(methodName: cancelAll): Unit = js.native
   @JSName("igUpload")
@@ -49700,9 +49699,9 @@ trait JQuery extends StObject {
   @JSName("igUpload")
   def igUpload_getFileInfoData(methodName: getFileInfoData): js.Object = js.native
   @JSName("igUpload")
-  def igUpload_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igUpload_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igUpload")
-  def igUpload_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igUpload_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igUpload")
   def igUpload_option(optionLiteral: option, options: IgUpload): JQuery = js.native
   @JSName("igUpload")
@@ -49710,7 +49709,7 @@ trait JQuery extends StObject {
   @JSName("igUpload")
   def igUpload_widget(methodName: widget): Unit = js.native
   
-  def igValidator(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igValidator(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets Credit Card number validation rule options.Note: This rule will only validate the checksum of the number using Luhn algorithm irregardless of card type.
     *
@@ -49963,27 +49962,27 @@ trait JQuery extends StObject {
     * Gets/Sets a minimum and/or maximum length of text or number of selected items. Null or 0 values are ignored.
     *
     */
-  def igValidator(optionLiteral: option, optionName: lengthRange): js.Array[js.Any] | js.Object = js.native
+  def igValidator(optionLiteral: option, optionName: lengthRange): js.Array[Any] | js.Object = js.native
   /**
     * /Sets a minimum and/or maximum length of text or number of selected items. Null or 0 values are ignored.
     *
     *
     * @optionValue New value to be set.
     */
-  def igValidator(optionLiteral: option, optionName: lengthRange, optionValue: js.Array[js.Any]): Unit = js.native
+  def igValidator(optionLiteral: option, optionName: lengthRange, optionValue: js.Array[Any]): Unit = js.native
   def igValidator(optionLiteral: option, optionName: lengthRange, optionValue: js.Object): Unit = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  def igValidator(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igValidator(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igValidator(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igValidator(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets a custom jQuery element to be used for validation messages. That inner HTML of the target is modified, can be a SPAN, LABEL or DIV.
     *
@@ -50000,14 +49999,14 @@ trait JQuery extends StObject {
     * Gets/Sets the options for the [igNotifier](ui.ignotifier#options) used to show error messages.
     *
     */
-  def igValidator(optionLiteral: option, optionName: notificationOptions): js.Any = js.native
+  def igValidator(optionLiteral: option, optionName: notificationOptions): Any = js.native
   /**
     * /Sets the options for the [igNotifier](ui.ignotifier#options) used to show error messages.
     *
     *
     * @optionValue New value to be set.
     */
-  def igValidator(optionLiteral: option, optionName: notificationOptions, optionValue: js.Any): Unit = js.native
+  def igValidator(optionLiteral: option, optionName: notificationOptions, optionValue: Any): Unit = js.native
   /**
     * Gets/Sets number validation rule options.Default separators for decimals and thousands are '.' and ',' respectively and are defined in the "$.ui.igValidator.defaults" object.
     *
@@ -50262,14 +50261,14 @@ trait JQuery extends StObject {
     * Gets/Sets a minimum and/or maximum value. Null values are ignored.
     *
     */
-  def igValidator(optionLiteral: option, optionName: valueRange): js.Array[js.Any] | js.Object = js.native
+  def igValidator(optionLiteral: option, optionName: valueRange): js.Array[Any] | js.Object = js.native
   /**
     * /Sets a minimum and/or maximum value. Null values are ignored.
     *
     *
     * @optionValue New value to be set.
     */
-  def igValidator(optionLiteral: option, optionName: valueRange, optionValue: js.Array[js.Any]): Unit = js.native
+  def igValidator(optionLiteral: option, optionName: valueRange, optionValue: js.Array[Any]): Unit = js.native
   def igValidator(optionLiteral: option, optionName: valueRange, optionValue: js.Object): Unit = js.native
   def igValidator(options: IgValidator): JQuery = js.native
   @JSName("igValidator")
@@ -50283,9 +50282,9 @@ trait JQuery extends StObject {
   @JSName("igValidator")
   def igValidator_destroy(methodName: destroy): Unit = js.native
   @JSName("igValidator")
-  def igValidator_getErrorMessages(methodName: getErrorMessages): js.Array[js.Any] = js.native
+  def igValidator_getErrorMessages(methodName: getErrorMessages): js.Array[Any] = js.native
   @JSName("igValidator")
-  def igValidator_getErrorMessages(methodName: getErrorMessages, field: js.Object): js.Array[js.Any] = js.native
+  def igValidator_getErrorMessages(methodName: getErrorMessages, field: js.Object): js.Array[Any] = js.native
   @JSName("igValidator")
   def igValidator_hide(methodName: hide): Unit = js.native
   @JSName("igValidator")
@@ -50303,9 +50302,9 @@ trait JQuery extends StObject {
   @JSName("igValidator")
   def igValidator_notifier(methodName: notifier, field: js.Object): js.Object = js.native
   @JSName("igValidator")
-  def igValidator_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igValidator_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igValidator")
-  def igValidator_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igValidator_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igValidator")
   def igValidator_option(optionLiteral: option, options: IgValidator): JQuery = js.native
   @JSName("igValidator")
@@ -50319,7 +50318,7 @@ trait JQuery extends StObject {
   @JSName("igValidator")
   def igValidator_validate(methodName: validate, field: js.Object): Boolean = js.native
   
-  def igVideoPlayer(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igVideoPlayer(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets/Sets whether player controls will auto hide when video is not hovered. This is applicable only when Infragistics playback controls are used.
     *
@@ -50736,14 +50735,14 @@ trait JQuery extends StObject {
     * Gets/Sets a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg.
     *
     */
-  def igVideoPlayer(optionLiteral: option, optionName: sources): js.Array[js.Any] = js.native
+  def igVideoPlayer(optionLiteral: option, optionName: sources): js.Array[Any] = js.native
   /**
     * /Sets a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg.
     *
     *
     * @optionValue New value to be set.
     */
-  def igVideoPlayer(optionLiteral: option, optionName: sources, optionValue: js.Array[js.Any]): Unit = js.native
+  def igVideoPlayer(optionLiteral: option, optionName: sources, optionValue: js.Array[Any]): Unit = js.native
   /**
     * Gets/Sets video title.
     *
@@ -50827,9 +50826,9 @@ trait JQuery extends StObject {
   @JSName("igVideoPlayer")
   def igVideoPlayer_hideBanner(methodName: hideBanner, index: Double): Unit = js.native
   @JSName("igVideoPlayer")
-  def igVideoPlayer_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igVideoPlayer_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igVideoPlayer")
-  def igVideoPlayer_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igVideoPlayer_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igVideoPlayer")
   def igVideoPlayer_option(optionLiteral: option, options: IgVideoPlayer): JQuery = js.native
   @JSName("igVideoPlayer")
@@ -50863,7 +50862,7 @@ trait JQuery extends StObject {
   @JSName("igVideoPlayer")
   def igVideoPlayer_widget(methodName: widget): Unit = js.native
   
-  def igWidget(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igWidget(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
@@ -50880,14 +50879,14 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igWidget(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igWidget(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igWidget(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igWidget(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
@@ -50911,23 +50910,23 @@ trait JQuery extends StObject {
   @JSName("igWidget")
   def igWidget_destroy(methodName: destroy): Unit = js.native
   @JSName("igWidget")
-  def igWidget_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igWidget_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igWidget")
-  def igWidget_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igWidget_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igWidget")
   def igWidget_option(optionLiteral: option, options: IgWidget): JQuery = js.native
   
-  def igZoomSlider(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igZoomSlider(methodName: String, methodParams: Any*): Any = js.native
   def igZoomSlider(optionLiteral: option, optionName: actualPixelScalingRatio): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: actualPixelScalingRatio, optionValue: Double): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: areThumbCalloutsEnabled): Boolean = js.native
   def igZoomSlider(optionLiteral: option, optionName: areThumbCalloutsEnabled, optionValue: Boolean): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: barBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: barBrush, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: barBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: barBrush, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: barExtent): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: barExtent, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: barOutline): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: barOutline, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: barOutline): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: barOutline, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: barStrokeThickness): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: barStrokeThickness, optionValue: Double): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: endInset): Double = js.native
@@ -50943,54 +50942,54 @@ trait JQuery extends StObject {
     */
   def igZoomSlider(optionLiteral: option, optionName: height, optionValue: String): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: height, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherCalloutBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherCalloutBrush, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherCalloutOutline): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherCalloutOutline, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherCalloutBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherCalloutBrush, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherCalloutOutline): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherCalloutOutline, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherCalloutStrokeThickness): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherCalloutStrokeThickness, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherCalloutTextColor): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherCalloutTextColor, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherShadeBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherShadeBrush, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherShadeOutline): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherShadeOutline, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherCalloutTextColor): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherCalloutTextColor, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherShadeBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherShadeBrush, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherShadeOutline): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherShadeOutline, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherShadeStrokeThickness): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherShadeStrokeThickness, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherThumbBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherThumbBrush, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherThumbBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherThumbBrush, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherThumbHeight): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherThumbHeight, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherThumbOutline): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherThumbOutline, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherThumbRidgesBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: higherThumbRidgesBrush, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherThumbOutline): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherThumbOutline, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherThumbRidgesBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: higherThumbRidgesBrush, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherThumbStrokeThickness): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherThumbStrokeThickness, optionValue: Double): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherThumbWidth): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: higherThumbWidth, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutBrush, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutOutline): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutOutline, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutBrush, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutOutline): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutOutline, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerCalloutStrokeThickness): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerCalloutStrokeThickness, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutTextColor): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutTextColor, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerShadeBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerShadeBrush, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerShadeOutline): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerShadeOutline, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutTextColor): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerCalloutTextColor, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerShadeBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerShadeBrush, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerShadeOutline): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerShadeOutline, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerShadeStrokeThickness): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerShadeStrokeThickness, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerThumbBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerThumbBrush, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerThumbBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerThumbBrush, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerThumbHeight): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerThumbHeight, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerThumbOutline): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerThumbOutline, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerThumbRidgesBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: lowerThumbRidgesBrush, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerThumbOutline): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerThumbOutline, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerThumbRidgesBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: lowerThumbRidgesBrush, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerThumbStrokeThickness): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerThumbStrokeThickness, optionValue: Double): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: lowerThumbWidth): Double = js.native
@@ -51019,20 +51018,20 @@ trait JQuery extends StObject {
   def igZoomSlider(optionLiteral: option, optionName: pixelScalingRatio, optionValue: Double): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: propertyChanged): PropertyChangedEvent = js.native
   def igZoomSlider(optionLiteral: option, optionName: propertyChanged, optionValue: PropertyChangedEvent): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: rangeThumbBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: rangeThumbBrush, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: rangeThumbOutline): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: rangeThumbOutline, optionValue: js.Any): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: rangeThumbRidgesBrush): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: rangeThumbRidgesBrush, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: rangeThumbBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: rangeThumbBrush, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: rangeThumbOutline): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: rangeThumbOutline, optionValue: Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: rangeThumbRidgesBrush): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: rangeThumbRidgesBrush, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: rangeThumbStrokeThickness): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: rangeThumbStrokeThickness, optionValue: Double): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: resolvingAxisValue): ResolvingAxisValueEvent = js.native
   def igZoomSlider(optionLiteral: option, optionName: resolvingAxisValue, optionValue: ResolvingAxisValueEvent): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: startInset): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: startInset, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: thumbCalloutTextStyle): js.Any = js.native
-  def igZoomSlider(optionLiteral: option, optionName: thumbCalloutTextStyle, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: thumbCalloutTextStyle): Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: thumbCalloutTextStyle, optionValue: Any): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: trackEndInset): Double = js.native
   def igZoomSlider(optionLiteral: option, optionName: trackEndInset, optionValue: Double): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: trackStartInset): Double = js.native
@@ -51048,7 +51047,7 @@ trait JQuery extends StObject {
     */
   def igZoomSlider(optionLiteral: option, optionName: width, optionValue: String): Unit = js.native
   def igZoomSlider(optionLiteral: option, optionName: width, optionValue: Double): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: windowRect): js.Any = js.native
+  def igZoomSlider(optionLiteral: option, optionName: windowRect): Any = js.native
   /**
     * Occurs just after the current ZoomSlider's window rectangle is changed.
     */
@@ -51059,7 +51058,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igZoomSlider(optionLiteral: option, optionName: windowRectChanged, optionValue: WindowRectChangedEvent): Unit = js.native
-  def igZoomSlider(optionLiteral: option, optionName: windowRect, optionValue: js.Any): Unit = js.native
+  def igZoomSlider(optionLiteral: option, optionName: windowRect, optionValue: Any): Unit = js.native
   def igZoomSlider(options: IgZoomSlider): JQuery = js.native
   @JSName("igZoomSlider")
   def igZoomSlider_destroy(methodName: destroy): Unit = js.native
@@ -51072,13 +51071,13 @@ trait JQuery extends StObject {
   @JSName("igZoomSlider")
   def igZoomSlider_onDetachedFromUI(methodName: onDetachedFromUI): Unit = js.native
   @JSName("igZoomSlider")
-  def igZoomSlider_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igZoomSlider_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igZoomSlider")
-  def igZoomSlider_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igZoomSlider_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igZoomSlider")
   def igZoomSlider_option(optionLiteral: option, options: IgZoomSlider): JQuery = js.native
   
-  def igZoombar(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def igZoombar(methodName: String, methodParams: Any*): Any = js.native
   /**
     * Gets how the target widget's clone is rendered inside the Zoombar.
     * object A valid set of properties to initialize the clone with.
@@ -51147,19 +51146,19 @@ trait JQuery extends StObject {
     * Set/Get the locale setting for the widget.
     *
     */
-  def igZoombar(optionLiteral: option, optionName: locale): js.Any = js.native
+  def igZoombar(optionLiteral: option, optionName: locale): Any = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     *
     * @optionValue New value to be set.
     */
-  def igZoombar(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
+  def igZoombar(optionLiteral: option, optionName: locale, optionValue: Any): Unit = js.native
   /**
     * Gets a provider class which interfaces the widget that is being zoomed.
     * object Provider class to use. The provider should implement all methods in the $.ig.ZoombarProviderDefault class and is suggested to be extended from it.
     */
-  def igZoombar(optionLiteral: option, optionName: provider): js.Any = js.native
+  def igZoombar(optionLiteral: option, optionName: provider): Any = js.native
   /**
     * Event fired after a provider is created based on the options.provider value. If an instance is passed as a value for the option the event won't fire.
     * Use the event when utilizing a custom provider to assign options such as the zoomed widget's instance so that the provider's API is usable when igZoombar initializes its rendering.
@@ -51178,7 +51177,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igZoombar(optionLiteral: option, optionName: provider, optionValue: js.Any): Unit = js.native
+  def igZoombar(optionLiteral: option, optionName: provider, optionValue: Any): Unit = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
@@ -51386,9 +51385,9 @@ trait JQuery extends StObject {
   @JSName("igZoombar")
   def igZoombar_id(methodName: id): String = js.native
   @JSName("igZoombar")
-  def igZoombar_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def igZoombar_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("igZoombar")
-  def igZoombar_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def igZoombar_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("igZoombar")
   def igZoombar_option(optionLiteral: option, options: IgZoombar): JQuery = js.native
   @JSName("igZoombar")
@@ -51402,7 +51401,7 @@ trait JQuery extends StObject {
   @JSName("igZoombar")
   def igZoombar_zoom(methodName: zoom, left: Unit, width: Double): js.Object = js.native
   
-  def mouseWrapper(methodName: String, methodParams: js.Any*): js.Any = js.native
+  def mouseWrapper(methodName: String, methodParams: Any*): Any = js.native
   def mouseWrapper(optionLiteral: option, optionName: cancel): String = js.native
   def mouseWrapper(optionLiteral: option, optionName: cancel, optionValue: String): Unit = js.native
   def mouseWrapper(optionLiteral: option, optionName: capture): CaptureEvent = js.native
@@ -51421,9 +51420,9 @@ trait JQuery extends StObject {
   @JSName("mouseWrapper")
   def mouseWrapper_destroy(methodName: destroy): Unit = js.native
   @JSName("mouseWrapper")
-  def mouseWrapper_option(optionLiteral: option, optionName: String): js.Any = js.native
+  def mouseWrapper_option(optionLiteral: option, optionName: String): Any = js.native
   @JSName("mouseWrapper")
-  def mouseWrapper_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
+  def mouseWrapper_option(optionLiteral: option, optionName: String, optionValue: Any): JQuery = js.native
   @JSName("mouseWrapper")
   def mouseWrapper_option(optionLiteral: option, options: MouseWrapper): JQuery = js.native
 }

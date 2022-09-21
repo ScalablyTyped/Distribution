@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty network.
   */
-class LayeredDigraphNetwork () extends LayoutNetwork
+open class LayeredDigraphNetwork () extends LayoutNetwork

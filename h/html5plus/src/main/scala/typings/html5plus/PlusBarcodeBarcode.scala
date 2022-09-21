@@ -36,7 +36,7 @@ trait PlusBarcodeBarcode extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var onerror: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onerror: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.native
   
   /**
     * 条码识别成功事件

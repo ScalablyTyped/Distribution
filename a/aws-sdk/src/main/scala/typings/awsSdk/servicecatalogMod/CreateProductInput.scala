@@ -42,7 +42,7 @@ trait CreateProductInput extends StObject {
   var ProductType: typings.awsSdk.servicecatalogMod.ProductType
   
   /**
-    * The configuration of the provisioning artifact. The info field accepts ImportFromPhysicalID.
+    * The configuration of the provisioning artifact. 
     */
   var ProvisioningArtifactParameters: ProvisioningArtifactProperties
   
@@ -57,7 +57,7 @@ trait CreateProductInput extends StObject {
   var SupportEmail: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportEmail] = js.undefined
   
   /**
-    * The contact URL for product support.
+    * The contact URL for product support.  ^https?:\/\// / is the pattern used to validate SupportUrl.
     */
   var SupportUrl: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportUrl] = js.undefined
   
@@ -119,6 +119,6 @@ object CreateProductInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

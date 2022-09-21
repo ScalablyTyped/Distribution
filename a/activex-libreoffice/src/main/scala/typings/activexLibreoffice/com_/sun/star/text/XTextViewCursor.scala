@@ -45,7 +45,7 @@ object XTextViewCursor {
     gotoStart: Boolean => Unit,
     isCollapsed: () => Boolean,
     isVisible: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setString: String => Unit,
     setVisible: Boolean => Unit

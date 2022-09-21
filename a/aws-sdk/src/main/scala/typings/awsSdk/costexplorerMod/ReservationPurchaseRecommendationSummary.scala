@@ -12,12 +12,12 @@ trait ReservationPurchaseRecommendationSummary extends StObject {
   var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The total amount that AWS estimates that this recommendation could save you in a month.
+    * The total amount that Amazon Web Services estimates that this recommendation could save you in a month.
     */
   var TotalEstimatedMonthlySavingsAmount: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The total amount that AWS estimates that this recommendation could save you in a month, as a percentage of your costs.
+    * The total amount that Amazon Web Services estimates that this recommendation could save you in a month, as a percentage of your costs.
     */
   var TotalEstimatedMonthlySavingsPercentage: js.UndefOr[GenericString] = js.undefined
 }

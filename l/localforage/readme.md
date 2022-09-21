@@ -1,7 +1,7 @@
 
 # Scala.js typings for localforage
 
-Typings are for version 1.9.0
+Typings are for version 1.10.0
 
 ## Library description:
 Offline storage, improved.
@@ -11,9 +11,9 @@ Offline storage, improved.
 | Full name          | localforage |
 | Keywords           | indexeddb, localstorage, storage, websql |
 | # releases         | 5 |
-| # dependents       | 897 |
-| # downloads        | 23712422 |
-| # stars            | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 8142156.333333333 |
+| # stars            | 20668.0 |
 
 ## Links
 - [Homepage](https://github.com/localForage/localForage)

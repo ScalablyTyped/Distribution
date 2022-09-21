@@ -1,17 +1,18 @@
 package typings.rxjs
 
-import typings.rxjs.typesMod.UnaryFunction
+import typings.rxjs.anon.FnCall
+import typings.rxjs.internalTypesMod.UnaryFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pipeMod {
   
-  @JSImport("rxjs/internal/util/pipe", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/util/pipe", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pipe[T](): UnaryFunction[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")().asInstanceOf[UnaryFunction[T, T]]
+  inline def pipe(): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")().asInstanceOf[FnCall]
   inline def pipe[T, A](fn1: UnaryFunction[T, A]): UnaryFunction[T, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any]).asInstanceOf[UnaryFunction[T, A]]
   inline def pipe[T, A, B](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B]): UnaryFunction[T, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, B]]
   inline def pipe[T, A, B, C](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B], fn3: UnaryFunction[B, C]): UnaryFunction[T, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, C]]
@@ -76,8 +77,6 @@ object pipeMod {
     fn7: UnaryFunction[F, G],
     fn8: UnaryFunction[G, H],
     fn9: UnaryFunction[H, I],
-    fns: (UnaryFunction[js.Any, js.Any])*
-  ): UnaryFunction[T, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any], fn9.asInstanceOf[js.Any], fns.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, js.Object]]
-  
-  inline def pipeFromArray[T, R](fns: js.Array[UnaryFunction[T, R]]): UnaryFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeFromArray")(fns.asInstanceOf[js.Any]).asInstanceOf[UnaryFunction[T, R]]
+    fns: (UnaryFunction[Any, Any])*
+  ): UnaryFunction[T, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")((List(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any], fn9.asInstanceOf[js.Any])).`++`(fns.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[UnaryFunction[T, Any]]
 }

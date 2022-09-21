@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "Button")
 @js.native
-class Button protected ()
+open class Button protected ()
   extends typings.officeUiFabricReact.libButtonMod.Button {
   def this(props: IButtonProps) = this()
 }

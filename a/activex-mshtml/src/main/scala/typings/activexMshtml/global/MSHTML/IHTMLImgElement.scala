@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLImgElement")
 @js.native
-/* private */ class IHTMLImgElement ()
+/* private */ open class IHTMLImgElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLImgElement {
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var alt: String = js.native
   
   /* CompleteClass */
-  var border: js.Any = js.native
+  var border: Any = js.native
   
   /* CompleteClass */
   override val complete: Boolean = js.native
@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var isMap: Boolean = js.native
   
   /* CompleteClass */
-  var loop: js.Any = js.native
+  var loop: Any = js.native
   
   /* CompleteClass */
   var lowsrc: String = js.native
@@ -69,13 +69,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val nameProp: String = js.native
   
   /* CompleteClass */
-  var onabort: js.Any = js.native
+  var onabort: Any = js.native
   
   /* CompleteClass */
-  var onerror: js.Any = js.native
+  var onerror: Any = js.native
   
   /* CompleteClass */
-  var onload: js.Any = js.native
+  var onload: Any = js.native
   
   /* CompleteClass */
   override val protocol: String = js.native

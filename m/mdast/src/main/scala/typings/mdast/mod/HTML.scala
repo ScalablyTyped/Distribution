@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTML
   extends StObject
-     with Literal
-     with BlockContent
-     with StaticPhrasingContent {
+     with Literal {
   
   @JSName("type")
   var type_HTML: html
 }
 object HTML {
   
-  inline def apply(value: js.Any): HTML = {
+  inline def apply(value: Any): HTML = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("html")
     __obj.asInstanceOf[HTML]

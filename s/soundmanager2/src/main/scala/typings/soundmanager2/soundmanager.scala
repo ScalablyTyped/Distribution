@@ -365,7 +365,7 @@ object soundmanager {
     var muted: Boolean = js.native
     
     // clearOnPosition(): void;
-    def onPosition(mescOffest: Double, callback: js.Object, has: js.Any): SMSound = js.native
+    def onPosition(mescOffest: Double, callback: js.Object, has: Any): SMSound = js.native
     
     // Events
     var onbufferchange: js.UndefOr[js.Function0[Unit]] = js.native
@@ -485,7 +485,7 @@ object soundmanager {
     
     def ok(): Boolean = js.native
     
-    def onPosition(id: String, msecOffset: Double, callback: js.Function1[/* eventPosition */ js.Any, Unit]): SMSound = js.native
+    def onPosition(id: String, msecOffset: Double, callback: js.Function1[/* eventPosition */ Any, Unit]): SMSound = js.native
     
     def pause(id: String): SMSound = js.native
     
@@ -557,13 +557,13 @@ object soundmanager {
       
       inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
       
-      inline def setRelatedVarargs(value: String*): Self = StObject.set(x, "related", js.Array(value :_*))
+      inline def setRelatedVarargs(value: String*): Self = StObject.set(x, "related", js.Array(value*))
       
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setType(value: js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   

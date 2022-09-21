@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ITextWriter extends StObject {
   
+  /* standard scripthost */
   def Close(): Unit
   
+  /* standard scripthost */
   def Write(s: java.lang.String): Unit
   
+  /* standard scripthost */
   def WriteLine(s: java.lang.String): Unit
 }
 object ITextWriter {

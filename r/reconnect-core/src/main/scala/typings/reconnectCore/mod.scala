@@ -46,21 +46,17 @@ object mod {
     
     def listen(opts: ArgType): this.type = js.native
     
+    def on(
+      event: connect | connection | error | fail,
+      cb: js.Function1[(/* err */ Any) | (/* con */ ConnectionType), Unit]
+    ): this.type = js.native
     @JSName("on")
     def on_backoff(
       event: backoff,
-      cb: js.Function3[/* n */ Double, /* delay */ Double, /* err */ js.UndefOr[js.Any], Unit]
+      cb: js.Function3[/* n */ Double, /* delay */ Double, /* err */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_connect(event: connect, cb: js.Function1[/* con */ ConnectionType, Unit]): this.type = js.native
-    @JSName("on")
-    def on_connection(event: connection, cb: js.Function1[/* con */ ConnectionType, Unit]): this.type = js.native
-    @JSName("on")
-    def on_disconnect(event: disconnect, cb: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, cb: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_fail(event: fail, cb: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def on_disconnect(event: disconnect, cb: js.Function1[/* err */ js.UndefOr[Any], Unit]): this.type = js.native
     @JSName("on")
     def on_reconnect(event: reconnect, cb: js.Function2[/* n */ Double, /* delay */ Double, Unit]): this.type = js.native
     

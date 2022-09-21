@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined storm-react-diagrams.storm-react-diagrams/dist/src/BaseEntity.BaseEvent<storm-react-diagrams.storm-react-diagrams/dist/src/models/LinkModel.LinkModel<storm-react-diagrams.storm-react-diagrams/dist/src/models/LinkModel.LinkModelListener>> & {  port :null | storm-react-diagrams.storm-react-diagrams/dist/src/models/PortModel.PortModel} */
 trait BaseEventLinkModelLinkMod extends StObject {
   
-  var entity: BaseEntity[BaseListener[js.Any]]
+  var entity: BaseEntity[BaseListener[Any]]
   
   var firing: Boolean
   
@@ -18,23 +18,18 @@ trait BaseEventLinkModelLinkMod extends StObject {
   
   var port: Null | PortModel
   
-  def stopPropagation(): js.Any
+  def stopPropagation(): Any
 }
 object BaseEventLinkModelLinkMod {
   
-  inline def apply(
-    entity: BaseEntity[BaseListener[js.Any]],
-    firing: Boolean,
-    id: String,
-    stopPropagation: () => js.Any
-  ): BaseEventLinkModelLinkMod = {
+  inline def apply(entity: BaseEntity[BaseListener[Any]], firing: Boolean, id: String, stopPropagation: () => Any): BaseEventLinkModelLinkMod = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], firing = firing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), port = null)
     __obj.asInstanceOf[BaseEventLinkModelLinkMod]
   }
   
   extension [Self <: BaseEventLinkModelLinkMod](x: Self) {
     
-    inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: BaseEntity[BaseListener[Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
     
@@ -44,6 +39,6 @@ object BaseEventLinkModelLinkMod {
     
     inline def setPortNull: Self = StObject.set(x, "port", null)
     
-    inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

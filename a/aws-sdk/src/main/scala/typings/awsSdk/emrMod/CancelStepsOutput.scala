@@ -24,6 +24,6 @@ object CancelStepsOutput {
     
     inline def setCancelStepsInfoListUndefined: Self = StObject.set(x, "CancelStepsInfoList", js.undefined)
     
-    inline def setCancelStepsInfoListVarargs(value: CancelStepsInfo*): Self = StObject.set(x, "CancelStepsInfoList", js.Array(value :_*))
+    inline def setCancelStepsInfoListVarargs(value: CancelStepsInfo*): Self = StObject.set(x, "CancelStepsInfoList", js.Array(value*))
   }
 }

@@ -11,12 +11,12 @@ JQuery multiselect plugin based on Twitter Bootstrap.
 | Full name          | bootstrap-multiselect |
 | Keywords           | js, css, less, bootstrap, jquery, multiselect |
 | # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 749607 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 72188.66666666667 |
+| # stars            | 3558.0 |
 
 ## Links
-- [Homepage](https://github.com/davidstutz/bootstrap-multiselect#readme)
+- [Homepage](http://davidstutz.github.io/bootstrap-multiselect/)
 - [Bugs](https://github.com/davidstutz/bootstrap-multiselect/issues)
 - [Repository](https://github.com/davidstutz/bootstrap-multiselect)
 - [Npm](https://www.npmjs.com/package/bootstrap-multiselect)

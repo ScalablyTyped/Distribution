@@ -11,7 +11,7 @@ object apexMod {
   
   @JSImport("jsforce/api/apex", "Apex")
   @js.native
-  class Apex protected () extends StObject {
+  open class Apex protected () extends StObject {
     def this(conn: Connection) = this()
     
     def del[T](path: String): js.Promise[T] = js.native

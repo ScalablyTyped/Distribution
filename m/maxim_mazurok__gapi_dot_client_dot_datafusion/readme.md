@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_datafusion
 
-Typings are for version 1.0.20201008
+Typings are for version 1.0.20220603
 
 ## Library description:
 TypeScript typings for Cloud Data Fusion API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Data Fusion API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.datafusion |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 777 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 554.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

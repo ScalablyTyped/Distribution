@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buttonDropdownMod {
   
-  @JSImport("reactstrap/lib/ButtonDropdown", JSImport.Default)
+  @JSImport("reactstrap/types/lib/ButtonDropdown", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DropdownProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DropdownProps, js.Object, Any]
   
-  type ButtonDropdown = Component[DropdownProps, js.Object, js.Any]
+  type ButtonDropdown = Component[DropdownProps, js.Object, Any]
 }

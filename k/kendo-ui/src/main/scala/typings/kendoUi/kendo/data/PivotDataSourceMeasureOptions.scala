@@ -25,6 +25,6 @@ object PivotDataSourceMeasureOptions {
     
     inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

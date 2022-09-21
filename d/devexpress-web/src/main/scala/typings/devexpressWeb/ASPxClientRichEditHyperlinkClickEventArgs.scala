@@ -19,7 +19,7 @@ trait ASPxClientRichEditHyperlinkClickEventArgs
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
   
   /**
     * Gets a value identifying the clicked hyperlink type.
@@ -35,7 +35,7 @@ object ASPxClientRichEditHyperlinkClickEventArgs {
   
   inline def apply(
     handled: Boolean,
-    htmlEvent: js.Any,
+    htmlEvent: Any,
     hyperlinkType: ASPxClientOfficeDocumentLinkType,
     targetUri: String
   ): ASPxClientRichEditHyperlinkClickEventArgs = {
@@ -47,7 +47,7 @@ object ASPxClientRichEditHyperlinkClickEventArgs {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
     inline def setHyperlinkType(value: ASPxClientOfficeDocumentLinkType): Self = StObject.set(x, "hyperlinkType", value.asInstanceOf[js.Any])
     

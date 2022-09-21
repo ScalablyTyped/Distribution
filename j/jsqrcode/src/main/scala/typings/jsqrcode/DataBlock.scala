@@ -30,7 +30,7 @@ object DataBlock {
     
     inline def setCodewords(value: js.Array[Double]): Self = StObject.set(x, "Codewords", value.asInstanceOf[js.Any])
     
-    inline def setCodewordsVarargs(value: Double*): Self = StObject.set(x, "Codewords", js.Array(value :_*))
+    inline def setCodewordsVarargs(value: Double*): Self = StObject.set(x, "Codewords", js.Array(value*))
     
     inline def setNumDataCodewords(value: Double): Self = StObject.set(x, "NumDataCodewords", value.asInstanceOf[js.Any])
   }

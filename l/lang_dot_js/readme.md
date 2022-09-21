@@ -10,10 +10,10 @@ Laravel's Lang in JavaScript!
 | ------------------ | :-------------: |
 | Full name          | lang.js |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 237691 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32260.0 |
+| # stars            | 241.0 |
 
 ## Links
 - [Homepage](https://github.com/rmariuzzo/Lang.js#readme)

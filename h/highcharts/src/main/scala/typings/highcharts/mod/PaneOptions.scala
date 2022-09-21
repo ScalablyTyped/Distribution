@@ -58,13 +58,13 @@ object PaneOptions {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBackgroundVarargs(value: PaneBackgroundOptions*): Self = StObject.set(x, "background", js.Array(value :_*))
+    inline def setBackgroundVarargs(value: PaneBackgroundOptions*): Self = StObject.set(x, "background", js.Array(value*))
     
     inline def setCenter(value: js.Array[String | Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setCenterVarargs(value: (String | Double)*): Self = StObject.set(x, "center", js.Array(value :_*))
+    inline def setCenterVarargs(value: (String | Double)*): Self = StObject.set(x, "center", js.Array(value*))
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     

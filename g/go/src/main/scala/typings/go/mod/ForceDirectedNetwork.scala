@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty network.
   */
-class ForceDirectedNetwork () extends LayoutNetwork
+open class ForceDirectedNetwork () extends LayoutNetwork

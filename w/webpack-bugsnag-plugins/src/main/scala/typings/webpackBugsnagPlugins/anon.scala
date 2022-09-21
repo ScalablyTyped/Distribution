@@ -14,13 +14,13 @@ object anon {
   
   trait Debug extends StObject {
     
-    var debug: js.UndefOr[js.Any] = js.undefined
+    var debug: js.UndefOr[Any] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
-    var info: js.UndefOr[js.Any] = js.undefined
+    var info: js.UndefOr[Any] = js.undefined
     
-    var warn: js.UndefOr[js.Any] = js.undefined
+    var warn: js.UndefOr[Any] = js.undefined
   }
   object Debug {
     
@@ -31,19 +31,19 @@ object anon {
     
     extension [Self <: Debug](x: Self) {
       
-      inline def setDebug(value: js.Any): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Any): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
       inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      inline def setWarn(value: js.Any): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Any): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
       inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }

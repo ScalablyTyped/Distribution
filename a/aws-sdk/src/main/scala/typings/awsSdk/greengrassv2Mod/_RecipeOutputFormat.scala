@@ -1,0 +1,7 @@
+package typings.awsSdk.greengrassv2Mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait _RecipeOutputFormat extends StObject

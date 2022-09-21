@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.FileConverter")
 @js.native
-/* private */ class FileConverter ()
+/* private */ open class FileConverter ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.FileConverter {
   

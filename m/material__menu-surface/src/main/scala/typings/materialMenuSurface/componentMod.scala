@@ -1,10 +1,10 @@
 package typings.materialMenuSurface
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialMenuSurface.anon.PartialMDCMenuDistance
 import typings.materialMenuSurface.constantsMod.Corner
 import typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +13,30 @@ object componentMod {
   
   @JSImport("@material/menu-surface/component", "MDCMenuSurface")
   @js.native
-  class MDCMenuSurface protected () extends MDCComponent[MDCMenuSurfaceFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCMenuSurfaceFoundation, args: js.Any*) = this()
+  open class MDCMenuSurface protected () extends MDCComponent[MDCMenuSurfaceFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCMenuSurfaceFoundation, args: Any*) = this()
     
-    var anchorElement: Element | Null = js.native
+    var anchorElement: typings.std.Element | Null = js.native
     
     def close(): Unit = js.native
     def close(skipRestoreFocus: Boolean): Unit = js.native
+    
+    /* private */ var deregisterBodyClickListener: Any = js.native
+    
+    /* private */ var handleBodyClick: Any = js.native
+    
+    /* private */ var handleKeydown: Any = js.native
     
     def isOpen(): Boolean = js.native
     
     def open(): Unit = js.native
     
+    /* private */ var previousFocus: Any = js.native
+    
     def quickOpen_=(quickOpen: Boolean): Unit = js.native
+    
+    /* private */ var registerBodyClickListener: Any = js.native
     
     /** Sets the absolute x/y position to position based on. Requires the menu to be hoisted. */
     def setAbsolutePosition(x: Double, y: Double): Unit = js.native
@@ -45,7 +55,7 @@ object componentMod {
     def setIsHoisted(isHoisted: Boolean): Unit = js.native
     
     /** Sets the element that the menu-surface is anchored to. */
-    def setMenuSurfaceAnchorElement(element: Element): Unit = js.native
+    def setMenuSurfaceAnchorElement(element: typings.std.Element): Unit = js.native
   }
   /* static members */
   object MDCMenuSurface {
@@ -54,11 +64,11 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCMenuSurface = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCMenuSurface]
+    inline def attachTo(root: typings.std.Element): MDCMenuSurface = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCMenuSurface]
   }
   
   type MDCMenuSurfaceFactory = js.Function2[
-    /* el */ Element, 
+    /* el */ typings.std.Element, 
     /* foundation */ js.UndefOr[MDCMenuSurfaceFoundation], 
     MDCMenuSurface
   ]

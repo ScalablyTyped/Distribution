@@ -76,6 +76,6 @@ object CreateFpgaImageRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

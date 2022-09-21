@@ -89,7 +89,7 @@ trait World
   
   var stepnumber: Double = js.native
   
-  var subsystems: js.Array[js.Any] = js.native
+  var subsystems: js.Array[Any] = js.native
   
   var time: Double = js.native
 }

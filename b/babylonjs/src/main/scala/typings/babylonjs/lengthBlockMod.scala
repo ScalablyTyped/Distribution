@@ -10,7 +10,7 @@ object lengthBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/lengthBlock", "LengthBlock")
   @js.native
-  class LengthBlock protected () extends NodeMaterialBlock {
+  open class LengthBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new LengthBlock
       * @param name defines the block name

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for the Instance resource.
-  */
 trait SchemaInstance extends StObject {
   
   /**
     * URI which shows where a user can acquire this instance.
     */
-  var acquisitionUri: js.UndefOr[String] = js.undefined
+  var acquisitionUri: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Platform dependent details for Android.
@@ -25,32 +22,29 @@ trait SchemaInstance extends StObject {
   var iosInstance: js.UndefOr[SchemaInstanceIosDetails] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#instance.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#instance`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Localized display name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The platform type. Possible values are:   - &quot;ANDROID&quot; -
-    * Instance is for Android.  - &quot;IOS&quot; - Instance is for iOS  -
-    * &quot;WEB_APP&quot; - Instance is for Web App.
+    * The platform type.
     */
-  var platformType: js.UndefOr[String] = js.undefined
+  var platformType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Flag to show if this game instance supports realtime play.
     */
-  var realtimePlay: js.UndefOr[Boolean] = js.undefined
+  var realtimePlay: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Flag to show if this game instance supports turn based play.
     */
-  var turnBasedPlay: js.UndefOr[Boolean] = js.undefined
+  var turnBasedPlay: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Platform dependent details for Web.
@@ -68,6 +62,8 @@ object SchemaInstance {
     
     inline def setAcquisitionUri(value: String): Self = StObject.set(x, "acquisitionUri", value.asInstanceOf[js.Any])
     
+    inline def setAcquisitionUriNull: Self = StObject.set(x, "acquisitionUri", null)
+    
     inline def setAcquisitionUriUndefined: Self = StObject.set(x, "acquisitionUri", js.undefined)
     
     inline def setAndroidInstance(value: SchemaInstanceAndroidDetails): Self = StObject.set(x, "androidInstance", value.asInstanceOf[js.Any])
@@ -80,21 +76,31 @@ object SchemaInstance {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
+    inline def setPlatformTypeNull: Self = StObject.set(x, "platformType", null)
+    
     inline def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
     inline def setRealtimePlay(value: Boolean): Self = StObject.set(x, "realtimePlay", value.asInstanceOf[js.Any])
     
+    inline def setRealtimePlayNull: Self = StObject.set(x, "realtimePlay", null)
+    
     inline def setRealtimePlayUndefined: Self = StObject.set(x, "realtimePlay", js.undefined)
     
     inline def setTurnBasedPlay(value: Boolean): Self = StObject.set(x, "turnBasedPlay", value.asInstanceOf[js.Any])
+    
+    inline def setTurnBasedPlayNull: Self = StObject.set(x, "turnBasedPlay", null)
     
     inline def setTurnBasedPlayUndefined: Self = StObject.set(x, "turnBasedPlay", js.undefined)
     

@@ -38,7 +38,7 @@ object System {
   
   trait Declare extends StObject {
     
-    var execute: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var execute: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var setters: js.UndefOr[js.Array[SetterFn]] = js.undefined
   }
@@ -51,7 +51,7 @@ object System {
     
     extension [Self <: Declare](x: Self) {
       
-      inline def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
       inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
       
@@ -59,25 +59,25 @@ object System {
       
       inline def setSettersUndefined: Self = StObject.set(x, "setters", js.undefined)
       
-      inline def setSettersVarargs(value: SetterFn*): Self = StObject.set(x, "setters", js.Array(value :_*))
+      inline def setSettersVarargs(value: SetterFn*): Self = StObject.set(x, "setters", js.Array(value*))
     }
   }
   
   type DeclareFn = js.Function2[/* _export */ ExportFn, /* _context */ Context, Declare]
   
-  type ExecuteFn = js.Function0[js.Any]
+  type ExecuteFn = js.Function0[Any]
   
   @js.native
   trait ExportFn extends StObject {
     
-    def apply(exportName: String, value: js.Any): Unit = js.native
+    def apply(exportName: String, value: Any): Unit = js.native
     def apply(exports: js.Object): Unit = js.native
   }
   
   type GetFn = GetFnModule | GetFnGeneric
   
   // tslint:disable-next-line no-unnecessary-generics
-  type GetFnGeneric = js.Function1[/* moduleId */ String, js.Any]
+  type GetFnGeneric = js.Function1[/* moduleId */ String, Any]
   
   type GetFnModule = js.Function1[/* moduleId */ String, Module]
   
@@ -86,9 +86,9 @@ object System {
   
   trait Module
     extends StObject
-       with /* exportName */ StringDictionary[js.Any] {
+       with /* exportName */ StringDictionary[Any] {
     
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
   }
   object Module {
     
@@ -99,13 +99,13 @@ object System {
     
     extension [Self <: Module](x: Self) {
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     }
   }
   
-  type SetterFn = js.Function1[/* moduleValue */ Module, js.Any]
+  type SetterFn = js.Function1[/* moduleValue */ Module, Any]
   
   type UpdateModuleFn = js.Function0[Unit]
 }

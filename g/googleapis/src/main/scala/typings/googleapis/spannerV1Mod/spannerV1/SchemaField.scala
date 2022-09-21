@@ -4,21 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message representing a single field of a struct.
-  */
 trait SchemaField extends StObject {
   
   /**
-    * The name of the field. For reads, this is the column name. For SQL
-    * queries, it is the column alias (e.g., `&quot;Word&quot;` in the query
-    * `&quot;SELECT &#39;hello&#39; AS Word&quot;`), or the column name (e.g.,
-    * `&quot;ColName&quot;` in the query `&quot;SELECT ColName FROM
-    * Table&quot;`). Some columns might have an empty name (e.g., !&quot;SELECT
-    * UPPER(ColName)&quot;`). Note that a query result can contain multiple
-    * fields with the same name.
+    * The name of the field. For reads, this is the column name. For SQL queries, it is the column alias (e.g., `"Word"` in the query `"SELECT 'hello' AS Word"`), or the column name (e.g., `"ColName"` in the query `"SELECT ColName FROM Table"`). Some columns might have an empty name (e.g., `"SELECT UPPER(ColName)"`). Note that a query result can contain multiple fields with the same name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The type of the field.
@@ -35,6 +26,8 @@ object SchemaField {
   extension [Self <: SchemaField](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     

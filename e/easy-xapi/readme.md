@@ -9,10 +9,10 @@ express api x-headers service
 | ------------------ | :-------------: |
 | Full name          | easy-xapi |
 | Keywords           | express, api, x-headers, service |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 792 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 79.33333333333333 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/DeadAlready/easy-xapi)

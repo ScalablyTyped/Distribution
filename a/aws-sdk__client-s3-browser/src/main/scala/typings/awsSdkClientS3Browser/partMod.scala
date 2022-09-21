@@ -8,5 +8,5 @@ object partMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_Part", "_Part")
   @js.native
-  val Part: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Part: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

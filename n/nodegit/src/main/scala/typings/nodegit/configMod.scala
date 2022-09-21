@@ -16,7 +16,7 @@ object configMod {
   
   @JSImport("nodegit/config", "Config")
   @js.native
-  class Config () extends StObject {
+  open class Config () extends StObject {
     
     def deleteEntry(name: String): Double = js.native
     
@@ -35,13 +35,13 @@ object configMod {
     // the docs says Buf but it's actually a string
     def getStringBuf(name: String): js.Promise[Buf] = js.native
     
-    def lock(transaction: js.Any): Double = js.native
+    def lock(transaction: Any): Double = js.native
     
     def setBool(name: String, value: Double): js.Promise[Double] = js.native
     
     def setInt32(name: String, value: Double): js.Promise[Double] = js.native
     
-    def setInt64(name: String, value: Double): Double = js.native
+    def setInt64(name: String, value: Double): js.Promise[Double] = js.native
     
     def setMultivar(name: String, regexp: String, value: String): js.Promise[Double] = js.native
     
@@ -114,7 +114,7 @@ object configMod {
   
   @JSImport("nodegit/config", "ConfigEntry")
   @js.native
-  class ConfigEntry () extends StObject {
+  open class ConfigEntry () extends StObject {
     
     // the documentation says those are variables,
     // but in reality they are functions

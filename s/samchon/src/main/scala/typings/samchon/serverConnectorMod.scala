@@ -13,7 +13,7 @@ object serverConnectorMod {
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
   - typings.samchon.iserverconnectorMod.IServerConnector because var conflicts: onClose. Inlined onConnect, connect */ @JSImport("samchon/protocol/communicator/server_connector/ServerConnector", "ServerConnector")
   @js.native
-  class ServerConnector protected () extends Communicator {
+  open class ServerConnector protected () extends Communicator {
     /**
       * Construct from *listener*.
       *
@@ -25,12 +25,12 @@ object serverConnectorMod {
     /**
       * @hidden
       */
-    /* private */ var _Handle_connect: js.Any = js.native
+    /* private */ var _Handle_connect: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var _Send_dummy_packet_repeatedly: js.Any = js.native
+    /* private */ var _Send_dummy_packet_repeatedly: Any = js.native
     
     /**
       * @inheritdoc

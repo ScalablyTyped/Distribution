@@ -17,7 +17,7 @@ trait BudgetedAndActualAmounts extends StObject {
   var BudgetedAmount: js.UndefOr[Spend] = js.undefined
   
   /**
-    * The time period covered by this budget comparison.
+    * The time period that's covered by this budget comparison.
     */
   var TimePeriod: js.UndefOr[typings.awsSdk.budgetsMod.TimePeriod] = js.undefined
 }

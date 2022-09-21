@@ -63,7 +63,7 @@ object DescribeScheduledInstanceAvailabilityRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setFirstSlotStartTimeRange(value: SlotDateTimeRangeRequest): Self = StObject.set(x, "FirstSlotStartTimeRange", value.asInstanceOf[js.Any])
     

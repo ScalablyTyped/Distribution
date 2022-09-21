@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.VertexOutputBlock")
 @js.native
-class VertexOutputBlock protected ()
+open class VertexOutputBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.VertexOutputBlock {
   /**

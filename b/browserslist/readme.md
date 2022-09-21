@@ -1,7 +1,7 @@
 
 # Scala.js typings for browserslist
 
-Typings are for version 4.8
+Typings are for version 4.21.4
 
 ## Library description:
 Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-env-preset
@@ -10,10 +10,10 @@ Share target browsers between different front-end tools, like Autoprefixer, Styl
 | ------------------ | :-------------: |
 | Full name          | browserslist |
 | Keywords           | caniuse, browsers, target |
-| # releases         | 47 |
-| # dependents       | 641 |
-| # downloads        | 1101896267 |
-| # stars            | 23 |
+| # releases         | 39 |
+| # dependents       | 0.0 |
+| # downloads        | 1.69796739E8 |
+| # stars            | 11124.0 |
 
 ## Links
 - [Homepage](https://github.com/browserslist/browserslist#readme)
@@ -24,7 +24,7 @@ Share target browsers between different front-end tools, like Autoprefixer, Styl
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

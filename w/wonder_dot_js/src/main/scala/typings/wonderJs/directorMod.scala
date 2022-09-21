@@ -10,7 +10,7 @@ object directorMod {
   
   @JSImport("wonder.js/dist/es2015/core/Director", "Director")
   @js.native
-  class Director () extends StObject {
+  open class Director () extends StObject {
     
     val elapsed: Double = js.native
     
@@ -42,7 +42,7 @@ object directorMod {
     
     def stop(): Unit = js.native
     
-    val view: js.Any = js.native
+    val view: Any = js.native
   }
   /* static members */
   object Director {
@@ -51,6 +51,6 @@ object directorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
   }
 }

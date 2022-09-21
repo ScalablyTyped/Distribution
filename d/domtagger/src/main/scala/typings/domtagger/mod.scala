@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(opts: Options): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement]]
-  inline def apply(opts: SVGOptions): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement]]
+  inline def apply(opts: Options): js.Function2[/* template */ TemplateStringsArray, /* repeated */ Any, HTMLElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ Any, HTMLElement]]
+  inline def apply(opts: SVGOptions): js.Function2[/* template */ TemplateStringsArray, /* repeated */ Any, SVGElement] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ Any, SVGElement]]
   
   @JSImport("domtagger", JSImport.Namespace)
   @js.native
@@ -29,7 +29,7 @@ object mod {
       * @param node The node
       * @param childNodes
       */
-    def any(node: Node, childNodes: js.Array[ChildNode]): js.Function1[/* markup */ js.Any, Unit]
+    def any(node: Node, childNodes: js.Array[ChildNode]): js.Function1[/* markup */ Any, Unit]
     
     /**
       * Called when the parsed result is an attribute node.
@@ -52,7 +52,7 @@ object mod {
       * }
       * ```
       */
-    def attribute(element: Element, name: String, attribute: Attr): js.Function1[/* value */ js.Any, Unit]
+    def attribute(element: Element, name: String, attribute: Attr): js.Function1[/* value */ Any, Unit]
     
     /**
       * Used to provide a custom algorithm for converting a template
@@ -74,7 +74,7 @@ object mod {
       * }
       * ```
       */
-    def text(node: Node): js.Function1[/* textContent */ js.Any, Unit]
+    def text(node: Node): js.Function1[/* textContent */ Any, Unit]
     
     /**
       * Used to postprocess the result of `convert`.
@@ -95,9 +95,9 @@ object mod {
   object Options {
     
     inline def apply(
-      any: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ js.Any, Unit],
-      attribute: (Element, String, Attr) => js.Function1[/* value */ js.Any, Unit],
-      text: Node => js.Function1[/* textContent */ js.Any, Unit]
+      any: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ Any, Unit],
+      attribute: (Element, String, Attr) => js.Function1[/* value */ Any, Unit],
+      text: Node => js.Function1[/* textContent */ Any, Unit]
     ): Options = {
       val __obj = js.Dynamic.literal(any = js.Any.fromFunction2(any), attribute = js.Any.fromFunction3(attribute), text = js.Any.fromFunction1(text))
       __obj.asInstanceOf[Options]
@@ -105,15 +105,15 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAny(value: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ js.Any, Unit]): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
+      inline def setAny(value: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ Any, Unit]): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
       
-      inline def setAttribute(value: (Element, String, Attr) => js.Function1[/* value */ js.Any, Unit]): Self = StObject.set(x, "attribute", js.Any.fromFunction3(value))
+      inline def setAttribute(value: (Element, String, Attr) => js.Function1[/* value */ Any, Unit]): Self = StObject.set(x, "attribute", js.Any.fromFunction3(value))
       
       inline def setConvert(value: /* template */ TemplateStringsArray => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
       
       inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
       
-      inline def setText(value: Node => js.Function1[/* textContent */ js.Any, Unit]): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: Node => js.Function1[/* textContent */ Any, Unit]): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
       
       inline def setTransform(value: /* markup */ String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
@@ -135,9 +135,9 @@ object mod {
   object SVGOptions {
     
     inline def apply(
-      any: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ js.Any, Unit],
-      attribute: (Element, String, Attr) => js.Function1[/* value */ js.Any, Unit],
-      text: Node => js.Function1[/* textContent */ js.Any, Unit]
+      any: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ Any, Unit],
+      attribute: (Element, String, Attr) => js.Function1[/* value */ Any, Unit],
+      text: Node => js.Function1[/* textContent */ Any, Unit]
     ): SVGOptions = {
       val __obj = js.Dynamic.literal(any = js.Any.fromFunction2(any), attribute = js.Any.fromFunction3(attribute), text = js.Any.fromFunction1(text))
       __obj.updateDynamic("type")("svg")

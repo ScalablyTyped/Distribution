@@ -1,7 +1,7 @@
 
 # Scala.js typings for stemmer
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Porter Stemmer algorithm
@@ -10,10 +10,10 @@ Porter Stemmer algorithm
 | ------------------ | :-------------: |
 | Full name          | stemmer |
 | Keywords           | martin, porter, stemmer, algorithm, cli, bin |
-| # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 386669 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40604.333333333336 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://words.github.io/stemmer/)
@@ -24,7 +24,7 @@ Porter Stemmer algorithm
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

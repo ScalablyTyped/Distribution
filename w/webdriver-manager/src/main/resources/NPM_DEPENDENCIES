@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webdriver-manager" : "12.1.7"
+      "webdriver-manager" : "12.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "webdriver-manager" : "12.1.7"
+      "webdriver-manager" : "12.1.8"
     }
   ],
   "compile-devDependencies" : [

@@ -27,10 +27,10 @@ object ResultRow {
     
     inline def setGroupedBys(value: ListOfResultRowValue): Self = StObject.set(x, "GroupedBys", value.asInstanceOf[js.Any])
     
-    inline def setGroupedBysVarargs(value: ResultRowValue*): Self = StObject.set(x, "GroupedBys", js.Array(value :_*))
+    inline def setGroupedBysVarargs(value: ResultRowValue*): Self = StObject.set(x, "GroupedBys", js.Array(value*))
     
     inline def setValues(value: ListOfResultRowValue): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: ResultRowValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ResultRowValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

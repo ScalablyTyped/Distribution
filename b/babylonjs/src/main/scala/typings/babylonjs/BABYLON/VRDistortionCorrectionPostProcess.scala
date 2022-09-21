@@ -9,17 +9,17 @@ trait VRDistortionCorrectionPostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _distortionFactors: js.Any = js.native
+  /* private */ var _distortionFactors: Any = js.native
   
-  /* private */ var _isRightEye: js.Any = js.native
+  /* private */ var _isRightEye: Any = js.native
   
-  /* private */ var _lensCenter: js.Any = js.native
+  /* private */ var _lensCenter: Any = js.native
   
-  /* private */ var _lensCenterOffset: js.Any = js.native
+  /* private */ var _lensCenterOffset: Any = js.native
   
-  /* private */ var _postProcessScaleFactor: js.Any = js.native
+  /* private */ var _postProcessScaleFactor: Any = js.native
   
-  /* private */ var _scaleFactor: js.Any = js.native
+  /* private */ var _scaleFactor: Any = js.native
   
-  /* private */ var _scaleIn: js.Any = js.native
+  /* private */ var _scaleIn: Any = js.native
 }

@@ -16,7 +16,7 @@ trait PrintHandlers extends StObject {
     * A hook used to check if an emit notification is required for a node.
     * @param node The node to emit.
     */
-  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ js.UndefOr[Node], Boolean]] = js.undefined
+  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.undefined
   
   /**
     * A hook used by the Printer to provide notifications prior to emitting a node. A
@@ -39,8 +39,8 @@ trait PrintHandlers extends StObject {
   var onEmitNode: js.UndefOr[
     js.Function3[
       /* hint */ EmitHint, 
-      /* node */ js.UndefOr[Node], 
-      /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], Unit], 
+      /* node */ Node, 
+      /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ Node, Unit], 
       Unit
     ]
   ] = js.undefined
@@ -76,12 +76,12 @@ object PrintHandlers {
     
     inline def setHasGlobalNameUndefined: Self = StObject.set(x, "hasGlobalName", js.undefined)
     
-    inline def setIsEmitNotificationEnabled(value: /* node */ js.UndefOr[Node] => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
+    inline def setIsEmitNotificationEnabled(value: /* node */ Node => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
     
     inline def setIsEmitNotificationEnabledUndefined: Self = StObject.set(x, "isEmitNotificationEnabled", js.undefined)
     
     inline def setOnEmitNode(
-      value: (/* hint */ EmitHint, /* node */ js.UndefOr[Node], /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], Unit]) => Unit
+      value: (/* hint */ EmitHint, /* node */ Node, /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit
     ): Self = StObject.set(x, "onEmitNode", js.Any.fromFunction3(value))
     
     inline def setOnEmitNodeUndefined: Self = StObject.set(x, "onEmitNode", js.undefined)

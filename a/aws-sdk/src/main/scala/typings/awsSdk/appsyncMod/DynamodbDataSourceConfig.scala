@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DynamodbDataSourceConfig extends StObject {
   
   /**
-    * The AWS Region.
+    * The Amazon Web Services Region.
     */
   var awsRegion: String
   
   /**
-    * The DeltaSyncConfig for a versioned datasource.
+    * The DeltaSyncConfig for a versioned data source.
     */
   var deltaSyncConfig: js.UndefOr[DeltaSyncConfig] = js.undefined
   

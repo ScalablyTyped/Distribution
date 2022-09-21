@@ -29,7 +29,7 @@ object ListFunctionsResponse {
     
     inline def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
     
-    inline def setFunctionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "Functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "Functions", js.Array(value*))
     
     inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

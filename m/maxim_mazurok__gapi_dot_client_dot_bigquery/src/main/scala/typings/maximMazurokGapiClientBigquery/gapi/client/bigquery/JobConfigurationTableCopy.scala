@@ -17,7 +17,7 @@ trait JobConfigurationTableCopy extends StObject {
   var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
   /** [Optional] The time when the destination table expires. Expired tables will be deleted and their storage reclaimed. */
-  var destinationExpirationTime: js.UndefOr[js.Any] = js.undefined
+  var destinationExpirationTime: js.UndefOr[Any] = js.undefined
   
   /** [Required] The destination table */
   var destinationTable: js.UndefOr[TableReference] = js.undefined
@@ -56,7 +56,7 @@ object JobConfigurationTableCopy {
     
     inline def setDestinationEncryptionConfigurationUndefined: Self = StObject.set(x, "destinationEncryptionConfiguration", js.undefined)
     
-    inline def setDestinationExpirationTime(value: js.Any): Self = StObject.set(x, "destinationExpirationTime", value.asInstanceOf[js.Any])
+    inline def setDestinationExpirationTime(value: Any): Self = StObject.set(x, "destinationExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setDestinationExpirationTimeUndefined: Self = StObject.set(x, "destinationExpirationTime", js.undefined)
     
@@ -76,7 +76,7 @@ object JobConfigurationTableCopy {
     
     inline def setSourceTablesUndefined: Self = StObject.set(x, "sourceTables", js.undefined)
     
-    inline def setSourceTablesVarargs(value: TableReference*): Self = StObject.set(x, "sourceTables", js.Array(value :_*))
+    inline def setSourceTablesVarargs(value: TableReference*): Self = StObject.set(x, "sourceTables", js.Array(value*))
     
     inline def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
     

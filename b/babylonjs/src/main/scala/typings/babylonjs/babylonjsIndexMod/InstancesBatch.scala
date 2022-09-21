@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Meshes/index", "_InstancesBatch")
 @js.native
-class InstancesBatch ()
+open class InstancesBatch ()
   extends typings.babylonjs.meshMod.InstancesBatch

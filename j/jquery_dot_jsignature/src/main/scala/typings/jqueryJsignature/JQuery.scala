@@ -24,7 +24,7 @@ trait JQuery extends StObject {
     * @see http://willowsystems.github.io/jSignature/#/about/
     *
     */
-  def jSignature(command: String): js.Any = js.native
+  def jSignature(command: String): Any = js.native
   /**
     * Arguments vary per command. When provided, command is expected to be a string with a command for jSignature. Commands supported at this time: init, reset, getData, setData, listPlugins
     * @summary
@@ -39,5 +39,5 @@ trait JQuery extends StObject {
     * @see http://willowsystems.github.io/jSignature/#/about/
     *
     */
-  def jSignature(command: String, arg: String*): js.Any = js.native
+  def jSignature(command: String, arg: String*): Any = js.native
 }

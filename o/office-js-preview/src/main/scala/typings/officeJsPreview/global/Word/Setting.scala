@@ -6,15 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a setting of the add-in.
   *
+  * @remarks
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Word.Setting")
 @js.native
-class Setting ()
+open class Setting ()
   extends StObject
      with typings.officeJsPreview.Word.Setting {
   

@@ -16,7 +16,7 @@ trait Content[ResponseType] extends StObject {
   
   var headers: js.UndefOr[js.Object] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function1[/* response */ STResponse[ResponseType], js.Any]] = js.undefined
+  var onComplete: js.UndefOr[js.Function1[/* response */ STResponse[ResponseType], Any]] = js.undefined
   
   var overrideMimeType: js.UndefOr[String] = js.undefined
   
@@ -47,7 +47,7 @@ object Content {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setOnComplete(value: /* response */ STResponse[ResponseType] => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    inline def setOnComplete(value: /* response */ STResponse[ResponseType] => Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     

@@ -2,35 +2,32 @@ package typings.pubnub.anon
 
 import typings.pubnub.pubnubStrings.channel
 import typings.pubnub.pubnubStrings.delete
-import typings.pubnub.pubnubStrings.membership
-import typings.pubnub.pubnubStrings.set
-import typings.pubnub.pubnubStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EventType extends StObject {
   
-  var data: js.Object
+  var data: IdString
   
-  var event: set | delete
+  var event: delete
   
-  var `type`: uuid | channel | membership
+  var `type`: channel
 }
 object EventType {
   
-  inline def apply(data: js.Object, event: set | delete, `type`: uuid | channel | membership): EventType = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  inline def apply(data: IdString): EventType = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "delete")
+    __obj.updateDynamic("type")("channel")
     __obj.asInstanceOf[EventType]
   }
   
   extension [Self <: EventType](x: Self) {
     
-    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IdString): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setEvent(value: set | delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setType(value: uuid | channel | membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

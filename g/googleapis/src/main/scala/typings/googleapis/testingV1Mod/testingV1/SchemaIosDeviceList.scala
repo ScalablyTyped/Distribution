@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of iOS device configurations in which the test is to be executed.
-  */
 trait SchemaIosDeviceList extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaIosDeviceList {
     
     inline def setIosDevicesUndefined: Self = StObject.set(x, "iosDevices", js.undefined)
     
-    inline def setIosDevicesVarargs(value: SchemaIosDevice*): Self = StObject.set(x, "iosDevices", js.Array(value :_*))
+    inline def setIosDevicesVarargs(value: SchemaIosDevice*): Self = StObject.set(x, "iosDevices", js.Array(value*))
   }
 }

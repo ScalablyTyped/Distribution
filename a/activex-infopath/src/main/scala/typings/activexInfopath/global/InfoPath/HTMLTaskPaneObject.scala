@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.HTMLTaskPaneObject")
 @js.native
-/* private */ class HTMLTaskPaneObject ()
+/* private */ open class HTMLTaskPaneObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.HTMLTaskPaneObject {
   
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val HTMLDocument: IHTMLDocument2 = js.native
   
   /* CompleteClass */
-  override def HTMLWindow(pvarIndex: js.Any): js.Any = js.native
+  override def HTMLWindow(pvarIndex: Any): Any = js.native
   /* CompleteClass */
   @JSName("HTMLWindow")
   override val HTMLWindow_Original: IHTMLWindow2 = js.native

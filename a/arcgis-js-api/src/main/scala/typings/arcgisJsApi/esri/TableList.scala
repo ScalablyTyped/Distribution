@@ -23,7 +23,7 @@ trait TableList
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#listItemCreatedFunction)
     */
-  def listItemCreatedFunction(event: js.Any): Unit = js.native
+  def listItemCreatedFunction(event: Any): scala.Unit = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html).
     *
@@ -33,14 +33,16 @@ trait TableList
   var listItemCreatedFunction_Original: TableListListItemCreatedHandler = js.native
   
   /**
-    * A reference to a [web map](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html) containing the tables.
+    * A reference to a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) containing the tables.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#map)
     */
-  var map: WebMap = js.native
+  var map: Map | WebMap = js.native
   
   /**
     * Indicates whether more than one [list item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html) can be selected by a user at a single time.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#multipleSelectionEnabled)
     */
@@ -59,6 +61,8 @@ trait TableList
   /**
     * Indicates whether [list items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html) may be selected by the user.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#selectionEnabled)
     */
   var selectionEnabled: Boolean = js.native
@@ -75,8 +79,8 @@ trait TableList
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#triggerAction)
     */
-  def triggerAction(action: ActionButton, item: TableListListItem): Unit = js.native
-  def triggerAction(action: ActionToggle, item: TableListListItem): Unit = js.native
+  def triggerAction(action: ActionButton, item: TableListListItem): scala.Unit = js.native
+  def triggerAction(action: ActionToggle, item: TableListListItem): scala.Unit = js.native
   
   /**
     * The view model for this widget.

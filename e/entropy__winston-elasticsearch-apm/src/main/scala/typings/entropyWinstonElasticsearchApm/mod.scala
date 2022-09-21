@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("@entropy/winston-elasticsearch-apm", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ElasticsearchApm {
+  open class ^ protected () extends ElasticsearchApm {
     def this(opts: ElasticsearchApmOptions) = this()
   }
   
@@ -19,7 +19,7 @@ object mod {
     extends typings.winstonTransport.mod.^ {
     
     @JSName("log")
-    def log_MElasticsearchApm(info: js.Any, next: js.Function0[Unit]): js.Any = js.native
+    def log_MElasticsearchApm(info: Any, next: js.Function0[Unit]): Any = js.native
   }
   
   trait ElasticsearchApmOptions

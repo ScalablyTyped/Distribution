@@ -14,9 +14,7 @@ object mod {
   
   inline def quadtree[T](): Quadtree_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")().asInstanceOf[Quadtree_[T]]
   inline def quadtree[T](data: js.Array[T]): Quadtree_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any]).asInstanceOf[Quadtree_[T]]
-  inline def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
   inline def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
-  inline def quadtree[T](data: js.Array[T], x: Unit, y: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
   
   @js.native
   trait QuadtreeInternalNode[T]

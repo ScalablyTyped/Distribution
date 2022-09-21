@@ -30,4 +30,9 @@ object global {
     * })
     */
   inline def TileReduce(options: Options): Events = js.Dynamic.global.applyDynamic("TileReduce")(options.asInstanceOf[js.Any]).asInstanceOf[Events]
+  
+  @JSGlobal("mapOptions")
+  @js.native
+  def mapOptions: Options = js.native
+  inline def mapOptions_=(x: Options): Unit = js.Dynamic.global.updateDynamic("mapOptions")(x.asInstanceOf[js.Any])
 }

@@ -42,4 +42,16 @@ object seleniumWebdriverStrings {
     extends StObject
        with Level
   inline def WARN: WARN = "WARN".asInstanceOf[WARN]
+  
+  @js.native
+  sealed trait denied extends StObject
+  inline def denied: denied = "denied".asInstanceOf[denied]
+  
+  @js.native
+  sealed trait granted extends StObject
+  inline def granted: granted = "granted".asInstanceOf[granted]
+  
+  @js.native
+  sealed trait prompt extends StObject
+  inline def prompt: prompt = "prompt".asInstanceOf[prompt]
 }

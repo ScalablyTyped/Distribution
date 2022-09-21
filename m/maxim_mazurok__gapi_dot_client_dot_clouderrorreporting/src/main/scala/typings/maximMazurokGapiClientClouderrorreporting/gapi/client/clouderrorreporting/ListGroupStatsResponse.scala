@@ -31,7 +31,7 @@ object ListGroupStatsResponse {
     
     inline def setErrorGroupStatsUndefined: Self = StObject.set(x, "errorGroupStats", js.undefined)
     
-    inline def setErrorGroupStatsVarargs(value: ErrorGroupStats*): Self = StObject.set(x, "errorGroupStats", js.Array(value :_*))
+    inline def setErrorGroupStatsVarargs(value: ErrorGroupStats*): Self = StObject.set(x, "errorGroupStats", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

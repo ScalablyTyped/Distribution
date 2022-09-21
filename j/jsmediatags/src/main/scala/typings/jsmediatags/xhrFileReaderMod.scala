@@ -12,7 +12,7 @@ object xhrFileReaderMod {
   
   @JSImport("jsmediatags/build2/XhrFileReader", JSImport.Default)
   @js.native
-  class default protected () extends XhrFileReader {
+  open class default protected () extends XhrFileReader {
     def this(url: String) = this()
   }
   /* static members */
@@ -27,9 +27,9 @@ object xhrFileReaderMod {
     def _config: AvoidHeadRequests = js.native
     inline def _config_=(x: AvoidHeadRequests): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_config")(x.asInstanceOf[js.Any])
     
-    inline def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def canReadFile(file: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def setConfig(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setConfig(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait ContentRangeType extends StObject {

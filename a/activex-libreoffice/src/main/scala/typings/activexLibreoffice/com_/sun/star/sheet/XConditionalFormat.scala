@@ -26,11 +26,11 @@ object XConditionalFormat {
     ElementType: `type`,
     acquire: () => Unit,
     createEntry: (Double, Double) => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: Double => Unit
   ): XConditionalFormat = {

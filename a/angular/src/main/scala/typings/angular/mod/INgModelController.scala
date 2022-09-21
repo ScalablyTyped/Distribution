@@ -31,10 +31,10 @@ trait INgModelController extends StObject {
   var $invalid: Boolean = js.native
   
   @JSName("$isEmpty")
-  def $isEmpty(value: js.Any): Boolean = js.native
+  def $isEmpty(value: Any): Boolean = js.native
   
   @JSName("$modelValue")
-  var $modelValue: js.Any = js.native
+  var $modelValue: Any = js.native
   
   @JSName("$name")
   var $name: js.UndefOr[String] = js.native
@@ -78,9 +78,9 @@ trait INgModelController extends StObject {
   // Documentation states viewValue and modelValue to be a string but other
   // types do work and it's common to use them.
   @JSName("$setViewValue")
-  def $setViewValue(value: js.Any): Unit = js.native
+  def $setViewValue(value: Any): Unit = js.native
   @JSName("$setViewValue")
-  def $setViewValue(value: js.Any, trigger: String): Unit = js.native
+  def $setViewValue(value: Any, trigger: String): Unit = js.native
   
   @JSName("$touched")
   var $touched: Boolean = js.native
@@ -101,5 +101,5 @@ trait INgModelController extends StObject {
   var $viewChangeListeners: js.Array[IModelViewChangeListener] = js.native
   
   @JSName("$viewValue")
-  var $viewValue: js.Any = js.native
+  var $viewValue: Any = js.native
 }

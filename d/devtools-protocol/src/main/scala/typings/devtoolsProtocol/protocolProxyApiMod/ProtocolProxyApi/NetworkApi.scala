@@ -4,6 +4,9 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.dataReceived
 import typings.devtoolsProtocol.devtoolsProtocolStrings.eventSourceMessageReceived
 import typings.devtoolsProtocol.devtoolsProtocolStrings.loadingFailed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.loadingFinished
+import typings.devtoolsProtocol.devtoolsProtocolStrings.reportingApiEndpointsChangedForOrigin
+import typings.devtoolsProtocol.devtoolsProtocolStrings.reportingApiReportAdded
+import typings.devtoolsProtocol.devtoolsProtocolStrings.reportingApiReportUpdated
 import typings.devtoolsProtocol.devtoolsProtocolStrings.requestIntercepted
 import typings.devtoolsProtocol.devtoolsProtocolStrings.requestServedFromCache
 import typings.devtoolsProtocol.devtoolsProtocolStrings.requestWillBeSent
@@ -12,6 +15,11 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.resourceChangedPriority
 import typings.devtoolsProtocol.devtoolsProtocolStrings.responseReceived
 import typings.devtoolsProtocol.devtoolsProtocolStrings.responseReceivedExtraInfo
 import typings.devtoolsProtocol.devtoolsProtocolStrings.signedExchangeReceived
+import typings.devtoolsProtocol.devtoolsProtocolStrings.subresourceWebBundleInnerResponseError
+import typings.devtoolsProtocol.devtoolsProtocolStrings.subresourceWebBundleInnerResponseParsed
+import typings.devtoolsProtocol.devtoolsProtocolStrings.subresourceWebBundleMetadataError
+import typings.devtoolsProtocol.devtoolsProtocolStrings.subresourceWebBundleMetadataReceived
+import typings.devtoolsProtocol.devtoolsProtocolStrings.trustTokenOperationDone
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webSocketClosed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webSocketCreated
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webSocketFrameError
@@ -19,6 +27,9 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.webSocketFrameReceived
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webSocketFrameSent
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webSocketHandshakeResponseReceived
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webSocketWillSendHandshakeRequest
+import typings.devtoolsProtocol.devtoolsProtocolStrings.webTransportClosed
+import typings.devtoolsProtocol.devtoolsProtocolStrings.webTransportConnectionEstablished
+import typings.devtoolsProtocol.devtoolsProtocolStrings.webTransportCreated
 import typings.devtoolsProtocol.mod.Protocol.Network.CanClearBrowserCacheResponse
 import typings.devtoolsProtocol.mod.Protocol.Network.CanClearBrowserCookiesResponse
 import typings.devtoolsProtocol.mod.Protocol.Network.CanEmulateNetworkConditionsResponse
@@ -26,6 +37,7 @@ import typings.devtoolsProtocol.mod.Protocol.Network.ContinueInterceptedRequestR
 import typings.devtoolsProtocol.mod.Protocol.Network.DataReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.DeleteCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.EmulateNetworkConditionsRequest
+import typings.devtoolsProtocol.mod.Protocol.Network.EnableReportingApiRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.EnableRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.EventSourceMessageReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.GetAllCookiesResponse
@@ -46,6 +58,9 @@ import typings.devtoolsProtocol.mod.Protocol.Network.LoadNetworkResourceResponse
 import typings.devtoolsProtocol.mod.Protocol.Network.LoadingFailedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.LoadingFinishedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.ReplayXHRRequest
+import typings.devtoolsProtocol.mod.Protocol.Network.ReportingApiEndpointsChangedForOriginEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.ReportingApiReportAddedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.ReportingApiReportUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestInterceptedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestServedFromCacheEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestWillBeSentEvent
@@ -55,20 +70,25 @@ import typings.devtoolsProtocol.mod.Protocol.Network.ResponseReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.ResponseReceivedExtraInfoEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.SearchInResponseBodyRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SearchInResponseBodyResponse
-import typings.devtoolsProtocol.mod.Protocol.Network.SetAttachDebugHeaderRequest
+import typings.devtoolsProtocol.mod.Protocol.Network.SetAcceptedEncodingsRequest
+import typings.devtoolsProtocol.mod.Protocol.Network.SetAttachDebugStackRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetBlockedURLsRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetBypassServiceWorkerRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetCacheDisabledRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetCookieRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetCookieResponse
 import typings.devtoolsProtocol.mod.Protocol.Network.SetCookiesRequest
-import typings.devtoolsProtocol.mod.Protocol.Network.SetDataSizeLimitsForTestRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetExtraHTTPHeadersRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetRequestInterceptionRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SetUserAgentOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.SignedExchangeReceivedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.SubresourceWebBundleInnerResponseErrorEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.SubresourceWebBundleInnerResponseParsedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.SubresourceWebBundleMetadataErrorEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.SubresourceWebBundleMetadataReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.TakeResponseBodyForInterceptionAsStreamRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.TakeResponseBodyForInterceptionAsStreamResponse
+import typings.devtoolsProtocol.mod.Protocol.Network.TrustTokenOperationDoneEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketClosedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketCreatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketFrameErrorEvent
@@ -76,6 +96,9 @@ import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketFrameReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketFrameSentEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketHandshakeResponseReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketWillSendHandshakeRequestEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.WebTransportClosedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.WebTransportConnectionEstablishedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.WebTransportCreatedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,6 +120,11 @@ trait NetworkApi extends StObject {
     * Tells whether emulation of network conditions is supported.
     */
   def canEmulateNetworkConditions(): js.Promise[CanEmulateNetworkConditionsResponse] = js.native
+  
+  /**
+    * Clears accepted encodings set by setAcceptedEncodings
+    */
+  def clearAcceptedEncodingsOverride(): js.Promise[Unit] = js.native
   
   /**
     * Clears browser cache.
@@ -136,6 +164,12 @@ trait NetworkApi extends StObject {
     * Enables network tracking, network events will now be delivered to the client.
     */
   def enable(params: EnableRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Enables tracking for the Reporting API, events generated by the Reporting API will now be delivered to the client.
+    * Enabling triggers 'reportingApiReportAdded' for all existing reports.
+    */
+  def enableReportingApi(params: EnableReportingApiRequest): js.Promise[Unit] = js.native
   
   /**
     * Returns all browser cookies. Depending on the backend support, will return detailed cookie
@@ -202,6 +236,25 @@ trait NetworkApi extends StObject {
     */
   @JSName("on")
   def on_loadingFinished(event: loadingFinished, listener: js.Function1[/* params */ LoadingFinishedEvent, Unit]): Unit = js.native
+  @JSName("on")
+  def on_reportingApiEndpointsChangedForOrigin(
+    event: reportingApiEndpointsChangedForOrigin,
+    listener: js.Function1[/* params */ ReportingApiEndpointsChangedForOriginEvent, Unit]
+  ): Unit = js.native
+  /**
+    * Is sent whenever a new report is added.
+    * And after 'enableReportingApi' for all existing reports.
+    */
+  @JSName("on")
+  def on_reportingApiReportAdded(
+    event: reportingApiReportAdded,
+    listener: js.Function1[/* params */ ReportingApiReportAddedEvent, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_reportingApiReportUpdated(
+    event: reportingApiReportUpdated,
+    listener: js.Function1[/* params */ ReportingApiReportUpdatedEvent, Unit]
+  ): Unit = js.native
   /**
     * Details of an intercepted HTTP request, which must be either allowed, blocked, modified or
     * mocked.
@@ -265,6 +318,51 @@ trait NetworkApi extends StObject {
     listener: js.Function1[/* params */ SignedExchangeReceivedEvent, Unit]
   ): Unit = js.native
   /**
+    * Fired when request for resources within a .wbn file failed.
+    */
+  @JSName("on")
+  def on_subresourceWebBundleInnerResponseError(
+    event: subresourceWebBundleInnerResponseError,
+    listener: js.Function1[/* params */ SubresourceWebBundleInnerResponseErrorEvent, Unit]
+  ): Unit = js.native
+  /**
+    * Fired when handling requests for resources within a .wbn file.
+    * Note: this will only be fired for resources that are requested by the webpage.
+    */
+  @JSName("on")
+  def on_subresourceWebBundleInnerResponseParsed(
+    event: subresourceWebBundleInnerResponseParsed,
+    listener: js.Function1[/* params */ SubresourceWebBundleInnerResponseParsedEvent, Unit]
+  ): Unit = js.native
+  /**
+    * Fired once when parsing the .wbn file has failed.
+    */
+  @JSName("on")
+  def on_subresourceWebBundleMetadataError(
+    event: subresourceWebBundleMetadataError,
+    listener: js.Function1[/* params */ SubresourceWebBundleMetadataErrorEvent, Unit]
+  ): Unit = js.native
+  /**
+    * Fired once when parsing the .wbn file has succeeded.
+    * The event contains the information about the web bundle contents.
+    */
+  @JSName("on")
+  def on_subresourceWebBundleMetadataReceived(
+    event: subresourceWebBundleMetadataReceived,
+    listener: js.Function1[/* params */ SubresourceWebBundleMetadataReceivedEvent, Unit]
+  ): Unit = js.native
+  /**
+    * Fired exactly once for each Trust Token operation. Depending on
+    * the type of the operation and whether the operation succeeded or
+    * failed, the event is fired before the corresponding request was sent
+    * or after the response was received.
+    */
+  @JSName("on")
+  def on_trustTokenOperationDone(
+    event: trustTokenOperationDone,
+    listener: js.Function1[/* params */ TrustTokenOperationDoneEvent, Unit]
+  ): Unit = js.native
+  /**
     * Fired when WebSocket is closed.
     */
   @JSName("on")
@@ -308,6 +406,24 @@ trait NetworkApi extends StObject {
     event: webSocketWillSendHandshakeRequest,
     listener: js.Function1[/* params */ WebSocketWillSendHandshakeRequestEvent, Unit]
   ): Unit = js.native
+  /**
+    * Fired when WebTransport is disposed.
+    */
+  @JSName("on")
+  def on_webTransportClosed(event: webTransportClosed, listener: js.Function1[/* params */ WebTransportClosedEvent, Unit]): Unit = js.native
+  /**
+    * Fired when WebTransport handshake is finished.
+    */
+  @JSName("on")
+  def on_webTransportConnectionEstablished(
+    event: webTransportConnectionEstablished,
+    listener: js.Function1[/* params */ WebTransportConnectionEstablishedEvent, Unit]
+  ): Unit = js.native
+  /**
+    * Fired upon WebTransport creation.
+    */
+  @JSName("on")
+  def on_webTransportCreated(event: webTransportCreated, listener: js.Function1[/* params */ WebTransportCreatedEvent, Unit]): Unit = js.native
   
   /**
     * This method sends a new XMLHttpRequest which is identical to the original one. The following
@@ -322,9 +438,14 @@ trait NetworkApi extends StObject {
   def searchInResponseBody(params: SearchInResponseBodyRequest): js.Promise[SearchInResponseBodyResponse] = js.native
   
   /**
-    * Specifies whether to sned a debug header to all outgoing requests.
+    * Sets a list of content encodings that will be accepted. Empty list means no encoding is accepted.
     */
-  def setAttachDebugHeader(params: SetAttachDebugHeaderRequest): js.Promise[Unit] = js.native
+  def setAcceptedEncodings(params: SetAcceptedEncodingsRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Specifies whether to attach a page script stack id in requests
+    */
+  def setAttachDebugStack(params: SetAttachDebugStackRequest): js.Promise[Unit] = js.native
   
   /**
     * Blocks URLs from loading.
@@ -350,11 +471,6 @@ trait NetworkApi extends StObject {
     * Sets given cookies.
     */
   def setCookies(params: SetCookiesRequest): js.Promise[Unit] = js.native
-  
-  /**
-    * For testing.
-    */
-  def setDataSizeLimitsForTest(params: SetDataSizeLimitsForTestRequest): js.Promise[Unit] = js.native
   
   /**
     * Specifies whether to always send extra HTTP headers with the requests from this page.

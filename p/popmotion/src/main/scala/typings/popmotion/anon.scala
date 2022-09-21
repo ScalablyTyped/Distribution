@@ -13,18 +13,22 @@ object anon {
     
     var damping: Double
     
+    var duration: Double
+    
     var stiffness: Double
   }
   object Damping {
     
-    inline def apply(damping: Double, stiffness: Double): Damping = {
-      val __obj = js.Dynamic.literal(damping = damping.asInstanceOf[js.Any], stiffness = stiffness.asInstanceOf[js.Any])
+    inline def apply(damping: Double, duration: Double, stiffness: Double): Damping = {
+      val __obj = js.Dynamic.literal(damping = damping.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], stiffness = stiffness.asInstanceOf[js.Any])
       __obj.asInstanceOf[Damping]
     }
     
     extension [Self <: Damping](x: Self) {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     }
@@ -100,9 +104,9 @@ object anon {
     
     def apply(hasFromToRestSpeedRestDeltaOptions: SpringOptions): Animation[Double] = js.native
     
-    def needsInterpolation(a: js.Any, b: js.Any): Boolean = js.native
+    def needsInterpolation(a: Any, b: Any): Boolean = js.native
     @JSName("needsInterpolation")
-    var needsInterpolation_Original: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean] = js.native
+    var needsInterpolation_Original: js.Function2[/* a */ Any, /* b */ Any, Boolean] = js.native
   }
   
   trait X extends StObject {

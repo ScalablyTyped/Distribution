@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def selector(selectorName: String, source: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selector")(selectorName.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def parseSelector(selectorName: String, source: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelector")(selectorName.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
 }

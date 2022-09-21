@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "Image")
 @js.native
-class Image protected () extends ImageBase {
+open class Image protected () extends ImageBase {
   /**
     * @param extent Extent.
     * @param resolution Resolution.

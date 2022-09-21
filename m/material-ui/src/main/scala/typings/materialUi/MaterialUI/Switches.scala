@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.FormEvent
 import typings.react.mod.InputHTMLAttributes
-import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -20,7 +19,7 @@ object Switches {
   
   @js.native
   trait Checkbox
-    extends Component[CheckboxProps, js.Object, js.Any] {
+    extends Component[CheckboxProps, js.Object, Any] {
     
     /** @deprecated Use checked property instead */
     def isChecked(): Unit = js.native
@@ -95,12 +94,9 @@ object Switches {
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait CommonEnhancedSwitchProps[T]
+  trait CommonEnhancedSwitchProps[T]
     extends StObject
        with InputHTMLAttributes[js.Object] {
-    
-    var key: js.UndefOr[Key] = js.undefined
     
     var label: js.UndefOr[ReactNode] = js.undefined
     
@@ -114,10 +110,6 @@ object Switches {
     }
     
     extension [Self <: CommonEnhancedSwitchProps[?], T](x: Self & CommonEnhancedSwitchProps[T]) {
-      
-      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -135,7 +127,7 @@ object Switches {
   
   @js.native
   trait EnhancedSwitch
-    extends Component[EnhancedSwitchProps, js.Object, js.Any] {
+    extends Component[EnhancedSwitchProps, js.Object, Any] {
     
     def getValue(): String = js.native
     
@@ -265,7 +257,7 @@ object Switches {
   
   @js.native
   trait RadioButton
-    extends Component[RadioButtonProps, js.Object, js.Any] {
+    extends Component[RadioButtonProps, js.Object, Any] {
     
     def getValue(): String = js.native
     
@@ -274,7 +266,7 @@ object Switches {
   
   @js.native
   trait RadioButtonGroup
-    extends Component[RadioButtonGroupProps, js.Object, js.Any] {
+    extends Component[RadioButtonGroupProps, js.Object, Any] {
     
     def clearValue(): Unit = js.native
     
@@ -285,9 +277,11 @@ object Switches {
   
   trait RadioButtonGroupProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
-    var defaultSelected: js.UndefOr[js.Any] = js.undefined
+    var defaultSelected: js.UndefOr[Any] = js.undefined
     
     var labelPosition: js.UndefOr[left | right] = js.undefined
     
@@ -297,7 +291,7 @@ object Switches {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var valueSelected: js.UndefOr[js.Any] = js.undefined
+    var valueSelected: js.UndefOr[Any] = js.undefined
   }
   object RadioButtonGroupProps {
     
@@ -308,11 +302,15 @@ object Switches {
     
     extension [Self <: RadioButtonGroupProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setDefaultSelected(value: js.Any): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
+      inline def setDefaultSelected(value: Any): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
       
       inline def setDefaultSelectedUndefined: Self = StObject.set(x, "defaultSelected", js.undefined)
       
@@ -330,7 +328,7 @@ object Switches {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setValueSelected(value: js.Any): Self = StObject.set(x, "valueSelected", value.asInstanceOf[js.Any])
+      inline def setValueSelected(value: Any): Self = StObject.set(x, "valueSelected", value.asInstanceOf[js.Any])
       
       inline def setValueSelectedUndefined: Self = StObject.set(x, "valueSelected", js.undefined)
     }
@@ -355,7 +353,7 @@ object Switches {
     
     // Normally an SvgIcon
     @JSName("value")
-    var value_RadioButtonProps: js.UndefOr[js.Any] = js.undefined
+    var value_RadioButtonProps: js.UndefOr[Any] = js.undefined
   }
   object RadioButtonProps {
     
@@ -390,7 +388,7 @@ object Switches {
       
       inline def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -398,7 +396,7 @@ object Switches {
   
   @js.native
   trait Toggle
-    extends Component[ToggleProps, js.Object, js.Any] {
+    extends Component[ToggleProps, js.Object, Any] {
     
     def isToggled(): Boolean = js.native
     

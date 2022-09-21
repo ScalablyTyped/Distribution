@@ -1,12 +1,11 @@
 package typings.reactNativeElements.anon
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import org.scalablytyped.runtime.Instantiable1
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.BackgroundPropType
 import typings.reactNative.mod.ColorValue
@@ -15,30 +14,29 @@ import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.IconType
+import typings.reactNativeElements.iconMod.IconType
+import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.all
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto
 import typings.reactNativeElements.reactNativeElementsStrings.balanced
-import typings.reactNativeElements.reactNativeElementsStrings.button
 import typings.reactNativeElements.reactNativeElementsStrings.clip
 import typings.reactNativeElements.reactNativeElementsStrings.email
+import typings.reactNativeElements.reactNativeElementsStrings.full
 import typings.reactNativeElements.reactNativeElementsStrings.head
 import typings.reactNativeElements.reactNativeElementsStrings.highQuality
 import typings.reactNativeElements.reactNativeElementsStrings.link
 import typings.reactNativeElements.reactNativeElementsStrings.middle
 import typings.reactNativeElements.reactNativeElementsStrings.no
 import typings.reactNativeElements.reactNativeElementsStrings.none
+import typings.reactNativeElements.reactNativeElementsStrings.normal
 import typings.reactNativeElements.reactNativeElementsStrings.phoneNumber
 import typings.reactNativeElements.reactNativeElementsStrings.polite
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_checked
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_unchecked
 import typings.reactNativeElements.reactNativeElementsStrings.simple
 import typings.reactNativeElements.reactNativeElementsStrings.tail
 import typings.reactNativeElements.reactNativeElementsStrings.yes
@@ -47,14 +45,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-native-elements.react-native-elements.IconProps> */
+/* Inlined std.Partial<react-native-elements.react-native-elements/dist/icons/Icon.IconProps> */
 trait PartialIconProps extends StObject {
   
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
+  var Component: js.UndefOr[
+    TypeofComponent & (Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+      typings.react.mod.Component[
+        typings.reactNativeElements.reactNativeElementsStrings.Component, 
+        js.Object, 
+        js.Object
+      ]
+    ])
+  ] = js.undefined
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -64,13 +69,15 @@ trait PartialIconProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
   var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
@@ -84,15 +91,19 @@ trait PartialIconProps extends StObject {
   
   var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
+  var android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
+  
   var background: js.UndefOr[BackgroundPropType] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[ColorValue | Double] = js.undefined
   
   var borderRadius: js.UndefOr[Double] = js.undefined
   
   var brand: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var color: js.UndefOr[ColorValue | Double] = js.undefined
   
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -104,7 +115,7 @@ trait PartialIconProps extends StObject {
   
   var delayPressOut: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | Null] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -129,6 +140,16 @@ trait PartialIconProps extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   var nativeID: js.UndefOr[String] = js.undefined
+  
+  var nextFocusDown: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusForward: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusLeft: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusRight: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusUp: js.UndefOr[Double] = js.undefined
   
   var numberOfLines: js.UndefOr[Double] = js.undefined
   
@@ -186,8 +207,6 @@ trait PartialIconProps extends StObject {
   
   var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
   
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
-  
   var `type`: js.UndefOr[IconType] = js.undefined
   
   var underlayColor: js.UndefOr[ColorValue] = js.undefined
@@ -207,11 +226,7 @@ object PartialIconProps {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -229,6 +244,16 @@ object PartialIconProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -240,12 +265,6 @@ object PartialIconProps {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -271,9 +290,13 @@ object PartialIconProps {
     
     inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
+    inline def setAndroid_hyphenationFrequency(value: normal | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
+    
     inline def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ColorValue | Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
@@ -287,11 +310,20 @@ object PartialIconProps {
     
     inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setColor(value: ColorValue | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(
+      value: TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          typings.react.mod.Component[Component, js.Object, js.Object]
+        ])
+    ): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
@@ -320,8 +352,6 @@ object PartialIconProps {
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-    
-    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
     
     inline def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
@@ -376,6 +406,26 @@ object PartialIconProps {
     inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
     inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    
+    inline def setNextFocusDown(value: Double): Self = StObject.set(x, "nextFocusDown", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusDownUndefined: Self = StObject.set(x, "nextFocusDown", js.undefined)
+    
+    inline def setNextFocusForward(value: Double): Self = StObject.set(x, "nextFocusForward", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusForwardUndefined: Self = StObject.set(x, "nextFocusForward", js.undefined)
+    
+    inline def setNextFocusLeft(value: Double): Self = StObject.set(x, "nextFocusLeft", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusLeftUndefined: Self = StObject.set(x, "nextFocusLeft", js.undefined)
+    
+    inline def setNextFocusRight(value: Double): Self = StObject.set(x, "nextFocusRight", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusRightUndefined: Self = StObject.set(x, "nextFocusRight", js.undefined)
+    
+    inline def setNextFocusUp(value: Double): Self = StObject.set(x, "nextFocusUp", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusUpUndefined: Self = StObject.set(x, "nextFocusUp", js.undefined)
     
     inline def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
     
@@ -490,10 +540,6 @@ object PartialIconProps {
     inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
-    
-    inline def setTvParallaxProperties(value: TVParallaxProperties): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
     
     inline def setType(value: IconType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

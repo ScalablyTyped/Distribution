@@ -43,7 +43,7 @@ object global {
         
         @JSGlobal("gapi.drive.realtime.CollaborativeList")
         @js.native
-        class CollaborativeList[V] ()
+        open class CollaborativeList[V] ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeList[V]
         /* static members */
@@ -56,7 +56,7 @@ object global {
         
         @JSGlobal("gapi.drive.realtime.CollaborativeMap")
         @js.native
-        class CollaborativeMap[V] ()
+        open class CollaborativeMap[V] ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeMap[V]
         /* static members */
@@ -69,13 +69,13 @@ object global {
         
         @JSGlobal("gapi.drive.realtime.CollaborativeObject")
         @js.native
-        class CollaborativeObject ()
+        open class CollaborativeObject ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeObject
         
         @JSGlobal("gapi.drive.realtime.CollaborativeString")
         @js.native
-        class CollaborativeString ()
+        open class CollaborativeString ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeString
         /* static members */
@@ -88,7 +88,7 @@ object global {
         
         @JSGlobal("gapi.drive.realtime.Collaborator")
         @js.native
-        class Collaborator protected ()
+        open class Collaborator protected ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.Collaborator {
           def this(
@@ -142,13 +142,13 @@ object global {
         
         @JSGlobal("gapi.drive.realtime.Document")
         @js.native
-        class Document ()
+        open class Document ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.Document
         
         @JSGlobal("gapi.drive.realtime.Error")
         @js.native
-        class Error protected ()
+        open class Error protected ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.Error {
           def this(`type`: String, message: String, isFatal: Boolean) = this()
@@ -373,7 +373,7 @@ object global {
         
         @JSGlobal("gapi.drive.realtime.IndexReference")
         @js.native
-        class IndexReference[V] ()
+        open class IndexReference[V] ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.IndexReference[V]
         /* static members */
@@ -392,7 +392,7 @@ object global {
         
         @JSGlobal("gapi.drive.realtime.Model")
         @js.native
-        class Model ()
+        open class Model ()
           extends StObject
              with typings.googleDriveRealtimeApi.gapi.drive.realtime.Model
         
@@ -522,7 +522,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("rtclient.RealtimeLoader")
     @js.native
-    class RealtimeLoaderCls protected ()
+    open class RealtimeLoaderCls protected ()
       extends StObject
          with RealtimeLoader {
       def this(options: LoaderOptions) = this()

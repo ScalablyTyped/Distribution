@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lottie-web" : "5.7.4"
+      "lottie-web" : "5.9.6"
     }
   ],
   "test-dependencies" : [
     {
-      "lottie-web" : "5.7.4"
+      "lottie-web" : "5.9.6"
     }
   ],
   "compile-devDependencies" : [

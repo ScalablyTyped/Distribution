@@ -9,7 +9,10 @@ trait BasicAutoscalingAlgorithm extends StObject {
   /** Optional. Duration between scaling events. A scaling period starts after the update operation from the previous event has completed.Bounds: 2m, 1d. Default: 2m. */
   var cooldownPeriod: js.UndefOr[String] = js.undefined
   
-  /** Required. YARN autoscaling configuration. */
+  /** Optional. Spark Standalone autoscaling configuration */
+  var sparkStandaloneConfig: js.UndefOr[SparkStandaloneAutoscalingConfig] = js.undefined
+  
+  /** Optional. YARN autoscaling configuration. */
   var yarnConfig: js.UndefOr[BasicYarnAutoscalingConfig] = js.undefined
 }
 object BasicAutoscalingAlgorithm {
@@ -24,6 +27,10 @@ object BasicAutoscalingAlgorithm {
     inline def setCooldownPeriod(value: String): Self = StObject.set(x, "cooldownPeriod", value.asInstanceOf[js.Any])
     
     inline def setCooldownPeriodUndefined: Self = StObject.set(x, "cooldownPeriod", js.undefined)
+    
+    inline def setSparkStandaloneConfig(value: SparkStandaloneAutoscalingConfig): Self = StObject.set(x, "sparkStandaloneConfig", value.asInstanceOf[js.Any])
+    
+    inline def setSparkStandaloneConfigUndefined: Self = StObject.set(x, "sparkStandaloneConfig", js.undefined)
     
     inline def setYarnConfig(value: BasicYarnAutoscalingConfig): Self = StObject.set(x, "yarnConfig", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * data points exceeds the series' turboThreshold, this option is not
     * available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[SeriesSankeyPointOptionsObject]] = js.undefined
+  var data: js.UndefOr[js.Array[(js.Tuple3[String, String, Double]) | SeriesSankeyPointOptionsObject]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
@@ -42,11 +42,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highmaps) A map data object containing a `path` definition and
-    * optionally additional properties to join in the data as per the `joinBy`
-    * option.
+    * (Highmaps) An array of objects containing a `geometry` or `path`
+    * definition and optionally additional properties to join in the `data` as
+    * per the `joinBy` option. GeoJSON and TopoJSON structures can also be
+    * passed directly into `mapData`.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
+  var mapData: js.UndefOr[GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
@@ -103,11 +104,11 @@ object SeriesDependencywheelOptions {
   
   extension [Self <: SeriesDependencywheelOptions](x: Self) {
     
-    inline def setData(value: js.Array[SeriesSankeyPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[(js.Tuple3[String, String, Double]) | SeriesSankeyPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: SeriesSankeyPointOptionsObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ((js.Tuple3[String, String, Double]) | SeriesSankeyPointOptionsObject)*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -121,11 +122,11 @@ object SeriesDependencywheelOptions {
     
     inline def setLegendIndexUndefined: Self = StObject.set(x, "legendIndex", js.undefined)
     
-    inline def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
+    inline def setMapData(value: GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
     
     inline def setMapDataUndefined: Self = StObject.set(x, "mapData", js.undefined)
     
-    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value :_*))
+    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -135,7 +136,7 @@ object SeriesDependencywheelOptions {
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: SeriesSankeyNodesOptionsObject*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: SeriesSankeyNodesOptionsObject*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     

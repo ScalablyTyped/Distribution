@@ -2,7 +2,6 @@ package typings.gulpPugLinter
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpPugLinter.mod.GulpPugLinter.Options
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object mod extends Shortcut {
       
       var failAfterError: js.UndefOr[Boolean] = js.undefined
       
-      var reporter: js.UndefOr[js.Any] = js.undefined
+      var reporter: js.UndefOr[Any] = js.undefined
     }
     object Options {
       
@@ -34,13 +33,16 @@ object mod extends Shortcut {
         
         inline def setFailAfterErrorUndefined: Self = StObject.set(x, "failAfterError", js.undefined)
         
-        inline def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+        inline def setReporter(value: Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
         
         inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       }
     }
   }
-  type GulpPugLinter = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
+  type GulpPugLinter = js.Function1[
+    /* options */ js.UndefOr[Options], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
   
   type _To = GulpPugLinter
   

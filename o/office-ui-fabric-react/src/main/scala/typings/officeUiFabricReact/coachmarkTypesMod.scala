@@ -22,7 +22,7 @@ object coachmarkTypesMod {
     /**
       * Forces the Coachmark to dismiss
       */
-    var dismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var dismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ICoachmark {
     
@@ -33,7 +33,7 @@ object coachmarkTypesMod {
     
     extension [Self <: ICoachmark](x: Self) {
       
-      inline def setDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction1(value))
+      inline def setDismiss(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction1(value))
       
       inline def setDismissUndefined: Self = StObject.set(x, "dismiss", js.undefined)
     }
@@ -163,7 +163,7 @@ object coachmarkTypesMod {
     /**
       * Callback when the Coachmark tries to close.
       */
-    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * Callback to run when the mouse moves.
@@ -319,7 +319,7 @@ object coachmarkTypesMod {
       
       inline def setOnAnimationOpenStartUndefined: Self = StObject.set(x, "onAnimationOpenStart", js.undefined)
       
-      inline def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       

@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`original-and-current-features`
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -23,6 +25,20 @@ trait FeatureLayerApplyEditsOptions
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
   var globalIdUsed: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether the edit results should return the time edits were applied.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
+    */
+  var returnEditMoment: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If set to `original-and-current-features`, the [EditedFeatureResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult) parameter will be included in the `applyEdits` response.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
+    */
+  var returnServiceEditsOption: js.UndefOr[none_ | `original-and-current-features`] = js.undefined
   
   /**
     * Indicates whether the edits should be applied only if all submitted edits succeed.
@@ -51,6 +67,14 @@ object FeatureLayerApplyEditsOptions {
     inline def setGlobalIdUsed(value: Boolean): Self = StObject.set(x, "globalIdUsed", value.asInstanceOf[js.Any])
     
     inline def setGlobalIdUsedUndefined: Self = StObject.set(x, "globalIdUsed", js.undefined)
+    
+    inline def setReturnEditMoment(value: Boolean): Self = StObject.set(x, "returnEditMoment", value.asInstanceOf[js.Any])
+    
+    inline def setReturnEditMomentUndefined: Self = StObject.set(x, "returnEditMoment", js.undefined)
+    
+    inline def setReturnServiceEditsOption(value: none_ | `original-and-current-features`): Self = StObject.set(x, "returnServiceEditsOption", value.asInstanceOf[js.Any])
+    
+    inline def setReturnServiceEditsOptionUndefined: Self = StObject.set(x, "returnServiceEditsOption", js.undefined)
     
     inline def setRollbackOnFailureEnabled(value: Boolean): Self = StObject.set(x, "rollbackOnFailureEnabled", value.asInstanceOf[js.Any])
     

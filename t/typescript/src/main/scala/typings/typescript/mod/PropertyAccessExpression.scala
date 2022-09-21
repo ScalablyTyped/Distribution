@@ -19,7 +19,7 @@ trait PropertyAccessExpression
   val kind_PropertyAccessExpression: typings.typescript.mod.SyntaxKind.PropertyAccessExpression = js.native
   
   @JSName("name")
-  val name_PropertyAccessExpression: Identifier | PrivateIdentifier = js.native
+  val name_PropertyAccessExpression: MemberName = js.native
   
   val questionDotToken: js.UndefOr[QuestionDotToken] = js.native
 }

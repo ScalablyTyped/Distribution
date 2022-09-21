@@ -7,25 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Cloud Search API
-  *
-  * Cloud Search provides cloud-based search capabilities over G Suite data.
-  * The Cloud Search API allows indexing of non-G Suite data into Cloud Search.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const cloudsearch = google.cloudsearch('v1');
-  *
-  * @namespace cloudsearch
-  * @type {Function}
-  * @version v1
-  * @variation v1
-  * @param {object=} options Options for Cloudsearch
-  */
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Cloudsearch")
 @js.native
-class Cloudsearch protected () extends StObject {
+open class Cloudsearch protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
@@ -44,4 +28,6 @@ class Cloudsearch protected () extends StObject {
   var settings: ResourceSettings = js.native
   
   var stats: ResourceStats = js.native
+  
+  var v1: ResourceV1 = js.native
 }

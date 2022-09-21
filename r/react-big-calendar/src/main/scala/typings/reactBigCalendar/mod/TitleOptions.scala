@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TitleOptions
   extends StObject
-     with /* propName */ StringDictionary[js.Any] {
+     with /* propName */ StringDictionary[Any] {
   
-  var culture: js.UndefOr[String] = js.undefined
+  var culture: js.UndefOr[Culture] = js.undefined
   
   var formats: js.Array[DateFormat]
 }
@@ -22,12 +22,12 @@ object TitleOptions {
   
   extension [Self <: TitleOptions](x: Self) {
     
-    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: Culture): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     inline def setFormats(value: js.Array[DateFormat]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    inline def setFormatsVarargs(value: DateFormat*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: DateFormat*): Self = StObject.set(x, "formats", js.Array(value*))
   }
 }

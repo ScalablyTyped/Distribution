@@ -36,6 +36,6 @@ object VariableDeclarationStatement {
     
     inline def setVariables(value: js.Array[ASTNode]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def setVariablesVarargs(value: ASTNode*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: ASTNode*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

@@ -8,14 +8,14 @@ trait CompatibleKafkaVersion extends StObject {
   
   /**
     * 
-    A Kafka version.
+    An Apache Kafka version.
     
     */
   var SourceVersion: js.UndefOr[string] = js.undefined
   
   /**
     * 
-    A list of Kafka versions.
+    A list of Apache Kafka versions.
     
     */
   var TargetVersions: js.UndefOr[listOfString] = js.undefined
@@ -37,6 +37,6 @@ object CompatibleKafkaVersion {
     
     inline def setTargetVersionsUndefined: Self = StObject.set(x, "TargetVersions", js.undefined)
     
-    inline def setTargetVersionsVarargs(value: string*): Self = StObject.set(x, "TargetVersions", js.Array(value :_*))
+    inline def setTargetVersionsVarargs(value: string*): Self = StObject.set(x, "TargetVersions", js.Array(value*))
   }
 }

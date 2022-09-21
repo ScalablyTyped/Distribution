@@ -8,7 +8,7 @@ trait GridSortEvent
   extends StObject
      with GridEvent {
   
-  var sort: js.UndefOr[js.Any] = js.undefined
+  var sort: js.UndefOr[Any] = js.undefined
 }
 object GridSortEvent {
   
@@ -19,7 +19,7 @@ object GridSortEvent {
   
   extension [Self <: GridSortEvent](x: Self) {
     
-    inline def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }

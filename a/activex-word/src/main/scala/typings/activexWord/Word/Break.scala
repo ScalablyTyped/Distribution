@@ -12,7 +12,7 @@ trait Break extends StObject {
   
   val PageIndex: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -25,7 +25,7 @@ object Break {
     Application: Application,
     Creator: Double,
     PageIndex: Double,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     WordDotBreak_typekey: Break
   ): Break = {
@@ -42,7 +42,7 @@ object Break {
     
     inline def setPageIndex(value: Double): Self = StObject.set(x, "PageIndex", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

@@ -9,12 +9,12 @@ trait TransferData extends StObject {
   /**
     * The date the transfer was accepted.
     */
-  var acceptDate: js.UndefOr[DateType] = js.undefined
+  var acceptDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date the transfer was rejected.
     */
-  var rejectDate: js.UndefOr[DateType] = js.undefined
+  var rejectDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The reason why the transfer was rejected.
@@ -24,7 +24,7 @@ trait TransferData extends StObject {
   /**
     * The date the transfer took place.
     */
-  var transferDate: js.UndefOr[DateType] = js.undefined
+  var transferDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The transfer message.
@@ -40,11 +40,11 @@ object TransferData {
   
   extension [Self <: TransferData](x: Self) {
     
-    inline def setAcceptDate(value: DateType): Self = StObject.set(x, "acceptDate", value.asInstanceOf[js.Any])
+    inline def setAcceptDate(value: js.Date): Self = StObject.set(x, "acceptDate", value.asInstanceOf[js.Any])
     
     inline def setAcceptDateUndefined: Self = StObject.set(x, "acceptDate", js.undefined)
     
-    inline def setRejectDate(value: DateType): Self = StObject.set(x, "rejectDate", value.asInstanceOf[js.Any])
+    inline def setRejectDate(value: js.Date): Self = StObject.set(x, "rejectDate", value.asInstanceOf[js.Any])
     
     inline def setRejectDateUndefined: Self = StObject.set(x, "rejectDate", js.undefined)
     
@@ -52,7 +52,7 @@ object TransferData {
     
     inline def setRejectReasonUndefined: Self = StObject.set(x, "rejectReason", js.undefined)
     
-    inline def setTransferDate(value: DateType): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
+    inline def setTransferDate(value: js.Date): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
     
     inline def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
     

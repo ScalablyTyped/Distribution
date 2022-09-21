@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Resources")
 @js.native
-class Resources[ResourceType, RawType] protected () extends StObject {
+open class Resources[ResourceType, RawType] protected () extends StObject {
+  /**
+    * This is the base class for all typed resource dictionaries. Instances can be obtained from one of its
+    * subclasses, or via the `build` method, which crates an intermediate `ResourceBuilder` object.  All
+    * members of a `Resources` (or subclass) instance must be of the same type (`ResourceType`).
+    */
   /* protected */ def this(options: ResourcesConstructorOptions[ResourceType, RawType]) = this()
 }
 /* static members */

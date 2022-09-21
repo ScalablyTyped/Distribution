@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of all the slicer item objects in the slicer.
   *
-  * Represents a collection of all the slicer item objects on the slicer.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait SlicerItemCollectionLoadOptions extends StObject {
@@ -19,35 +19,35 @@ trait SlicerItemCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Value is `true` if the slicer item has data.
     *
-    * For EACH ITEM in the collection: True if the slicer item has data.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var hasData: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
-    * For EACH ITEM in the collection: True if the slicer item is selected.
-    Setting this value will not clear other SlicerItems' selected state.
+    * For EACH ITEM in the collection: Value is `true` if the slicer item is selected.
+    Setting this value will not clear the selected state of other slicer items.
     By default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var isSelected: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the unique value representing the slicer item.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var key: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the title displayed in the Excel UI.
     *
-    * For EACH ITEM in the collection: Represents the title displayed in the UI.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined

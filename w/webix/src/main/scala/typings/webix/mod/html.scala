@@ -18,10 +18,10 @@ trait html extends StObject {
   
   def allowSelect(): Unit = js.native
   
-  def create(name: String, attrs: js.Any): HTMLElement = js.native
-  def create(name: String, attrs: js.Any, html: String): HTMLElement = js.native
+  def create(name: String, attrs: Any): HTMLElement = js.native
+  def create(name: String, attrs: Any, html: String): HTMLElement = js.native
   
-  def createCss(data: js.Any): String = js.native
+  def createCss(data: Any): String = js.native
   
   def denySelect(): Unit = js.native
   
@@ -44,11 +44,11 @@ trait html extends StObject {
   def locate(ev: Event, name: String): String = js.native
   def locate(ev: HTMLElement, name: String): String = js.native
   
-  def offset(node: HTMLElement): js.Any = js.native
+  def offset(node: HTMLElement): Any = js.native
   
-  def pos(ev: Event): js.Any = js.native
+  def pos(ev: Event): Any = js.native
   
-  def posRelative(ev: Event): js.Any = js.native
+  def posRelative(ev: Event): Any = js.native
   
   def preventEvent(ev: Event): Boolean = js.native
   

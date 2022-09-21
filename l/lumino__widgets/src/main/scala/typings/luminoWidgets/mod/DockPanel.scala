@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the panel.
   */
-class DockPanel ()
+open class DockPanel ()
   extends typings.luminoWidgets.dockpanelMod.DockPanel {
   def this(options: IOptions) = this()
 }
@@ -28,7 +28,7 @@ object DockPanel {
   /**
     * Construct a new overlay.
     */
-  class Overlay ()
+  open class Overlay ()
     extends typings.luminoWidgets.dockpanelMod.DockPanel.Overlay
   
   /**
@@ -36,7 +36,7 @@ object DockPanel {
     */
   @JSImport("@lumino/widgets", "DockPanel.Renderer")
   @js.native
-  class Renderer ()
+  open class Renderer ()
     extends typings.luminoWidgets.dockpanelMod.DockPanel.Renderer
   
   /**

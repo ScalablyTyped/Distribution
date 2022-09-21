@@ -8,12 +8,12 @@ object platformMod {
   
   @JSImport("yadda/lib/Platform", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Platform {
     
     /* CompleteClass */
-    override def get_container(): js.Any = js.native
+    override def get_container(): Any = js.native
     
     /* CompleteClass */
     override def is_browser(): Boolean = js.native
@@ -31,7 +31,7 @@ object platformMod {
   
   trait Platform extends StObject {
     
-    def get_container(): js.Any
+    def get_container(): Any
     
     def is_browser(): Boolean
     
@@ -45,7 +45,7 @@ object platformMod {
   object Platform {
     
     inline def apply(
-      get_container: () => js.Any,
+      get_container: () => Any,
       is_browser: () => Boolean,
       is_karma: () => Boolean,
       is_node: () => Boolean,
@@ -57,7 +57,7 @@ object platformMod {
     
     extension [Self <: Platform](x: Self) {
       
-      inline def setGet_container(value: () => js.Any): Self = StObject.set(x, "get_container", js.Any.fromFunction0(value))
+      inline def setGet_container(value: () => Any): Self = StObject.set(x, "get_container", js.Any.fromFunction0(value))
       
       inline def setIs_browser(value: () => Boolean): Self = StObject.set(x, "is_browser", js.Any.fromFunction0(value))
       

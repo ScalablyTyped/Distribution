@@ -10,11 +10,11 @@ trait SelectionCollectionSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var multipleSelection: js.UndefOr[Boolean] = js.undefined
   
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   var subscribers: js.UndefOr[SelectionCollectionSettingsSubscribers] = js.undefined
 }
@@ -31,7 +31,7 @@ object SelectionCollectionSettings {
     
     inline def setMultipleSelectionUndefined: Self = StObject.set(x, "multipleSelection", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

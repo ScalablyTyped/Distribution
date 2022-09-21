@@ -1,7 +1,7 @@
 
 # Scala.js typings for module-deps
 
-Typings are for version 6.1
+Typings are for version 6.2
 
 ## Library description:
 walk the dependency graph to generate json output that can be fed into browser-pack
@@ -10,10 +10,10 @@ walk the dependency graph to generate json output that can be fed into browser-p
 | ------------------ | :-------------: |
 | Full name          | module-deps |
 | Keywords           | dependency, graph, browser, require, module, exports, json |
-| # releases         | 4 |
-| # dependents       | 95 |
-| # downloads        | 39285732 |
-| # stars            | 11 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6143760.333333333 |
+| # stars            | 204.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/module-deps)

@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new ButtonComponentSystem.
-  * @param app - The application.
+  * Manages creation of {@link ButtonComponent}s.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.ButtonComponentSystem")
 @js.native
-class ButtonComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class ButtonComponentSystem protected ()
+  extends typings.playcanvas.mod.ButtonComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

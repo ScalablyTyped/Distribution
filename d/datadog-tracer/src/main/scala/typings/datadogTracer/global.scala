@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("Tracer")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.datadogTracer.mod.^ {
       def this(tracerOptions: TracerOptions) = this()
     }

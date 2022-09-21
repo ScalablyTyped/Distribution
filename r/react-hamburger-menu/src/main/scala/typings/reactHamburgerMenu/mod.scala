@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-hamburger-menu", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[HamburgerMenuProps, js.Object, js.Any]
+  open class default ()
+    extends PureComponent[HamburgerMenuProps, js.Object, Any]
   
-  type HamburgerMenu = PureComponent[HamburgerMenuProps, js.Object, js.Any]
+  type HamburgerMenu = PureComponent[HamburgerMenuProps, js.Object, Any]
   
   trait HamburgerMenuProps extends StObject {
     

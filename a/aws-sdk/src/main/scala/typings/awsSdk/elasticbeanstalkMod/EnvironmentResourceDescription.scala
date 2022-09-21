@@ -59,7 +59,7 @@ object EnvironmentResourceDescription {
     
     inline def setAutoScalingGroupsUndefined: Self = StObject.set(x, "AutoScalingGroups", js.undefined)
     
-    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "AutoScalingGroups", js.Array(value :_*))
+    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "AutoScalingGroups", js.Array(value*))
     
     inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
@@ -69,36 +69,36 @@ object EnvironmentResourceDescription {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setLaunchConfigurations(value: LaunchConfigurationList): Self = StObject.set(x, "LaunchConfigurations", value.asInstanceOf[js.Any])
     
     inline def setLaunchConfigurationsUndefined: Self = StObject.set(x, "LaunchConfigurations", js.undefined)
     
-    inline def setLaunchConfigurationsVarargs(value: LaunchConfiguration*): Self = StObject.set(x, "LaunchConfigurations", js.Array(value :_*))
+    inline def setLaunchConfigurationsVarargs(value: LaunchConfiguration*): Self = StObject.set(x, "LaunchConfigurations", js.Array(value*))
     
     inline def setLaunchTemplates(value: LaunchTemplateList): Self = StObject.set(x, "LaunchTemplates", value.asInstanceOf[js.Any])
     
     inline def setLaunchTemplatesUndefined: Self = StObject.set(x, "LaunchTemplates", js.undefined)
     
-    inline def setLaunchTemplatesVarargs(value: LaunchTemplate*): Self = StObject.set(x, "LaunchTemplates", js.Array(value :_*))
+    inline def setLaunchTemplatesVarargs(value: LaunchTemplate*): Self = StObject.set(x, "LaunchTemplates", js.Array(value*))
     
     inline def setLoadBalancers(value: LoadBalancerList): Self = StObject.set(x, "LoadBalancers", value.asInstanceOf[js.Any])
     
     inline def setLoadBalancersUndefined: Self = StObject.set(x, "LoadBalancers", js.undefined)
     
-    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "LoadBalancers", js.Array(value :_*))
+    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "LoadBalancers", js.Array(value*))
     
     inline def setQueues(value: QueueList): Self = StObject.set(x, "Queues", value.asInstanceOf[js.Any])
     
     inline def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
     
-    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "Queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "Queues", js.Array(value*))
     
     inline def setTriggers(value: TriggerList): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
     
     inline def setTriggersUndefined: Self = StObject.set(x, "Triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value*))
   }
 }

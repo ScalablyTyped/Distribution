@@ -31,9 +31,6 @@ trait Resource extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** User given friendly name of the policy addressed by this request. */
-  var policy: String
-  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
@@ -54,12 +51,8 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  inline def apply(
-    policy: String,
-    project: String,
-    resource: typings.maximMazurokGapiClientDns.gapi.client.dns.Policy
-  ): Resource = {
-    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(project: String, resource: typings.maximMazurokGapiClientDns.gapi.client.dns.Policy): Resource = {
+    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
   
@@ -96,8 +89,6 @@ object Resource {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

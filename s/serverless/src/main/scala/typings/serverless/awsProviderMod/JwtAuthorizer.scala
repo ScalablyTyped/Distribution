@@ -23,7 +23,7 @@ object JwtAuthorizer {
     
     inline def setAudience(value: js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+    inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value*))
     
     inline def setIdentitySource(value: String): Self = StObject.set(x, "identitySource", value.asInstanceOf[js.Any])
     

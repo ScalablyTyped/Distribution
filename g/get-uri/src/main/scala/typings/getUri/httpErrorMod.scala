@@ -9,7 +9,7 @@ object httpErrorMod {
   
   @JSImport("get-uri/dist/http-error", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with HTTPError {
     def this(statusCode: Double) = this()
@@ -18,9 +18,11 @@ object httpErrorMod {
     /* CompleteClass */
     var code: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

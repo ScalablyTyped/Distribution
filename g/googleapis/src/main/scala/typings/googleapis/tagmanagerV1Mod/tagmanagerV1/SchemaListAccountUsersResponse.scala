@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List AccountUsers Response.
-  */
 trait SchemaListAccountUsersResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListAccountUsersResponse {
     
     inline def setUserAccessUndefined: Self = StObject.set(x, "userAccess", js.undefined)
     
-    inline def setUserAccessVarargs(value: SchemaUserAccess*): Self = StObject.set(x, "userAccess", js.Array(value :_*))
+    inline def setUserAccessVarargs(value: SchemaUserAccess*): Self = StObject.set(x, "userAccess", js.Array(value*))
   }
 }

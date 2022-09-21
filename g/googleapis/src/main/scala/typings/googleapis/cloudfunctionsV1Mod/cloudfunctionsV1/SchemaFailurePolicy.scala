@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes the policy in case of function&#39;s execution failure. If empty,
-  * then defaults to ignoring failures (i.e. not retrying them).
-  */
 trait SchemaFailurePolicy extends StObject {
   
   /**

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "browser-image-compression" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "browser-image-compression" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

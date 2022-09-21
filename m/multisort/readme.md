@@ -10,15 +10,12 @@ Sort an array using any number of separate, ranked criteria
 | ------------------ | :-------------: |
 | Full name          | multisort |
 | Keywords           | sort, sorting, multiple, multi, multisort, comparator |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 52569 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7326.666666666667 |
+| # stars            | 14.0 |
 
 ## Links
-- [Homepage](https://github.com/peterkhayes/multisort)
-- [Bugs](https://github.com/peterkhayes/multisort/issues)
-- [Repository](https://github.com/peterkhayes/multisort)
 - [Npm](https://www.npmjs.com/package/multisort)
     
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for autosize
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Autosize is a small, stand-alone script to automatically adjust textarea height to fit text.
@@ -10,10 +10,10 @@ Autosize is a small, stand-alone script to automatically adjust textarea height 
 | ------------------ | :-------------: |
 | Full name          | autosize |
 | Keywords           | textarea, form, ui |
-| # releases         | 1 |
-| # dependents       | 305 |
-| # downloads        | 11401857 |
-| # stars            | 13 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1938497.3333333333 |
+| # stars            | 4888.0 |
 
 ## Links
 - [Homepage](http://www.jacklmoore.com/autosize)

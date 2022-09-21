@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.Heading")
 @js.native
-class Heading ()
+open class Heading ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.Heading
 /* static members */

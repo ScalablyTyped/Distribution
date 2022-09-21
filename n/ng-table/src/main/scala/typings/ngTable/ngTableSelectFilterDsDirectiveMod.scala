@@ -22,26 +22,26 @@ object ngTableSelectFilterDsDirectiveMod {
   
   @JSImport("ng-table/src/browser/ngTableSelectFilterDs.directive", "NgTableSelectFilterDsController")
   @js.native
-  class NgTableSelectFilterDsController protected () extends StObject {
+  open class NgTableSelectFilterDsController protected () extends StObject {
     def this($scope: IScope & IScopeExtensions, $parse: IParseService, $attrs: IInputAttributes, $q: IQService) = this()
     
     /* private */ @JSName("$attrs")
-    var $attrs: js.Any = js.native
+    var $attrs: Any = js.native
     
     @JSName("$column")
     var $column: IColumnDef = js.native
     
     /* private */ @JSName("$q")
-    var $q: js.Any = js.native
+    var $q: Any = js.native
     
     /* private */ @JSName("$scope")
-    var $scope: js.Any = js.native
+    var $scope: Any = js.native
     
-    /* private */ def bindDataSource(): js.Any = js.native
+    /* private */ def bindDataSource(): Any = js.native
     
-    /* private */ def getSelectListData($column: js.Any): js.Any = js.native
+    /* private */ def getSelectListData($column: Any): Any = js.native
     
-    /* private */ def hasEmptyOption(data: js.Any): js.Any = js.native
+    /* private */ def hasEmptyOption(data: Any): Any = js.native
   }
   /* static members */
   object NgTableSelectFilterDsController {
@@ -78,9 +78,9 @@ object ngTableSelectFilterDsDirectiveMod {
       $addClass: String => Unit,
       $attr: js.Object,
       $normalize: String => String,
-      $observe: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function,
+      $observe: (String, js.Function1[/* value */ js.UndefOr[Any], Any]) => Function,
       $removeClass: String => Unit,
-      $set: (String, js.Any) => Unit,
+      $set: (String, Any) => Unit,
       $updateClass: (String, String) => Unit,
       ngTableSelectFilterDs: String
     ): IInputAttributes = {
@@ -110,7 +110,7 @@ object ngTableSelectFilterDsDirectiveMod {
       
       inline def set$selectData(value: js.Array[ISelectOption]): Self = StObject.set(x, "$selectData", value.asInstanceOf[js.Any])
       
-      inline def set$selectDataVarargs(value: ISelectOption*): Self = StObject.set(x, "$selectData", js.Array(value :_*))
+      inline def set$selectDataVarargs(value: ISelectOption*): Self = StObject.set(x, "$selectData", js.Array(value*))
     }
   }
 }

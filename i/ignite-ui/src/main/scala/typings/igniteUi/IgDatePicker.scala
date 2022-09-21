@@ -1,7 +1,6 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait IgDatePicker
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets whether the editor value can become null.
@@ -131,7 +130,7 @@ trait IgDatePicker
     * Gets/Sets the options supported by the [jquery.ui.datepicker](http://api.jqueryui.com/datepicker/). Only options related to the drop-down calendar are supported.
     *
     */
-  var datepickerOptions: js.UndefOr[js.Any] = js.undefined
+  var datepickerOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the disabled attribute for the input. If set to true the input is disabled, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is not submitted.
@@ -145,7 +144,7 @@ trait IgDatePicker
     * Values with ambiguous time zone could map to unpredictable times depending on the user agent local zone.
     *
     */
-  var displayTimeOffset: js.UndefOr[js.Any] = js.undefined
+  var displayTimeOffset: js.UndefOr[Any] = js.undefined
   
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
@@ -281,7 +280,7 @@ trait IgDatePicker
   /**
     * This option is inherited from a parent widget and it's not applicable for igDatePicker
     */
-  var listItems: js.UndefOr[js.Any] = js.undefined
+  var listItems: js.UndefOr[Any] = js.undefined
   
   /**
     * This option is inherited from a parent widget and it's not applicable for igDatePicker
@@ -292,32 +291,32 @@ trait IgDatePicker
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * This option is inherited from a parent widget and it's not applicable for igMaskEditor
     */
-  var maxLength: js.UndefOr[js.Any] = js.undefined
+  var maxLength: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the maximum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  var maxValue: js.UndefOr[Date] = js.undefined
+  var maxValue: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Gets the minimum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  var minValue: js.UndefOr[Date] = js.undefined
+  var minValue: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
     */
-  var nullValue: js.UndefOr[String | Double | Date] = js.undefined
+  var nullValue: js.UndefOr[String | Double | js.Date] = js.undefined
   
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
@@ -423,7 +422,7 @@ trait IgDatePicker
     */
   var textAlign: js.UndefOr[String] = js.undefined
   
-  var textMode: js.UndefOr[js.Any] = js.undefined
+  var textMode: js.UndefOr[Any] = js.undefined
   
   /**
     * This option is inherited from a parent widget and it's not applicable for igDateEditor
@@ -446,14 +445,14 @@ trait IgDatePicker
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.undefined
+  var validatorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the value of the editor. Date object can be set as value. String can be set and the editor will pass it to the Date object constructor and use the corresponding Date object as the value. MVC date format can be used too.
     * Note! This option doesn't use the dateInputFormat to extract the date.
     *
     */
-  var value: js.UndefOr[Date] = js.undefined
+  var value: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Gets/Sets how many items should be shown at once.
@@ -511,7 +510,7 @@ object IgDatePicker {
     
     inline def setDateInputFormatUndefined: Self = StObject.set(x, "dateInputFormat", js.undefined)
     
-    inline def setDatepickerOptions(value: js.Any): Self = StObject.set(x, "datepickerOptions", value.asInstanceOf[js.Any])
+    inline def setDatepickerOptions(value: Any): Self = StObject.set(x, "datepickerOptions", value.asInstanceOf[js.Any])
     
     inline def setDatepickerOptionsUndefined: Self = StObject.set(x, "datepickerOptions", js.undefined)
     
@@ -519,7 +518,7 @@ object IgDatePicker {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDisplayTimeOffset(value: js.Any): Self = StObject.set(x, "displayTimeOffset", value.asInstanceOf[js.Any])
+    inline def setDisplayTimeOffset(value: Any): Self = StObject.set(x, "displayTimeOffset", value.asInstanceOf[js.Any])
     
     inline def setDisplayTimeOffsetUndefined: Self = StObject.set(x, "displayTimeOffset", js.undefined)
     
@@ -611,7 +610,7 @@ object IgDatePicker {
     
     inline def setListItemHoverDurationUndefined: Self = StObject.set(x, "listItemHoverDuration", js.undefined)
     
-    inline def setListItems(value: js.Any): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+    inline def setListItems(value: Any): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
     
     inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
     
@@ -619,23 +618,23 @@ object IgDatePicker {
     
     inline def setListWidthUndefined: Self = StObject.set(x, "listWidth", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setMaxLength(value: js.Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
-    inline def setMaxValue(value: Date): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: js.Date): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    inline def setMinValue(value: Date): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: js.Date): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    inline def setNullValue(value: String | Double | Date): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
+    inline def setNullValue(value: String | Double | js.Date): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
     
     inline def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
     
@@ -691,7 +690,7 @@ object IgDatePicker {
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    inline def setTextMode(value: js.Any): Self = StObject.set(x, "textMode", value.asInstanceOf[js.Any])
+    inline def setTextMode(value: Any): Self = StObject.set(x, "textMode", value.asInstanceOf[js.Any])
     
     inline def setTextModeUndefined: Self = StObject.set(x, "textMode", js.undefined)
     
@@ -707,11 +706,11 @@ object IgDatePicker {
     
     inline def setUnfilledCharsPromptUndefined: Self = StObject.set(x, "unfilledCharsPrompt", js.undefined)
     
-    inline def setValidatorOptions(value: js.Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
+    inline def setValidatorOptions(value: Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
     
     inline def setValidatorOptionsUndefined: Self = StObject.set(x, "validatorOptions", js.undefined)
     
-    inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

@@ -8,10 +8,10 @@ object bitcoinSPVMod {
   
   @JSImport("@keep-network/tbtc.js/src/lib/BitcoinSPV", "BitcoinSPV")
   @js.native
-  class BitcoinSPV protected () extends StObject {
-    def this(electrumClient: js.Any) = this()
+  open class BitcoinSPV protected () extends StObject {
+    def this(electrumClient: Any) = this()
     
-    var client: js.Any = js.native
+    var client: Any = js.native
     
     def getTransactionProof(txHash: String, confirmations: Double): Proof = js.native
     

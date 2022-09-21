@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("jsrsasign.KJUR.asn1.DERBoolean")
 @js.native
-class DERBoolean ()
+open class DERBoolean ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERBoolean

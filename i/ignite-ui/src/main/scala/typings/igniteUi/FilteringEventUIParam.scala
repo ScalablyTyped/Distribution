@@ -9,12 +9,12 @@ trait FilteringEventUIParam extends StObject {
   /**
     * Used to obtain reference to array which contains expressions supported by [$.ig.DataSource](ig.datasource).
     */
-  var expression: js.UndefOr[js.Any] = js.undefined
+  var expression: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to obtain reference to igCombo.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object FilteringEventUIParam {
   
@@ -25,11 +25,11 @@ object FilteringEventUIParam {
   
   extension [Self <: FilteringEventUIParam](x: Self) {
     
-    inline def setExpression(value: js.Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

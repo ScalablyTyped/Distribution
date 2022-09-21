@@ -21,7 +21,7 @@ trait AutoFormatRule extends StObject {
   /* private */ @JSName("Outlook.AutoFormatRule_typekey")
   var OutlookDotAutoFormatRule_typekey: AutoFormatRule
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -37,7 +37,7 @@ object AutoFormatRule {
     Font: ViewFont,
     Name: String,
     OutlookDotAutoFormatRule_typekey: AutoFormatRule,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Standard: Boolean
   ): AutoFormatRule = {
@@ -62,7 +62,7 @@ object AutoFormatRule {
     
     inline def setOutlookDotAutoFormatRule_typekey(value: AutoFormatRule): Self = StObject.set(x, "Outlook.AutoFormatRule_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

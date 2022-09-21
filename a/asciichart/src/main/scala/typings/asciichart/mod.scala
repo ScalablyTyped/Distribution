@@ -12,99 +12,80 @@ object mod {
   
   @JSImport("asciichart", JSImport.Default)
   @js.native
-  def default: String = js.native
+  val default: String = js.native
   
   @JSImport("asciichart", "black")
   @js.native
-  def black: String = js.native
-  inline def black_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
+  val black: String = js.native
   
   @JSImport("asciichart", "blue")
   @js.native
-  def blue: String = js.native
-  inline def blue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blue")(x.asInstanceOf[js.Any])
+  val blue: String = js.native
   
   inline def colored(char: String, color: Color): String = (^.asInstanceOf[js.Dynamic].applyDynamic("colored")(char.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("asciichart", "cyan")
   @js.native
-  def cyan: String = js.native
-  inline def cyan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cyan")(x.asInstanceOf[js.Any])
+  val cyan: String = js.native
   
   @JSImport("asciichart", "darkgray")
   @js.native
-  def darkgray: String = js.native
-  inline def darkgray_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkgray")(x.asInstanceOf[js.Any])
-  
-  inline def default_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  val darkgray: String = js.native
   
   @JSImport("asciichart", "green")
   @js.native
-  def green: String = js.native
-  inline def green_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
+  val green: String = js.native
   
   @JSImport("asciichart", "lightblue")
   @js.native
-  def lightblue: String = js.native
-  inline def lightblue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightblue")(x.asInstanceOf[js.Any])
+  val lightblue: String = js.native
   
   @JSImport("asciichart", "lightcyan")
   @js.native
-  def lightcyan: String = js.native
-  inline def lightcyan_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightcyan")(x.asInstanceOf[js.Any])
+  val lightcyan: String = js.native
   
   @JSImport("asciichart", "lightgray")
   @js.native
-  def lightgray: String = js.native
-  inline def lightgray_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightgray")(x.asInstanceOf[js.Any])
+  val lightgray: String = js.native
   
   @JSImport("asciichart", "lightgreen")
   @js.native
-  def lightgreen: String = js.native
-  inline def lightgreen_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightgreen")(x.asInstanceOf[js.Any])
+  val lightgreen: String = js.native
   
   @JSImport("asciichart", "lightmagenta")
   @js.native
-  def lightmagenta: String = js.native
-  inline def lightmagenta_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightmagenta")(x.asInstanceOf[js.Any])
+  val lightmagenta: String = js.native
   
   @JSImport("asciichart", "lightred")
   @js.native
-  def lightred: String = js.native
-  inline def lightred_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightred")(x.asInstanceOf[js.Any])
+  val lightred: String = js.native
   
   @JSImport("asciichart", "lightyellow")
   @js.native
-  def lightyellow: String = js.native
-  inline def lightyellow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightyellow")(x.asInstanceOf[js.Any])
+  val lightyellow: String = js.native
   
   @JSImport("asciichart", "magenta")
   @js.native
-  def magenta: String = js.native
-  inline def magenta_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("magenta")(x.asInstanceOf[js.Any])
+  val magenta: String = js.native
   
-  inline def plot(series: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("plot")(series.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def plot(series: js.Array[Double], cfg: PlotConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("plot")(series.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def plot(series: js.Array[Double | js.Array[Double]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("plot")(series.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def plot(series: js.Array[Double | js.Array[Double]], cfg: PlotConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("plot")(series.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("asciichart", "red")
   @js.native
-  def red: String = js.native
-  inline def red_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
+  val red: String = js.native
   
   @JSImport("asciichart", "reset")
   @js.native
-  def reset: String = js.native
-  inline def reset_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reset")(x.asInstanceOf[js.Any])
+  val reset: String = js.native
   
   @JSImport("asciichart", "white")
   @js.native
-  def white: String = js.native
-  inline def white_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
+  val white: String = js.native
   
   @JSImport("asciichart", "yellow")
   @js.native
-  def yellow: String = js.native
-  inline def yellow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow")(x.asInstanceOf[js.Any])
+  val yellow: String = js.native
   
   type Color = js.UndefOr[String]
   
@@ -141,7 +122,7 @@ object mod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setFormat(value: (/* x */ Double, /* i */ Double) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       

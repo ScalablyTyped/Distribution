@@ -29,7 +29,7 @@ trait IBufferNamespace extends StObject {
     * Adds an event listener for when the active buffer changes.
     * @returns an `IDisposable` to stop listening.
     */
-  def onBufferChange(listener: js.Function2[/* arg1 */ IBuffer, /* arg2 */ Unit, js.Any]): IDisposable
+  def onBufferChange(listener: js.Function2[/* arg1 */ IBuffer, /* arg2 */ Unit, Any]): IDisposable
   /**
     * Adds an event listener for when the active buffer changes.
     * @returns an `IDisposable` to stop listening.
@@ -43,7 +43,7 @@ object IBufferNamespace {
     active: IBuffer,
     alternate: IBuffer,
     normal: IBuffer,
-    onBufferChange: /* listener */ js.Function2[IBuffer, Unit, js.Any] => IDisposable
+    onBufferChange: /* listener */ js.Function2[IBuffer, Unit, Any] => IDisposable
   ): IBufferNamespace = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], alternate = alternate.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], onBufferChange = js.Any.fromFunction1(onBufferChange))
     __obj.asInstanceOf[IBufferNamespace]
@@ -57,6 +57,6 @@ object IBufferNamespace {
     
     inline def setNormal(value: IBuffer): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    inline def setOnBufferChange(value: /* listener */ js.Function2[IBuffer, Unit, js.Any] => IDisposable): Self = StObject.set(x, "onBufferChange", js.Any.fromFunction1(value))
+    inline def setOnBufferChange(value: /* listener */ js.Function2[IBuffer, Unit, Any] => IDisposable): Self = StObject.set(x, "onBufferChange", js.Any.fromFunction1(value))
   }
 }

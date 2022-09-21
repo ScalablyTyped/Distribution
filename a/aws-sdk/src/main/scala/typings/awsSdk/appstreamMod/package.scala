@@ -1,13 +1,16 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.DAILY
+import typings.awsSdk.awsSdkStrings.STREAMING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccessEndpointList = js.Array[typings.awsSdk.appstreamMod.AccessEndpoint]
+type AccessEndpointList = js.Array[AccessEndpoint]
 
-type AccessEndpointType = typings.awsSdk.awsSdkStrings.STREAMING | java.lang.String
+type AccessEndpointType = STREAMING | java.lang.String
 
 type AccountName = java.lang.String
 
@@ -19,17 +22,39 @@ type AccountPassword = java.lang.String
   - typings.awsSdk.awsSdkStrings.FILE_UPLOAD
   - typings.awsSdk.awsSdkStrings.FILE_DOWNLOAD
   - typings.awsSdk.awsSdkStrings.PRINTING_TO_LOCAL_DEVICE
+  - typings.awsSdk.awsSdkStrings.DOMAIN_PASSWORD_SIGNIN
+  - typings.awsSdk.awsSdkStrings.DOMAIN_SMART_CARD_SIGNIN
   - java.lang.String
 */
-type Action = typings.awsSdk.appstreamMod._Action | java.lang.String
+type Action = _Action | java.lang.String
 
-type Applications = js.Array[typings.awsSdk.appstreamMod.Application]
+type AppBlocks = js.Array[AppBlock]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.ASSOCIATED
+  - java.lang.String
+*/
+type AppVisibility = _AppVisibility | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LAUNCH_PARAMETERS
+  - typings.awsSdk.awsSdkStrings.WORKING_DIRECTORY
+  - java.lang.String
+*/
+type ApplicationAttribute = _ApplicationAttribute | java.lang.String
+
+type ApplicationAttributes = js.Array[ApplicationAttribute]
+
+type ApplicationFleetAssociationList = js.Array[ApplicationFleetAssociation]
+
+type Applications = js.Array[Application]
 
 type AppstreamAgentVersion = java.lang.String
 
 type Arn = java.lang.String
 
-type ArnList = js.Array[typings.awsSdk.appstreamMod.Arn]
+type ArnList = js.Array[Arn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.API
@@ -37,35 +62,41 @@ type ArnList = js.Array[typings.awsSdk.appstreamMod.Arn]
   - typings.awsSdk.awsSdkStrings.USERPOOL
   - java.lang.String
 */
-type AuthenticationType = typings.awsSdk.appstreamMod._AuthenticationType | java.lang.String
+type AuthenticationType = _AuthenticationType | java.lang.String
 
 type AwsAccountId = java.lang.String
 
-type AwsAccountIdList = js.Array[typings.awsSdk.appstreamMod.AwsAccountId]
+type AwsAccountIdList = js.Array[AwsAccountId]
 
 type Boolean = scala.Boolean
 
 type BooleanObject = scala.Boolean
 
-type DescribeImagesMaxResults = scala.Double
+type DescribeImagesMaxResults = Double
 
 type Description = java.lang.String
 
-type DirectoryConfigList = js.Array[typings.awsSdk.appstreamMod.DirectoryConfig]
+type DirectoryConfigList = js.Array[DirectoryConfig]
 
 type DirectoryName = java.lang.String
 
-type DirectoryNameList = js.Array[typings.awsSdk.appstreamMod.DirectoryName]
+type DirectoryNameList = js.Array[DirectoryName]
 
 type DisplayName = java.lang.String
 
 type Domain = java.lang.String
 
-type DomainList = js.Array[typings.awsSdk.appstreamMod.Domain]
+type DomainList = js.Array[Domain]
 
 type EmbedHostDomain = java.lang.String
 
-type EmbedHostDomains = js.Array[typings.awsSdk.appstreamMod.EmbedHostDomain]
+type EmbedHostDomains = js.Array[EmbedHostDomain]
+
+type EntitledApplicationList = js.Array[EntitledApplication]
+
+type EntitlementAttributeList = js.Array[EntitlementAttribute]
+
+type EntitlementList = js.Array[Entitlement]
 
 type FeedbackURL = java.lang.String
 
@@ -74,11 +105,13 @@ type FeedbackURL = java.lang.String
   - typings.awsSdk.awsSdkStrings.VPC_CONFIGURATION_SECURITY_GROUP_IDS
   - typings.awsSdk.awsSdkStrings.DOMAIN_JOIN_INFO
   - typings.awsSdk.awsSdkStrings.IAM_ROLE_ARN
+  - typings.awsSdk.awsSdkStrings.USB_DEVICE_FILTER_STRINGS
+  - typings.awsSdk.awsSdkStrings.SESSION_SCRIPT_S3_LOCATION
   - java.lang.String
 */
-type FleetAttribute = typings.awsSdk.appstreamMod._FleetAttribute | java.lang.String
+type FleetAttribute = _FleetAttribute | java.lang.String
 
-type FleetAttributes = js.Array[typings.awsSdk.appstreamMod.FleetAttribute]
+type FleetAttributes = js.Array[FleetAttribute]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IAM_SERVICE_ROLE_MISSING_ENI_DESCRIBE_ACTION
@@ -97,6 +130,8 @@ type FleetAttributes = js.Array[typings.awsSdk.appstreamMod.FleetAttribute]
   - typings.awsSdk.awsSdkStrings.SECURITY_GROUPS_NOT_FOUND
   - typings.awsSdk.awsSdkStrings.IGW_NOT_ATTACHED
   - typings.awsSdk.awsSdkStrings.IAM_SERVICE_ROLE_MISSING_DESCRIBE_SECURITY_GROUPS_ACTION
+  - typings.awsSdk.awsSdkStrings.FLEET_STOPPED
+  - typings.awsSdk.awsSdkStrings.FLEET_INSTANCE_PROVISIONING_FAILURE
   - typings.awsSdk.awsSdkStrings.DOMAIN_JOIN_ERROR_FILE_NOT_FOUND
   - typings.awsSdk.awsSdkStrings.DOMAIN_JOIN_ERROR_ACCESS_DENIED
   - typings.awsSdk.awsSdkStrings.DOMAIN_JOIN_ERROR_LOGON_FAILURE
@@ -111,11 +146,11 @@ type FleetAttributes = js.Array[typings.awsSdk.appstreamMod.FleetAttribute]
   - typings.awsSdk.awsSdkStrings.DOMAIN_JOIN_INTERNAL_SERVICE_ERROR
   - java.lang.String
 */
-type FleetErrorCode = typings.awsSdk.appstreamMod._FleetErrorCode | java.lang.String
+type FleetErrorCode = _FleetErrorCode | java.lang.String
 
-type FleetErrors = js.Array[typings.awsSdk.appstreamMod.FleetError]
+type FleetErrors = js.Array[FleetError]
 
-type FleetList = js.Array[typings.awsSdk.appstreamMod.Fleet]
+type FleetList = js.Array[Fleet]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STARTING
@@ -124,16 +159,17 @@ type FleetList = js.Array[typings.awsSdk.appstreamMod.Fleet]
   - typings.awsSdk.awsSdkStrings.STOPPED
   - java.lang.String
 */
-type FleetState = typings.awsSdk.appstreamMod._FleetState | java.lang.String
+type FleetState = _FleetState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALWAYS_ON
   - typings.awsSdk.awsSdkStrings.ON_DEMAND
+  - typings.awsSdk.awsSdkStrings.ELASTIC
   - java.lang.String
 */
-type FleetType = typings.awsSdk.appstreamMod._FleetType | java.lang.String
+type FleetType = _FleetType | java.lang.String
 
-type ImageBuilderList = js.Array[typings.awsSdk.appstreamMod.ImageBuilder]
+type ImageBuilderList = js.Array[ImageBuilder]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -145,18 +181,20 @@ type ImageBuilderList = js.Array[typings.awsSdk.appstreamMod.ImageBuilder]
   - typings.awsSdk.awsSdkStrings.SNAPSHOTTING
   - typings.awsSdk.awsSdkStrings.DELETING
   - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - typings.awsSdk.awsSdkStrings.PENDING_QUALIFICATION
   - java.lang.String
 */
-type ImageBuilderState = typings.awsSdk.appstreamMod._ImageBuilderState | java.lang.String
+type ImageBuilderState = _ImageBuilderState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
   - typings.awsSdk.awsSdkStrings.IMAGE_UNAVAILABLE
   - java.lang.String
 */
-type ImageBuilderStateChangeReasonCode = typings.awsSdk.appstreamMod._ImageBuilderStateChangeReasonCode | java.lang.String
+type ImageBuilderStateChangeReasonCode = _ImageBuilderStateChangeReasonCode | java.lang.String
 
-type ImageList = js.Array[typings.awsSdk.appstreamMod.Image]
+type ImageList = js.Array[Image]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -164,9 +202,11 @@ type ImageList = js.Array[typings.awsSdk.appstreamMod.Image]
   - typings.awsSdk.awsSdkStrings.FAILED
   - typings.awsSdk.awsSdkStrings.COPYING
   - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.IMPORTING
   - java.lang.String
 */
-type ImageState = typings.awsSdk.appstreamMod._ImageState | java.lang.String
+type ImageState = _ImageState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
@@ -174,64 +214,78 @@ type ImageState = typings.awsSdk.appstreamMod._ImageState | java.lang.String
   - typings.awsSdk.awsSdkStrings.IMAGE_COPY_FAILURE
   - java.lang.String
 */
-type ImageStateChangeReasonCode = typings.awsSdk.appstreamMod._ImageStateChangeReasonCode | java.lang.String
+type ImageStateChangeReasonCode = _ImageStateChangeReasonCode | java.lang.String
 
-type Integer = scala.Double
+type Integer = Double
 
-type LastReportGenerationExecutionErrors = js.Array[typings.awsSdk.appstreamMod.LastReportGenerationExecutionError]
+type LastReportGenerationExecutionErrors = js.Array[LastReportGenerationExecutionError]
 
-type Long = scala.Double
+type Long = Double
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUPPRESS
   - typings.awsSdk.awsSdkStrings.RESEND
   - java.lang.String
 */
-type MessageAction = typings.awsSdk.appstreamMod._MessageAction | java.lang.String
+type MessageAction = _MessageAction | java.lang.String
 
-type Metadata = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.appstreamMod.String]
+type Metadata = StringDictionary[String]
 
 type Name = java.lang.String
 
 type OrganizationalUnitDistinguishedName = java.lang.String
 
-type OrganizationalUnitDistinguishedNamesList = js.Array[typings.awsSdk.appstreamMod.OrganizationalUnitDistinguishedName]
+type OrganizationalUnitDistinguishedNamesList = js.Array[OrganizationalUnitDistinguishedName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type Permission = typings.awsSdk.appstreamMod._Permission | java.lang.String
+type Permission = _Permission | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WINDOWS
   - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2016
   - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2019
+  - typings.awsSdk.awsSdkStrings.AMAZON_LINUX2
   - java.lang.String
 */
-type PlatformType = typings.awsSdk.appstreamMod._PlatformType | java.lang.String
+type PlatformType = _PlatformType | java.lang.String
+
+type Platforms = js.Array[PlatformType]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TCP
+  - typings.awsSdk.awsSdkStrings.UDP
+  - java.lang.String
+*/
+type PreferredProtocol = _PreferredProtocol | java.lang.String
 
 type RedirectURL = java.lang.String
 
 type RegionName = java.lang.String
 
-type ResourceErrors = js.Array[typings.awsSdk.appstreamMod.ResourceError]
+type ResourceErrors = js.Array[ResourceError]
 
 type ResourceIdentifier = java.lang.String
 
-type SecurityGroupIdList = js.Array[typings.awsSdk.appstreamMod.String]
+type S3Bucket = java.lang.String
+
+type S3Key = java.lang.String
+
+type SecurityGroupIdList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONNECTED
   - typings.awsSdk.awsSdkStrings.NOT_CONNECTED
   - java.lang.String
 */
-type SessionConnectionState = typings.awsSdk.appstreamMod._SessionConnectionState | java.lang.String
+type SessionConnectionState = _SessionConnectionState | java.lang.String
 
-type SessionList = js.Array[typings.awsSdk.appstreamMod.Session]
+type SessionList = js.Array[Session]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -239,11 +293,11 @@ type SessionList = js.Array[typings.awsSdk.appstreamMod.Session]
   - typings.awsSdk.awsSdkStrings.EXPIRED
   - java.lang.String
 */
-type SessionState = typings.awsSdk.appstreamMod._SessionState | java.lang.String
+type SessionState = _SessionState | java.lang.String
 
 type SettingsGroup = java.lang.String
 
-type SharedImagePermissionsList = js.Array[typings.awsSdk.appstreamMod.SharedImagePermissions]
+type SharedImagePermissionsList = js.Array[SharedImagePermissions]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STORAGE_CONNECTORS
@@ -257,24 +311,25 @@ type SharedImagePermissionsList = js.Array[typings.awsSdk.appstreamMod.SharedIma
   - typings.awsSdk.awsSdkStrings.EMBED_HOST_DOMAINS
   - typings.awsSdk.awsSdkStrings.IAM_ROLE_ARN
   - typings.awsSdk.awsSdkStrings.ACCESS_ENDPOINTS
+  - typings.awsSdk.awsSdkStrings.STREAMING_EXPERIENCE_SETTINGS
   - java.lang.String
 */
-type StackAttribute = typings.awsSdk.appstreamMod._StackAttribute | java.lang.String
+type StackAttribute = _StackAttribute | java.lang.String
 
-type StackAttributes = js.Array[typings.awsSdk.appstreamMod.StackAttribute]
+type StackAttributes = js.Array[StackAttribute]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STORAGE_CONNECTOR_ERROR
   - typings.awsSdk.awsSdkStrings.INTERNAL_SERVICE_ERROR
   - java.lang.String
 */
-type StackErrorCode = typings.awsSdk.appstreamMod._StackErrorCode | java.lang.String
+type StackErrorCode = _StackErrorCode | java.lang.String
 
-type StackErrors = js.Array[typings.awsSdk.appstreamMod.StackError]
+type StackErrors = js.Array[StackError]
 
-type StackList = js.Array[typings.awsSdk.appstreamMod.Stack]
+type StackList = js.Array[Stack]
 
-type StorageConnectorList = js.Array[typings.awsSdk.appstreamMod.StorageConnector]
+type StorageConnectorList = js.Array[StorageConnector]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HOMEFOLDERS
@@ -282,32 +337,32 @@ type StorageConnectorList = js.Array[typings.awsSdk.appstreamMod.StorageConnecto
   - typings.awsSdk.awsSdkStrings.ONE_DRIVE
   - java.lang.String
 */
-type StorageConnectorType = typings.awsSdk.appstreamMod._StorageConnectorType | java.lang.String
+type StorageConnectorType = _StorageConnectorType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.APP
   - typings.awsSdk.awsSdkStrings.DESKTOP
   - java.lang.String
 */
-type StreamView = typings.awsSdk.appstreamMod._StreamView | java.lang.String
+type StreamView = _StreamView | java.lang.String
 
 type StreamingUrlUserId = java.lang.String
 
 type String = java.lang.String
 
-type StringList = js.Array[typings.awsSdk.appstreamMod.String]
+type StringList = js.Array[String]
 
-type SubnetIdList = js.Array[typings.awsSdk.appstreamMod.String]
+type SubnetIdList = js.Array[String]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.appstreamMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
 type TagValue = java.lang.String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.appstreamMod.TagValue]
+type Tags = StringDictionary[TagValue]
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RESOURCE_NOT_FOUND
@@ -315,19 +370,23 @@ type Timestamp = typings.std.Date
   - typings.awsSdk.awsSdkStrings.INTERNAL_SERVICE_ERROR
   - java.lang.String
 */
-type UsageReportExecutionErrorCode = typings.awsSdk.appstreamMod._UsageReportExecutionErrorCode | java.lang.String
+type UsageReportExecutionErrorCode = _UsageReportExecutionErrorCode | java.lang.String
 
-type UsageReportSchedule = typings.awsSdk.awsSdkStrings.DAILY | java.lang.String
+type UsageReportSchedule = DAILY | java.lang.String
 
-type UsageReportSubscriptionList = js.Array[typings.awsSdk.appstreamMod.UsageReportSubscription]
+type UsageReportSubscriptionList = js.Array[UsageReportSubscription]
+
+type UsbDeviceFilterString = java.lang.String
+
+type UsbDeviceFilterStrings = js.Array[UsbDeviceFilterString]
 
 type UserAttributeValue = java.lang.String
 
 type UserId = java.lang.String
 
-type UserList = js.Array[typings.awsSdk.appstreamMod.User]
+type UserList = js.Array[User]
 
-type UserSettingList = js.Array[typings.awsSdk.appstreamMod.UserSetting]
+type UserSettingList = js.Array[UserSetting]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STACK_NOT_FOUND
@@ -336,11 +395,11 @@ type UserSettingList = js.Array[typings.awsSdk.appstreamMod.UserSetting]
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
   - java.lang.String
 */
-type UserStackAssociationErrorCode = typings.awsSdk.appstreamMod._UserStackAssociationErrorCode | java.lang.String
+type UserStackAssociationErrorCode = _UserStackAssociationErrorCode | java.lang.String
 
-type UserStackAssociationErrorList = js.Array[typings.awsSdk.appstreamMod.UserStackAssociationError]
+type UserStackAssociationErrorList = js.Array[UserStackAssociationError]
 
-type UserStackAssociationList = js.Array[typings.awsSdk.appstreamMod.UserStackAssociation]
+type UserStackAssociationList = js.Array[UserStackAssociation]
 
 type Username = java.lang.String
 
@@ -350,11 +409,11 @@ type Username = java.lang.String
   - typings.awsSdk.awsSdkStrings.SHARED
   - java.lang.String
 */
-type VisibilityType = typings.awsSdk.appstreamMod._VisibilityType | java.lang.String
+type VisibilityType = _VisibilityType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-12-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.appstreamMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

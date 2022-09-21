@@ -29,7 +29,7 @@ object VolumeStatusInfo {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    inline def setDetailsVarargs(value: VolumeStatusDetails*): Self = StObject.set(x, "Details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: VolumeStatusDetails*): Self = StObject.set(x, "Details", js.Array(value*))
     
     inline def setStatus(value: VolumeStatusInfoStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

@@ -1,13 +1,19 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.antdStrings._empty
+import typings.antd.antdStrings.`use-credentials`
+import typings.antd.antdStrings.anonymous
 import typings.antd.antdStrings.circle
 import typings.antd.antdStrings.square
 import typings.antd.sizeContextMod.AvatarSize
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +22,7 @@ object avatarAvatarMod extends Shortcut {
   
   @JSImport("antd/lib/avatar/avatar", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[AvatarProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[AvatarProps & RefAttributes[Any]] = js.native
   
   trait AvatarProps extends StObject {
     
@@ -26,18 +32,24 @@ object avatarAvatarMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var crossOrigin: js.UndefOr[_empty | anonymous | `use-credentials`] = js.undefined
+    
     var draggable: js.UndefOr[Boolean] = js.undefined
     
     var gap: js.UndefOr[Double] = js.undefined
     
-    /** icon to be used in avatar */
+    /** Icon to be used in avatar */
     var icon: js.UndefOr[ReactNode] = js.undefined
+    
+    var onClick: js.UndefOr[
+        js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], Unit]
+      ] = js.undefined
     
     var onError: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    /** Shape of avatar, options:`circle`, `square` */
+    /** Shape of avatar, options: `circle`, `square` */
     var shape: js.UndefOr[circle | square] = js.undefined
     
     var size: js.UndefOr[AvatarSize] = js.undefined
@@ -71,6 +83,10 @@ object avatarAvatarMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCrossOrigin(value: _empty | anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      
       inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
@@ -82,6 +98,10 @@ object avatarAvatarMod extends Shortcut {
       inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setOnClick(value: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnError(value: () => Boolean): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       
@@ -113,8 +133,8 @@ object avatarAvatarMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[AvatarProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[AvatarProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `avatarAvatarMod.foo` */
-  override def _to: ForwardRefExoticComponent[AvatarProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[AvatarProps & RefAttributes[Any]] = default
 }

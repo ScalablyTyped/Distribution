@@ -11,9 +11,9 @@ Karma runner plugin for detecting all browsers installed on the current system.
 | Full name          | karma-detect-browsers |
 | Keywords           | karma-plugin, karma-launcher, browser, browsers, Safari, Safari Tech Preview, SafariTechPreview, IE, Edge, Chrome, Chrome Canary, Chrome Headless, Chromium, Firefox, Opera |
 | # releases         | 1 |
-| # dependents       | 79 |
-| # downloads        | 512154 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 241475.33333333334 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/litixsoft/karma-detect-browsers)

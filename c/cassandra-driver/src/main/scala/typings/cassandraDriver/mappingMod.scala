@@ -15,7 +15,7 @@ object mappingMod {
     
     @JSImport("cassandra-driver/lib/mapping", "mapping.DefaultTableMappings")
     @js.native
-    class DefaultTableMappings ()
+    open class DefaultTableMappings ()
       extends StObject
          with TableMappings {
       
@@ -26,25 +26,25 @@ object mappingMod {
       override def getPropertyName(columnName: String): String = js.native
       
       /* CompleteClass */
-      override def newObjectInstance(): js.Any = js.native
+      override def newObjectInstance(): Any = js.native
     }
     
     @JSImport("cassandra-driver/lib/mapping", "mapping.Mapper")
     @js.native
-    class Mapper protected () extends StObject {
+    open class Mapper protected () extends StObject {
       def this(client: Client) = this()
       def this(client: Client, options: MappingOptions) = this()
       
-      def batch(items: js.Array[ModelBatchItem]): js.Promise[Result[js.Any]] = js.native
-      def batch(items: js.Array[ModelBatchItem], executionOptions: String): js.Promise[Result[js.Any]] = js.native
-      def batch(items: js.Array[ModelBatchItem], executionOptions: MappingExecutionOptions): js.Promise[Result[js.Any]] = js.native
+      def batch(items: js.Array[ModelBatchItem]): js.Promise[Result[Any]] = js.native
+      def batch(items: js.Array[ModelBatchItem], executionOptions: String): js.Promise[Result[Any]] = js.native
+      def batch(items: js.Array[ModelBatchItem], executionOptions: MappingExecutionOptions): js.Promise[Result[Any]] = js.native
       
       def forModel[T](name: String): ModelMapper[T] = js.native
     }
     
     @JSImport("cassandra-driver/lib/mapping", "mapping.UnderscoreCqlToCamelCaseMappings")
     @js.native
-    class UnderscoreCqlToCamelCaseMappings ()
+    open class UnderscoreCqlToCamelCaseMappings ()
       extends StObject
          with TableMappings {
       
@@ -55,7 +55,7 @@ object mappingMod {
       override def getPropertyName(columnName: String): String = js.native
       
       /* CompleteClass */
-      override def newObjectInstance(): js.Any = js.native
+      override def newObjectInstance(): Any = js.native
     }
     
     object q {
@@ -64,29 +64,29 @@ object mappingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def and(condition1: js.Any, condition2: js.Any): QueryOperator = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(condition1.asInstanceOf[js.Any], condition2.asInstanceOf[js.Any])).asInstanceOf[QueryOperator]
+      inline def and(condition1: Any, condition2: Any): QueryOperator = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(condition1.asInstanceOf[js.Any], condition2.asInstanceOf[js.Any])).asInstanceOf[QueryOperator]
       
-      inline def append(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def append(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def decr(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("decr")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def decr(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("decr")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def gt(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def gt(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def gte(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("gte")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def gte(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("gte")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def in(arr: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("in_")(arr.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def in(arr: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("in_")(arr.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def incr(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("incr")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def incr(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("incr")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def lt(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def lt(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def lte(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("lte")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def lte(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("lte")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def notEq(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("notEq")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def notEq(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("notEq")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def prepend(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def prepend(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      inline def remove(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      inline def remove(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
       trait QueryOperator extends StObject
     }
@@ -112,7 +112,7 @@ object mappingMod {
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
@@ -145,7 +145,7 @@ object mappingMod {
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
         
@@ -228,23 +228,23 @@ object mappingMod {
     @js.native
     trait ModelBatchMapper extends StObject {
       
-      def insert(doc: js.Any): ModelBatchItem = js.native
-      def insert(doc: js.Any, docInfo: InsertDocInfo): ModelBatchItem = js.native
+      def insert(doc: Any): ModelBatchItem = js.native
+      def insert(doc: Any, docInfo: InsertDocInfo): ModelBatchItem = js.native
       
-      def remove(doc: js.Any): ModelBatchItem = js.native
-      def remove(doc: js.Any, docInfo: RemoveDocInfo): ModelBatchItem = js.native
+      def remove(doc: Any): ModelBatchItem = js.native
+      def remove(doc: Any, docInfo: RemoveDocInfo): ModelBatchItem = js.native
       
-      def update(doc: js.Any): ModelBatchItem = js.native
-      def update(doc: js.Any, docInfo: UpdateDocInfo): ModelBatchItem = js.native
+      def update(doc: Any): ModelBatchItem = js.native
+      def update(doc: Any, docInfo: UpdateDocInfo): ModelBatchItem = js.native
     }
     
     trait ModelColumnOptions extends StObject {
       
-      var fromModel: js.UndefOr[js.Function1[/* modelValue */ js.Any, js.Any]] = js.undefined
+      var fromModel: js.UndefOr[js.Function1[/* modelValue */ Any, Any]] = js.undefined
       
       var name: String
       
-      var toModel: js.UndefOr[js.Function1[/* columnValue */ js.Any, js.Any]] = js.undefined
+      var toModel: js.UndefOr[js.Function1[/* columnValue */ Any, Any]] = js.undefined
     }
     object ModelColumnOptions {
       
@@ -255,13 +255,13 @@ object mappingMod {
       
       extension [Self <: ModelColumnOptions](x: Self) {
         
-        inline def setFromModel(value: /* modelValue */ js.Any => js.Any): Self = StObject.set(x, "fromModel", js.Any.fromFunction1(value))
+        inline def setFromModel(value: /* modelValue */ Any => Any): Self = StObject.set(x, "fromModel", js.Any.fromFunction1(value))
         
         inline def setFromModelUndefined: Self = StObject.set(x, "fromModel", js.undefined)
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        inline def setToModel(value: /* columnValue */ js.Any => js.Any): Self = StObject.set(x, "toModel", js.Any.fromFunction1(value))
+        inline def setToModel(value: /* columnValue */ Any => Any): Self = StObject.set(x, "toModel", js.Any.fromFunction1(value))
         
         inline def setToModelUndefined: Self = StObject.set(x, "toModel", js.undefined)
       }
@@ -272,12 +272,12 @@ object mappingMod {
       
       var batching: ModelBatchMapper = js.native
       
-      def find(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
-      def find(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
-      def find(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
-      def find(doc: StringDictionary[js.Any], docInfo: FindDocInfo): js.Promise[Result[T]] = js.native
-      def find(doc: StringDictionary[js.Any], docInfo: FindDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
-      def find(doc: StringDictionary[js.Any], docInfo: FindDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def find(doc: StringDictionary[Any]): js.Promise[Result[T]] = js.native
+      def find(doc: StringDictionary[Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def find(doc: StringDictionary[Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def find(doc: StringDictionary[Any], docInfo: FindDocInfo): js.Promise[Result[T]] = js.native
+      def find(doc: StringDictionary[Any], docInfo: FindDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
+      def find(doc: StringDictionary[Any], docInfo: FindDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       
       def findAll(): js.Promise[Result[T]] = js.native
       def findAll(docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
@@ -286,59 +286,55 @@ object mappingMod {
       def findAll(docInfo: FindDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
       def findAll(docInfo: FindDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       
-      def get(doc: StringDictionary[js.Any]): js.Promise[Null | T] = js.native
-      def get(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Null | T] = js.native
-      def get(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Null | T] = js.native
-      def get(doc: StringDictionary[js.Any], docInfo: Fields): js.Promise[Null | T] = js.native
-      def get(doc: StringDictionary[js.Any], docInfo: Fields, executionOptions: String): js.Promise[Null | T] = js.native
-      def get(doc: StringDictionary[js.Any], docInfo: Fields, executionOptions: MappingExecutionOptions): js.Promise[Null | T] = js.native
+      def get(doc: StringDictionary[Any]): js.Promise[Null | T] = js.native
+      def get(doc: StringDictionary[Any], docInfo: Unit, executionOptions: String): js.Promise[Null | T] = js.native
+      def get(doc: StringDictionary[Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Null | T] = js.native
+      def get(doc: StringDictionary[Any], docInfo: Fields): js.Promise[Null | T] = js.native
+      def get(doc: StringDictionary[Any], docInfo: Fields, executionOptions: String): js.Promise[Null | T] = js.native
+      def get(doc: StringDictionary[Any], docInfo: Fields, executionOptions: MappingExecutionOptions): js.Promise[Null | T] = js.native
       
-      def insert(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
-      def insert(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
-      def insert(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
-      def insert(doc: StringDictionary[js.Any], docInfo: InsertDocInfo): js.Promise[Result[T]] = js.native
-      def insert(doc: StringDictionary[js.Any], docInfo: InsertDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
-      def insert(doc: StringDictionary[js.Any], docInfo: InsertDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def insert(doc: StringDictionary[Any]): js.Promise[Result[T]] = js.native
+      def insert(doc: StringDictionary[Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def insert(doc: StringDictionary[Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def insert(doc: StringDictionary[Any], docInfo: InsertDocInfo): js.Promise[Result[T]] = js.native
+      def insert(doc: StringDictionary[Any], docInfo: InsertDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
+      def insert(doc: StringDictionary[Any], docInfo: InsertDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       
-      def mapWithQuery(query: String, paramsHandler: js.Function1[/* doc */ js.Any, js.Array[js.Any]]): js.Function2[
-            /* doc */ js.Any, 
+      def mapWithQuery(query: String, paramsHandler: js.Function1[/* doc */ Any, js.Array[Any]]): js.Function2[
+            /* doc */ Any, 
+            /* executionOptions */ js.UndefOr[String | MappingExecutionOptions], 
+            js.Promise[Result[T]]
+          ] = js.native
+      def mapWithQuery(query: String, paramsHandler: js.Function1[/* doc */ Any, js.Array[Any]], executionOptions: String): js.Function2[
+            /* doc */ Any, 
             /* executionOptions */ js.UndefOr[String | MappingExecutionOptions], 
             js.Promise[Result[T]]
           ] = js.native
       def mapWithQuery(
         query: String,
-        paramsHandler: js.Function1[/* doc */ js.Any, js.Array[js.Any]],
-        executionOptions: String
-      ): js.Function2[
-            /* doc */ js.Any, 
-            /* executionOptions */ js.UndefOr[String | MappingExecutionOptions], 
-            js.Promise[Result[T]]
-          ] = js.native
-      def mapWithQuery(
-        query: String,
-        paramsHandler: js.Function1[/* doc */ js.Any, js.Array[js.Any]],
+        paramsHandler: js.Function1[/* doc */ Any, js.Array[Any]],
         executionOptions: MappingExecutionOptions
       ): js.Function2[
-            /* doc */ js.Any, 
+            /* doc */ Any, 
             /* executionOptions */ js.UndefOr[String | MappingExecutionOptions], 
             js.Promise[Result[T]]
           ] = js.native
       
       var name: String = js.native
       
-      def remove(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
-      def remove(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
-      def remove(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
-      def remove(doc: StringDictionary[js.Any], docInfo: RemoveDocInfo): js.Promise[Result[T]] = js.native
-      def remove(doc: StringDictionary[js.Any], docInfo: RemoveDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
-      def remove(doc: StringDictionary[js.Any], docInfo: RemoveDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def remove(doc: StringDictionary[Any]): js.Promise[Result[T]] = js.native
+      def remove(doc: StringDictionary[Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def remove(doc: StringDictionary[Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def remove(doc: StringDictionary[Any], docInfo: RemoveDocInfo): js.Promise[Result[T]] = js.native
+      def remove(doc: StringDictionary[Any], docInfo: RemoveDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
+      def remove(doc: StringDictionary[Any], docInfo: RemoveDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       
-      def update(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
-      def update(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
-      def update(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
-      def update(doc: StringDictionary[js.Any], docInfo: UpdateDocInfo): js.Promise[Result[T]] = js.native
-      def update(doc: StringDictionary[js.Any], docInfo: UpdateDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
-      def update(doc: StringDictionary[js.Any], docInfo: UpdateDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def update(doc: StringDictionary[Any]): js.Promise[Result[T]] = js.native
+      def update(doc: StringDictionary[Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def update(doc: StringDictionary[Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def update(doc: StringDictionary[Any], docInfo: UpdateDocInfo): js.Promise[Result[T]] = js.native
+      def update(doc: StringDictionary[Any], docInfo: UpdateDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
+      def update(doc: StringDictionary[Any], docInfo: UpdateDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
     }
     
     trait ModelOptions extends StObject {
@@ -376,7 +372,7 @@ object mappingMod {
         
         inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
         
-        inline def setTablesVarargs(value: (ModelTables | String)*): Self = StObject.set(x, "tables", js.Array(value :_*))
+        inline def setTablesVarargs(value: (ModelTables | String)*): Self = StObject.set(x, "tables", js.Array(value*))
       }
     }
     
@@ -411,7 +407,7 @@ object mappingMod {
       
       var ttl: js.UndefOr[Double] = js.undefined
       
-      var when: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+      var when: js.UndefOr[StringDictionary[Any]] = js.undefined
     }
     object RemoveDocInfo {
       
@@ -430,7 +426,7 @@ object mappingMod {
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
         
@@ -440,7 +436,7 @@ object mappingMod {
         
         inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
         
-        inline def setWhen(value: StringDictionary[js.Any]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+        inline def setWhen(value: StringDictionary[Any]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
         
         inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
       }
@@ -449,12 +445,12 @@ object mappingMod {
     @js.native
     trait Result[T]
       extends StObject
-         with Iterator[T, js.Any, Unit] {
+         with Iterator[T, Any, Unit] {
       
       def first(): T | Null = js.native
       
       def forEach(callback: js.Function2[/* currentValue */ T, /* index */ Double, Unit]): Unit = js.native
-      def forEach(callback: js.Function2[/* currentValue */ T, /* index */ Double, Unit], thisArg: js.Any): Unit = js.native
+      def forEach(callback: js.Function2[/* currentValue */ T, /* index */ Double, Unit], thisArg: Any): Unit = js.native
       
       def toArray(): js.Array[T] = js.native
       
@@ -467,15 +463,11 @@ object mappingMod {
       
       def getPropertyName(columnName: String): String
       
-      def newObjectInstance(): js.Any
+      def newObjectInstance(): Any
     }
     object TableMappings {
       
-      inline def apply(
-        getColumnName: String => String,
-        getPropertyName: String => String,
-        newObjectInstance: () => js.Any
-      ): TableMappings = {
+      inline def apply(getColumnName: String => String, getPropertyName: String => String, newObjectInstance: () => Any): TableMappings = {
         val __obj = js.Dynamic.literal(getColumnName = js.Any.fromFunction1(getColumnName), getPropertyName = js.Any.fromFunction1(getPropertyName), newObjectInstance = js.Any.fromFunction0(newObjectInstance))
         __obj.asInstanceOf[TableMappings]
       }
@@ -486,7 +478,7 @@ object mappingMod {
         
         inline def setGetPropertyName(value: String => String): Self = StObject.set(x, "getPropertyName", js.Any.fromFunction1(value))
         
-        inline def setNewObjectInstance(value: () => js.Any): Self = StObject.set(x, "newObjectInstance", js.Any.fromFunction0(value))
+        inline def setNewObjectInstance(value: () => Any): Self = StObject.set(x, "newObjectInstance", js.Any.fromFunction0(value))
       }
     }
     
@@ -504,7 +496,7 @@ object mappingMod {
       
       var ttl: js.UndefOr[Double] = js.undefined
       
-      var when: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+      var when: js.UndefOr[StringDictionary[Any]] = js.undefined
     }
     object UpdateDocInfo {
       
@@ -523,7 +515,7 @@ object mappingMod {
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
         
@@ -541,7 +533,7 @@ object mappingMod {
         
         inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
         
-        inline def setWhen(value: StringDictionary[js.Any]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+        inline def setWhen(value: StringDictionary[Any]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
         
         inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
       }

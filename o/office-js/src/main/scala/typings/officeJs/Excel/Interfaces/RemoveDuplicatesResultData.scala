@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveDuplicatesResultData extends StObject {
   
   /**
-    *
     * Number of duplicated rows removed by the operation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var removed: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Number of remaining unique rows present in the resulting range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var uniqueRemaining: js.UndefOr[Double] = js.undefined

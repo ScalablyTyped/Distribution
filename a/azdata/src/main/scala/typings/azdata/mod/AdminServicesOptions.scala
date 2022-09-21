@@ -27,14 +27,14 @@ object AdminServicesOptions {
     
     inline def setDatabaseFileInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseFileInfoOptions", value.asInstanceOf[js.Any])
     
-    inline def setDatabaseFileInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseFileInfoOptions", js.Array(value :_*))
+    inline def setDatabaseFileInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseFileInfoOptions", js.Array(value*))
     
     inline def setDatabaseInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseInfoOptions", value.asInstanceOf[js.Any])
     
-    inline def setDatabaseInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseInfoOptions", js.Array(value :_*))
+    inline def setDatabaseInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseInfoOptions", js.Array(value*))
     
     inline def setFileGroupInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "fileGroupInfoOptions", value.asInstanceOf[js.Any])
     
-    inline def setFileGroupInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "fileGroupInfoOptions", js.Array(value :_*))
+    inline def setFileGroupInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "fileGroupInfoOptions", js.Array(value*))
   }
 }

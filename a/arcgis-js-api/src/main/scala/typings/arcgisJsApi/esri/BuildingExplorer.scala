@@ -10,6 +10,15 @@ trait BuildingExplorer
      with Widget_ {
   
   /**
+    * Indicates the heading level to use for the headings in the widget.
+    *
+    * @default 3
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
+  
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#iconClass)
@@ -17,7 +26,7 @@ trait BuildingExplorer
   var iconClass: String = js.native
   
   /**
-    * A collection of layers of type [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) that are added to the widget for exploration.
+    * A [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of layers of type [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) that are added to the widget for exploration.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#layers)
     */

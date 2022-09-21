@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActiveDirectoryBackupAttributes extends StObject {
   
   /**
-    * The ID of the AWS Managed Microsoft Active Directory instance to which the file system is joined.
+    * The ID of the Amazon Web Services Managed Microsoft Active Directory instance to which the file system is joined.
     */
   var ActiveDirectoryId: js.UndefOr[DirectoryId] = js.undefined
   
   /**
-    * The fully qualified domain name of the self-managed AD directory.
+    * The fully qualified domain name of the self-managed Active Directory directory.
     */
   var DomainName: js.UndefOr[ActiveDirectoryFullyQualifiedName] = js.undefined
+  
+  var ResourceARN: js.UndefOr[typings.awsSdk.fsxMod.ResourceARN] = js.undefined
 }
 object ActiveDirectoryBackupAttributes {
   
@@ -32,5 +34,9 @@ object ActiveDirectoryBackupAttributes {
     inline def setDomainName(value: ActiveDirectoryFullyQualifiedName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    
+    inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
   }
 }

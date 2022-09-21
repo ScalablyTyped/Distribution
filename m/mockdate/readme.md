@@ -1,7 +1,7 @@
 
 # Scala.js typings for mockdate
 
-Typings are for version 2.0
+Typings are for version 3.0.5
 
 ## Library description:
 A JavaScript mock Date object that can be used to change when "now" is.
@@ -10,21 +10,18 @@ A JavaScript mock Date object that can be used to change when "now" is.
 | ------------------ | :-------------: |
 | Full name          | mockdate |
 | Keywords           | date, mock, test |
-| # releases         | 7 |
-| # dependents       | 34 |
-| # downloads        | 15905941 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 5566420.666666667 |
+| # stars            | 575.0 |
 
 ## Links
-- [Homepage](https://github.com/boblauer/MockDate)
-- [Bugs](https://github.com/boblauer/MockDate/issues)
-- [Repository](https://github.com/boblauer/MockDate)
 - [Npm](https://www.npmjs.com/package/mockdate)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

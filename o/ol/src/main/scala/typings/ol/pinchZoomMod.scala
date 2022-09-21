@@ -8,7 +8,7 @@ object pinchZoomMod {
   
   @JSImport("ol/interaction/PinchZoom", JSImport.Default)
   @js.native
-  class default () extends PinchZoom {
+  open class default () extends PinchZoom {
     def this(opt_options: Options) = this()
   }
   

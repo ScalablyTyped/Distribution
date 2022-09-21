@@ -25,6 +25,6 @@ object PullResponse {
     
     inline def setReceivedMessagesUndefined: Self = StObject.set(x, "receivedMessages", js.undefined)
     
-    inline def setReceivedMessagesVarargs(value: ReceivedMessage*): Self = StObject.set(x, "receivedMessages", js.Array(value :_*))
+    inline def setReceivedMessagesVarargs(value: ReceivedMessage*): Self = StObject.set(x, "receivedMessages", js.Array(value*))
   }
 }

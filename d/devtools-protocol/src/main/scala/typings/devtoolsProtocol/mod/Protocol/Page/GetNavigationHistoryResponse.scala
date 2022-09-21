@@ -30,6 +30,6 @@ object GetNavigationHistoryResponse {
     
     inline def setEntries(value: js.Array[NavigationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: NavigationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: NavigationEntry*): Self = StObject.set(x, "entries", js.Array(value*))
   }
 }

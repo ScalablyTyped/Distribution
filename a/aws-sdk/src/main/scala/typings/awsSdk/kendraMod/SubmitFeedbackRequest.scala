@@ -17,7 +17,7 @@ trait SubmitFeedbackRequest extends StObject {
   var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
-    * The identifier of the specific query for which you are submitting feedback. The query ID is returned in the response to the operation.
+    * The identifier of the specific query for which you are submitting feedback. The query ID is returned in the response to the Query API.
     */
   var QueryId: typings.awsSdk.kendraMod.QueryId
   
@@ -39,7 +39,7 @@ object SubmitFeedbackRequest {
     
     inline def setClickFeedbackItemsUndefined: Self = StObject.set(x, "ClickFeedbackItems", js.undefined)
     
-    inline def setClickFeedbackItemsVarargs(value: ClickFeedback*): Self = StObject.set(x, "ClickFeedbackItems", js.Array(value :_*))
+    inline def setClickFeedbackItemsVarargs(value: ClickFeedback*): Self = StObject.set(x, "ClickFeedbackItems", js.Array(value*))
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     
@@ -49,6 +49,6 @@ object SubmitFeedbackRequest {
     
     inline def setRelevanceFeedbackItemsUndefined: Self = StObject.set(x, "RelevanceFeedbackItems", js.undefined)
     
-    inline def setRelevanceFeedbackItemsVarargs(value: RelevanceFeedback*): Self = StObject.set(x, "RelevanceFeedbackItems", js.Array(value :_*))
+    inline def setRelevanceFeedbackItemsVarargs(value: RelevanceFeedback*): Self = StObject.set(x, "RelevanceFeedbackItems", js.Array(value*))
   }
 }

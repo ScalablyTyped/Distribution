@@ -10,15 +10,12 @@ Maps environment variables to a configuration object.
 | ------------------ | :-------------: |
 | Full name          | env-to-object |
 | Keywords           | utilities, utils, env, environment, variables, object, config, configuration, map, obj, convert, coerce |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2715 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 204.66666666666666 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/kgryte/node-env-to-object#readme)
-- [Bugs](https://github.com/kgryte/node-env-to-object/issues)
-- [Repository](https://github.com/kgryte/node-env-to-object)
 - [Npm](https://www.npmjs.com/package/env-to-object)
     
 

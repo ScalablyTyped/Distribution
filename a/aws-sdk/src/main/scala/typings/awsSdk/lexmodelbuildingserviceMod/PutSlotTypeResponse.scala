@@ -19,7 +19,7 @@ trait PutSlotTypeResponse extends StObject {
   /**
     * The date that the slot type was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the slot type.
@@ -34,7 +34,7 @@ trait PutSlotTypeResponse extends StObject {
   /**
     * The date that the slot type was updated. When you create a slot type, the creation date and last update date are the same.
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the slot type.
@@ -78,7 +78,7 @@ object PutSlotTypeResponse {
     
     inline def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
@@ -90,9 +90,9 @@ object PutSlotTypeResponse {
     
     inline def setEnumerationValuesUndefined: Self = StObject.set(x, "enumerationValues", js.undefined)
     
-    inline def setEnumerationValuesVarargs(value: EnumerationValue*): Self = StObject.set(x, "enumerationValues", js.Array(value :_*))
+    inline def setEnumerationValuesVarargs(value: EnumerationValue*): Self = StObject.set(x, "enumerationValues", js.Array(value*))
     
-    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
@@ -108,7 +108,7 @@ object PutSlotTypeResponse {
     
     inline def setSlotTypeConfigurationsUndefined: Self = StObject.set(x, "slotTypeConfigurations", js.undefined)
     
-    inline def setSlotTypeConfigurationsVarargs(value: SlotTypeConfiguration*): Self = StObject.set(x, "slotTypeConfigurations", js.Array(value :_*))
+    inline def setSlotTypeConfigurationsVarargs(value: SlotTypeConfiguration*): Self = StObject.set(x, "slotTypeConfigurations", js.Array(value*))
     
     inline def setValueSelectionStrategy(value: SlotValueSelectionStrategy): Self = StObject.set(x, "valueSelectionStrategy", value.asInstanceOf[js.Any])
     

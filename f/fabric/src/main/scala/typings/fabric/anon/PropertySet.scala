@@ -8,7 +8,7 @@ trait PropertySet extends StObject {
   
   var propertySet: js.UndefOr[String] = js.undefined
   
-  var stateProperties: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var stateProperties: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object PropertySet {
   
@@ -23,10 +23,10 @@ object PropertySet {
     
     inline def setPropertySetUndefined: Self = StObject.set(x, "propertySet", js.undefined)
     
-    inline def setStateProperties(value: js.Array[js.Any]): Self = StObject.set(x, "stateProperties", value.asInstanceOf[js.Any])
+    inline def setStateProperties(value: js.Array[Any]): Self = StObject.set(x, "stateProperties", value.asInstanceOf[js.Any])
     
     inline def setStatePropertiesUndefined: Self = StObject.set(x, "stateProperties", js.undefined)
     
-    inline def setStatePropertiesVarargs(value: js.Any*): Self = StObject.set(x, "stateProperties", js.Array(value :_*))
+    inline def setStatePropertiesVarargs(value: Any*): Self = StObject.set(x, "stateProperties", js.Array(value*))
   }
 }

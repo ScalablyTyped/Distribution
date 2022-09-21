@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait MappingRuleMatchType extends StObject
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MappingRuleMatchType")
+@JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "MappingRuleMatchType")
 @js.native
 object MappingRuleMatchType extends StObject {
   

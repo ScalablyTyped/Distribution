@@ -44,6 +44,6 @@ object EnumPropertyOptions {
     
     inline def setPossibleValuesUndefined: Self = StObject.set(x, "possibleValues", js.undefined)
     
-    inline def setPossibleValuesVarargs(value: EnumValuePair*): Self = StObject.set(x, "possibleValues", js.Array(value :_*))
+    inline def setPossibleValuesVarargs(value: EnumValuePair*): Self = StObject.set(x, "possibleValues", js.Array(value*))
   }
 }

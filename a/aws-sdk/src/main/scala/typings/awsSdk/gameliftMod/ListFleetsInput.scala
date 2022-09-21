@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListFleetsInput extends StObject {
   
   /**
-    * A unique identifier for a build to return fleets for. Use this parameter to return only fleets using a specified build. Use either the build ID or ARN value. To retrieve all fleets, do not include either a BuildId and ScriptID parameter.
+    * A unique identifier for the build to request fleets for. Use this parameter to return only fleets using a specified build. Use either the build ID or ARN value.
     */
   var BuildId: js.UndefOr[BuildIdOrArn] = js.undefined
   
@@ -17,12 +17,12 @@ trait ListFleetsInput extends StObject {
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * Token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
+    * A token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * A unique identifier for a Realtime script to return fleets for. Use this parameter to return only fleets using a specified script. Use either the script ID or ARN value. To retrieve all fleets, leave this parameter empty.
+    * A unique identifier for the Realtime script to request fleets for. Use this parameter to return only fleets using a specified script. Use either the script ID or ARN value.
     */
   var ScriptId: js.UndefOr[ScriptIdOrArn] = js.undefined
 }

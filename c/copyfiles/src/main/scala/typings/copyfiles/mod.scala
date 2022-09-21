@@ -1,7 +1,6 @@
 package typings.copyfiles
 
 import typings.copyfiles.copyfilesBooleans.`true`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function1[/* error */ js.UndefOr[Error], Unit]
+  type Callback = js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   
   trait Options extends StObject {
     
@@ -71,7 +70,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       

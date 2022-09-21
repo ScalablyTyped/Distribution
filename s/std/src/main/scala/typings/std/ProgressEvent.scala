@@ -10,12 +10,16 @@ trait ProgressEvent[T /* <: EventTarget */]
   extends StObject
      with Event {
   
+  /* standard dom */
   val lengthComputable: scala.Boolean = js.native
   
+  /* standard dom */
   val loaded: Double = js.native
   
+  /* standard dom */
   @JSName("target")
   val target_ProgressEvent: T | Null = js.native
   
+  /* standard dom */
   val total: Double = js.native
 }

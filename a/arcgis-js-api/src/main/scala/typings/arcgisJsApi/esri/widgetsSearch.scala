@@ -9,7 +9,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`search-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`select-result`
 import typings.arcgisJsApi.arcgisJsApiStrings.`suggest-complete`
 import typings.arcgisJsApi.arcgisJsApiStrings.`suggest-start`
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.source
 import typings.arcgisJsApi.arcgisJsApiStrings.suggestion
 import typings.arcgisJsApi.arcgisJsApiStrings.warning
@@ -26,12 +26,16 @@ trait widgetsSearch
   /**
     * The current active menu of the Search widget.
     *
+    * @default none
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeMenu)
     */
-  var activeMenu: none | suggestion | source | warning = js.native
+  var activeMenu: none_ | suggestion | source | warning = js.native
   
   /**
     * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources) object currently selected.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeSource)
     */
@@ -40,12 +44,16 @@ trait widgetsSearch
   /**
     * The selected source's index.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeSourceIndex)
     */
   var activeSourceIndex: Double = js.native
   
   /**
     * String value used as a hint for input text when searching on multiple sources.
+    *
+    * @default "Find address or place"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#allPlaceholder)
     */
@@ -61,6 +69,8 @@ trait widgetsSearch
   /**
     * Indicates whether to automatically select and zoom to the first geocoded result.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#autoSelect)
     */
   var autoSelect: Boolean = js.native
@@ -70,14 +80,14 @@ trait widgetsSearch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#blur)
     */
-  def blur(): Unit = js.native
+  def blur(): scala.Unit = js.native
   
   /**
     * Clears the current searchTerm, search results, suggest results, graphic, and graphics layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#clear)
     */
-  def clear(): Unit = js.native
+  def clear(): scala.Unit = js.native
   
   /**
     * A read-only property that is a [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) and/or [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html).
@@ -89,6 +99,8 @@ trait widgetsSearch
   /**
     * When true, the widget is visually withdrawn and cannot be interacted with.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#disabled)
     */
   var disabled: Boolean = js.native
@@ -98,7 +110,7 @@ trait widgetsSearch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#focus)
     */
-  def focus(): Unit = js.native
+  def focus(): scala.Unit = js.native
   
   /**
     * The widget's default CSS icon class.
@@ -110,12 +122,16 @@ trait widgetsSearch
   /**
     * Indicates whether or not to include [defaultSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources) in the Search UI.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#includeDefaultSources)
     */
   var includeDefaultSources: Boolean | js.Function = js.native
   
   /**
     * Enables location services within the widget.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#locationEnabled)
     */
@@ -124,6 +140,8 @@ trait widgetsSearch
   /**
     * The maximum number of results returned by the widget if not specified by the source.
     *
+    * @default 6
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#maxResults)
     */
   var maxResults: Double = js.native
@@ -131,12 +149,16 @@ trait widgetsSearch
   /**
     * The maximum number of suggestions returned by the widget if not specified by the source.
     *
+    * @default 6
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#maxSuggestions)
     */
   var maxSuggestions: Double = js.native
   
   /**
     * The minimum number of characters needed for the search if not specified by the source.
+    *
+    * @default 3
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#minSuggestCharacters)
     */
@@ -161,6 +183,8 @@ trait widgetsSearch
   
   /**
     * Indicates whether to display the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) on feature click.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#popupEnabled)
     */
@@ -190,6 +214,8 @@ trait widgetsSearch
   /**
     * Indicates if the [resultGraphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#resultGraphic) will display at the location of the selected feature.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#resultGraphicEnabled)
     */
   var resultGraphicEnabled: Boolean = js.native
@@ -199,10 +225,10 @@ trait widgetsSearch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#results)
     */
-  val results: js.Array[js.Any] = js.native
+  val results: js.Array[Any] = js.native
   
   /**
-    * Depending on the sources specified, search() queries the feature layer(s) and/or performs address matching using any specified [Locator(s)](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html) and returns any applicable results.
+    * Depending on the sources specified, search() queries the feature layer(s) and/or performs address matching using any specified [locator(s)](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html) and returns any applicable results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#search)
     */
@@ -214,6 +240,8 @@ trait widgetsSearch
   
   /**
     * Indicates whether to display the option to search all sources.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#searchAllEnabled)
     */
@@ -234,7 +262,7 @@ trait widgetsSearch
   val selectedResult: SearchResult = js.native
   
   /**
-    * The Search widget may be used to search features in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html).
+    * The Search widget may be used to search features in a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html)/[feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) service feature layer(s), [SceneLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) with an associated feature layer, [BuildingComponentSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html) with an associated feature layer, [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html) or [OGCFeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html), or [table](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTable.html), or geocode locations with a [locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources)
     */
@@ -257,6 +285,8 @@ trait widgetsSearch
   
   /**
     * Enable suggestions for the widget.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#suggestionsEnabled)
     */

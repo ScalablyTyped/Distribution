@@ -1,6 +1,6 @@
 package typings.angularCompiler.anon
 
-import typings.angularCompiler.r3AstMod.Node
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NgContentSelectors extends StObject {
   
   /**
-    * Any ng-content selectors extracted from the template. Contains `null` when an ng-content
+    * Any ng-content selectors extracted from the template. Contains `*` when an ng-content
     * element without selector is present.
     */
   var ngContentSelectors: js.Array[String]
@@ -29,10 +29,10 @@ object NgContentSelectors {
     
     inline def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
     
-    inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
+    inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value*))
     
     inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

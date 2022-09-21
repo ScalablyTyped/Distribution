@@ -10,7 +10,7 @@ object gitMod {
   
   @JSImport("ionic/commands/git", "GitNamespace")
   @js.native
-  class GitNamespace () extends Namespace {
+  open class GitNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

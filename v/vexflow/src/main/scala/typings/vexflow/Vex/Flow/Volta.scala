@@ -1,5 +1,6 @@
 package typings.vexflow.Vex.Flow
 
+import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.GetContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,13 +25,15 @@ object Volta {
     getCategory: () => String,
     getPadding: Double => Double,
     getPosition: () => Double,
+    getStyle: () => FillStyle_,
     getWidth: () => Double,
     makeSpacer: Double => GetContext,
     placeGlyphOnLine: (Glyph, Stave, Double) => Unit,
     setPadding: Double => Unit,
-    setShiftY: Double => Volta
+    setShiftY: Double => Volta,
+    setStyle: FillStyle_ => StaveModifier
   ): Volta = {
-    val __obj = js.Dynamic.literal(addEndModifier = js.Any.fromFunction0(addEndModifier), addModifier = js.Any.fromFunction0(addModifier), addToStave = js.Any.fromFunction2(addToStave), addToStaveEnd = js.Any.fromFunction2(addToStaveEnd), draw = js.Any.fromFunction2(draw), getCategory = js.Any.fromFunction0(getCategory), getPadding = js.Any.fromFunction1(getPadding), getPosition = js.Any.fromFunction0(getPosition), getWidth = js.Any.fromFunction0(getWidth), makeSpacer = js.Any.fromFunction1(makeSpacer), placeGlyphOnLine = js.Any.fromFunction3(placeGlyphOnLine), setPadding = js.Any.fromFunction1(setPadding), setShiftY = js.Any.fromFunction1(setShiftY))
+    val __obj = js.Dynamic.literal(addEndModifier = js.Any.fromFunction0(addEndModifier), addModifier = js.Any.fromFunction0(addModifier), addToStave = js.Any.fromFunction2(addToStave), addToStaveEnd = js.Any.fromFunction2(addToStaveEnd), draw = js.Any.fromFunction2(draw), getCategory = js.Any.fromFunction0(getCategory), getPadding = js.Any.fromFunction1(getPadding), getPosition = js.Any.fromFunction0(getPosition), getStyle = js.Any.fromFunction0(getStyle), getWidth = js.Any.fromFunction0(getWidth), makeSpacer = js.Any.fromFunction1(makeSpacer), placeGlyphOnLine = js.Any.fromFunction3(placeGlyphOnLine), setPadding = js.Any.fromFunction1(setPadding), setShiftY = js.Any.fromFunction1(setShiftY), setStyle = js.Any.fromFunction1(setStyle))
     __obj.asInstanceOf[Volta]
   }
   

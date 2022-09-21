@@ -13,7 +13,7 @@ object highlightsPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/highlightsPostProcess", "HighlightsPostProcess")
   @js.native
-  class HighlightsPostProcess protected () extends PostProcess {
+  open class HighlightsPostProcess protected () extends PostProcess {
     /**
       * Extracts highlights from the image
       * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses

@@ -11,7 +11,7 @@ trait WizardSelectEvent
   
   var button: js.UndefOr[Button] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+  var originalEvent: js.UndefOr[Any] = js.undefined
   
   var step: js.UndefOr[Step] = js.undefined
   
@@ -30,7 +30,7 @@ object WizardSelectEvent {
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     

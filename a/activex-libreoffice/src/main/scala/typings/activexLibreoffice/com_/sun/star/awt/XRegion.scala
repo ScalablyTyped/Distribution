@@ -68,7 +68,7 @@ object XRegion {
     intersectRectangle: Rectangle => Unit,
     intersectRegion: XRegion => Unit,
     move: (Double, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     unionRectangle: Rectangle => Unit,
     unionRegion: XRegion => Unit,

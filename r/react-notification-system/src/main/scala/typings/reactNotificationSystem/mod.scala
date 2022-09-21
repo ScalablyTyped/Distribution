@@ -1,12 +1,7 @@
 package typings.reactNotificationSystem
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
-import typings.react.mod.ClassAttributes
-import typings.react.mod.ClassicComponent
-import typings.react.mod.ClassicComponentClass
 import typings.react.mod.Component
-import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNotificationSystem.reactNotificationSystemStrings.bc
@@ -28,18 +23,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-notification-system", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ClassicComponent[Attributes, ComponentState] {
-    def this(props: Attributes) = this()
-    def this(props: Attributes, context: js.Any) = this()
-  }
-  @JSImport("react-notification-system", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ClassicComponentClass[Attributes] = js.native
+  open class ^ () extends NotificationSystem
   
   trait ActionObject extends StObject {
     
@@ -64,9 +52,7 @@ object mod extends Shortcut {
     }
   }
   
-  trait Attributes
-    extends StObject
-       with ClassAttributes[System] {
+  trait Attributes extends StObject {
     
     var allowHTML: js.UndefOr[Boolean] = js.undefined
     
@@ -274,6 +260,22 @@ object mod extends Shortcut {
     }
   }
   
+  @js.native
+  trait NotificationSystem extends Component[Attributes, State, Any] {
+    
+    def addNotification(notification: Notification): Notification = js.native
+    
+    def clearNotifications(): Unit = js.native
+    
+    def editNotification(uidOrNotification: String, newNotification: Notification): Unit = js.native
+    def editNotification(uidOrNotification: Double, newNotification: Notification): Unit = js.native
+    def editNotification(uidOrNotification: Notification, newNotification: Notification): Unit = js.native
+    
+    def removeNotification(uidOrNotification: String): Unit = js.native
+    def removeNotification(uidOrNotification: Double): Unit = js.native
+    def removeNotification(uidOrNotification: Notification): Unit = js.native
+  }
+  
   trait State extends StObject {
     
     var notifications: js.Array[Notification]
@@ -289,7 +291,7 @@ object mod extends Shortcut {
       
       inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value*))
     }
   }
   
@@ -309,7 +311,7 @@ object mod extends Shortcut {
     
     var Title: js.UndefOr[ItemStyle] = js.undefined
     
-    var Wrapper: js.UndefOr[js.Any] = js.undefined
+    var Wrapper: js.UndefOr[Any] = js.undefined
   }
   object Style {
     
@@ -348,27 +350,10 @@ object mod extends Shortcut {
       
       inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
       
-      inline def setWrapper(value: js.Any): Self = StObject.set(x, "Wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: Any): Self = StObject.set(x, "Wrapper", value.asInstanceOf[js.Any])
       
       inline def setWrapperUndefined: Self = StObject.set(x, "Wrapper", js.undefined)
     }
-  }
-  
-  @js.native
-  trait System
-    extends Component[Attributes, State, js.Any] {
-    
-    def addNotification(notification: Notification): Notification = js.native
-    
-    def clearNotifications(): Unit = js.native
-    
-    def editNotification(uidOrNotification: String, newNotification: Notification): Unit = js.native
-    def editNotification(uidOrNotification: Double, newNotification: Notification): Unit = js.native
-    def editNotification(uidOrNotification: Notification, newNotification: Notification): Unit = js.native
-    
-    def removeNotification(uidOrNotification: String): Unit = js.native
-    def removeNotification(uidOrNotification: Double): Unit = js.native
-    def removeNotification(uidOrNotification: Notification): Unit = js.native
   }
   
   trait WrapperStyle extends StObject {
@@ -389,9 +374,4 @@ object mod extends Shortcut {
       inline def setDefaultStyleUndefined: Self = StObject.set(x, "DefaultStyle", js.undefined)
     }
   }
-  
-  type _To = js.Object & ClassicComponentClass[Attributes]
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & ClassicComponentClass[Attributes] = ^
 }

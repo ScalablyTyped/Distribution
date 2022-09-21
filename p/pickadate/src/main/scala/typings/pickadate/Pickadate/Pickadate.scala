@@ -24,7 +24,7 @@ trait Pickadate extends StObject {
   /**
     * Invoke API methods after date picker initialization.
     */
-  def apply(methodName: String, arguments: js.Any*): js.Any = js.native
+  def apply(methodName: String, arguments: Any*): Any = js.native
   def apply(objectName: $node): JQuery = js.native
   def apply(objectName: $root): JQuery = js.native
   def apply(objectName: _hidden): HTMLInputElement = js.native

@@ -1,77 +1,20 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.Icon
-import typings.antdMobile.marqueeMod.MarqueeProps
-import typings.antdMobile.noticeBarPropsTypeMod.NoticeBarPropsType
-import typings.react.mod.CSSProperties
-import typings.react.mod.Component
+import org.scalablytyped.runtime.Shortcut
+import typings.antdMobile.noticeBarNoticeBarMod.NoticeBarProps
+import typings.react.mod.NamedExoticComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object noticeBarMod {
+object noticeBarMod extends Shortcut {
   
-  @JSImport("antd-mobile/lib/notice-bar", JSImport.Default)
+  @JSImport("antd-mobile/es/components/notice-bar", JSImport.Default)
   @js.native
-  class default protected () extends NoticeBar {
-    def this(props: NoticeWebProps) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("antd-mobile/lib/notice-bar", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd-mobile/lib/notice-bar", "default.defaultProps")
-    @js.native
-    def defaultProps: Icon = js.native
-    inline def defaultProps_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: NamedExoticComponent[NoticeBarProps] = js.native
   
-  @js.native
-  trait NoticeBar
-    extends Component[NoticeWebProps, js.Any, js.Any] {
-    
-    def onClick(): Unit = js.native
-  }
+  type _To = NamedExoticComponent[NoticeBarProps]
   
-  trait NoticeWebProps
-    extends StObject
-       with NoticeBarPropsType {
-    
-    var className: js.UndefOr[String] = js.undefined
-    
-    var marqueeProps: js.UndefOr[MarqueeProps] = js.undefined
-    
-    var prefixCls: js.UndefOr[String] = js.undefined
-    
-    var style: js.UndefOr[CSSProperties] = js.undefined
-  }
-  object NoticeWebProps {
-    
-    inline def apply(): NoticeWebProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NoticeWebProps]
-    }
-    
-    extension [Self <: NoticeWebProps](x: Self) {
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setMarqueeProps(value: MarqueeProps): Self = StObject.set(x, "marqueeProps", value.asInstanceOf[js.Any])
-      
-      inline def setMarqueePropsUndefined: Self = StObject.set(x, "marqueeProps", js.undefined)
-      
-      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-    }
-  }
+  /* This means you don't have to write `default`, but can instead just say `noticeBarMod.foo` */
+  override def _to: NamedExoticComponent[NoticeBarProps] = default
 }

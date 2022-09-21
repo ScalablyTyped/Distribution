@@ -179,7 +179,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+            (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
           ]
         ]
       ] = js.native
@@ -188,7 +188,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+              (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
             ]
           ]
         ]
@@ -200,10 +200,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[
-              js.UndefOr[DashArrayValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+            (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
           ]
         ]
       ] = js.native
@@ -214,7 +211,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -223,7 +220,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -234,10 +231,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[
-                js.UndefOr[DashArrayValue], 
-                ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-              ]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+              (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
             ]
           ]
         ]
@@ -249,7 +243,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -258,7 +252,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -275,7 +269,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -284,7 +278,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -298,7 +292,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
+            (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
           ]
         ]
       ] = js.native
@@ -307,7 +301,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
+              (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
             ]
           ]
         ]
@@ -326,7 +320,7 @@ object propertiesMod {
           js.UndefOr[
             (Exclude[
               js.UndefOr[TextBaselineValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | SignalRef | ConditionalAxisLabelBaseline[SignalRef]
           ]
         ]
@@ -338,7 +332,7 @@ object propertiesMod {
             js.UndefOr[
               (Exclude[
                 js.UndefOr[TextBaselineValue], 
-                ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+                ScaledValueRef[Any] | NumericValueRef | ColorValueRef
               ]) | SignalRef | ConditionalAxisLabelBaseline[SignalRef]
             ]
           ]
@@ -362,7 +356,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+            (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
           ]
         ]
       ] = js.native
@@ -371,7 +365,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+              (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
             ]
           ]
         ]
@@ -405,7 +399,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
+            (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
           ]
         ]
       ] = js.native
@@ -416,7 +410,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -425,7 +419,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -437,10 +431,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[
-              js.UndefOr[FontStyleValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
+            (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
           ]
         ]
       ] = js.native
@@ -449,10 +440,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[
-                js.UndefOr[FontStyleValue], 
-                ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-              ]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
+              (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
             ]
           ]
         ]
@@ -464,10 +452,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[
-              js.UndefOr[FontWeightValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
+            (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
           ]
         ]
       ] = js.native
@@ -476,10 +461,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[
-                js.UndefOr[FontWeightValue], 
-                ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-              ]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
+              (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
             ]
           ]
         ]
@@ -490,7 +472,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
+              (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
             ]
           ]
         ]
@@ -512,7 +494,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -521,7 +503,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -533,7 +515,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -542,7 +524,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -559,7 +541,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -568,7 +550,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -636,7 +618,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+            (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
           ]
         ]
       ] = js.native
@@ -645,7 +627,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+              (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
             ]
           ]
         ]
@@ -662,10 +644,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[
-              js.UndefOr[DashArrayValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+            (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
           ]
         ]
       ] = js.native
@@ -676,7 +655,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -685,7 +664,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -696,10 +675,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[
-                js.UndefOr[DashArrayValue], 
-                ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-              ]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+              (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
             ]
           ]
         ]
@@ -726,7 +702,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -735,7 +711,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -752,7 +728,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -761,7 +737,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -773,7 +749,7 @@ object propertiesMod {
         js.Function1[
           /* params */ AxisRuleParams, 
           js.UndefOr[
-            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+            (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
           ]
         ]
       ] = js.native
@@ -782,7 +758,7 @@ object propertiesMod {
           js.Function1[
             /* params */ AxisRuleParams, 
             js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ]
           ]
         ]
@@ -894,14 +870,8 @@ object propertiesMod {
     
     @JSImport("vega-lite/build/src/compile/axis/properties", "axisRules.values")
     @js.native
-    def values: js.UndefOr[
-        js.Function1[/* params */ AxisRuleParams, js.UndefOr[js.Array[js.Any] | SignalRef]]
-      ] = js.native
-    inline def values_=(
-      x: js.UndefOr[
-          js.Function1[/* params */ AxisRuleParams, js.UndefOr[js.Array[js.Any] | SignalRef]]
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
+    def values: js.UndefOr[js.Function1[/* params */ AxisRuleParams, js.UndefOr[js.Array[Any] | SignalRef]]] = js.native
+    inline def values_=(x: js.UndefOr[js.Function1[/* params */ AxisRuleParams, js.UndefOr[js.Array[Any] | SignalRef]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/compile/axis/properties", "axisRules.zindex")
     @js.native
@@ -911,35 +881,21 @@ object propertiesMod {
   
   inline def defaultGrid(scaleType: ScaleType, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGrid")(scaleType.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def defaultGrid_binned(scaleType: ScaleType, fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGrid")(scaleType.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def defaultGrid_binned(scaleType: ScaleType, fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGrid")(scaleType.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def defaultLabelAlign_x(angle: Double, orient: AxisOrient, channel: x): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
-  inline def defaultLabelAlign_x(angle: Double, orient: SignalRef, channel: x): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
-  inline def defaultLabelAlign_x(angle: SignalRef, orient: AxisOrient, channel: x): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
-  inline def defaultLabelAlign_x(angle: SignalRef, orient: SignalRef, channel: x): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  inline def defaultLabelAlign(angle: Double, orient: AxisOrient, channel: x | y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  inline def defaultLabelAlign(angle: Double, orient: SignalRef, channel: x | y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  inline def defaultLabelAlign(angle: SignalRef, orient: AxisOrient, channel: x | y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  inline def defaultLabelAlign(angle: SignalRef, orient: SignalRef, channel: x | y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
   
-  inline def defaultLabelAlign_y(angle: Double, orient: AxisOrient, channel: y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
-  inline def defaultLabelAlign_y(angle: Double, orient: SignalRef, channel: y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
-  inline def defaultLabelAlign_y(angle: SignalRef, orient: AxisOrient, channel: y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
-  inline def defaultLabelAlign_y(angle: SignalRef, orient: SignalRef, channel: y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
-  
-  inline def defaultLabelBaseline_x(angle: Double, orient: AxisOrient, channel: x): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_x(angle: Double, orient: AxisOrient, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_x(angle: Double, orient: SignalRef, channel: x): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_x(angle: Double, orient: SignalRef, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_x(angle: SignalRef, orient: AxisOrient, channel: x): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_x(angle: SignalRef, orient: AxisOrient, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_x(angle: SignalRef, orient: SignalRef, channel: x): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_x(angle: SignalRef, orient: SignalRef, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  
-  inline def defaultLabelBaseline_y(angle: Double, orient: AxisOrient, channel: y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_y(angle: Double, orient: AxisOrient, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_y(angle: Double, orient: SignalRef, channel: y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_y(angle: Double, orient: SignalRef, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_y(angle: SignalRef, orient: AxisOrient, channel: y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_y(angle: SignalRef, orient: AxisOrient, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_y(angle: SignalRef, orient: SignalRef, channel: y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
-  inline def defaultLabelBaseline_y(angle: SignalRef, orient: SignalRef, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  inline def defaultLabelBaseline(angle: Double, orient: AxisOrient, channel: x | y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  inline def defaultLabelBaseline(angle: Double, orient: AxisOrient, channel: x | y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  inline def defaultLabelBaseline(angle: Double, orient: SignalRef, channel: x | y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  inline def defaultLabelBaseline(angle: Double, orient: SignalRef, channel: x | y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  inline def defaultLabelBaseline(angle: SignalRef, orient: AxisOrient, channel: x | y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  inline def defaultLabelBaseline(angle: SignalRef, orient: AxisOrient, channel: x | y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  inline def defaultLabelBaseline(angle: SignalRef, orient: SignalRef, channel: x | y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  inline def defaultLabelBaseline(angle: SignalRef, orient: SignalRef, channel: x | y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
   
   inline def defaultLabelFlush(`type`: Type, channel: PositionScaleChannel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelFlush")(`type`.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -952,11 +908,9 @@ object propertiesMod {
   
   inline def defaultZindex(mark: Mark, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): `1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`1` | `0`]
   
-  inline def defaultZindex_binned(mark: Mark, fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): `1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`1` | `0`]
+  inline def defaultZindex_binned(mark: Mark, fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): `1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`1` | `0`]
   
-  inline def getFieldDefTitle_x(model: UnitModel, channel: x): String | js.Array[String] | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDefTitle")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String] | SignalRef]
-  
-  inline def getFieldDefTitle_y(model: UnitModel, channel: y): String | js.Array[String] | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDefTitle")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String] | SignalRef]
+  inline def getFieldDefTitle(model: UnitModel, channel: x | y): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDefTitle")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
   
   inline def getLabelAngle(
     fieldOrDatumDef: PositionDatumDef[String],
@@ -996,7 +950,7 @@ object propertiesMod {
   
   inline def values_binned(
     axis: AxisInternal,
-    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
   ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(axis.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal])]
   
   trait AxisRuleParams extends StObject {

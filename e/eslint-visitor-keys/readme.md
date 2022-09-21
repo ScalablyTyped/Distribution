@@ -1,7 +1,7 @@
 
 # Scala.js typings for eslint-visitor-keys
 
-Typings are for version 1.0
+Typings are for version 3.3.0
 
 ## Library description:
 Constants and utilities about visitor keys to traverse AST.
@@ -10,10 +10,10 @@ Constants and utilities about visitor keys to traverse AST.
 | ------------------ | :-------------: |
 | Full name          | eslint-visitor-keys |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 88 |
-| # downloads        | 435826379 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.13872209E8 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/eslint/eslint-visitor-keys#readme)
@@ -24,7 +24,7 @@ Constants and utilities about visitor keys to traverse AST.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

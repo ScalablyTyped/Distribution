@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "Tree")
 @js.native
-class Tree protected () extends StObject {
-  def this(repo: js.Any, id: js.Any, mode: js.Any, name: js.Any, contents: js.Any) = this()
+open class Tree protected () extends StObject {
+  def this(repo: Any, id: Any, mode: Any, name: Any, contents: Any) = this()
   
-  var basename: js.Any = js.native
+  var basename: Any = js.native
   
-  var contents: js.Any = js.native
+  var contents: Any = js.native
   
-  def find(file: String): js.Any = js.native
+  def find(file: String): Any = js.native
   
-  var id: js.Any = js.native
+  var id: Any = js.native
   
-  var mode: js.Any = js.native
+  var mode: Any = js.native
   
-  var name: js.Any = js.native
+  var name: Any = js.native
   
-  var repo: js.Any = js.native
+  var repo: Any = js.native
 }
 /* static members */
 object Tree {
@@ -30,8 +30,8 @@ object Tree {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def content_from_string(repo: js.Any, text: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("content_from_string")(repo.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def content_from_string(repo: Any, text: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("content_from_string")(repo.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def create(repo: js.Any, attributes: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def create(repo: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(repo: Any, attributes: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(repo: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

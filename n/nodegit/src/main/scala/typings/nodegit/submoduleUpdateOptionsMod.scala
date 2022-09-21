@@ -11,7 +11,7 @@ object submoduleUpdateOptionsMod {
   
   trait SubmoduleUpdateOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var checkoutOpts: js.UndefOr[CheckoutOptions] = js.undefined
     

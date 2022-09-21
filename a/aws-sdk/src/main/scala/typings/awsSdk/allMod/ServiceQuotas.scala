@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ServiceQuotas () extends ^ {
+open class ServiceQuotas () extends ^ {
   def this(options: ClientConfiguration) = this()
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Xhr extends StObject {
   
-  def apply(url: String, callback: XhrCallback): js.Any = js.native
-  def apply(url: String, options: XhrOptions, callback: XhrCallback): js.Any = js.native
-  def apply(url: XhrOptions, callback: XhrCallback): js.Any = js.native
+  def apply(url: String, callback: XhrCallback): Any = js.native
+  def apply(url: String, options: XhrOptions, callback: XhrCallback): Any = js.native
+  def apply(url: XhrOptions, callback: XhrCallback): Any = js.native
 }

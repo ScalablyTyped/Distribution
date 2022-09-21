@@ -1,7 +1,7 @@
 package typings.googleapis.anon
 
-import typings.googleapis.dlpV2Mod.dlpV2.Dlp
-import typings.googleapis.dlpV2Mod.dlpV2.Options
+import typings.googleapis.cloudprofilerV2Mod.cloudprofilerV2.Cloudprofiler
+import typings.googleapis.cloudprofilerV2Mod.cloudprofilerV2.Options
 import typings.googleapis.googleapisStrings.v2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn59 extends StObject {
   
-  def apply(options: Options): Dlp = js.native
-  def apply(version: v2): Dlp = js.native
+  def apply(options: Options): Cloudprofiler = js.native
+  def apply(version: v2): Cloudprofiler = js.native
 }

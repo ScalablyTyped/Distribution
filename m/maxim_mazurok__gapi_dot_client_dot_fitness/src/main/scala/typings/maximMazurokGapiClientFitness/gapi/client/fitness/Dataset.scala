@@ -62,6 +62,6 @@ object Dataset {
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    inline def setPointVarargs(value: DataPoint*): Self = StObject.set(x, "point", js.Array(value :_*))
+    inline def setPointVarargs(value: DataPoint*): Self = StObject.set(x, "point", js.Array(value*))
   }
 }

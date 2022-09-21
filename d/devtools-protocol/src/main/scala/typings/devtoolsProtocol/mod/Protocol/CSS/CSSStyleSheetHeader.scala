@@ -34,7 +34,8 @@ trait CSSStyleSheetHeader extends StObject {
   var hasSourceURL: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether this stylesheet is a constructed stylesheet (created using new CSSStyleSheet()).
+    * True if this stylesheet is created through new CSSStyleSheet() or imported as a
+    * CSS module script.
     */
   var isConstructed: Boolean
   
@@ -73,7 +74,9 @@ trait CSSStyleSheetHeader extends StObject {
   var sourceMapURL: js.UndefOr[String] = js.undefined
   
   /**
-    * Stylesheet resource URL.
+    * Stylesheet resource URL. Empty if this is a constructed stylesheet created using
+    * new CSSStyleSheet() (but non-empty if this is a constructed sylesheet imported
+    * as a CSS module script).
     */
   var sourceURL: String
   

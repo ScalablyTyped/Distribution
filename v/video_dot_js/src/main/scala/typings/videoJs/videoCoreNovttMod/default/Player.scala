@@ -12,7 +12,7 @@ object Player {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("video.js/dist/alt/video.core.novtt", "default.Player")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with VideoJsPlayer {
     /**
@@ -40,5 +40,5 @@ object Player {
     * @return An object containing all of the settings
     *         for a player tag
     */
-  inline def getTagSettings(tag: Element): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagSettings")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getTagSettings(tag: Element): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagSettings")(tag.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

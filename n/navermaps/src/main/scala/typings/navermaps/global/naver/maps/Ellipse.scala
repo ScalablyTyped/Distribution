@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Ellipse")
 @js.native
-class Ellipse ()
+open class Ellipse ()
   extends StObject
      with typings.navermaps.naver.maps.Ellipse {
   def this(options: EllipseOptions) = this()

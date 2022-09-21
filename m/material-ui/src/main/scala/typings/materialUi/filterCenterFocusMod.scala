@@ -10,10 +10,10 @@ object filterCenterFocusMod {
   
   @JSImport("material-ui/svg-icons/image/filter-center-focus", JSImport.Default)
   @js.native
-  class default () extends ImageFilterCenterFocus
+  open class default () extends ImageFilterCenterFocus
   
   @JSImport("material-ui/svg-icons/image/filter-center-focus", "ImageFilterCenterFocus")
   @js.native
-  class ImageFilterCenterFocus ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageFilterCenterFocus ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

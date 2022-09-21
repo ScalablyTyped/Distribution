@@ -20,7 +20,7 @@ trait XIdentifierAccess
     * @throws com::sun::star::lang::NoSuchElementException If the identifier is not existing.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def getByIdentifier(Identifier: Double): js.Any
+  def getByIdentifier(Identifier: Double): Any
   
   /** @returns a sequence of all identifiers in this container.  The order of the identifiers is not specified. */
   def getIdentifiers(): SafeArray[Double]
@@ -31,11 +31,11 @@ object XIdentifierAccess {
     ElementType: `type`,
     Identifiers: SafeArray[Double],
     acquire: () => Unit,
-    getByIdentifier: Double => js.Any,
+    getByIdentifier: Double => Any,
     getElementType: () => `type`,
     getIdentifiers: () => SafeArray[Double],
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XIdentifierAccess = {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], Identifiers = Identifiers.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIdentifier = js.Any.fromFunction1(getByIdentifier), getElementType = js.Any.fromFunction0(getElementType), getIdentifiers = js.Any.fromFunction0(getIdentifiers), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -44,7 +44,7 @@ object XIdentifierAccess {
   
   extension [Self <: XIdentifierAccess](x: Self) {
     
-    inline def setGetByIdentifier(value: Double => js.Any): Self = StObject.set(x, "getByIdentifier", js.Any.fromFunction1(value))
+    inline def setGetByIdentifier(value: Double => Any): Self = StObject.set(x, "getByIdentifier", js.Any.fromFunction1(value))
     
     inline def setGetIdentifiers(value: () => SafeArray[Double]): Self = StObject.set(x, "getIdentifiers", js.Any.fromFunction0(value))
     

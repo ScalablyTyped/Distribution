@@ -1,7 +1,8 @@
 package typings.konva.anon
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import typings.konva.imageMod.Image
+import typings.konva.imageMod.ImageConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofImage
   extends StObject
-     with Instantiable0[Image] {
+     with Instantiable1[/* attrs */ ImageConfig, Image] {
   
-  def fromURL(url: js.Any, callback: js.Any): Unit = js.native
+  def fromURL(url: Any, callback: Any): Unit = js.native
+  def fromURL(url: Any, callback: Any, onError: Any): Unit = js.native
 }

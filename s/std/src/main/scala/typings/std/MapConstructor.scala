@@ -9,12 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MapConstructor
   extends StObject
-     with Instantiable0[Map[js.Any | js.Object, js.Any | js.Object]]
+     with /* standard es2015.collection */
+/* standard es2015.iterable */
+Instantiable0[Map[Any | js.Object, Any | js.Object]]
      with Instantiable1[
-      (/* entries */ js.Array[js.Tuple2[js.Object, js.Object]]) | (/* iterable */ Iterable[js.Tuple2[js.Object, js.Object]]), 
+      (/* entries */ js.Array[js.Tuple2[js.Object, js.Object]]) | (/* iterable */ js.Iterable[js.Tuple2[js.Object, js.Object]]), 
       Map[js.Object, js.Object]
     ] {
   
+  /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.species)
   val species: MapConstructor = js.native
 }

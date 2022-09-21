@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(lang: LanguageType): String = ^.asInstanceOf[js.Dynamic].apply(lang.asInstanceOf[js.Any]).asInstanceOf[String]
-  
   @JSImport("date-utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def language(lang: LanguageType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("language")(lang.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.dateUtils.dateUtilsStrings.es

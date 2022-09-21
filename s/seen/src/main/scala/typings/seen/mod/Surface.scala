@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Surface")
 @js.native
-class Surface protected () extends StObject {
+open class Surface protected () extends StObject {
   def this(points: js.Array[Point]) = this()
   def this(points: js.Array[Point], painter: Painter) = this()
   

@@ -45,7 +45,7 @@ object DeferPlaceholder {
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setSelector(value: NormalizationSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

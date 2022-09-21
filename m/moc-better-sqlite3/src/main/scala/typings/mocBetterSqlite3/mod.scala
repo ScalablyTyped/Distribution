@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import typings.integer.mod.IntClass
 import typings.integer.mod.IntLike
+import typings.mocBetterSqlite3.anon.FnCall
 import typings.mocBetterSqlite3.mod.MocBetterSqlite3.DatabaseConstructor
 import typings.std.Error
 import typings.std.IterableIterator
@@ -18,7 +19,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("moc-better-sqlite3", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.mocBetterSqlite3.mod.MocBetterSqlite3.Database {
     def this(filename: String) = this()
@@ -30,9 +31,9 @@ object mod extends Shortcut {
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (message : string, code : string): / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias moc-better-sqlite3.moc-better-sqlite3.SqliteError * / object */ @JSImport("moc-better-sqlite3", "SqliteError")
+  - Dropped new (message : string, code : string): any */ @JSImport("moc-better-sqlite3", "SqliteError")
   @js.native
-  class SqliteErrorCls protected () extends StObject {
+  open class SqliteErrorCls protected () extends StObject {
     def this(message: String, code: String) = this()
   }
   
@@ -40,40 +41,40 @@ object mod extends Shortcut {
     extends StObject
        with RegistrationOptions {
     
-    var inverse: js.UndefOr[js.Function2[/* total */ js.Any, /* dropped */ js.Any, js.Any]] = js.undefined
+    var inverse: js.UndefOr[js.Function2[/* total */ Any, /* dropped */ Any, Any]] = js.undefined
     
-    var result: js.UndefOr[js.Function1[/* total */ js.Any, js.Any]] = js.undefined
+    var result: js.UndefOr[js.Function1[/* total */ Any, Any]] = js.undefined
     
-    var start: js.UndefOr[js.Any] = js.undefined
+    var start: js.UndefOr[Any] = js.undefined
     
-    def step(total: js.Any, next: js.Any): js.Any
+    def step(total: Any, next: Any): Any
   }
   object AggregateOptions {
     
-    inline def apply(step: (js.Any, js.Any) => js.Any): AggregateOptions = {
+    inline def apply(step: (Any, Any) => Any): AggregateOptions = {
       val __obj = js.Dynamic.literal(step = js.Any.fromFunction2(step))
       __obj.asInstanceOf[AggregateOptions]
     }
     
     extension [Self <: AggregateOptions](x: Self) {
       
-      inline def setInverse(value: (/* total */ js.Any, /* dropped */ js.Any) => js.Any): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
+      inline def setInverse(value: (/* total */ Any, /* dropped */ Any) => Any): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
       
       inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      inline def setResult(value: /* total */ js.Any => js.Any): Self = StObject.set(x, "result", js.Any.fromFunction1(value))
+      inline def setResult(value: /* total */ Any => Any): Self = StObject.set(x, "result", js.Any.fromFunction1(value))
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      inline def setStep(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
+      inline def setStep(value: (Any, Any) => Any): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
     }
   }
   
-  type ArgumentTypes[F /* <: VariableArgFunction */] = js.Any
+  type ArgumentTypes[F /* <: VariableArgFunction */] = Any
   
   trait BackupMetadata extends StObject {
     
@@ -117,7 +118,12 @@ object mod extends Shortcut {
   
   type Database = typings.mocBetterSqlite3.mod.MocBetterSqlite3.Database
   
-  type Integer = js.Function1[/* val */ IntLike, IntClass]
+  @js.native
+  trait Integer extends StObject {
+    
+    def apply(): IntClass = js.native
+    def apply(`val`: IntLike): IntClass = js.native
+  }
   
   object MocBetterSqlite3 {
     
@@ -181,8 +187,8 @@ object mod extends Shortcut {
       
       def exec(source: String): this.type = js.native
       
-      def function(name: String, cb: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
-      def function(name: String, options: RegistrationOptions, cb: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
+      def function(name: String, cb: js.Function1[/* repeated */ Any, Any]): this.type = js.native
+      def function(name: String, options: RegistrationOptions, cb: js.Function1[/* repeated */ Any, Any]): this.type = js.native
       
       var inTransaction: Boolean = js.native
       
@@ -194,10 +200,10 @@ object mod extends Shortcut {
       
       var open: Boolean = js.native
       
-      def pragma(source: String): js.Any = js.native
-      def pragma(source: String, options: PragmaOptions): js.Any = js.native
+      def pragma(source: String): Any = js.native
+      def pragma(source: String, options: PragmaOptions): Any = js.native
       
-      def prepare[BindParameters /* <: js.Array[js.Any] | js.Object */](source: String): typings.mocBetterSqlite3.mod.MocBetterSqlite3.Statement[js.Array[BindParameters] | BindParameters] = js.native
+      def prepare[BindParameters /* <: js.Array[Any] | js.Object */](source: String): typings.mocBetterSqlite3.mod.MocBetterSqlite3.Statement[js.Array[BindParameters] | BindParameters] = js.native
       
       var readonly: Boolean = js.native
       
@@ -217,19 +223,20 @@ object mod extends Shortcut {
       def apply(filename: String): typings.mocBetterSqlite3.mod.MocBetterSqlite3.Database = js.native
       def apply(filename: String, options: Options): typings.mocBetterSqlite3.mod.MocBetterSqlite3.Database = js.native
       
+      def Integer(): IntClass = js.native
       def Integer(`val`: IntLike): IntClass = js.native
       @JSName("Integer")
-      var Integer_Original: js.Function1[/* val */ IntLike, IntClass] = js.native
+      var Integer_Original: FnCall = js.native
       
       var SqliteError: Instantiable2[/* message */ String, /* code */ String, typings.mocBetterSqlite3.mod.SqliteError] = js.native
     }
     
     @js.native
-    trait Statement[BindParameters /* <: js.Array[js.Any] */] extends StObject {
+    trait Statement[BindParameters /* <: js.Array[Any] */] extends StObject {
       
       def all(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type BindParameters is not an array type */ params: BindParameters
-      ): js.Array[js.Any] = js.native
+      ): js.Array[Any] = js.native
       
       def bind(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type BindParameters is not an array type */ params: BindParameters
@@ -244,11 +251,11 @@ object mod extends Shortcut {
       
       def get(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type BindParameters is not an array type */ params: BindParameters
-      ): js.Any = js.native
+      ): Any = js.native
       
       def iterate(
         /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type BindParameters is not an array type */ params: BindParameters
-      ): IterableIterator[js.Any] = js.native
+      ): IterableIterator[Any] = js.native
       
       def pluck(): this.type = js.native
       def pluck(toggleState: Boolean): this.type = js.native
@@ -303,7 +310,7 @@ object mod extends Shortcut {
     
     var timeout: js.UndefOr[Double] = js.undefined
     
-    var verbose: js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]] = js.undefined
+    var verbose: js.UndefOr[js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]] = js.undefined
   }
   object Options {
     
@@ -330,7 +337,7 @@ object mod extends Shortcut {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setVerbose(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction2(value))
+      inline def setVerbose(value: (/* message */ js.UndefOr[Any], /* repeated */ Any) => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction2(value))
       
       inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
@@ -426,14 +433,14 @@ object mod extends Shortcut {
     }
   }
   
-  type Statement[BindParameters /* <: js.Array[js.Any] | js.Object */] = typings.mocBetterSqlite3.mod.MocBetterSqlite3.Statement[js.Array[BindParameters] | BindParameters]
+  type Statement[BindParameters /* <: js.Array[Any] | js.Object */] = typings.mocBetterSqlite3.mod.MocBetterSqlite3.Statement[js.Array[BindParameters] | BindParameters]
   
   type Transaction = typings.mocBetterSqlite3.mod.MocBetterSqlite3.Transaction[VariableArgFunction]
   
   @js.native
   trait VariableArgFunction extends StObject {
     
-    def apply(params: js.Any*): js.Any = js.native
+    def apply(params: Any*): Any = js.native
   }
   
   type _To = js.Object & DatabaseConstructor

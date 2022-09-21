@@ -12,14 +12,14 @@ trait CreateConfigurationResponse extends StObject {
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
-    * The authentication strategy associated with the configuration.
+    * Optional. The authentication strategy associated with the configuration. The default is SIMPLE.
     */
   var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.undefined
   
   /**
     * Required. The date and time of the configuration.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.undefined
+  var Created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Required. The unique ID that Amazon MQ generates for the configuration.
@@ -53,7 +53,7 @@ object CreateConfigurationResponse {
     
     inline def setAuthenticationStrategyUndefined: Self = StObject.set(x, "AuthenticationStrategy", js.undefined)
     
-    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     

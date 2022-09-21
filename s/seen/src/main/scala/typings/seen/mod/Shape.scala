@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Shape")
 @js.native
-class Shape protected () extends Transformable {
+open class Shape protected () extends Transformable {
   def this(`type`: String, surfaces: js.Array[Surface]) = this()
   
   def eachSurface(f: js.Function1[/* s */ Surface, Unit]): this.type = js.native

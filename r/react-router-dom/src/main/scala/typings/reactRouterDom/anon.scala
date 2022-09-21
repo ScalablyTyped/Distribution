@@ -1,211 +1,264 @@
 package typings.reactRouterDom
 
-import typings.history.mod.Action
-import typings.history.mod.History
-import typings.history.mod.Location
-import typings.history.mod.LocationDescriptor
-import typings.history.mod.LocationState
-import typings.react.mod.ReactNode
-import typings.reactRouter.mod.StaticRouterContext
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.HTMLAttributeAnchorTarget
+import typings.react.mod.RefAttributes
+import typings.reactRouter.contextMod.RelativeRoutingType
+import typings.reactRouterDom.mod.FormProps
+import typings.reactRouterDom.mod.SubmitTarget
+import typings.remixRunRouter.routerMod.HydrationState
+import typings.remixRunRouter.utilsMod.FormEncType
+import typings.remixRunRouter.utilsMod.FormMethod
+import typings.std.FormData
+import typings.std.HTMLFormElement
+import typings.std.ReturnType
+import typings.std.URL
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Readonly<react-router.react-router.MemoryRouterProps> */
-  trait ReadonlyMemoryRouterProps extends StObject {
+  trait Basename extends StObject {
     
-    val getUserConfirmation: js.UndefOr[
-        js.Function2[/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit], Unit]
-      ] = js.undefined
+    var basename: js.UndefOr[String] = js.undefined
     
-    val initialEntries: js.UndefOr[js.Array[LocationDescriptor[LocationState]]] = js.undefined
+    var hydrationData: js.UndefOr[HydrationState] = js.undefined
     
-    val initialIndex: js.UndefOr[Double] = js.undefined
-    
-    val keyLength: js.UndefOr[Double] = js.undefined
+    var window: js.UndefOr[Window] = js.undefined
   }
-  object ReadonlyMemoryRouterProps {
+  object Basename {
     
-    inline def apply(): ReadonlyMemoryRouterProps = {
+    inline def apply(): Basename = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ReadonlyMemoryRouterProps]
+      __obj.asInstanceOf[Basename]
     }
     
-    extension [Self <: ReadonlyMemoryRouterProps](x: Self) {
-      
-      inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
-      
-      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
-      
-      inline def setInitialEntries(value: js.Array[LocationDescriptor[LocationState]]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
-      
-      inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
-      
-      inline def setInitialEntriesVarargs(value: LocationDescriptor[LocationState]*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
-      
-      inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
-      
-      inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
-      
-      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
-      
-      inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Readonly<react-router.react-router.PromptProps> */
-  trait ReadonlyPromptProps extends StObject {
-    
-    val message: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean])
-    
-    val when: js.UndefOr[Boolean] = js.undefined
-  }
-  object ReadonlyPromptProps {
-    
-    inline def apply(
-      message: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean])
-    ): ReadonlyPromptProps = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ReadonlyPromptProps]
-    }
-    
-    extension [Self <: ReadonlyPromptProps](x: Self) {
-      
-      inline def setMessage(
-        value: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean])
-      ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      inline def setMessageFunction2(value: (/* location */ Location[LocationState], /* action */ Action) => String | Boolean): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
-      
-      inline def setWhen(value: Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
-      
-      inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Readonly<react-router.react-router.RedirectProps> */
-  trait ReadonlyRedirectProps extends StObject {
-    
-    val exact: js.UndefOr[Boolean] = js.undefined
-    
-    val from: js.UndefOr[String] = js.undefined
-    
-    val path: js.UndefOr[String] = js.undefined
-    
-    val push: js.UndefOr[Boolean] = js.undefined
-    
-    val strict: js.UndefOr[Boolean] = js.undefined
-    
-    val to: LocationDescriptor[LocationState]
-  }
-  object ReadonlyRedirectProps {
-    
-    inline def apply(to: LocationDescriptor[LocationState]): ReadonlyRedirectProps = {
-      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ReadonlyRedirectProps]
-    }
-    
-    extension [Self <: ReadonlyRedirectProps](x: Self) {
-      
-      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
-      
-      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
-      
-      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
-      
-      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
-      
-      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
-      
-      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
-      
-      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
-      
-      inline def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Readonly<react-router.react-router.RouterProps> */
-  trait ReadonlyRouterProps extends StObject {
-    
-    val history: History[LocationState]
-  }
-  object ReadonlyRouterProps {
-    
-    inline def apply(history: History[LocationState]): ReadonlyRouterProps = {
-      val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ReadonlyRouterProps]
-    }
-    
-    extension [Self <: ReadonlyRouterProps](x: Self) {
-      
-      inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Readonly<react-router.react-router.StaticRouterProps> */
-  trait ReadonlyStaticRouterProps extends StObject {
-    
-    val basename: js.UndefOr[String] = js.undefined
-    
-    val context: js.UndefOr[StaticRouterContext] = js.undefined
-    
-    val location: js.UndefOr[String | js.Object] = js.undefined
-  }
-  object ReadonlyStaticRouterProps {
-    
-    inline def apply(): ReadonlyStaticRouterProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ReadonlyStaticRouterProps]
-    }
-    
-    extension [Self <: ReadonlyStaticRouterProps](x: Self) {
+    extension [Self <: Basename](x: Self) {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
       inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      inline def setContext(value: StaticRouterContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setHydrationData(value: HydrationState): Self = StObject.set(x, "hydrationData", value.asInstanceOf[js.Any])
       
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setHydrationDataUndefined: Self = StObject.set(x, "hydrationData", js.undefined)
       
-      inline def setLocation(value: String | js.Object): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
-  /* Inlined std.Readonly<react-router.react-router.SwitchProps> */
-  trait ReadonlySwitchProps extends StObject {
+  trait EncType extends StObject {
     
-    val children: js.UndefOr[ReactNode] = js.undefined
+    var encType: String
     
-    val location: js.UndefOr[Location[LocationState]] = js.undefined
+    var formData: FormData
+    
+    var method: String
+    
+    var url: URL
   }
-  object ReadonlySwitchProps {
+  object EncType {
     
-    inline def apply(): ReadonlySwitchProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ReadonlySwitchProps]
+    inline def apply(encType: String, formData: FormData, method: String, url: URL): EncType = {
+      val __obj = js.Dynamic.literal(encType = encType.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EncType]
     }
     
-    extension [Self <: ReadonlySwitchProps](x: Self) {
+    extension [Self <: EncType](x: Self) {
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setFormData(value: FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      inline def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
+  trait Form extends StObject {
+    
+    var Form: ReturnType[
+        js.Function2[
+          /* fetcherKey */ String, 
+          /* routeId */ String, 
+          ForwardRefExoticComponent[FormProps & RefAttributes[HTMLFormElement]]
+        ]
+      ] = js.native
+    
+    def load(href: String): Unit = js.native
+    
+    def submit(target: SubmitTarget): Unit = js.native
+    def submit(target: SubmitTarget, options: OmitSubmitOptionsreplace): Unit = js.native
+  }
+  
+  trait IsActive extends StObject {
+    
+    var isActive: Boolean
+    
+    var isPending: Boolean
+  }
+  object IsActive {
+    
+    inline def apply(isActive: Boolean, isPending: Boolean): IsActive = {
+      val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any], isPending = isPending.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsActive]
+    }
+    
+    extension [Self <: IsActive](x: Self) {
+      
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      
+      inline def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Omit<react-router-dom.react-router-dom/dist/dom.SubmitOptions, 'replace'> */
+  trait OmitSubmitOptionsreplace extends StObject {
+    
+    var action: js.UndefOr[String] = js.undefined
+    
+    var encType: js.UndefOr[FormEncType] = js.undefined
+    
+    var method: js.UndefOr[FormMethod] = js.undefined
+    
+    var relative: js.UndefOr[RelativeRoutingType] = js.undefined
+  }
+  object OmitSubmitOptionsreplace {
+    
+    inline def apply(): OmitSubmitOptionsreplace = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OmitSubmitOptionsreplace]
+    }
+    
+    extension [Self <: OmitSubmitOptionsreplace](x: Self) {
+      
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setEncType(value: FormEncType): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
+      
+      inline def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
+      
+      inline def setMethod(value: FormMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setRelative(value: RelativeRoutingType): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<react-router-dom.react-router-dom.Location> */
+  trait PartialLocation extends StObject {
+    
+    var hash: js.UndefOr[String] = js.undefined
+    
+    var key: js.UndefOr[String] = js.undefined
+    
+    var pathname: js.UndefOr[String] = js.undefined
+    
+    var search: js.UndefOr[String] = js.undefined
+    
+    var state: js.UndefOr[Any] = js.undefined
+  }
+  object PartialLocation {
+    
+    inline def apply(): PartialLocation = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialLocation]
+    }
+    
+    extension [Self <: PartialLocation](x: Self) {
+      
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    }
+  }
+  
+  trait PreventScrollReset extends StObject {
+    
+    var preventScrollReset: js.UndefOr[Boolean] = js.undefined
+    
+    var relative: js.UndefOr[RelativeRoutingType] = js.undefined
+    
+    var replace: js.UndefOr[Boolean] = js.undefined
+    
+    var state: js.UndefOr[Any] = js.undefined
+    
+    var target: js.UndefOr[HTMLAttributeAnchorTarget] = js.undefined
+  }
+  object PreventScrollReset {
+    
+    inline def apply(): PreventScrollReset = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PreventScrollReset]
+    }
+    
+    extension [Self <: PreventScrollReset](x: Self) {
+      
+      inline def setPreventScrollReset(value: Boolean): Self = StObject.set(x, "preventScrollReset", value.asInstanceOf[js.Any])
+      
+      inline def setPreventScrollResetUndefined: Self = StObject.set(x, "preventScrollReset", js.undefined)
+      
+      inline def setRelative(value: RelativeRoutingType): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      
+      inline def setTarget(value: HTMLAttributeAnchorTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    }
+  }
+  
+  trait Relative extends StObject {
+    
+    var relative: js.UndefOr[RelativeRoutingType] = js.undefined
+  }
+  object Relative {
+    
+    inline def apply(): Relative = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Relative]
+    }
+    
+    extension [Self <: Relative](x: Self) {
+      
+      inline def setRelative(value: RelativeRoutingType): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
     }
   }
 }

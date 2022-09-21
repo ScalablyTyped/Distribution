@@ -52,7 +52,7 @@ object XParser {
   inline def apply(
     acquire: () => Unit,
     parseStream: InputSource => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDTDHandler: XDTDHandler => Unit,
     setDocumentHandler: XDocumentHandler => Unit,

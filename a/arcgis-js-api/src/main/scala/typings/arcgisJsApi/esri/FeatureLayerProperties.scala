@@ -1,5 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.DynamicDataLayertypedatal
+import typings.arcgisJsApi.anon.DynamicMapLayertypemaplay
+import typings.arcgisJsApi.anon.FeatureReductionBinningPr
+import typings.arcgisJsApi.anon.FeatureReductionClusterPr
 import typings.arcgisJsApi.arcgisJsApiStrings.mesh
 import typings.arcgisJsApi.arcgisJsApiStrings.multipatch
 import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
@@ -13,11 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerProperties
   extends StObject
      with LayerProperties
+     with OrderedLayerProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties
-     with RefreshableLayerProperties
      with TemporalLayerProperties
-     with BlendLayerProperties {
+     with BlendLayerProperties
+     with CustomParametersMixinProperties
+     with APIKeyMixinProperties
+     with FeatureEffectLayerProperties {
   
   /**
     * Copyright information for the layer.
@@ -45,7 +52,16 @@ trait FeatureLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#dynamicDataSource)
     */
-  var dynamicDataSource: js.UndefOr[DynamicMapLayer | DynamicDataLayer] = js.undefined
+  var dynamicDataSource: js.UndefOr[DynamicMapLayertypemaplay | DynamicDataLayertypedatal] = js.undefined
+  
+  /**
+    * Determines if the layer is editable.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#editingEnabled)
+    */
+  var editingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies how features are placed on the vertical axis (z).
@@ -59,7 +75,9 @@ trait FeatureLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.undefined
+  var featureReduction: js.UndefOr[
+    FeatureReductionBinningPr | FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection
+  ] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -69,7 +87,14 @@ trait FeatureLayerProperties
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
-    * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used in an associated layer's [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
+    * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#floorInfo)
+    */
+  var floorInfo: js.UndefOr[LayerFloorInfoProperties] = js.undefined
+  
+  /**
+    * The [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used in an associated layer's [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#formTemplate)
     */
@@ -92,12 +117,16 @@ trait FeatureLayerProperties
   /**
     * Indicates whether the client-side features in the layer have `M` (measurement) values.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#hasM)
     */
   var hasM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the client-side features in the layer have `Z` (elevation) values.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#hasZ)
     */
@@ -120,6 +149,8 @@ trait FeatureLayerProperties
   /**
     * Indicates whether to display labels for this layer.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelsVisible)
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
@@ -133,6 +164,8 @@ trait FeatureLayerProperties
   
   /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#legendEnabled)
     */
@@ -148,12 +181,16 @@ trait FeatureLayerProperties
   /**
     * An array of field names from the service to include with each feature.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields)
     */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupEnabled)
     */
@@ -167,6 +204,15 @@ trait FeatureLayerProperties
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
+    * Refresh interval of the layer in minutes.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#refreshInterval)
+    */
+  var refreshInterval: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The renderer assigned to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer)
@@ -176,6 +222,8 @@ trait FeatureLayerProperties
   /**
     * When `true`, indicates that M values will be returned.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnM)
     */
   var returnM: js.UndefOr[Boolean] = js.undefined
@@ -183,12 +231,16 @@ trait FeatureLayerProperties
   /**
     * When `true`, indicates that z-values will always be returned.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnZ)
     */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#screenSizePerspectiveEnabled)
     */
@@ -206,7 +258,7 @@ trait FeatureLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * The spatial reference of the layer.
@@ -237,7 +289,7 @@ trait FeatureLayerProperties
   var types: js.UndefOr[js.Array[FeatureTypeProperties]] = js.undefined
   
   /**
-    * The URL of the REST endpoint of the layer, non-spatial table or service.
+    * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url)
     */
@@ -264,15 +316,21 @@ object FeatureLayerProperties {
     
     inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
-    inline def setDynamicDataSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "dynamicDataSource", value.asInstanceOf[js.Any])
+    inline def setDynamicDataSource(value: DynamicMapLayertypemaplay | DynamicDataLayertypedatal): Self = StObject.set(x, "dynamicDataSource", value.asInstanceOf[js.Any])
     
     inline def setDynamicDataSourceUndefined: Self = StObject.set(x, "dynamicDataSource", js.undefined)
+    
+    inline def setEditingEnabled(value: Boolean): Self = StObject.set(x, "editingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
     
     inline def setElevationInfo(value: FeatureLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    inline def setFeatureReduction(value: FeatureReductionClusterProperties | FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    inline def setFeatureReduction(
+      value: FeatureReductionBinningPr | FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection
+    ): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
     inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
@@ -280,7 +338,11 @@ object FeatureLayerProperties {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setFloorInfo(value: LayerFloorInfoProperties): Self = StObject.set(x, "floorInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFloorInfoUndefined: Self = StObject.set(x, "floorInfo", js.undefined)
     
     inline def setFormTemplate(value: FormTemplateProperties): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
     
@@ -310,7 +372,7 @@ object FeatureLayerProperties {
     
     inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
     
     inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
@@ -332,7 +394,7 @@ object FeatureLayerProperties {
     
     inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
     
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
@@ -341,6 +403,10 @@ object FeatureLayerProperties {
     inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
     
     inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
@@ -360,13 +426,13 @@ object FeatureLayerProperties {
     
     inline def setSource(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setSourceVarargs(value: GraphicProperties*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: GraphicProperties*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
@@ -376,7 +442,7 @@ object FeatureLayerProperties {
     
     inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    inline def setTemplatesVarargs(value: FeatureTemplateProperties*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: FeatureTemplateProperties*): Self = StObject.set(x, "templates", js.Array(value*))
     
     inline def setTypeIdField(value: String): Self = StObject.set(x, "typeIdField", value.asInstanceOf[js.Any])
     
@@ -386,7 +452,7 @@ object FeatureLayerProperties {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: FeatureTypeProperties*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: FeatureTypeProperties*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

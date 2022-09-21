@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-csv", "CSVDownload")
   @js.native
-  class CSVDownload () extends default
+  open class CSVDownload () extends default
   
   @JSImport("react-csv", "CSVLink")
   @js.native
-  class CSVLink ()
+  open class CSVLink ()
     extends typings.reactCsv.linkMod.default
 }

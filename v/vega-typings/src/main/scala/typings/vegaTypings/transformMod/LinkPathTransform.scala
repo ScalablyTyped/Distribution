@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LinkPathTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[String | SignalRef] = js.undefined
   

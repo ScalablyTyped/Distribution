@@ -17,7 +17,12 @@ object groundViewMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/GroundView", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * This class represents the view for the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) of a map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-GroundView.html)
+    */
+  open class Class ()
     extends StObject
        with GroundView {
     def this(properties: GroundViewProperties) = this()

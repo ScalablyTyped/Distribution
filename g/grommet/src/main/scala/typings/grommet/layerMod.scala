@@ -6,43 +6,39 @@ import typings.grommet.grommetStrings.none
 import typings.grommet.grommetStrings.slide
 import typings.grommet.grommetStrings.vertical
 import typings.grommet.utilsMod.AnimateType
+import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.KeyboardType
 import typings.grommet.utilsMod.MarginType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import typings.react.mod.ClassAttributes
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/Layer", "Layer")
   @js.native
-  class Layer protected ()
-    extends Component[
-          LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
-    def this(
-      props: LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
-      context: js.Any
-    ) = this()
+  val Layer: FC[LayerExtendedProps] = js.native
+  
+  trait LayerExtendedProps
+    extends StObject
+       with LayerProps
+       with ClassAttributes[HTMLDivElement]
+       with HTMLAttributes[HTMLDivElement]
+  object LayerExtendedProps {
+    
+    inline def apply(): LayerExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LayerExtendedProps]
+    }
   }
-  @JSImport("grommet/components/Layer", "Layer")
-  @js.native
-  val Layer: ComponentClass[
-    LayerProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-    ComponentState
-  ] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.bottom
@@ -86,13 +82,17 @@ object layerMod {
     
     var animation: js.UndefOr[none | slide | fadeIn | Boolean] = js.undefined
     
+    var background: js.UndefOr[BackgroundType] = js.undefined
+    
     var full: js.UndefOr[Boolean | vertical | horizontal] = js.undefined
     
     var margin: js.UndefOr[MarginType] = js.undefined
     
     var modal: js.UndefOr[Boolean] = js.undefined
     
-    var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onClickOutside: js.UndefOr[
+        js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent], Unit]
+      ] = js.undefined
     
     var onEsc: js.UndefOr[KeyboardType] = js.undefined
     
@@ -121,6 +121,10 @@ object layerMod {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
+      inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      
       inline def setFull(value: Boolean | vertical | horizontal): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
       inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
@@ -133,7 +137,7 @@ object layerMod {
       
       inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      inline def setOnClickOutside(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
+      inline def setOnClickOutside(value: /* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Unit): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
       
       inline def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
       
@@ -158,4 +162,6 @@ object layerMod {
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
+  
+  type divProps = DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]
 }

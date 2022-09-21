@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "SplitToggle")
 @js.native
-class SplitToggle ()
+open class SplitToggle ()
   extends typings.reactBootstrap.libMod.SplitToggle

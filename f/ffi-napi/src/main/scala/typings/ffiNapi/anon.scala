@@ -1,62 +1,63 @@
 package typings.ffiNapi
 
+import typings.ffiNapi.mod.PFFI_TYPE
+import typings.refNapi.mod.Pointer
+import typings.refNapi.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait RTLDDEFAUL extends StObject {
+  trait Alignment extends StObject {
     
-    var RTLD_DEFAUL: Buffer
+    var alignment: Type[Double]
     
-    var RTLD_GLOBAL: Double
+    var elements: Type[Pointer[PFFI_TYPE]]
     
-    var RTLD_LAZY: Double
+    var size: Type[String | Double]
     
-    var RTLD_LOCAL: Double
-    
-    var RTLD_NEXT: Buffer
-    
-    var RTLD_NODELETE: Double
-    
-    var RTLD_NOLOAD: Double
-    
-    var RTLD_NOW: Double
+    var `type`: Type[Double]
   }
-  object RTLDDEFAUL {
+  object Alignment {
     
     inline def apply(
-      RTLD_DEFAUL: Buffer,
-      RTLD_GLOBAL: Double,
-      RTLD_LAZY: Double,
-      RTLD_LOCAL: Double,
-      RTLD_NEXT: Buffer,
-      RTLD_NODELETE: Double,
-      RTLD_NOLOAD: Double,
-      RTLD_NOW: Double
-    ): RTLDDEFAUL = {
-      val __obj = js.Dynamic.literal(RTLD_DEFAUL = RTLD_DEFAUL.asInstanceOf[js.Any], RTLD_GLOBAL = RTLD_GLOBAL.asInstanceOf[js.Any], RTLD_LAZY = RTLD_LAZY.asInstanceOf[js.Any], RTLD_LOCAL = RTLD_LOCAL.asInstanceOf[js.Any], RTLD_NEXT = RTLD_NEXT.asInstanceOf[js.Any], RTLD_NODELETE = RTLD_NODELETE.asInstanceOf[js.Any], RTLD_NOLOAD = RTLD_NOLOAD.asInstanceOf[js.Any], RTLD_NOW = RTLD_NOW.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RTLDDEFAUL]
+      alignment: Type[Double],
+      elements: Type[Pointer[PFFI_TYPE]],
+      size: Type[String | Double],
+      `type`: Type[Double]
+    ): Alignment = {
+      val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Alignment]
     }
     
-    extension [Self <: RTLDDEFAUL](x: Self) {
+    extension [Self <: Alignment](x: Self) {
       
-      inline def setRTLD_DEFAUL(value: Buffer): Self = StObject.set(x, "RTLD_DEFAUL", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: Type[Double]): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      inline def setRTLD_GLOBAL(value: Double): Self = StObject.set(x, "RTLD_GLOBAL", value.asInstanceOf[js.Any])
+      inline def setElements(value: Type[Pointer[PFFI_TYPE]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      inline def setRTLD_LAZY(value: Double): Self = StObject.set(x, "RTLD_LAZY", value.asInstanceOf[js.Any])
+      inline def setSize(value: Type[String | Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      inline def setRTLD_LOCAL(value: Double): Self = StObject.set(x, "RTLD_LOCAL", value.asInstanceOf[js.Any])
+      inline def setType(value: Type[Double]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Elements extends StObject {
+    
+    var elements: Type[Pointer[PFFI_TYPE]]
+  }
+  object Elements {
+    
+    inline def apply(elements: Type[Pointer[PFFI_TYPE]]): Elements = {
+      val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Elements]
+    }
+    
+    extension [Self <: Elements](x: Self) {
       
-      inline def setRTLD_NEXT(value: Buffer): Self = StObject.set(x, "RTLD_NEXT", value.asInstanceOf[js.Any])
-      
-      inline def setRTLD_NODELETE(value: Double): Self = StObject.set(x, "RTLD_NODELETE", value.asInstanceOf[js.Any])
-      
-      inline def setRTLD_NOLOAD(value: Double): Self = StObject.set(x, "RTLD_NOLOAD", value.asInstanceOf[js.Any])
-      
-      inline def setRTLD_NOW(value: Double): Self = StObject.set(x, "RTLD_NOW", value.asInstanceOf[js.Any])
+      inline def setElements(value: Type[Pointer[PFFI_TYPE]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     }
   }
 }

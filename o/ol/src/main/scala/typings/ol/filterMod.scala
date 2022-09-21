@@ -12,7 +12,7 @@ object filterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def and(conditions: default*): typings.ol.andMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(conditions.asInstanceOf[js.Any]).asInstanceOf[typings.ol.andMod.default]
+  inline def and(conditions: default*): typings.ol.andMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(conditions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.ol.andMod.default]
   
   inline def bbox(geometryName: String, extent: Extent): typings.ol.bboxMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(geometryName.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[typings.ol.bboxMod.default]
   inline def bbox(geometryName: String, extent: Extent, opt_srsName: String): typings.ol.bboxMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(geometryName.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[typings.ol.bboxMod.default]
@@ -22,7 +22,19 @@ object filterMod {
   inline def contains(geometryName: String, geometry: typings.ol.geometryMod.default): typings.ol.containsMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[typings.ol.containsMod.default]
   inline def contains(geometryName: String, geometry: typings.ol.geometryMod.default, opt_srsName: String): typings.ol.containsMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[typings.ol.containsMod.default]
   
+  inline def disjoint(geometryName: String, geometry: typings.ol.geometryMod.default): typings.ol.disjointMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("disjoint")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[typings.ol.disjointMod.default]
+  inline def disjoint(geometryName: String, geometry: typings.ol.geometryMod.default, opt_srsName: String): typings.ol.disjointMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("disjoint")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[typings.ol.disjointMod.default]
+  
   inline def during(propertyName: String, begin: String, end: String): typings.ol.duringMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("during")(propertyName.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.ol.duringMod.default]
+  
+  inline def dwithin(geometryName: String, geometry: typings.ol.geometryMod.default, distance: Double, unit: String): typings.ol.dwithinMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("dwithin")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[typings.ol.dwithinMod.default]
+  inline def dwithin(
+    geometryName: String,
+    geometry: typings.ol.geometryMod.default,
+    distance: Double,
+    unit: String,
+    opt_srsName: String
+  ): typings.ol.dwithinMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("dwithin")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[typings.ol.dwithinMod.default]
   
   inline def equalTo(propertyName: String, expression: String): typings.ol.equalToMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[typings.ol.equalToMod.default]
   inline def equalTo(propertyName: String, expression: String, opt_matchCase: Boolean): typings.ol.equalToMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[typings.ol.equalToMod.default]
@@ -146,7 +158,7 @@ object filterMod {
   inline def notEqualTo(propertyName: String, expression: Double): typings.ol.notEqualToMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[typings.ol.notEqualToMod.default]
   inline def notEqualTo(propertyName: String, expression: Double, opt_matchCase: Boolean): typings.ol.notEqualToMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualTo")(propertyName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], opt_matchCase.asInstanceOf[js.Any])).asInstanceOf[typings.ol.notEqualToMod.default]
   
-  inline def or(conditions: default*): typings.ol.orMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(conditions.asInstanceOf[js.Any]).asInstanceOf[typings.ol.orMod.default]
+  inline def or(conditions: default*): typings.ol.orMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(conditions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.ol.orMod.default]
   
   inline def within(geometryName: String, geometry: typings.ol.geometryMod.default): typings.ol.withinMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[typings.ol.withinMod.default]
   inline def within(geometryName: String, geometry: typings.ol.geometryMod.default, opt_srsName: String): typings.ol.withinMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(geometryName.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], opt_srsName.asInstanceOf[js.Any])).asInstanceOf[typings.ol.withinMod.default]

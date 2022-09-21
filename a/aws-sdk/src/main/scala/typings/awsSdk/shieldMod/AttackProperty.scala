@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttackProperty extends StObject {
   
   /**
-    * The type of distributed denial of service (DDoS) event that was observed. NETWORK indicates layer 3 and layer 4 events and APPLICATION indicates layer 7 events.
+    * The type of Shield event that was observed. NETWORK indicates layer 3 and layer 4 events and APPLICATION indicates layer 7 events. For infrastructure layer events (L3 and L4 events), you can view metrics for top contributors in Amazon CloudWatch metrics. For more information, see Shield metrics and alarms in the WAF Developer Guide. 
     */
   var AttackLayer: js.UndefOr[typings.awsSdk.shieldMod.AttackLayer] = js.undefined
   
   /**
-    * Defines the DDoS attack property information that is provided. The WORDPRESS_PINGBACK_REFLECTOR and WORDPRESS_PINGBACK_SOURCE values are valid only for WordPress reflective pingback DDoS attacks.
+    * Defines the Shield event property information that is provided. The WORDPRESS_PINGBACK_REFLECTOR and WORDPRESS_PINGBACK_SOURCE values are valid only for WordPress reflective pingback events.
     */
   var AttackPropertyIdentifier: js.UndefOr[typings.awsSdk.shieldMod.AttackPropertyIdentifier] = js.undefined
   
   /**
-    * The array of contributor objects that includes the top five contributors to an attack. 
+    * Contributor objects for the top five contributors to a Shield event. A contributor is a source of traffic that Shield Advanced identifies as responsible for some or all of an event.
     */
   var TopContributors: js.UndefOr[typings.awsSdk.shieldMod.TopContributors] = js.undefined
   
   /**
-    * The total contributions made to this attack by all contributors, not just the five listed in the TopContributors list.
+    * The total contributions made to this Shield event by all contributors.
     */
   var Total: js.UndefOr[Long] = js.undefined
   
   /**
-    * The unit of the Value of the contributions.
+    * The unit used for the Contributor Value property. 
     */
   var Unit: js.UndefOr[typings.awsSdk.shieldMod.Unit] = js.undefined
 }
@@ -52,7 +52,7 @@ object AttackProperty {
     
     inline def setTopContributorsUndefined: Self = StObject.set(x, "TopContributors", js.undefined)
     
-    inline def setTopContributorsVarargs(value: Contributor*): Self = StObject.set(x, "TopContributors", js.Array(value :_*))
+    inline def setTopContributorsVarargs(value: Contributor*): Self = StObject.set(x, "TopContributors", js.Array(value*))
     
     inline def setTotal(value: Long): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     

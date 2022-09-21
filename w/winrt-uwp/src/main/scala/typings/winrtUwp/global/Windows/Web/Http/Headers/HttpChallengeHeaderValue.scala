@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents authentication information used in the Proxy-Authenticate and WWW-Authenticate HTTP header values. */
 @JSGlobal("Windows.Web.Http.Headers.HttpChallengeHeaderValue")
 @js.native
-class HttpChallengeHeaderValue protected ()
+open class HttpChallengeHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpChallengeHeaderValue {
   /**

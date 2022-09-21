@@ -4,18 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The single value of a rate group or the value of a rate group table&#39;s
-  * cell. Exactly one of noShipping, flatRate, pricePercentage,
-  * carrierRateName, subtableName must be set.
-  */
 trait SchemaValue extends StObject {
   
   /**
-    * The name of a carrier rate referring to a carrier rate defined in the
-    * same rate group. Can only be set if all other fields are not set.
+    * The name of a carrier rate referring to a carrier rate defined in the same rate group. Can only be set if all other fields are not set.
     */
-  var carrierRateName: js.UndefOr[String] = js.undefined
+  var carrierRateName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A flat rate. Can only be set if all other fields are not set.
@@ -23,22 +17,19 @@ trait SchemaValue extends StObject {
   var flatRate: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * If true, then the product can&#39;t ship. Must be true when set, can only
-    * be set if all other fields are not set.
+    * If true, then the product can't ship. Must be true when set, can only be set if all other fields are not set.
     */
-  var noShipping: js.UndefOr[Boolean] = js.undefined
+  var noShipping: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * A percentage of the price represented as a number in decimal notation
-    * (e.g., &quot;5.4&quot;). Can only be set if all other fields are not set.
+    * A percentage of the price represented as a number in decimal notation (e.g., `"5.4"`). Can only be set if all other fields are not set.
     */
-  var pricePercentage: js.UndefOr[String] = js.undefined
+  var pricePercentage: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name of a subtable. Can only be set in table cells (i.e., not for
-    * single values), and only if all other fields are not set.
+    * The name of a subtable. Can only be set in table cells (i.e., not for single values), and only if all other fields are not set.
     */
-  var subtableName: js.UndefOr[String] = js.undefined
+  var subtableName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaValue {
   
@@ -51,6 +42,8 @@ object SchemaValue {
     
     inline def setCarrierRateName(value: String): Self = StObject.set(x, "carrierRateName", value.asInstanceOf[js.Any])
     
+    inline def setCarrierRateNameNull: Self = StObject.set(x, "carrierRateName", null)
+    
     inline def setCarrierRateNameUndefined: Self = StObject.set(x, "carrierRateName", js.undefined)
     
     inline def setFlatRate(value: SchemaPrice): Self = StObject.set(x, "flatRate", value.asInstanceOf[js.Any])
@@ -59,13 +52,19 @@ object SchemaValue {
     
     inline def setNoShipping(value: Boolean): Self = StObject.set(x, "noShipping", value.asInstanceOf[js.Any])
     
+    inline def setNoShippingNull: Self = StObject.set(x, "noShipping", null)
+    
     inline def setNoShippingUndefined: Self = StObject.set(x, "noShipping", js.undefined)
     
     inline def setPricePercentage(value: String): Self = StObject.set(x, "pricePercentage", value.asInstanceOf[js.Any])
     
+    inline def setPricePercentageNull: Self = StObject.set(x, "pricePercentage", null)
+    
     inline def setPricePercentageUndefined: Self = StObject.set(x, "pricePercentage", js.undefined)
     
     inline def setSubtableName(value: String): Self = StObject.set(x, "subtableName", value.asInstanceOf[js.Any])
+    
+    inline def setSubtableNameNull: Self = StObject.set(x, "subtableName", null)
     
     inline def setSubtableNameUndefined: Self = StObject.set(x, "subtableName", js.undefined)
   }

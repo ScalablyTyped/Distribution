@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyFleetRequest extends StObject {
   
   /**
+    * Reserved.
+    */
+  var Context: js.UndefOr[String] = js.undefined
+  
+  /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
@@ -40,6 +45,10 @@ object ModifyFleetRequest {
   
   extension [Self <: ModifyFleetRequest](x: Self) {
     
+    inline def setContext(value: String): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+    
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
@@ -54,7 +63,7 @@ object ModifyFleetRequest {
     
     inline def setLaunchTemplateConfigsUndefined: Self = StObject.set(x, "LaunchTemplateConfigs", js.undefined)
     
-    inline def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfigRequest*): Self = StObject.set(x, "LaunchTemplateConfigs", js.Array(value :_*))
+    inline def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfigRequest*): Self = StObject.set(x, "LaunchTemplateConfigs", js.Array(value*))
     
     inline def setTargetCapacitySpecification(value: TargetCapacitySpecificationRequest): Self = StObject.set(x, "TargetCapacitySpecification", value.asInstanceOf[js.Any])
     

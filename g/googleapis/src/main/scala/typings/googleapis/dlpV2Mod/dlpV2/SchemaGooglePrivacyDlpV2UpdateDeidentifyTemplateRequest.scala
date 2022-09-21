@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for UpdateDeidentifyTemplate.
-  */
 trait SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest extends StObject {
   /**
     * Mask to control which fields get updated.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest {
   
@@ -33,6 +30,8 @@ object SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest {
     inline def setDeidentifyTemplateUndefined: Self = StObject.set(x, "deidentifyTemplate", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

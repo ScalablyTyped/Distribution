@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("notifyjs", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Notify {
     def this(title: String) = this()
@@ -86,12 +86,9 @@ object mod {
     */
   /* static member */
   inline def requestPermission(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")().asInstanceOf[Unit]
-  inline def requestPermission(onPermissionGrantedCallback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def requestPermission(
-    onPermissionGrantedCallback: js.Function0[js.Any],
-    onPermissionDeniedCallback: js.Function0[js.Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any], onPermissionDeniedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def requestPermission(onPermissionGrantedCallback: Unit, onPermissionDeniedCallback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any], onPermissionDeniedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def requestPermission(onPermissionGrantedCallback: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def requestPermission(onPermissionGrantedCallback: js.Function0[Any], onPermissionDeniedCallback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any], onPermissionDeniedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def requestPermission(onPermissionGrantedCallback: Unit, onPermissionDeniedCallback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(onPermissionGrantedCallback.asInstanceOf[js.Any], onPermissionDeniedCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Notify extends StObject {
     
@@ -189,7 +186,7 @@ object mod {
     /**
       * callback when notification is shown
       */
-    var notifyShow: js.UndefOr[js.Function1[/* e */ Event, js.Any]] = js.undefined
+    var notifyShow: js.UndefOr[js.Function1[/* e */ Event, Any]] = js.undefined
     
     /**
       * callback when user has denied permission
@@ -251,7 +248,7 @@ object mod {
       
       inline def setNotifyErrorUndefined: Self = StObject.set(x, "notifyError", js.undefined)
       
-      inline def setNotifyShow(value: /* e */ Event => js.Any): Self = StObject.set(x, "notifyShow", js.Any.fromFunction1(value))
+      inline def setNotifyShow(value: /* e */ Event => Any): Self = StObject.set(x, "notifyShow", js.Any.fromFunction1(value))
       
       inline def setNotifyShowUndefined: Self = StObject.set(x, "notifyShow", js.undefined)
       

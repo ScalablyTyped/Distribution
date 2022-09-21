@@ -141,7 +141,7 @@ object Custom {
   /** Represents the control code. */
   @JSGlobal("Windows.Devices.Custom.IOControlCode")
   @js.native
-  class IOControlCode protected ()
+  open class IOControlCode protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Custom.IOControlCode {
     /**

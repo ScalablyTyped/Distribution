@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about an impersonation, where an admin acts on behalf of an end
-  * user. Information about the acting admin is not currently available.
-  */
 trait SchemaImpersonation extends StObject {
   
   /**

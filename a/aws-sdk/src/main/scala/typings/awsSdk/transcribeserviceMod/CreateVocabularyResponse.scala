@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateVocabularyResponse extends StObject {
   
   /**
-    * If the VocabularyState field is FAILED, this field contains information about why the job failed.
+    * If VocabularyState is FAILED, FailureReason contains information about why the vocabulary request failed. See also: Common Errors.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
-    * The language code of the vocabulary entries.
+    * The language code you selected for your custom vocabulary.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
-    * The date and time that the vocabulary was created.
+    * The date and time you created your custom vocabulary. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents 12:32 PM UTC-7 on May 4, 2022.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the vocabulary.
+    * The name you chose for your custom vocabulary.
     */
   var VocabularyName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyName] = js.undefined
   
   /**
-    * The processing state of the vocabulary. When the VocabularyState field contains READY the vocabulary is ready to be used in a StartTranscriptionJob request.
+    * The processing state of your custom vocabulary. If the state is READY, you can use the vocabulary in a StartTranscriptionJob request.
     */
   var VocabularyState: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyState] = js.undefined
 }
@@ -48,7 +48,7 @@ object CreateVocabularyResponse {
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    inline def setLastModifiedTime(value: DateTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

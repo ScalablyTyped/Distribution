@@ -1,6 +1,7 @@
 package typings.opentok.mod
 
 import typings.opentok.opentokStrings.bestFit
+import typings.opentok.opentokStrings.focus
 import typings.opentok.opentokStrings.horizontalPresentation
 import typings.opentok.opentokStrings.pip
 import typings.opentok.opentokStrings.verticalPresentation
@@ -21,7 +22,7 @@ object ArchiveLayoutOptions {
     __obj.asInstanceOf[typings.opentok.mod.CustomArchiveLayoutOptions]
   }
   
-  inline def PredefinedArchiveLayoutOptions(`type`: bestFit | pip | verticalPresentation | horizontalPresentation): typings.opentok.mod.PredefinedArchiveLayoutOptions = {
+  inline def PredefinedArchiveLayoutOptions(`type`: bestFit | pip | verticalPresentation | horizontalPresentation | focus): typings.opentok.mod.PredefinedArchiveLayoutOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.opentok.mod.PredefinedArchiveLayoutOptions]

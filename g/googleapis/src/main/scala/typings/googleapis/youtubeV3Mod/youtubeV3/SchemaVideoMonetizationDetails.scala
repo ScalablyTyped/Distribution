@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Details about monetization of a YouTube Video.
-  */
 trait SchemaVideoMonetizationDetails extends StObject {
   
   /**

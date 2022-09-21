@@ -1,6 +1,7 @@
 package typings.sentryTypes
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sentryTypes.requestMod.QueryParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ object miscMod {
   
   trait ExtractedNodeRequestData
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /** String representing the cookies sent along with the request */
     var cookies: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -23,8 +24,8 @@ object miscMod {
     /**  The request's method */
     var method: js.UndefOr[String] = js.undefined
     
-    /** The request's query string, without the leading '?' */
-    var query_string: js.UndefOr[String] = js.undefined
+    /** The request's query params */
+    var query_string: js.UndefOr[QueryParams] = js.undefined
     
     /** The request's URL, including query string */
     var url: js.UndefOr[String] = js.undefined
@@ -54,15 +55,21 @@ object miscMod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setQuery_string(value: String): Self = StObject.set(x, "query_string", value.asInstanceOf[js.Any])
+      inline def setQuery_string(value: QueryParams): Self = StObject.set(x, "query_string", value.asInstanceOf[js.Any])
       
       inline def setQuery_stringUndefined: Self = StObject.set(x, "query_string", js.undefined)
+      
+      inline def setQuery_stringVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "query_string", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
+  
+  type HttpHeaderValue = String | js.Array[String] | Double | Null
+  
+  type Primitive = js.UndefOr[Double | String | Boolean | js.BigInt | js.Symbol | Null]
   
   trait WorkerLocation extends StObject {
     

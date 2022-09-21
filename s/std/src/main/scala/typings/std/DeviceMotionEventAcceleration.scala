@@ -4,12 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Available only in secure contexts. */
 trait DeviceMotionEventAcceleration extends StObject {
   
+  /* standard dom */
   val x: Double | Null
   
+  /* standard dom */
   val y: Double | Null
   
+  /* standard dom */
   val z: Double | Null
 }
 object DeviceMotionEventAcceleration {

@@ -6,11 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IRevealOptions extends StObject {
   
+  var additionalOverlayClasses: js.UndefOr[String] = js.undefined
+  
   var animationIn: js.UndefOr[String] = js.undefined
   
   var animationOut: js.UndefOr[String] = js.undefined
   
-  var btmOffsetPct: js.UndefOr[Double] = js.undefined
+  var appendTo: js.UndefOr[String] = js.undefined
   
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
@@ -20,7 +22,7 @@ trait IRevealOptions extends StObject {
   
   var fullScreen: js.UndefOr[Boolean] = js.undefined
   
-  var hOffset: js.UndefOr[Double] = js.undefined
+  var hOffset: js.UndefOr[Double | String] = js.undefined
   
   var hideDelay: js.UndefOr[Double] = js.undefined
   
@@ -32,7 +34,9 @@ trait IRevealOptions extends StObject {
   
   var showDelay: js.UndefOr[Double] = js.undefined
   
-  var vOffset: js.UndefOr[Double] = js.undefined
+  var updateHistory: js.UndefOr[Boolean] = js.undefined
+  
+  var vOffset: js.UndefOr[Double | String] = js.undefined
 }
 object IRevealOptions {
   
@@ -43,6 +47,10 @@ object IRevealOptions {
   
   extension [Self <: IRevealOptions](x: Self) {
     
+    inline def setAdditionalOverlayClasses(value: String): Self = StObject.set(x, "additionalOverlayClasses", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalOverlayClassesUndefined: Self = StObject.set(x, "additionalOverlayClasses", js.undefined)
+    
     inline def setAnimationIn(value: String): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
     
     inline def setAnimationInUndefined: Self = StObject.set(x, "animationIn", js.undefined)
@@ -51,9 +59,9 @@ object IRevealOptions {
     
     inline def setAnimationOutUndefined: Self = StObject.set(x, "animationOut", js.undefined)
     
-    inline def setBtmOffsetPct(value: Double): Self = StObject.set(x, "btmOffsetPct", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    inline def setBtmOffsetPctUndefined: Self = StObject.set(x, "btmOffsetPct", js.undefined)
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
     inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
@@ -71,7 +79,7 @@ object IRevealOptions {
     
     inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
-    inline def setHOffset(value: Double): Self = StObject.set(x, "hOffset", value.asInstanceOf[js.Any])
+    inline def setHOffset(value: Double | String): Self = StObject.set(x, "hOffset", value.asInstanceOf[js.Any])
     
     inline def setHOffsetUndefined: Self = StObject.set(x, "hOffset", js.undefined)
     
@@ -95,7 +103,11 @@ object IRevealOptions {
     
     inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
     
-    inline def setVOffset(value: Double): Self = StObject.set(x, "vOffset", value.asInstanceOf[js.Any])
+    inline def setUpdateHistory(value: Boolean): Self = StObject.set(x, "updateHistory", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateHistoryUndefined: Self = StObject.set(x, "updateHistory", js.undefined)
+    
+    inline def setVOffset(value: Double | String): Self = StObject.set(x, "vOffset", value.asInstanceOf[js.Any])
     
     inline def setVOffsetUndefined: Self = StObject.set(x, "vOffset", js.undefined)
   }

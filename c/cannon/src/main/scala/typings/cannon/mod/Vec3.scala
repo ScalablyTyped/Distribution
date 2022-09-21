@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "Vec3")
 @js.native
-class Vec3 ()
+open class Vec3 ()
   extends StObject
      with typings.cannon.CANNON.Vec3 {
   def this(x: Double) = this()

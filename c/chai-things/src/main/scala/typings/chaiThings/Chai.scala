@@ -13,7 +13,7 @@ object Chai {
     extends StObject
        with Assertion {
     
-    def apply(): js.Any = js.native
+    def apply(): Any = js.native
   }
   
   trait ArrayAssertion extends StObject {
@@ -23,11 +23,11 @@ object Chai {
     @JSName("all")
     var all_Original: Assertion
     
-    def contain(item: js.Any): js.Any
+    def contain(item: Any): Any
     @JSName("contain")
     var contain_Original: ArrayInclude
     
-    def include(item: js.Any): js.Any
+    def include(item: Any): Any
     @JSName("include")
     var include_Original: ArrayInclude
     
@@ -55,31 +55,31 @@ object Chai {
   @js.native
   trait ArrayInclude extends StObject {
     
-    def apply(item: js.Any): js.Any = js.native
+    def apply(item: Any): Any = js.native
     
     var a: Item = js.native
     
     var an: Item = js.native
     
-    def any(): js.Any = js.native
+    def any(): Any = js.native
     def any(`type`: String): Assertion = js.native
     def any(`type`: String, message: String): Assertion = js.native
     @JSName("any")
     var any_Original: Anything = js.native
     
-    def one(): js.Any = js.native
+    def one(): Any = js.native
     def one(`type`: String): Assertion = js.native
     def one(`type`: String, message: String): Assertion = js.native
     @JSName("one")
     var one_Original: Something = js.native
     
-    def some(): js.Any = js.native
+    def some(): Any = js.native
     def some(`type`: String): Assertion = js.native
     def some(`type`: String, message: String): Assertion = js.native
     @JSName("some")
     var some_Original: Something = js.native
     
-    def something(): js.Any = js.native
+    def something(): Any = js.native
     def something(`type`: String): Assertion = js.native
     def something(`type`: String, message: String): Assertion = js.native
     @JSName("something")
@@ -88,14 +88,13 @@ object Chai {
   
   trait Deep extends StObject {
     
-    def equals(value: js.Any): Assertion
-    def equals(value: js.Any, message: String): Assertion
+    def equals(value: Any, message: String): Assertion
     @JSName("equals")
     var equals_Original: Equal
   }
   object Deep {
     
-    inline def apply(equals_ : (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Deep = {
+    inline def apply(equals_ : (/* value */ Any, /* message */ js.UndefOr[String]) => Assertion): Deep = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("equals")(js.Any.fromFunction2(equals_))
       __obj.asInstanceOf[Deep]
@@ -103,32 +102,32 @@ object Chai {
     
     extension [Self <: Deep](x: Self) {
       
-      inline def setEquals_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (/* value */ Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
   trait Include extends StObject {
     
-    def apply(item: js.Any): js.Any = js.native
+    def apply(item: Any): Any = js.native
     
     var a: Item = js.native
     
     var an: Item = js.native
     
-    def one(): js.Any = js.native
+    def one(): Any = js.native
     def one(`type`: String): Assertion = js.native
     def one(`type`: String, message: String): Assertion = js.native
     @JSName("one")
     var one_Original: Something = js.native
     
-    def some(): js.Any = js.native
+    def some(): Any = js.native
     def some(`type`: String): Assertion = js.native
     def some(`type`: String, message: String): Assertion = js.native
     @JSName("some")
     var some_Original: Something = js.native
     
-    def something(): js.Any = js.native
+    def something(): Any = js.native
     def something(`type`: String): Assertion = js.native
     def something(`type`: String, message: String): Assertion = js.native
     @JSName("something")
@@ -137,13 +136,13 @@ object Chai {
   
   trait Item extends StObject {
     
-    def item(): js.Any
+    def item(): Any
     def item(`type`: String): Assertion
     def item(`type`: String, message: String): Assertion
     @JSName("item")
     var item_Original: Something
     
-    def thing(): js.Any
+    def thing(): Any
     def thing(`type`: String): Assertion
     def thing(`type`: String, message: String): Assertion
     @JSName("thing")
@@ -169,6 +168,6 @@ object Chai {
     extends StObject
        with Assertion {
     
-    def apply(): js.Any = js.native
+    def apply(): Any = js.native
   }
 }

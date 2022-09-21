@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLImg")
 @js.native
-/* private */ class HTMLImg ()
+/* private */ open class HTMLImg ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLImg

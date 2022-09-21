@@ -10,10 +10,10 @@ Injects a fake HTTP request/response into a node HTTP server
 | ------------------ | :-------------: |
 | Full name          | shot |
 | Keywords           | utilities, http, debug, test |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 7725494 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 390216.6666666667 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/shot#readme)

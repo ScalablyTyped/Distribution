@@ -1,7 +1,7 @@
 
 # Scala.js typings for anybar
 
-Typings are for version 4.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Control the AnyBar app
@@ -10,10 +10,10 @@ Control the AnyBar app
 | ------------------ | :-------------: |
 | Full name          | anybar |
 | Keywords           | anybar, app, macos, mac, udp, status, color, dot, indicator |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 2039 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 209.33333333333334 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/anybar#readme)

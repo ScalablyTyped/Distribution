@@ -16,7 +16,7 @@ trait GoogleCloudDialogflowV2AnnotatedMessagePart extends StObject {
     * The [Dialogflow system entity formatted value ](https://cloud.google.com/dialogflow/docs/reference/system-entities) of this message part. For example for a system entity of type
     * `@sys.unit-currency`, this may contain: { "amount": 5, "currency": "USD" }
     */
-  var formattedValue: js.UndefOr[js.Any] = js.undefined
+  var formattedValue: js.UndefOr[Any] = js.undefined
   
   /** A part of a message possibly annotated with an entity. */
   var text: js.UndefOr[String] = js.undefined
@@ -34,7 +34,7 @@ object GoogleCloudDialogflowV2AnnotatedMessagePart {
     
     inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
-    inline def setFormattedValue(value: js.Any): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+    inline def setFormattedValue(value: Any): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
     inline def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
     

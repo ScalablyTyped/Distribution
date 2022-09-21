@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "TYSectionList")
 @js.native
-class TYSectionList protected ()
-  extends Component[TYSectionListProps, js.Object, js.Any] {
+open class TYSectionList protected ()
+  extends Component[TYSectionListProps, js.Object, Any] {
   def this(props: TYSectionListProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TYSectionListProps, context: js.Any) = this()
+  def this(props: TYSectionListProps, context: Any) = this()
 }
 /* static members */
 object TYSectionList {

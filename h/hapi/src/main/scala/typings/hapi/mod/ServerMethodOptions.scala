@@ -22,7 +22,7 @@ trait ServerMethodOptions extends StObject {
     * unique key if the function's arguments are all of types 'string', 'number', or 'boolean'. However if the method uses other types of arguments, a key generation function must be provided which
     * takes the same arguments as the function and returns a unique string (or null if no key can be generated).
     */
-  var generateKey: js.UndefOr[js.Function1[/* repeated */ js.Any, String | Null]] = js.undefined
+  var generateKey: js.UndefOr[js.Function1[/* repeated */ Any, String | Null]] = js.undefined
 }
 object ServerMethodOptions {
   
@@ -41,7 +41,7 @@ object ServerMethodOptions {
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    inline def setGenerateKey(value: /* repeated */ js.Any => String | Null): Self = StObject.set(x, "generateKey", js.Any.fromFunction1(value))
+    inline def setGenerateKey(value: /* repeated */ Any => String | Null): Self = StObject.set(x, "generateKey", js.Any.fromFunction1(value))
     
     inline def setGenerateKeyUndefined: Self = StObject.set(x, "generateKey", js.undefined)
   }

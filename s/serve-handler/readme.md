@@ -10,10 +10,10 @@ The routing foundation of `serve` and static deployments on Now
 | ------------------ | :-------------: |
 | Full name          | serve-handler |
 | Keywords           | static, deployment, server |
-| # releases         | 9 |
-| # dependents       | 180 |
-| # downloads        | 18969731 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8980096.666666666 |
+| # stars            | 455.0 |
 
 ## Links
 - [Homepage](https://github.com/zeit/serve-handler#readme)

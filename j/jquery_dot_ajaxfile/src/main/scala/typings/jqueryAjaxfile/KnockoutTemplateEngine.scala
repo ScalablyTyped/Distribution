@@ -15,17 +15,12 @@ trait KnockoutTemplateEngine
   
   def createJavaScriptEvaluatorBlock(script: String): String = js.native
   
-  def isTemplateRewritten(template: js.Any, templateDocument: Document): Boolean = js.native
+  def isTemplateRewritten(template: Any, templateDocument: Document): Boolean = js.native
   
-  def makeTemplateSource(template: js.Any): js.Any = js.native
-  def makeTemplateSource(template: js.Any, templateDocument: Document): js.Any = js.native
+  def makeTemplateSource(template: Any): Any = js.native
+  def makeTemplateSource(template: Any, templateDocument: Document): Any = js.native
   
-  def renderTemplate(
-    template: js.Any,
-    bindingContext: KnockoutBindingContext,
-    options: Object,
-    templateDocument: Document
-  ): js.Any = js.native
+  def renderTemplate(template: Any, bindingContext: KnockoutBindingContext, options: Object, templateDocument: Document): Any = js.native
   
-  def rewriteTemplate(template: js.Any, rewriterCallback: js.Function, templateDocument: Document): Unit = js.native
+  def rewriteTemplate(template: Any, rewriterCallback: js.Function, templateDocument: Document): Unit = js.native
 }

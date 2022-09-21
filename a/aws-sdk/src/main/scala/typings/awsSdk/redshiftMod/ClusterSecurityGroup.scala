@@ -52,18 +52,18 @@ object ClusterSecurityGroup {
     
     inline def setEC2SecurityGroupsUndefined: Self = StObject.set(x, "EC2SecurityGroups", js.undefined)
     
-    inline def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = StObject.set(x, "EC2SecurityGroups", js.Array(value :_*))
+    inline def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = StObject.set(x, "EC2SecurityGroups", js.Array(value*))
     
     inline def setIPRanges(value: IPRangeList): Self = StObject.set(x, "IPRanges", value.asInstanceOf[js.Any])
     
     inline def setIPRangesUndefined: Self = StObject.set(x, "IPRanges", js.undefined)
     
-    inline def setIPRangesVarargs(value: IPRange*): Self = StObject.set(x, "IPRanges", js.Array(value :_*))
+    inline def setIPRangesVarargs(value: IPRange*): Self = StObject.set(x, "IPRanges", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

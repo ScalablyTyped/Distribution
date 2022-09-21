@@ -29,7 +29,7 @@ trait ScrollView
   
   def setDataSource(dataSource: DataSource): Unit = js.native
   
-  def value(dataItem: js.Any): js.Any = js.native
+  def value(dataItem: Any): Any = js.native
   
   var wrapper: JQuery = js.native
 }

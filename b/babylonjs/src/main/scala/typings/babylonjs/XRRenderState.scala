@@ -13,6 +13,8 @@ trait XRRenderState extends StObject {
   val depthNear: Double
   
   val inlineVerticalFieldOfView: js.UndefOr[Double] = js.undefined
+  
+  val layers: js.UndefOr[js.Array[XRLayer]] = js.undefined
 }
 object XRRenderState {
   
@@ -34,5 +36,11 @@ object XRRenderState {
     inline def setInlineVerticalFieldOfView(value: Double): Self = StObject.set(x, "inlineVerticalFieldOfView", value.asInstanceOf[js.Any])
     
     inline def setInlineVerticalFieldOfViewUndefined: Self = StObject.set(x, "inlineVerticalFieldOfView", js.undefined)
+    
+    inline def setLayers(value: js.Array[XRLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    
+    inline def setLayersVarargs(value: XRLayer*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

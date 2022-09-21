@@ -16,7 +16,7 @@ trait ASPxClientReportParametersPanel
     * @param path A System.String specifying the parameter's path.
     * @param value An object specifying the parameter value.
     */
-  def AssignParameter(path: String, value: js.Any): Unit
+  def AssignParameter(path: String, value: Any): Unit
   
   /**
     * Assigns a value to a parameter of the report displayed in the document viewer.
@@ -39,14 +39,14 @@ object ASPxClientReportParametersPanel {
   
   inline def apply(
     AdjustControl: () => Unit,
-    AssignParameter: (String, js.Any) => Unit,
+    AssignParameter: (String, Any) => Unit,
     AssignParameters: js.Array[ASPxClientReportParameterInfo] => Unit,
     GetClientVisible: () => Boolean,
     GetEditorByParameterName: String => ASPxClientControl,
     GetHeight: () => Double,
-    GetMainElement: () => js.Any,
+    GetMainElement: () => Any,
     GetParameterNames: () => js.Array[String],
-    GetParentControl: () => js.Any,
+    GetParentControl: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     InCallback: () => Boolean,
@@ -64,7 +64,7 @@ object ASPxClientReportParametersPanel {
   
   extension [Self <: ASPxClientReportParametersPanel](x: Self) {
     
-    inline def setAssignParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "AssignParameter", js.Any.fromFunction2(value))
+    inline def setAssignParameter(value: (String, Any) => Unit): Self = StObject.set(x, "AssignParameter", js.Any.fromFunction2(value))
     
     inline def setAssignParameters(value: js.Array[ASPxClientReportParameterInfo] => Unit): Self = StObject.set(x, "AssignParameters", js.Any.fromFunction1(value))
     

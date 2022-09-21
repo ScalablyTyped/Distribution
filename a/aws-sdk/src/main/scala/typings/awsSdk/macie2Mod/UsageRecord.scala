@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UsageRecord extends StObject {
   
   /**
-    * The unique identifier for the AWS account that the data applies to.
+    * The unique identifier for the Amazon Web Services account that the data applies to.
     */
   var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the free trial started for the account.
     */
-  var freeTrialStartDate: js.UndefOr[timestampIso8601] = js.undefined
+  var freeTrialStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An array of objects that contains usage data and quotas for the account. Each object contains the data for a specific usage metric and the corresponding quota.
@@ -34,7 +34,7 @@ object UsageRecord {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    inline def setFreeTrialStartDate(value: timestampIso8601): Self = StObject.set(x, "freeTrialStartDate", value.asInstanceOf[js.Any])
+    inline def setFreeTrialStartDate(value: js.Date): Self = StObject.set(x, "freeTrialStartDate", value.asInstanceOf[js.Any])
     
     inline def setFreeTrialStartDateUndefined: Self = StObject.set(x, "freeTrialStartDate", js.undefined)
     
@@ -42,6 +42,6 @@ object UsageRecord {
     
     inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     
-    inline def setUsageVarargs(value: UsageByAccount*): Self = StObject.set(x, "usage", js.Array(value :_*))
+    inline def setUsageVarargs(value: UsageByAccount*): Self = StObject.set(x, "usage", js.Array(value*))
   }
 }

@@ -1,9 +1,5 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,38 +14,27 @@ trait ParamsResourceCreativesList
   var accountId: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * When specified, only creatives for the given buyer creative ids are
-    * returned.
+    * When specified, only creatives for the given buyer creative ids are returned.
     */
   var buyerCreativeId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * When specified, only creatives having the given deals status are
-    * returned.
+    * When specified, only creatives having the given deals status are returned.
     */
   var dealsStatusFilter: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of entries returned on one result page. If not set, the
-    * default is 100. Optional.
+    * Maximum number of entries returned on one result page. If not set, the default is 100. Optional.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * When specified, only creatives having the given open auction status are
-    * returned.
+    * When specified, only creatives having the given open auction status are returned.
     */
   var openAuctionStatusFilter: js.UndefOr[String] = js.undefined
   
   /**
-    * A continuation token, used to page through ad clients. To retrieve the
-    * next page, set this parameter to the value of "nextPageToken" from the
-    * previous response. Optional.
+    * A continuation token, used to page through ad clients. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response. Optional.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -66,17 +51,13 @@ object ParamsResourceCreativesList {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    inline def setAccountIdVarargs(value: Double*): Self = StObject.set(x, "accountId", js.Array(value :_*))
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAccountIdVarargs(value: Double*): Self = StObject.set(x, "accountId", js.Array(value*))
     
     inline def setBuyerCreativeId(value: js.Array[String]): Self = StObject.set(x, "buyerCreativeId", value.asInstanceOf[js.Any])
     
     inline def setBuyerCreativeIdUndefined: Self = StObject.set(x, "buyerCreativeId", js.undefined)
     
-    inline def setBuyerCreativeIdVarargs(value: String*): Self = StObject.set(x, "buyerCreativeId", js.Array(value :_*))
+    inline def setBuyerCreativeIdVarargs(value: String*): Self = StObject.set(x, "buyerCreativeId", js.Array(value*))
     
     inline def setDealsStatusFilter(value: String): Self = StObject.set(x, "dealsStatusFilter", value.asInstanceOf[js.Any])
     

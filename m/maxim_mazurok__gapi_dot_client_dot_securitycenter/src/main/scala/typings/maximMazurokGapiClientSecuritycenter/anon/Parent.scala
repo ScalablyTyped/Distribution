@@ -16,17 +16,17 @@ trait Parent extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /**
+    * Required. Unique identifier provided by the client within the parent scope. It must consist of lower case letters, numbers, and hyphen, with the first character a letter, the
+    * last a letter or a number, and a 63 character maximum.
+    */
+  var bigQueryExportId: js.UndefOr[String] = js.undefined
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Required. Unique identifier provided by the client within the parent scope. It must be alphanumeric and less than or equal to 32 characters and greater than 0 characters in
-    * length.
-    */
-  var findingId: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
@@ -34,7 +34,7 @@ trait Parent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the new finding's parent. Its format should be "organizations/[organization_id]/sources/[source_id]". */
+  /** Required. Resource name of the new big query export's parent. Its format is "organizations/[organization_id]", "folders/[folder_id]", or "projects/[project_id]". */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -70,6 +70,10 @@ object Parent {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
+    inline def setBigQueryExportId(value: String): Self = StObject.set(x, "bigQueryExportId", value.asInstanceOf[js.Any])
+    
+    inline def setBigQueryExportIdUndefined: Self = StObject.set(x, "bigQueryExportId", js.undefined)
+    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -77,10 +81,6 @@ object Parent {
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-    
-    inline def setFindingId(value: String): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
-    
-    inline def setFindingIdUndefined: Self = StObject.set(x, "findingId", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

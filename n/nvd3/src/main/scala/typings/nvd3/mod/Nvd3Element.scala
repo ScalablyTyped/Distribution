@@ -13,26 +13,26 @@ trait Nvd3Element extends StObject {
   
   def apply(
     selection: Selection_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   def apply(
     transition: Transition_[
-      js.Any | js.Array[js.Any], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any | js.Array[Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ],
-    args: js.Any*
-  ): js.Any = js.native
+    args: Any*
+  ): Any = js.native
   
   var dispatch: Dispatch_[js.Object] = js.native
   
-  def options(options: js.Any): this.type = js.native
+  def options(options: Any): this.type = js.native
   
   def update(): Unit = js.native
 }

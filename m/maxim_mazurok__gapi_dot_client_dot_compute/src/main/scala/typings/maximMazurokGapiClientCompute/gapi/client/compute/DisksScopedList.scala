@@ -26,7 +26,7 @@ object DisksScopedList {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

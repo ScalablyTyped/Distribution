@@ -11,9 +11,9 @@ React Native plugin for the Goby service
 | Full name          | react-native-goby |
 | Keywords           | react-native, code, push |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 136 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 28.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/MessageDream/react-native-goby)

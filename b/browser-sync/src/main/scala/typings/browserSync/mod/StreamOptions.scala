@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamOptions extends StObject {
   
   var `match`: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ js.Any) | (js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ js.Any
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ Any) | (js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ Any
     ])
   ] = js.undefined
   
@@ -24,16 +24,16 @@ object StreamOptions {
   extension [Self <: StreamOptions](x: Self) {
     
     inline def setMatch(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ js.Any) | (js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ js.Any
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ Any) | (js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ Any
         ])
     ): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     inline def setMatchVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ js.Any)*
-    ): Self = StObject.set(x, "match", js.Array(value :_*))
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ Any)*
+    ): Self = StObject.set(x, "match", js.Array(value*))
     
     inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     

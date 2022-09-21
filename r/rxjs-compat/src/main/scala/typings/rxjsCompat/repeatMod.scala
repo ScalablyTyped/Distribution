@@ -10,6 +10,6 @@ object repeatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def repeat[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")().asInstanceOf[js.Any]
-  inline def repeat[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def repeat[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")().asInstanceOf[Any]
+  inline def repeat[T](count: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(count.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

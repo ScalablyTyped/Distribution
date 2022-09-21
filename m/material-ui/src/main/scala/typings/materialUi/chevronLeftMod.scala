@@ -10,10 +10,10 @@ object chevronLeftMod {
   
   @JSImport("material-ui/svg-icons/navigation/chevron-left", JSImport.Default)
   @js.native
-  class default () extends NavigationChevronLeft
+  open class default () extends NavigationChevronLeft
   
   @JSImport("material-ui/svg-icons/navigation/chevron-left", "NavigationChevronLeft")
   @js.native
-  class NavigationChevronLeft ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationChevronLeft ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

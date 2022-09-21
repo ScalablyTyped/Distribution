@@ -43,11 +43,18 @@ object NodeBuilderFlags extends StObject {
        with NodeBuilderFlags
   /* 67108864 */ val AllowNodeModulesRelativePaths: typings.typescript.mod.NodeBuilderFlags.AllowNodeModulesRelativePaths & Double = js.native
   
+  /** @deprecated AllowQualifedNameInPlaceOfIdentifier. Use AllowQualifiedNameInPlaceOfIdentifier instead. */
   @js.native
   sealed trait AllowQualifedNameInPlaceOfIdentifier
     extends StObject
        with NodeBuilderFlags
   /* 65536 */ val AllowQualifedNameInPlaceOfIdentifier: typings.typescript.mod.NodeBuilderFlags.AllowQualifedNameInPlaceOfIdentifier & Double = js.native
+  
+  @js.native
+  sealed trait AllowQualifiedNameInPlaceOfIdentifier
+    extends StObject
+       with NodeBuilderFlags
+  /* 65536 */ val AllowQualifiedNameInPlaceOfIdentifier: typings.typescript.mod.NodeBuilderFlags.AllowQualifiedNameInPlaceOfIdentifier & Double = js.native
   
   @js.native
   sealed trait AllowThisInObjectLiteral
@@ -92,12 +99,6 @@ object NodeBuilderFlags extends StObject {
   /* 4194304 */ val InObjectTypeLiteral: typings.typescript.mod.NodeBuilderFlags.InObjectTypeLiteral & Double = js.native
   
   @js.native
-  sealed trait InReverseMappedType
-    extends StObject
-       with NodeBuilderFlags
-  /* 33554432 */ val InReverseMappedType: typings.typescript.mod.NodeBuilderFlags.InReverseMappedType & Double = js.native
-  
-  @js.native
   sealed trait InTypeAlias
     extends StObject
        with NodeBuilderFlags
@@ -122,12 +123,6 @@ object NodeBuilderFlags extends StObject {
   /* 536870912 */ val NoTypeReduction: typings.typescript.mod.NodeBuilderFlags.NoTypeReduction & Double = js.native
   
   @js.native
-  sealed trait NoUndefinedOptionalParameterType
-    extends StObject
-       with NodeBuilderFlags
-  /* 1073741824 */ val NoUndefinedOptionalParameterType: typings.typescript.mod.NodeBuilderFlags.NoUndefinedOptionalParameterType & Double = js.native
-  
-  @js.native
   sealed trait None
     extends StObject
        with NodeBuilderFlags
@@ -138,6 +133,12 @@ object NodeBuilderFlags extends StObject {
     extends StObject
        with NodeBuilderFlags
   /* 8192 */ val OmitParameterModifiers: typings.typescript.mod.NodeBuilderFlags.OmitParameterModifiers & Double = js.native
+  
+  @js.native
+  sealed trait OmitThisParameter
+    extends StObject
+       with NodeBuilderFlags
+  /* 33554432 */ val OmitThisParameter: typings.typescript.mod.NodeBuilderFlags.OmitThisParameter & Double = js.native
   
   @js.native
   sealed trait SuppressAnyReturnType

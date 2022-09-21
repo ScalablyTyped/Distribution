@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Config extends StObject {
   
   /**
-    * The Amazon S3 bucket to access. This bucket is used as a parameter in the CreateLocationS3 operation. 
+    * The ARN of the IAM role for accessing the S3 bucket. 
     */
   var BucketAccessRoleArn: IamRoleArn
 }

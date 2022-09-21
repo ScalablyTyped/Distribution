@@ -9,29 +9,29 @@ trait AdvancedTimer[T]
   extends StObject
      with IDisposable {
   
-  /* private */ var _breakCondition: js.Any = js.native
+  /* private */ var _breakCondition: Any = js.native
   
-  /* private */ var _breakOnNextTick: js.Any = js.native
+  /* private */ var _breakOnNextTick: Any = js.native
   
-  /* private */ var _contextObservable: js.Any = js.native
+  /* private */ var _contextObservable: Any = js.native
   
-  /* private */ var _observableParameters: js.Any = js.native
+  /* private */ var _observableParameters: Any = js.native
   
-  /* private */ var _observer: js.Any = js.native
+  /* private */ var _observer: Any = js.native
   
-  /* private */ var _setState: js.Any = js.native
+  /* private */ var _setState: Any = js.native
   
-  /* private */ var _startTime: js.Any = js.native
+  /* private */ var _startTime: Any = js.native
   
-  /* private */ var _state: js.Any = js.native
+  /* private */ var _state: Any = js.native
   
-  /* private */ var _stop: js.Any = js.native
+  /* private */ var _stop: Any = js.native
   
-  /* private */ var _tick: js.Any = js.native
+  /* private */ var _tick: Any = js.native
   
-  /* private */ var _timeToEnd: js.Any = js.native
+  /* private */ var _timeToEnd: Any = js.native
   
-  /* private */ var _timer: js.Any = js.native
+  /* private */ var _timer: Any = js.native
   
   /**
     * set a breaking condition for this timer. Default is to never break during count

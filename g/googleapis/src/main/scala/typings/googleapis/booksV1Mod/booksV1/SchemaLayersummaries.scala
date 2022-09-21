@@ -14,12 +14,12 @@ trait SchemaLayersummaries extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The total number of layer summaries found.
     */
-  var totalItems: js.UndefOr[Double] = js.undefined
+  var totalItems: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaLayersummaries {
   
@@ -34,13 +34,17 @@ object SchemaLayersummaries {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaLayersummary*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaLayersummary*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    
+    inline def setTotalItemsNull: Self = StObject.set(x, "totalItems", null)
     
     inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }

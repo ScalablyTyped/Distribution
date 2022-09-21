@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-focus-within" : "6.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-focus-within" : "6.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

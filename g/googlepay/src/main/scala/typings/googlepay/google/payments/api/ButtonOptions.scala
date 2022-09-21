@@ -16,11 +16,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ButtonOptions extends StObject {
   
   /**
+    * List of allowed payment methods.
+    *
+    * This is an optional field for filtering card info for dynamic
+    * buttons. No filtering will happen if this field is not set.
+    */
+  var allowedPaymentMethods: js.UndefOr[js.Array[IsReadyToPayPaymentMethodSpecification]] = js.undefined
+  
+  /**
     * Specifies the button color of the Google Pay button.
     *
     * @default "default"
     */
   var buttonColor: js.UndefOr[ButtonColor] = js.undefined
+  
+  /**
+    * The [ISO
+    * 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code
+    * representing the desired button language.
+    *
+    * Supported locales include `en`, `ar`, `bg`, `ca`, `cs`, `da`, `de`,
+    * `el`, `es`, `et`, `fi`, `fr`, `hr`, `id`, `it`, `ja`, `ko`, `ms`,
+    * `nl`, `no`, `pl`, `pt`, `ru`, `sk`, `sl`, `sr`, `sv`, `th`, `tr`,
+    * `uk`, and `zh`.
+    *
+    * @default browser or operating system language
+    */
+  var buttonLocale: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how to append Google Pay resources, such as `<style>` tags,
@@ -65,9 +87,19 @@ object ButtonOptions {
   
   extension [Self <: ButtonOptions](x: Self) {
     
+    inline def setAllowedPaymentMethods(value: js.Array[IsReadyToPayPaymentMethodSpecification]): Self = StObject.set(x, "allowedPaymentMethods", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedPaymentMethodsUndefined: Self = StObject.set(x, "allowedPaymentMethods", js.undefined)
+    
+    inline def setAllowedPaymentMethodsVarargs(value: IsReadyToPayPaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value*))
+    
     inline def setButtonColor(value: ButtonColor): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
     
     inline def setButtonColorUndefined: Self = StObject.set(x, "buttonColor", js.undefined)
+    
+    inline def setButtonLocale(value: String): Self = StObject.set(x, "buttonLocale", value.asInstanceOf[js.Any])
+    
+    inline def setButtonLocaleUndefined: Self = StObject.set(x, "buttonLocale", js.undefined)
     
     inline def setButtonRootNode(value: HTMLDocument | ShadowRoot): Self = StObject.set(x, "buttonRootNode", value.asInstanceOf[js.Any])
     

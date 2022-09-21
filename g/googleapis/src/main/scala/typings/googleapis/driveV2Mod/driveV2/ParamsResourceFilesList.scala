@@ -1,9 +1,5 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,46 +9,47 @@ trait ParamsResourceFilesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Comma-separated list of bodies of items (files/documents) to which the
-    * query applies. Supported bodies are 'default', 'domain', 'teamDrive' and
-    * 'allTeamDrives'. 'allTeamDrives' must be combined with 'default'; all
-    * other values must be used in isolation. Prefer 'default' or 'teamDrive'
-    * to 'allTeamDrives' for efficiency.
+    * Groupings of files to which the query applies. Supported groupings are: 'user' (files created by, opened by, or shared directly with the user), 'drive' (files in the specified shared drive as indicated by the 'driveId'), 'domain' (files shared to the user's domain), and 'allDrives' (A combination of 'user' and 'drive' for all drives where the user is a member). When able, use 'user' or 'drive', instead of 'allDrives', for efficiency.
     */
   var corpora: js.UndefOr[String] = js.undefined
   
   /**
-    * The body of items (files/documents) to which the query applies.
-    * Deprecated: use 'corpora' instead.
+    * The body of items (files/documents) to which the query applies. Deprecated: use 'corpora' instead.
     */
   var corpus: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether Team Drive items should be included in results.
+    * ID of the shared drive to search.
+    */
+  var driveId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Whether both My Drive and shared drive items should be included in results.
+    */
+  var includeItemsFromAllDrives: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A comma-separated list of IDs of labels to include in the labelInfo part of the response.
+    */
+  var includeLabels: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies which additional view's permissions to include in the response. Only 'published' is supported.
+    */
+  var includePermissionsForView: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Deprecated use includeItemsFromAllDrives instead.
     */
   var includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The maximum number of files to return per page. Partial or empty result
-    * pages are possible even before the end of the files list has been
-    * reached.
+    * The maximum number of files to return per page. Partial or empty result pages are possible even before the end of the files list has been reached.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * A comma-separated list of sort keys. Valid keys are 'createdDate',
-    * 'folder', 'lastViewedByMeDate', 'modifiedByMeDate', 'modifiedDate',
-    * 'quotaBytesUsed', 'recency', 'sharedWithMeDate', 'starred', 'title', and
-    * 'title_natural'. Each key sorts ascending by default, but may be reversed
-    * with the 'desc' modifier. Example usage: ?orderBy=folder,modifiedDate
-    * desc,title. Please note that there is a current limitation for users with
-    * approximately one million files in which the requested sort order is
-    * ignored.
+    * A comma-separated list of sort keys. Valid keys are 'createdDate', 'folder', 'lastViewedByMeDate', 'modifiedByMeDate', 'modifiedDate', 'quotaBytesUsed', 'recency', 'sharedWithMeDate', 'starred', 'title', and 'title_natural'. Each key sorts ascending by default, but may be reversed with the 'desc' modifier. Example usage: ?orderBy=folder,modifiedDate desc,title. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is ignored.
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
@@ -72,18 +69,22 @@ trait ParamsResourceFilesList
   var q: js.UndefOr[String] = js.undefined
   
   /**
-    * A comma-separated list of spaces to query. Supported values are 'drive',
-    * 'appDataFolder' and 'photos'.
+    * A comma-separated list of spaces to query. Supported values are 'drive' and 'appDataFolder'.
     */
   var spaces: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether the requesting application supports Team Drives.
+    * Whether the requesting application supports both My Drives and shared drives.
+    */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Deprecated use supportsAllDrives instead.
     */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * ID of Team Drive to search.
+    * Deprecated use driveId instead.
     */
   var teamDriveId: js.UndefOr[String] = js.undefined
 }
@@ -96,10 +97,6 @@ object ParamsResourceFilesList {
   
   extension [Self <: ParamsResourceFilesList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setCorpora(value: String): Self = StObject.set(x, "corpora", value.asInstanceOf[js.Any])
     
     inline def setCorporaUndefined: Self = StObject.set(x, "corpora", js.undefined)
@@ -107,6 +104,22 @@ object ParamsResourceFilesList {
     inline def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     
     inline def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
+    
+    inline def setDriveId(value: String): Self = StObject.set(x, "driveId", value.asInstanceOf[js.Any])
+    
+    inline def setDriveIdUndefined: Self = StObject.set(x, "driveId", js.undefined)
+    
+    inline def setIncludeItemsFromAllDrives(value: Boolean): Self = StObject.set(x, "includeItemsFromAllDrives", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeItemsFromAllDrivesUndefined: Self = StObject.set(x, "includeItemsFromAllDrives", js.undefined)
+    
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
+    
+    inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
+    
+    inline def setIncludePermissionsForViewUndefined: Self = StObject.set(x, "includePermissionsForView", js.undefined)
     
     inline def setIncludeTeamDriveItems(value: Boolean): Self = StObject.set(x, "includeTeamDriveItems", value.asInstanceOf[js.Any])
     
@@ -135,6 +148,10 @@ object ParamsResourceFilesList {
     inline def setSpaces(value: String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
     inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+    
+    inline def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsAllDrivesUndefined: Self = StObject.set(x, "supportsAllDrives", js.undefined)
     
     inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     

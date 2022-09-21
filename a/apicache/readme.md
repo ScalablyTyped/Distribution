@@ -1,7 +1,7 @@
 
 # Scala.js typings for apicache
 
-Typings are for version 1.2
+Typings are for version 1.6
 
 ## Library description:
 An ultra-simplified API response caching middleware for Express/Node using plain-english durations.
@@ -10,10 +10,10 @@ An ultra-simplified API response caching middleware for Express/Node using plain
 | ------------------ | :-------------: |
 | Full name          | apicache |
 | Keywords           | cache, API, redis, memcache, response, express, JSON, duration, middleware, memory |
-| # releases         | 4 |
-| # dependents       | 34 |
-| # downloads        | 999723 |
-| # stars            | 26 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 177641.0 |
+| # stars            | 1107.0 |
 
 ## Links
 - [Homepage](https://github.com/kwhitley/apicache#readme)

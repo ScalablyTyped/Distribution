@@ -1,9 +1,5 @@
 package typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,34 +9,22 @@ trait ParamsResourceFoldersList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The maximum number of Folders to return in the response. This field is
-    * optional.
+    * Optional. The maximum number of Folders to return in the response. The server can return fewer folders than requested. If unspecified, server picks an appropriate default.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A pagination token returned from a previous call to `ListFolders` that
-    * indicates where this listing should continue from. This field is
-    * optional.
+    * Optional. A pagination token returned from a previous call to `ListFolders` that indicates where this listing should continue from.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The resource name of the Organization or Folder whose Folders are being
-    * listed. Must be of the form `folders/{folder_id}` or
-    * `organizations/{org_id}`. Access to this method is controlled by checking
-    * the `resourcemanager.folders.list` permission on the `parent`.
+    * Required. The resource name of the Organization or Folder whose Folders are being listed. Must be of the form `folders/{folder_id\}` or `organizations/{org_id\}`. Access to this method is controlled by checking the `resourcemanager.folders.list` permission on the `parent`.
     */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * Controls whether Folders in the DELETE_REQUESTED state should be
-    * returned. Defaults to false. This field is optional.
+    * Optional. Controls whether Folders in the DELETE_REQUESTED state should be returned. Defaults to false.
     */
   var showDeleted: js.UndefOr[Boolean] = js.undefined
 }
@@ -52,10 +36,6 @@ object ParamsResourceFoldersList {
   }
   
   extension [Self <: ParamsResourceFoldersList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

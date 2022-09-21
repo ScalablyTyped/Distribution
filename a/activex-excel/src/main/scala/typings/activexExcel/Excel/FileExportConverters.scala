@@ -17,7 +17,7 @@ trait FileExportConverters extends StObject {
   
   def Item(Index: Double): FileExportConverter = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): FileExportConverter = js.native
+  def _Default(Index: Any): FileExportConverter = js.native
 }

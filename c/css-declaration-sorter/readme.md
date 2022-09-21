@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-declaration-sorter
 
-Typings are for version 5.1
+Typings are for version 6.3.1
 
 ## Library description:
 Sorts CSS declarations fast and automatically in a certain order.
@@ -10,10 +10,10 @@ Sorts CSS declarations fast and automatically in a certain order.
 | ------------------ | :-------------: |
 | Full name          | css-declaration-sorter |
 | Keywords           | postcss, postcss-plugin, css, declaration, sorter, property, order |
-| # releases         | 8 |
-| # dependents       | 26 |
-| # downloads        | 272547111 |
-| # stars            | 1 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1780896333333336E7 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/Siilwyn/css-declaration-sorter#readme)
@@ -24,7 +24,7 @@ Sorts CSS declarations fast and automatically in a certain order.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

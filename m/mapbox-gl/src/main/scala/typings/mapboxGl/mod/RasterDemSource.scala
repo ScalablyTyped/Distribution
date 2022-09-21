@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterDemSource
   extends StObject
      with Source
-     with AnySourceData
-     with AnySourceImpl {
+     with _AnySourceData
+     with _AnySourceImpl {
   
   var attribution: js.UndefOr[String] = js.undefined
   
@@ -19,9 +19,13 @@ trait RasterDemSource
   
   var encoding: js.UndefOr[terrarium | mapbox] = js.undefined
   
+  var id: js.UndefOr[String] = js.undefined
+  
   var maxzoom: js.UndefOr[Double] = js.undefined
   
   var minzoom: js.UndefOr[Double] = js.undefined
+  
+  var name: js.UndefOr[String] = js.undefined
   
   var tileSize: js.UndefOr[Double] = js.undefined
   
@@ -50,11 +54,15 @@ object RasterDemSource {
     
     inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
     
     inline def setEncoding(value: terrarium | mapbox): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
@@ -64,6 +72,10 @@ object RasterDemSource {
     
     inline def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
     inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
@@ -72,7 +84,7 @@ object RasterDemSource {
     
     inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
-    inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value*))
     
     inline def setType(value: `raster-dem`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

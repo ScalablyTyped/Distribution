@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait DualShockInput
   extends StObject
-     with _DeviceInput[js.Any]
+     with _DeviceInput[Any]
 @JSImport("babylonjs/DeviceInput/InputDevices/deviceEnums", "DualShockInput")
 @js.native
 object DualShockInput extends StObject {

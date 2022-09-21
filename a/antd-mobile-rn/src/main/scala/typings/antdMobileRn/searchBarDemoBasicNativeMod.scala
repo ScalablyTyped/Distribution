@@ -10,15 +10,14 @@ object searchBarDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/search-bar/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends SearchBarDemo
+  open class default () extends SearchBarDemo
   
   @js.native
-  trait SearchBarDemo
-    extends Component[js.Any, js.Any, js.Any] {
+  trait SearchBarDemo extends Component[Any, Any, Any] {
     
     def clear(): Unit = js.native
     
-    def onChange(value: js.Any): Unit = js.native
+    def onChange(value: Any): Unit = js.native
     
     @JSName("state")
     var state_SearchBarDemo: ValueString = js.native

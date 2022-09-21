@@ -6,11 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "NonNullAssert")
 @js.native
-class NonNullAssert protected ()
-  extends typings.angularCompiler.compilerMod.NonNullAssert {
-  def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    expression: typings.angularCompiler.astMod.AST
-  ) = this()
+open class NonNullAssert protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expression: AST) = this()
+  
+  var expression: AST = js.native
 }

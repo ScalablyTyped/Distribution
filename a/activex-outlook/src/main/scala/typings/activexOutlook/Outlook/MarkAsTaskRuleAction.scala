@@ -21,7 +21,7 @@ trait MarkAsTaskRuleAction extends StObject {
   /* private */ @JSName("Outlook.MarkAsTaskRuleAction_typekey")
   var OutlookDotMarkAsTaskRuleAction_typekey: MarkAsTaskRuleAction
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -35,7 +35,7 @@ object MarkAsTaskRuleAction {
     FlagTo: String,
     MarkInterval: OlMarkInterval,
     OutlookDotMarkAsTaskRuleAction_typekey: MarkAsTaskRuleAction,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): MarkAsTaskRuleAction = {
     val __obj = js.Dynamic.literal(ActionType = ActionType.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], FlagTo = FlagTo.asInstanceOf[js.Any], MarkInterval = MarkInterval.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object MarkAsTaskRuleAction {
     
     inline def setOutlookDotMarkAsTaskRuleAction_typekey(value: MarkAsTaskRuleAction): Self = StObject.set(x, "Outlook.MarkAsTaskRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

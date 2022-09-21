@@ -46,7 +46,7 @@ object InventoryWindowsUpdatePackage {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: InventoryWindowsUpdatePackageWindowsUpdateCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: InventoryWindowsUpdatePackageWindowsUpdateCategory*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object InventoryWindowsUpdatePackage {
     
     inline def setKbArticleIdsUndefined: Self = StObject.set(x, "kbArticleIds", js.undefined)
     
-    inline def setKbArticleIdsVarargs(value: String*): Self = StObject.set(x, "kbArticleIds", js.Array(value :_*))
+    inline def setKbArticleIdsVarargs(value: String*): Self = StObject.set(x, "kbArticleIds", js.Array(value*))
     
     inline def setLastDeploymentChangeTime(value: String): Self = StObject.set(x, "lastDeploymentChangeTime", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object InventoryWindowsUpdatePackage {
     
     inline def setMoreInfoUrlsUndefined: Self = StObject.set(x, "moreInfoUrls", js.undefined)
     
-    inline def setMoreInfoUrlsVarargs(value: String*): Self = StObject.set(x, "moreInfoUrls", js.Array(value :_*))
+    inline def setMoreInfoUrlsVarargs(value: String*): Self = StObject.set(x, "moreInfoUrls", js.Array(value*))
     
     inline def setRevisionNumber(value: Double): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
     

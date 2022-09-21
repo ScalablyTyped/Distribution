@@ -8,21 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object argumentOutOfRangeErrorMod {
   
-  @JSImport("rxjs/internal/util/ArgumentOutOfRangeError", "ArgumentOutOfRangeError")
+  @JSImport("rxjs/dist/types/internal/util/ArgumentOutOfRangeError", "ArgumentOutOfRangeError")
   @js.native
   val ArgumentOutOfRangeError: ArgumentOutOfRangeErrorCtor = js.native
-  type ArgumentOutOfRangeError = Error
+  type ArgumentOutOfRangeError = js.Error
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("rxjs/internal/util/ArgumentOutOfRangeError", "ArgumentOutOfRangeError")
+  @JSImport("rxjs/dist/types/internal/util/ArgumentOutOfRangeError", "ArgumentOutOfRangeError")
   @js.native
-  class ArgumentOutOfRangeErrorCls ()
+  /**
+    * @deprecated Internal implementation detail. Do not construct error instances.
+    * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
+    */
+  open class ArgumentOutOfRangeErrorCls ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -30,5 +36,9 @@ object argumentOutOfRangeErrorMod {
   @js.native
   trait ArgumentOutOfRangeErrorCtor
     extends StObject
-       with Instantiable0[typings.rxjs.argumentOutOfRangeErrorMod.ArgumentOutOfRangeError]
+       with /**
+    * @deprecated Internal implementation detail. Do not construct error instances.
+    * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
+    */
+  Instantiable0[js.Error]
 }

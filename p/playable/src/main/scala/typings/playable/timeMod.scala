@@ -13,61 +13,61 @@ object timeMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/time/time", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TimeControl {
     def this(hasEventEmitterEngineTheme: EngineEventEmitter) = this()
     
     /* private */ /* CompleteClass */
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _processLiveStateChange: js.Any = js.native
+    var _processLiveStateChange: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _setCurrentTime: js.Any = js.native
+    var _setCurrentTime: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _setDurationTime: js.Any = js.native
+    var _setDurationTime: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _startIntervalUpdates: js.Any = js.native
+    var _startIntervalUpdates: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _stopIntervalUpdates: js.Any = js.native
+    var _stopIntervalUpdates: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _theme: js.Any = js.native
+    var _theme: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _toggleIntervalUpdates: js.Any = js.native
+    var _toggleIntervalUpdates: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _updateControlInterval: js.Any = js.native
+    var _updateControlInterval: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _updateCurrentTime: js.Any = js.native
+    var _updateCurrentTime: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _updateDurationTime: js.Any = js.native
+    var _updateDurationTime: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _updateTimeFromPreview: js.Any = js.native
+    var _updateTimeFromPreview: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -121,39 +121,39 @@ object timeMod {
     extends StObject
        with ITimeControl {
     
-    /* private */ var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: Any
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _processLiveStateChange: js.Any
+    /* private */ var _processLiveStateChange: Any
     
-    /* private */ var _setCurrentTime: js.Any
+    /* private */ var _setCurrentTime: Any
     
-    /* private */ var _setDurationTime: js.Any
+    /* private */ var _setDurationTime: Any
     
-    /* private */ var _startIntervalUpdates: js.Any
+    /* private */ var _startIntervalUpdates: Any
     
-    /* private */ var _stopIntervalUpdates: js.Any
+    /* private */ var _stopIntervalUpdates: Any
     
-    /* private */ var _theme: js.Any
+    /* private */ var _theme: Any
     
-    /* private */ var _toggleIntervalUpdates: js.Any
+    /* private */ var _toggleIntervalUpdates: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
-    /* private */ var _updateControlInterval: js.Any
+    /* private */ var _updateControlInterval: Any
     
-    /* private */ var _updateCurrentTime: js.Any
+    /* private */ var _updateCurrentTime: Any
     
-    /* private */ var _updateDurationTime: js.Any
+    /* private */ var _updateDurationTime: Any
     
-    /* private */ var _updateTimeFromPreview: js.Any
+    /* private */ var _updateTimeFromPreview: Any
     
     var isHidden: Boolean
     
@@ -162,23 +162,23 @@ object timeMod {
   object TimeControl {
     
     inline def apply(
-      _bindCallbacks: js.Any,
-      _bindEvents: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _initUI: js.Any,
-      _processLiveStateChange: js.Any,
-      _setCurrentTime: js.Any,
-      _setDurationTime: js.Any,
-      _startIntervalUpdates: js.Any,
-      _stopIntervalUpdates: js.Any,
-      _theme: js.Any,
-      _toggleIntervalUpdates: js.Any,
-      _unbindEvents: js.Any,
-      _updateControlInterval: js.Any,
-      _updateCurrentTime: js.Any,
-      _updateDurationTime: js.Any,
-      _updateTimeFromPreview: js.Any,
+      _bindCallbacks: Any,
+      _bindEvents: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _initUI: Any,
+      _processLiveStateChange: Any,
+      _setCurrentTime: Any,
+      _setDurationTime: Any,
+      _startIntervalUpdates: Any,
+      _stopIntervalUpdates: Any,
+      _theme: Any,
+      _toggleIntervalUpdates: Any,
+      _unbindEvents: Any,
+      _updateControlInterval: Any,
+      _updateCurrentTime: Any,
+      _updateDurationTime: Any,
+      _updateTimeFromPreview: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -197,39 +197,39 @@ object timeMod {
       
       inline def setView(value: typings.playable.timeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_processLiveStateChange(value: js.Any): Self = StObject.set(x, "_processLiveStateChange", value.asInstanceOf[js.Any])
+      inline def set_processLiveStateChange(value: Any): Self = StObject.set(x, "_processLiveStateChange", value.asInstanceOf[js.Any])
       
-      inline def set_setCurrentTime(value: js.Any): Self = StObject.set(x, "_setCurrentTime", value.asInstanceOf[js.Any])
+      inline def set_setCurrentTime(value: Any): Self = StObject.set(x, "_setCurrentTime", value.asInstanceOf[js.Any])
       
-      inline def set_setDurationTime(value: js.Any): Self = StObject.set(x, "_setDurationTime", value.asInstanceOf[js.Any])
+      inline def set_setDurationTime(value: Any): Self = StObject.set(x, "_setDurationTime", value.asInstanceOf[js.Any])
       
-      inline def set_startIntervalUpdates(value: js.Any): Self = StObject.set(x, "_startIntervalUpdates", value.asInstanceOf[js.Any])
+      inline def set_startIntervalUpdates(value: Any): Self = StObject.set(x, "_startIntervalUpdates", value.asInstanceOf[js.Any])
       
-      inline def set_stopIntervalUpdates(value: js.Any): Self = StObject.set(x, "_stopIntervalUpdates", value.asInstanceOf[js.Any])
+      inline def set_stopIntervalUpdates(value: Any): Self = StObject.set(x, "_stopIntervalUpdates", value.asInstanceOf[js.Any])
       
-      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      inline def set_toggleIntervalUpdates(value: js.Any): Self = StObject.set(x, "_toggleIntervalUpdates", value.asInstanceOf[js.Any])
+      inline def set_toggleIntervalUpdates(value: Any): Self = StObject.set(x, "_toggleIntervalUpdates", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_updateControlInterval(value: js.Any): Self = StObject.set(x, "_updateControlInterval", value.asInstanceOf[js.Any])
+      inline def set_updateControlInterval(value: Any): Self = StObject.set(x, "_updateControlInterval", value.asInstanceOf[js.Any])
       
-      inline def set_updateCurrentTime(value: js.Any): Self = StObject.set(x, "_updateCurrentTime", value.asInstanceOf[js.Any])
+      inline def set_updateCurrentTime(value: Any): Self = StObject.set(x, "_updateCurrentTime", value.asInstanceOf[js.Any])
       
-      inline def set_updateDurationTime(value: js.Any): Self = StObject.set(x, "_updateDurationTime", value.asInstanceOf[js.Any])
+      inline def set_updateDurationTime(value: Any): Self = StObject.set(x, "_updateDurationTime", value.asInstanceOf[js.Any])
       
-      inline def set_updateTimeFromPreview(value: js.Any): Self = StObject.set(x, "_updateTimeFromPreview", value.asInstanceOf[js.Any])
+      inline def set_updateTimeFromPreview(value: Any): Self = StObject.set(x, "_updateTimeFromPreview", value.asInstanceOf[js.Any])
     }
   }
 }

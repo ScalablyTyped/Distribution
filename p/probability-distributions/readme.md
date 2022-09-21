@@ -10,10 +10,10 @@ Generate random variables from a variety of probability distributions. Includes 
 | ------------------ | :-------------: |
 | Full name          | probability-distributions |
 | Keywords           | statistical distributions, normal distribution, gamma distribution, beta distribution, Laplace distribution, Poisson distribution, Chi-squared distribution, probability, probability distributions, random, random numbers, random variates, random variables, Random words, random number generator, Rstats, Rlang, R-stats, prng, Uniform distribution, Sampling |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 13619 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 899.3333333333334 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/Mattasher/probability-distributions#readme)

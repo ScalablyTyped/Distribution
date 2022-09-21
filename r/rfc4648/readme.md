@@ -1,7 +1,7 @@
 
 # Scala.js typings for rfc4648
 
-Typings are for version 1.4.0
+Typings are for version 1.5.2
 
 ## Library description:
 Encoding and decoding for base64, base32, base16, and friends
@@ -10,10 +10,10 @@ Encoding and decoding for base64, base32, base16, and friends
 | ------------------ | :-------------: |
 | Full name          | rfc4648 |
 | Keywords           | Uint8Array, base16, base32, base32hex, base64, base64url, hex |
-| # releases         | 5 |
-| # dependents       | 33 |
-| # downloads        | 997603 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 861940.6666666666 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/swansontec/rfc4648.js#readme)

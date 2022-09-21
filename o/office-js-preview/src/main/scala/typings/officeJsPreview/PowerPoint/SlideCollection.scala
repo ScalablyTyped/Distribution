@@ -11,16 +11,26 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the collection of slides in the presentation.
   *
-  * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-  * @beta
+  * @remarks
+  * [Api set: PowerPointApi 1.2]
   */
 @js.native
 trait SlideCollection
   extends StObject
      with ClientObject {
+  
+  /**
+    * Adds a new slide at the end of the collection.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.3]
+    *
+    * @param options The options that define the theme of the new slide.
+    */
+  def add(): Unit = js.native
+  def add(options: AddSlideOptions): Unit = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -29,43 +39,45 @@ trait SlideCollection
   /**
     * Gets the number of slides in the collection.
     *
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: PowerPointApi 1.2]
     * @returns The number of slides in the collection.
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a slide using its unique ID. An exception is thrown if the slide does not exist.
+    * Gets a slide using its unique ID.
     *
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: PowerPointApi 1.2]
     *
     * @param key The ID of the slide.
-    * @returns The slide with the unique ID. If such a slide does not exist, an exception is thrown.
+    * @returns The slide with the unique ID. If such a slide does not exist, an error is thrown.
     */
   def getItem(key: String): Slide = js.native
   
   /**
     * Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they
-    are shown in the presentation. An exception is thrown if index is out of range.
+    are shown in the presentation.
     *
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: PowerPointApi 1.2]
     *
     * @param index The index of the slide in the collection.
-    * @returns The slide at the given index. An exception is thrown if index is out of range.
+    * @returns The slide at the given index. An error is thrown if index is out of range.
     */
   def getItemAt(index: Double): Slide = js.native
   
   /**
-    * Gets a slide using its unique ID. Returns an object whose `isNullObject` property is set to `true` if the slide does not exist.
+    * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information,
+    see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
+    and properties}.
     *
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: PowerPointApi 1.2]
     *
     * @param id The ID of the slide.
-    * @returns The slide with the unique ID. If such a slide does not exist, an object whose `isNullObject` property is set to `true` is returned.
+    * @returns The slide with the unique ID.
     */
   def getItemOrNullObject(id: String): Slide = js.native
   

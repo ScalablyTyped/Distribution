@@ -9,7 +9,7 @@ trait ManagedAppStatusRaw
      with ManagedAppStatus {
   
   // Status report content.
-  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
 }
 object ManagedAppStatusRaw {
   
@@ -20,7 +20,7 @@ object ManagedAppStatusRaw {
   
   extension [Self <: ManagedAppStatusRaw](x: Self) {
     
-    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
     

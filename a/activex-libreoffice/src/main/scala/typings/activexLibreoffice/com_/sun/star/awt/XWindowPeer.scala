@@ -48,7 +48,7 @@ object XWindowPeer {
     getToolkit: () => XToolkit,
     invalidate: Double => Unit,
     invalidateRect: (Rectangle, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setBackground: Color => Unit,

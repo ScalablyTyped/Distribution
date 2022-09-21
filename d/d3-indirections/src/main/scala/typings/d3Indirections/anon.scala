@@ -44,7 +44,7 @@ object anon {
       
       inline def setResourceUids(value: js.Array[String]): Self = StObject.set(x, "resourceUids", value.asInstanceOf[js.Any])
       
-      inline def setResourceUidsVarargs(value: String*): Self = StObject.set(x, "resourceUids", js.Array(value :_*))
+      inline def setResourceUidsVarargs(value: String*): Self = StObject.set(x, "resourceUids", js.Array(value*))
     }
   }
   

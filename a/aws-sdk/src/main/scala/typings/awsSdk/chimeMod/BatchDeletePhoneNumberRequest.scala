@@ -22,6 +22,6 @@ object BatchDeletePhoneNumberRequest {
     
     inline def setPhoneNumberIds(value: NonEmptyStringList): Self = StObject.set(x, "PhoneNumberIds", value.asInstanceOf[js.Any])
     
-    inline def setPhoneNumberIdsVarargs(value: String*): Self = StObject.set(x, "PhoneNumberIds", js.Array(value :_*))
+    inline def setPhoneNumberIdsVarargs(value: String*): Self = StObject.set(x, "PhoneNumberIds", js.Array(value*))
   }
 }

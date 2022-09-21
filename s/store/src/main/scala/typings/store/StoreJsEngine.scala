@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StoreJsEngine extends StObject {
   
-  def createStore(storages: js.Array[js.Any]): StoreJsAPI = js.native
-  def createStore(storages: js.Array[js.Any], plugins: js.Array[js.Any]): StoreJsAPI = js.native
-  def createStore(storages: js.Array[js.Any], plugins: js.Array[js.Any], namespace: String): StoreJsAPI = js.native
-  def createStore(storages: js.Array[js.Any], plugins: Unit, namespace: String): StoreJsAPI = js.native
+  def createStore(storages: js.Array[Any]): StoreJsAPI = js.native
+  def createStore(storages: js.Array[Any], plugins: js.Array[Any]): StoreJsAPI = js.native
+  def createStore(storages: js.Array[Any], plugins: js.Array[Any], namespace: String): StoreJsAPI = js.native
+  def createStore(storages: js.Array[Any], plugins: Unit, namespace: String): StoreJsAPI = js.native
 }

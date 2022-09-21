@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRControllerComponent")
 @js.native
-class WebXRControllerComponent protected ()
+open class WebXRControllerComponent protected ()
   extends typings.babylonjs.xRIndexMod.WebXRControllerComponent {
   /**
     * Creates a new component for a motion controller.

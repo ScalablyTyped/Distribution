@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the Document object, for use in "document.set({ ... })". */
+/** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
 trait DocumentUpdateData extends StObject {
   
   /**

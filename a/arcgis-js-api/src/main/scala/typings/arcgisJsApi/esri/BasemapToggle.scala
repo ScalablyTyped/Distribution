@@ -29,18 +29,11 @@ trait BasemapToggle
   def on_toggle(name: toggle, eventHandler: BasemapToggleToggleEventHandler): IHandle = js.native
   
   /**
-    * Indicates if the title of the basemap is visible in the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#titleVisible)
-    */
-  var titleVisible: Boolean = js.native
-  
-  /**
     * Toggles to the [next basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#nextBasemap).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#toggle)
     */
-  def toggle(): Unit = js.native
+  def toggle(): scala.Unit = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

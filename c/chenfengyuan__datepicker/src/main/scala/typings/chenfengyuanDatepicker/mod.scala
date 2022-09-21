@@ -12,7 +12,6 @@ import typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.day
 import typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.month
 import typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.year
 import typings.chenfengyuanDatepicker.mod.global.JQuery
-import typings.std.Date
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
@@ -27,11 +26,59 @@ object mod {
     extends StObject
        with Event {
     
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     var namespace: datepicker = js.native
     
     var view: String = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.show
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.hide
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.update
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.pick
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.reset
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getMonthName
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getDayName
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getDate
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setDate
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setStartDate
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setEndDate
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.parseDate
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.formatDate
+    - typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.destroy
+  */
+  trait DatePickerMethod extends StObject
+  object DatePickerMethod {
+    
+    inline def destroy: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.destroy = "destroy".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.destroy]
+    
+    inline def formatDate: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.formatDate = "formatDate".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.formatDate]
+    
+    inline def getDate: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getDate = "getDate".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getDate]
+    
+    inline def getDayName: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getDayName = "getDayName".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getDayName]
+    
+    inline def getMonthName: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getMonthName = "getMonthName".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.getMonthName]
+    
+    inline def hide: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.hide = "hide".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.hide]
+    
+    inline def parseDate: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.parseDate = "parseDate".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.parseDate]
+    
+    inline def pick: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.pick = "pick".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.pick]
+    
+    inline def reset: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.reset = "reset".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.reset]
+    
+    inline def setDate: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setDate = "setDate".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setDate]
+    
+    inline def setEndDate: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setEndDate = "setEndDate".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setEndDate]
+    
+    inline def setStartDate: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setStartDate = "setStartDate".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.setStartDate]
+    
+    inline def show: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.show = "show".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.show]
+    
+    inline def update: typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.update = "update".asInstanceOf[typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.update]
   }
   
   trait DatepickerOptions extends StObject {
@@ -68,7 +115,7 @@ object mod {
     /**
       * The initial date. If not set, will use the current date by default.
       */
-    var date: js.UndefOr[Date | String] = js.undefined
+    var date: js.UndefOr[js.Date | String] = js.undefined
     
     /**
       * Days' name of the week.
@@ -101,13 +148,13 @@ object mod {
     /**
       * The end view date. All the dates after this date will be disabled.
       */
-    var endDate: js.UndefOr[Date | String] = js.undefined
+    var endDate: js.UndefOr[js.Date | String] = js.undefined
     
     /**
       * Filter each date item. If it returns `false`, the related date will be disabled.
       */
     var filter: js.UndefOr[
-        js.Function2[/* date */ Date, /* view */ day | month | year, js.UndefOr[Boolean]]
+        js.Function2[/* date */ js.Date, /* view */ day | month | year, js.UndefOr[Boolean]]
       ] = js.undefined
     
     /**
@@ -195,7 +242,7 @@ object mod {
     /**
       * The start view date. All the dates before this date will be disabled.
       */
-    var startDate: js.UndefOr[Date | String] = js.undefined
+    var startDate: js.UndefOr[js.Date | String] = js.undefined
     
     /**
       * The start view when initialized.
@@ -313,7 +360,7 @@ object mod {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -323,27 +370,27 @@ object mod {
       
       inline def setDaysMinUndefined: Self = StObject.set(x, "daysMin", js.undefined)
       
-      inline def setDaysMinVarargs(value: String*): Self = StObject.set(x, "daysMin", js.Array(value :_*))
+      inline def setDaysMinVarargs(value: String*): Self = StObject.set(x, "daysMin", js.Array(value*))
       
       inline def setDaysShort(value: js.Array[String]): Self = StObject.set(x, "daysShort", value.asInstanceOf[js.Any])
       
       inline def setDaysShortUndefined: Self = StObject.set(x, "daysShort", js.undefined)
       
-      inline def setDaysShortVarargs(value: String*): Self = StObject.set(x, "daysShort", js.Array(value :_*))
+      inline def setDaysShortVarargs(value: String*): Self = StObject.set(x, "daysShort", js.Array(value*))
       
       inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
       
-      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value*))
       
       inline def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
       
       inline def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
       
-      inline def setEndDate(value: Date | String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: js.Date | String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      inline def setFilter(value: (/* date */ Date, /* view */ day | month | year) => js.UndefOr[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilter(value: (/* date */ js.Date, /* view */ day | month | year) => js.UndefOr[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -377,11 +424,11 @@ object mod {
       
       inline def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
       
-      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value*))
       
       inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -399,7 +446,7 @@ object mod {
       
       inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      inline def setStartDate(value: Date | String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: js.Date | String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
@@ -443,6 +490,7 @@ object mod {
     trait JQuery[TElement] extends StObject {
       
       def datepicker(): DatepickerPlugin[TElement] = js.native
+      def datepicker(method: DatePickerMethod, args: (Double | Boolean | js.Date | String)*): Unit | String | js.Date = js.native
       def datepicker(options: DatepickerOptions): DatepickerPlugin[TElement] = js.native
     }
   }

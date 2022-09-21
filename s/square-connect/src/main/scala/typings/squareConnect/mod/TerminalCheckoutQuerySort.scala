@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TerminalCheckoutQuerySort")
 @js.native
-class TerminalCheckoutQuerySort () extends StObject {
+open class TerminalCheckoutQuerySort () extends StObject {
   
   /**
     * The order in which results are listed. - `ASC` - oldest to newest - `DESC` - newest to oldest (default).

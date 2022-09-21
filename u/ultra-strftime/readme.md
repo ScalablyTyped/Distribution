@@ -11,9 +11,9 @@ Ultra fast realization of javascript strftime function without memory leak
 | Full name          | ultra-strftime |
 | Keywords           | ultrafast, strftime, format, date |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 8742 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1229.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/xio4/ultra_strftime)

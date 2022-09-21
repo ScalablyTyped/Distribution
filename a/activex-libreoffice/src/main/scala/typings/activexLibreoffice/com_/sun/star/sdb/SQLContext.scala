@@ -30,7 +30,7 @@ object SQLContext {
     Details: String,
     ErrorCode: Double,
     Message: String,
-    NextException: js.Any,
+    NextException: Any,
     SQLState: String
   ): SQLContext = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Details = Details.asInstanceOf[js.Any], ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], NextException = NextException.asInstanceOf[js.Any], SQLState = SQLState.asInstanceOf[js.Any])

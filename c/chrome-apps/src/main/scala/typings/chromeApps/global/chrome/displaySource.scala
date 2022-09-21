@@ -147,15 +147,15 @@ object displaySource {
   
   @JSGlobal("chrome.displaySource.onSessionErrorOccured")
   @js.native
-  val onSessionErrorOccured: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  val onSessionErrorOccured: typings.chromeApps.chrome.events.Event[Any] = js.native
   
   @JSGlobal("chrome.displaySource.onSessionTerminated")
   @js.native
-  val onSessionTerminated: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  val onSessionTerminated: typings.chromeApps.chrome.events.Event[Any] = js.native
   
   @JSGlobal("chrome.displaySource.onSinksUpdated")
   @js.native
-  val onSinksUpdated: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  val onSinksUpdated: typings.chromeApps.chrome.events.Event[Any] = js.native
   
   @JSGlobal("chrome.displaySource.requestAuthentication")
   @js.native

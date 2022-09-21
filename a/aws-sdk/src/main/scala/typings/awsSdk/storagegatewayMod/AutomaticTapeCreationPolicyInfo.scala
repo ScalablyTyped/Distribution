@@ -26,7 +26,7 @@ object AutomaticTapeCreationPolicyInfo {
     
     inline def setAutomaticTapeCreationRulesUndefined: Self = StObject.set(x, "AutomaticTapeCreationRules", js.undefined)
     
-    inline def setAutomaticTapeCreationRulesVarargs(value: AutomaticTapeCreationRule*): Self = StObject.set(x, "AutomaticTapeCreationRules", js.Array(value :_*))
+    inline def setAutomaticTapeCreationRulesVarargs(value: AutomaticTapeCreationRule*): Self = StObject.set(x, "AutomaticTapeCreationRules", js.Array(value*))
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

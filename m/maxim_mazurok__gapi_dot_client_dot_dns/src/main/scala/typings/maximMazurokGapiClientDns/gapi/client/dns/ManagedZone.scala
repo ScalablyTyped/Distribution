@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ManagedZone extends StObject {
   
+  var cloudLoggingConfig: js.UndefOr[ManagedZoneCloudLoggingConfig] = js.undefined
+  
   /** The time that this resource was created on the server. This is in RFC3339 text format. Output only. */
   var creationTime: js.UndefOr[String] = js.undefined
   
@@ -31,7 +33,7 @@ trait ManagedZone extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDns.maximMazurokGapiClientDnsStrings.ManagedZone & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDns.maximMazurokGapiClientDnsStrings.ManagedZone & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -41,8 +43,8 @@ trait ManagedZone extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Optionally specifies the NameServerSet for this ManagedZone. A NameServerSet is a set of DNS name servers that all host the same ManagedZones. Most users will leave this field
-    * unset.
+    * Optionally specifies the NameServerSet for this ManagedZone. A NameServerSet is a set of DNS name servers that all host the same ManagedZones. Most users leave this field unset. If
+    * you need to use this field, contact your account team.
     */
   var nameServerSet: js.UndefOr[String] = js.undefined
   
@@ -56,10 +58,13 @@ trait ManagedZone extends StObject {
   var privateVisibilityConfig: js.UndefOr[ManagedZonePrivateVisibilityConfig] = js.undefined
   
   /**
-    * The presence of this field indicates that this is a managed reverse lookup zone and Cloud DNS will resolve reverse lookup queries using automatically configured records for VPC
+    * The presence of this field indicates that this is a managed reverse lookup zone and Cloud DNS resolves reverse lookup queries using automatically configured records for VPC
     * resources. This only applies to networks listed under private_visibility_config.
     */
   var reverseLookupConfig: js.UndefOr[ManagedZoneReverseLookupConfig] = js.undefined
+  
+  /** This field links to the associated service directory namespace. Do not set this field for public zones or forwarding zones. */
+  var serviceDirectoryConfig: js.UndefOr[ManagedZoneServiceDirectoryConfig] = js.undefined
   
   /** The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private Cloud resources. */
   var visibility: js.UndefOr[String] = js.undefined
@@ -72,6 +77,10 @@ object ManagedZone {
   }
   
   extension [Self <: ManagedZone](x: Self) {
+    
+    inline def setCloudLoggingConfig(value: ManagedZoneCloudLoggingConfig): Self = StObject.set(x, "cloudLoggingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setCloudLoggingConfigUndefined: Self = StObject.set(x, "cloudLoggingConfig", js.undefined)
     
     inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
@@ -104,7 +113,7 @@ object ManagedZone {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDns.maximMazurokGapiClientDnsStrings.ManagedZone & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDns.maximMazurokGapiClientDnsStrings.ManagedZone & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -119,7 +128,7 @@ object ManagedZone {
     
     inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
     
-    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value*))
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -134,6 +143,10 @@ object ManagedZone {
     inline def setReverseLookupConfig(value: ManagedZoneReverseLookupConfig): Self = StObject.set(x, "reverseLookupConfig", value.asInstanceOf[js.Any])
     
     inline def setReverseLookupConfigUndefined: Self = StObject.set(x, "reverseLookupConfig", js.undefined)
+    
+    inline def setServiceDirectoryConfig(value: ManagedZoneServiceDirectoryConfig): Self = StObject.set(x, "serviceDirectoryConfig", value.asInstanceOf[js.Any])
+    
+    inline def setServiceDirectoryConfigUndefined: Self = StObject.set(x, "serviceDirectoryConfig", js.undefined)
     
     inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

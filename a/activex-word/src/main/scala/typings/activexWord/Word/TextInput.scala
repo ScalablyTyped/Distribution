@@ -16,17 +16,17 @@ trait TextInput extends StObject {
   var Default: String = js.native
   
   def EditType(Type: WdTextFormFieldType): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: js.Any): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: js.Any, Format: js.Any): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: js.Any, Format: js.Any, Enabled: js.Any): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: js.Any, Format: Unit, Enabled: js.Any): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: js.Any): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: js.Any, Enabled: js.Any): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: Unit, Enabled: js.Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Any, Format: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Any, Format: Any, Enabled: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Any, Format: Unit, Enabled: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: Any, Enabled: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: Unit, Enabled: Any): Unit = js.native
   
   val Format: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Type: WdTextFormFieldType = js.native
   

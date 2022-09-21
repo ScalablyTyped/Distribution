@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.userLeaveMod.UserLeaveProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonUserLeaveMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/UserLeave", JSImport.Default)
   @js.native
-  val default: SFC[UserLeaveProps] = js.native
+  val default: FC[UserLeaveProps] = js.native
   
-  type _To = SFC[UserLeaveProps]
+  type _To = FC[UserLeaveProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonUserLeaveMod.foo` */
-  override def _to: SFC[UserLeaveProps] = default
+  override def _to: FC[UserLeaveProps] = default
 }

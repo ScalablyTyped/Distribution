@@ -120,13 +120,13 @@ trait PlusRuntime extends StObject {
     filePath: String,
     options: Unit,
     installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+    installErrorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def install(
     filePath: String,
     options: Unit,
     installSuccessCB: Unit,
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+    installErrorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def install(filePath: String, options: PlusRuntimeWidgetOptions): Unit = js.native
   def install(
@@ -138,13 +138,13 @@ trait PlusRuntime extends StObject {
     filePath: String,
     options: PlusRuntimeWidgetOptions,
     installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+    installErrorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def install(
     filePath: String,
     options: PlusRuntimeWidgetOptions,
     installSuccessCB: Unit,
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+    installErrorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def install(
     filePath: Unit,
@@ -155,13 +155,13 @@ trait PlusRuntime extends StObject {
     filePath: Unit,
     options: Unit,
     installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+    installErrorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def install(
     filePath: Unit,
     options: Unit,
     installSuccessCB: Unit,
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+    installErrorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def install(filePath: Unit, options: PlusRuntimeWidgetOptions): Unit = js.native
   def install(
@@ -173,13 +173,13 @@ trait PlusRuntime extends StObject {
     filePath: Unit,
     options: PlusRuntimeWidgetOptions,
     installSuccessCB: js.Function1[/* result */ PlusRuntimeWidgetInfo, Unit],
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+    installErrorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def install(
     filePath: Unit,
     options: PlusRuntimeWidgetOptions,
     installSuccessCB: Unit,
-    installErrorCB: js.Function1[/* result */ js.Any, Unit]
+    installErrorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -207,9 +207,9 @@ trait PlusRuntime extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
   def launchApplication(): Unit = js.native
-  def launchApplication(appInf: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def launchApplication(appInf: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def launchApplication(appInf: PlusRuntimeApplicationInf): Unit = js.native
-  def launchApplication(appInf: PlusRuntimeApplicationInf, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def launchApplication(appInf: PlusRuntimeApplicationInf, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 获取当前应用首页加载的时间
@@ -266,20 +266,16 @@ trait PlusRuntime extends StObject {
     */
   def openFile(): Unit = js.native
   def openFile(filepath: String): Unit = js.native
-  def openFile(filepath: String, options: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def openFile(filepath: String, options: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def openFile(filepath: String, options: PlusRuntimeOpenFileOptions): Unit = js.native
   def openFile(
     filepath: String,
     options: PlusRuntimeOpenFileOptions,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def openFile(filepath: Unit, options: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def openFile(filepath: Unit, options: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def openFile(filepath: Unit, options: PlusRuntimeOpenFileOptions): Unit = js.native
-  def openFile(
-    filepath: Unit,
-    options: PlusRuntimeOpenFileOptions,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  def openFile(filepath: Unit, options: PlusRuntimeOpenFileOptions, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 调用第三方程序打开指定的URL
@@ -288,11 +284,11 @@ trait PlusRuntime extends StObject {
     */
   def openURL(): Unit = js.native
   def openURL(url: String): Unit = js.native
-  def openURL(url: String, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def openURL(url: String, errorCB: js.Function1[/* result */ js.Any, Unit], identity: String): Unit = js.native
+  def openURL(url: String, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def openURL(url: String, errorCB: js.Function1[/* result */ Any, Unit], identity: String): Unit = js.native
   def openURL(url: String, errorCB: Unit, identity: String): Unit = js.native
-  def openURL(url: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def openURL(url: Unit, errorCB: js.Function1[/* result */ js.Any, Unit], identity: String): Unit = js.native
+  def openURL(url: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def openURL(url: Unit, errorCB: js.Function1[/* result */ Any, Unit], identity: String): Unit = js.native
   def openURL(url: Unit, errorCB: Unit, identity: String): Unit = js.native
   
   /**

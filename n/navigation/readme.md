@@ -1,7 +1,7 @@
 
 # Scala.js typings for navigation
 
-Typings are for version 5.3.1
+Typings are for version 6.1.0
 
 ## Library description:
 The data-first JavaScript router
@@ -10,10 +10,10 @@ The data-first JavaScript router
 | ------------------ | :-------------: |
 | Full name          | navigation |
 | Keywords           | router, navigation |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 49807 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 4372.0 |
+| # stars            | 440.0 |
 
 ## Links
 - [Homepage](http://grahammendick.github.io/navigation/)

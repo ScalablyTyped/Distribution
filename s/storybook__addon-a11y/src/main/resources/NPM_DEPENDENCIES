@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/addon-a11y" : "6.1.2"
+      "@storybook/addon-a11y" : "6.5.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/addon-a11y" : "6.1.2"
+      "@storybook/addon-a11y" : "6.5.12"
     }
   ],
   "compile-devDependencies" : [

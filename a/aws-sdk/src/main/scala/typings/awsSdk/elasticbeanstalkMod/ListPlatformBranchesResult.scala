@@ -33,6 +33,6 @@ object ListPlatformBranchesResult {
     
     inline def setPlatformBranchSummaryListUndefined: Self = StObject.set(x, "PlatformBranchSummaryList", js.undefined)
     
-    inline def setPlatformBranchSummaryListVarargs(value: PlatformBranchSummary*): Self = StObject.set(x, "PlatformBranchSummaryList", js.Array(value :_*))
+    inline def setPlatformBranchSummaryListVarargs(value: PlatformBranchSummary*): Self = StObject.set(x, "PlatformBranchSummaryList", js.Array(value*))
   }
 }

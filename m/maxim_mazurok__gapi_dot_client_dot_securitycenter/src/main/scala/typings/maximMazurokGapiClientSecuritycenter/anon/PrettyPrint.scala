@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientSecuritycenter.anon
 
+import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.GoogleCloudSecuritycenterV1BigQueryExport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,11 @@ trait PrettyPrint extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. Name of the organization to get organization settings for. Its format is "organizations/[organization_id]/organizationSettings". */
+  /**
+    * The relative resource name of this export. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name. Example format:
+    * "organizations/{organization_id}/bigQueryExports/{export_id}" Example format: "folders/{folder_id}/bigQueryExports/{export_id}" Example format:
+    * "projects/{project_id}/bigQueryExports/{export_id}" This field is provided in responses, and is ignored when provided in create requests.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,6 +42,12 @@ trait PrettyPrint extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: GoogleCloudSecuritycenterV1BigQueryExport
+  
+  /** The list of fields to be updated. If empty all mutable fields will be updated. */
+  var updateMask: js.UndefOr[String] = js.undefined
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -45,8 +56,8 @@ trait PrettyPrint extends StObject {
 }
 object PrettyPrint {
   
-  inline def apply(name: String): PrettyPrint = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: GoogleCloudSecuritycenterV1BigQueryExport): PrettyPrint = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrint]
   }
   
@@ -89,6 +100,12 @@ object PrettyPrint {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: GoogleCloudSecuritycenterV1BigQueryExport): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

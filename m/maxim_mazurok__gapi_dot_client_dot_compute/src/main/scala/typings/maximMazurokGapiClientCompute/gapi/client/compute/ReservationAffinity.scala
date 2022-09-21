@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReservationAffinity extends StObject {
   
   /**
-    * Specifies the type of reservation from which this instance can consume resources: ANY_RESERVATION (default), SPECIFIC_RESERVATION, or NO_RESERVATION. See  Consuming reserved
+    * Specifies the type of reservation from which this instance can consume resources: ANY_RESERVATION (default), SPECIFIC_RESERVATION, or NO_RESERVATION. See Consuming reserved
     * instances for examples.
     */
   var consumeReservationType: js.UndefOr[String] = js.undefined
@@ -18,7 +18,10 @@ trait ReservationAffinity extends StObject {
     */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Corresponds to the label values of a reservation resource. */
+  /**
+    * Corresponds to the label values of a reservation resource. This can be either a name to a reservation in the same project or
+    * "projects/different-project/reservations/some-reservation-name" to target a shared reservation in the same zone but in a different project.
+    */
   var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ReservationAffinity {
@@ -42,6 +45,6 @@ object ReservationAffinity {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

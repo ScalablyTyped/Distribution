@@ -32,7 +32,7 @@ object NativeAndroidChannelGroup {
     
     inline def setChannels(value: Unit | js.Array[NativeAndroidChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    inline def setChannelsVarargs(value: NativeAndroidChannel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: NativeAndroidChannel*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setDescription(value: String | Unit): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

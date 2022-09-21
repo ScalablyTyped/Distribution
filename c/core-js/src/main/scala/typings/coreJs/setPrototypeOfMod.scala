@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object setPrototypeOfMod {
   
   /* was `typeof core.Object.setPrototypeOf` */
-  inline def apply(o: js.Any, proto: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(o: Any, proto: Any): Any = (^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("core-js/fn/object/set-prototype-of", JSImport.Namespace)
   @js.native

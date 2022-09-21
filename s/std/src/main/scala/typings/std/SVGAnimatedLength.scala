@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Used for attributes of basic type <length> which can be animated. */
 trait SVGAnimatedLength extends StObject {
   
+  /* standard dom */
   val animVal: SVGLength
   
+  /* standard dom */
   val baseVal: SVGLength
 }
 object SVGAnimatedLength {

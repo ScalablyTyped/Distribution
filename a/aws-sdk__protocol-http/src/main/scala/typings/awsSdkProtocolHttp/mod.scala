@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("@aws-sdk/protocol-http", "HttpRequest")
   @js.native
-  class HttpRequest protected ()
+  open class HttpRequest protected ()
     extends typings.awsSdkProtocolHttp.httpRequestMod.HttpRequest {
     def this(options: HttpRequestOptions) = this()
   }
@@ -25,12 +25,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isInstance(request: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(request.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean]
+    inline def isInstance(request: Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist-types/httpRequest.HttpRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(request.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist-types/httpRequest.HttpRequest */ Boolean]
   }
   
   @JSImport("@aws-sdk/protocol-http", "HttpResponse")
   @js.native
-  class HttpResponse protected ()
+  open class HttpResponse protected ()
     extends typings.awsSdkProtocolHttp.httpResponseMod.HttpResponse {
     def this(options: HttpResponseOptions) = this()
   }
@@ -41,7 +41,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isInstance(response: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(response.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean]
+    inline def isInstance(response: Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist-types/httpResponse.HttpResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(response.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist-types/httpResponse.HttpResponse */ Boolean]
   }
   
   inline def isValidHostname(hostname: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHostname")(hostname.asInstanceOf[js.Any]).asInstanceOf[Boolean]

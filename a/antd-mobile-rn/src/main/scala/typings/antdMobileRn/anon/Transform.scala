@@ -41,6 +41,6 @@ object Transform {
     
     inline def setTransform(value: js.Array[Rotate]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    inline def setTransformVarargs(value: Rotate*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Rotate*): Self = StObject.set(x, "transform", js.Array(value*))
   }
 }

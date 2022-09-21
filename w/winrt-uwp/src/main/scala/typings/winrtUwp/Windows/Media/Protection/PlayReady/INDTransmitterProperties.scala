@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait INDTransmitterProperties extends StObject {
   var clientID: Double
   
   /** Gets the expiration date and time from the transmitter certificate. */
-  var expirationDate: Date
+  var expirationDate: js.Date
   
   /** Gets the model digest from a transmitter certificate. */
   var modelDigest: Double
@@ -46,7 +45,7 @@ object INDTransmitterProperties {
   inline def apply(
     certificateType: NDCertificateType,
     clientID: Double,
-    expirationDate: Date,
+    expirationDate: js.Date,
     modelDigest: Double,
     modelManufacturerName: String,
     modelName: String,
@@ -66,7 +65,7 @@ object INDTransmitterProperties {
     
     inline def setClientID(value: Double): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
-    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setModelDigest(value: Double): Self = StObject.set(x, "modelDigest", value.asInstanceOf[js.Any])
     

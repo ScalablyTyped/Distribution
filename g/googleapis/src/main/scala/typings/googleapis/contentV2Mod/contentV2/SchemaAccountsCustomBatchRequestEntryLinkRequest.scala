@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaAccountsCustomBatchRequestEntryLinkRequest extends StObject {
   
   /**
-    * Action to perform for this link. The &quot;request&quot; action is only
-    * available to select merchants.
+    * Action to perform for this link. The `"request"` action is only available to select merchants. Acceptable values are: - "`approve`" - "`remove`" - "`request`"
     */
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Type of the link between the two accounts.
+    * Type of the link between the two accounts. Acceptable values are: - "`channelPartner`" - "`eCommercePlatform`"
     */
-  var linkType: js.UndefOr[String] = js.undefined
+  var linkType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the linked account.
     */
-  var linkedAccountId: js.UndefOr[String] = js.undefined
+  var linkedAccountId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccountsCustomBatchRequestEntryLinkRequest {
   
@@ -33,13 +32,19 @@ object SchemaAccountsCustomBatchRequestEntryLinkRequest {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
+    inline def setActionNull: Self = StObject.set(x, "action", null)
+    
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     inline def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
+    inline def setLinkTypeNull: Self = StObject.set(x, "linkType", null)
+    
     inline def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
     
     inline def setLinkedAccountId(value: String): Self = StObject.set(x, "linkedAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedAccountIdNull: Self = StObject.set(x, "linkedAccountId", null)
     
     inline def setLinkedAccountIdUndefined: Self = StObject.set(x, "linkedAccountId", js.undefined)
   }

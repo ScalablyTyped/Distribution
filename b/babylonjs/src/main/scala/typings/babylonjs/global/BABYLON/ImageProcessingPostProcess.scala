@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ImageProcessingPostProcess")
 @js.native
-class ImageProcessingPostProcess protected ()
+open class ImageProcessingPostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ImageProcessingPostProcess {
   def this(

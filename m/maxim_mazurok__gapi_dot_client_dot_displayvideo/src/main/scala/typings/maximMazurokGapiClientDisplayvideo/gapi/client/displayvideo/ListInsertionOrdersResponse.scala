@@ -25,7 +25,7 @@ object ListInsertionOrdersResponse {
     
     inline def setInsertionOrdersUndefined: Self = StObject.set(x, "insertionOrders", js.undefined)
     
-    inline def setInsertionOrdersVarargs(value: InsertionOrder*): Self = StObject.set(x, "insertionOrders", js.Array(value :_*))
+    inline def setInsertionOrdersVarargs(value: InsertionOrder*): Self = StObject.set(x, "insertionOrders", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

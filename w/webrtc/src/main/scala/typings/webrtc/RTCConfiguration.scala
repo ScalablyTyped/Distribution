@@ -45,7 +45,7 @@ object RTCConfiguration {
     
     inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    inline def setCertificatesVarargs(value: RTCCertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: RTCCertificate*): Self = StObject.set(x, "certificates", js.Array(value*))
     
     inline def setIceCandidatePoolSize(value: Double): Self = StObject.set(x, "iceCandidatePoolSize", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object RTCConfiguration {
     
     inline def setIceServersUndefined: Self = StObject.set(x, "iceServers", js.undefined)
     
-    inline def setIceServersVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceServers", js.Array(value :_*))
+    inline def setIceServersVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceServers", js.Array(value*))
     
     inline def setIceTransportPolicy(value: RTCIceTransportPolicy): Self = StObject.set(x, "iceTransportPolicy", value.asInstanceOf[js.Any])
     

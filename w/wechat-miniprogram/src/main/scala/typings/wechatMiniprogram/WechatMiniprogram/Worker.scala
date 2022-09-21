@@ -12,6 +12,12 @@ trait Worker extends StObject {
   def onMessage(/** 主线程/Worker 线程向当前线程发送的消息的事件的回调函数 */
   callback: WorkerOnMessageCallback): Unit
   
+  /** [Worker.onProcessKilled(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/worker/Worker.onProcessKilled.html)
+    *
+    * 监听 worker线程被系统回收事件（当iOS系统资源紧张时，worker线程存在被系统回收的可能，开发者可监听此事件并重新创建一个worker）。仅限在主线程 worker 对象上调用。 */
+  def onProcessKilled(/** worker线程被系统回收事件的回调函数 */
+  callback: OnProcessKilledCallback): Unit
+  
   /** [Worker.postMessage(Object message)](https://developers.weixin.qq.com/miniprogram/dev/api/worker/Worker.postMessage.html)
   *
   * 向主线程/Worker 线程发送的消息。
@@ -43,14 +49,21 @@ trait Worker extends StObject {
 }
 object Worker {
   
-  inline def apply(onMessage: WorkerOnMessageCallback => Unit, postMessage: IAnyObject => Unit, terminate: () => Unit): Worker = {
-    val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), postMessage = js.Any.fromFunction1(postMessage), terminate = js.Any.fromFunction0(terminate))
+  inline def apply(
+    onMessage: WorkerOnMessageCallback => Unit,
+    onProcessKilled: OnProcessKilledCallback => Unit,
+    postMessage: IAnyObject => Unit,
+    terminate: () => Unit
+  ): Worker = {
+    val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), onProcessKilled = js.Any.fromFunction1(onProcessKilled), postMessage = js.Any.fromFunction1(postMessage), terminate = js.Any.fromFunction0(terminate))
     __obj.asInstanceOf[Worker]
   }
   
   extension [Self <: Worker](x: Self) {
     
     inline def setOnMessage(value: WorkerOnMessageCallback => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    
+    inline def setOnProcessKilled(value: OnProcessKilledCallback => Unit): Self = StObject.set(x, "onProcessKilled", js.Any.fromFunction1(value))
     
     inline def setPostMessage(value: IAnyObject => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     

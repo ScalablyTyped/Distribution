@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Mailer")
 @js.native
-/* private */ class Mailer ()
+/* private */ open class Mailer ()
   extends StObject
      with typings.activexWord.Word.Mailer {
   
@@ -15,25 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexWord.Word.Application = js.native
   
   /* CompleteClass */
-  var BCCRecipients: js.Any = js.native
+  var BCCRecipients: Any = js.native
   
   /* CompleteClass */
-  var CCRecipients: js.Any = js.native
+  var CCRecipients: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  var Enclosures: js.Any = js.native
+  var Enclosures: Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Received: Boolean = js.native
   
   /* CompleteClass */
-  var Recipients: js.Any = js.native
+  var Recipients: Any = js.native
   
   /* CompleteClass */
   override val SendDateTime: VarDate = js.native

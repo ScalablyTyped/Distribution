@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "BasicMaterial")
 @js.native
-class BasicMaterial ()
+open class BasicMaterial ()
   extends typings.wonderJs.basicMaterialMod.BasicMaterial
 /* static members */
 object BasicMaterial {

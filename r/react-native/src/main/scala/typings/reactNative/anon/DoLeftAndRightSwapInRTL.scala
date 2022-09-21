@@ -9,6 +9,8 @@ trait DoLeftAndRightSwapInRTL extends StObject {
   var doLeftAndRightSwapInRTL: Boolean
   
   var isRTL: Boolean
+  
+  var localeIdentifier: js.UndefOr[String | Null] = js.undefined
 }
 object DoLeftAndRightSwapInRTL {
   
@@ -22,5 +24,11 @@ object DoLeftAndRightSwapInRTL {
     inline def setDoLeftAndRightSwapInRTL(value: Boolean): Self = StObject.set(x, "doLeftAndRightSwapInRTL", value.asInstanceOf[js.Any])
     
     inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleIdentifier(value: String): Self = StObject.set(x, "localeIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleIdentifierNull: Self = StObject.set(x, "localeIdentifier", null)
+    
+    inline def setLocaleIdentifierUndefined: Self = StObject.set(x, "localeIdentifier", js.undefined)
   }
 }

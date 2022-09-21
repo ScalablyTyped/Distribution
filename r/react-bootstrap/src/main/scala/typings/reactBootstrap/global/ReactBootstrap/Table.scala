@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Table")
 @js.native
-class Table ()
+open class Table ()
   extends typings.reactBootstrap.mod.Table

@@ -2,7 +2,7 @@ package typings.postcssPresetEnv
 
 import org.scalablytyped.runtime.Shortcut
 import typings.autoprefixer.mod.Options
-import typings.postcss.mod.Plugin_
+import typings.postcss.mod.PluginCreator
 import typings.postcssPresetEnv.mod.pluginOptions.features
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : PostcssPresetEnv = js.native
   
-  type PostcssPresetEnv = Plugin_[pluginOptions]
+  type PostcssPresetEnv = PluginCreator[pluginOptions]
   
   type _To = PostcssPresetEnv
   
@@ -49,7 +49,7 @@ object mod extends Shortcut {
       *
       * @default default
       */
-    var browsers: js.UndefOr[String] = js.undefined
+    var browsers: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The `exportTo` option specifies destinations where variables like
@@ -57,7 +57,7 @@ object mod extends Shortcut {
       * Environment Variables can be exported to, which might be
       * CSS, JS, and JSON files, functions, and directly passed objects.
       */
-    var exportTo: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+    var exportTo: js.UndefOr[String | js.Array[Any]] = js.undefined
     
     /**
       * The features option enables or disables specific polyfills by ID.
@@ -78,7 +78,7 @@ object mod extends Shortcut {
       * Environment Variables can be imported from, which might be
       * CSS, JS, and JSON files, functions, and directly passed objects.
       */
-    var importFrom: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+    var importFrom: js.UndefOr[String | js.Array[Any]] = js.undefined
     
     /**
       * The `insertAfter` keys allow you to insert other PostCSS plugins
@@ -343,25 +343,27 @@ object mod extends Shortcut {
       
       inline def setAutoprefixerUndefined: Self = StObject.set(x, "autoprefixer", js.undefined)
       
-      inline def setBrowsers(value: String): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+      inline def setBrowsers(value: String | js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
       inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
       
-      inline def setExportTo(value: String | js.Array[js.Any]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
+      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value*))
+      
+      inline def setExportTo(value: String | js.Array[Any]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
       
       inline def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
       
-      inline def setExportToVarargs(value: js.Any*): Self = StObject.set(x, "exportTo", js.Array(value :_*))
+      inline def setExportToVarargs(value: Any*): Self = StObject.set(x, "exportTo", js.Array(value*))
       
       inline def setFeatures(value: features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
       inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      inline def setImportFrom(value: String | js.Array[js.Any]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
+      inline def setImportFrom(value: String | js.Array[Any]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
       
       inline def setImportFromUndefined: Self = StObject.set(x, "importFrom", js.undefined)
       
-      inline def setImportFromVarargs(value: js.Any*): Self = StObject.set(x, "importFrom", js.Array(value :_*))
+      inline def setImportFromVarargs(value: Any*): Self = StObject.set(x, "importFrom", js.Array(value*))
       
       inline def setInsertAfter(value: js.Object): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
       

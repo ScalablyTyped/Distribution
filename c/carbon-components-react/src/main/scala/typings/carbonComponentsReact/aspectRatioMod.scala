@@ -179,7 +179,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.view
 import typings.carbonComponentsReact.carbonComponentsReactStrings.wbr
 import typings.carbonComponentsReact.carbonComponentsReactStrings.webview
 import typings.carbonComponentsReact.typingsSharedMod.FCReturn
-import typings.react.mod.JSXElementConstructor
+import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -191,7 +191,7 @@ object aspectRatioMod {
   val ^ : js.Any = js.native
   
   inline def AspectRatio(props: AspectRatioDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
-  inline def AspectRatio[T /* <: JSXElementConstructor[js.Any] */](props: AspectRatioCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def AspectRatio[T /* <: ReactComponentConstructor[scala.Nothing] */](props: AspectRatioCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def AspectRatio_a(props: AspectRatioIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogQueryText")
 @js.native
-class CatalogQueryText () extends StObject {
+open class CatalogQueryText () extends StObject {
   
   /**
     * A list of 1, 2, or 3 search keywords. Keywords with fewer than 3 characters are ignored.

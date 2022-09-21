@@ -72,9 +72,6 @@ trait DestinationPredefinedAcl extends StObject {
   /** Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full. */
   var projection: js.UndefOr[String] = js.undefined
   
-  /** The project to be billed for this request if the target bucket is requester-pays bucket. */
-  var provisionalUserProject: js.UndefOr[String] = js.undefined
-  
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
@@ -86,6 +83,9 @@ trait DestinationPredefinedAcl extends StObject {
   
   /** Name of the source object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts. */
   var sourceObject: String
+  
+  /** Upload protocol for media (e.g. "media", "multipart", "resumable"). */
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
@@ -170,10 +170,6 @@ object DestinationPredefinedAcl {
     
     inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    inline def setProvisionalUserProject(value: String): Self = StObject.set(x, "provisionalUserProject", value.asInstanceOf[js.Any])
-    
-    inline def setProvisionalUserProjectUndefined: Self = StObject.set(x, "provisionalUserProject", js.undefined)
-    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
@@ -185,6 +181,10 @@ object DestinationPredefinedAcl {
     inline def setSourceGenerationUndefined: Self = StObject.set(x, "sourceGeneration", js.undefined)
     
     inline def setSourceObject(value: String): Self = StObject.set(x, "sourceObject", value.asInstanceOf[js.Any])
+    
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+    
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     
     inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     

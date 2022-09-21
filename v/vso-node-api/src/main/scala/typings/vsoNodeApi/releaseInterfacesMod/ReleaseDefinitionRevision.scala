@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +25,7 @@ trait ReleaseDefinitionRevision extends StObject {
   /**
     * Gets date on which it got changed.
     */
-  var changedDate: Date
+  var changedDate: js.Date
   
   /**
     * Gets comments for revision.
@@ -54,7 +53,7 @@ object ReleaseDefinitionRevision {
     apiVersion: String,
     changeType: AuditAction,
     changedBy: IdentityRef,
-    changedDate: Date,
+    changedDate: js.Date,
     comment: String,
     definitionId: Double,
     definitionUrl: String,
@@ -72,7 +71,7 @@ object ReleaseDefinitionRevision {
     
     inline def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
-    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: js.Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

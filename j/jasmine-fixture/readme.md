@@ -10,10 +10,10 @@ Makes injecting HTML snippets into the DOM easy & clean!
 | ------------------ | :-------------: |
 | Full name          | jasmine-fixture |
 | Keywords           | jasmine, bdd |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 228681 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19983.0 |
+| # stars            | 259.0 |
 
 ## Links
 - [Homepage](https://github.com/searls/jasmine-fixture)

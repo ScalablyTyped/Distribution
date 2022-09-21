@@ -8,7 +8,6 @@ import typings.babelTemplate.babelTemplateBooleans.`false`
 import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.Program_
 import typings.babelTypes.mod.Statement
-import typings.std.RegExp
 import typings.std.Set
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
@@ -61,7 +60,7 @@ object mod extends Shortcut {
     /**
       * Building from a template literal produces an AST builder function by default.
       */
-    def expression(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Expression] = js.native
+    def expression(tpl: TemplateStringsArray, args: Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Expression] = js.native
     @JSName("expression")
     var expression_Original: TemplateBuilder[Expression] = js.native
     
@@ -77,7 +76,7 @@ object mod extends Shortcut {
     /**
       * Building from a template literal produces an AST builder function by default.
       */
-    def program(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Program_] = js.native
+    def program(tpl: TemplateStringsArray, args: Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Program_] = js.native
     @JSName("program")
     var program_Original: TemplateBuilder[Program_] = js.native
     
@@ -93,7 +92,7 @@ object mod extends Shortcut {
     /**
       * Building from a template literal produces an AST builder function by default.
       */
-    def smart(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement | js.Array[Statement]] = js.native
+    def smart(tpl: TemplateStringsArray, args: Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement | js.Array[Statement]] = js.native
     @JSName("smart")
     var smart_Original: TemplateBuilder[Statement | js.Array[Statement]] = js.native
     
@@ -109,7 +108,7 @@ object mod extends Shortcut {
     /**
       * Building from a template literal produces an AST builder function by default.
       */
-    def statement(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement] = js.native
+    def statement(tpl: TemplateStringsArray, args: Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement] = js.native
     @JSName("statement")
     var statement_Original: TemplateBuilder[Statement] = js.native
     
@@ -125,12 +124,12 @@ object mod extends Shortcut {
     /**
       * Building from a template literal produces an AST builder function by default.
       */
-    def statements(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], js.Array[Statement]] = js.native
+    def statements(tpl: TemplateStringsArray, args: Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], js.Array[Statement]] = js.native
     @JSName("statements")
     var statements_Original: TemplateBuilder[js.Array[Statement]] = js.native
   }
   
-  type PublicReplacements = StringDictionary[js.Any] | js.Array[js.Any]
+  type PublicReplacements = StringDictionary[Any] | js.Array[Any]
   
   @js.native
   trait TemplateBuilder[T] extends StObject {
@@ -147,7 +146,7 @@ object mod extends Shortcut {
     /**
       * Building from a template literal produces an AST builder function by default.
       */
-    def apply(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], T] = js.native
+    def apply(tpl: TemplateStringsArray, args: Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], T] = js.native
     
     /**
       * Allow users to explicitly create templates that produce ASTs,
@@ -163,7 +162,7 @@ object mod extends Shortcut {
       *
       * Does not allow `%%foo%%` style placeholders.
       */
-    def ast(tpl: TemplateStringsArray, args: js.Any*): T = js.native
+    def ast(tpl: TemplateStringsArray, args: Any*): T = js.native
   }
   
   trait TemplateBuilderOptions
@@ -181,7 +180,7 @@ object mod extends Shortcut {
       *
       * @default /^[_$A-Z0-9]+$/
       */
-    var placeholderPattern: js.UndefOr[RegExp | `false` | Null] = js.undefined
+    var placeholderPattern: js.UndefOr[js.RegExp | `false` | Null] = js.undefined
     
     /**
       * A set of placeholder names to automatically accept.
@@ -218,7 +217,7 @@ object mod extends Shortcut {
     
     extension [Self <: TemplateBuilderOptions](x: Self) {
       
-      inline def setPlaceholderPattern(value: RegExp | `false`): Self = StObject.set(x, "placeholderPattern", value.asInstanceOf[js.Any])
+      inline def setPlaceholderPattern(value: js.RegExp | `false`): Self = StObject.set(x, "placeholderPattern", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderPatternNull: Self = StObject.set(x, "placeholderPattern", null)
       

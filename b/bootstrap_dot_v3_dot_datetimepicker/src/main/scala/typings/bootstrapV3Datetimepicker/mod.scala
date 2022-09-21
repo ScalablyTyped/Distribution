@@ -18,7 +18,6 @@ import typings.bootstrapV3Datetimepicker.mod.global.JQuery
 import typings.jquery.JQueryEventObject
 import typings.moment.mod.Moment
 import typings.moment.mod.MomentBuiltinFormat
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,8 +75,8 @@ object mod {
       */
     def date(): Unit = js.native
     def date(date: String): Unit = js.native
+    def date(date: js.Date): Unit = js.native
     def date(date: Moment): Unit = js.native
-    def date(date: Date): Unit = js.native
     /** Returns the component's model current date, a moment object or null if not set. */
     @JSName("date")
     def date_Moment(): Moment = js.native
@@ -111,9 +110,9 @@ object mod {
       * - TypeError - if the provided date cannot be parsed by momentjs
       */
     def defaultDate(date: String): Unit = js.native
+    def defaultDate(date: js.Date): Unit = js.native
     def defaultDate(date: Boolean): Unit = js.native
     def defaultDate(date: Moment): Unit = js.native
-    def defaultDate(date: Date): Unit = js.native
     
     /**
       * Default options that will be used for all instances.
@@ -135,8 +134,8 @@ object mod {
       * Returns the options.disabledDates option.
       * NOTES: probably should be: disabledDates(): boolean | Array<moment.Moment>; see: DatetimepickerOptions
       */
-    def disabledDates(): Boolean | js.Any = js.native
-    def disabledDates(dates: js.Array[String | Date | Moment]): Unit = js.native
+    def disabledDates(): Boolean | Any = js.native
+    def disabledDates(dates: js.Array[String | js.Date | Moment]): Unit = js.native
     /**
       * Takes an array of values and disallows the user to select those days.
       * Setting this takes precedence over options.minDate, options.maxDate configuration.
@@ -149,7 +148,7 @@ object mod {
       * Returns the options.disabledHours option.
       * NOTES: probably should be: disabledHours(): boolean | number[]; see: DatetimepickerOptions
       */
-    def disabledHours(): Boolean | js.Any = js.native
+    def disabledHours(): Boolean | Any = js.native
     def disabledHours(value: js.Array[Double]): Unit = js.native
     /**
       * Must be in 24 hour format. Will disallow hour selections (much like disabledTimeIntervals) but will affect all days.
@@ -178,8 +177,8 @@ object mod {
       * Returns the options.enabledDates option
       * NOTES: probably should be: enabledDates(): boolean | Array<moment.Moment>; see: DatetimepickerOptions
       */
-    def enabledDates(): Boolean | js.Any = js.native
-    def enabledDates(dates: js.Array[String | Date | Moment]): Unit = js.native
+    def enabledDates(): Boolean | Any = js.native
+    def enabledDates(dates: js.Array[String | js.Date | Moment]): Unit = js.native
     /**
       * Takes an array of values and allows the user to select only from those days.
       * Setting this takes precedence over options.minDate, options.maxDate configuration.
@@ -192,7 +191,7 @@ object mod {
       * Returns the options.enabledHours option.
       * NOTES: probably should be: enabledHours(): boolean | number[]; see: DatetimepickerOptions
       */
-    def enabledHours(): Boolean | js.Any = js.native
+    def enabledHours(): Boolean | Any = js.native
     def enabledHours(value: js.Array[Double]): Unit = js.native
     /**
       * Must be in 24 hour format. Will allow hour selections (much like enabledTimeIntervals) but will affect all days.
@@ -257,11 +256,11 @@ object mod {
     def keepInvalid(value: Boolean): Unit = js.native
     
     /** Returns a string variable with the currently set options.keyBinds option. */
-    def keyBinds(): js.Any = js.native
+    def keyBinds(): Any = js.native
     /**
       * Allows for several keyBinding functions to be specified for ease of access or accessibility. For defaults see {@link http://eonasdan.github.io/bootstrap-datetimepicker/Options/#keybinds}.
       */
-    def keyBinds(value: js.Any): Unit = js.native
+    def keyBinds(value: Any): Unit = js.native
     
     /** Returns the currently set locale of the options.locale */
     def locale(): String = js.native
@@ -275,6 +274,7 @@ object mod {
     /** Returns the currently set moment of the options.maxDate or false if not set */
     def maxDate(): Moment | Boolean = js.native
     def maxDate(date: String): Unit = js.native
+    def maxDate(date: js.Date): Unit = js.native
     def maxDate(date: Boolean): Unit = js.native
     /**
       * Takes a parameter and disallows the user to select a moment that is after that moment.
@@ -289,11 +289,11 @@ object mod {
       * - dp.error - if the new maxDate is after currently selected moment
       */
     def maxDate(date: Moment): Unit = js.native
-    def maxDate(date: Date): Unit = js.native
     
     /** Returns the currently set moment of the options.minDate or false if not set */
     def minDate(): Moment | Boolean = js.native
     def minDate(date: String): Unit = js.native
+    def minDate(date: js.Date): Unit = js.native
     def minDate(date: Boolean): Unit = js.native
     /**
       * Takes a parameter and disallows the user to select a moment that is before that moment.
@@ -308,7 +308,6 @@ object mod {
       * - dp.error - if the new minDate is after currently selected moment
       */
     def minDate(date: Moment): Unit = js.native
-    def minDate(date: Date): Unit = js.native
     
     /**
       * Returns the components current options object.
@@ -422,9 +421,9 @@ object mod {
     def viewDate(): Boolean | Moment = js.native
     /** This will change the viewDate without changing or setting the selected date. */
     def viewDate(value: String): Unit = js.native
+    def viewDate(value: js.Date): Unit = js.native
     def viewDate(value: Boolean): Unit = js.native
     def viewDate(value: Moment): Unit = js.native
-    def viewDate(value: Date): Unit = js.native
     
     /** Returns the options.viewMode. */
     def viewMode(): String = js.native
@@ -496,7 +495,7 @@ object mod {
       * Sets the picker default date/time. Overrides useCurrent
       * @default: false
       */
-    var defaultDate: js.UndefOr[Boolean | Moment | Date | String] = js.undefined
+    var defaultDate: js.UndefOr[Boolean | Moment | js.Date | String] = js.undefined
     
     /**
       * Disables selection of dates in the array, e.g. holidays
@@ -505,7 +504,7 @@ object mod {
       * eg disabledDates = ["2010-10-10"]; -> disabledDated will be { "2010-01-01": true }
       * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
       */
-    var disabledDates: js.UndefOr[Boolean | (js.Array[Moment | Date | String]) | js.Any] = js.undefined
+    var disabledDates: js.UndefOr[Boolean | (js.Array[Moment | js.Date | String]) | Any] = js.undefined
     
     /**
       * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days
@@ -514,7 +513,7 @@ object mod {
       * eg disabledHours = [0, 1]; -> disabledHours will be { "0": true, "1": true }
       * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
       */
-    var disabledHours: js.UndefOr[Boolean | js.Array[Double] | js.Any] = js.undefined
+    var disabledHours: js.UndefOr[Boolean | js.Array[Double] | Any] = js.undefined
     
     /**
       * Disables time selection between the given moments
@@ -530,7 +529,7 @@ object mod {
       * eg enabledDates = ["2010-10-10"]; -> enabledDated will be { "2010-01-01": true }
       * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
       */
-    var enabledDates: js.UndefOr[Boolean | (js.Array[Moment | Date | String]) | js.Any] = js.undefined
+    var enabledDates: js.UndefOr[Boolean | (js.Array[Moment | js.Date | String]) | Any] = js.undefined
     
     /**
       * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days
@@ -607,14 +606,14 @@ object mod {
       * maxDate will override defaultDate and useCurrent if either of these settings are the same day since both options are invalid according to the rules you've selected.
       * @default: false
       */
-    var maxDate: js.UndefOr[Boolean | Moment | Date | String] = js.undefined
+    var maxDate: js.UndefOr[Boolean | Moment | js.Date | String] = js.undefined
     
     /**
       * Prevents date/time selections before this date.
       * minDate will override defaultDate and useCurrent if either of these settings are the same day since both options are invalid according to the rules you've selected.
       * @default: false
       */
-    var minDate: js.UndefOr[Boolean | Moment | Date | String] = js.undefined
+    var minDate: js.UndefOr[Boolean | Moment | js.Date | String] = js.undefined
     
     /**
       * Allows custom input formatting For example: the user can enter "yesterday"" or "30 days ago".
@@ -686,7 +685,7 @@ object mod {
       * This will change the viewDate without changing or setting the selected date.
       * @default: false
       */
-    var viewDate: js.UndefOr[Boolean | Moment | Date | String] = js.undefined
+    var viewDate: js.UndefOr[Boolean | Moment | js.Date | String] = js.undefined
     
     /**
       * The default view to display when the picker is shown.
@@ -732,51 +731,51 @@ object mod {
       
       inline def setDaysOfWeekDisabledUndefined: Self = StObject.set(x, "daysOfWeekDisabled", js.undefined)
       
-      inline def setDaysOfWeekDisabledVarargs(value: Double*): Self = StObject.set(x, "daysOfWeekDisabled", js.Array(value :_*))
+      inline def setDaysOfWeekDisabledVarargs(value: Double*): Self = StObject.set(x, "daysOfWeekDisabled", js.Array(value*))
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      inline def setDefaultDate(value: Boolean | Moment | Date | String): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+      inline def setDefaultDate(value: Boolean | Moment | js.Date | String): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
       
       inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
       
-      inline def setDisabledDates(value: Boolean | (js.Array[Moment | Date | String]) | js.Any): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
+      inline def setDisabledDates(value: Boolean | (js.Array[Moment | js.Date | String]) | Any): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
       
       inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
       
-      inline def setDisabledDatesVarargs(value: (Moment | Date | String)*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
+      inline def setDisabledDatesVarargs(value: (Moment | js.Date | String)*): Self = StObject.set(x, "disabledDates", js.Array(value*))
       
-      inline def setDisabledHours(value: Boolean | js.Array[Double] | js.Any): Self = StObject.set(x, "disabledHours", value.asInstanceOf[js.Any])
+      inline def setDisabledHours(value: Boolean | js.Array[Double] | Any): Self = StObject.set(x, "disabledHours", value.asInstanceOf[js.Any])
       
       inline def setDisabledHoursUndefined: Self = StObject.set(x, "disabledHours", js.undefined)
       
-      inline def setDisabledHoursVarargs(value: Double*): Self = StObject.set(x, "disabledHours", js.Array(value :_*))
+      inline def setDisabledHoursVarargs(value: Double*): Self = StObject.set(x, "disabledHours", js.Array(value*))
       
       inline def setDisabledTimeIntervals(value: Boolean | js.Array[js.Array[Moment]]): Self = StObject.set(x, "disabledTimeIntervals", value.asInstanceOf[js.Any])
       
       inline def setDisabledTimeIntervalsUndefined: Self = StObject.set(x, "disabledTimeIntervals", js.undefined)
       
-      inline def setDisabledTimeIntervalsVarargs(value: js.Array[Moment]*): Self = StObject.set(x, "disabledTimeIntervals", js.Array(value :_*))
+      inline def setDisabledTimeIntervalsVarargs(value: js.Array[Moment]*): Self = StObject.set(x, "disabledTimeIntervals", js.Array(value*))
       
-      inline def setEnabledDates(value: Boolean | (js.Array[Moment | Date | String]) | js.Any): Self = StObject.set(x, "enabledDates", value.asInstanceOf[js.Any])
+      inline def setEnabledDates(value: Boolean | (js.Array[Moment | js.Date | String]) | Any): Self = StObject.set(x, "enabledDates", value.asInstanceOf[js.Any])
       
       inline def setEnabledDatesUndefined: Self = StObject.set(x, "enabledDates", js.undefined)
       
-      inline def setEnabledDatesVarargs(value: (Moment | Date | String)*): Self = StObject.set(x, "enabledDates", js.Array(value :_*))
+      inline def setEnabledDatesVarargs(value: (Moment | js.Date | String)*): Self = StObject.set(x, "enabledDates", js.Array(value*))
       
       inline def setEnabledHours(value: Boolean | js.Array[Double]): Self = StObject.set(x, "enabledHours", value.asInstanceOf[js.Any])
       
       inline def setEnabledHoursUndefined: Self = StObject.set(x, "enabledHours", js.undefined)
       
-      inline def setEnabledHoursVarargs(value: Double*): Self = StObject.set(x, "enabledHours", js.Array(value :_*))
+      inline def setEnabledHoursVarargs(value: Double*): Self = StObject.set(x, "enabledHours", js.Array(value*))
       
       inline def setExtraFormats(value: Boolean | (js.Array[String | MomentBuiltinFormat])): Self = StObject.set(x, "extraFormats", value.asInstanceOf[js.Any])
       
       inline def setExtraFormatsUndefined: Self = StObject.set(x, "extraFormats", js.undefined)
       
-      inline def setExtraFormatsVarargs(value: (String | MomentBuiltinFormat)*): Self = StObject.set(x, "extraFormats", js.Array(value :_*))
+      inline def setExtraFormatsVarargs(value: (String | MomentBuiltinFormat)*): Self = StObject.set(x, "extraFormats", js.Array(value*))
       
       inline def setFocusOnShow(value: Boolean): Self = StObject.set(x, "focusOnShow", value.asInstanceOf[js.Any])
       
@@ -814,15 +813,15 @@ object mod {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: Boolean | Moment | Date | String): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Boolean | Moment | js.Date | String): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Boolean | Moment | Date | String): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Boolean | Moment | js.Date | String): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setParseInputDate(value: /* input */ String | Date | Moment => Moment): Self = StObject.set(x, "parseInputDate", js.Any.fromFunction1(value))
+      inline def setParseInputDate(value: /* input */ String | js.Date | Moment => Moment): Self = StObject.set(x, "parseInputDate", js.Any.fromFunction1(value))
       
       inline def setParseInputDateUndefined: Self = StObject.set(x, "parseInputDate", js.undefined)
       
@@ -868,7 +867,7 @@ object mod {
       
       inline def setUseStrictUndefined: Self = StObject.set(x, "useStrict", js.undefined)
       
-      inline def setViewDate(value: Boolean | Moment | Date | String): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
+      inline def setViewDate(value: Boolean | Moment | js.Date | String): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
       
       inline def setViewDateUndefined: Self = StObject.set(x, "viewDate", js.undefined)
       
@@ -987,7 +986,7 @@ object mod {
     }
   }
   
-  type InputParser = js.Function1[/* input */ String | Date | Moment, Moment]
+  type InputParser = js.Function1[/* input */ String | js.Date | Moment, Moment]
   
   trait Tooltips extends StObject {
     
@@ -1206,82 +1205,66 @@ object mod {
       var datetimepicker_Original: Datetimepicker = js.native
       
       def off(events: EventName): JQuery = js.native
-      def off(events: EventName, handler: js.Function1[/* eventobject */ Event, js.Any]): JQuery = js.native
+      def off(events: EventName, handler: js.Function1[/* eventobject */ Event, Any]): JQuery = js.native
       def off(events: EventName, selector: String): JQuery = js.native
-      def off(events: EventName, selector: String, handler: js.Function1[/* eventobject */ Event, js.Any]): JQuery = js.native
-      def off(events: EventName, selector: Unit, handler: js.Function1[/* eventobject */ Event, js.Any]): JQuery = js.native
+      def off(events: EventName, selector: String, handler: js.Function1[/* eventobject */ Event, Any]): JQuery = js.native
+      def off(events: EventName, selector: Unit, handler: js.Function1[/* eventobject */ Event, Any]): JQuery = js.native
       @JSName("off")
       def off_dpchange(events: dpDotchange): JQuery = js.native
       @JSName("off")
-      def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEvent, js.Any]): JQuery = js.native
+      def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEvent, Any]): JQuery = js.native
       @JSName("off")
       def off_dpchange(events: dpDotchange, selector: String): JQuery = js.native
       @JSName("off")
-      def off_dpchange(
-        events: dpDotchange,
-        selector: String,
-        handler: js.Function1[/* eventobject */ ChangeEvent, js.Any]
-      ): JQuery = js.native
+      def off_dpchange(events: dpDotchange, selector: String, handler: js.Function1[/* eventobject */ ChangeEvent, Any]): JQuery = js.native
       @JSName("off")
-      def off_dpchange(events: dpDotchange, selector: Unit, handler: js.Function1[/* eventobject */ ChangeEvent, js.Any]): JQuery = js.native
+      def off_dpchange(events: dpDotchange, selector: Unit, handler: js.Function1[/* eventobject */ ChangeEvent, Any]): JQuery = js.native
       @JSName("off")
       def off_dpupdate(events: dpDotupdate): JQuery = js.native
       @JSName("off")
-      def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEvent, js.Any]): JQuery = js.native
+      def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEvent, Any]): JQuery = js.native
       @JSName("off")
       def off_dpupdate(events: dpDotupdate, selector: String): JQuery = js.native
       @JSName("off")
-      def off_dpupdate(
-        events: dpDotupdate,
-        selector: String,
-        handler: js.Function1[/* eventobject */ UpdateEvent, js.Any]
-      ): JQuery = js.native
+      def off_dpupdate(events: dpDotupdate, selector: String, handler: js.Function1[/* eventobject */ UpdateEvent, Any]): JQuery = js.native
       @JSName("off")
-      def off_dpupdate(events: dpDotupdate, selector: Unit, handler: js.Function1[/* eventobject */ UpdateEvent, js.Any]): JQuery = js.native
+      def off_dpupdate(events: dpDotupdate, selector: Unit, handler: js.Function1[/* eventobject */ UpdateEvent, Any]): JQuery = js.native
       
-      def on(events: EventName, handler: js.Function1[/* eventObject */ Event, js.Any]): JQuery = js.native
-      def on(events: EventName, selector: String, data: js.Any): JQuery = js.native
+      def on(events: EventName, handler: js.Function1[/* eventObject */ Event, Any]): JQuery = js.native
+      def on(events: EventName, selector: String, data: Any): JQuery = js.native
       def on(
         events: EventName,
         selector: String,
-        data: js.Any,
-        handler: js.Function1[/* eventobject */ Event, js.Any]
+        data: Any,
+        handler: js.Function1[/* eventobject */ Event, Any]
       ): JQuery = js.native
-      def on(events: EventName, selector: String, handler: js.Function1[/* eventobject */ Event, js.Any]): JQuery = js.native
+      def on(events: EventName, selector: String, handler: js.Function1[/* eventobject */ Event, Any]): JQuery = js.native
       @JSName("on")
-      def on_dpchange(events: dpDotchange, handler: js.Function1[/* eventObject */ ChangeEvent, js.Any]): JQuery = js.native
+      def on_dpchange(events: dpDotchange, handler: js.Function1[/* eventObject */ ChangeEvent, Any]): JQuery = js.native
       @JSName("on")
-      def on_dpchange(events: dpDotchange, selector: String, data: js.Any): JQuery = js.native
+      def on_dpchange(events: dpDotchange, selector: String, data: Any): JQuery = js.native
       @JSName("on")
       def on_dpchange(
         events: dpDotchange,
         selector: String,
-        data: js.Any,
-        handler: js.Function1[/* eventobject */ ChangeEvent, js.Any]
+        data: Any,
+        handler: js.Function1[/* eventobject */ ChangeEvent, Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dpchange(
-        events: dpDotchange,
-        selector: String,
-        handler: js.Function1[/* eventobject */ ChangeEvent, js.Any]
-      ): JQuery = js.native
+      def on_dpchange(events: dpDotchange, selector: String, handler: js.Function1[/* eventobject */ ChangeEvent, Any]): JQuery = js.native
       @JSName("on")
-      def on_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventObject */ UpdateEvent, js.Any]): JQuery = js.native
+      def on_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventObject */ UpdateEvent, Any]): JQuery = js.native
       @JSName("on")
-      def on_dpupdate(events: dpDotupdate, selector: String, data: js.Any): JQuery = js.native
+      def on_dpupdate(events: dpDotupdate, selector: String, data: Any): JQuery = js.native
       @JSName("on")
       def on_dpupdate(
         events: dpDotupdate,
         selector: String,
-        data: js.Any,
-        handler: js.Function1[/* eventobject */ UpdateEvent, js.Any]
+        data: Any,
+        handler: js.Function1[/* eventobject */ UpdateEvent, Any]
       ): JQuery = js.native
       @JSName("on")
-      def on_dpupdate(
-        events: dpDotupdate,
-        selector: String,
-        handler: js.Function1[/* eventobject */ UpdateEvent, js.Any]
-      ): JQuery = js.native
+      def on_dpupdate(events: dpDotupdate, selector: String, handler: js.Function1[/* eventobject */ UpdateEvent, Any]): JQuery = js.native
     }
   }
 }

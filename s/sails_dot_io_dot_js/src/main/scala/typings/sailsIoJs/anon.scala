@@ -9,7 +9,7 @@ object anon {
   
   trait Body extends StObject {
     
-    var body: js.Any
+    var body: Any
     
     var headers: Headers
     
@@ -17,14 +17,14 @@ object anon {
   }
   object Body {
     
-    inline def apply(body: js.Any, headers: Headers, statusCode: Double): Body = {
+    inline def apply(body: Any, headers: Headers, statusCode: Double): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
     extension [Self <: Body](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

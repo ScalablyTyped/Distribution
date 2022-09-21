@@ -34,13 +34,13 @@ object anon {
       
       inline def setCcEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
       
-      inline def setCcEmailAddressesVarargs(value: String*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
+      inline def setCcEmailAddressesVarargs(value: String*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setSignatures(value: js.Array[Singature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
       
-      inline def setSignaturesVarargs(value: Singature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+      inline def setSignaturesVarargs(value: Singature*): Self = StObject.set(x, "signatures", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

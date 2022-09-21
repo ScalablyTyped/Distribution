@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "QuadraticEase")
 @js.native
-class QuadraticEase ()
+open class QuadraticEase ()
   extends typings.babylonjs.animationsIndexMod.QuadraticEase

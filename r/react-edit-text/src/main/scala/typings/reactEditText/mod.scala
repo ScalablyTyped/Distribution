@@ -1,7 +1,14 @@
 package typings.reactEditText
 
+import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.CSSProperties
+import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
+import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.ReactNode
+import typings.std.HTMLButtonElement
+import typings.std.HTMLInputElement
+import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,26 +17,26 @@ object mod {
   
   @JSImport("react-edit-text", "EditText")
   @js.native
-  class EditText protected ()
-    extends Component[EditTextProps, js.Object, js.Any] {
+  open class EditText protected ()
+    extends Component[EditTextProps, js.Object, Any] {
     def this(props: EditTextProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: EditTextProps, context: js.Any) = this()
+    def this(props: EditTextProps, context: Any) = this()
   }
   
   @JSImport("react-edit-text", "EditTextarea")
   @js.native
-  class EditTextarea protected ()
-    extends Component[EditTextareaProps, js.Object, js.Any] {
+  open class EditTextarea protected ()
+    extends Component[EditTextareaProps, js.Object, Any] {
     def this(props: EditTextareaProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: EditTextareaProps, context: js.Any) = this()
+    def this(props: EditTextareaProps, context: Any) = this()
   }
   
   trait EditTextProps
@@ -37,10 +44,28 @@ object mod {
        with SharedProps {
     
     /**
+      * Sets the content for the edit button. This can be any valid element,
+      * default: <EditIcon />
+      */
+    var editButtonContent: js.UndefOr[ReactNode] = js.undefined
+    
+    /**
+      * Sets the props passed to the edit button. This can be any valid DOM attribute,
+      * default: {}
+      */
+    var editButtonProps: js.UndefOr[DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]] = js.undefined
+    
+    /**
       * Sets the element display to inline when set to true,
       * default: false
       */
     var `inline`: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Displays an edit button that can be pressed to enable edit mode,
+      * default: false
+      */
+    var showEditButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * type attribute set for input element,
@@ -57,9 +82,21 @@ object mod {
     
     extension [Self <: EditTextProps](x: Self) {
       
+      inline def setEditButtonContent(value: ReactNode): Self = StObject.set(x, "editButtonContent", value.asInstanceOf[js.Any])
+      
+      inline def setEditButtonContentUndefined: Self = StObject.set(x, "editButtonContent", js.undefined)
+      
+      inline def setEditButtonProps(value: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]): Self = StObject.set(x, "editButtonProps", value.asInstanceOf[js.Any])
+      
+      inline def setEditButtonPropsUndefined: Self = StObject.set(x, "editButtonProps", js.undefined)
+      
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      
+      inline def setShowEditButton(value: Boolean): Self = StObject.set(x, "showEditButton", value.asInstanceOf[js.Any])
+      
+      inline def setShowEditButtonUndefined: Self = StObject.set(x, "showEditButton", js.undefined)
       
       inline def setType(value: inputTextType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -95,14 +132,31 @@ object mod {
   trait SharedProps extends StObject {
     
     /**
-      * className attribute set for both input and div element
+      * class attribute set for display element
       */
     var className: js.UndefOr[String] = js.undefined
     
     /**
-      * id attribute set for both input and div element
+      * defaultValue sets the defaultValue for input element and initial text of display element
+      */
+    var defaultValue: js.UndefOr[String] = js.undefined
+    
+    /**
+      * formatDisplayText is used to pass in a function which takes in a value and returns a formatted value
+      * which is used to format the text shown in the display element
+      * default: (val) => val
+      */
+    var formatDisplayText: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
+    
+    /**
+      * id attribute set for both input and display element
       */
     var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * class attribute set for input element
+      */
+    var inputClassName: js.UndefOr[String] = js.undefined
     
     /**
       * name attribute set for input element
@@ -110,13 +164,33 @@ object mod {
     var name: js.UndefOr[String] = js.undefined
     
     /**
-      * onSave is called when the input blur event is triggered or enter key is pressed
-      * returns an object: {name, value} which correspond to the input name and value
+      * onBlur is a callback function triggered when the focus is blurred
+      * and edit mode is toggled off
       */
-    var onSave: js.UndefOr[js.Function1[/* hasNameValue */ onSaveProps, Unit]] = js.undefined
+    var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * placeholder is displayed in the div element when value is empty
+      * onChange is called when the input value changes and
+      * returns a string which corresponds to the new input value
+      */
+    var onChange: js.UndefOr[
+        js.Function1[/* event */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]
+      ] = js.undefined
+    
+    /**
+      * onEditMode is a callback function triggered when the display
+      * component is clicked and edit mode is toggled on
+      */
+    var onEditMode: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * onSave is called when the input blur event is triggered or enter key is pressed
+      * returns an object: {name, value, previousValue} which correspond to the input name, value, and previous value before changes were made
+      */
+    var onSave: js.UndefOr[js.Function1[/* hasNameValuePreviousValue */ onSaveProps, Unit]] = js.undefined
+    
+    /**
+      * placeholder is shown in the display element when value is empty
       */
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -132,7 +206,7 @@ object mod {
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
-      * value sets the defaultValue for input element and display text of div element
+      * value sets the input value and text of display element
       */
     var value: js.UndefOr[String] = js.undefined
   }
@@ -149,15 +223,39 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      
+      inline def setFormatDisplayText(value: /* value */ String => String): Self = StObject.set(x, "formatDisplayText", js.Any.fromFunction1(value))
+      
+      inline def setFormatDisplayTextUndefined: Self = StObject.set(x, "formatDisplayText", js.undefined)
+      
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+      
+      inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnSave(value: /* hasNameValue */ onSaveProps => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+      
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      
+      inline def setOnChange(value: /* event */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      inline def setOnEditMode(value: () => Unit): Self = StObject.set(x, "onEditMode", js.Any.fromFunction0(value))
+      
+      inline def setOnEditModeUndefined: Self = StObject.set(x, "onEditMode", js.undefined)
+      
+      inline def setOnSave(value: /* hasNameValuePreviousValue */ onSaveProps => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
       
       inline def setOnSaveUndefined: Self = StObject.set(x, "onSave", js.undefined)
       
@@ -222,18 +320,22 @@ object mod {
     
     var name: String
     
+    var previousValue: String
+    
     var value: String
   }
   object onSaveProps {
     
-    inline def apply(name: String, value: String): onSaveProps = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(name: String, previousValue: String, value: String): onSaveProps = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[onSaveProps]
     }
     
     extension [Self <: onSaveProps](x: Self) {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousValue(value: String): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

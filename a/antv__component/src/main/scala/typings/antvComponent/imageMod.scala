@@ -9,14 +9,14 @@ object imageMod {
   
   @JSImport("@antv/component/lib/annotation/image", JSImport.Default)
   @js.native
-  class default () extends ImageAnnotation
+  open class default () extends ImageAnnotation
   
   @js.native
   trait ImageAnnotation
     extends typings.antvComponent.groupComponentMod.default[ImageAnnotationCfg] {
     
-    /* private */ var getImageAttrs: js.Any = js.native
+    /* private */ var getImageAttrs: Any = js.native
     
-    /* private */ var renderImage: js.Any = js.native
+    /* private */ var renderImage: Any = js.native
   }
 }

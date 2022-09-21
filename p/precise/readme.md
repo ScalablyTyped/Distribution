@@ -8,11 +8,11 @@ Precision timer for nanosecond differences
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | precise |
-| Keywords           | precise, precision, nanosecond, timer, time, difference, elasped |
+| Keywords           | cpu, precise, precision, nanosecond, timer, time, difference, elasped |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 5251 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 246.66666666666666 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](http://avoidwork.github.io/precise)

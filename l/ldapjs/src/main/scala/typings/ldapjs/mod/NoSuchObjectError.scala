@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "NoSuchObjectError")
 @js.native
-class NoSuchObjectError () extends StObject {
+open class NoSuchObjectError () extends StObject {
   def this(error: String) = this()
 }

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object cborStrings {
   
   @js.native
-  sealed trait cbor extends StObject
-  inline def cbor: cbor = "cbor".asInstanceOf[cbor]
-  
-  @js.native
   sealed trait float extends StObject
   inline def float: float = "float".asInstanceOf[float]
   

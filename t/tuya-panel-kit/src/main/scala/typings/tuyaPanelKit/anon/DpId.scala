@@ -38,11 +38,11 @@ object DpId {
     
     inline def setRangeKeys(value: js.Array[DpValue]): Self = StObject.set(x, "rangeKeys", value.asInstanceOf[js.Any])
     
-    inline def setRangeKeysVarargs(value: DpValue*): Self = StObject.set(x, "rangeKeys", js.Array(value :_*))
+    inline def setRangeKeysVarargs(value: DpValue*): Self = StObject.set(x, "rangeKeys", js.Array(value*))
     
     inline def setRangeValues(value: js.Array[String]): Self = StObject.set(x, "rangeValues", value.asInstanceOf[js.Any])
     
-    inline def setRangeValuesVarargs(value: String*): Self = StObject.set(x, "rangeValues", js.Array(value :_*))
+    inline def setRangeValuesVarargs(value: String*): Self = StObject.set(x, "rangeValues", js.Array(value*))
     
     inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }

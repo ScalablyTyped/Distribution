@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Path2")
 @js.native
-class Path2 protected ()
+open class Path2 protected ()
   extends typings.babylonjs.legacyMod.Path2 {
   /**
     * Creates a Path2 object from the starting 2D coordinates x and y.

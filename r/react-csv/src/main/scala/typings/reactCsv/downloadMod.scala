@@ -11,10 +11,10 @@ object downloadMod {
   
   @JSImport("react-csv/components/Download", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DownloadPropTypes, js.Object, js.Any]
+  open class default ()
+    extends Component[DownloadPropTypes, js.Object, Any]
   
-  type Download = Component[DownloadPropTypes, js.Object, js.Any]
+  type Download = Component[DownloadPropTypes, js.Object, Any]
   
   trait DownloadPropTypes
     extends StObject
@@ -24,7 +24,7 @@ object downloadMod {
   }
   object DownloadPropTypes {
     
-    inline def apply(data: String | Data): DownloadPropTypes = {
+    inline def apply(data: String | Data | (js.Function0[String | Data])): DownloadPropTypes = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadPropTypes]
     }

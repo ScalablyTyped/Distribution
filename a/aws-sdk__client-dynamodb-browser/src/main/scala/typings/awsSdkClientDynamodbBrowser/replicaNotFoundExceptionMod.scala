@@ -8,5 +8,5 @@ object replicaNotFoundExceptionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/ReplicaNotFoundException", "ReplicaNotFoundException")
   @js.native
-  val ReplicaNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ReplicaNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

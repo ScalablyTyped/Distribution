@@ -33,6 +33,6 @@ object ListProposalsOutput {
     
     inline def setProposalsUndefined: Self = StObject.set(x, "Proposals", js.undefined)
     
-    inline def setProposalsVarargs(value: ProposalSummary*): Self = StObject.set(x, "Proposals", js.Array(value :_*))
+    inline def setProposalsVarargs(value: ProposalSummary*): Self = StObject.set(x, "Proposals", js.Array(value*))
   }
 }

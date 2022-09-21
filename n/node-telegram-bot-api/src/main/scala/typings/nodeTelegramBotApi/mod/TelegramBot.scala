@@ -1,12 +1,19 @@
 package typings.nodeTelegramBotApi.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
+import typings.nodeTelegramBotApi.anon.Chatid
+import typings.nodeTelegramBotApi.anon.Forchannels
+import typings.nodeTelegramBotApi.anon.Languagecode
 import typings.nodeTelegramBotApi.anon.PartialAnswerCallbackQuer
+import typings.nodeTelegramBotApi.anon.`0`
+import typings.nodeTelegramBotApi.anon.`1`
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.callback_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel_post
+import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chat_join_request
+import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chat_member
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chosen_inline_result
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.edited_channel_post
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.edited_channel_post_caption
@@ -17,13 +24,12 @@ import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.edited_message_text
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.error
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.inline_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.message
+import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.my_chat_member
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.poll_answer
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.polling_error
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.pre_checkout_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.shipping_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.webhook_error
-import typings.std.Error
-import typings.std.RegExp
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,27 +38,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TelegramBot extends EventEmitter {
   
+  def addListener(
+    event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
+    listener: js.Function1[
+      (/* member */ ChatMemberUpdated) | (/* error */ js.Error) | (/* message */ Message), 
+      Unit
+    ]
+  ): this.type = js.native
   def addListener(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_callbackquery(event: callback_query, listener: js.Function1[/* query */ CallbackQuery, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_channelpost(event: channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
+  def addListener_chatjoinrequest(event: chat_join_request, listener: js.Function1[/* query */ ChatJoinRequest, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_choseninlineresult(event: chosen_inline_result, listener: js.Function1[/* result */ ChosenInlineResult, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_editedchannelpost(event: edited_channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_editedchannelpostcaption(event: edited_channel_post_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_editedchannelposttext(event: edited_channel_post_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_editedmessage(event: edited_message, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_editedmessagecaption(event: edited_message_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_editedmessagetext(event: edited_message_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_inlinequery(event: inline_query, listener: js.Function1[/* query */ InlineQuery, Unit]): this.type = js.native
   @JSName("addListener")
@@ -60,13 +59,9 @@ trait TelegramBot extends EventEmitter {
   @JSName("addListener")
   def addListener_pollanswer(event: poll_answer, listener: js.Function1[/* answer */ PollAnswer, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_pollingerror(event: polling_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
-  @JSName("addListener")
   def addListener_precheckoutquery(event: pre_checkout_query, listener: js.Function1[/* query */ PreCheckoutQuery, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_webhookerror(event: webhook_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   
   /**
     * @deprecated since version 0.30.0
@@ -85,22 +80,162 @@ trait TelegramBot extends EventEmitter {
   def answerShippingQuery(shippingQueryId: String, ok: Boolean): js.Promise[Boolean] = js.native
   def answerShippingQuery(shippingQueryId: String, ok: Boolean, options: AnswerShippingQueryOptions): js.Promise[Boolean] = js.native
   
-  def closeWebHook(): js.Promise[js.Any] = js.native
+  def answerWebAppQuery(web_app_query_id: String, result: InlineQueryResult): js.Promise[SentWebAppMessage] = js.native
   
-  def deleteChatPhoto(chatId: String): js.Promise[Boolean] = js.native
-  def deleteChatPhoto(chatId: Double): js.Promise[Boolean] = js.native
+  def approveChatJoinRequest(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
+  def approveChatJoinRequest(chatId: ChatId, userId: String, form: js.Object): js.Promise[Boolean] = js.native
   
-  def deleteChatStickerSet(chatId: String): js.Promise[Boolean] = js.native
-  def deleteChatStickerSet(chatId: Double): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: String, userId: String): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: String, userId: String, untilDate: Double): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: String, userId: String, untilDate: Double, revokeMessages: Boolean): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: String, userId: String, untilDate: Unit, revokeMessages: Boolean): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: Double, userId: String, untilDate: Double): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: Double, userId: String, untilDate: Double, revokeMessages: Boolean): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: Double, userId: String, untilDate: Unit, revokeMessages: Boolean): js.Promise[Boolean] = js.native
   
-  def deleteMessage(chatId: String, messageId: String): js.Promise[Boolean] = js.native
-  def deleteMessage(chatId: String, messageId: String, options: js.Any): js.Promise[Boolean] = js.native
-  def deleteMessage(chatId: Double, messageId: String): js.Promise[Boolean] = js.native
-  def deleteMessage(chatId: Double, messageId: String, options: js.Any): js.Promise[Boolean] = js.native
+  def banChatSenderChat(chatId: ChatId, senderChatId: ChatId): js.Promise[Boolean] = js.native
+  
+  def clearReplyListeners(): Unit = js.native
+  
+  def clearTextListeners(): Unit = js.native
+  
+  def close(): js.Promise[Boolean] = js.native
+  
+  def closeWebHook(): js.Promise[Any] = js.native
+  
+  def copyMessage(chatId: ChatId, fromChatId: ChatId, messageId: String): js.Promise[MessageId] = js.native
+  def copyMessage(chatId: ChatId, fromChatId: ChatId, messageId: String, options: CopyMessageOptions): js.Promise[MessageId] = js.native
+  def copyMessage(chatId: ChatId, fromChatId: ChatId, messageId: Double): js.Promise[MessageId] = js.native
+  def copyMessage(chatId: ChatId, fromChatId: ChatId, messageId: Double, options: CopyMessageOptions): js.Promise[MessageId] = js.native
+  
+  def createChatInviteLink(chatId: ChatId): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: String): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: String, expire_date: Double): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: String, expire_date: Double, member_limit: Double): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(
+    chatId: ChatId,
+    name: String,
+    expire_date: Double,
+    member_limit: Double,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(
+    chatId: ChatId,
+    name: String,
+    expire_date: Double,
+    member_limit: Unit,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: String, expire_date: Unit, member_limit: Double): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(
+    chatId: ChatId,
+    name: String,
+    expire_date: Unit,
+    member_limit: Double,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: String, expire_date: Unit, member_limit: Unit, creates_join_request: Boolean): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Double): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Double, member_limit: Double): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(
+    chatId: ChatId,
+    name: Unit,
+    expire_date: Double,
+    member_limit: Double,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Double, member_limit: Unit, creates_join_request: Boolean): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Unit, member_limit: Double): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Unit, member_limit: Double, creates_join_request: Boolean): js.Promise[ChatInviteLink] = js.native
+  def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Unit, member_limit: Unit, creates_join_request: Boolean): js.Promise[ChatInviteLink] = js.native
+  
+  def declineChatJoinRequest(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
+  def declineChatJoinRequest(chatId: ChatId, userId: String, form: js.Object): js.Promise[Boolean] = js.native
+  
+  def deleteChatPhoto(chatId: ChatId): js.Promise[Boolean] = js.native
+  
+  def deleteChatStickerSet(chatId: ChatId): js.Promise[Boolean] = js.native
+  
+  def deleteMessage(chatId: ChatId, messageId: String): js.Promise[Boolean] = js.native
+  def deleteMessage(chatId: ChatId, messageId: String, options: Any): js.Promise[Boolean] = js.native
   
   def deleteWebHook(): js.Promise[Boolean] = js.native
   
   def downloadFile(fileId: String, downloadDir: String): js.Promise[String] = js.native
+  
+  def editChatInviteLink(chatId: ChatId, inviteLink: String): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(chatId: ChatId, inviteLink: String, name: String): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(chatId: ChatId, inviteLink: String, name: String, expire_date: Double): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(chatId: ChatId, inviteLink: String, name: String, expire_date: Double, member_limit: Double): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(
+    chatId: ChatId,
+    inviteLink: String,
+    name: String,
+    expire_date: Double,
+    member_limit: Double,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(
+    chatId: ChatId,
+    inviteLink: String,
+    name: String,
+    expire_date: Double,
+    member_limit: Unit,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(chatId: ChatId, inviteLink: String, name: String, expire_date: Unit, member_limit: Double): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(
+    chatId: ChatId,
+    inviteLink: String,
+    name: String,
+    expire_date: Unit,
+    member_limit: Double,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(
+    chatId: ChatId,
+    inviteLink: String,
+    name: String,
+    expire_date: Unit,
+    member_limit: Unit,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(chatId: ChatId, inviteLink: String, name: Unit, expire_date: Double): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(chatId: ChatId, inviteLink: String, name: Unit, expire_date: Double, member_limit: Double): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(
+    chatId: ChatId,
+    inviteLink: String,
+    name: Unit,
+    expire_date: Double,
+    member_limit: Double,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(
+    chatId: ChatId,
+    inviteLink: String,
+    name: Unit,
+    expire_date: Double,
+    member_limit: Unit,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(chatId: ChatId, inviteLink: String, name: Unit, expire_date: Unit, member_limit: Double): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(
+    chatId: ChatId,
+    inviteLink: String,
+    name: Unit,
+    expire_date: Unit,
+    member_limit: Double,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
+  def editChatInviteLink(
+    chatId: ChatId,
+    inviteLink: String,
+    name: Unit,
+    expire_date: Unit,
+    member_limit: Unit,
+    creates_join_request: Boolean
+  ): js.Promise[ChatInviteLink] = js.native
   
   def editMessageCaption(caption: String): js.Promise[Message | Boolean] = js.native
   def editMessageCaption(caption: String, options: EditMessageCaptionOptions): js.Promise[Message | Boolean] = js.native
@@ -108,43 +243,30 @@ trait TelegramBot extends EventEmitter {
   def editMessageLiveLocation(latitude: Double, longitude: Double): js.Promise[Message | Boolean] = js.native
   def editMessageLiveLocation(latitude: Double, longitude: Double, options: EditMessageLiveLocationOptions): js.Promise[Message | Boolean] = js.native
   
+  def editMessageMedia(media: InputMedia, options: EditMessageMediaOptions): js.Promise[Message | Boolean] = js.native
+  
   def editMessageReplyMarkup(replyMarkup: InlineKeyboardMarkup): js.Promise[Message | Boolean] = js.native
   def editMessageReplyMarkup(replyMarkup: InlineKeyboardMarkup, options: EditMessageReplyMarkupOptions): js.Promise[Message | Boolean] = js.native
   
   def editMessageText(text: String): js.Promise[Message | Boolean] = js.native
   def editMessageText(text: String, options: EditMessageTextOptions): js.Promise[Message | Boolean] = js.native
   
-  def exportChatInviteLink(chatId: String): js.Promise[String] = js.native
-  def exportChatInviteLink(chatId: Double): js.Promise[String] = js.native
+  def exportChatInviteLink(chatId: ChatId): js.Promise[String] = js.native
   
-  def forwardMessage(chatId: String, fromChatId: String, messageId: String): js.Promise[Message] = js.native
-  def forwardMessage(chatId: String, fromChatId: String, messageId: String, options: ForwardMessageOptions): js.Promise[Message] = js.native
-  def forwardMessage(chatId: String, fromChatId: String, messageId: Double): js.Promise[Message] = js.native
-  def forwardMessage(chatId: String, fromChatId: String, messageId: Double, options: ForwardMessageOptions): js.Promise[Message] = js.native
-  def forwardMessage(chatId: String, fromChatId: Double, messageId: String): js.Promise[Message] = js.native
-  def forwardMessage(chatId: String, fromChatId: Double, messageId: String, options: ForwardMessageOptions): js.Promise[Message] = js.native
-  def forwardMessage(chatId: String, fromChatId: Double, messageId: Double): js.Promise[Message] = js.native
-  def forwardMessage(chatId: String, fromChatId: Double, messageId: Double, options: ForwardMessageOptions): js.Promise[Message] = js.native
-  def forwardMessage(chatId: Double, fromChatId: String, messageId: String): js.Promise[Message] = js.native
-  def forwardMessage(chatId: Double, fromChatId: String, messageId: String, options: ForwardMessageOptions): js.Promise[Message] = js.native
-  def forwardMessage(chatId: Double, fromChatId: String, messageId: Double): js.Promise[Message] = js.native
-  def forwardMessage(chatId: Double, fromChatId: String, messageId: Double, options: ForwardMessageOptions): js.Promise[Message] = js.native
-  def forwardMessage(chatId: Double, fromChatId: Double, messageId: String): js.Promise[Message] = js.native
-  def forwardMessage(chatId: Double, fromChatId: Double, messageId: String, options: ForwardMessageOptions): js.Promise[Message] = js.native
-  def forwardMessage(chatId: Double, fromChatId: Double, messageId: Double): js.Promise[Message] = js.native
-  def forwardMessage(chatId: Double, fromChatId: Double, messageId: Double, options: ForwardMessageOptions): js.Promise[Message] = js.native
+  def forwardMessage(chatId: ChatId, fromChatId: ChatId, messageId: String): js.Promise[Message] = js.native
+  def forwardMessage(chatId: ChatId, fromChatId: ChatId, messageId: String, options: ForwardMessageOptions): js.Promise[Message] = js.native
+  def forwardMessage(chatId: ChatId, fromChatId: ChatId, messageId: Double): js.Promise[Message] = js.native
+  def forwardMessage(chatId: ChatId, fromChatId: ChatId, messageId: Double, options: ForwardMessageOptions): js.Promise[Message] = js.native
   
-  def getChat(chatId: String): js.Promise[Chat] = js.native
-  def getChat(chatId: Double): js.Promise[Chat] = js.native
+  def getChat(chatId: ChatId): js.Promise[Chat] = js.native
   
-  def getChatAdministrators(chatId: String): js.Promise[js.Array[ChatMember]] = js.native
-  def getChatAdministrators(chatId: Double): js.Promise[js.Array[ChatMember]] = js.native
+  def getChatAdministrators(chatId: ChatId): js.Promise[js.Array[ChatMember]] = js.native
   
-  def getChatMember(chatId: String, userId: String): js.Promise[ChatMember] = js.native
-  def getChatMember(chatId: Double, userId: String): js.Promise[ChatMember] = js.native
+  def getChatMember(chatId: ChatId, userId: String): js.Promise[ChatMember] = js.native
   
-  def getChatMembersCount(chatId: String): js.Promise[Double] = js.native
-  def getChatMembersCount(chatId: Double): js.Promise[Double] = js.native
+  def getChatMembersCount(chatId: ChatId): js.Promise[Double] = js.native
+  
+  def getChatMenuButton(form: `0`): js.Promise[MenuButton] = js.native
   
   def getFile(fileId: String): js.Promise[File] = js.native
   
@@ -158,6 +280,11 @@ trait TelegramBot extends EventEmitter {
   def getMe(): js.Promise[User] = js.native
   
   def getMyCommands(): js.Promise[js.Array[BotCommand]] = js.native
+  def getMyCommands(scope: Unit, language_code: String): js.Promise[js.Array[BotCommand]] = js.native
+  def getMyCommands(scope: BotCommandScope): js.Promise[js.Array[BotCommand]] = js.native
+  def getMyCommands(scope: BotCommandScope, language_code: String): js.Promise[js.Array[BotCommand]] = js.native
+  
+  def getMyDefaultAdministratorRights(form: `1`): js.Promise[ChatAdministratorRights] = js.native
   
   def getUpdates(): js.Promise[js.Array[Update]] = js.native
   def getUpdates(options: GetUpdatesOptions): js.Promise[js.Array[Update]] = js.native
@@ -173,105 +300,34 @@ trait TelegramBot extends EventEmitter {
   
   def isPolling(): Boolean = js.native
   
-  def kickChatMember(chatId: String, userId: String): js.Promise[Boolean] = js.native
-  def kickChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native
+  def kickChatMember(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
   
-  def leaveChat(chatId: String): js.Promise[Boolean] = js.native
-  def leaveChat(chatId: Double): js.Promise[Boolean] = js.native
+  def leaveChat(chatId: ChatId): js.Promise[Boolean] = js.native
   
+  def listenerCount(
+    event: message | callback_query | inline_query | poll_answer | chat_member | my_chat_member | chosen_inline_result | channel_post | edited_message | edited_message_text | edited_message_caption | edited_channel_post | edited_channel_post_text | edited_channel_post_caption | shipping_query | pre_checkout_query | polling_error | webhook_error | error
+  ): Double = js.native
   def listenerCount(event: MessageType): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_callbackquery(event: callback_query): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_channelpost(event: channel_post): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_choseninlineresult(event: chosen_inline_result): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_editedchannelpost(event: edited_channel_post): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_editedchannelpostcaption(event: edited_channel_post_caption): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_editedchannelposttext(event: edited_channel_post_text): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_editedmessage(event: edited_message): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_editedmessagecaption(event: edited_message_caption): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_editedmessagetext(event: edited_message_text): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_error(event: error): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_inlinequery(event: inline_query): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_message(event: message): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_pollanswer(event: poll_answer): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_pollingerror(event: polling_error): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_precheckoutquery(event: pre_checkout_query): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_shippingquery(event: shipping_query): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_webhookerror(event: webhook_error): Double = js.native
   
-  def listeners(event: MessageType): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_callbackquery(event: callback_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_channelpost(event: channel_post): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_choseninlineresult(event: chosen_inline_result): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_editedchannelpost(event: edited_channel_post): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_editedchannelpostcaption(event: edited_channel_post_caption): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_editedchannelposttext(event: edited_channel_post_text): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_editedmessage(event: edited_message): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_editedmessagecaption(event: edited_message_caption): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_editedmessagetext(event: edited_message_text): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_error(event: error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_inlinequery(event: inline_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_message(event: message): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_pollanswer(event: poll_answer): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_pollingerror(event: polling_error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_precheckoutquery(event: pre_checkout_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_shippingquery(event: shipping_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("listeners")
-  def listeners_webhookerror(event: webhook_error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners(
+    event: message | callback_query | inline_query | poll_answer | chat_member | my_chat_member | chosen_inline_result | channel_post | edited_message | edited_message_text | edited_message_caption | edited_channel_post | edited_channel_post_text | edited_channel_post_caption | shipping_query | pre_checkout_query | polling_error | webhook_error | error
+  ): js.Array[js.Function2[/* data */ Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners(event: MessageType): js.Array[js.Function2[/* data */ Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   
+  def logOut(): js.Promise[Boolean] = js.native
+  
+  def off(
+    event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
+    listener: js.Function1[
+      (/* member */ ChatMemberUpdated) | (/* error */ js.Error) | (/* message */ Message), 
+      Unit
+    ]
+  ): this.type = js.native
   def off(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   @JSName("off")
   def off_callbackquery(event: callback_query, listener: js.Function1[/* query */ CallbackQuery, Unit]): this.type = js.native
   @JSName("off")
-  def off_channelpost(event: channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("off")
   def off_choseninlineresult(event: chosen_inline_result, listener: js.Function1[/* result */ ChosenInlineResult, Unit]): this.type = js.native
-  @JSName("off")
-  def off_editedchannelpost(event: edited_channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("off")
-  def off_editedchannelpostcaption(event: edited_channel_post_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("off")
-  def off_editedchannelposttext(event: edited_channel_post_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("off")
-  def off_editedmessage(event: edited_message, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("off")
-  def off_editedmessagecaption(event: edited_message_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("off")
-  def off_editedmessagetext(event: edited_message_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("off")
-  def off_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("off")
   def off_inlinequery(event: inline_query, listener: js.Function1[/* query */ InlineQuery, Unit]): this.type = js.native
   @JSName("off")
@@ -279,46 +335,33 @@ trait TelegramBot extends EventEmitter {
   @JSName("off")
   def off_pollanswer(event: poll_answer, listener: js.Function1[/* answer */ PollAnswer, Unit]): this.type = js.native
   @JSName("off")
-  def off_pollingerror(event: polling_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
-  @JSName("off")
   def off_precheckoutquery(event: pre_checkout_query, listener: js.Function1[/* query */ PreCheckoutQuery, Unit]): this.type = js.native
   @JSName("off")
   def off_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
-  @JSName("off")
-  def off_webhookerror(event: webhook_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   
+  def on(
+    event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
+    listener: js.Function1[
+      (/* member */ ChatMemberUpdated) | (/* error */ js.Error) | (/* message */ Message), 
+      Unit
+    ]
+  ): this.type = js.native
   def on(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   
-  def onReplyToMessage(chatId: String, messageId: String, callback: js.Function1[/* msg */ Message, Unit]): Double = js.native
-  def onReplyToMessage(chatId: String, messageId: Double, callback: js.Function1[/* msg */ Message, Unit]): Double = js.native
-  def onReplyToMessage(chatId: Double, messageId: String, callback: js.Function1[/* msg */ Message, Unit]): Double = js.native
-  def onReplyToMessage(chatId: Double, messageId: Double, callback: js.Function1[/* msg */ Message, Unit]): Double = js.native
+  def onReplyToMessage(chatId: ChatId, messageId: String, callback: js.Function1[/* msg */ Message, Unit]): Double = js.native
+  def onReplyToMessage(chatId: ChatId, messageId: Double, callback: js.Function1[/* msg */ Message, Unit]): Double = js.native
   
   def onText(
-    regexp: RegExp,
+    regexp: js.RegExp,
     callback: js.Function2[/* msg */ Message, /* match */ RegExpExecArray | Null, Unit]
   ): Unit = js.native
   
   @JSName("on")
   def on_callbackquery(event: callback_query, listener: js.Function1[/* query */ CallbackQuery, Unit]): this.type = js.native
   @JSName("on")
-  def on_channelpost(event: channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
+  def on_chatjoinrequest(event: chat_join_request, listener: js.Function1[/* query */ ChatJoinRequest, Unit]): this.type = js.native
   @JSName("on")
   def on_choseninlineresult(event: chosen_inline_result, listener: js.Function1[/* result */ ChosenInlineResult, Unit]): this.type = js.native
-  @JSName("on")
-  def on_editedchannelpost(event: edited_channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("on")
-  def on_editedchannelpostcaption(event: edited_channel_post_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("on")
-  def on_editedchannelposttext(event: edited_channel_post_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("on")
-  def on_editedmessage(event: edited_message, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("on")
-  def on_editedmessagecaption(event: edited_message_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("on")
-  def on_editedmessagetext(event: edited_message_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("on")
   def on_inlinequery(event: inline_query, listener: js.Function1[/* query */ InlineQuery, Unit]): this.type = js.native
   @JSName("on")
@@ -326,35 +369,22 @@ trait TelegramBot extends EventEmitter {
   @JSName("on")
   def on_pollanswer(event: poll_answer, listener: js.Function1[/* answer */ PollAnswer, Unit]): this.type = js.native
   @JSName("on")
-  def on_pollingerror(event: polling_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
-  @JSName("on")
   def on_precheckoutquery(event: pre_checkout_query, listener: js.Function1[/* query */ PreCheckoutQuery, Unit]): this.type = js.native
   @JSName("on")
   def on_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
-  @JSName("on")
-  def on_webhookerror(event: webhook_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   
+  def once(
+    event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
+    listener: js.Function1[
+      (/* member */ ChatMemberUpdated) | (/* error */ js.Error) | (/* message */ Message), 
+      Unit
+    ]
+  ): this.type = js.native
   def once(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   @JSName("once")
   def once_callbackquery(event: callback_query, listener: js.Function1[/* query */ CallbackQuery, Unit]): this.type = js.native
   @JSName("once")
-  def once_channelpost(event: channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("once")
   def once_choseninlineresult(event: chosen_inline_result, listener: js.Function1[/* result */ ChosenInlineResult, Unit]): this.type = js.native
-  @JSName("once")
-  def once_editedchannelpost(event: edited_channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("once")
-  def once_editedchannelpostcaption(event: edited_channel_post_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("once")
-  def once_editedchannelposttext(event: edited_channel_post_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("once")
-  def once_editedmessage(event: edited_message, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("once")
-  def once_editedmessagecaption(event: edited_message_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("once")
-  def once_editedmessagetext(event: edited_message_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("once")
   def once_inlinequery(event: inline_query, listener: js.Function1[/* query */ InlineQuery, Unit]): this.type = js.native
   @JSName("once")
@@ -362,40 +392,26 @@ trait TelegramBot extends EventEmitter {
   @JSName("once")
   def once_pollanswer(event: poll_answer, listener: js.Function1[/* answer */ PollAnswer, Unit]): this.type = js.native
   @JSName("once")
-  def once_pollingerror(event: polling_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
-  @JSName("once")
   def once_precheckoutquery(event: pre_checkout_query, listener: js.Function1[/* query */ PreCheckoutQuery, Unit]): this.type = js.native
   @JSName("once")
   def once_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
-  @JSName("once")
-  def once_webhookerror(event: webhook_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   
-  def openWebHook(): js.Promise[js.Any] = js.native
+  def openWebHook(): js.Promise[Any] = js.native
   
-  def pinChatMessage(chatId: String, messageId: String): js.Promise[Boolean] = js.native
-  def pinChatMessage(chatId: Double, messageId: String): js.Promise[Boolean] = js.native
+  def pinChatMessage(chatId: ChatId, messageId: Double): js.Promise[Boolean] = js.native
   
+  def prependListener(
+    event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
+    listener: js.Function1[
+      (/* member */ ChatMemberUpdated) | (/* error */ js.Error) | (/* message */ Message), 
+      Unit
+    ]
+  ): this.type = js.native
   def prependListener(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_callbackquery(event: callback_query, listener: js.Function1[/* query */ CallbackQuery, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_channelpost(event: channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependListener")
   def prependListener_choseninlineresult(event: chosen_inline_result, listener: js.Function1[/* result */ ChosenInlineResult, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_editedchannelpost(event: edited_channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_editedchannelpostcaption(event: edited_channel_post_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_editedchannelposttext(event: edited_channel_post_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_editedmessage(event: edited_message, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_editedmessagecaption(event: edited_message_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_editedmessagetext(event: edited_message_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_inlinequery(event: inline_query, listener: js.Function1[/* query */ InlineQuery, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -403,35 +419,22 @@ trait TelegramBot extends EventEmitter {
   @JSName("prependListener")
   def prependListener_pollanswer(event: poll_answer, listener: js.Function1[/* answer */ PollAnswer, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_pollingerror(event: polling_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
-  @JSName("prependListener")
   def prependListener_precheckoutquery(event: pre_checkout_query, listener: js.Function1[/* query */ PreCheckoutQuery, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_webhookerror(event: webhook_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   
+  def prependOnceListener(
+    event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
+    listener: js.Function1[
+      (/* member */ ChatMemberUpdated) | (/* error */ js.Error) | (/* message */ Message), 
+      Unit
+    ]
+  ): this.type = js.native
   def prependOnceListener(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_callbackquery(event: callback_query, listener: js.Function1[/* query */ CallbackQuery, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_channelpost(event: channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
   def prependOnceListener_choseninlineresult(event: chosen_inline_result, listener: js.Function1[/* result */ ChosenInlineResult, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_editedchannelpost(event: edited_channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_editedchannelpostcaption(event: edited_channel_post_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_editedchannelposttext(event: edited_channel_post_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_editedmessage(event: edited_message, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_editedmessagecaption(event: edited_message_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_editedmessagetext(event: edited_message_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_inlinequery(event: inline_query, listener: js.Function1[/* query */ InlineQuery, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -439,114 +442,37 @@ trait TelegramBot extends EventEmitter {
   @JSName("prependOnceListener")
   def prependOnceListener_pollanswer(event: poll_answer, listener: js.Function1[/* answer */ PollAnswer, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_pollingerror(event: polling_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
   def prependOnceListener_precheckoutquery(event: pre_checkout_query, listener: js.Function1[/* query */ PreCheckoutQuery, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_webhookerror(event: webhook_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   
   def processUpdate(update: Update): Unit = js.native
   
-  def promoteChatMember(chatId: String, userId: String): js.Promise[Boolean] = js.native
-  def promoteChatMember(chatId: String, userId: String, options: PromoteChatMemberOptions): js.Promise[Boolean] = js.native
-  def promoteChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native
-  def promoteChatMember(chatId: Double, userId: String, options: PromoteChatMemberOptions): js.Promise[Boolean] = js.native
+  def promoteChatMember(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
+  def promoteChatMember(chatId: ChatId, userId: String, options: PromoteChatMemberOptions): js.Promise[Boolean] = js.native
   
-  def rawListeners(event: MessageType): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_callbackquery(event: callback_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_channelpost(event: channel_post): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_choseninlineresult(event: chosen_inline_result): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_editedchannelpost(event: edited_channel_post): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_editedchannelpostcaption(event: edited_channel_post_caption): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_editedchannelposttext(event: edited_channel_post_text): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_editedmessage(event: edited_message): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_editedmessagecaption(event: edited_message_caption): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_editedmessagetext(event: edited_message_text): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_error(event: error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_inlinequery(event: inline_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_message(event: message): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_pollanswer(event: poll_answer): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_pollingerror(event: polling_error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_precheckoutquery(event: pre_checkout_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_shippingquery(event: shipping_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_webhookerror(event: webhook_error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners(
+    event: message | callback_query | inline_query | poll_answer | chat_member | my_chat_member | chosen_inline_result | channel_post | edited_message | edited_message_text | edited_message_caption | edited_channel_post | edited_channel_post_text | edited_channel_post_caption | shipping_query | pre_checkout_query | polling_error | webhook_error | error
+  ): js.Array[js.Function2[/* data */ Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners(event: MessageType): js.Array[js.Function2[/* data */ Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   
+  def removeAllListeners(
+    event: message | callback_query | inline_query | poll_answer | chat_member | my_chat_member | chosen_inline_result | channel_post | edited_message | edited_message_text | edited_message_caption | edited_channel_post | edited_channel_post_text | edited_channel_post_caption | shipping_query | pre_checkout_query | polling_error | webhook_error | error
+  ): this.type = js.native
   def removeAllListeners(event: MessageType): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_callbackquery(event: callback_query): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_channelpost(event: channel_post): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_choseninlineresult(event: chosen_inline_result): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_editedchannelpost(event: edited_channel_post): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_editedchannelpostcaption(event: edited_channel_post_caption): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_editedchannelposttext(event: edited_channel_post_text): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_editedmessage(event: edited_message): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_editedmessagecaption(event: edited_message_caption): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_editedmessagetext(event: edited_message_text): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_error(event: error): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_inlinequery(event: inline_query): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_message(event: message): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_pollanswer(event: poll_answer): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_pollingerror(event: polling_error): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_precheckoutquery(event: pre_checkout_query): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_shippingquery(event: shipping_query): this.type = js.native
-  @JSName("removeAllListeners")
-  def removeAllListeners_webhookerror(event: webhook_error): this.type = js.native
   
+  def removeListener(
+    event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
+    listener: js.Function1[
+      (/* member */ ChatMemberUpdated) | (/* error */ js.Error) | (/* message */ Message), 
+      Unit
+    ]
+  ): this.type = js.native
   def removeListener(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_callbackquery(event: callback_query, listener: js.Function1[/* query */ CallbackQuery, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_channelpost(event: channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("removeListener")
   def removeListener_choseninlineresult(event: chosen_inline_result, listener: js.Function1[/* result */ ChosenInlineResult, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_editedchannelpost(event: edited_channel_post, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_editedchannelpostcaption(event: edited_channel_post_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_editedchannelposttext(event: edited_channel_post_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_editedmessage(event: edited_message, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_editedmessagecaption(event: edited_message_caption, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_editedmessagetext(event: edited_message_text, listener: js.Function1[/* message */ Message, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_inlinequery(event: inline_query, listener: js.Function1[/* query */ InlineQuery, Unit]): this.type = js.native
   @JSName("removeListener")
@@ -554,94 +480,65 @@ trait TelegramBot extends EventEmitter {
   @JSName("removeListener")
   def removeListener_pollanswer(event: poll_answer, listener: js.Function1[/* answer */ PollAnswer, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_pollingerror(event: polling_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
-  @JSName("removeListener")
   def removeListener_precheckoutquery(event: pre_checkout_query, listener: js.Function1[/* query */ PreCheckoutQuery, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_webhookerror(event: webhook_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   
   def removeReplyListener(replyListenerId: Double): ReplyListener = js.native
   
-  def removeTextListener(regexp: RegExp): TextListener | Null = js.native
+  def removeTextListener(regexp: js.RegExp): TextListener | Null = js.native
   
-  def restrictChatMember(chatId: String, userId: String): js.Promise[Boolean] = js.native
-  def restrictChatMember(chatId: String, userId: String, options: RestrictChatMemberOptions): js.Promise[Boolean] = js.native
-  def restrictChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native
-  def restrictChatMember(chatId: Double, userId: String, options: RestrictChatMemberOptions): js.Promise[Boolean] = js.native
+  def restrictChatMember(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
+  def restrictChatMember(chatId: ChatId, userId: String, options: RestrictChatMemberOptions): js.Promise[Boolean] = js.native
   
-  def sendAnimation(chatId: String, animation: String): js.Promise[Message] = js.native
-  def sendAnimation(chatId: String, animation: String, options: SendAnimationOptions): js.Promise[Message] = js.native
-  def sendAnimation(chatId: String, animation: Buffer): js.Promise[Message] = js.native
-  def sendAnimation(chatId: String, animation: Buffer, options: SendAnimationOptions): js.Promise[Message] = js.native
-  def sendAnimation(chatId: String, animation: Stream): js.Promise[Message] = js.native
-  def sendAnimation(chatId: String, animation: Stream, options: SendAnimationOptions): js.Promise[Message] = js.native
-  def sendAnimation(chatId: Double, animation: String): js.Promise[Message] = js.native
-  def sendAnimation(chatId: Double, animation: String, options: SendAnimationOptions): js.Promise[Message] = js.native
-  def sendAnimation(chatId: Double, animation: Buffer): js.Promise[Message] = js.native
-  def sendAnimation(chatId: Double, animation: Buffer, options: SendAnimationOptions): js.Promise[Message] = js.native
-  def sendAnimation(chatId: Double, animation: Stream): js.Promise[Message] = js.native
-  def sendAnimation(chatId: Double, animation: Stream, options: SendAnimationOptions): js.Promise[Message] = js.native
+  def revokeChatInviteLink(chatId: ChatId, inviteLink: String): js.Promise[ChatInviteLink] = js.native
   
-  def sendAudio(chatId: String, audio: String): js.Promise[Message] = js.native
-  def sendAudio(chatId: String, audio: String, options: SendAudioOptions): js.Promise[Message] = js.native
-  def sendAudio(chatId: String, audio: Buffer): js.Promise[Message] = js.native
-  def sendAudio(chatId: String, audio: Buffer, options: SendAudioOptions): js.Promise[Message] = js.native
-  def sendAudio(chatId: String, audio: Stream): js.Promise[Message] = js.native
-  def sendAudio(chatId: String, audio: Stream, options: SendAudioOptions): js.Promise[Message] = js.native
-  def sendAudio(chatId: Double, audio: String): js.Promise[Message] = js.native
-  def sendAudio(chatId: Double, audio: String, options: SendAudioOptions): js.Promise[Message] = js.native
-  def sendAudio(chatId: Double, audio: Buffer): js.Promise[Message] = js.native
-  def sendAudio(chatId: Double, audio: Buffer, options: SendAudioOptions): js.Promise[Message] = js.native
-  def sendAudio(chatId: Double, audio: Stream): js.Promise[Message] = js.native
-  def sendAudio(chatId: Double, audio: Stream, options: SendAudioOptions): js.Promise[Message] = js.native
+  def sendAnimation(chatId: ChatId, animation: String): js.Promise[Message] = js.native
+  def sendAnimation(chatId: ChatId, animation: String, options: SendAnimationOptions): js.Promise[Message] = js.native
+  def sendAnimation(chatId: ChatId, animation: Buffer): js.Promise[Message] = js.native
+  def sendAnimation(chatId: ChatId, animation: Buffer, options: SendAnimationOptions): js.Promise[Message] = js.native
+  def sendAnimation(chatId: ChatId, animation: Stream): js.Promise[Message] = js.native
+  def sendAnimation(chatId: ChatId, animation: Stream, options: SendAnimationOptions): js.Promise[Message] = js.native
   
-  def sendChatAction(chatId: String, action: ChatAction): js.Promise[Boolean] = js.native
-  def sendChatAction(chatId: Double, action: ChatAction): js.Promise[Boolean] = js.native
+  def sendAudio(chatId: ChatId, audio: String): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: String, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: String, options: SendAudioOptions): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: String, options: SendAudioOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: Buffer): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: Buffer, options: SendAudioOptions): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: Buffer, options: SendAudioOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: Stream): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: Stream, options: SendAudioOptions): js.Promise[Message] = js.native
+  def sendAudio(chatId: ChatId, audio: Stream, options: SendAudioOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
   
-  def sendContact(chatId: String, phoneNumber: String, firstName: String): js.Promise[Message] = js.native
-  def sendContact(chatId: String, phoneNumber: String, firstName: String, options: SendContactOptions): js.Promise[Message] = js.native
-  def sendContact(chatId: Double, phoneNumber: String, firstName: String): js.Promise[Message] = js.native
-  def sendContact(chatId: Double, phoneNumber: String, firstName: String, options: SendContactOptions): js.Promise[Message] = js.native
+  def sendChatAction(chatId: ChatId, action: ChatAction): js.Promise[Boolean] = js.native
   
-  def sendDice(chatId: String): js.Promise[Message] = js.native
-  def sendDice(chatId: String, options: SendDiceOptions): js.Promise[Message] = js.native
-  def sendDice(chatId: Double): js.Promise[Message] = js.native
-  def sendDice(chatId: Double, options: SendDiceOptions): js.Promise[Message] = js.native
+  def sendContact(chatId: ChatId, phoneNumber: String, firstName: String): js.Promise[Message] = js.native
+  def sendContact(chatId: ChatId, phoneNumber: String, firstName: String, options: SendContactOptions): js.Promise[Message] = js.native
   
-  def sendDocument(chatId: String, doc: String): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: String, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: String, options: SendDocumentOptions): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: String, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Buffer): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Buffer, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Buffer, options: SendDocumentOptions): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Buffer, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Stream): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Stream, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Stream, options: SendDocumentOptions): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Stream, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: String): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: String, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: String, options: SendDocumentOptions): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: String, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Buffer): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Buffer, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Buffer, options: SendDocumentOptions): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Buffer, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Stream): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Stream, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Stream, options: SendDocumentOptions): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Stream, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
+  def sendDice(chatId: ChatId): js.Promise[Message] = js.native
+  def sendDice(chatId: ChatId, options: SendDiceOptions): js.Promise[Message] = js.native
   
-  def sendGame(chatId: String, gameShortName: String): js.Promise[Message] = js.native
-  def sendGame(chatId: String, gameShortName: String, options: SendGameOptions): js.Promise[Message] = js.native
-  def sendGame(chatId: Double, gameShortName: String): js.Promise[Message] = js.native
-  def sendGame(chatId: Double, gameShortName: String, options: SendGameOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: String): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: String, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: String, options: SendDocumentOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: String, options: SendDocumentOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: Buffer): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: Buffer, options: SendDocumentOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: Buffer, options: SendDocumentOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: Stream): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: Stream, options: SendDocumentOptions): js.Promise[Message] = js.native
+  def sendDocument(chatId: ChatId, doc: Stream, options: SendDocumentOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  
+  def sendGame(chatId: ChatId, gameShortName: String): js.Promise[Message] = js.native
+  def sendGame(chatId: ChatId, gameShortName: String, options: SendGameOptions): js.Promise[Message] = js.native
   
   def sendInvoice(
-    chatId: String,
+    chatId: ChatId,
     title: String,
     description: String,
     payload: String,
@@ -651,28 +548,7 @@ trait TelegramBot extends EventEmitter {
     prices: js.Array[LabeledPrice]
   ): js.Promise[Message] = js.native
   def sendInvoice(
-    chatId: String,
-    title: String,
-    description: String,
-    payload: String,
-    providerToken: String,
-    startParameter: String,
-    currency: String,
-    prices: js.Array[LabeledPrice],
-    options: SendInvoiceOptions
-  ): js.Promise[Message] = js.native
-  def sendInvoice(
-    chatId: Double,
-    title: String,
-    description: String,
-    payload: String,
-    providerToken: String,
-    startParameter: String,
-    currency: String,
-    prices: js.Array[LabeledPrice]
-  ): js.Promise[Message] = js.native
-  def sendInvoice(
-    chatId: Double,
+    chatId: ChatId,
     title: String,
     description: String,
     payload: String,
@@ -683,64 +559,47 @@ trait TelegramBot extends EventEmitter {
     options: SendInvoiceOptions
   ): js.Promise[Message] = js.native
   
-  def sendLocation(chatId: String, latitude: Double, longitude: Double): js.Promise[Message] = js.native
-  def sendLocation(chatId: String, latitude: Double, longitude: Double, options: SendLocationOptions): js.Promise[Message] = js.native
-  def sendLocation(chatId: Double, latitude: Double, longitude: Double): js.Promise[Message] = js.native
-  def sendLocation(chatId: Double, latitude: Double, longitude: Double, options: SendLocationOptions): js.Promise[Message] = js.native
+  def sendLocation(chatId: ChatId, latitude: Double, longitude: Double): js.Promise[Message] = js.native
+  def sendLocation(chatId: ChatId, latitude: Double, longitude: Double, options: SendLocationOptions): js.Promise[Message] = js.native
   
-  def sendMediaGroup(chatId: String, media: js.Array[InputMedia]): js.Promise[Message] = js.native
-  def sendMediaGroup(chatId: String, media: js.Array[InputMedia], options: SendMediaGroupOptions): js.Promise[Message] = js.native
-  def sendMediaGroup(chatId: Double, media: js.Array[InputMedia]): js.Promise[Message] = js.native
-  def sendMediaGroup(chatId: Double, media: js.Array[InputMedia], options: SendMediaGroupOptions): js.Promise[Message] = js.native
+  def sendMediaGroup(chatId: ChatId, media: js.Array[InputMedia]): js.Promise[Message] = js.native
+  def sendMediaGroup(chatId: ChatId, media: js.Array[InputMedia], options: SendMediaGroupOptions): js.Promise[Message] = js.native
   
-  def sendMessage(chatId: String, text: String): js.Promise[Message] = js.native
-  def sendMessage(chatId: String, text: String, options: SendMessageOptions): js.Promise[Message] = js.native
-  def sendMessage(chatId: Double, text: String): js.Promise[Message] = js.native
-  def sendMessage(chatId: Double, text: String, options: SendMessageOptions): js.Promise[Message] = js.native
+  def sendMessage(chatId: ChatId, text: String): js.Promise[Message] = js.native
+  def sendMessage(chatId: ChatId, text: String, options: SendMessageOptions): js.Promise[Message] = js.native
   
-  def sendPhoto(chatId: String, photo: String): js.Promise[Message] = js.native
-  def sendPhoto(chatId: String, photo: String, options: SendPhotoOptions): js.Promise[Message] = js.native
-  def sendPhoto(chatId: String, photo: Buffer): js.Promise[Message] = js.native
-  def sendPhoto(chatId: String, photo: Buffer, options: SendPhotoOptions): js.Promise[Message] = js.native
-  def sendPhoto(chatId: String, photo: Stream): js.Promise[Message] = js.native
-  def sendPhoto(chatId: String, photo: Stream, options: SendPhotoOptions): js.Promise[Message] = js.native
-  def sendPhoto(chatId: Double, photo: String): js.Promise[Message] = js.native
-  def sendPhoto(chatId: Double, photo: String, options: SendPhotoOptions): js.Promise[Message] = js.native
-  def sendPhoto(chatId: Double, photo: Buffer): js.Promise[Message] = js.native
-  def sendPhoto(chatId: Double, photo: Buffer, options: SendPhotoOptions): js.Promise[Message] = js.native
-  def sendPhoto(chatId: Double, photo: Stream): js.Promise[Message] = js.native
-  def sendPhoto(chatId: Double, photo: Stream, options: SendPhotoOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: String): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: String, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: String, options: SendPhotoOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: String, options: SendPhotoOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: Buffer): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: Buffer, options: SendPhotoOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: Buffer, options: SendPhotoOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: Stream): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: Stream, options: SendPhotoOptions): js.Promise[Message] = js.native
+  def sendPhoto(chatId: ChatId, photo: Stream, options: SendPhotoOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
   
-  def sendPoll(chatId: String, question: String, pollOptions: js.Array[String]): js.Promise[Message] = js.native
-  def sendPoll(chatId: String, question: String, pollOptions: js.Array[String], options: SendPollOptions): js.Promise[Message] = js.native
-  def sendPoll(chatId: Double, question: String, pollOptions: js.Array[String]): js.Promise[Message] = js.native
-  def sendPoll(chatId: Double, question: String, pollOptions: js.Array[String], options: SendPollOptions): js.Promise[Message] = js.native
+  def sendPoll(chatId: ChatId, question: String, pollOptions: js.Array[String]): js.Promise[Message] = js.native
+  def sendPoll(chatId: ChatId, question: String, pollOptions: js.Array[String], options: SendPollOptions): js.Promise[Message] = js.native
   
-  def sendSticker(chatId: String, sticker: String): js.Promise[Message] = js.native
-  def sendSticker(chatId: String, sticker: String, options: SendStickerOptions): js.Promise[Message] = js.native
-  def sendSticker(chatId: String, sticker: Buffer): js.Promise[Message] = js.native
-  def sendSticker(chatId: String, sticker: Buffer, options: SendStickerOptions): js.Promise[Message] = js.native
-  def sendSticker(chatId: String, sticker: Stream): js.Promise[Message] = js.native
-  def sendSticker(chatId: String, sticker: Stream, options: SendStickerOptions): js.Promise[Message] = js.native
-  def sendSticker(chatId: Double, sticker: String): js.Promise[Message] = js.native
-  def sendSticker(chatId: Double, sticker: String, options: SendStickerOptions): js.Promise[Message] = js.native
-  def sendSticker(chatId: Double, sticker: Buffer): js.Promise[Message] = js.native
-  def sendSticker(chatId: Double, sticker: Buffer, options: SendStickerOptions): js.Promise[Message] = js.native
-  def sendSticker(chatId: Double, sticker: Stream): js.Promise[Message] = js.native
-  def sendSticker(chatId: Double, sticker: Stream, options: SendStickerOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: String): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: String, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: String, options: SendStickerOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: String, options: SendStickerOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: Buffer): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: Buffer, options: SendStickerOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: Buffer, options: SendStickerOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: Stream): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: Stream, options: SendStickerOptions): js.Promise[Message] = js.native
+  def sendSticker(chatId: ChatId, sticker: Stream, options: SendStickerOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
   
-  def sendVenue(chatId: String, latitude: Double, longitude: Double, title: String, address: String): js.Promise[Message] = js.native
+  def sendVenue(chatId: ChatId, latitude: Double, longitude: Double, title: String, address: String): js.Promise[Message] = js.native
   def sendVenue(
-    chatId: String,
-    latitude: Double,
-    longitude: Double,
-    title: String,
-    address: String,
-    options: SendVenueOptions
-  ): js.Promise[Message] = js.native
-  def sendVenue(chatId: Double, latitude: Double, longitude: Double, title: String, address: String): js.Promise[Message] = js.native
-  def sendVenue(
-    chatId: Double,
+    chatId: ChatId,
     latitude: Double,
     longitude: Double,
     title: String,
@@ -748,95 +607,104 @@ trait TelegramBot extends EventEmitter {
     options: SendVenueOptions
   ): js.Promise[Message] = js.native
   
-  def sendVideo(chatId: String, video: String): js.Promise[Message] = js.native
-  def sendVideo(chatId: String, video: String, options: SendVideoOptions): js.Promise[Message] = js.native
-  def sendVideo(chatId: String, video: Buffer): js.Promise[Message] = js.native
-  def sendVideo(chatId: String, video: Buffer, options: SendVideoOptions): js.Promise[Message] = js.native
-  def sendVideo(chatId: String, video: Stream): js.Promise[Message] = js.native
-  def sendVideo(chatId: String, video: Stream, options: SendVideoOptions): js.Promise[Message] = js.native
-  def sendVideo(chatId: Double, video: String): js.Promise[Message] = js.native
-  def sendVideo(chatId: Double, video: String, options: SendVideoOptions): js.Promise[Message] = js.native
-  def sendVideo(chatId: Double, video: Buffer): js.Promise[Message] = js.native
-  def sendVideo(chatId: Double, video: Buffer, options: SendVideoOptions): js.Promise[Message] = js.native
-  def sendVideo(chatId: Double, video: Stream): js.Promise[Message] = js.native
-  def sendVideo(chatId: Double, video: Stream, options: SendVideoOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: String): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: String, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: String, options: SendVideoOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: String, options: SendVideoOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: Buffer): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: Buffer, options: SendVideoOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: Buffer, options: SendVideoOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: Stream): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: Stream, options: SendVideoOptions): js.Promise[Message] = js.native
+  def sendVideo(chatId: ChatId, video: Stream, options: SendVideoOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
   
-  def sendVideoNote(chatId: String, videoNote: String): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: String, videoNote: String, options: SendVideoNoteOptions): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: String, videoNote: Buffer): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: String, videoNote: Buffer, options: SendVideoNoteOptions): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: String, videoNote: Stream): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: String, videoNote: Stream, options: SendVideoNoteOptions): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: Double, videoNote: String): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: Double, videoNote: String, options: SendVideoNoteOptions): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: Double, videoNote: Buffer): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: Double, videoNote: Buffer, options: SendVideoNoteOptions): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: Double, videoNote: Stream): js.Promise[Message] = js.native
-  def sendVideoNote(chatId: Double, videoNote: Stream, options: SendVideoNoteOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: String): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: String, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: String, options: SendVideoNoteOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: String, options: SendVideoNoteOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: Buffer): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: Buffer, options: SendVideoNoteOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: Buffer, options: SendVideoNoteOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: Stream): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: Stream, options: SendVideoNoteOptions): js.Promise[Message] = js.native
+  def sendVideoNote(chatId: ChatId, videoNote: Stream, options: SendVideoNoteOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
   
-  def sendVoice(chatId: String, voice: String): js.Promise[Message] = js.native
-  def sendVoice(chatId: String, voice: String, options: SendVoiceOptions): js.Promise[Message] = js.native
-  def sendVoice(chatId: String, voice: Buffer): js.Promise[Message] = js.native
-  def sendVoice(chatId: String, voice: Buffer, options: SendVoiceOptions): js.Promise[Message] = js.native
-  def sendVoice(chatId: String, voice: Stream): js.Promise[Message] = js.native
-  def sendVoice(chatId: String, voice: Stream, options: SendVoiceOptions): js.Promise[Message] = js.native
-  def sendVoice(chatId: Double, voice: String): js.Promise[Message] = js.native
-  def sendVoice(chatId: Double, voice: String, options: SendVoiceOptions): js.Promise[Message] = js.native
-  def sendVoice(chatId: Double, voice: Buffer): js.Promise[Message] = js.native
-  def sendVoice(chatId: Double, voice: Buffer, options: SendVoiceOptions): js.Promise[Message] = js.native
-  def sendVoice(chatId: Double, voice: Stream): js.Promise[Message] = js.native
-  def sendVoice(chatId: Double, voice: Stream, options: SendVoiceOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: String): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: String, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: String, options: SendVoiceOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: String, options: SendVoiceOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: Buffer): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: Buffer, options: SendVoiceOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: Buffer, options: SendVoiceOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: Stream): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: Stream, options: SendVoiceOptions): js.Promise[Message] = js.native
+  def sendVoice(chatId: ChatId, voice: Stream, options: SendVoiceOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
   
-  def setChatAdministratorCustomTitle(chatId: String, userId: String, customTitle: String): js.Promise[Boolean] = js.native
-  def setChatAdministratorCustomTitle(chatId: Double, userId: String, customTitle: String): js.Promise[Boolean] = js.native
+  def setChatAdministratorCustomTitle(chatId: ChatId, userId: String, customTitle: String): js.Promise[Boolean] = js.native
   
-  def setChatDescription(chatId: String, description: String): js.Promise[Boolean] = js.native
-  def setChatDescription(chatId: Double, description: String): js.Promise[Boolean] = js.native
+  def setChatDescription(chatId: ChatId, description: String): js.Promise[Boolean] = js.native
   
-  def setChatPermissions(chatId: String, chatPermissions: ChatPermissions): js.Promise[Boolean] = js.native
-  def setChatPermissions(chatId: Double, chatPermissions: ChatPermissions): js.Promise[Boolean] = js.native
+  def setChatMenuButton(form: Chatid): js.Promise[Boolean] = js.native
   
-  def setChatPhoto(chatId: String, photo: String): js.Promise[Boolean] = js.native
-  def setChatPhoto(chatId: String, photo: Buffer): js.Promise[Boolean] = js.native
-  def setChatPhoto(chatId: String, photo: Stream): js.Promise[Boolean] = js.native
-  def setChatPhoto(chatId: Double, photo: String): js.Promise[Boolean] = js.native
-  def setChatPhoto(chatId: Double, photo: Buffer): js.Promise[Boolean] = js.native
-  def setChatPhoto(chatId: Double, photo: Stream): js.Promise[Boolean] = js.native
+  def setChatPermissions(chatId: ChatId, chatPermissions: ChatPermissions): js.Promise[Boolean] = js.native
   
-  def setChatStickerSet(chatId: String, stickerSetName: String): js.Promise[Boolean] = js.native
-  def setChatStickerSet(chatId: Double, stickerSetName: String): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: String): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: String, options: js.Object): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: String, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: String, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: Buffer): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: Buffer, options: js.Object): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: Buffer, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: Stream): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: Stream, options: js.Object): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: Stream, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setChatPhoto(chatId: ChatId, photo: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
   
-  def setChatTitle(chatId: String, title: String): js.Promise[Boolean] = js.native
-  def setChatTitle(chatId: Double, title: String): js.Promise[Boolean] = js.native
+  def setChatStickerSet(chatId: ChatId, stickerSetName: String): js.Promise[Boolean] = js.native
+  
+  def setChatTitle(chatId: ChatId, title: String): js.Promise[Boolean] = js.native
   
   def setGameScore(userId: String, score: Double): js.Promise[Message | Boolean] = js.native
   def setGameScore(userId: String, score: Double, options: SetGameScoreOptions): js.Promise[Message | Boolean] = js.native
   
   def setMyCommands(commands: js.Array[BotCommand]): js.Promise[Boolean] = js.native
+  def setMyCommands(commands: js.Array[BotCommand], options: Languagecode): js.Promise[Boolean] = js.native
   
-  def setWebHook(url: String): js.Promise[js.Any] = js.native
-  def setWebHook(url: String, options: SetWebHookOptions): js.Promise[js.Any] = js.native
+  def setMyDefaultAdministratorRights(form: Forchannels): js.Promise[Boolean] = js.native
   
-  def startPolling(): js.Promise[js.Any] = js.native
-  def startPolling(options: StartPollingOptions): js.Promise[js.Any] = js.native
+  def setWebHook(url: String): js.Promise[Any] = js.native
+  def setWebHook(url: String, options: Unit, fileOptions: FileOptions): js.Promise[Any] = js.native
+  def setWebHook(url: String, options: SetWebHookOptions): js.Promise[Any] = js.native
+  def setWebHook(url: String, options: SetWebHookOptions, fileOptions: FileOptions): js.Promise[Any] = js.native
+  
+  def startPolling(): js.Promise[Any] = js.native
+  def startPolling(options: StartPollingOptions): js.Promise[Any] = js.native
   
   def stopMessageLiveLocation(): js.Promise[Message | Boolean] = js.native
   def stopMessageLiveLocation(options: StopMessageLiveLocationOptions): js.Promise[Message | Boolean] = js.native
   
-  def stopPoll(chatId: String, messageId: Double): js.Promise[Poll] = js.native
-  def stopPoll(chatId: String, messageId: Double, options: StopPollOptions): js.Promise[Poll] = js.native
   // `messageId` was referred to as `pollId` in `node-telegram-bot-api/src/telegram.js`,
   // but actually `pollId` is another thing, and I believe that's a mistake.
   // see https://core.telegram.org/bots/api#stoppoll for more info.
-  def stopPoll(chatId: Double, messageId: Double): js.Promise[Poll] = js.native
-  def stopPoll(chatId: Double, messageId: Double, options: StopPollOptions): js.Promise[Poll] = js.native
+  def stopPoll(chatId: ChatId, messageId: Double): js.Promise[Poll] = js.native
+  def stopPoll(chatId: ChatId, messageId: Double, options: StopPollOptions): js.Promise[Poll] = js.native
   
-  def stopPolling(): js.Promise[js.Any] = js.native
-  def stopPolling(options: StopPollingOptions): js.Promise[js.Any] = js.native
+  def stopPolling(): js.Promise[Any] = js.native
+  def stopPolling(options: StopPollingOptions): js.Promise[Any] = js.native
   
-  def unbanChatMember(chatId: String, userId: String): js.Promise[Boolean] = js.native
-  def unbanChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native
+  def unbanChatMember(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
   
-  def unpinChatMessage(chatId: String): js.Promise[Boolean] = js.native
-  def unpinChatMessage(chatId: Double): js.Promise[Boolean] = js.native
+  def unbanChatSenderChat(chatId: ChatId, senderChatId: ChatId): js.Promise[Boolean] = js.native
+  
+  def unpinAllChatMessages(chatId: ChatId): js.Promise[Boolean] = js.native
+  
+  def unpinChatMessage(chatId: ChatId): js.Promise[Boolean] = js.native
+  def unpinChatMessage(chatId: ChatId, messageId: Double): js.Promise[Boolean] = js.native
 }

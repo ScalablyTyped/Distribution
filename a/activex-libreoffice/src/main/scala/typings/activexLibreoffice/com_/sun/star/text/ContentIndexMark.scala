@@ -29,7 +29,7 @@ object ContentIndexMark {
     attach: XTextRange => Unit,
     dispose: () => Unit,
     getAnchor: () => XTextRange,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): ContentIndexMark = {

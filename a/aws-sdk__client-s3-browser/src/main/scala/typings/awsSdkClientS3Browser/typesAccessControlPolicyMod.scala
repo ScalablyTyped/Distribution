@@ -4,7 +4,6 @@ import typings.awsSdkClientS3Browser.typesGrantMod.Grant
 import typings.awsSdkClientS3Browser.typesGrantMod.UnmarshalledGrant
 import typings.awsSdkClientS3Browser.typesOwnerMod.Owner
 import typings.awsSdkClientS3Browser.typesOwnerMod.UnmarshalledOwner
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object typesAccessControlPolicyMod {
     /**
       * <p>A list of grants.</p>
       */
-    var Grants: js.UndefOr[js.Array[Grant] | Iterable[Grant]] = js.undefined
+    var Grants: js.UndefOr[js.Array[Grant] | js.Iterable[Grant]] = js.undefined
     
     /**
       * _Owner shape
@@ -32,11 +31,11 @@ object typesAccessControlPolicyMod {
     
     extension [Self <: AccessControlPolicy](x: Self) {
       
-      inline def setGrants(value: js.Array[Grant] | Iterable[Grant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
+      inline def setGrants(value: js.Array[Grant] | js.Iterable[Grant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
       
       inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
       
-      inline def setGrantsVarargs(value: Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: Grant*): Self = StObject.set(x, "Grants", js.Array(value*))
       
       inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       
@@ -73,7 +72,7 @@ object typesAccessControlPolicyMod {
       
       inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
       
-      inline def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value*))
       
       inline def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       

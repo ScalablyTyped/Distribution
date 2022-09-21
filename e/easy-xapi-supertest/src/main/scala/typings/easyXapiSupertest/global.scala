@@ -6,9 +6,8 @@ import typings.easyXapiSupertest.NodeJS.Process
 import typings.easyXapiSupertest.NodeJS.Timer
 import typings.std.ArrayBufferLike
 import typings.std.ArrayLike
-import typings.std.Iterable
+import typings.std.ErrorOptions
 import typings.std.PropertyKey
-import typings.std.Uint8Array
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,21 +18,21 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Buffer")
   @js.native
-  class Buffer protected ()
+  open class Buffer protected ()
     extends StObject
-       with typings.node.Buffer {
+       with typings.node.bufferMod.global.Buffer {
     /**
       * Allocates a new buffer containing the given {array} of octets.
       *
       * @param array The octets to store.
       */
-    def this(array: js.Array[js.Any]) = this()
+    def this(array: js.Array[Any]) = this()
     /**
       * Allocates a new buffer containing the given {array} of octets.
       *
       * @param array The octets to store.
       */
-    def this(array: Uint8Array) = this()
+    def this(array: js.typedarray.Uint8Array) = this()
     /**
       * Allocates a new buffer of {size} octets.
       *
@@ -73,7 +72,7 @@ object global {
     /**
       * The same as buf1.compare(buf2).
       */
-    inline def compare(buf1: typings.node.Buffer, buf2: typings.node.Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(buf1.asInstanceOf[js.Any], buf2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def compare(buf1: typings.node.bufferMod.global.Buffer, buf2: typings.node.bufferMod.global.Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(buf1.asInstanceOf[js.Any], buf2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns a buffer which is the result of concatenating all the buffers in the list together.
@@ -86,15 +85,15 @@ object global {
       * @param totalLength Total length of the buffers when concatenated.
       *   If totalLength is not provided, it is read from the buffers in the list. However, this adds an additional loop to the function, so it is faster to provide the length explicitly.
       */
-    inline def concat(list: js.Array[typings.node.Buffer]): typings.node.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
-    inline def concat(list: js.Array[typings.node.Buffer], totalLength: Double): typings.node.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], totalLength.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
+    inline def concat(list: js.Array[typings.node.bufferMod.global.Buffer]): typings.node.bufferMod.global.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[typings.node.bufferMod.global.Buffer]
+    inline def concat(list: js.Array[typings.node.bufferMod.global.Buffer], totalLength: Double): typings.node.bufferMod.global.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], totalLength.asInstanceOf[js.Any])).asInstanceOf[typings.node.bufferMod.global.Buffer]
     
     /**
       * Returns true if {obj} is a Buffer
       *
       * @param obj object to test.
       */
-    inline def isBuffer(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBuffer(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if {encoding} is a valid encoding argument.
@@ -108,12 +107,12 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("SlowBuffer")
   @js.native
-  class SlowBuffer protected ()
+  open class SlowBuffer protected ()
     extends StObject
-       with typings.node.Buffer {
-    def this(array: js.Array[js.Any]) = this()
+       with typings.node.bufferMod.global.Buffer {
+    def this(array: js.Array[Any]) = this()
+    def this(size: js.typedarray.Uint8Array) = this()
     def this(size: Double) = this()
-    def this(size: Uint8Array) = this()
     def this(str: String) = this()
     def this(str: String, encoding: String) = this()
   }
@@ -126,13 +125,13 @@ object global {
     inline def byteLength(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def byteLength(string: String, encoding: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def concat(list: js.Array[typings.node.Buffer]): typings.node.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
-    inline def concat(list: js.Array[typings.node.Buffer], totalLength: Double): typings.node.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], totalLength.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
+    inline def concat(list: js.Array[typings.node.bufferMod.global.Buffer]): typings.node.bufferMod.global.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[typings.node.bufferMod.global.Buffer]
+    inline def concat(list: js.Array[typings.node.bufferMod.global.Buffer], totalLength: Double): typings.node.bufferMod.global.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], totalLength.asInstanceOf[js.Any])).asInstanceOf[typings.node.bufferMod.global.Buffer]
     
-    inline def isBuffer(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBuffer(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  inline def clearImmediate(immediateId: js.Any): Unit = js.Dynamic.global.applyDynamic("clearImmediate")(immediateId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearImmediate(immediateId: Any): Unit = js.Dynamic.global.applyDynamic("clearImmediate")(immediateId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def clearInterval(intervalId: Timer): Unit = js.Dynamic.global.applyDynamic("clearInterval")(intervalId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -147,8 +146,8 @@ object global {
   // Same as module.exports
   @JSGlobal("exports")
   @js.native
-  def exports: js.Any = js.native
-  inline def exports_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
+  def exports: Any = js.native
+  inline def exports_=(x: Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
   
   @JSGlobal("__filename")
   @js.native
@@ -165,49 +164,53 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Array")
     @js.native
-    class Array[T] protected ()
+    open class Array[T] protected ()
       extends StObject
          with typings.std.Array[T] {
+      /* standard es5 */
       def this(arrayLength: Double) = this()
+      /* standard es5 */
       def this(items: T*) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.ArrayBuffer")
     @js.native
-    class ArrayBuffer protected ()
+    open class ArrayBuffer protected ()
       extends StObject
          with typings.std.ArrayBuffer {
+      /* standard es5 */
       def this(byteLength: Double) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Boolean")
     @js.native
-    class Boolean ()
+    /* standard es5 */
+    open class Boolean ()
       extends StObject
          with typings.std.Boolean {
-      def this(value: js.Any) = this()
+      def this(value: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Buffer")
     @js.native
-    class Buffer protected ()
+    open class Buffer protected ()
       extends StObject
-         with typings.node.Buffer {
+         with typings.node.bufferMod.global.Buffer {
       /**
         * Allocates a new buffer containing the given {array} of octets.
         *
         * @param array The octets to store.
         */
-      def this(array: js.Array[js.Any]) = this()
+      def this(array: js.Array[Any]) = this()
       /**
         * Allocates a new buffer containing the given {array} of octets.
         *
         * @param array The octets to store.
         */
-      def this(array: typings.std.Uint8Array) = this()
+      def this(array: js.typedarray.Uint8Array) = this()
       /**
         * Allocates a new buffer of {size} octets.
         *
@@ -227,9 +230,10 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.DataView")
     @js.native
-    class DataView protected ()
+    open class DataView protected ()
       extends StObject
          with typings.std.DataView {
+      /* standard es5 */
       def this(buffer: ArrayBufferLike) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, byteLength: Double) = this()
@@ -239,13 +243,17 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Date")
     @js.native
-    class Date ()
+    /* standard es5 */
+    open class Date ()
       extends StObject
          with typings.std.Date {
       def this(value: java.lang.String) = this()
+      def this(value: js.Date) = this()
+      /* standard es2015.core */
       def this(value: Double) = this()
-      def this(value: typings.std.Date) = this()
+      /* standard scripthost */
       def this(vd: VarDate) = this()
+      /* standard es5 */
       def this(year: Double, month: Double) = this()
       def this(year: Double, month: Double, date: Double) = this()
       def this(year: Double, month: Double, date: Double, hours: Double) = this()
@@ -323,14 +331,19 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Error")
     @js.native
-    class Error ()
+    /* standard es2022.error */
+    open class Error ()
       extends StObject
          with typings.std.Error {
       def this(message: java.lang.String) = this()
+      def this(message: java.lang.String, options: ErrorOptions) = this()
+      def this(message: Unit, options: ErrorOptions) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: java.lang.String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: java.lang.String = js.native
     }
@@ -338,14 +351,19 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.EvalError")
     @js.native
-    class EvalError ()
+    /* standard es2022.error */
+    open class EvalError ()
       extends StObject
          with typings.std.Error {
       def this(message: java.lang.String) = this()
+      def this(message: java.lang.String, options: ErrorOptions) = this()
+      def this(message: Unit, options: ErrorOptions) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: java.lang.String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: java.lang.String = js.native
     }
@@ -353,12 +371,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Float32Array")
     @js.native
-    class Float32Array ()
+    /* standard es2017.typedarrays */
+    open class Float32Array ()
       extends StObject
          with typings.std.Float32Array {
       def this(array: ArrayBufferLike) = this()
+      /* standard es5 */
       def this(array: ArrayLike[Double]) = this()
-      def this(elements: Iterable[Double]) = this()
+      /* standard es2015.iterable */
+      def this(elements: js.Iterable[Double]) = this()
+      /* standard es5 */
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
@@ -368,12 +390,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Float64Array")
     @js.native
-    class Float64Array ()
+    /* standard es2017.typedarrays */
+    open class Float64Array ()
       extends StObject
          with typings.std.Float64Array {
       def this(array: ArrayBufferLike) = this()
+      /* standard es5 */
       def this(array: ArrayLike[Double]) = this()
-      def this(elements: Iterable[Double]) = this()
+      /* standard es2015.iterable */
+      def this(elements: js.Iterable[Double]) = this()
+      /* standard es5 */
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
@@ -383,24 +409,29 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Function")
     @js.native
-    class Function protected ()
+    open class Function protected ()
       extends js.Function {
       /**
         * Creates a new function.
         * @param args A list of arguments the function accepts.
         */
+      /* standard es5 */
       def this(args: java.lang.String*) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Int16Array")
     @js.native
-    class Int16Array ()
+    /* standard es2017.typedarrays */
+    open class Int16Array ()
       extends StObject
          with typings.std.Int16Array {
       def this(array: ArrayBufferLike) = this()
+      /* standard es5 */
       def this(array: ArrayLike[Double]) = this()
-      def this(elements: Iterable[Double]) = this()
+      /* standard es2015.iterable */
+      def this(elements: js.Iterable[Double]) = this()
+      /* standard es5 */
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
@@ -410,12 +441,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Int32Array")
     @js.native
-    class Int32Array ()
+    /* standard es2017.typedarrays */
+    open class Int32Array ()
       extends StObject
          with typings.std.Int32Array {
       def this(array: ArrayBufferLike) = this()
+      /* standard es5 */
       def this(array: ArrayLike[Double]) = this()
-      def this(elements: Iterable[Double]) = this()
+      /* standard es2015.iterable */
+      def this(elements: js.Iterable[Double]) = this()
+      /* standard es5 */
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
@@ -425,12 +460,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Int8Array")
     @js.native
-    class Int8Array ()
+    /* standard es2017.typedarrays */
+    open class Int8Array ()
       extends StObject
          with typings.std.Int8Array {
       def this(array: ArrayBufferLike) = this()
+      /* standard es5 */
       def this(array: ArrayLike[Double]) = this()
-      def this(elements: Iterable[Double]) = this()
+      /* standard es2015.iterable */
+      def this(elements: js.Iterable[Double]) = this()
+      /* standard es5 */
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
@@ -440,31 +479,35 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Map")
     @js.native
-    class Map[K, V] ()
+    /* standard es2015.collection */
+    open class Map[K, V] ()
       extends StObject
          with typings.std.Map[K, V] {
       def this(entries: js.Array[js.Tuple2[K, V]]) = this()
-      def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
+      def this(iterable: js.Iterable[js.Tuple2[K, V]]) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Number")
     @js.native
-    class Number ()
+    /* standard es5 */
+    open class Number ()
       extends StObject
          with typings.std.Number {
-      def this(value: js.Any) = this()
+      def this(value: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Object")
     @js.native
-    class Object ()
+    /* standard es5 */
+    open class Object ()
       extends StObject
          with typings.std.Object {
-      def this(value: js.Any) = this()
+      def this(value: Any) = this()
       
       /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+      /* standard es5 */
       /* CompleteClass */
       var constructor: js.Function = js.native
       
@@ -472,6 +515,7 @@ object global {
         * Determines whether an object has a property with the specified name.
         * @param v A property name.
         */
+      /* standard es5 */
       /* CompleteClass */
       override def hasOwnProperty(v: PropertyKey): scala.Boolean = js.native
       
@@ -479,6 +523,7 @@ object global {
         * Determines whether a specified property is enumerable.
         * @param v A property name.
         */
+      /* standard es5 */
       /* CompleteClass */
       override def propertyIsEnumerable(v: PropertyKey): scala.Boolean = js.native
     }
@@ -486,14 +531,19 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.RangeError")
     @js.native
-    class RangeError ()
+    /* standard es2022.error */
+    open class RangeError ()
       extends StObject
          with typings.std.Error {
       def this(message: java.lang.String) = this()
+      def this(message: java.lang.String, options: ErrorOptions) = this()
+      def this(message: Unit, options: ErrorOptions) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: java.lang.String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: java.lang.String = js.native
     }
@@ -501,14 +551,19 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.ReferenceError")
     @js.native
-    class ReferenceError ()
+    /* standard es2022.error */
+    open class ReferenceError ()
       extends StObject
          with typings.std.Error {
       def this(message: java.lang.String) = this()
+      def this(message: java.lang.String, options: ErrorOptions) = this()
+      def this(message: Unit, options: ErrorOptions) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: java.lang.String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: java.lang.String = js.native
     }
@@ -516,19 +571,21 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.RegExp")
     @js.native
-    class RegExp protected ()
+    open class RegExp protected ()
       extends StObject
          with typings.std.RegExp {
       def this(pattern: java.lang.String) = this()
-      def this(pattern: typings.std.RegExp) = this()
+      /* standard es2015.core */
+      def this(pattern: js.RegExp) = this()
       def this(pattern: java.lang.String, flags: java.lang.String) = this()
-      def this(pattern: typings.std.RegExp, flags: java.lang.String) = this()
+      def this(pattern: js.RegExp, flags: java.lang.String) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Set")
     @js.native
-    class Set[T] ()
+    /* standard es2015.collection */
+    open class Set[T] ()
       extends StObject
          with typings.std.Set[T] {
       def this(values: js.Array[T]) = this()
@@ -537,23 +594,29 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.String")
     @js.native
-    class String ()
+    /* standard es5 */
+    open class String ()
       extends StObject
          with typings.std.String {
-      def this(value: js.Any) = this()
+      def this(value: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.SyntaxError")
     @js.native
-    class SyntaxError ()
+    /* standard es2022.error */
+    open class SyntaxError ()
       extends StObject
          with typings.std.Error {
       def this(message: java.lang.String) = this()
+      def this(message: java.lang.String, options: ErrorOptions) = this()
+      def this(message: Unit, options: ErrorOptions) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: java.lang.String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: java.lang.String = js.native
     }
@@ -561,14 +624,19 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.TypeError")
     @js.native
-    class TypeError ()
+    /* standard es2022.error */
+    open class TypeError ()
       extends StObject
          with typings.std.Error {
       def this(message: java.lang.String) = this()
+      def this(message: java.lang.String, options: ErrorOptions) = this()
+      def this(message: Unit, options: ErrorOptions) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: java.lang.String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: java.lang.String = js.native
     }
@@ -576,14 +644,19 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.URIError")
     @js.native
-    class URIError ()
+    /* standard es2022.error */
+    open class URIError ()
       extends StObject
          with typings.std.Error {
       def this(message: java.lang.String) = this()
+      def this(message: java.lang.String, options: ErrorOptions) = this()
+      def this(message: Unit, options: ErrorOptions) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: java.lang.String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: java.lang.String = js.native
     }
@@ -591,12 +664,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Uint16Array")
     @js.native
-    class Uint16Array ()
+    /* standard es2017.typedarrays */
+    open class Uint16Array ()
       extends StObject
          with typings.std.Uint16Array {
       def this(array: ArrayBufferLike) = this()
+      /* standard es5 */
       def this(array: ArrayLike[Double]) = this()
-      def this(elements: Iterable[Double]) = this()
+      /* standard es2015.iterable */
+      def this(elements: js.Iterable[Double]) = this()
+      /* standard es5 */
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
@@ -606,12 +683,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Uint32Array")
     @js.native
-    class Uint32Array ()
+    /* standard es2017.typedarrays */
+    open class Uint32Array ()
       extends StObject
          with typings.std.Uint32Array {
       def this(array: ArrayBufferLike) = this()
+      /* standard es5 */
       def this(array: ArrayLike[Double]) = this()
-      def this(elements: Iterable[Double]) = this()
+      /* standard es2015.iterable */
+      def this(elements: js.Iterable[Double]) = this()
+      /* standard es5 */
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
@@ -621,12 +702,16 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.Uint8Array")
     @js.native
-    class Uint8Array ()
+    /* standard es2017.typedarrays */
+    open class Uint8Array ()
       extends StObject
          with typings.std.Uint8Array {
       def this(array: ArrayBufferLike) = this()
+      /* standard es5 */
       def this(array: ArrayLike[Double]) = this()
-      def this(elements: Iterable[Double]) = this()
+      /* standard es2015.iterable */
+      def this(elements: js.Iterable[Double]) = this()
+      /* standard es5 */
       def this(length: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
       def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
@@ -636,7 +721,8 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("global.WeakMap")
     @js.native
-    class WeakMap[K /* <: js.Object */, V] ()
+    /* standard es2015.collection */
+    open class WeakMap[K /* <: js.Object */, V] ()
       extends StObject
          with typings.std.WeakMap[K, V] {
       def this(entries: js.Array[js.Tuple2[K, V]]) = this()
@@ -656,13 +742,13 @@ object global {
     
     @JSGlobal("module.children")
     @js.native
-    def children: js.Array[js.Any] = js.native
-    inline def children_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+    def children: js.Array[Any] = js.native
+    inline def children_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     
     @JSGlobal("module.exports")
     @js.native
-    def exports: js.Any = js.native
-    inline def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
+    def exports: Any = js.native
+    inline def exports_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
     
     @JSGlobal("module.filename")
     @js.native
@@ -681,10 +767,10 @@ object global {
     
     @JSGlobal("module.parent")
     @js.native
-    def parent: js.Any = js.native
-    inline def parent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parent")(x.asInstanceOf[js.Any])
+    def parent: Any = js.native
+    inline def parent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parent")(x.asInstanceOf[js.Any])
     
-    inline def require(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def require(id: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   @JSGlobal("process")
@@ -694,7 +780,7 @@ object global {
   
   object require {
     
-    inline def apply(id: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply(id: String): Any = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSGlobal("require")
     @js.native
@@ -702,25 +788,25 @@ object global {
     
     @JSGlobal("require.cache")
     @js.native
-    def cache: js.Any = js.native
-    inline def cache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cache")(x.asInstanceOf[js.Any])
+    def cache: Any = js.native
+    inline def cache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cache")(x.asInstanceOf[js.Any])
     
     @JSGlobal("require.extensions")
     @js.native
-    def extensions: js.Any = js.native
-    inline def extensions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    def extensions: Any = js.native
+    inline def extensions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
     @JSGlobal("require.main")
     @js.native
-    def main: js.Any = js.native
-    inline def main_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("main")(x.asInstanceOf[js.Any])
+    def main: Any = js.native
+    inline def main_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("main")(x.asInstanceOf[js.Any])
     
     inline def resolve(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  inline def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): js.Any = (js.Dynamic.global.applyDynamic("setImmediate")(callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setImmediate(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Any = js.Dynamic.global.applyDynamic("setImmediate")(List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
-  inline def setInterval(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timer = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Timer]
+  inline def setInterval(callback: js.Function1[/* repeated */ Any, Unit], ms: Double, args: Any*): Timer = (js.Dynamic.global.applyDynamic("setInterval")((List(callback.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Timer]
   
-  inline def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timer = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Timer]
+  inline def setTimeout(callback: js.Function1[/* repeated */ Any, Unit], ms: Double, args: Any*): Timer = (js.Dynamic.global.applyDynamic("setTimeout")((List(callback.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Timer]
 }

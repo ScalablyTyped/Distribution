@@ -1,34 +1,38 @@
 package typings.extjs.Ext.data
 
+import typings.extjs.Ext.IBase
+import typings.extjs.Ext.data.proxy.IWebStorage
+import typings.extjs.Ext.util.IMixedCollection
+import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IDirectStore = typings.extjs.Ext.data.IStore
+type IDirectStore = IStore
 
-type IGroup = typings.extjs.Ext.util.IObservable
+type IGroup = IObservable
 
-type IJsonP = typings.extjs.Ext.IBase
+type IJsonP = IBase
 
-type IJsonPStore = typings.extjs.Ext.data.IStore
+type IJsonPStore = IStore
 
-type IJsonStore = typings.extjs.Ext.data.IStore
+type IJsonStore = IStore
 
-type ILocalStorageProxy = typings.extjs.Ext.data.proxy.IWebStorage
+type ILocalStorageProxy = IWebStorage
 
-type ISessionStorageProxy = typings.extjs.Ext.data.proxy.IWebStorage
+type ISessionStorageProxy = IWebStorage
 
-type ISortTypes = typings.extjs.Ext.IBase
+type ISortTypes = IBase
 
-type IStoreManager = typings.extjs.Ext.util.IMixedCollection
+type IStoreManager = IMixedCollection
 
-type IStoreMgr = typings.extjs.Ext.util.IMixedCollection
+type IStoreMgr = IMixedCollection
 
-type ITreeModel = typings.extjs.Ext.data.IModel
+type ITreeModel = IModel
 
-type ITypes = typings.extjs.Ext.IBase
+type ITypes = IBase
 
-type IValidations = typings.extjs.Ext.IBase
+type IValidations = IBase
 
-type IXmlStore = typings.extjs.Ext.data.IStore
+type IXmlStore = IStore

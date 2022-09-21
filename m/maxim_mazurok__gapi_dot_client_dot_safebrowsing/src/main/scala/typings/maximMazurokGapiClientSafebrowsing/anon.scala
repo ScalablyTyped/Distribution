@@ -1,9 +1,9 @@
 package typings.maximMazurokGapiClientSafebrowsing
 
-import typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing.FetchThreatListUpdatesRequest
-import typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing.FindFullHashesRequest
-import typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing.FindThreatMatchesRequest
-import typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing.ThreatHit
+import typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing.GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest
+import typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing.GoogleSecuritySafebrowsingV4FindFullHashesRequest
+import typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing.GoogleSecuritySafebrowsingV4FindThreatMatchesRequest
+import typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing.GoogleSecuritySafebrowsingV4ThreatHit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -151,7 +151,7 @@ object anon {
     var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: FindFullHashesRequest
+    var resource: GoogleSecuritySafebrowsingV4FindFullHashesRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
     var uploadType: js.UndefOr[String] = js.undefined
@@ -161,7 +161,7 @@ object anon {
   }
   object Alt {
     
-    inline def apply(resource: FindFullHashesRequest): Alt = {
+    inline def apply(resource: GoogleSecuritySafebrowsingV4FindFullHashesRequest): Alt = {
       val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alt]
     }
@@ -204,7 +204,7 @@ object anon {
       
       inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
       
-      inline def setResource(value: FindFullHashesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: GoogleSecuritySafebrowsingV4FindFullHashesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       
@@ -338,7 +338,7 @@ object anon {
     var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: ThreatHit
+    var resource: GoogleSecuritySafebrowsingV4ThreatHit
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
     var uploadType: js.UndefOr[String] = js.undefined
@@ -348,7 +348,7 @@ object anon {
   }
   object Fields {
     
-    inline def apply(resource: ThreatHit): Fields = {
+    inline def apply(resource: GoogleSecuritySafebrowsingV4ThreatHit): Fields = {
       val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
@@ -391,7 +391,7 @@ object anon {
       
       inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
       
-      inline def setResource(value: ThreatHit): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: GoogleSecuritySafebrowsingV4ThreatHit): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       
@@ -434,7 +434,7 @@ object anon {
     var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: FetchThreatListUpdatesRequest
+    var resource: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
     var uploadType: js.UndefOr[String] = js.undefined
@@ -444,7 +444,7 @@ object anon {
   }
   object Key {
     
-    inline def apply(resource: FetchThreatListUpdatesRequest): Key = {
+    inline def apply(resource: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest): Key = {
       val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
@@ -487,7 +487,7 @@ object anon {
       
       inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
       
-      inline def setResource(value: FetchThreatListUpdatesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       
@@ -530,7 +530,7 @@ object anon {
     var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Request body */
-    var resource: FindThreatMatchesRequest
+    var resource: GoogleSecuritySafebrowsingV4FindThreatMatchesRequest
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
     var uploadType: js.UndefOr[String] = js.undefined
@@ -540,7 +540,7 @@ object anon {
   }
   object Oauthtoken {
     
-    inline def apply(resource: FindThreatMatchesRequest): Oauthtoken = {
+    inline def apply(resource: GoogleSecuritySafebrowsingV4FindThreatMatchesRequest): Oauthtoken = {
       val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
       __obj.asInstanceOf[Oauthtoken]
     }
@@ -583,7 +583,7 @@ object anon {
       
       inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
       
-      inline def setResource(value: FindThreatMatchesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: GoogleSecuritySafebrowsingV4FindThreatMatchesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       

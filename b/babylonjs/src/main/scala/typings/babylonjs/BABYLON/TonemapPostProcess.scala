@@ -9,8 +9,8 @@ trait TonemapPostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _operator: js.Any = js.native
+  /* private */ var _operator: Any = js.native
   
-  /** Defines the required exposure adjustement */
+  /** Defines the required exposure adjustment */
   var exposureAdjustment: Double = js.native
 }

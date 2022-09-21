@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "MockObserver")
 @js.native
-class MockObserver protected ()
+open class MockObserver protected ()
   extends typings.wonderFrp.mockObserverMod.MockObserver {
   def this(scheduler: typings.wonderFrp.testSchedulerMod.TestScheduler) = this()
 }

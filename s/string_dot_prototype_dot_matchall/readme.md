@@ -4,21 +4,21 @@
 Typings are for version 4.0
 
 ## Library description:
-Spec-compliant polyfill for String.prototype.matchAll ESnext proposal.
+Spec-compliant polyfill for String.prototype.matchAll
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | string.prototype.matchall |
-| Keywords           | String.prototype.matchAll, matchAll, match, regex, regexp, regular, expression, matches |
-| # releases         | 5 |
-| # dependents       | 91 |
-| # downloads        | 228990061 |
-| # stars            | 0 |
+| Keywords           | ES2020, ES, String.prototype.matchAll, matchAll, match, regex, regexp, regular, expression, matches |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 4.8530192666666664E7 |
+| # stars            | 14.0 |
 
 ## Links
-- [Homepage](https://github.com/ljharb/String.prototype.matchAll#readme)
-- [Bugs](https://github.com/ljharb/String.prototype.matchAll/issues)
-- [Repository](https://github.com/ljharb/String.prototype.matchAll)
+- [Homepage](https://github.com/es-shims/String.prototype.matchAll#readme)
+- [Bugs](https://github.com/es-shims/String.prototype.matchAll/issues)
+- [Repository](https://github.com/es-shims/String.prototype.matchAll)
 - [Npm](https://www.npmjs.com/package/string.prototype.matchall)
     
 

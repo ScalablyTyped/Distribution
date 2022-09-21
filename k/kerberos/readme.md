@@ -10,14 +10,14 @@ Kerberos library for Node.js
 | ------------------ | :-------------: |
 | Full name          | kerberos |
 | Keywords           | kerberos, security, authentication |
-| # releases         | 5 |
-| # dependents       | 106 |
-| # downloads        | 2547732 |
-| # stars            | 7 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 255278.66666666666 |
+| # stars            | 152.0 |
 
 ## Links
 - [Homepage](https://github.com/mongodb-js/kerberos#readme)
-- [Bugs](https://github.com/mongodb-js/kerberos/issues)
+- [Bugs](https://jira.mongodb.org/projects/NODE/issues/)
 - [Repository](https://github.com/mongodb-js/kerberos)
 - [Npm](https://www.npmjs.com/package/kerberos)
     

@@ -23,6 +23,6 @@ object EditSubsetResult {
     
     inline def setSubset(value: js.Array[EditRow]): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     
-    inline def setSubsetVarargs(value: EditRow*): Self = StObject.set(x, "subset", js.Array(value :_*))
+    inline def setSubsetVarargs(value: EditRow*): Self = StObject.set(x, "subset", js.Array(value*))
   }
 }

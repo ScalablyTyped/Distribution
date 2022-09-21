@@ -11,11 +11,11 @@ trait Data extends StObject {
   var key: String
   
   /** 上报的数据 */
-  var value: js.Any
+  var value: Any
 }
 object Data {
   
-  inline def apply(key: String, value: js.Any): Data = {
+  inline def apply(key: String, value: Any): Data = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
@@ -24,6 +24,6 @@ object Data {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

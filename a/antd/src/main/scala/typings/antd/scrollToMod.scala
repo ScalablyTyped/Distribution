@@ -19,7 +19,7 @@ object scrollToMod {
   trait ScrollToOptions extends StObject {
     
     /** Scroll end callback */
-    var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var callback: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** Animation duration, default as 450 */
     var duration: js.UndefOr[Double] = js.undefined
@@ -36,7 +36,7 @@ object scrollToMod {
     
     extension [Self <: ScrollToOptions](x: Self) {
       
-      inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       

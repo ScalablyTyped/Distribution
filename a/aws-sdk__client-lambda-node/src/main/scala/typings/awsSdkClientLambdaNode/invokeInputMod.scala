@@ -8,5 +8,5 @@ object invokeInputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/InvokeInput", "InvokeInput")
   @js.native
-  val InvokeInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvokeInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

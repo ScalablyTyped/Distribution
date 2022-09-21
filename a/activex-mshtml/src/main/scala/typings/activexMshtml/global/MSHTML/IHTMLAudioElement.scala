@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLAudioElement")
 @js.native
-/* private */ class IHTMLAudioElement ()
+/* private */ open class IHTMLAudioElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLAudioElement {
   

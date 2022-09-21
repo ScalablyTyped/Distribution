@@ -9,7 +9,7 @@ object navigationIndexMod {
   
   @JSImport("babylonjs/Navigation/index", "RecastJSCrowd")
   @js.native
-  class RecastJSCrowd protected ()
+  open class RecastJSCrowd protected ()
     extends typings.babylonjs.navigationPluginsIndexMod.RecastJSCrowd {
     /**
       * Constructor
@@ -33,8 +33,8 @@ object navigationIndexMod {
     * Initializes the recastJS plugin
     * @param recastInjection can be used to inject your own recast reference
     */
-  class RecastJSPlugin ()
+  open class RecastJSPlugin ()
     extends typings.babylonjs.navigationPluginsIndexMod.RecastJSPlugin {
-    def this(recastInjection: js.Any) = this()
+    def this(recastInjection: Any) = this()
   }
 }

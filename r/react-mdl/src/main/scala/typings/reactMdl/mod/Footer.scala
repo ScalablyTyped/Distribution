@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "Footer")
 @js.native
-class Footer protected () extends _MDLComponent[FooterProps] {
+open class Footer protected () extends _MDLComponent[FooterProps] {
   def this(props: FooterProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: FooterProps, context: js.Any) = this()
+  def this(props: FooterProps, context: Any) = this()
 }

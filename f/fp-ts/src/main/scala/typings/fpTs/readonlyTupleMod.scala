@@ -54,9 +54,9 @@ object readonlyTupleMod {
   val URI: /* "ReadonlyTuple" */ String = js.native
   type URI = /* "ReadonlyTuple" */ String
   
-  inline def bimap[E, G, A, B](f: js.Function1[/* e */ E, G], g: js.Function1[/* a */ A, B]): js.Function1[/* fa */ js.Tuple2[A, E], js.Tuple2[B, G]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bimap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, E], js.Tuple2[B, G]]]
+  inline def bimap[E, G, A, B](mapSnd: js.Function1[/* e */ E, G], mapFst: js.Function1[/* a */ A, B]): js.Function1[/* fa */ js.Tuple2[A, E], js.Tuple2[B, G]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bimap")(mapSnd.asInstanceOf[js.Any], mapFst.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, E], js.Tuple2[B, G]]]
   
-  inline def compose[A, B](ab: js.Tuple2[B, A]): js.Function1[/* bc */ js.Tuple2[js.Any, B], js.Tuple2[js.Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bc */ js.Tuple2[js.Any, B], js.Tuple2[js.Any, A]]]
+  inline def compose[A, B](ab: js.Tuple2[B, A]): js.Function1[/* bc */ js.Tuple2[Any, B], js.Tuple2[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bc */ js.Tuple2[Any, B], js.Tuple2[Any, A]]]
   
   inline def duplicate[E, A](wa: js.Tuple2[A, E]): js.Tuple2[js.Tuple2[A, E], E] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(wa.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[A, E], E]]
   
@@ -64,12 +64,14 @@ object readonlyTupleMod {
   
   inline def extract[E, A](wa: js.Tuple2[A, E]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(wa.asInstanceOf[js.Any]).asInstanceOf[A]
   
+  inline def flap[A](a: A): js.Function1[/* fab */ js.Tuple2[js.Function1[/* a */ A, Any], Any], js.Tuple2[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ js.Tuple2[js.Function1[/* a */ A, Any], Any], js.Tuple2[Any, Any]]]
+  
   inline def foldMap[M](M: Monoid[M]): js.Function1[
-    /* f */ js.Function1[/* a */ js.Any, M], 
-    js.Function1[/* fa */ js.Tuple2[js.Any, js.Any], M]
+    /* f */ js.Function1[/* a */ Any, M], 
+    js.Function1[/* fa */ js.Tuple2[Any, Any], M]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* f */ js.Function1[/* a */ js.Any, M], 
-    js.Function1[/* fa */ js.Tuple2[js.Any, js.Any], M]
+    /* f */ js.Function1[/* a */ Any, M], 
+    js.Function1[/* fa */ js.Tuple2[Any, Any], M]
   ]]
   
   inline def fst[A, E](ea: js.Tuple2[A, E]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("fst")(ea.asInstanceOf[js.Any]).asInstanceOf[A]
@@ -84,17 +86,21 @@ object readonlyTupleMod {
   
   inline def getMonad[M](M: Monoid[M]): Monad2C[typings.fpTs.readonlyTupleMod.URI, M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonad")(M.asInstanceOf[js.Any]).asInstanceOf[Monad2C[typings.fpTs.readonlyTupleMod.URI, M]]
   
-  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ js.Tuple2[A, js.Any], js.Tuple2[B, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, js.Any], js.Tuple2[B, js.Any]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ js.Tuple2[A, Any], js.Tuple2[B, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, Any], js.Tuple2[B, Any]]]
   
-  inline def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ js.Tuple2[js.Any, E], js.Tuple2[js.Any, G]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Tuple2[js.Any, E], js.Tuple2[js.Any, G]]]
+  inline def mapFst[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ js.Tuple2[A, Any], js.Tuple2[B, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapFst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, Any], js.Tuple2[B, Any]]]
+  
+  inline def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ js.Tuple2[Any, E], js.Tuple2[Any, G]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Tuple2[Any, E], js.Tuple2[Any, G]]]
+  
+  inline def mapSnd[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ js.Tuple2[Any, E], js.Tuple2[Any, G]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSnd")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Tuple2[Any, E], js.Tuple2[Any, G]]]
   
   @JSImport("fp-ts/lib/ReadonlyTuple", "readonlyTuple")
   @js.native
   val readonlyTuple: Semigroupoid2[typings.fpTs.readonlyTupleMod.URI] & Bifunctor2[typings.fpTs.readonlyTupleMod.URI] & Comonad2[typings.fpTs.readonlyTupleMod.URI] & Foldable2[typings.fpTs.readonlyTupleMod.URI] & Traversable2[typings.fpTs.readonlyTupleMod.URI] = js.native
   
-  inline def reduce[A, B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): js.Function1[/* fa */ js.Tuple2[A, js.Any], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, js.Any], B]]
+  inline def reduce[A, B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): js.Function1[/* fa */ js.Tuple2[A, Any], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, Any], B]]
   
-  inline def reduceRight[A, B](b: B, f: js.Function2[/* a */ A, /* b */ B, B]): js.Function1[/* fa */ js.Tuple2[A, js.Any], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, js.Any], B]]
+  inline def reduceRight[A, B](b: B, f: js.Function2[/* a */ A, /* b */ B, B]): js.Function1[/* fa */ js.Tuple2[A, Any], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ js.Tuple2[A, Any], B]]
   
   @JSImport("fp-ts/lib/ReadonlyTuple", "sequence")
   @js.native

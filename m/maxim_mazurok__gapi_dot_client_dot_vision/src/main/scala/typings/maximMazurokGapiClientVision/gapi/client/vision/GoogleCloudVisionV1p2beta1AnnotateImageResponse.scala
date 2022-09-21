@@ -73,7 +73,7 @@ object GoogleCloudVisionV1p2beta1AnnotateImageResponse {
     
     inline def setFaceAnnotationsUndefined: Self = StObject.set(x, "faceAnnotations", js.undefined)
     
-    inline def setFaceAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1FaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value :_*))
+    inline def setFaceAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1FaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value*))
     
     inline def setFullTextAnnotation(value: GoogleCloudVisionV1p2beta1TextAnnotation): Self = StObject.set(x, "fullTextAnnotation", value.asInstanceOf[js.Any])
     
@@ -87,25 +87,25 @@ object GoogleCloudVisionV1p2beta1AnnotateImageResponse {
     
     inline def setLabelAnnotationsUndefined: Self = StObject.set(x, "labelAnnotations", js.undefined)
     
-    inline def setLabelAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1EntityAnnotation*): Self = StObject.set(x, "labelAnnotations", js.Array(value :_*))
+    inline def setLabelAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1EntityAnnotation*): Self = StObject.set(x, "labelAnnotations", js.Array(value*))
     
     inline def setLandmarkAnnotations(value: js.Array[GoogleCloudVisionV1p2beta1EntityAnnotation]): Self = StObject.set(x, "landmarkAnnotations", value.asInstanceOf[js.Any])
     
     inline def setLandmarkAnnotationsUndefined: Self = StObject.set(x, "landmarkAnnotations", js.undefined)
     
-    inline def setLandmarkAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1EntityAnnotation*): Self = StObject.set(x, "landmarkAnnotations", js.Array(value :_*))
+    inline def setLandmarkAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1EntityAnnotation*): Self = StObject.set(x, "landmarkAnnotations", js.Array(value*))
     
     inline def setLocalizedObjectAnnotations(value: js.Array[GoogleCloudVisionV1p2beta1LocalizedObjectAnnotation]): Self = StObject.set(x, "localizedObjectAnnotations", value.asInstanceOf[js.Any])
     
     inline def setLocalizedObjectAnnotationsUndefined: Self = StObject.set(x, "localizedObjectAnnotations", js.undefined)
     
-    inline def setLocalizedObjectAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1LocalizedObjectAnnotation*): Self = StObject.set(x, "localizedObjectAnnotations", js.Array(value :_*))
+    inline def setLocalizedObjectAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1LocalizedObjectAnnotation*): Self = StObject.set(x, "localizedObjectAnnotations", js.Array(value*))
     
     inline def setLogoAnnotations(value: js.Array[GoogleCloudVisionV1p2beta1EntityAnnotation]): Self = StObject.set(x, "logoAnnotations", value.asInstanceOf[js.Any])
     
     inline def setLogoAnnotationsUndefined: Self = StObject.set(x, "logoAnnotations", js.undefined)
     
-    inline def setLogoAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1EntityAnnotation*): Self = StObject.set(x, "logoAnnotations", js.Array(value :_*))
+    inline def setLogoAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1EntityAnnotation*): Self = StObject.set(x, "logoAnnotations", js.Array(value*))
     
     inline def setProductSearchResults(value: GoogleCloudVisionV1p2beta1ProductSearchResults): Self = StObject.set(x, "productSearchResults", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object GoogleCloudVisionV1p2beta1AnnotateImageResponse {
     
     inline def setTextAnnotationsUndefined: Self = StObject.set(x, "textAnnotations", js.undefined)
     
-    inline def setTextAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1EntityAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value :_*))
+    inline def setTextAnnotationsVarargs(value: GoogleCloudVisionV1p2beta1EntityAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value*))
     
     inline def setWebDetection(value: GoogleCloudVisionV1p2beta1WebDetection): Self = StObject.set(x, "webDetection", value.asInstanceOf[js.Any])
     

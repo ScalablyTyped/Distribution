@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.AlignContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AlignContentProps extends StObject {
   
-  val alignContent: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any
-    ]
-  ] = js.undefined
+  val alignContent: js.UndefOr[ResponsiveValue[AlignContent]] = js.undefined
 }
 object AlignContentProps {
   
@@ -21,16 +18,10 @@ object AlignContentProps {
   
   extension [Self <: AlignContentProps](x: Self) {
     
-    inline def setAlignContent(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any
-        ]
-    ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+    inline def setAlignContent(value: ResponsiveValue[AlignContent]): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
-    inline def setAlignContentVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any)*
-    ): Self = StObject.set(x, "alignContent", js.Array(value :_*))
+    inline def setAlignContentVarargs(value: AlignContent*): Self = StObject.set(x, "alignContent", js.Array(value*))
   }
 }

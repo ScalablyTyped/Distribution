@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AccountRuleCondition")
 @js.native
-/* private */ class AccountRuleCondition ()
+/* private */ open class AccountRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.AccountRuleCondition {
   
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotAccountRuleCondition_typekey: typings.activexOutlook.Outlook.AccountRuleCondition = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

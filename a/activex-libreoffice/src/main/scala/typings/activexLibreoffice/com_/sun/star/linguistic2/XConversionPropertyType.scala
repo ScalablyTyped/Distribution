@@ -43,7 +43,7 @@ object XConversionPropertyType {
   inline def apply(
     acquire: () => Unit,
     getPropertyType: (String, String) => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPropertyType: (String, String, Double) => Unit
   ): XConversionPropertyType = {

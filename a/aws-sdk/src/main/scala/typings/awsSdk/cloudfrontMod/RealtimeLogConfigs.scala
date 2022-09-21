@@ -46,7 +46,7 @@ object RealtimeLogConfigs {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: RealtimeLogConfig*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: RealtimeLogConfig*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

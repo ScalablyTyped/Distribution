@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Container message for hashes of byte content of files, used in
-  * SourceProvenance messages to verify integrity of source input to the build.
-  */
 trait SchemaFileHashes extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaFileHashes {
     
     inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
-    inline def setFileHashVarargs(value: SchemaHash*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
+    inline def setFileHashVarargs(value: SchemaHash*): Self = StObject.set(x, "fileHash", js.Array(value*))
   }
 }

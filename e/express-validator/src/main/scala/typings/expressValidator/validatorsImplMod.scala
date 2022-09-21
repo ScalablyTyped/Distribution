@@ -11,23 +11,23 @@ object validatorsImplMod {
   
   @JSImport("express-validator/src/chain/validators-impl", "ValidatorsImpl")
   @js.native
-  class ValidatorsImpl[Chain] protected ()
+  open class ValidatorsImpl[Chain] protected ()
     extends StObject
        with Validators[Chain] {
     def this(builder: ContextBuilder, chain: Chain) = this()
     
-    /* private */ var addItem: js.Any = js.native
+    /* private */ var addItem: Any = js.native
     
-    /* private */ var addStandardValidation: js.Any = js.native
+    /* private */ var addStandardValidation: Any = js.native
     
-    /* private */ val builder: js.Any = js.native
+    /* private */ val builder: Any = js.native
     
-    /* private */ val chain: js.Any = js.native
+    /* private */ val chain: Any = js.native
     
     def isByteLength(options: MinMaxOptions): Chain = js.native
     
-    /* private */ var lastValidator: js.Any = js.native
+    /* private */ var lastValidator: Any = js.native
     
-    /* private */ var negateNext: js.Any = js.native
+    /* private */ var negateNext: Any = js.native
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRecurrenceRange")
 @js.native
-class ASPxClientRecurrenceRange ()
+open class ASPxClientRecurrenceRange ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRecurrenceRange {
   

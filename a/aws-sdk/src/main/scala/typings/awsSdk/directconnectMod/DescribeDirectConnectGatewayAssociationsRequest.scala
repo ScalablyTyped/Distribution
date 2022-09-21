@@ -32,7 +32,7 @@ trait DescribeDirectConnectGatewayAssociationsRequest extends StObject {
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The ID of the virtual private gateway.
+    * The ID of the virtual private gateway or transit gateway.
     */
   var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
 }

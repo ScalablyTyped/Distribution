@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.TimeSigNote")
 @js.native
-class TimeSigNote protected ()
+open class TimeSigNote protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.TimeSigNote {
   def this(timeSpec: String, customPadding: Double) = this()

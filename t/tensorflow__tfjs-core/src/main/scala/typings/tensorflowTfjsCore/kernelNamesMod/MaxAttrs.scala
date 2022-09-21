@@ -23,6 +23,6 @@ object MaxAttrs {
     
     inline def setReductionIndices(value: Double | js.Array[Double]): Self = StObject.set(x, "reductionIndices", value.asInstanceOf[js.Any])
     
-    inline def setReductionIndicesVarargs(value: Double*): Self = StObject.set(x, "reductionIndices", js.Array(value :_*))
+    inline def setReductionIndicesVarargs(value: Double*): Self = StObject.set(x, "reductionIndices", js.Array(value*))
   }
 }

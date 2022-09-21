@@ -10,10 +10,10 @@ The lodash method `_.fill` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.fill |
 | Keywords           | lodash-modularized, fill |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 1306103 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 44525.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

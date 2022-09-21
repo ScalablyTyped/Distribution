@@ -5,6 +5,7 @@ import typings.ctrlTinycolor.anon.NumberifyHSVA
 import typings.ctrlTinycolor.anon.NumberifyRGBA
 import typings.ctrlTinycolor.anon.PartialTinyColorOptions
 import typings.ctrlTinycolor.ctrlTinycolorBooleans.`false`
+import typings.ctrlTinycolor.ctrlTinycolorStrings.name
 import typings.ctrlTinycolor.interfacesMod.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +19,7 @@ object distMod {
   
   @JSImport("@ctrl/tinycolor/dist", "TinyColor")
   @js.native
-  class TinyColor_ ()
+  open class TinyColor_ ()
     extends StObject
        with _ColorInput {
     def this(color: ColorInput) = this()
@@ -122,6 +123,11 @@ object distMod {
     def monochromatic(): js.Array[TinyColor_] = js.native
     def monochromatic(results: Double): js.Array[TinyColor_] = js.native
     
+    /**
+      * Compute how the color would appear on a background
+      */
+    def onBackground(background: ColorInput): TinyColor_ = js.native
+    
     /** input passed into the constructer used to create the tinycolor instance */
     var originalInput: ColorInput = js.native
     
@@ -149,9 +155,9 @@ object distMod {
       *
       * @param alpha - The new alpha value. The accepted range is 0-1.
       */
-    def setAlpha(): TinyColor_ = js.native
-    def setAlpha(alpha: String): TinyColor_ = js.native
-    def setAlpha(alpha: Double): TinyColor_ = js.native
+    def setAlpha(): this.type = js.native
+    def setAlpha(alpha: String): this.type = js.native
+    def setAlpha(alpha: Double): this.type = js.native
     
     /**
       * Mix the color with pure black, from 0 to 100.
@@ -260,7 +266,14 @@ object distMod {
       */
     def toRgbString(): String = js.native
     
-    def toString(format: ColorFormats): String | `false` = js.native
+    /**
+      * String representation of the color.
+      *
+      * @param format - The format to be used when displaying the string representation.
+      */
+    def toString[T /* <: name */](format: T): Boolean | String = js.native
+    @JSName("toString")
+    def toString_T_ColorFormats_String[T /* <: ColorFormats */](format: T): String = js.native
     
     /**
       * Alias for `polyad(3)`

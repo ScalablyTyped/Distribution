@@ -17,7 +17,6 @@ import typings.cucumberMessages.cucumberMessagesStrings.scenario
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GherkinDocument.
   * @param [properties] Properties to set
   */
-class GherkinDocument ()
+open class GherkinDocument ()
   extends StObject
      with IGherkinDocument {
   def this(properties: IGherkinDocument) = this()
@@ -49,7 +48,7 @@ class GherkinDocument ()
     * Converts this GherkinDocument to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /**
     * The [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
@@ -71,7 +70,7 @@ object GherkinDocument {
     * Constructs a new Comment.
     * @param [properties] Properties to set
     */
-  class Comment ()
+  open class Comment ()
     extends StObject
        with IComment {
     def this(properties: IComment) = this()
@@ -84,7 +83,7 @@ object GherkinDocument {
       * Converts this Comment to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object Comment {
     
@@ -101,6 +100,8 @@ object GherkinDocument {
     inline def create(): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.std.Comment]
     inline def create(properties: IComment): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.std.Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Comment]
     /**
       * Decodes a Comment message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -112,9 +113,8 @@ object GherkinDocument {
     /* static member */
     inline def decode(reader: Reader): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
     inline def decode(reader: Reader, length: Double): typings.std.Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Comment]
-    inline def decode(reader: Uint8Array): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
-    inline def decode(reader: Uint8Array, length: Double): typings.std.Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Comment]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
     /**
       * Decodes a Comment message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -124,7 +124,6 @@ object GherkinDocument {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
-    inline def decodeDelimited(reader: Uint8Array): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
     
     /**
       * Encodes the specified Comment message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Comment.verify|verify} messages.
@@ -152,7 +151,7 @@ object GherkinDocument {
       * @returns Comment
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
     
     /**
       * Creates a plain object from a Comment message. Also converts values to other types if specified.
@@ -161,8 +160,8 @@ object GherkinDocument {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.std.Comment): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.std.Comment, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.std.Comment): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.std.Comment, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Comment message.
@@ -170,7 +169,7 @@ object GherkinDocument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** The top level node in the AST */
@@ -180,7 +179,7 @@ object GherkinDocument {
     * Constructs a new Feature.
     * @param [properties] Properties to set
     */
-  class Feature ()
+  open class Feature ()
     extends StObject
        with IFeature {
     def this(properties: IFeature) = this()
@@ -213,7 +212,7 @@ object GherkinDocument {
       * Converts this Feature to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object Feature {
     
@@ -228,7 +227,7 @@ object GherkinDocument {
       * Constructs a new Background.
       * @param [properties] Properties to set
       */
-    class Background ()
+    open class Background ()
       extends StObject
          with IBackground {
       def this(properties: IBackground) = this()
@@ -253,7 +252,7 @@ object GherkinDocument {
         * Converts this Background to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Background {
       
@@ -270,6 +269,8 @@ object GherkinDocument {
       inline def create(): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Background]
       inline def create(properties: IBackground): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Background]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Background = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Background]
       /**
         * Decodes a Background message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -281,9 +282,8 @@ object GherkinDocument {
       /* static member */
       inline def decode(reader: Reader): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
       inline def decode(reader: Reader, length: Double): Background = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Background]
-      inline def decode(reader: Uint8Array): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
-      inline def decode(reader: Uint8Array, length: Double): Background = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Background]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
       /**
         * Decodes a Background message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -293,7 +293,6 @@ object GherkinDocument {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
-      inline def decodeDelimited(reader: Uint8Array): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
       
       /**
         * Encodes the specified Background message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Background.verify|verify} messages.
@@ -321,7 +320,7 @@ object GherkinDocument {
         * @returns Background
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Background]
+      inline def fromObject(`object`: StringDictionary[Any]): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Background]
       
       /**
         * Creates a plain object from a Background message. Also converts values to other types if specified.
@@ -330,8 +329,8 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Background): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Background, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Background): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Background, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Background message.
@@ -339,7 +338,7 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** A child node of a `Feature` node */
@@ -349,7 +348,7 @@ object GherkinDocument {
       * Constructs a new FeatureChild.
       * @param [properties] Properties to set
       */
-    class FeatureChild ()
+    open class FeatureChild ()
       extends StObject
          with IFeatureChild {
       def this(properties: IFeatureChild) = this()
@@ -358,7 +357,7 @@ object GherkinDocument {
         * Converts this FeatureChild to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
       
       /** FeatureChild value. */
       var value: js.UndefOr[rule | background | scenario] = js.native
@@ -376,7 +375,7 @@ object GherkinDocument {
         * Constructs a new Rule.
         * @param [properties] Properties to set
         */
-      class Rule ()
+      open class Rule ()
         extends StObject
            with IRule {
         def this(properties: IRule) = this()
@@ -401,7 +400,7 @@ object GherkinDocument {
           * Converts this Rule to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object Rule {
         
@@ -418,6 +417,8 @@ object GherkinDocument {
         inline def create(): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Rule]
         inline def create(properties: IRule): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Rule]
         
+        inline def decode(reader: js.typedarray.Uint8Array): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Rule]
         /**
           * Decodes a Rule message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -429,9 +430,8 @@ object GherkinDocument {
         /* static member */
         inline def decode(reader: Reader): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
         inline def decode(reader: Reader, length: Double): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Rule]
-        inline def decode(reader: Uint8Array): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
-        inline def decode(reader: Uint8Array, length: Double): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Rule]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
         /**
           * Decodes a Rule message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -441,7 +441,6 @@ object GherkinDocument {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
-        inline def decodeDelimited(reader: Uint8Array): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
         
         /**
           * Encodes the specified Rule message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.verify|verify} messages.
@@ -469,7 +468,7 @@ object GherkinDocument {
           * @returns Rule
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Rule]
+        inline def fromObject(`object`: StringDictionary[Any]): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Rule]
         
         /**
           * Creates a plain object from a Rule message. Also converts values to other types if specified.
@@ -478,8 +477,8 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: Rule): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: Rule, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Rule): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: Rule, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a Rule message.
@@ -487,7 +486,7 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /** Represents a RuleChild. */
@@ -497,7 +496,7 @@ object GherkinDocument {
         * Constructs a new RuleChild.
         * @param [properties] Properties to set
         */
-      class RuleChild ()
+      open class RuleChild ()
         extends StObject
            with IRuleChild {
         def this(properties: IRuleChild) = this()
@@ -506,7 +505,7 @@ object GherkinDocument {
           * Converts this RuleChild to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
         
         /** RuleChild value. */
         var value: js.UndefOr[background | scenario] = js.native
@@ -526,6 +525,8 @@ object GherkinDocument {
         inline def create(): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RuleChild]
         inline def create(properties: IRuleChild): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
         
+        inline def decode(reader: js.typedarray.Uint8Array): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): RuleChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuleChild]
         /**
           * Decodes a RuleChild message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -537,9 +538,8 @@ object GherkinDocument {
         /* static member */
         inline def decode(reader: Reader): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
         inline def decode(reader: Reader, length: Double): RuleChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuleChild]
-        inline def decode(reader: Uint8Array): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
-        inline def decode(reader: Uint8Array, length: Double): RuleChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuleChild]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
         /**
           * Decodes a RuleChild message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -549,7 +549,6 @@ object GherkinDocument {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
-        inline def decodeDelimited(reader: Uint8Array): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
         
         /**
           * Encodes the specified RuleChild message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.verify|verify} messages.
@@ -577,7 +576,7 @@ object GherkinDocument {
           * @returns RuleChild
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
+        inline def fromObject(`object`: StringDictionary[Any]): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
         
         /**
           * Creates a plain object from a RuleChild message. Also converts values to other types if specified.
@@ -586,8 +585,8 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: RuleChild): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: RuleChild, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: RuleChild): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: RuleChild, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a RuleChild message.
@@ -595,7 +594,7 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -607,6 +606,8 @@ object GherkinDocument {
       inline def create(): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FeatureChild]
       inline def create(properties: IFeatureChild): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
       
+      inline def decode(reader: js.typedarray.Uint8Array): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): FeatureChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FeatureChild]
       /**
         * Decodes a FeatureChild message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -618,9 +619,8 @@ object GherkinDocument {
       /* static member */
       inline def decode(reader: Reader): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
       inline def decode(reader: Reader, length: Double): FeatureChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FeatureChild]
-      inline def decode(reader: Uint8Array): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
-      inline def decode(reader: Uint8Array, length: Double): FeatureChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FeatureChild]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
       /**
         * Decodes a FeatureChild message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -630,7 +630,6 @@ object GherkinDocument {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
-      inline def decodeDelimited(reader: Uint8Array): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
       
       /**
         * Encodes the specified FeatureChild message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.verify|verify} messages.
@@ -658,7 +657,7 @@ object GherkinDocument {
         * @returns FeatureChild
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
+      inline def fromObject(`object`: StringDictionary[Any]): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
       
       /**
         * Creates a plain object from a FeatureChild message. Also converts values to other types if specified.
@@ -667,8 +666,8 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: FeatureChild): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: FeatureChild, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: FeatureChild): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: FeatureChild, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a FeatureChild message.
@@ -676,7 +675,7 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a Rule. */
       trait IRule extends StObject {
@@ -711,7 +710,7 @@ object GherkinDocument {
           
           inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
           
-          inline def setChildrenVarargs(value: IRuleChild*): Self = StObject.set(x, "children", js.Array(value :_*))
+          inline def setChildrenVarargs(value: IRuleChild*): Self = StObject.set(x, "children", js.Array(value*))
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
@@ -779,7 +778,7 @@ object GherkinDocument {
       * Constructs a new Scenario.
       * @param [properties] Properties to set
       */
-    class Scenario ()
+    open class Scenario ()
       extends StObject
          with IScenario {
       def this(properties: IScenario) = this()
@@ -816,7 +815,7 @@ object GherkinDocument {
         * Converts this Scenario to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Scenario {
       
@@ -831,7 +830,7 @@ object GherkinDocument {
         * Constructs a new Examples.
         * @param [properties] Properties to set
         */
-      class Examples ()
+      open class Examples ()
         extends StObject
            with IExamples {
         def this(properties: IExamples) = this()
@@ -860,7 +859,7 @@ object GherkinDocument {
           * Converts this Examples to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object Examples {
         
@@ -877,6 +876,8 @@ object GherkinDocument {
         inline def create(): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Examples]
         inline def create(properties: IExamples): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Examples]
         
+        inline def decode(reader: js.typedarray.Uint8Array): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): Examples = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Examples]
         /**
           * Decodes an Examples message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -888,9 +889,8 @@ object GherkinDocument {
         /* static member */
         inline def decode(reader: Reader): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
         inline def decode(reader: Reader, length: Double): Examples = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Examples]
-        inline def decode(reader: Uint8Array): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
-        inline def decode(reader: Uint8Array, length: Double): Examples = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Examples]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
         /**
           * Decodes an Examples message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -900,7 +900,6 @@ object GherkinDocument {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
-        inline def decodeDelimited(reader: Uint8Array): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
         
         /**
           * Encodes the specified Examples message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.verify|verify} messages.
@@ -928,7 +927,7 @@ object GherkinDocument {
           * @returns Examples
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Examples]
+        inline def fromObject(`object`: StringDictionary[Any]): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Examples]
         
         /**
           * Creates a plain object from an Examples message. Also converts values to other types if specified.
@@ -937,8 +936,8 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: Examples): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: Examples, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: Examples): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: Examples, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies an Examples message.
@@ -946,7 +945,7 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -958,6 +957,8 @@ object GherkinDocument {
       inline def create(): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Scenario]
       inline def create(properties: IScenario): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Scenario]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Scenario = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Scenario]
       /**
         * Decodes a Scenario message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -969,9 +970,8 @@ object GherkinDocument {
       /* static member */
       inline def decode(reader: Reader): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
       inline def decode(reader: Reader, length: Double): Scenario = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Scenario]
-      inline def decode(reader: Uint8Array): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
-      inline def decode(reader: Uint8Array, length: Double): Scenario = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Scenario]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
       /**
         * Decodes a Scenario message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -981,7 +981,6 @@ object GherkinDocument {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
-      inline def decodeDelimited(reader: Uint8Array): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
       
       /**
         * Encodes the specified Scenario message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Scenario.verify|verify} messages.
@@ -1009,7 +1008,7 @@ object GherkinDocument {
         * @returns Scenario
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Scenario]
+      inline def fromObject(`object`: StringDictionary[Any]): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Scenario]
       
       /**
         * Creates a plain object from a Scenario message. Also converts values to other types if specified.
@@ -1018,8 +1017,8 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Scenario): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Scenario, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Scenario): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Scenario, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Scenario message.
@@ -1027,7 +1026,7 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of an Examples. */
       trait IExamples extends StObject {
@@ -1092,7 +1091,7 @@ object GherkinDocument {
           
           inline def setTableBodyUndefined: Self = StObject.set(x, "tableBody", js.undefined)
           
-          inline def setTableBodyVarargs(value: ITableRow*): Self = StObject.set(x, "tableBody", js.Array(value :_*))
+          inline def setTableBodyVarargs(value: ITableRow*): Self = StObject.set(x, "tableBody", js.Array(value*))
           
           inline def setTableHeader(value: ITableRow): Self = StObject.set(x, "tableHeader", value.asInstanceOf[js.Any])
           
@@ -1106,7 +1105,7 @@ object GherkinDocument {
           
           inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
           
-          inline def setTagsVarargs(value: ITag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+          inline def setTagsVarargs(value: ITag*): Self = StObject.set(x, "tags", js.Array(value*))
         }
       }
     }
@@ -1118,7 +1117,7 @@ object GherkinDocument {
       * Constructs a new Step.
       * @param [properties] Properties to set
       */
-    class Step ()
+    open class Step ()
       extends StObject
          with IStep {
       def this(properties: IStep) = this()
@@ -1142,7 +1141,7 @@ object GherkinDocument {
         * Converts this Step to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Step {
       
@@ -1157,7 +1156,7 @@ object GherkinDocument {
         * Constructs a new DataTable.
         * @param [properties] Properties to set
         */
-      class DataTable ()
+      open class DataTable ()
         extends StObject
            with IDataTable {
         def this(properties: IDataTable) = this()
@@ -1170,7 +1169,7 @@ object GherkinDocument {
           * Converts this DataTable to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object DataTable {
         
@@ -1187,6 +1186,8 @@ object GherkinDocument {
         inline def create(): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DataTable]
         inline def create(properties: IDataTable): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DataTable]
         
+        inline def decode(reader: js.typedarray.Uint8Array): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DataTable]
         /**
           * Decodes a DataTable message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -1198,9 +1199,8 @@ object GherkinDocument {
         /* static member */
         inline def decode(reader: Reader): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
         inline def decode(reader: Reader, length: Double): DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DataTable]
-        inline def decode(reader: Uint8Array): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
-        inline def decode(reader: Uint8Array, length: Double): DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DataTable]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
         /**
           * Decodes a DataTable message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -1210,7 +1210,6 @@ object GherkinDocument {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
-        inline def decodeDelimited(reader: Uint8Array): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
         
         /**
           * Encodes the specified DataTable message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.verify|verify} messages.
@@ -1238,7 +1237,7 @@ object GherkinDocument {
           * @returns DataTable
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DataTable]
+        inline def fromObject(`object`: StringDictionary[Any]): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DataTable]
         
         /**
           * Creates a plain object from a DataTable message. Also converts values to other types if specified.
@@ -1247,8 +1246,8 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: DataTable): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: DataTable, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: DataTable): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: DataTable, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a DataTable message.
@@ -1256,7 +1255,7 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /** Represents a DocString. */
@@ -1266,7 +1265,7 @@ object GherkinDocument {
         * Constructs a new DocString.
         * @param [properties] Properties to set
         */
-      class DocString ()
+      open class DocString ()
         extends StObject
            with IDocString {
         def this(properties: IDocString) = this()
@@ -1287,7 +1286,7 @@ object GherkinDocument {
           * Converts this DocString to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
       }
       object DocString {
         
@@ -1304,6 +1303,8 @@ object GherkinDocument {
         inline def create(): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DocString]
         inline def create(properties: IDocString): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DocString]
         
+        inline def decode(reader: js.typedarray.Uint8Array): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): DocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DocString]
         /**
           * Decodes a DocString message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -1315,9 +1316,8 @@ object GherkinDocument {
         /* static member */
         inline def decode(reader: Reader): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
         inline def decode(reader: Reader, length: Double): DocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DocString]
-        inline def decode(reader: Uint8Array): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
-        inline def decode(reader: Uint8Array, length: Double): DocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DocString]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
         /**
           * Decodes a DocString message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -1327,7 +1327,6 @@ object GherkinDocument {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
-        inline def decodeDelimited(reader: Uint8Array): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
         
         /**
           * Encodes the specified DocString message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.DocString.verify|verify} messages.
@@ -1355,7 +1354,7 @@ object GherkinDocument {
           * @returns DocString
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DocString]
+        inline def fromObject(`object`: StringDictionary[Any]): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DocString]
         
         /**
           * Creates a plain object from a DocString message. Also converts values to other types if specified.
@@ -1364,8 +1363,8 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: DocString): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: DocString, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: DocString): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: DocString, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a DocString message.
@@ -1373,7 +1372,7 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1385,6 +1384,8 @@ object GherkinDocument {
       inline def create(): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Step]
       inline def create(properties: IStep): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Step]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Step = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Step]
       /**
         * Decodes a Step message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -1396,9 +1397,8 @@ object GherkinDocument {
       /* static member */
       inline def decode(reader: Reader): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
       inline def decode(reader: Reader, length: Double): Step = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Step]
-      inline def decode(reader: Uint8Array): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
-      inline def decode(reader: Uint8Array, length: Double): Step = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Step]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
       /**
         * Decodes a Step message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -1408,7 +1408,6 @@ object GherkinDocument {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
-      inline def decodeDelimited(reader: Uint8Array): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
       
       /**
         * Encodes the specified Step message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.verify|verify} messages.
@@ -1436,7 +1435,7 @@ object GherkinDocument {
         * @returns Step
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Step]
+      inline def fromObject(`object`: StringDictionary[Any]): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Step]
       
       /**
         * Creates a plain object from a Step message. Also converts values to other types if specified.
@@ -1445,8 +1444,8 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Step): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Step, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Step): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Step, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Step message.
@@ -1454,7 +1453,7 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a DataTable. */
       trait IDataTable extends StObject {
@@ -1486,7 +1485,7 @@ object GherkinDocument {
           
           inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
           
-          inline def setRowsVarargs(value: ITableRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+          inline def setRowsVarargs(value: ITableRow*): Self = StObject.set(x, "rows", js.Array(value*))
         }
       }
       
@@ -1548,7 +1547,7 @@ object GherkinDocument {
       * Constructs a new TableRow.
       * @param [properties] Properties to set
       */
-    class TableRow ()
+    open class TableRow ()
       extends StObject
          with ITableRow {
       def this(properties: ITableRow) = this()
@@ -1565,7 +1564,7 @@ object GherkinDocument {
         * Converts this TableRow to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object TableRow {
       
@@ -1580,7 +1579,7 @@ object GherkinDocument {
         * Constructs a new TableCell.
         * @param [properties] Properties to set
         */
-      class TableCell ()
+      open class TableCell ()
         extends StObject
            with ITableCell {
         def this(properties: ITableCell) = this()
@@ -1589,7 +1588,7 @@ object GherkinDocument {
           * Converts this TableCell to JSON.
           * @returns JSON object
           */
-        def toJSON(): StringDictionary[js.Any] = js.native
+        def toJSON(): StringDictionary[Any] = js.native
         
         /** TableCell value. */
         @JSName("value")
@@ -1610,6 +1609,8 @@ object GherkinDocument {
         inline def create(): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCell]
         inline def create(properties: ITableCell): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCell]
         
+        inline def decode(reader: js.typedarray.Uint8Array): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
+        inline def decode(reader: js.typedarray.Uint8Array, length: Double): TableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCell]
         /**
           * Decodes a TableCell message from the specified reader or buffer.
           * @param reader Reader or buffer to decode from
@@ -1621,9 +1622,8 @@ object GherkinDocument {
         /* static member */
         inline def decode(reader: Reader): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
         inline def decode(reader: Reader, length: Double): TableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCell]
-        inline def decode(reader: Uint8Array): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
-        inline def decode(reader: Uint8Array, length: Double): TableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCell]
         
+        inline def decodeDelimited(reader: js.typedarray.Uint8Array): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
         /**
           * Decodes a TableCell message from the specified reader or buffer, length delimited.
           * @param reader Reader or buffer to decode from
@@ -1633,7 +1633,6 @@ object GherkinDocument {
           */
         /* static member */
         inline def decodeDelimited(reader: Reader): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
-        inline def decodeDelimited(reader: Uint8Array): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
         
         /**
           * Encodes the specified TableCell message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.verify|verify} messages.
@@ -1661,7 +1660,7 @@ object GherkinDocument {
           * @returns TableCell
           */
         /* static member */
-        inline def fromObject(`object`: StringDictionary[js.Any]): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCell]
+        inline def fromObject(`object`: StringDictionary[Any]): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCell]
         
         /**
           * Creates a plain object from a TableCell message. Also converts values to other types if specified.
@@ -1670,8 +1669,8 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        inline def toObject(message: TableCell): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-        inline def toObject(message: TableCell, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+        inline def toObject(message: TableCell): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+        inline def toObject(message: TableCell, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
         
         /**
           * Verifies a TableCell message.
@@ -1679,7 +1678,7 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+        inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1691,6 +1690,8 @@ object GherkinDocument {
       inline def create(): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableRow]
       inline def create(properties: ITableRow): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableRow]
       
+      inline def decode(reader: js.typedarray.Uint8Array): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): TableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableRow]
       /**
         * Decodes a TableRow message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -1702,9 +1703,8 @@ object GherkinDocument {
       /* static member */
       inline def decode(reader: Reader): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
       inline def decode(reader: Reader, length: Double): TableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableRow]
-      inline def decode(reader: Uint8Array): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
-      inline def decode(reader: Uint8Array, length: Double): TableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableRow]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
       /**
         * Decodes a TableRow message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -1714,7 +1714,6 @@ object GherkinDocument {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
-      inline def decodeDelimited(reader: Uint8Array): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
       
       /**
         * Encodes the specified TableRow message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.TableRow.verify|verify} messages.
@@ -1742,7 +1741,7 @@ object GherkinDocument {
         * @returns TableRow
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableRow]
+      inline def fromObject(`object`: StringDictionary[Any]): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableRow]
       
       /**
         * Creates a plain object from a TableRow message. Also converts values to other types if specified.
@@ -1751,8 +1750,8 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: TableRow): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: TableRow, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: TableRow): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: TableRow, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a TableRow message.
@@ -1760,7 +1759,7 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a TableCell. */
       trait ITableCell extends StObject {
@@ -1802,7 +1801,7 @@ object GherkinDocument {
       * Constructs a new Tag.
       * @param [properties] Properties to set
       */
-    class Tag ()
+    open class Tag ()
       extends StObject
          with ITag {
       def this(properties: ITag) = this()
@@ -1819,7 +1818,7 @@ object GherkinDocument {
         * Converts this Tag to JSON.
         * @returns JSON object
         */
-      def toJSON(): StringDictionary[js.Any] = js.native
+      def toJSON(): StringDictionary[Any] = js.native
     }
     object Tag {
       
@@ -1836,6 +1835,8 @@ object GherkinDocument {
       inline def create(): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Tag]
       inline def create(properties: ITag): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Tag]
       
+      inline def decode(reader: js.typedarray.Uint8Array): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Tag]
       /**
         * Decodes a Tag message from the specified reader or buffer.
         * @param reader Reader or buffer to decode from
@@ -1847,9 +1848,8 @@ object GherkinDocument {
       /* static member */
       inline def decode(reader: Reader): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
       inline def decode(reader: Reader, length: Double): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Tag]
-      inline def decode(reader: Uint8Array): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
-      inline def decode(reader: Uint8Array, length: Double): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Tag]
       
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
       /**
         * Decodes a Tag message from the specified reader or buffer, length delimited.
         * @param reader Reader or buffer to decode from
@@ -1859,7 +1859,6 @@ object GherkinDocument {
         */
       /* static member */
       inline def decodeDelimited(reader: Reader): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
-      inline def decodeDelimited(reader: Uint8Array): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
       
       /**
         * Encodes the specified Tag message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Tag.verify|verify} messages.
@@ -1887,7 +1886,7 @@ object GherkinDocument {
         * @returns Tag
         */
       /* static member */
-      inline def fromObject(`object`: StringDictionary[js.Any]): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Tag]
+      inline def fromObject(`object`: StringDictionary[Any]): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Tag]
       
       /**
         * Creates a plain object from a Tag message. Also converts values to other types if specified.
@@ -1896,8 +1895,8 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      inline def toObject(message: Tag): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-      inline def toObject(message: Tag, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+      inline def toObject(message: Tag): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: Tag, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
       
       /**
         * Verifies a Tag message.
@@ -1905,7 +1904,7 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /**
@@ -1917,6 +1916,8 @@ object GherkinDocument {
     inline def create(): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Feature]
     inline def create(properties: IFeature): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Feature]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Feature = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Feature]
     /**
       * Decodes a Feature message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -1928,9 +1929,8 @@ object GherkinDocument {
     /* static member */
     inline def decode(reader: Reader): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
     inline def decode(reader: Reader, length: Double): Feature = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Feature]
-    inline def decode(reader: Uint8Array): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
-    inline def decode(reader: Uint8Array, length: Double): Feature = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Feature]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
     /**
       * Decodes a Feature message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -1940,7 +1940,6 @@ object GherkinDocument {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
-    inline def decodeDelimited(reader: Uint8Array): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
     
     /**
       * Encodes the specified Feature message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.verify|verify} messages.
@@ -1968,7 +1967,7 @@ object GherkinDocument {
       * @returns Feature
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Feature]
+    inline def fromObject(`object`: StringDictionary[Any]): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Feature]
     
     /**
       * Creates a plain object from a Feature message. Also converts values to other types if specified.
@@ -1977,8 +1976,8 @@ object GherkinDocument {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Feature): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Feature, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Feature): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Feature, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Feature message.
@@ -1986,7 +1985,7 @@ object GherkinDocument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a Background. */
     trait IBackground extends StObject {
@@ -2045,7 +2044,7 @@ object GherkinDocument {
         
         inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
         
-        inline def setStepsVarargs(value: IStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+        inline def setStepsVarargs(value: IStep*): Self = StObject.set(x, "steps", js.Array(value*))
       }
     }
     
@@ -2138,7 +2137,7 @@ object GherkinDocument {
         
         inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
         
-        inline def setExamplesVarargs(value: IExamples*): Self = StObject.set(x, "examples", js.Array(value :_*))
+        inline def setExamplesVarargs(value: IExamples*): Self = StObject.set(x, "examples", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -2170,7 +2169,7 @@ object GherkinDocument {
         
         inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
         
-        inline def setStepsVarargs(value: IStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+        inline def setStepsVarargs(value: IStep*): Self = StObject.set(x, "steps", js.Array(value*))
         
         inline def setTags(value: js.Array[ITag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
         
@@ -2178,7 +2177,7 @@ object GherkinDocument {
         
         inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        inline def setTagsVarargs(value: ITag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: ITag*): Self = StObject.set(x, "tags", js.Array(value*))
       }
     }
     
@@ -2277,7 +2276,7 @@ object GherkinDocument {
         
         inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
         
-        inline def setCellsVarargs(value: ITableCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+        inline def setCellsVarargs(value: ITableCell*): Self = StObject.set(x, "cells", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -2344,6 +2343,8 @@ object GherkinDocument {
   inline def create(): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GherkinDocument]
   inline def create(properties: IGherkinDocument): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
   
+  inline def decode(reader: js.typedarray.Uint8Array): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): GherkinDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GherkinDocument]
   /**
     * Decodes a GherkinDocument message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -2355,9 +2356,8 @@ object GherkinDocument {
   /* static member */
   inline def decode(reader: Reader): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
   inline def decode(reader: Reader, length: Double): GherkinDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GherkinDocument]
-  inline def decode(reader: Uint8Array): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
-  inline def decode(reader: Uint8Array, length: Double): GherkinDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GherkinDocument]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
   /**
     * Decodes a GherkinDocument message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -2367,7 +2367,6 @@ object GherkinDocument {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
-  inline def decodeDelimited(reader: Uint8Array): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
   
   /**
     * Encodes the specified GherkinDocument message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.verify|verify} messages.
@@ -2395,7 +2394,7 @@ object GherkinDocument {
     * @returns GherkinDocument
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
+  inline def fromObject(`object`: StringDictionary[Any]): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
   
   /**
     * Creates a plain object from a GherkinDocument message. Also converts values to other types if specified.
@@ -2404,8 +2403,8 @@ object GherkinDocument {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: GherkinDocument): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: GherkinDocument, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GherkinDocument): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: GherkinDocument, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a GherkinDocument message.
@@ -2413,7 +2412,7 @@ object GherkinDocument {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a Comment. */
   trait IComment extends StObject {
@@ -2486,7 +2485,7 @@ object GherkinDocument {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: IFeatureChild*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: IFeatureChild*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -2524,7 +2523,7 @@ object GherkinDocument {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: ITag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: ITag*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
 }

@@ -5,7 +5,6 @@ import typings.expressServeStaticCore.mod.Handler
 import typings.loopback.anon.DataSource
 import typings.loopback.anon.Enabled
 import typings.loopback.anon.TypeofModel
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,14 +41,14 @@ trait LoopBackApplication
     * @param {any} connector Connector object as returne
     *    by `require('loopback-connector-{name}')`
     */
-  def connector(name: String, connector: js.Any): Unit = js.native
+  def connector(name: String, connector: Any): Unit = js.native
   
   /**
     * Define a DataSource
     * @param {string} name The data source name
     * @param {any} config The data source confi
     */
-  def dataSource(name: String, config: js.Any): Unit = js.native
+  def dataSource(name: String, config: Any): Unit = js.native
   
   /**
     * Register (new) middleware phases.
@@ -78,8 +77,8 @@ trait LoopBackApplication
     * @returns {any} this (fluent API
     * @header app.defineMiddlewarePhases(nameOrArray
     */
-  def defineMiddlewarePhases(nameOrArray: String): js.Any = js.native
-  def defineMiddlewarePhases(nameOrArray: js.Array[String]): js.Any = js.native
+  def defineMiddlewarePhases(nameOrArray: String): Any = js.native
+  def defineMiddlewarePhases(nameOrArray: js.Array[String]): Any = js.native
   
   /**
     *  Enable app wide authentication
@@ -99,14 +98,14 @@ trait LoopBackApplication
     * @returns {any} this (fluent API
     * @header app.middleware(name, handler
     */
-  def middleware(name: String): js.Any = js.native
-  def middleware(name: String, paths: String): js.Any = js.native
-  def middleware(name: String, paths: String, handler: Handler): js.Any = js.native
-  def middleware(name: String, paths: js.Array[js.Any]): js.Any = js.native
-  def middleware(name: String, paths: js.Array[js.Any], handler: Handler): js.Any = js.native
-  def middleware(name: String, paths: Unit, handler: Handler): js.Any = js.native
-  def middleware(name: String, paths: RegExp): js.Any = js.native
-  def middleware(name: String, paths: RegExp, handler: Handler): js.Any = js.native
+  def middleware(name: String): Any = js.native
+  def middleware(name: String, paths: String): Any = js.native
+  def middleware(name: String, paths: String, handler: Handler): Any = js.native
+  def middleware(name: String, paths: js.Array[Any]): Any = js.native
+  def middleware(name: String, paths: js.Array[Any], handler: Handler): Any = js.native
+  def middleware(name: String, paths: js.RegExp): Any = js.native
+  def middleware(name: String, paths: js.RegExp, handler: Handler): Any = js.native
+  def middleware(name: String, paths: Unit, handler: Handler): Any = js.native
   
   /**
     * Register a middleware using a factory function and a JSON config
@@ -135,9 +134,9 @@ trait LoopBackApplication
     * @returns {any} this (fluent API
     * @header app.middlewareFromConfig(factory, config
     */
-  def middlewareFromConfig(factory: js.Function0[Unit], config: Enabled): js.Any = js.native
+  def middlewareFromConfig(factory: js.Function0[Unit], config: Enabled): Any = js.native
   
-  def model(Model: String, config: DataSource): js.Any = js.native
+  def model(Model: String, config: DataSource): Any = js.native
   /**
     * Listen for connections and update the configured port
     * When there are no parameters or there is only one callback parameter,
@@ -184,7 +183,7 @@ trait LoopBackApplication
     * @en
     * @returns {any} the model clas
     */
-  def model(Model: js.Any, config: DataSource): js.Any = js.native
+  def model(Model: Any, config: DataSource): Any = js.native
   
   /**
     * Get the models exported by the app. Returns only models defined using `app.model()
@@ -221,13 +220,13 @@ trait LoopBackApplication
     * ``
     *  @returns {Array} Array of model classes
     */
-  def models(): js.Array[TypeofModel & (Instantiable1[/* data */ js.Any, Model])] = js.native
+  def models(): js.Array[TypeofModel & (Instantiable1[/* data */ Any, Model])] = js.native
   
   /**
     * Get all remote objects.
     * @returns {any} [Remote objects](apidocs.strongloop.com/strong-remoting/#remoteObjectsoptions).
     */
-  def remoteObjects(): js.Any = js.native
+  def remoteObjects(): Any = js.native
   
   /**
     * Lazily load a set of [remote objects](apidocs.strongloop.com/strong-remoting/#remoteObjectsoptions).
@@ -235,7 +234,7 @@ trait LoopBackApplication
     * *NOTE:** Calling `app.remotes()` more than once returns only a single set of remote objects.
     * @returns {any} remoteObjects
     */
-  def remotes(): js.Any = js.native
+  def remotes(): Any = js.native
   
   def start(): Unit = js.native
 }

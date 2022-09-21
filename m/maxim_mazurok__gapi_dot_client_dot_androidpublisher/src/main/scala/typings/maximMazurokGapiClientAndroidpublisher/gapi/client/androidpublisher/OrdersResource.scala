@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OrdersResource extends StObject {
   
-  /** Refund a user's subscription or in-app purchase order. */
+  /** Refunds a user's subscription or in-app purchase order. Orders older than 1 year cannot be refunded. */
   def refund(): Request[Unit] = js.native
   def refund(request: OrderId): Request[Unit] = js.native
 }

@@ -144,7 +144,7 @@ object IBNFDef {
     
     inline def setQBnfLiteralUndefined: Self = StObject.set(x, "qBnfLiteral", js.undefined)
     
-    inline def setQBnfVarargs(value: Double*): Self = StObject.set(x, "qBnf", js.Array(value :_*))
+    inline def setQBnfVarargs(value: Double*): Self = StObject.set(x, "qBnf", js.Array(value*))
     
     inline def setQControlStatement(value: Boolean): Self = StObject.set(x, "qControlStatement", value.asInstanceOf[js.Any])
     

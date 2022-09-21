@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Activation
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait AppointmentsProviderShowTimeFrameActivatedEventArgs extends StObject {
   var splashScreen: SplashScreen
   
   /** Gets the starting date and time of the time frame to be shown. */
-  var timeToShow: Date
+  var timeToShow: js.Date
   
   /** Gets the action to be performed by the appointments provider. */
   var verb: String
@@ -33,7 +32,7 @@ object AppointmentsProviderShowTimeFrameActivatedEventArgs {
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen,
-    timeToShow: Date,
+    timeToShow: js.Date,
     verb: String
   ): AppointmentsProviderShowTimeFrameActivatedEventArgs = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], timeToShow = timeToShow.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
@@ -50,7 +49,7 @@ object AppointmentsProviderShowTimeFrameActivatedEventArgs {
     
     inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    inline def setTimeToShow(value: Date): Self = StObject.set(x, "timeToShow", value.asInstanceOf[js.Any])
+    inline def setTimeToShow(value: js.Date): Self = StObject.set(x, "timeToShow", value.asInstanceOf[js.Any])
     
     inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }

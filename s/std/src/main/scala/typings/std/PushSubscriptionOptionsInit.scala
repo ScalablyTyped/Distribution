@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PushSubscriptionOptionsInit extends StObject {
   
+  /* standard dom */
   var applicationServerKey: js.UndefOr[BufferSource | java.lang.String | Null] = js.undefined
   
+  /* standard dom */
   var userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 object PushSubscriptionOptionsInit {

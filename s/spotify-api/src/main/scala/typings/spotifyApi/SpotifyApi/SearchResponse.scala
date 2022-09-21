@@ -5,22 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Search for artists/albums/tracks/playlists
-  * 
-  * GET /v1/search?type=album
+  * Search for artists/albums/tracks/playlists/show/episode
+  *
+  * GET /v1/search
   * https://developer.spotify.com/web-api/search-item/
   */
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.ArtistSearchResponse> */
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.AlbumSearchResponse> */
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.TrackSearchResponse> */
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.PlaylistSearchResponse> */
+/* Inlined parent std.Partial<spotify-api.SpotifyApi.ShowSearchResponse> */
+/* Inlined parent std.Partial<spotify-api.SpotifyApi.EpisodeSearchResponse> */
 trait SearchResponse extends StObject {
   
   var albums: js.UndefOr[PagingObject[AlbumObjectSimplified]] = js.undefined
   
   var artists: js.UndefOr[PagingObject[ArtistObjectFull]] = js.undefined
   
+  var episodes: js.UndefOr[PagingObject[EpisodeObjectSimplified]] = js.undefined
+  
   var playlists: js.UndefOr[PagingObject[PlaylistObjectSimplified]] = js.undefined
+  
+  var shows: js.UndefOr[PagingObject[ShowObjectSimplified]] = js.undefined
   
   var tracks: js.UndefOr[PagingObject[TrackObjectFull]] = js.undefined
 }
@@ -41,9 +47,17 @@ object SearchResponse {
     
     inline def setArtistsUndefined: Self = StObject.set(x, "artists", js.undefined)
     
+    inline def setEpisodes(value: PagingObject[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
+    
+    inline def setEpisodesUndefined: Self = StObject.set(x, "episodes", js.undefined)
+    
     inline def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
     
     inline def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
+    
+    inline def setShows(value: PagingObject[ShowObjectSimplified]): Self = StObject.set(x, "shows", value.asInstanceOf[js.Any])
+    
+    inline def setShowsUndefined: Self = StObject.set(x, "shows", js.undefined)
     
     inline def setTracks(value: PagingObject[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     

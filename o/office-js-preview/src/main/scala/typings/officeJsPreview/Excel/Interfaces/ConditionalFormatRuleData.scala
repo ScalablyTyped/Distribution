@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalFormatRuleData extends StObject {
   
   /**
+    * The formula, if required, on which to evaluate the conditional format rule.
     *
-    * The formula, if required, to evaluate the conditional format rule on.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formula: js.UndefOr[String] = js.undefined
   
   /**
+    * The formula, if required, on which to evaluate the conditional format rule in the user's language.
     *
-    * The formula, if required, to evaluate the conditional format rule on in the user's language.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formulaLocal: js.UndefOr[String] = js.undefined
   
   /**
+    * The formula, if required, on which to evaluate the conditional format rule in R1C1-style notation.
     *
-    * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formulaR1C1: js.UndefOr[String] = js.undefined

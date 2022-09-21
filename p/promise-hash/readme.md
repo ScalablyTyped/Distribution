@@ -10,10 +10,10 @@ Adds an RSVP-like Promise.hash() method for resolving groups of promises.
 | ------------------ | :-------------: |
 | Full name          | promise-hash |
 | Keywords           | promise, nodejs, hash, promises |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 38157 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 727.6666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/mtimofiiv/promise-hash#readme)

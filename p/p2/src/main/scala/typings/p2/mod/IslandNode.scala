@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "IslandNode")
 @js.native
-class IslandNode protected () extends StObject {
+open class IslandNode protected () extends StObject {
   def this(body: Body) = this()
   
   var body: Body = js.native

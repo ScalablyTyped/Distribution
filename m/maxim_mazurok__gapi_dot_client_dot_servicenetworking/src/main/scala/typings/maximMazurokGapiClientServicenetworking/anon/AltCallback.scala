@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientServicenetworking.anon
 
-import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.DisableVpcServiceControlsRequest
+import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.AddSubnetworkRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,8 +30,9 @@ trait AltCallback extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * The service that is managing peering connectivity for a service producer's organization. For Google services that support this functionality, this value is
-    * `services/servicenetworking.googleapis.com`.
+    * Required. A tenant project in the service producer organization, in the following format: services/{service}/{collection-id}/{resource-id}. {collection-id} is the cloud resource
+    * collection type that represents the tenant project. Only `projects` are supported. {resource-id} is the tenant project numeric id, such as `123456`. {service} the name of the
+    * peering service, such as `service-peering.example.com`. This service must already be enabled in the service consumer's project.
     */
   var parent: String
   
@@ -42,7 +43,7 @@ trait AltCallback extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: DisableVpcServiceControlsRequest
+  var resource: AddSubnetworkRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +53,7 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(parent: String, resource: DisableVpcServiceControlsRequest): AltCallback = {
+  inline def apply(parent: String, resource: AddSubnetworkRequest): AltCallback = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
@@ -97,7 +98,7 @@ object AltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: DisableVpcServiceControlsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: AddSubnetworkRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

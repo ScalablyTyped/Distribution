@@ -9,8 +9,15 @@ trait CustomPageSize
   extends StObject
      with PageSize {
   
+  /**
+    * Page height in `pt`, or `auto` to adapt the page height to the document's content
+    * (the document will always have a single page).
+    */
   var height: Double | auto
   
+  /**
+    * Page width in `pt`.
+    */
   var width: Double
 }
 object CustomPageSize {

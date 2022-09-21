@@ -22,6 +22,6 @@ object StoreLayoutClustersListResponse {
     
     inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    inline def setClusterVarargs(value: StoreCluster*): Self = StObject.set(x, "cluster", js.Array(value :_*))
+    inline def setClusterVarargs(value: StoreCluster*): Self = StObject.set(x, "cluster", js.Array(value*))
   }
 }

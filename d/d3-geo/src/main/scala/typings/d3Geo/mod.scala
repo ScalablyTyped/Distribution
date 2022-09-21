@@ -48,9 +48,9 @@ object mod {
   inline def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   inline def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  inline def geoCircle(): GeoCircleGenerator[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, js.Any]]
+  inline def geoCircle(): GeoCircleGenerator[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[Any, Any]]
   
-  inline def geoCircle_Datum[Datum](): GeoCircleGenerator[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, Datum]]
+  inline def geoCircle_Datum[Datum](): GeoCircleGenerator[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[Any, Datum]]
   
   inline def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[This, Datum]]
   
@@ -122,21 +122,21 @@ object mod {
   
   inline def geoOrthographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographicRaw")().asInstanceOf[GeoRawProjection]
   
-  inline def geoPath(): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  inline def geoPath(projection: Null, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  inline def geoPath(projection: Unit, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  inline def geoPath(projection: GeoProjection_): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  inline def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  inline def geoPath(projection: GeoStreamWrapper): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-  inline def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  inline def geoPath(): GeoPath_[Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: Null, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: Unit, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: GeoProjection_): GeoPath_[Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: GeoStreamWrapper): GeoPath_[Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+  inline def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
   
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
   
   inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[This, DatumObject]]
   inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
@@ -148,7 +148,7 @@ object mod {
   
   inline def geoProjection(project: GeoRawProjection): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjection")(project.asInstanceOf[js.Any]).asInstanceOf[GeoProjection_]
   
-  inline def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjectionMutator")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function0[GeoProjection_]]
+  inline def geoProjectionMutator(factory: js.Function1[/* repeated */ Any, GeoRawProjection]): js.Function0[GeoProjection_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjectionMutator")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function0[GeoProjection_]]
   
   inline def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
   inline def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
@@ -219,7 +219,7 @@ object mod {
       
       inline def setFeatures(value: js.Array[FeatureType]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      inline def setFeaturesVarargs(value: FeatureType*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: FeatureType*): Self = StObject.set(x, "features", js.Array(value*))
     }
   }
   
@@ -247,7 +247,7 @@ object mod {
       
       inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
-      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value :_*))
+      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value*))
       
       inline def setCrs(value: Properties): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
       
@@ -255,7 +255,7 @@ object mod {
       
       inline def setGeometries(value: js.Array[GeometryType]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       
-      inline def setGeometriesVarargs(value: GeometryType*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+      inline def setGeometriesVarargs(value: GeometryType*): Self = StObject.set(x, "geometries", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -268,68 +268,41 @@ object mod {
       * Returns a new GeoJSON geometry object of type “Polygon” approximating a circle on the surface of a sphere,
       * with the current center, radius and precision. Any arguments are passed to the accessors.
       */
-    def apply(d: Datum, args: js.Any*): Polygon = js.native
-    def apply(d: Unit, args: js.Any*): Polygon = js.native
+    def apply(d: Datum, args: Any*): Polygon = js.native
+    def apply(d: Unit, args: Any*): Polygon = js.native
     
     /**
       * Returns the current center accessor, which defaults to a function returning [0, 0].
       */
-    def center(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, js.Tuple2[Double, Double]] = js.native
-    /**
-      * Sets the circle center to the specified center point accessor function, and returns this circle generator.
-      *
-      * @param center An accessor function which will be invoked whenever a circle is generated, being passed any arguments passed to the circle generator.
-      * It returns the center point specified as [longitude, latitude] in degrees.
-      */
+    def center(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, js.Tuple2[Double, Double]] = js.native
     def center(
-      center: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, js.Tuple2[Double, Double]]
+      center: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, js.Tuple2[Double, Double]]
     ): this.type = js.native
     /**
       * Sets the circle center to the specified point [longitude, latitude] in degrees, and returns this circle generator.
-      *
-      * @param center Center point specified as [longitude, latitude] in degrees.
+      * The center may also be specified as a function; this function will be invoked whenever a circle is generated, being passed any arguments passed to the circle generator.
       */
     def center(center: js.Tuple2[Double, Double]): this.type = js.native
     
     /**
       * Returns the current precision accessor, which defaults to a function returning 6.
       */
-    def precision(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double] = js.native
-    /**
-      * Sets the circle precision to the precision accessor function, and returns this circle generator.
-      *
-      * Small circles do not follow great arcs and thus the generated polygon is only an approximation.
-      * Specifying a smaller precision angle improves the accuracy of the approximate polygon, but also increase the cost to generate and render it.
-      *
-      * @param precision An accessor function which will be invoked whenever a circle is generated, being passed any arguments passed to the circle generator.
-      * It returns the precision as the specified angle in degrees.
-      */
-    def precision(precision: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
+    def precision(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double] = js.native
+    def precision(precision: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the circle precision to the specified angle in degrees, and returns this circle generator.
-      *
-      * Small circles do not follow great arcs and thus the generated polygon is only an approximation.
-      * Specifying a smaller precision angle improves the accuracy of the approximate polygon, but also increase the cost to generate and render it.
-      *
-      * @param precision Precision as specified angle in degrees.
+      * The precision may also be specified as a function; this function will be invoked whenever a circle is generated, being passed any arguments passed to the circle generator.
       */
     def precision(precision: Double): this.type = js.native
     
     /**
       * Returns the current radius accessor, which defaults to a function returning 90.
       */
-    def radius(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double] = js.native
-    /**
-      * Sets the circle radius to the specified radius accessor function, and returns this circle generator.
-      *
-      * @param radius An accessor function which will be invoked whenever a circle is generated, being passed any arguments passed to the circle generator.
-      * It returns the radius as the specified angle in degrees.
-      */
-    def radius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
+    def radius(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double] = js.native
+    def radius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the circle radius to the specified angle in degrees, and returns this circle generator.
-      *
-      * @param radius Circle radius as the specified angle in degrees.
+      * The radius may also be specified as a function; this function will be invoked whenever a circle is generated, being passed any arguments passed to the circle generator.
       */
     def radius(radius: Double): this.type = js.native
   }
@@ -522,126 +495,51 @@ object mod {
     def angle(angle: Double): this.type = js.native
     
     /**
-      * Returns the current viewport clip extent which defaults to null.
-      */
-    def clipExtent(): (js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]) | Null = js.native
-    /**
       * Sets the projection’s viewport clip extent to the specified bounds in pixels and returns the projection.
       * The extent bounds are specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left-side of the viewport, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      *
-      * Viewport clipping is independent of small-circle clipping via projection.clipAngle.
-      *
-      * @param extent The extent bounds are specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left-side of the viewport, y₀ is the top, x₁ is the right and y₁ is the bottom.
+      * If extent is null, no viewport clipping is performed.
       */
+    def clipExtent(): this.type = js.native
     def clipExtent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
     /**
-      * Sets the clip extent to null and returns the projection.
-      * With a clip extent of null, no viewport clipping is performed.
-      *
-      * Viewport clipping is independent of small-circle clipping via projection.clipAngle.
-      *
-      * @param extent Set to null to disable viewport clipping.
+      * Returns the current viewport clip extent which defaults to null.
       */
-    def clipExtent(extent: Null): this.type = js.native
+    @JSName("clipExtent")
+    def clipExtent_Union(): (js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]) | Null = js.native
     
     /**
-      * Sets the projection’s scale and translate to fit the specified geographic feature in the center of the given extent.
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param extent The extent, specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
+      * Sets the projection’s scale and translate to fit the specified GeoJSON object in the center of the given extent.
+      * The extent is specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom. Returns the projection.
       */
     def fitExtent(
       extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
       `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic feature collection in the center of the given extent.
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param extent The extent, specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      * @param object A geographic feature collection supported by d3-geo (An extension of GeoJSON feature collection).
-      */
     def fitExtent(
       extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
       `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic geometry collection in the center of the given extent.
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param extent The extent, specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      * @param object A geographic geometry collection supported by d3-geo (An extension of GeoJSON geometry collection).
-      */
     def fitExtent(
       extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
       `object`: ExtendedGeometryCollection[GeoGeometryObjects]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic geometry object in the center of the given extent.
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param extent The extent, specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      * @param object A GeoJson Geometry Object or GeoSphere object supported by d3-geo (An extension of GeoJSON).
-      */
     def fitExtent(
       extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
       `object`: GeoGeometryObjects
     ): this.type = js.native
     
     /**
-      * Sets the projection’s scale and translate to fit the specified geographic feature in the center of an extent with the given size and top-left corner of [0, 0].
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param size The size of the extent, specified as an array [width, height].
-      * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
+      * A convenience method for projection.fitExtent where the top-left corner of the extent is [0, 0].
       */
     def fitSize(
       size: js.Tuple2[Double, Double],
       `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic feature collection in the center of an extent with the given size and top-left corner of [0, 0].
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param size The size of the extent, specified as an array [width, height].
-      * @param object A geographic feature collection supported by d3-geo (An extension of GeoJSON feature collection).
-      */
     def fitSize(
       size: js.Tuple2[Double, Double],
       `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic geometry collection in the center of an extent with the given size and top-left corner of [0, 0].
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param size The size of the extent, specified as an array [width, height].
-      * @param object A geographic geometry collection supported by d3-geo (An extension of GeoJSON geometry collection).
-      */
     def fitSize(size: js.Tuple2[Double, Double], `object`: ExtendedGeometryCollection[GeoGeometryObjects]): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic geometry object in the center of an extent with the given size and top-left corner of [0, 0].
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param size The size of the extent, specified as an array [width, height].
-      * @param object A GeoJson Geometry Object or GeoSphere object supported by d3-geo (An extension of GeoJSON).
-      */
     def fitSize(size: js.Tuple2[Double, Double], `object`: GeoGeometryObjects): this.type = js.native
     
     /**
@@ -750,7 +648,7 @@ object mod {
       *
       * @param object An object to be rendered.
       */
-    def apply(`object`: DatumObject, args: js.Any*): String | Null = js.native
+    def apply(`object`: DatumObject, args: Any*): String | Null = js.native
     
     /**
       * Returns the projected planar area (typically in square pixels) for the specified GeoJSON object.
@@ -786,26 +684,20 @@ object mod {
     def centroid(`object`: DatumObject): js.Tuple2[Double, Double] = js.native
     
     /**
-      * Set the current rendering context to null and return the path generator.
-      * The path generator will return an SVG path string;
-      *
-      * @param context Null to remove the current rendering context, if any.
+      * sets the current render context and returns the path generator.
+      * If the context is null, then the path generator will return an SVG path string;
+      * if the context is non-null, the path generator will instead call methods on the specified context to render geometry.
       */
-    def context(context: Null): this.type = js.native
-    /**
-      * Set the current rendering context and return the path generator.
-      * The path generator will render to the specified context.
-      *
-      * @param context Rendering context to be used by the path generator.
-      * The context must at least implement GeoContext, a subset of the CanvasRenderingContext2D API.
-      */
+    def context(): this.type = js.native
     def context(context: GeoContext): this.type = js.native
     /**
       * Returns the current render context which defaults to null.
       *
       * Use the generic to cast the return type of the rendering context, if it is known for a specific application.
       */
-    def context[C /* <: GeoContext | Null */](): C = js.native
+    // tslint:disable-next-line:no-unnecessary-generics
+    @JSName("context")
+    def context_C_UnionGeoContextNull_C[C /* <: GeoContext | Null */](): C = js.native
     
     /**
       * Returns the projected planar length (typically in pixels) for the specified GeoJSON object.
@@ -821,53 +713,23 @@ object mod {
       * Returns the current radius or radius accessor used to determine the radius for the display of Point and MultiPoint geometries.
       * The default is a constant radius of 4.5.
       */
-    def pointRadius(): (js.ThisFunction2[/* this */ This, /* object */ DatumObject, /* repeated */ js.Any, Double]) | Double = js.native
+    def pointRadius(): (js.ThisFunction2[/* this */ This, /* object */ DatumObject, /* repeated */ Any, Double]) | Double = js.native
+    def pointRadius(value: js.ThisFunction2[/* this */ This, /* object */ DatumObject, /* repeated */ Any, Double]): this.type = js.native
     /**
-      * Sets the radius used to display Point and MultiPoint geometries to use the specified radius accessor function.
-      *
-      * While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature,
-      * being passed the any arguments passed to the path generator. For example, if your GeoJSON data has additional properties,
-      * you might access those properties inside the radius function to vary the point size;
+      * Sets the radius used to display Point and MultiPoint geometries to the specified number.
+      * While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the any arguments passed to the path generator.
+      * For example, if your GeoJSON data has additional properties, you might access those properties inside the radius function to vary the point size;
       * alternatively, you could d3.symbol and a projection for greater flexibility.
-      *
-      * @param value A value accessor function for the radius which is evaluated for each path to be rendered.
-      * The value accessor function is invoked within the "this" context in which the path generator is used.
-      * It is passed the object to be rendered, and any additional arguments which have been passed into the call to the render function of the path generator.
-      */
-    def pointRadius(value: js.ThisFunction2[/* this */ This, /* object */ DatumObject, /* repeated */ js.Any, Double]): this.type = js.native
-    /**
-      * Sets the radius used to display Point and MultiPoint geometries to the specified number and return the geo path generator.
-      *
-      * @param value Fixed radius value.
       */
     def pointRadius(value: Double): this.type = js.native
     
     /**
-      * Set the projection to the identity projection.
-      *
-      * @param projection Use null to set the identity projection.
+      * Sets the current projection to the specified projection.
+      * The null projection represents the identity transformation: the input geometry is not projected and is instead rendered directly in raw coordinates.
+      * This can be useful for fast rendering of pre-projected geometry, or for fast rendering of the equirectangular projection.
       */
-    def projection(projection: Null): this.type = js.native
-    /**
-      * Set the current projection to be used with the geo path generator.
-      *
-      * The given projection is typically one of D3’s built-in geographic projections;
-      * however, any object that exposes a projection.stream function can be used, enabling the use of custom projections.
-      * See D3’s transforms for more examples of arbitrary geometric transformations.
-      *
-      * @param projection A projection.
-      */
+    def projection(): this.type = js.native
     def projection(projection: GeoProjection_): this.type = js.native
-    /**
-      * Set the projection to be used with the geo path generator to a custom projection.
-      * Custom projections must minimally contain a stream method.
-      *
-      * The given projection is typically one of D3’s built-in geographic projections;
-      * however, any object that exposes a projection.stream function can be used, enabling the use of custom projections.
-      * See D3’s transforms for more examples of arbitrary geometric transformations.
-      *
-      * @param projection A wrapper object exposing, at a minimum a "stream" method to be used for custom projections.
-      */
     def projection(projection: GeoStreamWrapper): this.type = js.native
     /**
       * Get the current projection. The generic parameter can be used to cast the result to the
@@ -877,7 +739,9 @@ object mod {
       *
       * Use the generic to cast the return type of the projection, if it is known for a specific application.
       */
-    def projection[P /* <: GeoConicProjection | GeoProjection_ | GeoStreamWrapper | Null */](): P = js.native
+    // tslint:disable-next-line:no-unnecessary-generics
+    @JSName("projection")
+    def projection_P_UnionGeoConicProjectionGeoProjection_GeoStreamWrapperNull_P[P /* <: GeoConicProjection | GeoProjection_ | GeoStreamWrapper | Null */](): P = js.native
   }
   
   type GeoPermissibleObjects = GeoGeometryObjects | ExtendedGeometryCollection[GeoGeometryObjects] | (ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]) | (ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]])
@@ -920,103 +784,49 @@ object mod {
     def center(point: js.Tuple2[Double, Double]): this.type = js.native
     
     /**
+      * Sets the projection’s clipping circle radius to the specified angle in degrees and returns the projection.
+      * If angle is null, switches to antimeridian cutting rather than small-circle clipping.
+      */
+    def clipAngle(): this.type = js.native
+    def clipAngle(angle: Double): this.type = js.native
+    /**
       * Returns the current clip angle which defaults to null.
       *
       * null switches to antimeridian cutting rather than small-circle clipping.
       */
-    def clipAngle(): Double | Null = js.native
-    /**
-      * Sets the projection’s clipping circle radius to the specified angle in degrees and returns the projection.
-      * Small-circle clipping is independent of viewport clipping via projection.clipExtent.
-      *
-      * See also projection.preclip, d3.geoClipAntimeridian, d3.geoClipCircle.
-      *
-      * @param angle Angle in degrees.
-      */
-    def clipAngle(angle: Double): this.type = js.native
-    /**
-      * Switches to antimeridian cutting rather than small-circle clipping.
-      * See also projection.preclip, d3.geoClipAntimeridian, d3.geoClipCircle.
-      *
-      * @param angle Set to null to switch to antimeridian cutting.
-      */
-    def clipAngle(angle: Null): this.type = js.native
+    @JSName("clipAngle")
+    def clipAngle_Union(): Double | Null = js.native
     
-    /**
-      * Returns the current viewport clip extent which defaults to null.
-      */
-    def clipExtent(): (js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]) | Null = js.native
     /**
       * Sets the projection’s viewport clip extent to the specified bounds in pixels and returns the projection.
       * The extent bounds are specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left-side of the viewport, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      *
-      * Viewport clipping is independent of small-circle clipping via projection.clipAngle.
-      *
-      * See also projection.postclip, d3.geoClipRectangle.
-      *
-      * @param extent The extent bounds are specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left-side of the viewport, y₀ is the top, x₁ is the right and y₁ is the bottom.
+      * If extent is null, no viewport clipping is performed.
       */
+    def clipExtent(): this.type = js.native
     def clipExtent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
     /**
-      * Sets the clip extent to null and returns the projection.
-      * With a clip extent of null, no viewport clipping is performed.
-      *
-      * Viewport clipping is independent of small-circle clipping via projection.clipAngle.
-      *
-      * See also projection.postclip, d3.geoClipRectangle.
-      *
-      * @param extent Set to null to disable viewport clipping.
+      * Returns the current viewport clip extent which defaults to null.
       */
-    def clipExtent(extent: Null): this.type = js.native
+    @JSName("clipExtent")
+    def clipExtent_Union(): (js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]) | Null = js.native
     
     /**
-      * Sets the projection’s scale and translate to fit the specified geographic feature in the center of the given extent.
+      * Sets the projection’s scale and translate to fit the specified GeoJSON object in the center of the given extent.
+      * The extent is specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
       * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param extent The extent, specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
       */
     def fitExtent(
       extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
       `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic feature collection in the center of the given extent.
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param extent The extent, specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      * @param object A geographic feature collection supported by d3-geo (An extension of GeoJSON feature collection).
-      */
     def fitExtent(
       extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
       `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic geometry collection in the center of the given extent.
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param extent The extent, specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      * @param object A geographic geometry collection supported by d3-geo (An extension of GeoJSON geometry collection).
-      */
     def fitExtent(
       extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
       `object`: ExtendedGeometryCollection[GeoGeometryObjects]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic geometry object in the center of the given extent.
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param extent The extent, specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left side of the bounding box, y₀ is the top, x₁ is the right and y₁ is the bottom.
-      * @param object A GeoJson Geometry Object or GeoSphere object supported by d3-geo (An extension of GeoJSON).
-      */
     def fitExtent(
       extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
       `object`: GeoGeometryObjects
@@ -1024,113 +834,38 @@ object mod {
     
     /**
       * A convenience method for projection.fitSize where the width is automatically chosen from the aspect ratio of object and the given constraint on height.
-      *
-      * @param height The height of the extent.
-      * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
       */
     def fitHeight(height: Double, `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): this.type = js.native
-    /**
-      * A convenience method for projection.fitSize where the width is automatically chosen from the aspect ratio of object and the given constraint on height.
-      *
-      * @param height The height of the extent.
-      * @param object A GeoJson Geometry Object or GeoSphere object supported by d3-geo (An extension of GeoJSON).
-      */
     def fitHeight(
       height: Double,
       `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]
     ): this.type = js.native
-    /**
-      * A convenience method for projection.fitSize where the width is automatically chosen from the aspect ratio of object and the given constraint on height.
-      *
-      * @param height The height of the extent.
-      * @param object A geographic geometry collection supported by d3-geo (An extension of GeoJSON geometry collection).
-      */
     def fitHeight(height: Double, `object`: ExtendedGeometryCollection[GeoGeometryObjects]): this.type = js.native
-    /**
-      * A convenience method for projection.fitSize where the width is automatically chosen from the aspect ratio of object and the given constraint on height.
-      *
-      * @param height The height of the extent.
-      * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
-      */
     def fitHeight(height: Double, `object`: GeoGeometryObjects): this.type = js.native
     
     /**
-      * Sets the projection’s scale and translate to fit the specified geographic feature in the center of an extent with the given size and top-left corner of [0, 0].
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param size The size of the extent, specified as an array [width, height].
-      * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
+      * A convenience method for projection.fitExtent where the top-left corner of the extent is [0, 0].
       */
     def fitSize(
       size: js.Tuple2[Double, Double],
       `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic feature collection in the center of an extent with the given size and top-left corner of [0, 0].
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param size The size of the extent, specified as an array [width, height].
-      * @param object A geographic feature collection supported by d3-geo (An extension of GeoJSON feature collection).
-      */
     def fitSize(
       size: js.Tuple2[Double, Double],
       `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]
     ): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic geometry collection in the center of an extent with the given size and top-left corner of [0, 0].
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param size The size of the extent, specified as an array [width, height].
-      * @param object A geographic geometry collection supported by d3-geo (An extension of GeoJSON geometry collection).
-      */
     def fitSize(size: js.Tuple2[Double, Double], `object`: ExtendedGeometryCollection[GeoGeometryObjects]): this.type = js.native
-    /**
-      * Sets the projection’s scale and translate to fit the specified geographic geometry object in the center of an extent with the given size and top-left corner of [0, 0].
-      * Returns the projection.
-      *
-      * Any clip extent is ignored when determining the new scale and translate. The precision used to compute the bounding box of the given object is computed at an effective scale of 150.
-      *
-      * @param size The size of the extent, specified as an array [width, height].
-      * @param object A GeoJson Geometry Object or GeoSphere object supported by d3-geo (An extension of GeoJSON).
-      */
     def fitSize(size: js.Tuple2[Double, Double], `object`: GeoGeometryObjects): this.type = js.native
     
     /**
       * A convenience method for projection.fitSize where the height is automatically chosen from the aspect ratio of object and the given constraint on width.
-      *
-      * @param width The width of the extent.
-      * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
       */
     def fitWidth(width: Double, `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): this.type = js.native
-    /**
-      * A convenience method for projection.fitSize where the height is automatically chosen from the aspect ratio of object and the given constraint on width.
-      *
-      * @param width The width of the extent.
-      * @param object A GeoJson Geometry Object or GeoSphere object supported by d3-geo (An extension of GeoJSON).
-      */
     def fitWidth(
       width: Double,
       `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]
     ): this.type = js.native
-    /**
-      * A convenience method for projection.fitSize where the height is automatically chosen from the aspect ratio of object and the given constraint on width.
-      *
-      * @param width The width of the extent.
-      * @param object A geographic geometry collection supported by d3-geo (An extension of GeoJSON geometry collection).
-      */
     def fitWidth(width: Double, `object`: ExtendedGeometryCollection[GeoGeometryObjects]): this.type = js.native
-    /**
-      * A convenience method for projection.fitSize where the height is automatically chosen from the aspect ratio of object and the given constraint on width.
-      *
-      * @param width The width of the extent.
-      * @param object A geographic feature supported by d3-geo (An extension of GeoJSON feature).
-      */
     def fitWidth(width: Double, `object`: GeoGeometryObjects): this.type = js.native
     
     /**

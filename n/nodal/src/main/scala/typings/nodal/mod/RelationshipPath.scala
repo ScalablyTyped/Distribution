@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "RelationshipPath")
 @js.native
-class RelationshipPath protected () extends StObject {
+open class RelationshipPath protected () extends StObject {
   def this(path: js.Array[RelationshipEdge | RelationshipNode]) = this()
   
   def add(node: RelationshipNode, edge: RelationshipEdge): RelationshipPath = js.native
   
-  /* private */ var constructor: js.Any = js.native
+  /* private */ var constructor: Any = js.native
   
   def getModel(): TypeofModel = js.native
   

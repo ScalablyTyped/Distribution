@@ -1,7 +1,7 @@
 
 # Scala.js typings for cids
 
-Typings are for version 1.0.2
+Typings are for version 1.1.9
 
 ## Library description:
 CID Implementation in JavaScript
@@ -10,10 +10,10 @@ CID Implementation in JavaScript
 | ------------------ | :-------------: |
 | Full name          | cids |
 | Keywords           | multihash, cid, ipld |
-| # releases         | 22 |
-| # dependents       | 236 |
-| # downloads        | 3244935 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2030054.6666666667 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/multiformats/js-cid#readme)

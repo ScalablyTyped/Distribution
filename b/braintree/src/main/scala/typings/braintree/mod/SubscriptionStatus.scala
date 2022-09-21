@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.Active
   - typings.braintree.braintreeStrings.Canceled
   - typings.braintree.braintreeStrings.Expired
-  - typings.braintree.braintreeStrings.PastDue
+  - typings.braintree.braintreeStrings.`Past Due`
   - typings.braintree.braintreeStrings.Pending
 */
 trait SubscriptionStatus extends StObject
@@ -20,7 +20,7 @@ object SubscriptionStatus {
   
   inline def Expired: typings.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typings.braintree.braintreeStrings.Expired]
   
-  inline def PastDue: typings.braintree.braintreeStrings.PastDue = "PastDue".asInstanceOf[typings.braintree.braintreeStrings.PastDue]
+  inline def `Past Due`: typings.braintree.braintreeStrings.`Past Due` = ("Past Due").asInstanceOf[typings.braintree.braintreeStrings.`Past Due`]
   
   inline def Pending: typings.braintree.braintreeStrings.Pending = "Pending".asInstanceOf[typings.braintree.braintreeStrings.Pending]
 }

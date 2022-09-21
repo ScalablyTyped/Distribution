@@ -4,7 +4,6 @@ import typings.fundamentalReact.anon.FunctionComponentBreadcru
 import typings.fundamentalReact.anon.PartialBreadcrumbProps
 import typings.fundamentalReact.anon.WeakValidationMapBreadcru
 import typings.fundamentalReact.breadcrumbMod.BreadcrumbProps
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -14,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Breadcrumb/Breadcrumb.BreadcrumbProps> & {  displayName :'Breadcrumb',   Item :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Breadcrumb/Breadcrumb.BreadcrumbItemProps> & {  displayName :'Breadcrumb.Item'}} */
 object Breadcrumb {
   
-  inline def apply(props: PropsWithChildren[BreadcrumbProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def apply(props: PropsWithChildren[BreadcrumbProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def apply(props: BreadcrumbProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def apply(props: BreadcrumbProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
   @JSImport("fundamental-react", "Breadcrumb")
   @js.native
@@ -28,8 +27,8 @@ object Breadcrumb {
   
   @JSImport("fundamental-react", "Breadcrumb.contextTypes")
   @js.native
-  def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+  inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("fundamental-react", "Breadcrumb.defaultProps")
   @js.native

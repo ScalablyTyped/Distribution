@@ -19,7 +19,7 @@ trait DescribeFleetHistoryResult extends StObject {
   /**
     * The last date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). All records up to this time were retrieved. If nextToken indicates that there are more results, this value is not present.
     */
-  var LastEvaluatedTime: js.UndefOr[DateTime] = js.undefined
+  var LastEvaluatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The token for the next set of results.
@@ -29,7 +29,7 @@ trait DescribeFleetHistoryResult extends StObject {
   /**
     * The start date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeFleetHistoryResult {
   
@@ -48,9 +48,9 @@ object DescribeFleetHistoryResult {
     
     inline def setHistoryRecordsUndefined: Self = StObject.set(x, "HistoryRecords", js.undefined)
     
-    inline def setHistoryRecordsVarargs(value: HistoryRecordEntry*): Self = StObject.set(x, "HistoryRecords", js.Array(value :_*))
+    inline def setHistoryRecordsVarargs(value: HistoryRecordEntry*): Self = StObject.set(x, "HistoryRecords", js.Array(value*))
     
-    inline def setLastEvaluatedTime(value: DateTime): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedTime(value: js.Date): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastEvaluatedTimeUndefined: Self = StObject.set(x, "LastEvaluatedTime", js.undefined)
     
@@ -58,7 +58,7 @@ object DescribeFleetHistoryResult {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

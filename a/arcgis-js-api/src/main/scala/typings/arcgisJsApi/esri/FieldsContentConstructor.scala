@@ -17,5 +17,5 @@ trait FieldsContentConstructor
 Instantiable0[FieldsContent]
      with Instantiable1[/* properties */ FieldsContentProperties, FieldsContent] {
   
-  def fromJSON(json: js.Any): FieldsContent = js.native
+  def fromJSON(json: Any): FieldsContent = js.native
 }

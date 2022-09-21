@@ -1,7 +1,7 @@
 
 # Scala.js typings for crc-32
 
-Typings are for version 1.2.0
+Typings are for version 1.2.2
 
 ## Library description:
 Pure-JS CRC-32
@@ -10,13 +10,13 @@ Pure-JS CRC-32
 | ------------------ | :-------------: |
 | Full name          | crc-32 |
 | Keywords           | crc, crc32, checksum |
-| # releases         | 0 |
-| # dependents       | 312 |
-| # downloads        | 45372885 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1998364333333332E7 |
+| # stars            | 301.0 |
 
 ## Links
-- [Homepage](http://sheetjs.com/opensource)
+- [Homepage](https://sheetjs.com/)
 - [Bugs](https://github.com/SheetJS/js-crc32/issues)
 - [Repository](https://github.com/SheetJS/js-crc32)
 - [Npm](https://www.npmjs.com/package/crc-32)

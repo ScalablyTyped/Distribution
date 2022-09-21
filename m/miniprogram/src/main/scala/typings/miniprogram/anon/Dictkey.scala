@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   /**
     * Global data can be configured in `App()`. Other pages can get and modify the global data directly.
     */
-  var globalData: js.UndefOr[js.Any] = js.undefined
+  var globalData: js.UndefOr[Any] = js.undefined
   
   /**
     * On js error of the Mini Program
@@ -44,7 +44,7 @@ object Dictkey {
   
   extension [Self <: Dictkey](x: Self) {
     
-    inline def setGlobalData(value: js.Any): Self = StObject.set(x, "globalData", value.asInstanceOf[js.Any])
+    inline def setGlobalData(value: Any): Self = StObject.set(x, "globalData", value.asInstanceOf[js.Any])
     
     inline def setGlobalDataUndefined: Self = StObject.set(x, "globalData", js.undefined)
     

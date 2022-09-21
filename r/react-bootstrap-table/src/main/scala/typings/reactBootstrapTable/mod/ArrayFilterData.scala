@@ -27,6 +27,6 @@ object ArrayFilterData {
     
     inline def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -57,7 +57,7 @@ object Theme {
     
     inline def setBasemaps(value: js.Array[String]): Self = StObject.set(x, "basemaps", value.asInstanceOf[js.Any])
     
-    inline def setBasemapsVarargs(value: String*): Self = StObject.set(x, "basemaps", js.Array(value :_*))
+    inline def setBasemapsVarargs(value: String*): Self = StObject.set(x, "basemaps", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

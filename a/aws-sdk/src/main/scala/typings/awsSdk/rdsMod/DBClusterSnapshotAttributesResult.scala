@@ -29,7 +29,7 @@ object DBClusterSnapshotAttributesResult {
     
     inline def setDBClusterSnapshotAttributesUndefined: Self = StObject.set(x, "DBClusterSnapshotAttributes", js.undefined)
     
-    inline def setDBClusterSnapshotAttributesVarargs(value: DBClusterSnapshotAttribute*): Self = StObject.set(x, "DBClusterSnapshotAttributes", js.Array(value :_*))
+    inline def setDBClusterSnapshotAttributesVarargs(value: DBClusterSnapshotAttribute*): Self = StObject.set(x, "DBClusterSnapshotAttributes", js.Array(value*))
     
     inline def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     

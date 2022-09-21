@@ -29,6 +29,6 @@ object PostalCodesListResponse {
     
     inline def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
     
-    inline def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
+    inline def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value*))
   }
 }

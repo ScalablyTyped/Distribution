@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "Event")
 @js.native
-class Event protected ()
+open class Event protected ()
   extends typings.typedoc.utilsEventsMod.Event {
+  /**
+    * Create a new Event instance.
+    */
   def this(name: String) = this()
 }

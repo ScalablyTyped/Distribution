@@ -17,7 +17,6 @@ import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Textures.CanvasTexture
 import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Textures.TextureSource
-import typings.phaser.integer
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,7 +50,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * Videos can only autoplay if the browser has been unlocked with an interaction, or satisfies the MEI settings.
   * The policies that control autoplaying are vast and vary between browser.
-  * You can, ahd should, read more about it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+  * You can, and should, read more about it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
   * 
   * If your video doesn't contain any audio, then set the `noAudio` parameter to `true` when the video is _loaded_,
   * and it will often allow the video to play immediately:
@@ -107,7 +106,7 @@ trait Video
     * @param markerIn The time, in seconds, representing the start of this marker.
     * @param markerOut The time, in seconds, representing the end of this marker.
     */
-  def addMarker(key: String, markerIn: integer, markerOut: integer): this.type = js.native
+  def addMarker(key: String, markerIn: Double, markerOut: Double): this.type = js.native
   
   /**
     * This method allows you to change the source of the current video element. It works by first stopping the
@@ -126,19 +125,19 @@ trait Video
   def changeSource(key: String): this.type = js.native
   def changeSource(key: String, autoplay: Boolean): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean): this.type = js.native
-  def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: Unit, markerOut: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: Unit, markerOut: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: integer, markerOut: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: Double, markerOut: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: Unit, markerOut: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: Double, markerOut: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: Unit, markerIn: Unit, markerOut: Double): this.type = js.native
   def changeSource(key: String, autoplay: Unit, loop: Boolean): this.type = js.native
-  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: Unit, markerOut: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: Unit, markerOut: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: integer): this.type = js.native
-  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: integer, markerOut: integer): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: Double, markerOut: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Boolean, markerIn: Unit, markerOut: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: Double, markerOut: Double): this.type = js.native
+  def changeSource(key: String, autoplay: Unit, loop: Unit, markerIn: Unit, markerOut: Double): this.type = js.native
   
   /**
     * Called when the video completes playback, i.e. reaches an `ended` state.
@@ -212,6 +211,21 @@ trait Video
   def isSeeking(): Boolean = js.native
   
   /**
+    * Loads a Video from the given MediaStream object, ready for playback with the `Video.play` method.
+    * 
+    * You can control at what point the browser determines the video as being ready for playback via
+    * the `loadEvent` parameter. See https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement
+    * for more details.
+    * @param stream The MediaStream object.
+    * @param loadEvent The load event to listen for. Either `loadeddata`, `canplay` or `canplaythrough`. Default 'loadeddata'.
+    * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it. Default false.
+    */
+  def loadMediaStream(stream: String): this.type = js.native
+  def loadMediaStream(stream: String, loadEvent: String): this.type = js.native
+  def loadMediaStream(stream: String, loadEvent: String, noAudio: Boolean): this.type = js.native
+  def loadMediaStream(stream: String, loadEvent: Unit, noAudio: Boolean): this.type = js.native
+  
+  /**
     * Loads a Video from the given URL, ready for playback with the `Video.play` method.
     * 
     * You can control at what point the browser determines the video as being ready for playback via
@@ -229,7 +243,7 @@ trait Video
   /**
     * An object containing in and out markers for sequence playback.
     */
-  var markers: js.Any = js.native
+  var markers: Any = js.native
   
   /**
     * Starts this video playing.
@@ -261,12 +275,12 @@ trait Video
     */
   def play(): this.type = js.native
   def play(loop: Boolean): this.type = js.native
-  def play(loop: Boolean, markerIn: Unit, markerOut: integer): this.type = js.native
-  def play(loop: Boolean, markerIn: integer): this.type = js.native
-  def play(loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
-  def play(loop: Unit, markerIn: Unit, markerOut: integer): this.type = js.native
-  def play(loop: Unit, markerIn: integer): this.type = js.native
-  def play(loop: Unit, markerIn: integer, markerOut: integer): this.type = js.native
+  def play(loop: Boolean, markerIn: Double): this.type = js.native
+  def play(loop: Boolean, markerIn: Double, markerOut: Double): this.type = js.native
+  def play(loop: Boolean, markerIn: Unit, markerOut: Double): this.type = js.native
+  def play(loop: Unit, markerIn: Double): this.type = js.native
+  def play(loop: Unit, markerIn: Double, markerOut: Double): this.type = js.native
+  def play(loop: Unit, markerIn: Unit, markerOut: Double): this.type = js.native
   
   /**
     * Called when the video emits a `playing` event during load.
@@ -327,19 +341,19 @@ trait Video
   /**
     * The current retry attempt.
     */
-  var retry: integer = js.native
+  var retry: Double = js.native
   
   /**
     * The number of ms between each retry while monitoring the ready state of a downloading video.
     */
-  var retryInterval: integer = js.native
+  var retryInterval: Double = js.native
   
   /**
     * When starting playback of a video Phaser will monitor its `readyState` using a `setTimeout` call.
     * The `setTimeout` happens once every `Video.retryInterval` ms. It will carry on monitoring the video
     * state in this manner until the `retryLimit` is reached and then abort.
     */
-  var retryLimit: integer = js.native
+  var retryLimit: Double = js.native
   
   /**
     * Stores a copy of this Videos `snapshotTexture` in the Texture Manager using the given key.
@@ -493,9 +507,9 @@ trait Video
     * @param height The height of the resulting CanvasTexture.
     */
   def snapshot(): CanvasTexture = js.native
-  def snapshot(width: Unit, height: integer): CanvasTexture = js.native
-  def snapshot(width: integer): CanvasTexture = js.native
-  def snapshot(width: integer, height: integer): CanvasTexture = js.native
+  def snapshot(width: Double): CanvasTexture = js.native
+  def snapshot(width: Double, height: Double): CanvasTexture = js.native
+  def snapshot(width: Unit, height: Double): CanvasTexture = js.native
   
   /**
     * Takes a snapshot of the specified area of the current frame of the video and renders it to a CanvasTexture object,
@@ -511,12 +525,12 @@ trait Video
     * @param destHeight The destination height of the grab, allowing you to resize it.
     */
   def snapshotArea(
-    x: js.UndefOr[integer],
-    y: js.UndefOr[integer],
-    srcWidth: js.UndefOr[integer],
-    srcHeight: js.UndefOr[integer],
-    destWidth: js.UndefOr[integer],
-    destHeight: js.UndefOr[integer]
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    srcWidth: js.UndefOr[Double],
+    srcHeight: js.UndefOr[Double],
+    destWidth: js.UndefOr[Double],
+    destHeight: js.UndefOr[Double]
   ): CanvasTexture = js.native
   
   /**

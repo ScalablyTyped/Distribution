@@ -18,6 +18,12 @@ object babylonjsCamerasCameraAugmentingMod {
     
     /**
       * @hidden
+      * For WebXR cameras that are rendering to multiview texture arrays.
+      */
+    var _renderingMultiview: Boolean
+    
+    /**
+      * @hidden
       * ensures the multiview texture of the camera exists and has the specified width/height
       * @param width height to set on the multiview texture
       * @param height width to set on the multiview texture
@@ -32,8 +38,12 @@ object babylonjsCamerasCameraAugmentingMod {
   }
   object Camera {
     
-    inline def apply(_resizeOrCreateMultiviewTexture: (Double, Double) => Unit, _useMultiviewToSingleView: Boolean): typings.babylonjs.mod.babylonjsCamerasCameraAugmentingMod.Camera = {
-      val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = null)
+    inline def apply(
+      _renderingMultiview: Boolean,
+      _resizeOrCreateMultiviewTexture: (Double, Double) => Unit,
+      _useMultiviewToSingleView: Boolean
+    ): typings.babylonjs.mod.babylonjsCamerasCameraAugmentingMod.Camera = {
+      val __obj = js.Dynamic.literal(_renderingMultiview = _renderingMultiview.asInstanceOf[js.Any], _resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = null)
       __obj.asInstanceOf[typings.babylonjs.mod.babylonjsCamerasCameraAugmentingMod.Camera]
     }
     
@@ -42,6 +52,8 @@ object babylonjsCamerasCameraAugmentingMod {
       inline def set_multiviewTexture(value: Nullable[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
       
       inline def set_multiviewTextureNull: Self = StObject.set(x, "_multiviewTexture", null)
+      
+      inline def set_renderingMultiview(value: Boolean): Self = StObject.set(x, "_renderingMultiview", value.asInstanceOf[js.Any])
       
       inline def set_resizeOrCreateMultiviewTexture(value: (Double, Double) => Unit): Self = StObject.set(x, "_resizeOrCreateMultiviewTexture", js.Any.fromFunction2(value))
       

@@ -19,10 +19,10 @@ object mod {
   
   @JSImport("react-native-navbar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[NavigationBarProps, js.Object, js.Any]
+  open class default ()
+    extends Component[NavigationBarProps, js.Object, Any]
   
-  type NavigationBar = Component[NavigationBarProps, js.Object, js.Any]
+  type NavigationBar = Component[NavigationBarProps, js.Object, Any]
   
   trait NavigationBarButton extends StObject {
     

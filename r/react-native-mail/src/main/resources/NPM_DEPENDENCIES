@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-mail" : "6.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-mail" : "6.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -13,6 +13,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def geojson2osm(features: Feature[js.Any, GeoJsonProperties]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("geojson2osm")(features.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def geojson2osm(features: FeatureCollection[js.Any, GeoJsonProperties]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("geojson2osm")(features.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def geojson2osm(features: Feature[Any, GeoJsonProperties]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("geojson2osm")(features.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def geojson2osm(features: FeatureCollection[Any, GeoJsonProperties]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("geojson2osm")(features.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

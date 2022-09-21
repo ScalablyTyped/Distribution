@@ -34,7 +34,7 @@ object TextureAtlasRegion {
     originalHeight: Double,
     originalWidth: Double,
     page: TextureAtlasPage,
-    renderObject: js.Any,
+    renderObject: Any,
     rotate: Boolean,
     texture: Texture,
     u: Double,

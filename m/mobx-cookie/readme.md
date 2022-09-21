@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-cookie
 
-Typings are for version 3.0.4
+Typings are for version 4.0.5
 
 ## Library description:
 Syncs a cookie's value with a MobX observable, allowing observers to react to its changes.
@@ -10,10 +10,10 @@ Syncs a cookie's value with a MobX observable, allowing observers to react to it
 | ------------------ | :-------------: |
 | Full name          | mobx-cookie |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 50657 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3836.3333333333335 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/will-stone/mobx-cookie#readme)

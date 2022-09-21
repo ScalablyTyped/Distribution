@@ -9,7 +9,7 @@ object modalPropsTypeMod {
   
   trait Action[T] extends StObject {
     
-    var onPress: js.UndefOr[js.Function0[Unit | js.Promise[js.Any]]] = js.undefined
+    var onPress: js.UndefOr[js.Function0[Unit | js.Promise[Any]]] = js.undefined
     
     var style: js.UndefOr[T | String] = js.undefined
     
@@ -24,7 +24,7 @@ object modalPropsTypeMod {
     
     extension [Self <: Action[?], T](x: Self & Action[T]) {
       
-      inline def setOnPress(value: () => Unit | js.Promise[js.Any]): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit | js.Promise[Any]): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
       inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
@@ -46,7 +46,7 @@ object modalPropsTypeMod {
     
     var animated: js.UndefOr[Boolean] = js.undefined
     
-    var animationType: js.UndefOr[js.Any] = js.undefined
+    var animationType: js.UndefOr[Any] = js.undefined
     
     var closable: js.UndefOr[Boolean] = js.undefined
     
@@ -87,7 +87,7 @@ object modalPropsTypeMod {
       
       inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      inline def setAnimationType(value: js.Any): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+      inline def setAnimationType(value: Any): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
       
       inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
       
@@ -99,7 +99,7 @@ object modalPropsTypeMod {
       
       inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      inline def setFooterVarargs(value: Action[T]*): Self = StObject.set(x, "footer", js.Array(value :_*))
+      inline def setFooterVarargs(value: Action[T]*): Self = StObject.set(x, "footer", js.Array(value*))
       
       inline def setLocale(value: js.Object): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       

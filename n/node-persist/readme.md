@@ -10,15 +10,12 @@ Super-easy (and fast) persistent data structures in Node.js, modeled after HTML5
 | ------------------ | :-------------: |
 | Full name          | node-persist |
 | Keywords           | node, persist, storage |
-| # releases         | 6 |
-| # dependents       | 298 |
-| # downloads        | 1177338 |
-| # stars            | 20 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 197879.0 |
+| # stars            | 658.0 |
 
 ## Links
-- [Homepage](https://github.com/simonlast/node-persist#readme)
-- [Bugs](https://github.com/simonlast/node-persist/issues)
-- [Repository](https://github.com/simonlast/node-persist)
 - [Npm](https://www.npmjs.com/package/node-persist)
     
 

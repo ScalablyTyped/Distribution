@@ -51,6 +51,6 @@ object DescribeVolumesRequest {
     
     inline def setVolumeIdsUndefined: Self = StObject.set(x, "VolumeIds", js.undefined)
     
-    inline def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "VolumeIds", js.Array(value :_*))
+    inline def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "VolumeIds", js.Array(value*))
   }
 }

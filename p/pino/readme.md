@@ -1,7 +1,7 @@
 
 # Scala.js typings for pino
 
-Typings are for version 6.3
+Typings are for version 8.6.0
 
 ## Library description:
 super fast, all natural json logger
@@ -10,13 +10,13 @@ super fast, all natural json logger
 | ------------------ | :-------------: |
 | Full name          | pino |
 | Keywords           | fast, logger, stream, json |
-| # releases         | 41 |
-| # dependents       | 1097 |
-| # downloads        | 56635064 |
-| # stars            | 49 |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5011419666666666E7 |
+| # stars            | 10050.0 |
 
 ## Links
-- [Homepage](http://getpino.io)
+- [Homepage](https://getpino.io)
 - [Bugs](https://github.com/pinojs/pino/issues)
 - [Repository](https://github.com/pinojs/pino)
 - [Npm](https://www.npmjs.com/package/pino)
@@ -24,7 +24,7 @@ super fast, all natural json logger
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

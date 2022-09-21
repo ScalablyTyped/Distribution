@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.websceneInitialViewProperties")
 @js.native
-class websceneInitialViewPropertiesCls ()
+/**
+  * Represents the initial viewing state of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html) when displayed in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html)
+  */
+open class websceneInitialViewPropertiesCls ()
   extends StObject
      with typings.arcgisJsApi.esri.websceneInitialViewProperties {
   def this(properties: websceneInitialViewPropertiesProperties) = this()

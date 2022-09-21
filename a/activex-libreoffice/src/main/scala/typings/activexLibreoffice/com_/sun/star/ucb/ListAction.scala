@@ -14,7 +14,7 @@ trait ListAction extends StObject {
     * depending on the content of {@link ListAction.ListActionType} the {@link ListAction.ActionInfo} could contain additional information about the changes
     * happened (see table above).
     */
-  var ActionInfo: js.Any
+  var ActionInfo: Any
   
   /** The count of involved rows. */
   var Count: Double
@@ -38,14 +38,14 @@ trait ListAction extends StObject {
 }
 object ListAction {
   
-  inline def apply(ActionInfo: js.Any, Count: Double, ListActionType: Double, Position: Double): ListAction = {
+  inline def apply(ActionInfo: Any, Count: Double, ListActionType: Double, Position: Double): ListAction = {
     val __obj = js.Dynamic.literal(ActionInfo = ActionInfo.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], ListActionType = ListActionType.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAction]
   }
   
   extension [Self <: ListAction](x: Self) {
     
-    inline def setActionInfo(value: js.Any): Self = StObject.set(x, "ActionInfo", value.asInstanceOf[js.Any])
+    inline def setActionInfo(value: Any): Self = StObject.set(x, "ActionInfo", value.asInstanceOf[js.Any])
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

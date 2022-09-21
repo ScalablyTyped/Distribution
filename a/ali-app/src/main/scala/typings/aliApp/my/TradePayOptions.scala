@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 小程序唤起支付 https://docs.alipay.com/mini/api/openapi-pay
 trait TradePayOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 接入小程序支付时传入此参数。此参数为支付宝交易号
   @JSName("success")

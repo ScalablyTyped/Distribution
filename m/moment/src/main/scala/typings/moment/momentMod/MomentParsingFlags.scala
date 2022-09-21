@@ -22,7 +22,7 @@ trait MomentParsingFlags extends StObject {
   
   var overflow: Double
   
-  var parsedDateParts: js.Array[js.Any]
+  var parsedDateParts: js.Array[Any]
   
   var unusedInput: js.Array[String]
   
@@ -39,7 +39,7 @@ object MomentParsingFlags {
     iso: Boolean,
     nullInput: Boolean,
     overflow: Double,
-    parsedDateParts: js.Array[js.Any],
+    parsedDateParts: js.Array[Any],
     unusedInput: js.Array[String],
     unusedTokens: js.Array[String],
     userInvalidated: Boolean
@@ -70,17 +70,17 @@ object MomentParsingFlags {
     
     inline def setOverflow(value: Double): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    inline def setParsedDateParts(value: js.Array[js.Any]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
+    inline def setParsedDateParts(value: js.Array[Any]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
     
-    inline def setParsedDatePartsVarargs(value: js.Any*): Self = StObject.set(x, "parsedDateParts", js.Array(value :_*))
+    inline def setParsedDatePartsVarargs(value: Any*): Self = StObject.set(x, "parsedDateParts", js.Array(value*))
     
     inline def setUnusedInput(value: js.Array[String]): Self = StObject.set(x, "unusedInput", value.asInstanceOf[js.Any])
     
-    inline def setUnusedInputVarargs(value: String*): Self = StObject.set(x, "unusedInput", js.Array(value :_*))
+    inline def setUnusedInputVarargs(value: String*): Self = StObject.set(x, "unusedInput", js.Array(value*))
     
     inline def setUnusedTokens(value: js.Array[String]): Self = StObject.set(x, "unusedTokens", value.asInstanceOf[js.Any])
     
-    inline def setUnusedTokensVarargs(value: String*): Self = StObject.set(x, "unusedTokens", js.Array(value :_*))
+    inline def setUnusedTokensVarargs(value: String*): Self = StObject.set(x, "unusedTokens", js.Array(value*))
     
     inline def setUserInvalidated(value: Boolean): Self = StObject.set(x, "userInvalidated", value.asInstanceOf[js.Any])
   }

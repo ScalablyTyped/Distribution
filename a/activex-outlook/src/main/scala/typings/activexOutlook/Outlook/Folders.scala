@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Folders extends StObject {
   
   def Add(Name: String): Folder = js.native
-  def Add(Name: String, Type: js.Any): Folder = js.native
+  def Add(Name: String, Type: Any): Folder = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -24,14 +24,14 @@ trait Folders extends StObject {
   
   def GetPrevious(): Folder = js.native
   
-  def Item(Index: js.Any): Folder = js.native
+  def Item(Index: Any): Folder = js.native
   
   /* private */ @JSName("Outlook.Folders_typekey")
   var OutlookDotFolders_typekey: Folders = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  val RawTable: js.Any = js.native
+  val RawTable: Any = js.native
   
   def Remove(Index: Double): Unit = js.native
   

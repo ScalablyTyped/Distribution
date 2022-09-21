@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "ConcatObserver")
 @js.native
-class ConcatObserver protected ()
+open class ConcatObserver protected ()
   extends typings.wonderFrp.concatObserverMod.ConcatObserver {
   def this(currentObserver: IObserver, startNextStream: js.Function) = this()
 }

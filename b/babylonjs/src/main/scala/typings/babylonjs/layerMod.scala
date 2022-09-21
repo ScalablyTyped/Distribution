@@ -1,11 +1,11 @@
 package typings.babylonjs
 
+import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object layerMod {
   
   @JSImport("babylonjs/Layers/layer", "Layer")
   @js.native
-  class Layer protected () extends StObject {
+  open class Layer protected () extends StObject {
     /**
       * Instantiates a new layer.
       * This represents a full screen 2d layer.
@@ -65,26 +65,26 @@ object layerMod {
       color: Color4
     ) = this()
     
-    /* private */ var _createIndexBuffer: js.Any = js.native
+    /* private */ var _createIndexBuffer: Any = js.native
     
-    /* private */ var _effect: js.Any = js.native
+    /* private */ var _drawWrapper: Any = js.native
     
-    /* private */ var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: Any = js.native
     
-    /* private */ var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: Any = js.native
     
-    /* private */ var _onBeforeRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeRenderObserver: Any = js.native
     
-    /* private */ var _onDisposeObserver: js.Any = js.native
+    /* private */ var _onDisposeObserver: Any = js.native
     
-    /* private */ var _previousDefines: js.Any = js.native
+    /* private */ var _previousDefines: Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _vertexBuffers: js.Any = js.native
+    /* private */ var _vertexBuffers: Any = js.native
     
     /**
       * Define the alpha blending mode used in the layer in case the texture or color has an alpha.
@@ -104,7 +104,7 @@ object layerMod {
     var color: Color4 = js.native
     
     /**
-      * Disposes and releases the associated ressources.
+      * Disposes and releases the associated resources.
       */
     def dispose(): Unit = js.native
     
@@ -112,6 +112,11 @@ object layerMod {
       * Is the layer in background or foreground.
       */
     var isBackground: Boolean = js.native
+    
+    /**
+      * Define if the layer is enabled (ie. should be displayed). Default: true
+      */
+    var isEnabled: Boolean = js.native
     
     /**
       * Define a mask to restrict the layer to only some of the scene cameras.
@@ -185,6 +190,6 @@ object layerMod {
     /**
       * Define the texture the layer should display.
       */
-    var texture: Nullable[Texture] = js.native
+    var texture: Nullable[BaseTexture] = js.native
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Email.EmailIrmTemplate")
 @js.native
 /** Creates a new instance of the EmailIrmTemplate class. */
-class EmailIrmTemplate ()
+open class EmailIrmTemplate ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailIrmTemplate {
   /**

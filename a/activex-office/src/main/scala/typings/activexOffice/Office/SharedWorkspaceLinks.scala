@@ -14,7 +14,7 @@ trait SharedWorkspaceLinks extends StObject {
   def Add(URL: String, Description: String, Notes: String): SharedWorkspaceLink = js.native
   def Add(URL: String, Description: Unit, Notes: String): SharedWorkspaceLink = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -24,5 +24,5 @@ trait SharedWorkspaceLinks extends StObject {
   
   val ItemCountExceeded: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

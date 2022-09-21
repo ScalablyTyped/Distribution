@@ -34,7 +34,7 @@ object ParameterGroupStatus {
     
     inline def setNodeIdsToRebootUndefined: Self = StObject.set(x, "NodeIdsToReboot", js.undefined)
     
-    inline def setNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "NodeIdsToReboot", js.Array(value :_*))
+    inline def setNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "NodeIdsToReboot", js.Array(value*))
     
     inline def setParameterApplyStatus(value: String): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     

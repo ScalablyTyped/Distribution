@@ -46,11 +46,18 @@ trait EsriErrorDetails
   var messages: js.Array[String]
   
   /**
+    * The raw error object if the server returned a JSON error, or the response text if the server didn't return a 200 response code.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+    */
+  var raw: Any | String
+  
+  /**
     * The query parameters sent with the http request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
     */
-  var requestOptions: js.Any
+  var requestOptions: Any
   
   /**
     * Indicates if the request required https.
@@ -83,12 +90,13 @@ object EsriErrorDetails {
     messageCode: String,
     messages: js.Array[String],
     propertyIsEnumerable: PropertyKey => Boolean,
-    requestOptions: js.Any,
+    raw: Any | String,
+    requestOptions: Any,
     ssl: Boolean,
     subCode: Double,
     url: String
   ): EsriErrorDetails = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), httpStatus = httpStatus.asInstanceOf[js.Any], messageCode = messageCode.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), requestOptions = requestOptions.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], subCode = subCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), httpStatus = httpStatus.asInstanceOf[js.Any], messageCode = messageCode.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), raw = raw.asInstanceOf[js.Any], requestOptions = requestOptions.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], subCode = subCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[EsriErrorDetails]
   }
   
@@ -102,9 +110,11 @@ object EsriErrorDetails {
     
     inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value*))
     
-    inline def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Any | String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    
+    inline def setRequestOptions(value: Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
     inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with TSBaseType
-     with TSType {
+     with TSType
+     with TypeScript {
   
   @JSName("type")
   var type_TSNullKeyword_ : TSNullKeyword

@@ -15,14 +15,14 @@ object resizerMod {
   
   @JSImport("re-resizable/lib/resizer", "Resizer")
   @js.native
-  class Resizer protected ()
-    extends PureComponent[Props, js.Object, js.Any] {
+  open class Resizer protected ()
+    extends PureComponent[Props, js.Object, Any] {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
     
     def onMouseDown(e: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit = js.native
     

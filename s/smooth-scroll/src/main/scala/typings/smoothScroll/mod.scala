@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("smooth-scroll", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with SmoothScroll {
     def this(selector: String) = this()

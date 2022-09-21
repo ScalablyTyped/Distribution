@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyITADataGenerator")
 @js.native
 /** Initializes a new instance of the PlayReadyITADataGenerator class. */
-class PlayReadyITADataGenerator ()
+open class PlayReadyITADataGenerator ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyITADataGenerator {
   

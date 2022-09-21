@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.anon.BackendMathBackendWebGL
+import typings.tensorflowTfjsBackendWebgl.anon.InputsFFTInputs
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ object fftMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fft(args: BackendMathBackendWebGL): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fft")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def fft(args: InputsFFTInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fft")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/FFT", "fftConfig")
   @js.native

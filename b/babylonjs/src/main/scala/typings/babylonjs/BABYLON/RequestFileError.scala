@@ -1,20 +1,19 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RequestFileError
   extends StObject
-     with Error {
+     with RuntimeError {
   
   var request: WebRequest
 }
 object RequestFileError {
   
-  inline def apply(message: String, name: String, request: WebRequest): RequestFileError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+  inline def apply(errorCode: ErrorCodesType, message: String, name: String, request: WebRequest): RequestFileError = {
+    val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestFileError]
   }
   

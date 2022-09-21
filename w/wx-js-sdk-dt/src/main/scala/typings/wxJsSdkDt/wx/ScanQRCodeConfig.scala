@@ -42,7 +42,7 @@ object ScanQRCodeConfig {
     
     inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
-    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
+    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value*))
     
     inline def setSuccess(value: /* res */ ResultStr => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

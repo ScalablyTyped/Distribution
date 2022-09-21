@@ -31,6 +31,6 @@ object DisableCheckIfAllPixelsAreTransparent {
     
     inline def setPixelsToCheck(value: js.Array[Cartesian2]): Self = StObject.set(x, "pixelsToCheck", value.asInstanceOf[js.Any])
     
-    inline def setPixelsToCheckVarargs(value: Cartesian2*): Self = StObject.set(x, "pixelsToCheck", js.Array(value :_*))
+    inline def setPixelsToCheckVarargs(value: Cartesian2*): Self = StObject.set(x, "pixelsToCheck", js.Array(value*))
   }
 }

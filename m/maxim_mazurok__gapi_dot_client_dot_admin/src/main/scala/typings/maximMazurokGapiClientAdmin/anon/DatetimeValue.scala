@@ -21,11 +21,11 @@ trait DatetimeValue extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[Any]
     ]
   ] = js.undefined
   
-  /** Name of the parameter. */
+  /** The name of the parameter. For the User Usage Report parameter names, see the User Usage parameters reference. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. String value of the parameter. */
@@ -56,7 +56,7 @@ object DatetimeValue {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "msgValue", value.asInstanceOf[js.Any])
     
@@ -65,8 +65,8 @@ object DatetimeValue {
     inline def setMsgValueVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "msgValue", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.DatetimeValue & TopLevel[Any])*
+    ): Self = StObject.set(x, "msgValue", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

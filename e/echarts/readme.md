@@ -11,12 +11,12 @@ Apache ECharts is a powerful, interactive charting and data visualization librar
 | Full name          | echarts |
 | Keywords           | echarts, data-visualization, charts, charting-library, visualization, apache, data-viz, canvas, svg |
 | # releases         | 22 |
-| # dependents       | 2016 |
-| # downloads        | 11669887 |
-| # stars            | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 2019906.3333333333 |
+| # stars            | 52457.0 |
 
 ## Links
-- [Homepage](http://echarts.apache.org)
+- [Homepage](https://echarts.apache.org)
 - [Bugs](https://github.com/apache/echarts/issues)
 - [Repository](https://github.com/apache/echarts)
 - [Npm](https://www.npmjs.com/package/echarts)

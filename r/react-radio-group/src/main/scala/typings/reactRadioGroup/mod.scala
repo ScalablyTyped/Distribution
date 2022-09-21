@@ -26,10 +26,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("react-radio-group", "Radio")
     @js.native
-    class ^ protected ()
-      extends Component[RadioProps, ComponentState, js.Any] {
+    open class ^ protected () extends Component[RadioProps, ComponentState, Any] {
       def this(props: RadioProps) = this()
-      def this(props: RadioProps, context: js.Any) = this()
+      def this(props: RadioProps, context: Any) = this()
     }
     
     @JSImport("react-radio-group", "Radio")
@@ -52,17 +51,16 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("react-radio-group", "RadioGroup")
     @js.native
-    class ^ protected ()
-      extends Component[RadioGroupProps, ComponentState, js.Any] {
+    open class ^ protected () extends Component[RadioGroupProps, ComponentState, Any] {
       def this(props: RadioGroupProps) = this()
-      def this(props: RadioGroupProps, context: js.Any) = this()
+      def this(props: RadioGroupProps, context: Any) = this()
     }
     
     @JSImport("react-radio-group", "RadioGroup")
     @js.native
     val ^ : js.Object & (ComponentClass[RadioGroupProps, ComponentState]) = js.native
     
-    type RadioGroupProps = (Omit[HTMLProps[js.Any], onChange]) & typings.reactRadioGroup.anon.Component
+    type RadioGroupProps = (Omit[HTMLProps[Any], onChange]) & typings.reactRadioGroup.anon.Component
     
     type _To = js.Object & (ComponentClass[RadioGroupProps, ComponentState])
     

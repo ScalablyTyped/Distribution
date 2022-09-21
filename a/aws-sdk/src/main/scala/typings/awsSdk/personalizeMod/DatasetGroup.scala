@@ -9,7 +9,7 @@ trait DatasetGroup extends StObject {
   /**
     * The creation date and time (in Unix time) of the dataset group.
     */
-  var creationDateTime: js.UndefOr[Date] = js.undefined
+  var creationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group.
@@ -17,19 +17,24 @@ trait DatasetGroup extends StObject {
   var datasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
+    * The domain of a Domain dataset group.
+    */
+  var domain: js.UndefOr[Domain] = js.undefined
+  
+  /**
     * If creating a dataset group fails, provides the reason why.
     */
   var failureReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the KMS key used to encrypt the datasets.
+    * The Amazon Resource Name (ARN) of the Key Management Service (KMS) key used to encrypt the datasets.
     */
   var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.undefined
   
   /**
     * The last update date and time (in Unix time) of the dataset group.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the dataset group.
@@ -55,13 +60,17 @@ object DatasetGroup {
   
   extension [Self <: DatasetGroup](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     
     inline def setDatasetGroupArnUndefined: Self = StObject.set(x, "datasetGroupArn", js.undefined)
+    
+    inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
@@ -71,7 +80,7 @@ object DatasetGroup {
     
     inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     

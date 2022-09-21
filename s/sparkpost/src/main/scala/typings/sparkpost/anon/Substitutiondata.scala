@@ -8,7 +8,7 @@ trait Substitutiondata extends StObject {
   
   var draft: js.UndefOr[Boolean] = js.undefined
   
-  var substitution_data: js.UndefOr[js.Any] = js.undefined
+  var substitution_data: js.UndefOr[Any] = js.undefined
 }
 object Substitutiondata {
   
@@ -23,7 +23,7 @@ object Substitutiondata {
     
     inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
-    inline def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    inline def setSubstitution_data(value: Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
     
     inline def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
   }

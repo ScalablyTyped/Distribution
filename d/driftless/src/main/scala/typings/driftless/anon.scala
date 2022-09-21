@@ -8,7 +8,7 @@ object anon {
   
   trait CustomClearTimeout extends StObject {
     
-    var customClearTimeout: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var customClearTimeout: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   }
   object CustomClearTimeout {
     
@@ -19,7 +19,7 @@ object anon {
     
     extension [Self <: CustomClearTimeout](x: Self) {
       
-      inline def setCustomClearTimeout(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "customClearTimeout", js.Any.fromFunction1(value))
+      inline def setCustomClearTimeout(value: /* repeated */ Any => Unit): Self = StObject.set(x, "customClearTimeout", js.Any.fromFunction1(value))
       
       inline def setCustomClearTimeoutUndefined: Self = StObject.set(x, "customClearTimeout", js.undefined)
     }

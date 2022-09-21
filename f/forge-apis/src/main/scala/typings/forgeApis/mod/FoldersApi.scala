@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "FoldersApi")
 @js.native
-class FoldersApi () extends StObject {
+open class FoldersApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Returns the folder by ID for any folder within a given project. All folders or sub-folders within a project

@@ -29,7 +29,7 @@ trait DescribeObjectResponse extends StObject {
   /**
     * The date and time that the object was last modified.
     */
-  var LastModified: js.UndefOr[TimeStamp] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeObjectResponse {
   
@@ -56,7 +56,7 @@ object DescribeObjectResponse {
     
     inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    inline def setLastModified(value: TimeStamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
   }

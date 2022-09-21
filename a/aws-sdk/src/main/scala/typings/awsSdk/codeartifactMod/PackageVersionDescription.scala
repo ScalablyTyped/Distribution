@@ -12,7 +12,7 @@ trait PackageVersionDescription extends StObject {
   var displayName: js.UndefOr[String255] = js.undefined
   
   /**
-    *  The format of the package version. The valid package formats are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.   
+    *  The format of the package version. 
     */
   var format: js.UndefOr[PackageFormat] = js.undefined
   
@@ -27,9 +27,14 @@ trait PackageVersionDescription extends StObject {
   var licenses: js.UndefOr[LicenseInfoList] = js.undefined
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace of the package version. The package version component that specifies its namespace depends on its type. For example:    The namespace of a Maven package version is its groupId.     The namespace of an npm package version is its scope.     Python and NuGet package versions do not contain a corresponding component, package versions of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
+  
+  /**
+    * A PackageVersionOrigin object that contains information about how the package version was added to the repository.
+    */
+  var origin: js.UndefOr[PackageVersionOrigin] = js.undefined
   
   /**
     *  The name of the requested package. 
@@ -39,7 +44,7 @@ trait PackageVersionDescription extends StObject {
   /**
     *  A timestamp that contains the date and time the package version was published. 
     */
-  var publishedTime: js.UndefOr[Timestamp] = js.undefined
+  var publishedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The revision of the package version. 
@@ -52,7 +57,7 @@ trait PackageVersionDescription extends StObject {
   var sourceCodeRepository: js.UndefOr[String] = js.undefined
   
   /**
-    *  A string that contains the status of the package version. It can be one of the following:     Published     Unfinished     Unlisted     Archived     Disposed   
+    *  A string that contains the status of the package version. 
     */
   var status: js.UndefOr[PackageVersionStatus] = js.undefined
   
@@ -91,17 +96,21 @@ object PackageVersionDescription {
     
     inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
-    inline def setLicensesVarargs(value: LicenseInfo*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+    inline def setLicensesVarargs(value: LicenseInfo*): Self = StObject.set(x, "licenses", js.Array(value*))
     
     inline def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
+    inline def setOrigin(value: PackageVersionOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
     inline def setPackageName(value: PackageName): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    inline def setPublishedTime(value: Timestamp): Self = StObject.set(x, "publishedTime", value.asInstanceOf[js.Any])
+    inline def setPublishedTime(value: js.Date): Self = StObject.set(x, "publishedTime", value.asInstanceOf[js.Any])
     
     inline def setPublishedTimeUndefined: Self = StObject.set(x, "publishedTime", js.undefined)
     

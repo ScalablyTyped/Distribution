@@ -10,10 +10,10 @@ Lucene query parser and formatter for JavaScript created using PEG.js
 | ------------------ | :-------------: |
 | Full name          | lucene |
 | Keywords           | lucene, query, parser, pegjs, formatter |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 243844 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 36645.666666666664 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/bripkens/lucene#readme)

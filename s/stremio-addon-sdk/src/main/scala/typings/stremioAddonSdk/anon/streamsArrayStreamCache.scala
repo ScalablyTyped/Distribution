@@ -49,6 +49,6 @@ object streamsArrayStreamCache {
     
     inline def setStreams(value: js.Array[Stream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
     
-    inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,11 @@ trait IBlockHeader extends StObject {
   
   /** BlockHeader blockNum */
   var blockNum: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) | Null
   ] = js.undefined
   
   /** BlockHeader consensus */
-  var consensus: js.UndefOr[Uint8Array | Null] = js.undefined
+  var consensus: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** BlockHeader previousBlockId */
   var previousBlockId: js.UndefOr[String | Null] = js.undefined
@@ -42,17 +41,17 @@ object IBlockHeader {
     
     inline def setBatchIdsUndefined: Self = StObject.set(x, "batchIds", js.undefined)
     
-    inline def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value :_*))
+    inline def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value*))
     
     inline def setBlockNum(
-      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
     ): Self = StObject.set(x, "blockNum", value.asInstanceOf[js.Any])
     
     inline def setBlockNumNull: Self = StObject.set(x, "blockNum", null)
     
     inline def setBlockNumUndefined: Self = StObject.set(x, "blockNum", js.undefined)
     
-    inline def setConsensus(value: Uint8Array): Self = StObject.set(x, "consensus", value.asInstanceOf[js.Any])
+    inline def setConsensus(value: js.typedarray.Uint8Array): Self = StObject.set(x, "consensus", value.asInstanceOf[js.Any])
     
     inline def setConsensusNull: Self = StObject.set(x, "consensus", null)
     

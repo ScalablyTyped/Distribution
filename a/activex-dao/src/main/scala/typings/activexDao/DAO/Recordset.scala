@@ -42,7 +42,7 @@ trait Recordset extends StObject {
   
   def Close(): Unit = js.native
   
-  def Collect(Item: js.Any): js.Any = js.native
+  def Collect(Item: Any): Any = js.native
   
   var Connection: typings.activexDao.DAO.Connection = js.native
   
@@ -78,8 +78,8 @@ trait Recordset extends StObject {
   
   def FindPrevious(Criteria: String): Unit = js.native
   
-  def GetRows(): js.Any = js.native
-  def GetRows(NumRows: Double): js.Any = js.native
+  def GetRows(): Any = js.native
+  def GetRows(NumRows: Double): Any = js.native
   
   var Index: String = js.native
   
@@ -137,19 +137,19 @@ trait Recordset extends StObject {
   
   def Seek(
     Comparison: String,
-    Key1: js.Any,
-    Key2: js.UndefOr[js.Any],
-    Key3: js.UndefOr[js.Any],
-    Key4: js.UndefOr[js.Any],
-    Key5: js.UndefOr[js.Any],
-    Key6: js.UndefOr[js.Any],
-    Key7: js.UndefOr[js.Any],
-    Key8: js.UndefOr[js.Any],
-    Key9: js.UndefOr[js.Any],
-    Key10: js.UndefOr[js.Any],
-    Key11: js.UndefOr[js.Any],
-    Key12: js.UndefOr[js.Any],
-    Key13: js.UndefOr[js.Any]
+    Key1: Any,
+    Key2: js.UndefOr[Any],
+    Key3: js.UndefOr[Any],
+    Key4: js.UndefOr[Any],
+    Key5: js.UndefOr[Any],
+    Key6: js.UndefOr[Any],
+    Key7: js.UndefOr[Any],
+    Key8: js.UndefOr[Any],
+    Key9: js.UndefOr[Any],
+    Key10: js.UndefOr[Any],
+    Key11: js.UndefOr[Any],
+    Key12: js.UndefOr[Any],
+    Key13: js.UndefOr[Any]
   ): Unit = js.native
   
   var Sort: String = js.native

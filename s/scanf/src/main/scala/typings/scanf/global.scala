@@ -38,7 +38,7 @@ object global {
       	 * 
       	 * @return A JSON object containing data constructed from stdin with the <i>format</i> and following <i>names</i>.
       	 */
-      inline def apply(format: String, names: String*): js.Object = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def apply(format: String, names: String*): js.Object = ^.asInstanceOf[js.Dynamic].apply(List(format.asInstanceOf[js.Any]).`++`(names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
       /**
       	 * <p> Read formatted line from stdin. </p>
       	 * 
@@ -123,7 +123,7 @@ object global {
       		 * 
       		 * @return A JSON object containing data constructed from string with the <i>format</i> and following <i>names</i>.
       		 */
-      inline def sscanf(source: String, format: String, names: String*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def sscanf(source: String, format: String, names: String*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")((List(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(names.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
       
       /**
       		 * <p> Read formatted line from string. </p>

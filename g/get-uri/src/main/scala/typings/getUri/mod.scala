@@ -2,7 +2,6 @@ package typings.getUri
 
 import typings.node.streamMod.Readable
 import typings.node.urlMod.UrlWithStringQuery
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +33,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type GetUriCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* res */ js.UndefOr[Readable], Unit]
+  type GetUriCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* res */ js.UndefOr[Readable], Unit]
   
   trait GetUriOptions extends StObject {
     

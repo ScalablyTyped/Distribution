@@ -27,6 +27,13 @@ trait PortalItemProperties
   var accessInformation: js.UndefOr[String] = js.undefined
   
   /**
+    * An authorization string used to access the portal item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#apiKey)
+    */
+  var apiKey: js.UndefOr[String] = js.undefined
+  
+  /**
     * Average rating.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#avgRating)
@@ -148,6 +155,8 @@ trait PortalItemProperties
   /**
     * An array of string URLs.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#screenshots)
     */
   var screenshots: js.UndefOr[js.Array[String]] = js.undefined
@@ -171,7 +180,7 @@ trait PortalItemProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * User defined tags that describe the item.
@@ -225,6 +234,10 @@ object PortalItemProperties {
     
     inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    
+    inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+    
     inline def setAvgRating(value: Double): Self = StObject.set(x, "avgRating", value.asInstanceOf[js.Any])
     
     inline def setAvgRatingUndefined: Self = StObject.set(x, "avgRating", js.undefined)
@@ -233,7 +246,7 @@ object PortalItemProperties {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
@@ -255,7 +268,7 @@ object PortalItemProperties {
     
     inline def setGroupCategoriesUndefined: Self = StObject.set(x, "groupCategories", js.undefined)
     
-    inline def setGroupCategoriesVarargs(value: String*): Self = StObject.set(x, "groupCategories", js.Array(value :_*))
+    inline def setGroupCategoriesVarargs(value: String*): Self = StObject.set(x, "groupCategories", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -301,7 +314,7 @@ object PortalItemProperties {
     
     inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
-    inline def setScreenshotsVarargs(value: String*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
+    inline def setScreenshotsVarargs(value: String*): Self = StObject.set(x, "screenshots", js.Array(value*))
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
@@ -311,7 +324,7 @@ object PortalItemProperties {
     
     inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
@@ -319,7 +332,7 @@ object PortalItemProperties {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -331,7 +344,7 @@ object PortalItemProperties {
     
     inline def setTypeKeywordsUndefined: Self = StObject.set(x, "typeKeywords", js.undefined)
     
-    inline def setTypeKeywordsVarargs(value: String*): Self = StObject.set(x, "typeKeywords", js.Array(value :_*))
+    inline def setTypeKeywordsVarargs(value: String*): Self = StObject.set(x, "typeKeywords", js.Array(value*))
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

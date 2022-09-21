@@ -27,7 +27,7 @@ object IClientEventsGetRequest {
     
     inline def setBlockIdsUndefined: Self = StObject.set(x, "blockIds", js.undefined)
     
-    inline def setBlockIdsVarargs(value: String*): Self = StObject.set(x, "blockIds", js.Array(value :_*))
+    inline def setBlockIdsVarargs(value: String*): Self = StObject.set(x, "blockIds", js.Array(value*))
     
     inline def setSubscriptions(value: js.Array[IEventSubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object IClientEventsGetRequest {
     
     inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
-    inline def setSubscriptionsVarargs(value: IEventSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: IEventSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
   }
 }

@@ -32,7 +32,7 @@ object BatchDisassociateProjectAssetsRequest {
     
     inline def setAssetIds(value: IDs): Self = StObject.set(x, "assetIds", value.asInstanceOf[js.Any])
     
-    inline def setAssetIdsVarargs(value: ID*): Self = StObject.set(x, "assetIds", js.Array(value :_*))
+    inline def setAssetIdsVarargs(value: ID*): Self = StObject.set(x, "assetIds", js.Array(value*))
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

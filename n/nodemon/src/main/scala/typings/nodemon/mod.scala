@@ -1,7 +1,7 @@
 package typings.nodemon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodemon.anon.Re
 import typings.nodemon.nodemonStrings.configColonupdate
 import typings.nodemon.nodemonStrings.crash
@@ -20,118 +20,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(options: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(options: Settings): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(options: String): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(options: Settings): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("nodemon", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addListener(event: start | exit | crash | configColonupdate | readable, listener: js.Function0[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(event: stdout | stderr, listener: js.Function1[/* data */ Buffer, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def addListener_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addListener_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def addListener_crash(event: crash, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addListener_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def addListener_exit(event: exit, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addListener_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def addListener_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addListener_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def addListener_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def addListener_readable(event: readable, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def addListener_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def addListener_start(event: start, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def addListener_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def addListener_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def addListener_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def emit(event: js.Symbol, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def emit_configupdate(event: configColonupdate): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def emit_crash(event: crash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def emit_exit(event: exit): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def emit(event: start | exit | crash | configColonupdate | readable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def emit(event: stdout | stderr, data: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def emit(event: String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def emit(event: js.Symbol, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def emit_log(event: log, msg: LogMessage): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def emit_quit(event: quit): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def emit_quit(event: quit, code: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def emit_readable(event: readable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   inline def emit_restart(event: restart): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def emit_restart(event: restart, files: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def emit_start(event: start): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def emit_stderr(event: stderr, data: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def emit_stdout(event: stdout, data: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
   inline def emit_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def on(event: start | exit | crash | configColonupdate | readable, listener: js.Function0[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(event: stdout | stderr, listener: js.Function1[/* data */ Buffer, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def on_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_crash(event: crash, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def on_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_exit(event: exit, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def on_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def on_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def once(event: start | exit | crash | configColonupdate | readable, listener: js.Function0[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def once(event: stdout | stderr, listener: js.Function1[/* data */ Buffer, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_readable(event: readable, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def once_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def once_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_start(event: start, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def once_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def once_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def on_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_crash(event: crash, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_exit(event: exit, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_readable(event: readable, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_start(event: start, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def once_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def removeAllListeners(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[js.Any]
-  inline def removeAllListeners(event: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def removeAllListeners(event: js.Symbol): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def removeAllListeners(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[Any]
+  inline def removeAllListeners(event: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def removeAllListeners(event: js.Symbol): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   inline def reset(done: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(done.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -166,7 +118,7 @@ object mod {
   
   trait Settings
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
     var args: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -202,7 +154,7 @@ object mod {
     /**
       * The global config file is useful for setting up default executables
       */
-    var execMap: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var execMap: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * Exit on crash, allows use of nodemon with daemon tools like forever.js.
@@ -265,7 +217,7 @@ object mod {
     /**
       * Use specified kill signal instead of default (ex. SIGTERM)
       */
-    var signal: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var signal: js.UndefOr[String] = js.undefined
     
     /**
       * Force nodemon to use spawn (over fork) [node only]
@@ -302,7 +254,7 @@ object mod {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setColours(value: Boolean): Self = StObject.set(x, "colours", value.asInstanceOf[js.Any])
       
@@ -330,7 +282,7 @@ object mod {
       
       inline def setExec(value: String): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
       
-      inline def setExecMap(value: StringDictionary[js.Any]): Self = StObject.set(x, "execMap", value.asInstanceOf[js.Any])
+      inline def setExecMap(value: StringDictionary[Any]): Self = StObject.set(x, "execMap", value.asInstanceOf[js.Any])
       
       inline def setExecMapUndefined: Self = StObject.set(x, "execMap", js.undefined)
       
@@ -350,11 +302,11 @@ object mod {
       
       inline def setIgnoreRootUndefined: Self = StObject.set(x, "ignoreRoot", js.undefined)
       
-      inline def setIgnoreRootVarargs(value: String*): Self = StObject.set(x, "ignoreRoot", js.Array(value :_*))
+      inline def setIgnoreRootVarargs(value: String*): Self = StObject.set(x, "ignoreRoot", js.Array(value*))
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: (String | Re)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: (String | Re)*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setLegacyWatch(value: Boolean): Self = StObject.set(x, "legacyWatch", value.asInstanceOf[js.Any])
       
@@ -368,7 +320,7 @@ object mod {
       
       inline def setNodeArgsUndefined: Self = StObject.set(x, "nodeArgs", js.undefined)
       
-      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value :_*))
+      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value*))
       
       inline def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
       
@@ -394,7 +346,7 @@ object mod {
       
       inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      inline def setSignal(value: StringDictionary[js.Any]): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
       inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
@@ -418,7 +370,7 @@ object mod {
       
       inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
       
-      inline def setWatchVarargs(value: (String | Re)*): Self = StObject.set(x, "watch", js.Array(value :_*))
+      inline def setWatchVarargs(value: (String | Re)*): Self = StObject.set(x, "watch", js.Array(value*))
     }
   }
 }

@@ -15,7 +15,7 @@ object core {
     */
   @JSImport("@paypal/payouts-sdk", "core.LiveEnvironment")
   @js.native
-  class LiveEnvironment protected () extends PayPalEnvironment {
+  open class LiveEnvironment protected () extends PayPalEnvironment {
     def this(clientId: String, clientSecret: String) = this()
   }
   
@@ -24,7 +24,7 @@ object core {
     */
   @JSImport("@paypal/payouts-sdk", "core.PayPalEnvironment")
   @js.native
-  class PayPalEnvironment protected () extends StObject {
+  open class PayPalEnvironment protected () extends StObject {
     def this(clientId: String, clientSecret: String, baseUrl: String, webUrl: String) = this()
     
     // Authorization header string for basic authentication with the current client id and secret
@@ -36,7 +36,7 @@ object core {
     */
   @JSImport("@paypal/payouts-sdk", "core.PayPalHttpClient")
   @js.native
-  class PayPalHttpClient protected () extends StObject {
+  open class PayPalHttpClient protected () extends StObject {
     def this(environment: PayPalEnvironment) = this()
     def this(environment: PayPalEnvironment, refreshToken: String) = this()
     
@@ -51,7 +51,7 @@ object core {
     */
   @JSImport("@paypal/payouts-sdk", "core.SandboxEnvironment")
   @js.native
-  class SandboxEnvironment protected () extends PayPalEnvironment {
+  open class SandboxEnvironment protected () extends PayPalEnvironment {
     def this(clientId: String, clientSecret: String) = this()
   }
 }

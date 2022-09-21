@@ -17,35 +17,35 @@ object interappbusChannelMod {
   
   @JSImport("openfin/_v2/api/interappbus/channel", "Channel")
   @js.native
-  class Channel protected () extends EmitterBase[ChannelEvents] {
+  open class Channel protected () extends EmitterBase[ChannelEvents] {
     def this(wire: default) = this()
     
     /* protected */ def addChannelToClientMaps(channel: ChannelClient, channelId: String, endpointId: String): Unit = js.native
     
     /* protected */ def checkForPreviousClientConnection(channelId: String): Unit = js.native
     
-    /* private */ var clientMap: js.Any = js.native
+    /* private */ var clientMap: Any = js.native
     
     def connect(channelName: String): js.Promise[ChannelClient] = js.native
     def connect(channelName: String, options: ConnectOptions): js.Promise[ChannelClient] = js.native
     
     def create(channelName: String): js.Promise[ChannelProvider] = js.native
     
-    /* private */ var endpointIdMap: js.Any = js.native
+    /* private */ var endpointIdMap: Any = js.native
     
     def getAllChannels(): js.Promise[js.Array[ProviderIdentity]] = js.native
     
-    def onChannelConnect(listener: js.Function1[/* repeated */ js.Any, Unit]): js.Promise[Unit] = js.native
+    def onChannelConnect(listener: js.Function1[/* repeated */ Any, Unit]): js.Promise[Unit] = js.native
     
-    def onChannelDisconnect(listener: js.Function1[/* repeated */ js.Any, Unit]): js.Promise[Unit] = js.native
+    def onChannelDisconnect(listener: js.Function1[/* repeated */ Any, Unit]): js.Promise[Unit] = js.native
     
     def onmessage(msg: ChannelMessage): Boolean = js.native
     
-    /* private */ var processChannelConnection: js.Any = js.native
+    /* private */ var processChannelConnection: Any = js.native
     
-    /* private */ var processChannelMessage: js.Any = js.native
+    /* private */ var processChannelMessage: Any = js.native
     
-    /* private */ var providerMap: js.Any = js.native
+    /* private */ var providerMap: Any = js.native
     
     /* protected */ def removeChannelFromClientMaps(channelId: String, endpointId: String): Unit = js.native
     
@@ -54,9 +54,9 @@ object interappbusChannelMod {
   
   trait ChannelMessage
     extends StObject
-       with Message[js.Any] {
+       with Message[Any] {
     
-    var ackToSender: js.Any
+    var ackToSender: Any
     
     var connectAction: Boolean
     
@@ -67,10 +67,10 @@ object interappbusChannelMod {
   object ChannelMessage {
     
     inline def apply(
-      ackToSender: js.Any,
+      ackToSender: Any,
       action: String,
       connectAction: Boolean,
-      payload: js.Any,
+      payload: Any,
       providerIdentity: ProviderIdentity,
       senderIdentity: Identity
     ): ChannelMessage = {
@@ -80,7 +80,7 @@ object interappbusChannelMod {
     
     extension [Self <: ChannelMessage](x: Self) {
       
-      inline def setAckToSender(value: js.Any): Self = StObject.set(x, "ackToSender", value.asInstanceOf[js.Any])
+      inline def setAckToSender(value: Any): Self = StObject.set(x, "ackToSender", value.asInstanceOf[js.Any])
       
       inline def setConnectAction(value: Boolean): Self = StObject.set(x, "connectAction", value.asInstanceOf[js.Any])
       
@@ -109,7 +109,7 @@ object interappbusChannelMod {
   
   trait ConnectOptions extends StObject {
     
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
     
     @JSName("wait")
     var wait_FConnectOptions: js.UndefOr[Boolean] = js.undefined
@@ -123,7 +123,7 @@ object interappbusChannelMod {
     
     extension [Self <: ConnectOptions](x: Self) {
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       

@@ -29,7 +29,7 @@ object DescribeListenersOutput {
     
     inline def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
     
-    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

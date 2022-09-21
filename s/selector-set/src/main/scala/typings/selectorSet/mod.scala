@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("selector-set", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with SelectorSet[T]
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[ArgumentsType /* <: js.Array[js.Any] */](arguments: ArgumentsType*): ArgumentsType = ^.asInstanceOf[js.Dynamic].apply(arguments.asInstanceOf[js.Any]).asInstanceOf[ArgumentsType]
+  inline def apply[ArgumentsType /* <: js.Array[Any] */](arguments: ArgumentsType*): ArgumentsType = ^.asInstanceOf[js.Dynamic].apply(arguments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ArgumentsType]
   
   @JSImport("array-union", JSImport.Namespace)
   @js.native

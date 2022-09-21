@@ -22,20 +22,44 @@ object esMasonryMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("react-virtualized/dist/es/Masonry", JSImport.Default)
+  @js.native
+  open class default protected () extends Masonry {
+    def this(props: MasonryProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: MasonryProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/Masonry", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/Masonry", "default.defaultProps")
+    @js.native
+    def defaultProps: KeyMapper = js.native
+    inline def defaultProps_=(x: KeyMapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    inline def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MasonryState | Null]
+  }
+  
   @JSImport("react-virtualized/dist/es/Masonry", "DEFAULT_SCROLLING_RESET_TIME_INTERVAL")
   @js.native
   val DEFAULT_SCROLLING_RESET_TIME_INTERVAL: /* 150 */ Double = js.native
   
   @JSImport("react-virtualized/dist/es/Masonry", "Masonry")
   @js.native
-  class Masonry protected ()
-    extends PureComponent[MasonryProps, MasonryState, js.Any] {
+  open class Masonry protected () extends PureComponent[MasonryProps, MasonryState, Any] {
     def this(props: MasonryProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MasonryProps, context: js.Any) = this()
+    def this(props: MasonryProps, context: Any) = this()
     
     def clearCellPositions(): Unit = js.native
     
@@ -107,7 +131,7 @@ object esMasonryMod {
     * Check the following link if you want to know more
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     var autoHeight: Boolean
     
@@ -180,7 +204,7 @@ object esMasonryMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setKeyMapper(value: (/* rowIndex */ Double, /* columnIndex */ Double) => js.Any): Self = StObject.set(x, "keyMapper", js.Any.fromFunction2(value))
+      inline def setKeyMapper(value: (/* rowIndex */ Double, /* columnIndex */ Double) => Any): Self = StObject.set(x, "keyMapper", js.Any.fromFunction2(value))
       
       inline def setKeyMapperUndefined: Self = StObject.set(x, "keyMapper", js.undefined)
       
@@ -299,7 +323,7 @@ object esMasonryMod {
   
   type emptyObject = js.Object
   
-  type identity = js.Function1[/* value */ js.Any, js.Any]
+  type identity = js.Function1[/* value */ Any, Any]
   
   type noop = js.Function0[Unit]
   

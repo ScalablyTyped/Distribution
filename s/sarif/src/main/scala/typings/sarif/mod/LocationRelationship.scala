@@ -44,7 +44,7 @@ object LocationRelationship {
     
     inline def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
     
-    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
+    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value*))
     
     inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

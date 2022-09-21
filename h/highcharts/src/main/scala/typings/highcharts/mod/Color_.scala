@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "Color")
 @js.native
-class Color_ protected () extends StObject {
+open class Color_ protected () extends StObject {
   /**
     * Handle color operations. Some object methods are chainable.
     *
@@ -56,9 +56,9 @@ class Color_ protected () extends StObject {
     *        The intermediate position, where 0 is the from color (current
     *        color item), and 1 is the `to` color.
     *
-    * @return The intermediate color in rgba notation.
+    * @return The intermediate color in rgba notation, or unsupported type.
     */
-  def tweenTo(to: Color_, pos: Double): ColorString = js.native
+  def tweenTo(to: Color_, pos: Double): ColorType = js.native
 }
 /* static members */
 object Color_ {
@@ -75,5 +75,6 @@ object Color_ {
     *
     * @return Color instance.
     */
+  inline def parse(): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[Color_]
   inline def parse(input: ColorType): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Color_]
 }

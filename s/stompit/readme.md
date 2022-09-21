@@ -10,10 +10,10 @@ STOMP client library for node.js
 | ------------------ | :-------------: |
 | Full name          | stompit |
 | Keywords           | stomp, messaging, activemq, rabbitmq |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 272976 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 32203.0 |
+| # stars            | 155.0 |
 
 ## Links
 - [Homepage](https://github.com/gdaws/node-stomp#readme)

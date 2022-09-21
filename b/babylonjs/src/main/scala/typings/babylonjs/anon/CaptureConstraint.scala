@@ -31,6 +31,6 @@ object CaptureConstraint {
     
     inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
   }
 }

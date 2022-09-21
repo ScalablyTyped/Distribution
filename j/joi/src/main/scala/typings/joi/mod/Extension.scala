@@ -3,7 +3,6 @@ package typings.joi.mod
 import typings.joi.anon.Build
 import typings.joi.anon.To
 import typings.std.Record
-import typings.std.RegExp
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Extension extends StObject {
   
-  var args: js.UndefOr[js.Function1[/* repeated */ SchemaLike, Schema]] = js.undefined
+  var args: js.UndefOr[js.Function1[/* repeated */ SchemaLike, Schema[Any]]] = js.undefined
   
-  var base: js.UndefOr[Schema] = js.undefined
+  var base: js.UndefOr[Schema[Any]] = js.undefined
   
   /**
     * undocumented options
@@ -29,14 +28,14 @@ trait Extension extends StObject {
   var messages: js.UndefOr[LanguageMessages | String] = js.undefined
   
   var modifiers: js.UndefOr[
-    Record[String, js.Function2[/* rule */ js.Any, /* enabled */ js.UndefOr[Boolean], js.Any]]
+    Record[String, js.Function2[/* rule */ Any, /* enabled */ js.UndefOr[Boolean], Any]]
   ] = js.undefined
   
-  var overrides: js.UndefOr[Record[String, js.Function1[/* value */ js.Any, Schema]]] = js.undefined
+  var overrides: js.UndefOr[Record[String, js.Function1[/* value */ Any, Schema[Any]]]] = js.undefined
   
-  var prepare: js.UndefOr[js.Function2[/* value */ js.Any, /* helpers */ CustomHelpers[js.Any], js.Any]] = js.undefined
+  var prepare: js.UndefOr[js.Function2[/* value */ Any, /* helpers */ CustomHelpers[Any], Any]] = js.undefined
   
-  var properties: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var properties: js.UndefOr[Record[String, Any]] = js.undefined
   
   var rebuild: js.UndefOr[js.Function1[/* schema */ ExtensionBoundSchema, Unit]] = js.undefined
   
@@ -44,13 +43,13 @@ trait Extension extends StObject {
   
   var terms: js.UndefOr[Record[String, ExtensionTerm]] = js.undefined
   
-  var `type`: String | RegExp
+  var `type`: String | js.RegExp
   
-  var validate: js.UndefOr[js.Function2[/* value */ js.Any, /* helpers */ CustomHelpers[js.Any], js.Any]] = js.undefined
+  var validate: js.UndefOr[js.Function2[/* value */ Any, /* helpers */ CustomHelpers[Any], Any]] = js.undefined
 }
 object Extension {
   
-  inline def apply(`type`: String | RegExp): Extension = {
+  inline def apply(`type`: String | js.RegExp): Extension = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension]
@@ -58,11 +57,11 @@ object Extension {
   
   extension [Self <: Extension](x: Self) {
     
-    inline def setArgs(value: /* repeated */ SchemaLike => Schema): Self = StObject.set(x, "args", js.Any.fromFunction1(value))
+    inline def setArgs(value: /* repeated */ SchemaLike => Schema[Any]): Self = StObject.set(x, "args", js.Any.fromFunction1(value))
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setBase(value: Schema): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Schema[Any]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
@@ -72,7 +71,7 @@ object Extension {
     
     inline def setCoerce(value: CoerceFunction | CoerceObject): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
     
-    inline def setCoerceFunction2(value: (/* value */ js.Any, /* helpers */ CustomHelpers[js.Any]) => CoerceResult): Self = StObject.set(x, "coerce", js.Any.fromFunction2(value))
+    inline def setCoerceFunction2(value: (/* value */ Any, /* helpers */ CustomHelpers[Any]) => CoerceResult): Self = StObject.set(x, "coerce", js.Any.fromFunction2(value))
     
     inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
     
@@ -88,19 +87,19 @@ object Extension {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setModifiers(value: Record[String, js.Function2[/* rule */ js.Any, /* enabled */ js.UndefOr[Boolean], js.Any]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: Record[String, js.Function2[/* rule */ Any, /* enabled */ js.UndefOr[Boolean], Any]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    inline def setOverrides(value: Record[String, js.Function1[/* value */ js.Any, Schema]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: Record[String, js.Function1[/* value */ Any, Schema[Any]]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setPrepare(value: (/* value */ js.Any, /* helpers */ CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
+    inline def setPrepare(value: (/* value */ Any, /* helpers */ CustomHelpers[Any]) => Any): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
     
     inline def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
     
-    inline def setProperties(value: Record[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Record[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
@@ -116,9 +115,9 @@ object Extension {
     
     inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
     
-    inline def setType(value: String | RegExp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | js.RegExp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValidate(value: (/* value */ js.Any, /* helpers */ CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+    inline def setValidate(value: (/* value */ Any, /* helpers */ CustomHelpers[Any]) => Any): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }

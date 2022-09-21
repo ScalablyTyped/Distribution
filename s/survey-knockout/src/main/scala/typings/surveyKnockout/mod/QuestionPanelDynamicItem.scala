@@ -6,34 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionPanelDynamicItem")
 @js.native
-class QuestionPanelDynamicItem protected ()
+open class QuestionPanelDynamicItem protected ()
   extends StObject
      with ISurveyData
-     with ISurveyImpl
-     with ITextProcessor {
+     with ISurveyImpl {
   def this(data: IQuestionPanelDynamicData, panel: PanelModel) = this()
   
-  /* CompleteClass */
-  override def geSurveyData(): ISurveyData = js.native
+  var data: IQuestionPanelDynamicData = js.native
   
   /* CompleteClass */
   override def getSurvey(): ISurvey = js.native
   
   /* CompleteClass */
+  override def getSurveyData(): ISurveyData = js.native
+  
+  /* CompleteClass */
   override def getTextProcessor(): ITextProcessor = js.native
   
-  val panel: PanelModel = js.native
+  def panel: PanelModel = js.native
   
-  /* CompleteClass */
-  override def processText(text: String, returnDisplayValue: Boolean): String = js.native
-  
-  def processTextEx(text: String, returnDisplayValue: Boolean): js.Any = js.native
-  /* CompleteClass */
-  override def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
+  var panelValue: PanelModel = js.native
   
   def setSurveyImpl(): Unit = js.native
   
-  def setValue(name: String, newValue: js.Any): Unit = js.native
+  def setValue(name: String, newValue: Any): Unit = js.native
+  
+  var textPreProcessor: QuestionPanelDynamicItemTextProcessor = js.native
 }
 /* static members */
 object QuestionPanelDynamicItem {
@@ -51,4 +49,9 @@ object QuestionPanelDynamicItem {
   @js.native
   def ItemVariableName: String = js.native
   inline def ItemVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemVariableName")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "QuestionPanelDynamicItem.ParentItemVariableName")
+  @js.native
+  def ParentItemVariableName: String = js.native
+  inline def ParentItemVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParentItemVariableName")(x.asInstanceOf[js.Any])
 }

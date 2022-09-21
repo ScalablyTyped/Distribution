@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__app-types
 
-Typings are for version 0.6.1
+Typings are for version 0.7.0
 
 ## Library description:
 @firebase/app Types
@@ -10,10 +10,10 @@ Typings are for version 0.6.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/app-types |
 | Keywords           | - |
-| # releases         | 1307 |
-| # dependents       | 50 |
-| # downloads        | 64683175 |
-| # stars            | 0 |
+| # releases         | 1158 |
+| # dependents       | 0.0 |
+| # downloads        | 9893221.0 |
+| # stars            | 4194.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

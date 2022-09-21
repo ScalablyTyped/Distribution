@@ -28,7 +28,7 @@ object IListContextsResponse {
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: IContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: IContext*): Self = StObject.set(x, "contexts", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

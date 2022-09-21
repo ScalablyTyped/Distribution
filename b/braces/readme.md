@@ -10,10 +10,10 @@ Bash-like brace expansion, implemented in JavaScript. Safer than other brace exp
 | ------------------ | :-------------: |
 | Full name          | braces |
 | Keywords           | alpha, alphabetical, bash, brace, braces, expand, expansion, filepath, fill, fs, glob, globbing, letter, match, matches, matching, number, numerical, path, range, ranges, sh |
-| # releases         | 4 |
-| # dependents       | 242 |
-| # downloads        | 1486039403 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3334418E8 |
+| # stars            | 156.0 |
 
 ## Links
 - [Homepage](https://github.com/micromatch/braces)

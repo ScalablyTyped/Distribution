@@ -12,7 +12,7 @@ object gamepadSceneComponentMod {
   
   @JSImport("babylonjs/Gamepads/gamepadSceneComponent", "GamepadSystemSceneComponent")
   @js.native
-  class GamepadSystemSceneComponent protected ()
+  open class GamepadSystemSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -21,7 +21,7 @@ object gamepadSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _beforeCameraUpdate: js.Any = js.native
+    /* private */ var _beforeCameraUpdate: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.

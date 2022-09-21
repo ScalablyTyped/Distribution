@@ -17,7 +17,7 @@ trait Node extends StObject {
   var JobDetails: js.UndefOr[JobNodeDetails] = js.undefined
   
   /**
-    * The name of the AWS Glue component represented by the node.
+    * The name of the Glue component represented by the node.
     */
   var Name: js.UndefOr[NameString] = js.undefined
   
@@ -27,7 +27,7 @@ trait Node extends StObject {
   var TriggerDetails: js.UndefOr[TriggerNodeDetails] = js.undefined
   
   /**
-    * The type of AWS Glue component represented by the node.
+    * The type of Glue component represented by the node.
     */
   var Type: js.UndefOr[NodeType] = js.undefined
   

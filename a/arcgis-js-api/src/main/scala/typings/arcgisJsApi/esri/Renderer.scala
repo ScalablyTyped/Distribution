@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`class-breaks`
 import typings.arcgisJsApi.arcgisJsApiStrings.`dot-density`
+import typings.arcgisJsApi.arcgisJsApiStrings.`pie-chart`
 import typings.arcgisJsApi.arcgisJsApiStrings.`unique-value`
 import typings.arcgisJsApi.arcgisJsApiStrings.dictionary
 import typings.arcgisJsApi.arcgisJsApiStrings.simple
@@ -27,5 +28,5 @@ trait Renderer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#type)
     */
-  val `type`: `class-breaks` | dictionary | `dot-density` | typings.arcgisJsApi.arcgisJsApiStrings.heatmap | simple | `unique-value` = js.native
+  val `type`: `class-breaks` | dictionary | `dot-density` | typings.arcgisJsApi.arcgisJsApiStrings.heatmap | `pie-chart` | simple | `unique-value` = js.native
 }

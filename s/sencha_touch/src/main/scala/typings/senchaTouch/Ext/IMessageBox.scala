@@ -19,14 +19,14 @@ trait IMessageBox
     js.Function4[
       /* title */ js.UndefOr[java.lang.String], 
       /* message */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
   
   /** [Config Option] (Array/Object) */
-  var buttons: js.UndefOr[js.Any] = js.undefined
+  var buttons: js.UndefOr[Any] = js.undefined
   
   /** [Method] Displays a confirmation message box with Yes and No buttons comparable to JavaScript s confirm
     * @param title String The title bar text.
@@ -39,8 +39,8 @@ trait IMessageBox
     js.Function4[
       /* title */ js.UndefOr[java.lang.String], 
       /* message */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -51,7 +51,7 @@ trait IMessageBox
   /** [Method] Returns the value of buttons
     * @returns Array/Object
     */
-  var getButtons: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getButtons: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of defaultTextHeight
     * @returns Number
@@ -61,12 +61,12 @@ trait IMessageBox
   /** [Method] Returns the value of layout
     * @returns Object
     */
-  var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of prompt
     * @returns Object
     */
-  var getPrompt: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getPrompt: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of title
     * @returns String
@@ -86,12 +86,12 @@ trait IMessageBox
   var msg: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Object) */
-  var prompt: js.UndefOr[js.Any] = js.undefined
+  var prompt: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of buttons
     * @param buttons Array/Object The new value.
     */
-  var setButtons: js.UndefOr[js.Function1[/* buttons */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setButtons: js.UndefOr[js.Function1[/* buttons */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultTextHeight
     * @param defaultTextHeight Number The new value.
@@ -117,7 +117,7 @@ trait IMessageBox
   /** [Method] Sets the value of prompt
     * @param prompt Object The new value.
     */
-  var setPrompt: js.UndefOr[js.Function1[/* prompt */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPrompt: js.UndefOr[js.Function1[/* prompt */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of title
     * @param title String The new value.
@@ -143,17 +143,17 @@ object IMessageBox {
   extension [Self <: IMessageBox](x: Self) {
     
     inline def setAlert(
-      value: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox
+      value: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IMessageBox
     ): Self = StObject.set(x, "alert", js.Any.fromFunction4(value))
     
     inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
     
-    inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     inline def setConfirm(
-      value: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox
+      value: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IMessageBox
     ): Self = StObject.set(x, "confirm", js.Any.fromFunction4(value))
     
     inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
@@ -162,7 +162,7 @@ object IMessageBox {
     
     inline def setDefaultTextHeightUndefined: Self = StObject.set(x, "defaultTextHeight", js.undefined)
     
-    inline def setGetButtons(value: () => js.Any): Self = StObject.set(x, "getButtons", js.Any.fromFunction0(value))
+    inline def setGetButtons(value: () => Any): Self = StObject.set(x, "getButtons", js.Any.fromFunction0(value))
     
     inline def setGetButtonsUndefined: Self = StObject.set(x, "getButtons", js.undefined)
     
@@ -170,11 +170,11 @@ object IMessageBox {
     
     inline def setGetDefaultTextHeightUndefined: Self = StObject.set(x, "getDefaultTextHeight", js.undefined)
     
-    inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
-    inline def setGetPrompt(value: () => js.Any): Self = StObject.set(x, "getPrompt", js.Any.fromFunction0(value))
+    inline def setGetPrompt(value: () => Any): Self = StObject.set(x, "getPrompt", js.Any.fromFunction0(value))
     
     inline def setGetPromptUndefined: Self = StObject.set(x, "getPrompt", js.undefined)
     
@@ -198,11 +198,11 @@ object IMessageBox {
     
     inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
-    inline def setPrompt(value: js.Any): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: Any): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    inline def setSetButtons(value: /* buttons */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setButtons", js.Any.fromFunction1(value))
+    inline def setSetButtons(value: /* buttons */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setButtons", js.Any.fromFunction1(value))
     
     inline def setSetButtonsUndefined: Self = StObject.set(x, "setButtons", js.undefined)
     
@@ -222,7 +222,7 @@ object IMessageBox {
     
     inline def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
     
-    inline def setSetPrompt(value: /* prompt */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPrompt", js.Any.fromFunction1(value))
+    inline def setSetPrompt(value: /* prompt */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPrompt", js.Any.fromFunction1(value))
     
     inline def setSetPromptUndefined: Self = StObject.set(x, "setPrompt", js.undefined)
     

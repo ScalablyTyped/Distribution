@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.Renderer")
 @js.native
-class Renderer protected ()
+open class Renderer protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Renderer {
   def this(sel: HTMLElement, backend: Backends) = this()

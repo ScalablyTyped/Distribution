@@ -10,8 +10,8 @@ object pickerMod {
   
   @JSImport("emoji-mart/dist-es/components/picker/picker", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[PickerProps, js.Object, js.Any]
+  open class default ()
+    extends PureComponent[PickerProps, js.Object, Any]
   
-  type Picker = PureComponent[PickerProps, js.Object, js.Any]
+  type Picker = PureComponent[PickerProps, js.Object, Any]
 }

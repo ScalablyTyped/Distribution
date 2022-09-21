@@ -12,9 +12,9 @@ trait Menu
   extends StObject
      with Widget {
   
-  def append(item: js.Any): Menu = js.native
-  def append(item: js.Any, referenceItem: String): Menu = js.native
-  def append(item: js.Any, referenceItem: JQuery): Menu = js.native
+  def append(item: Any): Menu = js.native
+  def append(item: Any, referenceItem: String): Menu = js.native
+  def append(item: Any, referenceItem: JQuery): Menu = js.native
   
   def close(element: String): Menu = js.native
   def close(element: JQuery): Menu = js.native
@@ -28,13 +28,13 @@ trait Menu
   
   def findByUid(uid: String): JQuery = js.native
   
-  def insertAfter(item: js.Any, referenceItem: String): Menu = js.native
-  def insertAfter(item: js.Any, referenceItem: JQuery): Menu = js.native
-  def insertAfter(item: js.Any, referenceItem: Element): Menu = js.native
+  def insertAfter(item: Any, referenceItem: String): Menu = js.native
+  def insertAfter(item: Any, referenceItem: JQuery): Menu = js.native
+  def insertAfter(item: Any, referenceItem: Element): Menu = js.native
   
-  def insertBefore(item: js.Any, referenceItem: String): Menu = js.native
-  def insertBefore(item: js.Any, referenceItem: JQuery): Menu = js.native
-  def insertBefore(item: js.Any, referenceItem: Element): Menu = js.native
+  def insertBefore(item: Any, referenceItem: String): Menu = js.native
+  def insertBefore(item: Any, referenceItem: JQuery): Menu = js.native
+  def insertBefore(item: Any, referenceItem: Element): Menu = js.native
   
   def open(element: String): Menu = js.native
   def open(element: JQuery): Menu = js.native

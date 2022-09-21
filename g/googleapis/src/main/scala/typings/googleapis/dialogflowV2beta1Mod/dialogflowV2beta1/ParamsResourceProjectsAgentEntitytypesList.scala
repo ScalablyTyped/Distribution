@@ -1,9 +1,5 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,34 +9,22 @@ trait ParamsResourceProjectsAgentEntitytypesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional. The language to list entity synonyms for. If not specified, the
-    * agent's default language is used. [Many
-    * languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language)
-    * are supported. Note: languages must be enabled in the agent before they
-    * can be used.
+    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
     */
   var languageCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. The maximum number of items to return in a single page. By
-    * default 100 and at most 1000.
+    * Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. The next_page_token value returned from a previous list
-    * request.
+    * Optional. The next_page_token value returned from a previous list request.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The agent to list all entity types from. Format:
-    * `projects/<Project ID>/agent`.
+    * Required. The agent to list all entity types from. Supported formats: - `projects//agent` - `projects//locations//agent`
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -52,10 +36,6 @@ object ParamsResourceProjectsAgentEntitytypesList {
   }
   
   extension [Self <: ParamsResourceProjectsAgentEntitytypesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

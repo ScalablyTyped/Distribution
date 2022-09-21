@@ -11,9 +11,13 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
+import typings.std.HTMLDivElement
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -29,16 +33,15 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rc-trigger", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[TriggerProps, js.Any, js.Any] {
+  open class default protected () extends Component[TriggerProps, Any, Any] {
     def this(props: TriggerProps) = this()
-    def this(props: TriggerProps, context: js.Any) = this()
+    def this(props: TriggerProps, context: Any) = this()
   }
   @JSImport("rc-trigger", JSImport.Default)
   @js.native
-  val default: ComponentClass[TriggerProps, js.Any] = js.native
+  val default: ComponentClass[TriggerProps, Any] = js.native
   
-  inline def generateTrigger(PortalComponent: js.Any): ComponentClass[TriggerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateTrigger")(PortalComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[TriggerProps, ComponentState]]
+  inline def generateTrigger(PortalComponent: Any): ComponentClass[TriggerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateTrigger")(PortalComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[TriggerProps, ComponentState]]
   
   trait TriggerProps extends StObject {
     
@@ -66,7 +69,7 @@ object mod {
     
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getDocument: js.UndefOr[js.Function0[HTMLDocument]] = js.undefined
+    var getDocument: js.UndefOr[js.Function1[/* element */ js.UndefOr[HTMLElement], HTMLDocument]] = js.undefined
     
     var getPopupClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.undefined
     
@@ -102,6 +105,8 @@ object mod {
     var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
     var onPopupAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
+    
+    var onPopupClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
@@ -147,7 +152,7 @@ object mod {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setActionVarargs(value: ActionType*): Self = StObject.set(x, "action", js.Array(value :_*))
+      inline def setActionVarargs(value: ActionType*): Self = StObject.set(x, "action", js.Array(value*))
       
       inline def setAfterPopupVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterPopupVisibleChange", js.Any.fromFunction1(value))
       
@@ -191,7 +196,7 @@ object mod {
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      inline def setGetDocument(value: () => HTMLDocument): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
+      inline def setGetDocument(value: /* element */ js.UndefOr[HTMLElement] => HTMLDocument): Self = StObject.set(x, "getDocument", js.Any.fromFunction1(value))
       
       inline def setGetDocumentUndefined: Self = StObject.set(x, "getDocument", js.undefined)
       
@@ -211,7 +216,7 @@ object mod {
       
       inline def setHideActionUndefined: Self = StObject.set(x, "hideAction", js.undefined)
       
-      inline def setHideActionVarargs(value: ActionType*): Self = StObject.set(x, "hideAction", js.Array(value :_*))
+      inline def setHideActionVarargs(value: ActionType*): Self = StObject.set(x, "hideAction", js.Array(value*))
       
       inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
@@ -248,6 +253,10 @@ object mod {
       inline def setOnPopupAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = StObject.set(x, "onPopupAlign", js.Any.fromFunction2(value))
       
       inline def setOnPopupAlignUndefined: Self = StObject.set(x, "onPopupAlign", js.undefined)
+      
+      inline def setOnPopupClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onPopupClick", js.Any.fromFunction1(value))
+      
+      inline def setOnPopupClickUndefined: Self = StObject.set(x, "onPopupClick", js.undefined)
       
       inline def setOnPopupVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction1(value))
       
@@ -299,7 +308,7 @@ object mod {
       
       inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      inline def setShowActionVarargs(value: ActionType*): Self = StObject.set(x, "showAction", js.Array(value :_*))
+      inline def setShowActionVarargs(value: ActionType*): Self = StObject.set(x, "showAction", js.Array(value*))
       
       inline def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       

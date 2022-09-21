@@ -11,5 +11,5 @@ trait TypedBinder
   
   def dataType(): String = js.native
   
-  def parsedValue(): js.Any = js.native
+  def parsedValue(): Any = js.native
 }

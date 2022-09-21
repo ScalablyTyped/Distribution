@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateFleetPortSettingsOutput extends StObject {
   
   /**
-    * A unique identifier for a fleet that was updated.
+    * A unique identifier for the fleet that was updated.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
 }

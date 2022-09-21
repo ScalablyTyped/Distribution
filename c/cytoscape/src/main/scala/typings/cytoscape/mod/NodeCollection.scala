@@ -18,4 +18,5 @@ trait NodeCollection
      with NodeCollectionPosition
      with NodeCollectionTraversing
      with NodeCollectionCompound
+     with NodeCollectionLayout
      with _CollectionArgument

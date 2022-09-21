@@ -25,7 +25,7 @@ trait AdapterCommon
      with ObjectCommon {
   
   /** Custom attributes to be shown in admin in the object browser */
-  var adminColumns: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var adminColumns: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** Settings for custom Admin Tabs */
   var adminTab: js.UndefOr[Faicon] = js.undefined
@@ -156,7 +156,7 @@ trait AdapterCommon
   
   var subscribable: js.UndefOr[Boolean] = js.undefined
   
-  var subscribe: js.UndefOr[js.Any] = js.undefined
+  var subscribe: js.UndefOr[Any] = js.undefined
   
   // ?
   /** If `true`, this adapter provides custom per-state settings. Requires a `custom_m.html` file in the `admin` directory. */
@@ -192,10 +192,10 @@ trait AdapterCommon
   /** Relative path to a module that contains an extension for the web adapter. Use together with @see native.webInstance to configure which instances this affects */
   var webExtension: js.UndefOr[String] = js.undefined
   
-  var webPreSettings: js.UndefOr[js.Any] = js.undefined
+  var webPreSettings: js.UndefOr[Any] = js.undefined
   
   // ?
-  var webservers: js.UndefOr[js.Any] = js.undefined
+  var webservers: js.UndefOr[Any] = js.undefined
   
   // ?
   /** A list of pages that should be shown on the "web" index page */
@@ -224,11 +224,11 @@ object AdapterCommon {
   
   extension [Self <: AdapterCommon](x: Self) {
     
-    inline def setAdminColumns(value: js.Array[js.Any]): Self = StObject.set(x, "adminColumns", value.asInstanceOf[js.Any])
+    inline def setAdminColumns(value: js.Array[Any]): Self = StObject.set(x, "adminColumns", value.asInstanceOf[js.Any])
     
     inline def setAdminColumnsUndefined: Self = StObject.set(x, "adminColumns", js.undefined)
     
-    inline def setAdminColumnsVarargs(value: js.Any*): Self = StObject.set(x, "adminColumns", js.Array(value :_*))
+    inline def setAdminColumnsVarargs(value: Any*): Self = StObject.set(x, "adminColumns", js.Array(value*))
     
     inline def setAdminTab(value: Faicon): Self = StObject.set(x, "adminTab", value.asInstanceOf[js.Any])
     
@@ -242,7 +242,7 @@ object AdapterCommon {
     
     inline def setAvailableModesUndefined: Self = StObject.set(x, "availableModes", js.undefined)
     
-    inline def setAvailableModesVarargs(value: InstanceMode*): Self = StObject.set(x, "availableModes", js.Array(value :_*))
+    inline def setAvailableModesVarargs(value: InstanceMode*): Self = StObject.set(x, "availableModes", js.Array(value*))
     
     inline def setBlockly(value: Boolean): Self = StObject.set(x, "blockly", value.asInstanceOf[js.Any])
     
@@ -270,7 +270,7 @@ object AdapterCommon {
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: (Record[String, String])*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: (Record[String, String])*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setDocs(value: PartialRecordLanguagesstr): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
@@ -296,7 +296,7 @@ object AdapterCommon {
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setLocalLink(value: String): Self = StObject.set(x, "localLink", value.asInstanceOf[js.Any])
     
@@ -362,7 +362,7 @@ object AdapterCommon {
     
     inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
-    inline def setOsVarargs(value: (linux | darwin | win32)*): Self = StObject.set(x, "os", js.Array(value :_*))
+    inline def setOsVarargs(value: (linux | darwin | win32)*): Self = StObject.set(x, "os", js.Array(value*))
     
     inline def setPlatform(value: JavascriptSlashNodeDotjs): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
@@ -370,13 +370,13 @@ object AdapterCommon {
     
     inline def setPreserveSettingsUndefined: Self = StObject.set(x, "preserveSettings", js.undefined)
     
-    inline def setPreserveSettingsVarargs(value: String*): Self = StObject.set(x, "preserveSettings", js.Array(value :_*))
+    inline def setPreserveSettingsVarargs(value: String*): Self = StObject.set(x, "preserveSettings", js.Array(value*))
     
     inline def setRestartAdapters(value: js.Array[String]): Self = StObject.set(x, "restartAdapters", value.asInstanceOf[js.Any])
     
     inline def setRestartAdaptersUndefined: Self = StObject.set(x, "restartAdapters", js.undefined)
     
-    inline def setRestartAdaptersVarargs(value: String*): Self = StObject.set(x, "restartAdapters", js.Array(value :_*))
+    inline def setRestartAdaptersVarargs(value: String*): Self = StObject.set(x, "restartAdapters", js.Array(value*))
     
     inline def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
@@ -406,7 +406,7 @@ object AdapterCommon {
     
     inline def setSubscribableUndefined: Self = StObject.set(x, "subscribable", js.undefined)
     
-    inline def setSubscribe(value: js.Any): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
+    inline def setSubscribe(value: Any): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
     
     inline def setSubscribeUndefined: Self = StObject.set(x, "subscribe", js.undefined)
     
@@ -452,11 +452,11 @@ object AdapterCommon {
     
     inline def setWebExtensionUndefined: Self = StObject.set(x, "webExtension", js.undefined)
     
-    inline def setWebPreSettings(value: js.Any): Self = StObject.set(x, "webPreSettings", value.asInstanceOf[js.Any])
+    inline def setWebPreSettings(value: Any): Self = StObject.set(x, "webPreSettings", value.asInstanceOf[js.Any])
     
     inline def setWebPreSettingsUndefined: Self = StObject.set(x, "webPreSettings", js.undefined)
     
-    inline def setWebservers(value: js.Any): Self = StObject.set(x, "webservers", value.asInstanceOf[js.Any])
+    inline def setWebservers(value: Any): Self = StObject.set(x, "webservers", value.asInstanceOf[js.Any])
     
     inline def setWebserversUndefined: Self = StObject.set(x, "webservers", js.undefined)
     
@@ -466,11 +466,11 @@ object AdapterCommon {
     
     inline def setWelcomeScreenProUndefined: Self = StObject.set(x, "welcomeScreenPro", js.undefined)
     
-    inline def setWelcomeScreenProVarargs(value: WelcomeScreenEntry*): Self = StObject.set(x, "welcomeScreenPro", js.Array(value :_*))
+    inline def setWelcomeScreenProVarargs(value: WelcomeScreenEntry*): Self = StObject.set(x, "welcomeScreenPro", js.Array(value*))
     
     inline def setWelcomeScreenUndefined: Self = StObject.set(x, "welcomeScreen", js.undefined)
     
-    inline def setWelcomeScreenVarargs(value: WelcomeScreenEntry*): Self = StObject.set(x, "welcomeScreen", js.Array(value :_*))
+    inline def setWelcomeScreenVarargs(value: WelcomeScreenEntry*): Self = StObject.set(x, "welcomeScreen", js.Array(value*))
     
     inline def setWwwDontUpload(value: Boolean): Self = StObject.set(x, "wwwDontUpload", value.asInstanceOf[js.Any])
     

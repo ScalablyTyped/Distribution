@@ -10,7 +10,7 @@ object global {
   
   @JSGlobal("Headroom")
   @js.native
-  class Headroom protected ()
+  open class Headroom protected ()
     extends StObject
        with typings.headroom.Headroom {
     def this(element: HTMLElement) = this()

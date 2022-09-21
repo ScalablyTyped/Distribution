@@ -1,13 +1,13 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.onEventsMod._EventListener
+import typings.vegaTypings.onEventsMod.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ScaleString
   extends StObject
-     with _EventListener {
+     with EventListener {
   
   var scale: String
 }

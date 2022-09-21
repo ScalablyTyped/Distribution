@@ -9,7 +9,12 @@ trait DescribeStreamProcessorResponse extends StObject {
   /**
     * Date and time the stream processor was created
     */
-  var CreationTimestamp: js.UndefOr[DateTime] = js.undefined
+  var CreationTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    *  Shows whether you are sharing data with Rekognition to improve model performance. You can choose this option at the account level or on a per-stream basis. Note that if you opt out at the account level this setting is ignored on individual streams. 
+    */
+  var DataSharingPreference: js.UndefOr[StreamProcessorDataSharingPreference] = js.undefined
   
   /**
     * Kinesis video stream that provides the source streaming video.
@@ -17,14 +22,21 @@ trait DescribeStreamProcessorResponse extends StObject {
   var Input: js.UndefOr[StreamProcessorInput] = js.undefined
   
   /**
+    *  The identifier for your AWS Key Management Service key (AWS KMS key). This is an optional parameter for label detection stream processors. 
+    */
+  var KmsKeyId: js.UndefOr[typings.awsSdk.rekognitionMod.KmsKeyId] = js.undefined
+  
+  /**
     * The time, in Unix format, the stream processor was last updated. For example, when the stream processor moves from a running state to a failed state, or when the user starts or stops the stream processor.
     */
-  var LastUpdateTimestamp: js.UndefOr[DateTime] = js.undefined
+  var LastUpdateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Name of the stream processor. 
     */
   var Name: js.UndefOr[StreamProcessorName] = js.undefined
+  
+  var NotificationChannel: js.UndefOr[StreamProcessorNotificationChannel] = js.undefined
   
   /**
     * Kinesis data stream to which Amazon Rekognition Video puts the analysis results.
@@ -32,12 +44,17 @@ trait DescribeStreamProcessorResponse extends StObject {
   var Output: js.UndefOr[StreamProcessorOutput] = js.undefined
   
   /**
+    *  Specifies locations in the frames where Amazon Rekognition checks for objects or people. This is an optional parameter for label detection stream processors. 
+    */
+  var RegionsOfInterest: js.UndefOr[typings.awsSdk.rekognitionMod.RegionsOfInterest] = js.undefined
+  
+  /**
     * ARN of the IAM role that allows access to the stream processor.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.rekognitionMod.RoleArn] = js.undefined
   
   /**
-    * Face recognition input parameters that are being used by the stream processor. Includes the collection to use for face recognition and the face attributes to detect.
+    * Input parameters used in a streaming video analyzed by a stream processor. You can use FaceSearch to recognize faces in a streaming video, or you can use ConnectedHome to detect labels.
     */
   var Settings: js.UndefOr[StreamProcessorSettings] = js.undefined
   
@@ -65,15 +82,23 @@ object DescribeStreamProcessorResponse {
   
   extension [Self <: DescribeStreamProcessorResponse](x: Self) {
     
-    inline def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
+    
+    inline def setDataSharingPreference(value: StreamProcessorDataSharingPreference): Self = StObject.set(x, "DataSharingPreference", value.asInstanceOf[js.Any])
+    
+    inline def setDataSharingPreferenceUndefined: Self = StObject.set(x, "DataSharingPreference", js.undefined)
     
     inline def setInput(value: StreamProcessorInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
-    inline def setLastUpdateTimestamp(value: DateTime): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    
+    inline def setLastUpdateTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimestampUndefined: Self = StObject.set(x, "LastUpdateTimestamp", js.undefined)
     
@@ -81,9 +106,19 @@ object DescribeStreamProcessorResponse {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
+    inline def setNotificationChannel(value: StreamProcessorNotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
+    
     inline def setOutput(value: StreamProcessorOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
     inline def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
+    
+    inline def setRegionsOfInterest(value: RegionsOfInterest): Self = StObject.set(x, "RegionsOfInterest", value.asInstanceOf[js.Any])
+    
+    inline def setRegionsOfInterestUndefined: Self = StObject.set(x, "RegionsOfInterest", js.undefined)
+    
+    inline def setRegionsOfInterestVarargs(value: RegionOfInterest*): Self = StObject.set(x, "RegionsOfInterest", js.Array(value*))
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

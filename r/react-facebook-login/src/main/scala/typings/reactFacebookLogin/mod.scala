@@ -19,8 +19,7 @@ object mod {
   
   @JSImport("react-facebook-login", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactFacebookLoginProps, ReactFacebookLoginState, js.Any]
+  open class default () extends Component[ReactFacebookLoginProps, ReactFacebookLoginState, Any]
   
   trait ReactFacebookFailureResponse extends StObject {
     
@@ -41,7 +40,7 @@ object mod {
     }
   }
   
-  type ReactFacebookLogin = Component[ReactFacebookLoginProps, ReactFacebookLoginState, js.Any]
+  type ReactFacebookLogin = Component[ReactFacebookLoginProps, ReactFacebookLoginState, Any]
   
   trait ReactFacebookLoginInfo extends StObject {
     
@@ -54,11 +53,13 @@ object mod {
     var name: js.UndefOr[String] = js.undefined
     
     var picture: js.UndefOr[Data] = js.undefined
+    
+    var userID: String
   }
   object ReactFacebookLoginInfo {
     
-    inline def apply(accessToken: String, id: String): ReactFacebookLoginInfo = {
-      val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    inline def apply(accessToken: String, id: String, userID: String): ReactFacebookLoginInfo = {
+      val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactFacebookLoginInfo]
     }
     
@@ -79,6 +80,8 @@ object mod {
       inline def setPicture(value: Data): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
       inline def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
+      
+      inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,7 +135,7 @@ object mod {
     
     var state: js.UndefOr[String] = js.native
     
-    var tag: js.UndefOr[Node | (Component[js.Any, js.Object, js.Any])] = js.native
+    var tag: js.UndefOr[Node | (Component[Any, js.Object, Any])] = js.native
     
     var textButton: js.UndefOr[String] = js.native
     

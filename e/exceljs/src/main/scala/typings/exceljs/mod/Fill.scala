@@ -1,7 +1,6 @@
 package typings.exceljs.mod
 
 import typings.exceljs.anon.Left
-import typings.exceljs.anon.PartialColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,8 +25,8 @@ object Fill {
     __obj.asInstanceOf[typings.exceljs.mod.FillGradientPath]
   }
   
-  inline def FillPattern(fgColor: PartialColor, pattern: FillPatterns): typings.exceljs.mod.FillPattern = {
-    val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+  inline def FillPattern(pattern: FillPatterns): typings.exceljs.mod.FillPattern = {
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[typings.exceljs.mod.FillPattern]
   }

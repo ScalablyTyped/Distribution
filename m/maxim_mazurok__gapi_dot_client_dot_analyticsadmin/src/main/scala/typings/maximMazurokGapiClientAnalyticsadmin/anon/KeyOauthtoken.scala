@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.anon
 
-import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaIosAppDataStream
+import typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin.GoogleAnalyticsAdminV1alphaCustomDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait KeyOauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent resource where this ios app data stream will be created. Format: properties/123 */
+  /** Required. Example format: properties/1234 */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,7 +39,7 @@ trait KeyOauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleAnalyticsAdminV1alphaIosAppDataStream
+  var resource: GoogleAnalyticsAdminV1alphaCustomDimension
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait KeyOauthtoken extends StObject {
 }
 object KeyOauthtoken {
   
-  inline def apply(parent: String, resource: GoogleAnalyticsAdminV1alphaIosAppDataStream): KeyOauthtoken = {
+  inline def apply(parent: String, resource: GoogleAnalyticsAdminV1alphaCustomDimension): KeyOauthtoken = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtoken]
   }
@@ -94,7 +94,7 @@ object KeyOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleAnalyticsAdminV1alphaIosAppDataStream): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleAnalyticsAdminV1alphaCustomDimension): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

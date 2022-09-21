@@ -10,10 +10,10 @@ Base16 themes as JS objects
 | ------------------ | :-------------: |
 | Full name          | base16 |
 | Keywords           | base16, color schemes |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 16741030 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2635524.0 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/gaearon/base16-js)

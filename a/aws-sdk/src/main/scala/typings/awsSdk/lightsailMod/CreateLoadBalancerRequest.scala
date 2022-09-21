@@ -32,6 +32,11 @@ trait CreateLoadBalancerRequest extends StObject {
   var instancePort: Port
   
   /**
+    * The IP address type for the load balancer. The possible values are ipv4 for IPv4 only, and dualstack for IPv4 and IPv6. The default value is dualstack.
+    */
+  var ipAddressType: js.UndefOr[IpAddressType] = js.undefined
+  
+  /**
     * The name of your load balancer.
     */
   var loadBalancerName: ResourceName
@@ -40,6 +45,11 @@ trait CreateLoadBalancerRequest extends StObject {
     * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
   var tags: js.UndefOr[TagList] = js.undefined
+  
+  /**
+    * The name of the TLS policy to apply to the load balancer. Use the GetLoadBalancerTlsPolicies action to get a list of TLS policy names that you can specify. For more information about load balancer TLS policies, see Configuring TLS security policies on your Amazon Lightsail load balancers in the Amazon Lightsail Developer Guide.
+    */
+  var tlsPolicyName: js.UndefOr[String] = js.undefined
 }
 object CreateLoadBalancerRequest {
   
@@ -54,7 +64,7 @@ object CreateLoadBalancerRequest {
     
     inline def setCertificateAlternativeNamesUndefined: Self = StObject.set(x, "certificateAlternativeNames", js.undefined)
     
-    inline def setCertificateAlternativeNamesVarargs(value: DomainName*): Self = StObject.set(x, "certificateAlternativeNames", js.Array(value :_*))
+    inline def setCertificateAlternativeNamesVarargs(value: DomainName*): Self = StObject.set(x, "certificateAlternativeNames", js.Array(value*))
     
     inline def setCertificateDomainName(value: DomainName): Self = StObject.set(x, "certificateDomainName", value.asInstanceOf[js.Any])
     
@@ -70,12 +80,20 @@ object CreateLoadBalancerRequest {
     
     inline def setInstancePort(value: Port): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
     
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
+    
     inline def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setTlsPolicyName(value: String): Self = StObject.set(x, "tlsPolicyName", value.asInstanceOf[js.Any])
+    
+    inline def setTlsPolicyNameUndefined: Self = StObject.set(x, "tlsPolicyName", js.undefined)
   }
 }

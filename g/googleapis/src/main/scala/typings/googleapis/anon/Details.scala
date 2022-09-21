@@ -23,7 +23,7 @@ object Details {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

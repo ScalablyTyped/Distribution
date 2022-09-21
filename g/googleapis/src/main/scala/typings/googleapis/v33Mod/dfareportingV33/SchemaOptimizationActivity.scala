@@ -4,29 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Creative optimization activity.
-  */
 trait SchemaOptimizationActivity extends StObject {
   
   /**
-    * Floodlight activity ID of this optimization activity. This is a required
-    * field.
+    * Floodlight activity ID of this optimization activity. This is a required field.
     */
-  var floodlightActivityId: js.UndefOr[String] = js.undefined
+  var floodlightActivityId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Dimension value for the ID of the floodlight activity. This is a
-    * read-only, auto-generated field.
+    * Dimension value for the ID of the floodlight activity. This is a read-only, auto-generated field.
     */
   var floodlightActivityIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
-    * Weight associated with this optimization. The weight assigned will be
-    * understood in proportion to the weights assigned to the other
-    * optimization activities. Value must be greater than or equal to 1.
+    * Weight associated with this optimization. The weight assigned will be understood in proportion to the weights assigned to the other optimization activities. Value must be greater than or equal to 1.
     */
-  var weight: js.UndefOr[Double] = js.undefined
+  var weight: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaOptimizationActivity {
   
@@ -43,9 +36,13 @@ object SchemaOptimizationActivity {
     
     inline def setFloodlightActivityIdDimensionValueUndefined: Self = StObject.set(x, "floodlightActivityIdDimensionValue", js.undefined)
     
+    inline def setFloodlightActivityIdNull: Self = StObject.set(x, "floodlightActivityId", null)
+    
     inline def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
     inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightNull: Self = StObject.set(x, "weight", null)
     
     inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }

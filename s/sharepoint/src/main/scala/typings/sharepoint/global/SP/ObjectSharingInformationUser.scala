@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ObjectSharingInformationUser")
 @js.native
-class ObjectSharingInformationUser ()
+open class ObjectSharingInformationUser ()
   extends StObject
      with typings.sharepoint.SP.ObjectSharingInformationUser

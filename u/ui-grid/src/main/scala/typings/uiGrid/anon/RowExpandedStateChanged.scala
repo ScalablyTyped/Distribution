@@ -10,8 +10,8 @@ trait RowExpandedStateChanged[TEntity] extends StObject {
   
   /**
     * raised when cell editing is complete
-    * @param {ng.IScope} scope
-    * @param {rowExpandedStateChangedHandler} handler
+    * @param scope
+    * @param handler
     */
   def rowExpandedStateChanged(scope: IScope, handler: rowExpandedStateChangedHandler[TEntity]): Unit
 }

@@ -29,6 +29,6 @@ object ListTransferRunsResponse {
     
     inline def setTransferRunsUndefined: Self = StObject.set(x, "transferRuns", js.undefined)
     
-    inline def setTransferRunsVarargs(value: TransferRun*): Self = StObject.set(x, "transferRuns", js.Array(value :_*))
+    inline def setTransferRunsVarargs(value: TransferRun*): Self = StObject.set(x, "transferRuns", js.Array(value*))
   }
 }

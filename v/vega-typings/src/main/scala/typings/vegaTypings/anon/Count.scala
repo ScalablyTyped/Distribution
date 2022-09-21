@@ -36,12 +36,12 @@ object Count {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
+    inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value*))
     
     inline def setStop(value: js.Array[Double]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
-    inline def setStopVarargs(value: Double*): Self = StObject.set(x, "stop", js.Array(value :_*))
+    inline def setStopVarargs(value: Double*): Self = StObject.set(x, "stop", js.Array(value*))
   }
 }

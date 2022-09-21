@@ -10,41 +10,54 @@ trait SVGMarkerElement
      with SVGElement
      with SVGFitToViewBox {
   
+  /* standard dom */
   val SVG_MARKERUNITS_STROKEWIDTH: Double = js.native
   
+  /* standard dom */
   val SVG_MARKERUNITS_UNKNOWN: Double = js.native
   
+  /* standard dom */
   val SVG_MARKERUNITS_USERSPACEONUSE: Double = js.native
   
+  /* standard dom */
   val SVG_MARKER_ORIENT_ANGLE: Double = js.native
   
+  /* standard dom */
   val SVG_MARKER_ORIENT_AUTO: Double = js.native
   
+  /* standard dom */
   val SVG_MARKER_ORIENT_UNKNOWN: Double = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val markerHeight: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val markerUnits: SVGAnimatedEnumeration = js.native
   
+  /* standard dom */
   val markerWidth: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val orientAngle: SVGAnimatedAngle = js.native
   
+  /* standard dom */
   val orientType: SVGAnimatedEnumeration = js.native
   
+  /* standard dom */
   val refX: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val refY: SVGAnimatedLength = js.native
   
   /* InferMemberOverrides */
@@ -58,7 +71,9 @@ trait SVGMarkerElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   def setOrientToAngle(angle: SVGAngle): Unit = js.native
   
+  /* standard dom */
   def setOrientToAuto(): Unit = js.native
 }

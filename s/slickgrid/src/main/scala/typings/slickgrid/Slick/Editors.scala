@@ -20,7 +20,7 @@ object Editors {
       init: () => Unit,
       isValueChanged: () => Boolean,
       loadValue: T => Unit,
-      serializeValue: () => js.Any,
+      serializeValue: () => Any,
       validate: () => ValidateResults
     ): Checkbox[T] = {
       val __obj = js.Dynamic.literal(applyValue = js.Any.fromFunction2(applyValue), destroy = js.Any.fromFunction0(destroy), focus = js.Any.fromFunction0(focus), init = js.Any.fromFunction0(init), isValueChanged = js.Any.fromFunction0(isValueChanged), loadValue = js.Any.fromFunction1(loadValue), serializeValue = js.Any.fromFunction0(serializeValue), validate = js.Any.fromFunction0(validate))
@@ -49,7 +49,7 @@ object Editors {
       isValueChanged: () => Boolean,
       loadValue: T => Unit,
       position: Position => Unit,
-      serializeValue: () => js.Any,
+      serializeValue: () => Any,
       show: () => Unit,
       validate: () => ValidateResults
     ): Date[T] = {
@@ -81,7 +81,7 @@ object Editors {
     
     def loadValue(item: T): Unit
     
-    def serializeValue(): js.Any
+    def serializeValue(): Any
     
     def validate(): ValidateResults
   }
@@ -94,7 +94,7 @@ object Editors {
       init: () => Unit,
       isValueChanged: () => Boolean,
       loadValue: T => Unit,
-      serializeValue: () => js.Any,
+      serializeValue: () => Any,
       validate: () => ValidateResults
     ): Editor[T] = {
       val __obj = js.Dynamic.literal(applyValue = js.Any.fromFunction2(applyValue), destroy = js.Any.fromFunction0(destroy), focus = js.Any.fromFunction0(focus), init = js.Any.fromFunction0(init), isValueChanged = js.Any.fromFunction0(isValueChanged), loadValue = js.Any.fromFunction1(loadValue), serializeValue = js.Any.fromFunction0(serializeValue), validate = js.Any.fromFunction0(validate))
@@ -115,7 +115,7 @@ object Editors {
       
       inline def setLoadValue(value: T => Unit): Self = StObject.set(x, "loadValue", js.Any.fromFunction1(value))
       
-      inline def setSerializeValue(value: () => js.Any): Self = StObject.set(x, "serializeValue", js.Any.fromFunction0(value))
+      inline def setSerializeValue(value: () => Any): Self = StObject.set(x, "serializeValue", js.Any.fromFunction0(value))
       
       inline def setValidate(value: () => ValidateResults): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }
@@ -188,7 +188,7 @@ object Editors {
       init: () => Unit,
       isValueChanged: () => Boolean,
       loadValue: T => Unit,
-      serializeValue: () => js.Any,
+      serializeValue: () => Any,
       validate: () => ValidateResults
     ): Integer[T] = {
       val __obj = js.Dynamic.literal(applyValue = js.Any.fromFunction2(applyValue), destroy = js.Any.fromFunction0(destroy), focus = js.Any.fromFunction0(focus), init = js.Any.fromFunction0(init), isValueChanged = js.Any.fromFunction0(isValueChanged), loadValue = js.Any.fromFunction1(loadValue), serializeValue = js.Any.fromFunction0(serializeValue), validate = js.Any.fromFunction0(validate))
@@ -226,7 +226,7 @@ object Editors {
       loadValue: T => Unit,
       position: Position => Unit,
       save: () => Unit,
-      serializeValue: () => js.Any,
+      serializeValue: () => Any,
       show: () => Unit,
       validate: () => ValidateResults
     ): LongText[T] = {
@@ -262,7 +262,7 @@ object Editors {
       init: () => Unit,
       isValueChanged: () => Boolean,
       loadValue: T => Unit,
-      serializeValue: () => js.Any,
+      serializeValue: () => Any,
       validate: () => ValidateResults
     ): PercentComplete[T] = {
       val __obj = js.Dynamic.literal(applyValue = js.Any.fromFunction2(applyValue), destroy = js.Any.fromFunction0(destroy), focus = js.Any.fromFunction0(focus), init = js.Any.fromFunction0(init), isValueChanged = js.Any.fromFunction0(isValueChanged), loadValue = js.Any.fromFunction1(loadValue), serializeValue = js.Any.fromFunction0(serializeValue), validate = js.Any.fromFunction0(validate))
@@ -288,7 +288,7 @@ object Editors {
       init: () => Unit,
       isValueChanged: () => Boolean,
       loadValue: T => Unit,
-      serializeValue: () => js.Any,
+      serializeValue: () => Any,
       setValue: String => Unit,
       validate: () => ValidateResults
     ): Text[T] = {
@@ -316,7 +316,7 @@ object Editors {
       init: () => Unit,
       isValueChanged: () => Boolean,
       loadValue: T => Unit,
-      serializeValue: () => js.Any,
+      serializeValue: () => Any,
       validate: () => ValidateResults
     ): YesNoSelect[T] = {
       val __obj = js.Dynamic.literal(applyValue = js.Any.fromFunction2(applyValue), destroy = js.Any.fromFunction0(destroy), focus = js.Any.fromFunction0(focus), init = js.Any.fromFunction0(init), isValueChanged = js.Any.fromFunction0(isValueChanged), loadValue = js.Any.fromFunction1(loadValue), serializeValue = js.Any.fromFunction0(serializeValue), validate = js.Any.fromFunction0(validate))

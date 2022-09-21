@@ -1,13 +1,12 @@
 package typings.gldatepicker
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GlDatePickerDate extends StObject {
   
-  var date: Date
+  var date: js.Date
   
   var repeatMonth: js.UndefOr[Boolean] = js.undefined
   
@@ -15,14 +14,14 @@ trait GlDatePickerDate extends StObject {
 }
 object GlDatePickerDate {
   
-  inline def apply(date: Date): GlDatePickerDate = {
+  inline def apply(date: js.Date): GlDatePickerDate = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlDatePickerDate]
   }
   
   extension [Self <: GlDatePickerDate](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setRepeatMonth(value: Boolean): Self = StObject.set(x, "repeatMonth", value.asInstanceOf[js.Any])
     

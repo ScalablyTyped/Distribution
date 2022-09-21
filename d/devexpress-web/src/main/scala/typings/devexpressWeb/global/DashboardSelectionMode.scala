@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardSelectionMode")
 @js.native
-class DashboardSelectionMode ()
+open class DashboardSelectionMode ()
   extends StObject
      with typings.devexpressWeb.DashboardSelectionMode
 object DashboardSelectionMode {

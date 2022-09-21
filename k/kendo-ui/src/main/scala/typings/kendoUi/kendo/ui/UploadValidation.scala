@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UploadValidation extends StObject {
   
-  var allowedExtensions: js.UndefOr[js.Any] = js.undefined
+  var allowedExtensions: js.UndefOr[Any] = js.undefined
   
   var maxFileSize: js.UndefOr[Double] = js.undefined
   
@@ -21,7 +21,7 @@ object UploadValidation {
   
   extension [Self <: UploadValidation](x: Self) {
     
-    inline def setAllowedExtensions(value: js.Any): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
+    inline def setAllowedExtensions(value: Any): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
     
     inline def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
     

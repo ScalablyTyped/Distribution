@@ -1,8 +1,9 @@
 package typings.reactSpringShared
 
-import typings.allocTypes.mod.OneOrMore
-import typings.fluids.mod.FluidValue
-import typings.reactSpringShared.typesMod.InterpolatorArgs
+import typings.reactSpringShared.fluidsMod.FluidEvent
+import typings.reactSpringShared.fluidsMod.FluidValue
+import typings.reactSpringTypes.interpolationMod.InterpolatorArgs
+import typings.reactSpringTypes.utilMod.OneOrMore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -773,37 +774,26 @@ object anon {
     }
   }
   
+  trait EventObserved[E /* <: FluidEvent[Any] */] extends StObject {
+    
+    def eventObserved(event: E): Unit
+  }
+  object EventObserved {
+    
+    inline def apply[E /* <: FluidEvent[Any] */](eventObserved: E => Unit): EventObserved[E] = {
+      val __obj = js.Dynamic.literal(eventObserved = js.Any.fromFunction1(eventObserved))
+      __obj.asInstanceOf[EventObserved[E]]
+    }
+    
+    extension [Self <: EventObserved[?], E /* <: FluidEvent[Any] */](x: Self & EventObserved[E]) {
+      
+      inline def setEventObserved(value: E => Unit): Self = StObject.set(x, "eventObserved", js.Any.fromFunction1(value))
+    }
+  }
+  
   @js.native
   trait FnCall extends StObject {
     
-    def apply[In, Out](source: OneOrMore[FluidValue[js.Any, js.Any]], args: InterpolatorArgs[In, Out]): FluidValue[Out, js.Any] = js.native
-  }
-  
-  @js.native
-  trait FnCallSourceArgs extends StObject {
-    
-    def apply[In, Out](
-      source: OneOrMore[FluidValue[js.Any, js.Any]],
-      args: typings.reactSpringShared.esmTypesMod.InterpolatorArgs[In, Out]
-    ): FluidValue[Out, js.Any] = js.native
-  }
-  
-  trait ForEach extends StObject {
-    
-    var forEach: js.UndefOr[js.Function] = js.undefined
-  }
-  object ForEach {
-    
-    inline def apply(): ForEach = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ForEach]
-    }
-    
-    extension [Self <: ForEach](x: Self) {
-      
-      inline def setForEach(value: js.Function): Self = StObject.set(x, "forEach", value.asInstanceOf[js.Any])
-      
-      inline def setForEachUndefined: Self = StObject.set(x, "forEach", js.undefined)
-    }
+    def apply[Input, Output](source: OneOrMore[FluidValue[Any, Any]], args: InterpolatorArgs[Input, Output]): FluidValue[Output, Any] = js.native
   }
 }

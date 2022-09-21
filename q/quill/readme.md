@@ -10,10 +10,10 @@ Your powerful, rich text editor
 | ------------------ | :-------------: |
 | Full name          | quill |
 | Keywords           | editor, rich text, wysiwyg |
-| # releases         | 4 |
-| # dependents       | 781 |
-| # downloads        | 17234203 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4092940.3333333335 |
+| # stars            | 32963.0 |
 
 ## Links
 - [Homepage](http://quilljs.com)

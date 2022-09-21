@@ -10,28 +10,28 @@ trait WebResponseInfo
   
   def get_body(): String
   
-  def get_headers(): js.Any
+  def get_headers(): Any
   
   def get_statusCode(): Double
   
   def set_body(value: String): Unit
   
-  def set_headers(value: js.Any): Unit
+  def set_headers(value: Any): Unit
   
   def set_statusCode(value: Double): Unit
 }
 object WebResponseInfo {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_body: () => String,
-    get_headers: () => js.Any,
+    get_headers: () => Any,
     get_statusCode: () => Double,
     get_typeId: () => String,
     set_body: String => Unit,
-    set_headers: js.Any => Unit,
+    set_headers: Any => Unit,
     set_statusCode: Double => Unit,
     writeToXml: (XmlWriter, SerializationContext) => Unit
   ): WebResponseInfo = {
@@ -43,13 +43,13 @@ object WebResponseInfo {
     
     inline def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
     
-    inline def setGet_headers(value: () => js.Any): Self = StObject.set(x, "get_headers", js.Any.fromFunction0(value))
+    inline def setGet_headers(value: () => Any): Self = StObject.set(x, "get_headers", js.Any.fromFunction0(value))
     
     inline def setGet_statusCode(value: () => Double): Self = StObject.set(x, "get_statusCode", js.Any.fromFunction0(value))
     
     inline def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
     
-    inline def setSet_headers(value: js.Any => Unit): Self = StObject.set(x, "set_headers", js.Any.fromFunction1(value))
+    inline def setSet_headers(value: Any => Unit): Self = StObject.set(x, "set_headers", js.Any.fromFunction1(value))
     
     inline def setSet_statusCode(value: Double => Unit): Self = StObject.set(x, "set_statusCode", js.Any.fromFunction1(value))
   }

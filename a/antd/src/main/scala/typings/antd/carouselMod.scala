@@ -6,6 +6,9 @@ import typings.antDesignReactSlick.mod.ResponsiveObject
 import typings.antDesignReactSlick.mod.Slider
 import typings.antDesignReactSlick.mod.SwipeDirection
 import typings.antd.anon.ClassName
+import typings.antd.antdStrings.blur
+import typings.antd.antdStrings.leave
+import typings.antd.antdStrings.update
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
@@ -19,7 +22,7 @@ object carouselMod extends Shortcut {
   
   @JSImport("antd/lib/carousel", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[CarouselProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[CarouselProps & RefAttributes[CarouselRef]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.scrollx
@@ -313,7 +316,7 @@ object carouselMod extends Shortcut {
       
       inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      inline def setResponsiveVarargs(value: ResponsiveObject*): Self = StObject.set(x, "responsive", js.Array(value :_*))
+      inline def setResponsiveVarargs(value: ResponsiveObject*): Self = StObject.set(x, "responsive", js.Array(value*))
       
       inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -397,6 +400,22 @@ object carouselMod extends Shortcut {
     }
   }
   
+  @js.native
+  trait CarouselRef extends StObject {
+    
+    def autoPlay(): Unit = js.native
+    def autoPlay(palyType: update | leave | blur): Unit = js.native
+    
+    def goTo(slide: Double): Unit = js.native
+    def goTo(slide: Double, dontAnimate: Boolean): Unit = js.native
+    
+    var innerSlider: Any = js.native
+    
+    def next(): Unit = js.native
+    
+    def prev(): Unit = js.native
+  }
+  
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.top
     - typings.antd.antdStrings.bottom
@@ -415,8 +434,8 @@ object carouselMod extends Shortcut {
     inline def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
   }
   
-  type _To = ForwardRefExoticComponent[CarouselProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[CarouselProps & RefAttributes[CarouselRef]]
   
   /* This means you don't have to write `default`, but can instead just say `carouselMod.foo` */
-  override def _to: ForwardRefExoticComponent[CarouselProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[CarouselProps & RefAttributes[CarouselRef]] = default
 }

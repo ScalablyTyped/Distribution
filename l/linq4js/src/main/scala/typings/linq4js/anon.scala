@@ -9,20 +9,20 @@ object anon {
   
   trait GroupValue extends StObject {
     
-    var GroupValue: js.Any
+    var GroupValue: Any
     
     var Order: Array[OrderEntry]
   }
   object GroupValue {
     
-    inline def apply(GroupValue: js.Any, Order: Array[OrderEntry]): GroupValue = {
+    inline def apply(GroupValue: Any, Order: Array[OrderEntry]): GroupValue = {
       val __obj = js.Dynamic.literal(GroupValue = GroupValue.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any])
       __obj.asInstanceOf[GroupValue]
     }
     
     extension [Self <: GroupValue](x: Self) {
       
-      inline def setGroupValue(value: js.Any): Self = StObject.set(x, "GroupValue", value.asInstanceOf[js.Any])
+      inline def setGroupValue(value: Any): Self = StObject.set(x, "GroupValue", value.asInstanceOf[js.Any])
       
       inline def setOrder(value: Array[OrderEntry]): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     }

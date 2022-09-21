@@ -1,7 +1,7 @@
 
 # Scala.js typings for md5-hex
 
-Typings are for version 3.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 Create a MD5 hash with hex encoding
@@ -10,10 +10,10 @@ Create a MD5 hash with hex encoding
 | ------------------ | :-------------: |
 | Full name          | md5-hex |
 | Keywords           | hash, crypto, md5, hex, buffer, browser |
-| # releases         | 3 |
-| # dependents       | 84 |
-| # downloads        | 33338304 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2337588.3333333335 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/md5-hex#readme)

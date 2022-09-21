@@ -97,32 +97,32 @@ object angular {
       /**
         * Opens a new confirm modal instance.
         */
-      def confirm(header: String, msg: String): js.Any = js.native
-      def confirm(header: String, msg: String, opts: IDialogOptions): js.Any = js.native
+      def confirm(header: String, msg: String): Any = js.native
+      def confirm(header: String, msg: String, opts: IDialogOptions): Any = js.native
       
       /**
         * Opens a new custom modal instance.
         */
-      def create(url: String, ctrlr: String, data: js.Any): js.Any = js.native
-      def create(url: String, ctrlr: String, data: js.Any, opts: IDialogOptions): js.Any = js.native
+      def create(url: String, ctrlr: String, data: Any): Any = js.native
+      def create(url: String, ctrlr: String, data: Any, opts: IDialogOptions): Any = js.native
       
       /**
         * Opens a new error modal instance.
         */
-      def error(header: String, msg: String): js.Any = js.native
-      def error(header: String, msg: String, opts: IDialogOptions): js.Any = js.native
+      def error(header: String, msg: String): Any = js.native
+      def error(header: String, msg: String, opts: IDialogOptions): Any = js.native
       
       /**
         * Opens a new notify modal instance.
         */
-      def notify(header: String, msg: String): js.Any = js.native
-      def notify(header: String, msg: String, opts: IDialogOptions): js.Any = js.native
+      def notify(header: String, msg: String): Any = js.native
+      def notify(header: String, msg: String, opts: IDialogOptions): Any = js.native
       
       /**
         * Opens a new wait modal instance.
         */
-      def wait(header: String, msg: String, progress: Double): js.Any = js.native
-      def wait(header: String, msg: String, progress: Double, opts: IDialogOptions): js.Any = js.native
+      def wait(header: String, msg: String, progress: Double): Any = js.native
+      def wait(header: String, msg: String, progress: Double, opts: IDialogOptions): Any = js.native
     }
   }
 }

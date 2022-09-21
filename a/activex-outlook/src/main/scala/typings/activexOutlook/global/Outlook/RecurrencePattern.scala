@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.RecurrencePattern")
 @js.native
-/* private */ class RecurrencePattern ()
+/* private */ open class RecurrencePattern ()
   extends StObject
      with typings.activexOutlook.Outlook.RecurrencePattern {
   
@@ -58,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotRecurrencePattern_typekey: typings.activexOutlook.Outlook.RecurrencePattern = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PatternEndDate: VarDate = js.native

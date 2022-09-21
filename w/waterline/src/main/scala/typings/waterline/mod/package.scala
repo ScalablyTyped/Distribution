@@ -26,20 +26,20 @@ type Adapter = js.Object
   - typings.waterline.mod.ManyToManyAttribute
   - typings.waterline.mod.FunctionAttribute
 */
-type Attribute = typings.waterline.mod._Attribute | java.lang.String | typings.waterline.mod.FunctionAttribute
+type Attribute = _Attribute | String | FunctionAttribute
 
-type AttributeValidation[T] = T | typings.waterline.mod.AttributeValidationSyncFn[T] | typings.waterline.mod.AttributeValidationAsyncFn[T]
+type AttributeValidation[T] = T | AttributeValidationSyncFn[T] | AttributeValidationAsyncFn[T]
 
-type AttributeValidationAsyncFn[T] = js.Function1[/* cb */ js.Function1[/* value */ T, js.Any], scala.Unit]
+type AttributeValidationAsyncFn[T] = js.Function1[/* cb */ js.Function1[/* value */ T, Any], Unit]
 
 type AttributeValidationSyncFn[T] = js.Function0[T]
 
-type Callback[T] = js.Function2[/* err */ js.Any, /* result */ T, js.Any]
+type Callback[T] = js.Function2[/* err */ Any, /* result */ T, Any]
 
-type Collection = typings.waterline.mod.CollectionDefinition
+type Collection = CollectionDefinition
 
-type CollectionClass = js.Function0[typings.waterline.mod.Collection]
+type CollectionClass = js.Function0[Collection]
 
 type DefaultsToFn[T] = js.Function0[T]
 
-type FunctionAttribute = js.Function0[js.Any]
+type FunctionAttribute = js.Function0[Any]

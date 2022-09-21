@@ -1,46 +1,225 @@
 package typings.lusca
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.lusca.anon.Name
 import typings.lusca.anon.Options
 import typings.lusca.luscaBooleans.`false`
 import typings.lusca.luscaBooleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: LuscaOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(options: LuscaOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("lusca", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def csp(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def csp(options: cspOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def csp(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def csp(options: cspOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def csrf(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def csrf(options: csrfOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def csrf(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def csrf(options: csrfOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def hsts(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def hsts(options: hstsOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def hsts(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def hsts(options: hstsOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def nosniff(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("nosniff")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def nosniff(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("nosniff")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def p3p(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("p3p")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def p3p(value: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("p3p")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def referrerPolicy(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("referrerPolicy")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def referrerPolicy(value: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("referrerPolicy")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def xframe(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xframe")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def xframe(value: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("xframe")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def xssProtection(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def xssProtection(options: xssProtectionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def xssProtection(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def xssProtection(options: xssProtectionOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def xssProtection_true(options: `true`): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def xssProtection_true(options: `true`): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   /*~ Documentation declares that:
     *~ Setting any value to false will disable it.
@@ -131,7 +310,7 @@ object mod {
       
       inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      inline def setPolicyVarargs(value: (js.Object | String)*): Self = StObject.set(x, "policy", js.Array(value :_*))
+      inline def setPolicyVarargs(value: (js.Object | String)*): Self = StObject.set(x, "policy", js.Array(value*))
       
       inline def setReportOnly(value: Boolean): Self = StObject.set(x, "reportOnly", value.asInstanceOf[js.Any])
       
@@ -151,7 +330,32 @@ object mod {
     }
   }
   
-  type csrfOptions = csrfOptionsBase & csrfOptionsAngularOrNonAngular & csrfOptionsBlacklistOrWhitelist
+  type csrfOptions = csrfOptionsBase & csrfOptionsAngularOrNonAngular & csrfOptionsBlocklistOrAllowlist
+  
+  trait csrfOptionsAllowlist
+    extends StObject
+       with csrfOptionsBlocklistOrAllowlist {
+    
+    var allowlist: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var blocklist: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  object csrfOptionsAllowlist {
+    
+    inline def apply(): csrfOptionsAllowlist = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[csrfOptionsAllowlist]
+    }
+    
+    extension [Self <: csrfOptionsAllowlist](x: Self) {
+      
+      inline def setAllowlist(value: js.Array[String]): Self = StObject.set(x, "allowlist", value.asInstanceOf[js.Any])
+      
+      inline def setAllowlistUndefined: Self = StObject.set(x, "allowlist", js.undefined)
+      
+      inline def setAllowlistVarargs(value: String*): Self = StObject.set(x, "allowlist", js.Array(value*))
+    }
+  }
   
   trait csrfOptionsAngular
     extends StObject
@@ -207,7 +411,7 @@ object mod {
     /**
       *  An object with create/validate methods for custom tokens
       */
-    var impl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var impl: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * The name of the CSRF token in the model.
@@ -233,7 +437,7 @@ object mod {
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setImpl(value: () => js.Any): Self = StObject.set(x, "impl", js.Any.fromFunction0(value))
+      inline def setImpl(value: () => Any): Self = StObject.set(x, "impl", js.Any.fromFunction0(value))
       
       inline def setImplUndefined: Self = StObject.set(x, "impl", js.undefined)
       
@@ -247,46 +451,46 @@ object mod {
     }
   }
   
-  trait csrfOptionsBlacklist
+  trait csrfOptionsBlocklist
     extends StObject
-       with csrfOptionsBlacklistOrWhitelist {
+       with csrfOptionsBlocklistOrAllowlist {
     
-    var blacklist: js.UndefOr[js.Array[String]] = js.undefined
+    var allowlist: js.UndefOr[scala.Nothing] = js.undefined
     
-    var whitelist: js.UndefOr[scala.Nothing] = js.undefined
+    var blocklist: js.UndefOr[js.Array[String]] = js.undefined
   }
-  object csrfOptionsBlacklist {
+  object csrfOptionsBlocklist {
     
-    inline def apply(): csrfOptionsBlacklist = {
+    inline def apply(): csrfOptionsBlocklist = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[csrfOptionsBlacklist]
+      __obj.asInstanceOf[csrfOptionsBlocklist]
     }
     
-    extension [Self <: csrfOptionsBlacklist](x: Self) {
+    extension [Self <: csrfOptionsBlocklist](x: Self) {
       
-      inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlocklist(value: js.Array[String]): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
       
-      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlocklistUndefined: Self = StObject.set(x, "blocklist", js.undefined)
       
-      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+      inline def setBlocklistVarargs(value: String*): Self = StObject.set(x, "blocklist", js.Array(value*))
     }
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.lusca.mod.csrfOptionsBlacklist
-    - typings.lusca.mod.csrfOptionsWhitelist
+    - typings.lusca.mod.csrfOptionsBlocklist
+    - typings.lusca.mod.csrfOptionsAllowlist
   */
-  trait csrfOptionsBlacklistOrWhitelist extends StObject
-  object csrfOptionsBlacklistOrWhitelist {
+  trait csrfOptionsBlocklistOrAllowlist extends StObject
+  object csrfOptionsBlocklistOrAllowlist {
     
-    inline def csrfOptionsBlacklist(): typings.lusca.mod.csrfOptionsBlacklist = {
+    inline def csrfOptionsAllowlist(): typings.lusca.mod.csrfOptionsAllowlist = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.lusca.mod.csrfOptionsBlacklist]
+      __obj.asInstanceOf[typings.lusca.mod.csrfOptionsAllowlist]
     }
     
-    inline def csrfOptionsWhitelist(): typings.lusca.mod.csrfOptionsWhitelist = {
+    inline def csrfOptionsBlocklist(): typings.lusca.mod.csrfOptionsBlocklist = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.lusca.mod.csrfOptionsWhitelist]
+      __obj.asInstanceOf[typings.lusca.mod.csrfOptionsBlocklist]
     }
   }
   
@@ -314,31 +518,6 @@ object mod {
       inline def setCookie(value: String | Name): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
       inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
-    }
-  }
-  
-  trait csrfOptionsWhitelist
-    extends StObject
-       with csrfOptionsBlacklistOrWhitelist {
-    
-    var blacklist: js.UndefOr[scala.Nothing] = js.undefined
-    
-    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
-  }
-  object csrfOptionsWhitelist {
-    
-    inline def apply(): csrfOptionsWhitelist = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[csrfOptionsWhitelist]
-    }
-    
-    extension [Self <: csrfOptionsWhitelist](x: Self) {
-      
-      inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
-      
-      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
-      
-      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
     }
   }
   

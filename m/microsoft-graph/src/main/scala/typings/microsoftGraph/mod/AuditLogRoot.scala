@@ -8,12 +8,12 @@ trait AuditLogRoot
   extends StObject
      with Entity {
   
-  // Read-only. Nullable.
   var directoryAudits: js.UndefOr[NullableOption[js.Array[DirectoryAudit]]] = js.undefined
+  
+  var provisioning: js.UndefOr[NullableOption[js.Array[ProvisioningObjectSummary]]] = js.undefined
   
   var restrictedSignIns: js.UndefOr[NullableOption[js.Array[RestrictedSignIn]]] = js.undefined
   
-  // Read-only. Nullable.
   var signIns: js.UndefOr[NullableOption[js.Array[SignIn]]] = js.undefined
 }
 object AuditLogRoot {
@@ -31,7 +31,15 @@ object AuditLogRoot {
     
     inline def setDirectoryAuditsUndefined: Self = StObject.set(x, "directoryAudits", js.undefined)
     
-    inline def setDirectoryAuditsVarargs(value: DirectoryAudit*): Self = StObject.set(x, "directoryAudits", js.Array(value :_*))
+    inline def setDirectoryAuditsVarargs(value: DirectoryAudit*): Self = StObject.set(x, "directoryAudits", js.Array(value*))
+    
+    inline def setProvisioning(value: NullableOption[js.Array[ProvisioningObjectSummary]]): Self = StObject.set(x, "provisioning", value.asInstanceOf[js.Any])
+    
+    inline def setProvisioningNull: Self = StObject.set(x, "provisioning", null)
+    
+    inline def setProvisioningUndefined: Self = StObject.set(x, "provisioning", js.undefined)
+    
+    inline def setProvisioningVarargs(value: ProvisioningObjectSummary*): Self = StObject.set(x, "provisioning", js.Array(value*))
     
     inline def setRestrictedSignIns(value: NullableOption[js.Array[RestrictedSignIn]]): Self = StObject.set(x, "restrictedSignIns", value.asInstanceOf[js.Any])
     
@@ -39,7 +47,7 @@ object AuditLogRoot {
     
     inline def setRestrictedSignInsUndefined: Self = StObject.set(x, "restrictedSignIns", js.undefined)
     
-    inline def setRestrictedSignInsVarargs(value: RestrictedSignIn*): Self = StObject.set(x, "restrictedSignIns", js.Array(value :_*))
+    inline def setRestrictedSignInsVarargs(value: RestrictedSignIn*): Self = StObject.set(x, "restrictedSignIns", js.Array(value*))
     
     inline def setSignIns(value: NullableOption[js.Array[SignIn]]): Self = StObject.set(x, "signIns", value.asInstanceOf[js.Any])
     
@@ -47,6 +55,6 @@ object AuditLogRoot {
     
     inline def setSignInsUndefined: Self = StObject.set(x, "signIns", js.undefined)
     
-    inline def setSignInsVarargs(value: SignIn*): Self = StObject.set(x, "signIns", js.Array(value :_*))
+    inline def setSignInsVarargs(value: SignIn*): Self = StObject.set(x, "signIns", js.Array(value*))
   }
 }

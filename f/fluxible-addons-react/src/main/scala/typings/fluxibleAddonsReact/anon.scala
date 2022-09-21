@@ -31,7 +31,7 @@ object anon {
       * @see https://reactjs.org/docs/context.html#classcontexttype
       */
     /* static member */
-    var contextType: js.UndefOr[Context[js.Any]] = js.undefined
+    var contextType: js.UndefOr[Context[Any]] = js.undefined
   }
   object TypeofComponent {
     
@@ -42,7 +42,7 @@ object anon {
     
     extension [Self <: TypeofComponent](x: Self) {
       
-      inline def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+      inline def setContextType(value: Context[Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       
       inline def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
     }

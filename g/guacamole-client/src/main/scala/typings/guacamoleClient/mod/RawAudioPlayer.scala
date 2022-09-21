@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "RawAudioPlayer")
 @js.native
-class RawAudioPlayer protected ()
+open class RawAudioPlayer protected ()
   extends typings.guacamoleClient.rawAudioPlayerMod.RawAudioPlayer {
   /**
     * @param stream The Guacamole.InputStream to read audio data from.

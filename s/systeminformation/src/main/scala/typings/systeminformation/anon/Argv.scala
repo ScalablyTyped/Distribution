@@ -33,7 +33,7 @@ object Argv {
     
     inline def setArgv(value: js.Array[java.lang.String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     
-    inline def setArgvVarargs(value: java.lang.String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+    inline def setArgvVarargs(value: java.lang.String*): Self = StObject.set(x, "argv", js.Array(value*))
     
     inline def setBuild_info(value: java.lang.String): Self = StObject.set(x, "build_info", value.asInstanceOf[js.Any])
     
@@ -43,6 +43,6 @@ object Argv {
     
     inline def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value*))
   }
 }

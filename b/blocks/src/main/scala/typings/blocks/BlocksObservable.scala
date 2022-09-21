@@ -12,7 +12,7 @@ trait BlocksObservable
   extends StObject
      with Extendable[BlocksObservable] {
   
-  def apply(arg: js.Any): BlocksObservable = js.native
+  def apply(arg: Any): BlocksObservable = js.native
   
   /**
     * If event in prototype is not defined use this function instead.

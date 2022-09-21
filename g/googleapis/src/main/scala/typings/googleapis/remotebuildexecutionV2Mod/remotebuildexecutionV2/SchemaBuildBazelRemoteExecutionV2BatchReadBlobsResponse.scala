@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response message for ContentAddressableStorage.BatchReadBlobs.
-  */
 trait SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaBuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

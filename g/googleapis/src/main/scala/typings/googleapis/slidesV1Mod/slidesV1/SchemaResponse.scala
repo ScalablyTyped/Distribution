@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single response from an update.
-  */
 trait SchemaResponse extends StObject {
   
   /**
@@ -60,8 +57,7 @@ trait SchemaResponse extends StObject {
   var replaceAllShapesWithImage: js.UndefOr[SchemaReplaceAllShapesWithImageResponse] = js.undefined
   
   /**
-    * The result of replacing all shapes matching some criteria with a Google
-    * Sheets chart.
+    * The result of replacing all shapes matching some criteria with a Google Sheets chart.
     */
   var replaceAllShapesWithSheetsChart: js.UndefOr[SchemaReplaceAllShapesWithSheetsChartResponse] = js.undefined
   

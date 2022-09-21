@@ -34,7 +34,7 @@ object SearchDevicesResponse {
     
     inline def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
-    inline def setDevicesVarargs(value: DeviceData*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: DeviceData*): Self = StObject.set(x, "Devices", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

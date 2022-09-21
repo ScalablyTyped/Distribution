@@ -10,7 +10,7 @@ trait IgZoombarDefaultZoomWindow
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * The left component of the zoom window in percentages.

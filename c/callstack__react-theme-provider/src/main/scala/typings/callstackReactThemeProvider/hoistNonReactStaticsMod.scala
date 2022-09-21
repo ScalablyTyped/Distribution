@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hoistNonReactStaticsMod {
   
-  inline def apply[T /* <: ComponentType[js.Any] */, S /* <: ComponentType[js.Any] */, C /* <: StringDictionary[`true`] */](TargetComponent: T, SourceComponent: S): T & (NonReactStatics[S, C]) = (^.asInstanceOf[js.Dynamic].apply(TargetComponent.asInstanceOf[js.Any], SourceComponent.asInstanceOf[js.Any])).asInstanceOf[T & (NonReactStatics[S, C])]
-  inline def apply[T /* <: ComponentType[js.Any] */, S /* <: ComponentType[js.Any] */, C /* <: StringDictionary[`true`] */](TargetComponent: T, SourceComponent: S, customStatic: C): T & (NonReactStatics[S, C]) = (^.asInstanceOf[js.Dynamic].apply(TargetComponent.asInstanceOf[js.Any], SourceComponent.asInstanceOf[js.Any], customStatic.asInstanceOf[js.Any])).asInstanceOf[T & (NonReactStatics[S, C])]
+  inline def apply[T /* <: ComponentType[Any] */, S /* <: ComponentType[Any] */, C /* <: StringDictionary[`true`] */](TargetComponent: T, SourceComponent: S): T & (NonReactStatics[S, C]) = (^.asInstanceOf[js.Dynamic].apply(TargetComponent.asInstanceOf[js.Any], SourceComponent.asInstanceOf[js.Any])).asInstanceOf[T & (NonReactStatics[S, C])]
+  inline def apply[T /* <: ComponentType[Any] */, S /* <: ComponentType[Any] */, C /* <: StringDictionary[`true`] */](TargetComponent: T, SourceComponent: S, customStatic: C): T & (NonReactStatics[S, C]) = (^.asInstanceOf[js.Dynamic].apply(TargetComponent.asInstanceOf[js.Any], SourceComponent.asInstanceOf[js.Any], customStatic.asInstanceOf[js.Any])).asInstanceOf[T & (NonReactStatics[S, C])]
   
   @JSImport("@callstack/react-theme-provider/typings/hoist-non-react-statics", JSImport.Namespace)
   @js.native
@@ -129,7 +129,7 @@ object hoistNonReactStaticsMod {
     }
   }
   
-  type NonReactStatics[S /* <: ComponentType[js.Any] */, C /* <: StringDictionary[`true`] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type NonReactStatics[S /* <: ComponentType[Any] */, C /* <: StringDictionary[`true`] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in std.Exclude<keyof S, S extends react.react.MemoExoticComponent<any>? '$$typeof' | 'compare' | 'defaultProps' | 'displayName' | 'propTypes' | 'type' | keyof C : S extends react.react.ForwardRefExoticComponent<any>? '$$typeof' | 'render' | 'defaultProps' | 'displayName' | 'propTypes' | keyof C : 'childContextTypes' | 'contextType' | 'contextTypes' | 'defaultProps' | 'displayName' | 'getDefaultProps' | 'getDerivedStateFromError' | 'getDerivedStateFromProps' | 'mixins' | 'propTypes' | 'type' | 'name' | 'length' | 'prototype' | 'caller' | 'callee' | 'arguments' | 'arity' | keyof C> ]: S[key]}
     */ typings.callstackReactThemeProvider.callstackReactThemeProviderStrings.NonReactStatics & TopLevel[S]
   

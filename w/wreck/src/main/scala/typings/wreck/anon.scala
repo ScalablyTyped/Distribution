@@ -46,8 +46,9 @@ object anon {
       * @param onrejected The callback to execute when the Promise is rejected.
       * @returns A Promise for the completion of the callback.
       */
+    /* standard es5 */
     def `catch`[TResult](): js.Promise[IncomingMessage | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[IncomingMessage | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[IncomingMessage | TResult] = js.native
     
     /**
       * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
@@ -55,6 +56,7 @@ object anon {
       * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
       * @returns A Promise for the completion of the callback.
       */
+    /* standard es2018.promise */
     def `finally`(): js.Promise[IncomingMessage] = js.native
     def `finally`(onfinally: js.Function0[Unit]): js.Promise[IncomingMessage] = js.native
     
@@ -66,15 +68,17 @@ object anon {
       * @param onrejected The callback to execute when the Promise is rejected.
       * @returns A Promise for the completion of which ever callback is executed.
       */
+    /* standard es5 */
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ IncomingMessage, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ IncomingMessage, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
     
+    /* standard es2015.symbol.wellknown */
     @JSName(js.Symbol.toStringTag)
     val toStringTag: String = js.native
   }
@@ -122,8 +126,8 @@ object anon {
           /* redirectMethod */ String, 
           /* statusCode */ Double, 
           /* location */ String, 
-          /* resHeaders */ StringDictionary[js.Any], 
-          /* redirectOptions */ js.Any, 
+          /* resHeaders */ StringDictionary[Any], 
+          /* redirectOptions */ Any, 
           /* next */ js.Function0[js.Object], 
           Unit
         ]
@@ -131,15 +135,15 @@ object anon {
     
     var ciphers: js.UndefOr[String] = js.undefined
     
-    var downstreamRes: js.UndefOr[js.Any] = js.undefined
+    var downstreamRes: js.UndefOr[Any] = js.undefined
     
     var events: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
     
     var redirect303: js.UndefOr[Boolean] = js.undefined
     
@@ -175,7 +179,7 @@ object anon {
       inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
       inline def setBeforeRedirect(
-        value: (/* redirectMethod */ String, /* statusCode */ Double, /* location */ String, /* resHeaders */ StringDictionary[js.Any], /* redirectOptions */ js.Any, /* next */ js.Function0[js.Object]) => Unit
+        value: (/* redirectMethod */ String, /* statusCode */ Double, /* location */ String, /* resHeaders */ StringDictionary[Any], /* redirectOptions */ Any, /* next */ js.Function0[js.Object]) => Unit
       ): Self = StObject.set(x, "beforeRedirect", js.Any.fromFunction6(value))
       
       inline def setBeforeRedirectUndefined: Self = StObject.set(x, "beforeRedirect", js.undefined)
@@ -184,7 +188,7 @@ object anon {
       
       inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
       
-      inline def setDownstreamRes(value: js.Any): Self = StObject.set(x, "downstreamRes", value.asInstanceOf[js.Any])
+      inline def setDownstreamRes(value: Any): Self = StObject.set(x, "downstreamRes", value.asInstanceOf[js.Any])
       
       inline def setDownstreamResUndefined: Self = StObject.set(x, "downstreamRes", js.undefined)
       
@@ -192,7 +196,7 @@ object anon {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -200,7 +204,7 @@ object anon {
       
       inline def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       

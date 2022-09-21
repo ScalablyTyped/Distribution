@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LowLevelDevicesAggregateProvider extends StObject {
   
-  var adcControllerProvider: js.Any
+  var adcControllerProvider: Any
   
   /* unmapped type */
-  var gpioControllerProvider: js.Any
+  var gpioControllerProvider: Any
   
   /* unmapped type */
-  var i2cControllerProvider: js.Any
+  var i2cControllerProvider: Any
   
   /* unmapped type */
-  var pwmControllerProvider: js.Any
+  var pwmControllerProvider: Any
   
   /* unmapped type */
-  var spiControllerProvider: js.Any
+  var spiControllerProvider: Any
 }
 object LowLevelDevicesAggregateProvider {
   
   inline def apply(
-    adcControllerProvider: js.Any,
-    gpioControllerProvider: js.Any,
-    i2cControllerProvider: js.Any,
-    pwmControllerProvider: js.Any,
-    spiControllerProvider: js.Any
+    adcControllerProvider: Any,
+    gpioControllerProvider: Any,
+    i2cControllerProvider: Any,
+    pwmControllerProvider: Any,
+    spiControllerProvider: Any
   ): LowLevelDevicesAggregateProvider = {
     val __obj = js.Dynamic.literal(adcControllerProvider = adcControllerProvider.asInstanceOf[js.Any], gpioControllerProvider = gpioControllerProvider.asInstanceOf[js.Any], i2cControllerProvider = i2cControllerProvider.asInstanceOf[js.Any], pwmControllerProvider = pwmControllerProvider.asInstanceOf[js.Any], spiControllerProvider = spiControllerProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[LowLevelDevicesAggregateProvider]
@@ -35,14 +35,14 @@ object LowLevelDevicesAggregateProvider {
   
   extension [Self <: LowLevelDevicesAggregateProvider](x: Self) {
     
-    inline def setAdcControllerProvider(value: js.Any): Self = StObject.set(x, "adcControllerProvider", value.asInstanceOf[js.Any])
+    inline def setAdcControllerProvider(value: Any): Self = StObject.set(x, "adcControllerProvider", value.asInstanceOf[js.Any])
     
-    inline def setGpioControllerProvider(value: js.Any): Self = StObject.set(x, "gpioControllerProvider", value.asInstanceOf[js.Any])
+    inline def setGpioControllerProvider(value: Any): Self = StObject.set(x, "gpioControllerProvider", value.asInstanceOf[js.Any])
     
-    inline def setI2cControllerProvider(value: js.Any): Self = StObject.set(x, "i2cControllerProvider", value.asInstanceOf[js.Any])
+    inline def setI2cControllerProvider(value: Any): Self = StObject.set(x, "i2cControllerProvider", value.asInstanceOf[js.Any])
     
-    inline def setPwmControllerProvider(value: js.Any): Self = StObject.set(x, "pwmControllerProvider", value.asInstanceOf[js.Any])
+    inline def setPwmControllerProvider(value: Any): Self = StObject.set(x, "pwmControllerProvider", value.asInstanceOf[js.Any])
     
-    inline def setSpiControllerProvider(value: js.Any): Self = StObject.set(x, "spiControllerProvider", value.asInstanceOf[js.Any])
+    inline def setSpiControllerProvider(value: Any): Self = StObject.set(x, "spiControllerProvider", value.asInstanceOf[js.Any])
   }
 }

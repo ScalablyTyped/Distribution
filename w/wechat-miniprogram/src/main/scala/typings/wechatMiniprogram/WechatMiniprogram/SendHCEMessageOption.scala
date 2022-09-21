@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait SendHCEMessageOption extends StObject {
   var complete: js.UndefOr[SendHCEMessageCompleteCallback] = js.undefined
   
   /** 二进制数据 */
-  var data: ArrayBuffer
+  var data: js.typedarray.ArrayBuffer
   
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[SendHCEMessageFailCallback] = js.undefined
@@ -21,7 +20,7 @@ trait SendHCEMessageOption extends StObject {
 }
 object SendHCEMessageOption {
   
-  inline def apply(data: ArrayBuffer): SendHCEMessageOption = {
+  inline def apply(data: js.typedarray.ArrayBuffer): SendHCEMessageOption = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendHCEMessageOption]
   }
@@ -32,7 +31,7 @@ object SendHCEMessageOption {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFail(value: /* res */ NFCError => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     

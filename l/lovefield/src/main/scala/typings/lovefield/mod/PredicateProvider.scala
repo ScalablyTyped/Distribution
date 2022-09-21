@@ -1,7 +1,6 @@
 package typings.lovefield.mod
 
 import typings.lovefield.mod.schema.Column
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,8 +39,8 @@ trait PredicateProvider extends StObject {
   def lte(operand: ValueLiteral): Predicate = js.native
   def lte(operand: Column): Predicate = js.native
   
+  def `match`(operand: js.RegExp): Predicate = js.native
   def `match`(operand: Binder): Predicate = js.native
-  def `match`(operand: RegExp): Predicate = js.native
   
   def neq(operand: Binder): Predicate = js.native
   def neq(operand: ValueLiteral): Predicate = js.native

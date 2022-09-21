@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sketch-hq/sketch-file-format-ts" : "6.3.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sketch-hq/sketch-file-format-ts" : "6.3.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

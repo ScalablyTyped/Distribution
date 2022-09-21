@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.AroundControl")
 @js.native
-class AroundControl protected ()
+open class AroundControl protected ()
   extends StObject
      with typings.navermaps.naver.maps.CustomControl {
   def this(aroundControlOptions: AroundControlOptions) = this()

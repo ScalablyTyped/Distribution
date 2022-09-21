@@ -29,7 +29,7 @@ object GetCommentsForComparedCommitOutput {
     
     inline def setCommentsForComparedCommitDataUndefined: Self = StObject.set(x, "commentsForComparedCommitData", js.undefined)
     
-    inline def setCommentsForComparedCommitDataVarargs(value: CommentsForComparedCommit*): Self = StObject.set(x, "commentsForComparedCommitData", js.Array(value :_*))
+    inline def setCommentsForComparedCommitDataVarargs(value: CommentsForComparedCommit*): Self = StObject.set(x, "commentsForComparedCommitData", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

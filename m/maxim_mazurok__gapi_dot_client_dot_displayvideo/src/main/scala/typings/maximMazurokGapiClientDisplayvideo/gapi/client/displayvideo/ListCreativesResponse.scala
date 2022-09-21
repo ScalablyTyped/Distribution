@@ -28,7 +28,7 @@ object ListCreativesResponse {
     
     inline def setCreativesUndefined: Self = StObject.set(x, "creatives", js.undefined)
     
-    inline def setCreativesVarargs(value: Creative*): Self = StObject.set(x, "creatives", js.Array(value :_*))
+    inline def setCreativesVarargs(value: Creative*): Self = StObject.set(x, "creatives", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

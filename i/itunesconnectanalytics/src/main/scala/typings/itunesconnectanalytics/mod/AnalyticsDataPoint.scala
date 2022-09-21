@@ -1,6 +1,5 @@
 package typings.itunesconnectanalytics.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait AnalyticsDataPoint extends StObject {
   
   var crashes: js.UndefOr[Double] = js.undefined
   
-  var date: Date
+  var date: js.Date
   
   var iap: js.UndefOr[Double] = js.undefined
   
@@ -39,7 +38,7 @@ trait AnalyticsDataPoint extends StObject {
 }
 object AnalyticsDataPoint {
   
-  inline def apply(date: Date): AnalyticsDataPoint = {
+  inline def apply(date: js.Date): AnalyticsDataPoint = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsDataPoint]
   }
@@ -54,7 +53,7 @@ object AnalyticsDataPoint {
     
     inline def setCrashesUndefined: Self = StObject.set(x, "crashes", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setIap(value: Double): Self = StObject.set(x, "iap", value.asInstanceOf[js.Any])
     

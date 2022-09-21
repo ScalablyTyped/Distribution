@@ -1,7 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.`1`
+import typings.antd.anon.Children
+import typings.antd.anon.ShowLeafIcon
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
@@ -28,6 +29,7 @@ import typings.antd.antdStrings.link
 import typings.antd.antdStrings.list
 import typings.antd.antdStrings.listbox
 import typings.antd.antdStrings.location
+import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.menu
 import typings.antd.antdStrings.mixed
 import typings.antd.antdStrings.move
@@ -38,6 +40,8 @@ import typings.antd.antdStrings.page
 import typings.antd.antdStrings.polite
 import typings.antd.antdStrings.popup
 import typings.antd.antdStrings.removals
+import typings.antd.antdStrings.responsive
+import typings.antd.antdStrings.rtl
 import typings.antd.antdStrings.spelling
 import typings.antd.antdStrings.step
 import typings.antd.antdStrings.text_
@@ -45,26 +49,36 @@ import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
 import typings.antd.configProviderSizeContextMod.SizeType
-import typings.rcSelect.anon.Mark
-import typings.rcSelect.generatorMod.CustomTagProps
-import typings.rcSelect.generatorMod.FilterFunc
-import typings.rcSelect.generatorMod.OnClear
-import typings.rcSelect.generatorMod.SingleType
-import typings.rcSelect.interfaceMod.RenderDOMFunc
+import typings.antd.motionMod.SelectCommonPlacement
+import typings.antd.statusUtilsMod.InputStatus
+import typings.antd.treeTreeMod.AntTreeNodeProps
+import typings.antd.treeTreeMod.SwitcherIcon
+import typings.rcSelect.baseSelectMod.CustomTagProps
+import typings.rcSelect.baseSelectMod.DisplayValueType
+import typings.rcSelect.baseSelectMod.RenderDOMFunc
+import typings.rcSelect.baseSelectMod.RenderNode
+import typings.rcSelect.selectMod.ArrayElementType
+import typings.rcSelect.selectMod.LabelInValueType
+import typings.rcSelect.selectMod.RawValueType
+import typings.rcSelect.selectMod.SelectHandler
+import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.IconType
-import typings.rcTreeSelect.interfaceMod.ChangeEventExtra
-import typings.rcTreeSelect.interfaceMod.DataNode
-import typings.rcTreeSelect.interfaceMod.DefaultValueType
-import typings.rcTreeSelect.interfaceMod.Key
-import typings.rcTreeSelect.interfaceMod.LabelValueType
-import typings.rcTreeSelect.interfaceMod.LegacyDataNode
-import typings.rcTreeSelect.interfaceMod.SimpleModeConfig
+import typings.rcTree.treeMod.ExpandAction
 import typings.rcTreeSelect.strategyUtilMod.CheckedStrategy
 import typings.rcTreeSelect.treeNodeMod.TreeNodeProps
+import typings.rcTreeSelect.treeSelectMod.BaseOptionType
+import typings.rcTreeSelect.treeSelectMod.ChangeEventExtra
+import typings.rcTreeSelect.treeSelectMod.DefaultOptionType
+import typings.rcTreeSelect.treeSelectMod.FieldNames
+import typings.rcTreeSelect.treeSelectMod.LegacyDataNode
+import typings.rcTreeSelect.treeSelectMod.SimpleModeConfig
+import typings.rcTrigger.interfaceMod.AlignType
+import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
+import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -75,10 +89,11 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
-import typings.std.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,7 +112,7 @@ object treeSelectMod extends Shortcut {
   @js.native
   trait InternalTreeSelectType extends StObject {
     
-    def apply[T /* <: DefaultValueType */](props: TreeSelectProps[T] & `1`): ReactElement = js.native
+    def apply[ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](props: Children & (TreeSelectProps[ValueType, OptionType])): ReactElement = js.native
   }
   
   trait LabeledValue extends StObject {
@@ -131,27 +146,6 @@ object treeSelectMod extends Shortcut {
   
   type RawValue = String | Double
   
-  trait RefTreeSelectProps extends StObject {
-    
-    def blur(): Unit
-    
-    def focus(): Unit
-  }
-  object RefTreeSelectProps {
-    
-    inline def apply(blur: () => Unit, focus: () => Unit): RefTreeSelectProps = {
-      val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus))
-      __obj.asInstanceOf[RefTreeSelectProps]
-    }
-    
-    extension [Self <: RefTreeSelectProps](x: Self) {
-      
-      inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
-      
-      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
-    }
-  }
-  
   type SelectValue = RawValue | (js.Array[LabeledValue | RawValue]) | LabeledValue
   
   @js.native
@@ -168,8 +162,8 @@ object treeSelectMod extends Shortcut {
     var TreeNode: FC[TreeNodeProps] = js.native
   }
   
-  /* Inlined parent std.Omit<rc-tree-select.rc-tree-select.TreeSelectProps<T>, 'showTreeIcon' | 'treeMotion' | 'inputIcon' | 'mode' | 'getInputElement' | 'backfill'> */
-  trait TreeSelectProps[T] extends StObject {
+  /* Inlined parent std.Omit<rc-tree-select.rc-tree-select.TreeSelectProps<ValueType, OptionType>, 'showTreeIcon' | 'treeMotion' | 'inputIcon' | 'mode' | 'getInputElement' | 'backfill' | 'treeLine' | 'switcherIcon'> */
+  trait TreeSelectProps[ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */] extends StObject {
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
@@ -177,11 +171,11 @@ object treeSelectMod extends Shortcut {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -199,21 +193,21 @@ object treeSelectMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -227,11 +221,11 @@ object treeSelectMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -243,13 +237,13 @@ object treeSelectMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -259,7 +253,7 @@ object treeSelectMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -279,43 +273,47 @@ object treeSelectMod extends Shortcut {
     
     var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
     var choiceTransitionName: js.UndefOr[String] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
-    var clearIcon: js.UndefOr[ReactNode] = js.undefined
-    
-    var defaultActiveFirstOption: js.UndefOr[Boolean] = js.undefined
+    var clearIcon: js.UndefOr[RenderNode] = js.undefined
     
     var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[T] = js.undefined
+    var defaultValue: js.UndefOr[ValueType] = js.undefined
     
-    var direction: js.UndefOr[String] = js.undefined
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+    
+    /**
+      * @deprecated `dropdownClassName` is deprecated which will be removed in next major
+      *   version.Please use `popupClassName` instead.
+      */
     var dropdownClassName: js.UndefOr[String] = js.undefined
     
     var dropdownMatchSelectWidth: js.UndefOr[Boolean | Double] = js.undefined
-    
-    var dropdownPopupAlign: js.UndefOr[js.Any] = js.undefined
     
     var dropdownRender: js.UndefOr[js.Function1[/* menu */ ReactElement, ReactElement]] = js.undefined
     
     var dropdownStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var filterTreeNode: js.UndefOr[Boolean | FilterFunc[LegacyDataNode]] = js.undefined
+    var fieldNames: js.UndefOr[FieldNames] = js.undefined
+    
+    var filterTreeNode: js.UndefOr[
+        Boolean | (js.Function2[/* inputValue */ String, /* treeNode */ DefaultOptionType, Boolean])
+      ] = js.undefined
     
     var getPopupContainer: js.UndefOr[RenderDOMFunc] = js.undefined
+    
+    var getRawInputElement: js.UndefOr[js.Function0[Element]] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
     var inputValue: js.UndefOr[String] = js.undefined
-    
-    var internalProps: js.UndefOr[Mark[js.Array[DataNode]]] = js.undefined
     
     var labelInValue: js.UndefOr[Boolean] = js.undefined
     
@@ -323,13 +321,17 @@ object treeSelectMod extends Shortcut {
     
     var listItemHeight: js.UndefOr[Double] = js.undefined
     
-    var loadData: js.UndefOr[js.Function1[/* dataNode */ LegacyDataNode, js.Promise[js.Any]]] = js.undefined
+    var loadData: js.UndefOr[js.Function1[/* dataNode */ LegacyDataNode, js.Promise[Any]]] = js.undefined
     
     var loading: js.UndefOr[Boolean] = js.undefined
     
-    var maxTagCount: js.UndefOr[Double] = js.undefined
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxTagPlaceholder: js.UndefOr[js.Function1[/* omittedValues */ js.Array[LabelValueType], ReactNode]] = js.undefined
+    var maxTagCount: js.UndefOr[Double | responsive] = js.undefined
+    
+    var maxTagPlaceholder: js.UndefOr[
+        ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])
+      ] = js.undefined
     
     var maxTagTextLength: js.UndefOr[Double] = js.undefined
     
@@ -340,26 +342,25 @@ object treeSelectMod extends Shortcut {
     var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
     var onChange: js.UndefOr[
-        js.Function3[/* value */ T, /* labelList */ js.Array[ReactNode], /* extra */ ChangeEventExtra, Unit]
-      ] = js.undefined
-    
-    var onClear: js.UndefOr[OnClear] = js.undefined
-    
-    var onClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
-    
-    var onDeselect: js.UndefOr[
-        js.Function2[
-          /* value */ SingleType[T], 
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Array<rc-tree-select.rc-tree-select/es/interface.DataNode>[number] */ /* option */ js.Any, 
+        js.Function3[
+          /* value */ ValueType, 
+          /* labelList */ js.Array[ReactNode], 
+          /* extra */ ChangeEventExtra, 
           Unit
         ]
       ] = js.undefined
+    
+    var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    
+    var onDeselect: js.UndefOr[SelectHandler[ArrayElementType[ValueType], OptionType]] = js.undefined
     
     var onDropdownVisibleChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
-    var onInputKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
+    var onInputKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement | HTMLTextAreaElement]] = js.undefined
     
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -375,13 +376,7 @@ object treeSelectMod extends Shortcut {
     
     var onSearch: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[
-        js.Function2[
-          /* value */ SingleType[T], 
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Array<rc-tree-select.rc-tree-select/es/interface.DataNode>[number] */ /* option */ js.Any, 
-          Unit
-        ]
-      ] = js.undefined
+    var onSelect: js.UndefOr[SelectHandler[ArrayElementType[ValueType], OptionType]] = js.undefined
     
     var onTreeExpand: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[Key], Unit]] = js.undefined
     
@@ -389,17 +384,15 @@ object treeSelectMod extends Shortcut {
     
     var open: js.UndefOr[Boolean] = js.undefined
     
-    var optionFilterProp: js.UndefOr[String] = js.undefined
-    
-    var options: js.UndefOr[js.Array[DataNode]] = js.undefined
-    
     var placeholder: js.UndefOr[ReactNode] = js.undefined
+    
+    var placement: js.UndefOr[SelectCommonPlacement] = js.undefined
+    
+    var popupClassName: js.UndefOr[String] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var removeIcon: js.UndefOr[ReactNode] = js.undefined
-    
-    var searchPlaceholder: js.UndefOr[ReactNode] = js.undefined
+    var removeIcon: js.UndefOr[RenderNode] = js.undefined
     
     var searchValue: js.UndefOr[String] = js.undefined
     
@@ -413,15 +406,19 @@ object treeSelectMod extends Shortcut {
     
     var size: js.UndefOr[SizeType] = js.undefined
     
+    var status: js.UndefOr[InputStatus] = js.undefined
+    
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suffixIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var switcherIcon: js.UndefOr[IconType] = js.undefined
+    var switcherIcon: js.UndefOr[SwitcherIcon | IconType] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.undefined
+    
+    var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
     
     var transitionName: js.UndefOr[String] = js.undefined
     
@@ -429,7 +426,7 @@ object treeSelectMod extends Shortcut {
     
     var treeCheckable: js.UndefOr[Boolean | ReactNode] = js.undefined
     
-    var treeData: js.UndefOr[js.Array[DataNode]] = js.undefined
+    var treeData: js.UndefOr[js.Array[OptionType]] = js.undefined
     
     var treeDataSimpleMode: js.UndefOr[Boolean | SimpleModeConfig] = js.undefined
     
@@ -437,11 +434,13 @@ object treeSelectMod extends Shortcut {
     
     var treeDefaultExpandedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
+    var treeExpandAction: js.UndefOr[ExpandAction] = js.undefined
+    
     var treeExpandedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
     var treeIcon: js.UndefOr[IconType] = js.undefined
     
-    var treeLine: js.UndefOr[Boolean] = js.undefined
+    var treeLine: js.UndefOr[Boolean | ShowLeafIcon] = js.undefined
     
     var treeLoadedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
@@ -449,18 +448,18 @@ object treeSelectMod extends Shortcut {
     
     var treeNodeLabelProp: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[T] = js.undefined
+    var value: js.UndefOr[ValueType] = js.undefined
     
     var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object TreeSelectProps {
     
-    inline def apply[T](): TreeSelectProps[T] = {
+    inline def apply[ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](): TreeSelectProps[ValueType, OptionType] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TreeSelectProps[T]]
+      __obj.asInstanceOf[TreeSelectProps[ValueType, OptionType]]
     }
     
-    extension [Self <: TreeSelectProps[?], T](x: Self & TreeSelectProps[T]) {
+    extension [Self <: TreeSelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](x: Self & (TreeSelectProps[ValueType, OptionType])) {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -474,7 +473,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -482,7 +481,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -518,7 +517,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -530,7 +529,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -538,7 +537,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -546,7 +545,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -574,15 +573,15 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -606,7 +605,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -616,7 +615,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -636,7 +635,7 @@ object treeSelectMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -676,10 +675,6 @@ object treeSelectMod extends Shortcut {
       
       inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
       inline def setChoiceTransitionName(value: String): Self = StObject.set(x, "choiceTransitionName", value.asInstanceOf[js.Any])
       
       inline def setChoiceTransitionNameUndefined: Self = StObject.set(x, "choiceTransitionName", js.undefined)
@@ -688,29 +683,31 @@ object treeSelectMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClearIcon(value: ReactNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+      inline def setClearIcon(value: RenderNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+      
+      inline def setClearIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "clearIcon", js.Any.fromFunction1(value))
       
       inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
-      
-      inline def setDefaultActiveFirstOption(value: Boolean): Self = StObject.set(x, "defaultActiveFirstOption", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultActiveFirstOptionUndefined: Self = StObject.set(x, "defaultActiveFirstOption", js.undefined)
       
       inline def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
       
       inline def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
       
-      inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: ValueType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setDropdownAlign(value: AlignType): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
+      
+      inline def setDropdownAlignUndefined: Self = StObject.set(x, "dropdownAlign", js.undefined)
       
       inline def setDropdownClassName(value: String): Self = StObject.set(x, "dropdownClassName", value.asInstanceOf[js.Any])
       
@@ -720,10 +717,6 @@ object treeSelectMod extends Shortcut {
       
       inline def setDropdownMatchSelectWidthUndefined: Self = StObject.set(x, "dropdownMatchSelectWidth", js.undefined)
       
-      inline def setDropdownPopupAlign(value: js.Any): Self = StObject.set(x, "dropdownPopupAlign", value.asInstanceOf[js.Any])
-      
-      inline def setDropdownPopupAlignUndefined: Self = StObject.set(x, "dropdownPopupAlign", js.undefined)
-      
       inline def setDropdownRender(value: /* menu */ ReactElement => ReactElement): Self = StObject.set(x, "dropdownRender", js.Any.fromFunction1(value))
       
       inline def setDropdownRenderUndefined: Self = StObject.set(x, "dropdownRender", js.undefined)
@@ -732,15 +725,25 @@ object treeSelectMod extends Shortcut {
       
       inline def setDropdownStyleUndefined: Self = StObject.set(x, "dropdownStyle", js.undefined)
       
-      inline def setFilterTreeNode(value: Boolean | FilterFunc[LegacyDataNode]): Self = StObject.set(x, "filterTreeNode", value.asInstanceOf[js.Any])
+      inline def setFieldNames(value: FieldNames): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
-      inline def setFilterTreeNodeFunction2(value: (/* inputValue */ String, /* option */ js.UndefOr[LegacyDataNode]) => Boolean): Self = StObject.set(x, "filterTreeNode", js.Any.fromFunction2(value))
+      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+      
+      inline def setFilterTreeNode(
+        value: Boolean | (js.Function2[/* inputValue */ String, /* treeNode */ DefaultOptionType, Boolean])
+      ): Self = StObject.set(x, "filterTreeNode", value.asInstanceOf[js.Any])
+      
+      inline def setFilterTreeNodeFunction2(value: (/* inputValue */ String, /* treeNode */ DefaultOptionType) => Boolean): Self = StObject.set(x, "filterTreeNode", js.Any.fromFunction2(value))
       
       inline def setFilterTreeNodeUndefined: Self = StObject.set(x, "filterTreeNode", js.undefined)
       
-      inline def setGetPopupContainer(value: /* props */ js.Any => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* props */ Any => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
       inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      
+      inline def setGetRawInputElement(value: () => Element): Self = StObject.set(x, "getRawInputElement", js.Any.fromFunction0(value))
+      
+      inline def setGetRawInputElementUndefined: Self = StObject.set(x, "getRawInputElement", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -749,10 +752,6 @@ object treeSelectMod extends Shortcut {
       inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
       inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
-      
-      inline def setInternalProps(value: Mark[js.Array[DataNode]]): Self = StObject.set(x, "internalProps", value.asInstanceOf[js.Any])
-      
-      inline def setInternalPropsUndefined: Self = StObject.set(x, "internalProps", js.undefined)
       
       inline def setLabelInValue(value: Boolean): Self = StObject.set(x, "labelInValue", value.asInstanceOf[js.Any])
       
@@ -766,7 +765,7 @@ object treeSelectMod extends Shortcut {
       
       inline def setListItemHeightUndefined: Self = StObject.set(x, "listItemHeight", js.undefined)
       
-      inline def setLoadData(value: /* dataNode */ LegacyDataNode => js.Promise[js.Any]): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
+      inline def setLoadData(value: /* dataNode */ LegacyDataNode => js.Promise[Any]): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
       
       inline def setLoadDataUndefined: Self = StObject.set(x, "loadData", js.undefined)
       
@@ -774,11 +773,17 @@ object treeSelectMod extends Shortcut {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setMaxTagCount(value: Double): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      
+      inline def setMaxTagCount(value: Double | responsive): Self = StObject.set(x, "maxTagCount", value.asInstanceOf[js.Any])
       
       inline def setMaxTagCountUndefined: Self = StObject.set(x, "maxTagCount", js.undefined)
       
-      inline def setMaxTagPlaceholder(value: /* omittedValues */ js.Array[LabelValueType] => ReactNode): Self = StObject.set(x, "maxTagPlaceholder", js.Any.fromFunction1(value))
+      inline def setMaxTagPlaceholder(value: ReactNode | (js.Function1[/* omittedValues */ js.Array[DisplayValueType], ReactNode])): Self = StObject.set(x, "maxTagPlaceholder", value.asInstanceOf[js.Any])
+      
+      inline def setMaxTagPlaceholderFunction1(value: /* omittedValues */ js.Array[DisplayValueType] => ReactNode): Self = StObject.set(x, "maxTagPlaceholder", js.Any.fromFunction1(value))
       
       inline def setMaxTagPlaceholderUndefined: Self = StObject.set(x, "maxTagPlaceholder", js.undefined)
       
@@ -794,11 +799,13 @@ object treeSelectMod extends Shortcut {
       
       inline def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: (/* value */ T, /* labelList */ js.Array[ReactNode], /* extra */ ChangeEventExtra) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
+      inline def setOnChange(
+        value: (/* value */ ValueType, /* labelList */ js.Array[ReactNode], /* extra */ ChangeEventExtra) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -806,13 +813,11 @@ object treeSelectMod extends Shortcut {
       
       inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      inline def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnDeselect(
-        value: (/* value */ SingleType[T], /* import warning: importer.ImportType#apply Failed type conversion: std.Array<rc-tree-select.rc-tree-select/es/interface.DataNode>[number] */ /* option */ js.Any) => Unit
-      ): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
+      inline def setOnDeselect(value: (LabelInValueType | RawValueType | ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
       
       inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
@@ -820,11 +825,11 @@ object treeSelectMod extends Shortcut {
       
       inline def setOnDropdownVisibleChangeUndefined: Self = StObject.set(x, "onDropdownVisibleChange", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInputKeyDown(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInputKeyDown", js.Any.fromFunction1(value))
+      inline def setOnInputKeyDown(value: KeyboardEvent[HTMLInputElement | HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onInputKeyDown", js.Any.fromFunction1(value))
       
       inline def setOnInputKeyDownUndefined: Self = StObject.set(x, "onInputKeyDown", js.undefined)
       
@@ -856,9 +861,7 @@ object treeSelectMod extends Shortcut {
       
       inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
-      inline def setOnSelect(
-        value: (/* value */ SingleType[T], /* import warning: importer.ImportType#apply Failed type conversion: std.Array<rc-tree-select.rc-tree-select/es/interface.DataNode>[number] */ /* option */ js.Any) => Unit
-      ): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (LabelInValueType | RawValueType | ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -874,31 +877,27 @@ object treeSelectMod extends Shortcut {
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setOptionFilterProp(value: String): Self = StObject.set(x, "optionFilterProp", value.asInstanceOf[js.Any])
-      
-      inline def setOptionFilterPropUndefined: Self = StObject.set(x, "optionFilterProp", js.undefined)
-      
-      inline def setOptions(value: js.Array[DataNode]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
-      
-      inline def setOptionsVarargs(value: DataNode*): Self = StObject.set(x, "options", js.Array(value :_*))
-      
       inline def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
+      inline def setPlacement(value: SelectCommonPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+      
+      inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setRemoveIcon(value: ReactNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      inline def setRemoveIcon(value: RenderNode): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
       
       inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
-      
-      inline def setSearchPlaceholder(value: ReactNode): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
-      
-      inline def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
       
       inline def setSearchValue(value: String): Self = StObject.set(x, "searchValue", value.asInstanceOf[js.Any])
       
@@ -908,7 +907,7 @@ object treeSelectMod extends Shortcut {
       
       inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      inline def setShowActionVarargs(value: (focus | click)*): Self = StObject.set(x, "showAction", js.Array(value :_*))
+      inline def setShowActionVarargs(value: (focus | click)*): Self = StObject.set(x, "showAction", js.Array(value*))
       
       inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       
@@ -926,6 +925,10 @@ object treeSelectMod extends Shortcut {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
@@ -934,9 +937,11 @@ object treeSelectMod extends Shortcut {
       
       inline def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
       
-      inline def setSwitcherIcon(value: IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
+      inline def setSwitcherIcon(value: SwitcherIcon | IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
       
-      inline def setSwitcherIconFunction1(value: /* props */ typings.rcTree.treeNodeMod.TreeNodeProps => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
+      inline def setSwitcherIconFunction1(
+        value: (/* props */ AntTreeNodeProps) | (/* props */ typings.rcTree.treeNodeMod.TreeNodeProps[DataNode]) => ReactNode
+      ): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
       
       inline def setSwitcherIconUndefined: Self = StObject.set(x, "switcherIcon", js.undefined)
       
@@ -947,6 +952,12 @@ object treeSelectMod extends Shortcut {
       inline def setTagRender(value: /* props */ CustomTagProps => ReactElement): Self = StObject.set(x, "tagRender", js.Any.fromFunction1(value))
       
       inline def setTagRenderUndefined: Self = StObject.set(x, "tagRender", js.undefined)
+      
+      inline def setTokenSeparators(value: js.Array[String]): Self = StObject.set(x, "tokenSeparators", value.asInstanceOf[js.Any])
+      
+      inline def setTokenSeparatorsUndefined: Self = StObject.set(x, "tokenSeparators", js.undefined)
+      
+      inline def setTokenSeparatorsVarargs(value: String*): Self = StObject.set(x, "tokenSeparators", js.Array(value*))
       
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
@@ -960,7 +971,7 @@ object treeSelectMod extends Shortcut {
       
       inline def setTreeCheckableUndefined: Self = StObject.set(x, "treeCheckable", js.undefined)
       
-      inline def setTreeData(value: js.Array[DataNode]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
+      inline def setTreeData(value: js.Array[OptionType]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
       
       inline def setTreeDataSimpleMode(value: Boolean | SimpleModeConfig): Self = StObject.set(x, "treeDataSimpleMode", value.asInstanceOf[js.Any])
       
@@ -968,7 +979,7 @@ object treeSelectMod extends Shortcut {
       
       inline def setTreeDataUndefined: Self = StObject.set(x, "treeData", js.undefined)
       
-      inline def setTreeDataVarargs(value: DataNode*): Self = StObject.set(x, "treeData", js.Array(value :_*))
+      inline def setTreeDataVarargs(value: OptionType*): Self = StObject.set(x, "treeData", js.Array(value*))
       
       inline def setTreeDefaultExpandAll(value: Boolean): Self = StObject.set(x, "treeDefaultExpandAll", value.asInstanceOf[js.Any])
       
@@ -978,21 +989,25 @@ object treeSelectMod extends Shortcut {
       
       inline def setTreeDefaultExpandedKeysUndefined: Self = StObject.set(x, "treeDefaultExpandedKeys", js.undefined)
       
-      inline def setTreeDefaultExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "treeDefaultExpandedKeys", js.Array(value :_*))
+      inline def setTreeDefaultExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "treeDefaultExpandedKeys", js.Array(value*))
+      
+      inline def setTreeExpandAction(value: ExpandAction): Self = StObject.set(x, "treeExpandAction", value.asInstanceOf[js.Any])
+      
+      inline def setTreeExpandActionUndefined: Self = StObject.set(x, "treeExpandAction", js.undefined)
       
       inline def setTreeExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "treeExpandedKeys", value.asInstanceOf[js.Any])
       
       inline def setTreeExpandedKeysUndefined: Self = StObject.set(x, "treeExpandedKeys", js.undefined)
       
-      inline def setTreeExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "treeExpandedKeys", js.Array(value :_*))
+      inline def setTreeExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "treeExpandedKeys", js.Array(value*))
       
       inline def setTreeIcon(value: IconType): Self = StObject.set(x, "treeIcon", value.asInstanceOf[js.Any])
       
-      inline def setTreeIconFunction1(value: /* props */ typings.rcTree.treeNodeMod.TreeNodeProps => ReactNode): Self = StObject.set(x, "treeIcon", js.Any.fromFunction1(value))
+      inline def setTreeIconFunction1(value: /* props */ typings.rcTree.treeNodeMod.TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "treeIcon", js.Any.fromFunction1(value))
       
       inline def setTreeIconUndefined: Self = StObject.set(x, "treeIcon", js.undefined)
       
-      inline def setTreeLine(value: Boolean): Self = StObject.set(x, "treeLine", value.asInstanceOf[js.Any])
+      inline def setTreeLine(value: Boolean | ShowLeafIcon): Self = StObject.set(x, "treeLine", value.asInstanceOf[js.Any])
       
       inline def setTreeLineUndefined: Self = StObject.set(x, "treeLine", js.undefined)
       
@@ -1000,7 +1015,7 @@ object treeSelectMod extends Shortcut {
       
       inline def setTreeLoadedKeysUndefined: Self = StObject.set(x, "treeLoadedKeys", js.undefined)
       
-      inline def setTreeLoadedKeysVarargs(value: Key*): Self = StObject.set(x, "treeLoadedKeys", js.Array(value :_*))
+      inline def setTreeLoadedKeysVarargs(value: Key*): Self = StObject.set(x, "treeLoadedKeys", js.Array(value*))
       
       inline def setTreeNodeFilterProp(value: String): Self = StObject.set(x, "treeNodeFilterProp", value.asInstanceOf[js.Any])
       
@@ -1010,7 +1025,7 @@ object treeSelectMod extends Shortcut {
       
       inline def setTreeNodeLabelPropUndefined: Self = StObject.set(x, "treeNodeLabelProp", js.undefined)
       
-      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       

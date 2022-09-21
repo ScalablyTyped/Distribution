@@ -26,9 +26,9 @@ object Pureish {
     body: BlockStatement_ | Expression,
     expression: Boolean,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.ArrowFunctionExpression_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.ArrowFunctionExpression_]
   }
@@ -55,9 +55,9 @@ object Pureish {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.FunctionDeclaration_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionDeclaration_]
   }
@@ -66,9 +66,9 @@ object Pureish {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.FunctionExpression_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionExpression_]
   }

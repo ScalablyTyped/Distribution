@@ -1,7 +1,7 @@
 
 # Scala.js typings for move-file
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Move a file - Even works across devices
@@ -10,10 +10,10 @@ Move a file - Even works across devices
 | ------------------ | :-------------: |
 | Full name          | move-file |
 | Keywords           | move, file, mv, fs, stream, file-system, ncp, fast, quick, data, content, contents, devices, partitions |
-| # releases         | 4 |
-| # dependents       | 31 |
-| # downloads        | 9520129 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 942011.0 |
+| # stars            | 177.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/move-file#readme)

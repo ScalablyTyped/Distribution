@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModelConfig extends StObject {
   
-  var docClient: js.UndefOr[js.Any] = js.undefined
+  var docClient: js.UndefOr[Any] = js.undefined
   
   var dynamodb: js.UndefOr[DynamoDB] = js.undefined
   
@@ -22,7 +22,7 @@ object ModelConfig {
   
   extension [Self <: ModelConfig](x: Self) {
     
-    inline def setDocClient(value: js.Any): Self = StObject.set(x, "docClient", value.asInstanceOf[js.Any])
+    inline def setDocClient(value: Any): Self = StObject.set(x, "docClient", value.asInstanceOf[js.Any])
     
     inline def setDocClientUndefined: Self = StObject.set(x, "docClient", js.undefined)
     

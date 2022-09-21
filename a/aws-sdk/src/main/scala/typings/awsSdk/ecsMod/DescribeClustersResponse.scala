@@ -29,12 +29,12 @@ object DescribeClustersResponse {
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value*))
     
     inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value*))
   }
 }

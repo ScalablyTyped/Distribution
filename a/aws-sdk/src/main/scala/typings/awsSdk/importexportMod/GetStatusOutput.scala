@@ -10,7 +10,7 @@ trait GetStatusOutput extends StObject {
   
   var Carrier: js.UndefOr[typings.awsSdk.importexportMod.Carrier] = js.undefined
   
-  var CreationDate: js.UndefOr[typings.awsSdk.importexportMod.CreationDate] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   var CurrentManifest: js.UndefOr[typings.awsSdk.importexportMod.CurrentManifest] = js.undefined
   
@@ -51,13 +51,13 @@ object GetStatusOutput {
     
     inline def setArtifactListUndefined: Self = StObject.set(x, "ArtifactList", js.undefined)
     
-    inline def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value :_*))
+    inline def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value*))
     
     inline def setCarrier(value: Carrier): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
     
     inline def setCarrierUndefined: Self = StObject.set(x, "Carrier", js.undefined)
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

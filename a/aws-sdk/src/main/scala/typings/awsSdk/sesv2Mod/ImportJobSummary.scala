@@ -9,7 +9,7 @@ trait ImportJobSummary extends StObject {
   /**
     * The date and time when the import job was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   var ImportDestination: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDestination] = js.undefined
   
@@ -26,7 +26,7 @@ object ImportJobSummary {
   
   extension [Self <: ImportJobSummary](x: Self) {
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     

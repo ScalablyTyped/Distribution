@@ -23,10 +23,10 @@ object StarterList {
     
     inline def setIntegrations(value: js.Array[IdName]): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
     
-    inline def setIntegrationsVarargs(value: IdName*): Self = StObject.set(x, "integrations", js.Array(value :_*))
+    inline def setIntegrationsVarargs(value: IdName*): Self = StObject.set(x, "integrations", js.Array(value*))
     
     inline def setStarters(value: js.Array[Type]): Self = StObject.set(x, "starters", value.asInstanceOf[js.Any])
     
-    inline def setStartersVarargs(value: Type*): Self = StObject.set(x, "starters", js.Array(value :_*))
+    inline def setStartersVarargs(value: Type*): Self = StObject.set(x, "starters", js.Array(value*))
   }
 }

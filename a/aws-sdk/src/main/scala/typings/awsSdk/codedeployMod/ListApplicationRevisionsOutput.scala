@@ -33,6 +33,6 @@ object ListApplicationRevisionsOutput {
     
     inline def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
-    inline def setRevisionsVarargs(value: RevisionLocation*): Self = StObject.set(x, "revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: RevisionLocation*): Self = StObject.set(x, "revisions", js.Array(value*))
   }
 }

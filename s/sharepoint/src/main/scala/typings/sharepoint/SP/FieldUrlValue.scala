@@ -19,9 +19,9 @@ trait FieldUrlValue
 object FieldUrlValue {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_description: () => String,
     get_typeId: () => String,
     get_url: () => String,

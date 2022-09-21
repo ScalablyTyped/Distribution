@@ -10,10 +10,10 @@ Stack Exchange's string format function.
 | ------------------ | :-------------: |
 | Full name          | format-unicorn |
 | Keywords           | string, format, formatunicorn, stackexchange |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 4597669 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 111046.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/tallesl/node-format-unicorn#readme)

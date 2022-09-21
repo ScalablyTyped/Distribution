@@ -9,7 +9,7 @@ trait BatchDeleteAlertsRequest extends StObject {
   /** Required. list of alert IDs. */
   var alertId: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** Optional. The unique identifier of the G Suite organization account of the customer the alerts are associated with. */
+  /** Optional. The unique identifier of the Google Workspace organization account of the customer the alerts are associated with. */
   var customerId: js.UndefOr[String] = js.undefined
 }
 object BatchDeleteAlertsRequest {
@@ -25,7 +25,7 @@ object BatchDeleteAlertsRequest {
     
     inline def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
     
-    inline def setAlertIdVarargs(value: String*): Self = StObject.set(x, "alertId", js.Array(value :_*))
+    inline def setAlertIdVarargs(value: String*): Self = StObject.set(x, "alertId", js.Array(value*))
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

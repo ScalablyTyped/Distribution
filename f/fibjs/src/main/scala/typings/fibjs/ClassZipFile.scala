@@ -69,7 +69,7 @@ trait ClassZipFile
     * 
     * @async
     */
-  def getinfo(member: String): js.Any = js.native
+  def getinfo(member: String): Any = js.native
   
   /**
     * 
@@ -80,7 +80,7 @@ trait ClassZipFile
     * 
     * @async
     */
-  def infolist(): js.Array[js.Any] = js.native
+  def infolist(): js.Array[Any] = js.native
   
   /**
     * 
@@ -90,7 +90,7 @@ trait ClassZipFile
     * 
     * @async
     */
-  def namelist(): js.Array[js.Any] = js.native
+  def namelist(): js.Array[Any] = js.native
   
   /**
     * 
@@ -114,8 +114,8 @@ trait ClassZipFile
     * 
     * @async
     */
-  def readAll(): js.Array[js.Any] = js.native
-  def readAll(password: String): js.Array[js.Any] = js.native
+  def readAll(): js.Array[Any] = js.native
+  def readAll(password: String): js.Array[Any] = js.native
   
   /**
     * 

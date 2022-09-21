@@ -22,9 +22,9 @@ trait CreateIngestionResponse extends StObject {
   var IngestionStatus: js.UndefOr[typings.awsSdk.quicksightMod.IngestionStatus] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
-  var RequestId: js.UndefOr[java.lang.String] = js.undefined
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
@@ -52,7 +52,7 @@ object CreateIngestionResponse {
     
     inline def setIngestionStatusUndefined: Self = StObject.set(x, "IngestionStatus", js.undefined)
     
-    inline def setRequestId(value: java.lang.String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     

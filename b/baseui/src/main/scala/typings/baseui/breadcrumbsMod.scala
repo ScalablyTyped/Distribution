@@ -1,123 +1,52 @@
 package typings.baseui
 
-import typings.react.mod.FC
-import typings.react.mod.ReactNode
-import typings.styletronReact.mod.StyletronComponent
+import typings.baseui.baseuiStrings.div
+import typings.baseui.baseuiStrings.li_
+import typings.baseui.baseuiStrings.nav
+import typings.baseui.baseuiStrings.ol
+import typings.baseui.breadcrumbsTypesMod.BreadcrumbsProps
+import typings.react.mod.global.JSX.Element
+import typings.styletronReact.typesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbsMod {
   
-  @JSImport("baseui/breadcrumbs", "Breadcrumbs")
+  object Breadcrumbs {
+    
+    inline def apply(props: BreadcrumbsProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("baseui/breadcrumbs", "Breadcrumbs")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    object defaultProps {
+      
+      @JSImport("baseui/breadcrumbs", "Breadcrumbs.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("baseui/breadcrumbs", "Breadcrumbs.defaultProps.showTrailingSeparator")
+      @js.native
+      def showTrailingSeparator: Boolean = js.native
+      inline def showTrailingSeparator_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showTrailingSeparator")(x.asInstanceOf[js.Any])
+    }
+  }
+  
+  @JSImport("baseui/breadcrumbs", "StyledList")
   @js.native
-  val Breadcrumbs: FC[BreadcrumbsProps] = js.native
+  val StyledList: StyletronComponent[ol, js.Object] = js.native
+  
+  @JSImport("baseui/breadcrumbs", "StyledListItem")
+  @js.native
+  val StyledListItem: StyletronComponent[li_, js.Object] = js.native
   
   @JSImport("baseui/breadcrumbs", "StyledRoot")
   @js.native
-  val StyledRoot: StyletronComponent[js.Any] = js.native
+  val StyledRoot: StyletronComponent[nav, js.Object] = js.native
   
   @JSImport("baseui/breadcrumbs", "StyledSeparator")
   @js.native
-  val StyledSeparator: StyletronComponent[js.Any] = js.native
-  
-  trait BreadcrumbsOverrides extends StObject {
-    
-    var Icon: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var List: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var ListItem: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var Root: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-    
-    var Separator: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.undefined
-  }
-  object BreadcrumbsOverrides {
-    
-    inline def apply(): BreadcrumbsOverrides = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BreadcrumbsOverrides]
-    }
-    
-    extension [Self <: BreadcrumbsOverrides](x: Self) {
-      
-      inline def setIcon(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
-      
-      inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
-      
-      inline def setList(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
-      
-      inline def setListItem(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "ListItem", value.asInstanceOf[js.Any])
-      
-      inline def setListItemUndefined: Self = StObject.set(x, "ListItem", js.undefined)
-      
-      inline def setListUndefined: Self = StObject.set(x, "List", js.undefined)
-      
-      inline def setRoot(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
-      
-      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
-      
-      inline def setSeparator(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
-      
-      inline def setSeparatorUndefined: Self = StObject.set(x, "Separator", js.undefined)
-    }
-  }
-  
-  trait BreadcrumbsProps extends StObject {
-    
-    var ariaLabel: js.UndefOr[String] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var overrides: js.UndefOr[BreadcrumbsOverrides] = js.undefined
-    
-    var showTrailingSeparator: js.UndefOr[Boolean] = js.undefined
-  }
-  object BreadcrumbsProps {
-    
-    inline def apply(): BreadcrumbsProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BreadcrumbsProps]
-    }
-    
-    extension [Self <: BreadcrumbsProps](x: Self) {
-      
-      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
-      
-      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setOverrides(value: BreadcrumbsOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      inline def setShowTrailingSeparator(value: Boolean): Self = StObject.set(x, "showTrailingSeparator", value.asInstanceOf[js.Any])
-      
-      inline def setShowTrailingSeparatorUndefined: Self = StObject.set(x, "showTrailingSeparator", js.undefined)
-    }
-  }
+  val StyledSeparator: StyletronComponent[div, js.Object] = js.native
 }

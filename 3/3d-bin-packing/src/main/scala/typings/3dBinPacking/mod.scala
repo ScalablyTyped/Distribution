@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("3d-bin-packing", "GAWrapperArray")
   @js.native
-  class GAWrapperArray protected ()
+  open class GAWrapperArray protected ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.GAWrapperArray {
     /**
@@ -40,14 +40,14 @@ object mod {
     override def TAG(): String = js.native
     
     /* private */ /* CompleteClass */
-    override def constructResult(): js.Any = js.native
+    override def constructResult(): Any = js.native
     
     /**
       * @inheritdoc
       */
     /* CompleteClass */
     override def createChild(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): typings.`3dBinPacking`.bws.packer.Wrapper = js.native
     
     /**
@@ -62,7 +62,7 @@ object mod {
       * @return result map.
       */
     /* CompleteClass */
-    override def getResult(): js.Any = js.native
+    override def getResult(): Any = js.native
     
     /**
       * Get (calculate) utilization rate.
@@ -77,16 +77,16 @@ object mod {
     override def less(obj: typings.`3dBinPacking`.bws.packer.GAWrapperArray): Boolean = js.native
     
     /* private */ /* CompleteClass */
-    var price: js.Any = js.native
+    var price: Any = js.native
     
     /* protected */ /* CompleteClass */
-    var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any = js.native
+    var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ Any = js.native
     
     /**
       * @brief Validity of this sequence list.
       */
     /* private */ /* CompleteClass */
-    var valid: js.Any = js.native
+    var valid: Any = js.native
   }
   
   /**
@@ -99,7 +99,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class InstanceArray ()
+  open class InstanceArray ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.InstanceArray {
     
@@ -120,7 +120,7 @@ object mod {
       */
     /* CompleteClass */
     override def createChild(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): Instance = js.native
   }
   
@@ -137,7 +137,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class InstanceForm ()
+  open class InstanceForm ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.InstanceForm {
     def this(instance: Instance) = this()
@@ -175,17 +175,17 @@ object mod {
       */
     /* CompleteClass */
     override def construct(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): Unit = js.native
     
     /**
       * Repeated count of the {@link instance}.
       */
     /* private */ /* CompleteClass */
-    var count: js.Any = js.native
+    var count: Any = js.native
     
     /* private */ /* CompleteClass */
-    override def createInstance(xml: js.Any): js.Any = js.native
+    override def createInstance(xml: Any): Any = js.native
     
     /* CompleteClass */
     override def getCount(): Double = js.native
@@ -197,10 +197,10 @@ object mod {
       * A duplicated Instance.
       */
     /* private */ /* CompleteClass */
-    var instance: js.Any = js.native
+    var instance: Any = js.native
     
     /* CompleteClass */
-    override def key(): js.Any = js.native
+    override def key(): Any = js.native
     
     /* CompleteClass */
     override def setCount(`val`: Double): Unit = js.native
@@ -222,7 +222,7 @@ object mod {
       * @inheritdoc
       */
     /* CompleteClass */
-    override def toXML(): js.Any = js.native
+    override def toXML(): Any = js.native
   }
   
   /**
@@ -235,7 +235,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class InstanceFormArray ()
+  open class InstanceFormArray ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.InstanceFormArray {
     
@@ -247,7 +247,7 @@ object mod {
     
     /* CompleteClass */
     override def createChild(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): typings.`3dBinPacking`.bws.packer.InstanceForm = js.native
     
     /**
@@ -283,7 +283,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class Packer ()
+  open class Packer ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.Packer {
     /**
@@ -308,7 +308,7 @@ object mod {
       */
     /* CompleteClass */
     override def construct(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): Unit = js.native
     
     /**
@@ -377,7 +377,7 @@ object mod {
       * @inheritdoc
       */
     /* CompleteClass */
-    override def toXML(): js.Any = js.native
+    override def toXML(): Any = js.native
     
     /**
       * Candidate wrappers who can contain instances.
@@ -396,7 +396,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class PackerForm ()
+  open class PackerForm ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.PackerForm {
     /**
@@ -415,7 +415,7 @@ object mod {
     
     /* CompleteClass */
     override def construct(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): Unit = js.native
     
     /* CompleteClass */
@@ -428,7 +428,7 @@ object mod {
       * Form of Instances to pack.
       */
     /* private */ /* CompleteClass */
-    var instanceFormArray: js.Any = js.native
+    var instanceFormArray: Any = js.native
     
     /* CompleteClass */
     override def optimize(): typings.`3dBinPacking`.bws.packer.WrapperArray = js.native
@@ -437,13 +437,13 @@ object mod {
     override def toPacker(): typings.`3dBinPacking`.bws.packer.Packer = js.native
     
     /* CompleteClass */
-    override def toXML(): js.Any = js.native
+    override def toXML(): Any = js.native
     
     /**
       * Type of Wrappers to be used.
       */
     /* private */ /* CompleteClass */
-    var wrapperArray: js.Any = js.native
+    var wrapperArray: Any = js.native
   }
   
   /**
@@ -456,7 +456,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class Product ()
+  open class Product ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.Product {
     /**
@@ -529,7 +529,7 @@ object mod {
       * Key of a Product is its name.
       */
     /* CompleteClass */
-    override def key(): js.Any = js.native
+    override def key(): Any = js.native
     
     /**
       * Length of the Product, length on the Z-axis in 3D.
@@ -573,7 +573,7 @@ object mod {
       * @inheritdoc
       */
     /* CompleteClass */
-    override def toXML(): js.Any = js.native
+    override def toXML(): Any = js.native
     
     /**
       * Width of the Product, length on the X-axis in 3D.
@@ -598,7 +598,7 @@ object mod {
     */
   @JSImport("3d-bin-packing", "Wrap")
   @js.native
-  class Wrap protected ()
+  open class Wrap protected ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.Wrap {
     /**
@@ -673,7 +673,7 @@ object mod {
       */
     /* CompleteClass */
     override def construct(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): Unit = js.native
     
     /**
@@ -788,7 +788,7 @@ object mod {
       * @inheritdoc
       */
     /* CompleteClass */
-    override def toXML(): js.Any = js.native
+    override def toXML(): Any = js.native
     
     /**
       * A wrapper wrapping the {@link instance}.
@@ -825,7 +825,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class Wrapper ()
+  open class Wrapper ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.Wrapper {
     /**
@@ -916,7 +916,7 @@ object mod {
       */
     /* CompleteClass */
     override def createChild(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): typings.`3dBinPacking`.bws.packer.Wrap = js.native
     
     /* CompleteClass */
@@ -1024,7 +1024,7 @@ object mod {
       * Key of a Wrapper is its name.
       */
     /* CompleteClass */
-    override def key(): js.Any = js.native
+    override def key(): Any = js.native
     
     /**
       * Length of the Wrapper, length on the Z-axis in 3D.
@@ -1095,7 +1095,7 @@ object mod {
       * @inheritdoc
       */
     /* CompleteClass */
-    override def toXML(): js.Any = js.native
+    override def toXML(): Any = js.native
     
     /**
       * Width of the Wrapper, length on the X-axis in 3D.
@@ -1109,7 +1109,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class WrapperArray ()
+  open class WrapperArray ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.WrapperArray {
     
@@ -1130,7 +1130,7 @@ object mod {
       */
     /* CompleteClass */
     override def createChild(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): typings.`3dBinPacking`.bws.packer.Wrapper = js.native
     
     /**
@@ -1156,7 +1156,7 @@ object mod {
   /**
     * Default Constructor.
     */
-  class WrapperGroup ()
+  open class WrapperGroup ()
     extends StObject
        with typings.`3dBinPacking`.bws.packer.WrapperGroup {
     /**
@@ -1198,7 +1198,7 @@ object mod {
       */
     /* CompleteClass */
     override def createChild(
-      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+      xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
     ): typings.`3dBinPacking`.bws.packer.Wrapper = js.native
     
     /**

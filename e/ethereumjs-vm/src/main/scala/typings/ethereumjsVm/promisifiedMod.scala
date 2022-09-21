@@ -1,7 +1,7 @@
 package typings.ethereumjsVm
 
 import typings.ethereumjsVm.stateManagerMod.StorageDump
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object promisifiedMod {
   
   @JSImport("ethereumjs-vm/dist/state/promisified", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PStateManager {
     def this(wrapped: typings.ethereumjsVm.stateManagerMod.default) = this()
@@ -43,7 +43,7 @@ object promisifiedMod {
     override def generateCanonicalGenesis(): js.Promise[Unit] = js.native
     
     /* CompleteClass */
-    override def generateGenesis(initState: js.Any): js.Promise[Unit] = js.native
+    override def generateGenesis(initState: Any): js.Promise[Unit] = js.native
     
     /* CompleteClass */
     override def getAccount(addr: Buffer): js.Promise[typings.ethereumjsAccount.mod.default] = js.native
@@ -52,10 +52,10 @@ object promisifiedMod {
     override def getContractCode(addr: Buffer): js.Promise[Buffer] = js.native
     
     /* CompleteClass */
-    override def getContractStorage(addr: Buffer, key: Buffer): js.Promise[js.Any] = js.native
+    override def getContractStorage(addr: Buffer, key: Buffer): js.Promise[Any] = js.native
     
     /* CompleteClass */
-    override def getOriginalContractStorage(addr: Buffer, key: Buffer): js.Promise[js.Any] = js.native
+    override def getOriginalContractStorage(addr: Buffer, key: Buffer): js.Promise[Any] = js.native
     
     /* CompleteClass */
     override def getStateRoot(): js.Promise[Buffer] = js.native
@@ -99,15 +99,15 @@ object promisifiedMod {
     
     def generateCanonicalGenesis(): js.Promise[Unit]
     
-    def generateGenesis(initState: js.Any): js.Promise[Unit]
+    def generateGenesis(initState: Any): js.Promise[Unit]
     
     def getAccount(addr: Buffer): js.Promise[typings.ethereumjsAccount.mod.default]
     
     def getContractCode(addr: Buffer): js.Promise[Buffer]
     
-    def getContractStorage(addr: Buffer, key: Buffer): js.Promise[js.Any]
+    def getContractStorage(addr: Buffer, key: Buffer): js.Promise[Any]
     
-    def getOriginalContractStorage(addr: Buffer, key: Buffer): js.Promise[js.Any]
+    def getOriginalContractStorage(addr: Buffer, key: Buffer): js.Promise[Any]
     
     def getStateRoot(): js.Promise[Buffer]
     
@@ -135,11 +135,11 @@ object promisifiedMod {
       copy: () => PStateManager,
       dumpStorage: Buffer => js.Promise[StorageDump],
       generateCanonicalGenesis: () => js.Promise[Unit],
-      generateGenesis: js.Any => js.Promise[Unit],
+      generateGenesis: Any => js.Promise[Unit],
       getAccount: Buffer => js.Promise[typings.ethereumjsAccount.mod.default],
       getContractCode: Buffer => js.Promise[Buffer],
-      getContractStorage: (Buffer, Buffer) => js.Promise[js.Any],
-      getOriginalContractStorage: (Buffer, Buffer) => js.Promise[js.Any],
+      getContractStorage: (Buffer, Buffer) => js.Promise[Any],
+      getOriginalContractStorage: (Buffer, Buffer) => js.Promise[Any],
       getStateRoot: () => js.Promise[Buffer],
       hasGenesisState: () => js.Promise[Boolean],
       putAccount: (Buffer, typings.ethereumjsAccount.mod.default) => js.Promise[Unit],
@@ -170,15 +170,15 @@ object promisifiedMod {
       
       inline def setGenerateCanonicalGenesis(value: () => js.Promise[Unit]): Self = StObject.set(x, "generateCanonicalGenesis", js.Any.fromFunction0(value))
       
-      inline def setGenerateGenesis(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "generateGenesis", js.Any.fromFunction1(value))
+      inline def setGenerateGenesis(value: Any => js.Promise[Unit]): Self = StObject.set(x, "generateGenesis", js.Any.fromFunction1(value))
       
       inline def setGetAccount(value: Buffer => js.Promise[typings.ethereumjsAccount.mod.default]): Self = StObject.set(x, "getAccount", js.Any.fromFunction1(value))
       
       inline def setGetContractCode(value: Buffer => js.Promise[Buffer]): Self = StObject.set(x, "getContractCode", js.Any.fromFunction1(value))
       
-      inline def setGetContractStorage(value: (Buffer, Buffer) => js.Promise[js.Any]): Self = StObject.set(x, "getContractStorage", js.Any.fromFunction2(value))
+      inline def setGetContractStorage(value: (Buffer, Buffer) => js.Promise[Any]): Self = StObject.set(x, "getContractStorage", js.Any.fromFunction2(value))
       
-      inline def setGetOriginalContractStorage(value: (Buffer, Buffer) => js.Promise[js.Any]): Self = StObject.set(x, "getOriginalContractStorage", js.Any.fromFunction2(value))
+      inline def setGetOriginalContractStorage(value: (Buffer, Buffer) => js.Promise[Any]): Self = StObject.set(x, "getOriginalContractStorage", js.Any.fromFunction2(value))
       
       inline def setGetStateRoot(value: () => js.Promise[Buffer]): Self = StObject.set(x, "getStateRoot", js.Any.fromFunction0(value))
       

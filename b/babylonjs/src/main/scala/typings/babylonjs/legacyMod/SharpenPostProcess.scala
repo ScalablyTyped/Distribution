@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "SharpenPostProcess")
 @js.native
-class SharpenPostProcess protected ()
+open class SharpenPostProcess protected ()
   extends typings.babylonjs.indexMod.SharpenPostProcess {
   /**
     * Creates a new instance ConvolutionPostProcess
@@ -39,9 +39,15 @@ object SharpenPostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String

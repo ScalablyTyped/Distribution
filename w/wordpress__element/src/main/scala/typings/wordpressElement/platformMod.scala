@@ -16,6 +16,10 @@ object platformMod {
     @js.native
     val OS: String = js.native
     
-    inline def select(spec: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @JSImport("@wordpress/element/build-types/platform", "default.isWeb")
+    @js.native
+    val isWeb: Boolean = js.native
+    
+    inline def select(spec: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(spec.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

@@ -33,6 +33,6 @@ object ListRobotApplicationsResponse {
     
     inline def setRobotApplicationSummariesUndefined: Self = StObject.set(x, "robotApplicationSummaries", js.undefined)
     
-    inline def setRobotApplicationSummariesVarargs(value: RobotApplicationSummary*): Self = StObject.set(x, "robotApplicationSummaries", js.Array(value :_*))
+    inline def setRobotApplicationSummariesVarargs(value: RobotApplicationSummary*): Self = StObject.set(x, "robotApplicationSummaries", js.Array(value*))
   }
 }

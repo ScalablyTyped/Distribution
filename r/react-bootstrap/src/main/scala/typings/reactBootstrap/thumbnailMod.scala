@@ -11,12 +11,10 @@ object thumbnailMod {
   
   @JSImport("react-bootstrap/lib/Thumbnail", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ThumbnailProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ThumbnailProps, js.Object, Any]
   
-  @js.native
-  trait Thumbnail
-    extends Component[ThumbnailProps, js.Object, js.Any]
+  type Thumbnail = Component[ThumbnailProps, js.Object, Any]
   
   trait ThumbnailProps
     extends StObject

@@ -69,7 +69,7 @@ object XDriverManager {
     getConnection: String => XConnection,
     getConnectionWithInfo: (String, SeqEquiv[PropertyValue]) => XConnection,
     getLoginTimeout: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLoginTimeout: Double => Unit
   ): XDriverManager = {

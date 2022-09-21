@@ -69,13 +69,13 @@ trait TypeofUtil extends StObject {
     * 判断是否数组
     * @param data 判断对象
     */
-  def isArray(data: js.Any): /* is std.Array<any> */ Boolean = js.native
+  def isArray(data: Any): /* is std.Array<any> */ Boolean = js.native
   
   /**
     * 判断参数是否为DOM元素
     * @param data 判断对象
     */
-  def isDOM(data: js.Any): /* is std.HTMLElement */ Boolean = js.native
+  def isDOM(data: Any): /* is std.HTMLElement */ Boolean = js.native
   
   /**
     * 判断一个对象是都为空
@@ -83,11 +83,11 @@ trait TypeofUtil extends StObject {
     */
   def isEmpty(obj: js.Object): Boolean = js.native
   
-  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, js.Any]): Double = js.native
-  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ js.Any, js.Any], context: C): Double = js.native
+  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ Any, Any]): Double = js.native
+  def requestAnimFrame[C](callback: js.ThisFunction1[/* this */ C, /* repeated */ Any, Any], context: C): Double = js.native
   
-  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.native
-  def requestIdleCallback(callback: js.Function1[/* repeated */ js.Any, js.Any], options: Timeout): Double = js.native
+  def requestIdleCallback(callback: js.Function1[/* repeated */ Any, Any]): Double = js.native
+  def requestIdleCallback(callback: js.Function1[/* repeated */ Any, Any], options: Timeout): Double = js.native
   
   /**
     * 将16进制RGB转为rgba(R,G,B,A)

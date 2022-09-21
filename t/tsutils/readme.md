@@ -1,7 +1,7 @@
 
 # Scala.js typings for tsutils
 
-Typings are for version 3.17.1
+Typings are for version 3.21.0
 
 ## Library description:
 utilities for working with typescript's AST
@@ -10,10 +10,10 @@ utilities for working with typescript's AST
 | ------------------ | :-------------: |
 | Full name          | tsutils |
 | Keywords           | typescript, ts, ast, typeguard, utils, helper, node |
-| # releases         | 16 |
-| # dependents       | 206 |
-| # downloads        | 464604327 |
-| # stars            | 4 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7.938546766666667E7 |
+| # stars            | 282.0 |
 
 ## Links
 - [Homepage](https://github.com/ajafff/tsutils#readme)

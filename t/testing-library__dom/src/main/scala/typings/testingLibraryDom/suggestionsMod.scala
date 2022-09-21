@@ -2,7 +2,6 @@ package typings.testingLibraryDom
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
-import typings.std.RegExp
 import typings.testingLibraryDom.testingLibraryDomStrings.alttext_
 import typings.testingLibraryDom.testingLibraryDomStrings.displayvalue_
 import typings.testingLibraryDom.testingLibraryDomStrings.labeltext_
@@ -27,22 +26,22 @@ object suggestionsMod {
   inline def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.testingLibraryDom.testingLibraryDomStrings.Role
-    - typings.testingLibraryDom.testingLibraryDomStrings.role_
+    - typings.testingLibraryDom.testingLibraryDomStrings.AltText
+    - typings.testingLibraryDom.testingLibraryDomStrings.alttext_
+    - typings.testingLibraryDom.testingLibraryDomStrings.DisplayValue
+    - typings.testingLibraryDom.testingLibraryDomStrings.displayvalue_
     - typings.testingLibraryDom.testingLibraryDomStrings.LabelText
     - typings.testingLibraryDom.testingLibraryDomStrings.labeltext_
     - typings.testingLibraryDom.testingLibraryDomStrings.PlaceholderText
     - typings.testingLibraryDom.testingLibraryDomStrings.placeholdertext_
-    - typings.testingLibraryDom.testingLibraryDomStrings.Text
-    - typings.testingLibraryDom.testingLibraryDomStrings.text_
-    - typings.testingLibraryDom.testingLibraryDomStrings.DisplayValue
-    - typings.testingLibraryDom.testingLibraryDomStrings.displayvalue_
-    - typings.testingLibraryDom.testingLibraryDomStrings.AltText
-    - typings.testingLibraryDom.testingLibraryDomStrings.alttext_
-    - typings.testingLibraryDom.testingLibraryDomStrings.Title
-    - typings.testingLibraryDom.testingLibraryDomStrings.title_
+    - typings.testingLibraryDom.testingLibraryDomStrings.Role
+    - typings.testingLibraryDom.testingLibraryDomStrings.role_
     - typings.testingLibraryDom.testingLibraryDomStrings.TestId
     - typings.testingLibraryDom.testingLibraryDomStrings.testid_
+    - typings.testingLibraryDom.testingLibraryDomStrings.Text
+    - typings.testingLibraryDom.testingLibraryDomStrings.text_
+    - typings.testingLibraryDom.testingLibraryDomStrings.Title
+    - typings.testingLibraryDom.testingLibraryDomStrings.title_
   */
   trait Method extends StObject
   object Method {
@@ -82,7 +81,7 @@ object suggestionsMod {
   
   type QueryArgs = js.Tuple2[String, js.UndefOr[QueryOptions]]
   
-  type QueryOptions = StringDictionary[RegExp | Boolean]
+  type QueryOptions = StringDictionary[js.RegExp | Boolean]
   
   trait Suggestion extends StObject {
     
@@ -120,12 +119,12 @@ object suggestionsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.testingLibraryDom.testingLibraryDomStrings.find
+    - typings.testingLibraryDom.testingLibraryDomStrings.findAll
     - typings.testingLibraryDom.testingLibraryDomStrings.get
     - typings.testingLibraryDom.testingLibraryDomStrings.getAll
     - typings.testingLibraryDom.testingLibraryDomStrings.query
     - typings.testingLibraryDom.testingLibraryDomStrings.queryAll
-    - typings.testingLibraryDom.testingLibraryDomStrings.find
-    - typings.testingLibraryDom.testingLibraryDomStrings.findAll
   */
   trait Variant extends StObject
   object Variant {

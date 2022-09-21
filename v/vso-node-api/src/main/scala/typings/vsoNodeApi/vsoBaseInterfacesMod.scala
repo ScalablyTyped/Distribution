@@ -143,24 +143,24 @@ object vsoBaseInterfacesMod {
     }
   }
   
-  type IHeaders = StringDictionary[js.Any]
+  type IHeaders = StringDictionary[Any]
   
   trait IHttpResponse extends StObject {
     
-    var headers: js.Any
+    var headers: Any
     
     var statusCode: js.UndefOr[Double] = js.undefined
   }
   object IHttpResponse {
     
-    inline def apply(headers: js.Any): IHttpResponse = {
+    inline def apply(headers: Any): IHttpResponse = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHttpResponse]
     }
     
     extension [Self <: IHttpResponse](x: Self) {
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
@@ -191,7 +191,7 @@ object vsoBaseInterfacesMod {
       
       inline def setProxyBypassHostsUndefined: Self = StObject.set(x, "proxyBypassHosts", js.undefined)
       
-      inline def setProxyBypassHostsVarargs(value: String*): Self = StObject.set(x, "proxyBypassHosts", js.Array(value :_*))
+      inline def setProxyBypassHostsVarargs(value: String*): Self = StObject.set(x, "proxyBypassHosts", js.Array(value*))
       
       inline def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
       
@@ -209,16 +209,16 @@ object vsoBaseInterfacesMod {
     
     def canHandleAuthentication(res: IHttpResponse): Boolean
     
-    def handleAuthentication(httpClient: js.Any, protocol: js.Any, options: js.Any, objs: js.Any, finalCallback: js.Any): Unit
+    def handleAuthentication(httpClient: Any, protocol: Any, options: Any, objs: Any, finalCallback: Any): Unit
     
-    def prepareRequest(options: js.Any): Unit
+    def prepareRequest(options: Any): Unit
   }
   object IRequestHandler {
     
     inline def apply(
       canHandleAuthentication: IHttpResponse => Boolean,
-      handleAuthentication: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit,
-      prepareRequest: js.Any => Unit
+      handleAuthentication: (Any, Any, Any, Any, Any) => Unit,
+      prepareRequest: Any => Unit
     ): IRequestHandler = {
       val __obj = js.Dynamic.literal(canHandleAuthentication = js.Any.fromFunction1(canHandleAuthentication), handleAuthentication = js.Any.fromFunction5(handleAuthentication), prepareRequest = js.Any.fromFunction1(prepareRequest))
       __obj.asInstanceOf[IRequestHandler]
@@ -228,9 +228,9 @@ object vsoBaseInterfacesMod {
       
       inline def setCanHandleAuthentication(value: IHttpResponse => Boolean): Self = StObject.set(x, "canHandleAuthentication", js.Any.fromFunction1(value))
       
-      inline def setHandleAuthentication(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "handleAuthentication", js.Any.fromFunction5(value))
+      inline def setHandleAuthentication(value: (Any, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "handleAuthentication", js.Any.fromFunction5(value))
       
-      inline def setPrepareRequest(value: js.Any => Unit): Self = StObject.set(x, "prepareRequest", js.Any.fromFunction1(value))
+      inline def setPrepareRequest(value: Any => Unit): Self = StObject.set(x, "prepareRequest", js.Any.fromFunction1(value))
     }
   }
   

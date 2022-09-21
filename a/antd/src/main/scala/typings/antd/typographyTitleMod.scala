@@ -11,8 +11,13 @@ import typings.antd.baseMod.CopyConfig
 import typings.antd.baseMod.EditConfig
 import typings.antd.baseMod.EllipsisConfig
 import typings.react.mod.CSSProperties
-import typings.react.mod.FC
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
+import typings.std.HTMLDivElement
+import typings.std.HTMLHeadingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +26,9 @@ object typographyTitleMod extends Shortcut {
   
   @JSImport("antd/lib/typography/Title", JSImport.Default)
   @js.native
-  val default: FC[TitleProps] = js.native
+  val default: ForwardRefExoticComponent[TitleProps & RefAttributes[HTMLHeadingElement]] = js.native
   
-  /* Inlined antd.antd/lib/_util/type.Omit<antd.antd/lib/typography/Base.BlockProps & {  level :[1, 2, 3, 4, 5][number] | undefined}, 'strong'> */
+  /* Inlined std.Omit<antd.antd/lib/typography/Base.BlockProps & {  level :[1, 2, 3, 4, 5][number] | undefined,   onClick :(e : react.react.MouseEvent<std.HTMLDivElement, react.react.NativeMouseEvent> | undefined): void | undefined}, 'strong'> */
   trait TitleProps extends StObject {
     
     var `aria-label`: js.UndefOr[String] = js.undefined
@@ -46,11 +51,17 @@ object typographyTitleMod extends Shortcut {
     
     var id: js.UndefOr[String] = js.undefined
     
+    var italic: js.UndefOr[Boolean] = js.undefined
+    
     var keyboard: js.UndefOr[Boolean] = js.undefined
     
     var level: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
     
     var mark: js.UndefOr[Boolean] = js.undefined
+    
+    var onClick: js.UndefOr[
+        js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLDivElement, NativeMouseEvent]], Unit]
+      ] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -111,6 +122,10 @@ object typographyTitleMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      
       inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
       inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
@@ -122,6 +137,10 @@ object typographyTitleMod extends Shortcut {
       inline def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
       inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      
+      inline def setOnClick(value: /* e */ js.UndefOr[MouseEvent[HTMLDivElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -145,8 +164,8 @@ object typographyTitleMod extends Shortcut {
     }
   }
   
-  type _To = FC[TitleProps]
+  type _To = ForwardRefExoticComponent[TitleProps & RefAttributes[HTMLHeadingElement]]
   
   /* This means you don't have to write `default`, but can instead just say `typographyTitleMod.foo` */
-  override def _to: FC[TitleProps] = default
+  override def _to: ForwardRefExoticComponent[TitleProps & RefAttributes[HTMLHeadingElement]] = default
 }

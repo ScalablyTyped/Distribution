@@ -31,7 +31,7 @@ trait Animation extends StObject {
   
   var fill: backwards | both | forwards | none
   
-  var from: js.Any
+  var from: Any
   
   // TODO type
   var repeat: Double | indefinite
@@ -49,7 +49,7 @@ object Animation {
     easing: () => Unit,
     end: String,
     fill: backwards | both | forwards | none,
-    from: js.Any,
+    from: Any,
     repeat: Double | indefinite,
     to: Double
   ): Animation = {
@@ -75,7 +75,7 @@ object Animation {
     
     inline def setFill(value: backwards | both | forwards | none): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    inline def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setRepeat(value: Double | indefinite): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     

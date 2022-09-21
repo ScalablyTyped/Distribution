@@ -8,5 +8,5 @@ object getTraceGraphInputMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/GetTraceGraphInput", "GetTraceGraphInput")
   @js.native
-  val GetTraceGraphInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetTraceGraphInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

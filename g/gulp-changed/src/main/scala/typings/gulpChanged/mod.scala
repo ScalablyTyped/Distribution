@@ -1,8 +1,7 @@
 package typings.gulpChanged
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
-import typings.node.NodeJS.ReadWriteStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
@@ -15,27 +14,21 @@ object mod extends Shortcut {
   @js.native
   val ^ : IGulpChanged = js.native
   
-  type IComparator = js.Function4[
-    /* stream */ Transform, 
-    /* callback */ js.Function, 
-    /* sourceFile */ File, 
-    /* destPath */ String, 
-    Unit
-  ]
+  type IComparator = js.Function3[/* stream */ Transform, /* sourceFile */ File, /* destPath */ String, Unit]
   
   type IDestination = js.Function1[/* file */ String | Buffer, String]
   
   @js.native
   trait IGulpChanged extends StObject {
     
-    def apply(destination: String): ReadWriteStream = js.native
-    def apply(destination: String, options: IOptions): ReadWriteStream = js.native
-    def apply(destination: IDestination): ReadWriteStream = js.native
-    def apply(destination: IDestination, options: IOptions): ReadWriteStream = js.native
+    def apply(destination: String): Any = js.native
+    def apply(destination: String, options: IOptions): Any = js.native
+    def apply(destination: IDestination): Any = js.native
+    def apply(destination: IDestination, options: IOptions): Any = js.native
+    
+    var compareContents: IComparator = js.native
     
     var compareLastModifiedTime: IComparator = js.native
-    
-    var compareSha1Digest: IComparator = js.native
   }
   
   trait IOptions extends StObject {
@@ -79,9 +72,7 @@ object mod extends Shortcut {
       
       inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      inline def setHasChanged(
-        value: (/* stream */ Transform, /* callback */ js.Function, /* sourceFile */ File, /* destPath */ String) => Unit
-      ): Self = StObject.set(x, "hasChanged", js.Any.fromFunction4(value))
+      inline def setHasChanged(value: (/* stream */ Transform, /* sourceFile */ File, /* destPath */ String) => Unit): Self = StObject.set(x, "hasChanged", js.Any.fromFunction3(value))
       
       inline def setHasChangedUndefined: Self = StObject.set(x, "hasChanged", js.undefined)
       

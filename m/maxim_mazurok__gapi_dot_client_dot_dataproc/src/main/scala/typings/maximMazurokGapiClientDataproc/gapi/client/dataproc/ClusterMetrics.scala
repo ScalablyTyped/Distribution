@@ -11,14 +11,14 @@ trait ClusterMetrics extends StObject {
   var hdfsMetrics: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[Any]
   ] = js.undefined
   
-  /** The YARN metrics. */
+  /** YARN metrics. */
   var yarnMetrics: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[Any]
   ] = js.undefined
 }
 object ClusterMetrics {
@@ -33,7 +33,7 @@ object ClusterMetrics {
     inline def setHdfsMetrics(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[Any]
     ): Self = StObject.set(x, "hdfsMetrics", value.asInstanceOf[js.Any])
     
     inline def setHdfsMetricsUndefined: Self = StObject.set(x, "hdfsMetrics", js.undefined)
@@ -41,7 +41,7 @@ object ClusterMetrics {
     inline def setYarnMetrics(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[Any]
     ): Self = StObject.set(x, "yarnMetrics", value.asInstanceOf[js.Any])
     
     inline def setYarnMetricsUndefined: Self = StObject.set(x, "yarnMetrics", js.undefined)

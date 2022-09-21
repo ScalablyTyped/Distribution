@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteInvitationsRequest extends StObject {
   
   /**
-    * An array that lists AWS account IDs, one for each account that sent an invitation to delete.
+    * An array that lists Amazon Web Services account IDs, one for each account that sent an invitation to delete.
     */
   var accountIds: listOfString
 }
@@ -22,6 +22,6 @@ object DeleteInvitationsRequest {
     
     inline def setAccountIds(value: listOfString): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsVarargs(value: string*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: string*): Self = StObject.set(x, "accountIds", js.Array(value*))
   }
 }

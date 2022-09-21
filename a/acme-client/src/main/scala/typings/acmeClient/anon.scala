@@ -26,4 +26,21 @@ object anon {
       inline def setStaging(value: String): Self = StObject.set(x, "staging", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait ProductionString extends StObject {
+    
+    var production: String
+  }
+  object ProductionString {
+    
+    inline def apply(production: String): ProductionString = {
+      val __obj = js.Dynamic.literal(production = production.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProductionString]
+    }
+    
+    extension [Self <: ProductionString](x: Self) {
+      
+      inline def setProduction(value: String): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+    }
+  }
 }

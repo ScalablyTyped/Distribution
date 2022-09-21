@@ -16,7 +16,7 @@ trait XUpdatable
 }
 object XUpdatable {
   
-  inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, update: () => Unit): XUpdatable = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit, update: () => Unit): XUpdatable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[XUpdatable]
   }

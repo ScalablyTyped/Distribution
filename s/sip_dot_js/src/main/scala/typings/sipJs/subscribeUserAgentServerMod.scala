@@ -12,7 +12,7 @@ object subscribeUserAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/subscribe-user-agent-server", "SubscribeUserAgentServer")
   @js.native
-  class SubscribeUserAgentServer protected () extends UserAgentServer {
+  open class SubscribeUserAgentServer protected () extends UserAgentServer {
     def this(core: UserAgentCore, message: IncomingRequestMessage) = this()
     def this(core: UserAgentCore, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
   }

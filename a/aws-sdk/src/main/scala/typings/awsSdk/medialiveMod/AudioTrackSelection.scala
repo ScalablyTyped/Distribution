@@ -22,6 +22,6 @@ object AudioTrackSelection {
     
     inline def setTracks(value: listOfAudioTrack): Self = StObject.set(x, "Tracks", value.asInstanceOf[js.Any])
     
-    inline def setTracksVarargs(value: AudioTrack*): Self = StObject.set(x, "Tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: AudioTrack*): Self = StObject.set(x, "Tracks", js.Array(value*))
   }
 }

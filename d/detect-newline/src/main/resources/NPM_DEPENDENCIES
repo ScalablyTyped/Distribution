@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "detect-newline" : "3.1.0"
+      "detect-newline" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "detect-newline" : "3.1.0"
+      "detect-newline" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

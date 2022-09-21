@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * ListClustersResponse is the result of ListClustersRequest.
-  */
 trait SchemaListClustersResponse extends StObject {
   
   /**
-    * A list of clusters in the project in the specified zone, or across all
-    * ones.
+    * A list of clusters in the project in the specified zone, or across all ones.
     */
   var clusters: js.UndefOr[js.Array[SchemaCluster]] = js.undefined
   
   /**
-    * If any zones are listed here, the list of clusters returned may be
-    * missing those zones.
+    * If any zones are listed here, the list of clusters returned may be missing those zones.
     */
-  var missingZones: js.UndefOr[js.Array[String]] = js.undefined
+  var missingZones: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaListClustersResponse {
   
@@ -34,12 +29,14 @@ object SchemaListClustersResponse {
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    inline def setClustersVarargs(value: SchemaCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: SchemaCluster*): Self = StObject.set(x, "clusters", js.Array(value*))
     
     inline def setMissingZones(value: js.Array[String]): Self = StObject.set(x, "missingZones", value.asInstanceOf[js.Any])
     
+    inline def setMissingZonesNull: Self = StObject.set(x, "missingZones", null)
+    
     inline def setMissingZonesUndefined: Self = StObject.set(x, "missingZones", js.undefined)
     
-    inline def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value :_*))
+    inline def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value*))
   }
 }

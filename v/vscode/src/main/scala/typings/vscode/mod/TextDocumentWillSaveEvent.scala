@@ -19,7 +19,7 @@ trait TextDocumentWillSaveEvent extends StObject {
   val reason: TextDocumentSaveReason = js.native
   
   /**
-    * Allows to pause the event loop and to apply [pre-save-edits](#TextEdit).
+    * Allows to pause the event loop and to apply {@link TextEdit pre-save-edits}.
     * Edits of subsequent calls to this function will be applied in order. The
     * edits will be *ignored* if concurrent modifications of the document happened.
     *
@@ -28,15 +28,15 @@ trait TextDocumentWillSaveEvent extends StObject {
     *
     * ```ts
     * workspace.onWillSaveTextDocument(event => {
-    *     // async, will *throw* an error
-    *     setTimeout(() => event.waitUntil(promise));
+    * 	// async, will *throw* an error
+    * 	setTimeout(() => event.waitUntil(promise));
     *
-    *     // sync, OK
-    *     event.waitUntil(promise);
+    * 	// sync, OK
+    * 	event.waitUntil(promise);
     * })
     * ```
     *
-    * @param thenable A thenable that resolves to [pre-save-edits](#TextEdit).
+    * @param thenable A thenable that resolves to {@link TextEdit pre-save-edits}.
     */
   /**
     * Allows to pause the event loop until the provided thenable resolved.
@@ -45,5 +45,5 @@ trait TextDocumentWillSaveEvent extends StObject {
     *
     * @param thenable A thenable that delays saving.
     */
-  def waitUntil(thenable: Thenable[js.Any | js.Array[TextEdit]]): Unit = js.native
+  def waitUntil(thenable: Thenable[Any | js.Array[TextEdit]]): Unit = js.native
 }

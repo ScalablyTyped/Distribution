@@ -14,7 +14,7 @@ object libPersonaPresenceMod {
   
   @JSImport("office-ui-fabric-react/lib/PersonaPresence", "PersonaPresenceBase")
   @js.native
-  class PersonaPresenceBase protected ()
+  open class PersonaPresenceBase protected ()
     extends typings.officeUiFabricReact.personaPresenceMod.PersonaPresenceBase {
     def this(props: IPersonaPresenceProps) = this()
   }

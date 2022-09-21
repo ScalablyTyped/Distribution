@@ -10,7 +10,7 @@ trait Options extends StObject {
     * Optional options passed to authorizer module at initialization (via gmeConfig).
     *    config.authentication.authorizer.options = {};
     */
-  var options: js.Any
+  var options: Any
   
   /**
     * Path (absolute) to module implementing AuthorizerBase 
@@ -22,14 +22,14 @@ trait Options extends StObject {
 }
 object Options {
   
-  inline def apply(options: js.Any, path: String): Options = {
+  inline def apply(options: Any, path: String): Options = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
   extension [Self <: Options](x: Self) {
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

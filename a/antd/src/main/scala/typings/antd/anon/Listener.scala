@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Listener extends StObject {
   
-  var listener: (js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, js.Any]) | Null
+  var listener: (js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, Any]) | Null
   
   var mql: MediaQueryList
 }
@@ -21,7 +21,7 @@ object Listener {
   
   extension [Self <: Listener](x: Self) {
     
-    inline def setListener(value: js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, js.Any]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    inline def setListener(value: js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, Any]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     inline def setListenerNull: Self = StObject.set(x, "listener", null)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LexBot extends StObject {
   
   /**
-    * The Region the Amazon Lex bot was created in.
+    * The Region that the Amazon Lex bot was created in.
     */
   var LexRegion: js.UndefOr[typings.awsSdk.connectMod.LexRegion] = js.undefined
   

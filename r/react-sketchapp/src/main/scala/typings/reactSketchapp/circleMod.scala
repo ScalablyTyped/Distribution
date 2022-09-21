@@ -1,45 +1,43 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.reactSketchapp.propsMod.NumberProp
-import typings.reactSketchapp.propsMod.PathProps
+import typings.reactSketchapp.anon.ClipPath
+import typings.reactSketchapp.anon.Cx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Circle", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/Circle", "Circle")
   @js.native
-  class default ()
-    extends Component[CircleProps, js.Object, js.Any]
-  
-  type Circle = Component[CircleProps, js.Object, js.Any]
-  
-  trait CircleProps
-    extends StObject
-       with PathProps {
-    
-    var cx: NumberProp
-    
-    var cy: NumberProp
-    
-    var r: NumberProp
+  open class Circle protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object CircleProps {
+  /* static members */
+  object Circle {
     
-    inline def apply(cx: NumberProp, cy: NumberProp, r: NumberProp): CircleProps = {
-      val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CircleProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Circle", "Circle")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: CircleProps](x: Self) {
-      
-      inline def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
-      
-      inline def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
-      
-      inline def setR(value: NumberProp): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Circle", "Circle.defaultProps")
+    @js.native
+    def defaultProps: Cx = js.native
+    inline def defaultProps_=(x: Cx): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Svg/Circle", "Circle.propTypes")
+    @js.native
+    def propTypes: ClipPath = js.native
+    inline def propTypes_=(x: ClipPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[ClipPath]
 }

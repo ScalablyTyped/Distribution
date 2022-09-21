@@ -6,10 +6,8 @@ import typings.logfmt.anon.ContentType
 import typings.logfmt.anon.Contentlength
 import typings.logfmt.anon.Delimiter
 import typings.logfmt.anon.End
-import typings.node.NodeJS.ReadWriteStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("logfmt", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Logfmt
   @JSImport("logfmt", JSImport.Namespace)
@@ -28,9 +26,9 @@ object mod extends Shortcut {
   
   type HTTPHandler = js.Function3[
     /* req */ IncomingMessage, 
-    /* res */ ServerResponse, 
-    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
-    js.Any
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Any
   ]
   
   @js.native
@@ -42,8 +40,8 @@ object mod extends Shortcut {
     def bodyParserStream(): HTTPHandler = js.native
     def bodyParserStream(options: ContentType): HTTPHandler = js.native
     
-    def error(err: Error): Unit = js.native
-    def error(err: Error, id: String): Unit = js.native
+    def error(err: js.Error): Unit = js.native
+    def error(err: js.Error, id: String): Unit = js.native
     
     def log(): Unit = js.native
     def log(data: js.Object): Unit = js.native
@@ -66,11 +64,11 @@ object mod extends Shortcut {
     
     var stream: WritableStream = js.native
     
-    def streamParser(): ReadWriteStream = js.native
-    def streamParser(options: End): ReadWriteStream = js.native
+    def streamParser(): Any = js.native
+    def streamParser(options: End): Any = js.native
     
-    def streamStringify(): ReadWriteStream = js.native
-    def streamStringify(options: Delimiter): ReadWriteStream = js.native
+    def streamStringify(): Any = js.native
+    def streamStringify(options: Delimiter): Any = js.native
     
     def stringify(data: js.Object): String = js.native
     
@@ -93,10 +91,10 @@ object mod extends Shortcut {
     def apply(options: RequestLoggerOptions): HTTPHandler = js.native
     def apply(options: RequestLoggerOptions, formatter: RequestLoggerFormatter): HTTPHandler = js.native
     
-    def commonFormatter(req: IncomingMessage, res: ServerResponse): Contentlength = js.native
+    def commonFormatter(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Contentlength = js.native
   }
   
-  type RequestLoggerFormatter = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, js.Object]
+  type RequestLoggerFormatter = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], js.Object]
   
   trait RequestLoggerOptions extends StObject {
     

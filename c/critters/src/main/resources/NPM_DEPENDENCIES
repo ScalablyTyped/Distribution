@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "critters" : "0.0.16"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "critters" : "0.0.16"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

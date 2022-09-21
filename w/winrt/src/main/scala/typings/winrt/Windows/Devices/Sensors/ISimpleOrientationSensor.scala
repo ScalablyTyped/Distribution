@@ -8,11 +8,11 @@ trait ISimpleOrientationSensor extends StObject {
   
   def getCurrentOrientation(): SimpleOrientation
   
-  var onorientationchanged: js.Any
+  var onorientationchanged: Any
 }
 object ISimpleOrientationSensor {
   
-  inline def apply(getCurrentOrientation: () => SimpleOrientation, onorientationchanged: js.Any): ISimpleOrientationSensor = {
+  inline def apply(getCurrentOrientation: () => SimpleOrientation, onorientationchanged: Any): ISimpleOrientationSensor = {
     val __obj = js.Dynamic.literal(getCurrentOrientation = js.Any.fromFunction0(getCurrentOrientation), onorientationchanged = onorientationchanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISimpleOrientationSensor]
   }
@@ -21,6 +21,6 @@ object ISimpleOrientationSensor {
     
     inline def setGetCurrentOrientation(value: () => SimpleOrientation): Self = StObject.set(x, "getCurrentOrientation", js.Any.fromFunction0(value))
     
-    inline def setOnorientationchanged(value: js.Any): Self = StObject.set(x, "onorientationchanged", value.asInstanceOf[js.Any])
+    inline def setOnorientationchanged(value: Any): Self = StObject.set(x, "onorientationchanged", value.asInstanceOf[js.Any])
   }
 }

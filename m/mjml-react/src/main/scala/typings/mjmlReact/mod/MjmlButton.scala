@@ -7,19 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlButton")
 @js.native
-class MjmlButton protected ()
+open class MjmlButton protected ()
   extends Component[
-      RequiredChildrenProps & MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps, 
+      MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps, 
       js.Object, 
-      js.Any
+      Any
     ] {
-  def this(props: RequiredChildrenProps & MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps) = this()
+  def this(props: MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(
-    props: RequiredChildrenProps & MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps,
-    context: js.Any
-  ) = this()
+  def this(props: MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps, context: Any) = this()
 }

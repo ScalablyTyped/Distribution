@@ -10,7 +10,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("FileSaver")
   @js.native
-  class FileSaver protected ()
+  open class FileSaver protected ()
     extends StObject
        with typings.filewriter.FileSaver {
     /**

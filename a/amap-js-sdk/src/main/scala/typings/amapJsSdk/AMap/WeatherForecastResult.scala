@@ -40,7 +40,7 @@ object WeatherForecastResult {
     
     inline def setForecasts(value: js.Array[Forecast]): Self = StObject.set(x, "forecasts", value.asInstanceOf[js.Any])
     
-    inline def setForecastsVarargs(value: Forecast*): Self = StObject.set(x, "forecasts", js.Array(value :_*))
+    inline def setForecastsVarargs(value: Forecast*): Self = StObject.set(x, "forecasts", js.Array(value*))
     
     inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

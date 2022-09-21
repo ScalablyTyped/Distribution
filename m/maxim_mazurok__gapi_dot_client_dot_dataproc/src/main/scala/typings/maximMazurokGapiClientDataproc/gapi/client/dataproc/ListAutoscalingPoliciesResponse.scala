@@ -29,6 +29,6 @@ object ListAutoscalingPoliciesResponse {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: AutoscalingPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: AutoscalingPolicy*): Self = StObject.set(x, "policies", js.Array(value*))
   }
 }

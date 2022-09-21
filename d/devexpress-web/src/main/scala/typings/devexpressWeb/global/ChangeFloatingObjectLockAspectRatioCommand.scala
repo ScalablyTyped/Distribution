@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectLockAspectRatioCommand")
 @js.native
-class ChangeFloatingObjectLockAspectRatioCommand ()
+open class ChangeFloatingObjectLockAspectRatioCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectLockAspectRatioCommand {
   

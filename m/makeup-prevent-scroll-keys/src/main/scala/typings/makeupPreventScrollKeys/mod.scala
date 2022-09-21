@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def add(el: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def add(el: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def remove(el: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(el: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

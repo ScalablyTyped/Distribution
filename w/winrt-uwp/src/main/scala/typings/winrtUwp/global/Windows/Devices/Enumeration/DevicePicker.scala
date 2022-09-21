@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Devices.Enumeration.DevicePicker")
 @js.native
 /** Creates a DevicePicker object. */
-class DevicePicker ()
+open class DevicePicker ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DevicePicker

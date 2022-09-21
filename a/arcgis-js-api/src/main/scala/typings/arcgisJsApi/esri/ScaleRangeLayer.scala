@@ -9,12 +9,16 @@ trait ScaleRangeLayer extends StObject {
   /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
     */
   var maxScale: Double
   
   /**
     * The minimum scale (most zoomed out) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
     */

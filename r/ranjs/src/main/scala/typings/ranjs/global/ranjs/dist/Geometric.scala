@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Geometric")
 @js.native
-class Geometric ()
+open class Geometric ()
   extends typings.ranjs.mod.dist.Geometric {
   def this(p: Double) = this()
 }

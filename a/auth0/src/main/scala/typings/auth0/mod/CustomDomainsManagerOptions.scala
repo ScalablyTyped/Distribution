@@ -8,7 +8,7 @@ trait CustomDomainsManagerOptions
   extends StObject
      with BaseClientOptions {
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   var retry: js.UndefOr[RetryOptions] = js.undefined
 }
@@ -21,7 +21,7 @@ object CustomDomainsManagerOptions {
   
   extension [Self <: CustomDomainsManagerOptions](x: Self) {
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     

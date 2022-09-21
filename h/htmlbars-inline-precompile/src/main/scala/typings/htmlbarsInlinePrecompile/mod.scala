@@ -11,5 +11,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(tagged: TemplateStringsArray): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tagged.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
+  inline def default(tagged: TemplateStringsArray): TemplateFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tagged.asInstanceOf[js.Any]).asInstanceOf[TemplateFactory]
+  
+  trait TemplateFactory extends StObject {
+    
+    var __htmlbars_inline_precompile_template_factory: Any
+  }
+  object TemplateFactory {
+    
+    inline def apply(__htmlbars_inline_precompile_template_factory: Any): TemplateFactory = {
+      val __obj = js.Dynamic.literal(__htmlbars_inline_precompile_template_factory = __htmlbars_inline_precompile_template_factory.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TemplateFactory]
+    }
+    
+    extension [Self <: TemplateFactory](x: Self) {
+      
+      inline def set__htmlbars_inline_precompile_template_factory(value: Any): Self = StObject.set(x, "__htmlbars_inline_precompile_template_factory", value.asInstanceOf[js.Any])
+    }
+  }
 }

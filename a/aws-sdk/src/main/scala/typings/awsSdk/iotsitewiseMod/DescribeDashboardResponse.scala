@@ -14,10 +14,10 @@ trait DescribeDashboardResponse extends StObject {
   /**
     * The date the dashboard was created, in Unix epoch time.
     */
-  var dashboardCreationDate: Timestamp
+  var dashboardCreationDate: js.Date
   
   /**
-    * The dashboard's definition JSON literal. For detailed information, see Creating dashboards (CLI) in the AWS IoT SiteWise User Guide.
+    * The dashboard's definition JSON literal. For detailed information, see Creating dashboards (CLI) in the IoT SiteWise User Guide.
     */
   var dashboardDefinition: DashboardDefinition
   
@@ -34,7 +34,7 @@ trait DescribeDashboardResponse extends StObject {
   /**
     * The date the dashboard was last updated, in Unix epoch time.
     */
-  var dashboardLastUpdateDate: Timestamp
+  var dashboardLastUpdateDate: js.Date
   
   /**
     * The name of the dashboard.
@@ -50,10 +50,10 @@ object DescribeDashboardResponse {
   
   inline def apply(
     dashboardArn: ARN,
-    dashboardCreationDate: Timestamp,
+    dashboardCreationDate: js.Date,
     dashboardDefinition: DashboardDefinition,
     dashboardId: ID,
-    dashboardLastUpdateDate: Timestamp,
+    dashboardLastUpdateDate: js.Date,
     dashboardName: Name,
     projectId: ID
   ): DescribeDashboardResponse = {
@@ -65,7 +65,7 @@ object DescribeDashboardResponse {
     
     inline def setDashboardArn(value: ARN): Self = StObject.set(x, "dashboardArn", value.asInstanceOf[js.Any])
     
-    inline def setDashboardCreationDate(value: Timestamp): Self = StObject.set(x, "dashboardCreationDate", value.asInstanceOf[js.Any])
+    inline def setDashboardCreationDate(value: js.Date): Self = StObject.set(x, "dashboardCreationDate", value.asInstanceOf[js.Any])
     
     inline def setDashboardDefinition(value: DashboardDefinition): Self = StObject.set(x, "dashboardDefinition", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object DescribeDashboardResponse {
     
     inline def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
     
-    inline def setDashboardLastUpdateDate(value: Timestamp): Self = StObject.set(x, "dashboardLastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setDashboardLastUpdateDate(value: js.Date): Self = StObject.set(x, "dashboardLastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setDashboardName(value: Name): Self = StObject.set(x, "dashboardName", value.asInstanceOf[js.Any])
     

@@ -7,33 +7,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaInterconnectDiagnosticsLinkStatus extends StObject {
   
   /**
-    * A list of InterconnectDiagnostics.ARPEntry objects, describing the ARP
-    * neighbor entries seen on this link. This will be empty if the link is
-    * bundled
+    * A list of InterconnectDiagnostics.ARPEntry objects, describing the ARP neighbor entries seen on this link. This will be empty if the link is bundled
     */
   var arpCaches: js.UndefOr[js.Array[SchemaInterconnectDiagnosticsARPEntry]] = js.undefined
   
   /**
     * The unique ID for this link assigned during turn up by Google.
     */
-  var circuitId: js.UndefOr[String] = js.undefined
+  var circuitId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The Demarc address assigned by Google and provided in the LoA.
     */
-  var googleDemarc: js.UndefOr[String] = js.undefined
+  var googleDemarc: js.UndefOr[String | Null] = js.undefined
   
   var lacpStatus: js.UndefOr[SchemaInterconnectDiagnosticsLinkLACPStatus] = js.undefined
   
   /**
-    * An InterconnectDiagnostics.LinkOpticalPower object, describing the
-    * current value and status of the received light level.
+    * Describes the status of MACsec encryption on this link.
+    */
+  var macsec: js.UndefOr[SchemaInterconnectDiagnosticsMacsecStatus] = js.undefined
+  
+  /**
+    * The operational status of the link.
+    */
+  var operationalStatus: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * An InterconnectDiagnostics.LinkOpticalPower object, describing the current value and status of the received light level.
     */
   var receivingOpticalPower: js.UndefOr[SchemaInterconnectDiagnosticsLinkOpticalPower] = js.undefined
   
   /**
-    * An InterconnectDiagnostics.LinkOpticalPower object, describing the
-    * current value and status of the transmitted light level.
+    * An InterconnectDiagnostics.LinkOpticalPower object, describing the current value and status of the transmitted light level.
     */
   var transmittingOpticalPower: js.UndefOr[SchemaInterconnectDiagnosticsLinkOpticalPower] = js.undefined
 }
@@ -50,19 +56,33 @@ object SchemaInterconnectDiagnosticsLinkStatus {
     
     inline def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
     
-    inline def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
+    inline def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value*))
     
     inline def setCircuitId(value: String): Self = StObject.set(x, "circuitId", value.asInstanceOf[js.Any])
+    
+    inline def setCircuitIdNull: Self = StObject.set(x, "circuitId", null)
     
     inline def setCircuitIdUndefined: Self = StObject.set(x, "circuitId", js.undefined)
     
     inline def setGoogleDemarc(value: String): Self = StObject.set(x, "googleDemarc", value.asInstanceOf[js.Any])
+    
+    inline def setGoogleDemarcNull: Self = StObject.set(x, "googleDemarc", null)
     
     inline def setGoogleDemarcUndefined: Self = StObject.set(x, "googleDemarc", js.undefined)
     
     inline def setLacpStatus(value: SchemaInterconnectDiagnosticsLinkLACPStatus): Self = StObject.set(x, "lacpStatus", value.asInstanceOf[js.Any])
     
     inline def setLacpStatusUndefined: Self = StObject.set(x, "lacpStatus", js.undefined)
+    
+    inline def setMacsec(value: SchemaInterconnectDiagnosticsMacsecStatus): Self = StObject.set(x, "macsec", value.asInstanceOf[js.Any])
+    
+    inline def setMacsecUndefined: Self = StObject.set(x, "macsec", js.undefined)
+    
+    inline def setOperationalStatus(value: String): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
+    
+    inline def setOperationalStatusNull: Self = StObject.set(x, "operationalStatus", null)
+    
+    inline def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
     inline def setReceivingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = StObject.set(x, "receivingOpticalPower", value.asInstanceOf[js.Any])
     

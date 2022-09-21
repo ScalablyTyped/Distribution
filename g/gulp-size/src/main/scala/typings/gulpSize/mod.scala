@@ -1,6 +1,5 @@
 package typings.gulpSize
 
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +15,54 @@ object mod {
   
   trait Options extends StObject {
     
+    /**
+      * Displays the brotli compressed size.
+      *
+      * @default false
+      */
+    var brotli: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Displays the gzipped size.
+      *
+      * @default false
+      */
     var gzip: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Displays prettified size: 1337 B → 1.34 kB.
+      *
+      * @default true
+      */
     var pretty: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Displays the size of every file instead of just the total size.
+      *
+      * @default false
+      */
     var showFiles: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Displays the total of all files.
+      *
+      * @default true
+      */
     var showTotal: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Give it a title so it's possible to distinguish the output of multiple instances logging at once.
+      *
+      * @default ''
+      */
     var title: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Displays the uncompressed size.
+      *
+      * @default false
+      */
+    var uncompressed: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -34,6 +72,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setBrotli(value: Boolean): Self = StObject.set(x, "brotli", value.asInstanceOf[js.Any])
+      
+      inline def setBrotliUndefined: Self = StObject.set(x, "brotli", js.undefined)
       
       inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       
@@ -54,16 +96,42 @@ object mod {
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def setUncompressed(value: Boolean): Self = StObject.set(x, "uncompressed", value.asInstanceOf[js.Any])
+      
+      inline def setUncompressedUndefined: Self = StObject.set(x, "uncompressed", js.undefined)
     }
   }
   
-  @js.native
-  trait SizeStream
-    extends StObject
-       with ReadWriteStream {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ trait SizeStream extends StObject {
     
-    var prettySize: String = js.native
+    /**
+      * Prettified version of .size.
+      *
+      * @example 14 kB
+      */
+    var prettySize: String
     
-    var size: Double = js.native
+    /**
+      * The total size of all files in bytes.
+      *
+      * @example 12423000
+      */
+    var size: Double
+  }
+  object SizeStream {
+    
+    inline def apply(prettySize: String, size: Double): SizeStream = {
+      val __obj = js.Dynamic.literal(prettySize = prettySize.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SizeStream]
+    }
+    
+    extension [Self <: SizeStream](x: Self) {
+      
+      inline def setPrettySize(value: String): Self = StObject.set(x, "prettySize", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    }
   }
 }

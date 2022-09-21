@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "Tooltip")
 @js.native
-class Tooltip protected () extends StObject {
+open class Tooltip protected () extends StObject {
   /**
     * Tooltip of a chart.
     *
@@ -32,8 +32,11 @@ class Tooltip protected () extends StObject {
   /**
     * In case no user defined formatter is given, this will be used. Note that
     * the context here is an object holding point, series, x, y etc.
+    *
+    * @return Returns a string (single tooltip and shared) or an array of
+    *         strings (split tooltip)
     */
-  def defaultFormatter(tooltip: Tooltip): js.Array[String] = js.native
+  def defaultFormatter(tooltip: Tooltip): String | js.Array[String] = js.native
   
   /**
     * Removes and destroys the tooltip and its elements.
@@ -42,8 +45,27 @@ class Tooltip protected () extends StObject {
   
   /**
     * Creates the Tooltip label element if it does not exist, then returns it.
+    *
+    * @return Tooltip label
     */
   def getLabel(): SVGElement = js.native
+  
+  /**
+    * Place the tooltip in a chart without spilling over and not covering the
+    * point itself.
+    *
+    * @param boxWidth
+    *        Width of the tooltip box.
+    *
+    * @param boxHeight
+    *        Height of the tooltip box.
+    *
+    * @param point
+    *        Tooltip related point.
+    *
+    * @return Recommended position of the tooltip.
+    */
+  def getPosition(boxWidth: Double, boxHeight: Double, point: Point): PositionObject = js.native
   
   /**
     * Hides the tooltip with a fade out animation.

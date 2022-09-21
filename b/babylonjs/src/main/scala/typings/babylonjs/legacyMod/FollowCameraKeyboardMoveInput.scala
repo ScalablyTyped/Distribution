@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "FollowCameraKeyboardMoveInput")
 @js.native
-class FollowCameraKeyboardMoveInput ()
+open class FollowCameraKeyboardMoveInput ()
   extends typings.babylonjs.indexMod.FollowCameraKeyboardMoveInput

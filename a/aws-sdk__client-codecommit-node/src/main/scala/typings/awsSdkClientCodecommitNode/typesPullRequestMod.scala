@@ -4,8 +4,6 @@ import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CLOS
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.OPEN
 import typings.awsSdkClientCodecommitNode.typesPullRequestTargetMod.PullRequestTarget
 import typings.awsSdkClientCodecommitNode.typesPullRequestTargetMod.UnmarshalledPullRequestTarget
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +25,7 @@ object typesPullRequestMod {
     /**
       * <p>The date and time the pull request was originally created, in timestamp format.</p>
       */
-    var creationDate: js.UndefOr[Date | String | Double] = js.undefined
+    var creationDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The user-defined description of the pull request. This description can be used to clarify what should be reviewed and other details of the request.</p>
@@ -37,7 +35,7 @@ object typesPullRequestMod {
     /**
       * <p>The day and time of the last user or system activity on the pull request, in timestamp format.</p>
       */
-    var lastActivityDate: js.UndefOr[Date | String | Double] = js.undefined
+    var lastActivityDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The system-generated ID of the pull request. </p>
@@ -52,7 +50,7 @@ object typesPullRequestMod {
     /**
       * <p>The targets of the pull request, including the source branch and destination branch for the pull request.</p>
       */
-    var pullRequestTargets: js.UndefOr[js.Array[PullRequestTarget] | Iterable[PullRequestTarget]] = js.undefined
+    var pullRequestTargets: js.UndefOr[js.Array[PullRequestTarget] | js.Iterable[PullRequestTarget]] = js.undefined
     
     /**
       * <p>The user-defined title of the pull request. This title is displayed in the list of pull requests to other users of the repository.</p>
@@ -76,7 +74,7 @@ object typesPullRequestMod {
       
       inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
       
-      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
@@ -84,7 +82,7 @@ object typesPullRequestMod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setLastActivityDate(value: Date | String | Double): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
+      inline def setLastActivityDate(value: js.Date | String | Double): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
       
       inline def setLastActivityDateUndefined: Self = StObject.set(x, "lastActivityDate", js.undefined)
       
@@ -96,11 +94,11 @@ object typesPullRequestMod {
       
       inline def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
       
-      inline def setPullRequestTargets(value: js.Array[PullRequestTarget] | Iterable[PullRequestTarget]): Self = StObject.set(x, "pullRequestTargets", value.asInstanceOf[js.Any])
+      inline def setPullRequestTargets(value: js.Array[PullRequestTarget] | js.Iterable[PullRequestTarget]): Self = StObject.set(x, "pullRequestTargets", value.asInstanceOf[js.Any])
       
       inline def setPullRequestTargetsUndefined: Self = StObject.set(x, "pullRequestTargets", js.undefined)
       
-      inline def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value :_*))
+      inline def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -116,13 +114,13 @@ object typesPullRequestMod {
       * <p>The date and time the pull request was originally created, in timestamp format.</p>
       */
     @JSName("creationDate")
-    var creationDate_UnmarshalledPullRequest: js.UndefOr[Date] = js.undefined
+    var creationDate_UnmarshalledPullRequest: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The day and time of the last user or system activity on the pull request, in timestamp format.</p>
       */
     @JSName("lastActivityDate")
-    var lastActivityDate_UnmarshalledPullRequest: js.UndefOr[Date] = js.undefined
+    var lastActivityDate_UnmarshalledPullRequest: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The targets of the pull request, including the source branch and destination branch for the pull request.</p>
@@ -139,11 +137,11 @@ object typesPullRequestMod {
     
     extension [Self <: UnmarshalledPullRequest](x: Self) {
       
-      inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      inline def setLastActivityDate(value: Date): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
+      inline def setLastActivityDate(value: js.Date): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
       
       inline def setLastActivityDateUndefined: Self = StObject.set(x, "lastActivityDate", js.undefined)
       
@@ -151,7 +149,7 @@ object typesPullRequestMod {
       
       inline def setPullRequestTargetsUndefined: Self = StObject.set(x, "pullRequestTargets", js.undefined)
       
-      inline def setPullRequestTargetsVarargs(value: UnmarshalledPullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value :_*))
+      inline def setPullRequestTargetsVarargs(value: UnmarshalledPullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value*))
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "scroll-behavior" : "0.9.12"
+      "scroll-behavior" : "0.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "scroll-behavior" : "0.9.12"
+      "scroll-behavior" : "0.11.0"
     }
   ],
   "compile-devDependencies" : [

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientConstantLine")
 @js.native
-class ASPxClientConstantLine ()
+open class ASPxClientConstantLine ()
   extends StObject
      with typings.devexpressWeb.ASPxClientConstantLine {
   
@@ -41,5 +41,5 @@ class ASPxClientConstantLine ()
     * Gets the constant line's position along the axis.
     */
   /* CompleteClass */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

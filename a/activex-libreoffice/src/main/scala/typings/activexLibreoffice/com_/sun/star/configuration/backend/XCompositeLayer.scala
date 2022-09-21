@@ -37,7 +37,7 @@ object XCompositeLayer {
   inline def apply(
     acquire: () => Unit,
     listSubLayerIds: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readData: XLayerHandler => Unit,
     readSubLayerData: (XLayerHandler, String) => Unit,
     release: () => Unit

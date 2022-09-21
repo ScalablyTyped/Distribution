@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextEditorOptionsChangeEvent extends StObject {
   
   /**
-    * The new value for the [text editor's options](#TextEditor.options).
+    * The new value for the {@link TextEditor.options text editor's options}.
     */
   val options: TextEditorOptions
   
   /**
-    * The [text editor](#TextEditor) for which the options have changed.
+    * The {@link TextEditor text editor} for which the options have changed.
     */
   val textEditor: TextEditor
 }

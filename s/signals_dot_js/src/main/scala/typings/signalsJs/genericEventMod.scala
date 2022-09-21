@@ -10,7 +10,7 @@ object genericEventMod {
   
   @JSImport("signals.js/lib/org/osflash/signals/events/GenericEvent", "GenericEvent")
   @js.native
-  class GenericEvent ()
+  open class GenericEvent ()
     extends StObject
        with IEvent {
     def this(bubbles: Boolean) = this()

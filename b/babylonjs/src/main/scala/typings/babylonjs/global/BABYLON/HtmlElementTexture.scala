@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.HtmlElementTexture")
 @js.native
-class HtmlElementTexture protected ()
+open class HtmlElementTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.HtmlElementTexture {
   def this(name: String, element: HTMLCanvasElement, options: IHtmlElementTextureOptions) = this()
@@ -32,7 +32,7 @@ class HtmlElementTexture protected ()
 /* static members */
 object HtmlElementTexture {
   
-  @JSGlobal("BABYLON.HtmlElementTexture.DefaultOptions")
+  @JSGlobal("BABYLON.HtmlElementTexture._DefaultOptions")
   @js.native
-  val DefaultOptions: js.Any = js.native
+  val _DefaultOptions: Any = js.native
 }

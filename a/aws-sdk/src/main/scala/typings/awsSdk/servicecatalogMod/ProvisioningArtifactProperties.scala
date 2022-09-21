@@ -12,12 +12,12 @@ trait ProvisioningArtifactProperties extends StObject {
   var Description: js.UndefOr[ProvisioningArtifactDescription] = js.undefined
   
   /**
-    * If set to true, AWS Service Catalog stops validating the specified provisioning artifact even if it is invalid.
+    * If set to true, Amazon Web Services Service Catalog stops validating the specified provisioning artifact even if it is invalid.
     */
   var DisableTemplateValidation: js.UndefOr[typings.awsSdk.servicecatalogMod.DisableTemplateValidation] = js.undefined
   
   /**
-    * The URL of the CloudFormation template in Amazon S3. Specify the URL in JSON format as follows:  "LoadTemplateFromURL": "https://s3.amazonaws.com/cf-templates-ozkq9d3hgiq2-us-east-1/..." 
+    * Specify the template source with one of the following options, but not both. Keys accepted: [ LoadTemplateFromURL, ImportFromPhysicalId ] The URL of the CloudFormation template in Amazon S3, Amazon Web Services CodeCommit, or GitHub in JSON format. Specify the URL in JSON format as follows:  "LoadTemplateFromURL": "https://s3.amazonaws.com/cf-templates-ozkq9d3hgiq2-us-east-1/..."   ImportFromPhysicalId: The physical id of the resource that contains the template. Currently only supports CloudFormation stack arn. Specify the physical id in JSON format as follows: ImportFromPhysicalId: “arn:aws:cloudformation:[us-east-1]:[accountId]:stack/[StackName]/[resourceId] 
     */
   var Info: ProvisioningArtifactInfo
   
@@ -27,7 +27,7 @@ trait ProvisioningArtifactProperties extends StObject {
   var Name: js.UndefOr[ProvisioningArtifactName] = js.undefined
   
   /**
-    * The type of provisioning artifact.    CLOUD_FORMATION_TEMPLATE - AWS CloudFormation template    MARKETPLACE_AMI - AWS Marketplace AMI    MARKETPLACE_CAR - AWS Marketplace Clusters and AWS Resources  
+    * The type of provisioning artifact.    CLOUD_FORMATION_TEMPLATE - CloudFormation template    MARKETPLACE_AMI - Amazon Web Services Marketplace AMI    MARKETPLACE_CAR - Amazon Web Services Marketplace Clusters and Amazon Web Services Resources  
     */
   var Type: js.UndefOr[ProvisioningArtifactType] = js.undefined
 }

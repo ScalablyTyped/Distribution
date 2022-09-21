@@ -39,7 +39,7 @@ object DescribeSessionsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: SessionFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SessionFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: SessionMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

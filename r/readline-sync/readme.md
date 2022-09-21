@@ -10,10 +10,10 @@ Synchronous Readline for interactively running to have a conversation with the u
 | ------------------ | :-------------: |
 | Full name          | readline-sync |
 | Keywords           | readline, synchronous, interactive, prompt, question, password, cli, tty, command, repl, keyboard, wait, block |
-| # releases         | 2 |
-| # dependents       | 2330 |
-| # downloads        | 20727593 |
-| # stars            | 27 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3336602.6666666665 |
+| # stars            | 723.0 |
 
 ## Links
 - [Homepage](https://github.com/anseki/readline-sync)

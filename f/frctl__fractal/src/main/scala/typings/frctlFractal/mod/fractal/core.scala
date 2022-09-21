@@ -23,9 +23,9 @@ object core {
     abstract class Entity ()
       extends typings.frctlFractal.mod.fractal.core.mixins.Entity {
       
-      def getContext(): js.Any = js.native
+      def getContext(): Any = js.native
       
-      def getResolvedContext(): js.Any = js.native
+      def getResolvedContext(): Any = js.native
       
       def hasContext(): js.Promise[Boolean] = js.native
       
@@ -37,7 +37,7 @@ object core {
       
       val isVariant: js.UndefOr[`true`] = js.native
       
-      def setContext(data: js.Any): Unit = js.native
+      def setContext(data: Any): Unit = js.native
       
       val status: StatusInfo = js.native
     }
@@ -124,13 +124,13 @@ object core {
       
       val alias: String | Null = js.native
       
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       var handle: String = js.native
       
       var id: String = js.native
       
-      def initEntity(name: String, config: js.Any, parent: Entity): Unit = js.native
+      def initEntity(name: String, config: Any, parent: Entity): Unit = js.native
       
       val isHidden: Boolean = js.native
       
@@ -142,7 +142,7 @@ object core {
       
       val parent: Entity = js.native
       
-      val source: EntitySource[typings.frctlFractal.mod.fractal.core.entities.Entity, js.Any] = js.native
+      val source: EntitySource[typings.frctlFractal.mod.fractal.core.entities.Entity, Any] = js.native
       
       var title: String = js.native
       

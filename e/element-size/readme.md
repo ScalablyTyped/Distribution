@@ -10,10 +10,10 @@ Get the size of an element in pixels, including margins
 | ------------------ | :-------------: |
 | Full name          | element-size |
 | Keywords           | element, dom, browser, browserify, node, dimensions, margin |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 3228632 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 568176.3333333334 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/element-size)

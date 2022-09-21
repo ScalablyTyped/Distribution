@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Bumper extends StObject {
   
   /**
-    * The URL for the end bumper asset. 
+    * The URL for the end bumper asset.
     */
   var EndUrl: js.UndefOr[string] = js.undefined
   
   /**
-    * The URL for the start bumper asset. 
+    * The URL for the start bumper asset.
     */
   var StartUrl: js.UndefOr[string] = js.undefined
 }

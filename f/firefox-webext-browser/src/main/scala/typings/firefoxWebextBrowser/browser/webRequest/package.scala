@@ -1,5 +1,8 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
+import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cipher
+import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestHeaders
+import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,17 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * An array of HTTP headers. Each header is represented as a dictionary containing the keys `name` and either `value` or `binaryValue`.
   */
-type HttpHeaders = js.Array[typings.firefoxWebextBrowser.browser.webRequest._HttpHeaders]
+type HttpHeaders = js.Array[_HttpHeaders]
 
-type OnBeforeRedirectOptions = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders
+type OnBeforeRedirectOptions = responseHeaders
 
-type OnCompletedOptions = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders
+type OnCompletedOptions = responseHeaders
 
-type OnResponseStartedOptions = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders
+type OnResponseStartedOptions = responseHeaders
 
-type OnSendHeadersOptions = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestHeaders
+type OnSendHeadersOptions = requestHeaders
 
-type TransportWeaknessReasons = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cipher
+type TransportWeaknessReasons = cipher
 
 /** If the request has been classified this is an array of `UrlClassificationFlags`. */
-type UrlClassificationParty = js.Array[typings.firefoxWebextBrowser.browser.webRequest.UrlClassificationFlags]
+type UrlClassificationParty = js.Array[UrlClassificationFlags]

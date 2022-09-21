@@ -13,11 +13,10 @@ object swipeActionIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/swipe-action/index.native", JSImport.Default)
   @js.native
-  class default () extends SwipeAction
+  open class default () extends SwipeAction
   
   @js.native
-  trait SwipeAction
-    extends Component[SwipeActionProps, js.Any, js.Any]
+  trait SwipeAction extends Component[SwipeActionProps, Any, Any]
   
   trait SwipeActionProps
     extends StObject
@@ -25,7 +24,7 @@ object swipeActionIndexNativeMod {
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
   }
   object SwipeActionProps {
     
@@ -42,7 +41,7 @@ object swipeActionIndexNativeMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }

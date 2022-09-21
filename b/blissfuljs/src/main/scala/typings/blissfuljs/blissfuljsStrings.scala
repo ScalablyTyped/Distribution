@@ -11,74 +11,6 @@ object blissfuljsStrings {
   inline def MSContentZoom: MSContentZoom = "MSContentZoom".asInstanceOf[MSContentZoom]
   
   @js.native
-  sealed trait MSGestureChange extends StObject
-  inline def MSGestureChange: MSGestureChange = "MSGestureChange".asInstanceOf[MSGestureChange]
-  
-  @js.native
-  sealed trait MSGestureDoubleTap extends StObject
-  inline def MSGestureDoubleTap: MSGestureDoubleTap = "MSGestureDoubleTap".asInstanceOf[MSGestureDoubleTap]
-  
-  @js.native
-  sealed trait MSGestureEnd extends StObject
-  inline def MSGestureEnd: MSGestureEnd = "MSGestureEnd".asInstanceOf[MSGestureEnd]
-  
-  @js.native
-  sealed trait MSGestureHold extends StObject
-  inline def MSGestureHold: MSGestureHold = "MSGestureHold".asInstanceOf[MSGestureHold]
-  
-  @js.native
-  sealed trait MSGestureStart extends StObject
-  inline def MSGestureStart: MSGestureStart = "MSGestureStart".asInstanceOf[MSGestureStart]
-  
-  @js.native
-  sealed trait MSGestureTap extends StObject
-  inline def MSGestureTap: MSGestureTap = "MSGestureTap".asInstanceOf[MSGestureTap]
-  
-  @js.native
-  sealed trait MSGotPointerCapture extends StObject
-  inline def MSGotPointerCapture: MSGotPointerCapture = "MSGotPointerCapture".asInstanceOf[MSGotPointerCapture]
-  
-  @js.native
-  sealed trait MSInertiaStart extends StObject
-  inline def MSInertiaStart: MSInertiaStart = "MSInertiaStart".asInstanceOf[MSInertiaStart]
-  
-  @js.native
-  sealed trait MSLostPointerCapture extends StObject
-  inline def MSLostPointerCapture: MSLostPointerCapture = "MSLostPointerCapture".asInstanceOf[MSLostPointerCapture]
-  
-  @js.native
-  sealed trait MSPointerCancel extends StObject
-  inline def MSPointerCancel: MSPointerCancel = "MSPointerCancel".asInstanceOf[MSPointerCancel]
-  
-  @js.native
-  sealed trait MSPointerDown extends StObject
-  inline def MSPointerDown: MSPointerDown = "MSPointerDown".asInstanceOf[MSPointerDown]
-  
-  @js.native
-  sealed trait MSPointerEnter extends StObject
-  inline def MSPointerEnter: MSPointerEnter = "MSPointerEnter".asInstanceOf[MSPointerEnter]
-  
-  @js.native
-  sealed trait MSPointerLeave extends StObject
-  inline def MSPointerLeave: MSPointerLeave = "MSPointerLeave".asInstanceOf[MSPointerLeave]
-  
-  @js.native
-  sealed trait MSPointerMove extends StObject
-  inline def MSPointerMove: MSPointerMove = "MSPointerMove".asInstanceOf[MSPointerMove]
-  
-  @js.native
-  sealed trait MSPointerOut extends StObject
-  inline def MSPointerOut: MSPointerOut = "MSPointerOut".asInstanceOf[MSPointerOut]
-  
-  @js.native
-  sealed trait MSPointerOver extends StObject
-  inline def MSPointerOver: MSPointerOver = "MSPointerOver".asInstanceOf[MSPointerOver]
-  
-  @js.native
-  sealed trait MSPointerUp extends StObject
-  inline def MSPointerUp: MSPointerUp = "MSPointerUp".asInstanceOf[MSPointerUp]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -101,10 +33,6 @@ object blissfuljsStrings {
   @js.native
   sealed trait address extends StObject
   inline def address: address = "address".asInstanceOf[address]
-  
-  @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
   
   @js.native
   sealed trait area extends StObject
@@ -133,10 +61,6 @@ object blissfuljsStrings {
   @js.native
   sealed trait base extends StObject
   inline def base: base = "base".asInstanceOf[base]
-  
-  @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
   
   @js.native
   sealed trait bdo extends StObject

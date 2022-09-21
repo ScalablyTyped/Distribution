@@ -8,18 +8,18 @@ object setMod {
   
   @JSImport("plottable/build/src/utils/set", "Set")
   @js.native
-  class Set[T] () extends StObject {
+  open class Set[T] () extends StObject {
     
-    /* private */ var _es6Set: js.Any = js.native
+    /* private */ var _es6Set: Any = js.native
     
-    /* private */ var _values: js.Any = js.native
+    /* private */ var _values: Any = js.native
     
     def add(value: T): this.type = js.native
     
     def delete(value: T): Boolean = js.native
     
     def forEach(callback: js.Function3[/* value */ T, /* value2 */ T, /* set */ Set[T], Unit]): Unit = js.native
-    def forEach(callback: js.Function3[/* value */ T, /* value2 */ T, /* set */ Set[T], Unit], thisArg: js.Any): Unit = js.native
+    def forEach(callback: js.Function3[/* value */ T, /* value2 */ T, /* set */ Set[T], Unit], thisArg: Any): Unit = js.native
     
     def has(value: T): Boolean = js.native
     

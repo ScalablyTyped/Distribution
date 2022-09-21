@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClusteringMetrics extends StObject {
   
-  /** [Beta] Information for all clusters. */
+  /** Information for all clusters. */
   var clusters: js.UndefOr[js.Array[Cluster]] = js.undefined
   
   /** Davies-Bouldin index. */
@@ -28,7 +28,7 @@ object ClusteringMetrics {
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value*))
     
     inline def setDaviesBouldinIndex(value: Double): Self = StObject.set(x, "daviesBouldinIndex", value.asInstanceOf[js.Any])
     
